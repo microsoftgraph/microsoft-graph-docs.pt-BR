@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 4b6fb2eb59aed83744e158a808344b1f18cf834e
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: 15fea6f46279f96ce3d1f235b92475bdc67d0f16
+ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51126392"
+ms.lasthandoff: 05/26/2021
+ms.locfileid: "52662939"
 ---
 # <a name="update-windowsmanagementapp"></a>Atualizar windowsManagementApp
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -27,8 +27,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Delegado (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -53,8 +53,10 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [o windo
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Identificador exclusivo do aplicativo de gerenciamento do Windows|
-|availableVersion|Cadeia de caracteres|Versão disponível do aplicativo de gerenciamento do Windows.|
+|id|String|Identificador exclusivo do aplicativo Windows de gerenciamento|
+|availableVersion|String|Windows versão disponível do aplicativo de gerenciamento.|
+|managedInstaller|[managedInstallerStatus](../resources/intune-devices-managedinstallerstatus.md)|Status do Instalador Gerenciado. Os valores possíveis são: `disabled` e `enabled`.|
+|managedInstallerConfiguredDateTime|String|Data configurada do Instalador Gerenciado|
 
 
 
@@ -68,11 +70,13 @@ Este é um exemplo da solicitação.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceAppManagement/windowsManagementApp
 Content-type: application/json
-Content-length: 112
+Content-length: 235
 
 {
   "@odata.type": "#microsoft.graph.windowsManagementApp",
-  "availableVersion": "Available Version value"
+  "availableVersion": "Available Version value",
+  "managedInstaller": "enabled",
+  "managedInstallerConfiguredDateTime": "Managed Installer Configured Date Time value"
 }
 ```
 
@@ -81,12 +85,14 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 161
+Content-Length: 284
 
 {
   "@odata.type": "#microsoft.graph.windowsManagementApp",
   "id": "5facc79c-c79c-5fac-9cc7-ac5f9cc7ac5f",
-  "availableVersion": "Available Version value"
+  "availableVersion": "Available Version value",
+  "managedInstaller": "enabled",
+  "managedInstallerConfiguredDateTime": "Managed Installer Configured Date Time value"
 }
 ```
 

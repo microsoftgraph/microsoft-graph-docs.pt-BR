@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 146dfbe24f2380f639ec7715c9ab7cb3278191da
-ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
+ms.openlocfilehash: 52cb11cbd071be59c36f6db73c94d685d0e1a85d
+ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51868374"
+ms.lasthandoff: 05/26/2021
+ms.locfileid: "52665417"
 ---
 # <a name="create-devicemanagementreusablepolicysetting"></a>Criar deviceManagementReusablePolicySetting
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -27,9 +27,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
+|Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Aplicativo|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -53,10 +53,10 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar deviceMa
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|id de configuração reutilizável gerada pelo sistema.|
-|displayName|Cadeia de caracteres|nome de exibição de configuração reutilizável fornecido pelo usuário.|
-|description|Cadeia de caracteres|descrição da configuração reutilizável fornecida pelo usuário.|
-|settingDefinitionId|Cadeia de Caracteres|id de definição de definição associada a essa configuração reutilizável.|
+|id|String|id de configuração reutilizável gerada pelo sistema.|
+|displayName|String|nome de exibição de configuração reutilizável fornecido pelo usuário.|
+|descrição|String|descrição da configuração reutilizável fornecida pelo usuário.|
+|settingDefinitionId|String|id de definição de definição associada a essa configuração reutilizável.|
 |settingInstance|[deviceManagementConfigurationSettingInstance](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettinginstance.md)|instância de configuração de configuração reutilizável|
 |createdDateTime|DateTimeOffset|reutilizável definindo data e hora de criação. Essa propriedade é somente leitura.|
 |lastModifiedDateTime|DateTimeOffset|data e hora em que a configuração reutilizável foi modificada pela última vez. Essa propriedade é somente leitura.|
@@ -75,7 +75,7 @@ Este é um exemplo da solicitação.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/reusablePolicySettings
 Content-type: application/json
-Content-length: 7888
+Content-length: 16328
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementReusablePolicySetting",
@@ -85,83 +85,183 @@ Content-length: 7888
   "settingInstance": {
     "@odata.type": "microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
     "settingDefinitionId": "Setting Definition Id value",
+    "settingInstanceTemplateReference": {
+      "@odata.type": "microsoft.graph.deviceManagementConfigurationSettingInstanceTemplateReference",
+      "settingInstanceTemplateId": "Setting Instance Template Id value"
+    },
     "choiceSettingValue": {
       "@odata.type": "microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
+      "settingValueTemplateReference": {
+        "@odata.type": "microsoft.graph.deviceManagementConfigurationSettingValueTemplateReference",
+        "settingValueTemplateId": "Setting Value Template Id value",
+        "useTemplateDefault": true
+      },
       "value": "Value value",
       "children": [
         {
           "@odata.type": "microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
           "settingDefinitionId": "Setting Definition Id value",
+          "settingInstanceTemplateReference": {
+            "@odata.type": "microsoft.graph.deviceManagementConfigurationSettingInstanceTemplateReference",
+            "settingInstanceTemplateId": "Setting Instance Template Id value"
+          },
           "choiceSettingValue": {
             "@odata.type": "microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
+            "settingValueTemplateReference": {
+              "@odata.type": "microsoft.graph.deviceManagementConfigurationSettingValueTemplateReference",
+              "settingValueTemplateId": "Setting Value Template Id value",
+              "useTemplateDefault": true
+            },
             "value": "Value value",
             "children": [
               {
                 "@odata.type": "microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                 "settingDefinitionId": "Setting Definition Id value",
+                "settingInstanceTemplateReference": {
+                  "@odata.type": "microsoft.graph.deviceManagementConfigurationSettingInstanceTemplateReference",
+                  "settingInstanceTemplateId": "Setting Instance Template Id value"
+                },
                 "choiceSettingValue": {
                   "@odata.type": "microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
+                  "settingValueTemplateReference": {
+                    "@odata.type": "microsoft.graph.deviceManagementConfigurationSettingValueTemplateReference",
+                    "settingValueTemplateId": "Setting Value Template Id value",
+                    "useTemplateDefault": true
+                  },
                   "value": "Value value",
                   "children": [
                     {
                       "@odata.type": "microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                       "settingDefinitionId": "Setting Definition Id value",
+                      "settingInstanceTemplateReference": {
+                        "@odata.type": "microsoft.graph.deviceManagementConfigurationSettingInstanceTemplateReference",
+                        "settingInstanceTemplateId": "Setting Instance Template Id value"
+                      },
                       "choiceSettingValue": {
                         "@odata.type": "microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
+                        "settingValueTemplateReference": {
+                          "@odata.type": "microsoft.graph.deviceManagementConfigurationSettingValueTemplateReference",
+                          "settingValueTemplateId": "Setting Value Template Id value",
+                          "useTemplateDefault": true
+                        },
                         "value": "Value value",
                         "children": [
                           {
                             "@odata.type": "microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                             "settingDefinitionId": "Setting Definition Id value",
+                            "settingInstanceTemplateReference": {
+                              "@odata.type": "microsoft.graph.deviceManagementConfigurationSettingInstanceTemplateReference",
+                              "settingInstanceTemplateId": "Setting Instance Template Id value"
+                            },
                             "choiceSettingValue": {
                               "@odata.type": "microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
+                              "settingValueTemplateReference": {
+                                "@odata.type": "microsoft.graph.deviceManagementConfigurationSettingValueTemplateReference",
+                                "settingValueTemplateId": "Setting Value Template Id value",
+                                "useTemplateDefault": true
+                              },
                               "value": "Value value",
                               "children": [
                                 {
                                   "@odata.type": "microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                                   "settingDefinitionId": "Setting Definition Id value",
+                                  "settingInstanceTemplateReference": {
+                                    "@odata.type": "microsoft.graph.deviceManagementConfigurationSettingInstanceTemplateReference",
+                                    "settingInstanceTemplateId": "Setting Instance Template Id value"
+                                  },
                                   "choiceSettingValue": {
                                     "@odata.type": "microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
+                                    "settingValueTemplateReference": {
+                                      "@odata.type": "microsoft.graph.deviceManagementConfigurationSettingValueTemplateReference",
+                                      "settingValueTemplateId": "Setting Value Template Id value",
+                                      "useTemplateDefault": true
+                                    },
                                     "value": "Value value",
                                     "children": [
                                       {
                                         "@odata.type": "microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                                         "settingDefinitionId": "Setting Definition Id value",
+                                        "settingInstanceTemplateReference": {
+                                          "@odata.type": "microsoft.graph.deviceManagementConfigurationSettingInstanceTemplateReference",
+                                          "settingInstanceTemplateId": "Setting Instance Template Id value"
+                                        },
                                         "choiceSettingValue": {
                                           "@odata.type": "microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
+                                          "settingValueTemplateReference": {
+                                            "@odata.type": "microsoft.graph.deviceManagementConfigurationSettingValueTemplateReference",
+                                            "settingValueTemplateId": "Setting Value Template Id value",
+                                            "useTemplateDefault": true
+                                          },
                                           "value": "Value value",
                                           "children": [
                                             {
                                               "@odata.type": "microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                                               "settingDefinitionId": "Setting Definition Id value",
+                                              "settingInstanceTemplateReference": {
+                                                "@odata.type": "microsoft.graph.deviceManagementConfigurationSettingInstanceTemplateReference",
+                                                "settingInstanceTemplateId": "Setting Instance Template Id value"
+                                              },
                                               "choiceSettingValue": {
                                                 "@odata.type": "microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
+                                                "settingValueTemplateReference": {
+                                                  "@odata.type": "microsoft.graph.deviceManagementConfigurationSettingValueTemplateReference",
+                                                  "settingValueTemplateId": "Setting Value Template Id value",
+                                                  "useTemplateDefault": true
+                                                },
                                                 "value": "Value value",
                                                 "children": [
                                                   {
                                                     "@odata.type": "microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                                                     "settingDefinitionId": "Setting Definition Id value",
+                                                    "settingInstanceTemplateReference": {
+                                                      "@odata.type": "microsoft.graph.deviceManagementConfigurationSettingInstanceTemplateReference",
+                                                      "settingInstanceTemplateId": "Setting Instance Template Id value"
+                                                    },
                                                     "choiceSettingValue": {
                                                       "@odata.type": "microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
+                                                      "settingValueTemplateReference": {
+                                                        "@odata.type": "microsoft.graph.deviceManagementConfigurationSettingValueTemplateReference",
+                                                        "settingValueTemplateId": "Setting Value Template Id value",
+                                                        "useTemplateDefault": true
+                                                      },
                                                       "value": "Value value",
                                                       "children": [
                                                         {
                                                           "@odata.type": "microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                                                           "settingDefinitionId": "Setting Definition Id value",
+                                                          "settingInstanceTemplateReference": {
+                                                            "@odata.type": "microsoft.graph.deviceManagementConfigurationSettingInstanceTemplateReference",
+                                                            "settingInstanceTemplateId": "Setting Instance Template Id value"
+                                                          },
                                                           "choiceSettingValue": {
                                                             "@odata.type": "microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
+                                                            "settingValueTemplateReference": {
+                                                              "@odata.type": "microsoft.graph.deviceManagementConfigurationSettingValueTemplateReference",
+                                                              "settingValueTemplateId": "Setting Value Template Id value",
+                                                              "useTemplateDefault": true
+                                                            },
                                                             "value": "Value value",
                                                             "children": [
                                                               {
                                                                 "@odata.type": "microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                                                                 "settingDefinitionId": "Setting Definition Id value",
+                                                                "settingInstanceTemplateReference": {
+                                                                  "@odata.type": "microsoft.graph.deviceManagementConfigurationSettingInstanceTemplateReference",
+                                                                  "settingInstanceTemplateId": "Setting Instance Template Id value"
+                                                                },
                                                                 "choiceSettingValue": {
                                                                   "@odata.type": "microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
+                                                                  "settingValueTemplateReference": {
+                                                                    "@odata.type": "microsoft.graph.deviceManagementConfigurationSettingValueTemplateReference",
+                                                                    "settingValueTemplateId": "Setting Value Template Id value",
+                                                                    "useTemplateDefault": true
+                                                                  },
                                                                   "value": "Value value",
                                                                   "children": [
                                                                     {
                                                                       "@odata.type": "microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                                                                       "settingDefinitionId": null,
+                                                                      "settingInstanceTemplateReference": null,
                                                                       "choiceSettingValue": null
                                                                     }
                                                                   ]
@@ -207,7 +307,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 8060
+Content-Length: 16500
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementReusablePolicySetting",
@@ -218,83 +318,183 @@ Content-Length: 8060
   "settingInstance": {
     "@odata.type": "microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
     "settingDefinitionId": "Setting Definition Id value",
+    "settingInstanceTemplateReference": {
+      "@odata.type": "microsoft.graph.deviceManagementConfigurationSettingInstanceTemplateReference",
+      "settingInstanceTemplateId": "Setting Instance Template Id value"
+    },
     "choiceSettingValue": {
       "@odata.type": "microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
+      "settingValueTemplateReference": {
+        "@odata.type": "microsoft.graph.deviceManagementConfigurationSettingValueTemplateReference",
+        "settingValueTemplateId": "Setting Value Template Id value",
+        "useTemplateDefault": true
+      },
       "value": "Value value",
       "children": [
         {
           "@odata.type": "microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
           "settingDefinitionId": "Setting Definition Id value",
+          "settingInstanceTemplateReference": {
+            "@odata.type": "microsoft.graph.deviceManagementConfigurationSettingInstanceTemplateReference",
+            "settingInstanceTemplateId": "Setting Instance Template Id value"
+          },
           "choiceSettingValue": {
             "@odata.type": "microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
+            "settingValueTemplateReference": {
+              "@odata.type": "microsoft.graph.deviceManagementConfigurationSettingValueTemplateReference",
+              "settingValueTemplateId": "Setting Value Template Id value",
+              "useTemplateDefault": true
+            },
             "value": "Value value",
             "children": [
               {
                 "@odata.type": "microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                 "settingDefinitionId": "Setting Definition Id value",
+                "settingInstanceTemplateReference": {
+                  "@odata.type": "microsoft.graph.deviceManagementConfigurationSettingInstanceTemplateReference",
+                  "settingInstanceTemplateId": "Setting Instance Template Id value"
+                },
                 "choiceSettingValue": {
                   "@odata.type": "microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
+                  "settingValueTemplateReference": {
+                    "@odata.type": "microsoft.graph.deviceManagementConfigurationSettingValueTemplateReference",
+                    "settingValueTemplateId": "Setting Value Template Id value",
+                    "useTemplateDefault": true
+                  },
                   "value": "Value value",
                   "children": [
                     {
                       "@odata.type": "microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                       "settingDefinitionId": "Setting Definition Id value",
+                      "settingInstanceTemplateReference": {
+                        "@odata.type": "microsoft.graph.deviceManagementConfigurationSettingInstanceTemplateReference",
+                        "settingInstanceTemplateId": "Setting Instance Template Id value"
+                      },
                       "choiceSettingValue": {
                         "@odata.type": "microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
+                        "settingValueTemplateReference": {
+                          "@odata.type": "microsoft.graph.deviceManagementConfigurationSettingValueTemplateReference",
+                          "settingValueTemplateId": "Setting Value Template Id value",
+                          "useTemplateDefault": true
+                        },
                         "value": "Value value",
                         "children": [
                           {
                             "@odata.type": "microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                             "settingDefinitionId": "Setting Definition Id value",
+                            "settingInstanceTemplateReference": {
+                              "@odata.type": "microsoft.graph.deviceManagementConfigurationSettingInstanceTemplateReference",
+                              "settingInstanceTemplateId": "Setting Instance Template Id value"
+                            },
                             "choiceSettingValue": {
                               "@odata.type": "microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
+                              "settingValueTemplateReference": {
+                                "@odata.type": "microsoft.graph.deviceManagementConfigurationSettingValueTemplateReference",
+                                "settingValueTemplateId": "Setting Value Template Id value",
+                                "useTemplateDefault": true
+                              },
                               "value": "Value value",
                               "children": [
                                 {
                                   "@odata.type": "microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                                   "settingDefinitionId": "Setting Definition Id value",
+                                  "settingInstanceTemplateReference": {
+                                    "@odata.type": "microsoft.graph.deviceManagementConfigurationSettingInstanceTemplateReference",
+                                    "settingInstanceTemplateId": "Setting Instance Template Id value"
+                                  },
                                   "choiceSettingValue": {
                                     "@odata.type": "microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
+                                    "settingValueTemplateReference": {
+                                      "@odata.type": "microsoft.graph.deviceManagementConfigurationSettingValueTemplateReference",
+                                      "settingValueTemplateId": "Setting Value Template Id value",
+                                      "useTemplateDefault": true
+                                    },
                                     "value": "Value value",
                                     "children": [
                                       {
                                         "@odata.type": "microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                                         "settingDefinitionId": "Setting Definition Id value",
+                                        "settingInstanceTemplateReference": {
+                                          "@odata.type": "microsoft.graph.deviceManagementConfigurationSettingInstanceTemplateReference",
+                                          "settingInstanceTemplateId": "Setting Instance Template Id value"
+                                        },
                                         "choiceSettingValue": {
                                           "@odata.type": "microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
+                                          "settingValueTemplateReference": {
+                                            "@odata.type": "microsoft.graph.deviceManagementConfigurationSettingValueTemplateReference",
+                                            "settingValueTemplateId": "Setting Value Template Id value",
+                                            "useTemplateDefault": true
+                                          },
                                           "value": "Value value",
                                           "children": [
                                             {
                                               "@odata.type": "microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                                               "settingDefinitionId": "Setting Definition Id value",
+                                              "settingInstanceTemplateReference": {
+                                                "@odata.type": "microsoft.graph.deviceManagementConfigurationSettingInstanceTemplateReference",
+                                                "settingInstanceTemplateId": "Setting Instance Template Id value"
+                                              },
                                               "choiceSettingValue": {
                                                 "@odata.type": "microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
+                                                "settingValueTemplateReference": {
+                                                  "@odata.type": "microsoft.graph.deviceManagementConfigurationSettingValueTemplateReference",
+                                                  "settingValueTemplateId": "Setting Value Template Id value",
+                                                  "useTemplateDefault": true
+                                                },
                                                 "value": "Value value",
                                                 "children": [
                                                   {
                                                     "@odata.type": "microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                                                     "settingDefinitionId": "Setting Definition Id value",
+                                                    "settingInstanceTemplateReference": {
+                                                      "@odata.type": "microsoft.graph.deviceManagementConfigurationSettingInstanceTemplateReference",
+                                                      "settingInstanceTemplateId": "Setting Instance Template Id value"
+                                                    },
                                                     "choiceSettingValue": {
                                                       "@odata.type": "microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
+                                                      "settingValueTemplateReference": {
+                                                        "@odata.type": "microsoft.graph.deviceManagementConfigurationSettingValueTemplateReference",
+                                                        "settingValueTemplateId": "Setting Value Template Id value",
+                                                        "useTemplateDefault": true
+                                                      },
                                                       "value": "Value value",
                                                       "children": [
                                                         {
                                                           "@odata.type": "microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                                                           "settingDefinitionId": "Setting Definition Id value",
+                                                          "settingInstanceTemplateReference": {
+                                                            "@odata.type": "microsoft.graph.deviceManagementConfigurationSettingInstanceTemplateReference",
+                                                            "settingInstanceTemplateId": "Setting Instance Template Id value"
+                                                          },
                                                           "choiceSettingValue": {
                                                             "@odata.type": "microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
+                                                            "settingValueTemplateReference": {
+                                                              "@odata.type": "microsoft.graph.deviceManagementConfigurationSettingValueTemplateReference",
+                                                              "settingValueTemplateId": "Setting Value Template Id value",
+                                                              "useTemplateDefault": true
+                                                            },
                                                             "value": "Value value",
                                                             "children": [
                                                               {
                                                                 "@odata.type": "microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                                                                 "settingDefinitionId": "Setting Definition Id value",
+                                                                "settingInstanceTemplateReference": {
+                                                                  "@odata.type": "microsoft.graph.deviceManagementConfigurationSettingInstanceTemplateReference",
+                                                                  "settingInstanceTemplateId": "Setting Instance Template Id value"
+                                                                },
                                                                 "choiceSettingValue": {
                                                                   "@odata.type": "microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
+                                                                  "settingValueTemplateReference": {
+                                                                    "@odata.type": "microsoft.graph.deviceManagementConfigurationSettingValueTemplateReference",
+                                                                    "settingValueTemplateId": "Setting Value Template Id value",
+                                                                    "useTemplateDefault": true
+                                                                  },
                                                                   "value": "Value value",
                                                                   "children": [
                                                                     {
                                                                       "@odata.type": "microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                                                                       "settingDefinitionId": null,
+                                                                      "settingInstanceTemplateReference": null,
                                                                       "choiceSettingValue": null
                                                                     }
                                                                   ]

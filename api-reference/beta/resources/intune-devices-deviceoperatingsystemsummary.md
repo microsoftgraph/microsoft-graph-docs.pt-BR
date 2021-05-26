@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: de94b00a1660dc874e457d20315df2f3b0690164
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 02ab35788ac8628755e0052426c733191fbef2af
+ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50444480"
+ms.lasthandoff: 05/26/2021
+ms.locfileid: "52665221"
 ---
 # <a name="deviceoperatingsystemsummary-resource-type"></a>Tipo de recurso deviceOperatingSystemSummary
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -40,9 +40,10 @@ Resumo do sistema operacional do dispositivo.
 |aospUserlessCount|Int32|Número de dispositivos Android sem usuário AOSP. Valores válidos de 0 a 2147483647|
 |aospUserAssociatedCount|Int32|Número de dispositivos Android associados ao usuário AOSP. Valores válidos de 0 a 2147483647|
 |linuxCount|Int32|Número de dispositivos do sistema operacional Linux. Valores válidos de 0 a 2147483647|
+|chromeOSCount|Int32|Número de dispositivos chrome os. Valores válidos de 0 a 2147483647|
 
 ## <a name="relationships"></a>Relações
-Nenhum
+Nenhuma
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
@@ -68,7 +69,8 @@ Veja a seguir uma representação JSON do recurso.
   "configMgrDeviceCount": 1024,
   "aospUserlessCount": 1024,
   "aospUserAssociatedCount": 1024,
-  "linuxCount": 1024
+  "linuxCount": 1024,
+  "chromeOSCount": 1024
 }
 ```
 

@@ -1,15 +1,15 @@
 ---
-title: Configuração de dispositivo no Microsoft Intune - API do Microsoft Gaaph
-description: Lista a API do Microsoft Graph para pontos de extremidade do Intune (REST) que definem dispositivos para uma organização de locatários.
+title: Configuração de dispositivo Microsoft Intune - API do Microsoft Gaaph
+description: Lista a API Graph microsoft para pontos de extremidade do Intune (REST) que definem configurar dispositivos para uma organização de locatários.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: c65f0bf66c057c355724d1a375ee7459804c24f6
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 4c9aa91adf1a8133080fd2f4ae09edee12445cc3
+ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50444207"
+ms.lasthandoff: 05/26/2021
+ms.locfileid: "52666279"
 ---
 # <a name="device-configuration-in-microsoft-intune"></a>Configuração de dispositivo no Microsoft Intune
 
@@ -94,6 +94,7 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar configuraçõe
 - [Perfil de certificado de PKCS do Android](intune-deviceconfig-androidpkcscertificateprofile.md)
 - [Complexidade de senha necessária do Android](intune-deviceconfig-androidrequiredpasswordcomplexity.md)
 - [Tipo de senha obrigatória do Android](intune-deviceconfig-androidrequiredpasswordtype.md)
+- [Tipo de avaliação de rede de segurança do Android](intune-deviceconfig-androidsafetynetevaluationtype.md)
 - [Perfil de certificado do SCEP do Android](intune-deviceconfig-androidscepcertificateprofile.md)
 - [Certificado raiz confiável do Android](intune-deviceconfig-androidtrustedrootcertificate.md)
 - [Origem do nome de usuário do Android](intune-deviceconfig-androidusernamesource.md)
@@ -118,6 +119,7 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar configuraçõe
 - [Configuração de VPN do perfil de trabalho do Android](intune-deviceconfig-androidworkprofilevpnconfiguration.md)
 - [Tipo de conexão de VPN do perfil de trabalho do Android](intune-deviceconfig-androidworkprofilevpnconnectiontype.md)
 - [Configuração de Wi-Fi do perfil de trabalho do Android](intune-deviceconfig-androidworkprofilewificonfiguration.md)
+- [Política de conformidade do proprietário do dispositivo Aosp](intune-deviceconfig-aospdeviceownercompliancepolicy.md)
 - [Configuração do dispositivo proprietário do dispositivo Aosp](intune-deviceconfig-aospdeviceownerdeviceconfiguration.md)
 - [Tipo de controle de instalação de aplicativo](intune-deviceconfig-appinstallcontroltype.md)
 - [Item da lista do aplicativo](intune-deviceconfig-applistitem.md)
@@ -140,7 +142,7 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar configuraçõe
 - [Política da unidade fixa do BitLocker](intune-deviceconfig-bitlockerfixeddrivepolicy.md)
 - [Tipo de informações de recuperação do BitLocker](intune-deviceconfig-bitlockerrecoveryinformationtype.md)
 - [Opções de recuperação do BitLocker](intune-deviceconfig-bitlockerrecoveryoptions.md)
-- [Tipo de rotação de senha de recuperação do BitLocker](intune-deviceconfig-bitlockerrecoverypasswordrotationtype.md)
+- [BitLocker tipo de rotação de senha de recuperação](intune-deviceconfig-bitlockerrecoverypasswordrotationtype.md)
 - [Política da unidade removível do BitLocker](intune-deviceconfig-bitlockerremovabledrivepolicy.md)
 - [Política da unidade de sistema do BitLocker](intune-deviceconfig-bitlockersystemdrivepolicy.md)
 - [Configuração de sincronização do navegador](intune-deviceconfig-browsersyncsetting.md)
@@ -534,8 +536,8 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar configuraçõe
 - [Base de perfil de certificado do Windows 10](intune-deviceconfig-windows10certificateprofilebase.md)
 - [Política de conformidade do Windows 10](intune-deviceconfig-windows10compliancepolicy.md)
 - [Configuração personalizada do Windows 10](intune-deviceconfig-windows10customconfiguration.md)
-- [Interface de configuração do firmware do dispositivo Windows 10](intune-deviceconfig-windows10devicefirmwareconfigurationinterface.md)
-- [Tipo de modo de dispositivo windows 10](intune-deviceconfig-windows10devicemodetype.md)
+- [Windows 10 de configuração de firmware de dispositivo](intune-deviceconfig-windows10devicefirmwareconfigurationinterface.md)
+- [Windows 10 tipo de modo de dispositivo](intune-deviceconfig-windows10devicemodetype.md)
 - [Configuração de perfil de email do EAS do Windows 10](intune-deviceconfig-windows10easemailprofileconfiguration.md)
 - [Tipo de edição do Windows 10](intune-deviceconfig-windows10editiontype.md)
 - [Configuração de proteção de ponto de extremidade do Windows 10](intune-deviceconfig-windows10endpointprotectionconfiguration.md)
@@ -565,10 +567,10 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar configuraçõe
 - [Tamanho do bloco de layout de início do aplicativo do Windows](intune-deviceconfig-windowsappstartlayouttilesize.md)
 - [Base de perfil de certificado do Windows](intune-deviceconfig-windowscertificateprofilebase.md)
 - [Configuração de proteção avançada contra ameaças do Windows Defender](intune-deviceconfig-windowsdefenderadvancedthreatprotectionconfiguration.md)
-- [Opções de proteção contra violações do Windows Defender](intune-deviceconfig-windowsdefendertamperprotectionoptions.md)
+- [Windows proteção contra violações do defender](intune-deviceconfig-windowsdefendertamperprotectionoptions.md)
 - [Configuração de otimização de distribuição do Windows](intune-deviceconfig-windowsdeliveryoptimizationconfiguration.md)
 - [Modo de otimização de distribuição do Windows](intune-deviceconfig-windowsdeliveryoptimizationmode.md)
-- [Tipo de quiosque de borda do Windows](intune-deviceconfig-windowsedgekiosktype.md)
+- [Windows tipo de quiosque de borda](intune-deviceconfig-windowsedgekiosktype.md)
 - [Perfil de rede de firewall do Windows](intune-deviceconfig-windowsfirewallnetworkprofile.md)
 - [Regra de firewall do Windows](intune-deviceconfig-windowsfirewallrule.md)
 - [Tipos de interface com regra de firewall do Windows](intune-deviceconfig-windowsfirewallruleinterfacetypes.md)
@@ -586,17 +588,17 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar configuraçõe
 - [Usuário do Azure AD do quiosque do Windows](intune-deviceconfig-windowskioskazureaduser.md)
 - [Configuração de quiosque do Windows](intune-deviceconfig-windowskioskconfiguration.md)
 - [Aplicativo para área de trabalho de quiosque do Windows](intune-deviceconfig-windowskioskdesktopapp.md)
-- [Agenda de atualização de força de quiosque do Windows](intune-deviceconfig-windowskioskforceupdateschedule.md)
+- [Windows agenda de atualização de força de quiosque](intune-deviceconfig-windowskioskforceupdateschedule.md)
 - [Grupo local do quiosque do Windows](intune-deviceconfig-windowskiosklocalgroup.md)
 - [Usuário local do quiosque do Windows](intune-deviceconfig-windowskiosklocaluser.md)
 - [Aplicativo para vários quiosques do Windows](intune-deviceconfig-windowskioskmultipleapps.md)
 - [Perfil do quiosque do Windows](intune-deviceconfig-windowskioskprofile.md)
 - [Aplicativo UWP do único quiosque do Windows](intune-deviceconfig-windowskiosksingleuwpapp.md)
-- [Aplicativo win32 único do quiosque do Windows](intune-deviceconfig-windowskiosksinglewin32app.md)
+- [Windows quiosque único win32 app](intune-deviceconfig-windowskiosksinglewin32app.md)
 - [Usuário do quiosque do Windows](intune-deviceconfig-windowskioskuser.md)
 - [Aplicativo UWP do quiosque do Windows](intune-deviceconfig-windowskioskuwpapp.md)
 - [Visitante do quiosque do Windows](intune-deviceconfig-windowskioskvisitor.md)
-- [Aplicativo win32 do quiosque do Windows](intune-deviceconfig-windowskioskwin32app.md)
+- [Windows quiosque win32 app](intune-deviceconfig-windowskioskwin32app.md)
 - [Política de isolamento de rede do Windows](intune-deviceconfig-windowsnetworkisolationpolicy.md)
 - [Base de perfil de certificado do Windows Phone 8.1](intune-deviceconfig-windowsphone81certificateprofilebase.md)
 - [Política de conformidade do Windows Phone 8.1](intune-deviceconfig-windowsphone81compliancepolicy.md)

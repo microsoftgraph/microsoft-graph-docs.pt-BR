@@ -1,40 +1,40 @@
 ---
-title: tipo de enumeração devicePlatformType
-description: Tipos de plataforma suportados.
+title: Tipo de número devicePlatformType
+description: Tipos de plataforma com suporte.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: ff43c04b45f71f62b652d4cec16c92a4bc4c76f2
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 51bba3284fbf9990f8485ed6dea9e51224a4ce90
+ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49300686"
+ms.lasthandoff: 05/26/2021
+ms.locfileid: "52665557"
 ---
-# <a name="deviceplatformtype-enum-type"></a>tipo de enumeração devicePlatformType
+# <a name="deviceplatformtype-enum-type"></a>Tipo de número devicePlatformType
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Tipos de plataforma suportados.
+Tipos de plataforma com suporte.
 
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|Android|,0|Android.|
+|android|0|Android.|
 |androidForWork|1|AndroidForWork.|
-|iOS|duas|emiti.|
-|macOS|3D|MacOS.|
-|windowsPhone81|4 |Windowsphonee 8,1.|
-|windows81AndLater|5 |Windows 8,1 e posterior|
+|iOS|2|iOS.|
+|macOS|3|MacOS.|
+|windowsPhone81|4 |WindowsPhone 8.1.|
+|windows81AndLater|5 |Windows 8.1 e posterior|
 |windows10AndLater|6 |Windows 10 e posterior.|
-|androidWorkProfile|7 |Perfil de trabalho do Android.|
-|desconhecido|8 |Unknown.|
-
+|androidWorkProfile|7 |Perfil de Trabalho do Android.|
+|desconhecido|8 |Desconhecido.|
+|androidAOSP|9 |Android AOSP.|
 
 
 

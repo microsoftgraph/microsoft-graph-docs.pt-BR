@@ -5,12 +5,12 @@ localization_priority: Normal
 author: isabelleatmsft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 8d780ab183ca5fd505fd4088f7078718c5646c73
-ms.sourcegitcommit: db3d2c6db8dd8f8cc14bdcebb2904d5e056a73e7
+ms.openlocfilehash: a4b7bcb9a568948e832611f15f9aefa59c32feb6
+ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52579953"
+ms.lasthandoff: 05/26/2021
+ms.locfileid: "52664570"
 ---
 # <a name="create-accessreviewscheduledefinition"></a>Criar accessReviewScheduleDefinition
 
@@ -26,9 +26,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante)     | AccessReview.ReadWrite.All  |
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
-|Application                            | AccessReview.ReadWrite.All |
+|Delegado (conta corporativa ou de estudante)     | AccessReview.ReadWrite.All  |
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Aplicativo                            | AccessReview.ReadWrite.All |
 
 O usuário interno também deve estar em uma função de diretório que permita que ele crie uma revisão de acesso.  Para obter mais detalhes, consulte os requisitos de função e permissão para [avaliações de acesso.](../resources/accessreviewsv2-root.md)
 
@@ -51,8 +51,8 @@ A tabela a seguir mostra as propriedades aceitas para criar um accessReview.
 | Propriedade | Tipo | Descrição |
 |:-------------|:------------|:------------|
 | displayName | String | Nome da série de revisão de acesso. Obrigatório.|
-| descriptionForAdmins | cadeia de caracteres | Contexto da revisão fornecida aos administradores. Obrigatório. |
-  descriptionForReviewers | cadeia de caracteres | Contexto da revisão fornecida aos revisadores. Obrigatório. |
+| descriptionForAdmins | string | Contexto da revisão fornecida aos administradores. Obrigatório. |
+  descriptionForReviewers | string | Contexto da revisão fornecida aos revisadores. Obrigatório. |
 | escopo | [accessReviewScope](../resources/accessreviewscope.md) | Define o escopo dos usuários revisados em um grupo. Consulte [accessReviewScope](../resources/accessreviewscheduledefinition.md) e também saiba como [configurar o escopo da sua definição de revisão de acesso.](/graph/accessreviews-scope-concept) Obrigatório.| 
 | instanceEnumerationScope | [accessReviewScope](../resources/accessreviewscope.md) | No caso de uma revisão de todos os grupos, isso determina o escopo de quais grupos serão revisados. Consulte [accessReviewScope](../resources/accessreviewscheduledefinition.md) e também saiba como [configurar o escopo da sua definição de revisão de acesso.](/graph/accessreviews-scope-concept)| 
 | settings | [accessReviewScheduleSettings](../resources/accessreviewschedulesettings.md)| As configurações de uma série de revisão de acesso. A recorrência é determinada aqui. Consulte [accessReviewScheduleSettings](../resources/accessreviewscheduledefinition.md). |
@@ -216,6 +216,8 @@ Este é um exemplo de criação de uma revisão de acesso com as seguintes confi
 
 #### <a name="request"></a>Solicitação
 No corpo da solicitação, fornece uma representação JSON do [objeto accessReviewScheduleDefinition.](../resources/accessreviewscheduledefinition.md)
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_accessReviewScheduleDefinition_inactiveguests_M365"
@@ -274,6 +276,24 @@ Content-type: application/json
   }
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-accessreviewscheduledefinition-inactiveguests-m365-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-accessreviewscheduledefinition-inactiveguests-m365-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-accessreviewscheduledefinition-inactiveguests-m365-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-accessreviewscheduledefinition-inactiveguests-m365-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>Resposta
 >**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
@@ -378,6 +398,8 @@ Este é um exemplo de criação de uma revisão de acesso com as seguintes confi
 + Ela recorre semesanuais e termina 1 ano a partir do startDate.
 
 #### <a name="request"></a>Solicitação
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_accessReviewScheduleDefinition_allusers_M365_AADRole"
@@ -449,6 +471,24 @@ Content-type: application/json
   }
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-accessreviewscheduledefinition-allusers-m365-aadrole-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-accessreviewscheduledefinition-allusers-m365-aadrole-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-accessreviewscheduledefinition-allusers-m365-aadrole-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-accessreviewscheduledefinition-allusers-m365-aadrole-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>Resposta
 >**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.

@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 90d2c010b0a556881ea81cf8648f0b70a0ffc8bf
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: 466ad2062b60294c2884664fc82e434d2b07724b
+ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51131187"
+ms.lasthandoff: 05/26/2021
+ms.locfileid: "52663919"
 ---
 # <a name="update-manageddevicecertificatestate"></a>Atualizar managedDeviceCertificateState
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -27,8 +27,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -74,29 +74,29 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [managed
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Chave da entidade.|
-|devicePlatform|[devicePlatformType](../resources/intune-shared-deviceplatformtype.md)|Plataforma do dispositivo. Os valores possíveis são: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `unknown`.|
+|id|String|Chave da entidade.|
+|devicePlatform|[devicePlatformType](../resources/intune-shared-deviceplatformtype.md)|Plataforma do dispositivo. Os valores possíveis são: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `unknown`, `androidAOSP`.|
 |certificateKeyUsage|[keyUsages](../resources/intune-shared-keyusages.md)|Uso de chave. Os valores possíveis são: `keyEncipherment` e `digitalSignature`.|
 |certificateValidityPeriodUnits|[certificateValidityPeriodScale](../resources/intune-shared-certificatevalidityperiodscale.md)|Unidades de período de validade. Os valores possíveis são: `days`, `months`, `years`.|
 |certificateIssuanceState|[certificateIssuanceStates](../resources/intune-deviceconfig-certificateissuancestates.md)|Estado de emissão. Os valores possíveis são: `unknown` , , , , , , , , `challengeIssued` `challengeIssueFailed` , `requestCreationFailed` `requestSubmitFailed` , `challengeValidationSucceeded` `challengeValidationFailed` `issueFailed` `issuePending` `issued` `responseProcessingFailed` `responsePending` `enrollmentSucceeded` `enrollmentNotNeeded` `revoked` , `removedFromCollection` `renewVerified` `installFailed` `installed` `deleteFailed` `deleted` `renewalRequested` `requested`|
-|certificateKeyStorageProvider|[keyStorageProviderOption](../resources/intune-shared-keystorageprovideroption.md)|Provedor de Armazenamento de Chaves. Os valores possíveis são: `useTpmKspOtherwiseUseSoftwareKsp`, `useTpmKspOtherwiseFail`, `usePassportForWorkKspOtherwiseFail`, `useSoftwareKsp`.|
+|certificateKeyStorageProvider|[keyStorageProviderOption](../resources/intune-shared-keystorageprovideroption.md)|Provedor Armazenamento chave. Os valores possíveis são: `useTpmKspOtherwiseUseSoftwareKsp`, `useTpmKspOtherwiseFail`, `usePassportForWorkKspOtherwiseFail`, `useSoftwareKsp`.|
 |certificateSubjectNameFormat|[subjectNameFormat](../resources/intune-deviceconfig-subjectnameformat.md)|Formato de nome do assunto. Os valores possíveis são: `commonName`, `commonNameIncludingEmail`, `commonNameAsEmail`, `custom`, `commonNameAsIMEI`, `commonNameAsSerialNumber`, `commonNameAsAadDeviceId`, `commonNameAsIntuneDeviceId`, `commonNameAsDurableDeviceId`.|
 |certificateSubjectAlternativeNameFormat|[subjectAlternativeNameType](../resources/intune-shared-subjectalternativenametype.md)|Formato de nome alternativo do assunto. Os possíveis valores são: `none`, `emailAddress`, `userPrincipalName`, `customAzureADAttribute`, `domainNameService`, `universalResourceIdentifier`.|
 |certificateRevokeStatus|[certificateRevocationStatus](../resources/intune-deviceconfig-certificaterevocationstatus.md)|Revogar status. Os valores possíveis são: `none`, `pending`, `issued`, `failed`, `revoked`.|
-|certificateProfileDisplayName|Cadeia de caracteres|Nome de exibição de perfil de certificado|
+|certificateProfileDisplayName|String|Nome de exibição de perfil de certificado|
 |deviceDisplayName|Cadeia de caracteres|Nome de exibição do dispositivo|
 |userDisplayName|Cadeia de caracteres|Nome de exibição do usuário|
 |certificateExpirationDateTime|DateTimeOffset|Data de expiração do certificado|
 |certificateLastIssuanceStateChangedDateTime|DateTimeOffset|Última alteração de estado de emissão de certificado|
 |lastCertificateStateChangeDateTime|DateTimeOffset|Última alteração de estado de emissão de certificado|
-|certificateIssuer|Cadeia de caracteres|Emissor|
-|certificateThumbprint|Cadeia de caracteres|Impressão Digital|
-|certificateSerialNumber|Cadeia de caracteres|Número de série|
+|certificateIssuer|String|Emissor|
+|certificateThumbprint|String|Impressão Digital|
+|certificateSerialNumber|String|Número de série|
 |certificateKeyLength|Int32|Comprimento de chave|
-|certificateEnhancedKeyUsage|Cadeia de caracteres|Uso estendido de chave|
+|certificateEnhancedKeyUsage|String|Uso estendido de chave|
 |certificateValidityPeriod|Int32|Período de validade|
-|certificateSubjectNameFormatString|Cadeia de caracteres|Cadeia de caracteres de formato de nome de assunto para formatos de nome de assunto personalizados|
-|certificateSubjectAlternativeNameFormatString|Cadeia de caracteres|Cadeia de caracteres de formato de nome alternativo de assunto para formatos personalizados|
+|certificateSubjectNameFormatString|String|Cadeia de caracteres de formato de nome de assunto para formatos de nome de assunto personalizados|
+|certificateSubjectAlternativeNameFormatString|String|Cadeia de caracteres de formato de nome alternativo de assunto para formatos personalizados|
 |certificateIssuanceDateTime|DateTimeOffset|Data de emissão|
 |certificateErrorCode|Int32|Código de erro|
 

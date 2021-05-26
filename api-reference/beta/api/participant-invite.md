@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: c38bcedf3bb7c455f1cf087dc6f7091518589099
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: ac0436723a8e01d3476990f3d794b8fcd0e7ed9f
+ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52049195"
+ms.lasthandoff: 05/26/2021
+ms.locfileid: "52666356"
 ---
 # <a name="participant-invite"></a>participante: invite
 
@@ -704,6 +704,7 @@ Content-Type: application/json
 ### <a name="example-4-invite-one-pstn-participant-to-an-existing-group-call"></a>Exemplo 4: convidar um participante PSTN para uma chamada de grupo existente
 
 Essa chamada requer uma instância de aplicativo com um número PSTN atribuído. Para obter detalhes, [consulte Atribuir um número de telefone ao seu bot](/graph/cloud-communications-phone-number#assign-a-phone-number-to-your-bot).
+> **Observação:** Telefone ID é o número de telefone no formato E.164.
 
 #### <a name="request"></a>Solicitação
 

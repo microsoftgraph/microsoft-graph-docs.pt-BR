@@ -1,22 +1,22 @@
 ---
-title: tipo de recurso deviceManagementConfigurationSettingValue
+title: Tipo de recurso deviceManagementConfigurationSettingValue
 description: Valor de configuração
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3c02ae9bb767dedc15197680c283a5415d5efd9c
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 882946dbcf9440ceacc37a1c843f169ed9e2b1a0
+ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49301441"
+ms.lasthandoff: 05/26/2021
+ms.locfileid: "52666237"
 ---
-# <a name="devicemanagementconfigurationsettingvalue-resource-type"></a>tipo de recurso deviceManagementConfigurationSettingValue
+# <a name="devicemanagementconfigurationsettingvalue-resource-type"></a>Tipo de recurso deviceManagementConfigurationSettingValue
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -25,9 +25,10 @@ Valor de configuração
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
+|settingValueTemplateReference|[deviceManagementConfigurationSettingValueTemplateReference](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingvaluetemplatereference.md)|Referência do modelo de valor de configuração|
 
 ## <a name="relationships"></a>Relações
-Nenhum
+Nenhuma
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
@@ -38,7 +39,12 @@ Veja a seguir uma representação JSON do recurso.
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.deviceManagementConfigurationSettingValue"
+  "@odata.type": "#microsoft.graph.deviceManagementConfigurationSettingValue",
+  "settingValueTemplateReference": {
+    "@odata.type": "microsoft.graph.deviceManagementConfigurationSettingValueTemplateReference",
+    "settingValueTemplateId": "String",
+    "useTemplateDefault": true
+  }
 }
 ```
 

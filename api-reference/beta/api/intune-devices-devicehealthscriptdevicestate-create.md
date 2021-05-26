@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 8e82e2fd9821f05cfb0690367fce3de03b02cd7c
-ms.sourcegitcommit: fe1b4d098af604cc34596f595e799911ea672532
+ms.openlocfilehash: 4d58eee0dfbcae32586712f9c45b607ef31c1eac
+ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "51609763"
+ms.lasthandoff: 05/26/2021
+ms.locfileid: "52666370"
 ---
 # <a name="create-devicehealthscriptdevicestate"></a>Criar deviceHealthScriptDeviceState
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -54,7 +54,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar deviceHe
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|String|Chave da entidade de estado do dispositivo de script de saúde do dispositivo. Essa propriedade é somente leitura.|
-|detectionState|[runState](../resources/intune-devices-runstate.md)|Estado de detecção da última execução de script de saúde do dispositivo. Os possíveis valores são: `unknown`, `success`, `fail`, `scriptError`, `pending`, `notApplicable`.|
+|detectionState|[runState](../resources/intune-shared-runstate.md)|Estado de detecção da última execução de script de saúde do dispositivo. Os possíveis valores são: `unknown`, `success`, `fail`, `scriptError`, `pending`, `notApplicable`.|
 |lastStateUpdateDateTime|DateTimeOffset|O último período de data/hora de quando o script de saúde do dispositivo foi executado|
 |expectedStateUpdateDateTime|DateTimeOffset|O próximo horário de quando o script de saúde do dispositivo deve ser executado|
 |lastSyncDateTime|DateTimeOffset|A última vez que a Extensão de Managment do Intune foi sincronizada com o Intune|
@@ -64,6 +64,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar deviceHe
 |postRemediationDetectionScriptOutput|String|Saída de script de detecção após correção|
 |postRemediationDetectionScriptError|String|Erro do script de detecção após a correção|
 |remediationState|[remediationState](../resources/intune-devices-remediationstate.md)|Estado de correção da última execução do script de saúde do dispositivo. Os valores possíveis são: `unknown`, `skipped`, `success`, `remediationFailed`, `scriptError`.|
+|assignmentFilterIds|Coleção de cadeias de caracteres|Uma lista das IDs de filtro de atribuição usadas para avaliação de aplicabilidade do script de saúde|
 
 
 
@@ -77,7 +78,7 @@ Este é um exemplo da solicitação.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceHealthScripts/{deviceHealthScriptId}/deviceRunStates
 Content-type: application/json
-Content-length: 762
+Content-length: 831
 
 {
   "@odata.type": "#microsoft.graph.deviceHealthScriptDeviceState",
@@ -90,7 +91,10 @@ Content-length: 762
   "remediationScriptError": "Remediation Script Error value",
   "postRemediationDetectionScriptOutput": "Post Remediation Detection Script Output value",
   "postRemediationDetectionScriptError": "Post Remediation Detection Script Error value",
-  "remediationState": "skipped"
+  "remediationState": "skipped",
+  "assignmentFilterIds": [
+    "Assignment Filter Ids value"
+  ]
 }
 ```
 
@@ -99,7 +103,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 811
+Content-Length: 880
 
 {
   "@odata.type": "#microsoft.graph.deviceHealthScriptDeviceState",
@@ -113,7 +117,10 @@ Content-Length: 811
   "remediationScriptError": "Remediation Script Error value",
   "postRemediationDetectionScriptOutput": "Post Remediation Detection Script Output value",
   "postRemediationDetectionScriptError": "Post Remediation Detection Script Error value",
-  "remediationState": "skipped"
+  "remediationState": "skipped",
+  "assignmentFilterIds": [
+    "Assignment Filter Ids value"
+  ]
 }
 ```
 

@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 1cd4db22f691935d53b85eded268650ab0bc12b4
-ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
+ms.openlocfilehash: 6998e0dbec8d21dbf32f36c6fae9b24b736e985e
+ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51868341"
+ms.lasthandoff: 05/26/2021
+ms.locfileid: "52666405"
 ---
 # <a name="create-userexperienceanalyticsworkfromanywheredevice"></a>Criar userExperienceAnalyticsWorkFromAnywhereDevice
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -27,9 +27,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementManagedDevices.ReadWrite.All|
+|Delegado (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Aplicativo|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -53,18 +53,20 @@ A tabela a seguir mostra as propriedades necessárias ao criar o userExperienceA
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|O identificador exclusivo da análise de experiência do usuário funciona em qualquer dispositivo.|
+|id|String|O identificador exclusivo da análise de experiência do usuário funciona em qualquer dispositivo.|
 |deviceName|String|O trabalho do nome do dispositivo em qualquer lugar.|
 |serialNumber|String|A experiência do usuário funciona de qualquer lugar do número de série do dispositivo.|
 |fabricante|String|A experiência do usuário funciona de qualquer fabricante do dispositivo.|
 |modelo|String|A experiência do usuário funciona de qualquer lugar do modelo do dispositivo.|
-|propriedade|Cadeia de Caracteres|A experiência do usuário funciona de qualquer lugar da propriedade do dispositivo.|
-|managedBy|Cadeia de Caracteres|A experiência do usuário funciona de qualquer lugar do agente de gerenciamento do dispositivo.|
-|autoPilotRegistered|Boolean|A experiência do usuário funciona em qualquer lugar do piloto automático do dispositivo intuneRegistered.|
-|autoPilotProfileAssigned|Boolean|A análise da experiência do usuário funciona em qualquer lugar do autopilotProfileAssigned do dispositivo intune.|
-|azureAdRegistered|Boolean|A experiência do usuário funciona de qualquer lugar do dispositivo azureAdRegistered.|
-|azureAdDeviceId|Cadeia de Caracteres|A experiência do usuário funciona em qualquer lugar do Azure Ad device Id.|
-|azureAdJoinType|Cadeia de Caracteres|A experiência do usuário funciona de qualquer lugar do azure Ad joinType do dispositivo.|
+|propriedade|String|A experiência do usuário funciona de qualquer lugar da propriedade do dispositivo.|
+|managedBy|String|A experiência do usuário funciona de qualquer lugar do agente de gerenciamento do dispositivo.|
+|autoPilotRegistered|Booleano|A experiência do usuário funciona em qualquer lugar do piloto automático do dispositivo intuneRegistered.|
+|autoPilotProfileAssigned|Booleano|A análise da experiência do usuário funciona em qualquer lugar do autopilotProfileAssigned do dispositivo intune.|
+|azureAdRegistered|Booleano|A experiência do usuário funciona de qualquer lugar do dispositivo azureAdRegistered.|
+|azureAdDeviceId|String|A experiência do usuário funciona em qualquer lugar do Azure Ad device Id.|
+|azureAdJoinType|String|A experiência do usuário funciona de qualquer lugar do azure Ad joinType do dispositivo.|
+|osDescription|Cadeia de caracteres|A experiência do usuário funciona de qualquer lugar da Descrição do sistema operacional do dispositivo.|
+|osVersion|String|A experiência do usuário funciona de qualquer lugar da versão do sistema operacional do dispositivo.|
 
 
 
@@ -78,7 +80,7 @@ Este é um exemplo da solicitação.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsWorkFromAnywhereMetrics/{userExperienceAnalyticsWorkFromAnywhereMetricId}/metricDevices
 Content-type: application/json
-Content-length: 505
+Content-length: 585
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsWorkFromAnywhereDevice",
@@ -92,7 +94,9 @@ Content-length: 505
   "autoPilotProfileAssigned": true,
   "azureAdRegistered": true,
   "azureAdDeviceId": "Azure Ad Device Id value",
-  "azureAdJoinType": "Azure Ad Join Type value"
+  "azureAdJoinType": "Azure Ad Join Type value",
+  "osDescription": "Os Description value",
+  "osVersion": "Os Version value"
 }
 ```
 
@@ -101,7 +105,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 554
+Content-Length: 634
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsWorkFromAnywhereDevice",
@@ -116,7 +120,9 @@ Content-Length: 554
   "autoPilotProfileAssigned": true,
   "azureAdRegistered": true,
   "azureAdDeviceId": "Azure Ad Device Id value",
-  "azureAdJoinType": "Azure Ad Join Type value"
+  "azureAdJoinType": "Azure Ad Join Type value",
+  "osDescription": "Os Description value",
+  "osVersion": "Os Version value"
 }
 ```
 

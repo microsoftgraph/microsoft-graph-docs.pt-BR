@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: fe54dbb05313fa659e95d2a65e2a9dc74cd1bc83
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: dbc7c4b07470ea0de1e4afe492a9accfc9173d1e
+ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52047606"
+ms.lasthandoff: 05/26/2021
+ms.locfileid: "52664008"
 ---
 # <a name="call-transfer"></a>call: transfer
 
@@ -437,6 +437,7 @@ Content-Type: application/json
 ### <a name="example-3-call-transfer-to-pstn-number"></a>Exemplo 3: Transferência de chamada para número PSTN
 
 Essa chamada requer uma instância de aplicativo com um número PSTN atribuído. Para obter detalhes, [consulte Atribuir um número de telefone ao seu bot](/graph/cloud-communications-phone-number#assign-a-phone-number-to-your-bot).
+> **Observação:** Telefone ID é o número de telefone no formato E.164.
 
 #### <a name="request"></a>Solicitação
 O exemplo a seguir mostra a solicitação.
@@ -620,6 +621,7 @@ Content-Type: application/json
 ### <a name="example-4-consultative-transfer-to-pstn-number"></a>Exemplo 4: transferência consultiva para número PSTN
 
 Essa chamada requer uma instância de aplicativo com um número PSTN atribuído. Para obter detalhes, [consulte Atribuir um número de telefone ao seu bot](/graph/cloud-communications-phone-number#assign-a-phone-number-to-your-bot).
+> **Observação:** Telefone ID é o número de telefone no formato E.164.
 
 #### <a name="request"></a>Solicitação
 O exemplo a seguir mostra a solicitação.

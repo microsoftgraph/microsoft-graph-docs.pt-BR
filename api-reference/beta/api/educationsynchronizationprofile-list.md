@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 707e8728ee5ef250ea33e88102cb534b399c3684
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: bb4996140bc0ec7200bedb4243f4eef0f10f080d
+ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52043098"
+ms.lasthandoff: 05/26/2021
+ms.locfileid: "52664745"
 ---
 # <a name="list-educationsynchronizationprofiles"></a>Listar educationSynchronizationProfiles
 
@@ -27,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:-----------|:----------|
 | Delegado (conta corporativa ou de estudante) | EduAdministration.Read, EduAdministration.ReadWrite |
 |Delegada (conta pessoal da Microsoft|Sem suporte.|
-|Aplicativo|Sem suporte.|
+|Aplicativo|EduAdministration.Read.All, EduAdministration.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->

@@ -1,38 +1,39 @@
 ---
-title: tipo de recurso deviceManagementConfigurationSimpleSettingCollectionInstance
-description: Instância de coleção de configurações simples
+title: Tipo de recurso deviceManagementConfigurationSimpleSettingCollectionInstance
+description: Instância de conjunto de configurações simples
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: b0886b7665f1f3ce16780f2ecccc77635fd70cf3
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 30dcfb5d02aebb1e7bf346c6dd1f4b37e1103b49
+ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49241230"
+ms.lasthandoff: 05/26/2021
+ms.locfileid: "52664920"
 ---
-# <a name="devicemanagementconfigurationsimplesettingcollectioninstance-resource-type"></a>tipo de recurso deviceManagementConfigurationSimpleSettingCollectionInstance
+# <a name="devicemanagementconfigurationsimplesettingcollectioninstance-resource-type"></a>Tipo de recurso deviceManagementConfigurationSimpleSettingCollectionInstance
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Instância de coleção de configurações simples
+Instância de conjunto de configurações simples
 
 
-Herda de [deviceManagementConfigurationSettingInstance](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettinginstance.md)
+Herda [de deviceManagementConfigurationSettingInstance](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettinginstance.md)
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|settingDefinitionId|String|Definição de ID de definição herdada de [deviceManagementConfigurationSettingInstance](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettinginstance.md)|
-|simpleSettingCollectionValue|coleção [deviceManagementConfigurationSimpleSettingValue](../resources/intune-deviceconfigv2-devicemanagementconfigurationsimplesettingvalue.md)|Valor de instância da coleção de configurações simples|
+|settingDefinitionId|String|Definição Id de definição Herdada [de deviceManagementConfigurationSettingInstance](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettinginstance.md)|
+|settingInstanceTemplateReference|[deviceManagementConfigurationSettingInstanceTemplateReference](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettinginstancetemplatereference.md)|Referência do modelo de instância de configuração Herdada [de deviceManagementConfigurationSettingInstance](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettinginstance.md)|
+|simpleSettingCollectionValue|[Coleção deviceManagementConfigurationSimpleSettingValue](../resources/intune-deviceconfigv2-devicemanagementconfigurationsimplesettingvalue.md)|Valor de instância de conjunto de configurações simples|
 
 ## <a name="relationships"></a>Relações
-Nenhum
+Nenhuma
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
@@ -45,9 +46,18 @@ Veja a seguir uma representação JSON do recurso.
 {
   "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingCollectionInstance",
   "settingDefinitionId": "String",
+  "settingInstanceTemplateReference": {
+    "@odata.type": "microsoft.graph.deviceManagementConfigurationSettingInstanceTemplateReference",
+    "settingInstanceTemplateId": "String"
+  },
   "simpleSettingCollectionValue": [
     {
       "@odata.type": "microsoft.graph.deviceManagementConfigurationStringSettingValue",
+      "settingValueTemplateReference": {
+        "@odata.type": "microsoft.graph.deviceManagementConfigurationSettingValueTemplateReference",
+        "settingValueTemplateId": "String",
+        "useTemplateDefault": true
+      },
       "value": "String"
     }
   ]

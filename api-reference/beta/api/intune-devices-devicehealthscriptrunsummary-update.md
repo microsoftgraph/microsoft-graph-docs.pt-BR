@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 72dd3594aee3bc9a19c7195e67201c7f54270b9b
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: 3d342f4703ba8dcb04b58007d26fc94ff99c8c91
+ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51127078"
+ms.lasthandoff: 05/26/2021
+ms.locfileid: "52665088"
 ---
 # <a name="update-devicehealthscriptrunsummary"></a>Atualizar deviceHealthScriptRunSummary
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -27,8 +27,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -53,11 +53,12 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [deviceH
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Chave da entidade resumo do script de saúde do dispositivo. Essa propriedade é somente leitura.|
+|id|String|Chave da entidade resumo do script de saúde do dispositivo. Essa propriedade é somente leitura.|
 |noIssueDetectedDeviceCount|Int32|Número de dispositivos para os quais o script de detecção não encontrou um problema e o dispositivo está saudável|
 |issueDetectedDeviceCount|Int32|Número de dispositivos para os quais o script de detecção encontrou um problema|
 |detectionScriptErrorDeviceCount|Int32|Número de dispositivos nos quais a execução do script de detecção encontrou um erro e não foi concluída|
 |detectionScriptPendingDeviceCount|Int32|Número de dispositivos que ainda não executaram a versão mais recente do script de saúde do dispositivo|
+|detectionScriptNotApplicableDeviceCount|Int32|Número de dispositivos para os quais o script de detecção não foi aplicável|
 |issueRemediatedDeviceCount|Int32|Número de dispositivos para os quais o script de correção foi capaz de resolver o problema detectado|
 |remediationSkippedDeviceCount|Int32|Número de dispositivos para os quais a correção foi ignorada|
 |issueReoccurredDeviceCount|Int32|Número de dispositivos para os quais o script de correção foi executado com êxito, mas não conseguiu resolver o problema detectado|
@@ -77,7 +78,7 @@ Este é um exemplo da solicitação.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceHealthScripts/{deviceHealthScriptId}/runSummary
 Content-type: application/json
-Content-length: 494
+Content-length: 543
 
 {
   "@odata.type": "#microsoft.graph.deviceHealthScriptRunSummary",
@@ -85,6 +86,7 @@ Content-length: 494
   "issueDetectedDeviceCount": 8,
   "detectionScriptErrorDeviceCount": 15,
   "detectionScriptPendingDeviceCount": 1,
+  "detectionScriptNotApplicableDeviceCount": 7,
   "issueRemediatedDeviceCount": 10,
   "remediationSkippedDeviceCount": 13,
   "issueReoccurredDeviceCount": 10,
@@ -99,7 +101,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 543
+Content-Length: 592
 
 {
   "@odata.type": "#microsoft.graph.deviceHealthScriptRunSummary",
@@ -108,6 +110,7 @@ Content-Length: 543
   "issueDetectedDeviceCount": 8,
   "detectionScriptErrorDeviceCount": 15,
   "detectionScriptPendingDeviceCount": 1,
+  "detectionScriptNotApplicableDeviceCount": 7,
   "issueRemediatedDeviceCount": 10,
   "remediationSkippedDeviceCount": 13,
   "issueReoccurredDeviceCount": 10,

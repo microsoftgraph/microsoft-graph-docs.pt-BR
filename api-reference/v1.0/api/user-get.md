@@ -5,12 +5,12 @@ author: jpettere
 localization_priority: Priority
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 94ceebb51dfe1d43bea7404213ef8fdb56535701
-ms.sourcegitcommit: db3d2c6db8dd8f8cc14bdcebb2904d5e056a73e7
+ms.openlocfilehash: 0e3491f40381e865ecd601ef296c91238078ab15
+ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52579778"
+ms.lasthandoff: 05/26/2021
+ms.locfileid: "52666644"
 ---
 # <a name="get-a-user"></a>Obter um usuário
 
@@ -77,7 +77,7 @@ Por padrão, somente um conjunto limitado de propriedades é retornado (_busines
   "blockType": "request",
   "name": "get_user_1"
 } -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/users/{id | userPrincipalName}
 ```
 
@@ -178,13 +178,33 @@ Content-length: 491
 Se precisar de um conjunto de propriedades diferente, você poderá usar o parâmetro de consulta OData `$select`. Por exemplo, para retornar _displayName_, _givenName_ e _postalCode_, você pode adicionar o seguinte à consulta `$select=displayName,givenName,postalCode`
 
 ##### <a name="request"></a>Solicitação
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_user_2"
 } -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/users/{id | userPrincipalName}?$select=displayName,givenName,postalCode
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-user-2-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-user-2-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-user-2-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-user-2-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 ##### <a name="response"></a>Resposta
 <!-- {
   "blockType": "response",

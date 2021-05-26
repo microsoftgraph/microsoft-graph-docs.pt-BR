@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 51d25717f10db7ba29fb8364e513893c5e299266
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: dec644f55e7a96cec6cbb1680af12097c09525bc
+ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50948475"
+ms.lasthandoff: 05/26/2021
+ms.locfileid: "52664003"
 ---
 # <a name="call-redirect"></a>call: redirect
 
@@ -55,10 +55,10 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 | Parâmetro      | Tipo    |Descrição|
 |:---------------|:--------|:----------|
 |targets|conjunto [invitationParticipantInfo](../resources/invitationparticipantinfo.md)|Os participantes de destino da operação de redirecionamento. Se mais de um destino for especificado, será uma chamada simulring. Isso significa que todos os destinos serão tordos ao mesmo tempo e somente o primeiro destino que escolher será conectado. Suportamos até 25 destinos para simulação.
-|targetDisposition|Cadeia de caracteres|(Preterido) Os valores possíveis são: `default` , `simultaneousRing` , `forward` . Esse parâmetro é preterido, identificaremos automaticamente se é uma chamada de encaminhamento ou simulring do número de destinos fornecidos.|
+|targetDisposition|String|(Preterido) Os valores possíveis são: `default` , `simultaneousRing` , `forward` . Esse parâmetro é preterido, identificaremos automaticamente se é uma chamada de encaminhamento ou simulring do número de destinos fornecidos.|
 |timeout|Int32|O tempo decoro (em segundos) para a operação de redirecionamento. O intervalo do valor de tempo decor entre 15 e 90 segundos, inclusive. O valor de tempo decoro padrão é 55 segundos para um destino e 60 segundos para vários destinos (sujeitos a alterações). |
-|maskCallee|Booliano|Indica se o chamador deve ser oculto do chamador. Se for true, a identidade do chamador será a identidade do bot. Padrão: false.|
-|maskCaller|Booliano|Indica se o chamador deve ser oculto do chamador. Se for true, a identidade do chamador será a identidade do bot. Padrão: false.|
+|maskCallee|Booleano|Indica se o chamador deve ser oculto do chamador. Se for true, a identidade do chamador será a identidade do bot. Padrão: false.|
+|maskCaller|Booleano|Indica se o chamador deve ser oculto do chamador. Se for true, a identidade do chamador será a identidade do bot. Padrão: false.|
 |callbackUri|String|Isso permite que os bots forneçam um URI de retorno de chamada específico para que a chamada atual receba notificações posteriores. Se essa propriedade não tiver sido definida, o URI de retorno de chamada global do bot será usado em vez disso. Isso deve ser `https` .|
 
 ## <a name="response"></a>Resposta
@@ -418,6 +418,7 @@ Content-Type: application/json
 ### <a name="example-3-forward-a-call-to-a-pstn-number"></a>Exemplo 3: encaminhar uma chamada para um número PSTN
 
 Essa chamada requer uma instância de aplicativo com um número PSTN atribuído. Para obter detalhes, [consulte Atribuir um número de telefone ao seu bot](/graph/cloud-communications-phone-number#assign-a-phone-number-to-your-bot).
+> **Observação:** Telefone ID é o número de telefone no formato E.164.
 
 #### <a name="notification---incoming"></a>Notificação - entrada
 <!-- {

@@ -1,22 +1,22 @@
 ---
-title: tipo de recurso deviceManagementConfigurationSimpleSettingValue
+title: Tipo de recurso deviceManagementConfigurationSimpleSettingValue
 description: Valor de configuração simples
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: a80ec036491e77e3663d668511a6c65d017ffcf4
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 1f56883a53cab24f9859e968c11827a7a104a776
+ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49241245"
+ms.lasthandoff: 05/26/2021
+ms.locfileid: "52666706"
 ---
-# <a name="devicemanagementconfigurationsimplesettingvalue-resource-type"></a>tipo de recurso deviceManagementConfigurationSimpleSettingValue
+# <a name="devicemanagementconfigurationsimplesettingvalue-resource-type"></a>Tipo de recurso deviceManagementConfigurationSimpleSettingValue
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -28,9 +28,10 @@ Herda de [deviceManagementConfigurationSettingValue](../resources/intune-devicec
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
+|settingValueTemplateReference|[deviceManagementConfigurationSettingValueTemplateReference](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingvaluetemplatereference.md)|Referência de modelo de valor de configuração Herdada [de deviceManagementConfigurationSettingValue](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingvalue.md)|
 
 ## <a name="relationships"></a>Relações
-Nenhum
+Nenhuma
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
@@ -41,7 +42,12 @@ Veja a seguir uma representação JSON do recurso.
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingValue"
+  "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingValue",
+  "settingValueTemplateReference": {
+    "@odata.type": "microsoft.graph.deviceManagementConfigurationSettingValueTemplateReference",
+    "settingValueTemplateId": "String",
+    "useTemplateDefault": true
+  }
 }
 ```
 

@@ -1,26 +1,26 @@
 ---
-title: tipo de recurso androidForWorkCompliancePolicy
-description: Essa classe contém configurações de conformidade para Android para o trabalho.
+title: Tipo de recurso androidForWorkCompliancePolicy
+description: Esta classe contém configurações de conformidade para Android for Work.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: a3d1bc4ebf1289e0084920b35baf99c33fd83cf4
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: fd4ae5839391f2ceb79661c85fabc48cfdb90de6
+ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49284215"
+ms.lasthandoff: 05/26/2021
+ms.locfileid: "52666349"
 ---
-# <a name="androidforworkcompliancepolicy-resource-type"></a>tipo de recurso androidForWorkCompliancePolicy
+# <a name="androidforworkcompliancepolicy-resource-type"></a>Tipo de recurso androidForWorkCompliancePolicy
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Essa classe contém configurações de conformidade para Android para o trabalho.
+Esta classe contém configurações de conformidade para Android for Work.
 
 
 Herda de [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)
@@ -28,19 +28,19 @@ Herda de [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepol
 ## <a name="methods"></a>Métodos
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
-|[Listar androidForWorkCompliancePolicies](../api/intune-deviceconfig-androidforworkcompliancepolicy-list.md)|coleção [androidForWorkCompliancePolicy](../resources/intune-deviceconfig-androidforworkcompliancepolicy.md)|Listar Propriedades e relações dos objetos [androidForWorkCompliancePolicy](../resources/intune-deviceconfig-androidforworkcompliancepolicy.md) .|
-|[Obter androidForWorkCompliancePolicy](../api/intune-deviceconfig-androidforworkcompliancepolicy-get.md)|[androidForWorkCompliancePolicy](../resources/intune-deviceconfig-androidforworkcompliancepolicy.md)|Leia as propriedades e as relações do objeto [androidForWorkCompliancePolicy](../resources/intune-deviceconfig-androidforworkcompliancepolicy.md) .|
-|[Criar androidForWorkCompliancePolicy](../api/intune-deviceconfig-androidforworkcompliancepolicy-create.md)|[androidForWorkCompliancePolicy](../resources/intune-deviceconfig-androidforworkcompliancepolicy.md)|Criar um novo objeto [androidForWorkCompliancePolicy](../resources/intune-deviceconfig-androidforworkcompliancepolicy.md) .|
-|[Excluir androidForWorkCompliancePolicy](../api/intune-deviceconfig-androidforworkcompliancepolicy-delete.md)|Nenhum|Exclui [androidForWorkCompliancePolicy](../resources/intune-deviceconfig-androidforworkcompliancepolicy.md).|
-|[Atualizar androidForWorkCompliancePolicy](../api/intune-deviceconfig-androidforworkcompliancepolicy-update.md)|[androidForWorkCompliancePolicy](../resources/intune-deviceconfig-androidforworkcompliancepolicy.md)|Atualiza as propriedades de um objeto [androidForWorkCompliancePolicy](../resources/intune-deviceconfig-androidforworkcompliancepolicy.md) .|
+|[Listar androidForWorkCompliancePolicies](../api/intune-deviceconfig-androidforworkcompliancepolicy-list.md)|[Coleção androidForWorkCompliancePolicy](../resources/intune-deviceconfig-androidforworkcompliancepolicy.md)|Listar propriedades e relações dos objetos [androidForWorkCompliancePolicy.](../resources/intune-deviceconfig-androidforworkcompliancepolicy.md)|
+|[Obter androidForWorkCompliancePolicy](../api/intune-deviceconfig-androidforworkcompliancepolicy-get.md)|[androidForWorkCompliancePolicy](../resources/intune-deviceconfig-androidforworkcompliancepolicy.md)|Leia propriedades e relações do [objeto androidForWorkCompliancePolicy.](../resources/intune-deviceconfig-androidforworkcompliancepolicy.md)|
+|[Criar androidForWorkCompliancePolicy](../api/intune-deviceconfig-androidforworkcompliancepolicy-create.md)|[androidForWorkCompliancePolicy](../resources/intune-deviceconfig-androidforworkcompliancepolicy.md)|Crie um novo [objeto androidForWorkCompliancePolicy.](../resources/intune-deviceconfig-androidforworkcompliancepolicy.md)|
+|[Excluir androidForWorkCompliancePolicy](../api/intune-deviceconfig-androidforworkcompliancepolicy-delete.md)|Nenhuma|Exclui um [androidForWorkCompliancePolicy](../resources/intune-deviceconfig-androidforworkcompliancepolicy.md).|
+|[Atualizar androidForWorkCompliancePolicy](../api/intune-deviceconfig-androidforworkcompliancepolicy-update.md)|[androidForWorkCompliancePolicy](../resources/intune-deviceconfig-androidforworkcompliancepolicy.md)|Atualize as propriedades de um [objeto androidForWorkCompliancePolicy.](../resources/intune-deviceconfig-androidforworkcompliancepolicy.md)|
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de marcas de escopo para esta instância de entidade. Herdada de [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
+|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de marcas de escopo para esta instância entity. Herdada de [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
 |id|String|Chave da entidade. Herdada de [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
 |createdDateTime|DateTimeOffset|DateTime em que o objeto foi criado. Herdada de [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
-|description|String|O administrador forneceu a descrição da Configuração do dispositivo. Herdada de [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
+|descrição|String|O administrador forneceu a descrição da Configuração do dispositivo. Herdada de [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
 |lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto. Herdada de [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
 |displayName|String|O administrador forneceu o nome da Configuração do dispositivo. Herdada de [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
 |version|Int32|Versão da configuração do dispositivo. Herdada de [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
@@ -50,7 +50,7 @@ Herda de [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepol
 |passwordMinutesOfInactivityBeforeLock|Int32|Minutos de inatividade antes que uma senha seja necessária.|
 |passwordExpirationDays|Int32|Número de dias antes da expiração da senha. Valores válidos de 1 a 365|
 |passwordPreviousPasswordBlockCount|Int32|Número de senhas anteriores para bloquear. Valores válidos de 1 a 24|
-|passwordSignInFailureCountBeforeFactoryReset|Int32|Número de falhas de entrada permitidas antes da redefinição de fábrica. Valores válidos de 1 a 16|
+|passwordSignInFailureCountBeforeFactoryReset|Int32|Número de falhas de login permitidas antes da redefinição de fábrica. Valores válidos de 1 a 16|
 |securityPreventInstallAppsFromUnknownSources|Boolean|Exige que os dispositivos não permitam a instalação de aplicativos de origens desconhecidas.|
 |securityDisableUsbDebugging|Boolean|Desabilite a depuração USB em dispositivos Android.|
 |securityRequireVerifyApps|Boolean|Exige que o recurso de verificação de aplicativos Android esteja ativado.|
@@ -66,6 +66,7 @@ Herda de [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepol
 |securityRequireGooglePlayServices|Boolean|Exige que os Google Play Services sejam instalados e habilitados no dispositivo.|
 |securityRequireUpToDateSecurityProviders|Boolean|Exige que o dispositivo tenha provedores de segurança atualizados. O dispositivo exigirá que os Google Play Services sejam habilitados e atualizados.|
 |securityRequireCompanyPortalAppIntegrity|Boolean|Exige que o dispositivo passe na verificação de integridade de tempo de execução de aplicativo cliente do Portal da Empresa.|
+|securityRequiredAndroidSafetyNetEvaluationType|[androidSafetyNetEvaluationType](../resources/intune-deviceconfig-androidsafetynetevaluationtype.md)|Exigir um tipo de avaliação SafetyNet específico para conformidade. Os valores possíveis são: `basic`, `hardwareBacked`.|
 
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|
@@ -119,7 +120,8 @@ Veja a seguir uma representação JSON do recurso.
   "securityRequireSafetyNetAttestationCertifiedDevice": true,
   "securityRequireGooglePlayServices": true,
   "securityRequireUpToDateSecurityProviders": true,
-  "securityRequireCompanyPortalAppIntegrity": true
+  "securityRequireCompanyPortalAppIntegrity": true,
+  "securityRequiredAndroidSafetyNetEvaluationType": "String"
 }
 ```
 

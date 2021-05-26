@@ -1,34 +1,35 @@
 ---
-title: tipo de recurso deviceManagementConfigurationSettingInstance
-description: Configuração de instância dentro da política
+title: Tipo de recurso deviceManagementConfigurationSettingInstance
+description: Definindo instância dentro da política
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 757b60c1e290612bbf51ac66ec42d3f27ac57cca
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 84b3b3a641fc8710bdd1b4266f15436084d01bdc
+ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49301471"
+ms.lasthandoff: 05/26/2021
+ms.locfileid: "52665599"
 ---
-# <a name="devicemanagementconfigurationsettinginstance-resource-type"></a>tipo de recurso deviceManagementConfigurationSettingInstance
+# <a name="devicemanagementconfigurationsettinginstance-resource-type"></a>Tipo de recurso deviceManagementConfigurationSettingInstance
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Configuração de instância dentro da política
+Definindo instância dentro da política
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|settingDefinitionId|String|ID de definição de configuração|
+|settingDefinitionId|String|Definindo id de definição|
+|settingInstanceTemplateReference|[deviceManagementConfigurationSettingInstanceTemplateReference](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettinginstancetemplatereference.md)|Referência do modelo de instância de configuração|
 
 ## <a name="relationships"></a>Relações
-Nenhum
+Nenhuma
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
@@ -40,7 +41,11 @@ Veja a seguir uma representação JSON do recurso.
 ``` json
 {
   "@odata.type": "#microsoft.graph.deviceManagementConfigurationSettingInstance",
-  "settingDefinitionId": "String"
+  "settingDefinitionId": "String",
+  "settingInstanceTemplateReference": {
+    "@odata.type": "microsoft.graph.deviceManagementConfigurationSettingInstanceTemplateReference",
+    "settingInstanceTemplateId": "String"
+  }
 }
 ```
 

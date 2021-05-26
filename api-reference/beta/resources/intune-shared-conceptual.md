@@ -1,17 +1,17 @@
 ---
-title: Recursos compartilhados no Microsoft Intune - API do Microsoft Graph
-description: Lista a API do Microsoft Graph para pontos de extremidade do Intune (REST) que suportam vários fluxos de trabalho para uma organização de locatários.
+title: Recursos compartilhados em Microsoft Intune - API Graph Microsoft
+description: Lista a API Graph microsoft para pontos de extremidade do Intune (REST) que suportam vários fluxos de trabalho para uma organização de locatários.
 localization_priority: Normal
 author: dougeby
 ms.prod: intune
-ms.openlocfilehash: 4de0e8477d7d20894981c0d0e68956d806d926c4
-ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
+ms.openlocfilehash: 77500484aaafd5d9101e66789966b4861b61e511
+ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51866143"
+ms.lasthandoff: 05/26/2021
+ms.locfileid: "52664899"
 ---
-# <a name="shared-resources-in-microsoft-intune"></a>Recursos compartilhados no Microsoft Intune
+# <a name="shared-resources-in-microsoft-intune"></a>Recursos compartilhados em Microsoft Intune
 
 Namespace: microsoft.graph
 
@@ -21,7 +21,7 @@ Namespace: microsoft.graph
 
 Esses pontos de extremidade são usados em várias API do Microsoft Graph para fluxos de trabalho do Intune.  A intenção, a finalidade e as permissões necessárias para usar um determinado recurso varia de acordo com o fluxo de trabalho específico e o contexto da chamada subjacente.  Além disso, determinados métodos, propriedades e ações são suportados apenas para fluxos de trabalho específicos.
 
-Os seguintes recursos do Graph são compartilhados entre fluxos de trabalho do Intune:
+Os seguintes Graph são compartilhados entre fluxos de trabalho do Intune:
 
 - [Estado da ação](intune-shared-actionstate.md)
 - [Destino de atribuição de todos os dispositivos](intune-shared-alldevicesassignmenttarget.md)
@@ -48,7 +48,6 @@ Os seguintes recursos do Graph são compartilhados entre fluxos de trabalho do I
 - [Gerenciamento de dispositivo](intune-shared-devicemanagement.md)
 - [Configurações de credenciais derivadas do gerenciamento de dispositivos](intune-shared-devicemanagementderivedcredentialsettings.md)
 - [Script de gerenciamento de dispositivo](intune-shared-devicemanagementscript.md)
-- [Tipo de plataforma do dispositivo](intune-shared-deviceplatformtype.md)
 - [Habilitação](intune-shared-enablement.md)
 - [Opções de disponibilidade de registro](intune-shared-enrollmentavailabilityoptions.md)
 - [Estado de registro](intune-shared-enrollmentstate.md)
@@ -80,9 +79,8 @@ Os seguintes recursos do Graph são compartilhados entre fluxos de trabalho do I
 - [Configurações de tempo de instalação do aplicativo móvel](intune-shared-mobileappinstalltimesettings.md)
 - [Evento de solução de problemas de aplicativo móvel](intune-shared-mobileapptroubleshootingevent.md)
 - [Tipo de proprietário](intune-shared-ownertype.md)
-- [Tipo de plataforma da política](intune-shared-policyplatformtype.md)
 - [Domínio com proxy](intune-shared-proxieddomain.md)
-- [Report](intune-shared-report.md)
+- [Relatório](intune-shared-report.md)
 - [Raiz de relatório](intune-shared-reportroot.md)
 - [Estado do aplicativo resultante](intune-shared-resultantappstate.md)
 - [Cores RGB](intune-shared-rgbcolor.md)
@@ -104,4 +102,4 @@ Os seguintes recursos do Graph são compartilhados entre fluxos de trabalho do I
 - [Perfil de implantação do Windows Autopilot](intune-shared-windowsautopilotdeploymentprofile.md)
 - [Configuração de ingresso no domínio do Windows](intune-shared-windowsdomainjoinconfiguration.md)
 - [Configurações de atribuição do aplicativo Windows universal AppX](intune-shared-windowsuniversalappxappassignmentsettings.md)
-- [Estado de atualização do Windows](intune-shared-windowsupdatestate.md)
+- [Windows estado de atualização](intune-shared-windowsupdatestate.md)

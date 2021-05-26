@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 41cfb58ace4629c47d72ef681569b14f1c893996
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 9d39f5c00cafff7697c48b75fbf4c75bbfbe8ca0
+ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52049475"
+ms.lasthandoff: 05/26/2021
+ms.locfileid: "52664801"
 ---
 # <a name="participant-invite"></a>participante: invite
 
@@ -49,7 +49,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 | Parâmetro      | Tipo    |Descrição|
 |:---------------|:--------|:----------|
 |participants|conjunto [invitationParticipantInfo](../resources/invitationparticipantinfo.md)| Os participantes a serem convidados.|
-|clientContext|Cadeia de caracteres|Cadeia de caracteres de contexto de cliente exclusiva. O limite máximo é 256 caracteres.|
+|clientContext|String|Cadeia de caracteres de contexto de cliente exclusiva. O limite máximo é 256 caracteres.|
 
 ## <a name="response"></a>Resposta
 Se succsessivo, este método retorna um código de resposta e um header de local com um URI para `200 OK` [o inviteParticipantsOperation](../resources/inviteparticipantsoperation.md) criado para essa solicitação. 
@@ -703,6 +703,7 @@ Content-Type: application/json
 ### <a name="example-4-invite-one-pstn-participant-to-an-existing-group-call"></a>Exemplo 4: convidar um participante PSTN para uma chamada de grupo existente
 
 Essa chamada requer uma instância de aplicativo com um número PSTN atribuído. Para obter detalhes, [consulte Atribuir um número de telefone ao seu bot](/graph/cloud-communications-phone-number#assign-a-phone-number-to-your-bot).
+> **Observação:** Telefone ID é o número de telefone no formato E.164.
 
 #### <a name="request"></a>Solicitação
 
