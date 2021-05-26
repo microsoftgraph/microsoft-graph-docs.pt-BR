@@ -1,58 +1,80 @@
 ---
 title: 'message: createReply'
-description: Crie um rascunho da resposta para a mensagem especificada. Você pode atualizar o rascunho para adicionar conteúdo de resposta ao **corpo** ou alterar outras propriedades da mensagem, ou, simplesmente enviar o rascunho.
+description: 'Crie um rascunho para responder a uma mensagem, no formato JSON ou MIME. '
 localization_priority: Normal
 author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 64d88663ca8dc0e4210f13ab33f6bb8168d6edc7
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 023b04f37f0320ca3a74801f9d2e92d19553a10c
+ms.sourcegitcommit: cec76c5a58b359d79df764c849c8b459349b3b52
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52039437"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "52645595"
 ---
-# <a name="message-createreply"></a><span data-ttu-id="15cf1-104">message: createReply</span><span class="sxs-lookup"><span data-stu-id="15cf1-104">message: createReply</span></span>
+# <a name="message-createreply"></a><span data-ttu-id="0450c-103">message: createReply</span><span class="sxs-lookup"><span data-stu-id="0450c-103">message: createReply</span></span>
 
-<span data-ttu-id="15cf1-105">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="15cf1-105">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="0450c-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="0450c-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="15cf1-106">Crie um rascunho da resposta para a [mensagem](../resources/message.md) especificada.</span><span class="sxs-lookup"><span data-stu-id="15cf1-106">Create a draft of the reply to the specified [message](../resources/message.md).</span></span> <span data-ttu-id="15cf1-107">Você pode [atualizar](../api/message-update.md) o rascunho para adicionar conteúdo de resposta ao **corpo** ou alterar outras propriedades da mensagem, ou, simplesmente [enviar](../api/message-send.md) o rascunho.</span><span class="sxs-lookup"><span data-stu-id="15cf1-107">You can then [update](../api/message-update.md) the draft to add reply content to the **body** or change other message properties, or, simply [send](../api/message-send.md) the draft.</span></span>
+<span data-ttu-id="0450c-105">Crie um rascunho para responder ao remetente de uma [mensagem](../resources/message.md) no formato JSON ou MIME.</span><span class="sxs-lookup"><span data-stu-id="0450c-105">Create a draft to reply to the sender of a [message](../resources/message.md) in either JSON or MIME format.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="15cf1-108">Permissões</span><span class="sxs-lookup"><span data-stu-id="15cf1-108">Permissions</span></span>
-<span data-ttu-id="15cf1-p103">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="15cf1-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="0450c-106">Ao usar o formato JSON:</span><span class="sxs-lookup"><span data-stu-id="0450c-106">When using JSON format:</span></span>
+- <span data-ttu-id="0450c-107">Especifique um comentário ou **a propriedade body** do `message` parâmetro.</span><span class="sxs-lookup"><span data-stu-id="0450c-107">Specify either a comment or the **body** property of the `message` parameter.</span></span> <span data-ttu-id="0450c-108">Especificar ambos retornará um erro HTTP 400 - Solicitação incorreta.</span><span class="sxs-lookup"><span data-stu-id="0450c-108">Specifying both will return an HTTP 400 Bad Request error.</span></span>
+- <span data-ttu-id="0450c-109">Se **replyTo** for especificado na mensagem original, por Formato de Mensagem da Internet ([RFC 2822](https://www.rfc-editor.org/info/rfc2822)), você deverá enviar a resposta aos destinatários em **replyTo** e não aos destinatários de **.**</span><span class="sxs-lookup"><span data-stu-id="0450c-109">If **replyTo** is specified in the original message, per Internet Message Format ([RFC 2822](https://www.rfc-editor.org/info/rfc2822)), you should send the reply to the recipients in **replyTo**, and not the recipients in **from**.</span></span>
+- <span data-ttu-id="0450c-110">Você pode [atualizar o](../api/message-update.md) rascunho posteriormente para adicionar conteúdo de resposta ao **corpo** ou alterar outras propriedades da mensagem.</span><span class="sxs-lookup"><span data-stu-id="0450c-110">You can [update](../api/message-update.md) the draft later to add reply content to the **body** or change other message properties.</span></span>
 
-|<span data-ttu-id="15cf1-111">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="15cf1-111">Permission type</span></span>      | <span data-ttu-id="15cf1-112">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="15cf1-112">Permissions (from least to most privileged)</span></span>              |
+<span data-ttu-id="0450c-111">Ao usar o formato MIME:</span><span class="sxs-lookup"><span data-stu-id="0450c-111">When using MIME format:</span></span>
+- <span data-ttu-id="0450c-112">Forneça os [headers](https://tools.ietf.org/html/rfc2076) de mensagens da Internet aplicáveis e o [conteúdo MIME](https://tools.ietf.org/html/rfc2045), todos codificados no **formato base64** no corpo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="0450c-112">Provide the applicable [Internet message headers](https://tools.ietf.org/html/rfc2076) and the [MIME content](https://tools.ietf.org/html/rfc2045), all encoded in **base64** format in the request body.</span></span>
+- <span data-ttu-id="0450c-113">Adicione quaisquer anexos e propriedades S/MIME ao conteúdo MIME.</span><span class="sxs-lookup"><span data-stu-id="0450c-113">Add any attachments and S/MIME properties to the MIME content.</span></span>
+
+<span data-ttu-id="0450c-114">[Envie](../api/message-send.md) a mensagem de rascunho em uma operação subsequente.</span><span class="sxs-lookup"><span data-stu-id="0450c-114">[Send](../api/message-send.md) the draft message in a subsequent operation.</span></span>
+
+<span data-ttu-id="0450c-115">Como alternativa, [responda a uma mensagem](../api/message-reply.md) em uma única operação.</span><span class="sxs-lookup"><span data-stu-id="0450c-115">Alternatively, [reply to a message](../api/message-reply.md) in a single operation.</span></span>
+
+## <a name="permissions"></a><span data-ttu-id="0450c-116">Permissões</span><span class="sxs-lookup"><span data-stu-id="0450c-116">Permissions</span></span>
+<span data-ttu-id="0450c-117">Uma das seguintes permissões é necessária para chamar essa API.</span><span class="sxs-lookup"><span data-stu-id="0450c-117">One of the following permissions are required to call this API.</span></span> <span data-ttu-id="0450c-118">Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="0450c-118">To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+
+|<span data-ttu-id="0450c-119">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="0450c-119">Permission type</span></span>      | <span data-ttu-id="0450c-120">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="0450c-120">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="15cf1-113">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="15cf1-113">Delegated (work or school account)</span></span> | <span data-ttu-id="15cf1-114">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="15cf1-114">Mail.ReadWrite</span></span>    |
-|<span data-ttu-id="15cf1-115">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="15cf1-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="15cf1-116">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="15cf1-116">Mail.ReadWrite</span></span>    |
-|<span data-ttu-id="15cf1-117">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="15cf1-117">Application</span></span> | <span data-ttu-id="15cf1-118">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="15cf1-118">Mail.ReadWrite</span></span> |
+|<span data-ttu-id="0450c-121">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="0450c-121">Delegated (work or school account)</span></span> | <span data-ttu-id="0450c-122">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="0450c-122">Mail.ReadWrite</span></span>    |
+|<span data-ttu-id="0450c-123">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="0450c-123">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="0450c-124">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="0450c-124">Mail.ReadWrite</span></span>    |
+|<span data-ttu-id="0450c-125">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="0450c-125">Application</span></span> | <span data-ttu-id="0450c-126">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="0450c-126">Mail.ReadWrite</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="15cf1-119">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="15cf1-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="0450c-127">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="0450c-127">HTTP request</span></span>
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
 POST /me/messages/{id}/createReply
 POST /users/{id | userPrincipalName}/messages/{id}/createReply
 POST /me/mailFolders/{id}/messages/{id}/createReply
 POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/createReply
 ```
-## <a name="request-headers"></a><span data-ttu-id="15cf1-120">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="15cf1-120">Request headers</span></span>
-| <span data-ttu-id="15cf1-121">Nome</span><span class="sxs-lookup"><span data-stu-id="15cf1-121">Name</span></span>       | <span data-ttu-id="15cf1-122">Tipo</span><span class="sxs-lookup"><span data-stu-id="15cf1-122">Type</span></span> | <span data-ttu-id="15cf1-123">Descrição</span><span class="sxs-lookup"><span data-stu-id="15cf1-123">Description</span></span>|
+
+## <a name="request-headers"></a><span data-ttu-id="0450c-128">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="0450c-128">Request headers</span></span>
+| <span data-ttu-id="0450c-129">Nome</span><span class="sxs-lookup"><span data-stu-id="0450c-129">Name</span></span>       | <span data-ttu-id="0450c-130">Tipo</span><span class="sxs-lookup"><span data-stu-id="0450c-130">Type</span></span> | <span data-ttu-id="0450c-131">Descrição</span><span class="sxs-lookup"><span data-stu-id="0450c-131">Description</span></span>| 
 |:---------------|:--------|:----------|
-| <span data-ttu-id="15cf1-124">Autorização</span><span class="sxs-lookup"><span data-stu-id="15cf1-124">Authorization</span></span>  | <span data-ttu-id="15cf1-125">string</span><span class="sxs-lookup"><span data-stu-id="15cf1-125">string</span></span>  | <span data-ttu-id="15cf1-p104">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="15cf1-p104">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="0450c-132">Autorização</span><span class="sxs-lookup"><span data-stu-id="0450c-132">Authorization</span></span>  | <span data-ttu-id="0450c-133">string</span><span class="sxs-lookup"><span data-stu-id="0450c-133">string</span></span>  | <span data-ttu-id="0450c-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="0450c-p103">Bearer {token}. Required.</span></span>|
+| <span data-ttu-id="0450c-136">Content-Type</span><span class="sxs-lookup"><span data-stu-id="0450c-136">Content-Type</span></span> | <span data-ttu-id="0450c-137">string</span><span class="sxs-lookup"><span data-stu-id="0450c-137">string</span></span>  | <span data-ttu-id="0450c-138">Natureza dos dados no corpo de uma entidade.</span><span class="sxs-lookup"><span data-stu-id="0450c-138">Nature of the data in the body of an entity.</span></span> <br/> <span data-ttu-id="0450c-139">Use `application/json` para um objeto JSON e para conteúdo `text/plain` MIME.</span><span class="sxs-lookup"><span data-stu-id="0450c-139">Use `application/json` for a JSON object and `text/plain` for MIME content.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="15cf1-128">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="15cf1-128">Request body</span></span>
-<span data-ttu-id="15cf1-129">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="15cf1-129">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="0450c-140">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="0450c-140">Request body</span></span>
+<span data-ttu-id="0450c-141">Esse método não exige um corpo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="0450c-141">This method does not require a request body.</span></span>
 
-## <a name="response"></a><span data-ttu-id="15cf1-130">Resposta</span><span class="sxs-lookup"><span data-stu-id="15cf1-130">Response</span></span>
+<span data-ttu-id="0450c-142">No entanto, para criar um rascunho de resposta usando o formato MIME, forneça o conteúdo MIME com os headers de mensagem da Internet aplicáveis, todos codificados no **formato base64** no corpo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="0450c-142">However, for creating a reply draft using MIME format, provide the MIME content with the applicable Internet message headers, all encoded in **base64** format in the request body.</span></span>
 
-<span data-ttu-id="15cf1-131">Se bem-sucedido, este método retorna o código de resposta `201 Created` e o objeto [Message](../resources/message.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="15cf1-131">If successful, this method returns `201 Created` response code and [Message](../resources/message.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="0450c-143">Resposta</span><span class="sxs-lookup"><span data-stu-id="0450c-143">Response</span></span>
 
-## <a name="example"></a><span data-ttu-id="15cf1-132">Exemplo</span><span class="sxs-lookup"><span data-stu-id="15cf1-132">Example</span></span>
-<span data-ttu-id="15cf1-133">Eis um exemplo de como chamar esta API.</span><span class="sxs-lookup"><span data-stu-id="15cf1-133">Here is an example of how to call this API.</span></span>
-##### <a name="request"></a><span data-ttu-id="15cf1-134">Solicitação</span><span class="sxs-lookup"><span data-stu-id="15cf1-134">Request</span></span>
-<span data-ttu-id="15cf1-135">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="15cf1-135">Here is an example of the request.</span></span>
+<span data-ttu-id="0450c-144">Se bem-sucedido, este método retorna o código de resposta `201 Created` e o objeto [Message](../resources/message.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="0450c-144">If successful, this method returns `201 Created` response code and [Message](../resources/message.md) object in the response body.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="15cf1-136">HTTP</span><span class="sxs-lookup"><span data-stu-id="15cf1-136">HTTP</span></span>](#tab/http)
+<span data-ttu-id="0450c-145">Se o corpo da solicitação incluir conteúdo MIME malformado, este método retornará e a seguinte mensagem de erro: "Cadeia de caracteres `400 Bad request` base64 inválida para conteúdo MIME".</span><span class="sxs-lookup"><span data-stu-id="0450c-145">If the request body includes malformed MIME content, this method returns `400 Bad request` and the following error message: "Invalid base64 string for MIME content".</span></span>
+
+## <a name="examples"></a><span data-ttu-id="0450c-146">Exemplos</span><span class="sxs-lookup"><span data-stu-id="0450c-146">Examples</span></span>
+### <a name="example-1-create-a-draft-message-in-json-format-to-reply-to-an-existing-message"></a><span data-ttu-id="0450c-147">Exemplo 1: Criar uma mensagem de rascunho no formato JSON para responder a uma mensagem existente.</span><span class="sxs-lookup"><span data-stu-id="0450c-147">Example 1: Create a draft message in JSON format to reply to an existing message.</span></span>
+<span data-ttu-id="0450c-148">Eis um exemplo de como chamar esta API.</span><span class="sxs-lookup"><span data-stu-id="0450c-148">Here is an example of how to call this API.</span></span>
+##### <a name="request"></a><span data-ttu-id="0450c-149">Solicitação</span><span class="sxs-lookup"><span data-stu-id="0450c-149">Request</span></span>
+<span data-ttu-id="0450c-150">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="0450c-150">Here is an example of the request.</span></span>
+
+# <a name="http"></a>[<span data-ttu-id="0450c-151">HTTP</span><span class="sxs-lookup"><span data-stu-id="0450c-151">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "message_createreply"
@@ -60,32 +82,33 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/createReply
 ```http
 POST https://graph.microsoft.com/v1.0/me/messages/{id}/createReply
 ```
-# <a name="c"></a>[<span data-ttu-id="15cf1-137">C#</span><span class="sxs-lookup"><span data-stu-id="15cf1-137">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="0450c-152">C#</span><span class="sxs-lookup"><span data-stu-id="0450c-152">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/message-createreply-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="15cf1-138">JavaScript</span><span class="sxs-lookup"><span data-stu-id="15cf1-138">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="0450c-153">JavaScript</span><span class="sxs-lookup"><span data-stu-id="0450c-153">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/message-createreply-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="15cf1-139">Objective-C</span><span class="sxs-lookup"><span data-stu-id="15cf1-139">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="0450c-154">Objective-C</span><span class="sxs-lookup"><span data-stu-id="0450c-154">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/message-createreply-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="15cf1-140">Java</span><span class="sxs-lookup"><span data-stu-id="15cf1-140">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="0450c-155">Java</span><span class="sxs-lookup"><span data-stu-id="0450c-155">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/message-createreply-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="15cf1-141">Resposta</span><span class="sxs-lookup"><span data-stu-id="15cf1-141">Response</span></span>
-<span data-ttu-id="15cf1-142">Veja a seguir um exemplo da resposta.</span><span class="sxs-lookup"><span data-stu-id="15cf1-142">Here is an example of the response.</span></span> <span data-ttu-id="15cf1-143">Observação: o objeto de resposta exibido aqui pode ser encurtado para legibilidade.</span><span class="sxs-lookup"><span data-stu-id="15cf1-143">Note: The response object shown here might be shortened for readability.</span></span>
+##### <a name="response"></a><span data-ttu-id="0450c-156">Resposta</span><span class="sxs-lookup"><span data-stu-id="0450c-156">Response</span></span>
+<span data-ttu-id="0450c-p104">Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser reduzido para facilitar a leitura.</span><span class="sxs-lookup"><span data-stu-id="0450c-p104">Here is an example of the response. Note: The response object shown here might be shortened for readability.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.message"
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -101,6 +124,110 @@ Content-length: 248
     "content": "content-value"
   },
   "bodyPreview": "bodyPreview-value"
+}
+```
+
+### <a name="example-2-create-a-draft-message-in-mime-format-to-reply-to-an-existing-message"></a><span data-ttu-id="0450c-159">Exemplo 2: Criar uma mensagem de rascunho no formato MIME para responder a uma mensagem existente</span><span class="sxs-lookup"><span data-stu-id="0450c-159">Example 2: Create a draft message in MIME format to reply to an existing message</span></span>
+##### <a name="request"></a><span data-ttu-id="0450c-160">Solicitação</span><span class="sxs-lookup"><span data-stu-id="0450c-160">Request</span></span>
+<!-- {
+  "blockType": "request",
+  "name": "message_createReply_mime_v1"
+}-->
+
+```http
+POST https://graph.microsoft.com/v1.0/me/messages/AAMkADA1MTAAAAqldOAAA=/createReply
+Content-type: text/plain
+
+RnJvbTogQWxleCBXaWxiZXIgPEFsZXhXQGNvbnRvc28uY29tPgpUbzogTWVnYW4gQm93ZW4gPE1l
+Z2FuQkBjb250b3NvLmNvbT4KU3ViamVjdDogSW50ZXJuYWwgUmVzdW1lIFN1Ym1pc3Npb246IFNh
+bGVzIEFzc29jaWF0ZQpUaHJlYWQtVG9waWM6IEludGVybmFsIFJlc3VtZSBTdWJtaXNzaW9uOiBT
+YWxlcyBBc3NvY2lhdGUKVGhyZWFkLUluZGV4OiBjb2RlY29kZWNvZGVoZXJlaGVyZWhlcmUKRGF0
+ZTogU3VuLCAyOCBGZWIgMjAyMSAwNzoxNTowMCA
+```
+
+##### <a name="response"></a><span data-ttu-id="0450c-161">Resposta</span><span class="sxs-lookup"><span data-stu-id="0450c-161">Response</span></span>
+<span data-ttu-id="0450c-162">Veja a seguir um exemplo da resposta.</span><span class="sxs-lookup"><span data-stu-id="0450c-162">Here is an example of the response.</span></span>
+<!-- {
+  "blockType": "response",
+  "@odata.type": "microsoft.graph.message",
+  "truncated": true
+} -->
+
+```http
+HTTP/1.1 201 Created
+Content-Type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('0aaa0aa0-0000-0a00-a00a-0000009000a0')/messages/$entity",
+    "@odata.etag": "W/\"AAAAAAAAAAAa00AAAa0aAaAa0a0AAAaAAAAaAa0a\"",
+    "id": "AAMkADA1MTAAAAqldOAAA=",
+    "createdDateTime": "2021-04-23T18:13:44Z",
+    "lastModifiedDateTime": "2021-04-23T18:13:44Z",
+    "changeKey": "AAAAAAAAAAAA00aaaa000aaA",
+    "categories": [],
+    "receivedDateTime": "2021-04-23T18:13:44Z",
+    "sentDateTime": "2021-02-28T07:15:00Z",
+    "hasAttachments": false,
+    "internetMessageId": "<AAAAAAAAAA@AAAAAAA0001AA0000.codcod00.prod.outlook.com>",
+    "subject": "Internal Resume Submission: Sales Associate",
+    "bodyPreview": "Hi, Megan.I have an interest in the Sales Associate position. Please consider my resume, which you can access here...",
+    "importance": "normal",
+    "parentFolderId": "LKJDSKJHkjhfakKJHFKWKKJHKJdhkjHDK==",
+    "conversationId": "SDSFSmFSDGI5LWZhYjc4fsdfsd=",
+    "conversationIndex": "Adfsdfsdfsdfw==",
+    "isDeliveryReceiptRequested": null,
+    "isReadReceiptRequested": false,
+    "isRead": true,
+    "isDraft": true,
+    "webLink": "https://outlook.office365.com/owa/?ItemID=AAMkAGNhOWAvsurl=1&viewmodel=ReadMessageItem",
+    "inferenceClassification": "focused",
+    "body": {
+        "contentType": "text",
+        "content": "Hi, Megan.I have an interest in the Sales Associate position. Please consider my resume, which you can access here... Regards,Alex"
+    },
+    "sender": {
+        "emailAddress": {
+            "name": "Alex Wilber",
+            "address": "AlexW@contoso.com"
+        }
+    },
+    "from": {
+        "emailAddress": {
+            "name": "Alex Wilber",
+            "address": "AlexW@contoso.com"
+        }
+    },
+    "toRecipients": [
+        {
+            "emailAddress": {
+                "name": "Megan Bowen",
+                "address": "MeganB@contoso.com"
+            }
+        }
+    ],
+    "ccRecipients": [],
+    "bccRecipients": [],
+    "replyTo": [],
+    "flag": {
+        "flagStatus": "notFlagged"
+    }
+}
+
+```
+
+<span data-ttu-id="0450c-163">Se o corpo da solicitação incluir conteúdo MIME malformado, este método retornará a seguinte mensagem de erro.</span><span class="sxs-lookup"><span data-stu-id="0450c-163">If the request body includes malformed MIME content, this method returns the following error message.</span></span>
+
+<!-- { "blockType": "ignored" } -->
+
+```http
+HTTP/1.1 400 Bad Request
+Content-type: application/json
+
+{
+    "error": {
+        "code": "ErrorMimeContentInvalidBase64String",
+        "message": "Invalid base64 string for MIME content."
+    }
 }
 ```
 
