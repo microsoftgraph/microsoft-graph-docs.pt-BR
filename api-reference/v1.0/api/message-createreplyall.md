@@ -1,25 +1,38 @@
 ---
 title: 'message: createReplyAll'
-description: Crie um rascunho para responder ao remetente e a todos os destinatários da mensagem especificada. Você pode atualizar o rascunho para adicionar conteúdo de resposta ao **corpo** ou alterar outras propriedades da mensagem, ou, simplesmente enviar o rascunho.
+description: Crie um rascunho para responder ao remetente e a todos os destinatários da mensagem especificada, no formato JSON ou MIME.
 localization_priority: Normal
 author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 3fd133848bf90ab211a2edab3eb383ff0342de80
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: d8c3fbc7e726fcf3140ef45a681e2844eed21b94
+ms.sourcegitcommit: cec76c5a58b359d79df764c849c8b459349b3b52
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52049503"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "52645588"
 ---
 # <a name="message-createreplyall"></a>message: createReplyAll
 
 Namespace: microsoft.graph
 
-Crie um rascunho para responder ao remetente e a todos os destinatários da [mensagem](../resources/message.md) especificada. Você pode [atualizar](../api/message-update.md) o rascunho para adicionar conteúdo de resposta ao **corpo** ou alterar outras propriedades da mensagem, ou, simplesmente [enviar](../api/message-send.md) o rascunho.
+Crie um rascunho para responder ao remetente e [a](../resources/message.md) todos os destinatários de uma mensagem no formato JSON ou MIME. 
+
+Ao usar o formato JSON:
+- Especifique um comentário ou **a propriedade body** do `message` parâmetro. Especificar ambos retornará um erro HTTP 400 - Solicitação incorreta.
+- Se a mensagem original especificar um destinatário na propriedade **replyTo,** por Formato de Mensagem da Internet ([RFC 2822](https://www.rfc-editor.org/info/rfc2822)), você deverá enviar a resposta aos destinatários nas propriedades **replyTo** e **toRecipients,** e não os destinatários nas propriedades **from** e **toRecipients.** 
+- Você pode [atualizar o](../api/message-update.md) rascunho posteriormente para adicionar conteúdo de resposta ao **corpo** ou alterar outras propriedades da mensagem.
+
+Ao usar o formato MIME:
+- Forneça os [headers](https://tools.ietf.org/html/rfc2076) de mensagens da Internet aplicáveis e o [conteúdo MIME](https://tools.ietf.org/html/rfc2045), todos codificados no **formato base64** no corpo da solicitação.
+- Adicione quaisquer anexos e propriedades S/MIME ao conteúdo MIME.
+
+[Envie](../api/message-send.md) a mensagem de rascunho em uma operação subsequente.
+
+Como alternativa, [responda-tudo a uma mensagem](../api/message-replyall.md) em uma única ação.
 
 ## <a name="permissions"></a>Permissões
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
+Uma das seguintes permissões é necessária para chamar essa API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
@@ -35,19 +48,26 @@ POST /users/{id | userPrincipalName}/messages/{id}/createReplyAll
 POST /me/mailFolders/{id}/messages/{id}/createReplyAll
 POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/createReplyAll
 ```
+
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
-| Nome       | Tipo | Descrição|
+| Nome       | Tipo | Descrição| 
 |:---------------|:--------|:----------|
-| Autorização  | string  | {token} de portador. Obrigatório. |
+| Autorização  | string  | Portador {token}. Obrigatório |
+| Content-Type | string  | Natureza dos dados no corpo de uma entidade. <br/> Use `application/json` para um objeto JSON e para conteúdo `text/plain` MIME. |
 
 ## <a name="request-body"></a>Corpo da solicitação
-Não forneça um corpo de solicitação para esse método.
+Esse método não exige um corpo de solicitação. 
+
+No entanto, para criar um rascunho replyAll usando o formato MIME, forneça o conteúdo MIME com os headers de mensagens da Internet aplicáveis, todos codificados no **formato base64** no corpo da solicitação.
 
 ## <a name="response"></a>Resposta
 
 Se bem-sucedido, este método retorna o código de resposta `201 Created` e o objeto [Message](../resources/message.md) no corpo da resposta.
 
-## <a name="example"></a>Exemplo
+Se o corpo da solicitação incluir conteúdo MIME malformado, este método retornará e a seguinte mensagem de erro: "Cadeia de caracteres `400 Bad request` base64 inválida para conteúdo MIME".
+
+## <a name="examples"></a>Exemplos
+### <a name="example-1-create-a-message-draft-in-json-format-to-reply-all-to-an-existing-message"></a>Exemplo 1: Criar um rascunho de mensagem no formato JSON para responder tudo a uma mensagem existente
 Eis um exemplo de como chamar esta API.
 ##### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
@@ -80,7 +100,7 @@ POST https://graph.microsoft.com/v1.0/me/messages/{id}/createReplyAll
 
 
 ##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto de resposta exibido aqui pode ser encurtado para legibilidade.
+Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser reduzido para facilitar a leitura.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -101,6 +121,104 @@ Content-length: 248
     "content": "content-value"
   },
   "bodyPreview": "bodyPreview-value"
+}
+```
+### <a name="example-2-create-a-message-draft-in-mime-format-to-reply-all-to-an-existing-message"></a>Exemplo 2: Criar um rascunho de mensagem no formato MIME para responder tudo a uma mensagem existente
+##### <a name="request"></a>Solicitação
+<!-- {
+  "blockType": "request",
+  "name": "message_createreplyAll_mime_v1"
+}-->
+
+```http
+POST https://graph.microsoft.com/v1.0/me/messages/AAMkADA1MTAAAH5JaLAAA=/createReplyAll
+Content-type: text/plain
+
+Q29udGVudC1UeXBlOiBhcHBsaWNhdGlvbi9wa2NzNy1taW1lOw0KCW5hbWU9c21pbWUucDdtOw0KCXNtaW1lLXR5cGU9ZW52ZWxvcGVkLWRhdGENCk1pbWUtVmVyc2lvbjogMS4wIChNYWMgT1MgWCBNYWlsIDEzLjAgXCgzNjAxLjAuMTBcKSkNClN1YmplY3Q6IFJlOiBUZXN0aW5nIFMvTUlNRQ0KQ29udGVudC1EaXNwb3Np
+```
+##### <a name="response"></a>Resposta
+Veja a seguir um exemplo da resposta.
+<!-- {
+  "blockType": "response",
+  "@odata.type": "microsoft.graph.message",
+  "truncated": true
+} -->
+
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('0aaa0aa0-0000-0a00-a00a-0000009000a0')/messages/$entity",
+    "@odata.etag": "W/\"AAAAAAAAAAAa00AAAa0aAaAa0a0AAAaAAAAaAa0a\"",
+    "id": "AAMkADA1MTAAAAqldOAAA=",
+    "createdDateTime": "2021-04-23T18:13:44Z",
+    "lastModifiedDateTime": "2021-04-23T18:13:44Z",
+    "changeKey": "AAAAAAAAAAAA00aaaa000aaA",
+    "categories": [],
+    "receivedDateTime": "2021-04-23T18:13:44Z",
+    "sentDateTime": "2021-02-28T07:15:00Z",
+    "hasAttachments": false,
+    "internetMessageId": "<AAAAAAAAAA@AAAAAAA0001AA0000.codcod00.prod.outlook.com>",
+    "subject": "Internal Resume Submission: Sales Associate",
+    "bodyPreview": "Hi, Megan.I have an interest in the Sales Associate position. Please consider my resume, which you can access here...",
+    "importance": "normal",
+    "parentFolderId": "LKJDSKJHkjhfakKJHFKWKKJHKJdhkjHDK==",
+    "conversationId": "SDSFSmFSDGI5LWZhYjc4fsdfsd=",
+    "conversationIndex": "Adfsdfsdfsdfw==",
+    "isDeliveryReceiptRequested": null,
+    "isReadReceiptRequested": false,
+    "isRead": true,
+    "isDraft": true,
+    "webLink": "https://outlook.office365.com/owa/?ItemID=AAMkAGNhOWAvsurl=1&viewmodel=ReadMessageItem",
+    "inferenceClassification": "focused",
+    "body": {
+        "contentType": "text",
+        "content": "Hi, Megan.I have an interest in the Sales Associate position. Please consider my resume, which you can access here... Regards,Alex"
+    },
+    "sender": {
+        "emailAddress": {
+            "name": "Alex Wilber",
+            "address": "AlexW@contoso.com"
+        }
+    },
+    "from": {
+        "emailAddress": {
+            "name": "Alex Wilber",
+            "address": "AlexW@contoso.com"
+        }
+    },
+    "toRecipients": [
+        {
+            "emailAddress": {
+                "name": "Megan Bowen",
+                "address": "MeganB@contoso.com"
+            }
+        }
+    ],
+    "ccRecipients": [],
+    "bccRecipients": [],
+    "replyTo": [],
+    "flag": {
+        "flagStatus": "notFlagged"
+    }
+}
+
+```
+
+Se o corpo da solicitação incluir conteúdo MIME malformado, este método retornará a seguinte mensagem de erro.
+
+<!-- { "blockType": "ignored" } -->
+
+```http
+HTTP/1.1 400 Bad Request
+Content-type: application/json
+
+{
+    "error": {
+        "code": "ErrorMimeContentInvalidBase64String",
+        "message": "Invalid base64 string for MIME content."
+    }
 }
 ```
 

@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: d88c4a2e9bf6aa719e4cde333764fe32a29bf285
-ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
+ms.openlocfilehash: 0f1cd4ca3e1569825bda00a16723801521d1bc08
+ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "50574146"
+ms.lasthandoff: 05/26/2021
+ms.locfileid: "52664724"
 ---
 # <a name="resume-sync-on-an-educationsynchronizationprofile"></a>Retomar a sincronização em um educationSynchronizationProfile
 
@@ -27,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:-----------|:----------|
 | Delegada (conta corporativa ou de estudante) | EduAdministration.ReadWrite |
 |Delegada (conta pessoal da Microsoft|Sem suporte.|
-|Aplicativo|Sem suporte.|
+|Aplicativo|EduAdministration.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->

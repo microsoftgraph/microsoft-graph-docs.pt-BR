@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 59e51f3af847824dbef71091f4a439ca91aeb26a
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 565faea0b932e9a74bceebe20f72d02636f886bc
+ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52048089"
+ms.lasthandoff: 05/26/2021
+ms.locfileid: "52664528"
 ---
 # <a name="create-call"></a>Criar chamada
 
@@ -19,8 +19,6 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Criar [chamada](../resources/call.md) permite que seu bot crie uma nova chamada ponto a ponto ou grupo de saída ou participe de uma reunião existente. Você precisará registrar [o bot de chamada](/microsoftteams/platform/concepts/calls-and-meetings/registering-calling-bot) e passar pela lista de permissões necessárias, conforme mencionado abaixo.
-
-> **Observação:** Atualmente, apenas chamadas VoIP são suportadas. 
 
 ## <a name="permissions"></a>Permissões
 
@@ -1145,7 +1143,8 @@ Content-Type: application/json
 Essa chamada requer uma instância de aplicativo com um número PSTN atribuído. Para obter detalhes, [consulte Atribuir um número de telefone ao seu bot](/graph/cloud-communications-phone-number#assign-a-phone-number-to-your-bot).
 
 #### <a name="request"></a>Solicitação
-O exemplo a seguir mostra a solicitação para fazer uma chamada ponto a ponto entre o bot e um número PSTN. Neste exemplo, a mídia é hospedada pelo serviço. Os valores de token de autorização, URL de retorno de chamada, ID do aplicativo, nome do aplicativo, ID de usuário, nome de usuário e ID de locatário devem ser substituídos por valores reais para fazer o exemplo funcionar.
+O exemplo a seguir mostra a solicitação para fazer uma chamada ponto a ponto entre o bot e um número PSTN. Neste exemplo, a mídia é hospedada pelo serviço. Os valores de token de autorização, URL de retorno de chamada, ID da instância do aplicativo, nome de exibição da instância do aplicativo, ID de telefone e ID de locatário devem ser substituídos por valores reais para fazer o exemplo funcionar.
+> **Observação:** A ID da instância do aplicativo é a ID do objeto da instância do aplicativo. A ID do aplicativo à qual a instância do aplicativo se vincula deve corresponder à do token de autorização. Telefone ID é o número de telefone no formato E.164.
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -1193,7 +1192,8 @@ Content-Type: application/json
   ],
   "mediaConfig": {
     "@odata.type": "#microsoft.graph.serviceHostedMediaConfig"
-  }
+  },
+  "tenantId": "aa67bd4c-8475-432d-bd41-39f255720e0a"
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
@@ -1302,7 +1302,8 @@ Content-Type: application/json
 Essa chamada requer uma instância de aplicativo com um número PSTN atribuído. Para obter detalhes, [consulte Atribuir um número de telefone ao seu bot](/graph/cloud-communications-phone-number#assign-a-phone-number-to-your-bot).
 
 #### <a name="request"></a>Solicitação
-O exemplo a seguir mostra uma solicitação para fazer uma chamada ponto a ponto entre o bot e um número PSTN. Neste exemplo, a mídia é hospedada localmente pelo aplicativo. Substitua os valores para token de autorização, URL de retorno de chamada, ID do aplicativo, nome do aplicativo, ID de usuário, nome de usuário e ID de locatário para fazer o exemplo funcionar.
+O exemplo a seguir mostra uma solicitação para fazer uma chamada ponto a ponto entre o bot e um número PSTN. Neste exemplo, a mídia é hospedada localmente pelo aplicativo. Os valores de token de autorização, URL de retorno de chamada, ID da instância do aplicativo, nome de exibição da instância do aplicativo, ID de telefone e ID de locatário devem ser substituídos por valores reais para fazer o exemplo funcionar.
+> **Observação:** A ID da instância do aplicativo é a ID do objeto da instância do aplicativo. A ID do aplicativo à qual a instância do aplicativo se vincula deve corresponder à do token de autorização. Telefone ID é o número de telefone no formato E.164.
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -1351,7 +1352,8 @@ Content-Type: application/json
   "mediaConfig": {
     "@odata.type": "#microsoft.graph.appHostedMediaConfig",
     "blob": "<Media Session Configuration>"
-  }
+  },
+  "tenantId": "aa67bd4c-8475-432d-bd41-39f255720e0a"
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)

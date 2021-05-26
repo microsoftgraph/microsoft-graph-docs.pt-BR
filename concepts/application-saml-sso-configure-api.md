@@ -5,21 +5,18 @@ author: kenwith
 localization_priority: Priority
 ms.custom: scenarios:getting-started
 ms.prod: applications
-ms.openlocfilehash: 94ce76217b4e3ac12d849b064c000ed6a2664519
-ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
+ms.openlocfilehash: 85d8d97897facb8be40fb5260de7f143a626f07e
+ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52547110"
+ms.lasthandoff: 05/26/2021
+ms.locfileid: "52665054"
 ---
 # <a name="configure-saml-based-single-sign-on-for-your-application-using-the-microsoft-graph-api"></a>Configure o logon único baseado em SAML para seu aplicativo usando a API do Microsoft Graph
 
 Neste artigo, você aprenderá como criar e configurar um SSO (logon único) baseado em SAML para seu aplicativo no Azure AD (Azure Active Directory) usando a API do Microsoft Graph. A configuração do aplicativo inclui URLs básicas de SAML, uma política de mapeamento de declarações e o uso de um certificado para adicionar uma chave de assinatura personalizada. Após o aplicativo ser criado, atribua a ele um usuário como administrador. Em seguida, você pode usar uma URL para obter metadados SAML do Azure AD para configuração adicional do aplicativo. 
 
 Este artigo usa um modelo de aplicativo Azure AD da AWS como exemplo, mas você pode usar as etapas deste artigo para qualquer aplicativo baseado em SAML na Galeria do Azure AD.
-
->[!NOTE]
->As chaves e os objetos de resposta mostrados neste artigo poderiam ser reduzidos para facilitar a leitura.
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
@@ -31,7 +28,7 @@ Este tutorial assume que você está usando o Microsoft Graph Explorer, mas voc�
 
     ![Selecionar as permissões do Microsoft Graph](./images/application-saml-sso-configure-api/set-permissions.png)
         
-4. Na lista de permissões, role e expanda **AppRoleAssignment (1)** e selecione a permissão **AppRoleAssignment.ReadWrite.All**. Role mais para baixo e expanda **Aplicativo (2)** e selecione a permissão **Application.ReadWrite.All**. Continue e expanda **Política (13)** e, em seguida, selecione as permissões **Policy.Read.All**  e **Policy.ReadWrite.ApplicationConfiguration**. Por fim, role e expanda **Usuários (8)** e selecione **User.ReadWrite.All**. 
+4. Na lista de permissões, role e expanda **AppRoleAssignment (1)** e selecione a permissão **AppRoleAssignment.ReadWrite.All**. Role mais para baixo e expanda **Aplicativo (2)** e selecione a permissão **Application.ReadWrite.All**. Continue e expanda **Política (13)** e, em seguida, selecione as permissões **Policy.Read.All**  e **Policy.ReadWrite.ApplicationConfiguration**. Por fim, role e expanda **Usuários (8)** e selecione **User.ReadWrite.All**.
 
     ![Rolar e selecionar as permissões approleassignment, application e policy ](./images/application-saml-sso-configure-api/select-permissions.png)
 

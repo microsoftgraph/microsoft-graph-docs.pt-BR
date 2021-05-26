@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: a0c344b1696da6a04b196af97dd83fb84f11a8b1
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 2150fd1e54cdb4d5afa2ecbd9a451104d00f2a38
+ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52042958"
+ms.lasthandoff: 05/26/2021
+ms.locfileid: "52664717"
 ---
 # <a name="start-sync-after-uploading-files-to-an-educationsynchronizationprofile"></a>Iniciar a sincronização depois de carregar arquivos em um educationSynchronizationProfile
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:-----------|:----------|
 | Delegada (conta corporativa ou de estudante) | EduAdministration.ReadWrite |
 |Delegada (conta pessoal da Microsoft|Sem suporte.|
-|Aplicativo|Sem suporte.|
+|Aplicativo|EduAdministration.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -45,7 +45,7 @@ POST /education/synchronizationProfiles/{id}/start
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.
 ## <a name="response"></a>Resposta
-Se bem-sucedido, este método retorna um código de resposta `200 OK`. Se não tiver êxito, retornará `400 Bad Request` um . A resposta contém uma coleção de objetos [educationFileSynchronizationVerificationMessage](../resources/educationfilesynchronizationverificationmessage.md) como parte do corpo da resposta se quaisquer erros ou avisos foram encontrados.
+Se tiver êxito, este método retornará um código de resposta `200 OK`. Se não tiver êxito, retornará `400 Bad Request` um . A resposta contém uma coleção de objetos [educationFileSynchronizationVerificationMessage](../resources/educationfilesynchronizationverificationmessage.md) como parte do corpo da resposta se quaisquer erros ou avisos foram encontrados.
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação

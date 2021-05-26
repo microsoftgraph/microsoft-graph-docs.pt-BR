@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 44477aae7799922008b0a7623fd7e4c91c09e0aa
-ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
+ms.openlocfilehash: c860bbafddadbfff8d3af356954a6017f5512a3b
+ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "50574213"
+ms.lasthandoff: 05/26/2021
+ms.locfileid: "52664738"
 ---
 # <a name="pause-sync-on-an-educationsynchronizationprofile"></a>Pausar a sincronização em um educationSynchronizationProfile
 
@@ -27,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:-----------|:----------|
 | Delegada (conta corporativa ou de estudante) | EduAdministration.ReadWrite |
 |Delegada (conta pessoal da Microsoft|Sem suporte.|
-|Aplicativo|Sem suporte.|
+|Aplicativo|EduAdministration.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->

@@ -1,15 +1,15 @@
 ---
-title: Gerenciamento de dispositivos no Microsoft Intune - API do Microsoft Graph
-description: Lista a API do Microsoft Graph para pontos de extremidade do Intune (REST) que definem gerenciar dispositivos para uma organização de locatários.
+title: Gerenciamento de dispositivos Microsoft Intune - API Graph Microsoft
+description: Lista a API Graph microsoft para pontos de extremidade do Intune (REST) que definem gerenciar dispositivos para uma organização de locatários.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: f14fe5075e18a046698bc5725ccb9bb1d2618a89
-ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
+ms.openlocfilehash: 99dd9b1abd5353f6d8e4ca30aaac48e54bd296b7
+ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51863938"
+ms.lasthandoff: 05/26/2021
+ms.locfileid: "52666272"
 ---
 # <a name="device-management-in-microsoft-intune"></a>Gerenciamento de dispositivos no Microsoft Intune
 
@@ -19,6 +19,7 @@ Namespace: microsoft.graph
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
+- [Ativar o resultado da ação esim do dispositivo](intune-devices-activatedeviceesimactionresult.md)
 - [Consentimento do administrador](intune-devices-adminconsent.md)
 - [Estado de autorização de administrador](intune-devices-adminconsentstate.md)
 - [Detalhes de download do conjunto de log do aplicativo](intune-devices-applogcollectiondownloaddetails.md)
@@ -35,7 +36,9 @@ Namespace: microsoft.graph
 - [Tipo de operador de expressão de condição de gerenciamento binário](intune-fencing-binarymanagementconditionexpressionoperatortype.md)
 - [Resultado de ação do dispositivo gerenciado em massa](intune-devices-bulkmanageddeviceactionresult.md)
 - [Tipo de gabinete](intune-devices-chassistype.md)
+- [Propriedade de dispositivo Chrome o s](intune-devices-chromeosdeviceproperty.md)
 - [Condição de gerenciamento de cerca geográfica circular](intune-fencing-circulargeofencemanagementcondition.md)
+- [Cloud PC conectividade](intune-devices-cloudpcconnectivityissue.md)
 - [Resumo de dispositivos comanados](intune-devices-comanageddevicessummary.md)
 - [Dispositivo qualificado de comanagement](intune-devices-comanagementeligibledevice.md)
 - [Resumo de dispositivos qualificados de comanagement](intune-devices-comanagementeligibledevicessummary.md)
@@ -177,6 +180,7 @@ Namespace: microsoft.graph
 - [Estado de integridade reportado pelo parceiro do dispositivo gerenciado](intune-devices-manageddevicepartnerreportedhealthstate.md)
 - [Ação remota de dispositivo gerenciados](intune-devices-manageddeviceremoteaction.md)
 - [Estado do aplicativo resumido de dispositivo gerenciado](intune-troubleshooting-manageddevicesummarizedappstate.md)
+- [Status do instalador gerenciado](intune-devices-managedinstallerstatus.md)
 - [Condição de gerenciamento](intune-fencing-managementcondition.md)
 - [Expressões de condição de gerenciamento](intune-fencing-managementconditionexpression.md)
 - [Modelo de expressões de condição de gerenciamento](intune-fencing-managementconditionexpressionmodel.md)
@@ -210,7 +214,7 @@ Namespace: microsoft.graph
 - [Resultado da ação de redefinir a senha](intune-devices-resetpasscodeactionresult.md)
 - [Resultado de ação de revogar licenças VPP da Apple](intune-devices-revokeapplevpplicensesactionresult.md)
 - [Informações da marca de escopo de função](intune-auditing-rolescopetaginfo.md)
-- [Girar o resultado da ação do dispositivo de chaves do BitLocker](intune-devices-rotatebitlockerkeysdeviceactionresult.md)
+- [Girar BitLocker de ação do dispositivo de teclas](intune-devices-rotatebitlockerkeysdeviceactionresult.md)
 - [Resumo do estado da categoria de linha de base de segurança](intune-deviceintent-securitybaselinecategorystatesummary.md)
 - [Estado de conformidade da linha de base de segurança](intune-deviceintent-securitybaselinecompliancestate.md)
 - [Política de contribuição da linha de base de segurança](intune-deviceintent-securitybaselinecontributingpolicy.md)
@@ -256,14 +260,14 @@ Namespace: microsoft.graph
 - [Histórico de pontuação da análise da experiência do usuário](intune-devices-userexperienceanalyticsscorehistory.md)
 - [Configurações de análise de experiência do usuário](intune-devices-userexperienceanalyticssettings.md)
 - [Análise de experiência do usuário resumida por](intune-devices-userexperienceanalyticssummarizedby.md)
-- [Resumo de dispositivos Windows 10 de análise de experiência do usuário](intune-devices-userexperienceanalyticswindows10devicessummary.md)
+- [Análise de experiência do usuário Windows 10 resumo de dispositivos](intune-devices-userexperienceanalyticswindows10devicessummary.md)
 - [A análise de experiência do usuário funciona em qualquer lugar do dispositivo](intune-devices-userexperienceanalyticsworkfromanywheredevice.md)
 - [Análise de experiência do usuário funciona em qualquer lugar resumo de dispositivos](intune-devices-userexperienceanalyticsworkfromanywheredevicessummary.md)
 - [A análise de experiência do usuário funciona de qualquer lugar métrica](intune-devices-userexperienceanalyticsworkfromanywheremetric.md)
 - [Expressões de condição de gerenciamento variável](intune-fencing-variablemanagementconditionexpression.md)
-- [Estado de implantação do Windows autopilot](intune-troubleshooting-windowsautopilotdeploymentstate.md)
-- [Tipo de registro do Windows autopilot](intune-troubleshooting-windowsautopilotenrollmenttype.md)
-- [Status do produto do Windows Defender](intune-devices-windowsdefenderproductstatus.md)
+- [Windows estado de implantação do piloto automático](intune-troubleshooting-windowsautopilotdeploymentstate.md)
+- [Windows tipo de registro do piloto automático](intune-troubleshooting-windowsautopilotenrollmenttype.md)
+- [Windows status do produto defender](intune-devices-windowsdefenderproductstatus.md)
 - [Resultado da ação de verificação do Windows Defender](intune-devices-windowsdefenderscanactionresult.md)
 - [Conta do dispositivo Windows](intune-devices-windowsdeviceaccount.md)
 - [Conta do AD de dispositivo Windows](intune-devices-windowsdeviceadaccount.md)
@@ -278,7 +282,7 @@ Namespace: microsoft.graph
 - [Contagem de nome de malware do Windows](intune-devices-windowsmalwarenamecount.md)
 - [Visão geral de malware do Windows](intune-devices-windowsmalwareoverview.md)
 - [Gravidade de malware do Windows](intune-devices-windowsmalwareseverity.md)
-- [Contagem de gravidade de malware do Windows](intune-devices-windowsmalwareseveritycount.md)
+- [Windows de gravidade de malware](intune-devices-windowsmalwareseveritycount.md)
 - [Estado de malware do Windows](intune-devices-windowsmalwarestate.md)
 - [Contagem do estado de malware do Windows](intune-devices-windowsmalwarestatecount.md)
 - [Estado de ameaças de malware do Windows](intune-devices-windowsmalwarethreatstate.md)
