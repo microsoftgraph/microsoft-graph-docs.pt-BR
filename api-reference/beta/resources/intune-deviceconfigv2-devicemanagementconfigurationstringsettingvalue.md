@@ -1,22 +1,22 @@
 ---
-title: tipo de recurso deviceManagementConfigurationStringSettingValue
+title: Tipo de recurso deviceManagementConfigurationStringSettingValue
 description: Valor de configuração simples
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 120cf1371ea345708a61f48d533986d489a68ae4
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 2e2374fd660fbfdcebee46ec6053d8ddc93f2010
+ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49241243"
+ms.lasthandoff: 05/26/2021
+ms.locfileid: "52666699"
 ---
-# <a name="devicemanagementconfigurationstringsettingvalue-resource-type"></a>tipo de recurso deviceManagementConfigurationStringSettingValue
+# <a name="devicemanagementconfigurationstringsettingvalue-resource-type"></a>Tipo de recurso deviceManagementConfigurationStringSettingValue
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -28,10 +28,11 @@ Herda de [deviceManagementConfigurationSimpleSettingValue](../resources/intune-d
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|valor|Cadeia de caracteres|Valor da configuração de cadeia de caracteres.|
+|settingValueTemplateReference|[deviceManagementConfigurationSettingValueTemplateReference](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingvaluetemplatereference.md)|Referência de modelo de valor de configuração Herdada [de deviceManagementConfigurationSettingValue](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingvalue.md)|
+|value|Cadeia de caracteres|Valor da configuração da cadeia de caracteres.|
 
 ## <a name="relationships"></a>Relações
-Nenhum
+Nenhuma
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
@@ -43,6 +44,11 @@ Veja a seguir uma representação JSON do recurso.
 ``` json
 {
   "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+  "settingValueTemplateReference": {
+    "@odata.type": "microsoft.graph.deviceManagementConfigurationSettingValueTemplateReference",
+    "settingValueTemplateId": "String",
+    "useTemplateDefault": true
+  },
   "value": "String"
 }
 ```
