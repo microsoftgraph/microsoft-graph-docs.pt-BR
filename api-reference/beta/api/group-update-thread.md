@@ -1,57 +1,57 @@
 ---
 title: Atualizar thread de conversas
 description: Atualize um objeto thread.
-author: yyuank
+author: Jordanndahl
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 989bd7a9302ad3d7b5f6845351c882858a7b488a
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 26eab98dc2d734e76905c458c7730d6f6237bc93
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48001950"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52681225"
 ---
-# <a name="update-conversation-thread"></a><span data-ttu-id="59f61-103">Atualizar thread de conversas</span><span class="sxs-lookup"><span data-stu-id="59f61-103">Update conversation thread</span></span>
+# <a name="update-conversation-thread"></a><span data-ttu-id="4c14d-103">Atualizar thread de conversas</span><span class="sxs-lookup"><span data-stu-id="4c14d-103">Update conversation thread</span></span>
 
-<span data-ttu-id="59f61-104">Namespace: Microsoft Graph</span><span class="sxs-lookup"><span data-stu-id="59f61-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="4c14d-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="4c14d-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="59f61-105">Atualize um objeto [thread](../resources/conversationthread.md).</span><span class="sxs-lookup"><span data-stu-id="59f61-105">Update a [thread](../resources/conversationthread.md) object.</span></span>
+<span data-ttu-id="4c14d-105">Atualize um objeto [thread](../resources/conversationthread.md).</span><span class="sxs-lookup"><span data-stu-id="4c14d-105">Update a [thread](../resources/conversationthread.md) object.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="59f61-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="59f61-106">Permissions</span></span>
-<span data-ttu-id="59f61-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="59f61-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="4c14d-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="4c14d-106">Permissions</span></span>
+<span data-ttu-id="4c14d-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="4c14d-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="59f61-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="59f61-109">Permission type</span></span>      | <span data-ttu-id="59f61-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="59f61-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="4c14d-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="4c14d-109">Permission type</span></span>      | <span data-ttu-id="4c14d-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="4c14d-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="59f61-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="59f61-111">Delegated (work or school account)</span></span> | <span data-ttu-id="59f61-112">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="59f61-112">Group.ReadWrite.All</span></span>    |
-|<span data-ttu-id="59f61-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="59f61-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="59f61-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="59f61-114">Not supported.</span></span>    |
-|<span data-ttu-id="59f61-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="59f61-115">Application</span></span> | <span data-ttu-id="59f61-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="59f61-116">Not supported.</span></span> |
+|<span data-ttu-id="4c14d-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="4c14d-111">Delegated (work or school account)</span></span> | <span data-ttu-id="4c14d-112">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="4c14d-112">Group.ReadWrite.All</span></span>    |
+|<span data-ttu-id="4c14d-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="4c14d-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="4c14d-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="4c14d-114">Not supported.</span></span>    |
+|<span data-ttu-id="4c14d-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="4c14d-115">Application</span></span> | <span data-ttu-id="4c14d-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="4c14d-116">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="59f61-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="59f61-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="4c14d-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="4c14d-117">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /groups/{id}/threads/{id}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="59f61-118">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="59f61-118">Request headers</span></span>
-| <span data-ttu-id="59f61-119">Nome</span><span class="sxs-lookup"><span data-stu-id="59f61-119">Name</span></span>       | <span data-ttu-id="59f61-120">Tipo</span><span class="sxs-lookup"><span data-stu-id="59f61-120">Type</span></span> | <span data-ttu-id="59f61-121">Descrição</span><span class="sxs-lookup"><span data-stu-id="59f61-121">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="4c14d-118">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="4c14d-118">Request headers</span></span>
+| <span data-ttu-id="4c14d-119">Nome</span><span class="sxs-lookup"><span data-stu-id="4c14d-119">Name</span></span>       | <span data-ttu-id="4c14d-120">Tipo</span><span class="sxs-lookup"><span data-stu-id="4c14d-120">Type</span></span> | <span data-ttu-id="4c14d-121">Descrição</span><span class="sxs-lookup"><span data-stu-id="4c14d-121">Description</span></span>|
 |:-----------|:------|:----------|
-| <span data-ttu-id="59f61-122">Autorização</span><span class="sxs-lookup"><span data-stu-id="59f61-122">Authorization</span></span>  | <span data-ttu-id="59f61-123">string</span><span class="sxs-lookup"><span data-stu-id="59f61-123">string</span></span>  | <span data-ttu-id="59f61-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="59f61-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="4c14d-122">Autorização</span><span class="sxs-lookup"><span data-stu-id="4c14d-122">Authorization</span></span>  | <span data-ttu-id="4c14d-123">string</span><span class="sxs-lookup"><span data-stu-id="4c14d-123">string</span></span>  | <span data-ttu-id="4c14d-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="4c14d-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="59f61-126">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="59f61-126">Request body</span></span>
-<span data-ttu-id="59f61-p103">No corpo da solicitação, forneça os valores para os campos relevantes que devem ser atualizados. Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade. Para obter melhor desempenho, não inclua valores existentes que não foram alterados.</span><span class="sxs-lookup"><span data-stu-id="59f61-p103">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
+## <a name="request-body"></a><span data-ttu-id="4c14d-126">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="4c14d-126">Request body</span></span>
+<span data-ttu-id="4c14d-p103">No corpo da solicitação, forneça os valores para os campos relevantes que devem ser atualizados. Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade. Para obter melhor desempenho, não inclua valores existentes que não foram alterados.</span><span class="sxs-lookup"><span data-stu-id="4c14d-p103">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
 
-## <a name="response"></a><span data-ttu-id="59f61-130">Resposta</span><span class="sxs-lookup"><span data-stu-id="59f61-130">Response</span></span>
-<span data-ttu-id="59f61-131">Se tiver êxito, este método retornará um código de resposta `204 No Content`.</span><span class="sxs-lookup"><span data-stu-id="59f61-131">If successful, this method returns a `204 No Content` response code.</span></span>
+## <a name="response"></a><span data-ttu-id="4c14d-130">Resposta</span><span class="sxs-lookup"><span data-stu-id="4c14d-130">Response</span></span>
+<span data-ttu-id="4c14d-131">Se tiver êxito, este método retornará um código de resposta `204 No Content`.</span><span class="sxs-lookup"><span data-stu-id="4c14d-131">If successful, this method returns a `204 No Content` response code.</span></span>
 
-## <a name="example"></a><span data-ttu-id="59f61-132">Exemplo</span><span class="sxs-lookup"><span data-stu-id="59f61-132">Example</span></span>
-#### <a name="request"></a><span data-ttu-id="59f61-133">Solicitação</span><span class="sxs-lookup"><span data-stu-id="59f61-133">Request</span></span>
-<span data-ttu-id="59f61-134">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="59f61-134">The following is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="4c14d-132">Exemplo</span><span class="sxs-lookup"><span data-stu-id="4c14d-132">Example</span></span>
+#### <a name="request"></a><span data-ttu-id="4c14d-133">Solicitação</span><span class="sxs-lookup"><span data-stu-id="4c14d-133">Request</span></span>
+<span data-ttu-id="4c14d-134">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="4c14d-134">The following is an example of the request.</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="59f61-135">HTTP</span><span class="sxs-lookup"><span data-stu-id="59f61-135">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="4c14d-135">HTTP</span><span class="sxs-lookup"><span data-stu-id="4c14d-135">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_group_thread"
@@ -73,15 +73,15 @@ Content-length: 655
   "isReminderOn": true
 }
 ```
-# <a name="javascript"></a>[<span data-ttu-id="59f61-136">JavaScript</span><span class="sxs-lookup"><span data-stu-id="59f61-136">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="4c14d-136">JavaScript</span><span class="sxs-lookup"><span data-stu-id="4c14d-136">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-group-thread-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="59f61-137">Resposta</span><span class="sxs-lookup"><span data-stu-id="59f61-137">Response</span></span>
-<span data-ttu-id="59f61-138">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="59f61-138">The following is an example of the response.</span></span>
+#### <a name="response"></a><span data-ttu-id="4c14d-137">Resposta</span><span class="sxs-lookup"><span data-stu-id="4c14d-137">Response</span></span>
+<span data-ttu-id="4c14d-138">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="4c14d-138">The following is an example of the response.</span></span>
 
 <!-- {
   "blockType": "response",

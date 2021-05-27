@@ -3,32 +3,32 @@ title: 'unifiedRoleAssignmentSchedule: filterByCurrentUser'
 description: Obter uma lista dos objetos unifiedRoleAssignmentSchedule e suas propriedades filtradas por uma entidade de usuário específica
 author: shauliu
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 7330dc3126a8ce4ba0428475d8ab21ee2f302835
-ms.sourcegitcommit: c5cc948c764b4daab861aadb390b827f658a9b7f
+ms.openlocfilehash: 2ec3668023e3fcda0e402d07ba64dea957720675
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52299031"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52679859"
 ---
-# <a name="unifiedroleassignmentschedule-filterbycurrentuser"></a><span data-ttu-id="31ef7-103">unifiedRoleAssignmentSchedule: filterByCurrentUser</span><span class="sxs-lookup"><span data-stu-id="31ef7-103">unifiedRoleAssignmentSchedule: filterByCurrentUser</span></span>
-<span data-ttu-id="31ef7-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="31ef7-104">Namespace: microsoft.graph</span></span>
+# <a name="unifiedroleassignmentschedule-filterbycurrentuser"></a><span data-ttu-id="f47e6-103">unifiedRoleAssignmentSchedule: filterByCurrentUser</span><span class="sxs-lookup"><span data-stu-id="f47e6-103">unifiedRoleAssignmentSchedule: filterByCurrentUser</span></span>
+<span data-ttu-id="f47e6-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="f47e6-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="31ef7-105">Obter uma lista dos [objetos unifiedRoleAssignmentSchedule](../resources/unifiedRoleAssignmentSchedule.md) e suas propriedades associadas a um objeto principal específico.</span><span class="sxs-lookup"><span data-stu-id="31ef7-105">Get a list of the [unifiedRoleAssignmentSchedule](../resources/unifiedRoleAssignmentSchedule.md) objects and their properties associated with a particular principal object.</span></span>
+<span data-ttu-id="f47e6-105">Obter uma lista dos [objetos unifiedRoleAssignmentSchedule](../resources/unifiedRoleAssignmentSchedule.md) e suas propriedades associadas a um objeto principal específico.</span><span class="sxs-lookup"><span data-stu-id="f47e6-105">Get a list of the [unifiedRoleAssignmentSchedule](../resources/unifiedRoleAssignmentSchedule.md) objects and their properties associated with a particular principal object.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="31ef7-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="31ef7-106">Permissions</span></span>
-<span data-ttu-id="31ef7-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="31ef7-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="f47e6-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="f47e6-106">Permissions</span></span>
+<span data-ttu-id="f47e6-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="f47e6-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="31ef7-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="31ef7-109">Permission type</span></span>|<span data-ttu-id="31ef7-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="31ef7-110">Permissions (from least to most privileged)</span></span>|
+|<span data-ttu-id="f47e6-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="f47e6-109">Permission type</span></span>|<span data-ttu-id="f47e6-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="f47e6-110">Permissions (from least to most privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="31ef7-111">Delegada (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="31ef7-111">Delegated (work or school account)</span></span>|<span data-ttu-id="31ef7-112">PrivilegedAccess.ReadWrite.AzureAD</span><span class="sxs-lookup"><span data-stu-id="31ef7-112">PrivilegedAccess.ReadWrite.AzureAD</span></span>|
-|<span data-ttu-id="31ef7-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="31ef7-113">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="31ef7-114">Sem suporte</span><span class="sxs-lookup"><span data-stu-id="31ef7-114">Not supported</span></span>|
-|<span data-ttu-id="31ef7-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="31ef7-115">Application</span></span>|<span data-ttu-id="31ef7-116">PrivilegedAccess.Read.AzureAD</span><span class="sxs-lookup"><span data-stu-id="31ef7-116">PrivilegedAccess.Read.AzureAD</span></span>|
+|<span data-ttu-id="f47e6-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="f47e6-111">Delegated (work or school account)</span></span>|<span data-ttu-id="f47e6-112">PrivilegedAccess.ReadWrite.AzureAD</span><span class="sxs-lookup"><span data-stu-id="f47e6-112">PrivilegedAccess.ReadWrite.AzureAD</span></span>|
+|<span data-ttu-id="f47e6-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="f47e6-113">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="f47e6-114">Sem suporte</span><span class="sxs-lookup"><span data-stu-id="f47e6-114">Not supported</span></span>|
+|<span data-ttu-id="f47e6-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="f47e6-115">Application</span></span>|<span data-ttu-id="f47e6-116">PrivilegedAccess.Read.AzureAD</span><span class="sxs-lookup"><span data-stu-id="f47e6-116">PrivilegedAccess.Read.AzureAD</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="31ef7-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="31ef7-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="f47e6-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="f47e6-117">HTTP request</span></span>
 
 <!-- {
   "blockType": "ignored"
@@ -38,29 +38,29 @@ ms.locfileid: "52299031"
 GET /roleManagement/directory/roleAssignmentSchedules/filterByCurrentUser
 ```
 
-## <a name="query-parameters"></a><span data-ttu-id="31ef7-118">Parâmetros de consulta</span><span class="sxs-lookup"><span data-stu-id="31ef7-118">Query parameters</span></span>
-<span data-ttu-id="31ef7-119">A tabela a seguir mostra os parâmetros de consulta que podem ser usados com esse método.</span><span class="sxs-lookup"><span data-stu-id="31ef7-119">The following table shows the query parameters that can be used with this method.</span></span>
+## <a name="query-parameters"></a><span data-ttu-id="f47e6-118">Parâmetros de consulta</span><span class="sxs-lookup"><span data-stu-id="f47e6-118">Query parameters</span></span>
+<span data-ttu-id="f47e6-119">A tabela a seguir mostra os parâmetros de consulta que podem ser usados com esse método.</span><span class="sxs-lookup"><span data-stu-id="f47e6-119">The following table shows the query parameters that can be used with this method.</span></span>
 
-|<span data-ttu-id="31ef7-120">Parâmetro</span><span class="sxs-lookup"><span data-stu-id="31ef7-120">Parameter</span></span>|<span data-ttu-id="31ef7-121">Tipo</span><span class="sxs-lookup"><span data-stu-id="31ef7-121">Type</span></span>|<span data-ttu-id="31ef7-122">Descrição</span><span class="sxs-lookup"><span data-stu-id="31ef7-122">Description</span></span>|
+|<span data-ttu-id="f47e6-120">Parâmetro</span><span class="sxs-lookup"><span data-stu-id="f47e6-120">Parameter</span></span>|<span data-ttu-id="f47e6-121">Tipo</span><span class="sxs-lookup"><span data-stu-id="f47e6-121">Type</span></span>|<span data-ttu-id="f47e6-122">Descrição</span><span class="sxs-lookup"><span data-stu-id="f47e6-122">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="31ef7-123">on</span><span class="sxs-lookup"><span data-stu-id="31ef7-123">on</span></span>|<span data-ttu-id="31ef7-124">roleAssignmentScheduleFilterByCurrentUserOptions</span><span class="sxs-lookup"><span data-stu-id="31ef7-124">roleAssignmentScheduleFilterByCurrentUserOptions</span></span>|<span data-ttu-id="31ef7-125">ID do usuário atual.</span><span class="sxs-lookup"><span data-stu-id="31ef7-125">Id of the current user.</span></span>|
+|<span data-ttu-id="f47e6-123">on</span><span class="sxs-lookup"><span data-stu-id="f47e6-123">on</span></span>|<span data-ttu-id="f47e6-124">roleAssignmentScheduleFilterByCurrentUserOptions</span><span class="sxs-lookup"><span data-stu-id="f47e6-124">roleAssignmentScheduleFilterByCurrentUserOptions</span></span>|<span data-ttu-id="f47e6-125">ID do usuário atual.</span><span class="sxs-lookup"><span data-stu-id="f47e6-125">Id of the current user.</span></span>|
 
 
-## <a name="request-headers"></a><span data-ttu-id="31ef7-126">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="31ef7-126">Request headers</span></span>
-|<span data-ttu-id="31ef7-127">Nome</span><span class="sxs-lookup"><span data-stu-id="31ef7-127">Name</span></span>|<span data-ttu-id="31ef7-128">Descrição</span><span class="sxs-lookup"><span data-stu-id="31ef7-128">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="f47e6-126">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="f47e6-126">Request headers</span></span>
+|<span data-ttu-id="f47e6-127">Nome</span><span class="sxs-lookup"><span data-stu-id="f47e6-127">Name</span></span>|<span data-ttu-id="f47e6-128">Descrição</span><span class="sxs-lookup"><span data-stu-id="f47e6-128">Description</span></span>|
 |:---|:---|
-|<span data-ttu-id="31ef7-129">Autorização</span><span class="sxs-lookup"><span data-stu-id="31ef7-129">Authorization</span></span>|<span data-ttu-id="31ef7-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="31ef7-p102">Bearer {token}. Required.</span></span>|
+|<span data-ttu-id="f47e6-129">Autorização</span><span class="sxs-lookup"><span data-stu-id="f47e6-129">Authorization</span></span>|<span data-ttu-id="f47e6-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="f47e6-p102">Bearer {token}. Required.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="31ef7-132">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="31ef7-132">Request body</span></span>
-<span data-ttu-id="31ef7-133">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="31ef7-133">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="f47e6-132">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="f47e6-132">Request body</span></span>
+<span data-ttu-id="f47e6-133">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="f47e6-133">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="31ef7-134">Resposta</span><span class="sxs-lookup"><span data-stu-id="31ef7-134">Response</span></span>
+## <a name="response"></a><span data-ttu-id="f47e6-134">Resposta</span><span class="sxs-lookup"><span data-stu-id="f47e6-134">Response</span></span>
 
-<span data-ttu-id="31ef7-135">Se tiver êxito, este método retornará um código de resposta e uma coleção `200 OK` [unifiedRoleAssignmentSchedule](../resources/unifiedroleassignmentschedule.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="31ef7-135">If successful, this method returns a `200 OK` response code and a [unifiedRoleAssignmentSchedule](../resources/unifiedroleassignmentschedule.md) collection in the response body.</span></span>
+<span data-ttu-id="f47e6-135">Se tiver êxito, este método retornará um código de resposta e uma coleção `200 OK` [unifiedRoleAssignmentSchedule](../resources/unifiedroleassignmentschedule.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="f47e6-135">If successful, this method returns a `200 OK` response code and a [unifiedRoleAssignmentSchedule](../resources/unifiedroleassignmentschedule.md) collection in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="31ef7-136">Exemplos</span><span class="sxs-lookup"><span data-stu-id="31ef7-136">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="f47e6-136">Exemplos</span><span class="sxs-lookup"><span data-stu-id="f47e6-136">Examples</span></span>
 
-### <a name="request"></a><span data-ttu-id="31ef7-137">Solicitação</span><span class="sxs-lookup"><span data-stu-id="31ef7-137">Request</span></span>
+### <a name="request"></a><span data-ttu-id="f47e6-137">Solicitação</span><span class="sxs-lookup"><span data-stu-id="f47e6-137">Request</span></span>
 <!-- {
   "blockType": "request",
   "name": "unifiedroleassignmentschedule_filterbycurrentuser"
@@ -71,8 +71,8 @@ GET https://graph.microsoft.com/beta/roleManagement/directory/roleAssignmentSche
 ```
 
 
-### <a name="response"></a><span data-ttu-id="31ef7-138">Resposta</span><span class="sxs-lookup"><span data-stu-id="31ef7-138">Response</span></span>
-<span data-ttu-id="31ef7-139">**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.</span><span class="sxs-lookup"><span data-stu-id="31ef7-139">**Note:** The response object shown here might be shortened for readability.</span></span>
+### <a name="response"></a><span data-ttu-id="f47e6-138">Resposta</span><span class="sxs-lookup"><span data-stu-id="f47e6-138">Response</span></span>
+<span data-ttu-id="f47e6-139">**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.</span><span class="sxs-lookup"><span data-stu-id="f47e6-139">**Note:** The response object shown here might be shortened for readability.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -1,0 +1,6 @@
+<!-- markdownlint-disable MD002 MD025 MD041 -->
+
+<span data-ttu-id="dfb6f-101">Você concluiu com êxito o tutorial do conector do .NET Core microsoft Graph conector.</span><span class="sxs-lookup"><span data-stu-id="dfb6f-101">You have successfully completed the .NET Core Microsoft Graph connector tutorial.</span></span> <span data-ttu-id="dfb6f-102">Agora você criou um conector personalizado e o usou para a Pesquisa da Microsoft.</span><span class="sxs-lookup"><span data-stu-id="dfb6f-102">Now you have created a custom connector and used it to power Microsoft Search.</span></span>
+
+## <a name="next-steps"></a><span data-ttu-id="dfb6f-103">Próximas etapas</span><span class="sxs-lookup"><span data-stu-id="dfb6f-103">Next steps</span></span>
+<span data-ttu-id="dfb6f-104">Para saber mais sobre todos os dados que você pode acessar com seu conector personalizado, consulte [Microsoft Graph connectors overview](connecting-external-content-connectors-overview.md).</span><span class="sxs-lookup"><span data-stu-id="dfb6f-104">To find out more about all the data you can access with your custom connector, see [Microsoft Graph connectors overview](connecting-external-content-connectors-overview.md).</span></span>
