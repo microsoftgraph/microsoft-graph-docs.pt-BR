@@ -1,26 +1,31 @@
 ---
 title: 'message: send'
-description: Envie uma mensagem na pasta de rascunho. A mensagem de rascunho pode ser o rascunho de uma mensagem nova, rascunho de resposta, rascunho de resposta a todos ou
+description: Enviar um rascunho da mensagem existente.
 localization_priority: Priority
 author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: fb00d44a669d12a21bf2d9e5a302b6fe4b627028
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 8be54552df8acf7faa67c070e85f63f48a5c23d4
+ms.sourcegitcommit: cec76c5a58b359d79df764c849c8b459349b3b52
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50134012"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "52645490"
 ---
 # <a name="message-send"></a>message: send
 
 Namespace: microsoft.graph
 
-Envie uma mensagem na pasta de rascunho. A mensagem de rascunho pode ser um rascunho de mensagem nova, rascunho de resposta, rascunho de resposta a todos ou rascunho de encaminhamento. A mensagem é salva na pasta Itens Enviados.
+Enviar um rascunho da mensagem existente. 
+
+O rascunho da mensagem pode ser um novo [rascunho](../api/user-post-messages.md), [rascunho de resposta](../api/message-createreply.md), [responder a todos os rascunhos](../api/message-createreplyall.md) ou um [rascunho de encaminhamento](../api/message-createforward.md).
+
+Este método salva a mensagem na pasta **Itens Enviados**.
+
+Alternativamente, [envie uma nova mensagem](../api/user-sendmail.md) em uma única operação.
 
 ## <a name="permissions"></a>Permissões
-
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, consulte [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
@@ -45,12 +50,15 @@ POST /users/{id | userPrincipalName}/messages/{id}/send
 | Content-Length | number | 0. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
+Como este método envia um rascunho da mensagem existente, não é necessário especificar um corpo de solicitação.
 
 ## <a name="response"></a>Resposta
 
 Se bem-sucedido, este método retorna um código de resposta `202 Accepted`. Não retorna nada no corpo da resposta.
 
-## <a name="example"></a>Exemplo
+## <a name="examples"></a>Exemplos
+
+### <a name="example-1-send-an-existing-draft-message"></a>Exemplo 1: Enviar um rascunho da mensagem existente.
 
 O exemplo a seguir mostra como chamar essa API.
 

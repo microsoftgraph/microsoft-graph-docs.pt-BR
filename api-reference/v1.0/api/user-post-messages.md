@@ -1,27 +1,39 @@
 ---
 title: Criar mensagem
-description: Use essa API para criar uma nova mensagem. Rascunhos podem ser criados em qualquer pasta e, opcionalmente, atualizados antes do envio. Para salvar na pasta Rascunhos, use o atalho /messages.
+description: Criar um rascunho de uma nova mensagem no formato JSON ou MIME.
 localization_priority: Priority
 author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: b2776e4708c6a5a72ee2f9c612f05f5f093b196f
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 9d10c07c433b3d8456c574519aa497fc163dde09
+ms.sourcegitcommit: cec76c5a58b359d79df764c849c8b459349b3b52
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52054291"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "52645630"
 ---
 # <a name="create-message"></a>Criar mensagem
 
 Namespace: microsoft.graph
 
-Use essa API para criar uma nova mensagem. Rascunhos podem ser criados em qualquer pasta e, opcionalmente, atualizados antes do envio. Para salvar na pasta Rascunhos, use o atalho /messages.
+Criar um rascunho de uma nova [mensagem](../resources/message.md) no formato JSON ou MIME.
 
-Ao criar o rascunho na mesma chamada de **POST**, você pode incluir um [anexo](../resources/attachment.md).
+Ao usar o formato JSON, você pode:
+- Incluir um [anexo](../resources/attachment.md) na **mensagem**.
+- [Atualizar](../api/message-update.md) o rascunho mais tarde para adicionar conteúdo ao **corpo** ou alterar outras propriedades da mensagem.
+
+Ao utilizar o formato MIME:
+- Fornecer os [cabeçalhos de mensagem da Internet](https://tools.ietf.org/html/rfc2076) e o [conteúdo MIME](https://tools.ietf.org/html/rfc2045) aplicáveis, todos codificados no formato **base64** no corpo da solicitação.
+- Adicionar quaisquer anexos e propriedades S/MIME ao conteúdo MIME.
+
+Por padrão, esta operação salva o rascunho na pasta Rascunhos.
+
+[Enviar](/graph/api-reference/beta/api/message-send.md) o rascunho da mensagem em uma operação subsequente.
+
+Como alternativa, [envie uma nova mensagem](../api/user-sendmail.md) em uma única operação ou crie um rascunho para [encaminhar](../api/message-createforward.md), [responder](../api/message-createreply.md) e [responder a todos](../api/message-createreplyall.md) a uma mensagem existente.
 
 ## <a name="permissions"></a>Permissões
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
+Uma das seguintes permissões é necessária para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
@@ -38,13 +50,16 @@ POST /me/mailFolders/{id}/messages
 POST /users/{id | userPrincipalName}/mailFolders/{id}/messages
 ```
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
-| Cabeçalho       | Valor |
-|:---------------|:--------|
-| Autorização  | {token} de portador. Obrigatório.  |
-| Content-Type  | application/json  |
+| Nome       | Tipo | Descrição|
+|:---------------|:--------|:----------|
+| Autorização  | string  | {token} de portador. Obrigatório. |
+| Content-Length | number | 0. Obrigatório. |
+| Content-Type | string  | Natureza dos dados no corpo de uma entidade. Obrigatório.<br/> Use `application/json` para um objeto JSON e `text/plain` para conteúdo MIME. |
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça uma representação JSON do objeto [message](../resources/message.md).
+Ao usar o formato JSON, forneça uma representação JSON do objeto [mensagem](../resources/message.md).
+
+Ao especificar o corpo no formato MIME, forneça ao conteúdo MIME os cabeçalhos de mensagem da Internet aplicáveis ("Para", "CC", "CCO", "Assunto"), todos codificados no formato **base64** no corpo da solicitação.
 
 Como o recurso **message** dá suporte a [extensions](/graph/extensibility-overview), você pode usar a operação `POST` e adicionar propriedades personalizadas com seus próprios dados à mensagem ao criá-la.
 
@@ -52,8 +67,11 @@ Como o recurso **message** dá suporte a [extensions](/graph/extensibility-overv
 
 Se bem-sucedido, este método retorna o código de resposta `201 Created` e o objeto [message](../resources/message.md) no corpo da resposta.
 
-## <a name="example"></a>Exemplo
-##### <a name="request-1"></a>Solicitação 1
+Se o corpo da solicitação incluir conteúdo MIME malformado, este método retornará `400 Bad request` e a seguinte mensagem de erro: "Cadeia de caracteres base64 inválida para o conteúdo MIME".
+
+## <a name="examples"></a>Exemplos
+### <a name="example-1-create-a-new-message-draft-using-json-format"></a>Exemplo 1: Criar um novo rascunho de mensagem usando o formato JSON
+#### <a name="request"></a>Solicitação 
 Este é um exemplo da solicitação.
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -100,8 +118,8 @@ Content-type: application/json
 ---
 
 No corpo da solicitação, forneça uma representação JSON do objeto [mensagem](../resources/message.md).
-##### <a name="response-1"></a>Resposta 1
-Veja a seguir um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+#### <a name="response"></a>Resposta 
+Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser reduzido para facilitar a leitura.
 <!-- {
   "blockType": "response",
   "name": "create_message_from_user",
@@ -162,8 +180,9 @@ Content-type: application/json
 }
 ```
 
-##### <a name="request-2"></a>Solicitação 2
-O próximo exemplo adiciona alguns cabeçalhos das mensagens de Internet de cliente ao criar um rascunho da mensagem.
+### <a name="example-2-create-message-draft-that-includes-custom-message-headers"></a>Exemplo 2: Criar rascunho de mensagem que inclui cabeçalhos de mensagem personalizados
+#### <a name="request"></a>Solicitação
+
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -218,7 +237,7 @@ Content-type: application/json
 ---
 
 No corpo da solicitação, forneça uma representação JSON do objeto [mensagem](../resources/message.md).
-##### <a name="response-2"></a>Resposta 2
+#### <a name="response"></a>Resposta
 Veja a seguir um exemplo da resposta. Observação: Os cabeçalhos das mensagens Internet não são retornados por padrão em uma resposta de POSTAGEM. O objeto de resposta mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",
@@ -278,6 +297,108 @@ Content-type: application/json
     ],
     "flag":{
         "flagStatus":"notFlagged"
+    }
+}
+```
+
+### <a name="example-3-create-a-new-message-draft-using-mime-format"></a>Exemplo 3: Criar um novo rascunho de mensagem usando o formato MIME
+#### <a name="request"></a>Solicitação
+
+<!-- {
+  "blockType": "request",
+  "name": "message_create_draft_mime_v1"
+}-->
+
+```http
+POST https://graph.microsoft.com/v1.0/me/messages
+Content-type: text/plain
+
+Q29udGVudC1UeXBlOiBhcHBsaWNhdGlvbi9wa2NzNy1taW1lOw0KCW5hbWU9c21pbWUucDdtOw0KCXNtaW1lLXR5cGU9ZW52ZWxvcGVkLWRhdGENCk1pbWUtVmVyc2lvbjogMS4wIChNYWMgT1MgWCBNYWlsIDEzLjAgXCgzNjAxLjAuMTBcKSkNClN1YmplY3Q6IFJlOiBUZXN0aW5nIFMvTUlNRQ0KQ29udGVudC1EaXNwb3Np...
+
+```
+
+#### <a name="response"></a>Resposta
+Veja a seguir um exemplo da resposta.
+<!-- {
+  "blockType": "response",
+  "@odata.type": "microsoft.graph.message",
+  "truncated": true
+} -->
+
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('0aaa0aa0-0000-0a00-a00a-0000009000a0')/messages/$entity",
+    "@odata.etag": "W/\"AAAAAAAAAAAa00AAAa0aAaAa0a0AAAaAAAAaAa0a\"",
+    "id": "AAMkADA1MTAAAAqldOAAA=",
+    "createdDateTime": "2021-04-23T18:13:44Z",
+    "lastModifiedDateTime": "2021-04-23T18:13:44Z",
+    "changeKey": "AAAAAAAAAAAA00aaaa000aaA",
+    "categories": [],
+    "receivedDateTime": "2021-04-23T18:13:44Z",
+    "sentDateTime": "2021-02-28T07:15:00Z",
+    "hasAttachments": false,
+    "internetMessageId": "<AAAAAAAAAA@AAAAAAA0001AA0000.codcod00.prod.outlook.com>",
+    "subject": "Internal Resume Submission: Sales Associate",
+    "bodyPreview": "Hi, Megan.I have an interest in the Sales Associate position. Please consider my resume, which you can access here...",
+    "importance": "normal",
+    "parentFolderId": "LKJDSKJHkjhfakKJHFKWKKJHKJdhkjHDK==",
+    "conversationId": "SDSFSmFSDGI5LWZhYjc4fsdfsd=",
+    "conversationIndex": "Adfsdfsdfsdfw==",
+    "isDeliveryReceiptRequested": null,
+    "isReadReceiptRequested": false,
+    "isRead": true,
+    "isDraft": true,
+    "webLink": "https://outlook.office365.com/owa/?ItemID=AAMkAGNhOWAvsurl=1&viewmodel=ReadMessageItem",
+    "inferenceClassification": "focused",
+    "body": {
+        "contentType": "text",
+        "content": "Hi, Megan.I have an interest in the Sales Associate position. Please consider my resume, which you can access here... Regards,Alex"
+    },
+    "sender": {
+        "emailAddress": {
+            "name": "Alex Wilber",
+            "address": "AlexW@contoso.com"
+        }
+    },
+    "from": {
+        "emailAddress": {
+            "name": "Alex Wilber",
+            "address": "AlexW@contoso.com"
+        }
+    },
+    "toRecipients": [
+        {
+            "emailAddress": {
+                "name": "Megan Bowen",
+                "address": "MeganB@contoso.com"
+            }
+        }
+    ],
+    "ccRecipients": [],
+    "bccRecipients": [],
+    "replyTo": [],
+    "flag": {
+        "flagStatus": "notFlagged"
+    }
+}
+
+```
+
+Se o corpo da solicitação incluir conteúdo MIME malformado, este método retornará a seguinte mensagem de erro.
+
+<!-- { "blockType": "ignored" } -->
+
+```http
+HTTP/1.1 400 Bad Request
+Content-type: application/json
+
+{
+    "error": {
+        "code": "ErrorMimeContentInvalidBase64String",
+        "message": "Invalid base64 string for MIME content."
     }
 }
 ```

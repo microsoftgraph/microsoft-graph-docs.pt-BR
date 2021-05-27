@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 6414aa7b29cd5e5cdb72f2171e0be22dda8b8b00
-ms.sourcegitcommit: af4b2fc18449c33979cf6d75bd680f40602ba708
+ms.openlocfilehash: 86acc13489f58ed0847517d4e6e064aa49fcaa2d
+ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "48622522"
+ms.lasthandoff: 05/26/2021
+ms.locfileid: "52668671"
 ---
 ```objc
 
@@ -18,6 +18,7 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 
 MSGraphMailFolder *mailFolder = [[MSGraphMailFolder alloc] init];
 [mailFolder setDisplayName:@"displayName-value"];
+[mailFolder setIsHidden: true];
 
 NSError *error;
 NSData *mailFolderData = [mailFolder getSerializedDataWithError:&error];
