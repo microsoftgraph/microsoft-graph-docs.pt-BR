@@ -2,15 +2,15 @@
 title: Listar proprietários
 description: Recupere uma lista dos proprietários do grupo.
 localization_priority: Normal
-author: yyuank
+author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 4d9af9c39479262952d0ac7d645f7f0ba5de96bc
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 64ee4d48713518dd9b4005cf6932dfc90932195c
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52041495"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52681533"
 ---
 # <a name="list-owners"></a>Listar proprietários
 

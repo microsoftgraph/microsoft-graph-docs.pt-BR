@@ -4,12 +4,12 @@ description: Obtenha dicas que o ajudarão a aproveitar as vantagens da Conexão
 author: fercobo-msft
 localization_priority: Priority
 ms.prod: data-connect
-ms.openlocfilehash: 7d8001c0517b38fdee910e609e76f5891e84ba03
-ms.sourcegitcommit: 276a13a37c3772689dfc71f7cd47586c9581f27d
+ms.openlocfilehash: dbc0b7776d769ee694d9022b1e7f5b838f014da6
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52629683"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52680077"
 ---
 # <a name="microsoft-graph-data-connect-frequently-asked-questions"></a>Perguntas frequentes sobre a Conexão de Dados do Microsoft Graph
 
@@ -31,8 +31,6 @@ Os encargos de consumo da Conexão de Dados do Microsoft Graph são cobrados men
 - BasicDataSet_v0.MailboxSettings
 - BasicDataSet_v0.Manager
 - BasicDataSet_v0.DirectReport.
-
-O preço dos objetos da Conexão de Dados do Microsoft Graph a partir de hoje é de US$ 0,375 por 1K de objetos extraídos.
 
 ## <a name="is-it-possible-for-my-data-to-stay-within-the-organizations-subscription-with-microsoft-graph-data-connect"></a>É possível que meus dados permaneçam dentro da assinatura da organização com a Conexão de Dados do Microsoft Graph?
 
@@ -77,7 +75,7 @@ Hoje, exigimos que todos os usuários na lista de usuários tenham a licença do
 
 ## <a name="is-hybrid-mode-tenant-setup-supported"></a>A configuração do locatário no modo híbrido é compatível?
 
-Se sua configuração do Microsoft 365 tiver alguns usuários no Exchange Online e alguns usuários no Exchange local, os usuários que estão no Exchange local não terão suporte. Infelizmente, hoje não oferecemos suporte a Conexão de Dados para os usuários do Exchange local.
+Se sua configuração do Microsoft 365 tiver alguns usuários no Exchange Online e alguns usuários no Exchange local, não haverá suporte para os usuários que estão no Exchange local. Infelizmente, hoje não há suporte para a Conexão de Dados para usuários locais do Exchange.
 
 ## <a name="are-resource-accounts-supported"></a>Há suporte para contas de recursos?
 
@@ -91,6 +89,6 @@ A Conexão de Dados do Microsoft Graph leva a lista de usuários para cada execu
 
 Para fins de cobrança, a Conexão de Dados do Microsoft Graph arredonda para cima a contagem de objetos extraídos para o 1000 mais próximo. Por exemplo, se você extrair 125 objetos ou eles extraírem 999 objetos, serão cobrados 1000 objetos. Da mesma forma, se você extrair entre 1.001 a 2.000 objetos, será cobrado por 2.000 objetos.
 
-## <a name="my-microsoft-365-copy-data-activity-is-always-failing-when-initialized-via-azure-synapse-why-is-this-happening"></a>Minha atividade de dados de cópia do Microsoft 365 sempre falha quando inicializada por meio do Azure Synapse. Por que isso está acontecendo?
+## <a name="my-microsoft-365-copy-data-activity-is-always-failing-when-initialized-via-azure-synapse-why-is-this-happening"></a>Minha atividade de dados de cópia do Microsoft 365 está sempre falhando quando inicializada por meio do Azure Synapse. Por que isso está acontecendo?
 
 Hoje, não temos suporte para atividade de cópia de dados do Microsoft 365 para ser inicializada pelo Azure Synapse. Estamos trabalhando para acrescentar a integração para a atividade Inicializada do Azure Synapse e atualizaremos nossa documentação quando esta for concluída.

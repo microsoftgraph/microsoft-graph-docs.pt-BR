@@ -1,16 +1,16 @@
 ---
 title: Listar fotos
 description: Recuperar uma lista dos objetos profilePhoto.
-author: yyuank
+author: Jordanndahl
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: d022b7529585358ea5cb595fdfa26957f1078457
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 6d3bdecfd318cd0413f69cbce366b1d5d46c10cd
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52041467"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52681526"
 ---
 # <a name="list-photos"></a>Listar fotos
 
@@ -27,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | Group.ReadBasic.All, Group.Read.All, Group.ReadWrite.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Application | Group.ReadBasic.All, Group.Read.All, Group.ReadWrite.All |
+|Aplicativo | Group.ReadBasic.All, Group.Read.All, Group.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->

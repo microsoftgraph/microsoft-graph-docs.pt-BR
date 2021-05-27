@@ -1,28 +1,28 @@
 ---
-title: 'Group: ValidateProperties'
-description: Validar se o nome de exibição ou o apelido de email de um grupo do Microsoft 365 está em conformidade com as políticas de nomenclatura.
+title: 'group: validateProperties'
+description: Valide se Microsoft 365 nome de exibição de um grupo ou apelido de email estiver em conformidade com as políticas de nomenização.
 localization_priority: Normal
-author: yyuank
+author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 08089b1a3f0737f854e21cd9d72b06f684f48bdd
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 6f41ee4f9ae52133d3c7611b52b42997480dfc40
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48953653"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52681218"
 ---
-# <a name="group-validateproperties"></a>Group: ValidateProperties
+# <a name="group-validateproperties"></a>group: validateProperties
 
 Namespace: microsoft.graph
 
-Validar se o nome de exibição ou o apelido de email de um grupo do Microsoft 365 está em conformidade com as políticas de nomenclatura. Os clientes podem usar a API para determinar se um nome de exibição ou apelido de email é válido antes de tentar **Atualizar** um grupo do Microsoft 365. Para validar as propriedades antes de criar um grupo, use a [função ValidateProperties](directoryobject-validateproperties.md) para objetos de diretório.
+Valide se Microsoft 365 nome de exibição de um grupo ou apelido de email estiver em conformidade com as políticas de nomenização. Os clientes podem usar **a** API para determinar se um nome de exibição ou apelido de email é válido antes de tentar atualizar um Microsoft 365 grupo. Para validar propriedades antes de criar um grupo, use a [função validateProperties](directoryobject-validateproperties.md) para objetos de diretório.
 
-As seguintes validações são realizadas para o nome de exibição e as propriedades de apelido de email: 
-1. Validar a política de nomenclatura de prefixo e sufixo
-2. Validar a política personalizada de palavras banidas
+As seguintes validações são executadas para as propriedades nome de exibição e apelido de email: 
+1. Validar a política de nomeação de prefixo e sufixo
+2. Validar a política de palavras proibidas personalizada
 
-Essa API retorna com a primeira falha encontrada. Se uma ou mais propriedades falharem várias validações, somente a propriedade com a primeira falha de validação será retornada. No entanto, você pode validar tanto o apelido de email quanto o nome de exibição e receber uma coleção de erros de validação se você estiver validando apenas o prefixo e a política de nomenclatura de sufixo.
+Essa API retorna com a primeira falha encontrada. Se uma ou mais propriedades falharem em várias validações, somente a propriedade com a primeira falha de validação será retornada. No entanto, você pode validar o apelido de email e o nome de exibição e receber uma coleção de erros de validação se estiver validando apenas a política de nomenis de prefixo e sufixo.
 
 ## <a name="permissions"></a>Permissões
 
@@ -55,14 +55,14 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 |:---------------|:--------|:----------|
 |displayName|String| O nome de exibição do grupo a ser validado. A propriedade não é necessária individualmente. No entanto, pelo menos uma propriedade (displayName ou mailNickname) é necessária. |
 |mailNickname|String| O apelido de email do grupo a ser validado. A propriedade não é necessária individualmente. No entanto, pelo menos uma propriedade (displayName ou mailNickname) é necessária. |
-|onBehalfOfUserId|Guid| A ID de objeto do usuário a ser representada ao chamar a API. Os resultados de validação são para os atributos e funções do onBehalfOfUserId. |
+|onBehalfOfUserId|Guid| A ID do objeto do usuário a ser personificado ao chamar a API. Os resultados da validação são para os atributos e funções de onBehalfOfUserId. |
 
 ## <a name="response"></a>Resposta
-Se tiver êxito e não houver erros de validação, o método retornará o `204 No Content` código de resposta. Não retorna nada no corpo da resposta.
+Se tiver êxito e não houver erros de validação, o método retornará `204 No Content` o código de resposta. Não retorna nada no corpo da resposta.
 
-Se a solicitação for inválida, o método retornará um `400 Bad Request` código de resposta. Uma mensagem de erro com detalhes sobre a solicitação inválida é retornada no corpo da resposta.
+Se a solicitação for inválida, o método retornará `400 Bad Request` o código de resposta. Uma mensagem de erro com detalhes sobre a solicitação inválida é retornada no corpo da resposta.
 
-Se houver um erro de validação. O método retorna um `422 Unprocessable Entity` código de resposta. Uma mensagem de erro e um conjunto de detalhes de erro é retornado no corpo da resposta.
+Se houver um erro de validação. O método retorna `422 Unprocessable Entity` o código de resposta. Uma mensagem de erro e uma coleção de detalhes de erro é retornada no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

@@ -3,14 +3,14 @@ title: Tipo de recurso unifiedRoleEligibilitySchedule
 description: Representa um cronograma para operações de atribuição de função qualificada por meio do Azure AD Privileged Identity Management.
 author: shauliu
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 1593e819b3c57ee24dae0480aadcb7f532d2fbf4
-ms.sourcegitcommit: c5cc948c764b4daab861aadb390b827f658a9b7f
+ms.openlocfilehash: 7b996bbe2e34d7916e85d308039e48659f2b3234
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52299069"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52679474"
 ---
 # <a name="unifiedroleeligibilityschedule-resource-type"></a>Tipo de recurso unifiedRoleEligibilitySchedule
 
@@ -32,17 +32,17 @@ Herda de [unifiedRoleScheduleBase](../resources/unifiedroleschedulebase.md).
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|appScopeId|Cadeia de caracteres|ID do escopo específico do aplicativo quando o escopo de atribuição é específico do aplicativo. O escopo de uma atribuição determina o conjunto de recursos para os quais a entidade foi concedida acesso. Os escopos de diretório são escopos compartilhados armazenados no diretório que são compreendidos por vários aplicativos. Use "/" para o escopo de todo o locatário. Os escopos do aplicativo são escopos definidos e compreendidos somente por esse aplicativo. Herdado [de unifiedRoleScheduleBase](../resources/unifiedroleschedulebase.md)|
+|appScopeId|String|ID do escopo específico do aplicativo quando o escopo de atribuição é específico do aplicativo. O escopo de uma atribuição determina o conjunto de recursos para os quais a entidade foi concedida acesso. Os escopos de diretório são escopos compartilhados armazenados no diretório que são compreendidos por vários aplicativos. Use "/" para o escopo de todo o locatário. Os escopos do aplicativo são escopos definidos e compreendidos somente por esse aplicativo. Herdado [de unifiedRoleScheduleBase](../resources/unifiedroleschedulebase.md)|
 |createdDateTime|DateTimeOffset|Hora em que a agenda foi criada. Herdado [de unifiedRoleScheduleBase](../resources/unifiedroleschedulebase.md)|
-|createdUsing|Cadeia de caracteres|ID do RoleEligibilityScheduleRequest que criou essa agenda. Herdado [de unifiedRoleScheduleBase](../resources/unifiedroleschedulebase.md)|
-|directoryScopeId|Cadeia de caracteres|ID do objeto directory que representa o escopo da atribuição. O escopo de uma atribuição determina o conjunto de recursos para os quais a entidade foi concedida acesso. Os escopos de diretório são escopos compartilhados armazenados no diretório que são compreendidos por vários aplicativos. Os escopos do aplicativo são escopos definidos e compreendidos somente por esse aplicativo. Herdado [de unifiedRoleScheduleBase](../resources/unifiedroleschedulebase.md)|
-|id|Cadeia de caracteres|O identificador exclusivo para unifiedRoleEligibilitySchedule. Chave, não anulada, somente leitura. Herdado [de unifiedRoleScheduleBase](../resources/unifiedroleschedulebase.md)|
-|memberType|Cadeia de caracteres|Tipo de associação da atribuição qualificada. Pode ser `Inherited` , `Direct` ou `Group` .|
+|createdUsing|String|ID do RoleEligibilityScheduleRequest que criou essa agenda. Herdado [de unifiedRoleScheduleBase](../resources/unifiedroleschedulebase.md)|
+|directoryScopeId|String|ID do objeto directory que representa o escopo da atribuição. O escopo de uma atribuição determina o conjunto de recursos para os quais a entidade foi concedida acesso. Os escopos de diretório são escopos compartilhados armazenados no diretório que são compreendidos por vários aplicativos. Os escopos do aplicativo são escopos definidos e compreendidos somente por esse aplicativo. Herdado [de unifiedRoleScheduleBase](../resources/unifiedroleschedulebase.md)|
+|id|String|O identificador exclusivo para unifiedRoleEligibilitySchedule. Chave, não anulada, somente leitura. Herdado [de unifiedRoleScheduleBase](../resources/unifiedroleschedulebase.md)|
+|memberType|String|Tipo de associação da atribuição qualificada. Pode ser `Inherited` , `Direct` ou `Group` .|
 |modifiedDateTime|DateTimeOffset|Última vez que a agenda foi atualizada. Herdado [de unifiedRoleScheduleBase](../resources/unifiedroleschedulebase.md)|
-|principalId|Cadeia de caracteres| Objectid da entidade à qual a atribuição qualificada está sendo concedida. Herdado [de unifiedRoleScheduleBase](../resources/unifiedroleschedulebase.md)|
-|roleDefinitionId|Cadeia de caracteres|ID do unifiedRoleDefinition para a atribuição qualificada. Herdado [de unifiedRoleScheduleBase](../resources/unifiedroleschedulebase.md)|
+|principalId|String| Objectid da entidade à qual a atribuição qualificada está sendo concedida. Herdado [de unifiedRoleScheduleBase](../resources/unifiedroleschedulebase.md)|
+|roleDefinitionId|String|ID do unifiedRoleDefinition para a atribuição qualificada. Herdado [de unifiedRoleScheduleBase](../resources/unifiedroleschedulebase.md)|
 |scheduleInfo|[requestSchedule](../resources/requestschedule.md)|O objeto schedule da solicitação de atribuição de função qualificada.|
-|status|Cadeia de caracteres|Status do `roleEligibilitySchedule` . Pode incluir mensagens relacionadas ao `Provisioned` estado, `Revoked` como , , `Pending Provisioning` e `Pending Approval` . Herdado [de unifiedRoleScheduleBase](../resources/unifiedroleschedulebase.md)|
+|status|String|Status do `roleEligibilitySchedule` . Pode incluir mensagens relacionadas ao `Provisioned` estado, `Revoked` como , , `Pending Provisioning` e `Pending Approval` . Herdado [de unifiedRoleScheduleBase](../resources/unifiedroleschedulebase.md)|
 
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|

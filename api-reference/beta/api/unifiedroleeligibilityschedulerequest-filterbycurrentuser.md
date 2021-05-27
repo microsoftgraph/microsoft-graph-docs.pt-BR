@@ -3,14 +3,14 @@ title: 'unifiedRoleEligibilityScheduleRequest: filterByCurrentUser'
 description: Obter uma lista dos objetos unifiedRoleEligibilityScheduleRequest e suas propriedades filtradas por uma entidade de usuário específica
 author: shauliu
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: c127b7268dddbefbfb80cf2e4d87fa508fb3c966
-ms.sourcegitcommit: c5cc948c764b4daab861aadb390b827f658a9b7f
+ms.openlocfilehash: c86e57ad48e239d6a77b6cf992163bd513bd1c0c
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52299074"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52679509"
 ---
 # <a name="unifiedroleeligibilityschedulerequest-filterbycurrentuser"></a>unifiedRoleEligibilityScheduleRequest: filterByCurrentUser
 Namespace: microsoft.graph
@@ -24,7 +24,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|PrivilegedAccess.ReadWrite.AzureAD|
+|Delegado (conta corporativa ou de estudante)|PrivilegedAccess.ReadWrite.AzureAD|
 |Delegado (conta pessoal da Microsoft)|Sem suporte|
 |Aplicativo|PrivilegedAccess.Read.AzureAD|
 

@@ -4,13 +4,13 @@ description: Recupere as propriedades e as relações de um objeto de ponto de e
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: groups
-author: yyuank
-ms.openlocfilehash: 8b5cc003787b9a389842389d3aabd7c75726c8f5
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+author: Jordanndahl
+ms.openlocfilehash: 8c07e342c295fb4aabad9dbec017c6776284ea1e
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52042643"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52681946"
 ---
 # <a name="get-endpoint"></a>Obter o ponto de extremidade
 
@@ -81,7 +81,7 @@ GET https://graph.microsoft.com/beta/groups/{id}/endpoints/{id}
 
 ### <a name="response"></a>Resposta
 Veja a seguir um exemplo da resposta.
->Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+>Observação: o objeto de resposta exibido aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,

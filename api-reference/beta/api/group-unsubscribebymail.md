@@ -1,16 +1,16 @@
 ---
 title: 'group: unsubscribeByMail'
-description: Chamar esse método desabilitará o usuário atual para receber notificações por email desse grupo sobre novas postagens, eventos e arquivos nesse grupo.
+description: Chamar esse método desabilitará o usuário atual para receber notificações por email para esse grupo sobre novas postagens, eventos e arquivos nesse grupo.
 localization_priority: Normal
-author: yyuank
+author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: a3eb14d62eb9a58087ac830826ec858a68a07bf0
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 9a40ba67f5628be6ef25cc4b484b9c84ad71ebb7
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48964856"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52681260"
 ---
 # <a name="group-unsubscribebymail"></a>group: unsubscribeByMail
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Chamar esse método desabilitará o usuário atual para receber notificações por email desse grupo sobre novas postagens, eventos e arquivos nesse grupo. Apenas grupos do Microsoft 365 são suportados. 
+Chamar esse método desabilitará o usuário atual para receber notificações por email para esse grupo sobre novas postagens, eventos e arquivos nesse grupo. Apenas grupos do Microsoft 365 são suportados. 
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).

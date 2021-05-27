@@ -3,14 +3,14 @@ title: Tipo de recurso unifiedRoleManagementPolicyRule
 description: Um unifiedRoleManagementPolicyRule especifica a regra associada a uma política de gerenciamento de função. É abstrato.
 author: shauliu
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 420ebfca11d2873ad942782fb8e7d97e893b7185
-ms.sourcegitcommit: c5cc948c764b4daab861aadb390b827f658a9b7f
+ms.openlocfilehash: aa0bc719fe4722692b1ff42861cccede7150780d
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52298995"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52682240"
 ---
 # <a name="unifiedrolemanagementpolicyrule-resource-type"></a>Tipo de recurso unifiedRoleManagementPolicyRule
 
@@ -28,7 +28,7 @@ Um unifiedRoleManagementPolicyRule especifica a regra associada a uma política 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Identificador exclusivo da regra.|
+|id|String|Identificador exclusivo da regra.|
 |destino|[unifiedRoleManagementPolicyRuleTarget](../resources/unifiedrolemanagementpolicyruletarget.md)|O destino da regra de política.|
 
 ## <a name="relationships"></a>Relações

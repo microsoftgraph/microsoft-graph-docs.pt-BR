@@ -1,16 +1,16 @@
 ---
 title: 'group: resetUnseenCount'
 description: Redefina a unseenCount de todas as postagens que o usuário atual não viu desde sua última visita.
-author: yyuank
+author: Jordanndahl
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 30c77a39b9332b6a7202857e54769a927b95a906
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 8ca343a5d056f2fa673cc02030b2a94265fa24f1
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48964881"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52681274"
 ---
 # <a name="group-resetunseencount"></a>group: resetUnseenCount
 

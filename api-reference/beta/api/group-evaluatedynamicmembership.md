@@ -1,16 +1,16 @@
 ---
 title: 'group: evaluateDynamicMembership'
 description: Avalie se um usuário ou dispositivo é ou seria membro de um grupo dinâmico.
-author: yyuank
+author: Jordanndahl
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 94594d31c4e7630b91905edb244f616cac1b21ab
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: de8e44a79644bcea5e3c44b214580e16359468e2
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50961866"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52681757"
 ---
 # <a name="group-evaluatedynamicmembership"></a>group: evaluateDynamicMembership
 
@@ -68,7 +68,7 @@ A tabela a seguir lista as propriedades necessárias ao avaliar a associação a
 | Parâmetro | Tipo | Descrição |
 | :-------- | :--- | :---------- |
 | memberId | Coleção de cadeias de caracteres | memberId é a ID do objeto do usuário ou dispositivo a ser avaliado. |
-| membershipRule | Coleção de cadeias de caracteres | A regra usada para avaliação de associação. Se essa propriedade não for fornecida, a regra do grupo existente será avaliada. Se essa propriedade for fornecida, o usuário ou dispositivo será avaliado para possível associação em um grupo com a mesma regra. Para obter mais informações, consulte [Regras de associação dinâmicas para grupos no Azure Active Directory](/azure/active-directory/users-groups-roles/groups-dynamic-membership).|
+| membershipRule | Coleção de cadeias de caracteres | A regra usada para avaliação de associação. Se essa propriedade não for fornecida, a regra do grupo existente será avaliada. Se essa propriedade for fornecida, o usuário ou dispositivo será avaliado para possível associação em um grupo com a mesma regra. Para obter mais informações, consulte [Regras de associação dinâmicas para grupos em Azure Active Directory](/azure/active-directory/users-groups-roles/groups-dynamic-membership).|
 
 ## <a name="response"></a>Resposta
 

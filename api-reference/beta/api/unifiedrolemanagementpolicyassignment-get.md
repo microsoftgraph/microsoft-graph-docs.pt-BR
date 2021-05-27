@@ -3,14 +3,14 @@ title: Obter unifiedRoleManagementPolicyAssignment
 description: Leia as propriedades e as relações de um objeto unifiedRoleManagementPolicyAssignment.
 author: shauliu
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 35c10aceffbdf6ae3d2687e17a3e661a679013b3
-ms.sourcegitcommit: b8b0e88b3ba9a434dc45f5ab640cb46f66fae299
+ms.openlocfilehash: c5efdf8e2890651c8629efb27837ffb1953c1376
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "52474040"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52682303"
 ---
 # <a name="get-unifiedrolemanagementpolicyassignment"></a>Obter unifiedRoleManagementPolicyAssignment
 Namespace: microsoft.graph
@@ -24,7 +24,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|PrivilegedAccess.ReadWrite.AzureAD|
+|Delegado (conta corporativa ou de estudante)|PrivilegedAccess.ReadWrite.AzureAD|
 |Delegado (conta pessoal da Microsoft)|Sem suporte|
 |Aplicativo|PrivilegedAccess.Read.AzureAD|
 

@@ -3,14 +3,14 @@ title: Listar unifiedRoleAssignmentScheduleRequests
 description: Obter uma lista dos objetos unifiedRoleAssignmentScheduleRequest e suas propriedades.
 author: shauliu
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 46dfdb8b1b23fc505fabe0f20629ff6bd48142a3
-ms.sourcegitcommit: b8b0e88b3ba9a434dc45f5ab640cb46f66fae299
+ms.openlocfilehash: eb84749f882244d7aa3d85f5768a0bf487fed3b6
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "52474551"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52680434"
 ---
 # <a name="list-unifiedroleassignmentschedulerequests"></a>Listar unifiedRoleAssignmentScheduleRequests
 
@@ -26,7 +26,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 | :------------------------------------- | :------------------------------------------ |
-| Delegada (conta corporativa ou de estudante)     | PrivilegedAccess.ReadWrite.AzureAD          |
+| Delegado (conta corporativa ou de estudante)     | PrivilegedAccess.ReadWrite.AzureAD          |
 | Delegado (conta pessoal da Microsoft) | Sem suporte                               |
 | Aplicativo                            | PrivilegedAccess.Read.AzureAD               |
 

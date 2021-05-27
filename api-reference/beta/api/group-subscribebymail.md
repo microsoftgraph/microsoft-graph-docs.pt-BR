@@ -2,15 +2,15 @@
 title: 'group: subscribeByMail'
 description: Chamar esse método permitirá que o usuário atual receba notificações por email para este grupo, sobre novas postagens, eventos e arquivos do grupo.
 localization_priority: Normal
-author: yyuank
+author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: b360957a3dfc653481eda367f7ddea5af04fffc0
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 983f0ca44050f60e28bdb642c65f44cadb39b457
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48964861"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52681267"
 ---
 # <a name="group-subscribebymail"></a>group: subscribeByMail
 

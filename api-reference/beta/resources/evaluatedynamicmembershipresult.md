@@ -2,15 +2,15 @@
 title: Tipo de recurso evaluateDynamicMembershipResult
 description: Representa o resultado da avaliação de associação.
 localization_priority: Normal
-author: yyuank
+author: Jordanndahl
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: 1df07449605f3b1d48c01b1e352100d534fc9b1d
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 52621ee317183a59da418ecd35309cacc0637ae3
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50129503"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52682639"
 ---
 # <a name="evaluatedynamicmembershipresult-resource-type"></a>Tipo de recurso evaluateDynamicMembershipResult
 
@@ -24,9 +24,9 @@ Representa o resultado da avaliação de associação.
 
 | Propriedade | Tipo | Descrição |
 |:-------- |:---- |:----------- |
-| membershipRule | String | Se uma ID de grupo for fornecida, o valor será a regra de associação para o grupo. Se uma ID de grupo não for fornecida, o valor será a regra de associação que foi fornecida como um parâmetro. Para saber mais, confira [Regras de associação dinâmica para grupos no Azure Active Directory.](/azure/active-directory/users-groups-roles/groups-dynamic-membership) |
+| membershipRule | String | Se uma ID de grupo for fornecida, o valor será a regra de associação para o grupo. Se uma ID de grupo não for fornecida, o valor será a regra de associação fornecida como parâmetro. Para obter mais informações, consulte [Regras de associação dinâmicas para grupos em Azure Active Directory](/azure/active-directory/users-groups-roles/groups-dynamic-membership). |
 | membershipRuleEvaluationDetails | [expressionEvaluationDetails](expressionevaluationdetails.md) | Fornece uma análoga detalhada do resultado da avaliação de associação. |
-| membershipRuleEvaluationResult | Boolean | O valor é `true` se o usuário ou dispositivo for um membro do grupo. O valor também pode ser se uma regra de associação foi fornecida e o usuário ou dispositivo passa na `true` avaliação de regra; caso `false` contrário. |
+| membershipRuleEvaluationResult | Boolean | O valor é `true` se o usuário ou dispositivo for um membro do grupo. O valor também pode ser se uma regra de associação tiver sido fornecida e o usuário ou dispositivo passar na avaliação `true` de regra; caso `false` contrário. |
 
 ## <a name="json-representation"></a>Representação JSON
 

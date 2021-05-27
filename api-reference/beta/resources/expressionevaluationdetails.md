@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso expressionEvaluationDetails
-description: Representa os detalhes da expressão, o resultado e os detalhes da propriedade.
+description: Representa os detalhes, o resultado e a propriedade de expressão.
 localization_priority: Normal
-author: yyuank
+author: Jordanndahl
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: 01cc4aa4bd6de88541d3886efe54e5da71228448
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: a2e2b2620f30234c23753ef743f14e55e29f6f91
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50129485"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52679894"
 ---
 # <a name="expressionevaluationdetails-resource-type"></a>Tipo de recurso expressionEvaluationDetails
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Representa os detalhes da expressão, o resultado e os detalhes da propriedade.
+Representa os detalhes, o resultado e a propriedade de expressão.
 
 ## <a name="properties"></a>Propriedades
 

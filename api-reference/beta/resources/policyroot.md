@@ -3,14 +3,14 @@ title: Tipo de recurso policyRoot
 description: Uma nova associação de propriedades de navegação para unifiedRoleManagementPolicy e unifiedRoleManagementPolicyAssignment para policyRoot.
 author: shauliu
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 85c334c52ab2bb196bcfce24610414a0843f898a
-ms.sourcegitcommit: c5cc948c764b4daab861aadb390b827f658a9b7f
+ms.openlocfilehash: 3827440befd26fb584addd0d6af520a6498c11dd
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52299053"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52680722"
 ---
 # <a name="policyroot-resource-type"></a>Tipo de recurso policyRoot
 

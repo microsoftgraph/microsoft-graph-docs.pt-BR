@@ -2,15 +2,15 @@
 title: Listar grupos
 description: Liste todos os grupos disponíveis em uma organização, incluindo, entre outros, os grupos do Microsoft 365.
 localization_priority: Priority
-author: yyuank
+author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 753aad2f2b8de13986ffb713c4a28a5680216e89
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 40596004e74fd212debe420d2b2b419866d342bb
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52041320"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52681421"
 ---
 # <a name="list-groups"></a>Listar grupos
 
@@ -108,7 +108,7 @@ GET https://graph.microsoft.com/beta/groups
 #### <a name="response"></a>Resposta
 
 Este é um exemplo de resposta.
->**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades padrão são retornadas para cada grupo em uma chamada real.
+>**Observação:** o objeto de resposta mostrado aqui pode ser reduzido para facilitar a leitura. Todas as propriedades padrão são retornadas para cada grupo em uma chamada real.
 
 <!-- {
   "blockType": "response",

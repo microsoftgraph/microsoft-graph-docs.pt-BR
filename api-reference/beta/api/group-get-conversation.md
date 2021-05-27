@@ -1,16 +1,16 @@
 ---
 title: Obter conversation
 description: Obter um objeto conversation.
-author: yyuank
+author: Jordanndahl
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: b080d4a03da4b0d7dcb9ee1d3eb100715bf3d1af
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: ad4df01c2c0518d053145a427c9a79ad983d9972
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52041915"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52681750"
 ---
 # <a name="get-conversation"></a>Obter conversa
 

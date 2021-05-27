@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmcla
 ms.prod: identity-and-sign-in
 doc_type: conceptualPageType
-ms.openlocfilehash: f9ed7f29b3a6c2afd945383f64b539370047a446
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 35d3beecb26a5ae4455502ed0535c959cf7f502e
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52050686"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52682128"
 ---
 # <a name="azure-ad-authentication-methods-policies-api-overview"></a>Visão geral das políticas de políticas de autenticação do Azure AD
 
@@ -24,6 +24,7 @@ As APIs de políticas de método de autenticação são usadas para gerenciar co
 
 * Defina os tipos de chaves de segurança FIDO2 que podem ser usadas no locatário do Azure AD.
 * Defina os usuários ou grupos de usuários que têm permissão para usar chaves de segurança FIDO2 ou senhas Telefone entrar no Azure AD.
+* Defina os usuários ou grupos de usuários que devem ser lembrados para configurar o Microsoft Authenticator para MFA usando notificações por push.
 
 ## <a name="what-authentication-methods-policies-can-be-managed-in-microsoft-graph"></a>Quais políticas de métodos de autenticação podem ser gerenciadas no Microsoft Graph?
 
@@ -35,6 +36,11 @@ As APIs de políticas de método de autenticação são usadas para gerenciar co
 |[emailauthenticationmethodconfiguration](emailauthenticationmethodconfiguration.md)|Definir usuários que podem usar o OTP de email no locatário do Azure AD.|
 |[passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration](passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration.md) (preterido)|Defina os usuários que podem usar a senha Telefone entrar para entrar no Azure AD.|
 |[temporaryaccesspassauthenticationmethodconfiguration](temporaryaccesspassauthenticationmethodconfiguration.md)|Defina os usuários que podem usar o Passe de Acesso Temporário para entrar no Azure AD.|
+
+## <a name="policies-available-to-push-users-to-set-up-authentication-methods"></a>Políticas disponíveis para pressionar os usuários a configurar métodos de autenticação:
+|Política       | Descrição |
+|:---------------------------|:------------|
+|[authenticationMethodsRegistrationCampaign](authenticationmethodsregistrationcampaign.md)| Defina os usuários que devem ser lembrados para configurar um método de autenticação (somente com suporte para o Microsoft Authenticator).|
 
 ## <a name="next-steps"></a>Próximas etapas
 

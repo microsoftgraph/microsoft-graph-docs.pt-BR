@@ -2,15 +2,15 @@
 title: Obter organizationalBrandingProperties
 description: Recupere as propriedades e as relações de um objeto organizationalBrandingProperties.
 localization_priority: Normal
-author: almars
+author: AlexanderMars
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 53f6ed90959c2559a18754bd4c5bd4bb25ca5210
-ms.sourcegitcommit: c5cc948c764b4daab861aadb390b827f658a9b7f
+ms.openlocfilehash: a74f88db57ae5b47eb75b2c3e03281148f1a9ace
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52298233"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52680847"
 ---
 # <a name="get-organizationalbrandingproperties"></a>Obter organizationalBrandingProperties
 
@@ -24,8 +24,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegada (conta corporativa ou de estudante)     | Organization.Read.All, User.Read, User.Read.All, User.ReadBasic.All |
-| Delegada (conta pessoal da Microsoft) | Sem suporte. |
+| Delegado (conta corporativa ou de estudante)     | Organization.Read.All, User.Read, User.Read.All, User.ReadBasic.All |
+| Delegado (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo                            | Sem suporte. |
 
 ## <a name="http-request"></a>Solicitação HTTP

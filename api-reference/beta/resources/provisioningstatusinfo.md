@@ -3,14 +3,14 @@ title: Tipo de recurso provisioningStatusInfo
 description: Descreve o status do evento de resumo de provisionamento.
 localization_priority: Normal
 author: ArvindHarinder1
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 669201b5527160da6b903614523d633a8c11cb1d
-ms.sourcegitcommit: 34891a1c601976166958be1aa04bab5936592b44
+ms.openlocfilehash: 7ab2a67662f6e03fd7f967757a7de7ec92480826
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52232902"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52682058"
 ---
 # <a name="provisioningstatusinfo-resource-type"></a>Tipo de recurso provisioningStatusInfo
 

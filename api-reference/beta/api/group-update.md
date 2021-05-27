@@ -1,16 +1,16 @@
 ---
 title: Atualizar grupo
 description: Atualize as propriedades de um [objeto group.](../resources/group.md)
-author: yyuank
+author: Jordanndahl
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 51a34d50801914dcc3e1e10c1813c25543880c0b
-ms.sourcegitcommit: 2a35434fabc76672e21bfc3ed5a1d28f9f3b66bc
+ms.openlocfilehash: 5a006e25737abc2bc30b63e029991e8203ff47e0
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52240753"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52681239"
 ---
 # <a name="update-group"></a>Atualizar grupo
 

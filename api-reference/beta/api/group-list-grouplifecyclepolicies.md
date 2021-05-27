@@ -1,16 +1,16 @@
 ---
 title: Listar groupLifecyclePolicies
 description: Recupera uma lista de objetos groupLifecyclePolicy à qual um grupo pertence.
-author: yyuank
+author: Jordanndahl
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 1e62c8062797c237e00612e547683be7f276c49e
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: ce847b566a7857399b5fca7fef96bffe110c2183
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52041558"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52681554"
 ---
 # <a name="list-grouplifecyclepolicies"></a>Listar groupLifecyclePolicies
 
@@ -80,7 +80,7 @@ GET https://graph.microsoft.com/beta/groups/{id}/groupLifecyclePolicies
 
 ##### <a name="response"></a>Resposta
 
-Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+Observação: o objeto de resposta exibido aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,

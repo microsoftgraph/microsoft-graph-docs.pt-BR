@@ -1,16 +1,16 @@
 ---
-title: Excluir grupo-API do Microsoft Graph
+title: Excluir grupo - API Graph Microsoft
 description: Excluir um recurso de grupo.
-author: yyuank
+author: Jordanndahl
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 318cd74367ec47b3d7a8b4a1abbef8556d30b496
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 62750cd92071b5a14496dc0ea6a3cecb83ca338b
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48965339"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52681785"
 ---
 # <a name="delete-group"></a>Excluir grupo
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 Exclui um grupo.  
 
-Quando excluídos, os grupos do Microsoft 365 são movidos para um contêiner temporário e podem ser restaurados dentro de 30 dias.  Após esse período, elas serão permanentemente excluídos.  Para saber mais, confira [deletedItems](../resources/directory.md).  Isso se aplica apenas aos grupos do Microsoft 365.
+Quando excluídos, Microsoft 365 grupos são movidos para um contêiner temporário e podem ser restaurados dentro de 30 dias.  Após esse período, elas serão permanentemente excluídos.  Para saber mais, confira [deletedItems](../resources/directory.md).  Isso se aplica somente Microsoft 365 grupos.
 
 ## <a name="permissions"></a>Permissões
 

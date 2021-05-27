@@ -5,12 +5,12 @@ doc_type: enumPageType
 localization_priority: Normal
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
-ms.openlocfilehash: add460d4f88d80c6d318a5c8c8c6d1171fa9cf31
-ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
+ms.openlocfilehash: abc86450938a979a082c9dd6792ce8fba4af17f2
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52547215"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52682632"
 ---
 # <a name="enum-values"></a>Valores denum
 
@@ -76,7 +76,7 @@ Namespace: microsoft.graph
 |Inteiro|
 |Referência|
 |Binário|
-|Booliano|
+|Boolean|
 |DateTime|
 
 ### <a name="mutability-values"></a>valores de mutabilidade
@@ -810,7 +810,7 @@ Namespace: microsoft.graph
 |Member|
 |:---|
 |event|
-|message|
+|mensagem|
 |driveItem|
 |externalItem|
 |site|
@@ -1592,6 +1592,15 @@ Valores possíveis para tipos de conta de usuário (associação ao grupo), por 
 |hidden|
 |unknownFutureValue|
 
+### <a name="advancedconfigstate-values"></a>valores advancedConfigState 
+
+|Member|
+|:---|
+|Padrão.|
+|habilitadas|
+|desabilitadas|
+|unknownFutureValue|
+
 ### <a name="referenceattachmentpermission-values"></a>referenceAttachmentPermission values
 
 |Member|
@@ -1682,7 +1691,7 @@ Valores possíveis para tipos de conta de usuário (associação ao grupo), por 
 
 |Member|
 |:---|
-|message|
+|mensagem|
 
 ### <a name="chatmessageimportance-values"></a>valores chatMessageImportance
 
@@ -1758,7 +1767,7 @@ Valores possíveis para tipos de conta de usuário (associação ao grupo), por 
 | Member       |
 |:--------------|
 |event|
-|message|
+|mensagem|
 |driveItem|
 |externalFile|
 |externalItem|

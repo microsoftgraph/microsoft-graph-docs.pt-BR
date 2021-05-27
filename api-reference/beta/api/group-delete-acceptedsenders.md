@@ -1,16 +1,16 @@
 ---
 title: Remover acceptedSender
-description: 'Remover um usuário ou grupo da lista de remetentes aceitos. '
-author: yyuank
+description: 'Remova um usuário ou grupo da lista de envios aceitos. '
+author: Jordanndahl
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: fe19bb8409d1780d47caaf308f68638d5846e833
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f06e44853c7b78e50ff41a2569f4509ee232b6a3
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47990911"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52681866"
 ---
 # <a name="remove-acceptedsender"></a>Remover acceptedSender
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Remover um usuário ou grupo da lista de remetentes aceitos do grupo especificado. 
+Remova um usuário ou grupo da lista de envios aceitos do grupo especificado. 
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -47,7 +47,7 @@ Não forneça um corpo de solicitação para esse método.
 Se bem-sucedido, este método retorna um código de resposta `204 No Content`. Não retorna nada no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
-### <a name="example-1-remove-a-user-from-the-accepted-senders-list-for-the-group"></a>Exemplo 1: remover um usuário da lista de remetentes aceitos do grupo.
+### <a name="example-1-remove-a-user-from-the-accepted-senders-list-for-the-group"></a>Exemplo 1: Remover um usuário da lista de envios aceitos para o grupo.
 #### <a name="request"></a>Solicitação
 
 <!-- {
@@ -70,7 +70,7 @@ Este é um exemplo de resposta.
 HTTP/1.1 204 No Content
 ```
 
-### <a name="example-2-remove-a-group-from-the-accepted-senders-list-for-the-group"></a>Exemplo 2: remover um grupo da lista de remetentes aceitos do grupo.
+### <a name="example-2-remove-a-group-from-the-accepted-senders-list-for-the-group"></a>Exemplo 2: Remover um grupo da lista de envios aceitos para o grupo.
 #### <a name="request"></a>Solicitação
 
 <!-- {

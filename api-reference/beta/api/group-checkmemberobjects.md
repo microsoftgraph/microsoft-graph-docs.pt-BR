@@ -2,15 +2,15 @@
 title: 'group: checkMemberObjects'
 description: Verifique se há associação em uma lista de grupos, funções de diretório ou unidades administrativas para o objeto de grupo especificado.
 localization_priority: Normal
-author: yyuank
+author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 4c5b158faa3152db0143334e4f17fb631b920ecb
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: d3b1f5478feb73e1d005089fa35eac88d27c699b
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52042069"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52681897"
 ---
 # <a name="group-checkmemberobjects"></a>group: checkMemberObjects
 

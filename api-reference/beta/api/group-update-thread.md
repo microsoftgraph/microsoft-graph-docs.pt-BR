@@ -1,20 +1,20 @@
 ---
 title: Atualizar thread de conversas
 description: Atualize um objeto thread.
-author: yyuank
+author: Jordanndahl
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 989bd7a9302ad3d7b5f6845351c882858a7b488a
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 26eab98dc2d734e76905c458c7730d6f6237bc93
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48001950"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52681225"
 ---
 # <a name="update-conversation-thread"></a>Atualizar thread de conversas
 
-Namespace: Microsoft Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

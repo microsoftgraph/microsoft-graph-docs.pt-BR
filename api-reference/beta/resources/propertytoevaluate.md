@@ -1,18 +1,18 @@
 ---
-title: Tipo de recurso propertyToEvaluate
+title: tipo de recurso propertyToEvaluate
 description: Define o nome e o valor da propriedade.
 localization_priority: Normal
-author: yyuank
+author: Jordanndahl
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: 0e04a2e63cb8b3112c4e68c0195c98d0fe404ebf
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 0855d4f06ed7f1be59c57c2989313268638e9859
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50135377"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52682611"
 ---
-# <a name="propertytoevaluate-resource-type"></a>Tipo de recurso propertyToEvaluate
+# <a name="propertytoevaluate-resource-type"></a>tipo de recurso propertyToEvaluate
 
 Namespace: microsoft.graph
 

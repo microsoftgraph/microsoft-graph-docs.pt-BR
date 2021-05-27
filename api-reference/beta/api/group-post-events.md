@@ -1,16 +1,16 @@
 ---
 title: Criar evento
 description: Use esta API para criar um novo evento.
-author: yyuank
+author: Jordanndahl
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 7298cd8d0e9ecdb5773f524f248fef85d0a0a540
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: b7d76ce9f0d6c4f444d3b5f31797234b7146847a
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52041222"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52681393"
 ---
 # <a name="create-event"></a>Criar evento
 

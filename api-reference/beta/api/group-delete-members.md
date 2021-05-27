@@ -2,15 +2,15 @@
 title: Remover membro
 description: Use essa API para remover um membro de um grupo Microsoft 365, um grupo de segurança ou um grupo de segurança habilitado para email por meio da propriedade de navegação **de** membros. É possível remover usuários ou outros grupos.
 localization_priority: Normal
-author: yyuank
+author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: e0ac3a56b8fb49ef446190d1751faee2899e2b31
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 81f69fc596dd8379d34e516c13d67698282f8bb0
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52041992"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52681813"
 ---
 # <a name="remove-member"></a>Remover membro
 

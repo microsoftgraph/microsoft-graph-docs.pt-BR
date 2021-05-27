@@ -3,14 +3,14 @@ title: Obter unifiedRoleAssignmentScheduleRequest
 description: Leia as propriedades e as relações de um objeto unifiedRoleAssignmentScheduleRequest.
 author: shauliu
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 529f7af1db9fb8d37cb713d41cbe1afe5f6590c0
-ms.sourcegitcommit: b8b0e88b3ba9a434dc45f5ab640cb46f66fae299
+ms.openlocfilehash: b784fb83615975e2e46e983c26f088fe08dc2c8d
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "52475195"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52680436"
 ---
 # <a name="get-unifiedroleassignmentschedulerequest"></a>Obter unifiedRoleAssignmentScheduleRequest
 Namespace: microsoft.graph
@@ -24,7 +24,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|PrivilegedAccess.ReadWrite.AzureAD|
+|Delegado (conta corporativa ou de estudante)|PrivilegedAccess.ReadWrite.AzureAD|
 |Delegado (conta pessoal da Microsoft)|Sem suporte|
 |Aplicativo|PrivilegedAccess.Read.AzureAD|
 

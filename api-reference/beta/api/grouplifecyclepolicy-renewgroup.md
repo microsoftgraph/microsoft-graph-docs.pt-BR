@@ -1,18 +1,18 @@
 ---
-title: 'groupLifecyclePolicy: renovar'
+title: 'groupLifecyclePolicy: renewGroup'
 description: Renovar a expiração de um grupo. Após renovar um grupo, o período de validade é estendido de acordo com o número de dias definido na política.
 localization_priority: Normal
-author: yyuank
+author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 009186a210b29b541b7ee7eff8ddbbdcb397827d
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: be7f1222933b5923b475d55c0b7c6b8a4bcf24aa
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48953587"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52681110"
 ---
-# <a name="grouplifecyclepolicy-renewgroup"></a>groupLifecyclePolicy: renovar
+# <a name="grouplifecyclepolicy-renewgroup"></a>groupLifecyclePolicy: renewGroup
 
 Namespace: microsoft.graph
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 Renovar a expiração de um grupo. Após renovar um grupo, o período de validade é estendido de acordo com o número de dias definido na política.
 
-> **Observação:** Ao chamar o ponto de extremidade v 1.0, use o método [renovar grupo](/graph/api/group-renew?view=graph-rest-1.0) .
+> **Observação:** Ao chamar o ponto de extremidade v1.0, use o [método Renovar grupo.](/graph/api/group-renew?view=graph-rest-1.0&preserve-view=true)
 
 ## <a name="permissions"></a>Permissões
 
@@ -52,7 +52,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro | Tipo | Descrição |
 |:---------------|:--------|:----------|
-|groupId|Guid| A ID do grupo a ser renovado. |
+|groupId|Guid| A id do grupo a ser renovado. |
 
 ## <a name="response"></a>Resposta
 

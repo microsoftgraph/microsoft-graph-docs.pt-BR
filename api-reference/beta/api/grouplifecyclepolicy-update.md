@@ -1,16 +1,16 @@
 ---
 title: Atualizar groupLifecyclePolicy
 description: Atualiza as propriedades de um objeto do tipo de recurso groupLifecyclePolicy.
-author: yyuank
+author: Jordanndahl
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: e676a2e56389e2898ae9be11ddba5b3f5dc4545f
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 0ea2b37376943eb84543411436e86710ddec61b2
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52041054"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52681106"
 ---
 # <a name="update-grouplifecyclepolicy"></a>Atualizar groupLifecyclePolicy
 
@@ -95,7 +95,7 @@ Content-length: 151
 ---
 
 ##### <a name="response"></a>Resposta
-Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade. 
+Observação: o objeto de resposta exibido aqui pode ser encurtado para legibilidade. 
 <!-- {
   "blockType": "response",
   "truncated": true,

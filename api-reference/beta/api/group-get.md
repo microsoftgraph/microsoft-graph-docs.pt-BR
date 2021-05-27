@@ -1,16 +1,16 @@
 ---
 title: Obter grupo
 description: Obtenha as propriedades e os relacionamentos de um objeto de grupo.
-author: yyuank
+author: Jordanndahl
 localization_priority: Priority
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 8578083aecaeb34f838bcffad80be4e4c742fe2f
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 344f1ed4ed71fe038dd66403c7b8732829fb8c0d
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50961804"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52681676"
 ---
 # <a name="get-group"></a>Obter grupo
 
@@ -91,7 +91,7 @@ GET https://graph.microsoft.com/beta/groups/45b7d2e7-b882-4a80-ba97-10b7a63b8fa4
 
 
 #### <a name="response"></a>Resposta
-Este é um exemplo de resposta. Ele inclui apenas as propriedades padrão.
+Veja a seguir o exemplo de uma resposta. Ela inclui apenas as propriedades solicitadas.
 
 >**Observação:** O objeto de resposta mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades padrão serão retornadas em uma chamada real.
 <!-- {

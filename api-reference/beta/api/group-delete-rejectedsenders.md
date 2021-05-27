@@ -1,16 +1,16 @@
 ---
 title: Remover rejectedSender
-description: Remover um usuário ou grupo da lista de remetentes rejeitados.
-author: yyuank
+description: Remova um usuário ou grupo da lista de envios rejeitados.
+author: Jordanndahl
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 481961a8afb7f4d07dbbc6d70d4f8feaf7bbc051
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 14bdcef8d41d204e3c3ae6f3de08a3d1cc53a5ff
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48965360"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52681824"
 ---
 # <a name="remove-rejectedsender"></a>Remover rejectedSender
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Remover um usuário ou grupo da lista de remetentes rejeitados do grupo especificado.
+Remova um usuário ou grupo da lista de envios rejeitados do grupo especificado.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -48,7 +48,7 @@ Não forneça um corpo de solicitação para esse método.
 Se bem-sucedido, este método retorna um código de resposta `204 No Content`. Não retorna nada no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
-### <a name="example-1-remove-a-user-from-the-rejected-senders-list-of-the-group"></a>Exemplo 1: remover um usuário da lista de remetentes rejeitados do grupo.
+### <a name="example-1-remove-a-user-from-the-rejected-senders-list-of-the-group"></a>Exemplo 1: Remover um usuário da lista rejeitado-senders do grupo.
 #### <a name="request"></a>Solicitação
 
 
@@ -88,7 +88,7 @@ Este é um exemplo de resposta.
 HTTP/1.1 204 No Content
 ```
 
-### <a name="example-2-remove-a-group-from-the-rejected-senders-list-of-the-group"></a>Exemplo 2: remover um grupo da lista de remetentes rejeitados do grupo.
+### <a name="example-2-remove-a-group-from-the-rejected-senders-list-of-the-group"></a>Exemplo 2: Remover um grupo da lista rejeitado-senders do grupo.
 #### <a name="request"></a>Solicitação
 
 # <a name="http"></a>[HTTP](#tab/http)

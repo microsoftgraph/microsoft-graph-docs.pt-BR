@@ -2,15 +2,15 @@
 title: Adicionar proprietário do grupo
 description: Adiciona um usuário aos proprietários do grupo.
 localization_priority: Normal
-author: yyuank
+author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: e33dc95d60e56c0f2796f5eb9c3aa88b343d8634
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 7736c3ae73cc18436387b4d9e90813daadb19957
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52041187"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52681365"
 ---
 # <a name="add-group-owner"></a>Adicionar proprietário do grupo
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Adicione um usuário ou diretor de serviço aos proprietários do grupo. Os proprietários são um conjunto de usuários ou os diretores de serviço que têm permissão para modificar o objeto do grupo.
+Adicione um usuário ou diretor de serviço aos proprietários do grupo. Os proprietários são um conjunto de usuários ou diretores de serviço que têm permissão para modificar o objeto de grupo.
 
 >**Importante:** se você atualizar os proprietários do grupo, e você criou uma equipe para o grupo, poderá levar até duas horas para que os proprietários sejam sincronizados com o Microsoft Teams. Além disso, se você quiser que o proprietário seja capaz de fazer alterações em uma equipe - por exemplo, criando um plano Planner - o proprietário também precisará ser adicionado como um membro do grupo/equipe. 
 
