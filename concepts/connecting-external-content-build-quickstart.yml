@@ -1,8 +1,8 @@
 ### YamlMime:Tutorial
-title: Criar seu primeiro Conector Graph Microsoft personalizado
+title: Criar seu primeiro conector Graph Microsoft personalizado
 metadata:
-  title: Criar seu primeiro aplicativo microsoft Graph dados Conexão dados
-  description: Neste tutorial, você criará seu primeiro Conector de Graph Microsoft personalizado.
+  title: Criar seu primeiro conector Graph Microsoft personalizado
+  description: Neste tutorial, você criará seu primeiro conector Graph Microsoft personalizado.
   audience: Developer
   level: Beginner
   displayType: one-column
@@ -11,14 +11,14 @@ metadata:
   ms.topic: tutorial
   ms.custom: scenarios:getting-started, languages:.NET Core, C
   ms.prod: search
-  ms.openlocfilehash: b75fc0c033beed3767c590d5f9fac99ba6effd91
-  ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+  ms.openlocfilehash: 1c5ee6e10ecacb2e55e8dfe46c52aab2d8a2be09
+  ms.sourcegitcommit: 4602b5e2e74df6a0f77cf1c8b2a7f70fe86f262f
   ms.translationtype: MT
   ms.contentlocale: pt-BR
   ms.lasthandoff: 05/27/2021
-  ms.locfileid: "52682646"
+  ms.locfileid: "52689681"
 items:
-- title: Criar seu primeiro Conector Graph Microsoft personalizado
+- title: Criar seu primeiro conector Graph Microsoft personalizado
   durationInMinutes: 10
   content: >
     [!INCLUDE [](connecting-external-content-build-quickstart-01-intro.md)]
