@@ -2,15 +2,15 @@
 title: 'group: removeFavorite'
 description: Remover o grupo da lista de grupos de favoritos do usuário atual. Apenas grupos do Microsoft 365 são suportados.
 localization_priority: Normal
-author: yyuank
+author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: c06632e268463e3fadf0df70703c04bfc31a8af9
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: cc09c1568bbcea4936862ee298706298a8c6ad5c
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48964912"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52681281"
 ---
 # <a name="group-removefavorite"></a>group: removeFavorite
 

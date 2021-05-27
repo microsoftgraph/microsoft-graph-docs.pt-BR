@@ -2,15 +2,15 @@
 title: Listar transitivo de grupo memberOf
 description: Obter grupos e unidades administrativas de que o grupo é membro.
 localization_priority: Normal
-author: yyuank
+author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: a5225c10540c2f142eb25249100e4a49751471ff
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: f2a1daf44989034c02abb780d3d53cdce9c6a166
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52041397"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52681479"
 ---
 # <a name="list-group-transitive-memberof"></a>Listar transitivo de grupo memberOf
 

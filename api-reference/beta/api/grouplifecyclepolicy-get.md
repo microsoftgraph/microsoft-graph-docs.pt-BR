@@ -1,16 +1,16 @@
 ---
 title: Obter groupLifecyclePolicy
 description: Recupera as propriedades e os relacionamentos de um objeto groupLifecyclePolicies.
-author: yyuank
+author: Jordanndahl
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 4ff212ab1486af6046f8874406250a3bd0683625
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: cb3698fef265028afefea0ee4011f96628c6acc3
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52041131"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52681141"
 ---
 # <a name="get-grouplifecyclepolicy"></a>Obter groupLifecyclePolicy
 
@@ -81,7 +81,7 @@ GET https://graph.microsoft.com/beta/groupLifecyclePolicies/{id}
 
 ##### <a name="response"></a>Resposta
 
-Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+Observação: o objeto de resposta exibido aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,

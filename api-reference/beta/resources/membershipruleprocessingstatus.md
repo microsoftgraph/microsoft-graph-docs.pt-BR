@@ -1,39 +1,39 @@
 ---
 title: Tipo de recurso membershipRuleProcessingStatus
-description: Representa o status atual do processamento de grupo dinâmico.
+description: Representa o status atual do processamento dinâmico do grupo.
 localization_priority: Normal
-author: yyuank
+author: Jordanndahl
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: f59f5f89c3aad8312504c62b29a0dbd490a37ac5
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 7c86f044517ad7b808db69364413727c8d76f076
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50128257"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52680994"
 ---
 # <a name="membershipruleprocessingstatus-resource-type"></a>Tipo de recurso membershipRuleProcessingStatus
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Representa o status atual do processamento de grupo dinâmico.
+Representa o status atual do processamento dinâmico do grupo.
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade | Tipo | Descrição |
 |:-------- |:---- |:----------- |
-| status | [membershipRuleProcessingStatusDetails](#membershipruleprocessingstatusdetails-values) | Status atual de um processamento de grupo dinâmico. Os valores possíveis `NotStarted` são: `Running` , , e `Succeeded` `Failed` `UnknownFutureValue` .  <br><br> Obrigatório. Somente leitura.|
-| lastMembershipUpdated | edm. DateTime | Data e hora mais recentes quando a associação de um grupo dinâmico foi atualizada. <br><br> Opcional. Somente leitura.|
-| errorMessage | String | Mensagem de erro detalhada se o processamento de grupo dinâmico encontrou um erro. <br><br> Opcional. Somente leitura.|
+| status | [membershipRuleProcessingStatusDetails](#membershipruleprocessingstatusdetails-values) | Status atual de um processamento dinâmico de grupo. Os valores possíveis são: `NotStarted` , , , e `Running` `Succeeded` `Failed` `UnknownFutureValue` .  <br><br> Obrigatório. Somente leitura.|
+| lastMembershipUpdated | edm. DateTime | Data e hora mais recentes em que a associação de um grupo dinâmico foi atualizada. <br><br> Opcional. Somente leitura.|
+| errorMessage | String | Mensagem de erro detalhada se o processamento dinâmico de grupo ocorreu em um erro. <br><br> Opcional. Somente leitura.|
 
-### <a name="membershipruleprocessingstatusdetails-values"></a>Valores de membershipRuleProcessingStatusDetails
+### <a name="membershipruleprocessingstatusdetails-values"></a>membershipRuleProcessingStatusDetails values
 
 | Member | Descrição |
 |:-------- |:----------- |
-| NotStarted | O grupo foi criado ou atualizado e aguardando processamento.|
+| NotStarted | O grupo foi criado ou atualizado e aguarda processamento.|
 | Em execução | O processamento foi iniciado.|
-| Succeeded | O processamento foi concluído. As alterações incrementais de objeto são processadas permanentemente. |
-| Falhou | O processamento encontrou um erro. Consulte **errorMessage** para obter detalhes. |
+| Succeeded | O processamento foi concluído. As alterações incrementais do objeto são processadas permanentemente. |
+| Falhou | O processamento ocorreu em um erro. Consulte **errorMessage** para obter detalhes. |
 | UnknownFutureValue | Oferece suporte a valores futuros. |
 
 ## <a name="json-representation"></a>Representação JSON

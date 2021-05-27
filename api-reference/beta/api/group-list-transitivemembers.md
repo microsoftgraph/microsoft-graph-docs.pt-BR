@@ -2,15 +2,15 @@
 title: Listar membros transitivos de grupo
 description: Obter uma lista dos membros do grupo.
 localization_priority: Normal
-author: yyuank
+author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 7efa264212a8a6dab89b13916ba2971e226e23f8
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 540f7ffd80512504291240f2c4a94db5670d73c5
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52041362"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52681477"
 ---
 # <a name="list-group-transitive-members"></a>Listar membros transitivos de grupo
 
@@ -214,7 +214,7 @@ Este é um exemplo de solicitação.
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/groups/{id}/transitiveMembers/microsoft.graph.users?$count=true&$orderBy=displayName&$filter=startswith(displayName, 'a')
+GET https://graph.microsoft.com/beta/groups/{id}/transitiveMembers/microsoft.graph.user?$count=true&$orderBy=displayName&$filter=startswith(displayName, 'a')
 ConsistencyLevel: eventual
 ```
 
