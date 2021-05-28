@@ -5,12 +5,12 @@ author: bhartono
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: e96fdce4e22aa1f83337ca9be938b648394808ac
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 042c95cab97e32c0b871f342a082e8bcf8b41c6c
+ms.sourcegitcommit: a9a035e7cf7b500aebe5477c05361552e7c3a7ab
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52047291"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "52696021"
 ---
 # <a name="list-members-of-a-chat"></a>Liste os membros de um bate-papo.
 
@@ -42,7 +42,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /chats/{chat-id}/members
-GET /users/{user-id}/chats/{chat-id}/members
+GET /users/{user-id | user-principal-name}/chats/{chat-id}/members
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais

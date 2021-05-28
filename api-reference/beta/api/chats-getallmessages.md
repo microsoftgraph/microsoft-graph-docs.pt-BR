@@ -5,12 +5,12 @@ author: RamjotSingh
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 12b645943297d34504bb4d4586ecbd8d3e79b7c6
-ms.sourcegitcommit: 16ee16e7fddd662ca42dc5c9352cfb109e31ed1a
+ms.openlocfilehash: 18c6ec164d21c1efab249560f3c866fab5fabeb4
+ms.sourcegitcommit: a9a035e7cf7b500aebe5477c05361552e7c3a7ab
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/03/2021
-ms.locfileid: "51582652"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "52695928"
 ---
 # <a name="chats-getallmessages"></a>chats: getAllMessages
 
@@ -22,7 +22,7 @@ Obtenha todas as mensagens de todos os [chats](../resources/chatmessage.md) de q
 
 ## <a name="permissions"></a>Permissões
 
-As permissões a seguir são necessárias para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
+As seguintes permissões são obrigatórias para chamar esta API. Para saber mais, incluindo como escolher as permissões, consulte [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
@@ -37,7 +37,7 @@ As permissões a seguir são necessárias para chamar esta API. Para saber mais,
 
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /users/{id}/chats/getAllMessages
+GET /users/{id | user-principal-name}/chats/getAllMessages
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
