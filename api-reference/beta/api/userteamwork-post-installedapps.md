@@ -5,22 +5,22 @@ author: clearab
 doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 37591c37f09b07baa88a47f707e0a910a0a7de40
-ms.sourcegitcommit: 59e79cf2693cbb550da3e61eb4f68d9e0f57faf6
+ms.openlocfilehash: 9a39bc198e742f2b5b1b15cbdbf02a96a980c708
+ms.sourcegitcommit: a9a035e7cf7b500aebe5477c05361552e7c3a7ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49607513"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "52696279"
 ---
 # <a name="install-app-for-user"></a>Instalar o aplicativo para o usuário
 
-Namespace: Microsoft Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Instalar um [aplicativo](../resources/teamsapp.md) no escopo pessoal do [usuário](../resources/user.md)especificado.
+Instale um [aplicativo](../resources/teamsapp.md) no escopo pessoal do usuário [especificado.](../resources/user.md)
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -28,12 +28,12 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegada (conta corporativa ou de estudante) | TeamsAppInstallation.ReadWriteSelfForUser, TeamsAppInstallation.ReadWriteForUser |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | TeamsAppInstallation. ReadWriteSelfForUser. All, TeamsAppInstallation. ReadWriteForUser. All |
+|Aplicativo | TeamsAppInstallation.ReadWriteSelfForUser.All, TeamsAppInstallation.ReadWriteForUser.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /users/{user-id}/teamwork/installedApps
+POST /users/{user-id | user-principal-name}/teamwork/installedApps
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -48,7 +48,7 @@ O corpo da solicitação deve conter a ID do aplicativo de catálogo existente a
 
 | Propriedade   | Tipo |Descrição|
 |:---------------|:--------|:----------|
-|teamsApp|String|A ID do aplicativo a ser adicionado.|
+|teamsApp|Cadeia de caracteres|A ID do aplicativo a ser acrescentado.|
 
 ## <a name="response"></a>Resposta
 

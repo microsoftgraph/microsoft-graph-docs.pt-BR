@@ -5,12 +5,12 @@ author: RamjotSingh
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: e72ea6783e37d7018fe4f6b1ff7063ff10f6b835
-ms.sourcegitcommit: 16ee16e7fddd662ca42dc5c9352cfb109e31ed1a
+ms.openlocfilehash: 86aeafca89c7ce491923961a87673b855f088fc5
+ms.sourcegitcommit: a9a035e7cf7b500aebe5477c05361552e7c3a7ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/03/2021
-ms.locfileid: "51582309"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "52696033"
 ---
 # <a name="list-chats"></a>Listar chats
 
@@ -35,7 +35,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/chats
-GET /users/{user-id}/chats
+GET /users/{user-id | user-principal-name}/chats
 GET /chats
 ```
 
@@ -181,7 +181,7 @@ Veja a seguir um exemplo da resposta.
 >
 > Os resultados da associação podem mapear para usuários de locatários diferentes, conforme indicado na resposta, no futuro. O cliente não deve presumir que todos os membros são apenas do locatário atual.
 
->**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+>**Observação:** O objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
   "blockType": "response",
@@ -353,7 +353,7 @@ Veja a seguir um exemplo da resposta.
 > [!NOTE]
 > A ID de afiliação retornada pelo servidor deve ser tratada como cadeias de caracteres opacas. O cliente não deve tentar analisar ou fazer suposições sobre essas IDs do recursos.
 >
-> Os resultados da associação podem ser mapeados para usuários de diferentes locatários, conforme indicado na resposta, no futuro. O cliente não deve presumir que todos os membros são apenas do locatário atual.
+> Os resultados da associação podem ser mapeados para usuários de diferentes locatários, conforme indicado na resposta, no futuro. O cliente não deve presumir que todos os membros sejam apenas do locatário atual.
 
 >**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {

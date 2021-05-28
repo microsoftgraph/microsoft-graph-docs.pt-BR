@@ -1,24 +1,24 @@
 ---
-title: tipo de recurso localizedLabel
-description: Representa o rótulo de um termo no repositório de termos.
+title: Tipo de recurso localizedLabel
+description: Representa o rótulo de um termo no armazenamento de termos.
 author: mohitpcad
 localization_priority: Normal
 ms.prod: Sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: cadad79f6e019a258842fff1be679adf6c85fb3a
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 4d7de3c9567c20659af4c863d2cf1ac248beff6b
+ms.sourcegitcommit: a9a035e7cf7b500aebe5477c05361552e7c3a7ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47973603"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "52696307"
 ---
-# <a name="localizedlabel-resource-type"></a>tipo de recurso localizedLabel
+# <a name="localizedlabel-resource-type"></a>Tipo de recurso localizedLabel
 
-Namespace: Microsoft. Graph. termos
+Namespace: microsoft.graph.termStore
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Representa o rótulo de um [termo] no [repositório]de termos.
+Representa o rótulo de [um termo] no armazenamento de [termos.]
 
 Identifica os rótulos associados a um determinado termo.
 
@@ -26,8 +26,8 @@ Identifica os rótulos associados a um determinado termo.
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |isDefault|Booliano|Indica se o rótulo é o rótulo padrão.|
-|languageTag|String|A marca anguage do rótulo.|
-|nome|String|O nome do rótulo.|
+|languageTag|Cadeia de caracteres|A marca de idioma do rótulo.|
+|nome|Cadeia de caracteres|O nome do rótulo.|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -52,8 +52,8 @@ Veja a seguir uma representação JSON do recurso.
 [microsoft.graph.termStore.term]: termstore-term.md
 [microsoft.graph.termStore.localizedName]: termstore-localizedname.md
 [microsoft.graph.termStore.store]: termstore-store.md
-[terminal]: ../resources/termstore-term.md
-[Guarde]: ../resources/termstore-store.md
+[term]: ../resources/termstore-term.md
+[store]: ../resources/termstore-store.md
 
 
 <!--
@@ -64,7 +64,7 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": "termstorelocalizedlabel",
   "tocBookmarks": {
-    "Resources/termStore.termstorelocalizedlabel": "#"
+    "Resources/termStore.termstorelocalizedlabel&quot;: &quot;#"
   },
   "suppressions": []
 }

@@ -1,18 +1,18 @@
 ---
 title: Defina os comportamentos de grupo do Microsoft 365 e opções de provisionamento
 description: Usando o recurso de grupo no Microsoft Graph, você pode definir comportamentos e recursos de grupo específicos para provisionar ao criar um grupo do Microsoft 365.
-author: yyuank
+author: Jordanndahl
 localization_priority: Priority
-ms.openlocfilehash: 066ef0c65fa0b70fd89fc5dfc4cf14e047f1bc49
-ms.sourcegitcommit: 9a03b719d1316729dd022bf4d268894e91515475
+ms.openlocfilehash: 54e4622a69f33980494962882ac1aa06d07eaec5
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "50034146"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52682177"
 ---
 # <a name="set-microsoft-365-group-behaviors-and-provisioning-options-preview"></a>Definir comportamentos de grupo do Microsoft 365 e opções de provisionamento (visualização)
 
-Usando o recurso de [grupo](/graph/api/resources/group?view=graph-rest-beta) no Microsoft Graph, você pode definir comportamentos e recursos de grupo específicos a serem provisionados ao criar um grupo do Microsoft 365. Dependendo do recurso, alguns também podem ser provisionados na atualização do grupo.
+Usando o recurso de [grupo](/graph/api/resources/group?view=graph-rest-beta&preserve-view=true) no Microsoft Graph, você pode definir comportamentos e recursos de grupo específicos a serem provisionados ao criar um grupo do Microsoft 365. Dependendo do recurso, alguns também podem ser provisionados na atualização do grupo.
 
 ### <a name="configuring-and-provisioning-groups"></a>Configurando e provisionando grupos
 
@@ -21,7 +21,7 @@ O recurso **grupo** expõe duas propriedades, **resourceBehaviorOptions** e **re
 > [!NOTE]
 > As propriedades **resourceBehaviorOptions** e **resourceProvisioningOptions** estão disponíveis atualmente apenas no ponto de extremidade beta do Microsoft Graph. Não os use em aplicativos de produção, pois estão sujeitos a alterações sem aviso prévio.
 
-**resourceBehaviorOptions** é uma coleção de cadeia de caracteres que especifica comportamentos de grupo para um grupo do Microsoft 365. Esses comportamentos podem ser definidos apenas na [criação do grupo](/graph/api/group-post-groups?view=graph-rest-beta) (`POST`).
+**resourceBehaviorOptions** é uma coleção de cadeia de caracteres que especifica comportamentos de grupo para um grupo do Microsoft 365. Esses comportamentos podem ser definidos apenas na [criação do grupo](/graph/api/group-post-groups?view=graph-rest-beta&preserve-view=true) (`POST`).
 
 | Valores com suporte para resourceBehaviorOptions   |Descrição|Padrão se não for definido|
 |:---------------|:--------|:-----------|
@@ -34,7 +34,7 @@ O recurso **grupo** expõe duas propriedades, **resourceBehaviorOptions** e **re
 
 | Valores com suporte para resourceProvisioningOptions   |Descrição| Padrão se não for definido |
 |:---------------|:--------|:------------|
-| Teams|Provisione este grupo como uma equipe no Microsoft Teams. Além disso, esse valor pode ser adicionado à coleção de cadeia de caracteres **resourceProvisioningOptions** na [atualização do grupo](/graph/api/group-update?view=graph-rest-beta) por meio de uma operação `PATCH`, a fim de converter um grupo existente do Microsoft 365 em uma equipe.| O grupo é um grupo normal do Microsoft 365 sem recursos do Teams.|
+| Teams|Provisione este grupo como uma equipe no Microsoft Teams. Além disso, esse valor pode ser adicionado à coleção de cadeias de caracteres do **resourceProvisioningOptions** em uma [atualização de grupo](/graph/api/group-update?view=graph-rest-beta&preserve-view=true) por meio de uma `PATCH` operação, para converter um grupo existente do Microsoft 365 em uma equipe.| O grupo é um grupo normal do Microsoft 365 sem recursos do Teams.|
 
 
 ## <a name="see-also"></a>Confira também

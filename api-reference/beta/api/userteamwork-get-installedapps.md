@@ -5,12 +5,12 @@ author: AkJo
 doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 769167da518bcd484eb1bdfdd1505ee1537e313b
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 633d1389e4a934e93dee4b837b3b73da2862217b
+ms.sourcegitcommit: a9a035e7cf7b500aebe5477c05361552e7c3a7ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52052562"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "52696300"
 ---
 # <a name="get-installed-app-for-user"></a>Obter aplicativo instalado para o usuário
 
@@ -26,16 +26,16 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | TeamsAppInstallation.ReadForUser, TeamsAppInstallation.ReadWriteSelfForUser, TeamsAppInstallation.ReadWriteForUser |
+|Delegada (conta corporativa ou de estudante) | TeamsAppInstallation.ReadForUser, TeamsAppInstallation.ReadWriteSelfForUser, TeamsAppInstallation.ReadWriteForUser |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Application | TeamsAppInstallation.ReadForUser.All, TeamsAppInstallation.ReadWriteSelfForUser.All, TeamsAppInstallation.ReadWriteForUser.All |
+|Aplicativo | TeamsAppInstallation.ReadForUser.All, TeamsAppInstallation.ReadWriteSelfForUser.All, TeamsAppInstallation.ReadWriteForUser.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /users/{user-id}/teamwork/installedApps/{app-installation-id}
+GET /users/{user-id | user-principal-name}/teamwork/installedApps/{app-installation-id}
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação

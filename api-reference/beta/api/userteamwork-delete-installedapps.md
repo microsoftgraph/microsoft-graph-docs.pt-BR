@@ -5,22 +5,22 @@ author: clearab
 doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 1b0a865aa85e0c3a45b9aa97d4ae5af6896cae50
-ms.sourcegitcommit: 59e79cf2693cbb550da3e61eb4f68d9e0f57faf6
+ms.openlocfilehash: 535bb735d8ff94bf560ddae8468da5b0b05a0581
+ms.sourcegitcommit: a9a035e7cf7b500aebe5477c05361552e7c3a7ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49607214"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "52696321"
 ---
 # <a name="uninstall-app-for-user"></a>Desinstalar o aplicativo para o usuário
 
-Namespace: Microsoft Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Desinstala um [aplicativo](../resources/teamsappinstallation.md) do escopo pessoal do [usuário](../resources/user.md)especificado.
+Desinstale [um aplicativo](../resources/teamsappinstallation.md) do escopo pessoal do usuário [especificado.](../resources/user.md)
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -28,12 +28,12 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegada (conta corporativa ou de estudante) | TeamsAppInstallation.ReadWriteSelfForUser, TeamsAppInstallation.ReadWriteForUser |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | TeamsAppInstallation. ReadWriteSelfForUser. All, TeamsAppInstallation. ReadWriteForUser. All |
+|Aplicativo | TeamsAppInstallation.ReadWriteSelfForUser.All, TeamsAppInstallation.ReadWriteForUser.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /users/{user-id}/teamwork/installedApps/{app-installation-id}
+DELETE /users/{user-id | user-principal-name}/teamwork/installedApps/{app-installation-id}
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação

@@ -1,26 +1,26 @@
 ---
-title: 'teamsAppInstallation: atualização'
+title: 'teamsAppInstallation: upgrade'
 description: Atualizar uma instalação de aplicativo no escopo pessoal de um usuário
 author: clearab
 doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 2f8ba82c47d1c573d44d91597264aa9fc21bb0e5
-ms.sourcegitcommit: 59e79cf2693cbb550da3e61eb4f68d9e0f57faf6
+ms.openlocfilehash: 1dd9a390203658a2f7f284023a05ed0e166e5839
+ms.sourcegitcommit: a9a035e7cf7b500aebe5477c05361552e7c3a7ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49607514"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "52696272"
 ---
-# <a name="teamsappinstallation-upgrade"></a>teamsAppInstallation: atualização
+# <a name="teamsappinstallation-upgrade"></a>teamsAppInstallation: upgrade
 
-Namespace: Microsoft Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Atualize uma [instalação de aplicativo](../resources/teamsappinstallation.md) no escopo pessoal do [usuário](../resources/user.md) especificado para a versão mais recente do aplicativo.
+Atualize [uma instalação de](../resources/teamsappinstallation.md) aplicativo no escopo pessoal do usuário [especificado](../resources/user.md) para a versão mais recente do aplicativo.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -28,12 +28,12 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegada (conta corporativa ou de estudante) | TeamsAppInstallation.ReadWriteSelfForUser, TeamsAppInstallation.ReadWriteForUser |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | TeamsAppInstallation. ReadWriteSelfForUser. All, TeamsAppInstallation. ReadWriteForUser. All |
+|Aplicativo | TeamsAppInstallation.ReadWriteSelfForUser.All, TeamsAppInstallation.ReadWriteForUser.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /users/{user-id}/teamwork/installedApps/{app-installation-id}/upgrade
+POST /users/{user-id | user-principal-name}/teamwork/installedApps/{app-installation-id}/upgrade
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação

@@ -5,26 +5,26 @@ author: RamjotSingh
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 73acd02d0189a4eb1c26f533e13b31b101a1fa7e
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 938bc52076218c2f31b06f24a5bcdbc9ea2091f2
+ms.sourcegitcommit: a9a035e7cf7b500aebe5477c05361552e7c3a7ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50941931"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "52696286"
 ---
 # <a name="userteamwork-sendactivitynotification"></a>userTeamwork: sendActivityNotification
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Envie uma notificação de feed de atividade para um usuário. Para obter mais detalhes sobre como enviar notificações e os requisitos para fazer isso, consulte [sending Teams activity notifications](/graph/teams-send-activityfeednotifications).
+Envie uma notificação de feed de atividade para um usuário. Para obter mais detalhes sobre o envio de notificações e os requisitos para fazer isso, consulte [o Teams de atividades.](/graph/teams-send-activityfeednotifications)
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|TeamsActivity.Send|
+|Delegada (conta corporativa ou de estudante)|TeamsActivity.Send|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|TeamsActivity.Send|
 
@@ -35,7 +35,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 }
 -->
 ``` http
-POST /users/{userId}/teamwork/sendActivityNotification
+POST /users/{userId | user-principal-name}/teamwork/sendActivityNotification
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -52,10 +52,10 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta ação.
 |Parâmetro|Tipo|Descrição|
 |:---|:---|:---|
 |topic|[teamworkActivityTopic](../resources/teamworkactivitytopic.md)|Tópico da notificação. Especifica o recurso que está sendo falado.|
-|activityType|Cadeia de caracteres|Tipo de atividade. Isso deve ser declarado no manifesto do [aplicativo teams.](/microsoftteams/platform/overview)|
+|activityType|Cadeia de caracteres|Tipo de atividade. Isso deve ser declarado no manifesto Teams [app](/microsoftteams/platform/overview).|
 |chainId|Int64|Opcional. Usado para substituir uma notificação anterior. Use o mesmo `chainId` em solicitações subsequentes para substituir a notificação anterior.|
-|previewText|[itemBody](../resources/itembody.md)|Visualizar texto para a notificação. O Microsoft Teams mostrará apenas os primeiros 150 caracteres.|
-|templateParameters|Coleção [keyValuePair](../resources/keyvaluepair.md)|Valores para variáveis de modelo definidas na entrada de feed de atividade correspondente `activityType` ao manifesto do aplicativo do [Teams.](/microsoftteams/platform/overview)|
+|previewText|[itemBody](../resources/itembody.md)|Visualizar texto para a notificação. Microsoft Teams mostrará apenas os primeiros 150 caracteres.|
+|templateParameters|Coleção [keyValuePair](../resources/keyvaluepair.md)|Valores para variáveis de modelo definidas na entrada de feed de atividade `activityType` correspondentes [Teams manifesto do aplicativo](/microsoftteams/platform/overview).|
 
 Os seguintes recursos são suportados ao definir o `source` valor da propriedade **topic** como `entityUrl` :
 
@@ -130,7 +130,7 @@ HTTP/1.1 204 No Content
 
 ### <a name="example-2-notify-a-user-about-an-event-using-custom-topic"></a>Exemplo 2: Notificar um usuário sobre um evento usando tópico personalizado
 
-Se você deseja vincular um aspecto que não é representado pelo Microsoft Graph ou deseja personalizar o nome, você pode definir a origem do para e passar um valor personalizado `topic` `text` para ele. `webUrl` é necessário ao usar a `topic` fonte como `text` .
+Se você quiser vincular um aspecto que não é representado pela Microsoft Graph, ou quiser personalizar o nome, você pode definir a origem do para e passar um valor personalizado para `topic` `text` ele. `webUrl` é necessário ao usar a `topic` fonte como `text` .
 
 #### <a name="request"></a>Solicitação
 
