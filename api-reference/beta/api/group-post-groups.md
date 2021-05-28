@@ -1,16 +1,16 @@
 ---
 title: Criar grupo
 description: Criar um novo grupo ou grupo de segurança do Microsoft 365.
-author: yyuank
+author: Jordanndahl
 localization_priority: Priority
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 871d990342807a9742ce9125c62e730fec39cd10
-ms.sourcegitcommit: 08d47a31c48fd69ae4fcee26e34fdd65ad1ba69f
+ms.openlocfilehash: 4f4cab940521f1fd68c2c6b850bc4dc4c8dd2686
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51507942"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52681401"
 ---
 # <a name="create-group"></a>Criar grupo
 
@@ -55,7 +55,7 @@ A tabela a seguir mostra as propriedades do recurso [group](../resources/group.m
 
 | Propriedade | Tipo | Descrição|
 |:---------------|:--------|:----------|
-| displayName | string | O nome para exibição no catálogo de endereços do grupo. Obrigatório. |
+| displayName | string | O nome para exibição no catálogo de endereços do grupo. Necessário. |
 | description | string | Uma descrição para o grupo. Opcional. |
 | isAssignableToRole | Booliano | Definir para **true** para habilitar o grupo a ser atribuído uma função do Azure AD. Somente o Administrador com Função Privilegiada e o Administrador Global podem definir o valor dessa propriedade. Opcional. |
 | mailEnabled | booliano | Defina como **true** para grupos habilitados para email. Obrigatório. |
@@ -73,7 +73,7 @@ Como o recurso de **grupo** dá suporte a [extensões](/graph/extensibility-over
 
 > Ao criar um grupo do Microsoft 365 programaticamente com um contexto somente de aplicativo e sem especificar os proprietários, o grupo será criado anonimamente. Se assim o fizer, o site associado do SharePoint Online só será criado automaticamente, após a execução de outras ações manuais.  
 
-Especifique outras propriedades graváveis conforme necessário para o seu grupo. Confira mais informações nas propriedades do recurso [group](../resources/group.md).
+Especifique outras propriedades graváveis conforme necessário para o grupo. Confira mais informações nas propriedades do recurso [group](../resources/group.md).
 
 ### <a name="grouptypes-options"></a>Opções de groupTypes
 
@@ -193,7 +193,7 @@ Content-type: application/json
 
 ### <a name="example-2-create-a-security-group-with-an-owner-and-members"></a>Exemplo 2: criar um grupo de segurança com um proprietário e membros
 
-O exemplo a seguir cria um grupo de segurança com um proprietário e membros especificados. Observe que, no máximo, 20 relações, como proprietários e membros, podem ser adicionadas como parte da criação do grupo. Posteriormente, você pode adicionar mais membros, usando a API [adicionar membro](/graph/api/group-post-members?view=graph-rest-beta&tabs=http) ou o envio em lotes JSON.
+O exemplo a seguir cria um grupo de segurança com um proprietário e membros especificados. Observe que, no máximo, 20 relações, como proprietários e membros, podem ser adicionadas como parte da criação do grupo. Posteriormente, você pode adicionar mais membros, usando a API [adicionar membro](/graph/api/group-post-members?view=graph-rest-beta&preserve-view=true) ou o envio em lotes JSON.
 
 #### <a name="request"></a>Solicitação
 
@@ -329,7 +329,7 @@ Content-Type: application/json
 
 #### <a name="response"></a>Resposta
 
-Este é um exemplo de resposta. Ele inclui apenas propriedades padrão.
+Veja a seguir o exemplo de uma resposta. Ela inclui apenas as propriedades padrão.
 
 <!-- {
   "blockType": "response",

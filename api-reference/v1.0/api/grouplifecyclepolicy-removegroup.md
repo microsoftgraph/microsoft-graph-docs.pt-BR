@@ -1,16 +1,16 @@
 ---
 title: 'groupLifecyclePolicy: removeGroup'
 description: Remove um grupo de uma política de ciclo de vida.
-author: yyuank
+author: Jordanndahl
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: b0ee54109fe69938ad2f9169e3caf35232c9f5d5
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: 069d91dadecacd41133b82ad7dfa07bccd89ae33
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50474474"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52679796"
 ---
 # <a name="grouplifecyclepolicy-removegroup"></a>groupLifecyclePolicy: removeGroup
 
@@ -50,7 +50,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 ## <a name="response"></a>Resposta
 
-Quando é bem-sucedido, este método retorna um código de resposta `200 OK`. Quando o grupo é removido da política, o valor **true** é retornado no corpo da resposta. Caso contrário, um valor **false** é retornado no corpo da resposta.
+Se bem sucedido, este método retorna um código de resposta `200 OK`. Quando o grupo é removido da política, o valor **true** é retornado no corpo da resposta. Caso contrário, um valor **false** é retornado no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 

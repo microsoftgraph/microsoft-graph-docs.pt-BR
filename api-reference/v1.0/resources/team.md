@@ -5,12 +5,12 @@ author: AkJo
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: ca4e3c55c56d6b4a469515dc20a9fbff5cbec36f
-ms.sourcegitcommit: b736af7020db7311f7d28b301752b5669d7badba
+ms.openlocfilehash: d6ebc247ec6868cd32e2ef3790f7542d9eb546fe
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51202090"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52682044"
 ---
 # <a name="team-resource-type"></a>tipo de recurso de equipe
 
@@ -55,10 +55,10 @@ Confira mais informações sobre como trabalhar com grupos e membros em equipes,
 | Propriedade | Tipo | Descrição |
 |:---------------|:--------|:----------|
 |displayName|string| O nome da equipe. |
-|description|string| Uma descrição opcional para a equipe. |
+|description|string| Uma descrição opcional para a equipe. O comprimento máximo é de 1024 caracteres. |
 |classificação|string| Um rótulo opcional. Normalmente descreve a confidencialidade da empresa ou dos dados da equipe. Deve coincidir com um dos conjuntos predefinidos no diretório do locatário. |
 |specialization|[teamSpecialization](teamspecialization.md)| Opcional. Indica se a equipe destina-se a um caso de uso específico.  Cada especialização de equipe tem acesso a comportamentos e experiências exclusivos direcionados ao seu caso de uso. |
-|visibility|[teamVisibilityType](teamvisibilitytype.md)| A visibilidade de um grupo e equipe. O padrão é Público. |
+|visibility|[teamVisibilityType](teamvisibilitytype.md)| A visibilidade de um grupo e equipe. Padrão é Público. |
 |funSettings|[teamFunSettings](teamfunsettings.md) |Configurações que definem o uso de Giphy, memes e figurinhas na equipe.|
 |guestSettings|[teamGuestSettings](teamguestsettings.md) |Configurações que definem se os convidados podem criar, atualizar ou excluir canais na equipe.|
 |internalId | string | Uma ID exclusiva da equipe, que foi usada em alguns locais, como o log de auditoria da [API da Atividade de Gestão do Office 365](/office/office-365-management-api/office-365-management-activity-api-reference). |

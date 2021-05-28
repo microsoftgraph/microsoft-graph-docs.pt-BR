@@ -1,20 +1,20 @@
 ---
 title: Atualizar thread de conversas
 description: Atualize um objeto thread.
-author: yyuank
+author: Jordanndahl
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 3d4ac9ebdbbd4f6a804ac404dcc5e10c18eab355
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 1216771a7955cc9460faeab420b8550150d55b84
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48041971"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52679866"
 ---
 # <a name="update-conversation-thread"></a>Atualizar thread de conversas
 
-Namespace: Microsoft. Graph atualizar um objeto [thread](../resources/conversationthread.md) .
+Namespace: microsoft.graph Atualizar um [objeto thread.](../resources/conversationthread.md)
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).

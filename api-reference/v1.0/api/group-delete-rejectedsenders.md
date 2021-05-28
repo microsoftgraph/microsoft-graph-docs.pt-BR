@@ -1,20 +1,20 @@
 ---
 title: Remover rejectedSender
-description: Remover um usuário ou grupo da lista de remetentes rejeitados.
-author: yyuank
+description: Remova um usuário ou grupo da lista de envios rejeitados.
+author: Jordanndahl
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 0844e05da10dda1888309d90591153b443614915
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 1297f53bce201c17e7ccea5d1b01a7a84066a388
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48094812"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52681071"
 ---
 # <a name="remove-rejectedsender"></a>Remover rejectedSender
 
-Namespace: Microsoft. Graph remover um usuário ou grupo da lista de remetentes rejeitados.
+Namespace: microsoft.graph Remova um usuário ou grupo da lista rejeitado-senders.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).

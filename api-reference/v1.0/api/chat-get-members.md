@@ -5,12 +5,12 @@ author: bhartono
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 22ac153c2ec8886a9811a37722d7ed86d3f12989
-ms.sourcegitcommit: e440d855f1106390d842905d97ceb16f143db2e5
+ms.openlocfilehash: 19dd93d0316e818b16afa2035ab9614f38aa269f
+ms.sourcegitcommit: a9a035e7cf7b500aebe5477c05361552e7c3a7ab
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/29/2021
-ms.locfileid: "52080431"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "52696139"
 ---
 # <a name="get-conversationmember-in-a-chat"></a>Obtenha o conversationMember em um bate-papo.
 
@@ -43,7 +43,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /chats/{chat-id}/members/{membership-id}
-GET /users/{user-id}/chats/{chat-id}/members/{membership-id}
+GET /users/{user-id} | user-principal-name/chats/{chat-id}/members/{membership-id}
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais

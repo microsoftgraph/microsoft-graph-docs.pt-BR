@@ -2,15 +2,15 @@
 title: Remover proprietário
 description: Use essa API para remover um proprietário de um grupo de Microsoft 365, um grupo de segurança ou um grupo de segurança habilitado para email por meio da propriedade de navegação de proprietários.
 localization_priority: Normal
-author: yyuank
+author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 2887284cbd5bdf644c161d790f1cd832a410dae4
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 34a7dcd31642f56d34aacc05082ef57c801e5e6a
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52053094"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52680980"
 ---
 # <a name="remove-owner"></a>Remover proprietário
 

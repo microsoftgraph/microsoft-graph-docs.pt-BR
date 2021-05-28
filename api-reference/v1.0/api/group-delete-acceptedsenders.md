@@ -1,20 +1,20 @@
 ---
 title: Remover acceptedSender
-description: 'Remover um usuário ou grupo da lista de remetentes aceitos. '
-author: yyuank
+description: 'Remova um usuário ou grupo da lista de envios aceitos. '
+author: Jordanndahl
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 1d867f3341ac6316354afa16b713e1961867b7bb
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 659be516dc8ce8ae4fcf8afdd83d6373f1c4862b
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48023335"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52679831"
 ---
 # <a name="remove-acceptedsender"></a>Remover acceptedSender
 
-Namespace: Microsoft. Graph remover um usuário ou grupo da lista de remetentes aceitos. 
+Namespace: microsoft.graph Remova um usuário ou grupo da lista de envios aceitos. 
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).

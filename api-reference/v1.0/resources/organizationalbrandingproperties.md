@@ -2,15 +2,15 @@
 title: Tipo de recurso organizationalBrandingProperties
 description: Contém detalhes da identidade visual da organização.
 localization_priority: Normal
-author: almars
+author: AlexanderMars
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 762d2f40cf841c40ce8d7ca6d46337b46343865a
-ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
+ms.openlocfilehash: 7fb68fb65974e177e3fa55408ee1b90e59d419e9
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52547271"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52682314"
 ---
 # <a name="organizationalbrandingproperties-resource-type"></a>Tipo de recurso organizationalBrandingProperties
 
@@ -31,7 +31,7 @@ As empresas podem adicionar identidade visual diferente com base na localidade. 
 |:-------------|:------------|:------------|
 | [Criar](../api/organizationalbrandingproperties-create.md) | [organizationalBrandingProperties](organizationalbrandingproperties.md) | Criar identidade visual organizacional com o objeto organizationalBrandingProperties. |
 | [Get](../api/organizationalbrandingproperties-get.md) | [organizationalBrandingProperties](organizationalbrandingproperties.md) | Leia propriedades e relações do objeto organizationalBrandingProperties. |
-| [Atualização](../api/organizationalbrandingproperties-update.md) | [organizationalBrandingProperties](organizationalbrandingproperties.md) | Atualizar o objeto organizationalBrandingProperties. |
+| [Atualizar](../api/organizationalbrandingproperties-update.md) | [organizationalBrandingProperties](organizationalbrandingproperties.md) | Atualizar o objeto organizationalBrandingProperties. |
 | [Delete](../api/organizationalbrandingproperties-delete.md) | Nenhum | Exclua o objeto organizationalBrandingProperties. |
 
 ## <a name="properties"></a>Propriedades

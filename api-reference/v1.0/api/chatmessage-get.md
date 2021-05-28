@@ -1,22 +1,22 @@
 ---
 title: Receber chatMessagem em um canal ou chat
-description: Recupere uma única mensagem (sem suas respostas) no canal de uma equipe.
+description: Recupere uma única mensagem (sem suas respostas) em um canal ou chat.
 author: RamjotSingh
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 86da549aeeb72ddae8b974f27f7886480b759a97
-ms.sourcegitcommit: 16ee16e7fddd662ca42dc5c9352cfb109e31ed1a
+ms.openlocfilehash: 883adacbd02bf42c6eabdef9bedb597b1ea7ad3e
+ms.sourcegitcommit: a9a035e7cf7b500aebe5477c05361552e7c3a7ab
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/03/2021
-ms.locfileid: "51582877"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "52695977"
 ---
 # <a name="get-chatmessage-in-a-channel-or-chat"></a>Receber chatMessagem em um canal ou chat
 
 Namespace: microsoft.graph
 
-Recupere uma única [mensagem](../resources/chatmessage.md) ou uma [resposta da mensagem](../resources/chatmessage.md) em um[canal](../resources/channel.md) ou em um [chat](../resources/chat.md).
+Recupere uma única [mensagem](../resources/chatmessage.md) ou uma [resposta de mensagem](../resources/chatmessage.md) em um [canal](../resources/channel.md) ou um [chat](../resources/chat.md).
 
 ## <a name="permissions"></a>Permissões
 
@@ -26,9 +26,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-|Delegado (conta corporativa ou de estudante)| ChannelMessage.Read.All, Group.Read.All, Group.ReadWrite.All |
+|Delegado (conta corporativa ou de estudante)| ChannelMessage.Read.All, Group.Read.All, Group.Read.WriteAll |
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo| ChannelMessage.Read.Group*, ChannelMessage.Read.All, Group.Read.All, Group.ReadWrite.All |
+|Aplicativo| ChannelMessage.Read.Group, ChannelMessage.Read.All, Group.Read.All, Group.ReadWrite.All |
 
 ### <a name="permissions-for-chat"></a>Permissões para o chat
 
@@ -45,18 +45,18 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 ## <a name="http-request"></a>Solicitação HTTP
 
-**Receber mensagens em um canal**
+**Obter mensagens em um canal**
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /teams/{team-id}/channels/{channel-id}/messages/{message-id}
 GET /teams/{team-id}/channels/{channel-id}/messages/{message-id}/replies/{reply-id}
 ```
 
-**Receber mensagens em um chat**
+**Obter mensagens em um chat**
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /chats/{chat-id}/messages/{message-id}
-GET /users/{user-id}/chats/{chat-id}/messages/{message-id}
+GET /users/{user-id | user-principal-name}/chats/{chat-id}/messages/{message-id}
 GET /me/chats/{chat-id}/messages/{message-id}
 ```
 
@@ -77,17 +77,37 @@ Se bem-sucedido, esse método retornará um `200 OK` código de resposta e um ob
 
 ## <a name="examples"></a>Exemplos
 
-### <a name="example-1-get-a-message-in-a-chat"></a>Exemplo 1: receber uma mensagem em um chat.
+### <a name="example-1-get-a-message-in-a-chat"></a>Exemplo 1: obter uma mensagem em um chat.
 #### <a name="request"></a>Solicitação
 Este é um exemplo de solicitação.
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_chatmessagechannel_1"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/chats/19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_97f62344-57dc-409c-88ad-c4af14158ff5@unq.gbl.spaces/messages/1612289992105
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-chatmessagechannel-1-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-chatmessagechannel-1-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-chatmessagechannel-1-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-chatmessagechannel-1-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>Resposta
 O exemplo a seguir mostra a resposta.`chatId` identifica o [chat](../resources/chat.md) que contém essa mensagem.
@@ -139,20 +159,40 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-get-a-message-in-a-channel"></a>Exemplo 2: receber uma mensagem em um canal
+### <a name="example-2-get-a-message-in-a-channel"></a>Exemplo 2: obter uma mensagem em um canal
 #### <a name="request"></a>Solicitação
 Este é um exemplo de solicitação.
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_chatmessagechannel_2"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/teams/fbe2bf47-16c8-47cf-b4a5-4b9b187c508b/channels/19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2/messages/1614618259349
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-chatmessagechannel-2-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-chatmessagechannel-2-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-chatmessagechannel-2-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-chatmessagechannel-2-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>Resposta
-O exemplo a seguir mostra a resposta.`channelIdentity` identifica a [equipe](../resources/team.md) e [canal](../resources/channel.md) que contêm essa mensagem.
+O exemplo a seguir mostra a resposta.`channelIdentity` identifica a [equipe](../resources/team.md) e o [canal](../resources/channel.md) que contêm essa mensagem.
 
 <!-- {
   "blockType": "response",
@@ -204,20 +244,40 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-3-get-reply-to-a-message-in-a-channel"></a>Exemplo 3: receber uma resposta a uma mensagem em um canal.
+### <a name="example-3-get-reply-to-a-message-in-a-channel"></a>Exemplo 3: obter resposta a uma mensagem em um canal
 #### <a name="request"></a>Solicitação
 Este é um exemplo de solicitação.
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_chatmessagechannel_3"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/teams/fbe2bf47-16c8-47cf-b4a5-4b9b187c508b/channels/19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2/messages/1612509044972/replies/1613671348387
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-chatmessagechannel-3-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-chatmessagechannel-3-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-chatmessagechannel-3-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-chatmessagechannel-3-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>Resposta
-O exemplo a seguir mostra a resposta.`replyToId` contém o `id` da mensagem raiz.
+O exemplo a seguir mostra a resposta.`replyToId` contém a `id` da mensagem raiz.
 
 <!-- {
   "blockType": "response",
@@ -274,7 +334,7 @@ Content-type: application/json
 
 - [Listar mensagens em um canal](channel-list-messages.md)
 - [Listar mensagens em um chat](chat-list-messages.md)
-- [Enviar mensagem em um canal ou chat](chatmessage-post.md)
+- [Enviar mensagem em um canal ou um chat](chatmessage-post.md)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

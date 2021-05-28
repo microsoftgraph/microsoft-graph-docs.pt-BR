@@ -1,16 +1,16 @@
 ---
 title: Listar conversas
 description: Recupere a lista de conversas desse grupo.
-author: yyuank
+author: Jordanndahl
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 0cc953819cf1613654f3142a983172167c176ed9
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: fb0088df0f89f52fe68bd55330d0ca71f168e9d6
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52052331"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52682576"
 ---
 # <a name="list-conversations"></a>Listar conversas
 

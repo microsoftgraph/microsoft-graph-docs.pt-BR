@@ -1,16 +1,16 @@
 ---
 title: Lista groupSettingTemplates
 description: Recupere uma lista de objetos groupSettingTemplates disponíveis.
-author: yyuank
+author: Jordanndahl
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 7aa1819bce00f2f76f1192ab82ee7ab6a84b74ad
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 85ec50ce39f1bb98a3566b5e48daeec627dbf751
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52051407"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52679530"
 ---
 # <a name="list-groupsettingtemplates"></a>Lista groupSettingTemplates
 

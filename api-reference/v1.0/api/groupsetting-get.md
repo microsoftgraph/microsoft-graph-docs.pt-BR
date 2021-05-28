@@ -1,16 +1,16 @@
 ---
 title: Obter uma configuração de grupo
 description: Recupere as propriedades de um objeto de configuração de grupo específico.
-author: yyuank
+author: Jordanndahl
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: b7e8d6839606519e3bfe772b14068184d2b1947d
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: b92840fd1a10ab6960886e8d783ee758d5d1e96b
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52051414"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52679775"
 ---
 # <a name="get-a-group-setting"></a>Obter uma configuração de grupo
 

@@ -1,22 +1,22 @@
 ---
 title: Atualizar uma configuração de grupo
 description: Atualize as propriedades de um objeto de configuração de grupo específico.
-author: yyuank
+author: Jordanndahl
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 5433504aec92d8fb96a00857ff4e27c7bfc200c7
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 2a2a504aa8c736df33ef35d3bd131b6329fd499c
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47973397"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52679754"
 ---
 # <a name="update-a-group-setting"></a>Atualizar uma configuração de grupo
 
 Namespace: microsoft.graph
 
-Atualizar as propriedades de um objeto [groupSetting](../resources/groupsetting.md) para definições de [grupo](../resources/group.md) em todo o locatário ou uma configuração de grupo específico.
+Atualize as propriedades de um objeto [](../resources/group.md) [groupSetting](../resources/groupsetting.md) para configurações de grupo em todo o locatário ou uma configuração de grupo específica.
 
 ## <a name="permissions"></a>Permissões
 
@@ -49,7 +49,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 | Propriedade | Tipo | Descrição |
 |:---------------|:--------|:----------|
-| values | coleção [SettingValue](../resources/settingvalue.md) | O conjunto de valores atualizado. Você deve incluir todo o conjunto de coleta. Não é possível atualizar um único conjunto de valores. |
+| values | [coleção settingValue](../resources/settingvalue.md) | O conjunto atualizado de valores. Você deve incluir todo o conjunto de coleções. Não é possível atualizar um único conjunto de valores. |
 
 ## <a name="response"></a>Resposta
 
@@ -59,7 +59,7 @@ Se tiver êxito, este método retornará um código de resposta `204 No Content`
 
 ### <a name="example-1-update-a-tenant-wide-group-setting"></a>Exemplo 1: atualizar uma configuração de grupo em todo o locatário
 
-Neste exemplo, `{id}` é o identificador do objeto groupSetting de todo o locatário.
+Neste exemplo, é o identificador do objeto groupSetting em todo o `{id}` locatário.
 
 #### <a name="request"></a>Solicitação
 
@@ -165,9 +165,9 @@ Content-type: application/json
 HTTP/1.1 204 No Content
 ```
 
-### <a name="example-2-update-a-specific-group-setting"></a>Exemplo 2: atualizar uma configuração de grupo específico
+### <a name="example-2-update-a-specific-group-setting"></a>Exemplo 2: Atualizar uma configuração de grupo específica
 
-Neste exemplo, o primeiro `{id}` na solicitação é o identificador do grupo e o segundo `{id}` é o identificador do objeto groupSetting.
+Neste exemplo, o primeiro na solicitação é o identificador do grupo e o segundo é o identificador do `{id}` `{id}` objeto groupSetting.
 
 #### <a name="request"></a>Solicitação
 

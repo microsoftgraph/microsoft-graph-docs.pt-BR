@@ -2,15 +2,15 @@
 title: 'group: getMemberObjects'
 description: Retorne todos os grupos dos quais este grupo é um membro.
 localization_priority: Normal
-author: yyuank
+author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: cbcdbd4b9daa5c8f882e2d2afba47bd273372a97
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 85e73996acac84ce92308c6f389481cca35842ea
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52053073"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52682583"
 ---
 # <a name="group-getmemberobjects"></a>group: getMemberObjects
 

@@ -2,15 +2,15 @@
 title: 'group: unsubscribeByMail'
 description: 'Chamar esse método impedirá que o usuário atual receba notificações por email para este grupo, sobre novas postagens, eventos e arquivos do grupo. Apenas grupos do Microsoft 365 são suportados. '
 localization_priority: Normal
-author: yyuank
+author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 63727226e9c1306f0c2b5ffd5f468d726305a44b
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 68f2e82ab47476af870c55b78716c174da3b16b1
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48041985"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52682625"
 ---
 # <a name="group-unsubscribebymail"></a>group: unsubscribeByMail
 

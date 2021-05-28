@@ -2,15 +2,15 @@
 title: Listar proprietários
 description: 'Recupere uma lista de proprietários do grupo. Os proprietários são um conjunto de usuários que não são administradores e que têm permissão para alterar o objeto de grupo. '
 localization_priority: Priority
-author: yyuank
+author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 4b447e9f24fecfd2ab89e6d70aec36f17f47907c
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 37991b6dc0e879f88b48657853a79eaa75b1c530
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52048705"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52680630"
 ---
 # <a name="list-owners"></a>Listar proprietários
 

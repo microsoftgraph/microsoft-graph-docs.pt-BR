@@ -1,38 +1,38 @@
 ---
-title: tipo de recurso groupSettingTemplate
-description: Modelos de configuração de grupo representam configurações definidas pelo sistema disponíveis para o locatário.
+title: Tipo de recurso groupSettingTemplate
+description: Os modelos de configuração de grupo representam as configurações definidas pelo sistema disponíveis para o locatário.
 localization_priority: Normal
-author: yyuank
+author: Jordanndahl
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: f103ae27065701951cb7a7881ebaa898d455243c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: a7868538c13b1e386e7aa10dcdf3fed9c03b198f
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48062929"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52680868"
 ---
-# <a name="groupsettingtemplate-resource-type"></a>tipo de recurso groupSettingTemplate
+# <a name="groupsettingtemplate-resource-type"></a>Tipo de recurso groupSettingTemplate
 
 Namespace: microsoft.graph
 
-Modelos de configuração de grupo representam configurações definidas pelo sistema disponíveis para o locatário. [As configurações de grupo](groupsetting.md) podem ser criadas com base no **groupSettingTemplates**disponível e os valores alterados de seus padrões predefinidos. Modelos de configuração de grupo não podem ser criados, atualizados ou excluídos. Essas configurações podem representar configurações de todo o locatário ou podem representar configurações de grupo específicas. Atualmente, os únicos modelos disponíveis se aplicam aos grupos do Microsoft 365 e incluem configurações como se os usuários podem criar grupos ou convidar convidados de fora da organização para se tornarem membros de um grupo.
+Os modelos de configuração de grupo representam as configurações definidas pelo sistema disponíveis para o locatário. [As configurações de grupo](groupsetting.md) podem ser criadas com base no **groupSettingTemplates** disponível e valores alterados de seus padrões predefinidos. Modelos de configuração de grupo não podem ser criados, atualizados ou excluídos. Essas configurações podem representar configurações de todo o locatário ou representar configurações de grupo específicas. Atualmente, os únicos modelos disponíveis se aplicam Microsoft 365 grupos e incluem configurações como se os usuários podem criar grupos ou convidar convidados de fora da organização para se tornarem membros de um grupo.
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 
 | Método | Tipo de retorno | Descrição |
 |:---------------|:--------|:----------|
 |[Obter groupSettingTemplate](../api/groupsettingtemplate-get.md) | [groupSettingTemplate](groupsettingtemplate.md) | Leia as propriedades específicas de um dos objetos groupSettingTemplate definidos pelo sistema. |
-|[Listar groupSettingTemplate](../api/groupsettingtemplate-list.md) | [Coleção de groupSettingTemplate](groupsettingtemplate.md) |Lista todos os objetos groupSettingTemplate definidos pelo sistema.|
+|[Listar groupSettingTemplate](../api/groupsettingtemplate-list.md) | [Coleção de groupSettingTemplate](groupsettingtemplate.md) |Listar todos os objetos groupSettingTemplate definidos pelo sistema.|
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade | Tipo | Descrição |
 |:---------------|:--------|:----------|
-|description|String| Descrição do modelo. |
-|displayName|String| Nome para exibição do modelo. |
-|id|String| Identificador exclusivo do modelo. Somente leitura.|
-|values|coleção [settingTemplateValue](settingtemplatevalue.md)| Coleção de settingTemplateValues que lista o conjunto de configurações disponíveis, padrões e tipos que compõem esse modelo. |
+|description|Cadeia de caracteres| Descrição do modelo. |
+|displayName|Cadeia de caracteres| Nome de exibição do modelo. |
+|id|Cadeia de caracteres| Identificador exclusivo do modelo. Somente leitura.|
+|values|[Coleção settingTemplateValue](settingtemplatevalue.md)| Coleção de settingTemplateValues que lista o conjunto de configurações, padrões e tipos disponíveis que comem esse modelo. |
 
 ## <a name="relationships"></a>Relações
 

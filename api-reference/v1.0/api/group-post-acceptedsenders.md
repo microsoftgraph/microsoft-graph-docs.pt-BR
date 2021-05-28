@@ -1,20 +1,20 @@
 ---
 title: Criar acceptedSender
 description: Adicione um novo usuário ou grupo à lista acceptedSender.
-author: yyuank
+author: Jordanndahl
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: b3f55e75d84a00622a0bc1d9fcda4e2aa2ddf535
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 61d25b199599b6a48ec4498b13898f29d8505d7e
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48057532"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52681981"
 ---
 # <a name="create-acceptedsender"></a>Criar acceptedSender
 
-Namespace: Microsoft. Graph adicione um novo usuário ou grupo à lista acceptedSender.
+Namespace: microsoft.graph Adicione um novo usuário ou grupo à lista acceptedSender.
 
 Especifique o usuário ou grupo em `@odata.id` no corpo da solicitação. Os usuários na lista de remetentes aceitos podem postar em conversas do grupo. Certifique-se de não especificar o mesmo usuário ou grupo nas listas de remetentes aceitos e rejeitados, caso contrário você receberá um erro.
 

@@ -4,12 +4,12 @@ description: O Microsoft Graph é uma API Web RESTful que permite que você aces
 author: jackson-woods
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 5a890588fe4b379cf27360db98c4118d0e3ca7d5
-ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
+ms.openlocfilehash: e5a70d69d872d57963f658e7ff2d9e5fa088d3e9
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48288809"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52679537"
 ---
 # <a name="use-the-microsoft-graph-api"></a>Usar a API do Microsoft Graph
 
@@ -19,7 +19,7 @@ O Microsoft Graph é uma API Web RESTful que permite que você acesse os recurso
 
 ## <a name="odata-namespace"></a>Espaço de nomes (namespace) OData
 
-A API do Microsoft Graph define a maioria dos seus recursos, métodos e enumerações no namespace OData, `microsoft.graph`nos [metadados do Microsoft Graph](traverse-the-graph.md#microsoft-graph-api-metadata). Um pequeno número de conjuntos de APIs são definidos em seus subnamespaces, como a [API de registros de chamada](/graph/api/resources/callrecords-api-overview?view=graph-rest-beta), que define recursos como [callRecord](/graph/api/resources/callrecords-callrecord?view=graph-rest-beta) no `microsoft.graph.callRecords`. 
+A API do Microsoft Graph define a maioria dos seus recursos, métodos e enumerações no namespace OData, `microsoft.graph`nos [metadados do Microsoft Graph](traverse-the-graph.md#microsoft-graph-api-metadata). Um pequeno número de conjuntos de APIs são definidos em seus subnamespaces, como a [API de registros de chamada](/graph/api/resources/callrecords-api-overview), que define recursos como [callRecord](/graph/api/resources/callrecords-callrecord) no `microsoft.graph.callRecords`. 
 
 A menos que especificado explicitamente no tópico correspondente, considere tipos, métodos e enumerações fazem parte do espaço de nomes `microsoft.graph`.
 
@@ -69,7 +69,7 @@ O Microsoft Graph atualmente é compatível com duas versões: `v1.0` e `beta`.
 * O `v1.0` inclui APIs normalmente disponíveis. Use a versão 1.0 para todos os aplicativos de produção.
 * O `beta` inclui APIs que estão atualmente em modo de visualização. Como podemos apresentar alterações significativas a nossas APIs beta, recomendamos que você use a versão beta apenas para testar aplicativos em desenvolvimento. Não use APIs beta em seus aplicativos de produção.
 
-Estamos sempre buscando comentários sobre nossas APIs beta. Para fornecer comentários ou solicitar recursos, veja nossa página [UserVoice](https://officespdev.uservoice.com/).
+Estamos sempre buscando comentários sobre nossas APIs beta. Para fornecer comentários ou solicitar recursos, consulte nosso [fórum de ideias sobre a Plataforma para Desenvolvedores do Microsoft 365](https://techcommunity.microsoft.com/t5/microsoft-365-developer-platform/idb-p/Microsoft365DeveloperPlatform/label-name/Microsoft%20Graph).
 
 Para saber mais sobre as versões da API, veja [Suporte e controle de versão](versioning-and-support.md).
 
@@ -100,7 +100,7 @@ GET https://graph.microsoft.com/v1.0/me/messages?filter=emailAddress eq 'jon@con
 
 Para obter mais informações sobre as opções de consulta OData, confira [Usar parâmetros de consulta para personalizar respostas](query-parameters.md).
 
-Com exceção das opções de consulta OData, alguns métodos exigem valores de parâmetro especificados como parte da URL da consulta. Por exemplo, é possível obter uma coleção de eventos ocorridos durante um período de tempo no calendário de um usuário, consultando a relação **calendarView** de um **usuário**e especificando o período dos valores `startDateTime` e `endDateTime` como parâmetros da consulta:
+Com exceção das opções de consulta OData, alguns métodos exigem valores de parâmetro especificados como parte da URL da consulta. Por exemplo, é possível obter uma coleção de eventos ocorridos durante um período de tempo no calendário de um usuário, consultando a relação **calendarView** de um **usuário** e especificando o período dos valores `startDateTime` e `endDateTime` como parâmetros da consulta:
 
 <!-- {
   "blockType": "ignored"
@@ -134,7 +134,7 @@ Um código de status e uma mensagem são exibidos depois que uma solicitação �
 
 O Postman é uma ferramenta que você pode usar para criar e testar solicitações usando as APIs do Microsoft Graph. Você pode baixar o Postman em: `https://www.getpostman.com/`. Para interagir com o Microsoft Graph no Postman, use a coleção do Microsoft Graph.
 
-Para obter mais informações, confira [Usar o Postman com a API do Microsoft Graph](./use-postman.md?context=graph%252fapi%252fbeta&view=graph-rest-beta).
+Para obter mais informações, confira [Usar o Postman com a API do Microsoft Graph](./use-postman.md).
 
 ## <a name="next-steps"></a>Próximas etapas
 

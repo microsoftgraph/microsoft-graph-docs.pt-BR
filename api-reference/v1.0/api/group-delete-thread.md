@@ -1,16 +1,16 @@
 ---
 title: Excluir thread de conversas
 description: Excluir um objeto thread.
-author: yyuank
+author: Jordanndahl
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 8788b039c8f9234c9544f08cb354860fb3534116
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 39f313f70923e34579596407472b9721dedb72b7
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52053087"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52681022"
 ---
 # <a name="delete-conversation-thread"></a>Excluir thread de conversas
 
