@@ -5,12 +5,12 @@ author: jpettere
 localization_priority: Priority
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 143f5105e77ecdf635a7c00e0ac10e32a1d40b2d
-ms.sourcegitcommit: 276a13a37c3772689dfc71f7cd47586c9581f27d
+ms.openlocfilehash: 2636830f993626cc2d220c5a09543640f8da181f
+ms.sourcegitcommit: 612e1d796023433c6e15a9d66ba99d9bdc424cee
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52629536"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "52703542"
 ---
 # <a name="list-users"></a>Listar usuários
 
@@ -42,6 +42,10 @@ GET /users
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
 Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta, incluindo `$search`, `$count`, e `$filter`. Você pode usar `$search`na propriedade **displayName**. Quando itens são adicionados ou atualizados para este recurso, eles são indexados especialmente para uso com os `$count` e `$search` parâmetros de consulta. Pode haver um pequeno atraso entre quando um item é adicionado ou atualizado e quando está disponível no índice. Os parâmetros `$count` e `$search` não estão disponíveis no momento em locatários do Azure AD B2C.
+
+Certas propriedades não podem ser retornadas em uma coleção de usuário. As seguintes propriedades terão suporte apenas [ao recuperar um único usuário:](./user-get.md): **aboutMe**, **birthday**, **hireDate**, **interests**, **mySite**, **pastProjects**, **preferredName**, **responsibilities**, **schools**, **skills**, **mailboxSettings**.
+
+As propriedades a seguir não têm suporte em contas pessoais da Microsoft e serão `null`: **aboutMe**, **birthday**, **interests**, **mySite**, **pastProjects**, **preferredName**, **responsibilities**, **schools**, **skills**, **streetAddress**.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -186,7 +190,7 @@ Content-type: application/json
 
 #### <a name="request"></a>Solicitação
 
-Este é um exemplo de solicitação. Os detalhes da propriedade **signInActivity** requerem uma licença do Azure AD Premium P1/P2 e a permissão AuditLog.Read.All.
+A seguir está um exemplo de solicitação. Os detalhes da propriedade **signInActivity** requerem uma licença do Azure AD Premium P1/P2 e a permissão AuditLog.Read.All.
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -257,7 +261,7 @@ Content-type: application/json
 
 #### <a name="request"></a>Solicitação
 
-Este é um exemplo de solicitação. Os detalhes da propriedade **signInActivity** requerem uma licença do Azure AD Premium P1/P2 e a permissão AuditLog.Read.All.
+A seguir está um exemplo de solicitação. Os detalhes da propriedade **signInActivity** requerem uma licença do Azure AD Premium P1/P2 e a permissão AuditLog.Read.All.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -319,7 +323,7 @@ Content-type: application/json
 
 #### <a name="request"></a>Solicitação
 
-Este é um exemplo de solicitação. Os detalhes da propriedade **signInActivity** requerem uma licença do Azure AD Premium P1/P2 e a permissão AuditLog.Read.All.
+A seguir está um exemplo de solicitação. Os detalhes da propriedade **signInActivity** requerem uma licença do Azure AD Premium P1/P2 e a permissão AuditLog.Read.All.
 
 <!-- {
   "blockType": "ignored",

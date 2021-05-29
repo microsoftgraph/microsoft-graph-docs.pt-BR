@@ -5,14 +5,25 @@ author: simonhult
 localization_priority: Priority
 ms.prod: insights
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 5e7ccf00729e9acaffd08c2618d3f3249a2a268e
-ms.sourcegitcommit: fdd69d362d1debc7b08e78269d59b531f9dfdaae
+ms.openlocfilehash: 65545864f1aee0a7ffb53c0d1ee3f608c5eb171f
+ms.sourcegitcommit: ecf7867ef7957b847b7530089ce30e107750adac
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51697197"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "52698001"
 ---
 # <a name="customizing-item-insights-privacy-in-microsoft-graph-preview"></a>Personalizando a privacidade das informações do item no Microsoft Graph (visualização)
+
+Insights do item são relações que a Microsoft calcula usando técnicas avançadas de aprendizagem de máquinas. Quando os usuários colaboram sobre documentos, sites e listas Microsoft Office SharePoint Online, chats e canais das Teams, a Microsoft agrega estas atividades como sinais. A partir dos sinais, a Microsoft obtém insights para fazer recomendações de conteúdo centradas no usuário para os usuários de uma organização.
+
+Os insights do item podem ajudar os usuários a encontrar rapidamente arquivos que são importantes para eles, como na experiência **Recomendada** no Office.com e no Delve. Os usuários podem descobrir na área **Descobrir** no Outlook Mobile conteúdo potencialmente útil ao qual eles têm acesso, mas que podem não ter visto antes. A partir de insights personalizadas como **Arquivos recentes** em um cartão pessoal no Bing e **Recentes** em aplicativos Microsoft 365, os usuários podem facilmente descobrir seus arquivos recentes.
+
+Esses item de insights refletem apenas o conteúdo ao qual os usuários têm acesso. Nenhum usuário recebe recomendações de conteúdo que não possa acessar.
+
+> **Nota** Este artigo não aborda outras experiências baseadas em insight no Microsoft 365, tais como Viva Insights, o suplemento Insights para Outlook, WorkWith, MyAnalytics, e o painel de controle Insights.
+
+
+## <a name="item-insights-privacy"></a>Privacidade de insights de item 
 
 As configurações de privacidade das informações do item oferecem a capacidade de configurar a visibilidade das informações derivadas do Microsoft Graph, entre usuários e outros itens (como documentos ou sites) no Microsoft 365. Você pode desabilitar o aplicativo Delve por meio dos controles pré-existentes, mas permitir que outras experiências baseadas em informações continuem fornecendo assistência.
 
@@ -23,11 +34,16 @@ Embora os aplicativos existentes possam continuar a usar o **officeGraphInsights
 
 ## <a name="how-to-customize-item-insights"></a>Como personalizar as informações do item?
 
-As configurações das informações do item fornecem flexibilidade para os administradores usarem as ferramentas do Microsoft Azure AD. Os administradores podem desabilitar as informações do item para toda a organização ou apenas para membros de um grupo específico do Microsoft Azure AD. Configure as informações do item usando o SDK do PowerShell ou a API REST do Microsoft Graph com as devidas permissões. Lembre-se de que a _função de administrador global_ é necessária. 
+As configurações das informações do item fornecem flexibilidade para os administradores usarem as ferramentas do Microsoft Azure AD. Os administradores podem desabilitar as informações do item para toda a organização ou apenas para membros de um grupo específico do Microsoft Azure AD. Eles podem configurar as insights dos itens no Centro de administração do Microsoft 365, ou usando o PowerShell SDK ou Microsoft Graph REST API com as devidas permissões. Lembre-se de que a _função de administrador global_ é necessária. 
 
-A próxima seção descreve o uso de cmdlets do PowerShell para definir as configurações das informações. Se você estiver usando a API REST, pule a próxima seção e continue em [Configurar informações do item usando a API REST](#configure-item-insights-using-rest-api). Em seguida, confira as operações REST [ler](/graph/api/iteminsightssettings-get?view=graph-rest-beta&preserve-view=true) ou [atualizar](/graph/api/iteminsightssettings-update?view=graph-rest-beta&preserve-view=true) para obter mais informações.
+A próxima seção descreve o uso do centro administrativo, e é seguida pela seção sobre PowerShell cmdlets. Se você estiver usando o REST API, pule as duas próximas seções e continue com [Configure as percepções do item usando o REST API](#configure-item-insights-using-rest-api). Em seguida, confira as operações REST [ler](/graph/api/iteminsightssettings-get?view=graph-rest-beta&preserve-view=true) ou [atualizar](/graph/api/iteminsightssettings-update?view=graph-rest-beta&preserve-view=true) para obter mais informações.
 
-### <a name="how-to-configure-item-insights-setting-via-powershell"></a>Como definir a configuração das informações do item pelo PowerShell?
+### <a name="how-to-configure-item-insights-settings-via-microsoft-admin-center"></a>Como configurar as configurações de item de insights através do centro administrativo da Microsoft?
+Um administrador com o _papel de administrador global_ pode afinar as configurações de privacidade dos itens através de botões de alternância. Para fazer isso, no centro administrativo Micrsofot 365, expandir **Configurações**, selecionar **Busca e inteligência**, e em **Percepções de tempo**, escolher **Alterar configurações**.
+![imagem](https://user-images.githubusercontent.com/54312959/117024482-b39eca00-ad02-11eb-9a11-e6a01039822e.png)
+
+
+### <a name="how-to-configure-item-insights-settings-via-powershell"></a>Como configurar as configurações de item de insights via PowerShell?
 Confirme os pré-requisitos adicionais a seguir. Em seguida, você pode usar o [Microsoft Graph PowerShell SDK](./powershell/installation.md) para definir informações do item para toda a organização ou para grupos específicos.
 
 #### <a name="additional-prerequisites"></a>Pré-requisitos adicionais
@@ -78,7 +94,7 @@ Use a operação de [atualização](/graph/api/iteminsightssettings-update?view=
 Lembre-se do seguinte ao atualizar as configurações de informações do item:
 - [As configurações de informações do item](/graph/api/resources/iteminsightssettings?view=graph-rest-beta&preserve-view=true) estão disponíveis apenas no ponto de extremidade beta.
 - Obtenha a ID de um grupo do Azure AD no portal do Azure e verifique se o grupo existe, porque a operação de atualização não verifica a existência do grupo. Especificar um grupo inexistente no **disabledForGroup** _não_ desabilita as informações para todos os usuários da organização.
-- A atualização das configurações pode levar até oito horas para ser aplicada a todas as experiências da Microsoft 365.
+- Atualização das configurações pode levar até 24 horas para ser aplicada em todas as experiências Microsoft 365.
 - Independentemente das configurações de informações do item, o Delve continua a respeitar as [configurações de privacidade](/sharepoint/delve-for-office-365-admins#control-access-to-delve-and-related-features?view=graph-rest-beta&preserve-view=true) do locatário e do usuário do Delve.
 
 
@@ -105,7 +121,7 @@ Após esse período de transição, as configurações do Delve controlarão ape
 
 
 > [!NOTE]
-> Durante o período de transição, devido a motivos técnicos, a página inicial do SharePoint poderá fornecer sugestões obsoletas se uma organização desabilitar as informações do item para todos os usuários. Esse problema será corrigido em futuras alterações do lado do servidor. 
+> Durante o período de transição, devido a razões técnicas, a página inicial do Microsoft Office SharePoint Online pode fornecer sugestões obsoletas se uma organização desabilitar a percepção dos itens para todos os usuários. Esta questão será abordada nas próximas mudanças do lado do servidor. 
 
 ## <a name="see-also"></a>Confira também
 Saiba mais sobre o Delve e como usar as configurações de recursos do Delve para controlar os documentos que aparecem no feed **Discover**: 
