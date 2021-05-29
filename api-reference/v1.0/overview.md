@@ -5,12 +5,12 @@ localization_priority: Priority
 author: angelgolfer-ms
 ms.prod: non-product-specific
 doc_type: conceptualPageType
-ms.openlocfilehash: 56bc6b580fe691810600feee468c94cdd8a4d852
-ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
+ms.openlocfilehash: 26ed5f571aae84ce553dc95b04a385f7f9dd8474
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49980812"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52682471"
 ---
 # <a name="microsoft-graph-rest-api-v10-reference"></a>Referência da API REST do Microsoft Graph v1.0
 
@@ -65,6 +65,6 @@ Saiba mais sobre [os recursos e atualizações mais recentes](/graph/whats-new-o
 
 ## <a name="connect-with-us"></a>Fale conosco
 
-Existem APIs adicionais ou recursos que você gostaria de ver no Microsoft Graph? Poste novas solicitações de recursos no [UserVoice](https://officespdev.uservoice.com/forums/224641-general/filters/new?category_id=101632).
+Existem APIs adicionais ou recursos que você gostaria de ver no Microsoft Graph? Poste novas solicitações de recursos no[Fórum de ideias de Plataforma de Desenvolvedor Microsoft 365](https://techcommunity.microsoft.com/t5/microsoft-365-developer-platform/idb-p/Microsoft365DeveloperPlatform/label-name/Microsoft%20Graph).
 
 Possui comentários para APIs existentes do Microsoft Graph? Conecte-se conosco em [Github](https://github.com/microsoftgraph/microsoft-graph-docs/issues).
