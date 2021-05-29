@@ -1,16 +1,16 @@
 ---
 title: Criar grupo
 description: 'Crie um novo grupo conforme especificado no corpo da solicitação. '
-author: yyuank
+author: Jordanndahl
 localization_priority: Priority
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 7d844d54d72672c25382e2381077b5f8ddb6ef76
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: 13dbbcd15f108c2fa2b13f3522366e5a1f55d8cf
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50474545"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52680574"
 ---
 # <a name="create-group"></a>Criar grupo
 
@@ -53,7 +53,7 @@ A tabela a seguir mostra as propriedades do recurso [group](../resources/group.m
 
 | Propriedade | Tipo | Descrição|
 |:---------------|:--------|:----------|
-| displayName | string | O nome para exibição no catálogo de endereços do grupo. Comprimento máximo: 256 caracteres. Obrigatório. |
+| displayName | cadeia de caracteres | O nome a ser exibido no livro de endereços do grupo. Comprimento máximo: 256 caracteres. Necessário. |
 | description | string | Uma descrição para o grupo. Máx. comprimento: 1024 caracteres. Opcional. |
 | mailEnabled | booliano | Defina como **true** para grupos habilitados para email. Obrigatório. |
 | mailNickname | string | O alias de email do grupo. Máx. comprimento: 64 caracteres. Esses caracteres não podem ser usados no mailNickName: `@()\[]";:.<>,SPACE`. Obrigatório. |
@@ -64,7 +64,7 @@ A tabela a seguir mostra as propriedades do recurso [group](../resources/group.m
 
 > **Observação:** os grupos criados usando o portal do Microsoft Azure sempre terão **securityEnabled** definido inicialmente como `true`.
 
-Especifique outras propriedades graváveis conforme necessário para o seu grupo. Confira mais informações nas propriedades do recurso [group](../resources/group.md).
+Especifique outras propriedades graváveis conforme necessário para o grupo. Confira mais informações nas propriedades do recurso [grupo](../resources/group.md).
 
 >**Observação:** Criar um grupo usando o Group. Criar a permissão de aplicativo sem especificar os proprietários criará o grupo anonimamente e o grupo não será modificado. Você pode usar a operação `POST` e adicionar proprietários ao grupo enquanto a cria para especificar proprietários que podem modificar o grupo.
 
