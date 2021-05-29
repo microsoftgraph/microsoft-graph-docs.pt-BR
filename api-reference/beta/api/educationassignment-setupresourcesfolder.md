@@ -5,12 +5,12 @@ localization_priority: Normal
 author: sharmas
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 32a69da6e1c03119c13114900c7e12563e504950
-ms.sourcegitcommit: 276a13a37c3772689dfc71f7cd47586c9581f27d
+ms.openlocfilehash: 99b876655f5b2e5006a738d9401434015b804373
+ms.sourcegitcommit: 612e1d796023433c6e15a9d66ba99d9bdc424cee
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52629697"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "52703451"
 ---
 # <a name="educationassignment-setupresourcesfolder"></a>educationAssignment: setUpResourcesFolder
 
@@ -20,12 +20,12 @@ Crie uma SharePoint para carregar arquivos para um [determinado educationAssignm
 
 O professor determina os recursos a carregar na pasta da atribuição. 
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) |  EduAssignments.ReadBasic, EduAssignments.Read  |
+|Delegada (conta corporativa ou de estudante) |  EduAssignments.ReadBasic, EduAssignments.Read  |
 |Delegado (conta pessoal da Microsoft) |  Sem suporte.  |
 |Aplicativo | Sem suporte. | 
 
@@ -38,15 +38,16 @@ POST /education/classes/{id}/assignments/{id}/setUpResourcesFolder
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Cabeçalho       | Valor |
 |:---------------|:--------|
-| Autorização  | {token} de portador. Obrigatório.  |
+| Autorização  | `{token}` de portador. Obrigatório.  |
 
 ## <a name="request-body"></a>Corpo da solicitação
-Não forneça um corpo de solicitação para esse método.
+Você precisa fornecer um json vazio `{}` como corpo da solicitação para este método.
 ## <a name="response"></a>Resposta
 Se tiver êxito, este método retornará um código de resposta 200 Ok e um [objeto educationAssignment](/graph/api/resources/educationAssignment?view=graph-rest-beta&preserve-view=true) no corpo da solicitação.
 
 ## <a name="example"></a>Exemplo
 O exemplo a seguir mostra como chamar essa API.
+
 ### <a name="request"></a>Solicitação
 Veja a seguir um exemplo de uma solicitação.
 
@@ -56,9 +57,12 @@ Veja a seguir um exemplo de uma solicitação.
 }-->
 ```msgraph-interactive
 POST https://graph.microsoft.com/beta/education/classes/11012/assignments/19002/setUpResourcesFolder
+Content-type: application/json
+
+{
+}
 ```
 ---
-
 ### <a name="response"></a>Resposta
 Veja a seguir um exemplo de uma resposta. 
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: isabelleatmsft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 702f793a01d68d1a71d786c62de35a0e24c12b80
-ms.sourcegitcommit: db3d2c6db8dd8f8cc14bdcebb2904d5e056a73e7
+ms.openlocfilehash: 769ebef6e056a9b2e345d7afad772f8893b50dda
+ms.sourcegitcommit: 612e1d796023433c6e15a9d66ba99d9bdc424cee
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52579624"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "52703493"
 ---
 # <a name="list-accessreviewscheduledefinition"></a>Listar accessReviewScheduleDefinition
 
@@ -29,8 +29,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------------------------|:---------------------------------------------------------|
 |Delegada (conta corporativa ou de estudante)     | AccessReview.Read.All, AccessReview.ReadWrite.All  |
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
-|Application                            | AccessReview.Read.All, AccessReview.ReadWrite.All |
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Aplicativo                            | AccessReview.Read.All, AccessReview.ReadWrite.All |
 
  O usuário interno também deve estar em uma função de diretório que permita que ele leia uma revisão de acesso. Consulte access review [role and application permission authorization checks](../resources/accessreviewsv2-root.md#role-and-application-permission-authorization-checks).
 
@@ -185,7 +185,7 @@ O exemplo a seguir mostra uma solicitação para recuperar todas as séries de r
   "name": "list_accessReviewScheduleDefinition_allgroups"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com//beta/identityGovernance/accessReviews/definitions?$filter=contains(scope/microsoft.graph.accessReviewQueryScope/query, './members')
+GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/definitions?$filter=contains(scope/microsoft.graph.accessReviewQueryScope/query, './members')
 ```
 
 #### <a name="response"></a>Resposta

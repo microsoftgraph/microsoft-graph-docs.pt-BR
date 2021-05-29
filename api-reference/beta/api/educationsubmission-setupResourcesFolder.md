@@ -5,12 +5,12 @@ localization_priority: Normal
 author: sharmas
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: d7be17b22434b08e5b83479201e59b17a91d26e1
-ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
+ms.openlocfilehash: 4fd82a90bc237b2fe1f312f71c07ddac8a2cf45a
+ms.sourcegitcommit: 612e1d796023433c6e15a9d66ba99d9bdc424cee
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "52664762"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "52703465"
 ---
 # <a name="educationsubmission-setupresourcesfolder"></a>educationSubmission: setUpResourcesFolder
 
@@ -27,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) |  EduAssignments.ReadBasic, EduAssignments.Read  |
+|Delegada (conta corporativa ou de estudante) |  EduAssignments.ReadBasic, EduAssignments.Read  |
 |Delegado (conta pessoal da Microsoft) |  Sem suporte.  |
 |Aplicativo | Sem suporte. | 
 
@@ -40,47 +40,32 @@ POST /education/classes/{id}/assignments/{id}/submissions/{id}/setUpResourcesFol
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Cabeçalho       | Valor |
 |:---------------|:--------|
-| Autorização  | {token} de portador. Obrigatório.  |
+| Autorização  | `{token}` de portador. Obrigatório.  |
 
 ## <a name="request-body"></a>Corpo da solicitação
-Não forneça um corpo de solicitação para esse método.
+Forneça um json `{}` vazio como corpo da solicitação para este método.
+
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um código de resposta `200 Ok`. O corpo conterá o modelo de envio.
+Se bem-sucedido, este método retorna um código de resposta `200 Ok`. O corpo conterá o modelo de envio.
 
 ## <a name="example"></a>Exemplo
 O exemplo a seguir mostra como chamar essa API.
+
 ### <a name="request"></a>Solicitação
 Veja a seguir um exemplo de uma solicitação.
 
-
-# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "educationsubmission_setupresourcesfolder"
 }-->
 ```msgraph-interactive
 POST https://graph.microsoft.com/beta/education/classes/11012/assignments/19002/submissions/20302/setUpResourcesFolder
+Content-type: application/json
+
+{
+}
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/educationsubmission-setupresourcesfolder-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/educationsubmission-setupresourcesfolder-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/educationsubmission-setupresourcesfolder-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/educationsubmission-setupresourcesfolder-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
-
----
-
 
 ### <a name="response"></a>Resposta
 Veja a seguir um exemplo de uma resposta. 

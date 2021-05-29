@@ -5,12 +5,12 @@ localization_priority: Normal
 author: adimitui
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: fda1211b00266f7751bc727a00989a68b9022276
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 984fff26922d2300b94af69f3263e2beaeab82f8
+ms.sourcegitcommit: 612e1d796023433c6e15a9d66ba99d9bdc424cee
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50956859"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "52703591"
 ---
 # <a name="organization-resource-type"></a>tipo de recurso organization
 
@@ -35,13 +35,13 @@ Esse recurso permite que você adicione seus próprios dados às propriedades pe
 |**Extensões de esquema**| | |
 |[Adicionar valores de extensões de esquema](../api/schemaextension-post-schemaextensions.md) | [schemaExtension](schemaextension.md) | Cria uma definição para a extensão de esquema e usa-a para adicionar dados digitados personalizados a um recurso.|
 |[Criar organizationalBrandingProperties](../api/organizationalbrandingproperties-create.md) | [organizationalBrandingProperties](organizationalbrandingproperties.md) | Crie uma nova organizationalBrandingProperties postando na coleção de identidade visual. |
-|[Obter a identidade visual](../api/organizationalbrandingproperties-get.md) | coleção [organizationalBrandingProperties](organizationalbrandingproperties.md) | Obtenha uma coleção de objetos organizationalBrandingProperties. |
+|[Obter a identidade visual](../api/organizationalbrandingproperties-get.md) | coleção [organizationalBrandingProperties](organizationalbrandingproperties.md) | Obter uma coleção de objetos organizationalBrandingProperties. |
 
 ## <a name="properties"></a>Propriedades 
 | Propriedade | Tipo   | Descrição |
 |:-------- |:---- |:----------- |
 | assignedPlans | Coleção [assignedPlan](assignedplan.md) | A coleção de planos de serviço associados ao locatário. Não anulável. |
-| businessPhones | Coleção de cadeias de caracteres | Número de telefone da organização. Embora seja uma coleção de cadeias de caracteres, apenas um número pode ser definido para essa propriedade. |
+| businessPhones | Coleção de cadeias de caracteres | Número de telefone da organização. Embora isso seja uma coleção de cadeias de caracteres, somente um número pode ser definido para essa propriedade. |
 | city | Cadeia de caracteres | Nome da cidade do endereço da organização. |
 | country | Cadeia de caracteres | Nome do país/região do endereço da organização. |
 | countryLetterCode | Cadeia de caracteres | Abreviação do país/região da organização. |
@@ -54,9 +54,9 @@ Esse recurso permite que você adicione seus próprios dados às propriedades pe
 | marketingNotificationEmails | Coleção de cadeias de caracteres | Não anulável. |
 | objectType | String | Uma cadeia de caracteres que identifica o tipo de objeto. Para locatários, o valor é `Company` sempre .|
 | onPremisesLastSyncDateTime | DateTimeOffset | A hora e a data em que o locatário foi sincronizado pela última vez com o diretório local. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`.|
-| onPremisesSyncEnabled | Booliano | `true` se esse objeto for sincronizado de um diretório local; se esse objeto foi originalmente sincronizado de um diretório local, mas `false` não está mais sincronizado; Anulavel. `null` se esse objeto nunca tiver sido sincronizado de um diretório local (padrão). |
+| onPremisesSyncEnabled | Boolean | `true` se esse objeto for sincronizado de um diretório local; se esse objeto foi originalmente sincronizado de um diretório local, mas `false` não está mais sincronizado; Anulavel. `null` se este objeto nunca foi sincronizado de um diretório local (padrão). |
 | postalCode | Cadeia de caracteres | CEP do endereço da organização. |
-| preferredLanguage | String | O idioma preferencial da organização. Deve seguir o código ISO 639-1; por exemplo `en` . |
+| preferredLanguage | String | O idioma preferencial da organização. Deve seguir o Código ISO 639-1; por exemplo `en`. |
 | privacyProfile | [privacyProfile](privacyprofile.md) | O perfil de privacidade de uma organização. |
 | provisionedPlans | coleção [provisionedPlan](provisionedplan.md) | Não anulável. |
 | securityComplianceNotificationMails | Coleção de cadeias de caracteres ||
