@@ -4,42 +4,42 @@ description: Você pode usar a API de Pesquisa da Microsoft para importar dados 
 author: nmoreau
 localization_priority: Normal
 ms.prod: search
-ms.openlocfilehash: db80e90bf8ec6afc8b1b4a993f5c42be66a07e3d
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: cc75530533ef8613f416e7fabc03904b2f7940ec
+ms.sourcegitcommit: 612e1d796023433c6e15a9d66ba99d9bdc424cee
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52031393"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "52703598"
 ---
-# <a name="use-the-microsoft-search-api-to-search-custom-types-imported-using-microsoft-graph-connectors-preview"></a><span data-ttu-id="4d1a4-103">Use a API de Pesquisa da Microsoft para pesquisar tipos personalizados importados usando conectores Graph Microsoft (visualização)</span><span class="sxs-lookup"><span data-stu-id="4d1a4-103">Use the Microsoft Search API to search custom types imported using Microsoft Graph connectors (preview)</span></span> 
+# <a name="use-the-microsoft-search-api-to-search-custom-types-imported-using-microsoft-graph-connectors-preview"></a><span data-ttu-id="35e92-103">Use a API de Pesquisa da Microsoft para pesquisar tipos personalizados importados usando conectores Graph Microsoft (visualização)</span><span class="sxs-lookup"><span data-stu-id="35e92-103">Use the Microsoft Search API to search custom types imported using Microsoft Graph connectors (preview)</span></span> 
 
-<span data-ttu-id="4d1a4-104">Use a API de Pesquisa da Microsoft para pesquisar o conteúdo ingerido e indexado pelos conectores [Graph Microsoft.](/microsoftsearch/connectors-overview)</span><span class="sxs-lookup"><span data-stu-id="4d1a4-104">Use the Microsoft Search API to search accross content ingested and indexed by [Microsoft Graph connectors](/microsoftsearch/connectors-overview).</span></span> <span data-ttu-id="4d1a4-105">O conteúdo é importado por meio de conectores [integrados fornecidos](/microsoftsearch/connectors-gallery) pela Microsoft ou por meio de conectores personalizados implementados usando a API de ingestão de conectores do [Microsoft Graph](/graph/api/resources/indexing-api-overview?view=graph-rest-beta&preserve-view=true).</span><span class="sxs-lookup"><span data-stu-id="4d1a4-105">The content is imported either via [built-in connectors](/microsoftsearch/connectors-gallery) provided by Microsoft, or via custom connectors implemented using the [Microsoft Graph connectors ingestion API](/graph/api/resources/indexing-api-overview?view=graph-rest-beta&preserve-view=true).</span></span>
+<span data-ttu-id="35e92-104">Use a API de Pesquisa da Microsoft para pesquisar o conteúdo ingerido e indexado pelos conectores [Graph Microsoft.](/microsoftsearch/connectors-overview)</span><span class="sxs-lookup"><span data-stu-id="35e92-104">Use the Microsoft Search API to search accross content ingested and indexed by [Microsoft Graph connectors](/microsoftsearch/connectors-overview).</span></span> <span data-ttu-id="35e92-105">O conteúdo é importado por meio de conectores [integrados fornecidos](/microsoftsearch/connectors-gallery) pela Microsoft ou por meio de conectores personalizados implementados usando a API de ingestão de conectores do [Microsoft Graph](/graph/api/resources/indexing-api-overview?view=graph-rest-beta&preserve-view=true).</span><span class="sxs-lookup"><span data-stu-id="35e92-105">The content is imported either via [built-in connectors](/microsoftsearch/connectors-gallery) provided by Microsoft, or via custom connectors implemented using the [Microsoft Graph connectors ingestion API](/graph/api/resources/indexing-api-overview?view=graph-rest-beta&preserve-view=true).</span></span>
 
 [!INCLUDE [search-api-preview-signup](../includes/search-api-preview-signup.md)]
 
 [!INCLUDE [search-schema-updated](../includes/search-schema-updated.md)]
 
-<span data-ttu-id="4d1a4-106">Depois que o conteúdo tiver sido importado e indexado, você poderá usar a API de pesquisa para consultar o conteúdo.</span><span class="sxs-lookup"><span data-stu-id="4d1a4-106">Once the content has been imported and indexed, you can use the search API to query the content.</span></span>
+<span data-ttu-id="35e92-106">Depois que o conteúdo tiver sido importado e indexado, você poderá usar a API de pesquisa para consultar o conteúdo.</span><span class="sxs-lookup"><span data-stu-id="35e92-106">Once the content has been imported and indexed, you can use the search API to query the content.</span></span>
 
-<span data-ttu-id="4d1a4-107">Para pesquisar tipos personalizados, especifique as seguintes propriedades no corpo da solicitação do [método de](/graph/api/search-query?view=graph-rest-beta&preserve-view=true) consulta:</span><span class="sxs-lookup"><span data-stu-id="4d1a4-107">To search for custom types, specify the following properties in the request body of the [query](/graph/api/search-query?view=graph-rest-beta&preserve-view=true) method:</span></span>
+<span data-ttu-id="35e92-107">Para pesquisar tipos personalizados, especifique as seguintes propriedades no corpo da solicitação do [método de](/graph/api/search-query?view=graph-rest-beta&preserve-view=true) consulta:</span><span class="sxs-lookup"><span data-stu-id="35e92-107">To search for custom types, specify the following properties in the request body of the [query](/graph/api/search-query?view=graph-rest-beta&preserve-view=true) method:</span></span>
 
-- <span data-ttu-id="4d1a4-108">A **propriedade contentSources** para incluir a ID de conexão atribuída durante a instalação do conector.</span><span class="sxs-lookup"><span data-stu-id="4d1a4-108">The **contentSources** property to include the connection ID that is assigned during the connector setup.</span></span> <span data-ttu-id="4d1a4-109">Você pode passar várias IDs de conexão para pesquisar em várias conexões.</span><span class="sxs-lookup"><span data-stu-id="4d1a4-109">You can pass multiple connection IDs to search across multiple connections.</span></span> <span data-ttu-id="4d1a4-110">Os resultados são retornados em uma única lista, classificada entre as várias conexões.</span><span class="sxs-lookup"><span data-stu-id="4d1a4-110">Results are returned in a single list, ranked accross the multiple connections.</span></span>
+- <span data-ttu-id="35e92-108">A **propriedade contentSources** para incluir a ID de conexão atribuída durante a instalação do conector.</span><span class="sxs-lookup"><span data-stu-id="35e92-108">The **contentSources** property to include the connection ID that is assigned during the connector setup.</span></span> <span data-ttu-id="35e92-109">Você pode passar várias IDs de conexão para pesquisar em várias conexões.</span><span class="sxs-lookup"><span data-stu-id="35e92-109">You can pass multiple connection IDs to search across multiple connections.</span></span> <span data-ttu-id="35e92-110">Os resultados são retornados em uma única lista, classificada entre as várias conexões.</span><span class="sxs-lookup"><span data-stu-id="35e92-110">Results are returned in a single list, ranked accross the multiple connections.</span></span>
 
 <!--
 TODOSEARCHAPI - Bug 1653398 
 -->
 
-- <span data-ttu-id="4d1a4-111">A **propriedade entityTypes** como `externalItem` .</span><span class="sxs-lookup"><span data-stu-id="4d1a4-111">The **entityTypes** property as `externalItem`.</span></span>
+- <span data-ttu-id="35e92-111">A **propriedade entityTypes** como `externalItem` .</span><span class="sxs-lookup"><span data-stu-id="35e92-111">The **entityTypes** property as `externalItem`.</span></span>
 
-- <span data-ttu-id="4d1a4-112">A **propriedade fields** para incluir os campos no item externo a ser recuperado.</span><span class="sxs-lookup"><span data-stu-id="4d1a4-112">The **fields** property to include the fields in the external item to retrieve.</span></span> <span data-ttu-id="4d1a4-113">Observe que, se você  não incluir nenhum campo na solicitação, a resposta conterá todos os campos marcados como *recuperáveis* no esquema de dados especificado para as conexões especificadas na propriedade **contentSources.**</span><span class="sxs-lookup"><span data-stu-id="4d1a4-113">Note that if you do not include any **fields** in the request, the response will contain all the fields marked as *retrievable* in the data schema specified for the specified connections in the **contentSources** property.</span></span>
+- <span data-ttu-id="35e92-112">A **propriedade fields** para incluir os campos no item externo a ser recuperado.</span><span class="sxs-lookup"><span data-stu-id="35e92-112">The **fields** property to include the fields in the external item to retrieve.</span></span> <span data-ttu-id="35e92-113">Observe que, se você  não incluir nenhum campo na solicitação, a resposta conterá todos os campos marcados como *recuperáveis* no esquema de dados especificado para as conexões especificadas na propriedade **contentSources.**</span><span class="sxs-lookup"><span data-stu-id="35e92-113">Note that if you do not include any **fields** in the request, the response will contain all the fields marked as *retrievable* in the data schema specified for the specified connections in the **contentSources** property.</span></span>
 
-<span data-ttu-id="4d1a4-114">Além disso, você pode agregar resultados de pesquisa com base em propriedades em [um externalItem](/graph/api/resources/externalitem?view=graph-rest-beta&preserve-view=true) que são numéricos ou tipo de cadeia de caracteres e que são definidos como refináveis no [esquema](/graph/api/resources/schema?view=graph-rest-beta&preserve-view=true).</span><span class="sxs-lookup"><span data-stu-id="4d1a4-114">In addition, you can aggregate search results based on properties in an [externalItem](/graph/api/resources/externalitem?view=graph-rest-beta&preserve-view=true) that are numeric or string type, and that are set to be refinable in the [schema](/graph/api/resources/schema?view=graph-rest-beta&preserve-view=true).</span></span> <span data-ttu-id="4d1a4-115">Para obter mais informações, [consulte Refinar resultados de pesquisa usando agregação .](search-concept-aggregation.md)</span><span class="sxs-lookup"><span data-stu-id="4d1a4-115">For more information, see [Refine search results using aggregations](search-concept-aggregation.md).</span></span>
+<span data-ttu-id="35e92-114">Além disso, você pode agregar resultados de pesquisa com base em propriedades em [um externalItem](/graph/api/resources/externalitem?view=graph-rest-beta&preserve-view=true) que são numéricos ou tipo de cadeia de caracteres e que são definidos como refináveis no [esquema](/graph/api/resources/schema?view=graph-rest-beta&preserve-view=true).</span><span class="sxs-lookup"><span data-stu-id="35e92-114">In addition, you can aggregate search results based on properties in an [externalItem](/graph/api/resources/externalitem?view=graph-rest-beta&preserve-view=true) that are numeric or string type, and that are set to be refinable in the [schema](/graph/api/resources/schema?view=graph-rest-beta&preserve-view=true).</span></span> <span data-ttu-id="35e92-115">Para obter mais informações, [consulte Refinar resultados de pesquisa usando agregação .](search-concept-aggregation.md)</span><span class="sxs-lookup"><span data-stu-id="35e92-115">For more information, see [Refine search results using aggregations](search-concept-aggregation.md).</span></span>
 
-## <a name="example-1-retrieve-items-using-azure-sql-built-in-connector"></a><span data-ttu-id="4d1a4-116">Exemplo 1: Recuperar itens usando o Azure SQL conector integrado</span><span class="sxs-lookup"><span data-stu-id="4d1a4-116">Example 1: Retrieve items using Azure SQL built-in connector</span></span>
+## <a name="example-1-retrieve-items-using-azure-sql-built-in-connector"></a><span data-ttu-id="35e92-116">Exemplo 1: Recuperar itens usando o Azure SQL conector integrado</span><span class="sxs-lookup"><span data-stu-id="35e92-116">Example 1: Retrieve items using Azure SQL built-in connector</span></span>
 
-<span data-ttu-id="4d1a4-117">Neste exemplo, o conteúdo do banco de dados [AdventureWorks](/sql/samples/adventureworks-install-configure) foi ingerido usando o conector SQL Azure integrado.</span><span class="sxs-lookup"><span data-stu-id="4d1a4-117">In this example, the content of the [AdventureWorks](/sql/samples/adventureworks-install-configure) database has been ingested using the Azure SQL built-in connector.</span></span>
+<span data-ttu-id="35e92-117">Neste exemplo, o conteúdo do banco de dados [AdventureWorks](/sql/samples/adventureworks-install-configure) foi ingerido usando o conector SQL Azure integrado.</span><span class="sxs-lookup"><span data-stu-id="35e92-117">In this example, the content of the [AdventureWorks](/sql/samples/adventureworks-install-configure) database has been ingested using the Azure SQL built-in connector.</span></span>
 
-### <a name="request"></a><span data-ttu-id="4d1a4-118">Solicitação</span><span class="sxs-lookup"><span data-stu-id="4d1a4-118">Request</span></span>
+### <a name="request"></a><span data-ttu-id="35e92-118">Solicitação</span><span class="sxs-lookup"><span data-stu-id="35e92-118">Request</span></span>
 
 ```HTTP
 POST https://graph.microsoft.com/beta/search/query
@@ -70,7 +70,7 @@ Content-Type: application/json
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="4d1a4-119">Resposta</span><span class="sxs-lookup"><span data-stu-id="4d1a4-119">Response</span></span>
+### <a name="response"></a><span data-ttu-id="35e92-119">Resposta</span><span class="sxs-lookup"><span data-stu-id="35e92-119">Response</span></span>
 
 ```HTTP
 HTTP/1.1 200 OK
@@ -80,7 +80,7 @@ Content-type: application/json
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.searchResponse)",
   "value": [
     {
-      "searchTerms": ["ya"],
+      "searchTerms": ["yang"],
       "hitsContainers": [
         {
           "total": 2,
@@ -123,9 +123,9 @@ Content-type: application/json
 }
 ```
 
-## <a name="example-2-retrieve-items-using-semantic-labels"></a><span data-ttu-id="4d1a4-120">Exemplo 2: Recuperar itens usando rótulos semânticos</span><span class="sxs-lookup"><span data-stu-id="4d1a4-120">Example 2: Retrieve items using semantic labels</span></span>
+## <a name="example-2-retrieve-items-using-semantic-labels"></a><span data-ttu-id="35e92-120">Exemplo 2: Recuperar itens usando rótulos semânticos</span><span class="sxs-lookup"><span data-stu-id="35e92-120">Example 2: Retrieve items using semantic labels</span></span>
 
-### <a name="request"></a><span data-ttu-id="4d1a4-121">Solicitação</span><span class="sxs-lookup"><span data-stu-id="4d1a4-121">Request</span></span>
+### <a name="request"></a><span data-ttu-id="35e92-121">Solicitação</span><span class="sxs-lookup"><span data-stu-id="35e92-121">Request</span></span>
 
 ```HTTP
 POST https://graph.microsoft.com/beta/search/query
@@ -158,7 +158,7 @@ Content-Type: application/json
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="4d1a4-122">Resposta</span><span class="sxs-lookup"><span data-stu-id="4d1a4-122">Response</span></span>
+### <a name="response"></a><span data-ttu-id="35e92-122">Resposta</span><span class="sxs-lookup"><span data-stu-id="35e92-122">Response</span></span>
 
 ```HTTP
 HTTP/1.1 200 OK
@@ -238,8 +238,8 @@ Content-type: application/json
 }
 ```
 
-<span data-ttu-id="4d1a4-123">Para obter mais detalhes, consulte [Atribuir rótulos de propriedade](/microsoftsearch/configure-connector#step-5-assign-property-labels).</span><span class="sxs-lookup"><span data-stu-id="4d1a4-123">For more details, see [Assign property labels](/microsoftsearch/configure-connector#step-5-assign-property-labels).</span></span>
+<span data-ttu-id="35e92-123">Para obter mais detalhes, consulte [Atribuir rótulos de propriedade](/microsoftsearch/configure-connector#step-5-assign-property-labels).</span><span class="sxs-lookup"><span data-stu-id="35e92-123">For more details, see [Assign property labels](/microsoftsearch/configure-connector#step-5-assign-property-labels).</span></span>
 
-## <a name="next-steps"></a><span data-ttu-id="4d1a4-124">Próximas etapas</span><span class="sxs-lookup"><span data-stu-id="4d1a4-124">Next steps</span></span>
+## <a name="next-steps"></a><span data-ttu-id="35e92-124">Próximas etapas</span><span class="sxs-lookup"><span data-stu-id="35e92-124">Next steps</span></span>
 
-- [<span data-ttu-id="4d1a4-125">Usar a API de Pesquisa da Microsoft para consultar dados</span><span class="sxs-lookup"><span data-stu-id="4d1a4-125">Use the Microsoft Search API to query data</span></span>](/graph/api/resources/search-api-overview?view=graph-rest-beta&preserve-view=true)
+- [<span data-ttu-id="35e92-125">Usar a API de Pesquisa da Microsoft para consultar dados</span><span class="sxs-lookup"><span data-stu-id="35e92-125">Use the Microsoft Search API to query data</span></span>](/graph/api/resources/search-api-overview?view=graph-rest-beta&preserve-view=true)
