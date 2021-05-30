@@ -413,7 +413,7 @@ items:
             items:
               - name: Listar tarefas
                 href: api/planneruser-list-tasks.md
-          - name: Trabalho em equipe
+          - name: Teamwork
             items:
               - name: Aplicativo instalado
                 href: resources/teamsappinstallation.md
@@ -431,7 +431,7 @@ items:
                 href: api/userscopeteamsappinstallation-get-chat.md
               - name: Obter chat para o usuário
                 href: api/chat-get.md
-          - name: Tarefas To do
+          - name: Tarefas pendentes
             items:
               - name: Tarefa
                 href: resources/todotask.md
@@ -738,12 +738,15 @@ items:
                     href: api/application-removekey.md
               - name: Extensões
                 items:
-                  - name: Listar
-                    href: api/application-list-extensionproperty.md
-                  - name: Criar
-                    href: api/application-post-extensionproperty.md
-                  - name: Excluir
-                    href: api/application-delete-extensionproperty.md
+                  - name: Propriedade de extensão
+                    href: resources/extensionproperty.md
+                    items:
+                      - name: Listar
+                        href: api/application-list-extensionproperty.md
+                      - name: Criar
+                        href: api/application-post-extensionproperty.md
+                      - name: Excluir
+                        href: api/application-delete-extensionproperty.md
               - name: Proprietários
                 items:
                   - name: List
@@ -1217,9 +1220,9 @@ items:
                     href: resources/callrecords-callrecord.md
                   - name: Obter registro de chamada
                     href: api/callrecords-callrecord-get.md
-              - name: Sessão
+              - name: Session
                 items:
-                  - name: Sessão
+                  - name: Session
                     href: resources/callrecords-session.md
                   - name: Listar sessões
                     href: api/callrecords-session-list.md
@@ -5330,7 +5333,7 @@ items:
                 href: api/plannerprogresstaskboardtaskformat-get.md
               - name: Atualizar progresso do formato de quadro de tarefas
                 href: api/plannerprogresstaskboardtaskformat-update.md
-      - name: Trabalho em equipe
+      - name: Teamwork
         displayName: Microsoft Teams
         items:
           - name: Visão Geral

@@ -5,12 +5,12 @@ author: jackson-woods
 localization_priority: Priority
 ms.prod: applications
 ms.custom: graphiamtop20
-ms.openlocfilehash: 004b133c458db4bf7b0ab5644dcd4b470b68d95f
-ms.sourcegitcommit: d033e7de12bccf92efcbe40c7b671e419a3e5b94
+ms.openlocfilehash: 86bbe3af472ff2f5a33a951f61f1f0b3d6a46801
+ms.sourcegitcommit: 612e1d796023433c6e15a9d66ba99d9bdc424cee
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2021
-ms.locfileid: "51882303"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "52703633"
 ---
 # <a name="get-access-without-a-user"></a>Obter acesso sem um usuário
 
@@ -137,7 +137,7 @@ client_id=535fb089-9ff3-47b6-9bfb-4f1264799865
 |:--------------|:----------|:------------
 | locatário        | Obrigatório  | O locatário do diretório do qual você deseja solicitar permissão. Pode ser no formato de nome amigável ou GUID.
 | client_id     | Obrigatório  | A ID de Aplicativo que o [Portal de Registro de Aplicativos do Azure](https://go.microsoft.com/fwlink/?linkid=2083908) atribuiu quando você registrou seu aplicativo.
-| scope         | Obrigatório  | O valor passado para o parâmetro `scope` nesta solicitação deve ser o identificador do recurso (URI da ID do Aplicativo) do recurso desejado, afixado com o sufixo `.default`. Para o Microsoft Graph, o valor é `https://graph.microsoft.com/.default`. Esse valor informa ao ponto de extremidade da plataforma de identidade da Microsoft que, de todas as permissões de aplicativo que você configurou para seu aplicativo, ele deve emitir um token para os aplicativos associados ao recurso que você deseja usar.
+| scope         | Obrigatório  | O valor passado para o parâmetro `scope` nesta solicitação deve ser o identificador do recurso (URI da ID do Aplicativo) do recurso desejado, afixado com o sufixo `.default`. Para o Microsoft Graph, o valor é `https://graph.microsoft.com/.default`. Esse valor informa ao ponto de extremidade da plataforma de identidade da Microsoft que, de todas as permissões de aplicativo que você configurou para seu aplicativo, ele deve emitir um token para os aplicativos associados ao recurso que você deseja usar. Você também pode usar o escopo `offline_access` para indicar que seu aplicativo precisa de um token de atualização para um acesso de longa duração aos recursos.
 | client_secret | Obrigatório  | O Segredo do Aplicativo gerado para seu aplicativo no portal de registro de aplicativos.
 | grant_type    | Obrigatório  | Deve ser `client_credentials`.
 
@@ -207,7 +207,7 @@ Os aplicativos que chamam o Microsoft Graph com sua própria identidade se enqua
 - [Serviços em segundo plano (daemons)](/azure/active-directory/develop/scenario-daemon-overview) que podem ser executados em um servidor sem um usuário conectado.
 - Aplicativos que têm um usuário conectado, mas que também chamam o Microsoft Graph com sua própria identidade. Por exemplo, para usar a funcionalidade que exige privilégios mais elevados do usuário.
 
-Os aplicativos que chamam o Microsoft Graph com sua própria identidade usam a concessão de credenciais do cliente OAuth 2.0 para autenticar com o Azure AD e obter um token. Para o ponto de extremidade da plataforma de identidade da Microsoft, você pode explorar esse cenário ainda mais com os seguintes recursos:
+Os aplicativos que chamam o Microsoft Graph com sua própria identidade usam a concessão de credenciais do cliente OAuth 2.0 para autenticar com o Azure Active Directory e obter um token. Para o ponto de extremidade da plataforma de identidade da Microsoft, você pode explorar ainda mais esse cenário com os seguintes recursos:
 
 - Para ver um tratamento mais completo do Fluxo de Concessão de Credenciais do Cliente que também inclui respostas de erro, confira o artigo [Azure Active Directory v2.0 e o fluxo de Credenciais do Cliente OAuth 2.0](/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow).
 - Para obter um exemplo que chama o Microsoft Graph a partir de um serviço, confira o [exemplo do daemon v2.0](https://github.com/Azure-Samples/active-directory-dotnet-daemon-v2) no GitHub.
@@ -218,7 +218,7 @@ Os aplicativos que chamam o Microsoft Graph com sua própria identidade usam a c
 A Microsoft continua oferecendo suporte ao ponto de extremidade do Azure AD. Existem [várias diferenças](/azure/active-directory/develop/azure-ad-endpoint-comparison) entre a utilização do ponto de extremidade da plataforma de identidade da Microsoft e o ponto de extremidade do Azure AD. Durante o uso do ponto de extremidade do Azure AD:
 
 - Se o aplicativo for multilocatário, você deve configurá-lo explicitamente para funcionar como multilocatário no [portal do Azure](https://portal.azure.com).
-- Não há administrador no ponto de extremidade (`/adminconsent`). Em vez disso, seu aplicativo pode solicitar consentimento do administrador durante o tempo de execução adicionando o parâmetro `prompt=admin_consent` a uma solicitação de autorização. Para obter mais informações, confira **Como acionar a estrutura do consentimento do Azure AD no tempo de execução** no artigo [Integração de aplicativos com o Azure Active Directory](/azure/active-directory/develop/active-directory-integrating-applications).
+- Não há um ponto de extremidade de consentimento do administrador (`/adminconsent`). Em vez disso, o aplicativo pode solicitar o consentimento do administrador durante o tempo de execução adicionando o parâmetro `prompt=admin_consent` a uma solicitação de autorização. Para obter mais informações, confira **Como acionar a estrutura do consentimento do Azure Active Directory no tempo de execução** no artigo [Integração de aplicativos com o Azure Active Directory](/azure/active-directory/develop/active-directory-integrating-applications).
 - Os parâmetros nas solicitações de token e de autorização são diferentes. Por exemplo, não existe um parâmetro `scope` nas solicitações do ponto de extremidade do Azure AD. Em vez disso, o parâmetro `resource` é usado para especificar o URI do recurso (`resource=https://graph.microsoft.com`) que a autorização (para consentimento do administrador) ou um token está solicitando.
 
 Você pode explorar esse cenário ainda mais com os seguintes recursos:
@@ -226,6 +226,8 @@ Você pode explorar esse cenário ainda mais com os seguintes recursos:
 - Para saber mais sobre a plataforma de identidade da Microsoft com diferentes tipos de aplicativos, confira os links de **Introdução** na [documentação da plataforma de identidade da Microsoft](/azure/active-directory/develop/active-directory-developers-guide). Este guia contém links para tópicos de visão geral, guias de início rápido, tutoriais, exemplos de código e documentação de protocolo para diferentes tipos de aplicativos compatíveis com a plataforma de identidade da Microsoft.
 - Para saber mais sobre a MSAL (Biblioteca de Autenticação da Microsoft) e o middleware de servidor disponíveis para uso com o ponto de extremidade da plataforma de identidade da Microsoft, confira [Bibliotecas de Autenticação da Microsoft](/azure/active-directory/develop/active-directory-authentication-libraries).
 
+
 ## <a name="see-also"></a>Confira também
 
-Para ver um exemplo de um aplicativo Web hospedado no Serviço de Aplicativo do Azure chamando o Microsoft Graph como o aplicativo (usando identidades gerenciadas), consulte [Tutorial: Acessar o Microsoft Graph de um aplicativo seguro como o aplicativo](/azure/app-service/scenario-secure-app-access-microsoft-graph-as-app). Este tutorial mostra como criar uma identidade gerenciada atribuída pelo sistema em um aplicativo Web, adicionar permissões de API do Microsoft Graph a uma identidade gerenciada e chamar o Microsoft Graph.
+- Para ver um exemplo de um aplicativo Web hospedado no Serviço de Aplicativo do Azure chamando o Microsoft Graph como o aplicativo (usando identidades gerenciadas), consulte [Tutorial: Acessar o Microsoft Graph de um aplicativo seguro como o aplicativo](/azure/app-service/scenario-secure-app-access-microsoft-graph-as-app). Este tutorial mostra como criar uma identidade gerenciada atribuída pelo sistema em um aplicativo Web, adicionar permissões de API do Microsoft Graph a uma identidade gerenciada e chamar o Microsoft Graph.
+- Para exemplos de uso da plataforma de identidade da Microsoft para garantir diferentes tipos de aplicativos, confira [Exemplos de código da plataforma de identidade da Microsoft (ponto de extremidade v2.0)](/azure/active-directory/develop/sample-v2-code).
