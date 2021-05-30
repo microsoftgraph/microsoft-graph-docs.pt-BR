@@ -5,12 +5,12 @@ localization_priority: Normal
 author: keylimesoda
 ms.prod: applications
 doc_type: resourcePageType
-ms.openlocfilehash: 0e4a42f3eec4edb001f3bcb0835d240e58b0e5b3
-ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
+ms.openlocfilehash: bd0f9dbf5ad50636d313ebac562a80246b7e80a1
+ms.sourcegitcommit: 612e1d796023433c6e15a9d66ba99d9bdc424cee
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52547566"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "52703472"
 ---
 # <a name="entity-resource-type"></a>Tipo de recurso entity
 
@@ -42,7 +42,6 @@ Veja a seguir uma representação JSON do recurso
 {
   "id": "string (identifier)"
 }
-
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
