@@ -457,7 +457,7 @@ items:
                 href: api/profile-get.md
               - name: Excluir perfil do usuário
                 href: api/profile-delete.md
-          - name: Trabalho em equipe
+          - name: Teamwork
             items:
               - name: Aplicativo instalado
                 href: resources/teamsappinstallation.md
@@ -477,7 +477,7 @@ items:
                 href: api/chat-get.md
               - name: Listar chats para usuário
                 href: api/chat-list.md
-          - name: Tarefas To do
+          - name: Tarefas pendentes
             items:
               - name: Tarefa
                 href: resources/todotask.md
@@ -788,12 +788,15 @@ items:
                     href: api/application-removekey.md
               - name: Extensões
                 items:
-                  - name: Listar extensões
-                    href: api/application-list-extensionproperty.md
-                  - name: Criar extensão
-                    href: api/application-post-extensionproperty.md
-                  - name: Excluir extensão
-                    href: api/application-delete-extensionproperty.md
+                  - name: Propriedade de extensão
+                    href: resources/extensionproperty.md
+                    items:
+                      - name: Listar
+                        href: api/application-list-extensionproperty.md
+                      - name: Criar
+                        href: api/application-post-extensionproperty.md
+                      - name: Excluir
+                        href: api/application-delete-extensionproperty.md
               - name: Proprietários
                 items:
                   - name: Listar proprietários
@@ -4391,7 +4394,7 @@ items:
                         href: api/intune-deviceconfig-devicecompliancepolicydevicestatesummary-get.md
                       - name: Atualizar
                         href: api/intune-deviceconfig-devicecompliancepolicydevicestatesummary-update.md
-                  - name: Política de conformidade do dispositivo
+                  - name: Script de política de conformidade de dispositivo
                     href: resources/intune-deviceconfig-devicecompliancepolicyscript.md
                   - name: Estado de configuração de política de conformidade do dispositivo
                     href: resources/intune-deviceconfig-devicecompliancepolicysettingstate.md
