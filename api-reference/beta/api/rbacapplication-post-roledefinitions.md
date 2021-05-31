@@ -5,69 +5,81 @@ localization_priority: Normal
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 92d02320b102cedf1cef95f6966d97d78ad341d3
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: e5512205b346d1005b8ce51f3ab11afa4f95a9a2
+ms.sourcegitcommit: 30903b12daf4cf2841524c57743889e23d11f85a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52051001"
+ms.lasthandoff: 05/31/2021
+ms.locfileid: "52709501"
 ---
-# <a name="create-unifiedroledefinition"></a><span data-ttu-id="ea4a2-103">Criar unifiedRoleDefinition</span><span class="sxs-lookup"><span data-stu-id="ea4a2-103">Create unifiedRoleDefinition</span></span>
+# <a name="create-unifiedroledefinition"></a><span data-ttu-id="8d951-103">Criar unifiedRoleDefinition</span><span class="sxs-lookup"><span data-stu-id="8d951-103">Create unifiedRoleDefinition</span></span>
 
-<span data-ttu-id="ea4a2-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="ea4a2-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="8d951-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="8d951-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="ea4a2-105">Crie um novo [objeto unifiedRoleDefinition.](../resources/unifiedroledefinition.md)</span><span class="sxs-lookup"><span data-stu-id="ea4a2-105">Create a new [unifiedRoleDefinition](../resources/unifiedroledefinition.md) object.</span></span>
+<span data-ttu-id="8d951-105">Crie um novo [objeto unifiedRoleDefinition](../resources/unifiedroledefinition.md) para um provedor RBAC.</span><span class="sxs-lookup"><span data-stu-id="8d951-105">Create a new [unifiedRoleDefinition](../resources/unifiedroledefinition.md) object for an RBAC provider.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="ea4a2-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="ea4a2-106">Permissions</span></span>
+<span data-ttu-id="8d951-106">No momento, há suporte para os seguintes provedores RBAC:</span><span class="sxs-lookup"><span data-stu-id="8d951-106">The following RBAC providers are currently supported:</span></span>
+- <span data-ttu-id="8d951-107">gerenciamento de dispositivos (Intune)</span><span class="sxs-lookup"><span data-stu-id="8d951-107">device management (Intune)</span></span>
+- <span data-ttu-id="8d951-108">directory (Azure AD)</span><span class="sxs-lookup"><span data-stu-id="8d951-108">directory (Azure AD)</span></span> 
 
-<span data-ttu-id="ea4a2-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="ea4a2-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+> [!NOTE]
+> <span data-ttu-id="8d951-109">No momento, o provedor RBAC do computador na nuvem dá suporte apenas à [lista](rbacapplication-list-roledefinitions.md) e [obter](unifiedroledefinition-get.md) operações.</span><span class="sxs-lookup"><span data-stu-id="8d951-109">The cloud PC RBAC provider currently supports only the [list](rbacapplication-list-roledefinitions.md) and [get](unifiedroledefinition-get.md) operations.</span></span>
 
-| <span data-ttu-id="ea4a2-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="ea4a2-109">Permission type</span></span>                        | <span data-ttu-id="ea4a2-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="ea4a2-110">Permissions (from least to most privileged)</span></span> |
-|:---------------------------------------|:--------------------------------------------|
-| <span data-ttu-id="ea4a2-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="ea4a2-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="ea4a2-112">RoleManagement.ReadWrite.Directory</span><span class="sxs-lookup"><span data-stu-id="ea4a2-112">RoleManagement.ReadWrite.Directory</span></span> |
-| <span data-ttu-id="ea4a2-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="ea4a2-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="ea4a2-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="ea4a2-114">Not supported.</span></span> |
-| <span data-ttu-id="ea4a2-115">Application</span><span class="sxs-lookup"><span data-stu-id="ea4a2-115">Application</span></span>                            | <span data-ttu-id="ea4a2-116">RoleManagement.ReadWrite.Directory</span><span class="sxs-lookup"><span data-stu-id="ea4a2-116">RoleManagement.ReadWrite.Directory</span></span> |
+## <a name="permissions"></a><span data-ttu-id="8d951-110">Permissões</span><span class="sxs-lookup"><span data-stu-id="8d951-110">Permissions</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="ea4a2-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="ea4a2-117">HTTP request</span></span>
+<span data-ttu-id="8d951-111">Dependendo do provedor RBAC e do tipo de permissão (delegado ou aplicativo) necessário, escolha na tabela a seguinte permissão com menos privilégios necessária para chamar essa API.</span><span class="sxs-lookup"><span data-stu-id="8d951-111">Depending on the RBAC provider and the permission type (delegated or application) that is needed, choose from the following table the least privileged permission required to call this API.</span></span> <span data-ttu-id="8d951-112">Para saber mais, incluindo [tomar cuidado](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) antes de escolher as permissões mais privilegiadas, pesquise as seguintes permissões em [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="8d951-112">To learn more, including [taking caution](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) before choosing more privileged permissions, search for the following permissions in [Permissions](/graph/permissions-reference).</span></span> 
 
+|<span data-ttu-id="8d951-113">Provedor com suporte</span><span class="sxs-lookup"><span data-stu-id="8d951-113">Supported provider</span></span>      | <span data-ttu-id="8d951-114">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="8d951-114">Delegated (work or school account)</span></span>  | <span data-ttu-id="8d951-115">Delegada (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="8d951-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="8d951-116">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="8d951-116">Application</span></span> |
+|:-----------------------|:------------------------------------|:---------------------------------------|:------------|
+| <span data-ttu-id="8d951-117">Gerenciamento de dispositivo</span><span class="sxs-lookup"><span data-stu-id="8d951-117">Device management</span></span> | <span data-ttu-id="8d951-118">DeviceManagementRBAC.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="8d951-118">DeviceManagementRBAC.ReadWrite.All</span></span> | <span data-ttu-id="8d951-119">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="8d951-119">Not supported.</span></span> | <span data-ttu-id="8d951-120">DeviceManagementRBAC.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="8d951-120">DeviceManagementRBAC.ReadWrite.All</span></span> |
+| <span data-ttu-id="8d951-121">Diretório</span><span class="sxs-lookup"><span data-stu-id="8d951-121">Directory</span></span> | <span data-ttu-id="8d951-122">RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All, Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="8d951-122">RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span> | <span data-ttu-id="8d951-123">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="8d951-123">Not supported.</span></span>| <span data-ttu-id="8d951-124">RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="8d951-124">RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All</span></span> |
+
+## <a name="http-request"></a><span data-ttu-id="8d951-125">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="8d951-125">HTTP request</span></span>
+
+<span data-ttu-id="8d951-126">Para criar uma definição de função para um provedor de gerenciamento de dispositivo:</span><span class="sxs-lookup"><span data-stu-id="8d951-126">To create a role definition for a device management provider:</span></span>
 <!-- { "blockType": "ignored" } -->
+```http
+POST /roleManagement/deviceManagement/roleDefinitions
+```
 
+<span data-ttu-id="8d951-127">Para criar uma definição de função para um provedor de diretórios:</span><span class="sxs-lookup"><span data-stu-id="8d951-127">To create a role definition for a directory provider:</span></span>
+<!-- { "blockType": "ignored" } -->
 ```http
 POST /roleManagement/directory/roleDefinitions
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="ea4a2-118">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="ea4a2-118">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="8d951-128">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="8d951-128">Request headers</span></span>
 
-| <span data-ttu-id="ea4a2-119">Nome</span><span class="sxs-lookup"><span data-stu-id="ea4a2-119">Name</span></span>          | <span data-ttu-id="ea4a2-120">Descrição</span><span class="sxs-lookup"><span data-stu-id="ea4a2-120">Description</span></span>   |
+| <span data-ttu-id="8d951-129">Nome</span><span class="sxs-lookup"><span data-stu-id="8d951-129">Name</span></span>          | <span data-ttu-id="8d951-130">Descrição</span><span class="sxs-lookup"><span data-stu-id="8d951-130">Description</span></span>   |
 |:--------------|:--------------|
-| <span data-ttu-id="ea4a2-121">Autorização</span><span class="sxs-lookup"><span data-stu-id="ea4a2-121">Authorization</span></span> | <span data-ttu-id="ea4a2-122">Portador {token}</span><span class="sxs-lookup"><span data-stu-id="ea4a2-122">Bearer {token}</span></span> |
+| <span data-ttu-id="8d951-131">Autorização</span><span class="sxs-lookup"><span data-stu-id="8d951-131">Authorization</span></span> | <span data-ttu-id="8d951-132">Portador {token}</span><span class="sxs-lookup"><span data-stu-id="8d951-132">Bearer {token}</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="ea4a2-123">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="ea4a2-123">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="8d951-133">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="8d951-133">Request body</span></span>
 
-<span data-ttu-id="ea4a2-124">No corpo da solicitação, fornece uma representação JSON do [objeto unifiedRoleDefinition.](../resources/unifiedroledefinition.md)</span><span class="sxs-lookup"><span data-stu-id="ea4a2-124">In the request body, supply a JSON representation of [unifiedRoleDefinition](../resources/unifiedroledefinition.md) object.</span></span>
+<span data-ttu-id="8d951-134">No corpo da solicitação, fornece uma representação JSON do [objeto unifiedRoleDefinition.](../resources/unifiedroledefinition.md)</span><span class="sxs-lookup"><span data-stu-id="8d951-134">In the request body, supply a JSON representation of [unifiedRoleDefinition](../resources/unifiedroledefinition.md) object.</span></span>
 
-<span data-ttu-id="ea4a2-125">A tabela a seguir mostra as propriedades que são necessárias ao criar uma roleDefinition.</span><span class="sxs-lookup"><span data-stu-id="ea4a2-125">The following table shows the properties that are required when you create a roleDefinition.</span></span>
+<span data-ttu-id="8d951-135">A tabela a seguir mostra as propriedades que são necessárias ao criar uma roleDefinition.</span><span class="sxs-lookup"><span data-stu-id="8d951-135">The following table shows the properties that are required when you create a roleDefinition.</span></span>
 
-| <span data-ttu-id="ea4a2-126">Parâmetro</span><span class="sxs-lookup"><span data-stu-id="ea4a2-126">Parameter</span></span> | <span data-ttu-id="ea4a2-127">Tipo</span><span class="sxs-lookup"><span data-stu-id="ea4a2-127">Type</span></span> | <span data-ttu-id="ea4a2-128">Descrição</span><span class="sxs-lookup"><span data-stu-id="ea4a2-128">Description</span></span>|
+| <span data-ttu-id="8d951-136">Parâmetro</span><span class="sxs-lookup"><span data-stu-id="8d951-136">Parameter</span></span> | <span data-ttu-id="8d951-137">Tipo</span><span class="sxs-lookup"><span data-stu-id="8d951-137">Type</span></span> | <span data-ttu-id="8d951-138">Descrição</span><span class="sxs-lookup"><span data-stu-id="8d951-138">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="ea4a2-129">displayName</span><span class="sxs-lookup"><span data-stu-id="ea4a2-129">displayName</span></span> |<span data-ttu-id="ea4a2-130">cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="ea4a2-130">string</span></span> |<span data-ttu-id="ea4a2-131">O nome de exibição da definição de função.</span><span class="sxs-lookup"><span data-stu-id="ea4a2-131">The display name for the role definition.</span></span>|
-|<span data-ttu-id="ea4a2-132">isEnabled</span><span class="sxs-lookup"><span data-stu-id="ea4a2-132">isEnabled</span></span> |<span data-ttu-id="ea4a2-133">Booliano</span><span class="sxs-lookup"><span data-stu-id="ea4a2-133">Boolean</span></span> |<span data-ttu-id="ea4a2-134">Sinalizador indicando se a função está habilitada para atribuição.</span><span class="sxs-lookup"><span data-stu-id="ea4a2-134">Flag indicating if the role is enabled for assignment.</span></span> <span data-ttu-id="ea4a2-135">Se for false, a função não estará disponível para atribuição.</span><span class="sxs-lookup"><span data-stu-id="ea4a2-135">If false the role is not available for assignment.</span></span>|
-|<span data-ttu-id="ea4a2-136">rolePermissions</span><span class="sxs-lookup"><span data-stu-id="ea4a2-136">rolePermissions</span></span> |<span data-ttu-id="ea4a2-137">[Coleção unifiedRolePermission](../resources/unifiedrolepermission.md)</span><span class="sxs-lookup"><span data-stu-id="ea4a2-137">[unifiedRolePermission](../resources/unifiedrolepermission.md) collection</span></span> |<span data-ttu-id="ea4a2-138">Lista de permissões incluídas na função.</span><span class="sxs-lookup"><span data-stu-id="ea4a2-138">List of permissions included in the role.</span></span>|
+|<span data-ttu-id="8d951-139">displayName</span><span class="sxs-lookup"><span data-stu-id="8d951-139">displayName</span></span> |<span data-ttu-id="8d951-140">string</span><span class="sxs-lookup"><span data-stu-id="8d951-140">string</span></span> |<span data-ttu-id="8d951-141">O nome de exibição da definição de função.</span><span class="sxs-lookup"><span data-stu-id="8d951-141">The display name for the role definition.</span></span>|
+|<span data-ttu-id="8d951-142">isEnabled</span><span class="sxs-lookup"><span data-stu-id="8d951-142">isEnabled</span></span> |<span data-ttu-id="8d951-143">Booliano</span><span class="sxs-lookup"><span data-stu-id="8d951-143">Boolean</span></span> |<span data-ttu-id="8d951-144">Sinalizador indicando se a função está habilitada para atribuição.</span><span class="sxs-lookup"><span data-stu-id="8d951-144">Flag indicating if the role is enabled for assignment.</span></span> <span data-ttu-id="8d951-145">Se for false, a função não estará disponível para atribuição.</span><span class="sxs-lookup"><span data-stu-id="8d951-145">If false the role is not available for assignment.</span></span>|
+|<span data-ttu-id="8d951-146">rolePermissions</span><span class="sxs-lookup"><span data-stu-id="8d951-146">rolePermissions</span></span> |<span data-ttu-id="8d951-147">[Coleção unifiedRolePermission](../resources/unifiedrolepermission.md)</span><span class="sxs-lookup"><span data-stu-id="8d951-147">[unifiedRolePermission](../resources/unifiedrolepermission.md) collection</span></span> |<span data-ttu-id="8d951-148">Lista de permissões incluídas na função.</span><span class="sxs-lookup"><span data-stu-id="8d951-148">List of permissions included in the role.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="ea4a2-139">Resposta</span><span class="sxs-lookup"><span data-stu-id="ea4a2-139">Response</span></span>
+## <a name="response"></a><span data-ttu-id="8d951-149">Resposta</span><span class="sxs-lookup"><span data-stu-id="8d951-149">Response</span></span>
 
-<span data-ttu-id="ea4a2-140">Se tiver êxito, este método retornará `201 Created` o código de resposta e um novo objeto [unifiedRoleDefinition](../resources/unifiedroledefinition.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="ea4a2-140">If successful, this method returns `201 Created` response code and a new [unifiedRoleDefinition](../resources/unifiedroledefinition.md) object in the response body.</span></span>
+<span data-ttu-id="8d951-150">Se tiver êxito, este método retornará `201 Created` o código de resposta e um novo objeto [unifiedRoleDefinition](../resources/unifiedroledefinition.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="8d951-150">If successful, this method returns `201 Created` response code and a new [unifiedRoleDefinition](../resources/unifiedroledefinition.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="ea4a2-141">Exemplo</span><span class="sxs-lookup"><span data-stu-id="ea4a2-141">Example</span></span>
+## <a name="example"></a><span data-ttu-id="8d951-151">Exemplo</span><span class="sxs-lookup"><span data-stu-id="8d951-151">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="ea4a2-142">Solicitação</span><span class="sxs-lookup"><span data-stu-id="ea4a2-142">Request</span></span>
+### <a name="request"></a><span data-ttu-id="8d951-152">Solicitação</span><span class="sxs-lookup"><span data-stu-id="8d951-152">Request</span></span>
 
-<span data-ttu-id="ea4a2-143">A seguir, um exemplo de criação de uma função personalizada.</span><span class="sxs-lookup"><span data-stu-id="ea4a2-143">The following is an example of creating a custom role.</span></span>
+<span data-ttu-id="8d951-153">A seguir, um exemplo de criação de uma função personalizada para um provedor de diretórios.</span><span class="sxs-lookup"><span data-stu-id="8d951-153">The following is an example of creating a custom role for a directory provider.</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="ea4a2-144">HTTP</span><span class="sxs-lookup"><span data-stu-id="ea4a2-144">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="8d951-154">HTTP</span><span class="sxs-lookup"><span data-stu-id="8d951-154">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_unifiedroledefinition_from_rbacapplication"
@@ -92,29 +104,29 @@ Content-type: application/json
     "isEnabled" : "true"
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="ea4a2-145">C#</span><span class="sxs-lookup"><span data-stu-id="ea4a2-145">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="8d951-155">C#</span><span class="sxs-lookup"><span data-stu-id="8d951-155">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-unifiedroledefinition-from-rbacapplication-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="ea4a2-146">JavaScript</span><span class="sxs-lookup"><span data-stu-id="ea4a2-146">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="8d951-156">JavaScript</span><span class="sxs-lookup"><span data-stu-id="8d951-156">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-unifiedroledefinition-from-rbacapplication-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="ea4a2-147">Objective-C</span><span class="sxs-lookup"><span data-stu-id="ea4a2-147">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="8d951-157">Objective-C</span><span class="sxs-lookup"><span data-stu-id="8d951-157">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-unifiedroledefinition-from-rbacapplication-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="ea4a2-148">Java</span><span class="sxs-lookup"><span data-stu-id="ea4a2-148">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="8d951-158">Java</span><span class="sxs-lookup"><span data-stu-id="8d951-158">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-unifiedroledefinition-from-rbacapplication-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="ea4a2-149">Resposta</span><span class="sxs-lookup"><span data-stu-id="ea4a2-149">Response</span></span>
+### <a name="response"></a><span data-ttu-id="8d951-159">Resposta</span><span class="sxs-lookup"><span data-stu-id="8d951-159">Response</span></span>
 
-<span data-ttu-id="ea4a2-150">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="ea4a2-150">The following is an example of the response.</span></span>
-> <span data-ttu-id="ea4a2-151">**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.</span><span class="sxs-lookup"><span data-stu-id="ea4a2-151">**Note:** The response object shown here might be shortened for readability.</span></span>
+<span data-ttu-id="8d951-160">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="8d951-160">The following is an example of the response.</span></span>
+> <span data-ttu-id="8d951-161">**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.</span><span class="sxs-lookup"><span data-stu-id="8d951-161">**Note:** The response object shown here might be shortened for readability.</span></span>
 
 <!-- {
   "blockType": "response",
