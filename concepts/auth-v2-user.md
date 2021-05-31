@@ -5,12 +5,12 @@ author: jackson-woods
 localization_priority: Priority
 ms.prod: applications
 ms.custom: graphiamtop20
-ms.openlocfilehash: dfa698c43a9870f4f3c1521dd565404b319d0f6f
-ms.sourcegitcommit: 9bc1652890fe49d7ad5e5b7177c8a682b1759b75
+ms.openlocfilehash: 009882486b8d9cf734438487039fe32c3da6cb05
+ms.sourcegitcommit: 612e1d796023433c6e15a9d66ba99d9bdc424cee
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52100090"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "52703605"
 ---
 # <a name="get-access-on-behalf-of-a-user"></a>Obter acesso em nome de um usuário
 
@@ -40,13 +40,13 @@ Para saber como configurar um aplicativo no portal do Azure, confira [Registrar 
 
 ## <a name="2-get-authorization"></a>2. Obter autorização
 
-A primeira etapa para obter um token de acesso para muitos fluxos do OpenID Connect e do OAuth 2.0 é redirecionar o usuário para o ponto de extremidade `/authorize` da plataforma de identidade da Microsoft. O Azure AD conectará o usuário e garantirá seu consentimento para as permissões solicitadas pelo seu aplicativo. No fluxo de concessão do código de autorização, depois de obter o consentimento, o Azure AD retorna um authorization_code para o aplicativo que pode resgatá-lo no ponto de extremidade `/token` da plataforma de identidade da Microsoft para obter um token de acesso.
+A primeira etapa para obter acesso a um token para muitos fluxos do OpenID Connect e do OAuth 2.0 é redirecionar o usuário para o ponto de extremidade `/authorize` da plataforma de identidade da Microsoft. O Azure AD conectará o usuário e garantirá seu consentimento para as permissões solicitadas pelo seu aplicativo. No fluxo de concessão do código de autorização, depois de obter o consentimento, o Microsoft Azure AD retornará um authorization_code para o aplicativo que pode resgatá-lo no ponto de extremidade `/token` da plataforma de identidade da Microsoft para obter um token de acesso.
 
 ### <a name="authorization-request"></a>Solicitação de autorização
 
 Veja a seguir um exemplo de solicitação para o ponto de extremidade `/authorize`.
 
-Com o ponto de extremidade da plataforma de identidade da Microsoft, as permissões são solicitadas usando o parâmetro `scope`. Neste exemplo, as permissões do Microsoft Graph solicitadas são para _User.Read_ e _Mail.Read_, o que permitirá que o aplicativo leia o perfil e o email do usuário conectado. A permissão de _acesso\_online_ é solicitada para que o aplicativo possa obter um token de atualização que pode ser usado para obter um novo token de acesso quando o atual expirar.
+Com o ponto de extremidade da plataforma de identidade da Microsoft, as permissões são solicitadas usando o parâmetro `scope`. Neste exemplo, as permissões do Microsoft Graph solicitadas são para _User.Read_ e _Mail.Read_, o que permitirá que o aplicativo leia o perfil e o email do usuário conectado. A permissão _offline\_ access_ é solicitada para que o aplicativo possa obter um token de atualização que pode ser usado para obter um novo token de acesso quando o atual expirar.
 
 ```
 // Line breaks for legibility only
@@ -66,7 +66,7 @@ client_id=6731de76-14a6-49ae-97bc-6eba6914391e
 | client_id     | obrigatório    | A ID do Aplicativo atribuída ao seu aplicativo no [portal de registro](https://go.microsoft.com/fwlink/?linkid=2083908).                                                                                                                                                                                                                                                                                                                                                                                   |
 | response_type | obrigatório    | Pode incluir `code` para o fluxo do código de autorização.                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
 | redirect_uri  | recomendado | A redirect_uri de seu aplicativo, onde as respostas de autenticação podem ser enviadas e recebidas pelo seu aplicativo.  Ela deve corresponder exatamente a uma das redirect_uris registradas no portal de registro de aplicativos, exceto que ela deve ser codificada por URL.  Para aplicativos nativos e móveis, você deve usar o valor padrão de `https://login.microsoftonline.com/common/oauth2/nativeclient`.                                                                                                                                       |
-| escopo         | obrigatório    | Uma lista separada por espaços das permissões do Microsoft Graph que você deseja que o usuário concorde. Isso também pode incluir escopos do OpenID.                                                                                                                                                                                                                                                                                                                                                                    |
+| escopo         | obrigatório    | Uma lista separada por espaços das permissões do Microsoft Graph que você deseja que o usuário concorde. O escopo `offline_access` indica que seu aplicativo precisa de um token de atualização para um acesso de longa duração aos recursos. Você também pode incluir escopos do OpenID.                                                                                                                                                                                                                                                                                                                                                                  |
 | response_mode | recomendado | Especifica o método que deve ser usado para enviar o token resultante de volta para seu aplicativo.  Pode ser `query` ou `form_post`.                                                                                                                                                                                                                                                                                                                                                                                  |
 | estado         | recomendado | Um valor incluído na solicitação que também será retornado na resposta do token.  Pode ser uma cadeia de caracteres de qualquer conteúdo desejado.  Um valor exclusivo gerado aleatoriamente é tipicamente usado para [impedir ataques de solicitação entre sites forjada](https://tools.ietf.org/html/rfc6749#section-10.12).  O estado também é usado para codificar as informações sobre o estado do usuário no aplicativo antes da solicitação de autenticação ter ocorrido, como a página ou o modo de exibição em que ele estava.                                     |
 
@@ -74,7 +74,7 @@ client_id=6731de76-14a6-49ae-97bc-6eba6914391e
 
 ### <a name="consent-experience"></a>Experiência de consentimento
 
-Neste ponto, o usuário será solicitado a digitar suas credenciais para autenticar usando a Microsoft. O ponto de extremidade v2.0 da plataforma de identidade da Microsoft também assegurará que o usuário concordou com as permissões indicadas no parâmetro de consulta `scope`.  Se o usuário não tiver concordado com nenhuma dessas permissões e se um administrador não tiver concordado previamente em nome de todos os usuários na organização, será solicitado aos usuários que autorizem as permissões necessárias.
+Neste ponto, o usuário será solicitado a inserir suas credenciais para autenticar no Microsoft. O ponto de extremidade v2.0 da plataforma de identidade da Microsoft também garantirá que o usuário consinta com as permissões indicadas no parâmetro de consulta `scope`. Se o usuário não consentir com nenhuma dessas permissões e se um administrador não tiver consentido anteriormente em nome de todos os usuários na organização, ele será solicitado a concordar com as permissões necessárias.
 
 O exemplo a seguir mostra a caixa de diálogo de consentimento apresentada para uma conta de usuário da Microsoft.
 
@@ -251,11 +251,11 @@ Você pode chamar o Microsoft Graph em nome de um usuário a partir dos seguinte
 - [Aplicativos Nativos/Móveis](/azure/active-directory/develop/scenario-mobile-overview)
 - [Aplicativos Web](/azure/active-directory/develop/scenario-web-app-call-api-overview)
 - [Aplicativos de página única (SPA)](/azure/active-directory/develop/scenario-spa-overview)
-- [Back-end de APIs da Web](/azure/active-directory/develop/scenario-web-app-call-api-overview): por exemplo, em cenários onde um aplicativo de cliente, como um aplicativo nativo, implementa a funcionalidade em um back-end da API da Web. Com o ponto de extremidade da plataforma de identidade da Microsoft, tanto o aplicativo de cliente quanto o back-end da API da Web devem ter a mesma ID do Aplicativo.
+- [APIs da Web de back-end](/azure/active-directory/develop/scenario-web-app-call-api-overview): por exemplo, em cenários em que um aplicativo cliente, como um aplicativo nativo, implementa funcionalidade em um back-end de API da Web. Com o ponto de extremidade da plataforma de identidade da Microsoft, o aplicativo cliente e a API da Web de back-end devem ter a mesma ID de Aplicativo.
 
 Para saber mais sobre os cenários de aplicativo compatíveis com o ponto de extremidade da plataforma de identidade da Microsoft, consulte [Cenários de aplicativo e fluxos de autenticação](/azure/active-directory/develop/authentication-flows-app-scenarios).
 
-> **Observação**: chamar o Microsoft Graph a partir de uma API da Web autônoma atualmente não tem suporte do ponto de extremidade da plataforma de identidade da Microsoft. Nesse caso, você precisa usar o ponto de extremidade do Azure AD.
+> **Observação**: Chamar o Microsoft Graph a partir de uma API da Web autônoma atualmente não tem suporte do ponto de extremidade da plataforma de identidade da Microsoft. Nesse cenário, você precisa usar o ponto de extremidade do Azure AD.
 
 Para obter mais informações sobre como obter acesso ao Microsoft Graph em nome de um usuário a partir do ponto de extremidade da plataforma de identidade da Microsoft:
 
@@ -280,4 +280,5 @@ Para obter mais informações sobre como obter acesso ao Microsoft Graph em nome
 
 ## <a name="see-also"></a>Confira também
 
-Para obter um exemplo de um aplicativo Web hospedado no Serviço de Aplicativo do Azure chamando o Microsoft Graph como o usuário, confira [Tutorial: acesse o Microsoft Graph de um aplicativo seguro como o usuário](/azure/app-service/scenario-secure-app-access-microsoft-graph-as-user). Aprenda como conceder permissões delegadas a um aplicativo da web, configurar o serviço de aplicativo para obter um token de acesso e chamar o Microsoft Graph de um aplicativo da web para um usuário conectado.
+- Para obter um exemplo de um aplicativo Web hospedado no Serviço de Aplicativo do Azure chamando o Microsoft Graph como o usuário, confira [Tutorial: acesse o Microsoft Graph de um aplicativo seguro como o usuário](/azure/app-service/scenario-secure-app-access-microsoft-graph-as-user). Aprenda como conceder permissões delegadas a um aplicativo da web, configurar o serviço de aplicativo para obter um token de acesso e chamar o Microsoft Graph de um aplicativo da web para um usuário conectado.
+- Para exemplos de uso da plataforma de identidade da Microsoft para garantir diferentes tipos de aplicativos, confira [Exemplos de código da plataforma de identidade da Microsoft (ponto de extremidade v2.0)](/azure/active-directory/develop/sample-v2-code).
