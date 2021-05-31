@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 92d02320b102cedf1cef95f6966d97d78ad341d3
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: e5512205b346d1005b8ce51f3ab11afa4f95a9a2
+ms.sourcegitcommit: 30903b12daf4cf2841524c57743889e23d11f85a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52051001"
+ms.lasthandoff: 05/31/2021
+ms.locfileid: "52709501"
 ---
 # <a name="create-unifiedroledefinition"></a>Criar unifiedRoleDefinition
 
@@ -18,22 +18,34 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Crie um novo [objeto unifiedRoleDefinition.](../resources/unifiedroledefinition.md)
+Crie um novo [objeto unifiedRoleDefinition](../resources/unifiedroledefinition.md) para um provedor RBAC.
+
+No momento, há suporte para os seguintes provedores RBAC:
+- gerenciamento de dispositivos (Intune)
+- directory (Azure AD) 
+
+> [!NOTE]
+> No momento, o provedor RBAC do computador na nuvem dá suporte apenas à [lista](rbacapplication-list-roledefinitions.md) e [obter](unifiedroledefinition-get.md) operações.
 
 ## <a name="permissions"></a>Permissões
 
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
+Dependendo do provedor RBAC e do tipo de permissão (delegado ou aplicativo) necessário, escolha na tabela a seguinte permissão com menos privilégios necessária para chamar essa API. Para saber mais, incluindo [tomar cuidado](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) antes de escolher as permissões mais privilegiadas, pesquise as seguintes permissões em [Permissões](/graph/permissions-reference). 
 
-| Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
-|:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | RoleManagement.ReadWrite.Directory |
-| Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Application                            | RoleManagement.ReadWrite.Directory |
+|Provedor com suporte      | Delegado (conta corporativa ou de estudante)  | Delegada (conta pessoal da Microsoft) | Aplicativo |
+|:-----------------------|:------------------------------------|:---------------------------------------|:------------|
+| Gerenciamento de dispositivo | DeviceManagementRBAC.ReadWrite.All | Sem suporte. | DeviceManagementRBAC.ReadWrite.All |
+| Diretório | RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All, Directory.AccessAsUser.All | Sem suporte.| RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
+Para criar uma definição de função para um provedor de gerenciamento de dispositivo:
 <!-- { "blockType": "ignored" } -->
+```http
+POST /roleManagement/deviceManagement/roleDefinitions
+```
 
+Para criar uma definição de função para um provedor de diretórios:
+<!-- { "blockType": "ignored" } -->
 ```http
 POST /roleManagement/directory/roleDefinitions
 ```
@@ -52,7 +64,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar uma role
 
 | Parâmetro | Tipo | Descrição|
 |:---------------|:--------|:----------|
-|displayName |cadeia de caracteres |O nome de exibição da definição de função.|
+|displayName |string |O nome de exibição da definição de função.|
 |isEnabled |Booliano |Sinalizador indicando se a função está habilitada para atribuição. Se for false, a função não estará disponível para atribuição.|
 |rolePermissions |[Coleção unifiedRolePermission](../resources/unifiedrolepermission.md) |Lista de permissões incluídas na função.|
 
@@ -64,7 +76,7 @@ Se tiver êxito, este método retornará `201 Created` o código de resposta e u
 
 ### <a name="request"></a>Solicitação
 
-A seguir, um exemplo de criação de uma função personalizada.
+A seguir, um exemplo de criação de uma função personalizada para um provedor de diretórios.
 
 
 # <a name="http"></a>[HTTP](#tab/http)

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 0e7c38a8f388492fd4ca079993419d566f7ad8d6
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 47ff9ff4c40360ddb28d5d6d344ca1d7375cc119
+ms.sourcegitcommit: 30903b12daf4cf2841524c57743889e23d11f85a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52053395"
+ms.lasthandoff: 05/31/2021
+ms.locfileid: "52709490"
 ---
 # <a name="update-unifiedroledefinition"></a>Atualizar unifiedRoleDefinition
 
@@ -18,22 +18,34 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Atualize as propriedades de [um objeto unifiedRoleDefinition.](../resources/unifiedroledefinition.md)
+Atualize as propriedades de [um objeto unifiedRoleDefinition](../resources/unifiedroledefinition.md) para um provedor RBAC.
+
+No momento, há suporte para os seguintes provedores RBAC:
+- gerenciamento de dispositivos (Intune)
+- directory (Azure AD) 
+
+> [!NOTE]
+> No momento, o provedor RBAC do computador na nuvem dá suporte apenas à [lista](rbacapplication-list-roledefinitions.md) e [obter](unifiedroledefinition-get.md) operações.
 
 ## <a name="permissions"></a>Permissões
 
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
+Dependendo do provedor RBAC e do tipo de permissão (delegado ou aplicativo) necessário, escolha na tabela a seguinte permissão com menos privilégios necessária para chamar essa API. Para saber mais, incluindo [tomar cuidado](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) antes de escolher as permissões mais privilegiadas, pesquise as seguintes permissões em [Permissões](/graph/permissions-reference). 
 
-| Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
-|:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | RoleManagement.ReadWrite.Directory |
-| Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Application                            | RoleManagement.ReadWrite.Directory |
+|Provedor com suporte      | Delegado (conta corporativa ou de estudante)  | Delegada (conta pessoal da Microsoft) | Aplicativo |
+|:-----------------------|:------------------------------------|:---------------------------------------|:------------|
+| Gerenciamento de dispositivo | DeviceManagementRBAC.ReadWrite.All | Sem suporte. | DeviceManagementRBAC.ReadWrite.All |
+| Diretório | RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All, Directory.AccessAsUser.All | Sem suporte.| RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
+Para atualizar uma definição de função para um provedor de gerenciamento de dispositivos:
 <!-- { "blockType": "ignored" } -->
+```http
+PATCH /roleManagement/deviceManagement/roleDefinitions/{id}
+```
 
+Para atualizar uma definição de função para um provedor de diretórios:
+<!-- { "blockType": "ignored" } -->
 ```http
 PATCH /roleManagement/directory/roleDefinitions/{id}
 ```
@@ -50,14 +62,14 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|description|String| A descrição da definição de função. Somente leitura quando isBuiltIn for true. |
-|displayName|String| O nome de exibição da definição de função. Somente leitura quando isBuiltIn for true. Obrigatório.|
-|id|String| O identificador exclusivo para a definição de função. Chave, não anulada, somente leitura. |
+|description|Cadeia de caracteres| A descrição da definição de função. Somente leitura quando isBuiltIn for true. |
+|displayName|Cadeia de caracteres| O nome de exibição da definição de função. Somente leitura quando isBuiltIn for true. Obrigatório.|
+|id|Cadeia de caracteres| O identificador exclusivo para a definição de função. Chave, não anulada, somente leitura. |
 |isBuiltIn|Booliano| Sinalizador indicando se a definição de função faz parte do conjunto padrão incluído no produto ou personalizado. Somente leitura. |
 |isEnabled|Booliano| Sinalizador indicando se a função está habilitada para atribuição. Se for false, a função não estará disponível para atribuição. Somente leitura quando isBuiltIn for true. |
 |resourceScopes|Coleção de cadeias de caracteres| Lista de permissões de escopo concedidas pela definição de função a que se aplicam. Atualmente, apenas "/" é suportado. Somente leitura quando isBuiltIn for true. **NÃO USE. Essa propriedade será preterida em breve. Anexar escopo à atribuição de função.**|
 |rolePermissions|[Coleção unifiedRolePermission](../resources/unifiedrolepermission.md)| Lista de permissões incluídas na função. Somente leitura quando isBuiltIn for true. Obrigatório. |
-|templateId|String| Identificador de modelo personalizado que pode ser definido quando isBuiltIn é false. Esse identificador normalmente é usado se um identificador precisa ser o mesmo em diretórios diferentes. Somente leitura quando isBuiltIn for true. |
+|templateId|Cadeia de caracteres| Identificador de modelo personalizado que pode ser definido quando isBuiltIn é false. Esse identificador normalmente é usado se um identificador precisa ser o mesmo em diretórios diferentes. Somente leitura quando isBuiltIn for true. |
 |inheritsPermissionsFrom| [Coleção unifiedRoleDefinition](../resources/unifiedroledefinition.md)| Coleção somente leitura de definições de função que a definição de função determinada herda. Somente funções do Azure AD integrados suportam esse atributo. |
 |versão|String| Indica a versão da definição de função. Somente leitura quando isBuiltIn for true.|
 
@@ -69,7 +81,7 @@ Se tiver êxito, este método retornará um código de resposta e um `200 OK` [o
 
 ### <a name="request"></a>Solicitação
 
-Este é um exemplo de solicitação.
+O exemplo a seguir atualiza **um unifiedRoleDefinition** para um provedor de diretórios.
 
 
 # <a name="http"></a>[HTTP](#tab/http)

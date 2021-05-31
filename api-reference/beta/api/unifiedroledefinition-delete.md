@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: a3d92ecaef12cd9581add7f8c3bdd096edf205e7
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: e9f2d549cef274a536575a2671e454198dbb9f5f
+ms.sourcegitcommit: 30903b12daf4cf2841524c57743889e23d11f85a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50433485"
+ms.lasthandoff: 05/31/2021
+ms.locfileid: "52709497"
 ---
 # <a name="delete-unifiedroledefinition"></a>Excluir unifiedRoleDefinition
 
@@ -18,22 +18,34 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[Exclua um objeto unifiedRoleDefinition.](../resources/unifiedRoleDefinition.md)
+[Exclua um objeto unifiedRoleDefinition](../resources/unifiedRoleDefinition.md) para um provedor RBAC.
+
+No momento, há suporte para os seguintes provedores RBAC:
+- gerenciamento de dispositivos (Intune)
+- directory (Azure AD) 
+
+> [!NOTE]
+> No momento, o provedor RBAC do computador na nuvem dá suporte apenas à [lista](rbacapplication-list-roledefinitions.md) e [obter](unifiedroledefinition-get.md) operações.
 
 ## <a name="permissions"></a>Permissões
 
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
+Dependendo do provedor RBAC e do tipo de permissão (delegado ou aplicativo) necessário, escolha na tabela a seguinte permissão com menos privilégios necessária para chamar essa API. Para saber mais, incluindo [tomar cuidado](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) antes de escolher as permissões mais privilegiadas, pesquise as seguintes permissões em [Permissões](/graph/permissions-reference). 
 
-| Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
-|:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | RoleManagement.ReadWrite.Directory |
-| Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Aplicativo                            | RoleManagement.ReadWrite.Directory |
+|Provedor com suporte      | Delegado (conta corporativa ou de estudante)  | Delegada (conta pessoal da Microsoft) | Aplicativo |
+|:-----------------------|:------------------------------------|:---------------------------------------|:------------|
+| Gerenciamento de dispositivo | DeviceManagementRBAC.ReadWrite.All | Sem suporte. | DeviceManagementRBAC.ReadWrite.All |
+| Diretório | RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All, Directory.AccessAsUser.All | Sem suporte.| RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
+Para excluir uma definição de função para um provedor de gerenciamento de dispositivos:
 <!-- { "blockType": "ignored" } -->
+```http
+DELETE /roleManagement/deviceManagement/roleDefinitions/{id}
+```
 
+Para excluir uma definição de função para um provedor de diretórios:
+<!-- { "blockType": "ignored" } -->
 ```http
 DELETE /roleManagement/directory/roleDefinitions/{id}
 
@@ -57,7 +69,7 @@ Se bem-sucedido, este método retorna um código de resposta `204 No Content`. N
 
 ### <a name="request"></a>Solicitação
 
-Este é um exemplo de solicitação.
+O exemplo a seguir exclui um **unifiedRoleDefinition para** um provedor de diretórios.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
