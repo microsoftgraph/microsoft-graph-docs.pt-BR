@@ -9572,6 +9572,29 @@ items:
                     href: api/cloudpcprovisioningpolicy-delete.md
                   - name: Atribuir
                     href: api/cloudpcprovisioningpolicy-assign.md
+              - name: Gerenciamento de função
+                href: resources/rolemanagement.md
+                items:
+                  - name: Definição de função
+                    href: resources/unifiedroledefinition.md
+                    items:
+                      - name: Listar
+                        href: api/rbacapplication-list-roledefinitions.md
+                      - name: Obter
+                        href: api/unifiedroledefinition-get.md
+                  - name: Atribuição de função múltipla
+                    href: resources/unifiedroleassignmentmultiple.md
+                    items:
+                      - name: Listar
+                        href: api/rbacapplicationmultiple-list-roleassignments.md
+                      - name: Criar
+                        href: api/rbacapplicationmultiple-post-roleassignments.md
+                      - name: Obter
+                        href: api/unifiedroleassignmentmultiple-get.md
+                      - name: Atualizar
+                        href: api//unifiedroleassignmentmultiple-update.md
+                      - name: Excluir
+                        href: api/unifiedroleassignmentmultiple-delete.md
           - name: Atualizações do dispositivo (prévia)
             displayName: Windows updates
             items:
@@ -10551,9 +10574,9 @@ items:
                     href: resources/unifiedroleassignmentmultiple.md
                     items:
                       - name: Listar
-                        href: api/unifiedroleassignmentmultiple-list.md
+                        href: api/rbacapplicationmultiple-list-roleassignments.md
                       - name: Criar
-                        href: api/unifiedroleassignmentmultiple-post.md
+                        href: api/rbacapplicationmultiple-post-roleassignments.md
                       - name: Obter
                         href: api/unifiedroleassignmentmultiple-get.md
                       - name: Atualizar
