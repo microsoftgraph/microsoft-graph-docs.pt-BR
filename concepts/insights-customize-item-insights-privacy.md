@@ -5,12 +5,12 @@ author: simonhult
 localization_priority: Priority
 ms.prod: insights
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 65545864f1aee0a7ffb53c0d1ee3f608c5eb171f
-ms.sourcegitcommit: ecf7867ef7957b847b7530089ce30e107750adac
+ms.openlocfilehash: fd636b36a6566b2612b6f87ff4fee6b1b8fcd91d
+ms.sourcegitcommit: 91d8454bfff853905e3a5e86623fcb06931507ed
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "52698001"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52732137"
 ---
 # <a name="customizing-item-insights-privacy-in-microsoft-graph-preview"></a>Personalizando a privacidade das informações do item no Microsoft Graph (visualização)
 
@@ -63,9 +63,9 @@ Para obter a configuração de insights do item para uma organização, use o m�
 
 Por padrão, as informações do item estão habilitadas para toda a organização. É possível usar o módulo Microsoft Graph Windows PowerShell para alterar isso e desabilitar as percepções do item para todos na organização. 
 > [!NOTE]
-> O método de atualização requer permissões `User.ReadWrite` adicionais. Para criar uma sessão do Microsoft Graph com um escopo específico necessário, use o seguinte comando e concorde com as permissões solicitadas.
+> O método de atualização requer permissões `User.ReadWrite.All` adicionais. Para criar uma sessão do Microsoft Graph com um escopo específico necessário, use o seguinte comando e concorde com as permissões solicitadas.
 > ```powershell
->    Connect-MgGraph -Scopes "User.Read","User.ReadWrite"
+>    Connect-MgGraph -Scopes "User.Read.All","User.ReadWrite.All"
 > ```
 
 Usar o seguinte comando, em que você substitui `$TenantId`por sua ID de locatário do Azure Active Directory e especifica`-IsEnabledInOrganization` como `false`.

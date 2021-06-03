@@ -4,12 +4,12 @@ description: O Microsoft Graph é uma API Web RESTful que permite que você aces
 author: jackson-woods
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: e5a70d69d872d57963f658e7ff2d9e5fa088d3e9
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: 1a478adb9053face3537a445e25dd69a908b2525
+ms.sourcegitcommit: 91d8454bfff853905e3a5e86623fcb06931507ed
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52679537"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52732144"
 ---
 # <a name="use-the-microsoft-graph-api"></a>Usar a API do Microsoft Graph
 
@@ -69,7 +69,7 @@ O Microsoft Graph atualmente é compatível com duas versões: `v1.0` e `beta`.
 * O `v1.0` inclui APIs normalmente disponíveis. Use a versão 1.0 para todos os aplicativos de produção.
 * O `beta` inclui APIs que estão atualmente em modo de visualização. Como podemos apresentar alterações significativas a nossas APIs beta, recomendamos que você use a versão beta apenas para testar aplicativos em desenvolvimento. Não use APIs beta em seus aplicativos de produção.
 
-Estamos sempre buscando comentários sobre nossas APIs beta. Para fornecer comentários ou solicitar recursos, consulte nosso [fórum de ideias sobre a Plataforma para Desenvolvedores do Microsoft 365](https://techcommunity.microsoft.com/t5/microsoft-365-developer-platform/idb-p/Microsoft365DeveloperPlatform/label-name/Microsoft%20Graph).
+Estamos sempre buscando comentários sobre nossas APIs beta. Para enviar comentários ou solicitar recursos, confira nossa página [fórum de ideias da plataforma de desenvolvedores do Microsoft 365](https://techcommunity.microsoft.com/t5/microsoft-365-developer-platform/idb-p/Microsoft365DeveloperPlatform/label-name/Microsoft%20Graph).
 
 Para saber mais sobre as versões da API, veja [Suporte e controle de versão](versioning-and-support.md).
 
@@ -77,7 +77,7 @@ Para saber mais sobre as versões da API, veja [Suporte e controle de versão](v
 
 Um recurso pode ser uma entidade ou tipo complexo, normalmente definido com propriedades. As entidades são diferentes de tipos complexos, incluindo sempre uma propriedade de **id**.
 
-Sua URL incluirá um ou mais recursos com que você está interagindo na solicitação, como `me`, **usuário**, **grupo**, **unidade** e **site**. Frequentemente, cada um dos recursos de nível superior também inclui _relações_, que podem ser usadas para acessar recursos adicionais, como `me/messages` ou `me/drive`. Você também pode interagir com os recursos usando _métodos_; por exemplo, para enviar um email, use `me/sendMail`. Para mais informações, confira [Acessar dados e métodos ao navegar no Microsoft Graph](traverse-the-graph.md).
+Sua URL incluirá um ou mais recursos com os quais você está interagindo, como `me`, **usuário**, **grupo**, **unidade** e **site**. Muitas vezes, os recursos de nível superior também incluem _relações_, que você pode usar para acessar recursos adicionais, como `me/messages` ou `me/drive`. Você também pode interagir com os recursos usando _métodos_; para enviar um email, use `me/sendMail`. Para obter mais informações, confira [Acessar dados e métodos navegando no Microsoft Graph](traverse-the-graph.md).
 
 Cada recurso pode exigir diferentes permissões de acesso. Muitas vezes será necessário um nível mais alto de permissões para criar ou atualizar um recurso do que para lê-lo. Para obter detalhes sobre as permissões necessárias, veja o tópico de referência do método. 
 
@@ -113,7 +113,7 @@ GET https://graph.microsoft.com/me/calendarView?startDateTime=2019-09-01T09:00:0
 
 ### <a name="graph-explorer"></a>Explorador do Graph
 
-O Explorador do Graph é uma ferramenta baseada na Web que você pode usar para criar e testar solicitações usando as APIs do Microsoft Graph. Você pode acessar o Explorador do Graph em: `https://developer.microsoft.com/graph/graph-explorer`.
+O Explorador do Graph é uma ferramenta baseada na Web que você pode usar para criar e testar solicitações usando as APIs do Microsoft Graph. Você pode acessar o Explorador do Graph em: [https://developer.microsoft.com/graph/graph-explorer](https://developer.microsoft.com/graph/graph-explorer).
 
 Você pode acessar os dados de demonstração sem fazer logon, ou pode fazer logon em um locatário de sua preferência. Use as etapas a seguir para criar a solicitação:
 
@@ -132,10 +132,10 @@ Um código de status e uma mensagem são exibidos depois que uma solicitação �
 
 ### <a name="postman"></a>Postman
 
-O Postman é uma ferramenta que você pode usar para criar e testar solicitações usando as APIs do Microsoft Graph. Você pode baixar o Postman em: `https://www.getpostman.com/`. Para interagir com o Microsoft Graph no Postman, use a coleção do Microsoft Graph.
+O Postman é uma ferramenta que você pode usar para criar e testar solicitações usando as APIs do Microsoft Graph. Você pode baixar o Postman em: [https://www.getpostman.com/](https://www.getpostman.com/). Para interagir com o Microsoft Graph no Postman, use a coleção do Microsoft Graph.
 
 Para obter mais informações, confira [Usar o Postman com a API do Microsoft Graph](./use-postman.md).
 
 ## <a name="next-steps"></a>Próximas etapas
 
-Você está pronto para começar a trabalhar com o Microsoft Graph. Experimente o [Início rápido](https://developer.microsoft.com/graph/quick-start), ou comece a usar um de nossos [SDKs e exemplos de código](https://developer.microsoft.com/graph/code-samples-and-sdks).
+Você está pronto para começar a usar o Microsoft Graph. Experimente o [Início rápido](https://developer.microsoft.com/graph/quick-start) ou comece usando um de nossos [SDKs e exemplos de código](https://developer.microsoft.com/graph/code-samples-and-sdks).

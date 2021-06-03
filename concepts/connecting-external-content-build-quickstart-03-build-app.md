@@ -10,6 +10,9 @@ Nesta etapa, você criará um aplicativo de console .NET Core. Depois disso, voc
 
 ![Captura de tela da seção "Configurar seu novo projeto"](images/connectors-images/build7.png)
 
+> [!IMPORTANT]
+> Antes de mover para a próxima etapa, copie o arquivo ApplianceParts.csv para a pasta raiz do projeto.
+
 ## <a name="add-nuget-packages"></a>Adicionar pacotes NuGet
 
 Para adicionar NuGet pacotes, primeiro clique com o botão direito do **mouse Project Solução** e selecione Abrir no **Terminal**.
@@ -26,6 +29,16 @@ dotnet add package Microsoft.Extensions.Configuration.UserSecrets --version 3.1.
 dotnet add package Microsoft.Graph.Beta --version 0.17.0-preview
 dotnet add package Microsoft.Identity.Client --version 4.13.0
 ```
+
+> [!TIP]
+> Se o `add package` comando falhar, verifique a Fonte **do Pacote** do seu projeto:
+> 1. Selecione o projeto no Explorador de Soluções.
+> 2. Vá para Ferramentas > Nuget Gerenciador de Pacotes > Gerenciador de Pacotes Configurações.
+> 3. Verifique as Fontes de Pacote e verifique se nuget.&#65279;org está instalado como fonte de pacote.
+>     * Nome: nuget.&#65279;org
+>     *  Fonte: https&#65279;://api.nuget.org/v3/index.json
+
+<!---Used "&#65279;" to prevent auto-generated links --->
 
 ## <a name="add-azure-ad-authentication"></a>Adicionar autenticação do Azure AD
 
@@ -321,7 +334,7 @@ using Newtonsoft.Json.Serialization;
 using System;
 using System.IO;
 
-namespace PartsInventoryConnector.Graph
+namespace PartsInventoryConnector.MicrosoftGraph
 {
     // The Microsoft Graph SDK serializes enumerations in camelCase.
     // The Microsoft Graph service currently requires the PropertyType enum
@@ -393,7 +406,7 @@ namespace PartsInventoryConnector.Graph
 
 3. Crie um novo arquivo no **diretório microsoft Graph** chamado MicrosoftGraphHelper.cs e coloque o código abaixo nesse arquivo.
 
-O código a seguir contém métodos que usam o **MicrosoftGraphServiceClient** para criar e enviar chamadas para o serviço microsoft Graph e processar a resposta.
+    O código a seguir contém métodos que usam o **MicrosoftGraphServiceClient** para criar e enviar chamadas para o serviço microsoft Graph e processar a resposta.
 
 ```c
 // Copyright (c) Microsoft Corporation. All rights reserved.
@@ -403,11 +416,11 @@ using Newtonsoft.Json;
 using System.Net.Http;
 using System.Threading.Tasks;
 
-namespace PartsInventoryConnector.Graph
+namespace PartsInventoryConnector.MicrosoftGraph
 {
     public class MicrosoftGraphHelper
     {
-        private MicrosoftGraphServiceClient _microsoftGraphClient;
+        private class MicrosoftGraphServiceClient _microsoftGraphClient;
 
         public MicrosoftGraphHelper(IAuthenticationProvider authProvider)
         {
@@ -434,7 +447,7 @@ using Microsoft.Graph;
 using PartsInventoryConnector.Authentication;
 using PartsInventoryConnector.Console;
 using PartsInventoryConnector.Data;
-using PartsInventoryConnector.Graph;
+using PartsInventoryConnector.MicrosoftGraph;
 using PartsInventoryConnector.Models;
 using System;
 using System.Collections.Generic;
@@ -580,7 +593,7 @@ namespace PartsInventoryConnector
 
 ## <a name="create-the-connection"></a>Criar a conexão
 
-1. Em **Microsoft Graph**, abra o arquivo MicrosoftGraphHelper.cs e adicione o código a seguir após o método **construtor.**
+1. Em **MicrosoftGraph**, abra o arquivo MicrosoftGraphHelper.cs e adicione o código a seguir após o **método construtor.**
 
 ```c
 #region Connections
@@ -630,7 +643,7 @@ private static async Task CreateConnectionAsync()
 
 ## <a name="register-schema"></a>Registrar esquema
 
-1. Em **Microsoft Graph**, abra o arquivo MicrosoftGraphHelper.cs e adicione o código a seguir após o método **construtor.**
+1. Em **MicrosoftGraph**, abra o arquivo MicrosoftGraphHelper.cs e adicione o código a seguir após o **método construtor.**
 
 ```c
 #region Schema

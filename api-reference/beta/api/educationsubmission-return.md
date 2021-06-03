@@ -1,31 +1,31 @@
 ---
-title: 'educationSubmission: retornar'
-description: Esta ação faz com que a classificação e os comentários associados a esse envio estejam disponíveis para o aluno.
+title: 'educationSubmission: return'
+description: Essa ação disponibiliza a nota e os comentários associados a esse envio para o aluno.
 author: dipakboyed
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 2e8d4a9cf00a9d3018c102d4798e102fe66eeee5
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 0ad7ba0669137644dbff212f23586389df380986
+ms.sourcegitcommit: 91d8454bfff853905e3a5e86623fcb06931507ed
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48955481"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52732151"
 ---
-# <a name="educationsubmission-return"></a>educationSubmission: retornar
+# <a name="educationsubmission-return"></a>educationSubmission: return
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Esta ação faz com que a classificação e os comentários associados a esse envio estejam disponíveis para o aluno. Isso alterará o status do envio de "enviado" para "retornado" e indica que o feedback é fornecido ou a gradação é feita. Esta ação só pode ser feita pelo professor.
+Essa ação disponibiliza a nota e os comentários associados a esse envio para o aluno. Isso alterará o status do envio de "enviado" para "retornado" e indicará que os comentários são fornecidos ou a classificação é feita. Essa ação só pode ser feita pelo professor.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) |  EduAssignments. ReadWriteBasic, EduAssignments. ReadWrite   |
+|Delegado (conta corporativa ou de estudante) |  EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite   |
 |Delegado (conta pessoal da Microsoft) |  Sem suporte.  |
 |Aplicativo | Sem suporte. | 
 
@@ -33,7 +33,6 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /education/classes/{id}/assignments/{id}/submissions/{id}/return
-
 ```
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Cabeçalho       | Valor |

@@ -6,11 +6,11 @@ localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
 ms.openlocfilehash: 5dae821a6dc22aa108bceee44c4958e3deb7f129
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.sourcegitcommit: 91d8454bfff853905e3a5e86623fcb06931507ed
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52044148"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52732998"
 ---
 # <a name="update-educationassignmentresource"></a>Atualizar educationAssignmentResource
 
@@ -45,7 +45,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|distributeForStudentWork|Boolean| Indica se esse recurso deve ser copiado para o objeto de recurso de cada aluno quando a atribuição for publicada.|
+|distributeForStudentWork|Booliano| Indica se esse recurso deve ser copiado para o objeto de recurso de cada aluno quando a atribuição for publicada.|
 |recurso|educationResource| Objeto Resource. |
 
 ## <a name="response"></a>Resposta

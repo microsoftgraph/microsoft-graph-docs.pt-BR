@@ -13,7 +13,7 @@ O exemplo cria um Windows da área de trabalho que adquire um token do plataform
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
-* Instale Visual Studio 2019 com [o SDK do .NET Core 3.1](https://www.microsoft.com/net/download/core) em seu computador de desenvolvimento.
+* Instale [Visual Studio 2019](https://visualstudio.microsoft.com/) com [o .NET Core 3.1 SDK](https://www.microsoft.com/net/download/core) em seu computador de desenvolvimento.
 * Certifique-se de ter uma [conta pessoal da Microsoft](https://signup.live.com/)ou uma conta de estudante ou de trabalho.
 * Instale as Ferramentas Principais da Estrutura de [Entidades](/ef/core/miscellaneous/cli/dotnet) como uma ferramenta global usando o seguinte comando:
 
@@ -22,4 +22,7 @@ O exemplo cria um Windows da área de trabalho que adquire um token do plataform
     ```
 
 * Instale uma ferramenta para atualizar um banco de dados SQLite. Por exemplo, o [Navegador DB para SQLite](https://sqlitebrowser.org/).
-* Baixe o **ApplianceParts.csv** do [repo](https://github.com/microsoftgraph/msgraph-search-connector-sample/blob/master/PartsInventoryConnector/ApplianceParts.csv) de exemplo do conector de pesquisa e adicione-o ao PartsInventoryConnector.csproj.
+* Baixe o **ApplianceParts.csv** do repo de exemplo [do conector de pesquisa.](https://github.com/microsoftgraph/msgraph-search-connector-sample/blob/master/PartsInventoryConnector/ApplianceParts.csv)
+
+> [!TIP]
+> A melhor maneira de baixar arquivos GitHub é ir para o nível superior do projeto. No botão de download **de código** verde à direita, escolha **Baixar ZIP**. O arquivo ZIP conterá o conteúdo do repositório.

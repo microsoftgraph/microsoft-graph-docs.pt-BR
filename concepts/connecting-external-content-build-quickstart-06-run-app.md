@@ -7,6 +7,7 @@ Nesta etapa, você criará e executará o exemplo. Este exemplo de código criar
 3. Use o comando: `dotnet run` para executar o exemplo.
 4. Selecione "**1. Criar uma conexão**". Insira um identificador, nome e descrição exclusivos para essa conexão.
 5. Selecione "**2. Registre o esquema para a opção de conexão** atual " Em seguida, aguarde a conclusão da operação.
+6. Selecione "**3. Pressione todos os itens para a conexão atual**.
 
   > [!NOTE]
-  > Se esta etapa resulta em um erro, aguarde alguns minutos e selecione "**3. Pressione todos os itens para a conexão atual**".
+  > Se a etapa 5 resulta em erro, aguarde alguns minutos e selecione "**3. Pressione todos os itens para a conexão atual**".
