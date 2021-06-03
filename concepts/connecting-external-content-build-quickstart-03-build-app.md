@@ -1,22 +1,25 @@
 <!-- markdownlint-disable MD002 MD025 MD041 -->
 
-<span data-ttu-id="f1367-101">Nesta etapa, você criará um aplicativo de console .NET Core.</span><span class="sxs-lookup"><span data-stu-id="f1367-101">In this step, you'll create a .NET Core console app.</span></span> <span data-ttu-id="f1367-102">Depois disso, você criará uma nova conexão, registrará o esquema e sincronizará os itens.</span><span class="sxs-lookup"><span data-stu-id="f1367-102">After that you will create a new connection, register the schema, and sync the items.</span></span>
+<span data-ttu-id="356e1-101">Nesta etapa, você criará um aplicativo de console .NET Core.</span><span class="sxs-lookup"><span data-stu-id="356e1-101">In this step, you'll create a .NET Core console app.</span></span> <span data-ttu-id="356e1-102">Depois disso, você criará uma nova conexão, registrará o esquema e sincronizará os itens.</span><span class="sxs-lookup"><span data-stu-id="356e1-102">After that you will create a new connection, register the schema, and sync the items.</span></span>
 
-## <a name="create-a-net-core-console-app"></a><span data-ttu-id="f1367-103">Criar um aplicativo de console .NET Core </span><span class="sxs-lookup"><span data-stu-id="f1367-103">Create a .NET Core console app</span></span>
+## <a name="create-a-net-core-console-app"></a><span data-ttu-id="356e1-103">Criar um aplicativo de console .NET Core </span><span class="sxs-lookup"><span data-stu-id="356e1-103">Create a .NET Core console app</span></span>
 
-1. <span data-ttu-id="f1367-104">Iniciar Visual Studio 2019 e ir para **Arquivo**  >    >  **Novo Project**.</span><span class="sxs-lookup"><span data-stu-id="f1367-104">Launch Visual Studio 2019 and go to **File** > **New** > **Project**.</span></span>
-2. <span data-ttu-id="f1367-105">Selecione o **modelo aplicativo de console (.NET Core)** e selecione **Next**.</span><span class="sxs-lookup"><span data-stu-id="f1367-105">Select the **Console App (.NET Core)** template, and select **Next**.</span></span>
-3. <span data-ttu-id="f1367-106">Insira o Project : "PartsInventoryConnector", selecione **a** caixa de seleção para "**Colocar** solução  e projeto no mesmo diretório ", e selecione Criar conforme mostrado na próxima imagem.</span><span class="sxs-lookup"><span data-stu-id="f1367-106">Enter the **Project name**: "PartsInventoryConnector", and select the checkbox for "**Place solution and project in the same directory**", and select **Create** as shown in the next image.</span></span>
+1. <span data-ttu-id="356e1-104">Iniciar Visual Studio 2019 e ir para **Arquivo**  >    >  **Novo Project**.</span><span class="sxs-lookup"><span data-stu-id="356e1-104">Launch Visual Studio 2019 and go to **File** > **New** > **Project**.</span></span>
+2. <span data-ttu-id="356e1-105">Selecione o **modelo aplicativo de console (.NET Core)** e selecione **Next**.</span><span class="sxs-lookup"><span data-stu-id="356e1-105">Select the **Console App (.NET Core)** template, and select **Next**.</span></span>
+3. <span data-ttu-id="356e1-106">Insira o Project : "PartsInventoryConnector", selecione **a** caixa de seleção para "**Colocar** solução  e projeto no mesmo diretório ", e selecione Criar conforme mostrado na próxima imagem.</span><span class="sxs-lookup"><span data-stu-id="356e1-106">Enter the **Project name**: "PartsInventoryConnector", and select the checkbox for "**Place solution and project in the same directory**", and select **Create** as shown in the next image.</span></span>
 
 ![Captura de tela da seção "Configurar seu novo projeto"](images/connectors-images/build7.png)
 
-## <a name="add-nuget-packages"></a><span data-ttu-id="f1367-108">Adicionar pacotes NuGet</span><span class="sxs-lookup"><span data-stu-id="f1367-108">Add NuGet packages</span></span>
+> [!IMPORTANT]
+> <span data-ttu-id="356e1-108">Antes de mover para a próxima etapa, copie o arquivo ApplianceParts.csv para a pasta raiz do projeto.</span><span class="sxs-lookup"><span data-stu-id="356e1-108">Before moving to the next step, copy the ApplianceParts.csv file to the root folder of the project.</span></span>
 
-<span data-ttu-id="f1367-109">Para adicionar NuGet pacotes, primeiro clique com o botão direito do **mouse Project Solução** e selecione Abrir no **Terminal**.</span><span class="sxs-lookup"><span data-stu-id="f1367-109">To add NuGet packages, first right-click **Project Solution** and select **Open in Terminal**.</span></span>
+## <a name="add-nuget-packages"></a><span data-ttu-id="356e1-109">Adicionar pacotes NuGet</span><span class="sxs-lookup"><span data-stu-id="356e1-109">Add NuGet packages</span></span>
+
+<span data-ttu-id="356e1-110">Para adicionar NuGet pacotes, primeiro clique com o botão direito do **mouse Project Solução** e selecione Abrir no **Terminal**.</span><span class="sxs-lookup"><span data-stu-id="356e1-110">To add NuGet packages, first right-click **Project Solution** and select **Open in Terminal**.</span></span>
 
 ![Captura de tela mostrando a opção Abrir terminal](images/connectors-images/build8.png)
 
-<span data-ttu-id="f1367-111">Em seguida, execute os seguintes comandos CLI no prompt de comando do desenvolvedor.</span><span class="sxs-lookup"><span data-stu-id="f1367-111">Next, run the following CLI commands in the developer command prompt.</span></span>
+<span data-ttu-id="356e1-112">Em seguida, execute os seguintes comandos CLI no prompt de comando do desenvolvedor.</span><span class="sxs-lookup"><span data-stu-id="356e1-112">Next, run the following CLI commands in the developer command prompt.</span></span>
 
 ```dotnetcli
 dotnet add package CsvHelper --version 12.1.2
@@ -27,12 +30,22 @@ dotnet add package Microsoft.Graph.Beta --version 0.17.0-preview
 dotnet add package Microsoft.Identity.Client --version 4.13.0
 ```
 
-## <a name="add-azure-ad-authentication"></a><span data-ttu-id="f1367-112">Adicionar autenticação do Azure AD</span><span class="sxs-lookup"><span data-stu-id="f1367-112">Add Azure AD authentication</span></span>
+> [!TIP]
+> <span data-ttu-id="356e1-113">Se o `add package` comando falhar, verifique a Fonte **do Pacote** do seu projeto:</span><span class="sxs-lookup"><span data-stu-id="356e1-113">If the `add package` command fails, check the **Package Source** of your project:</span></span>
+> 1. <span data-ttu-id="356e1-114">Selecione o projeto no Explorador de Soluções.</span><span class="sxs-lookup"><span data-stu-id="356e1-114">Select the project in the Solution Explorer.</span></span>
+> 2. <span data-ttu-id="356e1-115">Vá para Ferramentas > Nuget Gerenciador de Pacotes > Gerenciador de Pacotes Configurações.</span><span class="sxs-lookup"><span data-stu-id="356e1-115">Go to Tools > Nuget Package Manager > Package Manager Settings.</span></span>
+> 3. <span data-ttu-id="356e1-116">Verifique as Fontes de Pacote e verifique se nuget.&#65279;org está instalado como fonte de pacote.</span><span class="sxs-lookup"><span data-stu-id="356e1-116">Check the Package Sources, and make sure nuget.&#65279;org is installed as package source.</span></span>
+>     * <span data-ttu-id="356e1-117">Nome: nuget.&#65279;org</span><span class="sxs-lookup"><span data-stu-id="356e1-117">Name: nuget.&#65279;org</span></span>
+>     *  <span data-ttu-id="356e1-118">Fonte: https&#65279;://api.nuget.org/v3/index.json</span><span class="sxs-lookup"><span data-stu-id="356e1-118">Source: https&#65279;://api.nuget.org/v3/index.json</span></span>
 
-<span data-ttu-id="f1367-113">Essa autenticação é necessária para obter o token de acesso OAuth necessário para chamar a API de conectores.</span><span class="sxs-lookup"><span data-stu-id="f1367-113">This authentication is required to get the necessary OAuth access token to call the connectors API.</span></span>
+<!---Used "&#65279;" to prevent auto-generated links --->
 
-1. <span data-ttu-id="f1367-114">Crie um novo diretório chamado **Authentication** no diretório **PartsInventoryConnector.**</span><span class="sxs-lookup"><span data-stu-id="f1367-114">Create a new directory named **Authentication** in the **PartsInventoryConnector** directory.</span></span>
-2. <span data-ttu-id="f1367-115">Crie um novo arquivo no diretório **authentication** chamado ClientCredentialAuthProvider.cs e coloque o seguinte código nesse arquivo:</span><span class="sxs-lookup"><span data-stu-id="f1367-115">Create a new file in the **Authentication** directory named ClientCredentialAuthProvider.cs and place the following code in that file:</span></span>
+## <a name="add-azure-ad-authentication"></a><span data-ttu-id="356e1-119">Adicionar autenticação do Azure AD</span><span class="sxs-lookup"><span data-stu-id="356e1-119">Add Azure AD authentication</span></span>
+
+<span data-ttu-id="356e1-120">Essa autenticação é necessária para obter o token de acesso OAuth necessário para chamar a API de conectores.</span><span class="sxs-lookup"><span data-stu-id="356e1-120">This authentication is required to get the necessary OAuth access token to call the connectors API.</span></span>
+
+1. <span data-ttu-id="356e1-121">Crie um novo diretório chamado **Authentication** no diretório **PartsInventoryConnector.**</span><span class="sxs-lookup"><span data-stu-id="356e1-121">Create a new directory named **Authentication** in the **PartsInventoryConnector** directory.</span></span>
+2. <span data-ttu-id="356e1-122">Crie um novo arquivo no diretório **authentication** chamado ClientCredentialAuthProvider.cs e coloque o seguinte código nesse arquivo:</span><span class="sxs-lookup"><span data-stu-id="356e1-122">Create a new file in the **Authentication** directory named ClientCredentialAuthProvider.cs and place the following code in that file:</span></span>
 
 ```c
 // Copyright (c) Microsoft Corporation. All rights reserved.
@@ -102,10 +115,10 @@ namespace PartsInventoryConnector.Authentication
 }
 ```
 
-## <a name="add-user-experience"></a><span data-ttu-id="f1367-116">Adicionar experiência do usuário</span><span class="sxs-lookup"><span data-stu-id="f1367-116">Add user experience</span></span>
+## <a name="add-user-experience"></a><span data-ttu-id="356e1-123">Adicionar experiência do usuário</span><span class="sxs-lookup"><span data-stu-id="356e1-123">Add user experience</span></span>
 
-1. <span data-ttu-id="f1367-117">Crie um novo diretório no diretório **PartsInventoryConnector** chamado **Console**.</span><span class="sxs-lookup"><span data-stu-id="f1367-117">Create a new directory in the **PartsInventoryConnector** directory named **Console**.</span></span>
-2. <span data-ttu-id="f1367-118">Crie um novo arquivo no **diretório console** chamado MenuChoice.cs e coloque o seguinte código nesse arquivo:</span><span class="sxs-lookup"><span data-stu-id="f1367-118">Create a new file in the **Console** directory named MenuChoice.cs and place the following code in that file:</span></span>
+1. <span data-ttu-id="356e1-124">Crie um novo diretório no diretório **PartsInventoryConnector** chamado **Console**.</span><span class="sxs-lookup"><span data-stu-id="356e1-124">Create a new directory in the **PartsInventoryConnector** directory named **Console**.</span></span>
+2. <span data-ttu-id="356e1-125">Crie um novo arquivo no **diretório console** chamado MenuChoice.cs e coloque o seguinte código nesse arquivo:</span><span class="sxs-lookup"><span data-stu-id="356e1-125">Create a new file in the **Console** directory named MenuChoice.cs and place the following code in that file:</span></span>
 
 ```c
 // Copyright (c) Microsoft Corporation. All rights reserved.
@@ -124,10 +137,10 @@ namespace PartsInventoryConnector.Console
 }
 ```
 
-## <a name="set-up-data-model"></a><span data-ttu-id="f1367-119">Configurar o modelo de dados</span><span class="sxs-lookup"><span data-stu-id="f1367-119">Set up data model</span></span>
+## <a name="set-up-data-model"></a><span data-ttu-id="356e1-126">Configurar o modelo de dados</span><span class="sxs-lookup"><span data-stu-id="356e1-126">Set up data model</span></span>
 
-1. <span data-ttu-id="f1367-120">Crie um novo diretório no diretório **PartsInventoryConnector** chamado **Models**.</span><span class="sxs-lookup"><span data-stu-id="f1367-120">Create a new directory in the **PartsInventoryConnector** directory named **Models**.</span></span>
-2. <span data-ttu-id="f1367-121">Crie um novo arquivo no diretório **Modelos** chamado AppliancePart.cs e coloque o seguinte código nesse arquivo:</span><span class="sxs-lookup"><span data-stu-id="f1367-121">Create a new file in the **Models** directory named AppliancePart.cs, and place the following code in that file:</span></span>
+1. <span data-ttu-id="356e1-127">Crie um novo diretório no diretório **PartsInventoryConnector** chamado **Models**.</span><span class="sxs-lookup"><span data-stu-id="356e1-127">Create a new directory in the **PartsInventoryConnector** directory named **Models**.</span></span>
+2. <span data-ttu-id="356e1-128">Crie um novo arquivo no diretório **Modelos** chamado AppliancePart.cs e coloque o seguinte código nesse arquivo:</span><span class="sxs-lookup"><span data-stu-id="356e1-128">Create a new file in the **Models** directory named AppliancePart.cs, and place the following code in that file:</span></span>
 
 
 ```c
@@ -176,7 +189,7 @@ namespace PartsInventoryConnector.Models
 
 
 
-3. <span data-ttu-id="f1367-122">Crie um novo arquivo no diretório **Modelos** chamado ApplianceDbContext.cs e coloque o seguinte código nesse arquivo:</span><span class="sxs-lookup"><span data-stu-id="f1367-122">Create a new file in the **Models** directory named ApplianceDbContext.cs, and place the following code in that file:</span></span>
+3. <span data-ttu-id="356e1-129">Crie um novo arquivo no diretório **Modelos** chamado ApplianceDbContext.cs e coloque o seguinte código nesse arquivo:</span><span class="sxs-lookup"><span data-stu-id="356e1-129">Create a new file in the **Models** directory named ApplianceDbContext.cs, and place the following code in that file:</span></span>
 
 ```c
 using Microsoft.Data.Sqlite;
@@ -257,8 +270,8 @@ namespace PartsInventoryConnector.Models
 }
 ```
 
-4. <span data-ttu-id="f1367-123">Crie um novo diretório chamado **Data** no diretório **PartsInventoryConnector.**</span><span class="sxs-lookup"><span data-stu-id="f1367-123">Create a new directory named **Data** in the **PartsInventoryConnector** directory.</span></span>
-5. <span data-ttu-id="f1367-124">Crie um novo arquivo no **diretório De** dados chamado CsvDataLoader.cs e coloque o seguinte código nesse arquivo:</span><span class="sxs-lookup"><span data-stu-id="f1367-124">Create a new file in the **Data** directory named CsvDataLoader.cs and place the following code in that file:</span></span>
+4. <span data-ttu-id="356e1-130">Crie um novo diretório chamado **Data** no diretório **PartsInventoryConnector.**</span><span class="sxs-lookup"><span data-stu-id="356e1-130">Create a new directory named **Data** in the **PartsInventoryConnector** directory.</span></span>
+5. <span data-ttu-id="356e1-131">Crie um novo arquivo no **diretório De** dados chamado CsvDataLoader.cs e coloque o seguinte código nesse arquivo:</span><span class="sxs-lookup"><span data-stu-id="356e1-131">Create a new file in the **Data** directory named CsvDataLoader.cs and place the following code in that file:</span></span>
 
 ```c
 using CsvHelper;
@@ -308,10 +321,10 @@ namespace PartsInventoryConnector.Data
 }
 ```
 
-## <a name="write-the-microsoft-graph-helper-service"></a><span data-ttu-id="f1367-125">Gravar o serviço auxiliar Graph Microsoft</span><span class="sxs-lookup"><span data-stu-id="f1367-125">Write the Microsoft Graph helper service</span></span>
+## <a name="write-the-microsoft-graph-helper-service"></a><span data-ttu-id="356e1-132">Gravar o serviço auxiliar Graph Microsoft</span><span class="sxs-lookup"><span data-stu-id="356e1-132">Write the Microsoft Graph helper service</span></span>
 
-1. <span data-ttu-id="f1367-126">Crie um novo diretório chamado **MicrosoftGraph** no **diretório PartsInventoryConnector.**</span><span class="sxs-lookup"><span data-stu-id="f1367-126">Create a new directory named **MicrosoftGraph** in the **PartsInventoryConnector** directory.</span></span>
-2. <span data-ttu-id="f1367-127">Crie um novo arquivo no **diretório do MicrosoftGraph** chamado CustomSerializer.cs e coloque o seguinte código nesse arquivo:</span><span class="sxs-lookup"><span data-stu-id="f1367-127">Create a new file in the **MicrosoftGraph** directory named CustomSerializer.cs and place the following code in that file:</span></span>
+1. <span data-ttu-id="356e1-133">Crie um novo diretório chamado **MicrosoftGraph** no **diretório PartsInventoryConnector.**</span><span class="sxs-lookup"><span data-stu-id="356e1-133">Create a new directory named **MicrosoftGraph** in the **PartsInventoryConnector** directory.</span></span>
+2. <span data-ttu-id="356e1-134">Crie um novo arquivo no **diretório do MicrosoftGraph** chamado CustomSerializer.cs e coloque o seguinte código nesse arquivo:</span><span class="sxs-lookup"><span data-stu-id="356e1-134">Create a new file in the **MicrosoftGraph** directory named CustomSerializer.cs and place the following code in that file:</span></span>
 
 ```c
 using Microsoft.Graph;
@@ -321,7 +334,7 @@ using Newtonsoft.Json.Serialization;
 using System;
 using System.IO;
 
-namespace PartsInventoryConnector.Graph
+namespace PartsInventoryConnector.MicrosoftGraph
 {
     // The Microsoft Graph SDK serializes enumerations in camelCase.
     // The Microsoft Graph service currently requires the PropertyType enum
@@ -391,9 +404,9 @@ namespace PartsInventoryConnector.Graph
 }
 ```
 
-3. <span data-ttu-id="f1367-128">Crie um novo arquivo no **diretório microsoft Graph** chamado MicrosoftGraphHelper.cs e coloque o código abaixo nesse arquivo.</span><span class="sxs-lookup"><span data-stu-id="f1367-128">Create a new file in the **Microsoft Graph** directory named MicrosoftGraphHelper.cs and place the code below in that file.</span></span>
+3. <span data-ttu-id="356e1-135">Crie um novo arquivo no **diretório microsoft Graph** chamado MicrosoftGraphHelper.cs e coloque o código abaixo nesse arquivo.</span><span class="sxs-lookup"><span data-stu-id="356e1-135">Create a new file in the **Microsoft Graph** directory named MicrosoftGraphHelper.cs and place the code below in that file.</span></span>
 
-<span data-ttu-id="f1367-129">O código a seguir contém métodos que usam o **MicrosoftGraphServiceClient** para criar e enviar chamadas para o serviço microsoft Graph e processar a resposta.</span><span class="sxs-lookup"><span data-stu-id="f1367-129">The following code contains methods that use the **MicrosoftGraphServiceClient** to build and send calls to the Microsoft Graph service and process the response.</span></span>
+    <span data-ttu-id="356e1-136">O código a seguir contém métodos que usam o **MicrosoftGraphServiceClient** para criar e enviar chamadas para o serviço microsoft Graph e processar a resposta.</span><span class="sxs-lookup"><span data-stu-id="356e1-136">The following code contains methods that use the **MicrosoftGraphServiceClient** to build and send calls to the Microsoft Graph service and process the response.</span></span>
 
 ```c
 // Copyright (c) Microsoft Corporation. All rights reserved.
@@ -403,11 +416,11 @@ using Newtonsoft.Json;
 using System.Net.Http;
 using System.Threading.Tasks;
 
-namespace PartsInventoryConnector.Graph
+namespace PartsInventoryConnector.MicrosoftGraph
 {
     public class MicrosoftGraphHelper
     {
-        private MicrosoftGraphServiceClient _microsoftGraphClient;
+        private class MicrosoftGraphServiceClient _microsoftGraphClient;
 
         public MicrosoftGraphHelper(IAuthenticationProvider authProvider)
         {
@@ -423,9 +436,9 @@ namespace PartsInventoryConnector.Graph
 }
 ```
 
-## <a name="initialize-the-microsoft-graph-helper-service"></a><span data-ttu-id="f1367-130">Inicializar o serviço auxiliar Graph Microsoft</span><span class="sxs-lookup"><span data-stu-id="f1367-130">Initialize the Microsoft Graph helper service</span></span>
+## <a name="initialize-the-microsoft-graph-helper-service"></a><span data-ttu-id="356e1-137">Inicializar o serviço auxiliar Graph Microsoft</span><span class="sxs-lookup"><span data-stu-id="356e1-137">Initialize the Microsoft Graph helper service</span></span>
 
-<span data-ttu-id="f1367-131">Abra Program.cs e substitua todo o conteúdo pelo seguinte código:</span><span class="sxs-lookup"><span data-stu-id="f1367-131">Open Program.cs and replace the entire content with the following code:</span></span>
+<span data-ttu-id="356e1-138">Abra Program.cs e substitua todo o conteúdo pelo seguinte código:</span><span class="sxs-lookup"><span data-stu-id="356e1-138">Open Program.cs and replace the entire content with the following code:</span></span>
 
 ```c
 using Microsoft.EntityFrameworkCore;
@@ -434,7 +447,7 @@ using Microsoft.Graph;
 using PartsInventoryConnector.Authentication;
 using PartsInventoryConnector.Console;
 using PartsInventoryConnector.Data;
-using PartsInventoryConnector.Graph;
+using PartsInventoryConnector.MicrosoftGraph;
 using PartsInventoryConnector.Models;
 using System;
 using System.Collections.Generic;
@@ -578,9 +591,9 @@ namespace PartsInventoryConnector
 }
 ```
 
-## <a name="create-the-connection"></a><span data-ttu-id="f1367-132">Criar a conexão</span><span class="sxs-lookup"><span data-stu-id="f1367-132">Create the connection</span></span>
+## <a name="create-the-connection"></a><span data-ttu-id="356e1-139">Criar a conexão</span><span class="sxs-lookup"><span data-stu-id="356e1-139">Create the connection</span></span>
 
-1. <span data-ttu-id="f1367-133">Em **Microsoft Graph**, abra o arquivo MicrosoftGraphHelper.cs e adicione o código a seguir após o método **construtor.**</span><span class="sxs-lookup"><span data-stu-id="f1367-133">Under **Microsoft Graph**, open the MicrosoftGraphHelper.cs file and add the following code after the **constructor** method.</span></span>
+1. <span data-ttu-id="356e1-140">Em **MicrosoftGraph**, abra o arquivo MicrosoftGraphHelper.cs e adicione o código a seguir após o **método construtor.**</span><span class="sxs-lookup"><span data-stu-id="356e1-140">Under **MicrosoftGraph**, open the MicrosoftGraphHelper.cs file and add the following code after the **constructor** method.</span></span>
 
 ```c
 #region Connections
@@ -603,7 +616,7 @@ namespace PartsInventoryConnector
 #endregion
 ```
 
-2. <span data-ttu-id="f1367-134">Abra o arquivo Program.cs e adicione o seguinte código após o **método Main:**</span><span class="sxs-lookup"><span data-stu-id="f1367-134">Open the Program.cs file and add the following code after the **Main** method:</span></span>
+2. <span data-ttu-id="356e1-141">Abra o arquivo Program.cs e adicione o seguinte código após o **método Main:**</span><span class="sxs-lookup"><span data-stu-id="356e1-141">Open the Program.cs file and add the following code after the **Main** method:</span></span>
 
 
 ```c
@@ -628,9 +641,9 @@ private static async Task CreateConnectionAsync()
       }
 ```
 
-## <a name="register-schema"></a><span data-ttu-id="f1367-135">Registrar esquema</span><span class="sxs-lookup"><span data-stu-id="f1367-135">Register schema</span></span>
+## <a name="register-schema"></a><span data-ttu-id="356e1-142">Registrar esquema</span><span class="sxs-lookup"><span data-stu-id="356e1-142">Register schema</span></span>
 
-1. <span data-ttu-id="f1367-136">Em **Microsoft Graph**, abra o arquivo MicrosoftGraphHelper.cs e adicione o código a seguir após o método **construtor.**</span><span class="sxs-lookup"><span data-stu-id="f1367-136">Under **Microsoft Graph**, open the MicrosoftGraphHelper.cs file and add the following code after the **constructor** method.</span></span>
+1. <span data-ttu-id="356e1-143">Em **MicrosoftGraph**, abra o arquivo MicrosoftGraphHelper.cs e adicione o código a seguir após o **método construtor.**</span><span class="sxs-lookup"><span data-stu-id="356e1-143">Under **MicrosoftGraph**, open the MicrosoftGraphHelper.cs file and add the following code after the **constructor** method.</span></span>
 
 ```c
 #region Schema
@@ -705,7 +718,7 @@ private static async Task CreateConnectionAsync()
 #endregion
 ```
 
-2. <span data-ttu-id="f1367-137">Abra o arquivo Program.cs e adicione o seguinte código após o **método Main.**</span><span class="sxs-lookup"><span data-stu-id="f1367-137">Open the Program.cs file and add the following code after the **Main** method.</span></span>
+2. <span data-ttu-id="356e1-144">Abra o arquivo Program.cs e adicione o seguinte código após o **método Main.**</span><span class="sxs-lookup"><span data-stu-id="356e1-144">Open the Program.cs file and add the following code after the **Main** method.</span></span>
 
 ```c
 private static async Task RegisterSchemaAsync()
@@ -750,9 +763,9 @@ private static async Task RegisterSchemaAsync()
         }
 ```
 
-## <a name="sync-items"></a><span data-ttu-id="f1367-138">Itens de sincronização</span><span class="sxs-lookup"><span data-stu-id="f1367-138">Sync items</span></span>
+## <a name="sync-items"></a><span data-ttu-id="356e1-145">Itens de sincronização</span><span class="sxs-lookup"><span data-stu-id="356e1-145">Sync items</span></span>
 
-1. <span data-ttu-id="f1367-139">Em **Microsoft Graph**, abra o arquivo MicrosoftGraphHelper.cs e adicione o seguinte código após o método **Constructor.**</span><span class="sxs-lookup"><span data-stu-id="f1367-139">Under **Microsoft Graph**, open the MicrosoftGraphHelper.cs file and add the following code after the **Constructor** method.</span></span>
+1. <span data-ttu-id="356e1-146">Em **Microsoft Graph**, abra o arquivo MicrosoftGraphHelper.cs e adicione o seguinte código após o método **Constructor.**</span><span class="sxs-lookup"><span data-stu-id="356e1-146">Under **Microsoft Graph**, open the MicrosoftGraphHelper.cs file and add the following code after the **Constructor** method.</span></span>
 
 ```c
 #region PushData   
@@ -784,7 +797,7 @@ private static async Task RegisterSchemaAsync()
         #endregion
 ```
 
-2. <span data-ttu-id="f1367-140">Abra o arquivo Program.cs e adicione o seguinte código após o **método Main.**</span><span class="sxs-lookup"><span data-stu-id="f1367-140">Open the Program.cs file and add the following code after the **Main** method.</span></span>
+2. <span data-ttu-id="356e1-147">Abra o arquivo Program.cs e adicione o seguinte código após o **método Main.**</span><span class="sxs-lookup"><span data-stu-id="356e1-147">Open the Program.cs file and add the following code after the **Main** method.</span></span>
 
 ```c
 private static async Task UpdateItemsFromDatabase()
