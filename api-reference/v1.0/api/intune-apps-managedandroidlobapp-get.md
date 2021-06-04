@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b29a93793de22c5ca7924f7a6f2d15b4818ccc09
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 186143edf3b78e97c6b2b99acd23aeba1e1b46bd
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47973124"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52754410"
 ---
 # <a name="get-managedandroidlobapp"></a>Acessar managedAndroidLobApp
 
@@ -23,11 +23,11 @@ Leia as propriedades e as relações do objeto [managedAndroidLobApp](../resourc
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
+|Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
+|Delegado (conta corporativa ou de estudante)|DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|Sem suporte.|
+|Aplicativo|DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -66,7 +66,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1420
+Content-Length: 1464
 
 {
   "value": {
@@ -104,18 +104,15 @@ Content-Length: 1420
       "v4_3": true,
       "v4_4": true,
       "v5_0": true,
-      "v5_1": true
+      "v5_1": true,
+      "v10_0": true,
+      "v11_0": true
     },
     "versionName": "Version Name value",
     "versionCode": "Version Code value"
   }
 }
 ```
-
-
-
-
-
 
 
 

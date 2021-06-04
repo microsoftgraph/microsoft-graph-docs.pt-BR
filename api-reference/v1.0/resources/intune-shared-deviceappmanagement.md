@@ -6,11 +6,11 @@ localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
 ms.openlocfilehash: 169db36319b9436900d5b6664fb5422828ad6689
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.sourcegitcommit: 91d8454bfff853905e3a5e86623fcb06931507ed
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48059128"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52732228"
 ---
 # <a name="deviceappmanagement-resource-type"></a>Tipo de recurso deviceAppManagement
 
@@ -30,7 +30,7 @@ Entidade singleton que atua como um contêiner para todas as funcionalidades de 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave da entidade.|
+|id|Cadeia de caracteres|Chave da entidade.|
 |**Integração**|
 |isEnabledForMicrosoftStoreForBusiness|Boolean|Se a conta está ativada para sincronizar aplicativos do Microsoft Store para Empresa.|
 |microsoftStoreForBusinessLanguage|String|As informações sobre a localidade usada para sincronizar aplicativos do Microsoft Store para Empresas. Culturas específicas de um país/região. Os nomes dessas culturas seguem a RFC 4646 (Windows Vista e mais recentes). O formato é <languagecode2>-<country/regioncode2>, onde <languagecode2> é um código em duas letras minúsculas derivado da ISO 639-1 e <country/regioncode2> é um código em duas letras maiúsculas derivado da ISO 3166. Por exemplo, en-US para inglês (Estados Unidos) é uma cultura específica.|
@@ -44,7 +44,7 @@ Entidade singleton que atua como um contêiner para todas as funcionalidades de 
 |mobileAppCategories|Coleção [mobileAppCategory](../resources/intune-apps-mobileappcategory.md)|As categorias dos aplicativos móveis.|
 |mobileAppConfigurations|Coleção [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)|As configurações de aplicativos móveis de gerenciamento de dispositivos.|
 |mobileApps|Coleção [mobileApp](../resources/intune-apps-mobileapp.md)|Os aplicativos móveis.|
-|**Deprecia**|
+|**Livros**|
 |managedEBooks|Conjunto [managedEBook](../resources/intune-books-managedebook.md)|Livro eletrônico gerenciado.|
 |**Gerenciamento de aplicativo móvel (GAM)**|
 |androidManagedAppProtections|Coleção [androidManagedAppProtection](../resources/intune-mam-androidmanagedappprotection.md)|Políticas de aplicativos gerenciados para Android.|
@@ -60,7 +60,7 @@ Entidade singleton que atua como um contêiner para todas as funcionalidades de 
 |vppTokens|Coleção de [vppToken](../resources/intune-onboarding-vpptoken.md)|Lista de tokens Vpp desta organização.|
 
 ## <a name="json-representation"></a>Representação JSON
-Veja a seguir uma representação JSON do recurso.  Observe que este é apenas um exemplo; as respostas de consulta a consultas reais conterá as propriedades apropriadas para o contexto.  
+Veja a seguir uma representação JSON do recurso.  Observe que isso é apenas um exemplo; respostas de consulta a consultas reais conterão as propriedades apropriadas para o contexto.  
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

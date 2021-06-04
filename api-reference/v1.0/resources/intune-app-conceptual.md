@@ -6,11 +6,11 @@ localization_priority: Normal
 ms.prod: intune
 doc_type: conceptualPageType
 ms.openlocfilehash: 97de79572adf40fbd9bcb153aa400e006a97b35a
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.sourcegitcommit: 91d8454bfff853905e3a5e86623fcb06931507ed
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48086568"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52732221"
 ---
 # <a name="manage-apps-using-microsoft-intune"></a>Gerenciar aplicativos usando Microsoft Intune
 

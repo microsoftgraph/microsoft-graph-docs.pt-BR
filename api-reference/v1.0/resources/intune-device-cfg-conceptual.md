@@ -6,11 +6,11 @@ localization_priority: Normal
 ms.prod: intune
 doc_type: conceptualPageType
 ms.openlocfilehash: 6f36290ba88245bb09440b6a528c1395bd19029a
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.sourcegitcommit: 91d8454bfff853905e3a5e86623fcb06931507ed
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48041579"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52732243"
 ---
 # <a name="device-configuration-in-microsoft-intune"></a>Configuração de dispositivo no Microsoft Intune
 

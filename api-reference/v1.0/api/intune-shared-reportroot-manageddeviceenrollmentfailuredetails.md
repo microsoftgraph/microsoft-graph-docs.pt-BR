@@ -1,18 +1,18 @@
 ---
-title: função managedDeviceEnrollmentFailureDetails
+title: Função managedDeviceEnrollmentFailureDetails
 description: Ainda não documentado
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
 ms.openlocfilehash: 1539992ad475c2339a33aae809bc477d5da4e772
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.sourcegitcommit: 91d8454bfff853905e3a5e86623fcb06931507ed
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48089137"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52732222"
 ---
-# <a name="manageddeviceenrollmentfailuredetails-function"></a>função managedDeviceEnrollmentFailureDetails
+# <a name="manageddeviceenrollmentfailuredetails-function"></a>Função managedDeviceEnrollmentFailureDetails
 
 Namespace: microsoft.graph
 
@@ -27,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)||
 | &nbsp;&nbsp;Solução de problemas | DeviceManagementManagedDevices.ReadWrite.All|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|Sem suporte.|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -69,7 +69,7 @@ GET https://graph.microsoft.com/v1/reports/managedDeviceEnrollmentFailureDetails
 ```
 
 ### <a name="response"></a>Resposta
-O objeto de resposta mostrado aqui pode estar truncado por brevidade. Todas as propriedades serão retornadas de uma chamada real.
+O objeto de resposta mostrado aqui pode ser truncado para brevidade. Todas as propriedades serão retornadas de uma chamada real.
 
 ``` http
 HTTP/1.1 200 OK

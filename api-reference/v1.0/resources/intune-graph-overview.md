@@ -6,33 +6,33 @@ localization_priority: Priority
 ms.prod: intune
 doc_type: conceptualPageType
 ms.openlocfilehash: baad1c809bfd34dd60bab009b7b83c5fcb46dddf
-ms.sourcegitcommit: 577bfd3bb8a2e2679ef1c5942a4a496c2aa3a277
+ms.sourcegitcommit: 91d8454bfff853905e3a5e86623fcb06931507ed
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "48581929"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52732260"
 ---
-# <a name="working-with-intune-in-microsoft-graph"></a>Trabalhando com o Intune no Microsoft Graph  
+# <a name="working-with-intune-in-microsoft-graph"></a>Trabalhando com o Intune no Microsoft Graph  
 
 > **Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://www.microsoft.com/cloud-platform/microsoft-intune-pricing) pelo cliente.
 
-A API do Microsoft Graph para Intune permite o acesso programático a informações do Intune para seu locatário; a API executa as mesmas operações do Intune disponíveis pelo **Portal do Azure**.  
+A API do Microsoft Graph para Intune permite o acesso programático a informações do Intune para seu locatário; a API executa as mesmas operações do Intune disponíveis pelo **Portal do Azure**.  
 
 Em cenários de gerenciamento de dispositivo móvel (MDM), a API do Microsoft Graph para Intune oferece suporte a implantações autônomas; não há suporte para[implantações híbridas](/sccm/mdm/understand/choose-between-standalone-intune-and-hybrid-mobile-device-management) do Intune. 
 
 ## <a name="using-the-microsoft-graph-api-for-intune"></a>Uso da API do Microsoft Graph para Intune
 
-O Intune fornece dados para a API da Microsoft Graph da mesma forma que outros serviços de nuvem fazem, com valiosas informações sobre entidades e navegação de relacionamentos.Use a API do Microsoft Graph para combinar informações de outros serviços e do Intune e criar aplicativos avançados de vários serviços para profissionais de TI ou usuários finais.     
+O Intune fornece dados para a API da Microsoft Graph da mesma forma que outros serviços de nuvem fazem, com valiosas informações sobre entidades e navegação de relacionamentos. Use a API do Microsoft Graph para combinar informações de outros serviços e do Intune e criar aplicativos avançados de vários serviços para profissionais de TI ou usuários finais.     
 
-O exemplo a seguir mostra como determinar se um aplicativo está instalado no dispositivo de um usuário: 
+O exemplo a seguir mostra como determinar se um aplicativo está instalado no dispositivo de um usuário: 
 
-1. Obtenha no Azure Active Directory uma lista dos dispositivos registrados de um usuário: 
+1. Obtenha no Azure Active Directory uma lista dos dispositivos registrados de um usuário: 
 
-    https://graph.microsoft.com/users/{user}/ownedDevices 
+    https://graph.microsoft.com/users/{user}/ownedDevices 
 
-2. Em seguida, exiba a lista de aplicativos do seu locatário: 
+2. Em seguida, exiba a lista de aplicativos do seu locatário: 
 
-    https://graph.microsoft.com/deviceAppManagement/mobileApps  
+    https://graph.microsoft.com/deviceAppManagement/mobileApps  
 
 3. Obtenha a ID do aplicativo e determine o estado de instalação do aplicativo (e, portanto, do usuário):
 

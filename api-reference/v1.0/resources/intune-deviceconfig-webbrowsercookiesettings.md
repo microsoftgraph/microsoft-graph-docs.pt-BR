@@ -1,38 +1,33 @@
 ---
-title: tipo de enumeração webBrowserCookieSettings
-description: Configurações de cookies do navegador da Web.
+title: Tipo de número webBrowserCookieSettings
+description: Cookie do Navegador da Web Configurações.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: f34c83f9d7b97fa47302c74aa56a56f1322c3238
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: c1c53faf7d88ec27ffd9acdbf48a8fd18ea2a8d3
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48048481"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52754682"
 ---
-# <a name="webbrowsercookiesettings-enum-type"></a>tipo de enumeração webBrowserCookieSettings
+# <a name="webbrowsercookiesettings-enum-type"></a>Tipo de número webBrowserCookieSettings
 
 Namespace: microsoft.graph
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Configurações de cookies do navegador da Web.
+Cookie do Navegador da Web Configurações.
 
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|browserDefault|,0|O valor padrão do navegador, sem intenção.|
-|blockAlways|1 |Sempre bloquear cookies.|
-|allowCurrentWebSite|2 |Permitir cookies do site atual.|
-|allowFromWebsitesVisited|3 |Permitir cookies de sites visitados.|
-|allowAlways|4 |Sempre permitir cookies.|
-
-
-
-
-
+|browserDefault|0|Valor padrão do navegador, sem intenção.|
+|blockAlways|1|Sempre bloqueie cookies.|
+|allowCurrentWebSite|2|Permitir cookies do site atual.|
+|allowFromWebsitesVisited|3|Permitir Cookies de sites visitados.|
+|allowAlways|4 |Sempre permita cookies.|
 
 
 

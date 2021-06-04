@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: b45712c4b52c2af37dbe062eda6fd3553d5da1c6
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 6b435d9daedb7adcd630dd276241d39493d5b39d
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48090988"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52754487"
 ---
 # <a name="managedappoperation-resource-type"></a>Tipo de recurso managedAppOperation
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 Representa uma operação aplicada a um registro de aplicativo.
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
 |[Listar managedAppOperations](../api/intune-mam-managedappoperation-list.md)|Conjunto [managedAppOperation](../resources/intune-mam-managedappoperation.md)|Listar propriedades e relações de objetos de [managedAppOperation](../resources/intune-mam-managedappoperation.md).|
@@ -34,12 +34,12 @@ Representa uma operação aplicada a um registro de aplicativo.
 |:---|:---|:---|
 |displayName|Cadeia de caracteres|O nome da operação.|
 |lastModifiedDateTime|DateTimeOffset|Última vez em que a operação de aplicativo foi modificada.|
-|state|Cadeia de caracteres|O estado atual da operação|
+|estado|Cadeia de caracteres|O estado atual da operação|
 |id|Cadeia de caracteres|Chave da entidade.|
 |versão|String|Versão da entidade.|
 
 ## <a name="relationships"></a>Relações
-Nenhum
+Nenhuma
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
@@ -59,11 +59,6 @@ Veja a seguir uma representação JSON do recurso.
   "version": "String"
 }
 ```
-
-
-
-
-
 
 
 

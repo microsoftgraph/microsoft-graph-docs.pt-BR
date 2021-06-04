@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: b076a49036a3f438e93af5472a0ab9fe1bcb59a0
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 9dfce6c0947fffd861ae1cda205c1011a7500471
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48091177"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52754564"
 ---
 # <a name="deviceoperatingsystemsummary-resource-type"></a>Tipo de recurso deviceOperatingSystemSummary
 
@@ -31,7 +31,7 @@ Resumo do sistema operacional do dispositivo.
 |unknownCount|Int32|Número da contagem de dispositivos desconhecidos.|
 
 ## <a name="relationships"></a>Relações
-Nenhum
+Nenhuma
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
@@ -51,11 +51,6 @@ Veja a seguir uma representação JSON do recurso.
   "unknownCount": 1024
 }
 ```
-
-
-
-
-
 
 
 

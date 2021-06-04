@@ -6,11 +6,11 @@ localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
 ms.openlocfilehash: 909152da2608af14dbcdc693632710e3c6f703dd
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.sourcegitcommit: 91d8454bfff853905e3a5e86623fcb06931507ed
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48401219"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52732277"
 ---
 # <a name="get-user"></a>Obter usuário
 
@@ -21,11 +21,11 @@ Namespace: microsoft.graph
 Leia as propriedades e as relações do objeto [user](../resources/intune-shared-user.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é necessária para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).  A permissão específica depende do contexto.
+Uma das seguintes permissões é necessária para chamar essa API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).  A permissão específica depende do contexto.
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)| _varia por contexto_|
+|Delegado (conta corporativa ou de estudante)| _varia de acordo com o contexto_|
 | &nbsp;&nbsp;Gerenciamento de dispositivos | DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All |
 | &nbsp;&nbsp;MAM | DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All |
 | &nbsp;&nbsp;Integração | DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All |

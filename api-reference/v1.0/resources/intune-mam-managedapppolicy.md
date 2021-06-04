@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: a8eec128ba38343683698deef64dfc78b41fc84d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 61fedfab47ee44d187d2de81c0699885c4af06f4
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48025251"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52752774"
 ---
 # <a name="managedapppolicy-resource-type"></a>Tipo de recurso managedAppPolicy
 
@@ -30,15 +30,15 @@ O recurso ManagedAppPolicy representa um tipo de base para políticas específic
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|displayName|String|Nome de exibição da política.|
-|description|String|Descrição da política.|
+|displayName|Cadeia de caracteres|Nome de exibição da política.|
+|descrição|Cadeia de caracteres|Descrição da política.|
 |createdDateTime|DateTimeOffset|A data e a hora da criação da política.|
 |lastModifiedDateTime|DateTimeOffset|Última hora em que a política foi modificada.|
-|id|String|Chave da entidade.|
+|id|Cadeia de caracteres|Chave da entidade.|
 |versão|String|Versão da entidade.|
 
 ## <a name="relationships"></a>Relações
-Nenhum
+Nenhuma
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
@@ -59,11 +59,6 @@ Veja a seguir uma representação JSON do recurso.
   "version": "String"
 }
 ```
-
-
-
-
-
 
 
 

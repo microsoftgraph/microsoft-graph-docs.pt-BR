@@ -6,11 +6,11 @@ author: dougeby
 ms.prod: intune
 doc_type: conceptualPageType
 ms.openlocfilehash: 8dc379cfcd58ce0d36e4595c35a6c4fc7d36f622
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.sourcegitcommit: 91d8454bfff853905e3a5e86623fcb06931507ed
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48032422"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52732232"
 ---
 # <a name="role-based-access-control-in-microsoft-intune"></a>Controle de acesso baseado em função no Microsoft Intune
 

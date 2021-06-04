@@ -1,18 +1,18 @@
 ---
-title: tipo de enumeração ratingFranceTelevisionType
+title: tipo denum ratingFranceTelevisionType
 description: Rótulos de classificação de conteúdo de TV na França
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: f324f0bc5af5352c10054e77d035f8cac57c4aef
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 899559ae3f8eed6af898782d0f6632c7ba596723
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48041383"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52742766"
 ---
-# <a name="ratingfrancetelevisiontype-enum-type"></a>tipo de enumeração ratingFranceTelevisionType
+# <a name="ratingfrancetelevisiontype-enum-type"></a>tipo denum ratingFranceTelevisionType
 
 Namespace: microsoft.graph
 
@@ -23,17 +23,12 @@ Rótulos de classificação de conteúdo de TV na França
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|Permitido|,0|Valor padrão, permitir todos os programas de TV|
-|Bloqueado|1 |Não permitir que qualquer TV mostre conteúdo|
-|agesAbove10|2 |A classificação-10 não é recomendada para crianças com menos de 10|
-|agesAbove12|3 |A classificação-12 não é recomendada para crianças com menos de 12|
-|agesAbove16|4 |A classificação-16 não é recomendada para crianças com menos de 16|
-|agesAbove18|5 |A classificação-18 não é recomendada para pessoas com 18 anos|
-
-
-
-
-
+|allAllowed|0|Valor padrão, permitir todo o conteúdo de programas de TV|
+|allBlocked|1|Não permitir conteúdo de programas de TV|
+|agesAbove10|2|A classificação -10 não é recomendada para crianças menores de 10 anos|
+|agesAbove12|3|A classificação -12 não é recomendada para crianças menores de 12 anos|
+|agesAbove16|4 |A classificação -16 não é recomendada para crianças menores de 16 anos|
+|agesAbove18|5 |A classificação -18 não é recomendada para pessoas com menos de 18 anos|
 
 
 

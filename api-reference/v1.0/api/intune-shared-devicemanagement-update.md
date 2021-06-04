@@ -6,11 +6,11 @@ localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
 ms.openlocfilehash: f265c4e8665d607b1bed87e7c61949131877fa99
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.sourcegitcommit: 91d8454bfff853905e3a5e86623fcb06931507ed
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48019114"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52732291"
 ---
 # <a name="update-devicemanagement"></a>Atualizar deviceManagement
 
@@ -23,7 +23,7 @@ Atualizar as propriedades de um objeto [deviceManagement](../resources/intune-sh
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-| &nbsp;Tipo &nbsp; de permissão (por &nbsp; fluxo de trabalho) | Permissões (de privilégios máximos a mínimos) |
+| Tipo &nbsp; de &nbsp; permissão (por fluxo de &nbsp; trabalho) | Permissões (de privilégios máximos a mínimos) |
 |:---|:---|
 | Delegado (conta corporativa ou de estudante) |
 | &nbsp;&nbsp;Auditoria | DeviceManagementApps.ReadWrite.All |
@@ -31,14 +31,14 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 | &nbsp;&nbsp;Registro corporativo | DeviceManagementServiceConfig.ReadWrite.All|
 | &nbsp;&nbsp;Configuração do dispositivo | DeviceManagementConfiguration.ReadWrite.All |
 | &nbsp;&nbsp;Gerenciamento de dispositivos | DeviceManagementManagedDevices.ReadWrite.All |
-| &nbsp;&nbsp;Endpoint Protection | DeviceManagementManagedDevices.ReadWrite.All |
+| &nbsp;&nbsp;Proteção de ponto de extremidade | DeviceManagementManagedDevices.ReadWrite.All |
 | &nbsp;&nbsp;Notificação | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp;&nbsp;Integração | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp;&nbsp;Controle de acesso baseado em função | DeviceManagementRBAC.ReadWrite.All |
 | &nbsp;&nbsp;Assistência remota | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp;&nbsp;Gerenciamento de despesas de telecomunicações | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp;&nbsp;Solução de problemas | DeviceManagementManagedDevices.ReadWrite.All |
-| &nbsp;&nbsp;Proteção de informações do Windows | DeviceManagementApps.ReadWrite.All |
+| &nbsp;&nbsp;Windows Proteção de Informações | DeviceManagementApps.ReadWrite.All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte.|
 | Aplicativo | Sem suporte. |
 
@@ -64,15 +64,15 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [deviceM
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|O identificador exclusivo do dispositivo|
+|id|Cadeia de caracteres|O identificador exclusivo do dispositivo|
 |**Configuração do dispositivo**|
 |settings|[deviceManagementSettings](../resources/intune-deviceconfig-devicemanagementsettings.md)|Configurações de nível da conta.|
-|**Gerenciamento de dispositivos**|
+|**Gerenciamento de dispositivo**|
 |subscriptionState|[deviceManagementSubscriptionState](../resources/intune-devices-devicemanagementsubscriptionstate.md)|Estado de assinatura de gerenciamento de dispositivo móvel do locatário. Os valores possíveis são `pending`, `active`, `warning`, `disabled`, `deleted`, `blocked`, `lockedOut`.|
 |**Integração**|
 |intuneBrand|[intuneBrand](../resources/intune-onboarding-intunebrand.md)|intuneBrand contém dados que são usados na personalização da aparência dos aplicativos do Portal da Empresa, bem como do portal da Web de usuários finais.|
 
-O suporte à propriedade do corpo da solicitação varia de acordo com o fluxo de trabalho
+O suporte à propriedade request body varia de acordo com o fluxo de trabalho.
 
 ## <a name="response"></a>Resposta
 Se tiver êxito, este método retornará um código de resposta `200 OK` e um objeto [deviceManagement](../resources/intune-shared-devicemanagement.md) atualizado no corpo da resposta.

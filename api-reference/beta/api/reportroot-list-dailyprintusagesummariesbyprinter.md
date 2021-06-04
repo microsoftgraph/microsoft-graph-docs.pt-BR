@@ -6,11 +6,11 @@ localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
 ms.openlocfilehash: a7ba73373ee0c575ca32ab9a1e594089ae9cc93e
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52054921"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52753581"
 ---
 # <a name="list-dailyprintusagesummariesbyprinter"></a>Listar dailyPrintUsageSummariesByPrinter
 
@@ -29,7 +29,7 @@ Além das permissões a seguir, o locatário do usuário deve ter uma assinatura
 |:---------------|:--------------------------------------------|
 |Delegada (conta corporativa ou de estudante)| Reports.Read.All |
 |Delegada (conta pessoal da Microsoft)|Sem suporte.|
-|Application|Sem suporte.|
+|Aplicativo|Sem suporte.|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->

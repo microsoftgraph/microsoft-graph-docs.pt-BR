@@ -6,11 +6,11 @@ localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
 ms.openlocfilehash: bba1f299aec5a896796c045067c3d6f8c5eaa425
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.sourcegitcommit: 91d8454bfff853905e3a5e86623fcb06931507ed
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48405047"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52732220"
 ---
 # <a name="get-deviceappmanagement"></a>Get deviceAppManagement
 
@@ -22,7 +22,7 @@ Ler propriedades e relações do objeto [deviceAppManagement](../resources/intun
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
-Uma das seguintes permissões é necessária para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).  Observe que a permissão adequada varia de acordo com o fluxo de trabalho.
+Uma das seguintes permissões é necessária para chamar essa API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).  Observe que a permissão apropriada varia de acordo com o fluxo de trabalho.
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
@@ -61,7 +61,7 @@ GET https://graph.microsoft.com/v1.0/deviceAppManagement
 ```
 
 ## <a name="example-response"></a>Resposta de exemplo
-O objeto de resposta mostrado aqui pode estar truncado por brevidade. Todas as propriedades serão retornadas de uma chamada real.
+O objeto de resposta mostrado aqui pode ser truncado para brevidade. Todas as propriedades serão retornadas de uma chamada real.
 
 ``` http
 HTTP/1.1 200 OK

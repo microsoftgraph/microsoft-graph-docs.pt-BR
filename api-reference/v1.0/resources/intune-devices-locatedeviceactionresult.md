@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 98f61377675154034a4a839bdb990717f03d4c2c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 0fc2fa997d56fffd673964a1d387b175bfef2ba1
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48091135"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52754557"
 ---
 # <a name="locatedeviceactionresult-resource-type"></a>Tipo de recurso locateDeviceActionResult
 
@@ -27,13 +27,13 @@ Herda de [deviceActionResult](../resources/intune-devices-deviceactionresult.md)
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |actionName|Cadeia de caracteres|Nome da ação Herdado de [deviceActionResult](../resources/intune-devices-deviceactionresult.md)|
-|actionState|[actionState](../resources/intune-devices-actionstate.md)|Estado da ação herdada de [deviceActionResult](../resources/intune-devices-deviceactionresult.md). Os valores possíveis são: `none`, `pending`, `canceled`, `active`, `done`, `failed`, `notSupported`.|
+|actionState|[actionState](../resources/intune-devices-actionstate.md)|Estado da ação Herdado de [deviceActionResult](../resources/intune-devices-deviceactionresult.md). Os valores possíveis são: `none`, `pending`, `canceled`, `active`, `done`, `failed`, `notSupported`.|
 |startDateTime|DateTimeOffset|Hora de início da ação Herdada de [deviceActionResult](../resources/intune-devices-deviceactionresult.md)|
 |lastUpdatedDateTime|DateTimeOffset|Hora da última atualização do estado da ação Herdada de [deviceActionResult](../resources/intune-devices-deviceactionresult.md)|
 |deviceLocation|[deviceGeoLocation](../resources/intune-devices-devicegeolocation.md)|local do dispositivo|
 
 ## <a name="relationships"></a>Relações
-Nenhum
+Nenhuma
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
@@ -52,21 +52,16 @@ Veja a seguir uma representação JSON do recurso.
   "deviceLocation": {
     "@odata.type": "microsoft.graph.deviceGeoLocation",
     "lastCollectedDateTime": "String (timestamp)",
-    "longitude": "<Unknown Primitive Type Edm.Double>",
-    "latitude": "<Unknown Primitive Type Edm.Double>",
-    "altitude": "<Unknown Primitive Type Edm.Double>",
-    "horizontalAccuracy": "<Unknown Primitive Type Edm.Double>",
-    "verticalAccuracy": "<Unknown Primitive Type Edm.Double>",
-    "heading": "<Unknown Primitive Type Edm.Double>",
-    "speed": "<Unknown Primitive Type Edm.Double>"
+    "longitude": "4.2",
+    "latitude": "4.2",
+    "altitude": "4.2",
+    "horizontalAccuracy": "4.2",
+    "verticalAccuracy": "4.2",
+    "heading": "4.2",
+    "speed": "4.2"
   }
 }
 ```
-
-
-
-
-
 
 
 

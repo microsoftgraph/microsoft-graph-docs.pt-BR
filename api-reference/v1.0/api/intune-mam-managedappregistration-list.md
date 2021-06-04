@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b2c56645dceb15d8f513a2c04f01f7ee3f1ba085
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 39bb2b892ca6ade49917b5c13c11677c985bfbbc
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48033255"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52752816"
 ---
 # <a name="list-managedappregistrations"></a>Listar managedAppRegistrations
 
@@ -23,11 +23,11 @@ Listar propriedades e relações dos objetos [managedAppRegistration](../resourc
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
+|Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
+|Delegado (conta corporativa ou de estudante)|DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|Sem suporte.|
+|Aplicativo|DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -63,7 +63,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 806
+Content-Length: 855
 
 {
   "value": [
@@ -82,7 +82,8 @@ Content-Length: 806
       ],
       "userId": "User Id value",
       "appIdentifier": {
-        "@odata.type": "microsoft.graph.mobileAppIdentifier"
+        "@odata.type": "microsoft.graph.androidMobileAppIdentifier",
+        "packageId": "Package Id value"
       },
       "id": "5496aa60-aa60-5496-60aa-965460aa9654",
       "version": "Version value"
@@ -90,11 +91,6 @@ Content-Length: 806
   ]
 }
 ```
-
-
-
-
-
 
 
 

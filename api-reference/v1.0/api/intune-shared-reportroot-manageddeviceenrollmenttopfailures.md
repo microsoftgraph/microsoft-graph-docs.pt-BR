@@ -1,18 +1,18 @@
 ---
-title: função managedDeviceEnrollmentTopFailures
+title: Função managedDeviceEnrollmentTopFailures
 description: Ainda não documentado
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
 ms.openlocfilehash: df7e3331194f274ea1b6035d640e780e212a88b0
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.sourcegitcommit: 91d8454bfff853905e3a5e86623fcb06931507ed
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47972893"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52732244"
 ---
-# <a name="manageddeviceenrollmenttopfailures-function"></a>função managedDeviceEnrollmentTopFailures
+# <a name="manageddeviceenrollmenttopfailures-function"></a>Função managedDeviceEnrollmentTopFailures
 
 Namespace: microsoft.graph
 

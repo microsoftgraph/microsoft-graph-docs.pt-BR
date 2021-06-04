@@ -1,16 +1,16 @@
 ---
 title: Registrar dispositivos para o gerenciamento no Intune
-description: " O registro (BYOD) permite que os usuários registrem seus telefones, tablets ou computadores pessoais. O registro de dispositivo de propriedade corporativa (COD) permite cenários de gerenciamento como apagamento remoto, dispositivos compartilhados ou afinidade de usuários em um dispositivo."
+description: " O registro (BYOD) permite que os usuários inscrevam seus telefones pessoais, tablets ou computadores. O registro de dispositivo de propriedade corporativa (COD) permite cenários de gerenciamento como apagamento remoto, dispositivos compartilhados ou afinidade de usuários em um dispositivo."
 localization_priority: Normal
 author: dougeby
 ms.prod: intune
 doc_type: conceptualPageType
 ms.openlocfilehash: 7307e0bc710fead998260e78d0b4f550cffa5b3e
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.sourcegitcommit: 91d8454bfff853905e3a5e86623fcb06931507ed
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48079232"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52732308"
 ---
 # <a name="enroll-devices-for-management-in-intune"></a>Registrar dispositivos para o gerenciamento no Intune
 

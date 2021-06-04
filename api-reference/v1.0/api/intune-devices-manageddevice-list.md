@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 417a36ca22199ff01f9bce38e0bcf74f4bcf73e2
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: de9b927b3dde1b265c5ab71402d97e75487ec1aa
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48020962"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52753677"
 ---
 # <a name="list-manageddevices"></a>Listar managedDevices
 
@@ -23,11 +23,11 @@ Listar propriedades e relações dos objetos [managedDevice](../resources/intune
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
+|Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
+|Delegado (conta corporativa ou de estudante)|DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|Sem suporte.|
+|Aplicativo|DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -65,7 +65,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 5130
+Content-Length: 5315
 
 {
   "value": [
@@ -167,16 +167,16 @@ Content-Length: 5130
       "totalStorageSpaceInBytes": 8,
       "freeStorageSpaceInBytes": 7,
       "managedDeviceName": "Managed Device Name value",
-      "partnerReportedThreatState": "activated"
+      "partnerReportedThreatState": "activated",
+      "iccid": "Iccid value",
+      "udid": "Udid value",
+      "notes": "Notes value",
+      "ethernetMacAddress": "Ethernet Mac Address value",
+      "physicalMemoryInBytes": 5
     }
   ]
 }
 ```
-
-
-
-
-
 
 
 

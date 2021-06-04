@@ -1,18 +1,18 @@
 ---
-title: tipo de enumeração internetSiteSecurityLevel
+title: Tipo de número internetSiteSecurityLevel
 description: Valores possíveis para o nível de segurança do site da Internet.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 4a32307bbdfe636a1e11a3ad449b27953aae31b7
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 0ad7a2c84660919133e390a6cca2747d8548a01d
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48056657"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52742892"
 ---
-# <a name="internetsitesecuritylevel-enum-type"></a>tipo de enumeração internetSiteSecurityLevel
+# <a name="internetsitesecuritylevel-enum-type"></a>Tipo de número internetSiteSecurityLevel
 
 Namespace: microsoft.graph
 
@@ -23,15 +23,10 @@ Valores possíveis para o nível de segurança do site da Internet.
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|UserDefined|,0|Definido pelo usuário, valor padrão, sem intenção.|
-|medium|1 |Médio.|
-|mediumHigh|2 |Médio-alto.|
-|high|3 |Alto.|
-
-
-
-
-
+|userDefined|0|User Defined, default value, no intent.|
+|medium|1|Médio.|
+|mediumHigh|2|Médio-Alto.|
+|high|3|Alto.|
 
 
 

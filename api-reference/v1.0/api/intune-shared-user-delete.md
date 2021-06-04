@@ -6,11 +6,11 @@ localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
 ms.openlocfilehash: 1f516c1386d828412e71fa35668b4c86a496f6af
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.sourcegitcommit: 91d8454bfff853905e3a5e86623fcb06931507ed
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48028802"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52732246"
 ---
 # <a name="delete-user"></a>Excluir usuário
 
@@ -21,11 +21,11 @@ Namespace: microsoft.graph
 Exclui [usuário](../resources/intune-shared-user.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é necessária para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).  A permissão específica necessária depende do contexto.
+Uma das seguintes permissões é necessária para chamar essa API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).  A permissão específica necessária depende do contexto.
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)| _varia por contexto_|
+|Delegado (conta corporativa ou de estudante)| _varia de acordo com o contexto_|
 | &nbsp;&nbsp;Dispositivos | DeviceManagementManagedDevices.ReadWrite.All |
 | &nbsp;&nbsp;MAM | DeviceManagementApps.ReadWrite.All |
 | &nbsp;&nbsp;Integração | DeviceManagementServiceConfig.ReadWrite.All |

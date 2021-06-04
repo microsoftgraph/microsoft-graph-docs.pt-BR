@@ -6,11 +6,11 @@ author: dougeby
 ms.prod: intune
 doc_type: conceptualPageType
 ms.openlocfilehash: 7a23f44192b17ae2dfa745496dfbc2b4b1f5a836
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.sourcegitcommit: 91d8454bfff853905e3a5e86623fcb06931507ed
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48072946"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52732233"
 ---
 # <a name="telecom-expense-management-in-microsoft-intune"></a>Gerenciamento de despesas com telecomunicações no Microsoft Intune
 

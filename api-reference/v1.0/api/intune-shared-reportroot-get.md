@@ -6,11 +6,11 @@ localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
 ms.openlocfilehash: 4d22989835a5311a1ee7f09618becc38a389975b
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.sourcegitcommit: 91d8454bfff853905e3a5e86623fcb06931507ed
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48406027"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52732213"
 ---
 # <a name="get-reportroot"></a>Get reportRoot
 

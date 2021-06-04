@@ -6,11 +6,11 @@ localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
 ms.openlocfilehash: 68bbf43154a8997d6e8119e325d4882e5be25c58
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.sourcegitcommit: 91d8454bfff853905e3a5e86623fcb06931507ed
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47972830"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52732203"
 ---
 # <a name="delete-devicemanagementtroubleshootingevent"></a>Excluir deviceManagementTroubleshootingEvent
 

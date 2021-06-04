@@ -6,11 +6,11 @@ localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
 ms.openlocfilehash: 233046ca0eb9a03c6b43cc58b4c4bf83a90878d8
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.sourcegitcommit: 91d8454bfff853905e3a5e86623fcb06931507ed
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48019184"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52732250"
 ---
 # <a name="create-devicecategory"></a>Criar deviceCategory
 
@@ -26,7 +26,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)||
-| &nbsp; &nbsp; **Integração** | Dispositivos DeviceManagementManaged. ReadWrite. All|
+| &nbsp; &nbsp; **Integração** | DeviceManagementManaged Devices.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|Sem suporte.|
 
@@ -52,10 +52,10 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar deviceCa
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|O identificador exclusivo da categoria do dispositivo. Somente leitura.|
+|id|Cadeia de caracteres|O identificador exclusivo da categoria do dispositivo. Somente leitura.|
 |**Integração**|
-|displayName|String|Nome de exibição da categoria de dispositivo.|
-|description|String|Descrição opcional da categoria do dispositivo.|
+|displayName|Cadeia de caracteres|Nome de exibição da categoria de dispositivo.|
+|descrição|Cadeia de caracteres|Descrição opcional da categoria do dispositivo.|
 
 
 

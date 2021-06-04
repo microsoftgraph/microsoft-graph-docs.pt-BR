@@ -5,12 +5,12 @@ author: jsandoval-msft
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: cloud-communications
-ms.openlocfilehash: debc69d62f73d8fc2af1bd30bd06934de9f6ffe2
-ms.sourcegitcommit: e440d855f1106390d842905d97ceb16f143db2e5
+ms.openlocfilehash: 7204f651865328b7cfb9a03a70f6e9d80b912788
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/29/2021
-ms.locfileid: "52080656"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52754473"
 ---
 # <a name="onlinemeeting-resource-type"></a>Tipo de recurso onlineMeeting
 
@@ -20,14 +20,14 @@ Namespace: microsoft.graph
 
 Contém informações sobre uma reunião, incluindo a URL usada para ingressar em uma reunião, a lista de participantes e a descrição.
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 
 | Método                                                             | Tipo de retorno                       | Descrição                                                                                                       |
 | :----------------------------------------------------------------- | :-------------------------------- | :---------------------------------------------------------------------------------------------------------------- |
 | [Criar](../api/application-post-onlineMeetings.md)                | [onlineMeeting](onlinemeeting.md) | Criar uma reunião online.                                                                                         |
 | [Get](../api/onlinemeeting-get.md)                                 | [onlineMeeting](onlinemeeting.md) | Leia as propriedades e as relações de um **objeto onlineMeeting.**                                             |
 | [Atualizar](../api/onlinemeeting-update.md)                           | [onlineMeeting](onlinemeeting.md) | Atualize as propriedades de um **objeto onlineMeeting.** |
-| [Delete](../api/onlinemeeting-delete.md)                           | Nenhum                              | Excluir um **objeto onlineMeeting.**                                                                             |
+| [Delete](../api/onlinemeeting-delete.md)                           | None                              | Excluir um **objeto onlineMeeting.**                                                                             |
 | [Criar ou obter OnlineMeeting](../api/onlinemeeting-createorget.md) | [onlineMeeting](onlinemeeting.md) | Crie uma reunião online com uma ID externa personalizada. Se a reunião já existir, recupere suas propriedades.      |
 
 ## <a name="properties"></a>Propriedades
@@ -35,11 +35,13 @@ Contém informações sobre uma reunião, incluindo a URL usada para ingressar e
 | Propriedade              | Tipo                                          | Descrição                                                                                                                                                                                                                                                 |
 | :-------------------- | :-------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | allowedPresenters     | [onlineMeetingPresenters](#onlinemeetingpresenters-values)| Especifica quem pode ser um apresentador em uma reunião. Os valores possíveis `everyone` são , , e `organization` `roleIsPresenter` `organizer` `unknownFutureValue` .                                                                                                    |
+| allowAttendeeToEnableCamera | Booliano | Indica se os participantes podem ativar a câmera. |
+| allowAttendeeToEnableMic | Booliano | Indica se os participantes podem ativar o microfone. |
 | allowMeetingChat      | [meetingChatMode](#meetingchatmode-values) | Especifica o modo de chat de reunião. |
-| allowTeamworkReactions | Boolean | Indica se Teams reações estão habilitadas para a reunião. |
+| allowTeamworkReactions | Booliano | Indica se Teams reações estão habilitadas para a reunião. |
 | alternativeRecording  | Stream                                        | O fluxo de conteúdo da gravação alternativa de um evento ao vivo. Somente leitura.                                                                                                                                                                                 |
 | attendeeReport        | Stream                                        | O fluxo de conteúdo do relatório do participante de um evento ao vivo. Somente leitura.                                                                                                                                                                                       |
-| autoAdmittedUsers (preterido)    | Cadeia de Caracteres                                        | A configuração que especifica o tipo de participantes que serão automaticamente permitidos na reunião online. Os valores possíveis são: `everyone`, `everyoneInSameAndFederatedCompany`, `everyoneInCompany`, `invitedUsersInCompany`, `organizer`. Somente leitura. |
+| autoAdmittedUsers (preterido)    | Cadeia de caracteres                                        | A configuração que especifica o tipo de participantes que serão automaticamente permitidos na reunião online. Os valores possíveis são: `everyone`, `everyoneInSameAndFederatedCompany`, `everyoneInCompany`, `invitedUsersInCompany`, `organizer`. Somente leitura. |
 | audioConferencing     | [audioConferencing](audioconferencing.md)     | As informações de acesso por telefone (discagem) para uma reunião online. Somente leitura.                                                                                                                                                                                    |
 | broadcastSettings     | [broadcastMeetingSettings](broadcastMeetingSettings.md)     | Configurações relacionado a um evento ao vivo*                                                                                                                                                                                                                    |
 | chatInfo              | [chatInfo](chatinfo.md)                       | As informações de chat associadas a essa reunião online.                                                                                                                                                                                                   |
@@ -47,18 +49,18 @@ Contém informações sobre uma reunião, incluindo a URL usada para ingressar e
 | capabilities (preterido)         | coleção meetingCapabilities                             | A lista de recursos de reunião. Os valores possíveis são: `questionAndAnswer` , `unknownFutureValue` .                                                                                                                                                                                 |
 | endDateTime           | DateTime                                      | A hora de término da reunião em UTC.                                                                                                                                                                                                                                |
 | externalId            | Cadeia de caracteres                                        | A ID externa. Uma ID personalizada. Opcional.                                                                                                                                                                                                                     |
-| id                    | String                                        | A ID padrão associada à reunião online. Somente leitura.                                                                                                                                                                                               |
-| isBroadcast           | Boolean                                       | Indica se esse é um evento ao vivo.                                                                                                                                                                                                                   |
-| isEntryExitAnnounced  | Boolean                                       | Se os chamadores ingressarão ou sairão.                                                                                                                                                                                                      |
-| joinWebUrl            | Cadeia de Caracteres                                        | A URL de junção da reunião online. Somente leitura.                                                                                                                                                                                                              |
+| id                    | Cadeia de caracteres                                        | A ID padrão associada à reunião online. Somente leitura.                                                                                                                                                                                               |
+| isBroadcast           | Booliano                                       | Indica se é um evento ao vivo.                                                                                                                                                                                                                   |
+| isEntryExitAnnounced  | Booliano                                       | Indica se os chamadores ingressarão ou sairão.                                                                                                                                                                                                      |
+| joinWebUrl            | Cadeia de caracteres                                        | A URL de junção da reunião online. Somente leitura.                                                                                                                                                                                                              |
 | joinInformation       | [itemBody](itembody.md)                       | As informações de junção no idioma e na variante de localidade especificadas no cabeçalho HTTP de solicitação "Accept-Language". Somente leitura                                                                                                                                       |
 | lobbyBypassSettings   | [lobbyBypassSettings](lobbyBypassSettings.md) | Especifica quais participantes podem ignorar o lobby da reunião.                                                                                                                                                                                                  |
-|meetingAttendanceReport | [meetingAttendanceReport](meetingAttendanceReport.md) | O relatório de participação de uma reunião agendada. Somente leitura. |
+| meetingAttendanceReport | [meetingAttendanceReport](meetingAttendanceReport.md) | O relatório de participação de uma reunião agendada. Somente leitura. |
 | participants          | [meetingParticipants](meetingparticipants.md) | Os participantes associados à reunião online. Isso inclui o organizador e os participantes.                                                                                                                                                        |
 | recording             | Stream                                        | O fluxo de conteúdo da gravação de um evento ao vivo. Somente leitura.                                                                                                                                                                                             |
 | startDateTime         | DateTime                                      | O horário de início da reunião em UTC.                                                                                                                                                                                                                              |
-| assunto               | String                                        | O assunto da reunião online.                                                                                                                                                                                                                          |
-| videoTeleconferenceId | Cadeia de Caracteres                                        | A ID de teleconferência de vídeo. Somente leitura.                                                                                                                                                                                                                   |
+| Assunto               | Cadeia de caracteres                                        | O assunto da reunião online.                                                                                                                                                                                                                          |
+| videoTeleconferenceId | Cadeia de caracteres                                        | A ID de teleconferência de vídeo. Somente leitura.                                                                                                                                                                                                                   |
 
 > [!CAUTION]
 >
@@ -77,7 +79,7 @@ Contém informações sobre uma reunião, incluindo a URL usada para ingressar e
 | unknownFutureValue | Valor futuro desconhecido.                                         |
 
 > [!TIP]
-> Se o valor **de allowedPresenters** estiver definido como , especifique a função de reunião de cada participante da reunião usando a propriedade `roleIsPresenter` **role** em [meetingParticipantInfo](../resources/meetingparticipantinfo.md).
+> Se o valor **de allowedPresenters** estiver definido como , especifique a função de reunião de cada participante da reunião usando a `roleIsPresenter` propriedade de função [meetingParticipantInfo.](../resources/meetingparticipantinfo.md) 
 
 ### <a name="meetingchatmode-values"></a>valores meetingChatMode
 
@@ -115,7 +117,9 @@ Contém informações sobre uma reunião, incluindo a URL usada para ingressar e
   "isBroadcast": "Boolean",
   "broadcastSettings": {"@odata.type": "microsoft.graph.broadcastSettings"},
   "allowMeetingChat": {"@odata.type": "microsoft.graph.meetingChatMode"},
-  "allowTeamworkReactions": "Boolean"
+  "allowTeamworkReactions": "Boolean",
+  "allowAttendeeToEnableMic": "Boolean",
+  "allowAttendeeToEnableCamera": "Boolean"
 }
 ```
 

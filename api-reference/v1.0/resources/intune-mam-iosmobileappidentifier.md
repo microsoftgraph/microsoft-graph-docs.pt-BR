@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0ab8119fec6998e9aaa06d2de0cf10b991a5b139
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 4b1dbebd30fecd15a916eef554bbdffd27b435f3
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47984408"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52754522"
 ---
 # <a name="iosmobileappidentifier-resource-type"></a>Tipo de recurso iosMobileAppIdentifier
 
@@ -29,7 +29,7 @@ Herda de [mobileAppIdentifier](../resources/intune-mam-mobileappidentifier.md)
 |bundleId|Cadeia de caracteres|O identificador de um aplicativo, conforme especificado na App Store.|
 
 ## <a name="relationships"></a>Relações
-Nenhum
+Nenhuma
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
@@ -44,11 +44,6 @@ Veja a seguir uma representação JSON do recurso.
   "bundleId": "String"
 }
 ```
-
-
-
-
-
 
 
 

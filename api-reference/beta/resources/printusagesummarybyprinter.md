@@ -1,18 +1,18 @@
 ---
-title: tipo de recurso printUsageSummaryByPrinter
+title: Tipo de recurso printUsageSummaryByPrinter
 description: Descreve a atividade de impressão de uma impressora durante um período de tempo especificado (usageDate).
 author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: resourcePageType
 ms.openlocfilehash: 4d33ab99780f980dcc24e267ba1ac6603f602aa2
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48070644"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52753580"
 ---
-# <a name="printusagesummarybyprinter-resource-type"></a>tipo de recurso printUsageSummaryByPrinter
+# <a name="printusagesummarybyprinter-resource-type"></a>Tipo de recurso printUsageSummaryByPrinter
 
 Namespace: microsoft.graph
 
@@ -20,23 +20,23 @@ Namespace: microsoft.graph
 
 Descreve a atividade de impressão de uma impressora durante um período de tempo especificado (usageDate).
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 
 | Método       | Tipo de retorno | Descrição |
 |:-------------|:------------|:------------|
-| [Listar (diariamente)](../api/reportroot-list-dailyprintusagesummariesbyprinter.md) | [printUsageSummaryByPrinter](printusagesummarybyprinter.md) | Obtenha uma lista de resumos diários de uso de impressão, agrupadas por impressora. |
-| [Listar (mensal)](../api/reportroot-list-monthlyprintusagesummariesbyprinter.md) | [printUsageSummaryByPrinter](printusagesummarybyprinter.md) | Obter uma lista de resumos de uso de impressão mensal, agrupados por impressora. |
-| [Get](../api/printusagesummarybyprinter-get.md) | [printUsageSummaryByPrinter](printusagesummarybyprinter.md) | Leia as propriedades e os relacionamentos de um objeto **printUsageSummaryByPrinter** . |
+| [Lista (diariamente)](../api/reportroot-list-dailyprintusagesummariesbyprinter.md) | [printUsageSummaryByPrinter](printusagesummarybyprinter.md) | Obter uma lista de resumos de uso diário de impressão, agrupados por impressora. |
+| [Lista (mensal)](../api/reportroot-list-monthlyprintusagesummariesbyprinter.md) | [printUsageSummaryByPrinter](printusagesummarybyprinter.md) | Obter uma lista de resumos de uso de impressão mensal, agrupados por impressora. |
+| [Get](../api/printusagesummarybyprinter-get.md) | [printUsageSummaryByPrinter](printusagesummarybyprinter.md) | Leia as propriedades e as relações de um **objeto printUsageSummaryByPrinter.** |
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|id|Cadeia de caracteres|A ID deste Resumo de uso.|
-|printerid|Cadeia de caracteres|A ID da impressora representada por essas estatísticas.|
+|id|Cadeia de caracteres|A ID deste resumo de uso.|
+|printerID|Cadeia de caracteres|A ID da impressora representada por essas estatísticas.|
 |usageDate|Data|A data associada a essas estatísticas.|
 |completedBlackAndWhiteJobCount|Int64|O número de trabalhos de impressão em preto e branco concluídos pela impressora na data associada.|
 |completedColorJobCount|Int64|O número de trabalhos de impressão de cores concluídos pela impressora na data associada.|
-|incompleteJobCount|Int64|O número de trabalhos de impressão que foram enfileirados para a impressora, mas que não foram concluídos, na data associada.|
+|incompleteJobCount|Int64|O número de trabalhos de impressão que foram enraizadas para a impressora, mas não concluídos, na data associada.|
 
 ## <a name="json-representation"></a>Representação JSON
 

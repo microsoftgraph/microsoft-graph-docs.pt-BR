@@ -6,11 +6,11 @@ localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
 ms.openlocfilehash: f7fccbc17390e9cd481c2fd06af09ba5681a1e56
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.sourcegitcommit: 91d8454bfff853905e3a5e86623fcb06931507ed
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48402104"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52732288"
 ---
 # <a name="get-devicemanagement"></a>Acessar deviceManagement
 
@@ -23,21 +23,21 @@ Leia as propriedades e as relações do objeto [deviceManagement](../resources/i
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-| &nbsp;Tipo &nbsp; de permissão (por &nbsp; fluxo de trabalho) | Permissões (de privilégios máximos a mínimos) |
+| Tipo &nbsp; de &nbsp; permissão (por fluxo de &nbsp; trabalho) | Permissões (de privilégios máximos a mínimos) |
 |:---|:---|
 | Delegado (conta corporativa ou de estudante) | |
 | &nbsp;&nbsp;Auditoria | DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All |
 | &nbsp;&nbsp;Termos da empresa | DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All |
 | &nbsp;&nbsp;Configuração do dispositivo | DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All |
 | &nbsp;&nbsp;Gerenciamento de dispositivos | DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All |
-| &nbsp;&nbsp;Registro | DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All |
+| &nbsp;&nbsp;Inscrição | DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All |
 | &nbsp;&nbsp;Notificação | DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All |
 | &nbsp;&nbsp;Integração | DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All |
 | &nbsp;&nbsp;RBAC | DeviceManagementRBAC.ReadWrite.All, DeviceManagementRBAC.Read.All |
 | &nbsp;&nbsp;Assistência remota | DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All |
 | &nbsp;&nbsp;Gerenciamento de despesas de telecomunicações | DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All |
 | &nbsp;&nbsp;Solução de problemas | DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
-| &nbsp;&nbsp;Proteção de informações do Windows | DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
+| &nbsp;&nbsp;Windows Proteção de Informações | DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 | Delegado (conta pessoal da Microsoft) | Sem suporte.|
 | Aplicativo | Sem suporte. |
 

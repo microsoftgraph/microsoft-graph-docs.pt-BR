@@ -5,12 +5,12 @@ doc_type: resourcePageType
 localization_priority: Normal
 author: RamjotSingh
 ms.prod: microsoft-teams
-ms.openlocfilehash: e96319854f1f11bf85507868918f2bb18bcabed9
-ms.sourcegitcommit: ad1e4d758d4fe6025987c1c3528ce644edb27062
+ms.openlocfilehash: 300d17e32114eece7e1af3f9ab57c8b3af370494
+ms.sourcegitcommit: 91d8454bfff853905e3a5e86623fcb06931507ed
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51698003"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52732186"
 ---
 # <a name="chatmessage-resource-type"></a>Tipo de recurso chatMessage
 
@@ -20,7 +20,7 @@ Representa uma mensagem de bate-papo individual em um [canal](channel.md) ou [ba
 
 > **Observação**: este recurso dá suporte à assinatura de alterações (criar, atualizar e excluir) usando [notificações de alteração.](../resources/webhooks.md) Isso permite aos chamadores assinar e obter alterações em tempo real. Para obter detalhes, confira [obter notificações de](/graph/teams-changenotifications-chatMessage)de mensagens.
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 
 | Método       | Tipo de retorno  |Descrição|
 |:---------------|:--------|:----------|
@@ -58,10 +58,10 @@ Representa uma mensagem de bate-papo individual em um [canal](channel.md) ou [ba
 |messageType|string|O tipo de mensagem de chat. O valor possível é: `message` .|
 |createdDateTime|dateTimeOffset|Timestamp de quando a mensagem de chat foi criada.|
 |lastModifiedDateTime|dateTimeOffset|Somente leitura. Timestamp quando a mensagem de chat é criada (configuração inicial) ou modificada, incluindo quando uma reação é adicionada ou removida. |
-|lastEditedDateTime|dateTimeOffset|Somente leitura. Timestamp quando as edições para a mensagem de chat foram feitas. Dispara um sinalizador "Editado" na interface do usuário do Teams. Se nenhuma edição for feita, o valor será `null` .|
+|lastEditedDateTime|dateTimeOffset|Somente leitura. Timestamp quando as edições para a mensagem de chat foram feitas. Dispara um sinalizador "Editado" na interface Teams interface do usuário. Se nenhuma edição for feita, o valor será `null` .|
 |deletedDateTime|dateTimeOffset|Somente leitura. Timestamp no qual a mensagem de chat foi excluída ou nula se não for excluída. |
-|assunto|string| O assunto da mensagem de chat, em texto sem formatção.|
-|body|[itemBody](itembody.md)|Representação plaintext/HTML do conteúdo da mensagem de chat. A representação é especificada pelo contentType dentro do corpo. O conteúdo estará sempre em HTML se a mensagem de chat contiver [um chatMessageMention](chatmessagemention.md). |
+|Assunto|string| O assunto da mensagem de chat, em texto sem formatção.|
+|corpo|[itemBody](itembody.md)|Representação plaintext/HTML do conteúdo da mensagem de chat. A representação é especificada pelo contentType dentro do corpo. O conteúdo estará sempre em HTML se a mensagem de chat contiver [um chatMessageMention](chatmessagemention.md). |
 |summary|string| Texto de resumo da mensagem de chat que pode ser usada para notificações por push e exibições de resumo ou exibições de retorno. Aplica-se apenas a mensagens de chat de canal, não mensagens de chat em um chat. |
 |attachments|[chatMessageAttachment](chatmessageattachment.md) collection |Arquivos anexos. No momento, os anexos são somente leitura, não há suporte para o envio de anexos. |
 |mentions|[chatMessageMention](chatmessagemention.md) collection| Lista de entidades mencionadas na mensagem de chat. Atualmente, dá suporte a usuário, bot, equipe, canal.|
@@ -71,13 +71,13 @@ Representa uma mensagem de bate-papo individual em um [canal](channel.md) ou [ba
 |policyViolation | [chatMessagePolicyViolation](chatmessagepolicyviolation.md) |Define as propriedades de uma violação de política definida por um aplicativo de prevenção contra perda de dados (DLP).|
 |chatId|string|Se a mensagem foi enviada em um chat, representa a identidade do chat.|
 |channelIdentity|[channelIdentity](channelidentity.md)|Se a mensagem foi enviada em um canal, representa a identidade do canal.|
-|webUrl|cadeia de caracteres|Somente leitura. Link para a mensagem no Microsoft Teams.|
+|webUrl|cadeia de caracteres|Somente leitura. Link para a mensagem em Microsoft Teams.|
 ## <a name="relationships"></a>Relações
 
 | Relação   | Tipo    | Descrição |
 |:---------------|:--------|:----------|
 |respostas|[chatMessage](chatmessage.md)| Respostas para uma mensagem especificada. |
-|hostedContents|[chatMessageHostedContent](chatmessagehostedcontent.md)| Conteúdo em uma mensagem hospedada pelo Microsoft Teams, por exemplo, imagens, trechos de código etc. |
+|hostedContents|[chatMessageHostedContent](chatmessagehostedcontent.md)| Conteúdo em uma mensagem hospedada por Microsoft Teams - por exemplo, imagens, trechos de código etc. |
 
 ## <a name="json-representation"></a>Representação JSON
 

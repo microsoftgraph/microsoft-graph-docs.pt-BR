@@ -6,11 +6,11 @@ localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
 ms.openlocfilehash: fe26bc7b5effb24fb0855da6d84b464f36de4927
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.sourcegitcommit: 91d8454bfff853905e3a5e86623fcb06931507ed
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50472031"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52732201"
 ---
 # <a name="reportroot-resource-type"></a>Tipo de recurso reportRoot
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 O recurso que representa uma instância dos Relatórios de históricos.
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
 |[Obter reportRoot](../api/intune-shared-reportroot-get.md)|[reportRoot](../resources/intune-shared-reportroot.md)|Ler propriedades e relações de objetos de [reportRoot](../resources/intune-shared-reportroot.md).|
@@ -39,7 +39,7 @@ O recurso que representa uma instância dos Relatórios de históricos.
 |id|Cadeia de caracteres|O identificador exclusivo dessa entidade.|
 
 ## <a name="relationships"></a>Relações
-Nenhum
+Nenhuma
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
