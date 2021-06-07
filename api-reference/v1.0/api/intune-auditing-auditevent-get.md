@@ -1,24 +1,24 @@
 ---
-title: Acessar iosVppApp
-description: Leia as propriedades e as relações do objeto iosVppApp.
+title: Get auditEvent
+description: Ler propriedades e relações do objeto auditEvent.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f63bd088180ef66b80e56f25cf7351ee53d84d95
+ms.openlocfilehash: 9013de3044009032e30382e881d8b9bf763afe50
 ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 06/04/2021
-ms.locfileid: "52757308"
+ms.locfileid: "52757437"
 ---
-# <a name="get-iosvppapp"></a>Acessar iosVppApp
+# <a name="get-auditevent"></a>Get auditEvent
 
 Namespace: microsoft.graph
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Leia as propriedades e as relações do objeto [iosVppApp](../resources/intune-apps-iosvppapp.md).
+Ler propriedades e relações do objeto [auditEvent](../resources/intune-auditing-auditevent.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -35,7 +35,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 }
 -->
 ``` http
-GET /deviceAppManagement/mobileApps/{mobileAppId}
+GET /deviceManagement/auditEvents/{auditEventId}
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
@@ -51,14 +51,14 @@ Este método dá suporte a [Parâmetros de consulta OData](/graph/query-paramete
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará o código de resposta `200 OK` e o objeto [iosVppApp](../resources/intune-apps-iosvppapp.md) no corpo da resposta.
+Se bem-sucedido, este método retornará um código de resposta `200 OK` e um objeto [auditEvent](../resources/intune-auditing-auditevent.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
 ### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
 ``` http
-GET https://graph.microsoft.com/v1.0/deviceAppManagement/mobileApps/{mobileAppId}
+GET https://graph.microsoft.com/v1.0/deviceManagement/auditEvents/{auditEventId}
 ```
 
 ### <a name="response"></a>Resposta
@@ -66,47 +66,50 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1487
+Content-Length: 1538
 
 {
   "value": {
-    "@odata.type": "#microsoft.graph.iosVppApp",
-    "id": "a0ac9b6f-9b6f-a0ac-6f9b-aca06f9baca0",
+    "@odata.type": "#microsoft.graph.auditEvent",
+    "id": "59653ce8-3ce8-5965-e83c-6559e83c6559",
     "displayName": "Display Name value",
-    "description": "Description value",
-    "publisher": "Publisher value",
-    "largeIcon": {
-      "@odata.type": "microsoft.graph.mimeContent",
+    "componentName": "Component Name value",
+    "actor": {
+      "@odata.type": "microsoft.graph.auditActor",
       "type": "Type value",
-      "value": "dmFsdWU="
+      "userPermissions": [
+        "User Permissions value"
+      ],
+      "applicationId": "Application Id value",
+      "applicationDisplayName": "Application Display Name value",
+      "userPrincipalName": "User Principal Name value",
+      "servicePrincipalName": "Service Principal Name value",
+      "ipAddress": "Ip Address value",
+      "userId": "User Id value"
     },
-    "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
-    "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
-    "isFeatured": true,
-    "privacyInformationUrl": "https://example.com/privacyInformationUrl/",
-    "informationUrl": "https://example.com/informationUrl/",
-    "owner": "Owner value",
-    "developer": "Developer value",
-    "notes": "Notes value",
-    "publishingState": "processing",
-    "usedLicenseCount": 0,
-    "totalLicenseCount": 1,
-    "releaseDateTime": "2017-01-01T00:01:34.7470482-08:00",
-    "appStoreUrl": "https://example.com/appStoreUrl/",
-    "licensingType": {
-      "@odata.type": "microsoft.graph.vppLicensingType",
-      "supportsUserLicensing": true,
-      "supportsDeviceLicensing": true
-    },
-    "applicableDeviceType": {
-      "@odata.type": "microsoft.graph.iosDeviceType",
-      "iPad": true,
-      "iPhoneAndIPod": true
-    },
-    "vppTokenOrganizationName": "Vpp Token Organization Name value",
-    "vppTokenAccountType": "education",
-    "vppTokenAppleId": "Vpp Token Apple Id value",
-    "bundleId": "Bundle Id value"
+    "activity": "Activity value",
+    "activityDateTime": "2016-12-31T23:59:51.6363086-08:00",
+    "activityType": "Activity Type value",
+    "activityOperationType": "Activity Operation Type value",
+    "activityResult": "Activity Result value",
+    "correlationId": "52effe71-fe71-52ef-71fe-ef5271feef52",
+    "resources": [
+      {
+        "@odata.type": "microsoft.graph.auditResource",
+        "displayName": "Display Name value",
+        "modifiedProperties": [
+          {
+            "@odata.type": "microsoft.graph.auditProperty",
+            "displayName": "Display Name value",
+            "oldValue": "Old Value value",
+            "newValue": "New Value value"
+          }
+        ],
+        "type": "Type value",
+        "resourceId": "Resource Id value"
+      }
+    ],
+    "category": "Category value"
   }
 }
 ```
