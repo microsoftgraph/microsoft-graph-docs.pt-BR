@@ -5,32 +5,32 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 5f121c5cc6a3422b7945dfb5c249ae72a706a548
-ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
+ms.openlocfilehash: 1d42b90f2e9d89edb3d7c138a14616221b0ec42d
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "52665543"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52788112"
 ---
-# <a name="call-redirect"></a><span data-ttu-id="64e97-103">call: redirect</span><span class="sxs-lookup"><span data-stu-id="64e97-103">call: redirect</span></span>
+# <a name="call-redirect"></a><span data-ttu-id="adc0a-103">call: redirect</span><span class="sxs-lookup"><span data-stu-id="adc0a-103">call: redirect</span></span>
 
-<span data-ttu-id="64e97-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="64e97-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="adc0a-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="adc0a-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="64e97-105">Redirecionar uma chamada de entrada que ainda não foi [atendida](./call-answer.md) [ou rejeitada.](./call-reject.md)</span><span class="sxs-lookup"><span data-stu-id="64e97-105">Redirect an incoming call that hasn't been [answered](./call-answer.md) or [rejected](./call-reject.md) yet.</span></span> <span data-ttu-id="64e97-106">Os termos "redirecionamento" e "encaminhamento" de uma chamada são usados de forma intercambiável.</span><span class="sxs-lookup"><span data-stu-id="64e97-106">The terms "redirecting" and "forwarding" a call are used interchangeably.</span></span>
+<span data-ttu-id="adc0a-105">Redirecionar uma chamada de entrada que ainda não foi [atendida](./call-answer.md) [ou rejeitada.](./call-reject.md)</span><span class="sxs-lookup"><span data-stu-id="adc0a-105">Redirect an incoming call that hasn't been [answered](./call-answer.md) or [rejected](./call-reject.md) yet.</span></span> <span data-ttu-id="adc0a-106">Os termos "redirecionamento" e "encaminhamento" de uma chamada são usados de forma intercambiável.</span><span class="sxs-lookup"><span data-stu-id="adc0a-106">The terms "redirecting" and "forwarding" a call are used interchangeably.</span></span>
 
-<span data-ttu-id="64e97-107">Espera-se que o bot redirecione a chamada antes do tempo de chamada. O valor de tempo decoro atual é 15 segundos.</span><span class="sxs-lookup"><span data-stu-id="64e97-107">The bot is expected to redirect the call before the call times out. The current timeout value is 15 seconds.</span></span>
+<span data-ttu-id="adc0a-107">Espera-se que o bot redirecione a chamada antes do tempo de chamada. O valor de tempo decoro atual é 15 segundos.</span><span class="sxs-lookup"><span data-stu-id="adc0a-107">The bot is expected to redirect the call before the call times out. The current timeout value is 15 seconds.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="64e97-108">Permissões</span><span class="sxs-lookup"><span data-stu-id="64e97-108">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="adc0a-108">Permissões</span><span class="sxs-lookup"><span data-stu-id="adc0a-108">Permissions</span></span>
 
-<span data-ttu-id="64e97-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="64e97-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="adc0a-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="adc0a-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="64e97-111">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="64e97-111">Permission type</span></span> | <span data-ttu-id="64e97-112">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="64e97-112">Permissions (from least to most privileged)</span></span>         |
+| <span data-ttu-id="adc0a-111">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="adc0a-111">Permission type</span></span> | <span data-ttu-id="adc0a-112">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="adc0a-112">Permissions (from least to most privileged)</span></span>         |
 | :-------------- | :-------------------------------------------------- |
-| <span data-ttu-id="64e97-113">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="64e97-113">Delegated (work or school account)</span></span>     | <span data-ttu-id="64e97-114">Não suportado</span><span class="sxs-lookup"><span data-stu-id="64e97-114">Not Supported</span></span>                |
-| <span data-ttu-id="64e97-115">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="64e97-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="64e97-116">Não suportado</span><span class="sxs-lookup"><span data-stu-id="64e97-116">Not Supported</span></span>                |
-| <span data-ttu-id="64e97-117">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="64e97-117">Application</span></span>     | <span data-ttu-id="64e97-118">Calls.Initiate.All</span><span class="sxs-lookup"><span data-stu-id="64e97-118">Calls.Initiate.All</span></span>                                  |
+| <span data-ttu-id="adc0a-113">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="adc0a-113">Delegated (work or school account)</span></span>     | <span data-ttu-id="adc0a-114">Não suportado</span><span class="sxs-lookup"><span data-stu-id="adc0a-114">Not Supported</span></span>                |
+| <span data-ttu-id="adc0a-115">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="adc0a-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="adc0a-116">Não suportado</span><span class="sxs-lookup"><span data-stu-id="adc0a-116">Not Supported</span></span>                |
+| <span data-ttu-id="adc0a-117">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="adc0a-117">Application</span></span>     | <span data-ttu-id="adc0a-118">Calls.Initiate.All</span><span class="sxs-lookup"><span data-stu-id="adc0a-118">Calls.Initiate.All</span></span>                                  |
 
-## <a name="http-request"></a><span data-ttu-id="64e97-119">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="64e97-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="adc0a-119">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="adc0a-119">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -38,33 +38,33 @@ ms.locfileid: "52665543"
 POST /communications/calls/{id}/redirect
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="64e97-120">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="64e97-120">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="adc0a-120">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="adc0a-120">Request headers</span></span>
 
-| <span data-ttu-id="64e97-121">Nome</span><span class="sxs-lookup"><span data-stu-id="64e97-121">Name</span></span>          | <span data-ttu-id="64e97-122">Descrição</span><span class="sxs-lookup"><span data-stu-id="64e97-122">Description</span></span>               |
+| <span data-ttu-id="adc0a-121">Nome</span><span class="sxs-lookup"><span data-stu-id="adc0a-121">Name</span></span>          | <span data-ttu-id="adc0a-122">Descrição</span><span class="sxs-lookup"><span data-stu-id="adc0a-122">Description</span></span>               |
 |:--------------|:--------------------------|
-| <span data-ttu-id="64e97-123">Autorização</span><span class="sxs-lookup"><span data-stu-id="64e97-123">Authorization</span></span> | <span data-ttu-id="64e97-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="64e97-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="adc0a-123">Autorização</span><span class="sxs-lookup"><span data-stu-id="adc0a-123">Authorization</span></span> | <span data-ttu-id="adc0a-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="adc0a-p103">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="64e97-126">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="64e97-126">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="adc0a-126">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="adc0a-126">Request body</span></span>
 
-<span data-ttu-id="64e97-127">Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="64e97-127">In the request body, provide a JSON object with the following parameters.</span></span>
+<span data-ttu-id="adc0a-127">Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="adc0a-127">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="64e97-128">Parâmetro</span><span class="sxs-lookup"><span data-stu-id="64e97-128">Parameter</span></span>      | <span data-ttu-id="64e97-129">Tipo</span><span class="sxs-lookup"><span data-stu-id="64e97-129">Type</span></span>    |<span data-ttu-id="64e97-130">Descrição</span><span class="sxs-lookup"><span data-stu-id="64e97-130">Description</span></span>|
+| <span data-ttu-id="adc0a-128">Parâmetro</span><span class="sxs-lookup"><span data-stu-id="adc0a-128">Parameter</span></span>      | <span data-ttu-id="adc0a-129">Tipo</span><span class="sxs-lookup"><span data-stu-id="adc0a-129">Type</span></span>    |<span data-ttu-id="adc0a-130">Descrição</span><span class="sxs-lookup"><span data-stu-id="adc0a-130">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="64e97-131">targets</span><span class="sxs-lookup"><span data-stu-id="64e97-131">targets</span></span>|<span data-ttu-id="64e97-132">conjunto [invitationParticipantInfo](../resources/invitationparticipantinfo.md)</span><span class="sxs-lookup"><span data-stu-id="64e97-132">[invitationParticipantInfo](../resources/invitationparticipantinfo.md) collection</span></span>|<span data-ttu-id="64e97-133">Os participantes de destino da operação de redirecionamento.</span><span class="sxs-lookup"><span data-stu-id="64e97-133">The target participants of the redirect operation.</span></span> <span data-ttu-id="64e97-134">Se mais de um destino for especificado, será uma chamada simulring.</span><span class="sxs-lookup"><span data-stu-id="64e97-134">If more than one target is specified, it's a simulring call.</span></span> <span data-ttu-id="64e97-135">Isso significa que todos os destinos serão tordos ao mesmo tempo e somente o primeiro destino que escolher será conectado.</span><span class="sxs-lookup"><span data-stu-id="64e97-135">This means that all of the targets will be rang at the same time and only the first target that picks up will be connected.</span></span> <span data-ttu-id="64e97-136">Suportamos até 25 destinos para simulação.</span><span class="sxs-lookup"><span data-stu-id="64e97-136">We support up to 25 targets for simulring.</span></span>
-|<span data-ttu-id="64e97-137">timeout</span><span class="sxs-lookup"><span data-stu-id="64e97-137">timeout</span></span>|<span data-ttu-id="64e97-138">Int32</span><span class="sxs-lookup"><span data-stu-id="64e97-138">Int32</span></span>|<span data-ttu-id="64e97-139">O tempo decoro (em segundos) para a operação de redirecionamento.</span><span class="sxs-lookup"><span data-stu-id="64e97-139">The timeout (in seconds) for the redirect operation.</span></span> <span data-ttu-id="64e97-140">O intervalo do valor de tempo decor entre 15 e 90 segundos, inclusive.</span><span class="sxs-lookup"><span data-stu-id="64e97-140">The range of the timeout value is between 15 and 90 seconds inclusive.</span></span> <span data-ttu-id="64e97-141">O valor de tempo decoro padrão é 55 segundos para um destino e 60 segundos para vários destinos (sujeitos a alterações).</span><span class="sxs-lookup"><span data-stu-id="64e97-141">The default timeout value is 55 seconds for one target and 60 seconds for multiple targets (subject to change).</span></span> |
-|<span data-ttu-id="64e97-142">callbackUri</span><span class="sxs-lookup"><span data-stu-id="64e97-142">callbackUri</span></span>|<span data-ttu-id="64e97-143">String</span><span class="sxs-lookup"><span data-stu-id="64e97-143">String</span></span>|<span data-ttu-id="64e97-144">Isso permite que os bots forneçam um URI de retorno de chamada específico para que a chamada atual receba notificações posteriores.</span><span class="sxs-lookup"><span data-stu-id="64e97-144">This allows bots to provide a specific callback URI for the current call to receive later notifications.</span></span> <span data-ttu-id="64e97-145">Se essa propriedade não tiver sido definida, o URI de retorno de chamada global do bot será usado em vez disso.</span><span class="sxs-lookup"><span data-stu-id="64e97-145">If this property has not been set, the bot's global callback URI will be used instead.</span></span> <span data-ttu-id="64e97-146">Isso deve ser `https` .</span><span class="sxs-lookup"><span data-stu-id="64e97-146">This must be `https`.</span></span>|
+|<span data-ttu-id="adc0a-131">targets</span><span class="sxs-lookup"><span data-stu-id="adc0a-131">targets</span></span>|<span data-ttu-id="adc0a-132">conjunto [invitationParticipantInfo](../resources/invitationparticipantinfo.md)</span><span class="sxs-lookup"><span data-stu-id="adc0a-132">[invitationParticipantInfo](../resources/invitationparticipantinfo.md) collection</span></span>|<span data-ttu-id="adc0a-133">Os participantes de destino da operação de redirecionamento.</span><span class="sxs-lookup"><span data-stu-id="adc0a-133">The target participants of the redirect operation.</span></span> <span data-ttu-id="adc0a-134">Se mais de um destino for especificado, será uma chamada simulring.</span><span class="sxs-lookup"><span data-stu-id="adc0a-134">If more than one target is specified, it's a simulring call.</span></span> <span data-ttu-id="adc0a-135">Isso significa que todos os destinos serão tordos ao mesmo tempo e somente o primeiro destino que escolher será conectado.</span><span class="sxs-lookup"><span data-stu-id="adc0a-135">This means that all of the targets will be rang at the same time and only the first target that picks up will be connected.</span></span> <span data-ttu-id="adc0a-136">Suportamos até 25 destinos para simulação.</span><span class="sxs-lookup"><span data-stu-id="adc0a-136">We support up to 25 targets for simulring.</span></span>
+|<span data-ttu-id="adc0a-137">timeout</span><span class="sxs-lookup"><span data-stu-id="adc0a-137">timeout</span></span>|<span data-ttu-id="adc0a-138">Int32</span><span class="sxs-lookup"><span data-stu-id="adc0a-138">Int32</span></span>|<span data-ttu-id="adc0a-139">O tempo decoro (em segundos) para a operação de redirecionamento.</span><span class="sxs-lookup"><span data-stu-id="adc0a-139">The timeout (in seconds) for the redirect operation.</span></span> <span data-ttu-id="adc0a-140">O intervalo do valor de tempo decor entre 15 e 90 segundos, inclusive.</span><span class="sxs-lookup"><span data-stu-id="adc0a-140">The range of the timeout value is between 15 and 90 seconds inclusive.</span></span> <span data-ttu-id="adc0a-141">O valor de tempo decoro padrão é 55 segundos para um destino e 60 segundos para vários destinos (sujeitos a alterações).</span><span class="sxs-lookup"><span data-stu-id="adc0a-141">The default timeout value is 55 seconds for one target and 60 seconds for multiple targets (subject to change).</span></span> |
+|<span data-ttu-id="adc0a-142">callbackUri</span><span class="sxs-lookup"><span data-stu-id="adc0a-142">callbackUri</span></span>|<span data-ttu-id="adc0a-143">String</span><span class="sxs-lookup"><span data-stu-id="adc0a-143">String</span></span>|<span data-ttu-id="adc0a-144">Isso permite que os bots forneçam um URI de retorno de chamada específico para que a chamada atual receba notificações posteriores.</span><span class="sxs-lookup"><span data-stu-id="adc0a-144">This allows bots to provide a specific callback URI for the current call to receive later notifications.</span></span> <span data-ttu-id="adc0a-145">Se essa propriedade não tiver sido definida, o URI de retorno de chamada global do bot será usado em vez disso.</span><span class="sxs-lookup"><span data-stu-id="adc0a-145">If this property has not been set, the bot's global callback URI will be used instead.</span></span> <span data-ttu-id="adc0a-146">Isso deve ser `https` .</span><span class="sxs-lookup"><span data-stu-id="adc0a-146">This must be `https`.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="64e97-147">Resposta</span><span class="sxs-lookup"><span data-stu-id="64e97-147">Response</span></span>
-<span data-ttu-id="64e97-148">Se tiver êxito, este método retornará um código de resposta `202 Accepted`.</span><span class="sxs-lookup"><span data-stu-id="64e97-148">If successful, this method returns a `202 Accepted` response code.</span></span>
+## <a name="response"></a><span data-ttu-id="adc0a-147">Resposta</span><span class="sxs-lookup"><span data-stu-id="adc0a-147">Response</span></span>
+<span data-ttu-id="adc0a-148">Se tiver êxito, este método retornará um código de resposta `202 Accepted`.</span><span class="sxs-lookup"><span data-stu-id="adc0a-148">If successful, this method returns a `202 Accepted` response code.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="64e97-149">Exemplos</span><span class="sxs-lookup"><span data-stu-id="64e97-149">Examples</span></span>
-<span data-ttu-id="64e97-150">Esses exemplos abrangem um fluxo de trabalho de uma notificação de chamada de entrada e como essa chamada será redirecionada.</span><span class="sxs-lookup"><span data-stu-id="64e97-150">These examples will cover a workflow of an incoming call notification and how that call will be redirected.</span></span>
+## <a name="examples"></a><span data-ttu-id="adc0a-149">Exemplos</span><span class="sxs-lookup"><span data-stu-id="adc0a-149">Examples</span></span>
+<span data-ttu-id="adc0a-150">Esses exemplos abrangem um fluxo de trabalho de uma notificação de chamada de entrada e como essa chamada será redirecionada.</span><span class="sxs-lookup"><span data-stu-id="adc0a-150">These examples will cover a workflow of an incoming call notification and how that call will be redirected.</span></span>
 
-> <span data-ttu-id="64e97-151">**Observação:** Os objetos de resposta mostrados aqui podem ser reduzidos para a capacidade de leitura.</span><span class="sxs-lookup"><span data-stu-id="64e97-151">**Note:** The response objects shown here might be shortened for readability.</span></span> <span data-ttu-id="64e97-152">Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="64e97-152">All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="adc0a-151">**Observação:** Os objetos de resposta mostrados aqui podem ser reduzidos para a capacidade de leitura.</span><span class="sxs-lookup"><span data-stu-id="adc0a-151">**Note:** The response objects shown here might be shortened for readability.</span></span> <span data-ttu-id="adc0a-152">Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="adc0a-152">All the properties will be returned from an actual call.</span></span>
 
-### <a name="example-1-forward-a-call-to-a-target"></a><span data-ttu-id="64e97-153">Exemplo 1: encaminhar uma chamada para um destino</span><span class="sxs-lookup"><span data-stu-id="64e97-153">Example 1: Forward a Call to a Target</span></span>
+### <a name="example-1-forward-a-call-to-a-target"></a><span data-ttu-id="adc0a-153">Exemplo 1: encaminhar uma chamada para um destino</span><span class="sxs-lookup"><span data-stu-id="adc0a-153">Example 1: Forward a Call to a Target</span></span>
 
-##### <a name="notification---incoming"></a><span data-ttu-id="64e97-154">Notificação - entrada</span><span class="sxs-lookup"><span data-stu-id="64e97-154">Notification - incoming</span></span>
+##### <a name="notification---incoming"></a><span data-ttu-id="adc0a-154">Notificação - entrada</span><span class="sxs-lookup"><span data-stu-id="adc0a-154">Notification - incoming</span></span>
 <!-- {
   "blockType": "example", 
   "@odata.type": "microsoft.graph.commsNotifications"
@@ -114,9 +114,9 @@ POST /communications/calls/{id}/redirect
 }
 ```
 
-##### <a name="request"></a><span data-ttu-id="64e97-155">Solicitação</span><span class="sxs-lookup"><span data-stu-id="64e97-155">Request</span></span>
+##### <a name="request"></a><span data-ttu-id="adc0a-155">Solicitação</span><span class="sxs-lookup"><span data-stu-id="adc0a-155">Request</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="64e97-156">HTTP</span><span class="sxs-lookup"><span data-stu-id="64e97-156">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="adc0a-156">HTTP</span><span class="sxs-lookup"><span data-stu-id="adc0a-156">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request", 
   "name": "call-redirect-1"
@@ -142,34 +142,33 @@ Content-Type: application/json
   "callbackUri": "https://bot.contoso.com/api/calls/24701998-1a73-4d42-8085-bf46ed0ae039"
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="64e97-157">C#</span><span class="sxs-lookup"><span data-stu-id="64e97-157">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="adc0a-157">C#</span><span class="sxs-lookup"><span data-stu-id="adc0a-157">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/call-redirect-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="64e97-158">JavaScript</span><span class="sxs-lookup"><span data-stu-id="64e97-158">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="adc0a-158">JavaScript</span><span class="sxs-lookup"><span data-stu-id="adc0a-158">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/call-redirect-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="64e97-159">Objective-C</span><span class="sxs-lookup"><span data-stu-id="64e97-159">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="adc0a-159">Objective-C</span><span class="sxs-lookup"><span data-stu-id="adc0a-159">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/call-redirect-1-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="64e97-160">Java</span><span class="sxs-lookup"><span data-stu-id="64e97-160">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="adc0a-160">Java</span><span class="sxs-lookup"><span data-stu-id="adc0a-160">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/call-redirect-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response"></a><span data-ttu-id="64e97-161">Resposta</span><span class="sxs-lookup"><span data-stu-id="64e97-161">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="adc0a-161">Resposta</span><span class="sxs-lookup"><span data-stu-id="adc0a-161">Response</span></span>
 
 <!-- {
-  "blockType": "response", 
-  "@odata.type": "microsoft.graph.None"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 202 Accepted
 ```
-##### <a name="notification---terminated"></a><span data-ttu-id="64e97-162">Notificação - encerrada</span><span class="sxs-lookup"><span data-stu-id="64e97-162">Notification - terminated</span></span>
+##### <a name="notification---terminated"></a><span data-ttu-id="adc0a-162">Notificação - encerrada</span><span class="sxs-lookup"><span data-stu-id="adc0a-162">Notification - terminated</span></span>
 
 <!-- {
   "blockType": "example", 
@@ -229,9 +228,9 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-2-forward-a-call-to-multiple-targets-with-simultaneous-ring"></a><span data-ttu-id="64e97-163">Exemplo 2: encaminhar uma chamada para vários destinos com toque simultâneo</span><span class="sxs-lookup"><span data-stu-id="64e97-163">Example 2: Forward a call to multiple targets with simultaneous ring</span></span>
+### <a name="example-2-forward-a-call-to-multiple-targets-with-simultaneous-ring"></a><span data-ttu-id="adc0a-163">Exemplo 2: encaminhar uma chamada para vários destinos com toque simultâneo</span><span class="sxs-lookup"><span data-stu-id="adc0a-163">Example 2: Forward a call to multiple targets with simultaneous ring</span></span>
 
-##### <a name="notification---incoming"></a><span data-ttu-id="64e97-164">Notificação - entrada</span><span class="sxs-lookup"><span data-stu-id="64e97-164">Notification - incoming</span></span>
+##### <a name="notification---incoming"></a><span data-ttu-id="adc0a-164">Notificação - entrada</span><span class="sxs-lookup"><span data-stu-id="adc0a-164">Notification - incoming</span></span>
 
 <!-- {
   "blockType": "example", 
@@ -291,7 +290,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="request"></a><span data-ttu-id="64e97-165">Solicitação</span><span class="sxs-lookup"><span data-stu-id="64e97-165">Request</span></span>
+##### <a name="request"></a><span data-ttu-id="adc0a-165">Solicitação</span><span class="sxs-lookup"><span data-stu-id="adc0a-165">Request</span></span>
 
 <!-- {
   "blockType": "ignored", 
@@ -334,18 +333,17 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="response"></a><span data-ttu-id="64e97-166">Resposta</span><span class="sxs-lookup"><span data-stu-id="64e97-166">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="adc0a-166">Resposta</span><span class="sxs-lookup"><span data-stu-id="adc0a-166">Response</span></span>
 
 <!-- {
-  "blockType": "response", 
-  "@odata.type": "microsoft.graph.None"
+  "blockType": "response"
 } -->
 
 ``` http
 HTTP/1.1 202 Accepted
 ```
 
-##### <a name="notification---terminated"></a><span data-ttu-id="64e97-167">Notificação - encerrada</span><span class="sxs-lookup"><span data-stu-id="64e97-167">Notification - terminated</span></span>
+##### <a name="notification---terminated"></a><span data-ttu-id="adc0a-167">Notificação - encerrada</span><span class="sxs-lookup"><span data-stu-id="adc0a-167">Notification - terminated</span></span>
 
 <!-- {
   "blockType": "example", 
@@ -400,12 +398,12 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-3-forward-a-call-to-a-pstn-number"></a><span data-ttu-id="64e97-168">Exemplo 3: encaminhar uma chamada para um número PSTN</span><span class="sxs-lookup"><span data-stu-id="64e97-168">Example 3: Forward a call to a PSTN number</span></span>
+### <a name="example-3-forward-a-call-to-a-pstn-number"></a><span data-ttu-id="adc0a-168">Exemplo 3: encaminhar uma chamada para um número PSTN</span><span class="sxs-lookup"><span data-stu-id="adc0a-168">Example 3: Forward a call to a PSTN number</span></span>
 
-<span data-ttu-id="64e97-169">Essa chamada requer uma instância de aplicativo com um número PSTN atribuído.</span><span class="sxs-lookup"><span data-stu-id="64e97-169">This call requires an application instance with a PSTN number assigned.</span></span> <span data-ttu-id="64e97-170">Para obter detalhes, [consulte Atribuir um número de telefone ao seu bot](/graph/cloud-communications-phone-number#assign-a-phone-number-to-your-bot).</span><span class="sxs-lookup"><span data-stu-id="64e97-170">For details, see [Assign a phone number to your bot](/graph/cloud-communications-phone-number#assign-a-phone-number-to-your-bot).</span></span>
-> <span data-ttu-id="64e97-171">**Observação:** Telefone ID é o número de telefone no formato E.164.</span><span class="sxs-lookup"><span data-stu-id="64e97-171">**Note:** Phone ID is the phone number in E.164 format.</span></span>
+<span data-ttu-id="adc0a-169">Essa chamada requer uma instância de aplicativo com um número PSTN atribuído.</span><span class="sxs-lookup"><span data-stu-id="adc0a-169">This call requires an application instance with a PSTN number assigned.</span></span> <span data-ttu-id="adc0a-170">Para obter detalhes, [consulte Atribuir um número de telefone ao seu bot](/graph/cloud-communications-phone-number#assign-a-phone-number-to-your-bot).</span><span class="sxs-lookup"><span data-stu-id="adc0a-170">For details, see [Assign a phone number to your bot](/graph/cloud-communications-phone-number#assign-a-phone-number-to-your-bot).</span></span>
+> <span data-ttu-id="adc0a-171">**Observação:** Telefone ID é o número de telefone no formato E.164.</span><span class="sxs-lookup"><span data-stu-id="adc0a-171">**Note:** Phone ID is the phone number in E.164 format.</span></span>
 
-#### <a name="notification---incoming"></a><span data-ttu-id="64e97-172">Notificação - entrada</span><span class="sxs-lookup"><span data-stu-id="64e97-172">Notification - incoming</span></span>
+#### <a name="notification---incoming"></a><span data-ttu-id="adc0a-172">Notificação - entrada</span><span class="sxs-lookup"><span data-stu-id="adc0a-172">Notification - incoming</span></span>
 <!-- {
   "blockType": "example", 
   "@odata.type": "microsoft.graph.commsNotifications"
@@ -462,7 +460,7 @@ Content-Type: application/json
 }
 ```
 
-#### <a name="request"></a><span data-ttu-id="64e97-173">Solicitação</span><span class="sxs-lookup"><span data-stu-id="64e97-173">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="adc0a-173">Solicitação</span><span class="sxs-lookup"><span data-stu-id="adc0a-173">Request</span></span>
 
 <!-- {
   "blockType": "request", 
@@ -488,16 +486,15 @@ Content-Type: application/json
   "callbackUri": "https://bot.contoso.com/api/calls/24701998-1a73-4d42-8085-bf46ed0ae039"
 }
 ```
-#### <a name="response"></a><span data-ttu-id="64e97-174">Resposta</span><span class="sxs-lookup"><span data-stu-id="64e97-174">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="adc0a-174">Resposta</span><span class="sxs-lookup"><span data-stu-id="adc0a-174">Response</span></span>
 
 <!-- {
-  "blockType": "response", 
-  "@odata.type": "microsoft.graph.None"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 202 Accepted
 ```
-#### <a name="notification---terminated"></a><span data-ttu-id="64e97-175">Notificação - encerrada</span><span class="sxs-lookup"><span data-stu-id="64e97-175">Notification - terminated</span></span>
+#### <a name="notification---terminated"></a><span data-ttu-id="adc0a-175">Notificação - encerrada</span><span class="sxs-lookup"><span data-stu-id="adc0a-175">Notification - terminated</span></span>
 
 <!-- {
   "blockType": "example", 

@@ -172,16 +172,18 @@ items:
             href: connecting-external-content-connectors-api-overview.md
           - name: Usar o Postman
             href: connecting-external-content-connectors-api-postman.md
+          - name: Criar seu primeiro conector personalizado
+            href: connecting-external-content-build-quickstart.yml
           - name: Gerenciar conexões
             href: connecting-external-content-manage-connections.md
           - name: Gerenciar esquema
             href: connecting-external-content-manage-schema.md
           - name: Gerenciar itens
             href: connecting-external-content-manage-items.md
+          - name: Grupos externos
+            href: connecting-external-content-external-groups.md
           - name: Limites da API
             href: connecting-external-content-api-limits.md
-          - name: Criar seu primeiro conector personalizado
-            href: connecting-external-content-build-quickstart.yml
       - name: Experiências entre dispositivos
         displayName: Project Rome
         items:
