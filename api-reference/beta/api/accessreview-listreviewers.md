@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 457064b9dfa866d0d5bfe8285b495ecd3f8a4fe4
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 92f0baad4908d097cd696c34dc3b51e77814650f
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52048460"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52751067"
 ---
 # <a name="list-accessreview-reviewers"></a>Listar revisores do accessReview
 
@@ -26,7 +26,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante)     | AccessReview.Read.All, AccessReview.ReadWrite.Membership, AccessReview.ReadWrite.All |
 |Delegado (conta pessoal da Microsoft) | Sem suporte. |
-|Application                            | AccessReview.Read.All, AccessReview.ReadWrite.Membership  |
+|Aplicativo                            | AccessReview.Read.All, AccessReview.ReadWrite.Membership  |
 
 
  O usuário inscreveu também deve estar em uma função de diretório que permita que ele leia uma revisão de acesso.
@@ -45,7 +45,7 @@ GET /accessReviews/{reviewId}/reviewers
 Nenhum corpo de solicitação deve ser fornecido.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um código de resposta e uma `200, OK` matriz de [objetos userIdentity](../resources/useridentity.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e uma `200 OK` matriz de [objetos userIdentity](../resources/useridentity.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
@@ -105,8 +105,8 @@ Content-type: application/json
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
 |[Obter accessReview](accessreview-get.md) |  [accessReview](../resources/accessreview.md) |  Recupere uma revisão de acesso. |
-|[Adicionar o revisor accessReview](accessreview-addreviewer.md) |     Nenhum   |   Adicione um revisor a um accessReview. |
-|[Remover o revisor accessReview](accessreview-removereviewer.md) | Nenhum |   Remova um revisor de um accessReview. |
+|[Adicionar o revisor accessReview](accessreview-addreviewer.md) |     Nenhum.   |   Adicione um revisor a um accessReview. |
+|[Remover o revisor accessReview](accessreview-removereviewer.md) | Nenhum. |   Remova um revisor de um accessReview. |
 
 
 <!--

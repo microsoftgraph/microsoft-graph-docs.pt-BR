@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: d453b20bfe9e1f897e87b21945b124ec7ed45d2c
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 90c64ee1bb52c9149e16658c5b8a1cd11a97c51b
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52048516"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52751122"
 ---
 # <a name="add-accessreview-reviewer"></a>Adicionar o revisor accessReview
 
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante)     | AccessReview.ReadWrite.Membership, AccessReview.ReadWrite.All |
 |Delegado (conta pessoal da Microsoft) | Sem suporte. |
-|Application                            | AccessReview.ReadWrite.Membership |
+|Aplicativo                            | AccessReview.ReadWrite.Membership |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -47,11 +47,11 @@ A tabela a seguir mostra as propriedades que podem ser fornecidas quando você a
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-| `id`        | `String`   | A ID do usuário.|
+| id        | Cadeia de caracteres   | A ID do usuário.|
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `201, Created` código de resposta .
+Se tiver êxito, este método retornará um `201 Created` código de resposta .
 
 ## <a name="example"></a>Exemplo
 
@@ -94,7 +94,6 @@ Content-Type: application/json
 
 
 ##### <a name="response"></a>Resposta
->**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true

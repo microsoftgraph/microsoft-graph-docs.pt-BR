@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 83f136a3a9c131d5a05df92df2f3c3e3d3b6c75c
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 6f08fcd2b7b913de9dbe8d44f07f99d646f41560
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50439294"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52751033"
 ---
 # <a name="remove-accessreview-reviewer"></a>Remover o revisor accessReview
 
@@ -45,7 +45,7 @@ Nenhum corpo de solicitação deve ser fornecido.
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um código de resposta de 200 séries.
+Se tiver êxito, este método retornará um código de resposta `204 No Content`.
 
 ## <a name="example"></a>Exemplo
 

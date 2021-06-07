@@ -1,18 +1,18 @@
 ---
-title: tipo de enumeração managementAgentType
+title: tipo de número managementAgentType
 description: Tipo de agente de gerenciamento.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: fe4dc7edada2353ebcc9b073f7c599ebef6e4244
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 0a11300891ca4b12b15de26b5be929823b4a8ddf
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48091044"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52751353"
 ---
-# <a name="managementagenttype-enum-type"></a>tipo de enumeração managementAgentType
+# <a name="managementagenttype-enum-type"></a>tipo de número managementAgentType
 
 Namespace: microsoft.graph
 
@@ -23,22 +23,17 @@ Tipo de agente de gerenciamento.
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|Estendi|1 |O dispositivo é gerenciado pelo Exchange Server.|
-|MDM|2 |O dispositivo é gerenciado pelo MDM do Intune.|
-|easMdm|3D|O dispositivo é gerenciado pelo Exchange Server e o MDM do Intune.|
+|eas|1|O dispositivo é gerenciado por Exchange servidor.|
+|mdm|2|O dispositivo é gerenciado pelo MDM do Intune.|
+|easMdm|3|O dispositivo é gerenciado pelo servidor Exchange e pelo MDM do Intune.|
 |intuneClient|4 |Cliente do Intune gerenciado.|
-|easIntuneClient|5 |O dispositivo é ESTENDIdo e o cliente do Intune é gerenciado duas.|
+|easIntuneClient|5 |O dispositivo é gerenciado duplo do cliente EAS e do Intune.|
 |configurationManagerClient|8 |O dispositivo é gerenciado pelo Configuration Manager.|
 |configurationManagerClientMdm|10 |O dispositivo é gerenciado pelo Configuration Manager e pelo MDM.|
-|configurationManagerClientMdmEas|11 |O dispositivo é gerenciado pelo Configuration Manager, MDM e EAS.|
+|configurationManagerClientMdmEas|11|O dispositivo é gerenciado pelo Configuration Manager, MDM e Eas.|
 |desconhecido|16 |Tipo de agente de gerenciamento desconhecido.|
-|jamf|32|Os atributos do dispositivo são buscados do JAMF.|
+|jamf|32|Os atributos do dispositivo são buscados do Jamf.|
 |googleCloudDevicePolicyController|64|O dispositivo é gerenciado pelo CloudDPC do Google.|
-
-
-
-
-
 
 
 

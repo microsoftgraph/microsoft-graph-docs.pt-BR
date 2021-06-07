@@ -1,113 +1,128 @@
 ### YamlMime:Hub
 title: Documentação do Microsoft Graph
+summary: 'Saiba como usar o Microsoft Graph para acessar os dados e a inteligência em Microsoft 365, Windows 10 e Enterprise Mobility + Security. Procurar referência de API, código de exemplo, tutoriais e muito mais.'
 brand: m365
 metadata:
   title: Documentação do Microsoft Graph
-  description: Microsoft Graph fornece um modelo de programação unificada que você pode usar para criar aplicativos para empresas e clientes que interagem com os dados de milhões de usuários. Você pode usar as APIs REST do Microsoft Graph para acessar dados no Azure Active Directory, serviços do Office 365, Enterprise Mobility e serviços de segurança, serviços do Windows 10, Dynamics 365 e muito mais. Explore a nossa documentação para saber mais sobre como usar as APIs do Microsoft Graph.
+  description: 'Microsoft Graph fornece um modelo de programação unificada que você pode usar para criar aplicativos para empresas e clientes que interagem com os dados de milhões de usuários. Você pode usar as APIs REST do Microsoft Graph para acessar dados no Azure Active Directory, serviços do Office 365, Enterprise Mobility e serviços de segurança, serviços do Windows 10, Dynamics 365 e muito mais. Explore a nossa documentação para saber mais sobre como usar as APIs do Microsoft Graph.'
   ms.topic: hub-page
   ms.prod: ms-graph
   author: CelesteDG
-  ms.date: 02/28/2020
+  ms.date: 05/24/2021
   featureFlags:
-  - clicktale
-  ms.openlocfilehash: a015eb68954a7c08c4cbe618cb0af4943734cfb5
-  ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
-  ms.translationtype: MT
-  ms.contentlocale: pt-BR
-  ms.lasthandoff: 02/14/2021
-  ms.locfileid: "50239909"
+    - clicktale
 highlightedContent:
   items:
-  - title: Visão Geral do Microsoft Graph
-    itemType: overview
-    url: ./overview.md
-  - title: Serviços e recursos
-    itemType: concept
-    url: ./overview-major-services.md
-  - title: Graph Explorer
-    itemType: deploy
-    url: https://developer.microsoft.com/graph/graph-explorer/
-  - title: Novidades do Microsoft Graph
-    itemType: overview
-    url: ./whats-new-overview.md
-  - title: APIs REST v1.0 do Microsoft Graph
-    itemType: reference
-    url: /graph/api/overview?toc=.%2Fref%2Ftoc.json&view=graph-rest-1.0
-  - title: API REST Beta do Microsoft Graph
-    itemType: reference
-    url: /graph/api/overview?toc=.%2Fref%2Ftoc.json&view=graph-rest-beta
+    - title: O que é o Microsoft Graph?
+      itemType: overview
+      url: ./overview.md
+    - title: O que posso acessar por meio do Microsoft Graph?
+      itemType: concept
+      url: ./overview-major-services.md
+    - title: 'APIs, SDKs e ferramentas novas e atualizadas'
+      itemType: whats-new
+      url: ./whats-new-overview.md
+    - title: API REST do Microsoft Graph
+      itemType: reference
+      url: 'https://docs.microsoft.com/graph/api/overview?view=graph-rest-1.0'
 conceptualContent:
+  title: Trabalhar com o Microsoft Graph
   items:
-  - title: Explorar
-    links:
-    - url: ./users-you-can-reach.md
-      itemType: concept
-      text: Usuários que você pode alcançar
-    - url: ./data-connect-overview.md
-      itemType: concept
-      text: Conexão de dados do Microsoft Graph
-    - url: https://developer.microsoft.com/graph/quick-start
-      itemType: quickstart
-      text: Guias de início rápido
-    - url: ./tutorials.yml
-      itemType: tutorial
-      text: Tutoriais
-  - title: Saiba mais
-    links:
-    - url: ./azuread-users-concept-overview.md
-      itemType: overview
-      text: Usuários
-    - url: ./teams-concept-overview.md
-      itemType: overview
-      text: Trabalho em equipe
-    - url: ./onedrive-concept-overview.md
-      itemType: overview
-      text: Arquivos
-    - url: ./outlook-calendar-concept-overview.md
-      itemType: overview
-      text: Calendário
-    - url: ./outlook-mail-concept-overview.md
-      itemType: overview
-      text: Correio
-    - url: ./azuread-identity-access-management-concept-overview.md
-      itemType: overview
-      text: Identidade e acesso
-  - title: Desenvolver
-    links:
-    - url: ./auth/auth-concepts.md
-      itemType: concept
-      text: Obter tokens de autenticação
-    - url: ./use-the-api.md
-      itemType: overview
-      text: Usar a API
-    - url: ./migrate-azure-ad-graph-planning-checklist.md
-      itemType: overview
-      text: Migrar
-    - url: ./sdks/sdks-overview.md
-      itemType: overview
-      text: Use os SDKs
-    - url: ./toolkit/overview.md
-      itemType: overview
-      text: Usar o kit de ferramentas
+    - title: Usuários
+      links:
+        - url: ./azuread-users-concept-overview.md
+          itemType: overview
+          text: Acessar e manipular os recursos do usuário diretamente.
+    - title: Grupos
+      links:
+        - url: ./office365-groups-concept-overview.md
+          itemType: overview
+          text: Habilitar a colaboração e a integração do usuário entre os serviços.
+    - title: Microsoft Teams trabalho em equipe
+      links:
+        - url: ./teams-concept-overview.md
+          itemType: overview
+          text: Integre-se Microsoft Teams.
+    - title: OneDrive de arquivos
+      links:
+        - url: ./onedrive-concept-overview.md
+          itemType: overview
+          text: Trabalhe com vários tipos de arquivos de OneDrive.
+    - title: Outlook calendário e email
+      links:
+        - url: ./outlook-calendar-concept-overview.md
+          itemType: overview
+          text: 'Controlar calendários, como a criação de um evento.'
+        - url: ./outlook-mail-concept-overview.md
+          itemType: overview
+          text: Acessar e gerenciar mensagens e dados de email.
+    - title: Excel de trabalho e gráficos
+      links:
+        - url: ./excel-concept-overview.md
+          itemType: overview
+          text: Leia e modifique Excel arquivos.
+    - title: Gerenciamento de identidades e acesso
+      links:
+        - url: ./azuread-identity-access-management-concept-overview.md
+          itemType: overview
+          text: Use os métodos do Azure AD para gerenciar o acesso e autenticar usuários.
+    - title: Microsoft Graph Data Conexão
+      links:
+        - url: ./data-connect-concept-overview.md
+          itemType: overview
+          text: Desenvolva aplicativos estendendo Microsoft 365 dados para o Azure.
+tools:
+  title: SDKs e ferramentas
+  items:
+    - title: SDKs
+      imageSrc: ./images/hub/icon01-sdk.svg
+      url: 'https://docs.microsoft.com/graph/sdks/sdk-installation'
+    - title: Guias de início rápido
+      imageSrc: ./images/hub/icon02-quickstart.svg
+      url: 'https://developer.microsoft.com/graph/quick-start'
+    - title: Explorador do Graph
+      imageSrc: ./images/hub/icon03-graphexplorer.svg
+      url: 'https://developer.microsoft.com/graph/graph-explorer/'
+    - title: Kit de ferramentas do Microsoft Graph
+      imageSrc: ./images/hub/icon04-graphtoolkit.svg
+      url: ./toolkit/overview.md
 additionalContent:
   sections:
-  - title: Recursos
-    items:
-    - title: Log de mudanças
-      summary: Descubra o que mudou nas versões da API do Microsoft Graph v1.0 e beta.
-      url: ./changelog.md
-    - title: Problemas conhecidos
-      summary: Problemas conhecidos com o Microsoft Graph.
-      url: ./known-issues.md
-    - title: Suporte
-      summary: Faça uma pergunta ou faça comentários sobre nossas APIs ou documentos.
-      url: https://developer.microsoft.com/graph/support
-    - title: Blog do Microsoft Graph
-      summary: Leia o blog para obter as últimas notícias sobre novas APIs, alterações significativas e muito mais.
-      url: https://developer.microsoft.com/graph/blogs/
-    - title: Chamadas de comunidade mensais
-      summary: Participe de chamadas mensais ou acompanhe as gravações anteriores.
-      url: https://www.youtube.com/playlist?list=PLWZJrkeLOrbabneRhISU-N7uK4PvVy-jV
-    - title: Vídeos e podcasts
-      summary: Confira nossa série de vídeos e podcasts para saber mais sobre as APIs do Microsoft Graph.
-      url: https://developer.microsoft.com/graph/gallery/?filterBy=Videos,Podcasts
+    - title: Guias e recursos
+      items:
+        - title: Caminhos de aprendizagem
+          links:
+            - text: Fundamentos Graph Microsoft
+              url: 'https://docs.microsoft.com/learn/paths/m365-msgraph-fundamentals/'
+            - text: Explorar os cenários do Microsoft Graph para o desenvolvimento do JavaScript
+              url: 'https://docs.microsoft.com/learn/paths/m365-msgraph-scenarios'
+            - text: Desenvolver aplicativos com o Microsoft Graph Toolkit
+              url: 'https://docs.microsoft.com/learn/paths/m365-msgraph-toolkit'
+        - title: Instruções
+          links:
+            - text: Pesquisar conteúdo no OneDrive e no Sharepoint
+              url: 'https://docs.microsoft.com/graph/search-concept-files'
+            - text: Compartilhar ou delegar um calendário
+              url: 'https://docs.microsoft.com/graph/outlook-share-or-delegate-calendar'
+            - text: Propor novas horas de reunião
+              url: 'https://docs.microsoft.com/graph/outlook-calendar-meeting-proposals'
+            - text: Anexar arquivos grandes a uma mensagem ou evento
+              url: 'https://docs.microsoft.com/graph/outlook-large-attachments'
+            - text: Obter conteúdo MIME de uma mensagem
+              url: 'https://docs.microsoft.com/graph/outlook-get-mime-message'
+            - text: Agendar uma implantação Windows atualização
+              url: 'https://docs.microsoft.com/graph/windowsupdates-schedule-deployment'
+        - title: Recursos e comunidade
+          links:
+            - text: Log de mudanças
+              url: ./changelog.md
+            - text: Problemas conhecidos
+              url: ./known-issues.md
+            - text: Suporte
+              url: 'https://developer.microsoft.com/graph/support'
+            - text: Blog do Microsoft Graph
+              url: 'https://developer.microsoft.com/graph/blogs/'
+            - text: Vídeos e podcasts
+              url: 'https://developer.microsoft.com/graph/gallery/?filterBy=Videos,Podcasts'
+            - text: Chamadas de comunidade mensais
+              url: 'https://www.youtube.com/playlist?list=PLWZJrkeLOrbabneRhISU-N7uK4PvVy-jV'

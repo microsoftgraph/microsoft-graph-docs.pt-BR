@@ -1,43 +1,38 @@
 ---
-title: tipo de enumeração managedDevicePartnerReportedHealthState
-description: Estados de integridade disponíveis para a API de integridade do dispositivo
+title: tipo denum managedDevicePartnerReportedHealthState
+description: Estados de saúde disponíveis para a API de Saúde do Dispositivo
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: b0df2859ccee3d4eff9b98c6effb44a4552d93db
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 4c1d3166a5e55c39c5904b7bc1ac6239b3cc11cf
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48091058"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52751675"
 ---
-# <a name="manageddevicepartnerreportedhealthstate-enum-type"></a>tipo de enumeração managedDevicePartnerReportedHealthState
+# <a name="manageddevicepartnerreportedhealthstate-enum-type"></a>tipo denum managedDevicePartnerReportedHealthState
 
 Namespace: microsoft.graph
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Estados de integridade disponíveis para a API de integridade do dispositivo
+Estados de saúde disponíveis para a API de Saúde do Dispositivo
 
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|desconhecido|,0|O estado de integridade do dispositivo ainda não foi relatado|
-|ativado|1 |O dispositivo foi ativado por um parceiro de defesa contra ameaças móveis, mas ainda não relatou a integridade.|
-|desativada|2 |O dispositivo foi desativado por um parceiro de defesa contra ameaças móveis. A integridade do dispositivo não é conhecida.|
-|presos|3D|O dispositivo é considerado protegido pelo parceiro de defesa contra ameaças móveis.|
-|lowSeverity|4 |O dispositivo é considerado com baixa ameaça pelo parceiro de defesa contra ameaças móveis.|
-|mediumSeverity|5 |O dispositivo é considerado como ameaça médio pelo parceiro de defesa contra ameaças móveis.|
-|highSeverity|6 |O dispositivo é considerado de alta ameaça pelo parceiro de defesa contra ameaças móveis.|
-|Não responde|7 |O dispositivo é considerado sem resposta pelo parceiro de defesa contra ameaças móveis. A integridade do dispositivo não é conhecida.|
-|ficasse|8 |O dispositivo é considerado comprometido pelo parceiro de proteção contra ameaças. Isso significa que o dispositivo tem uma ameaça ou risco ativo que não pode ser corrigido facilmente pelo usuário final e o usuário deve entrar em contato com o administrador de ti.|
-|configurado incorretamente|9 |O dispositivo é considerado incorretamente configurado com o parceiro de proteção contra ameaças. Isso significa que o dispositivo não tem um perfil ou uma configuração necessária para que o parceiro de defesa contra ameaças funcione corretamente, e, portanto, a análise de ameaças ou riscos não pode ser concluída.|
-
-
-
-
-
+|desconhecido|0|O estado de saúde do dispositivo ainda não foi relatado|
+|ativado|1|O dispositivo foi ativado por um parceiro de defesa contra ameaças móveis, mas ainda não relatou a saúde.|
+|desativado|2|O dispositivo foi desativado por um parceiro de defesa contra ameaças móveis. A saúde do dispositivo não é conhecida.|
+|secured|3|O dispositivo é considerado protegido pelo parceiro de defesa contra ameaças móveis.|
+|lowSeverity|4 |O dispositivo é considerado baixa ameaça pelo parceiro de defesa contra ameaças móveis.|
+|mediumSeverity|5 |O dispositivo é considerado uma ameaça média pelo parceiro de defesa contra ameaças móveis.|
+|highSeverity|6 |O dispositivo é considerado alta ameaça pelo parceiro de defesa contra ameaças móveis.|
+|não responsivo|7 |O dispositivo é considerado não responsivo pelo parceiro de defesa contra ameaças móveis. A saúde do dispositivo não é conhecida.|
+|compromised|8 |O dispositivo é considerado comprometido pelo parceiro de Defesa contra Ameaças. Isso significa que o dispositivo tem uma Ameaça ou Risco ativo que não pode ser facilmente remediada pelo usuário final e o usuário deve entrar em contato com o administrador de IT.|
+|misconfigured|9 |O dispositivo é considerado mal configurado com o parceiro de Defesa contra Ameaças. Isso significa que o dispositivo não tem um perfil ou configuração necessário para que o Parceiro de Defesa contra Ameaças funcione corretamente e, portanto, a análise de risco ou ameaça não é capaz de ser concluída.|
 
 
 

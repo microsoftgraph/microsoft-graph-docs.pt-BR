@@ -1,18 +1,18 @@
 ---
-title: tipo de enumeração ratingUnitedKingdomTelevisionType
+title: tipo de número ratingUnitedKingdomTelevisionType
 description: Rótulos de classificação de conteúdo de TV no Reino Unido
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 05560eef3d770c951052ac1a04eef71b15a50125
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: baa1567c3562b85867eeabafbf2350c4817d3e6c
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47978136"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52751381"
 ---
-# <a name="ratingunitedkingdomtelevisiontype-enum-type"></a>tipo de enumeração ratingUnitedKingdomTelevisionType
+# <a name="ratingunitedkingdomtelevisiontype-enum-type"></a>tipo de número ratingUnitedKingdomTelevisionType
 
 Namespace: microsoft.graph
 
@@ -23,14 +23,9 @@ Rótulos de classificação de conteúdo de TV no Reino Unido
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|Permitido|,0|Valor padrão, permitir todos os programas de TV|
-|Bloqueado|1 |Não permitir que qualquer TV mostre conteúdo|
-|cuidadosa|2 |Permitindo conteúdo de TV com uma mensagem de aviso|
-
-
-
-
-
+|allAllowed|0|Valor padrão, permitir todo o conteúdo de programas de TV|
+|allBlocked|1|Não permitir conteúdo de programas de TV|
+|cuidado|2|Permitindo conteúdo de TV com uma mensagem de aviso|
 
 
 

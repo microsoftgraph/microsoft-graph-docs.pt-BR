@@ -1,18 +1,18 @@
 ---
-title: tipo de enumeração ratingIrelandTelevisionType
+title: tipo de número ratingIrelandTelevisionType
 description: Rótulos de classificação de conteúdo de TV na Irlanda
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: a39f5a80c18803e87760d00247ab6418c6dad30e
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 5f33ad6bc2595ad5aaf365fa123064ed671fc6ff
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48062740"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52752095"
 ---
-# <a name="ratingirelandtelevisiontype-enum-type"></a>tipo de enumeração ratingIrelandTelevisionType
+# <a name="ratingirelandtelevisiontype-enum-type"></a>tipo de número ratingIrelandTelevisionType
 
 Namespace: microsoft.graph
 
@@ -23,18 +23,13 @@ Rótulos de classificação de conteúdo de TV na Irlanda
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|Permitido|,0|Valor padrão, permitir todos os programas de TV|
-|Bloqueado|1 |Não permitir que qualquer TV mostre conteúdo|
-|geral|2 |A classificação GA é adequada para todos os públicos|
-|children|3 |A classificação CH é adequada para crianças|
-|youngAdults|4 |A classificação de YA é adequada para a audiência Teenage|
-|parentalSupervision|5 |A classificação de PS convida os pais e os guardiões para considerar o acesso de crianças|
-|completa|6 |A classificação MA é adequada para adultos|
-
-
-
-
-
+|allAllowed|0|Valor padrão, permitir todo o conteúdo de programas de TV|
+|allBlocked|1|Não permitir conteúdo de programas de TV|
+|geral|2|A classificação ga é adequada para todos os públicos|
+|children|3|A classificação ch é adequada para crianças|
+|youngAdults|4 |A classificação ya é adequada para audiências adolescentes|
+|parentalSupervision|5 |A classificação PS convida pais e responsáveis a considerar restringir o acesso dos filhos|
+|mature|6 |A classificação ma é adequada para os adultos|
 
 
 

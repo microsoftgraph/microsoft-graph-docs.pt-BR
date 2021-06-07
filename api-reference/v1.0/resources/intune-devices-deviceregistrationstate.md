@@ -1,18 +1,18 @@
 ---
-title: tipo de enumeração deviceRegistrationState
+title: Tipo de número deviceRegistrationState
 description: Status do registro do dispositivo.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 678db76ca3218515306e847abf38c8dcac9d3b20
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 39a4c68f2a688564284fc6045f61b84e72b748ab
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48091149"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52751689"
 ---
-# <a name="deviceregistrationstate-enum-type"></a>tipo de enumeração deviceRegistrationState
+# <a name="deviceregistrationstate-enum-type"></a>Tipo de número deviceRegistrationState
 
 Namespace: microsoft.graph
 
@@ -23,19 +23,14 @@ Status do registro do dispositivo.
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|Não registrado|,0|O dispositivo não está registrado.|
-|inscreve|2 |O dispositivo está registrado.|
-|revogado|3D|O dispositivo foi bloqueado, apagado ou desativado.|
-|keyconflict|4 |O dispositivo tem um conflito de teclas.|
+|notRegistered|0|O dispositivo não está registrado.|
+|registered|2|O dispositivo está registrado.|
+|revogado|3|O dispositivo foi bloqueado, apagado ou retirado.|
+|keyConflict|4 |O dispositivo tem um conflito chave.|
 |approvalPending|5 |O dispositivo está aguardando aprovação.|
-|certificateReset|6 |O certificado de dispositivo foi redefinido.|
-|notRegisteredPendingEnrollment|7 |O dispositivo não está registrado e registro pendente.|
+|certificateReset|6 |O certificado do dispositivo foi redefinido.|
+|notRegisteredPendingEnrollment|7 |O dispositivo não está registrado e o registro pendente.|
 |desconhecido|8 |O status do registro do dispositivo é desconhecido.|
-
-
-
-
-
 
 
 

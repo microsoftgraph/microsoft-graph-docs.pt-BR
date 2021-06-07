@@ -1,35 +1,30 @@
 ---
-title: tipo de enumeração deviceManagementExchangeConnectorSyncType
-description: O tipo de sincronização do Exchange Connector solicitada.
+title: Tipo de número deviceManagementExchangeConnectorSyncType
+description: O tipo de sincronização Exchange Conector solicitado.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 939ff7fe3a65da9bd66b29c2258f135275ac855f
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 4212f2c6d3e93f01de61519b04d83c0a61e03379
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48056538"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52751584"
 ---
-# <a name="devicemanagementexchangeconnectorsynctype-enum-type"></a>tipo de enumeração deviceManagementExchangeConnectorSyncType
+# <a name="devicemanagementexchangeconnectorsynctype-enum-type"></a>Tipo de número deviceManagementExchangeConnectorSyncType
 
 Namespace: microsoft.graph
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-O tipo de sincronização do Exchange Connector solicitada.
+O tipo de sincronização Exchange Conector solicitado.
 
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|fullSync|,0|Descubra todos os dispositivos no Exchange.|
-|deltaSync|1 |Descubra apenas o dispositivo no Exchange que foi atualizado durante a janela de sincronização Delta.|
-
-
-
-
-
+|fullSync|0|Descubra todos os dispositivos Exchange.|
+|deltaSync|1|Descubra apenas o dispositivo em Exchange que foram atualizados durante a janela de sincronização delta.|
 
 
 

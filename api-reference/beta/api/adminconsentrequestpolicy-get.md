@@ -5,12 +5,12 @@ author: psignoret
 localization_priority: Normal
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 458c2b977f9c5f488b3a7b31d599b0c398993cfa
-ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
+ms.openlocfilehash: 78a9696a036b0cbd246dfaa03e5ba7f3c6e6a8cd
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51468923"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52750998"
 ---
 # <a name="get-adminconsentrequestpolicy"></a>Obter adminConsentRequestPolicy
 Namespace: microsoft.graph
@@ -93,7 +93,7 @@ GET https://graph.microsoft.com/beta/policies/adminConsentRequestPolicy
 
 
 ### <a name="response"></a>Resposta
-**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,

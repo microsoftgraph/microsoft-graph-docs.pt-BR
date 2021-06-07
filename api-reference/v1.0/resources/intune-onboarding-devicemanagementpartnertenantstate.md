@@ -1,18 +1,18 @@
 ---
-title: tipo de enumeração deviceManagementPartnerTenantState
+title: Tipo de número deviceManagementPartnerTenantState
 description: Estado do parceiro desse locatário.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 60b8b87129c2e98dacbc868ad1bec09f3373f9da
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 6d4f10e4cd12b71664313ce368536ee001f090ab
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48003070"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52751199"
 ---
-# <a name="devicemanagementpartnertenantstate-enum-type"></a>tipo de enumeração deviceManagementPartnerTenantState
+# <a name="devicemanagementpartnertenantstate-enum-type"></a>Tipo de número deviceManagementPartnerTenantState
 
 Namespace: microsoft.graph
 
@@ -23,17 +23,12 @@ Estado do parceiro desse locatário.
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|desconhecido|,0|O estado do parceiro é desconhecido.|
-|indisponível|1 |O parceiro não está disponível.|
-|habilitadas|2 |O parceiro está habilitado.|
-|Cerro|3 |Conexão de parceiro terminada.|
-|rejeitar|4 |As mensagens de parceiros são rejeitadas.|
-|Não responde|5 |O parceiro não responde.|
-
-
-
-
-
+|desconhecido|0|O estado do parceiro é desconhecido.|
+|unavailable|1|O parceiro não está disponível.|
+|habilitadas|2|O parceiro está habilitado.|
+|encerrado|3|A conexão do parceiro foi encerrada.|
+|rejected|4 |As mensagens de parceiro são rejeitadas.|
+|não responsivo|5 |O parceiro não responde.|
 
 
 

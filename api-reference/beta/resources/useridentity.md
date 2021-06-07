@@ -2,15 +2,15 @@
 title: Tipo userIdentity
 description: Representa uma identidade de usuário do Azure AD para um revistor de uma revisão de acesso.
 localization_priority: Normal
-author: jpettere
-ms.prod: users
+author: isabelleatmsft
+ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 9379955a4356ff9c969e4813fbf9b812316aa821
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: 94c0af9a5909966471594ab4c23003282f416849
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50719854"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52750361"
 ---
 # <a name="useridentity-type"></a>Tipo userIdentity
 
@@ -23,20 +23,20 @@ No contexto de um log de auditoria do Azure AD, isso representa as informações
 
 Esse tipo herda da [identidade](identity.md) e tem uma propriedade adicional, o nome principal do usuário.
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 
 Nenhum.  Você incluiria objetos desse tipo no corpo de uma solicitação ao [criar um accessReview](../api/accessreview-create.md).
 
 ## <a name="properties"></a>Propriedades
 
-| Propriedade | Tipo | Descrição|
-|:---------------|:--------|:----------|
-| `displayName` | `String` | Nome de exibição da identidade. Observe que isso pode nem sempre estar disponível ou atualizado.    |
-| `id`          | `String` | Identificador exclusivo da identidade.  |
-| `ipAddress`| `String`| Indica o endereço IP do cliente usado pelo usuário executando a atividade (somente log de auditoria).|
-| `userPrincipalName`|`String` | O atributo userPrincipalName do usuário. |
+| Propriedade          | Tipo   | Descrição                                                                            |
+|:------------------|:-------|:---------------------------------------------------------------------------------------|
+| displayName       | Cadeia de caracteres | Nome de exibição da identidade. Observe que isso pode nem sempre estar disponível ou atualizado. |
+| id                | Cadeia de caracteres | Identificador exclusivo da identidade. Anulável.                                                   |
+| ipAddress         | Cadeia de caracteres | Indica o endereço IP do cliente usado pelo usuário executando a atividade (somente log de auditoria). |
+| userPrincipalName | Cadeia de caracteres | O atributo userPrincipalName do usuário.                                           |
 
-## <a name="remarks"></a>Comentários
+### <a name="remarks"></a>Comentários
 
 Em algumas circunstâncias, o identificador exclusivo para o ator pode não estar disponível. Nesse caso, a propriedade **displayName** para a identidade será retornada, mas a propriedade **id** estará ausente do recurso.
 

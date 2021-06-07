@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 1b3870b4d44847d93fb2438c9f61d8ac3529433e
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 817cf535c68a775c7a90a639e09120e226c46115
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52048439"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52751005"
 ---
 # <a name="update-accessreview"></a>Atualizar accessReview
 
@@ -30,7 +30,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante)     | AccessReview.ReadWrite.Membership, AccessReview.ReadWrite.All |
 |Delegado (conta pessoal da Microsoft) | Sem suporte. |
-|Application                            | AccessReview.ReadWrite.Membership |
+|Aplicativo                            | AccessReview.ReadWrite.Membership |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -47,17 +47,17 @@ No corpo da solicitação, fornece uma representação JSON dos parâmetros de u
 
 A tabela a seguir mostra as propriedades que podem ser fornecidas quando você atualiza um accessReview.
 
-| Propriedade     | Tipo        | Descrição |
-|:-------------|:------------|:------------|
-| `displayName`             |`String`                                                        | O nome da revisão de acesso.  |
-| `startDateTime`           |`DateTimeOffset`                                                | DateTime quando a revisão está agendada para ser inicial.  Essa deve ser uma data no futuro.   |
-| `endDateTime`             |`DateTimeOffset`                                                | DateTime quando a revisão está agendada para terminar. Isso deve ser pelo menos um dia depois da data de início.   |
-| `description`             |`String`                                                        | A descrição, para mostrar aos revisadores. |
+| Propriedade      | Tipo           | Descrição                                                                                                |
+|:--------------|:---------------|:-----------------------------------------------------------------------------------------------------------|
+| displayName   | Cadeia de caracteres         | O nome da revisão de acesso.                                                                                    |
+| startDateTime | DateTimeOffset | DateTime quando a revisão está agendada para ser inicial.  Essa deve ser uma data no futuro.                 |
+| endDateTime   | DateTimeOffset | DateTime quando a revisão está agendada para terminar. Isso deve ser pelo menos um dia depois da data de início. |
+| descrição   | Cadeia de caracteres         | A descrição, para mostrar aos revisadores.                                                                 |
 
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um código de resposta e um `204, Accepted` [objeto accessReview](../resources/accessreview.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e um `204 Accepted` [objeto accessReview](../resources/accessreview.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 

@@ -1,19 +1,19 @@
 ---
-title: 'Tutorial: Use a API de críticas de acesso para revisar o acesso de convidados aos seus grupos do Microsoft 365'
-description: Usar a API de críticas de acesso para revisar o acesso de convidados aos seus grupos do Microsoft 365
+title: 'Tutorial: use a API de críticas de acesso para revisar o acesso de convidados aos grupos Microsoft 365 seus clientes'
+description: Use a API de críticas de acesso para revisar o acesso de convidados aos grupos Microsoft 365 de convidados
 author: FaithOmbongi
 localization_priority: Normal
 ms.prod: governance
-ms.openlocfilehash: 216d6e345fcbb2919593f95b327a2b83037e4535
-ms.sourcegitcommit: 32c83957ee69f21a10cd5f759adb884ce4b41c52
+ms.openlocfilehash: ad34932926a658d498242dd168ac7fee1d2b31a1
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51921065"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52751136"
 ---
-# <a name="tutorial-use-the-access-reviews-api-to-review-guest-access-to-your-microsoft-365-groups"></a>Tutorial: Use a API de críticas de acesso para revisar o acesso de convidados aos seus grupos do Microsoft 365
+# <a name="tutorial-use-the-access-reviews-api-to-review-guest-access-to-your-microsoft-365-groups"></a>Tutorial: use a API de críticas de acesso para revisar o acesso de convidados aos grupos Microsoft 365 seus clientes
 
-Neste tutorial, você usará o Graph Explorer para criar e ler avaliações de acesso que direcionam todos os grupos do Microsoft 365 com usuários convidados no locatário. Para isso, você primeiro usará o Azure AD B2B para convidar e criar um usuário convidado, também conhecido como identidade externa, em seu locatário. Em seguida, você adicionará esse usuário convidado ao grupo do Microsoft 365 antes de criar e ler a revisão de acesso.
+Neste tutorial, você usará o Graph Explorer para criar e ler críticas de acesso que direcionam todos os Microsoft 365 grupos com usuários convidados no locatário. Para isso, você primeiro usará o Azure AD B2B para convidar e criar um usuário convidado, também conhecido como identidade externa, em seu locatário. Em seguida, você adicionará esse usuário convidado ao seu grupo Microsoft 365 antes de criar e ler a revisão de acesso.
 
 >[!NOTE]
 >Os objetos de resposta mostrados neste tutorial podem ser reduzidos para a capacidade de leitura.
@@ -22,9 +22,9 @@ Neste tutorial, você usará o Graph Explorer para criar e ler avaliações de a
 
 Para concluir este tutorial, você precisa dos seguintes recursos e privilégios:
 
-+ Um locatário do Azure AD funcionando com uma licença Azure AD Premium P2 ou EMS E5 habilitada. 
++ Um locatário do Azure AD funcionando com uma licença do Azure AD Premium P2 ou EMS E5 habilitada. 
 + Uma conta em um locatário diferente do Azure AD ou uma identidade social que você pode convidar como usuário convidado (usuário B2B).
-+ Entre no [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer) como usuário em uma função de administrador global. 
++ Entre no Graph [Explorer](https://developer.microsoft.com/graph/graph-explorer) como usuário em uma função de administrador global. 
 + As seguintes permissões delegadas: `User.Invite.All` , `AccessReview.ReadWrite.All` , , `Group.ReadWrite.All` `User.ReadWrite.All` .
 
 Para consentir com as permissões necessárias no Graph Explorer:
@@ -40,7 +40,7 @@ Para consentir com as permissões necessárias no Graph Explorer:
    
    Selecione **Consentimento** e, em seguida, selecione **Aceitar** para aceitar o consentimento das permissões. Você não precisa consentir em nome da organização para essas permissões.
    
-   ![Consentimento para as permissões do Microsoft Graph](../images/../concepts/images/tutorial-accessreviews-api/consentpermissions_M365.png)
+   ![Consentir com as permissões Graph Microsoft](../images/../concepts/images/tutorial-accessreviews-api/consentpermissions_M365.png)
    <!--:::image type="content" source="../images/../concepts/images/tutorial-accessreviews-api/consentpermissions_M365.png" alt-text="Consent to the Microsoft Graph permissions":::-->
 
 ## <a name="step-1-create-a-test-user-in-your-tenant"></a>Etapa 1: Criar um usuário de teste em seu locatário
@@ -110,10 +110,10 @@ Content-type: application/json
 }
 ```
 
-## <a name="step-3-create-a-new-microsoft-365-group-and-add-the-guest-user"></a>Etapa 3: criar um novo grupo do Microsoft 365 e adicionar o usuário convidado
+## <a name="step-3-create-a-new-microsoft-365-group-and-add-the-guest-user"></a>Etapa 3: criar um novo grupo Microsoft 365 e adicionar o usuário convidado
 
 Nesta etapa:
-1. Crie um novo grupo do Microsoft 365 chamado **campanha de marketing Feelgood.**
+1. Crie um novo grupo Microsoft 365 chamado **campanha de marketing Feelgood.**
 2. Atribua a si mesmo como o proprietário do grupo.
 3. Adicione john@tailspintoys.com como membro do grupo. O acesso ao grupo é assunto de revisão por você, o proprietário do grupo.
 
@@ -160,17 +160,17 @@ Content-type: application/json
 }
 ```
 
-Agora você tem um grupo do Microsoft 365 com um usuário convidado.
+Agora você tem um grupo Microsoft 365 com um usuário convidado.
 
-## <a name="step-4-create-an-access-review-for-all-microsoft-365-groups-with-guest-users"></a>Etapa 4: Criar uma revisão de acesso para todos os grupos do Microsoft 365 com usuários convidados
+## <a name="step-4-create-an-access-review-for-all-microsoft-365-groups-with-guest-users"></a>Etapa 4: criar uma revisão de acesso para todos os grupos Microsoft 365 com usuários convidados
 
-Ao criar uma série de revisão de acesso recorrente para todos os grupos do Microsoft 365 com usuários convidados, agende uma revisão periódica do acesso dos convidados ao grupo do Microsoft 365. Faça isso para o **grupo Campanha de Marketing da Feelgood.**
+Ao criar uma série de revisão de acesso recorrente para todos os grupos de Microsoft 365 com usuários convidados, agende uma revisão periódica do acesso dos convidados ao grupo Microsoft 365 convidados. Faça isso para o **grupo Campanha de Marketing da Feelgood.**
 
 A série de revisão de acesso usa as seguintes configurações:
 + É uma revisão de acesso recorrente e revisada trimestralmente.
 + Os proprietários do grupo analisam o acesso contínuo de usuários convidados.
-+ O escopo de revisão é limitado a grupos do Microsoft 365 somente **com usuários convidados.**
-+ Um revistor de backup. Pode ser um usuário de fallback ou um grupo que pode revisar o acesso caso o grupo não tenha proprietários atribuídos.
++ O escopo de revisão está limitado a Microsoft 365 grupos com **usuários convidados** somente. Para obter mais opções para configurar o escopo, consulte a [seção Consulte também.](#see-also) 
++ Um revistor de backup. Pode ser um usuário de fallback ou um grupo que pode revisar o acesso caso o grupo não tenha proprietários atribuídos. Para obter mais opções para configurar os revisadores, consulte a [seção Consulte também.](#see-also)
 + **autoApplyDecisionsEnabled** está definido como `true` . Nesse caso, as decisões são aplicadas automaticamente quando o revistor conclui a revisão de acesso ou a duração da revisão de acesso termina. Se não estiver habilitado, um usuário deverá, após a conclusão da revisão, aplicar as decisões manualmente.
 + Aplique **a ação removeAccessApplyAction** a usuários convidados negados. Isso remove a associação no grupo do convidado negado. O usuário convidado ainda pode entrar no locatário.
 
@@ -318,7 +318,7 @@ Content-type: application/json
 
 ## <a name="step-5-list-instances-of-the-access-review"></a>Etapa 5: Listar instâncias da revisão de acesso
 
-A consulta a seguir lista todas as instâncias da definição de revisão de acesso. Se o locatário de teste contiver outros grupos do Microsoft 365 com usuários convidados, essa solicitação retornará uma instância para cada grupo do Microsoft 365 com usuários convidados no locatário.
+A consulta a seguir lista todas as instâncias da definição de revisão de acesso. Se o locatário de teste contiver outros grupos Microsoft 365 com usuários convidados, essa solicitação retornará uma instância para cada grupo Microsoft 365 com usuários convidados no locatário.
 
 ### <a name="request"></a>Solicitação
 Nesta chamada, substitua pela id da definição de revisão de `c22ae540-b89a-4d24-bac0-4ef35e6591ea` acesso retornada na Etapa 4. 
@@ -419,10 +419,10 @@ Como esta é uma revisão trimestral e enquanto a definição ainda estiver ativ
 
 Exclua os recursos criados para este tutorial: grupo de campanhas de **marketing feelgood,** definição de agenda de revisão de acesso, usuário convidado e usuário de teste.
 
-### <a name="delete-the-microsoft-365-group"></a>Excluir o grupo do Microsoft 365
+### <a name="delete-the-microsoft-365-group"></a>Excluir o Microsoft 365 grupo
 
 #### <a name="request"></a>Solicitação
-Nesta chamada, substitua pela id da campanha `59ab642a-2776-4e32-9b68-9ff7a47b7f6a` **de marketing do Feelgood do** Microsoft 365. 
+Nesta chamada, substitua pela id da sua campanha de `59ab642a-2776-4e32-9b68-9ff7a47b7f6a` **marketing do Feelgood**  Microsoft 365 grupo.
 
 ```http
 DELETE https://graph.microsoft.com/beta/groups/59ab642a-2776-4e32-9b68-9ff7a47b7f6a
@@ -480,16 +480,14 @@ HTTP/1.1 204 No Content
 Content-type: text/plain
 ```
 
-Parabéns! Você criou uma revisão de acesso para todos os usuários convidados nos grupos do Microsoft 365 em seu locatário e agendou trimestralmente para a avaliação e atestado do acesso dos usuários convidados. Os proprietários do grupo revisarão o acesso durante esses ciclos, escolhendo aprovar ou negar o acesso.
+Parabéns! Você criou uma revisão de acesso para todos os usuários convidados Microsoft 365 grupos em seu locatário e agendou trimestralmente para a avaliação e atestado do acesso dos usuários convidados. Os proprietários do grupo revisarão o acesso durante esses ciclos, escolhendo aprovar ou negar o acesso.
 
 ## <a name="see-also"></a>Confira também
 
++ [Referência da API de avaliações do Access](/graph/api/resources/accessreviewsv2-root?view=graph-rest-beta&preserve-view=true)
++ [Configurar o escopo de sua definição de revisão de acesso usando a API Graph Microsoft](/graph/accessreviews-scope-concept)
++ [Atribuir revisadores à sua definição de revisão de acesso usando a API Graph Microsoft](/graph/accessreviews-reviewers-concept)
 + [Visão geral de avaliações do Access e requisitos de licença](/azure/active-directory/governance/access-reviews-overview)
-+ [Cenários de licença do Access Reviews](/azure/active-directory/governance/access-reviews-overview#example-license-scenarios)
 + [Criar uma revisão de acesso de grupos & aplicativos](/azure/active-directory/governance/create-access-review)
 + [Convidar/adicionar usuários convidados à sua organização](/graph/api/resources/invitation?view=graph-rest-beta&preserve-view=true)
-+ [Referência da API de Avaliações do Access](/graph/api/resources/accessreviewsv2-root?view=graph-rest-beta&preserve-view=true)
-+ [Criar accessReviewScheduleDefinition](/graph/api/accessreviewscheduledefinition-create?view=graph-rest-beta&preserve-view=true)
-+ [Listar accessReviewInstance](/graph/api/accessreviewinstance-list?view=graph-rest-beta&preserve-view=true)
-+ [Listar accessReviewInstanceDecisionItem](/graph/api/accessreviewinstancedecisionitem-list?view=graph-rest-beta&preserve-view=true)
 

@@ -4,18 +4,18 @@ description: Usar a API de avaliações de acesso para revisar o acesso aos seus
 author: FaithOmbongi
 localization_priority: Normal
 ms.prod: governance
-ms.openlocfilehash: bc8796bee1297e125ad287d5151c709cf58fb222
-ms.sourcegitcommit: 32c83957ee69f21a10cd5f759adb884ce4b41c52
+ms.openlocfilehash: b88c135c488b332814105dcab992e3a2a4ac465b
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51921060"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52751129"
 ---
 # <a name="tutorial-use-the-access-reviews-api-to-review-access-to-your-security-groups"></a>Tutorial: use a API de críticas de acesso para revisar o acesso aos seus grupos de segurança
 
 Neste tutorial, você usará o Graph Explorer para revisar o acesso a um grupo de segurança em seu locatário.
 
-Você pode usar o Graph Explorer ou o Postman para testar e testar suas chamadas de API de revisão de acesso antes de automatize-las em um script ou em um aplicativo. Isso economiza tempo ajudando você a definir e validar corretamente suas consultas sem recompilar repetidamente seu aplicativo.
+Você pode usar Graph Explorer ou Postman para testar e testar suas chamadas de API de críticas de acesso antes de automatize-las em um script ou em um aplicativo. Isso economiza tempo ajudando você a definir e validar corretamente suas consultas sem recompilar repetidamente seu aplicativo.
 
 >[!NOTE]
 >Os objetos de resposta mostrados neste tutorial podem ser reduzidos para a capacidade de leitura.
@@ -24,8 +24,8 @@ Você pode usar o Graph Explorer ou o Postman para testar e testar suas chamadas
 
 Para concluir este tutorial, você precisa dos seguintes recursos e privilégios:
 
-+ Um locatário do Azure AD funcionando com uma licença Azure AD Premium P2 ou EMS E5 habilitada.
-+ Faça logoff no [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer) como usuário em uma função de administrador global.
++ Um locatário do Azure AD funcionando com uma licença do Azure AD Premium P2 ou EMS E5 habilitada.
++ Entre no Graph [Explorer](https://developer.microsoft.com/graph/graph-explorer) como usuário em uma função de administrador global.
   + [Opcional] Inicie uma nova **sessão de navegador incógnita** ou **InPrivate** ou inicie uma sessão em um navegador anônimo. Você fará logoff mais adiante neste tutorial.
 + As seguintes permissões delegadas: `AccessReview.ReadWrite.All` , `Group.ReadWrite.All` .
 
@@ -41,7 +41,7 @@ Para consentir com as permissões necessárias no Graph Explorer:
   
     Selecione **Consentimento** e, na janela pop, escolha **Consentir** em  nome da sua organização e selecione Aceitar para aceitar o consentimento das permissões.
    
-   ![Consentimento para as permissões do Microsoft Graph](../images/../concepts/images/tutorial-accessreviews-api/consentpermissions.png)
+   ![Consentir com as permissões Graph Microsoft](../images/../concepts/images/tutorial-accessreviews-api/consentpermissions.png)
    <!--:::image type="content" source="../images/../concepts/images/tutorial-accessreviews-api/consentpermissions_M365.png" alt-text="Consent to the Microsoft Graph permissions":::-->
 
 ## <a name="step-1-create-test-users-in-your-tenant"></a>Etapa 1: Criar usuários de teste em seu locatário
@@ -140,6 +140,7 @@ Crie uma revisão de acesso para membros do grupo de segurança, usando as segui
 ### <a name="request"></a>Solicitação
 Nesta chamada, substitua o seguinte:
 + `825f1b5e-6fb2-4d9a-b393-d491101acc0c` com a **id de** **Criar grupo de segurança**.
++ O escopo especifica que a revisão é aplicada a todos os membros do grupo de segurança do **Building.** Para obter mais opções para configurar o escopo, consulte a [seção Consulte também.](#see-also)
 + Valor de **startDate** com a data de hoje e o valor de **endDate** com uma data de um ano a partir da data de início.
 
 Ao não especificar o valor da propriedade **reviewers,** essa revisão de acesso é configurada como auto-revisão com os membros como revistores.
@@ -374,7 +375,7 @@ Inicie uma nova sessão de navegador no modo de navegação **incógnito** ou **
 
 ### <a name="list-your-pending-access-review-instances"></a>Listar suas instâncias de revisão de acesso pendentes
 
-Na sessão do navegador incógnito e no Graph Explorer, execute a seguinte consulta para listar suas instâncias de revisão de acesso pendentes:
+Na sessão de navegador incógnito e no Graph Explorer, execute a seguinte consulta para listar suas instâncias de revisão de acesso pendentes:
 
 #### <a name="request"></a>Solicitação
 
@@ -477,11 +478,8 @@ Content-type: text/plain
 
 ## <a name="see-also"></a>Confira também
 
-+ [visão geral de avaliações do access e requisitos de licença](/azure/active-directory/governance/access-reviews-overview)
-+ [cenários de licença de críticas do access](/azure/active-directory/governance/access-reviews-overview#example-license-scenarios)
++ [Referência da API de avaliações do Access](/graph/api/resources/accessreviewsv2-root?view=graph-rest-beta&preserve-view=true)
++ [Configurar o escopo de sua definição de revisão de acesso usando a API Graph Microsoft](/graph/accessreviews-scope-concept)
++ [Visão geral de avaliações do Access e requisitos de licença](/azure/active-directory/governance/access-reviews-overview)
 + [Criar uma revisão de acesso de grupos & aplicativos](/azure/active-directory/governance/create-access-review)
-+ [access reviews API Reference](/graph/api/resources/accessreviewsv2-root?view=graph-rest-beta&preserve-view=true)
-+ [Criar accessReviewScheduleDefinition](/graph/api/accessreviewscheduledefinition-create?view=graph-rest-beta&preserve-view=true)
-+ [Listar accessReviewInstance](/graph/api/accessreviewinstance-list?view=graph-rest-beta&preserve-view=true)
-+ [Listar accessReviewInstanceDecisionItem](/graph/api/accessreviewinstancedecisionitem-list?view=graph-rest-beta&preserve-view=true)
 

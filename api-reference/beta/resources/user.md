@@ -5,12 +5,12 @@ author: jpettere
 localization_priority: Priority
 ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: fd3c48ca0f00d2c3c47ee2a0799d72129a5a0d4b
-ms.sourcegitcommit: cec76c5a58b359d79df764c849c8b459349b3b52
+ms.openlocfilehash: 29695f3af6ca6ac218d766aba203bfb9f8ac4212
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "52645560"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52751234"
 ---
 # <a name="user-resource-type"></a>Tipo de recurso de usuário
 
@@ -40,6 +40,7 @@ Esse recurso permite:
 | [Atualizar usuário](../api/user-update.md) | [user](user.md) | Atualizar o objeto user. |
 | [Excluir usuário](../api/user-delete.md) | Nenhum | Excluir o objeto user. |
 | [Obter delta](../api/user-delta.md) | coleção de usuários | Obter as alterações incrementais para usuários. |
+| [invalidateAllRefreshTokens](../api/user-invalidateallrefreshtokens.md) | Nenhum | Invalidar todos os tokens de atualização do usuário emitidos para as aplicações. |
 | **Atribuição de funções do aplicativo**|||
 | [List appRoleAssignments](../api/user-list-approleassignments.md) | [appRoleAssignment](approleassignment.md) collection | Obter os aplicativos e funções do aplicativo atribuídos a esse usuário. |
 | [Adicionar uma atribuição de função do aplicativo](../api/user-post-approleassignments.md) | [appRoleAssignment](approleassignment.md) | Atribuir uma função do aplicativo a esse usuário. |
