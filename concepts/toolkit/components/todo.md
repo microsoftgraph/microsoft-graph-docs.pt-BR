@@ -1,22 +1,22 @@
 ---
-title: Componente Para Fazer no microsoft graph Toolkit
-description: O componente To Do permite que o usuário exibir, adicionar, remover, concluir ou editar todas as tarefas. Ele funciona com qualquer tarefa no Microsoft To-Do.
+title: To Do componente no microsoft Graph Toolkit
+description: O To Do componente permite ao usuário exibir, adicionar, remover, concluir ou editar todas as tarefas. Ele funciona com qualquer tarefa no Microsoft To-Do.
 localization_priority: Normal
 author: shweaver-MSFT
-ms.openlocfilehash: 1d2f1fd83626c1fcaaf2356605347581f247f6da
-ms.sourcegitcommit: de3bc91a24d23b46bd0863487415fba8d8fce63c
+ms.openlocfilehash: 3eb91bc23f1159e08749b6e6b073939bacca0c5c
+ms.sourcegitcommit: 3f40fbb953b14c1f52341786569c678adfc5bd3e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52266784"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52780999"
 ---
-# <a name="to-do-component-in-the-microsoft-graph-toolkit"></a>Componente Para Fazer no microsoft graph Toolkit
+# <a name="to-do-component-in-the-microsoft-graph-toolkit"></a>To Do componente no microsoft Graph Toolkit
 
-O componente To Do é usado para permitir que o usuário inscreveu para exibir, adicionar, remover, concluir e/ou editar tarefas do Microsoft To Do usando a API Para Fazer no Microsoft Graph.
+O componente To Do é usado para permitir que o usuário inscreveu para exibir, adicionar, remover, concluir e/ou editar tarefas do Microsoft To Do usando a API To Do no Microsoft Graph.
 
 ## <a name="example"></a>Exemplo
 
-O exemplo a seguir exibe as tarefas Do Microsoft To Do do usuário que usam o `mgt-todo` componente. Você pode usar o editor de código para ver como as [propriedades](#properties) alteram o comportamento do componente.
+O exemplo a seguir exibe as tarefas de Microsoft To Do do usuário Microsoft To Do usando o `mgt-todo` componente. Você pode usar o editor de código para ver como as [propriedades](#properties) alteram o comportamento do componente.
 
 <iframe src="https://mgt.dev/iframe.html?id=components-mgt-todo--tasks&source=docs" height="500"></iframe>
 
@@ -33,8 +33,8 @@ Você pode usar os seguintes atributos e propriedades para personalizar o compon
 | hide-options | hideOptions | Um Boolean para mostrar ou ocultar as opções em tarefas. O padrão é `false`.
 | initial-id="folder_id" | initialId | Uma ID de cadeia de caracteres para definir a pasta inicialmente exibida como a ID fornecida. |
 | target-id="folder_id"| targetId | Uma ID de cadeia de caracteres para bloquear a interface de tarefas na ID da pasta fornecida. |
-| N/D | isNewTaskVisible  | Determina se o novo exibição de tarefa está visível na renderização. |
-| N/D | taskFilter  | Uma função opcional para filtrar quais tarefas são mostradas ao usuário. |
+| N/A | isNewTaskVisible  | Determina se o novo exibição de tarefa está visível na renderização. |
+| N/A | taskFilter  | Uma função opcional para filtrar quais tarefas são mostradas ao usuário. |
 
 O exemplo a seguir mostra apenas tarefas da pasta com a ID *12345* e não permite que o usuário crie novas tarefas.
 
@@ -129,13 +129,13 @@ O exemplo a seguir define um modelo para o componente de tarefas.
 
 ## <a name="microsoft-graph-permissions"></a>Permissões do Microsoft Graph
 
-Esse controle usa as seguintes APIs e permissões do Microsoft Graph.
+Esse controle usa as seguintes APIs Graph Microsoft e permissões.
 
-| Recurso | Permissão |
-| - | - |
-| [/me/todo/lists/](/graph/api/todo-list-lists) | Tasks.ReadWrite |
-| [/me/todo/lists/{todoTaskListId}/tasks](/graph/api/todotasklist-list-tasks) | Tasks.ReadWrite |
-| [/me/todo/lists/{todoTaskListId}/tasks/{taskId}](/graph/api/todotask-get) | Tasks.ReadWrite |
+| Configuração | Permissão | API |
+| ------------- | ---------- | --- |
+| `targetId` set | Tasks.Read | [/me/todo/lists/${listId}](/graph/api/todotasklist-get?view=graph-rest-1.0&tabs=http), [/me/todo/lists/{todoTaskListId}/tasks](/graph/api/todotasklist-list-tasks) |
+| `targetId` não definido | Tasks.Read | [/me/todo/lists](/graph/api/todo-list-lists?view=graph-rest-1.0&tabs=http), [/me/todo/lists/{todoTaskListId}/tasks](/graph/api/todotasklist-list-tasks) |
+| criar, atualizar ou excluir tarefa | Tasks.ReadWrite | [/me/todo/lists/{todoTaskListId}/tasks/{taskId}](/graph/api/todotask-get) |
 
 ## <a name="authentication"></a>Autenticação
 

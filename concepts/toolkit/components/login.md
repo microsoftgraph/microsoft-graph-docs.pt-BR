@@ -1,18 +1,18 @@
 ---
-title: Componente de logon no microsoft graph Toolkit
-description: Um componente de Logon é um controle de botão e de sobrevoo para facilitar a autenticação da plataforma de identidade da Microsoft.
+title: Componente de logon no microsoft Graph Toolkit
+description: Um componente de Logon é um botão e um controle de sobrevoo para facilitar plataforma de identidade da Microsoft autenticação.
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: 3e9fc0f7960f9bd0fedb699595675479c3be0699
-ms.sourcegitcommit: de3bc91a24d23b46bd0863487415fba8d8fce63c
+ms.openlocfilehash: ea7df01c77900eecc415b3670db0ea2736447d8c
+ms.sourcegitcommit: 3f40fbb953b14c1f52341786569c678adfc5bd3e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52266600"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52781076"
 ---
-# <a name="login-component-in-the-microsoft-graph-toolkit"></a>Componente de logon no microsoft graph Toolkit
+# <a name="login-component-in-the-microsoft-graph-toolkit"></a>Componente de logon no microsoft Graph Toolkit
 
-Um componente de Logon é um controle de botão e de sobrevoo para facilitar a autenticação da plataforma de identidade da Microsoft. Ele fornece dois estados:
+Um componente de Logon é um botão e um controle de sobrevoo para facilitar plataforma de identidade da Microsoft autenticação. Ele fornece dois estados:
 * Quando o usuário não está assinado, o controle é um botão simples para iniciar o processo de logoff.
 * Quando o usuário está assinado, o controle exibe o nome de usuário, a imagem do perfil e o email. Quando clicado, um sobrevoo é aberto com um comando para sair.
 
@@ -26,7 +26,7 @@ O exemplo a seguir mostra `mgt-login` o componente com um usuário internado.
 
 ## <a name="using-the-control-without-an-authentication-provider"></a>Usando o controle sem um provedor de autenticação
 
-O componente funciona com um provedor e o Microsoft Graph fora da caixa. No entanto, se você quiser fornecer sua própria lógica e autenticação, poderá usar a propriedade para definir os detalhes `userDetails` do usuário. 
+O componente funciona com um provedor e a Microsoft Graph fora da caixa. No entanto, se você quiser fornecer sua própria lógica e autenticação, poderá usar a propriedade para definir os detalhes `userDetails` do usuário. 
 
 | Atributo | Propriedade | Descrição |
 | --- | --- | -- |
@@ -96,7 +96,13 @@ O `mgt-login` componente dá suporte a vários [modelos](../customize-components
 
 ## <a name="microsoft-graph-permissions"></a>Permissões do Microsoft Graph
 
-Esse componente usa o [componente Person](./person.md) para exibir o usuário e herda todas as permissões. 
+Este componente usa as seguintes APIs Graph Microsoft e permissões:
+
+| Configuração | Permissão | API
+| - | - | - |
+| Padrão. | User.Read | [/users/me/](/graph/api/user-get) |
+
+Ao usar o padrão e os modelos, esse componente usa o componente Person para exibir o usuário e `signed-in-button-content` `flyout-person-details` herda todas as permissões. [](./person.md)
 
 ## <a name="authentication"></a>Autenticação
 

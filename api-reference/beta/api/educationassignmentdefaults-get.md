@@ -5,12 +5,12 @@ author: dipakboyed
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 74840c4ac794262d7e5b7cced90c535e5132aa18
-ms.sourcegitcommit: eb67b0a619a4004c1611304f1252a382264a97f3
+ms.openlocfilehash: 4dce342b8555df2b9876a933699bcef06de23266
+ms.sourcegitcommit: 3f40fbb953b14c1f52341786569c678adfc5bd3e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52061697"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52781020"
 ---
 # <a name="get-educationassignmentdefaults"></a>Obter educationAssignmentDefaults
 Namespace: microsoft.graph
@@ -26,9 +26,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)| EduAssignments.ReadBasic, EduAssignments.ReadWriteBasic, EduAssignments.Read, EduAssignments.ReadWrite |
 |Delegado (conta pessoal da Microsoft)| Sem suporte. |
-|Application*| EduAssignments.ReadBasic, EduAssignments.ReadWriteBasic, EduAssignments.Read, EduAssignments.ReadWrite |
-
-*As permissões de aplicativo estão disponíveis apenas para clientes de visualização privada.
+|Aplicativo| EduAssignments.ReadBasic, EduAssignments.ReadWriteBasic, EduAssignments.Read, EduAssignments.ReadWrite |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -103,6 +101,7 @@ Content-Type: application/json
 {
   "value": {
     "addedStudentAction": "none",
+    "addToCalendarAction": "studentsAndTeamOwners",
     "dueTime": "23:59:00",
     "notificationChannelUrl": "https://graph.microsoft.com/beta/teams('id')/channels('id')"
   }

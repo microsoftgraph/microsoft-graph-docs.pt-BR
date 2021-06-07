@@ -1,20 +1,20 @@
 ---
-title: Componente Tarefas no microsoft graph Toolkit
+title: Componente Tarefas no microsoft Graph Toolkit
 description: O componente Tarefas permite ao usuário exibir, adicionar, remover, concluir ou editar tarefas. Ele funciona com qualquer tarefa no Microsoft Planner.
 localization_priority: Normal
 author: benotter
-ms.openlocfilehash: d07db8f1a261f1cff96175a25665f08eff615d67
-ms.sourcegitcommit: de3bc91a24d23b46bd0863487415fba8d8fce63c
+ms.openlocfilehash: 65fc01d5b2cc5db6f6236bb64b7372522c4d61be
+ms.sourcegitcommit: 3f40fbb953b14c1f52341786569c678adfc5bd3e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52266798"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52780985"
 ---
-# <a name="tasks-component-in-the-microsoft-graph-toolkit"></a>Componente Tarefas no microsoft graph Toolkit
+# <a name="tasks-component-in-the-microsoft-graph-toolkit"></a>Componente Tarefas no microsoft Graph Toolkit
 
 O componente Tarefas permite ao usuário exibir, adicionar, remover, concluir ou editar tarefas do Microsoft Planner.  
 
-Além disso, um usuário pode atribuir um único ou vários usuários do Microsoft Graph a uma tarefa. Para obter mais detalhes sobre as atribuições do Microsoft Graph, consulte [plannerAssignments](/graph/api/resources/plannerassignments).
+Além disso, um usuário pode atribuir um único ou vários usuários Graph Microsoft a uma tarefa. Para obter mais detalhes sobre Graph microsoft, consulte [plannerAssignments](/graph/api/resources/plannerassignments).
 
 ## <a name="example"></a>Exemplo
 
@@ -36,8 +36,8 @@ O exemplo a seguir exibe as tarefas do Microsoft Planner do usuário de logo-in 
 | target-id="planner_id/folder_id"| targetId | Uma ID de cadeia de caracteres para bloquear a interface de tarefas para o planejador ou a ID de pasta fornecida. |
 | target-bucket-id="bucket_id" |targetBucketId  | Uma ID de cadeia de caracteres para bloquear a interface de tarefas na ID de bucket fornecida (Planner Data-Source Only). |
 | group-id | groupId  | Uma ID de cadeia de caracteres para bloquear a interface de tarefas na ID do grupo. |
-| N/D | isNewTaskVisible  | Determina se o novo exibição de tarefa está visível na renderização. |
-| N/D | taskFilter  | Uma função opcional para filtrar quais tarefas são mostradas ao usuário. |
+| N/A | isNewTaskVisible  | Determina se o novo exibição de tarefa está visível na renderização. |
+| N/A | taskFilter  | Uma função opcional para filtrar quais tarefas são mostradas ao usuário. |
 
 O exemplo a seguir mostra apenas tarefas do Planner com a ID *12345* e não permite que o usuário crie novas tarefas.
 
@@ -152,14 +152,17 @@ O exemplo a seguir define um modelo para o componente de tarefas.
 
 ## <a name="microsoft-graph-permissions"></a>Permissões do Microsoft Graph
 
-Esse controle usa as seguintes APIs e permissões do Microsoft Graph.
+Esse controle usa as seguintes APIs Graph Microsoft e permissões.
 
-| Recurso | Permissão |
-| - | - |
-| /me/planner/plans | Group.Read.All |
-| /planner/plans/${id} | Group.Read.All, Group.ReadWrite.All |
-| /planner/tasks | Group.ReadWrite.All |
-| /groups/${group-id}/planner/plans | Group.Read.All, Group.ReadWrite.All |
+| Configuração | Permissão | API |
+| ------------- | ---------- | --- |
+| `groupId` definir e `dataSource` definir como `TasksSource.planner` | Group.Read.All | [/groups/${group-id}/planner/plans](/graph/api/plannergroup-list-plans?view=graph-rest-1.0&tabs=http), [/planner/plans/${planId}/buckets](/graph/api/plannerplan-list-buckets?view=graph-rest-1.0&tabs=http), [/planner/buckets/${bucketId}/tasks](/graph/api/plannerplan-list-tasks?view=graph-rest-1.0&tabs=http) |
+| `targetId` definir e `dataSource` definir como `TasksSource.todo` | Tasks.Read | [/me/outlook/taskGroups](/graph/api/outlookuser-list-taskgroups?view=graph-rest-beta&tabs=http&viewFallbackFrom=graph-rest-1.0), [/me/outlook/taskGroups/${groupId}/taskFolders](/graph/api/outlooktaskfolder-list-tasks?view=graph-rest-beta&tabs=http), [/me/outlook/taskFolders/${folderId}/tasks](/graph/api/outlooktaskfolder-list-tasks?view=graph-rest-beta&tabs=http) |
+| `targetId` set and `dataSource` set to something else than `TasksSource.todo` | Group.Read.All | [/planner/plans/${planId}](/graph/api/plannerplan-get?view=graph-rest-1.0&tabs=http), [/planner/plans/${planId}/buckets](/graph/api/plannerplan-list-buckets?view=graph-rest-1.0&tabs=http), [/planner/buckets/${bucketId}/tasks](/graph/api/plannerplan-list-tasks?view=graph-rest-1.0&tabs=http) |
+| `dataSource` set to `TasksSource.planner` | Group.Read.All | [/me/planner/plans](/graph/api/planneruser-list-plans?view=graph-rest-1.0&tabs=http), [/planner/plans/${planId}/buckets](/graph/api/plannerplan-list-buckets?view=graph-rest-1.0&tabs=http), [/planner/buckets/${bucketId}/tasks](/graph/api/plannerplan-list-tasks?view=graph-rest-1.0&tabs=http) |
+| `dataSource` set to `TasksSource.todo` | Tasks.Read | [/me/outlook/taskGroups](/graph/api/outlookuser-list-taskgroups?view=graph-rest-beta&tabs=http&viewFallbackFrom=graph-rest-1.0), [/me/outlook/taskGroups/${groupId}/taskFolders](/graph/api/outlooktaskfolder-list-tasks?view=graph-rest-beta&tabs=http), [/me/outlook/taskFolders/${folderId}/tasks](/graph/api/outlooktaskfolder-list-tasks?view=graph-rest-beta&tabs=http) |
+| `addTask` definir como `true` e `dataSource` definir como `TasksSource.planner` | Group.ReadWrite.All | [/planner/tasks](/graph/api/planner-post-tasks?view=graph-rest-1.0&tabs=http) |
+| `addTask` definir como `true` e `dataSource` definir como `TasksSource.todo` | Tasks.ReadWrite | [/me/outlook/taskFolders/${parentFolderId}/tasks](/graph/api/outlookuser-post-tasks?view=graph-rest-beta&tabs=csharp) |
 
 Para a fonte de dados do Microsoft Planner, buscar e ler tarefas requer a permissão Groups.Read.All. Adicionar, atualizar ou remover tarefas requer a permissão Groups.ReadWrite.All.
 

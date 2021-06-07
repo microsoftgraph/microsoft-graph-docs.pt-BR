@@ -216,6 +216,8 @@ items:
                 href: api/user-delete.md
               - name: Obter intervalo
                 href: api/user-delta.md
+              - name: Invalidar tokens de atualização
+                href: api/user-invalidateallrefreshtokens.md
           - name: Atribuição de funções do aplicativo
             href: resources/approleassignment.md
             items:
@@ -501,7 +503,7 @@ items:
         items:
           - name: Visão Geral
             href: resources/groups-overview.md
-          - name: Grupo
+          - name: Group
             href: resources/group.md
             items:
               - name: Listar grupos
@@ -1831,25 +1833,25 @@ items:
                   - name: Organizado por impressora
                     items:
                       - name: Obter
-                        href: api/printusagesummarybyprinter-get.md
+                        href: api/printusagebyprinter-get.md
                       - name: Listar trabalhos de impressão arquivados de uma impressora
                         href: api/reports-getprinterarchivedprintjobs.md
                       - name: Listar relatórios diários por impressora
-                        href: api/reportroot-list-dailyprintusagesummariesbyprinter.md
+                        href: api/reportroot-list-dailyprintusagebyprinter.md
                       - name: Listar relatórios mensais por impressora
-                        href: api/reportroot-list-monthlyprintusagesummariesbyprinter.md
+                        href: api/reportroot-list-monthlyprintusagebyprinter.md
                   - name: Organizado por usuário ou grupo
                     items:
                       - name: Obter
-                        href: api/printusagesummarybyuser-get.md
+                        href: api/printusagebyuser-get.md
                       - name: Listar trabalhos de impressão arquivados de um usuário
                         href: api/reports-getuserarchivedprintjobs.md
                       - name: Listar trabalhos de impressão arquivados de um grupo
                         href: api/reports-getgrouparchivedprintjobs.md
                       - name: Listar relatórios diários por usuário
-                        href: api/reportroot-list-dailyprintusagesummariesbyuser.md
+                        href: api/reportroot-list-dailyprintusagebyuser.md
                       - name: Listar relatórios mensais por usuário
-                        href: api/reportroot-list-monthlyprintusagesummariesbyuser.md
+                        href: api/reportroot-list-monthlyprintusagebyuser.md
               - name: Serviço de impressão
                 href: resources/printservice.md
                 items:
@@ -9794,8 +9796,6 @@ items:
                 href: api/educationassignment-post-resources.md
               - name: Obter recurso de tarefa
                 href: api/educationassignmentresource-get.md
-              - name: Atualizar recurso de tarefa
-                href: api/educationassignmentresource-update.md
               - name: Excluir recurso da tarefa
                 href: api/educationassignmentresource-delete.md
               - name: Publicar tarefa
@@ -13219,7 +13219,7 @@ items:
                     href: api/termstore-store-get.md
                   - name: Atualizar
                     href: api/termstore-store-update.md
-              - name: Grupo
+              - name: Group
                 href: resources/termstore-group.md
                 items:
                   - name: Criar

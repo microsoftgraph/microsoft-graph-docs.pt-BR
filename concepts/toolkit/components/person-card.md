@@ -3,12 +3,12 @@ title: Person-Card componente no microsoft Graph Toolkit
 description: Um Person-Card é um componente para exibir mais informações relacionadas a uma pessoa.
 localization_priority: Normal
 author: vogtn
-ms.openlocfilehash: de09e9156cd084bdffbe5578e90605e0cf723403
-ms.sourcegitcommit: 276a13a37c3772689dfc71f7cd47586c9581f27d
+ms.openlocfilehash: 8497dbb3b3d9a3173cdbf8ee8ec6bfe74859868b
+ms.sourcegitcommit: 3f40fbb953b14c1f52341786569c678adfc5bd3e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52629340"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52780698"
 ---
 # <a name="person-card-component-in-the-microsoft-graph-toolkit"></a>Person-Card componente no microsoft Graph Toolkit
 
@@ -159,26 +159,20 @@ mgt-person {
 
 Para saber mais, confira [componentes de estilo](../customize-components/style.md).
 
-## <a name="microsoft-graph-apis-and-permissions"></a>ApIs Graph Microsoft e permissões
+## <a name="microsoft-graph-permissions"></a>Permissões do Microsoft Graph
 
 O controle Person-Card usa as seguintes APIs Graph Microsoft e permissões.
 
-| Resource | Permissão | Section |
-| - | - | - |
-| [/me](/graph/api/user-get) | User.Read | Padrão |
-| [/me/photo/$value](/graph/api/profilephoto-get) | User.Read | Padrão |
-| [/me/people/?$search=](/graph/api/user-list-people) | People.Read | Padrão |
-| [/me/contacts/\*](/graph/api/user-list-contacts) | Contacts.Read | Padrão |
-| [/users/{id}](/graph/api/user-list-people) | User.ReadBasic.All | Padrão |
-| [/users/{id}/photo/$value](/graph/api/profilephoto-get) | User.ReadBasic.All | Padrão |
-| [/me/presence](/graph/api/presence-get) | Presence.Read | Padrão |
-| [/users/{id}/presence](/graph/api/presence-get) | Presence.Read.All | Padrão |
-| [/users/{id}/manager](/graph/api/user-list-manager) | User.Read.All | Organização |
-| [/users/{id}/directReports](/graph/api/user-list-directreports) | User.Read.All | Organização |
-| [/users/{id}/people](/graph/api/user-list-people) | People.Read.All | Organização |
-| [/me/messages](/graph/api/user-list-messages) | Mail.ReadBasic | Mensagens |
-| [/me/insights/shared](/graph/api/insights-list-shared) e [/me/insights/used](/graph/api/insights-list-used) | Sites.Read.All | Arquivos |
-| [/users/{id}/profile](/graph/api/profile-get) | User.Read.All | Perfil |
+| Configuração | Permissão | API | Section |
+| --- | ---------- | ------- | --------- |
+| `personDetails` set with user's `id` but without e-mail, or `userId` set, or set `personQuery` to `me` | User.ReadBasic.All | [/users/{id}](/graph/api/user-list-people), [/users/{id}/photo/$value](/graph/api/profilephoto-get) | Padrão |
+| `personQuery` definido como um valor diferente do `me` | People.Read | [/me/people/?$search=](/graph/api/user-list-people) | Padrão |
+| `personQuery` definido como um valor diferente `me` e `config.useContactApis` definido como `true` (padrão) | Contacts.Read | [/me/contacts/\*](/graph/api/user-list-contacts) | Padrão |
+| `showPresence` set to `true` | Presence.Read.All | [/users/{id}/presence](/graph/api/presence-get) | Padrão |
+| `sections.organization` habilitado (padrão) | User.Read.All | [/users/{id}/manager](/graph/api/user-list-manager) | Organização |
+| `sections.organization.showWorksWith` set (padrão) | People.Read.All | [/users/{id}/people](/graph/api/user-list-people) | Organização |
+| `sections.mailMessages` habilitado (padrão) | Mail.ReadBasic | [/me/messages](/graph/api/user-list-messages) | Mensagens |
+| `sections.files` habilitado (padrão) | Sites.Read.All | [/me/insights/shared](/graph/api/insights-list-shared) e [/me/insights/used](/graph/api/insights-list-used) | Arquivos |
 
 A classe também expõe um método estático que retorna uma matriz de escopos necessários para que o cartão de pessoa funcione com base na configuração `MgtPersonCard` global do cartão de `getScopes` pessoa.
 

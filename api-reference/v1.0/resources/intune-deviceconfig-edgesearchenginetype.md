@@ -1,35 +1,30 @@
 ---
-title: tipo de enumeração edgeSearchEngineType
-description: Permite que ele seja definido como um mecanismo de pesquisa padrão predefinido para dispositivos controlados por MDM
+title: Tipo denum edgeSearchEngineType
+description: Permite que o administrador de IT de definir um mecanismo de pesquisa padrão predefinido para MDM-Controlled dispositivos
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 5e15fde3267960ceab7d6eebef86fb3fef8021c4
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 7a7bc2e37b10bfbbb4ff6fee32a22ad5f8e249ed
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48056727"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52742899"
 ---
-# <a name="edgesearchenginetype-enum-type"></a>tipo de enumeração edgeSearchEngineType
+# <a name="edgesearchenginetype-enum-type"></a>Tipo denum edgeSearchEngineType
 
 Namespace: microsoft.graph
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Permite que ele seja definido como um mecanismo de pesquisa padrão predefinido para dispositivos controlados por MDM
+Permite que o administrador de IT de definir um mecanismo de pesquisa padrão predefinido para MDM-Controlled dispositivos
 
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|Padrão.|,0|Usa as configurações de fábrica da borda para atribuir o mecanismo de pesquisa padrão de acordo com o mercado de usuários|
-|Bing|1 |Define Bing como o mecanismo de pesquisa padrão|
-
-
-
-
-
+|Padrão.|0|Usa configurações de fábrica do Edge para atribuir o mecanismo de pesquisa padrão de acordo com o mercado de usuários|
+|bing|1|Define Bing como o mecanismo de pesquisa padrão|
 
 
 

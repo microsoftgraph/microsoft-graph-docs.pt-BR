@@ -5,12 +5,12 @@ author: AkJo
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: d6ebc247ec6868cd32e2ef3790f7542d9eb546fe
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: 0ef07eddc0bb1f1a4b8a6739f5d8b28c6436038e
+ms.sourcegitcommit: 91d8454bfff853905e3a5e86623fcb06931507ed
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52682044"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52732165"
 ---
 # <a name="team-resource-type"></a>tipo de recurso de equipe
 
@@ -22,7 +22,7 @@ No Microsoft Teams, uma equipe é um conjunto de objetos de [canal](channel.md).
 Um canal representa um tópico e, portanto, um isolamento lógico da discussão em uma equipe.
 
 Cada equipe está associada a um [grupo](../resources/group.md).
-O grupo tem a mesma ID da equipe, por exemplo, /groups/{id}/team é igual a /teams/{id}.
+O grupo tem a mesma ID da equipe, por exemplo, `/groups/{id}/team` é o mesmo `/teams/{id}`.
 Confira mais informações sobre como trabalhar com grupos e membros em equipes, confira [Usar a API REST do Microsoft Graph para trabalhar com o Microsoft Teams](teams-api-overview.md).
 
 ## <a name="methods"></a>Métodos

@@ -5,12 +5,12 @@ author: jackson-woods
 localization_priority: Priority
 ms.prod: applications
 ms.custom: graphiamtop20
-ms.openlocfilehash: 009882486b8d9cf734438487039fe32c3da6cb05
-ms.sourcegitcommit: 612e1d796023433c6e15a9d66ba99d9bdc424cee
+ms.openlocfilehash: 82fd2766fa86935cd52e47f7c1669ce3cbfecaf9
+ms.sourcegitcommit: 3f40fbb953b14c1f52341786569c678adfc5bd3e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "52703605"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52781055"
 ---
 # <a name="get-access-on-behalf-of-a-user"></a>Obter acesso em nome de um usuário
 
@@ -46,7 +46,7 @@ A primeira etapa para obter acesso a um token para muitos fluxos do OpenID Conne
 
 Veja a seguir um exemplo de solicitação para o ponto de extremidade `/authorize`.
 
-Com o ponto de extremidade da plataforma de identidade da Microsoft, as permissões são solicitadas usando o parâmetro `scope`. Neste exemplo, as permissões do Microsoft Graph solicitadas são para _User.Read_ e _Mail.Read_, o que permitirá que o aplicativo leia o perfil e o email do usuário conectado. A permissão _offline\_ access_ é solicitada para que o aplicativo possa obter um token de atualização que pode ser usado para obter um novo token de acesso quando o atual expirar.
+Com o ponto de extremidade da plataforma de identidade da Microsoft, as permissões são solicitadas usando o parâmetro `scope`. Neste exemplo, as permissões do Microsoft Graph solicitadas são para _User.Read_ e _Mail.Read_, o que permitirá que o aplicativo leia o perfil e o email do usuário conectado. A permissão de _acesso\_offline_ é um escopo OIDC padrão solicitado para que o aplicativo possa obter um token de atualização que pode ser usado para obter um novo token de acesso quando o atual expirar.
 
 ```
 // Line breaks for legibility only
@@ -66,11 +66,14 @@ client_id=6731de76-14a6-49ae-97bc-6eba6914391e
 | client_id     | obrigatório    | A ID do Aplicativo atribuída ao seu aplicativo no [portal de registro](https://go.microsoft.com/fwlink/?linkid=2083908).                                                                                                                                                                                                                                                                                                                                                                                   |
 | response_type | obrigatório    | Pode incluir `code` para o fluxo do código de autorização.                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
 | redirect_uri  | recomendado | A redirect_uri de seu aplicativo, onde as respostas de autenticação podem ser enviadas e recebidas pelo seu aplicativo.  Ela deve corresponder exatamente a uma das redirect_uris registradas no portal de registro de aplicativos, exceto que ela deve ser codificada por URL.  Para aplicativos nativos e móveis, você deve usar o valor padrão de `https://login.microsoftonline.com/common/oauth2/nativeclient`.                                                                                                                                       |
-| escopo         | obrigatório    | Uma lista separada por espaços das permissões do Microsoft Graph que você deseja que o usuário concorde. O escopo `offline_access` indica que seu aplicativo precisa de um token de atualização para um acesso de longa duração aos recursos. Você também pode incluir escopos do OpenID.                                                                                                                                                                                                                                                                                                                                                                  |
+| escopo         | obrigatório    | Uma lista separada por espaços das permissões do Microsoft Graph que você deseja que o usuário concorde. Isso pode incluir permissões de recurso, como o _User.Read_ e o _Mail.Read_ e escopos OIDC, como o `offline_access`, que indica que seu aplicativo precisa de um token de atualização para ter acesso aos recursos por muito tempo.                                                                                                                                                                                                                                                                                                                                                                  |
 | response_mode | recomendado | Especifica o método que deve ser usado para enviar o token resultante de volta para seu aplicativo.  Pode ser `query` ou `form_post`.                                                                                                                                                                                                                                                                                                                                                                                  |
 | estado         | recomendado | Um valor incluído na solicitação que também será retornado na resposta do token.  Pode ser uma cadeia de caracteres de qualquer conteúdo desejado.  Um valor exclusivo gerado aleatoriamente é tipicamente usado para [impedir ataques de solicitação entre sites forjada](https://tools.ietf.org/html/rfc6749#section-10.12).  O estado também é usado para codificar as informações sobre o estado do usuário no aplicativo antes da solicitação de autenticação ter ocorrido, como a página ou o modo de exibição em que ele estava.                                     |
 
-> **Importante**: O Microsoft Graph expõe dois tipos de permissões: delegada e de aplicativo. No caso de aplicativos que são executados com um usuário conectado, solicite Permissões Delegadas no parâmetro `scope`. Essas permissões delegam os privilégios do usuário conectado ao seu aplicativo, permitindo que ele atue como o usuário conectado ao fazer chamadas para o Microsoft Graph. Para obter mais informações sobre as permissões disponíveis por meio do Microsoft Graph, confira a [Referência de permissões](./permissions-reference.md).
+> [!NOTE]
+> O Microsoft Graph expõe dois tipos de permissões: delegada e de aplicativo. No caso de aplicativos que são executados com um usuário conectado, solicite permissões delegadas no parâmetro `scope`. Essas permissões delegam os privilégios do usuário conectado ao seu aplicativo, permitindo que ele atue como o usuário conectado ao fazer chamadas para o Microsoft Graph. Para obter mais informações sobre as permissões disponíveis por meio do Microsoft Graph, confira a [Referência de permissões](./permissions-reference.md).
+>
+> O Microsoft Graph também expõe os seguintes escopos OIDC bem definidos: `openid`, `email`, `profile` e `offline_access`. Os escopos OIDC `address` e `phone` não são suportados. Para obter mais detalhes sobre cada escopo OIDC, consulte [Permissões e consentimento](/azure/active-directory/develop/v2-permissions-and-consent#openid-connect-scopes).
 
 ### <a name="consent-experience"></a>Experiência de consentimento
 

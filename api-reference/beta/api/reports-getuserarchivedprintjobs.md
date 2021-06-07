@@ -3,14 +3,14 @@ title: 'reports: getUserArchivedPrintJobs'
 description: Obter uma lista de trabalhos de impressão arquivados para um usuário específico.
 author: braedenp-msft
 localization_priority: Normal
-ms.prod: universal-print
+ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: 214848ff04f982bcf3ff06397ac16d4793e948e5
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: c0c03302e2bb10ef99f2c4adf5aa8cafea506333
+ms.sourcegitcommit: 3f40fbb953b14c1f52341786569c678adfc5bd3e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52054879"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52780754"
 ---
 # <a name="reports-getuserarchivedprintjobs"></a>reports: getUserArchivedPrintJobs
 
@@ -29,7 +29,7 @@ Além das permissões a seguir, o locatário do usuário deve ter uma assinatura
 |:---------------|:--------------------------------------------|
 |Delegada (conta corporativa ou de estudante)| Reports.Read.All |
 |Delegada (conta pessoal da Microsoft)|Sem suporte.|
-|Application|Sem suporte.|
+|Aplicativo|Sem suporte.|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -59,10 +59,11 @@ O exemplo a seguir mostra como chamar essa API.
 Este é um exemplo de solicitação.
 <!-- {
   "blockType": "request",
-  "name": "reports-getuserarchivedprintjobs"
+  "name": "reports-getuserarchivedprintjobs",
+  "sampleKeys": ["016b5565-3bbf-4067-b9ff-4d68167eb1a6"]
 }-->
 ```http
-GET https://graph.microsoft.com/beta/print/reports/getUserArchivedPrintJobs(userId='{id}',startDateTime={timestamp},endDateTime={timestamp})
+GET https://graph.microsoft.com/beta/print/reports/getUserArchivedPrintJobs(userId='016b5565-3bbf-4067-b9ff-4d68167eb1a6',startDateTime=2021-05-24,endDateTime=2021-05-25)
 ```
 
 ##### <a name="response"></a>Resposta

@@ -5,12 +5,12 @@ author: jackson-woods
 localization_priority: Priority
 ms.prod: applications
 ms.custom: graphiamtop20
-ms.openlocfilehash: 86bbe3af472ff2f5a33a951f61f1f0b3d6a46801
-ms.sourcegitcommit: 612e1d796023433c6e15a9d66ba99d9bdc424cee
+ms.openlocfilehash: cb1156ce758b55cc6087097838f183e9148f6091
+ms.sourcegitcommit: 3f40fbb953b14c1f52341786569c678adfc5bd3e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "52703633"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52780719"
 ---
 # <a name="get-access-without-a-user"></a>Obter acesso sem um usuário
 
@@ -137,7 +137,7 @@ client_id=535fb089-9ff3-47b6-9bfb-4f1264799865
 |:--------------|:----------|:------------
 | locatário        | Obrigatório  | O locatário do diretório do qual você deseja solicitar permissão. Pode ser no formato de nome amigável ou GUID.
 | client_id     | Obrigatório  | A ID de Aplicativo que o [Portal de Registro de Aplicativos do Azure](https://go.microsoft.com/fwlink/?linkid=2083908) atribuiu quando você registrou seu aplicativo.
-| scope         | Obrigatório  | O valor passado para o parâmetro `scope` nesta solicitação deve ser o identificador do recurso (URI da ID do Aplicativo) do recurso desejado, afixado com o sufixo `.default`. Para o Microsoft Graph, o valor é `https://graph.microsoft.com/.default`. Esse valor informa ao ponto de extremidade da plataforma de identidade da Microsoft que, de todas as permissões de aplicativo que você configurou para seu aplicativo, ele deve emitir um token para os aplicativos associados ao recurso que você deseja usar. Você também pode usar o escopo `offline_access` para indicar que seu aplicativo precisa de um token de atualização para um acesso de longa duração aos recursos.
+| scope         | Obrigatório  | O valor passado para o parâmetro `scope` nesta solicitação deve ser o identificador do recurso (URI da ID do Aplicativo) do recurso desejado, afixado com o sufixo `.default`. Para o Microsoft Graph, o valor é `https://graph.microsoft.com/.default`. Esse valor informa ao ponto de extremidade da plataforma de identidade da Microsoft que, de todas as permissões de aplicativo que você configurou no seu aplicativo, ele deve emitir um token para os aplicativos associados ao recurso que você quer usar.
 | client_secret | Obrigatório  | O Segredo do Aplicativo gerado para seu aplicativo no portal de registro de aplicativos.
 | grant_type    | Obrigatório  | Deve ser `client_credentials`.
 

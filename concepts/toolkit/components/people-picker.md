@@ -3,12 +3,12 @@ title: People-Picker componente
 description: Você pode usar o componente web mgt-people-picker para pesquisar um número especificado de pessoas e renderizar a lista de resultados por meio do Microsoft Graph.
 localization_priority: Normal
 author: elisenyang
-ms.openlocfilehash: dd3956e39450946a381b0b90851f248d7cf07b64
-ms.sourcegitcommit: db3d2c6db8dd8f8cc14bdcebb2904d5e056a73e7
+ms.openlocfilehash: 36a8208b2425bc74922427f7ffcb4c6ec3a10788
+ms.sourcegitcommit: 3f40fbb953b14c1f52341786569c678adfc5bd3e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52580019"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52780740"
 ---
 # <a name="people-picker-component-in-the-microsoft-graph-toolkit"></a>People-Picker componente no microsoft Graph Toolkit
 
@@ -137,13 +137,13 @@ Os exemplos a seguir mostram como usar o `error` modelo.
 
 Esse componente usa as seguintes APIs Graph Microsoft e permissões.
 
-| API                                                                                                              | Permissão  |
-| ---------------------------------------------------------------------------------------------------------------- | ----------- |
-| [/me/people](/graph/api/user-list-people)                    | People.Read        |
-| [/users](/graph/api/user-list)  | User.ReadBasic.All |
-| [/groups](/group-list)  | Group.Read.All |
-| [/groups/ \$ {groupId}/members](/graph/api/group-list-members) | GroupMember.Read.All        |
-| [/users/${userPrincipleName} ](/graph/api/user-get)  | User.Read |
+| Configuração | Permissão | API
+| --- | ---------- | ------- |
+| `group-id` set | People.Read, User.Read.All | [/groups/ \$ {groupId}/members](/graph/api/group-list-members) |
+| `type` definir como `Person` ou `any` | People.Read | [/me/people](/graph/api/user-list-people) |
+| `type` definir ou `Group` pesquisar usuários e definir como `type` `Group` ou `any` | Group.Read.All | [/groups](/graph/api/group-list) |
+| `default-selected-user-ids` set | User.ReadBasic.All | [/users](/graph/api/user-list) |
+| procurando usuários e `type` definido como `Person` ou `any` | People.Read, User.ReadBasic.All | [/me/people](/graph/api/user-list-people), [/users](/graph/api/user-list) |
 
 ## <a name="authentication"></a>Autenticação
 
@@ -158,6 +158,7 @@ O controle usa o provedor de autenticação global descrito na [documentação d
 |`users`|Lista de usuários|Usado quando `groupId` especificado|
 
 Consulte [Caching](../customize-components/cache.md) para obter mais detalhes sobre como configurar o cache.
+
 ## <a name="extend-for-more-control"></a>Estender para obter mais controle
 
 Para cenários mais complexos ou um UX realmente personalizado, esse componente expõe vários métodos para substituição `protected render*` em extensões de componentes.

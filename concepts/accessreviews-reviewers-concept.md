@@ -1,18 +1,18 @@
 ---
-title: Atribuir revisadores à sua definição de revisão de acesso usando a API Graph Microsoft
+title: Atribuir revisadores à sua revisão de acesso usando a API Graph Microsoft
 description: Saiba como usar a API de críticas de acesso no Microsoft Graph atribuir revisadores de acesso.
 author: isabelleatmsft
 localization_priority: Normal
 ms.prod: governance
 doc_type: conceptualPageType
-ms.openlocfilehash: f892e74f5bf7a7aa934872186208e21ede19780a
-ms.sourcegitcommit: db3d2c6db8dd8f8cc14bdcebb2904d5e056a73e7
+ms.openlocfilehash: bc6ada083b27a39fa26174c60f7637a02ec1cd8f
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52579794"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52754927"
 ---
-# <a name="assign-reviewers-to-your-access-review-definition-using-the-microsoft-graph-api"></a>Atribuir revisadores à sua definição de revisão de acesso usando a API Graph Microsoft
+# <a name="assign-reviewers-to-your-access-review-using-the-microsoft-graph-api"></a>Atribuir revisadores à sua revisão de acesso usando a API Graph Microsoft
 
 A [API](/graph/api/resources/accessreviewsv2-root?view=graph-rest-beta&preserve-view=true) de revisões de acesso do Azure AD permite que você revise programaticamente o acesso que os usuários, entidades de serviço ou grupos têm aos recursos do Azure AD.
 
