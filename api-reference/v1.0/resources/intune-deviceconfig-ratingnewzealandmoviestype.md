@@ -1,18 +1,18 @@
 ---
-title: tipo de enumeração ratingNewZealandMoviesType
+title: ratingNewZealandMoviesType tipo de número
 description: Rótulos de classificação de filmes na Nova Zelândia
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: d0a214bf2f55549e77bf58443699515ebe81fa55
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 6726b03897cf7685e672bdba7ee0e26ed03c8677
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48056643"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52758824"
 ---
-# <a name="ratingnewzealandmoviestype-enum-type"></a>tipo de enumeração ratingNewZealandMoviesType
+# <a name="ratingnewzealandmoviestype-enum-type"></a>ratingNewZealandMoviesType tipo de número
 
 Namespace: microsoft.graph
 
@@ -23,22 +23,17 @@ Rótulos de classificação de filmes na Nova Zelândia
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|Permitido|,0|Valor padrão, permitir todo o conteúdo de filmes|
-|Bloqueado|1 |Não permitir conteúdo de filmes|
-|geral|2 |Adequado para audiência geral|
-|parentalGuidance|3 |A classificação PG recomenda orientação dos pais|
-|completa|4 |A classificação M é adequada para o público adulto|
-|agesAbove13|5 |A classificação do R13 é restrita às pessoas com mais de 13 anos|
-|agesAbove15|6 |A classificação do R15 é restrita a pessoas de 15 anos ou mais|
-|agesAbove16|7 |A classificação do R16 é restrita a pessoas com 16 anos ou mais|
-|agesAbove18|8 |A classificação do R18 é restrita a pessoas de 18 anos ou mais|
-|limitado|9 |A classificação R é restrita a uma determinada audiência|
-|agesAbove16Restricted|10 |A classificação RP16 requer que os espectadores de 16 acompanhados por um pai ou adulto|
-
-
-
-
-
+|allAllowed|0|Valor padrão, permitir todo o conteúdo de filmes|
+|allBlocked|1|Não permitir conteúdo de filmes|
+|geral|2|Adequado para audiência geral|
+|parentalGuidance|3|A classificação PG recomenda orientações dos pais|
+|mature|4 |A classificação M é adequada para audiências mais maduros|
+|agesAbove13|5 |A classificação R13 é restrita a pessoas com 13 anos ou mais|
+|agesAbove15|6 |A classificação R15 é restrita a pessoas com 15 anos ou mais|
+|agesAbove16|7 |A classificação R16 é restrita a pessoas com 16 anos ou mais|
+|agesAbove18|8 |A classificação R18 é restrita a pessoas com 18 anos ou mais|
+|restrito|9 |A classificação R é restrita a um determinado público|
+|agesAbove16Restricted|10 |A classificação RP16 requer visualizadores menores de 16 anos acompanhados por um pai ou um adulto|
 
 
 

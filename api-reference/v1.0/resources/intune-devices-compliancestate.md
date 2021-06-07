@@ -1,18 +1,18 @@
 ---
-title: tipo de enumeração compliancestate
+title: tipo de número de complianceState
 description: Estado de conformidade.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 24f7a2a62ae45504c03d2fcff49ca8f17bfab28b
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 4bae464724712333c81b73bdcd23e57148655624
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48091303"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52757735"
 ---
-# <a name="compliancestate-enum-type"></a>tipo de enumeração compliancestate
+# <a name="compliancestate-enum-type"></a>tipo de número de complianceState
 
 Namespace: microsoft.graph
 
@@ -23,18 +23,13 @@ Estado de conformidade.
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|desconhecido|,0|Unknown.|
-|com|1 |Com.|
-|incompatível|2 |O dispositivo não está em conformidade e é bloqueado de recursos corporativos.|
-|apresentar|3D|Conflito com outras regras.|
+|desconhecido|0|Desconhecido.|
+|compatível|1|Compatível.|
+|noncompliant|2|O dispositivo não é compatível e é bloqueado de recursos corporativos.|
+|conflict|3|Conflita com outras regras.|
 |erro|4 |Erro|
-|inGracePeriod|254|O dispositivo não está em conformidade, mas ainda tem acesso aos recursos corporativos|
-|configmanager|255|Gerenciado pelo Gerenciador de configuração|
-
-
-
-
-
+|inGracePeriod|254|O dispositivo não é compatível, mas ainda tem acesso a recursos corporativos|
+|configManager|255|Gerenciado pelo Gerenciador de Configurações|
 
 
 

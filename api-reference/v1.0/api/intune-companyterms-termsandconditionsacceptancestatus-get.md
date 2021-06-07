@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: bdc45791bce6bcacad23f758abcff3f11ba699d9
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 4730fd86a91576d35c53c4d05b3ebf4a3d15671d
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48045807"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52759382"
 ---
 # <a name="get-termsandconditionsacceptancestatus"></a>Get termsAndConditionsAcceptanceStatus
 
@@ -23,11 +23,11 @@ Ler propriedades e relações do objeto [termsAndConditionsAcceptanceStatus](../
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
+|Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
+|Delegado (conta corporativa ou de estudante)|DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|Sem suporte.|
+|Aplicativo|DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -66,7 +66,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 289
+Content-Length: 344
 
 {
   "value": {
@@ -74,15 +74,11 @@ Content-Length: 289
     "id": "a045ce1a-ce1a-a045-1ace-45a01ace45a0",
     "userDisplayName": "User Display Name value",
     "acceptedVersion": 15,
-    "acceptedDateTime": "2016-12-31T23:57:43.6165506-08:00"
+    "acceptedDateTime": "2016-12-31T23:57:43.6165506-08:00",
+    "userPrincipalName": "User Principal Name value"
   }
 }
 ```
-
-
-
-
-
 
 
 

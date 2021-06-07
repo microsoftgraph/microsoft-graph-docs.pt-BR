@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 5a11a2062312f313fe915017471167cec7929644
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 0d3e007c260e308b3c86ae6bba95b11d362d0f40
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48088612"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52758929"
 ---
 # <a name="termsandconditionsacceptancestatus-resource-type"></a>Tipo de recurso termsAndConditionsAcceptanceStatus
 
@@ -32,11 +32,11 @@ Uma entidade termsAndConditionsAcceptanceStatus representa o status de aceitaç�
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Identificador exclusivo da entidade.|
+|id|String|Identificador exclusivo da entidade.|
 |userDisplayName|Cadeia de caracteres|Nome de exibição do usuário cuja aceitação a entidade representa.|
 |acceptedVersion|Int32|Número da versão mais recente dos T&C aceitos pelo usuário.|
 |acceptedDateTime|DateTimeOffset|A data e a hora em que os termos foram aceitos pela última vez pelo usuário.|
-|userPrincipalName|Cadeia de caracteres|O userPrincipalName do usuário que aceitou o termo.|
+|userPrincipalName|String|O userPrincipalName do Usuário que aceitou o termo.|
 
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|
@@ -61,11 +61,6 @@ Veja a seguir uma representação JSON do recurso.
   "userPrincipalName": "String"
 }
 ```
-
-
-
-
-
 
 
 

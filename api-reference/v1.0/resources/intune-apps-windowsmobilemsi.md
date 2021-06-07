@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: ab7ae64bfde764bfb6c57859d0bc457100e9ef9d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 8936fb98a1a7d26823f82c1bf5e7031922e31bb5
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48032492"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52757812"
 ---
 # <a name="windowsmobilemsi-resource-type"></a>Tipo de recurso windowsMobileMSI
 
@@ -23,7 +23,7 @@ Contém propriedades e propriedades herdadas para aplicativos de linha de negóc
 
 Herda de [mobileLobApp](../resources/intune-apps-mobilelobapp.md)
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
 |[Listar windowsMobileMSIs](../api/intune-apps-windowsmobilemsi-list.md)|Coleção [windowsMobileMSI](../resources/intune-apps-windowsmobilemsi.md)|Lista propriedades e relações dos objetos [windowsMobileMSI](../resources/intune-apps-windowsmobilemsi.md).|
@@ -102,11 +102,6 @@ Veja a seguir uma representação JSON do recurso.
   "ignoreVersionDetection": true
 }
 ```
-
-
-
-
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 75bce4536f3467452d148824e1383776bba740ef
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: dc0f0f7175a5b2cfb6be8f2b09b83ad263ae6050
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48056748"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52758859"
 ---
 # <a name="edgesearchenginecustom-resource-type"></a>Tipo de recurso edgeSearchEngineCustom
 
@@ -44,11 +44,6 @@ Veja a seguir uma representação JSON do recurso.
   "edgeSearchEngineOpenSearchXmlUrl": "String"
 }
 ```
-
-
-
-
-
 
 
 

@@ -1,18 +1,18 @@
 ---
-title: tipo de enumeração ratingUnitedKingdomMoviesType
+title: tipo de número ratingUnitedKingdomMoviesType
 description: Rótulos de classificação de filmes no Reino Unido
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 4d61c5623bf579aa613a4e2cab777300485917a9
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: af7a37c85a16bd235e8ddb2d8e79063b8e2559e7
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47978129"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52758803"
 ---
-# <a name="ratingunitedkingdommoviestype-enum-type"></a>tipo de enumeração ratingUnitedKingdomMoviesType
+# <a name="ratingunitedkingdommoviestype-enum-type"></a>tipo de número ratingUnitedKingdomMoviesType
 
 Namespace: microsoft.graph
 
@@ -23,20 +23,15 @@ Rótulos de classificação de filmes no Reino Unido
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|Permitido|,0|Valor padrão, permitir todo o conteúdo de filmes|
-|Bloqueado|1 |Não permitir conteúdo de filmes|
-|geral|2 |A classificação U é adequada para todas as idades|
-|universalChildren|3 |A classificação UC é adequada para crianças de pré-produção, um rótulo de classificação antigo|
-|parentalGuidance|4 |A classificação PG é adequada para o adulto|
+|allAllowed|0|Valor padrão, permitir todo o conteúdo de filmes|
+|allBlocked|1|Não permitir conteúdo de filmes|
+|geral|2|A classificação U é adequada para todas as idades|
+|universalChildren|3|A classificação de UC é adequada para crianças pré-escolares, um rótulo de classificação antigo|
+|parentalGuidance|4 |A classificação PG é adequada para maduros|
 |agesAbove12Video|5 |12, versão de vídeo adequada para 12 anos ou mais|
-|agesAbove12Cinema|6 |12A, cinema versão adequada para 12 anos ou mais|
-|agesAbove15|7 |15, adequado somente por 15 anos e mais|
-|adultos|8 |Adequado somente para adultos|
-
-
-
-
-
+|agesAbove12Cinema|6 |12A, lançamento de cinema adequado para 12 anos ou mais|
+|agesAbove15|7 |15, adequado apenas para 15 anos ou mais|
+|adults|8 |Adequado somente para os adultos|
 
 
 

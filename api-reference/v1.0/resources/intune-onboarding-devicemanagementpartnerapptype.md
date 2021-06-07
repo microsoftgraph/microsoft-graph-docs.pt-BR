@@ -1,36 +1,31 @@
 ---
-title: tipo de enumeração deviceManagementPartnerAppType
-description: Tipo de aplicativo de parceiro.
+title: Tipo de número deviceManagementPartnerAppType
+description: Tipo de aplicativo parceiro.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: d7cbfb29997862323b496809aac8831266eaf02f
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 9425bd753ea5583d9d130fa3d9db6aa1be1e58bf
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48048306"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52756797"
 ---
-# <a name="devicemanagementpartnerapptype-enum-type"></a>tipo de enumeração deviceManagementPartnerAppType
+# <a name="devicemanagementpartnerapptype-enum-type"></a>Tipo de número deviceManagementPartnerAppType
 
 Namespace: microsoft.graph
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Tipo de aplicativo de parceiro.
+Tipo de aplicativo parceiro.
 
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|desconhecido|,0|O tipo de aplicativo parceiro é desconhecido.|
-|singleTenantApp|1 |O aplicativo parceiro é um único locatário no AAD.|
-|multiTenantApp|2 |O aplicativo parceiro é de vários locatários no AAD.|
-
-
-
-
-
+|desconhecido|0|O tipo de aplicativo parceiro é desconhecido.|
+|singleTenantApp|1|Partner App é locatário único no AAD.|
+|multiTenantApp|2|Partner App é multi locatário no AAD.|
 
 
 

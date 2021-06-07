@@ -1,18 +1,18 @@
 ---
-title: tipo de enumeração ratingGermanyMoviesType
+title: tipo de número ratingGermanyMoviesType
 description: Rótulos de classificação de filmes na Alemanha
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: e2a9c6379c4109f366f035b677f1163cfc52228a
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 8b7e44b6bebfe019170f41ecd930c7972c4e55b2
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48041334"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52757756"
 ---
-# <a name="ratinggermanymoviestype-enum-type"></a>tipo de enumeração ratingGermanyMoviesType
+# <a name="ratinggermanymoviestype-enum-type"></a>tipo de número ratingGermanyMoviesType
 
 Namespace: microsoft.graph
 
@@ -23,18 +23,13 @@ Rótulos de classificação de filmes na Alemanha
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|Permitido|,0|Valor padrão, permitir todo o conteúdo de filmes|
-|Bloqueado|1 |Não permitir conteúdo de filmes|
-|geral|2 |AB 0 Jahren, sem restrições de idade|
-|agesAbove6|3 |AB 6 Jahren, anos 6 ou mais|
-|agesAbove12|4 |AB 12 Jahren, 12 anos ou mais|
-|agesAbove16|5 |AB 16 Jahren, 16 anos ou mais|
-|adultos|6 |AB 18 Jahren, somente adultos|
-
-
-
-
-
+|allAllowed|0|Valor padrão, permitir todo o conteúdo de filmes|
+|allBlocked|1|Não permitir conteúdo de filmes|
+|geral|2|Ab 0 Jaren, sem restrições de idade|
+|agesAbove6|3|Ab 6 Jaren, 6 anos ou mais|
+|agesAbove12|4 |Ab 12 Jaren, 12 anos ou mais|
+|agesAbove16|5 |Ab 16 Jaren, 16 anos ou mais|
+|adults|6 |Ab 18 Jaren, somente para adultos|
 
 
 

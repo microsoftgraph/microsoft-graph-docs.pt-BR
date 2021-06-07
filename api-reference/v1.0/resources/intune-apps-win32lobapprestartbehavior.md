@@ -1,18 +1,18 @@
 ---
-title: tipo de enumeração win32LobAppRestartBehavior
+title: Tipo denum win32LobAppRestartBehavior
 description: Indica o tipo de ação de reinicialização.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 4a4f9044e90c67afe3ec50ba2349a94d194641dd
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: bc6ff030c2228ae108e034eea312c57d40b9006f
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48036695"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52758964"
 ---
-# <a name="win32lobapprestartbehavior-enum-type"></a>tipo de enumeração win32LobAppRestartBehavior
+# <a name="win32lobapprestartbehavior-enum-type"></a>Tipo denum win32LobAppRestartBehavior
 
 Namespace: microsoft.graph
 
@@ -23,11 +23,10 @@ Indica o tipo de ação de reinicialização.
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|basedOnReturnCode|,0|O Intune reiniciará o dispositivo após a execução da instalação do aplicativo, se a operação retornar um código de reinicialização.|
-|permitiu|1 |O Intune não realizará nenhuma ação específica em códigos de reinicialização resultantes de instalações de aplicativos. O Intune não tentará suprimir as reinicializações para os aplicativos MSI.|
-|eliminação|2 |O Intune tentará suprimir as reinicializações para os aplicativos MSI.|
-|vigor|3 |O Intune forçará o dispositivo a reiniciar imediatamente após a operação de instalação do aplicativo.|
-
+|basedOnReturnCode|0|O Intune reiniciará o dispositivo após executar a instalação do aplicativo se a operação retornar um código de reinicialização.|
+|allow|1|O Intune não tomará nenhuma ação específica sobre códigos de reinicialização resultantes de instalações do aplicativo. O Intune não tentará suprimir reinicializações para aplicativos MSI.|
+|suppress|2|O Intune tentará suprimir reinicializações para aplicativos MSI.|
+|force|3|O Intune força o dispositivo a reiniciar imediatamente após a operação de instalação do aplicativo.|
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 76feb4bf35859b3115844f95923b5d38ddcca51a
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 745b682aa36ab3948443922e7d173843629099fa
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48032478"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52758950"
 ---
 # <a name="windowsuniversalappx-resource-type"></a>Tipo de recurso windowsUniversalAppX
 
@@ -23,7 +23,7 @@ Contém propriedades e propriedades herdadas para aplicativos de linha de negóc
 
 Herda de [mobileLobApp](../resources/intune-apps-mobilelobapp.md)
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
 |[Listar windowsUniversalAppXs](../api/intune-apps-windowsuniversalappx-list.md)|Coleção [windowsUniversalAppX](../resources/intune-apps-windowsuniversalappx.md)|Lista propriedades e relações dos objetos [windowsUniversalAppX](../resources/intune-apps-windowsuniversalappx.md).|
@@ -115,11 +115,6 @@ Veja a seguir uma representação JSON do recurso.
   "identityVersion": "String"
 }
 ```
-
-
-
-
-
 
 
 

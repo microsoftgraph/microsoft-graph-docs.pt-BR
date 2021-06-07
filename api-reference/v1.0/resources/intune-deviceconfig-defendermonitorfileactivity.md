@@ -1,18 +1,18 @@
 ---
-title: tipo de enumeração defenderMonitorFileActivity
+title: Tipo denum defenderMonitorFileActivity
 description: Valores possíveis para monitorar a atividade do arquivo.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 51873f663167c87644e30c89ae67b1bfae4e9488
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: a50ee70da2a36e8bdd773235ccd5e9b227a0d01f
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47967643"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52758880"
 ---
-# <a name="defendermonitorfileactivity-enum-type"></a>tipo de enumeração defenderMonitorFileActivity
+# <a name="defendermonitorfileactivity-enum-type"></a>Tipo denum defenderMonitorFileActivity
 
 Namespace: microsoft.graph
 
@@ -23,16 +23,11 @@ Valores possíveis para monitorar a atividade do arquivo.
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|UserDefined|,0|Definido pelo usuário, valor padrão, sem intenção.|
-|desabilitar|1 |Desabilitar o monitoramento da atividade do arquivo.|
-|monitorAllFiles|2 |Monitorar todos os arquivos.|
-|monitorIncomingFilesOnly|3 | Monitorar somente os arquivos de entrada.|
-|monitorOutgoingFilesOnly|4 |Monitorar somente os arquivos de saída.|
-
-
-
-
-
+|userDefined|0|User Defined, default value, no intent.|
+|desabilitar|1|Desabilitar a atividade de arquivo de monitoramento.|
+|monitorAllFiles|2|Monitore todos os arquivos.|
+|monitorIncomingFilesOnly|3| Monitore somente arquivos de entrada.|
+|monitorOutgoingFilesOnly|4 |Monitore somente arquivos de saída.|
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d90b78f637895f9340a87f5916d311bab4f51d6d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 4cb43529217ef6c129d06548e37800a501fcef55
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48056853"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52757798"
 ---
 # <a name="deviceconfigurationsettingstate-resource-type"></a>tipo de recurso deviceConfigurationSettingState
 
@@ -32,12 +32,12 @@ Estado da definição de configuração de um determinado dispositivo.
 |userId|Cadeia de caracteres|UserId|
 |userName|Cadeia de caracteres|UserName|
 |userEmail|Cadeia de caracteres|UserEmail|
-|userPrincipalName|String|UserPrincipalName.|
+|userPrincipalName|Cadeia de caracteres|UserPrincipalName.|
 |fontes|Conjunto [settingSource](../resources/intune-deviceconfig-settingsource.md)|Políticas de colaboração|
 |currentValue|Cadeia de caracteres|Valor atual da configuração em um dispositivo|
 
 ## <a name="relationships"></a>Relações
-Nenhum
+Nenhuma
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
@@ -63,17 +63,13 @@ Veja a seguir uma representação JSON do recurso.
     {
       "@odata.type": "microsoft.graph.settingSource",
       "id": "String",
-      "displayName": "String"
+      "displayName": "String",
+      "sourceType": "String"
     }
   ],
   "currentValue": "String"
 }
 ```
-
-
-
-
-
 
 
 

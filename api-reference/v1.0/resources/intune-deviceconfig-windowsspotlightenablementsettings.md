@@ -1,36 +1,31 @@
 ---
-title: tipo de enumeração windowsSpotlightEnablementSettings
-description: Permite que ele seja definido como um mecanismo de pesquisa padrão predefinido para dispositivos controlados por MDM
+title: Tipo de número windowsSpotlightEnablementSettings
+description: Permite que o administrador de IT de definir um mecanismo de pesquisa padrão predefinido para MDM-Controlled dispositivos
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 47158f04eece7b3df710319dd0d4b5af9ab8f8de
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: a415fb7fa8c2246635bffb9c924a56fff8f3923b
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48091436"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52758775"
 ---
-# <a name="windowsspotlightenablementsettings-enum-type"></a>tipo de enumeração windowsSpotlightEnablementSettings
+# <a name="windowsspotlightenablementsettings-enum-type"></a>Tipo de número windowsSpotlightEnablementSettings
 
 Namespace: microsoft.graph
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Permite que ele seja definido como um mecanismo de pesquisa padrão predefinido para dispositivos controlados por MDM
+Permite que o administrador de IT de definir um mecanismo de pesquisa padrão predefinido para MDM-Controlled dispositivos
 
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|notConfigured|,0|O Spotlight na tela de bloqueio não está configurado|
-|desabilitadas|1 |Desabilitar o destaque do Windows na tela de bloqueio|
-|habilitadas|2 |Habilitar o destaque do Windows na tela de bloqueio|
-
-
-
-
-
+|notConfigured|0|O destaque na tela de bloqueio não está configurado|
+|desabilitadas|1|Desabilitar Windows destaque na tela de bloqueio|
+|habilitadas|2|Habilitar Windows destaque na tela de bloqueio|
 
 
 

@@ -1,18 +1,18 @@
 ---
-title: tipo de enumeração savedUIStateGenerationOptions
+title: Tipo de número savedUIStateGenerationOptions
 description: Ainda não documentado
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 52595e0d5d8a11f9dfe5741f0aef2f344e75b12f
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 98d7e10daa23830a382b1cab021d137f3f45fe3f
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48028340"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52756747"
 ---
-# <a name="saveduistategenerationoptions-enum-type"></a>tipo de enumeração savedUIStateGenerationOptions
+# <a name="saveduistategenerationoptions-enum-type"></a>Tipo de número savedUIStateGenerationOptions
 
 Namespace: microsoft.graph
 
@@ -23,13 +23,8 @@ Ainda não documentado
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|Nenhuma|,0|Ainda não documentado|
-|omitSilverlightPolicyReferences|1 |Ainda não documentado|
-
-
-
-
-
+|nenhuma|0|Ainda não documentado|
+|omitSilverlightPolicyReferences|1|Ainda não documentado|
 
 
 

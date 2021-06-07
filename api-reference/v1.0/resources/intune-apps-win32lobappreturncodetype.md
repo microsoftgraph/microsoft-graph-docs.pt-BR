@@ -1,18 +1,18 @@
 ---
-title: tipo de enumeração win32LobAppReturnCodeType
+title: Tipo denum win32LobAppReturnCodeType
 description: Indica o tipo de código de retorno.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 98140c578a1c506aa064ca706c076e8a6d1f0da4
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 092e2c0d3746f155dba002f57ab2b55c10a42088
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48036688"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52757819"
 ---
-# <a name="win32lobappreturncodetype-enum-type"></a>tipo de enumeração win32LobAppReturnCodeType
+# <a name="win32lobappreturncodetype-enum-type"></a>Tipo denum win32LobAppReturnCodeType
 
 Namespace: microsoft.graph
 
@@ -23,12 +23,11 @@ Indica o tipo de código de retorno.
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|falhou|,0|Falhou.|
-|sucesso|1 |Sucesso.|
-|softReboot|2 |Soft-a reinicialização é necessária.|
-|hardReboot|3 |É necessário reinicializar o disco rígido.|
-|Nova|4 |Tente novamente.|
-
+|failed|0|Falha.|
+|sucesso|1|Sucesso.|
+|softReboot|2|A reinicialização suave é necessária.|
+|hardReboot|3|A reinicialização dura é necessária.|
+|repetir|4 |Tente novamente.|
 
 
 

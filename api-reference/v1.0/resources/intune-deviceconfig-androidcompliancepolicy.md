@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 42bb4e3ad395149141ba921bde39c2e4b4bfe806
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: a9be4934e564ccde627e33f31d2f168b576a1e1e
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48041586"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52758915"
 ---
 # <a name="androidcompliancepolicy-resource-type"></a>androidCompliancePolicy resource type
 
@@ -23,7 +23,7 @@ Essa classe contém configurações de conformidade para o Android.
 
 Herda de [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
 |[Listar androidCompliancePolicies](../api/intune-deviceconfig-androidcompliancepolicy-list.md)|Coleção [androidCompliancePolicy](../resources/intune-deviceconfig-androidcompliancepolicy.md)|Lista propriedades e relações dos objetos [androidCompliancePolicy](../resources/intune-deviceconfig-androidcompliancepolicy.md).|
@@ -114,11 +114,6 @@ Veja a seguir uma representação JSON do recurso.
   "securityRequireCompanyPortalAppIntegrity": true
 }
 ```
-
-
-
-
-
 
 
 

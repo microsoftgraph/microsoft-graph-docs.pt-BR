@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 08b2cba09a8b9dadc1d86e1d430b93440de21681
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: c36a306e0b594ff84bffbc3e80fd393d20051371
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48094383"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52759006"
 ---
 # <a name="mobileappcontent-resource-type"></a>Tipo de recurso mobileAppContent
 
@@ -32,7 +32,7 @@ Contém propriedades de conteúdo para uma versão específica do aplicativo. Ca
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|A versão do conteúdo do aplicativo.|
+|id|String|A versão do conteúdo do aplicativo.|
 
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|
@@ -53,11 +53,6 @@ Veja a seguir uma representação JSON do recurso.
   "id": "String (identifier)"
 }
 ```
-
-
-
-
-
 
 
 

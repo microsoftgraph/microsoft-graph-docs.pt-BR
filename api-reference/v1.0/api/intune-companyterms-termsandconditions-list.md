@@ -1,18 +1,18 @@
 ---
-title: Listar termsAndConditions
+title: Listar termsAndConditionses
 description: Listar propriedades e relações dos objetos termsAndConditions.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: db780d4c97e391e4c70c34b5156398421d7fdc71
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 78d00f608e6ca4274e7f5753b4c7ba8e42e914bf
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48733116"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52758411"
 ---
-# <a name="list-termsandconditions"></a>Listar termsAndConditions
+# <a name="list-termsandconditionses"></a>Listar termsAndConditionses
 
 Namespace: microsoft.graph
 
@@ -23,11 +23,11 @@ Listar propriedades e relações dos objetos [termsAndConditions](../resources/i
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
+|Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
+|Delegado (conta corporativa ou de estudante)|DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|Sem suporte.|
+|Aplicativo|DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -82,11 +82,6 @@ Content-Length: 518
   ]
 }
 ```
-
-
-
-
-
 
 
 

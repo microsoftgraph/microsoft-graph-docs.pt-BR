@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 504accc0cd0dbca5f7885f35e00914b21fbffed3
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ec1b815b86e9ce7618dfdd5f66b32c9dd7737bb0
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48045884"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52759389"
 ---
 # <a name="create-termsandconditionsacceptancestatus"></a>Criar termsAndConditionsAcceptanceStatus
 
@@ -23,11 +23,11 @@ Cria um novo objeto [termsAndConditionsAcceptanceStatus](../resources/intune-com
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
+|Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|Sem suporte.|
+|Aplicativo|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -55,6 +55,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar termsAnd
 |userDisplayName|Cadeia de caracteres|Nome de exibição do usuário cuja aceitação a entidade representa.|
 |acceptedVersion|Int32|Número da versão mais recente dos T&C aceitos pelo usuário.|
 |acceptedDateTime|DateTimeOffset|A data e a hora em que os termos foram aceitos pela última vez pelo usuário.|
+|userPrincipalName|String|O userPrincipalName do Usuário que aceitou o termo.|
 
 
 
@@ -68,13 +69,14 @@ Este é um exemplo da solicitação.
 ``` http
 POST https://graph.microsoft.com/v1.0/deviceManagement/termsAndConditions/{termsAndConditionsId}/acceptanceStatuses
 Content-type: application/json
-Content-length: 211
+Content-length: 264
 
 {
   "@odata.type": "#microsoft.graph.termsAndConditionsAcceptanceStatus",
   "userDisplayName": "User Display Name value",
   "acceptedVersion": 15,
-  "acceptedDateTime": "2016-12-31T23:57:43.6165506-08:00"
+  "acceptedDateTime": "2016-12-31T23:57:43.6165506-08:00",
+  "userPrincipalName": "User Principal Name value"
 }
 ```
 
@@ -83,21 +85,17 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 260
+Content-Length: 313
 
 {
   "@odata.type": "#microsoft.graph.termsAndConditionsAcceptanceStatus",
   "id": "a045ce1a-ce1a-a045-1ace-45a01ace45a0",
   "userDisplayName": "User Display Name value",
   "acceptedVersion": 15,
-  "acceptedDateTime": "2016-12-31T23:57:43.6165506-08:00"
+  "acceptedDateTime": "2016-12-31T23:57:43.6165506-08:00",
+  "userPrincipalName": "User Principal Name value"
 }
 ```
-
-
-
-
-
 
 
 

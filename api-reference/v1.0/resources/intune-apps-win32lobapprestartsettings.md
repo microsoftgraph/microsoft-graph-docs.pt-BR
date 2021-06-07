@@ -1,31 +1,31 @@
 ---
-title: tipo de recurso win32LobAppRestartSettings
-description: Contém propriedades que descrevem a coordenação de reinicialização após uma instalação de aplicativo.
+title: Tipo de recurso win32LobAppRestartSettings
+description: Contém propriedades que descrevem a coordenação de reinicialização após uma instalação do aplicativo.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d60cbb11e5b08fc0badd651b846f3d108e12af5b
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 1db011486f1ec26afcc7e045afd2e1be1b553ec7
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48036692"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52757827"
 ---
-# <a name="win32lobapprestartsettings-resource-type"></a>tipo de recurso win32LobAppRestartSettings
+# <a name="win32lobapprestartsettings-resource-type"></a>Tipo de recurso win32LobAppRestartSettings
 
 Namespace: microsoft.graph
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Contém propriedades que descrevem a coordenação de reinicialização após uma instalação de aplicativo.
+Contém propriedades que descrevem a coordenação de reinicialização após uma instalação do aplicativo.
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|gracePeriodInMinutes|Int32|O número de minutos de espera antes de reiniciar o dispositivo após uma instalação de aplicativo.|
-|countdownDisplayBeforeRestartInMinutes|Int32|O número de minutos antes do tempo de reinicialização para exibir a caixa de diálogo de contagem regressiva de reinicializações pendentes.|
-|restartNotificationSnoozeDurationInMinutes|Int32|O número de minutos para adiar a caixa de diálogo de notificação de reinicialização quando o botão adiar estiver selecionado.|
+|gracePeriodInMinutes|Int32|O número de minutos para aguardar antes de reiniciar o dispositivo após a instalação de um aplicativo.|
+|countdownDisplayBeforeRestartInMinutes|Int32|O número de minutos antes da hora de reinicialização para exibir a caixa de diálogo de contagem regressiva para reinicializações pendentes.|
+|restartNotificationSnoozeDurationInMinutes|Int32|O número de minutos para esnocar a caixa de diálogo de notificação de reinicialização quando o botão de esnooze estiver selecionado.|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -45,7 +45,6 @@ Veja a seguir uma representação JSON do recurso.
   "restartNotificationSnoozeDurationInMinutes": 1024
 }
 ```
-
 
 
 
