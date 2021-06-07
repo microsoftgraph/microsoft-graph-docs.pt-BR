@@ -1,24 +1,24 @@
 ---
-title: tipo de recurso win32LobAppAssignmentSettings
-description: Contém propriedades usadas para atribuir um aplicativo móvel de LOB do Win32 a um grupo.
+title: Tipo de recurso win32LobAppAssignmentSettings
+description: Contém propriedades usadas para atribuir um aplicativo móvel LOB win32 a um grupo.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 7e84a740a45cb57417c81b5c99a892642097413b
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: d76e189d684999e3922b625def26d4d0cfcb6a3e
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48020220"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52752207"
 ---
-# <a name="win32lobappassignmentsettings-resource-type"></a>tipo de recurso win32LobAppAssignmentSettings
+# <a name="win32lobappassignmentsettings-resource-type"></a>Tipo de recurso win32LobAppAssignmentSettings
 
 Namespace: microsoft.graph
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Contém propriedades usadas para atribuir um aplicativo móvel de LOB do Win32 a um grupo.
+Contém propriedades usadas para atribuir um aplicativo móvel LOB win32 a um grupo.
 
 
 Herda de [mobileAppAssignmentSettings](../resources/intune-apps-mobileappassignmentsettings.md)
@@ -26,12 +26,13 @@ Herda de [mobileAppAssignmentSettings](../resources/intune-apps-mobileappassignm
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|por|[win32LobAppNotification](../resources/intune-apps-win32lobappnotification.md)|O status da notificação para esta atribuição de aplicativo. Os valores possíveis são: `showAll`, `showReboot`, `hideAll`.|
-|restartSettings|[win32LobAppRestartSettings](../resources/intune-apps-win32lobapprestartsettings.md)|As configurações de reinicialização a serem aplicadas para esta atribuição de aplicativo.|
-|installTimeSettings|[mobileAppInstallTimeSettings](../resources/intune-apps-mobileappinstalltimesettings.md)|As configurações de tempo de instalação a serem aplicadas a esta atribuição de aplicativo.|
+|notificações|[win32LobAppNotification](../resources/intune-apps-win32lobappnotification.md)|O status de notificação para essa atribuição de aplicativo. Os valores possíveis são: `showAll`, `showReboot`, `hideAll`.|
+|restartSettings|[win32LobAppRestartSettings](../resources/intune-apps-win32lobapprestartsettings.md)|As configurações de reinicialização a ser aplicadas a essa atribuição de aplicativo.|
+|installTimeSettings|[mobileAppInstallTimeSettings](../resources/intune-apps-mobileappinstalltimesettings.md)|As configurações de tempo de instalação a ser aplicadas a essa atribuição de aplicativo.|
+|deliveryOptimizationPriority|[win32LobAppDeliveryOptimizationPriority](../resources/intune-apps-win32lobappdeliveryoptimizationpriority.md)|A prioridade de otimização de entrega para essa atribuição de aplicativo. Essa configuração não é suportada em ambientes de Nuvem Nacional. Os valores possíveis são: `notConfigured`, `foreground`.|
 
 ## <a name="relationships"></a>Relações
-Nenhum
+Nenhuma
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
@@ -55,10 +56,10 @@ Veja a seguir uma representação JSON do recurso.
     "useLocalTime": true,
     "startDateTime": "String (timestamp)",
     "deadlineDateTime": "String (timestamp)"
-  }
+  },
+  "deliveryOptimizationPriority": "String"
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: fdbd9dc76247e72f44d1d8c149bb948e560d8315
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 016900f4013a1dbdfa5eaba97ad7658fd44f4712
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48048586"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52752522"
 ---
 # <a name="create-mobilethreatdefenseconnector"></a>Criar mobileThreatDefenseConnector
 
@@ -23,11 +23,11 @@ Cria um novo objeto [mobileThreatDefenseConnector](../resources/intune-onboardin
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
+|Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|Sem suporte.|
+|Aplicativo|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -51,9 +51,9 @@ A tabela a seguir mostra as propriedades obrigatórias ao criar mobileThreatDefe
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Ainda não documentado|
+|id|Cadeia de caracteres|Ainda não documentado|
 |lastHeartbeatDateTime|DateTimeOffset|Data e hora da última Pulsação recebida de um Parceiro de Sincronização de Dados|
-|partnerState|[mobileThreatPartnerTenantState](../resources/intune-onboarding-mobilethreatpartnertenantstate.md)|Estado do parceiro de sincronização de dados para esta conta. Os valores possíveis são: `unavailable`, `available`, `enabled`, `unresponsive`.|
+|partnerState|[mobileThreatPartnerTenantState](../resources/intune-onboarding-mobilethreatpartnertenantstate.md)|Sincronização de Dados Estado do parceiro para essa conta. Os valores possíveis são: `unavailable`, `available`, `enabled`, `unresponsive`.|
 |androidEnabled|Boolean|No Android, definir se os dados do parceiro de sincronização de dados devem ser usados durante avaliações de conformidade|
 |iosEnabled|Boolean|No iOS, obter ou definir se os dados do parceiro de sincronização de dados devem ser usados durante avaliações de conformidade|
 |androidDeviceBlockedOnMissingPartnerData|Boolean|No Android, definir se o Intune deve receber os dados do parceiro de sincronização de dados antes de marcar um dispositivo como compatível|
@@ -108,11 +108,6 @@ Content-Length: 463
   "partnerUnresponsivenessThresholdInDays": 6
 }
 ```
-
-
-
-
-
 
 
 

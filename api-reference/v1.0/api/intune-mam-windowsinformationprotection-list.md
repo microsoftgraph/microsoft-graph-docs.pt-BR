@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: fc34f1ed97da64e2ba651de04e087db7c1198e23
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 4dd7fecbf40eb277fe0960f5a3e678f94772cb34
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48079477"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52752557"
 ---
 # <a name="list-windowsinformationprotections"></a>Listar windowsInformationProtections
 
@@ -23,11 +23,11 @@ Listar propriedades e relações dos objetos [windowsInformationProtection](../r
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
+|Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|Sem suporte.|
+|Delegado (conta corporativa ou de estudante)|DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Aplicativo|DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -65,7 +65,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 4601
+Content-Length: 4491
 
 {
   "value": [
@@ -148,9 +148,7 @@ Content-Length: 4601
           "displayName": "Display Name value",
           "ranges": [
             {
-              "@odata.type": "microsoft.graph.iPv6Range",
-              "lowerAddress": "Lower Address value",
-              "upperAddress": "Upper Address value"
+              "@odata.type": "microsoft.graph.ipRange"
             }
           ]
         }
@@ -199,11 +197,6 @@ Content-Length: 4601
   ]
 }
 ```
-
-
-
-
-
 
 
 

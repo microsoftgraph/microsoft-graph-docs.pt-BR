@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 58933395002bb4f63554e2a7225a89e64cfd8d02
-ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
+ms.openlocfilehash: 538ebc7586895a7c51b905a4b88183b48562c35f
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50292501"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52752340"
 ---
 # <a name="iosmanagedappregistration-resource-type"></a>iosManagedAppRegistration resource type
 
@@ -24,7 +24,7 @@ O recurso ManagedAppRegistration representa os detalhes de um aplicativo, com ca
 
 Herda de [managedAppRegistration](../resources/intune-mam-managedappregistration.md)
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
 |[Listar iosManagedAppRegistrations](../api/intune-mam-iosmanagedappregistration-list.md)|Coleção [iosManagedAppRegistration](../resources/intune-mam-iosmanagedappregistration.md)|Lista propriedades e relações dos objetos [iosManagedAppRegistration](../resources/intune-mam-iosmanagedappregistration.md).|
@@ -44,7 +44,7 @@ Herda de [managedAppRegistration](../resources/intune-mam-managedappregistration
 |flaggedReasons|[Coleção managedAppFlaggedReason](../resources/intune-mam-managedappflaggedreason.md)|Zero ou mais motivos para a sinalização de um registro de aplicativo. E.g. Aplicativo em execução em um dispositivo root. Herdado de [managedAppRegistration](../resources/intune-mam-managedappregistration.md)|
 |userId|Cadeia de caracteres|A ID de usuário à qual este registro de aplicativo pertence. Herdada de [managedAppRegistration](../resources/intune-mam-managedappregistration.md)|
 |appIdentifier|[mobileAppIdentifier](../resources/intune-mam-mobileappidentifier.md)|O Identificador de pacote do aplicativo. Herdado de [managedAppRegistration](../resources/intune-mam-managedappregistration.md)|
-|id|String|Chave da entidade. Herdada de [managedAppRegistration](../resources/intune-mam-managedappregistration.md)|
+|id|Cadeia de caracteres|Chave da entidade. Herdada de [managedAppRegistration](../resources/intune-mam-managedappregistration.md)|
 |version|String|Versão da entidade. Herdado de [managedAppRegistration](../resources/intune-mam-managedappregistration.md)|
 
 ## <a name="relationships"></a>Relações
@@ -78,24 +78,13 @@ Veja a seguir uma representação JSON do recurso.
   ],
   "userId": "String",
   "appIdentifier": {
-    "@odata.type": "microsoft.graph.mobileAppIdentifier",
+    "@odata.type": "microsoft.graph.iosMobileAppIdentifier",
     "bundleId": "String"
   },
   "id": "String (identifier)",
   "version": "String"
 }
 ```
-
-
-<!-- {
-  "type": "#page.annotation",
-  "suppressions": [
-  ],
-}
--->
-
-
-
 
 
 

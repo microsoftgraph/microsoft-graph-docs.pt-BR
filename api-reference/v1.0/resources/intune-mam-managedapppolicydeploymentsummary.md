@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: b9514dd5ed5b79b9255067b7a19dbd6f55ee16a7
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 2198c84468585cf4dcc9bed365df4b8016fa5ef5
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48041299"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52752333"
 ---
 # <a name="managedapppolicydeploymentsummary-resource-type"></a>Tipo de recurso managedAppPolicyDeploymentSummary
 
@@ -29,15 +29,15 @@ O ManagedAppEntity é o tipo de entidade de base para todos os outros tipos de e
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|displayName|String|Ainda não documentado|
+|displayName|Cadeia de caracteres|Ainda não documentado|
 |configurationDeployedUserCount|Int32|Ainda não documentado|
 |lastRefreshTime|DateTimeOffset|Ainda não documentado|
 |configurationDeploymentSummaryPerApp|Conjunto [managedAppPolicyDeploymentSummaryPerApp](../resources/intune-mam-managedapppolicydeploymentsummaryperapp.md)|Ainda não documentado|
-|id|String|Chave da entidade.|
+|id|Cadeia de caracteres|Chave da entidade.|
 |versão|String|Versão da entidade.|
 
 ## <a name="relationships"></a>Relações
-Nenhum
+Nenhuma
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
@@ -67,11 +67,6 @@ Veja a seguir uma representação JSON do recurso.
   "version": "String"
 }
 ```
-
-
-
-
-
 
 
 

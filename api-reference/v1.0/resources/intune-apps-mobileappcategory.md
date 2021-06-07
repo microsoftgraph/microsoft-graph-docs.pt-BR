@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 2a894f978b412c2916b9d036a1d4f708e231066b
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 6fb546404e4e8b576a40b633f07a1a33295f0036
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48094390"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52752403"
 ---
 # <a name="mobileappcategory-resource-type"></a>Tipo de recurso mobileAppCategory
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 Contém as propriedades para uma única categoria de aplicativo do Intune.
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
 |[Listar mobileAppCategories](../api/intune-apps-mobileappcategory-list.md)|Conjunto [mobileAppCategory](../resources/intune-apps-mobileappcategory.md)|Listar propriedades e as relações de objetos de [mobileAppCategory](../resources/intune-apps-mobileappcategory.md).|
@@ -37,7 +37,7 @@ Contém as propriedades para uma única categoria de aplicativo do Intune.
 |lastModifiedDateTime|DateTimeOffset|A data e hora que a mobileAppCategory foi modificada pela última vez.|
 
 ## <a name="relationships"></a>Relações
-Nenhum
+Nenhuma
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
@@ -55,11 +55,6 @@ Veja a seguir uma representação JSON do recurso.
   "lastModifiedDateTime": "String (timestamp)"
 }
 ```
-
-
-
-
-
 
 
 

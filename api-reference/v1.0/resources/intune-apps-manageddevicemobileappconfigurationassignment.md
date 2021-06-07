@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 2ebbd5189134370dc2763066ddefed28aeed1b29
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 910648d18c31382e7daaf282260245734e7d7a0a
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48054725"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52752256"
 ---
 # <a name="manageddevicemobileappconfigurationassignment-resource-type"></a>Tipo de recurso managedDeviceMobileAppConfigurationAssignment
 
@@ -32,11 +32,11 @@ Contém as propriedades usadas para atribuir uma configuração de aplicativo MD
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Identificador exclusivo da entidade.|
+|id|Cadeia de caracteres|Identificador exclusivo da entidade.|
 |destino|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Destino de atribuição ao qual a política de T&C foi designada.|
 
 ## <a name="relationships"></a>Relações
-Nenhum
+Nenhuma
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
@@ -51,15 +51,10 @@ Veja a seguir uma representação JSON do recurso.
   "@odata.type": "#microsoft.graph.managedDeviceMobileAppConfigurationAssignment",
   "id": "String (identifier)",
   "target": {
-    "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
+    "@odata.type": "microsoft.graph.allLicensedUsersAssignmentTarget"
   }
 }
 ```
-
-
-
-
-
 
 
 

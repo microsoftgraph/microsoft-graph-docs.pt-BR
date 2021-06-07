@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c7a99fed5c37b7777db83323820725c513475a37
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 83d642101b73ddb82765e8c2ec51d7205a48f3ab
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47968035"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52752571"
 ---
 # <a name="assign-action"></a>atribuir ação
 
@@ -23,11 +23,11 @@ Ainda não documentado
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
+|Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|Sem suporte.|
+|Aplicativo|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -68,7 +68,7 @@ Este é um exemplo da solicitação.
 POST https://graph.microsoft.com/v1.0/deviceAppManagement/managedAppPolicies/{managedAppPolicyId}/assign
 
 Content-type: application/json
-Content-length: 282
+Content-length: 338
 
 {
   "assignments": [
@@ -76,7 +76,8 @@ Content-length: 282
       "@odata.type": "#microsoft.graph.targetedManagedAppPolicyAssignment",
       "id": "8b68c4a6-c4a6-8b68-a6c4-688ba6c4688b",
       "target": {
-        "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
+        "@odata.type": "microsoft.graph.configurationManagerCollectionAssignmentTarget",
+        "collectionId": "Collection Id value"
       }
     }
   ]
@@ -88,11 +89,6 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
-
-
-
-
-
 
 
 

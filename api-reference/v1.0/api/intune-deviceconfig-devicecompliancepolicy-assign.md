@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 1c20abd628b3f919924fe2d75a8df485157ab2ed
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 13a3abf5954dd1acd25fb0a05b516563cbc375d6
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48083502"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52752718"
 ---
 # <a name="assign-action"></a>atribuir ação
 
@@ -23,11 +23,11 @@ Ainda não documentado
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
+|Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|Sem suporte.|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -66,7 +66,7 @@ Este é um exemplo da solicitação.
 POST https://graph.microsoft.com/v1.0/deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/assign
 
 Content-type: application/json
-Content-length: 280
+Content-length: 336
 
 {
   "assignments": [
@@ -74,7 +74,8 @@ Content-length: 280
       "@odata.type": "#microsoft.graph.deviceCompliancePolicyAssignment",
       "id": "92dc3fef-3fef-92dc-ef3f-dc92ef3fdc92",
       "target": {
-        "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
+        "@odata.type": "microsoft.graph.configurationManagerCollectionAssignmentTarget",
+        "collectionId": "Collection Id value"
       }
     }
   ]
@@ -86,7 +87,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 274
+Content-Length: 330
 
 {
   "value": [
@@ -94,17 +95,13 @@ Content-Length: 274
       "@odata.type": "#microsoft.graph.deviceCompliancePolicyAssignment",
       "id": "92dc3fef-3fef-92dc-ef3f-dc92ef3fdc92",
       "target": {
-        "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
+        "@odata.type": "microsoft.graph.configurationManagerCollectionAssignmentTarget",
+        "collectionId": "Collection Id value"
       }
     }
   ]
 }
 ```
-
-
-
-
-
 
 
 

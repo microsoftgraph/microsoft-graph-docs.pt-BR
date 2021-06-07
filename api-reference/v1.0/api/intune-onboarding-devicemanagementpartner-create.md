@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6c9087653c68f52cf0926acb205acb6afc6b83d8
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: d07b78207ef28632440588bf8e5349a0c9f36f8a
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48075088"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52752543"
 ---
 # <a name="create-devicemanagementpartner"></a>Criar deviceManagementPartner
 
@@ -23,11 +23,11 @@ Criar um novo objeto [deviceManagementPartner](../resources/intune-onboarding-de
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
+|Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|Sem suporte.|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Aplicativo|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -54,7 +54,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar deviceMa
 |id|Cadeia de caracteres|ID da entidade|
 |lastHeartbeatDateTime|DateTimeOffset|Carimbo de data/hora da última pulsação após a opção de administrador habilitado conectar-se ao parceiro de gerenciamento de dispositivo|
 |partnerState|[deviceManagementPartnerTenantState](../resources/intune-onboarding-devicemanagementpartnertenantstate.md)|Estado do parceiro desse locatário. Os possíveis valores são: `unknown`, `unavailable`, `enabled`, `terminated`, `rejected`, `unresponsive`.|
-|partnerAppType|[deviceManagementPartnerAppType](../resources/intune-onboarding-devicemanagementpartnerapptype.md)|Tipo de aplicativo de parceiro. Os valores possíveis são: `unknown`, `singleTenantApp`, `multiTenantApp`.|
+|partnerAppType|[deviceManagementPartnerAppType](../resources/intune-onboarding-devicemanagementpartnerapptype.md)|Tipo de aplicativo parceiro. Os valores possíveis são: `unknown`, `singleTenantApp`, `multiTenantApp`.|
 |singleTenantAppId|Cadeia de caracteres|Id do aplicativo do único locatário do parceiro|
 |displayName|Cadeia de caracteres|Nome de exibição de parceiro|
 |isConfigured|Booliano|Se o parceiro de gerenciamento de dispositivo está configurado ou não|
@@ -108,11 +108,6 @@ Content-Length: 551
   "whenPartnerDevicesWillBeMarkedAsNonCompliantDateTime": "2016-12-31T23:58:42.2131231-08:00"
 }
 ```
-
-
-
-
-
 
 
 

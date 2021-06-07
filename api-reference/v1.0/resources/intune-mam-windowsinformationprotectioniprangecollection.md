@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: b243f8923ac44b516a93608fd5c7d82c9cb1296f
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 722e96e69027cccb666bc789fc7516b914b975bb
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48074892"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52752305"
 ---
 # <a name="windowsinformationprotectioniprangecollection-resource-type"></a>Tipo de recurso windowsInformationProtectionIPRangeCollection
 
@@ -24,10 +24,10 @@ Coleção de intervalos de IP da Proteção de Informações do Windows
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |displayName|Cadeia de caracteres|Nome de exibição|
-|ranges|Coleção [ipRange](../resources/intune-mam-iprange.md)|Conjunto de intervalos de endereços de protocolo IP|
+|ranges|Coleção [ipRange](../resources/intune-mam-iprange.md)|Coleção de intervalos de IP|
 
 ## <a name="relationships"></a>Relações
-Nenhum
+Nenhuma
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
@@ -42,18 +42,11 @@ Veja a seguir uma representação JSON do recurso.
   "displayName": "String",
   "ranges": [
     {
-      "@odata.type": "microsoft.graph.ipRange",
-      "lowerAddress": "String",
-      "upperAddress": "String"
+      "@odata.type": "microsoft.graph.ipRange"
     }
   ]
 }
 ```
-
-
-
-
-
 
 
 

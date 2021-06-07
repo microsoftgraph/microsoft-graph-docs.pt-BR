@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso enrollmentConfigurationAssignment
-description: Ainda não documentado
+description: Atribuição de Configuração de Registro
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 2a00a3dc5c7324b78431f5ea94f9176d78a2d406
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 8a972a1004a749c2103663d7aeb0335dc0c42433
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48066387"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52752445"
 ---
 # <a name="enrollmentconfigurationassignment-resource-type"></a>Tipo de recurso enrollmentConfigurationAssignment
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Ainda não documentado
+Atribuição de Configuração de Registro
 
 ## <a name="methods"></a>Methods
 |Método|Tipo de retorno|Descrição|
@@ -32,11 +32,11 @@ Ainda não documentado
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Ainda não documentado|
-|destino|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Ainda não documentado|
+|id|Cadeia de caracteres|Chave da atribuição de configuração de registro|
+|destino|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Representa uma atribuição a dispositivos gerenciados no locatário|
 
 ## <a name="relationships"></a>Relações
-Nenhum
+Nenhuma
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
@@ -51,15 +51,11 @@ Veja a seguir uma representação JSON do recurso.
   "@odata.type": "#microsoft.graph.enrollmentConfigurationAssignment",
   "id": "String (identifier)",
   "target": {
-    "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
+    "@odata.type": "microsoft.graph.configurationManagerCollectionAssignmentTarget",
+    "collectionId": "String"
   }
 }
 ```
-
-
-
-
-
 
 
 

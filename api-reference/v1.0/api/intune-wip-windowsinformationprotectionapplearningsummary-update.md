@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c1579eeeabce884bc27dff73607204d18aa65310
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ffbdaaf7b56ce93c7380660dc425147057f02aa4
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48028648"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52752466"
 ---
 # <a name="update-windowsinformationprotectionapplearningsummary"></a>Atualizar windowsInformationProtectionAppLearningSummary
 
@@ -23,11 +23,11 @@ Atualizar as propriedades de um objeto [windowsInformationProtectionAppLearningS
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
+|Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|Sem suporte.|
+|Aplicativo|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -51,9 +51,9 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [windows
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Identificador exclusivo do WindowsInformationProtectionAppLearningSummary.|
+|id|Cadeia de caracteres|Identificador exclusivo do WindowsInformationProtectionAppLearningSummary.|
 |applicationName|Cadeia de caracteres|Nome do Aplicativo|
-|applicationType|[Tipo](../resources/intune-wip-applicationtype.md)|Tipo de aplicativo. Os valores possíveis são: `universal` e `desktop`.|
+|applicationType|[applicationType](../resources/intune-wip-applicationtype.md)|Tipo de aplicativo. Os valores possíveis são: `universal` e `desktop`.|
 |deviceCount|Int32|Contagem de dispositivos|
 
 
@@ -93,11 +93,6 @@ Content-Length: 240
   "deviceCount": 11
 }
 ```
-
-
-
-
-
 
 
 

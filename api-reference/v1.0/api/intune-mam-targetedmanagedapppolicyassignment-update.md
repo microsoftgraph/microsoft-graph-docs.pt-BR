@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 76572a994b4b7dbb60b44e496caa7fd17a4e0d7c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 824d406f33003736c1c0304b6a5af3b106d4ccd6
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48055019"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52752585"
 ---
 # <a name="update-targetedmanagedapppolicyassignment"></a>Atualizar targetedManagedAppPolicyAssignment
 
@@ -23,11 +23,11 @@ Atualizar as propriedades de um objeto [targetedManagedAppPolicyAssignment](../r
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
+|Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|Sem suporte.|
+|Aplicativo|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -55,8 +55,8 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [targete
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Id|
-|destino|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Identificador de implantação de um grupo ou aplicativo|
+|id|Cadeia de caracteres|Id|
+|destino|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Identificador de implantação para um grupo ou aplicativo|
 
 
 
@@ -70,12 +70,13 @@ Este é um exemplo da solicitação.
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceAppManagement/iosManagedAppProtections/{iosManagedAppProtectionId}/assignments/{targetedManagedAppPolicyAssignmentId}
 Content-type: application/json
-Content-length: 174
+Content-length: 226
 
 {
   "@odata.type": "#microsoft.graph.targetedManagedAppPolicyAssignment",
   "target": {
-    "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
+    "@odata.type": "microsoft.graph.configurationManagerCollectionAssignmentTarget",
+    "collectionId": "Collection Id value"
   }
 }
 ```
@@ -85,21 +86,17 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 223
+Content-Length: 275
 
 {
   "@odata.type": "#microsoft.graph.targetedManagedAppPolicyAssignment",
   "id": "8b68c4a6-c4a6-8b68-a6c4-688ba6c4688b",
   "target": {
-    "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
+    "@odata.type": "microsoft.graph.configurationManagerCollectionAssignmentTarget",
+    "collectionId": "Collection Id value"
   }
 }
 ```
-
-
-
-
-
 
 
 

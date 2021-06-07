@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 608353667b4e9d8a16b699d3390cbb7e04eaf9a0
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 342f3a300a50eb4a1b90c6b488ac864a827cbfb9
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48054669"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52752221"
 ---
 # <a name="manageddevicemobileappconfigurationusersummary-resource-type"></a>Tipo de recurso managedDeviceMobileAppConfigurationUserSummary
 
@@ -29,7 +29,7 @@ Contém propriedades, propriedades herdadas e ações para um resumo de status d
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave da entidade.|
+|id|Cadeia de caracteres|Chave da entidade.|
 |pendingCount|Int32|Número de usuários pendentes|
 |notApplicableCount|Int32|Número de usuários não aplicáveis|
 |successCount|Int32|Número de usuários bem-sucedidos|
@@ -39,7 +39,7 @@ Contém propriedades, propriedades herdadas e ações para um resumo de status d
 |configurationVersion|Int32|Versão da política para essa visão geral|
 
 ## <a name="relationships"></a>Relações
-Nenhum
+Nenhuma
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
@@ -62,11 +62,6 @@ Veja a seguir uma representação JSON do recurso.
   "configurationVersion": 1024
 }
 ```
-
-
-
-
-
 
 
 

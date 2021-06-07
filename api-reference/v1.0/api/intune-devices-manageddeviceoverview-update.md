@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 8d5b45157f71b43c36a1077fab69aaa51c0d3e6e
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 69ad6672c5a3bc8ac0bb605c95c207665523c5b4
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48020927"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52752620"
 ---
 # <a name="update-manageddeviceoverview"></a>Atualizar managedDeviceOverview
 
@@ -23,11 +23,11 @@ Atualizar as propriedades de um objeto [managedDeviceOverview](../resources/intu
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
+|Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|Sem suporte.|
+|Aplicativo|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -51,7 +51,7 @@ A tabela a seguir mostra as propriedades necessárias ao criar [managedDeviceOve
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|O identificador exclusivo do resumo|
+|id|Cadeia de caracteres|O identificador exclusivo do resumo|
 |enrolledDeviceCount|Int32|Contagem total de dispositivos registrados. Não inclui dispositivos PC gerenciados pelo Intune PC Agent|
 |mdmEnrolledCount|Int32|O número de dispositivos registrados no MDM|
 |dualEnrolledDeviceCount|Int32|O número de dispositivos registrados no MDM e no EAS|
@@ -129,11 +129,6 @@ Content-Length: 734
   }
 }
 ```
-
-
-
-
-
 
 
 

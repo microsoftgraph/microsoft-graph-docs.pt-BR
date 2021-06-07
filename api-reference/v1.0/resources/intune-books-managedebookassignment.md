@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3a201472e394a08cf351e7eedc58489f305dda3a
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 545f1d40b852208b06089c520cc96f8da28c5e0a
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48088640"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52752382"
 ---
 # <a name="managedebookassignment-resource-type"></a>Tipo de recurso managedEBookAssignment
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 Contém propriedades usadas para atribuir um livro eletrônico a um grupo.
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
 |[Listar managedEBookAssignments](../api/intune-books-managedebookassignment-list.md)|Conjunto [managedEBookAssignment](../resources/intune-books-managedebookassignment.md)|Listar propriedades e relações de objetos de [managedEBookAssignment](../resources/intune-books-managedebookassignment.md).|
@@ -37,7 +37,7 @@ Contém propriedades usadas para atribuir um livro eletrônico a um grupo.
 |installIntent|[installIntent](../resources/intune-shared-installintent.md)|A tentativa de instalação do livro eletrônico. Os valores possíveis são: `available`, `required`, `uninstall`, `availableWithoutEnrollment`.|
 
 ## <a name="relationships"></a>Relações
-Nenhum
+Nenhuma
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
@@ -52,16 +52,11 @@ Veja a seguir uma representação JSON do recurso.
   "@odata.type": "#microsoft.graph.managedEBookAssignment",
   "id": "String (identifier)",
   "target": {
-    "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
+    "@odata.type": "microsoft.graph.allLicensedUsersAssignmentTarget"
   },
   "installIntent": "String"
 }
 ```
-
-
-
-
-
 
 
 

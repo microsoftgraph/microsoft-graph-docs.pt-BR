@@ -1,38 +1,33 @@
 ---
-title: tipo de enumeração defenderPromptForSampleSubmission
-description: Valores possíveis para avisar o usuário para envio de amostras.
+title: Tipo de número defenderPromptForSampleSubmission
+description: Valores possíveis para solicitar ao usuário o envio de amostras.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: c71187dfbb15b2dc8d1f1826575d961ba61c8065
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: c2e038ab28632c790e5ffaa4f6e1ccb3b4415a5f
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47967629"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52752368"
 ---
-# <a name="defenderpromptforsamplesubmission-enum-type"></a>tipo de enumeração defenderPromptForSampleSubmission
+# <a name="defenderpromptforsamplesubmission-enum-type"></a>Tipo de número defenderPromptForSampleSubmission
 
 Namespace: microsoft.graph
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Valores possíveis para avisar o usuário para envio de amostras.
+Valores possíveis para solicitar ao usuário o envio de amostras.
 
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|UserDefined|,0|Definido pelo usuário, valor padrão, sem intenção.|
-|alwaysPrompt|1 |Sempre avisar.|
-|promptBeforeSendingPersonalData|2 |Avisar antes de enviar dados pessoais.|
-|neverSendData|3 |Nunca enviar dados.|
-|sendAllDataWithoutPrompting|4 |Enviar todos os dados sem avisar.|
-
-
-
-
-
+|userDefined|0|User Defined, default value, no intent.|
+|alwaysPrompt|1|Sempre prompt.|
+|promptBeforeSendingPersonalData|2|Envie amostras seguras automaticamente.|
+|neverSendData|3|Nunca envie dados.|
+|sendAllDataWithoutPrompting|4 |Envie todos os dados sem solicitar.|
 
 
 

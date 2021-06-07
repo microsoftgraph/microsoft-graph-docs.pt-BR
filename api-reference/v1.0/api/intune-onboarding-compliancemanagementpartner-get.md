@@ -1,16 +1,16 @@
 ---
 title: Obter complianceManagementPartner
-description: Leia as propriedades e as relações do objeto complianceManagementPartner.
+description: Ler propriedades e relações do objeto complianceManagementPartner.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c0a65d8917cea8aa29848666b17e677b297c2b9c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 1bab808f9443440c673a340db877bff77b28f34c
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48009454"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52752550"
 ---
 # <a name="get-compliancemanagementpartner"></a>Obter complianceManagementPartner
 
@@ -18,16 +18,16 @@ Namespace: microsoft.graph
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Leia as propriedades e as relações do objeto [complianceManagementPartner](../resources/intune-onboarding-compliancemanagementpartner.md) .
+Ler propriedades e relações do [objeto complianceManagementPartner.](../resources/intune-onboarding-compliancemanagementpartner.md)
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
+|Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
+|Delegado (conta corporativa ou de estudante)|DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
+|Aplicativo|DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -51,7 +51,7 @@ Este método dá suporte a [Parâmetros de consulta OData](/graph/query-paramete
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se bem-sucedido, este método retorna um `200 OK` código de resposta e um objeto [complianceManagementPartner](../resources/intune-onboarding-compliancemanagementpartner.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e um `200 OK` [objeto complianceManagementPartner](../resources/intune-onboarding-compliancemanagementpartner.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -66,7 +66,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1114
+Content-Length: 1324
 
 {
   "value": {
@@ -82,7 +82,8 @@ Content-Length: 1114
       {
         "@odata.type": "microsoft.graph.complianceManagementPartnerAssignment",
         "target": {
-          "@odata.type": "microsoft.graph.allDevicesAssignmentTarget"
+          "@odata.type": "microsoft.graph.configurationManagerCollectionAssignmentTarget",
+          "collectionId": "Collection Id value"
         }
       }
     ],
@@ -90,7 +91,8 @@ Content-Length: 1114
       {
         "@odata.type": "microsoft.graph.complianceManagementPartnerAssignment",
         "target": {
-          "@odata.type": "microsoft.graph.allDevicesAssignmentTarget"
+          "@odata.type": "microsoft.graph.configurationManagerCollectionAssignmentTarget",
+          "collectionId": "Collection Id value"
         }
       }
     ],
@@ -98,15 +100,14 @@ Content-Length: 1114
       {
         "@odata.type": "microsoft.graph.complianceManagementPartnerAssignment",
         "target": {
-          "@odata.type": "microsoft.graph.allDevicesAssignmentTarget"
+          "@odata.type": "microsoft.graph.configurationManagerCollectionAssignmentTarget",
+          "collectionId": "Collection Id value"
         }
       }
     ]
   }
 }
 ```
-
-
 
 
 

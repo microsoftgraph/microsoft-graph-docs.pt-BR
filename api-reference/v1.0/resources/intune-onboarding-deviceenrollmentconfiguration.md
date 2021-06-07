@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso deviceEnrollmentConfiguration
-description: Ainda não documentado
+description: A Classe Base de Configuração de Registro de Dispositivo
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 73f2826af52e88f27e629ef4cb25013d17d3edb5
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 03787eed949221af2b4cbee5ca08d107aa60c229
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48072960"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52752753"
 ---
 # <a name="deviceenrollmentconfiguration-resource-type"></a>Tipo de recurso deviceEnrollmentConfiguration
 
@@ -18,9 +18,9 @@ Namespace: microsoft.graph
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Ainda não documentado
+A Classe Base de Configuração de Registro de Dispositivo
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
 |[Listar deviceEnrollmentConfigurations](../api/intune-onboarding-deviceenrollmentconfiguration-list.md)|Conjunto [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)|Listar propriedades e relações de objetos de [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md).|
@@ -31,18 +31,18 @@ Ainda não documentado
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Ainda não documentado|
-|displayName|Cadeia de caracteres|Ainda não documentado|
-|description|Cadeia de caracteres|Ainda não documentado|
-|prioridade|Int32|Ainda não documentado|
-|createdDateTime|DateTimeOffset|Ainda não documentado|
-|lastModifiedDateTime|DateTimeOffset|Ainda não documentado|
-|versão|Int32|Ainda não documentado|
+|id|Cadeia de caracteres|Identificador exclusivo da conta|
+|displayName|Cadeia de caracteres|O nome de exibição da configuração de registro do dispositivo|
+|descrição|Cadeia de caracteres|A descrição da configuração de registro do dispositivo|
+|prioridade|Int32|A prioridade é usada quando um usuário existe em vários grupos que são atribuídos à configuração de registro. Os usuários estão sujeitos apenas à configuração com o valor de prioridade mais baixo.|
+|createdDateTime|DateTimeOffset|Hora de data criada no UTC da configuração de registro do dispositivo|
+|lastModifiedDateTime|DateTimeOffset|Última data de modificação no UTC da configuração de registro do dispositivo|
+|versão|Int32|A versão da configuração de registro do dispositivo|
 
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|
 |:---|:---|:---|
-|atribuições|Conjunto [enrollmentConfigurationAssignment](../resources/intune-onboarding-enrollmentconfigurationassignment.md)|A lista de atribuições de grupo para o perfil de configuração do dispositivo.|
+|atribuições|Conjunto [enrollmentConfigurationAssignment](../resources/intune-onboarding-enrollmentconfigurationassignment.md)|A lista de atribuições de grupo para o perfil de configuração do dispositivo|
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
@@ -64,11 +64,6 @@ Veja a seguir uma representação JSON do recurso.
   "version": 1024
 }
 ```
-
-
-
-
-
 
 
 

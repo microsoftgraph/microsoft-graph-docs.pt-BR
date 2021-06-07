@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e4bd11ffc719f48a8568bc308cbff4130326c073
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: b80fd5427922d325727cb0d28a77c950596c6563
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48048621"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52752529"
 ---
 # <a name="get-enrollmentconfigurationassignment"></a>Get enrollmentConfigurationAssignment
 
@@ -23,11 +23,11 @@ Ler propriedades e relações do objeto [enrollmentConfigurationAssignment](../r
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
+|Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
+|Delegado (conta corporativa ou de estudante)|DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|Sem suporte.|
+|Aplicativo|DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -66,23 +66,19 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 251
+Content-Length: 305
 
 {
   "value": {
     "@odata.type": "#microsoft.graph.enrollmentConfigurationAssignment",
     "id": "705b021c-021c-705b-1c02-5b701c025b70",
     "target": {
-      "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
+      "@odata.type": "microsoft.graph.configurationManagerCollectionAssignmentTarget",
+      "collectionId": "Collection Id value"
     }
   }
 }
 ```
-
-
-
-
-
 
 
 
