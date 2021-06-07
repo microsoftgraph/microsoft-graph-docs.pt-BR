@@ -1,18 +1,18 @@
 ---
-title: tipo de enumeração InstallState
+title: Tipo de número installState
 description: Valores possíveis para o estado de instalação.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 1434057aff685102c2a33605a15ed124b66f6ecf
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: b117aebb96bb087c01fce1d51e780030bf62168a
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47972667"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52755102"
 ---
-# <a name="installstate-enum-type"></a>tipo de enumeração InstallState
+# <a name="installstate-enum-type"></a>Tipo de número installState
 
 Namespace: microsoft.graph
 
@@ -23,17 +23,12 @@ Valores possíveis para o estado de instalação.
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|Não aplicável|,0|Não aplicável.|
-|instalação|1 |Instalação.|
-|falhou|2 |Falhou.|
-|não instalado|3 |Não instalado.|
+|notApplicable|0|Não aplicável.|
+|instalado|1|Instalado.|
+|failed|2|Falha.|
+|notInstalled|3|Não instalado.|
 |uninstallFailed|4 |Falha na desinstalação.|
-|desconhecido|5 |Unknown.|
-
-
-
-
-
+|desconhecido|5 |Desconhecido.|
 
 
 

@@ -1,41 +1,36 @@
 ---
-title: tipo de enumeração androidWorkProfileRequiredPasswordType
-description: Perfil de trabalho do Android tipo de senha exigido.
+title: tipo de número androidWorkProfileRequiredPasswordType
+description: Tipo de senha necessário para o Perfil de Trabalho do Android.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 4c87a56e6b53654597a41742d835d7de5eaddcc2
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 741a86f1ce4654fe6d5495521f055490d4c068bc
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48051162"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52755942"
 ---
-# <a name="androidworkprofilerequiredpasswordtype-enum-type"></a>tipo de enumeração androidWorkProfileRequiredPasswordType
+# <a name="androidworkprofilerequiredpasswordtype-enum-type"></a>tipo de número androidWorkProfileRequiredPasswordType
 
 Namespace: microsoft.graph
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Perfil de trabalho do Android tipo de senha exigido.
+Tipo de senha necessário para o Perfil de Trabalho do Android.
 
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|deviceDefault|,0|Valor padrão do dispositivo, sem intenção.|
-|lowSecurityBiometric|1 |Senha com base em Biometria de segurança baixa necessária.|
-|obrigatório|2 |Obrigatório.|
-|atLeastNumeric|3 |É necessário pelo menos a senha numérica.|
-|numericComplex|4 |Senha numérica complexa obrigatória.|
-|atLeastAlphabetic|5 |É necessária pelo menos a senha alfabética.|
-|atLeastAlphanumeric|6 |É necessária pelo menos a senha alfanumérica.|
-|alphanumericWithSymbols|7 |É necessário pelo menos alfanumérico com senha de símbolo.|
-
-
-
-
-
+|deviceDefault|0|Valor padrão do dispositivo, sem intenção.|
+|lowSecurityBiometric|1|Senha de baixa biometria baseada em segurança necessária.|
+|obrigatório|2|Obrigatório.|
+|atLeastNumeric|3|Pelo menos senha numérica necessária.|
+|numericComplex|4 |Senha complexa numérica necessária.|
+|atLeastAlphabetic|5 |Pelo menos senha alfabética necessária.|
+|atLeastAlphanumeric|6 |Pelo menos senha alfanumérica necessária.|
+|alphanumericWithSymbols|7 |Pelo menos alfanumérico com símbolos de senha necessário.|
 
 
 

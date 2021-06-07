@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 4b949483e9c365cec1012a5404a02dc6f802eb96
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: fd1ec8fc0f5dcc24e30f38895911a0f8db55802e
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48063125"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52754780"
 ---
 # <a name="list-devicemanagementpartners"></a>Listar deviceManagementPartners
 
@@ -23,11 +23,11 @@ Listar propriedades e relações de objetos de [deviceManagementPartner](../reso
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
+|Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
+|Delegado (conta corporativa ou de estudante)|DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|Sem suporte.|
+|Aplicativo|DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -48,7 +48,7 @@ GET /deviceManagement/deviceManagementPartners
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [deviceManagementPartner](../resources/intune-onboarding-devicemanagementpartner.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e uma `200 OK` coleção [de objetos deviceManagementPartner](../resources/intune-onboarding-devicemanagementpartner.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -82,11 +82,6 @@ Content-Length: 624
   ]
 }
 ```
-
-
-
-
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 1de46de777e3cd9c7be0c0a9bd70cf29b9d7fad9
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: a51dd72a06c96ca28285645ed70078606e223fc4
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47984282"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52755641"
 ---
 # <a name="windowsinformationprotectionnetworklearningsummary-resource-type"></a>Tipo de recurso windowsInformationProtectionNetworkLearningSummary
 
@@ -32,12 +32,12 @@ Entidade de resumo de aprendizagem da Rede de Proteção de Informações do Win
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Identificador exclusivo de WindowsInformationProtectionNetworkLearningSummary.|
+|id|Cadeia de caracteres|Identificador exclusivo de WindowsInformationProtectionNetworkLearningSummary.|
 |url|Cadeia de caracteres|Url do site|
 |deviceCount|Int32|Contagem de dispositivos|
 
 ## <a name="relationships"></a>Relações
-Nenhum
+Nenhuma
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
@@ -55,11 +55,6 @@ Veja a seguir uma representação JSON do recurso.
   "deviceCount": 1024
 }
 ```
-
-
-
-
-
 
 
 

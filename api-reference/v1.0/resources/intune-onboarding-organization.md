@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: fbab98a859128ab2700888ca0671b7551d50346e
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 2af65c341f665fd358d03619a3cd3606723df123
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48079183"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52754948"
 ---
 # <a name="organization-resource-type"></a>tipo de recurso organization
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 O recurso da organização representa uma instância de configurações e recursos globais que operam e são provisionados no nível do locatário.
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
 |[Listar organizações](../api/intune-onboarding-organization-list.md)|Coleção [organization](../resources/intune-onboarding-organization.md)|Listar propriedades e relações de objetos de [organização](../resources/intune-onboarding-organization.md).|
@@ -35,7 +35,7 @@ O recurso da organização representa uma instância de configurações e recurs
 |mobileDeviceManagementAuthority|[mdmAuthority](../resources/intune-onboarding-mdmauthority.md)|Define autoridade de gerenciamento de dispositivo móvel. Os valores possíveis são: `unknown`, `intune`, `sccm`, `office365`.|
 
 ## <a name="relationships"></a>Relações
-Nenhum
+Nenhuma
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
@@ -52,28 +52,6 @@ Veja a seguir uma representação JSON do recurso.
   "mobileDeviceManagementAuthority": "String"
 }
 ```
-
-<!-- {
-  "type": "#page.annotation",
-  "suppressions": [
-
-"Warning: Resource microsoft.graph.organization is defined in multiple files: /api-reference/v1.0/resources/intune_onboarding_organization.md, /api-reference/v1.0/resources/organization.md",
-
-"Warning: Schema type organization has a different BaseType value microsoft.graph.directoryObject than the documentation .",
-
-"Warning: Schema type organization has a different OpenType value False than the documentation True.",
-
-"Warning: Resource organization has multiple declarations with mismatched OpenType declarations."
-
-  ],
-
-}
--->
-
-
-
-
-
 
 
 

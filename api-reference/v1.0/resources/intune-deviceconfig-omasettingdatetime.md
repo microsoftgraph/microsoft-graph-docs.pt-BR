@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 6291fc5b81de9dea1bfa67515f4df296d9e3001e
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 99fa5ccf0b26ebd04ce232eb8bf4df9a9d4ace81
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47978150"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52755879"
 ---
 # <a name="omasettingdatetime-resource-type"></a>Tipo de recurso omaSettingDateTime
 
@@ -26,13 +26,13 @@ Herda de [omaSetting](../resources/intune-deviceconfig-omasetting.md)
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|displayName|String|Nome de exibição. Herda de [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
-|description|String|Descrição. Herda de [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
+|displayName|Cadeia de caracteres|Nome de exibição. Herda de [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
+|descrição|Cadeia de caracteres|Descrição. Herda de [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
 |omaUri|Cadeia de caracteres|OMA. Herda de [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
 |value|DateTimeOffset|Valor.|
 
 ## <a name="relationships"></a>Relações
-Nenhum
+Nenhuma
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
@@ -50,11 +50,6 @@ Veja a seguir uma representação JSON do recurso.
   "value": "String (timestamp)"
 }
 ```
-
-
-
-
-
 
 
 

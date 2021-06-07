@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 7f3bd9dd623045ec004c89d72334d444748c7bc0
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: e285c9f9366d1cc7bf4309e1c25eb85a782e8ede
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48048334"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52755739"
 ---
 # <a name="targetedmanagedapppolicyassignment-resource-type"></a>tipo de recurso targetedManagedAppPolicyAssignment
 
@@ -31,11 +31,11 @@ O tipo de implantação de grupos ou aplicativos.
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Id|
-|destino|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Identificador de implantação de um grupo ou aplicativo|
+|id|Cadeia de caracteres|Id|
+|destino|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Identificador de implantação para um grupo ou aplicativo|
 
 ## <a name="relationships"></a>Relações
-Nenhum
+Nenhuma
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
@@ -50,15 +50,11 @@ Veja a seguir uma representação JSON do recurso.
   "@odata.type": "#microsoft.graph.targetedManagedAppPolicyAssignment",
   "id": "String (identifier)",
   "target": {
-    "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
+    "@odata.type": "microsoft.graph.configurationManagerCollectionAssignmentTarget",
+    "collectionId": "String"
   }
 }
 ```
-
-
-
-
-
 
 
 

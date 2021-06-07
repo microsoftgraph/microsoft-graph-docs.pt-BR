@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: c85dbc033264715026227be4055a0bf3130a5cc4
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 6713977ef36edc43f1d2e00cf489f9906e6bd929
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47988258"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52755851"
 ---
 # <a name="omasettingstringxml-resource-type"></a>Tipo de recurso omaSettingStringXml
 
@@ -26,14 +26,14 @@ Herda de [omaSetting](../resources/intune-deviceconfig-omasetting.md)
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|displayName|String|Nome de exibição. Herda de [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
-|description|String|Descrição. Herda de [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
+|displayName|Cadeia de caracteres|Nome de exibição. Herda de [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
+|descrição|Cadeia de caracteres|Descrição. Herda de [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
 |omaUri|Cadeia de caracteres|OMA. Herda de [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
 |fileName|Cadeia de caracteres|Nome do arquivo associado à propriedade de valor (*.xml).|
 |valor|Binário|Valor. (Matriz de bytes codificados de UTF8)|
 
 ## <a name="relationships"></a>Relações
-Nenhum
+Nenhuma
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
@@ -52,11 +52,6 @@ Veja a seguir uma representação JSON do recurso.
   "value": "binary"
 }
 ```
-
-
-
-
-
 
 
 

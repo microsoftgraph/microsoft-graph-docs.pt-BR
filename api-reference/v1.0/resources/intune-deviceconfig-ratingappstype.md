@@ -1,39 +1,34 @@
 ---
-title: tipo de enumeração ratingAppsType
-description: Classificação de aplicativos como conteúdo de mídia
+title: tipo de número ratingAppsType
+description: Classificação de aplicativos como no conteúdo de mídia
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: f30375c009700cd43d619705afef7f91cc905384
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: e281516859b0bd3b56b3dccc3790008eb55d2cea
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48088584"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52755830"
 ---
-# <a name="ratingappstype-enum-type"></a>tipo de enumeração ratingAppsType
+# <a name="ratingappstype-enum-type"></a>tipo de número ratingAppsType
 
 Namespace: microsoft.graph
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Classificação de aplicativos como conteúdo de mídia
+Classificação de aplicativos como no conteúdo de mídia
 
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|Permitido|,0|Valor padrão, permitir todo o conteúdo de aplicativos|
-|Bloqueado|1 |Não permitir conteúdo de aplicativos|
-|agesAbove4|2 |4 +, idade 4 e superior|
-|agesAbove9|3D|9 +, idade 9 e superior|
-|agesAbove12|4 |12 +, idade 12 e superior |
-|agesAbove17|5 |17 +, idade 17 e superior|
-
-
-
-
-
+|allAllowed|0|Valor padrão, permitir todo o conteúdo de aplicativos|
+|allBlocked|1|Não permitir conteúdo de aplicativos|
+|agesAbove4|2|4+, 4 anos ou mais|
+|agesAbove9|3|9+, 9 anos ou mais|
+|agesAbove12|4 |12+, 12 anos ou mais |
+|agesAbove17|5 |17+, 17 anos ou mais|
 
 
 

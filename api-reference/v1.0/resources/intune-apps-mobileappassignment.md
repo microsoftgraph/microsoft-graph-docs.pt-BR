@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 07a982ddac5fb1f7910f6ae5a6a4fc735a8da60b
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 7045299e8e7c4375449b4a4d24901970041afe50
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48094418"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52755123"
 ---
 # <a name="mobileappassignment-resource-type"></a>Tipo de recurso mobileAppAssignment
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 Uma classe com as propriedades usadas para atribuição de grupos de um aplicativo móvel.
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
 |[Listar mobileAppAssignments](../api/intune-apps-mobileappassignment-list.md)|Conjunto [mobileAppAssignment](../resources/intune-apps-mobileappassignment.md)|Listar propriedades e relações de objetos de [mobileAppAssignment](../resources/intune-apps-mobileappassignment.md).|
@@ -38,7 +38,7 @@ Uma classe com as propriedades usadas para atribuição de grupos de um aplicati
 |configurações|[mobileAppAssignmentSettings](../resources/intune-apps-mobileappassignmentsettings.md)|As configurações para a atribuição de destino definida pelo administrador.|
 
 ## <a name="relationships"></a>Relações
-Nenhum
+Nenhuma
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
@@ -54,18 +54,14 @@ Veja a seguir uma representação JSON do recurso.
   "id": "String (identifier)",
   "intent": "String",
   "target": {
-    "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
+    "@odata.type": "microsoft.graph.allLicensedUsersAssignmentTarget"
   },
   "settings": {
-    "@odata.type": "microsoft.graph.mobileAppAssignmentSettings"
+    "@odata.type": "microsoft.graph.iosLobAppAssignmentSettings",
+    "vpnConfigurationId": "String"
   }
 }
 ```
-
-
-
-
-
 
 
 

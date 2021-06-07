@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 391017a3ded43f40286b841594e80e773294e7a5
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 2dcc53f59fd159f5168b11d2739d257326db1764
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48003238"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52754752"
 ---
 # <a name="devicecompliancescheduledactionforrule-resource-type"></a>Tipo de recurso deviceComplianceScheduledActionForRule
 
@@ -32,7 +32,7 @@ Ação agendada para a regra
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave da entidade.|
+|id|Cadeia de caracteres|Chave da entidade.|
 |ruleName|Cadeia de caracteres|Nome da regra à qual essa ação agendada se aplica.|
 
 ## <a name="relationships"></a>Relações
@@ -55,11 +55,6 @@ Veja a seguir uma representação JSON do recurso.
   "ruleName": "String"
 }
 ```
-
-
-
-
-
 
 
 

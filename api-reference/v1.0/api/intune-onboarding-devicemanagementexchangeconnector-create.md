@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 22f354b8cbffdc9629f7793ccff81f61d258bf33
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 0e28d76266a552470bb5e0ca9b61857c49ccd50c
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48075165"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52754829"
 ---
 # <a name="create-devicemanagementexchangeconnector"></a>Criar deviceManagementExchangeConnector
 
@@ -23,11 +23,11 @@ Crie um novo objeto [deviceManagementExchangeConnector](../resources/intune-onbo
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
+|Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|Sem suporte.|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Aplicativo|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -53,7 +53,7 @@ A tabela a seguir mostra as propriedades obrigatórias ao criar deviceManagement
 |:---|:---|:---|
 |id|Cadeia de caracteres|Ainda não documentado|
 |lastSyncDateTime|DateTimeOffset|Hora da última sincronização do Exchange Connector|
-|status|[deviceManagementExchangeConnectorStatus](../resources/intune-onboarding-devicemanagementexchangeconnectorstatus.md)|Status do Exchange Connector. Os valores possíveis são: `none`, `connectionPending`, `connected`, `disconnected`.|
+|status|[deviceManagementExchangeConnectorStatus](../resources/intune-onboarding-devicemanagementexchangeconnectorstatus.md)|Exchange Status do conector. Os valores possíveis são: `none`, `connectionPending`, `connected`, `disconnected`.|
 |primarySmtpAddress|Cadeia de caracteres|Endereço de email usado para configurar o serviço a serviço do Exchange Connector.|
 |serverName|Cadeia de caracteres|O nome do servidor Exchange.|
 |connectorServerName|Cadeia de caracteres|O nome do servidor que hospeda o Exchange Connector.|
@@ -111,11 +111,6 @@ Content-Length: 539
   "exchangeOrganization": "Exchange Organization value"
 }
 ```
-
-
-
-
-
 
 
 

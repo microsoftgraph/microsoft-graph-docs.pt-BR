@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 06b72a0ae70c9720298cb23efcd6967602a47990
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 00c3bf8fc86dc1f7a69b43b438824b2a10ffb74a
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48048551"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52755144"
 ---
 # <a name="iosminimumoperatingsystem-resource-type"></a>Tipo de recurso iosMinimumOperatingSystem
 
@@ -27,11 +27,12 @@ Contém as propriedades do sistema operacional mínimo obrigatório para um apli
 |v9_0|Booliano|Versão 9.0 ou posterior.|
 |v10_0|Booliano|Versão 10.0 ou posterior.|
 |v11_0|Booliano|Versão 11.0 ou posterior.|
-|v12_0|Boolean|Versão 12,0 ou posterior.|
-|v13_0|Boolean|Versão 13,0 ou posterior.|
+|v12_0|Booliano|Versão 12.0 ou posterior.|
+|v13_0|Booliano|Versão 13.0 ou posterior.|
+|v14_0|Booliano|Versão 14.0 ou posterior.|
 
 ## <a name="relationships"></a>Relações
-Nenhum
+Nenhuma
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
@@ -48,14 +49,10 @@ Veja a seguir uma representação JSON do recurso.
   "v10_0": true,
   "v11_0": true,
   "v12_0": true,
-  "v13_0": true
+  "v13_0": true,
+  "v14_0": true
 }
 ```
-
-
-
-
-
 
 
 

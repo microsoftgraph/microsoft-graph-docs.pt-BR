@@ -1,18 +1,18 @@
 ---
-title: tipo de enumeração ratingAustraliaMoviesType
+title: tipo de número ratingAustraliaMoviesType
 description: Rótulos de classificação de filmes na Austrália
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 5da509794ef3597892441e3186c6ba7a8fd1f68f
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 767076dc8c18db8503f048bb1f1d91a55d7b2114
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47997260"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52755823"
 ---
-# <a name="ratingaustraliamoviestype-enum-type"></a>tipo de enumeração ratingAustraliaMoviesType
+# <a name="ratingaustraliamoviestype-enum-type"></a>tipo de número ratingAustraliaMoviesType
 
 Namespace: microsoft.graph
 
@@ -23,18 +23,13 @@ Rótulos de classificação de filmes na Austrália
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|Permitido|,0|Valor padrão, permitir todo o conteúdo de filmes|
-|Bloqueado|1 |Não permitir conteúdo de filmes|
-|geral|2 |A classificação G é adequada para todos|
-|parentalGuidance|3 |A PG recomenda visualizadores em 15 com orientação de pais ou guardiões|
-|completa|4 |A classificação M não é recomendada para visualizadores abaixo de 15|
-|agesAbove15|5 |A classificação MA15 + não é adequada para visualizadores abaixo de 15|
-|agesAbove18|6 |A classificação R18 + não é adequada para visualizadores em 18|
-
-
-
-
-
+|allAllowed|0|Valor padrão, permitir todo o conteúdo de filmes|
+|allBlocked|1|Não permitir conteúdo de filmes|
+|geral|2|A classificação G é adequada para todos|
+|parentalGuidance|3|A PG recomenda visualizadores menores de 15 anos com orientações de pais ou responsáveis|
+|mature|4 |A classificação M não é recomendada para visualizadores com menos de 15 anos|
+|agesAbove15|5 |A classificação MA15+ não é adequada para visualizadores com menos de 15 anos|
+|agesAbove18|6 |A classificação R18+ não é adequada para visualizadores com menos de 18 anos|
 
 
 

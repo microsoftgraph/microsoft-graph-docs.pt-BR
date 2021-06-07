@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f78891af7a5175381e5ea7a9dd73dd5552b5ca57
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 4bdd3bc460148298b91386e6ce0988f743cc78e5
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48009510"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52756152"
 ---
 # <a name="create-manageddevice"></a>Criar managedDevice
 
@@ -23,11 +23,11 @@ Criar um novo objeto [managedDevice](../resources/intune-devices-manageddevice.m
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
+|Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|Sem suporte.|
+|Aplicativo|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -53,53 +53,58 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar managedD
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|O identificador exclusivo do dispositivo|
-|userId|Cadeia de caracteres|O identificador exclusivo do usuário associado ao dispositivo|
-|deviceName|String|Nome do dispositivo|
+|id|Cadeia de caracteres|Identificador exclusivo do dispositivo. Essa propriedade é somente leitura.|
+|userId|Cadeia de caracteres|Identificador exclusivo do usuário associado ao dispositivo. Essa propriedade é somente leitura.|
+|deviceName|String|Nome do dispositivo. Essa propriedade é somente leitura.|
 |managedDeviceOwnerType|[managedDeviceOwnerType](../resources/intune-devices-manageddeviceownertype.md)|Propriedade do dispositivo. Pode ser "empresa" ou "pessoal". Os valores possíveis são: `unknown`, `company`, `personal`.|
-|deviceActionResults|Coleção [deviceActionResult](../resources/intune-devices-deviceactionresult.md)|Lista de objetos ComplexType deviceActionResult.|
-|enrolledDateTime|DateTimeOffset|Hora de registro do dispositivo.|
-|lastSyncDateTime|DateTimeOffset|A data e a hora da última vez em que o dispositivo concluiu uma sincronização bem-sucedida com o Intune.|
-|operatingSystem|String|Sistema operacional do dispositivo. Windows, iOS, etc.|
-|complianceState|[complianceState](../resources/intune-devices-compliancestate.md)|Estado de conformidade do dispositivo. Os valores possíveis são: `unknown`, `compliant`, `noncompliant`, `conflict`, `error`, `inGracePeriod`, `configManager`.|
-|jailBroken|String|se o dispositivo está desbloqueado ou modificado.|
-|managementAgent|[managementAgentType](../resources/intune-devices-managementagenttype.md)|Canal de gerenciamento do dispositivo. Intune, EAS, etc. Os valores possíveis são: `eas`, `mdm`, `easMdm`, `intuneClient`, `easIntuneClient`, `configurationManagerClient`, `configurationManagerClientMdm`, `configurationManagerClientMdmEas`, `unknown`, `jamf`, `googleCloudDevicePolicyController`.|
-|osVersion|String|A versão do sistema operacional do dispositivo.|
-|easActivated|Boolean|Se o dispositivo está ativado para Exchange ActiveSync.|
-|easDeviceId|String|ID do Exchange ActiveSync do dispositivo.|
-|easActivationDateTime|DateTimeOffset|Hora de ativação do Exchange ActiveSync do dispositivo.|
-|azureADRegistered|Boolean|Se o dispositivo é registrado no Azure Active Directory.|
-|deviceEnrollmentType|[deviceEnrollmentType](../resources/intune-shared-deviceenrollmenttype.md)|Tipo de registro do dispositivo. Os valores possíveis são: `unknown`, `userEnrollment`, `deviceEnrollmentManager`, `appleBulkWithUser`, `appleBulkWithoutUser`, `windowsAzureADJoin`, `windowsBulkUserless`, `windowsAutoEnrollment`, `windowsBulkAzureDomainJoin`, `windowsCoManagement`.|
-|activationLockBypassCode|String|Código que permite que o Bloqueio de Ativação em um dispositivo seja ignorado.|
-|emailAddress|String|Email(s) do usuário associado ao dispositivo|
-|azureADDeviceId|String|O identificador exclusivo do dispositivo do Azure Active Directory. Somente leitura.|
-|deviceRegistrationState|[deviceRegistrationState](../resources/intune-devices-deviceregistrationstate.md)|Estado do registro do dispositivo. Os valores possíveis são: `notRegistered`, `registered`, `revoked`, `keyConflict`, `approvalPending`, `certificateReset`, `notRegisteredPendingEnrollment`, `unknown`.|
-|deviceCategoryDisplayName|String|Nome de exibição da categoria do dispositivo|
-|isSupervised|Boolean|Status supervisionado do dispositivo|
-|exchangeLastSuccessfulSyncDateTime|DateTimeOffset|Última vez em que o dispositivo entrou em contato com o Exchange.|
-|exchangeAccessState|[deviceManagementExchangeAccessState](../resources/intune-devices-devicemanagementexchangeaccessstate.md)|O estado de acesso do dispositivo no Exchange. Os valores possíveis são: `none`, `unknown`, `allowed`, `blocked`, `quarantined`.|
-|exchangeAccessStateReason|[deviceManagementExchangeAccessStateReason](../resources/intune-devices-devicemanagementexchangeaccessstatereason.md)|A razão para o estado de acesso do dispositivo no Exchange. Os valores possíveis são: `none`, `unknown`, `exchangeGlobalRule`, `exchangeIndividualRule`, `exchangeDeviceRule`, `exchangeUpgrade`, `exchangeMailboxPolicy`, `other`, `compliant`, `notCompliant`, `notEnrolled`, `unknownLocation`, `mfaRequired`, `azureADBlockDueToAccessPolicy`, `compromisedPassword`, `deviceNotKnownWithManagedApp`.|
-|remoteAssistanceSessionUrl|String|A URL que permite que uma sessão de assistência remota seja estabelecida com o dispositivo.|
-|remoteAssistanceSessionErrorDetails|String|Uma cadeia de caracteres de erro que identifica problemas durante a criação de objetos de sessão de Assistência remota.|
-|isEncrypted|Boolean|Status da criptografia de dispositivo|
-|userPrincipalName|String|Nome principal do usuário do dispositivo|
-|modelo|String|Modelo do dispositivo|
-|fabricante|String|Fabricante do dispositivo|
-|imei|String|IMEI|
-|complianceGracePeriodExpirationDateTime|DateTimeOffset|DateTime em que o período de cortesia de conformidade do dispositivo termina|
-|serialNumber|String|SerialNumber|
-|phoneNumber|String|Número de telefone do dispositivo|
-|androidSecurityPatchLevel|String|Nível do patch de segurança Android|
-|userDisplayName|Cadeia de caracteres|Nome de exibição do usuário|
-|configurationManagerClientEnabledFeatures|[configurationManagerClientEnabledFeatures](../resources/intune-devices-configurationmanagerclientenabledfeatures.md)|Recursos habilitados pelo cliente do ConfigrMgr|
-|wiFiMacAddress|String|MAC Wi-Fi|
-|deviceHealthAttestationState|[deviceHealthAttestationState](../resources/intune-devices-devicehealthattestationstate.md)|O estado do atestado de integridade do dispositivo.|
-|subscriberCarrier|String|Operadora do assinante|
-|meid|String|MEID|
-|totalStorageSpaceInBytes|Int64|Total de armazenamento em bytes|
-|freeStorageSpaceInBytes|Int64|Armazenamento gratuito em bytes|
+|deviceActionResults|Coleção [deviceActionResult](../resources/intune-devices-deviceactionresult.md)|Lista de objetos ComplexType deviceActionResult. Essa propriedade é somente leitura.|
+|enrolledDateTime|DateTimeOffset|Hora de registro do dispositivo. Essa propriedade é somente leitura.|
+|lastSyncDateTime|DateTimeOffset|A data e a hora da última vez em que o dispositivo concluiu uma sincronização bem-sucedida com o Intune. Essa propriedade é somente leitura.|
+|operatingSystem|String|Sistema operacional do dispositivo. Windows, iOS, etc. Essa propriedade é somente leitura.|
+|complianceState|[complianceState](../resources/intune-devices-compliancestate.md)|Estado de conformidade do dispositivo. Essa propriedade é somente leitura. Os valores possíveis são: `unknown`, `compliant`, `noncompliant`, `conflict`, `error`, `inGracePeriod`, `configManager`.|
+|jailBroken|String|se o dispositivo está desbloqueado ou modificado. Essa propriedade é somente leitura.|
+|managementAgent|[managementAgentType](../resources/intune-devices-managementagenttype.md)|Canal de gerenciamento do dispositivo. Intune, EAS, etc. Essa propriedade é somente leitura. Os valores possíveis são: `eas`, `mdm`, `easMdm`, `intuneClient`, `easIntuneClient`, `configurationManagerClient`, `configurationManagerClientMdm`, `configurationManagerClientMdmEas`, `unknown`, `jamf`, `googleCloudDevicePolicyController`.|
+|osVersion|String|A versão do sistema operacional do dispositivo. Essa propriedade é somente leitura.|
+|easActivated|Boolean|Se o dispositivo está ativado para Exchange ActiveSync. Essa propriedade é somente leitura.|
+|easDeviceId|String|ID do Exchange ActiveSync do dispositivo. Essa propriedade é somente leitura.|
+|easActivationDateTime|DateTimeOffset|Hora de ativação do Exchange ActiveSync do dispositivo. Essa propriedade é somente leitura.|
+|azureADRegistered|Boolean|Se o dispositivo é registrado no Azure Active Directory. Essa propriedade é somente leitura.|
+|deviceEnrollmentType|[deviceEnrollmentType](../resources/intune-devices-deviceenrollmenttype.md)|Tipo de registro do dispositivo. Essa propriedade é somente leitura. Os valores possíveis são: `unknown`, `userEnrollment`, `deviceEnrollmentManager`, `appleBulkWithUser`, `appleBulkWithoutUser`, `windowsAzureADJoin`, `windowsBulkUserless`, `windowsAutoEnrollment`, `windowsBulkAzureDomainJoin`, `windowsCoManagement`, `windowsAzureADJoinUsingDeviceAuth`, `appleUserEnrollment` e `appleUserEnrollmentWithServiceAccount`.|
+|activationLockBypassCode|String|Código que permite que o Bloqueio de Ativação em um dispositivo seja ignorado. Essa propriedade é somente leitura.|
+|emailAddress|String|Email(s) para o usuário associado ao dispositivo. Essa propriedade é somente leitura.|
+|azureADDeviceId|String|O identificador exclusivo do dispositivo do Azure Active Directory. Somente leitura. Essa propriedade é somente leitura.|
+|deviceRegistrationState|[deviceRegistrationState](../resources/intune-devices-deviceregistrationstate.md)|Estado do registro do dispositivo. Essa propriedade é somente leitura. Os valores possíveis são: `notRegistered`, `registered`, `revoked`, `keyConflict`, `approvalPending`, `certificateReset`, `notRegisteredPendingEnrollment`, `unknown`.|
+|deviceCategoryDisplayName|String|Nome de exibição de categoria de dispositivo. Essa propriedade é somente leitura.|
+|isSupervised|Boolean|Status supervisionado pelo dispositivo. Essa propriedade é somente leitura.|
+|exchangeLastSuccessfulSyncDateTime|DateTimeOffset|Última vez em que o dispositivo entrou em contato com o Exchange. Essa propriedade é somente leitura.|
+|exchangeAccessState|[deviceManagementExchangeAccessState](../resources/intune-devices-devicemanagementexchangeaccessstate.md)|O estado de acesso do dispositivo no Exchange. Essa propriedade é somente leitura. Os valores possíveis são: `none`, `unknown`, `allowed`, `blocked`, `quarantined`.|
+|exchangeAccessStateReason|[deviceManagementExchangeAccessStateReason](../resources/intune-devices-devicemanagementexchangeaccessstatereason.md)|A razão para o estado de acesso do dispositivo no Exchange. Essa propriedade é somente leitura. Os valores possíveis são: `none`, `unknown`, `exchangeGlobalRule`, `exchangeIndividualRule`, `exchangeDeviceRule`, `exchangeUpgrade`, `exchangeMailboxPolicy`, `other`, `compliant`, `notCompliant`, `notEnrolled`, `unknownLocation`, `mfaRequired`, `azureADBlockDueToAccessPolicy`, `compromisedPassword`, `deviceNotKnownWithManagedApp`.|
+|remoteAssistanceSessionUrl|String|A URL que permite que uma sessão de assistência remota seja estabelecida com o dispositivo. Essa propriedade é somente leitura.|
+|remoteAssistanceSessionErrorDetails|String|Uma cadeia de caracteres de erro que identifica problemas durante a criação de objetos de sessão de Assistência remota. Essa propriedade é somente leitura.|
+|isEncrypted|Boolean|Status da criptografia do dispositivo. Essa propriedade é somente leitura.|
+|userPrincipalName|Cadeia de caracteres|Nome principal do usuário do dispositivo. Essa propriedade é somente leitura.|
+|modelo|String|Modelo do dispositivo. Essa propriedade é somente leitura.|
+|fabricante|String|Fabricante do dispositivo. Essa propriedade é somente leitura.|
+|imei|String|IMEI. Essa propriedade é somente leitura.|
+|complianceGracePeriodExpirationDateTime|DateTimeOffset|DateTime quando o período de carência de conformidade do dispositivo expira. Essa propriedade é somente leitura.|
+|serialNumber|String|SerialNumber. Essa propriedade é somente leitura.|
+|phoneNumber|String|Telefone número do dispositivo. Essa propriedade é somente leitura.|
+|androidSecurityPatchLevel|String|Nível de patch de segurança do Android. Essa propriedade é somente leitura.|
+|userDisplayName|Cadeia de caracteres|Nome de exibição do usuário. Essa propriedade é somente leitura.|
+|configurationManagerClientEnabledFeatures|[configurationManagerClientEnabledFeatures](../resources/intune-devices-configurationmanagerclientenabledfeatures.md)|Recursos habilitados para cliente ConfigrMgr. Essa propriedade é somente leitura.|
+|wiFiMacAddress|String|Wi-Fi MAC. Essa propriedade é somente leitura.|
+|deviceHealthAttestationState|[deviceHealthAttestationState](../resources/intune-devices-devicehealthattestationstate.md)|O estado do atestado de integridade do dispositivo. Essa propriedade é somente leitura.|
+|subscriberCarrier|String|Operadora de Assinantes. Essa propriedade é somente leitura.|
+|meid|String|MEID. Essa propriedade é somente leitura.|
+|totalStorageSpaceInBytes|Int64|Total Armazenamento em Bytes. Essa propriedade é somente leitura.|
+|freeStorageSpaceInBytes|Int64|Free Armazenamento em Bytes. Essa propriedade é somente leitura.|
 |managedDeviceName|String|Nome gerado automaticamente para identificar um dispositivo. Pode ser substituído por um nome amigável ao usuário.|
-|partnerReportedThreatState|[managedDevicePartnerReportedHealthState](../resources/intune-devices-manageddevicepartnerreportedhealthstate.md)|Indica o estado de ameaças de um dispositivo quando um parceiro de Defesa contra ameaças móveis está em uso pela conta e pelo dispositivo. Somente leitura. Os valores possíveis são: `unknown`, `activated`, `deactivated`, `secured`, `lowSeverity`, `mediumSeverity`, `highSeverity`, `unresponsive`, `compromised`, `misconfigured`.|
+|partnerReportedThreatState|[managedDevicePartnerReportedHealthState](../resources/intune-devices-manageddevicepartnerreportedhealthstate.md)|Indica o estado de ameaças de um dispositivo quando um parceiro de Defesa contra ameaças móveis está em uso pela conta e pelo dispositivo. Somente leitura. Essa propriedade é somente leitura. Os valores possíveis são: `unknown`, `activated`, `deactivated`, `secured`, `lowSeverity`, `mediumSeverity`, `highSeverity`, `unresponsive`, `compromised`, `misconfigured`.|
+|iccid|Cadeia de caracteres|Identificador integrado de cartão de circuito, é o número de identificação exclusivo de um cartão SIM. Essa propriedade é somente leitura.|
+|udid|Cadeia de caracteres|Identificador de dispositivo exclusivo para dispositivos iOS e macOS. Essa propriedade é somente leitura.|
+|notes|String|Observações sobre o dispositivo criado pelo administrador de IT|
+|ethernetMacAddress|Cadeia de caracteres|Ethernet MAC. Essa propriedade é somente leitura.|
+|physicalMemoryInBytes|Int64|Memória total em bytes. Essa propriedade é somente leitura.|
 
 
 
@@ -113,7 +118,7 @@ Este é um exemplo da solicitação.
 ``` http
 POST https://graph.microsoft.com/v1.0/users/{usersId}/managedDevices
 Content-type: application/json
-Content-length: 4656
+Content-length: 4821
 
 {
   "@odata.type": "#microsoft.graph.managedDevice",
@@ -212,7 +217,12 @@ Content-length: 4656
   "totalStorageSpaceInBytes": 8,
   "freeStorageSpaceInBytes": 7,
   "managedDeviceName": "Managed Device Name value",
-  "partnerReportedThreatState": "activated"
+  "partnerReportedThreatState": "activated",
+  "iccid": "Iccid value",
+  "udid": "Udid value",
+  "notes": "Notes value",
+  "ethernetMacAddress": "Ethernet Mac Address value",
+  "physicalMemoryInBytes": 5
 }
 ```
 
@@ -221,7 +231,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 4705
+Content-Length: 4870
 
 {
   "@odata.type": "#microsoft.graph.managedDevice",
@@ -321,14 +331,14 @@ Content-Length: 4705
   "totalStorageSpaceInBytes": 8,
   "freeStorageSpaceInBytes": 7,
   "managedDeviceName": "Managed Device Name value",
-  "partnerReportedThreatState": "activated"
+  "partnerReportedThreatState": "activated",
+  "iccid": "Iccid value",
+  "udid": "Udid value",
+  "notes": "Notes value",
+  "ethernetMacAddress": "Ethernet Mac Address value",
+  "physicalMemoryInBytes": 5
 }
 ```
-
-
-
-
-
 
 
 

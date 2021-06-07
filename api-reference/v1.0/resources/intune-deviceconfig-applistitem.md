@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: a53da1a1e50b0537a20d763b49957369a28556ec
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 0c0e880b8afebdfccab426fbe80966cc3f828a19
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48051127"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52755921"
 ---
 # <a name="applistitem-resource-type"></a>Tipo de recurso appListItem
 
@@ -23,13 +23,13 @@ Representa um aplicativo na lista de aplicativos gerenciados
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|nome|String|O nome do aplicativo|
+|nome|Cadeia de caracteres|O nome do aplicativo|
 |distribuidor|Cadeia de caracteres|O distribuidor do aplicativo|
 |appStoreUrl|Cadeia de caracteres|A URL da loja do aplicativo|
-|appId|String|O aplicativo ou identificador do pacote do aplicativo|
+|appId|Cadeia de caracteres|O aplicativo ou identificador do pacote do aplicativo|
 
 ## <a name="relationships"></a>Relações
-Nenhum
+Nenhuma
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
@@ -47,11 +47,6 @@ Veja a seguir uma representação JSON do recurso.
   "appId": "String"
 }
 ```
-
-
-
-
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f7699f0cab1459b3c876d6d78470c75c14c3bbdf
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 038772c30fa6b4f732b08f8a7895cb9a10ca92f9
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48055012"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52754878"
 ---
 # <a name="update-localizednotificationmessage"></a>Atualizar localizedNotificationMessage
 
@@ -23,11 +23,11 @@ Atualizar as propriedades de um objeto [localizedNotificationMessage](../resourc
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
+|Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|Sem suporte.|
+|Aplicativo|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -51,10 +51,10 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [localiz
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave da entidade.|
+|id|Cadeia de caracteres|Chave da entidade.|
 |lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto.|
 |localidade|Cadeia de caracteres|A localidade para a qual esta mensagem se destina.|
-|assunto|String|O assunto do modelo da mensagem.|
+|Assunto|Cadeia de caracteres|O assunto do modelo da mensagem.|
 |messageTemplate|Cadeia de caracteres|O conteúdo do modelo da mensagem.|
 |isDefault|Booliano|Sinaliza para indicar se esta é ou não a localidade padrão do fallback de idioma. Esse sinalizador só pode ser definido. Para remover a definição, defina esta propriedade como verdadeira na outra Mensagem de notificação localizada.|
 
@@ -98,11 +98,6 @@ Content-Length: 313
   "isDefault": true
 }
 ```
-
-
-
-
-
 
 
 

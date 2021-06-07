@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: c806a284afc3eec0e2439b53711459254227793d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: eff3a957e242dfad4840ad5d616cec54f9a3c344
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48003168"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52755039"
 ---
 # <a name="mediacontentratingcanada-resource-type"></a>Tipo de recurso mediaContentRatingCanada
 
@@ -27,7 +27,7 @@ Ainda não documentado
 |tvRating|[ratingCanadaTelevisionType](../resources/intune-deviceconfig-ratingcanadatelevisiontype.md)|Classificação de TV selecionada para o Canadá. Os valores possíveis são: `allAllowed`, `allBlocked`, `children`, `childrenAbove8`, `general`, `parentalGuidance`, `agesAbove14`, `agesAbove18`.|
 
 ## <a name="relationships"></a>Relações
-Nenhum
+Nenhuma
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
@@ -43,11 +43,6 @@ Veja a seguir uma representação JSON do recurso.
   "tvRating": "String"
 }
 ```
-
-
-
-
-
 
 
 

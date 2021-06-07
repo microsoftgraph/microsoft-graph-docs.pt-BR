@@ -1,18 +1,18 @@
 ---
-title: tipo de enumeração ratingCanadaTelevisionType
+title: tipo de número ratingCanadaTelevisionType
 description: Rótulos de classificação de conteúdo de TV no Canadá
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 0a033db304fa61a9823cc650344b2cc11e77855e
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: dc7fbc8fa2f31cbeab5e9cc8924a617931e390fb
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48041425"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52755809"
 ---
-# <a name="ratingcanadatelevisiontype-enum-type"></a>tipo de enumeração ratingCanadaTelevisionType
+# <a name="ratingcanadatelevisiontype-enum-type"></a>tipo de número ratingCanadaTelevisionType
 
 Namespace: microsoft.graph
 
@@ -23,19 +23,14 @@ Rótulos de classificação de conteúdo de TV no Canadá
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|Permitido|,0|Valor padrão, permitir todos os programas de TV|
-|Bloqueado|1 |Não permitir que qualquer TV mostre conteúdo|
-|children|2 |A classificação C é adequada para crianças com idade de 2 a 7 anos|
-|childrenAbove8|3 |A classificação do C8 é adequada para crianças com 8 anos|
-|geral|4 |A classificação G é adequada para a audiência geral|
-|parentalGuidance|5 |PG, orientação dos pais|
-|agesAbove14|6 |A classificação de 14 anos destina-se a visualizadores com 14 anos ou mais|
-|agesAbove18|7 |A classificação de 18 anos destina-se a visualizadores com 18 anos ou mais|
-
-
-
-
-
+|allAllowed|0|Valor padrão, permitir todo o conteúdo de programas de TV|
+|allBlocked|1|Não permitir conteúdo de programas de TV|
+|children|2|A classificação C é adequada para crianças de 2 a 7 anos|
+|childrenAbove8|3|A classificação C8 é adequada para crianças com mais de 8 anos|
+|geral|4 |A classificação G é adequada para audiência geral|
+|parentalGuidance|5 |PG, Orientação dos pais|
+|agesAbove14|6 |A classificação 14+ destina-se a visualizadores maiores de 14 anos|
+|agesAbove18|7 |A classificação de mais de 18 anos destina-se a visualizadores maiores de 18 anos|
 
 
 

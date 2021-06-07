@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 040ff093004cdb1d31dde748a7ad26f03ce08b10
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: b5ea2d73724400c033a3bd8e1148e04af8d390be
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48056790"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52755067"
 ---
 # <a name="edgesearchengine-resource-type"></a>Tipo de recurso edgeSearchEngine
 
@@ -29,7 +29,7 @@ Herda de [edgeSearchEngineBase](../resources/intune-deviceconfig-edgesearchengin
 |edgeSearchEngineType|[edgeSearchEngineType](../resources/intune-deviceconfig-edgesearchenginetype.md)|Permite que os administradores de TI configurem um mecanismo de pesquisa padrão predefinido para dispositivos controlados por MDM. Os valores possíveis são: `default`, `bing`.|
 
 ## <a name="relationships"></a>Relações
-Nenhum
+Nenhuma
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
@@ -44,11 +44,6 @@ Veja a seguir uma representação JSON do recurso.
   "edgeSearchEngineType": "String"
 }
 ```
-
-
-
-
-
 
 
 

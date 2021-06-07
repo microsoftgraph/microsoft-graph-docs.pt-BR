@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 48a0722c48e384570a1e5c87c3bbf93d0147b218
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: a24964891779a1b376bc4d0e92e013a1e1ca9728
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48052121"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52756642"
 ---
 # <a name="update-devicecompliancedeviceoverview"></a>Atualizar deviceComplianceDeviceOverview
 
@@ -23,11 +23,11 @@ Atualizar as propriedades de um objeto [deviceComplianceDeviceOverview](../resou
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
+|Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|Sem suporte.|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -51,7 +51,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [deviceC
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave da entidade.|
+|id|Cadeia de caracteres|Chave da entidade.|
 |pendingCount|Int32|Número de dispositivos pendentes|
 |notApplicableCount|Int32|Número de dispositivos não aplicáveis|
 |successCount|Int32|Número de dispositivos com êxito|
@@ -105,11 +105,6 @@ Content-Length: 330
   "configurationVersion": 4
 }
 ```
-
-
-
-
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 94df1d412d3022cc4a98dfefbbf32dcb3efcd56f
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ffb8e5bbf86dceeedfe480676a18e70239a0d367
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48074962"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52754955"
 ---
 # <a name="managedappconfiguration-resource-type"></a>Tipo de recurso managedAppConfiguration
 
@@ -23,7 +23,7 @@ Configuração usada para distribuir um conjunto de configurações personalizad
 
 Herda de [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
 |[Listar managedAppConfigurations](../api/intune-mam-managedappconfiguration-list.md)|Coleção [managedAppConfiguration](../resources/intune-mam-managedappconfiguration.md)|Lista propriedades e relações dos objetos [managedAppConfiguration](../resources/intune-mam-managedappconfiguration.md).|
@@ -33,7 +33,7 @@ Herda de [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |displayName|Cadeia de caracteres|Nome para exibição da política. Herdado de [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
-|description|Cadeia de caracteres|A descrição da política. Herdado de [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
+|descrição|Cadeia de caracteres|A descrição da política. Herdado de [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
 |createdDateTime|DateTimeOffset|A data e a hora da criação da política. Herdado de [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
 |lastModifiedDateTime|DateTimeOffset|Última vez em que a política foi modificada. Herdado de [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
 |id|Cadeia de caracteres|Chave da entidade. Herdado de [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
@@ -41,7 +41,7 @@ Herda de [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)
 |customSettings|Coleção [keyValuePair](../resources/intune-mam-keyvaluepair.md)|Um conjunto de pares de chave de cadeia de caracteres e valor de cadeia de caracteres a serem enviados aos aplicativos para usuários para os quais a configuração tem escopo definido, não alterados por esse serviço|
 
 ## <a name="relationships"></a>Relações
-Nenhum
+Nenhuma
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
@@ -69,11 +69,6 @@ Veja a seguir uma representação JSON do recurso.
   ]
 }
 ```
-
-
-
-
-
 
 
 

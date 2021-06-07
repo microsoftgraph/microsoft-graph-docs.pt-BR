@@ -1,18 +1,18 @@
 ---
-title: tipo de enumeração Propriedades automaticupdatemode
+title: Tipo de número automaticUpdateMode
 description: Valores possíveis para o modo de atualização automática.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: e02f1a3ed99840382148d4f1434df667e2391739
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: b4cd222db425a9a8a2647f2ffbeb6056dddbe1c5
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48051113"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52755900"
 ---
-# <a name="automaticupdatemode-enum-type"></a>tipo de enumeração Propriedades automaticupdatemode
+# <a name="automaticupdatemode-enum-type"></a>Tipo de número automaticUpdateMode
 
 Namespace: microsoft.graph
 
@@ -23,17 +23,12 @@ Valores possíveis para o modo de atualização automática.
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|UserDefined|,0|Definido pelo usuário, valor padrão, sem intenção.|
-|notifyDownload|1 |Notifique o download.|
-|autoInstallAtMaintenanceTime|2 |Instalação automática no momento da manutenção.|
-|autoInstallAndRebootAtMaintenanceTime|3 |Instalação automática e reinicialização no momento da manutenção.|
-|autoInstallAndRebootAtScheduledTime|4 |Instalação automática e reinicialização no horário agendado.|
-|autoInstallAndRebootWithoutEndUserControl|5 |Instalação e reinício automáticos sem controle de usuário final|
-
-
-
-
-
+|userDefined|0|User Defined, default value, no intent.|
+|notifyDownload|1|Notificar no download.|
+|autoInstallAtMaintenanceTime|2|Instalação automática no momento da manutenção.|
+|autoInstallAndRebootAtMaintenanceTime|3|Instale e reinicie automaticamente no momento da manutenção.|
+|autoInstallAndRebootAtScheduledTime|4 |Instale e reinicie automaticamente no horário agendado.|
+|autoInstallAndRebootWithoutEndUserControl|5 |Instalar e reiniciar automaticamente sem o controle do usuário final|
 
 
 

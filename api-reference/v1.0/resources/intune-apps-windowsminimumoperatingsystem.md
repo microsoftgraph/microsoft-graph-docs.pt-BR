@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: c9f9dc76e287e6533b2b33606825a19da67d8675
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 574ca504ec7b0cd736735323e534bfd3ed17f31b
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48032485"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52755977"
 ---
 # <a name="windowsminimumoperatingsystem-resource-type"></a>Tipo de recurso windowsMinimumOperatingSystem
 
@@ -28,7 +28,7 @@ O sistema operacional mínimo obrigatório para um aplicativo móvel do Windows.
 |v10_0|Booliano|Windows 10.0 ou posterior.|
 
 ## <a name="relationships"></a>Relações
-Nenhum
+Nenhuma
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
@@ -45,11 +45,6 @@ Veja a seguir uma representação JSON do recurso.
   "v10_0": true
 }
 ```
-
-
-
-
-
 
 
 

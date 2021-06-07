@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: ad931dc531cea8212309abca74e4dae6b6105cdb
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 17856c01f006206298e1efa1ed01fdcac6045557
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48074990"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52755095"
 ---
 # <a name="devicemanagementsettings-resource-type"></a>Tipo de recurso deviceManagementSettings
 
@@ -23,12 +23,12 @@ Ainda não documentado
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|deviceComplianceCheckinThresholdDays|Int32|O número de dias que tem um dispositivo pode ser executado sem fazer check-in para permanecer em conformidade. Valores válidos de 0 a 120|
+|deviceComplianceCheckinThresholdDays|Int32|O número de dias que tem um dispositivo pode ser executado sem fazer check-in para permanecer em conformidade.|
 |isScheduledActionEnabled|Booliano|O recurso está habilitado ou não para ação agendada para a regra.|
 |secureByDefault|Booliano|Quando true, o dispositivo deve ser incompatível quando não há nenhuma política de conformidade direcionada|
 
 ## <a name="relationships"></a>Relações
-Nenhum
+Nenhuma
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
@@ -45,11 +45,6 @@ Veja a seguir uma representação JSON do recurso.
   "secureByDefault": true
 }
 ```
-
-
-
-
-
 
 
 

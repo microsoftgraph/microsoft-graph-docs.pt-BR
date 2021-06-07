@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 1a954871e84a383e0b70ed474045c29ce04d3eae
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: da3967f7be2bac7677f350f6c8f9139c39efabe1
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47965670"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52755109"
 ---
 # <a name="deviceinstallstate-resource-type"></a>Tipo de recurso deviceInstallState
 
@@ -32,7 +32,7 @@ Contém propriedades do estado de instalação de um dispositivo.
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave da entidade.|
+|id|Cadeia de caracteres|Chave da entidade.|
 |deviceName|Cadeia de caracteres|Nome do dispositivo.|
 |deviceId|Cadeia de caracteres|ID do dispositivo.|
 |lastSyncDateTime|DateTimeOffset|Última sincronização de data e hora.|
@@ -43,7 +43,7 @@ Contém propriedades do estado de instalação de um dispositivo.
 |userName|Cadeia de caracteres|Nome de usuário do dispositivo.|
 
 ## <a name="relationships"></a>Relações
-Nenhum
+Nenhuma
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
@@ -67,11 +67,6 @@ Veja a seguir uma representação JSON do recurso.
   "userName": "String"
 }
 ```
-
-
-
-
-
 
 
 

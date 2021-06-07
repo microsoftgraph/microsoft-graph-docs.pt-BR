@@ -1,24 +1,24 @@
 ---
-title: tipo de recurso androidWorkProfileCustomConfiguration
-description: Configuração personalizada de perfil de trabalho do Android
+title: Tipo de recurso androidWorkProfileCustomConfiguration
+description: Configuração personalizada do Perfil de Trabalho do Android
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: df243b827163f3a66baf781dd7e2e4fe2903ff55
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 642338769bfa403ef7cc26a61d21620e76b983ea
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48062845"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52755956"
 ---
-# <a name="androidworkprofilecustomconfiguration-resource-type"></a>tipo de recurso androidWorkProfileCustomConfiguration
+# <a name="androidworkprofilecustomconfiguration-resource-type"></a>Tipo de recurso androidWorkProfileCustomConfiguration
 
 Namespace: microsoft.graph
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Configuração personalizada de perfil de trabalho do Android
+Configuração personalizada do Perfil de Trabalho do Android
 
 
 Herda de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)
@@ -26,20 +26,20 @@ Herda de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfigurat
 ## <a name="methods"></a>Methods
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
-|[Listar androidWorkProfileCustomConfigurations](../api/intune-deviceconfig-androidworkprofilecustomconfiguration-list.md)|coleção [androidWorkProfileCustomConfiguration](../resources/intune-deviceconfig-androidworkprofilecustomconfiguration.md)|Listar Propriedades e relações dos objetos [androidWorkProfileCustomConfiguration](../resources/intune-deviceconfig-androidworkprofilecustomconfiguration.md) .|
-|[Obter androidWorkProfileCustomConfiguration](../api/intune-deviceconfig-androidworkprofilecustomconfiguration-get.md)|[androidWorkProfileCustomConfiguration](../resources/intune-deviceconfig-androidworkprofilecustomconfiguration.md)|Leia as propriedades e as relações do objeto [androidWorkProfileCustomConfiguration](../resources/intune-deviceconfig-androidworkprofilecustomconfiguration.md) .|
-|[Criar androidWorkProfileCustomConfiguration](../api/intune-deviceconfig-androidworkprofilecustomconfiguration-create.md)|[androidWorkProfileCustomConfiguration](../resources/intune-deviceconfig-androidworkprofilecustomconfiguration.md)|Criar um novo objeto [androidWorkProfileCustomConfiguration](../resources/intune-deviceconfig-androidworkprofilecustomconfiguration.md) .|
-|[Excluir androidWorkProfileCustomConfiguration](../api/intune-deviceconfig-androidworkprofilecustomconfiguration-delete.md)|Nenhum|Exclui [androidWorkProfileCustomConfiguration](../resources/intune-deviceconfig-androidworkprofilecustomconfiguration.md).|
-|[Atualizar androidWorkProfileCustomConfiguration](../api/intune-deviceconfig-androidworkprofilecustomconfiguration-update.md)|[androidWorkProfileCustomConfiguration](../resources/intune-deviceconfig-androidworkprofilecustomconfiguration.md)|Atualiza as propriedades de um objeto [androidWorkProfileCustomConfiguration](../resources/intune-deviceconfig-androidworkprofilecustomconfiguration.md) .|
+|[Listar androidWorkProfileCustomConfigurations](../api/intune-deviceconfig-androidworkprofilecustomconfiguration-list.md)|[coleção androidWorkProfileCustomConfiguration](../resources/intune-deviceconfig-androidworkprofilecustomconfiguration.md)|Listar propriedades e relações dos objetos [androidWorkProfileCustomConfiguration.](../resources/intune-deviceconfig-androidworkprofilecustomconfiguration.md)|
+|[Obter androidWorkProfileCustomConfiguration](../api/intune-deviceconfig-androidworkprofilecustomconfiguration-get.md)|[androidWorkProfileCustomConfiguration](../resources/intune-deviceconfig-androidworkprofilecustomconfiguration.md)|Leia propriedades e relações do [objeto androidWorkProfileCustomConfiguration.](../resources/intune-deviceconfig-androidworkprofilecustomconfiguration.md)|
+|[Criar androidWorkProfileCustomConfiguration](../api/intune-deviceconfig-androidworkprofilecustomconfiguration-create.md)|[androidWorkProfileCustomConfiguration](../resources/intune-deviceconfig-androidworkprofilecustomconfiguration.md)|Crie um novo [objeto androidWorkProfileCustomConfiguration.](../resources/intune-deviceconfig-androidworkprofilecustomconfiguration.md)|
+|[Excluir androidWorkProfileCustomConfiguration](../api/intune-deviceconfig-androidworkprofilecustomconfiguration-delete.md)|None|Exclui um [androidWorkProfileCustomConfiguration](../resources/intune-deviceconfig-androidworkprofilecustomconfiguration.md).|
+|[Atualizar androidWorkProfileCustomConfiguration](../api/intune-deviceconfig-androidworkprofilecustomconfiguration-update.md)|[androidWorkProfileCustomConfiguration](../resources/intune-deviceconfig-androidworkprofilecustomconfiguration.md)|Atualize as propriedades de um [objeto androidWorkProfileCustomConfiguration.](../resources/intune-deviceconfig-androidworkprofilecustomconfiguration.md)|
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave da entidade. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|id|Cadeia de caracteres|Chave da entidade. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|DateTime em que o objeto foi criado. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|description|String|O administrador forneceu a descrição da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|displayName|String|O administrador forneceu o nome da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|descrição|Cadeia de caracteres|O administrador forneceu a descrição da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|displayName|Cadeia de caracteres|O administrador forneceu o nome da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |versão|Int32|Versão da configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |omaSettings|Coleção [omaSetting](../resources/intune-deviceconfig-omasetting.md)|Configurações OMA. Esta coleção pode conter um máximo de 500 elementos.|
 
@@ -48,7 +48,7 @@ Herda de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfigurat
 |:---|:---|:---|
 |assignments|Coleção [deviceConfigurationAssignment](../resources/intune-deviceconfig-deviceconfigurationassignment.md)|A lista de atribuições para o perfil de configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |deviceStatuses|Coleção [deviceConfigurationDeviceStatus](../resources/intune-deviceconfig-deviceconfigurationdevicestatus.md)|Status da instalação da configuração de dispositivo por dispositivo. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|userStatuses|Coleção [deviceConfigurationUserStatus](../resources/intune-deviceconfig-deviceconfigurationuserstatus.md)|Status de instalação da configuração do dispositivo por usuário. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|userStatuses|Coleção [deviceConfigurationUserStatus](../resources/intune-deviceconfig-deviceconfigurationuserstatus.md)|Status da instalação de configuração do dispositivo pelo usuário. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |deviceStatusOverview|[deviceConfigurationDeviceOverview](../resources/intune-deviceconfig-deviceconfigurationdeviceoverview.md)|Visão geral de status de dispositivos para Configuração de Dispositivo. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |userStatusOverview|[deviceConfigurationUserOverview](../resources/intune-deviceconfig-deviceconfigurationuseroverview.md)|Visão geral de status de usuários para Configuração de Dispositivo. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |deviceSettingStateSummaries|Coleção [settingStateDeviceSummary](../resources/intune-deviceconfig-settingstatedevicesummary.md)|Visão geral de dispositivos de configuração para Configuração de Dispositivo. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
@@ -75,17 +75,11 @@ Veja a seguir uma representação JSON do recurso.
       "@odata.type": "microsoft.graph.omaSetting",
       "displayName": "String",
       "description": "String",
-      "omaUri": "String",
-      "value": 1024
+      "omaUri": "String"
     }
   ]
 }
 ```
-
-
-
-
-
 
 
 

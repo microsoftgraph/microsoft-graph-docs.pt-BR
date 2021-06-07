@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 12605dd794f6a94223adc67b3e36005a296bbe91
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: c8652019aa90c9c7d0558756b430d1d62de809a0
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48086552"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52755732"
 ---
 # <a name="windowsinformationprotectionpolicy-resource-type"></a>Tipo de recurso windowsInformationProtectionPolicy
 
@@ -23,7 +23,7 @@ Política para proteção de informações do Windows sem MDM
 
 Herda de [windowsInformationProtection](../resources/intune-mam-windowsinformationprotection.md)
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
 |[Listar windowsInformationProtectionPolicies](../api/intune-mam-windowsinformationprotectionpolicy-list.md)|Coleção [windowsInformationProtectionPolicy](../resources/intune-mam-windowsinformationprotectionpolicy.md)|Listar propriedades e relações dos objetos [windowsInformationProtectionPolicy](../resources/intune-mam-windowsinformationprotectionpolicy.md).|
@@ -36,12 +36,12 @@ Herda de [windowsInformationProtection](../resources/intune-mam-windowsinformati
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |displayName|Cadeia de caracteres|Nome para exibição da política. Herdado de [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
-|description|Cadeia de caracteres|A descrição da política. Herdado de [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
+|descrição|Cadeia de caracteres|A descrição da política. Herdado de [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
 |createdDateTime|DateTimeOffset|A data e a hora da criação da política. Herdado de [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
 |lastModifiedDateTime|DateTimeOffset|Última vez em que a política foi modificada. Herdado de [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
 |id|Cadeia de caracteres|Chave da entidade. Herdado de [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
 |version|String|Versão da entidade. Herdado de [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
-|enforcementLevel|[windowsInformationProtectionEnforcementLevel](../resources/intune-mam-windowsinformationprotectionenforcementlevel.md)|Nível de imposição WIP. Confira a definição de enumeração para valores suportados herdados de [windowsInformationProtection](../resources/intune-mam-windowsinformationprotection.md). Os valores possíveis são: `noProtection`, `encryptAndAuditOnly`, `encryptAuditAndPrompt`, `encryptAuditAndBlock`.|
+|enforcementLevel|[windowsInformationProtectionEnforcementLevel](../resources/intune-mam-windowsinformationprotectionenforcementlevel.md)|Nível de aplicação da WIP. Consulte a definição Enum para valores com suporte Herdados de [windowsInformationProtection](../resources/intune-mam-windowsinformationprotection.md). Os valores possíveis são: `noProtection`, `encryptAndAuditOnly`, `encryptAuditAndPrompt`, `encryptAuditAndBlock`.|
 |enterpriseDomain|String|Domínio primário da empresa Herdado de [windowsInformationProtection](../resources/intune-mam-windowsinformationprotection.md)|
 |enterpriseProtectedDomainNames|Coleção [windowsInformationProtectionResourceCollection](../resources/intune-mam-windowsinformationprotectionresourcecollection.md)|Lista de domínios primários da empresa a serem protegidos Herdado de [windowsInformationProtection](../resources/intune-mam-windowsinformationprotection.md)|
 |protectionUnderLockConfigRequired|Boolean|Especifica se a proteção no recurso de bloqueio (também conhecido como criptografar com pin) deve ser configurada Herdado de [windowsInformationProtection](../resources/intune-mam-windowsinformationprotection.md)|
@@ -69,7 +69,7 @@ Herda de [windowsInformationProtection](../resources/intune-mam-windowsinformati
 |pinMinimumLength|Int32|Valor inteiro que define o número mínimo de caracteres necessários para o PIN. O valor padrão é 4. O menor número que é possível definir para essa configuração de política é 4. O maior número que é possível definir deve ser menor que o número configurado na política de comprimento máximo do PIN ou menor que 127, seja qual for o menor.|
 |pinUppercaseLetters|[windowsInformationProtectionPinCharacterRequirements](../resources/intune-mam-windowsinformationprotectionpincharacterrequirements.md)|Valor inteiro que configura o uso de letras maiúsculas no PIN do Windows Hello para Empresas. O padrão é NotAllow. Os valores possíveis são: `notAllow`, `requireAtLeastOne`, `allow`.|
 |pinLowercaseLetters|[windowsInformationProtectionPinCharacterRequirements](../resources/intune-mam-windowsinformationprotectionpincharacterrequirements.md)|Valor inteiro que configura o uso de letras minúsculas no PIN do Windows Hello para Empresas. O padrão é NotAllow. Os valores possíveis são: `notAllow`, `requireAtLeastOne`, `allow`.|
-|pinSpecialCharacters|[windowsInformationProtectionPinCharacterRequirements](../resources/intune-mam-windowsinformationprotectionpincharacterrequirements.md)|Valor inteiro que configura o uso de caracteres especiais no PIN do Windows Hello para Empresas. Os caracteres especiais válidos para o PIN do Windows Hello para Empresas incluem: ! " # $ % & ' ( ) * + , - . / : ; < = > ? @ \[ \ \] ^ _ \` { | } ~. O padrão é NotAllow. Os valores possíveis são: `notAllow`, `requireAtLeastOne`, `allow`.|
+|pinSpecialCharacters|[windowsInformationProtectionPinCharacterRequirements](../resources/intune-mam-windowsinformationprotectionpincharacterrequirements.md)|Valor inteiro que configura o uso de caracteres especiais no PIN do Windows Hello para Empresas. Os caracteres especiais válidos para o PIN do Windows Hello para Empresas incluem: ! " # $ % & ' ( ) * + , - . / : ; < = > ? @ \[ \ \] ^ _ ` { | } ~. Default is NotAllow. Possible values are: ` notAllow `, ` requireAtLeastOne `, ` allow'.|
 |pinExpirationDays|Int32|O valor inteiro especifica o período de tempo (em dias) em que um PIN pode ser usado antes que o sistema exija que o usuário o altere. O maior número que é possível definir para essa configuração de política é 730. O menor número que é possível definir para essa configuração de política é 0. Se essa política for definida como 0, o PIN do usuário nunca irá expirar. Este nó foi adicionado no Windows 10, versão 1511. O padrão é 0.|
 |numberOfPastPinsRemembered|Int32|O valor inteiro que especifica o número de PINs anteriores que podem ser associados a uma conta de usuário que não podem ser reutilizados. O maior número que é possível definir para essa configuração de política é 50. O menor número que é possível definir para essa configuração de política é 0. Se essa política for definida como 0, o armazenamento de PINs anteriores não será necessário. Este nó foi adicionado no Windows 10, versão 1511. O padrão é 0.|
 |passwordMaximumAttemptCount|Int32|O número de falhas de autenticação permitido antes que o dispositivo seja apagado. O valor 0 desabilita a funcionalidade de apagamento do dispositivo. O intervalo é um inteiro X, em que 4 <= X <= 16 para desktop e 0 <= X <= 999 para dispositivos móveis.|
@@ -125,7 +125,7 @@ Veja a seguir uma representação JSON do recurso.
   "iconsVisible": true,
   "protectedApps": [
     {
-      "@odata.type": "microsoft.graph.windowsInformationProtectionApp",
+      "@odata.type": "microsoft.graph.windowsInformationProtectionStoreApp",
       "displayName": "String",
       "description": "String",
       "publisherName": "String",
@@ -135,7 +135,7 @@ Veja a seguir uma representação JSON do recurso.
   ],
   "exemptApps": [
     {
-      "@odata.type": "microsoft.graph.windowsInformationProtectionApp",
+      "@odata.type": "microsoft.graph.windowsInformationProtectionStoreApp",
       "displayName": "String",
       "description": "String",
       "publisherName": "String",
@@ -171,9 +171,7 @@ Veja a seguir uma representação JSON do recurso.
       "displayName": "String",
       "ranges": [
         {
-          "@odata.type": "microsoft.graph.iPv6Range",
-          "lowerAddress": "String",
-          "upperAddress": "String"
+          "@odata.type": "microsoft.graph.ipRange"
         }
       ]
     }
@@ -232,11 +230,6 @@ Veja a seguir uma representação JSON do recurso.
   "daysWithoutContactBeforeUnenroll": 1024
 }
 ```
-
-
-
-
-
 
 
 

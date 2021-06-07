@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8044726067e7208fb5429c02262bf5e698139a14
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 522ca687f9169066575d1bd8fb3db1e4345d9981
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48069047"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52755599"
 ---
 # <a name="iosdevicetype-resource-type"></a>Tipo de recurso do iosDeviceType
 
@@ -27,7 +27,7 @@ Contém propriedades de possíveis tipos de dispositivos de iOS que o aplicativo
 |iPhoneAndIPod|Booliano|Se o aplicativo deve ser executado em iPhones e iPods.|
 
 ## <a name="relationships"></a>Relações
-Nenhum
+Nenhuma
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
@@ -43,11 +43,6 @@ Veja a seguir uma representação JSON do recurso.
   "iPhoneAndIPod": true
 }
 ```
-
-
-
-
-
 
 
 

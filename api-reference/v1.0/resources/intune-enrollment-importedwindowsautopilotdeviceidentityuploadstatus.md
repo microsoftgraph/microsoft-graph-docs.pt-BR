@@ -1,18 +1,18 @@
 ---
-title: tipo de enumeração importedWindowsAutopilotDeviceIdentityUploadStatus
+title: tipo de número importedWindowsAutopilotDeviceIdentityUploadStatus
 description: Ainda não documentado
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 7f680c8adbb39eb8707635187ec2aa9b92a51a4a
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: e7fed4dfb97de82f536cc9f26229191c5d9f543f
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48048425"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52754976"
 ---
-# <a name="importedwindowsautopilotdeviceidentityuploadstatus-enum-type"></a>tipo de enumeração importedWindowsAutopilotDeviceIdentityUploadStatus
+# <a name="importedwindowsautopilotdeviceidentityuploadstatus-enum-type"></a>tipo de número importedWindowsAutopilotDeviceIdentityUploadStatus
 
 Namespace: microsoft.graph
 
@@ -23,15 +23,10 @@ Ainda não documentado
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|noupload|,0|Nenhum status de carregamento.|
-|função|1 |Status pendente.|
-|complete|2 |Status completo.|
-|erro|3 |Status do erro.|
-
-
-
-
-
+|noUpload|0|Nenhum status de carregamento.|
+|pendente|1|Status pendente.|
+|complete|2|Status completo.|
+|erro|3|Status do erro.|
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8d2c9043e9283258b904cef1a61a3ce502f69601
-ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
+ms.openlocfilehash: 8eff848b54d3a84f6fb60d2c8335d71417f2afb0
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50291892"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52755753"
 ---
 # <a name="managedappregistration-resource-type"></a>Tipo de recurso managedAppRegistration
 
@@ -21,7 +21,7 @@ Namespace: microsoft.graph
 O ManagedAppEntity é o tipo de entidade de base para todos os outros tipos de entidades em um fluxo de trabalho de gerenciamento de aplicativos.
 O recurso ManagedAppRegistration representa os detalhes de um aplicativo, com capacidade de gerenciamento, usado por um membro da organização.
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
 |[Listar managedAppRegistrations](../api/intune-mam-managedappregistration-list.md)|Coleção [managedAppRegistration](../resources/intune-mam-managedappregistration.md)|Listar propriedades e relações dos objetos de [managedAppRegistration](../resources/intune-mam-managedappregistration.md).|
@@ -42,13 +42,13 @@ O recurso ManagedAppRegistration representa os detalhes de um aplicativo, com ca
 |flaggedReasons|[Coleção managedAppFlaggedReason](../resources/intune-mam-managedappflaggedreason.md)|Zero ou mais motivos para a sinalização de um registro de aplicativo. E.g. aplicativo usado em dispositivo modificado|
 |userId|Cadeia de caracteres|A ID de usuário à qual este registro de aplicativo pertence.|
 |appIdentifier|[mobileAppIdentifier](../resources/intune-mam-mobileappidentifier.md)|O identificador do pacote do aplicativo|
-|id|String|Chave da entidade.|
+|id|Cadeia de caracteres|Chave da entidade.|
 |versão|String|Versão da entidade.|
 
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|
 |:---|:---|:---|
-|appliedPolicies|Coleção [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|Zero ou mais políticas já aplicadas ao aplicativo registrado quando ele foi sincronizado pela última vez com o serviço de gerenciamento.|
+|appliedPolicies|Coleção [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|Zero ou mais políticas já aplicadas no aplicativo registrado quando este foi sincronizado pela última vez com o serviço de gerenciamento.|
 |intendedPolicies|Coleção [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|Zero ou mais administradores de políticas destinados ao aplicativo a partir de agora.|
 |operations|Coleção [managedAppOperation](../resources/intune-mam-managedappoperation.md)|Zero ou mais operações de longa execução desencadeadas no registro do aplicativo.|
 
@@ -76,23 +76,13 @@ Veja a seguir uma representação JSON do recurso.
   ],
   "userId": "String",
   "appIdentifier": {
-    "@odata.type": "microsoft.graph.mobileAppIdentifier"
+    "@odata.type": "microsoft.graph.androidMobileAppIdentifier",
+    "packageId": "String"
   },
   "id": "String (identifier)",
   "version": "String"
 }
 ```
-
-<!-- {
-  "type": "#page.annotation",
-  "suppressions": [
-  ],
-}
--->
-
-
-
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: ecc7e479ccc2909b96fbcb2b9d9a12900716ea25
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 403952300d9072072b99f0dd58aa56e32ca22d69
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48072995"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52755711"
 ---
 # <a name="localizednotificationmessage-resource-type"></a>tipo de recurso localizedNotificationMessage
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 O conteúdo do texto de um Modelo de mensagem de notificação para a localidade especificada.
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
 |[Listar localizedNotificationMessages](../api/intune-notification-localizednotificationmessage-list.md)|Conjunto [localizedNotificationMessage](../resources/intune-notification-localizednotificationmessage.md)|Listar propriedades e relações de objetos de [localizedNotificationMessage](../resources/intune-notification-localizednotificationmessage.md).|
@@ -35,12 +35,12 @@ O conteúdo do texto de um Modelo de mensagem de notificação para a localidade
 |id|Cadeia de caracteres|Chave da entidade.|
 |lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto.|
 |localidade|Cadeia de caracteres|A localidade para a qual esta mensagem se destina.|
-|assunto|Cadeia de caracteres|O assunto do modelo da mensagem.|
+|Assunto|Cadeia de caracteres|O assunto do modelo da mensagem.|
 |messageTemplate|Cadeia de caracteres|O conteúdo do modelo da mensagem.|
 |isDefault|Booliano|Sinaliza para indicar se esta é ou não a localidade padrão do fallback de idioma. Esse sinalizador só pode ser definido. Para remover a definição, defina esta propriedade como verdadeira na outra Mensagem de notificação localizada.|
 
 ## <a name="relationships"></a>Relações
-Nenhum
+Nenhuma
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
@@ -61,11 +61,6 @@ Veja a seguir uma representação JSON do recurso.
   "isDefault": true
 }
 ```
-
-
-
-
-
 
 
 

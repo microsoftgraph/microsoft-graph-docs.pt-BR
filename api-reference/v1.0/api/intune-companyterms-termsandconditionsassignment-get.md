@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6752d8d7915dbd956630cf9860123ebc3f1830c6
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ebb8085b4701a473093cfa6e79cbc44ab0d1b2ac
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47972984"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52756698"
 ---
 # <a name="get-termsandconditionsassignment"></a>Obter termsAndConditionsAssignment
 
@@ -23,11 +23,11 @@ Ler propriedades e relações do objeto [termsAndConditionsAssignment](../resour
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
+|Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
+|Delegado (conta corporativa ou de estudante)|DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|Sem suporte.|
+|Aplicativo|DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -66,23 +66,19 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 246
+Content-Length: 300
 
 {
   "value": {
     "@odata.type": "#microsoft.graph.termsAndConditionsAssignment",
     "id": "64c1a196-a196-64c1-96a1-c16496a1c164",
     "target": {
-      "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
+      "@odata.type": "microsoft.graph.configurationManagerCollectionAssignmentTarget",
+      "collectionId": "Collection Id value"
     }
   }
 }
 ```
-
-
-
-
-
 
 
 

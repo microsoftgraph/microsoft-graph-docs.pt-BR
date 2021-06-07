@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 32186cd4c5b4321d668e350b5f03ec6e127399cd
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: c42ea0ca8175b22d24061133a8c748f7225e2dd3
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48094453"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52755130"
 ---
 # <a name="microsoftstoreforbusinessappassignmentsettings-resource-type"></a>tipo de recurso microsoftStoreForBusinessAppAssignmentSettings
 
@@ -29,7 +29,7 @@ Herda de [mobileAppAssignmentSettings](../resources/intune-apps-mobileappassignm
 |useDeviceContext|Booliano|Se é para usar ou não o contexto de execução do dispositivo em aplicativo móvel da Microsoft Store para Empresas.|
 
 ## <a name="relationships"></a>Relações
-Nenhum
+Nenhuma
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
@@ -44,11 +44,6 @@ Veja a seguir uma representação JSON do recurso.
   "useDeviceContext": true
 }
 ```
-
-
-
-
-
 
 
 

@@ -1,37 +1,32 @@
 ---
-title: tipo de enumeração bitLockerEncryptionMethod
-description: Tipos BitLockerEncryptionMethod
+title: Tipo de número bitLockerEncryptionMethod
+description: Tipos de BitLockerEncryptionMethod
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 9b8c6ad3e890a06250e9d998145b1e3e67d4e0d4
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 89bc204eaabc8b5c7f1c6b919aee2638317955f4
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48051106"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52755893"
 ---
-# <a name="bitlockerencryptionmethod-enum-type"></a>tipo de enumeração bitLockerEncryptionMethod
+# <a name="bitlockerencryptionmethod-enum-type"></a>Tipo de número bitLockerEncryptionMethod
 
 Namespace: microsoft.graph
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Tipos BitLockerEncryptionMethod
+Tipos de BitLockerEncryptionMethod
 
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|aesCbc128|3 |AES-CBC 128-bit.|
-|aesCbc256|4 |AES-CBC 256-bit.|
-|xtsAes128|6 |XTS-AES 128-bit.|
-|xtsAes256|7 |XTS-AES 256-bit.|
-
-
-
-
-
+|aesCbc128|3|AES-CBC de 128 bits.|
+|aesCbc256|4 |AES-CBC 256 bits.|
+|xtsAes128|6 |XTS-AES 128 bits.|
+|xtsAes256|7 |XTS-AES 256 bits.|
 
 
 

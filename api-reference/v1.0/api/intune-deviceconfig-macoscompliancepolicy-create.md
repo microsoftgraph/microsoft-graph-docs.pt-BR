@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 002620d8c0dd3b9538071d557473cf5bf723dbcc
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 44476093dbcabe5db8a3bd6a8ea18673abd6ecab
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48073142"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52753850"
 ---
 # <a name="create-macoscompliancepolicy"></a>Criar macOSCompliancePolicy
 
@@ -23,11 +23,11 @@ Cria um novo objeto [macOSCompliancePolicy](../resources/intune-deviceconfig-mac
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
+|Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|Sem suporte.|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -53,7 +53,7 @@ A tabela a seguir mostra as propriedades obrigatórias ao criar macOSComplianceP
 |:---|:---|:---|
 |id|Cadeia de caracteres|Chave da entidade. Herdada de [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
 |createdDateTime|DateTimeOffset|DateTime em que o objeto foi criado. Herdada de [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
-|description|Cadeia de caracteres|O administrador forneceu a descrição da Configuração do dispositivo. Herdada de [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
+|descrição|Cadeia de caracteres|O administrador forneceu a descrição da Configuração do dispositivo. Herdada de [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
 |lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto. Herdada de [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
 |displayName|Cadeia de caracteres|O administrador forneceu o nome da Configuração do dispositivo. Herdada de [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
 |version|Int32|Versão da configuração do dispositivo. Herdada de [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
@@ -72,8 +72,8 @@ A tabela a seguir mostra as propriedades obrigatórias ao criar macOSComplianceP
 |deviceThreatProtectionRequiredSecurityLevel|[deviceThreatProtectionLevel](../resources/intune-deviceconfig-devicethreatprotectionlevel.md)|Exige o nível mínimo de risco de Proteção contra Ameaças Móveis para indicar falta de conformidade. Os valores possíveis são: `unavailable`, `secured`, `low`, `medium`, `high`, `notSet`.|
 |storageRequireEncryption|Booliano|Exige criptografia em dispositivos Mac OS.|
 |firewallEnabled|Booliano|Se o firewall deve ser habilitado ou não.|
-|firewallBlockAllIncoming|Booliano|Corresponde à opção "bloquear todas as conexões de entrada".|
-|firewallEnableStealthMode|Booliano|Corresponde a "Habilitar modo oculto".|
+|firewallBlockAllIncoming|Booliano|Corresponde à opção "Bloquear todas as conexões de entrada".|
+|firewallEnableStealthMode|Booliano|Corresponde a "Habilitar o modo de furtividade".|
 
 
 
@@ -148,11 +148,6 @@ Content-Length: 1021
   "firewallEnableStealthMode": true
 }
 ```
-
-
-
-
-
 
 
 
