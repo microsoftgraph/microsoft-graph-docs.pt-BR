@@ -5,31 +5,31 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: aaf7af9f7f833467fb61ef8ca370570f16296acf
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f46e29346e62cda73fe24d9ad6c9421cb769f18b
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47968000"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52752564"
 ---
-# <a name="list-targetedmanagedappprotections"></a><span data-ttu-id="f38fb-103">Listar targetedManagedAppProtections</span><span class="sxs-lookup"><span data-stu-id="f38fb-103">List targetedManagedAppProtections</span></span>
+# <a name="list-targetedmanagedappprotections"></a><span data-ttu-id="badea-103">Listar targetedManagedAppProtections</span><span class="sxs-lookup"><span data-stu-id="badea-103">List targetedManagedAppProtections</span></span>
 
-<span data-ttu-id="f38fb-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="f38fb-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="badea-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="badea-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="f38fb-105">**Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="f38fb-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="badea-105">**Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="badea-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="f38fb-106">Listar propriedades e relações dos objetos [targetedManagedAppProtection](../resources/intune-mam-targetedmanagedappprotection.md).</span><span class="sxs-lookup"><span data-stu-id="f38fb-106">List properties and relationships of the [targetedManagedAppProtection](../resources/intune-mam-targetedmanagedappprotection.md) objects.</span></span>
+<span data-ttu-id="badea-106">Listar propriedades e relações dos objetos [targetedManagedAppProtection](../resources/intune-mam-targetedmanagedappprotection.md).</span><span class="sxs-lookup"><span data-stu-id="badea-106">List properties and relationships of the [targetedManagedAppProtection](../resources/intune-mam-targetedmanagedappprotection.md) objects.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="f38fb-107">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="f38fb-107">Prerequisites</span></span>
-<span data-ttu-id="f38fb-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="f38fb-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="badea-107">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="badea-107">Prerequisites</span></span>
+<span data-ttu-id="badea-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="badea-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="f38fb-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="f38fb-110">Permission type</span></span>|<span data-ttu-id="f38fb-111">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="f38fb-111">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="badea-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="badea-110">Permission type</span></span>|<span data-ttu-id="badea-111">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="badea-111">Permissions (from least to most privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="f38fb-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="f38fb-112">Delegated (work or school account)</span></span>|<span data-ttu-id="f38fb-113">DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All</span><span class="sxs-lookup"><span data-stu-id="f38fb-113">DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All</span></span>|
-|<span data-ttu-id="f38fb-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="f38fb-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="f38fb-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="f38fb-115">Not supported.</span></span>|
-|<span data-ttu-id="f38fb-116">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="f38fb-116">Application</span></span>|<span data-ttu-id="f38fb-117">DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All</span><span class="sxs-lookup"><span data-stu-id="f38fb-117">DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All</span></span>|
+|<span data-ttu-id="badea-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="badea-112">Delegated (work or school account)</span></span>|<span data-ttu-id="badea-113">DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="badea-113">DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All</span></span>|
+|<span data-ttu-id="badea-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="badea-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="badea-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="badea-115">Not supported.</span></span>|
+|<span data-ttu-id="badea-116">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="badea-116">Application</span></span>|<span data-ttu-id="badea-117">DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="badea-117">DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="f38fb-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="f38fb-118">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="badea-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="badea-118">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -40,28 +40,28 @@ GET /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/appl
 GET /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/intendedPolicies
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="f38fb-119">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="f38fb-119">Request headers</span></span>
-|<span data-ttu-id="f38fb-120">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="f38fb-120">Header</span></span>|<span data-ttu-id="f38fb-121">Valor</span><span class="sxs-lookup"><span data-stu-id="f38fb-121">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="badea-119">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="badea-119">Request headers</span></span>
+|<span data-ttu-id="badea-120">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="badea-120">Header</span></span>|<span data-ttu-id="badea-121">Valor</span><span class="sxs-lookup"><span data-stu-id="badea-121">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="f38fb-122">Autorização</span><span class="sxs-lookup"><span data-stu-id="f38fb-122">Authorization</span></span>|<span data-ttu-id="f38fb-123">&lt;Token&gt; de portador obrigatório.</span><span class="sxs-lookup"><span data-stu-id="f38fb-123">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="f38fb-124">Aceitar</span><span class="sxs-lookup"><span data-stu-id="f38fb-124">Accept</span></span>|<span data-ttu-id="f38fb-125">application/json</span><span class="sxs-lookup"><span data-stu-id="f38fb-125">application/json</span></span>|
+|<span data-ttu-id="badea-122">Autorização</span><span class="sxs-lookup"><span data-stu-id="badea-122">Authorization</span></span>|<span data-ttu-id="badea-123">&lt;Token&gt; de portador obrigatório.</span><span class="sxs-lookup"><span data-stu-id="badea-123">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="badea-124">Aceitar</span><span class="sxs-lookup"><span data-stu-id="badea-124">Accept</span></span>|<span data-ttu-id="badea-125">application/json</span><span class="sxs-lookup"><span data-stu-id="badea-125">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="f38fb-126">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="f38fb-126">Request body</span></span>
-<span data-ttu-id="f38fb-127">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="f38fb-127">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="badea-126">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="badea-126">Request body</span></span>
+<span data-ttu-id="badea-127">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="badea-127">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="f38fb-128">Resposta</span><span class="sxs-lookup"><span data-stu-id="f38fb-128">Response</span></span>
-<span data-ttu-id="f38fb-129">Se tiver êxito, este método retornará um código de resposta `200 OK` e uma coleção de objetos [targetedManagedAppProtection](../resources/intune-mam-targetedmanagedappprotection.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="f38fb-129">If successful, this method returns a `200 OK` response code and a collection of [targetedManagedAppProtection](../resources/intune-mam-targetedmanagedappprotection.md) objects in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="badea-128">Resposta</span><span class="sxs-lookup"><span data-stu-id="badea-128">Response</span></span>
+<span data-ttu-id="badea-129">Se tiver êxito, este método retornará um código de resposta `200 OK` e uma coleção de objetos [targetedManagedAppProtection](../resources/intune-mam-targetedmanagedappprotection.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="badea-129">If successful, this method returns a `200 OK` response code and a collection of [targetedManagedAppProtection](../resources/intune-mam-targetedmanagedappprotection.md) objects in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="f38fb-130">Exemplo</span><span class="sxs-lookup"><span data-stu-id="f38fb-130">Example</span></span>
+## <a name="example"></a><span data-ttu-id="badea-130">Exemplo</span><span class="sxs-lookup"><span data-stu-id="badea-130">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="f38fb-131">Solicitação</span><span class="sxs-lookup"><span data-stu-id="f38fb-131">Request</span></span>
-<span data-ttu-id="f38fb-132">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="f38fb-132">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="badea-131">Solicitação</span><span class="sxs-lookup"><span data-stu-id="badea-131">Request</span></span>
+<span data-ttu-id="badea-132">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="badea-132">Here is an example of the request.</span></span>
 ``` http
 GET https://graph.microsoft.com/v1.0/deviceAppManagement/managedAppPolicies
 ```
 
-### <a name="response"></a><span data-ttu-id="f38fb-133">Resposta</span><span class="sxs-lookup"><span data-stu-id="f38fb-133">Response</span></span>
-<span data-ttu-id="f38fb-p102">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="f38fb-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="badea-133">Resposta</span><span class="sxs-lookup"><span data-stu-id="badea-133">Response</span></span>
+<span data-ttu-id="badea-p102">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="badea-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -111,8 +111,6 @@ Content-Length: 1792
   ]
 }
 ```
-
-
 
 
 
