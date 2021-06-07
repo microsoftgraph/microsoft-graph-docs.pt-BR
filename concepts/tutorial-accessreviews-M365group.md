@@ -1,53 +1,53 @@
 ---
-title: 'Tutorial: Use a API de críticas de acesso para revisar o acesso de convidados aos seus grupos do Microsoft 365'
-description: Usar a API de críticas de acesso para revisar o acesso de convidados aos seus grupos do Microsoft 365
+title: 'Tutorial: use a API de críticas de acesso para revisar o acesso de convidados aos grupos Microsoft 365 seus clientes'
+description: Use a API de críticas de acesso para revisar o acesso de convidados aos grupos Microsoft 365 de convidados
 author: FaithOmbongi
 localization_priority: Normal
 ms.prod: governance
-ms.openlocfilehash: 216d6e345fcbb2919593f95b327a2b83037e4535
-ms.sourcegitcommit: 32c83957ee69f21a10cd5f759adb884ce4b41c52
+ms.openlocfilehash: ad34932926a658d498242dd168ac7fee1d2b31a1
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51921065"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52751136"
 ---
-# <a name="tutorial-use-the-access-reviews-api-to-review-guest-access-to-your-microsoft-365-groups"></a><span data-ttu-id="15f85-103">Tutorial: Use a API de críticas de acesso para revisar o acesso de convidados aos seus grupos do Microsoft 365</span><span class="sxs-lookup"><span data-stu-id="15f85-103">Tutorial: Use the access reviews API to review guest access to your Microsoft 365 groups</span></span>
+# <a name="tutorial-use-the-access-reviews-api-to-review-guest-access-to-your-microsoft-365-groups"></a><span data-ttu-id="d284f-103">Tutorial: use a API de críticas de acesso para revisar o acesso de convidados aos grupos Microsoft 365 seus clientes</span><span class="sxs-lookup"><span data-stu-id="d284f-103">Tutorial: Use the access reviews API to review guest access to your Microsoft 365 groups</span></span>
 
-<span data-ttu-id="15f85-104">Neste tutorial, você usará o Graph Explorer para criar e ler avaliações de acesso que direcionam todos os grupos do Microsoft 365 com usuários convidados no locatário.</span><span class="sxs-lookup"><span data-stu-id="15f85-104">In this tutorial, you will use Graph Explorer to create and read access reviews that targets all Microsoft 365 groups with guest users in the tenant.</span></span> <span data-ttu-id="15f85-105">Para isso, você primeiro usará o Azure AD B2B para convidar e criar um usuário convidado, também conhecido como identidade externa, em seu locatário.</span><span class="sxs-lookup"><span data-stu-id="15f85-105">To achieve this, you'll first use Azure AD B2B to invite and create a guest user, also referred to as an external identity, in your tenant.</span></span> <span data-ttu-id="15f85-106">Em seguida, você adicionará esse usuário convidado ao grupo do Microsoft 365 antes de criar e ler a revisão de acesso.</span><span class="sxs-lookup"><span data-stu-id="15f85-106">Then, you'll add this guest user to your Microsoft 365 group prior to creating and reading the access review.</span></span>
+<span data-ttu-id="d284f-104">Neste tutorial, você usará o Graph Explorer para criar e ler críticas de acesso que direcionam todos os Microsoft 365 grupos com usuários convidados no locatário.</span><span class="sxs-lookup"><span data-stu-id="d284f-104">In this tutorial, you will use Graph Explorer to create and read access reviews that targets all Microsoft 365 groups with guest users in the tenant.</span></span> <span data-ttu-id="d284f-105">Para isso, você primeiro usará o Azure AD B2B para convidar e criar um usuário convidado, também conhecido como identidade externa, em seu locatário.</span><span class="sxs-lookup"><span data-stu-id="d284f-105">To achieve this, you'll first use Azure AD B2B to invite and create a guest user, also referred to as an external identity, in your tenant.</span></span> <span data-ttu-id="d284f-106">Em seguida, você adicionará esse usuário convidado ao seu grupo Microsoft 365 antes de criar e ler a revisão de acesso.</span><span class="sxs-lookup"><span data-stu-id="d284f-106">Then, you'll add this guest user to your Microsoft 365 group prior to creating and reading the access review.</span></span>
 
 >[!NOTE]
-><span data-ttu-id="15f85-107">Os objetos de resposta mostrados neste tutorial podem ser reduzidos para a capacidade de leitura.</span><span class="sxs-lookup"><span data-stu-id="15f85-107">The response objects shown in this tutorial might be shortened for readability.</span></span>
+><span data-ttu-id="d284f-107">Os objetos de resposta mostrados neste tutorial podem ser reduzidos para a capacidade de leitura.</span><span class="sxs-lookup"><span data-stu-id="d284f-107">The response objects shown in this tutorial might be shortened for readability.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="15f85-108">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="15f85-108">Prerequisites</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="d284f-108">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="d284f-108">Prerequisites</span></span>
 
-<span data-ttu-id="15f85-109">Para concluir este tutorial, você precisa dos seguintes recursos e privilégios:</span><span class="sxs-lookup"><span data-stu-id="15f85-109">To complete this tutorial, you need the following resources and privileges:</span></span>
+<span data-ttu-id="d284f-109">Para concluir este tutorial, você precisa dos seguintes recursos e privilégios:</span><span class="sxs-lookup"><span data-stu-id="d284f-109">To complete this tutorial, you need the following resources and privileges:</span></span>
 
-+ <span data-ttu-id="15f85-110">Um locatário do Azure AD funcionando com uma licença Azure AD Premium P2 ou EMS E5 habilitada.</span><span class="sxs-lookup"><span data-stu-id="15f85-110">A working Azure AD tenant with an Azure AD Premium P2 or EMS E5 license enabled.</span></span> 
-+ <span data-ttu-id="15f85-111">Uma conta em um locatário diferente do Azure AD ou uma identidade social que você pode convidar como usuário convidado (usuário B2B).</span><span class="sxs-lookup"><span data-stu-id="15f85-111">An account in a different Azure AD tenant or a social identity that you can invite as a guest user (B2B user).</span></span>
-+ <span data-ttu-id="15f85-112">Entre no [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer) como usuário em uma função de administrador global.</span><span class="sxs-lookup"><span data-stu-id="15f85-112">Sign in to [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer) as a user in a global administrator role.</span></span> 
-+ <span data-ttu-id="15f85-113">As seguintes permissões delegadas: `User.Invite.All` , `AccessReview.ReadWrite.All` , , `Group.ReadWrite.All` `User.ReadWrite.All` .</span><span class="sxs-lookup"><span data-stu-id="15f85-113">The following delegated permissions: `User.Invite.All`, `AccessReview.ReadWrite.All`, `Group.ReadWrite.All`, `User.ReadWrite.All`.</span></span>
++ <span data-ttu-id="d284f-110">Um locatário do Azure AD funcionando com uma licença do Azure AD Premium P2 ou EMS E5 habilitada.</span><span class="sxs-lookup"><span data-stu-id="d284f-110">A working Azure AD tenant with an Azure AD Premium P2 or EMS E5 license enabled.</span></span> 
++ <span data-ttu-id="d284f-111">Uma conta em um locatário diferente do Azure AD ou uma identidade social que você pode convidar como usuário convidado (usuário B2B).</span><span class="sxs-lookup"><span data-stu-id="d284f-111">An account in a different Azure AD tenant or a social identity that you can invite as a guest user (B2B user).</span></span>
++ <span data-ttu-id="d284f-112">Entre no Graph [Explorer](https://developer.microsoft.com/graph/graph-explorer) como usuário em uma função de administrador global.</span><span class="sxs-lookup"><span data-stu-id="d284f-112">Sign in to [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer) as a user in a global administrator role.</span></span> 
++ <span data-ttu-id="d284f-113">As seguintes permissões delegadas: `User.Invite.All` , `AccessReview.ReadWrite.All` , , `Group.ReadWrite.All` `User.ReadWrite.All` .</span><span class="sxs-lookup"><span data-stu-id="d284f-113">The following delegated permissions: `User.Invite.All`, `AccessReview.ReadWrite.All`, `Group.ReadWrite.All`, `User.ReadWrite.All`.</span></span>
 
-<span data-ttu-id="15f85-114">Para consentir com as permissões necessárias no Graph Explorer:</span><span class="sxs-lookup"><span data-stu-id="15f85-114">To consent to the required permissions in Graph Explorer:</span></span>
-1. <span data-ttu-id="15f85-115">Selecione o ícone de configurações à direita dos detalhes da conta do usuário e escolha **Selecionar permissões**.</span><span class="sxs-lookup"><span data-stu-id="15f85-115">Select the settings icon to the right of the user account details, and then choose **Select permissions**.</span></span>
+<span data-ttu-id="d284f-114">Para consentir com as permissões necessárias no Graph Explorer:</span><span class="sxs-lookup"><span data-stu-id="d284f-114">To consent to the required permissions in Graph Explorer:</span></span>
+1. <span data-ttu-id="d284f-115">Selecione o ícone de configurações à direita dos detalhes da conta do usuário e escolha **Selecionar permissões**.</span><span class="sxs-lookup"><span data-stu-id="d284f-115">Select the settings icon to the right of the user account details, and then choose **Select permissions**.</span></span>
    
-   <span data-ttu-id="15f85-116">![Selecionar as permissões do Microsoft Graph](../images/../concepts/images/tutorial-accessreviews-api/settings.png)
-   </span><span class="sxs-lookup"><span data-stu-id="15f85-116">![Select the Microsoft Graph permissions](../images/../concepts/images/tutorial-accessreviews-api/settings.png)
+   <span data-ttu-id="d284f-116">![Selecionar as permissões do Microsoft Graph](../images/../concepts/images/tutorial-accessreviews-api/settings.png)
+   </span><span class="sxs-lookup"><span data-stu-id="d284f-116">![Select the Microsoft Graph permissions](../images/../concepts/images/tutorial-accessreviews-api/settings.png)
 </span></span><!--:::image type="content" source="../images/../concepts/images/tutorial-accessreviews-api/settings.png" alt-text="Select the Microsoft Graph permissions":::-->
 
-2. <span data-ttu-id="15f85-117">Role a lista de permissões para essas permissões:</span><span class="sxs-lookup"><span data-stu-id="15f85-117">Scroll through the list of permissions to these permissions:</span></span>
-   + <span data-ttu-id="15f85-118">AccessReviews (3), expanda e selecione **AccessReviews.ReadWrite.All**.</span><span class="sxs-lookup"><span data-stu-id="15f85-118">AccessReviews (3), expand and then select **AccessReviews.ReadWrite.All**.</span></span>
-   + <span data-ttu-id="15f85-119">Grupo (2), expanda e selecione **Group.ReadWrite.All**.</span><span class="sxs-lookup"><span data-stu-id="15f85-119">Group (2), expand and then select **Group.ReadWrite.All**.</span></span>
-   + <span data-ttu-id="15f85-120">Usuário (8), expanda e selecione **User.Invite.All** e **User.ReadWrite.All**.</span><span class="sxs-lookup"><span data-stu-id="15f85-120">User (8), expand and then select **User.Invite.All** and **User.ReadWrite.All**.</span></span>
+2. <span data-ttu-id="d284f-117">Role a lista de permissões para essas permissões:</span><span class="sxs-lookup"><span data-stu-id="d284f-117">Scroll through the list of permissions to these permissions:</span></span>
+   + <span data-ttu-id="d284f-118">AccessReviews (3), expanda e selecione **AccessReviews.ReadWrite.All**.</span><span class="sxs-lookup"><span data-stu-id="d284f-118">AccessReviews (3), expand and then select **AccessReviews.ReadWrite.All**.</span></span>
+   + <span data-ttu-id="d284f-119">Grupo (2), expanda e selecione **Group.ReadWrite.All**.</span><span class="sxs-lookup"><span data-stu-id="d284f-119">Group (2), expand and then select **Group.ReadWrite.All**.</span></span>
+   + <span data-ttu-id="d284f-120">Usuário (8), expanda e selecione **User.Invite.All** e **User.ReadWrite.All**.</span><span class="sxs-lookup"><span data-stu-id="d284f-120">User (8), expand and then select **User.Invite.All** and **User.ReadWrite.All**.</span></span>
    
-   <span data-ttu-id="15f85-121">Selecione **Consentimento** e, em seguida, selecione **Aceitar** para aceitar o consentimento das permissões.</span><span class="sxs-lookup"><span data-stu-id="15f85-121">Select **Consent**, and then select **Accept** to accept the consent of the permissions.</span></span> <span data-ttu-id="15f85-122">Você não precisa consentir em nome da organização para essas permissões.</span><span class="sxs-lookup"><span data-stu-id="15f85-122">You do not need to consent on behalf of your organization for these permissions.</span></span>
+   <span data-ttu-id="d284f-121">Selecione **Consentimento** e, em seguida, selecione **Aceitar** para aceitar o consentimento das permissões.</span><span class="sxs-lookup"><span data-stu-id="d284f-121">Select **Consent**, and then select **Accept** to accept the consent of the permissions.</span></span> <span data-ttu-id="d284f-122">Você não precisa consentir em nome da organização para essas permissões.</span><span class="sxs-lookup"><span data-stu-id="d284f-122">You do not need to consent on behalf of your organization for these permissions.</span></span>
    
-   <span data-ttu-id="15f85-123">![Consentimento para as permissões do Microsoft Graph](../images/../concepts/images/tutorial-accessreviews-api/consentpermissions_M365.png)
-   </span><span class="sxs-lookup"><span data-stu-id="15f85-123">![Consent to the Microsoft Graph permissions](../images/../concepts/images/tutorial-accessreviews-api/consentpermissions_M365.png)
+   <span data-ttu-id="d284f-123">![Consentir com as permissões Graph Microsoft](../images/../concepts/images/tutorial-accessreviews-api/consentpermissions_M365.png)
+   </span><span class="sxs-lookup"><span data-stu-id="d284f-123">![Consent to the Microsoft Graph permissions](../images/../concepts/images/tutorial-accessreviews-api/consentpermissions_M365.png)
 </span></span><!--:::image type="content" source="../images/../concepts/images/tutorial-accessreviews-api/consentpermissions_M365.png" alt-text="Consent to the Microsoft Graph permissions":::-->
 
-## <a name="step-1-create-a-test-user-in-your-tenant"></a><span data-ttu-id="15f85-124">Etapa 1: Criar um usuário de teste em seu locatário</span><span class="sxs-lookup"><span data-stu-id="15f85-124">Step 1: Create a test user in your tenant</span></span>
+## <a name="step-1-create-a-test-user-in-your-tenant"></a><span data-ttu-id="d284f-124">Etapa 1: Criar um usuário de teste em seu locatário</span><span class="sxs-lookup"><span data-stu-id="d284f-124">Step 1: Create a test user in your tenant</span></span>
 
-### <a name="request"></a><span data-ttu-id="15f85-125">Solicitação</span><span class="sxs-lookup"><span data-stu-id="15f85-125">Request</span></span>
+### <a name="request"></a><span data-ttu-id="d284f-125">Solicitação</span><span class="sxs-lookup"><span data-stu-id="d284f-125">Request</span></span>
 
 ```http
 POST /users
@@ -65,7 +65,7 @@ Content-Type: application/json
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="15f85-126">Resposta</span><span class="sxs-lookup"><span data-stu-id="15f85-126">Response</span></span>
+### <a name="response"></a><span data-ttu-id="d284f-126">Resposta</span><span class="sxs-lookup"><span data-stu-id="d284f-126">Response</span></span>
 
 ```http
 HTTP/1.1 201 Created
@@ -80,11 +80,11 @@ Content-type: application/json
 }
 ```
 
-## <a name="step-2-invite-a-guest-user-into-your-tenant"></a><span data-ttu-id="15f85-127">Etapa 2: convidar um usuário convidado para seu locatário</span><span class="sxs-lookup"><span data-stu-id="15f85-127">Step 2: Invite a guest user into your tenant</span></span>
+## <a name="step-2-invite-a-guest-user-into-your-tenant"></a><span data-ttu-id="d284f-127">Etapa 2: convidar um usuário convidado para seu locatário</span><span class="sxs-lookup"><span data-stu-id="d284f-127">Step 2: Invite a guest user into your tenant</span></span>
 
-<span data-ttu-id="15f85-128">Convide um usuário convidado com o endereço de email **john@tailspintoys.com** seu locatário.</span><span class="sxs-lookup"><span data-stu-id="15f85-128">Invite a guest user with the email address **john@tailspintoys.com** to your tenant.</span></span>
+<span data-ttu-id="d284f-128">Convide um usuário convidado com o endereço de email **john@tailspintoys.com** seu locatário.</span><span class="sxs-lookup"><span data-stu-id="d284f-128">Invite a guest user with the email address **john@tailspintoys.com** to your tenant.</span></span>
 
-### <a name="request"></a><span data-ttu-id="15f85-129">Solicitação</span><span class="sxs-lookup"><span data-stu-id="15f85-129">Request</span></span>
+### <a name="request"></a><span data-ttu-id="d284f-129">Solicitação</span><span class="sxs-lookup"><span data-stu-id="d284f-129">Request</span></span>
 
 ```http
 POST https://graph.microsoft.com/beta/invitations
@@ -98,7 +98,7 @@ Content-Type: application/json
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="15f85-130">Resposta</span><span class="sxs-lookup"><span data-stu-id="15f85-130">Response</span></span>
+### <a name="response"></a><span data-ttu-id="d284f-130">Resposta</span><span class="sxs-lookup"><span data-stu-id="d284f-130">Response</span></span>
 
 ```http
 HTTP/1.1 201 Created
@@ -112,17 +112,17 @@ Content-type: application/json
 }
 ```
 
-## <a name="step-3-create-a-new-microsoft-365-group-and-add-the-guest-user"></a><span data-ttu-id="15f85-131">Etapa 3: criar um novo grupo do Microsoft 365 e adicionar o usuário convidado</span><span class="sxs-lookup"><span data-stu-id="15f85-131">Step 3: Create a new Microsoft 365 group and add the guest user</span></span>
+## <a name="step-3-create-a-new-microsoft-365-group-and-add-the-guest-user"></a><span data-ttu-id="d284f-131">Etapa 3: criar um novo grupo Microsoft 365 e adicionar o usuário convidado</span><span class="sxs-lookup"><span data-stu-id="d284f-131">Step 3: Create a new Microsoft 365 group and add the guest user</span></span>
 
-<span data-ttu-id="15f85-132">Nesta etapa:</span><span class="sxs-lookup"><span data-stu-id="15f85-132">In this step:</span></span>
-1. <span data-ttu-id="15f85-133">Crie um novo grupo do Microsoft 365 chamado **campanha de marketing Feelgood.**</span><span class="sxs-lookup"><span data-stu-id="15f85-133">Create a new Microsoft 365 group named **Feelgood marketing campaign**.</span></span>
-2. <span data-ttu-id="15f85-134">Atribua a si mesmo como o proprietário do grupo.</span><span class="sxs-lookup"><span data-stu-id="15f85-134">Assign yourself as the group owner.</span></span>
-3. <span data-ttu-id="15f85-135">Adicione john@tailspintoys.com como membro do grupo.</span><span class="sxs-lookup"><span data-stu-id="15f85-135">Add john@tailspintoys.com as a group member.</span></span> <span data-ttu-id="15f85-136">O acesso ao grupo é assunto de revisão por você, o proprietário do grupo.</span><span class="sxs-lookup"><span data-stu-id="15f85-136">Their access to the group is the subject of review by you, the group owner.</span></span>
+<span data-ttu-id="d284f-132">Nesta etapa:</span><span class="sxs-lookup"><span data-stu-id="d284f-132">In this step:</span></span>
+1. <span data-ttu-id="d284f-133">Crie um novo grupo Microsoft 365 chamado **campanha de marketing Feelgood.**</span><span class="sxs-lookup"><span data-stu-id="d284f-133">Create a new Microsoft 365 group named **Feelgood marketing campaign**.</span></span>
+2. <span data-ttu-id="d284f-134">Atribua a si mesmo como o proprietário do grupo.</span><span class="sxs-lookup"><span data-stu-id="d284f-134">Assign yourself as the group owner.</span></span>
+3. <span data-ttu-id="d284f-135">Adicione john@tailspintoys.com como membro do grupo.</span><span class="sxs-lookup"><span data-stu-id="d284f-135">Add john@tailspintoys.com as a group member.</span></span> <span data-ttu-id="d284f-136">O acesso ao grupo é assunto de revisão por você, o proprietário do grupo.</span><span class="sxs-lookup"><span data-stu-id="d284f-136">Their access to the group is the subject of review by you, the group owner.</span></span>
 
-### <a name="request"></a><span data-ttu-id="15f85-137">Solicitação</span><span class="sxs-lookup"><span data-stu-id="15f85-137">Request</span></span>
-<span data-ttu-id="15f85-138">Nesta chamada, substitua:</span><span class="sxs-lookup"><span data-stu-id="15f85-138">In this call, replace:</span></span>
-+ <span data-ttu-id="15f85-139">`cdb555e3-b33e-4fd5-a427-17fadacbdfa7` com sua **id**. Para recuperar sua **id,** execute `GET` em `https://graph.microsoft.com/beta/me` .</span><span class="sxs-lookup"><span data-stu-id="15f85-139">`cdb555e3-b33e-4fd5-a427-17fadacbdfa7` with your **id**. To retrieve your **id**, run `GET` on `https://graph.microsoft.com/beta/me`.</span></span>
-+ <span data-ttu-id="15f85-140">`baf1b0a0-1f9a-4a56-9884-6a30824f8d20` com **john@tailspintoys.com** **id** da resposta na Etapa 2.</span><span class="sxs-lookup"><span data-stu-id="15f85-140">`baf1b0a0-1f9a-4a56-9884-6a30824f8d20` with **john@tailspintoys.com**'s **id** from the response in Step 2.</span></span>
+### <a name="request"></a><span data-ttu-id="d284f-137">Solicitação</span><span class="sxs-lookup"><span data-stu-id="d284f-137">Request</span></span>
+<span data-ttu-id="d284f-138">Nesta chamada, substitua:</span><span class="sxs-lookup"><span data-stu-id="d284f-138">In this call, replace:</span></span>
++ <span data-ttu-id="d284f-139">`cdb555e3-b33e-4fd5-a427-17fadacbdfa7` com sua **id**. Para recuperar sua **id,** execute `GET` em `https://graph.microsoft.com/beta/me` .</span><span class="sxs-lookup"><span data-stu-id="d284f-139">`cdb555e3-b33e-4fd5-a427-17fadacbdfa7` with your **id**. To retrieve your **id**, run `GET` on `https://graph.microsoft.com/beta/me`.</span></span>
++ <span data-ttu-id="d284f-140">`baf1b0a0-1f9a-4a56-9884-6a30824f8d20` com **john@tailspintoys.com** **id** da resposta na Etapa 2.</span><span class="sxs-lookup"><span data-stu-id="d284f-140">`baf1b0a0-1f9a-4a56-9884-6a30824f8d20` with **john@tailspintoys.com**'s **id** from the response in Step 2.</span></span>
 
 ```http
 POST https://graph.microsoft.com/beta/groups
@@ -146,7 +146,7 @@ Content-Type: application/json
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="15f85-141">Resposta</span><span class="sxs-lookup"><span data-stu-id="15f85-141">Response</span></span>
+### <a name="response"></a><span data-ttu-id="d284f-141">Resposta</span><span class="sxs-lookup"><span data-stu-id="d284f-141">Response</span></span>
 
 ```http
 HTTP/1.1 201 Created
@@ -162,25 +162,25 @@ Content-type: application/json
 }
 ```
 
-<span data-ttu-id="15f85-142">Agora você tem um grupo do Microsoft 365 com um usuário convidado.</span><span class="sxs-lookup"><span data-stu-id="15f85-142">You now have a Microsoft 365 group with a guest user.</span></span>
+<span data-ttu-id="d284f-142">Agora você tem um grupo Microsoft 365 com um usuário convidado.</span><span class="sxs-lookup"><span data-stu-id="d284f-142">You now have a Microsoft 365 group with a guest user.</span></span>
 
-## <a name="step-4-create-an-access-review-for-all-microsoft-365-groups-with-guest-users"></a><span data-ttu-id="15f85-143">Etapa 4: Criar uma revisão de acesso para todos os grupos do Microsoft 365 com usuários convidados</span><span class="sxs-lookup"><span data-stu-id="15f85-143">Step 4: Create an access review for all Microsoft 365 groups with guest users</span></span>
+## <a name="step-4-create-an-access-review-for-all-microsoft-365-groups-with-guest-users"></a><span data-ttu-id="d284f-143">Etapa 4: criar uma revisão de acesso para todos os grupos Microsoft 365 com usuários convidados</span><span class="sxs-lookup"><span data-stu-id="d284f-143">Step 4: Create an access review for all Microsoft 365 groups with guest users</span></span>
 
-<span data-ttu-id="15f85-144">Ao criar uma série de revisão de acesso recorrente para todos os grupos do Microsoft 365 com usuários convidados, agende uma revisão periódica do acesso dos convidados ao grupo do Microsoft 365.</span><span class="sxs-lookup"><span data-stu-id="15f85-144">When you create a recurring access review series for all Microsoft 365 groups with guest users, you schedule a periodic review of the guests' access to the Microsoft 365 group.</span></span> <span data-ttu-id="15f85-145">Faça isso para o **grupo Campanha de Marketing da Feelgood.**</span><span class="sxs-lookup"><span data-stu-id="15f85-145">Do this for the **Feelgood Marketing Campaign** group.</span></span>
+<span data-ttu-id="d284f-144">Ao criar uma série de revisão de acesso recorrente para todos os grupos de Microsoft 365 com usuários convidados, agende uma revisão periódica do acesso dos convidados ao grupo Microsoft 365 convidados.</span><span class="sxs-lookup"><span data-stu-id="d284f-144">When you create a recurring access review series for all Microsoft 365 groups with guest users, you schedule a periodic review of the guests' access to the Microsoft 365 group.</span></span> <span data-ttu-id="d284f-145">Faça isso para o **grupo Campanha de Marketing da Feelgood.**</span><span class="sxs-lookup"><span data-stu-id="d284f-145">Do this for the **Feelgood Marketing Campaign** group.</span></span>
 
-<span data-ttu-id="15f85-146">A série de revisão de acesso usa as seguintes configurações:</span><span class="sxs-lookup"><span data-stu-id="15f85-146">The access review series uses following settings:</span></span>
-+ <span data-ttu-id="15f85-147">É uma revisão de acesso recorrente e revisada trimestralmente.</span><span class="sxs-lookup"><span data-stu-id="15f85-147">It's a recurring access review and reviewed quarterly.</span></span>
-+ <span data-ttu-id="15f85-148">Os proprietários do grupo analisam o acesso contínuo de usuários convidados.</span><span class="sxs-lookup"><span data-stu-id="15f85-148">The group owners review the continued access of guest users.</span></span>
-+ <span data-ttu-id="15f85-149">O escopo de revisão é limitado a grupos do Microsoft 365 somente **com usuários convidados.**</span><span class="sxs-lookup"><span data-stu-id="15f85-149">The review scope is limited to Microsoft 365 groups with **Guest users** only.</span></span>
-+ <span data-ttu-id="15f85-150">Um revistor de backup.</span><span class="sxs-lookup"><span data-stu-id="15f85-150">A backup reviewer.</span></span> <span data-ttu-id="15f85-151">Pode ser um usuário de fallback ou um grupo que pode revisar o acesso caso o grupo não tenha proprietários atribuídos.</span><span class="sxs-lookup"><span data-stu-id="15f85-151">This can be a fallback user or a group that can review the access in case the group doesn't have any owners assigned.</span></span>
-+ <span data-ttu-id="15f85-152">**autoApplyDecisionsEnabled** está definido como `true` .</span><span class="sxs-lookup"><span data-stu-id="15f85-152">**autoApplyDecisionsEnabled** is set to `true`.</span></span> <span data-ttu-id="15f85-153">Nesse caso, as decisões são aplicadas automaticamente quando o revistor conclui a revisão de acesso ou a duração da revisão de acesso termina.</span><span class="sxs-lookup"><span data-stu-id="15f85-153">In this case, decisions are applied automatically once the reviewer completes the access review or the access review duration ends.</span></span> <span data-ttu-id="15f85-154">Se não estiver habilitado, um usuário deverá, após a conclusão da revisão, aplicar as decisões manualmente.</span><span class="sxs-lookup"><span data-stu-id="15f85-154">If not enabled, a user must, after the review completes, apply the decisions manually.</span></span>
-+ <span data-ttu-id="15f85-155">Aplique **a ação removeAccessApplyAction** a usuários convidados negados.</span><span class="sxs-lookup"><span data-stu-id="15f85-155">Apply **removeAccessApplyAction** action to denied guest users.</span></span> <span data-ttu-id="15f85-156">Isso remove a associação no grupo do convidado negado.</span><span class="sxs-lookup"><span data-stu-id="15f85-156">This removes the membership in the group of the denied guest.</span></span> <span data-ttu-id="15f85-157">O usuário convidado ainda pode entrar no locatário.</span><span class="sxs-lookup"><span data-stu-id="15f85-157">The guest user can still sign in to your tenant.</span></span>
+<span data-ttu-id="d284f-146">A série de revisão de acesso usa as seguintes configurações:</span><span class="sxs-lookup"><span data-stu-id="d284f-146">The access review series uses following settings:</span></span>
++ <span data-ttu-id="d284f-147">É uma revisão de acesso recorrente e revisada trimestralmente.</span><span class="sxs-lookup"><span data-stu-id="d284f-147">It's a recurring access review and reviewed quarterly.</span></span>
++ <span data-ttu-id="d284f-148">Os proprietários do grupo analisam o acesso contínuo de usuários convidados.</span><span class="sxs-lookup"><span data-stu-id="d284f-148">The group owners review the continued access of guest users.</span></span>
++ <span data-ttu-id="d284f-149">O escopo de revisão está limitado a Microsoft 365 grupos com **usuários convidados** somente.</span><span class="sxs-lookup"><span data-stu-id="d284f-149">The review scope is limited to Microsoft 365 groups with **Guest users** only.</span></span> <span data-ttu-id="d284f-150">Para obter mais opções para configurar o escopo, consulte a [seção Consulte também.](#see-also)</span><span class="sxs-lookup"><span data-stu-id="d284f-150">For more options for configuring the scope, see the [See also](#see-also) section.</span></span> 
++ <span data-ttu-id="d284f-151">Um revistor de backup.</span><span class="sxs-lookup"><span data-stu-id="d284f-151">A backup reviewer.</span></span> <span data-ttu-id="d284f-152">Pode ser um usuário de fallback ou um grupo que pode revisar o acesso caso o grupo não tenha proprietários atribuídos.</span><span class="sxs-lookup"><span data-stu-id="d284f-152">This can be a fallback user or a group that can review the access in case the group doesn't have any owners assigned.</span></span> <span data-ttu-id="d284f-153">Para obter mais opções para configurar os revisadores, consulte a [seção Consulte também.](#see-also)</span><span class="sxs-lookup"><span data-stu-id="d284f-153">For more options for configuring the reviewers, see the [See also](#see-also) section.</span></span>
++ <span data-ttu-id="d284f-154">**autoApplyDecisionsEnabled** está definido como `true` .</span><span class="sxs-lookup"><span data-stu-id="d284f-154">**autoApplyDecisionsEnabled** is set to `true`.</span></span> <span data-ttu-id="d284f-155">Nesse caso, as decisões são aplicadas automaticamente quando o revistor conclui a revisão de acesso ou a duração da revisão de acesso termina.</span><span class="sxs-lookup"><span data-stu-id="d284f-155">In this case, decisions are applied automatically once the reviewer completes the access review or the access review duration ends.</span></span> <span data-ttu-id="d284f-156">Se não estiver habilitado, um usuário deverá, após a conclusão da revisão, aplicar as decisões manualmente.</span><span class="sxs-lookup"><span data-stu-id="d284f-156">If not enabled, a user must, after the review completes, apply the decisions manually.</span></span>
++ <span data-ttu-id="d284f-157">Aplique **a ação removeAccessApplyAction** a usuários convidados negados.</span><span class="sxs-lookup"><span data-stu-id="d284f-157">Apply **removeAccessApplyAction** action to denied guest users.</span></span> <span data-ttu-id="d284f-158">Isso remove a associação no grupo do convidado negado.</span><span class="sxs-lookup"><span data-stu-id="d284f-158">This removes the membership in the group of the denied guest.</span></span> <span data-ttu-id="d284f-159">O usuário convidado ainda pode entrar no locatário.</span><span class="sxs-lookup"><span data-stu-id="d284f-159">The guest user can still sign in to your tenant.</span></span>
 
-### <a name="request"></a><span data-ttu-id="15f85-158">Solicitação</span><span class="sxs-lookup"><span data-stu-id="15f85-158">Request</span></span>
-<span data-ttu-id="15f85-159">Nesta chamada, substitua o seguinte:</span><span class="sxs-lookup"><span data-stu-id="15f85-159">In this call, replace the following:</span></span>
+### <a name="request"></a><span data-ttu-id="d284f-160">Solicitação</span><span class="sxs-lookup"><span data-stu-id="d284f-160">Request</span></span>
+<span data-ttu-id="d284f-161">Nesta chamada, substitua o seguinte:</span><span class="sxs-lookup"><span data-stu-id="d284f-161">In this call, replace the following:</span></span>
 
-+ <span data-ttu-id="15f85-160">`c9a5aff7-9298-4d71-adab-0a222e0a05e4` com a **id** do usuário que você está projetando como revistor de backup.</span><span class="sxs-lookup"><span data-stu-id="15f85-160">`c9a5aff7-9298-4d71-adab-0a222e0a05e4` with the **id** of the user you are designating as a backup reviewer.</span></span> <span data-ttu-id="15f85-161">Esta é a **id** da resposta na Etapa 1.</span><span class="sxs-lookup"><span data-stu-id="15f85-161">This is the **id** from the response in Step 1.</span></span>
-+ <span data-ttu-id="15f85-162">Valor de **startDate** com a data de hoje e o valor de **endDate** com uma data de um ano a partir da data de início.</span><span class="sxs-lookup"><span data-stu-id="15f85-162">Value of **startDate** with today's date and value of **endDate** with a date one year from the start date.</span></span> 
++ <span data-ttu-id="d284f-162">`c9a5aff7-9298-4d71-adab-0a222e0a05e4` com a **id** do usuário que você está projetando como revistor de backup.</span><span class="sxs-lookup"><span data-stu-id="d284f-162">`c9a5aff7-9298-4d71-adab-0a222e0a05e4` with the **id** of the user you are designating as a backup reviewer.</span></span> <span data-ttu-id="d284f-163">Esta é a **id** da resposta na Etapa 1.</span><span class="sxs-lookup"><span data-stu-id="d284f-163">This is the **id** from the response in Step 1.</span></span>
++ <span data-ttu-id="d284f-164">Valor de **startDate** com a data de hoje e o valor de **endDate** com uma data de um ano a partir da data de início.</span><span class="sxs-lookup"><span data-stu-id="d284f-164">Value of **startDate** with today's date and value of **endDate** with a date one year from the start date.</span></span> 
 
 ```http
 POST https://graph.microsoft.com/beta/identityGovernance/accessReviews/definitions
@@ -248,7 +248,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="15f85-163">Resposta</span><span class="sxs-lookup"><span data-stu-id="15f85-163">Response</span></span>
+### <a name="response"></a><span data-ttu-id="d284f-165">Resposta</span><span class="sxs-lookup"><span data-stu-id="d284f-165">Response</span></span>
 
 ```http
 HTTP/1.1 201 Created
@@ -318,19 +318,19 @@ Content-type: application/json
 }
 ```
 
-## <a name="step-5-list-instances-of-the-access-review"></a><span data-ttu-id="15f85-164">Etapa 5: Listar instâncias da revisão de acesso</span><span class="sxs-lookup"><span data-stu-id="15f85-164">Step 5: List instances of the access review</span></span>
+## <a name="step-5-list-instances-of-the-access-review"></a><span data-ttu-id="d284f-166">Etapa 5: Listar instâncias da revisão de acesso</span><span class="sxs-lookup"><span data-stu-id="d284f-166">Step 5: List instances of the access review</span></span>
 
-<span data-ttu-id="15f85-165">A consulta a seguir lista todas as instâncias da definição de revisão de acesso.</span><span class="sxs-lookup"><span data-stu-id="15f85-165">The following query lists all instances of the access review definition.</span></span> <span data-ttu-id="15f85-166">Se o locatário de teste contiver outros grupos do Microsoft 365 com usuários convidados, essa solicitação retornará uma instância para cada grupo do Microsoft 365 com usuários convidados no locatário.</span><span class="sxs-lookup"><span data-stu-id="15f85-166">If your test tenant contains other Microsoft 365 groups with guest users, this request will return one instance for every Microsoft 365 group with guest users in the tenant.</span></span>
+<span data-ttu-id="d284f-167">A consulta a seguir lista todas as instâncias da definição de revisão de acesso.</span><span class="sxs-lookup"><span data-stu-id="d284f-167">The following query lists all instances of the access review definition.</span></span> <span data-ttu-id="d284f-168">Se o locatário de teste contiver outros grupos Microsoft 365 com usuários convidados, essa solicitação retornará uma instância para cada grupo Microsoft 365 com usuários convidados no locatário.</span><span class="sxs-lookup"><span data-stu-id="d284f-168">If your test tenant contains other Microsoft 365 groups with guest users, this request will return one instance for every Microsoft 365 group with guest users in the tenant.</span></span>
 
-### <a name="request"></a><span data-ttu-id="15f85-167">Solicitação</span><span class="sxs-lookup"><span data-stu-id="15f85-167">Request</span></span>
-<span data-ttu-id="15f85-168">Nesta chamada, substitua pela id da definição de revisão de `c22ae540-b89a-4d24-bac0-4ef35e6591ea` acesso retornada na Etapa 4. </span><span class="sxs-lookup"><span data-stu-id="15f85-168">In this call, replace `c22ae540-b89a-4d24-bac0-4ef35e6591ea` with the **id** of your access review definition returned in Step 4.</span></span>
+### <a name="request"></a><span data-ttu-id="d284f-169">Solicitação</span><span class="sxs-lookup"><span data-stu-id="d284f-169">Request</span></span>
+<span data-ttu-id="d284f-170">Nesta chamada, substitua pela id da definição de revisão de `c22ae540-b89a-4d24-bac0-4ef35e6591ea` acesso retornada na Etapa 4. </span><span class="sxs-lookup"><span data-stu-id="d284f-170">In this call, replace `c22ae540-b89a-4d24-bac0-4ef35e6591ea` with the **id** of your access review definition returned in Step 4.</span></span>
 
 ```http
 GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/definitions/c22ae540-b89a-4d24-bac0-4ef35e6591ea/instances
 ```
 
-### <a name="response"></a><span data-ttu-id="15f85-169">Resposta</span><span class="sxs-lookup"><span data-stu-id="15f85-169">Response</span></span>
-<span data-ttu-id="15f85-170">Nesta resposta, o escopo inclui um grupo com **id** (o grupo de campanhas de marketing Feelgood criado na Etapa 3) porque tem `59ab642a-2776-4e32-9b68-9ff7a47b7f6a` um usuário convidado. </span><span class="sxs-lookup"><span data-stu-id="15f85-170">In this response, the scope includes a group with **id** `59ab642a-2776-4e32-9b68-9ff7a47b7f6a` (the **Feelgood marketing campaign** group created in Step 3) because it has a guest user.</span></span>
+### <a name="response"></a><span data-ttu-id="d284f-171">Resposta</span><span class="sxs-lookup"><span data-stu-id="d284f-171">Response</span></span>
+<span data-ttu-id="d284f-172">Nesta resposta, o escopo inclui um grupo com **id** (o grupo de campanhas de marketing Feelgood criado na Etapa 3) porque tem `59ab642a-2776-4e32-9b68-9ff7a47b7f6a` um usuário convidado. </span><span class="sxs-lookup"><span data-stu-id="d284f-172">In this response, the scope includes a group with **id** `59ab642a-2776-4e32-9b68-9ff7a47b7f6a` (the **Feelgood marketing campaign** group created in Step 3) because it has a guest user.</span></span>
 
 ```http
 HTTP/1.1 200 OK
@@ -352,24 +352,24 @@ Content-type: application/json
     ]
 }
 ```
-<span data-ttu-id="15f85-171">Nesta resposta, a instância de revisão de acesso atualmente é `InProgress` .</span><span class="sxs-lookup"><span data-stu-id="15f85-171">In this response, the access review instance is currently `InProgress`.</span></span> <span data-ttu-id="15f85-172">Como essa é uma revisão trimestral, a cada três meses, uma nova instância de revisão é criada automaticamente e você, o revistor, pode aplicar novas decisões.</span><span class="sxs-lookup"><span data-stu-id="15f85-172">Because this is a quarterly review, every 3 months, a new review instance is created automatically and you—the reviewer—can apply new decisions.</span></span>
+<span data-ttu-id="d284f-173">Nesta resposta, a instância de revisão de acesso atualmente é `InProgress` .</span><span class="sxs-lookup"><span data-stu-id="d284f-173">In this response, the access review instance is currently `InProgress`.</span></span> <span data-ttu-id="d284f-174">Como essa é uma revisão trimestral, a cada três meses, uma nova instância de revisão é criada automaticamente e você, o revistor, pode aplicar novas decisões.</span><span class="sxs-lookup"><span data-stu-id="d284f-174">Because this is a quarterly review, every 3 months, a new review instance is created automatically and you—the reviewer—can apply new decisions.</span></span>
 
-## <a name="step-6-get-decisions"></a><span data-ttu-id="15f85-173">Etapa 6: Obter decisões</span><span class="sxs-lookup"><span data-stu-id="15f85-173">Step 6: Get decisions</span></span>
+## <a name="step-6-get-decisions"></a><span data-ttu-id="d284f-175">Etapa 6: Obter decisões</span><span class="sxs-lookup"><span data-stu-id="d284f-175">Step 6: Get decisions</span></span>
 
-<span data-ttu-id="15f85-174">Obter as decisões tomadas para a instância de uma revisão de acesso.</span><span class="sxs-lookup"><span data-stu-id="15f85-174">Get the decisions taken for the instance of an access review.</span></span>
+<span data-ttu-id="d284f-176">Obter as decisões tomadas para a instância de uma revisão de acesso.</span><span class="sxs-lookup"><span data-stu-id="d284f-176">Get the decisions taken for the instance of an access review.</span></span>
 
-### <a name="request"></a><span data-ttu-id="15f85-175">Solicitação</span><span class="sxs-lookup"><span data-stu-id="15f85-175">Request</span></span>
-<span data-ttu-id="15f85-176">Nesta chamada:</span><span class="sxs-lookup"><span data-stu-id="15f85-176">In this call:</span></span>
-+ <span data-ttu-id="15f85-177">Substitua `c22ae540-b89a-4d24-bac0-4ef35e6591ea` pela **id da definição** de revisão de acesso retornada na Etapa 4.</span><span class="sxs-lookup"><span data-stu-id="15f85-177">Replace `c22ae540-b89a-4d24-bac0-4ef35e6591ea` with the **id** of your access review definition returned in Step 4.</span></span>
-+ <span data-ttu-id="15f85-178">Substitua pela id da sua instância de revisão `6392b1a7-9c25-4844-83e5-34e23c88e16a` de acesso retornada na Etapa 5. </span><span class="sxs-lookup"><span data-stu-id="15f85-178">Replace `6392b1a7-9c25-4844-83e5-34e23c88e16a` with the **id** of your access review instance returned in Step 5.</span></span>
+### <a name="request"></a><span data-ttu-id="d284f-177">Solicitação</span><span class="sxs-lookup"><span data-stu-id="d284f-177">Request</span></span>
+<span data-ttu-id="d284f-178">Nesta chamada:</span><span class="sxs-lookup"><span data-stu-id="d284f-178">In this call:</span></span>
++ <span data-ttu-id="d284f-179">Substitua `c22ae540-b89a-4d24-bac0-4ef35e6591ea` pela **id da definição** de revisão de acesso retornada na Etapa 4.</span><span class="sxs-lookup"><span data-stu-id="d284f-179">Replace `c22ae540-b89a-4d24-bac0-4ef35e6591ea` with the **id** of your access review definition returned in Step 4.</span></span>
++ <span data-ttu-id="d284f-180">Substitua pela id da sua instância de revisão `6392b1a7-9c25-4844-83e5-34e23c88e16a` de acesso retornada na Etapa 5. </span><span class="sxs-lookup"><span data-stu-id="d284f-180">Replace `6392b1a7-9c25-4844-83e5-34e23c88e16a` with the **id** of your access review instance returned in Step 5.</span></span>
 
 ```http
 GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/definitions/c22ae540-b89a-4d24-bac0-4ef35e6591ea/instances/6392b1a7-9c25-4844-83e5-34e23c88e16a/decisions
 ```
 
-### <a name="response"></a><span data-ttu-id="15f85-179">Resposta</span><span class="sxs-lookup"><span data-stu-id="15f85-179">Response</span></span>
+### <a name="response"></a><span data-ttu-id="d284f-181">Resposta</span><span class="sxs-lookup"><span data-stu-id="d284f-181">Response</span></span>
 
-<span data-ttu-id="15f85-180">A resposta a seguir mostra a decisão tomada para a instância da revisão.</span><span class="sxs-lookup"><span data-stu-id="15f85-180">The following response shows the decision taken for the instance of the review.</span></span>
+<span data-ttu-id="d284f-182">A resposta a seguir mostra a decisão tomada para a instância da revisão.</span><span class="sxs-lookup"><span data-stu-id="d284f-182">The following response shows the decision taken for the instance of the review.</span></span>
 
 ```http
 HTTP/1.1 200 OK
@@ -415,83 +415,81 @@ Content-type: application/json
 }
 ```
 
-<span data-ttu-id="15f85-181">Como esta é uma revisão trimestral e enquanto a definição ainda estiver ativa, ou seja, a recorrência **endDate** não é uma data passada, a cada três meses, quando uma nova instância de revisão é criada, você como o revistor pode aplicar novas decisões.</span><span class="sxs-lookup"><span data-stu-id="15f85-181">Because this is a quarterly review and as long as the definition is still active, that is, the recurrence **endDate** is not a past date, every 3 months when a new review instance is created, you as the reviewer can apply new decisions.</span></span>
+<span data-ttu-id="d284f-183">Como esta é uma revisão trimestral e enquanto a definição ainda estiver ativa, ou seja, a recorrência **endDate** não é uma data passada, a cada três meses, quando uma nova instância de revisão é criada, você como o revistor pode aplicar novas decisões.</span><span class="sxs-lookup"><span data-stu-id="d284f-183">Because this is a quarterly review and as long as the definition is still active, that is, the recurrence **endDate** is not a past date, every 3 months when a new review instance is created, you as the reviewer can apply new decisions.</span></span>
 
-## <a name="step-7-clean-up-resources"></a><span data-ttu-id="15f85-182">Etapa 7: Limpar recursos</span><span class="sxs-lookup"><span data-stu-id="15f85-182">Step 7: Clean up resources</span></span>
+## <a name="step-7-clean-up-resources"></a><span data-ttu-id="d284f-184">Etapa 7: Limpar recursos</span><span class="sxs-lookup"><span data-stu-id="d284f-184">Step 7: Clean up resources</span></span>
 
-<span data-ttu-id="15f85-183">Exclua os recursos criados para este tutorial: grupo de campanhas de **marketing feelgood,** definição de agenda de revisão de acesso, usuário convidado e usuário de teste.</span><span class="sxs-lookup"><span data-stu-id="15f85-183">Delete the resources that you created for this tutorial—**Feelgood marketing campaign** group, the access review schedule definition, the guest user, and the test user.</span></span>
+<span data-ttu-id="d284f-185">Exclua os recursos criados para este tutorial: grupo de campanhas de **marketing feelgood,** definição de agenda de revisão de acesso, usuário convidado e usuário de teste.</span><span class="sxs-lookup"><span data-stu-id="d284f-185">Delete the resources that you created for this tutorial—**Feelgood marketing campaign** group, the access review schedule definition, the guest user, and the test user.</span></span>
 
-### <a name="delete-the-microsoft-365-group"></a><span data-ttu-id="15f85-184">Excluir o grupo do Microsoft 365</span><span class="sxs-lookup"><span data-stu-id="15f85-184">Delete the Microsoft 365 group</span></span>
+### <a name="delete-the-microsoft-365-group"></a><span data-ttu-id="d284f-186">Excluir o Microsoft 365 grupo</span><span class="sxs-lookup"><span data-stu-id="d284f-186">Delete the Microsoft 365 group</span></span>
 
-#### <a name="request"></a><span data-ttu-id="15f85-185">Solicitação</span><span class="sxs-lookup"><span data-stu-id="15f85-185">Request</span></span>
-<span data-ttu-id="15f85-186">Nesta chamada, substitua pela id da campanha `59ab642a-2776-4e32-9b68-9ff7a47b7f6a` **de marketing do Feelgood do** Microsoft 365. </span><span class="sxs-lookup"><span data-stu-id="15f85-186">In this call, replace `59ab642a-2776-4e32-9b68-9ff7a47b7f6a` with the **id** of your **Feelgood marketing campaign** Microsoft 365 group.</span></span>
+#### <a name="request"></a><span data-ttu-id="d284f-187">Solicitação</span><span class="sxs-lookup"><span data-stu-id="d284f-187">Request</span></span>
+<span data-ttu-id="d284f-188">Nesta chamada, substitua pela id da sua campanha de `59ab642a-2776-4e32-9b68-9ff7a47b7f6a` **marketing do Feelgood**  Microsoft 365 grupo.</span><span class="sxs-lookup"><span data-stu-id="d284f-188">In this call, replace `59ab642a-2776-4e32-9b68-9ff7a47b7f6a` with the **id** of your **Feelgood marketing campaign** Microsoft 365 group.</span></span>
 
 ```http
 DELETE https://graph.microsoft.com/beta/groups/59ab642a-2776-4e32-9b68-9ff7a47b7f6a
 ```
 
-#### <a name="response"></a><span data-ttu-id="15f85-187">Resposta</span><span class="sxs-lookup"><span data-stu-id="15f85-187">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="d284f-189">Resposta</span><span class="sxs-lookup"><span data-stu-id="d284f-189">Response</span></span>
 
 ```http
 HTTP/1.1 204 No Content
 Content-type: text/plain
 ```
 
-### <a name="delete-the-access-review-definition"></a><span data-ttu-id="15f85-188">Excluir a definição de revisão de acesso</span><span class="sxs-lookup"><span data-stu-id="15f85-188">Delete the access review definition</span></span>
+### <a name="delete-the-access-review-definition"></a><span data-ttu-id="d284f-190">Excluir a definição de revisão de acesso</span><span class="sxs-lookup"><span data-stu-id="d284f-190">Delete the access review definition</span></span>
 
-<span data-ttu-id="15f85-189">Nesta chamada, substitua pela id da `c22ae540-b89a-4d24-bac0-4ef35e6591ea` **sua definição** de revisão de acesso.</span><span class="sxs-lookup"><span data-stu-id="15f85-189">In this call, replace `c22ae540-b89a-4d24-bac0-4ef35e6591ea` with the **id** of your access review definition.</span></span> <span data-ttu-id="15f85-190">Como a definição de agenda de revisão de acesso é o modelo para a revisão de acesso, excluir a definição removerá as configurações, instâncias e decisões associadas à revisão de acesso.</span><span class="sxs-lookup"><span data-stu-id="15f85-190">Since the access review schedule definition is the blueprint for the access review, deleting the definition will remove the settings, instances, and decisions associated with the access review.</span></span>
+<span data-ttu-id="d284f-191">Nesta chamada, substitua pela id da `c22ae540-b89a-4d24-bac0-4ef35e6591ea` **sua definição** de revisão de acesso.</span><span class="sxs-lookup"><span data-stu-id="d284f-191">In this call, replace `c22ae540-b89a-4d24-bac0-4ef35e6591ea` with the **id** of your access review definition.</span></span> <span data-ttu-id="d284f-192">Como a definição de agenda de revisão de acesso é o modelo para a revisão de acesso, excluir a definição removerá as configurações, instâncias e decisões associadas à revisão de acesso.</span><span class="sxs-lookup"><span data-stu-id="d284f-192">Since the access review schedule definition is the blueprint for the access review, deleting the definition will remove the settings, instances, and decisions associated with the access review.</span></span>
 
-#### <a name="request"></a><span data-ttu-id="15f85-191">Solicitação</span><span class="sxs-lookup"><span data-stu-id="15f85-191">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="d284f-193">Solicitação</span><span class="sxs-lookup"><span data-stu-id="d284f-193">Request</span></span>
 ```http
 DELETE https://graph.microsoft.com/beta/identityGovernance/accessReviews/definitions/c22ae540-b89a-4d24-bac0-4ef35e6591ea
 ```
 
-#### <a name="response"></a><span data-ttu-id="15f85-192">Resposta</span><span class="sxs-lookup"><span data-stu-id="15f85-192">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="d284f-194">Resposta</span><span class="sxs-lookup"><span data-stu-id="d284f-194">Response</span></span>
 ```http
 HTTP/1.1 204 No Content
 Content-type: text/plain
 ```
-### <a name="remove-the-guest-user"></a><span data-ttu-id="15f85-193">Remover o usuário convidado</span><span class="sxs-lookup"><span data-stu-id="15f85-193">Remove the guest user</span></span>
+### <a name="remove-the-guest-user"></a><span data-ttu-id="d284f-195">Remover o usuário convidado</span><span class="sxs-lookup"><span data-stu-id="d284f-195">Remove the guest user</span></span>
 
-<span data-ttu-id="15f85-194">Nesta chamada, substitua `baf1b0a0-1f9a-4a56-9884-6a30824f8d20` pela **id** do usuário convidado, john@tailspintoys.com.</span><span class="sxs-lookup"><span data-stu-id="15f85-194">In this call, replace `baf1b0a0-1f9a-4a56-9884-6a30824f8d20` with the **id** of the guest user, john@tailspintoys.com.</span></span>
+<span data-ttu-id="d284f-196">Nesta chamada, substitua `baf1b0a0-1f9a-4a56-9884-6a30824f8d20` pela **id** do usuário convidado, john@tailspintoys.com.</span><span class="sxs-lookup"><span data-stu-id="d284f-196">In this call, replace `baf1b0a0-1f9a-4a56-9884-6a30824f8d20` with the **id** of the guest user, john@tailspintoys.com.</span></span>
 
-#### <a name="request"></a><span data-ttu-id="15f85-195">Solicitação</span><span class="sxs-lookup"><span data-stu-id="15f85-195">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="d284f-197">Solicitação</span><span class="sxs-lookup"><span data-stu-id="d284f-197">Request</span></span>
 ```http
 DELETE https://graph.microsoft.com/beta/users/baf1b0a0-1f9a-4a56-9884-6a30824f8d20
 ```
 
-#### <a name="response"></a><span data-ttu-id="15f85-196">Resposta</span><span class="sxs-lookup"><span data-stu-id="15f85-196">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="d284f-198">Resposta</span><span class="sxs-lookup"><span data-stu-id="d284f-198">Response</span></span>
 ```http
 HTTP/1.1 204 No Content
 Content-type: text/plain
 ```
 
-### <a name="delete-the-test-user"></a><span data-ttu-id="15f85-197">Excluir o usuário de teste</span><span class="sxs-lookup"><span data-stu-id="15f85-197">Delete the test user</span></span>
+### <a name="delete-the-test-user"></a><span data-ttu-id="d284f-199">Excluir o usuário de teste</span><span class="sxs-lookup"><span data-stu-id="d284f-199">Delete the test user</span></span>
 
-#### <a name="request"></a><span data-ttu-id="15f85-198">Solicitação</span><span class="sxs-lookup"><span data-stu-id="15f85-198">Request</span></span>
-<span data-ttu-id="15f85-199">Nesta chamada, substitua `c9a5aff7-9298-4d71-adab-0a222e0a05e4` pela **id do** usuário de teste.</span><span class="sxs-lookup"><span data-stu-id="15f85-199">In this call, replace `c9a5aff7-9298-4d71-adab-0a222e0a05e4` with the **id** of your test user.</span></span>
+#### <a name="request"></a><span data-ttu-id="d284f-200">Solicitação</span><span class="sxs-lookup"><span data-stu-id="d284f-200">Request</span></span>
+<span data-ttu-id="d284f-201">Nesta chamada, substitua `c9a5aff7-9298-4d71-adab-0a222e0a05e4` pela **id do** usuário de teste.</span><span class="sxs-lookup"><span data-stu-id="d284f-201">In this call, replace `c9a5aff7-9298-4d71-adab-0a222e0a05e4` with the **id** of your test user.</span></span>
 
 ```http
 DELETE https://graph.microsoft.com/beta/users/c9a5aff7-9298-4d71-adab-0a222e0a05e4
 ```
 
-#### <a name="response"></a><span data-ttu-id="15f85-200">Resposta</span><span class="sxs-lookup"><span data-stu-id="15f85-200">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="d284f-202">Resposta</span><span class="sxs-lookup"><span data-stu-id="d284f-202">Response</span></span>
 
 ```http
 HTTP/1.1 204 No Content
 Content-type: text/plain
 ```
 
-<span data-ttu-id="15f85-201">Parabéns!</span><span class="sxs-lookup"><span data-stu-id="15f85-201">Congratulations!</span></span> <span data-ttu-id="15f85-202">Você criou uma revisão de acesso para todos os usuários convidados nos grupos do Microsoft 365 em seu locatário e agendou trimestralmente para a avaliação e atestado do acesso dos usuários convidados.</span><span class="sxs-lookup"><span data-stu-id="15f85-202">You have created an access review for all guest users in Microsoft 365 groups in your tenant, and scheduled quarterly for the evaluation and attestation of the guest users' access.</span></span> <span data-ttu-id="15f85-203">Os proprietários do grupo revisarão o acesso durante esses ciclos, escolhendo aprovar ou negar o acesso.</span><span class="sxs-lookup"><span data-stu-id="15f85-203">The group owners will review access during these cycles, choosing either to approve or deny access.</span></span>
+<span data-ttu-id="d284f-203">Parabéns!</span><span class="sxs-lookup"><span data-stu-id="d284f-203">Congratulations!</span></span> <span data-ttu-id="d284f-204">Você criou uma revisão de acesso para todos os usuários convidados Microsoft 365 grupos em seu locatário e agendou trimestralmente para a avaliação e atestado do acesso dos usuários convidados.</span><span class="sxs-lookup"><span data-stu-id="d284f-204">You have created an access review for all guest users in Microsoft 365 groups in your tenant, and scheduled quarterly for the evaluation and attestation of the guest users' access.</span></span> <span data-ttu-id="d284f-205">Os proprietários do grupo revisarão o acesso durante esses ciclos, escolhendo aprovar ou negar o acesso.</span><span class="sxs-lookup"><span data-stu-id="d284f-205">The group owners will review access during these cycles, choosing either to approve or deny access.</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="15f85-204">Confira também</span><span class="sxs-lookup"><span data-stu-id="15f85-204">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="d284f-206">Confira também</span><span class="sxs-lookup"><span data-stu-id="d284f-206">See also</span></span>
 
-+ [<span data-ttu-id="15f85-205">Visão geral de avaliações do Access e requisitos de licença</span><span class="sxs-lookup"><span data-stu-id="15f85-205">Access Reviews overview and license requirements</span></span>](/azure/active-directory/governance/access-reviews-overview)
-+ [<span data-ttu-id="15f85-206">Cenários de licença do Access Reviews</span><span class="sxs-lookup"><span data-stu-id="15f85-206">Access Reviews license scenarios</span></span>](/azure/active-directory/governance/access-reviews-overview#example-license-scenarios)
-+ [<span data-ttu-id="15f85-207">Criar uma revisão de acesso de grupos & aplicativos</span><span class="sxs-lookup"><span data-stu-id="15f85-207">Create an access review of groups & applications</span></span>](/azure/active-directory/governance/create-access-review)
-+ [<span data-ttu-id="15f85-208">Convidar/adicionar usuários convidados à sua organização</span><span class="sxs-lookup"><span data-stu-id="15f85-208">Invite/add guest users to your organization</span></span>](/graph/api/resources/invitation?view=graph-rest-beta&preserve-view=true)
-+ [<span data-ttu-id="15f85-209">Referência da API de Avaliações do Access</span><span class="sxs-lookup"><span data-stu-id="15f85-209">Access Reviews API Reference</span></span>](/graph/api/resources/accessreviewsv2-root?view=graph-rest-beta&preserve-view=true)
-+ [<span data-ttu-id="15f85-210">Criar accessReviewScheduleDefinition</span><span class="sxs-lookup"><span data-stu-id="15f85-210">Create accessReviewScheduleDefinition</span></span>](/graph/api/accessreviewscheduledefinition-create?view=graph-rest-beta&preserve-view=true)
-+ [<span data-ttu-id="15f85-211">Listar accessReviewInstance</span><span class="sxs-lookup"><span data-stu-id="15f85-211">List accessReviewInstance</span></span>](/graph/api/accessreviewinstance-list?view=graph-rest-beta&preserve-view=true)
-+ [<span data-ttu-id="15f85-212">Listar accessReviewInstanceDecisionItem</span><span class="sxs-lookup"><span data-stu-id="15f85-212">List accessReviewInstanceDecisionItem</span></span>](/graph/api/accessreviewinstancedecisionitem-list?view=graph-rest-beta&preserve-view=true)
++ [<span data-ttu-id="d284f-207">Referência da API de avaliações do Access</span><span class="sxs-lookup"><span data-stu-id="d284f-207">Access reviews API Reference</span></span>](/graph/api/resources/accessreviewsv2-root?view=graph-rest-beta&preserve-view=true)
++ [<span data-ttu-id="d284f-208">Configurar o escopo de sua definição de revisão de acesso usando a API Graph Microsoft</span><span class="sxs-lookup"><span data-stu-id="d284f-208">Configure the scope of your access review definition using the Microsoft Graph API</span></span>](/graph/accessreviews-scope-concept)
++ [<span data-ttu-id="d284f-209">Atribuir revisadores à sua definição de revisão de acesso usando a API Graph Microsoft</span><span class="sxs-lookup"><span data-stu-id="d284f-209">Assign reviewers to your access review definition using the Microsoft Graph API</span></span>](/graph/accessreviews-reviewers-concept)
++ [<span data-ttu-id="d284f-210">Visão geral de avaliações do Access e requisitos de licença</span><span class="sxs-lookup"><span data-stu-id="d284f-210">Access reviews overview and license requirements</span></span>](/azure/active-directory/governance/access-reviews-overview)
++ [<span data-ttu-id="d284f-211">Criar uma revisão de acesso de grupos & aplicativos</span><span class="sxs-lookup"><span data-stu-id="d284f-211">Create an access review of groups & applications</span></span>](/azure/active-directory/governance/create-access-review)
++ [<span data-ttu-id="d284f-212">Convidar/adicionar usuários convidados à sua organização</span><span class="sxs-lookup"><span data-stu-id="d284f-212">Invite/add guest users to your organization</span></span>](/graph/api/resources/invitation?view=graph-rest-beta&preserve-view=true)
 

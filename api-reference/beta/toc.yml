@@ -1833,25 +1833,25 @@ items:
                   - name: Organizado por impressora
                     items:
                       - name: Obter
-                        href: api/printusagebyprinter-get.md
+                        href: api/printusagesummarybyprinter-get.md
                       - name: Listar trabalhos de impressão arquivados de uma impressora
                         href: api/reports-getprinterarchivedprintjobs.md
                       - name: Listar relatórios diários por impressora
-                        href: api/reportroot-list-dailyprintusagebyprinter.md
+                        href: api/reportroot-list-dailyprintusagesummariesbyprinter.md
                       - name: Listar relatórios mensais por impressora
-                        href: api/reportroot-list-monthlyprintusagebyprinter.md
+                        href: api/reportroot-list-monthlyprintusagesummariesbyprinter.md
                   - name: Organizado por usuário ou grupo
                     items:
                       - name: Obter
-                        href: api/printusagebyuser-get.md
+                        href: api/printusagesummarybyuser-get.md
                       - name: Listar trabalhos de impressão arquivados de um usuário
                         href: api/reports-getuserarchivedprintjobs.md
                       - name: Listar trabalhos de impressão arquivados de um grupo
                         href: api/reports-getgrouparchivedprintjobs.md
                       - name: Listar relatórios diários por usuário
-                        href: api/reportroot-list-dailyprintusagebyuser.md
+                        href: api/reportroot-list-dailyprintusagesummariesbyuser.md
                       - name: Listar relatórios mensais por usuário
-                        href: api/reportroot-list-monthlyprintusagebyuser.md
+                        href: api/reportroot-list-monthlyprintusagesummariesbyuser.md
               - name: Serviço de impressão
                 href: resources/printservice.md
                 items:

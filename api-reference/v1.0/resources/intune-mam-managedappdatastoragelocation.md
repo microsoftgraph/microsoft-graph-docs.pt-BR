@@ -1,36 +1,32 @@
 ---
-title: tipo de enumeração managedAppDataStorageLocation
-description: Locais de armazenamento em que os aplicativos gerenciados podem armazenar seus dados
+title: Tipo de número managedAppDataStorageLocation
+description: Armazenamento locais onde aplicativos gerenciados podem armazenar seus dados potencialmente
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: a716af1a5744ab6362cace84e55898cffb2dff2d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 9c19dbc5d6bfafad43767b87d0d230a1b3723d36
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48074941"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52751332"
 ---
-# <a name="managedappdatastoragelocation-enum-type"></a><span data-ttu-id="93387-103">tipo de enumeração managedAppDataStorageLocation</span><span class="sxs-lookup"><span data-stu-id="93387-103">managedAppDataStorageLocation enum type</span></span>
+# <a name="managedappdatastoragelocation-enum-type"></a><span data-ttu-id="1548e-103">Tipo de número managedAppDataStorageLocation</span><span class="sxs-lookup"><span data-stu-id="1548e-103">managedAppDataStorageLocation enum type</span></span>
 
-<span data-ttu-id="93387-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="93387-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="1548e-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="1548e-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="93387-105">**Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="93387-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="1548e-105">**Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="1548e-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="93387-106">Locais de armazenamento em que os aplicativos gerenciados podem armazenar seus dados</span><span class="sxs-lookup"><span data-stu-id="93387-106">Storage locations where managed apps can potentially store their data</span></span>
+<span data-ttu-id="1548e-106">Armazenamento locais onde aplicativos gerenciados podem armazenar seus dados potencialmente</span><span class="sxs-lookup"><span data-stu-id="1548e-106">Storage locations where managed apps can potentially store their data</span></span>
 
-## <a name="members"></a><span data-ttu-id="93387-107">Membros</span><span class="sxs-lookup"><span data-stu-id="93387-107">Members</span></span>
-|<span data-ttu-id="93387-108">Membro</span><span class="sxs-lookup"><span data-stu-id="93387-108">Member</span></span>|<span data-ttu-id="93387-109">Valor</span><span class="sxs-lookup"><span data-stu-id="93387-109">Value</span></span>|<span data-ttu-id="93387-110">Descrição</span><span class="sxs-lookup"><span data-stu-id="93387-110">Description</span></span>|
+## <a name="members"></a><span data-ttu-id="1548e-107">Membros</span><span class="sxs-lookup"><span data-stu-id="1548e-107">Members</span></span>
+|<span data-ttu-id="1548e-108">Membro</span><span class="sxs-lookup"><span data-stu-id="1548e-108">Member</span></span>|<span data-ttu-id="1548e-109">Valor</span><span class="sxs-lookup"><span data-stu-id="1548e-109">Value</span></span>|<span data-ttu-id="1548e-110">Descrição</span><span class="sxs-lookup"><span data-stu-id="1548e-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="93387-111">oneDriveForBusiness</span><span class="sxs-lookup"><span data-stu-id="93387-111">oneDriveForBusiness</span></span>|<span data-ttu-id="93387-112">1 </span><span class="sxs-lookup"><span data-stu-id="93387-112">1</span></span>|<span data-ttu-id="93387-113">OneDrive for business</span><span class="sxs-lookup"><span data-stu-id="93387-113">OneDrive for business</span></span>|
-|<span data-ttu-id="93387-114">Do</span><span class="sxs-lookup"><span data-stu-id="93387-114">sharePoint</span></span>|<span data-ttu-id="93387-115">2 </span><span class="sxs-lookup"><span data-stu-id="93387-115">2</span></span>|<span data-ttu-id="93387-116">SharePoint</span><span class="sxs-lookup"><span data-stu-id="93387-116">SharePoint</span></span>|
-|<span data-ttu-id="93387-117">localStorage</span><span class="sxs-lookup"><span data-stu-id="93387-117">localStorage</span></span>|<span data-ttu-id="93387-118">6 </span><span class="sxs-lookup"><span data-stu-id="93387-118">6</span></span>|<span data-ttu-id="93387-119">Armazenamento local no dispositivo</span><span class="sxs-lookup"><span data-stu-id="93387-119">Local storage on the device</span></span>|
-
-
-
-
-
+|<span data-ttu-id="1548e-111">oneDriveForBusiness</span><span class="sxs-lookup"><span data-stu-id="1548e-111">oneDriveForBusiness</span></span>|<span data-ttu-id="1548e-112">1</span><span class="sxs-lookup"><span data-stu-id="1548e-112">1</span></span>|<span data-ttu-id="1548e-113">OneDrive for business</span><span class="sxs-lookup"><span data-stu-id="1548e-113">OneDrive for business</span></span>|
+|<span data-ttu-id="1548e-114">sharePoint</span><span class="sxs-lookup"><span data-stu-id="1548e-114">sharePoint</span></span>|<span data-ttu-id="1548e-115">2</span><span class="sxs-lookup"><span data-stu-id="1548e-115">2</span></span>|<span data-ttu-id="1548e-116">Microsoft Office SharePoint Online</span><span class="sxs-lookup"><span data-stu-id="1548e-116">SharePoint</span></span>|
+|<span data-ttu-id="1548e-117">box</span><span class="sxs-lookup"><span data-stu-id="1548e-117">box</span></span>|<span data-ttu-id="1548e-118">3</span><span class="sxs-lookup"><span data-stu-id="1548e-118">3</span></span>|<span data-ttu-id="1548e-119">Caixa</span><span class="sxs-lookup"><span data-stu-id="1548e-119">Box</span></span>|
+|<span data-ttu-id="1548e-120">localStorage</span><span class="sxs-lookup"><span data-stu-id="1548e-120">localStorage</span></span>|<span data-ttu-id="1548e-121">6 </span><span class="sxs-lookup"><span data-stu-id="1548e-121">6</span></span>|<span data-ttu-id="1548e-122">Armazenamento local no dispositivo</span><span class="sxs-lookup"><span data-stu-id="1548e-122">Local storage on the device</span></span>|
 
 
 
