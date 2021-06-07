@@ -1,18 +1,18 @@
 ---
-title: Obter componente no microsoft graph Toolkit
-description: Um componente Get permite que você faça qualquer consulta GET do Microsoft Graph diretamente em seu HTML.
+title: Obter componente no Microsoft Graph Toolkit
+description: Um componente Get permite que você faça qualquer consulta GET da Microsoft Graph diretamente em seu HTML.
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: 968259f08e08d6d34308404847b0addf9badd2ec
-ms.sourcegitcommit: de3bc91a24d23b46bd0863487415fba8d8fce63c
+ms.openlocfilehash: 55fc5da7697523fbb08c69a2a995170be5b35a21
+ms.sourcegitcommit: 3f40fbb953b14c1f52341786569c678adfc5bd3e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52266579"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52781083"
 ---
-# <a name="get-component-in-the-microsoft-graph-toolkit"></a>Obter componente no microsoft graph Toolkit
+# <a name="get-component-in-the-microsoft-graph-toolkit"></a>Obter componente no Microsoft Graph Toolkit
 
-Você pode usar `mgt-get` para fazer qualquer consulta GET do Microsoft Graph diretamente em seu HTML. O componente não fornece uma interface do usuário padrão e exige que você escreva um modelo.
+Você pode usar para fazer qualquer consulta GET da `mgt-get` Microsoft Graph diretamente em seu HTML. O componente não fornece uma interface do usuário padrão e exige que você escreva um modelo.
 
 ## <a name="example"></a>Exemplo
 
@@ -28,7 +28,7 @@ Você pode usar vários atributos para alterar o comportamento do componente. O 
 
 | Atributo | Propriedade  | Descrição |
 | --- | --- | --- |
-| recurso | recurso | O recurso a ser obter do Microsoft Graph (por exemplo, `/me` ). |
+| recurso | recurso | O recurso a ser Graph microsoft (por exemplo, `/me` ). |
 | escopos | escopos | Matriz opcional de cadeias de caracteres se estiver usando a propriedade ou um escopo delimitado por vírgula se estiver usando o atributo. O componente usará esses escopos (com um provedor com suporte) para garantir que o usuário tenha consentido com a permissão certa. |
 | versão | versão | Versão da API opcional a ser usada ao fazer a solicitação GET. O padrão é `v1.0`.  |
 | max-pages | maxPages | Número opcional de páginas (para recursos que suportam paginação). O padrão é 3. Definir esse valor como 0 receberá todas as páginas.  |
@@ -36,8 +36,8 @@ Você pode usar vários atributos para alterar o comportamento do componente. O 
 | habilitado para cache | cacheEnabled | Boolean opcional. Quando definido, indica que a resposta do recurso será armazenada em cache. Substitua se `refresh()` for chamado ou se estiver em `pollingRate` uso. O padrão é `false`. |
 | cache-invalidation-period | cacheInvalidationPeriod | Número opcional de milissegundos. Quando definido em combinação com , o atraso antes que o cache atinja seu período `cacheEnabled` de invalidação será modificado por esse valor. O padrão `0` é e usará o período de invalidação padrão. |
 | tipo | tipo | Tipo opcional da resposta esperada. O padrão é `json`. Suporta `json` ou `image` (só há suporte para pontos de extremidade terminando com `/photo/value$` ). |
-| N/D | response | Resposta somente leitura do Microsoft Graph se a solicitação foi bem-sucedida.  |
-| N/D |erro| Erro somente leitura do Microsoft Graph se a solicitação não tiver sido bem-sucedida. |
+| N/A | response | Resposta somente leitura da Microsoft Graph se a solicitação foi bem-sucedida.  |
+| N/A |erro| Erro somente leitura da Microsoft Graph se a solicitação não tiver sido bem-sucedida. |
 
 ## <a name="methods"></a>Métodos
 | Método | Descrição |
@@ -58,12 +58,12 @@ O `mgt-get` componente dá suporte a vários [modelos](../customize-components/t
 | --- | --- | --- |
 | Padrão. | A resposta do Microsoft Graph. | O modelo padrão é necessário para renderizar os dados provenientes do Microsoft Graph. |
 | valor | Item de dados da matriz `value` retornada | Use o modelo em vez do modelo ao esperar que a resposta do gráfico contenha uma matriz de itens - como mensagens, arquivos `value` `default` ou **usuários**.   O `value` modelo será repetido automaticamente para cada item retornado pelo recurso. O `value` modelo também começará a renderizar os itens assim que eles estão prontos (ao contrário do modelo padrão).|
-| erro | O erro do Microsoft Graph. | Esse modelo será usado se houver um erro ao fazer a solicitação. |
-| loading | N/D | Esse modelo é usado enquanto a solicitação está sendo feita. |
+| erro | O erro da Microsoft Graph. | Esse modelo será usado se houver um erro ao fazer a solicitação. |
+| loading | N/A | Esse modelo é usado enquanto a solicitação está sendo feita. |
 
 ## <a name="microsoft-graph-permissions"></a>Permissões do Microsoft Graph
 
-Para obter mais informações sobre permissões, consulte a referência de permissões [do](../../permissions-reference.md)Microsoft Graph . 
+As permissões exigidas por esse componente dependem dos dados que você deseja recuperar com eles do Microsoft Graph. Para obter mais informações sobre permissões, consulte a referência de permissões do Microsoft Graph [.](../../permissions-reference.md)
 
 ## <a name="authentication"></a>Autenticação
 
@@ -75,6 +75,6 @@ Para habilitar e configurar o cache, use `cacheEnabled` as propriedades `cacheIn
 
 |Armazenamento de objetos|Dados armazenados em cache|Comentários|
 |-----------|-----------|-------|
-|`response`|Resposta completa recuperada do Microsoft Graph para a consulta especificada na `resource` propriedade de `mgt-get`|
+|`response`|Resposta completa recuperada do Microsoft Graph para a consulta especificada na `resource` propriedade de`mgt-get`|
 
-Consulte [Cache para](../customize-components/cache.md) obter mais detalhes.
+Consulte [Caching](../customize-components/cache.md) para obter mais detalhes.

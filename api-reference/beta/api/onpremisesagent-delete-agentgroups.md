@@ -5,12 +5,12 @@ localization_priority: Normal
 author: japere
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 41719b5431bf04759788b56973a2dc11c5113b71
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: d5649a10cf38f3a8da1004db30a191363a8e6a21
+ms.sourcegitcommit: 3f40fbb953b14c1f52341786569c678adfc5bd3e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50136483"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52781160"
 ---
 # <a name="remove-onpremisesagent-from-an-onpremisesagentgroup"></a>Remover onPremisesAgent de um onPremisesAgentGroup
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Remover um [onPremisesAgent](../resources/onpremisesagent.md) de [um onPremisesAgentGroup](../resources/onpremisesagentgroup.md).
+Remova um [onPremisesAgent](../resources/onpremisesagent.md) de [um onPremisesAgentGroup](../resources/onpremisesagentgroup.md).
 
 ## <a name="permissions"></a>Permissões
 
@@ -26,7 +26,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:--------------------------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante)     | OnPremisesPublishingProfiles.ReadWrite.All |
+| Delegado (conta corporativa ou de estudante)     | Directory.ReadWrite.All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo                            | Sem suporte. |
 

@@ -1,18 +1,18 @@
 ---
-title: tipo de enumeração complianceStatus
+title: tipo de número complianceStatus
 description: Ainda não documentado
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: f21a4ba89ea195259634a2250be1d6d1f075456e
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: c7f87218e658f042c6c02d3e227ecc4e1cbc639b
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48037749"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52756775"
 ---
-# <a name="compliancestatus-enum-type"></a>tipo de enumeração complianceStatus
+# <a name="compliancestatus-enum-type"></a>tipo de número complianceStatus
 
 Namespace: microsoft.graph
 
@@ -23,19 +23,14 @@ Ainda não documentado
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|desconhecido|,0|Ainda não documentado|
-|Não aplicável|1 |Ainda não documentado|
-|com|2 |Ainda não documentado|
-|corrigidos|3 |Ainda não documentado|
-|Incompatível|4 |Ainda não documentado|
+|desconhecido|0|Ainda não documentado|
+|notApplicable|1|Ainda não documentado|
+|compatível|2|Ainda não documentado|
+|remediado|3|Ainda não documentado|
+|nonCompliant|4 |Ainda não documentado|
 |erro|5 |Ainda não documentado|
-|apresentar|6 |Ainda não documentado|
-|Não atribuído|7 |Ainda não documentado|
-
-
-
-
-
+|conflict|6 |Ainda não documentado|
+|notAssigned|7 |Ainda não documentado|
 
 
 

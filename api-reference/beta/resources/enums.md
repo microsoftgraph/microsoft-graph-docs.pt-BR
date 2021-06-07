@@ -5,12 +5,12 @@ doc_type: enumPageType
 localization_priority: Normal
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
-ms.openlocfilehash: abc86450938a979a082c9dd6792ce8fba4af17f2
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: 81eee8c04af0016c04ec1cca76f3f996bf41d50a
+ms.sourcegitcommit: 3f40fbb953b14c1f52341786569c678adfc5bd3e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52682632"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52781048"
 ---
 # <a name="enum-values"></a>Valores denum
 
@@ -76,7 +76,7 @@ Namespace: microsoft.graph
 |Inteiro|
 |Referência|
 |Binário|
-|Boolean|
+|Booliano|
 |DateTime|
 
 ### <a name="mutability-values"></a>valores de mutabilidade
@@ -604,6 +604,14 @@ Namespace: microsoft.graph
 |:---|
 |nenhuma|
 |assignIfOpen|
+|unknownFutureValue|
+
+### <a name="educationaddtocalendaroptions-values"></a>valores educationAddToCalendarOptions
+|Member|
+|:---|
+|nenhuma|
+|studentsAndPublisher|
+|studentsAndTeamOwners|
 |unknownFutureValue|
 
 ### <a name="externalemailotpstate-values"></a>valores externalEmailOtpState
@@ -1249,7 +1257,7 @@ Namespace: microsoft.graph
 | Automático
 | noPreview
 | checklist
-| descrição
+| description
 | referência
 
 
@@ -2188,7 +2196,7 @@ Valores possíveis para tipos de conta de usuário (associação ao grupo), por 
 
 |Membro    |Valor    |Descrição |
 |:---------|:--------|:----------- |
-|team      |0        |Indica que o aplicativo Teams pode ser instalado em uma equipe e está autorizado a acessar os dados dessa equipe.|
+|equipe      |0        |Indica que o aplicativo Teams pode ser instalado em uma equipe e está autorizado a acessar os dados dessa equipe.|
 |groupChat |1        |Indica que o aplicativo Teams pode ser instalado em um chat de grupo e está autorizado a acessar os dados desse chat de grupo.|
 |pessoal  |2        |Indica que o aplicativo Teams pode ser instalado no escopo pessoal de um usuário e está autorizado a acessar os dados desse usuário.|
 

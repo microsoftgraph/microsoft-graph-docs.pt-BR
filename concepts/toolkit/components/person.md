@@ -3,12 +3,12 @@ title: Componente person no microsoft Graph Toolkit
 description: O componente de pessoa é usado para exibir uma pessoa ou contato usando sua foto, nome e/ou endereço de email.
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: 46ba7c780985e71d68fe9270f165292136f2e46b
-ms.sourcegitcommit: db3d2c6db8dd8f8cc14bdcebb2904d5e056a73e7
+ms.openlocfilehash: 3020c652fa08c78fecd53469af0e21622f9afcff
+ms.sourcegitcommit: 3f40fbb953b14c1f52341786569c678adfc5bd3e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52579946"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52780992"
 ---
 # <a name="person-component-in-the-microsoft-graph-toolkit"></a>Componente person no microsoft Graph Toolkit
 
@@ -209,15 +209,20 @@ As propriedades a seguir estão disponíveis no objeto config.
 
 Esse controle usa as seguintes APIs Graph Microsoft e permissões.
 
-| Recurso | Permissão     |
-| -| - |
-| [/me](/graph/api/user-get)                              | User.Read          |
-| [/me/photo/$value](/graph/api/profilephoto-get)        | User.Read          |
-| [/me/people/?$search=](/graph/api/user-list-people)     | People.Read        |
-| [/me/contacts/\*](/graph/api/user-list-contacts&tabs=cs) | Contacts.Read      |
-| [/users/{id}/photo/$value](/graph/api/user-list-people) | User.ReadBasic.All |
-| [/me/presence](/graph/api/presence-get)                | Presence.Read |
-| [/users/{id}/presence](/graph/api/presence-get)        | Presence.Read.All |
+| Configuração | Permissão | API |
+| ------------- | ---------- | --- |
+| `personDetails` set without image, `fetchImage` set to , set to , `true` `avatarType` `photo` retrieved person is a contact and `useContactApis` set to `true` | Contacts.Read | [/me/contacts/\*](/graph/api/user-list-contacts) |
+| `personDetails` set without image, `fetchImage` set to , set to and person is not a contact or is set `true` `avatarType` `photo` `useContactApis` to `false` | User.ReadBasic.All | [/users/{id}/photo/$value](/graph/api/profilephoto-get) |
+| `personDetails` set without image, `fetchImage` set to , set to and user `true` `avatarType` `photo` specified via email | User.ReadBasic.All | [/users/{id}/photo/$value](/graph/api/profilephoto-get) |
+| `personDetails` set without image, `fetchImage` set to , set to and contact `true` `avatarType` `photo` specified via email | Contacts.Read | [/me/contacts/\*](/graph/api/user-list-contacts) |
+| `userId` set | User.ReadBasic.All | [/users/{id}](/graph/api/user-list-people) |
+| `personQuery` definir como `me` e `avatarType` definir como `photo` | User.Read | [/me/photo/$value](/graph/api/profilephoto-get) |
+| `personQuery` definir para `me` e definir para outra coisa que `avatarType` não `photo` | User.Read | [/me](/graph/api/user-get) |
+| `personQuery` definido como um valor diferente `me` e `useContactApis` definido como `true` | People.Read, User.ReadBasic.All, Contacts.Read | [/me/people/?$search=](/graph/api/user-list-people), [/users?$search=](/graph/api/user-list-people), [/me/contacts/ \* ](/graph/api/user-list-contacts) |
+| `personQuery` definido como um valor diferente `me` e `useContactApis` definido como `false` | People.Read, User.ReadBasic.All | [/me/people/?$search=](/graph/api/user-list-people), [/users?$search=](/graph/api/user-list-people) |
+| `showPresence` definir como `true` e `personQuery` definir como `me` | Presence.Read | [/me/presence](/graph/api/presence-get) |
+| `showPresence` definir como `true` e definir como um valor `personQuery` diferente `me` | Presence.Read.All | [/users/{id}/presence](/graph/api/presence-get) |
+| `personCardInteraction` definido como um valor diferente de `PersonCardInteraction.none` | Consulte [permissões de cartão de pessoa](/graph/toolkit/components/person-card#microsoft-graph-permissions) | Consulte [chamadas de API de cartão de pessoa](/graph/toolkit/components/person-card#microsoft-graph-permissions) |
 
 ## <a name="authentication"></a>Autenticação
 

@@ -1,16 +1,16 @@
 ---
 title: Obter educationAssignment
-description: Obter as propriedades e as relações de uma atribuição.
+description: Obter as propriedades e as relações de uma determinada atribuição. Observe que professores e aplicativos podem ver todas as atribuições em uma classe.
 author: dipakboyed
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 665e035c55ff68b81d1e3e73c3b086843c8b16cd
-ms.sourcegitcommit: 276a13a37c3772689dfc71f7cd47586c9581f27d
+ms.openlocfilehash: d170f2c87107161f920e13b1717afe2adfc721a3
+ms.sourcegitcommit: 3f40fbb953b14c1f52341786569c678adfc5bd3e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52629204"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52780803"
 ---
 # <a name="get-educationassignment"></a>Obter educationAssignment
 
@@ -22,7 +22,7 @@ Obter as propriedades e as relações de uma atribuição.
 
 Os alunos só podem ver atribuições atribuídas a eles; professores e aplicativos com permissões de aplicativo podem ver todas as atribuições em uma classe.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 
@@ -98,6 +98,7 @@ Content-length: 279
 {
   "id": "19002",
   "addedStudentAction": "none",
+  "addToCalendarAction": "studentsAndPublisher",
   "allowLateSubmissions": true,
   "allowStudentsToAddResourcesToSubmission": true,
   "assignDateTime": "String (timestamp)",

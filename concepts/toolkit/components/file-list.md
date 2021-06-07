@@ -3,12 +3,12 @@ title: Componente de lista de arquivos no microsoft Graph Toolkit
 description: O componente de lista de arquivos é usado para exibir uma lista de arquivos mostrando seu ícone e nome
 localization_priority: Normal
 author: beth-panx
-ms.openlocfilehash: bde548e843170de6cd1234f14096339859d4b99b
-ms.sourcegitcommit: 276a13a37c3772689dfc71f7cd47586c9581f27d
+ms.openlocfilehash: cfd4543cad98864a423699e4ed6cde7dc82ee6fb
+ms.sourcegitcommit: 3f40fbb953b14c1f52341786569c678adfc5bd3e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52629165"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52781090"
 ---
 # <a name="file-list-component-in-the-microsoft-graph-toolkit"></a>Componente de lista de arquivos no microsoft Graph Toolkit
 
@@ -114,12 +114,12 @@ Para saber mais, confira [componentes de estilo](../customize-components/style.m
 
 ## <a name="microsoft-graph-apis-and-permissions"></a>ApIs Graph Microsoft e permissões
 
-| Configuração | Permissions | API |
+| Configuração | Permissões | API |
 | ------------- | ----------------- | --- |
-| Padrão (nenhum identificador ou consulta fornecida) | Files.Read, Files.Read.All, Sites.Read.All | `GET /me/drive/root/children`   |
+| Padrão (nenhum identificador ou consulta fornecida) | Files.Read, Files.Read.All, Sites.Read.All | `GET /me/drive/root/children` |
 | Fornecer `{drive-id}` AND `{item-id}` | Files.Read, Files.Read.All, Sites.Read.All | `GET /drives/{drive-id}/items/{item-id}/children` |
 | Fornecer `{group-id}` AND `{item-id}` | Files.Read, Files.Read.All, Sites.Read.All | `GET /groups/{group-id}/drive/items/{item-id}/children` |
-| Fornecer SOMENTE `{item-id}` | Files.Read, Files.Read.All, Sites.Read.All | `GET /me/drive/items/{item-id}/children` | 
+| Fornecer SOMENTE `{item-id}` | Files.Read, Files.Read.All, Sites.Read.All | `GET /me/drive/items/{item-id}/children` |
 | Fornecer `{site-id}` AND `{item-id}` | Files.Read, Files.Read.All, Sites.Read.All | `GET /sites/{site-id}/drive/items/{item-id}/children` |
 | Pprovide `{user-id}` AND `{item-id}` | Files.Read, Files.Read.All, Sites.Read.All | `GET /users/{user-id}/drive/items/{item-id}/children` |
 | Fornecer `{drive-id}` AND `{item-path}` | Files.Read, Files.Read.All, Sites.Read.All | `GET /drives/{drive-id}/root:/{item-path}:/children` |
@@ -128,7 +128,7 @@ Para saber mais, confira [componentes de estilo](../customize-components/style.m
 | Fornecer `{user-id}` AND `{item-path}` | Files.Read, Files.Read.All, Sites.Read.All | `GET /users/{user-id}/root:/{item-path}:/children` |
 | Fornecer somente `{item-path}` | Files.Read, Files.Read.All, Sites.Read.All | `GET /me/drive/root:/{item-path}:/children` |
 | `insight-type` é definido como tendência | Sites.Read.All | `GET /me/insights/trending` |
-| Fornecer `{user-id or upn}` AND está definido `insight-type` como `trending` | Sites.Read.All | `GET /users/{id or userPrincipalName}/insights/trending` | 
+| Fornecer `{user-id or upn}` AND está definido `insight-type` como `trending` | Sites.Read.All | `GET /users/{id or userPrincipalName}/insights/trending` |
 | `insight-type` está definido como `used` | Sites.Read.All | `GET /me/insights/used` |
 | Fornecer `{user-id or upn}` AND está definido `insight-type` como `used` | Sites.Read.All | `GET /users/{id or userPrincipalName}/insights/used` |
 | `insight-type` é definido como compartilhado | Sites.Read.All | `GET /me/insights/shared` |

@@ -1,16 +1,16 @@
 ---
-title: Componente agenda no microsoft graph Toolkit
+title: Componente agenda no microsoft Graph Toolkit
 description: O componente web mgt-agenda é usado para representar eventos em um calendário de usuário ou grupo.
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: b4c9f41f347e8a392d7d751f16f9168a4d66d1c4
-ms.sourcegitcommit: de3bc91a24d23b46bd0863487415fba8d8fce63c
+ms.openlocfilehash: 7de172c514aea12e0f57541649b6e98ca1ded2df
+ms.sourcegitcommit: 3f40fbb953b14c1f52341786569c678adfc5bd3e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52266572"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52781097"
 ---
-# <a name="agenda-component-in-the-microsoft-graph-toolkit"></a>Componente agenda no microsoft graph Toolkit
+# <a name="agenda-component-in-the-microsoft-graph-toolkit"></a>Componente agenda no microsoft Graph Toolkit
 
 O `mgt-agenda` componente Web representa eventos em um calendário de usuário ou grupo. Por padrão, o calendário exibe os eventos de usuário atuais assinados no dia atual. O componente também pode usar qualquer ponto de extremidade que retorne eventos do Microsoft Graph.
 
@@ -28,11 +28,11 @@ Por padrão, o componente busca eventos do ponto de extremidade e `mgt-agenda` e
 
 | Atributo | Propriedade | Descrição |
 | --- | --- | --- |
-| data | data | Uma cadeia de caracteres que representa a data de início dos eventos a ser buscado no Microsoft Graph. O valor deve estar em um formato que pode ser analisado pelo construtor [Date](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date) - o valor não terá efeito se `event-query` o atributo for definido. |
-| days | days | Um número de dias para buscar do Microsoft Graph - padrão é 3 - o valor não terá efeito se `event-query` o atributo for definido. |
+| data | data | Uma cadeia de caracteres que representa a data de início dos eventos a buscar da Microsoft Graph. O valor deve estar em um formato que pode ser analisado pelo construtor [Date](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date) - o valor não terá efeito se `event-query` o atributo for definido. |
+| days | days | Um número de dias para buscar do Microsoft Graph - o padrão é 3 - o valor não terá efeito se `event-query` o atributo for definido. |
 | show-max | showMax | Um número para indicar o número máximo de eventos a mostrar. O valor padrão não está definido (nenhum máximo). |
 | group-id | groupId | Uma ID de cadeia de caracteres para um calendário de grupo a ser usado em vez do calendário atual do usuário. |
-| event-query | eventQuery | Uma cadeia de caracteres que representa uma consulta alternativa a ser usada ao buscar eventos do Microsoft Graph. Opcionalmente, adicione o escopo delegado no final da cadeia de caracteres delimitando-o com `|` ( `/groups/GROUP-ID-GUID/calendar/calendarView | group.read.all` ). |
+| event-query | eventQuery | Uma cadeia de caracteres que representa uma consulta alternativa a ser usada ao buscar eventos da Microsoft Graph. Opcionalmente, adicione o escopo delegado no final da cadeia de caracteres delimitando-o com `|` ( `/groups/GROUP-ID-GUID/calendar/calendarView | group.read.all` ). |
 | events | events | Uma matriz de eventos para obter ou definir a lista de eventos renderizados pelo componente - use essa propriedade para acessar os eventos carregados pelo componente. De definir esse valor para carregar seus próprios eventos - se o valor for definido pelo desenvolvedor, `date` os atributos , ou não terão `days` `event-query` efeito. |
 | group-by-day | groupByDay | Um valor Boolean para agrupar eventos por dia - por padrão, os eventos não são agrupados. |
 | preferred-timezone | preferredTimezone | Nome do fuso horário preferencial a ser usado ao recuperar eventos do Microsoft Graph; por exemplo, `Pacific Standard Time` . Por padrão, esse atributo usa o fuso horário UTC. O fuso horário preferencial para o usuário atual pode ser recuperado chamando o ponto de extremidade e lendo o `me/mailboxSettings` valor da **propriedade timeZone.** |
@@ -133,23 +133,17 @@ Os eventos a seguir são disparados do controle.
 | --- | --- |
 | eventClick | O usuário clica ou toca em um evento.|
 
-## <a name="permissions"></a>Permissões
+## <a name="microsoft-graph-permissions"></a>Permissões do Microsoft Graph
 
-Este componente usa as seguintes APIs e permissões do Microsoft Graph:
+Este componente usa as seguintes APIs Graph Microsoft e permissões:
 
-| Recurso | Permissão |
-| - | - |
-| [/me/calendarview](/graph/api/calendar-list-calendarview) | Calendars.Read |
+| Configuração | Permissão | API
+| - | - | - |
+| Padrão. | Calendars.Read | [/me/calendarview](/graph/api/calendar-list-calendarview) |
 
-O componente permite que você especifique uma consulta diferente do Microsoft Graph a ser chamada (como `/groups/{id}/calendar/calendarView` ). Nesse caso, anexar a permissão ao final da cadeia de caracteres, delimitada por `|` .
+O componente permite que você especifique uma consulta Graph microsoft diferente para chamar (como `/groups/{id}/calendar/calendarView` ). Nesse caso, anexar a permissão ao final da cadeia de caracteres, delimitada por `|` .
 
-Ao usar o modelo padrão e o modelo padrão, APIs e permissões adicionais `renderAttendees` são necessárias. O modelo padrão para esse componente usa um [componente mgt-people](people.md) para eventos que têm participantes, o que exige o seguinte.
-
-| Recurso | Permissão |
-| - | - |
-| [/users](/graph/api/user-list) | Users.ReadBasic.All |
-| [/me/calendarview](/graph/api/user-list-people) | People.Read |
-| [/me/calendarview](/graph/api/user-list-contacts) | Contacts.Read |
+Ao usar o modelo padrão e o modelo padrão, APIs e permissões adicionais `renderAttendees` são necessárias. O modelo padrão para esse componente usa um [componente mgt-people](people.md) para eventos que têm participantes e herda todas as permissões.
 
 ## <a name="authentication"></a>Autenticação
 

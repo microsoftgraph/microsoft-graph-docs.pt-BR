@@ -1,32 +1,32 @@
 ---
 title: Update schemaExtension
-description: Atualize as propriedades na definição da schemaExtension especificada.
+description: Atualizar propriedades na definição do esquemaExtension especificado.
 localization_priority: Normal
 author: dkershaw10
 ms.prod: extensions
 doc_type: apiPageType
-ms.openlocfilehash: ac657ee517a11201cab50c8aa161ad20c9352ff8
-ms.sourcegitcommit: ea3b1a8b781a347015d9542826c5c0c24d50d35d
+ms.openlocfilehash: 4e3fbf4c9acd3512031ca29dd502e225ece2f133
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49352440"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52788049"
 ---
 # <a name="update-schemaextension"></a>Update schemaExtension
 
 Namespace: microsoft.graph
 
-Atualize as propriedades na definição da [schemaExtension](../resources/schemaextension.md)especificada. 
+Atualizar propriedades na definição do [esquemaExtension especificado.](../resources/schemaextension.md) 
 
-Isso significa que as propriedades personalizadas ou os tipos de recursos de destino não podem ser removidos da definição, mas novas propriedades personalizadas podem ser adicionadas e a descrição da extensão é alterada.
+Isso significa que propriedades personalizadas ou tipos de recurso de destino não podem ser removidos da definição, mas novas propriedades personalizadas podem ser adicionadas e a descrição da extensão alterada.
 
-As atualizações aditivas para a extensão só poderão ser feitas quando a extensão estiver no **indevelopment** ou no status **disponível** . 
+Atualizações aditivas para a extensão só podem ser feitas quando a extensão estiver no status **InDevelopment** ou **Disponível.** 
 
-A atualização se aplica a todos os recursos incluídos na propriedade **TargetTypes** da extensão. Esses recursos estão entre os [tipos de recurso de suporte](/graph/extensibility-overview#supported-resources).
+A atualização se aplica a todos os recursos incluídos na **propriedade targetTypes** da extensão. Esses recursos estão entre os [tipos de recursos de suporte.](/graph/extensibility-overview#supported-resources)
 
-Para fluxos delegados, o usuário conectado pode atualizar uma extensão de esquema, desde que a propriedade **Owner** da extensão seja definida como a **AppID** de um aplicativo que o usuário conectado possui. Esse aplicativo pode ser aquele que criou inicialmente a extensão ou outro aplicativo pertencente ao usuário conectado. 
+Para fluxos delegados, o usuário inscreveu pode atualizar  uma extensão de esquema desde que a propriedade proprietária da extensão seja definida como **appId** de um aplicativo que o usuário de entrada possui. Esse aplicativo pode ser aquele que inicialmente criou a extensão ou algum outro aplicativo pertencente ao usuário in-locar. 
 
-Esse critério para a propriedade **Owner** permite que um usuário conectado faça as atualizações por meio de outros aplicativos que não são de sua propriedade, como o Microsoft Graph Explorer. Ao usar o Graph Explorer para atualizar um recurso **schemaExtension** , inclua a propriedade **Owner** no corpo da solicitação patch. Para obter mais informações, consulte a seção [extensões](/graph/known-issues#extensions) em [problemas conhecidos com o Microsoft Graph](/graph/known-issues).
+Esse critério para a propriedade **owner** permite que um usuário in-loco faça atualizações por meio de outros aplicativos que eles não têm, como o Microsoft Graph Explorer. Ao usar Graph Explorer para atualizar um recurso **schemaExtension,** inclua a propriedade **owner** no corpo da solicitação PATCH. Para obter mais informações, consulte a seção [Extensões](/graph/known-issues#extensions) em [Problemas conhecidos com a Microsoft Graph](/graph/known-issues).
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -59,9 +59,9 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 | Propriedade   | Tipo |Descrição|
 |:---------------|:--------|:----------|
 |description|String|Descrição da extensão de esquema.|
-|properties|Coleção [extensionSchemaProperty](../resources/extensionschemaproperty.md)|A coleção de tipos e nomes de propriedades que compõem a definição da extensão de esquema. Somente as alterações aditivas são permitidas. |
-|status|String|O estado do ciclo de vida da extensão do esquema. O estado inicial na criação é o **indevelopment**. Os possíveis transições de Estados estão de **indevelopment** para **Available** e **disponíveis** para **preteridos**.|
-|targetTypes|Coleção de cadeias de caracteres|Conjunto de tipos do Microsoft Graph (que podem suportar extensões) à qual a extensão de esquema pode ser aplicada.  Somente as alterações aditivas são permitidas.|
+|properties|Coleção [extensionSchemaProperty](../resources/extensionschemaproperty.md)|A coleção de tipos e nomes de propriedades que compõem a definição da extensão de esquema. Somente alterações aditiva são permitidas. |
+|status|Cadeia de caracteres|O estado do ciclo de vida da extensão do esquema. O estado inicial após a criação **é InDevelopment**. As transições de estados possíveis **são de InDevelopment** **para Disponível** e **Disponível** **para Preterido**.|
+|targetTypes|Coleção de cadeias de caracteres|Conjunto de tipos Graph microsoft (que podem dar suporte a extensões) aos quais a extensão de esquema pode ser aplicada.  Somente alterações aditiva são permitidas.|
 
 ## <a name="response"></a>Resposta
 
@@ -118,9 +118,7 @@ Content-length: 201
 ##### <a name="response"></a>Resposta
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.schemaExtension"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 204 No Content

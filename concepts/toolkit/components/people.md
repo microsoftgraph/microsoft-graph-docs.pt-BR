@@ -3,12 +3,12 @@ title: Componente Pessoas no Microsoft Graph Toolkit
 description: Você pode usar o componente web para exibir um grupo de pessoas ou contatos usando `mgt-people` suas fotos ou iniciais.
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: 6bed8f2c06e3c6834533b8e881016c4bc6d54bac
-ms.sourcegitcommit: db3d2c6db8dd8f8cc14bdcebb2904d5e056a73e7
+ms.openlocfilehash: d169c5c51c4f846031d4519ab27a053f51c15f98
+ms.sourcegitcommit: 3f40fbb953b14c1f52341786569c678adfc5bd3e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52580012"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52780733"
 ---
 # <a name="people-component-in-the-microsoft-graph-toolkit"></a>Componente Pessoas no Microsoft Graph Toolkit
 
@@ -40,7 +40,6 @@ Por padrão, o componente busca eventos do ponto de extremidade com o filtro par
 | recurso | recurso | O recurso a ser Graph microsoft (por exemplo, `/me/people` ). |
 | escopos | escopos | Matriz opcional de cadeias de caracteres se estiver usando a propriedade ou um escopo delimitado por vírgula se estiver usando o atributo. O componente usará esses escopos (com um provedor com suporte) para garantir que o usuário tenha consentido com a permissão certa. |
 | versão | versão | Versão da API opcional a ser usada ao fazer a solicitação GET. O padrão é `v1.0`.  |
-
 
 O exemplo a seguir define o número máximo de pessoas a mostrar.
 
@@ -93,15 +92,16 @@ Os exemplos a seguir mostram como usar o `person` modelo.
 
 Este componente usa as seguintes APIs Graph Microsoft e permissões:
 
-| Recurso | Permissão |
-| - | - |
-| [/me/people](/graph/api/user-list-people) | `People.Read` |
+| Configuração | Permissão | API
+| --- | ---------- | ------- |
+| `groupId` set | User.Read.All, People.Read | [/groups/ \$ {groupId}/members](/graph/api/group-list-members) |
+| `userIds` set | User.ReadBasic.All | [/users/${userId}](/graph/api/user-get) |
+| `peopleQueries` set | People.Read | [/me/people](/graph/api/user-list-people) |
+| `resource` set | Permissões especificadas em `scopes` | Especificado em `resource` |
+| configuração padrão | People.Read | [/me/people](/graph/api/user-list-people) |
+| `showPresence` set | Presence.Read.All | [/communications/getPresencesByUserId](/graph/api/cloudcommunications-getpresencesbyuserid) |
 
-Ao usar os modelos padrão, APIs e permissões adicionais são necessárias. O modelo padrão para esse componente usa um [componente mgt-person,](person.md) que exige o seguinte.
-
-| Recurso | Permissão |
-| - | - |
-| [/users](/graph/api/user-list) | User.ReadBasic.All |
+Ao usar os modelos padrão, APIs e permissões adicionais são necessárias. O modelo padrão para esse componente usa um [componente mgt-person.](person.md) Consulte sua documentação para ver a lista de permissões necessárias.
 
 ## <a name="authentication"></a>Autenticação
 
