@@ -1,33 +1,33 @@
 ---
-title: Excluir deviceCompliancePolicyAssignment
-description: Exclui deviceCompliancePolicyAssignment.
+title: Atualizar deviceAppManagement
+description: Atualizar as propriedades de um objeto de deviceAppManagement.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 4044bf539760da5b789883179f0b2fd12d5ecb43
+ms.openlocfilehash: a63eb9342f906b6ebf277bfbbb94b52ce0894b5f
 ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 06/04/2021
-ms.locfileid: "52748513"
+ms.locfileid: "52748895"
 ---
-# <a name="delete-devicecompliancepolicyassignment"></a>Excluir deviceCompliancePolicyAssignment
+# <a name="update-deviceappmanagement"></a>Atualizar deviceAppManagement
 
 Namespace: microsoft.graph
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Exclui [deviceCompliancePolicyAssignment](../resources/intune-deviceconfig-devicecompliancepolicyassignment.md).
+Atualizar as propriedades de um objeto de [deviceAppManagement](../resources/intune-partnerintegration-deviceappmanagement.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
+|Delegado (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
+|Aplicativo|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -35,7 +35,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 }
 -->
 ``` http
-DELETE /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/assignments/{deviceCompliancePolicyAssignmentId}
+PATCH /deviceAppManagement
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -45,23 +45,44 @@ DELETE /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/ass
 |Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
-Não forneça um corpo de solicitação para esse método.
+No corpo da solicitação, forneça uma representação JSON do objeto [deviceAppManagement](../resources/intune-partnerintegration-deviceappmanagement.md).
+
+A tabela a seguir mostra as propriedades que são necessárias ao criar [deviceAppManagement](../resources/intune-partnerintegration-deviceappmanagement.md).
+
+|Propriedade|Tipo|Descrição|
+|:---|:---|:---|
+|id|String|Chave da entidade.|
+
+
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um código de resposta `204 No Content`.
+Se bem-sucedido, este método retornará um código de resposta `200 OK` e um objeto [deviceAppManagement](../resources/intune-partnerintegration-deviceappmanagement.md) atualizado no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
 ### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
 ``` http
-DELETE https://graph.microsoft.com/v1.0/deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/assignments/{deviceCompliancePolicyAssignmentId}
+PATCH https://graph.microsoft.com/v1.0/deviceAppManagement
+Content-type: application/json
+Content-length: 61
+
+{
+  "@odata.type": "#microsoft.graph.deviceAppManagement"
+}
 ```
 
 ### <a name="response"></a>Resposta
 Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 ``` http
-HTTP/1.1 204 No Content
+HTTP/1.1 200 OK
+Content-Type: application/json
+Content-Length: 110
+
+{
+  "@odata.type": "#microsoft.graph.deviceAppManagement",
+  "id": "bbb801a3-01a3-bbb8-a301-b8bba301b8bb"
+}
 ```
 
 

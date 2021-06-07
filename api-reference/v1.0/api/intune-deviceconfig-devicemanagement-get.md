@@ -1,24 +1,24 @@
 ---
-title: Acessar deviceCompliancePolicySettingStateSummary
-description: Leia as propriedades e as relações do objeto deviceCompliancePolicySettingStateSummary.
+title: Acessar deviceManagement
+description: Leia as propriedades e as relações do objeto deviceManagement.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 4d0a16e26ea24560bb96f4987b2005f6c88d2080
+ms.openlocfilehash: e0499e015eab318c2bf200fc1269e4427800b869
 ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 06/04/2021
-ms.locfileid: "52748394"
+ms.locfileid: "52748929"
 ---
-# <a name="get-devicecompliancepolicysettingstatesummary"></a>Acessar deviceCompliancePolicySettingStateSummary
+# <a name="get-devicemanagement"></a>Acessar deviceManagement
 
 Namespace: microsoft.graph
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Leia as propriedades e as relações do objeto [deviceCompliancePolicySettingStateSummary](../resources/intune-deviceconfig-devicecompliancepolicysettingstatesummary.md).
+Leia as propriedades e as relações do objeto [deviceManagement](../resources/intune-deviceconfig-devicemanagement.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -35,7 +35,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 }
 -->
 ``` http
-GET /deviceManagement/deviceCompliancePolicySettingStateSummaries/{deviceCompliancePolicySettingStateSummaryId}
+GET /deviceManagement
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
@@ -51,14 +51,14 @@ Este método dá suporte a [Parâmetros de consulta OData](/graph/query-paramete
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará o código de resposta `200 OK` e o objeto [deviceCompliancePolicySettingStateSummary](../resources/intune-deviceconfig-devicecompliancepolicysettingstatesummary.md) no corpo da resposta.
+Se tiver êxito, este método retornará o código de resposta `200 OK` e o objeto [deviceManagement](../resources/intune-deviceconfig-devicemanagement.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
 ### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
 ``` http
-GET https://graph.microsoft.com/v1.0/deviceManagement/deviceCompliancePolicySettingStateSummaries/{deviceCompliancePolicySettingStateSummaryId}
+GET https://graph.microsoft.com/v1.0/deviceManagement
 ```
 
 ### <a name="response"></a>Resposta
@@ -66,22 +66,19 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 483
+Content-Length: 409
 
 {
   "value": {
-    "@odata.type": "#microsoft.graph.deviceCompliancePolicySettingStateSummary",
-    "id": "7474d6d5-d6d5-7474-d5d6-7474d5d67474",
-    "setting": "Setting value",
-    "settingName": "Setting Name value",
-    "platformType": "iOS",
-    "unknownDeviceCount": 2,
-    "notApplicableDeviceCount": 8,
-    "compliantDeviceCount": 4,
-    "remediatedDeviceCount": 5,
-    "nonCompliantDeviceCount": 7,
-    "errorDeviceCount": 0,
-    "conflictDeviceCount": 3
+    "@odata.type": "#microsoft.graph.deviceManagement",
+    "id": "0b283420-3420-0b28-2034-280b2034280b",
+    "settings": {
+      "@odata.type": "microsoft.graph.deviceManagementSettings",
+      "deviceComplianceCheckinThresholdDays": 4,
+      "isScheduledActionEnabled": true,
+      "secureByDefault": true
+    },
+    "intuneAccountId": "cf1549a1-49a1-cf15-a149-15cfa14915cf"
   }
 }
 ```

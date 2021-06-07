@@ -1,33 +1,33 @@
 ---
-title: Excluir deviceCompliancePolicyAssignment
-description: Exclui deviceCompliancePolicyAssignment.
+title: Excluir deviceCategory
+description: Exclui deviceCategory.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 4044bf539760da5b789883179f0b2fd12d5ecb43
+ms.openlocfilehash: 1af21f022d3966d2f0fd9776de142f7f3287ad69
 ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 06/04/2021
-ms.locfileid: "52748513"
+ms.locfileid: "52748920"
 ---
-# <a name="delete-devicecompliancepolicyassignment"></a>Excluir deviceCompliancePolicyAssignment
+# <a name="delete-devicecategory"></a>Excluir deviceCategory
 
 Namespace: microsoft.graph
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Exclui [deviceCompliancePolicyAssignment](../resources/intune-deviceconfig-devicecompliancepolicyassignment.md).
+Exclui [deviceCategory](../resources/intune-onboarding-devicecategory.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
+|Delegado (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
+|Aplicativo|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -35,7 +35,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 }
 -->
 ``` http
-DELETE /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/assignments/{deviceCompliancePolicyAssignmentId}
+DELETE /deviceManagement/deviceCategories/{deviceCategoryId}
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -55,7 +55,7 @@ Se tiver êxito, este método retornará um código de resposta `204 No Content`
 ### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
 ``` http
-DELETE https://graph.microsoft.com/v1.0/deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/assignments/{deviceCompliancePolicyAssignmentId}
+DELETE https://graph.microsoft.com/v1.0/deviceManagement/deviceCategories/{deviceCategoryId}
 ```
 
 ### <a name="response"></a>Resposta

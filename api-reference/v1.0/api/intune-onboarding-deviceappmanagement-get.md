@@ -1,33 +1,33 @@
 ---
-title: Acessar deviceCompliancePolicySettingStateSummary
-description: Leia as propriedades e as relações do objeto deviceCompliancePolicySettingStateSummary.
+title: Get deviceAppManagement
+description: Ler propriedades e relações do objeto deviceAppManagement.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 4d0a16e26ea24560bb96f4987b2005f6c88d2080
+ms.openlocfilehash: 110d36cc1271ed8b3c056bf5204740508ba6e21a
 ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 06/04/2021
-ms.locfileid: "52748394"
+ms.locfileid: "52748922"
 ---
-# <a name="get-devicecompliancepolicysettingstatesummary"></a>Acessar deviceCompliancePolicySettingStateSummary
+# <a name="get-deviceappmanagement"></a>Get deviceAppManagement
 
 Namespace: microsoft.graph
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Leia as propriedades e as relações do objeto [deviceCompliancePolicySettingStateSummary](../resources/intune-deviceconfig-devicecompliancepolicysettingstatesummary.md).
+Ler propriedades e relações do objeto [deviceAppManagement](../resources/intune-onboarding-deviceappmanagement.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
+|Delegado (conta corporativa ou de estudante)|DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
+|Aplicativo|DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -35,7 +35,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 }
 -->
 ``` http
-GET /deviceManagement/deviceCompliancePolicySettingStateSummaries/{deviceCompliancePolicySettingStateSummaryId}
+GET /deviceAppManagement
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
@@ -51,14 +51,14 @@ Este método dá suporte a [Parâmetros de consulta OData](/graph/query-paramete
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará o código de resposta `200 OK` e o objeto [deviceCompliancePolicySettingStateSummary](../resources/intune-deviceconfig-devicecompliancepolicysettingstatesummary.md) no corpo da resposta.
+Se bem-sucedido, este método retornará um código de resposta `200 OK` e um objeto [deviceAppManagement](../resources/intune-onboarding-deviceappmanagement.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
 ### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
 ``` http
-GET https://graph.microsoft.com/v1.0/deviceManagement/deviceCompliancePolicySettingStateSummaries/{deviceCompliancePolicySettingStateSummaryId}
+GET https://graph.microsoft.com/v1.0/deviceAppManagement
 ```
 
 ### <a name="response"></a>Resposta
@@ -66,22 +66,16 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 483
+Content-Length: 474
 
 {
   "value": {
-    "@odata.type": "#microsoft.graph.deviceCompliancePolicySettingStateSummary",
-    "id": "7474d6d5-d6d5-7474-d5d6-7474d5d67474",
-    "setting": "Setting value",
-    "settingName": "Setting Name value",
-    "platformType": "iOS",
-    "unknownDeviceCount": 2,
-    "notApplicableDeviceCount": 8,
-    "compliantDeviceCount": 4,
-    "remediatedDeviceCount": 5,
-    "nonCompliantDeviceCount": 7,
-    "errorDeviceCount": 0,
-    "conflictDeviceCount": 3
+    "@odata.type": "#microsoft.graph.deviceAppManagement",
+    "id": "bbb801a3-01a3-bbb8-a301-b8bba301b8bb",
+    "microsoftStoreForBusinessLastSuccessfulSyncDateTime": "2016-12-31T23:57:45.2453148-08:00",
+    "isEnabledForMicrosoftStoreForBusiness": true,
+    "microsoftStoreForBusinessLanguage": "Microsoft Store For Business Language value",
+    "microsoftStoreForBusinessLastCompletedApplicationSyncTime": "2017-01-01T00:02:00.0421137-08:00"
   }
 }
 ```

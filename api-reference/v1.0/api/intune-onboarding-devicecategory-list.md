@@ -1,33 +1,33 @@
 ---
-title: Excluir deviceCompliancePolicyAssignment
-description: Exclui deviceCompliancePolicyAssignment.
+title: Listar deviceCategories
+description: Lista propriedades e relações dos objetos deviceCategory.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 4044bf539760da5b789883179f0b2fd12d5ecb43
+ms.openlocfilehash: e7cd7218b0b54ed6bd5be7610d4233e190a8f4bd
 ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 06/04/2021
-ms.locfileid: "52748513"
+ms.locfileid: "52748919"
 ---
-# <a name="delete-devicecompliancepolicyassignment"></a>Excluir deviceCompliancePolicyAssignment
+# <a name="list-devicecategories"></a>Listar deviceCategories
 
 Namespace: microsoft.graph
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Exclui [deviceCompliancePolicyAssignment](../resources/intune-deviceconfig-devicecompliancepolicyassignment.md).
+Lista propriedades e relações dos objetos [deviceCategory](../resources/intune-onboarding-devicecategory.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
+|Delegado (conta corporativa ou de estudante)|DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
+|Aplicativo|DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -35,7 +35,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 }
 -->
 ``` http
-DELETE /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/assignments/{deviceCompliancePolicyAssignmentId}
+GET /deviceManagement/deviceCategories
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -48,20 +48,33 @@ DELETE /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/ass
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um código de resposta `204 No Content`.
+Se tiver êxito, este método retornará um código de resposta `200 OK` e uma coleção de objetos [deviceCategory](../resources/intune-onboarding-devicecategory.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
 ### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
 ``` http
-DELETE https://graph.microsoft.com/v1.0/deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/assignments/{deviceCompliancePolicyAssignmentId}
+GET https://graph.microsoft.com/v1.0/deviceManagement/deviceCategories
 ```
 
 ### <a name="response"></a>Resposta
 Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 ``` http
-HTTP/1.1 204 No Content
+HTTP/1.1 200 OK
+Content-Type: application/json
+Content-Length: 233
+
+{
+  "value": [
+    {
+      "@odata.type": "#microsoft.graph.deviceCategory",
+      "id": "f881b841-b841-f881-41b8-81f841b881f8",
+      "displayName": "Display Name value",
+      "description": "Description value"
+    }
+  ]
+}
 ```
 
 

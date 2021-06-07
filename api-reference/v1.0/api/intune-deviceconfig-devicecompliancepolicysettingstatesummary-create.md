@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 86a9c93c07ec2d8f180e146e18b96a32895f92be
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 2cadf4008d8e2c99917192c2bd124a271fe2f4e9
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48083467"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52748401"
 ---
 # <a name="create-devicecompliancepolicysettingstatesummary"></a>Criar deviceCompliancePolicySettingStateSummary
 
@@ -23,11 +23,11 @@ Crie um novo objeto [deviceCompliancePolicySettingStateSummary](../resources/int
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
+|Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|Sem suporte.|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -54,7 +54,7 @@ A tabela a seguir mostra as propriedades obrigatórias ao criar deviceCompliance
 |id|Cadeia de caracteres|Chave da entidade.|
 |configuração|Cadeia de caracteres|O nome da classe de configuração e o nome da propriedade.|
 |settingName|Cadeia de caracteres|Nome da configuração.|
-|platformType|[policyPlatformType](../resources/intune-deviceconfig-policyplatformtype.md)|Configuração de plataforma. Os valores possíveis são: `android`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `all`.|
+|platformType|[policyPlatformType](../resources/intune-deviceconfig-policyplatformtype.md)|Plataforma de configuração. Os valores possíveis são: `android`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `all`.|
 |unknownDeviceCount|Int32|Número de dispositivos desconhecidos|
 |notApplicableDeviceCount|Int32|Número de dispositivos não aplicáveis|
 |compliantDeviceCount|Int32|Número de dispositivos em conformidade|
@@ -114,11 +114,6 @@ Content-Length: 440
   "conflictDeviceCount": 3
 }
 ```
-
-
-
-
-
 
 
 

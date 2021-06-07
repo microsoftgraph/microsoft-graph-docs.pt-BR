@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 82e717c75983f21cbf6f086ed4057b39fb8f08e6
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: c41b8f777784ce7d10f591456b0511bea903a8c6
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47972963"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52747939"
 ---
 # <a name="update-iosupdatedevicestatus"></a>Atualizar iosUpdateDeviceStatus
 
@@ -23,11 +23,11 @@ Atualizar as propriedades de um objeto [iosUpdateDeviceStatus](../resources/intu
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
+|Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|Sem suporte.|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -51,8 +51,8 @@ A tabela a seguir mostra as propriedades obrigatórias ao criar [iosUpdateDevice
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave da entidade.|
-|installStatus|[iosUpdatesInstallStatus](../resources/intune-deviceconfig-iosupdatesinstallstatus.md)|O status de instalação do relatório de políticas. Os valores possíveis são:, `success` `available` , `idle` , `unknown` , `downloading` , `downloadFailed` ,,,,,,,,,,,,,,, `downloadRequiresComputer` `downloadInsufficientSpace` `downloadInsufficientPower` `downloadInsufficientNetwork` `installing` `installInsufficientSpace` `installInsufficientPower` , `installPhoneCallInProgress` , `installFailed` , `notSupportedOperation` , `sharedDeviceUserLoggedInError` .|
+|id|Cadeia de caracteres|Chave da entidade.|
+|installStatus|[iosUpdatesInstallStatus](../resources/intune-deviceconfig-iosupdatesinstallstatus.md)|O status de instalação do relatório de políticas. Os valores possíveis são: `success` , , , , , , , , `available` , , , `idle` , , `unknown` , , , `downloading` , , `downloadFailed` `downloadRequiresComputer` , `downloadInsufficientSpace` `downloadInsufficientPower` `downloadInsufficientNetwork` `installing` `installInsufficientSpace` `installInsufficientPower` `installPhoneCallInProgress` `installFailed` `notSupportedOperation` . `sharedDeviceUserLoggedInError` `deviceOsHigherThanDesiredOsVersion`|
 |osVersion|Cadeia de caracteres|A versão do dispositivo que está sendo relatado.|
 |deviceId|Cadeia de caracteres|A ID do dispositivo que está sendo relatado.|
 |userId|Cadeia de caracteres|A ID do usuário que está sendo relatado.|
@@ -62,7 +62,7 @@ A tabela a seguir mostra as propriedades obrigatórias ao criar [iosUpdateDevice
 |complianceGracePeriodExpirationDateTime|DateTimeOffset|DateTime em que o período de cortesia de conformidade do dispositivo termina|
 |status|[complianceStatus](../resources/intune-shared-compliancestatus.md)|Status de conformidade do relatório de políticas. Os valores possíveis são: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.|
 |lastReportedDateTime|DateTimeOffset|Data e hora da última modificação do relatório de políticas.|
-|userPrincipalName|String|UserPrincipalName.|
+|userPrincipalName|Cadeia de caracteres|UserPrincipalName.|
 
 
 
@@ -117,11 +117,6 @@ Content-Length: 601
   "userPrincipalName": "User Principal Name value"
 }
 ```
-
-
-
-
-
 
 
 

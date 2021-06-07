@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ee50cd2a752ab74897cac42b5a3305842cd93692
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: a74c2fe13a60a1184b8cd36b6e353c59dce88ce6
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47968203"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52748373"
 ---
 # <a name="update-deviceconfigurationassignment"></a>Atualizar deviceConfigurationAssignment
 
@@ -23,11 +23,11 @@ Atualizar as propriedades de um objeto [deviceConfigurationAssignment](../resour
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
+|Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|Sem suporte.|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -51,7 +51,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [deviceC
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|A chave da atribuição.|
+|id|Cadeia de caracteres|A chave da atribuição.|
 |destino|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|O destino da atribuição da configuração do dispositivo.|
 
 
@@ -66,12 +66,13 @@ Este é um exemplo da solicitação.
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceManagement/deviceConfigurations/{deviceConfigurationId}/assignments/{deviceConfigurationAssignmentId}
 Content-type: application/json
-Content-length: 169
+Content-length: 221
 
 {
   "@odata.type": "#microsoft.graph.deviceConfigurationAssignment",
   "target": {
-    "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
+    "@odata.type": "microsoft.graph.configurationManagerCollectionAssignmentTarget",
+    "collectionId": "Collection Id value"
   }
 }
 ```
@@ -81,21 +82,17 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 218
+Content-Length: 270
 
 {
   "@odata.type": "#microsoft.graph.deviceConfigurationAssignment",
   "id": "d59b6342-6342-d59b-4263-9bd542639bd5",
   "target": {
-    "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
+    "@odata.type": "microsoft.graph.configurationManagerCollectionAssignmentTarget",
+    "collectionId": "Collection Id value"
   }
 }
 ```
-
-
-
-
-
 
 
 
