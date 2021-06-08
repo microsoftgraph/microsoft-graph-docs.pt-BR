@@ -56,7 +56,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 |mailEnabled|Boolean|Especifica se o grupo está habilitado para email.|
 |mailNickname|String|O alias de e-mail do grupo. Essa propriedade deve ser especificada quando um grupo é criado.  |
 |securityEnabled|Boolean|Especifica se o grupo é um grupo de segurança. |
-|visibility|Cadeia de caracteres|Especifica a visibilidade de um grupo do Microsoft 365. Os valores possíveis são: **Private**, **Public** ou vazio (que é interpretado como **Public**).|
+|visibility|Cadeia de caracteres|Especifica a visibilidade de um grupo do Microsoft 365. Os valores possíveis são: **Privado**, **Público** ou vazio (que é interpretado como **Público**).|
 
 > **Observação:**
 >

@@ -1,6 +1,6 @@
 ---
 title: Atualizar profilephoto
-description: Atualize a foto do **usuário** conectado, ou do **grupo** ou **contato** especificado.
+description: Atualize a foto do **usuário** conectado ou do **grupo** ou **contato** especificado.
 localization_priority: Priority
 author: kevinbellinger
 ms.prod: ''
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 - Foto do perfil de um **grupo** – Group.ReadWrite.All
 - Foto de um **contato** – Contacts.ReadWrite
 
-> **Observação:** para atualizar a foto de qualquer usuário na organização, o aplicativo deve ter a permissão de aplicativo User.ReadWrite.All e chamar esta API usando a própria identidade, não em nome de um usuário. Para saber mais, veja como [obter acesso sem um usuário conectado](/graph/auth-v2-service).
+> **Observação** Para atualizar a foto de qualquer usuário na organização, o aplicativo deve ter a permissão de aplicativo User.ReadWrite.All e chamar esta API usando a própria identidade, não em nome de um usuário. Para saber mais, veja como [obter acesso sem um usuário conectado](/graph/auth-v2-service).
 
 > **Observação:** Há um [problema conhecido](/graph/known-issues#groups)ao acessar fotos de grupo usando permissões de aplicativo.
 

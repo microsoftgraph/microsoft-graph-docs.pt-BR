@@ -3,12 +3,12 @@ title: Use o microsoft Graph Toolkit com React
 description: Começar a usar o microsoft Graph Toolkit em um React aplicativo.
 localization_priority: Normal
 author: waldekmastykarz
-ms.openlocfilehash: a1eaf17b4d4b12e04c11941ab25c5e2bdfd6d57a
-ms.sourcegitcommit: db3d2c6db8dd8f8cc14bdcebb2904d5e056a73e7
+ms.openlocfilehash: 0c06566824c6da06490f83693aedd7ef40ae282b
+ms.sourcegitcommit: a2d81138de2a0404e611fbb535679199477ef3d5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52579771"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52813069"
 ---
 # <a name="use-the-microsoft-graph-toolkit-with-react"></a>Use o microsoft Graph Toolkit com React
 
@@ -26,31 +26,31 @@ Para seguir as etapas deste artigo, você precisará de um ambiente Microsoft 36
 
 Crie um novo React aplicativo executando o seguinte comando. Isso criará um novo aplicativo React usando TypeScript, o que ajudará você a escrever um código mais robusto e evitar erros de tempo de execução.
 
-```cmd
+```Command Line
 npx create-react-app my-m365-app --template typescript --use-npm
 ```
 
 Altere o diretório de trabalho para o aplicativo recém-criado.
 
-```cmd
+```Command Line
 cd my-m365-app
 ```
 
 Em seguida, instale o `mgt-react` pacote npm, que contém os componentes Graph Toolkit React Microsoft.
 
-```cmd
+```Command Line
 npm i @microsoft/mgt-react
 ```
 
 Instale o `mgt-msal2-provider` `mgt-element` pacote e npm também, que contém o provedor de auth MSAL 2.0.
 
-```cmd
+```Command Line
 npm i @microsoft/mgt-element @microsoft/mgt-msal2-provider
 ```
 
 Confirme se você pode executar o aplicativo.
 
-```cmd
+```Command Line
 npm start
 ```
 
@@ -77,14 +77,14 @@ Em seguida, configure o provedor de autenticação que o microsoft Graph Toolkit
 
 1. No editor de código, abra **o src/index.** e à lista de importações, adicione:
 
-    ```tsx
+    ```TypeScript
     import { Providers } from '@microsoft/mgt-element';
     import { Msal2Provider } from '@microsoft/mgt-msal2-provider';
     ```
 
 1. Após a última `import` instrução, inicialize o microsoft Graph Toolkit com o provedor MSAL.
 
-    ```tsx
+    ```TypeScript
     Providers.globalProvider = new Msal2Provider({
       clientId: 'REPLACE_WITH_CLIENTID'
     });
@@ -127,13 +127,13 @@ Adicione o **componente Logon** do Microsoft Graph Toolkit React, que exibirá o
 
 1. No editor de código, abra o **arquivo src/App.tsx** e, na lista de importações, adicione:
 
-    ```tsx
+    ```TypeScript
     import { Login } from '@microsoft/mgt-react';
     ```
 
 1. Na `App` função, substitua o conteúdo da cláusula pela estrutura básica, incluindo o componente Graph Toolkit `return` Logon da Microsoft:
 
-    ```tsx
+    ```TypeScript
     <div className="App">
       <header>
         <Login />
@@ -142,7 +142,7 @@ Adicione o **componente Logon** do Microsoft Graph Toolkit React, que exibirá o
     ```
 
 Com essas alterações, o **arquivo src/App.tsx** terá a seguinte aparência.
-```tsx
+```TypeScript
 
 import { Login } from '@microsoft/mgt-react';
 import React from 'react';
@@ -180,7 +180,7 @@ Antes de carregar dados Microsoft 365, você precisa especificar a lista de esco
 
 1. No editor de código, abra o **arquivo src/index.tsx** e atualize o código de inicialização do provedor.
 
-    ```tsx
+    ```TypeScript
     Providers.globalProvider = new Msal2Provider({
       clientId: 'REPLACE_WITH_CLIENTID',
       scopes: ['calendars.read', 'user.read', 'openid', 'profile', 'people.read', 'user.readbasic.all']
@@ -197,19 +197,19 @@ Para rastrear o estado de login do usuário em seu aplicativo, você usará o Re
 
 1. No editor de código, abra o **arquivo src/App.tsx** e estenda a instrução React `import` existente.
 
-    ```tsx
+    ```TypeScript
     import React, { useState, useEffect } from 'react';
     ```
 
 1. Importe os `Provider` tipos e de , `ProviderState` `mgt-element` adicionando a importações.
 
-    ```tsx
+    ```TypeScript
     import { Providers, ProviderState } from '@microsoft/mgt-element';
     ```
 
 1. Adicione uma função personalizada chamada que permite controlar o estado de login do `useIsSignedIn` usuário em seu aplicativo.
 
-    ```tsx
+    ```TypeScript
     function useIsSignedIn(): [boolean] {
       const [isSignedIn, setIsSignedIn] = useState(false);
     
@@ -239,7 +239,7 @@ Agora que você rastreia o estado de login do usuário em seu aplicativo, você 
 
 1. No editor de código, abra o **arquivo src/App.tsx** e, dentro da função **App,** adicione:
 
-    ```tsx
+    ```TypeScript
     const [isSignedIn] = useIsSignedIn();
     ```
 
@@ -247,7 +247,7 @@ Agora que você rastreia o estado de login do usuário em seu aplicativo, você 
 
 1. Estenda o conteúdo da cláusula com um componente de Agenda Graph Toolkit `return` `div` Microsoft.
 
-    ```tsx
+    ```TypeScript
     <div>
       {isSignedIn &&
         <Agenda />}
@@ -256,7 +256,7 @@ Agora que você rastreia o estado de login do usuário em seu aplicativo, você 
 
 Com essas alterações, o **arquivo src/App.tsx** deve ter a seguinte aparência.
 
-```tsx
+```TypeScript
 import { Providers, ProviderState } from '@microsoft/mgt';
 import { Agenda, Login } from '@microsoft/mgt-react';
 import React, { useState, useEffect } from 'react';

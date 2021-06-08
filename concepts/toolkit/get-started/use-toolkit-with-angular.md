@@ -3,12 +3,12 @@ title: Use o microsoft Graph Toolkit com Angular
 description: Começar a usar o microsoft Graph Toolkit em um Angular aplicativo.
 localization_priority: Normal
 author: elisenyang
-ms.openlocfilehash: 1390b29c94fef292433e1e422fa5c44fd480e1eb
-ms.sourcegitcommit: db3d2c6db8dd8f8cc14bdcebb2904d5e056a73e7
+ms.openlocfilehash: b1985598985f85c0f33676fee49656324c65c7c5
+ms.sourcegitcommit: a2d81138de2a0404e611fbb535679199477ef3d5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52579883"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52813181"
 ---
 # <a name="use-the-microsoft-graph-toolkit-with-angular"></a>Use o microsoft Graph Toolkit com Angular
 
@@ -17,7 +17,7 @@ Os Graph Toolkit da Microsoft funcionam muito bem com estruturas da Web, como An
 ## <a name="add-the-microsoft-graph-toolkit"></a>Adicionar o microsoft Graph Toolkit
 
 Primeiro, você precisa habilitar elementos personalizados em seu aplicativo Angular adicionando o `CUSTOM_ELEMENT_SCHEMA` ao `@NgModule() decorator` em `app.module.ts` . O exemplo a seguir mostra como fazer isso:
-```ts
+```TypeScript
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
@@ -33,7 +33,7 @@ import { AppComponent } from './app.component';
 export class AppModule {}
 ```
 Em seguida, adicione o microsoft Graph Toolkit ao seu projeto instalando o pacote npm com:
-```bash
+```Command Line
 npm install @microsoft/mgt
 ```
 ## <a name="initialize-a-provider"></a>Inicializar um provedor
@@ -46,7 +46,7 @@ O exemplo a seguir mostra como adicionar o [Provedor MSAL 2](../providers/msal2.
 
 Import the provider and set it to initialize when the application initializes. Substitua `<YOUR-CLIENT-ID>` pela ID do cliente para seu aplicativo.
 
-```ts
+```TypeScript
 import { Component, OnInit } from '@angular/core';
 import { Providers, Msal2Provider } from '@microsoft/mgt';
 
@@ -95,7 +95,7 @@ Você pode evitar esses erros alterando os caracteres padrão usados pelo Toolki
 
 Importe e `TemplateHelper` use o método para definir sua sintaxe de associação `.setBindingSyntax()` personalizada.
 
-```ts
+```TypeScript
 import { Component, OnInit } from '@angular/core';
 import { Providers, Msal2Provider, TemplateHelper } from '@microsoft/mgt';
 
