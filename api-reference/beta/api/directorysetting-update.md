@@ -5,12 +5,12 @@ author: adimitui
 localization_priority: Normal
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 805ad8068418d50e6cfc4a6e395a150782cb1aab
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 08f6c51413f751a0ce5a2818969e253d32f5e2fe
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50436621"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52786829"
 ---
 # <a name="update-a-directory-setting"></a>Atualizar uma configuração de diretório
 
@@ -22,7 +22,7 @@ Atualize as propriedades de um objeto de configuração de diretório específic
 
 > **Observação**: a versão /beta dessa API só se aplica a grupos. A versão /v1.0 desta API foi renomeada para *Update groupSettings*.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
@@ -97,9 +97,7 @@ Content-length: 178
 
 ##### <a name="response"></a>Resposta
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.directorysetting"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 204 OK

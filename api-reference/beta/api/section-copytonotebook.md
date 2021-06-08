@@ -1,18 +1,18 @@
 ---
-title: 'seção: copyToNotebook'
+title: 'section: copyToNotebook'
 description: Copia uma seção para um bloco de anotações específico.
 localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: 5a1d99f93df7acd6c964ae690784ab3df8cca43c
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 17d2711abedbf2eeedc4fba9c801e79ff4d151ec
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48978680"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52786736"
 ---
-# <a name="section-copytonotebook"></a>seção: copyToNotebook
+# <a name="section-copytonotebook"></a>section: copyToNotebook
 
 Namespace: microsoft.graph
 
@@ -20,8 +20,8 @@ Namespace: microsoft.graph
 
 Copia uma seção para um bloco de anotações específico.
 
-Para operações de cópia, siga um padrão de chamada assíncrona: primeiro, chame a ação de cópia e, em seguida, pesquise o ponto de extremidade da operação para o resultado.
-## <a name="permissions"></a>Permissões
+Para operações de cópia, siga um padrão de chamada assíncrona: primeiro chame a ação Copiar e, em seguida, sonda o ponto de extremidade da operação para o resultado.
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
@@ -49,15 +49,15 @@ No corpo da solicitação, forneça um objeto JSON que contém os parâmetros de
 
 | Parâmetro    | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|siteCollectionId|String|A ID do site do SharePoint para o qual copiar. Use somente ao copiar para um site do SharePoint.|
-|siteId|String|A ID da Web do SharePoint a ser copiada. Use somente ao copiar para um site do SharePoint.|
-|groupId|Cadeia de caracteres|A ID do grupo para o qual copiar. Use somente ao copiar para um grupo do Microsoft 365.|
-|id|String|Obrigatório. A ID do bloco de anotações de destino. |
-|renomeas|String|O nome da cópia. O padrão é o nome do item existente. |
+|siteCollectionId|String|A id do site SharePoint para o que copiar. Use somente ao copiar para um SharePoint site.|
+|siteId|String|A id do SharePoint web para o que copiar. Use somente ao copiar para um SharePoint site.|
+|groupId|Cadeia de caracteres|A id do grupo para o que copiar. Use somente ao copiar para um Microsoft 365 grupo.|
+|id|String|Obrigatório. A id do bloco de anotações de destino. |
+|renameAs|String|O nome da cópia. Padrão para o nome do item existente. |
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `202 Accepted` código de resposta e um `Operation-Location` cabeçalho. Sondar o ponto de extremidade Operation-Location para [obter o status da operação de cópia](onenoteoperation-get.md).
+Se tiver êxito, este método retornará `202 Accepted` um código de resposta e um `Operation-Location` header. Sondar Operation-Location ponto de extremidade para [obter o status da operação de cópia.](onenoteoperation-get.md)
 
 ## <a name="example"></a>Exemplo
 Eis um exemplo de como chamar esta API.
@@ -102,9 +102,7 @@ Content-length: 84
 ##### <a name="response"></a>Resposta
 Veja a seguir um exemplo da resposta.
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.onenoteOperation"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 202 Accepted

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 68f93b8975145493d0968132804f718509ada3ee
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 3afd3800d462936686197fb86e1b1e458ab7997c
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52038513"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52786920"
 ---
 # <a name="update-ipnamedlocation"></a>Atualizar ipNamedlocation
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 Atualize as propriedades de um [objeto ipNamedLocation.](../resources/ipNamedLocation.md)
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---------------------------------------|:--------------------------------------------|
 | Delegado (conta corporativa ou de estudante)     | Policy.Read.All e Policy.ReadWrite.ConditionalAccess |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Application                            | Policy.Read.All e Policy.ReadWrite.ConditionalAccess |
+| Aplicativo                            | Policy.Read.All e Policy.ReadWrite.ConditionalAccess |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -53,7 +53,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 |:-------------|:------------|:------------|
 |displayName|String|Nome acessível para humanos do local.|
 |ipRanges|Coleção [ipRange](../resources/iprange.md)|Lista de intervalos de endereços IP no formato CIDR IPv4 (1.2.3.4/32) ou qualquer formato IPv6 aceitável do IETF RFC5962.|
-|isTrusted|Boolean|O valor é `true` se esse local for explicitamente confiável.|
+|isTrusted|Booliano|O valor é `true` se esse local for explicitamente confiável.|
 
 ## <a name="response"></a>Resposta
 
@@ -114,9 +114,7 @@ Este é um exemplo de resposta.
 > **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.ipNamedLocation"
+  "blockType": "response"
 } -->
 
 ```http

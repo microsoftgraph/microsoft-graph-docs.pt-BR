@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: dbc7c4b07470ea0de1e4afe492a9accfc9173d1e
-ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
+ms.openlocfilehash: 6b4a9c00bc40f2bfd0ea9cc40317c426f2c2aa2c
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "52664008"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52786553"
 ---
 # <a name="call-transfer"></a>call: transfer
 
@@ -24,7 +24,7 @@ Transferir uma chamada ponto a ponto ativa.
 
 Uma transferência consultiva significa que o transferidor pode informar a pessoa para a quem deseja transferir a chamada (o transferidor), antes que a transferência seja feita. Isso se opõe a transferir a chamada diretamente.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 | Tipo de permissão | Permissões (da com menos para a com mais privilégios)         |
@@ -111,9 +111,7 @@ Content-Length: 430
 > **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.None"
+  "blockType": "response"
 }-->
 ```http
 HTTP/1.1 202 Accepted
@@ -302,9 +300,7 @@ Content-Type: application/json
 > **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.None"
+  "blockType": "response"
 }-->
 ```http
 HTTP/1.1 202 Accepted
@@ -483,9 +479,7 @@ Content-Length: 430
 > **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.None"
+  "blockType": "response"
 }-->
 ```http
 HTTP/1.1 202 Accepted
@@ -670,9 +664,7 @@ Content-Type: application/json
 > **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.None"
+  "blockType": "response"
 }-->
 ```http
 HTTP/1.1 202 Accepted

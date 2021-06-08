@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mahage-msft
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: d5ce888c2b4a32e175ddc69e2edc6f2df0fc0411
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 13e4117325d7a221fe2e62e4d34ddf1165d1b213
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52044547"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52786794"
 ---
 # <a name="update-reviewsetquery"></a>Atualizar reviewSetQuery
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph.ediscovery
 
 Atualize as propriedades de uma revisão de Descoberta [AutomáticaSetQuery](../resources/ediscovery-reviewsetquery.md).
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -103,9 +103,7 @@ Este é um exemplo de resposta.
 > **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.ediscovery.reviewSetQuery"
+  "blockType": "response"
 } -->
 
 ```http

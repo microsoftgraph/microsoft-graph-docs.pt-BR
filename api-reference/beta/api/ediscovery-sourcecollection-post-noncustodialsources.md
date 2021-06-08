@@ -5,12 +5,12 @@ author: mahage-msft
 localization_priority: Normal
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 0d9735e9d20ab6428e9ba8c539fa1f5771c2b8c7
-ms.sourcegitcommit: 2a35434fabc76672e21bfc3ed5a1d28f9f3b66bc
+ms.openlocfilehash: b6d3dde3e779aad317e3d2827e602d5097300d22
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52266903"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52786787"
 ---
 # <a name="add-noncustodialdatasource"></a>Adicionar noncustodialDataSource
 
@@ -20,14 +20,14 @@ Namespace: microsoft.graph.ediscovery
 
 Adicione noncustodialSources a [uma sourceCollection](../api/ediscovery-sourcecollection-get.md).
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|eDiscovery.ReadWrite.All|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Delegado (conta corporativa ou de estudante)|eDiscovery.ReadWrite.All|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|Sem suporte.|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -56,7 +56,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [o noncu
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|@odata.id|Cadeia de caracteres|Cadeia de caracteres que define o objeto custodial. Vejo o exemplo a seguir.  O @odata.id pode ser recuperado do [noncustodialDataSource](../resources/ediscovery-noncustodialdatasource.md).|
+|@odata.id|String|Cadeia de caracteres que define o objeto custodial. Vejo o exemplo a seguir.  O @odata.id pode ser recuperado do [noncustodialDataSource](../resources/ediscovery-noncustodialdatasource.md).|
 
 ## <a name="response"></a>Resposta
 
@@ -106,8 +106,7 @@ Content-length: 206
 
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.ediscovery.noncustodialDataSource"
+  "truncated": true
 }
 -->
 

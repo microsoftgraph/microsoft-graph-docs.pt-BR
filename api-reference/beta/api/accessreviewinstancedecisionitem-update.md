@@ -5,12 +5,12 @@ localization_priority: Normal
 author: isabelleatmsft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: a104d963c3d5bbad3cff11b998f9a9a2240d08b5
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 8fb69b4088fe0366f19e076fb069a8d57826ae18
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52048376"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52786633"
 ---
 # <a name="update-accessreviewinstancedecisionitem"></a>Atualizar accessReviewInstanceDecisionItem
 
@@ -100,9 +100,7 @@ Content-length: 730
 ### <a name="response"></a>Resposta
 >**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.accessReviewInstanceDecisionItem"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 204 Accepted

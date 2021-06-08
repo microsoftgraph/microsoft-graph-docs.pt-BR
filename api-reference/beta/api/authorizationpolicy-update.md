@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abhijeetsinha
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 6b56548645503fc6bc3577fdb38749b7b8a2d210
-ms.sourcegitcommit: 34891a1c601976166958be1aa04bab5936592b44
+ms.openlocfilehash: 723f8b174a256cc3b739922101f897067594bd43
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52231935"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52786850"
 ---
 # <a name="update-authorizationpolicy"></a>Atualizar authorizationPolicy
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 Atualize as propriedades de um [objeto authorizationPolicy.](../resources/authorizationpolicy.md)
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -52,7 +52,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|  
 |displayName|String| Nome de exibição para esta política. |  
-|descrição|String| Descrição dessa política. |  
+|description|String| Descrição dessa política. |  
 |guestUserRoleId|Guid| Representa modelo de funçãoId para a função que deve ser concedida ao usuário convidado. Consulte [Listar unifiedRoleDefinitions](./rbacapplication-list-roledefinitions.md) para encontrar a lista de modelos de função disponíveis. Atualmente, somente as funções com suporte são User ( `a0b1b346-4d3e-4e8b-98f8-753987be4970` ), Guest User ( ) e `10dae51f-b6af-4016-8d66-8c2a99b929b3` Restricted Guest User ( `2af84b1e-32c8-42b7-82bc-daa82404023b` ). | 
 |enabledPreviewFeatures|Collection(string)| Lista de recursos habilitados para visualização privada no locatário. | 
 |blockMsolPowerShell|Booliano| Para desabilitar o uso do MSOL PowerShell, de definir essa propriedade como `true` . Isso também desabilitará o acesso baseado no usuário ao ponto de extremidade de serviço herdado usado pelo MSOL PowerShell. Isso não afeta o Azure AD Conexão ou o Microsoft Graph. | 
@@ -92,9 +92,7 @@ PATCH https://graph.microsoft.com/beta/policies/authorizationPolicy/authorizatio
 Este é um exemplo de resposta.
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.authorizationPolicy"
+  "blockType": "response"
 } -->
 
 ```http
@@ -146,9 +144,7 @@ PATCH https://graph.microsoft.com/beta/policies/authorizationPolicy/authorizatio
 Este é um exemplo de resposta.
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.authorizationPolicy"
+  "blockType": "response"
 } -->
 
 ```http
@@ -197,9 +193,7 @@ PATCH https://graph.microsoft.com/beta/policies/authorizationPolicy/authorizatio
 Este é um exemplo de resposta.
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.authorizationPolicy"
+  "blockType": "response"
 } -->
 
 ```http
@@ -251,9 +245,7 @@ PATCH https://graph.microsoft.com/beta/policies/authorizationPolicy/authorizatio
 Este é um exemplo de resposta.
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.authorizationPolicy"
+  "blockType": "response"
 } -->
 
 ```http
@@ -303,9 +295,7 @@ PATCH https://graph.microsoft.com/beta/policies/authorizationPolicy/authorizatio
 Este é um exemplo de resposta.
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.authorizationPolicy"
+  "blockType": "response"
 } -->
 
 ```http
@@ -358,9 +348,7 @@ PATCH https://graph.microsoft.com/beta/policies/authorizationPolicy/authorizatio
 Este é um exemplo de resposta.
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.authorizationPolicy"
+  "blockType": "response"
 } -->
 
 ```http
@@ -413,9 +401,7 @@ PATCH https://graph.microsoft.com/beta/policies/authorizationPolicy/authorizatio
 Este é um exemplo de resposta.
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.authorizationpolicy"
+  "blockType": "response"
 } -->
 
 ```http

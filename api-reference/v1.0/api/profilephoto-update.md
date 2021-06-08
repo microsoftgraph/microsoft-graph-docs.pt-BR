@@ -1,16 +1,16 @@
 ---
 title: Atualizar profilephoto
-description: Atualize a foto do **usuário** conectado, ou do **grupo** ou **cotato** especificado. Desde lá
+description: Atualize a foto do **usuário** conectado, ou do **grupo** ou **contato** especificado.
 localization_priority: Priority
 author: kevinbellinger
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: 8797b12d070b582a551486ac25678c4f1794adf5
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: b4b3ef3e40f540c0ad3a8cfb75631e7069976b7f
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52048663"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52786314"
 ---
 # <a name="update-profilephoto"></a>Atualizar profilephoto
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 - Foto do perfil de um **grupo** – Group.ReadWrite.All
 - Foto de um **contato** – Contacts.ReadWrite
 
-> **Observação:** para atualizar a foto de qualquer usuário na organização, o aplicativo deve ter a Permissão do aplicativo User.ReadWrite.All e chamar esta API usando a própria identidade, não em nome de um usuário. Para saber mais, confira [obter acesso sem um usuário conectado](/graph/auth-v2-service).
+> **Observação:** para atualizar a foto de qualquer usuário na organização, o aplicativo deve ter a permissão de aplicativo User.ReadWrite.All e chamar esta API usando a própria identidade, não em nome de um usuário. Para saber mais, veja como [obter acesso sem um usuário conectado](/graph/auth-v2-service).
 
 > **Observação:** Há um [problema conhecido](/graph/known-issues#groups)ao acessar fotos de grupo usando permissões de aplicativo.
 
@@ -95,11 +95,9 @@ Binary data for the image
 ---
 
 ##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto de resposta exibido aqui pode ser encurtado para legibilidade.
+Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser reduzido para facilitar a leitura.
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.profilePhoto"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 200 OK

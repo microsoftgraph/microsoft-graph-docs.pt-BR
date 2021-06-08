@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 5bd8485a9b01890420d47e95d976b84b0807b488
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 656addb026493a442e52f0db7a841f3b523f6566
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52054746"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52786451"
 ---
 # <a name="update-unifiedroleassignmentmultiple"></a>Atualizar unifiedRoleAssignmentMultiple
 
@@ -18,20 +18,35 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Atualize um [objeto unifiedRoleAssignmentMultiple](../resources/unifiedroleassignmentmultiple.md) existente. Use isso para atualizar as atribuições de função Microsoft Intune. Observe que [unifiedRoleAssignment](../resources/unifiedroleassignment.md) não dá suporte à atualização.
+Atualize um objeto [unifiedRoleAssignmentMultiple](../resources/unifiedroleassignmentmultiple.md) existente de um provedor RBAC. 
 
-## <a name="permissions"></a>Permissões
+No momento, há suporte para os seguintes provedores RBAC:
+- cloud PC 
+- gerenciamento de dispositivos (Intune)
 
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
+[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
-| Tipo de permissão | Permissões (da com menos para a com mais privilégios) |
-|:--------------- |:------------------------------------------- |
-| Delegado (conta corporativa ou de estudante) | DeviceManagementRBAC.ReadWrite.All |
-| Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Application | DeviceManagementRBAC.ReadWrite.All |
+Por outro lado, [unifiedRoleAssignment](../resources/unifiedroleassignment.md) não dá suporte à atualização.
+
+## <a name="permissions"></a>Permissions
+
+Dependendo do provedor RBAC e do tipo de permissão (delegado ou aplicativo) necessário, escolha na tabela a seguinte permissão com menos privilégios necessária para chamar essa API. Para saber mais, incluindo [tomar cuidado](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) antes de escolher as permissões mais privilegiadas, pesquise as seguintes permissões em [Permissões](/graph/permissions-reference). 
+
+|Provedor com suporte      | Delegado (conta corporativa ou de estudante)  | Delegada (conta pessoal da Microsoft) | Aplicativo |
+|:-----------------------|:------------------------------------|:---------------------------------------|:------------|
+| Cloud PC | CloudPC.ReadWrite.All | Sem suporte. | CloudPC.ReadWrite.All |
+| Intune | DeviceManagementRBAC.ReadWrite.All | Sem suporte.| DeviceManagementRBAC.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
+Para atualizar um unfiedRoleAssignmentMultiple existente para um provedor de computadores na nuvem:
+<!-- { "blockType": "ignored" } -->
+
+```http
+PATCH /roleManagement/cloudPC/roleAssignments
+```
+
+Para atualizar um unfiedRoleAssignmentMultiple existente para um provedor do Intune:
 <!-- { "blockType": "ignored" } -->
 
 ```http
@@ -55,6 +70,7 @@ Se tiver êxito, este método retornará um código de resposta e um `200 OK` [o
 
 ## <a name="example"></a>Exemplo
 
+### <a name="example-1-update-an-existing-unfiedroleassignmentmultiple-in-an-intune-provider"></a>Exemplo 1: atualizar um unfiedRoleAssignmentMultiple existente em um provedor do Intune
 ### <a name="request"></a>Solicitação
 
 Este é um exemplo de solicitação.
@@ -99,9 +115,7 @@ Este é um exemplo de resposta.
 > **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.unifiedRoleAssignmentMultiple"
+  "blockType": "response"
 } -->
 
 ```http
@@ -109,6 +123,56 @@ HTTP/1.1 204 OK
 
 ```
 
+## <a name="example-2-update-an-existing-unfiedroleassignmentmultiple-in-a-cloud-pc-provider"></a>Exemplo 2: atualizar um unfiedRoleAssignmentMultiple existente em um provedor de computadores na nuvem
+
+### <a name="request"></a>Solicitação
+
+<!-- {
+  "blockType": "request",
+  "name": "update_unifiedroleassignmentmultiple_from_rbacapplication_cloudpc"
+}-->
+
+```http
+PATCH https://graph.microsoft.com/beta/roleManagement/cloudPC/roleAssignments/dbe9d288-fd87-41f4-b33d-b498ed207096
+Content-type: application/json
+
+{
+    "displayName": "NewName",
+    "description": "A new roleAssignment"
+}
+```
+
+
+### <a name="response"></a>Resposta
+
+> **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.unifiedRoleAssignmentMultiple"
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#roleManagement/cloudPC/roleAssignments/$entity",
+    "id": "dbe9d288-fd87-41f4-b33d-b498ed207096",
+    "description": "A new roleAssignment",
+    "displayName": "NewName",
+    "roleDefinitionId": "b5c08161-a7af-481c-ace2-a20a69a48fb1",
+    "principalIds": [
+        "0aeec2c1-fee7-4e02-b534-6f920d25b300",
+        "2d5386a7-732f-44db-9cf8-f82dd2a1c0e0"
+    ],
+    "directoryScopeIds": [
+        "/"
+    ],
+    "appScopeIds": []
+}
+```
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
 <!-- {

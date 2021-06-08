@@ -1,18 +1,18 @@
 ---
-title: 'Call: changeScreenSharingRole'
+title: 'call: changeScreenSharingRole'
 description: Permitir que os aplicativos compartilhem conteúdo de tela com os participantes de uma chamada de grupo.
 author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: d030adbe4ccaf4d0f92e69a402b6a089d92ba211
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 5239d0c2929f43d457253268d190c1ae68e87870
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48959770"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52786570"
 ---
-# <a name="call-changescreensharingrole"></a>Call: changeScreenSharingRole
+# <a name="call-changescreensharingrole"></a>call: changeScreenSharingRole
 
 Namespace: microsoft.graph
 
@@ -20,9 +20,9 @@ Namespace: microsoft.graph
 
 Permitir que os aplicativos compartilhem conteúdo de tela com os participantes de uma chamada de grupo.
 
-> **Observação:** Isso só é suportado para chamadas de grupo que usam App-Hosted mídia.
+> **Observação:** Isso só é suportado para chamadas de grupo que usam App-Hosted Mídia.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
@@ -50,10 +50,10 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro      | Tipo    |Descrição|
 |:---------------|:--------|:----------|
-|role|String|Os valores possíveis são: ' Visualizador ', ' participante '|
+|role|String|Os valores possíveis são: 'visualizador', 'sharer'|
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `202 Accepted` código de resposta e todos os participantes receberão uma atualização de lista.
+Se tiver êxito, este método retornará um código de resposta e todos os participantes `202 Accepted` receberão uma atualização de lista.
 
 ## <a name="example"></a>Exemplo
 
@@ -98,14 +98,12 @@ Content-Length: 24
 Veja a seguir um exemplo da resposta. 
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.None"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 202 Accepted
 ```
-##### <a name="notification---roster-updated-with-participant-sending-screen-sharing-video"></a>Lista de notificação atualizada com o participante enviando vídeo de compartilhamento de tela
+##### <a name="notification---roster-updated-with-participant-sending-screen-sharing-video"></a>Notificação - lista atualizada com o participante enviando vídeo de compartilhamento de tela
 Observe a `direction: sendOnly` propriedade no fluxo de mídia.
 
 ```http

@@ -1,23 +1,23 @@
 ---
 title: Excluir schedulingGroup
-description: Marcar um modo de agendamento como inativo Configurando sua propriedade IsActive
+description: Marcar um schedulingGroup como inativo definindo sua propriedade isActive
 author: akumar39
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: fde2023fd8d345dce36e4d6bd6b9e361ff159d22
-ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
+ms.openlocfilehash: 09d54084537636fb41aff7f5557b05e0d6d8fbe7
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48311921"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52786305"
 ---
 # <a name="delete-schedulinggroup"></a>Excluir schedulingGroup
 
 Namespace: microsoft.graph
 
-Marcar um modo de [agendamento](../resources/schedulinggroup.md) como inativo, definindo sua propriedade **IsActive** .
-Esse método não [Remove o enhorário do plano.](../resources/schedulinggroup.md) As instâncias de [alternância](../resources/shift.md) existentes atribuídas ao grupo de agendamento permanecem como parte do grupo.
+Marque um [schedulingGroup](../resources/schedulinggroup.md) como inativo definindo sua **propriedade isActive.**
+Este método não remove o [scheduleingGroup](../resources/schedulinggroup.md) da agenda. As instâncias [de turno](../resources/shift.md) existentes atribuídas ao grupo de agendamento permanecem parte do grupo.
 
 ## <a name="permissions"></a>Permissões
 
@@ -25,8 +25,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | Schedule. ReadWrite. All, Group. ReadWrite. All    |
-|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegado (conta corporativa ou de estudante) | Schedule.ReadWrite.All, Group.ReadWrite.All    |
+|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Schedule.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -92,8 +92,7 @@ Este é um exemplo de resposta.
 
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.None"
+  "truncated": true
 } -->
 
 ```http

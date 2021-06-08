@@ -5,12 +5,12 @@ localization_priority: Normal
 author: isabelleatmsft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 769ebef6e056a9b2e345d7afad772f8893b50dda
-ms.sourcegitcommit: 612e1d796023433c6e15a9d66ba99d9bdc424cee
+ms.openlocfilehash: ec275176c609218eabe7bf15f3a99c162930a5ed
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "52703493"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52786626"
 ---
 # <a name="list-accessreviewscheduledefinition"></a>Listar accessReviewScheduleDefinition
 
@@ -23,7 +23,7 @@ Recupere os [objetos accessReviewScheduleDefinition.](../resources/accessreviews
 >[!NOTE]
 >O tamanho padrão da página para essa API é de 100 objetos accessReviewScheduleDefinition. Para melhorar a eficiência e evitar tempos-de-tempo devido a grandes conjuntos de resultados, aplique paginação usando os `$skip` parâmetros e `$top` de consulta. Para mais informações, consulte [Paginação de dados do Microsoft Graph em seu aplicativo](/graph/paging).
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)              |
@@ -57,11 +57,11 @@ O valor de `{object}` pode ser um dos seguintes:
 
 |Valor|Descrição|
 |:---     |:---       |
-|`/groups`  |Listar todos os accessReviewScheduleDefinition em grupos individuais (exclui definições com escopo para todos os grupos Microsoft 365 com usuários convidados).|
-|`/groups/{group id}`  |Listar todos os accessReviewScheduleDefinition em um grupo específico (exclui definições com escopo para todos os grupos Microsoft 365 com usuários convidados).|
-|`./members`  |Listar todos os accessReviewScheduleDefinition com escopo para todos os grupos Microsoft 365 com usuários convidados.|
-|`accessPackageAssignments`  |Listar todos os accessReviewScheduleDefinition em um pacote de acesso.|
-|`roleAssignmentScheduleInstances`  |Listar todos os accessReviewScheduleDefinition para entidades de serviço atribuídas a uma função privilegiada.|
+|/groups  |Listar todos os accessReviewScheduleDefinition em grupos individuais (exclui definições com escopo para todos os grupos Microsoft 365 com usuários convidados).|
+|/groups/{group id}  |Listar todos os accessReviewScheduleDefinition em um grupo específico (exclui definições com escopo para todos os grupos Microsoft 365 com usuários convidados).|
+|./members  |Listar todos os accessReviewScheduleDefinition com escopo para todos os grupos Microsoft 365 com usuários convidados.|
+|accessPackageAssignments  |Listar todos os accessReviewScheduleDefinition em um pacote de acesso.|
+|roleAssignmentScheduleInstances  |Listar todos os accessReviewScheduleDefinition para entidades de serviço atribuídas a uma função privilegiada.|
 
 O parâmetro de consulta não é suportado `$filter` em **accessReviewInactiveUserQueryScope** ou **principalResourceMembershipScope**.
 

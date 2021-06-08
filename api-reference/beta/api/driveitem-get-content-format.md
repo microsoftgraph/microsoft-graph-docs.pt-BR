@@ -6,12 +6,12 @@ title: Converter em outros formatos
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: c11a954ad735cc8baf133442b865adbf1b758669
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: f6343e3b0ce7ba9eb114e6eeadc6040341fb5c47
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48963722"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52786815"
 ---
 # <a name="download-a-file-in-another-format"></a>Baixar um arquivo em outro formato
 
@@ -19,8 +19,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Use esta API para recuperar os conteúdos de um item em um formato específico.
-Nem todos os arquivos podem ser convertidos em todos os formatos.
+Use esta API para recuperar os conteúdos de um item em um formato específico. Nem todos os arquivos podem ser convertidos em todos os formatos.
 
 Para baixar o item no formato original, confira [Baixar o conteúdo de um item](driveitem-get-content.md).
 
@@ -44,7 +43,7 @@ GET /drive/root:/{path and filename}:/content?format={format}
 | _format_  | string | Especifique o formato em que o conteúdo do item deve ser baixado. |
 
 
-Os seguintes valores são válidos para o parâmetro **format** :
+Os seguintes valores são válidos para o parâmetro **format**:
 
 | Valor | Descrição                        | Extensões de origem com suporte
 |:------|:-----------------------------------|---------------------------------
@@ -95,7 +94,7 @@ Para baixar o arquivo convertido, seu aplicativo deve seguir o cabeçalho `Locat
 
 As URLs de download previamente autenticadas são válidas apenas por um curto período de tempo (alguns minutos) e não exigem um cabeçalho `Authorization` para download.
 
-<!-- { "blockType": "response", "@odata.type": "stream" } -->
+<!-- { "blockType": "response" } -->
 
 ```http
 HTTP/1.1 302 Found

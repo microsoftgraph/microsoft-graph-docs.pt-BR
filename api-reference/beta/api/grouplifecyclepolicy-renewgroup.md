@@ -5,12 +5,12 @@ localization_priority: Normal
 author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: be7f1222933b5923b475d55c0b7c6b8a4bcf24aa
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: 51f6409d5d8e1b913c8b8efa38356b0aabd3e81f
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52681110"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52786934"
 ---
 # <a name="grouplifecyclepolicy-renewgroup"></a>groupLifecyclePolicy: renewGroup
 
@@ -22,7 +22,7 @@ Renovar a expiração de um grupo. Após renovar um grupo, o período de validad
 
 > **Observação:** Ao chamar o ponto de extremidade v1.0, use o [método Renovar grupo.](/graph/api/group-renew?view=graph-rest-1.0&preserve-view=true)
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
  
@@ -99,9 +99,7 @@ Content-length: 57
 ##### <a name="response"></a>Resposta
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.None"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 204 No Content

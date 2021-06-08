@@ -1,16 +1,16 @@
 ---
 title: 'phoneAuthenticationMethod: enableSmsSignIn'
-description: Habilitar a assinatura SMS para um telefone celular.
+description: Habilita SMS entrar para um telefone celular.
 localization_priority: Normal
 author: mmcla
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: def7c4409ea38adf1764a7b3f1adf1d9280b992a
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 1452d3e3e1c93def07dce3b6ee78a996c374ae0c
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50957308"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52786460"
 ---
 # <a name="phoneauthenticationmethod-enablesmssignin"></a>phoneAuthenticationMethod: enableSmsSignIn
 
@@ -18,13 +18,13 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Habilitar a login sms para um número `mobile` de telefone existente. Para ser habilitado com êxito:
+Habilita SMS entrar para um número de `mobile` telefone existente. Para ser habilitado com êxito:
 
 * O telefone deve ter `"phoneType": "mobile"` .
-* O telefone deve ser exclusivo no sistema de login SMS (ninguém mais também pode usar esse número).
-* O usuário deve estar habilitado para entrar SMS na política [de métodos de](/azure/active-directory/authentication/concept-authentication-methods) autenticação.
+* O telefone deve ser exclusivo no sistema de SMS de login (ninguém mais também pode usar esse número).
+* O usuário deve estar habilitado para SMS entrar na política [de métodos de autenticação.](/azure/active-directory/authentication/concept-authentication-methods)
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -113,9 +113,7 @@ POST https://graph.microsoft.com/beta/me/authentication/phoneMethods/3179e48a-75
 
 Este é um exemplo de resposta.
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.None"
+  "blockType": "response"
 } -->
 
 ```http

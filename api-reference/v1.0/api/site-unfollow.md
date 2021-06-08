@@ -5,12 +5,12 @@ description: Desa seguir o site de um usuário
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 229c22d25087846e3c67a103ca48384171385e35
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: daacd9a7ce66b337ba97c6c7c0953825e13b7ea5
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50473684"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52786647"
 ---
 # <a name="unfollow-site"></a>Deixar de seguir site 
 
@@ -99,7 +99,7 @@ Content-Type: application/json
 
 Se tiver êxito, retornará a seguinte resposta JSON. 
 
-<!-- { "blockType": "response", "@type": "microsoft.graph.site", "isCollection": true, "truncated": true } -->
+<!-- { "blockType": "response" } -->
 
 ```http
 HTTP/1.1 204 No Content

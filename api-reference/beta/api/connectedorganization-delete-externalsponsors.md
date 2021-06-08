@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 189abc149f7dd076ee8c03b523868d2d49356921
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 936c91f5ebd3bff0af8ec25a4ce542707e04227d
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50437531"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52786507"
 ---
 # <a name="remove-connected-organization-external-sponsor"></a>Remover patrocinador externo da organização conectada
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 Remova um usuário ou um grupo dos patrocinadores externos da organização conectada. Os patrocinadores externos são um conjunto de usuários que podem aprovar solicitações em nome de outros usuários dessa organização conectada.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
@@ -85,9 +85,7 @@ DELETE https://graph.microsoft.com/beta/identityGovernance/entitlementManagement
 Este é um exemplo de resposta.
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.directoryObject"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 204 No Content

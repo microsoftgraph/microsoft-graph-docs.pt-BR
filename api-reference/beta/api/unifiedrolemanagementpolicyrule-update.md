@@ -5,19 +5,19 @@ author: shauliu
 localization_priority: Normal
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 5c5e8fe49f4d88d07c5627b55db6fd0f5e3839e8
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: 948f39bc48a3bd673935989b6d0f359c7dd24ba4
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52682282"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52786436"
 ---
 # <a name="update-unifiedrolemanagementpolicyrule"></a>Atualizar unifiedRoleManagementPolicyRule
 Namespace: microsoft.graph
 
 Atualize as propriedades de [um objeto unifiedRoleManagementPolicyRule.](../resources/unifiedrolemanagementpolicyrule.md)
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
@@ -105,8 +105,7 @@ Content-length: 170
 **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.unifiedRoleManagementPolicyRule"
+  "truncated": true
 }
 -->
 ```http

@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
 doc_type: enumPageType
-ms.openlocfilehash: b6bffb41090b9c9beffd4e559256cb519870eeb2
-ms.sourcegitcommit: 2a35434fabc76672e21bfc3ed5a1d28f9f3b66bc
+ms.openlocfilehash: 0905b424a69d1214c65a39873595192b38303787
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52241153"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52786613"
 ---
 # <a name="enum-values"></a>Valores denum
 
@@ -331,7 +331,7 @@ Namespace: microsoft.graph
 
 |Member|
 |:---|
-|Nenhum|
+|Nenhuma|
 |SecurityGroup|
 |Todos|
 
@@ -428,7 +428,7 @@ Namespace: microsoft.graph
 |globe|
 |cup|
 |phone|
-|clima|
+|weather|
 |umbrella|
 |piggyBank|
 |dog|
@@ -436,6 +436,26 @@ Namespace: microsoft.graph
 |trafficCone|
 |pin|
 |sunny|
+|unknownFutureValue|
+
+### <a name="workforceintegrationencryptionprotocol-values"></a>workforceIntegrationEncryptionProtocol values
+
+| Member
+|:----------------------------
+|sharedSecret
+|unknownFutureValue
+
+### <a name="workforceintegrationsupportedentities-values"></a>workforceIntegrationSupportedEntities values
+
+|Member|
+|:---|
+|nenhuma|
+|shift|
+|swapRequest|
+|userShiftPreferences|
+|openShift|
+|openShiftRequest|
+|offerShiftRequest|
 |unknownFutureValue|
 
 ### <a name="timezonestandard-values"></a>valores timeZoneStandard
@@ -722,7 +742,7 @@ Namespace: microsoft.graph
 | Automático
 | noPreview
 | checklist
-| descrição
+| description
 | referência
 
 
@@ -1135,7 +1155,7 @@ Valores possíveis para tipos de conta de usuário (associação ao grupo), por 
 
 | Membro | Valor | Descrição             |
 |:-------|:------|:------------------------|
-| Email   | 1     | Ameaça de email.            |
+| email   | 1     | Ameaça de email.            |
 | url    | 2     | Ameaça de URL.             |
 | file   | 3     | Ameaça de arquivo de anexo. |
 

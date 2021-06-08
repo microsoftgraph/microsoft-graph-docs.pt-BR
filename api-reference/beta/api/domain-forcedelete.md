@@ -5,12 +5,12 @@ author: adimitui
 localization_priority: Normal
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: efa4cca2c8413abb2a3ae65995973f4d3d5bc4db
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 47f81a25fc29f6a7eb0bb79c0f4d84e37825183a
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50436565"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52786822"
 ---
 # <a name="domain-forcedelete"></a>domain: forceDelete
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 Exclui um domínio usando uma operação assíncrona.
 
-Antes de chamar [forceDelete,](domain-forcedelete.md)você deve atualizar ou remover quaisquer referências ao **Exchange** como o serviço de provisionamento.
+Antes de chamar [forceDelete](domain-forcedelete.md), você deve atualizar ou remover quaisquer referências **Exchange** como o serviço de provisionamento.
 
 As seguintes ações são executadas como parte desta operação:
 
@@ -36,7 +36,7 @@ As seguintes ações são executadas como parte desta operação:
 
 Depois que a exclusão de domínio for concluída, as operações de API do domínio excluído retornarão um código de resposta HTTP 404. Para verificar a exclusão de um domínio, você pode executar um [domínio get](domain-get.md). Se o domínio foi excluído com êxito, um código de resposta HTTP 404 será retornado na resposta.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -114,9 +114,7 @@ Content-length: 33
 ### <a name="response"></a>Resposta
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.None"
+  "blockType": "response"
 } -->
 
 ```http

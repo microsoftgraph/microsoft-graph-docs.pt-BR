@@ -5,12 +5,12 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 323e18df4287b29531448ba168cbfc94c645fd06
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: b2a3ef65cbf138547acbed15f1fbae884467bbc7
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48981303"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52786478"
 ---
 # <a name="offershiftrequest-approve"></a>offerShiftRequest: aprovar
 
@@ -18,17 +18,17 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Aprovar um objeto [offershiftrequest](../resources/offershiftrequest.md) .
+Aprovar um [objeto offershiftrequest.](../resources/offershiftrequest.md)
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | Schedule. ReadWrite. All, Group. ReadWrite. All |
+| Delegado (conta corporativa ou de estudante)     | Schedule.ReadWrite.All, Group.ReadWrite.All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Application                            | Schedule.ReadWrite.All |
+| Aplicativo                            | Schedule.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -100,9 +100,7 @@ Content-type: application/json
 
 O exemplo a seguir mostra a resposta.
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.None"
+  "blockType": "response"
 } -->
 
 ```http

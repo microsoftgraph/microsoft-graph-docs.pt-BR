@@ -1,16 +1,16 @@
 ---
 title: 'phoneAuthenticationMethod: disableSmsSignIn'
-description: Desabilitar a login do SMS para um telefone celular
+description: Desabilitar SMS entrar para um telefone celular
 localization_priority: Normal
 author: mmcla
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 5e4c55d5765108d7878d95712e9ea350e1b9d364
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 00141db043825d96611eaae156adb2bbf2e48503
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50957468"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52786461"
 ---
 # <a name="phoneauthenticationmethod-disablesmssignin"></a>phoneAuthenticationMethod: disableSmsSignIn
 
@@ -18,11 +18,11 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Desabilite a login do SMS para um número `mobile` de telefone existente. 
+Desabilite SMS entrar para um número de `mobile` telefone existente. 
 
->**Observação:** O número não estará mais disponível para a assinatura sms, o que pode impedir que o usuário entre.
+>**Observação:** O número não estará mais disponível para SMS entrar, o que pode impedir que o usuário entre.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -111,9 +111,7 @@ POST https://graph.microsoft.com/beta/me/authentication/phoneMethods/3179e48a-75
 
 Este é um exemplo de resposta.
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.None"
+  "blockType": "response"
 } -->
 
 ```http

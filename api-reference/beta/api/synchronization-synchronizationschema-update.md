@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: ArvindHarinder1
 ms.prod: applications
-ms.openlocfilehash: 6780a9ef000fee6ea3f9a3c68b74186c69ac696e
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: bae3e92c82680dbf4f376e54bb5353ccb7851706
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50775448"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52786913"
 ---
 # <a name="update-synchronizationschema"></a>Atualizar sincronizaçãoSchema
 
@@ -25,7 +25,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante)     |Directory.ReadWrite.All  |
+|Delegado (conta corporativa ou de estudante)     |Directory.ReadWrite.All  |
 |Delegado (conta pessoal da Microsoft) |Sem suporte.|
 |Aplicativo                            |Application.ReadWrite.OwnedBy, Directory.ReadWrite.All | 
 
@@ -130,9 +130,7 @@ Content-type: application/json
 ##### <a name="response"></a>Resposta
 Veja a seguir um exemplo de uma resposta.
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.synchronizationSchema"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 204 No Content

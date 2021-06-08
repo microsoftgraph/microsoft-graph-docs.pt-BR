@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 4423e6164e616034060913aae17b1024d10bcfc9
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 6299d1e7ecf828ee6587c4a69796021f1905dfd5
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52050826"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52786857"
 ---
 # <a name="clone-a-team"></a>Clonar uma equipe
 
@@ -32,7 +32,7 @@ Quando as guias são clonadas, elas são colocadas em um estado não configurado
 A clonagem é uma operação de longa duração.
 Depois que o clone POST retorna, você precisa OBTER a operação retornada pelo header Location: para ver se ele está "em execução" ou "bem-sucedido" ou "falhou". [](../resources/teamsasyncoperation.md) Você deve continuar a OBTER até que o status não seja "em execução". O atraso recomendado entre GETs é de 5 segundos.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -113,9 +113,7 @@ Content-Type: application/json
 #### <a name="response"></a>Resposta
 Este é um exemplo de resposta. Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.team"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 202 Accepted

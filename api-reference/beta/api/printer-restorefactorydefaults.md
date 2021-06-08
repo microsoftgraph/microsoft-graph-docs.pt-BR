@@ -1,35 +1,35 @@
 ---
-title: 'impressora: restoreFactoryDefaults'
+title: 'printer: restoreFactoryDefaults'
 description: Redefinir as configurações padrão de uma impressora.
 author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 962e8df0d6afd29921ac60969c0585adb1035bef
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 87e31568dcbe17ec4bd5e3017e852fb17c6f9989
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48979785"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52786450"
 ---
-# <a name="printer-restorefactorydefaults"></a>impressora: restoreFactoryDefaults
+# <a name="printer-restorefactorydefaults"></a>printer: restoreFactoryDefaults
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Restaurar as configurações padrão de uma [impressora](../resources/printer.md)para os valores especificados pelo fabricante.
+Restaure [as configurações](../resources/printer.md)padrão de uma impressora para os valores especificados pelo fabricante.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-Para usar o serviço de impressão universal, o usuário ou o locatário do aplicativo deve ter uma assinatura de impressão universal ativa, além das permissões listadas na tabela a seguir. O usuário conectado deve ser um [administrador da impressora](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator).
+Para usar o serviço Impressão Universal, o usuário ou locatário do aplicativo deve ter uma assinatura de Impressão Universal ativa, além das permissões listadas na tabela a seguir. O usuário inscreveu deve ser um [Administrador de Impressora.](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator)
 
 |Tipo de permissão | Permissões (da com menos para a com mais privilégios) |
 |:---------------|:--------------------------------------------|
-|Delegado (conta corporativa ou de estudante)| Printer. ReadWrite. All, Printer. FullControl. All |
+|Delegado (conta corporativa ou de estudante)| Printer.ReadWrite.All, Printer.FullControl.All |
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application| Sem suporte. |
+|Aplicativo| Sem suporte. |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -83,9 +83,7 @@ POST https://graph.microsoft.com/beta/print/printers/{id}/restoreFactoryDefaults
 ### <a name="response"></a>Resposta
 Este é um exemplo de resposta. 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.None"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 204 No Content

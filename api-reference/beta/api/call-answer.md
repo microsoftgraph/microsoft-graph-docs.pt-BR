@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 658682377ed2539894f232df32748bd6073cd3e4
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 3735532ec12a1b11fad67aa6f1a19fe629324b62
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50437846"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52786577"
 ---
 # <a name="call-answer"></a>call: answer
 
@@ -22,7 +22,7 @@ Habilitar um bot para atender uma [chamada de entrada.](../resources/call.md) A 
 
 Espera-se que o bot atenda, [rejeite](./call-reject.md) ou [redirecione a](./call-redirect.md) chamada antes do tempo de chamada. O valor de tempo decoro atual é 15 segundos. O valor de tempo decoro atual é de 15 segundos para cenários regulares e 5 segundos para cenários de gravação baseados em política.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Você não precisa de nenhuma permissão para responder a uma chamada ponto a ponto. Você precisa de uma das seguintes permissões para ingressar em uma chamada de grupo. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 | Tipo de permissão | Permissões (da com menos para a com mais privilégios)                 |
@@ -55,7 +55,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 | callbackUri         | String                                                                                                                               | Permite que os bots forneçam um URI de retorno de chamada específico para que a chamada simultânea receba notificações posteriores. Se essa propriedade não tiver sido definida, o URI de retorno de chamada global do bot será usado em vez disso. Isso deve ser `https` . |
 | acceptedModalities  | Coleção de cadeias de caracteres                                                                                                                    | A lista de modalidades de aceitação. Os valores possíveis são: `audio` `video` , , `videoBasedScreenSharing` . Obrigatório para atender uma chamada.                                                                                      |
 | mediaConfig         | [appHostedMediaConfig](../resources/apphostedmediaconfig.md) ou [serviceHostedMediaConfig](../resources/servicehostedmediaconfig.md) | A configuração de mídia. Obrigatório.                                                                                                                                                                                 |
-| participantCapacity | Int                                                                                                                                  | O número de participantes que o aplicativo pode manipular para a chamada, para cenário de gravação baseado em política [do Teams.](/MicrosoftTeams/teams-recording-policy)                                                     |
+| participantCapacity | Int                                                                                                                                  | O número de participantes que o aplicativo pode manipular para a chamada, Teams cenário de gravação [baseado em](/MicrosoftTeams/teams-recording-policy) política.                                                     |
 
 ## <a name="response"></a>Resposta
 Este método retorna um `202 Accepted` código de resposta.
@@ -113,9 +113,7 @@ Esse blob é a configuração serializada para sessões de mídia geradas a part
 Veja a seguir um exemplo da resposta. 
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.None"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 202 Accepted
@@ -223,9 +221,7 @@ Content-Type: application/json
 
 ##### <a name="response"></a>Resposta
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.None"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 202 Accepted
@@ -392,9 +388,7 @@ Content-Type: application/json
 ##### <a name="response"></a>Resposta
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.None"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 202 Accepted

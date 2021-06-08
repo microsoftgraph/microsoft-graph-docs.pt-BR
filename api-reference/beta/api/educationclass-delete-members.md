@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 59f0971d1ebcee69344235032103a61dac949437
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 0c34227cd6b3ce72c6aebe0ab6952d8167b9b89a
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50951669"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52786775"
 ---
 # <a name="remove-a-student"></a>Remover um aluno
 
@@ -22,7 +22,7 @@ Remove um [educationUser](../resources/educationuser.md) de uma [educationClass]
 
 >**Observação:** professores _e_ alunos estão na coleção **members** da aula. Antes de chamar essa API, garanta que **educationUser** que você está removendo não seja um professor.  Obtenha a lista de professores chamando [educationclass_list_teachers](educationclass-list-teachers.md) e verificando se a ID do usuário a ser removido não está na lista de professores retornada.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
@@ -82,9 +82,7 @@ DELETE https://graph.microsoft.com/beta/education/classes/11003/members/14008
 ##### <a name="response"></a>Resposta
 Este é um exemplo de resposta. 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.educationClass"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 204 No Content

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mahage-msft
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 21789c048ee18fd604e44110bea7e995c891b17f
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: 3bee140093a74f335d9316d8785189350ae29f19
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50772945"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52786801"
 ---
 # <a name="update-legalhold"></a>Atualizar legalHold
 
@@ -55,7 +55,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |contentQuery|String|Consulta KQL que especifica o conteúdo a ser mantido nos locais especificados. Para obter mais informações sobre KQL na Descoberta Digital, consulte Consultas de palavra-chave e condições de pesquisa para Pesquisa de Conteúdo [e Descoberta Digital.](/microsoft-365/compliance/keyword-queries-and-search-conditions) Para manter todo o conteúdo nos locais especificados, deixe **contentQuery em** branco. |
-|descrição|String| A descrição de espera legal. |
+|description|String| A descrição de espera legal. |
 |displayName|String| O nome de exibição da ressução legal. |
 |isEnabled|Booliano|Indica se a espera está habilitada e mantendo o conteúdo ativamente. |
 
@@ -106,9 +106,7 @@ Content-length: 295
 ### <a name="response"></a>Resposta
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.ediscovery.legalHold"
+  "blockType": "response"
 }
 -->
 

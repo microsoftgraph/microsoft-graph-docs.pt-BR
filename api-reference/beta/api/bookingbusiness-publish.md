@@ -1,16 +1,16 @@
 ---
 title: 'bookingBusiness: publish'
-description: Tornar a página de agendamento dessa empresa disponível para clientes externos.
+description: Disponibilizar a página de agendamento dessa empresa para clientes externos.
 localization_priority: Normal
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: c9194764928c6bc913d5f3414aa598df446d0256
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: d60a88324cd86cd599fc9986dfa3b6d1a4f737ea
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48960576"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52786584"
 ---
 # <a name="bookingbusiness-publish"></a>bookingBusiness: publish
 
@@ -18,11 +18,11 @@ Namespace: microsoft.graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Tornar a página de agendamento dessa empresa disponível para clientes externos.
+Disponibilizar a página de agendamento dessa empresa para clientes externos.
 
-Defina a propriedade **IsPublished** como true e a propriedade **PUBLICURL** para a URL da página de agendamento.
+Defina a **propriedade isPublished** como true e **a propriedade publicUrl** como a URL da página de agendamento.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
@@ -82,9 +82,7 @@ POST https://graph.microsoft.com/beta/bookingBusinesses/Contosolunchdelivery@M36
 ##### <a name="response"></a>Resposta
 Este é um exemplo de resposta.
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.None"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 204 No content

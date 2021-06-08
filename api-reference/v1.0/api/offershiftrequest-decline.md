@@ -1,22 +1,22 @@
 ---
-title: 'offerShiftRequest: recusar'
-description: Recusar uma solicitação de mudança de oferta.
+title: 'offerShiftRequest: decline'
+description: Recusar uma solicitação de turno de oferta.
 localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 54c33624d924f9f424a99ff0668f8c1f7dd9c37a
-ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
+ms.openlocfilehash: 9cdb5fbe381008b4146d649fb862b25a3687c251
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48313671"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52786328"
 ---
-# <a name="offershiftrequest-decline"></a>offerShiftRequest: recusar
+# <a name="offershiftrequest-decline"></a>offerShiftRequest: decline
 
 Namespace: microsoft.graph
 
-Recusar um objeto [offerShiftRequest](../resources/offershiftrequest.md) .
+Recusar um [objeto offerShiftRequest.](../resources/offershiftrequest.md)
 
 ## <a name="permissions"></a>Permissões
 
@@ -24,8 +24,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegada (conta corporativa ou de estudante)     | Schedule. ReadWrite. All, Group. ReadWrite. All |
-| Delegada (conta pessoal da Microsoft) | Sem suporte. |
+| Delegado (conta corporativa ou de estudante)     | Schedule.ReadWrite.All, Group.ReadWrite.All |
+| Delegado (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo                            | Schedule.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -49,7 +49,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro    | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|mensagem|String|Mensagem personalizada enviada ao recusar.|
+|mensagem|String|Mensagem personalizada enviada em recusa.|
 
 ## <a name="response"></a>Resposta
 
@@ -103,8 +103,7 @@ Content-type: application/json
 O exemplo a seguir mostra a resposta.
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.None"
+  "truncated": true
 } -->
 
 ```http
