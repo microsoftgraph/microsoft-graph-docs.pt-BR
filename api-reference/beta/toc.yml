@@ -459,7 +459,7 @@ items:
                 href: api/profile-get.md
               - name: Excluir perfil do usuário
                 href: api/profile-delete.md
-          - name: Teamwork
+          - name: Trabalho em equipe
             items:
               - name: Aplicativo instalado
                 href: resources/teamsappinstallation.md
@@ -1833,25 +1833,25 @@ items:
                   - name: Organizado por impressora
                     items:
                       - name: Obter
-                        href: api/printusagesummarybyprinter-get.md
+                        href: api/printusagebyprinter-get.md
                       - name: Listar trabalhos de impressão arquivados de uma impressora
                         href: api/reports-getprinterarchivedprintjobs.md
                       - name: Listar relatórios diários por impressora
-                        href: api/reportroot-list-dailyprintusagesummariesbyprinter.md
+                        href: api/reportroot-list-dailyprintusagebyprinter.md
                       - name: Listar relatórios mensais por impressora
-                        href: api/reportroot-list-monthlyprintusagesummariesbyprinter.md
+                        href: api/reportroot-list-monthlyprintusagebyprinter.md
                   - name: Organizado por usuário ou grupo
                     items:
                       - name: Obter
-                        href: api/printusagesummarybyuser-get.md
+                        href: api/printusagebyuser-get.md
                       - name: Listar trabalhos de impressão arquivados de um usuário
                         href: api/reports-getuserarchivedprintjobs.md
                       - name: Listar trabalhos de impressão arquivados de um grupo
                         href: api/reports-getgrouparchivedprintjobs.md
                       - name: Listar relatórios diários por usuário
-                        href: api/reportroot-list-dailyprintusagesummariesbyuser.md
+                        href: api/reportroot-list-dailyprintusagebyuser.md
                       - name: Listar relatórios mensais por usuário
-                        href: api/reportroot-list-monthlyprintusagesummariesbyuser.md
+                        href: api/reportroot-list-monthlyprintusagebyuser.md
               - name: Serviço de impressão
                 href: resources/printservice.md
                 items:
@@ -12383,7 +12383,7 @@ items:
                     href: api/itempublication-update.md
                   - name: Excluir
                     href: api/itempublication-delete.md
-              - name: Responsabilidades
+              - name: Responsibilities
                 items:
                   - name: Responsabilidade da pessoa
                     href: resources/personresponsibility.md
@@ -12487,9 +12487,9 @@ items:
           - name: Análise (visualização)
             href: resources/useranalytics.md
             items:
-              - name: Settings
+              - name: Configurações
                 items:
-                  - name: Settings
+                  - name: Configurações
                     href: resources/settings.md
                   - name: Obter configurações
                     href: api/useranalytics-get-settings.md
@@ -13785,6 +13785,29 @@ items:
                     href: api/swapshiftschangerequest-approve.md
                   - name: Declínio
                     href: api/swapshiftschangerequest-decline.md
+              - name: Cartão de visita
+                href: resources/timecard.md
+                items:
+                  - name: Listar
+                    href: api/timecard-list.md
+                  - name: Criar
+                    href: api/timecard-post.md
+                  - name: Obter
+                    href: api/timecard-get.md
+                  - name: Substituir
+                    href: api/timecard-replace.md
+                  - name: Excluir
+                    href: api/timecard-delete.md
+                  - name: Clock in
+                    href: api/timecard-clockin.md
+                  - name: Tempo de saída
+                    href: api/timecard-clockout.md
+                  - name: Iniciar quebra
+                    href: api/timecard-startbreak.md
+                  - name: Quebra de fim
+                    href: api/timecard-endbreak.md
+                  - name: Confirmar
+                    href: api/timecard-confirm.md
               - name: Folga
                 href: resources/timeoff.md
                 items:

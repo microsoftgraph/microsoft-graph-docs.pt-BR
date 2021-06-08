@@ -5,61 +5,61 @@ author: nilakhan
 localization_priority: Normal
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: 597d92e051940d94a53364c624a8d0d20ef23dce
-ms.sourcegitcommit: e440d855f1106390d842905d97ceb16f143db2e5
+ms.openlocfilehash: 6aa15af9b316012b777c641e6e23bbcc1e463071
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/29/2021
-ms.locfileid: "52080624"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52787387"
 ---
-# <a name="printjob-abort"></a><span data-ttu-id="94dc6-103">printJob: abort</span><span class="sxs-lookup"><span data-stu-id="94dc6-103">printJob: abort</span></span>
+# <a name="printjob-abort"></a><span data-ttu-id="5602b-103">printJob: abort</span><span class="sxs-lookup"><span data-stu-id="5602b-103">printJob: abort</span></span>
 
-<span data-ttu-id="94dc6-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="94dc6-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="5602b-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="5602b-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="94dc6-105">Aborte um trabalho de impressão.</span><span class="sxs-lookup"><span data-stu-id="94dc6-105">Abort a print job.</span></span> <span data-ttu-id="94dc6-106">Somente aplicativos que usam permissões de aplicativo podem cancelar um trabalho de impressão.</span><span class="sxs-lookup"><span data-stu-id="94dc6-106">Only applications using application permissions can abort a print job.</span></span>
+<span data-ttu-id="5602b-105">Aborte um trabalho de impressão.</span><span class="sxs-lookup"><span data-stu-id="5602b-105">Abort a print job.</span></span> <span data-ttu-id="5602b-106">Somente aplicativos que usam permissões de aplicativo podem cancelar um trabalho de impressão.</span><span class="sxs-lookup"><span data-stu-id="5602b-106">Only applications using application permissions can abort a print job.</span></span>
 
-<span data-ttu-id="94dc6-107">A anulação de um trabalho de impressão só terá êxito se houver [uma printTask](../resources/printTask.md) em um estado no trabalho de impressão associado, iniciado por um gatilho criado pelo aplicativo `processing` solicitante.</span><span class="sxs-lookup"><span data-stu-id="94dc6-107">Aborting a print job will only succeed if there is a [printTask](../resources/printTask.md) in a `processing` state on the associated print job, started by a trigger that the requesting app created.</span></span> <span data-ttu-id="94dc6-108">Para obter detalhes sobre como registrar um gatilho de tarefas, consulte [Extending Universal Print to support pull printing](/graph/universal-print-concept-overview#extending-universal-print-to-support-pull-printing).</span><span class="sxs-lookup"><span data-stu-id="94dc6-108">For details about how to register a task trigger, see [Extending Universal Print to support pull printing](/graph/universal-print-concept-overview#extending-universal-print-to-support-pull-printing).</span></span>
+<span data-ttu-id="5602b-107">A anulação de um trabalho de impressão só terá êxito se houver [uma printTask](../resources/printTask.md) em um estado no trabalho de impressão associado, iniciado por um gatilho criado pelo aplicativo `processing` solicitante.</span><span class="sxs-lookup"><span data-stu-id="5602b-107">Aborting a print job will only succeed if there is a [printTask](../resources/printTask.md) in a `processing` state on the associated print job, started by a trigger that the requesting app created.</span></span> <span data-ttu-id="5602b-108">Para obter detalhes sobre como registrar um gatilho de tarefas, consulte [Extending Universal Print to support pull printing](/graph/universal-print-concept-overview#extending-universal-print-to-support-pull-printing).</span><span class="sxs-lookup"><span data-stu-id="5602b-108">For details about how to register a task trigger, see [Extending Universal Print to support pull printing](/graph/universal-print-concept-overview#extending-universal-print-to-support-pull-printing).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="94dc6-109">Permissões</span><span class="sxs-lookup"><span data-stu-id="94dc6-109">Permissions</span></span>
-<span data-ttu-id="94dc6-p103">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="94dc6-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="5602b-109">Permissions</span><span class="sxs-lookup"><span data-stu-id="5602b-109">Permissions</span></span>
+<span data-ttu-id="5602b-p103">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="5602b-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-<span data-ttu-id="94dc6-112">Além das permissões a seguir, o locatário do aplicativo deve ter uma assinatura de Impressão Universal ativa e ter a permissão Printer.Read.All ou Printer.ReadWrite.All.</span><span class="sxs-lookup"><span data-stu-id="94dc6-112">In addition to the following permissions, the app's tenant must have an active Universal Print subscription and have either the Printer.Read.All or Printer.ReadWrite.All application permission.</span></span>
+<span data-ttu-id="5602b-112">Além das permissões a seguir, o locatário do aplicativo deve ter uma assinatura de Impressão Universal ativa e ter a permissão Printer.Read.All ou Printer.ReadWrite.All.</span><span class="sxs-lookup"><span data-stu-id="5602b-112">In addition to the following permissions, the app's tenant must have an active Universal Print subscription and have either the Printer.Read.All or Printer.ReadWrite.All application permission.</span></span>
 
-|<span data-ttu-id="94dc6-113">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="94dc6-113">Permission type</span></span> | <span data-ttu-id="94dc6-114">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="94dc6-114">Permissions (from least to most privileged)</span></span> |
+|<span data-ttu-id="5602b-113">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="5602b-113">Permission type</span></span> | <span data-ttu-id="5602b-114">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="5602b-114">Permissions (from least to most privileged)</span></span> |
 |:---------------|:--------------------------------------------|
-|<span data-ttu-id="94dc6-115">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="94dc6-115">Delegated (work or school account)</span></span>| <span data-ttu-id="94dc6-116">Não suportado</span><span class="sxs-lookup"><span data-stu-id="94dc6-116">Not Supported</span></span> |
-|<span data-ttu-id="94dc6-117">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="94dc6-117">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="94dc6-118">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="94dc6-118">Not Supported.</span></span>|
-|<span data-ttu-id="94dc6-119">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="94dc6-119">Application</span></span>| <span data-ttu-id="94dc6-120">PrintJob.ReadWriteBasic.All, PrintJob.ReadWrite.All, PrintJob.Manage.All</span><span class="sxs-lookup"><span data-stu-id="94dc6-120">PrintJob.ReadWriteBasic.All, PrintJob.ReadWrite.All, PrintJob.Manage.All</span></span> |
+|<span data-ttu-id="5602b-115">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="5602b-115">Delegated (work or school account)</span></span>| <span data-ttu-id="5602b-116">Não suportado</span><span class="sxs-lookup"><span data-stu-id="5602b-116">Not Supported</span></span> |
+|<span data-ttu-id="5602b-117">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="5602b-117">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="5602b-118">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="5602b-118">Not Supported.</span></span>|
+|<span data-ttu-id="5602b-119">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="5602b-119">Application</span></span>| <span data-ttu-id="5602b-120">PrintJob.ReadWriteBasic.All, PrintJob.ReadWrite.All, PrintJob.Manage.All</span><span class="sxs-lookup"><span data-stu-id="5602b-120">PrintJob.ReadWriteBasic.All, PrintJob.ReadWrite.All, PrintJob.Manage.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="94dc6-121">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="94dc6-121">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="5602b-121">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="5602b-121">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /print/printers/{id}/jobs/{id}/abort
 ```
-## <a name="request-headers"></a><span data-ttu-id="94dc6-122">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="94dc6-122">Request headers</span></span>
-| <span data-ttu-id="94dc6-123">Nome</span><span class="sxs-lookup"><span data-stu-id="94dc6-123">Name</span></span>          | <span data-ttu-id="94dc6-124">Descrição</span><span class="sxs-lookup"><span data-stu-id="94dc6-124">Description</span></span>   |
+## <a name="request-headers"></a><span data-ttu-id="5602b-122">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="5602b-122">Request headers</span></span>
+| <span data-ttu-id="5602b-123">Nome</span><span class="sxs-lookup"><span data-stu-id="5602b-123">Name</span></span>          | <span data-ttu-id="5602b-124">Descrição</span><span class="sxs-lookup"><span data-stu-id="5602b-124">Description</span></span>   |
 |:--------------|:--------------|
-| <span data-ttu-id="94dc6-125">Autorização</span><span class="sxs-lookup"><span data-stu-id="94dc6-125">Authorization</span></span> | <span data-ttu-id="94dc6-p104">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="94dc6-p104">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="5602b-125">Autorização</span><span class="sxs-lookup"><span data-stu-id="5602b-125">Authorization</span></span> | <span data-ttu-id="5602b-p104">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="5602b-p104">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="94dc6-128">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="94dc6-128">Request body</span></span>
-<span data-ttu-id="94dc6-129">No corpo da solicitação, opcionalmente, você pode fornecer o motivo pelo qual o trabalho está sendo abortado.</span><span class="sxs-lookup"><span data-stu-id="94dc6-129">In the request body, you can optionally provide the reason why the job is being aborted.</span></span>
+## <a name="request-body"></a><span data-ttu-id="5602b-128">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="5602b-128">Request body</span></span>
+<span data-ttu-id="5602b-129">No corpo da solicitação, opcionalmente, você pode fornecer o motivo pelo qual o trabalho está sendo abortado.</span><span class="sxs-lookup"><span data-stu-id="5602b-129">In the request body, you can optionally provide the reason why the job is being aborted.</span></span>
 
-| <span data-ttu-id="94dc6-130">Propriedade</span><span class="sxs-lookup"><span data-stu-id="94dc6-130">Property</span></span>     | <span data-ttu-id="94dc6-131">Tipo</span><span class="sxs-lookup"><span data-stu-id="94dc6-131">Type</span></span>        | <span data-ttu-id="94dc6-132">Descrição</span><span class="sxs-lookup"><span data-stu-id="94dc6-132">Description</span></span> |
+| <span data-ttu-id="5602b-130">Propriedade</span><span class="sxs-lookup"><span data-stu-id="5602b-130">Property</span></span>     | <span data-ttu-id="5602b-131">Tipo</span><span class="sxs-lookup"><span data-stu-id="5602b-131">Type</span></span>        | <span data-ttu-id="5602b-132">Descrição</span><span class="sxs-lookup"><span data-stu-id="5602b-132">Description</span></span> |
 |:-------------|:------------|:------------|
-|<span data-ttu-id="94dc6-133">motivo</span><span class="sxs-lookup"><span data-stu-id="94dc6-133">reason</span></span>|<span data-ttu-id="94dc6-134">Cadeia de Caracteres</span><span class="sxs-lookup"><span data-stu-id="94dc6-134">String</span></span>|<span data-ttu-id="94dc6-135">Motivo pelo qual o trabalho está sendo abortado.</span><span class="sxs-lookup"><span data-stu-id="94dc6-135">Reason why job is being aborted.</span></span>|
+|<span data-ttu-id="5602b-133">motivo</span><span class="sxs-lookup"><span data-stu-id="5602b-133">reason</span></span>|<span data-ttu-id="5602b-134">String</span><span class="sxs-lookup"><span data-stu-id="5602b-134">String</span></span>|<span data-ttu-id="5602b-135">Motivo pelo qual o trabalho está sendo abortado.</span><span class="sxs-lookup"><span data-stu-id="5602b-135">Reason why job is being aborted.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="94dc6-136">Resposta</span><span class="sxs-lookup"><span data-stu-id="94dc6-136">Response</span></span>
-<span data-ttu-id="94dc6-p105">Se bem-sucedido, este método retorna um código de resposta `204 No Content`. Não retorna nada no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="94dc6-p105">If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="5602b-136">Resposta</span><span class="sxs-lookup"><span data-stu-id="5602b-136">Response</span></span>
+<span data-ttu-id="5602b-p105">Se bem-sucedido, este método retorna um código de resposta `204 No Content`. Não retorna nada no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="5602b-p105">If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="94dc6-139">Exemplo</span><span class="sxs-lookup"><span data-stu-id="94dc6-139">Example</span></span>
-<span data-ttu-id="94dc6-140">O exemplo a seguir mostra como chamar essa API.</span><span class="sxs-lookup"><span data-stu-id="94dc6-140">The following example shows how to call this API.</span></span>
-### <a name="request"></a><span data-ttu-id="94dc6-141">Solicitação</span><span class="sxs-lookup"><span data-stu-id="94dc6-141">Request</span></span>
-<span data-ttu-id="94dc6-142">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="94dc6-142">The following is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="5602b-139">Exemplo</span><span class="sxs-lookup"><span data-stu-id="5602b-139">Example</span></span>
+<span data-ttu-id="5602b-140">O exemplo a seguir mostra como chamar essa API.</span><span class="sxs-lookup"><span data-stu-id="5602b-140">The following example shows how to call this API.</span></span>
+### <a name="request"></a><span data-ttu-id="5602b-141">Solicitação</span><span class="sxs-lookup"><span data-stu-id="5602b-141">Request</span></span>
+<span data-ttu-id="5602b-142">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="5602b-142">The following is an example of the request.</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="94dc6-143">HTTP</span><span class="sxs-lookup"><span data-stu-id="94dc6-143">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="5602b-143">HTTP</span><span class="sxs-lookup"><span data-stu-id="5602b-143">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "printjob-abort"
@@ -67,31 +67,29 @@ POST /print/printers/{id}/jobs/{id}/abort
 ```http
 POST https://graph.microsoft.com/beta/print/printers/{id}/jobs/{id}/abort
 ```
-# <a name="c"></a>[<span data-ttu-id="94dc6-144">C#</span><span class="sxs-lookup"><span data-stu-id="94dc6-144">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="5602b-144">C#</span><span class="sxs-lookup"><span data-stu-id="5602b-144">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/printjob-abort-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="94dc6-145">JavaScript</span><span class="sxs-lookup"><span data-stu-id="94dc6-145">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="5602b-145">JavaScript</span><span class="sxs-lookup"><span data-stu-id="5602b-145">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/printjob-abort-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="94dc6-146">Objective-C</span><span class="sxs-lookup"><span data-stu-id="94dc6-146">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="5602b-146">Objective-C</span><span class="sxs-lookup"><span data-stu-id="5602b-146">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/printjob-abort-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="94dc6-147">Java</span><span class="sxs-lookup"><span data-stu-id="94dc6-147">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="5602b-147">Java</span><span class="sxs-lookup"><span data-stu-id="5602b-147">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/printjob-abort-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="94dc6-148">Resposta</span><span class="sxs-lookup"><span data-stu-id="94dc6-148">Response</span></span>
-<span data-ttu-id="94dc6-149">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="94dc6-149">The following is an example of the response.</span></span> 
+### <a name="response"></a><span data-ttu-id="5602b-148">Resposta</span><span class="sxs-lookup"><span data-stu-id="5602b-148">Response</span></span>
+<span data-ttu-id="5602b-149">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="5602b-149">The following is an example of the response.</span></span> 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.None"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 204 No Content
