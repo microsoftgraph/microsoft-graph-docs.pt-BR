@@ -5,31 +5,31 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f14ef8907fc4d4216f061e7471108faa3052c0e5
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: a4861aab5113eab6658458fbec58846a1bf8c508
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48045926"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52760711"
 ---
-# <a name="create-termsandconditions"></a><span data-ttu-id="67312-103">Criar termsAndConditions</span><span class="sxs-lookup"><span data-stu-id="67312-103">Create termsAndConditions</span></span>
+# <a name="create-termsandconditions"></a><span data-ttu-id="5b514-103">Criar termsAndConditions</span><span class="sxs-lookup"><span data-stu-id="5b514-103">Create termsAndConditions</span></span>
 
-<span data-ttu-id="67312-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="67312-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="5b514-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="5b514-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="67312-105">**Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="67312-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="5b514-105">**Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="5b514-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="67312-106">Criar um novo objeto [termsAndConditions](../resources/intune-companyterms-termsandconditions.md).</span><span class="sxs-lookup"><span data-stu-id="67312-106">Create a new [termsAndConditions](../resources/intune-companyterms-termsandconditions.md) object.</span></span>
+<span data-ttu-id="5b514-106">Criar um novo objeto [termsAndConditions](../resources/intune-companyterms-termsandconditions.md).</span><span class="sxs-lookup"><span data-stu-id="5b514-106">Create a new [termsAndConditions](../resources/intune-companyterms-termsandconditions.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="67312-107">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="67312-107">Prerequisites</span></span>
-<span data-ttu-id="67312-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="67312-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="5b514-107">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="5b514-107">Prerequisites</span></span>
+<span data-ttu-id="5b514-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="5b514-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="67312-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="67312-110">Permission type</span></span>|<span data-ttu-id="67312-111">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="67312-111">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="5b514-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="5b514-110">Permission type</span></span>|<span data-ttu-id="5b514-111">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="5b514-111">Permissions (from least to most privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="67312-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="67312-112">Delegated (work or school account)</span></span>|<span data-ttu-id="67312-113">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="67312-113">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
-|<span data-ttu-id="67312-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="67312-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="67312-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="67312-115">Not supported.</span></span>|
-|<span data-ttu-id="67312-116">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="67312-116">Application</span></span>|<span data-ttu-id="67312-117">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="67312-117">Not supported.</span></span>|
+|<span data-ttu-id="5b514-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="5b514-112">Delegated (work or school account)</span></span>|<span data-ttu-id="5b514-113">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="5b514-113">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
+|<span data-ttu-id="5b514-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="5b514-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="5b514-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="5b514-115">Not supported.</span></span>|
+|<span data-ttu-id="5b514-116">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="5b514-116">Application</span></span>|<span data-ttu-id="5b514-117">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="5b514-117">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="67312-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="67312-118">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="5b514-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="5b514-118">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -38,38 +38,38 @@ ms.locfileid: "48045926"
 POST /deviceManagement/termsAndConditions
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="67312-119">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="67312-119">Request headers</span></span>
-|<span data-ttu-id="67312-120">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="67312-120">Header</span></span>|<span data-ttu-id="67312-121">Valor</span><span class="sxs-lookup"><span data-stu-id="67312-121">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="5b514-119">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="5b514-119">Request headers</span></span>
+|<span data-ttu-id="5b514-120">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="5b514-120">Header</span></span>|<span data-ttu-id="5b514-121">Valor</span><span class="sxs-lookup"><span data-stu-id="5b514-121">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="67312-122">Autorização</span><span class="sxs-lookup"><span data-stu-id="67312-122">Authorization</span></span>|<span data-ttu-id="67312-123">&lt;Token&gt; de portador obrigatório.</span><span class="sxs-lookup"><span data-stu-id="67312-123">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="67312-124">Aceitar</span><span class="sxs-lookup"><span data-stu-id="67312-124">Accept</span></span>|<span data-ttu-id="67312-125">application/json</span><span class="sxs-lookup"><span data-stu-id="67312-125">application/json</span></span>|
+|<span data-ttu-id="5b514-122">Autorização</span><span class="sxs-lookup"><span data-stu-id="5b514-122">Authorization</span></span>|<span data-ttu-id="5b514-123">&lt;Token&gt; de portador obrigatório.</span><span class="sxs-lookup"><span data-stu-id="5b514-123">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="5b514-124">Aceitar</span><span class="sxs-lookup"><span data-stu-id="5b514-124">Accept</span></span>|<span data-ttu-id="5b514-125">application/json</span><span class="sxs-lookup"><span data-stu-id="5b514-125">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="67312-126">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="67312-126">Request body</span></span>
-<span data-ttu-id="67312-127">No corpo da solicitação, forneça uma representação JSON do objeto termsAndConditions.</span><span class="sxs-lookup"><span data-stu-id="67312-127">In the request body, supply a JSON representation for the termsAndConditions object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="5b514-126">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="5b514-126">Request body</span></span>
+<span data-ttu-id="5b514-127">No corpo da solicitação, forneça uma representação JSON do objeto termsAndConditions.</span><span class="sxs-lookup"><span data-stu-id="5b514-127">In the request body, supply a JSON representation for the termsAndConditions object.</span></span>
 
-<span data-ttu-id="67312-128">A tabela a seguir mostra as propriedades que são necessárias ao criar termsAndConditions.</span><span class="sxs-lookup"><span data-stu-id="67312-128">The following table shows the properties that are required when you create the termsAndConditions.</span></span>
+<span data-ttu-id="5b514-128">A tabela a seguir mostra as propriedades que são necessárias ao criar termsAndConditions.</span><span class="sxs-lookup"><span data-stu-id="5b514-128">The following table shows the properties that are required when you create the termsAndConditions.</span></span>
 
-|<span data-ttu-id="67312-129">Propriedade</span><span class="sxs-lookup"><span data-stu-id="67312-129">Property</span></span>|<span data-ttu-id="67312-130">Tipo</span><span class="sxs-lookup"><span data-stu-id="67312-130">Type</span></span>|<span data-ttu-id="67312-131">Descrição</span><span class="sxs-lookup"><span data-stu-id="67312-131">Description</span></span>|
+|<span data-ttu-id="5b514-129">Propriedade</span><span class="sxs-lookup"><span data-stu-id="5b514-129">Property</span></span>|<span data-ttu-id="5b514-130">Tipo</span><span class="sxs-lookup"><span data-stu-id="5b514-130">Type</span></span>|<span data-ttu-id="5b514-131">Descrição</span><span class="sxs-lookup"><span data-stu-id="5b514-131">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="67312-132">id</span><span class="sxs-lookup"><span data-stu-id="67312-132">id</span></span>|<span data-ttu-id="67312-133">String</span><span class="sxs-lookup"><span data-stu-id="67312-133">String</span></span>|<span data-ttu-id="67312-134">Identificador exclusivo da política de T&C.</span><span class="sxs-lookup"><span data-stu-id="67312-134">Unique identifier of the T&C policy.</span></span>|
-|<span data-ttu-id="67312-135">createdDateTime</span><span class="sxs-lookup"><span data-stu-id="67312-135">createdDateTime</span></span>|<span data-ttu-id="67312-136">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="67312-136">DateTimeOffset</span></span>|<span data-ttu-id="67312-137">DateTime em que o objeto foi criado.</span><span class="sxs-lookup"><span data-stu-id="67312-137">DateTime the object was created.</span></span>|
-|<span data-ttu-id="67312-138">lastModifiedDateTime</span><span class="sxs-lookup"><span data-stu-id="67312-138">lastModifiedDateTime</span></span>|<span data-ttu-id="67312-139">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="67312-139">DateTimeOffset</span></span>|<span data-ttu-id="67312-140">DateTime da última modificação do objeto.</span><span class="sxs-lookup"><span data-stu-id="67312-140">DateTime the object was last modified.</span></span>|
-|<span data-ttu-id="67312-141">displayName</span><span class="sxs-lookup"><span data-stu-id="67312-141">displayName</span></span>|<span data-ttu-id="67312-142">String</span><span class="sxs-lookup"><span data-stu-id="67312-142">String</span></span>|<span data-ttu-id="67312-143">Nome fornecido pelo administrador para a política de T&C.</span><span class="sxs-lookup"><span data-stu-id="67312-143">Administrator-supplied name for the T&C policy.</span></span> |
-|<span data-ttu-id="67312-144">description</span><span class="sxs-lookup"><span data-stu-id="67312-144">description</span></span>|<span data-ttu-id="67312-145">String</span><span class="sxs-lookup"><span data-stu-id="67312-145">String</span></span>|<span data-ttu-id="67312-146">Descrição fornecida pelo administrador para a política de T&C.</span><span class="sxs-lookup"><span data-stu-id="67312-146">Administrator-supplied description of the T&C policy.</span></span>|
-|<span data-ttu-id="67312-147">title</span><span class="sxs-lookup"><span data-stu-id="67312-147">title</span></span>|<span data-ttu-id="67312-148">String</span><span class="sxs-lookup"><span data-stu-id="67312-148">String</span></span>|<span data-ttu-id="67312-149">Título dos termos e condições fornecido pelo administrador.</span><span class="sxs-lookup"><span data-stu-id="67312-149">Administrator-supplied title of the terms and conditions.</span></span> <span data-ttu-id="67312-150">Isso é exibido ao usuário nos prompts de aceitação da política de T&C.</span><span class="sxs-lookup"><span data-stu-id="67312-150">This is shown to the user on prompts to accept the T&C policy.</span></span>|
-|<span data-ttu-id="67312-151">bodyText</span><span class="sxs-lookup"><span data-stu-id="67312-151">bodyText</span></span>|<span data-ttu-id="67312-152">String</span><span class="sxs-lookup"><span data-stu-id="67312-152">String</span></span>|<span data-ttu-id="67312-153">Corpo de texto de termos e condições fornecido pelo administrador, normalmente os termos em si.</span><span class="sxs-lookup"><span data-stu-id="67312-153">Administrator-supplied body text of the terms and conditions, typically the terms themselves.</span></span> <span data-ttu-id="67312-154">Isso é exibido ao usuário nos prompts de aceitação da política de T&C.</span><span class="sxs-lookup"><span data-stu-id="67312-154">This is shown to the user on prompts to accept the T&C policy.</span></span>|
-|<span data-ttu-id="67312-155">acceptanceStatement</span><span class="sxs-lookup"><span data-stu-id="67312-155">acceptanceStatement</span></span>|<span data-ttu-id="67312-156">String</span><span class="sxs-lookup"><span data-stu-id="67312-156">String</span></span>|<span data-ttu-id="67312-157">Explicação dos termos e condições fornecida pelo administrador, normalmente para descrever o que significa aceitar os termos e condições definidos na política de T&C.</span><span class="sxs-lookup"><span data-stu-id="67312-157">Administrator-supplied explanation of the terms and conditions, typically describing what it means to accept the terms and conditions set out in the T&C policy.</span></span> <span data-ttu-id="67312-158">Isso é exibido ao usuário nos prompts de aceitação da política de T&C.</span><span class="sxs-lookup"><span data-stu-id="67312-158">This is shown to the user on prompts to accept the T&C policy.</span></span>|
-|<span data-ttu-id="67312-159">version</span><span class="sxs-lookup"><span data-stu-id="67312-159">version</span></span>|<span data-ttu-id="67312-160">Int32</span><span class="sxs-lookup"><span data-stu-id="67312-160">Int32</span></span>|<span data-ttu-id="67312-161">Inteiro que indica a versão atual dos termos.</span><span class="sxs-lookup"><span data-stu-id="67312-161">Integer indicating the current version of the terms.</span></span> <span data-ttu-id="67312-162">Incrementado quando um administrador faz uma alteração nos termos e deseja solicitar que os usuários aceitem novamente a política de T&C modificada.</span><span class="sxs-lookup"><span data-stu-id="67312-162">Incremented when an administrator makes a change to the terms and wishes to require users to re-accept the modified T&C policy.</span></span>|
+|<span data-ttu-id="5b514-132">id</span><span class="sxs-lookup"><span data-stu-id="5b514-132">id</span></span>|<span data-ttu-id="5b514-133">String</span><span class="sxs-lookup"><span data-stu-id="5b514-133">String</span></span>|<span data-ttu-id="5b514-134">Identificador exclusivo da política de T&C.</span><span class="sxs-lookup"><span data-stu-id="5b514-134">Unique identifier of the T&C policy.</span></span>|
+|<span data-ttu-id="5b514-135">createdDateTime</span><span class="sxs-lookup"><span data-stu-id="5b514-135">createdDateTime</span></span>|<span data-ttu-id="5b514-136">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="5b514-136">DateTimeOffset</span></span>|<span data-ttu-id="5b514-137">DateTime em que o objeto foi criado.</span><span class="sxs-lookup"><span data-stu-id="5b514-137">DateTime the object was created.</span></span>|
+|<span data-ttu-id="5b514-138">lastModifiedDateTime</span><span class="sxs-lookup"><span data-stu-id="5b514-138">lastModifiedDateTime</span></span>|<span data-ttu-id="5b514-139">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="5b514-139">DateTimeOffset</span></span>|<span data-ttu-id="5b514-140">DateTime da última modificação do objeto.</span><span class="sxs-lookup"><span data-stu-id="5b514-140">DateTime the object was last modified.</span></span>|
+|<span data-ttu-id="5b514-141">displayName</span><span class="sxs-lookup"><span data-stu-id="5b514-141">displayName</span></span>|<span data-ttu-id="5b514-142">String</span><span class="sxs-lookup"><span data-stu-id="5b514-142">String</span></span>|<span data-ttu-id="5b514-143">Nome fornecido pelo administrador para a política de T&C.</span><span class="sxs-lookup"><span data-stu-id="5b514-143">Administrator-supplied name for the T&C policy.</span></span> |
+|<span data-ttu-id="5b514-144">description</span><span class="sxs-lookup"><span data-stu-id="5b514-144">description</span></span>|<span data-ttu-id="5b514-145">String</span><span class="sxs-lookup"><span data-stu-id="5b514-145">String</span></span>|<span data-ttu-id="5b514-146">Descrição fornecida pelo administrador para a política de T&C.</span><span class="sxs-lookup"><span data-stu-id="5b514-146">Administrator-supplied description of the T&C policy.</span></span>|
+|<span data-ttu-id="5b514-147">title</span><span class="sxs-lookup"><span data-stu-id="5b514-147">title</span></span>|<span data-ttu-id="5b514-148">String</span><span class="sxs-lookup"><span data-stu-id="5b514-148">String</span></span>|<span data-ttu-id="5b514-149">Título dos termos e condições fornecido pelo administrador.</span><span class="sxs-lookup"><span data-stu-id="5b514-149">Administrator-supplied title of the terms and conditions.</span></span> <span data-ttu-id="5b514-150">Isso é exibido ao usuário nos prompts de aceitação da política de T&C.</span><span class="sxs-lookup"><span data-stu-id="5b514-150">This is shown to the user on prompts to accept the T&C policy.</span></span>|
+|<span data-ttu-id="5b514-151">bodyText</span><span class="sxs-lookup"><span data-stu-id="5b514-151">bodyText</span></span>|<span data-ttu-id="5b514-152">String</span><span class="sxs-lookup"><span data-stu-id="5b514-152">String</span></span>|<span data-ttu-id="5b514-153">Corpo de texto de termos e condições fornecido pelo administrador, normalmente os termos em si.</span><span class="sxs-lookup"><span data-stu-id="5b514-153">Administrator-supplied body text of the terms and conditions, typically the terms themselves.</span></span> <span data-ttu-id="5b514-154">Isso é exibido ao usuário nos prompts de aceitação da política de T&C.</span><span class="sxs-lookup"><span data-stu-id="5b514-154">This is shown to the user on prompts to accept the T&C policy.</span></span>|
+|<span data-ttu-id="5b514-155">acceptanceStatement</span><span class="sxs-lookup"><span data-stu-id="5b514-155">acceptanceStatement</span></span>|<span data-ttu-id="5b514-156">String</span><span class="sxs-lookup"><span data-stu-id="5b514-156">String</span></span>|<span data-ttu-id="5b514-157">Explicação dos termos e condições fornecida pelo administrador, normalmente para descrever o que significa aceitar os termos e condições definidos na política de T&C.</span><span class="sxs-lookup"><span data-stu-id="5b514-157">Administrator-supplied explanation of the terms and conditions, typically describing what it means to accept the terms and conditions set out in the T&C policy.</span></span> <span data-ttu-id="5b514-158">Isso é exibido ao usuário nos prompts de aceitação da política de T&C.</span><span class="sxs-lookup"><span data-stu-id="5b514-158">This is shown to the user on prompts to accept the T&C policy.</span></span>|
+|<span data-ttu-id="5b514-159">version</span><span class="sxs-lookup"><span data-stu-id="5b514-159">version</span></span>|<span data-ttu-id="5b514-160">Int32</span><span class="sxs-lookup"><span data-stu-id="5b514-160">Int32</span></span>|<span data-ttu-id="5b514-161">Inteiro que indica a versão atual dos termos.</span><span class="sxs-lookup"><span data-stu-id="5b514-161">Integer indicating the current version of the terms.</span></span> <span data-ttu-id="5b514-162">Incrementado quando um administrador faz uma alteração nos termos e deseja solicitar que os usuários aceitem novamente a política de T&C modificada.</span><span class="sxs-lookup"><span data-stu-id="5b514-162">Incremented when an administrator makes a change to the terms and wishes to require users to re-accept the modified T&C policy.</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="67312-163">Resposta</span><span class="sxs-lookup"><span data-stu-id="67312-163">Response</span></span>
-<span data-ttu-id="67312-164">Se tiver êxito, este método retornará o código de resposta `201 Created` e um objeto [termsAndConditions](../resources/intune-companyterms-termsandconditions.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="67312-164">If successful, this method returns a `201 Created` response code and a [termsAndConditions](../resources/intune-companyterms-termsandconditions.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="5b514-163">Resposta</span><span class="sxs-lookup"><span data-stu-id="5b514-163">Response</span></span>
+<span data-ttu-id="5b514-164">Se tiver êxito, este método retornará o código de resposta `201 Created` e um objeto [termsAndConditions](../resources/intune-companyterms-termsandconditions.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="5b514-164">If successful, this method returns a `201 Created` response code and a [termsAndConditions](../resources/intune-companyterms-termsandconditions.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="67312-165">Exemplo</span><span class="sxs-lookup"><span data-stu-id="67312-165">Example</span></span>
+## <a name="example"></a><span data-ttu-id="5b514-165">Exemplo</span><span class="sxs-lookup"><span data-stu-id="5b514-165">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="67312-166">Solicitação</span><span class="sxs-lookup"><span data-stu-id="67312-166">Request</span></span>
-<span data-ttu-id="67312-167">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="67312-167">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="5b514-166">Solicitação</span><span class="sxs-lookup"><span data-stu-id="5b514-166">Request</span></span>
+<span data-ttu-id="5b514-167">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="5b514-167">Here is an example of the request.</span></span>
 ``` http
 POST https://graph.microsoft.com/v1.0/deviceManagement/termsAndConditions
 Content-type: application/json
@@ -86,8 +86,8 @@ Content-length: 273
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="67312-168">Resposta</span><span class="sxs-lookup"><span data-stu-id="67312-168">Response</span></span>
-<span data-ttu-id="67312-p106">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="67312-p106">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="5b514-168">Resposta</span><span class="sxs-lookup"><span data-stu-id="5b514-168">Response</span></span>
+<span data-ttu-id="5b514-p106">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="5b514-p106">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
@@ -106,11 +106,6 @@ Content-Length: 445
   "version": 7
 }
 ```
-
-
-
-
-
 
 
 
