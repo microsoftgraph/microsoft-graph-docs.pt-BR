@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e9da3ba80ffb56efe1f0f303dcec59040a3e5c25
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 07bd8a6edf3c7d429dc6ff0a341a56ff37693473
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48063489"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52759431"
 ---
 # <a name="create-windowsuniversalappx"></a>Criar windowsUniversalAppX
 
@@ -23,11 +23,11 @@ Cria um novo objeto [windowsUniversalAppX](../resources/intune-apps-windowsunive
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
+|Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|Sem suporte.|
+|Aplicativo|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -172,11 +172,6 @@ Content-Length: 1361
   "identityVersion": "Identity Version value"
 }
 ```
-
-
-
-
-
 
 
 

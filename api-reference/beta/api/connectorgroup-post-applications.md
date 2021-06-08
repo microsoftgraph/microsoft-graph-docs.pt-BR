@@ -1,16 +1,16 @@
 ---
 title: Atribuir um connectorGroup a um aplicativo
-description: Usar essa API para atribuir um connectorGroup a um aplicativo
+description: Use essa API para atribuir um connectorGroup a um aplicativo
 localization_priority: Normal
 author: japere
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 1c117153bff6ee7864eb174c38014f4adc939dee
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: ccf3255a5d8aa7416560848a0915cdb78aa77764
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50129566"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52786149"
 ---
 # <a name="assign-a-connectorgroup-to-an-application"></a>Atribuir um connectorGroup a um aplicativo
 
@@ -18,9 +18,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Atribua [um connectorGroup](../resources/connectorgroup.md) a um [aplicativo.](../resources/application.md)
+Atribua um [connectorGroup](../resources/connectorgroup.md) a um [aplicativo](../resources/application.md).
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
@@ -89,9 +89,7 @@ Content-length: 30
 Este é um exemplo de resposta. 
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.application"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 204 No content

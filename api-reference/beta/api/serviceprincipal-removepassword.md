@@ -1,16 +1,16 @@
 ---
 title: 'servicePrincipal: removePassword'
-description: Remover uma senha de uma servicePrincipal
+description: Remover uma senha de um servicePrincipal
 localization_priority: Normal
 author: sureshja
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: be45dacbb123c93d7670d3f01f9b7444e561300a
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: c1f252fba7ce753c0240b47850e79d71177705b6
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50134096"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52786106"
 ---
 # <a name="serviceprincipal-removepassword"></a>servicePrincipal: removePassword
 
@@ -18,9 +18,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Remover uma senha de um [objeto servicePrincipal.](../resources/serviceprincipal.md)
+Remova uma senha de um [objeto servicePrincipal.](../resources/serviceprincipal.md)
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -89,9 +89,7 @@ Content-type: application/json
 Este é um exemplo de resposta.
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.passwordCredential"
+  "blockType": "response"
 } -->
 
 ```http

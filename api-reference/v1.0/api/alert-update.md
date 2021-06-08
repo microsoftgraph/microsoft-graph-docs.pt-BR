@@ -5,12 +5,12 @@ localization_priority: Normal
 author: preetikr
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: 863496528fdcd60d501fbc9c38e8fbb6ed1884dc
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 005ac06ab2c4783f22a7eef0ddca85e771245fbc
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52054655"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52784959"
 ---
 # <a name="update-alert"></a>Atualizar alerta
 
@@ -24,7 +24,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:------------------------------------|
-| Delegada (conta corporativa ou de estudante)     | SecurityEvents.ReadWrite.All        |
+| Delegado (conta corporativa ou de estudante)     | SecurityEvents.ReadWrite.All        |
 | Delegado (conta pessoal da Microsoft) | Sem suporte.                      |
 | Aplicativo                            | SecurityEvents.ReadWrite.All        |
 
@@ -51,7 +51,7 @@ No corpo da solicitação, fornece uma representação JSON dos valores para cam
 
 | Propriedade          | Tipo                                                                   | Descrição |
 |:------------------|:-----------------------------------------------------------------------|:--|
-| assignedTo        | String                                                                 | Nome do analista ao que o alerta é atribuído para triagem, investigação ou correção. |
+| assignedTo        | Cadeia de caracteres                                                                 | Nome do analista ao que o alerta é atribuído para triagem, investigação ou correção. |
 | closedDateTime    | DateTimeOffset                                                         | Tempo em que o alerta foi fechado. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`. |
 | comentários          | String collection                                                      | Comentários do analista sobre o alerta (para gerenciamento de alertas do cliente). Este método pode atualizar o campo de comentários apenas com os seguintes valores: `Closed in IPC` , `Closed in MCAS` . |
 | comentários          | alertFeedback                                                          | Comentários do analista no alerta. Os valores possíveis são: `unknown`, `truePositive`, `falsePositive`, `benignPositive`. |
@@ -61,7 +61,7 @@ No corpo da solicitação, fornece uma representação JSON dos valores para cam
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um código de resposta `204 No Content`.
+Se tiver êxito, este método retornará um código de resposta `204 No Content`.
 
 Se o header de solicitação opcional for usado, o método retornará um código de resposta e o objeto `200 OK` [de](../resources/alert.md) alerta atualizado no corpo da resposta.
 
@@ -126,9 +126,7 @@ Content-type: application/json
 Veja a seguir o exemplo de uma resposta bem-sucedida.
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.alert"
+  "blockType": "response"
 } -->
 
 ```http

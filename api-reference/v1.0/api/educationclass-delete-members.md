@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: e067542eec9584a74f7e163935b56ba382f87b4d
-ms.sourcegitcommit: 34891a1c601976166958be1aa04bab5936592b44
+ms.openlocfilehash: d98245691a08ede09d16a290b1aef67935c4753c
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52231896"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52783651"
 ---
 # <a name="remove-member-from-educationclass"></a>Remover membro do educationClass
 
@@ -80,9 +80,7 @@ DELETE https://graph.microsoft.com/v1.0/education/classes/{class-id}/members/{me
 ##### <a name="response"></a>Resposta
 Este é um exemplo de resposta. 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.educationClass"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 204 No Content

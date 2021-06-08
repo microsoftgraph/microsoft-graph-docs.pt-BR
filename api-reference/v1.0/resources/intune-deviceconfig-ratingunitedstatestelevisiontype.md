@@ -1,18 +1,18 @@
 ---
-title: tipo de enumeração ratingUnitedStatesTelevisionType
+title: tipo de número ratingUnitedStatesTelevisionType
 description: Rótulos de classificação de conteúdo de TV nos Estados Unidos
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 211bc267d33fc9d414a13ead11914827a24f705d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: e8a6d05199879cc1037561081ac9ada110114d5b
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47978094"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52759977"
 ---
-# <a name="ratingunitedstatestelevisiontype-enum-type"></a>tipo de enumeração ratingUnitedStatesTelevisionType
+# <a name="ratingunitedstatestelevisiontype-enum-type"></a>tipo de número ratingUnitedStatesTelevisionType
 
 Namespace: microsoft.graph
 
@@ -23,19 +23,14 @@ Rótulos de classificação de conteúdo de TV nos Estados Unidos
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|Permitido|,0|Valor padrão, permitir todos os programas de TV|
-|Bloqueado|1 |Não permitir que qualquer TV mostre conteúdo|
-|childrenAll|2 |TV-Y, todos os filhos|
-|childrenAbove7|3 |TV-Y7, crianças da idade 7 e superior|
-|geral|4 |TV-G, adequada para todas as idades|
+|allAllowed|0|Valor padrão, permitir todo o conteúdo de programas de TV|
+|allBlocked|1|Não permitir conteúdo de programas de TV|
+|childrenAll|2|TV-Y, todos os filhos|
+|childrenAbove7|3|TV-Y7, crianças com 7 anos ou mais|
+|geral|4 |TV-G, adequado para todas as idades|
 |parentalGuidance|5 |TV-PG, orientação dos pais|
-|childrenAbove14|6 |TV-14, crianças 14 e acima|
-|adultos|7 |TV-MA, somente adultos|
-
-
-
-
-
+|childrenAbove14|6 |TV-14, crianças com 14 anos ou mais|
+|adults|7 |TV-MA, somente para adultos|
 
 
 

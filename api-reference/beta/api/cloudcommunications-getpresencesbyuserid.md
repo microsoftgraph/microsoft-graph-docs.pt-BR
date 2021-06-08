@@ -1,16 +1,16 @@
 ---
 title: 'cloudCommunications: getPresencesByUserId'
-description: Obter as informações de presença para vários usuários.
+description: Obter informações de presença para vários usuários.
 author: ananmishr
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: cloud-communications
-ms.openlocfilehash: a3c6b0fe4d223ef458aad7d9b271cfdee37e590c
-ms.sourcegitcommit: 6d04db95bf233d6819d24b01fd7f8b6db57a524c
+ms.openlocfilehash: 909643577a93429a06e6569c3d6280c69ffacd1e
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49796525"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52786166"
 ---
 # <a name="cloudcommunications-getpresencesbyuserid"></a>cloudCommunications: getPresencesByUserId
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obter as [informações de](../resources/presence.md) presença para vários usuários.
+Obter informações [de](../resources/presence.md) presença para vários usuários.
 
 ## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é necessária para chamar essas APIs. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -35,7 +35,7 @@ Uma das seguintes permissões é necessária para chamar essas APIs. Para saber 
 POST /communications/getPresencesByUserId
 ```
 
-## <a name="request-headers"></a>Solicitação de headers
+## <a name="request-headers"></a>Headers de solicitação
 | Nome          | Descrição               |
 |:--------------|:--------------------------|
 | Autorização | {token} de portador. Obrigatório. |
@@ -52,7 +52,7 @@ No corpo da solicitação, forneça um objeto JSON com o parâmetro a seguir.
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um código de resposta e uma `200 OK` coleção de objetos [de](../resources/presence.md) presença no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e uma coleção de objetos `200 OK` [de](../resources/presence.md) presença no corpo da resposta.
 
 
 ## <a name="examples"></a>Exemplos
@@ -96,7 +96,7 @@ Content-Type: application/json
 ### <a name="response"></a>Resposta
 O exemplo a seguir mostra a resposta.
 
-> **Observação:** Os objetos de resposta podem ser reduzidos para maior leitura. Todas as propriedades serão retornadas de uma chamada real.
+> **Observação:** Os objetos de resposta podem ser reduzidos para a capacidade de leitura. Todas as propriedades serão retornadas de uma chamada real.
 
 <!-- {
   "blockType": "response",
@@ -109,8 +109,7 @@ O exemplo a seguir mostra a resposta.
 HTTP/1.1 200 OK
 Content-Type: application/json
 Content-Length: 1574
-```
-```json
+
 {
   "value": [{
       "id": "fa8bf3dc-eca7-46b7-bad1-db199b62afc3",

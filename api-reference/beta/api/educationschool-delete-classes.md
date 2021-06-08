@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 6afd470bb3849a484d088025e14dbd2cce1f8941
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 97d49aa9809d7abe4371480ce952b14d27fd270a
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50951361"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52786338"
 ---
 # <a name="remove-educationclass"></a>Remover educationClass
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 Exclua uma classe de uma escola.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
@@ -81,9 +81,7 @@ DELETE https://graph.microsoft.com/beta/education/schools/10001/classes/11001
 Este é um exemplo de resposta. 
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.educationClass"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 204 No Content

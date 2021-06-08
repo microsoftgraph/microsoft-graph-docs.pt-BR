@@ -5,12 +5,12 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 480987fdc6e9b1dc9d3c52bfd47d3737928dff40
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 64a54cba75b1f71e4bce43ca8bced4e2bb5841e8
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50447856"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52785939"
 ---
 # <a name="openshiftchangerequest-decline"></a>openShiftChangeRequest: decline
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 Recusar um [objeto openshiftchangerequest.](../resources/openshiftchangerequest.md)
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -101,9 +101,7 @@ Content-type: application/json
 
 Este é um exemplo de resposta.
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.None"
+  "blockType": "response"
 } -->
 
 ```http

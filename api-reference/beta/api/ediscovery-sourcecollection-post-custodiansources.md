@@ -5,12 +5,12 @@ author: mahage-msft
 localization_priority: Normal
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 4193bfa0f74461f284329cbb5772deee6417a029
-ms.sourcegitcommit: e440d855f1106390d842905d97ceb16f143db2e5
+ms.openlocfilehash: e044843992bff6f68d01c35a549a6a9b57a61417
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/29/2021
-ms.locfileid: "52080278"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52786002"
 ---
 # <a name="add-custodiansources"></a>Adicionar custodianSources
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph.ediscovery
 
 Adicionar objetos [dataSource custodiantes](../resources/ediscovery-datasource.md) a uma coleção de origem.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -56,7 +56,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [o dataS
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|@odata.id|Cadeia de Caracteres|Cadeia de caracteres que define o objeto custodial. Vejo o exemplo a seguir.|
+|@odata.id|String|Cadeia de caracteres que define o objeto custodial. Vejo o exemplo a seguir.|
 
 ## <a name="response"></a>Resposta
 
@@ -106,9 +106,7 @@ Content-length: 179
 
 > **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.ediscovery.dataSource"
+  "blockType": "response"
 }
 -->
 

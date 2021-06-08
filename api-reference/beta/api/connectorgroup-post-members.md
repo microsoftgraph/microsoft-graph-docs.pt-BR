@@ -5,12 +5,12 @@ localization_priority: Normal
 author: japere
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 94b4f17dce85108d853cb0d3c21a4f9fc7bf573d
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 83829bdcfc3c3bfafe92971c42420f2fb9cf62d8
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50129804"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52786142"
 ---
 # <a name="add-connector-to-connectorgroup"></a>Adicionar conector a connectorGroup
 
@@ -41,11 +41,11 @@ POST /onPremisesPublishingProfiles/applicationProxy/connectorGroups/{id}/members
 | Content-type | application/json. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, fornece uma representação JSON de um link para um [objeto do](../resources/connector.md) conector.
+No corpo da solicitação, fornece uma representação JSON de um link para um [objeto connector.](../resources/connector.md)
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um código de resposta e um `201 Created` objeto [de](../resources/connector.md) conector no corpo da resposta.
+Se tiver êxito, este método retornará um código `201 Created` de resposta e um objeto [conector](../resources/connector.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 ### <a name="request"></a>Solicitação
@@ -87,9 +87,7 @@ Content-length: 104
 Este é um exemplo de resposta. 
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.connector"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 204 No Content

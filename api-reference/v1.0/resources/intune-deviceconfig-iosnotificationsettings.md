@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0e3dc929e96869475d4376c344bf08ff17ae7edd
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 438b1cf075aa1e1cedafc8340b33186965691424
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48074983"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52760026"
 ---
 # <a name="iosnotificationsettings-resource-type"></a>Tipo de recurso iosNotificationSettings
 
@@ -57,11 +57,6 @@ Veja a seguir uma representação JSON do recurso.
   "soundsEnabled": true
 }
 ```
-
-
-
-
-
 
 
 

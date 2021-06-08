@@ -1,18 +1,18 @@
 ---
-title: tipo de enumeração siteSecurityLevel
+title: Tipo denum siteSecurityLevel
 description: Valores possíveis para o nível de segurança do site.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 27be9b5d8365af37a32d8dd651f97f01f08465b1
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 38a405fb4f5aa35fd0c29f91db383d86e1e93bc2
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48074976"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52760227"
 ---
-# <a name="sitesecuritylevel-enum-type"></a>tipo de enumeração siteSecurityLevel
+# <a name="sitesecuritylevel-enum-type"></a>Tipo denum siteSecurityLevel
 
 Namespace: microsoft.graph
 
@@ -23,17 +23,12 @@ Valores possíveis para o nível de segurança do site.
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|UserDefined|,0|Definido pelo usuário, valor padrão, sem intenção.|
-|low|1 |Baixo.|
-|mediumLow|2 |Médio-baixo.|
-|medium|3D|Médio.|
+|userDefined|0|User Defined, default value, no intent.|
+|low|1|Baixo.|
+|mediumLow|2|Médio-baixo.|
+|medium|3|Médio.|
 |mediumHigh|4 |Médio-alto.|
 |high|5 |Alto.|
-
-
-
-
-
 
 
 

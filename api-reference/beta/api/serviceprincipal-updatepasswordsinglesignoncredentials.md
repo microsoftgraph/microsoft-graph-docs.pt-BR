@@ -5,12 +5,12 @@ localization_priority: Normal
 author: sureshja
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 154e74f3cdf7ed8b0fd690bd4b5b6c476a787d30
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: b178bba8f14dc0359baea9c2178eef2cffdf14ce
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50132108"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52786102"
 ---
 # <a name="serviceprincipal-updatepasswordsinglesignoncredentials"></a>servicePrincipal: updatePasswordSingleSignOnCredentials
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 Atualize as credenciais de login único usando uma senha para um usuário ou grupo.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -28,10 +28,10 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---------------------------------------|:--------------------------------------------|
 | Delegado (conta corporativa ou de estudante)     | Application.ReadWrite.All e Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Application                            | Application.ReadWrite.All e Directory.Read.All, Directory.ReadWrite.All |
+| Aplicativo                            | Application.ReadWrite.All e Directory.Read.All, Directory.ReadWrite.All |
 
 > [!NOTE]
-> Os usuários podem criar credenciais para si próprios. Os proprietários e administradores da entidade de serviço com as seguintes funções podem criar credenciais para qualquer usuário ou grupo: GlobalAdministrator, ApplicationAdministrator, CloudApplicationAdministrator. Para saber mais, consulte Funções [de diretório.](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
+> Os usuários podem criar credenciais para si mesmos. Os proprietários e administradores de entidades de serviço com as seguintes funções podem criar credenciais para qualquer usuário ou grupo: GlobalAdministrator, ApplicationAdministrator, CloudApplicationAdministrator. Para saber mais, confira [Funções de diretório](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles).
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -54,8 +54,8 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro    | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|id|String|A ID do usuário ou grupo ao que esse conjunto de credenciais pertence.|
-|credenciais|[coleção de](../resources/credential.md) credenciais|Uma lista de objetos de credencial que definem o fluxo de login completo.|
+|id|String|A ID do usuário ou grupo a que esse conjunto de credenciais pertence.|
+|credenciais|[coleção credential](../resources/credential.md)|Uma lista de objetos de credencial que definem o fluxo de login completo.|
 
 ## <a name="response"></a>Resposta
 
@@ -116,9 +116,7 @@ Content-type: application/json
 
 Este é um exemplo de resposta.
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.None"
+  "blockType": "response"
 } -->
 
 ```http

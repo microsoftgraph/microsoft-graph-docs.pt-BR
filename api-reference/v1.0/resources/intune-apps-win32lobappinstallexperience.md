@@ -1,18 +1,18 @@
 ---
-title: tipo de recurso win32LobAppInstallExperience
+title: Tipo de recurso win32LobAppInstallExperience
 description: Contém propriedades de experiência de instalação para um aplicativo Win32
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 468afea165645c2fc6a728e5a171b1ef37e9e338
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 5a1f844683368d898be7a3acdc1dacbcaffa99ff
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48080048"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52760297"
 ---
-# <a name="win32lobappinstallexperience-resource-type"></a>tipo de recurso win32LobAppInstallExperience
+# <a name="win32lobappinstallexperience-resource-type"></a>Tipo de recurso win32LobAppInstallExperience
 
 Namespace: microsoft.graph
 
@@ -23,7 +23,8 @@ Contém propriedades de experiência de instalação para um aplicativo Win32
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|deviceRestartBehavior|[win32LobAppRestartBehavior](../resources/intune-apps-win32lobapprestartbehavior.md)|Comportamento de reinicialização de dispositivo. Os valores possíveis são: `basedOnReturnCode`, `allow`, `suppress`, `force`.|
+|runAsAccount|[runAsAccountType](../resources/intune-apps-runasaccounttype.md)|Indica o tipo de contexto de execução em que o aplicativo é executado. Os valores possíveis são: `system` e `user`.|
+|deviceRestartBehavior|[win32LobAppRestartBehavior](../resources/intune-apps-win32lobapprestartbehavior.md)|Comportamento de reinicialização do dispositivo. Os valores possíveis são: `basedOnReturnCode`, `allow`, `suppress`, `force`.|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -38,10 +39,10 @@ Veja a seguir uma representação JSON do recurso.
 ``` json
 {
   "@odata.type": "#microsoft.graph.win32LobAppInstallExperience",
+  "runAsAccount": "String",
   "deviceRestartBehavior": "String"
 }
 ```
-
 
 
 

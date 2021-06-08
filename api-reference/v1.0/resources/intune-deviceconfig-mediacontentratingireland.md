@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: a7c808cd6c614837acbb863e92323429d5b4a110
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: cb96a239ff31a0d6843b690d063361a65099e65e
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48003119"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52760019"
 ---
 # <a name="mediacontentratingireland-resource-type"></a>Tipo de recurso mediaContentRatingIreland
 
@@ -43,11 +43,6 @@ Veja a seguir uma representação JSON do recurso.
   "tvRating": "String"
 }
 ```
-
-
-
-
-
 
 
 

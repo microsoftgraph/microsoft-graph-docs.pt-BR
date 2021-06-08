@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso iosHomeScreenFolder
-description: Uma pasta que contém as páginas de aplicativos na tela inicial
+description: Uma pasta que contém páginas de aplicativos e clipes da Web na Tela Inicial.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: e68172006eac3417bb87424cce19f0e2be9b78a1
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 4ee4d2f1119a7fb6c4318b2afd195518f4b8095b
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47984436"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52760068"
 ---
 # <a name="ioshomescreenfolder-resource-type"></a>Tipo de recurso iosHomeScreenFolder
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Uma pasta que contém as páginas de aplicativos na tela inicial
+Uma pasta que contém páginas de aplicativos e clipes da Web na Tela Inicial.
 
 
 Herda de [iosHomeScreenItem](../resources/intune-deviceconfig-ioshomescreenitem.md)
@@ -27,7 +27,7 @@ Herda de [iosHomeScreenItem](../resources/intune-deviceconfig-ioshomescreenitem.
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |displayName|String|Nome do aplicativo Herdado de [iosHomeScreenItem](../resources/intune-deviceconfig-ioshomescreenitem.md)|
-|páginas|Conjunto [iosHomeScreenFolderPage](../resources/intune-deviceconfig-ioshomescreenfolderpage.md)|Páginas de ícones de layout da tela inicial que devem ser do tipo do aplicativo. Este conjunto pode conter um máximo de 500 elementos.|
+|páginas|Conjunto [iosHomeScreenFolderPage](../resources/intune-deviceconfig-ioshomescreenfolderpage.md)|Páginas de Ícones de Layout da Tela Inicial que devem ser aplicativos ou clipes da Web. Esta coleção pode conter um máximo de 500 elementos.|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -58,11 +58,6 @@ Veja a seguir uma representação JSON do recurso.
   ]
 }
 ```
-
-
-
-
-
 
 
 

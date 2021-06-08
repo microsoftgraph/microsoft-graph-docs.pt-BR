@@ -1,26 +1,26 @@
 ---
-title: 'Call: logTeleconferenceDeviceQuality'
+title: 'call: logTeleconferenceDeviceQuality'
 description: Registre dados de qualidade do dispositivo de videoconferência.
 localization_priority: Normal
 author: dongkyun
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: d0cae26a29e6aa6cbcfcc140b079590a4ebfa4d4
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: a6cbacb3ce97ca1b9b09b12e0185757d5c8392ac
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47966328"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52786044"
 ---
-# <a name="call-logteleconferencedevicequality"></a>Call: logTeleconferenceDeviceQuality
+# <a name="call-logteleconferencedevicequality"></a>call: logTeleconferenceDeviceQuality
 
 Namespace: microsoft.graph
 
 Registre dados de qualidade do dispositivo de videoconferência.
 
-O bot de interoperabilidade de vídeo de nuvem (CVI) representa dispositivos de teleconferência de vídeo (VTC) e atua como um agente back-to-back para um dispositivo VTC em uma chamada em conferência. Como um bot do CVI está no meio do VTC e da infraestrutura do Microsoft Teams como um proxy do VTC, ele tem dois trechos de mídia. Um trecho de mídia está entre a infraestrutura de bot e de equipes do CVI, como o servidor de conferência do teams ou um cliente do teams. O outro trecho de mídia está entre o bot CVI e o dispositivo VTC. 
+O bot do Cloud Video Interop (CVI) representa dispositivos VTC (video teleconferência) e age como um agente back-to-back para um dispositivo VTC em uma chamada de conferência. Como um bot CVI está no meio da infraestrutura do VTC e Microsoft Teams como um proxy VTC, ele tem duas patas de mídia. Uma etapa de mídia está entre o bot CVI e Teams infraestrutura, como um servidor de conferência Teams ou um cliente Teams. A outra etapa de mídia está entre o bot CVI e o dispositivo VTC. 
 
-Os parceiros de terceiros possuem o trecho de mídia do VTC e a infraestrutura de equipe não pode acessar os dados de qualidade do trecho de chamada de terceiros.  Este método é somente para os parceiros do CVI fornecerem seus dados de qualidade de mídia.
+Os parceiros de terceiros são os donos do trecho de mídia VTC e a infraestrutura Teams não podem acessar os dados de qualidade do trecho de chamada de terceiros.  Esse método é destinado apenas aos parceiros CVI para fornecer seus dados de qualidade de mídia.
 
 ## <a name="permissions"></a>Permissões
 
@@ -45,7 +45,7 @@ POST /communications/calls/logTeleconferenceDeviceQuality
 | Nome          | Descrição   |
 |:--------------|:--------------|
 | Autorização | {token} de portador. Obrigatório. |
-| Agente de usuário    | Descreve o nome e a versão do aplicativo de chamada. Os detalhes surgirão no Azure Information Protection Analytics. O formato sugerido é ApplicationName/Version. Obrigatório.|
+| User-Agent    | Descreve o nome e a versão do aplicativo de chamada. Os detalhes aparecerão no Azure Information Protection Analytics. O formato sugerido é ApplicationName/Version. Obrigatório.|
 
 ## <a name="request-body"></a>Corpo da solicitação
 
@@ -53,7 +53,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro    | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|qualidade|[teleconferenceDeviceQuality](../resources/teleconferencedevicequality.md)|Dados de qualidade do trecho de mídia do VTC.|
+|quality|[teleconferenceDeviceQuality](../resources/teleconferencedevicequality.md)|Dados de qualidade da etapa de mídia VTC.|
 
 ## <a name="response"></a>Resposta
 
@@ -186,8 +186,7 @@ Content-type: application/json
 Este é um exemplo de resposta.
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.None"
+  "truncated": true
 } -->
 
 ```http

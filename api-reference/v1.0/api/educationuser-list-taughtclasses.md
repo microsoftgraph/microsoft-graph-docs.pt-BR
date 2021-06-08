@@ -5,12 +5,12 @@ author: mlafleur
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: a82e647f8c2db6859142c5de5cba619371248add
-ms.sourcegitcommit: b8b0e88b3ba9a434dc45f5ab640cb46f66fae299
+ms.openlocfilehash: 18efb45241a4e37588a2a5d2a13283b051293945
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "52475420"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52760725"
 ---
 # <a name="list-taughtclasses"></a>Listar taughtClasses
 
@@ -86,7 +86,7 @@ Se bem-sucedido, esse método retornará um código de resposta `200 OK` e uma c
 -->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/education/classes/{educationClassId}/members/{educationUserId}/taughtClasses
+GET https://graph.microsoft.com/v1.0/education/users/{educationUserId}/taughtClasses
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-educationclass-csharp-snippets.md)]

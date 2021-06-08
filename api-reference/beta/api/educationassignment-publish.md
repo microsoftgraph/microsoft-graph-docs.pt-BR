@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: f395fe73db248cefc63600b546c7a09cf12cfdd4
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: ac840109209b2a8ec5081d55abc31e1fac92d965
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50951749"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52785995"
 ---
 # <a name="educationassignment-publish"></a>educationAssignment: publish
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 Essa ação altera o estado de uma atribuição de seu status de rascunho original para o status publicado. Somente um professor da classe pode fazer essa chamada. Quando uma atribuição estiver no status de rascunho, os alunos não verão a atribuição, nem haverá objetos de envio. Quando você chama essa API, os objetos de envio são criados e a atribuição aparece na lista do aluno.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
@@ -82,9 +82,7 @@ POST https://graph.microsoft.com/beta/education/classes/11021/assignments/19002/
 Veja a seguir um exemplo de uma resposta. 
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.educationAssignment"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 204 No Content

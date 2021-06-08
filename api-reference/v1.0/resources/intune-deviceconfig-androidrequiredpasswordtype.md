@@ -1,41 +1,36 @@
 ---
-title: tipo de enumeração androidRequiredPasswordType
-description: Tipo de senha exigido pelo Android.
+title: tipo de número androidRequiredPasswordType
+description: Tipo de senha obrigatório do Android.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 4921263e1960617b8d9e013ce12a799e11d61516
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: d179666a4de9256e98c704bccd9e512d4aebd0ce
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48041558"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52760283"
 ---
-# <a name="androidrequiredpasswordtype-enum-type"></a>tipo de enumeração androidRequiredPasswordType
+# <a name="androidrequiredpasswordtype-enum-type"></a>tipo de número androidRequiredPasswordType
 
 Namespace: microsoft.graph
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Tipo de senha exigido pelo Android.
+Tipo de senha obrigatório do Android.
 
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|deviceDefault|,0|Valor padrão do dispositivo, sem intenção.|
-|caracteres|1 |Senha alfabética necessária.|
-|tecla|2 |Senha alfanumérica obrigatória.|
-|alphanumericWithSymbols|3 |Alfanumérica com símbolos de senha necessários.|
-|lowSecurityBiometric|4 |Senha com base em Biometria de segurança baixa necessária.|
-|numéricos|5 |Senha numérica obrigatória.|
-|numericComplex|6 |Senha numérica complexa obrigatória.|
-|qualquer|7 |Uma senha ou um padrão é necessário, e qualquer um é aceitável.|
-
-
-
-
-
+|deviceDefault|0|Valor padrão do dispositivo, sem intenção.|
+|alfabético|1|Senha alfabética necessária.|
+|alfanumérico|2|Senha alfanumérica necessária.|
+|alphanumericWithSymbols|3|Alfanumérico com símbolos de senha necessário.|
+|lowSecurityBiometric|4 |Senha de baixa biometria baseada em segurança necessária.|
+|numeric|5 |Senha numérica necessária.|
+|numericComplex|6 |Senha complexa numérica necessária.|
+|qualquer|7 |Uma senha ou padrão é necessária e qualquer uma é aceitável.|
 
 
 

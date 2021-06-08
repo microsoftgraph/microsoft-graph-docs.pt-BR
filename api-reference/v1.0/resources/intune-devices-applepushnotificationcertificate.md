@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 2bbcca2707223f53b59d1b3d5d2ceb75ba08c57a
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 0d53407d5ec380e7bfe11d50f6871eb6bbfb87aa
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48091317"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52760206"
 ---
 # <a name="applepushnotificationcertificate-resource-type"></a>Tipo de recurso applePushNotificationCertificate
 
@@ -30,11 +30,12 @@ Certificado de notificação por push da Apple.
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|O identificador exclusivo do certificado.|
+|id|String|O identificador exclusivo do certificado.|
 |appleIdentifier|Cadeia de caracteres|Id da Apple da conta usada para criar o certificado de push do MDM.|
 |topicIdentifier|Cadeia de caracteres|ID do tópico.|
 |lastModifiedDateTime|DateTimeOffset|Data e hora da última modificação de certificado de notificações por push da Apple.|
 |expirationDateTime|DateTimeOffset|Data e hora do vencimento de certificado de notificações por push da Apple.|
+|certificateSerialNumber|String|Número de série do certificado. Essa propriedade é somente leitura.|
 |certificado|Cadeia de caracteres|Ainda não documentado|
 
 ## <a name="relationships"></a>Relações
@@ -56,14 +57,10 @@ Veja a seguir uma representação JSON do recurso.
   "topicIdentifier": "String",
   "lastModifiedDateTime": "String (timestamp)",
   "expirationDateTime": "String (timestamp)",
+  "certificateSerialNumber": "String",
   "certificate": "String"
 }
 ```
-
-
-
-
-
 
 
 

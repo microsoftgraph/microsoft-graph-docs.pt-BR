@@ -5,12 +5,12 @@ author: Alice-at-Microsoft
 localization_priority: Normal
 ms.prod: w10
 doc_type: apiPageType
-ms.openlocfilehash: 68654adf5bba14c98b19acab47880008c4d18b08
-ms.sourcegitcommit: 2a35434fabc76672e21bfc3ed5a1d28f9f3b66bc
+ms.openlocfilehash: 2b5857f70136b804494825eb7cb66945d2b1a452
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52241301"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52785253"
 ---
 # <a name="update-deployment"></a>Atualizar implantação
 Namespace: microsoft.graph.windowsUpdates
@@ -19,13 +19,13 @@ Namespace: microsoft.graph.windowsUpdates
 
 Atualize as propriedades de um [objeto de](../resources/windowsupdates-deployment.md) implantação.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|WindowsUpdates.ReadWrite.All|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Delegado (conta corporativa ou de estudante)|WindowsUpdates.ReadWrite.All|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|WindowsUpdates.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -52,7 +52,7 @@ A tabela a seguir mostra as propriedades que podem ser definidas quando você at
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |state|[microsoft.graph.windowsUpdates.deploymentState](../resources/windowsupdates-deploymentstate.md)|Status de execução da implantação.|
-|configurações|[microsoft.graph.windowsUpdates.deploymentSettings](../resources/windowsupdates-deploymentsettings.md)|Configurações especificado na implantação específica que rege como implantar a implantação `content` .|
+|settings|[microsoft.graph.windowsUpdates.deploymentSettings](../resources/windowsupdates-deploymentsettings.md)|Configurações especificado na implantação específica que rege como implantar a implantação `content` .|
 
 
 ## <a name="response"></a>Resposta
@@ -70,7 +70,7 @@ Neste exemplo, a implantação é pausada atualizando a `requestedValue` implant
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "update_deployment",
+  "name": "update_deployment_1",
   "@odata.type": "microsoft.graph.windowsUpdates.deployment"
 }
 -->
@@ -149,7 +149,7 @@ Neste exemplo, a `settings` propriedade da implantação é atualizada para adic
 #### <a name="request"></a>Solicitação
 <!-- {
   "blockType": "request",
-  "name": "update_deployment",
+  "name": "update_deployment_2",
   "@odata.type": "microsoft.graph.windowsUpdates.deployment"
 }
 -->

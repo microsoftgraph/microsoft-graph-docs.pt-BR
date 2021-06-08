@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: c7dbaded456e4f4df9874635a27b7f46d0ca7a2c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 9c3478e7fc67f288102e313f44bf08b55e01f222
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48094299"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52760304"
 ---
 # <a name="vpplicensingtype-resource-type"></a>Tipo de recurso vppLicensingType
 
@@ -43,11 +43,6 @@ Veja a seguir uma representação JSON do recurso.
   "supportsDeviceLicensing": true
 }
 ```
-
-
-
-
-
 
 
 

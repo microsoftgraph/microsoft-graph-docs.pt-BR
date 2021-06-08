@@ -1,18 +1,18 @@
 ---
-title: tipo de enumeração ratingAustraliaTelevisionType
+title: ratingAustraliaTelevisionType tipo de número
 description: Rótulos de classificação de conteúdo de TV na Austrália
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: b89b3a5281b33aeddfbdbaa2468c55229c127a1d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f7b1b3a820044ee7be701d6554acb501565b8a98
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48041432"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52760234"
 ---
-# <a name="ratingaustraliatelevisiontype-enum-type"></a>tipo de enumeração ratingAustraliaTelevisionType
+# <a name="ratingaustraliatelevisiontype-enum-type"></a>ratingAustraliaTelevisionType tipo de número
 
 Namespace: microsoft.graph
 
@@ -23,20 +23,15 @@ Rótulos de classificação de conteúdo de TV na Austrália
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|Permitido|,0|Valor padrão, permitir todos os programas de TV|
-|Bloqueado|1 |Não permitir que qualquer TV mostre conteúdo|
-|poliescolares|2 |A classificação P destina-se a preaulas|
-|children|3 |A classificação de C destina-se a crianças com menos de 14|
+|allAllowed|0|Valor padrão, permitir todo o conteúdo de programas de TV|
+|allBlocked|1|Não permitir conteúdo de programas de TV|
+|pré-alunos|2|A classificação P destina-se a pré-alunos|
+|children|3|A classificação C destina-se a crianças menores de 14 anos|
 |geral|4 |A classificação G é adequada para todas as idades|
-|parentalGuidance|5 |A classificação PG é recomendada para visualizadores jovens|
-|completa|6 |A classificação M é recomendada para visualizadores mais de 15|
-|agesAbove15|7 |A classificação MA15 + não é adequada para visualizadores abaixo de 15|
-|agesAbove15AdultViolence|8 |A classificação AV15 + não é adequada para visualizadores sob 15, específico violência adulto|
-
-
-
-
-
+|parentalGuidance|5 |A classificação pg é recomendada para visualizadores mais novos|
+|mature|6 |A classificação M é recomendada para visualizadores com mais de 15 anos|
+|agesAbove15|7 |A classificação MA15+ não é adequada para visualizadores com menos de 15 anos|
+|agesAbove15AdultViolence|8 |A classificação AV15+ não é adequada para visualizadores com menos de 15 anos, específico para a violência de adulto|
 
 
 

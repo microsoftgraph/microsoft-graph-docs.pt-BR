@@ -6,12 +6,12 @@ localization_priority: Priority
 ms.prod: sharepoint
 description: Baixar o conteúdo do fluxo principal (arquivo) de um DriveItem. Somente driveItems com a propriedade file podem ser baixados.
 doc_type: apiPageType
-ms.openlocfilehash: 212f11a6d76853e3ab3a7f0e23fd4812b260b496
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: 524f9b44f0281be0b5731762b0d7654ae73984c3
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50240308"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52786033"
 ---
 # <a name="download-the-contents-of-a-driveitem"></a>Baixe o conteúdo de um DriveItem
 
@@ -88,7 +88,7 @@ Várias bibliotecas de cliente HTTP seguirão automaticamente o redirecionamento
 
 URLs de download previamente autenticadas são válidas apenas por um curto período de tempo (alguns minutos) e não exigem um cabeçalho `Authorization` para download.
 
-<!-- { "blockType": "response", "@odata.type": "stream" } -->
+<!-- { "blockType": "response" } -->
 
 ```http
 HTTP/1.1 302 Found

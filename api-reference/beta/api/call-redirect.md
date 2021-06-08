@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: dec644f55e7a96cec6cbb1680af12097c09525bc
-ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
+ms.openlocfilehash: 7e4ffa0b1189ebf9cf6ab3d710256ab423f5bd3f
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "52664003"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52786226"
 ---
 # <a name="call-redirect"></a>call: redirect
 
@@ -22,7 +22,7 @@ Redirecionar uma chamada de entrada que ainda não foi [atendida](./call-answer.
 
 Espera-se que o bot redirecione a chamada antes do tempo de chamada. O valor de tempo decoro atual é 15 segundos.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -57,8 +57,8 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 |targets|conjunto [invitationParticipantInfo](../resources/invitationparticipantinfo.md)|Os participantes de destino da operação de redirecionamento. Se mais de um destino for especificado, será uma chamada simulring. Isso significa que todos os destinos serão tordos ao mesmo tempo e somente o primeiro destino que escolher será conectado. Suportamos até 25 destinos para simulação.
 |targetDisposition|String|(Preterido) Os valores possíveis são: `default` , `simultaneousRing` , `forward` . Esse parâmetro é preterido, identificaremos automaticamente se é uma chamada de encaminhamento ou simulring do número de destinos fornecidos.|
 |timeout|Int32|O tempo decoro (em segundos) para a operação de redirecionamento. O intervalo do valor de tempo decor entre 15 e 90 segundos, inclusive. O valor de tempo decoro padrão é 55 segundos para um destino e 60 segundos para vários destinos (sujeitos a alterações). |
-|maskCallee|Booleano|Indica se o chamador deve ser oculto do chamador. Se for true, a identidade do chamador será a identidade do bot. Padrão: false.|
-|maskCaller|Booleano|Indica se o chamador deve ser oculto do chamador. Se for true, a identidade do chamador será a identidade do bot. Padrão: false.|
+|maskCallee|Booliano|Indica se o chamador deve ser oculto do chamador. Se for true, a identidade do chamador será a identidade do bot. Padrão: false.|
+|maskCaller|Booliano|Indica se o chamador deve ser oculto do chamador. Se for true, a identidade do chamador será a identidade do bot. Padrão: false.|
 |callbackUri|String|Isso permite que os bots forneçam um URI de retorno de chamada específico para que a chamada atual receba notificações posteriores. Se essa propriedade não tiver sido definida, o URI de retorno de chamada global do bot será usado em vez disso. Isso deve ser `https` .|
 
 ## <a name="response"></a>Resposta
@@ -172,8 +172,7 @@ Content-Type: application/json
 #### <a name="response"></a>Resposta
 
 <!-- {
-  "blockType": "response", 
-  "@odata.type": "microsoft.graph.None"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 202 Accepted
@@ -350,8 +349,7 @@ Content-Type: application/json
 #### <a name="response"></a>Resposta
 
 <!-- {
-  "blockType": "response", 
-  "@odata.type": "microsoft.graph.None"
+  "blockType": "response"
 } -->
 
 ``` http
@@ -506,8 +504,7 @@ Content-Type: application/json
 #### <a name="response"></a>Resposta
 
 <!-- {
-  "blockType": "response", 
-  "@odata.type": "microsoft.graph.None"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 202 Accepted

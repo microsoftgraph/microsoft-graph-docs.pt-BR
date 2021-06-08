@@ -1,18 +1,18 @@
 ---
-title: 'bookingBusiness: cancelar publicação'
+title: 'bookingBusiness: não publicado'
 description: Tornar a página de agendamento dessa empresa não disponível para clientes externos.
 localization_priority: Normal
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: ce60406347dbf6e0d0964976929614c696fd04b7
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 52886df6aebcab14bbf8b2983e21e0866d56b403
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48960559"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52786254"
 ---
-# <a name="bookingbusiness-unpublish"></a>bookingBusiness: cancelar publicação
+# <a name="bookingbusiness-unpublish"></a>bookingBusiness: não publicado
 
 Namespace: microsoft.graph
 
@@ -20,9 +20,9 @@ Namespace: microsoft.graph
 
 Tornar a página de agendamento dessa empresa não disponível para clientes externos.
 
-Defina a propriedade **IsPublished** como false e a propriedade **publicUrl** como NULL.
+Defina a **propriedade isPublished** como false e **a propriedade publicUrl** como null.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
@@ -82,9 +82,7 @@ POST https://graph.microsoft.com/beta/bookingBusinesses/Contosolunchdelivery@M36
 ##### <a name="response"></a>Resposta
 Este é um exemplo de resposta.
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.None"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 204 No content

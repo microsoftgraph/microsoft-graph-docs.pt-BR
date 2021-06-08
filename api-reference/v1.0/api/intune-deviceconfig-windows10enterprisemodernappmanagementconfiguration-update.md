@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 367ddbac53e18440b589efce0f818cd1cb7b6882
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: d452a0c355302e9423663b0154c16c0044cb7cbe
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48066597"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52760521"
 ---
 # <a name="update-windows10enterprisemodernappmanagementconfiguration"></a>Atualizar windows10EnterpriseModernAppManagementConfiguration
 
@@ -23,11 +23,11 @@ Atualizar as propriedades de um objeto [windows10EnterpriseModernAppManagementCo
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
+|Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|Sem suporte.|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -100,11 +100,6 @@ Content-Length: 394
   "uninstallBuiltInApps": true
 }
 ```
-
-
-
-
-
 
 
 

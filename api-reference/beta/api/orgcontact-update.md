@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 85b08d815b742a0b4117c7dd0ae786da979f92dc
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 26396518b40023e7a4b5666fb1d00b4effd83546
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50447818"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52785239"
 ---
 # <a name="update-orgcontact"></a>Atualizar orgcontact
 
@@ -19,7 +19,7 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Atualize as propriedades do objeto orgcontact.
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
@@ -57,7 +57,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 |officeLocation|String||
 |postalCode|String||
 |proxyAddresses|String||
-|state|String||
+|estado|String||
 |streetAddress|String||
 |surname|String||
 |businessPhones|Coleção de cadeias de caracteres||
@@ -108,9 +108,7 @@ Content-length: 222
 ### <a name="response"></a>Resposta
 Este é um exemplo de resposta. 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.orgContact"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 204 No Content

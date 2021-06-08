@@ -5,12 +5,12 @@ author: jackson-woods
 localization_priority: Priority
 ms.prod: identity-and-access
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: fc8cd5289c014627fabcd4a5f8aa55279ebb4a90
-ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
+ms.openlocfilehash: 77114f38265e4a7ad494cc8fb743f6c55961774a
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52547117"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52760124"
 ---
 # <a name="azure-ad-identity-and-access-management-api-overview"></a>Visão geral da API de gerenciamento de identidade e acesso do Azure AD
 
@@ -85,7 +85,7 @@ Está procurando a referência de API para esse serviço?
 
 ## <a name="next-steps"></a>Próximas etapas
 
-- Descubra como [Usar as APIs do Microsoft Azure Active Directory REST](/graph/api/resources/azure-ad-overview.
+- Saiba como [Usar as APIs REST do Azure AD](/graph/api/resources/azure-ad-overview).
 - Use o Azure AD para se [autenticar](./auth/index.yml) no Microsoft Graph.
 - Integre o [logon do Azure AD](https://azure.microsoft.com/develop/identity/signin/) ao seu aplicativo ou website.
 - Confira o [Changelog](changelog.md) para obter informações sobre novidades nas APIs do Azure AD.

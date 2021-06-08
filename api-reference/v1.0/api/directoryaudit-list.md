@@ -5,12 +5,12 @@ localization_priority: Normal
 author: SarahBar
 ms.prod: identity-and-access-reports
 doc_type: apiPageType
-ms.openlocfilehash: cc7037ab178629e6a0861506cf31a9f0604d70f7
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 73568bcd34e8b8b89b2550edc0c62498664dee0a
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52053171"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52786289"
 ---
 # <a name="list-directoryaudits"></a>Lista directoryAudits
 
@@ -117,10 +117,12 @@ Veja a seguir um exemplo da resposta.
 
 > **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
+
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.directoryaudit",
+  "@odata.type": "microsoft.graph.directoryAudit",
   "isCollection": true
 } -->
 
@@ -128,11 +130,7 @@ Veja a seguir um exemplo da resposta.
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 271
-```
 
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
-
-```json
 {
   "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#auditlogs/directoryaudits",
   "value": [{

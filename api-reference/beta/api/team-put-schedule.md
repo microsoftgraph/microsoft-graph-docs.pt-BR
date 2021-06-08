@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 1e61d48031530cb1d80a2e3bd45165befefcafd9
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 02196fab37f28a2ab8f669ff4427d7512a0f0348
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52054774"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52786321"
 ---
 # <a name="create-or-replace-schedule"></a>Criar ou substituir agendamento
 
@@ -28,7 +28,7 @@ Durante o provisionamento de agendamento, os clientes podem usar o [método GET]
 Os clientes também podem inspecionar a configuração da agenda.
 
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -36,7 +36,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | Schedule.ReadWrite.All, Group.ReadWrite.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Application | Schedule.ReadWrite.All |
+|Aplicativo | Schedule.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -61,7 +61,9 @@ No corpo da solicitação, fornece uma representação JSON de um [objeto schedu
 
 Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto [schedule](../resources/schedule.md) no corpo da resposta.
 
-## <a name="example"></a>Exemplo
+## <a name="examples"></a>Exemplos
+
+### <a name="example-1-update-a-schedule"></a>Exemplo 1: atualizar um cronograma
 
 #### <a name="request"></a>Solicitação
 
@@ -97,8 +99,6 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/team-put-schedule-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
----
-
 
 #### <a name="response"></a>Resposta
 
@@ -127,6 +127,75 @@ Content-length: 401
   "swapShiftsRequestsEnabled": true,
   "offerShiftRequestsEnabled": true,
   "timeOffRequestsEnabled": true
+}
+```
+
+### <a name="example-2-enable-location-detection-for-time-clock"></a>Exemplo 2: Habilitar a detecção de local para o relógio de hora
+
+#### <a name="request"></a>Solicitação
+
+Este é um exemplo de solicitação.
+
+<!-- {
+  "blockType": "request",
+  "name": "team-put-schedule"
+}-->
+```http
+PUT https://graph.microsoft.com/beta/teams/871dbd5c-3a6a-4392-bfe1-042452793a50/schedule
+
+{
+   "enabled":true,
+   "timeZone":"America/Chicago",
+   "provisionStatus":"Completed",
+   "provisionStatusCode":null,
+   "openShiftsEnabled":true,
+   "swapShiftsRequestsEnabled":true,
+   "offerShiftRequestsEnabled":true,
+   "timeOffRequestsEnabled":true,
+   "timeClockEnabled":true,
+   "timeClockSettings":{
+      "approvedLocation":{
+         "altitude":1024.13,
+         "latitude":26.13246,
+         "longitude":24.34616
+      }
+   }
+} 
+```
+
+#### <a name="response"></a>Resposta
+
+Este é um exemplo de resposta. 
+
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.schedule"
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+Content-length: 401
+
+{
+   "enabled":true,
+   "timeZone":"America/Chicago",
+   "provisionStatus":"Completed",
+   "provisionStatusCode":null,
+   "openShiftsEnabled":true,
+   "swapShiftsRequestsEnabled":true,
+   "offerShiftRequestsEnabled":true,
+   "timeOffRequestsEnabled":true,
+   "timeClockEnabled":true,
+   "timeClockSettings":{
+      "approvedLocation":{
+         "altitude":1024.13,
+         "latitude":26.13246,
+         "longitude":24.34616
+      }
+   }
 }
 ```
 

@@ -4,12 +4,12 @@ description: A API de críticas de acesso permite que você revise programaticam
 author: FaithOmbongi
 localization_priority: Normal
 ms.prod: governance
-ms.openlocfilehash: 92ea2d49fae37c5b4d5ae82e390f897af9ff4cde
-ms.sourcegitcommit: 1b09298649d5606b471b4cbe1055419bbe2fc7e5
+ms.openlocfilehash: bedcd32f7db1c2aa7926108cfeb0588bbc354474
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "52067058"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52786241"
 ---
 # <a name="overview-of-the-access-reviews-api"></a>Visão geral da API de análises de acesso
 
@@ -31,9 +31,9 @@ Em um contexto de aplicativo, um aplicativo chama a API de críticas de acesso s
 ## <a name="building-blocks-of-an-access-review"></a>Blocos de construção de uma revisão de acesso
 
 As avaliações do Access são estruturadas logicamente e são compostas por esses blocos de construção:
-+ **Definições de agendamento de revisões do Access** - O plano lógico que contém as configurações de uma revisão de acesso e suas instâncias.
-+ **Instância de revisão do Access** - Representa uma atividade de revisão que tem um escopo, revisadores e um status. Uma definição de revisão de acesso pode ter várias instâncias, como acontece em revisões recorrentes. As avaliações exclusivas têm exatamente uma instância.
-+ **Itens de decisão registrados para uma** revisão - Representam uma decisão tomada por um revistor em uma instância, incluindo o carimbo de data/hora e a justificativa para a decisão. Cada instância de revisão tem tantas decisões quanto o número de usuários sob revisão. Se não houver decisões tomadas, ou seja, os revisadores não responderam à revisão, não haverá objetos de decisão para a instância.
++ **Definições de agendamento de revisões do Access** - O plano lógico que contém as configurações de uma revisão de acesso e suas instâncias. As configurações incluem os recursos contra os quais o acesso é revisado e os revisadores que atestam o acesso a esses recursos.
++ **Instância de revisão do Access** - Representa uma única atividade de revisão em relação à qual os revisadores tomarão decisões. Uma definição de revisão de acesso pode ter várias instâncias, como acontece em revisões recorrentes. As avaliações exclusivas têm exatamente uma instância.
++ **Itens de decisão registrados para uma** revisão - Representa uma decisão tomada por um revistor em uma instância, incluindo o carimbo de data/hora e a justificativa para a decisão. Cada instância de revisão tem tantas decisões quanto o número de usuários sob revisão. Se não houver decisões tomadas, ou seja, os revisadores não responderam à revisão, não haverá objetos de decisão para a instância.
 
 ## <a name="next-steps"></a>Próximas etapas
 

@@ -1,37 +1,32 @@
 ---
-title: tipo de enumeração iosNotificationAlertType
-description: Tipo de alerta de configurações de notificação.
+title: Tipo denum iosNotificationAlertType
+description: Tipo Configurações alerta de notificação.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 297adaa5be8b70b675ac04e496bf8b2d3d54b666
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 0627c9503f7da2019c717ad66bde81a8556563d6
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48009335"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52760033"
 ---
-# <a name="iosnotificationalerttype-enum-type"></a>tipo de enumeração iosNotificationAlertType
+# <a name="iosnotificationalerttype-enum-type"></a>Tipo denum iosNotificationAlertType
 
 Namespace: microsoft.graph
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Tipo de alerta de configurações de notificação.
+Tipo Configurações alerta de notificação.
 
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|deviceDefault|,0|Valor padrão do dispositivo, sem intenção.|
-|Bandeira|1 |Bandeira.|
-|JanelaRestrita|2 |JanelaRestrita.|
-|Nenhuma|3 |Nenhum|
-
-
-
-
-
+|deviceDefault|0|Valor padrão do dispositivo, sem intenção.|
+|banner|1|Banner.|
+|modal|2|Modal.|
+|nenhuma|3|Nenhum|
 
 
 

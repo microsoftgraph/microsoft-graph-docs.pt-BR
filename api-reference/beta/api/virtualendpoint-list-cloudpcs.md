@@ -5,12 +5,12 @@ author: AshleyYangSZ
 localization_priority: Normal
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: dd8c0aaa6b9551f041a5d90f6f3ddc777b5d1b87
-ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
+ms.openlocfilehash: 3c2830f53c7060ff96e164c127afb83072b96c86
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52547659"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52785869"
 ---
 # <a name="list-cloudpcs"></a>Listar cloudPCs
 
@@ -22,7 +22,7 @@ Listar propriedades e relações dos objetos [cloudPC.](../resources/cloudpc.md)
 
 [!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -119,12 +119,15 @@ Content-Type: application/json
       "managedDeviceId": "bdc8e6dd-0455-4412-83d9-c818664fffff",
       "managedDeviceName": "Managed Device Name value",
       "provisioningPolicyId": "7ed725ad-0a00-4117-b557-d965c373ffff",
+      "provisioningPolicyName": "Provisioning Policy Name value",
+      "onPremisesConnectionName": "On-premises connection Name value",
       "servicePlanId": "dbb9148c-ff83-4a4c-8d7f-28752e93ffff",
       "servicePlanName": "lite",
       "status": "provisioned",
       "userPrincipalName": "User Principal Name value",
       "lastModifiedDateTime": "2020-11-03T10:29:57Z",
-      "statusDetails": null
+      "statusDetails": null,
+      "gracePeriodEndDateTime": "Grace Period End Date Time value "
     }
   ]
 }
