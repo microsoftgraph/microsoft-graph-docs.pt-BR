@@ -5,62 +5,78 @@ localization_priority: Normal
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 5bd8485a9b01890420d47e95d976b84b0807b488
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 656addb026493a442e52f0db7a841f3b523f6566
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52054746"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52786451"
 ---
-# <a name="update-unifiedroleassignmentmultiple"></a><span data-ttu-id="7e00b-103">Atualizar unifiedRoleAssignmentMultiple</span><span class="sxs-lookup"><span data-stu-id="7e00b-103">Update unifiedRoleAssignmentMultiple</span></span>
+# <a name="update-unifiedroleassignmentmultiple"></a><span data-ttu-id="2e499-103">Atualizar unifiedRoleAssignmentMultiple</span><span class="sxs-lookup"><span data-stu-id="2e499-103">Update unifiedRoleAssignmentMultiple</span></span>
 
-<span data-ttu-id="7e00b-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="7e00b-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="2e499-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="2e499-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="7e00b-105">Atualize um [objeto unifiedRoleAssignmentMultiple](../resources/unifiedroleassignmentmultiple.md) existente.</span><span class="sxs-lookup"><span data-stu-id="7e00b-105">Update an existing [unifiedRoleAssignmentMultiple](../resources/unifiedroleassignmentmultiple.md) object.</span></span> <span data-ttu-id="7e00b-106">Use isso para atualizar as atribuições de função Microsoft Intune.</span><span class="sxs-lookup"><span data-stu-id="7e00b-106">Use this to update role assignments in Microsoft Intune.</span></span> <span data-ttu-id="7e00b-107">Observe que [unifiedRoleAssignment](../resources/unifiedroleassignment.md) não dá suporte à atualização.</span><span class="sxs-lookup"><span data-stu-id="7e00b-107">Note that [unifiedRoleAssignment](../resources/unifiedroleassignment.md) does not support update.</span></span>
+<span data-ttu-id="2e499-105">Atualize um objeto [unifiedRoleAssignmentMultiple](../resources/unifiedroleassignmentmultiple.md) existente de um provedor RBAC.</span><span class="sxs-lookup"><span data-stu-id="2e499-105">Update an existing [unifiedRoleAssignmentMultiple](../resources/unifiedroleassignmentmultiple.md) object of an RBAC provider.</span></span> 
 
-## <a name="permissions"></a><span data-ttu-id="7e00b-108">Permissões</span><span class="sxs-lookup"><span data-stu-id="7e00b-108">Permissions</span></span>
+<span data-ttu-id="2e499-106">No momento, há suporte para os seguintes provedores RBAC:</span><span class="sxs-lookup"><span data-stu-id="2e499-106">The following RBAC providers are currently supported:</span></span>
+- <span data-ttu-id="2e499-107">cloud PC</span><span class="sxs-lookup"><span data-stu-id="2e499-107">cloud PC</span></span> 
+- <span data-ttu-id="2e499-108">gerenciamento de dispositivos (Intune)</span><span class="sxs-lookup"><span data-stu-id="2e499-108">device management (Intune)</span></span>
 
-<span data-ttu-id="7e00b-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="7e00b-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
-| <span data-ttu-id="7e00b-111">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="7e00b-111">Permission type</span></span> | <span data-ttu-id="7e00b-112">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="7e00b-112">Permissions (from least to most privileged)</span></span> |
-|:--------------- |:------------------------------------------- |
-| <span data-ttu-id="7e00b-113">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="7e00b-113">Delegated (work or school account)</span></span> | <span data-ttu-id="7e00b-114">DeviceManagementRBAC.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="7e00b-114">DeviceManagementRBAC.ReadWrite.All</span></span> |
-| <span data-ttu-id="7e00b-115">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="7e00b-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="7e00b-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="7e00b-116">Not supported.</span></span> |
-| <span data-ttu-id="7e00b-117">Application</span><span class="sxs-lookup"><span data-stu-id="7e00b-117">Application</span></span> | <span data-ttu-id="7e00b-118">DeviceManagementRBAC.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="7e00b-118">DeviceManagementRBAC.ReadWrite.All</span></span> |
+<span data-ttu-id="2e499-109">Por outro lado, [unifiedRoleAssignment](../resources/unifiedroleassignment.md) não dá suporte à atualização.</span><span class="sxs-lookup"><span data-stu-id="2e499-109">In contrast, [unifiedRoleAssignment](../resources/unifiedroleassignment.md) does not support update.</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="7e00b-119">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="7e00b-119">HTTP request</span></span>
+## <a name="permissions"></a><span data-ttu-id="2e499-110">Permissions</span><span class="sxs-lookup"><span data-stu-id="2e499-110">Permissions</span></span>
 
+<span data-ttu-id="2e499-111">Dependendo do provedor RBAC e do tipo de permissão (delegado ou aplicativo) necessário, escolha na tabela a seguinte permissão com menos privilégios necessária para chamar essa API.</span><span class="sxs-lookup"><span data-stu-id="2e499-111">Depending on the RBAC provider and the permission type (delegated or application) that is needed, choose from the following table the least privileged permission required to call this API.</span></span> <span data-ttu-id="2e499-112">Para saber mais, incluindo [tomar cuidado](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) antes de escolher as permissões mais privilegiadas, pesquise as seguintes permissões em [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="2e499-112">To learn more, including [taking caution](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) before choosing more privileged permissions, search for the following permissions in [Permissions](/graph/permissions-reference).</span></span> 
+
+|<span data-ttu-id="2e499-113">Provedor com suporte</span><span class="sxs-lookup"><span data-stu-id="2e499-113">Supported provider</span></span>      | <span data-ttu-id="2e499-114">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="2e499-114">Delegated (work or school account)</span></span>  | <span data-ttu-id="2e499-115">Delegada (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="2e499-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="2e499-116">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="2e499-116">Application</span></span> |
+|:-----------------------|:------------------------------------|:---------------------------------------|:------------|
+| <span data-ttu-id="2e499-117">Cloud PC</span><span class="sxs-lookup"><span data-stu-id="2e499-117">Cloud PC</span></span> | <span data-ttu-id="2e499-118">CloudPC.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="2e499-118">CloudPC.ReadWrite.All</span></span> | <span data-ttu-id="2e499-119">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="2e499-119">Not supported.</span></span> | <span data-ttu-id="2e499-120">CloudPC.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="2e499-120">CloudPC.ReadWrite.All</span></span> |
+| <span data-ttu-id="2e499-121">Intune</span><span class="sxs-lookup"><span data-stu-id="2e499-121">Intune</span></span> | <span data-ttu-id="2e499-122">DeviceManagementRBAC.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="2e499-122">DeviceManagementRBAC.ReadWrite.All</span></span> | <span data-ttu-id="2e499-123">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="2e499-123">Not supported.</span></span>| <span data-ttu-id="2e499-124">DeviceManagementRBAC.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="2e499-124">DeviceManagementRBAC.ReadWrite.All</span></span> |
+
+## <a name="http-request"></a><span data-ttu-id="2e499-125">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="2e499-125">HTTP request</span></span>
+
+<span data-ttu-id="2e499-126">Para atualizar um unfiedRoleAssignmentMultiple existente para um provedor de computadores na nuvem:</span><span class="sxs-lookup"><span data-stu-id="2e499-126">To update an existing unfiedRoleAssignmentMultiple for a cloud PC provider:</span></span>
+<!-- { "blockType": "ignored" } -->
+
+```http
+PATCH /roleManagement/cloudPC/roleAssignments
+```
+
+<span data-ttu-id="2e499-127">Para atualizar um unfiedRoleAssignmentMultiple existente para um provedor do Intune:</span><span class="sxs-lookup"><span data-stu-id="2e499-127">To update an existing unfiedRoleAssignmentMultiple for an Intune provider:</span></span>
 <!-- { "blockType": "ignored" } -->
 
 ```http
 PATCH /roleManagement/deviceManagement/roleAssignments
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="7e00b-120">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="7e00b-120">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="2e499-128">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="2e499-128">Request headers</span></span>
 
-| <span data-ttu-id="7e00b-121">Nome</span><span class="sxs-lookup"><span data-stu-id="7e00b-121">Name</span></span> | <span data-ttu-id="7e00b-122">Descrição</span><span class="sxs-lookup"><span data-stu-id="7e00b-122">Description</span></span> |
+| <span data-ttu-id="2e499-129">Nome</span><span class="sxs-lookup"><span data-stu-id="2e499-129">Name</span></span> | <span data-ttu-id="2e499-130">Descrição</span><span class="sxs-lookup"><span data-stu-id="2e499-130">Description</span></span> |
 |:---- |:----------- |
-| <span data-ttu-id="7e00b-123">Autorização</span><span class="sxs-lookup"><span data-stu-id="7e00b-123">Authorization</span></span> | <span data-ttu-id="7e00b-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="7e00b-p103">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="7e00b-126">Content-type</span><span class="sxs-lookup"><span data-stu-id="7e00b-126">Content-type</span></span> | <span data-ttu-id="7e00b-p104">application/json. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="7e00b-p104">application/json. Required.</span></span> |
+| <span data-ttu-id="2e499-131">Autorização</span><span class="sxs-lookup"><span data-stu-id="2e499-131">Authorization</span></span> | <span data-ttu-id="2e499-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="2e499-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="2e499-134">Content-type</span><span class="sxs-lookup"><span data-stu-id="2e499-134">Content-type</span></span> | <span data-ttu-id="2e499-p103">application/json. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="2e499-p103">application/json. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="7e00b-129">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="7e00b-129">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="2e499-137">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="2e499-137">Request body</span></span>
 
-<span data-ttu-id="7e00b-130">No corpo da solicitação, forneça os valores para os campos relevantes que devem ser atualizados.</span><span class="sxs-lookup"><span data-stu-id="7e00b-130">In the request body, supply the values for relevant fields that should be updated.</span></span> <span data-ttu-id="7e00b-131">Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade.</span><span class="sxs-lookup"><span data-stu-id="7e00b-131">Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values.</span></span> <span data-ttu-id="7e00b-132">Para alcançar o melhor desempenho, não inclua valores existentes que não foram alterados.</span><span class="sxs-lookup"><span data-stu-id="7e00b-132">For best performance, don't include existing values that haven't changed.</span></span>
+<span data-ttu-id="2e499-138">No corpo da solicitação, forneça os valores para os campos relevantes que devem ser atualizados.</span><span class="sxs-lookup"><span data-stu-id="2e499-138">In the request body, supply the values for relevant fields that should be updated.</span></span> <span data-ttu-id="2e499-139">Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade.</span><span class="sxs-lookup"><span data-stu-id="2e499-139">Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values.</span></span> <span data-ttu-id="2e499-140">Para alcançar o melhor desempenho, não inclua valores existentes que não foram alterados.</span><span class="sxs-lookup"><span data-stu-id="2e499-140">For best performance, don't include existing values that haven't changed.</span></span>
 
-## <a name="response"></a><span data-ttu-id="7e00b-133">Resposta</span><span class="sxs-lookup"><span data-stu-id="7e00b-133">Response</span></span>
+## <a name="response"></a><span data-ttu-id="2e499-141">Resposta</span><span class="sxs-lookup"><span data-stu-id="2e499-141">Response</span></span>
 
-<span data-ttu-id="7e00b-134">Se tiver êxito, este método retornará um código de resposta e um `200 OK` [objeto unifiedAssignmentMultiple](../resources/unifiedroleassignmentMultiple.md) atualizado no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="7e00b-134">If successful, this method returns a `200 OK` response code and an updated [unifiedAssignmentMultiple](../resources/unifiedroleassignmentMultiple.md) object in the response body.</span></span>
+<span data-ttu-id="2e499-142">Se tiver êxito, este método retornará um código de resposta e um `200 OK` [objeto unifiedAssignmentMultiple](../resources/unifiedroleassignmentMultiple.md) atualizado no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="2e499-142">If successful, this method returns a `200 OK` response code and an updated [unifiedAssignmentMultiple](../resources/unifiedroleassignmentMultiple.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="7e00b-135">Exemplo</span><span class="sxs-lookup"><span data-stu-id="7e00b-135">Example</span></span>
+## <a name="example"></a><span data-ttu-id="2e499-143">Exemplo</span><span class="sxs-lookup"><span data-stu-id="2e499-143">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="7e00b-136">Solicitação</span><span class="sxs-lookup"><span data-stu-id="7e00b-136">Request</span></span>
+### <a name="example-1-update-an-existing-unfiedroleassignmentmultiple-in-an-intune-provider"></a><span data-ttu-id="2e499-144">Exemplo 1: atualizar um unfiedRoleAssignmentMultiple existente em um provedor do Intune</span><span class="sxs-lookup"><span data-stu-id="2e499-144">Example 1: Update an existing unfiedRoleAssignmentMultiple in an Intune provider</span></span>
+### <a name="request"></a><span data-ttu-id="2e499-145">Solicitação</span><span class="sxs-lookup"><span data-stu-id="2e499-145">Request</span></span>
 
-<span data-ttu-id="7e00b-137">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="7e00b-137">The following is an example of the request.</span></span>
+<span data-ttu-id="2e499-146">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="2e499-146">The following is an example of the request.</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="7e00b-138">HTTP</span><span class="sxs-lookup"><span data-stu-id="7e00b-138">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="2e499-147">HTTP</span><span class="sxs-lookup"><span data-stu-id="2e499-147">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_unifiedroleassignmentmultiple_from_rbacapplication"
@@ -74,29 +90,62 @@ Content-type: application/json
     "principalIds": ["0aeec2c1-fee7-4e02-b534-6f920d25b300", "2d5386a7-732f-44db-9cf8-f82dd2a1c0e0"]
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="7e00b-139">C#</span><span class="sxs-lookup"><span data-stu-id="7e00b-139">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="2e499-148">C#</span><span class="sxs-lookup"><span data-stu-id="2e499-148">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-unifiedroleassignmentmultiple-from-rbacapplication-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="7e00b-140">JavaScript</span><span class="sxs-lookup"><span data-stu-id="7e00b-140">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="2e499-149">JavaScript</span><span class="sxs-lookup"><span data-stu-id="2e499-149">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-unifiedroleassignmentmultiple-from-rbacapplication-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="7e00b-141">Objective-C</span><span class="sxs-lookup"><span data-stu-id="7e00b-141">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="2e499-150">Objective-C</span><span class="sxs-lookup"><span data-stu-id="2e499-150">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-unifiedroleassignmentmultiple-from-rbacapplication-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="7e00b-142">Java</span><span class="sxs-lookup"><span data-stu-id="7e00b-142">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="2e499-151">Java</span><span class="sxs-lookup"><span data-stu-id="2e499-151">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-unifiedroleassignmentmultiple-from-rbacapplication-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="7e00b-143">Resposta</span><span class="sxs-lookup"><span data-stu-id="7e00b-143">Response</span></span>
+### <a name="response"></a><span data-ttu-id="2e499-152">Resposta</span><span class="sxs-lookup"><span data-stu-id="2e499-152">Response</span></span>
 
-<span data-ttu-id="7e00b-144">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="7e00b-144">The following is an example of the response.</span></span>
-> <span data-ttu-id="7e00b-145">**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.</span><span class="sxs-lookup"><span data-stu-id="7e00b-145">**Note:** The response object shown here might be shortened for readability.</span></span>
+<span data-ttu-id="2e499-153">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="2e499-153">The following is an example of the response.</span></span>
+> <span data-ttu-id="2e499-154">**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.</span><span class="sxs-lookup"><span data-stu-id="2e499-154">**Note:** The response object shown here might be shortened for readability.</span></span>
+
+<!-- {
+  "blockType": "response"
+} -->
+
+```http
+HTTP/1.1 204 OK
+
+```
+
+## <a name="example-2-update-an-existing-unfiedroleassignmentmultiple-in-a-cloud-pc-provider"></a><span data-ttu-id="2e499-155">Exemplo 2: atualizar um unfiedRoleAssignmentMultiple existente em um provedor de computadores na nuvem</span><span class="sxs-lookup"><span data-stu-id="2e499-155">Example 2: update an existing unfiedRoleAssignmentMultiple in a cloud PC provider</span></span>
+
+### <a name="request"></a><span data-ttu-id="2e499-156">Solicitação</span><span class="sxs-lookup"><span data-stu-id="2e499-156">Request</span></span>
+
+<!-- {
+  "blockType": "request",
+  "name": "update_unifiedroleassignmentmultiple_from_rbacapplication_cloudpc"
+}-->
+
+```http
+PATCH https://graph.microsoft.com/beta/roleManagement/cloudPC/roleAssignments/dbe9d288-fd87-41f4-b33d-b498ed207096
+Content-type: application/json
+
+{
+    "displayName": "NewName",
+    "description": "A new roleAssignment"
+}
+```
+
+
+### <a name="response"></a><span data-ttu-id="2e499-157">Resposta</span><span class="sxs-lookup"><span data-stu-id="2e499-157">Response</span></span>
+
+> <span data-ttu-id="2e499-p105">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="2e499-p105">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -105,10 +154,25 @@ Content-type: application/json
 } -->
 
 ```http
-HTTP/1.1 204 OK
+HTTP/1.1 200 OK
+Content-Type: application/json
 
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#roleManagement/cloudPC/roleAssignments/$entity",
+    "id": "dbe9d288-fd87-41f4-b33d-b498ed207096",
+    "description": "A new roleAssignment",
+    "displayName": "NewName",
+    "roleDefinitionId": "b5c08161-a7af-481c-ace2-a20a69a48fb1",
+    "principalIds": [
+        "0aeec2c1-fee7-4e02-b534-6f920d25b300",
+        "2d5386a7-732f-44db-9cf8-f82dd2a1c0e0"
+    ],
+    "directoryScopeIds": [
+        "/"
+    ],
+    "appScopeIds": []
+}
 ```
-
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
 <!-- {

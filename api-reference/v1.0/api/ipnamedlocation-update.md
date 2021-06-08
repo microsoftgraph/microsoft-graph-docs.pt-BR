@@ -5,30 +5,30 @@ localization_priority: Normal
 author: videor
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 6bd0c99094741b9d015ec5878afa819fe8794889
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: aaaacbda839d3296be0621b3294b85ddbe3c63b4
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52051351"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52786668"
 ---
-# <a name="update-ipnamedlocation"></a><span data-ttu-id="e621b-103">Atualizar ipNamedlocation</span><span class="sxs-lookup"><span data-stu-id="e621b-103">Update ipNamedlocation</span></span>
+# <a name="update-ipnamedlocation"></a><span data-ttu-id="a68a9-103">Atualizar ipNamedlocation</span><span class="sxs-lookup"><span data-stu-id="a68a9-103">Update ipNamedlocation</span></span>
 
-<span data-ttu-id="e621b-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="e621b-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="a68a9-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="a68a9-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="e621b-105">Atualize as propriedades de um [objeto ipNamedLocation.](../resources/ipNamedLocation.md)</span><span class="sxs-lookup"><span data-stu-id="e621b-105">Update the properties of an [ipNamedLocation](../resources/ipNamedLocation.md) object.</span></span>
+<span data-ttu-id="a68a9-105">Atualize as propriedades de um [objeto ipNamedLocation.](../resources/ipNamedLocation.md)</span><span class="sxs-lookup"><span data-stu-id="a68a9-105">Update the properties of an [ipNamedLocation](../resources/ipNamedLocation.md) object.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="e621b-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="e621b-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="a68a9-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="a68a9-106">Permissions</span></span>
 
-<span data-ttu-id="e621b-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="e621b-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="a68a9-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="a68a9-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="e621b-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="e621b-109">Permission type</span></span>                        | <span data-ttu-id="e621b-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="e621b-110">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="a68a9-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="a68a9-109">Permission type</span></span>                        | <span data-ttu-id="a68a9-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="a68a9-110">Permissions (from least to most privileged)</span></span> |
 |:---------------------------------------|:--------------------------------------------|
-| <span data-ttu-id="e621b-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="e621b-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="e621b-112">Policy.Read.All e Policy.ReadWrite.ConditionalAccess</span><span class="sxs-lookup"><span data-stu-id="e621b-112">Policy.Read.All and Policy.ReadWrite.ConditionalAccess</span></span> |
-| <span data-ttu-id="e621b-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="e621b-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="e621b-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="e621b-114">Not supported.</span></span> |
-| <span data-ttu-id="e621b-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="e621b-115">Application</span></span>                            | <span data-ttu-id="e621b-116">Policy.Read.All e Policy.ReadWrite.ConditionalAccess</span><span class="sxs-lookup"><span data-stu-id="e621b-116">Policy.Read.All and Policy.ReadWrite.ConditionalAccess</span></span> |
+| <span data-ttu-id="a68a9-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="a68a9-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="a68a9-112">Policy.Read.All e Policy.ReadWrite.ConditionalAccess</span><span class="sxs-lookup"><span data-stu-id="a68a9-112">Policy.Read.All and Policy.ReadWrite.ConditionalAccess</span></span> |
+| <span data-ttu-id="a68a9-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="a68a9-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="a68a9-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="a68a9-114">Not supported.</span></span> |
+| <span data-ttu-id="a68a9-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="a68a9-115">Application</span></span>                            | <span data-ttu-id="a68a9-116">Policy.Read.All e Policy.ReadWrite.ConditionalAccess</span><span class="sxs-lookup"><span data-stu-id="a68a9-116">Policy.Read.All and Policy.ReadWrite.ConditionalAccess</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="e621b-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="e621b-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="a68a9-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="a68a9-117">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -36,35 +36,35 @@ ms.locfileid: "52051351"
 PATCH /identity/conditionalAccess/namedLocations/{id}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="e621b-118">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="e621b-118">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="a68a9-118">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="a68a9-118">Request headers</span></span>
 
-| <span data-ttu-id="e621b-119">Nome</span><span class="sxs-lookup"><span data-stu-id="e621b-119">Name</span></span>       | <span data-ttu-id="e621b-120">Descrição</span><span class="sxs-lookup"><span data-stu-id="e621b-120">Description</span></span>|
+| <span data-ttu-id="a68a9-119">Nome</span><span class="sxs-lookup"><span data-stu-id="a68a9-119">Name</span></span>       | <span data-ttu-id="a68a9-120">Descrição</span><span class="sxs-lookup"><span data-stu-id="a68a9-120">Description</span></span>|
 |:-----------|:-----------|
-| <span data-ttu-id="e621b-121">Autorização</span><span class="sxs-lookup"><span data-stu-id="e621b-121">Authorization</span></span> | <span data-ttu-id="e621b-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="e621b-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="e621b-124">Content-type</span><span class="sxs-lookup"><span data-stu-id="e621b-124">Content-type</span></span> | <span data-ttu-id="e621b-p103">application/json. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="e621b-p103">application/json. Required.</span></span> |
+| <span data-ttu-id="a68a9-121">Autorização</span><span class="sxs-lookup"><span data-stu-id="a68a9-121">Authorization</span></span> | <span data-ttu-id="a68a9-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="a68a9-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="a68a9-124">Content-type</span><span class="sxs-lookup"><span data-stu-id="a68a9-124">Content-type</span></span> | <span data-ttu-id="a68a9-p103">application/json. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="a68a9-p103">application/json. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="e621b-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="e621b-127">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="a68a9-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="a68a9-127">Request body</span></span>
 
-<span data-ttu-id="e621b-128">No corpo da solicitação, forneça os valores para os campos relevantes que devem ser atualizados.</span><span class="sxs-lookup"><span data-stu-id="e621b-128">In the request body, supply the values for relevant fields that should be updated.</span></span> <span data-ttu-id="e621b-129">Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade.</span><span class="sxs-lookup"><span data-stu-id="e621b-129">Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values.</span></span> <span data-ttu-id="e621b-130">Para alcançar o melhor desempenho, não inclua valores existentes que não foram alterados.</span><span class="sxs-lookup"><span data-stu-id="e621b-130">For best performance, don't include existing values that haven't changed.</span></span>
+<span data-ttu-id="a68a9-128">No corpo da solicitação, forneça os valores para os campos relevantes que devem ser atualizados.</span><span class="sxs-lookup"><span data-stu-id="a68a9-128">In the request body, supply the values for relevant fields that should be updated.</span></span> <span data-ttu-id="a68a9-129">Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade.</span><span class="sxs-lookup"><span data-stu-id="a68a9-129">Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values.</span></span> <span data-ttu-id="a68a9-130">Para alcançar o melhor desempenho, não inclua valores existentes que não foram alterados.</span><span class="sxs-lookup"><span data-stu-id="a68a9-130">For best performance, don't include existing values that haven't changed.</span></span>
 
-| <span data-ttu-id="e621b-131">Propriedade</span><span class="sxs-lookup"><span data-stu-id="e621b-131">Property</span></span>     | <span data-ttu-id="e621b-132">Tipo</span><span class="sxs-lookup"><span data-stu-id="e621b-132">Type</span></span>        | <span data-ttu-id="e621b-133">Descrição</span><span class="sxs-lookup"><span data-stu-id="e621b-133">Description</span></span> |
+| <span data-ttu-id="a68a9-131">Propriedade</span><span class="sxs-lookup"><span data-stu-id="a68a9-131">Property</span></span>     | <span data-ttu-id="a68a9-132">Tipo</span><span class="sxs-lookup"><span data-stu-id="a68a9-132">Type</span></span>        | <span data-ttu-id="a68a9-133">Descrição</span><span class="sxs-lookup"><span data-stu-id="a68a9-133">Description</span></span> |
 |:-------------|:------------|:------------|
-|<span data-ttu-id="e621b-134">displayName</span><span class="sxs-lookup"><span data-stu-id="e621b-134">displayName</span></span>|<span data-ttu-id="e621b-135">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="e621b-135">String</span></span>|<span data-ttu-id="e621b-136">Nome acessível para humanos do local.</span><span class="sxs-lookup"><span data-stu-id="e621b-136">Human-readable name of the location.</span></span>|
-|<span data-ttu-id="e621b-137">ipRanges</span><span class="sxs-lookup"><span data-stu-id="e621b-137">ipRanges</span></span>|<span data-ttu-id="e621b-138">Coleção [ipRange](../resources/iprange.md)</span><span class="sxs-lookup"><span data-stu-id="e621b-138">[ipRange](../resources/iprange.md) collection</span></span>|<span data-ttu-id="e621b-139">Lista de intervalos de endereços IP no formato CIDR IPv4 (1.2.3.4/32) ou qualquer formato IPv6 aceitável do IETF RFC5962.</span><span class="sxs-lookup"><span data-stu-id="e621b-139">List of IP address ranges in IPv4 CIDR format (1.2.3.4/32) or any allowable IPv6 format from IETF RFC5962.</span></span>|
-|<span data-ttu-id="e621b-140">isTrusted</span><span class="sxs-lookup"><span data-stu-id="e621b-140">isTrusted</span></span>|<span data-ttu-id="e621b-141">Boolean</span><span class="sxs-lookup"><span data-stu-id="e621b-141">Boolean</span></span>|<span data-ttu-id="e621b-142">O valor é `true` se esse local for explicitamente confiável.</span><span class="sxs-lookup"><span data-stu-id="e621b-142">The value is `true` if this location is explicitly trusted.</span></span>|
+|<span data-ttu-id="a68a9-134">displayName</span><span class="sxs-lookup"><span data-stu-id="a68a9-134">displayName</span></span>|<span data-ttu-id="a68a9-135">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="a68a9-135">String</span></span>|<span data-ttu-id="a68a9-136">Nome acessível para humanos do local.</span><span class="sxs-lookup"><span data-stu-id="a68a9-136">Human-readable name of the location.</span></span>|
+|<span data-ttu-id="a68a9-137">ipRanges</span><span class="sxs-lookup"><span data-stu-id="a68a9-137">ipRanges</span></span>|<span data-ttu-id="a68a9-138">Coleção [ipRange](../resources/iprange.md)</span><span class="sxs-lookup"><span data-stu-id="a68a9-138">[ipRange](../resources/iprange.md) collection</span></span>|<span data-ttu-id="a68a9-139">Lista de intervalos de endereços IP no formato CIDR IPv4 (1.2.3.4/32) ou qualquer formato IPv6 aceitável do IETF RFC5962.</span><span class="sxs-lookup"><span data-stu-id="a68a9-139">List of IP address ranges in IPv4 CIDR format (1.2.3.4/32) or any allowable IPv6 format from IETF RFC5962.</span></span>|
+|<span data-ttu-id="a68a9-140">isTrusted</span><span class="sxs-lookup"><span data-stu-id="a68a9-140">isTrusted</span></span>|<span data-ttu-id="a68a9-141">Boolean</span><span class="sxs-lookup"><span data-stu-id="a68a9-141">Boolean</span></span>|<span data-ttu-id="a68a9-142">O valor é `true` se esse local for explicitamente confiável.</span><span class="sxs-lookup"><span data-stu-id="a68a9-142">The value is `true` if this location is explicitly trusted.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="e621b-143">Resposta</span><span class="sxs-lookup"><span data-stu-id="e621b-143">Response</span></span>
+## <a name="response"></a><span data-ttu-id="a68a9-143">Resposta</span><span class="sxs-lookup"><span data-stu-id="a68a9-143">Response</span></span>
 
-<span data-ttu-id="e621b-p105">Se bem-sucedido, este método retorna um código de resposta `204 No Content`. Não retorna nada no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="e621b-p105">If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="a68a9-p105">Se bem-sucedido, este método retorna um código de resposta `204 No Content`. Não retorna nada no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="a68a9-p105">If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="e621b-146">Exemplos</span><span class="sxs-lookup"><span data-stu-id="e621b-146">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="a68a9-146">Exemplos</span><span class="sxs-lookup"><span data-stu-id="a68a9-146">Examples</span></span>
 
-### <a name="request"></a><span data-ttu-id="e621b-147">Solicitação</span><span class="sxs-lookup"><span data-stu-id="e621b-147">Request</span></span>
+### <a name="request"></a><span data-ttu-id="a68a9-147">Solicitação</span><span class="sxs-lookup"><span data-stu-id="a68a9-147">Request</span></span>
 
-<span data-ttu-id="e621b-148">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="e621b-148">The following is an example of the request.</span></span>
+<span data-ttu-id="a68a9-148">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="a68a9-148">The following is an example of the request.</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="e621b-149">HTTP</span><span class="sxs-lookup"><span data-stu-id="e621b-149">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="a68a9-149">HTTP</span><span class="sxs-lookup"><span data-stu-id="a68a9-149">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_ipnamedlocation"
@@ -87,35 +87,33 @@ Content-type: application/json
     ]
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="e621b-150">C#</span><span class="sxs-lookup"><span data-stu-id="e621b-150">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="a68a9-150">C#</span><span class="sxs-lookup"><span data-stu-id="a68a9-150">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-ipnamedlocation-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="e621b-151">JavaScript</span><span class="sxs-lookup"><span data-stu-id="e621b-151">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="a68a9-151">JavaScript</span><span class="sxs-lookup"><span data-stu-id="a68a9-151">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-ipnamedlocation-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="e621b-152">Objective-C</span><span class="sxs-lookup"><span data-stu-id="e621b-152">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="a68a9-152">Objective-C</span><span class="sxs-lookup"><span data-stu-id="a68a9-152">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-ipnamedlocation-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="e621b-153">Java</span><span class="sxs-lookup"><span data-stu-id="e621b-153">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="a68a9-153">Java</span><span class="sxs-lookup"><span data-stu-id="a68a9-153">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-ipnamedlocation-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="e621b-154">Resposta</span><span class="sxs-lookup"><span data-stu-id="e621b-154">Response</span></span>
+### <a name="response"></a><span data-ttu-id="a68a9-154">Resposta</span><span class="sxs-lookup"><span data-stu-id="a68a9-154">Response</span></span>
 
-<span data-ttu-id="e621b-155">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="e621b-155">The following is an example of the response.</span></span>
+<span data-ttu-id="a68a9-155">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="a68a9-155">The following is an example of the response.</span></span>
 
-> <span data-ttu-id="e621b-156">**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.</span><span class="sxs-lookup"><span data-stu-id="e621b-156">**Note:** The response object shown here might be shortened for readability.</span></span>
+> <span data-ttu-id="a68a9-156">**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.</span><span class="sxs-lookup"><span data-stu-id="a68a9-156">**Note:** The response object shown here might be shortened for readability.</span></span>
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.ipNamedLocation"
+  "blockType": "response"
 } -->
 
 ```http
