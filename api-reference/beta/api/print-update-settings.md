@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 232296196ccdee3124d79e0347dde20f5f8aeee8
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: 000e8513bd4c1bfff047d50dad1fd8d1dc7fa4fa
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49873574"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52787602"
 ---
 # <a name="update-printsettings"></a>Atualizar printSettings
 
@@ -20,10 +20,10 @@ Namespace: microsoft.graph
 
 Atualize as configurações de todo o locatário para o serviço de Impressão Universal.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-Para usar o serviço de Impressão Universal, o usuário ou locatário do aplicativo deve ter uma assinatura de Impressão Universal ativa, além das permissões listadas na tabela a seguir. O usuário assinado deve ser um Administrador [de Impressora.](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator)
+Para usar o serviço Impressão Universal, o usuário ou locatário do aplicativo deve ter uma assinatura de Impressão Universal ativa, além das permissões listadas na tabela a seguir. O usuário inscreveu deve ser um [Administrador de Impressora.](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator)
 
 |Tipo de permissão | Permissões (da com menos para a com mais privilégios) |
 |:---------------|:--------------------------------------------|
@@ -44,11 +44,11 @@ PATCH /print/settings
 | Content-type  | application/json. Obrigatório.|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, fornece os valores para os campos [printSettings relevantes](../resources/printsettings.md) que devem ser atualizados. Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade. Para alcançar o melhor desempenho, não inclua valores existentes que não foram alterados.
+No corpo da solicitação, fornece os valores dos campos [printSettings relevantes](../resources/printsettings.md) que devem ser atualizados. Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade. Para alcançar o melhor desempenho, não inclua valores existentes que não foram alterados.
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|documentConversionEnabled|Booliano|Especifica se a conversão de documento está habilitada para o locatário. Se a conversão de documento estiver habilitada, o Serviço de Impressão Universal converterá automaticamente os documentos em um formato compatível com a impressora (por exemplo, XPS em PDF) quando necessário.|
+|documentConversionEnabled|Booliano|Especifica se a conversão de documento está habilitada para o locatário. Se a conversão de documento estiver habilitada, o serviço de Impressão Universal converterá automaticamente documentos em um formato compatível com a impressora (por exemplo, XPS em PDF) quando necessário.|
 
 ## <a name="response"></a>Resposta
 Se bem-sucedido, esse método retornará um código de resposta `204 No Content` e um corpo de resposta vazio.
@@ -91,9 +91,7 @@ Content-type: application/json
 ##### <a name="response"></a>Resposta
 Este é um exemplo de resposta. 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.printSettings"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 204 NoContent

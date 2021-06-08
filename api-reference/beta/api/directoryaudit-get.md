@@ -5,12 +5,12 @@ localization_priority: Normal
 author: SarahBar
 ms.prod: identity-and-access-reports
 doc_type: apiPageType
-ms.openlocfilehash: 8542daa3ad66c37d3f46702d19542ba3fc9bcefa
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: d603045143ae379f55ed56dd1cd69be74946b1ed
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50130954"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52787042"
 ---
 # <a name="get-directoryaudit"></a>Obter directoryAudit
 
@@ -18,9 +18,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obter um item de log de auditoria específico do Azure Active Directory. Isso inclui um item de log de auditoria gerado por vários serviços no Azure Active Directory, como usuário, aplicativo, gerenciamento de dispositivos e grupos, PIM (privileged identity management), revisões de acesso, termos de uso, proteção de identidade, gerenciamento de senhas (redefinições de senha de autoatendado e administrador), gerenciamento de grupos de autoatendados e assim por diante.
+Obter um item Azure Active Directory log de auditoria específico. Isso inclui um item de log de auditoria gerado por vários serviços no Azure Active Directory, como gerenciamento de usuário, aplicativo, dispositivo e grupo, pim (gerenciamento de identidade privilegiada), análises de acesso, termos de uso, proteção de identidade, gerenciamento de senha (redefinições de senha de autoatendados e administrador), gerenciamento de grupo de autoatendados e assim por diante.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -41,7 +41,7 @@ GET /auditLogs/directoryAudits/{id}
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Este método dá suporte a Parâmetros de consulta do OData para ajudar a personalizar a resposta. Para obter detalhes sobre como usar esses parâmetros, consulte [parâmetros de consulta OData.](/graph/query_parameters)
+Este método dá suporte a Parâmetros de consulta do OData para ajudar a personalizar a resposta. Para obter detalhes sobre como usar esses parâmetros, consulte [Parâmetros de consulta OData](/graph/query_parameters).
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -55,7 +55,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um código de resposta e um `200 OK` [objeto directoryAudit](../resources/directoryaudit.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e um `200 OK` [objeto directoryAudit](../resources/directoryaudit.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -104,8 +104,7 @@ Veja a seguir um exemplo da resposta.
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 218
-```
-```json
+
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#auditLogs/directoryAudits",
   "value": [{

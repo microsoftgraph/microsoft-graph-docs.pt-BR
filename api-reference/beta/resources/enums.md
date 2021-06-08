@@ -5,12 +5,12 @@ doc_type: enumPageType
 localization_priority: Normal
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
-ms.openlocfilehash: 81eee8c04af0016c04ec1cca76f3f996bf41d50a
-ms.sourcegitcommit: 3f40fbb953b14c1f52341786569c678adfc5bd3e
+ms.openlocfilehash: 2b44da1d94f23d3155b1eafa94c49310fc2a2569
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52781048"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52787566"
 ---
 # <a name="enum-values"></a>Valores denum
 
@@ -92,7 +92,7 @@ Namespace: microsoft.graph
 
 |Member|
 |:---|
-|Nenhum|
+|Nenhuma|
 |AttributeNames|
 |AttributeDataTypes|
 |AttributeReadOnly|
@@ -397,7 +397,7 @@ Namespace: microsoft.graph
 |all|
 |privilegedAdmin|
 |admin|
-|user|
+|usuário|
 |unknownFutureValue|
 
 ### <a name="includedusertypes-values"></a>valores includedUserTypes 
@@ -413,7 +413,7 @@ Namespace: microsoft.graph
 
 |Member|
 |:---|
-|user|
+|usuário|
 |aplicativo|
 |sistema|
 |unknownFutureValue|
@@ -706,7 +706,7 @@ Namespace: microsoft.graph
 
 |Member|
 |:---|
-|user|
+|usuário|
 |group|
 
 ### <a name="authenticationmethodstate-values"></a>authenticationMethodState values
@@ -900,6 +900,15 @@ Namespace: microsoft.graph
 |sunny|
 |unknownFutureValue|
 
+### <a name="timecardstate-values"></a>valores timeCardState
+
+|Member|
+|:---|
+|clockedIn|
+|onBreak|
+|clockedOut|
+|unknownFutureValue|
+
 ### <a name="schedulechangestate-values"></a>valores scheduleChangeState
 
 | Member
@@ -928,14 +937,29 @@ Namespace: microsoft.graph
 
 ### <a name="workforceintegrationsupportedentities-values"></a>workforceIntegrationSupportedEntities values
 
+|Member|
+|:---|
+|nenhuma|
+|shift|
+|swapRequest|
+|userShiftPreferences|
+|openShift|
+|openShiftRequest|
+|offerShiftRequest|
+|unknownFutureValue|
+|timeCard|
+|timeOffReason|
+|timeOff|
+|timeOffRequest|
+
+### <a name="confirmedby-values"></a>confirmedBy values
+
 | Member
-|:----------------------------
-|nenhuma
-|shift
-|swapRequest
-|openShift
-|openShiftRequest
-|userShiftPreferences
+|:-----------------
+| nenhuma|
+| usuário|
+| manager|
+| unknownFutureValue|
 
 ### <a name="timezonestandard-values"></a>valores timeZoneStandard
 
@@ -1750,7 +1774,7 @@ Valores possíveis para tipos de conta de usuário (associação ao grupo), por 
 |Member|
 |:---|
 |signin|
-|user|
+|usuário|
 |unknownFutureValue|
 
 ### <a name="chatmessagepolicyviolationuseractiontype-values"></a>valores chatMessagePolicyViolationUserActionType
@@ -1957,7 +1981,7 @@ Valores possíveis para tipos de conta de usuário (associação ao grupo), por 
 | Membro        | Valor | Descrição              |
 |:--------------|:------|:-------------------------|
 | indefinido     | 0     | Ainda não sabemos.            |
-| user          | 1     | Envio do usuário.         |
+| usuário          | 1     | Envio do usuário.         |
 | administrator | 2     | Envio de administrador de locatário. |
 
 ### <a name="threatassessmentresulttype-values"></a>valores threatAssessmentResultType
@@ -2048,7 +2072,7 @@ Valores possíveis para tipos de conta de usuário (associação ao grupo), por 
 |dateTime | coluna dateTime. |
 |lookup | coluna de lookup. |
 |booliano | Coluna Sim/Não. |
-|user | coluna de pessoa ou grupo. |
+|usuário | coluna de pessoa ou grupo. |
 |url | hyperlink ou coluna de imagem. |
 |calculado | coluna calculada. |
 |localização | coluna de local. |
@@ -2078,7 +2102,7 @@ Valores possíveis para tipos de conta de usuário (associação ao grupo), por 
 
 |Member|
 |:---|
-|user|
+|usuário|
 |group|
 
 ### <a name="identityuserflowattributedatatype-values"></a>identityUserFlowAttributeDataType values
@@ -2196,7 +2220,7 @@ Valores possíveis para tipos de conta de usuário (associação ao grupo), por 
 
 |Membro    |Valor    |Descrição |
 |:---------|:--------|:----------- |
-|equipe      |0        |Indica que o aplicativo Teams pode ser instalado em uma equipe e está autorizado a acessar os dados dessa equipe.|
+|team      |0        |Indica que o aplicativo Teams pode ser instalado em uma equipe e está autorizado a acessar os dados dessa equipe.|
 |groupChat |1        |Indica que o aplicativo Teams pode ser instalado em um chat de grupo e está autorizado a acessar os dados desse chat de grupo.|
 |pessoal  |2        |Indica que o aplicativo Teams pode ser instalado no escopo pessoal de um usuário e está autorizado a acessar os dados desse usuário.|
 

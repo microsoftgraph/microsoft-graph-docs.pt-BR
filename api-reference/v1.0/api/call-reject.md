@@ -1,26 +1,26 @@
 ---
-title: 'Call: rejeitar'
+title: 'call: reject'
 description: Habilitar um bot para rejeitar uma chamada de entrada.
 author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: bc6c91368d262972918654ea860cb8f03844c359
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 1355a826ab3bfaeea3392e20a6e40c71a279ca58
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48073366"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52787489"
 ---
-# <a name="call-reject"></a>Call: rejeitar
+# <a name="call-reject"></a>call: reject
 
 Namespace: microsoft.graph
 
-Habilitar um bot para rejeitar uma chamada de entrada. A solicitação de chamada de entrada pode ser um convite de um participante em uma chamada de grupo ou uma chamada ponto a ponto. Se for recebido um convite para uma chamada de grupo, a notificação conterá os parâmetros **chatInfo** e **meetingInfo** .
+Habilitar um bot para rejeitar uma chamada de entrada. A solicitação de chamada de entrada pode ser um convite de um participante em uma chamada de grupo ou uma chamada ponto a ponto. Se um convite para uma chamada de grupo for recebido, a notificação conterá os parâmetros **chatInfo** e **meetingInfo.**
 
-O bot deve responder ou rejeitar a chamada antes do tempo limite da chamada. O valor de tempo limite atual é de 15 segundos.
+Espera-se que o bot atenda ou rejeite a chamada antes do tempo de chamada. O valor de tempo decoro atual é 15 segundos.
 
-Esta API não termina chamadas existentes que já foram respondidas. Use [delete Call](../api/call-delete.md) para encerrar uma chamada.
+Essa API não termina chamadas existentes que já foram atendidas. Use [excluir chamada para](../api/call-delete.md) encerrar uma chamada.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 | :-------------- | :--------------------------------------------------------- |
 | Delegado (conta corporativa ou de estudante)     | Não suportado                       |
 | Delegado (conta pessoal da Microsoft) | Não suportado                       |
-| Aplicativo     | Nenhum                                                       |
+| Aplicativo     | Nenhuma                                                       |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -48,8 +48,8 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro      | Tipo    |Descrição|
 |:---------------|:--------|:----------|
-|motivo|Cadeia de caracteres|O motivo da rejeição. Os valores possíveis `None` são `Busy` e `Forbidden` |
-|callbackUri|String|Isso permite que os bots forneçam um URI de retorno de chamada específico para que a chamada atual receba notificações posteriores. Se essa propriedade não tiver sido definida, o URI de retorno de chamada global do bot será usado em seu lugar. Deve ser `https` .|
+|motivo|Cadeia de caracteres|O motivo da rejeição. Os valores possíveis `None` são e `Busy``Forbidden` |
+|callbackUri|String|Isso permite que os bots forneçam um URI de retorno de chamada específico para que a chamada atual receba notificações posteriores. Se essa propriedade não tiver sido definida, o URI de retorno de chamada global do bot será usado em vez disso. Isso deve ser `https` .|
 
 ## <a name="response"></a>Resposta
 Se bem-sucedido, este método retorna um código de resposta `202 Accepted`. Não retorna nada no corpo da resposta.
@@ -57,7 +57,7 @@ Se bem-sucedido, este método retorna um código de resposta `202 Accepted`. Nã
 ## <a name="examples"></a>Exemplos
 Os exemplos a seguir mostram como chamar essa API.
 
-### <a name="example-1-reject-an-incoming-call-with-busy-reason"></a>Exemplo 1: rejeitar uma chamada de entrada com o motivo "ocupado"
+### <a name="example-1-reject-an-incoming-call-with-busy-reason"></a>Exemplo 1: rejeitar uma chamada de entrada com motivo "Ocupado"
 #### <a name="request"></a>Solicitação
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -97,16 +97,15 @@ Content-Length: 24
 
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.None"
+  "truncated": true
 } -->
 ```http
 HTTP/1.1 202 Accepted
 ```
 
-### <a name="example-2-reject-an-incoming-call-with-none-reason"></a>Exemplo 2: rejeitar uma chamada de entrada com o motivo ' nenhum '
+### <a name="example-2-reject-an-incoming-call-with-none-reason"></a>Exemplo 2: rejeitar uma chamada de entrada com motivo 'Nenhum'
 
-##### <a name="notification---incoming"></a>Notificação-entrada
+##### <a name="notification---incoming"></a>Notificação - entrada
 
 ```http
 POST https://bot.contoso.com/api/call
@@ -197,14 +196,13 @@ Content-Length: 24
 ##### <a name="response"></a>Resposta
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.None"
+  "truncated": true
 } -->
 ```http
 HTTP/1.1 202 Accepted
 ```
 
-##### <a name="notification---deleted"></a>Notificação-excluído
+##### <a name="notification---deleted"></a>Notificação - excluída
 
 ```http
 POST https://bot.contoso.com/api/calls

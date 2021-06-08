@@ -5,12 +5,12 @@ author: adimitui
 localization_priority: Normal
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: a4376961ea843c5c512d5bdf59449a7e765399f0
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 50e5a418a40d9c5bedee1a007b491d15a06f3931
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50441974"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52787811"
 ---
 # <a name="force-domain-deletion"></a>Forçar a exclusão de domínio
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 Exclui um domínio usando uma operação de longa execução assíncrona.
 
-Antes de chamar [forceDelete,](domain-forcedelete.md)você deve atualizar ou remover quaisquer referências ao **Exchange** como o serviço de provisionamento.
+Antes de chamar [forceDelete](domain-forcedelete.md), você deve atualizar ou remover quaisquer referências **Exchange** como o serviço de provisionamento.
 
 As seguintes ações são executadas como parte desta operação:
 
@@ -116,8 +116,7 @@ Content-length: 33
 
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.None"
+  "truncated": true
 } -->
 
 ```http

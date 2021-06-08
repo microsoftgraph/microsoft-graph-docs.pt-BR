@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: 28e8fdd96bcbdc5b9542d42d8a24d8f5cf4e4da3
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 210c098f5e8e5b536879eb0f00c07470d9e22a20
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50433856"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52787671"
 ---
 # <a name="update-permissiongrantpolicy"></a>Atualizar permissionGrantPolicy
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 Atualizar propriedades de  [uma permissionGrantPolicy](../resources/permissiongrantpolicy.md).
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -100,10 +100,7 @@ Content-Type: application/json
 ### <a name="response"></a>Resposta
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.permissionGrantPolicy",
-  "isCollection": false
+  "blockType": "response"
 } -->
 
 ```http

@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: d666f9834e5377e5145b2fe0feea801842cb8f5f
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 535feee59c1f3992d9d78eea1380b50bd841987c
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52048971"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52787349"
 ---
 # <a name="replace-timeoff"></a>Substituir timeOff
 
@@ -22,7 +22,7 @@ Substitua um [timeOff existente.](../resources/timeoff.md)
 
 Se o [timeOff](../resources/timeoff.md) especificado não existir, este método retornará `404 Not found` .
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -30,7 +30,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | Group.Read.All, Group.ReadWrite.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Application | Schedule.ReadWrite.All*  |
+|Aplicativo | Schedule.ReadWrite.All*  |
 
 >\***Importante:** As permissões de aplicativo estão atualmente apenas em visualização privada e não estão disponíveis para uso público.
 
@@ -61,7 +61,7 @@ Se tiver êxito, este método retornará um código `200 OK` de resposta e um ob
 
 ## <a name="example"></a>Exemplo
 
-#### <a name="request"></a>Solicitação
+### <a name="request"></a>Solicitação
 
 Este é um exemplo de solicitação.
 
@@ -110,7 +110,7 @@ Prefer: return=representation
 ---
 
 
-#### <a name="response"></a>Resposta
+### <a name="response"></a>Resposta
 
 Este é um exemplo de resposta. 
 

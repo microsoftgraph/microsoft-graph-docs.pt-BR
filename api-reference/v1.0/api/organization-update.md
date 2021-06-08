@@ -5,12 +5,12 @@ localization_priority: Normal
 author: adimitui
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 4179ee12cd0941f1976a2c5136a47e55a8504f4c
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 6e848342b2a14d836f2fc9c0df68db2f44e0531b
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50448118"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52787447"
 ---
 # <a name="update-organization"></a>Atualize a organização
 
@@ -109,9 +109,7 @@ Content-length: 411
 ### <a name="response"></a>Resposta
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.organization"
+  "blockType": "response"
 } -->
 
 ```http

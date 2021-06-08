@@ -1,22 +1,22 @@
 ---
 title: Excluir timeOff
-description: Excluir uma instância do timeOff de um agendamento.
+description: Exclua uma instância timeOff de um agendamento.
 author: akumar39
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: e01eaecc95638c3fbda9d21466a7868ae75b7a56
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 4a10dbde99b62cebf99f82c9ac67743943f83a63
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47978283"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52787713"
 ---
 # <a name="delete-timeoff"></a>Excluir timeOff
 
 Namespace: microsoft.graph
 
-Excluir uma instância do [timeOff](../resources/timeoff.md) de um [agendamento](../resources/schedule.md).
+[Exclua uma instância timeOff](../resources/timeoff.md) de um [agendamento](../resources/schedule.md).
 
 ## <a name="permissions"></a>Permissões
 
@@ -24,11 +24,11 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Schedule. ReadWrite. All, Group. ReadWrite. All    |
+|Delegado (conta corporativa ou de estudante) | Schedule.ReadWrite.All, Group.ReadWrite.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Schedule.ReadWrite.All |
 
-> **Observação**: esta API oferece transporte a permissões de administrador. Os administradores globais podem acessar grupos dos quais eles não são membros.
+> **Observação**: esta API oferece transporte a permissões de administrador. Os administradores globais podem acessar grupos dos que não são membros.
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -94,8 +94,7 @@ Este é um exemplo de resposta.
 
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.None"
+  "truncated": true
 } -->
 
 ```http

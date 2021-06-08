@@ -5,12 +5,12 @@ localization_priority: Normal
 author: jecha
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: be9585253f695c9fae9dddf123ad2490d9765da5
-ms.sourcegitcommit: 32c83957ee69f21a10cd5f759adb884ce4b41c52
+ms.openlocfilehash: 6317cac369ad8d7bb29ed83c7e2c5ce9a0ca5f5f
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51921688"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52788000"
 ---
 # <a name="get-teamworkhostedcontent"></a>Obter o trabalho em equipeHostedContent
 
@@ -27,8 +27,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ### <a name="permissions-for-app-icon-in-app-catalog"></a>Permissões para ícone de aplicativo no catálogo de aplicativos
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)                      |
 | :------------------------------------- | :--------------------------------------------------------------- |
-| Delegada (conta corporativa ou de estudante)     | AppCatalog.Read.All, AppCatalog.ReadWrite.All, AppCatalog.Submit |
-| Delegada (conta pessoal da Microsoft) | Sem suporte.                                                   |
+| Delegado (conta corporativa ou de estudante)     | AppCatalog.Read.All, AppCatalog.ReadWrite.All, AppCatalog.Submit |
+| Delegado (conta pessoal da Microsoft) | Sem suporte.                                                   |
 | Aplicativo                            | Sem suporte.                                                   |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -63,7 +63,7 @@ Se tiver êxito, este método retornará um código de resposta e um `200 OK` ob
 
 ## <a name="examples"></a>Exemplos
 
-### <a name="example-1-get-the-bytes-of-the-hosted-content-of-the-color-icon-of-a-teams-app-in-the-catalog"></a>Exemplo 1: Obter os bytes do conteúdo hospedado do ícone de cor de um aplicativo do Teams no catálogo
+### <a name="example-1-get-the-bytes-of-the-hosted-content-of-the-color-icon-of-a-teams-app-in-the-catalog"></a>Exemplo 1: Obter os bytes do conteúdo hospedado do ícone de cor de um Teams no catálogo
 
 #### <a name="request"></a>Solicitação
 
@@ -120,7 +120,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-get-the-bytes-of-the-hosted-content-of-the-outline-icon-of-a-teams-app-in-the-catalog"></a>Exemplo 2: Obter os bytes do conteúdo hospedado do ícone de contorno de um aplicativo do Teams no catálogo
+### <a name="example-2-get-the-bytes-of-the-hosted-content-of-the-outline-icon-of-a-teams-app-in-the-catalog"></a>Exemplo 2: Obter os bytes do conteúdo hospedado do ícone de Teams de um aplicativo de Teams no catálogo
 
 #### <a name="request"></a>Solicitação
 
@@ -161,9 +161,7 @@ GET https://graph.microsoft.com/beta/appCatalogs/teamsApps/5a31d4f7-a11d-4052-96
 A resposta contém bytes para o conteúdo hospedado no corpo. `content-type` o header especifica o tipo de conteúdo hospedado.
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.teamworkHostedContent"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -172,5 +170,5 @@ Content-type: image/png
 
 ## <a name="see-also"></a>Confira também
 
-- [Obter ícones de um aplicativo do Teams](teamsappicon-get.md)
+- [Obter ícones de um Teams aplicativo](teamsappicon-get.md)
 - [Listar aplicativos no catálogo](appcatalogs-list-teamsapps.md)

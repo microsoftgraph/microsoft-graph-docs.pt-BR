@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: governance
 author: shauliu
-ms.openlocfilehash: 1fad0311a688a2093e216a8b8d53405260d1fa19
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 624302e735eebf3fbbdf477636176a5e7f414bfe
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50435928"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52786984"
 ---
 # <a name="cancel-governanceroleassignmentrequest"></a>Cancelar governançaRoleAssignmentRequest
 
@@ -20,12 +20,12 @@ Namespace: microsoft.graph
 
 Cancele [um governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md).
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference#privileged-access-permissions).
 
 ### <a name="azure-resources"></a>Recursos do Azure
 
-| Tipo de permissão | Permissões |
+| Tipo de permissão | Permissions |
 |:-------------- |:----------- |
 | Delegada (conta corporativa ou de estudante) | PrivilegedAccess.ReadWrite.AzureResources |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
@@ -33,7 +33,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 ### <a name="azure-ad"></a>Azure Active Directory
 
-| Tipo de permissão | Permissões |
+| Tipo de permissão | Permissions |
 |:--------------- |:----------- |
 | Delegada (conta corporativa ou de estudante) | PrivilegedAccess.ReadWrite.AzureAD |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
@@ -41,7 +41,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 ### <a name="groups"></a>Grupos
 
-|Tipo de permissão | Permissões |
+|Tipo de permissão | Permissions |
 |:-------------- |:----------- |
 | Delegada (conta corporativa ou de estudante) | PrivilegedAccess.ReadWrite.AzureADGroups |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
@@ -110,8 +110,7 @@ POST https://graph.microsoft.com/beta/privilegedAccess/azureResources/roleAssign
 ### <a name="response"></a>Resposta
 <!-- {
   "blockType": "response",
-  "truncated": false,
-  "@odata.type": "microsoft.graph.None"
+  "truncated": false
 } -->
 ```http
 HTTP/1.1 204 No Content

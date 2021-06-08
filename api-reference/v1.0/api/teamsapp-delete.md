@@ -1,16 +1,16 @@
 ---
 title: Excluir teamsApp
-description: 'Exclua um aplicativo do Teams do catálogo de aplicativos de uma organização (o catálogo de aplicativos de locatário). '
+description: 'Exclua Teams aplicativo do catálogo de aplicativos de uma organização (o catálogo de aplicativos de locatário). '
 localization_priority: Normal
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: bbaf69d70a73626a550356e0ca235d693be7f3a6
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: 9952dabb38b1f9849b5df3b3fff3fafdf029c971
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50471660"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52787727"
 ---
 # <a name="delete-teamsapp"></a>Excluir teamsApp
 
@@ -103,9 +103,7 @@ DELETE https://graph.microsoft.com/v1.0/appCatalogs/teamsApps/06805b9e-77e3-4b93
 ### <a name="response"></a>Resposta
 
 <!-- {
-  "blockType": "response",
-  "@odata.type": "microsoft.graph.teamsApp",
-  "truncated": true
+  "blockType": "response"
 } -->
 
 ```http

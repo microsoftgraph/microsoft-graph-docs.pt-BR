@@ -5,12 +5,12 @@ localization_priority: Normal
 author: Jumaodhiss
 doc_type: apiPageType
 ms.prod: change-notifications
-ms.openlocfilehash: fe4c987c86aaf9c63b7133e323b2d1ed6977da99
-ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
+ms.openlocfilehash: 4cc38673566bdff9114e0f94e0a8e27c3d9ad2eb
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51469476"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52787573"
 ---
 # <a name="delete-subscription"></a>Excluir assinatura
 
@@ -92,7 +92,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta `204 No Content`.
+Se bem-sucedido, este método retorna um código de resposta `204 No Content`.
 
 Para detalhes sobre como os erros são retornados, confira [Respostas de erro][error-response].
 
@@ -134,9 +134,7 @@ DELETE https://graph.microsoft.com/beta/subscriptions/7f105c7d-2dc5-4530-97cd-4e
 
 Veja a seguir um exemplo da resposta.
 <!-- {
-  "blockType": "response",
-  "truncated": false,
-  "@odata.type": "microsoft.graph.subscription"
+  "blockType": "response"
 } -->
 
 ```http

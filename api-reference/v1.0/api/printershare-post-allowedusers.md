@@ -5,12 +5,12 @@ author: nilakhan
 localization_priority: Normal
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: 9a3d198c225633ebeecf7de8d5c069e49c014eeb
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: 2b7672d18f0af66b23489b5fb0282258d12241c8
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50771425"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52787776"
 ---
 # <a name="create-alloweduser-for-printershare"></a>Criar allowedUser para printerShare
 Namespace: microsoft.graph
@@ -19,14 +19,14 @@ Namespace: microsoft.graph
 
 Conceda ao usuário especificado acesso para enviar trabalhos de impressão para a [impressora associadaShare](../resources/printershare.md).
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 Para usar o serviço Impressão Universal, o usuário ou locatário do aplicativo deve ter uma assinatura de Impressão Universal ativa, além das permissões listadas na tabela a seguir. O usuário inscreveu deve ser um [Administrador de Impressora.](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator)
 
 |Tipo de permissão | Permissões (da com menos para a com mais privilégios) |
 |:---------------|:--------------------------------------------|
-|Delegada (conta corporativa ou de estudante)| PrinterShare.ReadWrite.All |
+|Delegado (conta corporativa ou de estudante)| PrinterShare.ReadWrite.All |
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|Sem suporte.|
 
@@ -95,8 +95,7 @@ Content-length: 46
 ### <a name="response"></a>Resposta
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.user"
+  "truncated": true
 }
 -->
 ```http

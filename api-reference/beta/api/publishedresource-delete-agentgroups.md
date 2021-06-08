@@ -5,12 +5,12 @@ localization_priority: Normal
 author: japere
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 6c852ae5f49ddc928e83c08d91be7c4d1be86265
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 4c93aeab74a8ef4191bd66354144e6746a5b5abf
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50433839"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52787580"
 ---
 # <a name="remove-publishedresource-from-an-onpremisesagentgroup"></a>Remover publishedResource de um onPremisesAgentGroup
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 Remova um [objeto publishedResource](../resources/publishedresource.md) de um [objeto onPremisesAgentGroup.](../resources/onpremisesagentgroup.md)
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -91,9 +91,7 @@ DELETE https://graph.microsoft.com/beta/onPremisesPublishingProfiles/provisionin
 Este é um exemplo de resposta.
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.onPremisesAgentGroup"
+  "blockType": "response"
 } -->
 
 ```http

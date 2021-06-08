@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: ArvindHarinder1
 ms.prod: applications
-ms.openlocfilehash: 216da34bb6900d246f990529c88bc398cc1cdcc7
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: 1851af949207a00d3fd3429723397597bd51dce5
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50775069"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52787174"
 ---
 # <a name="restart-synchronizationjob"></a>Reiniciar sincronizaçãoJob
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 Reinicie o trabalho de sincronização, forçando-o a reprocessar todos os objetos no diretório. Opcionalmente, limpa o estado de sincronização existente e os erros anteriores.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)              |
@@ -97,9 +97,7 @@ Content-type: application/json
 Veja a seguir um exemplo de uma resposta.
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.None"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 204 No Content

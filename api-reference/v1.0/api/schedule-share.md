@@ -1,24 +1,24 @@
 ---
-title: 'agendamento: share'
-description: Compartilhar um intervalo de tempo de agendamento com membros de agendamento.
+title: 'schedule: share'
+description: Compartilhe um intervalo de tempo de agendamento com membros de agendamento.
 author: akumar39
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 7b41323a124b12055ed21339b53a39caf54e402d
-ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
+ms.openlocfilehash: ddb77b5acacfacb66e397044771c3068ffff9daf
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48313188"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52787138"
 ---
-# <a name="schedule-share"></a>agendamento: share
+# <a name="schedule-share"></a>schedule: share
 
 Namespace: microsoft.graph
 
-Compartilhar um intervalo de tempo de [agendamento](../resources/schedule.md) com membros de agendamento.
-Faça as coleções de itens [Shift](../resources/shift.md), [openshift](../resources/openshift.md) e [timeOff](../resources/timeoff.md) no intervalo de tempo especificado da [agenda](../resources/schedule.md) exibida pelos membros da equipe especificados, incluindo funcionários e gerentes.
-Cada [mudança](../resources/shift.md), [openshift](../resources/openshift.md) e [timeOff](../resources/timeoff.md) instância em um [cronograma](../resources/schedule.md) suporta uma versão de rascunho e uma versão compartilhada do item. A versão de rascunho é visível apenas por gerentes e a versão compartilhada é visível por funcionários e gerentes. Para cada [mudança](../resources/shift.md), [openshift](../resources/openshift.md) e [timeOff](../resources/timeoff.md) instância no intervalo de tempo especificado, a ação de compartilhamento atualiza a versão compartilhada da versão de rascunho, para que, além dos gerentes, os funcionários também possam exibir as informações mais recentes sobre o item. O parâmetro **notifyTeam** especifica ainda mais quais funcionários podem exibir o item.
+Compartilhe um [intervalo de](../resources/schedule.md) tempo de agendamento com membros de agendamento.
+Tornar as coleções de itens [shift](../resources/shift.md), [openshift](../resources/openshift.md) e [](../resources/schedule.md) [timeOff](../resources/timeoff.md) no intervalo de tempo especificado do cronograma visualizado pelos membros da equipe especificados, incluindo funcionários e gerentes.
+Cada [turno](../resources/shift.md), [instância openshift](../resources/openshift.md) [](../resources/schedule.md) [e timeOff](../resources/timeoff.md) em uma agenda suporta uma versão de rascunho e uma versão compartilhada do item. A versão de rascunho pode ser visualizada somente por gerentes, e a versão compartilhada pode ser visualizada por funcionários e gerentes. Para cada [turno](../resources/shift.md), [instância openshift](../resources/openshift.md) e [timeOff](../resources/timeoff.md) no intervalo de tempo especificado, a ação de compartilhamento atualiza a versão compartilhada da versão de rascunho, para que, além dos gerentes, os funcionários também possam exibir as informações mais atuais sobre o item. O **parâmetro notifyTeam** especifica ainda quais funcionários podem exibir o item.
 
 ## <a name="permissions"></a>Permissões
 
@@ -26,8 +26,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | Schedule. ReadWrite. All, Group. ReadWrite. All    |
-|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegado (conta corporativa ou de estudante) | Schedule.ReadWrite.All, Group.ReadWrite.All    |
+|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Schedule.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -51,9 +51,9 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 |Parâmetro                   |Tipo           |Descrição  |
 |-----------------------|-------------------|--------------|
-| notifyTeam            |`Boolean`             |Indica se a equipe inteira deve receber uma notificação visível desta ação ou apenas os funcionários que têm uma alteração atribuída a elas que foram compartilhadas. Obrigatório.       |
-| startDateTime         |`DateTimeOffset`   |O horário de início para compartilhar as mudanças no cronograma. Obrigatório.   |
-| endDateTime           |`DateTimeOffset`   | O horário de término para compartilhar turnos no cronograma até.   |
+| notifyTeam            |`Boolean`             |Indica se toda a equipe deve receber uma notificação visível dessa ação ou apenas os funcionários que têm um turno atribuído a eles que foi compartilhado. Obrigatório.       |
+| startDateTime         |`DateTimeOffset`   |A hora de início para compartilhar turnos no agendamento de. Obrigatório.   |
+| endDateTime           |`DateTimeOffset`   | A hora de término para compartilhar turnos na agenda até.   |
 
 ## <a name="response"></a>Resposta
 
@@ -109,8 +109,7 @@ Este é um exemplo de resposta.
 
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.None"
+  "truncated": true
 } -->
 
 ```http

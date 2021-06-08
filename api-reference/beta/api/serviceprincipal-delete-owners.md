@@ -5,12 +5,12 @@ author: sureshja
 localization_priority: Normal
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 922977f8b8d43d88b2ae0ef455f23bc582608ce5
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: e5963c09e4dd56f2b7e1bde1bdbb821f44f45a65
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52051946"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52787216"
 ---
 # <a name="remove-owner"></a>Remover proprietário
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 Remova um proprietário de um [objeto servicePrincipal.](../resources/serviceprincipal.md)
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
@@ -95,9 +95,7 @@ Este é um exemplo de resposta.
 >**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.directoryObject"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 204 No Content

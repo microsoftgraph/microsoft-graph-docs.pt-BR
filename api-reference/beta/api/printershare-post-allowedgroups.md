@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 57f844b98da47f5063ee3aaee7534b5e242ad5d0
-ms.sourcegitcommit: 412507a3c3a8e407fcc43b7cd227d4db35791f58
+ms.openlocfilehash: 1b6e11b1f4a650755d696e5bc346f4cf369324bb
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51765990"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52787524"
 ---
 # <a name="create-allowedgroup-for-printershare"></a>Criar allowedGroup para printerShare
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 Conceda ao grupo especificado acesso para enviar trabalhos de impressão para a [impressora associadaShare](../resources/printershare.md).
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 Para usar o serviço Impressão Universal, o usuário ou locatário do aplicativo deve ter uma assinatura de Impressão Universal ativa, além das permissões listadas na tabela a seguir. O usuário inscreveu deve ser um [Administrador de Impressora.](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator)
@@ -86,14 +86,12 @@ Content-length: 67
 ---
 
 
-No corpo da solicitação, fornece uma referência a uma entidade de grupo incluindo o URI do Microsoft Graph do grupo no campo `@odata.id` do corpo JSON.
+No corpo da solicitação, fornece uma referência a uma entidade de grupo incluindo o URI microsoft Graph do grupo no campo `@odata.id` do corpo JSON.
 
 ### <a name="response"></a>Resposta
 Este é um exemplo de resposta. 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.None"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 204 No Content

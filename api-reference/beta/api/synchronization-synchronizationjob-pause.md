@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: ArvindHarinder1
 ms.prod: applications
-ms.openlocfilehash: 868184491c13e67b9bcd773f0a82383a5310d67b
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: 50ed06389378a2ec83aa32e54a238f809ab133de
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50776232"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52787188"
 ---
 # <a name="synchronizationjob-pause"></a>synchronizationJob: pause
 
@@ -84,9 +84,7 @@ POST https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/job
 ##### <a name="response"></a>Resposta
 Veja a seguir um exemplo de uma resposta.
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.None"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 204 No Content

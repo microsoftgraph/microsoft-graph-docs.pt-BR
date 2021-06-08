@@ -5,12 +5,12 @@ author: anandjo
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: f8e20e52f103a0ee921d67e8f2987c19a94fef12
-ms.sourcegitcommit: 92f545d2d9af13ac7aff9932eb265f136d089f79
+ms.openlocfilehash: 18e752c01df3f1b8eafffdf75085e470a2bc70b6
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/25/2021
-ms.locfileid: "51996112"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52787755"
 ---
 # <a name="create-team"></a>Criar equipe
 
@@ -103,8 +103,7 @@ Content-Type: application/json
 ##### <a name="response"></a>Resposta
 <!-- {
   "blockType": "response",
-  "name": "create_team_post",
-  "@odata.type": "microsoft.graph.team"
+  "name": "create_team_post"
 }-->
 ```http
 HTTP/1.1 202 Accepted
@@ -171,8 +170,7 @@ Content-Type: application/json
 #### <a name="response"></a>Resposta
 <!-- {
   "blockType": "response",
-  "name": "create_team_post_minimal",
-  "@odata.type": "microsoft.graph.team"
+  "name": "create_team_post_minimal"
 }-->
 ```http
 HTTP/1.1 202 Accepted
@@ -290,8 +288,7 @@ Content-Type: application/json
 #### <a name="response"></a>Resposta
 <!-- {
   "blockType": "response",
-  "name": "create_team_post_full_payload",
-  "@odata.type": "microsoft.graph.team"
+  "name": "create_team_post_full_payload"
 }-->
 ```http
 HTTP/1.1 202 Accepted
@@ -352,8 +349,7 @@ Content-Type: application/json
 #### <a name="response"></a>Resposta
 <!-- {
   "blockType": "response",
-  "name": "create_team_from_group",
-  "@odata.type": "microsoft.graph.team"
+  "name": "create_team_from_group"
 }-->
 ```http
 HTTP/1.1 202 Accepted
@@ -436,8 +432,7 @@ Content-Type: application/json
 #### <a name="response"></a>Resposta
 <!-- {
   "blockType": "response",
-  "name": "convert_team_from_group",
-  "@odata.type": "microsoft.graph.team"
+  "name": "convert_team_from_group"
 }-->
 ```http
 HTTP/1.1 202 Accepted
@@ -449,7 +444,7 @@ Content-Length: 0
 
 ### <a name="example-6-create-a-team-with-a-non-standard-base-template-type"></a>Exemplo 6: Criar uma equipe com um tipo de modelo de base não padrão
 
-Os tipos de modelos base são modelos especiais criados pela Microsoft para setores específicos. Estes modelos base geralmente contêm aplicativos proprietários que não estão disponíveis nas lojas, e propriedade de equipe que ainda não tem suporte individual nos modelos do Microsoft Teams.
+Os tipos de modelo base são modelos especiais criados pela Microsoft para setores específicos. Esses modelos base geralmente contêm aplicativos proprietários que não estão disponíveis na loja e propriedades de equipe que ainda não têm suporte individual nos modelos do Microsoft Teams.
 
 Para criar uma equipe a partir de um modelo base não padrão, você vai precisar alterar a propriedade `template@odata.bind` no corpo da solicitação de `standard` para indicar o que você deseja criar para o modelo base padrão.
 
@@ -499,8 +494,7 @@ Content-Type: application/json
 #### <a name="response"></a>Resposta
 <!-- {
   "blockType": "response",
-  "name": "convert_team_from_non_standard",
-  "@odata.type": "microsoft.graph.team"
+  "name": "convert_team_from_non_standard"
 }-->
 ```http
 HTTP/1.1 202 Accepted
@@ -584,8 +578,7 @@ Content-Type: application/json
 #### <a name="response"></a>Resposta
 <!-- {
   "blockType": "response",
-  "name": "convert_team_from_non_standard2",
-  "@odata.type": "microsoft.graph.team"
+  "name": "convert_team_from_non_standard2"
 }-->
 ```http
 HTTP/1.1 202 Accepted

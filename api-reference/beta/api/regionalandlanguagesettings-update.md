@@ -5,12 +5,12 @@ author: jasonbro
 localization_priority: Normal
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 82f33ae2b4165586ccb4a3d55873e1e6ff6c1765
-ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
+ms.openlocfilehash: fb1621d05daa04a3387d728dfdfbea073cf56704
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50516616"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52787503"
 ---
 # <a name="update-regionalandlanguagesettings"></a>Atualizar regionalAndLanguageSettings
 
@@ -20,12 +20,12 @@ Namespace: microsoft.graph
 
 Atualize algumas ou todas as propriedades de um [objeto regionalAndLanguageSettings.](../resources/regionalAndLanguageSettings.md)
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão                   |Permissão (do mínimo para o mais privilegiado)     |
 |----------------------------------|---------------------------------------------- |
-|Delegada (conta corporativa ou de estudante)|User.ReadWrite, User.ReadWrite.All             |
+|Delegado (conta corporativa ou de estudante)|User.ReadWrite, User.ReadWrite.All             |
 |Delegada (conta pessoal)      |User.ReadWrite, User.ReadWrite.All             |
 |Aplicativo                       |User.ReadWrite, User.ReadWrite.All             |
 
@@ -142,8 +142,6 @@ Content-type: application/json
 Este é um exemplo de resposta.
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.regionalAndLanguageSettings",
   "name": "put_regionalAndLanguageSettings"
 } -->
 ```http
@@ -203,8 +201,6 @@ Content-type: application/json
 Este é um exemplo de resposta.
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.regionalAndLanguageSettings",
   "name": "patch_regionalAndLanguageSettings"
 } -->
 ```http

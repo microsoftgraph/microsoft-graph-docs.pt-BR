@@ -5,12 +5,12 @@ localization_priority: Normal
 author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: fef9b795e0cf1b3fd162afc4599ad4c245b828e9
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: 56e42bbde7df9ea08405616eaab1342ac654e8eb
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50722346"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52787718"
 ---
 # <a name="user-exportpersonaldata"></a>user: exportPersonalData
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 Envie uma solicitação de operação de política de dados de um administrador da empresa ou de um aplicativo para exportar dados de um usuário organizacional.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
@@ -45,14 +45,14 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro    | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|storageLocation|Cadeia de caracteres|Esta é uma URL de assinatura de acesso compartilhado (SAS) para uma conta de Armazenamento do Azure, para onde os dados devem ser exportados.|
+|storageLocation|Cadeia de caracteres|Esta é uma URL de assinatura de acesso compartilhado (SAS) para uma conta Armazenamento do Azure, para onde os dados devem ser exportados.|
 
 ## <a name="response"></a>Resposta
 Se bem-sucedido, este método retorna um código de resposta `202 Accepted`. Não retorna nada no corpo da resposta. A resposta contém os seguintes headers de resposta.
 
 | Nome       | Descrição|
 |:---------------|:----------|
-| Location  | URL para verificar o status da solicitação. |
+| Localização  | URL para verificar o status da solicitação. |
 | Retry-After  | Período de tempo em segundos. O fazedor de solicitações deve aguardar tanto tempo depois de enviar uma solicitação para verificar o status. |
 
 ## <a name="example"></a>Exemplo
@@ -100,8 +100,7 @@ Content-length: 48
 ```
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.none"
+  "truncated": true
 } -->
 ```http
 HTTP/1.1 202 Accepted

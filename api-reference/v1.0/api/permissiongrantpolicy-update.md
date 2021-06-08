@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: 223fffce4f607004897360c2653dc8327c166255
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 6e40a6361ec5f72c936f4b8151e001308e48be2b
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50448071"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52787152"
 ---
 # <a name="update-permissiongrantpolicy"></a>Atualizar permissionGrantPolicy
 
@@ -98,10 +98,7 @@ Content-Type: application/json
 ### <a name="response"></a>Resposta
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.permissionGrantPolicy",
-  "isCollection": false
+  "blockType": "response"
 } -->
 
 ```http

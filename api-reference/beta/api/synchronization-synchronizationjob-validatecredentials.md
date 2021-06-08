@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: ArvindHarinder1
 ms.prod: applications
-ms.openlocfilehash: ce507c989ee842040787c77f772d6188d9444a03
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: 650cbc18aeb0dc28ef732c4065aa67d19f1a710f
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50773554"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52787166"
 ---
 # <a name="synchronizationjob-validatecredentials"></a>synchronizationJob: validateCredentials
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 Valide se as credenciais são válidas no locatário.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)              |
@@ -95,9 +95,7 @@ Content-length: 218
 ##### <a name="response"></a>Resposta
 Este é um exemplo de resposta. 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.None"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 204 No Content

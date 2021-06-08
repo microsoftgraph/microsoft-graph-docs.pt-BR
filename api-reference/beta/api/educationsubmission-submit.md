@@ -5,12 +5,12 @@ author: dipakboyed
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: b6a7752ed51052adc1cf1420ec566c0ec2fbafac
-ms.sourcegitcommit: cec76c5a58b359d79df764c849c8b459349b3b52
+ms.openlocfilehash: 2f33bea764c76ccc3a320bd610249cedf372071f
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "52645399"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52787279"
 ---
 # <a name="educationsubmission-submit"></a>educationSubmission: submit
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 Uma ação que indica que um aluno é feito com o trabalho e está pronto para entregar a atribuição. Essa ação só pode ser tomada pelo aluno. Isso alterará o status do envio de "working" para "submitted". Durante o processo de envio, todos os recursos serão copiados para o **bucket submittedResources.** O professor estará olhando para a lista de recursos enviados para classificação.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
@@ -82,9 +82,7 @@ POST https://graph.microsoft.com/beta/education/classes/11021/assignments/19002/
 Este é um exemplo de resposta.
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.educationAssignment"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 204 No Content

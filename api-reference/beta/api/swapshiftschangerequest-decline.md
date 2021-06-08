@@ -1,26 +1,26 @@
 ---
-title: 'swapShiftsChangeRequest: recusar'
-description: Recusar uma solicitação Shift de troca.
+title: 'swapShiftsChangeRequest: decline'
+description: Recusar uma solicitação de turno de troca.
 localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 4e3e2e0a64b06c7316e45269bfb92d2525feb10c
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 0e94566fa87b9cd86bad56660db979650294ce49
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48976796"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52787187"
 ---
-# <a name="swapshiftschangerequest-decline"></a>swapShiftsChangeRequest: recusar
+# <a name="swapshiftschangerequest-decline"></a>swapShiftsChangeRequest: decline
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recusar um objeto [swapShiftsChangeRequest](../resources/swapshiftschangerequest.md) .
+Recusar um [objeto swapShiftsChangeRequest.](../resources/swapshiftschangerequest.md)
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -102,9 +102,7 @@ Content-type: application/json
 
 Este é um exemplo de resposta.
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.None"
+  "blockType": "response"
 } -->
 
 ```http

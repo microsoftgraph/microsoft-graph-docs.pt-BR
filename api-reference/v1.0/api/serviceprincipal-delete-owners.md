@@ -5,12 +5,12 @@ author: sureshja
 localization_priority: Normal
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 8efe9fe28aa094959d1160b968cffc38b66bca60
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: db723a3dc0cfd3890e87690a6b1c232c594c7aa8
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52053836"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52787130"
 ---
 # <a name="remove-owner"></a>Remover proprietário
 
@@ -93,9 +93,7 @@ Este é um exemplo de resposta.
 >**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.directoryObject"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 204 No Content

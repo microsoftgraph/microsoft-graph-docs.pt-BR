@@ -1,22 +1,22 @@
 ---
-title: 'timeOffRequest: recusar'
+title: 'timeOffRequest: decline'
 description: Recusar um objeto timeoffrequest.
 localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: cfae18e2c399badcda41e3e7266ebb4f8c2cc9e8
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 7f9e5f6151e30dbbfcfc74db51a9a8e2afacab1c
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48044078"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52787419"
 ---
-# <a name="timeoffrequest-decline"></a>timeOffRequest: recusar
+# <a name="timeoffrequest-decline"></a>timeOffRequest: decline
 
 Namespace: microsoft.graph
 
-Recusar um objeto [timeoffrequest](../resources/timeoffrequest.md) .
+Recusar um [objeto timeoffrequest.](../resources/timeoffrequest.md)
 
 ## <a name="permissions"></a>Permissões
 
@@ -24,11 +24,11 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Schedule. ReadWrite. All, Group. ReadWrite. All    |
+|Delegado (conta corporativa ou de estudante) | Schedule.ReadWrite.All, Group.ReadWrite.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Schedule.ReadWrite.All |
 
-> **Observação**: esta API oferece transporte a permissões de administrador. Os administradores globais podem acessar grupos dos quais eles não são membros.
+> **Observação**: esta API oferece transporte a permissões de administrador. Os administradores globais podem acessar grupos dos que não são membros.
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -43,7 +43,7 @@ POST /teams/{teamId}/schedule/timeOffRequests/{timeOffRequestId}/decline
 | Nome          | Descrição   |
 |:--------------|:--------------|
 | Autorização | {token} de portador. Obrigatório. |
-| Content-type | Application-JSON. Obrigatório.|
+| Content-type | application-json. Obrigatório.|
 
 ## <a name="request-body"></a>Corpo da solicitação
 
@@ -104,8 +104,7 @@ Content-type: application/json
 Este é um exemplo de resposta.
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.None"
+  "truncated": true
 } -->
 
 ```http

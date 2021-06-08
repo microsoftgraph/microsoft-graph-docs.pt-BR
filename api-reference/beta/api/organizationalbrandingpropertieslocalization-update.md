@@ -5,12 +5,12 @@ localization_priority: Normal
 author: AlexanderMars
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: c9c23e2ac73c35ad5d173dfbf524f30f6260d8e9
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: 00a046682750583a1fae027762be212cfc0561e6
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52679950"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52787622"
 ---
 # <a name="update-localized-organizationalbrandingproperties"></a>Atualizar organizacionais de marca organizacional localizadas
 
@@ -18,7 +18,7 @@ ms.locfileid: "52679950"
 
 Atualize as propriedades do [objeto organizationalBrandingProperties](../resources/organizationalbrandingproperties.md) para uma localização específica.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -110,9 +110,7 @@ Content-Type: image/jpeg
 Este é um exemplo de resposta.
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.organizationalBrandingProperties"
+  "blockType": "response"
 } -->
 
 ```http
@@ -165,9 +163,7 @@ Content-Type: application/json
 Este é um exemplo de resposta.
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.organizationalBrandingProperties"
+  "blockType": "response"
 } -->
 
 ```http
@@ -203,9 +199,7 @@ Content-Type: application/json
 Este é um exemplo de resposta.
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.organizationalBrandingProperties"
+  "blockType": "response"
 } -->
 
 ```http
@@ -262,9 +256,7 @@ Content-Type: application/json
 Este é um exemplo de resposta.
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.organizationalBrandingProperties"
+  "blockType": "response"
 } -->
 
 ```http

@@ -1,26 +1,26 @@
 ---
-title: 'timeOffRequest: recusar'
+title: 'timeOffRequest: decline'
 description: Recusar um objeto timeoffrequest.
 localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 9fb4432cc9cf05689ec26a6b8ebe8b0447f33ca6
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 0f745bea1f16680861c92fa8b4a5c18025c425da
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48981348"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52787314"
 ---
-# <a name="timeoffrequest-decline"></a>timeOffRequest: recusar
+# <a name="timeoffrequest-decline"></a>timeOffRequest: decline
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recusar um objeto [timeoffrequest](../resources/timeoffrequest.md) .
+Recusar um [objeto timeoffrequest.](../resources/timeoffrequest.md)
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -28,9 +28,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---------------------------------------|:--------------------------------------------|
 | Delegado (conta corporativa ou de estudante)     | Group.ReadWrite.All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
-|Application | Schedule. ReadWrite. All *  |
+|Aplicativo | Schedule.ReadWrite.All*  |
 
->\***Importante:** As permissões de aplicativo estão atualmente em visualização privada apenas e não estão disponíveis para uso público.
+>\***Importante:** As permissões de aplicativo estão atualmente apenas em visualização privada e não estão disponíveis para uso público.
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -45,7 +45,7 @@ POST /teams/{teamId}/schedule/timeOffRequests/{timeOffRequestId}/decline
 | Nome          | Descrição   |
 |:--------------|:--------------|
 | Autorização | {token} de portador. Obrigatório. |
-| Content-type | Application-JSON. Obrigatório.|
+| Content-type | application-json. Obrigatório.|
 
 ## <a name="request-body"></a>Corpo da solicitação
 
@@ -104,9 +104,7 @@ Content-type: application/json
 
 Este é um exemplo de resposta.
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.None"
+  "blockType": "response"
 } -->
 
 ```http

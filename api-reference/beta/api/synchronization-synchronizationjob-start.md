@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: ArvindHarinder1
 ms.prod: applications
-ms.openlocfilehash: fc70f816dfc1e564d27fe5c9be60580eded415e6
-ms.sourcegitcommit: cde4a3386b08a67cb476df6d46b51885c643d94f
+ms.openlocfilehash: 510722b4571abec22bfda27aee117033391268b8
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "50626248"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52787173"
 ---
 # <a name="start-synchronizationjob"></a>Iniciar sincronizaçãoJob
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 Inicie um trabalho de sincronização existente. Se o trabalho estiver em um estado pausado, ele continuará processamento de alterações do ponto em que foi pausado. Se o trabalho estiver em quarentena, o status de quarentena será limpo. Não crie scripts para chamar o trabalho inicial continuamente enquanto ele estiver em execução porque isso pode fazer com que o serviço pare de ser executado. Use o trabalho inicial somente quando o trabalho estiver pausado ou em quarentena. 
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)              |
@@ -84,9 +84,7 @@ POST https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/job
 ##### <a name="response"></a>Resposta
 Veja a seguir um exemplo de uma resposta.
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.None"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 204 No Content

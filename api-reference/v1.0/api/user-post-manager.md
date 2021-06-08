@@ -5,12 +5,12 @@ localization_priority: Normal
 author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 34ffe0a968ef500214d7f987d3a76c7fe4616cf7
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: 87b52e6e9568aa272505fc10c40e607c9844adff
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50721415"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52787088"
 ---
 # <a name="assign-manager"></a>Atribuir gerente
 
@@ -20,7 +20,7 @@ Atribuir um gerenciador de usuário.
 > [!NOTE]
 > Não é possível atribuir relatórios diretos; em vez disso, use essa API.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
@@ -87,9 +87,7 @@ Content-length: xxx
 Este é um exemplo de resposta.
 >**Observação**: o objeto de resposta mostrado aqui pode ser encurtado com fins de legibilidade. 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.directoryObject"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 204 No Content

@@ -5,12 +5,12 @@ author: abheek-das
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 59a4b195528ad65b7322fc3eb962295914aa0bb6
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: a1922b04dfff792c91b7a1f8121c5038197e8e69
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52052401"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52787293"
 ---
 # <a name="add-attachment"></a>Adicionar anexo
 
@@ -99,11 +99,9 @@ Content-length: 142
 No corpo da solicitação, forneça uma representação JSON do objeto [attachment](../resources/attachment.md).
 
 ##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto de resposta exibido aqui pode ser encurtado para legibilidade.
+Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser reduzido para facilitar a leitura.
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.attachment"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 201 Created
@@ -153,9 +151,7 @@ Content-length: 100
 ##### <a name="response"></a>Resposta
 Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.attachment"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 201 Created

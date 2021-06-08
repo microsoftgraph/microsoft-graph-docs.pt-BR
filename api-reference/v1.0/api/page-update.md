@@ -1,29 +1,29 @@
 ---
 title: Atualizar página
-description: Atualizar o conteúdo de uma página do OneNote.
+description: Atualize o conteúdo de uma OneNote página.
 localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: 03875c85fd9c751ad15c8d3b252a190e86d873ef
-ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
+ms.openlocfilehash: 846461d1415d3748059a0c93fe5dc0866dccdc4e
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48460737"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52788056"
 ---
 # <a name="update-page"></a>Atualizar página
 
 Namespace: microsoft.graph
 
-Atualizar o conteúdo de uma página do OneNote.
-## <a name="permissions"></a>Permissions
+Atualize o conteúdo de uma OneNote página.
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | Notes. ReadWrite, Notes. ReadWrite. All    |
-|Delegada (conta Microsoft pessoal) | Notes.ReadWrite    |
+|Delegado (conta corporativa ou de estudante) | Notes.ReadWrite, Notes.ReadWrite.All    |
+|Delegado (conta pessoal da Microsoft) | Notes.ReadWrite    |
 |Aplicativo | Notes.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -41,11 +41,11 @@ PATCH /sites/{id}/onenote/pages/{id}/content
 | Content-Type | string | `application/json` |
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça uma matriz de objetos [patchContentCommand](../resources/patchcontentcommand.md) que representam as alterações na página. Para obter mais informações e exemplos, consulte <a href="/graph/onenote-update-page">Atualizar páginas do OneNote</a>.
+No corpo da solicitação, fornece uma matriz de [objetos patchContentCommand](../resources/patchcontentcommand.md) que representam as alterações na página. Para obter mais informações e exemplos, consulte <a href="/graph/onenote-update-page">Update OneNote pages</a>.
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um código de resposta `204 No Content`.  Nenhum dado JSON é retornado para uma solicitação PATCH.
+Se tiver êxito, este método retornará um código de resposta `204 No Content`.  Nenhum dado JSON é retornado para uma solicitação PATCH.
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
@@ -95,9 +95,7 @@ Content-length: 312
 ##### <a name="response"></a>Resposta
 Veja a seguir um exemplo da resposta. 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.onenotePage"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 204 No Content

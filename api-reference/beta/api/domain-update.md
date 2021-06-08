@@ -5,12 +5,12 @@ author: adimitui
 localization_priority: Normal
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 4a4b026aa4bcf9875e615a71ce38b60c76b51e2d
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 820e99abbfd0c7d2de0ba71728bcf4d2d06195c7
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50436467"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52787025"
 ---
 # <a name="update-domain"></a>Atualizar domínio
 
@@ -22,7 +22,7 @@ Atualize as propriedades do objeto domain.
 
 > **Importante:** Somente domínios verificados podem ser atualizados.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -99,9 +99,7 @@ Content-type: application/json
 ##### <a name="response"></a>Resposta
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.domain"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 204 No Content

@@ -1,24 +1,24 @@
 ---
 title: Excluir timeOffReason
-description: Marque uma timeOffReason como inativa definindo a propriedade IsActive.
+description: Marque um timeOffReason como inativo definindo a propriedade isActive.
 author: akumar39
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: e23f4e9255bc1ff50e901cd366e50540be0dbe57
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 4a53a677187373105e6a6b1cd3b884c6aa5e928e
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47978221"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52787426"
 ---
 # <a name="delete-timeoffreason"></a>Excluir timeOffReason
 
 Namespace: microsoft.graph
 
-Marque uma [timeOffReason](../resources/timeoffreason.md) como inativa definindo a propriedade **IsActive** . Cada equipe deve incluir pelo menos um motivo de timeoff.
+Marque um [timeOffReason](../resources/timeoffreason.md) como inativo definindo a **propriedade isActive.** Cada equipe deve incluir pelo menos um motivo de tempo limite.
 
-Este método não remove a instância especificada do [timeOffReason](../resources/timeoffreason.md) . as instâncias do [timeOffItem](../resources/timeoffitem.md) que foram atribuídas essa razão permanecem atribuídas a esse motivo.
+Este método não remove a instância [timeOffReason](../resources/timeoffreason.md) especificada. [As instâncias timeOffItem](../resources/timeoffitem.md) que foram atribuídas a esse motivo permanecem atribuídas a esse motivo.
 
 ## <a name="permissions"></a>Permissões
 
@@ -26,11 +26,11 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Schedule. ReadWrite. All, Group. ReadWrite. All    |
+|Delegado (conta corporativa ou de estudante) | Schedule.ReadWrite.All, Group.ReadWrite.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Schedule.ReadWrite.All |
 
-> **Observação**: esta API oferece transporte a permissões de administrador. Os administradores globais podem acessar grupos dos quais eles não são membros.
+> **Observação**: esta API oferece transporte a permissões de administrador. Os administradores globais podem acessar grupos dos que não são membros.
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -95,8 +95,7 @@ Este é um exemplo de resposta.
 
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.None"
+  "truncated": true
 } -->
 
 ```http

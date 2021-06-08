@@ -5,12 +5,12 @@ author: jpettere
 localization_priority: Normal
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: a1272d3c3340308be5ebdf68d6542b77f073ac4c
-ms.sourcegitcommit: 34891a1c601976166958be1aa04bab5936592b44
+ms.openlocfilehash: 44d38281189872da3aad4382f899600c040bcbdd
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52232085"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52787060"
 ---
 # <a name="update-user"></a>Atualizar usuário
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Atualizar as propriedades de um objeto [user](../resources/user.md). Nem todas as propriedades podem ser atualizadas por usuários Membros ou Convidados com suas permissões padrão sem Funções de administrador. [Compare as permissões padrão de membros e convidados](/azure/active-directory/fundamentals/users-default-permissions#compare-member-and-guest-default-permissions) para ver as propriedades que eles podem gerenciar.
+Atualizar as propriedades de um objeto [usuário](../resources/user.md). Nem todas as propriedades podem ser atualizadas por usuários Membros ou Convidados com suas permissões padrão sem Funções de administrador. [Compare as permissões padrão de membros e convidados](/azure/active-directory/fundamentals/users-default-permissions#compare-member-and-guest-default-permissions) para ver as propriedades que eles podem gerenciar.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -65,14 +65,14 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 |department|String|O nome do departamento no qual o usuário trabalha.|
 |displayName|String|O nome exibido para o usuário no catálogo de endereços. É geralmente a combinação do nome, da inicial do meio e do sobrenome do usuário. Essa propriedade é obrigatória quando um usuário é criado e não pode ser apagado durante atualizações. Oferece suporte para `$filter` e `$orderby`.|
 |employeeId|String|O identificador de funcionário atribuído ao usuário pela organização.|
-| employeeType | String | Captura o tipo de trabalho empresarial. Por exemplo, `Employee` `Contractor` , , ou `Consultant` `Vendor` . Retornado apenas em `$select`. Dá `$filter` suporte ao `eq` operador.|
+| employeeType | String | Captura o tipo de trabalhador corporativo. Por exemplo, `Employee`, `Contractor`, `Consultant` ou `Vendor`. Retornado apenas em `$select`. Suporta o `$filter` com o `eq` operador.|
 |givenName|String|O nome fornecido (nome) do usuário.|
 |hireDate|DateTimeOffset|A data de contratação do usuário. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`|
 |Identidades|Coleção [objectIdentity](../resources/objectidentity.md)| Representa as identidades que podem ser usadas para entrar nesta conta de usuário. Uma identidade pode ser fornecida pela Microsoft, por organizações ou por provedores de identidade social, como o Facebook, Google e Microsoft, e está vinculada a uma conta de usuário. Qualquer atualização para **identidades** substituirá toda a coleção e você deve fornecer a identidade userPrincipalName **signInType** na coleção.|
 |interests|Coleção de cadeias de caracteres|Uma lista para o usuário descrever os interesses dele.|
 |jobTitle|String|O cargo do usuário.|
 |email|String|O endereço SMTP do usuário, por exemplo, `jeff@contoso.onmicrosoft.com`. As alterações feitas nessa propriedade também atualizarão a coleção **proxyAddresses** do usuário para incluir o valor como um endereço SMTP. <br><br>Retornado por padrão. Oferece suporte para `$filter`.|
-|mailNickname|String|O alias de email do usuário. Essa propriedade deve ser especificada quando um usuário é criado.|
+|mailNickname|String|O alias de e-mail do usuário. Essa propriedade deve ser especificada quando um usuário é criado.|
 |mobilePhone|String|O número de celular principal do usuário.|
 |mySite|String|A URL do site pessoal do usuário.|
 |officeLocation|String|A localização do escritório no local de trabalho do usuário.|
@@ -148,9 +148,7 @@ Content-type: application/json
 
 O exemplo a seguir mostra a resposta.
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.user"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 204 No Content
@@ -202,9 +200,7 @@ Content-type: application/json
 
 O exemplo a seguir mostra a resposta.
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.user"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 204 No Content

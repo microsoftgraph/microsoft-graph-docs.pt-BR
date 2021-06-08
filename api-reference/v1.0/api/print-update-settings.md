@@ -5,12 +5,12 @@ author: nilakhan
 localization_priority: Normal
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: 04be28bbf0522d43133399f1ec9c9d26bcdba265
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: 2d68bed903409fcc20b333e95245e8e15764b348
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50777121"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52787611"
 ---
 # <a name="update-printsettings"></a>Atualizar printSettings
 Namespace: microsoft.graph
@@ -19,14 +19,14 @@ Namespace: microsoft.graph
 
 Atualize as configurações de todo o locatário para o serviço de Impressão Universal.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 Para usar o serviço Impressão Universal, o usuário ou locatário do aplicativo deve ter uma assinatura de Impressão Universal ativa, além das permissões listadas na tabela a seguir. O usuário inscreveu deve ser um [Administrador de Impressora.](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator)
 
 |Tipo de permissão | Permissões (da com menos para a com mais privilégios) |
 |:---------------|:--------------------------------------------|
-|Delegada (conta corporativa ou de estudante)| PrintSettings.ReadWrite.All |
+|Delegado (conta corporativa ou de estudante)| PrintSettings.ReadWrite.All |
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|Sem suporte.|
 
@@ -51,7 +51,7 @@ No corpo da solicitação, fornece os valores dos campos [printSettings relevant
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|documentConversionEnabled|Booliano|Especifica se a conversão de documento está habilitada para o locatário. Se a conversão de documento estiver habilitada, o serviço de Impressão Universal converterá automaticamente documentos em um formato compatível com a impressora (por exemplo, XPS em PDF) quando necessário.|
+|documentConversionEnabled|Boolean|Especifica se a conversão de documento está habilitada para o locatário. Se a conversão de documento estiver habilitada, o serviço de Impressão Universal converterá automaticamente documentos em um formato compatível com a impressora (por exemplo, XPS em PDF) quando necessário.|
 
 ## <a name="response"></a>Resposta
 
@@ -98,8 +98,7 @@ Content-type: application/json
 
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.printSettings"
+  "truncated": true
 }
 -->
 ``` http

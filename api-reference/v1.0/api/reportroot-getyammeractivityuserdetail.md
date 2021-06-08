@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: reports
 author: sarahwxy
 doc_type: apiPageType
-ms.openlocfilehash: 887163ee813ece047c2a12abfa310ee17f1204a3
-ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
+ms.openlocfilehash: a252669a34cfb45246f2e182a6f2d8da8b8ffeff
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49983368"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52787433"
 ---
 # <a name="reportroot-getyammeractivityuserdetail"></a>reportRoot: getYammerActivityUserDetail
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 Obtenha dados sobre as atividades do Yammer por usuário.
 
-> **Observação:** Para obter detalhes sobre diferentes visualizações e nomes de relatórios, confira [relatórios do Microsoft 365 - Atividade do Yammer.](https://support.office.com/client/Yammer-activity-c7c9f938-5b8e-4d52-b1a2-c7c32cb2312a)
+> **Observação:** Para obter detalhes sobre diferentes exibições de relatório e nomes, [consulte Microsoft 365 relatórios - Yammer Atividade](https://support.office.com/client/Yammer-activity-c7c9f938-5b8e-4d52-b1a2-c7c32cb2312a).
 
 ## <a name="permissions"></a>Permissões
 
@@ -112,7 +112,7 @@ Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
 
 #### <a name="request"></a>Solicitação
 
-Se o parâmetro for especificado, o relatório tem como escopo as atividades que ocorreram `date` na data determinada.
+Se o parâmetro for especificado, o relatório será limitado a atividades que ocorreram `date` na data determinada.
 
 <!--{
   "blockType": "request",
@@ -129,9 +129,7 @@ GET https://graph.microsoft.com/v1.0/reports/getYammerActivityUserDetail(date='2
 Este é um exemplo de resposta.
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.report"
+  "blockType": "response"
 } -->
 
 ```http

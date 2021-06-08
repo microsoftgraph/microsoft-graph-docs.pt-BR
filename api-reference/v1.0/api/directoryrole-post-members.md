@@ -5,12 +5,12 @@ author: abhijeetsinha
 localization_priority: Normal
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: c04c122039cbce1dc3b362902012c6166c098aff
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 350a68a06c94782951163007751819c58e8113b1
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50442034"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52787636"
 ---
 # <a name="add-directory-role-member"></a>Adicionar membro da função de diretório
 
@@ -46,7 +46,7 @@ No corpo da solicitação, forneça uma representação JSON de um objeto [direc
 
 ## <a name="response"></a>Resposta
 
-Quando é bem-sucedido, este método retorna um código de resposta `204 No Content`.
+Se bem sucedido, este método retorna um código de resposta `204 No Content`.
 
 ## <a name="examples"></a>Exemplos
 
@@ -90,9 +90,7 @@ Content-type: application/json
 ##### <a name="response"></a>Resposta
 >**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade. 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.directoryObject"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 204 No Content
@@ -140,9 +138,7 @@ Content-type: application/json
 ##### <a name="response"></a>Resposta
 >**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade. 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.directoryObject"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 204 No Content

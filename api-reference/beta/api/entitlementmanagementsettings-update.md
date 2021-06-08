@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 8799edcb1eba5d88837916bc086b7238002889e7
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: f1b95cf9fdeb38d998fcd153d36611e5e0d43328
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50436285"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52787011"
 ---
 # <a name="update-entitlementmanagementsettings"></a>Update entitlementManagementSettings
 
@@ -21,7 +21,7 @@ Namespace: microsoft.graph
 Atualize um objeto [entitlementManagementSettings](../resources/entitlementmanagementsettings.md) existente para alterar uma ou mais de suas propriedades.
 
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)              |
@@ -87,9 +87,7 @@ Content-type: application/json
 ### <a name="response"></a>Resposta
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.entitlementManagementSettings"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 204 No Content

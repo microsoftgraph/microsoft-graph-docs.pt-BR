@@ -5,12 +5,12 @@ author: akumar39
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 44d2b1261ed2984963c4b9ff6e15abb91f7a2ee1
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: fc88bccb2360d2b0de5e7336a507f760485a4b42
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50954741"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52787741"
 ---
 # <a name="update-shiftpreferences"></a>Atualizar shiftPreferences
 
@@ -115,8 +115,7 @@ Content-type: application/json
 Este é um exemplo de resposta.
 
 <!-- {
-  "blockType": "response", 
-  "@odata.type": "microsoft.graph.None"
+  "blockType": "response"
 } -->
 
 ```http

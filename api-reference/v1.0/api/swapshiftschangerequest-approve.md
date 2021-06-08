@@ -1,22 +1,22 @@
 ---
 title: 'swapShiftsChangeRequest: aprovar'
-description: Aprovar uma solicitação Shift de troca.
+description: Aprovar uma solicitação de turno de troca.
 localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 83da14797ddbb6747cf6074390dabf8a8968e419
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ed0cb01e2244b8b103933bccff793c10bbdb56c7
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48037938"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52787095"
 ---
 # <a name="swapshiftschangerequest-approve"></a>swapShiftsChangeRequest: aprovar
 
 Namespace: microsoft.graph
 
-Aprovar um objeto [swapShiftsChangeRequest](../resources/swapshiftschangerequest.md) .
+Aprovar um [objeto swapShiftsChangeRequest.](../resources/swapshiftschangerequest.md)
 
 ## <a name="permissions"></a>Permissões
 
@@ -24,11 +24,11 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Schedule. ReadWrite. All, Group. ReadWrite. All    |
+|Delegado (conta corporativa ou de estudante) | Schedule.ReadWrite.All, Group.ReadWrite.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Schedule.ReadWrite.All |
 
-> **Observação**: esta API oferece transporte a permissões de administrador. Os administradores globais podem acessar grupos dos quais eles não são membros.
+> **Observação**: esta API oferece transporte a permissões de administrador. Os administradores globais podem acessar grupos dos que não são membros.
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -106,8 +106,7 @@ Content-type: application/json
 Este é um exemplo de resposta.
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.None"
+  "truncated": true
 } -->
 
 ```http

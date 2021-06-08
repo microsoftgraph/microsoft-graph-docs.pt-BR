@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
 author: kevinbellinger
-ms.openlocfilehash: 67ec3e6400e007e5c0638bea92097e9e4945e85e
-ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
+ms.openlocfilehash: e6ccd0fe70f2e48c890df074c6a7865cbf502f83
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50515706"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52787587"
 ---
 # <a name="update-profilephoto"></a>Atualizar profilephoto
 
@@ -22,14 +22,14 @@ Atualize a foto para qualquer usuário no locatário, incluindo o usuário ou o 
 
 Use SOMENTE PUT para essa operação.
 
-> **Observação**: ao atualizar a foto **do usuário,** essa operação tenta primeiro atualizar a foto no Microsoft 365. Se isso falhar (devido ao usuário não ter uma caixa de correio), essa API tentará atualizar a foto no Azure Active Directory.
+> **Observação**: ao atualizar a **foto do usuário,** essa operação tenta primeiro atualizar a foto no Microsoft 365. Se isso falhar (devido ao usuário não ter uma caixa de correio), essa API tentará atualizar a foto no Azure Active Directory.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante)     | Foto de perfil do usuário **de entrada**:<br/>User.ReadWrite, User.ReadWrite.All<br /><br />Para recurso de **grupo**:<br />Group.ReadWrite.All<br /><br />Para recurso de **contato**:<br />Contacts.ReadWrite |
+|Delegado (conta corporativa ou de estudante)     | Foto de perfil do usuário **de entrada**:<br/>User.ReadWrite, User.ReadWrite.All<br /><br />Para recurso de **grupo**:<br />Group.ReadWrite.All<br /><br />Para recurso de **contato**:<br />Contacts.ReadWrite |
 |Delegado (conta pessoal da Microsoft) | Sem suporte. |
 |Aplicativo                            | Para recurso de **usuário**:<br/>User.ReadWrite.All<br /><br />Para recurso de **grupo**:<br />Group.ReadWrite.All<br /><br />Para recurso de **contato**:<br />Contacts.ReadWrite |
 
@@ -104,9 +104,7 @@ Este é um exemplo de resposta.
 
 >**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.profilePhoto"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 200 OK

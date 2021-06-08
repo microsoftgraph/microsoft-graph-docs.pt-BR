@@ -5,12 +5,12 @@ author: clearab
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 74158f8363a360b8fba4f6a9993194d116525bbd
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: af4e5a95f4af666210be098eb20836bc713d9a8b
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52050805"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52787159"
 ---
 # <a name="get-team-photo"></a>Obter foto da equipe
 
@@ -41,7 +41,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 > **Observação**: Permissões marcadas com * usam [consentimento específico de recurso](https://aka.ms/teams-rsc).
 
-> **Observação**: esta API oferece transporte a permissões de administrador. Os administradores globais e os administradores do serviço do Microsoft Teams podem acessar equipes das quais eles não são membros.
+> **Observação**: esta API dá suporte a permissões de administrador. Os administradores globais e os administradores de serviços do Microsoft Teams podem acessar equipes das quais não são membros.
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -122,9 +122,7 @@ Veja a seguir um exemplo da resposta.
 > **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.none"
+  "blockType": "response"
 } -->
 
 ```http

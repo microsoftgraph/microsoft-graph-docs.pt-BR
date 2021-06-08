@@ -4,12 +4,12 @@ description: Use a API de críticas de acesso para revisar o acesso de convidado
 author: FaithOmbongi
 localization_priority: Normal
 ms.prod: governance
-ms.openlocfilehash: ad34932926a658d498242dd168ac7fee1d2b31a1
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 99f09ab4f7731a75c13977319d2ae25b80304185
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52751136"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52787664"
 ---
 # <a name="tutorial-use-the-access-reviews-api-to-review-guest-access-to-your-microsoft-365-groups"></a>Tutorial: use a API de críticas de acesso para revisar o acesso de convidados aos grupos Microsoft 365 seus clientes
 
@@ -46,6 +46,10 @@ Para consentir com as permissões necessárias no Graph Explorer:
 ## <a name="step-1-create-a-test-user-in-your-tenant"></a>Etapa 1: Criar um usuário de teste em seu locatário
 
 ### <a name="request"></a>Solicitação
+<!-- {
+  "blockType": "request",
+  "name": "tutorial-accessreviews-M365group-createUser"
+}-->
 
 ```http
 POST /users
@@ -64,6 +68,11 @@ Content-Type: application/json
 ```
 
 ### <a name="response"></a>Resposta
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.user"
+} -->
 
 ```http
 HTTP/1.1 201 Created
@@ -83,6 +92,10 @@ Content-type: application/json
 Convide um usuário convidado com o endereço de email **john@tailspintoys.com** seu locatário.
 
 ### <a name="request"></a>Solicitação
+<!-- {
+  "blockType": "request",
+  "name": "tutorial-accessreviews-M365group-inviteguest"
+}-->
 
 ```http
 POST https://graph.microsoft.com/beta/invitations
@@ -97,6 +110,11 @@ Content-Type: application/json
 ```
 
 ### <a name="response"></a>Resposta
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.invitation"
+} -->
 
 ```http
 HTTP/1.1 201 Created
@@ -118,10 +136,15 @@ Nesta etapa:
 3. Adicione john@tailspintoys.com como membro do grupo. O acesso ao grupo é assunto de revisão por você, o proprietário do grupo.
 
 ### <a name="request"></a>Solicitação
+
 Nesta chamada, substitua:
 + `cdb555e3-b33e-4fd5-a427-17fadacbdfa7` com sua **id**. Para recuperar sua **id,** execute `GET` em `https://graph.microsoft.com/beta/me` .
 + `baf1b0a0-1f9a-4a56-9884-6a30824f8d20` com **john@tailspintoys.com** **id** da resposta na Etapa 2.
 
+<!-- {
+  "blockType": "request",
+  "name": "tutorial-accessreviews-M365group-creategroup"
+}-->
 ```http
 POST https://graph.microsoft.com/beta/groups
 Content-Type: application/json
@@ -145,6 +168,12 @@ Content-Type: application/json
 ```
 
 ### <a name="response"></a>Resposta
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.group",
+  "name": "create_group"
+} -->
 
 ```http
 HTTP/1.1 201 Created
@@ -175,11 +204,16 @@ A série de revisão de acesso usa as seguintes configurações:
 + Aplique **a ação removeAccessApplyAction** a usuários convidados negados. Isso remove a associação no grupo do convidado negado. O usuário convidado ainda pode entrar no locatário.
 
 ### <a name="request"></a>Solicitação
+
 Nesta chamada, substitua o seguinte:
 
 + `c9a5aff7-9298-4d71-adab-0a222e0a05e4` com a **id** do usuário que você está projetando como revistor de backup. Esta é a **id** da resposta na Etapa 1.
 + Valor de **startDate** com a data de hoje e o valor de **endDate** com uma data de um ano a partir da data de início. 
 
+<!-- {
+  "blockType": "request",
+  "name": "tutorial-accessreviews-M365group-create_accessReviewScheduleDefinition"
+}-->
 ```http
 POST https://graph.microsoft.com/beta/identityGovernance/accessReviews/definitions
 Content-type: application/json
@@ -247,6 +281,11 @@ Content-type: application/json
 ```
 
 ### <a name="response"></a>Resposta
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.accessReviewScheduleDefinition"
+} -->
 
 ```http
 HTTP/1.1 201 Created
@@ -321,15 +360,27 @@ Content-type: application/json
 A consulta a seguir lista todas as instâncias da definição de revisão de acesso. Se o locatário de teste contiver outros grupos Microsoft 365 com usuários convidados, essa solicitação retornará uma instância para cada grupo Microsoft 365 com usuários convidados no locatário.
 
 ### <a name="request"></a>Solicitação
+
 Nesta chamada, substitua pela id da definição de revisão de `c22ae540-b89a-4d24-bac0-4ef35e6591ea` acesso retornada na Etapa 4. 
 
+<!-- {
+  "blockType": "request",
+  "name": "tutorial-accessreviews-M365group-list_accessReviewInstance"
+}-->
 ```http
 GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/definitions/c22ae540-b89a-4d24-bac0-4ef35e6591ea/instances
 ```
 
 ### <a name="response"></a>Resposta
+
 Nesta resposta, o escopo inclui um grupo com **id** (o grupo de campanhas de marketing Feelgood criado na Etapa 3) porque tem `59ab642a-2776-4e32-9b68-9ff7a47b7f6a` um usuário convidado. 
 
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.accessReviewInstance",
+  "isCollection": "true"
+} -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -357,10 +408,15 @@ Nesta resposta, a instância de revisão de acesso atualmente é `InProgress` . 
 Obter as decisões tomadas para a instância de uma revisão de acesso.
 
 ### <a name="request"></a>Solicitação
+
 Nesta chamada:
 + Substitua `c22ae540-b89a-4d24-bac0-4ef35e6591ea` pela **id da definição** de revisão de acesso retornada na Etapa 4.
 + Substitua pela id da sua instância de revisão `6392b1a7-9c25-4844-83e5-34e23c88e16a` de acesso retornada na Etapa 5. 
 
+<!-- {
+  "blockType": "request",
+  "name": "tutorial-accessreviews-M365group-list_accessReviewInstanceDecisionItem"
+}-->
 ```http
 GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/definitions/c22ae540-b89a-4d24-bac0-4ef35e6591ea/instances/6392b1a7-9c25-4844-83e5-34e23c88e16a/decisions
 ```
@@ -369,6 +425,12 @@ GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/definition
 
 A resposta a seguir mostra a decisão tomada para a instância da revisão.
 
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.accessReviewInstanceDecisionItem",
+  "isCollection": "true"
+} -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -422,14 +484,22 @@ Exclua os recursos criados para este tutorial: grupo de campanhas de **marketing
 ### <a name="delete-the-microsoft-365-group"></a>Excluir o Microsoft 365 grupo
 
 #### <a name="request"></a>Solicitação
+
 Nesta chamada, substitua pela id da sua campanha de `59ab642a-2776-4e32-9b68-9ff7a47b7f6a` **marketing do Feelgood**  Microsoft 365 grupo.
 
+<!-- {
+  "blockType": "request",
+  "name": "tutorial-accessreviews-M365group-delete_group"
+}-->
 ```http
 DELETE https://graph.microsoft.com/beta/groups/59ab642a-2776-4e32-9b68-9ff7a47b7f6a
 ```
 
 #### <a name="response"></a>Resposta
-
+<!-- {
+  "blockType": "response",
+  "truncated": false
+} -->
 ```http
 HTTP/1.1 204 No Content
 Content-type: text/plain
@@ -440,40 +510,65 @@ Content-type: text/plain
 Nesta chamada, substitua pela id da `c22ae540-b89a-4d24-bac0-4ef35e6591ea` **sua definição** de revisão de acesso. Como a definição de agenda de revisão de acesso é o modelo para a revisão de acesso, excluir a definição removerá as configurações, instâncias e decisões associadas à revisão de acesso.
 
 #### <a name="request"></a>Solicitação
+<!-- {
+  "blockType": "request",
+  "name": "tutorial-accessreviews-M365group-delete_accessReviewScheduleDefinition"
+}-->
 ```http
 DELETE https://graph.microsoft.com/beta/identityGovernance/accessReviews/definitions/c22ae540-b89a-4d24-bac0-4ef35e6591ea
 ```
 
 #### <a name="response"></a>Resposta
+<!-- {
+  "blockType": "response",
+  "truncated": false
+} -->
 ```http
 HTTP/1.1 204 No Content
 Content-type: text/plain
 ```
+
 ### <a name="remove-the-guest-user"></a>Remover o usuário convidado
 
 Nesta chamada, substitua `baf1b0a0-1f9a-4a56-9884-6a30824f8d20` pela **id** do usuário convidado, john@tailspintoys.com.
 
 #### <a name="request"></a>Solicitação
+<!-- {
+  "blockType": "request",
+  "name": "tutorial-accessreviews-M365group-delete_user"
+}-->
 ```http
 DELETE https://graph.microsoft.com/beta/users/baf1b0a0-1f9a-4a56-9884-6a30824f8d20
 ```
 
 #### <a name="response"></a>Resposta
+<!-- {
+  "blockType": "response",
+  "truncated": true
+} -->
 ```http
 HTTP/1.1 204 No Content
 Content-type: text/plain
 ```
 
 ### <a name="delete-the-test-user"></a>Excluir o usuário de teste
+Nesta chamada, substitua `c9a5aff7-9298-4d71-adab-0a222e0a05e4` pela **id do** usuário de teste.
 
 #### <a name="request"></a>Solicitação
-Nesta chamada, substitua `c9a5aff7-9298-4d71-adab-0a222e0a05e4` pela **id do** usuário de teste.
+<!-- {
+  "blockType": "request",
+  "name": "tutorial-accessreviews-M365group-delete_guestuser"
+}-->
 
 ```http
 DELETE https://graph.microsoft.com/beta/users/c9a5aff7-9298-4d71-adab-0a222e0a05e4
 ```
 
 #### <a name="response"></a>Resposta
+<!-- {
+  "blockType": "response",
+  "truncated": true
+} -->
 
 ```http
 HTTP/1.1 204 No Content

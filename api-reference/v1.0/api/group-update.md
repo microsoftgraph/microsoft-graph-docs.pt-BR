@@ -5,12 +5,12 @@ author: Jordanndahl
 localization_priority: Priority
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 36b8a21589bdfd1687939eb636bf5de254d37bab
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: 89ba1ec44f41abe1309355c47daeabdd6603ca25
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52680735"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52787559"
 ---
 # <a name="update-group"></a>Atualizar grupo
 
@@ -48,7 +48,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 | Propriedade   | Tipo |Descrição|
 |:---------------|:--------|:----------|
-|allowExternalSenders|Boolean|O padrão é `false`. Indica se as pessoas externas à empresa podem enviar mensagens para o grupo.|
+|allowExternalSenders|Boolean|O padrão é `false`. Indica se as pessoas externas à organização podem enviar mensagens ao grupo.|
 |autoSubscribeNewMembers|Boolean|O padrão é `false`. Indica se novos membros adicionados ao grupo serão automaticamente inscritos para receberem notificações por email. **autoSubscribeNewMembers** não pode ser `true` quando **subscriptionEnabled** é definido como `false` no grupo.|
 |descrição|String|Uma descrição opcional para o grupo. |
 |displayName|Cadeia de caracteres|O nome de exibição do grupo. Essa propriedade é obrigatória quando um grupo é criado e não pode ser apagado durante atualizações. |
@@ -56,7 +56,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 |mailEnabled|Boolean|Especifica se o grupo está habilitado para email.|
 |mailNickname|String|O alias de e-mail do grupo. Essa propriedade deve ser especificada quando um grupo é criado.  |
 |securityEnabled|Boolean|Especifica se o grupo é um grupo de segurança. |
-|visibility|Cadeia de caracteres|Especifica a visibilidade de um grupo do Microsoft 365. Os valores possíveis são: **Privado**, **Público** ou vazio (que é interpretado como **Público**).|
+|visibility|Cadeia de caracteres|Especifica a visibilidade de um grupo do Microsoft 365. Os valores possíveis são: **Private**, **Public** ou vazio (que é interpretado como **Public**).|
 
 > **Observação:**
 >
@@ -122,9 +122,7 @@ Content-length: 211
 Este é um exemplo de resposta.
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.group"
+  "blockType": "response"
 } -->
 
 ```http

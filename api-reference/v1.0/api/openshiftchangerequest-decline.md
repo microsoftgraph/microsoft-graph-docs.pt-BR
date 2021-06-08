@@ -5,12 +5,12 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 56bcbf6c9c29b83582d14cc562768cb3385dc598
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: eaa5e589a2c420203a4e03fbceda62a701873e3e
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50448127"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52787790"
 ---
 # <a name="openshiftchangerequest-decline"></a>openShiftChangeRequest: decline
 
@@ -103,8 +103,7 @@ Content-type: application/json
 Este é um exemplo de resposta.
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.None"
+  "truncated": true
 } -->
 
 ```http

@@ -1,22 +1,22 @@
 ---
 title: 'bloco de anotações: copyNotebook'
-description: Copia um bloco de anotações para a pasta blocos de anotações na biblioteca de documentos de destino. A pasta é criada se não existir.
+description: Copia um bloco de anotações para a pasta Blocos de Anotações na biblioteca de documentos de destino. A pasta será criada se ela não existir.
 localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: 04b9e4b44157b9d457f0d8bc4047386082102818
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f46e65f200e87d0f39ef5e9307ee199de5595fb1
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48020863"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52787454"
 ---
 # <a name="notebook-copynotebook"></a>bloco de anotações: copyNotebook
 
-Namespace: Microsoft. Graph copia um bloco de anotações para a pasta blocos de anotações na biblioteca de documentos de destino. A pasta é criada se não existir.
+Namespace: microsoft.graph Copia um bloco de anotações para a pasta Blocos de Anotações na biblioteca de documentos de destino. A pasta será criada se ela não existir.
 
-Para operações de cópia, siga um padrão de chamada assíncrona: primeiro, chame a ação de cópia e, em seguida, pesquise o ponto de extremidade da operação para o resultado.
+Para operações de cópia, siga um padrão de chamada assíncrona: primeiro chame a ação Copiar e, em seguida, sonda o ponto de extremidade da operação para o resultado.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -41,16 +41,16 @@ POST /groups/{id}/onenote/notebooks/{id}/copyNotebook
 | Content-Type | string | `application/json` |
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça um objeto JSON que contém os parâmetros de que sua operação precisa. É possível enviar um corpo vazio se nenhum for necessário.
+No corpo da solicitação, forneça um objeto JSON que contém os parâmetros de que sua operação precisa. Não há problema em enviar um corpo vazio se nenhum for necessário.
 
 | Parâmetro    | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|groupId|Cadeia de caracteres|A ID do grupo para o qual copiar. Use somente ao copiar para um grupo do Microsoft 365.|
-|renomeas|String|O nome da cópia. O padrão é o nome do item existente. |
+|groupId|Cadeia de caracteres|A id do grupo para o que copiar. Use somente ao copiar para um Microsoft 365 grupo.|
+|renameAs|Cadeia de caracteres|O nome da cópia. Padrão para o nome do item existente. |
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `202 Accepted` código de resposta e um `Operation-Location` cabeçalho. Sondar o ponto de extremidade da operação-local para [obter o status da operação de cópia](onenoteoperation-get.md).
+Se tiver êxito, este método retornará `202 Accepted` um código de resposta e um `Operation-Location` header. Sondar Operation-Location ponto de extremidade para [obter o status da operação de cópia.](onenoteoperation-get.md)
 
 ## <a name="example"></a>Exemplo
 Eis um exemplo de como chamar esta API.
@@ -94,9 +94,7 @@ Content-length: 108
 ##### <a name="response"></a>Resposta
 Veja a seguir um exemplo da resposta.
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.onenoteOperation"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 202 Accepted

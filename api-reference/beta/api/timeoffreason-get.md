@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: bead10296f64422dc013dd4d9b7a01408ba19974
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: ad314b96290e772a18fb90a935c0eb6bc7392b02
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52048950"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52787335"
 ---
 # <a name="get-timeoffreason"></a>Obter timeOffReason
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 Recupere as propriedades e as relações de um [objeto timeOffReason](../resources/timeoffreason.md) por ID.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | Group.Read.All, Group.ReadWrite.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Application | Schedule.Read.All *, Schedule.ReadWrite.All*  |
+|Aplicativo | Schedule.Read.All *, Schedule.ReadWrite.All*  |
 
 >\***Importante:** As permissões de aplicativo estão atualmente apenas em visualização privada e não estão disponíveis para uso público.
 
@@ -61,7 +61,7 @@ Se tiver êxito, este método retornará um código `200 OK` de resposta e um ob
 
 ## <a name="example"></a>Exemplo
 
-#### <a name="request"></a>Solicitação
+### <a name="request"></a>Solicitação
 
 Este é um exemplo de solicitação.
 
@@ -92,7 +92,7 @@ GET https://graph.microsoft.com/beta/teams/{teamId}/schedule/timeOffReasons/{tim
 ---
 
 
-#### <a name="response"></a>Resposta
+### <a name="response"></a>Resposta
 
 Este é um exemplo de resposta. 
 

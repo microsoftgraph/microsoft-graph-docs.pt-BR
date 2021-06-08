@@ -1,26 +1,26 @@
 ---
-title: 'SecurityAction: cancelSecurityAction'
-description: Cancela uma operação de segurança.
+title: 'securityAction: cancelSecurityAction'
+description: Cancele uma operação de segurança.
 localization_priority: Normal
 author: preetikr
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: a12f902c3f2eeed89c40497c49d9bb1a78fe6123
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 41cec1694baa05b67791a000215f44c6cfd8c859
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48976699"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52787230"
 ---
-# <a name="securityaction-cancelsecurityaction"></a>SecurityAction: cancelSecurityAction
+# <a name="securityaction-cancelsecurityaction"></a>securityAction: cancelSecurityAction
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Cancela uma operação de segurança.
+Cancele uma operação de segurança.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---------------------------------------|:--------------------------------------------|
 | Delegado (conta corporativa ou de estudante)     | Sem suporte. |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Application                            | SecurityActions.ReadWrite.All |
+| Aplicativo                            | SecurityActions.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -92,9 +92,7 @@ POST https://graph.microsoft.com/beta/security/securityActions/{id}/cancelSecuri
 
 Este é um exemplo de resposta.
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.None"
+  "blockType": "response"
 } -->
 
 ```http

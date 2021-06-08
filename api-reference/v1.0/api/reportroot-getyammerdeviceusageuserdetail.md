@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: reports
 author: sarahwxy
 doc_type: apiPageType
-ms.openlocfilehash: 6be6b757daf9f9c752b3ce99f885aff1608f4a13
-ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
+ms.openlocfilehash: 140d5cd4ab56d8509ebd411b99c7a08de1ac44da
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49983318"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52787769"
 ---
 # <a name="reportroot-getyammerdeviceusageuserdetail-function"></a>reportRoot: getYammerDeviceUsageUserDetail function
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 Obtenha dados sobre o uso do dispositivo Yammer por usuário.
 
-> **Observação:** Para obter detalhes sobre diferentes visualizações e nomes de relatórios, confira relatórios do [Microsoft 365 - uso de dispositivos do Yammer.](https://support.office.com/client/Yammer-device-usage-b793ffdd-effa-43d0-849a-b1ca2e899f38)
+> **Observação:** Para obter detalhes sobre diferentes exibições de relatório e nomes, [consulte Microsoft 365 relatórios - Yammer uso do dispositivo](https://support.office.com/client/Yammer-device-usage-b793ffdd-effa-43d0-849a-b1ca2e899f38).
 
 ## <a name="permissions"></a>Permissões
 
@@ -114,7 +114,7 @@ Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
 
 #### <a name="request"></a>Solicitação
 
-Se chamado com o parâmetro, o relatório tem como escopo `date` o uso na data determinada.
+Se for chamado com o parâmetro, o relatório será analisado `date` para uso na data determinada.
 
 <!--{
   "blockType": "request",
@@ -131,9 +131,7 @@ GET https://graph.microsoft.com/v1.0/reports/getYammerDeviceUsageUserDetail(date
 Este é um exemplo de resposta.
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.report"
+  "blockType": "response"
 } -->
 
 ```http

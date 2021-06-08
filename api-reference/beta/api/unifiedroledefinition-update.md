@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 47ff9ff4c40360ddb28d5d6d344ca1d7375cc119
-ms.sourcegitcommit: 30903b12daf4cf2841524c57743889e23d11f85a
+ms.openlocfilehash: 4102ece8a559161e5813e175d81a62a4c7ce9843
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/31/2021
-ms.locfileid: "52709490"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52787412"
 ---
 # <a name="update-unifiedroledefinition"></a>Atualizar unifiedRoleDefinition
 
@@ -27,7 +27,7 @@ No momento, há suporte para os seguintes provedores RBAC:
 > [!NOTE]
 > No momento, o provedor RBAC do computador na nuvem dá suporte apenas à [lista](rbacapplication-list-roledefinitions.md) e [obter](unifiedroledefinition-get.md) operações.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 
 Dependendo do provedor RBAC e do tipo de permissão (delegado ou aplicativo) necessário, escolha na tabela a seguinte permissão com menos privilégios necessária para chamar essa API. Para saber mais, incluindo [tomar cuidado](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) antes de escolher as permissões mais privilegiadas, pesquise as seguintes permissões em [Permissões](/graph/permissions-reference). 
 
@@ -62,14 +62,14 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|description|Cadeia de caracteres| A descrição da definição de função. Somente leitura quando isBuiltIn for true. |
-|displayName|Cadeia de caracteres| O nome de exibição da definição de função. Somente leitura quando isBuiltIn for true. Obrigatório.|
-|id|Cadeia de caracteres| O identificador exclusivo para a definição de função. Chave, não anulada, somente leitura. |
+|description|String| A descrição da definição de função. Somente leitura quando isBuiltIn for true. |
+|displayName|String| O nome de exibição da definição de função. Somente leitura quando isBuiltIn for true. Obrigatório.|
+|id|String| O identificador exclusivo para a definição de função. Chave, não anulada, somente leitura. |
 |isBuiltIn|Booliano| Sinalizador indicando se a definição de função faz parte do conjunto padrão incluído no produto ou personalizado. Somente leitura. |
 |isEnabled|Booliano| Sinalizador indicando se a função está habilitada para atribuição. Se for false, a função não estará disponível para atribuição. Somente leitura quando isBuiltIn for true. |
 |resourceScopes|Coleção de cadeias de caracteres| Lista de permissões de escopo concedidas pela definição de função a que se aplicam. Atualmente, apenas "/" é suportado. Somente leitura quando isBuiltIn for true. **NÃO USE. Essa propriedade será preterida em breve. Anexar escopo à atribuição de função.**|
 |rolePermissions|[Coleção unifiedRolePermission](../resources/unifiedrolepermission.md)| Lista de permissões incluídas na função. Somente leitura quando isBuiltIn for true. Obrigatório. |
-|templateId|Cadeia de caracteres| Identificador de modelo personalizado que pode ser definido quando isBuiltIn é false. Esse identificador normalmente é usado se um identificador precisa ser o mesmo em diretórios diferentes. Somente leitura quando isBuiltIn for true. |
+|templateId|String| Identificador de modelo personalizado que pode ser definido quando isBuiltIn é false. Esse identificador normalmente é usado se um identificador precisa ser o mesmo em diretórios diferentes. Somente leitura quando isBuiltIn for true. |
 |inheritsPermissionsFrom| [Coleção unifiedRoleDefinition](../resources/unifiedroledefinition.md)| Coleção somente leitura de definições de função que a definição de função determinada herda. Somente funções do Azure AD integrados suportam esse atributo. |
 |versão|String| Indica a versão da definição de função. Somente leitura quando isBuiltIn for true.|
 
@@ -133,9 +133,7 @@ Este é um exemplo de resposta.
 > **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.unifiedRoleDefinition"
+  "blockType": "response"
 } -->
 
 ```http

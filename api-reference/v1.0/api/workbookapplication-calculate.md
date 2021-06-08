@@ -5,12 +5,12 @@ localization_priority: Normal
 author: grangeryy
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 75a3888def2b292ffe4aed1aa178cd4c8709b4e3
-ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
+ms.openlocfilehash: a63de9bf28697b328f6a398201208fae7e207975
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "50577685"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52787081"
 ---
 # <a name="workbookapplication-calculate"></a>workbookApplication: calculate
 
@@ -95,8 +95,7 @@ Content-length: 48
 Veja a seguir um exemplo da resposta. 
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.none"
+  "truncated": true
 } -->
 
 ```http

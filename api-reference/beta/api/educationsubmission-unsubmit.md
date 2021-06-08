@@ -1,31 +1,31 @@
 ---
-title: 'educationSubmission: não enviar'
-description: 'Uma ação que indica que um aluno deseja trabalhar no envio da atribuição depois que ela foi ativada. Esta ação só pode ser realizada pelo aluno. '
+title: 'educationSubmission: unsubmit'
+description: 'Uma ação que indica que um aluno deseja trabalhar no envio da atribuição depois de ter sido entregue. Essa ação só pode ser tomada pelo aluno. '
 author: dipakboyed
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 24868993badf2b0788e35f015e8ceea0ca7361d0
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 23f6a2ec01dde64ec12ff8f3a378c40b1b3fd3cb
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48955411"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52787272"
 ---
-# <a name="educationsubmission-unsubmit"></a>educationSubmission: não enviar
+# <a name="educationsubmission-unsubmit"></a>educationSubmission: unsubmit
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Uma ação que indica que um aluno deseja trabalhar no envio da atribuição depois que ela foi ativada. Esta ação só pode ser realizada pelo aluno. Isso alterará o status do envio de "enviado" para "trabalho". Durante o processo de envio, todos os recursos serão copiados do submittedResources para o Bucket do workingResources. O professor examinará a lista de recursos de trabalho para fins de gradação.
+Uma ação que indica que um aluno deseja trabalhar no envio da atribuição depois de ter sido entregue. Essa ação só pode ser tomada pelo aluno. Isso alterará o status do envio de "enviado" para "working". Durante o processo de envio, todos os recursos serão copiados de submittedResources para o bucket workingResources. O professor estará olhando para a lista de recursos de trabalho para classificação.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) |  EduAssignments. ReadWriteBasic, EduAssignments. ReadWrite  |
+|Delegado (conta corporativa ou de estudante) |  EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite  |
 |Delegado (conta pessoal da Microsoft) |  Sem suporte.  |
 |Aplicativo | Sem suporte. | 
 
@@ -33,7 +33,6 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /education/classes/{id}/assignments/{id}/submissions/{id}/unsubmit
-
 ```
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Cabeçalho       | Valor |
@@ -82,9 +81,7 @@ POST https://graph.microsoft.com/beta/education/classes/11021/assignments/19002/
 Este é um exemplo de resposta.
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.educationAssignment"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 204 No Content

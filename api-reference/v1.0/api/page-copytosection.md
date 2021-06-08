@@ -1,29 +1,29 @@
 ---
-title: 'página: copyToSection'
+title: 'page: copyToSection'
 description: Copia uma página para uma seção específica.
 localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: cc13281ce4fc896f75f5f8c48075815ca50814b8
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: c9bdd57eaa929c47ed6dfe5429086e0f78760e06
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48087072"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52788063"
 ---
-# <a name="page-copytosection"></a>página: copyToSection
+# <a name="page-copytosection"></a>page: copyToSection
 
-Namespace: Microsoft. Graph copia uma página para uma seção específica.
+Namespace: microsoft.graph Copia uma página para uma seção específica.
 
-Para operações de cópia, siga um padrão de chamada assíncrona: primeiro, chame a ação de cópia e, em seguida, pesquise o ponto de extremidade da operação para o resultado.
+Para operações de cópia, siga um padrão de chamada assíncrona: primeiro chame a ação Copiar e, em seguida, sonda o ponto de extremidade da operação para o resultado.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | Notes.Create, Notes.ReadWrite, Notes.ReadWrite.All    |
+|Delegado (conta corporativa ou de estudante) | Notes.Create, Notes.ReadWrite, Notes.ReadWrite.All    |
 |Delegado (conta pessoal da Microsoft) | Notes.Create, Notes.ReadWrite    |
 |Aplicativo | Notes.ReadWrite.All |
 
@@ -43,14 +43,14 @@ POST /groups/{id}/onenote/pages/{id}/copyToSection
 ## <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, forneça um objeto JSON que contém os parâmetros de que sua operação precisa.
 
-| Parâmetro	    | Tipo   |Descrição|
+| Parâmetro    | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|groupId|Cadeia de caracteres|A ID do grupo para o qual copiar. Use somente ao copiar para um grupo do Microsoft 365.|
-|id|String|Obrigatório. A ID da seção de destino.|
+|groupId|Cadeia de caracteres|A id do grupo para o que copiar. Use somente ao copiar para um Microsoft 365 grupo.|
+|id|String|Obrigatório. A id da seção de destino.|
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `202 Accepted` código de resposta e um `Operation-Location` cabeçalho. Sondar o ponto de extremidade da operação-local para [obter o status da operação de cópia](onenoteoperation-get.md).
+Se tiver êxito, este método retornará `202 Accepted` um código de resposta e um `Operation-Location` header. Sondar Operation-Location ponto de extremidade para [obter o status da operação de cópia.](onenoteoperation-get.md)
 
 ## <a name="example"></a>Exemplo
 Eis um exemplo de como chamar esta API.
@@ -94,9 +94,7 @@ Content-length: 52
 ##### <a name="response"></a>Resposta
 Veja a seguir um exemplo da resposta.
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.onenoteOperation"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 202 Accepted

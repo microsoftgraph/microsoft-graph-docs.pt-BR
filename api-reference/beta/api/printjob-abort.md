@@ -5,12 +5,12 @@ author: nilakhan
 localization_priority: Normal
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: 597d92e051940d94a53364c624a8d0d20ef23dce
-ms.sourcegitcommit: e440d855f1106390d842905d97ceb16f143db2e5
+ms.openlocfilehash: 6aa15af9b316012b777c641e6e23bbcc1e463071
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/29/2021
-ms.locfileid: "52080624"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52787387"
 ---
 # <a name="printjob-abort"></a>printJob: abort
 
@@ -22,7 +22,7 @@ Aborte um trabalho de impressão. Somente aplicativos que usam permissões de ap
 
 A anulação de um trabalho de impressão só terá êxito se houver [uma printTask](../resources/printTask.md) em um estado no trabalho de impressão associado, iniciado por um gatilho criado pelo aplicativo `processing` solicitante. Para obter detalhes sobre como registrar um gatilho de tarefas, consulte [Extending Universal Print to support pull printing](/graph/universal-print-concept-overview#extending-universal-print-to-support-pull-printing).
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 Além das permissões a seguir, o locatário do aplicativo deve ter uma assinatura de Impressão Universal ativa e ter a permissão Printer.Read.All ou Printer.ReadWrite.All.
@@ -48,7 +48,7 @@ No corpo da solicitação, opcionalmente, você pode fornecer o motivo pelo qual
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|motivo|Cadeia de Caracteres|Motivo pelo qual o trabalho está sendo abortado.|
+|motivo|String|Motivo pelo qual o trabalho está sendo abortado.|
 
 ## <a name="response"></a>Resposta
 Se bem-sucedido, este método retorna um código de resposta `204 No Content`. Não retorna nada no corpo da resposta.
@@ -89,9 +89,7 @@ POST https://graph.microsoft.com/beta/print/printers/{id}/jobs/{id}/abort
 ### <a name="response"></a>Resposta
 Este é um exemplo de resposta. 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.None"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 204 No Content

@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: resourcePageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: ad469a68a2dabd31d4f6c1b7ea52dd188f9e10b5
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 82e936f93c10acb6e63672faac08653373f45fe6
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52055775"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52787123"
 ---
 # <a name="update-serviceprincipal"></a>Atualizar servicePrincipal
 
@@ -104,11 +104,9 @@ Content-length: 391
 
 
 ### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto de resposta exibido aqui pode ser encurtado para legibilidade.
+Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser reduzido para facilitar a leitura.
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.servicePrincipal"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 204 No Content

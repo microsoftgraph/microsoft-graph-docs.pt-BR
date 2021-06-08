@@ -5,12 +5,12 @@ localization_priority: Normal
 author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 3263472ff6dcfc10de6721763fbb7121b2faaaff
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: f42a3e80743e6a65f96e1ead1f0f9f96785ffd8d
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52681806"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52787251"
 ---
 # <a name="remove-owner"></a>Remover proprietário
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 Use essa API para remover um proprietário de um grupo de Microsoft 365, um grupo de segurança ou um grupo de segurança habilitado para email por meio da propriedade de navegação de proprietários. Quando os proprietários são atribuídos a um grupo, o último proprietário do grupo não pode ser removido.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
@@ -82,9 +82,7 @@ Na solicitação, especifique a `id` do objeto diretório que deseja remover ap�
 Este é um exemplo de resposta.
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.directoryObject"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 204 No Content

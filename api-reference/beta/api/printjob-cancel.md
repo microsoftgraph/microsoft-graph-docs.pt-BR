@@ -1,33 +1,33 @@
 ---
-title: 'printJob: cancelar'
-description: Cancelar um trabalho de impressão.
+title: 'printJob: cancel'
+description: Cancele um trabalho de impressão.
 author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 4c4522ef8fb19226475758986d1245c447358095
-ms.sourcegitcommit: d9c167f6be71bdb4a023c5ace2733b9854c846d3
+ms.openlocfilehash: b2eb7c40f1f2474752b316a412dbb4c382152741
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49617014"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52787510"
 ---
-# <a name="printjob-cancel"></a>printJob: cancelar
+# <a name="printjob-cancel"></a>printJob: cancel
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Cancelar um trabalho de impressão. Os trabalhos de impressão podem ser cancelados somente em nome de um usuário, usando permissões delegadas.
+Cancele um trabalho de impressão. Trabalhos de impressão só podem ser cancelados em nome de um usuário, usando permissões delegadas.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-Além das permissões a seguir, o locatário do usuário ou do aplicativo deve ter uma assinatura universal de impressão ativa e ter uma permissão que conceda obter acesso à [impressora](printer-get.md) .
+Além das permissões a seguir, o usuário ou locatário do aplicativo deve ter uma assinatura de Impressão Universal ativa e ter uma permissão que conceda [acesso à](printer-get.md) impressora.
 
 |Tipo de permissão | Permissões (da com menos para a com mais privilégios) |
 |:---------------|:--------------------------------------------|
-|Delegado (conta corporativa ou de estudante)| PrintJob. ReadWriteBasic, PrintJob. ReadWrite, PrintJob. ReadWriteBasic. All, PrintJob. ReadWrite. All |
+|Delegado (conta corporativa ou de estudante)| PrintJob.ReadWriteBasic, PrintJob.ReadWrite, PrintJob.ReadWriteBasic.All, PrintJob.ReadWrite.All |
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo| Sem suporte. |
 
@@ -83,9 +83,7 @@ POST https://graph.microsoft.com/beta/print/printers/{id}/jobs/{id}/cancel
 ### <a name="response"></a>Resposta
 Este é um exemplo de resposta. 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.None"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 204 No Content

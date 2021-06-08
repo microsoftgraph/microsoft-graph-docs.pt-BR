@@ -5,12 +5,12 @@ localization_priority: Normal
 author: madhavpatel6
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 8d30e3df9d807289787f599e436427a02544c055
-ms.sourcegitcommit: 08d47a31c48fd69ae4fcee26e34fdd65ad1ba69f
+ms.openlocfilehash: 66b04005f01f9e2d56189a23ad8dae36846a67a0
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51508584"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52786997"
 ---
 # <a name="update-featurerolloutpolicy"></a>Atualizar featurerolloutpolicy
 
@@ -28,8 +28,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegada (conta corporativa ou de estudante)     | Directory.ReadWrite.All |
-| Delegada (conta pessoal da Microsoft) | Sem suporte. |
+| Delegado (conta corporativa ou de estudante)     | Directory.ReadWrite.All |
+| Delegado (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo                            | Sem suporte. |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -52,8 +52,8 @@ No corpo da solicitação, fornece os valores para propriedades relevantes que d
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|description|Cadeia de caracteres|Uma descrição dessa política.|
-|displayName|Cadeia de caracteres|O nome de exibição dessa política.|
+|description|String|Uma descrição dessa política.|
+|displayName|String|O nome de exibição dessa política.|
 |isAppliedToOrganization|Booliano|Indica se essa política de lançamento de recursos deve ser aplicada a toda a organização.|
 |isEnabled|Booliano|Indica se a adoção de recursos está habilitada.|
 
@@ -108,8 +108,7 @@ Content-type: application/json
 Este é um exemplo de resposta.
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
+  "blockType": "response"
 } -->
 
 ```http

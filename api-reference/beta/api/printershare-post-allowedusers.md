@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: c3c170c05d8dfe18a228456de26c3bbce4dabc2a
-ms.sourcegitcommit: 412507a3c3a8e407fcc43b7cd227d4db35791f58
+ms.openlocfilehash: a40a26372457faaaa18b27778235bd8de4d60ef6
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51765940"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52787398"
 ---
 # <a name="create-alloweduser-for-printershare"></a>Criar allowedUser para printerShare
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 Conceda ao usuário especificado acesso para enviar trabalhos de impressão para a [impressora associadaShare](../resources/printershare.md).
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 Para usar o serviço Impressão Universal, o usuário ou locatário do aplicativo deve ter uma assinatura de Impressão Universal ativa, além das permissões listadas na tabela a seguir. O usuário inscreveu deve ser um [Administrador de Impressora.](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator)
@@ -85,14 +85,12 @@ Content-length: 66
 
 ---
 
-No corpo da solicitação, fornece uma referência a uma entidade de usuário incluindo o URI do Microsoft Graph do usuário no campo `@odata.id` do corpo JSON.
+No corpo da solicitação, fornece uma referência a uma entidade de usuário incluindo o URI microsoft Graph do usuário no campo do `@odata.id` corpo JSON.
 
 ### <a name="response"></a>Resposta
 Este é um exemplo de resposta. 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.None"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 204 No Content

@@ -5,12 +5,12 @@ author: Jordanndahl
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 5a006e25737abc2bc30b63e029991e8203ff47e0
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: 39e1787ba3a88a0988977cb3c34d9575f608980a
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52681239"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52786942"
 ---
 # <a name="update-group"></a>Atualizar grupo
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 Atualize as propriedades de um [objeto group.](../resources/group.md)
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -56,7 +56,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 |displayName|Cadeia de caracteres|O nome de exibição do grupo. Essa propriedade é obrigatória quando um grupo é criado e não pode ser apagado durante atualizações. |
 |groupTypes|Coleção de cadeias de caracteres|Especifica o tipo de grupo e sua associação.  <br><br>Se a coleção **contiver Unified,** o grupo será um Microsoft 365 grupo; caso contrário, é um grupo de segurança.  <br><br>Se a coleção incluir **DynamicMembership**, o grupo tem associação dinâmica; caso contrário, a associação é estática. |
 |mailEnabled|Boolean|Especifica se o grupo está habilitado para email. |
-|mailNickname|String|O alias de email do grupo. Essa propriedade deve ser especificada quando um grupo é criado. |
+|mailNickname|String|O alias de e-mail do grupo. Essa propriedade deve ser especificada quando um grupo é criado.  |
 |securityEnabled|Boolean|Especifica se o grupo é um grupo de segurança, incluindo Microsoft 365 grupos. |
 |visibility|Cadeia de caracteres|Especifica a visibilidade de um grupo do Microsoft 365. Os valores possíveis são: **Private**, **Public** ou vazio (que é interpretado como **Public**).|
 
@@ -122,9 +122,7 @@ Content-length: 211
 
 Este é um exemplo de resposta.
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.group"
+  "blockType": "response"
 } -->
 
 ```http
@@ -179,9 +177,7 @@ Content-length: 211
 
 Este é um exemplo de resposta.
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.group"
+  "blockType": "response"
 } -->
 
 ```http

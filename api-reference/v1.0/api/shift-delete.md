@@ -1,22 +1,22 @@
 ---
-title: Excluir Shift
-description: Excluir uma mudança do cronograma.
+title: Excluir turno
+description: Exclua um turno da agenda.
 author: akumar39
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 77b54c896601082db40d79f7f2d0c4d74461d274
-ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
+ms.openlocfilehash: 6c1db199016bcd8d81d7c4209240f854a218d53d
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48315567"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52787748"
 ---
-# <a name="delete-shift"></a>Excluir Shift
+# <a name="delete-shift"></a>Excluir turno
 
 Namespace: microsoft.graph
 
-Excluir uma [mudança](../resources/shift.md) do cronograma.
+[Exclua um turno](../resources/shift.md) da agenda.
 
 ## <a name="permissions"></a>Permissões
 
@@ -24,9 +24,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | Schedule. ReadWrite. All, Group. ReadWrite. All    |
-|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | Schedule. Read. All, Schedule. ReadWrite. All |
+|Delegado (conta corporativa ou de estudante) | Schedule.ReadWrite.All, Group.ReadWrite.All    |
+|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
+|Aplicativo | Schedule.Read.All, Schedule.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -91,8 +91,7 @@ Este é um exemplo de resposta.
 
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.None"
+  "truncated": true
 } -->
 
 ```http

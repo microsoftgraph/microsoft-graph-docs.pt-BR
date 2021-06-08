@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: governance
 author: shauliu
-ms.openlocfilehash: 2c4392529d64683a183002b9f0b302495f8042e5
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 7a301bb12271f6b31e7fef4dac565881139de994
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50435781"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52787258"
 ---
 # <a name="update-governancerolesetting"></a>Atualizar governançaRoleSetting
 
@@ -20,19 +20,19 @@ Namespace: microsoft.graph
 
 Atualize as propriedades [de governanceRoleSetting](../resources/governancerolesetting.md).
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference#privileged-access-permissions).
 
 >**Observação:** Essa API também exige que o solicitante tenha pelo menos uma atribuição de função de `Active` administrador ( ou ) no `owner` `user access administrator` recurso.
 
-|Tipo de permissão      | Permissões              |
+|Tipo de permissão      | Permissions              |
 |:--------------------|:---------------------------------------------------------|
 |Delegada (conta corporativa ou de estudante) | PrivilegedAccess.ReadWrite.AzureResources  |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Sem suporte. |
 ### <a name="azure-resources"></a>Recursos do Azure
 
-| Tipo de permissão | Permissões |
+| Tipo de permissão | Permissions |
 |:--------------- |:----------- |
 | Delegada (conta corporativa ou de estudante) | PrivilegedAccess.ReadWrite.AzureResources |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
@@ -40,7 +40,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 ### <a name="azure-ad"></a>Azure Active Directory
 
-| Tipo de permissão | Permissões |
+| Tipo de permissão | Permissions |
 |:--------------- |:----------- |
 | Delegada (conta corporativa ou de estudante) | PrivilegedAccess.ReadWrite.AzureAD |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
@@ -48,7 +48,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 ### <a name="groups"></a>Grupos
 
-|Tipo de permissão | Permissões |
+|Tipo de permissão | Permissions |
 |:-------------- |:----------- |
 | Delegada (conta corporativa ou de estudante) | PrivilegedAccess.ReadWrite.AzureADGroups |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
@@ -130,8 +130,7 @@ Content-length: 350
 
 ##### <a name="response"></a>Resposta
 <!-- {
-  "blockType": "response",
-  "@odata.type": "microsoft.graph.None"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 204 No Content

@@ -1,16 +1,16 @@
 ---
 title: 'timeOffRequest: aprovar'
-description: Aprovar um objeto timeoffrequest. "
+description: Aprovar um objeto timeoffrequest."
 localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 0c78dbe8da36c03e53431db217ea8f186f8180cb
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 291a3e764ebcd84d181b5441405c4579cf798dc2
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48981367"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52787318"
 ---
 # <a name="timeoffrequest-approve"></a>timeOffRequest: aprovar
 
@@ -18,9 +18,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Aprovar um [timeoffrequest](../resources/timeoffrequest.md).
+Aprovar um [período de tempo limite](../resources/timeoffrequest.md).
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -28,9 +28,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---------------------------------------|:--------------------------------------------|
 | Delegado (conta corporativa ou de estudante)     | Group.ReadWrite.All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
-|Application | Schedule. ReadWrite. All *  |
+|Aplicativo | Schedule.ReadWrite.All*  |
 
->\***Importante:** As permissões de aplicativo estão atualmente em visualização privada apenas e não estão disponíveis para uso público.
+>\***Importante:** As permissões de aplicativo estão atualmente apenas em visualização privada e não estão disponíveis para uso público.
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -104,9 +104,7 @@ Content-type: application/json
 
 Este é um exemplo de resposta.
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.None"
+  "blockType": "response"
 } -->
 
 ```http

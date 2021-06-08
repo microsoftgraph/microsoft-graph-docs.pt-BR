@@ -5,12 +5,12 @@ localization_priority: Normal
 author: videor
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: fa684d1dc42887f636217056e30e5a0807507bef
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 16c8fdbc1acd156dc2b4886f2edc68cc676fa1bf
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50434671"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52787468"
 ---
 # <a name="update-countrynamedlocation"></a>Atualizar countryNamedLocation
 
@@ -49,7 +49,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|countriesAndRegions|Conjunto de cadeias de caracteres|Lista de países e/ou regiões no formato de duas letras especificado pela ISO 3166-2.|
+|countriesAndRegions|Coleção de cadeias de caracteres|Lista de países e/ou regiões no formato de duas letras especificado pela ISO 3166-2.|
 |displayName|Cadeia de caracteres|Nome acessível para humanos do local.|
 |includeUnknownCountriesAndRegions|Boolean|O valor é `true` se os endereços IP que não mapeiam para um país ou região devem ser incluídos no local nomeado.|
 
@@ -108,9 +108,7 @@ Content-type: application/json
 Este é um exemplo de resposta.
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.countryNamedLocation"
+  "blockType": "response"
 } -->
 
 ```http

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: lumine2008
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 10b3ecd3115b24a6bc614e83a11b48ee12e280d9
-ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
+ms.openlocfilehash: fae9ef835de3b42a6862258b1d7600f500247850
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "50575221"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52787053"
 ---
 # <a name="workbookapplication-calculate"></a>workbookApplication: calculate
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 Recalcula todas as pastas de trabalho abertas no Excel no momento.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
@@ -95,9 +95,7 @@ Content-length: 48
 O exemplo a seguir mostra a resposta.
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.none"
+  "blockType": "response"
 } -->
 
 ```http

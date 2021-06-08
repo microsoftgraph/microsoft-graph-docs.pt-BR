@@ -5,12 +5,12 @@ author: mlafleur
 localization_priority: Normal
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 012e181d9f95ff8b3c145c8a7a0e8a70b14cf625
-ms.sourcegitcommit: 34891a1c601976166958be1aa04bab5936592b44
+ms.openlocfilehash: 78e2774fe4636a1ecf8556404444b84d57d1abc5
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52231826"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52787517"
 ---
 # <a name="educationuser-resource-type"></a>Tipo de recurso educationUser
 
@@ -44,9 +44,9 @@ Herda da [entidade](../resources/entity.md).
 | department           | String                                                             | O nome do departamento no qual o usuário trabalha. Oferece suporte para `$filter`.                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
 | displayName          | String                                                             | O nome exibido para o usuário no catálogo de endereços. Geralmente é a combinação do nome, da inicial do nome do meio e do sobrenome do usuário. Essa propriedade é obrigatória quando um usuário é criado e não pode ser apagado durante atualizações. Oferece suporte para `$filter` e `$orderby`.                                                                                                                                                                                                                                                           |
 | externalSource       | educationExternalSource                                            | De onde esse usuário foi criado. Os valores possíveis são: `sis` e `manual`.                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
-| externalSourceDetail | String                                                             | O nome da fonte externa de onde esses recursos foram gerados.                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| externalSourceDetail | Cadeia de caracteres                                                             | O nome da fonte externa de onde esses recursos foram gerados.                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
 | givenName            | String                                                             | O nome fornecido (nome) do usuário. Oferece suporte para `$filter`.                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
-| id                   | String                                                             | Identificador de objeto. Herdado da [entidade](../resources/entity.md)                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| id                   | Cadeia de caracteres                                                             | Identificador de objeto. Herdado da [entidade](../resources/entity.md)                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
 | email                 | String                                                             | O endereço SMTP do usuário; por exemplo, jeff@contoso.onmicrosoft.com. Somente Leitura. Oferece suporte para `$filter`.                                                                                                                                                                                                                                                                                                                                                                                                                         |
 | mailingAddress       | [physicalAddress](../resources/physicaladdress.md)                 | Endereço de email do usuário.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
 | mailNickname         | String                                                             | O alias de email do usuário. Essa propriedade deve ser especificada quando um usuário é criado. Oferece suporte para `$filter`.                                                                                                                                                                                                                                                                                                                                                                                                                           |
@@ -164,9 +164,7 @@ Veja a seguir uma representação JSON do recurso.
   "keywords": "",
   "section": "documentation",
   "suppressions": [
-    "Error: microsoft.graph.educationUser/assignments:
-      Referenced type microsoft.graph.educationAssignment is not defined in the doc set! Potential suggestion: UNKNOWN"
-  ],
+   ],
   "tocPath": ""
 }-->
 

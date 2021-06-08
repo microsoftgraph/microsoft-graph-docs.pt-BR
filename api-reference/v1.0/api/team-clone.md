@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 6469f6b2857792de7e1b6f261c8d82ad0f2a7648
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: c4ef55620c8b13c001312ca391e553da60551a6a
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52054361"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52787440"
 ---
 # <a name="clone-a-team"></a>Clonar uma equipe
 
@@ -111,11 +111,9 @@ Content-Type: application/json
 
 
 #### <a name="response"></a>Resposta
-Este é um exemplo de resposta. Observação: o objeto de resposta exibido aqui pode ser encurtado para legibilidade.
+Este é um exemplo de resposta. Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.team"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 202 Accepted

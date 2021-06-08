@@ -5,12 +5,12 @@ author: adimitui
 localization_priority: Normal
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: ee201a5dbd60e68c9e3e53e5c7dba340fe1ef06b
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: fc400d4790326e79d8ad8dea387d6027baf8f1de
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50441953"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52787300"
 ---
 # <a name="update-domain"></a>Atualizar domínio
 
@@ -98,9 +98,7 @@ Content-type: application/json
 ##### <a name="response"></a>Resposta
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.domain"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 204 No Content

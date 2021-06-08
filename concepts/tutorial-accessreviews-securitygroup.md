@@ -4,12 +4,12 @@ description: Usar a API de avaliações de acesso para revisar o acesso aos seus
 author: FaithOmbongi
 localization_priority: Normal
 ms.prod: governance
-ms.openlocfilehash: b88c135c488b332814105dcab992e3a2a4ac465b
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: b3a7ee94f045eb7eb587b58fc6220c304c2b81ff
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52751129"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52787074"
 ---
 # <a name="tutorial-use-the-access-reviews-api-to-review-access-to-your-security-groups"></a>Tutorial: use a API de críticas de acesso para revisar o acesso aos seus grupos de segurança
 
@@ -49,7 +49,10 @@ Para consentir com as permissões necessárias no Graph Explorer:
 Crie três novos usuários de teste executando a solicitação abaixo de três vezes, alterando as propriedades **displayName,** **mailNickname** e **userPrincipalName** sempre. Grave suas **IDs.**
 
 ### <a name="request"></a>Solicitação
-
+<!-- {
+  "blockType": "request",
+  "name": "tutorial-accessreviews-Securitygroup-createUser"
+}-->
 ```http
 POST /users
 Content-Type: application/json
@@ -67,6 +70,11 @@ Content-Type: application/json
 ```
 
 ### <a name="response"></a>Resposta
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.user"
+} -->
 
 ```http
 HTTP/1.1 201 Created
@@ -87,12 +95,17 @@ Content-type: application/json
 Crie um grupo de segurança chamado **Criando** um grupo de segurança que é o destino das análises de acesso neste tutorial. Atribua a esse grupo dois proprietários de grupo e dois membros. Esses membros serão objeto de revisão pelos proprietários do grupo.
 
 ### <a name="request"></a>Solicitação
+
 Nesta chamada, substitua:
 + `010b2de0-0ed4-4ece-bfa2-22fff71d0497` e `b828cc0e-4240-46ed-bb25-888744487e2d` com **a id** s de seus dois proprietários de grupo.
   + Um dos **IDs** pertence a um dos usuários que você criou na Etapa 1.
   + A outra é sua **id.** Para recuperar sua **id,** execute `GET` em `https://graph.microsoft.com/beta/me` .
 + `43b12b0c-ee2c-4257-96fe-505d823e06ab` e `859924d0-7115-422a-9ee8-ea8c0c014707` com **as IDs** de vocês dois membros do grupo. Esses são os outros dois membros criados na Etapa 1.
 
+<!-- {
+  "blockType": "request",
+  "name": "tutorial-accessreviews-Securitygroup-creategroup"
+}-->
 ```http
 POST https://graph.microsoft.com/beta/groups
 Content-Type: application/json
@@ -116,6 +129,12 @@ Content-Type: application/json
 ```
 
 ### <a name="response"></a>Resposta
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.group",
+  "name": "create_group"
+} -->
 
 ```http
 HTTP/1.1 201 Created
@@ -130,7 +149,7 @@ Content-type: application/json
 ```
 Na resposta, grave a **id** do novo grupo para usá-lo posteriormente neste tutorial.
 
-## <a name="step-3-create-an-access-review"></a>Etapa 3: Criar uma revisão de acesso
+## <a name="step-3-create-an-access-review-for-the-security-group"></a>Etapa 3: Criar uma revisão de acesso para o grupo de segurança
 
 Crie uma revisão de acesso para membros do grupo de segurança, usando as seguintes configurações:
 + É uma revisão de acesso de autoavaliação. Nesse caso, os usuários sob revisão autotestam a necessidade de acesso ao grupo.
@@ -138,6 +157,7 @@ Crie uma revisão de acesso para membros do grupo de segurança, usando as segui
 + O escopo de revisão é limitado a membros do **grupo de segurança de criação.**
 
 ### <a name="request"></a>Solicitação
+
 Nesta chamada, substitua o seguinte:
 + `825f1b5e-6fb2-4d9a-b393-d491101acc0c` com a **id de** **Criar grupo de segurança**.
 + O escopo especifica que a revisão é aplicada a todos os membros do grupo de segurança do **Building.** Para obter mais opções para configurar o escopo, consulte a [seção Consulte também.](#see-also)
@@ -145,6 +165,10 @@ Nesta chamada, substitua o seguinte:
 
 Ao não especificar o valor da propriedade **reviewers,** essa revisão de acesso é configurada como auto-revisão com os membros como revistores.
 
+<!-- {
+  "blockType": "request",
+  "name": "tutorial-accessreviews-Securitygroup-create_accessReviewScheduleDefinition"
+}-->
 ```http
 POST https://graph.microsoft.com/beta/identityGovernance/accessReviews/definitions
 Content-type: application/json
@@ -191,6 +215,11 @@ Content-type: application/json
 ```
 
 ### <a name="response"></a>Resposta
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.accessReviewScheduleDefinition"
+} -->
 
 ```http
 HTTP/1.1 201 Created
@@ -245,8 +274,13 @@ Content-type: application/json
 A consulta a seguir lista todas as instâncias da definição de revisão de acesso. Como você criou uma revisão de acesso único na Etapa 3, a solicitação retorna apenas uma instância cuja **id** é a mesma que a id da definição de **acesso.**
 
 ### <a name="request"></a>Solicitação
+
 Nesta chamada, substitua pela id da definição de revisão de `d7286a17-3a01-406a-b872-986b6b40317c` acesso retornada na Etapa 3. 
 
+<!-- {
+  "blockType": "request",
+  "name": "tutorial-accessreviews-Securitygroup-list_accessReviewInstance"
+}-->
 ```http
 GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/definitions/d7286a17-3a01-406a-b872-986b6b40317c/instances
 ```
@@ -255,6 +289,12 @@ GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/definition
 
 Nesta resposta, o **status** da instância de revisão de acesso é porque `InProgress` **startDateTime** é passado e **endDateTime** está no futuro. Se **startDateTime** estiver no futuro, o status será `NotStarted` . Por outro lado, se **endDateTime** estiver no passado, o status será `Completed` .
 
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.accessReviewInstance",
+  "isCollection": "true"
+} -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -281,8 +321,13 @@ Content-type: application/json
 Você está interessado nas decisões tomadas para a instância da revisão de acesso.
 
 ### <a name="request"></a>Solicitação
+
 Nesta chamada, substitua pela id da definição de revisão de `d7286a17-3a01-406a-b872-986b6b40317c` acesso retornada na Etapa 3. 
 
+<!-- {
+  "blockType": "request",
+  "name": "tutorial-accessreviews-Securitygroup-list_accessReviewInstanceDecisionItem"
+}-->
 ```http
 GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/definitions/d7286a17-3a01-406a-b872-986b6b40317c/instances/d7286a17-3a01-406a-b872-986b6b40317c/decisions
 ```
@@ -291,6 +336,12 @@ GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/definition
 
 A resposta a seguir mostra a decisão tomada para a instância da revisão.
 
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.accessReviewInstanceDecisionItem",
+  "isCollection": "true"
+} -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -431,13 +482,22 @@ Exclua os recursos criados para este tutorial: Criar grupo **de segurança,** a 
 ### <a name="delete-the-security-group"></a>Excluir o grupo de segurança
 
 #### <a name="request"></a>Solicitação
+
 Nesta chamada, substitua `825f1b5e-6fb2-4d9a-b393-d491101acc0c` pela **id** do grupo de segurança **de criação.**
 
+<!-- {
+  "blockType": "request",
+  "name": "tutorial-accessreviews-Securitygroup-delete_group"
+}-->
 ```http
 DELETE https://graph.microsoft.com/beta/groups/825f1b5e-6fb2-4d9a-b393-d491101acc0c
 ```
 
 #### <a name="response"></a>Resposta
+<!-- {
+  "blockType": "response",
+  "truncated": false
+} -->
 
 ```http
 HTTP/1.1 204 No Content
@@ -449,27 +509,42 @@ Content-type: text/plain
 Nesta chamada, substitua pela id da `d7286a17-3a01-406a-b872-986b6b40317c` **sua definição** de revisão de acesso. Como a definição de agenda de revisão de acesso é o modelo para a revisão de acesso, excluir a definição removerá as configurações, instâncias e decisões associadas à revisão de acesso.
 
 #### <a name="request"></a>Solicitação
+<!-- {
+  "blockType": "request",
+  "name": "tutorial-accessreviews-Securitygroup-delete_accessReviewScheduleDefinition"
+}-->
 ```http
 DELETE https://graph.microsoft.com/beta/identityGovernance/accessReviews/definitions/d7286a17-3a01-406a-b872-986b6b40317c
 ```
 
 #### <a name="response"></a>Resposta
+<!-- {
+  "blockType": "response",
+  "truncated": false
+} -->
 ```http
 HTTP/1.1 204 No Content
 Content-type: text/plain
 ```
 
 ### <a name="delete-the-three-test-users"></a>Excluir os três usuários de teste
-
-#### <a name="request"></a>Solicitação
 Nesta chamada, substitua `43b12b0c-ee2c-4257-96fe-505d823e06ab` pela **id do** usuário de teste. Repita isso duas vezes **com a id** s dos outros dois usuários para excluí-los.
 
+#### <a name="request"></a>Solicitação
+
+<!-- {
+  "blockType": "request",
+  "name": "tutorial-accessreviews-Securitygroup-delete_user"
+}-->
 ```http
 DELETE https://graph.microsoft.com/beta/users/43b12b0c-ee2c-4257-96fe-505d823e06ab
 ```
 
 #### <a name="response"></a>Resposta
-
+<!-- {
+  "blockType": "response",
+  "truncated": true
+} -->
 ```http
 HTTP/1.1 204 No Content
 Content-type: text/plain

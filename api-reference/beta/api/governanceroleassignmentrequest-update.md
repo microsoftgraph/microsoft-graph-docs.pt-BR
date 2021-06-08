@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: governance
 author: shauliu
-ms.openlocfilehash: 59080cf19cf96d82f029d3ba9513cd16a042157a
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 96b089c52e8fabacd87223795a68e1b6f011db0e
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50435851"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52786971"
 ---
 # <a name="update-governanceroleassignmentrequests"></a>Atualizar governançaRoleAssignmentRequests
 
@@ -20,14 +20,14 @@ Namespace: microsoft.graph
 
 Permitir que os administradores atualizem suas decisões ( ou ) sobre `AdminApproved` `AdminDenied` [governançaRoleAssignmentRequests](../resources/governanceroleassignmentrequest.md) que estão em status de `PendingAdminDecision` .
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference#privileged-access-permissions).
 
 >**Observação:** Essa API também exige que o solicitante tenha pelo menos uma atribuição de função de administrador ( ou ) no recurso ao qual a `Active` `owner` `user access administrator` [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md) pertence. 
 
 ### <a name="azure-resources"></a>Recursos do Azure
 
-| Tipo de permissão | Permissões |
+| Tipo de permissão | Permissions |
 |:--------------- |:----------- |
 | Delegada (conta corporativa ou de estudante) | PrivilegedAccess.ReadWrite.AzureResources |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
@@ -35,7 +35,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 ### <a name="azure-ad"></a>Azure Active Directory
 
-| Tipo de permissão | Permissões |
+| Tipo de permissão | Permissions |
 |:--------------- |:----------- |
 | Delegada (conta corporativa ou de estudante) | PrivilegedAccess.ReadWrite.AzureAD |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
@@ -43,7 +43,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 ### <a name="groups"></a>Grupos
 
-|Tipo de permissão | Permissões |
+|Tipo de permissão | Permissions |
 |:-------------- |:----------- |
 | Delegada (conta corporativa ou de estudante) | PrivilegedAccess.ReadWrite.AzureADGroups |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
@@ -119,8 +119,7 @@ POST https://graph.microsoft.com/beta/privilegedAccess/azureResources/roleAssign
 
 ##### <a name="response"></a>Resposta
 <!-- {
-  "blockType": "response",
-  "@odata.type": "microsoft.graph.None"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 204 No Content

@@ -6,12 +6,12 @@ title: Baixar um arquivo
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 44563ef0dbb2f3cb7181922ea519aabfcb59a568
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 5be835d93eeb9e5082dad6e3904030977d049b99
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48963708"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52787018"
 ---
 # <a name="download-the-contents-of-a-driveitem"></a>Baixe o conteúdo de um DriveItem
 
@@ -89,7 +89,7 @@ Para baixar o conteúdo do arquivo, seu aplicativo precisará seguir o cabeçalh
 
 URLs de download previamente autenticadas são válidas apenas por um curto período de tempo (alguns minutos) e não exigem um cabeçalho `Authorization` para download.
 
-<!-- { "blockType": "response", "@odata.type": "stream" } -->
+<!-- { "blockType": "response" } -->
 
 ```http
 HTTP/1.1 302 Found

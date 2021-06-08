@@ -5,12 +5,12 @@ localization_priority: Normal
 author: japere
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 22544845ededf639bc71f14dec72a7163ded7c90
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 776893669989e135a781e19aca6f344cf4015ce0
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52055152"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52787370"
 ---
 # <a name="update-publishedresource"></a>Atualizar publishedResource
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 Atualize as propriedades do objeto publishedresource [publishedResource.](../resources/publishedresource.md)
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -103,9 +103,7 @@ Este é um exemplo de resposta.
 > **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.publishedResource"
+  "blockType": "response"
 } -->
 
 ```http

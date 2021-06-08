@@ -6,19 +6,18 @@ localization_priority: Priority
 ms.prod: sharepoint
 description: Use esta API para recuperar os conteúdos de um item em um formato específico.
 doc_type: apiPageType
-ms.openlocfilehash: 722b90ddec082e6b415d532e81d67bfe415d68e6
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: 38b87b43f137fe291be31d98d97ea9a9448e6c9a
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50240315"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52787804"
 ---
 # <a name="download-a-file-in-another-format"></a>Baixar um arquivo em outro formato
 
 Namespace: microsoft.graph
 
-Use esta API para recuperar os conteúdos de um item em um formato específico.
-Nem todos os arquivos podem ser convertidos em todos os formatos.
+Use esta API para recuperar os conteúdos de um item em um formato específico. Nem todos os arquivos podem ser convertidos em todos os formatos.
 
 Para baixar o item no formato original, confira [Baixar o conteúdo de um item](driveitem-get-content.md).
 
@@ -92,7 +91,7 @@ Para baixar o arquivo convertido, seu aplicativo deve seguir o cabeçalho `Locat
 
 As URLs de download previamente autenticadas são válidas apenas por um curto período de tempo (alguns minutos) e não exigem um cabeçalho `Authorization` para download.
 
-<!-- { "blockType": "response", "@odata.type": "stream" } -->
+<!-- { "blockType": "response" } -->
 
 ```http
 HTTP/1.1 302 Found
