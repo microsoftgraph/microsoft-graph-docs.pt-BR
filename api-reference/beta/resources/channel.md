@@ -5,12 +5,12 @@ author: laujan
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 2126d80e2ab573161280f2624034b80b41fe36b9
-ms.sourcegitcommit: 412507a3c3a8e407fcc43b7cd227d4db35791f58
+ms.openlocfilehash: 59b73642b781877a942d5e70e654955ced0a86d6
+ms.sourcegitcommit: a2d81138de2a0404e611fbb535679199477ef3d5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51766068"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52813206"
 ---
 # <a name="channel-resource-type"></a>Tipo de recurso de usuário
 
@@ -47,7 +47,8 @@ Namespace: microsoft.graph
 |[Guia obter no canal](../api/channel-get-tabs.md) | [teamsTab](teamstab.md) | Ler uma guia fixada a um canal.|
 |[Guia atualizar no canal](../api/channel-patch-tabs.md) | [teamsTab](teamstab.md) | Atualiza as propriedades de uma guia em um canal.|
 |[Remover guia do canal](../api/channel-delete-tabs.md) | Nenhum | Remover (Desafixar) uma Tabulação de um canal.|
-
+|[Endereço de email do canal de provisão](../api/channel-provisionemail.md) |[provisionChannelEmailResult](../resources/provisionchannelemailresult.md)| Endereço de email de provisão.|
+|[Remover o endereço de email do canal](../api/channel-removeemail.md) | Nenhum | Remover as políticas de endereço de email.|
 
 ## <a name="properties"></a>Propriedades
 
@@ -55,12 +56,12 @@ Namespace: microsoft.graph
 |:---------------|:--------|:----------|
 |description|String|Descrição textual opcional do canal.|
 |displayName|String|Nome do canal como ele aparecerá ao usuário no Microsoft Teams.|
-|id|String|O identificador exclusivo do canal. Somente leitura.|
+|id|Cadeia de caracteres|O identificador exclusivo do canal. Somente leitura.|
 |isFavoriteByDefault|Booliano|Indica se o canal deve automaticamente ser marcado como “favorito” para todos os membros da equipe. Só pode ser definida por programação com [Criar equipe](../api/team-post.md). Padrão: `false`.|
 |email|Cadeia de caracteres| O endereço de email para enviar mensagens ao canal. Somente leitura.|
 |webUrl|String|Um hiperlink que navegará até o canal no Microsoft Teams. Essa é a URL que você recebe ao clicar com o botão direito do mouse em um canal Microsoft Teams e selecionar Obter o link para o canal. Essa URL deve ser tratada como um blob opaco e não analisado. Somente leitura.|
 |membershipType|[channelMembershipType](../resources/enums.md#channelmembershiptype-values)|O tipo do canal. Pode ser definido durante a criação e não pode ser alterado. Padrão: standard.|
-|createdDateTime|dateTimeOffset|Somente leitura. Carimbo de data/hora de criação do canal.|
+|createdDateTime|dateTimeOffset|Somente leitura. Carimbo de data/hora da criação do canal.|
 |moderationSettings|[channelModerationSettings](../resources/channelmoderationsettings.md)|Configurações para configurar a moderação do canal para controlar quem pode iniciar novas postagens e responder a postagens no canal.|
 
 ### <a name="instance-attributes"></a>Atributos de instância
@@ -79,9 +80,9 @@ Para obter um exemplo de uma solicitação POST, confira [Solicitação (criar c
 
 | Relação | Tipo |Descrição|
 |:---------------|:--------|:----------|
-|messages|[chatMessage](chatmessage.md) collection|Uma coleção de todas as mensagens do canal. Uma propriedade de navegação. Anulável.|
-|guias|[teamsTab](../resources/teamstab.md) collection|Uma coleção de todas as guias do canal. Uma propriedade de navegação.|
-|membros|coleção [conversationMember](conversationmember.md)|Uma coleção de registros de associação ligados ao canal.|
+|messages|[chatMessage](chatmessage.md) collection|Uma coleção de todas as mensagens no canal. Uma propriedade de navegação. Anulável.|
+|guias|[teamsTab](../resources/teamstab.md) collection|Uma coleção de todas as guias no canal. Uma propriedade de navegação.|
+|members|coleção [conversationMember](conversationmember.md)|Uma coleção de registros de associação ligados ao canal.|
 |[filesFolder](../api/channel-get-filesfolder.md)|[driveItem](driveitem.md)|Metadados para o local em que os arquivos do canal estão armazenados.|
 |operations|Coleção [teamsAsyncOperation](teamsasyncoperation.md)| As operações assíncronas que foram executadas ou estão em execução nesta equipe. |
 
@@ -108,7 +109,7 @@ Veja a seguir uma representação JSON do recurso.
   "webUrl": "string",
   "membershipType": "channelMembershipType",
   "createdDateTime": "string (timestamp)",
-  "moderationSettings": "channelModerationSettings"
+  "moderationSettings": { "@odata.type": "microsoft.graph.channelModerationSettings" }
 }
 ```
 

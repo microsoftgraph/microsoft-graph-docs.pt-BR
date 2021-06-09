@@ -5,19 +5,19 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: dfaf7209037bdbb61e2e487200be9c96b791fa92
-ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
+ms.openlocfilehash: 273f841a4fc05d78dece7ab26f233eb28c314a88
+ms.sourcegitcommit: a2d81138de2a0404e611fbb535679199477ef3d5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "50575846"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52813024"
 ---
 # <a name="worksheetprotection-unprotect"></a>WorksheetProtection: unprotect
 
 Namespace: microsoft.graph
 
 Desprotege uma planilha.
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
@@ -40,56 +40,28 @@ POST /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/protection/unpro
 | Workbook-Session-Id  | ID de sessão de pasta de trabalho que determina se as alterações são persistentes ou não. Opcional.|
 
 ## <a name="request-body"></a>Corpo da solicitação
-Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
-
-| Parâmetro    | Tipo   |Descrição|
-|:---------------|:--------|:----------|
-|password|cadeia de caracteres|Opcional. Senha de proteção para a planilha.|
+Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
 Se bem-sucedido, este método retorna um código de resposta `200 OK`. Não retorna nada no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
-Eis um exemplo de como chamar esta API.
-##### <a name="request"></a>Solicitação
-Este é um exemplo da solicitação.
 
-# <a name="http"></a>[HTTP](#tab/http)
+### <a name="request"></a>Solicitação
+Este é um exemplo de solicitação.
+
 <!-- {
   "blockType": "request",
   "name": "worksheetprotection_unprotect"
 }-->
 ```http
 POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/protection/unprotect
-Content-type: application/json
-Content-length: 34
-
-{
-  "password": "password-value"
-}
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/worksheetprotection-unprotect-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/worksheetprotection-unprotect-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/worksheetprotection-unprotect-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/worksheetprotection-unprotect-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 
-##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. 
+### <a name="response"></a>Resposta
+Este é um exemplo de resposta. 
 <!-- {
   "blockType": "response",
   "truncated": true

@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: resourcePageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: 8ddcf2554dd090c8fc173fa8209d5be5ef3b2af6
-ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
+ms.openlocfilehash: cdd958873a8e450af72c4003a5e2471345b9d1ce
+ms.sourcegitcommit: a2d81138de2a0404e611fbb535679199477ef3d5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52547194"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52813208"
 ---
 # <a name="serviceprincipal-resource-type"></a>Tipo de recurso servicePrincipal
 
@@ -99,13 +99,14 @@ Esse recurso tem suporte para o uso da [consulta delta](/graph/delta-query-overv
 |appRoles|Coleção [appRole](approle.md)|As funções expostas pelo aplicativo que essa entidade de serviço representa. Para obter mais informações, confira definição da propriedade **appRoles** na entidade [aplicativo](application.md). Não anulável. |
 | deletedDateTime | DateTimeOffset | A data e a hora em que a entidade de serviço foi excluída. Somente leitura. |
 |descrição| String | Campo de texto disponível para fornecer uma descrição voltada para o usuário final interno da entidade de serviço. Os portais do usuário final, como [MyApps](/azure/active-directory/user-help/my-apps-portal-end-user-access), exibirão a descrição do aplicativo neste campo. O tamanho máximo permitido é de 1.024 caracteres.|
+| disabledByMicrosoftStatus | Cadeia de caracteres | Especifica se a Microsoft desabilitou o aplicativo registrado. Os valores possíveis são: `null` (valor padrão), `NotDisabled` e `DisabledDueToViolationOfServicesAgreement` (os motivos podem incluir atividades suspeitas, abusivas ou maliciosas ou uma violação do Contrato de Serviços Microsoft). |
 |displayName|String|O nome de exibição da entidade de serviço.|
 |errorUrl|Cadeia de caracteres|Depreciado. Não usar.|
-|homepage|String|Página inicial ou página de aterrissagem do aplicativo.|
-| id | String | O identificador exclusivo da entidade de serviço. Herdado de [directoryObject](directoryobject.md). Chave. Não anulável. Somente leitura. |
+|homepage|Cadeia de caracteres|Página inicial ou página de aterrissagem do aplicativo.|
+| id | Cadeia de caracteres | O identificador exclusivo da entidade de serviço. Herdado de [directoryObject](directoryobject.md). Chave. Não anulável. Somente leitura. |
 | informações  | [informationalUrl](informationalurl.md) | Informações básicas de perfil do aplicativo adquirido, como marketing, suporte, termos de serviço e URLs de política de privacidade do aplicativo. Os termos de serviço e a política de privacidade são revelados aos usuários por meio da experiência de consentimento do usuário. Para obter mais informações, confira [Como adicionar termos de serviço e política de privacidade a aplicativos do Azure AD registrados](/azure/active-directory/develop/howto-add-terms-of-service-privacy-statement). |
 |keyCredentials|[keyCredential](keycredential.md) collection|A coleta de principais credenciais associadas ao diretor de serviços. Não pode ser anulado.            |
-|loginUrl|String|Especifica a URL na qual o provedor de serviços redireciona o usuário para a autenticação do Azure AD. O Azure AD usa a URL para iniciar o aplicativo do Microsoft 365 ou o Azure AD My Apps. Quando em branco, o Azure AD executa o logon iniciado pelo IdP de aplicativos configurados com o [logon único baseado em SAML](/azure/active-directory/manage-apps/what-is-single-sign-on#saml-sso). O usuário inicia o aplicativo do Microsoft 365, o Azure AD My Apps ou a URL de SSO do Azure AD.|
+|loginUrl|Cadeia de caracteres|Especifica a URL na qual o provedor de serviços redireciona o usuário para a autenticação do Azure AD. O Azure AD usa a URL para iniciar o aplicativo do Microsoft 365 ou o Azure AD My Apps. Quando em branco, o Azure AD executa o logon iniciado pelo IdP de aplicativos configurados com o [logon único baseado em SAML](/azure/active-directory/manage-apps/what-is-single-sign-on#saml-sso). O usuário inicia o aplicativo do Microsoft 365, o Azure AD My Apps ou a URL de SSO do Azure AD.|
 |logoutUrl|Cadeia de caracteres| Especifica a URL que será usada pela autorização do serviço da Microsoft para fazer logoff de um usuário usando protocolos de logoff OpenId Connect [front-channel](https://openid.net/specs/openid-connect-frontchannel-1_0.html), [back-channel](https://openid.net/specs/openid-connect-backchannel-1_0.html) ou SAML.|
 |notes|String|Campo de texto disponível para capturar informações sobre a entidade de serviço, normalmente usado para fins operacionais. O tamanho máximo permitido é de 1.024 caracteres.|
 |NotificationEmailAddresses|Coleção de cadeias de caracteres|Especifica a lista de endereços de email para os quais o Azure AD envia uma notificação quando o certificado ativo está próximo da data de validade. Isso é apenas para os certificados usados ​​para assinar o token SAML emitido para aplicativos da Galeria do Azure AD.|
@@ -173,6 +174,7 @@ Esse recurso tem suporte para o uso da [consulta delta](/graph/delta-query-overv
   "applicationTemplateId": "string",
   "appRoleAssignmentRequired": true,
   "appRoles": [{"@odata.type": "microsoft.graph.appRole"}],
+  "disabledByMicrosoftStatus": "string",
   "displayName": "string",
   "errorUrl": "string",
   "homepage": "string",
@@ -215,6 +217,5 @@ Esse recurso tem suporte para o uso da [consulta delta](/graph/delta-query-overv
   ]
 }
 -->
-
 
 
