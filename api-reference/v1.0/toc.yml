@@ -413,7 +413,7 @@ items:
             items:
               - name: Listar tarefas
                 href: api/planneruser-list-tasks.md
-          - name: Teamwork
+          - name: Trabalho em equipe
             items:
               - name: Aplicativo instalado
                 href: resources/teamsappinstallation.md
@@ -5561,7 +5561,7 @@ items:
         items:
           - name: Visão Geral
             href: resources/planner-overview.md
-          - name: Planejar
+          - name: Plano
             href: resources/plannerplan.md
             items:
               - name: Criar plano
@@ -5637,7 +5637,7 @@ items:
                 href: api/plannerprogresstaskboardtaskformat-get.md
               - name: Atualizar progresso do formato de quadro de tarefas
                 href: api/plannerprogresstaskboardtaskformat-update.md
-      - name: Teamwork
+      - name: Trabalho em equipe
         displayName: Microsoft Teams
         items:
           - name: Visão Geral
@@ -5735,34 +5735,34 @@ items:
                 href: api/channel-patch.md
               - name: Delete channel
                 href: api/channel-delete.md
-              - name: Listar membros
-                href: api/channel-list-members.md
               - name: Adicionar membro
                 href: api/channel-post-members.md
-              - name: Obter membro
-                href: api/channel-get-members.md
-              - name: Atualizar a função de membro
-                href: api/channel-update-members.md
-              - name: Remover membro
-                href: api/channel-delete-members.md
               - name: Migração completa para canal
                 href: api/channel-completemigration.md
-              - name: Obter pasta de arquivos.
-                href: api/channel-get-filesfolder.md
-              - name: Listar mensagens do canal
-                href: api/channel-list-messages.md
-              - name: Obter mensagens de canal delta
-                href: api/chatmessage-delta.md
               - name: Obter mensagens do canal
                 href: api/chatmessage-get.md
-              - name: Listar respostas da mensagem
-                href: api/chatmessage-list-replies.md
+              - name: Obter mensagens de canal delta
+                href: api/chatmessage-delta.md
+              - name: Obter pasta de arquivos.
+                href: api/channel-get-filesfolder.md
+              - name: Obter membro
+                href: api/channel-get-members.md
               - name: Obter resposta da mensagem
                 href: api/chatmessage-get.md
-              - name: Enviar mensagem
-                href: api/channel-post-messages.md
+              - name: Listar mensagens do canal
+                href: api/channel-list-messages.md
+              - name: Listar membros
+                href: api/channel-list-members.md
+              - name: Listar respostas da mensagem
+                href: api/chatmessage-list-replies.md
+              - name: Remover membro
+                href: api/channel-delete-members.md
               - name: Responder à mensagem
                 href: api/chatmessage-post-replies.md
+              - name: Enviar mensagem
+                href: api/channel-post-messages.md
+              - name: Atualizar a função de membro
+                href: api/channel-update-members.md
               - name: Atualizar mensagem
                 href: api/chatmessage-update.md
           - name: Chat
