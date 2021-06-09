@@ -5,12 +5,12 @@ author: abhijeetsinha
 localization_priority: Normal
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 9425849444a31454e3a98fcd2fbabd8a04184938
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: c1f61ba3ca3d282003d191df2d7a22e44ee68a8b
+ms.sourcegitcommit: 9eeb056f311044aaa40654cdb3ae5ae61f1c4d04
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52046822"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "52854185"
 ---
 # <a name="list-members"></a>Listar membros
 
@@ -19,6 +19,9 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Recupera uma lista dos usuários atribuídos à função de diretório.  Somente usuários podem ser atribuídos a uma função de diretório.
+
+Você pode usar a ID do objeto e a ID do modelo do **directoryRole** com essa API. A ID do modelo de uma função embutida é imutável e pode ser vista na descrição da função no portal do Azure. Para obter detalhes, consulte [Role template IDs](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#role-template-ids).
+
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -27,14 +30,15 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Application | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All |
+|Aplicativo | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All |
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /directoryRoles/{id}/members
+GET /directoryRoles/{role-objectId}/members
+GET /directoryRoles/roleTemplateId={role-templateId}/members
 ```
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
@@ -49,8 +53,11 @@ Não forneça um corpo de solicitação para esse método.
 ## <a name="response"></a>Resposta
 
 Se bem-sucedido, este método retorna um código de resposta `200 OK` e uma coleção de objetos [directoryObject](../resources/directoryobject.md) no corpo da resposta.
-## <a name="example"></a>Exemplo
-##### <a name="request"></a>Solicitação
+## <a name="examples"></a>Exemplos
+
+### <a name="example-1-get-the-members-of-a-directory-role-using-role-objectid"></a>Exemplo 1: Obter os membros de uma função de diretório usando objectId de função
+
+#### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -59,7 +66,7 @@ Este é um exemplo da solicitação.
   "name": "get_directoryrole_members"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/directoryRoles/{id}/members
+GET https://graph.microsoft.com/beta/directoryRoles/23f3b4b4-8a29-4420-8052-e4950273bbda/members
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-directoryrole-members-csharp-snippets.md)]
@@ -79,8 +86,8 @@ GET https://graph.microsoft.com/beta/directoryRoles/{id}/members
 
 ---
 
-##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+#### <a name="response"></a>Resposta
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -90,12 +97,61 @@ Veja a seguir um exemplo da resposta. Observação: o objeto de resposta mostrad
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 55
 
 {
   "value": [
     {
-      "id": "id-value"
+      "businessPhones":["000-000-0000"],
+      "displayName":"Adele Vance",
+      "givenName":"Adele",
+      "jobTitle":null,
+      "mail":"AdeleV@contoso.com",
+      "officeLocation":null,
+      "preferredLanguage":"en-US",
+      "surname":"Vance",
+      "userPrincipalName":"AdeleV@contoso.com"
+    }
+  ]
+}
+```
+
+### <a name="example-2-get-the-members-of-a-directory-role-using-role-templateid"></a>Exemplo 2: Obter os membros de uma função de diretório usando role templateId
+
+#### <a name="request"></a>Solicitação
+Este é um exemplo da solicitação.
+
+<!-- {
+  "blockType": "request",
+  "name": "get_directoryrole_members_templateId"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/directoryRoles/roleTemplateId=4a5d8f65-41da-4de4-8968-e035b65339cf/members
+```
+
+#### <a name="response"></a>Resposta
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.directoryObject",
+  "isCollection": true
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "value": [
+    {
+      "businessPhones":["000-000-0000"],
+      "displayName":"Adele Vance",
+      "givenName":"Adele",
+      "jobTitle":null,
+      "mail":"AdeleV@contoso.com",
+      "officeLocation":null,
+      "preferredLanguage":"en-US",
+      "surname":"Vance",
+      "userPrincipalName":"AdeleV@contoso.com"
     }
   ]
 }

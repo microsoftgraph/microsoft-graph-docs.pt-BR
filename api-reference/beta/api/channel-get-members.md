@@ -1,16 +1,16 @@
 ---
 title: Obter membro de um canal
-description: Obtenha membro de um canal.
+description: Obter membro de um canal.
 author: laujan
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: b87c5585c8163944e39839cc98714e27deb89929
-ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
+ms.openlocfilehash: 5102bfd273be2e8b5f2ff0c20c63e48c0449c16f
+ms.sourcegitcommit: 9eeb056f311044aaa40654cdb3ae5ae61f1c4d04
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49522171"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "52854177"
 ---
 # <a name="get-member-of-channel"></a>Obter membro de um canal
 
@@ -104,15 +104,16 @@ Content-type: application/json
 Content-length: 201
 
 {
-"@odata.context": "https://graph.microsoft.com/beta/$metadata#teams('ece6f0a1-7ca4-498b-be79-edf6c8fc4d82')/channels('19%3A56eb04e133944cf69e603c5dac2d292e%40thread.skype')/members/microsoft.graph.aadUserConversationMember/$entity",
-"@odata.type": "#microsoft.graph.aadUserConversationMember",
-"id": "ZWUwZjVhZTItOGJjNi00YWU1LTg0NjYtN2RhZWViYmZhMDYyIyM3Mzc2MWYwNi0yYWM5LTQ2OWMtOWYxMC0yNzlhOGNjMjY3Zjk=",
-"roles": ["owner"],
-"displayName": "John Doe",
-"userId": "8b081ef6-4792-4def-b2c9-c363a1bf41d5",
-"email": null
+   "@odata.context":"https://graph.microsoft.com/beta/$metadata#teams('ece6f0a1-7ca4-498b-be79-edf6c8fc4d82')/channels('19%3A56eb04e133944cf69e603c5dac2d292e%40thread.skype')/members/microsoft.graph.aadUserConversationMember/$entity",
+   "@odata.type":"#microsoft.graph.aadUserConversationMember",
+   "id":"ZWUwZjVhZTItOGJjNi00YWU1LTg0NjYtN2RhZWViYmZhMDYyIyM3Mzc2MWYwNi0yYWM5LTQ2OWMtOWYxMC0yNzlhOGNjMjY3Zjk=",
+   "roles":[
+      "owner"
+   ],
+   "displayName":"John Doe",
+   "userId":"8b081ef6-4792-4def-b2c9-c363a1bf41d5",
+   "email":null
 }
-
 ```
 
 ## <a name="see-also"></a>Confira também

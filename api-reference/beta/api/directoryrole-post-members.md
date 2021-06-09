@@ -5,12 +5,12 @@ author: abhijeetsinha
 localization_priority: Normal
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 09d1a760954a88f1201bd21e7ea0971028da2c50
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 7ba6d589702034ca2463386a700560ba42d9dcaa
+ms.sourcegitcommit: 9eeb056f311044aaa40654cdb3ae5ae61f1c4d04
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52787033"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "52854184"
 ---
 # <a name="add-directory-role-member"></a>Adicionar membro da função de diretório
 
@@ -19,7 +19,10 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Crie um novo membro de função de diretório.
-## <a name="permissions"></a>Permissions
+
+Você pode usar a ID do objeto e a ID do modelo do **directoryRole** com essa API. A ID do modelo de uma função embutida é imutável e pode ser vista na descrição da função no portal do Azure. Para obter detalhes, consulte [Role template IDs](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#role-template-ids).
+
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
@@ -31,7 +34,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /directoryRoles/{id}/members/$ref
+POST /directoryRoles/{role-objectId}/members/$ref
+POST /directoryRoles/roleTemplateId={role-templateId}/members/$ref
 ```
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Tipo | Descrição|
@@ -85,7 +89,6 @@ Content-length: 30
 ---
 
 #### <a name="response"></a>Resposta
-O exemplo a seguir mostra a resposta. 
 
 <!-- {
   "blockType": "response"
@@ -133,7 +136,6 @@ Content-length: 30
 
 
 #### <a name="response"></a>Resposta
-O exemplo a seguir mostra a resposta. 
 
 <!-- {
   "blockType": "response"
@@ -141,6 +143,34 @@ O exemplo a seguir mostra a resposta.
 ```http
 HTTP/1.1 204 No content
 ```
+
+### <a name="example-3-add-a-new-member-to-a-directory-role-using-role-templateid"></a>Exemplo 3: Adicionar um novo membro a uma função de diretório usando role templateId
+#### <a name="request"></a>Solicitação
+Nesta solicitação, substitua pelo valor da `88d8e3e3-8f55-4a1e-953a-9b9898b8876b` **funçãoTemplateId** para a função de diretório que você deseja atribuir ao usuário ou objeto de diretório. Substitua `bb165b45-151c-4cf6-9911-cd7188912848` pelo valor de **id** do seu objeto de diretório ou usuário. 
+
+<!-- {
+  "blockType": "request",
+  "name": "create_directoryobject_from_directoryrole_2_templateId"
+}-->
+```http
+POST https://graph.microsoft.com/beta/directoryRoles/roleTemplateId=88d8e3e3-8f55-4a1e-953a-9b9898b8876b/members/$ref
+Content-type: application/json
+Content-length: 30
+
+{
+    "@odata.id": "https://graph.microsoft.com/beta/directoryObjects/bb165b45-151c-4cf6-9911-cd7188912848"
+}
+```
+
+#### <a name="response"></a>Resposta
+
+<!-- {
+  "blockType": "response"
+} -->
+```http
+HTTP/1.1 204 No content
+```
+
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

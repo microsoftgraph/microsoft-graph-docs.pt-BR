@@ -5,12 +5,12 @@ author: abhijeetsinha
 localization_priority: Normal
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 406c0646a3d9dbac3f31dd2bd075a40e1678a415
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: f327c47c36bf2b26fe50eeb4b2d511f157c8006d
+ms.sourcegitcommit: 9eeb056f311044aaa40654cdb3ae5ae61f1c4d04
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52046808"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "52854205"
 ---
 # <a name="list-directoryroles"></a>Listar directoryRoles
 
@@ -26,7 +26,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Application | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All |
+|Aplicativo | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -78,7 +78,7 @@ GET https://graph.microsoft.com/beta/directoryRoles
 ---
 
 ##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser reduzido para facilitar a leitura.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -88,15 +88,30 @@ Veja a seguir um exemplo da resposta. Observação: o objeto de resposta mostrad
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 187
 
 {
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#directoryRoles",
   "value": [
     {
-      "description": "description-value",
-      "displayName": "displayName-value",
-      "roleTemplateId": "roleTemplateId-value",
-      "id": "id-value"
+      "id": "9ed3a0c4-53e1-498c-ab4d-2473476fde14",
+      "deletedDateTime": null,
+      "description": "Can manage all aspects of Azure AD and Microsoft services that use Azure AD identities.",
+      "displayName": "Global Administrator",
+      "roleTemplateId": "62e90394-69f5-4237-9190-012177145e10"
+    },
+    {
+      "id": "f8e85ed8-f66f-4058-b170-3efae8b9c6e5",
+      "deletedDateTime": null,
+      "description": "Device Administrators",
+      "displayName": "Azure AD Joined Device Local Administrator",
+      "roleTemplateId": "9f06204d-73c1-4d4c-880a-6edb90606fd8"
+    },
+    {
+      "id": "fe8f10bf-c9c2-47eb-95cb-c26cc85f1830",
+      "deletedDateTime": null,
+      "description": "Can read basic directory information. Commonly used to grant directory read access to applications and guests.",
+      "displayName": "Directory Readers",
+      "roleTemplateId": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
     }
   ]
 }
