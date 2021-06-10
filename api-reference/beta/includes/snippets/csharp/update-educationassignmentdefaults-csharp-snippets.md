@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 7f2ab10c48704542b2cf6e049481d29b3ca5bc04
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: 5b69b5bacebd8016470913c150a3ffcd469e4589
+ms.sourcegitcommit: 503c72036c376a30e08c29df8e7730a7afcab66e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50802335"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52871587"
 ---
 ```csharp
 
@@ -14,6 +14,7 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 var educationAssignmentDefaults = new EducationAssignmentDefaults
 {
     AddedStudentAction = EducationAddedStudentAction.AssignIfOpen,
+    AddToCalendarAction = EducationAddToCalendarOptions.StudentsAndTeamOwners,
     NotificationChannelUrl = "https://graph.microsoft.com/beta/teams('id')/channels('id')"
 };
 
