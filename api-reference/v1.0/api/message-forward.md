@@ -5,12 +5,12 @@ author: abheek-das
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: a787aeaa213732dc1a527a3889fb1a37ce9ad325
-ms.sourcegitcommit: cec76c5a58b359d79df764c849c8b459349b3b52
+ms.openlocfilehash: 3e0004bae41d7b700ae3a337bce27b214ba209cb
+ms.sourcegitcommit: 503c72036c376a30e08c29df8e7730a7afcab66e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "52645497"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52870399"
 ---
 # <a name="message-forward"></a>message: forward
 
@@ -22,16 +22,16 @@ Ao usar o formato JSON, você pode:
 - Especifique um comentário ou **a propriedade body** do `message` parâmetro. Especificar ambos retornará um erro HTTP 400 - Solicitação incorreta.
 - Especifique `toRecipients` o parâmetro ou a propriedade **toRecipients** do `message` parâmetro. Especificar ambos ou nenhum retornará um erro HTTP 400 - Solicitação incorreta.
 
-Ao usar o formato MIME:
-- Forneça os [headers](https://tools.ietf.org/html/rfc2076) de mensagens da Internet aplicáveis e o [conteúdo MIME](https://tools.ietf.org/html/rfc2045), todos codificados no **formato base64** no corpo da solicitação.
-- Adicione quaisquer anexos e propriedades S/MIME ao conteúdo MIME.
+Ao utilizar o formato MIME:
+- Fornecer os [cabeçalhos de mensagem da Internet](https://tools.ietf.org/html/rfc2076) e o [conteúdo MIME](https://tools.ietf.org/html/rfc2045) aplicáveis, todos codificados no formato **base64** no corpo da solicitação.
+- Adicionar quaisquer anexos e propriedades S/MIME ao conteúdo MIME.
 
-Este método salva a mensagem na pasta **Itens** Enviados.
+Este método salva a mensagem na pasta **Itens Enviados**.
 
 Como alternativa, [crie um rascunho para encaminhar uma mensagem](../api/message-createforward.md)e [enviá-la](../api/message-send.md) posteriormente.
 
 ## <a name="permissions"></a>Permissões
-Uma das seguintes permissões é necessária para chamar essa API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, consulte [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
@@ -51,7 +51,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/forward
 | Nome       | Tipo | Descrição| 
 |:---------------|:--------|:----------|
 | Autorização  | string  | Portador {token}. Obrigatório |
-| Content-Type | string  | Natureza dos dados no corpo de uma entidade.  Obrigatório. <br/> Use `application/json` para um objeto JSON e para conteúdo `text/plain` MIME. |
+| Content-Type | string  | Natureza dos dados no corpo de uma entidade.  Obrigatório. <br/> Use `application/json` para um objeto JSON e `text/plain` para conteúdo MIME. |
 
 ## <a name="request-body"></a>Corpo da solicitação
 Ao usar o formato JSON, forneça um objeto JSON no corpo da solicitação com os seguintes parâmetros.
@@ -61,13 +61,13 @@ Ao usar o formato JSON, forneça um objeto JSON no corpo da solicitação com os
 |comment|String|Um comentário a incluir. Não pode ficar vazio.|
 |toRecipients|Coleção [Recipient](../resources/recipient.md)|A lista de destinatários.|
 
-Ao especificar o corpo no formato MIME, forneça o conteúdo MIME com os headers de mensagem da Internet aplicáveis ("To", "CC", "BCC", "Subject"), todos codificados no formato **base64** no corpo da solicitação.
+Ao especificar o corpo no formato MIME, forneça ao conteúdo MIME os cabeçalhos de mensagem da Internet aplicáveis ("Para", "CC", "CCO", "Assunto"), todos codificados no formato **base64** no corpo da solicitação.
 
 ## <a name="response"></a>Resposta
 
 Se bem-sucedido, este método retorna um código de resposta `202 Accepted`. Não retorna nada no corpo da resposta.
 
-Se o corpo da solicitação incluir conteúdo MIME malformado, este método retornará e a seguinte mensagem de erro: "Cadeia de caracteres `400 Bad request` base64 inválida para conteúdo MIME".
+Se o corpo da solicitação incluir conteúdo MIME malformado, este método retornará `400 Bad request` e a seguinte mensagem de erro: "Cadeia de caracteres base64 inválida para o conteúdo MIME".
 
 ## <a name="examples"></a>Exemplos
 ### <a name="example-1-forward-a-message-using-json-format"></a>Exemplo 1: encaminhar uma mensagem usando o formato JSON
@@ -128,8 +128,9 @@ HTTP/1.1 200 OK
 
 ### <a name="example-2-forward-a-message-using-mime-content"></a>Exemplo 2: encaminhar uma mensagem usando conteúdo MIME
 ##### <a name="request"></a>Solicitação
+
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
   "name": "message_forward_mime_v1"
 }-->
 
@@ -139,6 +140,7 @@ Content-type: text/plain
 
 Q29udGVudC1UeXBlOiBhcHBsaWNhdGlvbi9wa2NzNy1taW1lOw0KCW5hbWU9c21pbWUucDdtOw0KCXNtaW1lLXR5cGU9ZW52ZWxvcGVkLWRhdGENCk1pbWUtVmVyc2lvbjogMS4wIChNYWMgT1MgWCBNYWlsIDEzLjAgXCgzNjAxLjAuMTBcKSkNClN1YmplY3Q6IFJlOiBUZXN0aW5nIFMvTUlNRQ0KQ29udGVudC1EaXNwb3Np
 ```
+
 ##### <a name="response"></a>Resposta
 Veja a seguir um exemplo da resposta.
 <!-- {

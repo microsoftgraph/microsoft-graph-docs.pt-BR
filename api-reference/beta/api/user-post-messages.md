@@ -1,16 +1,16 @@
 ---
 title: Criar mensagem
-description: Crie um rascunho de uma nova mensagem no formato JSON ou MIME.
+description: Criar um rascunho de uma nova mensagem no formato JSON ou MIME.
 localization_priority: Normal
 author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: acb10508eec31e39d5f631aee91dc3b85f964d3d
-ms.sourcegitcommit: cec76c5a58b359d79df764c849c8b459349b3b52
+ms.openlocfilehash: 4305a14ba2726102427c4f0b4c733656be2fd03b
+ms.sourcegitcommit: 503c72036c376a30e08c29df8e7730a7afcab66e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "52645567"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52868907"
 ---
 # <a name="create-message"></a>Criar mensagem
 
@@ -18,25 +18,25 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Crie um rascunho de uma nova mensagem no formato JSON ou MIME.
+Criar um rascunho de uma nova mensagem no formato JSON ou MIME.
 
 Ao usar o formato JSON, você pode:
 - Inclua um [anexo](../resources/attachment.md).
 - Use uma [menção](../resources/mention.md) para chamar outro usuário na nova mensagem.
-- [Atualize](../api/message-update.md) o rascunho posteriormente para adicionar conteúdo ao **corpo ou** alterar outras propriedades da mensagem.
+- [Atualizar](../api/message-update.md) o rascunho mais tarde para adicionar conteúdo ao **corpo** ou alterar outras propriedades da mensagem.
 
-Ao usar o formato MIME:
-- Forneça os [headers](https://tools.ietf.org/html/rfc2076) de mensagens da Internet aplicáveis e o [conteúdo MIME](https://tools.ietf.org/html/rfc2045), todos codificados no **formato base64** no corpo da solicitação.
-- Adicione quaisquer anexos e propriedades S/MIME ao conteúdo MIME.
+Ao utilizar o formato MIME:
+- Fornecer os [cabeçalhos de mensagem da Internet](https://tools.ietf.org/html/rfc2076) e o [conteúdo MIME](https://tools.ietf.org/html/rfc2045) aplicáveis, todos codificados no formato **base64** no corpo da solicitação.
+- Adicionar quaisquer anexos e propriedades S/MIME ao conteúdo MIME.
 
-Por padrão, essa operação salva o rascunho na pasta Rascunhos.
+Por padrão, esta operação salva o rascunho na pasta Rascunhos.
 
-[Envie](/graph/api-reference/beta/api/message-send.md) a mensagem de rascunho em uma operação subsequente.
+[Enviar](/graph/api-reference/beta/api/message-send.md) o rascunho da mensagem em uma operação subsequente.
 
 Como alternativa, [envie uma nova](../api/user-sendmail.md) mensagem em uma única ação ou [](../api/message-createreplyall.md) crie um [rascunho](../api/message-createforward.md)para encaminhar [,](../api/message-createreply.md) para responder ou para responder a uma mensagem existente.
 
 ## <a name="permissions"></a>Permissões
-Uma das seguintes permissões é necessária para chamar essa API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, consulte [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
@@ -61,7 +61,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages
 ## <a name="request-body"></a>Corpo da solicitação
 Ao usar o formato JSON, forneça uma representação JSON do [objeto message.](../resources/message.md)
 
-Ao especificar o corpo no formato MIME, forneça o conteúdo MIME com os headers de mensagem da Internet aplicáveis ("To", "CC", "BCC", "Subject"), todos codificados no formato **base64** no corpo da solicitação.
+Ao especificar o corpo no formato MIME, forneça ao conteúdo MIME os cabeçalhos de mensagem da Internet aplicáveis ("Para", "CC", "CCO", "Assunto"), todos codificados no formato **base64** no corpo da solicitação.
 
 Para usar **a menção** para chamar outro usuário na nova mensagem:
 - Inclua a propriedade **required toRecipients,** a propriedade **mentions** e quaisquer propriedades de mensagem writable no corpo da solicitação.
@@ -74,7 +74,7 @@ Como o recurso **message** dá suporte a [extensions](/graph/extensibility-overv
 
 Se tiver êxito, este método retornará um código `201 Created` de resposta e um objeto [message](../resources/message.md) no corpo da resposta.
 
-Se o corpo da solicitação incluir conteúdo MIME malformado, este método retornará e a seguinte mensagem de erro: "Cadeia de caracteres `400 Bad request` base64 inválida para conteúdo MIME".
+Se o corpo da solicitação incluir conteúdo MIME malformado, este método retornará `400 Bad request` e a seguinte mensagem de erro: "Cadeia de caracteres base64 inválida para o conteúdo MIME".
 
 ## <a name="examples"></a>Exemplos
 ### <a name="example-1-create-a-message-draft-in-json-format"></a>Exemplo 1: Criar um rascunho de mensagem no formato JSON
@@ -440,7 +440,7 @@ Content-type: application/json
 #### <a name="request"></a>Solicitação
 
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
   "name": "message_create_draft_mime_beta"
 }-->
 
@@ -457,6 +457,7 @@ MU1CMjAwMDAwMDAwRDc2RDlDMjgyMjAwMDA5QUQ5QTlASFdIUFIxMzAxTUIwMDAwLmNvZGVudW0u
 cHJvZC5vdXRsb29rLmNvbT4KQ29udGVudC1MYW5ndWFnZTogZW4tVVMKWC1NUy1IYXMtQXR0YWNo
 OgpYLU1TLVRORUYtQ29ycmVsYXRv
 ```
+
 
 #### <a name="response"></a>Resposta
 Veja a seguir um exemplo da resposta.

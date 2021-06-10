@@ -5,12 +5,12 @@ author: abheek-das
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 4f43bf932e207574d03a788e29cc884432e90919
-ms.sourcegitcommit: cec76c5a58b359d79df764c849c8b459349b3b52
+ms.openlocfilehash: 758ca460786eb7e59c41762f8dfa4209b20a62b9
+ms.sourcegitcommit: 503c72036c376a30e08c29df8e7730a7afcab66e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "52645553"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52870420"
 ---
 # <a name="message-createforward"></a>message: createForward
 
@@ -23,18 +23,18 @@ Crie um rascunho para encaminhar uma mensagem [existente](../resources/message.m
 Ao usar o formato JSON, você pode: 
 - Especifique um comentário ou **a propriedade body** do `message` parâmetro. Especificar ambos retornará um erro HTTP 400 - Solicitação incorreta.
 - Especifique `toRecipients` o parâmetro ou a propriedade **toRecipients** do `message` parâmetro. Especificar ambos ou nenhum retornará um erro HTTP 400 - Solicitação incorreta.
-- [Atualize](../api/message-update.md) o rascunho posteriormente para adicionar conteúdo ao **corpo ou** alterar outras propriedades da mensagem.
+- [Atualizar](../api/message-update.md) o rascunho mais tarde para adicionar conteúdo ao **corpo** ou alterar outras propriedades da mensagem.
 
-Ao usar o formato MIME:
-- Forneça os [headers](https://tools.ietf.org/html/rfc2076) de mensagens da Internet aplicáveis e o [conteúdo MIME](https://tools.ietf.org/html/rfc2045), todos codificados no **formato base64** no corpo da solicitação.
-- Adicione quaisquer anexos e propriedades S/MIME ao conteúdo MIME.
+Ao utilizar o formato MIME:
+- Fornecer os [cabeçalhos de mensagem da Internet](https://tools.ietf.org/html/rfc2076) e o [conteúdo MIME](https://tools.ietf.org/html/rfc2045) aplicáveis, todos codificados no formato **base64** no corpo da solicitação.
+- Adicionar quaisquer anexos e propriedades S/MIME ao conteúdo MIME.
 
-[Envie](../api/message-send.md) a mensagem de rascunho em uma operação subsequente.
+[Enviar](../api/message-send.md) o rascunho da mensagem em uma operação subsequente.
 
 Como alternativa, [encaminhe uma mensagem](../api/message-forward.md) em uma única operação.
 
 ## <a name="permissions"></a>Permissões
-Uma das seguintes permissões é necessária para chamar essa API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, consulte [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
@@ -54,7 +54,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/createForwar
 | Nome       | Tipo | Descrição|
 |:---------------|:--------|:----------|
 | Autorização  | string  | {token} de portador. Obrigatório.|
-| Content-Type | string  | Natureza dos dados no corpo de uma entidade. Obrigatório.<br/> Use `application/json` para um objeto JSON e para conteúdo `text/plain` MIME.|
+| Content-Type | string  | Natureza dos dados no corpo de uma entidade. Obrigatório.<br/> Use `application/json` para um objeto JSON e `text/plain` para conteúdo MIME.|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Para enviar um objeto JSON, forneça os seguintes parâmetros.
@@ -63,15 +63,15 @@ Para enviar um objeto JSON, forneça os seguintes parâmetros.
 |:---------------|:--------|:----------|
 |comment|String|Um comentário a incluir. Não pode ficar vazio.|
 |toRecipients|Coleção [recipient](../resources/recipient.md)|A lista de destinatários.|
-|message|[message](../resources/message.md)|Quaisquer propriedades graváveis ​​a serem atualizadas na mensagem de resposta.|
+|mensagem|[message](../resources/message.md)|Quaisquer propriedades graváveis ​​a serem atualizadas na mensagem de resposta.|
 
-Ao especificar o corpo no formato MIME, forneça o conteúdo MIME com os headers de mensagem da Internet aplicáveis ("To", "CC", "BCC", "Subject"), todos codificados no formato **base64** no corpo da solicitação.
+Ao especificar o corpo no formato MIME, forneça ao conteúdo MIME os cabeçalhos de mensagem da Internet aplicáveis ("Para", "CC", "CCO", "Assunto"), todos codificados no formato **base64** no corpo da solicitação.
 
 ## <a name="response"></a>Resposta
 
 Se bem-sucedido, este método retorna o código de resposta `201 Created` e o objeto [message](../resources/message.md) no corpo da resposta.
 
-Se o corpo da solicitação incluir conteúdo MIME malformado, este método retornará e a seguinte mensagem de erro: "Cadeia de caracteres `400 Bad request` base64 inválida para conteúdo MIME".
+Se o corpo da solicitação incluir conteúdo MIME malformado, este método retornará `400 Bad request` e a seguinte mensagem de erro: "Cadeia de caracteres base64 inválida para o conteúdo MIME".
 
 ## <a name="examples"></a>Exemplos
 
@@ -167,8 +167,9 @@ Content-length: 272
 ### <a name="example-2-create-a-draft-message-in-mime-format-to-forward-an-existing-message"></a>Exemplo 2: Criar uma mensagem de rascunho no formato MIME para encaminhar uma mensagem existente
 
 ##### <a name="request"></a>Solicitação
+
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
   "name": "message_createForward_mime_beta"
 }-->
 
@@ -185,6 +186,7 @@ MU1CMjAwMDAwMDAwRDc2RDlDMjgyMjAwMDA5QUQ5QTlASFdIUFIxMzAxTUIwMDAwLmNvZGVudW0u
 cHJvZC5vdXRsb29rLmNvbT4KQ29udGVudC1MYW5ndWFnZTogZW4tVVMKWC1NUy1IYXMtQXR0YWNo
 OgpYLU1TLVRORUYtQ29ycmVsYXRvcjoKWC1NUy1FeGNoYW5n
 ```
+
 ##### <a name="response"></a>Resposta
 Veja a seguir um exemplo da resposta.
 

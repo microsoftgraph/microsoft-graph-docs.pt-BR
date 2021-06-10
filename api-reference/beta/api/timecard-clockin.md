@@ -5,12 +5,12 @@ author: akumar39
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 7075b2323bcf2792dcb58b09c248dbcc095775d2
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 5a21d1fd3af16b342ffcc98c47d854cf49a00ccd
+ms.sourcegitcommit: 503c72036c376a30e08c29df8e7730a7afcab66e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52787856"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52869797"
 ---
 # <a name="timecard-clockin"></a>timeCard: clockIn
 
@@ -26,7 +26,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Schedule.ReadWrite.All    |
+|Delegada (conta corporativa ou de estudante) | Schedule.ReadWrite.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Schedule.ReadWrite.All* |
 
@@ -55,7 +55,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 | Parâmetro    | Tipo        | Descrição |
 |:-------------|:------------|:------------|
 |atApprovedLocation| `Edm.boolean ` | Indique se essa ação acontece em um local aprovado.|
-|onBehalfOfUserId| String | Parâmetro opcional usado pelo gerente para entrar no relógio em nome de um usuário.|
+|onBehalfOfUserId| Cadeia de caracteres | Parâmetro opcional usado pelo gerente para entrar no relógio em nome de um usuário.|
 |notes| [itemBody](../resources/itembody.md)  |Observações para o relógio em. |
 
 ## <a name="response"></a>Resposta
@@ -85,6 +85,16 @@ Content-type: application/json
     }
 }
 ```
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/timecard-clockin-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/timecard-clockin-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>Resposta
 

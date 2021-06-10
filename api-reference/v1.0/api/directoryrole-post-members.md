@@ -5,36 +5,37 @@ author: abhijeetsinha
 localization_priority: Normal
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 350a68a06c94782951163007751819c58e8113b1
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: ae03863fd35d7438a5fa3b9ff2ae0bfa90e41dce
+ms.sourcegitcommit: 9eeb056f311044aaa40654cdb3ae5ae61f1c4d04
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52787636"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "52854163"
 ---
 # <a name="add-directory-role-member"></a>Adicionar membro da função de diretório
 
 Namespace: microsoft.graph
 
-Use esta API para criar um novo membro de função de diretório.
+Crie um novo membro de função de diretório.
 
-> [!Note]
-> Você pode usar a ID do objeto e a ID do modelo do **directoryRole** com essa API. A ID do modelo de uma função embutida é imutável e pode ser vista na descrição da função no portal do Azure. Para obter detalhes, consulte [Role template IDs](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#role-template-ids).
+Você pode usar a ID do objeto e a ID do modelo do **directoryRole** com essa API. A ID do modelo de uma função embutida é imutável e pode ser vista na descrição da função no portal do Azure. Para obter detalhes, consulte [Role template IDs](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#role-template-ids).
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | RoleManagement.ReadWrite.Directory, Directory.AccessAsUser.All    |
+|Delegada (conta corporativa ou de estudante) | RoleManagement.ReadWrite.Directory, Directory.AccessAsUser.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | RoleManagement.ReadWrite.Directory |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /directoryRoles/{id}/members/$ref
+POST /directoryRoles/{role-objectId}/members/$ref
+POST /directoryRoles/roleTemplateId={role-templateId}/members/$ref
 ```
+
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Tipo | Descrição|
 |:---------------|:--------|:----------|
@@ -52,6 +53,8 @@ Se bem sucedido, este método retorna um código de resposta `204 No Content`.
 
 ### <a name="example-1-add-a-new-member-to-a-directory-role-using-role-objectid"></a>Exemplo 1: Adicionar um novo membro a uma função de diretório usando objectId de função
 
+Nesta solicitação, substitua pelo valor de id da função `fe8f10bf-c9c2-47eb-95cb-c26cc85f1830` de diretório que você deseja atribuir ao usuário ou objeto de  diretório. Substitua `15c1a2d5-9101-44b2-83ab-885db8a647ca` pelo valor de **id** do seu objeto de diretório ou usuário. 
+
 ##### <a name="request"></a>Solicitação
 
 
@@ -61,11 +64,11 @@ Se bem sucedido, este método retorna um código de resposta `204 No Content`.
   "name": "create_directoryobject_from_directoryrole_objectId"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/directoryRoles/{role-objectId}/members/$ref
+POST https://graph.microsoft.com/v1.0/directoryRoles/fe8f10bf-c9c2-47eb-95cb-c26cc85f1830/members/$ref
 Content-type: application/json
 
 {
-  "@odata.id": "https://graph.microsoft.com/v1.0/directoryObjects/{user-id}"
+  "@odata.id": "https://graph.microsoft.com/v1.0/directoryObjects/15c1a2d5-9101-44b2-83ab-885db8a647ca"
 }
 ```
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
@@ -100,6 +103,8 @@ Content-type: text/plain
 
 ### <a name="example-2-add-a-new-member-to-a-directory-role-using-role-templateid"></a>Exemplo 2: Adicionar um novo membro a uma função de diretório usando role templateId
 
+Nesta solicitação, substitua pelo valor da `88d8e3e3-8f55-4a1e-953a-9b9898b8876b` **funçãoTemplateId** para a função de diretório que você deseja atribuir ao usuário ou objeto de diretório. Substitua `bb165b45-151c-4cf6-9911-cd7188912848` pelo valor de **id** do seu objeto de diretório ou usuário. 
+
 ##### <a name="request"></a>Solicitação
 
 
@@ -109,11 +114,11 @@ Content-type: text/plain
   "name": "create_directoryobject_from_directoryrole_templateId"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/directoryRoles/roleTemplateId={role-templateId}/members/$ref
+POST https://graph.microsoft.com/v1.0/directoryRoles/roleTemplateId=88d8e3e3-8f55-4a1e-953a-9b9898b8876b/members/$ref
 Content-type: application/json
 
 {
-  "@odata.id": "https://graph.microsoft.com/v1.0/directoryObjects/{user-id}"
+  "@odata.id": "https://graph.microsoft.com/v1.0/directoryObjects/bb165b45-151c-4cf6-9911-cd7188912848"
 }
 ```
 # <a name="javascript"></a>[JavaScript](#tab/javascript)

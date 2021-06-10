@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 9e75bf3ff8eb7e0a05b94430ff4e5cbd2e99c125
-ms.sourcegitcommit: cec76c5a58b359d79df764c849c8b459349b3b52
+ms.openlocfilehash: e5a9cab87389f41c795268a1d7964a7d8e987269
+ms.sourcegitcommit: 503c72036c376a30e08c29df8e7730a7afcab66e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "52645525"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52870497"
 ---
 # <a name="message-reply"></a>message: reply
 
@@ -24,16 +24,16 @@ Ao usar o formato JSON:
 - Especifique um comentário ou **a propriedade body** do `message` parâmetro. Especificar ambos retornará um erro HTTP 400 - Solicitação incorreta.
 - Se a mensagem original especificar um destinatário na propriedade **replyTo,** por Formato de Mensagem da Internet ([RFC 2822](https://www.rfc-editor.org/info/rfc2822)), envie a resposta aos destinatários em **replyTo** e não ao destinatário na propriedade **from.**
 
-Ao usar o formato MIME:
-- Forneça os [headers](https://tools.ietf.org/html/rfc2076) de mensagens da Internet aplicáveis e o [conteúdo MIME](https://tools.ietf.org/html/rfc2045), todos codificados no **formato base64** no corpo da solicitação.
-- Adicione quaisquer anexos e propriedades S/MIME ao conteúdo MIME.
+Ao utilizar o formato MIME:
+- Fornecer os [cabeçalhos de mensagem da Internet](https://tools.ietf.org/html/rfc2076) e o [conteúdo MIME](https://tools.ietf.org/html/rfc2045) aplicáveis, todos codificados no formato **base64** no corpo da solicitação.
+- Adicionar quaisquer anexos e propriedades S/MIME ao conteúdo MIME.
 
-Este método salva a mensagem na pasta **Itens** Enviados.
+Este método salva a mensagem na pasta **Itens Enviados**.
 
 Como alternativa, [crie um rascunho para responder a uma mensagem](../api/message-createreply.md)e [envie-a](../api/message-send.md) mais tarde.
 
 ## <a name="permissions"></a>Permissões
-Uma das seguintes permissões é necessária para chamar essa API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, consulte [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
@@ -64,7 +64,7 @@ Ao usar o formato JSON, inclua um objeto JSON com os seguintes parâmetros.
 | Parâmetro    | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |comment|String|Um comentário a incluir. Não pode ficar vazio.|
-|message|[message](../resources/message.md) | Quaisquer propriedades graváveis ​​a serem atualizadas na mensagem de resposta.|
+|mensagem|[message](../resources/message.md) | Quaisquer propriedades graváveis ​​a serem atualizadas na mensagem de resposta.|
 
 Ao especificar o corpo no formato MIME, forneça o conteúdo MIME com os headers de mensagem da Internet aplicáveis, todos codificados no **formato base64** no corpo da solicitação. Este método usa o remetente da mensagem original como destinatário.
 
@@ -72,7 +72,7 @@ Ao especificar o corpo no formato MIME, forneça o conteúdo MIME com os headers
 
 Se bem-sucedido, este método retorna um código de resposta `202 Accepted`. Não retorna nada no corpo da resposta.
 
-Se o corpo da solicitação incluir conteúdo MIME malformado, este método retornará e a seguinte mensagem de erro: "Cadeia de caracteres `400 Bad request` base64 inválida para conteúdo MIME".
+Se o corpo da solicitação incluir conteúdo MIME malformado, este método retornará `400 Bad request` e a seguinte mensagem de erro: "Cadeia de caracteres base64 inválida para o conteúdo MIME".
 
 ## <a name="examples"></a>Exemplos
 ### <a name="example-1-reply-to-a-message-in-json-format"></a>Exemplo 1: Responder a uma mensagem no formato JSON
@@ -149,7 +149,7 @@ HTTP/1.1 202 Accepted
 ##### <a name="request"></a>Solicitação
 
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
   "name": "message_reply_mime_beta"
 }-->
 

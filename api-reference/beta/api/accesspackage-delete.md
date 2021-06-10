@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: a5a147cd09f044cafdc7738581bb9b52b6ddf66d
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 710bbd3e015af5109b95905d6db68061de1506f5
+ms.sourcegitcommit: 503c72036c376a30e08c29df8e7730a7afcab66e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50439846"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52868865"
 ---
 # <a name="delete-accesspackage"></a>Excluir accessPackage
 
@@ -20,13 +20,16 @@ Namespace: microsoft.graph
 
 [Exclua um objeto accessPackage.](../resources/accesspackage.md)
 
-## <a name="permissions"></a>Permissões
+Não é possível excluir um pacote de acesso se ele tiver **qualquer accessPackageAssignment**. Para excluir o pacote de acesso, [primeiro consulte](accesspackageassignment-list.md) se há alguma atribuição com um filtro para indicar o pacote de acesso específico, como: `$filter=accessPackage/id eq 'a914b616-e04e-476b-aa37-91038f0b165b'` . Para obter mais informações sobre como remover atribuições que ainda estão no estado entregue, consulte [Remover uma atribuição](accesspackageassignmentrequest-post.md#example-4-remove-an-assignment).
+
+
+## <a name="permissions"></a>Permissions
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | EntitlementManagement.ReadWrite.All |
+| Delegada (conta corporativa ou de estudante)     | EntitlementManagement.ReadWrite.All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo                            | EntitlementManagement.ReadWrite.All |
 

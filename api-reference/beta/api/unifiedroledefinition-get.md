@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 367a88bc2563f8b62f66d812668871b1d84fb4b8
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 71948e099507bf081739dbef9f4e07d43f358af9
+ms.sourcegitcommit: 503c72036c376a30e08c29df8e7730a7afcab66e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52053402"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52870315"
 ---
 # <a name="get-unifiedroledefinition"></a>Obter unifiedRoleDefinition
 
@@ -18,20 +18,40 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere as propriedades e as relações de um [objeto unifiedRoleDefinition.](../resources/unifiedRoleDefinition.md) Atualmente, o "diretório" é o único aplicativo RBAC com suporte.
+Obter as propriedades e as relações de [um objeto unifiedRoleDefinition](../resources/unifiedRoleDefinition.md) de um provedor RBAC. 
 
-## <a name="permissions"></a>Permissões
+No momento, há suporte para os seguintes provedores RBAC:
+- cloud PC 
+- gerenciamento de dispositivos (Intune)
+- directory (Azure AD) 
 
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
+[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
-|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Application | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All |
+## <a name="permissions"></a>Permissions
+
+Dependendo do provedor RBAC e do tipo de permissão (delegado ou aplicativo) necessário, escolha na tabela a seguinte permissão com menos privilégios necessária para chamar essa API. Para saber mais, incluindo [tomar cuidado](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) antes de escolher as permissões mais privilegiadas, pesquise as seguintes permissões em [Permissões](/graph/permissions-reference). 
+
+|Provedor com suporte      | Delegada (conta corporativa ou de estudante)  | Delegada (conta pessoal da Microsoft) | Aplicativo |
+|:-----------------------|:------------------------------------|:---------------------------------------|:------------|
+| Cloud PC | CloudPC.Read.All, CloudPC.ReadWrite.All | Sem suporte. | CloudPC.Read.All, CloudPC.ReadWrite.All |
+| Gerenciamento de dispositivo | DeviceManagementRBAC.Read.All, DeviceManagementRBAC.ReadWrite.All | Sem suporte. | DeviceManagementRBAC.Read.All, DeviceManagementRBAC.ReadWrite.All |
+| Diretório | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All, Directory.AccessAsUser.All | Sem suporte.| RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
+Obter uma definição de função para um provedor de computadores na nuvem:
+<!-- { "blockType": "ignored" } -->
+```http
+GET /roleManagement/cloudPC/roleDefinitions/{id}
+```
+
+Obter uma definição de função para um provedor de gerenciamento de dispositivo:
+<!-- { "blockType": "ignored" } -->
+```http
+GET /roleManagement/deviceManagement/roleDefinitions/{id}
+```
+
+Obter uma definição de função para um provedor de diretórios:
 <!-- { "blockType": "ignored" } -->
 
 ```http
@@ -58,7 +78,7 @@ Se tiver êxito, este método retornará um código de resposta e `200 OK` o obj
 
 ## <a name="examples"></a>Exemplos
 
-### <a name="example-1-get-the-definition-of-a-custom-role"></a>Exemplo 1: Obter a definição de uma função personalizada
+### <a name="example-1-get-the-definition-of-a-custom-role-for-a-directory-provider"></a>Exemplo 1: Obter a definição de uma função personalizada para um provedor de diretórios
 
 #### <a name="request"></a>Solicitação
 
@@ -132,7 +152,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-get-the-definition-of-a-built-in-role"></a>Exemplo 2: Obter a definição de uma função integrado
+### <a name="example-2-get-the-definition-of-a-built-in-role-for-a-directory-provider"></a>Exemplo 2: Obter a definição de uma função embutida para um provedor de diretórios
 
 #### <a name="request"></a>Solicitação
 
@@ -393,6 +413,81 @@ Content-type: application/json
                     "condition": null
                 }
             ]
+        }
+    ]
+}
+```
+
+### <a name="example-4-get-the-definition-of-a-built-in-role-for-a-cloud-pc-provider"></a>Exemplo 4: Obter a definição de uma função criada para um provedor de computadores na nuvem
+
+#### <a name="request"></a>Solicitação
+
+
+# <a name="http"></a>[HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "get_built-in_cloudpc_role_unifiedroledefinition"
+}-->
+
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/roleManagement/cloudPC/roleDefinitions/d40368cb-fbf4-4965-bbc1-f17b3a78e510
+```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-built-in-cloudpc-role-unifiedroledefinition-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-built-in-cloudpc-role-unifiedroledefinition-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-built-in-cloudpc-role-unifiedroledefinition-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-built-in-cloudpc-role-unifiedroledefinition-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+
+#### <a name="response"></a>Resposta
+> **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.unifiedRoleDefinition"
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#roleManagement/cloudPC/roleDefinitions/$entity",
+    "id": "d40368cb-fbf4-4965-bbc1-f17b3a78e510",
+    "description": "Have read-only access all Cloud PC features.",
+    "displayName": "Cloud PC Reader",
+    "isBuiltIn": true,
+    "isEnabled": true,
+    "resourceScopes": [
+        "/"
+    ],
+    "templateId": "d40368cb-fbf4-4965-bbc1-f17b3a78e510",
+    "version": null,
+    "rolePermissions": [
+        {
+            "allowedResourceActions": [
+                "Microsoft.CloudPC/CloudPCs/Read",
+                "Microsoft.CloudPC/DeviceImages/Read",
+                "Microsoft.CloudPC/OnPremisesConnections/Read",
+                "Microsoft.CloudPC/ProvisioningPolicies/Read",
+                "Microsoft.CloudPC/Roles/Read",
+                "Microsoft.CloudPC/SelfServiceSettings/Read"
+            ],
+            "condition": null
         }
     ]
 }

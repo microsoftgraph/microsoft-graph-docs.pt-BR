@@ -5,12 +5,12 @@ author: abhijeetsinha
 localization_priority: Normal
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: b0917837174f0b4fa2bb7c7f0ea6f5879df1b2a1
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: c03985f37fe7ce58ccf1aec30a2b95f282d16820
+ms.sourcegitcommit: 9eeb056f311044aaa40654cdb3ae5ae61f1c4d04
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50442030"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "52854247"
 ---
 # <a name="get-directoryrole"></a>Obter directoryRole
 
@@ -18,25 +18,25 @@ Namespace: microsoft.graph
 
 Recupere as propriedades de um [objeto directoryRole.](../resources/directoryrole.md) A função deve ser ativada no locatário para uma resposta bem-sucedida.
 
-> [!Note]
-> Você pode usar a ID do objeto e a ID do modelo do **directoryRole** com essa API. A ID do modelo de uma função embutida é imutável e pode ser vista na descrição da função no portal do Azure. Para obter detalhes, consulte [Role template IDs](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#role-template-ids).
+Você pode usar a ID do objeto e a ID do modelo do **directoryRole** com essa API. A ID do modelo de uma função embutida é imutável e pode ser vista na descrição da função no portal do Azure. Para obter detalhes, consulte [Role template IDs](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#role-template-ids).
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Delegada (conta corporativa ou de estudante) | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /directoryRoles/{id}
+GET /directoryRoles/{role-objectId}
+GET /directoryRoles/roleTemplateId={role-templateId}
 ```
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Esse método **não** tem suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta (por exemplo, $filter não tem suporte aqui).
+Esse método não **dá suporte** a [parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta (por exemplo, `$filter` não há suporte aqui).
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Tipo | Descrição|
@@ -51,8 +51,8 @@ Não forneça um corpo de solicitação para esse método.
 Se bem-sucedido, este método retorna um código de resposta `200 OK` e um objeto [directoryRole](../resources/directoryrole.md) no corpo da resposta.
 ## <a name="examples"></a>Exemplos
 
-### <a name="example-1-get-the-definition-of-a-directory-role-using-objectid"></a>Exemplo 1: Obter a definição de uma função de diretório usando objectId
-##### <a name="request"></a>Solicitação
+### <a name="example-1-get-the-definition-of-a-directory-role-using-role-objectid"></a>Exemplo 1: Obter a definição de uma função de diretório usando objectId de função
+#### <a name="request"></a>Solicitação
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -103,8 +103,8 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-get-the-definition-of-a-directory-role-using-templateid"></a>Exemplo 2: Obter a definição de uma função de diretório usando templateId
-##### <a name="request"></a>Solicitação
+### <a name="example-2-get-the-definition-of-a-directory-role-using-role-templateid"></a>Exemplo 2: Obter a definição de uma função de diretório usando role templateId
+#### <a name="request"></a>Solicitação
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -134,7 +134,7 @@ GET https://graph.microsoft.com/v1.0/directoryRoles/roleTemplateId=4a5d8f65-41da
 ---
 
 
-##### <a name="response"></a>Resposta
+#### <a name="response"></a>Resposta
 >**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {

@@ -5,12 +5,12 @@ author: abhijeetsinha
 localization_priority: Normal
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: c5f074b99260154db0d5e9f725a2082c4980af91
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 42932d1d058fa7970d444376553a0ae683dc9e2e
+ms.sourcegitcommit: 9eeb056f311044aaa40654cdb3ae5ae61f1c4d04
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50448559"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "52854254"
 ---
 # <a name="remove-directory-role-member"></a>Remover membro da função de diretório
 
@@ -18,17 +18,16 @@ Namespace: microsoft.graph
 
 Remover um membro de um [directoryRole](../resources/directoryrole.md).
 
-> [!Note]
-> Você pode usar a ID do objeto e a ID do modelo do **directoryRole** com essa API. A ID do modelo de uma função embutida é imutável e pode ser vista na descrição da função no portal do Azure. Para obter detalhes, consulte [Role template IDs](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#role-template-ids).
+Você pode usar a ID do objeto e a ID do modelo do **directoryRole** com essa API. A ID do modelo de uma função embutida é imutável e pode ser vista na descrição da função no portal do Azure. Para obter detalhes, consulte [Role template IDs](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#role-template-ids).
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | RoleManagement.ReadWrite.Directory, Directory.AccessAsUser.All    |
+|Delegada (conta corporativa ou de estudante) | RoleManagement.ReadWrite.Directory, Directory.AccessAsUser.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | RoleManagement.ReadWrite.Directory |
 
@@ -37,7 +36,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 <!-- { "blockType": "ignored" } -->
 
 ```http
-DELETE /directoryRoles/{id}/members/{id}/$ref
+DELETE /directoryRoles/{role-objectId}/members/{id}/$ref
+DELETE /directoryRoles/roleTemplateId={role-templateId}/members/{id}/$ref
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -58,9 +58,9 @@ Se bem-sucedido, este método retorna um código de resposta `204 No Content`. N
 
 ### <a name="example-1-remove-directory-role-member-using-role-objectid"></a>Exemplo 1: Remover membro da função de diretório usando objectId de função
 
-##### <a name="request"></a>Solicitação
+#### <a name="request"></a>Solicitação
 
-Este é um exemplo da solicitação.
+Neste exemplo, substitua pelo valor de id da função de diretório e pelo valor de id do usuário ou objeto de diretório que você deseja `f8e85ed8-f66f-4058-b170-3efae8b9c6e5` desasinalhar da função de  `bb165b45-151c-4cf6-9911-cd7188912848` diretório. 
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -69,7 +69,7 @@ Este é um exemplo da solicitação.
 }-->
 
 ```http
-DELETE https://graph.microsoft.com/v1.0/directoryRoles/{role-objectId}/members/{user-id}/$ref
+DELETE https://graph.microsoft.com/v1.0/directoryRoles/f8e85ed8-f66f-4058-b170-3efae8b9c6e5/members/bb165b45-151c-4cf6-9911-cd7188912848/$ref
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-directoryobject-from-directoryrole-objectid-csharp-snippets.md)]
@@ -90,7 +90,7 @@ DELETE https://graph.microsoft.com/v1.0/directoryRoles/{role-objectId}/members/{
 ---
 
 
-##### <a name="response"></a>Resposta
+#### <a name="response"></a>Resposta
 
 Veja a seguir um exemplo da resposta. 
 <!-- {
@@ -104,9 +104,9 @@ HTTP/1.1 204 No Content
 
 ### <a name="example-2-remove-directory-role-member-using-role-templateid"></a>Exemplo 2: Remover membro da função de diretório usando modelo de funçãoId
 
-##### <a name="request"></a>Solicitação
+#### <a name="request"></a>Solicitação
 
-Este é um exemplo da solicitação.
+Este é um exemplo da solicitação. Substitua pelo valor de sua roleTemplateId e pelo valor `9f06204d-73c1-4d4c-880a-6edb90606fd8` de `bb165b45-151c-4cf6-9911-cd7188912848` **id** do usuário do objeto directory.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -115,7 +115,7 @@ Este é um exemplo da solicitação.
 }-->
 
 ```http
-DELETE https://graph.microsoft.com/v1.0/directoryRoles/roleTemplateId={role-templateId}/members/{user-id}/$ref
+DELETE https://graph.microsoft.com/v1.0/directoryRoles/roleTemplateId=9f06204d-73c1-4d4c-880a-6edb90606fd8/members/bb165b45-151c-4cf6-9911-cd7188912848/$ref
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-directoryobject-from-directoryrole-templateid-csharp-snippets.md)]
@@ -136,7 +136,7 @@ DELETE https://graph.microsoft.com/v1.0/directoryRoles/roleTemplateId={role-temp
 ---
 
 
-##### <a name="response"></a>Resposta
+#### <a name="response"></a>Resposta
 
 Veja a seguir um exemplo da resposta. 
 <!-- {

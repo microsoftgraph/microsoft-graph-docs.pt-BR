@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 9eac6d007e77d6e4e840299d8ac50530dd3172b3
-ms.sourcegitcommit: cec76c5a58b359d79df764c849c8b459349b3b52
+ms.openlocfilehash: cef801909486fae04f958311696dbdedca14ae03
+ms.sourcegitcommit: 503c72036c376a30e08c29df8e7730a7afcab66e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "52645574"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52870763"
 ---
 # <a name="message-createreplyall"></a>message: createReplyAll
 
@@ -25,16 +25,16 @@ Ao usar o formato JSON:
 - Se a mensagem original especificar um destinatário na propriedade **replyTo,** por Formato de Mensagem da Internet ([RFC 2822](https://www.rfc-editor.org/info/rfc2822)), você deverá enviar a resposta aos destinatários nas propriedades **replyTo** e **toRecipients,** e não os destinatários nas propriedades **from** e **toRecipients.** 
 - Você pode [atualizar a](../api/message-update.md) mensagem de rascunho mais tarde.
 
-Ao usar o formato MIME:
-- Forneça os [headers](https://tools.ietf.org/html/rfc2076) de mensagens da Internet aplicáveis e o [conteúdo MIME](https://tools.ietf.org/html/rfc2045), todos codificados no **formato base64** no corpo da solicitação.
-- Adicione quaisquer anexos e propriedades S/MIME ao conteúdo MIME.
+Ao utilizar o formato MIME:
+- Fornecer os [cabeçalhos de mensagem da Internet](https://tools.ietf.org/html/rfc2076) e o [conteúdo MIME](https://tools.ietf.org/html/rfc2045) aplicáveis, todos codificados no formato **base64** no corpo da solicitação.
+- Adicionar quaisquer anexos e propriedades S/MIME ao conteúdo MIME.
 
-[Envie](../api/message-send.md) a mensagem de rascunho em uma operação subsequente.
+[Enviar](../api/message-send.md) o rascunho da mensagem em uma operação subsequente.
 
 Como alternativa, [responda-tudo a uma mensagem](../api/message-replyall.md) em uma única ação.
 
 ## <a name="permissions"></a>Permissões
-Uma das seguintes permissões é necessária para chamar essa API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, consulte [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
@@ -54,7 +54,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/createReplyA
 | Nome       | Tipo | Descrição| 
 |:---------------|:--------|:----------|
 | Autorização  | string  | {token} de portador. Obrigatório. |
-| Content-Type | string  | Natureza dos dados no corpo de uma entidade. Obrigatório.<br/> Use `application/json` para um objeto JSON e para conteúdo `text/plain` MIME. |
+| Content-Type | string  | Natureza dos dados no corpo de uma entidade. Obrigatório.<br/> Use `application/json` para um objeto JSON e `text/plain` para conteúdo MIME. |
 
 ## <a name="request-body"></a>Corpo da solicitação
 Ao usar o formato JSON, forneça um objeto JSON com os seguintes parâmetros.
@@ -62,7 +62,7 @@ Ao usar o formato JSON, forneça um objeto JSON com os seguintes parâmetros.
 | Parâmetro    | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |comment|String|Um comentário a incluir. Não pode ficar vazio.|
-|message|[message](../resources/message.md)|Quaisquer propriedades graváveis ​​a serem atualizadas na mensagem de resposta a todos.|
+|mensagem|[message](../resources/message.md)|Quaisquer propriedades graváveis ​​a serem atualizadas na mensagem de resposta a todos.|
 
 Ao especificar o corpo no formato MIME, forneça o conteúdo MIME com os headers de mensagem da Internet aplicáveis, todos codificados no **formato base64** no corpo da solicitação.
 
@@ -70,7 +70,7 @@ Ao especificar o corpo no formato MIME, forneça o conteúdo MIME com os headers
 
 Se bem-sucedido, este método retorna o código de resposta `201 Created` e o objeto [message](../resources/message.md) no corpo da resposta.
 
-Se o corpo da solicitação incluir conteúdo MIME malformado, este método retornará e a seguinte mensagem de erro: "Cadeia de caracteres `400 Bad request` base64 inválida para conteúdo MIME".
+Se o corpo da solicitação incluir conteúdo MIME malformado, este método retornará `400 Bad request` e a seguinte mensagem de erro: "Cadeia de caracteres base64 inválida para o conteúdo MIME".
 
 ## <a name="examples"></a>Exemplos
 ### <a name="example-1-create-a-draft-in-json-format-to-reply-all-to-an-existing-message"></a>Exemplo 1: Criar um rascunho no formato JSON para responder tudo a uma mensagem existente
@@ -165,8 +165,9 @@ Content-type: application/json
 ```
 
 ### <a name="example-2-create-a-draft-using-mime-format-to-reply-all-to-an-existing-message"></a>Exemplo 2: Criar um rascunho usando o formato MIME para responder tudo a uma mensagem existente
+
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
   "name": "message_createreplyall_mime_beta"
 }-->
 
@@ -176,6 +177,7 @@ Content-Type: text/plain
 
 Q29udGVudC1UeXBlOiBhcHBsaWNhdGlvbi9wa2NzNy1taW1lOw0KCW5hbWU9c21pbWUucDdtOw0KCXNtaW1lLXR5cGU9ZW52ZWxvcGVkLWRhdGENCk1pbWUtVmVyc2lvbjogMS4wIChNYWMgT1MgWCBNYWlsIDEzLjAgXCgzNjAxLjAuMTBcKSkNClN1YmplY3Q6IFJlOiBUZXN0aW5nIFMvTUlNRQ0KQ29udGVudC1EaXNwb3Np...
 ```
+
 ##### <a name="response"></a>Resposta
 Veja a seguir um exemplo da resposta.
 

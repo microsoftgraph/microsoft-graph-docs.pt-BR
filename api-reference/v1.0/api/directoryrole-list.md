@@ -5,12 +5,12 @@ author: abhijeetsinha
 localization_priority: Normal
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: a6359d595a00a3ca49da308ab84120d54c70c835
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 51cd7ec7a1fc4e5b876a59a5d9caec57594057e5
+ms.sourcegitcommit: 9eeb056f311044aaa40654cdb3ae5ae61f1c4d04
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52054067"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "52854226"
 ---
 # <a name="list-directoryroles"></a>Listar directoryRoles
 
@@ -22,12 +22,12 @@ Essa operação retorna apenas funções que foram ativadas. Uma função é ati
 
 Ao atribuir uma função usando o portal do Azure, a etapa de ativação de função é feita implicitamente em nome do administrador. Para obter a lista completa de funções disponíveis no Azure AD, use [List directoryRoleTemplates](directoryroletemplate-list.md).
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Delegada (conta corporativa ou de estudante) | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All |
 
@@ -93,12 +93,28 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#directoryRoles",
   "value": [
     {
-      "description": "description-value",
-      "displayName": "displayName-value",
-      "roleTemplateId": "roleTemplateId-value",
-      "id": "id-value"
+      "id": "9ed3a0c4-53e1-498c-ab4d-2473476fde14",
+      "deletedDateTime": null,
+      "description": "Can manage all aspects of Azure AD and Microsoft services that use Azure AD identities.",
+      "displayName": "Global Administrator",
+      "roleTemplateId": "62e90394-69f5-4237-9190-012177145e10"
+    },
+    {
+      "id": "f8e85ed8-f66f-4058-b170-3efae8b9c6e5",
+      "deletedDateTime": null,
+      "description": "Device Administrators",
+      "displayName": "Azure AD Joined Device Local Administrator",
+      "roleTemplateId": "9f06204d-73c1-4d4c-880a-6edb90606fd8"
+    },
+    {
+      "id": "fe8f10bf-c9c2-47eb-95cb-c26cc85f1830",
+      "deletedDateTime": null,
+      "description": "Can read basic directory information. Commonly used to grant directory read access to applications and guests.",
+      "displayName": "Directory Readers",
+      "roleTemplateId": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
     }
   ]
 }

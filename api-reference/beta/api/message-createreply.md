@@ -5,12 +5,12 @@ author: abheek-das
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 29f7b96946f948d9327d6ec891b958321ac85487
-ms.sourcegitcommit: cec76c5a58b359d79df764c849c8b459349b3b52
+ms.openlocfilehash: 3ba7d5be91c2fdc98efdd23c95a596370ae19dc2
+ms.sourcegitcommit: 503c72036c376a30e08c29df8e7730a7afcab66e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "52645371"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52870406"
 ---
 # <a name="message-createreply"></a>message: createReply
 
@@ -25,15 +25,15 @@ Ao usar o formato JSON:
 - Se **replyTo** for especificado na mensagem original, por Formato de Mensagem da Internet ([RFC 2822](https://www.rfc-editor.org/info/rfc2822)), você deverá enviar a resposta aos destinatários em **replyTo** e não aos destinatários de **.**
 - Você pode [atualizar o](../api/message-update.md) rascunho posteriormente para adicionar conteúdo de resposta ao **corpo** ou alterar outras propriedades da mensagem.
 
-Ao usar o formato MIME:
-- Forneça os [headers](https://tools.ietf.org/html/rfc2076) de mensagens da Internet aplicáveis e o [conteúdo MIME](https://tools.ietf.org/html/rfc2045), todos codificados no **formato base64** no corpo da solicitação.
-- Adicione quaisquer anexos e propriedades S/MIME ao conteúdo MIME.
+Ao utilizar o formato MIME:
+- Fornecer os [cabeçalhos de mensagem da Internet](https://tools.ietf.org/html/rfc2076) e o [conteúdo MIME](https://tools.ietf.org/html/rfc2045) aplicáveis, todos codificados no formato **base64** no corpo da solicitação.
+- Adicionar quaisquer anexos e propriedades S/MIME ao conteúdo MIME.
 
-[Envie](../api/message-send.md) a mensagem de rascunho em uma operação subsequente.
+[Enviar](../api/message-send.md) o rascunho da mensagem em uma operação subsequente.
 
 Como alternativa, [responda a uma mensagem](../api/message-reply.md) em uma única operação.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
@@ -54,7 +54,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/createReply
 | Nome       | Tipo | Descrição| 
 |:---------------|:--------|:----------
 | Autorização  | string  | {token} de portador. Obrigatório.|
-| Content-Type | string  | Natureza dos dados no corpo de uma entidade. Obrigatório.<br/> Use `application/json` para um objeto JSON e para conteúdo `text/plain` MIME.|
+| Content-Type | string  | Natureza dos dados no corpo de uma entidade. Obrigatório.<br/> Use `application/json` para um objeto JSON e `text/plain` para conteúdo MIME.|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Ao usar o formato JSON, forneça um objeto JSON com os seguintes parâmetros.
@@ -62,14 +62,14 @@ Ao usar o formato JSON, forneça um objeto JSON com os seguintes parâmetros.
 | Parâmetro    | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |comment|String|Um comentário a incluir. Não pode ficar vazio.|
-|message|[message](../resources/message.md)|Quaisquer propriedades graváveis ​​a serem atualizadas na mensagem de resposta.|
+|mensagem|[message](../resources/message.md)|Quaisquer propriedades graváveis ​​a serem atualizadas na mensagem de resposta.|
 
 Ao especificar o corpo no formato MIME, forneça o conteúdo MIME com os headers de mensagem da Internet aplicáveis, todos codificados no **formato base64** no corpo da solicitação.
 
 ## <a name="response"></a>Resposta
 Se bem-sucedido, este método retorna o código de resposta `201 Created` e o objeto [message](../resources/message.md) no corpo da resposta.
 
-Se o corpo da solicitação incluir conteúdo MIME malformado, este método retornará e a seguinte mensagem de erro: "Cadeia de caracteres `400 Bad request` base64 inválida para conteúdo MIME".
+Se o corpo da solicitação incluir conteúdo MIME malformado, este método retornará `400 Bad request` e a seguinte mensagem de erro: "Cadeia de caracteres base64 inválida para o conteúdo MIME".
 
 ## <a name="examples"></a>Exemplos
 ### <a name="example-1-create-a-draft-in-json-format-to-reply-to-an-existing-message"></a>Exemplo 1: Criar um rascunho no formato JSON para responder a uma mensagem existente
@@ -172,8 +172,9 @@ Content-type: application/json
 
 ### <a name="example-2-create-a-draft-message-in-mime-format-to-reply-to-an-existing-message"></a>Exemplo 2: Criar uma mensagem de rascunho no formato MIME para responder a uma mensagem existente
 ##### <a name="request"></a>Solicitação
+
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
   "name": "message_createReply_mime_v1"
 }-->
 

@@ -5,16 +5,18 @@ localization_priority: Normal
 author: lumine2008
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 69d04f6ccd5e537c97854abcb1cf2a9c24820a87
-ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
+ms.openlocfilehash: 83f570301afe4a20aab6f77375e7a575df016d56
+ms.sourcegitcommit: 503c72036c376a30e08c29df8e7730a7afcab66e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "50575704"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52870483"
 ---
 # <a name="workbook-resource-type"></a>tipo de recurso da pasta de trabalho
 
 Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Contém objetos de pasta de trabalho relacionados, como planilhas, tabelas, intervalos e assim por diante.
 
@@ -32,10 +34,10 @@ Nenhum.
 ## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|names|coleção [workbookNamedItem](workbooknameditem.md) |Representa uma coleção de itens denominados de escopo da pasta de trabalho (chamados intervalos e constantes). Somente leitura.|
+|names|coleção [workbookNamedItem](workbooknameditem.md) |Representa uma coleção de workbooks com escopo de itens nomeados (intervalos nomeados e constantes). Somente leitura.|
 |tables|coleção [WorkbookTable](workbooktable.md) |Representa uma coleção de tabelas associadas à pasta de trabalho. Somente leitura.|
 |worksheets|coleção [WorkbookWorksheet](workbookworksheet.md) |Representa uma coleção de planilhas associadas à pasta de trabalho. Somente leitura.|
-|workbbookApplication|[workbookApplication](workbookapplication.md) |Representa a workbookApplication do Excel que gerencia a planilha.|
+|workbbookApplication|[workbookApplication](workbookapplication.md) |Representa a Excel workbookApplication que gerencia a workbook.|
 |operações|coleção [workbookOperation](workbookoperation.md)|O status das operações da Workbook. Não há suporte para a obtenção de uma coleção de operações, mas você pode obter o status de uma operação de longa execução se o cabeçalho `Location` retornar na resposta. Somente leitura. Anulável.|
 
 ## <a name="functions"></a>Funções
@@ -116,10 +118,14 @@ authorization: Bearer {access-token}
 workbook-session-id: {session-id}
 
 {
-"values" :  [
-        { "address": "Sheet2!A1:A5" },
-        { "address": "Sheet2!B1:B5" },
-      ] 
+   "values":[
+      {
+         "address":"Sheet2!A1:A5"
+      },
+      {
+         "address":"Sheet2!B1:B5"
+      }
+   ]
 }
 ```
 

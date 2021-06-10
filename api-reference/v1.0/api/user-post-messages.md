@@ -5,12 +5,12 @@ localization_priority: Priority
 author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 9d10c07c433b3d8456c574519aa497fc163dde09
-ms.sourcegitcommit: cec76c5a58b359d79df764c849c8b459349b3b52
+ms.openlocfilehash: 6419ec8bef225964b5797e84cce0f3ecf7609b30
+ms.sourcegitcommit: 503c72036c376a30e08c29df8e7730a7afcab66e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "52645630"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52870392"
 ---
 # <a name="create-message"></a>Criar mensagem
 
@@ -33,7 +33,7 @@ Por padrão, esta operação salva o rascunho na pasta Rascunhos.
 Como alternativa, [envie uma nova mensagem](../api/user-sendmail.md) em uma única operação ou crie um rascunho para [encaminhar](../api/message-createforward.md), [responder](../api/message-createreply.md) e [responder a todos](../api/message-createreplyall.md) a uma mensagem existente.
 
 ## <a name="permissions"></a>Permissões
-Uma das seguintes permissões é necessária para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, consulte [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
@@ -304,8 +304,9 @@ Content-type: application/json
 ### <a name="example-3-create-a-new-message-draft-using-mime-format"></a>Exemplo 3: Criar um novo rascunho de mensagem usando o formato MIME
 #### <a name="request"></a>Solicitação
 
+
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
   "name": "message_create_draft_mime_v1"
 }-->
 
@@ -316,6 +317,7 @@ Content-type: text/plain
 Q29udGVudC1UeXBlOiBhcHBsaWNhdGlvbi9wa2NzNy1taW1lOw0KCW5hbWU9c21pbWUucDdtOw0KCXNtaW1lLXR5cGU9ZW52ZWxvcGVkLWRhdGENCk1pbWUtVmVyc2lvbjogMS4wIChNYWMgT1MgWCBNYWlsIDEzLjAgXCgzNjAxLjAuMTBcKSkNClN1YmplY3Q6IFJlOiBUZXN0aW5nIFMvTUlNRQ0KQ29udGVudC1EaXNwb3Np...
 
 ```
+
 
 #### <a name="response"></a>Resposta
 Veja a seguir um exemplo da resposta.

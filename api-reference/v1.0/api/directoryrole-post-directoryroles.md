@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 6295e6d60d35eb434e1e5b1d91dae3fc60eda84f
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 7078b50b05f521d5940cef69565025c5fbf66f21
+ms.sourcegitcommit: 9eeb056f311044aaa40654cdb3ae5ae61f1c4d04
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52050518"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "52854128"
 ---
 # <a name="activate-directoryrole"></a>Ativar directoryRole
 
@@ -18,12 +18,12 @@ Namespace: microsoft.graph
 
 Ative uma função de diretório. Para ler uma função de diretório ou atualizar seus membros, primeiro ela deve ser ativada no locatário. Somente Administradores de Empresa e as funções de Usuários de diretório implícitas são ativadas por padrão. Para acessar e atribuir membros a outra função de diretório, primeiro você deve ativá-lo com seu modelo de função de diretório correspondente ([directoryRoleTemplate](../resources/directoryroletemplate.md)).
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | RoleManagement.ReadWrite.Directory, Directory.AccessAsUser.All    |
+|Delegada (conta corporativa ou de estudante) | RoleManagement.ReadWrite.Directory, Directory.AccessAsUser.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | RoleManagement.ReadWrite.Directory |
 
@@ -46,7 +46,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao ativar uma fun
 
 |Parâmetro | Tipo | Descrição|
 |:---------|:---------|:---------|
-|roleTemplateId | string | Obrigatório. A ID do [directoryRoleTemplate](../resources/directoryroletemplate.md) em que a função se baseia. Esta é a única propriedade que pode ser especificada na solicitação.|
+|roleTemplateId | cadeia de caracteres | Obrigatório. A ID do [directoryRoleTemplate](../resources/directoryroletemplate.md) em que a função se baseia. Esta é a única propriedade que pode ser especificada na solicitação.|
 
 ## <a name="response"></a>Resposta
 
@@ -66,7 +66,7 @@ POST https://graph.microsoft.com/v1.0/directoryRoles
 Content-type: application/json
 
 {
-  "roleTemplateId": "roleTemplateId-value"
+  "roleTemplateId": "fe930be7-5e62-47db-91af-98c3a49a38b1"
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
@@ -100,10 +100,12 @@ HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-  "description": "description-value",
-  "displayName": "displayName-value",
-  "roleTemplateId": "roleTemplateId-value",
-  "id": "id-value"
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#directoryRoles/$entity",
+  "id": "76f84d30-2759-4c66-915d-65c6e4083fa0",
+  "deletedDateTime": null,
+  "description": "Can manage all aspects of users and groups, including resetting passwords for limited admins.",
+  "displayName": "User Administrator",
+  "roleTemplateId": "fe930be7-5e62-47db-91af-98c3a49a38b1"
 }
 ```
 
