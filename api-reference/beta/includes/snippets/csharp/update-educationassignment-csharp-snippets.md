@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: ba7a6123addb0f072395a7b4b17e66f6866e5dac
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: a6fc50154c3e4983f2022ed4fbc74b30f35a1446
+ms.sourcegitcommit: 503c72036c376a30e08c29df8e7730a7afcab66e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50789980"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52871524"
 ---
 ```csharp
 
@@ -19,7 +19,9 @@ var educationAssignment = new EducationAssignment
         ContentType = BodyType.Text,
         Content = "Read chapters 1 through 3"
     },
-    DueDateTime = DateTimeOffset.Parse("2014-02-01T00:00:00Z")
+    DueDateTime = DateTimeOffset.Parse("2014-02-01T00:00:00Z"),
+    AddedStudentAction = EducationAddedStudentAction.None,
+    AddToCalendarAction = EducationAddToCalendarOptions.StudentsAndPublisher
 };
 
 await graphClient.Education.Classes["{educationClass-id}"].Assignments["{educationAssignment-id}"]

@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: a528eaa203db4787c9d55db2bbdbb4113b466e36
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: c782b864307d60b3397b85454dad23d4c2198a84
+ms.sourcegitcommit: 503c72036c376a30e08c29df8e7730a7afcab66e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50942656"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52871576"
 ---
 ```csharp
 
@@ -47,7 +47,8 @@ var call = new Call
     },
     MediaConfig = new ServiceHostedMediaConfig
     {
-    }
+    },
+    TenantId = "aa67bd4c-8475-432d-bd41-39f255720e0a"
 };
 
 await graphClient.Communications.Calls
