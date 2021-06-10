@@ -5,83 +5,83 @@ localization_priority: Normal
 author: isabelleatmsft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: ec275176c609218eabe7bf15f3a99c162930a5ed
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: bbc014075f1dc72970ef64add9555d6067cbe0f0
+ms.sourcegitcommit: 503c72036c376a30e08c29df8e7730a7afcab66e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52786626"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52870021"
 ---
-# <a name="list-accessreviewscheduledefinition"></a><span data-ttu-id="6f4fb-103">Listar accessReviewScheduleDefinition</span><span class="sxs-lookup"><span data-stu-id="6f4fb-103">List accessReviewScheduleDefinition</span></span>
+# <a name="list-accessreviewscheduledefinition"></a><span data-ttu-id="0692f-103">Listar accessReviewScheduleDefinition</span><span class="sxs-lookup"><span data-stu-id="0692f-103">List accessReviewScheduleDefinition</span></span>
 
-<span data-ttu-id="6f4fb-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="6f4fb-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="0692f-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="0692f-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="6f4fb-105">Recupere os [objetos accessReviewScheduleDefinition.](../resources/accessreviewscheduledefinition.md)</span><span class="sxs-lookup"><span data-stu-id="6f4fb-105">Retrieve the [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) objects.</span></span> <span data-ttu-id="6f4fb-106">Uma lista de zero ou mais objetos accessReviewScheduleDefinition são retornados, incluindo todas as suas propriedades aninhadas, para cada série de revisão de acesso criada.</span><span class="sxs-lookup"><span data-stu-id="6f4fb-106">A list of zero or more accessReviewScheduleDefinition objects are returned, including all of their nested properties, for each access review series created.</span></span> <span data-ttu-id="6f4fb-107">Isso não inclui os objetos accessReviewInstance associados.</span><span class="sxs-lookup"><span data-stu-id="6f4fb-107">This does not include the associated accessReviewInstance objects.</span></span>
+<span data-ttu-id="0692f-105">Recupere os [objetos accessReviewScheduleDefinition.](../resources/accessreviewscheduledefinition.md)</span><span class="sxs-lookup"><span data-stu-id="0692f-105">Retrieve the [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) objects.</span></span> <span data-ttu-id="0692f-106">Uma lista de zero ou mais objetos accessReviewScheduleDefinition são retornados, incluindo todas as suas propriedades aninhadas, para cada série de revisão de acesso criada.</span><span class="sxs-lookup"><span data-stu-id="0692f-106">A list of zero or more accessReviewScheduleDefinition objects are returned, including all of their nested properties, for each access review series created.</span></span> <span data-ttu-id="0692f-107">Isso não inclui os objetos accessReviewInstance associados.</span><span class="sxs-lookup"><span data-stu-id="0692f-107">This does not include the associated accessReviewInstance objects.</span></span>
 
 >[!NOTE]
-><span data-ttu-id="6f4fb-108">O tamanho padrão da página para essa API é de 100 objetos accessReviewScheduleDefinition.</span><span class="sxs-lookup"><span data-stu-id="6f4fb-108">The default page size for this API is 100 accessReviewScheduleDefinition objects.</span></span> <span data-ttu-id="6f4fb-109">Para melhorar a eficiência e evitar tempos-de-tempo devido a grandes conjuntos de resultados, aplique paginação usando os `$skip` parâmetros e `$top` de consulta.</span><span class="sxs-lookup"><span data-stu-id="6f4fb-109">To improve efficiency and avoid timeouts due to large result sets, apply pagination using the `$skip` and `$top` query parameters.</span></span> <span data-ttu-id="6f4fb-110">Para mais informações, consulte [Paginação de dados do Microsoft Graph em seu aplicativo](/graph/paging).</span><span class="sxs-lookup"><span data-stu-id="6f4fb-110">For more information, see [Paging Microsoft Graph data in your app](/graph/paging).</span></span>
+><span data-ttu-id="0692f-108">O tamanho padrão da página para essa API é de 100 objetos accessReviewScheduleDefinition.</span><span class="sxs-lookup"><span data-stu-id="0692f-108">The default page size for this API is 100 accessReviewScheduleDefinition objects.</span></span> <span data-ttu-id="0692f-109">Para melhorar a eficiência e evitar tempos-de-tempo devido a grandes conjuntos de resultados, aplique paginação usando os `$skip` parâmetros e `$top` de consulta.</span><span class="sxs-lookup"><span data-stu-id="0692f-109">To improve efficiency and avoid timeouts due to large result sets, apply pagination using the `$skip` and `$top` query parameters.</span></span> <span data-ttu-id="0692f-110">Para mais informações, consulte [Paginação de dados do Microsoft Graph em seu aplicativo](/graph/paging).</span><span class="sxs-lookup"><span data-stu-id="0692f-110">For more information, see [Paging Microsoft Graph data in your app](/graph/paging).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="6f4fb-111">Permissions</span><span class="sxs-lookup"><span data-stu-id="6f4fb-111">Permissions</span></span>
-<span data-ttu-id="6f4fb-p103">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="6f4fb-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="0692f-111">Permissions</span><span class="sxs-lookup"><span data-stu-id="0692f-111">Permissions</span></span>
+<span data-ttu-id="0692f-p103">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="0692f-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="6f4fb-114">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="6f4fb-114">Permission type</span></span>                        | <span data-ttu-id="6f4fb-115">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="6f4fb-115">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="0692f-114">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="0692f-114">Permission type</span></span>                        | <span data-ttu-id="0692f-115">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="0692f-115">Permissions (from least to most privileged)</span></span>              |
 |:--------------------------------------|:---------------------------------------------------------|
-|<span data-ttu-id="6f4fb-116">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="6f4fb-116">Delegated (work or school account)</span></span>     | <span data-ttu-id="6f4fb-117">AccessReview.Read.All, AccessReview.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="6f4fb-117">AccessReview.Read.All, AccessReview.ReadWrite.All</span></span>  |
-|<span data-ttu-id="6f4fb-118">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="6f4fb-118">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="6f4fb-119">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="6f4fb-119">Not supported.</span></span>|
-|<span data-ttu-id="6f4fb-120">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="6f4fb-120">Application</span></span>                            | <span data-ttu-id="6f4fb-121">AccessReview.Read.All, AccessReview.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="6f4fb-121">AccessReview.Read.All, AccessReview.ReadWrite.All</span></span> |
+|<span data-ttu-id="0692f-116">Delegada (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="0692f-116">Delegated (work or school account)</span></span>     | <span data-ttu-id="0692f-117">AccessReview.Read.All, AccessReview.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="0692f-117">AccessReview.Read.All, AccessReview.ReadWrite.All</span></span>  |
+|<span data-ttu-id="0692f-118">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="0692f-118">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="0692f-119">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="0692f-119">Not supported.</span></span>|
+|<span data-ttu-id="0692f-120">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="0692f-120">Application</span></span>                            | <span data-ttu-id="0692f-121">AccessReview.Read.All, AccessReview.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="0692f-121">AccessReview.Read.All, AccessReview.ReadWrite.All</span></span> |
 
- <span data-ttu-id="6f4fb-122">O usuário interno também deve estar em uma função de diretório que permita que ele leia uma revisão de acesso.</span><span class="sxs-lookup"><span data-stu-id="6f4fb-122">The signed-in user must also be in a directory role that permits them to read an access review.</span></span> <span data-ttu-id="6f4fb-123">Consulte access review [role and application permission authorization checks](../resources/accessreviewsv2-root.md#role-and-application-permission-authorization-checks).</span><span class="sxs-lookup"><span data-stu-id="6f4fb-123">See access review [role and application permission authorization checks](../resources/accessreviewsv2-root.md#role-and-application-permission-authorization-checks).</span></span>
+ <span data-ttu-id="0692f-122">O usuário interno também deve estar em uma função de diretório que permita que ele leia uma revisão de acesso.</span><span class="sxs-lookup"><span data-stu-id="0692f-122">The signed-in user must also be in a directory role that permits them to read an access review.</span></span> <span data-ttu-id="0692f-123">Consulte access review [role and application permission authorization checks](../resources/accessreviewsv2-root.md#role-and-application-permission-authorization-checks).</span><span class="sxs-lookup"><span data-stu-id="0692f-123">See access review [role and application permission authorization checks](../resources/accessreviewsv2-root.md#role-and-application-permission-authorization-checks).</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="6f4fb-124">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="6f4fb-124">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="0692f-124">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="0692f-124">HTTP request</span></span>
 
-<span data-ttu-id="6f4fb-125">Para listar todos os seus accessReviewScheduleDefinitions:</span><span class="sxs-lookup"><span data-stu-id="6f4fb-125">To list all your accessReviewScheduleDefinitions:</span></span>
+<span data-ttu-id="0692f-125">Para listar todos os seus accessReviewScheduleDefinitions:</span><span class="sxs-lookup"><span data-stu-id="0692f-125">To list all your accessReviewScheduleDefinitions:</span></span>
 
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /identityGovernance/accessReviews/definitions
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="6f4fb-126">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="6f4fb-126">Optional query parameters</span></span>
-<span data-ttu-id="6f4fb-127">Este método dá suporte `$select` aos `$top` parâmetros de consulta , , e OData para ajudar a `$skip` personalizar a `$filter` resposta.</span><span class="sxs-lookup"><span data-stu-id="6f4fb-127">This method supports the `$select`, `$top`, `$skip`, and `$filter` OData query parameters to help customize the response.</span></span> <span data-ttu-id="6f4fb-128">Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).</span><span class="sxs-lookup"><span data-stu-id="6f4fb-128">For general information, see [OData query parameters](/graph/query-parameters).</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="0692f-126">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="0692f-126">Optional query parameters</span></span>
+<span data-ttu-id="0692f-127">Este método dá suporte `$select` aos `$top` parâmetros de consulta , , e OData para ajudar a `$skip` personalizar a `$filter` resposta.</span><span class="sxs-lookup"><span data-stu-id="0692f-127">This method supports the `$select`, `$top`, `$skip`, and `$filter` OData query parameters to help customize the response.</span></span> <span data-ttu-id="0692f-128">Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).</span><span class="sxs-lookup"><span data-stu-id="0692f-128">For general information, see [OData query parameters](/graph/query-parameters).</span></span>
 
-### <a name="use-the-filter-query-parameter"></a><span data-ttu-id="6f4fb-129">Usar o parâmetro $filter de consulta</span><span class="sxs-lookup"><span data-stu-id="6f4fb-129">Use the $filter query parameter</span></span>
-<span data-ttu-id="6f4fb-130">O parâmetro de consulta com o operador é suportado na propriedade `$filter` `contains` **scope** accessReviewScheduleDefinition.</span><span class="sxs-lookup"><span data-stu-id="6f4fb-130">The `$filter` query parameter with the `contains` operator is supported on the **scope** property of accessReviewScheduleDefinition.</span></span> <span data-ttu-id="6f4fb-131">Use o seguinte formato para a solicitação:</span><span class="sxs-lookup"><span data-stu-id="6f4fb-131">Use the following format for the request:</span></span>
+### <a name="use-the-filter-query-parameter"></a><span data-ttu-id="0692f-129">Usar o parâmetro $filter de consulta</span><span class="sxs-lookup"><span data-stu-id="0692f-129">Use the $filter query parameter</span></span>
+<span data-ttu-id="0692f-130">O parâmetro de consulta com o operador é suportado na propriedade `$filter` `contains` **scope** accessReviewScheduleDefinition.</span><span class="sxs-lookup"><span data-stu-id="0692f-130">The `$filter` query parameter with the `contains` operator is supported on the **scope** property of accessReviewScheduleDefinition.</span></span> <span data-ttu-id="0692f-131">Use o seguinte formato para a solicitação:</span><span class="sxs-lookup"><span data-stu-id="0692f-131">Use the following format for the request:</span></span>
 
 ```http
 GET /identityGovernance/accessReviews/definitions?$filter=contains(scope/microsoft.graph.accessReviewQueryScope/query, '{object}')
 ```
 
-<span data-ttu-id="6f4fb-132">O valor de `{object}` pode ser um dos seguintes:</span><span class="sxs-lookup"><span data-stu-id="6f4fb-132">The value of `{object}` can be one of the following:</span></span>
+<span data-ttu-id="0692f-132">O valor de `{object}` pode ser um dos seguintes:</span><span class="sxs-lookup"><span data-stu-id="0692f-132">The value of `{object}` can be one of the following:</span></span>
 
-|<span data-ttu-id="6f4fb-133">Valor</span><span class="sxs-lookup"><span data-stu-id="6f4fb-133">Value</span></span>|<span data-ttu-id="6f4fb-134">Descrição</span><span class="sxs-lookup"><span data-stu-id="6f4fb-134">Description</span></span>|
+|<span data-ttu-id="0692f-133">Valor</span><span class="sxs-lookup"><span data-stu-id="0692f-133">Value</span></span>|<span data-ttu-id="0692f-134">Descrição</span><span class="sxs-lookup"><span data-stu-id="0692f-134">Description</span></span>|
 |:---     |:---       |
-|<span data-ttu-id="6f4fb-135">/groups</span><span class="sxs-lookup"><span data-stu-id="6f4fb-135">/groups</span></span>  |<span data-ttu-id="6f4fb-136">Listar todos os accessReviewScheduleDefinition em grupos individuais (exclui definições com escopo para todos os grupos Microsoft 365 com usuários convidados).</span><span class="sxs-lookup"><span data-stu-id="6f4fb-136">List every accessReviewScheduleDefinition on individual groups (excludes definitions scoped to all Microsoft 365 groups with guest users).</span></span>|
-|<span data-ttu-id="6f4fb-137">/groups/{group id}</span><span class="sxs-lookup"><span data-stu-id="6f4fb-137">/groups/{group id}</span></span>  |<span data-ttu-id="6f4fb-138">Listar todos os accessReviewScheduleDefinition em um grupo específico (exclui definições com escopo para todos os grupos Microsoft 365 com usuários convidados).</span><span class="sxs-lookup"><span data-stu-id="6f4fb-138">List every accessReviewScheduleDefinition on a specific group (excludes definitions scoped to all Microsoft 365 groups with guest users).</span></span>|
-|<span data-ttu-id="6f4fb-139">./members</span><span class="sxs-lookup"><span data-stu-id="6f4fb-139">./members</span></span>  |<span data-ttu-id="6f4fb-140">Listar todos os accessReviewScheduleDefinition com escopo para todos os grupos Microsoft 365 com usuários convidados.</span><span class="sxs-lookup"><span data-stu-id="6f4fb-140">List every accessReviewScheduleDefinition scoped to all Microsoft 365 groups with guest users.</span></span>|
-|<span data-ttu-id="6f4fb-141">accessPackageAssignments</span><span class="sxs-lookup"><span data-stu-id="6f4fb-141">accessPackageAssignments</span></span>  |<span data-ttu-id="6f4fb-142">Listar todos os accessReviewScheduleDefinition em um pacote de acesso.</span><span class="sxs-lookup"><span data-stu-id="6f4fb-142">List every accessReviewScheduleDefinition on an access package.</span></span>|
-|<span data-ttu-id="6f4fb-143">roleAssignmentScheduleInstances</span><span class="sxs-lookup"><span data-stu-id="6f4fb-143">roleAssignmentScheduleInstances</span></span>  |<span data-ttu-id="6f4fb-144">Listar todos os accessReviewScheduleDefinition para entidades de serviço atribuídas a uma função privilegiada.</span><span class="sxs-lookup"><span data-stu-id="6f4fb-144">List every accessReviewScheduleDefinition for service principals assigned to a privileged role.</span></span>|
+|<span data-ttu-id="0692f-135">/groups</span><span class="sxs-lookup"><span data-stu-id="0692f-135">/groups</span></span>  |<span data-ttu-id="0692f-136">Listar todos os accessReviewScheduleDefinition em grupos individuais (exclui definições com escopo para todos os grupos Microsoft 365 com usuários convidados).</span><span class="sxs-lookup"><span data-stu-id="0692f-136">List every accessReviewScheduleDefinition on individual groups (excludes definitions scoped to all Microsoft 365 groups with guest users).</span></span>|
+|<span data-ttu-id="0692f-137">/groups/{group id}</span><span class="sxs-lookup"><span data-stu-id="0692f-137">/groups/{group id}</span></span>  |<span data-ttu-id="0692f-138">Listar todos os accessReviewScheduleDefinition em um grupo específico (exclui definições com escopo para todos os grupos Microsoft 365 com usuários convidados).</span><span class="sxs-lookup"><span data-stu-id="0692f-138">List every accessReviewScheduleDefinition on a specific group (excludes definitions scoped to all Microsoft 365 groups with guest users).</span></span>|
+|<span data-ttu-id="0692f-139">./members</span><span class="sxs-lookup"><span data-stu-id="0692f-139">./members</span></span>  |<span data-ttu-id="0692f-140">Listar todos os accessReviewScheduleDefinition com escopo para todos os grupos Microsoft 365 com usuários convidados.</span><span class="sxs-lookup"><span data-stu-id="0692f-140">List every accessReviewScheduleDefinition scoped to all Microsoft 365 groups with guest users.</span></span>|
+|<span data-ttu-id="0692f-141">accessPackageAssignments</span><span class="sxs-lookup"><span data-stu-id="0692f-141">accessPackageAssignments</span></span>  |<span data-ttu-id="0692f-142">Listar todos os accessReviewScheduleDefinition em um pacote de acesso.</span><span class="sxs-lookup"><span data-stu-id="0692f-142">List every accessReviewScheduleDefinition on an access package.</span></span>|
+|<span data-ttu-id="0692f-143">roleAssignmentScheduleInstances</span><span class="sxs-lookup"><span data-stu-id="0692f-143">roleAssignmentScheduleInstances</span></span>  |<span data-ttu-id="0692f-144">Listar todos os accessReviewScheduleDefinition para entidades de serviço atribuídas a uma função privilegiada.</span><span class="sxs-lookup"><span data-stu-id="0692f-144">List every accessReviewScheduleDefinition for service principals assigned to a privileged role.</span></span>|
 
-<span data-ttu-id="6f4fb-145">O parâmetro de consulta não é suportado `$filter` em **accessReviewInactiveUserQueryScope** ou **principalResourceMembershipScope**.</span><span class="sxs-lookup"><span data-stu-id="6f4fb-145">The `$filter` query parameter is not supported on **accessReviewInactiveUserQueryScope** or **principalResourceMembershipScope**.</span></span>
+<span data-ttu-id="0692f-145">O parâmetro de consulta não é suportado `$filter` em **accessReviewInactiveUserQueryScope** ou **principalResourceMembershipScope**.</span><span class="sxs-lookup"><span data-stu-id="0692f-145">The `$filter` query parameter is not supported on **accessReviewInactiveUserQueryScope** or **principalResourceMembershipScope**.</span></span>
 
 
-## <a name="request-headers"></a><span data-ttu-id="6f4fb-146">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="6f4fb-146">Request headers</span></span>
-<span data-ttu-id="6f4fb-147">Nenhum.</span><span class="sxs-lookup"><span data-stu-id="6f4fb-147">None.</span></span>
+## <a name="request-headers"></a><span data-ttu-id="0692f-146">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="0692f-146">Request headers</span></span>
+<span data-ttu-id="0692f-147">Nenhum.</span><span class="sxs-lookup"><span data-stu-id="0692f-147">None.</span></span>
 
-## <a name="request-body"></a><span data-ttu-id="6f4fb-148">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="6f4fb-148">Request body</span></span>
-<span data-ttu-id="6f4fb-149">Não fornecer um corpo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="6f4fb-149">Do not supply a request body.</span></span>
+## <a name="request-body"></a><span data-ttu-id="0692f-148">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="0692f-148">Request body</span></span>
+<span data-ttu-id="0692f-149">Não fornecer um corpo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="0692f-149">Do not supply a request body.</span></span>
 
-## <a name="response"></a><span data-ttu-id="6f4fb-150">Resposta</span><span class="sxs-lookup"><span data-stu-id="6f4fb-150">Response</span></span>
-<span data-ttu-id="6f4fb-151">Se tiver êxito, este método retornará um código de resposta e uma `200 OK` matriz [de objetos accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="6f4fb-151">If successful, this method returns a `200 OK` response code and an array of [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) objects in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="0692f-150">Resposta</span><span class="sxs-lookup"><span data-stu-id="0692f-150">Response</span></span>
+<span data-ttu-id="0692f-151">Se tiver êxito, este método retornará um código de resposta e uma `200 OK` matriz [de objetos accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="0692f-151">If successful, this method returns a `200 OK` response code and an array of [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) objects in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="6f4fb-152">Exemplos</span><span class="sxs-lookup"><span data-stu-id="6f4fb-152">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="0692f-152">Exemplos</span><span class="sxs-lookup"><span data-stu-id="0692f-152">Examples</span></span>
 
-### <a name="example-1-list-the-first-one-hundred-access-review-definitions"></a><span data-ttu-id="6f4fb-153">Exemplo 1: listar as primeiras 100 definições de revisão de acesso</span><span class="sxs-lookup"><span data-stu-id="6f4fb-153">Example 1: List the first one hundred access review definitions</span></span>
+### <a name="example-1-list-the-first-one-hundred-access-review-definitions"></a><span data-ttu-id="0692f-153">Exemplo 1: listar as primeiras 100 definições de revisão de acesso</span><span class="sxs-lookup"><span data-stu-id="0692f-153">Example 1: List the first one hundred access review definitions</span></span>
 
-#### <a name="request"></a><span data-ttu-id="6f4fb-154">Solicitação</span><span class="sxs-lookup"><span data-stu-id="6f4fb-154">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="0692f-154">Solicitação</span><span class="sxs-lookup"><span data-stu-id="0692f-154">Request</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="6f4fb-155">HTTP</span><span class="sxs-lookup"><span data-stu-id="6f4fb-155">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="0692f-155">HTTP</span><span class="sxs-lookup"><span data-stu-id="0692f-155">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_accessReviewScheduleDefinition"
@@ -89,26 +89,26 @@ GET /identityGovernance/accessReviews/definitions?$filter=contains(scope/microso
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/definitions?$top=100&$skip=0
 ```
-# <a name="c"></a>[<span data-ttu-id="6f4fb-156">C#</span><span class="sxs-lookup"><span data-stu-id="6f4fb-156">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="0692f-156">C#</span><span class="sxs-lookup"><span data-stu-id="0692f-156">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-accessreviewscheduledefinition-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="6f4fb-157">JavaScript</span><span class="sxs-lookup"><span data-stu-id="6f4fb-157">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="0692f-157">JavaScript</span><span class="sxs-lookup"><span data-stu-id="0692f-157">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/list-accessreviewscheduledefinition-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="6f4fb-158">Objective-C</span><span class="sxs-lookup"><span data-stu-id="6f4fb-158">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="0692f-158">Objective-C</span><span class="sxs-lookup"><span data-stu-id="0692f-158">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/list-accessreviewscheduledefinition-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="6f4fb-159">Java</span><span class="sxs-lookup"><span data-stu-id="6f4fb-159">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="0692f-159">Java</span><span class="sxs-lookup"><span data-stu-id="0692f-159">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/list-accessreviewscheduledefinition-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-#### <a name="response"></a><span data-ttu-id="6f4fb-160">Resposta</span><span class="sxs-lookup"><span data-stu-id="6f4fb-160">Response</span></span>
-><span data-ttu-id="6f4fb-161">**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.</span><span class="sxs-lookup"><span data-stu-id="6f4fb-161">**Note:** The response object shown here might be shortened for readability.</span></span>
+#### <a name="response"></a><span data-ttu-id="0692f-160">Resposta</span><span class="sxs-lookup"><span data-stu-id="0692f-160">Response</span></span>
+><span data-ttu-id="0692f-161">**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.</span><span class="sxs-lookup"><span data-stu-id="0692f-161">**Note:** The response object shown here might be shortened for readability.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -175,11 +175,13 @@ Content-type: application/json
 ```
 
 
-### <a name="example-2-retrieve-all-access-review-definitions-scoped-to-all-microsoft-365-groups-in-a-tenant"></a><span data-ttu-id="6f4fb-162">Exemplo 2: Recuperar todas as definições de revisão de acesso com escopo para todos os grupos Microsoft 365 em um locatário</span><span class="sxs-lookup"><span data-stu-id="6f4fb-162">Example 2: Retrieve all access review definitions scoped to all Microsoft 365 groups in a tenant</span></span>
+### <a name="example-2-retrieve-all-access-review-definitions-scoped-to-all-microsoft-365-groups-in-a-tenant"></a><span data-ttu-id="0692f-162">Exemplo 2: Recuperar todas as definições de revisão de acesso com escopo para todos os grupos Microsoft 365 em um locatário</span><span class="sxs-lookup"><span data-stu-id="0692f-162">Example 2: Retrieve all access review definitions scoped to all Microsoft 365 groups in a tenant</span></span>
 
-#### <a name="request"></a><span data-ttu-id="6f4fb-163">Solicitação</span><span class="sxs-lookup"><span data-stu-id="6f4fb-163">Request</span></span>
-<span data-ttu-id="6f4fb-164">O exemplo a seguir mostra uma solicitação para recuperar todas as séries de revisão de acesso com escopo para todos os grupos Microsoft 365 em um locatário.</span><span class="sxs-lookup"><span data-stu-id="6f4fb-164">The following example shows a request to retrieve all the access review series scoped to all Microsoft 365 groups in a tenant.</span></span>
+#### <a name="request"></a><span data-ttu-id="0692f-163">Solicitação</span><span class="sxs-lookup"><span data-stu-id="0692f-163">Request</span></span>
+<span data-ttu-id="0692f-164">O exemplo a seguir mostra uma solicitação para recuperar todas as séries de revisão de acesso com escopo para todos os grupos Microsoft 365 em um locatário.</span><span class="sxs-lookup"><span data-stu-id="0692f-164">The following example shows a request to retrieve all the access review series scoped to all Microsoft 365 groups in a tenant.</span></span>
 
+
+# <a name="http"></a>[<span data-ttu-id="0692f-165">HTTP</span><span class="sxs-lookup"><span data-stu-id="0692f-165">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_accessReviewScheduleDefinition_allgroups"
@@ -187,9 +189,27 @@ Content-type: application/json
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/definitions?$filter=contains(scope/microsoft.graph.accessReviewQueryScope/query, './members')
 ```
+# <a name="c"></a>[<span data-ttu-id="0692f-166">C#</span><span class="sxs-lookup"><span data-stu-id="0692f-166">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-accessreviewscheduledefinition-allgroups-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-#### <a name="response"></a><span data-ttu-id="6f4fb-165">Resposta</span><span class="sxs-lookup"><span data-stu-id="6f4fb-165">Response</span></span>
-><span data-ttu-id="6f4fb-166">**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.</span><span class="sxs-lookup"><span data-stu-id="6f4fb-166">**Note:** The response object shown here might be shortened for readability.</span></span>
+# <a name="javascript"></a>[<span data-ttu-id="0692f-167">JavaScript</span><span class="sxs-lookup"><span data-stu-id="0692f-167">JavaScript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-accessreviewscheduledefinition-allgroups-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[<span data-ttu-id="0692f-168">Objective-C</span><span class="sxs-lookup"><span data-stu-id="0692f-168">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/list-accessreviewscheduledefinition-allgroups-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[<span data-ttu-id="0692f-169">Java</span><span class="sxs-lookup"><span data-stu-id="0692f-169">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-accessreviewscheduledefinition-allgroups-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+#### <a name="response"></a><span data-ttu-id="0692f-170">Resposta</span><span class="sxs-lookup"><span data-stu-id="0692f-170">Response</span></span>
+><span data-ttu-id="0692f-171">**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.</span><span class="sxs-lookup"><span data-stu-id="0692f-171">**Note:** The response object shown here might be shortened for readability.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -267,9 +287,9 @@ Content-type: application/json
 ```
 
 
-## <a name="see-also"></a><span data-ttu-id="6f4fb-167">Confira também</span><span class="sxs-lookup"><span data-stu-id="6f4fb-167">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="0692f-172">Confira também</span><span class="sxs-lookup"><span data-stu-id="0692f-172">See also</span></span>
 
-- [<span data-ttu-id="6f4fb-168">Obter accessReviewScheduleDefinition</span><span class="sxs-lookup"><span data-stu-id="6f4fb-168">Get accessReviewScheduleDefinition</span></span>](accessreviewscheduledefinition-get.md)
+- [<span data-ttu-id="0692f-173">Obter accessReviewScheduleDefinition</span><span class="sxs-lookup"><span data-stu-id="0692f-173">Get accessReviewScheduleDefinition</span></span>](accessreviewscheduledefinition-get.md)
 
 
 <!--

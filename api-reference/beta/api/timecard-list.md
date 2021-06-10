@@ -5,34 +5,34 @@ author: akumar39
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 1635e8c524b25b3795bf90f03449eddf259ff208
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: b606388e32b79aab75a0438b6634cca78e5641b7
+ms.sourcegitcommit: 503c72036c376a30e08c29df8e7730a7afcab66e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52787835"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52870651"
 ---
-# <a name="list-timecard"></a><span data-ttu-id="c29f4-103">Listar timeCard</span><span class="sxs-lookup"><span data-stu-id="c29f4-103">List timeCard</span></span>
+# <a name="list-timecard"></a><span data-ttu-id="4193d-103">Listar timeCard</span><span class="sxs-lookup"><span data-stu-id="4193d-103">List timeCard</span></span>
 
-<span data-ttu-id="c29f4-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="c29f4-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="4193d-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="4193d-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="c29f4-105">Recuperar uma lista de [entradas timeCard](../resources/timecard.md) em um [cronograma](../resources/schedule.md).</span><span class="sxs-lookup"><span data-stu-id="c29f4-105">Retrieve a list of [timeCard](../resources/timecard.md) entries in a [schedule](../resources/schedule.md).</span></span>
+<span data-ttu-id="4193d-105">Recuperar uma lista de [entradas timeCard](../resources/timecard.md) em um [cronograma](../resources/schedule.md).</span><span class="sxs-lookup"><span data-stu-id="4193d-105">Retrieve a list of [timeCard](../resources/timecard.md) entries in a [schedule](../resources/schedule.md).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="c29f4-106">Permissions</span><span class="sxs-lookup"><span data-stu-id="c29f4-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="4193d-106">Permissions</span><span class="sxs-lookup"><span data-stu-id="4193d-106">Permissions</span></span>
 
-<span data-ttu-id="c29f4-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="c29f4-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="4193d-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="4193d-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="c29f4-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="c29f4-109">Permission type</span></span>      | <span data-ttu-id="c29f4-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="c29f4-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="4193d-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="4193d-109">Permission type</span></span>      | <span data-ttu-id="4193d-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="4193d-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="c29f4-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="c29f4-111">Delegated (work or school account)</span></span> | <span data-ttu-id="c29f4-112">Schedule.Read.All, Schedule.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="c29f4-112">Schedule.Read.All, Schedule.ReadWrite.All</span></span>    |
-|<span data-ttu-id="c29f4-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="c29f4-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="c29f4-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="c29f4-114">Not supported.</span></span>    |
-|<span data-ttu-id="c29f4-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="c29f4-115">Application</span></span> | <span data-ttu-id="c29f4-116">Schedule.Read.All *, Schedule.ReadWrite.All*</span><span class="sxs-lookup"><span data-stu-id="c29f4-116">Schedule.Read.All *, Schedule.ReadWrite.All*</span></span> |
+|<span data-ttu-id="4193d-111">Delegada (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="4193d-111">Delegated (work or school account)</span></span> | <span data-ttu-id="4193d-112">Schedule.Read.All, Schedule.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="4193d-112">Schedule.Read.All, Schedule.ReadWrite.All</span></span>    |
+|<span data-ttu-id="4193d-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="4193d-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="4193d-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="4193d-114">Not supported.</span></span>    |
+|<span data-ttu-id="4193d-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="4193d-115">Application</span></span> | <span data-ttu-id="4193d-116">Schedule.Read.All *, Schedule.ReadWrite.All*</span><span class="sxs-lookup"><span data-stu-id="4193d-116">Schedule.Read.All *, Schedule.ReadWrite.All*</span></span> |
 
-><span data-ttu-id="c29f4-117">\***Importante:** Quando você usa permissões de aplicativo, deve incluir `MS-APP-ACTS-AS` o header na solicitação.</span><span class="sxs-lookup"><span data-stu-id="c29f4-117">\* **Important:** When you use application permissions, you must include the `MS-APP-ACTS-AS` header in the request.</span></span>
+><span data-ttu-id="4193d-117">\***Importante:** Quando você usa permissões de aplicativo, deve incluir `MS-APP-ACTS-AS` o header na solicitação.</span><span class="sxs-lookup"><span data-stu-id="4193d-117">\* **Important:** When you use application permissions, you must include the `MS-APP-ACTS-AS` header in the request.</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="c29f4-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="c29f4-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="4193d-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="4193d-118">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -40,45 +40,63 @@ ms.locfileid: "52787835"
 GET /teams/{teamId}/schedule/timecards
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="c29f4-119">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="c29f4-119">Optional query parameters</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="4193d-119">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="4193d-119">Optional query parameters</span></span>
 
-<span data-ttu-id="c29f4-120">Este método dá suporte aos parâmetros de consulta `$filter` , , , `$orderBy` `$top` `$skipToken` OData para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="c29f4-120">This method supports the `$filter`, `$orderBy`, `$top`, `$skipToken` OData query parameters to help customize the response.</span></span> <span data-ttu-id="c29f4-121">Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).</span><span class="sxs-lookup"><span data-stu-id="c29f4-121">For general information, see [OData query parameters](/graph/query-parameters).</span></span>
+<span data-ttu-id="4193d-120">Este método dá suporte aos parâmetros de consulta `$filter` , , , `$orderBy` `$top` `$skipToken` OData para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="4193d-120">This method supports the `$filter`, `$orderBy`, `$top`, `$skipToken` OData query parameters to help customize the response.</span></span> <span data-ttu-id="4193d-121">Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).</span><span class="sxs-lookup"><span data-stu-id="4193d-121">For general information, see [OData query parameters](/graph/query-parameters).</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="c29f4-122">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="c29f4-122">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="4193d-122">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="4193d-122">Request headers</span></span>
 
-| <span data-ttu-id="c29f4-123">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="c29f4-123">Header</span></span>       | <span data-ttu-id="c29f4-124">Valor</span><span class="sxs-lookup"><span data-stu-id="c29f4-124">Value</span></span> |
+| <span data-ttu-id="4193d-123">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="4193d-123">Header</span></span>       | <span data-ttu-id="4193d-124">Valor</span><span class="sxs-lookup"><span data-stu-id="4193d-124">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="c29f4-125">Autorização</span><span class="sxs-lookup"><span data-stu-id="c29f4-125">Authorization</span></span>  | <span data-ttu-id="c29f4-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="c29f4-p103">Bearer {token}. Required.</span></span>  |
-| <span data-ttu-id="c29f4-128">MS-APP-ACTS-AS</span><span class="sxs-lookup"><span data-stu-id="c29f4-128">MS-APP-ACTS-AS</span></span> | <span data-ttu-id="c29f4-129">A ID do usuário em nome do qual o aplicativo está agindo.</span><span class="sxs-lookup"><span data-stu-id="c29f4-129">The ID of the user on behalf of whom the app is acting.</span></span> <span data-ttu-id="c29f4-130">Obrigatório ao usar o escopo de permissão do aplicativo.</span><span class="sxs-lookup"><span data-stu-id="c29f4-130">Required when you use the application permission scope.</span></span> |
+| <span data-ttu-id="4193d-125">Autorização</span><span class="sxs-lookup"><span data-stu-id="4193d-125">Authorization</span></span>  | <span data-ttu-id="4193d-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="4193d-p103">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="4193d-128">MS-APP-ACTS-AS</span><span class="sxs-lookup"><span data-stu-id="4193d-128">MS-APP-ACTS-AS</span></span> | <span data-ttu-id="4193d-129">A ID do usuário em nome do qual o aplicativo está agindo.</span><span class="sxs-lookup"><span data-stu-id="4193d-129">The ID of the user on behalf of whom the app is acting.</span></span> <span data-ttu-id="4193d-130">Obrigatório ao usar o escopo de permissão do aplicativo.</span><span class="sxs-lookup"><span data-stu-id="4193d-130">Required when you use the application permission scope.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="c29f4-131">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="c29f4-131">Request body</span></span>
-<span data-ttu-id="c29f4-132">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="c29f4-132">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="4193d-131">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="4193d-131">Request body</span></span>
+<span data-ttu-id="4193d-132">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="4193d-132">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="c29f4-133">Resposta</span><span class="sxs-lookup"><span data-stu-id="c29f4-133">Response</span></span>
+## <a name="response"></a><span data-ttu-id="4193d-133">Resposta</span><span class="sxs-lookup"><span data-stu-id="4193d-133">Response</span></span>
 
-<span data-ttu-id="c29f4-134">Se tiver êxito, este método retornará um código `200 OK` de resposta e uma lista de objetos [timeCard](../resources/timeCard.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="c29f4-134">If successful, this method returns a `200 OK` response code and a list of [timeCard](../resources/timeCard.md) objects in the response body.</span></span>
+<span data-ttu-id="4193d-134">Se tiver êxito, este método retornará um código `200 OK` de resposta e uma lista de objetos [timeCard](../resources/timeCard.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="4193d-134">If successful, this method returns a `200 OK` response code and a list of [timeCard](../resources/timeCard.md) objects in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="c29f4-135">Exemplo</span><span class="sxs-lookup"><span data-stu-id="c29f4-135">Example</span></span>
+## <a name="example"></a><span data-ttu-id="4193d-135">Exemplo</span><span class="sxs-lookup"><span data-stu-id="4193d-135">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="c29f4-136">Solicitação</span><span class="sxs-lookup"><span data-stu-id="c29f4-136">Request</span></span>
-<span data-ttu-id="c29f4-137">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="c29f4-137">The following is an example of the request.</span></span> 
+### <a name="request"></a><span data-ttu-id="4193d-136">Solicitação</span><span class="sxs-lookup"><span data-stu-id="4193d-136">Request</span></span>
+<span data-ttu-id="4193d-137">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="4193d-137">The following is an example of the request.</span></span> 
 
-# <a name="http"></a>[<span data-ttu-id="c29f4-138">HTTP</span><span class="sxs-lookup"><span data-stu-id="c29f4-138">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="4193d-138">HTTP</span><span class="sxs-lookup"><span data-stu-id="4193d-138">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "timecard-list"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/teams/fd15cad8-80f6-484f-9666-3caf695fbf32/schedule/timeCards?$top=2&$filter=state eq 'clockedOut'
 
 ```
+# <a name="c"></a>[<span data-ttu-id="4193d-139">C#</span><span class="sxs-lookup"><span data-stu-id="4193d-139">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/timecard-list-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-### <a name="response"></a><span data-ttu-id="c29f4-139">Resposta</span><span class="sxs-lookup"><span data-stu-id="c29f4-139">Response</span></span>
+# <a name="javascript"></a>[<span data-ttu-id="4193d-140">JavaScript</span><span class="sxs-lookup"><span data-stu-id="4193d-140">JavaScript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/timecard-list-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-<span data-ttu-id="c29f4-140">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="c29f4-140">The following is an example of the response.</span></span> 
+# <a name="objective-c"></a>[<span data-ttu-id="4193d-141">Objective-C</span><span class="sxs-lookup"><span data-stu-id="4193d-141">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/timecard-list-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-><span data-ttu-id="c29f4-141">**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.</span><span class="sxs-lookup"><span data-stu-id="c29f4-141">**Note:** The response object shown here might be shortened for readability.</span></span>
+# <a name="java"></a>[<span data-ttu-id="4193d-142">Java</span><span class="sxs-lookup"><span data-stu-id="4193d-142">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/timecard-list-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+### <a name="response"></a><span data-ttu-id="4193d-143">Resposta</span><span class="sxs-lookup"><span data-stu-id="4193d-143">Response</span></span>
+
+<span data-ttu-id="4193d-144">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="4193d-144">The following is an example of the response.</span></span> 
+
+><span data-ttu-id="4193d-145">**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.</span><span class="sxs-lookup"><span data-stu-id="4193d-145">**Note:** The response object shown here might be shortened for readability.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
