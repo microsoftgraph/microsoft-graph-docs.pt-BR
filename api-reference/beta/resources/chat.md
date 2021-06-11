@@ -5,12 +5,12 @@ author: RamjotSingh
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: fa93e28abb0f4f65938093416276de043db27d7f
-ms.sourcegitcommit: eb67b0a619a4004c1611304f1252a382264a97f3
+ms.openlocfilehash: a596cf7bc5a33cb64f61778f501604ea350ccc5a
+ms.sourcegitcommit: 7abb0672a38a6d9b11a2e0d2cc221222cb8358bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52061802"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52896659"
 ---
 # <a name="chat-resource-type"></a>tipo de recurso de chat
 
@@ -65,6 +65,7 @@ Um chat é uma coleção [de chatMessages](chatmessage.md) entre um ou mais part
 | createdDateTime| dateTimeOffset|  Data e hora em que o chat foi criado. Somente leitura.|
 | lastUpdatedDateTime| dateTimeOffset|  Data e hora em que o chat foi renomeado ou a lista de membros foi alterada pela última vez. Somente leitura.|
 | chatType| [chatType](../resources/chat.md#chattype-values) | Especifica o tipo de chat. Os valores possíveis são: `group` e `oneOnOne` `meeting` .|
+|  webUrl          |   cadeia de caracteres                  |  Um hiperlink que irá para o chat no Microsoft Teams. Essa URL deve ser tratada como um blob opaco e não analisado. Somente leitura.     |
 
 ### <a name="chattype-values"></a>valores chatType 
 
@@ -100,7 +101,8 @@ Veja a seguir uma representação JSON do recurso.
   "topic": "string",
   "createdDateTime": "dateTimeOffset",
   "lastUpdatedDateTime": "dateTimeOffset",
-  "chatType": "String"
+  "chatType": "String",
+  "webUrl": "string"
 }
 ```
 

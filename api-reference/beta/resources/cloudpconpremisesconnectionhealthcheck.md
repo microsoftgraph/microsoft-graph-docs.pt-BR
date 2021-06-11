@@ -5,12 +5,12 @@ author: AshleyYangSZ
 localization_priority: Normal
 ms.prod: cloud-pc
 doc_type: resourcePageType
-ms.openlocfilehash: c322d0af4e255d9438c651d81328c887da1b19a5
-ms.sourcegitcommit: 503c72036c376a30e08c29df8e7730a7afcab66e
+ms.openlocfilehash: 29a01ee72c0dbfcb64572393681bb6920b65e434
+ms.sourcegitcommit: 7abb0672a38a6d9b11a2e0d2cc221222cb8358bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52870637"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52896519"
 ---
 # <a name="cloudpconpremisesconnectionhealthcheck-resource-type"></a>Tipo de recurso cloudPcOnPremisesConnectionHealthCheck
 
@@ -65,6 +65,7 @@ O resultado de uma verificação de saúde de conexão local do computador na nu
 |permissionCheckNoResourceGroupOwnerRole|Cloud PC de serviço não tem permissões de proprietário no grupo de recursos especificado. Trabalhe com o proprietário da assinatura para adicionar atribuição de função de proprietário no grupo de recursos da entidade Cloud PC de serviço.|
 |permissionCheckNoVNetContributorRole|Cloud PC de serviço não tem permissões de colaborador de rede na rede virtual especificada. Trabalhe com o proprietário da assinatura para adicionar a atribuição de função de colaborador de rede para a entidade Cloud PC de serviço. |
 |permissionCheckUnknownError|A verificação de permissão falhou devido a um erro desconhecido. Entre em contato com o suporte ao cliente.|
+|internalServerErrorUnableToRunDscScript|Não é possível executar o script DSC durante a verificação de saúde. O serviço precisa de acesso ao WinRM para provisionar com êxito o computador de nuvem. Verifique se nenhuma Política de Grupo ou configuração relacionada está bloqueando o uso do PowerShell/DSC.|
 |internalServerUnknownError|A verificação de saúde falhou devido a um erro de servidor interno desconhecido. Entre em contato com o suporte ao cliente.|
 
 ## <a name="relationships"></a>Relações

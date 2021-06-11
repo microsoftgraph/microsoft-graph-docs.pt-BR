@@ -5,12 +5,12 @@ localization_priority: Normal
 author: isabelleatmsft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: ba1ce2b94cef8b37da03c655ccc2a687c2557cfd
-ms.sourcegitcommit: 3f40fbb953b14c1f52341786569c678adfc5bd3e
+ms.openlocfilehash: 5246033739817a76f7e4bb142a88e45bd1559f83
+ms.sourcegitcommit: 7abb0672a38a6d9b11a2e0d2cc221222cb8358bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52780831"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52896183"
 ---
 # <a name="create-accessreviewscheduledefinition"></a>Criar accessReviewScheduleDefinition
 
@@ -50,14 +50,14 @@ A tabela a seguir mostra as propriedades aceitas para criar um accessReview.
 
 | Propriedade | Tipo | Descrição |
 |:-------------|:------------|:------------|
-| displayName | String | Nome da série de revisão de acesso. Obrigatório.|
-| descriptionForAdmins | cadeia de caracteres | Contexto da revisão fornecida aos administradores. Obrigatório. |
-  descriptionForReviewers | cadeia de caracteres | Contexto da revisão fornecida aos revisadores. Obrigatório. |
+| displayName | Cadeia de caracteres | Nome da série de revisão de acesso. Obrigatório.|
+| descriptionForAdmins | string | Contexto da revisão fornecida aos administradores. Obrigatório. |
+  descriptionForReviewers | string | Contexto da revisão fornecida aos revisadores. Obrigatório. |
 | escopo | [accessReviewScope](../resources/accessreviewscope.md) | Define o escopo dos usuários revisados em um grupo. Consulte [accessReviewScope](../resources/accessreviewscheduledefinition.md) e também saiba como [configurar o escopo da sua definição de revisão de acesso.](/graph/accessreviews-scope-concept) Obrigatório.| 
 | instanceEnumerationScope | [accessReviewScope](../resources/accessreviewscope.md) | No caso de uma revisão de todos os grupos, isso determina o escopo de quais grupos serão revisados. Consulte [accessReviewScope](../resources/accessreviewscheduledefinition.md) e também saiba como [configurar o escopo da sua definição de revisão de acesso.](/graph/accessreviews-scope-concept)| 
 | settings | [accessReviewScheduleSettings](../resources/accessreviewschedulesettings.md)| As configurações de uma série de revisão de acesso. A recorrência é determinada aqui. Consulte [accessReviewScheduleSettings](../resources/accessreviewscheduledefinition.md). |
 | revisadores | [Coleção accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) | Define quem são os revisadores. Se nenhum for especificado, a revisão será uma autoavaliação (os usuários revisados analisam seu próprio acesso). Consulte [accessReviewReviewerScope](../resources/accessreviewscheduledefinition.md). |
-
+| additionalNotificationRecipients   |[Coleção accessReviewNotificationRecipientItem](../resources/accessReviewNotificationRecipientItem.md)| Define a lista de usuários adicionais ou membros do grupo a serem notificados sobre o progresso da revisão de acesso. |
 
 ## <a name="response"></a>Resposta
 Se tiver êxito, este método retornará um código de resposta e um `201 Created` [objeto accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) no corpo da resposta.
@@ -97,7 +97,7 @@ Content-type: application/json
       "query": "/users/398164b1-5196-49dd-ada2-364b49f99b27",
       "queryType": "MicrosoftGraph"
     }
-  ],
+  ],  
   "settings": {
     "mailNotificationsEnabled": true,
     "reminderNotificationsEnabled": true,
@@ -173,7 +173,7 @@ Content-type: application/json
       "queryType": "MicrosoftGraph",
       "queryRoot": "decisions"
     }
-  ],
+  ],  
   "settings": {
     "mailNotificationsEnabled": true,
     "reminderNotificationsEnabled": true,

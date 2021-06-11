@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso meetingParticipants
 description: Participantes em uma reunião.
-author: jsandoval-msft
+author: mkhribech
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 93ca3d73518f9739cc3115c80efd2aec551629b5
-ms.sourcegitcommit: 6e7d9987a255f1bee04f196a4a7e37f56621bfb8
+ms.openlocfilehash: 8ee5cf115a80c642f5442230d7111dfaeffca930
+ms.sourcegitcommit: 7abb0672a38a6d9b11a2e0d2cc221222cb8358bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "51944160"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52896617"
 ---
 # <a name="meetingparticipants-resource-type"></a>Tipo de recurso meetingParticipants
 

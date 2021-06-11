@@ -5,12 +5,12 @@ author: markwahl-msft
 localization_priority: Normal
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 00cac73ca31774a4b86a0df3db5b7c958e65e052
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 284a7e4c907fb5305eee06b124250467fc27b450
+ms.sourcegitcommit: 7abb0672a38a6d9b11a2e0d2cc221222cb8358bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50437418"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52896267"
 ---
 # <a name="create-connectedorganization"></a>Criar connectedOrganization
 
@@ -54,10 +54,12 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [connect
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|displayName|String|O nome da organização conectada. |
-|descrição|String|A descrição da organização conectada.|
+|displayName|Cadeia de caracteres|O nome da organização conectada. |
+|descrição|Cadeia de caracteres|A descrição da organização conectada.|
 |identitySources|[Coleção identitySource](../resources/identitysource.md)|Uma coleção com um elemento, a fonte de identidade inicial nesta organização conectada.|
 |state|connectedOrganizationState|O estado de uma organização conectada define se as políticas de atribuição com o tipo de escopo do solicitante `AllConfiguredConnectedOrganizationSubjects` são aplicáveis ou não. Os valores possíveis são: `configured` e `proposed`.|
+
+O único membro da coleção identitySources deve ser do tipo [domainIdentitySource](../resources/domainidentitysource.md) ou [externalDomainFederation.](../resources/externaldomainfederation.md)  Se o chamador fornece um domainIdentitySource, a chamada é bem-sucedida e o domínio corresponde a um domínio registrado de um locatário Azure Active Directory, então a connectedOrganization resultante criada terá uma coleção identitySources contendo um único membro do tipo [azureActiveDirectoryTenant.](../resources/azureactivedirectorytenant.md)
 
 ## <a name="response"></a>Resposta
 

@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso outOfOfficeSettings
 description: Representa as informações de acesso ao telefone para uma reunião online.
-author: jsandoval-msft
+author: mkhribech
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 018852150ef833d8cb114892790f911b4aad8fe0
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 13f826babea1e6f9448d1ecb9b8100baaf962b20
+ms.sourcegitcommit: 7abb0672a38a6d9b11a2e0d2cc221222cb8358bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50960370"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52896631"
 ---
 # <a name="outofofficesettings-resource-type"></a>Tipo de recurso outOfOfficeSettings
 
@@ -24,8 +24,8 @@ Representa as configurações fora do escritório relacionadas à [presença](pr
 
 | Propriedade            | Tipo    | Descrição                                                                    |
 |:--------------------|:--------|:-------------------------------------------------------------------------------|
-| mensagem           | String  | A mensagem fora do escritório que o usuário configurou no cliente do Outlook (Respostas Automáticas (Sem Escritório)) ou no cliente do Teams (Agendamento sem escritório). |
-| isOutOfOffice      | Booliano  | True se:</br><ul><li>Ele está atualmente na janela de tempo fora do escritório configurada no cliente do Outlook ou do Teams.</li><li>Atualmente, há um evento no calendário do usuário marcado como Show as Out of Office</li></ul></br>Caso contrário, false. |
+| mensagem           | String  | A mensagem fora do escritório que o usuário configurou no cliente Outlook (Respostas Automáticas (Sem Office)) ou o cliente Teams (Agendar sem escritório). |
+| isOutOfOffice      | Boolean  | True se:</br><ul><li>Atualmente, ele está na janela de tempo fora do escritório configurada no Outlook ou Teams cliente.</li><li>Atualmente, há um evento no calendário do usuário marcado como Show as Out of Office</li></ul></br>Caso contrário, false. |
 
 ## <a name="json-representation"></a>Representação JSON
 

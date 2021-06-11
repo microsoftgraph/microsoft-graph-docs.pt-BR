@@ -1,16 +1,16 @@
 ---
 title: Atualizar onlineMeeting
 description: Atualize as propriedades de uma reunião online.
-author: jsandoval-msft
+author: mkhribech
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 0781be9d2dcc289fe99aeb92f31f3e55ea273730
-ms.sourcegitcommit: 2a35434fabc76672e21bfc3ed5a1d28f9f3b66bc
+ms.openlocfilehash: 64b979f6c9c2859b441526d26ff8029eed6c4491
+ms.sourcegitcommit: 7abb0672a38a6d9b11a2e0d2cc221222cb8358bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52241062"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52896666"
 ---
 # <a name="update-onlinemeeting"></a>Atualizar onlineMeeting
 
@@ -69,7 +69,7 @@ A tabela abaixo lista as propriedades que podem ser atualizadas. No corpo da sol
 | endDateTime          | DateTime                                                     | A hora de término da reunião em UTC.                                                                                                                   |
 | Assunto              | Cadeia de caracteres                                                       | O assunto da reunião online.                                                                                                             |
 | participants         | [meetingParticipants](../resources/meetingparticipants.md)   | Os participantes associados à reunião online. Somente participantes podem ser atualizados.                                            |
-| isEntryExitAnnounced | Booliano                                                      | Se os chamadores ingressarão ou sairão.                                                                                         |
+| isEntryExitAnnounced | Boolean                                                      | Se os chamadores ingressarão ou sairão.                                                                                         |
 | lobbyBypassSettings  | [lobbyBypassSettings](../resources/lobbyBypassSettings.md)   | Especifica quais participantes podem ignorar o lobby da reunião.                                                                                     |
 | allowedPresenters    | onlineMeetingPresenters                                      | Especifica quem pode ser um apresentador em uma reunião. Os valores possíveis são todos, organização, roleIsPresenter, organizador e unknownFutureValue. |
 

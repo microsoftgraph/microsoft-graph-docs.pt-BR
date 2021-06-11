@@ -1,16 +1,16 @@
 ---
 title: 'onlineMeeting: createOrGet'
 description: Crie uma reunião online com uma ID externa especificada personalizada. Se a ID externa já existir, essa API retornará o objeto onlineMeeting com essa ID externa.
-author: jsandoval-msft
+author: mkhribech
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 3256e99798de12d4a79da37888551d562ed6027e
-ms.sourcegitcommit: 3eb37e0621540bee91f42a7c2d8457310e90f8b7
+ms.openlocfilehash: 87d51c5796d220cf6ea2fb3fcba629e0fe0b0305
+ms.sourcegitcommit: 7abb0672a38a6d9b11a2e0d2cc221222cb8358bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51869859"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52896554"
 ---
 # <a name="onlinemeeting-createorget"></a>onlineMeeting: createOrGet
 
@@ -48,7 +48,7 @@ POST /users/{userId}/onlineMeetings/createOrGet
 ```
 
 > [!NOTE]
-> `userId`é a ID do objeto de um usuário no portal de gerenciamento [de usuários do Azure.](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade) Veja mais detalhes na [política](/graph/cloud-communication-online-meeting-application-access-policy) de acesso aos aplicativos.
+> `userId` é a ID de objeto de um usuário no [Portal de gerenciamento de usuário do Azure](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade). Veja mais detalhes na [política](/graph/cloud-communication-online-meeting-application-access-policy) de acesso aos aplicativos.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome          | Descrição                 |
@@ -66,7 +66,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 | externalId    | Cadeia de caracteres                                                     | A ID externa. Uma ID personalizada. (Obrigatório)                                                             |
 | participants  | [meetingParticipants](../resources/meetingparticipants.md) | Os participantes associados à reunião online.  Isso inclui o organizador e os participantes. |
 | startDateTime | DateTime                                                   | O horário de início da reunião em UTC.                                                                       |
-| assunto       | Cadeia de caracteres                                                     | O assunto da reunião online.                                                                   |
+| Assunto       | Cadeia de caracteres                                                     | O assunto da reunião online.                                                                   |
 
 > **Observações:**
 >
@@ -207,7 +207,7 @@ Content-Type: application/json
 ```
 
 
-### <a name="example-2-create-or-get-an-online-meeting-in-a-microsoft-teams-channel-with-an-external-id"></a>Exemplo 2: Criar ou obter uma reunião online em um canal do Microsoft Teams com uma ID externa
+### <a name="example-2-create-or-get-an-online-meeting-in-a-microsoft-teams-channel-with-an-external-id"></a>Exemplo 2: criar ou obter uma reunião online em um canal Microsoft Teams com uma ID externa
 
 #### <a name="request"></a>Solicitação
 

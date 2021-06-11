@@ -1,23 +1,23 @@
 ---
 title: Permitir que os aplicativos acessem reuniões online em nome de um usuário
 description: Saiba como configurar aplicativos para acessar reuniões online em nome de um usuário.
-author: jsandoval-msft
+author: mkhribech
 localization_priority: Normal
 ms.prod: cloud-communications
-ms.openlocfilehash: ff14ae4506cc19adf58ab61cde436a0252bd6f5c
-ms.sourcegitcommit: 32c83957ee69f21a10cd5f759adb884ce4b41c52
+ms.openlocfilehash: fa3771c1325f0c2a5f10b425e2eca51e9d1534ac
+ms.sourcegitcommit: 7abb0672a38a6d9b11a2e0d2cc221222cb8358bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51920394"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52896701"
 ---
 # <a name="allow-applications-to-access-online-meetings-on-behalf-of-a-user"></a>Permitir que os aplicativos acessem reuniões online em nome de um usuário
 
-Em alguns casos, como para serviços em segundo plano ou aplicativos daemon que são executados em um servidor sem a presença de um usuário assinado, é apropriado que um aplicativo chame o Microsoft Graph para executar ações em nome de um usuário. Por exemplo, um aplicativo pode precisar chamar o Microsoft Graph para agendar várias reuniões com base em agendas publicadas (como cursos) ou ferramentas de agendamento externo. Nesses casos, o usuário de quem o aplicativo age em nome é identificado como o organizador da reunião.
+Em alguns casos, como para serviços em segundo plano ou aplicativos daemon que são executados em um servidor sem a presença de um usuário assinado, é apropriado que um aplicativo chame o Microsoft Graph para executar ações em nome de um usuário. Por exemplo, um aplicativo pode precisar chamar a Microsoft Graph agendar várias reuniões com base em agendas publicadas (como cursos) ou ferramentas de agendamento externo. Nesses casos, o usuário de quem o aplicativo age em nome é identificado como o organizador da reunião.
 
 Os administradores que quiserem permitir que um aplicativo acesse recursos de reunião online em nome de um usuário podem usar os cmdlets **New-CsApplicationAccessPolicy** e **Grant-CsApplicationAccessPolicy** PowerShell para configurar o controle de acesso. Este artigo aborda as etapas básicas para configurar uma política de acesso a aplicativos.
 
-Essas etapas são específicas para reuniões online e não se aplicam a outros recursos do Microsoft Graph.
+Essas etapas são específicas para reuniões online e não se aplicam a outros recursos Graph Microsoft.
 
 ## <a name="configure-application-access-policy"></a>Configurar política de acesso a aplicativos
 
@@ -28,7 +28,7 @@ Para configurar uma política de acesso a aplicativos e permitir que os aplicati
     - Identifique o ID do aplicativo (cliente) do aplicativo no [portal de registro de aplicativos do Azure](https://portal.azure.com/#blade/Microsoft_AAD_RegisteredApps/ApplicationsListBlade).
     - Identificar a ID de usuário (objeto) do usuário no portal de gerenciamento [de usuários do Azure](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade)
 
-2. Conecte-se ao Skype for Business PowerShell com uma conta de administrador. Para obter detalhes, [consulte Manage Skype for Business Online with PowerShell](/microsoft-365/enterprise/manage-skype-for-business-online-with-microsoft-365-powershell).
+2. Conexão para Skype for Business PowerShell com uma conta de administrador. Para obter detalhes, [consulte Manage Skype for Business Online with PowerShell](/microsoft-365/enterprise/manage-skype-for-business-online-with-microsoft-365-powershell).
 
 3. Crie uma política de acesso a aplicativos que contenha uma lista de IDs de aplicativo.
 
@@ -48,7 +48,7 @@ Para configurar uma política de acesso a aplicativos e permitir que os aplicati
 
 > [!NOTE]
 > - _Identity_ refere-se ao nome da política ao criar a política, mas a ID do usuário ao conceder a política.
-> - As alterações nas políticas de acesso a aplicativos podem levar até 30 minutos para entrar em vigor em chamadas da API REST do Microsoft Graph.
+> - As alterações nas políticas de acesso ao aplicativo podem levar até 30 minutos para entrar em vigor nas chamadas da API REST Graph Microsoft.
 
 ## <a name="supported-permissions-and-additional-resources"></a>Permissões compatíveis e recursos adicionais
 

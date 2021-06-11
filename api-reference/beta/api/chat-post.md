@@ -1,23 +1,23 @@
 ---
 title: Criar chat
-description: Criar um novo objeto de chat.
+description: Crie um novo objeto de chat.
 author: bhartono
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: c14e6e186c0bcd82c6a0b7c0a99db18ba61247c6
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: a1fc781b35a144057c2d6f3baae3c718b86a30e0
+ms.sourcegitcommit: 7abb0672a38a6d9b11a2e0d2cc221222cb8358bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49872895"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52896491"
 ---
 # <a name="create-chat"></a>Criar chat
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Criar um novo [objeto de chat.](../resources/chat.md)
+Crie um novo [objeto de chat.](../resources/chat.md)
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -45,23 +45,23 @@ POST /chats
 |Content-Type|application/json. Obrigatório.|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, fornece uma representação JSON do [objeto de chat.](../resources/chat.md)
+No corpo da solicitação, fornece uma representação JSON do [objeto chat.](../resources/chat.md)
 
-A tabela a seguir lista as propriedades que são necessárias para criar um objeto de chat.
+A tabela a seguir lista as propriedades necessárias para criar um objeto de chat.
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |topic|(Opcional) Cadeia de caracteres|O título do chat. O título do chat só poderá ser fornecido se o chat for do `group` tipo.|
 |chatType|[chatType](../resources/chat.md#chattype-values)| Especifica o tipo de chat. Os valores possíveis são: `group` e `oneOnOne` . |
-|members|coleção [conversationMember](../resources/conversationmember.md)|Lista de membros da conversa que devem ser adicionados. Todos os usuários, incluindo o usuário que inicia a solicitação de criação, que participarão do chat devem ser especificados nessa lista.|
+|members|coleção [conversationMember](../resources/conversationmember.md)|Lista de membros da conversa que devem ser adicionados. Todos os usuários, incluindo o usuário que inicia a solicitação de criação, que participarão do chat devem ser especificados nesta lista.|
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um código de resposta 201 Criado e o recurso de **chat** recém-criado no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta Criado 201 e o recurso de **chat** recém-criado no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
-### <a name="example-1-create-a-one-on-one-chat"></a>Exemplo 1: Criar um chat um-para-um
+### <a name="example-1-create-a-one-on-one-chat"></a>Exemplo 1: Criar um chat um para um
 
 #### <a name="request"></a>Solicitação
 
@@ -129,11 +129,12 @@ Content-Type: application/json
     "topic": null,
     "createdDateTime": "2020-12-04T23:10:28.51Z",
     "lastUpdatedDateTime": "2020-12-04T23:10:28.51Z",
-    "chatType": "oneOnOne"
+    "chatType": "oneOnOne",
+    "webUrl": "https://teams.microsoft.com/l/chat/19%3A82fe7758-5bb3-4f0d-a43f-e555fd399c6f_8c0a1a67-50ce-4114-bb6c-da9c5dbcf6ca@unq.gbl.spaces/0?tenantId=b33cbe9f-8ebe-4f2a-912b-7e2a427f477f"
 }
 ```
 
-### <a name="example-2-create-a-group-chat"></a>Exemplo 2: Criar um chat de grupo
+### <a name="example-2-create-a-group-chat"></a>Exemplo 2: Criar um chat em grupo
 
 #### <a name="request"></a>Solicitação
 
@@ -207,7 +208,8 @@ Content-Type: application/json
     "topic": "Group chat title",
     "createdDateTime": "2020-12-04T23:11:16.175Z",
     "lastUpdatedDateTime": "2020-12-04T23:11:16.175Z",
-    "chatType": "group"
+    "chatType": "group",
+    "webUrl": "https://teams.microsoft.com/l/chat/19%3A1c5b01696d2e4a179c292bc9cf04e63b@thread.v2/0?tenantId=b33cbe9f-8ebe-4f2a-912b-7e2a427f477f"
 }
 ```
 

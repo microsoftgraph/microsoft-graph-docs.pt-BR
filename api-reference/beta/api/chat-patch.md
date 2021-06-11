@@ -1,23 +1,23 @@
 ---
 title: Atualizar chat
-description: Atualizar as propriedades de um objeto de chat.
+description: Atualize as propriedades de um objeto de chat.
 author: bhartono
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: afab926568c7fab65395f2291c218002b31bcd5e
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: cd906d473977987fc3859aee05d9b88b321cac60
+ms.sourcegitcommit: 7abb0672a38a6d9b11a2e0d2cc221222cb8358bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49872888"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52896470"
 ---
 # <a name="update-chat"></a>Atualizar chat
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Atualizar as propriedades de um [objeto de chat.](../resources/chat.md)
+Atualize as propriedades de um [objeto de chat.](../resources/chat.md)
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -45,7 +45,7 @@ PATCH /chats/{chat-id}
 |Content-Type|application/json. Obrigatório.|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, fornece uma representação JSON do [objeto de chat.](../resources/chat.md)
+No corpo da solicitação, fornece uma representação JSON do [objeto chat.](../resources/chat.md)
 
 A tabela a seguir mostra as propriedades que podem ser usadas com essa ação.
 
@@ -56,7 +56,7 @@ A tabela a seguir mostra as propriedades que podem ser usadas com essa ação.
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna `200 OK response` um código e o recurso de **chat** atualizado no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK response` código e o recurso de **chat** atualizado no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -114,7 +114,8 @@ Content-Type: application/json
     "topic": "Group chat title update",
     "createdDateTime": "2020-12-04T23:11:16.175Z",
     "lastUpdatedDateTime": "2020-12-04T23:12:19.943Z",
-    "chatType": "group"
+    "chatType": "group",
+    "webUrl": "https://teams.microsoft.com/l/chat/19%3A1c5b01696d2e4a179c292bc9cf04e63b@thread.v2/0?tenantId=b33cbe9f-8ebe-4f2a-912b-7e2a427f477f"
 }
 ```
 

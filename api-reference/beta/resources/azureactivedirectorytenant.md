@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso do azureActiveDirectoryTenant
-description: O tipo azureActiveDirectoryTenant identifica outro locatário do Azure Active Directory como uma fonte de identidade para uma organização conectada.
+description: O tipo azureActiveDirectoryTenant identifica outro locatário Azure Active Directory como uma fonte de identidade para uma organização conectada.
 localization_priority: Normal
 author: markwahl-msft
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: acd59c82f1968cbb161b74d1e7c1a551b6b2e397
-ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
+ms.openlocfilehash: d7a36c8c737866b20585518e1dc34e6944c97885
+ms.sourcegitcommit: 7abb0672a38a6d9b11a2e0d2cc221222cb8358bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50759906"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52896582"
 ---
 # <a name="azureactivedirectorytenant-resource-type"></a>Tipo de recurso do azureActiveDirectoryTenant
 
@@ -18,14 +18,16 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Usado nas fontes de identidade de [uma connectedOrganization](connectedOrganization.md). O valor indica que esse tipo identifica outro locatário do `@odata.type` Azure Active Directory como uma fonte de `#microsoft.graph.azureActiveDirectoryTenant` identidade para uma organização conectada.
+Usado nas fontes de identidade de [uma connectedOrganization](connectedOrganization.md). O valor indica que esse tipo identifica outro locatário Azure Active Directory como uma fonte de `@odata.type` identidade para uma organização `#microsoft.graph.azureActiveDirectoryTenant` conectada.
+
+Ao criar uma nova [connectedOrganization](../api/connectedorganization-post.md), se o chamador fornece na coleção identitySources um domainIdentitySource e o domínio corresponde a um domínio registrado de um locatário do Azure Active Directory, a organização conectada resultante criada terá uma coleção identitySources contendo um único membro do tipo [azureActiveDirectoryTenant.](azureactivedirectorytenant.md)
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade                     | Tipo                      | Descrição |
 | :--------------------------- | :------------------------ | :---------- |
-| displayName |Cadeia de caracteres | O nome do locatário do Azure Active Directory. Somente leitura. |
-| tenantId |String | A ID do locatário do Azure Active Directory. Somente leitura. |
+| displayName |Cadeia de caracteres | O nome do Azure Active Directory locatário. Somente leitura. |
+| tenantId |String | A ID do Azure Active Directory locatário. Somente leitura. |
 
 ## <a name="relationships"></a>Relações
 
