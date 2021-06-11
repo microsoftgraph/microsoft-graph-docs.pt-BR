@@ -1,80 +1,80 @@
 ---
 title: Criar ReuniãoOnline
 description: Crie uma reunião online em nome de um usuário específico no corpo da solicitação.
-author: jsandoval-msft
+author: mkhribech
 localization_priority: Priority
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 4c6ac941cd5b678f3470cd4a0c242ff9e70ee920
-ms.sourcegitcommit: 6e7d9987a255f1bee04f196a4a7e37f56621bfb8
+ms.openlocfilehash: 38fbfa79802854519a8eaad723b1989ba98ea2af
+ms.sourcegitcommit: 7abb0672a38a6d9b11a2e0d2cc221222cb8358bb
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "51944265"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52896190"
 ---
-# <a name="create-onlinemeeting"></a><span data-ttu-id="c4fa8-103">Criar ReuniãoOnline</span><span class="sxs-lookup"><span data-stu-id="c4fa8-103">Create onlineMeeting</span></span>
+# <a name="create-onlinemeeting"></a><span data-ttu-id="5b499-103">Criar ReuniãoOnline</span><span class="sxs-lookup"><span data-stu-id="5b499-103">Create onlineMeeting</span></span>
 
-<span data-ttu-id="c4fa8-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="c4fa8-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="5b499-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="5b499-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="c4fa8-105">Crie uma reunião online em nome de um usuário usando a ID de objeto (OID) no token de usuário (permissão delegada) ou solicite o caminho (permissão de aplicativo).</span><span class="sxs-lookup"><span data-stu-id="c4fa8-105">Create an online meeting on behalf of a user by using the object ID (OID) in the user token (delegated permission) or request path (application permission).</span></span>
+<span data-ttu-id="5b499-105">Crie uma reunião online em nome de um usuário usando a ID de objeto (OID) no token de usuário (permissão delegada) ou solicite o caminho (permissão de aplicativo).</span><span class="sxs-lookup"><span data-stu-id="5b499-105">Create an online meeting on behalf of a user by using the object ID (OID) in the user token (delegated permission) or request path (application permission).</span></span>
 
 > [!TIP]
-> <span data-ttu-id="c4fa8-106">A reunião não é exibida no calendário do usuário.</span><span class="sxs-lookup"><span data-stu-id="c4fa8-106">The meeting does not show up on the user's calendar.</span></span>
+> <span data-ttu-id="5b499-106">A reunião não é exibida no calendário do usuário.</span><span class="sxs-lookup"><span data-stu-id="5b499-106">The meeting does not show up on the user's calendar.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="c4fa8-107">Permissões</span><span class="sxs-lookup"><span data-stu-id="c4fa8-107">Permissions</span></span>
-<span data-ttu-id="c4fa8-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="c4fa8-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="5b499-107">Permissões</span><span class="sxs-lookup"><span data-stu-id="5b499-107">Permissions</span></span>
+<span data-ttu-id="5b499-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="5b499-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="c4fa8-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="c4fa8-110">Permission type</span></span>                        | <span data-ttu-id="c4fa8-111">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="c4fa8-111">Permissions (from least to most privileged)</span></span>           |
+| <span data-ttu-id="5b499-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="5b499-110">Permission type</span></span>                        | <span data-ttu-id="5b499-111">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="5b499-111">Permissions (from least to most privileged)</span></span>           |
 | :------------------------------------- | :---------------------------------------------------- |
-| <span data-ttu-id="c4fa8-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="c4fa8-112">Delegated (work or school account)</span></span>     | <span data-ttu-id="c4fa8-113">OnlineMeetings.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="c4fa8-113">OnlineMeetings.ReadWrite</span></span>                              |
-| <span data-ttu-id="c4fa8-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="c4fa8-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="c4fa8-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="c4fa8-115">Not supported.</span></span>                                        |
-| <span data-ttu-id="c4fa8-116">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="c4fa8-116">Application</span></span>                            | <span data-ttu-id="c4fa8-117">OnlineMeetings.ReadWrite.All\*</span><span class="sxs-lookup"><span data-stu-id="c4fa8-117">OnlineMeetings.ReadWrite.All\*</span></span>                         |
+| <span data-ttu-id="5b499-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="5b499-112">Delegated (work or school account)</span></span>     | <span data-ttu-id="5b499-113">OnlineMeetings.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="5b499-113">OnlineMeetings.ReadWrite</span></span>                              |
+| <span data-ttu-id="5b499-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="5b499-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="5b499-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="5b499-115">Not supported.</span></span>                                        |
+| <span data-ttu-id="5b499-116">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="5b499-116">Application</span></span>                            | <span data-ttu-id="5b499-117">OnlineMeetings.ReadWrite.All\*</span><span class="sxs-lookup"><span data-stu-id="5b499-117">OnlineMeetings.ReadWrite.All\*</span></span>                         |
 
 > [!IMPORTANT]
-> <span data-ttu-id="c4fa8-118">\* Os administradores devem criar uma [política de acesso aos aplicativos ](/graph/cloud-communication-online-meeting-application-access-policy) e concedê-la a um usuário, autorizando o aplicativo configurado na política para criar uma reunião online em nome desse usuário (ID de usuário especificada no caminho da solicitação).</span><span class="sxs-lookup"><span data-stu-id="c4fa8-118">\* Administrators must create an [application access policy](/graph/cloud-communication-online-meeting-application-access-policy) and grant it to a user, authorizing the app configured in the policy to create an online meeting on behalf of that user (user ID specified in the request path).</span></span>
+> <span data-ttu-id="5b499-118">\* Os administradores devem criar uma [política de acesso aos aplicativos ](/graph/cloud-communication-online-meeting-application-access-policy) e concedê-la a um usuário, autorizando o aplicativo configurado na política para criar uma reunião online em nome desse usuário (ID de usuário especificada no caminho da solicitação).</span><span class="sxs-lookup"><span data-stu-id="5b499-118">\* Administrators must create an [application access policy](/graph/cloud-communication-online-meeting-application-access-policy) and grant it to a user, authorizing the app configured in the policy to create an online meeting on behalf of that user (user ID specified in the request path).</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="c4fa8-119">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="c4fa8-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="5b499-119">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="5b499-119">HTTP request</span></span>
 
-<span data-ttu-id="c4fa8-120">Solicitação ao usar um token delegado:</span><span class="sxs-lookup"><span data-stu-id="c4fa8-120">Request when using a delegated token:</span></span>
+<span data-ttu-id="5b499-120">Solicitação ao usar um token delegado:</span><span class="sxs-lookup"><span data-stu-id="5b499-120">Request when using a delegated token:</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/onlineMeetings
 ```
 
-<span data-ttu-id="c4fa8-121">Solicitar quando usar um token de aplicativo:</span><span class="sxs-lookup"><span data-stu-id="c4fa8-121">Request when using an application token:</span></span>
+<span data-ttu-id="5b499-121">Solicitar quando usar um token de aplicativo:</span><span class="sxs-lookup"><span data-stu-id="5b499-121">Request when using an application token:</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /users/{userId}/onlineMeetings
 ```
 
 > [!NOTE]
-> <span data-ttu-id="c4fa8-122">`userId` é a ID de objeto de um usuário no [Portal de gerenciamento de usuário do Azure](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade).</span><span class="sxs-lookup"><span data-stu-id="c4fa8-122">`userId` is the object ID of a user in [Azure user management portal](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade).</span></span> <span data-ttu-id="c4fa8-123">Veja mais detalhes na [política](/graph/cloud-communication-online-meeting-application-access-policy) de acesso aos aplicativos.</span><span class="sxs-lookup"><span data-stu-id="c4fa8-123">See more details in [application access policy](/graph/cloud-communication-online-meeting-application-access-policy).</span></span>
+> <span data-ttu-id="5b499-122">`userId` é a ID de objeto de um usuário no [Portal de gerenciamento de usuário do Azure](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade).</span><span class="sxs-lookup"><span data-stu-id="5b499-122">`userId` is the object ID of a user in [Azure user management portal](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade).</span></span> <span data-ttu-id="5b499-123">Veja mais detalhes na [política](/graph/cloud-communication-online-meeting-application-access-policy) de acesso aos aplicativos.</span><span class="sxs-lookup"><span data-stu-id="5b499-123">See more details in [application access policy](/graph/cloud-communication-online-meeting-application-access-policy).</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="c4fa8-124">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="c4fa8-124">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="5b499-124">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="5b499-124">Request headers</span></span>
 
-| <span data-ttu-id="c4fa8-125">Nome</span><span class="sxs-lookup"><span data-stu-id="c4fa8-125">Name</span></span>            | <span data-ttu-id="c4fa8-126">Descrição</span><span class="sxs-lookup"><span data-stu-id="c4fa8-126">Description</span></span>                 |
+| <span data-ttu-id="5b499-125">Nome</span><span class="sxs-lookup"><span data-stu-id="5b499-125">Name</span></span>            | <span data-ttu-id="5b499-126">Descrição</span><span class="sxs-lookup"><span data-stu-id="5b499-126">Description</span></span>                 |
 | :-------------- | :-------------------------- |
-| <span data-ttu-id="c4fa8-127">Autorização</span><span class="sxs-lookup"><span data-stu-id="c4fa8-127">Authorization</span></span>   | <span data-ttu-id="c4fa8-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="c4fa8-p103">Bearer {token}. Required.</span></span>   |
-| <span data-ttu-id="c4fa8-130">Content-type</span><span class="sxs-lookup"><span data-stu-id="c4fa8-130">Content-type</span></span>    | <span data-ttu-id="c4fa8-p104">application/json. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="c4fa8-p104">application/json. Required.</span></span> |
-| <span data-ttu-id="c4fa8-133">Accept-Language</span><span class="sxs-lookup"><span data-stu-id="c4fa8-133">Accept-Language</span></span> | <span data-ttu-id="c4fa8-134">Idioma.</span><span class="sxs-lookup"><span data-stu-id="c4fa8-134">Language.</span></span> <span data-ttu-id="c4fa8-135">Opcional.</span><span class="sxs-lookup"><span data-stu-id="c4fa8-135">Optional.</span></span>         |
+| <span data-ttu-id="5b499-127">Autorização</span><span class="sxs-lookup"><span data-stu-id="5b499-127">Authorization</span></span>   | <span data-ttu-id="5b499-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="5b499-p103">Bearer {token}. Required.</span></span>   |
+| <span data-ttu-id="5b499-130">Content-type</span><span class="sxs-lookup"><span data-stu-id="5b499-130">Content-type</span></span>    | <span data-ttu-id="5b499-p104">application/json. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="5b499-p104">application/json. Required.</span></span> |
+| <span data-ttu-id="5b499-133">Accept-Language</span><span class="sxs-lookup"><span data-stu-id="5b499-133">Accept-Language</span></span> | <span data-ttu-id="5b499-134">Idioma.</span><span class="sxs-lookup"><span data-stu-id="5b499-134">Language.</span></span> <span data-ttu-id="5b499-135">Opcional.</span><span class="sxs-lookup"><span data-stu-id="5b499-135">Optional.</span></span>         |
 
-<span data-ttu-id="c4fa8-136">Se a solicitação contiver um `Accept-Language`cabeçalho HTTP, o `content` de `joinInformation` estará na variante de idioma e código de idioma especificada `Accept-Language` no cabeçalho.</span><span class="sxs-lookup"><span data-stu-id="c4fa8-136">If the request contains an `Accept-Language` HTTP header, the `content` of `joinInformation` will be in the language and locale variant specified in the `Accept-Language` header.</span></span> <span data-ttu-id="c4fa8-137">O conteúdo padrão será em inglês.</span><span class="sxs-lookup"><span data-stu-id="c4fa8-137">The default content will be in English.</span></span>
+<span data-ttu-id="5b499-136">Se a solicitação contiver um `Accept-Language`cabeçalho HTTP, o `content` de `joinInformation` estará na variante de idioma e código de idioma especificada `Accept-Language` no cabeçalho.</span><span class="sxs-lookup"><span data-stu-id="5b499-136">If the request contains an `Accept-Language` HTTP header, the `content` of `joinInformation` will be in the language and locale variant specified in the `Accept-Language` header.</span></span> <span data-ttu-id="5b499-137">O conteúdo padrão será em inglês.</span><span class="sxs-lookup"><span data-stu-id="5b499-137">The default content will be in English.</span></span>
 
-## <a name="request-body"></a><span data-ttu-id="c4fa8-138">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="c4fa8-138">Request body</span></span>
-<span data-ttu-id="c4fa8-139">No corpo da solicitação, forneça uma representação JSON de um objeto [onlineMeeting](../resources/onlinemeeting.md).</span><span class="sxs-lookup"><span data-stu-id="c4fa8-139">In the request body, supply a JSON representation of an [onlineMeeting](../resources/onlinemeeting.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="5b499-138">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="5b499-138">Request body</span></span>
+<span data-ttu-id="5b499-139">No corpo da solicitação, forneça uma representação JSON de um objeto [onlineMeeting](../resources/onlinemeeting.md).</span><span class="sxs-lookup"><span data-stu-id="5b499-139">In the request body, supply a JSON representation of an [onlineMeeting](../resources/onlinemeeting.md) object.</span></span>
 
-## <a name="response"></a><span data-ttu-id="c4fa8-140">Resposta</span><span class="sxs-lookup"><span data-stu-id="c4fa8-140">Response</span></span>
-<span data-ttu-id="c4fa8-141">Se bem-sucedido, este método retorna o código de resposta `201 Created` e um objeto [onlineMeeting](../resources/onlinemeeting.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="c4fa8-141">If successful, this method returns a `201 Created` response code and an [onlineMeeting](../resources/onlinemeeting.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="5b499-140">Resposta</span><span class="sxs-lookup"><span data-stu-id="5b499-140">Response</span></span>
+<span data-ttu-id="5b499-141">Se bem-sucedido, este método retorna o código de resposta `201 Created` e um objeto [onlineMeeting](../resources/onlinemeeting.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="5b499-141">If successful, this method returns a `201 Created` response code and an [onlineMeeting](../resources/onlinemeeting.md) object in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="c4fa8-142">Exemplos</span><span class="sxs-lookup"><span data-stu-id="c4fa8-142">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="5b499-142">Exemplos</span><span class="sxs-lookup"><span data-stu-id="5b499-142">Examples</span></span>
 
-### <a name="example-1-create-an-online-meeting-with-user-token"></a><span data-ttu-id="c4fa8-143">Exemplo 1: Crie uma reunião online com token de usuário</span><span class="sxs-lookup"><span data-stu-id="c4fa8-143">Example 1: Create an online meeting with user token</span></span>
+### <a name="example-1-create-an-online-meeting-with-user-token"></a><span data-ttu-id="5b499-143">Exemplo 1: Crie uma reunião online com token de usuário</span><span class="sxs-lookup"><span data-stu-id="5b499-143">Example 1: Create an online meeting with user token</span></span>
 
-#### <a name="request"></a><span data-ttu-id="c4fa8-144">Solicitação</span><span class="sxs-lookup"><span data-stu-id="c4fa8-144">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="5b499-144">Solicitação</span><span class="sxs-lookup"><span data-stu-id="5b499-144">Request</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="c4fa8-145">HTTP</span><span class="sxs-lookup"><span data-stu-id="c4fa8-145">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="5b499-145">HTTP</span><span class="sxs-lookup"><span data-stu-id="5b499-145">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create-onlinemeeting-user-token"
@@ -89,27 +89,27 @@ Content-Type: application/json
   "subject":"User Token Meeting"
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="c4fa8-146">C#</span><span class="sxs-lookup"><span data-stu-id="c4fa8-146">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="5b499-146">C#</span><span class="sxs-lookup"><span data-stu-id="5b499-146">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-onlinemeeting-user-token-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="c4fa8-147">JavaScript</span><span class="sxs-lookup"><span data-stu-id="c4fa8-147">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="5b499-147">JavaScript</span><span class="sxs-lookup"><span data-stu-id="5b499-147">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-onlinemeeting-user-token-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="c4fa8-148">Objective-C</span><span class="sxs-lookup"><span data-stu-id="c4fa8-148">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="5b499-148">Objective-C</span><span class="sxs-lookup"><span data-stu-id="5b499-148">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-onlinemeeting-user-token-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="c4fa8-149">Java</span><span class="sxs-lookup"><span data-stu-id="c4fa8-149">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="5b499-149">Java</span><span class="sxs-lookup"><span data-stu-id="5b499-149">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-onlinemeeting-user-token-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="c4fa8-150">Resposta</span><span class="sxs-lookup"><span data-stu-id="c4fa8-150">Response</span></span>
-><span data-ttu-id="c4fa8-151">**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.</span><span class="sxs-lookup"><span data-stu-id="c4fa8-151">**Note:** The response object shown here might be shortened for readability.</span></span> 
+#### <a name="response"></a><span data-ttu-id="5b499-150">Resposta</span><span class="sxs-lookup"><span data-stu-id="5b499-150">Response</span></span>
+><span data-ttu-id="5b499-151">**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.</span><span class="sxs-lookup"><span data-stu-id="5b499-151">**Note:** The response object shown here might be shortened for readability.</span></span> 
 
 <!-- {
   "blockType": "response",
@@ -156,7 +156,7 @@ Content-Type: application/json
   "subject": "User Token Meeting"
 }
 ```
-><span data-ttu-id="c4fa8-152">**Observação:** Se 'Accept-Language: ja' for especificado para indicar japonês, por exemplo, a resposta incluirá o seguinte.</span><span class="sxs-lookup"><span data-stu-id="c4fa8-152">**Note:** If 'Accept-Language: ja' is specified to indicate Japanese, for example, the response will include the following.</span></span>
+><span data-ttu-id="5b499-152">**Observação:** Se 'Accept-Language: ja' for especificado para indicar japonês, por exemplo, a resposta incluirá o seguinte.</span><span class="sxs-lookup"><span data-stu-id="5b499-152">**Note:** If 'Accept-Language: ja' is specified to indicate Japanese, for example, the response will include the following.</span></span>
 
 ```json
     "joinInformation": {
@@ -166,10 +166,10 @@ Content-Type: application/json
 ```
 
 
-### <a name="example-2-create-an-online-meeting-in-a-microsoft-teams-channel-with-a-user-token"></a><span data-ttu-id="c4fa8-153">Exemplo 2: Crie uma reunião online em um canal do Microsoft Teams com um token de usuário</span><span class="sxs-lookup"><span data-stu-id="c4fa8-153">Example 2: Create an online meeting in a Microsoft Teams channel with a user token</span></span>
+### <a name="example-2-create-an-online-meeting-in-a-microsoft-teams-channel-with-a-user-token"></a><span data-ttu-id="5b499-153">Exemplo 2: Crie uma reunião online em um canal do Microsoft Teams com um token de usuário</span><span class="sxs-lookup"><span data-stu-id="5b499-153">Example 2: Create an online meeting in a Microsoft Teams channel with a user token</span></span>
 
-#### <a name="request"></a><span data-ttu-id="c4fa8-154">Solicitação</span><span class="sxs-lookup"><span data-stu-id="c4fa8-154">Request</span></span>
-><span data-ttu-id="c4fa8-155">**Observação:**: a ID de objeto do token do usuário aprovada deve ser um membro do canal representado pelo threadid no conteúdo.</span><span class="sxs-lookup"><span data-stu-id="c4fa8-155">**Note:** The Object ID of the user token passed should be a member of the channel represented by threadid in the payload.</span></span>
+#### <a name="request"></a><span data-ttu-id="5b499-154">Solicitação</span><span class="sxs-lookup"><span data-stu-id="5b499-154">Request</span></span>
+><span data-ttu-id="5b499-155">**Observação:**: a ID de objeto do token do usuário aprovada deve ser um membro do canal representado pelo threadid no conteúdo.</span><span class="sxs-lookup"><span data-stu-id="5b499-155">**Note:** The Object ID of the user token passed should be a member of the channel represented by threadid in the payload.</span></span>
 
 ```http
 POST https://graph.microsoft.com/beta/me/onlineMeetings
@@ -184,9 +184,9 @@ Content-Type: application/json
   }
 }
 ```
-#### <a name="response"></a><span data-ttu-id="c4fa8-156">Resposta</span><span class="sxs-lookup"><span data-stu-id="c4fa8-156">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="5b499-156">Resposta</span><span class="sxs-lookup"><span data-stu-id="5b499-156">Response</span></span>
 
-><span data-ttu-id="c4fa8-157">**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.</span><span class="sxs-lookup"><span data-stu-id="c4fa8-157">**Note:** The response object shown here might be shortened for readability.</span></span>
+><span data-ttu-id="5b499-157">**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.</span><span class="sxs-lookup"><span data-stu-id="5b499-157">**Note:** The response object shown here might be shortened for readability.</span></span>
 
 <!-- {
   "blockType": "example",
@@ -233,12 +233,12 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-3-create-a-live-event-with-a-user-token"></a><span data-ttu-id="c4fa8-158">Exemplo 3: Criar um evento ao vivo com um token de usuário</span><span class="sxs-lookup"><span data-stu-id="c4fa8-158">Example 3: Create a live event with a user token</span></span>
+### <a name="example-3-create-a-live-event-with-a-user-token"></a><span data-ttu-id="5b499-158">Exemplo 3: Criar um evento ao vivo com um token de usuário</span><span class="sxs-lookup"><span data-stu-id="5b499-158">Example 3: Create a live event with a user token</span></span>
 
 > [!IMPORTANT]
-> <span data-ttu-id="c4fa8-159">A criação de eventos ao vivo com a propriedade **broadcastSettings** tem algumas limitações.</span><span class="sxs-lookup"><span data-stu-id="c4fa8-159">Creating live events with the **broadcastSettings** property has some limitations.</span></span> <span data-ttu-id="c4fa8-160">Para obter detalhes, consulte [broadcastMeetingSettings](../resources/broadcastmeetingsettings.md).</span><span class="sxs-lookup"><span data-stu-id="c4fa8-160">For details, see [broadcastMeetingSettings](../resources/broadcastmeetingsettings.md).</span></span>
+> <span data-ttu-id="5b499-159">A criação de eventos ao vivo com a propriedade **broadcastSettings** tem algumas limitações.</span><span class="sxs-lookup"><span data-stu-id="5b499-159">Creating live events with the **broadcastSettings** property has some limitations.</span></span> <span data-ttu-id="5b499-160">Para obter detalhes, consulte [broadcastMeetingSettings](../resources/broadcastmeetingsettings.md).</span><span class="sxs-lookup"><span data-stu-id="5b499-160">For details, see [broadcastMeetingSettings](../resources/broadcastmeetingsettings.md).</span></span>
 
-#### <a name="request"></a><span data-ttu-id="c4fa8-161">Solicitação</span><span class="sxs-lookup"><span data-stu-id="c4fa8-161">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="5b499-161">Solicitação</span><span class="sxs-lookup"><span data-stu-id="5b499-161">Request</span></span>
 
 ```http
 POST https://graph.microsoft.com/beta/me/onlineMeetings
@@ -257,9 +257,9 @@ Content-Type: application/json
 }
 ```
 
-#### <a name="response"></a><span data-ttu-id="c4fa8-162">Resposta</span><span class="sxs-lookup"><span data-stu-id="c4fa8-162">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="5b499-162">Resposta</span><span class="sxs-lookup"><span data-stu-id="5b499-162">Response</span></span>
 
-> <span data-ttu-id="c4fa8-163">**Observação:** O objeto de resposta mostrado aqui foi reduzido para facilitar a leitura.</span><span class="sxs-lookup"><span data-stu-id="c4fa8-163">**Note:** The response object shown here has been shortened for readability.</span></span> <span data-ttu-id="c4fa8-164">Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="c4fa8-164">All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="5b499-163">**Observação:** O objeto de resposta mostrado aqui foi reduzido para facilitar a leitura.</span><span class="sxs-lookup"><span data-stu-id="5b499-163">**Note:** The response object shown here has been shortened for readability.</span></span> <span data-ttu-id="5b499-164">Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="5b499-164">All the properties will be returned from an actual call.</span></span>
 
 ```json
 {
