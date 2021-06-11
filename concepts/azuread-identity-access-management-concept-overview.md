@@ -5,12 +5,12 @@ author: jackson-woods
 localization_priority: Priority
 ms.prod: identity-and-access
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 77114f38265e4a7ad494cc8fb743f6c55961774a
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: e15685f1cf561713b25dc70b87264edd36168067
+ms.sourcegitcommit: 503c72036c376a30e08c29df8e7730a7afcab66e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52760124"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52870756"
 ---
 # <a name="azure-ad-identity-and-access-management-api-overview"></a>Visão geral da API de gerenciamento de identidade e acesso do Azure AD
 
@@ -20,7 +20,7 @@ Você pode usar as APIs REST do Azure AD no Microsoft Graph para criar fluxos de
 
 ## <a name="why-use-the-azure-ad-apis"></a>Por que usar as APIs do Azure AD?
 
-Mais de 15 milhões de organizações usam o Azure AD ao se inscreverem em serviços em nuvem da Microsoft, como o Microsoft 365, Microsoft Azure, Enterprise Mobility Suite ou Microsoft 365.
+Mais de 15 milhões de organizações usam o Azure AD ao se inscreverem em serviços em nuvem da Microsoft, como o Microsoft 365, Microsoft Azure e Enterprise Mobility Suite.
 
 Os desenvolvedores corporativos usam o Microsoft Graph para integrar o gerenciamento de identidades do Azure AD e outros serviços para automatizar fluxos de trabalho administrativos, como a integração (e rescisão) de funcionários, a manutenção de perfis, a implantação de licenças e muito mais.
 
