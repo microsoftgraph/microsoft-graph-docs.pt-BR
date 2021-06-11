@@ -3,12 +3,12 @@ title: Acessar dados e métodos ao navegar no Microsoft Graph
 description: Além de usar a API do Microsoft Graph para ler e gravar dados, você pode usar diversos padrões de solicitação para desviar pelos recursos no Microsoft Graph. O documento de metadados também ajuda a entender o modelo de dados dos recursos e das relações no Microsoft Graph.
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 22f396f3ceb050f0802ac77e51e5445f5f4c871c
-ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
+ms.openlocfilehash: 49d93659c17400aba84f1ed427648965856faef2
+ms.sourcegitcommit: 7abb0672a38a6d9b11a2e0d2cc221222cb8358bb
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48288486"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52896652"
 ---
 # <a name="access-data-and-methods-by-navigating-microsoft-graph"></a>Acessar dados e métodos ao navegar no Microsoft Graph
 
@@ -19,14 +19,15 @@ Além de usar a API do Microsoft Graph para ler e gravar dados, você pode usar 
 O documento de metadados ($metadata) é publicado na raiz do serviço. Você pode exibir o documento de serviço das versões 1.0 e beta da API Microsoft Graph com as URLs a seguir.
 
 **Metadados 1.0 da API do Microsoft Graph**
-```
-    https://graph.microsoft.com/v1.0/$metadata
+
+```msgraph-interactive
+https://graph.microsoft.com/v1.0/$metadata
 ```
 
 **Metadados beta da API do Microsoft Graph**
 
-```
-    https://graph.microsoft.com/beta/$metadata
+```msgraph-interactive
+https://graph.microsoft.com/beta/$metadata
 ```
 
 Com os metadados, você pode exibir e entender o modelo de dados do Microsoft Graph, inclusive os tipos de entidade, os tipos complexos e as enumerações que compõem os recursos representados nos pacotes de solicitação e resposta. 
@@ -42,18 +43,18 @@ Você pode usar os metadados para compreender as relações entre entidades no M
 
 ## <a name="view-a-collection-of-resources"></a>Exibir um conjunto de recursos
 
-O Microsoft Graph permite exibir recursos em um locatário usando consultas HTTP `GET`. A resposta de consulta inclui as propriedades de cada recurso. Os recursos de entidade são todos identificados pela sua ID. O formato da ID do recurso pode ser um GUID e normalmente varia de acordo com o tipo de recurso.
+O Microsoft Graph permite exibir recursos em um locatário usando consultas HTTP `GET`. A resposta da consulta inclui as propriedades de cada recurso. Os recursos de entidade são identificados pelas respectivas IDs. O formato da ID do recurso pode ser um GUID e normalmente varia de acordo com o tipo de recurso.
 
-Por exemplo, você pode obter uma coleção de recursos de [user](/graph/api/resources/user?view=graph-rest-1.0) definida no locatário:
+Por exemplo, você pode obter uma coleção de recursos de [user](/graph/api/resources/user) definida no locatário:
 
-```no-highlight
+```
 GET https://graph.microsoft.com/v1.0/users HTTP/1.1
 Authorization : Bearer {access_token}
 ```
 
 Se tiver êxito, você receberá uma resposta 200 OK que contém a coleção de recursos **user** no payload. Cada usuário será identificado pela propriedade **id** e acompanhado pelas respectivas propriedades padrão. O payload exibido abaixo foi truncado por uma questão de resumo.
 
-```no-highlight
+```
 HTTP/1.1 200 OK
 Content-type: application/json
 
@@ -94,16 +95,16 @@ Content-type: application/json
 }
 ```
 
-O Microsoft Graph também permite exibir coleções navegando entre as relações de um recurso com o outro. Por exemplo, por meio de uma propriedade de navegação **mailFolders**,você pode consultar uma coleção de recursos [mailFolder](/graph/api/resources/mailfolder?view=graph-rest-1.0), na caixa de correio do usuário:
+O Microsoft Graph também permite exibir coleções navegando entre as relações de um recurso com o outro. Por exemplo, por meio de uma propriedade de navegação **mailFolders**,você pode consultar uma coleção de recursos [mailFolder](/graph/api/resources/mailfolder), na caixa de correio do usuário:
 
-```no-highlight
+```
 GET https://graph.microsoft.com/v1.0/me/mailfolders HTTP/1.1
 Authorization : Bearer {access_token}
 ```
 
-Se tiver êxito, você receberá uma resposta 200 OK que contém a coleção de recursos [mailFolder](/graph/api/resources/user?view=graph-rest-1.0) no payload. Cada recurso **mailFolder** será identificado pela propriedade **id** e acompanhado pelas respectivas propriedades. O payload exibido abaixo foi truncado por uma questão de resumo.
+Se tiver êxito, você receberá uma resposta 200 OK que contém a coleção de recursos [mailFolder](/graph/api/resources/user) no payload. Cada recurso **mailFolder** será identificado pela propriedade **id** e acompanhado pelas respectivas propriedades. O payload exibido abaixo foi truncado por uma questão de resumo.
 
-```no-highlight
+```
 HTTP/1.1 200 OK
 Content-type: application/json
 
@@ -147,14 +148,14 @@ Para exibir as informações sobre um usuário, ainda com o uso do recurso **use
 
 A solicitação de exemplo a seguir usa o valor **userPrincipalName** como ID do usuário.
 
-```no-highlight
+```
 GET https://graph.microsoft.com/v1.0/users/john.doe@contoso.onmicrosoft.com HTTP/1.1
 Authorization : Bearer {access_token}
 ```
 
 Se tiver êxito, você obterá uma resposta 200 OK que contém a representação do recurso do usuário na carga, conforme mostrado.
 
-```no-highlight
+```
 HTTP/1.1 200 OK
 content-type: application/json;odata.metadata=minimal
 content-length: 982
@@ -176,14 +177,14 @@ content-length: 982
 ## <a name="read-specific-properties-of-a-resource"></a>Ler propriedades específicas de um recurso
 Para recuperar apenas os dados biográficos do usuário, conforme fornecido por ele na descrição _Sobre mim_, e suas habilidades, você pode adicionar o parâmetro de consulta [$select](query-parameters.md) à solicitação anterior, como mostrado no exemplo a seguir.
 
-```no-highlight
+```
 GET https://graph.microsoft.com/v1.0/users/john.doe@contoso.onmicrosoft.com?$select=displayName,aboutMe,skills HTTP/1.1
 Authorization : Bearer {access_token}
 ```
 
 A resposta bem-sucedida retorna o status 200 OK e uma carga, conforme mostrado.
 
-```no-highlight
+```
 HTTP/1.1 200 OK
 content-type: application/json;odata.metadata=minimal
 content-length: 169
@@ -206,14 +207,14 @@ Além de ler propriedades específicas de um único recurso, você também pode 
 
 Por exemplo, para consultar o nome dos itens na unidade do usuário conectado, você pode enviar a seguinte solicitação HTTPS GET.
 
-```no-highlight
+```
 GET https://graph.microsoft.com/v1.0/me/drive/root/children?$select=name HTTP/1.1
 Authorization : Bearer {access_token}
 ```
 
 A resposta bem-sucedida retorna um código de status 200 OK e uma carga que contém apenas os nomes dos arquivos compartilhados, conforme mostrado no exemplo abaixo.
 
-```no-highlight
+```
 {
   "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('john.doe%40contoso.onmicrosoft.com')/drive/root/children(name,type)",
   "value": [
@@ -236,14 +237,14 @@ A resposta bem-sucedida retorna um código de status 200 OK e uma carga que cont
 ## <a name="traverse-from-one-resource-to-another-via-relationship"></a>Passar de um recurso para outro pela relação
 Um gerente tem uma relação **directReports** com outros usuários diretamente subordinados a ele. Para consultar a lista de subordinados de um usuário, você pode usar a solicitação HTTPS GET a seguir para navegar para o destino pretendido via passagem de relação.
 
-```no-highlight
+```
 GET https://graph.microsoft.com/v1.0/users/john.doe@contoso.onmicrosoft.com/directReports HTTP/1.1
 Authorization : Bearer {access_token}
 ```
 
 A resposta bem-sucedida retorna o status 200 OK e uma carga, conforme mostrado.
 
-```no-highlight
+```
 HTTP/1.1 200 OK
 content-type: application/json;odata.metadata=minimal
 content-length: 152
@@ -262,7 +263,7 @@ content-length: 152
 Da mesma forma, você pode seguir um relacionamento para navegar até os recursos relacionados. Por exemplo, a relação mensagens-usuário habilita a passagem de um usuário do Azure Active Directory (Microsoft Azure AD) para um conjunto de mensagens de email do Outlook. O exemplo a seguir mostra como fazer isso em uma chamada à API REST.
 
 
-```no-highlight
+```
 GET https://graph.microsoft.com/v1.0/me/messages HTTP/1.1
 Authorization : Bearer {access_token}
 ```
@@ -271,7 +272,7 @@ Authorization : Bearer {access_token}
 A resposta bem-sucedida retorna o status 200 OK e uma carga, conforme mostrado.
 
 
-```no-highlight
+```
 HTTP/1.1 200 OK
 content-type: application/json;odata.metadata=minimal
 odata-version: 4.0
@@ -307,9 +308,9 @@ content-length: 147
 Você pode ver todas as relações em um determinado recurso indo para os metadados, localizando `EntityType` e examinando todas as`NavigationProperty` do `EntityType`.
 
 ## <a name="call-actions-and-functions"></a>Funções e ações de chamada
-O Microsoft Graph também oferece suporte a _ações_ e _funções_ para manipular recursos de maneiras que não são apenas operações de criar, ler, atualizar e excluir (CRUD). Eles normalmente estão na forma de solicitações de HTTPS POST para receber argumentos para ação e função. Por exemplo, a seguinte ação permite que o usuário conectado (`me`) envie uma mensagem de email.
+O Microsoft Graph também oferece suporte a _ações_ e _funções_ para manipular recursos de maneiras que não são apenas operações de criação, leitura, atualização e exclusão (CRUD). Eles normalmente estão na forma de solicitações de HTTPS POST para receber argumentos para a ação ou função. Por exemplo, a seguinte ação permite que o usuário conectado (`me`) envie uma mensagem de email.
 
-```no-highlight
+```
 POST https://graph.microsoft.com/v1.0/me/sendMail HTTP/1.1
 authorization: bearer {access_token}
 content-type: application/json
