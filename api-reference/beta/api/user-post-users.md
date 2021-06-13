@@ -5,12 +5,12 @@ author: jpettere
 localization_priority: Normal
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 0ebdf4a68247a4b6c62d5c2cf1431b903fd140a2
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: e04afb007f70788b21253323adfb517ebab7ade6
+ms.sourcegitcommit: f77c1385306fd40557aceb24fdfe4832cbb60a27
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52054711"
+ms.lasthandoff: 06/12/2021
+ms.locfileid: "52911358"
 ---
 # <a name="create-user"></a>Criar usuário
 
@@ -50,7 +50,7 @@ POST /users
 
 No corpo da solicitação, forneça uma representação JSON do objeto [user](../resources/user.md).
 
-A tabela a seguir lista as propriedades que são necessárias ao criar um usuário. Se você estiver incluindo uma propriedade de **identidades** para o usuário que está criando, nem todas as propriedades listadas serão necessárias. Para obter uma [identidade de conta local B2C](../resources/objectidentity.md), só é necessário **passwordProfile** e **passwordPolicy** deve ser definido como `DisablePasswordExpiration`. Para uma identidade social, nenhuma das propriedades é necessária.
+A tabela a seguir lista as propriedades que são necessárias ao criar um usuário. Se você estiver incluindo uma propriedade de **identidades** para o usuário que está criando, nem todas as propriedades listadas serão necessárias. Para uma [identidade de conta local B2C,](../resources/objectidentity.md)somente  **passwordProfile** é necessário e **passwordPolicies** deve ser definida como `DisablePasswordExpiration` . Para uma identidade social, nenhuma das propriedades é necessária.
 
 | Parâmetro | Tipo | Descrição|
 |:---------------|:--------|:----------|
@@ -58,7 +58,7 @@ A tabela a seguir lista as propriedades que são necessárias ao criar um usuár
 |displayName |string |Nome de exibição no catálogo de endereços do usuário.|
 |onPremisesImmutableId |string |Só precisa ser especificado ao criar uma nova conta de usuário se você está usando um domínio federado para propriedade userPrincipalName (UPN) do usuário.|
 |mailNickname |string |O alias de email do usuário.|
-|passwordProfile|[PasswordProfile](../resources/passwordprofile.md) |O perfil de senha do usuário.|
+|passwordProfile|[PasswordProfile](../resources/passwordprofile.md) |O perfil de senha do usuário. Para locatários do Azure B2C, a **propriedade forceChangePasswordNextSignIn** deve ser definida como e, em vez disso, usar políticas personalizadas para forçar a redefinição de senha ao entrar `false` primeiro.|
 |userPrincipalName |string |Nome UPN (usuario@contoso.com).|
 
 Como o recurso de **usuário** dá suporte a [extensões](/graph/extensibility-overview), você pode usar a `POST` operação e adicionar propriedades personalizadas com seus próprios dados à instância do usuário ao criá-la.

@@ -1,24 +1,24 @@
 ---
-title: Listar educationAssignmentResources
-description: Obter todos os recursos associados a essa atribuição.
+title: Listar recursos de tarefa
+description: Obter todos os recursos associados a uma atribuição.
 author: dipakboyed
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: b788f254972832832336d5b7b69d8b6b8ec085cd
-ms.sourcegitcommit: eb67b0a619a4004c1611304f1252a382264a97f3
+ms.openlocfilehash: 6999b9795315c913cf23514e8e806701cd1591e0
+ms.sourcegitcommit: f77c1385306fd40557aceb24fdfe4832cbb60a27
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52061690"
+ms.lasthandoff: 06/12/2021
+ms.locfileid: "52911932"
 ---
-# <a name="list-educationassignmentresources"></a>Listar educationAssignmentResources
+# <a name="list-assignment-resources"></a>Listar recursos de tarefa
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obter todos os recursos associados a essa atribuição.
+Obter todos os recursos associados a uma atribuição.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -27,9 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) |  EduAssignments.ReadBasic, EduAssignments.ReadWriteBasic, EduAssignments.Read, EduAssignments.ReadWrite  |
 |Delegado (conta pessoal da Microsoft) |  Sem suporte.  |
-|Application* | EduAssignments.ReadBasic, EduAssignments.ReadWriteBasic, EduAssignments.Read, EduAssignments.ReadWrite | 
-
-*As permissões de aplicativo estão disponíveis apenas para clientes de visualização privada.
+|Aplicativo | EduAssignments.ReadBasic, EduAssignments.ReadWriteBasic, EduAssignments.Read, EduAssignments.ReadWrite | 
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->

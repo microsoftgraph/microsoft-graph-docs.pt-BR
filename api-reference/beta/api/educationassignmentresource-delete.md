@@ -1,16 +1,16 @@
 ---
 title: Excluir educationAssignmentResource
-description: .
+description: Exclua um recurso específico anexado a uma atribuição.
 author: dipakboyed
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: a7f7646474f9c26557a46b46d08cf40fe3241558
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 7e853534998978f89e44cbd8f657a56250c599a0
+ms.sourcegitcommit: f77c1385306fd40557aceb24fdfe4832cbb60a27
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48966465"
+ms.lasthandoff: 06/12/2021
+ms.locfileid: "52911901"
 ---
 # <a name="delete-educationassignmentresource"></a>Excluir educationAssignmentResource
 
@@ -18,14 +18,14 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Excluir um recurso de uma atribuição. Somente os professores da turma podem remover um recurso. Após uma atribuição ter sido publicada para estudantes, os professores não poderão remover recursos marcados como "distributeToStudents".
+Exclua um recurso específico anexado a uma atribuição. Somente os professores da classe podem remover um recurso. Depois que uma atribuição é publicada para os alunos, os professores não podem remover recursos marcados como "distributeToStudents".
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) |  EduAssignments. ReadWriteBasic, EduAssignments. ReadWrite  |
+|Delegado (conta corporativa ou de estudante) |  EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite  |
 |Delegado (conta pessoal da Microsoft) |  Sem suporte.  |
 |Aplicativo | Sem suporte. | 
 
@@ -52,6 +52,7 @@ Se bem-sucedido, este método retorna um código de resposta `204 No Content`. N
 Este é um exemplo de solicitação.
 
 # <a name="http"></a>[HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "delete_educationassignmentresource"

@@ -5,12 +5,12 @@ localization_priority: Priority
 author: nmoreau
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: 070d799c80fd9d10916d9adfb3a48a9d033883af
-ms.sourcegitcommit: 1b09298649d5606b471b4cbe1055419bbe2fc7e5
+ms.openlocfilehash: 13e60e5000db9a3cb4ef540970564e1a52ab2871
+ms.sourcegitcommit: f77c1385306fd40557aceb24fdfe4832cbb60a27
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "52067037"
+ms.lasthandoff: 06/12/2021
+ms.locfileid: "52911659"
 ---
 # <a name="use-the-microsoft-search-api-to-query-data"></a>Usar a API de Pesquisa da Microsoft para consultar dados
 
@@ -192,6 +192,7 @@ Para compatibilidade com versões anteriores, as propriedades e tipos originais 
 | [searchHit](./searchhit.md)        | Remover propriedade | **_sortField** | Não aplicável |
 | [searchHit](./searchhit.md)        | Renomear propriedade | **_source** | **recurso** |
 | [searchHit](./searchhit.md)        | Renomear propriedade | **_summary**  | **resumo**  |
+| [entityTypes](./enums.md)          | Renomear o valor de enumeração | **unknownfuturevalue**  | **unknownFutureValue**  |
 
 ## <a name="see-also"></a>Confira também
 

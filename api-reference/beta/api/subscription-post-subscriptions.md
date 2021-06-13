@@ -5,12 +5,12 @@ localization_priority: Normal
 author: Jumaodhiss
 doc_type: apiPageType
 ms.prod: change-notifications
-ms.openlocfilehash: 7fe6db48038b68d7d2bfe507af60a26846962832
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: b471d13836faa74ba6f77ab395e9a8ad3c87e4ad
+ms.sourcegitcommit: f77c1385306fd40557aceb24fdfe4832cbb60a27
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52054872"
+ms.lasthandoff: 06/12/2021
+ms.locfileid: "52911862"
 ---
 # <a name="create-subscription"></a>Criar assinatura
 
@@ -59,6 +59,8 @@ Dependendo do recurso e do tipo de permissão (delegado ou aplicativo) solicitad
 As limitações adicionais se aplicam aos itens do OneDrive. As limitações se aplicam para criação e gerenciamento de assinaturas (receber, atualizar e excluir assinaturas).
 
 No OneDrive pessoal, você pode se inscrever em qualquer pasta raiz ou qualquer subpasta da unidade. No OneDrive for Business, você pode assinar somente a pasta raiz. As notificações de alteração são enviadas para os tipos de alterações solicitados na pasta assinada ou em qualquer arquivo, pasta ou outras instâncias **driveItem** em sua hierarquia. Você não pode inscrever as instâncias **unidade** ou **driveItem** que não sejam pastas, como arquivos individuais.
+
+OneDrive for Business e SharePoint suporte ao envio de notificações do aplicativo de eventos de segurança que ocorrem em **um driveItem**. Para assinar esses eventos, adicione o `prefer:includesecuritywebhooks` header à sua solicitação para criar uma assinatura. Depois que a assinatura for criada, você receberá notificações quando as permissões em um item mudarem. Esse header é aplicável a SharePoint e OneDrive for Business, mas não a contas OneDrive clientes.
 
 ### <a name="contact-event-and-message"></a>contato, evento e mensagem
 

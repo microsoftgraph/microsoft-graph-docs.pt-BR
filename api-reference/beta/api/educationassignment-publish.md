@@ -1,16 +1,16 @@
 ---
 title: 'educationAssignment: publish'
-description: Essa ação altera o estado de uma atribuição de seu status de rascunho original para o status publicado. Somente um professor da classe pode fazer essa chamada. Quando uma atribuição estiver no status de rascunho, os alunos não verão a atribuição, nem haverá objetos de envio. Quando você chama essa API, os objetos de envio são criados e a atribuição aparece na lista do aluno.
+description: Essa ação altera o estado de uma atribuição de seu status de rascunho original para o status publicado.
 localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: ac840109209b2a8ec5081d55abc31e1fac92d965
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 3badfbf152188a0a999c41f1bcb2edffce3bf9f9
+ms.sourcegitcommit: f77c1385306fd40557aceb24fdfe4832cbb60a27
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52785995"
+ms.lasthandoff: 06/12/2021
+ms.locfileid: "52911912"
 ---
 # <a name="educationassignment-publish"></a>educationAssignment: publish
 
@@ -18,9 +18,11 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Essa ação altera o estado de uma atribuição de seu status de rascunho original para o status publicado. Somente um professor da classe pode fazer essa chamada. Quando uma atribuição estiver no status de rascunho, os alunos não verão a atribuição, nem haverá objetos de envio. Quando você chama essa API, os objetos de envio são criados e a atribuição aparece na lista do aluno.
+Essa ação altera o estado de uma atribuição de seu status de rascunho original para o status publicado. 
 
-## <a name="permissions"></a>Permissions
+Somente um professor da classe pode fazer essa chamada. Quando uma atribuição estiver no status de rascunho, os alunos não verão a atribuição, nem haverá objetos de envio. Quando você chama essa API, os objetos de envio são criados e a atribuição aparece na lista do aluno.
+
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |

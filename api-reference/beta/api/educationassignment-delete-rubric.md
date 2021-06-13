@@ -1,16 +1,16 @@
 ---
-title: Remover educationRubric do educationAssignment
+title: Excluir educationRubric de educationAssignment
 description: Remover um educationRubric de um educationAssignment
 localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 8fdf11ab9792609813a92aef1c42f79b0cba3b48
-ms.sourcegitcommit: 40a8e4b9e344811267025e23c372a6e60e31a1b9
+ms.openlocfilehash: 619938b8550647acfe10f648a20460fe9c7554aa
+ms.sourcegitcommit: f77c1385306fd40557aceb24fdfe4832cbb60a27
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/01/2021
-ms.locfileid: "52119009"
+ms.lasthandoff: 06/12/2021
+ms.locfileid: "52911942"
 ---
 # <a name="remove-educationrubric-from-educationassignment"></a>Remover educationRubric do educationAssignment
 
@@ -18,7 +18,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Remover um [educationRubric](../resources/educationrubric.md) de [um educationAssignment](../resources/educationassignment.md).  Isso não exclui a rubrica em si.
+Excluir um [educationRubric](../resources/educationrubric.md) de [um educationAssignment](../resources/educationassignment.md).
+Este método não exclui a rubrica em si.
 
 ## <a name="permissions"></a>Permissões
 
@@ -59,6 +60,7 @@ Se bem-sucedido, este método retorna um código de resposta `204 No Content`. N
 Este é um exemplo de solicitação.
 
 # <a name="http"></a>[HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "delete_educationrubric_from_educationassignment"
@@ -89,8 +91,6 @@ DELETE https://graph.microsoft.com/beta/education/classes/{id}/assignments/{id}/
 ### <a name="response"></a>Resposta
 
 Este é um exemplo de resposta.
-
-> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
   "blockType": "response",

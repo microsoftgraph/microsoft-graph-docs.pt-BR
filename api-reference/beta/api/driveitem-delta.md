@@ -6,14 +6,14 @@ title: Sincronizar o conteúdo de uma unidade
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: b4d92ef19b683294dafac90b3c6bb6805d9f565e
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 483bfdcdd08c5d01f69d1b12455e64b903d9fac8
+ms.sourcegitcommit: f77c1385306fd40557aceb24fdfe4832cbb60a27
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48963808"
+ms.lasthandoff: 06/12/2021
+ms.locfileid: "52912072"
 ---
-# <a name="track-changes-for-a-drive"></a>Controlar alterações de uma unidade
+# <a name="track-changes-for-a-drive"></a>Rastrear alterações para uma unidade
 
 Namespace: microsoft.graph
 
@@ -204,7 +204,7 @@ Content-type: application/json
 
 Essa resposta indica que o item denominado `folder2` foi excluído e que o item `file.txt` foi adicionado ou modificado entre a solicitação inicial e essa solicitação para atualizar o estado local.
 
-A página final de itens incluirá a propriedade **@odata.deltaLink** , que fornece a URL que poderá ser usada posteriormente para recuperar alterações desde o conjunto atual de itens.
+A página final de itens incluirá a propriedade **@odata.deltaLink**, que fornece a URL que poderá ser usada posteriormente para recuperar alterações desde o conjunto atual de itens.
 
 Pode haver casos em que o serviço não pode fornecer uma lista de alterações para um determinado token (por exemplo, se um cliente tentar reutilizar um token antigo depois de ter permanecido desconectado por um longo período, ou se o estado do servidor tiver mudado e um novo token for obrigatório). Nesses casos, o serviço retornará um erro `HTTP 410 Gone` com uma resposta de erro contendo um dos códigos de erro abaixo e um cabeçalho `Location` contendo um novo nextLink que inicia uma enumeração delta do zero. Depois de concluir a enumeração completa, compare os itens retornados com seu estado local e siga estas instruções.
 
@@ -220,8 +220,8 @@ Em alguns cenários, pode ser útil solicitar o valor do deltaLink atual sem pri
 Isso poderá ser útil se o seu aplicativo quiser saber apenas sobre as alterações, e não quiser saber sobre os itens existentes.
 Para recuperar o deltaLink mais recente, chame `delta` com um parâmetro de cadeia de caracteres de consulta `?token=latest`.
 
->**Observação:** Se você estiver tentando manter uma representação local completa dos itens em uma pasta ou em uma unidade, deverá usar `delta` a enumeração inicial.
-Outras abordagens, como paginação através da `children` coleção de uma pasta, não são garantidas para retornar todos os itens individuais se qualquer gravação ocorrer durante a enumeração. `delta`O uso é a única maneira de garantir que você tenha lido todos os dados necessários.
+>**Observação:** Se você estiver tentando manter uma representação local completa dos itens em uma pasta ou unidade, você deve usar para a `delta` enumeração inicial.
+Outras abordagens, como a paja através da coleção de uma pasta, não são garantidas para retornar cada item se qualquer gravações ocorrer `children` durante a enumeração. Usar `delta` é a única maneira de garantir que você leu todos os dados necessários.
 
 ### <a name="request"></a>Solicitação
 
@@ -270,8 +270,6 @@ Content-type: application/json
 * O feed delta mostra o estado mais recente de cada item, e não cada alteração. Se um item tiver sido renomeado duas vezes, ele só aparecerá uma vez, com seu nome mais recente.
 * O mesmo item pode aparecer mais de uma vez em um feed delta, por vários motivos. Você deve usar a última ocorrência que visualizar.
 * A propriedade `parentReference` em itens não incluirá um valor para **path**. Isso ocorre porque a renomeação de uma pasta não faz com que os descendentes dessa pasta sejam retornados de **delta**. **Ao usar delta, você sempre deve controlar itens por id**.
-* No OneDrive for Business e no SharePoint, `delta` tem suporte apenas na pasta `root`, e não em outras pastas dentro de uma unidade.
-
 * A consulta delta não retornará algumas propriedades DriveItem, dependendo da operação e do tipo de serviço, conforme mostrado nas tabelas a seguir.
 
     **OneDrive for Business**
@@ -291,7 +289,7 @@ Content-type: application/json
 
 ## <a name="scanning-permissions-hierarchies"></a>Hierarquias de permissões de verificação
 
-Por padrão, a resposta da consulta delta incluirá o compartilhamento de informações de todos os itens da consulta que foram alterados, mesmo que herdem suas permissões dos pais e não tenham elas próprias alterações diretas de compartilhamento. Em geral, isso resulta em uma chamada de acompanhamento para obter os detalhes de permissão de cada item, em vez de apenas aqueles cujas informações de compartilhamento foram alteradas. Você pode otimizar sua compreensão de como as alterações de permissão acontecem adicionando o cabeçalho `Prefer: hierarchicalsharing` à sua solicitação de consulta delta.
+Por padrão, a resposta da consulta delta incluirá o compartilhamento de informações de todos os itens da consulta que foram alterados, mesmo que herdem suas permissões dos pais e não tenham elas próprias alterações diretas de compartilhamento. Normalmente, isso resulta em uma chamada de acompanhamento para obter os detalhes de permissão para cada item, em vez de apenas aqueles cujas informações de compartilhamento foram alteradas. Você pode otimizar sua compreensão de como as alterações de permissão acontecem adicionando o cabeçalho `Prefer: hierarchicalsharing` à sua solicitação de consulta delta.
 
 Quando o cabeçalho `Prefer: hierarchicalsharing` é fornecido, as informações de compartilhamento serão retornadas para a raiz da hierarquia de permissões, bem como itens que possuam, explicitamente, alterações de compartilhamento. Nos casos onde a mudança de compartilhamento é remover o compartilhamento de um item, você encontrará uma faceta de compartilhamento vazia para diferenciar entre os itens que herdam de seus pais e aqueles que são únicos, mas sem links de compartilhamento. Você também verá essa faceta de compartilhamento vazia na raiz de uma hierarquia de permissões que não é compartilhada para estabelecer o escopo inicial.
 

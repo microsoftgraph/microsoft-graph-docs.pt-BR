@@ -1,24 +1,26 @@
 ---
-title: Listar tarefas
-description: Retorna uma lista de atribuições atribuídas a um usuário para todas as classes. Esse namespace utilitário permite que um chamador encontre todas as atribuições de um aluno em uma única chamada, em vez de ter que solicitar atribuições de cada classe. A lista de atribuições contém o que é necessário para obter as informações detalhadas para a atribuição de dentro do namespace de classe. Todas as outras operações na atribuição devem usar o namespace de classe.
+title: Listar atribuições de um usuário
+description: Retorna uma lista de atribuições atribuídas a um usuário para todas as classes.
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 682a03d4785184132c8a5aff3044f9ff9f2a4670
-ms.sourcegitcommit: 40a8e4b9e344811267025e23c372a6e60e31a1b9
+ms.openlocfilehash: 2d92a6f32a3b986f9fb0e3b24b6537897f23ca2c
+ms.sourcegitcommit: f77c1385306fd40557aceb24fdfe4832cbb60a27
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/01/2021
-ms.locfileid: "52118869"
+ms.lasthandoff: 06/12/2021
+ms.locfileid: "52911764"
 ---
-# <a name="list-assignments"></a>Listar tarefas
+# <a name="list-assignments-of-a-user"></a>Listar atribuições de um usuário
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retorna uma lista de atribuições atribuídas a um usuário para todas as classes. Esse namespace utilitário permite que um chamador encontre todas as atribuições de um aluno em uma única chamada, em vez de ter que solicitar atribuições de cada classe. A lista de atribuições contém o que é necessário para obter as informações detalhadas para a atribuição de dentro do namespace de classe. Todas as outras operações na atribuição devem usar o namespace de classe.
+Retorna uma lista de atribuições atribuídas a um usuário para todas as classes. 
+
+Esse namespace utilitário permite que um chamador encontre todas as atribuições de um aluno em uma única chamada, em vez de ter que solicitar atribuições de cada classe. A lista de atribuições contém o que é necessário para obter as informações detalhadas para a atribuição de dentro do namespace de classe. Todas as outras operações na atribuição devem usar o namespace de classe.
 
 ## <a name="permissions"></a>Permissões
 
@@ -58,12 +60,14 @@ Se tiver êxito, este método retornará um código de resposta e uma `200 OK` c
 
 ##### <a name="request"></a>Solicitação
 Este é um exemplo de solicitação.
+
 <!-- {
   "blockType": "ignored",
-  "name": "get_assignments"
+  "name": "get_me_assignments"
 }-->
+
 ```http 
-GET https://graph.microsoft.com/beta/education/classes/{id}/assignments
+GET https://graph.microsoft.com/beta/education/me/assignments
 ```
 
 ##### <a name="response"></a>Resposta

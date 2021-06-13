@@ -1,18 +1,18 @@
 ---
-title: tipo de recurso educationCategory
+title: Tipo de recurso educationCategory
 description: Uma categoria que pode ser aplicada a atribuições.
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 82ad4f009ca76625c148e8a42e58385195466fbb
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 18ddcd32a2ab4a8d44505adbc92445a0feeae8b6
+ms.sourcegitcommit: f77c1385306fd40557aceb24fdfe4832cbb60a27
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48095538"
+ms.lasthandoff: 06/12/2021
+ms.locfileid: "52911316"
 ---
-# <a name="educationcategory-resource-type"></a>tipo de recurso educationCategory
+# <a name="educationcategory-resource-type"></a>Tipo de recurso educationCategory
 
 Namespace: microsoft.graph
 
@@ -25,9 +25,9 @@ Uma categoria que pode ser aplicada a atribuições.
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
-|[Criar categoria](../api/educationclass-post-category.md) | [educationCategory](educationcategory.md) | Criar um novo **educationCategory**.|
-|[Obter educationCategory](../api/educationcategory-get.md) | [educationCategory](educationcategory.md) | Obter um **educationCategory**existente.|
-|[Excluir categoria](../api/educationcategory-delete.md) | Nenhum | Remover um **educationCategory**.|
+|[Criar categoria](../api/educationclass-post-category.md) | [educationCategory](educationcategory.md) | Criar uma nova **educationCategory**.|
+|[Obter educationCategory](../api/educationcategory-get.md) | [educationCategory](educationcategory.md) | Obter uma **educationCategory existente**.|
+|[Excluir categoria](../api/educationcategory-delete.md) | Nenhum | Remover uma **educationCategory**.|
 
 
 ## <a name="properties"></a>Propriedades
@@ -50,8 +50,8 @@ Veja a seguir uma representação JSON do recurso.
 
 ```json
 {
-  "id": "String (timestamp)",
-  "displayName": "String (timestamp)",
+  "id": "String (identifier)",
+  "displayName": "String",
 }
 
 ```

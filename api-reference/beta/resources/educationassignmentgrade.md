@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso educationAssignmentGrade
-description: " no entanto, todos os tipos de classificação (pontos, passagem/falha e assim por diante) são subclasses disso"
+description: Representa o **objeto Grade** em um Envio.
 localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 84baeb3a0e3efeee0e5f7e7f6f7d5f6d8f285f59
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: 39b415fd459b832ac3a7bfb2d66daf32d584d634
+ms.sourcegitcommit: f77c1385306fd40557aceb24fdfe4832cbb60a27
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50722451"
+ms.lasthandoff: 06/12/2021
+ms.locfileid: "52911337"
 ---
 # <a name="educationassignmentgrade-resource-type"></a>Tipo de recurso educationAssignmentGrade
 
@@ -18,7 +18,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Representa o **objeto Grade** em um Envio. Esse é um tipo abstrato que nunca será instaurou; no entanto, todos os tipos de classificação (pontos, passagem/falha e assim por diante) são subclasses desse tipo de recurso. Esse objeto também rastreia quem está fazendo a classificação. Isso é usado na **propriedade submission.grade.**
+Representa o **objeto Grade** em um Envio. 
+
+Esse é um tipo abstrato que nunca será instaurou; no entanto, todos os tipos de classificação (pontos, passagem/falha e assim por diante) são subclasses desse tipo de recurso. Esse objeto também rastreia quem está fazendo a classificação. Isso é usado na **propriedade submission.grade.**
 
 
 ## <a name="properties"></a>Propriedades

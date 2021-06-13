@@ -3,14 +3,14 @@ title: Tipo de recurso passwordProfile
 description: Contém o perfil de senha associado a um usuário. A propriedade **passwordProfile** da entidade user é um objeto **passwordProfile**.
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: ''
+ms.prod: users
 author: eketo-msft
-ms.openlocfilehash: 6bf70743e4dfa32d55ef588af22e4b5d0daf806f
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 47c55261316f2d85d27a4c993b358676578e74fd
+ms.sourcegitcommit: f77c1385306fd40557aceb24fdfe4832cbb60a27
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47998213"
+ms.lasthandoff: 06/12/2021
+ms.locfileid: "52911330"
 ---
 # <a name="passwordprofile-resource-type"></a>Tipo de recurso passwordProfile
 
@@ -24,8 +24,8 @@ Contém o perfil de senha associado a um usuário. A propriedade **passwordProfi
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|forceChangePasswordNextSignIn|Booliano| Se **true**, no próximo logon, o usuário deve alterar a senha. Após uma alteração de senha, essa propriedade será automaticamente redefinida como ***false**. Caso não seja definida, o padrão é **false**. |
-|forceChangePasswordNextSignInWithMfa|Booliano| Se for **true**, na próxima conexão, o usuário deverá executar uma Autenticação Multifator (MFA) antes de ser forçado a alterar sua senha. O comportamento é idêntico a **forceChangePasswordNextSignIn**, exceto pelo fato de que o usuário deve primeiro executar uma autenticação multifator antes da alteração da senha. Após uma alteração de senha, esta propriedade será automaticamente redefinida para **false**. Caso não seja definida, o padrão é **false**. |
+|forceChangePasswordNextSignIn|Booliano| Se `true` , no próximo login, o usuário deve alterar sua senha. Após uma alteração de senha, essa propriedade será redefinida automaticamente para * `false` . Se não estiver definido, o padrão será `false` . |
+|forceChangePasswordNextSignInWithMfa|Booliano| Se , na próxima entrada, o usuário deve executar uma `true` autenticação multifafação (MFA) antes de ser forçado a alterar sua senha. O comportamento é idêntico a **forceChangePasswordNextSignIn**, exceto pelo fato de que o usuário deve primeiro executar uma autenticação multifator antes da alteração da senha. Após uma alteração de senha, essa propriedade será redefinida automaticamente para `false` . Se não estiver definido, o padrão será `false` . |
 |password|String|A senha do usuário. Essa propriedade é necessária ao criar um usuário. Pode ser atualizada, mas o usuário precisará alterar a senha no próximo login. A senha deve atender a requisitos mínimos, conforme especificado pelo a propriedade **passwordPolicies** do usuário. Por padrão, é necessária uma senha forte.|
 
 ## <a name="json-representation"></a>Representação JSON

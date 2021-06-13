@@ -1,24 +1,26 @@
 ---
-title: Listar tarefas
-description: Recupere uma lista de objetos de atribuição. Um professor ou um aplicativo que executa com permissões de aplicativo tem permissão para ver todos os objetos de atribuição da classe. Os alunos só podem ver atribuições atribuídas a eles.
+title: Listar atribuições de classe
+description: Recupere uma lista de objetos de atribuição.
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: c88d274a92b0d6b2546fa64e349620af7d7f9353
-ms.sourcegitcommit: eb67b0a619a4004c1611304f1252a382264a97f3
+ms.openlocfilehash: 4e648f9f1b40445c1c98c7b6054b67705308bdcb
+ms.sourcegitcommit: f77c1385306fd40557aceb24fdfe4832cbb60a27
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52061795"
+ms.lasthandoff: 06/12/2021
+ms.locfileid: "52911841"
 ---
-# <a name="list-assignments"></a>Listar tarefas
+# <a name="list-class-assignments"></a>Listar atribuições de classe
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere uma lista de objetos de atribuição. Um professor ou um aplicativo que executa com permissões de aplicativo tem permissão para ver todos os objetos de atribuição da classe. Os alunos só podem ver atribuições atribuídas a eles.
+Recupere uma lista de objetos de atribuição. 
+
+Um professor ou um aplicativo que executa com permissões de aplicativo pode ver todos os objetos de atribuição da classe. Os alunos só podem ver atribuições atribuídas a eles.
 
 ## <a name="permissions"></a>Permissões
 
@@ -28,9 +30,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 | :------------------------------------- | :----------------------------------------------------------------------------------------------------- |
 | Delegado (conta corporativa ou de estudante)     | EduAssignments.ReadBasic, EduAssignments.ReadWriteBasic, EduAssignments.Read, EduAssignments.ReadWrite |
 | Delegado (conta pessoal da Microsoft) | Sem suporte.                                                                                         |
-| Application*                           | EduAssignments.ReadBasic, EduAssignments.ReadWriteBasic, EduAssignments.Read, EduAssignments.ReadWrite |
-
-*As permissões de aplicativo estão disponíveis apenas para clientes de visualização privada.
+| Aplicativo                            | EduAssignments.ReadBasic, EduAssignments.ReadWriteBasic, EduAssignments.Read, EduAssignments.ReadWrite |
 
 ## <a name="http-request"></a>Solicitação HTTP
 

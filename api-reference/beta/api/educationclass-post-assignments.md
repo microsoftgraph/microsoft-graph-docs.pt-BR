@@ -1,16 +1,16 @@
 ---
 title: Criar educationAssignment
-description: 'Cria uma nova atribuição. Somente professores em uma classe podem criar uma atribuição. As atribuições começam no estado Rascunho, o que significa que os alunos não verão a atribuição até que a publicação seja chamada.  '
+description: Crie uma nova atribuição.
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 86d9fe375222b25ade87663e64af5c51f7e92904
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: c15bca046a08b62ff9a3d6cc75631e6a9110ef34
+ms.sourcegitcommit: f77c1385306fd40557aceb24fdfe4832cbb60a27
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52043847"
+ms.lasthandoff: 06/12/2021
+ms.locfileid: "52911778"
 ---
 # <a name="create-educationassignment"></a>Criar educationAssignment
 
@@ -18,7 +18,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Cria uma nova atribuição. Somente professores em uma classe podem criar uma atribuição. As atribuições começam no estado Rascunho, o que significa que os alunos não verão a atribuição até que a publicação seja chamada.  
+Crie uma nova atribuição. 
+
+Somente professores em uma classe podem criar uma atribuição. As atribuições começam no estado Rascunho, o que significa que os alunos não verão a atribuição até a publicação.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).

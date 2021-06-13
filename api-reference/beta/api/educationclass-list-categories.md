@@ -1,18 +1,18 @@
 ---
-title: Listar educationCategories
+title: Listar assignmentCategories
 description: Recupere uma lista de objetos de categoria.
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: b4f821313796382b2bb7c9d5620dee96f463b227
-ms.sourcegitcommit: eb67b0a619a4004c1611304f1252a382264a97f3
+ms.openlocfilehash: 3f7851e746cb87905768604610cd17d036cc963c
+ms.sourcegitcommit: f77c1385306fd40557aceb24fdfe4832cbb60a27
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52061788"
+ms.lasthandoff: 06/12/2021
+ms.locfileid: "52911827"
 ---
-# <a name="list-educationcategories"></a>Listar educationCategories
+# <a name="list-assignmentcategories"></a>Listar assignmentCategories
 
 Namespace: microsoft.graph
 
@@ -28,9 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 | :------------------------------------- | :----------------------------------------------------------------------------------------------------- |
 | Delegado (conta corporativa ou de estudante)     | EduAssignments.ReadBasic, EduAssignments.ReadWriteBasic, EduAssignments.Read, EduAssignments.ReadWrite |
 | Delegado (conta pessoal da Microsoft) | Sem suporte.                                                                                         |
-| Application*                           | EduAssignments.ReadBasic, EduAssignments.ReadWriteBasic, EduAssignments.Read, EduAssignments.ReadWrite |
-
-*As permissões de aplicativo estão disponíveis apenas para clientes de visualização privada.
+| Aplicativo                            | EduAssignments.ReadBasic, EduAssignments.ReadWriteBasic, EduAssignments.Read, EduAssignments.ReadWrite |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -64,12 +62,13 @@ Se tiver êxito, este método retornará um código de resposta e uma `200 OK` c
 Este é um exemplo de solicitação.
 
 <!-- {
-  "blockType": "ignored",
-  "name": "get_assignments"
+  "blockType": "request",
+  "sampleKeys": ["4797d052-ebf5-4018-a088-e11adc6b2cbb"],
+  "name": "get_class_categories"
 }-->
 
 ```http
-GET https://graph.microsoft.com/beta/education/classes/{id}/assignmentCategories
+GET https://graph.microsoft.com/beta/education/classes/4797d052-ebf5-4018-a088-e11adc6b2cbb/assignmentCategories
 ```
 
 ##### <a name="response"></a>Resposta
@@ -79,7 +78,7 @@ Este é um exemplo de resposta.
 >**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
-  "blockType": "ignored",
+  "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.educationCategory",
   "isCollection": true
@@ -91,13 +90,17 @@ Content-type: application/json
 Content-length: 218
 
 {
-    "value": [{
-        "displayName": "Quizzes",
-        "id": "ec98f158-341d-4fea-9f8c-14a250d489ac"
-    }, {
-        "displayName": "Homework",
-        "id": "3943e9ea-c69b-4dc9-9674-5f24168cee35"
-    }]
+    "@odata.context": "https://graph.microsoft.com/v1.0/education/classes('4797d052-ebf5-4018-a088-e11adc6b2cbb')/assignmentCategories",
+    "value": [
+      {
+          "displayName": "Quizzes",
+          "id": "f997a279-6bcf-429e-b1d0-d2320c4b84ab"
+      },
+      {
+          "displayName": "Homework",
+          "id": "9b8f8f88-ddfc-4aad-9fe9-280513fffc74"
+      }
+    ]
 }
 ```
 

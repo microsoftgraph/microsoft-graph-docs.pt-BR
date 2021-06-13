@@ -3,12 +3,12 @@ title: Novidades do Microsoft Graph
 description: O que há de novo no Microsoft Graph
 author: angelgolfer-ms
 localization_priority: Priority
-ms.openlocfilehash: 9f737e169557413e6e112592a882cef051942fbb
-ms.sourcegitcommit: 3f40fbb953b14c1f52341786569c678adfc5bd3e
+ms.openlocfilehash: 075b3aec5ebf315b338e0aeb4d349711dab13890
+ms.sourcegitcommit: f77c1385306fd40557aceb24fdfe4832cbb60a27
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52781163"
+ms.lasthandoff: 06/12/2021
+ms.locfileid: "52912037"
 ---
 # <a name="whats-new-in-microsoft-graph"></a>Novidades do Microsoft Graph
 
@@ -16,6 +16,11 @@ Veja os destaques das novidades nos dois últimos meses do Microsoft Graph, [o q
 
 > [!IMPORTANT]
 > Recursos, incluindo APIs e ferramentas, no status de _visualização_ podem mudar sem aviso prévio e alguns podem nunca ser promovidos ao status de disponibilidade geral (GA). Não utilize recursos de visualização em aplicativos de produção.
+
+## <a name="june-2021-new-and-generally-available"></a>Junho de 2021: novos e disponíveis para o público em geral
+
+### <a name="education"></a>Educação
+As APIs para a educação [serviços de atribuições](/graph/api/resources/educationassignment?view=graph-rest-1.0&preserve-view=true) agora estão disponíveis. 
 
 ## <a name="june-2021-new-in-preview-only"></a>Junho de 2021: Novo somente para visualização
 

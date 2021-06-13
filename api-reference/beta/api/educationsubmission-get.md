@@ -5,12 +5,12 @@ author: dipakboyed
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: bc1b2bbddc20c6cc1160aedd0da9d7a219bd7311
-ms.sourcegitcommit: 3f40fbb953b14c1f52341786569c678adfc5bd3e
+ms.openlocfilehash: da48bae6a610d7d14c34071ac487c1ffd0a8043c
+ms.sourcegitcommit: f77c1385306fd40557aceb24fdfe4832cbb60a27
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52780796"
+ms.lasthandoff: 06/12/2021
+ms.locfileid: "52911811"
 ---
 # <a name="get-educationsubmission"></a>Obter educationSubmission
 
@@ -18,7 +18,11 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere um envio específico. Um objeto de envio representa o trabalho de um aluno para uma atribuição. Os recursos associados ao envio representam esse trabalho. Somente o aluno ao que o envio é atribuído pode ver e modificar o envio. Um professor ou aplicativo com permissões de aplicativo tem acesso total a todos os envios.
+Recupere um envio específico.
+
+Um objeto de envio representa o trabalho de um aluno para uma atribuição. Os recursos associados ao envio representam esse trabalho. 
+
+Somente o **aluno assignedTo** pode ver e modificar o envio. Um professor ou aplicativo com permissões de aplicativo tem acesso total a todos os envios.
 
 As notas e os comentários de um professor fazem parte do [educationOutcome](../resources/educationoutcome.md) associado a esse objeto. Somente professores ou aplicativos com permissões de aplicativo podem adicionar ou alterar notas e comentários. Os alunos não verão a nota ou os comentários até que a atribuição seja lançada.
 
