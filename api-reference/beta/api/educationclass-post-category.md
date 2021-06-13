@@ -5,58 +5,59 @@ localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: ae7983dc59bdb0ce756c0eb26f29f51a2c962fa1
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: bf0fb3c2459fba0c309e37149e0f87013ff12449
+ms.sourcegitcommit: f77c1385306fd40557aceb24fdfe4832cbb60a27
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52043833"
+ms.lasthandoff: 06/12/2021
+ms.locfileid: "52911771"
 ---
-# <a name="create-educationcategory"></a><span data-ttu-id="7d4bd-103">Criar educationCategory</span><span class="sxs-lookup"><span data-stu-id="7d4bd-103">Create educationCategory</span></span>
+# <a name="create-educationcategory"></a><span data-ttu-id="00ffd-103">Criar educationCategory</span><span class="sxs-lookup"><span data-stu-id="00ffd-103">Create educationCategory</span></span>
 
-<span data-ttu-id="7d4bd-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="7d4bd-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="00ffd-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="00ffd-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="7d4bd-105">Cria uma nova [educationCategory](../resources/educationcategory.md) em uma [educationClass](../resources/educationclass.md).</span><span class="sxs-lookup"><span data-stu-id="7d4bd-105">Creates a new [educationCategory](../resources/educationcategory.md) on an [educationClass](../resources/educationclass.md).</span></span>
+<span data-ttu-id="00ffd-105">Cria uma nova [educationCategory](../resources/educationcategory.md) em uma [educationClass](../resources/educationclass.md).</span><span class="sxs-lookup"><span data-stu-id="00ffd-105">Creates a new [educationCategory](../resources/educationcategory.md) on an [educationClass](../resources/educationclass.md).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="7d4bd-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="7d4bd-106">Permissions</span></span>
-<span data-ttu-id="7d4bd-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="7d4bd-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="00ffd-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="00ffd-106">Permissions</span></span>
+<span data-ttu-id="00ffd-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="00ffd-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="7d4bd-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="7d4bd-109">Permission type</span></span>      | <span data-ttu-id="7d4bd-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="7d4bd-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="00ffd-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="00ffd-109">Permission type</span></span>      | <span data-ttu-id="00ffd-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="00ffd-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="7d4bd-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="7d4bd-111">Delegated (work or school account)</span></span> |  <span data-ttu-id="7d4bd-112">EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="7d4bd-112">EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite</span></span>  |
-|<span data-ttu-id="7d4bd-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="7d4bd-113">Delegated (personal Microsoft account)</span></span> |  <span data-ttu-id="7d4bd-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="7d4bd-114">Not supported.</span></span>  |
-|<span data-ttu-id="7d4bd-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="7d4bd-115">Application</span></span> | <span data-ttu-id="7d4bd-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="7d4bd-116">Not supported.</span></span> | 
+|<span data-ttu-id="00ffd-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="00ffd-111">Delegated (work or school account)</span></span> |  <span data-ttu-id="00ffd-112">EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="00ffd-112">EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite</span></span>  |
+|<span data-ttu-id="00ffd-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="00ffd-113">Delegated (personal Microsoft account)</span></span> |  <span data-ttu-id="00ffd-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="00ffd-114">Not supported.</span></span>  |
+|<span data-ttu-id="00ffd-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="00ffd-115">Application</span></span> | <span data-ttu-id="00ffd-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="00ffd-116">Not supported.</span></span> | 
 
-## <a name="http-request"></a><span data-ttu-id="7d4bd-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="7d4bd-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="00ffd-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="00ffd-117">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /education/classes/{id}/assignmentCategories
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="7d4bd-118">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="7d4bd-118">Request headers</span></span>
-| <span data-ttu-id="7d4bd-119">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="7d4bd-119">Header</span></span>       | <span data-ttu-id="7d4bd-120">Valor</span><span class="sxs-lookup"><span data-stu-id="7d4bd-120">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="00ffd-118">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="00ffd-118">Request headers</span></span>
+| <span data-ttu-id="00ffd-119">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="00ffd-119">Header</span></span>       | <span data-ttu-id="00ffd-120">Valor</span><span class="sxs-lookup"><span data-stu-id="00ffd-120">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="7d4bd-121">Autorização</span><span class="sxs-lookup"><span data-stu-id="7d4bd-121">Authorization</span></span>  | <span data-ttu-id="7d4bd-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="7d4bd-p102">Bearer {token}. Required.</span></span>  |
-| <span data-ttu-id="7d4bd-124">Content-Type</span><span class="sxs-lookup"><span data-stu-id="7d4bd-124">Content-Type</span></span>  | <span data-ttu-id="7d4bd-125">application/json</span><span class="sxs-lookup"><span data-stu-id="7d4bd-125">application/json</span></span>  |
+| <span data-ttu-id="00ffd-121">Autorização</span><span class="sxs-lookup"><span data-stu-id="00ffd-121">Authorization</span></span>  | <span data-ttu-id="00ffd-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="00ffd-p102">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="00ffd-124">Content-Type</span><span class="sxs-lookup"><span data-stu-id="00ffd-124">Content-Type</span></span>  | <span data-ttu-id="00ffd-125">application/json</span><span class="sxs-lookup"><span data-stu-id="00ffd-125">application/json</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="7d4bd-126">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="7d4bd-126">Request body</span></span>
-<span data-ttu-id="7d4bd-127">No corpo da solicitação, fornece uma representação JSON de um [objeto educationCategory.](../resources/educationcategory.md)</span><span class="sxs-lookup"><span data-stu-id="7d4bd-127">In the request body, supply a JSON representation of an [educationCategory](../resources/educationcategory.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="00ffd-126">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="00ffd-126">Request body</span></span>
+<span data-ttu-id="00ffd-127">No corpo da solicitação, fornece uma representação JSON de um [objeto educationCategory.](../resources/educationcategory.md)</span><span class="sxs-lookup"><span data-stu-id="00ffd-127">In the request body, supply a JSON representation of an [educationCategory](../resources/educationcategory.md) object.</span></span>
 
 
-## <a name="response"></a><span data-ttu-id="7d4bd-128">Resposta</span><span class="sxs-lookup"><span data-stu-id="7d4bd-128">Response</span></span>
-<span data-ttu-id="7d4bd-129">Se tiver êxito, este método retornará um código de resposta e um `201 Created` [objeto educationCategory](../resources/educationcategory.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="7d4bd-129">If successful, this method returns a `201 Created` response code and an [educationCategory](../resources/educationcategory.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="00ffd-128">Resposta</span><span class="sxs-lookup"><span data-stu-id="00ffd-128">Response</span></span>
+<span data-ttu-id="00ffd-129">Se tiver êxito, este método retornará um código de resposta e um `201 Created` [objeto educationCategory](../resources/educationcategory.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="00ffd-129">If successful, this method returns a `201 Created` response code and an [educationCategory](../resources/educationcategory.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="7d4bd-130">Exemplo</span><span class="sxs-lookup"><span data-stu-id="7d4bd-130">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="7d4bd-131">Solicitação</span><span class="sxs-lookup"><span data-stu-id="7d4bd-131">Request</span></span>
-<span data-ttu-id="7d4bd-132">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="7d4bd-132">The following is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="00ffd-130">Exemplo</span><span class="sxs-lookup"><span data-stu-id="00ffd-130">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="00ffd-131">Solicitação</span><span class="sxs-lookup"><span data-stu-id="00ffd-131">Request</span></span>
+<span data-ttu-id="00ffd-132">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="00ffd-132">The following is an example of the request.</span></span>
 <!-- {
-  "blockType": "ignored",
+  "blockType": "request",
+  "sampleKeys": ["9a5e4047-c1dc-4243-9628-580d3c64b80c"],
   "name": "create_educationcategory_from_educationclass"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/education/classes/11019/assignmentCategories
+POST https://graph.microsoft.com/beta/education/classes/9a5e4047-c1dc-4243-9628-580d3c64b80c/assignmentCategories
 Content-type: application/json
 Content-length: 33
 
@@ -64,15 +65,15 @@ Content-length: 33
   "displayName": "Quizzes"
 }
 ```
-<span data-ttu-id="7d4bd-133">No corpo da solicitação, fornece uma representação JSON de um [objeto educationCategory.](../resources/educationcategory.md)</span><span class="sxs-lookup"><span data-stu-id="7d4bd-133">In the request body, supply a JSON representation of an [educationCategory](../resources/educationcategory.md) object.</span></span>
+<span data-ttu-id="00ffd-133">No corpo da solicitação, fornece uma representação JSON de um [objeto educationCategory.](../resources/educationcategory.md)</span><span class="sxs-lookup"><span data-stu-id="00ffd-133">In the request body, supply a JSON representation of an [educationCategory](../resources/educationcategory.md) object.</span></span>
 
-##### <a name="response"></a><span data-ttu-id="7d4bd-134">Resposta</span><span class="sxs-lookup"><span data-stu-id="7d4bd-134">Response</span></span>
-<span data-ttu-id="7d4bd-135">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="7d4bd-135">The following is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="00ffd-134">Resposta</span><span class="sxs-lookup"><span data-stu-id="00ffd-134">Response</span></span>
+<span data-ttu-id="00ffd-135">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="00ffd-135">The following is an example of the response.</span></span> 
 
-><span data-ttu-id="7d4bd-136">**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.</span><span class="sxs-lookup"><span data-stu-id="7d4bd-136">**Note:** The response object shown here might be shortened for readability.</span></span>
+><span data-ttu-id="00ffd-136">**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.</span><span class="sxs-lookup"><span data-stu-id="00ffd-136">**Note:** The response object shown here might be shortened for readability.</span></span>
 
 <!-- {
-  "blockType": "ignored",
+  "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.educationCategory"
 } -->
@@ -82,6 +83,7 @@ Content-type: application/json
 Content-length: 85
 
 {
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#education/classes('9a5e4047-c1dc-4243-9628-580d3c64b80c')/assignmentCategories/$entity",
     "displayName": "Quizzes",
     "id": "ec98f158-341d-4fea-9f8c-14a250d489ac"
 }

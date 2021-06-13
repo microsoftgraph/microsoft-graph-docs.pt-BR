@@ -1,66 +1,66 @@
 ---
-title: Listar tarefas
-description: Recupere uma lista de objetos de atribuição. Um professor ou um aplicativo que executa com permissões de aplicativo tem permissão para ver todos os objetos de atribuição da classe. Os alunos só podem ver atribuições atribuídas a eles.
+title: Listar atribuições de classe
+description: Recupere uma lista de objetos de atribuição.
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: c88d274a92b0d6b2546fa64e349620af7d7f9353
-ms.sourcegitcommit: eb67b0a619a4004c1611304f1252a382264a97f3
+ms.openlocfilehash: 4e648f9f1b40445c1c98c7b6054b67705308bdcb
+ms.sourcegitcommit: f77c1385306fd40557aceb24fdfe4832cbb60a27
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52061795"
+ms.lasthandoff: 06/12/2021
+ms.locfileid: "52911841"
 ---
-# <a name="list-assignments"></a><span data-ttu-id="abcff-105">Listar tarefas</span><span class="sxs-lookup"><span data-stu-id="abcff-105">List assignments</span></span>
+# <a name="list-class-assignments"></a><span data-ttu-id="7345c-103">Listar atribuições de classe</span><span class="sxs-lookup"><span data-stu-id="7345c-103">List class assignments</span></span>
 
-<span data-ttu-id="abcff-106">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="abcff-106">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="7345c-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="7345c-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="abcff-107">Recupere uma lista de objetos de atribuição.</span><span class="sxs-lookup"><span data-stu-id="abcff-107">Retrieve a list of assignment objects.</span></span> <span data-ttu-id="abcff-108">Um professor ou um aplicativo que executa com permissões de aplicativo tem permissão para ver todos os objetos de atribuição da classe.</span><span class="sxs-lookup"><span data-stu-id="abcff-108">A teacher or an application executing with application permissions is allowed to see all assignment objects for the class.</span></span> <span data-ttu-id="abcff-109">Os alunos só podem ver atribuições atribuídas a eles.</span><span class="sxs-lookup"><span data-stu-id="abcff-109">Students can only see assignments that are assigned to them.</span></span>
+<span data-ttu-id="7345c-105">Recupere uma lista de objetos de atribuição.</span><span class="sxs-lookup"><span data-stu-id="7345c-105">Retrieve a list of assignment objects.</span></span> 
 
-## <a name="permissions"></a><span data-ttu-id="abcff-110">Permissões</span><span class="sxs-lookup"><span data-stu-id="abcff-110">Permissions</span></span>
+<span data-ttu-id="7345c-106">Um professor ou um aplicativo que executa com permissões de aplicativo pode ver todos os objetos de atribuição da classe.</span><span class="sxs-lookup"><span data-stu-id="7345c-106">A teacher or an application executing with application permissions can see all assignment objects for the class.</span></span> <span data-ttu-id="7345c-107">Os alunos só podem ver atribuições atribuídas a eles.</span><span class="sxs-lookup"><span data-stu-id="7345c-107">Students can only see assignments that are assigned to them.</span></span>
 
-<span data-ttu-id="abcff-p103">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="abcff-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="7345c-108">Permissões</span><span class="sxs-lookup"><span data-stu-id="7345c-108">Permissions</span></span>
 
-| <span data-ttu-id="abcff-113">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="abcff-113">Permission type</span></span>                        | <span data-ttu-id="abcff-114">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="abcff-114">Permissions (from least to most privileged)</span></span>                                                            |
+<span data-ttu-id="7345c-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="7345c-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+
+| <span data-ttu-id="7345c-111">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="7345c-111">Permission type</span></span>                        | <span data-ttu-id="7345c-112">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="7345c-112">Permissions (from least to most privileged)</span></span>                                                            |
 | :------------------------------------- | :----------------------------------------------------------------------------------------------------- |
-| <span data-ttu-id="abcff-115">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="abcff-115">Delegated (work or school account)</span></span>     | <span data-ttu-id="abcff-116">EduAssignments.ReadBasic, EduAssignments.ReadWriteBasic, EduAssignments.Read, EduAssignments.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="abcff-116">EduAssignments.ReadBasic, EduAssignments.ReadWriteBasic, EduAssignments.Read, EduAssignments.ReadWrite</span></span> |
-| <span data-ttu-id="abcff-117">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="abcff-117">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="abcff-118">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="abcff-118">Not supported.</span></span>                                                                                         |
-| <span data-ttu-id="abcff-119">Application\*</span><span class="sxs-lookup"><span data-stu-id="abcff-119">Application\*</span></span>                           | <span data-ttu-id="abcff-120">EduAssignments.ReadBasic, EduAssignments.ReadWriteBasic, EduAssignments.Read, EduAssignments.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="abcff-120">EduAssignments.ReadBasic, EduAssignments.ReadWriteBasic, EduAssignments.Read, EduAssignments.ReadWrite</span></span> |
+| <span data-ttu-id="7345c-113">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="7345c-113">Delegated (work or school account)</span></span>     | <span data-ttu-id="7345c-114">EduAssignments.ReadBasic, EduAssignments.ReadWriteBasic, EduAssignments.Read, EduAssignments.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="7345c-114">EduAssignments.ReadBasic, EduAssignments.ReadWriteBasic, EduAssignments.Read, EduAssignments.ReadWrite</span></span> |
+| <span data-ttu-id="7345c-115">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="7345c-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="7345c-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="7345c-116">Not supported.</span></span>                                                                                         |
+| <span data-ttu-id="7345c-117">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="7345c-117">Application</span></span>                            | <span data-ttu-id="7345c-118">EduAssignments.ReadBasic, EduAssignments.ReadWriteBasic, EduAssignments.Read, EduAssignments.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="7345c-118">EduAssignments.ReadBasic, EduAssignments.ReadWriteBasic, EduAssignments.Read, EduAssignments.ReadWrite</span></span> |
 
-<span data-ttu-id="abcff-121">\*As permissões de aplicativo estão disponíveis apenas para clientes de visualização privada.</span><span class="sxs-lookup"><span data-stu-id="abcff-121">\*Application permissions are currently available to private preview customers only.</span></span>
-
-## <a name="http-request"></a><span data-ttu-id="abcff-122">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="abcff-122">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="7345c-119">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="7345c-119">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /education/classes/{id}/assignments
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="abcff-123">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="abcff-123">Optional query parameters</span></span>
-<span data-ttu-id="abcff-124">Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="abcff-124">This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="7345c-120">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="7345c-120">Optional query parameters</span></span>
+<span data-ttu-id="7345c-121">Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="7345c-121">This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="abcff-125">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="abcff-125">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="7345c-122">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="7345c-122">Request headers</span></span>
 
-| <span data-ttu-id="abcff-126">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="abcff-126">Header</span></span>        | <span data-ttu-id="abcff-127">Valor</span><span class="sxs-lookup"><span data-stu-id="abcff-127">Value</span></span>                     |
+| <span data-ttu-id="7345c-123">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="7345c-123">Header</span></span>        | <span data-ttu-id="7345c-124">Valor</span><span class="sxs-lookup"><span data-stu-id="7345c-124">Value</span></span>                     |
 | :------------ | :------------------------ |
-| <span data-ttu-id="abcff-128">Autorização</span><span class="sxs-lookup"><span data-stu-id="abcff-128">Authorization</span></span> | <span data-ttu-id="abcff-p104">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="abcff-p104">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="7345c-125">Autorização</span><span class="sxs-lookup"><span data-stu-id="7345c-125">Authorization</span></span> | <span data-ttu-id="7345c-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="7345c-p103">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="abcff-131">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="abcff-131">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="7345c-128">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="7345c-128">Request body</span></span>
 
-<span data-ttu-id="abcff-132">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="abcff-132">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="7345c-129">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="7345c-129">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="abcff-133">Resposta</span><span class="sxs-lookup"><span data-stu-id="abcff-133">Response</span></span>
+## <a name="response"></a><span data-ttu-id="7345c-130">Resposta</span><span class="sxs-lookup"><span data-stu-id="7345c-130">Response</span></span>
 
-<span data-ttu-id="abcff-134">Se tiver êxito, este método retornará um código de resposta e uma `200 OK` coleção de [objetos educationAssignment](../resources/educationassignment.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="abcff-134">If successful, this method returns a `200 OK` response code and a collection of [educationAssignment](../resources/educationassignment.md) objects in the response body.</span></span>
+<span data-ttu-id="7345c-131">Se tiver êxito, este método retornará um código de resposta e uma `200 OK` coleção de [objetos educationAssignment](../resources/educationassignment.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="7345c-131">If successful, this method returns a `200 OK` response code and a collection of [educationAssignment](../resources/educationassignment.md) objects in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="abcff-135">Exemplo</span><span class="sxs-lookup"><span data-stu-id="abcff-135">Example</span></span>
+## <a name="example"></a><span data-ttu-id="7345c-132">Exemplo</span><span class="sxs-lookup"><span data-stu-id="7345c-132">Example</span></span>
 
-##### <a name="request"></a><span data-ttu-id="abcff-136">Solicitação</span><span class="sxs-lookup"><span data-stu-id="abcff-136">Request</span></span>
+##### <a name="request"></a><span data-ttu-id="7345c-133">Solicitação</span><span class="sxs-lookup"><span data-stu-id="7345c-133">Request</span></span>
 
-<span data-ttu-id="abcff-137">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="abcff-137">The following is an example of the request.</span></span>
+<span data-ttu-id="7345c-134">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="7345c-134">The following is an example of the request.</span></span>
 
 <!-- {
   "blockType": "ignored",
@@ -71,11 +71,11 @@ GET /education/classes/{id}/assignments
 GET https://graph.microsoft.com/beta/education/classes/{id}/assignments
 ```
 
-##### <a name="response"></a><span data-ttu-id="abcff-138">Resposta</span><span class="sxs-lookup"><span data-stu-id="abcff-138">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="7345c-135">Resposta</span><span class="sxs-lookup"><span data-stu-id="7345c-135">Response</span></span>
 
-<span data-ttu-id="abcff-139">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="abcff-139">The following is an example of the response.</span></span> 
+<span data-ttu-id="7345c-136">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="7345c-136">The following is an example of the response.</span></span> 
 
-><span data-ttu-id="abcff-140">**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.</span><span class="sxs-lookup"><span data-stu-id="abcff-140">**Note:** The response object shown here might be shortened for readability.</span></span>
+><span data-ttu-id="7345c-137">**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.</span><span class="sxs-lookup"><span data-stu-id="7345c-137">**Note:** The response object shown here might be shortened for readability.</span></span>
 
 <!-- {
   "blockType": "ignored",

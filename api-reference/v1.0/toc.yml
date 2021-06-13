@@ -447,7 +447,7 @@ items:
         items:
           - name: Visão Geral
             href: resources/groups-overview.md
-          - name: Group
+          - name: Grupo
             href: resources/group.md
             items:
               - name: Listar grupos
@@ -4048,6 +4048,18 @@ items:
                 href: api/educationclass-post-members.md
               - name: Remover membro
                 href: api/educationclass-delete-members.md
+              - name: Listar atribuições de classe
+                href: api/educationclass-list-assignments.md
+              - name: Criar tarefa
+                href: api/educationclass-post-assignment.md
+              - name: Obter configurações de atribuição
+                href: api/educationassignmentsettings-get.md
+              - name: Obter padrões de atribuição
+                href: api/educationassignmentdefaults-get.md
+              - name: Listar categorias
+                href: api/educationclass-list-categories.md
+              - name: Criar categoria
+                href: api/educationclass-post-category.md
           - name: Usuários
             href: resources/educationuser.md
             items:
@@ -4059,12 +4071,128 @@ items:
                 href: api/educationuser-get.md
               - name: Excluir usuário
                 href: api/educationuser-delete.md
+              - name: Obter usuário de diretório
+                href: api/educationuser-get-user.md
               - name: Obter alterações nos usuários
                 href: api/educationuser-delta.md
               - name: Listar classes
                 href: api/educationuser-list-classes.md
+              - name: Listar rubricas
+                href: api/educationuser-list-rubrics.md
               - name: Listar classes ensinadas
                 href: api/educationuser-list-taughtclasses.md
+              - name: Criar rubrica
+                href: api/educationuser-post-rubrics.md
+          - name: Tarefa
+            href: resources/educationassignment.md
+            items:
+              - name: Criar tarefa
+                href: api/educationclass-post-assignment.md
+              - name: Obter tarefa
+                href: api/educationassignment-get.md
+              - name: Atualizar tarefa
+                href: api/educationassignment-update.md
+              - name: Excluir tarefa
+                href: api/educationassignment-delete.md
+              - name: Configurar pasta de recursos de atribuição
+                href: api/educationassignment-setupresourcesfolder.md
+              - name: Publicar tarefa
+                href: api/educationassignment-publish.md
+              - name: Listar recursos de tarefa
+                href: api/educationassignment-list-resources.md
+              - name: Criar recurso de tarefa
+                href: api/educationassignment-post-resource.md
+              - name: Obter recurso de tarefa
+                href: api/educationassignmentresource-get.md
+              - name: Excluir recurso da tarefa
+                href: api/educationassignmentresource-delete.md
+              - name: Listar envios da tarefa
+                href: api/educationassignment-list-submissions.md
+              - name: Obter rubrica anexada à atribuição
+                href: api/educationassignment-get-rubric.md
+              - name: Listar categorias
+                href: api/educationassignment-list-categories.md
+              - name: Adicionar Categoria
+                href: api/educationassignment-post-categories.md
+              - name: Remover categoria
+                href: api/educationassignment-remove-category.md
+              - name: Anexar rubric à atribuição
+                href: api/educationassignment-put-rubric.md
+              - name: Remover rubric da atribuição
+                href: api/educationassignment-delete-rubric.md
+          - name: Configurações de atribuição
+            href: resources/educationassignmentsettings.md
+            items:
+              - name: Obter configurações de atribuição
+                href: api/educationassignmentsettings-get.md
+              - name: Atualizar configurações de atribuição
+                href: api/educationassignmentsettings-update.md
+          - name: Padrões de atribuição
+            href: resources/educationassignmentdefaults.md
+            items:
+              - name: Obter padrões de atribuição
+                href: api/educationassignmentdefaults-get.md
+              - name: Atualizar padrões de atribuição
+                href: api/educationassignmentdefaults-update.md
+          - name: Categoria
+            href: resources/educationcategory.md
+            items:
+              - name: Criar categoria
+                href: api/educationclass-post-category.md
+              - name: Obter categoria
+                href: api/educationcategory-get.md
+              - name: Excluir categoria
+                href: api/educationcategory-delete.md
+          - name: Rubric
+            href: resources/educationrubric.md
+            items:
+              - name: Criar rubrica
+                href: api/educationuser-post-rubrics.md
+              - name: Obter rubric
+                href: api/educationrubric-get.md
+              - name: Atualizar rubric
+                href: api/educationrubric-update.md
+              - name: Excluir rubric
+                href: api/educationrubric-delete.md
+          - name: Envio
+            href: resources/educationsubmission.md
+            items:
+              - name: Listar recursos de envio
+                href: api/educationsubmission-list-resources.md
+              - name: Adicionar recurso de envio
+                href: api/educationsubmission-post-resources.md
+              - name: Obter recurso de envio
+                href: api/educationsubmissionresource-get.md
+              - name: Excluir recurso de envio
+                href: api/educationsubmissionresource-delete.md
+              - name: Obter envio
+                href: api/educationsubmission-get.md
+              - name: Configurar pasta de recursos de envio
+                href: api/educationsubmission-setupresourcesfolder.md
+              - name: Enviar
+                href: api/educationsubmission-submit.md
+              - name: Cancelar envio
+                href: api/educationsubmission-unsubmit.md
+              - name: Listar recursos enviados
+                href: api/educationsubmission-list-submittedresources.md
+              - name: Listar resultados
+                href: api/educationsubmission-list-outcomes.md
+              - name: Obter recurso enviado
+                href: api/educationsubmittedsubmissionresource-get.md
+              - name: Retornar envio
+                href: api/educationsubmission-return.md
+          - name: Resultado
+            items:
+              - name: Resultado
+                href: resources/educationoutcome.md
+              - name: Tipo de resultado de feedback
+                href: resources/educationfeedbackoutcome.md
+              - name: Tipo de resultado de pontos
+                href: resources/educationpointsoutcome.md
+              - name: Tipo de resultado rubrico
+                href: resources/educationrubricoutcome.md
+              - name: Resultado da atualização
+                href: api/educationoutcome-update.md
       - name: Extensões
         items:
           - name: Extensões abertas
@@ -5561,7 +5689,7 @@ items:
         items:
           - name: Visão Geral
             href: resources/planner-overview.md
-          - name: Plano
+          - name: Planejar
             href: resources/plannerplan.md
             items:
               - name: Criar plano
