@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 229c1182e45e9ac72e9ef984c9943823e4292536
-ms.sourcegitcommit: 34891a1c601976166958be1aa04bab5936592b44
+ms.openlocfilehash: 180309cb87e3d8678e81235309338a1817fb0b91
+ms.sourcegitcommit: f77c1385306fd40557aceb24fdfe4832cbb60a27
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52231875"
+ms.lasthandoff: 06/12/2021
+ms.locfileid: "52911995"
 ---
 # <a name="list-schools-of-an-educationuser"></a>Listar escolas de um educationUser
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 Recupere uma lista de escolas de um usuário.
 
->**Observação:** se o token delegado for usado, os membros só poderão ver informações sobre as próprias escolas. Nesse caso, use o recurso `...beta/education/me/schools`.
+>**Observação:** se o token delegado for usado, os membros só poderão ver informações sobre as próprias escolas. Nesse caso, use o recurso `...v1.0/education/me/schools`.
 
 ## <a name="permissions"></a>Permissões
 

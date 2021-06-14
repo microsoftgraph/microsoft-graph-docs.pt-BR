@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
 doc_type: enumPageType
-ms.openlocfilehash: 0905b424a69d1214c65a39873595192b38303787
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 1db4fbafde269d5e53799ec986ccd6c6631970ae
+ms.sourcegitcommit: f77c1385306fd40557aceb24fdfe4832cbb60a27
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52786613"
+ms.lasthandoff: 06/12/2021
+ms.locfileid: "52911610"
 ---
 # <a name="enum-values"></a>Valores denum
 
@@ -22,6 +22,7 @@ Namespace: microsoft.graph
 |:---|
 |revistor|
 |unknownFutureValue|
+
 ### <a name="externalemailotpstate-values"></a>valores externalEmailOtpState
 
 |Member|
@@ -29,6 +30,14 @@ Namespace: microsoft.graph
 |Padrão.|
 |habilitadas|
 |desabilitadas|
+|unknownFutureValue|
+
+### <a name="educationaddedstudentaction-values"></a>valores educationAddedStudentAction
+
+|Member|
+|:---|
+|nenhuma|
+|assignIfOpen|
 |unknownFutureValue|
 
 ### <a name="authenticatorappcontexttype-values"></a>Valores authenticatorAppContextType
@@ -331,7 +340,7 @@ Namespace: microsoft.graph
 
 |Member|
 |:---|
-|Nenhuma|
+|Nenhum|
 |SecurityGroup|
 |Todos|
 
@@ -742,7 +751,7 @@ Namespace: microsoft.graph
 | Automático
 | noPreview
 | checklist
-| description
+| descrição
 | referência
 
 
@@ -1395,7 +1404,7 @@ Valores possíveis para tipos de conta de usuário (associação ao grupo), por 
 
 | Member                |
 |:----------------------|
-| cadeia de caracteres                |
+| string                |
 | booliano               |
 | int64                 |
 | stringCollection      |

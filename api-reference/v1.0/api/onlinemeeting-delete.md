@@ -1,16 +1,16 @@
 ---
 title: Excluir onlineMeeting
 description: Excluir uma reunião online.
-author: jsandoval-msft
+author: mkhribech
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: eee39ddcaa0122f4e628f06cc8f90bac0317ddab
-ms.sourcegitcommit: 3eb37e0621540bee91f42a7c2d8457310e90f8b7
+ms.openlocfilehash: 8af5125d227c09ec2d115aabf626fc3b737d4085
+ms.sourcegitcommit: 7abb0672a38a6d9b11a2e0d2cc221222cb8358bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51869873"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52896561"
 ---
 # <a name="delete-onlinemeeting"></a>Excluir onlineMeeting
 
@@ -42,7 +42,7 @@ Para excluir o onlineMeeting especificado por meio da ID de reunião com a permi
 DELETE /users/{userId}/onlineMeetings/{meetingId}
 ```
 > [!NOTE]
-> - `userId`é a ID do objeto de um usuário no portal de gerenciamento [de usuários do Azure.](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade) Para obter mais detalhes, consulte [política de acesso ao aplicativo](/graph/cloud-communication-online-meeting-application-access-policy).
+> - `userId` é a ID de objeto de um usuário no [Portal de gerenciamento de usuário do Azure](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade). Para obter mais detalhes, consulte [política de acesso ao aplicativo](/graph/cloud-communication-online-meeting-application-access-policy).
 > - `meetingId`é a **id** de um [objeto onlineMeeting.](../resources/onlinemeeting.md)
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação

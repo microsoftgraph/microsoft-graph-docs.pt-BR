@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 728e848e07a176ad43e1ddea1edfee3218ae3764
-ms.sourcegitcommit: 34891a1c601976166958be1aa04bab5936592b44
+ms.openlocfilehash: 2fb5da61a1450b25166f86a0a64baf15b1e0f559
+ms.sourcegitcommit: f77c1385306fd40557aceb24fdfe4832cbb60a27
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52231882"
+ms.lasthandoff: 06/12/2021
+ms.locfileid: "52912058"
 ---
 # <a name="get-educationuser"></a>Obter educationUser
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 Recupere o **usuário** do diretório simples que corresponde a esse **educationUser**.
 
->**Observação:** se o token delegado for usado, os membros só poderão ver informações sobre as próprias escolas. Nesse caso, use o recurso `...beta/education/me/schools`.
+>**Observação:** se o token delegado for usado, os membros só poderão ver informações sobre as próprias escolas. Nesse caso, use o recurso `...v1.0/education/me/schools`.
 
 ## <a name="permissions"></a>Permissões
 Uma combinação de permissões é obrigatória para chamar essa API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).

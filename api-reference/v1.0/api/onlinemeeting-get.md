@@ -1,16 +1,16 @@
 ---
 title: Obter onlineMeeting
 description: Recupere as propriedades e as relações de um objeto de reunião online.
-author: jsandoval-msft
+author: mkhribech
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: cd319b7434ed0313c810b1c72ebd53a784ec536f
-ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
+ms.openlocfilehash: 468aa51cc9939c247ade3a205b91996fa6685734
+ms.sourcegitcommit: 7abb0672a38a6d9b11a2e0d2cc221222cb8358bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "52664969"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52896575"
 ---
 # <a name="get-onlinemeeting"></a>Obter onlineMeeting
 

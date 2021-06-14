@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso onlineMeeting
 description: Contém informações sobre uma reunião.
-author: jsandoval-msft
+author: mkhribech
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: cloud-communications
-ms.openlocfilehash: 4e04e9f6d40be4e4ed9a432be6cc449c690790a7
-ms.sourcegitcommit: 3eb37e0621540bee91f42a7c2d8457310e90f8b7
+ms.openlocfilehash: 9de25fd3f9f014627b7fcb32e4a16814e82be1e3
+ms.sourcegitcommit: 7abb0672a38a6d9b11a2e0d2cc221222cb8358bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51869852"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52896484"
 ---
 # <a name="onlinemeeting-resource-type"></a>Tipo de recurso onlineMeeting
 
@@ -37,15 +37,15 @@ Contém informações sobre uma reunião, incluindo a URL usada para ingressar e
 | chatInfo              | [chatInfo](chatinfo.md)                       | As informações de chat associadas a essa reunião online.                                                                  |
 | creationDateTime      | DateTime                                      | O tempo de criação da reunião em UTC. Somente leitura.                                                                               |
 | endDateTime           | DateTime                                      | A hora de término da reunião em UTC.                                                                                               |
-| id                    | Cadeia de caracteres                                        | A ID padrão associada à reunião online. Somente leitura.                                                              |
-| isEntryExitAnnounced  | Boolean                                       | Se os chamadores ingressarão ou sairão.                                                                     |
+| id                    | String                                        | A ID padrão associada à reunião online. Somente leitura.                                                              |
+| isEntryExitAnnounced  | Booliano                                       | Se os chamadores ingressarão ou sairão.                                                                     |
 | joinInformation       | [itemBody](itembody.md)                       | As informações de junção no idioma e na variante de localidade especificadas no `Accept-Language` cabeçalho HTTP da solicitação. Somente leitura. |
-| joinWebUrl            | Cadeia de Caracteres                                        | A URL de junção da reunião online. Somente leitura.                                                                             |
+| joinWebUrl            | String                                        | A URL de junção da reunião online. Somente leitura.                                                                             |
 | lobbyBypassSettings   | [lobbyBypassSettings](lobbyBypassSettings.md) | Especifica quais participantes podem ignorar o lobby da reunião.                                                               |
 | participants          | [meetingParticipants](meetingparticipants.md) | Os participantes associados à reunião online.  Isso inclui o organizador e os participantes.                       |
 | startDateTime         | DateTime                                      | O horário de início da reunião em UTC.                                                                                             |
-| assunto               | Cadeia de caracteres                                        | O assunto da reunião online.                                                                                         |
-| videoTeleconferenceId | Cadeia de Caracteres                                        | A ID de teleconferência de vídeo. Somente leitura.                                                                                  |
+| Assunto               | String                                        | O assunto da reunião online.                                                                                         |
+| videoTeleconferenceId | String                                        | A ID de teleconferência de vídeo. Somente leitura.                                                                                  |
 
 ### <a name="onlinemeetingpresenters-values"></a>valores onlineMeetingPresenters
 
