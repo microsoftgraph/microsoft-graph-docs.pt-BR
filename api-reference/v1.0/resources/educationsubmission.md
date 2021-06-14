@@ -1,0 +1,101 @@
+---
+title: Tipo de recurso educationSubmission
+description: Um envio representa os recursos que um indivíduo (ou grupo) entrega para uma atribuição e os resultados (como notas ou comentários) associados ao envio.
+author: sharad-sharma-msft
+localization_priority: Normal
+ms.prod: education
+doc_type: resourcePageType
+ms.openlocfilehash: e0539d1ddd44e505c77172ffb4c95a335418f478
+ms.sourcegitcommit: f77c1385306fd40557aceb24fdfe4832cbb60a27
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 06/12/2021
+ms.locfileid: "52912177"
+---
+# <a name="educationsubmission-resource-type"></a><span data-ttu-id="a479e-103">Tipo de recurso educationSubmission</span><span class="sxs-lookup"><span data-stu-id="a479e-103">educationSubmission resource type</span></span>
+
+<span data-ttu-id="a479e-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="a479e-104">Namespace: microsoft.graph</span></span>
+
+<span data-ttu-id="a479e-105">Um envio representa os recursos que um indivíduo (ou grupo) entrega para uma atribuição e os resultados (como notas ou comentários) associados ao envio.</span><span class="sxs-lookup"><span data-stu-id="a479e-105">A submission represents the resources that an individual (or group) turn in for an assignment and the outcomes (such as grades or feedback) that are associated with the submission.</span></span>
+
+<span data-ttu-id="a479e-106">Os envios pertencem a uma atribuição.</span><span class="sxs-lookup"><span data-stu-id="a479e-106">Submissions are owned by an assignment.</span></span> <span data-ttu-id="a479e-107">Os envios são criados automaticamente quando uma atribuição é publicada.</span><span class="sxs-lookup"><span data-stu-id="a479e-107">Submissions are automatically created when an assignment is published.</span></span> <span data-ttu-id="a479e-108">O envio possui duas listas de recursos.</span><span class="sxs-lookup"><span data-stu-id="a479e-108">The submission owns two lists of resources.</span></span> <span data-ttu-id="a479e-109">Os recursos representam a área de trabalho usuário/grupos enquanto os recursos enviados representam os recursos que foram ativamente entregues pelos alunos.</span><span class="sxs-lookup"><span data-stu-id="a479e-109">Resources represent the user/groups working area while the submitted resources represent the resources that have actively been turned in by students.</span></span>  
+
+<span data-ttu-id="a479e-110">A **propriedade status** é somente leitura e o objeto é movido através do fluxo de trabalho por meio de ações.</span><span class="sxs-lookup"><span data-stu-id="a479e-110">The **status** property is read-only and the object is moved through the workflow via actions.</span></span> 
+
+<span data-ttu-id="a479e-111">Se [setUpResourcesFolder](../api/educationsubmission-setupResourcesFolder.md) não tiver sido chamado em um **recurso educationSubmission,** a propriedade **resourcesFolderUrl** será `null` .</span><span class="sxs-lookup"><span data-stu-id="a479e-111">If [setUpResourcesFolder](../api/educationsubmission-setupResourcesFolder.md) has not been called on an **educationSubmission** resource, the **resourcesFolderUrl** property is `null`.</span></span>
+
+## <a name="methods"></a><span data-ttu-id="a479e-112">Métodos</span><span class="sxs-lookup"><span data-stu-id="a479e-112">Methods</span></span>
+
+| <span data-ttu-id="a479e-113">Método</span><span class="sxs-lookup"><span data-stu-id="a479e-113">Method</span></span>           | <span data-ttu-id="a479e-114">Tipo de retorno</span><span class="sxs-lookup"><span data-stu-id="a479e-114">Return Type</span></span>    |<span data-ttu-id="a479e-115">Descrição</span><span class="sxs-lookup"><span data-stu-id="a479e-115">Description</span></span>|
+|:---------------|:--------|:----------|
+|[<span data-ttu-id="a479e-116">Obter educationSubmission</span><span class="sxs-lookup"><span data-stu-id="a479e-116">Get educationSubmission</span></span>](../api/educationsubmission-get.md) | [<span data-ttu-id="a479e-117">educationSubmission</span><span class="sxs-lookup"><span data-stu-id="a479e-117">educationSubmission</span></span>](educationsubmission.md) |<span data-ttu-id="a479e-118">Leia propriedades e relações de um **objeto educationSubmission.**</span><span class="sxs-lookup"><span data-stu-id="a479e-118">Read properties and relationships of an **educationSubmission** object.</span></span>|
+|[<span data-ttu-id="a479e-119">Listar recursos</span><span class="sxs-lookup"><span data-stu-id="a479e-119">List resources</span></span>](../api/educationsubmission-list-resources.md) |<span data-ttu-id="a479e-120">[Coleção educationSubmissionResource](educationsubmissionresource.md)</span><span class="sxs-lookup"><span data-stu-id="a479e-120">[educationSubmissionResource](educationsubmissionresource.md) collection</span></span>| <span data-ttu-id="a479e-121">Obter uma **coleção de objetos educationSubmissionResource.**</span><span class="sxs-lookup"><span data-stu-id="a479e-121">Get an **educationSubmissionResource** object collection.</span></span>|
+|[<span data-ttu-id="a479e-122">Listar submittedResources</span><span class="sxs-lookup"><span data-stu-id="a479e-122">List submittedResources</span></span>](../api/educationsubmission-list-submittedresources.md) |<span data-ttu-id="a479e-123">[Coleção educationSubmissionResource](educationsubmissionresource.md)</span><span class="sxs-lookup"><span data-stu-id="a479e-123">[educationSubmissionResource](educationsubmissionresource.md) collection</span></span>| <span data-ttu-id="a479e-124">Obter uma **coleção de objetos educationSubmissionResource.**</span><span class="sxs-lookup"><span data-stu-id="a479e-124">Get an **educationSubmissionResource** object collection.</span></span>|
+|[<span data-ttu-id="a479e-125">Listar resultados</span><span class="sxs-lookup"><span data-stu-id="a479e-125">List outcomes</span></span>](../api/educationsubmission-list-outcomes.md) |<span data-ttu-id="a479e-126">[Coleção educationOutcome](educationoutcome.md)</span><span class="sxs-lookup"><span data-stu-id="a479e-126">[educationOutcome](educationoutcome.md) collection</span></span>| <span data-ttu-id="a479e-127">Obter uma **coleção de objetos educationOutcome.**</span><span class="sxs-lookup"><span data-stu-id="a479e-127">Get an **educationOutcome** object collection.</span></span>|
+|[<span data-ttu-id="a479e-128">return</span><span class="sxs-lookup"><span data-stu-id="a479e-128">return</span></span>](../api/educationsubmission-return.md)|[<span data-ttu-id="a479e-129">educationSubmission</span><span class="sxs-lookup"><span data-stu-id="a479e-129">educationSubmission</span></span>](educationsubmission.md)|<span data-ttu-id="a479e-130">Um professor usa o retorno para indicar que as notas/comentários podem ser mostradas ao aluno.</span><span class="sxs-lookup"><span data-stu-id="a479e-130">A teacher uses return to indicate that the grades/feedback can be shown to the student.</span></span>|
+|[<span data-ttu-id="a479e-131">Configurar pasta de recursos específicos do envio</span><span class="sxs-lookup"><span data-stu-id="a479e-131">Set up submission specific resources folder</span></span>](../api/educationsubmission-setupResourcesFolder.md) |[<span data-ttu-id="a479e-132">educationSubmission</span><span class="sxs-lookup"><span data-stu-id="a479e-132">educationSubmission</span></span>](educationsubmission.md) | <span data-ttu-id="a479e-133">Crie uma SharePoint (em local pré-definido) para carregar arquivos como recursos de envio.</span><span class="sxs-lookup"><span data-stu-id="a479e-133">Create a SharePoint folder (under pre-defined location) to upload files as submission resources.</span></span> |
+|[<span data-ttu-id="a479e-134">Enviar</span><span class="sxs-lookup"><span data-stu-id="a479e-134">submit</span></span>](../api/educationsubmission-submit.md)|[<span data-ttu-id="a479e-135">educationSubmission</span><span class="sxs-lookup"><span data-stu-id="a479e-135">educationSubmission</span></span>](educationsubmission.md)|<span data-ttu-id="a479e-136">Um aluno usa enviar para entregar a atribuição.</span><span class="sxs-lookup"><span data-stu-id="a479e-136">A student uses submit to turn in the assignment.</span></span> <span data-ttu-id="a479e-137">Isso copiará os recursos para a **pasta submittedResources** para a classificação e atualiza o status.</span><span class="sxs-lookup"><span data-stu-id="a479e-137">This will copy the resources into the **submittedResources** folder for grading and updates the status.</span></span>|
+|[<span data-ttu-id="a479e-138">unsubmit</span><span class="sxs-lookup"><span data-stu-id="a479e-138">unsubmit</span></span>](../api/educationsubmission-unsubmit.md)|[<span data-ttu-id="a479e-139">educationSubmission</span><span class="sxs-lookup"><span data-stu-id="a479e-139">educationSubmission</span></span>](educationsubmission.md)|<span data-ttu-id="a479e-140">Um aluno usa o cancelamento para mover o estado do envio do envio de volta ao trabalho.</span><span class="sxs-lookup"><span data-stu-id="a479e-140">A student uses the unsubmit to move the state of the submission from submitted back to working.</span></span> <span data-ttu-id="a479e-141">Isso copiará os recursos para a **pasta workingResources** para a classificação e atualiza o status.</span><span class="sxs-lookup"><span data-stu-id="a479e-141">This will copy the resources into the **workingResources** folder for grading and updates the status.</span></span>|
+
+## <a name="properties"></a><span data-ttu-id="a479e-142">Propriedades</span><span class="sxs-lookup"><span data-stu-id="a479e-142">Properties</span></span>
+| <span data-ttu-id="a479e-143">Propriedade</span><span class="sxs-lookup"><span data-stu-id="a479e-143">Property</span></span>     | <span data-ttu-id="a479e-144">Tipo</span><span class="sxs-lookup"><span data-stu-id="a479e-144">Type</span></span>   |<span data-ttu-id="a479e-145">Descrição</span><span class="sxs-lookup"><span data-stu-id="a479e-145">Description</span></span>|
+|:---------------|:--------|:----------|
+|<span data-ttu-id="a479e-146">destinatário</span><span class="sxs-lookup"><span data-stu-id="a479e-146">recipient</span></span>|[<span data-ttu-id="a479e-147">educationSubmissionRecipient</span><span class="sxs-lookup"><span data-stu-id="a479e-147">educationSubmissionRecipient</span></span>](educationsubmissionrecipient.md)|<span data-ttu-id="a479e-148">Who esse envio é atribuído.</span><span class="sxs-lookup"><span data-stu-id="a479e-148">Who this submission is assigned to.</span></span>|
+|<span data-ttu-id="a479e-149">returnedBy</span><span class="sxs-lookup"><span data-stu-id="a479e-149">returnedBy</span></span>|[<span data-ttu-id="a479e-150">identitySet</span><span class="sxs-lookup"><span data-stu-id="a479e-150">identitySet</span></span>](identityset.md)|<span data-ttu-id="a479e-151">Usuário que moveu o status desse envio para retornado.</span><span class="sxs-lookup"><span data-stu-id="a479e-151">User who moved the status of this submission to returned.</span></span>|
+|<span data-ttu-id="a479e-152">returnedDateTime</span><span class="sxs-lookup"><span data-stu-id="a479e-152">returnedDateTime</span></span>|<span data-ttu-id="a479e-153">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="a479e-153">DateTimeOffset</span></span>|<span data-ttu-id="a479e-154">Momento no tempo em que o envio foi retornado.</span><span class="sxs-lookup"><span data-stu-id="a479e-154">Moment in time when the submission was returned.</span></span> <span data-ttu-id="a479e-155">O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC.</span><span class="sxs-lookup"><span data-stu-id="a479e-155">The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.</span></span> <span data-ttu-id="a479e-156">Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`</span><span class="sxs-lookup"><span data-stu-id="a479e-156">For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`</span></span>|
+|<span data-ttu-id="a479e-157">resourcesFolderUrl</span><span class="sxs-lookup"><span data-stu-id="a479e-157">resourcesFolderUrl</span></span>|<span data-ttu-id="a479e-158">String</span><span class="sxs-lookup"><span data-stu-id="a479e-158">String</span></span>|<span data-ttu-id="a479e-159">Pasta onde todos os recursos de arquivo para esse envio precisam ser armazenados.</span><span class="sxs-lookup"><span data-stu-id="a479e-159">Folder where all file resources for this submission need to be stored.</span></span>|
+|<span data-ttu-id="a479e-160">status</span><span class="sxs-lookup"><span data-stu-id="a479e-160">status</span></span>|<span data-ttu-id="a479e-161">cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="a479e-161">string</span></span>| <span data-ttu-id="a479e-162">Somente Leitura.</span><span class="sxs-lookup"><span data-stu-id="a479e-162">Read-Only.</span></span> <span data-ttu-id="a479e-163">Os valores possíveis são: `working`, `submitted`, `released`, `returned`.</span><span class="sxs-lookup"><span data-stu-id="a479e-163">Possible values are: `working`, `submitted`, `released`, `returned`.</span></span>|
+|<span data-ttu-id="a479e-164">submittedBy</span><span class="sxs-lookup"><span data-stu-id="a479e-164">submittedBy</span></span>|[<span data-ttu-id="a479e-165">identitySet</span><span class="sxs-lookup"><span data-stu-id="a479e-165">identitySet</span></span>](identityset.md)|<span data-ttu-id="a479e-166">Usuário que moveu o recurso para o estado enviado.</span><span class="sxs-lookup"><span data-stu-id="a479e-166">User who moved the resource into the submitted state.</span></span>|
+|<span data-ttu-id="a479e-167">submittedDateTime</span><span class="sxs-lookup"><span data-stu-id="a479e-167">submittedDateTime</span></span>|<span data-ttu-id="a479e-168">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="a479e-168">DateTimeOffset</span></span>|<span data-ttu-id="a479e-169">Momento no tempo em que o envio foi movido para o estado enviado.</span><span class="sxs-lookup"><span data-stu-id="a479e-169">Moment in time when the submission was moved into the submitted state.</span></span> <span data-ttu-id="a479e-170">O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC.</span><span class="sxs-lookup"><span data-stu-id="a479e-170">The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.</span></span> <span data-ttu-id="a479e-171">Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`</span><span class="sxs-lookup"><span data-stu-id="a479e-171">For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`</span></span>|
+|<span data-ttu-id="a479e-172">unsubmittedBy</span><span class="sxs-lookup"><span data-stu-id="a479e-172">unsubmittedBy</span></span>|[<span data-ttu-id="a479e-173">identitySet</span><span class="sxs-lookup"><span data-stu-id="a479e-173">identitySet</span></span>](identityset.md)|<span data-ttu-id="a479e-174">Usuário que moveu o recurso de enviado para o estado de trabalho.</span><span class="sxs-lookup"><span data-stu-id="a479e-174">User who moved the resource from submitted into the working state.</span></span>|
+|<span data-ttu-id="a479e-175">unsubmittedDateTime</span><span class="sxs-lookup"><span data-stu-id="a479e-175">unsubmittedDateTime</span></span>|<span data-ttu-id="a479e-176">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="a479e-176">DateTimeOffset</span></span>|<span data-ttu-id="a479e-177">Momento no tempo em que o envio foi movido do envio para o estado de trabalho.</span><span class="sxs-lookup"><span data-stu-id="a479e-177">Moment in time when the submission was moved from submitted into the working state.</span></span> <span data-ttu-id="a479e-178">O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC.</span><span class="sxs-lookup"><span data-stu-id="a479e-178">The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.</span></span> <span data-ttu-id="a479e-179">Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`</span><span class="sxs-lookup"><span data-stu-id="a479e-179">For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`</span></span>|
+
+## <a name="relationships"></a><span data-ttu-id="a479e-180">Relações</span><span class="sxs-lookup"><span data-stu-id="a479e-180">Relationships</span></span>
+| <span data-ttu-id="a479e-181">Relação</span><span class="sxs-lookup"><span data-stu-id="a479e-181">Relationship</span></span> | <span data-ttu-id="a479e-182">Tipo</span><span class="sxs-lookup"><span data-stu-id="a479e-182">Type</span></span>   |<span data-ttu-id="a479e-183">Descrição</span><span class="sxs-lookup"><span data-stu-id="a479e-183">Description</span></span>|
+|:---------------|:--------|:----------|
+|<span data-ttu-id="a479e-184">recursos</span><span class="sxs-lookup"><span data-stu-id="a479e-184">resources</span></span>|<span data-ttu-id="a479e-185">[Coleção educationSubmissionResource](educationsubmissionresource.md)</span><span class="sxs-lookup"><span data-stu-id="a479e-185">[educationSubmissionResource](educationsubmissionresource.md) collection</span></span>| <span data-ttu-id="a479e-186">Anulável.</span><span class="sxs-lookup"><span data-stu-id="a479e-186">Nullable.</span></span>|
+|<span data-ttu-id="a479e-187">submittedResources</span><span class="sxs-lookup"><span data-stu-id="a479e-187">submittedResources</span></span>|<span data-ttu-id="a479e-188">[Coleção educationSubmissionResource](educationsubmissionresource.md)</span><span class="sxs-lookup"><span data-stu-id="a479e-188">[educationSubmissionResource](educationsubmissionresource.md) collection</span></span>| <span data-ttu-id="a479e-p108">Somente leitura. Anulável.</span><span class="sxs-lookup"><span data-stu-id="a479e-p108">Read-only. Nullable.</span></span>|
+|<span data-ttu-id="a479e-191">outcomes</span><span class="sxs-lookup"><span data-stu-id="a479e-191">outcomes</span></span>|<span data-ttu-id="a479e-192">[Coleção educationOutcome.](educationOutcome.md)</span><span class="sxs-lookup"><span data-stu-id="a479e-192">[educationOutcome](educationOutcome.md) collection.</span></span> <span data-ttu-id="a479e-193">Contém notas, comentários e/ou informações rubricas que o professor atribui a esse envio</span><span class="sxs-lookup"><span data-stu-id="a479e-193">Holds grades, feedback and/or rubrics information the teacher assigns to this submission</span></span>|<span data-ttu-id="a479e-194">Leitura-Gravação.</span><span class="sxs-lookup"><span data-stu-id="a479e-194">Read-Write.</span></span> <span data-ttu-id="a479e-195">Anulável.</span><span class="sxs-lookup"><span data-stu-id="a479e-195">Nullable.</span></span>|
+
+## <a name="json-representation"></a><span data-ttu-id="a479e-196">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="a479e-196">JSON representation</span></span>
+
+<span data-ttu-id="a479e-197">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="a479e-197">The following is a JSON representation of the resource.</span></span>
+
+<!-- {
+  "blockType": "resource",
+  "keyProperty": "id",
+  "optionalProperties": [
+
+  ],
+  "@odata.type": "microsoft.graph.educationSubmission"
+}-->
+
+```json
+{
+    "id":"String (identifier)",
+    "recipient":{"@odata.type":"microsoft.graph.educationSubmissionRecipient"},
+    "returnedBy":{"@odata.type":"microsoft.graph.identitySet"},
+    "returnedDateTime":"String (timestamp)",
+    "resourcesFolderUrl":"String",
+    "status":"string",
+    "submittedBy":{"@odata.type":"microsoft.graph.identitySet"},
+    "submittedDateTime":"String (timestamp)",
+    "unsubmittedBy":{"@odata.type":"microsoft.graph.identitySet"},
+    "unsubmittedDateTime":"String (timestamp)"
+}
+```
+
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
+2015-10-25 14:57:30 UTC -->
+<!--
+{
+  "type": "#page.annotation",
+  "description": "educationSubmission resource",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": "",
+  "suppressions": []
+}
+-->
+
+
