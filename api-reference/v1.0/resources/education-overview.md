@@ -5,12 +5,12 @@ localization_priority: Priority
 author: mmast-msft
 ms.prod: education
 doc_type: conceptualPageType
-ms.openlocfilehash: 1bfe49d6841142794a5b3a60b0de84eaff4290d4
-ms.sourcegitcommit: 34891a1c601976166958be1aa04bab5936592b44
+ms.openlocfilehash: f0959157ac4f436fe47aa0164cfb4a8fb91b086b
+ms.sourcegitcommit: f77c1385306fd40557aceb24fdfe4832cbb60a27
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52231529"
+ms.lasthandoff: 06/12/2021
+ms.locfileid: "52911297"
 ---
 # <a name="working-with-education-apis-in-microsoft-graph"></a>Como trabalhar com APIs de educação no Microsoft Graph
 
@@ -72,6 +72,35 @@ As APIs de escalação dão suporte aos seguintes cenários:
 - [Obter usuários em uma escola](../api/educationschool-list-users.md)
 
 <!-- Should you list delete scenarios here as well? -->
+
+## <a name="assignments"></a>Atribuições
+
+Você pode usar as APIs de educação relacionadas a atribuições para integrá-las às atribuições do Microsoft Teams. O Microsoft Teams no Microsoft 365 Educacional é baseado nas mesmas APIs educacionais e fornece um caso de uso para o que você pode fazer com as APIs. Seu aplicativo pode usar essas APIs para interagir com as tarefas em todo o ciclo de vida da tarefa. 
+
+As APIs de atribuição fornecem os seguintes recursos-chave:
+
+- [educationAssignment](educationassignment.md) - O objeto principal da API de atribuições. As atribuições são tarefas ou unidades de trabalho atribuídas a um aluno ou membro da equipe em uma classe como parte do estudo.
+- [educationSubmission](educationsubmission.md) - Representa os recursos que um indivíduo (ou grupo) envia para uma tarefa, a nota associada e os comentários para essa tarefa.
+- [educationResource](educationresource.md) - Representa o objeto de aprendizagem que está sendo atribuído ou enviado. Um **educationResource** está associado a um **educationAssignment** e/ou um **educationSubmission**.
+
+As APIs de atribuição suportam os seguintes cenários:
+
+- [Criar tarefa](../api/educationclass-post-assignment.md)
+- [Publicar tarefa](../api/educationassignment-publish.md)
+- [Criar recurso de tarefa](../api/educationassignment-post-resource.md)
+- [Criar recurso de envio](../api/educationsubmission-post-resources.md)
+- [Enviar tarefa](../api/educationsubmission-submit.md)
+- [Cancelar o envio da tarefa](../api/educationsubmission-unsubmit.md)
+- [Devolver notas e comentários ao aluno](../api/educationsubmission-return.md)
+- [Obter os detalhes da tarefa](../api/educationuser-list-assignments.md)
+
+A seguir estão alguns casos de uso comuns para as APIs educacionais relacionadas a atribuições.
+
+| Caso de uso                    | Descrição                                                                                                         | Veja também                                                          |
+| :-------------------------- | :------------------------------------------------------------------------------------------------------------------ | :---------------------------------------------------------------- |
+| Criar tarefas          | Um sistema externo pode criar uma tarefa para a classe e anexar recursos à tarefa.                   | [Criar tarefa](../api/educationassignment-post-resource.md) |
+| Leia as informações da atribuição | Um aplicativo de análise pode obter informações sobre tarefas e envios dos alunos, incluindo datas e notas. | [Obter a tarefa](../api/educationassignment-get.md)               |
+| Acompanhar os envios dos alunos   | Seu aplicativo pode fornecer um painel do professor que mostra quantos envios de alunos precisam ser avaliados.           | [Recurso de submissão](educationsubmission.md)                     |
 
 ## <a name="whats-new"></a>O que há de novo
 
