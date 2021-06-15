@@ -1,22 +1,22 @@
 ---
 title: tipo de recurso de assinatura
-description: 'Uma assinatura que permite a um aplicativo cliente receber notificações sobre alterações de dados no Microsoft Graph. Atualmente, as assinaturas estão habilitadas para as seguintes coleções de recursos:'
+description: 'Uma assinatura que permite a um aplicativo cliente receber notificações sobre alterações de dados no Microsoft Graph. Atualmente, as assinaturas estão habilitadas para os seguintes recursos:'
 localization_priority: Priority
 author: Jumaodhiss
 ms.prod: change-notifications
 doc_type: resourcePageType
-ms.openlocfilehash: 4ceb5a98fd330efa3b5e9b8b62d32598b5972984
-ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
+ms.openlocfilehash: c47c4d7df11599a5983f5610ef3bfd29c80eee5b
+ms.sourcegitcommit: f77c1385306fd40557aceb24fdfe4832cbb60a27
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52547580"
+ms.lasthandoff: 06/12/2021
+ms.locfileid: "52911288"
 ---
 # <a name="subscription-resource-type"></a>tipo de recurso de assinatura
 
 Namespace: microsoft.graph
 
-Uma assinatura que permite a um aplicativo cliente receber notificações sobre alterações de dados no Microsoft Graph. Atualmente, as assinaturas estão habilitadas para as seguintes coleções de recursos:
+Uma assinatura que permite a um aplicativo cliente receber notificações sobre alterações de dados no Microsoft Graph. Atualmente, as assinaturas estão habilitadas para os seguintes recursos:
 
 - Um [alert][] da API de Segurança do Microsoft Graph.
 - Uma [callRecord][] produzida após uma chamada ou uma reunião no Microsoft Teams.
@@ -44,11 +44,11 @@ Consulte [usar o Microsoft Graph API para obter notificações de alteração](w
 
 | Propriedade | Tipo | Descrição | Recursos com Suporte |
 |:---------|:-----|:------------|:--------------|
-| changeType | cadeia de caracteres | Obrigatório. Indica qual é o tipo de alteração no recurso inscrito que irá emitir uma notificação de alteração. Os valores com suporte são: `created`, `updated`, `deleted`. Vários valores podem ser combinados usando uma lista separada por vírgula.<br><br>Observação: As notificações de alteração de lista e item raiz da unidade suportam apenas o `updated` changeType. Suporte para notificações de alteração de usuário e grupo `updated` e `deleted` changeType. | Todos |
-| notificationUrl | cadeia de caracteres | Obrigatório. O URL do ponto de extremidade que receberá as notificações de alteração. Esta URL deve usar o protocolo HTTPS. | Todos |
+| changeType | string | Obrigatório. Indica qual é o tipo de alteração no recurso inscrito que irá emitir uma notificação de alteração. Os valores com suporte são: `created`, `updated`, `deleted`. Vários valores podem ser combinados usando uma lista separada por vírgula.<br><br>Observação: As notificações de alteração de lista e item raiz da unidade suportam apenas o `updated` changeType. Suporte para notificações de alteração de usuário e grupo `updated` e `deleted` changeType. | Todos |
+| notificationUrl | cadeia de caracteres | Obrigatório. O URL do ponto de extremidade que receberá as notificações de alteração. Este URL deve fazer uso do protocolo HTTPS. | Todos |
 | lifecycleNotificationUrl | string | A URL do ponto de extremidade que recebe notificações do ciclo de vida, incluindo notificações de `subscriptionRemoved` e `missed`. Esta URL deve fazer uso do protocolo HTTPS. Opcional. <br><br>[Leia mais](/graph/webhooks-lifecycle) sobre como os recursos do Outlook usam notificações do ciclo de vida. | Todos |
-| recurso | cadeia de caracteres | Obrigatório. Especifica o recurso que será monitorado para detectar alterações. Não incluir a URL base (`https://graph.microsoft.com/v1.0/`). Consulte os possíveis valores do [caminho](webhooks.md) do recurso de cada recurso suportado.| Todos |
-| expirationDateTime | [dateTime](https://tools.ietf.org/html/rfc3339) | Obrigatório. Especifica a data e a hora em que a assinatura do webhook expira. O horário está em UTC e pode ser uma quantidade de tempo desde a criação da assinatura que varia para o recurso assinado.  Confira na tabela abaixo o tempo máximo permitido para a assinatura. | Todos |
+| recurso | string | Obrigatório. Especifica o recurso que será monitorado para detectar alterações. Não incluir a URL base (`https://graph.microsoft.com/v1.0/`). Consulte os possíveis valores do [caminho](webhooks.md) do recurso de cada recurso suportado.| Todos |
+| expirationDateTime | [dateTime](https://tools.ietf.org/html/rfc3339) | Obrigatório. Especifica a data e hora em que a assinatura do webhook expira. O horário está em UTC e pode ser uma quantidade de tempo desde a criação da assinatura que varia de acordo com o recurso assinado. Consulte a tabela abaixo para obter a duração máxima da assinatura com suporte. | Todos |
 | clientState | string | Opcional. Especifica o valor da propriedade `clientState` enviada pelo serviço em cada notificação de alteração. O comprimento máximo é de 128 caracteres. O cliente pode verificar se a notificação de alteração veio do serviço pela comparação do valor da propriedade `clientState` enviada com a assinatura com o valor da propriedade `clientState` recebida contendo cada notificação de alteração. | Todos |
 | id | string | Identificador exclusivo da assinatura. Somente leitura. | Todos |
 | ApplicationId | cadeia de caracteres | Identificador do aplicativo utilizado para criar a assinatura. Somente leitura. | Todos |
@@ -68,8 +68,8 @@ Consulte [usar o Microsoft Graph API para obter notificações de alteração](w
 | Teams **callRecord**    | 4230 minutos (em 3 dias)  |
 | Teams **chatMessage**    | 60 minutos (1 hora)  |
 | **Conversa** em grupo | 4230 minutos (em 3 dias)    |
-| OneDrive **driveItem**    | 4230 minutos (em 3 dias)    |
-| **Lista** do Microsoft Office SharePoint Online    | 4230 minutos (em 3 dias)    |
+| OneDrive **driveItem**    | 42.300 minutos (menos de 30 dias)    |
+| **Lista** do Microsoft Office SharePoint Online    | 42.300 minutos (menos de 30 dias)    |
 | Outlook **mensagem**, **evento**, **contato**              | 4230 minutos (em 3 dias)    |
 | **usuário**, **grupo**, outros recursos de diretório   | 4230 minutos (em 3 dias)    |
 | Imprimir **printer** | 4230 minutos (em 3 dias)    |

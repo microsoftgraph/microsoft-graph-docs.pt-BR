@@ -5,12 +5,12 @@ localization_priority: Priority
 author: lumine2008
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: ec413303365d97a2683997939e20820ed9205f84
-ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
+ms.openlocfilehash: fa7f18c075b7369f7672b25c85c264549a753ec8
+ms.sourcegitcommit: 7abb0672a38a6d9b11a2e0d2cc221222cb8358bb
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "50577825"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52896624"
 ---
 # <a name="workbook-resource-type"></a>tipo de recurso da pasta de trabalho
 
@@ -32,7 +32,7 @@ Nenhum.
 ## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|names|coleção [workbookNamedItem](nameditem.md)|Representa uma coleção de itens denominados de escopo da pasta de trabalho (chamados intervalos e constantes). Somente leitura.|
+|names|coleção [workbookNamedItem](nameditem.md)|Representa uma coleta de itens denominados de escopo de pastas de trabalho (denominados intervalos e constantes). Somente leitura.|
 |tables|coleção [WorkbookTable](table.md)|Representa uma coleção de tabelas associadas à pasta de trabalho. Somente leitura.|
 |worksheets|coleção [WorkbookWorksheet](worksheet.md)|Representa uma coleção de planilhas associadas à pasta de trabalho. Somente leitura.|
 |operações|coleção [workbookOperation](workbookoperation.md)|O status das operações da pasta de trabalho. Não há suporte para a obtenção de uma coleção de operações, mas você pode obter o status de uma operação de longa execução se o cabeçalho `Location` retornar na resposta. Somente leitura.|
@@ -116,10 +116,14 @@ authorization: Bearer {access-token}
 workbook-session-id: {session-id}
 
 {
-"values" :  [
-        { "address": "Sheet2!A1:A5" },
-        { "address": "Sheet2!B1:B5" },
-      ] 
+   "values":[
+      {
+         "address":"Sheet2!A1:A5"
+      },
+      {
+         "address":"Sheet2!B1:B5"
+      }
+   ]
 }
 ```
 

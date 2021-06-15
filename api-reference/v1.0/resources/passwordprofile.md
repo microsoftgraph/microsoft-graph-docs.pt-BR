@@ -3,14 +3,14 @@ title: Tipo de recurso passwordProfile
 description: Contém o perfil de senha associado a um usuário. A propriedade **passwordProfile** da entidade user é um objeto **passwordProfile**.
 localization_priority: Priority
 author: eketo-msft
-ms.prod: ''
+ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: 5f5df66e664bac8dd873166d2f970ac0a0308faa
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 4a61c570974edcfc1431af211e131c24cfec6589
+ms.sourcegitcommit: f77c1385306fd40557aceb24fdfe4832cbb60a27
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47967321"
+ms.lasthandoff: 06/12/2021
+ms.locfileid: "52911645"
 ---
 # <a name="passwordprofile-resource-type"></a>Tipo de recurso passwordProfile
 
@@ -22,8 +22,8 @@ Contém o perfil de senha associado a um usuário. A propriedade **passwordProfi
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|forceChangePasswordNextSignIn|Booliano| **true** se o usuário precisa alterar sua senha no próximo login; caso contrário, **false**. |
-|forceChangePasswordNextSignInWithMfa|Booliano| Se for **true**, na próxima conexão, o usuário deverá executar uma Autenticação Multifator (MFA) antes de ser forçado a alterar sua senha. O comportamento é idêntico a **forceChangePasswordNextSignIn**, exceto pelo fato de que o usuário deve primeiro executar uma autenticação multifator antes da alteração da senha. Após uma alteração de senha, esta propriedade será automaticamente redefinida para **false**. Caso não seja definida, o padrão é **false**. |
+|forceChangePasswordNextSignIn|Booliano| `true` se o usuário precisar alterar sua senha no próximo logon; caso contrário, `false`. |
+|forceChangePasswordNextSignInWithMfa|Booliano| Se `true`, na próxima conexão, o usuário deverá executar uma autenticação multifator (MFA) antes de ser forçado a alterar sua senha. O comportamento é idêntico a **forceChangePasswordNextSignIn**, exceto pelo fato de que o usuário deve primeiro executar uma autenticação multifator antes da alteração da senha. Após a alteração da senha, esta propriedade será redefinida automaticamente para `false`. Se não estiver definido, o padrão será `false`. |
 |password|String|A senha do usuário. Essa propriedade é necessária ao criar um usuário. Pode ser atualizada, mas o usuário precisará alterar a senha no próximo login. A senha deve atender a requisitos mínimos, conforme especificado pelo a propriedade **passwordPolicies** do usuário. Por padrão, é necessária uma senha forte.|
 
 ## <a name="json-representation"></a>Representação JSON

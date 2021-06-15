@@ -6,12 +6,12 @@ localization_priority: Priority
 ms.prod: sharepoint
 description: Esse método permite que o seu aplicativo controle alterações em uma unidade e seus filhos com o passar do tempo.
 doc_type: apiPageType
-ms.openlocfilehash: f247e643d29e0e7e4b601cbf284a94310c49b5d7
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: bcf638e5217768012a7e361ebed3cd760ac079c0
+ms.sourcegitcommit: f77c1385306fd40557aceb24fdfe4832cbb60a27
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50240350"
+ms.lasthandoff: 06/12/2021
+ms.locfileid: "52911309"
 ---
 # <a name="track-changes-for-a-drive"></a>Controlar alterações para uma unidade
 
@@ -68,7 +68,7 @@ Além da coleção de DriveItems, a resposta também incluirá uma das seguintes
 | Nome                 | Valor  | Descrição                                                                                                                                      |
 |:---------------------|:-------|:-------------------------------------------------------------------------------------------------------------------------------------------------|
 | **\@odata.nextLink**  | url    | Uma URL para recuperar a próxima página disponível de alterações, se houver alterações adicionais no conjunto atual.                                        |
-| **\@odata.deltaLink** | url    | Uma URL retornada em vez de **\@odata.nextLink** após o retorno de todas as alterações atuais. Usada para ler o próximo conjunto de alterações no futuro.  |
+| **\@odata.deltaLink** | url    | Um URL retornado em no lugar de **\@odata.nextLink** após todas as alterações atuais terem sido retornadas. Usado para ler o próximo conjunto de alterações no futuro.  |
 
 ## <a name="example-initial-request"></a>Exemplo (solicitação inicial)
 
@@ -136,8 +136,7 @@ Content-type: application/json
 }
 ```
 
-Essa resposta inclui a primeira página de alterações e a propriedade **\@odata.nextLink** indica que há mais itens disponíveis no conjunto atual de itens.
-Seu aplicativo deve continuar solicitando o valor da URL **\@odata.nextLink** até que todas as páginas de itens tenham sido recuperadas.
+Essa resposta inclui a primeira página de alterações e a propriedade **\@odata.nextLink** indica que há mais itens disponíveis no conjunto atual de itens. Seu aplicativo deve continuar a solicitar o valor de URL de **\@odata.nextLink** até que todas as páginas de itens tenham sido recuperadas.
 
 ## <a name="example-last-page-in-a-set"></a>Exemplo (última página de um conjunto)
 
@@ -216,8 +215,7 @@ Pode haver casos em que o serviço não pode fornecer uma lista de alterações 
 
 Em alguns cenários, pode ser útil solicitar o valor do deltaLink atual sem primeiro enumerar todos os itens que já estão na unidade.
 
-Isso poderá ser útil se o seu aplicativo quiser saber apenas sobre as alterações, e não quiser saber sobre os itens existentes.
-Para recuperar o deltaLink mais recente, chame `delta` com um parâmetro de cadeia de caracteres de consulta `?token=latest`.
+Isso poderá ser útil se o seu aplicativo quiser apenas saber sobre as alterações e não quiser saber sobre os itens existentes. Para recuperar o deltaLink mais recente, chame `delta` com um parâmetro de cadeia de caracteres de consulta `?token=latest`.
 
 **Observação: Se você estiver tentando manter uma representação local completa dos itens em uma pasta ou unidade, use `delta` para a enumeração inicial. Outros métodos, como fazer a paginação por meio da coleção `children` de uma pasta, não garantirá o retorno de todos os itens se ocorrerem gravações durante a enumeração. O uso de `delta` é a única maneira de garantir a leitura de todos os dados necessários.**
 
@@ -268,8 +266,6 @@ Content-type: application/json
 * O feed delta mostra o estado mais recente de cada item, e não cada alteração. Se um item tiver sido renomeado duas vezes, ele só aparecerá uma vez, com seu nome mais recente.
 * O mesmo item pode aparecer mais de uma vez em um feed delta, por vários motivos. Você deve usar a última ocorrência que visualizar.
 * A propriedade `parentReference` em itens não incluirá um valor para **path**. Isso ocorre porque a renomeação de uma pasta não faz com que os descendentes dessa pasta sejam retornados de **delta**. **Ao usar delta, você sempre deve controlar itens por id**.
-* No OneDrive for Business e no SharePoint, `delta` tem suporte apenas na pasta `root`, e não em outras pastas dentro de uma unidade.
-
 * A consulta delta não retornará algumas propriedades DriveItem, dependendo da operação e do tipo de serviço, conforme mostrado nas tabelas a seguir.
 
     **OneDrive for Business**
