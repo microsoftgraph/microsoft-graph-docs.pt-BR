@@ -10,11 +10,11 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 06/15/2021
 ms.locfileid: "52941540"
 ---
-# <a name="customize-the-microsoft-graph-sdk-service-client"></a><span data-ttu-id="9ad9c-103">Personalizar o cliente de serviço do Microsoft Graph SDK</span><span class="sxs-lookup"><span data-stu-id="9ad9c-103">Customize the Microsoft Graph SDK service client</span></span>
+# <a name="customize-the-microsoft-graph-sdk-service-client"></a><span data-ttu-id="7b8ce-103">Personalizar o cliente de serviço do Microsoft Graph SDK</span><span class="sxs-lookup"><span data-stu-id="7b8ce-103">Customize the Microsoft Graph SDK service client</span></span>
 
-<span data-ttu-id="9ad9c-104">O cliente Graph SDK da Microsoft configura um conjunto padrão de middleware que permite que o SDK se comunique com os pontos de extremidade Graph Microsoft.</span><span class="sxs-lookup"><span data-stu-id="9ad9c-104">The Microsoft Graph SDK client configures a default set of middleware that allows the SDK to communicate with the Microsoft Graph endpoints.</span></span> <span data-ttu-id="9ad9c-105">Esse conjunto padrão é personalizável, permitindo que você altere o comportamento do cliente.</span><span class="sxs-lookup"><span data-stu-id="9ad9c-105">This default set is customizable, allowing you to change the behavior of the client.</span></span> <span data-ttu-id="9ad9c-106">Por exemplo, você pode inserir o registro em log personalizado ou adicionar um manipulador de teste para simular cenários específicos.</span><span class="sxs-lookup"><span data-stu-id="9ad9c-106">For example, you can insert customized logging, or add a test handler to simulate specific scenarios.</span></span> <span data-ttu-id="9ad9c-107">Você pode adicionar e remover componentes de middleware.</span><span class="sxs-lookup"><span data-stu-id="9ad9c-107">You can add and remove middleware components.</span></span> <span data-ttu-id="9ad9c-108">É importante observar que a ordem na qual os componentes de middleware são executados é significativa.</span><span class="sxs-lookup"><span data-stu-id="9ad9c-108">It is important to note that the order in which middleware components run is significant.</span></span>
+<span data-ttu-id="7b8ce-104">O cliente Graph SDK da Microsoft configura um conjunto padrão de middleware que permite que o SDK se comunique com os pontos de extremidade Graph Microsoft.</span><span class="sxs-lookup"><span data-stu-id="7b8ce-104">The Microsoft Graph SDK client configures a default set of middleware that allows the SDK to communicate with the Microsoft Graph endpoints.</span></span> <span data-ttu-id="7b8ce-105">Esse conjunto padrão é personalizável, permitindo que você altere o comportamento do cliente.</span><span class="sxs-lookup"><span data-stu-id="7b8ce-105">This default set is customizable, allowing you to change the behavior of the client.</span></span> <span data-ttu-id="7b8ce-106">Por exemplo, você pode inserir o registro em log personalizado ou adicionar um manipulador de teste para simular cenários específicos.</span><span class="sxs-lookup"><span data-stu-id="7b8ce-106">For example, you can insert customized logging, or add a test handler to simulate specific scenarios.</span></span> <span data-ttu-id="7b8ce-107">Você pode adicionar e remover componentes de middleware.</span><span class="sxs-lookup"><span data-stu-id="7b8ce-107">You can add and remove middleware components.</span></span> <span data-ttu-id="7b8ce-108">É importante observar que a ordem na qual os componentes de middleware são executados é significativa.</span><span class="sxs-lookup"><span data-stu-id="7b8ce-108">It is important to note that the order in which middleware components run is significant.</span></span>
 
-## <a name="c"></a>[<span data-ttu-id="9ad9c-109">C#</span><span class="sxs-lookup"><span data-stu-id="9ad9c-109">C#</span></span>](#tab/csharp)
+## <a name="c"></a>[<span data-ttu-id="7b8ce-109">C#</span><span class="sxs-lookup"><span data-stu-id="7b8ce-109">C#</span></span>](#tab/csharp)
 
 ```csharp
 var handlers = GraphClientFactory.CreateDefaultHandlers(authProvider);
@@ -38,7 +38,7 @@ var messages = await customGraphClient.Me.Messages.Request()
     .GetAsync();
 ```
 
-## <a name="typescript"></a>[<span data-ttu-id="9ad9c-110">TypeScript</span><span class="sxs-lookup"><span data-stu-id="9ad9c-110">TypeScript</span></span>](#tab/typeScript)
+## <a name="typescript"></a>[<span data-ttu-id="7b8ce-110">TypeScript</span><span class="sxs-lookup"><span data-stu-id="7b8ce-110">TypeScript</span></span>](#tab/typeScript)
 
 ```typescript
 // Create a custom auth provider
@@ -69,7 +69,7 @@ let response: PageCollection = await client
   .get();
 ```
 
-### <a name="simpleauthproviderts"></a><span data-ttu-id="9ad9c-111">SimpleAuthProvider.ts</span><span class="sxs-lookup"><span data-stu-id="9ad9c-111">SimpleAuthProvider.ts</span></span>
+### <a name="simpleauthproviderts"></a><span data-ttu-id="7b8ce-111">SimpleAuthProvider.ts</span><span class="sxs-lookup"><span data-stu-id="7b8ce-111">SimpleAuthProvider.ts</span></span>
 
 ```typescript
 import { AuthenticationProvider } from "@microsoft/microsoft-graph-client";
@@ -87,7 +87,7 @@ export default class SimpleAuthProvider implements AuthenticationProvider {
 }
 ```
 
-### <a name="customlogginghandlerts"></a><span data-ttu-id="9ad9c-112">CustomLoggingHandler.ts</span><span class="sxs-lookup"><span data-stu-id="9ad9c-112">CustomLoggingHandler.ts</span></span>
+### <a name="customlogginghandlerts"></a><span data-ttu-id="7b8ce-112">CustomLoggingHandler.ts</span><span class="sxs-lookup"><span data-stu-id="7b8ce-112">CustomLoggingHandler.ts</span></span>
 
 ```typescript
 import { Context, Middleware } from "@microsoft/microsoft-graph-client";
@@ -105,7 +105,7 @@ export default class CustomLoggingHandler implements Middleware {
 }
 ```
 
-## <a name="java"></a>[<span data-ttu-id="9ad9c-113">Java</span><span class="sxs-lookup"><span data-stu-id="9ad9c-113">Java</span></span>](#tab/java)
+## <a name="java"></a>[<span data-ttu-id="7b8ce-113">Java</span><span class="sxs-lookup"><span data-stu-id="7b8ce-113">Java</span></span>](#tab/java)
 
 ```java
 // you can configure any OkHttpClient option and add interceptors
@@ -124,12 +124,12 @@ final GraphServiceClient graphServiceClient = GraphServiceClient
 
 ---
 
-## <a name="configuring-the-http-proxy-for-the-client"></a><span data-ttu-id="9ad9c-114">Configurando o proxy HTTP para o cliente</span><span class="sxs-lookup"><span data-stu-id="9ad9c-114">Configuring the HTTP proxy for the client</span></span>
+## <a name="configuring-the-http-proxy-for-the-client"></a><span data-ttu-id="7b8ce-114">Configurando o proxy HTTP para o cliente</span><span class="sxs-lookup"><span data-stu-id="7b8ce-114">Configuring the HTTP proxy for the client</span></span>
 
-<span data-ttu-id="9ad9c-115">Alguns ambientes exigem que os aplicativos cliente usem um proxy HTTP antes que eles possam acessar a Internet pública.</span><span class="sxs-lookup"><span data-stu-id="9ad9c-115">Some environments require client applications to use a HTTP proxy before they can access the public internet.</span></span> <span data-ttu-id="9ad9c-116">Esta seção mostra como configurar o proxy para os SDKs Graph Microsoft.</span><span class="sxs-lookup"><span data-stu-id="9ad9c-116">This section shows how to configure the proxy for the Microsoft Graph SDKs.</span></span>
+<span data-ttu-id="7b8ce-115">Alguns ambientes exigem que os aplicativos cliente usem um proxy HTTP antes que eles possam acessar a Internet pública.</span><span class="sxs-lookup"><span data-stu-id="7b8ce-115">Some environments require client applications to use a HTTP proxy before they can access the public internet.</span></span> <span data-ttu-id="7b8ce-116">Esta seção mostra como configurar o proxy para os SDKs Graph Microsoft.</span><span class="sxs-lookup"><span data-stu-id="7b8ce-116">This section shows how to configure the proxy for the Microsoft Graph SDKs.</span></span>
 
 <!-- markdownlint-disable MD024 -->
-## <a name="c"></a>[<span data-ttu-id="9ad9c-117">C#</span><span class="sxs-lookup"><span data-stu-id="9ad9c-117">C#</span></span>](#tab/csharp)
+## <a name="c"></a>[<span data-ttu-id="7b8ce-117">C#</span><span class="sxs-lookup"><span data-stu-id="7b8ce-117">C#</span></span>](#tab/csharp)
 
 ```csharp
 // URI to proxy
@@ -176,7 +176,7 @@ GraphServiceClient graphClient = new(authHandler, httpProvider);
 */
 ```
 
-## <a name="typescript"></a>[<span data-ttu-id="9ad9c-118">TypeScript</span><span class="sxs-lookup"><span data-stu-id="9ad9c-118">TypeScript</span></span>](#tab/typeScript)
+## <a name="typescript"></a>[<span data-ttu-id="7b8ce-118">TypeScript</span><span class="sxs-lookup"><span data-stu-id="7b8ce-118">TypeScript</span></span>](#tab/typeScript)
 
 ```typescript
 // Create a credential from @azure/identity package
@@ -211,7 +211,7 @@ const client = MicrosoftGraph.Client.initWithMiddleware({
 });
 ```
 
-## <a name="java"></a>[<span data-ttu-id="9ad9c-119">Java</span><span class="sxs-lookup"><span data-stu-id="9ad9c-119">Java</span></span>](#tab/java)
+## <a name="java"></a>[<span data-ttu-id="7b8ce-119">Java</span><span class="sxs-lookup"><span data-stu-id="7b8ce-119">Java</span></span>](#tab/java)
 
 ```Java
 final int proxyPort = 8080;
@@ -266,6 +266,6 @@ final GraphServiceClient graphServiceClient =
 ```
 
 > [!NOTE]
-> <span data-ttu-id="9ad9c-120">Para obter mais informações sobre a configuração de proxy de Identidade do Azure, consulte [ProxyOptions](/java/api/com.azure.core.http.proxyoptions.proxyoptions).</span><span class="sxs-lookup"><span data-stu-id="9ad9c-120">For more information about Azure Identity proxy configuration, see [ProxyOptions](/java/api/com.azure.core.http.proxyoptions.proxyoptions).</span></span>
+> <span data-ttu-id="7b8ce-120">Para obter mais informações sobre a configuração de proxy de Identidade do Azure, consulte [ProxyOptions](/java/api/com.azure.core.http.proxyoptions.proxyoptions).</span><span class="sxs-lookup"><span data-stu-id="7b8ce-120">For more information about Azure Identity proxy configuration, see [ProxyOptions](/java/api/com.azure.core.http.proxyoptions.proxyoptions).</span></span>
 
 ---
