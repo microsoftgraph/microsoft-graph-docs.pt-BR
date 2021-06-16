@@ -5,18 +5,18 @@ author: davidmu1
 ms.prod: non-product-specific
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: fda7792cab92391aba441ec62004ffb604f3ac3c
-ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
+ms.openlocfilehash: 769e3f9fcb5c14731db311f049afbc7a9982c0d6
+ms.sourcegitcommit: e4461c7eb8c3d265fc1aa766125e81b58c6e1099
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51469441"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "52941449"
 ---
 # <a name="set-up-notifications-for-changes-in-user-data"></a>Configurar notificações para alterações nos dados de usuário
 
 A API do Microsoft Graph usa um mecanismo de webhook para fornecer notificações de alteração aos clientes. Um cliente é um serviço Web que configura sua própria URL para receber notificações. Aplicativos cliente usam notificações de alteração para atualizar seu estado após alterações.
 
-Depois que o Microsoft Graph aceita a solicitação de assinatura, ele envia notificações de alteração por push para a URL especificada na assinatura. O aplicativo então realiza ações de acordo com sua lógica comercial. Por exemplo, ele busca mais dados, atualiza o cache e as exibições, etc.
+Depois que o Microsoft Graph aceita a solicitação de assinatura, ele envia notificações de alteração por push para a URL especificada na assinatura. O aplicativo então realiza ações de acordo com sua lógica comercial. Por exemplo, ele busca mais dados, atualiza o cache e as exibições, e assim por diante.
 
 
 > [!VIDEO https://www.youtube-nocookie.com/embed/rC1bunenaq4]
@@ -44,8 +44,11 @@ Usando a API do Microsoft Graph, um aplicativo pode se inscrever para alteraçõ
 - [Alerta][] de segurança
 - [Lista][] do Microsoft Office SharePoint Online
 - Teams [callRecord][]
-- Teams [chatMessage][]
+- [Canal][] do Teams
+- [chatMessage][] do Teams
+- [conversationMember][] do Teams
 - [presence][] do Teams (visualização)
+- Equipe do [Teams][]
 - [todoTask][] (pré-visualização)
 - [usuário][]
 
@@ -291,9 +294,11 @@ A tabela a seguir lista a latência esperada entre um evento acontecendo no serv
 |:-----|:-----|:-----|
 |[alerta][] | Menos de 3 minutos | 5 minutos |
 |[callRecord][] | Menos de 15 minutos | 60 minutos |
+|[canal][] | Menos de 10 segundos | 60 minutos |
 |[chatMessage][] | Menos de 10 segundos | 1 minuto |
 |[contato][] | Desconhecido | Desconhecido |
 |[conversa][] | Desconhecido | Desconhecido |
+|[conversationMember][] | Menos de 10 segundos | 60 minutos |
 |[driveItem][] | Menos de 1 minuto | 5 minutos |
 |[evento][] | Desconhecido | Desconhecido |
 |[grupo][] | Menos de 2 minutos | 15 minutos |
@@ -302,6 +307,7 @@ A tabela a seguir lista a latência esperada entre um evento acontecendo no serv
 |[presença][] (pré-visualização) | Menos de 10 segundos | 1 minuto |
 |[impressora][] | Menos de 1 minuto | 5 minutos |
 |[printTaskDefinition][] | Menos de 1 minuto | 5 minutos |
+|[equipe][] | Menos de 10 segundos | 60 minutos |
 |[todoTask][] | Menos de 2 minutos | 15 minutos |
 |[usuário][] | Menos de 2 minutos | 15 minutos |
 
@@ -332,3 +338,6 @@ A tabela a seguir lista a latência esperada entre um evento acontecendo no serv
 [impressora]: /graph/api/resources/printer
 [printTaskDefinition]: /graph/api/resources/printtaskdefinition
 [todoTask]: /graph/api/resources/todotask
+[canal]: /graph/api/resources/channel
+[conversationMember]: /graph/api/resources/conversationmember
+[equipe]: /graph/api/resources/team

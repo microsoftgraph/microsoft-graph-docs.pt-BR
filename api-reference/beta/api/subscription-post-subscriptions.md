@@ -5,12 +5,12 @@ localization_priority: Normal
 author: Jumaodhiss
 doc_type: apiPageType
 ms.prod: change-notifications
-ms.openlocfilehash: b471d13836faa74ba6f77ab395e9a8ad3c87e4ad
-ms.sourcegitcommit: f77c1385306fd40557aceb24fdfe4832cbb60a27
+ms.openlocfilehash: f87f448e4a1dfc2544eb229e16bb674ba3627e26
+ms.sourcegitcommit: e4461c7eb8c3d265fc1aa766125e81b58c6e1099
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/12/2021
-ms.locfileid: "52911862"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "52941498"
 ---
 # <a name="create-subscription"></a>Criar assinatura
 
@@ -31,11 +31,14 @@ Dependendo do recurso e do tipo de permissão (delegado ou aplicativo) solicitad
 | Recurso com suporte | Delegada (conta corporativa ou de estudante) | Delegada (conta pessoal da Microsoft) | Application |
 |:-----|:-----|:-----|:-----|
 |[callRecord](../resources/callrecords-callrecord.md) (/communications/callRecords) | Incompatível | Incompatível | CallRecords.Read.All  |
+|[canais](../resources/channel.md) (/teams/getAllChannels – todos os canais em uma organização) | Sem suporte  | Sem suporte | Channel.ReadBasic.All, ChannelSettings.Read.All |
+|[canais](../resources/channel.md) (/teams/{id}/channels) | Channel.ReadBasic.All, ChannelSettings.Read.All  | Sem suporte | Channel.ReadBasic.All, ChannelSettings.Read.All  |
 |[chatMessage](../resources/chatmessage.md) (/teams/{id}/channels/{id}/messages) | ChannelMessage.Read.All, Group.Read.All, Group.ReadWrite.All | Sem suporte | ChannelMessage.Read.Group*, ChannelMessage.Read.All  |
 |[chatMessage](../resources/chatmessage.md) (/teams/getAllMessages -- todas as mensagens de canal na organização) | Sem suporte | Sem suporte | ChannelMessage.Read.All  |
 |[chatMessage](../resources/chatmessage.md) (/chats/{id}/messages) | Chat.Read, Chat.ReadWrite | Sem suporte | Chat.Read.All  |
 |[chatMessage](../resources/chatmessage.md) (/teams/getAllMessages -- todas as mensagens de chat na organização) | Sem suporte | Sem suporte | Chat.Read.All  |
 |[contato](../resources/contact.md) | Contacts.Read | Contacts.Read | Contacts.Read |
+|[conversationMember](../resources/conversationmember.md) (/teams/{id}/members) | TeamMember.Read.All | Sem suporte | TeamMember.Read.All |
 |[driveItem](../resources/driveitem.md) (OneDrive pessoal de um usuário) | Sem suporte | Files.ReadWrite | Sem suporte |
 |[driveItem](../resources/driveitem.md) (OneDrive for Business) | Files.ReadWrite.All | Sem suporte | Files.ReadWrite.All |
 |[evento](../resources/event.md) | Calendars.Read | Calendars.Read | Calendars.Read |
@@ -47,6 +50,8 @@ Dependendo do recurso e do tipo de permissão (delegado ou aplicativo) solicitad
 |[printer](../resources/printer.md) | Sem suporte | Sem suporte | Printer.Read.All, Printer.ReadWrite.All |
 |[printTaskDefinition](../resources/printtaskdefinition.md) | Sem suporte | Sem suporte | PrintTaskDefinition.ReadWrite.All |
 |[alerta de segurança](../resources/alert.md) | SecurityEvents.ReadWrite.All | Sem suporte | SecurityEvents.ReadWrite.All |
+|[teams](../resources/team.md) (/teams – todas as equipes em uma organização) | Sem suporte | Sem suporte | Team.ReadBasic.All, TeamSettings.Read.All |
+|[teams](../resources/team.md) (/teams/{id}) | Team.ReadBasic.All, TeamSettings.Read.All | Sem suporte | Team.ReadBasic.All, TeamSettings.Read.All |
 |[todoTask](../resources/todotask.md) | Tasks.ReadWrite | Tasks.ReadWrite | Sem suporte |
 |[Usuário](../resources/user.md) | User.Read.All | User.Read.All | User.Read.All |
 
@@ -60,7 +65,7 @@ As limitações adicionais se aplicam aos itens do OneDrive. As limitações se 
 
 No OneDrive pessoal, você pode se inscrever em qualquer pasta raiz ou qualquer subpasta da unidade. No OneDrive for Business, você pode assinar somente a pasta raiz. As notificações de alteração são enviadas para os tipos de alterações solicitados na pasta assinada ou em qualquer arquivo, pasta ou outras instâncias **driveItem** em sua hierarquia. Você não pode inscrever as instâncias **unidade** ou **driveItem** que não sejam pastas, como arquivos individuais.
 
-OneDrive for Business e SharePoint suporte ao envio de notificações do aplicativo de eventos de segurança que ocorrem em **um driveItem**. Para assinar esses eventos, adicione o `prefer:includesecuritywebhooks` header à sua solicitação para criar uma assinatura. Depois que a assinatura for criada, você receberá notificações quando as permissões em um item mudarem. Esse header é aplicável a SharePoint e OneDrive for Business, mas não a contas OneDrive clientes.
+OneDrive for Business e Microsoft Office SharePoint Online suportam o envio de notificações de aplicações de eventos de segurança que ocorrem em um **driveItem**. Para se inscrever nestes eventos, adicionar o cabeçalho `prefer:includesecuritywebhooks` a sua solicitação para criar uma assinatura. Após a criação da assinatura, você receberá notificações quando as permissões sobre uma mudança de item forem alteradas. Este cabeçalho é aplicável às contas Microsoft Office SharePoint Online e OneDrive for Business, mas não às contas OneDrive de consumo.
 
 ### <a name="contact-event-and-message"></a>contato, evento e mensagem
 
@@ -152,8 +157,10 @@ Os valores a seguir são válidos para a propriedade resource.
 | Tipo de recurso | Exemplos |
 |:------ |:----- |
 |[Registros de chamadas](../resources/callrecords-callrecord.md)|`communications/callRecords`|
+|[Canais](../resources/channel.md)|`/teams/getAllChannels`, `/teams/{id}/channels`|
 |[Mensagem de chat](../resources/chatmessage.md) | `chats/{id}/messages`, `chats/getAllMessages`, `teams/{id}/channels/{id}/messages`, `teams/getAllMessages` |
 |[Contatos](../resources/contact.md)|`me/contacts`|
+|[ConversationMember](../resources/conversationmember.md)|`/teams/{id}/members`|
 |[Conversas](../resources/conversation.md)|`groups('{id}')/conversations`|
 |[Unidades](../resources/driveitem.md)|`me/drive/root`|
 |[Eventos](../resources/event.md)|`me/events`|
@@ -163,6 +170,7 @@ Os valores a seguir são válidos para a propriedade resource.
 |[Presença](../resources/presence.md)| `/communications/presences/{id}` (usuário único), `/communications/presences?$filter=id in ({id},{id}…)` (vários usuários)|
 |[impressora](../resources/printer.md) |`print/printers/{id}/jobs`|
 |[printTaskDefinition](../resources/printtaskdefinition.md)|`print/taskDefinitions/{id}/tasks`|
+|[Teams](../resources/team.md)|`/teams`, `/teams/{id}`|
 |[Usuários](../resources/user.md)|`users`|
 |[todoTask](../resources/todotask.md) | `/me/todo/lists/{todoTaskListId}/tasks`
 |[Alerta de segurança](../resources/alert.md)|`security/alerts?$filter=status eq 'NewAlert'`|

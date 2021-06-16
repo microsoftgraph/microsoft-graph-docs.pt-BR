@@ -6,12 +6,12 @@ title: ListItem
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 226213d1361c78f592f92ddfe9b6f52c4f3defd0
-ms.sourcegitcommit: 0d4377b0153bc339ab7b3b1a6ee4d52848b622d4
+ms.openlocfilehash: ad1e278f31bbeb0bc079f1ad2a6345d9b260cdec
+ms.sourcegitcommit: e4461c7eb8c3d265fc1aa766125e81b58c6e1099
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "49714290"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "52941463"
 ---
 # <a name="listitem-resource"></a>Recurso ListItem
 
@@ -19,9 +19,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Representa um item em uma [lista][] do Sharepoint.
+Representa um item em uma [lista][] do Microsoft Office SharePoint Online.
 
-Todos os itens em uma biblioteca de documentos do SharePoint podem ser representados como um recurso **ListItem** ou [driveItem][] .
+Todos os itens em uma biblioteca de documentos do Microsoft Office SharePoint Online podem ser representados como um **listItem** ou um r [ecurso driveItem][].
 
 Os valores de coluna na lista estão disponíveis por meio do dicionário `fieldValueSet`.
 
@@ -34,19 +34,21 @@ Todos os exemplos a seguir referem-se a uma **[list][]**, por exemplo: `https://
 |:-------------------------------|:------------------------
 | [Get][]                        | GET /items/{item-id}
 | [Obter valores de coluna][Get]       | GET /items/{item-id}?expand=fields
-| [Obter análises][]              | OBTER/Items/{Item-ID}/Analytics
-| [Obter atividades por intervalo][] | OBTER/items/{item-id}/getActivitiesByInterval
+| [Obter análises][]              | GET /items/{item-id}/analytics
+| [Obter atividades por intervalo][] | GET /items/{item-id}/getActivitiesByInterval
 | [Create][]                     | POST /items
 | [Delete][]                     | DELETE /items/{item-id}
 | [Update][]                     | PATCH /items/{item-id}
 | [Atualizar valores de coluna][Update] | PATCH /items/{item-id}/fields
+| [createLink][CreateLink]       | POST /items/{itemId}/createLink
 
-[Get]: ../api/listitem-get.md
+[Obter]: ../api/listitem-get.md
 [Obter análises]: ../api/itemanalytics-get.md
 [Obter atividades por intervalo]: ../api/itemactivity-getbyinterval.md
 [Create]: ../api/listitem-create.md
 [Delete]: ../api/listitem-delete.md
 [Update]: ../api/listitem-update.md
+[CreateLink]: ../api/listitem-createlink.md
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -56,7 +58,7 @@ Veja a seguir uma representação JSON de um recurso **listItem**.
   "blockType": "resource",
   "keyProperty": "id",
   "baseType": "microsoft.graph.baseItem",
-  "@odata.type": "microsoft.graph.listItem"
+  "@odata.type&quot;: &quot;microsoft.graph.listItem"
 }-->
 
 ```json
@@ -81,7 +83,7 @@ Veja a seguir uma representação JSON de um recurso **listItem**.
   "lastModifiedBy": { "@odata.type": "microsoft.graph.identitySet" },
   "lastModifiedDateTime": "timestamp",
   "parentReference": { "@odata.type": "microsoft.graph.itemReference"},
-  "webUrl": "url"
+  "webUrl&quot;: &quot;url"
 }
 ```
 
@@ -141,7 +143,7 @@ As propriedades a seguir são herdadas do **[baseItem][]**.
   "section": "documentation",
   "tocPath": "Resources/ListItem",
   "tocBookmarks": {
-    "ListItem": "#"
+    "ListItem&quot;: &quot;#"
   },
   "suppressions": []
 }

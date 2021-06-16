@@ -1,16 +1,16 @@
 ---
 title: tipo de recurso de assinatura
-description: 'Uma assinatura que permite a um aplicativo cliente receber notificações sobre alterações de dados no Microsoft Graph. Atualmente, as assinaturas estão habilitadas para as seguintes coleções de recursos:'
+description: 'Uma assinatura que permite a um aplicativo cliente receber notificações sobre alterações de dados no Microsoft Graph. Atualmente, as assinaturas estão habilitadas para os seguintes recursos:'
 localization_priority: Normal
 author: Jumaodhiss
 doc_type: resourcePageType
 ms.prod: change-notifications
-ms.openlocfilehash: 357a4b02bfb60f8960368be2951155b607333831
-ms.sourcegitcommit: f77c1385306fd40557aceb24fdfe4832cbb60a27
+ms.openlocfilehash: b71be9d9f69c3ee533ac4d1fc9da208840499a12
+ms.sourcegitcommit: e4461c7eb8c3d265fc1aa766125e81b58c6e1099
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/12/2021
-ms.locfileid: "52911295"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "52941253"
 ---
 # <a name="subscription-resource-type"></a>tipo de recurso de assinatura
 
@@ -18,16 +18,19 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Uma assinatura que permite a um aplicativo cliente receber notificações sobre alterações de dados no Microsoft Graph. Atualmente, as assinaturas estão habilitadas para as seguintes coleções de recursos:
+Uma assinatura que permite a um aplicativo cliente receber notificações sobre alterações de dados no Microsoft Graph. Atualmente, as assinaturas estão habilitadas para os seguintes recursos:
 
 - Um [alert][] da API de Segurança do Microsoft Graph.
 - Uma [callRecord][] produzida após uma chamada ou uma reunião no Microsoft Teams.
+- Um [canal](./channel.md) em Microsoft Teams.
 - Um [chatMessage][] enviado por meio de equipes ou canais no Microsoft Teams.
 - Uma [conversation][] em um grupo do Microsoft 365.
+- Um [conversationMember](./conversationmember.md) em um Microsoft 365 grupo.
 - Conteúdo da hierarquia de uma pasta raiz [driveItem][] no OneDrive for Business ou de uma pasta raiz ou uma subpasta [driveItem][] no OneDrive pessoal do usuário.
 - Uma [list][] em um [site][] do SharePoint.
 - Uma [message][], [event][] ou [contact][] no Outlook.
 - A [presença][] de um usuário no Microsoft Teams.
+- Uma [equipe](./team.md) em Microsoft Teams.
 - Um [user][] ou [group][] no Azure Active Directory.
 - Uma [printer][] (quando um trabalho de impressão para a impressora chegar ao estado JobFetchable – pronto para ser buscado para impressão) e uma [PrintTaskDefinition][] em Impressão Universal. Para saber mais, confira [Inscrever-se para alterar notificações de APIs de impressão na nuvem](/graph/universal-print-webhook-notifications).
 - Um [todoTask][] de um usuário no Microsoft To Do.
@@ -70,12 +73,15 @@ Consulte [usar o Microsoft Graph API para obter notificações de alteração](w
 |:--------------------|:-------------------------|
 | **Alerta** de segurança     | 43200 minutos (em 30 dias )  |
 | Teams **callRecord**    | 4230 minutos (em 3 dias)  |
+| Teams **canal**    | 60 minutos (1 hora)  |
 | Teams **chatMessage**    | 60 minutos (1 hora)  |
+| Teams **conversationMember**    | 60 minutos (1 hora)  |
+| Teams **equipe**    | 60 minutos (1 hora)  |
 | **Conversa** em grupo | 4230 minutos (em 3 dias)    |
-| OneDrive **driveItem**    | 42300 minutos (menos de 30 dias)    |
-| **Lista** do Microsoft Office SharePoint Online    | 42300 minutos (menos de 30 dias)    |
+| OneDrive **driveItem**    | 42.300 minutos (menos de 30 dias)    |
+| **Lista** do Microsoft Office SharePoint Online    | 42.300 minutos (menos de 30 dias)    |
 | Outlook **mensagem**, **evento**, **contato**              | 4230 minutos (em 3 dias)    |
-| **usuário**, **grupo**, outros recursos de diretório   | 4230 minutos (em 3 dias)    |
+| **usuário**, **grupo**, outros recursos de diretório   | 41760 minutos (menos de 29 dias)    |
 | **presence**        | 60 minutos (1 hora) |
 | Imprimir **printer** | 4230 minutos (em 3 dias)    |
 | Imprimir **printTaskDefinition** | 4230 minutos (em 3 dias)    |

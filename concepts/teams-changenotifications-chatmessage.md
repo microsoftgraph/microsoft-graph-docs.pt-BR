@@ -5,18 +5,16 @@ author: RamjotSingh
 localization_priority: Priority
 ms.prod: microsoft-teams
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 2e5490549e4ff204957c46e5da39a5516ed7d866
-ms.sourcegitcommit: 8b1a6d7b0516f936ce4626246408f067527f5082
+ms.openlocfilehash: 78718b1b486231ae2549323433312aa878806210
+ms.sourcegitcommit: e4461c7eb8c3d265fc1aa766125e81b58c6e1099
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "51594858"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "52941421"
 ---
 # <a name="get-change-notifications-for-messages-in-teams-channels-and-chats-using-microsoft-graph"></a>Obter notificações de alteração para mensagens nos canais e bate-papos do Teams usando o Microsoft Graph
 
-As notificações de alteração habilitam você a assinar para receber alterações (criar, atualizar e excluir) de [ mensagens ](/graph/api/resources/chatMessage?preserve-view=true) em um [ canal ](/graph/api/resources/channel?preserve-view=true) ou [chat](/graph/api/resources/chat?preserve-view=true). As notificações de alteração fornecem um modelo de baixa latência, permitindo que você mantenha uma [assinatura](/graph/api/resources/webhooks?preserve-view=true). Você também pode obter os dados do recurso nas notificações e, portanto, evitar chamar a API para obter o conteúdo.
-
->**Observação:** o tempo máximo que uma assinatura pode durar é 60 minutos; entretanto, as assinaturas podem ser renovadas até que o chamador tenha permissão para acessar o recurso.
+As notificações de alteração habilitam você a inscrever-se para receber alterações (criar, atualizar e excluir) de mensagens em um canal ou chat. As notificações da alteração fornecem um modelo de baixa latência, permitindo que você mantenha uma assinatura. Você também pode obter os dados do recurso nas notificações e, portanto, evitar chamar a API para obter a carga útil.
 
 ## <a name="subscribe-to-changes-at-the-tenant-level"></a>Assinar para receber alterações no nível do locatário
 

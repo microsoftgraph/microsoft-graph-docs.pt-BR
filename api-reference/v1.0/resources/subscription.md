@@ -5,12 +5,12 @@ localization_priority: Priority
 author: Jumaodhiss
 ms.prod: change-notifications
 doc_type: resourcePageType
-ms.openlocfilehash: c47c4d7df11599a5983f5610ef3bfd29c80eee5b
-ms.sourcegitcommit: f77c1385306fd40557aceb24fdfe4832cbb60a27
+ms.openlocfilehash: ea456442a4fdc8936d8ff82ac8019bdf788953ab
+ms.sourcegitcommit: e4461c7eb8c3d265fc1aa766125e81b58c6e1099
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/12/2021
-ms.locfileid: "52911288"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "52941414"
 ---
 # <a name="subscription-resource-type"></a>tipo de recurso de assinatura
 
@@ -71,7 +71,7 @@ Consulte [usar o Microsoft Graph API para obter notificações de alteração](w
 | OneDrive **driveItem**    | 42.300 minutos (menos de 30 dias)    |
 | **Lista** do Microsoft Office SharePoint Online    | 42.300 minutos (menos de 30 dias)    |
 | Outlook **mensagem**, **evento**, **contato**              | 4230 minutos (em 3 dias)    |
-| **usuário**, **grupo**, outros recursos de diretório   | 4230 minutos (em 3 dias)    |
+| **usuário**, **grupo**, outros recursos de diretório   | 41760 minutos (menos de 29 dias)    |
 | Imprimir **printer** | 4230 minutos (em 3 dias)    |
 | Imprimir **printTaskDefinition** | 4230 minutos (em 3 dias)    |
 

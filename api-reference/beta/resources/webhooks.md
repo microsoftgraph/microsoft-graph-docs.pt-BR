@@ -1,16 +1,16 @@
 ---
 title: Usar a API do Microsoft Graph para acessar as notificações de alteração
-description: Entregar notificações de alteração aos clientes.
+description: Fornecer notificações de alteração aos clientes.
 localization_priority: Normal
 author: Jumaodhiss
 doc_type: conceptualPageType
 ms.prod: change-notifications
-ms.openlocfilehash: 941189d27c01222309a8011fe7701d811ac46a7c
-ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
+ms.openlocfilehash: b08b1e3232998eff678ffbf7852a144f641f84e1
+ms.sourcegitcommit: e4461c7eb8c3d265fc1aa766125e81b58c6e1099
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51468680"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "52941519"
 ---
 # <a name="use-the-microsoft-graph-api-to-get-change-notifications"></a>Usar a API do Microsoft Graph para acessar as notificações de alteração
 
@@ -36,8 +36,11 @@ Usando a API do Microsoft Graph, um aplicativo pode se inscrever para alteraçõ
 | [Contato][] pessoal do Outlook | Alterações em todas as mensagens na caixa de correio de um usuário:<br>`/users/{id}/contacts` | Não |
 | [Alerta][] de segurança | Alterações em um alerta específico:<br>`/security/alerts/{id}` <br>Alterações em alertas filtrados:<br> `/security/alerts/?$filter`| Não |
 | Teams [callRecord][] | Mudanças para _todos os_ registros de chamadas: `/communications/callRecords` | Não |
+| Teams [canal][] | Alterações nos canais em todas as equipes:<br>`/teams/getAllChannels` <br>Alterações no canal em uma equipe específica:<br>`/teams/{id}/channels` | Sim |
 | Equipes [chatmessage][] | Alterações nas mensagens de chat em todos os canais de todas as equipes:<br>`/teams/getAllMessages` <br>Alterações nas mensagens de um chat específico:<br>`/teams/{id}/channels/{id}/messages`<br>Alterações nas mensagens de todos os chats:<br>`/chats/getAllMessages` <br>Alterações nas mensagens de um chat específico:<br>`/chats/{id}/messages` | Sim |
-| Presença [][] do Teams | Alterações na presença de um único usuário: `/communications/presences/{id}` <br> Alterações em várias presenças de usuário:<br> `/communications/presences?$filter=id in ({id},{id}...)` | Sim |
+| Teams [conversationMember][] | Alterações na associação em uma equipe específica:<br>`/teams/{id}/members` | Sim |
+| Teams [presença][] | Alterações na presença de um único usuário: `/communications/presences/{id}` <br> Alterações em várias presenças de usuário:<br> `/communications/presences?$filter=id in ({id},{id}...)` | Sim |
+| Teams [equipe][] | Alterações em qualquer equipe no locatário:<br>`/teams` <br>Alterações na equipe específica:<br>`/teams/{id}` | Sim |
 | [todoTask][] | Alterações em todas as tarefas em uma lista de tarefas específica:<br>`/me/todo/lists/{todoTaskListId}/tasks` | Não |
 | [Usuário][] | Alterações em todos os usuários:<br>`/users` <br>Alterações em um usuário específico:<br>`/users/{id}`| Não |
 
@@ -50,9 +53,9 @@ Em geral, as operações de assinatura exigem permissão de leitura ao recurso. 
 
 | Tipo de permissão                        | Tipos de recurso com suporte                                                      |
 | :------------------------------------- | :------------------------------------------------------------------------------------ |
-| Delegado - conta corporativa ou de estudante     | [alert][], contact , [conversation][], [driveItem][], [list][], [event][], [group][], [message][], [user][], [presence][], [chatMessage][] (preview), [todoTask][] [][] |
+| Delegado - conta corporativa ou de estudante     | [alert][], channel , contact , [conversation][], [conversationMember][], [driveItem][], [list][], [event][] [,][] [group][] [,][]message , [user][], [presence][], [chatMessage][] (preview), [team][], [todoTask][] [][] |
 | Delegado - conta pessoal da Microsoft | [contact][], [driveItem][], [list][], [event][], [message][],[todoTask][]                                     |
-| Aplicativo                            | [alert][], [contact][], [driveItem][], [list][], [event][], [group][], [message][], [user][], [callRecord][], [chatMessage][], [printer][], [printTaskDefinition][]|
+| Aplicativo                            | [alert][], [channel][], [contact][], [driveItem][], [list][] [,][]event , [group][], [message][], [user][], [callRecord][], [chatMessage][], [conversationMember][], [printer][], [printTaskDefinition][], [team][] |
 
 ## <a name="see-also"></a>Confira também
 
@@ -66,6 +69,8 @@ Em geral, as operações de assinatura exigem permissão de leitura ao recurso. 
 [chatMessage]: ./chatmessage.md
 [contato]: ./contact.md
 [conversa]: ./conversation.md
+[conversationMember]: ./conversationmember.md
+[channel]: ./channel.md
 [driveItem]: ./driveitem.md
 [list]: ./list.md
 [site]: ./site.md
@@ -78,5 +83,6 @@ Em geral, as operações de assinatura exigem permissão de leitura ao recurso. 
 [presence]: ./presence.md
 [impressora]: ./printer.md
 [printTaskDefinition]: ./printtaskdefinition.md
+[equipe]: ./team.md
 [todoTask]: ./todoTask.md
 

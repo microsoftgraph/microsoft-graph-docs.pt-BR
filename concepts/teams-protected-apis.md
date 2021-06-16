@@ -4,12 +4,12 @@ description: As APIs do Microsoft Teams no Microsoft Graph, que acessam dados co
 author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: 65c70c196540f18e74dfab05b4a94ecfab5fe25f
-ms.sourcegitcommit: ad1e4d758d4fe6025987c1c3528ce644edb27062
+ms.openlocfilehash: dd4b2a85fd0ab3b9fbceb993cfd72ef5bf19f48b
+ms.sourcegitcommit: e4461c7eb8c3d265fc1aa766125e81b58c6e1099
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51697989"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "52941428"
 ---
 # <a name="protected-apis-in-microsoft-teams"></a>APIs protegidas no Microsoft Teams
 
@@ -29,8 +29,6 @@ As seguintes APIs estão protegidas no momento:
 * [Criar assinatura para novas mensagens do canal](/graph/api/subscription-post-subscriptions) usando [permissões do aplicativo](auth/auth-concepts.md#microsoft-graph-permissions)
 * [Listar todo o conteúdo hospedado](/graph/api/chatmessage-list-hostedcontents) usando [permissões de aplicativo](auth/auth-concepts.md#microsoft-graph-permissions)
 * [Obter conteúdo hospedado](/graph/api/chatmessagehostedcontent-get) usando [permissões de aplicativo](auth/auth-concepts.md#microsoft-graph-permissions)
-* [Listar membros do bate-papo](/graph/api/conversationmember-list) usando [permissões de aplicativo](auth/auth-concepts.md#microsoft-graph-permissions)
-* [Obter membro do chat](/graph/api/conversationmember-get) usando [permissões de aplicativo](auth/auth-concepts.md#microsoft-graph-permissions)
 
 >[!NOTE]
 >[Enviar mensagem](/graph/api/channel-post-messages) não é uma API protegida.

@@ -3,12 +3,12 @@ title: Criar um aplicativo Web com o microsoft Graph Toolkit
 description: Começar a criar um aplicativo Web usando o microsoft Graph Toolkit.
 localization_priority: Normal
 author: elisenyang
-ms.openlocfilehash: eef2bb9644fdd7da95ccce5da2b6802f4e893573
-ms.sourcegitcommit: 276a13a37c3772689dfc71f7cd47586c9581f27d
+ms.openlocfilehash: 989e79c2b52f7e02fb61604d3011f13aced580ed
+ms.sourcegitcommit: e4461c7eb8c3d265fc1aa766125e81b58c6e1099
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52629494"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "52941533"
 ---
 # <a name="build-a-web-application-with-the-microsoft-graph-toolkit"></a>Criar um aplicativo Web com o microsoft Graph Toolkit
 
@@ -52,10 +52,10 @@ Adicione o `mgt-msal2-provider` componente à sua página HTML e desmarcar o par
 ```html
 <mgt-msal2-provider client-id="<YOUR_CLIENT_ID"></mgt-msal2-provider>
 ```
-# <a name="js"></a>[js](#tab/JavaScript)
+# <a name="javascript"></a>[JavaScript](#tab/JavaScript)
 Para inicializar o provedor MSAL em seu JavaScript, adicione o seguinte código ao seu aplicativo:
 
-```js
+```javascript
 import {Providers, Msal2Provider} from '@microsoft/mgt'
 
 Providers.globalProvider = new Msal2Provider({
@@ -92,10 +92,10 @@ Este é um exemplo usando os módulos ES6, o Provedor MSAL 2.0 inicializado em H
 
 <mgt-login></mgt-login>
 ```
-# <a name="js"></a>[js](#tab/JavaScript)
+# <a name="javascript"></a>[JavaScript](#tab/JavaScript)
 Este é um exemplo usando os módulos ES6, o Provedor MSAL 2.0 inicializado em JavaScript e o componente logon:
 
-```js
+```javascript
 import {Providers, Msal2Provider} from '@microsoft/mgt'
 
 Providers.globalProvider = new Msal2Provider({
@@ -120,6 +120,74 @@ Para testar seu aplicativo, o MSAL exige que a página seja hospedada em um serv
 
 Se você estiver apenas começando e quiser brincar, poderá usar o [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) Visual Studio Code ou qualquer servidor de desenvolvimento leve semelhante. Baixe a extensão e abra seu arquivo HTML usando o servidor ao vivo. 
 > **Observação:** Certifique-se **de que o URI de** redirecionamento no registro do aplicativo está definido para a porta localhost em que seu aplicativo está hospedado. Vá para o registro do aplicativo no [portal do Azure,](https://portal.azure.com)clique em **Autenticação** em gerenciar e adicione o **URI de redirecionamento correto.**
+
+## <a name="track-a-users-sign-in-state"></a>Rastrear o estado de login de um usuário
+
+Você pode detectar quando um usuário se inscreveu com êxito e exibiu componentes específicos de acordo. Por exemplo, exibe o componente de agenda se o usuário tiver se assinado. Caso contrário, exibe a interface de login.
+
+Você pode determinar se um usuário está assinado avaliando `globalProvider` e `providerState` .
+
+# <a name="html"></a>[HTML](#tab/HTML)
+
+Se você estiver usando a `mgt-loader` biblioteca, poderá acessar e `provider` a partir `providerState` da `mgt` propriedade.
+
+```html
+<script src="https://unpkg.com/@microsoft/mgt/dist/bundle/mgt-loader.js"></script>
+
+<mgt-msal-provider client-id="<YOUR_CLIENT_ID>"></mgt-msal-provider>
+
+<div id="main"><mgt-login></mgt-login></div>
+
+<script>
+    const provider = mgt.Providers.globalProvider;
+    const isLoggedIn = provider && provider.state === mgt.ProviderState.SignedIn
+
+    // Show the mgt-agenda component ONLY if the user is logged in, show the mgt-login component if not
+    function loadAgenda(){
+        if(isLoggedIn){
+            const main = document.getElementById("main");
+            main.innerHTML = `<mgt-agenda></mgt-agenda>`;
+        } else {
+            main.innerHTML = `<mgt-login></mgt-login>`;
+        }
+    }
+
+    loadAgenda();
+</script>
+```
+
+# <a name="javascript"></a>[JavaScript](#tab/JavaScript)
+Se você estiver usando o Toolkit por meio dos pacotes npm, poderá importar `provider` o e `providerState` de `@microsoft/mgt` .
+
+```javascript
+import {Providers, ProviderState} from '@microsoft/mgt'
+
+Providers.globalProvider = new MsalProvider({
+    clientId: "<YOUR_CLIENT_ID>"
+})
+
+function isLoggedIn(){
+    const provider = Providers.globalProvider;
+    return provider && provider.state === ProviderState.SignedIn;
+}
+
+function loadAgenda(){
+    const agenda = document.createElement("mgt-agenda");
+    const loginComponent = document.createElement("mgt-login");
+    if(isLoggedIn()){
+        // the user is logged in, load their agenda
+        document.body.innerHTML = `<mgt-agenda></mgt-agenda>`;
+    } else {
+        // the user is not logged in, show them the login component
+        document.body.innerHTML = `<mgt-login></mgt-login>`
+    }
+}
+
+loadAgenda();
+```
+
+---
+
 
 ## <a name="next-steps"></a>Próximas etapas
 - Confira o [tutorial Introdução ao Microsoft Graph Toolkit](/learn/modules/msgraph-toolkit-intro/) passo a passo.
