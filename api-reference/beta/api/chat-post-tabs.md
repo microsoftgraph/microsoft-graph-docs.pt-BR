@@ -1,16 +1,16 @@
 ---
 title: Adicionar guia ao chat
-description: 'Adiciona (fixa) uma guia ao chat especificado. '
+description: 'Adiciona (pinos) uma guia ao chat especificado. '
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: dfe95846bc117285e9b75afc29af2e7315be53dc
-ms.sourcegitcommit: 75428fc7535662f34e965c6b69fef3a53fdaf1cb
+ms.openlocfilehash: f422823b8646bd695c94640b15f456e3e372e0d5
+ms.sourcegitcommit: 99fdbd9a1806d64626423e1f39342dcde8a1eaf4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49689618"
+ms.lasthandoff: 06/16/2021
+ms.locfileid: "52971255"
 ---
 # <a name="add-tab-to-chat"></a>Adicionar guia ao chat
 
@@ -18,19 +18,20 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Adicionar (fixar) uma [guia](../resources/teamstab.md) ao [chat](../resources/chat.md)especificado. O aplicativo correspondente já deve estar [instalado no chat](../api/chat-list-installedapps.md).
+Adicione (pin) uma [guia](../resources/teamstab.md) ao chat [especificado.](../resources/chat.md) O aplicativo correspondente já deve [estar instalado no chat](../api/chat-list-installedapps.md).
 
-> **Observação**: se o chat estiver associado a uma instância do [onlineMeeting](../resources/onlinemeeting.md) , em seguida, efetivamente, a guia será adicionada à reunião.
+> **Observação**: se o chat estiver associado a uma instância [onlineMeeting,](../resources/onlinemeeting.md) então, efetivamente, a guia será adicionada à reunião.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | TeamsTab. Create, TeamsTab. ReadWriteForChat, TeamsTab. ReadWrite. All |
+|Delegado (conta corporativa ou de estudante) | TeamsTab.Create, TeamsTab.ReadWriteForChat, TeamsTab.ReadWrite.All |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-| Aplicativo                            | TeamsTab. Create, TeamsTab. ReadWriteForChat. All, TeamsTab. ReadWrite. All |
+| Aplicativo                            | TeamsTab.Create.Chat *, TeamsTab.ReadWrite.Chat*, TeamsTab.Create, TeamsTab.ReadWriteForChat.All, TeamsTab.ReadWrite.All |
 
+> **Observação**: Permissões marcadas com * usam [consentimento específico de recurso](https://aka.ms/teams-rsc).
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -49,7 +50,7 @@ No corpo da solicitação, inclua uma representação JSON de um [teamsTab](../r
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `201 Created` código de resposta e uma instância do recurso [teamsTab](../resources/teamstab.md) no corpo.
+Se tiver êxito, este método retornará um código de resposta e uma `201 Created` instância do [recurso teamsTab](../resources/teamstab.md) no corpo.
 
 ## <a name="example"></a>Exemplo
 

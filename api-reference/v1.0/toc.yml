@@ -1220,9 +1220,9 @@ items:
                     href: resources/callrecords-callrecord.md
                   - name: Obter registro de chamada
                     href: api/callrecords-callrecord-get.md
-              - name: Session
+              - name: Sessão
                 items:
-                  - name: Session
+                  - name: Sessão
                     href: resources/callrecords-session.md
                   - name: Listar sessões
                     href: api/callrecords-session-list.md
@@ -1274,7 +1274,7 @@ items:
                   - name: Excluir um item do histórico
                     href: api/projectrome-delete-historyitem.md
       - name: Dispositivos e aplicativos
-        expanded: true
+        expanded: false
         items:
           - name: Impressão na nuvem
             items:
@@ -5689,7 +5689,7 @@ items:
         items:
           - name: Visão Geral
             href: resources/planner-overview.md
-          - name: Planejar
+          - name: Plano
             href: resources/plannerplan.md
             items:
               - name: Criar plano
@@ -5941,7 +5941,7 @@ items:
                 href: api/chatmessage-list-hostedcontents.md
               - name: Obter conteúdo hospedado
                 href: api/chatmessagehostedcontent-get.md
-          - name: Aplicativo
+          - name: App
             items:
               - name: Aplicativo no catálogo
                 href: resources/teamsapp.md

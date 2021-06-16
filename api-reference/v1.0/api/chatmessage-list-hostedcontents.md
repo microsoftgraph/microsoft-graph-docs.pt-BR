@@ -5,12 +5,12 @@ localization_priority: Normal
 author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 9c0b801492fb0970ae97f9a48d806dc3dc2eff74
-ms.sourcegitcommit: a9a035e7cf7b500aebe5477c05361552e7c3a7ab
+ms.openlocfilehash: cc6f5bcd883cc6f289444f253be29c12efcce2c0
+ms.sourcegitcommit: 99fdbd9a1806d64626423e1f39342dcde8a1eaf4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "52695949"
+ms.lasthandoff: 06/16/2021
+ms.locfileid: "52971388"
 ---
 # <a name="list-hostedcontents"></a>Listar hostedContents
 
@@ -26,7 +26,7 @@ Recupere a lista de [objetos chatMessageHostedContent](../resources/chatmessageh
 |:---------------------------------------|:--------------------------------------------|
 |Delegado (conta corporativa ou de estudante)| ChannelMessage.Read.All |
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo| ChannelMessage.Read.Group, ChannelMessage.Read.All |
+|Aplicativo| ChannelMessage.Read.Group*, ChannelMessage.Read.All |
 
 ### <a name="permissions-for-chat"></a>Permissões para o chat
 

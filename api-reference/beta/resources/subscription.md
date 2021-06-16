@@ -73,10 +73,10 @@ Consulte [usar o Microsoft Graph API para obter notificações de alteração](w
 |:--------------------|:-------------------------|
 | **Alerta** de segurança     | 43200 minutos (em 30 dias )  |
 | Teams **callRecord**    | 4230 minutos (em 3 dias)  |
-| Teams **canal**    | 60 minutos (1 hora)  |
+| **Canal** do Teams    | 60 minutos (1 hora)  |
 | Teams **chatMessage**    | 60 minutos (1 hora)  |
-| Teams **conversationMember**    | 60 minutos (1 hora)  |
-| Teams **equipe**    | 60 minutos (1 hora)  |
+| **conversationMember** do Teams    | 60 minutos (1 hora)  |
+| Equipe do **Teams**    | 60 minutos (1 hora)  |
 | **Conversa** em grupo | 4230 minutos (em 3 dias)    |
 | OneDrive **driveItem**    | 42.300 minutos (menos de 30 dias)    |
 | **Lista** do Microsoft Office SharePoint Online    | 42.300 minutos (menos de 30 dias)    |

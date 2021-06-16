@@ -58,7 +58,7 @@ A solicitação deve ser um objeto JSON com as seguintes propriedades.
 
 |   Propriedade                 |  Tipo  |                                 Descrição                                                               |
 | :----------------------| :----- | :---------------------------------------------------------------------------------------------------------|
-|tipo|String|Optional.O tipo de link de compartilhamento a ser criado.   |
+|tipo|Cadeia de caracteres|Optional.O tipo de link de compartilhamento a ser criado.   |
 |escopo|String|Opcional. O escopo do link a ser criado. Anônimos, organização ou usuários.|
 |expirationDateTime|DateTimeOffset|Opcional. Uma cadeia de caracteres com formato de yyyy-MM-ddTHH:mm:ssZ de DateTime indica o tempo de expiração da permissão.|
 |password|String|Optional.A senha do link de compartilhamento que é definido pelo criador.|

@@ -503,7 +503,7 @@ items:
         items:
           - name: Visão Geral
             href: resources/groups-overview.md
-          - name: Group
+          - name: Grupo
             href: resources/group.md
             items:
               - name: Listar grupos
@@ -982,7 +982,7 @@ items:
                 items:
                   - name: Listar memberOf
                     href: api/serviceprincipal-list-memberof.md
-                  - name: List transitive memberOf
+                  - name: Listar memberOf transitivos
                     href: api/serviceprincipal-list-transitivememberof.md
                   - name: checkMemberGroups
                     href: api/serviceprincipal-checkmembergroups.md
@@ -1414,9 +1414,9 @@ items:
                     href: resources/callrecords-callrecord.md
                   - name: Obter
                     href: api/callrecords-callrecord-get.md
-              - name: Session
+              - name: Sessão
                 items:
-                  - name: Session
+                  - name: Sessão
                     href: resources/callrecords-session.md
                   - name: List
                     href: api/callrecords-session-list.md
@@ -1708,7 +1708,7 @@ items:
               - name: Excluir
                 href: api/bookingstaffmember-delete.md
       - name: Dispositivos e aplicativos
-        expanded: true
+        expanded: false
         items:
           - name: Impressão na nuvem
             items:
@@ -4231,7 +4231,7 @@ items:
                     href: resources/intune-deviceconfig-bitlockerrecoveryinformationtype.md
                   - name: Opções de recuperação do BitLocker
                     href: resources/intune-deviceconfig-bitlockerrecoveryoptions.md
-                  - name: BitLocker tipo de rotação de senha de recuperação
+                  - name: Tipo de rotação de senha de recuperação do BitLocker
                     href: resources/intune-deviceconfig-bitlockerrecoverypasswordrotationtype.md
                   - name: Política da unidade removível do BitLocker
                     href: resources/intune-deviceconfig-bitlockerremovabledrivepolicy.md
@@ -6826,7 +6826,7 @@ items:
                         href: api/intune-fencing-circulargeofencemanagementcondition-delete.md
                       - name: Atualizar
                         href: api/intune-fencing-circulargeofencemanagementcondition-update.md
-                  - name: Cloud PC conectividade
+                  - name: Problema de conectividade de computador na nuvem
                     href: resources/intune-devices-cloudpcconnectivityissue.md
                     items:
                       - name: Lista
@@ -7898,7 +7898,7 @@ items:
                     href: resources/intune-devices-revokeapplevpplicensesactionresult.md
                   - name: Informações da marca de escopo de função
                     href: resources/intune-auditing-rolescopetaginfo.md
-                  - name: Girar BitLocker de ação do dispositivo de teclas
+                  - name: Girar o resultado da ação do dispositivo de chaves do BitLocker
                     href: resources/intune-devices-rotatebitlockerkeysdeviceactionresult.md
                   - name: Resumo do estado da categoria de linha de base de segurança
                     href: resources/intune-deviceintent-securitybaselinecategorystatesummary.md
@@ -9529,7 +9529,7 @@ items:
                     href: api/cloudpc-get.md
                   - name: Reprovision
                     href: api/cloudpc-reprovision.md
-              - name: Cloud PC imagem do dispositivo
+              - name: Imagem do dispositivo de computador na nuvem
                 href: resources/cloudpcdeviceimage.md
                 items:
                   - name: Lista
@@ -9542,7 +9542,7 @@ items:
                     href: api/cloudpcdeviceimage-delete.md
                   - name: Obter imagens de origem
                     href: api/cloudpcdeviceimage-getsourceimages.md
-              - name: Cloud PC local
+              - name: Conexão local do computador na nuvem
                 href: resources/cloudpconpremisesconnection.md
                 items:
                   - name: Lista
@@ -9559,7 +9559,7 @@ items:
                     href: api/cloudpconpremisesconnection-runhealthcheck.md
                   - name: Atualizar senha de domínio do Active Directory
                     href: api/cloudpconpremisesconnection-updateaddomainpassword.md
-              - name: Cloud PC de provisionamento
+              - name: Política de provisionamento de computadores na nuvem
                 href: resources/cloudpcprovisioningpolicy.md
                 items:
                   - name: Lista
@@ -9809,7 +9809,7 @@ items:
               - name: Listar categorias
                 href: api/educationassignment-list-categories.md
               - name: Adicionar Categoria
-                href: api/educationassignment-add-categories.md
+                href: api/educationassignment-post-categories.md
               - name: Remover categoria
                 href: api/educationassignment-remove-category.md
               - name: Anexar rubric à atribuição
@@ -10312,9 +10312,9 @@ items:
                     href: api/administrativeunit-get-scopedrolemembers.md
                   - name: Remover um administrador de função no escopo
                     href: api/administrativeunit-delete-scopedrolemembers.md
-              - name: BitLocker de recuperação (visualização)
+              - name: Chave de recuperação do BitLocker (visualização)
                 items:
-                  - name: BitLocker chave de recuperação
+                  - name: Chave de recuperação do BitLocker
                     href: resources/bitlockerrecoverykey.md
                   - name: Lista
                     href: api/bitlocker-list-recoverykeys.md
@@ -10748,9 +10748,9 @@ items:
                         href: api/phoneauthenticationmethod-delete.md
                       - name: Adicionar
                         href: api/authentication-post-phonemethods.md
-                      - name: Habilitar SMS entrar
+                      - name: Habilitar a assinatura SMS
                         href: api/phoneauthenticationmethod-enablesmssignin.md
-                      - name: Desabilitar SMS entrar
+                      - name: Desabilitar a login do SMS
                         href: api/phoneauthenticationmethod-disablesmssignin.md
                   - name: Email
                     href: resources/emailauthenticationmethod.md
@@ -10765,7 +10765,7 @@ items:
                         href: api/emailauthenticationmethod-delete.md
                       - name: Adicionar
                         href: api/emailauthenticationmethod-post.md
-                  - name: Password
+                  - name: Senha
                     href: resources/passwordauthenticationmethod.md
                     items:
                       - name: Lista
@@ -13195,6 +13195,8 @@ items:
                 href: api/itemanalytics-get.md
               - name: Obter atividades por intervalo
                 href: api/itemactivity-getbyinterval.md
+              - name: Criar um link de compartilhamento
+                href: api/listitem-createlink.md
           - name: Páginas
             items:
               - name: Página do site
@@ -13219,7 +13221,7 @@ items:
                     href: api/termstore-store-get.md
                   - name: Atualizar
                     href: api/termstore-store-update.md
-              - name: Group
+              - name: Grupo
                 href: resources/termstore-group.md
                 items:
                   - name: Criar
@@ -13574,7 +13576,7 @@ items:
                 href: api/chatmessage-list-hostedcontents.md
               - name: Obter conteúdo hospedado
                 href: api/chatmessagehostedcontent-get.md
-          - name: Aplicativo
+          - name: App
             items:
               - name: Aplicativo no catálogo
                 href: resources/teamsapp.md

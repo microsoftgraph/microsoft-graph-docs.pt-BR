@@ -36,11 +36,11 @@ Usando a API do Microsoft Graph, um aplicativo pode se inscrever para alteraçõ
 | [Contato][] pessoal do Outlook | Alterações em todas as mensagens na caixa de correio de um usuário:<br>`/users/{id}/contacts` | Não |
 | [Alerta][] de segurança | Alterações em um alerta específico:<br>`/security/alerts/{id}` <br>Alterações em alertas filtrados:<br> `/security/alerts/?$filter`| Não |
 | Teams [callRecord][] | Mudanças para _todos os_ registros de chamadas: `/communications/callRecords` | Não |
-| Teams [canal][] | Alterações nos canais em todas as equipes:<br>`/teams/getAllChannels` <br>Alterações no canal em uma equipe específica:<br>`/teams/{id}/channels` | Sim |
+| [Canal][] do Teams | Alterações nos canais em todas as equipes:<br>`/teams/getAllChannels` <br>Alterações no canal em uma equipe específica:<br>`/teams/{id}/channels` | Sim |
 | Equipes [chatmessage][] | Alterações nas mensagens de chat em todos os canais de todas as equipes:<br>`/teams/getAllMessages` <br>Alterações nas mensagens de um chat específico:<br>`/teams/{id}/channels/{id}/messages`<br>Alterações nas mensagens de todos os chats:<br>`/chats/getAllMessages` <br>Alterações nas mensagens de um chat específico:<br>`/chats/{id}/messages` | Sim |
-| Teams [conversationMember][] | Alterações na associação em uma equipe específica:<br>`/teams/{id}/members` | Sim |
+| [conversationMember][] do Teams | Alterações na associação em uma equipe específica:<br>`/teams/{id}/members` | Sim |
 | Teams [presença][] | Alterações na presença de um único usuário: `/communications/presences/{id}` <br> Alterações em várias presenças de usuário:<br> `/communications/presences?$filter=id in ({id},{id}...)` | Sim |
-| Teams [equipe][] | Alterações em qualquer equipe no locatário:<br>`/teams` <br>Alterações na equipe específica:<br>`/teams/{id}` | Sim |
+| Equipe do [Teams][] | Alterações em qualquer equipe no locatário:<br>`/teams` <br>Alterações na equipe específica:<br>`/teams/{id}` | Sim |
 | [todoTask][] | Alterações em todas as tarefas em uma lista de tarefas específica:<br>`/me/todo/lists/{todoTaskListId}/tasks` | Não |
 | [Usuário][] | Alterações em todos os usuários:<br>`/users` <br>Alterações em um usuário específico:<br>`/users/{id}`| Não |
 
@@ -70,7 +70,7 @@ Em geral, as operações de assinatura exigem permissão de leitura ao recurso. 
 [contato]: ./contact.md
 [conversa]: ./conversation.md
 [conversationMember]: ./conversationmember.md
-[channel]: ./channel.md
+[canal]: ./channel.md
 [driveItem]: ./driveitem.md
 [list]: ./list.md
 [site]: ./site.md

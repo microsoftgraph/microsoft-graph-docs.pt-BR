@@ -208,7 +208,7 @@ Content-length: 252
 }
 ```
 
-### <a name="notification-endpoint-validation"></a>Validação de ponto de extremidade da notificação
+### <a name="notification-endpoint-validation"></a>Validação de ponto de extremidade de notificação
 
 O ponto de extremidade de notificação de assinatura (especificado na propriedade **notificationUrl)** deve ser capaz de responder a uma solicitação de validação conforme descrito em [Set up notifications for changes in user data](/graph/webhooks#notification-endpoint-validation). Se a validação falhar, a solicitação para criar a assinatura retornará um erro de Solicitação Incorreta 400.
 
