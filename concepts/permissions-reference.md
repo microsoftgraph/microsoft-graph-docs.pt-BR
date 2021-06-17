@@ -4,12 +4,12 @@ description: O Microsoft Graph expõe as permissões granulares que controlam o 
 author: jackson-woods
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 508ccb2add627da88656577b54618ec0fd91f097
-ms.sourcegitcommit: 276a13a37c3772689dfc71f7cd47586c9581f27d
+ms.openlocfilehash: efd2f192fdaf5338b7f97483aca7d93f861ecb02
+ms.sourcegitcommit: 99fdbd9a1806d64626423e1f39342dcde8a1eaf4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52629480"
+ms.lasthandoff: 06/16/2021
+ms.locfileid: "52971409"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Referência de permissões do Microsoft Graph
 
@@ -506,7 +506,7 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 | _ChannelSettings.Read.All_ | Ler os nomes, descrições e configurações de todos os canais. | Ler todos os nomes, descrições e configurações do canal, sem um usuário conectado.| Sim | Não |
 | _ChannelSettings.ReadWrite.All_ | Ler e gravar os nomes, descrições e configurações de todos os canais. | Ler e gravar os nomes, descrições e configurações de todos os canais, sem um usuário conectado.| Sim | Não |
 
-## <a name="chats-permissions"></a>Permissões de bate-papo
+## <a name="chat-permissions"></a>Permissões de chat
 
 #### <a name="delegated-permissions"></a>Permissões delegadas
 
@@ -525,6 +525,22 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 |_Chat.UpdatePolicyViolation.All_ |Sinalizar mensagens de chat para a política de violação |Permite que o aplicativo atualize as mensagens de chat de grupo ou Microsoft Teams 1:1, aplicando um conjunto de propriedades de violação da política de prevenção contra perda de dados (DLP) para controlar a saída de processamento DLP. | Sim | Não |
 
 > **Observação:** para mensagens em um canal, consulte [permissões ChannelMessage](#channel-message-permissions).
+
+## <a name="chat-resource-specific-consent-permissions"></a>Permissões de consentimento específicas do recurso de chat
+
+| Permissão                     | Exibir Cadeia de Caracteres                                                | Descrição  | Consentimento Obrigatório do Administrador | Suporte da conta da Microsoft |
+|:-------------------------------|:--------------------------------------------------------------|:-------------|:-----------------------|:----------------------------|
+| _ChatSettings.Read.Chat_         | Leia as configurações deste chat.                                    | Permite que o aplicativo leia as configurações deste chat, sem um usuário conectado. |Não | Não |
+| _ChatSettings.ReadWrite.Chat_    | Leia e escreva as configurações deste chat.                          | Permite que o aplicativo leia e grave as configurações deste chat, sem um usuário conectado. |Não | Não |
+| _ChatMessage.Read.Chat_          | Leia as mensagens deste chat.                                    | Permite que o aplicativo leia as mensagens deste chat, sem um usuário conectado. |Não | Não |
+| _ChatMember.Read.Chat_           | Leia os membros deste chat.                                     | Permite que o aplicativo leia os membros deste chat, sem um usuário conectado. |Não | Não |
+| _Chat.Manage.Chat_               | Gerenciar este chat                                             | Permite que o aplicativo gerencie o chat, os membros do chat e conceda acesso aos dados do chat, sem um usuário conectado.  |Não | Não |
+| _TeamsTab.Read.Chat_             | Leia as guias deste chat.                                        | Permite que o aplicativo leia as guias deste chat, sem um usuário conectado. |Não | Não |
+| _TeamsTab.Create.Chat_           | Criar as guias neste chat.                                     | Permite que o aplicativo crie guias neste chat, sem um usuário conectado. |Não | Não |
+| _TeamsTab.Delete.Chat_           | Exclua as guias deste chat.                                      | Permite que o aplicativo exclua as guias deste chat, sem um usuário conectado. |Não | Não |
+| _TeamsTab.ReadWrite.Chat_        | Gerenciar as guias deste chat.                                      | Permite que o aplicativo gerencie as guias deste chat, sem um usuário conectado. |Não | Não |
+| _TeamsAppInstallation.Read.Chat_ | Leia quais aplicativos estão instalados neste chat.                   | Permite que o aplicativo leia os aplicativos Teams que estão instalados neste chat junto com as permissões concedidas a cada aplicativo, sem um usuário conectado.  |Não | Não |
+| _OnlineMeeting.ReadBasic.Chat_   | Leia as propriedades básicas de uma reunião associada a este chat. | Permite que o aplicativo leia as propriedades básicas - como nome, programação, organizador e link de ingresso - de uma reunião associada a este chat, sem um usuário conectado. |Não | Não |
 
 ## <a name="chatmessage-permissions-private-preview"></a>ChatMessage permissions ([visualização privada](#permissions-availability-status))
 
@@ -1982,19 +1998,20 @@ As permissões de taxonomia só são válidas para contas do trabalho ou da esco
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
 | TeamSettings.Read.Group | Leia as configurações dessa equipe. | Ler as configurações dessa equipe, sem um usuário conectado. |Não | Não |
 | TeamSettings.ReadWrite.Group | Atualizar as configurações para esta equipe. | Leia e grave as configurações desta equipe, sem um usuário está conectado. |Não | Não |
-| ChannelSettings.Read.Group | Ler os nomes, descrições e configurações dos canais dessa equipe. | Ler os nomes, descrições e configurações dos canais dessa equipe, sem um usuário conectado. |Não | Não |
-| ChannelSettings.ReadWrite.Group | Atualize os nomes, descrições e configurações dos canais desta equipe.| Atualize os nomes dos canais, as descrições e as configurações dos canais deste grupo, sem um usuário está conectado. |Não | Não |
-|Channel.Create.Group | Criar canais nesta equipe. | Criar canais neste grupo, sem um usuário conectado. |Não | Não |
-|Channel.Delete.Group | Excluir os canais dessa equipe. | Excluir canais neste grupo, sem um usuário conectado. |Não | Não |
-|ChannelMessage.Read.Group | Ler as mensagens de canal da equipe. | Permite que um aplicativo leia as mensagens desse grupo, sem um usuário conectado. |Não | Não |
-|TeamsAppInstallation.Read.Group | Veja quais aplicativos estão instalados nessa equipe. | Veja quais aplicativos estão instalados nesse grupo, sem um usuário conectado. |Não | Não |
-|TeamsTab.Read.Group | Leia as guias dessa equipe. | Ler as guias dessa equipe, sem um usuário conectado. |Não | Não |
-|TeamsTab.Create.Group | Criar guias nesta equipe. | Criar guias neste grupo, sem um usuário conectado. |Não | Não |
-|TeamsTab.ReadWrite.Group | Atualize as guias desta equipe. | Atualize as guias deste grupo, sem um usuário está conectado. |Não | Não |
-|TeamsTab.Delete.Group | Excluir as guias dessa equipe. | Excluir as guias deste grupo, sem um usuário conectado. |Não | Não |
+| ChannelSettings.Read.Group | Ler os nomes, descrições e configurações dos canais dessa equipe. | Leia os nomes dos canais, as descrições e as configurações dos canais desta equipe, sem um usuário conectado. |Não | Não |
+| ChannelSettings.ReadWrite.Group | Atualize os nomes, descrições e configurações dos canais desta equipe.| Atualize os nomes dos canais, as descrições e as configurações dos canais desta equipe, sem um usuário conectado. |Não | Não |
+|Channel.Create.Group | Criar canais nesta equipe. | Crie canais nesta equipe, sem um usuário conectado. |Não | Não |
+|Channel.Delete.Group | Excluir os canais dessa equipe. | Exclua os canais desta equipe, sem um usuário conectado. |Não | Não |
+|ChannelMessage.Read.Group | Ler as mensagens de canal da equipe. | Permite que um aplicativo leia as mensagens do canal desta equipe, sem um usuário conectado. |Não | Não |
+|TeamsAppInstallation.Read.Group | Veja quais aplicativos estão instalados nessa equipe. | Veja quais aplicativos estão instalados nesta equipe, sem um usuário conectado. |Não | Não |
+|TeamsTab.Read.Group | Leia as guias dessa equipe. | Leia as guias desta equipe, sem um usuário conectado. |Não | Não |
+|TeamsTab.Create.Group | Criar guias nesta equipe. | Crie guias nesta equipe, sem um usuário conectado. |Não | Não |
+|TeamsTab.ReadWrite.Group | Atualize as guias desta equipe. | Atualize as guias desta equipe, sem um usuário conectado. |Não | Não |
+|TeamsTab.Delete.Group | Excluir as guias dessa equipe. | Exclua as guias desta equipe, sem um usuário conectado. |Não | Não |
 |TeamMember.Read.Group | Leia os membros desta equipe. | Leia os membros desta equipe, sem um usuário está conectado. |Não | Não |
 |Member.Read.Group | Leia os membros deste grupo.| Excluir os membros desse grupo, sem um usuário conectado. |Não | Não |
 |Owner.Read.Group| Leia os proprietários deste grupo.    | Ler os proprietários desse grupo, sem um usuário conectado. |Não | Não |
+|File.Read.Group| Leia os arquivos e pastas desta equipe. | **Suporte limitado** <br/> (Visualização) Leia os arquivos e pastas desta equipe, sem usuários conectados. | Não | Não |
 
 ## <a name="teams-settings-permissions"></a>Permissões de configurações do Teams
 
