@@ -1,22 +1,22 @@
 ---
-title: Criar um cliente do Microsoft Graph
-description: Descreve como criar um cliente a ser usado para fazer chamadas ao Microsoft Graph. Inclui como configurar a autenticação e selecionar uma nuvem soberana.
+title: Criar um cliente microsoft Graph
+description: Descreve como criar um cliente a ser usado para fazer chamadas para o Microsoft Graph. Inclui como configurar a autenticação e selecionar uma nuvem soberana.
 localization_priority: Normal
 author: MichaelMainer
-ms.openlocfilehash: f32a779ac57d88da1ea66820a2b5a0bb30cbb89e
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 0256ad20b3078c081102221189a12e27432df058
+ms.sourcegitcommit: 99fdbd9a1806d64626423e1f39342dcde8a1eaf4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50953352"
+ms.lasthandoff: 06/16/2021
+ms.locfileid: "52971357"
 ---
-# <a name="create-a-microsoft-graph-client"></a><span data-ttu-id="24af7-104">Criar um cliente do Microsoft Graph</span><span class="sxs-lookup"><span data-stu-id="24af7-104">Create a Microsoft Graph client</span></span>
+# <a name="create-a-microsoft-graph-client"></a><span data-ttu-id="9c37a-104">Criar um cliente microsoft Graph</span><span class="sxs-lookup"><span data-stu-id="9c37a-104">Create a Microsoft Graph client</span></span>
 
-<span data-ttu-id="24af7-105">O cliente do Microsoft Graph foi projetado para facilitar as chamadas para o Microsoft Graph.</span><span class="sxs-lookup"><span data-stu-id="24af7-105">The Microsoft Graph client is designed to make it simple to make calls to Microsoft Graph.</span></span> <span data-ttu-id="24af7-106">Você pode usar uma única instância do cliente durante o tempo de vida do aplicativo.</span><span class="sxs-lookup"><span data-stu-id="24af7-106">You can use a single client instance for the lifetime of the application.</span></span> <span data-ttu-id="24af7-107">Para obter informações sobre como adicionar e instalar o pacote cliente do Microsoft Graph em seu projeto, consulte  [Install the SDK](sdk-installation.md).</span><span class="sxs-lookup"><span data-stu-id="24af7-107">For information about how to add and install the Microsoft Graph client package into your project, see  [Install the SDK](sdk-installation.md).</span></span>
+<span data-ttu-id="9c37a-105">O cliente Graph Microsoft foi projetado para facilitar as chamadas para o Microsoft Graph.</span><span class="sxs-lookup"><span data-stu-id="9c37a-105">The Microsoft Graph client is designed to make it simple to make calls to Microsoft Graph.</span></span> <span data-ttu-id="9c37a-106">Você pode usar uma única instância do cliente durante o tempo de vida do aplicativo.</span><span class="sxs-lookup"><span data-stu-id="9c37a-106">You can use a single client instance for the lifetime of the application.</span></span> <span data-ttu-id="9c37a-107">Para obter informações sobre como adicionar e instalar o pacote de cliente microsoft Graph em seu projeto, consulte [Install the SDK](sdk-installation.md).</span><span class="sxs-lookup"><span data-stu-id="9c37a-107">For information about how to add and install the Microsoft Graph client package into your project, see  [Install the SDK](sdk-installation.md).</span></span>
 
-<span data-ttu-id="24af7-108">Os exemplos de código a seguir mostram como criar uma instância de um cliente do Microsoft Graph com um provedor de autenticação nos idiomas suportados.</span><span class="sxs-lookup"><span data-stu-id="24af7-108">The following code examples show how to create an instance of a Microsoft Graph client with an authentication provider in the supported languages.</span></span> <span data-ttu-id="24af7-109">O provedor de autenticação tratará da aquisição de tokens de acesso para o aplicativo.</span><span class="sxs-lookup"><span data-stu-id="24af7-109">The authentication provider will handle acquiring access tokens for the application.</span></span> <span data-ttu-id="24af7-110">Muitos provedores de autenticação diferentes estão disponíveis para cada idioma e plataforma.</span><span class="sxs-lookup"><span data-stu-id="24af7-110">Many different authentication providers are available for each language and platform.</span></span> <span data-ttu-id="24af7-111">Os diferentes provedores de aplicativos suportam diferentes cenários de cliente.</span><span class="sxs-lookup"><span data-stu-id="24af7-111">The different application providers support different client scenarios.</span></span> <span data-ttu-id="24af7-112">Para obter detalhes sobre quais provedores e opções são apropriados para seu cenário, consulte [Choose an Authentication Provider](choose-authentication-providers.md).</span><span class="sxs-lookup"><span data-stu-id="24af7-112">For details about which provider and options are appropriate for your scenario, see [Choose an Authentication Provider](choose-authentication-providers.md).</span></span>
+<span data-ttu-id="9c37a-108">Os exemplos de código a seguir mostram como criar uma instância de um cliente microsoft Graph com um provedor de autenticação nos idiomas suportados.</span><span class="sxs-lookup"><span data-stu-id="9c37a-108">The following code examples show how to create an instance of a Microsoft Graph client with an authentication provider in the supported languages.</span></span> <span data-ttu-id="9c37a-109">O provedor de autenticação tratará da aquisição de tokens de acesso para o aplicativo.</span><span class="sxs-lookup"><span data-stu-id="9c37a-109">The authentication provider will handle acquiring access tokens for the application.</span></span> <span data-ttu-id="9c37a-110">Muitos provedores de autenticação diferentes estão disponíveis para cada idioma e plataforma.</span><span class="sxs-lookup"><span data-stu-id="9c37a-110">Many different authentication providers are available for each language and platform.</span></span> <span data-ttu-id="9c37a-111">Os diferentes provedores de aplicativos suportam diferentes cenários de cliente.</span><span class="sxs-lookup"><span data-stu-id="9c37a-111">The different application providers support different client scenarios.</span></span> <span data-ttu-id="9c37a-112">Para obter detalhes sobre quais provedores e opções são apropriados para seu cenário, consulte [Choose an Authentication Provider](choose-authentication-providers.md).</span><span class="sxs-lookup"><span data-stu-id="9c37a-112">For details about which provider and options are appropriate for your scenario, see [Choose an Authentication Provider](choose-authentication-providers.md).</span></span>
 
-# <a name="c"></a>[<span data-ttu-id="24af7-113">C#</span><span class="sxs-lookup"><span data-stu-id="24af7-113">C#</span></span>](#tab/CS)
+# <a name="c"></a>[<span data-ttu-id="9c37a-113">C#</span><span class="sxs-lookup"><span data-stu-id="9c37a-113">C#</span></span>](#tab/CS)
 
 ```csharp
 // Build a client application.
@@ -29,23 +29,25 @@ DeviceCodeProvider authProvider = new DeviceCodeProvider(publicClientApplication
 GraphServiceClient graphClient = new GraphServiceClient(authProvider);
 ```
 
-# <a name="javascript"></a>[<span data-ttu-id="24af7-114">Javascript</span><span class="sxs-lookup"><span data-stu-id="24af7-114">Javascript</span></span>](#tab/Javascript)
+# <a name="javascript"></a>[<span data-ttu-id="9c37a-114">Javascript</span><span class="sxs-lookup"><span data-stu-id="9c37a-114">Javascript</span></span>](#tab/Javascript)
 
 ```javascript
 const clientId = "INSERT-CLIENT-APP-ID"; // Client Id of the registered application
-const callback = (errorDesc, token, error, tokenType) => {};
-// An Optional options for initializing the MSAL @see https://github.com/AzureAD/microsoft-authentication-library-for-js/wiki/MSAL-basics#configuration-options
-const options = {
-    redirectUri: "Your redirect URI",
-};
-const graphScopes = ["user.read", "mail.send"]; // An array of graph scopes
 
-// Initialize the MSAL @see https://github.com/AzureAD/microsoft-authentication-library-for-js/wiki/MSAL-basics#initialization-of-msal
-const userAgentApplication = new UserAgentApplication(clientId, undefined, callback, options);
-const authProvider = new MSALAuthenticationProvider(userAgentApplication, graphScopes );
+/**
+* Create an authProvider to authenticate againt the Microsoft Graph API.
+* You can use the TokenCredentialAuthenticationProvider instance with @azure/identity library or
+* you can authentication using any MSAL auth library with a custom authentication provider.
+*/
+const credential = new ClientSecretCredential(tenantId, clientId, clientSecret);
+const authProvider = new TokenCredentialAuthenticationProvider(credential, { scopes: [scopes] });
+const client = Client.initWithMiddleware({
+    debugLogging: true,
+    authProvider,
+});
 ```
 
-# <a name="java"></a>[<span data-ttu-id="24af7-115">Java</span><span class="sxs-lookup"><span data-stu-id="24af7-115">Java</span></span>](#tab/Java)
+# <a name="java"></a>[<span data-ttu-id="9c37a-115">Java</span><span class="sxs-lookup"><span data-stu-id="9c37a-115">Java</span></span>](#tab/Java)
 
 ```java
 final ClientSecretCredential clientSecretCredential = new ClientSecretCredentialBuilder()
@@ -62,7 +64,7 @@ final GraphServiceClient graphClient = GraphServiceClient
                 .buildClient();
 ```
 
-# <a name="android"></a>[<span data-ttu-id="24af7-116">Android</span><span class="sxs-lookup"><span data-stu-id="24af7-116">Android</span></span>](#tab/Android)
+# <a name="android"></a>[<span data-ttu-id="9c37a-116">Android</span><span class="sxs-lookup"><span data-stu-id="9c37a-116">Android</span></span>](#tab/Android)
 
 ```java
 final InteractiveBrowserCredential interactiveBrowserCredential = new InteractiveBrowserCredentialBuilder()
@@ -78,7 +80,7 @@ GraphServiceClient graphClient = GraphServiceClient
                 .buildClient();
 ```
 
-# <a name="objective-c"></a>[<span data-ttu-id="24af7-117">Objective-C</span><span class="sxs-lookup"><span data-stu-id="24af7-117">Objective-C</span></span>](#tab/Objective-C)
+# <a name="objective-c"></a>[<span data-ttu-id="9c37a-117">Objective-C</span><span class="sxs-lookup"><span data-stu-id="9c37a-117">Objective-C</span></span>](#tab/Objective-C)
 
 ```objc
 // Create the authenticationProvider.
@@ -104,7 +106,7 @@ MSURLSessionDataTask *meDataTask = [httpClient dataTaskWithRequest:urlRequest
 [meDataTask execute];
 ```
 
-# <a name="php"></a>[<span data-ttu-id="24af7-118">PHP</span><span class="sxs-lookup"><span data-stu-id="24af7-118">PHP</span></span>](#tab/PHP)
+# <a name="php"></a>[<span data-ttu-id="9c37a-118">PHP</span><span class="sxs-lookup"><span data-stu-id="9c37a-118">PHP</span></span>](#tab/PHP)
 
 ```php
 // PHP client currently doesn't have an authentication provider. You will need to handle

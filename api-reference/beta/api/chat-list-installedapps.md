@@ -5,38 +5,40 @@ author: subray
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 1fc41102d92926e52b5703d3732a4eba02b3b06f
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: 5e53e1218edd2fc994fb489461f7b782bb7a10a2
+ms.sourcegitcommit: 99fdbd9a1806d64626423e1f39342dcde8a1eaf4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50770106"
+ms.lasthandoff: 06/16/2021
+ms.locfileid: "52971311"
 ---
-# <a name="list-apps-in-chat"></a><span data-ttu-id="cc443-103">Listar aplicativos no chat</span><span class="sxs-lookup"><span data-stu-id="cc443-103">List apps in chat</span></span>
+# <a name="list-apps-in-chat"></a><span data-ttu-id="fdafa-103">Listar aplicativos no chat</span><span class="sxs-lookup"><span data-stu-id="fdafa-103">List apps in chat</span></span>
 
-<span data-ttu-id="cc443-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="cc443-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="fdafa-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="fdafa-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="cc443-105">Listar todas as [instalações de aplicativos](../resources/teamsappinstallation.md) em um [chat](../resources/chat.md).</span><span class="sxs-lookup"><span data-stu-id="cc443-105">List all [app installations](../resources/teamsappinstallation.md) within a [chat](../resources/chat.md).</span></span>
+<span data-ttu-id="fdafa-105">Listar todas as [instalações de aplicativos](../resources/teamsappinstallation.md) em um [chat](../resources/chat.md).</span><span class="sxs-lookup"><span data-stu-id="fdafa-105">List all [app installations](../resources/teamsappinstallation.md) within a [chat](../resources/chat.md).</span></span>
 
-> <span data-ttu-id="cc443-106">**Observação**: se o chat estiver associado a uma instância do [onlineMeeting](../resources/onlinemeeting.md), então, efetivamente, os **teamsApp** s instalados na reunião serão listados.</span><span class="sxs-lookup"><span data-stu-id="cc443-106">**Note**: If the chat is associated with an [onlineMeeting](../resources/onlinemeeting.md) instance, then, effectively, the **teamsApp** s installed in the meeting will be listed.</span></span>
+> <span data-ttu-id="fdafa-106">**Observação**: se o chat estiver associado a uma instância do [onlineMeeting](../resources/onlinemeeting.md), então, efetivamente, os **teamsApp** s instalados na reunião serão listados.</span><span class="sxs-lookup"><span data-stu-id="fdafa-106">**Note**: If the chat is associated with an [onlineMeeting](../resources/onlinemeeting.md) instance, then, effectively, the **teamsApp** s installed in the meeting will be listed.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="cc443-107">O `id` de um recurso **teamsAppInstallation** não é o mesmo valor que o `id` do recurso **teamsApp** associado.</span><span class="sxs-lookup"><span data-stu-id="cc443-107">The `id` of a **teamsAppInstallation** resource is not the same value as the `id` of the associated **teamsApp** resource.</span></span>
+> <span data-ttu-id="fdafa-107">O `id` de um recurso **teamsAppInstallation** não é o mesmo valor que o `id` do recurso **teamsApp** associado.</span><span class="sxs-lookup"><span data-stu-id="fdafa-107">The `id` of a **teamsAppInstallation** resource is not the same value as the `id` of the associated **teamsApp** resource.</span></span>
 
 
-## <a name="permissions"></a><span data-ttu-id="cc443-108">Permissions</span><span class="sxs-lookup"><span data-stu-id="cc443-108">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="fdafa-108">Permissions</span><span class="sxs-lookup"><span data-stu-id="fdafa-108">Permissions</span></span>
 
-<span data-ttu-id="cc443-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="cc443-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="fdafa-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="fdafa-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="cc443-111">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="cc443-111">Permission type</span></span>      | <span data-ttu-id="cc443-112">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="cc443-112">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="fdafa-111">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="fdafa-111">Permission type</span></span>      | <span data-ttu-id="fdafa-112">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="fdafa-112">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="cc443-113">Delegada (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="cc443-113">Delegated (work or school account)</span></span> | <span data-ttu-id="cc443-114">TeamsAppInstallation.ReadForChat, TeamsAppInstallation.ReadWriteSelfForChat, TeamsAppInstallation.ReadWriteForChat</span><span class="sxs-lookup"><span data-stu-id="cc443-114">TeamsAppInstallation.ReadForChat, TeamsAppInstallation.ReadWriteSelfForChat, TeamsAppInstallation.ReadWriteForChat</span></span> |
-|<span data-ttu-id="cc443-115">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="cc443-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="cc443-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="cc443-116">Not supported.</span></span>    |
-|<span data-ttu-id="cc443-117">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="cc443-117">Application</span></span> | <span data-ttu-id="cc443-118">TeamsAppInstallation.ReadForChat.All, TeamsAppInstallation.ReadWriteSelfForChat.All, TeamsAppInstallation.ReadWriteForChat.All</span><span class="sxs-lookup"><span data-stu-id="cc443-118">TeamsAppInstallation.ReadForChat.All, TeamsAppInstallation.ReadWriteSelfForChat.All, TeamsAppInstallation.ReadWriteForChat.All</span></span> |
+|<span data-ttu-id="fdafa-113">Delegada (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="fdafa-113">Delegated (work or school account)</span></span> | <span data-ttu-id="fdafa-114">TeamsAppInstallation.ReadForChat, TeamsAppInstallation.ReadWriteSelfForChat, TeamsAppInstallation.ReadWriteForChat</span><span class="sxs-lookup"><span data-stu-id="fdafa-114">TeamsAppInstallation.ReadForChat, TeamsAppInstallation.ReadWriteSelfForChat, TeamsAppInstallation.ReadWriteForChat</span></span> |
+|<span data-ttu-id="fdafa-115">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="fdafa-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="fdafa-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="fdafa-116">Not supported.</span></span>    |
+|<span data-ttu-id="fdafa-117">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="fdafa-117">Application</span></span> | <span data-ttu-id="fdafa-118">TeamsAppInstallation.Read.Chat *, Chat.Manage.Chat*, TeamsAppInstallation.ReadForChat.All, TeamsAppInstallation.ReadWriteSelfForChat.All, TeamsAppInstallation.ReadWriteForChat.All</span><span class="sxs-lookup"><span data-stu-id="fdafa-118">TeamsAppInstallation.Read.Chat *, Chat.Manage.Chat*, TeamsAppInstallation.ReadForChat.All, TeamsAppInstallation.ReadWriteSelfForChat.All, TeamsAppInstallation.ReadWriteForChat.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="cc443-119">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="cc443-119">HTTP request</span></span>
+> <span data-ttu-id="fdafa-119">**Observação**: Permissões marcadas com \* usam [consentimento específico de recurso](https://aka.ms/teams-rsc).</span><span class="sxs-lookup"><span data-stu-id="fdafa-119">**Note**: Permissions marked with \* use [resource-specific consent](https://aka.ms/teams-rsc).</span></span>
+
+## <a name="http-request"></a><span data-ttu-id="fdafa-120">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="fdafa-120">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -44,32 +46,32 @@ ms.locfileid: "50770106"
 GET /chats/{chat-id}/installedApps
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="cc443-120">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="cc443-120">Optional query parameters</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="fdafa-121">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="fdafa-121">Optional query parameters</span></span>
 
-<span data-ttu-id="cc443-121">Este método suporta o `$filter`, `$select`, e `$expand` [parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="cc443-121">This method supports the `$filter`, `$select`, and `$expand` [OData query parameters](/graph/query-parameters) to help customize the response.</span></span>
+<span data-ttu-id="fdafa-122">Este método suporta o `$filter`, `$select`, e `$expand` [parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="fdafa-122">This method supports the `$filter`, `$select`, and `$expand` [OData query parameters](/graph/query-parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="cc443-122">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="cc443-122">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="fdafa-123">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="fdafa-123">Request headers</span></span>
 
-| <span data-ttu-id="cc443-123">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="cc443-123">Header</span></span>       | <span data-ttu-id="cc443-124">Valor</span><span class="sxs-lookup"><span data-stu-id="cc443-124">Value</span></span> |
+| <span data-ttu-id="fdafa-124">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="fdafa-124">Header</span></span>       | <span data-ttu-id="fdafa-125">Valor</span><span class="sxs-lookup"><span data-stu-id="fdafa-125">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="cc443-125">Autorização</span><span class="sxs-lookup"><span data-stu-id="cc443-125">Authorization</span></span>  | <span data-ttu-id="cc443-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="cc443-p102">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="fdafa-126">Autorização</span><span class="sxs-lookup"><span data-stu-id="fdafa-126">Authorization</span></span>  | <span data-ttu-id="fdafa-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="fdafa-p102">Bearer {token}. Required.</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="cc443-128">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="cc443-128">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="fdafa-129">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="fdafa-129">Request body</span></span>
 
-<span data-ttu-id="cc443-129">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="cc443-129">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="fdafa-130">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="fdafa-130">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="cc443-130">Resposta</span><span class="sxs-lookup"><span data-stu-id="cc443-130">Response</span></span>
+## <a name="response"></a><span data-ttu-id="fdafa-131">Resposta</span><span class="sxs-lookup"><span data-stu-id="fdafa-131">Response</span></span>
 
-<span data-ttu-id="cc443-131">Se bem-sucedido, este método retorna um código de resposta `200 OK` e uma coleção de objetos [directoryObject](../resources/teamsappinstallation.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="cc443-131">If successful, this method returns a `200 OK` response code and a collection of [teamsAppInstallation](../resources/teamsappinstallation.md) objects in the response body.</span></span>
+<span data-ttu-id="fdafa-132">Se bem-sucedido, este método retorna um código de resposta `200 OK` e uma coleção de objetos [directoryObject](../resources/teamsappinstallation.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="fdafa-132">If successful, this method returns a `200 OK` response code and a collection of [teamsAppInstallation](../resources/teamsappinstallation.md) objects in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="cc443-132">Exemplos</span><span class="sxs-lookup"><span data-stu-id="cc443-132">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="fdafa-133">Exemplos</span><span class="sxs-lookup"><span data-stu-id="fdafa-133">Examples</span></span>
 
-### <a name="example-1-get-all-the-apps-installed-in-the-specified-chat"></a><span data-ttu-id="cc443-133">Exemplo 1: obter todos os aplicativos instalados no chat especificado</span><span class="sxs-lookup"><span data-stu-id="cc443-133">Example 1: Get all the apps installed in the specified chat</span></span>
+### <a name="example-1-get-all-the-apps-installed-in-the-specified-chat"></a><span data-ttu-id="fdafa-134">Exemplo 1: obter todos os aplicativos instalados no chat especificado</span><span class="sxs-lookup"><span data-stu-id="fdafa-134">Example 1: Get all the apps installed in the specified chat</span></span>
 
-#### <a name="request"></a><span data-ttu-id="cc443-134">Solicitação</span><span class="sxs-lookup"><span data-stu-id="cc443-134">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="fdafa-135">Solicitação</span><span class="sxs-lookup"><span data-stu-id="fdafa-135">Request</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="cc443-135">HTTP</span><span class="sxs-lookup"><span data-stu-id="cc443-135">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="fdafa-136">HTTP</span><span class="sxs-lookup"><span data-stu-id="fdafa-136">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_installed_apps_in_chat"
@@ -79,26 +81,26 @@ GET /chats/{chat-id}/installedApps
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/chats/19%3Ad65713bc498c4a428c71ef9353e6ce20%40thread.v2/installedApps
 ```
-# <a name="c"></a>[<span data-ttu-id="cc443-136">C#</span><span class="sxs-lookup"><span data-stu-id="cc443-136">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="fdafa-137">C#</span><span class="sxs-lookup"><span data-stu-id="fdafa-137">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-installed-apps-in-chat-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="cc443-137">JavaScript</span><span class="sxs-lookup"><span data-stu-id="cc443-137">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="fdafa-138">JavaScript</span><span class="sxs-lookup"><span data-stu-id="fdafa-138">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/list-installed-apps-in-chat-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="cc443-138">Objective-C</span><span class="sxs-lookup"><span data-stu-id="cc443-138">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="fdafa-139">Objective-C</span><span class="sxs-lookup"><span data-stu-id="fdafa-139">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/list-installed-apps-in-chat-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="cc443-139">Java</span><span class="sxs-lookup"><span data-stu-id="cc443-139">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="fdafa-140">Java</span><span class="sxs-lookup"><span data-stu-id="fdafa-140">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/list-installed-apps-in-chat-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="cc443-140">Resposta</span><span class="sxs-lookup"><span data-stu-id="cc443-140">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="fdafa-141">Resposta</span><span class="sxs-lookup"><span data-stu-id="fdafa-141">Response</span></span>
 
 <!-- {
   "blockType": "response",
@@ -127,11 +129,11 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-get-the-names-and-other-details-of-apps-installed-in-the-specified-chat"></a><span data-ttu-id="cc443-141">Exemplo 2: obter os nomes e outros detalhes dos aplicativos instalados no chat especificado</span><span class="sxs-lookup"><span data-stu-id="cc443-141">Example 2: Get the names and other details of apps installed in the specified chat</span></span>
+### <a name="example-2-get-the-names-and-other-details-of-apps-installed-in-the-specified-chat"></a><span data-ttu-id="fdafa-142">Exemplo 2: obter os nomes e outros detalhes dos aplicativos instalados no chat especificado</span><span class="sxs-lookup"><span data-stu-id="fdafa-142">Example 2: Get the names and other details of apps installed in the specified chat</span></span>
 
-<span data-ttu-id="cc443-142">No exemplo a seguir, se uma instância de um aplicativo instalado tiver um [bot](../resources/teamworkbot.md) associado a ele, os detalhes do bot também serão retornados.</span><span class="sxs-lookup"><span data-stu-id="cc443-142">In the following example, if an instance of an installed app has a [bot](../resources/teamworkbot.md) associated with it, then the details of the bot are returned as well.</span></span>
+<span data-ttu-id="fdafa-143">No exemplo a seguir, se uma instância de um aplicativo instalado tiver um [bot](../resources/teamworkbot.md) associado a ele, os detalhes do bot também serão retornados.</span><span class="sxs-lookup"><span data-stu-id="fdafa-143">In the following example, if an instance of an installed app has a [bot](../resources/teamworkbot.md) associated with it, then the details of the bot are returned as well.</span></span>
 
-#### <a name="request"></a><span data-ttu-id="cc443-143">Solicitação</span><span class="sxs-lookup"><span data-stu-id="cc443-143">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="fdafa-144">Solicitação</span><span class="sxs-lookup"><span data-stu-id="fdafa-144">Request</span></span>
 
 
 <!-- {
@@ -144,7 +146,7 @@ Content-type: application/json
 GET https://graph.microsoft.com/beta/chats/19%3Ad65713bc498c4a428c71ef9353e6ce20%40thread.v2/installedApps?$expand=teamsAppDefinition($expand=bot)
 ```
 
-#### <a name="response"></a><span data-ttu-id="cc443-144">Resposta</span><span class="sxs-lookup"><span data-stu-id="cc443-144">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="fdafa-145">Resposta</span><span class="sxs-lookup"><span data-stu-id="fdafa-145">Response</span></span>
 
 <!-- {
   "blockType": "response",
@@ -215,13 +217,13 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-3-get-the-app-installation-resource-based-on-the-manifest-id-of-the-associated-app"></a><span data-ttu-id="cc443-145">Exemplo 3: obter o recurso de instalação de aplicativo com base na ID de manifesto do aplicativo associado</span><span class="sxs-lookup"><span data-stu-id="cc443-145">Example 3: Get the app installation resource based on the manifest id of the associated app</span></span>
+### <a name="example-3-get-the-app-installation-resource-based-on-the-manifest-id-of-the-associated-app"></a><span data-ttu-id="fdafa-146">Exemplo 3: obter o recurso de instalação de aplicativo com base na ID de manifesto do aplicativo associado</span><span class="sxs-lookup"><span data-stu-id="fdafa-146">Example 3: Get the app installation resource based on the manifest id of the associated app</span></span>
 
-#### <a name="request"></a><span data-ttu-id="cc443-146">Solicitação</span><span class="sxs-lookup"><span data-stu-id="cc443-146">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="fdafa-147">Solicitação</span><span class="sxs-lookup"><span data-stu-id="fdafa-147">Request</span></span>
 
-<span data-ttu-id="cc443-147">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="cc443-147">The following is an example of the request.</span></span> <span data-ttu-id="cc443-148">No exemplo, a ID de manifesto do aplicativo Teams é 'cf1ba4c7-f94e-4d80-ba90-5594b641a8ee'.</span><span class="sxs-lookup"><span data-stu-id="cc443-148">In the example, the manifest ID of the Teams app is 'cf1ba4c7-f94e-4d80-ba90-5594b641a8ee'.</span></span>
+<span data-ttu-id="fdafa-148">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="fdafa-148">The following is an example of the request.</span></span> <span data-ttu-id="fdafa-149">No exemplo, a ID de manifesto do aplicativo Teams é 'cf1ba4c7-f94e-4d80-ba90-5594b641a8ee'.</span><span class="sxs-lookup"><span data-stu-id="fdafa-149">In the example, the manifest ID of the Teams app is 'cf1ba4c7-f94e-4d80-ba90-5594b641a8ee'.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="cc443-149">HTTP</span><span class="sxs-lookup"><span data-stu-id="cc443-149">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="fdafa-150">HTTP</span><span class="sxs-lookup"><span data-stu-id="fdafa-150">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_installed_apps_in_chat_expand_filter"
@@ -229,30 +231,30 @@ Content-type: application/json
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/chats/19%3Ad65713bc498c4a428c71ef9353e6ce20%40thread.v2/installedApps?$expand=teamsApp,teamsAppDefinition&$filter=teamsApp/externalId eq 'cf1ba4c7-f94e-4d80-ba90-5594b641a8ee'
 ```
-# <a name="c"></a>[<span data-ttu-id="cc443-150">C#</span><span class="sxs-lookup"><span data-stu-id="cc443-150">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="fdafa-151">C#</span><span class="sxs-lookup"><span data-stu-id="fdafa-151">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-installed-apps-in-chat-expand-filter-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="cc443-151">JavaScript</span><span class="sxs-lookup"><span data-stu-id="cc443-151">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="fdafa-152">JavaScript</span><span class="sxs-lookup"><span data-stu-id="fdafa-152">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/list-installed-apps-in-chat-expand-filter-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="cc443-152">Objective-C</span><span class="sxs-lookup"><span data-stu-id="cc443-152">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="fdafa-153">Objective-C</span><span class="sxs-lookup"><span data-stu-id="fdafa-153">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/list-installed-apps-in-chat-expand-filter-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="cc443-153">Java</span><span class="sxs-lookup"><span data-stu-id="cc443-153">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="fdafa-154">Java</span><span class="sxs-lookup"><span data-stu-id="fdafa-154">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/list-installed-apps-in-chat-expand-filter-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="cc443-154">Resposta</span><span class="sxs-lookup"><span data-stu-id="cc443-154">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="fdafa-155">Resposta</span><span class="sxs-lookup"><span data-stu-id="fdafa-155">Response</span></span>
 
-<span data-ttu-id="cc443-155">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="cc443-155">The following is an example of the response.</span></span>
+<span data-ttu-id="fdafa-156">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="fdafa-156">The following is an example of the response.</span></span>
 
-><span data-ttu-id="cc443-156">**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.</span><span class="sxs-lookup"><span data-stu-id="cc443-156">**Note:** The response object shown here might be shortened for readability.</span></span> 
+><span data-ttu-id="fdafa-157">**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.</span><span class="sxs-lookup"><span data-stu-id="fdafa-157">**Note:** The response object shown here might be shortened for readability.</span></span> 
 <!-- {
   "blockType": "response",
   "name": "list_installed_apps_in_chat_expand_filter",
@@ -295,8 +297,8 @@ Content-type: application/json
 }
 ```
 
-## <a name="see-also"></a><span data-ttu-id="cc443-157">Confira também</span><span class="sxs-lookup"><span data-stu-id="cc443-157">See also</span></span>
-- [<span data-ttu-id="cc443-158">Listar aplicativos no catálogo</span><span class="sxs-lookup"><span data-stu-id="cc443-158">List apps in catalog</span></span>](appcatalogs-list-teamsapps.md)
+## <a name="see-also"></a><span data-ttu-id="fdafa-158">Confira também</span><span class="sxs-lookup"><span data-stu-id="fdafa-158">See also</span></span>
+- [<span data-ttu-id="fdafa-159">Listar aplicativos no catálogo</span><span class="sxs-lookup"><span data-stu-id="fdafa-159">List apps in catalog</span></span>](appcatalogs-list-teamsapps.md)
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!-- {
