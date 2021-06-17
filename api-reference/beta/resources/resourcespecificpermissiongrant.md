@@ -5,12 +5,12 @@ author: AkJo
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 7119d25f25b0e4f382a077ca6a1264dc22e11d5b
-ms.sourcegitcommit: 412507a3c3a8e407fcc43b7cd227d4db35791f58
+ms.openlocfilehash: 56d7ea203f4ed72f45a3650197c1484f817567e6
+ms.sourcegitcommit: 979fe005c74eb99cd971df6b9511b2d3f7fe3cd4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51765899"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52992307"
 ---
 # <a name="resourcespecificpermissiongrant-resource-type"></a>tipo de recurso resourceSpecificPermissionGrant
 
@@ -26,6 +26,7 @@ Um resourceSpecificPermissionGrant declara a permissão concedida a um aplicativ
 | :------------------------------------------------------------------------ | :------------------------------------------------------------------------------- | :----------------------------------------------------------- |
 |[Listar concessões de permissão de um chat](../api/chat-list-permissiongrants.md)   | [coleção resourceSpecificPermissionGrant](resourcespecificpermissiongrant.md) | Listar permissões concedidas em um chat específico.  |
 |[Listar concessões de permissão de um grupo](../api/group-list-permissiongrants.md) | [coleção resourceSpecificPermissionGrant](resourcespecificpermissiongrant.md) | Listar permissões concedidas em um grupo específico. |
+|[Listar concessões de permissão de uma equipe](../api/team-list-permissiongrants.md)   | [coleção resourceSpecificPermissionGrant](resourcespecificpermissiongrant.md) | Listar permissões concedidas em uma equipe específica.  |
 
 ## <a name="properties"></a>Propriedades
 

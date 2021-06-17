@@ -1,16 +1,16 @@
 ---
 title: Atualizar administrativeunit
 description: Atualize as propriedades de um objeto administrativeUnit.
-author: anandyadavMSFT
+author: DougKirschner
 localization_priority: Normal
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: c02cb7944672c64f20768ed0edc0ca254564fc62
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 8f5974a1f0e599bd47708e50c6c551d151e9acb2
+ms.sourcegitcommit: 979fe005c74eb99cd971df6b9511b2d3f7fe3cd4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52786605"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52991887"
 ---
 # <a name="update-administrativeunit"></a>Atualizar administrativeunit
 
@@ -25,7 +25,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | AdministrativeUnit.ReadWrite.All, Directory.AccessAsUser.All    |
+|Delegada (conta corporativa ou de estudante) | AdministrativeUnit.ReadWrite.All, Directory.AccessAsUser.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | AdministrativeUnit.ReadWrite.All |
 
@@ -48,7 +48,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 | Propriedade   | Tipo |Descrição|
 |:---------------|:--------|:----------|
 |description|string|Descrição da unidade administrativa.|
-|displayName|cadeia de caracteres|Nome de exibição da unidade administrativa.|
+|displayName|string|Nome de exibição da unidade administrativa.|
 |visibilidade|string|Visibilidade da unidade administrativa. Se não for definido, o padrão será "público". Pode ser definido como "HiddenMembership", que oculta a associação de não membros.|
 
 Como o **recurso administrativeUnit** dá suporte a extensões, você pode usar a operação para adicionar, atualizar ou excluir seus próprios dados específicos do aplicativo em propriedades [personalizadas](/graph/extensibility-overview)de uma extensão em uma instância `PATCH` **administrativeUnit** existente.
