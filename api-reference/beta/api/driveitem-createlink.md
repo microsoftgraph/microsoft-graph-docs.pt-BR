@@ -5,12 +5,12 @@ title: 'driveItem: createLink'
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: a6f3c172efdec9decf2f054a8afbb8d7ccf53034
-ms.sourcegitcommit: e4461c7eb8c3d265fc1aa766125e81b58c6e1099
+ms.openlocfilehash: b471e95a07a0f7ec8c375d098b3875b8951e893e
+ms.sourcegitcommit: 99fdbd9a1806d64626423e1f39342dcde8a1eaf4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "52941470"
+ms.lasthandoff: 06/16/2021
+ms.locfileid: "52971080"
 ---
 # <a name="driveitem-createlink"></a>driveItem: createLink
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Você pode usar a ação **createLink** para compartilhar um [DriveItem](../resources/driveitem.md) por meio de um link de compartilhamento.
+Você pode usar **a ação createLink** para compartilhar um [driveItem](../resources/driveitem.md) por meio de um link de compartilhamento.
 
 A ação **createLink** criará um novo link de compartilhamento se o tipo de link especificado não existir para o aplicativo de chamada. Se um link de compartilhamento do tipo especificado já existir para o aplicativo, o link de compartilhamento existente será retornado.
 
@@ -70,14 +70,14 @@ Os seguintes valores são permitidos para o parâmetro **type**.
 
 | Valor do tipo | Descrição                                                                                  |
 |:-----------|:---------------------------------------------------------------------------------------------|
-| modo de exibição           | Cria um link somente leitura para o Item.                                                                        |
-| review         | Cria um link de revisão para o Item. Essa opção só está disponível para arquivos em OneDrive for Business e SharePoint.                   |
-| edit           | Cria um link de leitura-gravação para o Item.                                                                       |
-| Incorporar          | Cria um link inbeddable para o Item.                                                                      |
-| blocksDownload | Cria um link somente leitura que bloqueia o download para o Item. Essa opção só está disponível para arquivos em OneDrive for Business e SharePoint.  |
-| createOnly     | Cria um link somente carregamento para o Item. Essa opção só está disponível para pastas em OneDrive for Business e SharePoint.             |
+| modo de exibição           | Cria um link somente leitura para **o driveItem**.                                                                        |
+| review         | Cria um link de revisão para **o driveItem**. Essa opção só está disponível para arquivos em OneDrive for Business e SharePoint.                   |
+| edit           | Cria um link de leitura-gravação para **o driveItem**.                                                                       |
+| Incorporar          | Cria um link inbeddable para **o driveItem**.                                                                      |
+| blocksDownload | Cria um link somente leitura que bloqueia o download para **o driveItem**. Essa opção só está disponível para arquivos em OneDrive for Business e SharePoint.  |
+| createOnly     | Cria um link somente para upload para **o driveItem**. Essa opção só está disponível para pastas em OneDrive for Business e SharePoint.             |
 | addressBar     | Cria o link padrão mostrado nas barras de endereço do navegador para arquivos recém-criados. Disponível apenas no OneDrive for Business e no SharePoint. O administrador da organização configura se esse tipo de link tem suporte e quais recursos são suportados por esse tipo de link. |
-| adminDefault   | Cria o link padrão para o DriveItem conforme determinado pelo administrador da organização. Disponível apenas no OneDrive for Business e no SharePoint. A política é imposta para a organização pelo administrador |
+| adminDefault   | Cria o link padrão para **o driveItem** conforme determinado pelo administrador da organização. Disponível apenas no OneDrive for Business e no SharePoint. A política é imposta para a organização pelo administrador |
 
 ### <a name="scope-types"></a>Tipos de escopo
 
@@ -93,12 +93,12 @@ Os seguintes valores são permitidos para o parâmetro **scope**.
 
 Se for bem-sucedido, esse método retornará um único recurso [Permission](../resources/permission.md) no corpo da resposta, que representa as permissões de compartilhamento solicitadas.
 
-A resposta será `201 Created` se um novo link de compartilhamento for criado para o item ou `200 OK` se um link existente for retornado.
+A resposta será `201 Created` se um novo link de compartilhamento for criado para o **driveItem** ou `200 OK` se um link existente for retornado.
 
 ## <a name="examples"></a>Exemplos
 
 ### <a name="example-1-create-an-anonymous-sharing-link"></a>Exemplo 1: Criar um link de compartilhamento anônimo
-O exemplo a seguir solicita um link de compartilhamento que será criado para o DriveItem especificado por {itemId} no OneDrive do usuário.
+O exemplo a seguir solicita que um link de compartilhamento seja criado para **o driveItem** especificado por {itemId} no OneDrive.
 O link de compartilhamento é configurado como somente leitura e utilizável por qualquer pessoa com o link.
 
 #### <a name="request"></a>Solicitação
@@ -306,15 +306,15 @@ Content-Type: application/json
 
 ## <a name="remarks"></a>Comentários
 
-* Para criar um link com base na política padrão da organização e nas permissões do chamador no listItem, omita os parâmetros de escopo e de tipo
+* Para criar um link com base na política padrão da organização e nas permissões do chamador no **driveItem,** omita os parâmetros de escopo e de tipo
 * Links criados usando esta ação não expiram, a menos que uma política de expiração padrão seja imposta à organização.
-* Os links ficam visíveis nas permissões de compartilhamento do item e podem ser removidos por um proprietário desse item.
-* Os links sempre apontam para a versão atual de um item, a menos que esse item esteja em check-out (apenas no SharePoint).
+* Os links ficam visíveis nas permissões de compartilhamento do **driveItem** e podem ser removidos por um proprietário do **driveItem**.
+* Os links sempre apontam para a versão atual de **um driveItem,** a menos que **o driveItem** esteja com check-out (SharePoint somente).
 
 <!--
 {
   "type": "#page.annotation",
-  "description": "Create a new sharing link for an item.",
+  "description": "Create a new sharing link for a driveItem.",
   "keywords": "create,sharing,sharing link",
   "section": "documentation",
   "tocPath": "Sharing/Create link",

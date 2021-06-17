@@ -5,12 +5,12 @@ author: clearab
 doc_type: apiPageType
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: 1297f7434c7eba8c2145ad31a8c94a7b3a3fb1e8
-ms.sourcegitcommit: 08d47a31c48fd69ae4fcee26e34fdd65ad1ba69f
+ms.openlocfilehash: da8bfda45b92b748deda845d7202347888e72241
+ms.sourcegitcommit: 99fdbd9a1806d64626423e1f39342dcde8a1eaf4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51507289"
+ms.lasthandoff: 06/16/2021
+ms.locfileid: "52971297"
 ---
 # <a name="list-channels"></a>Listar canais
 
@@ -32,7 +32,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 > **Observação**: Permissões marcadas com * usam [consentimento específico de recurso]( https://aka.ms/teams-rsc).
 
-> **Observação**: esta API oferece transporte a permissões de administrador. Os administradores globais e os administradores do serviço do Microsoft Teams podem acessar equipes das quais eles não são membros.
+> **Observação**: esta API dá suporte a permissões de administrador. Os administradores globais e os administradores de serviços do Microsoft Teams podem acessar equipes das quais não são membros.
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -41,7 +41,11 @@ GET /teams/{team-id}/channels
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte aos [Parâmetros de consulta OData](/graph/query-parameters) $filter, $select e $expand para ajudar a personalizar a resposta.
+Este método suporta o `$filter`, `$select`, e `$expand` [parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
+
+### <a name="use-select-for-better-performance"></a>Use $select para melhorar o desempenho
+Preencher as propriedades **email** e **moderationSettings** de um canal é uma operação cara que resulta em desempenho lento. Use `$select` para excluir o **email** e as propriedades **moderationSettings** para melhorar o desempenho.
+
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 

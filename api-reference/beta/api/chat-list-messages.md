@@ -5,12 +5,12 @@ localization_priority: Priority
 author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 91f45f57fab749e0f9ec47937bd8b8897b55cea4
-ms.sourcegitcommit: a9a035e7cf7b500aebe5477c05361552e7c3a7ab
+ms.openlocfilehash: 0acd5466ff17fca1090d491708ce231f37a31f3c
+ms.sourcegitcommit: 99fdbd9a1806d64626423e1f39342dcde8a1eaf4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "52696118"
+ms.lasthandoff: 06/16/2021
+ms.locfileid: "52971290"
 ---
 # <a name="list-messages-in-a-chat"></a>Listar mensagens em um chat
 
@@ -30,7 +30,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | Chat.Read, Chat.ReadWrite |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | Chat.Read.All, Chat.ReadWrite.All |
+|Aplicativo | ChatMessage.Read.Chat*, Chat.Read.All, Chat.ReadWrite.All |
+
+> **Observação**: Permissões marcadas com * usam [consentimento específico de recurso]( https://aka.ms/teams-rsc).
 
 > [!NOTE]
 > É necessário solicitar acesso antes de chamar essa API com permissões de aplicativo. Para obter detalhes, confira [APIs protegidas no Microsoft Teams](/graph/teams-protected-apis).

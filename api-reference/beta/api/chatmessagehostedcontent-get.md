@@ -5,12 +5,12 @@ localization_priority: Normal
 author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 5a2729a3c78c1931afc57b308418a86ea06c446c
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: ea203243d7eb2fb5903c7cf61670d55f829963ce
+ms.sourcegitcommit: 99fdbd9a1806d64626423e1f39342dcde8a1eaf4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52786179"
+ms.lasthandoff: 06/16/2021
+ms.locfileid: "52971076"
 ---
 # <a name="get-chatmessagehostedcontent"></a>Obter chatMessageHostedContent
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 Recupere as propriedades e as relações do [objeto chatMessageHostedContent.](../resources/chatmessagehostedcontent.md)
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -30,7 +30,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---------------------------------------|:--------------------------------------------|
 |Delegado (conta corporativa ou de estudante)| ChannelMessage.Read.All, Group.Read.All, Group.Read.WriteAll |
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo| ChannelMessage.Read.Group, ChannelMessage.Read.All, Group.Read.All, Group.ReadWrite.All |
+|Aplicativo| ChannelMessage.Read.Group*, ChannelMessage.Read.All, Group.Read.All, Group.ReadWrite.All |
 
 ### <a name="permissions-for-chat"></a>Permissões para o chat
 
@@ -38,7 +38,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---------------------------------------|:--------------------------------------------|
 |Delegado (conta corporativa ou de estudante)| Chat.Read, Chat.ReadWrite|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo| Chat.Read.All, Chat.ReadWrite.All|
+|Aplicativo| ChatMessage.Read.Chat*, Chat.Read.All, Chat.ReadWrite.All|
 
 > **Observação**: Permissões marcadas com * usam [consentimento específico de recurso]( https://aka.ms/teams-rsc).
 

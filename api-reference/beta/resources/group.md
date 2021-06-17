@@ -5,12 +5,12 @@ localization_priority: Priority
 author: Jordanndahl
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: 9f8838a25b9eb65c1189d31e7b5bc20e07cfbab1
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: c03088614c32a7428355f37ec0b8f8fb5b1b49b4
+ms.sourcegitcommit: e4461c7eb8c3d265fc1aa766125e81b58c6e1099
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52682415"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "52941260"
 ---
 # <a name="group-resource-type"></a>tipo de recurso de grupo
 
@@ -113,10 +113,10 @@ Esse recurso permite:
 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|allowExternalSenders|Boolean| Indica se as pessoas externas à empresa podem enviar mensagens para o grupo. O valor padrão é `false`. <br><br>Retornado apenas em `$select`. Com suporte apenas para Obter API de grupo (`GET /groups/{ID}`) |
+|allowExternalSenders|Boolean| Indica se as pessoas externas à empresa podem enviar mensagens para o grupo. O valor padrão é `false`. <br><br>Retornado apenas em `$select`. Suportado apenas para Obter API de grupo (`GET /groups/{ID}`). |
 |assignedLabels|coleção [assignedLabel](assignedlabel.md)|Lista de pares de rótulos de confidencialidade (ID do rótulo, nome do rótulo) associados a um grupo do Microsoft 365. <br><br>Retornado apenas em `$select`.|
 |assignedLicenses|Coleção [assignedLicense](assignedlicense.md)|As licenças que são atribuídas ao grupo. <br><br>Retornado apenas em `$select`. Somente leitura.|
-|autoSubscribeNewMembers|Boolean|Indica se novos membros adicionados ao grupo serão automaticamente inscritos para receberem notificações por email. Você pode definir essa propriedade em uma solicitação PATCH para o grupo. Não a defina na solicitação POST inicial que cria esse grupo. O valor padrão é `false`. <br><br>Retornado apenas em `$select`. Com suporte apenas para Obter API de grupo (`GET /groups/{ID}`)|
+|autoSubscribeNewMembers|Boolean|Indica se novos membros adicionados ao grupo serão automaticamente inscritos para receberem notificações por email. Você pode definir essa propriedade em uma solicitação PATCH para o grupo. Não a defina na solicitação POST inicial que cria esse grupo. O valor padrão é `false`. <br><br>Retornado apenas em `$select`. Suportado apenas para Obter API de grupo (`GET /groups/{ID}`).|
 |classificação|String|Descreve uma classificação para o grupo (como impacto comercial baixo, médio ou alto). Os valores válidos para esta propriedade são definidos criando um valor de [configuração](directorysetting.md) ClassificationList com base na [definição de modelo](directorysettingtemplate.md).<br><br>Retornado por padrão.|
 |createdByAppId|Cadeia de caracteres|ID do aplicativo usado para criar o grupo. Pode ser nulo para alguns grupos. <br><br>Retornado por padrão. Somente leitura. Oferece suporte para `$filter`.|
 |createdDateTime|DateTimeOffset| Carimbo de data/hora da ocasião em que o grupo foi criado. Não é possível modificar o valor e ele é preenchido automaticamente quando o grupo é criado. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`. <br><br>Retornado por padrão. Somente leitura. |
@@ -126,12 +126,12 @@ Esse recurso permite:
 |expirationDateTime|DateTimeOffset| Data e hora de quando o grupo está configurado para expirar. Não é possível modificar o valor e ele é preenchido automaticamente quando o grupo é criado. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`. <br><br>Retornado por padrão. Somente leitura. |
 |groupTypes|Coleção de cadeias de caracteres| Especifica o tipo de grupo e sua associação.  <br><br>Se a coleção contiver `Unified`, o grupo será um grupo do Microsoft 365; caso contrário, será um grupo de segurança ou um grupo de distribuição. Para obter detalhes, confira [visão geral sobre grupos](groups-overview.md).<br><br>Se a coleção inclui `DynamicMembership`, o grupo tem associação dinâmica; caso contrário, a associação é estática.  <br><br>Retornado por padrão. Oferece suporte para `$filter`.|
 |hasMembersWithLicenseErrors|Boolean| Indica se existem membros neste grupo com erros de licença da sua atribuição de licença baseada em grupo. <br><br>Esta propriedade nunca é retornada em uma operação GET. Você pode usá-lo como um argumento $filter para acessar os grupos que têm membros com erros de licença (ou seja, o filtro para essa propriedade é `true`).|
-|hideFromAddressLists |Booliano |`true` se o grupo não for exibido em certas partes da interface do usuário do Outlook: no **Catálogo de Endereços**, nas listas de endereços para selecionar os destinatários da mensagem e na caixa de diálogo **Procurar Grupos** para pesquisar grupos; caso contrário, false. O valor padrão é `false`. <br><br>Retornado apenas em `$select`. Com suporte apenas para Obter API de grupo (`GET /groups/{ID}`)|
-|hideFromOutlookClients |Booliano |`true` se o grupo não for exibido em clientes Outlook, como Outlook para Windows e Outlook na Web, caso contrário, false. O valor padrão é `false`. <br><br>Retornado apenas em `$select`. Com suporte apenas para Obter API de grupo (`GET /groups/{ID}`)|
+|hideFromAddressLists |Booliano |`true` se o grupo não for exibido em certas partes da interface do usuário do Outlook: no **Catálogo de Endereços**, nas listas de endereços para selecionar os destinatários da mensagem e na caixa de diálogo **Procurar Grupos** para pesquisar grupos; caso contrário, false. O valor padrão é `false`. <br><br>Retornado apenas em `$select`. Suportado apenas para Obter API de grupo (`GET /groups/{ID}`).|
+|hideFromOutlookClients |Booliano |`true` se o grupo não for exibido em clientes Outlook, como Outlook para Windows e Outlook na Web, caso contrário, false. O valor padrão é `false`. <br><br>Retornado apenas em `$select`. Suportado apenas para Obter API de grupo (`GET /groups/{ID}`).|
 |id|String|O identificador exclusivo do grupo. <br><br>Retornado por padrão. Herdado de [directoryObject](directoryobject.md). Chave. Não anulável. Somente leitura.|
-|isAssignableToRole|Booliano|Indica se esse grupo pode ser atribuído a uma função do Azure Active Directory ou não.<br><br>Essa propriedade só pode ser definida durante a criação do grupo e é imutável. Somente o Administrador Global o Administrador com Função Privilegiada podem definir essa propriedade. Para mais informações, consulte [Usando um grupo para gerenciar as atribuições de funções do Azure AD](https://go.microsoft.com/fwlink/?linkid=2103037)<br><br>Retornado por padrão.|
+|isAssignableToRole|Booliano|Indica se este grupo pode ser atribuído a uma função do Azure Active Directory.<br><br>Esta propriedade só pode ser definida durante a criação do grupo e é imutável. Se configurada como `true`, a propriedade **securityEnabled** também deve ser configurada como `true` e o grupo não pode ser um grupo dinâmico (ou seja, **groupTypes** não pode conter `DynamicMembership`). Somente chamadores nas funções de Administrador Global e Administrador de Função Privilegiada podem configurar esta propriedade. Para obter mais informações, confira [Usando um grupo para gerenciar atribuições de função do Azure Active Directory](https://go.microsoft.com/fwlink/?linkid=2103037)<br><br>Retornado por padrão.|
 |infoCatalogs|Conjunto de cadeias de caracteres|Identifica os segmentos de informações atribuídos ao grupo. Retornado por padrão.|
-|isSubscribedByMail|Boolean|Indica se o usuário conectado está inscrito para receber conversas de email. O valor padrão é `true`. <br><br>Retornado apenas em `$select`. Com suporte apenas para Obter API de grupo (`GET /groups/{ID}`) |
+|isSubscribedByMail|Boolean|Indica se o usuário conectado está inscrito para receber conversas de email. O valor padrão é `true`. <br><br>Retornado apenas em `$select`. Suportado apenas para Obter API de grupo (`GET /groups/{ID}`). |
 |licenseProcessingState|String|Indica o status da atribuição de licença de grupo para todos os membros do grupo. Valores possíveis: `QueuedForProcessing`, `ProcessingInProgress` e `ProcessingComplete`. <br><br>Retornado apenas em `$select`. Somente leitura. |
 |email|String|O endereço SMTP do grupo, por exemplo, "serviceadmins@contoso.onmicrosoft.com". <br><br>Retornado por padrão. Somente leitura. Oferece suporte para `$filter`.|
 |mailEnabled|Boolean|Especifica se o grupo está habilitado para email. <br><br>Retornado por padrão.|

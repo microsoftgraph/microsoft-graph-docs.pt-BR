@@ -5,12 +5,12 @@ author: bhartono
 doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: d5355d04f573d368052be374cc0ddc57b16b1247
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 3c9ca7557be5c0458354565fb3a54388b43defc1
+ms.sourcegitcommit: 99fdbd9a1806d64626423e1f39342dcde8a1eaf4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52786542"
+ms.lasthandoff: 06/16/2021
+ms.locfileid: "52971075"
 ---
 # <a name="add-member-to-a-chat"></a>Adicionar membro a um chat
 
@@ -20,15 +20,17 @@ Namespace: microsoft.graph
 
 Adicione um [conversationMember](../resources/conversationmember.md) a um [chat](../resources/chat.md).
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |---------|-------------|
-|Delegado (conta corporativa ou de estudante)| ChatMember.ReadWrite |
+|Delegado (conta corporativa ou de estudante)| ChatMember.ReadWrite, Chat.ReadWrite |
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo| Sem suporte. |
+|Aplicativo| Chat.Manage.Chat*, ChatMember.ReadWrite.All, Chat.ReadWrite.All |
+
+> **Observação**: Permissões marcadas com * usam [consentimento específico de recurso](https://aka.ms/teams-rsc).
 
 <!-- { "blockType": "ignored"} -->
 ```http

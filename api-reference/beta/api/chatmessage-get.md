@@ -5,12 +5,12 @@ author: RamjotSingh
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 7bc06aafd9fcf5ed5942bd1cc58b1890fddc0d1f
-ms.sourcegitcommit: a9a035e7cf7b500aebe5477c05361552e7c3a7ab
+ms.openlocfilehash: 82bd85c18d936136d24ce82ee1343d553fa6ae77
+ms.sourcegitcommit: 99fdbd9a1806d64626423e1f39342dcde8a1eaf4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "52696097"
+ms.lasthandoff: 06/16/2021
+ms.locfileid: "52971105"
 ---
 # <a name="get-chatmessage-in-a-channel-or-chat"></a>Receber chatMessagem em um canal ou chat
 
@@ -30,7 +30,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---------------------------------------|:--------------------------------------------|
 |Delegado (conta corporativa ou de estudante)| ChannelMessage.Read.All, Group.Read.All, Group.Read.WriteAll |
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo| ChannelMessage.Read.Group, ChannelMessage.Read.All, Group.Read.All, Group.ReadWrite.All |
+|Aplicativo| ChannelMessage.Read.Group*, ChannelMessage.Read.All, Group.Read.All, Group.ReadWrite.All |
 
 ### <a name="permissions-for-chat"></a>Permissões para o chat
 
@@ -38,7 +38,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---------------------------------------|:--------------------------------------------|
 |Delegado (conta corporativa ou de estudante)| Chat.Read, Chat.ReadWrite|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo| Chat.Read.All, Chat.ReadWrite.All|
+|Aplicativo| ChatMessage.Read.Chat*, Chat.Read.All, Chat.ReadWrite.All|
 
 > **Observação**: Permissões marcadas com * usam [consentimento específico de recurso]( https://aka.ms/teams-rsc).
 

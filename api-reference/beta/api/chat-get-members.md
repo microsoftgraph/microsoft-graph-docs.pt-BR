@@ -5,12 +5,12 @@ author: bhartono
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 29556ca21dbfe34a59f8e81c9e5c3b2bff0f7afc
-ms.sourcegitcommit: a9a035e7cf7b500aebe5477c05361552e7c3a7ab
+ms.openlocfilehash: 7b747374afd1138c4270784dbdca58d644802c8f
+ms.sourcegitcommit: 99fdbd9a1806d64626423e1f39342dcde8a1eaf4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "52696012"
+ms.lasthandoff: 06/16/2021
+ms.locfileid: "52971332"
 ---
 # <a name="get-conversationmember-in-a-chat"></a>Obtenha o conversationMember em um bate-papo.
 
@@ -33,7 +33,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |---------|-------------|
 |Delegado (conta corporativa ou de estudante)| ChatMember.Read, ChatMember.ReadWrite, Chat.ReadBasic, Chat.Read, Chat.ReadWrite |
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo| ChatMember.Read.All, ChatMember.ReadWrite.All, Chat.ReadBasic.All, Chat.Read.All, Chat.ReadWrite.All. |
+|Aplicativo| ChatMember.Read.Chat *, Chat.Manage.Chat*, ChatMember.Read.All, ChatMember.ReadWrite.All, Chat.ReadBasic.All, Chat.Read.All, Chat.ReadWrite.All |
 
 > **Observação**: Permissões marcadas com * usam [consentimento específico de recurso](https://aka.ms/teams-rsc).
 

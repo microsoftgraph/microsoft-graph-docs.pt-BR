@@ -5,12 +5,12 @@ author: bhartono
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 042c95cab97e32c0b871f342a082e8bcf8b41c6c
-ms.sourcegitcommit: a9a035e7cf7b500aebe5477c05361552e7c3a7ab
+ms.openlocfilehash: a1737d76b09cf0eeda9ee199d07983df4b7fda7d
+ms.sourcegitcommit: 99fdbd9a1806d64626423e1f39342dcde8a1eaf4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "52696021"
+ms.lasthandoff: 06/16/2021
+ms.locfileid: "52971298"
 ---
 # <a name="list-members-of-a-chat"></a>Liste os membros de um bate-papo.
 
@@ -33,7 +33,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |---------|-------------|
 |Delegado (conta corporativa ou de estudante)| ChatMember.Read, ChatMember.ReadWrite, Chat.ReadBasic, Chat.Read, Chat.ReadWrite |
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo| ChatMember.Read.All, ChatMember.ReadWrite.All, Chat.ReadBasic.All, Chat.Read.All, Chat.ReadWrite.All. |
+|Aplicativo| ChatMember.Read.Chat *, Chat.Manage.Chat*, ChatMember.Read.All, ChatMember.ReadWrite.All, Chat.ReadBasic.All, Chat.Read.All, Chat.ReadWrite.All |
+
+> **Observação**: Permissões marcadas com * usam [consentimento específico de recurso](https://aka.ms/teams-rsc).
 
 > [!NOTE]
 > É necessário solicitar acesso antes de chamar essa API com permissões de aplicativo. Para obter detalhes, confira [APIs protegidas no Microsoft Teams](/graph/teams-protected-apis).

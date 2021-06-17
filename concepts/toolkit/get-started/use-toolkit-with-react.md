@@ -3,12 +3,12 @@ title: Use o microsoft Graph Toolkit com React
 description: Começar a usar o microsoft Graph Toolkit em um React aplicativo.
 localization_priority: Normal
 author: waldekmastykarz
-ms.openlocfilehash: 0c06566824c6da06490f83693aedd7ef40ae282b
-ms.sourcegitcommit: a2d81138de2a0404e611fbb535679199477ef3d5
+ms.openlocfilehash: 876d8674013f1b673208e358d7d0902cb930f638
+ms.sourcegitcommit: 99fdbd9a1806d64626423e1f39342dcde8a1eaf4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52813069"
+ms.lasthandoff: 06/16/2021
+ms.locfileid: "52971437"
 ---
 # <a name="use-the-microsoft-graph-toolkit-with-react"></a>Use o microsoft Graph Toolkit com React
 
@@ -60,7 +60,7 @@ Você deve ser capaz de abrir seu aplicativo no navegador por `http://localhost:
 
 ## <a name="connect-react-app-to-microsoft-365"></a>Conexão React aplicativo para Microsoft 365
 
-Agora que você registrou seu aplicativo com o Azure Active Directory (Azure AD), você pode conectar o aplicativo React ao Microsoft 365. Primeiro, permita que os usuários entre no aplicativo usando sua conta da Microsoft.
+Agora que você registrou seu aplicativo com o Active Directory do Azure (Azure AD), você pode conectar o aplicativo React ao Microsoft 365. Primeiro, permita que os usuários entre no aplicativo usando sua conta da Microsoft.
 
 ### <a name="copy-the-azure-ad-application-registration-id"></a>Copiar a ID de registro do aplicativo do Azure AD
 
@@ -237,7 +237,13 @@ Essa função faz duas coisas. Primeiro, usando o `useState` React, ele habilita
 
 Agora que você rastreia o estado de login do usuário em seu aplicativo, você pode mostrar seu calendário depois de entrar.
 
-1. No editor de código, abra o **arquivo src/App.tsx** e, dentro da função **App,** adicione:
+1. No editor de código, abra o **arquivo src/App.tsx** e estenda a instrução componente `import` com o componente **Agenda.**
+
+    ```TypeScript
+    import { Agenda, Login } from '@microsoft/mgt-react';
+    ```
+
+1. Em seguida, dentro **da função App,** adicione:
 
     ```TypeScript
     const [isSignedIn] = useIsSignedIn();

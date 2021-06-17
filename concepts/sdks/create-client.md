@@ -1,20 +1,20 @@
 ---
-title: Criar um cliente do Microsoft Graph
-description: Descreve como criar um cliente a ser usado para fazer chamadas ao Microsoft Graph. Inclui como configurar a autenticação e selecionar uma nuvem soberana.
+title: Criar um cliente microsoft Graph
+description: Descreve como criar um cliente a ser usado para fazer chamadas para o Microsoft Graph. Inclui como configurar a autenticação e selecionar uma nuvem soberana.
 localization_priority: Normal
 author: MichaelMainer
-ms.openlocfilehash: f32a779ac57d88da1ea66820a2b5a0bb30cbb89e
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 0256ad20b3078c081102221189a12e27432df058
+ms.sourcegitcommit: 99fdbd9a1806d64626423e1f39342dcde8a1eaf4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50953352"
+ms.lasthandoff: 06/16/2021
+ms.locfileid: "52971357"
 ---
-# <a name="create-a-microsoft-graph-client"></a>Criar um cliente do Microsoft Graph
+# <a name="create-a-microsoft-graph-client"></a>Criar um cliente microsoft Graph
 
-O cliente do Microsoft Graph foi projetado para facilitar as chamadas para o Microsoft Graph. Você pode usar uma única instância do cliente durante o tempo de vida do aplicativo. Para obter informações sobre como adicionar e instalar o pacote cliente do Microsoft Graph em seu projeto, consulte  [Install the SDK](sdk-installation.md).
+O cliente Graph Microsoft foi projetado para facilitar as chamadas para o Microsoft Graph. Você pode usar uma única instância do cliente durante o tempo de vida do aplicativo. Para obter informações sobre como adicionar e instalar o pacote de cliente microsoft Graph em seu projeto, consulte [Install the SDK](sdk-installation.md).
 
-Os exemplos de código a seguir mostram como criar uma instância de um cliente do Microsoft Graph com um provedor de autenticação nos idiomas suportados. O provedor de autenticação tratará da aquisição de tokens de acesso para o aplicativo. Muitos provedores de autenticação diferentes estão disponíveis para cada idioma e plataforma. Os diferentes provedores de aplicativos suportam diferentes cenários de cliente. Para obter detalhes sobre quais provedores e opções são apropriados para seu cenário, consulte [Choose an Authentication Provider](choose-authentication-providers.md).
+Os exemplos de código a seguir mostram como criar uma instância de um cliente microsoft Graph com um provedor de autenticação nos idiomas suportados. O provedor de autenticação tratará da aquisição de tokens de acesso para o aplicativo. Muitos provedores de autenticação diferentes estão disponíveis para cada idioma e plataforma. Os diferentes provedores de aplicativos suportam diferentes cenários de cliente. Para obter detalhes sobre quais provedores e opções são apropriados para seu cenário, consulte [Choose an Authentication Provider](choose-authentication-providers.md).
 
 # <a name="c"></a>[C#](#tab/CS)
 
@@ -33,16 +33,18 @@ GraphServiceClient graphClient = new GraphServiceClient(authProvider);
 
 ```javascript
 const clientId = "INSERT-CLIENT-APP-ID"; // Client Id of the registered application
-const callback = (errorDesc, token, error, tokenType) => {};
-// An Optional options for initializing the MSAL @see https://github.com/AzureAD/microsoft-authentication-library-for-js/wiki/MSAL-basics#configuration-options
-const options = {
-    redirectUri: "Your redirect URI",
-};
-const graphScopes = ["user.read", "mail.send"]; // An array of graph scopes
 
-// Initialize the MSAL @see https://github.com/AzureAD/microsoft-authentication-library-for-js/wiki/MSAL-basics#initialization-of-msal
-const userAgentApplication = new UserAgentApplication(clientId, undefined, callback, options);
-const authProvider = new MSALAuthenticationProvider(userAgentApplication, graphScopes );
+/**
+* Create an authProvider to authenticate againt the Microsoft Graph API.
+* You can use the TokenCredentialAuthenticationProvider instance with @azure/identity library or
+* you can authentication using any MSAL auth library with a custom authentication provider.
+*/
+const credential = new ClientSecretCredential(tenantId, clientId, clientSecret);
+const authProvider = new TokenCredentialAuthenticationProvider(credential, { scopes: [scopes] });
+const client = Client.initWithMiddleware({
+    debugLogging: true,
+    authProvider,
+});
 ```
 
 # <a name="java"></a>[Java](#tab/Java)

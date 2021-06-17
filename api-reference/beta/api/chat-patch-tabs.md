@@ -5,12 +5,12 @@ author: subray
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: d7d1b1a169e1ba1bc2b9e6b9ad518c2ac4fa48eb
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: a778d235a58a948d99543b540f9b6343a44e7e7c
+ms.sourcegitcommit: 99fdbd9a1806d64626423e1f39342dcde8a1eaf4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50775714"
+ms.lasthandoff: 06/16/2021
+ms.locfileid: "52971262"
 ---
 # <a name="update-tab-in-chat"></a>Guia Atualizar no chat
 
@@ -30,8 +30,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | TeamsTab.ReadWriteForChat, TeamsTab.ReadWrite.All |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | TeamsTab.ReadWriteForChat, TeamsTab.ReadWrite.All |
+|Aplicativo | TeamsTab.ReadWrite.Chat*, TeamsTab.ReadWriteForChat, TeamsTab.ReadWrite.All |
 
+> **Observação**: Permissões marcadas com * usam [consentimento específico de recurso](https://aka.ms/teams-rsc).
 
 ## <a name="http-request"></a>Solicitação HTTP
 

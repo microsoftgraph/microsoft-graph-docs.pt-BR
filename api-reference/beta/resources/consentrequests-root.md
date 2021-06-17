@@ -1,29 +1,29 @@
 ---
-title: Solicitações de consentimento do Azure Active Directory
+title: Active Directory do Azure de consentimento
 description: Use as solicitações de consentimento do Azure AD para gerenciar o fluxo de trabalho de solicitação para usuários que tentam acessar aplicativos que exigem consentimento do administrador.
 localization_priority: Normal
 author: psignoret
 ms.prod: governance
 doc_type: conceptualPageType
-ms.openlocfilehash: d21a177ff7fb5ff8bbc760ca657f669ac5ee5baa
-ms.sourcegitcommit: ad1e4d758d4fe6025987c1c3528ce644edb27062
+ms.openlocfilehash: cd4ce281ac79f9f8409685c321255828e50e5122
+ms.sourcegitcommit: 99fdbd9a1806d64626423e1f39342dcde8a1eaf4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51697923"
+ms.lasthandoff: 06/16/2021
+ms.locfileid: "52971402"
 ---
-# <a name="azure-active-directory-consent-requests"></a>Solicitações de consentimento do Azure Active Directory
+# <a name="azure-active-directory-consent-requests"></a>Active Directory do Azure de consentimento
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-As solicitações de consentimento do Azure Active Directory (Azure AD) ajudam você a gerenciar o fluxo de trabalho de solicitação para usuários que tentam acessar aplicativos que exigem aprovação do administrador.
+Active Directory do Azure solicitações de consentimento (Azure AD) ajudam você a gerenciar o fluxo de trabalho de solicitação para usuários que tentam acessar aplicativos que exigem aprovação do administrador.
 
 Para permitir que os usuários solicitem acesso ou consentimento de administrador para aplicativos que não estão autorizados a conceder consentimento a si mesmos, primeiro habilita o fluxo de trabalho de solicitação de consentimento. 
 
 >[!NOTE]
->As APIs atuais estão limitadas a configurar o fluxo de trabalho, ler a lista de solicitações e negar uma solicitação. No momento, não há métodos disponíveis para aprovar programaticamente uma solicitação. No entanto, o conteúdo da solicitação pode ser usado para recriar uma URL que pode ser usada para conceder o consentimento do administrador e aprovar uma solicitação.
+>As APIs atuais estão limitadas à configuração do fluxo de trabalho e à leitura da lista de solicitações. No momento, não há métodos disponíveis para aprovar ou negar uma solicitação programaticamente. No entanto, o conteúdo da solicitação pode ser usado para recriar uma URL que pode ser usada para conceder o consentimento do administrador e aprovar uma solicitação.
 
 Os tipos de recursos de solicitação de consentimento incluem:
 
@@ -31,7 +31,6 @@ Os tipos de recursos de solicitação de consentimento incluem:
 * [appConsentRequest](../resources/appconsentrequest.md): uma solicitação que representa uma coleção **de userConsentRequests** para um aplicativo específico.
 * [userConsentRequest](../resources/userconsentrequest.md): uma solicitação criada por um usuário para usar um aplicativo que exige o consentimento do administrador para acessar.
 * [appConsentRequestScope](../resources/appconsentrequestscope.md): um recurso que contém detalhes dos escopos de permissão dinâmicos que estão sendo solicitados para um aplicativo.  
-
 
 ## <a name="methods"></a>Métodos
 
@@ -54,8 +53,7 @@ As seguintes funções de diretório são necessárias para que um usuário de c
 
 | Operação | Permissões delegadas | Função de diretório necessária do usuário chamador |
 |:------------------|:------------|:--------------------------------------------|
-| Ler | ConsentRequest.Read.All, ConsentRequest.ReadWrite.All | Administrador Global, Leitor Global, Administrador de Aplicativos na Nuvem e Administrador de Aplicativos |
-| Atualizar | ConsentRequest.ReadWrite.All |Administrador Global |
+| Leitura | ConsentRequest.Read.All, ConsentRequest.ReadWrite.All | Administrador Global, Leitor Global, Administrador de Aplicativos na Nuvem e Administrador de Aplicativos |
 
 ## <a name="see-also"></a>Confira também
 

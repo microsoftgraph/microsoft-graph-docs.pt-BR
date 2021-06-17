@@ -505,10 +505,19 @@ items:
                 href: webhooks-with-resource-data.md
               - name: Obter notificações entregues de diferentes maneiras
                 href: change-notifications-delivery.md
-              - name: Obter notificações de alteração para mensagens de chat e canal
-                href: teams-changenotifications-chatmessage.md
               - name: Alterar notificações para impressão na nuvem
                 href: universal-print-webhook-notifications.md
+              - name: Alterar notificação no Microsoft Teams
+                displayName: Change notifications in Microsoft Teams
+                items:
+                  - name: Visão Geral
+                    href: change-notification-in-microsoft-teams-overview.md
+                  - name: Mensagens de chat e de canal
+                    href: teams-changenotifications-chatmessage.md
+                  - name: Equipes e canais
+                    href: teams-changenotifications-team-and-channel.md
+                  - name: Associação da equipe
+                    href: teams-changenotifications-teamMembership.md
           - name: Controle de alterações
             displayName: 'Delta query, track changes, Outlook calendar, Groups, Outlook mail, Users'
             items:

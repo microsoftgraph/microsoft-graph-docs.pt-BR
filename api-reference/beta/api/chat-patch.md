@@ -5,12 +5,12 @@ author: bhartono
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: cd906d473977987fc3859aee05d9b88b321cac60
-ms.sourcegitcommit: 7abb0672a38a6d9b11a2e0d2cc221222cb8358bb
+ms.openlocfilehash: 26ba26e65a96bac04aa418d418b4588ff53f0ffd
+ms.sourcegitcommit: 99fdbd9a1806d64626423e1f39342dcde8a1eaf4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52896470"
+ms.lasthandoff: 06/16/2021
+ms.locfileid: "52971052"
 ---
 # <a name="update-chat"></a>Atualizar chat
 Namespace: microsoft.graph
@@ -26,7 +26,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|Chat.ReadWrite|
 |Delegado (conta pessoal da Microsoft) | Sem suporte. |
-|Aplicativo | Sem suporte. |
+|Aplicativo | ChatSettings.ReadWrite.Chat*, Chat.ReadWrite.All |
+
+> **Observação**: Permissões marcadas com * usam [consentimento específico de recurso](https://aka.ms/teams-rsc).
 
 ## <a name="http-request"></a>Solicitação HTTP
 
