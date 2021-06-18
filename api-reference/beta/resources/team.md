@@ -5,12 +5,12 @@ author: AkJo
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 9a6be14dfb3de975e51f76a15b964a068fefe731
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: 159502c1076aa9f076f0c50768405bbd64612ebc
+ms.sourcegitcommit: 979fe005c74eb99cd971df6b9511b2d3f7fe3cd4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52679887"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52991215"
 ---
 # <a name="team-resource-type"></a>tipo de recurso de equipe
 
@@ -48,6 +48,7 @@ Cada equipe está associada a um [grupo](../resources/group.md). O grupo tem a m
 |[Instalar o aplicativo na equipe do](../api/team-get-installedapps.md) | [teamsAppInstallation](teamsappinstallation.md) | Obtenha o aplicativo especificado instalado em uma equipe.|
 |[Atualizar o aplicativo instalado para a equipe](../api/team-teamsappinstallation-upgrade.md) | Nenhuma | Atualize o aplicativo instalado em uma equipe para a versão mais recente.|
 |[Remover aplicativo da equipe](../api/team-delete-installedapps.md) | Nenhuma | Remova (desinstale) um aplicativo de uma equipe.|
+|[Listar as concessões de permissões](../api/team-list-permissiongrants.md) | Coleção [resourceSpecificPermissionGrant](resourcespecificpermissiongrant.md) | Liste as permissões que foram concedidas aos aplicativos para acessar a equipe.|
 
 ## <a name="properties"></a>Propriedades
 
@@ -93,6 +94,7 @@ Para um exemplo de solicitação POST, confira [Solicitação (criar equipe no e
 |[primaryChannel](../api/team-get-primarychannel.md)|[channel](channel.md)| O canal geral da equipe. | 
 |Cronograma|[Cronograma](schedule.md)| Cronograma de turno para essa equipe.|
 |template|[teamsTemplate](teamstemplate.md)| O modelo usado para criar essa equipe. Confira os [modelos disponíveis](/MicrosoftTeams/get-started-with-teams-templates). |
+|permissionGrants|Coleção [resourceSpecificPermissionGrant](resourcespecificpermissiongrant.md)| Uma coleção de permissões concedidas a aplicativos para acessar a equipe.|
 
 ## <a name="json-representation"></a>Representação JSON
 

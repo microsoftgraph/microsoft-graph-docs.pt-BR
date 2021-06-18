@@ -5,12 +5,12 @@ localization_priority: Priority
 author: Jordanndahl
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: c03088614c32a7428355f37ec0b8f8fb5b1b49b4
-ms.sourcegitcommit: e4461c7eb8c3d265fc1aa766125e81b58c6e1099
+ms.openlocfilehash: 96bf370d642890b1330bc4e7c05179005253fa1e
+ms.sourcegitcommit: 979fe005c74eb99cd971df6b9511b2d3f7fe3cd4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "52941260"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52992389"
 ---
 # <a name="group-resource-type"></a>tipo de recurso de grupo
 
@@ -100,6 +100,7 @@ Esse recurso permite:
 | **Outros recursos de grupo** |||
 | [Listar fotos](../api/group-list-photos.md) | Coleção [profilePhoto](photo.md) | Obter um conjunto de fotos de perfil para o grupo. |
 | [Listar plannerPlans](../api/plannergroup-list-plans.md) | Coleção [plannerPlan](plannerplan.md) | Obter os planos de planejador pertencentes ao grupo. |
+| [Listar as permissionGrants](../api/group-list-permissiongrants.md) | Coleção [resourceSpecificPermissionGrant](resourcespecificpermissiongrant.md) | Liste as permissões que foram concedidas aos aplicativos para acessar o grupo. |
 | **Configurações do usuário** |||
 | [addFavorite](../api/group-addfavorite.md) | Nenhum | Adicionar o grupo à lista de grupos favoritos do usuário conectado. Suportado apenas para grupos do Microsoft 365. |
 | [removeFavorite](../api/group-removefavorite.md) | Nenhum | Remova o grupo da lista de grupos favoritos do usuário que se inscreveu. Somente grupos do Microsoft 365 com suporte. |
@@ -189,7 +190,7 @@ Esse recurso permite:
 |membersWithLicenseErrors|Coleção [usuário](user.md)|Uma lista de membros do grupo com erros de licença desta atribuição de licença baseada em grupo. Somente leitura.|
 |onenote|[onenote](onenote.md)| Somente leitura.|
 |owners|Coleção [directoryObject](directoryobject.md)|Os proprietários do grupo. Os proprietários são um conjunto de usuários não administradores que têm permissão para modificar esse objeto. Métodos HTTP: GET (com suporte para todos os grupos), POST (com suporte para grupos de segurança e grupos de segurança habilitados para email), DELETE (com suporte apenas para grupos de segurança) Somente leitura. Nullable.|
-|permissionGrants|[resourceSpecificPermissionGrant](resourcespecificpermissiongrant.md)|A permissão que foi concedida a um grupo para um aplicativo específico.|
+|permissionGrants|[resourceSpecificPermissionGrant](resourcespecificpermissiongrant.md)|As permissões que foram concedidas a um grupo para um aplicativo específico.|
 |photo|[profilePhoto](profilephoto.md)| A foto de perfil do grupo. |
 |fotos|Coleção [profilePhoto](profilephoto.md)| As fotos de perfil pertencentes ao grupo. Somente leitura. Anulável.|
 |planejador|[plannerGroup](plannergroup.md)| Serviços do Planejador Seletivo disponíveis para o grupo. Somente leitura. Nullable. |

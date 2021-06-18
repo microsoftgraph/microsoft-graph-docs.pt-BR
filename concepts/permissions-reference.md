@@ -4,12 +4,12 @@ description: O Microsoft Graph expõe as permissões granulares que controlam o 
 author: jackson-woods
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: efd2f192fdaf5338b7f97483aca7d93f861ecb02
-ms.sourcegitcommit: 99fdbd9a1806d64626423e1f39342dcde8a1eaf4
+ms.openlocfilehash: 968b1c38ce21c380116995ef7908abf9be1d0553
+ms.sourcegitcommit: 979fe005c74eb99cd971df6b9511b2d3f7fe3cd4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/16/2021
-ms.locfileid: "52971409"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52991173"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Referência de permissões do Microsoft Graph
 
@@ -653,7 +653,7 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 |_Device.ReadWrite.All_ |Ler e registrar dispositivos |Permite que o aplicativo leia e registre todas as propriedades dos dispositivos sem um usuário conectado. Não permite a criação de dispositivos, exclusão de dispositivos ou atualização de identificadores de segurança de dispositivo alternativo. |Sim |
 
 > [!NOTE]
-> Antes de 3 de dezembro de 2020, quando a permissão do aplicativo *Device.Read.All* foi concedido, o [Gestores de Dispositivos](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#deprecated-roles) a função de diretório também foi atribuída ao principal de serviço do aplicativo.  Essa atribuição de função de diretório não é removida automaticamente quando as permissões de aplicativo associadas são revogadas. Para garantir que o acesso de um aplicativo a leitura ou gravação nos dispositivos seja removido, os clientes também devem remover as funções de diretório que foram concedidas ao aplicativo.
+> Antes de 3 de dezembro de 2020, quando a permissão de solicitação do aplicativo *Device.ReadWrite.All* foi concedida, a função do diretório [Gerenciadores de Diretório](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#deprecated-roles) também foi atribuída ao diretor de serviços do aplicativo. Essa atribuição de função de diretório não é removida automaticamente quando as permissões de aplicativo associadas são revogadas. Para garantir que o acesso de um aplicativo a leitura ou gravação nos dispositivos seja removido, os clientes também devem remover as funções de diretório que foram concedidas ao aplicativo.
 > 
 > Uma atualização de serviço desativando esse comportamento começou a ser lançada em 3 de dezembro de 2020. Implantação para todos os clientes concluída em 11 de janeiro de 2021. As funções de diretório não são mais atribuídas automaticamente quando as permissões do aplicativo são concedidas.
 
