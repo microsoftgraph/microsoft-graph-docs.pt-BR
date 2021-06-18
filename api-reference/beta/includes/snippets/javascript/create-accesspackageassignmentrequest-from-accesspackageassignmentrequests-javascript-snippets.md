@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 9312091486525967b084a51590c8d1fdaa56fa05
-ms.sourcegitcommit: b8b0e88b3ba9a434dc45f5ab640cb46f66fae299
+ms.openlocfilehash: af9464667f3a32da87e212e0f13825133ebdb101
+ms.sourcegitcommit: 979fe005c74eb99cd971df6b9511b2d3f7fe3cd4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "52473610"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "53005805"
 ---
 ```javascript
 
@@ -16,11 +16,10 @@ const options = {
 const client = Client.init(options);
 
 const accessPackageAssignmentRequest = {
-    requestType: 'UserAdd',
+    requestType: 'AdminRemove',
     accessPackageAssignment: {
-        accessPackageId: 'a914b616-e04e-476b-aa37-91038f0b165b'
-    },
-    justification: 'Need access to New Hire access package'
+     id: 'a6bb6942-3ae1-4259-9908-0133aaee9377'
+    }
 };
 
 await client.api('/identityGovernance/entitlementManagement/accessPackageAssignmentRequests')

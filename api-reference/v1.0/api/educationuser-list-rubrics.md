@@ -5,30 +5,30 @@ localization_priority: Normal
 author: sharad-sharma-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: c2241842b6ded3546b35fefb1e2a7cab30b4ff26
-ms.sourcegitcommit: f77c1385306fd40557aceb24fdfe4832cbb60a27
+ms.openlocfilehash: 8e331ee8caf3247c2dd9b2c2a879b73736b1fe22
+ms.sourcegitcommit: 979fe005c74eb99cd971df6b9511b2d3f7fe3cd4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/12/2021
-ms.locfileid: "52912144"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52992073"
 ---
-# <a name="list-rubrics"></a><span data-ttu-id="cdc4b-103">Listar rubricas</span><span class="sxs-lookup"><span data-stu-id="cdc4b-103">List rubrics</span></span>
+# <a name="list-rubrics"></a><span data-ttu-id="ca2f3-103">Listar rubricas</span><span class="sxs-lookup"><span data-stu-id="ca2f3-103">List rubrics</span></span>
 
-<span data-ttu-id="cdc4b-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="cdc4b-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="ca2f3-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="ca2f3-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="cdc4b-105">Recupere uma lista de [objetos educationRubric.](../resources/educationrubric.md)</span><span class="sxs-lookup"><span data-stu-id="cdc4b-105">Retrieve a list of [educationRubric](../resources/educationrubric.md) objects.</span></span>
+<span data-ttu-id="ca2f3-105">Recupere uma lista de [objetos educationRubric.](../resources/educationrubric.md)</span><span class="sxs-lookup"><span data-stu-id="ca2f3-105">Retrieve a list of [educationRubric](../resources/educationrubric.md) objects.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="cdc4b-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="cdc4b-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="ca2f3-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="ca2f3-106">Permissions</span></span>
 
-<span data-ttu-id="cdc4b-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="cdc4b-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="ca2f3-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="ca2f3-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="cdc4b-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="cdc4b-109">Permission type</span></span>                        | <span data-ttu-id="cdc4b-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="cdc4b-110">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="ca2f3-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="ca2f3-109">Permission type</span></span>                        | <span data-ttu-id="ca2f3-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="ca2f3-110">Permissions (from least to most privileged)</span></span> |
 |:---------------------------------------|:--------------------------------------------|
-| <span data-ttu-id="cdc4b-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="cdc4b-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="cdc4b-112">EduAssignments.ReadBasic, EduAssignments.ReadWriteBasic, EduAssignments.Read, EduAssignments.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="cdc4b-112">EduAssignments.ReadBasic, EduAssignments.ReadWriteBasic, EduAssignments.Read, EduAssignments.ReadWrite</span></span> |
-| <span data-ttu-id="cdc4b-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="cdc4b-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="cdc4b-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="cdc4b-114">Not supported.</span></span> |
-| <span data-ttu-id="cdc4b-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="cdc4b-115">Application</span></span>                            | <span data-ttu-id="cdc4b-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="cdc4b-116">Not supported.</span></span> |
+| <span data-ttu-id="ca2f3-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="ca2f3-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="ca2f3-112">EduAssignments.ReadBasic, EduAssignments.ReadWriteBasic, EduAssignments.Read, EduAssignments.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="ca2f3-112">EduAssignments.ReadBasic, EduAssignments.ReadWriteBasic, EduAssignments.Read, EduAssignments.ReadWrite</span></span> |
+| <span data-ttu-id="ca2f3-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="ca2f3-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="ca2f3-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="ca2f3-114">Not supported.</span></span> |
+| <span data-ttu-id="ca2f3-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="ca2f3-115">Application</span></span>                            | <span data-ttu-id="ca2f3-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="ca2f3-116">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="cdc4b-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="cdc4b-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="ca2f3-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="ca2f3-117">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -36,27 +36,27 @@ ms.locfileid: "52912144"
 GET /education/me/rubrics
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="cdc4b-118">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="cdc4b-118">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="ca2f3-118">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="ca2f3-118">Request headers</span></span>
 
-| <span data-ttu-id="cdc4b-119">Nome</span><span class="sxs-lookup"><span data-stu-id="cdc4b-119">Name</span></span>      |<span data-ttu-id="cdc4b-120">Descrição</span><span class="sxs-lookup"><span data-stu-id="cdc4b-120">Description</span></span>|
+| <span data-ttu-id="ca2f3-119">Nome</span><span class="sxs-lookup"><span data-stu-id="ca2f3-119">Name</span></span>      |<span data-ttu-id="ca2f3-120">Descrição</span><span class="sxs-lookup"><span data-stu-id="ca2f3-120">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="cdc4b-121">Autorização</span><span class="sxs-lookup"><span data-stu-id="cdc4b-121">Authorization</span></span> | <span data-ttu-id="cdc4b-122">Portador {token}</span><span class="sxs-lookup"><span data-stu-id="cdc4b-122">Bearer {token}</span></span> |
+| <span data-ttu-id="ca2f3-121">Autorização</span><span class="sxs-lookup"><span data-stu-id="ca2f3-121">Authorization</span></span> | <span data-ttu-id="ca2f3-122">Portador {token}</span><span class="sxs-lookup"><span data-stu-id="ca2f3-122">Bearer {token}</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="cdc4b-123">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="cdc4b-123">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="ca2f3-123">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="ca2f3-123">Request body</span></span>
 
-<span data-ttu-id="cdc4b-124">Não fornece um corpo de solicitação para este método.</span><span class="sxs-lookup"><span data-stu-id="cdc4b-124">Don't supply a request body for this method.</span></span>
+<span data-ttu-id="ca2f3-124">Não fornece um corpo de solicitação para este método.</span><span class="sxs-lookup"><span data-stu-id="ca2f3-124">Don't supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="cdc4b-125">Resposta</span><span class="sxs-lookup"><span data-stu-id="cdc4b-125">Response</span></span>
+## <a name="response"></a><span data-ttu-id="ca2f3-125">Resposta</span><span class="sxs-lookup"><span data-stu-id="ca2f3-125">Response</span></span>
 
-<span data-ttu-id="cdc4b-126">Se tiver êxito, este método retornará um código de resposta e uma `200 OK` coleção de [objetos educationRubric](../resources/educationrubric.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="cdc4b-126">If successful, this method returns a `200 OK` response code and a collection of [educationRubric](../resources/educationrubric.md) objects in the response body.</span></span>
+<span data-ttu-id="ca2f3-126">Se tiver êxito, este método retornará um código de resposta e uma `200 OK` coleção de [objetos educationRubric](../resources/educationrubric.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="ca2f3-126">If successful, this method returns a `200 OK` response code and a collection of [educationRubric](../resources/educationrubric.md) objects in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="cdc4b-127">Exemplos</span><span class="sxs-lookup"><span data-stu-id="cdc4b-127">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="ca2f3-127">Exemplos</span><span class="sxs-lookup"><span data-stu-id="ca2f3-127">Examples</span></span>
 
-### <a name="request"></a><span data-ttu-id="cdc4b-128">Solicitação</span><span class="sxs-lookup"><span data-stu-id="cdc4b-128">Request</span></span>
+### <a name="request"></a><span data-ttu-id="ca2f3-128">Solicitação</span><span class="sxs-lookup"><span data-stu-id="ca2f3-128">Request</span></span>
 
-<span data-ttu-id="cdc4b-129">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="cdc4b-129">The following is an example of the request.</span></span>
+<span data-ttu-id="ca2f3-129">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="ca2f3-129">The following is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="cdc4b-130">HTTP</span><span class="sxs-lookup"><span data-stu-id="cdc4b-130">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="ca2f3-130">HTTP</span><span class="sxs-lookup"><span data-stu-id="ca2f3-130">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_rubrics"
@@ -65,12 +65,30 @@ GET /education/me/rubrics
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/education/me/rubrics
 ```
+# <a name="c"></a>[<span data-ttu-id="ca2f3-131">C#</span><span class="sxs-lookup"><span data-stu-id="ca2f3-131">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-rubrics-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-### <a name="response"></a><span data-ttu-id="cdc4b-131">Resposta</span><span class="sxs-lookup"><span data-stu-id="cdc4b-131">Response</span></span>
+# <a name="javascript"></a>[<span data-ttu-id="ca2f3-132">JavaScript</span><span class="sxs-lookup"><span data-stu-id="ca2f3-132">JavaScript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-rubrics-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-<span data-ttu-id="cdc4b-132">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="cdc4b-132">The following is an example of the response.</span></span>
+# <a name="objective-c"></a>[<span data-ttu-id="ca2f3-133">Objective-C</span><span class="sxs-lookup"><span data-stu-id="ca2f3-133">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-rubrics-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-> <span data-ttu-id="cdc4b-133">**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.</span><span class="sxs-lookup"><span data-stu-id="cdc4b-133">**Note:** The response object shown here might be shortened for readability.</span></span>
+# <a name="java"></a>[<span data-ttu-id="ca2f3-134">Java</span><span class="sxs-lookup"><span data-stu-id="ca2f3-134">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-rubrics-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+### <a name="response"></a><span data-ttu-id="ca2f3-135">Resposta</span><span class="sxs-lookup"><span data-stu-id="ca2f3-135">Response</span></span>
+
+<span data-ttu-id="ca2f3-136">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="ca2f3-136">The following is an example of the response.</span></span>
+
+> <span data-ttu-id="ca2f3-137">**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.</span><span class="sxs-lookup"><span data-stu-id="ca2f3-137">**Note:** The response object shown here might be shortened for readability.</span></span>
 
 <!-- {
   "blockType": "response",

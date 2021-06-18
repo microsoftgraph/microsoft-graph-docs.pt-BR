@@ -5,35 +5,35 @@ author: isabelleatmsft
 localization_priority: Normal
 ms.prod: governance
 doc_type: conceptualPageType
-ms.openlocfilehash: fe61a015ab88e5e3c562b8837d57b997400f8ed3
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 731ebcb9ab27baf4ea30553d4f6a598d61e37d59
+ms.sourcegitcommit: 2d0daa446c7b37ced1d214e0c6e18e2b8243bb09
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52755627"
+ms.lasthandoff: 06/18/2021
+ms.locfileid: "53010188"
 ---
-# <a name="configure-the-scope-of-your-access-review-using-the-microsoft-graph-api"></a><span data-ttu-id="052bd-103">Configurar o escopo da sua revisão de acesso usando a API Graph Microsoft</span><span class="sxs-lookup"><span data-stu-id="052bd-103">Configure the scope of your access review using the Microsoft Graph API</span></span>
+# <a name="configure-the-scope-of-your-access-review-using-the-microsoft-graph-api"></a><span data-ttu-id="1db20-103">Configurar o escopo da sua revisão de acesso usando a API Graph Microsoft</span><span class="sxs-lookup"><span data-stu-id="1db20-103">Configure the scope of your access review using the Microsoft Graph API</span></span>
 
-<span data-ttu-id="052bd-104">A [API](/graph/api/resources/accessreviewsv2-root?view=graph-rest-beta&preserve-view=true) de revisões de acesso do Azure AD permite que você revise programaticamente o acesso que os usuários, entidades de serviço ou grupos têm aos recursos do Azure AD.</span><span class="sxs-lookup"><span data-stu-id="052bd-104">The Azure AD [access reviews API](/graph/api/resources/accessreviewsv2-root?view=graph-rest-beta&preserve-view=true) allows you to programmatically review the access that users, service principals, or groups have to your Azure AD resources.</span></span>
+<span data-ttu-id="1db20-104">A [API](/graph/api/resources/accessreviewsv2-root?view=graph-rest-beta&preserve-view=true) de revisões de acesso do Azure AD permite que você revise programaticamente o acesso que os usuários, entidades de serviço ou grupos têm aos recursos do Azure AD.</span><span class="sxs-lookup"><span data-stu-id="1db20-104">The Azure AD [access reviews API](/graph/api/resources/accessreviewsv2-root?view=graph-rest-beta&preserve-view=true) allows you to programmatically review the access that users, service principals, or groups have to your Azure AD resources.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="052bd-105">A [API de críticas de acesso](/graph/api/resources/accessreviewsv2-root?view=graph-rest-beta&preserve-view=true) está disponível apenas no ponto de extremidade Graph beta da Microsoft.</span><span class="sxs-lookup"><span data-stu-id="052bd-105">The [access reviews API](/graph/api/resources/accessreviewsv2-root?view=graph-rest-beta&preserve-view=true) is available in only the Microsoft Graph beta endpoint.</span></span> <span data-ttu-id="052bd-106">Não o use em aplicativos de produção, pois ele está sujeito a alterações sem aviso prévio.</span><span class="sxs-lookup"><span data-stu-id="052bd-106">Do not use it in production apps, as it is subject to change without notice.</span></span>
+> <span data-ttu-id="1db20-105">A [API de críticas de acesso](/graph/api/resources/accessreviewsv2-root?view=graph-rest-beta&preserve-view=true) está disponível apenas no ponto de extremidade Graph beta da Microsoft.</span><span class="sxs-lookup"><span data-stu-id="1db20-105">The [access reviews API](/graph/api/resources/accessreviewsv2-root?view=graph-rest-beta&preserve-view=true) is available in only the Microsoft Graph beta endpoint.</span></span> <span data-ttu-id="1db20-106">Não o use em aplicativos de produção, pois ele está sujeito a alterações sem aviso prévio.</span><span class="sxs-lookup"><span data-stu-id="1db20-106">Do not use it in production apps, as it is subject to change without notice.</span></span>
 
-<span data-ttu-id="052bd-107">Os recursos a revisar são configurados na propriedade **scope** do recurso [access Reviews accessReviewScheduleDefinition.](/graph/api/resources/accessreviewscheduledefinition?view=graph-rest-beta&preserve-view=true)</span><span class="sxs-lookup"><span data-stu-id="052bd-107">The resources to review are configured in the **scope** property of the access reviews [accessReviewScheduleDefinition](/graph/api/resources/accessreviewscheduledefinition?view=graph-rest-beta&preserve-view=true) resource.</span></span> <span data-ttu-id="052bd-108">Essa propriedade é do tipo [accessReviewScope](/graph/api/resources/accessreviewscope?view=graph-rest-beta&preserve-view=true), um tipo abstrato herdado pelos seguintes recursos que podem ser usados para configurar recursos ou grupos de recursos em que o acesso será revisado.</span><span class="sxs-lookup"><span data-stu-id="052bd-108">This property is of the type [accessReviewScope](/graph/api/resources/accessreviewscope?view=graph-rest-beta&preserve-view=true), an abstract type inherited by the following resources that can be used to configure resources or groups of resources that access will be reviewed against.</span></span>
+<span data-ttu-id="1db20-107">Os recursos a revisar são configurados na propriedade **scope** do recurso [access Reviews accessReviewScheduleDefinition.](/graph/api/resources/accessreviewscheduledefinition?view=graph-rest-beta&preserve-view=true)</span><span class="sxs-lookup"><span data-stu-id="1db20-107">The resources to review are configured in the **scope** property of the access reviews [accessReviewScheduleDefinition](/graph/api/resources/accessreviewscheduledefinition?view=graph-rest-beta&preserve-view=true) resource.</span></span> <span data-ttu-id="1db20-108">Essa propriedade é do tipo [accessReviewScope](/graph/api/resources/accessreviewscope?view=graph-rest-beta&preserve-view=true), um tipo abstrato herdado pelos seguintes recursos que podem ser usados para configurar recursos ou grupos de recursos em que o acesso será revisado.</span><span class="sxs-lookup"><span data-stu-id="1db20-108">This property is of the type [accessReviewScope](/graph/api/resources/accessreviewscope?view=graph-rest-beta&preserve-view=true), an abstract type inherited by the following resources that can be used to configure resources or groups of resources that access will be reviewed against.</span></span>
 
-|<span data-ttu-id="052bd-109">Recurso</span><span class="sxs-lookup"><span data-stu-id="052bd-109">Resource</span></span>|<span data-ttu-id="052bd-110">Descrição</span><span class="sxs-lookup"><span data-stu-id="052bd-110">Description</span></span>|<span data-ttu-id="052bd-111">Exemplos de cenários</span><span class="sxs-lookup"><span data-stu-id="052bd-111">Example scenarios</span></span>|
+|<span data-ttu-id="1db20-109">Recurso</span><span class="sxs-lookup"><span data-stu-id="1db20-109">Resource</span></span>|<span data-ttu-id="1db20-110">Descrição</span><span class="sxs-lookup"><span data-stu-id="1db20-110">Description</span></span>|<span data-ttu-id="1db20-111">Exemplos de cenários</span><span class="sxs-lookup"><span data-stu-id="1db20-111">Example scenarios</span></span>|
 |:---    |:---       |:---             |
-|[<span data-ttu-id="052bd-112">accessReviewQueryScope</span><span class="sxs-lookup"><span data-stu-id="052bd-112">accessReviewQueryScope</span></span>](/graph/api/resources/accessreviewqueryscope?view=graph-rest-beta&preserve-view=true)|<span data-ttu-id="052bd-113">Melhor aplicável ao analisar o conjunto completo ou o subconjunto de entidades que têm acesso a um recurso ou grupo de recursos relacionados.</span><span class="sxs-lookup"><span data-stu-id="052bd-113">Best applicable when reviewing the full set or subset of principals who have access to a resource or group of related resources.</span></span>|<ul><li><span data-ttu-id="052bd-114">Associação de usuários atribuídos a um grupo.</span><span class="sxs-lookup"><span data-stu-id="052bd-114">Membership of users assigned to a group.</span></span></li><li><span data-ttu-id="052bd-115">Acesso de usuário convidado a um grupo.</span><span class="sxs-lookup"><span data-stu-id="052bd-115">Guest user access to one group.</span></span></li><li><span data-ttu-id="052bd-116">Acesso do usuário convidado a todos Microsoft 365 grupos em um locatário.</span><span class="sxs-lookup"><span data-stu-id="052bd-116">Guest user access to all Microsoft 365 groups in a tenant.</span></span></li><li><span data-ttu-id="052bd-117">Entidades de serviço atribuídas a funções privilegiadas.</span><span class="sxs-lookup"><span data-stu-id="052bd-117">Service principals assigned to privileged roles.</span></span></li><li><span data-ttu-id="052bd-118">Acesso da entidade de serviço e usuário aos pacotes de acesso gerenciamento de direitos.</span><span class="sxs-lookup"><span data-stu-id="052bd-118">User and service principal access to Entitlement Management access packages.</span></span></li></ul>|
-|[<span data-ttu-id="052bd-119">accessReviewInactiveUsersQueryScope</span><span class="sxs-lookup"><span data-stu-id="052bd-119">accessReviewInactiveUsersQueryScope</span></span>](/graph/api/resources/accessreviewinactiveusersqueryscope?view=graph-rest-beta&preserve-view=true)|<span data-ttu-id="052bd-120">Herdado de accessReviewQueryScope.</span><span class="sxs-lookup"><span data-stu-id="052bd-120">Inherited from accessReviewQueryScope.</span></span> <span data-ttu-id="052bd-121">Usado quando apenas usuários inativos são revisados.</span><span class="sxs-lookup"><span data-stu-id="052bd-121">Used when only inactive users are reviewed.</span></span> <span data-ttu-id="052bd-122">Seu status inativo é especificado pela **propriedade inactiveDuration.**</span><span class="sxs-lookup"><span data-stu-id="052bd-122">Their inactive status is specified by the **inactiveDuration** property.</span></span> |<ul><li><span data-ttu-id="052bd-123">Associação de grupo apenas de usuários inativos.</span><span class="sxs-lookup"><span data-stu-id="052bd-123">Group membership of only inactive users.</span></span></li><ul>|
-|[<span data-ttu-id="052bd-124">principalResourceMembershipsScope</span><span class="sxs-lookup"><span data-stu-id="052bd-124">principalResourceMembershipsScope</span></span>](/graph/api/resources/principalResourceMembershipsScope?view=graph-rest-beta&preserve-view=true)|<span data-ttu-id="052bd-125">Melhor aplicável para analisar o acesso das entidades aos recursos em que você configura pools exclusivos de entidades e recursos.</span><span class="sxs-lookup"><span data-stu-id="052bd-125">Best applicable to review principals' access to resources where you configure unique pools of principals and resources.</span></span>|<ul><li><span data-ttu-id="052bd-126">Revisão do acesso de 3 entidades principais específicas em 1 Microsoft 365 *grupo* e 1 função privilegiada do Azure AD.</span><span class="sxs-lookup"><span data-stu-id="052bd-126">Reviewing access of 3 specific principals across 1 Microsoft 365 group *and* 1 privileged Azure AD role.</span></span></li><ul>|
+|[<span data-ttu-id="1db20-112">accessReviewQueryScope</span><span class="sxs-lookup"><span data-stu-id="1db20-112">accessReviewQueryScope</span></span>](/graph/api/resources/accessreviewqueryscope?view=graph-rest-beta&preserve-view=true)|<span data-ttu-id="1db20-113">Melhor aplicável ao analisar o conjunto completo ou o subconjunto de entidades que têm acesso a um recurso ou grupo de recursos relacionados.</span><span class="sxs-lookup"><span data-stu-id="1db20-113">Best applicable when reviewing the full set or subset of principals who have access to a resource or group of related resources.</span></span>|<ul><li><span data-ttu-id="1db20-114">Associação de usuários atribuídos a um grupo.</span><span class="sxs-lookup"><span data-stu-id="1db20-114">Membership of users assigned to a group.</span></span></li><li><span data-ttu-id="1db20-115">Acesso de usuário convidado a um grupo.</span><span class="sxs-lookup"><span data-stu-id="1db20-115">Guest user access to one group.</span></span></li><li><span data-ttu-id="1db20-116">Acesso do usuário convidado a todos Microsoft 365 grupos em um locatário.</span><span class="sxs-lookup"><span data-stu-id="1db20-116">Guest user access to all Microsoft 365 groups in a tenant.</span></span></li><li><span data-ttu-id="1db20-117">Entidades de serviço atribuídas a funções privilegiadas.</span><span class="sxs-lookup"><span data-stu-id="1db20-117">Service principals assigned to privileged roles.</span></span></li><li><span data-ttu-id="1db20-118">Acesso da entidade de serviço e usuário aos pacotes de acesso gerenciamento de direitos.</span><span class="sxs-lookup"><span data-stu-id="1db20-118">User and service principal access to Entitlement Management access packages.</span></span></li></ul>|
+|[<span data-ttu-id="1db20-119">accessReviewInactiveUsersQueryScope</span><span class="sxs-lookup"><span data-stu-id="1db20-119">accessReviewInactiveUsersQueryScope</span></span>](/graph/api/resources/accessreviewinactiveusersqueryscope?view=graph-rest-beta&preserve-view=true)|<span data-ttu-id="1db20-120">Herdado de accessReviewQueryScope.</span><span class="sxs-lookup"><span data-stu-id="1db20-120">Inherited from accessReviewQueryScope.</span></span> <span data-ttu-id="1db20-121">Usado quando apenas usuários inativos são revisados.</span><span class="sxs-lookup"><span data-stu-id="1db20-121">Used when only inactive users are reviewed.</span></span> <span data-ttu-id="1db20-122">Seu status inativo é especificado pela **propriedade inactiveDuration.**</span><span class="sxs-lookup"><span data-stu-id="1db20-122">Their inactive status is specified by the **inactiveDuration** property.</span></span> |<ul><li><span data-ttu-id="1db20-123">Associação de grupo apenas de usuários inativos.</span><span class="sxs-lookup"><span data-stu-id="1db20-123">Group membership of only inactive users.</span></span></li><ul>|
+|[<span data-ttu-id="1db20-124">principalResourceMembershipsScope</span><span class="sxs-lookup"><span data-stu-id="1db20-124">principalResourceMembershipsScope</span></span>](/graph/api/resources/principalResourceMembershipsScope?view=graph-rest-beta&preserve-view=true)|<span data-ttu-id="1db20-125">Melhor aplicável para analisar o acesso das entidades aos recursos em que você configura pools exclusivos de entidades e recursos.</span><span class="sxs-lookup"><span data-stu-id="1db20-125">Best applicable to review principals' access to resources where you configure unique pools of principals and resources.</span></span>|<ul><li><span data-ttu-id="1db20-126">Revisão do acesso de 3 entidades principais específicas em 1 Microsoft 365 *grupo* e 1 função privilegiada do Azure AD.</span><span class="sxs-lookup"><span data-stu-id="1db20-126">Reviewing access of 3 specific principals across 1 Microsoft 365 group *and* 1 privileged Azure AD role.</span></span></li><ul>|
 
-<span data-ttu-id="052bd-127">Neste artigo, você usará esses tipos de accessReviewScope para configurar uma ampla variedade de recursos do Azure AD como o escopo de sua revisão de acesso.</span><span class="sxs-lookup"><span data-stu-id="052bd-127">In this article, you will use these types of accessReviewScope to configure a wide range of Azure AD resources as the scope of your access review.</span></span> <span data-ttu-id="052bd-128">Isso pode ajudá-lo a automatizar a revisão proativa e manter o controle sobre o acesso aos recursos em sua organização.</span><span class="sxs-lookup"><span data-stu-id="052bd-128">This can help you to automate proactive review and keep control over access to resources in your organization.</span></span>  
+<span data-ttu-id="1db20-127">Neste artigo, você usará esses tipos de accessReviewScope para configurar uma ampla variedade de recursos do Azure AD como o escopo de sua revisão de acesso.</span><span class="sxs-lookup"><span data-stu-id="1db20-127">In this article, you will use these types of accessReviewScope to configure a wide range of Azure AD resources as the scope of your access review.</span></span> <span data-ttu-id="1db20-128">Isso pode ajudá-lo a automatizar a revisão proativa e manter o controle sobre o acesso aos recursos em sua organização.</span><span class="sxs-lookup"><span data-stu-id="1db20-128">This can help you to automate proactive review and keep control over access to resources in your organization.</span></span>  
 
-## <a name="use-accessreviewqueryscope-to-configure-scope"></a><span data-ttu-id="052bd-129">Usar accessReviewQueryScope para configurar o escopo</span><span class="sxs-lookup"><span data-stu-id="052bd-129">Use accessReviewQueryScope to configure scope</span></span>
+## <a name="use-accessreviewqueryscope-to-configure-scope"></a><span data-ttu-id="1db20-129">Usar accessReviewQueryScope para configurar o escopo</span><span class="sxs-lookup"><span data-stu-id="1db20-129">Use accessReviewQueryScope to configure scope</span></span>
 
-<span data-ttu-id="052bd-130">Para configurar o escopo usando o **tipo accessReviewQueryScope,** de definir os valores de suas propriedades **de** consulta, **queryRoot** e **queryType.**</span><span class="sxs-lookup"><span data-stu-id="052bd-130">To configure the scope by using the **accessReviewQueryScope** type, set the values of its **query**, **queryRoot**, and **queryType** properties.</span></span> <span data-ttu-id="052bd-131">Para descrições dessas propriedades, consulte [tipo de recurso accessReviewQueryScope.](/graph/api/resources/accessreviewqueryscope?view=graph-rest-beta&preserve-view=true)</span><span class="sxs-lookup"><span data-stu-id="052bd-131">For descriptions of these properties, see [accessReviewQueryScope](/graph/api/resources/accessreviewqueryscope?view=graph-rest-beta&preserve-view=true) resource type.</span></span>
+<span data-ttu-id="1db20-130">Para configurar o escopo usando o **tipo accessReviewQueryScope,** de definir os valores de suas propriedades **de** consulta, **queryRoot** e **queryType.**</span><span class="sxs-lookup"><span data-stu-id="1db20-130">To configure the scope by using the **accessReviewQueryScope** type, set the values of its **query**, **queryRoot**, and **queryType** properties.</span></span> <span data-ttu-id="1db20-131">Para descrições dessas propriedades, consulte [tipo de recurso accessReviewQueryScope.](/graph/api/resources/accessreviewqueryscope?view=graph-rest-beta&preserve-view=true)</span><span class="sxs-lookup"><span data-stu-id="1db20-131">For descriptions of these properties, see [accessReviewQueryScope](/graph/api/resources/accessreviewqueryscope?view=graph-rest-beta&preserve-view=true) resource type.</span></span>
 
-### <a name="example-1-review-all-users-assigned-to-a-group"></a><span data-ttu-id="052bd-132">Exemplo 1: Revisar todos os usuários atribuídos a um grupo</span><span class="sxs-lookup"><span data-stu-id="052bd-132">Example 1: Review all users assigned to a group</span></span>
+### <a name="example-1-review-all-users-assigned-to-a-group"></a><span data-ttu-id="1db20-132">Exemplo 1: Revisar todos os usuários atribuídos a um grupo</span><span class="sxs-lookup"><span data-stu-id="1db20-132">Example 1: Review all users assigned to a group</span></span>
 
 ```http
 "scope": {
@@ -42,7 +42,7 @@ ms.locfileid: "52755627"
     "queryType": "MicrosoftGraph"
 }
 ```
-<span data-ttu-id="052bd-133">Para revisar *somente usuários inativos* atribuídos ao grupo:</span><span class="sxs-lookup"><span data-stu-id="052bd-133">To review *only inactive users* assigned to the group:</span></span>
+<span data-ttu-id="1db20-133">Para revisar *somente usuários inativos* atribuídos ao grupo:</span><span class="sxs-lookup"><span data-stu-id="1db20-133">To review *only inactive users* assigned to the group:</span></span>
 
 ```http
 "scope": {
@@ -53,7 +53,7 @@ ms.locfileid: "52755627"
 }
 ````
 
-### <a name="example-2-review-guest-users-assigned-to-a-group"></a><span data-ttu-id="052bd-134">Exemplo 2: Revisar usuários convidados atribuídos a um grupo</span><span class="sxs-lookup"><span data-stu-id="052bd-134">Example 2: Review guest users assigned to a group</span></span>
+### <a name="example-2-review-guest-users-assigned-to-a-group"></a><span data-ttu-id="1db20-134">Exemplo 2: Revisar usuários convidados atribuídos a um grupo</span><span class="sxs-lookup"><span data-stu-id="1db20-134">Example 2: Review guest users assigned to a group</span></span>
 
 ```http
 "scope": {
@@ -63,7 +63,7 @@ ms.locfileid: "52755627"
 }
 ```
 
-### <a name="example-3-review-guest-users-assigned-to-all-microsoft-365-groups"></a><span data-ttu-id="052bd-135">Exemplo 3: Revisar usuários convidados atribuídos a todos os Microsoft 365 grupos</span><span class="sxs-lookup"><span data-stu-id="052bd-135">Example 3: Review guest users assigned to all Microsoft 365 groups</span></span>
+### <a name="example-3-review-guest-users-assigned-to-all-microsoft-365-groups"></a><span data-ttu-id="1db20-135">Exemplo 3: Revisar usuários convidados atribuídos a todos os Microsoft 365 grupos</span><span class="sxs-lookup"><span data-stu-id="1db20-135">Example 3: Review guest users assigned to all Microsoft 365 groups</span></span>
 
 ```http
 "instanceEnumerationScope": {
@@ -77,9 +77,9 @@ ms.locfileid: "52755627"
 }
 ```
 
-<span data-ttu-id="052bd-136">Como essa revisão é aplicada em todos os grupos Microsoft 365, configure **a instânciaEnumerationScope** para especificar os grupos Microsoft 365 a revisar.</span><span class="sxs-lookup"><span data-stu-id="052bd-136">Because this review is applied on all Microsoft 365 groups, configure the **instanceEnumerationScope** to specify the Microsoft 365 groups to review.</span></span>
+<span data-ttu-id="1db20-136">Como essa revisão é aplicada em todos os grupos Microsoft 365, configure **a instânciaEnumerationScope** para especificar os grupos Microsoft 365 a revisar.</span><span class="sxs-lookup"><span data-stu-id="1db20-136">Because this review is applied on all Microsoft 365 groups, configure the **instanceEnumerationScope** to specify the Microsoft 365 groups to review.</span></span>
 
-### <a name="example-4-review-access-of-all-inactive-guest-users-to-all-groups"></a><span data-ttu-id="052bd-137">Exemplo 4: Revisar o acesso de todos os usuários convidados inativos a todos os grupos</span><span class="sxs-lookup"><span data-stu-id="052bd-137">Example 4: Review access of all inactive guest users to all groups</span></span>
+### <a name="example-4-review-access-of-all-inactive-guest-users-to-all-groups"></a><span data-ttu-id="1db20-137">Exemplo 4: Revisar o acesso de todos os usuários convidados inativos a todos os grupos</span><span class="sxs-lookup"><span data-stu-id="1db20-137">Example 4: Review access of all inactive guest users to all groups</span></span>
 
 ```http
 "scope": {
@@ -90,9 +90,9 @@ ms.locfileid: "52755627"
 }
 ```
 
-<span data-ttu-id="052bd-138">Como essa revisão é aplicada a usuários inativos, use o **recurso accessReviewInactiveUsersQueryScope** e especifique a propriedade **@odata.type com** o valor `#microsoft.graph.accessReviewInactiveUsersQueryScope` .</span><span class="sxs-lookup"><span data-stu-id="052bd-138">Because this review is applied on inactive users, use the **accessReviewInactiveUsersQueryScope** resource and specify the **@odata.type** type property with the value `#microsoft.graph.accessReviewInactiveUsersQueryScope`.</span></span>
+<span data-ttu-id="1db20-138">Como essa revisão é aplicada a usuários inativos, use o **recurso accessReviewInactiveUsersQueryScope** e especifique a propriedade **@odata.type com** o valor `#microsoft.graph.accessReviewInactiveUsersQueryScope` .</span><span class="sxs-lookup"><span data-stu-id="1db20-138">Because this review is applied on inactive users, use the **accessReviewInactiveUsersQueryScope** resource and specify the **@odata.type** type property with the value `#microsoft.graph.accessReviewInactiveUsersQueryScope`.</span></span>
 
-### <a name="example-5-review-of-all-inactive-guest-users-assigned-to-all-teams"></a><span data-ttu-id="052bd-139">Exemplo 5: Revisão de todos os usuários convidados inativos atribuídos a todas as equipes</span><span class="sxs-lookup"><span data-stu-id="052bd-139">Example 5: Review of all inactive guest users assigned to all teams</span></span>
+### <a name="example-5-review-of-all-inactive-guest-users-assigned-to-all-teams"></a><span data-ttu-id="1db20-139">Exemplo 5: Revisão de todos os usuários convidados inativos atribuídos a todas as equipes</span><span class="sxs-lookup"><span data-stu-id="1db20-139">Example 5: Review of all inactive guest users assigned to all teams</span></span>
 
 ```http
 "instanceEnumerationScope": {
@@ -107,9 +107,9 @@ ms.locfileid: "52755627"
 }
 ```
 
-<span data-ttu-id="052bd-140">Como essa revisão é aplicada a todas as equipes, configure a **propriedade instanceEnumerationScope** para especificar todas as equipes.</span><span class="sxs-lookup"><span data-stu-id="052bd-140">Because this review is applied on all teams, configure the **instanceEnumerationScope** property to specify all teams.</span></span>
+<span data-ttu-id="1db20-140">Como essa revisão é aplicada a todas as equipes, configure a **propriedade instanceEnumerationScope** para especificar todas as equipes.</span><span class="sxs-lookup"><span data-stu-id="1db20-140">Because this review is applied on all teams, configure the **instanceEnumerationScope** property to specify all teams.</span></span>
 
-### <a name="example-6-review-of-entitlement-management-access-package-assignment"></a><span data-ttu-id="052bd-141">Exemplo 6: Revisão da atribuição do pacote de acesso do Gerenciamento de Direitos</span><span class="sxs-lookup"><span data-stu-id="052bd-141">Example 6: Review of Entitlement Management access package assignment</span></span>
+### <a name="example-6-review-of-entitlement-management-access-package-assignment"></a><span data-ttu-id="1db20-141">Exemplo 6: Revisão da atribuição do pacote de acesso do Gerenciamento de Direitos</span><span class="sxs-lookup"><span data-stu-id="1db20-141">Example 6: Review of Entitlement Management access package assignment</span></span>
 
 ```http
 "scope": {
@@ -119,7 +119,7 @@ ms.locfileid: "52755627"
 }
 ```
 
-### <a name="example-7-review-of-service-principals-assigned-to-privileged-roles"></a><span data-ttu-id="052bd-142">Exemplo 7: Revisão das entidades de serviço atribuídas a funções privilegiadas</span><span class="sxs-lookup"><span data-stu-id="052bd-142">Example 7: Review of service principals assigned to privileged roles</span></span> 
+### <a name="example-7-review-of-service-principals-assigned-to-privileged-roles"></a><span data-ttu-id="1db20-142">Exemplo 7: Revisão das entidades de serviço atribuídas a funções privilegiadas</span><span class="sxs-lookup"><span data-stu-id="1db20-142">Example 7: Review of service principals assigned to privileged roles</span></span> 
 
 ```http
 "scope": {
@@ -129,11 +129,11 @@ ms.locfileid: "52755627"
 }
 ```
 
-## <a name="use-principalresourcemembershipsscope-to-configure-scope"></a><span data-ttu-id="052bd-143">Usar o principalResourceMembershipsScope para configurar o escopo</span><span class="sxs-lookup"><span data-stu-id="052bd-143">Use principalResourceMembershipsScope to configure scope</span></span>
+## <a name="use-principalresourcemembershipsscope-to-configure-scope"></a><span data-ttu-id="1db20-143">Usar o principalResourceMembershipsScope para configurar o escopo</span><span class="sxs-lookup"><span data-stu-id="1db20-143">Use principalResourceMembershipsScope to configure scope</span></span>
 
-<span data-ttu-id="052bd-144">O **principalResourceMembershipsScope** expõe as propriedades **principalScopes** e **resourceScopes** para dar suporte a opções de configuração mais personalizadas para o escopo **do accessReviewScheduleDefinition**.</span><span class="sxs-lookup"><span data-stu-id="052bd-144">The **principalResourceMembershipsScope** exposes the **principalScopes** and **resourceScopes** properties to support more tailored configuration options for the scope of the **accessReviewScheduleDefinition**.</span></span> <span data-ttu-id="052bd-145">Isso inclui a revisão do acesso a várias entidades ou grupos de entidades para vários recursos.</span><span class="sxs-lookup"><span data-stu-id="052bd-145">This includes reviewing access for multiple principals or groups of principals to multiple resources.</span></span>
+<span data-ttu-id="1db20-144">O **principalResourceMembershipsScope** expõe as propriedades **principalScopes** e **resourceScopes** para dar suporte a opções de configuração mais personalizadas para o escopo **do accessReviewScheduleDefinition**.</span><span class="sxs-lookup"><span data-stu-id="1db20-144">The **principalResourceMembershipsScope** exposes the **principalScopes** and **resourceScopes** properties to support more tailored configuration options for the scope of the **accessReviewScheduleDefinition**.</span></span> <span data-ttu-id="1db20-145">Isso inclui a revisão do acesso a várias entidades ou grupos de entidades para vários recursos.</span><span class="sxs-lookup"><span data-stu-id="1db20-145">This includes reviewing access for multiple principals or groups of principals to multiple resources.</span></span>
 
-### <a name="example-1-review-access-of-all-inactive-guest-users-to-an-application"></a><span data-ttu-id="052bd-146">Exemplo 1: revisar o acesso de todos os usuários convidados inativos a um aplicativo</span><span class="sxs-lookup"><span data-stu-id="052bd-146">Example 1: Review access of all inactive guest users to an application</span></span>
+### <a name="example-1-review-access-of-all-inactive-guest-users-to-groups"></a><span data-ttu-id="1db20-146">Exemplo 1: revisar o acesso de todos os usuários convidados inativos a grupos</span><span class="sxs-lookup"><span data-stu-id="1db20-146">Example 1: Review access of all inactive guest users to groups</span></span>
 
 ```http
 "scope": {
@@ -149,16 +149,16 @@ ms.locfileid: "52755627"
     "resourceScopes": [
         {
             "@odata.type": "#microsoft.graph.accessReviewQueryScope",
-            "query": "/servicePrincipals/{serviceprincipal id}",
+            "query": "/groups",
             "queryType": "MicrosoftGraph"
         }
     ]
 }
 ```
 
-<span data-ttu-id="052bd-147">Neste exemplo, as entidades principais são todos usuários convidados inativos com o período de sua inatividade calculado como 30 dias a partir da data de início da instância de revisão de acesso.</span><span class="sxs-lookup"><span data-stu-id="052bd-147">In this example, the principals are all inactive guest users with the period of their inactivity calculated as 30 days from the start date of the access review instance.</span></span>
+<span data-ttu-id="1db20-147">Neste exemplo, as entidades principais são todos usuários convidados inativos com o período de sua inatividade calculado como 30 dias a partir da data de início da instância de revisão de acesso.</span><span class="sxs-lookup"><span data-stu-id="1db20-147">In this example, the principals are all inactive guest users with the period of their inactivity calculated as 30 days from the start date of the access review instance.</span></span>
 
-### <a name="example-2-review-access-of-all-guest-users-to-a-directory-role"></a><span data-ttu-id="052bd-148">Exemplo 2: revisar o acesso de todos os usuários convidados a uma função de diretório</span><span class="sxs-lookup"><span data-stu-id="052bd-148">Example 2: Review access of all guest users to a directory role</span></span>
+### <a name="example-2-review-access-of-all-guest-users-to-a-directory-role"></a><span data-ttu-id="1db20-148">Exemplo 2: revisar o acesso de todos os usuários convidados a uma função de diretório</span><span class="sxs-lookup"><span data-stu-id="1db20-148">Example 2: Review access of all guest users to a directory role</span></span>
 
 ```http
 "scope": {
@@ -180,6 +180,6 @@ ms.locfileid: "52755627"
 }
 ```
 
-## <a name="see-also"></a><span data-ttu-id="052bd-149">Confira também</span><span class="sxs-lookup"><span data-stu-id="052bd-149">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="1db20-149">Confira também</span><span class="sxs-lookup"><span data-stu-id="1db20-149">See also</span></span>
 
-+ [<span data-ttu-id="052bd-150">Atribuir revisadores à sua definição de revisão de acesso</span><span class="sxs-lookup"><span data-stu-id="052bd-150">Assign reviewers to your access review definition</span></span>](/graph/accessreviews-reviewers-concept)
++ [<span data-ttu-id="1db20-150">Atribuir revisadores à sua definição de revisão de acesso</span><span class="sxs-lookup"><span data-stu-id="1db20-150">Assign reviewers to your access review definition</span></span>](/graph/accessreviews-reviewers-concept)
