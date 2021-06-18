@@ -1,16 +1,16 @@
 ---
 title: Listar membros
 description: Use essa API para obter a lista de membros (usuário e grupo) em uma unidade administrativa.
-author: anandyadavMSFT
+author: DougKirschner
 localization_priority: Normal
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: f65e2f2b8509e5718146a2b99893e35e1bea6327
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 6eca10c34ea8750a356a584aac8c09e2e6006a6b
+ms.sourcegitcommit: 979fe005c74eb99cd971df6b9511b2d3f7fe3cd4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52054207"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52991509"
 ---
 # <a name="list-members"></a>Listar membros
 
@@ -57,7 +57,7 @@ A solicitação a seguir lista os membros da unidade administrativa, retornando 
 GET https://graph.microsoft.com/v1.0/directory/administrativeUnits/{id}/members
 ```
 
-Veja a seguir um exemplo da resposta. Observação: o objeto de resposta exibido aqui pode ser encurtado para legibilidade.
+Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser reduzido para facilitar a leitura.
  
 ```http
 HTTP/1.1 200 OK
@@ -89,7 +89,7 @@ A solicitação a seguir lista as referências de membro da unidade administrati
 ```
 GET https://graph.microsoft.com/v1.0/directory/administrativeUnits/{id}/members/$ref
 ```
-Veja a seguir um exemplo da resposta. Observação: o objeto de resposta exibido aqui pode ser encurtado para legibilidade.
+Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser reduzido para facilitar a leitura.
  
 ```http
 HTTP/1.1 200 OK

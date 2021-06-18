@@ -1,16 +1,16 @@
 ---
 title: Obter um membro
 description: Use essa API para obter um membro específico (usuário ou grupo) em uma unidade administrativa.
-author: anandyadavMSFT
+author: DougKirschner
 localization_priority: Normal
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 0a99aee41ac003872a9581bb64a18e1f0cce31db
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 18ef14319ff7a9ee157059e4b003be2c7a26eb5d
+ms.sourcegitcommit: 979fe005c74eb99cd971df6b9511b2d3f7fe3cd4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52050644"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52991572"
 ---
 # <a name="get-a-member"></a>Obter um membro
 

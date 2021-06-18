@@ -1,16 +1,16 @@
 ---
 title: Obter administrativeUnit
 description: Recupere as propriedades e as relações de um objeto administrativeUnit.
-author: anandyadavMSFT
+author: DougKirschner
 localization_priority: Normal
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: bbadb0cfdf8a8aaa613482fc08fdb2535696b1ea
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 4e7d55a0d94887009e377a3160245dcfafc0e794
+ms.sourcegitcommit: 979fe005c74eb99cd971df6b9511b2d3f7fe3cd4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52050637"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52991530"
 ---
 # <a name="get-administrativeunit"></a>Obter administrativeUnit
 
@@ -83,7 +83,7 @@ GET https://graph.microsoft.com/v1.0/directory/administrativeUnits/{id}
 ---
 
 ##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser reduzido para facilitar a leitura.
 <!-- {
   "blockType": "response",
   "truncated": true,

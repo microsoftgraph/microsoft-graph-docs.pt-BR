@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Priority
 ms.prod: education
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: eb16c50cc0a858091488ebf7ffe13879c7cb4763
-ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
+ms.openlocfilehash: 258659da2ad842971043d76ec52888bfd15a236e
+ms.sourcegitcommit: 2d0daa446c7b37ced1d214e0c6e18e2b8243bb09
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48289241"
+ms.lasthandoff: 06/18/2021
+ms.locfileid: "53010182"
 ---
 # <a name="education-api-overview"></a>Visão geral da API de educação
 
@@ -33,24 +33,21 @@ Vejamos a seguir alguns dos cenários permitidos pelas APIs de lista de particip
 
 ### <a name="use-microsoft-teams-to-create-class-assignments-in-an-assignments-tab"></a>Usar o Microsoft Teams para criar tarefas da aula em uma guia de tarefas
 
+Você pode usar as APIs de educação relacionadas a atribuições para integrá-las às atribuições do Microsoft Teams. O Microsoft Teams no Microsoft 365 Educacional é baseado nas mesmas APIs educacionais e fornece um caso de uso para o que você pode fazer com as APIs. Seu aplicativo pode usar essas APIs para interagir com as tarefas em todo o ciclo de vida da tarefa.
 
-Você pode usar a API de tarefas para criar um aplicativo Web que gerencia as tarefas da aula e, em seguida, integrar o seu aplicativo ao Microsoft Teams em uma nova guia personalizada.  
+As APIs de atribuição fornecem os seguintes recursos-chave:
 
-O Microsoft Teams no Microsoft 365 é um hub digital que reúne conversas, conteúdo e aplicativos em um só lugar para as salas de aula. O Microsoft Teams oferece um [conjunto avançado de pontos de extensibilidade](/microsoftteams/platform/concepts/apps/apps-overview), incluindo a criação de guias, conectores e bots. Esses pontos de extensibilidade podem chamar as APIs educacionais do Microsoft Graph para lidar com tarefas e trabalhos. Crie uma experiência mais abrangente habilitando o seu ponto de extensão com qualquer outra API do Microsoft Graph e as APIs de tarefa e de trabalhos.
-
-Para o setor educacional, os aplicativos de guia personalizada do Microsoft Teams são abertos em um contexto de sala de aula educacional (uma equipe), onde faz sentido gerenciar o fluxo de tarefas de ponta a ponta, desde a criação e a distribuição até as notas e o feedback. Isso é apenas um exemplo de como o Microsoft Teams economiza tempo e simplifica a logística do dia a dia, deixando os educadores livres para se dedicarem aos alunos.
-
-A imagem a seguir mostra um aplicativo Web para gerenciar tarefas em uma guia personalizada denominada Tarefas para uma aula de **Ciência – Biologia 1**.
-
-![Captura de tela de uma guia denominada Tarefas no Microsoft Teams para uma aula de Ciência – Biologia](images/assignmentsinteams.png)
+•   [educationAssignment](/graph/api/resources/educationassignment?view=graph-rest-1.0) - O objeto central de atribuições API. Representa uma tarefa ou unidade de trabalho designada a um aluno ou membro da equipe em uma classe como parte de seu estudo.
+•   [educationSubmission](/graph/api/resources/educationsubmission?view=graph-rest-1.0) - Representa os recursos que um indivíduo (ou grupo) apresenta para uma tarefa e a nota e feedback associados para essa tarefa.
+•   [educationResource](/graph/api/resources/educationresource?view=graph-rest-1.0) - Representa o objeto de aprendizagem que está sendo designado ou apresentado. Um **educaçãoResource** está associado a um **educationAssignment** e/ou a um **educationSubmission**.
 
 
 Com a API de tarefas, o seu aplicativo pode interagir com o serviço de tarefas fora do Microsoft Teams. O Microsoft Teams cuida da distribuição, das datas de conclusão e das notas, enquanto o sistema pode fornecer uma experiência avançada de aprendizagem aos alunos.
 Vejamos a seguir exemplos de alguns cenários habilitados pela API de tarefas:
 
-- [Adicionar uma tarefa que se vincula ao seu aplicativo](/graph/api/educationclass-post-assignments?view=graph-rest-beta) 
-- [Atribuir resultados como notas a alunos individuais para as tarefas vinculadas ao seu aplicativo](/graph/api/educationoutcome-update?view=graph-rest-beta)
-- [Criar um painel do aluno para mostrar as tarefas cuja data de entrega já passou](/graph/api/educationclass-list-assignments?view=graph-rest-beta)
+- [Adicionar uma tarefa que se vincula ao seu aplicativo](/graph/api/educationclass-post-assignments?view=graph-rest-1.0) 
+- [Atribuir resultados como notas a alunos individuais para as tarefas vinculadas ao seu aplicativo](/graph/api/educationoutcome-update?view=graph-rest-1.0)
+- [Criar um painel do aluno para mostrar as tarefas cuja data de entrega já passou](/graph/api/educationclass-list-assignments?view=graph-rest-1.0)
 
 
 ### <a name="enable-school-admins-to-manage-identity-and-roster-sync-using-school-data-sync-management-preview"></a>Permitir que os diretores de escola gerenciem a identidade e a sincronização da lista de participação usando o Gerenciamento do School Data Sync (visualização)
@@ -73,7 +70,7 @@ Está procurando a referência de API para esse serviço?
 
 - Para começar a usar as APIs educacionais, consulte:
   - [Usar as APIs de lista de participantes](/graph/api/resources/education-overview?view=graph-rest-1.0)
-  - [Usar as APIs de tarefa](/graph/api/resources/educationassignment?view=graph-rest-beta)
+  - [Usar as APIs de tarefa](/graph/api/resources/educationassignment?view=graph-rest-1.0)
   - [Usar as APIs de gerenciamento de SDS](/graph/api/resources/educationsynchronizationprofile?view=graph-rest-beta)
 - Experimente as APIs de educação no [Explorador do Graph](https://developer.microsoft.com/graph/graph-explorer).
 - Explore os seguintes exemplos relacionados ao setor educacional:

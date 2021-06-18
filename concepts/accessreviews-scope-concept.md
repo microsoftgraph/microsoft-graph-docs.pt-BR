@@ -5,12 +5,12 @@ author: isabelleatmsft
 localization_priority: Normal
 ms.prod: governance
 doc_type: conceptualPageType
-ms.openlocfilehash: fe61a015ab88e5e3c562b8837d57b997400f8ed3
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 731ebcb9ab27baf4ea30553d4f6a598d61e37d59
+ms.sourcegitcommit: 2d0daa446c7b37ced1d214e0c6e18e2b8243bb09
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52755627"
+ms.lasthandoff: 06/18/2021
+ms.locfileid: "53010188"
 ---
 # <a name="configure-the-scope-of-your-access-review-using-the-microsoft-graph-api"></a>Configurar o escopo da sua revisão de acesso usando a API Graph Microsoft
 
@@ -133,7 +133,7 @@ Como essa revisão é aplicada a todas as equipes, configure a **propriedade ins
 
 O **principalResourceMembershipsScope** expõe as propriedades **principalScopes** e **resourceScopes** para dar suporte a opções de configuração mais personalizadas para o escopo **do accessReviewScheduleDefinition**. Isso inclui a revisão do acesso a várias entidades ou grupos de entidades para vários recursos.
 
-### <a name="example-1-review-access-of-all-inactive-guest-users-to-an-application"></a>Exemplo 1: revisar o acesso de todos os usuários convidados inativos a um aplicativo
+### <a name="example-1-review-access-of-all-inactive-guest-users-to-groups"></a>Exemplo 1: revisar o acesso de todos os usuários convidados inativos a grupos
 
 ```http
 "scope": {
@@ -149,7 +149,7 @@ O **principalResourceMembershipsScope** expõe as propriedades **principalScopes
     "resourceScopes": [
         {
             "@odata.type": "#microsoft.graph.accessReviewQueryScope",
-            "query": "/servicePrincipals/{serviceprincipal id}",
+            "query": "/groups",
             "queryType": "MicrosoftGraph"
         }
     ]

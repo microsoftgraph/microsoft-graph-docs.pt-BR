@@ -459,7 +459,7 @@ items:
                 href: api/profile-get.md
               - name: Excluir perfil do usuário
                 href: api/profile-delete.md
-          - name: Trabalho em equipe
+          - name: Teamwork
             items:
               - name: Aplicativo instalado
                 href: resources/teamsappinstallation.md
@@ -558,7 +558,7 @@ items:
                 href: api/group-list-owners.md
               - name: Listar fotos
                 href: api/group-list-photos.md
-              - name: Listar concessões de permissão
+              - name: Listar as concessões de permissões
                 href: api/group-list-permissiongrants.md
               - name: Excluir permanentemente um grupo
                 href: api/directory-deleteditems-delete.md
@@ -9523,9 +9523,9 @@ items:
               - name: Cloud PC
                 href: resources/cloudpc.md
                 items:
-                  - name: Lista
+                  - name: Listar PCs de nuvem
                     href: api/virtualendpoint-list-cloudpcs.md
-                  - name: Obter
+                  - name: Obter computador na nuvem
                     href: api/cloudpc-get.md
                   - name: Reprovision
                     href: api/cloudpc-reprovision.md
@@ -9574,6 +9574,21 @@ items:
                     href: api/cloudpcprovisioningpolicy-delete.md
                   - name: Atribuir
                     href: api/cloudpcprovisioningpolicy-assign.md
+              - name: Configuração do usuário do computador na nuvem
+                href: resources/cloudpcusersetting.md
+                items:
+                  - name: Lista
+                    href: api/virtualendpoint-list-usersettings.md
+                  - name: Obter
+                    href: api/cloudpcusersetting-get.md
+                  - name: Criar
+                    href: api/virtualendpoint-post-usersettings.md
+                  - name: Atualizar
+                    href: api/cloudpcusersetting-update.md
+                  - name: Excluir
+                    href: api/cloudpcusersetting-delete.md
+                  - name: Atribuir
+                    href: api/cloudpcusersetting-assign.md
               - name: Gerenciamento de função
                 href: resources/rolemanagement.md
                 items:
@@ -13272,7 +13287,7 @@ items:
         items:
           - name: Visão Geral
             href: resources/planner-overview.md
-          - name: Plano
+          - name: Planejar
             href: resources/plannerplan.md
             items:
               - name: Listar os planos do grupo
@@ -13430,6 +13445,8 @@ items:
                 href: api/profilephoto-update.md
               - name: Migração completa para equipe
                 href: api/team-completemigration.md
+              - name: Listar as concessões de permissões
+                href: api/team-list-permissiongrants.md
           - name: Grupo (equipe)
             href: resources/group.md
             items:
@@ -13551,6 +13568,8 @@ items:
                 href: api/chat-post-messages.md
               - name: Obter chat entre o usuário e o aplicativo
                 href: api/userscopeteamsappinstallation-get-chat.md
+              - name: Listar as concessões de permissões
+                href: api/chat-list-permissiongrants.md
           - name: Mensagem de chat
             href: resources/chatmessage.md
             items:
@@ -13885,6 +13904,8 @@ items:
                 href: api/onenote-list-notebooks.md
               - name: Criar blocos de anotações
                 href: api/onenote-post-notebooks.md
+          - name: Concessões de permissão específicas de recursos
+            href: resources/resourcespecificpermissiongrant.md
       - name: Tarefas pendentes
         displayName: Microsoft To Do
         items:
