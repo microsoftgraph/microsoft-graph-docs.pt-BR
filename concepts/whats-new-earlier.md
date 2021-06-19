@@ -3,12 +3,12 @@ title: Destaques de versões anteriores no Microsoft Graph
 description: O que havia de novo no Microsoft Graph
 author: angelgolfer-ms
 localization_priority: Priority
-ms.openlocfilehash: 275d21c3bd34fc8a5049c4db8fb1e2c7521b3a81
-ms.sourcegitcommit: ecf7867ef7957b847b7530089ce30e107750adac
+ms.openlocfilehash: 77e913732dd0ad9f7094ec778f71a0eb2b8e0fe8
+ms.sourcegitcommit: 5a1cc1943527aa268e3797ee514871e65eb474a6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "52698008"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53030247"
 ---
 # <a name="highlights-of-earlier-releases"></a>Destaques de versões anteriores
 
@@ -783,7 +783,7 @@ Atualizações de [maio](changelog.md#may-2020) do Intune beta.
 - Especifique os recursos a serem fornecidos na propriedade **resourceProvisioningOptions** que normalmente não fazem parte da criação do [grupo](/graph/api/resources/group?view=graph-rest-beta&preserve-view=true) padrão. Atualmente há suporte para provisionamento de um grupo como uma [equipe](/graph/api/resources/team?view=graph-rest-beta&preserve-view=true) com os recursos do Microsoft Teams.
 
 ### <a name="identity-and-access"></a>Identidade e acesso
-- Aplica opções de consulta do sistema OData (`$count`, `$filter`, `$search`) ao obter coleções de entidades derivadas do [directoryObject](). Você pode [pesquisar tokens específicos](./query-parameters.md#using-search-on-directory-object-collections) nas propriedades **displayName** e **description** dessas entidades, e usar a conversão OData para aparar os resultados do **directoryObject** para determinados tipos derivados. Veja mais detalhes em [Criar consultas avançadas no Microsoft Graph com $count, $filter, $search e $orderby](https://developer.microsoft.com/pt-BR/graph/blogs/build-advanced-queries-with-count-filter-search-and-orderby/).
+- Aplica opções de consulta do sistema OData (`$count`, `$filter`, `$search`) ao obter coleções de entidades derivadas do [directoryObject](/graph/api/resources/directoryObject). Você pode [pesquisar tokens específicos](/graph/search-query-parameter#using-search-on-directory-object-collections) nas propriedades **displayName** e **description** dessas entidades, e usar a conversão OData para aparar os resultados do **directoryObject** para determinados tipos derivados. Veja mais detalhes em [Criar consultas avançadas no Microsoft Graph com $count, $filter, $search e $orderby](https://developer.microsoft.com/pt-BR/graph/blogs/build-advanced-queries-with-count-filter-search-and-orderby/).
 - Como parte da [API de proteção de identidade](/graph/api/resources/identityprotection-root?view=graph-rest-beta&preserve-view=true), use a propriedade **riskEventType** para [obter o tipo de risco detectado](/graph/api/riskdetection-get?view=graph-rest-beta&preserve-view=true) ou [obter o tipo de risco no histórico de um usuário](/graph/api/riskyuser-list-history?view=graph-rest-beta&preserve-view=true). Não use a propriedade **risktype** como foi preterida.
 - Especifique os tipos de aplicativo cliente na propriedade **clientAppTypes** do [conjunto de condições](/graph/api/resources/conditionalaccessconditionset?view=graph-rest-beta&preserve-view=true) de uma [política de acesso condicional](/graph/api/resources/conditionalaccesspolicy?view=graph-rest-beta&preserve-view=true).
 - Use a permissão delegada de `EntitlementManagement.Read.All` para permitir ao aplicativo solicitar acesso para ler pacotes de acesso e recursos de gerenciamento de direitos relacionados em nome do usuário conectado.

@@ -4,12 +4,12 @@ description: 'Propriedade odata.nextLink` na resposta que contém uma URL para a
 author: davidmu1
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 78d39829c9865d878e75d7c77c7d07d76b0f1c98
-ms.sourcegitcommit: bbff139eea483faaa2d1dd08af39314f35ef48ce
+ms.openlocfilehash: be2d927de3cf1f3d419d7daa5747e0cc9e70c28c
+ms.sourcegitcommit: 5a1cc1943527aa268e3797ee514871e65eb474a6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/08/2020
-ms.locfileid: "46598469"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53030877"
 ---
 # <a name="paging-microsoft-graph-data-in-your-app"></a>Paginação de dados do Microsoft Graph em seu aplicativo 
 
@@ -41,7 +41,9 @@ O comportamento de paginação varia entre diferentes APIs do Microsoft Graph. A
 
 - APIs diferentes podem ter tamanhos padrão e máximo de página diferentes.
 - APIs diferentes poderão se comportar de maneira diferente se você especificar um tamanho de página (por meio do parâmetro de consulta `$top`) que exceda o tamanho máximo de página para essa API. Dependendo da API, o tamanho de página solicitado pode ser ignorado, ele pode usar por padrão o tamanho máximo de página para essa API ou o Microsoft Graph pode retornar um erro. 
-- Nem todos os recursos ou relações dão suporte à paginação. Por exemplo, consultas em relação a [directoryRoles](/graph/api/resources/directoryrole?view=graph-rest-1.0) não dão suporte à paginação. Isso inclui os objetos de função de leitura e os membros de função.
+- Nem todos os recursos ou relações dão suporte à paginação. Por exemplo, consultas em relação a [directoryRoles](/graph/api/resources/directoryrole) não dão suporte à paginação. Isso inclui os objetos de função de leitura e os membros de função.
+- Ao fazer paginação em recursos de diretório, quaisquer cabeçalhos de solicitação adicionais, como o cabeçalho **ConsistencyLevel**, não são incluídos por padrão em solicitações de página subsequentes. Se esses cabeçalhos precisam ser enviados em solicitações subsequentes, você deve defini-los explicitamente.
+- Ao usar a cadeia de consulta `$count=true` ao consultar recursos de diretório, a propriedade `@odata.count` estará presente apenas na primeira página dos dados paginados.
 
 ## <a name="learn-more-about-paging"></a>Saiba mais sobre paginação
 O vídeo a seguir apresenta a paginação no Microsoft Graph.
