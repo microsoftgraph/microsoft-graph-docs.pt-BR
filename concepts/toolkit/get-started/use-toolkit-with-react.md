@@ -3,12 +3,12 @@ title: Use o microsoft Graph Toolkit com React
 description: Começar a usar o microsoft Graph Toolkit em um React aplicativo.
 localization_priority: Normal
 author: waldekmastykarz
-ms.openlocfilehash: 876d8674013f1b673208e358d7d0902cb930f638
-ms.sourcegitcommit: 99fdbd9a1806d64626423e1f39342dcde8a1eaf4
+ms.openlocfilehash: 54bdde286933610feb637026be5a7385ab848c48
+ms.sourcegitcommit: 5a1cc1943527aa268e3797ee514871e65eb474a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/16/2021
-ms.locfileid: "52971437"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53030947"
 ---
 # <a name="use-the-microsoft-graph-toolkit-with-react"></a>Use o microsoft Graph Toolkit com React
 
@@ -17,6 +17,9 @@ O Microsoft Graph Toolkit é um conjunto de componentes da Web que simplificam a
 Se você estiver criando aplicativos com React, poderá usar o pacote [ `@microsoft/mgt-react` ,](./mgt-react.md)que envolve os componentes da Web do Microsoft Graph Toolkit em componentes React e facilita a passagem de dados complexos.
 
 Este artigo descreve o processo passo a passo de usar o microsoft Graph Toolkit para criar um aplicativo React e conectá-lo ao Microsoft 365. Depois de concluir as etapas, você terá um aplicativo React que mostra os próximos compromissos do usuário atualmente Microsoft 365.
+
+> [!TIP]
+> Você também pode seguir este tutorial como um tour de código interativo. Fore details, see the [GitHub repo with the starter project](https://github.com/microsoftgraph/mgt-react-codetour).
 
 ## <a name="prerequisites"></a>Pré-requisitos
 

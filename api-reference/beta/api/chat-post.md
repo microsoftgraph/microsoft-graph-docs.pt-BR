@@ -5,12 +5,12 @@ author: bhartono
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: a1fc781b35a144057c2d6f3baae3c718b86a30e0
-ms.sourcegitcommit: 7abb0672a38a6d9b11a2e0d2cc221222cb8358bb
+ms.openlocfilehash: 6ea5de5a32754125c5016bee536c8b8d1802a8d1
+ms.sourcegitcommit: 5a1cc1943527aa268e3797ee514871e65eb474a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52896491"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53030814"
 ---
 # <a name="create-chat"></a>Criar chat
 Namespace: microsoft.graph
@@ -24,7 +24,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|Chat.Create, Chat.ReadWrite|
+|Delegada (conta corporativa ou de estudante)|Chat.Create, Chat.ReadWrite|
 |Delegado (conta pessoal da Microsoft) | Sem suporte. |
 |Aplicativo | Sem suporte. |
 
@@ -53,19 +53,24 @@ A tabela a seguir lista as propriedades necessárias para criar um objeto de cha
 |:---|:---|:---|
 |topic|(Opcional) Cadeia de caracteres|O título do chat. O título do chat só poderá ser fornecido se o chat for do `group` tipo.|
 |chatType|[chatType](../resources/chat.md#chattype-values)| Especifica o tipo de chat. Os valores possíveis são: `group` e `oneOnOne` . |
-|members|coleção [conversationMember](../resources/conversationmember.md)|Lista de membros da conversa que devem ser adicionados. Todos os usuários, incluindo o usuário que inicia a solicitação de criação, que participarão do chat devem ser especificados nesta lista.|
+|membros|coleção [conversationMember](../resources/conversationmember.md)|Lista de membros da conversa que devem ser adicionados. Todos os usuários, incluindo o usuário que inicia a solicitação de criação, que participarão do chat devem ser especificados nesta lista.|
+|installedApps| Coleção [teamsApp](../resources/teamsapp.md)|Lista de aplicativos que devem ser instalados no chat.|
+
+> **Observação:** Atualmente, há suporte para apenas uma instalação de aplicativo. Se várias instalações de aplicativos estão listadas na solicitação, a resposta será um `Bad Request` erro.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta Criado 201 e o recurso de **chat** recém-criado no corpo da resposta.
+### <a name="response-for-creating-a-one-on-one-chat-without-installed-apps"></a>Resposta para criar um chat um-a-um sem aplicativos instalados
+Se tiver êxito, este método retornará um código `201 Created` de resposta e o recurso de [chat](../resources/chat.md) recém-criado no corpo da resposta.
+
+### <a name="response-for-creating-a-one-on-one-chat-with-installed-apps"></a>Resposta para criar um chat um-a-um com aplicativos instalados
+Se tiver êxito, este método retornará um código de resposta e um header location que contém um `202 Accepted` link para [o teamsAsyncOperation](../resources/teamsasyncoperation.md). O link pode ser usado para obter o status e os detalhes da operação. Para obter detalhes, consulte [Obter operação no chat](teamsasyncoperation-get.md#example-get-operation-on-chat).
 
 ## <a name="examples"></a>Exemplos
 
 ### <a name="example-1-create-a-one-on-one-chat"></a>Exemplo 1: Criar um chat um para um
 
 #### <a name="request"></a>Solicitação
-
-# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_chat_oneOnOne"
@@ -91,23 +96,6 @@ Content-Type: application/json
   ]
 }
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-chat-oneonone-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-chat-oneonone-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-chat-oneonone-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/create-chat-oneonone-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 ---
 
@@ -137,8 +125,6 @@ Content-Type: application/json
 ### <a name="example-2-create-a-group-chat"></a>Exemplo 2: Criar um chat em grupo
 
 #### <a name="request"></a>Solicitação
-
-# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_chat_group"
@@ -170,23 +156,6 @@ Content-Type: application/json
   ]
 }
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-chat-group-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-chat-group-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-chat-group-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/create-chat-group-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 ---
 
@@ -213,3 +182,55 @@ Content-Type: application/json
 }
 ```
 
+### <a name="example-3-create-a-one-on-one-chat-with-installed-apps"></a>Exemplo 3: Criar um chat um-a-um com aplicativos instalados
+
+#### <a name="request"></a>Solicitação
+<!-- {
+  "blockType": "request",
+  "name": "create_chat_oneOnOne_with_installed_apps"
+}
+-->
+``` http
+POST https://graph.microsoft.com/beta/chats
+Content-Type: application/json
+
+{
+  "chatType": "oneOnOne",
+  "members": [
+    {
+      "@odata.type": "#microsoft.graph.aadUserConversationMember",
+      "roles": ["owner"],
+      "user@odata.bind": "https://graph.microsoft.com/beta/users('8b081ef6-4792-4def-b2c9-c363a1bf41d5')"
+    },
+    {
+      "@odata.type": "#microsoft.graph.aadUserConversationMember",
+      "roles": ["owner"],
+      "user@odata.bind": "https://graph.microsoft.com/beta/users('82af01c5-f7cc-4a2e-a728-3a5df21afd9d')"
+    }
+  ],
+  "installedApps": [
+    {
+      "teamsApp@odata.bind":"https://graph.microsoft.com/beta/appCatalogs/teamsApps/05F59CEC-A742-4A50-A62E-202A57E478A4"
+    }
+  ]
+}
+```
+
+---
+
+#### <a name="response"></a>Resposta
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+<!-- {
+  "blockType": "response"
+}
+-->
+``` http
+HTTP/1.1 202 Accepted
+Content-Type: application/json
+Location: /chats('19:82fe7758-5bb3-4f0d-a43f-e555fd399c6f_bfb5bb25-3a8d-487d-9828-7875ced51a30@unq.gbl.spaces')/operations('2432b57b-0abd-43db-aa7b-16eadd115d34-861f06db-0208-4815-b67a-965df0d28b7f-10adc8a6-60db-42e2-9761-e56a7e4c7bc9')
+```
+
+A operação assíncrona é iniciada e a resposta contém um header Location que inclui um link para o [teamsAsyncOperation](../resources/teamsasyncoperation.md). O link pode ser usado para obter o status e os detalhes da operação. Para obter detalhes, consulte [Obter operação no chat](teamsasyncoperation-get.md#example-get-operation-on-chat).
+
+## <a name="see-also"></a>Confira também
+- [Obter teamsAsyncOperation](teamsasyncoperation-get.md)

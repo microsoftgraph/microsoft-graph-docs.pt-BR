@@ -4,12 +4,12 @@ description: Use a API de críticas de acesso para revisar o acesso de convidado
 author: FaithOmbongi
 localization_priority: Normal
 ms.prod: governance
-ms.openlocfilehash: 99f09ab4f7731a75c13977319d2ae25b80304185
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 807518bd62c2b242548c65c3d68c119ec3fb0c5f
+ms.sourcegitcommit: 5a1cc1943527aa268e3797ee514871e65eb474a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52787664"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53030261"
 ---
 # <a name="tutorial-use-the-access-reviews-api-to-review-guest-access-to-your-microsoft-365-groups"></a>Tutorial: use a API de críticas de acesso para revisar o acesso de convidados aos grupos Microsoft 365 seus clientes
 
@@ -22,7 +22,7 @@ Neste tutorial, você usará o Graph Explorer para criar e ler críticas de aces
 
 Para concluir este tutorial, você precisa dos seguintes recursos e privilégios:
 
-+ Um locatário do Azure AD funcionando com uma licença do Azure AD Premium P2 ou EMS E5 habilitada. 
++ Um locatário do Azure AD funcionando com uma licença Azure AD Premium P2 ou EMS E5 habilitada. 
 + Uma conta em um locatário diferente do Azure AD ou uma identidade social que você pode convidar como usuário convidado (usuário B2B).
 + Entre no Graph [Explorer](https://developer.microsoft.com/graph/graph-explorer) como usuário em uma função de administrador global. 
 + As seguintes permissões delegadas: `User.Invite.All` , `AccessReview.ReadWrite.All` , , `Group.ReadWrite.All` `User.ReadWrite.All` .
@@ -34,7 +34,7 @@ Para consentir com as permissões necessárias no Graph Explorer:
    <!--:::image type="content" source="../images/../concepts/images/tutorial-accessreviews-api/settings.png" alt-text="Select the Microsoft Graph permissions":::-->
 
 2. Role a lista de permissões para essas permissões:
-   + AccessReviews (3), expanda e selecione **AccessReviews.ReadWrite.All**.
+   + AccessReview (3), expanda e selecione **AccessReview.ReadWrite.All**.
    + Grupo (2), expanda e selecione **Group.ReadWrite.All**.
    + Usuário (8), expanda e selecione **User.Invite.All** e **User.ReadWrite.All**.
    
@@ -585,4 +585,7 @@ Parabéns! Você criou uma revisão de acesso para todos os usuários convidados
 + [Visão geral de avaliações do Access e requisitos de licença](/azure/active-directory/governance/access-reviews-overview)
 + [Criar uma revisão de acesso de grupos & aplicativos](/azure/active-directory/governance/create-access-review)
 + [Convidar/adicionar usuários convidados à sua organização](/graph/api/resources/invitation?view=graph-rest-beta&preserve-view=true)
-
++ [Referência da API de Avaliações do Access](/graph/api/resources/accessreviewsv2-root?view=graph-rest-beta&preserve-view=true)
++ [Criar accessReviewScheduleDefinition](/graph/api/accessreviewscheduledefinition-create?view=graph-rest-beta&preserve-view=true)
++ [Listar accessReviewInstance](/graph/api/accessreviewinstance-list?view=graph-rest-beta&preserve-view=true)
++ [Listar accessReviewInstanceDecisionItem](/graph/api/accessreviewinstancedecisionitem-list?view=graph-rest-beta&preserve-view=true)

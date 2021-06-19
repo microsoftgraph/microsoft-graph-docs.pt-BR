@@ -5,32 +5,33 @@ localization_priority: Normal
 author: isabelleatmsft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 2eabb7f646806d501dfacad8aa2b22e8cb5e95ee
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: d1ce0293510f2f9a6ca526216b3fc2ad024b6285
+ms.sourcegitcommit: 5a1cc1943527aa268e3797ee514871e65eb474a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52048383"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53030471"
 ---
-# <a name="list-accessreviewinstancedecisionitems-pending-approval"></a>Listar accessReviewInstanceDecisionItems aguardando aprovação
+# <a name="list-accessreviewinstancedecisionitems-pending-approval-deprecated"></a>Listar accessReviewInstanceDecisionItems pendente aprovação (preterida)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+>[!NOTE]
+>Esse método será preterido e interromperá o retorno de dados em 19 de maio de 2023. Ele foi substituído por [filterByCurrentUser](accessreviewinstancedecisionitem-filterbycurrentuser.md).
+
 Recupere os [objetos accessReviewInstanceDecisionItem](../resources/accessreviewinstance.md) para uma aprovação pendente [accessReviewInstance](../resources/accessreviewscheduledefinition.md) específica pelo usuário chamador. Uma lista de zero ou mais objetos accessReviewInstanceDecisionItem é retornada, incluindo todas as suas propriedades aninhadas.
 
 >[!NOTE]
->Se muitos **accessReviewInstanceDecisionItems são retornados,** para melhorar a eficiência e evitar tempos-de-tempo, recupere o conjunto de resultados definido em páginas, incluindo o parâmetro de consulta $top com um tamanho de página de no máximo 100 e o parâmetro de consulta $skip=0 na solicitação. Quando um conjunto de resultados abrange várias páginas, o Microsoft Graph retorna essa página com uma propriedade @odata.nextLink na resposta que contém uma URL para a próxima página de resultados. Se essa propriedade estiver presente, continue fazendo solicitações adicionais com a URL @odata.nextLink em cada resposta, até que todos os resultados sejam retornados, conforme descrito na pa paja do Microsoft Graph dados em seu aplicativo.
->
->Se nenhum parâmetro de consulta for fornecido e houver mais de 100 resultados, o Microsoft Graph paginará automaticamente os resultados em 100 resultados por página.
+>O tamanho padrão da página para essa API é de 100 objetos accessReviewInstanceDecisionItem. Para melhorar a eficiência e evitar tempos-de-tempo devido a grandes conjuntos de resultados, aplique paginação usando os `$skip` parâmetros e `$top` de consulta. Para mais informações, consulte [Paginação de dados do Microsoft Graph em seu aplicativo](/graph/paging).
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante)     | AccessReview.Read.All, AccessReview.ReadWrite.All  |
+|Delegada (conta corporativa ou de estudante)     | AccessReview.Read.All, AccessReview.ReadWrite.All  |
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
 
 O usuário interno também verá apenas as decisões das quais o revisor é atribuído no accessReviewScheduleDefinition da instância dessa decisão.
@@ -40,8 +41,12 @@ O usuário interno também verá apenas as decisões das quais o revisor é atri
 ```http
 GET /me/pendingAccessReviewInstances/{instance-id}/decisions
 ```
+
+## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
+Este método oferece `$skip` suporte e `$top` parâmetros de consulta OData para ajudar a personalizar a resposta. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
+
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
-Nenhum
+Nenhum.
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não fornecer um corpo de solicitação.

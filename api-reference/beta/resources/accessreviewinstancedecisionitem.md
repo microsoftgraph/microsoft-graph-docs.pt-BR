@@ -5,12 +5,12 @@ author: isabelleatmsft
 localization_priority: Normal
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 968af49a9033ea749522132204d63b4f55ba25c7
-ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
+ms.openlocfilehash: 7a5e1731b289a24ea3f3bd4fc12a39914773da89
+ms.sourcegitcommit: 5a1cc1943527aa268e3797ee514871e65eb474a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51469238"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53030758"
 ---
 # <a name="accessreviewinstancedecisionitem-resource-type"></a>Tipo de recurso accessReviewInstanceDecisionItem
 
@@ -25,30 +25,34 @@ Namespace: microsoft.graph
 
 Representa uma decisão de revisão [de](accessreviewsv2-root.md) acesso do Azure AD em uma instância de uma revisão. Essa decisão representa a determinação do acesso de um usuário ou entidade de serviço para uma determinada instância de revisão [de acesso.](accessreviewinstance.md)
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 
 | Método | Tipo de retorno | Descrição |
 |:---------------|:--------|:----------|
-|[Listar accessReviewInstanceDecisionItems](../api/accessreviewinstancedecisionitem-list.md) | [Coleção accessReviewInstanceDecisionItem](accessreviewinstancedecisionitem.md) | Lista cada accessReviewInstanceDecisionItem para um accessReviewInstance específico. |
-|[Listar accessReviewInstanceDecisionItems aguardando aprovação](../api/accessreviewinstancedecisionitem-listpendingapproval.md) | [Coleção accessReviewInstanceDecisionItem.](accessreviewinstancedecisionitem.md) | Obter todos os accessReviewInstanceDecisionItems atribuídos ao usuário de chamada, para um accessReviewInstance específico. |
+|[Listar accessReviewInstanceDecisionItems](../api/accessreviewinstancedecisionitem-list.md) | [Coleção accessReviewInstanceDecisionItem](accessreviewinstancedecisionitem.md) | Obter uma lista dos [objetos accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) e suas propriedades.|
+|[Obter accessReviewInstanceDecisionItem](../api/accessreviewinstancedecisionitem-get.md)|[accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md)|Leia as propriedades e as relações de um [objeto accessReviewInstanceDecisionItem.](../resources/accessreviewinstancedecisionitem.md)|
 |[Atualizar accessReviewInstanceDecisionItem](../api/accessreviewinstancedecisionitem-update.md) | Nenhum. | Para qualquer accessReviewInstanceDecisionItems em que o usuário de chamada recebe um revisor, chamar o usuário pode registrar uma decisão corrigindo o objeto decision. |
+|[filterByCurrentUser](../api/accessreviewinstancedecisionitem-filterbycurrentuser.md)|[Coleção accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md)|Recupera todos os [objetos accessReviewInstanceDecisionItems](accessreviewinstancedecisionitem.md) onde o uso de chamada é o revisor de um [dado accessReviewInstance](accessreviewinstance.md).|
+|[Listar accessReviewInstanceDecisionItems pendente aprovação (preterida)](../api/accessreviewinstancedecisionitem-listpendingapproval.md) | [Coleção accessReviewInstanceDecisionItem.](accessreviewinstancedecisionitem.md) | Obter todos os accessReviewInstanceDecisionItems atribuídos ao usuário de chamada, para um accessReviewInstance específico. Este método está sendo preterido e substituído por [filterByCurrentUser](../api/accessreviewinstancedecisionitem-filterbycurrentuser.md). |
 
 ## <a name="properties"></a>Propriedades
 | Propriedade | Tipo |  Descrição |
 | :---------------| :---- | :---------- |
-| id | String | O identificador da decisão. |
-| accessReviewId | String | O identificador do pai accessReviewInstance. |
-| reviewedBy | [userIdentity](useridentity.md) | O identificador do revistor. |
-| reviewedDateTime | DateTimeOffset | O timestamp quando a revisão ocorreu. |
-| decision | String | Resultado da revisão. Valores possíveis: `Approve` `Deny` , , ou `NotReviewed` `DontKnow` . |
-| justification | String | A justificativa da decisão de revisão. |
-| appliedBy | [userIdentity](useridentity.md) | O identificador do usuário que aplicou a decisão. |
-| appliedDateTime | DateTimeOffset | O timestamp quando a decisão de aprovação foi aplicada. O tipo DatetimeOffset representa informações de data e hora usando o formato ISO 8601 e está sempre em horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`.|
-| applyResult | String | O resultado da aplicação da decisão. Valores possíveis: `NotApplied` , , , ou `Success` `Failed` `NotFound` `NotSupported` . |
-| recommendation | String | Uma recomendação gerada pelo sistema para a decisão de aprovação. Valores possíveis: `Approve` `Deny` , ou `NotAvailable` .  |
-| destino | [accessReviewInstanceDecisionItemTarget](accessreviewinstancedecisionitemtarget.md)  | O destino dessa decisão específica. Os destinos de decisão podem ser de tipos diferentes– cada um com suas próprias propriedades específicas. Consulte [accessReviewInstanceDecisionItemTarget](accessreviewinstancedecisionitemtarget.md). |
-|principal|[identity](../resources/identity.md)|Cada item de decisão em uma revisão de acesso representa o acesso de uma entidade a um recurso. Essa propriedade representa detalhes da entidade. Por exemplo, se um item de decisão representa o acesso de Usuário "Bob" ao Grupo "Vendas" - a entidade é "Bob" e o recurso é "Vendas". Os principais podem ser de dois tipos - userIdentity e servicePrincipalIdentity.|
-|recurso|[accessReviewInstanceDecisionItemResource](../resources/accessreviewinstancedecisionitemresource.md)|Cada item de decisão em uma revisão de acesso representa o acesso de uma entidade a um recurso. Essa propriedade representa detalhes do recurso. Por exemplo, se um item de decisão representa o acesso de Usuário "Bob" ao Grupo "Vendas" - a entidade é Bob e o recurso é "Vendas". Os recursos podem ser de vários tipos. Consulte [accessReviewInstanceDecisionItemResource](../resources/accessreviewinstancedecisionitemresource.md)|
+|accessReviewId|String|O identificador do pai accessReviewInstance. Oferece suporte para `$select`. Somente leitura.|
+|appliedBy|[userIdentity](../resources/useridentity.md)|O identificador do usuário que aplicou a decisão. Somente leitura.|
+|appliedDateTime|DateTimeOffset|O timestamp quando a decisão de aprovação foi aplicada. O tipo DatetimeOffset representa informações de data e hora usando o formato ISO 8601 e está sempre em horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`.  Oferece suporte para `$select`. Somente leitura.|
+|applyResult|String|O resultado da aplicação da decisão. Valores possíveis: `New` `AppliedSuccessfully` , , e `AppliedWithUnknownFailure` `AppliedSuccessfullyButObjectNotFound` `ApplyNotSupported` . Suporta `$select` `$orderby` , e ( `$filter` `eq` somente). Somente leitura.|
+|decision|String|Resultado da revisão. Valores possíveis: `Approve` `Deny` , , ou `NotReviewed` `DontKnow` . Suporta `$select` `$orderby` , e ( `$filter` `eq` somente). |
+|id|String| O identificador da decisão. Herdado da [entidade](../resources/entity.md). Oferece suporte para `$select`. Somente leitura.|
+|justification|String|Justification left by the reviewer when they made the decision.|
+| destino | [accessReviewInstanceDecisionItemTarget](accessreviewinstancedecisionitemtarget.md)  | O destino dessa decisão específica. Os destinos de decisão podem ser de tipos diferentes– cada um com suas próprias propriedades específicas. Consulte [accessReviewInstanceDecisionItemTarget](accessreviewinstancedecisionitemtarget.md). Somente leitura.|
+|principal|[identity](../resources/identity.md)|Cada item de decisão em uma revisão de acesso representa o acesso de uma entidade a um recurso. Essa propriedade representa detalhes da entidade. Por exemplo, se um item de decisão representa o acesso de Usuário "Bob" ao Grupo "Vendas" - a entidade é "Bob" e o recurso é "Vendas". Os principais podem ser de dois tipos - userIdentity e servicePrincipalIdentity. Oferece suporte para `$select`. Somente leitura.|
+|principalLink|String|Link para o objeto principal. Por exemplo: `https://graph.microsoft.com/v1.0/users/a6c7aecb-cbfd-4763-87ef-e91b4bd509d9`. Somente leitura.|
+|recommendation|String|Uma recomendação gerada pelo sistema para a decisão de aprovação com base na última indicação interativa para locatário. Recomendamos aprovar se a assinatura estiver dentro de trinta dias após o início da revisão. É recomendável negar se a assinatura for maior do que trinta dias do início da revisão. Recomendação não disponível caso contrário. Valores possíveis: `Approve` `Deny` , ou `NoInfoAvailable` . Suporta `$select` `$orderby` , e ( `$filter` `eq` somente). Somente leitura.|
+|recurso|[accessReviewInstanceDecisionItemResource](../resources/accessreviewinstancedecisionitemresource.md)|Cada item de decisão em uma revisão de acesso representa o acesso de uma entidade a um recurso. Essa propriedade representa detalhes do recurso. Por exemplo, se um item de decisão representa o acesso de Usuário "Bob" ao Grupo "Vendas" - a entidade é Bob e o recurso é "Vendas". Os recursos podem ser de vários tipos. Consulte [accessReviewInstanceDecisionItemResource](../resources/accessreviewinstancedecisionitemresource.md). Somente leitura.|
+|resourceLink|String|Um link para o recurso. Por exemplo, `https://graph.microsoft.com/v1.0/servicePrincipals/c86300f3-8695-4320-9f6e-32a2555f5ff8`. Oferece suporte para `$select`. Somente leitura.|
+|reviewedBy|[userIdentity](../resources/useridentity.md)| O identificador do revistor. Oferece suporte para `$select`. Somente leitura.|
+|reviewedDateTime|DateTimeOffset| O timestamp quando ocorreu a decisão de revisão. Oferece suporte para `$select`. Somente leitura.|
 
 ## <a name="relationships"></a>Relações
 
@@ -92,19 +96,10 @@ Veja a seguir uma representação JSON do recurso.
   "principal": {
     "@odata.type": "microsoft.graph.identity"
   },
+  "principalLink": "String",
   "resource": {
     "@odata.type": "microsoft.graph.accessReviewInstanceDecisionItemResource"
-  }
+  },
+  "resourceLink": "String"
 }
 ```
-
-<!--
-{
-  "type": "#page.annotation",
-  "description": "accessReviewInstanceDecisionItem resource",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": "",
-  "suppressions": []
-}
--->

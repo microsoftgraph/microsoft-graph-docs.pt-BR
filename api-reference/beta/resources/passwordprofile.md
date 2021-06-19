@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: users
 author: eketo-msft
-ms.openlocfilehash: 47c55261316f2d85d27a4c993b358676578e74fd
-ms.sourcegitcommit: f77c1385306fd40557aceb24fdfe4832cbb60a27
+ms.openlocfilehash: 7c0f31310227753caf3949a32046f067b4117770
+ms.sourcegitcommit: 5a1cc1943527aa268e3797ee514871e65eb474a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/12/2021
-ms.locfileid: "52911330"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53030863"
 ---
 # <a name="passwordprofile-resource-type"></a>Tipo de recurso passwordProfile
 
@@ -24,8 +24,8 @@ Contém o perfil de senha associado a um usuário. A propriedade **passwordProfi
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|forceChangePasswordNextSignIn|Booliano| Se `true` , no próximo login, o usuário deve alterar sua senha. Após uma alteração de senha, essa propriedade será redefinida automaticamente para * `false` . Se não estiver definido, o padrão será `false` . |
-|forceChangePasswordNextSignInWithMfa|Booliano| Se , na próxima entrada, o usuário deve executar uma `true` autenticação multifafação (MFA) antes de ser forçado a alterar sua senha. O comportamento é idêntico a **forceChangePasswordNextSignIn**, exceto pelo fato de que o usuário deve primeiro executar uma autenticação multifator antes da alteração da senha. Após uma alteração de senha, essa propriedade será redefinida automaticamente para `false` . Se não estiver definido, o padrão será `false` . |
+|forceChangePasswordNextSignIn|Booliano|  `true` se o usuário precisar alterar sua senha no próximo logon; caso contrário, `false`. Se não estiver definido, o padrão será `false`. **OBSERVAÇÃO:**  Para locatários do Azure B2C, defina para e use políticas personalizadas e fluxos de usuários para forçar a redefinição de senha `false` ao entrar primeiro. Confira [Forçar a redefinição de senha no primeiro logon](https://github.com/azure-ad-b2c/samples/tree/master/policies/force-password-reset-first-logon). |
+|forceChangePasswordNextSignInWithMfa|Booliano| Se `true`, na próxima conexão, o usuário deverá executar uma autenticação multifator (MFA) antes de ser forçado a alterar sua senha. O comportamento é idêntico a **forceChangePasswordNextSignIn**, exceto pelo fato de que o usuário deve primeiro executar uma autenticação multifator antes da alteração da senha. Após a alteração da senha, esta propriedade será redefinida automaticamente para `false`. Se não estiver definido, o padrão será `false`. |
 |password|String|A senha do usuário. Essa propriedade é necessária ao criar um usuário. Pode ser atualizada, mas o usuário precisará alterar a senha no próximo login. A senha deve atender a requisitos mínimos, conforme especificado pelo a propriedade **passwordPolicies** do usuário. Por padrão, é necessária uma senha forte.|
 
 ## <a name="json-representation"></a>Representação JSON

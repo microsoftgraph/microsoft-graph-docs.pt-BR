@@ -4,13 +4,13 @@ description: A propriedade **prepaidUnits** da entidade subscribedSku é do tipo
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: directory-management
-author: jpettere
-ms.openlocfilehash: 3cc2ba98b0d221774ea1700c279a115a68494580
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+author: michaelcurnutt
+ms.openlocfilehash: 0f2f069cbbff191cefcdc8b735b2847b48a8f2ed
+ms.sourcegitcommit: 5a1cc1943527aa268e3797ee514871e65eb474a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50720512"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53030779"
 ---
 # <a name="licenseunitsdetail-resource-type"></a>Tipo de recurso licenseUnitsDetail
 
@@ -18,14 +18,14 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A propriedade **prepaidUnits** da entidade [subscribedSku](subscribedsku.md) é do tipo **licenseUnitsDetail**.
+A propriedade **prepaidUnits** da entidade [subscribedSku](subscribedsku.md) é do tipo **licenseUnitsDetail**. Para obter mais informações sobre os estados de progressão de uma assinatura, consulte [E se minha assinatura expirar?](/microsoft-365/commerce/subscriptions/what-if-my-subscription-expires?view=o365-worldwide)
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:-------------|:-----|:----------|
-|enabled|Int32| O número de unidades habilitadas. |
-|suspended|Int32| O número de unidades suspensas. |
-|warning|Int32| O número de unidades que estão em status de aviso. |
+|enabled|Int32| O número de unidades habilitadas para a assinatura ativa do SKU do serviço. |
+|suspended|Int32| O número de unidades suspensas porque a assinatura do SKU do serviço foi cancelada. As unidades não podem ser atribuídas, mas ainda podem ser reativadas antes de serem excluídas. |
+|warning|Int32| O número de unidades que estão em status de aviso. Quando a assinatura do SKU do serviço expirou, o cliente tem um período de carência para renovar sua assinatura antes de ser cancelada (movida para um **estado suspenso).** |
 
 ## <a name="json-representation"></a>Representação JSON
 

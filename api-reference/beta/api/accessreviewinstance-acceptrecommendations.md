@@ -1,16 +1,16 @@
 ---
 title: 'accessReviewInstance: acceptRecommendations'
-description: 'Permite a aceitação de recomendações em todas as decisões não revisadas em uma instância de revisão de acesso em que elas são revisadas. '
+description: 'Permite a aceitação de recomendações em todas as decisões que não foram revisadas para uma instância de revisão de acesso para a qual o usuário de chamada é um revistor. '
 localization_priority: Normal
 author: isabelleatmsft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 2e9505a0cf7e3b0e52d54c45ed7d85ee4e09651e
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: b955bc637c3f536ca5cb8a3e24ad65990296ab2e
+ms.sourcegitcommit: 5a1cc1943527aa268e3797ee514871e65eb474a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52048432"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53030751"
 ---
 # <a name="accessreviewinstance-acceptrecommendations"></a>accessReviewInstance: acceptRecommendations
 
@@ -18,14 +18,14 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Permite a aceitação de recomendações em todos os [accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) não revisados em um [accessReviewInstance](../resources/accessreviewinstance.md) em que eles são os revisores.
+Permite a aceitação de recomendações em todos os objetos [accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) que não foram revisados para um [objeto accessReviewInstance](../resources/accessreviewinstance.md) para o qual o usuário de chamada é um revisor. Recomendações serão **gerados se recommendationsEnabled** estiver `true` no objeto [accessReviewScheduleDefinition.](../resources/accessreviewscheduledefinition.md) Se não houver uma recomendação em [um objeto accessReviewInstanceDecisionItem,](../resources/accessreviewinstancedecisionitem.md) nenhuma decisão será registrada.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante)     | AccessReview.ReadWrite.All |
+|Delegada (conta corporativa ou de estudante)     | AccessReview.ReadWrite.All |
 | Delegado (conta pessoal da Microsoft)| Sem suporte. |
 
 O usuário de entrada também deve ser um revisor no accessReviewInstance.
@@ -36,7 +36,7 @@ O usuário de entrada também deve ser um revisor no accessReviewInstance.
 POST /me/pendingAccessReviewInstances/{instance-id}/acceptRecommendations
 ```
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
-Nenhum
+Nenhum.
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

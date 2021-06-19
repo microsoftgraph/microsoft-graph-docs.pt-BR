@@ -4,12 +4,12 @@ description: Usar a API de avaliações de acesso para revisar o acesso aos seus
 author: FaithOmbongi
 localization_priority: Normal
 ms.prod: governance
-ms.openlocfilehash: b3a7ee94f045eb7eb587b58fc6220c304c2b81ff
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: e57fb73c119f36dd0cdb50746910463cfa336d3c
+ms.sourcegitcommit: 5a1cc1943527aa268e3797ee514871e65eb474a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52787074"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53030268"
 ---
 # <a name="tutorial-use-the-access-reviews-api-to-review-access-to-your-security-groups"></a>Tutorial: use a API de críticas de acesso para revisar o acesso aos seus grupos de segurança
 
@@ -24,7 +24,7 @@ Você pode usar Graph Explorer ou Postman para testar e testar suas chamadas de 
 
 Para concluir este tutorial, você precisa dos seguintes recursos e privilégios:
 
-+ Um locatário do Azure AD funcionando com uma licença do Azure AD Premium P2 ou EMS E5 habilitada.
++ Um locatário do Azure AD funcionando com uma licença Azure AD Premium P2 ou EMS E5 habilitada.
 + Entre no Graph [Explorer](https://developer.microsoft.com/graph/graph-explorer) como usuário em uma função de administrador global.
   + [Opcional] Inicie uma nova **sessão de navegador incógnita** ou **InPrivate** ou inicie uma sessão em um navegador anônimo. Você fará logoff mais adiante neste tutorial.
 + As seguintes permissões delegadas: `AccessReview.ReadWrite.All` , `Group.ReadWrite.All` .
@@ -36,7 +36,7 @@ Para consentir com as permissões necessárias no Graph Explorer:
    <!--:::image type="content" source="../images/../concepts/images/tutorial-accessreviews-api/settings.png" alt-text="Select the Microsoft Graph permissions":::-->
 
 2. Role a lista de permissões para essas permissões:
-   + AccessReviews (3), expanda e selecione **AccessReviews.ReadWrite.All**.
+   + AccessReview (3), expanda e selecione **AccessReview.ReadWrite.All**.
    + Grupo (2), expanda e selecione **Group.ReadWrite.All**.
   
     Selecione **Consentimento** e, na janela pop, escolha **Consentir** em  nome da sua organização e selecione Aceitar para aceitar o consentimento das permissões.
@@ -557,4 +557,7 @@ Content-type: text/plain
 + [Configurar o escopo de sua definição de revisão de acesso usando a API Graph Microsoft](/graph/accessreviews-scope-concept)
 + [Visão geral de avaliações do Access e requisitos de licença](/azure/active-directory/governance/access-reviews-overview)
 + [Criar uma revisão de acesso de grupos & aplicativos](/azure/active-directory/governance/create-access-review)
-
++ [access reviews API Reference](/graph/api/resources/accessreviewsv2-root?view=graph-rest-beta&preserve-view=true)
++ [Criar accessReviewScheduleDefinition](/graph/api/accessreviewscheduledefinition-create?view=graph-rest-beta&preserve-view=true)
++ [Listar accessReviewInstance](/graph/api/accessreviewinstance-list?view=graph-rest-beta&preserve-view=true)
++ [Listar accessReviewInstanceDecisionItem](/graph/api/accessreviewinstancedecisionitem-list?view=graph-rest-beta&preserve-view=true)
