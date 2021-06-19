@@ -5,12 +5,12 @@ author: anandab
 localization_priority: Priority
 ms.prod: microsoft-teams
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 8f9d0a654f3105c7d365bc92f774ab66be34f35d
-ms.sourcegitcommit: 99fdbd9a1806d64626423e1f39342dcde8a1eaf4
+ms.openlocfilehash: 4e8d403354c16f7f11fd4c7dcf6b756f83242cda
+ms.sourcegitcommit: 39a8c6eccc07ead237dac17387cd269733a86abd
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/16/2021
-ms.locfileid: "52971458"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53025023"
 ---
 # <a name="get-change-notifications-for-changes-in-teams-membership-using-microsoft-graph"></a>Obter notificações de alteração para alterações na associação do Teams usando o Microsoft Graph
 
@@ -18,15 +18,17 @@ As notificações de alteração permitem que você se inscreva para receber alt
 
 ## <a name="subscribe-to-changes-in-membership-of-a-particular-team"></a>Inscrever-se para receber alterações na associação de uma equipe específica
 
-Para obter notificações de alterações para alterações de membros em uma equipe específica, inscreva-se em `/teams/{id}/members`. Este recurso oferece suporte a [ incluindo dados de recursos ](webhooks-with-resource-data.md) na notificação.
+Para obter notificações de alterações para alterações de membros em uma equipe específica, inscreva-se em `/teams/{team-id}/members`. Este recurso oferece suporte a [ incluindo dados de recursos ](webhooks-with-resource-data.md) na notificação.
 
 #### <a name="permissions"></a>Permissões
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              | Versões com suporte |
 |:--------------------|:---------------------------------------------------------|:-------------------|
-|Delegado (conta corporativa ou de estudante) | TeamMember.Read.All | Sem suporte. |
+|Delegado (conta corporativa ou de estudante) | TeamMember.Read.All, TeamMember.ReadWrite.All | beta |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    | Sem suporte. |
-|Aplicativo | TeamMember.Read.All   | beta |
+|Aplicativo | TeamMember.Read.Group*, TeamMember.Read.All, TeamMember.ReadWrite.All   | beta |
+
+>**Nota:** As permissões marcadas com * são suportadas como parte do [consentimento específico do recurso](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
 #### <a name="example"></a>Exemplo
 
@@ -37,7 +39,7 @@ Content-Type: application/json
 {
   "changeType": "created,deleted,updated",
   "notificationUrl": "https://webhook.azurewebsites.net/api/resourceNotifications",
-  "resource": "/teams/{id}/members",
+  "resource": "/teams/{team-id}/members",
   "includeResourceData": true,
   "encryptionCertificate": "{base64encodedCertificate}",
   "encryptionCertificateId": "{customId}",

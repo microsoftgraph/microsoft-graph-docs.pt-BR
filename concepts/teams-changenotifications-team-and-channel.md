@@ -5,12 +5,12 @@ author: anandab
 localization_priority: Priority
 ms.prod: microsoft-teams
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 4d04333818fa57664664675feb4683465c4b63c6
-ms.sourcegitcommit: e4461c7eb8c3d265fc1aa766125e81b58c6e1099
+ms.openlocfilehash: 44f07661309da100ef65cf691ccfe30261467d52
+ms.sourcegitcommit: 39a8c6eccc07ead237dac17387cd269733a86abd
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "52941547"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53025016"
 ---
 # <a name="get-change-notifications-for-teams-and-channels-using-microsoft-graph"></a>Obter notificações de alteração para equipes e canais usando o Microsoft Graph
 
@@ -26,7 +26,7 @@ Para obter notificações de alteração para todas as alterações (criar, atua
 |:--------------------|:---------------------------------------------------------|:-------------------|
 |Delegado (conta corporativa ou de estudante) | Sem suporte. | Sem suporte. |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    | Sem suporte. |
-|Aplicativo | Team.ReadBasic.All, TeamSettings.Read.All   | beta|
+|Aplicativo | Team.ReadBasic.All, TeamSettings.Read.All, TeamSettings.ReadWrite.All   | beta|
 
 ### <a name="example"></a>Exemplo
 
@@ -49,15 +49,17 @@ Content-Type: application/json
 ## <a name="subscribe-to-changes-in-a-particular-team"></a>Inscrever-se para alterações em uma equipe em particular
 
 
-Para obter notificações de alteração para todas as alterações relacionadas a uma equipe em particular de um locatário, inscreva-se em `/teams/{id}`. Este recurso oferece suporte a [ incluindo dados de recursos ](webhooks-with-resource-data.md) na notificação.
+Para obter notificações de alteração para todas as alterações relacionadas a uma equipe em particular de um locatário, inscreva-se em `/teams/{team-id}`. Este recurso oferece suporte a [ incluindo dados de recursos ](webhooks-with-resource-data.md) na notificação.
 
 ### <a name="permissions"></a>Permissões
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              | Versões com suporte |
 |:--------------------|:---------------------------------------------------------|:-------------------|
-|Delegado (conta corporativa ou de estudante) | Team.ReadBasic.All, TeamSettings.Read.All | Sem suporte. |
+|Delegado (conta corporativa ou de estudante) | Team.ReadBasic.All, TeamSettings.Read.All, TeamSettings.ReadWrite.All | beta |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    | Sem suporte. |
-|Aplicativo | Team.ReadBasic.All, TeamSettings.Read.All    | beta |
+|Aplicativo | TeamSettings.Read.Group *, TeamSettings.ReadWrite.Group*, Team.ReadBasic.All, TeamSettings.Read.All, TeamSettings.ReadWrite.All    | beta |
+
+>**Nota:** As permissões marcadas com * são suportadas como parte do [consentimento específico do recurso](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
 ### <a name="example"></a>Exemplo
 
@@ -68,7 +70,7 @@ Content-Type: application/json
 {
   "changeType": "deleted,updated",
   "notificationUrl": "https://webhook.azurewebsites.net/api/resourceNotifications",
-  "resource": "/teams/{id}",
+  "resource": "/teams/{team-id}",
   "includeResourceData": true,
   "encryptionCertificate": "{base64encodedCertificate}",
   "encryptionCertificateId": "{customId}",
@@ -90,7 +92,7 @@ Para obter notificações de alteração para todas as alterações (criar, atua
 |:--------------------|:---------------------------------------------------------|:-------------------|
 |Delegado (conta corporativa ou de estudante) | Sem suporte. | Sem suporte. |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    | Sem suporte. |
-|Aplicativo | Channel.ReadBasic.All, ChannelSettings.Read.All | beta |
+|Aplicativo | Channel.ReadBasic.All, ChannelSettings.Read.All, ChannelSettings.ReadWrite.All | beta |
 
 ### <a name="example"></a>Exemplo
 
@@ -113,15 +115,17 @@ Content-Type: application/json
 ## <a name="subscribe-to-changes-in-any-channel-of-a-particular-team"></a>Inscrever-se para alterações em qualquer canal em particular
 
 
-Para obter notificações de alteração para todas as alterações relacionadas a qualquer canal em particular, inscreva-se em `/teams/{id}/channels`. Este recurso oferece suporte a [ incluindo dados de recursos ](webhooks-with-resource-data.md) na notificação.
+Para obter notificações de alteração para todas as alterações relacionadas a qualquer canal em particular, inscreva-se em `/teams/{team-id}/channels`. Este recurso oferece suporte a [ incluindo dados de recursos ](webhooks-with-resource-data.md) na notificação.
 
 ### <a name="permissions"></a>Permissões
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              | Versões com suporte |
 |:--------------------|:---------------------------------------------------------|:-------------------|
-|Delegado (conta corporativa ou de estudante) | Channel.ReadBasic.All, ChannelSettings.Read.All | Sem suporte. |
+|Delegado (conta corporativa ou de estudante) | Channel.ReadBasic.All, ChannelSettings.Read.All, ChannelSettings.ReadWrite.All | beta |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    | Sem suporte. |
-|Aplicativo | Channel.ReadBasic.All, ChannelSettings.Read.All   | beta |
+|Aplicativo | ChannelSettings.Read.Group *, ChannelSettings.ReadWrite.Group*, Channel.ReadBasic.All, ChannelSettings.Read.All, ChannelSettings.ReadWrite.All   | beta |
+
+>**Nota:** As permissões marcadas com * são suportadas como parte do [consentimento específico do recurso](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
 ### <a name="example"></a>Exemplo
 
@@ -132,7 +136,7 @@ Content-Type: application/json
 {
   "changeType": "created,deleted,updated",
   "notificationUrl": "https://webhook.azurewebsites.net/api/resourceNotifications",
-  "resource": "/teams/{id}/channels",
+  "resource": "/teams/{team-id}/channels",
   "includeResourceData": true,
   "encryptionCertificate": "{base64encodedCertificate}",
   "encryptionCertificateId": "{customId}",
