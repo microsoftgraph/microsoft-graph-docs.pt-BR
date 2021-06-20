@@ -431,7 +431,7 @@ items:
                 href: api/userscopeteamsappinstallation-get-chat.md
               - name: Obter chat para o usuário
                 href: api/chat-get.md
-          - name: Tarefas pendentes
+          - name: Tarefas To do
             items:
               - name: Tarefa
                 href: resources/todotask.md
@@ -512,7 +512,7 @@ items:
                 href: api/group-list-owners.md
               - name: Listar fotos
                 href: api/group-list-photos.md
-              - name: Listar concessões de permissão
+              - name: Listar as concessões de permissões
                 href: api/group-list-permissiongrants.md
               - name: Remover favorito
                 href: api/group-removefavorite.md
@@ -4919,6 +4919,60 @@ items:
                         href: api/identityapiconnector-delete.md
           - name: Governança
             items:
+              - name: Avaliações do acesso
+                href: resources/accessreviewsv2-root.md
+                items:
+                  - name: Definição do agendamento de revisão do Access
+                    href: resources/accessreviewscheduledefinition.md
+                    items:
+                      - name: List
+                        href: api/accessreviewscheduledefinition-list.md
+                      - name: Instâncias de lista
+                        href: api/accessreviewscheduledefinition-list-instances.md
+                      - name: Obter
+                        href: api/accessreviewscheduledefinition-get.md
+                      - name: Criar
+                        href: api/accessreviewscheduledefinition-post.md
+                      - name: Excluir
+                        href: api/accessreviewscheduledefinition-delete.md
+                      - name: Atualizar
+                        href: api/accessreviewscheduledefinition-update.md
+                      - name: Filtrar pelo usuário atual
+                        href: api/accessreviewscheduledefinition-filterbycurrentuser.md
+                  - name: Instância de revisão do Access
+                    href: resources/accessreviewinstance.md
+                    items:
+                      - name: List
+                        href: api/accessreviewinstance-list.md
+                      - name: Listar decisões
+                        href: api/accessreviewinstance-list-decisions.md
+                      - name: Obter
+                        href: api/accessreviewinstance-get.md
+                      - name: Aceitar recomendações
+                        href: api/accessreviewinstance-acceptrecommendations.md
+                      - name: Aplicar decisões
+                        href: api/accessreviewinstance-applydecisions.md
+                      - name: Decisões de registro em lotes
+                        href: api/accessreviewinstance-batchrecorddecisions.md
+                      - name: Filtrar pelo usuário atual
+                        href: api/accessreviewinstance-filterbycurrentuser.md
+                      - name: Redefinir decisões
+                        href: api/accessreviewinstance-resetdecisions.md
+                      - name: Enviar lembrete
+                        href: api/accessreviewinstance-sendreminder.md
+                      - name: Parar
+                        href: api/accessreviewinstance-stop.md
+                  - name: Item de decisão da instância de revisão do Access
+                    href: resources/accessreviewinstancedecisionitem.md
+                    items:
+                      - name: Obter
+                        href: api/accessreviewinstancedecisionitem-get.md
+                      - name: Listar
+                        href: api/accessreviewinstancedecisionitem-list.md
+                      - name: Atualizar
+                        href: api/accessreviewinstancedecisionitem-update.md
+                      - name: Filtrar pelo usuário atual
+                        href: api/accessreviewinstancedecisionitem-filterbycurrentuser.md
               - name: Solicitações de consentimento
                 href: resources/consentrequests-root.md
                 items:
@@ -4929,15 +4983,15 @@ items:
                         href: api/adminconsentrequestpolicy-get.md
                       - name: Atualizar
                         href: api/adminconsentrequestpolicy-update.md
-                  - name: Solicitações de consentimento do aplicativo
-                    href: resources/appconsentrequest.md
-                    items:
-                      - name: Lista
-                        href: api/appconsentrequest-list.md
-                      - name: Obter
-                        href: api/appconsentrequest-get.md
-                      - name: Filtrar pelo usuário atual
-                        href: api/appconsentrequest-filterByCurrentUser.md
+                      - name: Solicitações de consentimento do aplicativo
+                        href: resources/appconsentrequest.md
+                        items:
+                          - name: Lista
+                            href: api/appconsentrequest-list.md
+                          - name: Obter
+                            href: api/appconsentrequest-get.md
+                          - name: Filtrar pelo usuário atual
+                            href: api/appconsentrequest-filterByCurrentUser.md
                   - name: Solicitações de consentimento do usuário
                     href: resources/userconsentrequest.md
                     items:
@@ -5689,7 +5743,7 @@ items:
         items:
           - name: Visão Geral
             href: resources/planner-overview.md
-          - name: Plano
+          - name: Planejar
             href: resources/plannerplan.md
             items:
               - name: Criar plano

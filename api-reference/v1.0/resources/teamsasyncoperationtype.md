@@ -1,33 +1,31 @@
 ---
-title: tipo de enumeração teamsAsyncOperationType
-description: Tipos de teamsAsyncOperation. Os membros serão adicionados aqui à medida que mais operações assíncronas forem suportadas.
+title: Tipo de número teamsAsyncOperationType
+description: Tipos de teamsAsyncOperation. Os membros serão adicionados aqui à medida que mais operações assíncronas são suportadas.
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: enumPageType
-ms.openlocfilehash: b1be58a7db420446cbe309c78ba26c01ec0bf2c1
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 701b6402baf5b64ef0257dd1242dd2f2c8fccb16
+ms.sourcegitcommit: 5a1cc1943527aa268e3797ee514871e65eb474a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47983960"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53030394"
 ---
-# <a name="teamsasyncoperationtype-enum-type"></a><span data-ttu-id="325a0-104">tipo de enumeração teamsAsyncOperationType</span><span class="sxs-lookup"><span data-stu-id="325a0-104">teamsAsyncOperationType enum type</span></span>
+# <a name="teamsasyncoperationtype-enum-type"></a><span data-ttu-id="6790e-104">Tipo de número teamsAsyncOperationType</span><span class="sxs-lookup"><span data-stu-id="6790e-104">teamsAsyncOperationType enum type</span></span>
 
-<span data-ttu-id="325a0-105">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="325a0-105">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="6790e-105">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="6790e-105">Namespace: microsoft.graph</span></span>
 
 
 
-<span data-ttu-id="325a0-106">Tipos de [teamsAsyncOperation](teamsasyncoperation.md).</span><span class="sxs-lookup"><span data-stu-id="325a0-106">Types of [teamsAsyncOperation](teamsasyncoperation.md).</span></span> <span data-ttu-id="325a0-107">Os membros serão adicionados aqui à medida que mais operações assíncronas forem suportadas.</span><span class="sxs-lookup"><span data-stu-id="325a0-107">Members will be added here as more async operations are supported.</span></span>
+<span data-ttu-id="6790e-106">Tipos de [teamsAsyncOperation](teamsasyncoperation.md).</span><span class="sxs-lookup"><span data-stu-id="6790e-106">Types of [teamsAsyncOperation](teamsasyncoperation.md).</span></span> <span data-ttu-id="6790e-107">Os membros serão adicionados aqui à medida que mais operações assíncronas são suportadas.</span><span class="sxs-lookup"><span data-stu-id="6790e-107">Members will be added here as more async operations are supported.</span></span>
 
-## <a name="members"></a><span data-ttu-id="325a0-108">Membros</span><span class="sxs-lookup"><span data-stu-id="325a0-108">Members</span></span>
+## <a name="members"></a><span data-ttu-id="6790e-108">Membros</span><span class="sxs-lookup"><span data-stu-id="6790e-108">Members</span></span>
 
-| <span data-ttu-id="325a0-109">Membro</span><span class="sxs-lookup"><span data-stu-id="325a0-109">Member</span></span> | <span data-ttu-id="325a0-110">Valor</span><span class="sxs-lookup"><span data-stu-id="325a0-110">Value</span></span>| <span data-ttu-id="325a0-111">Descrição</span><span class="sxs-lookup"><span data-stu-id="325a0-111">Description</span></span> |
+| <span data-ttu-id="6790e-109">Membro</span><span class="sxs-lookup"><span data-stu-id="6790e-109">Member</span></span> | <span data-ttu-id="6790e-110">Valor</span><span class="sxs-lookup"><span data-stu-id="6790e-110">Value</span></span>| <span data-ttu-id="6790e-111">Descrição</span><span class="sxs-lookup"><span data-stu-id="6790e-111">Description</span></span> |
 |:---------------|:--------|:----------|
-|<span data-ttu-id="325a0-112">Inválido</span><span class="sxs-lookup"><span data-stu-id="325a0-112">invalid</span></span>|<span data-ttu-id="325a0-113">,0</span><span class="sxs-lookup"><span data-stu-id="325a0-113">0</span></span>|<span data-ttu-id="325a0-114">Valor inválido.</span><span class="sxs-lookup"><span data-stu-id="325a0-114">Invalid value.</span></span>|
-|<span data-ttu-id="325a0-115">cloneTeam</span><span class="sxs-lookup"><span data-stu-id="325a0-115">cloneTeam</span></span>|<span data-ttu-id="325a0-116">1 </span><span class="sxs-lookup"><span data-stu-id="325a0-116">1</span></span>|<span data-ttu-id="325a0-117">Operação para clonar uma equipe.</span><span class="sxs-lookup"><span data-stu-id="325a0-117">Operation to clone a team.</span></span>|
-|<span data-ttu-id="325a0-118">archiveTeam</span><span class="sxs-lookup"><span data-stu-id="325a0-118">archiveTeam</span></span>|<span data-ttu-id="325a0-119">2 </span><span class="sxs-lookup"><span data-stu-id="325a0-119">2</span></span>|<span data-ttu-id="325a0-120">Operação para arquivar uma equipe.</span><span class="sxs-lookup"><span data-stu-id="325a0-120">Operation to archive a team.</span></span>|
-|<span data-ttu-id="325a0-121">unarchiveTeam</span><span class="sxs-lookup"><span data-stu-id="325a0-121">unarchiveTeam</span></span>|<span data-ttu-id="325a0-122">3 </span><span class="sxs-lookup"><span data-stu-id="325a0-122">3</span></span>|<span data-ttu-id="325a0-123">Operação para restaurar uma equipe arquivada.</span><span class="sxs-lookup"><span data-stu-id="325a0-123">Operation to restore an archived team.</span></span>|
-|<span data-ttu-id="325a0-124">createteam</span><span class="sxs-lookup"><span data-stu-id="325a0-124">createTeam</span></span>|<span data-ttu-id="325a0-125">3 </span><span class="sxs-lookup"><span data-stu-id="325a0-125">3</span></span>|<span data-ttu-id="325a0-126">Operação para criar uma equipe a partir do zero.</span><span class="sxs-lookup"><span data-stu-id="325a0-126">Operation to create a team from scratch.</span></span>|
-
-
+|<span data-ttu-id="6790e-112">Inválido</span><span class="sxs-lookup"><span data-stu-id="6790e-112">invalid</span></span>|<span data-ttu-id="6790e-113">0</span><span class="sxs-lookup"><span data-stu-id="6790e-113">0</span></span>|<span data-ttu-id="6790e-114">Valor inválido.</span><span class="sxs-lookup"><span data-stu-id="6790e-114">Invalid value.</span></span>|
+|<span data-ttu-id="6790e-115">cloneTeam</span><span class="sxs-lookup"><span data-stu-id="6790e-115">cloneTeam</span></span>|<span data-ttu-id="6790e-116">1</span><span class="sxs-lookup"><span data-stu-id="6790e-116">1</span></span>|<span data-ttu-id="6790e-117">Operação para clonar uma equipe.</span><span class="sxs-lookup"><span data-stu-id="6790e-117">Operation to clone a team.</span></span>|
+|<span data-ttu-id="6790e-118">archiveTeam</span><span class="sxs-lookup"><span data-stu-id="6790e-118">archiveTeam</span></span>|<span data-ttu-id="6790e-119">2</span><span class="sxs-lookup"><span data-stu-id="6790e-119">2</span></span>|<span data-ttu-id="6790e-120">Operação para arquivar uma equipe.</span><span class="sxs-lookup"><span data-stu-id="6790e-120">Operation to archive a team.</span></span>|
+|<span data-ttu-id="6790e-121">unarchiveTeam</span><span class="sxs-lookup"><span data-stu-id="6790e-121">unarchiveTeam</span></span>|<span data-ttu-id="6790e-122">3</span><span class="sxs-lookup"><span data-stu-id="6790e-122">3</span></span>|<span data-ttu-id="6790e-123">Operação para restaurar uma equipe arquivada.</span><span class="sxs-lookup"><span data-stu-id="6790e-123">Operation to restore an archived team.</span></span>|
+|<span data-ttu-id="6790e-124">createTeam</span><span class="sxs-lookup"><span data-stu-id="6790e-124">createTeam</span></span>|<span data-ttu-id="6790e-125">4 </span><span class="sxs-lookup"><span data-stu-id="6790e-125">4</span></span>|<span data-ttu-id="6790e-126">Operação para criar uma equipe do zero.</span><span class="sxs-lookup"><span data-stu-id="6790e-126">Operation to create a team from scratch.</span></span>|
