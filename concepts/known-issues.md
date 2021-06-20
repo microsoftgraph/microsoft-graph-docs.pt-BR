@@ -3,12 +3,12 @@ title: Problemas conhecidos com o Microsoft Graph
 description: Este artigo descreve os problemas conhecidos com o Microsoft Graph.
 author: MSGraphDocsVTeam
 localization_priority: Priority
-ms.openlocfilehash: 20d9d3cb70ad1ea8a4b5647f683bbb01dcfb3e4c
-ms.sourcegitcommit: 9bc1652890fe49d7ad5e5b7177c8a682b1759b75
+ms.openlocfilehash: 1adf4a4f756be0ce4f8e338ee016bbb3d3059177
+ms.sourcegitcommit: 5a1cc1943527aa268e3797ee514871e65eb474a6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52100062"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53030772"
 ---
 # <a name="known-issues-with-microsoft-graph"></a>Problemas conhecidos com o Microsoft Graph
 
@@ -184,12 +184,6 @@ GET /users/{id | userPrincipalName}/contacts/{id}
 * O contexto de OData às vezes é retornado incorretamente ao controlar alterações nas relações.
 * As extensões de esquema (herdadas) não são retornadas com instrução $select, mas são retornadas sem $select.
 * Os clientes não podem controlar alterações em extensões abertas ou extensões de esquema.
-
-## <a name="devices-and-apps--device-updates-windows-updates"></a>Dispositivos e aplicativos | Atualizações do dispositivo (atualizações do Windows)
-
-### <a name="making-a-request-for-the-first-time"></a>Fazendo uma solicitação pela primeira vez
-
-Ao fazer uma chamada para a API de atualizações do Windows pela primeira vez, você pode receber uma resposta `401 Unauthorized`. O erro ocorre nos casos em que a entidade de serviço de um aplicativo ainda não existe em seu locatário e requer tempo para concluir o provisionamento. Tente novamente após cerca de 24 horas.
 
 ## <a name="extensions"></a>Extensões
 
@@ -387,15 +381,21 @@ A solicitação de objetos usando a opção de [Obter objetos de diretório de u
 * `@odata.bind` não é compatível. Isso significa que os desenvolvedores não poderão definir corretamente a propriedade de navegação **acceptedSenders** ou **rejectedSenders** em um grupo.
 * `@odata.id` não está presente na navegação sem confinamento (como mensagens) quando há o uso de metadados mínimos.
 * `$expand`:
-  * Não há suporte para `nextLink`
-  * Não há suporte para mais de um nível de expansão
-  * Não há suporte com parâmetros adicionais (`$filter`, `$select`)
+  * Retorna um máximo de 20 objetos.
+  * Sem suporte para `@odata.nextLink`.
+  * Sem suporte para mais de 1 nível de expansão.
+  * Sem suporte com parâmetros extras (`$filter`, `$select`).
 * `$filter`:
   * Não há suporte para filtros no ponto de extremidade `/attachments`. Se presente, o parâmetro `$filter` é ignorado.
   * Não há suporte para filtragem de carga de trabalho cruzada.
 * `$search`:
   * A pesquisa de texto completo só está disponível para um subconjunto de entidades, como mensagens.
   * Não há suporte para pesquisa de carga de trabalho cruzada.
+  * A pesquisa não é suportada nos locatários do Azure AD B2C.
+* `$count`:
+  * Não é apoiado em locatários do Azure AD B2C.
+  * Ao usar a cadeia de consulta `$count=true` ao consultar recursos de diretório, a propriedade `@odata.count` estará presente apenas na primeira página dos dados paginados.
+* Os parâmetros de consulta especificados em uma solicitação podem falhar silenciosamente. Isto pode ser verdade tanto para parâmetros de consulta não suportados quanto para combinações não suportadas de parâmetros de consulta..
 
 
 ## <a name="functionality-available-only-in-office-365-rest-or-azure-ad-graph-apis"></a>Funcionalidade disponível apenas nas APIs Graph do Azure AD ou REST do Office 365
