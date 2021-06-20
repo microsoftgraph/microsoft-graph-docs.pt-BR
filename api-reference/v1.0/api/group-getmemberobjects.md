@@ -5,18 +5,18 @@ localization_priority: Normal
 author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 85e73996acac84ce92308c6f389481cca35842ea
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: a5f71a53fba79da14674328760081a51fbdcea34
+ms.sourcegitcommit: 5a1cc1943527aa268e3797ee514871e65eb474a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52682583"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53030786"
 ---
 # <a name="group-getmemberobjects"></a>group: getMemberObjects
 
 Namespace: microsoft.graph
 
-Retorne todos os grupos dos quais este grupo é um membro. A verificação é transitiva. Observação: Grupos não podem ser membros de funções de diretório, então nenhuma função de diretório retornará.
+Retorne todos os grupos dos quais este grupo é um membro. A verificação é transitiva.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).

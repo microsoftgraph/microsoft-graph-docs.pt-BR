@@ -1,0 +1,95 @@
+---
+title: Obter accessReviewInstance
+description: Leia as propriedades e as relações de um objeto accessReviewInstance.
+author: isabelleatmsft
+localization_priority: Normal
+ms.prod: governance
+doc_type: apiPageType
+ms.openlocfilehash: 8a8e2ec2ec059201dabea44523bf45ef054a4f3f
+ms.sourcegitcommit: 5a1cc1943527aa268e3797ee514871e65eb474a6
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53031017"
+---
+# <a name="get-accessreviewinstance"></a>Obter accessReviewInstance
+Namespace: microsoft.graph
+
+
+Leia as propriedades e as relações de um [objeto accessReviewInstance.](../resources/accessreviewinstance.md)
+
+## <a name="permissions"></a>Permissões
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
+
+|Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
+|:---|:---|
+|Delegada (conta corporativa ou de estudante)|AccessReview.Read.All, AccessReview.ReadWrite.All|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Aplicativo|AccessReview.Read.All, AccessReview.ReadWrite.All|
+
+## <a name="http-request"></a>Solicitação HTTP
+
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+GET /identityGovernance/accessReviews/definitions/{accessReviewScheduleDefinitionId}/instances/{accessReviewInstanceId}
+```
+
+## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
+Este método dá suporte `$select` ao parâmetro de consulta OData para ajudar a personalizar a resposta. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
+
+## <a name="request-headers"></a>Cabeçalhos de solicitação
+|Nome|Descrição|
+|:---|:---|
+|Autorização|{token} de portador. Obrigatório.|
+
+## <a name="request-body"></a>Corpo da solicitação
+Não forneça um corpo de solicitação para esse método.
+
+## <a name="response"></a>Resposta
+
+Se tiver êxito, este método retornará um código de resposta e um `200 OK` [objeto accessReviewInstance](../resources/accessreviewinstance.md) no corpo da resposta.
+
+## <a name="examples"></a>Exemplos
+
+### <a name="request"></a>Solicitação
+<!-- {
+  "blockType": "request",
+  "name": "get_accessreviewinstance"
+}
+-->
+``` http
+GET https://graph.microsoft.com/v1.0/identityGovernance/accessReviews/definitions/e6cafba0-cbf0-4748-8868-0810c7f4cc06/instances/12345ba0-cbf0-5678-8868-4444c7f4cc06
+```
+
+
+### <a name="response"></a>Resposta
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.accessReviewInstance"
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "value": {
+    "@odata.type": "#microsoft.graph.accessReviewInstance",
+    "id": "d7fbc019-c019-d7fb-19c0-fbd719c0fbd7",
+    "startDateTime": "2021-03-11T16:44:59.337Z",
+    "endDateTime": "2021-06-09T16:44:59.337Z",
+    "status": "InProgress",
+    "scope": {
+        "@odata.type": "#microsoft.graph.accessReviewQueryScope",
+        "query": "/v1.0/groups/97eebd44-61fd-4d42-8b2a-a4de41b6c572/transitiveMembers",
+        "queryType": "MicrosoftGraph",
+        "queryRoot": null
+    }
+  }
+}
+```

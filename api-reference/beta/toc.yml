@@ -459,7 +459,7 @@ items:
                 href: api/profile-get.md
               - name: Excluir perfil do usuário
                 href: api/profile-delete.md
-          - name: Teamwork
+          - name: Trabalho em equipe
             items:
               - name: Aplicativo instalado
                 href: resources/teamsappinstallation.md
@@ -479,7 +479,7 @@ items:
                 href: api/chat-get.md
               - name: Listar chats para usuário
                 href: api/chat-list.md
-          - name: Tarefas pendentes
+          - name: Tarefas To do
             items:
               - name: Tarefa
                 href: resources/todotask.md
@@ -1492,7 +1492,7 @@ items:
                     href: api/ediscovery-custodian-update.md
                   - name: Ativar
                     href: api/ediscovery-custodian-activate.md
-                  - name: Lançar
+                  - name: Liberar
                     href: api/ediscovery-custodian-release.md
               - name: Retenção legal
                 href: resources/ediscovery-legalhold.md
@@ -1518,7 +1518,7 @@ items:
                     href: api/ediscovery-noncustodialdatasource-get.md
                   - name: Listar datasource
                     href: api/ediscovery-noncustodialdatasource-list-datasource.md
-                  - name: Lançar
+                  - name: Liberar
                     href: api/ediscovery-noncustodialdatasource-release.md
               - name: Conjuntos de revisão
                 href: resources/ediscovery-reviewset.md
@@ -11466,6 +11466,8 @@ items:
                         href: api/accessreviewscheduledefinition-delete.md
                       - name: Atualizar
                         href: api/accessreviewscheduledefinition-update.md
+                      - name: Filtrar pelo usuário atual
+                        href: api/accessreviewinstancedecisionitem-filterbycurrentuser.md
                   - name: Instância de revisão do Access
                     href: resources/accessreviewinstance.md
                     items:
@@ -11473,7 +11475,9 @@ items:
                         href: api/accessreviewinstance-list.md
                       - name: Obter
                         href: api/accessreviewinstance-get.md
-                      - name: Listar aprovação pendente
+                      - name: Filtrar pelo usuário atual
+                        href: api/accessreviewinstance-filterbycurrentuser.md
+                      - name: Listar aprovação pendente (preterida)
                         href: api/accessreviewinstance-pendingaccessreviewinstances.md
                       - name: Enviar lembrete
                         href: api/accessreviewinstance-sendreminder.md
@@ -11485,12 +11489,20 @@ items:
                         href: api/accessreviewinstance-applydecisions.md
                       - name: Decisões de registro em lotes
                         href: api/accessreviewinstance-batchrecorddecisions.md
+                      - name: Redefinir decisões
+                        href: api/accessreviewinstance-resetdecisions.md
+                      - name: Listar decisões
+                        href: api/accessreviewinstance-list-decisions.md
                   - name: Item de decisão da instância de revisão do Access
                     href: resources/accessreviewinstancedecisionitem.md
                     items:
-                      - name: List
+                      - name: Lista
                         href: api/accessreviewinstancedecisionitem-list.md
-                      - name: Listar aprovação pendente
+                      - name: Obter
+                        href: api/accessreviewinstancedecisionitem-get.md
+                      - name: Filtrar pelo usuário atual
+                        href: api/accessreviewinstancedecisionitem-filterbycurrentuser.md
+                      - name: Listar aprovação pendente (preterida)
                         href: api/accessreviewinstancedecisionitem-listpendingapproval.md
                       - name: Atualizar
                         href: api/accessreviewinstancedecisionitem-update.md
@@ -13570,6 +13582,10 @@ items:
                 href: api/userscopeteamsappinstallation-get-chat.md
               - name: Listar as concessões de permissões
                 href: api/chat-list-permissiongrants.md
+              - name: Listar operações
+                href: api/chat-list-operations.md
+              - name: Obter operação
+                href: api/teamsasyncoperation-get.md
           - name: Mensagem de chat
             href: resources/chatmessage.md
             items:
@@ -13906,7 +13922,7 @@ items:
                 href: api/onenote-post-notebooks.md
           - name: Concessões de permissão específicas de recursos
             href: resources/resourcespecificpermissiongrant.md
-      - name: Tarefas pendentes
+      - name: Tarefas To do
         displayName: Microsoft To Do
         items:
           - name: Visão Geral

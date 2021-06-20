@@ -5,12 +5,12 @@ author: Jordanndahl
 localization_priority: Priority
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 3c2f0163a6b37a556fc6db45e2daf75a8a4052a3
-ms.sourcegitcommit: e4461c7eb8c3d265fc1aa766125e81b58c6e1099
+ms.openlocfilehash: 3e58f8f9bbd87d73c4072936ce69089268fd9ca6
+ms.sourcegitcommit: 5a1cc1943527aa268e3797ee514871e65eb474a6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "52941520"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53030884"
 ---
 # <a name="create-group"></a>Criar grupo
 
@@ -55,6 +55,7 @@ A tabela a seguir mostra as propriedades do recurso [group](../resources/group.m
 |:---------------|:--------|:----------|
 | displayName | cadeia de caracteres | O nome a ser exibido no livro de endereços do grupo. Comprimento máximo: 256 caracteres. Necessário. |
 | description | string | Uma descrição para o grupo. Máx. comprimento: 1024 caracteres. Opcional. |
+| isAssignableToRole | Booliano | Definir para **true** para habilitar o grupo a ser atribuído uma função do Azure AD. Somente o Administrador com Função Privilegiada e o Administrador Global podem definir o valor dessa propriedade. Opcional. |
 | mailEnabled | booliano | Defina como **true** para grupos habilitados para email. Obrigatório. |
 | mailNickname | string | O alias de email do grupo. Máx. comprimento: 64 caracteres. Esses caracteres não podem ser usados no mailNickName: `@()\[]";:.<>,SPACE`. Obrigatório. |
 | securityEnabled | booliano | Defina como **true** para grupos habilitados para segurança, incluindo grupos do Microsoft 365. Obrigatório. |
@@ -276,6 +277,86 @@ Content-type: application/json
 }
 ```
 
+### <a name="example-3-create-a-group-that-can-be-assigned-to-an-azure-ad-role"></a>Exemplo 3: Criar um grupo que pode ser atribuído a uma função do Azure AD
+
+#### <a name="request"></a>Solicitação
+
+Este é um exemplo de solicitação.
+
+<!-- {
+  "blockType": "request",
+  "name": "create_role_enabled_group"
+}-->
+``` http
+POST https://graph.microsoft.com/v1.0/groups
+Content-Type: application/json
+
+{
+  "description": "Group assignable to a role",
+  "displayName": "Role assignable group",
+  "groupTypes": [
+    "Unified"
+  ],
+  "isAssignableToRole": true,
+  "mailEnabled": true,
+  "securityEnabled": true,
+  "mailNickname": "contosohelpdeskadministrators",
+  "visibility" : "Private"
+}
+```
+
+> **Observação:** As propriedades de **visibilidade** e **groupTypes** não são necessárias para a criação, mas são preenchidas automaticamente com esses valores. Um grupo com a propriedade **isAssignableToRole** definida como `true` não pode ser do tipo de associação dinâmica e não pode ter um proprietário. Para mais informações, consulte [Usando um grupo para gerenciar as atribuições de funções do Azure AD](https://go.microsoft.com/fwlink/?linkid=2103037).
+
+#### <a name="response"></a>Resposta
+
+Veja a seguir o exemplo de uma resposta. Ela inclui apenas as propriedades padrão.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.group",
+  "name": "create_role_enabled_group"
+} -->
+``` http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#groups/$entity",
+  "id": "502df398-d59c-469d-944f-34a50e60db3f",
+  "deletedDateTime": null,
+  "classification": null,
+  "createdDateTime": "2018-12-27T22:17:07Z",
+  "description": "Group assignable to a role",
+  "displayName": "Role assignable group",
+  "expirationDateTime": null,
+  "groupTypes": [
+    "Unified"
+  ],
+  "isAssignableToRole": true,
+  "mail": "operations2019@contoso.com",
+  "mailEnabled": true,
+  "mailNickname": "contosohelpdeskadministrators",
+  "membershipRule": null,
+  "membershipRuleProcessingState": null,
+  "onPremisesLastSyncDateTime": null,
+  "onPremisesSecurityIdentifier": null,
+  "onPremisesSyncEnabled": null,
+  "preferredDataLocation": "CAN",
+  "proxyAddresses": [
+    "SMTP:operations2019@contoso.com"
+  ],
+  "renewedDateTime": "2018-12-27T22:17:07Z",
+  "resourceBehaviorOptions": [],
+  "resourceProvisioningOptions": [],
+  "securityEnabled": true,
+  "securityIdentifier": "S-1-12-1-1905728287-1207447622-870010782-555555555",
+  "theme": null,
+  "visibility": "Private",
+  "onPremisesProvisioningErrors": []
+}
+```
+
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!-- {
@@ -286,5 +367,5 @@ Content-type: application/json
   "tocPath": "",
   "suppressions": [
   ]
-}-->
+} -->
 

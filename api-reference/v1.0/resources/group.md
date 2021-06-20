@@ -5,12 +5,12 @@ localization_priority: Priority
 author: Jordanndahl
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: f5ac0ec806cc926c8acc978aed7067bdb0e4fc78
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: 00330f087e61a2c10bdfe602571680be532d08c3
+ms.sourcegitcommit: 5a1cc1943527aa268e3797ee514871e65eb474a6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52680189"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53030800"
 ---
 # <a name="group-resource-type"></a>tipo de recurso de grupo
 
@@ -129,6 +129,7 @@ Esse recurso permite:
 |hideFromAddressLists |Boleano |Verdadeiro se o grupo não for exibido em certas partes da interface do usuário do Outlook: **Catálogo de endereços**, listas de endereços para selecionar os destinatários da mensagem e na caixa de diálogo **Procurar grupos** para pesquisar grupos; caso contrário, falso. O valor padrão é `false`. <br><br>Retornado apenas em `$select`. Suportado apenas para Obter API de grupo (`GET /groups/{ID}`).|
 |hideFromOutlookClients |Boolean |Verdadeiro se o grupo não for exibido nos clientes do Outlook, como Outlook para Windows e Outlook na Web; caso contrário, falso. O valor padrão é `false`. <br><br>Retornado apenas em `$select`. Suportado apenas para Obter API de grupo (`GET /groups/{ID}`).|
 |id|String|O identificador exclusivo do grupo. <br><br>Retornado por padrão. Herdado de [directoryObject](directoryobject.md). Chave. Não anulável. Somente leitura.|
+|isAssignableToRole|Booliano|Indica se esse grupo pode ser atribuído a uma função do Azure Active Directory ou não.<br><br>Essa propriedade só pode ser definida durante a criação do grupo e é imutável. Somente o Administrador Global o Administrador com Função Privilegiada podem definir essa propriedade. Para mais informações, consulte [Usando um grupo para gerenciar as atribuições de funções do Azure AD](https://go.microsoft.com/fwlink/?linkid=2103037)<br><br>Retornado por padrão.|
 |isSubscribedByMail|Boolean|Indica se o usuário conectado está inscrito para receber conversas de email. O valor padrão é `true`. <br><br>Retornado apenas em `$select`. Suportado apenas para Obter API de grupo (`GET /groups/{ID}`). |
 |licenseProcessingState|String|Indica o status da atribuição de licença de grupo para todos os membros do grupo. O valor padrão é `false`. Somente leitura. Valores possíveis: `QueuedForProcessing`, `ProcessingInProgress` e `ProcessingComplete`.<br><br>Retornado apenas em `$select`. Somente leitura.|
 |email|String|O endereço SMTP do grupo, por exemplo, "serviceadmins@contoso.onmicrosoft.com". <br><br>Retornado por padrão. Somente leitura. Oferece suporte para `$filter`.|
@@ -208,6 +209,7 @@ Veja a seguir uma representação JSON do recurso.
     "events",
     "extensions",
     "groupLifecyclePolicies",
+    "isAssignableToRole",
     "memberOf",
     "members",
     "onenote",
@@ -340,6 +342,7 @@ Veja a seguir uma representação JSON do recurso.
   "hideFromOutlookClients": false,
   "id": "string (identifier)",
   "isSubscribedByMail": true,
+  "isAssignableRole": false,
   "licenseProcessingState": "string",
   "mail": "string",
   "mailEnabled": true,

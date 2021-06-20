@@ -5,12 +5,12 @@ localization_priority: Normal
 author: harini84
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 57e42faaaa30be31c45be7bfec6ad9ee17ffc869
-ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
+ms.openlocfilehash: 5bc4c78a4996c6690f40de863d20ba6f2d55949a
+ms.sourcegitcommit: 5a1cc1943527aa268e3797ee514871e65eb474a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52546200"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53030870"
 ---
 # <a name="patternedrecurrence-resource-type"></a>Tipo de recurso patternedRecurrence
 
@@ -21,7 +21,7 @@ O padrão e o intervalo da recorrência.
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|pattern|[RecurrencePattern](recurrencepattern.md)|A frequência de um evento.|
+|pattern|[RecurrencePattern](recurrencepattern.md)|A frequência de um evento. Não especifique para uma revisão de acesso único.|
 |range|[RecurrenceRange](recurrencerange.md)|A duração de um evento.|
 
 ## <a name="json-representation"></a>Representação JSON
