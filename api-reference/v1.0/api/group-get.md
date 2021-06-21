@@ -5,12 +5,12 @@ author: Jordanndahl
 localization_priority: Priority
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 46c50e3ec6d3e646ff4102472687b5bacee3bb1f
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: 63860da9bcb2c87c30577ce34f067f315efe15e9
+ms.sourcegitcommit: 5a1cc1943527aa268e3797ee514871e65eb474a6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52682023"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53030933"
 ---
 # <a name="get-group"></a>Obter grupo
 
@@ -94,7 +94,7 @@ GET https://graph.microsoft.com/v1.0/groups/b320ee12-b1cd-4cca-b648-a437be61c5cd
 #### <a name="response"></a>Resposta
 Veja a seguir o exemplo de uma resposta. Ela inclui apenas as propriedades solicitadas.
 
->**Observação:** O objeto de resposta mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades padrão serão retornadas em uma chamada real.
+>**Observação:** O objeto de resposta mostrado aqui pode ser reduzido para facilitar a leitura. Todas as propriedades padrão são retornadas em uma chamada real.
 
 <!-- {
   "blockType": "response",
@@ -117,6 +117,7 @@ Content-type: application/json
     "groupTypes": [
         "Unified"
     ],
+    "isAssignableToRole": null,
     "mail": "library2@contoso.com",
     "mailEnabled": true,
     "mailNickname": "library",

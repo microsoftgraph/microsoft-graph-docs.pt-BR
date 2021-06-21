@@ -485,8 +485,15 @@ items:
             href: traverse-the-graph.md
           - name: Paginação
             href: paging.md
-          - name: Usar parâmetros de consulta
-            href: query-parameters.md
+          - name: Parâmetros de consulta
+            displayName: OData query parameters
+            items:
+              - name: Usar os parâmetros de consulta
+                href: query-parameters.md
+              - name: Use o parâmetro de consulta de pesquisa
+                href: search-query-parameter.md
+              - name: 'Recursos de consulta avançados '
+                href: aad-advanced-queries.md
           - name: Envio em lote
             displayName: Batch requests
             href: json-batching.md
