@@ -5,12 +5,12 @@ localization_priority: Priority
 author: eketo-msft
 ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: 4a61c570974edcfc1431af211e131c24cfec6589
-ms.sourcegitcommit: f77c1385306fd40557aceb24fdfe4832cbb60a27
+ms.openlocfilehash: 9caae60a2eb82acd82101f3ee9c723b8c0545e39
+ms.sourcegitcommit: 5a1cc1943527aa268e3797ee514871e65eb474a6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/12/2021
-ms.locfileid: "52911645"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53030954"
 ---
 # <a name="passwordprofile-resource-type"></a>Tipo de recurso passwordProfile
 
@@ -22,7 +22,7 @@ Contém o perfil de senha associado a um usuário. A propriedade **passwordProfi
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|forceChangePasswordNextSignIn|Booliano| `true` se o usuário precisar alterar sua senha no próximo logon; caso contrário, `false`. |
+|forceChangePasswordNextSignIn|Booliano| `true` se o usuário precisar alterar sua senha no próximo logon; caso contrário, `false`. Se não for definido, o padrão é `false`. **OBSERVAÇÃO:**  Para locatários do Azure B2C, defina `false` e use políticas personalizadas e fluxos de usuário para forçar a redefinição de senha na primeira entrada. Confira [Forçar redefinição de senha no primeiro logon](https://github.com/azure-ad-b2c/samples/tree/master/policies/force-password-reset-first-logon).|
 |forceChangePasswordNextSignInWithMfa|Booliano| Se `true`, na próxima conexão, o usuário deverá executar uma autenticação multifator (MFA) antes de ser forçado a alterar sua senha. O comportamento é idêntico a **forceChangePasswordNextSignIn**, exceto pelo fato de que o usuário deve primeiro executar uma autenticação multifator antes da alteração da senha. Após a alteração da senha, esta propriedade será redefinida automaticamente para `false`. Se não estiver definido, o padrão será `false`. |
 |password|String|A senha do usuário. Essa propriedade é necessária ao criar um usuário. Pode ser atualizada, mas o usuário precisará alterar a senha no próximo login. A senha deve atender a requisitos mínimos, conforme especificado pelo a propriedade **passwordPolicies** do usuário. Por padrão, é necessária uma senha forte.|
 
