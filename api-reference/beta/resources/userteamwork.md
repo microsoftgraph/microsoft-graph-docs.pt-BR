@@ -1,16 +1,16 @@
 ---
 title: tipo de recurso userTeamwork
 description: 'Um contêiner dos recursos do Microsoft Teams disponíveis por usuário. '
-author: clearab
+author: akjo
 doc_type: resourcePageType
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: 2802689810c03a4ce9931cc0c4f478d1674cfc2d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 6ef5bb1ddf0944e7d61ab5321ae50e766713326c
+ms.sourcegitcommit: 456ec9510807d05623c0ed1dd049c9676f53f56b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48057753"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53060442"
 ---
 # <a name="userteamwork-resource-type"></a>tipo de recurso userTeamwork
 
@@ -26,7 +26,7 @@ Um contêiner para o intervalo de funcionalidades do Microsoft Teams disponívei
 |:---------------|:--------|:----------|
 |id|cadeia de caracteres| Um identificador exclusivo. |
 
-## <a name="relationships"></a>Relacionamentos
+## <a name="relationships"></a>Relações
 
 | Relação | Tipo | Descrição |
 |:---------------|:--------|:----------|

@@ -1,16 +1,16 @@
 ---
 title: Listar aplicativos em equipe
 description: Recupere a lista de aplicativos instalados na equipe especificada.
-author: clearab
+author: akjo
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 09f278087073b70fc66fb052c8178f1fbbc37807
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 2ca5f691395e38665f57713de0af632b21049f1d
+ms.sourcegitcommit: 456ec9510807d05623c0ed1dd049c9676f53f56b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50962776"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53060461"
 ---
 # <a name="list-apps-in-team"></a>Listar aplicativos em equipe
 
@@ -229,7 +229,7 @@ Content-type: application/json
 
 #### <a name="request"></a>Solicitação
 
-Este é um exemplo de solicitação. No exemplo, a ID do manifesto do aplicativo Teams é `cf1ba4c7-f94e-4d80-ba90-5594b641a8ee` .
+Este é um exemplo de solicitação. No exemplo, a ID do manifesto do Teams app é `cf1ba4c7-f94e-4d80-ba90-5594b641a8ee` .
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {

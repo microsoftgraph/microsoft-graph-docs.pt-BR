@@ -5,25 +5,22 @@ author: isabelleatmsft
 localization_priority: Normal
 ms.prod: governance
 doc_type: conceptualPageType
-ms.openlocfilehash: bc6ada083b27a39fa26174c60f7637a02ec1cd8f
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 656541211226f133045a7cdbf74a72b4bcd8c369
+ms.sourcegitcommit: 456ec9510807d05623c0ed1dd049c9676f53f56b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52754927"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53060521"
 ---
 # <a name="assign-reviewers-to-your-access-review-using-the-microsoft-graph-api"></a>Atribuir revisadores à sua revisão de acesso usando a API Graph Microsoft
 
-A [API](/graph/api/resources/accessreviewsv2-root?view=graph-rest-beta&preserve-view=true) de revisões de acesso do Azure AD permite que você revise programaticamente o acesso que os usuários, entidades de serviço ou grupos têm aos recursos do Azure AD.
+A [API](/graph/api/resources/accessreviewsv2-root) de revisões de acesso do Azure AD permite que você revise programaticamente o acesso que os usuários, entidades de serviço ou grupos têm aos recursos do Azure AD.
 
-> [!NOTE]
-> No momento, a API de [críticas](/graph/api/resources/accessreviewsv2-root?view=graph-rest-beta&preserve-view=true) de acesso está disponível apenas no ponto de extremidade do Microsoft Graph beta. Não o use em aplicativos de produção, pois ele está sujeito a alterações sem aviso prévio.
-
-Os revisores primários são configurados na propriedade **reviewers** do recurso [access Reviews accessReviewScheduleDefinition.](/graph/api/resources/accessreviewscheduledefinition?view=graph-rest-beta&preserve-view=true)  Além disso, você pode especificar revisores de fallback usando **a propriedade fallbackReviewers.** Essas propriedades não são necessárias ao criar uma auto-revisão (onde os usuários revisam seu próprio acesso).
+Os revisores primários são configurados na propriedade **reviewers** do recurso [access Reviews accessReviewScheduleDefinition.](/graph/api/resources/accessreviewscheduledefinition)  Além disso, você pode especificar revisores de fallback usando **a propriedade fallbackReviewers.** Essas propriedades não são necessárias ao criar uma auto-revisão (onde os usuários revisam seu próprio acesso).
 
 ## <a name="configure-reviewers"></a>Configurar revisadores
 
-Para configurar os revisores e revisores de fallback, de definir os valores das propriedades **query**, **queryRoot** e **queryType** **do accessReviewReviewerScope**. Para descrições dessas propriedades, consulte [tipo de recurso accessReviewReviewerScope.](/graph/api/resources/accessreviewreviewerscope?view=graph-rest-beta&preserve-view=true)
+Para configurar os revisores e revisores de fallback, de definir os valores das propriedades **query**, **queryRoot** e **queryType** **do accessReviewReviewerScope**. Para descrições dessas propriedades, consulte [tipo de recurso accessReviewReviewerScope.](/graph/api/resources/accessreviewreviewerscope)
 
 ### <a name="example-1-a-specific-user-as-the-reviewer"></a>Exemplo 1: um usuário específico como revistor
 

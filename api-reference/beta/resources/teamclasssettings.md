@@ -1,29 +1,29 @@
 ---
-title: tipo de recurso teamClassSettings
-description: Representa configurações específicas para equipes do tipo classe.
+title: Tipo de recurso teamClassSettings
+description: Representa configurações específicas para equipes do tipo Classe.
 localization_priority: Normal
-author: clearab
+author: akjo
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 97a20a312f899db5334003edb1b739bdc3b9e346
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 10ba45299a8c0d1b28b855aad3a2321930f618e9
+ms.sourcegitcommit: 456ec9510807d05623c0ed1dd049c9676f53f56b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48046668"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53060478"
 ---
-# <a name="teamclasssettings-resource-type"></a>tipo de recurso teamClassSettings
+# <a name="teamclasssettings-resource-type"></a>Tipo de recurso teamClassSettings
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Representa propriedades específicas de classe de uma [equipe](team.md). Disponível apenas quando a equipe representa uma classe.
+Representa propriedades específicas da classe de uma [equipe](team.md). Disponível apenas quando a equipe representa uma classe.
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|notifyGuardiansAboutAssignments|Booliano|Se for definido como `true` , habilitará o envio de emails de Resumo de atribuições semanais para pais/guardiões, desde que a administração de locatários tenha habilitado a configuração globalmente.|
+|notifyGuardiansAboutAssignments|Booliano|Se definido como , habilita o envio de atribuições semanais digere emails para pais/responsáveis, desde que o administrador do locatário tenha habilitado a `true` configuração globalmente.|
 
 ## <a name="json-representation"></a>Representação JSON
 

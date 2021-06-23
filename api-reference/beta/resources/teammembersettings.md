@@ -1,31 +1,31 @@
 ---
-title: tipo de recurso teamMemberSettings
+title: Tipo de recurso teamMemberSettings
 description: Configurações para configurar se os membros podem executar determinadas ações, por exemplo, criar canais e adicionar bots na equipe.
 localization_priority: Normal
-author: clearab
+author: akjo
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 3d3c716937c7a10091a663ea614d3a63c91ab4b0
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: dfa463ce47b9724d18f6f13b53ef46a1cb493f4a
+ms.sourcegitcommit: 456ec9510807d05623c0ed1dd049c9676f53f56b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48046631"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53060454"
 ---
-# <a name="teammembersettings-resource-type"></a>tipo de recurso teamMemberSettings
+# <a name="teammembersettings-resource-type"></a>Tipo de recurso teamMemberSettings
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Configurações para configurar se os membros podem executar determinadas ações, por exemplo, criar canais e adicionar bots, na [equipe](team.md).
+Configurações configurar se os membros podem executar determinadas ações, por exemplo, criar canais e adicionar bots, na [equipe](team.md).
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|allowCreateUpdateChannels|Booliano|Se definido como true, os membros podem adicionar e atualizar qualquer canal.|
+|allowCreateUpdateChannels|Booliano|Se definido como true, os membros podem adicionar e atualizar quaisquer canais.|
 |allowCreatePrivateChannels|Booliano|Se definido como true, os membros podem adicionar e atualizar canais privados.|
-|allowDeleteChannels|Booliano|Se definido como true, os membros podem excluir canais.|
+|allowDeleteChannels|Booliano|Se definido como true, os membros poderão excluir canais.|
 |allowAddRemoveApps|Booliano|Se definido como true, os membros podem adicionar e remover aplicativos.|
 |allowCreateUpdateRemoveTabs|Booliano|Se definido como true, os membros podem adicionar, atualizar e remover guias. |
 |allowCreateUpdateRemoveConnectors|Booliano|Se definido como true, os membros podem adicionar, atualizar e remover conectores.|

@@ -1,16 +1,16 @@
 ---
 title: 'Canal de Atualização '
 description: Atualize as propriedades do canal especificado.
-author: clearab
+author: akjo
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 8527ae77c6198aea615aff8add5a569dc563bafa
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 33088ea188b1ac1efa1247770b3e0a044c13764e
+ms.sourcegitcommit: 456ec9510807d05623c0ed1dd049c9676f53f56b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52786212"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53059941"
 ---
 # <a name="update-channel"></a>Canal de Atualização 
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 Atualize as propriedades do canal [especificado](../resources/channel.md).
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 

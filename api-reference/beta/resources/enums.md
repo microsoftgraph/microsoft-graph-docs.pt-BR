@@ -5,12 +5,12 @@ doc_type: enumPageType
 localization_priority: Normal
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
-ms.openlocfilehash: d2a4b3885d00da58144d73655ae8e705608bb139
-ms.sourcegitcommit: f77c1385306fd40557aceb24fdfe4832cbb60a27
+ms.openlocfilehash: a26fba741bfe080ac5779c7c39c49b47a9427211
+ms.sourcegitcommit: 456ec9510807d05623c0ed1dd049c9676f53f56b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/12/2021
-ms.locfileid: "52912030"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53060504"
 ---
 # <a name="enum-values"></a>Valores denum
 
@@ -72,11 +72,11 @@ Namespace: microsoft.graph
 
 |Member|
 |:---|
-|Cadeia de caracteres|
+|String|
 |Inteiro|
 |Referência|
 |Binário|
-|Boolean|
+|Booliano|
 |DateTime|
 
 ### <a name="mutability-values"></a>valores de mutabilidade
@@ -816,7 +816,7 @@ Namespace: microsoft.graph
 |site|
 |list|
 |listItem|
-|drive|
+|Unidade|
 |unknownFutureValue|
 
 ### <a name="searchalterationtype-values"></a>searchAlterationType values
@@ -1274,7 +1274,7 @@ Namespace: microsoft.graph
 | Automático
 | noPreview
 | checklist
-| descrição
+| description
 | referência
 
 
@@ -2072,7 +2072,7 @@ Valores possíveis para tipos de conta de usuário (associação ao grupo), por 
 |geolocalização | coluna de localização geográfica. |
 |term | coluna de metadados gerenciados. |
 |multiterm | coluna de metadados gerenciados aceitando vários valores. |
-|thumbnail | Coluna de imagem. |
+|miniatura | Coluna de imagem. |
 |approvalStatus | Coluna de status de aprovação de conteúdo. |
 |unknownFutureValue | unknownFuturevalue |
 
@@ -2213,7 +2213,7 @@ Valores possíveis para tipos de conta de usuário (associação ao grupo), por 
 
 |Membro    |Valor    |Descrição |
 |:---------|:--------|:----------- |
-|team      |0        |Indica que o aplicativo Teams pode ser instalado em uma equipe e está autorizado a acessar os dados dessa equipe.|
+|equipe      |0        |Indica que o aplicativo Teams pode ser instalado em uma equipe e está autorizado a acessar os dados dessa equipe.|
 |groupChat |1        |Indica que o aplicativo Teams pode ser instalado em um chat de grupo e está autorizado a acessar os dados desse chat de grupo.|
 |pessoal  |2        |Indica que o aplicativo Teams pode ser instalado no escopo pessoal de um usuário e está autorizado a acessar os dados desse usuário.|
 
@@ -2262,3 +2262,9 @@ Valores possíveis para tipos de conta de usuário (associação ao grupo), por 
 |:---|
 |principal|
 |unknownFutureValue|
+
+### <a name="teamworktagtype-values"></a>valores de teamworkTagType
+
+|Membro| Valor | Descrição               |
+|:---|:---- | :------------------------ |
+|standard| 0     |Tipo padrão para uma marca. Marcas de padrão de tipo podem ser gerenciadas na equipe por membros que têm permissões.|

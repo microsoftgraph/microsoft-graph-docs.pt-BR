@@ -5,33 +5,30 @@ author: isabelleatmsft
 localization_priority: Normal
 ms.prod: governance
 doc_type: conceptualPageType
-ms.openlocfilehash: 731ebcb9ab27baf4ea30553d4f6a598d61e37d59
-ms.sourcegitcommit: 2d0daa446c7b37ced1d214e0c6e18e2b8243bb09
+ms.openlocfilehash: a4ed9b17d8d2b831071dc8f24e8330e595b543dc
+ms.sourcegitcommit: 456ec9510807d05623c0ed1dd049c9676f53f56b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/18/2021
-ms.locfileid: "53010188"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53060295"
 ---
 # <a name="configure-the-scope-of-your-access-review-using-the-microsoft-graph-api"></a>Configurar o escopo da sua revisão de acesso usando a API Graph Microsoft
 
-A [API](/graph/api/resources/accessreviewsv2-root?view=graph-rest-beta&preserve-view=true) de revisões de acesso do Azure AD permite que você revise programaticamente o acesso que os usuários, entidades de serviço ou grupos têm aos recursos do Azure AD.
+A [API](/graph/api/resources/accessreviewsv2-root) de revisões de acesso do Azure AD permite que você revise programaticamente o acesso que os usuários, entidades de serviço ou grupos têm aos recursos do Azure AD.
 
-> [!NOTE]
-> A [API de críticas de acesso](/graph/api/resources/accessreviewsv2-root?view=graph-rest-beta&preserve-view=true) está disponível apenas no ponto de extremidade Graph beta da Microsoft. Não o use em aplicativos de produção, pois ele está sujeito a alterações sem aviso prévio.
-
-Os recursos a revisar são configurados na propriedade **scope** do recurso [access Reviews accessReviewScheduleDefinition.](/graph/api/resources/accessreviewscheduledefinition?view=graph-rest-beta&preserve-view=true) Essa propriedade é do tipo [accessReviewScope](/graph/api/resources/accessreviewscope?view=graph-rest-beta&preserve-view=true), um tipo abstrato herdado pelos seguintes recursos que podem ser usados para configurar recursos ou grupos de recursos em que o acesso será revisado.
+Os recursos a revisar são configurados na propriedade **scope** do recurso [access Reviews accessReviewScheduleDefinition.](/graph/api/resources/accessreviewscheduledefinition) Essa propriedade é do tipo [accessReviewScope](/graph/api/resources/accessreviewscope), um tipo abstrato herdado pelos seguintes recursos que podem ser usados para configurar recursos ou grupos de recursos em que o acesso será revisado.
 
 |Recurso|Descrição|Exemplos de cenários|
 |:---    |:---       |:---             |
-|[accessReviewQueryScope](/graph/api/resources/accessreviewqueryscope?view=graph-rest-beta&preserve-view=true)|Melhor aplicável ao analisar o conjunto completo ou o subconjunto de entidades que têm acesso a um recurso ou grupo de recursos relacionados.|<ul><li>Associação de usuários atribuídos a um grupo.</li><li>Acesso de usuário convidado a um grupo.</li><li>Acesso do usuário convidado a todos Microsoft 365 grupos em um locatário.</li><li>Entidades de serviço atribuídas a funções privilegiadas.</li><li>Acesso da entidade de serviço e usuário aos pacotes de acesso gerenciamento de direitos.</li></ul>|
-|[accessReviewInactiveUsersQueryScope](/graph/api/resources/accessreviewinactiveusersqueryscope?view=graph-rest-beta&preserve-view=true)|Herdado de accessReviewQueryScope. Usado quando apenas usuários inativos são revisados. Seu status inativo é especificado pela **propriedade inactiveDuration.** |<ul><li>Associação de grupo apenas de usuários inativos.</li><ul>|
-|[principalResourceMembershipsScope](/graph/api/resources/principalResourceMembershipsScope?view=graph-rest-beta&preserve-view=true)|Melhor aplicável para analisar o acesso das entidades aos recursos em que você configura pools exclusivos de entidades e recursos.|<ul><li>Revisão do acesso de 3 entidades principais específicas em 1 Microsoft 365 *grupo* e 1 função privilegiada do Azure AD.</li><ul>|
+|[accessReviewQueryScope](/graph/api/resources/accessreviewqueryscope)|Melhor aplicável ao analisar o conjunto completo ou o subconjunto de entidades que têm acesso a um recurso ou grupo de recursos relacionados.|<ul><li>Associação de usuários atribuídos a um grupo.</li><li>Acesso de usuário convidado a um grupo.</li><li>Acesso do usuário convidado a todos Microsoft 365 grupos em um locatário.</li><li>Entidades de serviço atribuídas a funções privilegiadas.</li><li>Acesso da entidade de serviço e usuário aos pacotes de acesso gerenciamento de direitos.</li></ul>|
+|[accessReviewInactiveUsersQueryScope](/graph/api/resources/accessreviewinactiveusersqueryscope)|Herdado de accessReviewQueryScope. Usado quando apenas usuários inativos são revisados. Seu status inativo é especificado pela **propriedade inactiveDuration.** |<ul><li>Associação de grupo apenas de usuários inativos.</li><ul>|
+|[principalResourceMembershipsScope](/graph/api/resources/principalResourceMembershipsScope)|Melhor aplicável para analisar o acesso das entidades aos recursos em que você configura pools exclusivos de entidades e recursos.|<ul><li>Revisão do acesso de 3 entidades principais específicas em 1 Microsoft 365 *grupo* e 1 função privilegiada do Azure AD.</li><ul>|
 
 Neste artigo, você usará esses tipos de accessReviewScope para configurar uma ampla variedade de recursos do Azure AD como o escopo de sua revisão de acesso. Isso pode ajudá-lo a automatizar a revisão proativa e manter o controle sobre o acesso aos recursos em sua organização.  
 
 ## <a name="use-accessreviewqueryscope-to-configure-scope"></a>Usar accessReviewQueryScope para configurar o escopo
 
-Para configurar o escopo usando o **tipo accessReviewQueryScope,** de definir os valores de suas propriedades **de** consulta, **queryRoot** e **queryType.** Para descrições dessas propriedades, consulte [tipo de recurso accessReviewQueryScope.](/graph/api/resources/accessreviewqueryscope?view=graph-rest-beta&preserve-view=true)
+Para configurar o escopo usando o **tipo accessReviewQueryScope,** de definir os valores de suas propriedades **de** consulta, **queryRoot** e **queryType.** Para descrições dessas propriedades, consulte [tipo de recurso accessReviewQueryScope.](/graph/api/resources/accessreviewqueryscope)
 
 ### <a name="example-1-review-all-users-assigned-to-a-group"></a>Exemplo 1: Revisar todos os usuários atribuídos a um grupo
 
@@ -124,7 +121,7 @@ Como essa revisão é aplicada a todas as equipes, configure a **propriedade ins
 ```http
 "scope": {
     "@odata.type": "#microsoft.graph.accessReviewQueryScope",
-    "query": "/beta/roleManagement/directory/roleAssignmentScheduleInstances?$expand=principal&$filter=(isof(principal,'microsoft.graph.servicePrincipal') and roleDefinitionId eq '{role ID}')",
+    "query": "/roleManagement/directory/roleAssignmentScheduleInstances?$expand=principal&$filter=(isof(principal,'microsoft.graph.servicePrincipal') and roleDefinitionId eq '{role ID}')",
     "queryType": "MicrosoftGraph"
 }
 ```

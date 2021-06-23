@@ -1,16 +1,16 @@
 ---
 title: Liste os membros do canal.
 description: Liste os membros de um canal.
-author: laujan
+author: akjo
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 35609562fa86a32f02149f8814017cee47a1c99f
-ms.sourcegitcommit: 75428fc7535662f34e965c6b69fef3a53fdaf1cb
+ms.openlocfilehash: e42992cfc8c0c1368e822860cf42aac7987a881b
+ms.sourcegitcommit: 456ec9510807d05623c0ed1dd049c9676f53f56b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49690190"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53059947"
 ---
 # <a name="list-members-of-channel"></a>Liste os membros do canal.
 
@@ -23,9 +23,9 @@ Recupere a lista [conversationMembers](../resources/conversationmember.md) de um
 > [!NOTE]
 > A ID de afiliação retornada pelo servidor deve ser tratada como cadeias de caracteres opacas. O cliente não deve tentar analisar ou fazer suposições sobre essas IDs do recursos.
 >
-> Os resultados da associação podem ser mapeados para usuários de diferentes locatários, conforme indicado na resposta, no futuro. O cliente não deve presumir que todos os membros são apenas do locatário atual.
+> Os resultados da associação podem ser mapeados para usuários de diferentes locatários, conforme indicado na resposta, no futuro. O cliente não deve presumir que todos os membros sejam apenas do locatário atual.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 

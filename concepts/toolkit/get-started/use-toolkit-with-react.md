@@ -3,12 +3,12 @@ title: Use o microsoft Graph Toolkit com React
 description: Começar a usar o microsoft Graph Toolkit em um React aplicativo.
 localization_priority: Normal
 author: waldekmastykarz
-ms.openlocfilehash: 54bdde286933610feb637026be5a7385ab848c48
-ms.sourcegitcommit: 5a1cc1943527aa268e3797ee514871e65eb474a6
+ms.openlocfilehash: 6618599b767f5c7ebe3d0469aed012c81125738e
+ms.sourcegitcommit: 456ec9510807d05623c0ed1dd049c9676f53f56b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53030947"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53060500"
 ---
 # <a name="use-the-microsoft-graph-toolkit-with-react"></a>Use o microsoft Graph Toolkit com React
 
@@ -19,7 +19,7 @@ Se você estiver criando aplicativos com React, poderá usar o pacote [ `@micros
 Este artigo descreve o processo passo a passo de usar o microsoft Graph Toolkit para criar um aplicativo React e conectá-lo ao Microsoft 365. Depois de concluir as etapas, você terá um aplicativo React que mostra os próximos compromissos do usuário atualmente Microsoft 365.
 
 > [!TIP]
-> Você também pode seguir este tutorial como um tour de código interativo. Fore details, see the [GitHub repo with the starter project](https://github.com/microsoftgraph/mgt-react-codetour).
+> Você também pode seguir este tutorial como um tour de código interativo. Para obter detalhes, consulte o [GitHub com o projeto inicial](https://github.com/microsoftgraph/mgt-react-codetour).
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
@@ -63,7 +63,7 @@ Você deve ser capaz de abrir seu aplicativo no navegador por `http://localhost:
 
 ## <a name="connect-react-app-to-microsoft-365"></a>Conexão React aplicativo para Microsoft 365
 
-Agora que você registrou seu aplicativo com o Active Directory do Azure (Azure AD), você pode conectar o aplicativo React ao Microsoft 365. Primeiro, permita que os usuários entre no aplicativo usando sua conta da Microsoft.
+Agora que você registrou seu aplicativo com o Azure Active Directory (Azure AD), você pode conectar o aplicativo React ao Microsoft 365. Primeiro, permita que os usuários entre no aplicativo usando sua conta da Microsoft.
 
 ### <a name="copy-the-azure-ad-application-registration-id"></a>Copiar a ID de registro do aplicativo do Azure AD
 
@@ -323,6 +323,6 @@ Com essas alterações, depois de entrar no aplicativo com sua conta da Microsof
 ## <a name="next-steps"></a>Próximas etapas
 
 - Veja [o que está no microsoft Graph Toolkit](../overview.md).
-- Experimente os componentes no [playground](https://mgt.dev).
-- Faça uma pergunta sobre [Stack Overflow](https://aka.ms/mgt-question).
-- Relatar bugs ou deixar uma solicitação de recurso [GitHub](https://aka.ms/mgt).
+- Experimente os componentes do [playground](https://mgt.dev).
+- Faça uma pergunta no [Stack Overflow](https://aka.ms/mgt-question).
+- Relate bugs ou deixe uma solicitação de recurso no [GitHub](https://aka.ms/mgt).

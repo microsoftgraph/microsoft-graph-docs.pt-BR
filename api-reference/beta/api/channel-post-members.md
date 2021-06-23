@@ -1,16 +1,16 @@
 ---
 title: Adicionar membro ao canal
 description: Adicionar membro ao canal.
-author: laujan
+author: akjo
 doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: a5c0e929e68aef53a2e42270078fd5a388488643
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: d4276eea6e094f43b10a1c392b57ac14cd310cc1
+ms.sourcegitcommit: 456ec9510807d05623c0ed1dd049c9676f53f56b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50948344"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53059929"
 ---
 # <a name="add-member-to-channel"></a>Adicionar membro ao canal
 
@@ -50,7 +50,7 @@ Inclua as propriedades a seguir no corpo da solicitação.
 | Propriedade   | Tipo |Descrição|
 |:---------------|:--------|:----------|
 |funções|coleção de cadeias de caracteres|A função do usuário. Deve estar `owner` ou vazio.|
-|user|[Usuário](../resources/user.md)|O usuário a ser acrescentado ao canal.|
+|usuário|[user](../resources/user.md)|O usuário a ser acrescentado ao canal.|
 
 ## <a name="response"></a>Resposta
 
