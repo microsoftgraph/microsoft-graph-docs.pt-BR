@@ -5,12 +5,12 @@ localization_priority: Normal
 author: videor
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 94115e97c597bc34f03d843b8098f707ed39cd51
-ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
+ms.openlocfilehash: cbb542420228a4a383dea4e165323fbb6e8abb17
+ms.sourcegitcommit: 9ac6bbab3df22e7629cf2bde796b527337c680aa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50761804"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53082353"
 ---
 # <a name="conditionalaccessdevices-resource-type"></a>Tipo de recurso conditionalAccessDevices
 
@@ -24,10 +24,11 @@ Representa dispositivos no escopo da política.
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-| includeDevices | Coleção de cadeias de caracteres | Estados no escopo da política. `All` é o único valor permitido. |
-| excludeDevices | Coleção de cadeias de caracteres | Estados excluídos do escopo da política. Valores possíveis: `Compliant` , `DomainJoined` . |
-| includeDeviceStates (preterido)| Coleção de cadeias de caracteres | Estados no escopo da política. `All` é o único valor permitido. |
-| excludeDeviceStates (preterido)| Coleção de cadeias de caracteres | Estados excluídos do escopo da política. Valores possíveis: `Compliant` , `DomainJoined` . |
+| includeDevices | Conjunto de cadeias de caracteres | Estados no escopo da política. `All` é o único valor permitido. Não será possível definir *se deviceFIlter* estiver definido. |
+| excludeDevices | Conjunto de cadeias de caracteres | Estados excluídos do escopo da política. Valores possíveis: `Compliant` , `DomainJoined` . Não será possível definir **se deviceFIlter** estiver definido. |
+| deviceFilter | [conditionalAccessFilter](conditionalaccessfilter.md) | Filtrar definindo a regra de sintaxe de dispositivo dinâmico para incluir/excluir dispositivos. Um filtro pode usar propriedades de dispositivo (como atributos de extensão) para incluí-las/excluir. Não será possível definir **se includeDevices** ou **excludeDevices** estiver definido. |
+| includeDeviceStates (preterido)| Conjunto de cadeias de caracteres | Estados no escopo da política. `All` é o único valor permitido. |
+| excludeDeviceStates (preterido)| Conjunto de cadeias de caracteres | Estados excluídos do escopo da política. Valores possíveis: `Compliant` , `DomainJoined` . |
 
 ## <a name="relationships"></a>Relações
 
@@ -41,7 +42,8 @@ Veja a seguir uma representação JSON do recurso.
   "blockType": "resource",
   "optionalProperties": [
     "includeDevices",
-    "excludeDevices"
+    "excludeDevices",
+    "deviceFilter"
   ],
   "@odata.type": "microsoft.graph.conditionalAccessDevices",
   "baseType": null
@@ -50,7 +52,8 @@ Veja a seguir uma representação JSON do recurso.
 ```json
 {
   "includeDevices": [ "String" ],
-  "excludeDevices": [ "String" ]
+  "excludeDevices": [ "String" ],
+  "deviceFilter": {"@odata.type": "microsoft.graph.conditionalAccessFilter"}
 }
 ```
 

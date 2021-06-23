@@ -1,18 +1,18 @@
 ---
-title: tipo de recurso cloudPcManagementAssignmentTarget
-description: destino da atribuição cloudPcManagement. Tipo base.
+title: Tipo de recurso cloudPcManagementAssignmentTarget
+description: destino de atribuição cloudPcManagement. Tipo base.
 author: AshleyYangSZ
 localization_priority: Normal
 ms.prod: cloud-pc
 doc_type: resourcePageType
-ms.openlocfilehash: 9312293426789302de6c0e57792bc86fadff77f0
-ms.sourcegitcommit: 958b540f118ef3ce64d4d4e96b29264e2b56d703
+ms.openlocfilehash: eab9b1041a78ac5b497174febe33d0db3d5ac566
+ms.sourcegitcommit: 9ac6bbab3df22e7629cf2bde796b527337c680aa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49563827"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53082262"
 ---
-# <a name="cloudpcmanagementassignmenttarget-resource-type"></a>tipo de recurso cloudPcManagementAssignmentTarget
+# <a name="cloudpcmanagementassignmenttarget-resource-type"></a>Tipo de recurso cloudPcManagementAssignmentTarget
 
 Namespace: microsoft.graph
 
@@ -20,9 +20,10 @@ Namespace: microsoft.graph
 
 Tipo base para destinos de atribuição.
 
-O recurso [cloudPcManagementGroupAssignmentTarget](cloudpcmanagementgroupassignmenttarget.md) . que representa um grupo de destino de atribuição, herda desse tipo base, **cloudPcManagementAssignmentTarget**.
+O [recurso cloudPcManagementGroupAssignmentTarget,](cloudpcmanagementgroupassignmenttarget.md) que representa um grupo de destino de atribuição, herda desse tipo base.
 
 [!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
+
 ## <a name="properties"></a>Propriedades
 
 Não aplicável.

@@ -3,12 +3,12 @@ title: To Do componente no microsoft Graph Toolkit
 description: O To Do componente permite ao usuário exibir, adicionar, remover, concluir ou editar todas as tarefas. Ele funciona com qualquer tarefa no Microsoft To-Do.
 localization_priority: Normal
 author: shweaver-MSFT
-ms.openlocfilehash: 3eb91bc23f1159e08749b6e6b073939bacca0c5c
-ms.sourcegitcommit: 3f40fbb953b14c1f52341786569c678adfc5bd3e
+ms.openlocfilehash: 907d6d18380debb6e08d612d5f1d5bebec6746ec
+ms.sourcegitcommit: 9ac6bbab3df22e7629cf2bde796b527337c680aa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52780999"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53082017"
 ---
 # <a name="to-do-component-in-the-microsoft-graph-toolkit"></a>To Do componente no microsoft Graph Toolkit
 
@@ -20,7 +20,7 @@ O exemplo a seguir exibe as tarefas de Microsoft To Do do usuário Microsoft To 
 
 <iframe src="https://mgt.dev/iframe.html?id=components-mgt-todo--tasks&source=docs" height="500"></iframe>
 
-[Abra este exemplo em mgt.dev](https://mgt.dev/?path=/story/components-mgt-todo--tasks&source=docs)
+[Abrir este exemplo no mgt.dev](https://mgt.dev/?path=/story/components-mgt-todo--tasks&source=docs)
 
 ## <a name="properties"></a>Propriedades
 
@@ -99,12 +99,14 @@ Para saber mais, confira [componentes de estilo](https://docs.microsoft.com/grap
 
 Os eventos a seguir são disparados do componente.
 
-| Evento | Detalhe | Descrição |
+| Event | Detalhe | Descrição |
 | --- | --- | --- |
-| taskAdded | O detalhe contém o objeto `task` respectivo | Dispara quando uma nova tarefa é criada. |
-| taskChanged | O detalhe contém o objeto `task` respectivo | Dispara quando os metadados da tarefa foram alterados, como a marcação concluída. |
-| taskClick | O detalhe contém o objeto `task` respectivo | Dispara quando o usuário clica ou toca em uma tarefa. |
-| taskRemoved | O detalhe contém o objeto `task` respectivo | Dispara quando uma tarefa existente foi excluída. |
+| `taskAdded` | O detalhe contém o objeto `task` respectivo | Dispara quando uma nova tarefa é criada. |
+| `taskChanged` | O detalhe contém o objeto `task` respectivo | Dispara quando os metadados da tarefa foram alterados, como a marcação concluída. |
+| `taskClick` | O detalhe contém o objeto `task` respectivo | Dispara quando o usuário clica ou toca em uma tarefa. |
+| `taskRemoved` | O detalhe contém o objeto `task` respectivo | Dispara quando uma tarefa existente foi excluída. |
+
+Para obter mais informações sobre como lidar com eventos, consulte [eventos](../customize-components/events.md).
 
 ## <a name="templates"></a>Modelos
 

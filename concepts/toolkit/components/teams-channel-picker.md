@@ -3,12 +3,12 @@ title: Microsoft Teams Componente selador de canal no Microsoft Graph Toolkit
 description: Você pode usar o mgt-teams-channel-picker para pesquisar canais e equipes associadas ao usuário no microsoft Graph.
 localization_priority: Normal
 author: vogtn
-ms.openlocfilehash: aaa89b9fab5d9e29c35b7d2cabb0a494ca97d4b3
-ms.sourcegitcommit: db3d2c6db8dd8f8cc14bdcebb2904d5e056a73e7
+ms.openlocfilehash: ad196cc17b70f42cd571bf5805e2aa4eb2cfe90e
+ms.sourcegitcommit: 9ac6bbab3df22e7629cf2bde796b527337c680aa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52579939"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53082024"
 ---
 # <a name="microsoft-teams-channel-picker-component-in-the-microsoft-graph-toolkit"></a>Microsoft Teams Componente selador de canal no Microsoft Graph Toolkit
 
@@ -20,7 +20,7 @@ O exemplo a seguir mostra o `mgt-teams-channel-picker` componente. Comece a proc
 
 <iframe src="https://mgt.dev/iframe.html?id=components-mgt-teams-channel-picker--teams-channel-picker&source=docs" height="450"></iframe>
 
-[Abra este exemplo em mgt.dev](https://mgt.dev/?path=/story/components-mgt-teams-channel-picker--teams-channel-picker&source=docs)
+[Abrir este exemplo no mgt.dev](https://mgt.dev/?path=/story/components-mgt-teams-channel-picker--teams-channel-picker&source=docs)
 
 ## <a name="getting-the-selected-channel"></a>Obter o canal selecionado
 
@@ -77,9 +77,12 @@ mgt-teams-channel-picker {
 ```
 
 ## <a name="events"></a>Eventos
-| Evento | Detalhe | Descrição |
+
+| Event | Detalhe | Descrição |
 | --- | --- | --- |
-| selectionChanged | O detalhe contém o item selecionado no momento do `{channel : ` [MicrosoftGraph.Channel](/graph/api/resources/channel) `, team: ` [MicrosoftGraph.Team](/graph/api/resources/team)`}` | Acionado quando o usuário faz uma alteração na seleção de um canal. |
+| `selectionChanged` | O detalhe contém o item selecionado no momento do `{channel : ` [MicrosoftGraph.Channel](/graph/api/resources/channel) `, team: ` [MicrosoftGraph.Team](/graph/api/resources/team)`}` | Acionado quando o usuário faz uma alteração na seleção de um canal. |
+
+Para obter mais informações sobre como lidar com eventos, consulte [eventos](../customize-components/events.md).
 
 ## <a name="templates"></a>Modelos
 

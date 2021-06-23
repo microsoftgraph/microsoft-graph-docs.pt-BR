@@ -4,12 +4,12 @@ description: Este artigo fornece práticas recomendadas e exemplos para trabalha
 author: KirtiPereira
 localization_priority: Normal
 ms.prod: teamwork
-ms.openlocfilehash: cfb62de20bfa74ccc91ce99189cf5be5a9dc1787
-ms.sourcegitcommit: 456ec9510807d05623c0ed1dd049c9676f53f56b
+ms.openlocfilehash: 52a207c780922079731091b6dea11050fd38faeb
+ms.sourcegitcommit: 9ac6bbab3df22e7629cf2bde796b527337c680aa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53060620"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53082066"
 ---
 # <a name="best-practices-for-using-microsoft-teams-activity-feed-notifications"></a>Práticas recomendadas para o uso Microsoft Teams de feed de atividade
 
@@ -18,7 +18,7 @@ Este artigo aborda as práticas recomendadas para o uso Microsoft Teams notifica
 * Solicitando respostas a notificações
 * Criando notificações sobre eventos externos
 
-A imagem a seguir mostra um exemplo de uma notificação de feed de atividade Teams.
+A imagem a seguir mostra um exemplo de uma notificação de feed de atividade Teams:
 
 ![Captura de tela de um aplicativo Teams exibição de notificação de feed de atividade.](./images/activity-feed-notification.png)
 
@@ -32,7 +32,7 @@ Ao implementar notificações de feed de atividade, lembre-se dos seguintes pont
 
 Microsoft Teams exibe notificações em formatos de feed de atividade e notificação de notificação. Os usuários recebem notificações de várias fontes em chats, canais, reuniões ou outros aplicativos. Para aprimorar a experiência do usuário, aplique as seguintes recomendações:
 
-* Localize o conteúdo em um notificação ou feed. A localização só acontecerá se o conteúdo do aplicativo for [localizado](/platform/concepts/build-and-test/apps-localization).
+* Localize o conteúdo em um notificação ou feed. A localização só acontecerá se o conteúdo do aplicativo for [localizado](/microsoftteams/platform/concepts/build-and-test/apps-localization).
 * Forneça títulos e descrições apropriados para seus **Tipos de Atividade.** Use títulos curtos, **como** @mention e **Comunicados.** Evite títulos longos, como **Atividade de usuário mencionada e** atividade de criação de **postagem.**
 * As notificações devem transmitir informações importantes que são relevantes para o usuário. Por exemplo, *Diego atribuiu um tíquete de vendas* a você é uma mensagem relevante; *Joni deixou a equipe de vendas* não.
 * Evite o envio de notificações promocionais de natureza, como *Experimentar o novo recurso no aplicativo Cycling*.

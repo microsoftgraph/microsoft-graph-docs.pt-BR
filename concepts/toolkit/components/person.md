@@ -3,12 +3,12 @@ title: Componente person no microsoft Graph Toolkit
 description: O componente de pessoa é usado para exibir uma pessoa ou contato usando sua foto, nome e/ou endereço de email.
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: 3020c652fa08c78fecd53469af0e21622f9afcff
-ms.sourcegitcommit: 3f40fbb953b14c1f52341786569c678adfc5bd3e
+ms.openlocfilehash: 7f35b5c1a3ef764995d319e9e603489b50a1fe2c
+ms.sourcegitcommit: 9ac6bbab3df22e7629cf2bde796b527337c680aa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52780992"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53082045"
 ---
 # <a name="person-component-in-the-microsoft-graph-toolkit"></a>Componente person no microsoft Graph Toolkit
 
@@ -22,7 +22,7 @@ O exemplo a seguir exibe uma pessoa usando o `mgt-person` componente. Você pode
 
 <iframe src="https://mgt.dev/iframe.html?id=components-mgt-person--person&source=docs" height="250"></iframe>
 
-[Abra este exemplo em mgt.dev](https://mgt.dev/?path=/story/components-mgt-person--person&source=docs)
+[Abrir este exemplo no mgt.dev](https://mgt.dev/?path=/story/components-mgt-person--person&source=docs)
 
 ## <a name="setting-the-person-details"></a>Definindo os detalhes da pessoa
 
@@ -116,11 +116,13 @@ Para saber mais, confira [componentes de estilo](../customize-components/style.m
 
 Os eventos a seguir são disparados do componente.
 
-| Evento | Detalhe | Descrição |
+| Event | Detalhe | Descrição |
 | --- | --- | --- |
-| line1clicked | O detalhe contém o objeto `person` respectivo | Acionado quando a linha1 é clicada. |
-| line2clicked | O detalhe contém o objeto `person` respectivo | Disparado quando a linha2 é clicada. |
-| line3clicked | O detalhe contém o objeto `person` respectivo | Acionado quando a linha3 é clicada. |
+| `line1clicked` | O detalhe contém o objeto `person` respectivo | Acionado quando a linha1 é clicada. |
+| `line2clicked` | O detalhe contém o objeto `person` respectivo | Disparado quando a linha2 é clicada. |
+| `line3clicked` | O detalhe contém o objeto `person` respectivo | Acionado quando a linha3 é clicada. |
+
+Para obter mais informações sobre como lidar com eventos, consulte [eventos](../customize-components/events.md).
 
 ## <a name="templates"></a>Modelos
 

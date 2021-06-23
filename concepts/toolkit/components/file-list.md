@@ -3,12 +3,12 @@ title: Componente de lista de arquivos no microsoft Graph Toolkit
 description: O componente de lista de arquivos é usado para exibir uma lista de arquivos mostrando seu ícone e nome
 localization_priority: Normal
 author: beth-panx
-ms.openlocfilehash: cfd4543cad98864a423699e4ed6cde7dc82ee6fb
-ms.sourcegitcommit: 3f40fbb953b14c1f52341786569c678adfc5bd3e
+ms.openlocfilehash: 89f60020fb1db75ed4e79a7402b0aa0518146130
+ms.sourcegitcommit: 9ac6bbab3df22e7629cf2bde796b527337c680aa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52781090"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53082171"
 ---
 # <a name="file-list-component-in-the-microsoft-graph-toolkit"></a>Componente de lista de arquivos no microsoft Graph Toolkit
 
@@ -20,7 +20,7 @@ O exemplo a seguir exibe um arquivo usando o `mgt-file-list` componente. Você p
 
 <iframe src="https://mgt.dev/iframe.html?id=components-mgt-file-list--file-list&source=docs" height="250"></iframe>
 
-[Abra este exemplo em mgt.dev](https://mgt.dev/?path=/story/components-mgt-file-list--file-list&source=docs)
+[Abrir este exemplo no mgt.dev](https://mgt.dev/?path=/story/components-mgt-file-list--file-list&source=docs)
 
 ## <a name="properties"></a>Propriedades
 
@@ -138,7 +138,9 @@ Para saber mais, confira [componentes de estilo](../customize-components/style.m
 
 | Evento | Descrição |
 | ----- | ----------- |
-| itemClick | Disparado quando o usuário clica em um arquivo. Retorna os detalhes do arquivo. |
+| `itemClick` | Disparado quando o usuário clica em um arquivo. Retorna os detalhes do arquivo. |
+
+Para obter mais informações sobre como lidar com eventos, consulte [eventos](../customize-components/events.md).
 
 ## <a name="templates"></a>Modelos
 

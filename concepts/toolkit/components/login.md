@@ -3,12 +3,12 @@ title: Componente de logon no microsoft Graph Toolkit
 description: Um componente de Logon é um botão e um controle de sobrevoo para facilitar plataforma de identidade da Microsoft autenticação.
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: ea7df01c77900eecc415b3670db0ea2736447d8c
-ms.sourcegitcommit: 3f40fbb953b14c1f52341786569c678adfc5bd3e
+ms.openlocfilehash: 1042201492720dce92016a13bd7bbd8477ce2d2c
+ms.sourcegitcommit: 9ac6bbab3df22e7629cf2bde796b527337c680aa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52781076"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53082150"
 ---
 # <a name="login-component-in-the-microsoft-graph-toolkit"></a>Componente de logon no microsoft Graph Toolkit
 
@@ -22,7 +22,7 @@ O exemplo a seguir mostra `mgt-login` o componente com um usuário internado.
 
 <iframe src="https://mgt.dev/iframe.html?id=components-mgt-login--login&source=docs" height="350"></iframe>
 
-[Abra este exemplo em mgt.dev](https://mgt.dev/?path=/story/components-mgt-login--login&source=docs)
+[Abrir este exemplo no mgt.dev](https://mgt.dev/?path=/story/components-mgt-login--login&source=docs)
 
 ## <a name="using-the-control-without-an-authentication-provider"></a>Usando o controle sem um provedor de autenticação
 
@@ -82,6 +82,8 @@ Os eventos a seguir são disparados do controle.
 | `loginFailed` | O usuário cancelou o processo de logon ou não pôde entrar.|
 | `logoutInitiated` | O usuário começou a fazer logout - cancelável. |
 | `logoutCompleted` | O usuário se alistou. |
+
+Para obter mais informações sobre como lidar com eventos, consulte [eventos](../customize-components/events.md).
 
 ## <a name="templates"></a>Modelos
 

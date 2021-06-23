@@ -3,12 +3,12 @@ title: Person-Card componente no microsoft Graph Toolkit
 description: Um Person-Card é um componente para exibir mais informações relacionadas a uma pessoa.
 localization_priority: Normal
 author: vogtn
-ms.openlocfilehash: 8497dbb3b3d9a3173cdbf8ee8ec6bfe74859868b
-ms.sourcegitcommit: 3f40fbb953b14c1f52341786569c678adfc5bd3e
+ms.openlocfilehash: 23f26927935af3f3123e4f812853475cb8a0a9dc
+ms.sourcegitcommit: 9ac6bbab3df22e7629cf2bde796b527337c680aa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52780698"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53082038"
 ---
 # <a name="person-card-component-in-the-microsoft-graph-toolkit"></a>Person-Card componente no microsoft Graph Toolkit
 
@@ -22,7 +22,7 @@ O exemplo a seguir mostra o uso do `mgt-person-card` componente com um `mgt-pers
   
 <iframe src="https://mgt.dev/iframe.html?id=components-mgt-person-card--person-card&source=docs" height="400"></iframe>
 
-[Abra este exemplo em mgt.dev](https://mgt.dev/?path=/story/components-mgt-person-card--person-card&source=docs)
+[Abrir este exemplo no mgt.dev](https://mgt.dev/?path=/story/components-mgt-person-card--person-card&source=docs)
 
 
 ## <a name="global-component-configuration"></a>Configuração de componente global
@@ -92,10 +92,10 @@ Por padrão, `mgt-person` o componente passará os detalhes da pessoa para o `mg
 | Atributo         | Tipo                     | Descrição                                                                           |
 | ---------------- | -------------------------------- | ------------------------------------------------------------------------------------- |
 | person-details | MicrosoftGraph.User <br> MicrosoftGraph.Person <br> MicrosoftGraph.Contact | Objeto Person conforme definido pelo Microsoft Graph, contendo detalhes relacionados ao usuário. |
-| person-image   | cadeia de caracteres                    | Uri de imagem relacionado à pessoa exibida no cartão.                                   |
+| person-image   | string                    | Uri de imagem relacionado à pessoa exibida no cartão.                                   |
 | inherit-details   | Nenhum.                  | Permite que o cartão de pessoa ande na árvore pai para `mgt-person` que o componente use os mesmos e os `person-details` `person-image` dados.                      |
-| user-id | cadeia de caracteres | Permite que os desenvolvedores fornecem a ID do usuário para recuperar dados mostrados no componente person-card |
-| person-query | cadeia de caracteres | Permite que os desenvolvedores fornecem consulta de pessoa para recuperar dados mostrados no componente person-card |
+| user-id | string | Permite que os desenvolvedores fornecem a ID do usuário para recuperar dados mostrados no componente person-card |
+| person-query | string | Permite que os desenvolvedores fornecem consulta de pessoa para recuperar dados mostrados no componente person-card |
 
 
 ## <a name="templates"></a>Modelos
@@ -136,6 +136,8 @@ Os eventos a seguir são disparados do componente.
 | Evento | Descrição |
 | --- | --- |
 | `expanded` | O usuário abriu a seção detalhes expandidos do cartão. |
+
+Para obter mais informações sobre como lidar com eventos, consulte [eventos](../customize-components/events.md).
 
 ## <a name="css-custom-properties"></a>Propriedades personalizadas CSS
 

@@ -3,12 +3,12 @@ title: Componente agenda no microsoft Graph Toolkit
 description: O componente web mgt-agenda é usado para representar eventos em um calendário de usuário ou grupo.
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: 7de172c514aea12e0f57541649b6e98ca1ded2df
-ms.sourcegitcommit: 3f40fbb953b14c1f52341786569c678adfc5bd3e
+ms.openlocfilehash: 394f5dee6c8bf6f81b68d3b0b8c8cb1d73ef06ef
+ms.sourcegitcommit: 9ac6bbab3df22e7629cf2bde796b527337c680aa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52781097"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53082332"
 ---
 # <a name="agenda-component-in-the-microsoft-graph-toolkit"></a>Componente agenda no microsoft Graph Toolkit
 
@@ -20,7 +20,7 @@ O exemplo a seguir mostra os eventos de calendário do usuário assinado exibido
 
 <iframe src="https://mgt.dev/iframe.html?id=components-mgt-agenda--simple&source=docs" height="500"></iframe>
 
-[Abra este exemplo em mgt.dev](https://mgt.dev/?path=/story/components-mgt-agenda--simple&source=docs)
+[Abrir este exemplo no mgt.dev](https://mgt.dev/?path=/story/components-mgt-agenda--simple&source=docs)
 
 ## <a name="properties"></a>Propriedades
 
@@ -131,7 +131,9 @@ Os eventos a seguir são disparados do controle.
 
 | Evento | Descrição |
 | --- | --- |
-| eventClick | O usuário clica ou toca em um evento.|
+| `eventClick` | O usuário clica ou toca em um evento.|
+
+Para obter mais informações sobre como lidar com eventos, consulte [eventos](../customize-components/events.md).
 
 ## <a name="microsoft-graph-permissions"></a>Permissões do Microsoft Graph
 

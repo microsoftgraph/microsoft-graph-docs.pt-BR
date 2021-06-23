@@ -5,12 +5,12 @@ author: AshleyYangSZ
 localization_priority: Normal
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 86671d0fce531445ac32a370d2e69ba813cc4e22
-ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
+ms.openlocfilehash: 46d9877b8a17056aee84f1216c4f38227bdc097c
+ms.sourcegitcommit: 9ac6bbab3df22e7629cf2bde796b527337c680aa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52546823"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53082192"
 ---
 # <a name="cloudpcprovisioningpolicy-assign"></a>cloudPcProvisioningPolicy: assign
 
@@ -54,12 +54,9 @@ POST /deviceManagement/virtualEndpoint/provisioningPolicies/{id}/assign
 
 No corpo da solicitação, fornece uma representação JSON do [objeto cloudPcProvisioningPolicyAssignment.](../resources/cloudpcprovisioningpolicyassignment.md)
 
-A tabela a seguir mostra as propriedades que são necessárias ao criar [o cloudPcProvisioningPolicyAssignment](../resources/cloudpcprovisioningpolicyassignment.md).
-
-|Propriedade|Tipo|Descrição|
+|Parâmetro|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|A ID da atribuição de política de provisionamento. Se destino for um grupo de usuários, a ID será mostrada como {policyId}_{groupId}. |
-|destino|[cloudPcManagementAssignmentTarget](../resources/cloudpcmanagementassignmenttarget.md)|O destino da atribuição da política de provisionamento. Atualmente, o único destino com suporte é um grupo de usuários.|
+|assignments|[coleção cloudPcProvisioningPolicyAssignment](../resources/cloudpcprovisioningpolicyassignment.md) | A coleção de recursos de política de provisionamento de computadores na nuvem a serem atribuídos ao grupo de destino correspondente. Atualmente, Microsoft 365 grupos de segurança e grupos de segurança no Azure AD são suportados. |
 
 ## <a name="response"></a>Resposta
 
@@ -108,7 +105,6 @@ Content-Type: application/json
 
 ### <a name="response"></a>Resposta
 
-**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true

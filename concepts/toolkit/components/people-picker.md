@@ -3,12 +3,12 @@ title: People-Picker componente
 description: Você pode usar o componente web mgt-people-picker para pesquisar um número especificado de pessoas e renderizar a lista de resultados por meio do Microsoft Graph.
 localization_priority: Normal
 author: elisenyang
-ms.openlocfilehash: 36a8208b2425bc74922427f7ffcb4c6ec3a10788
-ms.sourcegitcommit: 3f40fbb953b14c1f52341786569c678adfc5bd3e
+ms.openlocfilehash: f8899a4bfdf86d07bb5efa19c269b0907ceae319
+ms.sourcegitcommit: 9ac6bbab3df22e7629cf2bde796b527337c680aa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52780740"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53082325"
 ---
 # <a name="people-picker-component-in-the-microsoft-graph-toolkit"></a>People-Picker componente no microsoft Graph Toolkit
 
@@ -20,7 +20,7 @@ O exemplo a seguir mostra o `mgt-people-picker` componente. Comece a procurar um
 
 <iframe src="https://mgt.dev/iframe.html?id=components-mgt-people-picker--people-picker&source=docs" height="450"></iframe>
 
-[Abra este exemplo em mgt.dev](https://mgt.dev/?path=/story/components-mgt-people-picker--people-picker&source=docs)
+[Abrir este exemplo no mgt.dev](https://mgt.dev/?path=/story/components-mgt-people-picker--people-picker&source=docs)
 
 ## <a name="properties"></a>Propriedades
 
@@ -81,6 +81,8 @@ Os eventos a seguir são disparados do componente.
 | --- | --- |
 | `selectionChanged` | O usuário adicionou ou removeu uma pessoa da lista de pessoas selecionadas/selecionadas.|
 
+Para obter mais informações sobre como lidar com eventos, consulte [eventos](../customize-components/events.md).
+
 ## <a name="css-custom-properties"></a>Propriedades personalizadas CSS
 
 O `mgt-people-picker` componente define as seguintes propriedades personalizadas CSS.
@@ -121,7 +123,7 @@ mgt-people-picker {
 | erro | null: sem dados | O modelo usado se a pesquisa do usuário não retornar usuários. |
 | no-data | null: sem dados | Um modelo alternativo usado se a pesquisa do usuário não retornar usuários. |
 | selected-person | pessoa: o objeto de detalhes da pessoa | O modelo para renderizar as pessoas selecionadas. |
-| person | pessoa: o objeto de detalhes da pessoa | O modelo para renderizar pessoas no menu suspenso. |
+| pessoa | pessoa: o objeto de detalhes da pessoa | O modelo para renderizar pessoas no menu suspenso. |
 
 Os exemplos a seguir mostram como usar o `error` modelo.
 

@@ -5,12 +5,12 @@ author: AshleyYangSZ
 localization_priority: Normal
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 987ecf4ee31b2ade7baf08246542b13d14a3a6da
-ms.sourcegitcommit: 979fe005c74eb99cd971df6b9511b2d3f7fe3cd4
+ms.openlocfilehash: 66da3f668cc25807ece4a63e51dabe3f5436cf7d
+ms.sourcegitcommit: 9ac6bbab3df22e7629cf2bde796b527337c680aa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52993629"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53082087"
 ---
 # <a name="cloudpcusersetting-assign"></a>cloudPcUserSetting: assign
 
@@ -22,13 +22,13 @@ Atribua [um cloudPcUserSetting a](../resources/cloudpcusersetting.md) grupos de 
 
 [!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|CloudPC.ReadWrite.All|
+|Delegado (conta corporativa ou de estudante)|CloudPC.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|CloudPC.ReadWrite.All|
 
@@ -54,11 +54,9 @@ POST /deviceManagement/virtualEndpoint/userSettings/{id}/assign
 
 No corpo da solicitação, fornece uma representação JSON do [objeto cloudPcUserSettingAssignment.](../resources/cloudpcusersettingassignment.md)
 
-A tabela a seguir mostra as propriedades que são necessárias ao criar [o cloudPcUserSettingAssignment](../resources/cloudpcusersettingassignment.md).
-
-|Propriedade|Tipo|Descrição|
+|Parâmetro|Tipo|Descrição|
 |:---|:---|:---|
-|destino|[cloudPcManagementAssignmentTarget](../resources/cloudpcmanagementassignmenttarget.md)|O destino da atribuição da política de provisionamento. Atualmente, o único destino com suporte é um grupo de usuários.|
+|assignments|[coleção cloudPcUserSettingAssignment](../resources/cloudpcusersettingassignment.md) | A coleção de recursos de configuração do usuário do computador na nuvem a serem atribuídos ao grupo de destino correspondente. Atualmente, Microsoft 365 grupos de segurança e grupos de segurança no Azure AD são suportados. |
 
 ## <a name="response"></a>Resposta
 

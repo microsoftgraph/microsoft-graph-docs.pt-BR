@@ -4,12 +4,12 @@ description: O Microsoft Graph é o gateway para dados e inteligência no Micros
 author: angelgolfer-ms
 localization_priority: Priority
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 669b45d3074b77f7b9a916564235b6f9d35850a9
-ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
+ms.openlocfilehash: abdb8320086a5ddf7d82d8ed42346779c5af35c0
+ms.sourcegitcommit: 9ac6bbab3df22e7629cf2bde796b527337c680aa
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "52666188"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53082367"
 ---
 # <a name="overview-of-microsoft-graph"></a>Visão Geral do Microsoft Graph
 
@@ -131,7 +131,7 @@ Microsoft Graph Data Connect fornece uma nova maneira de interagir com os dados 
 
 ## <a name="next-steps"></a>Próximas etapas
 
-- Confira alguns [cenários em destaque](https://developer.microsoft.com/graph/examples).
+- Confira algumas [soluções de parceiros](https://developer.microsoft.com/graph/partners).
 - Experimente um exemplo de solicitação no [Explorador do Graph](https://developer.microsoft.com/graph/graph-explorer).
 - Use o [início rápido](https://developer.microsoft.com/graph/quick-start) para configurar um aplicativo de exemplo pronto para funcionar.
 - Consulte o item **Saiba mais** no índice para ler sobre os serviços e recursos que você pode usar em seus cenários.

@@ -3,12 +3,12 @@ title: Obter componente no Microsoft Graph Toolkit
 description: Um componente Get permite que você faça qualquer consulta GET da Microsoft Graph diretamente em seu HTML.
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: 55fc5da7697523fbb08c69a2a995170be5b35a21
-ms.sourcegitcommit: 3f40fbb953b14c1f52341786569c678adfc5bd3e
+ms.openlocfilehash: fefbbf9eb944494923a25f5d2a9699b03e5c9919
+ms.sourcegitcommit: 9ac6bbab3df22e7629cf2bde796b527337c680aa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52781083"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53082311"
 ---
 # <a name="get-component-in-the-microsoft-graph-toolkit"></a>Obter componente no Microsoft Graph Toolkit
 
@@ -20,7 +20,7 @@ O exemplo a seguir mostra o uso do `mgt-get` componente para exibir emails de um
 
 <iframe src="https://mgt.dev/iframe.html?id=components-mgt-get--get-email&source=docs" height="500"></iframe>
 
-[Abra este exemplo em mgt.dev](https://mgt.dev/?path=/story/components-mgt-get--get-email&source=docs)
+[Abrir este exemplo no mgt.dev](https://mgt.dev/?path=/story/components-mgt-get--get-email&source=docs)
 
 ## <a name="properties-and-attributes"></a>Propriedades e atributos
 
@@ -40,15 +40,18 @@ Você pode usar vários atributos para alterar o comportamento do componente. O 
 | N/A |erro| Erro somente leitura da Microsoft Graph se a solicitação não tiver sido bem-sucedida. |
 
 ## <a name="methods"></a>Métodos
+
 | Método | Descrição |
 | --- | --- |
 | refresh(force?:boolean) | Chame o método para atualizar os dados. Por padrão, a interface do usuário só será atualizada se os dados mudarem. Passe `true` para forçar o componente a atualizar.  |
 
-
 ## <a name="events"></a>Eventos
-| Evento | Detalhe | Descrição |
+
+| Event | Detalhe | Descrição |
 | --- | --- | --- |
-| dataChange | O detalhe contém `response` os objetos `error` e. | Acionado quando a resposta ou o erro mudam. |
+| `dataChange` | O detalhe contém `response` os objetos `error` e. | Acionado quando a resposta ou o erro mudam. |
+
+Para obter mais informações sobre como lidar com eventos, consulte [eventos](../customize-components/events.md).
 
 ## <a name="templates"></a>Modelos
 

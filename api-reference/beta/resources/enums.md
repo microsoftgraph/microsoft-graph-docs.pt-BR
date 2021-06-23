@@ -5,16 +5,39 @@ doc_type: enumPageType
 localization_priority: Normal
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
-ms.openlocfilehash: a26fba741bfe080ac5779c7c39c49b47a9427211
-ms.sourcegitcommit: 456ec9510807d05623c0ed1dd049c9676f53f56b
+ms.openlocfilehash: 445569bf34eb2d826660fdd1b88143b04213836e
+ms.sourcegitcommit: 9ac6bbab3df22e7629cf2bde796b527337c680aa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53060504"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53082276"
 ---
 # <a name="enum-values"></a>Valores denum
 
 Namespace: microsoft.graph
+
+### <a name="filtermode-values"></a>filterMode values
+
+|Member|
+|:---|
+|include|
+|exclude|
+
+### <a name="lifecycleeventtype-values"></a>valores lifecycleEventType
+
+|Member|
+|:---|
+|missed|
+|subscriptionRemoved|
+|reautorizaçãoRequired|
+
+### <a name="changetype-values"></a>valores changeType
+
+|Member|
+|:---|
+|criado|
+|updated|
+|deleted|
 
 ### <a name="countrylookupmethodtype-values"></a>valores countryLookupMethodType
 
@@ -2268,3 +2291,4 @@ Valores possíveis para tipos de conta de usuário (associação ao grupo), por 
 |Membro| Valor | Descrição               |
 |:---|:---- | :------------------------ |
 |standard| 0     |Tipo padrão para uma marca. Marcas de padrão de tipo podem ser gerenciadas na equipe por membros que têm permissões.|
+
