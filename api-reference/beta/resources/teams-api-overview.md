@@ -5,12 +5,12 @@ localization_priority: Priority
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: conceptualPageType
-ms.openlocfilehash: adaf070c491810ad2467985a3a50509b3b9f82c3
-ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
+ms.openlocfilehash: 8eac2d77ffa5fa0f3be9a57e86fd4f490d66e583
+ms.sourcegitcommit: 456ec9510807d05623c0ed1dd049c9676f53f56b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52547594"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53059530"
 ---
 # <a name="use-the-microsoft-graph-api-to-work-with-microsoft-teams"></a>Usar o Microsoft Graph API para trabalhar com o Microsoft Teams
 
@@ -33,10 +33,11 @@ O Microsoft Teams é um espaço de trabalho baseado em chat no Microsoft 365 que
 |[chamada](../resources/call.md)| [Responder](../api/call-answer.md), [rejeitar](../api/call-reject.md), [redirecionar](../api/call-redirect.md), [silenciar](../api/call-mute.md), [não silenciar](../api/call-unmute.md), [alterar função de compartilhamento de tela](../api/call-changescreensharingrole.md), [lista de participantes](../api/call-list-participants.md), [convidar participantes](../api/participant-invite.md), [silenciar todos os participantes](../api/participant-muteall.md) |
 |[cronograma](../resources/schedule.md)| [Criar ou substituir](../api/team-put-schedule.md), [obter](../api/schedule-get.md), [compartilhar](../api/schedule-share.md) |
 |[schedulingGroup](../resources/schedulinggroup.md)| [Criar](../api/schedule-post-schedulinggroups.md), [Listar](../api/schedule-list-schedulinggroups.md), [Obter](../api/schedulinggroup-get.md), [Substituir](../api/schedulinggroup-put.md), [Excluir](../api/schedulinggroup-delete.md) |
-|activityFeedNotification| [Enviar notificação ao usuário no escopo de um chat](../api/chat-sendactivitynotification.md), [Enviar notificação ao usuário no escopo de uma equipe](../api/team-sendactivitynotification.md), [Enviar notificação ao usuário no escopo pessoal ](../api/userteamwork-sendactivitynotification.md)|
 |[shift](../resources/shift.md)| [Criar](../api/schedule-post-shifts.md), [Listar](../api/schedule-list-shifts.md), [Obter](../api/shift-get.md), [Substituir](../api/shift-put.md), [Excluir](../api/shift-delete.md) |
 |[timeOff](../resources/timeoff.md)| [Criar](../api/schedule-post-timesoff.md), [Listar](../api/schedule-list-timesoff.md), [Obter](../api/timeoff-get.md), [Substituir](../api/timeoff-put.md), [Excluir](../api/timeoff-delete.md) |
 |[timeOffReason](../resources/timeoffreason.md)| [Criar](../api/schedule-post-timeoffreasons.md), [Listar](../api/schedule-list-timeoffreasons.md), [Obter](../api/timeoffreason-get.md), [Substituir](../api/timeoffreason-put.md), [Excluir](../api/timeoffreason-delete.md) |
+|[marcar](../resources/teamworkTag.md)|[Listar](../api/teamworkTag-list.md), [Criar](../api/teamworkTag-post.md), [Obter](../api/teamworkTag-get.md), [Atualizar](../api/teamworkTag-update.md), [Excluir](../api/teamworkTag-delete.md)|
+|[tagMember](../resources/teamworkTagMember.md)|[Listar](../api/teamworkTagMember-list.md), [Obter](../api/teamworkTagMember-get.md), [Excluir](../api/teamworkTagMember-delete.md)|
 
 ## <a name="microsoft-teams-limits"></a>Limites do Microsoft Teams
 

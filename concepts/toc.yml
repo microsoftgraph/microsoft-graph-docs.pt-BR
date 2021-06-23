@@ -428,8 +428,13 @@ items:
             href: teams-licenses.md
           - name: Enviar mensagens proativas com um bot
             href: /microsoftteams/platform/graph-api/proactive-bots-and-messages/graph-proactive-bots-and-messages?context=graph/context
-          - name: Enviar notificações de feed de atividades
+          - name: Notificações de feed de atividades
             href: teams-send-activityfeednotifications.md
+            items:
+              - name: Enviar notificações de feed de atividades
+                href: teams-send-activityfeednotifications.md
+              - name: Práticas recomendadas
+                href: activity-feed-notifications-best-practices.md
       - name: Tarefas pendentes
         href: todo-concept-overview.md
         displayName: Microsoft To Do
@@ -701,6 +706,8 @@ items:
                 href: toolkit/customize-components/style.md
               - name: Componentes de modelagem
                 href: toolkit/customize-components/templates.md
+              - name: Manipulando eventos
+                href: toolkit/customize-components/events.md
               - name: Cache de chamadas do Microsoft Graph em componentes
                 href: toolkit/customize-components/cache.md
               - name: Localizando componentes

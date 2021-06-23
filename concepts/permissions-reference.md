@@ -4,12 +4,12 @@ description: O Microsoft Graph expõe as permissões granulares que controlam o 
 author: jackson-woods
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 4b0dda9e32a80e1a34d29974705ebc6444562532
-ms.sourcegitcommit: 39a8c6eccc07ead237dac17387cd269733a86abd
+ms.openlocfilehash: 653fe685f1e5ad871f8b01a932cfb00adc4f3592
+ms.sourcegitcommit: 456ec9510807d05623c0ed1dd049c9676f53f56b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53025044"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53059999"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Referência de permissões do Microsoft Graph
 
@@ -527,6 +527,8 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 > **Observação:** para mensagens em um canal, consulte [permissões ChannelMessage](#channel-message-permissions).
 
 ## <a name="chat-resource-specific-consent-permissions"></a>Permissões de consentimento específicas do recurso de chat
+
+#### <a name="application-permissions"></a>Permissões de aplicativos
 
 | Permissão                     | Exibir Cadeia de Caracteres                                                | Descrição  | Consentimento Obrigatório do Administrador | Suporte da conta da Microsoft |
 |:-------------------------------|:--------------------------------------------------------------|:-------------|:-----------------------|:----------------------------|
@@ -1997,6 +1999,8 @@ As permissões de taxonomia só são válidas para contas do trabalho ou da esco
 
 ## <a name="team-resource-specific-consent-permissions"></a>Permissões de consentimento específicas de recursos da equipe
 
+#### <a name="application-permissions"></a>Permissões de aplicativos
+
 | Permissão | Exibir Cadeia de Caracteres | Descrição | Consentimento Obrigatório do Administrador | Suporte da conta da Microsoft |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
 | _TeamSettings.Read.Group_ | Leia as configurações dessa equipe. | Ler as configurações dessa equipe, sem um usuário conectado. |Não | Não |
@@ -2051,6 +2055,15 @@ As permissões de taxonomia só são válidas para contas do trabalho ou da esco
 | _TeamsTab.Read.All_ | Lê guias no Microsoft Teams. | Lê os nomes e as configurações de guias dentro de qualquer equipe do Microsoft Teams, sem um usuário conectado. Isso não dá acesso ao conteúdo nas guias. | Sim | Não |
 | _TeamsTab.ReadWrite.All_ | Lê e grava guias no Microsoft Teams. | Lê e escreve as guias em qualquer equipe do Microsoft Teams, sem um usuário conectado. Isso não dá acesso ao conteúdo nas guias. | Sim | Não |
 | _TeamsTab.Create_ | Cria guias no Microsoft Teams. | Permite que o aplicativo crie guias em qualquer equipe do Microsoft Teams, sem um usuário conectado. Isso não concede a capacidade de ler, modificar ou excluir guias depois de criá-las ou conceder acesso ao conteúdo nas guias. | Sim | Não |
+
+## <a name="teams-tag-permissions"></a>Permissões de rótulos do Teams
+
+#### <a name="delegated-permissions"></a>Permissões delegadas
+
+|   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador | Suporte da conta da Microsoft |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _TeamworkTag.ReadWrite_| Lê e grava rótulos no Microsoft Teams. | Lê e escreve os rótulos em qualquer equipe do Microsoft Teams, sem um usuário conectado.  | Sim | Não |
+| _TeamworkTag.Read_ | Lê rótulos no Microsoft Teams. | Lê os rótulos em qualquer equipe do Microsoft Teams, sem um usuário conectado. | Sim | Não |
 
 ## <a name="terms-of-use-permissions"></a>Permissões de termos de uso
 
