@@ -479,7 +479,7 @@ items:
                 href: api/chat-get.md
               - name: Listar chats para usuário
                 href: api/chat-list.md
-          - name: Tarefas To do
+          - name: Tarefas pendentes
             items:
               - name: Tarefa
                 href: resources/todotask.md
@@ -13132,7 +13132,7 @@ items:
                 href: api/list-create.md
               - name: Listar subsites
                 href: api/site-list-subsites.md
-              - name: Permissões
+              - name: Permissions
                 items:
                   - name: Permissão
                     href: resources/permission.md
@@ -13611,7 +13611,26 @@ items:
                 href: api/chatmessage-list-hostedcontents.md
               - name: Obter conteúdo hospedado
                 href: api/chatmessagehostedcontent-get.md
-          - name: App
+          - name: Tags
+            href: resources/teamworktag.md
+            items:
+              - name: Listar
+                href: api/teamworktag-list.md
+              - name: Criar
+                href: api/teamworktag-post.md
+              - name: Obter
+                href: api/teamworktag-get.md
+              - name: Atualizar
+                href: api/teamworktag-update.md
+              - name: Excluir
+                href: api/teamworktag-delete.md
+              - name: Listar membros
+                href: api/teamworktagmember-list.md
+              - name: Obter membro
+                href: api/teamworktagmember-get.md
+              - name: Excluir membro
+                href: api/teamworktagmember-delete.md
+          - name: Aplicativo
             items:
               - name: Aplicativo no catálogo
                 href: resources/teamsapp.md
@@ -13922,7 +13941,7 @@ items:
                 href: api/onenote-post-notebooks.md
           - name: Concessões de permissão específicas de recursos
             href: resources/resourcespecificpermissiongrant.md
-      - name: Tarefas To do
+      - name: Tarefas pendentes
         displayName: Microsoft To Do
         items:
           - name: Visão Geral

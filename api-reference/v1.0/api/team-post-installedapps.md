@@ -1,32 +1,32 @@
 ---
 title: Adicionar aplicativo à equipe
-description: Instala um aplicativo para a equipe especificada.
-author: clearab
+description: Instala um aplicativo à equipe especificada.
+author: akjo
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 19aa219296109199e0603856605b90758253698a
-ms.sourcegitcommit: 75428fc7535662f34e965c6b69fef3a53fdaf1cb
+ms.openlocfilehash: 2131639eaf6b5ecda41b764a17049c4b61347d1e
+ms.sourcegitcommit: 456ec9510807d05623c0ed1dd049c9676f53f56b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49691002"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53059382"
 ---
 # <a name="add-app-to-team"></a>Adicionar aplicativo à equipe
 
 Namespace: microsoft.graph
 
-Instalar um [aplicativo](../resources/teamsapp.md) para a [equipe](../resources/team.md)especificada.
+Instale um [aplicativo](../resources/teamsapp.md) na equipe [especificada.](../resources/team.md)
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | TeamsAppInstallation. ReadWriteForTeam, Group. ReadWrite. All, Directory. ReadWrite. All |
+|Delegado (conta corporativa ou de estudante) | TeamsAppInstallation.ReadWriteForTeam, Group.ReadWrite.All, Directory.ReadWrite.All |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Application | TeamsAppInstallation. ReadWriteForTeam. All, Group. ReadWrite. All, Directory. ReadWrite. All |
+|Aplicativo | TeamsAppInstallation.ReadWriteForTeam.All, Group.ReadWrite.All, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -44,7 +44,7 @@ POST /teams/{team-id}/installedApps
 
 | Propriedade   | Tipo |Descrição|
 |:---------------|:--------|:----------|
-|teamsApp|Cadeia de Caracteres|A ID do aplicativo a ser adicionado.|
+|teamsApp|String|A id do aplicativo a ser acrescentado.|
 
 ## <a name="response"></a>Resposta
 

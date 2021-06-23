@@ -1,31 +1,31 @@
 ---
 title: Remover membro do canal
-description: Remover um membro de um canal.
-author: laujan
+description: Remova um membro de um canal.
+author: akjo
 doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: cf365822b97857eb236e19a783e32cc55c249ac2
-ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
+ms.openlocfilehash: ae46702936fb82ac00c0744927c1d5b0b2ccc6dd
+ms.sourcegitcommit: 456ec9510807d05623c0ed1dd049c9676f53f56b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49521170"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53060033"
 ---
 # <a name="remove-member-from-channel"></a>Remover membro do canal
 
 Namespace: microsoft.graph
  
-Excluir um [conversationMember](../resources/conversationmember.md) de um [canal](../resources/channel.md). Essa operação só é permitida para canais com um valor de **membershiptype** de `private` .
+Excluir uma [conversaMember](../resources/conversationmember.md) de um [canal](../resources/channel.md). Essa operação só é permitida para canais com **um valor membershipType** de `private` .
 
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |---------|-------------|
-|Delegada (conta corporativa ou de estudante)| ChannelMember.ReadWrite.All |
+|Delegado (conta corporativa ou de estudante)| ChannelMember.ReadWrite.All |
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo| ChannelMember.ReadWrite.All |
 

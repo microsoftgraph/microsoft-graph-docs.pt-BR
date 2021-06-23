@@ -1,16 +1,16 @@
 ---
 title: Lista de aplicativos instalados para o usuário
 description: Recupere a lista de aplicativos instalados no escopo pessoal do usuário especificado.
-author: clearab
+author: akjo
 doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: d10db58754c8ccbd94d6756cc16c31b437da1c5b
-ms.sourcegitcommit: a9a035e7cf7b500aebe5477c05361552e7c3a7ab
+ms.openlocfilehash: a67f54a3655a36cc16d91f83216c48cd6e1de3ed
+ms.sourcegitcommit: 456ec9510807d05623c0ed1dd049c9676f53f56b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "52696167"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53060340"
 ---
 # <a name="list-apps-installed-for-user"></a>Lista de aplicativos instalados para o usuário
 

@@ -1,18 +1,18 @@
 ---
-title: 'teamsAppInstallation: upgrade'
+title: 'teamsAppInstallation no escopo pessoal: atualização'
 description: Atualizar uma instalação de aplicativo no escopo pessoal de um usuário
-author: clearab
+author: akjo
 doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 1d209f807b977300876000d66f211cb3ed0236f9
-ms.sourcegitcommit: a9a035e7cf7b500aebe5477c05361552e7c3a7ab
+ms.openlocfilehash: 7dc29124b00f4c72ff00c00a72069b39c5a65e2a
+ms.sourcegitcommit: 456ec9510807d05623c0ed1dd049c9676f53f56b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "52696146"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53060542"
 ---
-# <a name="teamsappinstallation-upgrade"></a>teamsAppInstallation: upgrade
+# <a name="teamsappinstallation-in-personal-scope-upgrade"></a>teamsAppInstallation no escopo pessoal: atualização
 
 Namespace: microsoft.graph
 

@@ -1,16 +1,16 @@
 ---
 title: Adicionar conversationMember
 description: Adicionar conversationMember a um canal.
-author: laujan
+author: akjo
 doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 1441ee9698720cc5d5041e7fd3df7c661574077f
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: ad99b8906a5ad71b7fa77b1d19bf32e5b01757a0
+ms.sourcegitcommit: 456ec9510807d05623c0ed1dd049c9676f53f56b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52053241"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53060614"
 ---
 # <a name="add-conversationmember"></a>Adicionar conversationMember
 
@@ -47,7 +47,7 @@ Inclua as propriedades a seguir no corpo da solicitação.
 | Propriedade   | Tipo |Descrição|
 |:---------------|:--------|:----------|
 |funções|coleção de cadeias de caracteres|As funções desse usuário.|
-|user|[user](../resources/user.md)|O usuário a ser acrescentado ao canal.|
+|usuário|[user](../resources/user.md)|O usuário a ser acrescentado ao canal.|
 
 ## <a name="response"></a>Resposta
 

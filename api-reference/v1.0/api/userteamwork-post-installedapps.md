@@ -1,16 +1,16 @@
 ---
 title: Instalar o aplicativo para o usuário
 description: Instale um aplicativo no escopo pessoal do usuário especificado.
-author: clearab
+author: akjo
 doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 69994c99fa34b54d5c927dcfa3c3097694f2cc19
-ms.sourcegitcommit: a9a035e7cf7b500aebe5477c05361552e7c3a7ab
+ms.openlocfilehash: a6e28eff164653cd0a59621418e5a42ac99f16bb
+ms.sourcegitcommit: 456ec9510807d05623c0ed1dd049c9676f53f56b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "52696153"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53060548"
 ---
 # <a name="install-app-for-user"></a>Instalar o aplicativo para o usuário
 
@@ -47,7 +47,7 @@ O corpo da solicitação deve conter a ID do aplicativo de catálogo existente a
 
 | Propriedade   | Tipo |Descrição|
 |:---------------|:--------|:----------|
-|teamsApp|Cadeia de caracteres|A ID do aplicativo a ser acrescentado.|
+|teamsApp|String|A ID do aplicativo a ser acrescentado.|
 
 ## <a name="response"></a>Resposta
 

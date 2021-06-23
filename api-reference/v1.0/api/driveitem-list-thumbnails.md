@@ -6,12 +6,12 @@ localization_priority: Normal
 ms.prod: sharepoint
 description: Recupere uma coleção de recursos ThumbnailSet para um recurso DriveItem.
 doc_type: apiPageType
-ms.openlocfilehash: 9746221fe0aed4b606019250bd63f65d3972ebc3
-ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
+ms.openlocfilehash: 63ee68ade1a314a34cbb5ee778e5eccaec413a62
+ms.sourcegitcommit: 456ec9510807d05623c0ed1dd049c9676f53f56b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50293040"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53059370"
 ---
 # <a name="list-thumbnails-for-a-driveitem"></a>Listar miniaturas para um DriveItem
 
@@ -57,7 +57,7 @@ GET /users/{user-id}/drive/items/{item-id}/thumbnails
 
 Este método oferece suporte ao [Parâmetro de consulta OData](/graph/query-parameters) `$select` para personalizar a resposta.
 
-Além disso, esse método dá suporte à recuperação da miniatura com o valor EXIF de orientação original e sem a rotação aplicada, adicionando o parâmetro `originalOrientation=true` de consulta.
+Além disso, este método dá suporte à recuperação da miniatura com o valor de orientação original EXIF e sem a rotação aplicada, aplicando o parâmetro `originalOrientation=true` de consulta.
 No momento, só há suporte para isso no OneDrive pessoal.
 
 ## <a name="response"></a>Resposta
@@ -314,7 +314,7 @@ Por exemplo, se o seu aplicativo precisar de miniaturas de 300 x 400, é possív
 <!-- { "blockType": "request", "name": "get-thumbnail-custom-size", "scopes": "files.read", "tags": "service.graph" } -->
 
 ```msgraph-interactive
-GET /me/drive/items/{item-id}/thumbnails?select=c300x400_Crop
+GET /me/drive/items/{item-id}/thumbnails?select=c300x400_crop
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-thumbnail-custom-size-csharp-snippets.md)]
@@ -347,7 +347,7 @@ Content-Type: application/json
   "value": [
     {
       "id": "0",
-      "c300x400_Crop": { "height": 300, "width": 400, "url": "https://sn3302files.onedrive.com/123"},
+      "c300x400_crop": { "height": 300, "width": 400, "url": "https://sn3302files.onedrive.com/123"},
     }
   ]
 }
@@ -360,7 +360,7 @@ Você pode especificar as seguintes opções após o tamanho de miniatura solici
 | Identificador de miniatura | Resolução             | Taxa de proporção | Descrição                                                                                                                                         |
 |:---------------------|:-----------------------|:-------------|:----------------------------------------------------------------------------------------------------------------------------------------------------|
 | c300x400             | Limitado por uma caixa de 300 x 400 | Original     | Gere uma miniatura que se ajuste em uma caixa de 300 x 400 pixels, mantendo a taxa de proporção                                                                 |
-| c300x400_Crop        | 300x400                | Recortada      | Gere uma miniatura de 300 x 400 pixels. Para isso, é preciso redimensionar a imagem para caber na caixa de 300 x 400 e recortar o que ficar fora da caixa. |
+| c300x400_crop        | 300x400                | Recortada      | Gere uma miniatura de 300 x 400 pixels. Para isso, é preciso redimensionar a imagem para caber na caixa de 300 x 400 e recortar o que ficar fora da caixa. |
 
 **Observação:** talvez a miniatura retornada não corresponda exatamente às dimensões de pixel solicitadas, mas corresponderá com a taxa de proporção.
 Em alguns casos, uma miniatura maior do que a solicitada pode retornar, se a miniatura já existir, e pode ser facilmente dimensionada para coincidir com a resolução solicitada.
@@ -389,6 +389,6 @@ Confira mais informações sobre como os erros são retornados em [Respostas de 
   "section": "documentation",
   "suppressions": [
   ],
-  "tocPath": "Items/Thumbnails"
+  "tocPath&quot;: &quot;Items/Thumbnails"
 } -->
 

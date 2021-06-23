@@ -5,16 +5,31 @@ localization_priority: Normal
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
 doc_type: enumPageType
-ms.openlocfilehash: 1db4fbafde269d5e53799ec986ccd6c6631970ae
-ms.sourcegitcommit: f77c1385306fd40557aceb24fdfe4832cbb60a27
+ms.openlocfilehash: 0e16144337b2130925ce455f5bfba9127728a0fe
+ms.sourcegitcommit: 9ac6bbab3df22e7629cf2bde796b527337c680aa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/12/2021
-ms.locfileid: "52911610"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53082304"
 ---
 # <a name="enum-values"></a>Valores denum
 
 Namespace: microsoft.graph
+
+### <a name="lifecycleeventtype-values"></a>valores lifecycleEventType
+
+|Member|
+|:---|
+|missed|
+|subscriptionRemoved|
+|reautorizaçãoRequired|
+
+### <a name="changetype-values"></a>valores changeType
+
+|Member|
+|:---|
+|clientIpAddress|
+|authenticatorAppGps|
 
 ### <a name="consentrequestfilterbycurrentuseroptions-values"></a>valores consentRequestFilterByCurrentUserOptions 
 
@@ -340,7 +355,7 @@ Namespace: microsoft.graph
 
 |Member|
 |:---|
-|Nenhum|
+|Nenhuma|
 |SecurityGroup|
 |Todos|
 
@@ -751,7 +766,7 @@ Namespace: microsoft.graph
 | Automático
 | noPreview
 | checklist
-| descrição
+| description
 | referência
 
 
@@ -1404,7 +1419,7 @@ Valores possíveis para tipos de conta de usuário (associação ao grupo), por 
 
 | Member                |
 |:----------------------|
-| string                |
+| cadeia de caracteres                |
 | booliano               |
 | int64                 |
 | stringCollection      |

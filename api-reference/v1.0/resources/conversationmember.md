@@ -2,15 +2,15 @@
 title: tipo de recurso conversationMember
 description: Representa o usuário em uma conversa.
 localization_priority: Normal
-author: laujan
+author: akjo
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 14a70fcc6492ec143fa2f4e892438805d3526d60
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: c82f7e1ec927c73ad41771fc00e013dda1755a80
+ms.sourcegitcommit: 456ec9510807d05623c0ed1dd049c9676f53f56b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50777717"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53060304"
 ---
 # <a name="conversationmember-resource-type"></a>tipo de recurso conversationMember
 

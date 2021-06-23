@@ -1,22 +1,22 @@
 ---
 title: Excluir conversationMember
 description: Excluir conversationMember de um canal.
-author: laujan
+author: akjo
 doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 05dd3377e5a3161a38d9db1d56de7bba7ccf9af4
-ms.sourcegitcommit: d1e72c8d36aad78732133f9ecefaf66c433b8530
+ms.openlocfilehash: 2b0489387f4822296788c417536332c2fef387ad
+ms.sourcegitcommit: 456ec9510807d05623c0ed1dd049c9676f53f56b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48848322"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53060594"
 ---
 # <a name="delete-conversationmember"></a>Excluir conversationMember
 
 Namespace: microsoft.graph
 
-Excluir um [conversationMember](../resources/conversationmember.md) de um [canal](../resources/channel.md).
+Excluir uma [conversaMember](../resources/conversationmember.md) de um [canal](../resources/channel.md).
 
 
 ## <a name="permissions"></a>Permissões
@@ -25,7 +25,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |---------|-------------|
-|Delegada (conta corporativa ou de estudante)| ChannelMember.ReadWrite.All |
+|Delegado (conta corporativa ou de estudante)| ChannelMember.ReadWrite.All |
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo| ChannelMember.ReadWrite.All |
 
