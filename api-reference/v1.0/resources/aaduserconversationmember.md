@@ -2,15 +2,15 @@
 title: tipo de recurso aadUserConversationMember
 description: Representa um usuário do Azure Active Directory em um chat ou canal.
 localization_priority: Priority
-author: laujan
+author: akjo
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: aeb5dd5e21019b06f8757b37505d6e5e9f1a4354
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: 6632dad56f76b4747285eb1df9f69046b1de3cc1
+ms.sourcegitcommit: 456ec9510807d05623c0ed1dd049c9676f53f56b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50777388"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53060302"
 ---
 # <a name="aaduserconversationmember-resource-type"></a>tipo de recurso aadUserConversationMember
 
@@ -42,7 +42,7 @@ Esse tipo é herdado do [conversationMember](conversationmember.md).
 
 | Propriedade   | Tipo |Descrição|
 |:---------------|:--------|:----------|
-|id|String| Somente leitura. ID exclusivo do usuário.|
+|id|String| Somente leitura. ID exclusiva do usuário.|
 |displayName| cadeia de caracteres | O nome de exibição do usuário. |
 |funções| coleção de cadeias de caracteres | As funções desse usuário. |
 |userId| cadeia de caracteres | O guid do usuário. |
