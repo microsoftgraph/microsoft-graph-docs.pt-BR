@@ -5,12 +5,12 @@ author: jpettere
 localization_priority: Normal
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: ca939f59db77c8f9aab4d004f716ab2bd74623ee
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: f776bd5ac5dad802a8c977cbe32842e619c74434
+ms.sourcegitcommit: d586ddb253d27f9ccb621bd128f6a6b4b1933918
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52052555"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53107757"
 ---
 # <a name="update-settings"></a>Atualizar configurações
 
@@ -23,7 +23,7 @@ Atualize as propriedades do [objeto userSettings.](../resources/usersettings.md)
 
 ### <a name="batch-request"></a>Solicitação em lote
 
-Também é possível desativar vários usuários do Delve e desabilitar sua contribuição sobre a relevância do conteúdo para toda a organização por meio de uma solicitação em lotes.
+Também é possível excluir vários usuários do Delve por meio de uma solicitação em lotes.
 Para saber mais, consulte [JSON batching](/graph/json-batching).
 
 >**Importante:** somente membros do grupo de função [de gerenciamento](https://support.office.com/article/permissions-in-the-office-365-security-compliance-center-d10608af-7934-490a-818e-e68f17d0e9c1?ui=en-US&rs=en-US&ad=US) da organização podem atualizar vários usuários. 
@@ -65,7 +65,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|contributionToContentDiscoveryDisabled|Booliano|Definir como true desabilite o acesso de representante à API [de](../resources/insights-trending.md) Tendência e desabilite o acesso aos documentos Office Delve para o usuário. A configuração como true também afeta a relevância do conteúdo exibido no Microsoft 365 - por exemplo, sites sugeridos no SharePoint Home e o exibição Descobrir no OneDrive for Business mostram resultados menos relevantes. Essa configuração reflete o estado de controle [em Office Delve](https://support.office.com/en-us/article/are-my-documents-safe-in-office-delve-f5f409a2-37ed-4452-8f61-681e5e1836f3?ui=en-US&rs=en-US&ad=US#bkmk_optout).|
+|contributionToContentDiscoveryDisabled|Booliano|De definir como true para desabilitar o acesso a documentos Office Delve para o usuário. Essa configuração reflete o estado de controle [em Office Delve](https://support.office.com/en-us/article/are-my-documents-safe-in-office-delve-f5f409a2-37ed-4452-8f61-681e5e1836f3?ui=en-US&rs=en-US&ad=US#bkmk_optout).|
 
 ## <a name="example"></a>Exemplo 
 
@@ -85,7 +85,7 @@ Content-length: 37
 
 ##### <a name="response"></a>Resposta
 
-Veja a seguir um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser reduzido para facilitar a leitura.
 
 ```http
 HTTP/1.1 200 OK
