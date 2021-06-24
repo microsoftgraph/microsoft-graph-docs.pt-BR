@@ -1,16 +1,16 @@
 ---
 title: Personalizando a privacidade das informações do item no Microsoft Graph
-description: ''
+description: A visão geral da personalização de insights de itens no nível da organização
 author: simonhult
 localization_priority: Priority
 ms.prod: insights
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: fd636b36a6566b2612b6f87ff4fee6b1b8fcd91d
-ms.sourcegitcommit: 91d8454bfff853905e3a5e86623fcb06931507ed
+ms.openlocfilehash: 501e051fa63d2b68952a7c346f8c21dab34f5d8e
+ms.sourcegitcommit: d586ddb253d27f9ccb621bd128f6a6b4b1933918
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/03/2021
-ms.locfileid: "52732137"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53108842"
 ---
 # <a name="customizing-item-insights-privacy-in-microsoft-graph-preview"></a>Personalizando a privacidade das informações do item no Microsoft Graph (visualização)
 
@@ -26,6 +26,8 @@ Esses item de insights refletem apenas o conteúdo ao qual os usuários têm ace
 ## <a name="item-insights-privacy"></a>Privacidade de insights de item 
 
 As configurações de privacidade das informações do item oferecem a capacidade de configurar a visibilidade das informações derivadas do Microsoft Graph, entre usuários e outros itens (como documentos ou sites) no Microsoft 365. Você pode desabilitar o aplicativo Delve por meio dos controles pré-existentes, mas permitir que outras experiências baseadas em informações continuem fornecendo assistência.
+
+Este artigo descreve a personalização da privacidade dos insights de itens em uma organização. Para personalizar as percepções do item para um usuário, confira o recurso [userInsightsSettings](/graph/api/resources/userinsightssettings?view=graph-rest-beta&preserve-view=true). Essas configurações centradas no usuário são expostas por meio de uma propriedade de navegação chamada **itemInsights** no recurso [userSettings](/graph/api/resources/usersettings?view=graph-rest-beta&preserve-view=true).
 
 ## <a name="background"></a>Histórico
 Na época do primeiro lançamento, em 2014, o Office Graph era um serviço de back-end para o Delve. Eles compartilhavam um conjunto de controles de privacidade sobre as informações do Office Graph e a experiência do usuário do Delve. Desde então, o Office Graph evoluiu e se tornou mais independente e eficiente, como parte de todas as experiências da Microsoft 365 e do Microsoft Graph. Para oferecer um esquema coerente do Microsoft Graph, a Microsoft introduziu uma entidade [itemInsights](/graph/api/resources/iteminsights?view=graph-rest-beta&preserve-view=true), que herda todas as propriedades do recurso [officeGraphInsights](/graph/api/resources/officegraphinsights?view=graph-rest-beta&preserve-view=true) pré-existente, e mantém o **officeGraphInsights** para obter uma compatibilidade com versões anteriores. A introdução de **itemInsights** também desassocia a história de privacidade das duas partes independentes.  
@@ -78,7 +80,7 @@ Como alternativa, você pode alterar o padrão e desabilitar as informações do
 ```
 
 ### <a name="configure-item-insights-using-rest-api"></a>Configurar as informações do item usando a API REST
-Conforme declarado anteriormente, por padrão, as configurações de privacidade das informações do item são habilitadas para toda a organização. Você pode alterar o padrão de duas maneiras:
+Conforme declarado anteriormente, por padrão, as configurações de privacidade das informações do item são habilitadas para toda a organização. Essas configurações são expostas por meio de uma propriedade de navegação chamada **itemInsights** em [organizationSettings](/graph/api/resources/organizationsettings?view=graph-rest-beta&preserve-view=true). Você pode alterar o padrão de duas maneiras:
 
 - Desabilite as informações do item para todos os usuários na organização, definindo a propriedade **isEnabledInOrganization** do recurso [itemInsightsSettings](/graph/api/resources/iteminsightssettings?view=graph-rest-beta&preserve-view=true) como `false`. 
 - Desabilite as informações do item para um _subconjunto_ de usuários, atribuindo esses usuários em um grupo do Microsoft Azure AD e definindo a propriedade **disabledForGroup** como a ID do grupo. Saiba mais sobre o [criar um grupo e adicionar usuários como membros](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal). 
@@ -99,20 +101,7 @@ Lembre-se do seguinte ao atualizar as configurações de informações do item:
 
 
 ## <a name="behavior-changes-in-ui-and-apis"></a>O comportamento é alterado na IU e nas APIs
-Algumas informações de [tendências](/graph/api/resources/insights-trending) ou [usadas](/graph/api/resources/insights-used) ideias podem ser afetadas conforme descrito abaixo. Ao longo do tempo, o escopo e os tipos dessas informações serão estendidos. 
-
-- O cartão de perfil de um usuário que tiver desabilitado as informações do item não mostra seus documentos **usados**. A mesma limitação se aplica ao resultado do perfil da Pesquisa da Microsoft no Bing, em que o painel **Arquivos Recentes** fica vazio. Além disso, a precisão de expansão de acrônimo na pesquisa é reduzida.
-
-- A desativação dos insights do item irá parar[horário de reunião sugerido](https://support.microsoft.com/office/update-your-meeting-hours-using-the-profile-card-0613d113-d7c1-4faa-bb11-c8ba30a78ef1?ui=en-US&rs=en-US&ad=US)de ser calculado e mostrado ao usuário em seu cartão de perfil. 
-
-- No Delve, um usuário que desabilitou as informações do item tem seus documentos ocultos. 
-
-- Todos os usuários que desativarem as informações do item terão suas atividades removidas da análise de toda a organização. Normalmente, tal análise sugere informações assistenciais para os colegas do usuário em diversas experiências, desde o Outlook até o OneDrive e o SharePoint. A análise é sempre anônima independentemente das configurações, mas quando um usuário desabilita as informações, a atividade do usuário é excluída da melhoria da produtividade de outras pessoas.
-
-- Para um usuário que tenha desabilitado as informações do item, a consulta de recursos de [tendências](/graph/api/resources/insights-trending) e [usados](/graph/api/resources/insights-used)na API do Microsoft Graph retorna `HTTP 403 Forbidden`.
-
-- Onde a seção **Descobrir** é habilitada para um usuário que pesquisa no Outlook Mobile, desabilitar as informações do item para esse usuário ocultaria, na seção **Descobrir**, documentos populares para ele. Caso contrário, os documentos populares são recomendados e exibidos com base em outras atividades do usuário.
-
+Para obter uma lista completa de experiências afetadas ao desabilitar os insights de itens, confira [Visão geral dos insights de itens](item-insights-overview.md#disabling-item-insights). 
 
 ## <a name="transition-period"></a>Período de transição
 Para acomodar a configuração das informações do item, até o final de 2020, o Microsoft 365 respeitará as configurações do Delve e das informações sobre o item e aplicará o mais estrito, caso elas sejam diferentes. Isso significa que um usuário é considerado como excluído das informações do item, se o usuário tiver optado por excluir os controles do Delve ou as configurações de informações do item.

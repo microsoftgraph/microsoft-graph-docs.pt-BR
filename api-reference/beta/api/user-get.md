@@ -5,12 +5,12 @@ author: jpettere
 localization_priority: Priority
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 95d0839341f158821eeb51f9aea252155462241d
-ms.sourcegitcommit: 2d8b04725ea4eaf304f3da1056a6451457a4630f
+ms.openlocfilehash: 2014b20abe0cdcc37c4bca2f1341aabe425b556c
+ms.sourcegitcommit: d586ddb253d27f9ccb621bd128f6a6b4b1933918
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52335664"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53108877"
 ---
 # <a name="get-a-user"></a>Obter um usuário
 
@@ -41,7 +41,9 @@ Para um usuário específico:
 GET /users/{id | userPrincipalName}
 ```
 
-Observe que quando o **userPrincipalName** começar com um caractere `$`, remova a barra (/) logo após `/users` e coloque o **userPrincipalName** entre parênteses e aspas simples. Para detalhes, consulte a lista de [problemas conhecidos](/graph/known-issues#users).
+>**Observação:**
+> + Quando o **userPrincipalName** começa com um caractere `$`, remova a barra (/) após `/users` e coloque o **userPrincipalName** entre parênteses e aspas simples. Por exemplo, `/users('$AdeleVance@contoso.com')`. Para obter detalhes, confira a lista de [problemas conhecidos](/graph/known-issues#users).
+> + Para consultar um usuário B2B usando o **usuárioPrincipalName**, codifique o caractere hash (#). Ou seja, substituir o símbolo `#` por `%23`. Por exemplo, `/users/AdeleVance_adatum.com%23EXT%23@contoso.com`.
 
 Para o usuário conectado:
 <!-- { "blockType": "ignored" } -->
