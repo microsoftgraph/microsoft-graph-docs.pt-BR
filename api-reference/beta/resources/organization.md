@@ -5,12 +5,12 @@ localization_priority: Normal
 author: adimitui
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 984fff26922d2300b94af69f3263e2beaeab82f8
-ms.sourcegitcommit: 612e1d796023433c6e15a9d66ba99d9bdc424cee
+ms.openlocfilehash: 13323ebf6560fc54c8fc22e26c4d6e97d6678d73
+ms.sourcegitcommit: d586ddb253d27f9ccb621bd128f6a6b4b1933918
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "52703591"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53108863"
 ---
 # <a name="organization-resource-type"></a>tipo de recurso organization
 
@@ -35,13 +35,16 @@ Esse recurso permite que você adicione seus próprios dados às propriedades pe
 |**Extensões de esquema**| | |
 |[Adicionar valores de extensões de esquema](../api/schemaextension-post-schemaextensions.md) | [schemaExtension](schemaextension.md) | Cria uma definição para a extensão de esquema e usa-a para adicionar dados digitados personalizados a um recurso.|
 |[Criar organizationalBrandingProperties](../api/organizationalbrandingproperties-create.md) | [organizationalBrandingProperties](organizationalbrandingproperties.md) | Crie uma nova organizationalBrandingProperties postando na coleção de identidade visual. |
+|[Obter a identidade visual](../api/organizationalbrandingproperties-get.md) | coleção [organizationalBrandingProperties](organizationalbrandingproperties.md) | Obtenha uma coleção de objetos organizationalBrandingProperties. |
 |[Obter a identidade visual](../api/organizationalbrandingproperties-get.md) | coleção [organizationalBrandingProperties](organizationalbrandingproperties.md) | Obter uma coleção de objetos organizationalBrandingProperties. |
+|[activateService](../api/organization-activateservice.md) | Nenhum |  Ative um serviço para uma organização. |
 
-## <a name="properties"></a>Propriedades 
+## <a name="properties"></a>Propriedades
+
 | Propriedade | Tipo   | Descrição |
 |:-------- |:---- |:----------- |
 | assignedPlans | Coleção [assignedPlan](assignedplan.md) | A coleção de planos de serviço associados ao locatário. Não anulável. |
-| businessPhones | Coleção de cadeias de caracteres | Número de telefone da organização. Embora isso seja uma coleção de cadeias de caracteres, somente um número pode ser definido para essa propriedade. |
+| businessPhones | Coleção de cadeias de caracteres | Número de telefone para a organização. Embora isso seja uma coleção de cadeias de caracteres, somente um número pode ser definido para essa propriedade. |
 | city | Cadeia de caracteres | Nome da cidade do endereço da organização. |
 | country | Cadeia de caracteres | Nome do país/região do endereço da organização. |
 | countryLetterCode | Cadeia de caracteres | Abreviação do país/região da organização. |
@@ -53,8 +56,8 @@ Esse recurso permite que você adicione seus próprios dados às propriedades pe
 | isMultipleDataLocationsForServicesEnabled | Boolean | `true` se a organização estiver habilitada para Multi-Geo; `false` se a organização não estiver habilitada para Multi-Geo; `null` (padrão). Somente leitura. Para saber mais, confira [OneDrive Online Multi-Geo](/sharepoint/dev/solution-guidance/multigeo-introduction). |
 | marketingNotificationEmails | Coleção de cadeias de caracteres | Não anulável. |
 | objectType | String | Uma cadeia de caracteres que identifica o tipo de objeto. Para locatários, o valor é `Company` sempre .|
-| onPremisesLastSyncDateTime | DateTimeOffset | A hora e a data em que o locatário foi sincronizado pela última vez com o diretório local. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`.|
-| onPremisesSyncEnabled | Boolean | `true` se esse objeto for sincronizado de um diretório local; se esse objeto foi originalmente sincronizado de um diretório local, mas `false` não está mais sincronizado; Anulavel. `null` se este objeto nunca foi sincronizado de um diretório local (padrão). |
+| onPremisesLastSyncDateTime | DateTimeOffset | A hora e a data em que o locatário foi sincronizado pela última vez com o diretório no local. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`.|
+| onPremisesSyncEnabled | Booliano | `true` se esse objeto for sincronizado de um diretório local; se esse objeto foi originalmente sincronizado de um diretório local, mas `false` não está mais sincronizado; Anulavel. `null` se este objeto nunca foi sincronizado de um diretório local (padrão). |
 | postalCode | Cadeia de caracteres | CEP do endereço da organização. |
 | preferredLanguage | String | O idioma preferencial da organização. Deve seguir o Código ISO 639-1; por exemplo `en`. |
 | privacyProfile | [privacyProfile](privacyprofile.md) | O perfil de privacidade de uma organização. |
@@ -73,7 +76,7 @@ Esse recurso permite que você adicione seus próprios dados às propriedades pe
 |certificateBasedAuthConfiguration|coleção [certificateBasedAuthConfiguration](certificatebasedauthconfiguration.md)| Propriedade navigation para gerenciar a configuração de autenticação baseada em certificado. Somente uma única instância de certificateBasedAuthConfiguration pode ser criada na coleção.  |
 |extensions|Coleção [extension](extension.md)|A coleção de extensões abertas definidas para o recurso da organização. Anulável.| 
 |organizationalBranding|coleção [organizationalBrandingProperties](organizationalbrandingproperties.md)| Identidade visual da organização. Anulável.|
-|settings|[organizationSettings](organizationsettings.md) | Recupere as propriedades e as relações do objeto organizationSettings. Anulável.|
+|configurações|[organizationSettings](organizationsettings.md) | Recupere as propriedades e as relações do objeto organizationSettings. Anulável.|
 
 ## <a name="json-representation"></a>Representação JSON
 

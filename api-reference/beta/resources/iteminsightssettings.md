@@ -1,42 +1,41 @@
 ---
-title: tipo de recurso itemInsightsSettings
-description: Representa as configurações de privacidade de informações.
+title: Tipo de recurso itemInsightsSettings
+description: Representa configurações de privacidade para itemInsights.
 localization_priority: Normal
 author: simonhult
 ms.prod: insights
 doc_type: resourcePageType
-ms.openlocfilehash: c84b2397c938997a3285d16612d090ae22444580
-ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
+ms.openlocfilehash: 80ca42440bcf365e051d9fb25fbc088af8a7f4bb
+ms.sourcegitcommit: d586ddb253d27f9ccb621bd128f6a6b4b1933918
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49522712"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53108821"
 ---
-# <a name="iteminsightssettings-resource-type"></a>tipo de recurso itemInsightsSettings
+# <a name="iteminsightssettings-resource-type"></a>Tipo de recurso itemInsightsSettings
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Representa as configurações de privacidade para as [idéias](iteminsights.md) e a configuração de privacidade para as ideias de horário de reunião. Use esta API para desabilitar/habilitar o cálculo e a visibilidade de insights de itens e de horas de reunião. 
+Representa configurações de privacidade para [itemInsights](iteminsights.md) e configuração de privacidade para insights [de horário de reunião.](https://support.microsoft.com/en-us/office/update-your-meeting-hours-using-the-profile-card-0613d113-d7c1-4faa-bb11-c8ba30a78ef1) Use essa API para desabilitar/habilitar o cálculo e a visibilidade das percepções do item e dos horários de reunião. 
 
-- Insights de item: calcula a relação entre usuários e itens, como documentos ou sites no Microsoft 365.  
-- Observações de horário de reunião: calcula as horas de reunião de calendário de uma pessoa com base nas atividades no Word, Excel, PowerPoint, email e calendário do Outlook no Microsoft 365.
+- Insights de item: calcula a relação entre usuários e itens, como documentos ou sites em Microsoft 365.  
+- Insights do horário de reunião: calcula o horário de reunião do calendário de uma pessoa com base nas atividades no Word, Excel, PowerPoint, email e Outlook calendário no Microsoft 365.
 
-> [!NOTE]
-> Horas de reunião as ideias estão implantando para clientes que começam de novembro de 2020. 
+Use o [recurso userInsightsSettings](userinsightssettings.md) para desabilitar/habilitar o cálculo e a visibilidade das percepções do item e dos insights do horário de reunião de um usuário.
 
 ## <a name="methods"></a>Métodos
 
 | Método       | Tipo de retorno | Descrição |
 |:-------------------------------------------------------------|:----------------------------------------------|:-----------------------------------------------------------------|
-| [Get](../api/iteminsightssettings-get.md)| [itemInsightsSettings](iteminsightssettings.md) | Ler as propriedades de um objeto **itemInsightsSettings** . |
-| [Update](../api/iteminsightssettings-update.md)| [itemInsightsSettings](iteminsightssettings.md) | Atualize um objeto **itemInsightsSettings** .|
+| [Get](../api/iteminsightssettings-get.md)| [itemInsightsSettings](iteminsightssettings.md) | Leia as propriedades de um **objeto itemInsightsSettings.** |
+| [Atualizar](../api/iteminsightssettings-update.md)| [itemInsightsSettings](iteminsightssettings.md) | Atualizar um **objeto itemInsightsSettings.**|
 
 
 ## <a name="properties"></a>Propriedades
 | Propriedade   | Tipo|Descrição|
 |:---------------|:--------|:----------|
-|isEnabledInOrganization|Boolean| `true` Se o item de organização insights estiver habilitado; `false` se o item de organização insights estiver desabilitado para todos os usuários sem exceções. O padrão é `true`. Opcional.|
-|disabledForGroup|String| A ID de um grupo do Azure AD, do qual as insights do item dos membros estão desabilitadas. O padrão é `empty`. Opcional.|
+|isEnabledInOrganization|Booleano| `true` se as percepções do item da organização estão habilitadas; `false` se as percepções do item da organização estão desabilitadas para todos os usuários sem exceções. O padrão é `true`. Opcional.|
+|disabledForGroup|String| A ID de um grupo do Azure AD, do qual as informações do item dos membros estão desabilitadas. O padrão é `empty`. Opcional.|
 
 ## <a name="json-representation"></a>Representação JSON
 

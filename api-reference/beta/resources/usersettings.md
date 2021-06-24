@@ -5,12 +5,12 @@ author: jpettere
 localization_priority: Normal
 ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: 12c75691b5b0515fbf8ef49b54ce1e4a0b806c2c
-ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
+ms.openlocfilehash: a16ab96bb04f6d7dfc4f9ceff29f49dc7d348d23
+ms.sourcegitcommit: d586ddb253d27f9ccb621bd128f6a6b4b1933918
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50761769"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53108870"
 ---
 # <a name="usersettings-resource-type"></a>Tipo de recurso de configurações do usuário (UserSettings)
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Configurações que representam as preferências de um usuário para localidade [regional](../resources/regionalandlanguagesettings.md)e idiomas, para agendamento de turnos [e](../resources/shiftpreferences.md)para informações e descoberta de [conteúdo.](../resources/officegraphinsights.md)
+Configurações que representam as preferências de um usuário para [localidades](../resources/regionalandlanguagesettings.md)regionais e idiomas, para agendamento de [turnos,](../resources/shiftpreferences.md)para Delve e para insights [de item.](../resources/officegraphinsights.md)
 
 Gerenciar as preferências baseadas na localidade do usuário: 
   - Determinando com qual idioma e formatação regional um usuário prefere exibir aplicativos.
@@ -28,9 +28,13 @@ Gerenciar as preferências de turno de trabalho do usuário:
   - Verificar se um usuário pode ser atribuído a turnos em um cronograma.
   - Atualizando as preferências de turno de um usuário.
   
-Habilitar a descoberta de conteúdo e informações centradas em documentos:
-  - Verificar se um usuário e a organização do usuário contribuem para a descoberta de conteúdo.
-  - Habilitar ou desabilitar a descoberta de conteúdo para usuários específicos. Isso também desabilita documentos no Office Delve.
+Gerenciar Delve acessibilidade:
+  - Verificar se um usuário e a organização do usuário têm acesso a Office Delve.
+  - Desabilitando ou habilitando documentos em Office Delve para usuários específicos. 
+
+Configure a visibilidade dos [insights de itemInsights](../resources/iteminsights.md) e [de horas de reunião.](https://support.microsoft.com/en-us/office/update-your-meeting-hours-using-the-profile-card-0613d113-d7c1-4faa-bb11-c8ba30a78ef1) ItemInsights são derivados entre usuários e outros itens (como documentos ou sites) em Microsoft 365:
+  - Verificando se os insights de item e horário de reunião de um usuário estão habilitados.
+  - Desabilitando ou habilitando informações de item e horas de reunião para um usuário específico.
 
 Para saber como obter ou atualizar as configurações de usuário, confira [Obter configurações](../api/usersettings-get.md) e [Atualizar configurações](../api/usersettings-update.md).
 
@@ -47,8 +51,8 @@ Para saber como obter ou atualizar as configurações de usuário, confira [Obte
 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|contributionToContentDiscoveryDisabled|Booliano|O acesso delegado à API [mais popular](insights-trending.md) do usuário é desabilitada quando definido como verdadeiro. Os documentos do usuário do Office Delve serão desativados quando definidos como verdadeiros. Quando definida como verdadeira, a relevância do conteúdo exibido no Microsoft 365, como em sites Sugeridos na Página Inicial do Microsoft Office SharePoint Online e o modo de exibição Descobrir no OneDrive for Business é afetada. Os usuários podem controlar essa configuração em [Office Delve](https://support.office.com/en-us/article/are-my-documents-safe-in-office-delve-f5f409a2-37ed-4452-8f61-681e5e1836f3?ui=en-US&rs=en-US&ad=US#bkmk_optout). |
-|contributionToContentDiscoveryAsOrganizationDisabled|Booliano|Reflete a [configuração do nível de organização](https://support.office.com/en-us/article/office-delve-for-office-365-admins-54f87a42-15a4-44b4-9df0-d36287d9531b#bkmk_delveonoff) controlando o acesso delegado à API [mais popular](insights-trending.md). A organização não tem acesso ao Office Delve quando definido como verdadeiro. A relevância do conteúdo exibido no Microsoft 365, como em sites Sugeridos na Página Inicial do Microsoft Office SharePoint Online e o modo de exibição Descobrir no OneDrive for Business é afetada para toda a organização. Essa configuração é somente leitura e pode ser alterada somente por administradores no [Centro de administração do SharePoint](https://support.office.com/article/about-the-office-365-admin-center-758befc4-0888-4009-9f14-0d147402fd23?ui=en-US&rs=en-US&ad=US).|
+|contributionToContentDiscoveryDisabled|Booliano|Os documentos do usuário do Office Delve serão desativados quando definidos como verdadeiros. Os usuários podem controlar essa configuração em [Office Delve](https://support.office.com/en-us/article/are-my-documents-safe-in-office-delve-f5f409a2-37ed-4452-8f61-681e5e1836f3?ui=en-US&rs=en-US&ad=US#bkmk_optout). |
+|contributionToContentDiscoveryAsOrganizationDisabled|Booliano|Reflete a configuração [Office Delve nível da organização.](https://support.office.com/en-us/article/office-delve-for-office-365-admins-54f87a42-15a4-44b4-9df0-d36287d9531b#bkmk_delveonoff) A organização não tem acesso ao Office Delve quando definido como verdadeiro. Essa configuração é somente leitura e pode ser alterada somente por administradores no [Centro de administração do SharePoint](https://support.office.com/article/about-the-office-365-admin-center-758befc4-0888-4009-9f14-0d147402fd23?ui=en-US&rs=en-US&ad=US).|
 
 ## <a name="relationships"></a>Relações
 
@@ -56,6 +60,7 @@ Para saber como obter ou atualizar as configurações de usuário, confira [Obte
 |:---------------|:--------|:----------|
 |shiftPreferences|[shiftPreferences](shiftpreferences.md)| As preferências de turno para o usuário. |
 |regionalAndLanguageSettings|[regionalAndLanguageSettings](regionalandlanguagesettings.md)| Preferências do usuário para idiomas, localidade regional e formatação de data/hora. |
+|itemInsights|[userInsightsSettings](userinsightssettings.md)| As configurações do usuário para a visibilidade das percepções de hora de reunião e percepções derivadas entre um usuário e outros itens no Microsoft 365, como documentos ou sites. [Obter userInsightsSettings](../api/userinsightssettings-get.md) por meio dessa propriedade de navegação. |
 
 ## <a name="json-representation"></a>Representação JSON
 
