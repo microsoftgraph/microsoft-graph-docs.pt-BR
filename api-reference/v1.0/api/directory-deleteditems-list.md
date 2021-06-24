@@ -5,12 +5,12 @@ author: keylimesoda
 localization_priority: Normal
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 51e74ec0dc6eee9fa21ef7b7843f088c378cfb31
-ms.sourcegitcommit: 2a35434fabc76672e21bfc3ed5a1d28f9f3b66bc
+ms.openlocfilehash: 905b65c5d02bd27ffad17f30290c5ea36118bff3
+ms.sourcegitcommit: d586ddb253d27f9ccb621bd128f6a6b4b1933918
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52241069"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53108912"
 ---
 # <a name="list-deleted-items"></a>Listar itens excluídos
 
@@ -30,8 +30,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | Application.Read.All, Application.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
-|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegado (conta corporativa ou de estudante) | Application.Read.All, Application.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Application.Read.All, Application.ReadWrite.All, Directory.Read.All |
 
 ### <a name="for-users"></a>Para usuários:
@@ -46,8 +46,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | Group.Read.All, Group.ReadWrite.All, Directory.Read.All, Directory.AccessAsUser.All |
-|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegado (conta corporativa ou de estudante) | Group.Read.All, Group.ReadWrite.All, Directory.Read.All, Directory.AccessAsUser.All |
+|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Group.Read.All, Group.ReadWrite.All, Directory.Read.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -56,12 +56,24 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 GET /directory/deleteditems/microsoft.graph.application
 GET /directory/deletedItems/microsoft.graph.group
 GET /directory/deletedItems/microsoft.graph.user
+GET /directory/deletedItems/microsoft.graph.device
 ```
 
 Essa API dá suporte atualmente à recuperação de tipos de objeto de grupos (microsoft.graph.group) ou usuários (microsoft.graph.user) de itens excluídos. O tipo é especificado como uma parte obrigatória do URI. Não há suporte para chamar GET /directory/deletedItems sem um tipo.
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
+Este método dá suporte ao `$orderBy` [parâmetro de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta. 
+
+### <a name="examples-using-the-orderby-odata-query-parameter"></a>Exemplos usando o parâmetro $orderBy consulta OData
+
+O parâmetro de consulta OData é suportado nas propriedades `$orderBy` **deletedDateTime**, **displayName** e **userPrincipalName** dos tipos de objeto excluídos. Na propriedade **deletedDateTime,** a consulta requer a adição dos parâmetros de consulta avançados ( Header **ConsistencyLevel** definido como e cadeia de [caracteres](/graph/aad-advanced-queries) `true` de `$count=true` consulta).
+
+| OData cast | Propriedades que suportam $orderBy | Exemplo |
+| :--- | :--- | :--- |
+| microsoft.graph.user | deletedDateTime, displayName, userPrincipalName | /directory/deletedItems/microsoft.graph.user?$orderBy=userPrincipalName |
+| microsoft.graph.group | deletedDateTime, displayName | /directory/deletedItems/microsoft.graph.group?$orderBy=deletedDateTime asc&$count=true |
+| microsoft.graph.application | deletedDateTime, displayName | /directory/deletedItems/microsoft.graph.application?$orderBy=displayName |
+| microsoft.graph.device | deletedDateTime, displayName | /directory/deletedItems/microsoft.graph.device?$orderBy=deletedDateTime&$count=true |
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome      |Descrição|

@@ -5,12 +5,12 @@ author: mmcla
 localization_priority: Normal
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 7a38d4d7d30b225aa81365e8282c38c73cf2739c
-ms.sourcegitcommit: 8b1a6d7b0516f936ce4626246408f067527f5082
+ms.openlocfilehash: 423c55c7e3aab64d2e387efbcd53a69bc819ef0d
+ms.sourcegitcommit: d586ddb253d27f9ccb621bd128f6a6b4b1933918
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "51594851"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53108856"
 ---
 # <a name="update-emailauthenticationmethodconfiguration"></a>Atualizar emailAuthenticationMethodConfiguration
 
@@ -37,7 +37,7 @@ Para cenários delegados, o administrador precisa da função de administrador g
 -->
 
 ```http
-PATCH /policies/authenticationMethodsPolicy/email
+PATCH /policies/authenticationMethodsPolicy/authenticationMethodConfigurations/email
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
