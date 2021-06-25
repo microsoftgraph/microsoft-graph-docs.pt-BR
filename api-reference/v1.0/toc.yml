@@ -217,7 +217,7 @@ items:
           - name: Atribuição de funções do aplicativo
             href: resources/approleassignment.md
             items:
-              - name: List
+              - name: Listar
                 href: api/user-list-approleassignments.md
               - name: Adicionar
                 href: api/user-post-approleassignments.md
@@ -260,7 +260,7 @@ items:
                 href: api/user-list-contactfolders.md
           - name: Concessões de permissão delegadas
             items:
-              - name: List
+              - name: Listar
                 href: api/user-list-oauth2permissiongrants.md
           - name: Objetos de diretório
             href: resources/directoryobject.md
@@ -312,8 +312,9 @@ items:
           - name: Insights
             items:
               - name: Office Graph insights
-                href: resources/officegraphinsights.md
                 items:
+                  - name: Office Graph insights
+                    href: resources/officegraphinsights.md
                   - name: Listar compartilhados
                     href: api/insights-list-shared.md
                   - name: Listar tendências
@@ -413,7 +414,7 @@ items:
             items:
               - name: Listar tarefas
                 href: api/planneruser-list-tasks.md
-          - name: Trabalho em equipe
+          - name: Teamwork
             items:
               - name: Aplicativo instalado
                 href: resources/teamsappinstallation.md
@@ -431,7 +432,7 @@ items:
                 href: api/userscopeteamsappinstallation-get-chat.md
               - name: Obter chat para o usuário
                 href: api/chat-get.md
-          - name: Tarefas To do
+          - name: Tarefas pendentes
             items:
               - name: Tarefa
                 href: resources/todotask.md
@@ -443,6 +444,14 @@ items:
                 href: api/todotasklist-list-tasks.md
               - name: Lista de listas de tarefas
                 href: api/todo-list-lists.md
+          - name: Configurações do usuário
+            items:
+              - name: Configurações do usuário
+                href: resources/usersettings.md
+              - name: Obter configurações
+                href: api/usersettings-get.md
+              - name: Atualizar configurações
+                href: api/usersettings-update.md
       - name: Grupos
         items:
           - name: Visão Geral
@@ -550,7 +559,7 @@ items:
           - name: Atribuição de funções do aplicativo
             href: resources/approleassignment.md
             items:
-              - name: List
+              - name: Listar
                 href: api/group-list-approleassignments.md
               - name: Adicionar
                 href: api/group-post-approleassignments.md
@@ -749,7 +758,7 @@ items:
                         href: api/application-delete-extensionproperty.md
               - name: Proprietários
                 items:
-                  - name: List
+                  - name: Listar
                     href: api/application-list-owners.md
                   - name: Adicionar
                     href: api/application-post-owners.md
@@ -762,7 +771,7 @@ items:
                     items:
                       - name: Atribuir
                         href: api/application-post-tokenissuancepolicies.md
-                      - name: List
+                      - name: Listar
                         href: api/application-list-tokenissuancepolicies.md
                       - name: Remover
                         href: api/application-delete-tokenissuancepolicies.md
@@ -771,14 +780,14 @@ items:
                     items:
                       - name: Atribuir
                         href: api/application-post-tokenlifetimepolicies.md
-                      - name: List
+                      - name: Listar
                         href: api/application-list-tokenlifetimepolicies.md
                       - name: Remover
                         href: api/application-delete-tokenlifetimepolicies.md
               - name: Modelo de aplicativo
                 href: resources/applicationtemplate.md
                 items:
-                  - name: Lista
+                  - name: Listar
                     href: api/applicationtemplate-list.md
                   - name: Obter
                     href: api/applicationtemplate-get.md
@@ -806,7 +815,7 @@ items:
               - name: Atribuição de funções do aplicativo
                 href: resources/approleassignment.md
                 items:
-                  - name: List
+                  - name: Listar
                     href: api/serviceprincipal-list-approleassignments.md
                   - name: Adicionar
                     href: api/serviceprincipal-post-approleassignments.md
@@ -830,7 +839,7 @@ items:
                     href: api/serviceprincipal-removekey.md
               - name: Concessões de permissão delegadas
                 items:
-                  - name: List
+                  - name: Listar
                     href: api/serviceprincipal-list-oauth2permissiongrants.md
               - name: Classificações de permissão delegada
                 href: resources/delegatedpermissionclassification.md
@@ -857,7 +866,7 @@ items:
                     href: api/serviceprincipal-getmemberobjects.md
               - name: Proprietários
                 items:
-                  - name: List
+                  - name: Listar
                     href: api/serviceprincipal-list-owners.md
                   - name: Adicionar
                     href: api/serviceprincipal-post-owners.md
@@ -870,7 +879,7 @@ items:
                     items:
                       - name: Atribuir
                         href: api/serviceprincipal-post-claimsmappingpolicies.md
-                      - name: List
+                      - name: Listar
                         href: api/serviceprincipal-list-claimsmappingpolicies.md
                       - name: Remover
                         href: api/serviceprincipal-delete-claimsmappingpolicies.md
@@ -879,7 +888,7 @@ items:
                     items:
                       - name: Atribuir
                         href: api/serviceprincipal-post-homerealmdiscoverypolicies.md
-                      - name: List
+                      - name: Listar
                         href: api/serviceprincipal-list-homerealmdiscoverypolicies.md
                       - name: Remover
                         href: api/serviceprincipal-delete-homerealmdiscoverypolicies.md
@@ -916,7 +925,7 @@ items:
                     items:
                       - name: Atribuir
                         href: api/application-post-tokenissuancepolicies.md
-                      - name: List
+                      - name: Listar
                         href: api/application-list-tokenissuancepolicies.md
                       - name: Remover
                         href: api/application-delete-tokenissuancepolicies.md
@@ -925,7 +934,7 @@ items:
                     items:
                       - name: Atribuir
                         href: api/application-post-tokenlifetimepolicies.md
-                      - name: List
+                      - name: Listar
                         href: api/application-list-tokenlifetimepolicies.md
                       - name: Remover
                         href: api/application-delete-tokenlifetimepolicies.md
@@ -1190,7 +1199,7 @@ items:
               - name: Participante
                 href: resources/participant.md
                 items:
-                  - name: Lista
+                  - name: Listar
                     href: api/call-list-participants.md
                   - name: Obter
                     href: api/participant-get.md
@@ -1284,7 +1293,7 @@ items:
               - name: Conector de impressão
                 href: resources/printconnector.md
                 items:
-                  - name: Lista
+                  - name: Listar
                     href: api/print-list-connectors.md
                   - name: Obter
                     href: api/printconnector-get.md
@@ -1429,7 +1438,7 @@ items:
               - name: Serviço de impressão
                 href: resources/printservice.md
                 items:
-                  - name: Lista
+                  - name: Listar
                     href: api/print-list-services.md
                   - name: Obter
                     href: api/printservice-get.md
@@ -2021,7 +2030,7 @@ items:
                   - name: Windows configuração do cliente do office
                     href: resources/intune-cirrus-windowsofficeclientconfiguration.md
                     items:
-                      - name: Lista
+                      - name: Listar
                         href: api/intune-cirrus-windowsofficeclientconfiguration-list.md
                       - name: Obter
                         href: api/intune-cirrus-windowsofficeclientconfiguration-get.md
@@ -2034,7 +2043,7 @@ items:
                   - name: Windows configuração de segurança do cliente do office
                     href: resources/intune-cirrus-windowsofficeclientsecurityconfiguration.md
                     items:
-                      - name: Lista
+                      - name: Listar
                         href: api/intune-cirrus-windowsofficeclientsecurityconfiguration-list.md
                       - name: Obter
                         href: api/intune-cirrus-windowsofficeclientsecurityconfiguration-get.md
@@ -3638,7 +3647,7 @@ items:
                   - name: Parceiro de gerenciamento de conformidade
                     href: resources/intune-onboarding-compliancemanagementpartner.md
                     items:
-                      - name: Lista
+                      - name: Listar
                         href: api/intune-onboarding-compliancemanagementpartner-list.md
                       - name: Obter
                         href: api/intune-onboarding-compliancemanagementpartner-get.md
@@ -4430,6 +4439,10 @@ items:
                     href: api/directoryrole-post-members.md
                   - name: Remover membro
                     href: api/directoryrole-delete-member.md
+                  - name: Listar membros com escopo
+                    href: api/directoryrole-list-scopedmembers.md
+                  - name: Obter intervalo
+                    href: api/directoryrole-delta.md
               - name: Modelo de função de diretório
                 href: resources/directoryroletemplate.md
                 items:
@@ -4516,7 +4529,7 @@ items:
                   - name: Chaves de segurança FIDO2
                     href: resources/fido2authenticationmethod.md
                     items:
-                      - name: Lista
+                      - name: Listar
                         href: api/fido2authenticationmethod-list.md
                       - name: Obter
                         href: api/fido2authenticationmethod-get.md
@@ -4525,7 +4538,7 @@ items:
                   - name: Microsoft Authenticator
                     href: resources/microsoftauthenticatorauthenticationmethod.md
                     items:
-                      - name: Lista
+                      - name: Listar
                         href: api/microsoftauthenticatorauthenticationmethod-list.md
                       - name: Obter
                         href: api/microsoftauthenticatorauthenticationmethod-get.md
@@ -4534,7 +4547,7 @@ items:
                   - name: Windows Hello para Empresas
                     href: resources/windowshelloforbusinessauthenticationmethod.md
                     items:
-                      - name: Lista
+                      - name: Listar
                         href: api/windowshelloforbusinessauthenticationmethod-list.md
                       - name: Obter
                         href: api/windowshelloforbusinessauthenticationmethod-get.md
@@ -4604,7 +4617,7 @@ items:
                         items:
                           - name: Local nomeado
                             href: resources/namedlocation.md
-                          - name: Lista
+                          - name: Listar
                             href: api/conditionalaccessroot-list-namedlocations.md
                           - name: Obter
                             href: api/namedlocation-get.md
@@ -4664,7 +4677,7 @@ items:
                   - name: Detecção de riscos
                     href: resources/riskdetection.md
                     items:
-                      - name: Lista
+                      - name: Listar
                         href: api/riskdetection-list.md
                       - name: Obter
                         href: api/riskdetection-get.md
@@ -4917,7 +4930,7 @@ items:
                         href: api/identityapiconnector-uploadclientcertificate.md
                       - name: Excluir
                         href: api/identityapiconnector-delete.md
-          - name: Governança
+          - name: Gestão
             items:
               - name: Avaliações do acesso
                 href: resources/accessreviewsv2-root.md
@@ -4925,7 +4938,7 @@ items:
                   - name: Definição do agendamento de revisão do Access
                     href: resources/accessreviewscheduledefinition.md
                     items:
-                      - name: List
+                      - name: Listar
                         href: api/accessreviewscheduledefinition-list.md
                       - name: Instâncias de lista
                         href: api/accessreviewscheduledefinition-list-instances.md
@@ -4942,7 +4955,7 @@ items:
                   - name: Instância de revisão do Access
                     href: resources/accessreviewinstance.md
                     items:
-                      - name: List
+                      - name: Listar
                         href: api/accessreviewinstance-list.md
                       - name: Listar decisões
                         href: api/accessreviewinstance-list-decisions.md
@@ -4986,7 +4999,7 @@ items:
                       - name: Solicitações de consentimento do aplicativo
                         href: resources/appconsentrequest.md
                         items:
-                          - name: Lista
+                          - name: Listar
                             href: api/appconsentrequest-list.md
                           - name: Obter
                             href: api/appconsentrequest-get.md
@@ -4995,7 +5008,7 @@ items:
                   - name: Solicitações de consentimento do usuário
                     href: resources/userconsentrequest.md
                     items:
-                      - name: Lista
+                      - name: Listar
                         href: api/userconsentrequest-list.md
                       - name: Obter
                         href: api/userconsentrequest-get.md
@@ -5287,9 +5300,15 @@ items:
                 href: resources/person.md
               - name: Listar pessoas
                 href: api/user-list-people.md
-          - name: Informações
-            href: resources/officegraphinsights.md
+          - name: Insights
             items:
+              - name: Office Graph insights
+                href: resources/officegraphinsights.md
+              - name: Compartilhados
+                href: resources/insights-shared.md
+                items:
+                  - name: Listar compartilhados
+                    href: api/insights-list-shared.md
               - name: Tendências
                 href: resources/insights-trending.md
                 items:
@@ -5300,11 +5319,6 @@ items:
                 items:
                   - name: Listar usados
                     href: api/insights-list-used.md
-              - name: Compartilhados
-                href: resources/insights-shared.md
-                items:
-                  - name: Listar compartilhados
-                    href: api/insights-list-shared.md
       - name: Contatos pessoais
         href: resources/contact.md
         displayName: 'Outlook, Outlook contacts, Outlook contact, People'
@@ -5612,7 +5626,7 @@ items:
                     href: api/reportroot-getyammergroupsactivitygroupcounts.md
                   - name: Obter contagens de atividades
                     href: api/reportroot-getyammergroupsactivitycounts.md
-      - name: Pesquisar
+      - name: Pesquisa
         displayname: Microsoft Search API
         items:
           - name: Consulta
@@ -5819,7 +5833,7 @@ items:
                 href: api/plannerprogresstaskboardtaskformat-get.md
               - name: Atualizar progresso do formato de quadro de tarefas
                 href: api/plannerprogresstaskboardtaskformat-update.md
-      - name: Trabalho em equipe
+      - name: Teamwork
         displayName: Microsoft Teams
         items:
           - name: Visão Geral
@@ -5995,7 +6009,7 @@ items:
                 href: api/chatmessage-list-hostedcontents.md
               - name: Obter conteúdo hospedado
                 href: api/chatmessagehostedcontent-get.md
-          - name: App
+          - name: Aplicativo
             items:
               - name: Aplicativo no catálogo
                 href: resources/teamsapp.md
@@ -6151,7 +6165,7 @@ items:
                     href: api/offershiftrequest-post.md
                   - name: Obter
                     href: api/offershiftrequest-get.md
-                  - name: List
+                  - name: Listar
                     href: api/offershiftrequest-list.md
                   - name: Aprovar
                     href: api/offershiftrequest-approve.md
@@ -6358,7 +6372,7 @@ items:
           - name: Comentários de workbook
             href: resources/workbookcomment.md
             items:
-              - name: Lista
+              - name: Listar
                 href: api/workbook-list-comments.md
               - name: Obter
                 href: api/workbookcomment-get.md
