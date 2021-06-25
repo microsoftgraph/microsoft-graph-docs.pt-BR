@@ -5,12 +5,12 @@ author: jpettere
 localization_priority: Priority
 ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: a30a6a3fbc51cca11544e4a40d9c998a160e1890
-ms.sourcegitcommit: f77c1385306fd40557aceb24fdfe4832cbb60a27
+ms.openlocfilehash: f81c28b15720f494c51ab2893193a4cd107aa1ca
+ms.sourcegitcommit: d0d2d17a31cbcb01b1ae18bd6a18c39d7077069a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/12/2021
-ms.locfileid: "52911662"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53118445"
 ---
 # <a name="user-resource-type"></a>Tipo de recurso de usuário
 
@@ -172,10 +172,10 @@ Esse recurso permite:
 | companyName | String | O nome da empresa em que o usuário está associado. Essa propriedade pode ser útil para descrever a empresa de onde procede um usuário externo. O comprimento máximo do nome da empresa é 64 caracteres.<br><br>Suporta `$filter` (`eq`, `ne`, `NOT`, `ge`, `le`, `in`, `startsWith`).|
 | consentProvidedForMinor | [consentProvidedForMinor](#consentprovidedforminor-values) | Define se o consentimento foi obtido para menores. Valores permitidos: `null`, `granted`, `denied` e `notRequired`. Confira as [definições de propriedades da faixa etária legal](#legal-age-group-property-definitions) para obter mais informações. <br><br>Suporte `$filter` (`eq`, `ne`, `NOT` e `in`).|
 | country | Cadeia de caracteres | O país/região em que o usuário está localizado; por exemplo, `US` ou `UK`. O comprimento máximo é de 128 caracteres. <br><br>Suporta `$filter` (`eq`, `ne`, `NOT`, `ge`, `le`, `in`, `startsWith`). |
-| createdDateTime | DateTimeOffset | A data e hora que o usuário foi criado. Não é possível modificar o valor e ele é preenchido automaticamente quando a entidade é criada. O tipo DateTimeOffset representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. A propriedade é anulável. Um valor nulo indica que uma hora de criação exata não pode ser determinada pelo usuário. Somente leitura. <br><br>Suporta `$filter` (`eq`, `ne`, `NOT` , `ge`, `le`e operadores `in` ) e `$orderBy`. |
+| createdDateTime | DateTimeOffset | A data e hora que o usuário foi criado. Não é possível modificar o valor e ele é preenchido automaticamente quando a entidade é criada. O tipo DateTimeOffset representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. A propriedade é anulável. Um valor nulo indica que uma hora de criação exata não pode ser determinada pelo usuário. Somente leitura. <br><br>Suporta `$filter` (`eq`, `ne`, `NOT` , `ge`, `le` e operadores `in` ). |
 | creationType | String | Indica se a conta de usuário foi criada como uma conta corporativa ou de estudante (`null`), uma conta externa (`Invitation`), uma conta local para um locatário do Azure Active Directory B2C (`LocalAccount`) ou uma inscrição de autoatendimento usando a verificação de email (`EmailVerified`). Somente leitura. <br><br>Suporte `$filter` (`eq`, `ne`, `NOT` e `in`). |
-| deletedDateTime | DateTimeOffset | A data e hora que o usuário foi excluído. <br><br>Suporta `$filter` (`eq`, `ne`, `NOT`, `ge`, `le`e `in`) e `$orderBy`. |
-| department | String | O nome do departamento no qual o usuário trabalha. O comprimento máximo é de 64 caracteres.<br><br>Suporta `$filter` (`eq`, `ne`, `NOT` , `ge`, `le`e operadores `in` ). |
+| deletedDateTime | DateTimeOffset | A data e hora que o usuário foi excluído. <br><br>Suporta `$filter` (`eq`, `ne`, `NOT`, `ge`, `le`, e `in`). |
+| departamento | String | O nome do departamento no qual o usuário trabalha. O comprimento máximo é de 64 caracteres.<br><br>Suporta `$filter` (`eq`, `ne`, `NOT` , `ge`, `le`e operadores `in` ). |
 | displayName | String | O nome exibido no catálogo de endereços para o usuário. Geralmente é a combinação do nome do usuário, inicial do meio e sobrenome. Esta propriedade é necessária quando um usuário é criado e não pode ser limpa durante as atualizações. O comprimento máximo é de 256 caracteres.<br><br>Suporta `$filter` (`eq`, `ne`, `NOT` , `ge`, `le`, `in`, `startsWith`), `$orderBy`e `$search`.|
 | employeeHireDate | DateTimeOffset | A data e a hora em que o usuário foi contratado ou começará a trabalhar em caso de futura contratação. <br><br>Suporta `$filter` (`eq`, `ne`, `NOT` , `ge`, `le`, `in`).|
 | employeeId | String | O identificador de funcionário atribuído ao usuário pela organização. <br><br>Suporta `$filter` (`eq`, `ne`, `NOT` , `ge`, `le`, `in`, `startsWith`).|

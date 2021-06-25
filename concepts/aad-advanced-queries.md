@@ -4,12 +4,12 @@ description: Os objetos do diretório Microsoft Azure Active Directory suportam 
 author: Licantrop0
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 6abf5bedf3dab7bf6bf525a27aa5d7b2c3e7b281
-ms.sourcegitcommit: 5a1cc1943527aa268e3797ee514871e65eb474a6
+ms.openlocfilehash: 7ecd514de1d1be4fea7606b62ca7060e6c15ba08
+ms.sourcegitcommit: d0d2d17a31cbcb01b1ae18bd6a18c39d7077069a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53031388"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53118644"
 ---
 # <a name="advanced-query-capabilities-on-azure-ad-directory-objects"></a>Recursos avançados de consulta nos objetos do diretório Microsoft Azure Active Directory
 
@@ -82,8 +82,8 @@ As propriedades dos objetos de diretório se comportam de forma diferente em seu
 
 A tabela a seguir resume o suporte a `$filter` operadores por propriedades no [objeto de diretório](/graph/api/resources/user) de usuários.
 
-- ![Requer parâmetros de consulta avançados.](/graph/images/advanced-query-parameters/advanced.png) O imóvel suporta `$filter` com o operador por padrão.
-- ![Funciona por padrão. Não requer parâmetros de consulta avançados.](/graph/images/advanced-query-parameters/default.png) O operador específico `$filter` requer *parâmetros de consulta avançados*:
+- ![Funciona por padrão. Não requer parâmetros de consulta avançados.](/graph/images/advanced-query-parameters/default.png) A propriedade suporta `$filter` com o operador por padrão.
+- ![Requer parâmetros de consulta avançados.](/graph/images/advanced-query-parameters/advanced.png) O operador específico `$filter` requer *parâmetros de consulta avançados*:
   - `ConsistencyLevel=eventual` cabeçalho
   - `$count=true` cadeia de caracteres
 - Células em branco indicam que a propriedade não suporta o uso de `$filter` com o operador.

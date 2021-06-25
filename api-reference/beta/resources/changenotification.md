@@ -5,12 +5,12 @@ localization_priority: Normal
 author: Jumaodhiss
 doc_type: resourcePageType
 ms.prod: change-notifications
-ms.openlocfilehash: 43933d31b8ac12f77331887c0421c3b6fc50b66b
-ms.sourcegitcommit: 9ac6bbab3df22e7629cf2bde796b527337c680aa
+ms.openlocfilehash: ff9a854419ab9090d17717c2d9cc9ef7eb640aeb
+ms.sourcegitcommit: 8a9be6f65f62f29973508d82e0348d4142c18f23
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53082374"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "53129478"
 ---
 # <a name="changenotification-resource-type"></a>Tipo de recurso changeNotification
 
@@ -33,9 +33,9 @@ Nenhum.
 | changeType | changeType | Indica o tipo de alteração que levantará a notificação de alteração. Os valores com suporte são: `created`, `updated`, `deleted`. Obrigatório. |
 | clientState | string | Valor da **propriedade clientState** enviada especificada na solicitação de assinatura (se alguma). O tamanho máximo é de 255 caracteres. O cliente pode verificar se a notificação de alteração veio do serviço comparando os valores da **propriedade clientState.** O valor da **propriedade clientState** enviado com a assinatura é comparado com o valor da **propriedade clientState** recebida com cada notificação de alteração. Opcional. |
 | encryptedContent | [changeNotificationEncryptedContent](changenotificationencryptedcontent.md) | (Visualização) Conteúdo criptografado anexado com a notificação de alteração. Somente fornecido se **encryptionCertificate** e **includeResourceData** foram definidos durante a solicitação de assinatura e se o recurso oferece suporte a ela. Opcional. |
-| id | string | ID exclusiva da notificação. Opcional. |
-| lifecycleEvent | lifecycleEventType | O tipo de notificação do ciclo de vida se a notificação atual for uma notificação do ciclo de vida. Opcional. Os valores suportados `missed` são `removed` , , `reauthorizationRequired` . |
-| recurso | string | O URI do recurso que emitiu a notificação de alteração em relação a `https://graph.microsoft.com` . Obrigatório. |
+| id | cadeia de caracteres | ID exclusiva da notificação. Opcional. |
+| lifecycleEvent | lifecycleEventType | O tipo de notificação do ciclo de vida se a notificação atual for uma notificação do ciclo de vida. Opcional. Os valores suportados `missed` são `subscriptionRemoved` , , `reauthorizationRequired` . |
+| recurso | cadeia de caracteres | O URI do recurso que emitiu a notificação de alteração em relação a `https://graph.microsoft.com` . Obrigatório. |
 | resourceData | [resourceData](resourcedata.md) | O conteúdo dessa propriedade depende do tipo de recurso que está sendo assinado. Obrigatório. |
 | subscriptionExpirationDateTime | DateTimeOffset | O tempo de expiração da assinatura. Obrigatório. |
 | subscriptionId | GUID | O identificador exclusivo da assinatura que gerou a notificação. |

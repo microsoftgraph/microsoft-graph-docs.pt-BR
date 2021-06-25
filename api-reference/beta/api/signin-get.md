@@ -5,12 +5,12 @@ description: Obter um objeto signIn que contém todas as assinaturas de um Azure
 localization_priority: Normal
 author: besiler
 ms.prod: identity-and-access-reports
-ms.openlocfilehash: cb002faa818ee63f53282b9fb165339b20f4e484
-ms.sourcegitcommit: b8b0e88b3ba9a434dc45f5ab640cb46f66fae299
+ms.openlocfilehash: d9cf2f0e6a03a490c1818712bf230120ff37311f
+ms.sourcegitcommit: 8a9be6f65f62f29973508d82e0348d4142c18f23
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "52474075"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "53129485"
 ---
 # <a name="get-signin"></a>Obter entrada
 
@@ -26,11 +26,19 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-| Delegada (conta corporativa ou de estudante) | AuditLog.Read.All, Directory.Read.All |
+| Delegado (conta corporativa ou de estudante) | AuditLog.Read.All, Directory.Read.All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte |
 | Aplicativo | AuditLog.Read.All, Directory.Read.All | 
 
-Além disso, os aplicativos devem ser [corretamente registrados](/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal) no Azure AD.
+Os aplicativos devem [estar registrados corretamente](/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal) no Azure AD.
+
+Além das permissões delegadas, o usuário inscreveu precisa pertencer a uma das seguintes funções de diretório que permitem ler relatórios de logons. Para saber mais sobre funções de diretório, consulte Funções do [Azure AD integrados](/azure/active-directory/roles/permissions-reference):
++ Administrador global
++ Leitor global
++ Leitor de Relatórios
++ Administrador de Segurança
++ Operador de segurança
++ Leitor de segurança
 
 ## <a name="http-request"></a>Solicitação HTTP
 
