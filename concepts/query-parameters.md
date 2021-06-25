@@ -4,12 +4,12 @@ description: O Microsoft Graph fornece parâmetros de consulta opcionais que voc
 author: mumbi-o
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 1bfa039dc133ccd215a3f43780ddb1523e8dafdc
-ms.sourcegitcommit: 5a1cc1943527aa268e3797ee514871e65eb474a6
+ms.openlocfilehash: 9272ebca7680456bef5f05ffe6a5258a4a184a45
+ms.sourcegitcommit: d0d2d17a31cbcb01b1ae18bd6a18c39d7077069a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53030254"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53118533"
 ---
 # <a name="use-query-parameters-to-customize-responses"></a>Usar parâmetros de consulta para personalizar respostas
 
@@ -193,7 +193,7 @@ GET https://graph.microsoft.com/beta/users?$filter=imAddresses/any(s:s eq 'admin
 Para negar o resultado da expressão dentro da cláusula `any`, use o operador `NOT`, não o operador `ne`. Por exemplo, a consulta a seguir recupera apenas os usuários que não receberam o **imAddress** de `admin@contoso.com`.
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/users?$filter=NOT imAddresses/any(s:s eq 'admin@m365x435773.onmicrosoft.com')&$count=true
+GET https://graph.microsoft.com/beta/users?$filter=NOT imAddresses/any(s:s eq 'admin@contoso.com')&$count=true
 ```
 
 O operador `all` aplica uma expressão booliana a cada membro de uma coleção e retorna `true` se a expressão for `true` para *todos os membros* da coleção, caso contrário, retornará `false`. Não há suporte para ele em nenhuma propriedade.
@@ -400,4 +400,4 @@ No entanto, é importante observar que os parâmetros de consulta especificados 
 
 - [Recursos avançados de consulta em objetos de diretório do Microsoft Azure Active Directory](/graph/aad-advanced-queries)
 - [Limitações de parâmetro de consulta](known-issues.md#query-parameter-limitations)
-- [Use o parâmetro de consulta $search para corresponder a um critério de pesquisa](/graph/search-query-parameter)
+- [Usar o parâmetro de consulta $search para corresponder a um critério de pesquisa](/graph/search-query-parameter)

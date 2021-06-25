@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 88032b4b514431924ec48f7b7d5e595ca4eb8375
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 701920b532e0c7003e624466c2d8d0614f47989f
+ms.sourcegitcommit: d0d2d17a31cbcb01b1ae18bd6a18c39d7077069a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50440462"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53118697"
 ---
 # <a name="directoryrole-resource-type"></a>tipo de recurso directoryRole
 
@@ -35,7 +35,8 @@ Esse recurso permite:
 |[Adicionar membro](../api/directoryrole-post-members.md) |[directoryObject](directoryobject.md)| Adicione um usuário à função de diretório postando na propriedade de navegação de membros.|
 |[Listar membros](../api/directoryrole-list-members.md) |Coleção [directoryObject](directoryobject.md)| Obtenha os usuários que são membros da função directory da propriedade de navegação members.|
 |[Remover um membro](../api/directoryrole-delete-member.md) |[directoryObject](directoryobject.md)| Remova um usuário da função de diretório.|
-|[Listar membros de função com escopo](../api/directoryrole-list-members.md) |Coleção [scopedRoleMembership](scopedrolemembership.md)| Listar os membros dessa função de diretório que são escopos para unidades administrativas [,](administrativeunit.md)por meio da coleção de recursos scopedRoleMembership.|
+|[Ativar directoryRole](../api/directoryrole-post-directoryroles.md) |[directoryRole](directoryrole.md) | Ative uma função de diretório.|
+|[Listar scopeMembers](../api/directoryrole-list-scopedmembers.md) |Coleção [scopedRoleMembership](scopedrolemembership.md)| Listar os membros dessa função de diretório que são escopos para unidades administrativas [,](administrativeunit.md)por meio da coleção de recursos scopedRoleMembership.|
 |[delta](../api/directoryrole-delta.md)|Coleção directoryRole| Obtenha alterações incrementais para as funções de diretório. |
 
 ## <a name="properties"></a>Propriedades
