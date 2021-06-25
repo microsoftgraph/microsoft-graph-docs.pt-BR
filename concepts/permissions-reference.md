@@ -4,12 +4,12 @@ description: O Microsoft Graph expõe as permissões granulares que controlam o 
 author: jackson-woods
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 653fe685f1e5ad871f8b01a932cfb00adc4f3592
-ms.sourcegitcommit: 456ec9510807d05623c0ed1dd049c9676f53f56b
+ms.openlocfilehash: 15bac110263b04378d44e5fb92fbce55163aedc2
+ms.sourcegitcommit: d586ddb253d27f9ccb621bd128f6a6b4b1933918
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53059999"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53108716"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Referência de permissões do Microsoft Graph
 
@@ -1777,6 +1777,25 @@ As permissões de segurança só são válidas para contas corporativas ou de es
 
 - _SecurityEvents.Read.All_: Ler a lista de todos os alertas de segurança de todos os provedores de segurança licenciados disponíveis para o seu locatário (`GET /beta/security/alerts`)
 - _SecurityEvents.ReadWrite.All_: Atualize ou leia os alertas de segurança de todos os provedores de segurança licenciados disponíveis para o seu locatário (`PATCH /beta/security/alerts/{id}`)
+
+---
+
+## <a name="service-communications-permissions"></a>Permissões de comunicações de serviço
+
+#### <a name="delegated-permissions"></a>Permissões delegadas
+
+|   Permissão    |  Exibir Cadeia de Caracteres  | Descrição | Consentimento Obrigatório do Administrador | Suporte da conta da Microsoft |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _ServiceHealth.Read.All_ | Ler a integridade do serviço | Permite que o aplicativo leia as informações de integridade de serviço do seu locatário em nome do usuário inscrito. As informações de integridade podem incluir os problemas de serviço ou a visão geral de integridade do serviço. | Sim | Sim |
+| _ServiceMessage.Read.All_ | Ler mensagens de serviço | Permite que o aplicativo leia as mensagens de anúncio de serviço do seu locatário em nome do usuário conectado. As mensagens podem incluir informações sobre os recursos novos ou alterados. | Sim | Sim |
+| _ServiceMessageViewpoint.Write_ | Atualize seu status de usuário nas mensagens de anúncio de serviço | Permite que o aplicativo atualize o status do usuário das mensagens de anúncio de serviço em nome do usuário conectado. O status da mensagem pode ser marcado como lido, arquivo ou favorito. | Sim | Sim |
+
+#### <a name="application-permissions"></a>Permissões de aplicativos
+
+|   Permissão    |  Exibir Cadeia de Caracteres  | Descrição | Consentimento Obrigatório do Administrador |
+|:----------------|:------------------|:-------------|:-----------------------|
+| _ServiceHealth.Read.All_ | Ler a integridade do serviço | Permite que o aplicativo leia as informações de integridade do serviço do seu locatário, sem um usuário conectado. As informações de integridade podem incluir os problemas de serviço ou a visão geral de integridade do serviço. | Sim |
+| _ServiceMessage.Read.All_ | Ler mensagens de serviço | Permite que o aplicativo leia as mensagens de anúncio de serviço do seu locatário, sem um usuário conectado. As mensagens podem incluir informações sobre os recursos novos ou alterados. | Sim |
 
 ---
 

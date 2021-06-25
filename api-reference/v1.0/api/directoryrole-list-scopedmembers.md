@@ -1,0 +1,150 @@
+---
+title: Listar scopedMembers para uma função de diretório
+description: Recupere uma lista de objetos scopedRoleMembership para uma função de diretório.
+author: abhijeetsinha
+localization_priority: Normal
+ms.prod: directory-management
+doc_type: apiPageType
+ms.openlocfilehash: 1678c7d0d6c86a1bcaa78b4727beb039d0f8ef7d
+ms.sourcegitcommit: d0d2d17a31cbcb01b1ae18bd6a18c39d7077069a
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53119033"
+---
+# <a name="list-scopedmembers-for-a-directory-role"></a>Listar scopedMembers para uma função de diretório
+
+Namespace: microsoft.graph
+
+Recupere uma lista de [objetos scopedRoleMembership](../resources/scopedrolemembership.md) para uma função de diretório.
+## <a name="permissions"></a>Permissões
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
+
+|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegado (conta corporativa ou de estudante) | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
+|Aplicativo | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All |
+
+## <a name="http-request"></a>Solicitação HTTP
+<!-- { "blockType": "ignored" } -->
+```http
+GET /directoryroles/{role-id}/scopedMembers
+GET /directoryroles/roleTemplateId={roleTemplateId}/scopedMembers
+```
+## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
+Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
+
+## <a name="request-headers"></a>Cabeçalhos de solicitação
+| Nome      |Descrição|
+|:----------|:----------|
+| Autorização  | {token} de portador. Obrigatório. |
+
+## <a name="request-body"></a>Corpo da solicitação
+Não forneça um corpo de solicitação para esse método.
+
+## <a name="response"></a>Resposta
+
+Se tiver êxito, este método retornará um código de resposta e uma coleção de `200 OK` [objetos scopedRoleMembership](../resources/scopedrolemembership.md) no corpo da resposta.
+
+## <a name="examples"></a>Exemplos
+
+### <a name="example-1-get-the-members-of-a-directory-role-using-role-id"></a>Exemplo 1: Obter os membros de uma função de diretório usando a id de função
+
+#### <a name="request"></a>Solicitação
+A seguir está um exemplo de uma solicitação para uma **id** de função de `41d12a2f-caa8-4e3e-ba14-05e5102ce085` diretório.
+
+<!-- {
+  "blockType": "request",
+  "name": "get_scopedmembers_directoryrole"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/directoryRoles/41d12a2f-caa8-4e3e-ba14-05e5102ce085/scopedMembers
+```
+
+#### <a name="response"></a>Resposta
+O exemplo a seguir mostra a resposta. 
+
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.scopedRoleMembership",
+  "isCollection": true
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#scopedRoleMemberships",
+    "value": [
+        {
+            "id": "LyrRQajKPk66FAXlECzghXFuYtw3SOtAvkq8KdiKEXiTwZeOU-r8RIHrq2vQ4F1wU",
+            "roleId": "41d12a2f-caa8-4e3e-ba14-05e5102ce085",
+            "administrativeUnitId": "dc626e71-4837-40eb-be4a-bc29d88a1178",
+            "roleMemberInfo": {
+                "id": "8e97c193-ea53-44fc-81eb-ab6bd0e05d70",
+                "displayName": "Adele Vance"
+            }
+        }
+    ]
+}
+```
+
+
+### <a name="example-2--get-the-scoped-members-of-a-directory-role-using-roletemplateid"></a>Exemplo 2: Obter os membros com escopo de uma função de diretório usando roleTemplateId
+
+#### <a name="request"></a>Solicitação
+A seguir está um exemplo de uma solicitação para uma função de diretório com **roleTemplateId** `fdd7a751-b60b-444a-984c-02652fe8fa1c` .
+
+<!-- {
+  "blockType": "request",
+  "name": "get_scopedmembers_directoryrole_templateId"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/directoryRoles/roleTemplateId=fdd7a751-b60b-444a-984c-02652fe8fa1c/scopedMembers
+```
+
+#### <a name="response"></a>Resposta
+O exemplo a seguir mostra a resposta. 
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.scopedRoleMembership",
+  "isCollection": true
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#scopedRoleMemberships",
+    "value": [
+        {
+            "id": "LyrRQajKPk66FAXlECzghXFuYtw3SOtAvkq8KdiKEXiTwZeOU-r8RIHrq2vQ4F1wU",
+            "roleId": "41d12a2f-caa8-4e3e-ba14-05e5102ce085",
+            "administrativeUnitId": "dc626e71-4837-40eb-be4a-bc29d88a1178",
+            "roleMemberInfo": {
+                "id": "8e97c193-ea53-44fc-81eb-ab6bd0e05d70",
+                "displayName": "Adele Vance"
+            }
+        }
+    ]
+}
+```
+
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
+2015-10-25 14:57:30 UTC -->
+<!--
+{
+  "type": "#page.annotation",
+  "description": "List scopedmembers",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": "",
+  "suppressions": [
+  ]
+}
+-->

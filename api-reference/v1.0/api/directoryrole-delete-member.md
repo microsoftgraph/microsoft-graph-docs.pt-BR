@@ -5,12 +5,12 @@ author: abhijeetsinha
 localization_priority: Normal
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 42932d1d058fa7970d444376553a0ae683dc9e2e
-ms.sourcegitcommit: 9eeb056f311044aaa40654cdb3ae5ae61f1c4d04
+ms.openlocfilehash: e03fb736cdd1dce8ca89335d87e9bd6bc65ddc4b
+ms.sourcegitcommit: d0d2d17a31cbcb01b1ae18bd6a18c39d7077069a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "52854254"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53118662"
 ---
 # <a name="remove-directory-role-member"></a>Remover membro da função de diretório
 
@@ -20,14 +20,14 @@ Remover um membro de um [directoryRole](../resources/directoryrole.md).
 
 Você pode usar a ID do objeto e a ID do modelo do **directoryRole** com essa API. A ID do modelo de uma função embutida é imutável e pode ser vista na descrição da função no portal do Azure. Para obter detalhes, consulte [Role template IDs](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#role-template-ids).
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | RoleManagement.ReadWrite.Directory, Directory.AccessAsUser.All    |
+|Delegado (conta corporativa ou de estudante) | RoleManagement.ReadWrite.Directory, Directory.AccessAsUser.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | RoleManagement.ReadWrite.Directory |
 
@@ -36,8 +36,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 <!-- { "blockType": "ignored" } -->
 
 ```http
-DELETE /directoryRoles/{role-objectId}/members/{id}/$ref
-DELETE /directoryRoles/roleTemplateId={role-templateId}/members/{id}/$ref
+DELETE /directoryRoles/{role-id}/members/{id}/$ref
+DELETE /directoryRoles/roleTemplateId={roleTemplateId}/members/{id}/$ref
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -56,7 +56,7 @@ Se bem-sucedido, este método retorna um código de resposta `204 No Content`. N
 
 ## <a name="examples"></a>Exemplos
 
-### <a name="example-1-remove-directory-role-member-using-role-objectid"></a>Exemplo 1: Remover membro da função de diretório usando objectId de função
+### <a name="example-1-remove-directory-role-member-using-role-id"></a>Exemplo 1: Remover membro da função de diretório usando a id de função
 
 #### <a name="request"></a>Solicitação
 
@@ -91,8 +91,6 @@ DELETE https://graph.microsoft.com/v1.0/directoryRoles/f8e85ed8-f66f-4058-b170-3
 
 
 #### <a name="response"></a>Resposta
-
-Veja a seguir um exemplo da resposta. 
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -102,11 +100,11 @@ Veja a seguir um exemplo da resposta.
 HTTP/1.1 204 No Content
 ```
 
-### <a name="example-2-remove-directory-role-member-using-role-templateid"></a>Exemplo 2: Remover membro da função de diretório usando modelo de funçãoId
+### <a name="example-2-remove-directory-role-member-using-roletemplateid"></a>Exemplo 2: Remover membro da função de diretório usando roleTemplateId
 
 #### <a name="request"></a>Solicitação
 
-Este é um exemplo da solicitação. Substitua pelo valor de sua roleTemplateId e pelo valor `9f06204d-73c1-4d4c-880a-6edb90606fd8` de `bb165b45-151c-4cf6-9911-cd7188912848` **id** do usuário do objeto directory.
+Este é um exemplo de solicitação. Substitua pelo valor de sua roleTemplateId e pelo valor `9f06204d-73c1-4d4c-880a-6edb90606fd8` de `bb165b45-151c-4cf6-9911-cd7188912848` **id** do usuário do objeto directory.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -137,8 +135,6 @@ DELETE https://graph.microsoft.com/v1.0/directoryRoles/roleTemplateId=9f06204d-7
 
 
 #### <a name="response"></a>Resposta
-
-Veja a seguir um exemplo da resposta. 
 <!-- {
   "blockType": "response",
   "truncated": true

@@ -5,12 +5,12 @@ author: abhijeetsinha
 localization_priority: Normal
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: ae03863fd35d7438a5fa3b9ff2ae0bfa90e41dce
-ms.sourcegitcommit: 9eeb056f311044aaa40654cdb3ae5ae61f1c4d04
+ms.openlocfilehash: cfb6a722b50e16f3a0e51dbad5705409a1d96009
+ms.sourcegitcommit: d0d2d17a31cbcb01b1ae18bd6a18c39d7077069a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "52854163"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53118690"
 ---
 # <a name="add-directory-role-member"></a>Adicionar membro da função de diretório
 
@@ -20,20 +20,20 @@ Crie um novo membro de função de diretório.
 
 Você pode usar a ID do objeto e a ID do modelo do **directoryRole** com essa API. A ID do modelo de uma função embutida é imutável e pode ser vista na descrição da função no portal do Azure. Para obter detalhes, consulte [Role template IDs](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#role-template-ids).
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | RoleManagement.ReadWrite.Directory, Directory.AccessAsUser.All    |
+|Delegado (conta corporativa ou de estudante) | RoleManagement.ReadWrite.Directory, Directory.AccessAsUser.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | RoleManagement.ReadWrite.Directory |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /directoryRoles/{role-objectId}/members/$ref
-POST /directoryRoles/roleTemplateId={role-templateId}/members/$ref
+POST /directoryRoles/{role-id}/members/$ref
+POST /directoryRoles/roleTemplateId={roleTemplateId}/members/$ref
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -51,7 +51,7 @@ Se bem sucedido, este método retorna um código de resposta `204 No Content`.
 
 ## <a name="examples"></a>Exemplos
 
-### <a name="example-1-add-a-new-member-to-a-directory-role-using-role-objectid"></a>Exemplo 1: Adicionar um novo membro a uma função de diretório usando objectId de função
+### <a name="example-1-add-a-new-member-to-a-directory-role-using-role-id"></a>Exemplo 1: Adicionar um novo membro a uma função de diretório usando id de função
 
 Nesta solicitação, substitua pelo valor de id da função `fe8f10bf-c9c2-47eb-95cb-c26cc85f1830` de diretório que você deseja atribuir ao usuário ou objeto de  diretório. Substitua `15c1a2d5-9101-44b2-83ab-885db8a647ca` pelo valor de **id** do seu objeto de diretório ou usuário. 
 
@@ -101,7 +101,7 @@ Content-type: text/plain
 
 ```
 
-### <a name="example-2-add-a-new-member-to-a-directory-role-using-role-templateid"></a>Exemplo 2: Adicionar um novo membro a uma função de diretório usando role templateId
+### <a name="example-2-add-a-new-member-to-a-directory-role-using-roletemplateid"></a>Exemplo 2: Adicionar um novo membro a uma função de diretório usando roleTemplateId
 
 Nesta solicitação, substitua pelo valor da `88d8e3e3-8f55-4a1e-953a-9b9898b8876b` **funçãoTemplateId** para a função de diretório que você deseja atribuir ao usuário ou objeto de diretório. Substitua `bb165b45-151c-4cf6-9911-cd7188912848` pelo valor de **id** do seu objeto de diretório ou usuário. 
 

@@ -5,12 +5,12 @@ localization_priority: Priority
 author: besiler
 ms.prod: identity-and-access-reports
 doc_type: conceptualPageType
-ms.openlocfilehash: 28d09cfe7dcb78480e02e5a2a23893495eb6655f
-ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
+ms.openlocfilehash: eba6b2af8dd6437d8996ab0bc2304c99eb7b4ac1
+ms.sourcegitcommit: 8a9be6f65f62f29973508d82e0348d4142c18f23
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52546207"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "53129443"
 ---
 # <a name="activity-reports-api-overview"></a>Visão geral da API de relatórios de atividades
 
@@ -65,7 +65,7 @@ Para saber mais, consulte [Preços do Azure AD](https://azure.microsoft.com/pric
 ## <a name="next-steps"></a>Próximas etapas
 
 - [Registre seu aplicativo](/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal) para atender aos pré-requisitos do relatório. 
-- Aprenda com [amostras do log de auditoria](/azure/active-directory/active-directory-reporting-api-audit-samples) e de [entrada](/azure/active-directory/active-directory-reporting-api-sign-in-activity-samples).  
+- Para saber como recuperar os logs de auditoria enquanto são autenticados usando certificados, consulte o [Tutorial: Obter dados usando a API de relatórios do Azure Active Directory com certificados](/azure/active-directory/reports-monitoring/tutorial-access-api-with-certificates).   
 - Analisar recurso e ações do [directoryAudit](directoryaudit.md).
 - Analisar recurso e ações do [signIn](signin.md). 
 <!--
