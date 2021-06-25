@@ -352,7 +352,9 @@ items:
             href: people-example.md
           - name: Personalizar o cartão de perfil (visualização)
             href: add-properties-profilecard.md
-          - name: Personalizar privacidade de ideias (visualização)
+          - name: Visão geral de informações do item
+            href: item-insights-overview.md
+          - name: Personalizar privacidade de informações do item (visualização)
             href: insights-customize-item-insights-privacy.md
       - name: Contatos pessoais
         displayName: 'Outlook, Outlook contacts, Outlook contact, People'
@@ -403,6 +405,8 @@ items:
             href: information-protection-overview.md
           - name: Oportunidades de parceria
             href: security-partner-overview.md
+      - name: Comunicações e integridade do serviço (visualização)
+        href: service-communications-concept-overview.md
       - name: Sites e listas
         href: sharepoint-concept-overview.md
         displayName: 'SharePoint, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal'
