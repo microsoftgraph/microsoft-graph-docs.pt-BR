@@ -5,54 +5,64 @@ localization_priority: Normal
 author: besiler
 ms.prod: identity-and-access-reports
 doc_type: apiPageType
-ms.openlocfilehash: 8ee9f01bf2b7f590332abcd726e3d6d21b506125
-ms.sourcegitcommit: 2a35434fabc76672e21bfc3ed5a1d28f9f3b66bc
+ms.openlocfilehash: 5bbd66efa246a0c3bbfdabe4a083a74443486ad2
+ms.sourcegitcommit: 8a9be6f65f62f29973508d82e0348d4142c18f23
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52241125"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "53129450"
 ---
-# <a name="list-signins"></a><span data-ttu-id="da114-103">Listar logons</span><span class="sxs-lookup"><span data-stu-id="da114-103">List signIns</span></span>
+# <a name="list-signins"></a><span data-ttu-id="890f1-103">Listar logons</span><span class="sxs-lookup"><span data-stu-id="890f1-103">List signIns</span></span>
 
-<span data-ttu-id="da114-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="da114-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="890f1-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="890f1-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="da114-105">Recupera os logons de usuário do Azure AD para seu locatário.</span><span class="sxs-lookup"><span data-stu-id="da114-105">Retrieve the Azure AD user sign-ins for your tenant.</span></span> <span data-ttu-id="da114-106">As inserções interativas de natureza (onde um nome de usuário/senha é passado como parte do token de autenticação) e as inserções federadas bem-sucedidas estão atualmente incluídas nos logs de login.</span><span class="sxs-lookup"><span data-stu-id="da114-106">Sign-ins that are interactive in nature (where a username/password is passed as part of auth token) and successful federated sign-ins are currently included in the sign-in logs.</span></span> <span data-ttu-id="da114-107">O tamanho máximo e padrão da página é de 1.000 objetos e, por padrão, as inscrições mais recentes são retornadas primeiro.</span><span class="sxs-lookup"><span data-stu-id="da114-107">The maximum and default page size is 1,000 objects and by default, the most recent sign-ins are returned first.</span></span>
+<span data-ttu-id="890f1-105">Recupera os logons de usuário do Azure AD para seu locatário.</span><span class="sxs-lookup"><span data-stu-id="890f1-105">Retrieve the Azure AD user sign-ins for your tenant.</span></span> <span data-ttu-id="890f1-106">As inserções interativas de natureza (onde um nome de usuário/senha é passado como parte do token de autenticação) e as inserções federadas bem-sucedidas estão atualmente incluídas nos logs de login.</span><span class="sxs-lookup"><span data-stu-id="890f1-106">Sign-ins that are interactive in nature (where a username/password is passed as part of auth token) and successful federated sign-ins are currently included in the sign-in logs.</span></span> <span data-ttu-id="890f1-107">O tamanho máximo e padrão da página é de 1.000 objetos e, por padrão, as inscrições mais recentes são retornadas primeiro.</span><span class="sxs-lookup"><span data-stu-id="890f1-107">The maximum and default page size is 1,000 objects and by default, the most recent sign-ins are returned first.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="da114-108">Permissões</span><span class="sxs-lookup"><span data-stu-id="da114-108">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="890f1-108">Permissões</span><span class="sxs-lookup"><span data-stu-id="890f1-108">Permissions</span></span>
 
-<span data-ttu-id="da114-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions_reference).</span><span class="sxs-lookup"><span data-stu-id="da114-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions_reference).</span></span>
+<span data-ttu-id="890f1-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions_reference).</span><span class="sxs-lookup"><span data-stu-id="890f1-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions_reference).</span></span>
 
-|<span data-ttu-id="da114-111">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="da114-111">Permission type</span></span>      | <span data-ttu-id="da114-112">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="da114-112">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="890f1-111">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="890f1-111">Permission type</span></span>      | <span data-ttu-id="890f1-112">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="890f1-112">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="da114-113">Delegada (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="da114-113">Delegated (work or school account)</span></span> | <span data-ttu-id="da114-114">AuditLog.Read.All e Directory.Read.All</span><span class="sxs-lookup"><span data-stu-id="da114-114">AuditLog.Read.All and Directory.Read.All</span></span> |
-|<span data-ttu-id="da114-115">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="da114-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="da114-116">Sem suporte</span><span class="sxs-lookup"><span data-stu-id="da114-116">Not supported</span></span>   |
-|<span data-ttu-id="da114-117">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="da114-117">Application</span></span> | <span data-ttu-id="da114-118">AuditLog.Read.All e Directory.Read.All</span><span class="sxs-lookup"><span data-stu-id="da114-118">AuditLog.Read.All and Directory.Read.All</span></span>  |
+|<span data-ttu-id="890f1-113">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="890f1-113">Delegated (work or school account)</span></span> | <span data-ttu-id="890f1-114">AuditLog.Read.All e Directory.Read.All</span><span class="sxs-lookup"><span data-stu-id="890f1-114">AuditLog.Read.All and Directory.Read.All</span></span> |
+|<span data-ttu-id="890f1-115">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="890f1-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="890f1-116">Sem suporte</span><span class="sxs-lookup"><span data-stu-id="890f1-116">Not supported</span></span>   |
+|<span data-ttu-id="890f1-117">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="890f1-117">Application</span></span> | <span data-ttu-id="890f1-118">AuditLog.Read.All e Directory.Read.All</span><span class="sxs-lookup"><span data-stu-id="890f1-118">AuditLog.Read.All and Directory.Read.All</span></span>  |
 
-## <a name="http-request"></a><span data-ttu-id="da114-119">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="da114-119">HTTP request</span></span>
+<span data-ttu-id="890f1-119">Os aplicativos devem [estar registrados corretamente](/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal) no Azure AD.</span><span class="sxs-lookup"><span data-stu-id="890f1-119">Apps must be [properly registered](/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal) to Azure AD.</span></span>
+
+<span data-ttu-id="890f1-120">Além das permissões delegadas, o usuário inscreveu precisa pertencer a uma das seguintes funções de diretório que permitem ler relatórios de logons.</span><span class="sxs-lookup"><span data-stu-id="890f1-120">In addition to the delegated permissions, the signed-in user needs to belong to one of the following directory roles that allow them to read sign-in reports.</span></span> <span data-ttu-id="890f1-121">Para saber mais sobre funções de diretório, consulte Funções do [Azure AD integrados](/azure/active-directory/roles/permissions-reference):</span><span class="sxs-lookup"><span data-stu-id="890f1-121">To learn more about directory roles, see [Azure AD built-in roles](/azure/active-directory/roles/permissions-reference):</span></span>
++ <span data-ttu-id="890f1-122">Administrador global</span><span class="sxs-lookup"><span data-stu-id="890f1-122">Global Administrator</span></span>
++ <span data-ttu-id="890f1-123">Leitor global</span><span class="sxs-lookup"><span data-stu-id="890f1-123">Global Reader</span></span>
++ <span data-ttu-id="890f1-124">Leitor de Relatórios</span><span class="sxs-lookup"><span data-stu-id="890f1-124">Reports Reader</span></span>
++ <span data-ttu-id="890f1-125">Administrador de Segurança</span><span class="sxs-lookup"><span data-stu-id="890f1-125">Security Administrator</span></span>
++ <span data-ttu-id="890f1-126">Operador de segurança</span><span class="sxs-lookup"><span data-stu-id="890f1-126">Security Operator</span></span>
++ <span data-ttu-id="890f1-127">Leitor de segurança</span><span class="sxs-lookup"><span data-stu-id="890f1-127">Security Reader</span></span>
+
+## <a name="http-request"></a><span data-ttu-id="890f1-128">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="890f1-128">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 ```http
 GET auditLogs/signIns
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="da114-120">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="da114-120">Optional query parameters</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="890f1-129">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="890f1-129">Optional query parameters</span></span>
 
-<span data-ttu-id="da114-121">Este método dá suporte `$top` aos `$skiptoken` parâmetros , e `$filter` OData Query para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="da114-121">This method supports the `$top`, `$skiptoken`, and `$filter` OData Query Parameters to help customize the response.</span></span> <span data-ttu-id="da114-122">Para obter detalhes sobre como usar esses parâmetros, confira [Parâmetros de consulta do OData](/graph/query_parameters).</span><span class="sxs-lookup"><span data-stu-id="da114-122">For details about how to use these parameters, see [OData query parameters](/graph/query_parameters).</span></span>
+<span data-ttu-id="890f1-130">Este método dá suporte `$top` aos `$skiptoken` parâmetros , e `$filter` OData Query para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="890f1-130">This method supports the `$top`, `$skiptoken`, and `$filter` OData Query Parameters to help customize the response.</span></span> <span data-ttu-id="890f1-131">Para obter detalhes sobre como usar esses parâmetros, confira [Parâmetros de consulta do OData](/graph/query_parameters).</span><span class="sxs-lookup"><span data-stu-id="890f1-131">For details about how to use these parameters, see [OData query parameters](/graph/query_parameters).</span></span>
 
-## <a name="response"></a><span data-ttu-id="da114-123">Resposta</span><span class="sxs-lookup"><span data-stu-id="da114-123">Response</span></span>
+## <a name="response"></a><span data-ttu-id="890f1-132">Resposta</span><span class="sxs-lookup"><span data-stu-id="890f1-132">Response</span></span>
 
-<span data-ttu-id="da114-124">Se bem-sucedido, esse método retornará um código de resposta `200 OK` e uma coleção de objetos de [logon](../resources/signin.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="da114-124">If successful, this method returns a `200 OK` response code and collection of [signIn](../resources/signin.md) objects in the response body.</span></span> <span data-ttu-id="da114-125">A coleção de objetos é listada em ordem decrescente com base em **createdDateTime**.</span><span class="sxs-lookup"><span data-stu-id="da114-125">The collection of objects is listed in descending order based on **createdDateTime**.</span></span>
+<span data-ttu-id="890f1-133">Se bem-sucedido, esse método retornará um código de resposta `200 OK` e uma coleção de objetos de [logon](../resources/signin.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="890f1-133">If successful, this method returns a `200 OK` response code and collection of [signIn](../resources/signin.md) objects in the response body.</span></span> <span data-ttu-id="890f1-134">A coleção de objetos é listada em ordem decrescente com base em **createdDateTime**.</span><span class="sxs-lookup"><span data-stu-id="890f1-134">The collection of objects is listed in descending order based on **createdDateTime**.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="da114-126">Exemplos</span><span class="sxs-lookup"><span data-stu-id="da114-126">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="890f1-135">Exemplos</span><span class="sxs-lookup"><span data-stu-id="890f1-135">Examples</span></span>
 
-### <a name="example-1-list-all-sign-ins"></a><span data-ttu-id="da114-127">Exemplo 1: Listar todas as assinaturas</span><span class="sxs-lookup"><span data-stu-id="da114-127">Example 1: List all sign-ins</span></span>
+### <a name="example-1-list-all-sign-ins"></a><span data-ttu-id="890f1-136">Exemplo 1: Listar todas as assinaturas</span><span class="sxs-lookup"><span data-stu-id="890f1-136">Example 1: List all sign-ins</span></span>
 
-#### <a name="request"></a><span data-ttu-id="da114-128">Solicitação</span><span class="sxs-lookup"><span data-stu-id="da114-128">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="890f1-137">Solicitação</span><span class="sxs-lookup"><span data-stu-id="890f1-137">Request</span></span>
 
-<span data-ttu-id="da114-129">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="da114-129">Here is an example of the request.</span></span>
+<span data-ttu-id="890f1-138">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="890f1-138">Here is an example of the request.</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="da114-130">HTTP</span><span class="sxs-lookup"><span data-stu-id="da114-130">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="890f1-139">HTTP</span><span class="sxs-lookup"><span data-stu-id="890f1-139">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_signins"
@@ -60,29 +70,29 @@ GET auditLogs/signIns
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/auditLogs/signIns
 ```
-# <a name="c"></a>[<span data-ttu-id="da114-131">C#</span><span class="sxs-lookup"><span data-stu-id="da114-131">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="890f1-140">C#</span><span class="sxs-lookup"><span data-stu-id="890f1-140">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-signins-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="da114-132">JavaScript</span><span class="sxs-lookup"><span data-stu-id="da114-132">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="890f1-141">JavaScript</span><span class="sxs-lookup"><span data-stu-id="890f1-141">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/list-signins-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="da114-133">Objective-C</span><span class="sxs-lookup"><span data-stu-id="da114-133">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="890f1-142">Objective-C</span><span class="sxs-lookup"><span data-stu-id="890f1-142">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/list-signins-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="da114-134">Java</span><span class="sxs-lookup"><span data-stu-id="da114-134">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="890f1-143">Java</span><span class="sxs-lookup"><span data-stu-id="890f1-143">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/list-signins-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="da114-135">Resposta</span><span class="sxs-lookup"><span data-stu-id="da114-135">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="890f1-144">Resposta</span><span class="sxs-lookup"><span data-stu-id="890f1-144">Response</span></span>
 
-<span data-ttu-id="da114-136">Veja a seguir um exemplo da resposta.</span><span class="sxs-lookup"><span data-stu-id="da114-136">Here is an example of the response.</span></span>
-><span data-ttu-id="da114-137">**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.</span><span class="sxs-lookup"><span data-stu-id="da114-137">**Note:** The response object shown here might be shortened for readability.</span></span>
+<span data-ttu-id="890f1-145">Veja a seguir um exemplo da resposta.</span><span class="sxs-lookup"><span data-stu-id="890f1-145">Here is an example of the response.</span></span>
+><span data-ttu-id="890f1-146">**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.</span><span class="sxs-lookup"><span data-stu-id="890f1-146">**Note:** The response object shown here might be shortened for readability.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -163,11 +173,11 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-retrieve-the-first-10-sign-ins-to-apps-with-the-appdisplayname-that-starts-with-graph"></a><span data-ttu-id="da114-138">Exemplo 2: Recuperar os primeiros 10 logins em aplicativos com o appDisplayName que começa com "Graph"</span><span class="sxs-lookup"><span data-stu-id="da114-138">Example 2: Retrieve the first 10 sign-ins to apps with the appDisplayName that starts with 'Graph'</span></span>
+### <a name="example-2-retrieve-the-first-10-sign-ins-to-apps-with-the-appdisplayname-that-starts-with-graph"></a><span data-ttu-id="890f1-147">Exemplo 2: Recuperar os primeiros 10 logins em aplicativos com o appDisplayName que começa com "Graph"</span><span class="sxs-lookup"><span data-stu-id="890f1-147">Example 2: Retrieve the first 10 sign-ins to apps with the appDisplayName that starts with 'Graph'</span></span>
 
-#### <a name="request"></a><span data-ttu-id="da114-139">Solicitação</span><span class="sxs-lookup"><span data-stu-id="da114-139">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="890f1-148">Solicitação</span><span class="sxs-lookup"><span data-stu-id="890f1-148">Request</span></span>
 
-<span data-ttu-id="da114-140">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="da114-140">Here is an example of the request.</span></span>
+<span data-ttu-id="890f1-149">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="890f1-149">Here is an example of the request.</span></span>
 
 <!-- {
   "blockType": "request",
@@ -177,10 +187,10 @@ Content-type: application/json
 GET https://graph.microsoft.com/v1.0/auditLogs/signIns?&$filter=startsWith(appDisplayName,'Graph')&top=10
 ```
 
-#### <a name="response"></a><span data-ttu-id="da114-141">Resposta</span><span class="sxs-lookup"><span data-stu-id="da114-141">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="890f1-150">Resposta</span><span class="sxs-lookup"><span data-stu-id="890f1-150">Response</span></span>
 
-<span data-ttu-id="da114-142">Veja a seguir um exemplo da resposta.</span><span class="sxs-lookup"><span data-stu-id="da114-142">Here is an example of the response.</span></span> <span data-ttu-id="da114-143">A resposta inclui uma `@odata.nextLink` propriedade que contém uma URL que pode ser usada para recuperar os próximos 10 resultados.</span><span class="sxs-lookup"><span data-stu-id="da114-143">The response includes a `@odata.nextLink` property which contains a URL that can be used to retrieve the next 10 results.</span></span>
-><span data-ttu-id="da114-144">**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.</span><span class="sxs-lookup"><span data-stu-id="da114-144">**Note:** The response object shown here might be shortened for readability.</span></span>
+<span data-ttu-id="890f1-151">Veja a seguir um exemplo da resposta.</span><span class="sxs-lookup"><span data-stu-id="890f1-151">Here is an example of the response.</span></span> <span data-ttu-id="890f1-152">A resposta inclui uma `@odata.nextLink` propriedade que contém uma URL que pode ser usada para recuperar os próximos 10 resultados.</span><span class="sxs-lookup"><span data-stu-id="890f1-152">The response includes a `@odata.nextLink` property which contains a URL that can be used to retrieve the next 10 results.</span></span>
+><span data-ttu-id="890f1-153">**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.</span><span class="sxs-lookup"><span data-stu-id="890f1-153">**Note:** The response object shown here might be shortened for readability.</span></span>
 
 <!-- {
   "blockType": "response",
