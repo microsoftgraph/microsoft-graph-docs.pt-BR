@@ -5,18 +5,18 @@ localization_priority: Priority
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: ffff28d87464289db6280aa1a7e3822736db02b8
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 4ed98c9fef582d2299fb9ed63f2474b0a3903611
+ms.sourcegitcommit: d0d2d17a31cbcb01b1ae18bd6a18c39d7077069a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50439895"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53118676"
 ---
 # <a name="directoryrole-resource-type"></a>tipo de recurso directoryRole
 
 Namespace: microsoft.graph
 
-Representa uma função do diretório do Azure AD. As funções de diretório do AD do Azure também são conhecidas como *funções de administrador*. Para obter mais informações sobre funções de diretório (administrador), confira [Atribuindo funções de administrador no Azure AD](/azure/active-directory/users-groups-roles/directory-assign-admin-roles). Com o Microsoft Graph, você pode atribuir usuários a funções de diretório para conceder a eles as permissões da função de destino. Para ler uma função de diretório ou atualizar seus membros, primeiro ela deve ser ativada no locatário. Apenas a função de diretório Administradores de Empresa é ativada por padrão. Para ativar outras funções de diretório disponíveis, você envia uma solicitação POST com a ID do [directoryRoleTemplate](directoryroletemplate.md) no qual a função directory se baseia. [Liste modelos de função de diretório](../api/directoryroletemplate-list.md) para ter todas as outras funções de diretório disponíveis. Herda de [directoryObject](directoryobject.md).
+Representa uma função de diretório do Azure AD. As funções de diretório do Azure AD também são conhecidas como *funções de administrador*. Para obter mais informações sobre as funções de diretório (administrador), consulte [Atribuir funções de administrador no Azure AD](/azure/active-directory/users-groups-roles/directory-assign-admin-roles). Com o Microsoft Graph, você pode atribuir usuários a funções de diretório para conceder a eles as permissões da função de destino. Para ler uma função de diretório ou atualizar seus membros, primeiro ela deve ser ativada no locatário. Apenas a função do diretório Administradores da empresa é ativada por padrão. Para ativar outras funções de diretório disponíveis, você envia uma solicitação POST com a ID do [directoryRoleTemplate](directoryroletemplate.md) no qual a função de diretório é baseada. [Liste modelos de função de diretório](../api/directoryroletemplate-list.md) para obter todos os outros diretórios disponíveis. Herda de [directoryObject](directoryobject.md).
 
 Esse recurso permite:
 
@@ -32,6 +32,7 @@ Esse recurso permite:
 |[Listar membros](../api/directoryrole-list-members.md) |Coleção [directoryObject](directoryobject.md)| Obtenha os usuários que são membros da função directory da propriedade de navegação members.|
 |[Remover um membro](../api/directoryrole-delete-member.md) |[directoryObject](directoryobject.md)| Remova um usuário da função de diretório.|
 |[Ativar directoryRole](../api/directoryrole-post-directoryroles.md) |[directoryRole](directoryrole.md) | Ative uma função de diretório.|
+|[Lista de scopedMembers](../api/directoryrole-list-scopedmembers.md) |Coleção [scopedRoleMembership](scopedrolemembership.md)| Liste os membros desta função de diretório que têm como escopo as [unidades administrativas](administrativeunit.md), por meio da coleção de recursos scopedRoleMembership.|
 |[delta](../api/directoryrole-delta.md)|Coleção directoryRole| Obtenha alterações incrementais para as funções de diretório. |
 
 ## <a name="properties"></a>Propriedades
@@ -46,6 +47,7 @@ Esse recurso permite:
 | Relação | Tipo |Descrição|
 |:---------------|:--------|:----------|
 |membros|Coleção [directoryObject](directoryobject.md)|Usuários que são membros desta função de diretório. Métodos HTTP: GET, POST, DELETE. Somente leitura. Anulável.|
+|scopedMembers|Coleção [scopedRoleMembership](scopedrolemembership.md)| Membros desta função de diretório que têm como escopo [unidades administrativas](administrativeunit.md). Somente leitura. Anulável.|
 
 ## <a name="json-representation"></a>Representação JSON
 
