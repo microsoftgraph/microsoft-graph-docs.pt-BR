@@ -5,12 +5,12 @@ author: Alice-at-Microsoft
 localization_priority: Normal
 ms.prod: w10
 doc_type: conceptualPageType
-ms.openlocfilehash: 9b8f3d341f94c0c2309e9c2674cfee41ddc34a9b
-ms.sourcegitcommit: 1b09298649d5606b471b4cbe1055419bbe2fc7e5
+ms.openlocfilehash: 58dfdb7a260d2381b05332914fe71f9948c87e17
+ms.sourcegitcommit: 0ca0a1e2810701c2392e5c685e984fbfb6785579
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "52067647"
+ms.lasthandoff: 06/26/2021
+ms.locfileid: "53151591"
 ---
 # <a name="deploy-an-expedited-security-update-using-the-windows-update-for-business-deployment-service"></a>Implantar uma atualização de segurança acelerada usando o serviço de implantação Windows Update for Business
 
@@ -160,11 +160,11 @@ Content-Type: application/json
 
 ## <a name="step-3-assign-devices-to-the-deployment-audience"></a>Etapa 3: Atribuir dispositivos à audiência de implantação
 
-Após a criação de uma implantação, você pode atribuir dispositivos à audiência [de implantação.](/graph/api/resources/windowsupdates-deploymentaudience) Os dispositivos podem ser atribuídos diretamente ou por meio de [grupos de ativos atualizáveis.](/graph/api/resources/windowsupdates-updatableassetgroup) Depois que a audiência de implantação é atualizada com êxito, o Windows Update começa a oferecer a atualização para os dispositivos relevantes de acordo com as configurações de implantação.
+Após a criação de uma implantação, você pode atribuir dispositivos à audiência [de implantação.](/graph/api/resources/windowsupdates-deploymentaudience) Quando o público de implantação é atualizado com êxito, o Windows Update começa a oferecer a atualização para os dispositivos relevantes de acordo com as configurações de implantação.
 
 Os dispositivos são registrados automaticamente com o serviço quando adicionados aos membros ou coleções de exclusões de um público de implantação (ou seja, um [objeto azureADDevice](/graph/api/resources/windowsupdates-azureaddevice) é criado automaticamente se ainda não existir).
 
-Veja a seguir um exemplo de adição de grupos de ativos atualizáveis e dispositivos do Azure AD como membros da audiência de implantação, além de excluir um dispositivo específico do Azure AD.
+O exemplo a seguir mostra como adicionar dispositivos do Azure AD como membros da audiência de implantação.
 
 ### <a name="request"></a>Solicitação
 
@@ -175,19 +175,13 @@ Content-type: application/json
 {
     "addMembers": [
         {
-            "@odata.type": "#microsoft.graph.windowsUpdates.updatableAssetGroup",
-            "id": "String (identifier)"
-        },
-        {
             "@odata.type": "#microsoft.graph.windowsUpdates.azureADDevice",
             "id": "String (identifier)"
         },
         {
             "@odata.type": "#microsoft.graph.windowsUpdates.azureADDevice",
             "id": "String (identifier)"
-        }
-    ],
-    "addExclusions": [
+        },
         {
             "@odata.type": "#microsoft.graph.windowsUpdates.azureADDevice",
             "id": "String (identifier)"

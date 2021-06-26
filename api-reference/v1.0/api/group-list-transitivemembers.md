@@ -5,12 +5,12 @@ author: Jordanndahl
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 31fd82f4d632c63e3cac52a3792053de0eea531d
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: bd3d6d8bbb301d29458770458529446e560f3be1
+ms.sourcegitcommit: 0ca0a1e2810701c2392e5c685e984fbfb6785579
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52682513"
+ms.lasthandoff: 06/26/2021
+ms.locfileid: "53151633"
 ---
 # <a name="list-group-transitive-members"></a>Listar membros transitivos de grupo
 
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | GroupMember.Read.All, Group.Read.All, Group.Member.ReadWrite.All, Group.ReadWrite.All, Directory.Read.All |
 
->**Observação:** Para listar os membros de um grupo de associação oculto, a permissão Member.Read.Hidden é necessária.
+>**Observação:** Para listar os membros de um grupo de associação oculto, a *permissão Member.Read.Hidden* é necessária.
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
 
@@ -43,6 +43,8 @@ GET /groups/{id}/transitiveMembers
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
 Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta, incluindo `$search`, `$count`, e `$filter`. Você pode usar `$search` nas propriedades **displayName** e **descrição**. Quando itens são adicionados ou atualizados para este recurso, eles são indexados especialmente para uso com os `$count` e `$search` parâmetros de consulta. Pode haver um pequeno atraso entre quando um item é adicionado ou atualizado e quando está disponível no índice.
+
+Para filtrar os resultados no tipo OData, como `microsoft.graph.user` ou , você deve usar os `microsoft.graph.group` [parâmetros de consulta avançados](/graph/aad-advanced-queries). Ou seja, o header **ConsistencyLevel** definido como `eventual` e a cadeia de `$count=true` caracteres de consulta.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -129,7 +131,7 @@ Content-type: application/json
 Este é um exemplo de solicitação.
 
 <!-- {
-  "blockType": "ignored",
+  "blockType": "request",
   "name": "get_group_transitivemembers_count"
 }-->
 
@@ -150,18 +152,79 @@ Este é um exemplo de resposta.
 ```http
 HTTP/1.1 200 OK
 Content-type: text/plain
+
 ```
 
 `893`
 
-### <a name="example-3-use-odata-cast-and-search-to-get-membership-in-groups-with-display-names-that-contain-the-letters-tier-including-a-count-of-returned-objects"></a>Exemplo 3: Use o OData cast e $search para obter associação em grupos com nomes de exibição que contêm as letras "camada" incluindo uma contagem de objetos retornados
+### <a name="example-3-use-the-microsoftgraphgroup-odata-cast-to-get-only-members-that-are-groups"></a>Exemplo 3: Use o odata microsoft.graph.group para obter apenas membros que são grupos
 
 #### <a name="request"></a>Solicitação
 
 Este é um exemplo de solicitação.
 
 <!-- {
-  "blockType": "ignored",
+  "blockType": "request",
+  "name": "get_group_transitivemembers_odataCast"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/groups/{id}/transitivemembers/microsoft.graph.group?$count=true
+ConsistencyLevel: eventual
+```
+
+#### <a name="response"></a>Resposta
+
+Este é um exemplo de resposta.
+
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.group",
+  "isCollection": true
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#groups",
+  "@odata.count": 2,
+  "value": [
+    {
+      "@odata.id": "https://graph.microsoft.com/v2/927c6607-8060-4f4a-a5f8-34964ac78d70/directoryObjects/4d0ef681-e88f-42a3-a2db-e6bf1e249e10/Microsoft.DirectoryServices.Group",
+      "id": "4d0ef681-e88f-42a3-a2db-e6bf1e249e10",
+      "organizationId": "927c6607-8060-4f4a-a5f8-34964ac78d70",
+      "description": null,
+      "displayName": "Executives",
+      "groupTypes": [],
+      "mail": "Executives@contoso.com",
+      "mailEnabled": true,
+      "mailNickname": "Executives",
+    },
+    {
+      "@odata.id": "https://graph.microsoft.com/v2/927c6607-8060-4f4a-a5f8-34964ac78d70/directoryObjects/d9fb0c47-c783-40a1-bce1-53b52ada51fc/Microsoft.DirectoryServices.Group",
+      "id": "d9fb0c47-c783-40a1-bce1-53b52ada51fc",
+      "organizationId": "927c6607-8060-4f4a-a5f8-34964ac78d70",
+      "displayName": "Project Falcon",
+      "groupTypes": [],
+      "mail": "Falcon@contoso.com",
+      "mailEnabled": true,
+      "mailNickname": "Falcon",
+    }
+  ]
+}
+```
+
+### <a name="example-4-use-odata-cast-and-search-to-get-membership-in-groups-with-display-names-that-contain-the-letters-tier-including-a-count-of-returned-objects"></a>Exemplo 4: use o OData cast e $search para obter associação em grupos com nomes de exibição que contêm as letras 'camada' incluindo uma contagem de objetos retornados
+
+#### <a name="request"></a>Solicitação
+
+Este é um exemplo de solicitação.
+
+<!-- {
+  "blockType": "request",
   "name": "get_tier_count"
 }-->
 ```msgraph-interactive
@@ -197,14 +260,15 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-4-use-odata-cast-and-filter-to-get-user-membership-in-groups-with-a-display-name-that-starts-with-a-including-a-count-of-returned-objects"></a>Exemplo 4: use o OData cast e $filter para obter a associação do usuário em grupos com um nome de exibição que começa com 'A' incluindo uma contagem de objetos retornados
+
+### <a name="example-5-use-odata-cast-and-filter-to-get-user-membership-in-groups-with-a-display-name-that-starts-with-a-including-a-count-of-returned-objects"></a>Exemplo 5: use o OData cast e $filter para obter a associação do usuário em grupos com um nome de exibição que começa com 'A' incluindo uma contagem de objetos retornados
 
 #### <a name="request"></a>Solicitação
 
 Este é um exemplo de solicitação.
 
 <!-- {
-  "blockType": "ignored",
+  "blockType": "request",
   "name": "get_a_count"
 }-->
 
@@ -240,6 +304,9 @@ Content-type: application/json
   ]
 }
 ```
+
+
+
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!-- {

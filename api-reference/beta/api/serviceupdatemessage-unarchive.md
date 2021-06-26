@@ -5,12 +5,12 @@ author: payiAzure
 localization_priority: Normal
 ms.prod: service-communications
 doc_type: apiPageType
-ms.openlocfilehash: 79c5b5045200a366e9ce4df24eb21f554ae92c1a
-ms.sourcegitcommit: d586ddb253d27f9ccb621bd128f6a6b4b1933918
+ms.openlocfilehash: c92f5af0b718bcf57f4e0e685046e54b5d55e033
+ms.sourcegitcommit: 0ca0a1e2810701c2392e5c685e984fbfb6785579
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53107767"
+ms.lasthandoff: 06/26/2021
+ms.locfileid: "53151703"
 ---
 # <a name="serviceupdatemessage-unarchive"></a>serviceUpdateMessage: unarchive
 Namespace: microsoft.graph
@@ -25,7 +25,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|ServiceMessageViewpoint.Write|
-|Delegado (conta pessoal da Microsoft)|ServiceMessageViewpoint.Write|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|Sem suporte|
 
 ## <a name="http-request"></a>Solicitação HTTP

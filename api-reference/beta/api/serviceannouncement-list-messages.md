@@ -5,12 +5,12 @@ author: payiAzure
 localization_priority: Normal
 ms.prod: service-communications
 doc_type: apiPageType
-ms.openlocfilehash: 55c4cd8bd6a6daf84c3f269006fd8d54a4b383e0
-ms.sourcegitcommit: d586ddb253d27f9ccb621bd128f6a6b4b1933918
+ms.openlocfilehash: 9aca8752be18bad686677c4c718492ea93ccf0f4
+ms.sourcegitcommit: 0ca0a1e2810701c2392e5c685e984fbfb6785579
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53107766"
+ms.lasthandoff: 06/26/2021
+ms.locfileid: "53151451"
 ---
 # <a name="list-messages"></a>Listar mensagens
 Namespace: microsoft.graph
@@ -27,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|ServiceMessage.Read.All|
-|Delegado (conta pessoal da Microsoft)|ServiceMessage.Read.All|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|ServiceMessage.Read.All|
 
 ## <a name="http-request"></a>Solicitação HTTP

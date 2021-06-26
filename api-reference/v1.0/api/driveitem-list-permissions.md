@@ -4,20 +4,20 @@ ms.date: 09/10/2017
 title: Listar quem tem acesso a um arquivo
 localization_priority: Normal
 ms.prod: sharepoint
-description: Listar as permissões efetivas de compartilhamento de um driveItem.
+description: Listar as permissões de compartilhamento eficazes de em um driveItem.
 doc_type: apiPageType
-ms.openlocfilehash: a89dc20289ee86933d4eee0c217f769b9fbd426e
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: d1e245cdc879d79145924185026f90e3510288df
+ms.sourcegitcommit: 0ca0a1e2810701c2392e5c685e984fbfb6785579
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50240273"
+ms.lasthandoff: 06/26/2021
+ms.locfileid: "53151542"
 ---
 # <a name="list-sharing-permissions-on-a-driveitem"></a>Listar permissões de compartilhamento em um driveItem
 
 Namespace: microsoft.graph
 
-Listar as permissões efetivas de compartilhamento em [um driveItem](../resources/driveitem.md).
+Listar as permissões de compartilhamento eficazes em [um driveItem](../resources/driveitem.md).
 
 ## <a name="access-to-sharing-permissions"></a>Acessar permissões de compartilhamento
 
@@ -70,8 +70,6 @@ As permissões efetivas de compartilhamento de um DriveItem podem vir de duas fo
 * Permissões de compartilhamento herdadas de ancestrais do DriveItem
 
 Os chamadores podem diferenciar se a permissão é herdada ou não verificando a propriedade **inheritedFrom**. Esta propriedade é um recurso [**itemReference**](../resources/itemreference.md) que referencia o ancestral do qual a permissão é herdada.
-
-Níveis de permissão do SharePoint definidos em um item retornam com um prefixo 'SP'. Por exemplo, SP.Somente exibição, SP.Acesso limitado, SP.Exibir Dados do Web Analytics. Confira a [Lista completa de funções do SharePoint](/SharePoint/sites/user-permissions-and-permission-levels#section1).
 
 ## <a name="example"></a>Exemplo
 
@@ -158,7 +156,7 @@ A relação **permissions** de um DriveItem não pode ser expandida como parte d
 
 ## <a name="error-responses"></a>Respostas de erro
 
-Veja mais informações sobre como os erros são retornados no tópico [Respostas de erro][error-response].
+Leia o tópico [Respostas de Erro][error-response] para obter mais informações sobre como os erros são retornados.
 
 [error-response]: /graph/errors
 
