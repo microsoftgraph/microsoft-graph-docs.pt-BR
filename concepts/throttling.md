@@ -4,12 +4,12 @@ description: Os limites de controle limitam número de chamadas simultâneas par
 author: davidmu1
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: 88bbdf56f1ef59fe1e805437b34d46f7e8927613
-ms.sourcegitcommit: e68fdfb1124d16265deb8df268d4185d9deacac6
+ms.openlocfilehash: 482b4cd4dba1c3cf7e2f726820480bd5e990df35
+ms.sourcegitcommit: 0ca0a1e2810701c2392e5c685e984fbfb6785579
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "49580981"
+ms.lasthandoff: 06/26/2021
+ms.locfileid: "53151507"
 ---
 # <a name="microsoft-graph-throttling-guidance"></a>Diretrizes de limitação do Microsoft Graph
 
@@ -186,7 +186,7 @@ Os recursos a seguir são fornecidos pelo serviço do Outlook.
 Os limites anteriores se aplicam aos seguintes recursos:  
 onenote, notebook, sectionGroup, onenoteSection, onenotePage, onenoteResource, onenoteOperation
 
-Você pode encontrar informações adicionais sobre as práticas recomendadas no [limitação da API do OneNote e como evitá-la](https://developer.microsoft.com/en-us/office/blogs/onenote-api-throttling-and-how-to-avoid-it/).  
+Você pode encontrar informações adicionais sobre as práticas recomendadas no [limitação da API do OneNote e como evitá-la](https://developer.microsoft.com/pt-BR/office/blogs/onenote-api-throttling-and-how-to-avoid-it/).  
 
 > **Observação:** os recursos listados acima não retornam um cabeçalho `Retry-After` em respostas `429 Too Many Requests`.
 
@@ -503,13 +503,13 @@ Os limites anteriores se aplicam aos seguintes recursos: dataPolicyOperation.
 
 ### <a name="assignment-service-limits"></a>Limites de serviço de atribuição
 
-Os limites a seguir se aplicam a solicitações na API beta do serviço de atribuição:
+Os limites a seguir se aplicam às solicitações no serviço de atribuição API:
 
 | Tipo de solicitação                 | Limitar por aplicativo por locatário     | Limitar por locatário para todos os aplicativos |
 |---------------------------|------------------------------|----------------------------|
 | Qualquer         | 5000 solicitações a cada 10 segundos   | 15.000 solicitações a cada 10 segundos |
 | GET me/Assignment  | 50 solicitações a cada 10 segundos | 150 solicitações a cada 10 segundos |  
 
-Os limites anteriores se aplicam aos seguintes recursos: [educationAssignment](/graph/api/resources/educationassignment?view=graph-rest-beta)
-[educationSubmission](/graph/api/resources/educationsubmission?view=graph-rest-beta)
-[educationResource](/graph/api/resources/educationresource?view=graph-rest-beta)
+Os limites anteriores se aplicam aos seguintes recursos: [educationAssignment](/graph/api/resources/educationassignment?view=graph-rest)
+[educationSubmission](/graph/api/resources/educationsubmission?view=graph-rest)
+[educationResource](/graph/api/resources/educationresource?view=graph-rest)
