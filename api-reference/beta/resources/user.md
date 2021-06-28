@@ -5,12 +5,12 @@ author: jpettere
 localization_priority: Priority
 ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: f81c28b15720f494c51ab2893193a4cd107aa1ca
-ms.sourcegitcommit: d0d2d17a31cbcb01b1ae18bd6a18c39d7077069a
+ms.openlocfilehash: f4933fab101ad205e7e85a74f3afa5f16890c7be
+ms.sourcegitcommit: 0ca0a1e2810701c2392e5c685e984fbfb6785579
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53118445"
+ms.lasthandoff: 06/26/2021
+ms.locfileid: "53151661"
 ---
 # <a name="user-resource-type"></a>Tipo de recurso de usuário
 
@@ -72,6 +72,7 @@ Esse recurso permite:
 | [getByIds](../api/directoryobject-getbyids.md) | Coleção de cadeias de caracteres | Retorna os objetos de diretório especificados a partir de uma lista de ids. |
 | [getMemberGroups](../api/user-getmembergroups.md) | Coleção de cadeias de caracteres | Retorne todos os grupos dos quais o usuário é membro. A verificação é transitiva. |
 | [getMemberObjects](../api/user-getmemberobjects.md) | Coleção String | Retorna todos os grupos, funções de diretório e unidades administrativas dos quais o usuário é membro. A verificação é transitiva. |
+| [Get transitiveReports](../api/user-get-transitivereports.md) | Inteiro | Obtenha a contagem de relatórios transitivos para um usuário na propriedade de navegação transitiveReports. |
 | [Listar createdObjects](../api/user-list-createdobjects.md) | Coleção [directoryObject](directoryobject.md) | Obter os objetos directory criados pelo usuário da propriedade de navegação createdObjects. |
 | [Listar licenseDetails](../api/user-list-licensedetails.md) | Coleção [licenseDetails](licensedetails.md) | Obtenha uma coleção de objetos licenseDetails. |
 | [Listar ownedDevices](../api/user-list-owneddevices.md) | Coleção [directoryObject](directoryobject.md) | Obter os dispositivos que pertencem ao usuário da propriedade de navegação ownedDevices. |
@@ -318,6 +319,7 @@ Hence the type of the corresponding 3 properties remain as string type in the Pr
 |settings|[userSettings](usersettings.md) | Somente leitura. Anulável.|
 |trabalho em equipe|[userTeamwork](userteamwork.md)| Um contêiner dos recursos do Microsoft Teams disponíveis para o usuário. Somente leitura. Anulável.|
 |todo|[todo](todo.md)|Representa os serviços To Do disponíveis para um usuário. |
+|transitiveReports|Coleção [directoryObject](directoryobject.md) | Os relatórios transitivos de um usuário. Só leitura.|
 |usageRight|Coleção [usageRight](usageright.md)|Representa os direitos de uso concedidos a um usuário. |
 
 ### <a name="user-preferences-for-languages-and-regional-formats"></a>Preferências do usuário para idiomas e formatos regionais.
