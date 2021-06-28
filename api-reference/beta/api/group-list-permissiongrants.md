@@ -5,12 +5,12 @@ author: akjo
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: ab1189d7c01a521af65cdb6b241b8068687e7c84
-ms.sourcegitcommit: 6e7d9987a255f1bee04f196a4a7e37f56621bfb8
+ms.openlocfilehash: ee21465a044274e8583debc645f379269e531433
+ms.sourcegitcommit: b5fbb1a715e3479bdd095ef00deb0c932eafc328
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "51944272"
+ms.lasthandoff: 06/28/2021
+ms.locfileid: "53162242"
 ---
 # <a name="list-permissiongrants-of-a-group"></a>Listar permissionGrants de um grupo
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Listar tudo [concessões de permissão para recursos específicos](../resources/resourcespecificpermissiongrant.md) no [grupo](../resources/group.md). Esta é uma lista de aplicativos do Azure Active Directory que têm acesso ao grupo junto com o tipo de acesso que cada aplicativo possui.
+Listar todas [concessões de permissão específicas de recursos](../resources/resourcespecificpermissiongrant.md) no [grupo](../resources/group.md). Esta lista especifica os aplicativos Microsoft Azure Active Directory que têm acesso ao **grupo**, junto com o tipo correspondente de acesso específico de recursos que cada aplicativo tem.
 
 ## <a name="permissions"></a>Permissões
 
