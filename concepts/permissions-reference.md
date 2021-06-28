@@ -4,12 +4,12 @@ description: O Microsoft Graph expõe as permissões granulares que controlam o 
 author: jackson-woods
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 15bac110263b04378d44e5fb92fbce55163aedc2
-ms.sourcegitcommit: d586ddb253d27f9ccb621bd128f6a6b4b1933918
+ms.openlocfilehash: 6460c9de594a84b21d2f7c3898291705aaf665a5
+ms.sourcegitcommit: 0ca0a1e2810701c2392e5c685e984fbfb6785579
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53108716"
+ms.lasthandoff: 06/26/2021
+ms.locfileid: "53151605"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Referência de permissões do Microsoft Graph
 
@@ -1663,17 +1663,24 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 
 |   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador | Suporte da conta da Microsoft |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _RoleManagement.Read.All_ | Ler os dados da função de gerenciamento para todos os provedores RBAC | Permite que o aplicativo leia as configurações de controle de acesso baseado na função (RBAC) de todos os [provedores RBAC](/graph/api/resources/rolemanagement?view=graph-rest-beta&preserve-view=true), em nome do usuário conectado. Isso inclui as definições de leitura e as atribuições de função. | Sim | Não |
-| _RoleManagement.Read.Directory_ | Ler os dados da função de gerenciamento para Azure Active Directory | Permite que o aplicativo leia e gerencie as configurações de controle de acesso baseado em função (RBAC) da sua empresa, em nome do usuário conectado. Isso inclui a leitura de modelos de função de diretório, funções de diretório e associações. | Sim | Não |
-| _RoleManagement.ReadWrite.Directory_ | Ler e gravar dados de gerenciamento de função no Azure AD | Permite que o aplicativo leia e gerencie as configurações de RBAC (controle de acesso baseado em função) da sua empresa, em nome do usuário conectado. Isso inclui a instanciação das funções de diretório, o gerenciamento de associação da função de diretório, a leitura dos modelos da função de diretório, as associações e as funções de diretório. | Sim | Não |
+| _RoleAssignmentSchedule.Read.Directory_ | Leia todas as atribuições de funções ativas para o diretório da sua empresa. | Permite que o aplicativo leia as atribuições ativas de controle de acesso baseado em função (RBAC) para o diretório da sua empresa, em nome do usuário conectado. Isso inclui a leitura de modelos de função de diretório e funções de diretório. | Sim | Não |
+| _RoleEligibilitySchedule.Read.Directory_ | Leia todas as atribuições de funções elegíveis para o diretório da sua empresa. | Permite que o aplicativo leia as atribuições qualificadas de controle de acesso baseado em função (RBAC) para o diretório da sua empresa, em nome do usuário conectado. Isso inclui a leitura de modelos de função de diretório e funções de diretório. | Sim | Não |
+| _RoleManagement.Read.All_ | Leia os dados de gerenciamento de função para todos os provedores RBAC. | Permite que o aplicativo leia as configurações de controle de acesso baseado na função (RBAC) de todos os [provedores RBAC](/graph/api/resources/rolemanagement?view=graph-rest-beta&preserve-view=true), em nome do usuário conectado. Isso inclui as definições de leitura e as atribuições de função. | Sim | Não |
+| _RoleManagement.Read.Directory_ | Leia os dados de gerenciamento de função para o Azure Active Directory. | Permite que o aplicativo leia e gerencie as configurações de controle de acesso baseado em função (RBAC) da sua empresa, em nome do usuário conectado. Isso inclui a leitura de modelos de função de diretório, funções de diretório e associações. | Sim | Não |
+| _RoleManagementPolicy.Read.Directory_ | Leia todas as políticas para tarefas de funções privilegiadas para o diretório da sua empresa. | Permite que o aplicativo leia políticas para tarefas de controle de acesso baseado em função privilegiada (RBAC) para o diretório de sua empresa, em nome do usuário conectado. | Sim | Não |
+| _RoleAssignmentSchedule.ReadWrite.Directory_ | Leia, atualize e exclua todas as atribuições de funções ativas para o diretório da sua empresa. | Permite que o aplicativo leia e gerencie as atribuições ativas de controle de acesso baseado em função (RBAC) para o diretório da sua empresa, em nome do usuário conectado. Isso inclui o gerenciamento de associações de função de diretório ativo e leitura de modelos de função de diretório, funções de diretório e associações ativas. | Sim | Não |
+| _RoleEligibilitySchedule.ReadWrite.Directory_ | Leia, atualize e exclua  todas as tarefas de funções elegíveis para o diretório da sua empresa. | Permite que o aplicativo leia e gerencie as tarefas de controle de acesso baseado em função (RBAC) qualificadas para o diretório da sua empresa, em nome do usuário conectado. Isso inclui o gerenciamento de associações de funções de diretório elegíveis e a leitura de modelos de funções de diretórios, funções de diretórios e associações elegíveis. | Sim | Não |
+| _RoleManagement.ReadWrite.Directory_ | Ler e gravar dados de gerenciamento de função para o Azure Active Directory. | Permite que o aplicativo leia e gerencie as configurações de RBAC (controle de acesso baseado em função) da sua empresa, em nome do usuário conectado. Isso inclui a instanciação das funções de diretório, o gerenciamento de associação da função de diretório, a leitura dos modelos da função de diretório, as associações e as funções de diretório. | Sim | Não |
+| _RoleManagementPolicy.ReadWrite.Directory_ | Leia, atualize e exclua todas as políticas para tarefas de funções privilegiadas para o diretório da sua empresa. | Permite que o aplicativo leia, atualize e exclua políticas para tarefas de controle de acesso baseado em função privilegiada (RBAC) para o diretório de sua empresa, em nome do usuário conectado. | Sim | Não |
 
 #### <a name="application-permissions"></a>Permissões de aplicativos
 
 |   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador |
 |:----------------|:------------------|:-------------|:-----------------------|
-| _RoleManagement.Read.All_ | Ler os dados da função de gerenciamento para todos os provedores RBAC | Permite que o aplicativo leia as configurações de controle de acesso baseado na função (RBAC) de todos os [provedores RBAC](/graph/api/resources/rolemanagement?view=graph-rest-beta&preserve-view=true), sem um usuário conectado. Isso inclui as definições de leitura e as atribuições de função. | Sim |
-| _RoleManagement.Read.Directory_ | Ler os dados da função de gerenciamento para Azure Active Directory | Permite que o aplicativo leia e gerencie as configurações de RBAC (controle de acesso baseado em função) da sua empresa, em nome do usuário conectado. Isso inclui a leitura de modelos da função de diretório, as associações e as funções de diretório. | Sim |
-| _RoleManagement.ReadWrite.Directory_ | Ler e gravar dados de gerenciamento de função no Azure AD | Permite que o aplicativo leia e gerencie as configurações de controle de acesso baseado em função (RBAC) para o diretório da sua empresa, sem um usuário conectado. Isso inclui instanciar funções de diretório e gerenciamento de associação de função de diretório e leitura de modelos de função de diretório, funções de diretório e associações. | Sim |
+| _RoleManagement.Read.All_ | Leia os dados de gerenciamento de função para todos os provedores RBAC. | Permite que o aplicativo leia as configurações de controle de acesso baseado na função (RBAC) de todos os [provedores RBAC](/graph/api/resources/rolemanagement?view=graph-rest-beta&preserve-view=true), sem um usuário conectado. Isso inclui as definições de leitura e as atribuições de função. | Sim |
+| _RoleManagement.Read.Directory_ | Leia os dados de gerenciamento de função para o Azure Active Directory. | Permite que o aplicativo leia e gerencie as configurações de RBAC (controle de acesso baseado em função) da sua empresa, em nome do usuário conectado. Isso inclui a leitura de modelos da função de diretório, as associações e as funções de diretório. | Sim |
+| _RoleManagement.ReadWrite.Directory_ | Ler e gravar dados de gerenciamento de função para o Azure Active Directory. | Permite que o aplicativo leia e gerencie as configurações de controle de acesso baseado em função (RBAC) para o diretório da sua empresa, sem um usuário conectado. Isso inclui instanciar funções de diretório e gerenciamento de associação de função de diretório e leitura de modelos de função de diretório, funções de diretório e associações. | Sim |
+
 
 ### <a name="remarks"></a>Comentários
 Com a permissão _RoleManagement.Read.Directory_ um aplicativo pode ler directoryRoles e directoryRoleTemplates. Isso inclui a leitura de informações de associação para funções de diretório.
