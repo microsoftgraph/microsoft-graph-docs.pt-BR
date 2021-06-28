@@ -5,63 +5,63 @@ author: akjo
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: ab1189d7c01a521af65cdb6b241b8068687e7c84
-ms.sourcegitcommit: 6e7d9987a255f1bee04f196a4a7e37f56621bfb8
+ms.openlocfilehash: ee21465a044274e8583debc645f379269e531433
+ms.sourcegitcommit: b5fbb1a715e3479bdd095ef00deb0c932eafc328
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "51944272"
+ms.lasthandoff: 06/28/2021
+ms.locfileid: "53162242"
 ---
-# <a name="list-permissiongrants-of-a-group"></a><span data-ttu-id="6b8e1-103">Listar permissionGrants de um grupo</span><span class="sxs-lookup"><span data-stu-id="6b8e1-103">List permissionGrants of a group</span></span>
+# <a name="list-permissiongrants-of-a-group"></a><span data-ttu-id="b5d93-103">Listar permissionGrants de um grupo</span><span class="sxs-lookup"><span data-stu-id="b5d93-103">List permissionGrants of a group</span></span>
 
-<span data-ttu-id="6b8e1-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="6b8e1-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="b5d93-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="b5d93-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="6b8e1-105">Listar tudo [concessões de permissão para recursos específicos](../resources/resourcespecificpermissiongrant.md) no [grupo](../resources/group.md).</span><span class="sxs-lookup"><span data-stu-id="6b8e1-105">List all [resource-specific permission grants](../resources/resourcespecificpermissiongrant.md) on the [group](../resources/group.md).</span></span> <span data-ttu-id="6b8e1-106">Esta é uma lista de aplicativos do Azure Active Directory que têm acesso ao grupo junto com o tipo de acesso que cada aplicativo possui.</span><span class="sxs-lookup"><span data-stu-id="6b8e1-106">This is a list of Azure AD apps that have access to the group along with the kind of access that each app has.</span></span>
+<span data-ttu-id="b5d93-p101">Listar todas [concessões de permissão específicas de recursos](../resources/resourcespecificpermissiongrant.md) no [grupo](../resources/group.md). Esta lista especifica os aplicativos Microsoft Azure Active Directory que têm acesso ao **grupo**, junto com o tipo correspondente de acesso específico de recursos que cada aplicativo tem.</span><span class="sxs-lookup"><span data-stu-id="b5d93-p101">List all [resource-specific permission grants](../resources/resourcespecificpermissiongrant.md) on the [group](../resources/group.md). This list specifies the Azure AD apps that have access to the **group**, along with the corresponding kind of resource-specific access that each app has.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="6b8e1-107">Permissões</span><span class="sxs-lookup"><span data-stu-id="6b8e1-107">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="b5d93-107">Permissões</span><span class="sxs-lookup"><span data-stu-id="b5d93-107">Permissions</span></span>
 
-<span data-ttu-id="6b8e1-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="6b8e1-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="b5d93-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="b5d93-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="6b8e1-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="6b8e1-110">Permission Type</span></span>                        | <span data-ttu-id="6b8e1-111">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="6b8e1-111">Permissions (from least to most privileged)</span></span>                                          |
+| <span data-ttu-id="b5d93-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="b5d93-110">Permission Type</span></span>                        | <span data-ttu-id="b5d93-111">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="b5d93-111">Permissions (from least to most privileged)</span></span>                                          |
 | :------------------------------------- | :----------------------------------------------------------------------------------- |
-| <span data-ttu-id="6b8e1-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="6b8e1-112">Delegated (work or school account)</span></span>     | <span data-ttu-id="6b8e1-113">GroupMember.Read.All, GroupMember.ReadWrite.All, Group.Read.All, Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="6b8e1-113">GroupMember.Read.All, GroupMember.ReadWrite.All, Group.Read.All, Group.ReadWrite.All</span></span> |
-| <span data-ttu-id="6b8e1-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="6b8e1-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="6b8e1-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="6b8e1-115">Not supported.</span></span>                                                                       |
-| <span data-ttu-id="6b8e1-116">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="6b8e1-116">Application</span></span>                            | <span data-ttu-id="6b8e1-117">GroupMember.Read.All, GroupMember.ReadWrite.All, Group.Read.All, Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="6b8e1-117">GroupMember.Read.All, GroupMember.ReadWrite.All, Group.Read.All, Group.ReadWrite.All</span></span> |
+| <span data-ttu-id="b5d93-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="b5d93-112">Delegated (work or school account)</span></span>     | <span data-ttu-id="b5d93-113">GroupMember.Read.All, GroupMember.ReadWrite.All, Group.Read.All, Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="b5d93-113">GroupMember.Read.All, GroupMember.ReadWrite.All, Group.Read.All, Group.ReadWrite.All</span></span> |
+| <span data-ttu-id="b5d93-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="b5d93-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="b5d93-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="b5d93-115">Not supported.</span></span>                                                                       |
+| <span data-ttu-id="b5d93-116">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="b5d93-116">Application</span></span>                            | <span data-ttu-id="b5d93-117">GroupMember.Read.All, GroupMember.ReadWrite.All, Group.Read.All, Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="b5d93-117">GroupMember.Read.All, GroupMember.ReadWrite.All, Group.Read.All, Group.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="6b8e1-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="6b8e1-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="b5d93-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="b5d93-118">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /groups/{group-id}/permissionGrants
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="6b8e1-119">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="6b8e1-119">Optional query parameters</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="b5d93-119">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="b5d93-119">Optional query parameters</span></span>
 
-<span data-ttu-id="6b8e1-120">Esta operação não é compatível com os [parâmetros de consulta OData](/graph/query-parameters) para personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="6b8e1-120">This operation does not support the [OData query parameters](/graph/query-parameters) to customize the response.</span></span>
+<span data-ttu-id="b5d93-120">Esta operação não é compatível com os [parâmetros de consulta OData](/graph/query-parameters) para personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="b5d93-120">This operation does not support the [OData query parameters](/graph/query-parameters) to customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="6b8e1-121">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="6b8e1-121">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="b5d93-121">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="b5d93-121">Request headers</span></span>
 
-| <span data-ttu-id="6b8e1-122">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="6b8e1-122">Header</span></span>           | <span data-ttu-id="6b8e1-123">Valor</span><span class="sxs-lookup"><span data-stu-id="6b8e1-123">Value</span></span>                      |
+| <span data-ttu-id="b5d93-122">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="b5d93-122">Header</span></span>           | <span data-ttu-id="b5d93-123">Valor</span><span class="sxs-lookup"><span data-stu-id="b5d93-123">Value</span></span>                      |
 | :--------------- | :------------------------- |
-| <span data-ttu-id="6b8e1-124">Autorização</span><span class="sxs-lookup"><span data-stu-id="6b8e1-124">Authorization</span></span>    | <span data-ttu-id="6b8e1-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="6b8e1-p103">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="b5d93-124">Autorização</span><span class="sxs-lookup"><span data-stu-id="b5d93-124">Authorization</span></span>    | <span data-ttu-id="b5d93-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="b5d93-p103">Bearer {token}. Required.</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="6b8e1-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="6b8e1-127">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="b5d93-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="b5d93-127">Request body</span></span>
 
-<span data-ttu-id="6b8e1-128">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="6b8e1-128">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="b5d93-128">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="b5d93-128">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="6b8e1-129">Resposta</span><span class="sxs-lookup"><span data-stu-id="6b8e1-129">Response</span></span>
+## <a name="response"></a><span data-ttu-id="b5d93-129">Resposta</span><span class="sxs-lookup"><span data-stu-id="b5d93-129">Response</span></span>
 
-<span data-ttu-id="6b8e1-130">Se for bem-sucedido, este método retorna um `200 OK` código de resposta e uma lista de [resourceSpecificPermissionGrant](../resources/resourcespecificpermissiongrant.md) objetos no corpo de resposta.</span><span class="sxs-lookup"><span data-stu-id="6b8e1-130">If successful, this method returns a `200 OK` response code and a list of [resourceSpecificPermissionGrant](../resources/resourcespecificpermissiongrant.md) objects in the response body.</span></span>
+<span data-ttu-id="b5d93-130">Se for bem-sucedido, este método retorna um `200 OK` código de resposta e uma lista de [resourceSpecificPermissionGrant](../resources/resourcespecificpermissiongrant.md) objetos no corpo de resposta.</span><span class="sxs-lookup"><span data-stu-id="b5d93-130">If successful, this method returns a `200 OK` response code and a list of [resourceSpecificPermissionGrant](../resources/resourcespecificpermissiongrant.md) objects in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="6b8e1-131">Exemplos</span><span class="sxs-lookup"><span data-stu-id="6b8e1-131">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="b5d93-131">Exemplos</span><span class="sxs-lookup"><span data-stu-id="b5d93-131">Examples</span></span>
 
-### <a name="request"></a><span data-ttu-id="6b8e1-132">Solicitação</span><span class="sxs-lookup"><span data-stu-id="6b8e1-132">Request</span></span>
+### <a name="request"></a><span data-ttu-id="b5d93-132">Solicitação</span><span class="sxs-lookup"><span data-stu-id="b5d93-132">Request</span></span>
 
-<span data-ttu-id="6b8e1-133">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="6b8e1-133">The following is an example of the request.</span></span>
+<span data-ttu-id="b5d93-133">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="b5d93-133">The following is an example of the request.</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="6b8e1-134">HTTP</span><span class="sxs-lookup"><span data-stu-id="6b8e1-134">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="b5d93-134">HTTP</span><span class="sxs-lookup"><span data-stu-id="b5d93-134">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "group_list_permission_grants"
@@ -69,19 +69,19 @@ GET /groups/{group-id}/permissionGrants
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/groups/14c981a4-dca9-4565-bae6-e13ada8861be/permissionGrants
 ```
-# <a name="c"></a>[<span data-ttu-id="6b8e1-135">C#</span><span class="sxs-lookup"><span data-stu-id="6b8e1-135">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="b5d93-135">C#</span><span class="sxs-lookup"><span data-stu-id="b5d93-135">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/group-list-permission-grants-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="6b8e1-136">JavaScript</span><span class="sxs-lookup"><span data-stu-id="6b8e1-136">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="b5d93-136">JavaScript</span><span class="sxs-lookup"><span data-stu-id="b5d93-136">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/group-list-permission-grants-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="6b8e1-137">Objective-C</span><span class="sxs-lookup"><span data-stu-id="6b8e1-137">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="b5d93-137">Objective-C</span><span class="sxs-lookup"><span data-stu-id="b5d93-137">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/group-list-permission-grants-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="6b8e1-138">Java</span><span class="sxs-lookup"><span data-stu-id="6b8e1-138">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="b5d93-138">Java</span><span class="sxs-lookup"><span data-stu-id="b5d93-138">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/group-list-permission-grants-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -90,11 +90,11 @@ GET https://graph.microsoft.com/beta/groups/14c981a4-dca9-4565-bae6-e13ada8861be
 
 ---
 
-### <a name="response"></a><span data-ttu-id="6b8e1-139">Resposta</span><span class="sxs-lookup"><span data-stu-id="6b8e1-139">Response</span></span>
+### <a name="response"></a><span data-ttu-id="b5d93-139">Resposta</span><span class="sxs-lookup"><span data-stu-id="b5d93-139">Response</span></span>
 
-<span data-ttu-id="6b8e1-140">O exemplo a seguir mostra a resposta.</span><span class="sxs-lookup"><span data-stu-id="6b8e1-140">The following example shows the response.</span></span>
+<span data-ttu-id="b5d93-140">O exemplo a seguir mostra a resposta.</span><span class="sxs-lookup"><span data-stu-id="b5d93-140">The following example shows the response.</span></span>
 
-><span data-ttu-id="6b8e1-141">**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.</span><span class="sxs-lookup"><span data-stu-id="6b8e1-141">**Note:** The response object shown here might be shortened for readability.</span></span>
+><span data-ttu-id="b5d93-141">**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.</span><span class="sxs-lookup"><span data-stu-id="b5d93-141">**Note:** The response object shown here might be shortened for readability.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
