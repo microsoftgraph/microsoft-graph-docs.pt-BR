@@ -5,12 +5,12 @@ author: akjo
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: f66f1fd083560d98cccbce1f58f9e43ef9634b37
-ms.sourcegitcommit: 979fe005c74eb99cd971df6b9511b2d3f7fe3cd4
+ms.openlocfilehash: 258bc1132f8a8f030a148b43a4ba04b1ebbba0eb
+ms.sourcegitcommit: b5fbb1a715e3479bdd095ef00deb0c932eafc328
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52990837"
+ms.lasthandoff: 06/28/2021
+ms.locfileid: "53162235"
 ---
 # <a name="list-permissiongrants-of-a-chat"></a>Listar permissionGrants de um chat
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Liste todas as [permissões específicas do recurso](../resources/resourcespecificpermissiongrant.md) no [chat](../resources/chat.md). Esta é uma lista de aplicativos do Azure AD que têm acesso ao chat, juntamente com o tipo de acesso que cada aplicativo tem.
+Liste todas as [concessões de permissão de recursos específicos](../resources/resourcespecificpermissiongrant.md) no [chat](../resources/chat.md). Esta lista especifica os aplicativos do Azure Active Directory que têm acesso ao **chat**, junto com o tipo correspondente de acesso específico ao recurso que cada aplicativo tem.
 
 ## <a name="permissions"></a>Permissões
 
