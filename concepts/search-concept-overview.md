@@ -5,12 +5,12 @@ localization_priority: Priority
 ms.prod: search
 author: snlraju-msft
 scenarios: getting-started
-ms.openlocfilehash: b152563f0104c32b78d9ea237ce5bf585597ec49
-ms.sourcegitcommit: cec76c5a58b359d79df764c849c8b459349b3b52
+ms.openlocfilehash: 732d6487bc73cf9cdf0f70168d00d4b0e13ce45e
+ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "52645511"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53208831"
 ---
 # <a name="overview-of-the-microsoft-search-api-in-microsoft-graph"></a>Visão geral da API da Pesquisa da Microsoft no Microsoft Graph
 
@@ -62,6 +62,8 @@ Está procurando a referência de API para esse serviço?
   - [Pesquisar conteúdo externo](search-concept-custom-types.md)(pré-visualização)
   - [Classificar resultados de pesquisa](search-concept-sort.md) (pré-visualização)
   - [Refinar resultados de pesquisa](search-concept-aggregation.md) (pré-visualização)
+  - [Solicitar correção ortográfica](search-concept-speller.md) (versão prévia)
+  - [Layout de exibição de pesquisa](search-concept-display-layout.md) (versão prévia)
   
 - Explore as APIs no [Explorador do Graph](https://developer.microsoft.com/graph/graph-explorer).
 - Baixe o [exemplo de conector de pesquisa](https://github.com/microsoftgraph/msgraph-search-connector-sample) no GitHub.
