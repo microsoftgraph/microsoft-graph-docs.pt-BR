@@ -26,8 +26,13 @@ items:
         href: /graph/use-the-api?context=graph/api/1.0
       - name: Paginação
         href: /graph/paging?context=graph/api/1.0
-      - name: Usar parâmetros de consulta
+      - name: Usar os parâmetros de consulta
         href: /graph/query-parameters?context=graph/api/1.0
+        items:
+          - name: Use o parâmetro de consulta de pesquisa
+            href: /graph/search-query-parameter?context=graph/api/1.0
+          - name: 'Recursos de consulta avançados '
+            href: /graph/aad-advanced-queries?context=graph/api/1.0
       - name: Envio em lote
         displayName: Batch requests
         href: /graph/json-batching?context=graph/api/1.0
@@ -414,7 +419,7 @@ items:
             items:
               - name: Listar tarefas
                 href: api/planneruser-list-tasks.md
-          - name: Teamwork
+          - name: Trabalho em equipe
             items:
               - name: Aplicativo instalado
                 href: resources/teamsappinstallation.md
@@ -432,7 +437,7 @@ items:
                 href: api/userscopeteamsappinstallation-get-chat.md
               - name: Obter chat para o usuário
                 href: api/chat-get.md
-          - name: Tarefas pendentes
+          - name: Tarefas To do
             items:
               - name: Tarefa
                 href: resources/todotask.md
@@ -4930,7 +4935,7 @@ items:
                         href: api/identityapiconnector-uploadclientcertificate.md
                       - name: Excluir
                         href: api/identityapiconnector-delete.md
-          - name: Gestão
+          - name: Governança
             items:
               - name: Avaliações do acesso
                 href: resources/accessreviewsv2-root.md
@@ -5626,7 +5631,7 @@ items:
                     href: api/reportroot-getyammergroupsactivitygroupcounts.md
                   - name: Obter contagens de atividades
                     href: api/reportroot-getyammergroupsactivitycounts.md
-      - name: Pesquisa
+      - name: Pesquisar
         displayname: Microsoft Search API
         items:
           - name: Consulta
@@ -5833,7 +5838,7 @@ items:
                 href: api/plannerprogresstaskboardtaskformat-get.md
               - name: Atualizar progresso do formato de quadro de tarefas
                 href: api/plannerprogresstaskboardtaskformat-update.md
-      - name: Teamwork
+      - name: Trabalho em equipe
         displayName: Microsoft Teams
         items:
           - name: Visão Geral

@@ -26,8 +26,13 @@ items:
         href: /graph/use-the-api?context=graph/api/beta
       - name: Paginação
         href: /graph/paging?context=graph/api/beta
-      - name: Usar parâmetros de consulta
+      - name: Usar os parâmetros de consulta
         href: /graph/query-parameters?context=graph/api/beta
+        items:
+          - name: Use o parâmetro de consulta de pesquisa
+            href: /graph/search-query-parameter?context=graph/api/beta
+          - name: 'Recursos de consulta avançados '
+            href: /graph/aad-advanced-queries?context=graph/api/beta
       - name: Envio em lote
         displayName: Batch requests
         href: /graph/json-batching?context=graph/api/beta
@@ -468,7 +473,7 @@ items:
                 href: api/profile-get.md
               - name: Excluir perfil do usuário
                 href: api/profile-delete.md
-          - name: Teamwork
+          - name: Trabalho em equipe
             items:
               - name: Aplicativo instalado
                 href: resources/teamsappinstallation.md
@@ -488,7 +493,7 @@ items:
                 href: api/chat-get.md
               - name: Listar chats para usuário
                 href: api/chat-list.md
-          - name: Tarefas pendentes
+          - name: Tarefas To do
             items:
               - name: Tarefa
                 href: resources/todotask.md
@@ -9587,6 +9592,15 @@ items:
                     href: api/cloudpcprovisioningpolicy-delete.md
                   - name: Atribuir
                     href: api/cloudpcprovisioningpolicy-assign.md
+              - name: Evento de auditoria de computador na nuvem
+                href: resources/cloudpcauditevent.md
+                items:
+                  - name: Listar
+                    href: api/virtualendpoint-list-auditevents.md
+                  - name: Obter
+                    href: api/cloudpcauditevent-get.md
+                  - name: Obter tipos de atividade de auditoria
+                    href: api/cloudpcauditevent-getauditactivitytypes.md
               - name: Configuração do usuário do computador na nuvem
                 href: resources/cloudpcusersetting.md
                 items:
@@ -11465,7 +11479,7 @@ items:
                         href: api/identityapiconnector-uploadclientcertificate.md
                       - name: Excluir
                         href: api/identityapiconnector-delete.md
-          - name: Gestão
+          - name: Governança
             items:
               - name: Avaliações do acesso
                 href: resources/accessreviewsv2-root.md
@@ -12946,7 +12960,7 @@ items:
                     href: api/reportroot-getyammergroupsactivitygroupcounts.md
                   - name: Obter contagens de atividades
                     href: api/reportroot-getyammergroupsactivitycounts.md
-      - name: Pesquisa
+      - name: Pesquisar
         displayname: Microsoft Search API
         items:
           - name: Consulta
@@ -13120,7 +13134,7 @@ items:
                 href: api/tiindicator-deletetiindicatorsbyexternalid.md
           - name: Erros
             href: resources/security-error-codes.md
-      - name: Saúde e comunicações do serviço (visualização)
+      - name: Comunicações e integridade do serviço (visualização)
         items:
           - name: Visão Geral
             href: resources/service-communications-api-overview.md
@@ -14007,7 +14021,7 @@ items:
                 href: api/onenote-post-notebooks.md
           - name: Concessões de permissão específicas de recursos
             href: resources/resourcespecificpermissiongrant.md
-      - name: Tarefas pendentes
+      - name: Tarefas To do
         displayName: Microsoft To Do
         items:
           - name: Visão Geral
