@@ -5,12 +5,12 @@ author: payiAzure
 localization_priority: Normal
 ms.prod: service-communications
 doc_type: apiPageType
-ms.openlocfilehash: 02fadfb7b6937e0e3bdf05d9d491192114268928
-ms.sourcegitcommit: 0ca0a1e2810701c2392e5c685e984fbfb6785579
+ms.openlocfilehash: 97ad1e2065c8d117e9532213ff192c78467adb7d
+ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2021
-ms.locfileid: "53151675"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53210724"
 ---
 # <a name="get-servicehealth"></a>Obter serviceHealth
 Namespace: microsoft.graph
@@ -61,6 +61,8 @@ Se tiver êxito, este método retornará um código de resposta e um `200 OK` [o
 ### <a name="example-1-get-the-properties-of-a-servicehealth-object"></a>Exemplo 1: Obter as propriedades de um objeto serviceHealth
 
 #### <a name="request"></a>Solicitação
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "sampleKeys": ["Microsoft 365 suite"],
@@ -71,6 +73,24 @@ Se tiver êxito, este método retornará um código de resposta e um `200 OK` [o
 ``` http
 GET https://graph.microsoft.com/beta/admin/serviceAnnouncement/healthOverviews/Microsoft 365 suite
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-servicehealth-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-servicehealth-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-servicehealth-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-servicehealth-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>Resposta
 <!-- {
@@ -95,6 +115,8 @@ Content-Type: application/json
 ### <a name="example-2-include-navigation-property-issues"></a>Exemplo 2: Incluir problemas de propriedade de navegação
 
 #### <a name="request"></a>Solicitação
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "sampleKeys": ["Microsoft 365 suite"],
@@ -105,6 +127,24 @@ Content-Type: application/json
 ``` http
 GET https://graph.microsoft.com/beta/admin/serviceAnnouncement/healthOverviews/Microsoft 365 suite?$expand=issues
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-servicehealth-with-issues-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-servicehealth-with-issues-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-servicehealth-with-issues-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-servicehealth-with-issues-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>Resposta
 >**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.

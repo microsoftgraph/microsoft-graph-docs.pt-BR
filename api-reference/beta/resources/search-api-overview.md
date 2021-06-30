@@ -5,12 +5,12 @@ localization_priority: Priority
 author: nmoreau
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: 13e60e5000db9a3cb4ef540970564e1a52ab2871
-ms.sourcegitcommit: f77c1385306fd40557aceb24fdfe4832cbb60a27
+ms.openlocfilehash: af390733e61d14cc411c583fccce7399bef5a39f
+ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/12/2021
-ms.locfileid: "52911659"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53209930"
 ---
 # <a name="use-the-microsoft-search-api-to-query-data"></a>Usar a API de Pesquisa da Microsoft para consultar dados
 
@@ -41,6 +41,7 @@ As solicitações de pesquisa são executadas em nome do usuário. Os resultados
 |[Refinar os resultados usando agregações](#refine-results-using-aggregations)| **aggregations** |
 |[Pesquisar tipos personalizados importados usando conectores](/graph/search-concept-custom-types)| **contentSources** |
 |[Solicitar verificação ortográfica](#request-spelling-correction)| **queryAlterationOptions** |
+|[Layout de exibição de pesquisa](#search-display-layout) (visualização)| **resultTemplateOptions**
 
 ## <a name="scope-search-based-on-entity-types"></a>Pesquisa de escopo com base em tipos de entidade
 
@@ -152,6 +153,14 @@ No corpo de solicitação do método [query](/graph/api/search-query?view=graph-
 
 Para exemplos que mostram como usar verificações ortográficas, consulte [Solicitar verificação ortográfica](/graph/search-concept-speller).
 
+## <a name="search-display-layout"></a>Layout de exibição de pesquisa
+
+A API de pesquisa permite renderizar resultados de pesquisa de [conectores](/microsoftsearch/connectors-overview), usando o layout de exibição ou modelo de resultado configurado pelo administrador de TI para cada conector. Os modelos de resultados são [Cartões Adaptáveis](https://adaptivecards.io/), que são uma combinação semanticamente significativa de layout e dados.
+
+Para obter o modelo de resultado em [searchresponse](searchresponse.md), você deve definir como **true** a propriedade **enableResultTemplate**, definida em [resultTemplateOptions](./resulttemplateoption.md), em [searchRequest](./searchrequest.md). A resposta inclui um **resultTemplateId** para cada [ocorrência de pesquisa](./searchhit.md), que mapeia para um dos layouts de exibição incluídos no dicionário **resultTemplates** incluído na resposta.
+
+Confira [Usar layout de exibição de pesquisa](/graph/search-concept-display-layout) para obter exemplos. 
+
 ## <a name="error-handling"></a>Tratamento de erros
 
 A API de pesquisa retorna respostas de erro conforme estipulado pela [definição de objeto de erro OData](http://docs.oasis-open.org/odata/odata-json-format/v4.01/cs01/odata-json-format-v4.01-cs01.html#sec_ErrorResponse). Cada uma delas é um objeto JSON que contém um código e uma mensagem.
@@ -204,6 +213,7 @@ Para compatibilidade com versões anteriores, as propriedades e tipos originais 
   - [Classificar resultados de pesquisa](/graph/search-concept-sort)
   - [Refinar resultados de pesquisa](/graph/search-concept-aggregation)
   - [Solicitar verificação ortográfica](/graph/search-concept-speller)
+  - [Usar layout de exibição de pesquisa](/graph/search-concept-display-layout)
 
 - Explore as APIs no [Explorador do Graph](https://developer.microsoft.com/graph/graph-explorer).
 

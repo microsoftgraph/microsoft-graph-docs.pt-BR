@@ -5,12 +5,12 @@ author: Alice-at-Microsoft
 localization_priority: Normal
 ms.prod: w10
 doc_type: conceptualPageType
-ms.openlocfilehash: 58dfdb7a260d2381b05332914fe71f9948c87e17
-ms.sourcegitcommit: 0ca0a1e2810701c2392e5c685e984fbfb6785579
+ms.openlocfilehash: d64cb09545d1ce664b017ba3fcbcd5989d0f2a25
+ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2021
-ms.locfileid: "53151591"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53210189"
 ---
 # <a name="deploy-an-expedited-security-update-using-the-windows-update-for-business-deployment-service"></a>Implantar uma atualização de segurança acelerada usando o serviço de implantação Windows Update for Business
 
@@ -85,9 +85,6 @@ Content-Type: application/json
 ```
 
 ## <a name="step-2-create-a-deployment"></a>Etapa 2: Criar uma implantação
-
-> [!NOTE]
-> Na primeira vez que você implantar uma atualização de segurança acelerada em seu locatário, poderá ter até um atraso de um dia enquanto o serviço estiver configurado para sua organização. Esse atraso não se aplica a implantações ou implantações subsequentes de atualizações de recursos e será abordado em uma atualização futura.
 
 Uma [implantação](/graph/api/resources/windowsupdates-deployment) especifica o conteúdo a ser implantado, como e quando implantar o conteúdo e os dispositivos direcionados. Para atualizações de qualidade, o conteúdo é especificado usando uma data de conformidade de destino. Quando uma implantação é criada, uma audiência de implantação é criada automaticamente como uma relação.
 

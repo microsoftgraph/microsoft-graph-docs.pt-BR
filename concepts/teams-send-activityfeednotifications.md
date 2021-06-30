@@ -4,12 +4,12 @@ description: Envie notificações de feed de atividade para os usuários em Micr
 author: RamjotSingh
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 37358a7359236159063bcb3edc1d61c0af5cb180
-ms.sourcegitcommit: 456ec9510807d05623c0ed1dd049c9676f53f56b
+ms.openlocfilehash: 5923b706321c9180fba8833aab029bf2396ecaff
+ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53060580"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53210196"
 ---
 # <a name="send-activity-feed-notifications-to-users-in-microsoft-teams"></a>Enviar notificações de feed de atividade para usuários em Microsoft Teams
 
@@ -62,8 +62,8 @@ Esta seção descreve as alterações que precisam ser adicionadas ao manifesto 
 
 |Parâmetro|Tipo|Descrição|
 |:---|:---|:---|
-|id|string|ID do aplicativo do Azure AD (ID do cliente).|
-|recurso|string|Recurso associado ao aplicativo do Azure AD. Também conhecido como URL de resposta ou redirecionamento no Portal do Azure.|
+|id|cadeia de caracteres|ID do aplicativo do Azure AD (ID do cliente).|
+|recurso|cadeia de caracteres|Recurso associado ao aplicativo do Azure AD. Também conhecido como URL de resposta ou redirecionamento no Portal do Azure.|
 
 > **Observação:** Você pode obter um erro se vários Teams aplicativos no mesmo escopo (equipe, chat ou usuário) estão usando o mesmo aplicativo do Azure AD. Certifique-se de que você esteja usando aplicativos exclusivos do Azure AD.
 
@@ -91,7 +91,7 @@ Esta seção descreve as alterações que precisam ser adicionadas ao manifesto 
 |:---|:---|:---|
 |type|string|Tipo de atividade. Isso precisa ser exclusivo em um manifesto específico.|
 |description|string|Descrição curta acessível por humanos. Isso ficará visível no cliente Microsoft Teams cliente.|
-|templateText|string|Texto do modelo para a notificação de atividade. Você pode declarar seus parâmetros encapsulando parâmetros em `{}` .|
+|templateText|cadeia de caracteres|Texto do modelo para a notificação de atividade. Você pode declarar seus parâmetros encapsulando parâmetros em `{}` .|
 
 >**Observação:** `actor` é um parâmetro especial que sempre leva o nome do chamador. Em chamadas delegadas, `actor` é o nome do usuário. Em chamadas somente de aplicativo, ele leva o nome do aplicativo Teams aplicativo.
 
@@ -254,6 +254,137 @@ Content-Type: application/json
 HTTP/1.1 204 No Content
 ```
 
+### <a name="example-4-notify-the-team-members-about-an-event"></a>Exemplo 4: notificar os membros da equipe sobre um evento
+
+Este exemplo mostra como você pode enviar uma notificação de feed de atividade para todos os membros da equipe. Este exemplo notifica os membros da equipe sobre um novo evento. 
+
+> **Observação:** No momento, a capacidade de enviar notificações a todos os membros da equipe está disponível apenas na versão beta.
+
+#### <a name="request"></a>Solicitação
+<!-- {
+  "blockType": "request",
+  "name": "team_sendactivitynotification"
+}
+-->
+``` http
+POST https://graph.microsoft.com/beta/teams/7155e3c8-175e-4311-97ef-572edc3aa3db/sendActivityNotification
+Content-Type: application/json
+
+{
+    "topic": {
+        "source": "text",
+        "value": "Weekly Virtual Social",
+        "webUrl": "Teams webUrl"
+    },
+    "previewText": {
+        "content": "It will be fun!"
+    },
+    "activityType": "eventCreated",
+    "recipient": {
+        "@odata.type": "microsoft.graph.teamMembersNotificationRecipient",
+        "teamId": "7155e3c8-175e-4311-97ef-572edc3aa3db"
+    }
+}
+```
+
+#### <a name="response"></a>Resposta
+<!-- {
+  "blockType": "response",
+  "truncated": false
+}
+-->
+``` http
+HTTP/1.1 204 No Content
+```
+
+### <a name="example-5-notify-the-channel-members-about-an-event"></a>Exemplo 5: Notificar os membros do canal sobre um evento
+
+Este exemplo mostra como você pode enviar uma notificação de feed de atividade para todos os membros do canal. Este exemplo notifica os membros do canal sobre um novo evento. 
+
+> **Observação:** No momento, a capacidade de enviar notificações a todos os membros do canal está disponível apenas na versão beta.
+
+#### <a name="request"></a>Solicitação
+<!-- {
+  "blockType": "request",
+  "name": "team_sendactivitynotification"
+}
+-->
+``` http
+POST https://graph.microsoft.com/beta/teams/7155e3c8-175e-4311-97ef-572edc3aa3db/sendActivityNotification
+Content-Type: application/json
+
+{
+    "topic": {
+        "source": "text",
+        "value": "Weekly Virtual Social",
+        "webUrl": "Teams webUrl"
+    },
+    "previewText": {
+        "content": "It will be fun!"
+    },
+    "activityType": "eventCreated",
+    "recipient": {
+        "@odata.type": "microsoft.graph.channelMembersNotificationRecipient",
+        "teamId": "7155e3c8-175e-4311-97ef-572edc3aa3db",
+        "channelId": "19:0ea5de04de4743bcb4cd20cb99235d99@thread.tacv2"
+    }
+}
+```
+
+#### <a name="response"></a>Resposta
+<!-- {
+  "blockType": "response",
+  "truncated": false
+}
+-->
+``` http
+HTTP/1.1 204 No Content
+```
+
+### <a name="example-6-notify-the-chat-members-about-an-event"></a>Exemplo 6: notificar os membros do chat sobre um evento
+
+Este exemplo mostra como você pode enviar uma notificação de feed de atividade para todos os membros do chat. Este exemplo notifica os membros do chat sobre um novo evento. 
+
+> **Observação:** A capacidade de enviar notificações para todos os membros do chat só está disponível no momento na versão beta.
+
+#### <a name="request"></a>Solicitação
+<!-- {
+  "blockType": "request",
+  "name": "chat_sendactivitynotification"
+}
+-->
+
+``` http
+POST https://graph.microsoft.com/beta/chats/19:d65713bc498c4a428c71ef9353e6ce20@thread.v2/sendActivityNotification
+Content-Type: application/json
+
+{
+    "topic": {
+        "source": "text",
+        "value": "Weekly Virtual Social",
+        "webUrl": "Teams webUrl"
+    },
+    "previewText": {
+        "content": "It will be fun!"
+    },
+    "activityType": "eventCreated",
+    "recipient": {
+        "@odata.type": "microsoft.graph.chatMembersNotificationRecipient",
+        "chatId": "19:d65713bc498c4a428c71ef9353e6ce20@thread.v2"
+    }
+}
+```
+
+#### <a name="response"></a>Resposta
+<!-- {
+  "blockType": "response",
+  "truncated": false
+}
+-->
+``` http
+HTTP/1.1 204 No Content
+```
+
 ## <a name="customizing-how-the-notifications-alert-you"></a>Personalização de como as notificações alertam você
 
 Microsoft Teams os usuários podem personalizar as notificações que veem em seus feeds, como um banner e assim por diante. As notificações geradas por apIs de feed de atividade também podem ser personalizadas. Os usuários podem escolher como eles são notificados por meio de configurações Microsoft Teams. Teams aplicativos aparecerão na lista para o usuário escolher, conforme mostrado na captura de tela a seguir.
@@ -264,7 +395,7 @@ Os usuários podem clicar **em Editar** ao lado de um aplicativo e personalizar 
 
 ![Captura de tela mostrando notificações personalizadas para Banner e feed para um Teams app](images/teams-activityfeednotifications/applevelnotificationsettings.png)
 
-## <a name="faqs"></a>Perguntas Frequentes
+## <a name="faqs"></a>Perguntas frequentes
 
 ### <a name="who-needs-to-install-the-teams-app"></a>Who precisa instalar o aplicativo Teams?
 
