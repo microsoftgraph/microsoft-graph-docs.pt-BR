@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 1bcba471d78bfe24d8941474bf6c89cdd5b0575a
-ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
+ms.openlocfilehash: 921798615b104d5b58d55719acf59fd177efdba2
+ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "52664571"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53211937"
 ---
 ```csharp
 
@@ -16,7 +16,7 @@ var accessReviewScheduleDefinition = new AccessReviewScheduleDefinition
     DisplayName = "Test create",
     DescriptionForAdmins = "New scheduled access review",
     DescriptionForReviewers = "If you have any questions, contact jerry@contoso.com",
-    Scope = new AccessReviewScope
+    Scope = new AccessReviewQueryScope
     {
         Query = "/groups/02f3bafb-448c-487c-88c2-5fd65ce49a41/transitiveMembers",
         QueryType = "MicrosoftGraph"

@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 480e0b73b04b709f572ca226027cd3764afc7e61
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: bfaa18f41fea9b7652010a94e428658fcd429652
+ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50801019"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53211965"
 ---
 ```csharp
 
@@ -22,14 +22,11 @@ var shift = new Shift
     {
         Application = null,
         Device = null,
+        Conversation = null,
         User = new Identity
         {
             Id = "366c0b19-49b1-41b5-a03f-9f3887bd0ed8",
             DisplayName = "John Doe"
-        },
-        AdditionalData = new Dictionary<string, object>()
-        {
-            {"conversation", "null"}
         }
     },
     SharedShift = new ShiftItem
