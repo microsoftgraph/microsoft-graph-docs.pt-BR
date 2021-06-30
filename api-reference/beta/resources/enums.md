@@ -5,12 +5,12 @@ doc_type: enumPageType
 localization_priority: Normal
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
-ms.openlocfilehash: 4bc5577cb6788467060874b4701e9d561731ac39
-ms.sourcegitcommit: d586ddb253d27f9ccb621bd128f6a6b4b1933918
+ms.openlocfilehash: 2046c162cecb2c9c63d5985176ca25158cc0b5fc
+ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53107729"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53209531"
 ---
 # <a name="enum-values"></a>Valores denum
 
@@ -99,7 +99,7 @@ Namespace: microsoft.graph
 |Inteiro|
 |Referência|
 |Binário|
-|Booleano|
+|Booliano|
 |DateTime|
 
 ### <a name="mutability-values"></a>valores de mutabilidade
@@ -412,7 +412,7 @@ Namespace: microsoft.graph
 |all|
 |privilegedAdmin|
 |admin|
-|usuário|
+|user|
 |unknownFutureValue|
 
 ### <a name="includedusertypes-values"></a>valores includedUserTypes 
@@ -428,7 +428,7 @@ Namespace: microsoft.graph
 
 |Member|
 |:---|
-|usuário|
+|user|
 |aplicativo|
 |sistema|
 |unknownFutureValue|
@@ -721,7 +721,7 @@ Namespace: microsoft.graph
 
 |Member|
 |:---|
-|usuário|
+|user|
 |group|
 
 ### <a name="authenticationmethodstate-values"></a>authenticationMethodState values
@@ -833,13 +833,13 @@ Namespace: microsoft.graph
 |Member|
 |:---|
 |event|
-|mensagem|
+|message|
 |driveItem|
 |externalItem|
 |site|
 |list|
 |listItem|
-|Unidade|
+|drive|
 |unknownFutureValue|
 
 ### <a name="searchalterationtype-values"></a>searchAlterationType values
@@ -973,7 +973,7 @@ Namespace: microsoft.graph
 | Member
 |:-----------------
 | nenhuma|
-| usuário|
+| user|
 | manager|
 | unknownFutureValue|
 
@@ -1414,7 +1414,7 @@ Namespace: microsoft.graph
 | preset8  | 8      |
 | preset9  | 9      |
 | preset10 | 10     |
-| preset11 | 11     |
+| preset11 | 11    |
 | preset12 | 12     |
 | preset13 | 13     |
 | preset14 | 14     |
@@ -1525,7 +1525,7 @@ Enum para tipos de valor do Registro conforme definido pelos [tipos de valor do 
 | nenhuma              | 8      | REG_NONE tipo de valor do Registro.                |
 | qword             | 9      | REG_QWORD tipo de valor do Registro.               |
 | qwordlittleEndian | 10     | REG_QWORD_LITTLE_ENDIAN tipo de valor do Registro. |
-| sz                | 11     | REG_SZ tipo de valor do Registro.                  |
+| sz                | 11    | REG_SZ tipo de valor do Registro.                  |
 
 ### <a name="alertseverity-values"></a>valores alertSeverity
 
@@ -1739,7 +1739,7 @@ Valores possíveis para tipos de conta de usuário (associação ao grupo), por 
 
 |Member|
 |:---|
-|mensagem|
+|message|
 
 ### <a name="chatmessageimportance-values"></a>valores chatMessageImportance
 
@@ -1790,7 +1790,7 @@ Valores possíveis para tipos de conta de usuário (associação ao grupo), por 
 |Member|
 |:---|
 |signin|
-|usuário|
+|user|
 |unknownFutureValue|
 
 ### <a name="chatmessagepolicyviolationuseractiontype-values"></a>valores chatMessagePolicyViolationUserActionType
@@ -1815,7 +1815,7 @@ Valores possíveis para tipos de conta de usuário (associação ao grupo), por 
 | Member       |
 |:--------------|
 |event|
-|mensagem|
+|message|
 |driveItem|
 |externalFile|
 |externalItem|
@@ -1965,7 +1965,7 @@ Valores possíveis para tipos de conta de usuário (associação ao grupo), por 
 
 | Membro | Valor | Descrição             |
 |:-------|:------|:------------------------|
-| Email   | 1      | Ameaça de email.            |
+| email   | 1      | Ameaça de email.            |
 | url    | 2      | Ameaça de URL.             |
 | file   | 3      | Ameaça de arquivo de anexo. |
 
@@ -1997,7 +1997,7 @@ Valores possíveis para tipos de conta de usuário (associação ao grupo), por 
 | Membro        | Valor | Descrição              |
 |:--------------|:------|:-------------------------|
 | indefinido     | 0     | Ainda não sabemos.            |
-| usuário          | 1      | Envio do usuário.         |
+| user          | 1      | Envio do usuário.         |
 | administrator | 2      | Envio de administrador de locatário. |
 
 ### <a name="threatassessmentresulttype-values"></a>valores threatAssessmentResultType
@@ -2023,7 +2023,7 @@ Valores possíveis para tipos de conta de usuário (associação ao grupo), por 
 | firstTimeSender       | 8      | Bloqueado devido ao remetente da primeira vez.   |
 | autoPurgeToInbox      | 9      | TimeTravel mover mensagem para a caixa de entrada.   |
 | autoPurgeToJunk       | 10     | TimeTravel mover mensagem para lixo eletrônico.    |
-| autoPurgeToDeleted    | 11     | TimeTravel move a mensagem para excluída. |
+| autoPurgeToDeleted    | 11    | TimeTravel move a mensagem para excluída. |
 | outbound              | 12     | Email de saída.                      |
 | notJunk               | 13     | Permitir devido a não lixo eletrônico.              |
 | junk                  | 14     | Bloqueado devido a lixo eletrônico.                |
@@ -2088,7 +2088,7 @@ Valores possíveis para tipos de conta de usuário (associação ao grupo), por 
 |dateTime | coluna dateTime. |
 |lookup | coluna de lookup. |
 |booliano | Coluna Sim/Não. |
-|usuário | coluna de pessoa ou grupo. |
+|user | coluna de pessoa ou grupo. |
 |url | hyperlink ou coluna de imagem. |
 |calculado | coluna calculada. |
 |localização | coluna de local. |
@@ -2118,7 +2118,7 @@ Valores possíveis para tipos de conta de usuário (associação ao grupo), por 
 
 |Member|
 |:---|
-|usuário|
+|user|
 |group|
 
 ### <a name="identityuserflowattributedatatype-values"></a>identityUserFlowAttributeDataType values
@@ -2286,6 +2286,41 @@ Valores possíveis para tipos de conta de usuário (associação ao grupo), por 
 |principal|
 |unknownFutureValue|
 
+### <a name="cloudpcauditactivityoperationtype-values"></a>valores cloudPcAuditActivityOperationType 
+
+|Member|
+|:---|
+|create|
+|delete|
+|patch|
+|other|
+
+### <a name="cloudpcauditactivityresult-values"></a>valores cloudPcAuditActivityResult 
+
+|Member|
+|:---|
+|sucesso|
+|clientError|
+|failure|
+|timeout|
+|other|
+
+### <a name="cloudpcauditactortype-values"></a>valores cloudPcAuditActorType 
+
+|Member|
+|:---|
+|itPro|
+|aplicação|
+|partner|
+|desconhecido|
+
+### <a name="cloudpcauditcategory-values"></a>valores cloudPcAuditCategory 
+
+|Member|
+|:---|
+|cloudPC|
+|other|
+
 ### <a name="posttype-values"></a>valores postType 
 
 |Member|
@@ -2359,3 +2394,35 @@ Valores possíveis para tipos de conta de usuário (associação ao grupo), por 
 |:---|:---- | :------------------------ |
 |standard| 0     |Tipo padrão para uma marca. Marcas de padrão de tipo podem ser gerenciadas na equipe por membros que têm permissões.|
 
+### <a name="teamworkapplicationidentitytype-values"></a>valores de teamworkApplicationIdentityType 
+
+|Member|
+|:---|
+|aadApplication|
+|bot|
+|tenantBot|
+|office365Connector|
+|outgoingWebhook|
+|unknownFutureValue|
+
+### <a name="teamworkconversationidentitytype-values"></a>valores de teamworkConversationIdentityType 
+
+|Member|
+|:---|
+|team|
+|channel|
+|chat|
+|unknownFutureValue|
+
+### <a name="teamworkuseridentitytype-values"></a>valores de teamworkUserIdentityType 
+
+|Member|
+|:---|
+|aadUser|
+|onPremiseAadUser|
+|anonymousGuest|
+|federatedUser|
+|personalMicrosoftAccountUser|
+|skypeUser|
+|phoneUser|
+|unknownFutureValue|

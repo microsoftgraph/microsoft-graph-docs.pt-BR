@@ -5,12 +5,12 @@ localization_priority: Normal
 author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 7671f438544392ca9c8b60523c910e82873c848b
-ms.sourcegitcommit: 16ee16e7fddd662ca42dc5c9352cfb109e31ed1a
+ms.openlocfilehash: fefa80cf6fa66b61a3db8457f5b7f8809b07e2f3
+ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/03/2021
-ms.locfileid: "51582554"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53207004"
 ---
 # <a name="chatmessagemention-resource-type"></a>Tipo de recurso chatMessageMention
 
@@ -41,8 +41,8 @@ Para um contexto mais completo do exemplo, consulte [List channel message replie
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |id|Int32|Índice de uma entidade que está sendo mencionada no **chatMessage especificado.** Corresponde ao valor {index} na `<at id="{index}">` marca correspondente no corpo da mensagem.|
-|mentionText|string|Cadeia de caracteres usada para representar a menção. Por exemplo, o nome de exibição de um usuário, um nome de equipe.|
-|mencionado|[identitySet](identityset.md)|A entidade (usuário, aplicativo, equipe ou canal) mencionada.  Se foi um canal ou uma equipe que foi @mentioned, o identitySet contém uma propriedade de conversa que dá **a** ID da equipe/canal e uma propriedade **conversationIdentityType** que representa a equipe ou o canal.|
+|mentionText|cadeia de caracteres|Cadeia de caracteres usada para representar a menção. Por exemplo, o nome de exibição de um usuário, um nome de equipe.|
+|mencionado|[chatMessageMentionedIdentitySet](chatmessagementionedidentityset.md)|A entidade (usuário, aplicativo, equipe ou canal) que foi @mentioned.|
 
 
 ## <a name="json-representation"></a>Representação JSON
@@ -58,7 +58,7 @@ Veja a seguir uma representação JSON do recurso.
 {
   "id": 1024,
   "mentionText": "string",
-  "mentioned": {"@odata.type": "microsoft.graph.identitySet"}
+  "mentioned": {"@odata.type": "microsoft.graph.chatMessageMentionedIdentitySet"}
  }
 ```
 

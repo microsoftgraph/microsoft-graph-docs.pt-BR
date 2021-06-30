@@ -5,17 +5,19 @@ author: RamjotSingh
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 46b653f3d69111043c41ec0a83907ce041c10a81
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: e16d6aade57dfb10f4cd387d9d6719c85c2c3b79
+ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50954073"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53209335"
 ---
 # <a name="team-sendactivitynotification"></a>team: sendActivityNotification
 Namespace: microsoft.graph
 
-Envie uma notificação de feed de atividade no escopo de uma equipe. Para obter mais detalhes sobre como enviar notificações e os requisitos para fazer isso, consulte [sending Teams activity notifications](/graph/teams-send-activityfeednotifications).
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Envie uma notificação de feed de atividade no escopo de uma equipe. Para obter mais detalhes sobre o envio de notificações e os requisitos para fazer isso, consulte [o Teams de atividades.](/graph/teams-send-activityfeednotifications)
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -50,11 +52,11 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta ação.
 |Parâmetro|Tipo|Descrição|
 |:---|:---|:---|
 |topic|[teamworkActivityTopic](../resources/teamworkactivitytopic.md)|Tópico da notificação. Especifica o recurso que está sendo falado.|
-|activityType|Cadeia de caracteres|Tipo de atividade. Isso deve ser declarado no manifesto do [aplicativo teams.](/microsoftteams/platform/overview)|
+|activityType|Cadeia de caracteres|Tipo de atividade. Isso deve ser declarado no manifesto Teams [app](/microsoftteams/platform/overview).|
 |chainId|Int64|Opcional. Usado para substituir uma notificação anterior. Use o mesmo `chainId` em solicitações subsequentes para substituir a notificação anterior.|
-|previewText|[itemBody](../resources/itembody.md)|Visualizar texto para a notificação. O Microsoft Teams mostrará apenas os primeiros 150 caracteres.|
-|templateParameters|Coleção [keyValuePair](../resources/keyvaluepair.md)|Valores para variáveis de modelo definidas na entrada de feed de atividade correspondente `activityType` ao manifesto do aplicativo do [Teams.](/microsoftteams/platform/overview)|
-|destinatário|[teamworkNotificationRecipient](../resources/teamworknotificationrecipient.md)|Destinatário da notificação. Somente usuários do Azure AD são suportados. Consulte também [aadUserNotificationRecipient](../resources/aadusernotificationrecipient.md). |
+|previewText|[itemBody](../resources/itembody.md)|Visualizar texto para a notificação. Microsoft Teams mostrará apenas os primeiros 150 caracteres.|
+|templateParameters|Coleção [keyValuePair](../resources/keyvaluepair.md)|Valores para variáveis de modelo definidas na entrada de feed de atividade `activityType` correspondentes [Teams manifesto do aplicativo](/microsoftteams/platform/overview).|
+|destinatário|[teamworkNotificationRecipient](../resources/teamworknotificationrecipient.md)|Destinatário da notificação. Consulte também [aadUserNotificationRecipient](../resources/aadusernotificationrecipient.md), [teamMembersNotificationRecipient](../resources/teammembersnotificationrecipient.md)e [channelMembersNotificationRecipient](../resources/channelmembersnotificationrecipient.md). |
 
 Os seguintes recursos são suportados ao definir o `source` valor da propriedade **topic** como `entityUrl` :
 
@@ -63,7 +65,7 @@ Os seguintes recursos são suportados ao definir o `source` valor da propriedade
 - [chatMesage](../resources/chatmessage.md)
 - [teamsTab](../resources/teamstab.md)
 
-> **Observação:** A url da entidade deve ser o mesmo ou o recurso filho da equipe na url. Além disso, o [aplicativo do Teams](/microsoftteams/platform/overview) deve ser instalado na equipe.
+> **Observação:** A URL da entidade deve ser o mesmo ou o recurso filho da equipe na URL. Além disso, o [Teams aplicativo deve](/microsoftteams/platform/overview) ser instalado na equipe.
 
 ## <a name="response"></a>Resposta
 
@@ -209,7 +211,7 @@ HTTP/1.1 204 No Content
 
 ### <a name="example-3-notify-a-user-about-an-event-using-custom-topic"></a>Exemplo 3: Notificar um usuário sobre um evento usando tópico personalizado
 
-Como visto nos exemplos anteriores, você pode vincular a diferentes aspectos da equipe. No entanto, se você deseja vincular a um aspecto que não faz parte da equipe ou não é representado pelo Microsoft Graph, ou deseja personalizar o nome, você pode definir a origem do para e passar um valor personalizado para `topic` `text` ele. `webUrl` é necessário ao definir `topic` a fonte como `text` .
+Como visto nos exemplos anteriores, você pode vincular a diferentes aspectos da equipe. No entanto, se você deseja vincular a um aspecto que não faz parte da equipe ou não é representado pela Microsoft Graph, ou deseja personalizar o nome, você pode definir a origem do para e passar um valor personalizado para `topic` `text` ele. `webUrl` é necessário ao definir `topic` a fonte como `text` .
 
 #### <a name="request"></a>Solicitação
 
@@ -263,6 +265,103 @@ Content-Type: application/json
 
 ---
 
+
+#### <a name="response"></a>Resposta
+<!-- {
+  "blockType": "response",
+  "truncated": false
+}
+-->
+``` http
+HTTP/1.1 204 No Content
+```
+
+### <a name="example-4-notify-the-team-members-about-pending-finance-approval-requests"></a>Exemplo 4: Notificar os membros da equipe sobre solicitações pendentes de aprovação de finanças
+
+Este exemplo mostra como você pode enviar uma notificação de feed de atividade para todos os membros da equipe. Este exemplo é semelhante aos exemplos anteriores. No entanto, nesse caso, `recipient` o [é um teamMembersNotificationRecipient](../resources/teammembersnotificationrecipient.md). Observe que `teamId` o especificado no deve corresponder ao especificado na URL de `recipient` `teamId` solicitação.
+
+> **Observação:** A capacidade de enviar notificações a todos os membros da equipe é limitada a equipes com 10.000 membros ou menos. Se a equipe exceder 10.000 membros, nenhum membro da equipe receberá uma notificação.
+
+#### <a name="request"></a>Solicitação
+<!-- {
+  "blockType": "request",
+  "name": "team_sendactivitynotification_4"
+}
+-->
+
+``` http
+POST https://graph.microsoft.com/beta/teams/e8bece96-d393-4b9b-b8da-69cedef1a7e7/sendActivityNotification
+Content-Type: application/json
+
+{
+    "topic": {
+        "source": "entityUrl",
+        "value": "https://graph.microsoft.com/beta/teams/e8bece96-d393-4b9b-b8da-69cedef1a7e7"
+    },
+    "activityType": "pendingFinanceApprovalRequests",
+    "previewText": {
+        "content": "Internal spending team has a pending finance approval requests"
+    },
+    "recipient": {
+        "@odata.type": "microsoft.graph.teamMembersNotificationRecipient",
+        "teamId": "e8bece96-d393-4b9b-b8da-69cedef1a7e7"
+    },
+    "templateParameters": [
+        {
+            "name": "pendingRequestCount",
+            "value": "5"
+        }
+    ] 
+}
+```
+
+#### <a name="response"></a>Resposta
+<!-- {
+  "blockType": "response",
+  "truncated": false
+}
+-->
+``` http
+HTTP/1.1 204 No Content
+```
+
+### <a name="example-5-notify-the-channel-members-about-pending-finance-approval-requests"></a>Exemplo 5: Notificar os membros do canal sobre solicitações pendentes de aprovação de finanças
+
+Este exemplo mostra como você pode enviar uma notificação de feed de atividade para todos os membros do canal. Este exemplo é semelhante ao exemplo anterior. No entanto, nesse caso, é `recipient` [um channelMembersNotificationRecipient](../resources/channelmembersnotificationrecipient.md). Observe que `teamId` o especificado no deve corresponder ao especificado na URL de `recipient` `teamId` solicitação.
+
+#### <a name="request"></a>Solicitação
+<!-- {
+  "blockType": "request",
+  "name": "team_sendactivitynotification_5"
+}
+-->
+
+``` http
+POST https://graph.microsoft.com/beta/teams/e8bece96-d393-4b9b-b8da-69cedef1a7e7/sendActivityNotification
+Content-Type: application/json
+
+{
+    "topic": {
+        "source": "entityUrl",
+        "value": "https://graph.microsoft.com/beta/teams/e8bece96-d393-4b9b-b8da-69cedef1a7e7"
+    },
+    "activityType": "pendingFinanceApprovalRequests",
+    "previewText": {
+        "content": "Internal spending team has a pending finance approval requests"
+    },
+    "recipient": {
+        "@odata.type": "microsoft.graph.channelMembersNotificationRecipient",
+        "teamId": "e8bece96-d393-4b9b-b8da-69cedef1a7e7",
+        "channelId": "19:3d61a2309f094f4a9310b20f1db37520@thread.tacv2"
+    },
+    "templateParameters": [
+        {
+            "name": "pendingRequestCount",
+            "value": "5"
+        }
+    ] 
+}
+```
 
 #### <a name="response"></a>Resposta
 <!-- {

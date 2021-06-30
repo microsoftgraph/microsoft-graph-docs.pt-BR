@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 author: RamjotSingh
 ms.prod: microsoft-teams
-ms.openlocfilehash: f66b37ee9f9ae69f5f0ccb1f4a2f45f3a3522163
-ms.sourcegitcommit: 16ee16e7fddd662ca42dc5c9352cfb109e31ed1a
+ms.openlocfilehash: 64e3e74102551a91f99120c7384a482f0b07e304
+ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/03/2021
-ms.locfileid: "51582239"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53208138"
 ---
 # <a name="chatmessagereaction-resource-type"></a>Tipo de recurso chatMessageReaction
 
@@ -27,8 +27,8 @@ Uma entidade de tipo é retornada como parte da API de mensagem get `chatMessage
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
 |createdDateTime|DateTimeOffset|O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`|
-|reactionType|Cadeia de caracteres|Os valores suportados `like` são , , , , , `angry` `sad` `laugh` `heart` `surprised` . |
-|usuário|[identitySet](identityset.md)|O usuário que reagia à mensagem.|
+|reactionType|String|Os valores suportados `like` são , , , , , `angry` `sad` `laugh` `heart` `surprised` . |
+|user|[chatMessageReactionIdentitySet](chatmessagereactionidentityset.md)|O usuário que reagia à mensagem.|
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -47,7 +47,7 @@ Veja a seguir uma representação JSON do recurso.
 {
   "createdDateTime": "String (timestamp)",
   "reactionType": "String",
-  "user": {"@odata.type": "microsoft.graph.identitySet"}
+  "user": {"@odata.type": "microsoft.graph.chatMessageReactionIdentitySet"}
 }
 ```
 

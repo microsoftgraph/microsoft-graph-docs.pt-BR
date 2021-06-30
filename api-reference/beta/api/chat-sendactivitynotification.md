@@ -5,17 +5,19 @@ author: RamjotSingh
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 4fd0d8a2e8b9d7d6239c2de8610415407c5f5f03
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 3da2bff0c6ea8997a880c93044cc09f962825562
+ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50947996"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53207472"
 ---
 # <a name="chat-sendactivitynotification"></a>chat: sendActivityNotification
 Namespace: microsoft.graph
 
-Envie uma notificação de feed de atividade no escopo de um chat. Para obter mais detalhes sobre como enviar notificações e os requisitos para fazer isso, consulte [sending Teams activity notifications](/graph/teams-send-activityfeednotifications).
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Envie uma notificação de feed de atividade no escopo de um chat. Para obter mais detalhes sobre o envio de notificações e os requisitos para fazer isso, consulte [o Teams de atividades.](/graph/teams-send-activityfeednotifications)
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -50,18 +52,18 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta ação.
 |Parâmetro|Tipo|Descrição|
 |:---|:---|:---|
 |topic|[teamworkActivityTopic](../resources/teamworkactivitytopic.md)|Tópico da notificação. Especifica o recurso que está sendo falado.|
-|activityType|Cadeia de caracteres|Tipo de atividade. Isso deve ser declarado no manifesto do [aplicativo teams.](/microsoftteams/platform/overview)|
+|activityType|Cadeia de caracteres|Tipo de atividade. Isso deve ser declarado no manifesto Teams [app](/microsoftteams/platform/overview).|
 |chainId|Int64|Opcional. Usado para substituir uma notificação anterior. Use o mesmo `chainId` em solicitações subsequentes para substituir a notificação anterior.|
-|previewText|[itemBody](../resources/itembody.md)|Visualizar texto para a notificação. O Microsoft Teams mostrará apenas os primeiros 150 caracteres.|
-|templateParameters|Coleção [keyValuePair](../resources/keyvaluepair.md)|Valores para variáveis de modelo definidas na entrada de feed de atividade correspondente `activityType` ao manifesto do aplicativo do [Teams.](/microsoftteams/platform/overview)|
-|destinatário|[teamworkNotificationRecipient](../resources/teamworknotificationrecipient.md)|Destinatário da notificação. Somente usuários do Azure AD são suportados. Consulte também [aadUserNotificationRecipient](../resources/aadusernotificationrecipient.md). |
+|previewText|[itemBody](../resources/itembody.md)|Visualizar texto para a notificação. Microsoft Teams mostrará apenas os primeiros 150 caracteres.|
+|templateParameters|Coleção [keyValuePair](../resources/keyvaluepair.md)|Valores para variáveis de modelo definidas na entrada de feed de atividade `activityType` correspondentes [Teams manifesto do aplicativo](/microsoftteams/platform/overview).|
+|destinatário|[teamworkNotificationRecipient](../resources/teamworknotificationrecipient.md)|Destinatário da notificação. Consulte também [aadUserNotificationRecipient](../resources/aadusernotificationrecipient.md) e [chatMembersNotificationRecipient](../resources/chatmembersnotificationrecipient.md). |
 
 Os seguintes recursos são suportados ao definir o `source` valor da propriedade **topic** como `entityURL` :
 
 - [chat](../resources/chat.md)
 - [chatMessage](../resources/chatmessage.md)
 
-> **Observação:** A URL da entidade deve ser igual ou um recurso filho do chat na URL. Além disso, o [aplicativo do Teams](/microsoftteams/platform/overview) deve ser instalado no chat.
+> **Observação:** A URL da entidade deve ser igual ou um recurso filho do chat na URL. Além disso, o [Teams aplicativo deve](/microsoftteams/platform/overview) ser instalado no chat.
 
 ## <a name="response"></a>Resposta
 
@@ -135,7 +137,7 @@ Content-Type: application/json
 HTTP/1.1 204 No Content
 ```
 
-### <a name="example-2-notify-a-user-about-a-approval-needed-in-a-chat-message"></a>Exemplo 2: Notificar um usuário sobre uma aprovação necessária em uma mensagem de chat
+### <a name="example-2-notify-a-user-about-an-approval-needed-in-a-chat-message"></a>Exemplo 2: Notificar um usuário sobre uma aprovação necessária em uma mensagem de chat
 
 Semelhante ao exemplo anterior, este exemplo usa `entityUrl` para `topic` o . No entanto, nesse caso, ele se vincula a uma mensagem no chat. A mensagem pode conter um cartão com o botão de aprovação.
 
@@ -257,6 +259,54 @@ Content-Type: application/json
 
 ---
 
+
+#### <a name="response"></a>Resposta
+<!-- {
+  "blockType": "response",
+  "truncated": false
+}
+-->
+``` http
+HTTP/1.1 204 No Content
+```
+
+### <a name="example-4-notify-the-chat-members-about-a-task-created-in-a-chat"></a>Exemplo 4: Notificar os membros do chat sobre uma tarefa criada em um chat
+
+Este exemplo mostra como você pode enviar uma notificação de feed de atividade para todos os membros do chat. Este exemplo é semelhante aos exemplos anteriores. No entanto, nesse caso, o `recipient` [é um chatMembersNotificationRecipient](../resources/chatmembersnotificationrecipient.md). Observe que `chatId` o especificado no deve corresponder ao especificado na URL de `recipient` `chatId` solicitação.
+
+#### <a name="request"></a>Solicitação
+
+<!-- {
+  "blockType": "request",
+  "name": "chat_sendactivitynotification_4"
+}
+-->
+
+``` http
+POST https://graph.microsoft.com/beta/chats/19:1c3af46e9e0f4a5293343c8813c47619@thread.v2/sendActivityNotification
+Content-Type: application/json
+
+{
+    "topic": {
+        "source": "entityUrl",
+        "value": "https://graph.microsoft.com/beta/chats/19:1c3af46e9e0f4a5293343c8813c47619@thread.v2"
+    },
+    "activityType": "taskCreated",
+    "previewText": {
+        "content": "New Task Created"
+    },
+    "recipient": {
+        "@odata.type": "microsoft.graph.chatMembersNotificationRecipient",
+        "chatId": "19:1c3af46e9e0f4a5293343c8813c47619@thread.v2"
+    },
+    "templateParameters": [
+        {
+            "name": "taskId",
+            "value": "Task 12322"
+        }
+    ] 
+}
+```
 
 #### <a name="response"></a>Resposta
 <!-- {
