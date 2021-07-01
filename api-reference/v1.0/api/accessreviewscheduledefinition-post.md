@@ -5,75 +5,74 @@ localization_priority: Normal
 author: isabelleatmsft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: fff52572c62c183296b911b08d78c7d998926d3d
-ms.sourcegitcommit: 456ec9510807d05623c0ed1dd049c9676f53f56b
+ms.openlocfilehash: 0aa38fcbd99bc2618310f456fc970c5311a5dc32
+ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53060418"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53208547"
 ---
-# <a name="create-accessreviewscheduledefinition"></a><span data-ttu-id="a96d7-103">Criar accessReviewScheduleDefinition</span><span class="sxs-lookup"><span data-stu-id="a96d7-103">Create accessReviewScheduleDefinition</span></span>
+# <a name="create-accessreviewscheduledefinition"></a><span data-ttu-id="c21c9-103">Criar accessReviewScheduleDefinition</span><span class="sxs-lookup"><span data-stu-id="c21c9-103">Create accessReviewScheduleDefinition</span></span>
 
-<span data-ttu-id="a96d7-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="a96d7-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="c21c9-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="c21c9-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="a96d7-105">Crie um novo [objeto accessReviewScheduleDefinition.](../resources/accessreviewscheduledefinition.md)</span><span class="sxs-lookup"><span data-stu-id="a96d7-105">Create a new [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) object.</span></span>
+<span data-ttu-id="c21c9-105">Crie um novo [objeto accessReviewScheduleDefinition.](../resources/accessreviewscheduledefinition.md)</span><span class="sxs-lookup"><span data-stu-id="c21c9-105">Create a new [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) object.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="a96d7-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="a96d7-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="c21c9-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="c21c9-106">Permissions</span></span>
 
-<span data-ttu-id="a96d7-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="a96d7-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="c21c9-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="c21c9-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="a96d7-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="a96d7-109">Permission type</span></span>                        | <span data-ttu-id="a96d7-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="a96d7-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="c21c9-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="c21c9-109">Permission type</span></span>                        | <span data-ttu-id="c21c9-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="c21c9-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------------------------|:---------------------------------------------------------|
-|<span data-ttu-id="a96d7-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="a96d7-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="a96d7-112">AccessReview.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="a96d7-112">AccessReview.ReadWrite.All</span></span>  |
-|<span data-ttu-id="a96d7-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="a96d7-113">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="a96d7-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="a96d7-114">Not supported.</span></span>|
-|<span data-ttu-id="a96d7-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="a96d7-115">Application</span></span>                            | <span data-ttu-id="a96d7-116">AccessReview.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="a96d7-116">AccessReview.ReadWrite.All</span></span> |
+|<span data-ttu-id="c21c9-111">Delegada (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="c21c9-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="c21c9-112">AccessReview.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="c21c9-112">AccessReview.ReadWrite.All</span></span>  |
+|<span data-ttu-id="c21c9-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="c21c9-113">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="c21c9-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="c21c9-114">Not supported.</span></span>|
+|<span data-ttu-id="c21c9-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="c21c9-115">Application</span></span>                            | <span data-ttu-id="c21c9-116">AccessReview.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="c21c9-116">AccessReview.ReadWrite.All</span></span> |
 
-<span data-ttu-id="a96d7-117">O usuário interno também deve estar em uma função de diretório que permita que ele crie uma revisão de acesso.</span><span class="sxs-lookup"><span data-stu-id="a96d7-117">The signed-in user must also be in a directory role that permits them to create an access review.</span></span>  <span data-ttu-id="a96d7-118">Para obter mais detalhes, consulte os requisitos de função e permissão para [avaliações de acesso.](../resources/accessreviewsv2-root.md)</span><span class="sxs-lookup"><span data-stu-id="a96d7-118">For more details, see the role and permission requirements for [access reviews](../resources/accessreviewsv2-root.md).</span></span>
+<span data-ttu-id="c21c9-117">O usuário interno também deve estar em uma função de diretório que permita que ele crie uma revisão de acesso.</span><span class="sxs-lookup"><span data-stu-id="c21c9-117">The signed-in user must also be in a directory role that permits them to create an access review.</span></span>  <span data-ttu-id="c21c9-118">Para obter mais detalhes, consulte os requisitos de função e permissão para [avaliações de acesso.](../resources/accessreviewsv2-root.md)</span><span class="sxs-lookup"><span data-stu-id="c21c9-118">For more details, see the role and permission requirements for [access reviews](../resources/accessreviewsv2-root.md).</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="a96d7-119">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="a96d7-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="c21c9-119">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="c21c9-119">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /identityGovernance/accessReviews/definitions
 ```
-## <a name="request-headers"></a><span data-ttu-id="a96d7-120">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="a96d7-120">Request headers</span></span>
-| <span data-ttu-id="a96d7-121">Nome</span><span class="sxs-lookup"><span data-stu-id="a96d7-121">Name</span></span>         | <span data-ttu-id="a96d7-122">Descrição</span><span class="sxs-lookup"><span data-stu-id="a96d7-122">Description</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="c21c9-120">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="c21c9-120">Request headers</span></span>
+| <span data-ttu-id="c21c9-121">Nome</span><span class="sxs-lookup"><span data-stu-id="c21c9-121">Name</span></span>         | <span data-ttu-id="c21c9-122">Descrição</span><span class="sxs-lookup"><span data-stu-id="c21c9-122">Description</span></span> |
 |:-------------|:------------|
-|<span data-ttu-id="a96d7-123">Autorização</span><span class="sxs-lookup"><span data-stu-id="a96d7-123">Authorization</span></span>|<span data-ttu-id="a96d7-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="a96d7-p103">Bearer {token}. Required.</span></span>|
-| <span data-ttu-id="a96d7-126">Content-type</span><span class="sxs-lookup"><span data-stu-id="a96d7-126">Content-type</span></span> | <span data-ttu-id="a96d7-p104">application/json. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="a96d7-p104">application/json. Required.</span></span> |
+|<span data-ttu-id="c21c9-123">Autorização</span><span class="sxs-lookup"><span data-stu-id="c21c9-123">Authorization</span></span>|<span data-ttu-id="c21c9-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="c21c9-p103">Bearer {token}. Required.</span></span>|
+| <span data-ttu-id="c21c9-126">Content-type</span><span class="sxs-lookup"><span data-stu-id="c21c9-126">Content-type</span></span> | <span data-ttu-id="c21c9-p104">application/json. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="c21c9-p104">application/json. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="a96d7-129">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="a96d7-129">Request body</span></span>
-<span data-ttu-id="a96d7-130">No corpo da solicitação, fornece uma representação JSON de [um objeto accessReviewScheduleDefinition.](../resources/accessreviewscheduledefinition.md)</span><span class="sxs-lookup"><span data-stu-id="a96d7-130">In the request body, supply a JSON representation of an [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="c21c9-129">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="c21c9-129">Request body</span></span>
+<span data-ttu-id="c21c9-130">No corpo da solicitação, fornece uma representação JSON de [um objeto accessReviewScheduleDefinition.](../resources/accessreviewscheduledefinition.md)</span><span class="sxs-lookup"><span data-stu-id="c21c9-130">In the request body, supply a JSON representation of an [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) object.</span></span>
 
-<span data-ttu-id="a96d7-131">A tabela a seguir mostra as propriedades aceitas para criar um accessReview.</span><span class="sxs-lookup"><span data-stu-id="a96d7-131">The following table shows the properties accepted to create an accessReview.</span></span>
+<span data-ttu-id="c21c9-131">A tabela a seguir mostra as propriedades aceitas para criar um accessReview.</span><span class="sxs-lookup"><span data-stu-id="c21c9-131">The following table shows the properties accepted to create an accessReview.</span></span>
 
-| <span data-ttu-id="a96d7-132">Propriedade</span><span class="sxs-lookup"><span data-stu-id="a96d7-132">Property</span></span> | <span data-ttu-id="a96d7-133">Tipo</span><span class="sxs-lookup"><span data-stu-id="a96d7-133">Type</span></span> | <span data-ttu-id="a96d7-134">Descrição</span><span class="sxs-lookup"><span data-stu-id="a96d7-134">Description</span></span> |
+| <span data-ttu-id="c21c9-132">Propriedade</span><span class="sxs-lookup"><span data-stu-id="c21c9-132">Property</span></span> | <span data-ttu-id="c21c9-133">Tipo</span><span class="sxs-lookup"><span data-stu-id="c21c9-133">Type</span></span> | <span data-ttu-id="c21c9-134">Descrição</span><span class="sxs-lookup"><span data-stu-id="c21c9-134">Description</span></span> |
 |:-------------|:------------|:------------|
-| <span data-ttu-id="a96d7-135">displayName</span><span class="sxs-lookup"><span data-stu-id="a96d7-135">displayName</span></span> | <span data-ttu-id="a96d7-136">String</span><span class="sxs-lookup"><span data-stu-id="a96d7-136">String</span></span> | <span data-ttu-id="a96d7-137">Nome da série de revisão de acesso.</span><span class="sxs-lookup"><span data-stu-id="a96d7-137">Name of access review series.</span></span> <span data-ttu-id="a96d7-138">Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="a96d7-138">Required.</span></span>|
-| <span data-ttu-id="a96d7-139">descriptionForAdmins</span><span class="sxs-lookup"><span data-stu-id="a96d7-139">descriptionForAdmins</span></span> | <span data-ttu-id="a96d7-140">cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="a96d7-140">string</span></span> | <span data-ttu-id="a96d7-141">Contexto da revisão fornecida aos administradores.</span><span class="sxs-lookup"><span data-stu-id="a96d7-141">Context of the review provided to admins.</span></span> <span data-ttu-id="a96d7-142">Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="a96d7-142">Required.</span></span> |
-  <span data-ttu-id="a96d7-143">descriptionForReviewers</span><span class="sxs-lookup"><span data-stu-id="a96d7-143">descriptionForReviewers</span></span> | <span data-ttu-id="a96d7-144">cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="a96d7-144">string</span></span> | <span data-ttu-id="a96d7-145">Contexto da revisão fornecida aos revisadores.</span><span class="sxs-lookup"><span data-stu-id="a96d7-145">Context of the review provided to reviewers.</span></span> <span data-ttu-id="a96d7-146">Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="a96d7-146">Required.</span></span> |
-| <span data-ttu-id="a96d7-147">escopo</span><span class="sxs-lookup"><span data-stu-id="a96d7-147">scope</span></span> | [<span data-ttu-id="a96d7-148">accessReviewScope</span><span class="sxs-lookup"><span data-stu-id="a96d7-148">accessReviewScope</span></span>](../resources/accessreviewscope.md) | <span data-ttu-id="a96d7-149">Define o escopo dos usuários revisados em um grupo.</span><span class="sxs-lookup"><span data-stu-id="a96d7-149">Defines the scope of users reviewed in a group.</span></span> <span data-ttu-id="a96d7-150">Consulte [accessReviewScope](../resources/accessreviewscheduledefinition.md) e também saiba como [configurar o escopo da sua definição de revisão de acesso.](/graph/accessreviews-scope-concept)</span><span class="sxs-lookup"><span data-stu-id="a96d7-150">See  [accessReviewScope](../resources/accessreviewscheduledefinition.md) and also learn how to [configure the scope of your access review definition](/graph/accessreviews-scope-concept).</span></span> <span data-ttu-id="a96d7-151">Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="a96d7-151">Required.</span></span>| 
-| <span data-ttu-id="a96d7-152">instanceEnumerationScope</span><span class="sxs-lookup"><span data-stu-id="a96d7-152">instanceEnumerationScope</span></span> | [<span data-ttu-id="a96d7-153">accessReviewScope</span><span class="sxs-lookup"><span data-stu-id="a96d7-153">accessReviewScope</span></span>](../resources/accessreviewscope.md) | <span data-ttu-id="a96d7-154">No caso de uma revisão de todos os grupos, isso determina o escopo de quais grupos serão revisados.</span><span class="sxs-lookup"><span data-stu-id="a96d7-154">In the case of an all groups review, this determines the scope of which groups will be reviewed.</span></span> <span data-ttu-id="a96d7-155">Consulte [accessReviewScope](../resources/accessreviewscheduledefinition.md) e também saiba como [configurar o escopo da sua definição de revisão de acesso.](/graph/accessreviews-scope-concept)</span><span class="sxs-lookup"><span data-stu-id="a96d7-155">See [accessReviewScope](../resources/accessreviewscheduledefinition.md) and also learn how to [configure the scope of your access review definition](/graph/accessreviews-scope-concept).</span></span>| 
-| <span data-ttu-id="a96d7-156">configurações</span><span class="sxs-lookup"><span data-stu-id="a96d7-156">settings</span></span> | [<span data-ttu-id="a96d7-157">accessReviewScheduleSettings</span><span class="sxs-lookup"><span data-stu-id="a96d7-157">accessReviewScheduleSettings</span></span>](../resources/accessreviewschedulesettings.md)| <span data-ttu-id="a96d7-158">As configurações de uma série de revisão de acesso.</span><span class="sxs-lookup"><span data-stu-id="a96d7-158">The settings for an access review series.</span></span> <span data-ttu-id="a96d7-159">A recorrência é determinada aqui.</span><span class="sxs-lookup"><span data-stu-id="a96d7-159">Recurrence is determined here.</span></span> <span data-ttu-id="a96d7-160">Consulte [accessReviewScheduleSettings](../resources/accessreviewscheduledefinition.md).</span><span class="sxs-lookup"><span data-stu-id="a96d7-160">See [accessReviewScheduleSettings](../resources/accessreviewscheduledefinition.md).</span></span> |
-| <span data-ttu-id="a96d7-161">revisadores</span><span class="sxs-lookup"><span data-stu-id="a96d7-161">reviewers</span></span> | <span data-ttu-id="a96d7-162">[Coleção accessReviewReviewerScope](../resources/accessreviewreviewerscope.md)</span><span class="sxs-lookup"><span data-stu-id="a96d7-162">[accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) collection</span></span> | <span data-ttu-id="a96d7-163">Define quem são os revisadores.</span><span class="sxs-lookup"><span data-stu-id="a96d7-163">Defines who the reviewers are.</span></span> <span data-ttu-id="a96d7-164">Se nenhum for especificado, a revisão será uma autoavaliação (os usuários revisados analisam seu próprio acesso).</span><span class="sxs-lookup"><span data-stu-id="a96d7-164">If none are specified, the review is a self-review (users reviewed review their own access).</span></span> <span data-ttu-id="a96d7-165">Consulte [accessReviewReviewerScope](../resources/accessreviewscheduledefinition.md).</span><span class="sxs-lookup"><span data-stu-id="a96d7-165">See [accessReviewReviewerScope](../resources/accessreviewscheduledefinition.md).</span></span> |
-|<span data-ttu-id="a96d7-166">fallbackReviewers</span><span class="sxs-lookup"><span data-stu-id="a96d7-166">fallbackReviewers</span></span>|<span data-ttu-id="a96d7-167">[Coleção accessReviewReviewerScope](../resources/accessreviewreviewerscope.md)</span><span class="sxs-lookup"><span data-stu-id="a96d7-167">[accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) collection</span></span>|<span data-ttu-id="a96d7-168">Se fornecido, os revisadores de fallback serão solicitados a concluir uma revisão se os revistores primários não existirem.</span><span class="sxs-lookup"><span data-stu-id="a96d7-168">If provided, the fallback reviewers are asked to complete a review if the primary reviewers do not exist.</span></span> <span data-ttu-id="a96d7-169">Por exemplo, se os gerentes forem selecionados como e uma entidade em revisão não tiver um gerente no Azure AD, os revisadores de fallback serão solicitados a revisar `reviewers` essa entidade.</span><span class="sxs-lookup"><span data-stu-id="a96d7-169">For example, if managers are selected as `reviewers` and a principal under review does not have a manager in Azure AD, the fallback reviewers are asked to review that principal.</span></span>|
+| <span data-ttu-id="c21c9-135">displayName</span><span class="sxs-lookup"><span data-stu-id="c21c9-135">displayName</span></span> | <span data-ttu-id="c21c9-136">String</span><span class="sxs-lookup"><span data-stu-id="c21c9-136">String</span></span> | <span data-ttu-id="c21c9-137">Nome da série de revisão de acesso.</span><span class="sxs-lookup"><span data-stu-id="c21c9-137">Name of access review series.</span></span> <span data-ttu-id="c21c9-138">Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="c21c9-138">Required.</span></span>|
+| <span data-ttu-id="c21c9-139">descriptionForAdmins</span><span class="sxs-lookup"><span data-stu-id="c21c9-139">descriptionForAdmins</span></span> | <span data-ttu-id="c21c9-140">cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="c21c9-140">string</span></span> | <span data-ttu-id="c21c9-141">Contexto da revisão fornecida aos administradores.</span><span class="sxs-lookup"><span data-stu-id="c21c9-141">Context of the review provided to admins.</span></span> <span data-ttu-id="c21c9-142">Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="c21c9-142">Required.</span></span> |
+  <span data-ttu-id="c21c9-143">descriptionForReviewers</span><span class="sxs-lookup"><span data-stu-id="c21c9-143">descriptionForReviewers</span></span> | <span data-ttu-id="c21c9-144">cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="c21c9-144">string</span></span> | <span data-ttu-id="c21c9-145">Contexto da revisão fornecida aos revisadores.</span><span class="sxs-lookup"><span data-stu-id="c21c9-145">Context of the review provided to reviewers.</span></span> <span data-ttu-id="c21c9-146">Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="c21c9-146">Required.</span></span> |
+| <span data-ttu-id="c21c9-147">escopo</span><span class="sxs-lookup"><span data-stu-id="c21c9-147">scope</span></span> | [<span data-ttu-id="c21c9-148">accessReviewScope</span><span class="sxs-lookup"><span data-stu-id="c21c9-148">accessReviewScope</span></span>](../resources/accessreviewscope.md) | <span data-ttu-id="c21c9-149">Define o escopo dos usuários revisados em um grupo.</span><span class="sxs-lookup"><span data-stu-id="c21c9-149">Defines the scope of users reviewed in a group.</span></span> <span data-ttu-id="c21c9-150">Consulte [accessReviewScope](../resources/accessreviewscheduledefinition.md) e também saiba como [configurar o escopo da sua definição de revisão de acesso.](/graph/accessreviews-scope-concept)</span><span class="sxs-lookup"><span data-stu-id="c21c9-150">See  [accessReviewScope](../resources/accessreviewscheduledefinition.md) and also learn how to [configure the scope of your access review definition](/graph/accessreviews-scope-concept).</span></span> <span data-ttu-id="c21c9-151">Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="c21c9-151">Required.</span></span>| 
+| <span data-ttu-id="c21c9-152">instanceEnumerationScope</span><span class="sxs-lookup"><span data-stu-id="c21c9-152">instanceEnumerationScope</span></span> | [<span data-ttu-id="c21c9-153">accessReviewScope</span><span class="sxs-lookup"><span data-stu-id="c21c9-153">accessReviewScope</span></span>](../resources/accessreviewscope.md) | <span data-ttu-id="c21c9-154">No caso de uma revisão de todos os grupos, isso determina o escopo de quais grupos serão revisados.</span><span class="sxs-lookup"><span data-stu-id="c21c9-154">In the case of an all groups review, this determines the scope of which groups will be reviewed.</span></span> <span data-ttu-id="c21c9-155">Consulte [accessReviewScope](../resources/accessreviewscheduledefinition.md) e também saiba como [configurar o escopo da sua definição de revisão de acesso.](/graph/accessreviews-scope-concept)</span><span class="sxs-lookup"><span data-stu-id="c21c9-155">See [accessReviewScope](../resources/accessreviewscheduledefinition.md) and also learn how to [configure the scope of your access review definition](/graph/accessreviews-scope-concept).</span></span>| 
+| <span data-ttu-id="c21c9-156">settings</span><span class="sxs-lookup"><span data-stu-id="c21c9-156">settings</span></span> | [<span data-ttu-id="c21c9-157">accessReviewScheduleSettings</span><span class="sxs-lookup"><span data-stu-id="c21c9-157">accessReviewScheduleSettings</span></span>](../resources/accessreviewschedulesettings.md)| <span data-ttu-id="c21c9-158">As configurações de uma série de revisão de acesso.</span><span class="sxs-lookup"><span data-stu-id="c21c9-158">The settings for an access review series.</span></span> <span data-ttu-id="c21c9-159">A recorrência é determinada aqui.</span><span class="sxs-lookup"><span data-stu-id="c21c9-159">Recurrence is determined here.</span></span> <span data-ttu-id="c21c9-160">Consulte [accessReviewScheduleSettings](../resources/accessreviewscheduledefinition.md).</span><span class="sxs-lookup"><span data-stu-id="c21c9-160">See [accessReviewScheduleSettings](../resources/accessreviewscheduledefinition.md).</span></span> |
+| <span data-ttu-id="c21c9-161">revisadores</span><span class="sxs-lookup"><span data-stu-id="c21c9-161">reviewers</span></span> | <span data-ttu-id="c21c9-162">[Coleção accessReviewReviewerScope](../resources/accessreviewreviewerscope.md)</span><span class="sxs-lookup"><span data-stu-id="c21c9-162">[accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) collection</span></span> | <span data-ttu-id="c21c9-163">Define quem são os revisadores.</span><span class="sxs-lookup"><span data-stu-id="c21c9-163">Defines who the reviewers are.</span></span> <span data-ttu-id="c21c9-164">Se nenhum for especificado, a revisão será uma autoavaliação (os usuários revisados analisam seu próprio acesso).</span><span class="sxs-lookup"><span data-stu-id="c21c9-164">If none are specified, the review is a self-review (users reviewed review their own access).</span></span> <span data-ttu-id="c21c9-165">Consulte [accessReviewReviewerScope](../resources/accessreviewscheduledefinition.md).</span><span class="sxs-lookup"><span data-stu-id="c21c9-165">See [accessReviewReviewerScope](../resources/accessreviewscheduledefinition.md).</span></span> |
+|<span data-ttu-id="c21c9-166">fallbackReviewers</span><span class="sxs-lookup"><span data-stu-id="c21c9-166">fallbackReviewers</span></span>|<span data-ttu-id="c21c9-167">[Coleção accessReviewReviewerScope](../resources/accessreviewreviewerscope.md)</span><span class="sxs-lookup"><span data-stu-id="c21c9-167">[accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) collection</span></span>|<span data-ttu-id="c21c9-168">Se fornecido, os revisadores de fallback serão solicitados a concluir uma revisão se os revistores primários não existirem.</span><span class="sxs-lookup"><span data-stu-id="c21c9-168">If provided, the fallback reviewers are asked to complete a review if the primary reviewers do not exist.</span></span> <span data-ttu-id="c21c9-169">Por exemplo, se os gerentes forem selecionados como e uma entidade em revisão não tiver um gerente no Azure AD, os revisadores de fallback serão solicitados a revisar `reviewers` essa entidade.</span><span class="sxs-lookup"><span data-stu-id="c21c9-169">For example, if managers are selected as `reviewers` and a principal under review does not have a manager in Azure AD, the fallback reviewers are asked to review that principal.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="a96d7-170">Resposta</span><span class="sxs-lookup"><span data-stu-id="a96d7-170">Response</span></span>
-<span data-ttu-id="a96d7-171">Se tiver êxito, este método retornará um código de resposta e um `201 Created` [objeto accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="a96d7-171">If successful, this method returns a `201 Created` response code and an [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="c21c9-170">Resposta</span><span class="sxs-lookup"><span data-stu-id="c21c9-170">Response</span></span>
+<span data-ttu-id="c21c9-171">Se tiver êxito, este método retornará um código de resposta e um `201 Created` [objeto accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="c21c9-171">If successful, this method returns a `201 Created` response code and an [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) object in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="a96d7-172">Exemplos</span><span class="sxs-lookup"><span data-stu-id="a96d7-172">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="c21c9-172">Exemplos</span><span class="sxs-lookup"><span data-stu-id="c21c9-172">Examples</span></span>
 
-### <a name="example-1-create-an-access-review-on-a-group"></a><span data-ttu-id="a96d7-173">Exemplo 1: Criar uma revisão de acesso em um grupo</span><span class="sxs-lookup"><span data-stu-id="a96d7-173">Example 1: Create an access review on a group</span></span>
+### <a name="example-1-create-an-access-review-on-a-group"></a><span data-ttu-id="c21c9-173">Exemplo 1: Criar uma revisão de acesso em um grupo</span><span class="sxs-lookup"><span data-stu-id="c21c9-173">Example 1: Create an access review on a group</span></span>
 
-<span data-ttu-id="a96d7-174">Este é um exemplo de criação de uma revisão de acesso com as seguintes configurações:</span><span class="sxs-lookup"><span data-stu-id="a96d7-174">This is an example of creating an access review with the following settings:</span></span>
-+ <span data-ttu-id="a96d7-175">A revisão revisa todos os membros de um grupo, cuja **id de grupo** é `02f3bafb-448c-487c-88c2-5fd65ce49a41` .</span><span class="sxs-lookup"><span data-stu-id="a96d7-175">The review reviews all members of a group, whose group **id** is `02f3bafb-448c-487c-88c2-5fd65ce49a41`.</span></span>
-+ <span data-ttu-id="a96d7-176">Um usuário específico, cuja **id de usuário** `398164b1-5196-49dd-ada2-364b49f99b27` é o revistor.</span><span class="sxs-lookup"><span data-stu-id="a96d7-176">A specific user, whose user **id** is `398164b1-5196-49dd-ada2-364b49f99b27` is the reviewer.</span></span>
-+ <span data-ttu-id="a96d7-177">Ela se recursa semanalmente e continua indefinidamente.</span><span class="sxs-lookup"><span data-stu-id="a96d7-177">It recurs weekly and continues indefinitely.</span></span>
+<span data-ttu-id="c21c9-174">Este é um exemplo de criação de uma revisão de acesso com as seguintes configurações:</span><span class="sxs-lookup"><span data-stu-id="c21c9-174">This is an example of creating an access review with the following settings:</span></span>
++ <span data-ttu-id="c21c9-175">A revisão revisa todos os membros de um grupo, cuja **id de grupo** é `02f3bafb-448c-487c-88c2-5fd65ce49a41` .</span><span class="sxs-lookup"><span data-stu-id="c21c9-175">The review reviews all members of a group, whose group **id** is `02f3bafb-448c-487c-88c2-5fd65ce49a41`.</span></span>
++ <span data-ttu-id="c21c9-176">Um usuário específico, cuja **id de usuário** `398164b1-5196-49dd-ada2-364b49f99b27` é o revistor.</span><span class="sxs-lookup"><span data-stu-id="c21c9-176">A specific user, whose user **id** is `398164b1-5196-49dd-ada2-364b49f99b27` is the reviewer.</span></span>
++ <span data-ttu-id="c21c9-177">Ela se recursa semanalmente e continua indefinidamente.</span><span class="sxs-lookup"><span data-stu-id="c21c9-177">It recurs weekly and continues indefinitely.</span></span>
 
-#### <a name="request"></a><span data-ttu-id="a96d7-178">Solicitação</span><span class="sxs-lookup"><span data-stu-id="a96d7-178">Request</span></span>
-<span data-ttu-id="a96d7-179">No corpo da solicitação, fornece uma representação JSON do [objeto accessReviewScheduleDefinition.](../resources/accessreviewscheduledefinition.md)</span><span class="sxs-lookup"><span data-stu-id="a96d7-179">In the request body, supply a JSON representation of the [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) object.</span></span>
+#### <a name="request"></a><span data-ttu-id="c21c9-178">Solicitação</span><span class="sxs-lookup"><span data-stu-id="c21c9-178">Request</span></span>
+<span data-ttu-id="c21c9-179">No corpo da solicitação, fornece uma representação JSON do [objeto accessReviewScheduleDefinition.](../resources/accessreviewscheduledefinition.md)</span><span class="sxs-lookup"><span data-stu-id="c21c9-179">In the request body, supply a JSON representation of the [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) object.</span></span>
 
-
-# <a name="http"></a>[<span data-ttu-id="a96d7-180">HTTP</span><span class="sxs-lookup"><span data-stu-id="a96d7-180">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="c21c9-180">HTTP</span><span class="sxs-lookup"><span data-stu-id="c21c9-180">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_accessReviewScheduleDefinition"
@@ -118,12 +117,30 @@ Content-type: application/json
   }
 }
 ```
+# <a name="c"></a>[<span data-ttu-id="c21c9-181">C#</span><span class="sxs-lookup"><span data-stu-id="c21c9-181">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-accessreviewscheduledefinition-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[<span data-ttu-id="c21c9-182">JavaScript</span><span class="sxs-lookup"><span data-stu-id="c21c9-182">JavaScript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-accessreviewscheduledefinition-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[<span data-ttu-id="c21c9-183">Objective-C</span><span class="sxs-lookup"><span data-stu-id="c21c9-183">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-accessreviewscheduledefinition-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[<span data-ttu-id="c21c9-184">Java</span><span class="sxs-lookup"><span data-stu-id="c21c9-184">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-accessreviewscheduledefinition-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="a96d7-181">Resposta</span><span class="sxs-lookup"><span data-stu-id="a96d7-181">Response</span></span>
-><span data-ttu-id="a96d7-182">**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.</span><span class="sxs-lookup"><span data-stu-id="a96d7-182">**Note:** The response object shown here might be shortened for readability.</span></span>
+---
+
+
+#### <a name="response"></a><span data-ttu-id="c21c9-185">Resposta</span><span class="sxs-lookup"><span data-stu-id="c21c9-185">Response</span></span>
+><span data-ttu-id="c21c9-186">**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.</span><span class="sxs-lookup"><span data-stu-id="c21c9-186">**Note:** The response object shown here might be shortened for readability.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -191,16 +208,18 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-create-an-access-review-on-all-teams-with-inactive-guest-users"></a><span data-ttu-id="a96d7-183">Exemplo 2: Criar uma revisão de acesso em todas as equipes com usuários convidados inativos</span><span class="sxs-lookup"><span data-stu-id="a96d7-183">Example 2: Create an access review on all teams with inactive guest users</span></span>
+### <a name="example-2-create-an-access-review-on-all-teams-with-inactive-guest-users"></a><span data-ttu-id="c21c9-187">Exemplo 2: Criar uma revisão de acesso em todas as equipes com usuários convidados inativos</span><span class="sxs-lookup"><span data-stu-id="c21c9-187">Example 2: Create an access review on all teams with inactive guest users</span></span>
 
-<span data-ttu-id="a96d7-184">Este é um exemplo de criação de uma revisão de acesso com as seguintes configurações:</span><span class="sxs-lookup"><span data-stu-id="a96d7-184">This is an example of creating an access review with the following settings:</span></span>
-+ <span data-ttu-id="a96d7-185">A revisão revisa todas as equipes com usuários convidados inativos.</span><span class="sxs-lookup"><span data-stu-id="a96d7-185">The review reviews all teams with inactive guest users.</span></span> <span data-ttu-id="a96d7-186">O período de inatividade é de 30 dias a partir da data de início da revisão de acesso.</span><span class="sxs-lookup"><span data-stu-id="a96d7-186">The period of inactivity is 30 days from the start date of the access review.</span></span>
-+ <span data-ttu-id="a96d7-187">Os proprietários do grupo são os revisadores e os revisadores de fallback são atribuídos.</span><span class="sxs-lookup"><span data-stu-id="a96d7-187">The group owners are the reviewers and fallback reviewers are assigned.</span></span>
-+ <span data-ttu-id="a96d7-188">Ela se recorre no terceiro dia de cada trimestre e continua indefinidamente.</span><span class="sxs-lookup"><span data-stu-id="a96d7-188">It recurs on the third day of every quarter and continues indefinitely.</span></span>
-+ <span data-ttu-id="a96d7-189">**autoApplyDecisionsEnabled** é definido como `true` com **o defaultDecision** definido como `Deny` .</span><span class="sxs-lookup"><span data-stu-id="a96d7-189">**autoApplyDecisionsEnabled** is set to `true` with the **defaultDecision** set to `Deny`.</span></span>
+<span data-ttu-id="c21c9-188">Este é um exemplo de criação de uma revisão de acesso com as seguintes configurações:</span><span class="sxs-lookup"><span data-stu-id="c21c9-188">This is an example of creating an access review with the following settings:</span></span>
++ <span data-ttu-id="c21c9-189">A revisão revisa todas as equipes com usuários convidados inativos.</span><span class="sxs-lookup"><span data-stu-id="c21c9-189">The review reviews all teams with inactive guest users.</span></span> <span data-ttu-id="c21c9-190">O período de inatividade é de 30 dias a partir da data de início da revisão de acesso.</span><span class="sxs-lookup"><span data-stu-id="c21c9-190">The period of inactivity is 30 days from the start date of the access review.</span></span>
++ <span data-ttu-id="c21c9-191">Os proprietários do grupo são os revisadores e os revisadores de fallback são atribuídos.</span><span class="sxs-lookup"><span data-stu-id="c21c9-191">The group owners are the reviewers and fallback reviewers are assigned.</span></span>
++ <span data-ttu-id="c21c9-192">Ela se recorre no terceiro dia de cada trimestre e continua indefinidamente.</span><span class="sxs-lookup"><span data-stu-id="c21c9-192">It recurs on the third day of every quarter and continues indefinitely.</span></span>
++ <span data-ttu-id="c21c9-193">**autoApplyDecisionsEnabled** é definido como `true` com **o defaultDecision** definido como `Deny` .</span><span class="sxs-lookup"><span data-stu-id="c21c9-193">**autoApplyDecisionsEnabled** is set to `true` with the **defaultDecision** set to `Deny`.</span></span>
 
-#### <a name="request"></a><span data-ttu-id="a96d7-190">Solicitação</span><span class="sxs-lookup"><span data-stu-id="a96d7-190">Request</span></span>
-<span data-ttu-id="a96d7-191">No corpo da solicitação, fornece uma representação JSON do [objeto accessReviewScheduleDefinition.](../resources/accessreviewscheduledefinition.md)</span><span class="sxs-lookup"><span data-stu-id="a96d7-191">In the request body, supply a JSON representation of the [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) object.</span></span>
+#### <a name="request"></a><span data-ttu-id="c21c9-194">Solicitação</span><span class="sxs-lookup"><span data-stu-id="c21c9-194">Request</span></span>
+<span data-ttu-id="c21c9-195">No corpo da solicitação, fornece uma representação JSON do [objeto accessReviewScheduleDefinition.](../resources/accessreviewscheduledefinition.md)</span><span class="sxs-lookup"><span data-stu-id="c21c9-195">In the request body, supply a JSON representation of the [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) object.</span></span>
+
+# <a name="http"></a>[<span data-ttu-id="c21c9-196">HTTP</span><span class="sxs-lookup"><span data-stu-id="c21c9-196">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_accessReviewScheduleDefinition_inactiveguests_M365"
@@ -259,9 +278,27 @@ Content-type: application/json
   }
 }
 ```
+# <a name="c"></a>[<span data-ttu-id="c21c9-197">C#</span><span class="sxs-lookup"><span data-stu-id="c21c9-197">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-accessreviewscheduledefinition-inactiveguests-m365-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-#### <a name="response"></a><span data-ttu-id="a96d7-192">Resposta</span><span class="sxs-lookup"><span data-stu-id="a96d7-192">Response</span></span>
-><span data-ttu-id="a96d7-193">**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.</span><span class="sxs-lookup"><span data-stu-id="a96d7-193">**Note:** The response object shown here might be shortened for readability.</span></span>
+# <a name="javascript"></a>[<span data-ttu-id="c21c9-198">JavaScript</span><span class="sxs-lookup"><span data-stu-id="c21c9-198">JavaScript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-accessreviewscheduledefinition-inactiveguests-m365-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[<span data-ttu-id="c21c9-199">Objective-C</span><span class="sxs-lookup"><span data-stu-id="c21c9-199">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-accessreviewscheduledefinition-inactiveguests-m365-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[<span data-ttu-id="c21c9-200">Java</span><span class="sxs-lookup"><span data-stu-id="c21c9-200">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-accessreviewscheduledefinition-inactiveguests-m365-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+#### <a name="response"></a><span data-ttu-id="c21c9-201">Resposta</span><span class="sxs-lookup"><span data-stu-id="c21c9-201">Response</span></span>
+><span data-ttu-id="c21c9-202">**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.</span><span class="sxs-lookup"><span data-stu-id="c21c9-202">**Note:** The response object shown here might be shortened for readability.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -355,14 +392,15 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-3-create-an-access-review-of-all-users-to-an-application"></a><span data-ttu-id="a96d7-194">Exemplo 3: Criar uma revisão de acesso de todos os usuários para um aplicativo</span><span class="sxs-lookup"><span data-stu-id="a96d7-194">Example 3: Create an access review of all users to an application</span></span>
+### <a name="example-3-create-an-access-review-of-all-users-to-an-application"></a><span data-ttu-id="c21c9-203">Exemplo 3: Criar uma revisão de acesso de todos os usuários para um aplicativo</span><span class="sxs-lookup"><span data-stu-id="c21c9-203">Example 3: Create an access review of all users to an application</span></span>
 
-<span data-ttu-id="a96d7-195">Este é um exemplo de criação de uma revisão de acesso com as seguintes configurações:</span><span class="sxs-lookup"><span data-stu-id="a96d7-195">This is an example of creating an access review with the following settings:</span></span>
-+ <span data-ttu-id="a96d7-196">A revisão revisa o acesso do usuário a um aplicativo.</span><span class="sxs-lookup"><span data-stu-id="a96d7-196">The review reviews user access to an application.</span></span>
-+ <span data-ttu-id="a96d7-197">Os gerentes de pessoas são revisadores e revisadores de fallback são membros de um grupo.</span><span class="sxs-lookup"><span data-stu-id="a96d7-197">The people managers are the reviewers and fallback reviewers are the members of a group.</span></span>
-+ <span data-ttu-id="a96d7-198">Ela recorre semesanuais e termina 1 ano a partir do startDate.</span><span class="sxs-lookup"><span data-stu-id="a96d7-198">It recurs semi-annually and ends 1 year from the startDate.</span></span>
+<span data-ttu-id="c21c9-204">Este é um exemplo de criação de uma revisão de acesso com as seguintes configurações:</span><span class="sxs-lookup"><span data-stu-id="c21c9-204">This is an example of creating an access review with the following settings:</span></span>
++ <span data-ttu-id="c21c9-205">A revisão revisa o acesso do usuário a um aplicativo.</span><span class="sxs-lookup"><span data-stu-id="c21c9-205">The review reviews user access to an application.</span></span>
++ <span data-ttu-id="c21c9-206">Os gerentes de pessoas são revisadores e revisadores de fallback são membros de um grupo.</span><span class="sxs-lookup"><span data-stu-id="c21c9-206">The people managers are the reviewers and fallback reviewers are the members of a group.</span></span>
++ <span data-ttu-id="c21c9-207">Ela recorre semesanuais e termina 1 ano a partir do startDate.</span><span class="sxs-lookup"><span data-stu-id="c21c9-207">It recurs semi-annually and ends 1 year from the startDate.</span></span>
 
-#### <a name="request"></a><span data-ttu-id="a96d7-199">Solicitação</span><span class="sxs-lookup"><span data-stu-id="a96d7-199">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="c21c9-208">Solicitação</span><span class="sxs-lookup"><span data-stu-id="c21c9-208">Request</span></span>
+
 <!-- {
   "blockType": "request",
   "name": "create_accessReviewScheduleDefinition_allusers_M365_AADRole"
@@ -435,8 +473,8 @@ Content-type: application/json
 }
 ```
 
-#### <a name="response"></a><span data-ttu-id="a96d7-200">Resposta</span><span class="sxs-lookup"><span data-stu-id="a96d7-200">Response</span></span>
-><span data-ttu-id="a96d7-201">**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.</span><span class="sxs-lookup"><span data-stu-id="a96d7-201">**Note:** The response object shown here might be shortened for readability.</span></span>
+#### <a name="response"></a><span data-ttu-id="c21c9-209">Resposta</span><span class="sxs-lookup"><span data-stu-id="c21c9-209">Response</span></span>
+><span data-ttu-id="c21c9-210">**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.</span><span class="sxs-lookup"><span data-stu-id="c21c9-210">**Note:** The response object shown here might be shortened for readability.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
