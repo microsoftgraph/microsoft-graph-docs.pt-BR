@@ -1,27 +1,18 @@
 ---
-author: JeremyKelley
-description: Crie uma sessão de upload para permitir que seu aplicativo carregue arquivos até o tamanho máximo de arquivo.
-ms.date: 09/10/2017
-title: Upload de arquivos retomável
-localization_priority: Normal
-ms.prod: sharepoint
-doc_type: apiPageType
-ms.openlocfilehash: 5730bb9ecd59adc14d375f73794d9a34b464a831
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
-ms.translationtype: MT
-ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47982095"
+autor: Descrição de JeremyKelley: "Criar uma sessão de carregamento para permitir que seu aplicativo carregue arquivos até o tamanho máximo do arquivo."
+title: driveItem: createUploadSession localization_priority: Normal ms.prod: "sites e listas" doc_type: apiPageType
 ---
-# <a name="upload-large-files-with-an-upload-session"></a>Carregar arquivos grandes com uma sessão de upload
+# <a name="driveitem-createuploadsession"></a>driveItem: createUploadSession
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Crie uma sessão de upload para permitir que seu aplicativo carregue arquivos até o tamanho máximo de arquivo. Uma sessão de upload permite que seu aplicativo carregue intervalos do arquivo em solicitações de API sequenciais, permitindo que a transferência seja retomada se uma conexão for interrompida enquanto o upload estiver em andamento.
+Crie uma sessão de upload para permitir que seu aplicativo carregue arquivos até o tamanho máximo de arquivo.
 
-Para carregar um arquivo usando uma sessão de upload, duas etapas são obrigatórias:
+Uma sessão de carregamento permite que seu aplicativo carregue intervalos do arquivo em solicitações de API sequenciais, o que permite que a transferência seja retomada se uma conexão for retirada enquanto o carregamento estiver em andamento.
+
+Para carregar um arquivo usando uma sessão de carregamento:
 
 1. [Criar uma sessão de upload](#create-an-upload-session)
 2. [Carregar bytes na sessão de upload](#upload-bytes-to-the-upload-session)
@@ -41,7 +32,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 Para iniciar o upload de um arquivo grande, seu aplicativo deve primeiro solicitar uma nova sessão de upload.
 Isso cria um local de armazenamento temporário no qual os bytes do arquivo serão salvos até que este seja totalmente carregado.
 Depois que o último byte do arquivo for carregado, a sessão de upload será concluída, e o arquivo final aparecerá na pasta de destino.
-Como alternativa, você pode adiar a criação final do arquivo no destino até que você explicitamente faça uma solicitação para concluir o carregamento, definindo a `deferCommit` Propriedade nos argumentos de solicitação.
+Como alternativa, você pode adiar a criação final do arquivo no destino até que você tenha feito explicitamente uma solicitação para concluir o carregamento, definindo a propriedade `deferCommit` nos argumentos da solicitação.
 
 ### <a name="http-request"></a>Solicitação HTTP
 
@@ -58,20 +49,22 @@ POST /users/{userId}/drive/items/{itemId}/createUploadSession
 ### <a name="request-body"></a>Corpo da solicitação
 
 Nenhum corpo de solicitação é obrigatório.
-No entanto, você pode especificar propriedades no corpo da solicitação, fornecendo dados adicionais sobre o arquivo sendo carregado e personalizando a semântica da operação de upload.
+No entanto, você pode especificar propriedades no corpo da solicitação, fornecendo dados adicionais sobre o arquivo sendo carregado e personalizando a semântica da operação de carregamento.
 
-Por exemplo, a `item` propriedade permite definir os seguintes parâmetros:
+Por exemplo, a propriedade `item` permite definir os seguintes parâmetros:
 <!-- { "blockType": "resource", "@odata.type": "microsoft.graph.driveItemUploadableProperties" } -->
 ```json
 {
   "@microsoft.graph.conflictBehavior": "fail (default) | replace | rename",
   "description": "description",
+  "driveItemSource": { "@odata.type": "microsoft.graph.driveItemSource" },
   "fileSize": 1234,
-  "name": "filename.txt"
+  "name": "filename.txt",
+  "mediaSource": { "@odata.type": "microsoft.graph.mediaSource" }
 }
 ```
 
-O exemplo a seguir controla o comportamento se o nome do arquivo já tiver sido obtido, e também especifica que o arquivo final não deve ser criado até que uma solicitação de conclusão explícita seja feita:
+O exemplo a seguir controla o comportamento se o nome do arquivo já estiver sendo tirado e também especifica se o arquivo final não deve ser criado até que uma solicitação de conclusão explícita seja feita:
 
 <!-- { "blockType": "ignored" } -->
 ```json
@@ -93,8 +86,8 @@ O exemplo a seguir controla o comportamento se o nome do arquivo já tiver sido 
 
 | Parâmetro            | Tipo                          | Descrição
 |:---------------------|:------------------------------|:---------------------------------
-| item                 | [driveItemUploadableProperties](../resources/driveItemUploadableProperties.md) | Dados sobre o arquivo que está sendo carregado
-| deferCommit          | Boolean                       | Se for definido como true, a criação final do arquivo no destino exigirá uma solicitação explícita. Somente no OneDrive for Business.
+| item                 | [driveItemUploadableProperties](../resources/driveItemUploadableProperties.md) | Dados sobre o arquivo sendo carregado
+| deferCommit          | Booliano                       | Se definido como verdadeiro, a criação final do arquivo no destino exigirá uma solicitação explícita. Somente no OneDrive for Business.
 
 ### <a name="request"></a>Solicitação
 
@@ -121,7 +114,7 @@ A resposta a essa solicitação, se tiver êxito, fornecerá os detalhes sobre o
 
 Esse recurso fornece detalhes sobre onde o intervalo de bytes do arquivo deve ser carregado e quando a sessão de carregamento expira.
 
-Se o `fileSize` parâmetro for especificado e exceder a cota disponível, uma `507 Insufficent Storage` resposta será retornada e a sessão de upload não será criada.
+Se o parâmetro `fileSize` for especificado e exceder a cota disponível, uma resposta `507 Insufficent Storage` será retornada e a sessão de carregamento não será criada.
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.uploadSession",
        "optionalProperties": [ "nextExpectedRanges" ]  } -->
@@ -213,14 +206,14 @@ Content-Type: application/json
 
 ## <a name="completing-a-file"></a>Concluindo um arquivo
 
-Se `deferCommit` for false ou indefinida, o carregamento será concluído automaticamente quando o intervalo de bytes final do arquivo for colocado na URL de upload.
+Se `deferCommit` for falso ou não configurado, o carregamento será concluído automaticamente quando o intervalo de bytes final do arquivo for colocado na URL de carregamento.
 
-Se `deferCommit` for true, você poderá concluir o carregamento explicitamente de duas maneiras:
-- Depois que o intervalo de bytes final do arquivo é colocado na URL de upload, envie uma solicitação POST final para a URL de upload com conteúdo de comprimento zero (atualmente, só é compatível com o OneDrive for Business e o SharePoint).
-- Depois que o intervalo de bytes final do arquivo é colocado na URL de upload, envie uma solicitação PUT final da mesma maneira que você [lida com os erros de carregamento](#handle-upload-errors) (atualmente, só há suporte no onedrive Personal).
+Se `deferCommit` for verdadeiro, você pode concluir explicitamente o carregamento de duas maneiras:
+- Após o intervalo de bytes final do arquivo ser colocado na URL de carregamento, envie uma solicitação final de POST para a URL de carregamento com conteúdo de comprimento zero (no momento, com suporte somente no OneDrive for Business e no SharePoint).
+- Após o intervalo de bytes final do arquivo ser COLOCADO na URL de carregamento, envie uma solicitação final de PUT na mesma maneira que você [resolveria erros de carregamento](#handle-upload-errors) (no momento, com suporte somente no OneDrive for Business e no SharePoint).
 
 
-Quando o upload estiver concluído, o servidor responderá à solicitação final com um `HTTP 201 Created` ou `HTTP 200 OK` .
+Quando o carregamento for concluído, o servidor responderá à solicitação final com `HTTP 201 Created` ou `HTTP 200 OK`.
 O corpo da resposta também incluirá o conjunto de propriedades padrão para o **driveItem** que representa o arquivo concluído.
 
 <!-- { "blockType": "request", "opaqueUrl": true, "name": "upload-fragment-final", "scopes": "files.readwrite" } -->
@@ -407,8 +400,10 @@ Content-Type: application/json
 
 Confira o tópico [Respostas de Erro][error-response] para saber detalhes sobre como os erros são retornados.
 
+[driveItemSource]: ../resources/driveItemSource.md
 [error-response]: /graph/errors
 [item-resource]: ../resources/driveitem.md
+[mediaSource]: ../resources/mediaSource.md
 
 <!--
 {

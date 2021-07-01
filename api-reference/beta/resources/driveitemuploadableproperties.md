@@ -1,33 +1,35 @@
 ---
-title: tipo de recurso driveItemUploadableProperties
-description: O recurso driveItemUploadableProperties representa um item sendo carregado durante a criação de uma sessão de carregamento.
+title: Tipo de recurso driveItemUploadableProperties
+description: O recurso driveItemUploadableProperties representa um item sendo carregado ao criar uma sessão de carregamento.
 localization_priority: Normal
 author: JeremyKelley
-ms.prod: ''
+ms.prod: sites-and-lists
 doc_type: resourcePageType
-ms.openlocfilehash: 9505de9fd67a5f8cf8d7e89e964d98d758a22bde
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 6c00270f1e86e2bb8f44af36c6c514c9b80a647d
+ms.sourcegitcommit: 0adbbcbc65b6acab80e9195f13321055994f56be
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48067381"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "53236205"
 ---
-# <a name="driveitemuploadableproperties-resource-type"></a>tipo de recurso driveItemUploadableProperties
+# <a name="driveitemuploadableproperties-resource-type"></a>Tipo de recurso driveItemUploadableProperties
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-O recurso **driveItemUploadableProperties** representa um item sendo carregado durante [a criação de uma sessão de carregamento](../api/driveitem-createuploadsession.md).
+O **recurso driveItemUploadableProperties** representa um item que está sendo carregado ao [criar uma sessão de carregamento.](../api/driveitem-createuploadsession.md)
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade     | Tipo                              | Descrição                                                                                         |
 |:-------------|:----------------------------------|:----------------------------------------------------------------------------------------------------|
-|description   |String                             | Fornece uma descrição do item visível para o usuário. Leitura e gravação. Somente no OneDrive Personal.             |
-|Tamanho      |Int64                              | Fornece um tamanho de arquivo esperado para executar uma verificação de cota antes do carregamento. Somente no OneDrive Personal. |
+|description   |String                             | Fornece uma descrição do item visível para o usuário. Leitura e gravação. Somente no OneDrive Pessoal.             |
+|driveItemSource| [driveItemSource](driveItemSource.md)              | Informações sobre a fonte do item da unidade. Leitura e gravação. Somente em OneDrive for Business e SharePoint.  |
+|fileSize      |Int64                              | Fornece um tamanho de arquivo esperado para executar uma verificação de cota antes de carregar. Somente no OneDrive Pessoal. |
 |fileSystemInfo|[fileSystemInfo](filesysteminfo.md)| Informações do sistema de arquivos no cliente. Leitura e gravação.                                                      |
-|name          |String                             | O nome do item (nome do arquivo e extensão). Leitura e gravação.                                          |
+|mediaSource  | [mediaSource](mediaSource.md)                    | Informações de origem de mídia. Leitura e gravação. Somente em OneDrive for Business e SharePoint.                 |
+|nome          |String                             | O nome do item (nome do arquivo e extensão). Leitura e gravação.                                          |
 
 ## <a name="json-representation"></a>Representação JSON
 

@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 5c3ef165a6c28754536531626d39d49810ab76d1
-ms.sourcegitcommit: 412507a3c3a8e407fcc43b7cd227d4db35791f58
+ms.openlocfilehash: 0afea2548acf6a036fa222211c6f52bd0e04ca43
+ms.sourcegitcommit: 0adbbcbc65b6acab80e9195f13321055994f56be
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51766123"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "53236275"
 ---
 # <a name="channel-resource-type"></a>Tipo de recurso de usuário
 
@@ -52,12 +52,12 @@ Namespace: microsoft.graph
 |:---------------|:--------|:----------|
 |description|String|Descrição textual opcional do canal.|
 |displayName|String|Nome do canal como ele aparecerá ao usuário no Microsoft Teams.|
-|id|String|O identificador exclusivo do canal. Somente leitura.|
+|id|Cadeia de caracteres|O identificador exclusivo do canal. Somente leitura.|
 |isFavoriteByDefault|Booliano|Indica se o canal deve automaticamente ser marcado como “favorito” para todos os membros da equipe. Só pode ser definida por programação com [Criar equipe](../api/team-post.md). Padrão: `false`.|
 |email|Cadeia de caracteres| O endereço de email para enviar mensagens ao canal. Somente leitura.|
 |webUrl|String|Um hiperlink que navegará até o canal no Microsoft Teams. Essa é a URL que você recebe ao clicar com o botão direito do mouse em um canal Microsoft Teams e selecionar Obter o link para o canal. Essa URL deve ser tratada como um blob opaco e não analisado. Somente leitura.|
 |membershipType|[channelMembershipType](../resources/enums.md#channelmembershiptype-values)|O tipo do canal. Pode ser definido durante a criação e não pode ser alterado. Valores possíveis são:`standard` - Canal herda a lista de membros da equipe principal;`private` - O canal pode ter membros que são um subconjunto de todos os membros da equipe principal.
-|createdDateTime|dateTimeOffset|Somente leitura. Carimbo de data/hora de criação do canal.|
+|createdDateTime|dateTimeOffset|Somente leitura. Carimbo de data/hora da criação do canal.|
 
 ### <a name="instance-attributes"></a>Atributos de instância
 
@@ -75,9 +75,9 @@ Para obter um exemplo de uma solicitação POST, confira [Solicitação (criar c
 
 | Relação | Tipo |Descrição|
 |:---------------|:--------|:----------|
-|messages|[chatMessage](chatmessage.md) collection|Uma coleção de todas as mensagens do canal. Uma propriedade de navegação. Anulável.|
-|guias|[teamsTab](../resources/teamstab.md) collection|Uma coleção de todas as guias do canal. Uma propriedade de navegação.|
-|membros|coleção [conversationMember](conversationmember.md)|Uma coleção de registros de associação ligados ao canal.|
+|messages|[chatMessage](chatmessage.md) collection|Uma coleção de todas as mensagens no canal. Uma propriedade de navegação. Anulável.|
+|guias|[teamsTab](../resources/teamstab.md) collection|Uma coleção de todas as guias no canal. Uma propriedade de navegação.|
+|members|coleção [conversationMember](conversationmember.md)|Uma coleção de registros de associação ligados ao canal.|
 |[filesFolder](../api/channel-get-filesfolder.md)|[driveItem](driveitem.md)|Metadados para o local em que os arquivos do canal estão armazenados.|
 |operations|Coleção [teamsAsyncOperation](teamsasyncoperation.md)| As operações assíncronas que foram executadas ou estão em execução nesta equipe. |
 

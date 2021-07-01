@@ -4,12 +4,12 @@ description: 'O Microsoft Graph permite a integração com os melhores serviços
 author: angelgolfer-ms
 localization_priority: Priority
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 27ac5bb349ad8ada5cc079331cfb23e3c08e87bf
-ms.sourcegitcommit: 1b09298649d5606b471b4cbe1055419bbe2fc7e5
+ms.openlocfilehash: 72fb366eaddad82273cc43aa280bde810a8259b7
+ms.sourcegitcommit: 0adbbcbc65b6acab80e9195f13321055994f56be
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "52067219"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "53236261"
 ---
 # <a name="major-services-and-features-in-microsoft-graph"></a>Principais serviços e recursos do Microsoft Graph
 
@@ -138,7 +138,6 @@ Alguns serviços do Microsoft Graph iniciam-se no próprio Microsoft Graph, outr
 <!-- Need to update the destination page titles and URLs as Matt's v-team finalize on the examples and featured scenarios content 
 -->
 
-- Veja [exemplos](https://developer.microsoft.com/graph/examples) de soluções criativas criadas sobre os serviços do Microsoft Graph que solucionam problemas reais de clientes.
 - No índice, confira **Saiba mais** para ler sobre os serviços e recursos que _você_ pode usar em seus cenários.
 - Experimente um exemplo de solicitação no [Explorador do Graph](https://developer.microsoft.com/graph/graph-explorer).
 - Use os [inícios rápidos](https://developer.microsoft.com/graph/quick-start) para configurar um aplicativo de amostra pronto para funcionar.

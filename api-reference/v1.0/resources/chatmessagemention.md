@@ -5,12 +5,12 @@ localization_priority: Normal
 author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 7af1260cbddfcecef21fc85ccf057c028681b061
-ms.sourcegitcommit: 16ee16e7fddd662ca42dc5c9352cfb109e31ed1a
+ms.openlocfilehash: 2891a555666f7265050ec4e9b12f4d8f02500c4f
+ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/03/2021
-ms.locfileid: "51582757"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53206990"
 ---
 # <a name="chatmessagemention-resource-type"></a>Tipo de recurso chatMessageMention
 
@@ -36,12 +36,11 @@ A segunda menção tem um atributo 1, que corresponde à `id` **propriedade id**
 Para um contexto mais completo do exemplo, consulte [List channel message replies](../api/chatmessage-list-replies.md#example).
 
 ## <a name="properties"></a>Propriedades
-
-| Propriedade| Tipo|Descrição|
+| Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |id|Int32|Índice de uma entidade que está sendo mencionada no **chatMessage especificado.** Corresponde ao valor {index} na `<at id="{index}">` marca correspondente no corpo da mensagem.|
-|mentionText|string|Cadeia de caracteres usada para representar a menção. Por exemplo, o nome de exibição de um usuário, um nome de equipe.|
-|mencionado|[identitySet](identityset.md)|A entidade (usuário, aplicativo, equipe ou canal) mencionada.  Se foi um canal ou uma equipe que foi @mentioned, o identitySet contém uma propriedade de conversa que dá **a** ID da equipe/canal e uma propriedade **conversationIdentityType** que representa a equipe ou o canal.|
+|mentionText|cadeia de caracteres|Cadeia de caracteres usada para representar a menção. Por exemplo, o nome de exibição de um usuário, um nome de equipe.|
+|mencionado|[chatMessageMentionedIdentitySet](chatmessagementionedidentityset.md)|A entidade (usuário, aplicativo, equipe ou canal) que foi @mentioned.|
 
 
 ## <a name="json-representation"></a>Representação JSON
@@ -57,7 +56,7 @@ Veja a seguir uma representação JSON do recurso.
 {
   "id": 1024,
   "mentionText": "string",
-  "mentioned": {"@odata.type": "microsoft.graph.identitySet"}
+  "mentioned": {"@odata.type": "microsoft.graph.chatMessageMentionedIdentitySet"}
  }
 ```
 
@@ -73,3 +72,5 @@ Veja a seguir uma representação JSON do recurso.
   "suppressions": []
 }
 -->
+
+

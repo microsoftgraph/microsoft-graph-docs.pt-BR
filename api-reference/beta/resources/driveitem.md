@@ -1,17 +1,16 @@
 ---
 author: JeremyKelley
 description: O recurso DriveItem representa um arquivo, pasta ou outro item armazenado em uma unidade.
-ms.date: 09/10/2017
-title: DriveItem
+title: driveItem
 localization_priority: Normal
-ms.prod: sharepoint
+ms.prod: sites-and-lists
 doc_type: resourcePageType
-ms.openlocfilehash: 7810850e8968a8985cc611930088c5dbec817484
-ms.sourcegitcommit: 0d4377b0153bc339ab7b3b1a6ee4d52848b622d4
+ms.openlocfilehash: 1be483b8309944c1a323c7274efe55b04feb6c3d
+ms.sourcegitcommit: 0adbbcbc65b6acab80e9195f13321055994f56be
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "49714292"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "53236247"
 ---
 # <a name="driveitem-resource-type"></a>tipo de recurso driveItem
 
@@ -21,7 +20,7 @@ Namespace: microsoft.graph
 
 O recurso **DriveItem** representa um arquivo, pasta ou outro item armazenado em uma unidade.
 
-Todos os objetos do sistema de arquivos no OneDrive e no SharePoint são retornados como recursos **driveItem**. Os itens das bibliotecas de documentos do SharePoint podem ser representados como recursos [ListItem][] ou **driveItem** .
+Todos os objetos do sistema de arquivos no OneDrive e no SharePoint são retornados como recursos **driveItem**. Os itens nas bibliotecas de documentos do Microsoft Office SharePoint Online podem ser representados como recursos [listItem][] ou **driveItem**.
 
 Há duas maneiras principais de endereçar um recurso **driveItem**:
 
@@ -48,7 +47,7 @@ O recurso **driveItem** é derivado de [**baseItem**][baseItem] e herda propried
        "optionalProperties": ["cTag", "children", "folder", "file", "image", "audio", "video",
        "location", "deleted", "specialFolder", "photo", "thumbnails", "searchResult", "remoteItem",
        "shared", "content", "@microsoft.graph.conflictBehavior", "@microsoft.graph.downloadUrl", "@content.sourceUrl",
-       "sharepointIds"],
+       "sharepointIds", "source", "media"],
        "keyProperty": "id", "openType": true } -->
 
 ```json
@@ -63,6 +62,7 @@ O recurso **driveItem** é derivado de [**baseItem**][baseItem] e herda propried
   "folder": { "@odata.type": "microsoft.graph.folder" },
   "image": { "@odata.type": "microsoft.graph.image" },
   "location": { "@odata.type": "microsoft.graph.geoCoordinates" },
+  "media": { "@odata.type": "microsoft.graph.media" },
   "package": { "@odata.type": "microsoft.graph.package" },
   "pendingOperations": { "@odata.type": "microsoft.graph.pendingOperations" },
   "photo": { "@odata.type": "microsoft.graph.photo" },
@@ -73,6 +73,7 @@ O recurso **driveItem** é derivado de [**baseItem**][baseItem] e herda propried
   "shared": { "@odata.type": "microsoft.graph.shared" },
   "sharepointIds": { "@odata.type": "microsoft.graph.sharepointIds" },
   "size": 1024,
+  "source": { "@odata.type": "microsoft.graph.driveItemSource" },
   "specialFolder": { "@odata.type": "microsoft.graph.specialFolder" },
   "video": { "@odata.type": "microsoft.graph.video" },
   "webDavUrl": "string",
@@ -125,10 +126,11 @@ O recurso **driveItem** é derivado de [**baseItem**][baseItem] e herda propried
 | lastModifiedBy       | [identitySet][]    | Identidade do usuário, dispositivo e aplicativo que modificou o item pela última vez. Somente leitura.
 | lastModifiedDateTime | DateTimeOffset     | Data e hora em que o item foi modificado pela última vez. Somente leitura.
 | location             | [geoCoordinates][] | Metadados de localização, se o item tiver dados de localização. Somente leitura.
+| media                | [mídia][]          | Informações sobre o item mídia (áudio ou vídeo). Leitura e gravação. Somente em OneDrive for Business e SharePoint.
 | nome                 | String             | O nome do item (nome do arquivo e extensão). Leitura e gravação.
 | pacote              | [package][]        | Se presente, indica que esse item é um pacote, e não uma pasta ou um arquivo. Pacotes são tratados como arquivos em alguns contextos e como pastas em outros. Somente leitura.
 | parentReference      | [itemReference][]  | Informações do pai, se o item tiver um pai. Leitura e gravação.
-| pendingOperations    | [pendingOperations][] | Se presente, indica que uma ou mais operações que podem afetar o estado de driveItem estão aguardando conclusão. Somente leitura.
+| pendingOperations    | [pendingOperations][] | Se presente, indica que uma ou mais operações que podem afetar o estado do driveItem estão pendentes de conclusão. Somente leitura.
 | photo                | [photo][]          | Metadados de foto, se o item for uma foto. Somente leitura.
 | publication          | [publicationFacet][] | Fornece informações sobre o estado de publicação ou de check-out de um item, nos locais que oferecem suporte a essas ações. Esta propriedade não retorna por padrão. Somente leitura. |
 | remoteItem           | [remoteItem][]     | Dados do item remoto, se o item for compartilhado de uma unidade diferente daquela que está sendo acessada. Somente leitura.
@@ -138,6 +140,7 @@ O recurso **driveItem** é derivado de [**baseItem**][baseItem] e herda propried
 | sharepointIds        | [sharepointIds][]  | Retorna os identificadores úteis para fins de compatibilidade do REST do SharePoint. Somente leitura.
 | size                 | Int64              | O tamanho do item em bytes. Somente leitura.
 | specialFolder        | [specialFolder][]  | Se o item atual também estiver disponível como uma pasta especial, essa faceta será retornada. Somente leitura.
+| source               | [driveItemSource][]| Informações sobre a fonte do item da unidade. Só leitura. Somente em OneDrive for Business e SharePoint.
 | video                | [video][]          | Metadados de vídeo, se o item for um vídeo. Somente leitura.
 | webDavUrl            | String             | URL compatível com WebDAV para o item.
 | webUrl               | String             | URL que exibe o recurso no navegador. Somente leitura.
@@ -198,7 +201,7 @@ A remoção das permissões de arquivo de um usuário pode não invalidar a URL 
 | [Pesquisar itens](../api/driveitem-search.md)               | `GET /drive/items/{item-id}/search(q='text')`
 | [Listar alterações em uma unidade](../api/driveitem-delta.md)     | `GET /drive/root/delta`
 | [Seguir item](../api/driveitem-follow.md)                | `POST /drives/{drive-id}/items/{item-id}/follow`
-| [Item inseguir](../api/driveitem-unfollow.md)            | `POST /drives/{drive-id}/items/{item-id}/unfollow`
+| [Item Unfollow](../api/driveitem-unfollow.md)            | `POST /drives/{drive-id}/items/{item-id}/unfollow`
 | [Listar miniaturas](../api/driveitem-list-thumbnails.md)   | `GET /drive/items/{item-id}/thumbnails`
 | [Criar link de compartilhamento](../api/driveitem-createlink.md)    | `POST /drive/items/{item-id}/createLink`
 | [Adicionar permissões](../api/driveitem-invite.md)            | `POST /drive/items/{item-id}/invite`
@@ -222,6 +225,7 @@ Em bibliotecas de documentos do OneDrive for Business ou do SharePoint, a propri
 [baseItem]: baseitem.md
 [deleted]: deleted.md
 [download-format]: ../api/driveitem-get-content-format.md
+[driveItemSource]: driveItemSource.md
 [driveItemVersion]: driveitemversion.md
 [file]: file.md
 [fileSystemInfo]: filesysteminfo.md
@@ -237,6 +241,7 @@ Em bibliotecas de documentos do OneDrive for Business ou do SharePoint, a propri
 [geoCoordinates]: geocoordinates.md
 [List activities]: ../api/activities-list.md
 [listItem]: listitem.md
+[mídia]: media.md
 [package]: package.md
 [permissão]: permission.md
 [pendingOperations]: pendingoperations.md
@@ -264,7 +269,7 @@ Em bibliotecas de documentos do OneDrive for Business ou do SharePoint, a propri
   "section": "documentation",
   "tocPath": "Items",
   "tocBookmarks": {
-    "Resources/Item": "#"
+    "Resources/Item&quot;: &quot;#"
   },
   "suppressions": []
 }

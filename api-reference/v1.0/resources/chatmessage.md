@@ -5,12 +5,12 @@ doc_type: resourcePageType
 localization_priority: Normal
 author: RamjotSingh
 ms.prod: microsoft-teams
-ms.openlocfilehash: a1180508853e932cc212e623d0d8a2d3dcae0e54
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 957c90bea43130076b12933e3b18cea7197731ea
+ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52787405"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53208026"
 ---
 # <a name="chatmessage-resource-type"></a>Tipo de recurso chatMessage
 
@@ -53,7 +53,7 @@ Representa uma mensagem de bate-papo individual em um [canal](channel.md) ou [ba
 |:---------------|:--------|:----------|
 |id|String| Somente leitura. ID exclusiva da mensagem.|
 |replyToId| cadeia de caracteres | Somente leitura. ID da mensagem de chat pai ou da mensagem de chat raiz do thread. (Aplica-se apenas a mensagens de chat em canais, não chats.) |
-|from|[identitySet](identityset.md)| Somente leitura. Detalhes do remetente da mensagem de chat.|
+|from|[chatMessageFromIdentitySet](chatmessagefromidentityset.md)| Somente leitura. Detalhes do remetente da mensagem de chat.|
 |etag| cadeia de caracteres | Somente leitura. Número da versão da mensagem de chat. |
 |messageType|cadeia de caracteres|O tipo de mensagem de chat. O valor possível é: `message` .|
 |createdDateTime|dateTimeOffset|Timestamp de quando a mensagem de chat foi criada.|
@@ -107,7 +107,7 @@ Veja a seguir uma representação JSON do recurso.
 {
   "id": "string (identifier)",
   "replyToId": "string (identifier)",
-  "from": {"@odata.type": "microsoft.graph.identitySet"},
+  "from": {"@odata.type": "microsoft.graph.chatMessageFromIdentitySet"},
   "etag": "string",
   "messageType": "string",
   "createdDateTime": "string (timestamp)",

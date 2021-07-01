@@ -5,12 +5,12 @@ author: RamjotSingh
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 70f9569a609699036a5e27cdaf47faf622a572d2
-ms.sourcegitcommit: 5a1cc1943527aa268e3797ee514871e65eb474a6
+ms.openlocfilehash: 50b6d517775e4ef956211882fd58baefc7f5b78d
+ms.sourcegitcommit: 0adbbcbc65b6acab80e9195f13321055994f56be
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53030849"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "53236170"
 ---
 # <a name="chat-resource-type"></a>tipo de recurso de chat
 
@@ -22,7 +22,7 @@ Um chat é uma coleção [de chatMessages](chatmessage.md) entre um ou mais part
 
 > **Observação**: se o chat estiver associado a uma instância [onlineMeeting,](../resources/onlinemeeting.md) alguns dos métodos listados afetarão transitivamente a reunião.
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 
 |  Método       |  Tipo de retorno  | Descrição| 
 |:---------------|:--------|:----------|
@@ -44,16 +44,16 @@ Um chat é uma coleção [de chatMessages](chatmessage.md) entre um ou mais part
 |[Listar aplicativos no chat](../api/chat-list-installedapps.md) |Coleção [teamsAppInstallation](teamsappinstallation.md) | Listar aplicativos instalados em um chat (e reunião associada).|
 |[Obter aplicativo no chat](../api/chat-get-installedapps.md) | [teamsAppInstallation](teamsappinstallation.md) | Obter um aplicativo específico instalado em um chat (e reunião associada).|
 |[Adicionar aplicativo no chat](../api/chat-post-installedapps.md) | | Adicionar (instalar) um aplicativo em um chat (e reunião associada).|
-|[Atualizar aplicativo no chat](../api/chat-teamsappinstallation-upgrade.md) | Nenhum | Atualizar para a versão mais recente do aplicativo instalado no chat (e reunião associada).|
-|[Desinstalar aplicativo do chat](../api/chat-delete-installedapps.md) | Nenhum | Remover (desinstalar) aplicativo de um chat (e reunião associada).|
+|[Atualizar aplicativo no chat](../api/chat-teamsappinstallation-upgrade.md) | Nenhuma | Atualizar para a versão mais recente do aplicativo instalado no chat (e reunião associada).|
+|[Desinstalar aplicativo do chat](../api/chat-delete-installedapps.md) | Nenhuma | Remover (desinstalar) aplicativo de um chat (e reunião associada).|
 |[Listar as concessões de permissões](../api/chat-list-permissiongrants.md) | Coleção [resourceSpecificPermissionGrant](resourcespecificpermissiongrant.md) | Listar permissões concedidas aos aplicativos neste chat.|
 | **Guias** |||
 |[Listar guias no chat](../api/chat-list-tabs.md) | [teamsTab](teamstab.md) | Listar guias fixadas em um chat (e reunião associada).|
 |[Obter guia no chat](../api/chat-get-tabs.md) | [teamsTab](teamstab.md) | Obter uma guia específica fixada em um chat (e reunião associada).|
 |[Adicionar guia ao chat](../api/chat-post-tabs.md) | [teamsTab](teamstab.md) | Adicione (pin) uma guia a um chat (e reunião associada).|
 |[Guia Atualizar no chat](../api/chat-patch-tabs.md) | [teamsTab](teamstab.md) | Atualize as propriedades de uma guia em um chat (e reunião associada).|
-|[Remover guia do chat](../api/chat-delete-tabs.md) | Nenhum | Remover (desempinar) uma guia de um chat (e reunião associada).|
-| **Operaçoes** |||
+|[Remover guia do chat](../api/chat-delete-tabs.md) | Nenhuma | Remover (desempinar) uma guia de um chat (e reunião associada).|
+| **Operations** |||
 |[Listar operações no chat](../api/chat-list-operations.md) | Coleção [teamsAsyncOperation](teamsAsyncOperation.md) | Obter a lista de operações assíncronas que executaram ou estão sendo executados no chat.|
 |[Obter operação no chat](../api/teamsasyncoperation-get.md#example-get-operation-on-chat) | [teamsAsyncOperation](teamsAsyncOperation.md) | Obter uma única operação assíncrona que foi executado ou está sendo executado no chat.|
 
@@ -63,21 +63,22 @@ Um chat é uma coleção [de chatMessages](chatmessage.md) entre um ou mais part
 
 | Propriedade   | Tipo |Descrição|
 |:---------------|:--------|:----------|
-| id| String| O identificador exclusivo do chat. Somente leitura.|
+| id| String| O identificador exclusivo do chat. Só leitura.|
 | topic| String|  (Opcional) Assunto ou tópico para o chat. Disponível apenas para chats em grupo.|
-| createdDateTime| dateTimeOffset|  Data e hora em que o chat foi criado. Somente leitura.|
-| lastUpdatedDateTime| dateTimeOffset|  Data e hora em que o chat foi renomeado ou a lista de membros foi alterada pela última vez. Somente leitura.|
+| createdDateTime| dateTimeOffset|  Data e hora em que o chat foi criado. Só leitura.|
+| lastUpdatedDateTime| dateTimeOffset|  Data e hora em que o chat foi renomeado ou a lista de membros foi alterada pela última vez. Só leitura.|
 | chatType| [chatType](../resources/chat.md#chattype-values) | Especifica o tipo de chat. Os valores possíveis são: `group` e `oneOnOne` `meeting` .|
-|  webUrl          |   cadeia de caracteres                  |  Um hiperlink que irá para o chat no Microsoft Teams. Essa URL deve ser tratada como um blob opaco e não analisado. Somente leitura.     |
+| mirante|[chatViewpoint](../resources/chatviewpoint.md)|Representa informações específicas do chamador sobre o chat, como data e hora de leitura da última mensagem. Essa propriedade é preenchida somente quando a solicitação é feita em um contexto delegado.|
+| webUrl| String | Um hiperlink que irá para o chat no Microsoft Teams. Essa URL deve ser tratada como um blob opaco e não analisado. Somente leitura.|
 
 ### <a name="chattype-values"></a>valores chatType 
 
 | Membro             | Valor | Descrição               |
 | :----------------- | :---- | :------------------------ |
 |oneOnOne            | 0     | Indica que o chat é um chat 1:1. O tamanho da lista é fixo para esse tipo de chat; os membros não podem ser removidos/adicionados.|
-|group               | 1     | Indica que o chat é um chat em grupo. O tamanho da lista (de pelo menos duas pessoas) pode ser atualizado para esse tipo de chat. Os membros podem ser removidos/adicionados posteriormente.|
-|meeting             | 2     | Indica que o chat está associado a uma reunião online. Esse tipo de chat só é criado como parte da criação de uma reunião online.|
-|unknownFutureValue  | 3     | Valor sentinel para indicar valores futuros. |
+|group               | 1      | Indica que o chat é um chat em grupo. O tamanho da lista (de pelo menos duas pessoas) pode ser atualizado para esse tipo de chat. Os membros podem ser removidos/adicionados posteriormente.|
+|meeting             | 2      | Indica que o chat está associado a uma reunião online. Esse tipo de chat só é criado como parte da criação de uma reunião online.|
+|unknownFutureValue  | 3      | Valor sentinel para indicar valores futuros. |
 
 ## <a name="relationships"></a>Relações
 
@@ -87,7 +88,8 @@ Um chat é uma coleção [de chatMessages](chatmessage.md) entre um ou mais part
 | members | coleção [conversationMember](conversationmember.md) | Uma coleção de todos os membros no chat. Anulável. |
 | messages | [chatMessage](chatmessage.md) collection | Uma coleção de todas as mensagens no chat. Anulável. |
 | permissionGrants| Coleção [resourceSpecificPermissionGrant](resourcespecificpermissiongrant.md)| Uma coleção de permissões concedidas aos aplicativos para o chat.|
-| operations | Coleção [teamsAsyncOperation](teamsasyncoperation.md) | Uma coleção de todas as Teams assíncronas que foram executados ou executados no chat. Anulável. |
+| operations | Coleção [teamsAsyncOperation](teamsasyncoperation.md) | Uma coleção de todas as Teams assíncronas que foram executados ou executados no chat. Anulável. 
+| lastMessagePreview | [chatMessageInfo](chatmessageinfo.md)| Visualização da última mensagem enviada no chat. Nulo se nenhuma mensagem tiver sido enviada no chat. Atualmente, somente a [operação de chats de](../api/chat-list.md) lista oferece suporte a essa propriedade.|
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -106,6 +108,9 @@ Veja a seguir uma representação JSON do recurso.
   "createdDateTime": "dateTimeOffset",
   "lastUpdatedDateTime": "dateTimeOffset",
   "chatType": "String",
+  "chatViewpoint": {
+    "@odata.type": "microsoft.graph.chatViewpoint"
+  },
   "webUrl": "string"
 }
 ```
