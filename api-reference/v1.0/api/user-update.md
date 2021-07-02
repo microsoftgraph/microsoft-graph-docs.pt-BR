@@ -5,12 +5,12 @@ author: jpettere
 localization_priority: Priority
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: f237507efefdcbec91c1d42e52a094b0fb841083
-ms.sourcegitcommit: 2d0daa446c7b37ced1d214e0c6e18e2b8243bb09
+ms.openlocfilehash: e0dc12ea65ade7ed838a16645b414752ac0b1971
+ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/18/2021
-ms.locfileid: "53010210"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53208950"
 ---
 # <a name="update-user"></a>Atualizar usuário
 
@@ -193,6 +193,38 @@ Content-type: application/json
 #### <a name="response"></a>Resposta
 
 O exemplo a seguir mostra a resposta.
+<!-- {
+  "blockType": "response"
+} -->
+```http
+HTTP/1.1 204 No Content
+```
+
+
+### <a name="example-3-update-the-passwordprofile-of-a-user-to-reset-their-password"></a>Exemplo 3: atualizar o passwordProfile de um usuário para redefinir sua senha
+
+O exemplo a seguir mostra uma solicitação para redefinir a senha de outro usuário.
+
+#### <a name="request"></a>Solicitação
+
+<!-- {
+  "blockType": "request",
+  "name": "update_user_passwordProfile"
+}-->
+```http
+PATCH https://graph.microsoft.com/v1.0/users/{id}
+Content-type: application/json
+
+{
+  "passwordProfile": {
+    "forceChangePasswordNextSignIn": false,
+    "password": "xWwvJ]6NMw+bWH-d"
+  }
+}
+```
+
+
+#### <a name="response"></a>Resposta
 <!-- {
   "blockType": "response"
 } -->
