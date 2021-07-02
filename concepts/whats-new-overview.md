@@ -3,12 +3,12 @@ title: Novidades do Microsoft Graph
 description: O que há de novo no Microsoft Graph
 author: angelgolfer-ms
 localization_priority: Priority
-ms.openlocfilehash: 42beebafd90b752548e6be81963c8c7bc484de39
-ms.sourcegitcommit: b5fbb1a715e3479bdd095ef00deb0c932eafc328
+ms.openlocfilehash: b2e5cbb811e7e606fd57a9c967c40bc3956a2c58
+ms.sourcegitcommit: 0adbbcbc65b6acab80e9195f13321055994f56be
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/28/2021
-ms.locfileid: "53162200"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "53236210"
 ---
 # <a name="whats-new-in-microsoft-graph"></a>Novidades do Microsoft Graph
 
@@ -52,10 +52,10 @@ Personalizar o controle de áudio e vídeo em [uma Reunião on-line](/graph/api/
 - Os professores já também podem definir um comportamento padrão para um calendário ao publicarem tarefas. Os professores podem controlar o comportamento do calendário padrão da atribuição usando a propriedade **addToCalendarAction** do recurso [educationAssignment](/graph/api/resources/educationAssignmentDefaults?view=graph-rest-beta&preserve-view=true).
 
 ### <a name="groups"></a>Grupos
-Permitir que um [grupo](/graph/api/resources/group?view=graph-rest-beta&preserve-view=true) seja atribuído a um função Microsoft Azure Active Directory na criação, definindo a propriedade **isAssignableToRole**. Se definido, esta propriedade faz com que seja conveniente administrar funções para indivíduos - em vez de ter que atribuir um papel a cada pessoa individual, as pessoas elegíveis podem se ingressar a um grupo, e atribuir o função ao grupo, por padrão, atribuiria o função a cada nova pessoa que se ingressar ao grupo. 
+Permitir que um [grupo](/graph/api/resources/group?view=graph-rest-beta&preserve-view=true) seja atribuído a uma função do Azure Active Directory na criação definindo a propriedade **isAssignableToRole**. Se definida, essa propriedade torna conveniente gerenciar funções para indivíduos – em vez de ter que atribuir uma função a cada pessoa individual, as pessoas qualificadas podem ingressar em um grupo e, atribuindo a função ao grupo, por padrão, atribuiria a função a cada nova pessoa que ingressasse no grupo. 
 
 ### <a name="identity-and-access--governance"></a>Identidade e acesso | Governança
-Definir usuários ou membros do grupo a serem notificados sobre o progresso de uma [análise de acesso](/graph/api/resources/accessreviewsv2-root?view=graph-rest-beta&preserve-view=true), usando a **notificação adicionalReceptores** propriedade da [definição de agendamento](/graph/api/resources/accessreviewscheduledefinition?view=graph-rest-beta&preserve-view=true).
+Definir usuários ou membros do grupo a serem notificados sobre o progresso de uma [análise de acesso](/graph/api/resources/accessreviewsv2-root?view=graph-rest-beta&preserve-view=true), usando a propriedade **additionalNotificationRecipients** da [definição de agendamento](/graph/api/resources/accessreviewscheduledefinition?view=graph-rest-beta&preserve-view=true).
 
 ### <a name="identity-and-access--identity-and-sign-in"></a>Identidade e acesso | Identidade e login
 Definir um filtro para incluir ou excluir dinamicamente dispositivos, usando o **deviceFilter** propriedade de [conditionalAccessDevices](/graph/api/resources/conditionalAccessDevices?view=graph-rest-beta&preserve-view=true).
@@ -70,7 +70,7 @@ Criar ou obter um [sharingLink](/graph/api/resources/sharinglink?view=graph-rest
 - Obter uma lista de [permissões específicas de recursos concedidos](/graph/api/resources/resourcespecificpermissiongrant?view=graph-rest-beta&preserve-view=true) para uma [equipe](/graph/api/resources/team?view=graph-rest-beta&preserve-view=true), que especifica as aplicações da equipe e as permissões específicas de recursos correspondentes que lhes foram concedidas.
 - [Obter](/graph/api/teamsasyncoperation-get?view=graph-rest-beta&preserve-view=true) uma [operação assíncrona específica](/graph/api/resources/teamsasyncoperation?view=graph-rest-beta&preserve-view=true), ou [lista](/graph/api/chat-list-operations?view=graph-rest-beta&preserve-view=true) todas as operações assíncronas que funcionam em um [chat](/graph/api/resources/chat?view=graph-rest-beta&preserve-view=true).
 - Pode especificar um aplicativo[Teams](/graph/api/resources/teamsapp?view=graph-rest-beta&preserve-view=true) ao [criar um chat](/graph/api/chat-post?view=graph-rest-beta&preserve-view=true).
-- Usar uma única ação [provisãoEmail](/graph/api/channel-provisionemail?view=graph-rest-beta&preserve-view=true) para obter o endereço de email de um [canal](/graph/api/resources/channel?view=graph-rest-beta&preserve-view=true), se existir, ou criar um de outra forma. Usar a ação [removeEmail](/graph/api/channel-removeemail?view=graph-rest-beta&preserve-view=true) para remover o endereço de email.
+- Usar uma única ação [provisionEmail](/graph/api/channel-provisionemail?view=graph-rest-beta&preserve-view=true) para obter o endereço de email de um [canal](/graph/api/resources/channel?view=graph-rest-beta&preserve-view=true), se houver, ou criar um, se não houver. Usar a ação [removeEmail](/graph/api/channel-removeemail?view=graph-rest-beta&preserve-view=true) para remover o endereço de email.
 
 ### <a name="teamwork--shifts"></a>Trabalho em equipe | Turnos
 - Suporte para as entidades [offerShiftRequest](/graph/api/resources/offershiftrequest?view=graph-rest-beta&preserve-view=true), [timeOff](/graph/api/resources/timeoff?view=graph-rest-beta&preserve-view=true), [timeOffReason](/graph/api/resources/timeoffreason?view=graph-rest-beta&preserve-view=true), e [timeOffRequest](/graph/api/resources/timeoffrequest?view=graph-rest-beta&preserve-view=true) para notificações de alteração síncronas.
@@ -111,7 +111,7 @@ Solicite as permissões de aplicativos com menos privilégios, `CloudPC.Read.All
   - Operações de leitura e gravação, e do método [assign](/graph/api/cloudpcprovisioningpolicy-assign?view=graph-rest-beta&preserve-view=true) de [cloudPcProvisioningPolicy](/graph/api/resources/cloudpcprovisioningpolicy?view=graph-rest-beta&preserve-view=true).
 
 ### <a name="devices-and-apps--corporate-management"></a>Dispositivos e aplicativos | Gerenciamento corporativo
-Atualizações mensais do Intune para a versão beta. Defina o filtro **Data** para junho de 2021, e procure uma seção com este mesmo título.
+Atualizações mensais do Intune para a versão beta. Defina o filtro **Data** para junho de 2021 e procure uma seção com esse mesmo título.
 
 ### <a name="education"></a>Educação
 - [Configurar uma pasta de recursos do SharePoint](/graph/api/educationAssignment-setupresourcesfolder?view=graph-rest-beta&preserve-view=true) carregar e armazenar todos os recursos baseados em arquivo no mesmo local para um [educationAssignment](/graph/api/resources/educationAssignment?view=graph-rest-beta&preserve-view=true).
