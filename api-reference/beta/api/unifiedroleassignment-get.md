@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: f40465ac0e6c7bb4f9a2419063e3b91a647128e0
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: e24f9a2ae184502123cca58188902d0f66782b87
+ms.sourcegitcommit: ada6eab637b9b318129aefb98edbe7316399d9ba
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52050742"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53317032"
 ---
 # <a name="get-unifiedroleassignment"></a>Obter unifiedRoleAssignment
 
@@ -22,20 +22,29 @@ Recupere as propriedades e as relações de um [objeto unifiedRoleAssignment.](.
 
 ## <a name="permissions"></a>Permissões
 
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
+Dependendo do provedor RBAC e do tipo de permissão (delegado ou aplicativo) necessário, escolha na tabela a seguinte permissão com menos privilégios necessária para chamar essa API. Para saber mais, incluindo [tomar cuidado](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) antes de escolher as permissões mais privilegiadas, pesquise as seguintes permissões em [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Application | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All |
+|Provedor com suporte      | Delegado (conta corporativa ou de estudante)  | Delegada (conta pessoal da Microsoft) | Aplicativo |
+|:-----------------------|:------------------------------------|:---------------------------------------|:------------|
+| Diretório | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All, Directory.AccessAsUser.All | Sem suporte.| RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All |
+| Gerenciamento de direitos | EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All | Sem suporte. | Sem suporte. |
 
 ## <a name="http-request"></a>Solicitação HTTP
+
+Obter uma atribuição de função para um provedor de diretórios:
 
 <!-- { "blockType": "ignored" } -->
 
 ```http
 GET /roleManagement/directory/roleAssignments/{id}
+```
+
+Obter uma atribuição de função para o provedor de gerenciamento de direitos:
+
+<!-- { "blockType": "ignored" } -->
+
+```http
+GET /roleManagement/entitlementManagement/roleAssignments/{id}
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais

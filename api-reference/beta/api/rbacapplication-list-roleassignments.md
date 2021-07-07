@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 2877f9bca06eed962257e2c8c43c5f776d06ff76
-ms.sourcegitcommit: 2a35434fabc76672e21bfc3ed5a1d28f9f3b66bc
+ms.openlocfilehash: bd7ae545174addab12ffe5afecaa83ccb7f7d06d
+ms.sourcegitcommit: ada6eab637b9b318129aefb98edbe7316399d9ba
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52241139"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53317214"
 ---
 # <a name="list-unifiedroleassignments"></a>Listar unifiedRoleAssignments
 
@@ -20,17 +20,23 @@ Namespace: microsoft.graph
 
 Obter uma lista de [objetos unifiedRoleAssignment](../resources/unifiedroleassignment.md) para o provedor.
 
+No momento, há suporte para os seguintes provedores RBAC:
+- directory (Azure AD)
+- gerenciamento de direitos (Azure AD)
+
 ## <a name="permissions"></a>Permissões
 
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
-|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All |
+Dependendo do provedor RBAC e do tipo de permissão (delegado ou aplicativo) necessário, escolha na tabela a seguinte permissão com menos privilégios necessária para chamar essa API. Para saber mais, incluindo [tomar cuidado](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) antes de escolher as permissões mais privilegiadas, pesquise as seguintes permissões em [Permissões](/graph/permissions-reference).
+
+|Provedor com suporte      | Delegado (conta corporativa ou de estudante)  | Delegada (conta pessoal da Microsoft) | Aplicativo |
+|:-----------------------|:------------------------------------|:---------------------------------------|:------------|
+| Diretório | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All, Directory.AccessAsUser.All | Sem suporte.| RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All |
+| Gerenciamento de direitos | EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All | Sem suporte. | Sem suporte. |
 
 ## <a name="http-request"></a>Solicitação HTTP
+
+Para listar atribuições de função para um provedor de diretórios:
 
 <!-- { "blockType": "ignored" } -->
 
@@ -38,6 +44,16 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 GET /roleManagement/directory/roleAssignments?$filter=principalId eq '{principal id}'
 
 GET /roleManagement/directory/roleAssignments?$filter=roleDefinitionId eq '{roleDefinition id}'
+```
+
+Para listar atribuições de função para o provedor de gerenciamento de direitos:
+
+<!-- { "blockType": "ignored" } -->
+
+```http
+GET /roleManagement/entitlementManagement/roleAssignments?$filter=principalId eq '{principal id}'
+
+GET /roleManagement/entitlementManagement/roleAssignments?$filter=roleDefinitionId eq '{roleDefinition id}'
 ```
 
 ## <a name="query-parameters"></a>Parâmetros de consulta

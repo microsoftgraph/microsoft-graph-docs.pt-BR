@@ -5,12 +5,12 @@ author: Alice-at-Microsoft
 localization_priority: Normal
 ms.prod: w10
 doc_type: apiPageType
-ms.openlocfilehash: dbb5cd4c156940379eaf114235099d9fd53fb08f
-ms.sourcegitcommit: 1b09298649d5606b471b4cbe1055419bbe2fc7e5
+ms.openlocfilehash: 99d56de596cb28f21bffdd915911fd6ca6c9417f
+ms.sourcegitcommit: ada6eab637b9b318129aefb98edbe7316399d9ba
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "52067813"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53316473"
 ---
 # <a name="updatableassetgroup-addmembers"></a>updatableAssetGroup: addMembers
 Namespace: microsoft.graph.windowsUpdates
@@ -41,7 +41,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 }
 -->
 ``` http
-POST /updatableAssetGroup/{updatableAssetGroupId}/addMembers
+POST /admin/windows/updates/updatableAssets/{updatableAssetGroupId}/addMembers
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -72,7 +72,7 @@ Se tiver êxito, esta ação retornará um código de resposta `202 Accepted`. N
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/updatableAssetGroup/{updatableAssetGroupId}/addMembers
+POST https://graph.microsoft.com/beta/admin/windows/updates/updatableAssets/{updatableAssetGroupId}/addMembers
 Content-Type: application/json
 
 {

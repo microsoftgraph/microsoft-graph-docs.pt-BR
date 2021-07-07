@@ -5,12 +5,12 @@ author: Alice-at-Microsoft
 localization_priority: Normal
 ms.prod: w10
 doc_type: apiPageType
-ms.openlocfilehash: 2964bfc1fad02d81bab33936fde1e2cf03293830
-ms.sourcegitcommit: 1b09298649d5606b471b4cbe1055419bbe2fc7e5
+ms.openlocfilehash: 80ab7cab56a72633d7a4cb6f1c81d51cf0263d98
+ms.sourcegitcommit: ada6eab637b9b318129aefb98edbe7316399d9ba
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "52067897"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53317179"
 ---
 # <a name="updatableassetgroup-removemembers"></a>updatableAssetGroup: removeMembers
 Namespace: microsoft.graph.windowsUpdates
@@ -37,7 +37,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 }
 -->
 ``` http
-POST /updatableAssetGroup/{updatableAssetGroupId}/removeMembers
+POST /admin/windows/updates/updatableAssets/{updatableAssetGroupId}/removeMembers
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -68,7 +68,7 @@ Se tiver êxito, esta ação retornará um código de resposta `202 Accepted`. N
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/updatableAssetGroup/{updatableAssetGroupId}/removeMembers
+POST https://graph.microsoft.com/beta/admin/windows/updates/updatableAssets/{updatableAssetGroupId}/removeMembers
 Content-Type: application/json
 
 {
@@ -91,4 +91,3 @@ Content-Type: application/json
 ``` http
 HTTP/1.1 202 Accepted
 ```
-

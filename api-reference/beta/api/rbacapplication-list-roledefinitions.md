@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 04a34aec3c611e5cf178910b7a8513a048fb797e
-ms.sourcegitcommit: 503c72036c376a30e08c29df8e7730a7afcab66e
+ms.openlocfilehash: 3b49093e1eeba4618bc36737e789a9484c5a5142
+ms.sourcegitcommit: ada6eab637b9b318129aefb98edbe7316399d9ba
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52869122"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53317207"
 ---
 # <a name="list-unifiedroledefinitions"></a>Listar unifiedRoleDefinitions
 
@@ -24,18 +24,20 @@ No momento, há suporte para os seguintes provedores RBAC:
 - cloud PC 
 - gerenciamento de dispositivos (Intune)
 - directory (Azure AD) 
+- gerenciamento de direitos (Azure AD)
 
 [!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Dependendo do provedor RBAC e do tipo de permissão (delegado ou aplicativo) necessário, escolha na tabela a seguinte permissão com menos privilégios necessária para chamar essa API. Para saber mais, incluindo [tomar cuidado](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) antes de escolher as permissões mais privilegiadas, pesquise as seguintes permissões em [Permissões](/graph/permissions-reference). 
 
-|Provedor com suporte      | Delegada (conta corporativa ou de estudante)  | Delegada (conta pessoal da Microsoft) | Aplicativo |
+|Provedor com suporte      | Delegado (conta corporativa ou de estudante)  | Delegada (conta pessoal da Microsoft) | Aplicativo |
 |:-----------------------|:------------------------------------|:---------------------------------------|:------------|
 | Cloud PC | CloudPC.Read.All, CloudPC.ReadWrite.All | Sem suporte. | CloudPC.Read.All, CloudPC.ReadWrite.All |
 | Gerenciamento de dispositivo | DeviceManagementRBAC.Read.All, DeviceManagementRBAC.ReadWrite.All | Sem suporte. | DeviceManagementRBAC.Read.All, DeviceManagementRBAC.ReadWrite.All |
 | Diretório | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All, Directory.AccessAsUser.All | Sem suporte.| RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All |
+| Gerenciamento de direitos | EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All | Sem suporte. | Sem suporte. |
 
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -56,6 +58,12 @@ Para listar definições de função para um provedor de diretórios:
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /roleManagement/directory/roleDefinitions
+```
+
+Para listar definições de função para o provedor de gerenciamento de direitos:
+<!-- { "blockType": "ignored" } -->
+```http
+GET /roleManagement/entitlementManagement/roleDefinitions
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
@@ -339,6 +347,78 @@ Content-type: application/json
                         "Microsoft.CloudPC/Roles/Read"
                     ],
                     "condition": null
+                }
+            ]
+        }
+    ]
+}
+```
+
+### <a name="example-3-list-role-definitions-for-the-entitlement-management-provider"></a>Exemplo 3: Listar definições de função para o provedor de gerenciamento de direitos
+
+#### <a name="request"></a>Solicitação
+
+Este é um exemplo de solicitação.
+
+<!-- {
+  "blockType": "request",
+  "name": "get_roledefinitions_entitlementmanagement"
+}-->
+
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/roleManagement/entitlementManagement/roleDefinitions
+```
+
+#### <a name="response"></a>Resposta
+
+Este é um exemplo de resposta.
+
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+
+<!-- {
+  "blockType": "response",
+  "name": "get_roledefinitions_entitlementmanagement",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.unifiedRoleDefinition",
+  "isCollection": true
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#roleManagement/entitlementManagement/roleDefinitions",
+    "value": [
+        {
+            "id": "ae79f266-94d4-4dab-b730-feca7e132178",
+            "displayName": "Catalog owner",
+            "description": "Catalog owner",
+            "isBuiltIn": true,
+            "isEnabled": true,
+            "templateId": "ae79f266-94d4-4dab-b730-feca7e132178",
+            "version": "1.0",
+            "rolePermissions": [
+                {
+                    "allowedResourceActions": [
+                        "microsoft.entitlementManagement/allEntities/allTasks"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "44272f93-9762-48e8-af59-1b5351b1d6b3",
+            "displayName": "Catalog reader",
+            "description": "Catalog reader",
+            "isBuiltIn": true,
+            "isEnabled": true,
+            "templateId": "44272f93-9762-48e8-af59-1b5351b1d6b3",
+            "version": "1.0",
+            "rolePermissions": [
+                {
+                    "allowedResourceActions": [
+                        "microsoft.entitlementManagement/allEntities/Read"
+                    ]
                 }
             ]
         }

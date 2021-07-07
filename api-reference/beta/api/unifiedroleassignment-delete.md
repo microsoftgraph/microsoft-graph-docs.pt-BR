@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 865d18f0278084ecf884ead909374eeccaaace54
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 96bff141cc3f4dfb779335100a49a8fdf99edb00
+ms.sourcegitcommit: ada6eab637b9b318129aefb98edbe7316399d9ba
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50444880"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53317067"
 ---
 # <a name="delete-unifiedroleassignment"></a>Excluir unifiedRoleAssignment
 
@@ -22,21 +22,31 @@ Namespace: microsoft.graph
 
 ## <a name="permissions"></a>Permissões
 
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
+Dependendo do provedor RBAC e do tipo de permissão (delegado ou aplicativo) necessário, escolha na tabela a seguinte permissão com menos privilégios necessária para chamar essa API. Para saber mais, incluindo [tomar cuidado](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) antes de escolher as permissões mais privilegiadas, pesquise as seguintes permissões em [Permissões](/graph/permissions-reference).
 
-| Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
-|:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | RoleManagement.ReadWrite.Directory |
-| Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Aplicativo                            | RoleManagement.ReadWrite.Directory |
+|Provedor com suporte      | Delegado (conta corporativa ou de estudante)  | Delegada (conta pessoal da Microsoft) | Aplicativo |
+|:-----------------------|:------------------------------------|:---------------------------------------|:------------|
+| Diretório | RoleManagement.ReadWrite.Directory | Sem suporte.| RoleManagement.ReadWrite.Directory |
+| Gerenciamento de direitos | EntitlementManagement.ReadWrite.All | Sem suporte. | Sem suporte. |
 
 ## <a name="http-request"></a>Solicitação HTTP
+
+Remover uma atribuição de função de um provedor de diretórios:
 
 <!-- { "blockType": "ignored" } -->
 
 ```http
 DELETE /roleManagement/directory/roleAssignments/{id}
 ```
+
+Remova uma atribuição de função do provedor de gerenciamento de direitos:
+
+<!-- { "blockType": "ignored" } -->
+
+```http
+DELETE /roleManagement/entitlementManagement/roleAssignments/{id}
+```
+
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 

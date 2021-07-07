@@ -3,14 +3,14 @@ title: Obter transitiveReports para orgContact
 description: Obter a contagem de relatórios transitivos para um contato organizacional.
 author: dkershaw10
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 8e683e5224a3b473befea8f24c3971e5faf4a521
-ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
+ms.openlocfilehash: 2ef9be3212ece4478e53dbbedbb0d2531e816dde
+ms.sourcegitcommit: ada6eab637b9b318129aefb98edbe7316399d9ba
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53210689"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53316941"
 ---
 # <a name="get-transitivereports-for-orgcontact"></a>Obter transitiveReports para orgContact
 

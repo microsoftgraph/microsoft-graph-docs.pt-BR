@@ -6,12 +6,12 @@ title: Listar
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 9bc255a0bcddadbbf9190decc2d429eb88e91e67
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 30d26dfd3e140f302c6535cd6603a90568dbb567
+ms.sourcegitcommit: ada6eab637b9b318129aefb98edbe7316399d9ba
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50964552"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53317095"
 ---
 # <a name="list-resource"></a>Recurso List
 
@@ -28,7 +28,7 @@ As tarefas a seguir estão disponíveis para os recursos list.
 **Observação:** esta versão beta só permite navegar por listas, não criar ou atualizá-las.
 Você pode, no entanto, criar ou atualizar [itens de lista][listItem].
 
-Todos os exemplos a seguir referem-se a um site: `https://graph.microsoft.com/beta/sites/{site-id}`.
+Todos os exemplos abaixo são relativos a um site, por exemplo, `https://graph.microsoft.com/beta/sites/{site-id}` .
 
 | Tarefa comum               | Método HTTP
 |:--------------------------|:------------------------------
@@ -41,9 +41,9 @@ Todos os exemplos a seguir referem-se a um site: `https://graph.microsoft.com/be
 | [Criar item de lista][]      | POST /lists/{list-id}
 | [Obter atividades recentes][] | GET /lists/{list-id}/activities
 | [Obter canal WebSocket][] | GET /lists/{list-id}/subscriptions/socketIo
-|[Listar tipos de conteúdo][]          | GET /lists/{list-id}/contentTypes
+|[Tipos de conteúdo de lista][]          | GET /lists/{list-id}/contentTypes
 |[Adicionar cópia do tipo de conteúdo do site][] | POST /lists/{list-id}/contentTypes/addCopy
-|[List columns][]               | GET /lists/{list-id}/columns
+|[Colunas de lista][]               | GET /lists/{list-id}/columns
 |[Criar coluna][]              | POST /lists/{list-id}/columns
 
 [Obter listas em um site]: ../api/list-list.md
@@ -55,9 +55,9 @@ Todos os exemplos a seguir referem-se a um site: `https://graph.microsoft.com/be
 [Criar item de lista]: ../api/listitem-create.md
 [Obter atividades recentes]: ../api/activities-list.md
 [Obter canal WebSocket]: ../api/subscriptions-socketio.md
-[Listar tipos de conteúdo]: ../api/list-list-contenttypes.md
+[Tipos de conteúdo de lista]: ../api/list-list-contenttypes.md
 [Adicionar cópia do tipo de conteúdo do site]: ../api/contenttype-addCopy.md
-[List columns]: ../api/list-list-columns.md
+[Colunas de lista]: ../api/list-list-columns.md
 [Criar coluna]: ../api/list-post-columns.md
 ## <a name="json-representation"></a>Representação JSON
 
@@ -79,7 +79,7 @@ Veja a seguir uma representação JSON de um recurso **list**.
   "list": {
     "@odata.type": "microsoft.graph.listInfo",
     "hidden": false,
-    "template": "documentLibrary | genericList | survey | links | announcements | contacts ..."
+    "template&quot;: &quot;documentLibrary | genericList | survey | links | announcements | contacts ..."
   },
   "system": false,
   "subscriptions": [ {"@odata.type": "microsoft.graph.subscription"} ],
@@ -93,7 +93,7 @@ Veja a seguir uma representação JSON de um recurso **list**.
   "eTag": "string",
   "lastModifiedBy": { "@odata.type": "microsoft.graph.identitySet" },
   "lastModifiedDateTime": "timestamp",
-  "webUrl": "url to visit the list in a browser"
+  "webUrl&quot;: &quot;url to visit the list in a browser"
 }
 ```
 
@@ -154,7 +154,7 @@ O recurso **list** tem as seguintes relações com outros recursos.
   "section": "documentation",
   "tocPath": "Resources/Lists",
   "tocBookmarks": {
-    "Lists": "#"
+    "Lists&quot;: &quot;#"
   },
   "suppressions": []
 }

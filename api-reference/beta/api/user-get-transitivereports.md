@@ -3,14 +3,14 @@ title: Obter transitiveReports para um usuário
 description: Obter a contagem de relatórios transitivos para um usuário.
 author: dkershaw10
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 6b6daf440cc9c1b3026fe7c5fa46838d0d59717d
-ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
+ms.openlocfilehash: 5d04b1240c54b186a2e5f5cfb77f651e032f1eda
+ms.sourcegitcommit: ada6eab637b9b318129aefb98edbe7316399d9ba
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53210819"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53316598"
 ---
 # <a name="get-transitivereports-for-a-user"></a>Obter transitiveReports para um usuário
 

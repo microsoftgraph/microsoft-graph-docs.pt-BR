@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 71948e099507bf081739dbef9f4e07d43f358af9
-ms.sourcegitcommit: 503c72036c376a30e08c29df8e7730a7afcab66e
+ms.openlocfilehash: 07b9aff276c46fbdcca56b365d11e7ac12066408
+ms.sourcegitcommit: ada6eab637b9b318129aefb98edbe7316399d9ba
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52870315"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53317074"
 ---
 # <a name="get-unifiedroledefinition"></a>Obter unifiedRoleDefinition
 
@@ -23,19 +23,21 @@ Obter as propriedades e as relações de [um objeto unifiedRoleDefinition](../re
 No momento, há suporte para os seguintes provedores RBAC:
 - cloud PC 
 - gerenciamento de dispositivos (Intune)
-- directory (Azure AD) 
+- directory (funções de diretório do Azure AD)
+- gerenciamento de direitos (gerenciamento de direitos do Azure AD)
 
 [!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Dependendo do provedor RBAC e do tipo de permissão (delegado ou aplicativo) necessário, escolha na tabela a seguinte permissão com menos privilégios necessária para chamar essa API. Para saber mais, incluindo [tomar cuidado](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) antes de escolher as permissões mais privilegiadas, pesquise as seguintes permissões em [Permissões](/graph/permissions-reference). 
 
-|Provedor com suporte      | Delegada (conta corporativa ou de estudante)  | Delegada (conta pessoal da Microsoft) | Aplicativo |
+|Provedor com suporte      | Delegado (conta corporativa ou de estudante)  | Delegada (conta pessoal da Microsoft) | Aplicativo |
 |:-----------------------|:------------------------------------|:---------------------------------------|:------------|
 | Cloud PC | CloudPC.Read.All, CloudPC.ReadWrite.All | Sem suporte. | CloudPC.Read.All, CloudPC.ReadWrite.All |
 | Gerenciamento de dispositivo | DeviceManagementRBAC.Read.All, DeviceManagementRBAC.ReadWrite.All | Sem suporte. | DeviceManagementRBAC.Read.All, DeviceManagementRBAC.ReadWrite.All |
 | Diretório | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All, Directory.AccessAsUser.All | Sem suporte.| RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All |
+| Gerenciamento de direitos | EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All | Sem suporte. | Sem suporte. |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -56,6 +58,13 @@ Obter uma definição de função para um provedor de diretórios:
 
 ```http
 GET /roleManagement/directory/roleDefinitions/{id}
+```
+
+Obter uma definição de função para o provedor de gerenciamento de direitos:
+<!-- { "blockType": "ignored" } -->
+
+```http
+GET /roleManagement/entitlementManagement/roleDefinitions/{id}
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
@@ -492,6 +501,53 @@ Content-type: application/json
     ]
 }
 ```
+
+## <a name="example-5-get-the-definition-of-a-built-in-role-for-the-entitlement-management-provider"></a>Exemplo 5: Obter a definição de uma função integrado para o provedor de gerenciamento de direitos
+
+#### <a name="request"></a>Solicitação
+
+<!-- {
+  "blockType": "request",
+  "name": "get_built-in_entitlementmanagement_role_unifiedroledefinition"
+}-->
+
+```http
+GET https://graph.microsoft.com/beta/roleManagement/entitlementManagement/roleDefinitions/ba92d953-d8e0-4e39-a797-0cbedb0a89e8
+```
+
+
+#### <a name="response"></a>Resposta
+> **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.unifiedRoleDefinition"
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#roleManagement/entitlementManagement/roleDefinitions/$entity",
+    "id": "ba92d953-d8e0-4e39-a797-0cbedb0a89e8",
+    "displayName": "Catalog creator",
+    "description": "Catalog creator",
+    "isBuiltIn": true,
+    "isEnabled": true,
+    "templateId": "ba92d953-d8e0-4e39-a797-0cbedb0a89e8",
+    "version": "1.0",
+    "rolePermissions": [
+        {
+            "allowedResourceActions": [
+                "microsoft.entitlementManagement/AccessPackageCatalog/Create"
+            ]
+        }
+    ]
+}
+```
+
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->

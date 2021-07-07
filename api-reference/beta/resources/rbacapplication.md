@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: c3833d07e0fb9758cc8f4f5418f725889fd784dc
-ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
+ms.openlocfilehash: 9636f113222bbbe6a754c2977e08273d140a6086
+ms.sourcegitcommit: ada6eab637b9b318129aefb98edbe7316399d9ba
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50760922"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53317193"
 ---
 # <a name="rbacapplication-resource-type"></a>Tipo de recurso rbacApplication
 
@@ -18,9 +18,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Contêiner de gerenciamento de função para definições unificadas de função e atribuições de função para provedores RBAC do Microsoft 365. Atualmente, o "diretório" é o único aplicativo RBAC com suporte.
+Contêiner de gerenciamento de função para definições de função unificadas e atribuições de função para Microsoft 365 provedores RBAC. Atualmente, o gerenciamento de diretórios e direitos são os únicos aplicativos RBAC com suporte.
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 
 | Método       | Tipo de retorno | Descrição |
 |:-------------|:------------|:------------|

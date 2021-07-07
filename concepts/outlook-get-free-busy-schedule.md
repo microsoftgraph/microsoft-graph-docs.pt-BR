@@ -4,12 +4,12 @@ description: Em uma configuração de escola ou trabalho, um cenário comum é v
 author: tariq-sharif
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: efee992ee099327e72f3e726a2f9eeb346e8b436
-ms.sourcegitcommit: 70e09ebbf67f49a0c64ab7a275e751f8a68b8696
+ms.openlocfilehash: d3d8379f05d6e19505bdf3c45cca0863a685423d
+ms.sourcegitcommit: ada6eab637b9b318129aefb98edbe7316399d9ba
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "48771829"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53317128"
 ---
 # <a name="get-freebusy-schedule-of-users-and-resources"></a>Obter agenda de disponibilidade de usuários e recursos
 
@@ -123,7 +123,7 @@ Content-type: application/json
 
 ```
 
-Além da disponibilidade da agenda e das horas de trabalho do Alex, **getSchedule** também retorna **availabilityView** , que é uma visualização mesclada da disponibilidade do Alex a cada dia. O modo de exibição mesclado é uma cadeia de caracteres que consiste em intervalos de tempo abrangendo aquele dia, sendo que cada intervalo de tempo indica a disponibilidade do Alex usando a seguinte convenção: 
+Além da disponibilidade da agenda e das horas de trabalho do Alex, **getSchedule** também retorna **availabilityView**, que é uma visualização mesclada da disponibilidade do Alex a cada dia. O modo de exibição mesclado é uma cadeia de caracteres que consiste em intervalos de tempo abrangendo aquele dia, sendo que cada intervalo de tempo indica a disponibilidade do Alex usando a seguinte convenção: 
 
 - `0` = livre
 - `1` = provisório
@@ -170,7 +170,7 @@ A permissão menos privilegiada exigida por **getSchedule** para que um aplicati
 
 Embora a permissão consentida permite com que um aplicativo use o **getSchedule** nos calendários dos usuários solicitados pelo Outlook, o usuário solicitado controla quais dados de evento, caso existam, o **getSchedule** retornará. 
 
-Por exemplo, o **getSchedule** pode retornar o status de disponibilidade e as horas de trabalho dos usuários solicitados ou também retornar as propriedades **subject** , **location** , e **isPrivate** de um evento, desde que:
+Por exemplo, o **getSchedule** pode retornar o status de disponibilidade e as horas de trabalho dos usuários solicitados ou também retornar as propriedades **subject**, **location**, e **isPrivate** de um evento, desde que:
 
 - O evento esteja marcado com um nível de confidencialidade baixo - `normal` ou `personal`- E uma ou mais das seguintes condições se aplicam:
 
@@ -181,7 +181,7 @@ Estas condições se aplicam independentemente se o usuário conectado é um adm
 
 ## <a name="time-zone-representation"></a>Representação de fuso horário
 Por padrão, as horas de início e de término de itens de agenda retornado são representados em UTC. Você pode usar um `Prefer` cabeçalho para especificar um fuso horário apropriado para o aplicativo. Como exemplo: 
-```
+``` http
 Prefer: outlook.timezone="Pacific Standard Time"
 ```
 

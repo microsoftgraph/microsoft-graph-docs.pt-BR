@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: governance
 doc_type: conceptualPageType
-ms.openlocfilehash: f4723923a6b05b13fb8076b3e69ccbf0c1295f4f
-ms.sourcegitcommit: c5cc948c764b4daab861aadb390b827f658a9b7f
+ms.openlocfilehash: 4ec0d13dd91ee55d886bcf13d0d8a0d227b2a558
+ms.sourcegitcommit: ada6eab637b9b318129aefb98edbe7316399d9ba
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52298556"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53317102"
 ---
 # <a name="working-with-the-azure-ad-entitlement-management-api"></a>Trabalhando com a API de gerenciamento de direitos do Azure AD
 
@@ -36,11 +36,13 @@ Os tipos de recursos de gerenciamento de direitos incluem:
 - [entitlementManagementSettings](entitlementmanagementsettings.md): configurações de todo o locatário para o gerenciamento de direitos do Azure AD.
 - [aprovação](approval.md): representa as decisões associadas a uma solicitação de pacote de acesso.
 
+Além disso, as atribuições de função para funções específicas de gerenciamento de direitos podem ser gerenciadas por meio de definições de função de gerenciamento de [direitos.](unifiedroledefinition.md)
+
 For a tutorial that shows you how to use entitlement management to create a package of resources that internal users can self-service request, see [Create an access package using Microsoft Graph APIs](/graph/tutorial-access-package-api).
 
-Observe que o recurso de gerenciamento de direitos, incluindo a API, está incluído no Azure AD Premium P2. O locatário em que o gerenciamento de direitos está sendo usado deve ter uma assinatura válida comprada ou de avaliação do Azure AD Premium assinatura P2 ou EMS E5.
+Observe que o recurso de gerenciamento de direitos, incluindo a API, está incluído Azure AD Premium P2. O locatário em que o gerenciamento de direitos está sendo usado deve ter uma assinatura de compra ou avaliação válida Azure AD Premium P2 ou EMS E5.
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 
 A tabela a seguir lista os métodos que você pode usar para interagir com recursos relacionados ao gerenciamento de direitos.
 
@@ -51,7 +53,7 @@ A tabela a seguir lista os métodos que você pode usar para interagir com recur
 | [Listar accessPackages](../api/accesspackage-list.md) | [Coleção accessPackage](accesspackage.md) | Recupere uma lista de **objetos accessPackage.** |
 | [Criar accessPackage](../api/accesspackage-post.md) | [accessPackage](accesspackage.md) | Crie um novo **objeto accessPackage.** |
 | [Obter accessPackage](../api/accesspackage-get.md) | [accessPackage](accesspackage.md) | Ler propriedades e relações de um **objeto accessPackage.** |
-| [Atualizar accessPackage](../api/accesspackage-update.md)|Nenhum(a) | Atualize as propriedades de um **objeto accesspackage.** |
+| [Atualizar accessPackage](../api/accesspackage-update.md)|Nenhum | Atualize as propriedades de um **objeto accesspackage.** |
 | [Excluir accessPackage](../api/accesspackage-delete.md) | | Excluir **accessPackage**. |
 | [FilterByCurrentUser](../api/accesspackage-filterbycurrentuser.md) | [Coleção accessPackage](accesspackage.md) | Recupere uma lista de **objetos accessPackage** filtrados no usuário de entrada. |
 | [Listar accessPackageResourceRoleScopes](../api/accesspackage-list-accesspackageresourcerolescopes.md) | [Coleção accessPackageResourceRoleScope](accesspackageresourcerolescope.md) | Recupere uma lista de **objetos accessPackageResourceRoleScope** para um pacote de acesso. |
@@ -73,7 +75,7 @@ A tabela a seguir lista os métodos que você pode usar para interagir com recur
 | [Listar accessPackageCatalogs](../api/accesspackagecatalog-list.md) | [Coleção accessPackageCatalog](accesspackagecatalog.md) | Recupere uma lista de **objetos accessPackageCatalogs.** |
 | [Criar accessPackageCatalog](../api/accesspackagecatalog-post.md) | [accessPackageCatalog](accesspackagecatalog.md) | Crie um novo **objeto accessPackageCatalog.** |
 | [Obter accessPackageCatalog](../api/accesspackagecatalog-get.md) | [accessPackageCatalog](accesspackagecatalog.md) | Ler propriedades e relações de um **objeto accessPackageCatalog.** |
-| [Atualizar accessPackageCatalog](../api/accesspackagecatalog-update.md)|Nenhum(a) | Atualize as propriedades de um **objeto accessPackageCatalog.** |
+| [Atualizar accessPackageCatalog](../api/accesspackagecatalog-update.md)|Nenhum | Atualize as propriedades de um **objeto accessPackageCatalog.** |
 | [Excluir accessPackageCatalog](../api/accesspackagecatalog-delete.md) | | Excluir um **accessPackageCatalog**. |
 | [Listar recursos do accessPackageCatalog](../api/accesspackagecatalog-list-accesspackageresources.md) | [Coleção accessPackageResource](accesspackageresource.md) | Recupere uma lista de **objetos accessPackageResource.** |
 | [Listar funções de recurso accessPackageCatalog](../api/accesspackagecatalog-list-accesspackageresourceroles.md) | [Coleção accessPackageResourceRole](accesspackageresourcerole.md) | Recupere uma lista de **objetos accessPackageResourceRole.** |
@@ -84,17 +86,17 @@ A tabela a seguir lista os métodos que você pode usar para interagir com recur
 | [Listar connectedOrganizations](../api/connectedorganization-list.md) | [Coleção connectedOrganization](connectedorganization.md) | Recupere uma lista de **objetos connectedOrganization.** |
 | [Criar connectedOrganization](../api/connectedorganization-post.md) | [connectedOrganization](connectedorganization.md) | Crie um novo **objeto connectedOrganization.** |
 | [Obter connectedOrganization](../api/connectedorganization-get.md) | [connectedOrganization](connectedorganization.md) | Leia propriedades e relações de um **objeto connectedOrganization.** |
-| [Atualizar connectedOrganization](../api/connectedorganization-update.md) |Nenhum(a) | Atualizar uma **connectedOrganization**. |
-| [Excluir connectedOrganization](../api/connectedorganization-delete.md) |Nenhum(a) | Excluir uma **connectedOrganization**. |
+| [Atualizar connectedOrganization](../api/connectedorganization-update.md) |Nenhum | Atualizar uma **connectedOrganization**. |
+| [Excluir connectedOrganization](../api/connectedorganization-delete.md) |Nenhum | Excluir uma **connectedOrganization**. |
 |[Listar internalSponsors](../api/connectedorganization-list-internalsponsors.md) | Coleção [directoryObject](directoryobject.md) | Recupere uma lista dos **patrocinadores internos de uma connectedOrganization.** |
 |[Listar externalSponsors](../api/connectedorganization-list-externalsponsors.md) | Coleção [directoryObject](directoryobject.md) | Recupere uma lista de **patrocinadores externos de uma connectedOrganization.** |
-|[Adicionar internalSponsors](../api/connectedorganization-post-internalsponsors.md) | Nenhum(a) | Adicione um usuário ou grupo aos patrocinadores internos de um **connectedOrganization.** |
-|[Adicionar externalSponsors](../api/connectedorganization-post-externalsponsors.md) | Nenhum(a) | Adicione um usuário ou grupo aos patrocinadores **externos de um connectedOrganization.** |
-|[Remover internalSponsors](../api/connectedorganization-delete-internalsponsors.md) | Nenhum(a) | Remova um usuário ou grupo dos patrocinadores **internos de uma connectedOrganization.** |
+|[Adicionar internalSponsors](../api/connectedorganization-post-internalsponsors.md) | Nenhum | Adicione um usuário ou grupo aos patrocinadores internos de um **connectedOrganization.** |
+|[Adicionar externalSponsors](../api/connectedorganization-post-externalsponsors.md) | Nenhum | Adicione um usuário ou grupo aos patrocinadores **externos de um connectedOrganization.** |
+|[Remover internalSponsors](../api/connectedorganization-delete-internalsponsors.md) | Nenhum | Remova um usuário ou grupo dos patrocinadores **internos de uma connectedOrganization.** |
 |[Obter aprovação](../api/approval-get.md) | [aprovação](approval.md) | Recupere as propriedades de um **objeto de aprovação.** |
 |[Aprovação de listaSteps](../api/approval-list-steps.md) | [Coleção approvalStep](approvalstep.md) | Listar **os objetos approvalStep** associados a um **objeto de** aprovação. |
 |[Obter approvalStep](../api/approvalstep-get.md) | [approvalStep](approvalstep.md) | Recupere as propriedades de um **objeto approvalStep.** |
-|[Atualizar approvalStep](../api/approvalstep-update.md) | Nenhum(a) | Aplicar aprovar ou negar decisão em um **objeto approvalStep.** |
+|[Atualizar approvalStep](../api/approvalstep-update.md) | Nenhum | Aplicar aprovar ou negar decisão em um **objeto approvalStep.** |
 
 
 ## <a name="types"></a>Tipos
