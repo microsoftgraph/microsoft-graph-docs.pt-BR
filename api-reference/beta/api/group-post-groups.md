@@ -5,12 +5,12 @@ author: Jordanndahl
 localization_priority: Priority
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 84fde6c5de4f1d3536fabf4920703584d7824292
-ms.sourcegitcommit: e4461c7eb8c3d265fc1aa766125e81b58c6e1099
+ms.openlocfilehash: d7b48dfc2fa1af09d4dc9f69c7e1851069d40459
+ms.sourcegitcommit: ada6eab637b9b318129aefb98edbe7316399d9ba
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "52941508"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53316948"
 ---
 # <a name="create-group"></a>Criar grupo
 
@@ -61,7 +61,7 @@ A tabela a seguir mostra as propriedades do recurso [group](../resources/group.m
 | mailEnabled | booliano | Defina como **true** para grupos habilitados para email. Obrigatório. |
 | mailNickname | string | O alias de email do grupo. Esses caracteres não podem ser usados no mailNickName: `@()\[]";:.<>,SPACE`. Obrigatório. |
 | securityEnabled | booliano | Defina como **true** para grupos habilitados para segurança, incluindo grupos do Microsoft 365. Obrigatório. |
-| owners | Coleção [directoryObject](../resources/directoryobject.md) | Esta propriedade representa os proprietários do grupo na hora de criação. Opcional. |
+| owners | Coleção [directoryObject](../resources/directoryobject.md) | Esta propriedade representa os proprietários do grupo na hora de criação. Os proprietários não são adicionados automaticamente como membros do grupo, a menos que especificados como propriedade dos **membros**. Opcional. |
 | membros | Coleção [directoryObject](../resources/directoryobject.md) | Esta propriedade representa os membros do grupo na hora de criação. Opcional. |
 |visibility|Cadeia de caracteres|Especifica a visibilidade de um grupo do Microsoft 365. Os valores possíveis são: `Private`, `Public`, `HiddenMembership` ou vazio (que é interpretado como `Public`).|
 
@@ -281,7 +281,7 @@ Content-type: application/json
 
 #### <a name="request"></a>Solicitação
 
-Este é um exemplo de solicitação.
+Este é um exemplo de solicitação.  O usuário chamador deve receber a permissão *Directory.AccessAsUser.All* para definir a propriedade **isAssignableToRole**.
 
 
 # <a name="http"></a>[HTTP](#tab/http)

@@ -1,13 +1,13 @@
 ---
 title: Encontrar possíveis horários de reunião no calendário do Outlook
-description: 'Seja no trabalho ou em uma instituição de ensino, procurar um horário e local em comum para uma reunião geralmente significa uma sobrecarga. Os aplicativos do Microsoft Graph podem usar o '
+description: 'Em um local de trabalho ou escola, procurar um horário e um local em comum para atender geralmente gera sobrecarga. Os aplicativos do Microsoft Graph podem usar '
 localization_priority: Priority
-ms.openlocfilehash: 3ae59b778cc26b47c2254d5c52d7da0f3d5fc8e1
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
+ms.openlocfilehash: 972a22ed302b824c3b4d147338badcfb72c30c6a
+ms.sourcegitcommit: ada6eab637b9b318129aefb98edbe7316399d9ba
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44897208"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53317025"
 ---
 # <a name="find-possible-meeting-times-on-the-outlook-calendar"></a>Encontrar possíveis horários de reunião no calendário do Outlook
 
@@ -16,7 +16,7 @@ Seja no trabalho ou em uma instituição de ensino, procurar um horário e local
 A ação **findMeetingTimes** permite especificar condições, como o intervalo de horário/data, a duração, os participantes opcionais ou obrigatórios, e a natureza da atividade (**activityDomain**). A ação leva em consideração a agenda de trabalho e o status de disponibilidade dos participantes e dos organizadores, e sugere horários apropriados para os participantes e o tipo de atividade. Por exemplo, as sugestões para uma atividade relacionada ao trabalho sempre ocorrem durante o horário de trabalho do organizador e dos participantes, e as sugestões em que os participantes obrigatórios estão disponíveis são classificadas mais acima na lista de sugestões.
 
 No Microsoft 365, as horas de trabalho e os fusos horários são configuráveis por caixa de correio. A ação **findMeetingTimes** lida com variações de fuso horário entre o organizador e os participantes. Por padrão, a ação **findMeetingTimes** retorna sugestões em UTC. Você pode usar o seguinte cabeçalho de solicitação para que a ação **findMeetingTimes** retorne sugestões expressas em um fuso horário específico.
-```
+``` http
 Prefer: outlook.timezone="{time-zone-string}}"
 ```
 
