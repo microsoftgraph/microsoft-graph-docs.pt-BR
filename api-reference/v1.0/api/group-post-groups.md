@@ -5,12 +5,12 @@ author: Jordanndahl
 localization_priority: Priority
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: e90157f8139de8524bcf497c7aa0c9c496aceac7
-ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
+ms.openlocfilehash: e6af591272ea3c1631107485609b7c43fcec59cd
+ms.sourcegitcommit: ada6eab637b9b318129aefb98edbe7316399d9ba
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53209687"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53316516"
 ---
 # <a name="create-group"></a>Criar grupo
 
@@ -59,7 +59,7 @@ A tabela a seguir mostra as propriedades do recurso [group](../resources/group.m
 | mailEnabled | booliano | Defina como **true** para grupos habilitados para email. Obrigatório. |
 | mailNickname | string | O alias de email do grupo. Máx. comprimento: 64 caracteres. Esses caracteres não podem ser usados no mailNickName: `@()\[]";:.<>,SPACE`. Obrigatório. |
 | securityEnabled | booliano | Defina como **true** para grupos habilitados para segurança, incluindo grupos do Microsoft 365. Obrigatório. |
-| owners | coleção de cadeias de caracteres | Esta propriedade representa os proprietários do grupo na hora de criação. Opcional. |
+| owners | coleção de cadeias de caracteres | Esta propriedade representa os proprietários do grupo na hora de criação.  Os proprietários não são adicionados automaticamente como membros do grupo, a menos que especificados como propriedade dos **membros**. Opcional. |
 | membros | coleção de cadeias de caracteres | Esta propriedade representa os membros do grupo na hora de criação. Opcional. |
 |visibility|Cadeia de caracteres|Especifica a visibilidade de um grupo do Microsoft 365. Os valores possíveis são: `Private`, `Public`, `HiddenMembership` ou vazio (que é interpretado como `Public`).|
 
@@ -281,7 +281,7 @@ Content-type: application/json
 
 #### <a name="request"></a>Solicitação
 
-Este é um exemplo de solicitação.
+Este é um exemplo de solicitação. O usuário chamador deve receber a permissão *Directory.AccessAsUser.All* para definir a propriedade **isAssignableToRole**.
 
 
 # <a name="http"></a>[HTTP](#tab/http)

@@ -3,12 +3,12 @@ title: Obter componente no Microsoft Graph Toolkit
 description: Um componente Get permite que você faça qualquer consulta GET da Microsoft Graph diretamente em seu HTML.
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: fefbbf9eb944494923a25f5d2a9699b03e5c9919
-ms.sourcegitcommit: 9ac6bbab3df22e7629cf2bde796b527337c680aa
+ms.openlocfilehash: 8ffb4da00b0d96f29747e7415878146cd80d08cf
+ms.sourcegitcommit: ae83b2b372902268517fd17a8b10d6d9add422af
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53082311"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53334770"
 ---
 # <a name="get-component-in-the-microsoft-graph-toolkit"></a>Obter componente no Microsoft Graph Toolkit
 
@@ -36,8 +36,8 @@ Você pode usar vários atributos para alterar o comportamento do componente. O 
 | habilitado para cache | cacheEnabled | Boolean opcional. Quando definido, indica que a resposta do recurso será armazenada em cache. Substitua se `refresh()` for chamado ou se estiver em `pollingRate` uso. O padrão é `false`. |
 | cache-invalidation-period | cacheInvalidationPeriod | Número opcional de milissegundos. Quando definido em combinação com , o atraso antes que o cache atinja seu período `cacheEnabled` de invalidação será modificado por esse valor. O padrão `0` é e usará o período de invalidação padrão. |
 | tipo | tipo | Tipo opcional da resposta esperada. O padrão é `json`. Suporta `json` ou `image` (só há suporte para pontos de extremidade terminando com `/photo/value$` ). |
-| N/A | response | Resposta somente leitura da Microsoft Graph se a solicitação foi bem-sucedida.  |
-| N/A |erro| Erro somente leitura da Microsoft Graph se a solicitação não tiver sido bem-sucedida. |
+| N/D | response | Resposta somente leitura da Microsoft Graph se a solicitação foi bem-sucedida.  |
+| N/D |erro| Erro somente leitura da Microsoft Graph se a solicitação não tiver sido bem-sucedida. |
 
 ## <a name="methods"></a>Métodos
 
@@ -47,9 +47,12 @@ Você pode usar vários atributos para alterar o comportamento do componente. O 
 
 ## <a name="events"></a>Eventos
 
-| Event | Detalhe | Descrição |
-| --- | --- | --- |
-| `dataChange` | O detalhe contém `response` os objetos `error` e. | Acionado quando a resposta ou o erro mudam. |
+Evento | Quando é emitido | Dados personalizados | Cancelável | Bolhas | Funciona com modelo personalizado
+------|-------------------|--------------|:-----------:|:---------:|:---------------------------:|
+`dataChange` | Disparado depois que o componente carregou seus dados. | `{ response: any, error: any }`. A `response` propriedade contém a resposta recuperada do Microsoft Graph. A `error` propriedade contém informações sobre o erro se um ocorreu | Não | Não | Sim
+
+> [!TIP]
+> Para obter mais informações sobre os dados retornados na propriedade, consulte a referência de API da API que você usou na propriedade `response` `resource` do componente Get.
 
 Para obter mais informações sobre como lidar com eventos, consulte [eventos](../customize-components/events.md).
 
@@ -62,7 +65,7 @@ O `mgt-get` componente dá suporte a vários [modelos](../customize-components/t
 | Padrão. | A resposta do Microsoft Graph. | O modelo padrão é necessário para renderizar os dados provenientes do Microsoft Graph. |
 | valor | Item de dados da matriz `value` retornada | Use o modelo em vez do modelo ao esperar que a resposta do gráfico contenha uma matriz de itens - como mensagens, arquivos `value` `default` ou **usuários**.   O `value` modelo será repetido automaticamente para cada item retornado pelo recurso. O `value` modelo também começará a renderizar os itens assim que eles estão prontos (ao contrário do modelo padrão).|
 | erro | O erro da Microsoft Graph. | Esse modelo será usado se houver um erro ao fazer a solicitação. |
-| loading | N/A | Esse modelo é usado enquanto a solicitação está sendo feita. |
+| loading | N/D | Esse modelo é usado enquanto a solicitação está sendo feita. |
 
 ## <a name="microsoft-graph-permissions"></a>Permissões do Microsoft Graph
 

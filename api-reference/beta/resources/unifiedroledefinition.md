@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 804315ae2ae4b803088a419913ca91c11a8e51c4
-ms.sourcegitcommit: ada6eab637b9b318129aefb98edbe7316399d9ba
+ms.openlocfilehash: 1b0c80a5844abd5ce5fbbce477841d59f2859af4
+ms.sourcegitcommit: ae83b2b372902268517fd17a8b10d6d9add422af
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/07/2021
-ms.locfileid: "53316491"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53334560"
 ---
 # <a name="unifiedroledefinition-resource-type"></a>Tipo de recurso unifiedRoleDefinition
 
@@ -31,7 +31,7 @@ No momento, há suporte para os seguintes provedores RBAC:
 
 [!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 
 | Método       | Tipo de retorno | Descrição |
 |:-------------|:------------|:------------|
@@ -45,14 +45,14 @@ No momento, há suporte para os seguintes provedores RBAC:
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|description|String| A descrição do unifiedRoleDefinition. Somente leitura quando **isBuiltIn** for true. |
-|displayName|String| O nome de exibição do unifiedRoleDefinition. Somente leitura quando **isBuiltIn** for true. Obrigatório.  Oferece `$filter` suporte ( e somente `eq` `startsWith` operadores).|
-|id|String| O identificador exclusivo do unifiedRoleDefinition. Chave, não anulada, somente leitura.  Suporta `$filter` ( `eq` somente operador). |
+|description|Cadeia de caracteres| A descrição do unifiedRoleDefinition. Somente leitura quando **isBuiltIn** for true. |
+|displayName|Cadeia de caracteres| O nome de exibição do unifiedRoleDefinition. Somente leitura quando **isBuiltIn** for true. Obrigatório.  Oferece `$filter` suporte ( e somente `eq` `startsWith` operadores).|
+|id|Cadeia de caracteres| O identificador exclusivo do unifiedRoleDefinition. Chave, não anulada, somente leitura.  Suporta `$filter` ( `eq` somente operador). |
 |isBuiltIn|Booliano| Sinalizador indicando se unifiedRoleDefinition faz parte do conjunto padrão incluído no produto ou personalizado. Somente leitura.  Suporta `$filter` ( `eq` somente operador).|
 |isEnabled|Booliano| Sinalizador indicando se a função está habilitada para atribuição. Se for false, a função não estará disponível para atribuição. Somente leitura quando **isBuiltIn** for true. |
 |resourceScopes|Coleção de cadeias de caracteres| Lista de permissões de escopo concedidas pela definição de função a que se aplicam. Atualmente, `/` só há suporte. Somente leitura quando isBuiltIn for true. **NÃO USE. Isso será preterido em breve. Anexar escopo à atribuição de função** | 
 |rolePermissions|[Coleção unifiedRolePermission](unifiedrolepermission.md)| Lista de permissões incluídas na função. Somente leitura quando **isBuiltIn** for true. Obrigatório. |
-|templateId|String| Identificador de modelo personalizado que pode ser definido quando isBuiltIn é false. Esse identificador normalmente é usado se um identificador precisa ser o mesmo em diretórios diferentes. Somente leitura quando **isBuiltIn** for true. |
+|templateId|Cadeia de caracteres| Identificador de modelo personalizado que pode ser definido quando isBuiltIn é false. Esse identificador normalmente é usado se um identificador precisa ser o mesmo em diretórios diferentes. Somente leitura quando **isBuiltIn** for true. |
 |versão|String| Indica a versão do unifiedRoleDefinition. Somente leitura quando **isBuiltIn** for true.|
 
 ## <a name="relationships"></a>Relações

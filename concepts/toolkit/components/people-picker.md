@@ -3,12 +3,12 @@ title: People-Picker componente
 description: Você pode usar o componente web mgt-people-picker para pesquisar um número especificado de pessoas e renderizar a lista de resultados por meio do Microsoft Graph.
 localization_priority: Normal
 author: elisenyang
-ms.openlocfilehash: f8899a4bfdf86d07bb5efa19c269b0907ceae319
-ms.sourcegitcommit: 9ac6bbab3df22e7629cf2bde796b527337c680aa
+ms.openlocfilehash: 690e117064a43a65ea125e4e0d67a12daae185ae
+ms.sourcegitcommit: ae83b2b372902268517fd17a8b10d6d9add422af
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53082325"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53334756"
 ---
 # <a name="people-picker-component-in-the-microsoft-graph-toolkit"></a>People-Picker componente no microsoft Graph Toolkit
 
@@ -77,9 +77,9 @@ Você pode preencher dados de pessoas selecionadas fazendo um dos seguintes:
 
 Os eventos a seguir são disparados do componente.
 
-| Evento | Descrição |
-| --- | --- |
-| `selectionChanged` | O usuário adicionou ou removeu uma pessoa da lista de pessoas selecionadas/selecionadas.|
+Evento | Quando é emitido | Dados personalizados | Cancelável | Bolhas | Funciona com modelo personalizado
+------|-------------------|--------------|:-----------:|:---------:|:---------------------------:|
+`selectionChanged` | O usuário adicionou ou removeu uma pessoa da lista de pessoas selecionadas/selecionadas | Matriz de pessoas selecionadas, onde uma pessoa [](/graph/api/resources/person) pode [](/graph/api/resources/contact) ser um usuário Graph [,](/graph/api/resources/user)pessoa ou contato com uma propriedade adicional que contém a URL da foto `personImage` do usuário | Não | Não | Sim, a menos que você substitua o modelo padrão
 
 Para obter mais informações sobre como lidar com eventos, consulte [eventos](../customize-components/events.md).
 
@@ -123,7 +123,7 @@ mgt-people-picker {
 | erro | null: sem dados | O modelo usado se a pesquisa do usuário não retornar usuários. |
 | no-data | null: sem dados | Um modelo alternativo usado se a pesquisa do usuário não retornar usuários. |
 | selected-person | pessoa: o objeto de detalhes da pessoa | O modelo para renderizar as pessoas selecionadas. |
-| pessoa | pessoa: o objeto de detalhes da pessoa | O modelo para renderizar pessoas no menu suspenso. |
+| person | pessoa: o objeto de detalhes da pessoa | O modelo para renderizar pessoas no menu suspenso. |
 
 Os exemplos a seguir mostram como usar o `error` modelo.
 

@@ -5,18 +5,18 @@ author: Jordanndahl
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 5054a75a079dc1b1a687148baf14b6492859cc4b
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: 07fc0bb3c1d26aedecbc49fd839fe3801c9d6651
+ms.sourcegitcommit: ada6eab637b9b318129aefb98edbe7316399d9ba
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52680938"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53316997"
 ---
 # <a name="grouplifecyclepolicy-addgroup"></a>groupLifecyclePolicy: addGroup
 
 Namespace: microsoft.graph
 
-Adiciona um grupo a uma política de ciclo de vida.
+Adiciona grupos específicos a uma política de ciclo de vida. Essa ação limita a política de ciclo de vida do grupo a um conjunto de grupos somente se a propriedade **managedGroupTypes** do [groupLifecyclePolicy](../resources/grouplifecyclepolicy.md) estiver definida como `Selected` .
 
 ## <a name="permissions"></a>Permissões
 
@@ -47,11 +47,15 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro | Tipo | Descrição |
 |:---------------|:--------|:----------|
-|groupId|Guid| A ID do grupo que será adicionado à política. |
+|groupId|Cadeia de caracteres| O identificador do grupo a ser acrescentado à política. |
+
+Quando a **propriedade managedGroupTypes** [do groupLifecyclePolicy](../resources/grouplifecyclepolicy.md) é definida como , você pode adicionar até `Selected` 500 grupos à lista. Se você precisar adicionar mais de 500 grupos, a propriedade **managedGroupTypes** do [groupLifecyclePolicy](../resources/grouplifecyclepolicy.md) deve ser definida como `All` .
+
+Somente um grupo pode ser adicionado por solicitação.
 
 ## <a name="response"></a>Resposta
 
-Se bem sucedido, este método retorna um código de resposta `200 OK`. Quando o grupo é adicionado à política, o valor **true** é retornado no corpo da resposta. Caso contrário, um valor **false** é retornado no corpo da resposta.
+Se bem sucedido, este método retorna um código de resposta `200 OK`. Se o grupo for adicionado à política, um `true` valor será retornado no corpo da resposta. Caso contrário, `false` um valor será retornado no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 

@@ -3,12 +3,12 @@ title: Componente person no microsoft Graph Toolkit
 description: O componente de pessoa é usado para exibir uma pessoa ou contato usando sua foto, nome e/ou endereço de email.
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: 7f35b5c1a3ef764995d319e9e603489b50a1fe2c
-ms.sourcegitcommit: 9ac6bbab3df22e7629cf2bde796b527337c680aa
+ms.openlocfilehash: af3b3fd628303980558c4e8ab195f806927d2f5a
+ms.sourcegitcommit: ae83b2b372902268517fd17a8b10d6d9add422af
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53082045"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53334742"
 ---
 # <a name="person-component-in-the-microsoft-graph-toolkit"></a>Componente person no microsoft Graph Toolkit
 
@@ -116,11 +116,11 @@ Para saber mais, confira [componentes de estilo](../customize-components/style.m
 
 Os eventos a seguir são disparados do componente.
 
-| Event | Detalhe | Descrição |
-| --- | --- | --- |
-| `line1clicked` | O detalhe contém o objeto `person` respectivo | Acionado quando a linha1 é clicada. |
-| `line2clicked` | O detalhe contém o objeto `person` respectivo | Disparado quando a linha2 é clicada. |
-| `line3clicked` | O detalhe contém o objeto `person` respectivo | Acionado quando a linha3 é clicada. |
+Evento | Quando é emitido | Dados personalizados | Cancelável | Bolhas | Funciona com modelo personalizado
+------|-------------------|--------------|:-----------:|:---------:|:---------------------------:|
+`line1clicked` | Disparado quando a linha1 é clicada | O objeto que pode ser um usuário Graph , pessoa ou contato com uma propriedade adicional que contém a URL da `person` foto do [](/graph/api/resources/user) [](/graph/api/resources/person) [](/graph/api/resources/contact) `personImage` usuário | Não | Não | Sim, a menos que você substitua o modelo padrão
+`line2clicked` | Disparado quando a linha2 é clicada | O objeto que pode ser um usuário Graph , pessoa ou contato com uma propriedade adicional que contém a URL da `person` foto do [](/graph/api/resources/user) [](/graph/api/resources/person) [](/graph/api/resources/contact) `personImage` usuário | Não | Não | Sim, a menos que você substitua o modelo padrão
+`line3clicked` | Disparado quando a linha3 é clicada | O objeto que pode ser um usuário Graph , pessoa ou contato com uma propriedade adicional que contém a URL da `person` foto do [](/graph/api/resources/user) [](/graph/api/resources/person) [](/graph/api/resources/contact) `personImage` usuário | Não | Não | Sim, a menos que você substitua o modelo padrão
 
 Para obter mais informações sobre como lidar com eventos, consulte [eventos](../customize-components/events.md).
 

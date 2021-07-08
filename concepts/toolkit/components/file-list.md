@@ -3,12 +3,12 @@ title: Componente de lista de arquivos no microsoft Graph Toolkit
 description: O componente de lista de arquivos é usado para exibir uma lista de arquivos mostrando seu ícone e nome
 localization_priority: Normal
 author: beth-panx
-ms.openlocfilehash: 89f60020fb1db75ed4e79a7402b0aa0518146130
-ms.sourcegitcommit: 9ac6bbab3df22e7629cf2bde796b527337c680aa
+ms.openlocfilehash: 816ea4b76a08d089e419aad2a126b7b39c2727b1
+ms.sourcegitcommit: ae83b2b372902268517fd17a8b10d6d9add422af
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53082171"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53334777"
 ---
 # <a name="file-list-component-in-the-microsoft-graph-toolkit"></a>Componente de lista de arquivos no microsoft Graph Toolkit
 
@@ -136,9 +136,9 @@ Para saber mais, confira [componentes de estilo](../customize-components/style.m
 
 ## <a name="events"></a>Eventos
 
-| Evento | Descrição |
-| ----- | ----------- |
-| `itemClick` | Disparado quando o usuário clica em um arquivo. Retorna os detalhes do arquivo. |
+Evento | Quando é emitido | Dados personalizados | Cancelável | Bolhas | Funciona com modelo personalizado
+------|-------------------|--------------|:-----------:|:---------:|:---------------------------:|
+`itemClick` | Disparado quando o usuário clica em um arquivo. | Arquivo [selecionado](/graph/api/resources/driveItem) | Não | Não | Sim, com modelo de **arquivo** personalizado
 
 Para obter mais informações sobre como lidar com eventos, consulte [eventos](../customize-components/events.md).
 

@@ -200,11 +200,11 @@ items:
   - name: Referência beta
     expanded: true
     items:
-      - name: Visão Geral
+      - name: Visão geral
         href: overview.md
       - name: Usuários
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: resources/users.md
           - name: Usuário
             href: resources/user.md
@@ -380,7 +380,7 @@ items:
                 href: api/mailfolder-list-messagerules.md
               - name: Enviar email
                 href: api/user-sendmail.md
-          - name: Observações
+          - name: Notas
             items:
               - name: Onenote
                 href: resources/onenote.md
@@ -493,7 +493,7 @@ items:
                 href: api/chat-get.md
               - name: Listar chats para usuário
                 href: api/chat-list.md
-          - name: Tarefas To do
+          - name: Tarefas pendentes
             items:
               - name: Tarefa
                 href: resources/todotask.md
@@ -515,7 +515,7 @@ items:
                 href: api/usersettings-update.md
       - name: Grupos
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: resources/groups-overview.md
           - name: Grupo
             href: resources/group.md
@@ -692,7 +692,7 @@ items:
                 href: api/driveitem-list-children.md
           - name: Propriedades estendidas
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/extended-properties-overview.md
               - name: Propriedades estendidas de valor único
                 items:
@@ -901,7 +901,7 @@ items:
                     href: api/publishedresource-post-agentgroups.md
                   - name: Remover do grupo de agentes
                     href: api/publishedresource-delete-agentgroups.md
-              - name: Conector
+              - name: Connector
                 href: resources/connector.md
                 items:
                   - name: Listar
@@ -1292,7 +1292,7 @@ items:
                 href: api/outlookcategory-delete.md
           - name: Propriedades estendidas
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/extended-properties-overview.md
               - name: Propriedades estendidas de valor único
                 items:
@@ -1420,7 +1420,7 @@ items:
                 href: api/call-logteleconferencedevicequality.md
           - name: Registros de chamadas
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/callrecords-api-overview.md
               - name: Registro de chamada
                 items:
@@ -1428,9 +1428,9 @@ items:
                     href: resources/callrecords-callrecord.md
                   - name: Obter
                     href: api/callrecords-callrecord-get.md
-              - name: Sessão
+              - name: Session
                 items:
-                  - name: Sessão
+                  - name: Session
                     href: resources/callrecords-session.md
                   - name: Listar
                     href: api/callrecords-session-list.md
@@ -1474,11 +1474,11 @@ items:
       - name: Conformidade (pré-visualização)
         displayName: 'Compliance API, Microsoft Graph Compliance API'
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: resources/complianceapioverview.md
           - name: Descoberta eletrônica
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/ediscovery-eDiscoveryapioverview.md
               - name: Caso de Descoberta Eletrônica
                 href: resources/ediscovery-case.md
@@ -1640,10 +1640,10 @@ items:
                     href: api/projectrome-put-historyitem.md
                   - name: Excluir um item do histórico
                     href: api/projectrome-delete-historyitem.md
-      - name: Reserva de clientes (visualização)
+      - name: Reserva de clientes (prévia)
         displayName: 'Bookings, Microsoft Bookings'
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: resources/booking-api-overview.md
           - name: Negócio de reservas
             href: resources/bookingbusiness.md
@@ -6750,7 +6750,7 @@ items:
                         href: api/intune-deviceconfig-windowswifienterpriseeapconfiguration-update.md
                   - name: Interface de rede com fio
                     href: resources/intune-deviceconfig-wirednetworkinterface.md
-              - name: Gerenciamento de dispositivos
+              - name: Gerenciamento de dispositivo
                 href: resources/intune-device-mgt-conceptual.md
                 items:
                   - name: Ativar o resultado da ação esim do dispositivo
@@ -9619,6 +9619,33 @@ items:
               - name: Gerenciamento de função
                 href: resources/rolemanagement.md
                 items:
+                  - name: Política de gerenciamento de função
+                    href: resources/unifiedRoleManagementPolicy.md
+                    items:
+                      - name: Listar
+                        href: api/unifiedrolemanagementpolicy-list.md
+                      - name: Obter
+                        href: api/unifiedrolemanagementpolicy-get.md
+                      - name: Listar regras efetivas
+                        href: api/unifiedrolemanagementpolicy-list-effectiverules.md
+                      - name: Listar regras
+                        href: api/unifiedrolemanagementpolicy-list-rules.md
+                  - name: Atribuição de política de gerenciamento de função
+                    href: resources/unifiedRoleManagementPolicyAssignment.md
+                    items:
+                      - name: Listar
+                        href: api/unifiedRoleManagementPolicyAssignment-list.md
+                      - name: Obter
+                        href: api/unifiedRoleManagementPolicyAssignment-get.md
+                  - name: Regra de política de gerenciamento de função
+                    href: resources/unifiedRoleManagementPolicyRule.md
+                    items:
+                      - name: Listar
+                        href: api/unifiedRoleManagementPolicyRule-list.md
+                      - name: Obter
+                        href: api/unifiedRoleManagementPolicyRule-get.md
+                      - name: Atualizar
+                        href: api/unifiedRoleManagementPolicyRule-update.md
                   - name: Definição de função
                     href: resources/unifiedroledefinition.md
                     items:
@@ -9993,7 +10020,7 @@ items:
       - name: Arquivos
         displayName: 'OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint'
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: resources/onedrive.md
           - name: Unidades
             href: resources/drive.md
@@ -10089,7 +10116,7 @@ items:
       - name: Finanças (visualização)
         displayname: 'Dynamics, Dynamics 365 Business Central'
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: resources/dynamics-graph-reference.md
           - name: Conta
             href: resources/dynamics-account.md
@@ -10638,8 +10665,6 @@ items:
                         href: api/unifiedroleassignmentschedulerequest-get.md
                       - name: Criar
                         href: api/unifiedroleassignmentschedulerequest-post-unifiedroleassignmentschedulerequests.md
-                      - name: Atualizar
-                        href: api/unifiedroleassignmentschedulerequest-update.md
                       - name: Cancelar
                         href: api/unifiedroleassignmentschedulerequest-cancel.md
                       - name: Filtrar pelo usuário atual
@@ -10653,8 +10678,6 @@ items:
                         href: api/unifiedroleeligibilityschedulerequest-get.md
                       - name: Criar
                         href: api/unifiedroleeligibilityschedulerequest-post-unifiedroleeligibilityschedulerequests.md
-                      - name: Atualizar
-                        href: api/unifiedroleeligibilityschedulerequest-update.md
                       - name: Cancelar
                         href: api/unifiedroleeligibilityschedulerequest-cancel.md
                       - name: Filtrar pelo usuário atual
@@ -10730,7 +10753,7 @@ items:
                         href: api/authenticationflowspolicy-update.md
               - name: Métodos de autenticação
                 items:
-                  - name: Visão Geral
+                  - name: Visão geral
                     href: resources/authenticationmethods-overview.md
                   - name: Listar todos os métodos
                     href: api/authentication-list-methods.md
@@ -10824,7 +10847,7 @@ items:
                         href: api/authenticationoperation-get.md
               - name: Política de método de autenticação
                 items:
-                  - name: Visão Geral
+                  - name: Visão geral
                     href: resources/authenticationmethodspolicies-overview.md
                   - name: Política de método de autenticação
                     href: resources/authenticationmethodspolicy.md
@@ -11238,33 +11261,6 @@ items:
                             href: api/permissiongrantpolicy-post-excludes.md
                           - name: Excluir de exclui
                             href: api/permissiongrantpolicy-delete-excludes.md
-                  - name: Política de gerenciamento de função
-                    href: resources/unifiedRoleManagementPolicy.md
-                    items:
-                      - name: Listar
-                        href: api/unifiedrolemanagementpolicy-list.md
-                      - name: Obter
-                        href: api/unifiedrolemanagementpolicy-get.md
-                      - name: Listar regras efetivas
-                        href: api/unifiedrolemanagementpolicy-list-effectiverules.md
-                      - name: Listar regras
-                        href: api/unifiedrolemanagementpolicy-list-rules.md
-                  - name: Atribuição de política de gerenciamento de função
-                    href: resources/unifiedRoleManagementPolicyAssignment.md
-                    items:
-                      - name: Listar
-                        href: api/unifiedRoleManagementPolicyAssignment-list.md
-                      - name: Obter
-                        href: api/unifiedRoleManagementPolicyAssignment-get.md
-                  - name: Regra de política de gerenciamento de função
-                    href: resources/unifiedRoleManagementPolicyRule.md
-                    items:
-                      - name: Listar
-                        href: api/unifiedRoleManagementPolicyRule-list.md
-                      - name: Obter
-                        href: api/unifiedRoleManagementPolicyRule-get.md
-                      - name: Atualizar
-                        href: api/unifiedRoleManagementPolicyRule-update.md
                   - name: Política de emissão de tokens
                     href: resources/tokenissuancepolicy.md
                     items:
@@ -12079,7 +12075,7 @@ items:
                 href: api/messagerule-delete.md
           - name: Propriedades estendidas
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/extended-properties-overview.md
               - name: Propriedades estendidas de valor único
                 items:
@@ -12199,9 +12195,9 @@ items:
             items:
               - name: Criar e enviar uma notificação
                 href: api/user-post-notifications.md
-      - name: Inteligência de pessoas e local de trabalho
+      - name: Inteligência de pessoas e no local de trabalho
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: resources/social-overview.md
           - name: Pessoas
             items:
@@ -12357,7 +12353,7 @@ items:
                     href: api/personname-update.md
                   - name: Excluir
                     href: api/personname-delete.md
-              - name: Observações
+              - name: Notas
                 items:
                   - name: Anotação de pessoa
                     href: resources/personannotation.md
@@ -12553,9 +12549,9 @@ items:
           - name: Análise (visualização)
             href: resources/useranalytics.md
             items:
-              - name: Configurações
+              - name: Settings
                 items:
-                  - name: Configurações
+                  - name: Settings
                     href: resources/settings.md
                   - name: Obter configurações
                     href: api/useranalytics-get-settings.md
@@ -12639,7 +12635,7 @@ items:
                 href: api/contact-delta.md
           - name: Propriedades estendidas
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/extended-properties-overview.md
               - name: Propriedades estendidas de valor único
                 items:
@@ -12661,7 +12657,7 @@ items:
         items:
           - name: Relatórios de atividades do Azure AD
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/azure-ad-auditlog-overview.md
               - name: Auditoria de diretório
                 href: resources/directoryaudit.md
@@ -12684,7 +12680,7 @@ items:
                     href: api/provisioningobjectsummary-list.md
           - name: Relatórios de identidade e acesso
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/report-identity-access.md
               - name: Atividade de aplicativo no AD FS
                 items:
@@ -12707,7 +12703,7 @@ items:
                         href: api/applicationsignindetailedsummary-get.md
               - name: Registro e utilização
                 items:
-                  - name: Visão Geral
+                  - name: Visão geral
                     href: resources/authenticationmethods-usage-insights-overview.md
                   - name: Contagem de Registro de Usuário credencial
                     href: resources/credentialuserregistrationcount.md
@@ -12741,7 +12737,7 @@ items:
                         href: api/authenticationmethodsroot-usersregisteredbymethod.md
           - name: Microsoft 365 de uso
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/report.md
               - name: Uso do dispositivo do Microsoft Teams
                 href: resources/microsoft-teams-device-usage-reports.md
@@ -12965,7 +12961,7 @@ items:
         items:
           - name: Consulta
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/search-api-overview.md
               - name: Tipo de solicitação de pesquisa
                 href: resources/searchrequest.md
@@ -12975,7 +12971,7 @@ items:
                 href: api/search-query.md
           - name: Índice (visualização)
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/indexing-api-overview.md
               - name: Conexão externa
                 items:
@@ -13081,7 +13077,7 @@ items:
                     href: api/informationprotectionlabel-extractlabel.md
               - name: Avaliação de ameaças
                 items:
-                  - name: Visão Geral
+                  - name: Visão geral
                     href: resources/threatassessment-api-overview.md
                   - name: Solicitação de avaliação de ameaças
                     href: resources/threatassessmentrequest.md
@@ -13136,7 +13132,7 @@ items:
             href: resources/security-error-codes.md
       - name: Comunicações e integridade do serviço (visualização)
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: resources/service-communications-api-overview.md
           - name: Comunicado do serviço
             href: resources/serviceannouncement.md
@@ -13178,7 +13174,7 @@ items:
       - name: Sites e listas
         displayName: 'SharePoint, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal'
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: resources/sharepoint.md
           - name: Sites
             items:
@@ -13377,7 +13373,7 @@ items:
       - name: Tarefas e planos
         displayName: Planner
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: resources/planner-overview.md
           - name: Planejar
             href: resources/plannerplan.md
@@ -14021,10 +14017,10 @@ items:
                 href: api/onenote-post-notebooks.md
           - name: Concessões de permissão específicas de recursos
             href: resources/resourcespecificpermissiongrant.md
-      - name: Tarefas To do
+      - name: Tarefas pendentes
         displayName: Microsoft To Do
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: resources/todo-overview.md
           - name: Lista de tarefas
             href: resources/todotasklist.md
@@ -14163,7 +14159,7 @@ items:
                     href: api/outlookcategory-delete.md
               - name: Propriedades estendidas
                 items:
-                  - name: Visão Geral
+                  - name: Visão geral
                     href: resources/extended-properties-overview.md
                   - name: Propriedades estendidas de valor único
                     items:

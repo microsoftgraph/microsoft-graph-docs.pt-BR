@@ -3,12 +3,12 @@ title: Componente Tarefas no microsoft Graph Toolkit
 description: O componente Tarefas permite ao usuário exibir, adicionar, remover, concluir ou editar tarefas. Ele funciona com qualquer tarefa no Microsoft Planner.
 localization_priority: Normal
 author: benotter
-ms.openlocfilehash: 3b3476751798dd5569218ec6acc6d09a91112fe6
-ms.sourcegitcommit: 9ac6bbab3df22e7629cf2bde796b527337c680aa
+ms.openlocfilehash: 35191c778c957c1c9c6c316fb4755b57e6690ff2
+ms.sourcegitcommit: ae83b2b372902268517fd17a8b10d6d9add422af
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53082031"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53334735"
 ---
 # <a name="tasks-component-in-the-microsoft-graph-toolkit"></a>Componente Tarefas no microsoft Graph Toolkit
 
@@ -36,8 +36,8 @@ O exemplo a seguir exibe as tarefas do Microsoft Planner do usuário de logo-in 
 | target-id="planner_id/folder_id"| targetId | Uma ID de cadeia de caracteres para bloquear a interface de tarefas para o planejador ou a ID de pasta fornecida. |
 | target-bucket-id="bucket_id" |targetBucketId  | Uma ID de cadeia de caracteres para bloquear a interface de tarefas na ID de bucket fornecida (Planner Data-Source Only). |
 | group-id | groupId  | Uma ID de cadeia de caracteres para bloquear a interface de tarefas na ID do grupo. |
-| N/A | isNewTaskVisible  | Determina se o novo exibição de tarefa está visível na renderização. |
-| N/A | taskFilter  | Uma função opcional para filtrar quais tarefas são mostradas ao usuário. |
+| N/D | isNewTaskVisible  | Determina se o novo exibição de tarefa está visível na renderização. |
+| N/D | taskFilter  | Uma função opcional para filtrar quais tarefas são mostradas ao usuário. |
 
 O exemplo a seguir mostra apenas tarefas do Planner com a ID *12345* e não permite que o usuário crie novas tarefas.
 
@@ -120,12 +120,12 @@ mgt-tasks {
 
 ## <a name="events"></a>Eventos
 
-| Event | Detalhe | Descrição |
-| --- | --- | --- |
-| `taskAdded` | O detalhe contém o objeto `task` respectivo | Dispara quando uma nova tarefa é criada. |
-| `taskChanged` | O detalhe contém o objeto `task` respectivo | Dispara quando os metadados da tarefa foram alterados, como a marcação concluída. |
-| `taskClick` | O detalhe contém o objeto `task` respectivo | Dispara quando o usuário clica ou toca em uma tarefa. |
-| `taskRemoved` | O detalhe contém o objeto `task` respectivo | Dispara quando uma tarefa existente foi excluída. |
+Evento | Quando é emitido | Dados personalizados | Cancelável | Bolhas | Funciona com modelo personalizado
+------|-------------------|--------------|:-----------:|:---------:|:---------------------------:|
+`taskAdded` | Dispara quando uma nova tarefa é criada | Tarefa recém-criada que pode ser um [plannerTask](/graph/api/resources/plannertask) nosso [outlookTask](/graph/api/resources/outlooktask) | Não | Não | Sim
+`taskChanged` | Dispara quando os metadados da tarefa foram alterados, como a marcação concluída | Tarefa atualizada que pode ser um [plannerTask](/graph/api/resources/plannertask) nosso [outlookTask](/graph/api/resources/outlooktask) | Não | Não | Não
+`taskClick` | Dispara quando o usuário clica ou toca em uma tarefa | `task` com o [plannerTask selecionado](/graph/api/resources/plannertask) nosso [outlookTask](/graph/api/resources/outlooktask) | Não | Não | Não
+`taskRemoved` | Dispara quando uma tarefa existente foi excluída | `task` com o [plannerTask selecionado](/graph/api/resources/plannertask) nosso [outlookTask](/graph/api/resources/outlooktask) | Não | Não | Não
 
 Para obter mais informações sobre como lidar com eventos, consulte [eventos](../customize-components/events.md).
 

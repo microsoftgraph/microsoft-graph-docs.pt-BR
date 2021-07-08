@@ -3,12 +3,12 @@ title: Microsoft Teams Componente selador de canal no Microsoft Graph Toolkit
 description: Você pode usar o mgt-teams-channel-picker para pesquisar canais e equipes associadas ao usuário no microsoft Graph.
 localization_priority: Normal
 author: vogtn
-ms.openlocfilehash: ad196cc17b70f42cd571bf5805e2aa4eb2cfe90e
-ms.sourcegitcommit: 9ac6bbab3df22e7629cf2bde796b527337c680aa
+ms.openlocfilehash: cd27db315de6b46c10c18e300ddb899ea042e428
+ms.sourcegitcommit: ae83b2b372902268517fd17a8b10d6d9add422af
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53082024"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53334728"
 ---
 # <a name="microsoft-teams-channel-picker-component-in-the-microsoft-graph-toolkit"></a>Microsoft Teams Componente selador de canal no Microsoft Graph Toolkit
 
@@ -78,21 +78,20 @@ mgt-teams-channel-picker {
 
 ## <a name="events"></a>Eventos
 
-| Event | Detalhe | Descrição |
-| --- | --- | --- |
-| `selectionChanged` | O detalhe contém o item selecionado no momento do `{channel : ` [MicrosoftGraph.Channel](/graph/api/resources/channel) `, team: ` [MicrosoftGraph.Team](/graph/api/resources/team)`}` | Acionado quando o usuário faz uma alteração na seleção de um canal. |
+Evento | Quando é emitido | Dados personalizados | Cancelável | Bolhas | Funciona com modelo personalizado
+------|-------------------|--------------|:-----------:|:---------:|:---------------------------:|
+`selectionChanged` | Disparado quando o usuário faz uma alteração na seleção de um canal | O item selecionado no momento como equipe `{ channel: ` [de](/graph/api/resources/channel) `, team: ` [canal](/graph/api/resources/team)`}` | Não | Não | Sim
 
 Para obter mais informações sobre como lidar com eventos, consulte [eventos](../customize-components/events.md).
 
 ## <a name="templates"></a>Modelos
 
- `mgt-teams-channel-picker` oferece suporte [a vários modelos](../customize-components/templates.md) que você pode usar para substituir determinadas partes do componente. Para especificar um modelo, inclua um elemento dentro de um componente e de definir o `<template>` valor como um dos `data-type` seguintes.
+`mgt-teams-channel-picker` oferece suporte [a vários modelos](../customize-components/templates.md) que você pode usar para substituir determinadas partes do componente. Para especificar um modelo, inclua um elemento dentro de um componente e de definir o `<template>` valor como um dos `data-type` seguintes.
 
 | Tipo de dados | Contexto de dados | Descrição |
 | --- | --- | --- |
 | loading | null: sem dados | O modelo usado para renderizar o estado do selador enquanto a solicitação à Microsoft Graph está sendo feita. |
 | erro | null: sem dados| O modelo usado se a pesquisa do usuário não retornar usuários. |
-
 
 O exemplo a seguir mostra como usar o `error` modelo.
 

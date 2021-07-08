@@ -5,12 +5,12 @@ localization_priority: Normal
 author: nmoreau
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 7f83ce0b5cf4565897245647a0e1f41e428b8e1d
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: f2e3fa1aff81051820fda4444a55d9916e99128b
+ms.sourcegitcommit: ae83b2b372902268517fd17a8b10d6d9add422af
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52786748"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53334574"
 ---
 # <a name="searchentity-query"></a>searchEntity: consulta
 
@@ -22,7 +22,7 @@ Executa a consulta especificada no corpo da solicitação. Os resultados da pesq
 
 [!INCLUDE [search-api-deprecation](../../includes/search-api-deprecation.md)]
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference). 
 
@@ -159,14 +159,15 @@ Content-type: application/json
 ```
 
 ## <a name="see-also"></a>Confira também
+
 - Pesquisar [mensagens de email](/graph/search-concept-messages)
 - Eventos [de calendário de pesquisa](/graph/search-concept-events)
+- Pessoa [de pesquisa](/graph/search-concept-person)
 - Pesquisar conteúdo em SharePoint e OneDrive ([arquivos, listas e sites](/graph/search-concept-files))
 - Pesquisar [tipos personalizados (Graph conectores)](/graph/search-concept-custom-types) dados
 - [Classificar resultados](/graph/search-concept-sort) da pesquisa
 - Usar [agregação para](/graph/search-concept-aggregations) refinar resultados de pesquisa
 - [Habilitar correções ort](/graph/search-concept-speller) spell nos resultados da pesquisa
-
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
@@ -177,5 +178,3 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
-
-
