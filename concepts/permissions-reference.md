@@ -4,12 +4,12 @@ description: O Microsoft Graph expõe as permissões granulares que controlam o 
 author: jackson-woods
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 6460c9de594a84b21d2f7c3898291705aaf665a5
-ms.sourcegitcommit: 0ca0a1e2810701c2392e5c685e984fbfb6785579
+ms.openlocfilehash: 3f16aa9536fa780022cd596e849539488a7ff92d
+ms.sourcegitcommit: 4888ac7504533344c4fc6828e2a06a002a1d72d3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2021
-ms.locfileid: "53151605"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53350674"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Referência de permissões do Microsoft Graph
 
@@ -1500,7 +1500,7 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 | Permissão | Exibir Cadeia de Caracteres | Descrição | Consentimento Obrigatório do Administrador | Suporte da conta da Microsoft |
 |:---------- |:-------------- |:----------- |:---------------------- |:----------------- |
 | _PrivilegedAccess.ReadWrite.AzureAD_ |Ler e gravar dados do Privileged Identity Management para diretório  | Permite que o aplicativo tenha acesso de leitura e gravação nas APIs do Privileged Identity Management do Azure AD. | Sim | Não |
-| _PrivilegedAccess.ReadWrite.AzureADGroups_ |Leitura e escrita de dados do Privileged Identity Management para grupos de acesso privilegiado | Permite que o aplicativo tenha acesso de leitura e escrita às APIs de Privileged Identity Management para grupos. | Sim | Não |
+| _PrivilegedAccess.ReadWrite.AzureADGroup_ |Leitura e escrita de dados do Privileged Identity Management para grupos de acesso privilegiado | Permite que o aplicativo tenha acesso de leitura e escrita às APIs de Privileged Identity Management para grupos. | Sim | Não |
 | _PrivilegedAccess.ReadWrite.AzureResources_ |Ler e gravar dados Privileged Identity Management de recursos do Azure | Permite que o aplicativo tenha acesso de leitura e gravação nas APIs do Privileged Identity Management dos recursos do Azure. | Sim | Não |
 
 #### <a name="application-permissions"></a>Permissões de aplicativos
@@ -1508,7 +1508,7 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 | Permissão | Exibir Cadeia de Caracteres | Descrição | Consentimento Obrigatório do Administrador |
 |:---------- |:-------------- |:----------- |:---------------------- |
 | _PrivilegedAccess.Read.AzureAD_ |Leitura do Privileged Identity Management para Diretório  | Permite que o aplicativo tenha acesso de leitura às APIs do Privileged Identity Management para o Microsoft Azure AD. | Sim |
-| _PrivilegedAccess.Read.AzureADGroups_ |Leitura do Privileged Identity Management para grupos de acesso privilegiado | Permite que o aplicativo tenha acesso de leitura às APIs do Privileged Identity Management para grupos. | Sim |
+| _PrivilegedAccess.Read.AzureADGroup_ |Leitura do Privileged Identity Management para grupos de acesso privilegiado | Permite que o aplicativo tenha acesso de leitura às APIs do Privileged Identity Management para grupos. | Sim |
 | _PrivilegedAccess.Read.AzureADResources_ |Leitura do Privileged Identity Management para recursos do Azure | Permite que o aplicativo tenha acesso de leitura às APIs do Privileged Identity Management para os recursos do Microsoft Azure AD. | Sim |
 
 ---

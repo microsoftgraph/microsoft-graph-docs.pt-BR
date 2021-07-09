@@ -5,12 +5,12 @@ author: simonhult
 localization_priority: Priority
 ms.prod: insights
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 501e051fa63d2b68952a7c346f8c21dab34f5d8e
-ms.sourcegitcommit: d586ddb253d27f9ccb621bd128f6a6b4b1933918
+ms.openlocfilehash: d9026a93ed8db63bec26dbbfc755b1b6a5799836
+ms.sourcegitcommit: 4888ac7504533344c4fc6828e2a06a002a1d72d3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53108842"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53350907"
 ---
 # <a name="customizing-item-insights-privacy-in-microsoft-graph-preview"></a>Personalizando a privacidade das informações do item no Microsoft Graph (visualização)
 
@@ -41,7 +41,7 @@ As configurações das informações do item fornecem flexibilidade para os admi
 A próxima seção descreve o uso do centro administrativo, e é seguida pela seção sobre PowerShell cmdlets. Se você estiver usando o REST API, pule as duas próximas seções e continue com [Configure as percepções do item usando o REST API](#configure-item-insights-using-rest-api). Em seguida, confira as operações REST [ler](/graph/api/iteminsightssettings-get?view=graph-rest-beta&preserve-view=true) ou [atualizar](/graph/api/iteminsightssettings-update?view=graph-rest-beta&preserve-view=true) para obter mais informações.
 
 ### <a name="how-to-configure-item-insights-settings-via-microsoft-admin-center"></a>Como configurar as configurações de item de insights através do centro administrativo da Microsoft?
-Um administrador com o _papel de administrador global_ pode afinar as configurações de privacidade dos itens através de botões de alternância. Para fazer isso, no centro administrativo Micrsofot 365, expandir **Configurações**, selecionar **Busca e inteligência**, e em **Percepções de tempo**, escolher **Alterar configurações**.
+Um administrador com o _papel de administrador global_ pode afinar as configurações de privacidade dos itens através de botões de alternância. Para fazer isso, no Centro de administração do Microsoft 365, expanda **Configurações**, selecione **Pesquisa e inteligência** e, em **Informações do item**, escolha **Alterar configurações**.
 ![imagem](https://user-images.githubusercontent.com/54312959/117024482-b39eca00-ad02-11eb-9a11-e6a01039822e.png)
 
 

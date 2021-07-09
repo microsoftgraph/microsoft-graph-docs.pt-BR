@@ -4,12 +4,12 @@ description: Os objetos do diretório Microsoft Azure Active Directory suportam 
 author: Licantrop0
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 7ecd514de1d1be4fea7606b62ca7060e6c15ba08
-ms.sourcegitcommit: d0d2d17a31cbcb01b1ae18bd6a18c39d7077069a
+ms.openlocfilehash: e8a6c4a3a2d37eafeaee85f7778baa68bad97357
+ms.sourcegitcommit: 4888ac7504533344c4fc6828e2a06a002a1d72d3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53118644"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53351283"
 ---
 # <a name="advanced-query-capabilities-on-azure-ad-directory-objects"></a>Recursos avançados de consulta nos objetos do diretório Microsoft Azure Active Directory
 
@@ -47,7 +47,7 @@ Estes recursos avançados de consulta são suportados apenas em objetos Microsof
 - [device](/graph/api/resources/device)
 - [group](/graph/api/resources/group)
 - [servicePrincipal](/graph/api/resources/serviceprincipal)
-- [usuários](/graph/api/resources/user)
+- [user](/graph/api/resources/user)
 
 A tabela a seguir lista cenários de consulta em objetos de diretório que são suportados apenas em consultas avançadas.
 
@@ -73,7 +73,7 @@ A tabela a seguir lista cenários de consulta em objetos de diretório que são 
 
 As propriedades dos objetos de diretório se comportam de forma diferente em seu suporte aos parâmetros de consulta. Os cenários a seguir são comuns para objetos de diretório:
 
-+ Propriedades com o mesmo nome em todos os recursos do diretório suportam os mesmos `$filter` operadores. Por exemplo, a propriedade **createdDateTime** está disponível no **aplicação**, **grupo**, **organização**, e **usuário** recursos. Ele suporta os operadores `eq`, `ge`, e `le` por padrão e os operadores `in`, `ne`, e `NOT` apenas em consultas avançadas.
++ Salvo indicação em contrário, as propriedades com o mesmo nome nos recursos de diretório suportam os mesmos operadores `$filter`. Por exemplo, a propriedade **createdDateTime** está disponível no **aplicação**, **grupo**, **organização**, e **usuário** recursos. Ele suporta os operadores `eq`, `ge`, e `le` por padrão e os operadores `in`, `ne`, e `NOT` apenas em consultas avançadas.
 + O `endsWith` operador é suportado apenas em **email** e **userPrincipalNameerPrincipalName** propriedades.
 + Consultas que são suportadas por padrão também funcionarão em consultas avançadas.
 + Os operadores `NOT` e `ne` de negação são suportados apenas em consultas avançadas. 
