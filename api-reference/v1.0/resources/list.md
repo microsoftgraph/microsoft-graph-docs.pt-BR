@@ -6,12 +6,12 @@ localization_priority: Priority
 ms.prod: sharepoint
 description: O recurso de lista representa uma lista em um site.
 doc_type: resourcePageType
-ms.openlocfilehash: 4079320ef785dbdb3c1367fad92cda46eab0b4fa
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: 0f7c8600b8a4d8f41e6dd6e6ad4240252c004bbf
+ms.sourcegitcommit: ada6eab637b9b318129aefb98edbe7316399d9ba
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50239363"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53317004"
 ---
 # <a name="list-resource"></a>Recurso List
 
@@ -26,7 +26,7 @@ As tarefas a seguir estão disponíveis para os recursos list.
 **Observação:** esta versão beta só permite navegar por listas, não criar ou atualizá-las.
 Você pode, no entanto, criar ou atualizar [itens de lista][listItem].
 
-Todos os exemplos a seguir referem-se a um site: `https://graph.microsoft.com/v1.0/sites/{site-id}`.
+Todos os exemplos abaixo são relativos a um site, por exemplo, `https://graph.microsoft.com/v1.0/sites/{site-id}`.
 
 | Tarefa comum               | Método HTTP
 |:--------------------------|:------------------------------
@@ -58,7 +58,7 @@ Veja a seguir uma representação JSON de um recurso **list**.
   ],
   "keyProperty": "id",
   "baseType": "microsoft.graph.baseItem",
-  "@odata.type": "microsoft.graph.list"
+  "@odata.type&quot;: &quot;microsoft.graph.list"
 }-->
 
 ```json
@@ -71,7 +71,7 @@ Veja a seguir uma representação JSON de um recurso **list**.
   "list": {
     "@odata.type": "microsoft.graph.listInfo",
     "hidden": false,
-    "template": "documentLibrary | genericList | survey | links | announcements | contacts | accessRequest ..."
+    "template&quot;: &quot;documentLibrary | genericList | survey | links | announcements | contacts | accessRequest ..."
   },
   "system": false,
   "subscriptions": [ {"@odata.type": "microsoft.graph.subscription"} ],
@@ -87,7 +87,7 @@ Veja a seguir uma representação JSON de um recurso **list**.
   "lastModifiedDateTime": "timestamp",
   "parentReference": { "@odata.type": "microsoft.graph.itemReference" },
   "sharepointIds": { "@odata.type": "microsoft.graph.sharepointIds" },
-  "webUrl": "url to visit the list in a browser"
+  "webUrl&quot;: &quot;url to visit the list in a browser"
 }
 ```
 
@@ -99,7 +99,7 @@ O recurso **list** tem as seguintes propriedades.
 |:-----------------|:---------------------------------|:---------------------------
 | **displayName**  | string                           | O título em exibição da lista.
 | **list**         | [listInfo][]                     | Fornece mais detalhes sobre a lista.
-| **system**       | [systemFacet][]                  | Se estiver presente, indica que se trata de uma lista gerenciada pelo sistema. Somente leitura.
+| **system**       | [systemFacet][]                  | Se presente, indica que esta é uma lista gerenciada pelo sistema. Somente leitura.
 
 As propriedades a seguir são herdadas do **[baseItem][]**.
 
@@ -107,11 +107,11 @@ As propriedades a seguir são herdadas do **[baseItem][]**.
 |:-------------------------|:------------------|:------------------------------
 | **id**                   | string            | O identificador exclusivo do item. Somente leitura.
 | **name**                 | string            | O nome do item.
-| **createdBy**            | [identitySet][]   | Identidade do criador desse item. Somente leitura.
+| **createdBy**            | [identitySet][]   | Identidade do criador deste item. Somente leitura.
 | **createdDateTime**      | DateTimeOffset    | A data e a hora da criação do item. Somente leitura.
 | **description**          | string            | O texto descritivo do item.
 | **eTag**                 | string            | ETag do item. Somente leitura.                                                          |
-| **lastModifiedBy**       | [identitySet][]   | Identidade da última pessoa que alterou esse item. Somente leitura.
+| **lastModifiedBy**       | [identitySet][]   | Identidade do último modificador deste item. Somente leitura.
 | **lastModifiedDateTime** | DateTimeOffset    | A data e a hora que o item foi modificado pela última vez. Somente leitura.
 | **parentReference**      | [itemReference][] | Informações do pai, se o item tiver um pai. Leitura e gravação.
 | **sharepointIds**        | [sharepointIds][] | Retorna os identificadores úteis para fins de compatibilidade do REST do SharePoint. Somente leitura.
@@ -150,7 +150,7 @@ O recurso **list** tem as seguintes relações com outros recursos.
   "section": "documentation",
   "tocPath": "Resources/Lists",
   "tocBookmarks": {
-    "Lists": "#"
+    "Lists&quot;: &quot;#"
   }
 } -->
 

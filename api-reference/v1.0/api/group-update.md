@@ -5,12 +5,12 @@ author: Jordanndahl
 localization_priority: Priority
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 89ba1ec44f41abe1309355c47daeabdd6603ca25
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 7064d412b776f33c30b87dde34d79a167aa6a636
+ms.sourcegitcommit: ada6eab637b9b318129aefb98edbe7316399d9ba
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52787559"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53317088"
 ---
 # <a name="update-group"></a>Atualizar grupo
 
@@ -60,7 +60,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 > **Observação:**
 >
-> - Você pode atualizar o **autoSubscribeNewMembers** e **autoSubscribeNewMembers** especificando-os em sua própria solicitação de PATCH, sem incluir as outras propriedades na tabela acima.
+> - Para atualizar as seguintes propriedades específicas do Exchange, você deve especificá-las em sua própria solicitação PATCH, sem incluir as outras propriedades listadas na tabela acima: **allowExternalSenders**, **autoSubscribeNewMembers**, **hideFromAddressLists**, **hideFromOutlookClients**, **isSubscribedByMail**, **unseenCount**.
 > - Apenas um subconjunto da API de grupo relacionado à administração do grupo principal e ao aplicativo de suporte para gerenciamento às permissões delegadas. Todos os outros membros da API do grupo, inclusive a atualização **autoSubscribeNewMembers**, dão suporte apenas a permissões delegadas. Confira exemplos nos [problemas conhecidos](/graph/known-issues#groups).
 > - As regras para atualizar os grupos de segurança habilitados para email no Microsoft Exchange Server podem ser complexas; Para saber mais, confira [Gerenciar grupos de segurança habilitados para email no Exchange Server](/Exchange/recipients/mail-enabled-security-groups?view=exchserver-2019).
 
@@ -85,17 +85,15 @@ Este é um exemplo de solicitação.
 ```http
 PATCH https://graph.microsoft.com/v1.0/groups/{id}
 Content-type: application/json
-Content-length: 211
 
 {
-  "description": "description-value",
-  "displayName": "displayName-value",
+  "description": "Library Assist",
+  "displayName": "Library Assist",
   "groupTypes": [
-    "groupTypes-value"
+    "Unified"
   ],
-  "mail": "mail-value",
   "mailEnabled": true,
-  "mailNickname": "mailNickname-value"
+  "mailNickname": "library-help"
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)

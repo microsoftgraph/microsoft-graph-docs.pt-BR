@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: aafcc34d288dcce1bcd0970802472a2e2e565e83
-ms.sourcegitcommit: ada6eab637b9b318129aefb98edbe7316399d9ba
+ms.openlocfilehash: a7587bf4dea653b86b4f93632e5719bcec4aaaaa
+ms.sourcegitcommit: 4888ac7504533344c4fc6828e2a06a002a1d72d3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/07/2021
-ms.locfileid: "53317200"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53351101"
 ---
 # <a name="create-unifiedroleassignment"></a>Criar unifiedRoleAssignment
 
@@ -24,10 +24,21 @@ Crie um novo [objeto unifiedRoleAssignment.](../resources/unifiedroleassignment.
 
 Dependendo do provedor RBAC e do tipo de permissão (delegado ou aplicativo) necessário, escolha na tabela a seguinte permissão com menos privilégios necessária para chamar essa API. Para saber mais, incluindo [tomar cuidado](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) antes de escolher as permissões mais privilegiadas, pesquise as seguintes permissões em [Permissões](/graph/permissions-reference).
 
-|Provedor com suporte      | Delegado (conta corporativa ou de estudante)  | Delegada (conta pessoal da Microsoft) | Aplicativo |
-|:-----------------------|:------------------------------------|:---------------------------------------|:------------|
-| Diretório | RoleManagement.ReadWrite.Directory | Sem suporte.| RoleManagement.ReadWrite.Directory |
-| Gerenciamento de direitos | EntitlementManagement.ReadWrite.All | Sem suporte. | Sem suporte. |
+### <a name="for-directory-azure-ad-provider"></a>Provedor do Azure AD (Diretório)
+
+|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegado (conta corporativa ou de estudante) |  RoleManagement.ReadWrite.Directory   |
+|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
+|Application | RoleManagement.ReadWrite.Directory |
+
+### <a name="for-entitlement-management-provider"></a>Para provedor de gerenciamento de direitos
+
+|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegado (conta corporativa ou de estudante) |  EntitlementManagement.ReadWrite.All   |
+|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
+|Aplicativo | Sem suporte. |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -56,7 +67,7 @@ POST /roleManagement/entitlementManagement/roleAssignments
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, fornece uma representação JSON do [objeto unifiedRoleAssignment.](../resources/unifiedroleassignment.md) A solicitação deve ter um escopo definido no Azure AD, como , ou um `directoryScopeId` escopo específico do aplicativo, como `appScopeId` . Exemplos de escopo do Azure AD são locatários ("/"), unidades administrativas ou aplicativos. Para obter mais informações, consulte [appScope](../resources/appscope.md).
+No corpo da solicitação, fornece uma representação JSON de um [objeto unifiedRoleAssignment.](../resources/unifiedroleassignment.md) A solicitação deve ter um escopo definido no Azure AD, como **directoryScopeId** ou um escopo específico do aplicativo, como **appScopeId**. Exemplos de escopos do Azure AD são locatário ("/"), unidades administrativas ou aplicativos. O gerenciamento de direitos usa escopos de catálogo de pacotes de locatários ("/") e de acesso. Para obter mais informações, consulte [appScope](../resources/appscope.md).
 
 ## <a name="response"></a>Resposta
 
@@ -200,6 +211,55 @@ Content-type: application/json
 }
 ```
 
+
+### <a name="example-3-create-a-role-assignment-at-access-package-catalog-scope"></a>Exemplo 3: Criar uma atribuição de função no escopo do catálogo de pacotes de acesso
+
+#### <a name="request"></a>Solicitação
+
+Este é um exemplo de solicitação.
+
+<!-- {
+  "blockType": "request",
+  "name": "create_unifiedroleassignment3_from_rbacapplication"
+}-->
+
+```http
+POST https://graph.microsoft.com/beta/roleManagement/entitlementManagement/roleAssignments
+Content-type: application/json
+
+{
+    "principalId": "679a9213-c497-48a4-830a-8d3d25d94ddc",
+    "roleDefinitionId": "ae79f266-94d4-4dab-b730-feca7e132178",
+    "appScopeId": "/AccessPackageCatalog/beedadfe-01d5-4025-910b-84abb9369997"
+}
+```
+
+#### <a name="response"></a>Resposta
+
+Este é um exemplo de resposta.
+
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.unifiedRoleAssignment"
+} -->
+
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#roleManagement/entitlementManagement/roleAssignments/$entity",
+    "id": "f3092518-7874-462e-93e9-0cd6c11ffc52",
+    "principalId": "679a9213-c497-48a4-830a-8d3d25d94ddc",
+    "roleDefinitionId": "ae79f266-94d4-4dab-b730-feca7e132178",
+    "appScopeId": "/AccessPackageCatalog/beedadfe-01d5-4025-910b-84abb9369997"
+}
+```
+
+
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
 <!-- {
@@ -209,5 +269,4 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
-
 

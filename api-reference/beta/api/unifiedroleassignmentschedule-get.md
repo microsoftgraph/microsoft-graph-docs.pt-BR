@@ -5,12 +5,12 @@ author: shauliu
 localization_priority: Normal
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: ab460a395fe535928fb590e367bb008174d70c43
-ms.sourcegitcommit: ae83b2b372902268517fd17a8b10d6d9add422af
+ms.openlocfilehash: 939ae40260ed127fe36089db5874c7c880b8f8d4
+ms.sourcegitcommit: 4888ac7504533344c4fc6828e2a06a002a1d72d3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "53334469"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53351017"
 ---
 # <a name="get-unifiedroleassignmentschedule"></a>Obter unifiedRoleAssignmentSchedule
 Namespace: microsoft.graph
@@ -62,7 +62,7 @@ Se tiver êxito, este método retornará um código de resposta e um `200 OK` [o
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/directory/roleAssignmentSchedules/b1477448-2cc6-4ceb-93b4-54a202a89413
+GET https://graph.microsoft.com/beta/roleManagement/directory/roleAssignmentSchedules/b1477448-2cc6-4ceb-93b4-54a202a89413
 ```
 
 

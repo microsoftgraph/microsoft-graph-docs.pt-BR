@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: governance
 author: shauliu
-ms.openlocfilehash: 96b089c52e8fabacd87223795a68e1b6f011db0e
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: ef30468664dd64dc09d9cfb352d514a395368698
+ms.sourcegitcommit: 4888ac7504533344c4fc6828e2a06a002a1d72d3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52786971"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53350870"
 ---
 # <a name="update-governanceroleassignmentrequests"></a>Atualizar governançaRoleAssignmentRequests
 
@@ -20,22 +20,22 @@ Namespace: microsoft.graph
 
 Permitir que os administradores atualizem suas decisões ( ou ) sobre `AdminApproved` `AdminDenied` [governançaRoleAssignmentRequests](../resources/governanceroleassignmentrequest.md) que estão em status de `PendingAdminDecision` .
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference#privileged-access-permissions).
 
 >**Observação:** Essa API também exige que o solicitante tenha pelo menos uma atribuição de função de administrador ( ou ) no recurso ao qual a `Active` `owner` `user access administrator` [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md) pertence. 
 
 ### <a name="azure-resources"></a>Recursos do Azure
 
-| Tipo de permissão | Permissions |
+| Tipo de permissão | Permissões |
 |:--------------- |:----------- |
 | Delegada (conta corporativa ou de estudante) | PrivilegedAccess.ReadWrite.AzureResources |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo | Sem suporte. |
 
-### <a name="azure-ad"></a>Azure Active Directory
+### <a name="azure-ad"></a>Azure AD
 
-| Tipo de permissão | Permissions |
+| Tipo de permissão | Permissões |
 |:--------------- |:----------- |
 | Delegada (conta corporativa ou de estudante) | PrivilegedAccess.ReadWrite.AzureAD |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
@@ -43,9 +43,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 ### <a name="groups"></a>Grupos
 
-|Tipo de permissão | Permissions |
+|Tipo de permissão | Permissões |
 |:-------------- |:----------- |
-| Delegada (conta corporativa ou de estudante) | PrivilegedAccess.ReadWrite.AzureADGroups |
+| Delegada (conta corporativa ou de estudante) | PrivilegedAccess.ReadWrite.AzureADGroup |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo | Sem suporte. |
 
@@ -65,10 +65,10 @@ POST /privilegedAccess/azureResources/roleAssignmentRequests/{id}/updateRequest
 
 |Parâmetros      |Tipo                   |Obrigatório |Descrição|
 |:-------------|:----------------------|:--------|:----------|
-|motivo        |String                 |✓        |O motivo fornecido pelo administrador para sua decisão.|
-|decision        |String                 |✓        |A decisão do administrador da solicitação de atribuição de função. O valor deve ser atualizado como `AdminApproved` ou `AdminDenied` .|
+|motivo        |Cadeia de caracteres                 |✓        |O motivo fornecido pelo administrador para sua decisão.|
+|decision        |Cadeia de caracteres                 |✓        |A decisão do administrador da solicitação de atribuição de função. O valor deve ser atualizado como `AdminApproved` ou `AdminDenied` .|
 |Cronograma      |[governanceSchedule](../resources/governanceschedule.md)|        | O cronograma da solicitação de atribuição de função. Para o status `AdminApproved` de , é necessário.|
-|assignmentState      |String|         | O estado da atribuição e os valores podem `Eligible` ser ou `Active` . Para a decisão `AdminApproved` de , é necessário. |
+|assignmentState      |Cadeia de caracteres|         | O estado da atribuição e os valores podem `Eligible` ser ou `Active` . Para a decisão `AdminApproved` de , é necessário. |
 ### <a name="response"></a>Resposta
 Esse método só pode ser aplicado a solicitações que estão em status de `PendingAdminDecision` .
 

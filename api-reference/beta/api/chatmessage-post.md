@@ -5,12 +5,12 @@ localization_priority: Normal
 author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 775f2935527bd69a1eba88e9b86d2b8f161d8422
-ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
+ms.openlocfilehash: 58af5006d1a12fd957d73b3d1e81c282b57c2be9
+ms.sourcegitcommit: 4888ac7504533344c4fc6828e2a06a002a1d72d3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53207996"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53351150"
 ---
 # <a name="send-chatmessage-in-a-channel-or-a-chat"></a>Enviar chatMessage em um canal ou chat
 
@@ -298,7 +298,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-3-send-message-containing-cards"></a>Exemplo 3: Enviar mensagem contendo cartões
+### <a name="example-3-send-message-that-contains-cards"></a>Exemplo 3: Enviar mensagem que contém cartões
 
 #### <a name="request"></a>Solicitação
 Este é um exemplo de solicitação.

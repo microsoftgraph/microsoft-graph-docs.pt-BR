@@ -5,14 +5,15 @@ author: Alice-at-Microsoft
 localization_priority: Normal
 ms.prod: w10
 doc_type: apiPageType
-ms.openlocfilehash: 81404ad4807f045b75b3b161ec361f06b622f78b
-ms.sourcegitcommit: 2a35434fabc76672e21bfc3ed5a1d28f9f3b66bc
+ms.openlocfilehash: 1b948e644628eedc08fe470641b612501dfb80af
+ms.sourcegitcommit: 4888ac7504533344c4fc6828e2a06a002a1d72d3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52240571"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53351115"
 ---
 # <a name="deploymentaudience-updateaudiencebyid"></a>deploymentAudience: updateAudienceById
+
 Namespace: microsoft.graph.windowsUpdates
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -25,14 +26,17 @@ Se o mesmo [updatableAsset](../resources/windowsupdates-updatableasset.md)  for 
 
 Você também pode usar o [método updateAudience](windowsupdates-deploymentaudience-updateaudience.md) para atualizar **a deploymentAudience**.
 
+> [!NOTE]
+> Essa API tem um [problema conhecido relacionado](/Graph/known-issues#accessing-and-updating-deployment-audiences) a implantações criadas por meio do Intune.
+
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|WindowsUpdates.ReadWrite.All|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|WindowsUpdates.ReadWrite.All|
+|Delegado (conta corporativa ou de estudante)|WindowsUpdates.ReadWrite.All|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Application|WindowsUpdates.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -58,10 +62,10 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta ação.
 |Parâmetro|Tipo|Descrição|
 |:---|:---|:---|
 |memberEntityType|Cadeia de caracteres|O tipo completo dos ativos atualizáveis. Os valores possíveis são: `#microsoft.graph.windowsUpdates.azureADDevice` e `#microsoft.graph.windowsUpdates.updatableAssetGroup`.|
-|addMembers|Coleção de cadeias de caracteres|Lista de identificadores correspondentes aos ativos atualizáveis a adicionar como membros da audiência de implantação.|
-|removeMembers|Coleção de cadeias de caracteres|Lista de identificadores correspondentes aos ativos atualizáveis a ser removidos como membros da audiência de implantação.|
-|addExclusions|Coleção de cadeias de caracteres|Lista de identificadores correspondentes aos ativos atualizáveis para adicionar como exclusões do público de implantação.|
-|removeExclusions|Coleção de cadeias de caracteres|Lista de identificadores correspondentes aos ativos atualizáveis para remover como exclusões do público de implantação.|
+|addMembers|Conjunto de cadeias de caracteres|Lista de identificadores correspondentes aos ativos atualizáveis a adicionar como membros da audiência de implantação.|
+|removeMembers|Conjunto de cadeias de caracteres|Lista de identificadores correspondentes aos ativos atualizáveis a ser removidos como membros da audiência de implantação.|
+|addExclusions|Conjunto de cadeias de caracteres|Lista de identificadores correspondentes aos ativos atualizáveis para adicionar como exclusões do público de implantação.|
+|removeExclusions|Conjunto de cadeias de caracteres|Lista de identificadores correspondentes aos ativos atualizáveis para remover como exclusões do público de implantação.|
 
 
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: governance
 author: shauliu
-ms.openlocfilehash: 4883fedc71cfdcc6c50ab87b46299fdb173552a5
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: babca9a53ad10d5b029fdbdd4119220d143b779a
+ms.sourcegitcommit: 4888ac7504533344c4fc6828e2a06a002a1d72d3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50950742"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53350905"
 ---
 # <a name="create-governanceroleassignmentrequest"></a>Criar governanceRoleAssignmentRequest
 
@@ -56,7 +56,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão | Permissões |
 |:-------------- |:----------- |
-| Delegada (conta corporativa ou de estudante) | PrivilegedAccess.ReadWrite.AzureADGroups |
+| Delegada (conta corporativa ou de estudante) | PrivilegedAccess.ReadWrite.AzureADGroup |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo | Sem suporte. |
 
@@ -124,7 +124,7 @@ Neste exemplo, um administrador atribui nawu@contoso.com usuário à função Le
 | subjectId        | Cadeia de caracteres                                                   | Sim                      | \<subjectId\> |
 | assignmentState  | Cadeia de caracteres                                                   | Sim                      | Qualificado / Ativo |
 | tipo             | Cadeia de caracteres                                                   | Sim                      | AdminAdd |
-| motivo           | Cadeia de caracteres                                                   | depende das configurações de função |   |
+| motivo           | Cadeia de caracteres                                                   | depende da função Configurações |   |
 | Cronograma         | [governanceSchedule](../resources/governanceschedule.md) | Sim                      |   |
 
 #### <a name="request"></a>Solicitação
@@ -234,9 +234,9 @@ Neste exemplo, o usuário nawu@contoso.com ativa a função leitor de cobrança 
 | resourceId       | Cadeia de caracteres                                                   | Sim                      | \<resourceId\> |
 | roleDefinitionId | Cadeia de caracteres                                                   | Sim                      | \<roleDefinitionId\> |
 | subjectId        | Cadeia de caracteres                                                   | Sim                      | \<subjectId\> |
-| assignmentState  | Cadeia de caracteres                                                   | Sim                      | Ativa |
+| assignmentState  | Cadeia de caracteres                                                   | Sim                      | Ativo |
 | tipo             | Cadeia de caracteres                                                   | Sim                      | UserAdd |
-| motivo           | Cadeia de caracteres                                                   | depende das configurações de função |   |
+| motivo           | Cadeia de caracteres                                                   | depende da função Configurações |   |
 | Cronograma         | [governanceSchedule](../resources/governanceschedule.md) | Sim                      |   |
 
 #### <a name="request"></a>Solicitação
@@ -357,7 +357,7 @@ Neste exemplo, o usuário nawu@contoso.com desativa a função leitor de cobran�
 | resourceId       | Cadeia de caracteres                                                   | Sim      | \<resourceId\> |
 | roleDefinitionId | Cadeia de caracteres                                                   | Sim      | \<roleDefinitionId\> |
 | subjectId        | Cadeia de caracteres                                                   | Sim      | \<subjectId\> |
-| assignmentState  | Cadeia de caracteres                                                   | Sim      | Ativa |
+| assignmentState  | Cadeia de caracteres                                                   | Sim      | Ativo |
 | tipo             | Cadeia de caracteres                                                   | Sim      | UserRemove |
 | motivo           | Cadeia de caracteres                                                   | Não       |   |
 | Cronograma         | [governanceSchedule](../resources/governanceschedule.md) | Não       |   |

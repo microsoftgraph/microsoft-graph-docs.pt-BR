@@ -5,12 +5,12 @@ author: AshleyYangSZ
 localization_priority: Normal
 ms.prod: cloud-pc
 doc_type: resourcePageType
-ms.openlocfilehash: 0323ee64056df1019cc2a8f6e2bd004ffec223b7
-ms.sourcegitcommit: 2d0daa446c7b37ced1d214e0c6e18e2b8243bb09
+ms.openlocfilehash: b1b1010c22bed8de73b5d3fa2caf680f26091d00
+ms.sourcegitcommit: 4888ac7504533344c4fc6828e2a06a002a1d72d3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/18/2021
-ms.locfileid: "53010196"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53351087"
 ---
 # <a name="cloudpconpremisesconnectionhealthcheck-resource-type"></a>Tipo de recurso cloudPcOnPremisesConnectionHealthCheck
 
@@ -26,7 +26,7 @@ O resultado de uma verificação de saúde de conexão local do computador na nu
 
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
-|[RunHealthChecks de cloudPcOnPremisesConnection](../api/cloudpconpremisesconnection-runhealthcheck.md)|Nenhum|Execute as verificações de saúde de [um cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md).|
+|[RunHealthChecks de cloudPcOnPremisesConnection](../api/cloudpconpremisesconnection-runhealthcheck.md)|Nenhuma|Execute as verificações de saúde de [um cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md).|
 
 ## <a name="properties"></a>Propriedades
 
@@ -44,33 +44,36 @@ O resultado de uma verificação de saúde de conexão local do computador na nu
 
 |Member|Descrição|
 |:---|:---|
-|dnsCheckFqdnNotFound|A verificação DNS falhou porque o nome de domínio totalmente qualificado não foi encontrado. Insira o nome de domínio totalmente qualificado.|
-|dnsCheckUnknownError|A verificação DNS falhou devido a um erro desconhecido. Entre em contato com o suporte ao cliente.|
-|adJoinCheckFqdnNotFound|A verificação de junção de domínio ativo falhou porque o nome de domínio totalmente qualificado não foi encontrado. Insira o nome de domínio totalmente qualificado.|
-|adJoinCheckIncorrectCredentials|A verificação de junção de domínio ativo falhou porque as credenciais de domínio estão incorretas. Atualize o nome de usuário e a senha.|
-|adJoinCheckOrganizationalUnitNotFound|A verificação de junção de domínio ativo falhou porque a unidade organizacional especificada não foi encontrada. Insira a unidade de organização de nova.|
-|adJoinCheckOrganizationalUnitIncorrectFormat|A verificação de junção de domínio ativo falhou porque o formato da unidade organizacional especificada está incorreto. Formato de exemplo: "OU=OU1,OU=OU2,OU=OU3,DC=DC1".|
-|adJoinCheckAccessDenied|A verificação de junção de domínio ativo falhou porque o acesso é negado quando usuários não administradores que foram delegados tentam ingressar objetos de computador em um controlador de domínio. Atribua a permissão correta ao cliente para ingressar no objeto do computador no domínio. Permissões necessárias: Criar objetos de computador, Excluir objetos do computador.|
-|adJoinCheckUnknownError|A verificação de junção de domínio ativo falhou devido a um erro desconhecido. Entre em contato com o suporte ao cliente.|
-|endpointConnectivityCheckCloudPcUrlNotAllowListed|A verificação de conectividade do ponto de extremidade falhou porque a URL de armazenamento de script de provisionamento de CPC não está na lista de permitir nas configurações de firewall de rede. Adicione URLs à lista de configurações de firewall de rede permitidas. As URLs podem ser encontradas em informações adicionais.|
-|endpointConnectivityCheckWVDUrlNotAllowListed|A verificação de conectividade do ponto de extremidade falhou porque a URL do WVD não está na lista de permitir nas configurações de firewall de rede. Adicione URLs à lista de configurações de firewall de rede permitidas.|
-|endpointConnectivityCheckIntuneUrlNotAllowListed|A verificação de conectividade do ponto de extremidade falhou porque a URL do Intune não está na lista de permitir nas configurações de firewall de rede. Adicione URLs à lista de configurações de firewall de rede permitidas.|
-|endpointConnectivityCheckUnknownError|A verificação de conectividade do ponto de extremidade falhou devido a um erro desconhecido. Entre em contato com o suporte ao cliente.|
-|aadConnectivityCheckUnknownError|A Active Directory do Azure de conectividade falhou devido a um erro desconhecido. Entre em contato com o suporte ao cliente.|
-|resourceAvailabilityCheckNoSubnetIP|A verificação de disponibilidade do recurso falhou porque não havia endereços IP disponíveis na sub-rede. Free up some or change to another subnet and retry.|
-|resourceAvailabilityCheckSubscriptionDisabled|A verificação de disponibilidade do recurso falhou devido a uma assinatura desabilitada do Azure. Reabilitar a assinatura.|
-|resourceAvailabilityCheckAzurePolicyViolation|A criação do recurso do Azure necessário falhou porque a política do Azure de suas organizações bloqueou a ação. Atualize sua política do Azure para permitir essa criação de recursos.|
-|resourceAvailabilityCheckUnsupportedVNetRegion|O vNet selecionado não está em uma região do Azure com suporte.|
-|resourceAvailabilityCheckUnknownError|A verificação de disponibilidade do recurso falhou devido a um erro desconhecido. Entre em contato com o suporte ao cliente.|
-|permissionCheckNoSubscriptionReaderRole|A entidade de serviço de computador na nuvem não tem permissões de leitor na assinatura especificada do Azure. Trabalhe com o proprietário da assinatura para adicionar a atribuição de função de leitor na assinatura do Azure para a entidade de serviço do Cloud PC.|
-|permissionCheckNoResourceGroupOwnerRole|A entidade de serviço do computador na nuvem não tem permissões de proprietário no grupo de recursos especificado. Trabalhe com o proprietário da assinatura para adicionar a atribuição de função de proprietário no grupo de recursos para a entidade de serviço do Cloud PC.|
-|permissionCheckNoVNetContributorRole|A entidade de serviço de computador na nuvem não tem permissões de colaborador de rede na rede virtual especificada. Trabalhe com o proprietário da assinatura para adicionar a atribuição de função de colaborador de rede para a entidade de serviço do Cloud PC. |
-|permissionCheckUnknownError|A verificação de permissão falhou devido a um erro desconhecido. Entre em contato com o suporte ao cliente.|
-|internalServerErrorDeploymentCanceled|A implantação foi cancelada. Tente novamente mais tarde. Se o problema persistir, contate o suporte.|
-|internalServerErrorAllocateResourceFailed|A alocação de recursos falhou. Tente novamente ou contate o suporte para obter mais detalhes.|
-|internalServerErrorVMDeploymentTimeout|O tempo de implantação da máquina virtual foi o tempo de implantação. Tentar novamente. Se o problema persistir, contate o suporte.|
-|internalServerErrorUnableToRunDscScript|Não é possível executar o script DSC durante a verificação de saúde. O serviço precisa de acesso ao WinRM para provisionar com êxito o computador de nuvem. Verifique se nenhuma Política de Grupo ou configuração relacionada está bloqueando o uso do PowerShell/DSC.|
-|internalServerUnknownError|A verificação de saúde falhou devido a um erro de servidor interno desconhecido. Entre em contato com o suporte ao cliente.|
+|dnsCheckFqdnNotFound|A resolução DNS falhou para o nome de domínio. Possíveis causas de erro: 1. O servidor DNS do Azure vNet especificado não pode resolver o nome de domínio. Atualize a vNet com um servidor DNS apropriado; 2. O nome de domínio fornecido não existe ou não está correto. Atualize a conexão de rede local com o nome de domínio correto. Verifique se a vNet definida na conexão de rede local pode resolver o nome de domínio.|
+|dnsCheckUnknownError|A resolução DNS falhou para o nome de domínio. Possíveis causas de erro: 1. O servidor DNS do Azure vNet especificado não pode resolver o nome de domínio. Atualize a vNet com um servidor DNS apropriado; 2. O nome de domínio fornecido não existe ou não está correto. Atualize a conexão de rede local com o nome de domínio correto. Verifique se a vNet definida na conexão de rede local pode resolver o nome de domínio.|
+|adJoinCheckFqdnNotFound|A verificação de junção de domínio falhou porque o nome de domínio não pôde ser encontrado. Verifique se um controlador de domínio para o nome de domínio pode ser contatado pela vNet definida na conexão de rede local.|
+|adJoinCheckIncorrectCredentials|A verificação de junção de domínio falhou porque as credenciais fornecidas para o domínio não estão corretas. Atualize a conexão de rede local com credenciais corretas.|
+|adJoinCheckOrganizationalUnitNotFound|A verificação de junção de domínio falhou porque a unidade organizacional (OU) não pode ser encontrada. Forneça uma UO no domínio. A UO deve estar no formato de nome diferenciado. Formato de exemplo: "OU=OU1,OU=OU2,OU=OU3,DC=DC1".|
+|adJoinCheckOrganizationalUnitIncorrectFormat|A verificação de junção de domínio falhou porque a unidade organizacional (OU) não pode ser encontrada. Forneça uma UO no domínio. A UO deve estar no formato de nome diferenciado. Formato de exemplo: "OU=OU1,OU=OU2,OU=OU3,DC=DC1".|
+|adJoinCheckComputerObjectAlreadyExists|A conta do computador não pode ser encontrada na unidade organizacional (OU) fornecida na conexão de rede local, mas o nome do computador já existe no domínio. Isso geralmente ocorre depois que o objeto do computador foi movido para fora da UO configurada na conexão de rede local. Mova o objeto do computador de volta para a UO de destino.|
+|adJoinCheckAccessDenied|A verificação de junção de domínio falhou porque a conta de usuário fornecida não tem permissões suficientes para ingressar no domínio. Verifique se a conta fornecida tem permissões suficientes ou altere a conta de usuário definida nas propriedades de conexão de rede local. Permissões necessárias: Criar *objetos de computador e* Excluir objetos de *computador*.|
+|adJoinCheckUnknownError|A verificação de junção de domínio falhou devido a um erro desconhecido. Certifique-se de que a conexão de rede local possa ingressar com êxito no domínio usando os detalhes fornecidos.|
+|endpointConnectivityCheckCloudPcUrlNotAllowListed|Durante o provisionamento, uma ou mais URLs necessárias não puderam ser contatadas. Verifique se todas as URLs necessárias são permitidas por meio dos firewalls e proxies.|
+|endpointConnectivityCheckWVDUrlNotAllowListed|Durante o provisionamento, uma ou mais URLs WVD necessárias não puderam ser contatadas. Verifique se todas as URLs necessárias são permitidas por meio dos firewalls e proxies.|
+|endpointConnectivityCheckIntuneUrlNotAllowListed|Durante o provisionamento, uma ou mais URLs necessárias do Intune não puderam ser contatadas. Verifique se todas as URLs necessárias são permitidas por meio dos firewalls e proxies.|
+|endpointConnectivityCheckUnknownError|Durante o provisionamento, uma ou mais URLs necessárias não puderam ser contatadas. Verifique se todas as URLs necessárias são permitidas por meio dos firewalls e proxies.|
+|azureAdDeviceSyncCheckDeviceNotFound|O objeto do computador do computador na nuvem não pode ser encontrado no Azure Active Directory (Azure AD). Certifique-se de que a conexão do Azure AD funcione e sincronize com frequência para que os objetos do computador do computador na nuvem sejam sincronizados com o Azure AD. A sincronização de dispositivos do Azure AD deve ser habilitada e sincronizada nos últimos 60 minutos.|
+|azureAdDeviceSyncCheckLongSyncCircle|A verificação se o objeto do computador do computador na nuvem foi sincronizado com Azure Active Directory (Azure AD) foi o tempo de tempo. Certifique-se de que a conexão do Azure AD funcione e sincronize com frequência para que os objetos do computador do computador na nuvem sejam sincronizados com o Azure AD. A sincronização de dispositivos do Azure AD deve ser habilitada e sincronizada nos últimos 60 minutos.|
+|azureAdDeviceSyncCheckUnknownError|Falha na Azure Active Directory de conectividade híbrida (Azure AD). Certifique-se de que a conexão do Azure AD funcione e sincronize com frequência para que os objetos do computador do computador na nuvem sejam sincronizados com o Azure AD. A sincronização de dispositivos do Azure AD deve ser habilitada e sincronizada nos últimos 60 minutos.|
+|resourceAvailabilityCheckNoSubnetIP|A sub-rede fornecida não tem endereços IP disponíveis. Verifique se a sub-rede fornecida na conexão de rede local tem endereços IP suficientes disponíveis. Expanda a sub-rede selecionada atual ou selecione uma sub-rede diferente a ser usada para provisionamento.|
+|resourceAvailabilityCheckSubscriptionDisabled|A assinatura do Azure fornecida está desabilitada. Verifique se a assinatura do Azure está habilitada e disponível para provisionamento.|
+|resourceAvailabilityCheckAzurePolicyViolation|A assinatura do Azure fornecida não pode ser encontrada. Verifique se a assinatura do Azure está disponível para provisionamento.|
+|resourceAvailabilityCheckUnsupportedVNetRegion|O vNet selecionado está localizado em uma região sem suporte. Verifique se o vNet selecionado está localizado em uma região com suporte.|
+|resourceAvailabilityCheckUnknownError|A verificação de disponibilidade de recursos do Azure falhou devido a um erro desconhecido. Verifique se todos os recursos do Azure atendem aos pré-requisitos.|
+|permissionCheckNoSubscriptionReaderRole|A entidade de serviço de computador na nuvem não tem permissões suficientes na assinatura do Azure. Certifique-se de que a entidade de serviço do computador na nuvem tenha as *permissões Reader* na assinatura.|
+|permissionCheckNoResourceGroupOwnerRole|A entidade de serviço de computador na nuvem não tem permissões suficientes no grupo de recursos do Azure. Verifique se a entidade de serviço do computador na nuvem tem as *permissões Owner* no grupo de recursos. |
+|permissionCheckNoVNetContributorRole|A entidade de serviço de computador na nuvem não tem permissões suficientes na vNet do Azure. Verifique se o serviço de computador na nuvem tem as *permissões do* colaborador de rede na vNet.|
+|permissionCheckUnknownError|A entidade de serviço de computador na nuvem não tem permissões suficientes. Verifique se a entidade de serviço do computador na nuvem recebe permissões suficientes do Azure.|
+|internalServerErrorDeploymentCanceled|A implantação foi cancelada. Tente novamente mais tarde. Se o problema persistir, entre em contato com o suporte.|
+|internalServerErrorAllocateResourceFailed|A alocação de recursos falhou. Tente novamente mais tarde. Se o problema persistir, entre em contato com o suporte.|
+|internalServerErrorVMDeploymentTimeout|O tempo de implantação da máquina virtual foi o tempo de implantação. Tente novamente mais tarde. Se o problema persistir, entre em contato com o suporte.|
+|internalServerErrorUnableToRunDscScript|Durante o provisionamento, alguns scripts DSC do PowerShell são executados no computador de nuvem. Não é possível baixar esses scripts DSC ou executá-los durante a verificação de saúde. Verifique se a vNet tem acesso irrestrito aos pontos de extremidade necessários, e o PowerShell não está bloqueado no ambiente ou na Política de Grupo.|
+|internalServerUnknownError|O provisionamento falhou devido a um erro interno. Entre em contato com o suporte ao cliente.|
 
 ## <a name="relationships"></a>Relações
 

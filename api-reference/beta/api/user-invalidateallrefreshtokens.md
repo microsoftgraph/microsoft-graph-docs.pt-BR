@@ -5,12 +5,12 @@ localization_priority: Normal
 author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: b3bd61191cd61c143165b563e8a270af50943adc
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: a13982cb924c5c9b82c3248aefc13a54ec44bb2e
+ms.sourcegitcommit: 4888ac7504533344c4fc6828e2a06a002a1d72d3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50720064"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53351045"
 ---
 # <a name="user-invalidateallrefreshtokens"></a>user: invalidateAllRefreshTokens
 
@@ -46,10 +46,13 @@ Esta operação não tem conteúdo de solicitação.
 
 Se bem sucedido, este método retorna um código de resposta `204 No Content`.
 
+>[!NOTE]
+>Essa API retorna um código de resposta HTTP diferente, semelhante à ação [revokeSignInSessions.](user-revokesigninsessions.md) Para obter detalhes, consulte [problema conhecido](/graph/known-issues#revoke-sign-in-sessions-returns-wrong-HTTP-code). 
+
 ## <a name="example"></a>Exemplo
-Eis um exemplo de como chamar esta API.
-##### <a name="request"></a>Solicitação
-Este é um exemplo da solicitação.
+
+### <a name="request"></a>Solicitação
+Este é um exemplo de solicitação.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -78,8 +81,8 @@ POST https://graph.microsoft.com/beta/me/invalidateAllRefreshTokens
 ---
 
 
-##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. 
+### <a name="response"></a>Resposta
+Este é um exemplo de resposta. 
 <!-- {
   "blockType": "response",
   "truncated": true

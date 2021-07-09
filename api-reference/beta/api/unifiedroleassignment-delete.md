@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 96bff141cc3f4dfb779335100a49a8fdf99edb00
-ms.sourcegitcommit: ada6eab637b9b318129aefb98edbe7316399d9ba
+ms.openlocfilehash: 01ce2f1aa786c0f62147a370c00f6aed4d9d0bc6
+ms.sourcegitcommit: 4888ac7504533344c4fc6828e2a06a002a1d72d3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/07/2021
-ms.locfileid: "53317067"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53351031"
 ---
 # <a name="delete-unifiedroleassignment"></a>Excluir unifiedRoleAssignment
 
@@ -24,10 +24,21 @@ Namespace: microsoft.graph
 
 Dependendo do provedor RBAC e do tipo de permissão (delegado ou aplicativo) necessário, escolha na tabela a seguinte permissão com menos privilégios necessária para chamar essa API. Para saber mais, incluindo [tomar cuidado](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) antes de escolher as permissões mais privilegiadas, pesquise as seguintes permissões em [Permissões](/graph/permissions-reference).
 
-|Provedor com suporte      | Delegado (conta corporativa ou de estudante)  | Delegada (conta pessoal da Microsoft) | Aplicativo |
-|:-----------------------|:------------------------------------|:---------------------------------------|:------------|
-| Diretório | RoleManagement.ReadWrite.Directory | Sem suporte.| RoleManagement.ReadWrite.Directory |
-| Gerenciamento de direitos | EntitlementManagement.ReadWrite.All | Sem suporte. | Sem suporte. |
+### <a name="for-directory-azure-ad-provider"></a>Provedor do Azure AD (Diretório)
+
+|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegado (conta corporativa ou de estudante) |  RoleManagement.ReadWrite.Directory   |
+|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
+|Application | RoleManagement.ReadWrite.Directory |
+
+### <a name="for-entitlement-management-provider"></a>Para provedor de gerenciamento de direitos
+
+|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegado (conta corporativa ou de estudante) |  EntitlementManagement.ReadWrite.All  |
+|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
+|Aplicativo | Sem suporte. |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
