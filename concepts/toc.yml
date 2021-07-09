@@ -391,6 +391,8 @@ items:
                 href: search-concept-aggregation.md
               - name: Solicitar correção ortográfica (prévia)
                 href: search-concept-speller.md
+              - name: Pesquisar pessoa (versão prévia)
+                href: search-concept-person.md
       - name: Segurança
         items:
           - name: Visão Geral

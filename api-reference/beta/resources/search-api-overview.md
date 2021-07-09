@@ -5,12 +5,12 @@ localization_priority: Priority
 author: nmoreau
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: af390733e61d14cc411c583fccce7399bef5a39f
-ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
+ms.openlocfilehash: 0b15c7ceb87af0fa1d7deede3e583cc75f2a898e
+ms.sourcegitcommit: ae83b2b372902268517fd17a8b10d6d9add422af
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53209930"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53334007"
 ---
 # <a name="use-the-microsoft-search-api-to-query-data"></a>Usar a API de Pesquisa da Microsoft para consultar dados
 
@@ -58,6 +58,7 @@ A tabela a seguir descreve os tipos disponíveis para consulta e as permissões 
 |[listItem](listitem.md)|Sites.Read.All, Sites.ReadWrite.All| SharePoint e OneDrive | Listar itens. Observe que os arquivos e as pastas também são retornados como itens de lista; **listItem** é a superclasse de **driveItem**. |
 |[site](site.md)|Sites.Read.All, Sites.ReadWrite.All| SharePoint | Sites no SharePoint.|
 |[externalItem](externalitem.md)|ExternalItem.Read.All| Conectores do Microsoft Graph| Todo o conteúdo está absorvido pela API dos conectores do Microsoft Graph.|
+|[pessoa](person.md)|People.Read|Troca Online|Contatos pessoais e contatos ou objetos endereçáveis na sua organização.|
 
 ## <a name="page-search-results"></a>Resultados da pesquisa de página
 
@@ -92,7 +93,7 @@ Quando você pesquisa na entidade **mensagem**, a especificação de **enableTop
 
 ## <a name="get-selected-properties"></a>Obter as propriedades selecionadas
 
-Ao pesquisar um tipo de entidade, como **mensagem**, **evento**, **unidade**, **driveItem**, **lista**, **listItem**, **site**, **externalItem**, você pode incluir na propriedade **campos** as propriedades de entidade específica para retornar nos resultados da pesquisa. Isso é semelhante a usar a opção [$select, da consulta do sistema OData](/graph/query-parameters#select-parameter), em solicitações REST. A pesquisa do API não oferece suporte técnico a essas opções de consulta porque o comportamento é expresso no corpo POST.
+Ao pesquisar um tipo de entidade, como **mensagem**, **evento**, **unidade**, **driveItem**, **lista**, **listItem**, **site**, **externalItem** ou **pessoa**, você pode incluir nos **fields** propriedades de entidade específicas para retornar nos resultados da pesquisa. Isso é semelhante a usar a opção [$select, da consulta do sistema OData](/graph/query-parameters#select-parameter), em solicitações REST. A pesquisa do API não oferece suporte técnico a essas opções de consulta porque o comportamento é expresso no corpo POST.
 
 Para todos esses tipos de entidade, especificar a propriedade **campos** reduz o número de propriedades retornadas na resposta, melhorando a carga na conexão.
 
@@ -119,7 +120,7 @@ Dependendo do tipo de entidade, as propriedades pesquisáveis variam. Veja mais 
 Os resultados da pesquisa na resposta são classificados na ordem de classificação padrão a seguir:
 
 - **mensagem** e **evento** são classificados por data.
-- Todos os tipos de conectores SharePoint e OneDrive são classificados por relevância.
+- Todos os tipos de SharePoint, OneDrive, pessoas e conectores são classificados por relevância.
 
 O método de [consulta](../api/search-query.md) permite que você personalize a ordem de pesquisa especificando as **sortProperties** no parâmetro `requests`, que é uma coleção de objetos [searchRequest](./searchrequest.md). Isso permite especificar uma lista de uma ou mais propriedades classificáveis e a ordem de classificação.
 
@@ -174,13 +175,13 @@ A API de pesquisa tem as seguintes limitações:
 - O método **query** é definido para permitir a passagem de um conjunto de uma ou mais instâncias de **searchRequest** de uma só vez. No entanto, atualmente o serviço dá suporte apenas a um único [searchRequest](./searchrequest.md) por vez.
 
 - O recurso [searchRequest](./searchrequest.md) dá suporte à passagem de vários tipos de entidades por vez. No entanto, no momento, a única combinação com suporte é para os entityTypes do SharePoint e o OneDrive: **driveItem**, **drive**, **site**, **list**, **listItem**.
-As combinações envolvendo **mensagem**, **evento**, tipos do SharePoint e do OneDrive ou **externalItem** não têm suporte no momento.  
+Quaisquer combinações envolvendo **mensagem**, **evento**, **pessoa**, tipos de SharePoint e OneDrive ou **externalItem** não tem suporte no momento.  
 
 - A propriedade **contentSource**, que define a conexão a ser usada, só será aplicável quando **entityType** for especificada como `externalItem`.
 
-- A API de pesquisa não dá suporte à classificação personalizada para **mensagem**, **evento** ou  **externalItem**.
+- A API de pesquisa não oferece suporte para classificação personalizada para **mensagem**, **evento**, **pessoa** ou **externalItem**.
 
-- A API de pesquisa não dá suporte a agregações para **mensagem**, **evento**, **site** ou **unidade**.
+- A API de pesquisa não oferece suporte a agregações para **mensagem**, **evento**, **site**, **pessoa** ou **unidade**.
 
 - As personalizações na pesquisa do SharePoint, como um esquema de pesquisa personalizado ou fontes de resultados, podem interferir na operação da API de Pesquisa da Microsoft.
 
@@ -208,6 +209,7 @@ Para compatibilidade com versões anteriores, as propriedades e tipos originais 
 - Saiba mais sobre alguns dos principais casos de uso:
   - [Pesquisar mensagens do Outlook](/graph/search-concept-messages)
   - [Pesquisar eventos do calendário](/graph/search-concept-events)
+  - [Pesquisar pessoa](/graph/search-concept-person)  
   - [Pesquisar conteúdo no OneDrive e Microsoft Office SharePoint Online](/graph/search-concept-files)
   - [Pesquisar tipos personalizados importados usando conectores](/graph/search-concept-custom-types)
   - [Classificar resultados de pesquisa](/graph/search-concept-sort)
@@ -217,6 +219,6 @@ Para compatibilidade com versões anteriores, as propriedades e tipos originais 
 
 - Explore as APIs no [Explorador do Graph](https://developer.microsoft.com/graph/graph-explorer).
 
-## <a name="whats-new"></a>O que há de novo
+## <a name="whats-new"></a>Novidades
 
 Saiba mais sobre os [novos recursos e atualizações mais recentes](/graph/whats-new-overview) para este conjunto de APIs.
