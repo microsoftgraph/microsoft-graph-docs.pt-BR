@@ -5,79 +5,79 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: governance
 author: shauliu
-ms.openlocfilehash: 96b089c52e8fabacd87223795a68e1b6f011db0e
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: ef30468664dd64dc09d9cfb352d514a395368698
+ms.sourcegitcommit: 4888ac7504533344c4fc6828e2a06a002a1d72d3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52786971"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53350870"
 ---
-# <a name="update-governanceroleassignmentrequests"></a><span data-ttu-id="704c3-103">Atualizar governançaRoleAssignmentRequests</span><span class="sxs-lookup"><span data-stu-id="704c3-103">Update governanceRoleAssignmentRequests</span></span>
+# <a name="update-governanceroleassignmentrequests"></a><span data-ttu-id="40e04-103">Atualizar governançaRoleAssignmentRequests</span><span class="sxs-lookup"><span data-stu-id="40e04-103">Update governanceRoleAssignmentRequests</span></span>
 
-<span data-ttu-id="704c3-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="704c3-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="40e04-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="40e04-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="704c3-105">Permitir que os administradores atualizem suas decisões ( ou ) sobre `AdminApproved` `AdminDenied` [governançaRoleAssignmentRequests](../resources/governanceroleassignmentrequest.md) que estão em status de `PendingAdminDecision` .</span><span class="sxs-lookup"><span data-stu-id="704c3-105">Enable administrators to update their decisions (`AdminApproved` or `AdminDenied`) on [governanceRoleAssignmentRequests](../resources/governanceroleassignmentrequest.md) that are in status of `PendingAdminDecision`.</span></span>
+<span data-ttu-id="40e04-105">Permitir que os administradores atualizem suas decisões ( ou ) sobre `AdminApproved` `AdminDenied` [governançaRoleAssignmentRequests](../resources/governanceroleassignmentrequest.md) que estão em status de `PendingAdminDecision` .</span><span class="sxs-lookup"><span data-stu-id="40e04-105">Enable administrators to update their decisions (`AdminApproved` or `AdminDenied`) on [governanceRoleAssignmentRequests](../resources/governanceroleassignmentrequest.md) that are in status of `PendingAdminDecision`.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="704c3-106">Permissions</span><span class="sxs-lookup"><span data-stu-id="704c3-106">Permissions</span></span>
-<span data-ttu-id="704c3-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference#privileged-access-permissions).</span><span class="sxs-lookup"><span data-stu-id="704c3-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference#privileged-access-permissions).</span></span>
+## <a name="permissions"></a><span data-ttu-id="40e04-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="40e04-106">Permissions</span></span>
+<span data-ttu-id="40e04-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference#privileged-access-permissions).</span><span class="sxs-lookup"><span data-stu-id="40e04-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference#privileged-access-permissions).</span></span>
 
-><span data-ttu-id="704c3-109">**Observação:** Essa API também exige que o solicitante tenha pelo menos uma atribuição de função de administrador ( ou ) no recurso ao qual a `Active` `owner` `user access administrator` [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md) pertence.</span><span class="sxs-lookup"><span data-stu-id="704c3-109">**Note:** This API also requires that the requester have at least one `Active` administrator role assignment (`owner` or `user access administrator`) on the resource that the [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md) belongs to.</span></span> 
+><span data-ttu-id="40e04-109">**Observação:** Essa API também exige que o solicitante tenha pelo menos uma atribuição de função de administrador ( ou ) no recurso ao qual a `Active` `owner` `user access administrator` [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md) pertence.</span><span class="sxs-lookup"><span data-stu-id="40e04-109">**Note:** This API also requires that the requester have at least one `Active` administrator role assignment (`owner` or `user access administrator`) on the resource that the [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md) belongs to.</span></span> 
 
-### <a name="azure-resources"></a><span data-ttu-id="704c3-110">Recursos do Azure</span><span class="sxs-lookup"><span data-stu-id="704c3-110">Azure resources</span></span>
+### <a name="azure-resources"></a><span data-ttu-id="40e04-110">Recursos do Azure</span><span class="sxs-lookup"><span data-stu-id="40e04-110">Azure resources</span></span>
 
-| <span data-ttu-id="704c3-111">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="704c3-111">Permission type</span></span> | <span data-ttu-id="704c3-112">Permissions</span><span class="sxs-lookup"><span data-stu-id="704c3-112">Permissions</span></span> |
+| <span data-ttu-id="40e04-111">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="40e04-111">Permission type</span></span> | <span data-ttu-id="40e04-112">Permissões</span><span class="sxs-lookup"><span data-stu-id="40e04-112">Permissions</span></span> |
 |:--------------- |:----------- |
-| <span data-ttu-id="704c3-113">Delegada (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="704c3-113">Delegated (work or school account)</span></span> | <span data-ttu-id="704c3-114">PrivilegedAccess.ReadWrite.AzureResources</span><span class="sxs-lookup"><span data-stu-id="704c3-114">PrivilegedAccess.ReadWrite.AzureResources</span></span> |
-| <span data-ttu-id="704c3-115">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="704c3-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="704c3-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="704c3-116">Not supported.</span></span> |
-| <span data-ttu-id="704c3-117">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="704c3-117">Application</span></span> | <span data-ttu-id="704c3-118">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="704c3-118">Not supported.</span></span> |
+| <span data-ttu-id="40e04-113">Delegada (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="40e04-113">Delegated (work or school account)</span></span> | <span data-ttu-id="40e04-114">PrivilegedAccess.ReadWrite.AzureResources</span><span class="sxs-lookup"><span data-stu-id="40e04-114">PrivilegedAccess.ReadWrite.AzureResources</span></span> |
+| <span data-ttu-id="40e04-115">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="40e04-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="40e04-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="40e04-116">Not supported.</span></span> |
+| <span data-ttu-id="40e04-117">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="40e04-117">Application</span></span> | <span data-ttu-id="40e04-118">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="40e04-118">Not supported.</span></span> |
 
-### <a name="azure-ad"></a><span data-ttu-id="704c3-119">Azure Active Directory</span><span class="sxs-lookup"><span data-stu-id="704c3-119">Azure AD</span></span>
+### <a name="azure-ad"></a><span data-ttu-id="40e04-119">Azure AD</span><span class="sxs-lookup"><span data-stu-id="40e04-119">Azure AD</span></span>
 
-| <span data-ttu-id="704c3-120">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="704c3-120">Permission type</span></span> | <span data-ttu-id="704c3-121">Permissions</span><span class="sxs-lookup"><span data-stu-id="704c3-121">Permissions</span></span> |
+| <span data-ttu-id="40e04-120">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="40e04-120">Permission type</span></span> | <span data-ttu-id="40e04-121">Permissões</span><span class="sxs-lookup"><span data-stu-id="40e04-121">Permissions</span></span> |
 |:--------------- |:----------- |
-| <span data-ttu-id="704c3-122">Delegada (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="704c3-122">Delegated (work or school account)</span></span> | <span data-ttu-id="704c3-123">PrivilegedAccess.ReadWrite.AzureAD</span><span class="sxs-lookup"><span data-stu-id="704c3-123">PrivilegedAccess.ReadWrite.AzureAD</span></span> |
-| <span data-ttu-id="704c3-124">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="704c3-124">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="704c3-125">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="704c3-125">Not supported.</span></span> |
-| <span data-ttu-id="704c3-126">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="704c3-126">Application</span></span> | <span data-ttu-id="704c3-127">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="704c3-127">Not supported.</span></span> |
+| <span data-ttu-id="40e04-122">Delegada (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="40e04-122">Delegated (work or school account)</span></span> | <span data-ttu-id="40e04-123">PrivilegedAccess.ReadWrite.AzureAD</span><span class="sxs-lookup"><span data-stu-id="40e04-123">PrivilegedAccess.ReadWrite.AzureAD</span></span> |
+| <span data-ttu-id="40e04-124">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="40e04-124">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="40e04-125">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="40e04-125">Not supported.</span></span> |
+| <span data-ttu-id="40e04-126">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="40e04-126">Application</span></span> | <span data-ttu-id="40e04-127">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="40e04-127">Not supported.</span></span> |
 
-### <a name="groups"></a><span data-ttu-id="704c3-128">Grupos</span><span class="sxs-lookup"><span data-stu-id="704c3-128">Groups</span></span>
+### <a name="groups"></a><span data-ttu-id="40e04-128">Grupos</span><span class="sxs-lookup"><span data-stu-id="40e04-128">Groups</span></span>
 
-|<span data-ttu-id="704c3-129">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="704c3-129">Permission type</span></span> | <span data-ttu-id="704c3-130">Permissions</span><span class="sxs-lookup"><span data-stu-id="704c3-130">Permissions</span></span> |
+|<span data-ttu-id="40e04-129">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="40e04-129">Permission type</span></span> | <span data-ttu-id="40e04-130">Permissões</span><span class="sxs-lookup"><span data-stu-id="40e04-130">Permissions</span></span> |
 |:-------------- |:----------- |
-| <span data-ttu-id="704c3-131">Delegada (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="704c3-131">Delegated (work or school account)</span></span> | <span data-ttu-id="704c3-132">PrivilegedAccess.ReadWrite.AzureADGroups</span><span class="sxs-lookup"><span data-stu-id="704c3-132">PrivilegedAccess.ReadWrite.AzureADGroups</span></span> |
-| <span data-ttu-id="704c3-133">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="704c3-133">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="704c3-134">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="704c3-134">Not supported.</span></span> |
-| <span data-ttu-id="704c3-135">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="704c3-135">Application</span></span> | <span data-ttu-id="704c3-136">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="704c3-136">Not supported.</span></span> |
+| <span data-ttu-id="40e04-131">Delegada (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="40e04-131">Delegated (work or school account)</span></span> | <span data-ttu-id="40e04-132">PrivilegedAccess.ReadWrite.AzureADGroup</span><span class="sxs-lookup"><span data-stu-id="40e04-132">PrivilegedAccess.ReadWrite.AzureADGroup</span></span> |
+| <span data-ttu-id="40e04-133">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="40e04-133">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="40e04-134">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="40e04-134">Not supported.</span></span> |
+| <span data-ttu-id="40e04-135">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="40e04-135">Application</span></span> | <span data-ttu-id="40e04-136">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="40e04-136">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="704c3-137">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="704c3-137">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="40e04-137">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="40e04-137">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /privilegedAccess/azureResources/roleAssignmentRequests/{id}/updateRequest   
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="704c3-138">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="704c3-138">Request headers</span></span>
-| <span data-ttu-id="704c3-139">Nome</span><span class="sxs-lookup"><span data-stu-id="704c3-139">Name</span></span>           | <span data-ttu-id="704c3-140">Descrição</span><span class="sxs-lookup"><span data-stu-id="704c3-140">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="40e04-138">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="40e04-138">Request headers</span></span>
+| <span data-ttu-id="40e04-139">Nome</span><span class="sxs-lookup"><span data-stu-id="40e04-139">Name</span></span>           | <span data-ttu-id="40e04-140">Descrição</span><span class="sxs-lookup"><span data-stu-id="40e04-140">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="704c3-141">Authorization</span><span class="sxs-lookup"><span data-stu-id="704c3-141">Authorization</span></span>  | <span data-ttu-id="704c3-142">Portador {código}</span><span class="sxs-lookup"><span data-stu-id="704c3-142">Bearer {code}</span></span>|
-| <span data-ttu-id="704c3-143">Content-type</span><span class="sxs-lookup"><span data-stu-id="704c3-143">Content-type</span></span>  | <span data-ttu-id="704c3-144">application/json</span><span class="sxs-lookup"><span data-stu-id="704c3-144">application/json</span></span>|
+| <span data-ttu-id="40e04-141">Authorization</span><span class="sxs-lookup"><span data-stu-id="40e04-141">Authorization</span></span>  | <span data-ttu-id="40e04-142">Portador {código}</span><span class="sxs-lookup"><span data-stu-id="40e04-142">Bearer {code}</span></span>|
+| <span data-ttu-id="40e04-143">Content-type</span><span class="sxs-lookup"><span data-stu-id="40e04-143">Content-type</span></span>  | <span data-ttu-id="40e04-144">application/json</span><span class="sxs-lookup"><span data-stu-id="40e04-144">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="704c3-145">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="704c3-145">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="40e04-145">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="40e04-145">Request body</span></span>
 
-|<span data-ttu-id="704c3-146">Parâmetros</span><span class="sxs-lookup"><span data-stu-id="704c3-146">Parameters</span></span>      |<span data-ttu-id="704c3-147">Tipo</span><span class="sxs-lookup"><span data-stu-id="704c3-147">Type</span></span>                   |<span data-ttu-id="704c3-148">Obrigatório</span><span class="sxs-lookup"><span data-stu-id="704c3-148">Required</span></span> |<span data-ttu-id="704c3-149">Descrição</span><span class="sxs-lookup"><span data-stu-id="704c3-149">Description</span></span>|
+|<span data-ttu-id="40e04-146">Parâmetros</span><span class="sxs-lookup"><span data-stu-id="40e04-146">Parameters</span></span>      |<span data-ttu-id="40e04-147">Tipo</span><span class="sxs-lookup"><span data-stu-id="40e04-147">Type</span></span>                   |<span data-ttu-id="40e04-148">Obrigatório</span><span class="sxs-lookup"><span data-stu-id="40e04-148">Required</span></span> |<span data-ttu-id="40e04-149">Descrição</span><span class="sxs-lookup"><span data-stu-id="40e04-149">Description</span></span>|
 |:-------------|:----------------------|:--------|:----------|
-|<span data-ttu-id="704c3-150">motivo</span><span class="sxs-lookup"><span data-stu-id="704c3-150">reason</span></span>        |<span data-ttu-id="704c3-151">String</span><span class="sxs-lookup"><span data-stu-id="704c3-151">String</span></span>                 |<span data-ttu-id="704c3-152">✓</span><span class="sxs-lookup"><span data-stu-id="704c3-152">✓</span></span>        |<span data-ttu-id="704c3-153">O motivo fornecido pelo administrador para sua decisão.</span><span class="sxs-lookup"><span data-stu-id="704c3-153">The reason provided by the administrator for his decision.</span></span>|
-|<span data-ttu-id="704c3-154">decision</span><span class="sxs-lookup"><span data-stu-id="704c3-154">decision</span></span>        |<span data-ttu-id="704c3-155">String</span><span class="sxs-lookup"><span data-stu-id="704c3-155">String</span></span>                 |<span data-ttu-id="704c3-156">✓</span><span class="sxs-lookup"><span data-stu-id="704c3-156">✓</span></span>        |<span data-ttu-id="704c3-157">A decisão do administrador da solicitação de atribuição de função.</span><span class="sxs-lookup"><span data-stu-id="704c3-157">The administrator decision of the role assignment request.</span></span> <span data-ttu-id="704c3-158">O valor deve ser atualizado como `AdminApproved` ou `AdminDenied` .</span><span class="sxs-lookup"><span data-stu-id="704c3-158">The value should be updated as `AdminApproved` or `AdminDenied`.</span></span>|
-|<span data-ttu-id="704c3-159">Cronograma</span><span class="sxs-lookup"><span data-stu-id="704c3-159">schedule</span></span>      |[<span data-ttu-id="704c3-160">governanceSchedule</span><span class="sxs-lookup"><span data-stu-id="704c3-160">governanceSchedule</span></span>](../resources/governanceschedule.md)|        | <span data-ttu-id="704c3-161">O cronograma da solicitação de atribuição de função.</span><span class="sxs-lookup"><span data-stu-id="704c3-161">The schedule of the role assignment request.</span></span> <span data-ttu-id="704c3-162">Para o status `AdminApproved` de , é necessário.</span><span class="sxs-lookup"><span data-stu-id="704c3-162">For status of `AdminApproved`, it is required.</span></span>|
-|<span data-ttu-id="704c3-163">assignmentState</span><span class="sxs-lookup"><span data-stu-id="704c3-163">assignmentState</span></span>      |<span data-ttu-id="704c3-164">String</span><span class="sxs-lookup"><span data-stu-id="704c3-164">String</span></span>|         | <span data-ttu-id="704c3-165">O estado da atribuição e os valores podem `Eligible` ser ou `Active` .</span><span class="sxs-lookup"><span data-stu-id="704c3-165">The state of assignment, and the values can be `Eligible` or `Active`.</span></span> <span data-ttu-id="704c3-166">Para a decisão `AdminApproved` de , é necessário.</span><span class="sxs-lookup"><span data-stu-id="704c3-166">For decision of `AdminApproved`, it is required.</span></span> |
-### <a name="response"></a><span data-ttu-id="704c3-167">Resposta</span><span class="sxs-lookup"><span data-stu-id="704c3-167">Response</span></span>
-<span data-ttu-id="704c3-168">Esse método só pode ser aplicado a solicitações que estão em status de `PendingAdminDecision` .</span><span class="sxs-lookup"><span data-stu-id="704c3-168">This method can only be applied to requests that are in status of `PendingAdminDecision`.</span></span>
+|<span data-ttu-id="40e04-150">motivo</span><span class="sxs-lookup"><span data-stu-id="40e04-150">reason</span></span>        |<span data-ttu-id="40e04-151">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="40e04-151">String</span></span>                 |<span data-ttu-id="40e04-152">✓</span><span class="sxs-lookup"><span data-stu-id="40e04-152">✓</span></span>        |<span data-ttu-id="40e04-153">O motivo fornecido pelo administrador para sua decisão.</span><span class="sxs-lookup"><span data-stu-id="40e04-153">The reason provided by the administrator for his decision.</span></span>|
+|<span data-ttu-id="40e04-154">decision</span><span class="sxs-lookup"><span data-stu-id="40e04-154">decision</span></span>        |<span data-ttu-id="40e04-155">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="40e04-155">String</span></span>                 |<span data-ttu-id="40e04-156">✓</span><span class="sxs-lookup"><span data-stu-id="40e04-156">✓</span></span>        |<span data-ttu-id="40e04-157">A decisão do administrador da solicitação de atribuição de função.</span><span class="sxs-lookup"><span data-stu-id="40e04-157">The administrator decision of the role assignment request.</span></span> <span data-ttu-id="40e04-158">O valor deve ser atualizado como `AdminApproved` ou `AdminDenied` .</span><span class="sxs-lookup"><span data-stu-id="40e04-158">The value should be updated as `AdminApproved` or `AdminDenied`.</span></span>|
+|<span data-ttu-id="40e04-159">Cronograma</span><span class="sxs-lookup"><span data-stu-id="40e04-159">schedule</span></span>      |[<span data-ttu-id="40e04-160">governanceSchedule</span><span class="sxs-lookup"><span data-stu-id="40e04-160">governanceSchedule</span></span>](../resources/governanceschedule.md)|        | <span data-ttu-id="40e04-161">O cronograma da solicitação de atribuição de função.</span><span class="sxs-lookup"><span data-stu-id="40e04-161">The schedule of the role assignment request.</span></span> <span data-ttu-id="40e04-162">Para o status `AdminApproved` de , é necessário.</span><span class="sxs-lookup"><span data-stu-id="40e04-162">For status of `AdminApproved`, it is required.</span></span>|
+|<span data-ttu-id="40e04-163">assignmentState</span><span class="sxs-lookup"><span data-stu-id="40e04-163">assignmentState</span></span>      |<span data-ttu-id="40e04-164">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="40e04-164">String</span></span>|         | <span data-ttu-id="40e04-165">O estado da atribuição e os valores podem `Eligible` ser ou `Active` .</span><span class="sxs-lookup"><span data-stu-id="40e04-165">The state of assignment, and the values can be `Eligible` or `Active`.</span></span> <span data-ttu-id="40e04-166">Para a decisão `AdminApproved` de , é necessário.</span><span class="sxs-lookup"><span data-stu-id="40e04-166">For decision of `AdminApproved`, it is required.</span></span> |
+### <a name="response"></a><span data-ttu-id="40e04-167">Resposta</span><span class="sxs-lookup"><span data-stu-id="40e04-167">Response</span></span>
+<span data-ttu-id="40e04-168">Esse método só pode ser aplicado a solicitações que estão em status de `PendingAdminDecision` .</span><span class="sxs-lookup"><span data-stu-id="40e04-168">This method can only be applied to requests that are in status of `PendingAdminDecision`.</span></span>
 
-<span data-ttu-id="704c3-p105">Se bem-sucedido, este método retorna um código de resposta `204 No Content`. Não retorna nada no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="704c3-p105">If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="40e04-p105">Se bem-sucedido, este método retorna um código de resposta `204 No Content`. Não retorna nada no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="40e04-p105">If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="704c3-171">Exemplo</span><span class="sxs-lookup"><span data-stu-id="704c3-171">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="704c3-172">Solicitação</span><span class="sxs-lookup"><span data-stu-id="704c3-172">Request</span></span>
+## <a name="example"></a><span data-ttu-id="40e04-171">Exemplo</span><span class="sxs-lookup"><span data-stu-id="40e04-171">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="40e04-172">Solicitação</span><span class="sxs-lookup"><span data-stu-id="40e04-172">Request</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="704c3-173">HTTP</span><span class="sxs-lookup"><span data-stu-id="704c3-173">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="40e04-173">HTTP</span><span class="sxs-lookup"><span data-stu-id="40e04-173">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "updaterequest_governanceroleassignmentrequest"
@@ -85,25 +85,25 @@ POST /privilegedAccess/azureResources/roleAssignmentRequests/{id}/updateRequest
 ```http
 POST https://graph.microsoft.com/beta/privilegedAccess/azureResources/roleAssignmentRequests/7c53453e-d5a4-41e0-8eb1-32d5ec8bfdee/updateRequest
 ```
-# <a name="c"></a>[<span data-ttu-id="704c3-174">C#</span><span class="sxs-lookup"><span data-stu-id="704c3-174">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="40e04-174">C#</span><span class="sxs-lookup"><span data-stu-id="40e04-174">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/updaterequest-governanceroleassignmentrequest-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="704c3-175">JavaScript</span><span class="sxs-lookup"><span data-stu-id="704c3-175">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="40e04-175">JavaScript</span><span class="sxs-lookup"><span data-stu-id="40e04-175">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/updaterequest-governanceroleassignmentrequest-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="704c3-176">Objective-C</span><span class="sxs-lookup"><span data-stu-id="704c3-176">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="40e04-176">Objective-C</span><span class="sxs-lookup"><span data-stu-id="40e04-176">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/updaterequest-governanceroleassignmentrequest-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="704c3-177">Java</span><span class="sxs-lookup"><span data-stu-id="704c3-177">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="40e04-177">Java</span><span class="sxs-lookup"><span data-stu-id="40e04-177">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/updaterequest-governanceroleassignmentrequest-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="request-body"></a><span data-ttu-id="704c3-178">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="704c3-178">Request body</span></span>
+##### <a name="request-body"></a><span data-ttu-id="40e04-178">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="40e04-178">Request body</span></span>
 ```json
 {
   "reason":"approve the request to extend role assignment",
@@ -117,7 +117,7 @@ POST https://graph.microsoft.com/beta/privilegedAccess/azureResources/roleAssign
 }
 ```
 
-##### <a name="response"></a><span data-ttu-id="704c3-179">Resposta</span><span class="sxs-lookup"><span data-stu-id="704c3-179">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="40e04-179">Resposta</span><span class="sxs-lookup"><span data-stu-id="40e04-179">Response</span></span>
 <!-- {
   "blockType": "response"
 } -->
