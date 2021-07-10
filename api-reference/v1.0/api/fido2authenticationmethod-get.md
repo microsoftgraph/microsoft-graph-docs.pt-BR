@@ -5,12 +5,12 @@ author: mmcla
 localization_priority: Normal
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: b641e1c2afdbf01a3999c50f76497ac7a1417382
-ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
+ms.openlocfilehash: e4b5d5602c99b4a0c637f00a9bb638d456e8a3fd
+ms.sourcegitcommit: 4888ac7504533344c4fc6828e2a06a002a1d72d3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51467957"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53350989"
 ---
 # <a name="get-fido2authenticationmethod"></a>Obter fido2AuthenticationMethod
 Namespace: microsoft.graph
@@ -50,8 +50,8 @@ Para cenários delegados em que um administrador está atuando em outro usuário
 }
 -->
 ``` http
-GET /me/authentication/fido2AuthenticationMethod/{id}
-GET /users/{id | userPrincipalName}/authentication/fido2AuthenticationMethod/{id}
+GET /me/authentication/fido2Methods/{id}
+GET /users/{id | userPrincipalName}/authentication/fido2Methods/{id}
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -71,7 +71,7 @@ Se tiver êxito, este método retornará um código de resposta e `200 OK` o obj
 ### <a name="request"></a>Solicitação
 
 ``` http
-GET https://graph.microsoft.com/v1.0/me/authentication/fido2AuthenticationMethod/-2_GRUg2-HYz6_1YG4YRAQ2
+GET https://graph.microsoft.com/v1.0/me/authentication/fido2Methods/-2_GRUg2-HYz6_1YG4YRAQ2
 ```
 
 ### <a name="response"></a>Resposta

@@ -5,12 +5,12 @@ author: mmcla
 localization_priority: Normal
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 423c55c7e3aab64d2e387efbcd53a69bc819ef0d
-ms.sourcegitcommit: d586ddb253d27f9ccb621bd128f6a6b4b1933918
+ms.openlocfilehash: e4091cebd425fb75c11587ca9c02cf68e7b38d6c
+ms.sourcegitcommit: 4888ac7504533344c4fc6828e2a06a002a1d72d3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53108856"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53351269"
 ---
 # <a name="update-emailauthenticationmethodconfiguration"></a>Atualizar emailAuthenticationMethodConfiguration
 
@@ -69,7 +69,7 @@ Se bem-sucedido, este método retorna um código de resposta `204 No Content`. N
 -->
 
 ```http
-PATCH https://graph.microsoft.com/v1.0/policies/authenticationMethodsPolicy/authenticationMethodConfiguration/email
+PATCH https://graph.microsoft.com/v1.0/policies/authenticationMethodsPolicy/authenticationMethodConfigurations/email
 Content-Type: application/json
 Content-length: 147
 

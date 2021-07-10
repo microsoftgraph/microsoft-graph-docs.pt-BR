@@ -5,12 +5,12 @@ author: jpettere
 localization_priority: Priority
 ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: c165c16ca5ccf0a3e80665b73f68b4bba3a2192f
-ms.sourcegitcommit: d0d2d17a31cbcb01b1ae18bd6a18c39d7077069a
+ms.openlocfilehash: 9ca110bcbf0fceb3cf068557b155fb844f3682c4
+ms.sourcegitcommit: 4888ac7504533344c4fc6828e2a06a002a1d72d3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53118417"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53351297"
 ---
 # <a name="user-resource-type"></a>Tipo de recurso de usuário
 
@@ -34,6 +34,7 @@ Esse recurso permite:
 | [Atualizar usuário](../api/user-update.md)                                                       | [user](user.md)                                                                  | Atualizar o objeto user.                                                                                                                                                                                                                 |
 | [Excluir usuário](../api/user-delete.md)                                                       | Nenhum                                                                             | Excluir o objeto user.                                                                                                                                                                                                                 |
 | [Obter delta](../api/user-delta.md)                                                          | Coleção [usuário](user.md)                                                       | Obter as alterações incrementais para usuários.                                                                                                                                                                                                  |
+| [changePassword](../api/user-changepassword.md) | Nenhum | Atualize sua senha. |
 | **Atribuição de funções do aplicativo**                                                                   |                                                                                  |                                                                                                                                                                                                                                     |
 | [List appRoleAssignments](../api/user-list-approleassignments.md)                          | [appRoleAssignment](approleassignment.md) collection                             | Obter os aplicativos e funções do aplicativo atribuídos a esse usuário.                                                                                                                                                                       |
 | [Adicionar uma atribuição de função do aplicativo](../api/user-post-approleassignments.md)                            | [appRoleAssignment](approleassignment.md)                                        | Atribuir uma função do aplicativo a esse usuário.                                                                                                                                                                                                    |
@@ -158,7 +159,7 @@ Esse recurso permite:
 |FaxNumber|String|O número de fax do usuário. <br><br>Retornado apenas em `$select`. Suporta `$filter` (`eq`, `ne`, `NOT` , `ge`, `le`, `in`, `startsWith`).|
 |givenName|String|O nome fornecido (nome) do usuário. O comprimento máximo é de 64 caracteres. <br><br>Retornado por padrão. Suporta `$filter` (`eq`, `ne`, `NOT` , `ge`, `le`, `in`, `startsWith`).|
 | hireDate | DateTimeOffset | A data de contratação do usuário. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`. <br><br>Retornado apenas em `$select`. <br> **Observação:** Esta propriedade é específica do SharePoint Online. Recomendamos usar a propriedade nativa **employeeHireDate** para definir e atualizar os valores das datas de contratação usando as APIs do Microsoft Graph. |
-|id|String|O identificador exclusivo do usuário. Deve ser tratado como um identificador opaco. Herdado de [directoryObject](directoryobject.md). Chave. Não anulável. Somente leitura. <br><br>Devolvido por padrão. Suporta `$filter` (`eq`, `ne`, `NOT`).|
+|id|String|O identificador exclusivo do usuário. Deve ser tratado como um identificador opaco. Herdado de [directoryObject](directoryobject.md). Chave. Não anulável. Somente leitura. <br><br>Devolvido por padrão. Suporta `$filter` (`eq`, `ne`, `NOT`, `in`).|
 |Identidades|Coleção [objectIdentity](objectIdentity.md)| Representa as identidades que podem ser usadas para entrar nesta conta de usuário. Uma identidade pode ser fornecida pela Microsoft (também conhecida como conta local), por organizações ou por provedores de identidade social, como o Facebook, Google e Microsoft, e está vinculada a uma conta de usuário. Pode conter vários itens com o mesmo valor **signInType**. <br><br>Retornado apenas em `$select`. Suporta `$filter` (`eq`) apenas quando o **signInType** não é `userPrincipalName`.|
 |imAddresses|String collection|Os endereços do Protocolo de Início de Sessão (SIP) de VoIP (Voice over IP) da mensagem instantânea para o usuário. Somente leitura.<br><br>Retornado apenas em `$select`. Suporta `$filter` (`eq`, `NOT`, `ge`, `le`, `startsWith`).|
 |interests|Coleção de cadeias de caracteres|Uma lista para o usuário descrever os interesses dele. <br><br>Retornado apenas em `$select`.|
@@ -178,19 +179,19 @@ Esse recurso permite:
 |onPremisesExtensionAttributes|[onPremisesExtensionAttributes](onpremisesextensionattributes.md)|Contém extensionAttributes 1-15 para o usuário. Observe que os atributos de extensão individuais não são selecionáveis nem filtráveis. Para um usuário do `onPremisesSyncEnabled`, a fonte de autoridade desse conjunto de propriedades é o local e é somente para leitura. Para um usuário somente na nuvem (onde `onPremisesSyncEnabled` é falso), essas propriedades podem ser definidas durante a criação ou atualização. Esses atributos de extensão também são conhecidos como atributos personalizados do Exchange 1-15. <br><br>Retornado apenas em `$select`. Suporta `$filter` (`eq`, `NOT`, `ge`, `le`, `in`). |
 |onPremisesImmutableId|String|Essa propriedade é usada para associar uma conta de usuário do Active Directory local com seu objeto de usuário do Azure AD. Esta propriedade deve ser especificada ao criar uma nova conta de usuário no Graph se você estiver usando um domínio federado para a propriedade **userPrincipalName** (UPN). **OBSERVAÇÃO:** Os caracteres **$** e **\_** não podem ser usados ao especificar esta propriedade. <br><br>Retornado apenas em `$select`. Suporta `$filter` (`eq`, `ne`, `NOT`, `ge`, `le`, `in`)..                            |
 |onPremisesLastSyncDateTime|DateTimeOffset|Indica a última vez em que o objeto foi sincronizado com o diretório local; por exemplo: `2013-02-16T03:04:54Z`. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`. Somente leitura. <br><br>Retornado apenas em `$select`. Suporta `$filter` (`eq`, `ne`, `NOT`, `ge`, `le`, `in`).|
-|onPremisesProvisioningErrors|coleção [OnPremisesProvisioningError](onpremisesprovisioningerror.md)| Erros ao usar o produto de sincronização da Microsoft durante a configuração. <br><br>Retornado apenas em `$select`.|
+|onPremisesProvisioningErrors|coleção [OnPremisesProvisioningError](onpremisesprovisioningerror.md)| Erros ao usar o produto de sincronização da Microsoft durante a configuração. <br><br>Retornado apenas em `$select`. Suporta `$filter` (`eq`, `NOT`, `ge`, `le`).|
 |onPremisesSamAccountName|String| Contém o `samAccountName` local sincronizado no diretório local. A propriedade somente é preenchida para os clientes que estejam sincronizando o seu diretório local ao Azure Active Directory pelo Azure AD Connect. Somente leitura. <br><br>Retornado apenas em `$select`. Suporta `$filter` (`eq`, `ne`, `NOT`, `ge`, `le`, `in`, `startsWith`).|
-|onPremisesSecurityIdentifier|String|Contém o identificador de segurança (SID) local do usuário que foi sincronizado do local com a nuvem. Somente leitura.<br><br>Retornado apenas em `$select`. Suporta `$filter` (`eq`, `ne`, `NOT`, `in`). |
+|onPremisesSecurityIdentifier|String|Contém o identificador de segurança (SID) local do usuário que foi sincronizado do local com a nuvem. Somente leitura.<br><br>Retornado apenas em `$select`. |
 |onPremisesSyncEnabled|Booliano| `true` se esse objeto está sincronizado de um diretório local; `false` se esse objeto foi originalmente sincronizado de um diretório local, mas não está mais sincronizado; `null` se esse objeto nunca foi sido sincronizado de um diretório local (padrão).  Somente leitura. <br><br>Retornado apenas em `$select`. Suporta `$filter` (`eq`, `ne`, `NOT`, `in`).|
 |onPremisesUserPrincipalName|String| Contém o `userPrincipalName` local sincronizado no diretório local. A propriedade somente é preenchida para os clientes que estejam sincronizando o seu diretório local ao Azure Active Directory pelo Azure AD Connect. Somente leitura. <br><br>Retornado apenas em `$select`. Suporta `$filter` (`eq`, `ne`, `NOT`, `ge`, `le`, `in`, `startsWith`).|
 |otherMails|Coleção String| Uma lista de endereços de email adicional para o usuário; Por exemplo: `["bob@contoso.com", "Robert@fabrikam.com"]`. <br>OBSERVAÇÃO: embora essa propriedade possa conter caracteres acentuados, eles podem causar problemas de acesso aos aplicativos primários para o usuário. <br><br>Retornado apenas em `$select`. Suporta `$filter` (`eq`, `NOT`, `ge`, `le`, `in`, `startsWith`).|
-|passwordPolicies|String|Especifica as políticas de senha do usuário. Este valor é uma enumeração com um valor possível sendo `DisableStrongPassword`, que permite que senhas mais fracas do que a política padrão sejam especificadas. `DisablePasswordExpiration` também pode ser especificado. Os dois podem ser especificados juntos; por exemplo: `DisablePasswordExpiration, DisableStrongPassword`. <br><br>Retornado apenas em `$select`. Suporta `$filter` (`eq`, `ne`, `NOT`).|
-|passwordProfile|[passwordProfile](passwordprofile.md)|Especifica o perfil de senha do usuário. O perfil contém a senha do usuário. Essa propriedade é obrigatória quando um usuário é criado. A senha no perfil deve atender a requisitos mínimos, conforme especificado pela propriedade **passwordPolicies**. Por padrão, é obrigatória uma senha forte. **OBSERVAÇÃO:** Para locatários B2C do Azure, a propriedade **forceChangePasswordNextSignIn** deve ser definida como `false` e, em vez disso, usar políticas personalizadas e fluxos de usuário para forçar a redefinição de senha no primeiro logon. Confira [Forçar a redefinição de senha no primeiro logon](https://github.com/azure-ad-b2c/samples/tree/master/policies/force-password-reset-first-logon).<br><br>Retornado apenas em `$select`.|
+|passwordPolicies|String|Especifica as políticas de senha do usuário. Este valor é uma enumeração com um valor possível sendo `DisableStrongPassword`, que permite que senhas mais fracas do que a política padrão sejam especificadas. `DisablePasswordExpiration` também pode ser especificado. Os dois podem ser especificados juntos; por exemplo: `DisablePasswordExpiration, DisableStrongPassword`. <br><br>Retornado apenas em `$select`. Suporta `$filter` (`ne`, `NOT`).|
+|passwordProfile|[passwordProfile](passwordprofile.md)|Especifica o perfil de senha do usuário. O perfil contém a senha do usuário. Essa propriedade é obrigatória quando um usuário é criado. A senha no perfil deve atender a requisitos mínimos, conforme especificado pela propriedade **passwordPolicies**. Por padrão, é obrigatória uma senha forte. **OBSERVAÇÃO:** Para locatários B2C do Azure, a propriedade **forceChangePasswordNextSignIn** deve ser definida como `false` e, em vez disso, usar políticas personalizadas e fluxos de usuário para forçar a redefinição de senha no primeiro logon. Confira [Forçar a redefinição de senha no primeiro logon](https://github.com/azure-ad-b2c/samples/tree/master/policies/force-password-reset-first-logon).<br><br>Retornado apenas em `$select`. Suporta `$filter` (`eq`, `ne`, `NOT`, `in`).|
 |pastProjects|Coleção de cadeias de caracteres|Uma lista para o usuário enumerar seus projetos anteriores. <br><br>Retornado apenas em `$select`.|
 |postalCode|String|O código postal do endereço postal do usuário. O código postal é específico para o país/região do usuário. Nos Estados Unidos da América, este atributo contém o Código postal. O comprimento máximo é de 40 caracteres.<br><br>Retornado apenas em `$select`. Suporta `$filter` (`eq`, `ne`, `NOT`, `ge`, `le`, `in`, `startsWith`).|
 |preferredLanguage|String|O idioma preferencial do usuário. Deve seguir o Código ISO 639-1; por exemplo `en-US`. <br><br>Devolvido por padrão. Suporta `$filter` (`eq`, `ne`, `NOT`, `ge`, `le`, `in`, `startsWith`)|
 |preferredName|String|O nome preferencial do usuário. <br><br>Retornado apenas em `$select`.|
-|provisionedPlans|coleção [provisionedPlan](provisionedplan.md)|Os planos que estão provisionados para o usuário. Somente leitura. Não anulável.<br><br>Retornado apenas em `$select`.|
+|provisionedPlans|coleção [provisionedPlan](provisionedplan.md)|Os planos que estão provisionados para o usuário. Somente leitura. Não anulável.<br><br>Retornado apenas em `$select`. Suporta `$filter` (`eq`, `NOT`, `ge`, `le`).|
 |proxyAddresses|Coleção de cadeias de caracteres|Por exemplo: `["SMTP: bob@contoso.com", "smtp: bob@sales.contoso.com"]`. Somente leitura, Não anulável. <br><br>Retornado apenas em `$select`. Suporta `$filter` (`eq`, `NOT`, `ge`, `le`, `startsWith`).|
 |refreshTokensValidFromDateTime|DateTimeOffset|Os tokens de atualização ou de sessão (cookies de sessão) emitidos antes dessa hora são inválidos e os aplicativos recebem um erro ao usar um token de atualização ou de sessão inválido para adquirir um token de acesso delegado (para acessar APIs como o Microsoft Graph).  Se isso acontecer, o aplicativo precisará adquirir um novo token de atualização, fazendo uma solicitação ao ponto de extremidade de autorização. <br><br>Retornado apenas em `$select`. Apenas leitura. |
 |responsibilities|Coleção de cadeias de caracteres|Uma lista para o usuário enumerar suas responsabilidades. <br><br>Retornado apenas em `$select`.|
@@ -203,7 +204,7 @@ Esse recurso permite:
 |surname|String|O sobrenome do usuário (nome de família ou sobrenome). O comprimento máximo é de 64 caracteres. <br><br>Retornado por padrão. Suporta `$filter` (`eq`, `ne`, `NOT`, `ge`, `le`, `in`, `startsWith`).|
 |usageLocation|String|Um código de duas letras (padrão ISO 3166). Obrigatório para os usuários que receberão licenças devido à exigência legal de verificar a disponibilidade de serviços nos países.  Os exemplos incluem:`US`,`JP` e `GB`. Não anulável. <br><br>Retornado apenas em `$select`. Suporta `$filter` (`eq`, `ne`, `NOT`, `ge`, `le`, `in`, `startsWith`).|
 |userPrincipalName|String|O nome UPN do usuário. O nome UPN é um nome de logon para o usuário ao estilo da Internet com base na RFC 822 padrão da Internet. Por convenção, ele deve ser mapeado para o nome de email do usuário. O formato geral é alias@domain, onde o domínio deve estar presente na coleta de domínios verificados pelo locatário. Essa propriedade é obrigatória quando um usuário é criado. Os domínios verificados para o locatário podem ser acessados pela propriedade **verifiedDomains** de [organization](organization.md).<br>OBSERVAÇÃO: embora essa propriedade possa conter caracteres acentuados, eles podem causar problemas de acesso aos aplicativos primários para o usuário. <br><br>Retornado por padrão. Suporta `$filter` (`eq`, `ne`, `NOT`, `ge`, `le`, `in`, `startsWith`, `endsWith`) e `$orderBy`.
-|userType|String|Um valor de string que pode ser usado para classificar tipos de usuário em seu diretório, como `Member` e `Guest`. <br><br>Retornado apenas em `$select`. Suporta `$filter` (`eq`, `ne`, `NOT`, `in`, `startsWith`, `endsWith`).          |
+|userType|String|Um valor de string que pode ser usado para classificar tipos de usuário em seu diretório, como `Member` e `Guest`. <br><br>Retornado apenas em `$select`. Suporta `$filter` (`eq`, `ne`, `NOT`, `in`).          |
 
 ### <a name="legal-age-group-property-definitions"></a>Definições de propriedade da faixa etária legal
 
@@ -253,7 +254,7 @@ Hence the type of the corresponding 3 properties remain as string type in the Pr
 |:---------------|:--------|:----------|
 |agreementAcceptances|Coleção [agreementAcceptance](agreementacceptance.md)| Status de aceitação dos termos de uso do usuário. Somente leitura. Anulável.|
 |activities|Coleção [userActivity](projectrome-activity.md)|As atividades do usuário em todos os dispositivos. Somente leitura. Anulável.|
-|appRoleAssignments|[appRoleAssignment](approleassignment.md) collection|Representa as funções de aplicativo que um usuário recebeu para um programa. |
+|appRoleAssignments|[appRoleAssignment](approleassignment.md) collection|Representa as funções de aplicativo que um usuário recebeu para um programa. Suporta o `$expand`. |
 |calendar|[calendar](calendar.md)|O calendário principal do usuário. Somente leitura.|
 |calendarGroups|Coleção [CalendarGroup](calendargroup.md)|Os grupos de calendários do usuário. Somente leitura. Anulável.|
 |calendarView|Coleção [event](event.md)|O modo de exibição do calendário. Somente leitura. Anulável.|
@@ -261,8 +262,8 @@ Hence the type of the corresponding 3 properties remain as string type in the Pr
 |contactFolders|Coleção [ContactFolder](contactfolder.md)|As pastas de contatos do usuário. Somente leitura. Anulável.|
 |contacts|Coleção [Contact](contact.md)|Os contatos do usuário. Somente leitura. Anulável.|
 |createdObjects|Coleção [directoryObject](directoryobject.md)|Objetos directory que foram criados pelo usuário. Somente leitura. Anulável.|
-|directReports|Coleção [directoryObject](directoryobject.md)|Os usuários e contatos subordinados ao usuário. (Os usuários e contatos cuja propriedade manager está definida como esse usuário.) Somente leitura. Anulável. |
-|drive|[drive](drive.md)|O OneDrive do usuário. Somente leitura.|
+|directReports|Coleção [directoryObject](directoryobject.md)|Os usuários e contatos subordinados ao usuário. (Os usuários e contatos cuja propriedade manager está definida como esse usuário.) Somente leitura. Anulável. Suporta o `$expand`. |
+|Unidade|[drive](drive.md)|O OneDrive do usuário. Somente leitura.|
 |unidades|Coleção [drive](drive.md)| Uma coleção de unidades disponíveis para este usuário. Somente leitura. |
 |events|Coleção [event](event.md)|Os eventos do usuário. O padrão é mostrar eventos no Calendário Padrão. Somente leitura. Anulável.|
 |extensions|[extension](extension.md) collection|A coleção de extensões abertas definidas para o usuário. Somente leitura. Anulável.|
@@ -270,17 +271,17 @@ Hence the type of the corresponding 3 properties remain as string type in the Pr
 |insights|[officeGraphInsights](officegraphinsights.md) | Somente leitura. Anulável.|
 |licenseDetails|Coleção de[licenseDetails](licensedetails.md)|Uma coleção dos detalhes da licença deste usuário. Somente leitura.|
 |mailFolders|Coleção [mailFolder](mailfolder.md)| As pastas de email do usuário. Somente leitura. Anulável.|
-|manager|[directoryObject](directoryobject.md)|O usuário ou contato que é o gerente deste usuário. Somente leitura. (Métodos HTTP: GET, PUT, DELETE.)|
-|memberOf|Coleção [directoryObject](directoryobject.md)|Os grupos e as funções de diretório dos quais o usuário é membro. Somente leitura. Anulável.|
+|manager|[directoryObject](directoryobject.md)|O usuário ou contato que é o gerente deste usuário. Somente leitura. (Métodos HTTP: GET, PUT, DELETE.). Suporta o `$expand`.|
+|memberOf|Coleção [directoryObject](directoryobject.md)|Os grupos e as funções de diretório dos quais o usuário é membro. Somente leitura. Anulável. Suporta o `$expand`. |
 |messages|Coleção [message](message.md)|As mensagens em uma caixa de correio ou pasta. Somente leitura. Anulável.|
 |onenote|[onenote](onenote.md)| Somente leitura.|
 |outlook|[outlookUser](outlookuser.md)| Somente leitura.|
-|ownedDevices|Coleção [directoryObject](directoryobject.md)|Dispositivos que pertencem ao usuário. Somente leitura. Anulável.|
-|ownedObjects|Coleção [directoryObject](directoryobject.md)|Objetos de diretório que pertencem ao usuário. Somente leitura. Anulável.|
+|ownedDevices|Coleção [directoryObject](directoryobject.md)|Dispositivos que pertencem ao usuário. Somente leitura. Anulável. Suporta o `$expand`.|
+|ownedObjects|Coleção [directoryObject](directoryobject.md)|Objetos de diretório que pertencem ao usuário. Somente leitura. Anulável. Suporta o `$expand`.|
 |people|Coleção [person](person.md)| Pessoas que são relevantes para o usuário. Somente leitura. Anulável.
 |photo|[profilePhoto](profilephoto.md)| A foto de perfil do usuário. Somente leitura.|
 |planner|[plannerUser](planneruser.md)| Ponto de entrada para o recurso do Planner que pode existir para um usuário. Somente leitura.|
-|registeredDevices|Coleção [directoryObject](directoryobject.md)|Dispositivos que estão registrados para o usuário. Somente leitura. Anulável.|
+|registeredDevices|Coleção [directoryObject](directoryobject.md)|Dispositivos que estão registrados para o usuário. Somente leitura. Anulável. Suporta o `$expand`.|
 |todo|[todo](todo.md)|Representa os serviços To Do disponíveis para um usuário. |
 
 ## <a name="json-representation"></a>Representação JSON

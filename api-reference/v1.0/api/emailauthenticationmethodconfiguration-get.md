@@ -5,12 +5,12 @@ author: mmcla
 localization_priority: Normal
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 0e25718a817927b30410c428e5252982c7187e77
-ms.sourcegitcommit: 91d8454bfff853905e3a5e86623fcb06931507ed
+ms.openlocfilehash: 99cff366e380408c3532b53c79290fcdf03c2883
+ms.sourcegitcommit: 4888ac7504533344c4fc6828e2a06a002a1d72d3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/03/2021
-ms.locfileid: "52732193"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53351311"
 ---
 # <a name="get-emailauthenticationmethodconfiguration"></a>Obter emailAuthenticationMethodConfiguration
 
@@ -65,7 +65,7 @@ Se tiver êxito, este método retornará um código de resposta e um `200 OK` [o
 -->
 
 ```http
-GET /policies/authenticationMethodsPolicy/email
+GET /policies/authenticationMethodsPolicy/authenticationMethodConfigurations/email
 ```
 
 ### <a name="response"></a>Resposta
