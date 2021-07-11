@@ -1,16 +1,16 @@
 ---
 title: Atualizar externalitem
-description: Atualizar as propriedades de um externalitem.
+description: Atualize as propriedades de um externalitem.
 localization_priority: Normal
 author: snlraju-msft
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 9ced9d8f2f504ffd9c26629dcea06c4c8cf4e806
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: c862a6139f4f24a9207e7387913ec0fc5b04e8e6
+ms.sourcegitcommit: 3873c85f53e026073addca92d31d234af244444c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48954555"
+ms.lasthandoff: 07/10/2021
+ms.locfileid: "53366784"
 ---
 # <a name="update-externalitem"></a>Atualizar externalitem
 
@@ -18,9 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Atualizar as propriedades de um [externalitem](../resources/externalitem.md).
-
-[!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
+Atualize as propriedades de [um externalitem](../resources/externalitem.md).
 
 ## <a name="permissions"></a>Permissões
 
@@ -30,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---------------------------------------|:--------------------------------------------|
 | Delegado (conta corporativa ou de estudante)     | Sem suporte. |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Application                            | ExternalItem.ReadWrite.All |
+| Aplicativo                            | ExternalItem.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -44,8 +42,8 @@ PATCH /external/connections/{connection-id}/items/{item-id}
 
 | Parâmetro     | Tipo   | Descrição                                         |
 |:--------------|:-------|:----------------------------------------------------|
-| ID de conexão | string | A `id` Propriedade do [externalConnection](../resources/externalconnection.md) que contém |
-| item-id       | string | A propriedade fornecida pelo desenvolvedor `id` do [externalItem](../resources/externalitem.md). |
+| connection-id | cadeia de caracteres | A `id` propriedade do [externalConnection que](../resources/externalconnection.md) contém |
+| item-id       | cadeia de caracteres | A propriedade fornecida `id` pelo desenvolvedor do [externalItem](../resources/externalitem.md). |
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -56,25 +54,25 @@ PATCH /external/connections/{connection-id}/items/{item-id}
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, forneça os valores para os campos relevantes que devem ser atualizados. Propriedades existentes (exceto propriedades dentro do `properties` objeto) que não estão incluídas no corpo da solicitação manterão seus valores anteriores ou serão recalculadas com base nas alterações de outros valores de propriedade. Para alcançar o melhor desempenho, não inclua valores existentes que não foram alterados. As propriedades a seguir podem ser atualizadas.
+No corpo da solicitação, forneça os valores para os campos relevantes que devem ser atualizados. As propriedades existentes (excluindo propriedades dentro do objeto) que não estão incluídas no corpo da solicitação manterão seus valores anteriores ou serão recalculadas com base em alterações em outros valores `properties` de propriedade. Para alcançar o melhor desempenho, não inclua valores existentes que não foram alterados. As propriedades a seguir podem ser atualizadas.
 
 | Propriedade   | Tipo                                  | Descrição               |
 |:-----------|:--------------------------------------|:--------------------------|
-| ACL        | coleção [ACL](../resources/acl.md) | Uma matriz de entradas de controle de acesso. Cada entrada especifica o acesso concedido a um usuário ou grupo. |
-| conteúdo    | [externalItemContent](../resources/externalitemcontent.md) | Uma representação de texto simples do conteúdo do item. O texto nessa propriedade é indexado de texto completo. |
-| properties | Objeto                                | Um recipiente de propriedades com as propriedades do item. As propriedades devem estar em conformidade com o [esquema](../resources/schema.md) definido para o [externalConnection](../resources/externalconnection.md). |
+| acl        | [Coleção acl](../resources/acl.md) | Uma matriz de entradas de controle de acesso. Cada entrada especifica o acesso concedido a um usuário ou grupo. |
+| conteúdo    | [externalItemContent](../resources/externalitemcontent.md) | Uma representação em texto sem texto do conteúdo do item. O texto nesta propriedade é indexado em texto completo. |
+| properties | Objeto                                | Um pacote de propriedades com as propriedades do item. As propriedades DEVEM estar em conformidade [com o esquema](../resources/schema.md) definido para [externalConnection](../resources/externalconnection.md). |
 
-### <a name="updating-the-acl-collection"></a>Atualizando a coleção ACL
+### <a name="updating-the-acl-collection"></a>Atualizando a coleção acl
 
-Se a `acl` propriedade for incluída em uma solicitação Update, a coleção ACL existente será substituída pela coleção incluída na solicitação.
+Se a propriedade for incluída em uma solicitação de atualização, a coleção ACL existente será substituída com a `acl` coleção incluída na solicitação.
 
-### <a name="updating-the-properties-object"></a>Atualizando o objeto Properties
+### <a name="updating-the-properties-object"></a>Atualizando o objeto properties
 
-Se a `properties` propriedade for incluída em uma solicitação Update, o conjunto de propriedades existente será substituído pelo valor incluído na solicitação.
+Se a propriedade for incluída em uma solicitação de atualização, o pacote de propriedades existente será substituído com o `properties` valor incluído na solicitação.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [externalItem](../resources/externalitem.md) atualizado no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e um `200 OK` [objeto externalItem](../resources/externalitem.md) atualizado no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: snlraju-msft
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: 4355ffe51fe1b160c7fb486272e85f2b2cf0bf2c
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: 4b0c0a56fc415c4f2f75ec4972909e31fc9bea14
+ms.sourcegitcommit: 3873c85f53e026073addca92d31d234af244444c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50161696"
+ms.lasthandoff: 07/10/2021
+ms.locfileid: "53366566"
 ---
 # <a name="externalconnection-resource-type"></a>Tipo de recurso externalConnection
 
@@ -18,32 +18,30 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Um contêiner lógico para adicionar conteúdo de uma fonte externa ao Microsoft Graph.
-
-[!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
+Um contêiner lógico para adicionar conteúdo de uma fonte externa à Microsoft Graph.
 
 ## <a name="methods"></a>Métodos
 
 | Método                                                           | Tipo de retorno                                   | Descrição |
 |:-----------------------------------------------------------------|:----------------------------------------------|:--|
-| [Criar externalConnection](../api/external-post-connections.md) | externalConnection                            | Crie uma nova externalConnection postando na coleção connections. |
+| [Criar externalConnection](../api/external-post-connections.md) | externalConnection                            | Crie um novo externalConnection postando na coleção connections. |
 | [Listar externalConnections](../api/externalconnection-list.md)    | Coleção externalConnection                 | Obter uma coleção de objetos externalConnection. |
-| [Obter externalConnection](../api/externalconnection-get.md)       | externalConnection                            | Leia as propriedades e as relações de um objeto externalConnection. |
+| [Obter externalConnection](../api/externalconnection-get.md)       | externalConnection                            | Ler propriedades e relações de um objeto externalConnection. |
 | [Atualizar externalConnection](../api/externalconnection-update.md) | externalConnection                            | Atualize um objeto externalConnection. |
-| [Excluir externalConnection](../api/externalconnection-delete.md) | Nenhum(a)                                          | Exclua um objeto externalConnection. |
-| [Criar esquema](../api/externalconnection-post-schema.md)        | Nenhum *ou* [esquema](schema.md)                 | Registre o esquema de conexão. |
+| [Excluir externalConnection](../api/externalconnection-delete.md) | Nenhum                                          | Exclua um objeto externalConnection. |
+| [Criar esquema](../api/externalconnection-post-schema.md)        | Nenhum *ou* [esquema](schema.md)                 | Registrar esquema de conexão. |
 | [Obter operação](../api/connectionoperation-get.md)               | [connectionOperation](connectionoperation.md) | Obter o status de uma solicitação assíncrona para criar o esquema de conexão. |
-| [Criar externalItem](../api/externalconnection-put-items.md)    | [externalItem](externalitem.md)               | Crie um novo externalItem postando na coleção de itens. |
+| [Criar externalItem](../api/externalconnection-put-items.md)    | [externalItem](externalitem.md)               | Crie um novo externalItem postando na coleção items. |
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade      | Tipo                              | Descrição |
 |:--------------|:----------------------------------|:------------|
 | configuração | [configuration](configuration.md) | Especifica IDs de aplicativo adicionais que têm permissão para gerenciar a conexão e indexar conteúdo na conexão. Opcional. |
-| description   | String                            | Descrição da conexão exibida no Centro de administração do Microsoft 365. Opcional. |
-| id            | String                            | ID exclusiva fornecida pelo desenvolvedor da conexão no locatário do Azure Active Directory. Comprimento máximo de 32 caracteres. Deve conter apenas caracteres alfanuméricos. Não pode começar `Microsoft` com ou ser um dos seguintes valores: , , `None` , , , , , , `Directory` , `Exchange` `ExchangeArchive` `LinkedIn` `Mailbox` `MicrosoftSearch` `OneDriveBusiness` `SharePoint` `Teams` `Yammer` , `Connectors` Obrigatório. |
-| name          | String                            | O nome de exibição da conexão a ser exibida no Centro de administração do Microsoft 365. Comprimento máximo de 128 caracteres. Obrigatório. |
-| estado         | connectionState                   | Indica o estado atual da conexão. Os valores possíveis `draft` `ready` são , e `obsolete` `limitExceeded` . Obrigatório. |
+| descrição   | String                            | Descrição da conexão exibida no Centro de administração do Microsoft 365. Opcional. |
+| id            | String                            | ID exclusiva fornecida pelo desenvolvedor da conexão no Azure Active Directory locatário. Comprimento máximo de 32 caracteres. Deve conter somente caracteres alfanuméricos. Não é possível `Microsoft` começar ou ser um dos seguintes valores: , , , `None` , , , , , , , , `Directory` , , `Exchange` , `ExchangeArchive` `LinkedIn` `Mailbox` `MicrosoftSearch` `OneDriveBusiness` `SharePoint` `Teams` `Yammer` `Connectors` . Obrigatório. |
+| nome          | String                            | O nome de exibição da conexão a ser exibida no Centro de administração do Microsoft 365. Comprimento máximo de 128 caracteres. Obrigatório. |
+| state         | connectionState                   | Indica o estado atual da conexão. Os valores possíveis `draft` `ready` são , e `obsolete` `limitExceeded` . Obrigatório. |
 
 ## <a name="relationships"></a>Relações
 

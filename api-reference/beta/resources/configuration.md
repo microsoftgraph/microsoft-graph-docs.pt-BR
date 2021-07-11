@@ -1,16 +1,16 @@
 ---
 title: tipo de recurso de configuração
-description: Especifica IDs de aplicativo adicionais que têm permissão para gerenciar o externalConnection e indexar o conteúdo em um externalConnection.
+description: Especifica IDs de aplicativo adicionais que podem gerenciar o externalConnection e indexar conteúdo em um externalConnection.
 localization_priority: Normal
 author: snlraju-msft
-ms.prod: ''
+ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: bd267c77a9904564e8b2b7f592f207204d9396b0
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 8a82c5e9e4cbd915d5a7e11b9e162bc510628ecf
+ms.sourcegitcommit: 3873c85f53e026073addca92d31d234af244444c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47994215"
+ms.lasthandoff: 07/10/2021
+ms.locfileid: "53366771"
 ---
 # <a name="configuration-resource-type"></a>tipo de recurso de configuração
 
@@ -18,15 +18,13 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Especifica IDs de aplicativo adicionais que têm permissão para gerenciar o externalConnection e indexar o conteúdo em um [externalConnection](../resources/externalconnection.md).
-
-[!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
+Especifica IDs de aplicativo adicionais que podem gerenciar o externalConnection e indexar conteúdo em [um externalConnection](../resources/externalconnection.md).
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade       | Tipo              | Descrição |
 |:---------------|:------------------|:------------|
-| authorizedApps | Coleção de cadeias de caracteres | Uma coleção de IDs de aplicativo para aplicativos registrados do Active Directory do Azure que têm permissão para gerenciar o externalConnection e indexar o conteúdo no externalConnection. |
+| authorizedApps | Coleção de cadeias de caracteres | Uma coleção de IDs de aplicativos para aplicativos Azure Active Directory registrados que podem gerenciar o externalConnection e indexar conteúdo no externalConnection. |
 
 ## <a name="json-representation"></a>Representação JSON
 

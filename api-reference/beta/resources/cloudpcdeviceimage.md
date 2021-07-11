@@ -5,12 +5,12 @@ author: AshleyYangSZ
 localization_priority: Normal
 ms.prod: cloud-pc
 doc_type: resourcePageType
-ms.openlocfilehash: 2c38895059461f814a3ad0f8e663082972cc8663
-ms.sourcegitcommit: e96b98849cfc3aa915df63696a0b9f30c0a52cfd
+ms.openlocfilehash: 50154654835d1137db49f9f5690115c05ea7e0c1
+ms.sourcegitcommit: 3873c85f53e026073addca92d31d234af244444c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/09/2021
-ms.locfileid: "51654125"
+ms.lasthandoff: 07/10/2021
+ms.locfileid: "53367000"
 ---
 # <a name="cloudpcdeviceimage-resource-type"></a>Tipo de recurso cloudPcDeviceImage
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Representa o recurso de imagem no computador de nuvem.
+Representa o recurso de imagem em um computador de nuvem.
 
 [!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
@@ -31,6 +31,7 @@ Representa o recurso de imagem no computador de nuvem.
 |[Criar cloudPcDeviceImage](../api/virtualendpoint-post-deviceimages.md)|[cloudPcDeviceImage](../resources/cloudpcdeviceimage.md)|Crie um novo [objeto cloudPcDeviceImage.](../resources/cloudpcdeviceimage.md)|
 |[Excluir cloudPcDeviceImage](../api/cloudpcdeviceimage-delete.md)|Nenhum|[Exclua um objeto cloudPcDeviceImage.](../resources/cloudpcdeviceimage.md)|
 |[getSourceImages](../api/cloudpcdeviceimage-getsourceimages.md)|[Coleção cloudPcSourceDeviceImage](../resources/cloudpcsourcedeviceimage.md)|Obter [objetos cloudPcSourceDeviceImage.](../resources/cloudpcsourcedeviceimage.md)|
+|[Reupload cloudPcDeviceImage](../api/cloudpcdeviceimage-reupload.md)|Nenhum|Reupload a [cloudPcDeviceImage](../resources/cloudpcdeviceimage.md) object that failed to upload.|
 
 ## <a name="properties"></a>Propriedades
 
@@ -44,7 +45,7 @@ Representa o recurso de imagem no computador de nuvem.
 |operatingSystem|String|O sistema operacional da imagem. Por exemplo: Windows 10 Enterprise.|
 |lastModifiedDateTime|DateTimeOffset|Os dados e a hora em que a imagem foi modificada pela última vez. O tempo é mostrado no formato ISO 8601 e hora UTC (Tempo Universal Coordenado). Por exemplo, meia-noite UTC em 1º de janeiro de 2014 aparece como '2014-01-01T00:00:00Z'.|
 |status|cloudPcDeviceImageStatus|O status da imagem no computador de nuvem. Os valores possíveis são: `pending`, `ready`, `failed`.|
-|statusDetails|cloudPcDeviceImageStatusDetails|Os detalhes do status da imagem, que indica por que o carregamento falhou, se aplicável. Os valores possíveis são: `internalServerError` `sourceImageNotFound` , , e `osVersionNotSupported` `sourceImageInvalid` .|
+|statusDetails|cloudPcDeviceImageStatusDetails|Os detalhes do status da imagem, que indica por que o carregamento falhou, se aplicável. Os valores possíveis são: `internalServerError`, `sourceImageNotFound`, `osVersionNotSupported`, e `sourceImageInvalid`.|
 
 ### <a name="cloudpcdeviceimagestatus-values"></a>valores cloudPcDeviceImageStatus
 
@@ -61,7 +62,7 @@ Representa o recurso de imagem no computador de nuvem.
 |internalServerError|Houve um erro de servidor interno durante o processamento da imagem.|
 |sourceImageNotFound|A imagem de origem está inacessível ou não encontrada.|
 |osVersionNotSupported| A versão do sistema operacional não é suportada.|
-|sourceImageInvalid|A imagem de origem não é válida para provisionar uma VM do Windows com ela.|
+|sourceImageInvalid|A imagem de origem não é válida para provisionar uma Windows VM com ela.|
 
 ## <a name="relationships"></a>Relações
 

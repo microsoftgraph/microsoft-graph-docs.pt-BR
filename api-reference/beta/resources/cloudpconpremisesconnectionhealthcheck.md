@@ -5,12 +5,12 @@ author: AshleyYangSZ
 localization_priority: Normal
 ms.prod: cloud-pc
 doc_type: resourcePageType
-ms.openlocfilehash: b1b1010c22bed8de73b5d3fa2caf680f26091d00
-ms.sourcegitcommit: 4888ac7504533344c4fc6828e2a06a002a1d72d3
+ms.openlocfilehash: bdc9d440b31a650f69d16a0eab0db46f5265dfb5
+ms.sourcegitcommit: 3873c85f53e026073addca92d31d234af244444c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "53351087"
+ms.lasthandoff: 07/10/2021
+ms.locfileid: "53366751"
 ---
 # <a name="cloudpconpremisesconnectionhealthcheck-resource-type"></a>Tipo de recurso cloudPcOnPremisesConnectionHealthCheck
 
@@ -26,19 +26,19 @@ O resultado de uma verificação de saúde de conexão local do computador na nu
 
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
-|[RunHealthChecks de cloudPcOnPremisesConnection](../api/cloudpconpremisesconnection-runhealthcheck.md)|Nenhuma|Execute as verificações de saúde de [um cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md).|
+|[RunHealthChecks de cloudPcOnPremisesConnection](../api/cloudpconpremisesconnection-runhealthcheck.md)|Nenhum|Execute as verificações de saúde de [um cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md).|
 
 ## <a name="properties"></a>Propriedades
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|displayName|Cadeia de caracteres|O nome de exibição desse item de verificação de saúde.|
+|displayName|String|O nome de exibição desse item de verificação de saúde.|
 |status|[cloudPcOnPremisesConnectionStatus](../resources/cloudpconpremisesconnection.md#cloudpconpremisesconnectionstatus-values)|O status do item de verificação de saúde. Os valores possíveis são: `pending`, `running`, `passed`, `failed`, `unknownFutureValue`. Somente leitura.|
 |startDateTime|DateTimeOffset|A hora de início do item de verificação de saúde. Somente leitura.|
 |endDateTime|DateTimeOffset|A hora de término do item de verificação de saúde. Somente leitura.|
 |errorType|[cloudPcOnPremisesConnectionHealthCheckErrorType](#cloudpconpremisesconnectionhealthcheckerrortype-values)|O tipo de erro que ocorreu durante essa verificação de saúde.|
-|recommendedAction|Cadeia de caracteres|A ação recomendada para corrigir o erro correspondente.|
-|additionalDetails|Cadeia de caracteres|Detalhes adicionais sobre a verificação de saúde ou a ação recomendada.|
+|recommendedAction|String|A ação recomendada para corrigir o erro correspondente.|
+|additionalDetails|String|Detalhes adicionais sobre a verificação de saúde ou a ação recomendada.|
 
 ### <a name="cloudpconpremisesconnectionhealthcheckerrortype-values"></a>valores cloudPcOnPremisesConnectionHealthCheckErrorType
 
@@ -63,6 +63,9 @@ O resultado de uma verificação de saúde de conexão local do computador na nu
 |resourceAvailabilityCheckNoSubnetIP|A sub-rede fornecida não tem endereços IP disponíveis. Verifique se a sub-rede fornecida na conexão de rede local tem endereços IP suficientes disponíveis. Expanda a sub-rede selecionada atual ou selecione uma sub-rede diferente a ser usada para provisionamento.|
 |resourceAvailabilityCheckSubscriptionDisabled|A assinatura do Azure fornecida está desabilitada. Verifique se a assinatura do Azure está habilitada e disponível para provisionamento.|
 |resourceAvailabilityCheckAzurePolicyViolation|A assinatura do Azure fornecida não pode ser encontrada. Verifique se a assinatura do Azure está disponível para provisionamento.|
+|resourceAvailabilityCheckSubscriptionNotFound|A assinatura do Azure fornecida não pode ser acessada. Verifique se a assinatura do Azure está disponível para provisionamento.|
+|resourceAvailabilityCheckSubscriptionTransferred|A assinatura do Azure fornecida não pode ser acessada. Verifique se a assinatura do Azure está disponível para provisionamento.|
+|resourceAvailabilityCheckGeneralSubscriptionError|Uma política do Azure está restringindo a criação de recursos. Verifique se não há nenhuma política do Azure que restrinja a criação de recursos no grupo de assinaturas e/ou recursos.|
 |resourceAvailabilityCheckUnsupportedVNetRegion|O vNet selecionado está localizado em uma região sem suporte. Verifique se o vNet selecionado está localizado em uma região com suporte.|
 |resourceAvailabilityCheckUnknownError|A verificação de disponibilidade de recursos do Azure falhou devido a um erro desconhecido. Verifique se todos os recursos do Azure atendem aos pré-requisitos.|
 |permissionCheckNoSubscriptionReaderRole|A entidade de serviço de computador na nuvem não tem permissões suficientes na assinatura do Azure. Certifique-se de que a entidade de serviço do computador na nuvem tenha as *permissões Reader* na assinatura.|

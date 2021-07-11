@@ -1,16 +1,16 @@
 ---
 title: Criar esquema
-description: Crie o esquema para uma conexão do Microsoft Search.
+description: Crie o esquema para uma Pesquisa da Microsoft conexão.
 localization_priority: Normal
 author: snlraju-msft
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 27820a392d0a37363f447609713f86df1affef15
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: b6656dc04a69c75b4803df59ee9387c4ca0fa72d
+ms.sourcegitcommit: 3873c85f53e026073addca92d31d234af244444c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48965584"
+ms.lasthandoff: 07/10/2021
+ms.locfileid: "53366762"
 ---
 # <a name="create-schema"></a>Criar esquema
 
@@ -18,9 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Crie o esquema para uma [conexão](../resources/externalconnection.md)do Microsoft Search.
-
-[!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
+Crie o esquema para uma conexão Pesquisa da Microsoft [.](../resources/externalconnection.md)
 
 ## <a name="permissions"></a>Permissões
 
@@ -30,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---------------------------------------|:--------------------------------------------|
 | Delegado (conta corporativa ou de estudante)     | Sem suporte. |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Application                            | ExternalItem.ReadWrite.All |
+| Aplicativo                            | ExternalItem.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -46,26 +44,26 @@ POST /external/connections/{id}/schema
 |:----------------------|:-------------------------------------------------------------------|
 | Autorização         | {token} de portador. Obrigatório.                                          |
 | Content-Type          | application/json. Obrigatório.                                        |
-| Prefiro: responder-Async | Use isso para fazer com que a solicitação seja executada de forma assíncrona. Opcional. |
+| Prefer: respond-async | Use isso para fazer com que a solicitação seja executada de forma assíncrona. Opcional. |
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, forneça uma representação JSON de um objeto [Schema](../resources/schema.md) .
+No corpo da solicitação, fornece uma representação JSON de um [objeto de esquema.](../resources/schema.md)
 
-Ao registrar um esquema de item personalizado, o `schema` objeto deve ter a `baseType` propriedade definida como `microsoft.graph.externalItem` e deve conter a `properties` propriedade. O `properties` objeto deve conter pelo menos uma propriedade, até um máximo de 64.
+Ao registrar um esquema de item personalizado, o objeto DEVE ter a propriedade `schema` definida como e DEVE conter a `baseType` `microsoft.graph.externalItem` `properties` propriedade. O `properties` objeto deve conter pelo menos uma propriedade, até um máximo de 64.
 
 ## <a name="response"></a>Resposta
 
-Com o `Prefer: respond-async` cabeçalho incluído na solicitação, se tiver êxito, este método retornará um `202 Accepted` código de resposta e uma URL no `Location` cabeçalho de resposta que pode ser usada para [obter o status da operação](../api/connectionoperation-get.md).
+Com o header incluído na solicitação, se bem-sucedido, este método retorna um código de resposta e uma URL no header de resposta que podem ser usados para obter o `Prefer: respond-async` `202 Accepted` status da `Location` [operação](../api/connectionoperation-get.md).
 
-Sem o `Prefer: respond-async` cabeçalho incluído na solicitação, se tiver êxito, este método retornará um `201 Created` código de resposta e um novo objeto de [esquema](../resources/schema.md) no corpo da resposta.
+Sem o header incluído na solicitação, se bem-sucedido, este método retorna um código de resposta e um novo objeto `Prefer: respond-async` de esquema no corpo da `201 Created` resposta. [](../resources/schema.md)
 
 > [!NOTE]
-> A criação de um esquema é um processo de longa execução sujeito a tempos limite de gateway. Recomendamos usar o `Prefer: respond-async` cabeçalho para evitar erros de tempo limite.
+> A criação de um esquema é um processo de longa duração propenso a tempos-de-tempo de gateway. Recomendamos usar `Prefer: respond-async` o header para evitar erros de tempo de tempo.
 
 ## <a name="examples"></a>Exemplos
 
-### <a name="example-register-custom-schema-asynchronously"></a>Exemplo: registrar esquema personalizado de forma assíncrona
+### <a name="example-register-custom-schema-asynchronously"></a>Exemplo: Registrar esquema personalizado de forma assíncrona
 
 #### <a name="request"></a>Solicitação
 

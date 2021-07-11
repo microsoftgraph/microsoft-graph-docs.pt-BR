@@ -5,12 +5,12 @@ author: jpettere
 localization_priority: Priority
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: b0fecfe948c59fe184e82f71e83d835cee74c7ff
-ms.sourcegitcommit: d586ddb253d27f9ccb621bd128f6a6b4b1933918
+ms.openlocfilehash: 8024db6c3f3263becdf7b22ca388a5c7462ce4c1
+ms.sourcegitcommit: 4888ac7504533344c4fc6828e2a06a002a1d72d3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53107694"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53351332"
 ---
 # <a name="get-a-user"></a>Obter um usuário
 
@@ -38,8 +38,8 @@ Para um usuário específico:
 GET /users/{id | userPrincipalName}
 ```
 
->**Nota:**
-> + Quando o **userPrincipalName** começar com um caractere `$`, remova a barra (/) após `/users` e coloque o **userPrincipalName** entre parênteses e aspas simples. Por exemplo, `/users('$AdeleVance@contoso.com')`. Para detalhes, consultar a lista de [problemas conhecidos](/graph/known-issues#users).
+>**Observação:**
+> + Quando o **userPrincipalName** começa com um caractere `$`, remova a barra (/) após `/users` e coloque o **userPrincipalName** entre parênteses e aspas simples. Por exemplo, `/users('$AdeleVance@contoso.com')`. Para obter detalhes, confira a lista de [problemas conhecidos](/graph/known-issues#users).
 > + Para consultar um usuário B2B usando o **usuárioPrincipalName**, codifique o caractere hash (#). Ou seja, substituir o símbolo `#` por `%23`. Por exemplo, `/users/AdeleVance_adatum.com%23EXT%23@contoso.com`.
 
 Para o usuário conectado:
@@ -49,7 +49,7 @@ GET /me
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
+Este método suporta o `$select` [parâmetro de consulta OData](/graph/query-parameters) para recuperar propriedades específicas do usuário, incluindo aquelas que não são retornadas por padrão.
 
 Por padrão, somente um conjunto limitado de propriedades é retornado (_businessPhones, displayName, givenName, id, jobTitle, mail, mobilePhone, officeLocation, preferredLanguage, surname, userPrincipalName_). 
 
@@ -66,15 +66,15 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna o código de resposta `200 OK` e o objeto [user](../resources/user.md) no corpo da resposta.
+Se bem-sucedido, este método retorna o código de resposta `200 OK` e o objeto [user](../resources/user.md) no corpo da resposta. Retorna as propriedades padrão, a menos que você use `$select` para especificar propriedades específicas.
 
-Esse método retorna `202 Accepted` quando a solicitação tiver sido processada com sucesso, mas o servidor requer mais tempo para concluir as operações de segundo plano relacionadas.
+Esse método retorna `202 Accepted` quando a solicitação tenha sido processada com sucesso, mas o servidor requer mais tempo para concluir as operações de segundo plano relacionadas.
 
 ## <a name="examples"></a>Exemplos
 
 ### <a name="example-1-standard-users-request"></a>Exemplo 1: Solicitação de usuários padrão
 
-Por padrão, somente um conjunto limitado de propriedades é retornado (_businessPhones, displayName, givenName, id, jobTitle, mail, mobilePhone, officeLocation, preferredLanguage, surname, userPrincipalName_). Este exemplo ilustra a solicitação padrão e a resposta. 
+Por padrão, apenas um conjunto limitado de propriedades é retornado ( _businessPhones, displayName, givenName, id, jobTitle, mail, mobilePhone, officeLocation, preferredLanguage, surname, userPrincipalName_ ). Este exemplo ilustra a solicitação e a resposta padrão. 
 
 <!-- {
   "blockType": "request",

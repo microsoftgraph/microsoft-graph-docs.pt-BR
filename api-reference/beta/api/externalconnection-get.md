@@ -1,16 +1,16 @@
 ---
 title: Obter conexão
-description: Recupere as propriedades e os relacionamentos de um externalConnection.
+description: Recupere as propriedades e as relações de um externalConnection.
 localization_priority: Normal
 author: snlraju-msft
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: c32f04e7f373e8955e794d5ce9e4f62a477936cd
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: fbab97a4e09aef1722176f6b7e25dc52df8cbbea
+ms.sourcegitcommit: 3873c85f53e026073addca92d31d234af244444c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48965636"
+ms.lasthandoff: 07/10/2021
+ms.locfileid: "53366867"
 ---
 # <a name="get-connection"></a>Obter conexão
 
@@ -18,9 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere as propriedades e os relacionamentos de um [externalConnection](../resources/externalconnection.md).
-
-[!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
+Recupere as propriedades e as relações de [um externalConnection](../resources/externalconnection.md).
 
 ## <a name="permissions"></a>Permissões
 
@@ -30,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---------------------------------------|:--------------------------------------------|
 | Delegado (conta corporativa ou de estudante)     | Sem suporte. |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Application                            | ExternalItem.ReadWrite.All |
+| Aplicativo                            | ExternalItem.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -56,7 +54,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e o objeto [externalConnection](../resources/externalconnection.md) solicitado no corpo da resposta.
+Se tiver êxito, este método retornará um código `200 OK` de resposta e o objeto [externalConnection](../resources/externalconnection.md) solicitado no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

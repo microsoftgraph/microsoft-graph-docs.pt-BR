@@ -5,12 +5,12 @@ localization_priority: Normal
 author: Jumaodhiss
 doc_type: resourcePageType
 ms.prod: change-notifications
-ms.openlocfilehash: 4ab0fa060940a6e4e08751c029f63ca80c6ec39a
-ms.sourcegitcommit: b5fbb1a715e3479bdd095ef00deb0c932eafc328
+ms.openlocfilehash: 183812b655aa62ce48b405fccfaf3b4b8841117f
+ms.sourcegitcommit: 3873c85f53e026073addca92d31d234af244444c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/28/2021
-ms.locfileid: "53162214"
+ms.lasthandoff: 07/10/2021
+ms.locfileid: "53366958"
 ---
 # <a name="subscription-resource-type"></a>tipo de recurso de assinatura
 
@@ -23,6 +23,7 @@ Uma assinatura que permite a um aplicativo cliente receber notificações sobre 
 - Um [alert][] da API de Segurança do Microsoft Graph.
 - Uma [callRecord][] produzida após uma chamada ou uma reunião no Microsoft Teams.
 - Um [canal](./channel.md) em Microsoft Teams.
+- Um [chat](./chat.md) em Microsoft Teams.
 - Um [chatMessage][] enviado por meio de equipes ou canais no Microsoft Teams.
 - Uma [conversation][] em um grupo do Microsoft 365.
 - Uma [conversaMember](./conversationmember.md) em uma equipe, canal ou chat em Microsoft Teams.
@@ -74,6 +75,7 @@ Consulte [usar o Microsoft Graph API para obter notificações de alteração](w
 | **Alerta** de segurança     | 43200 minutos (em 30 dias )  |
 | Teams **callRecord**    | 4230 minutos (em 3 dias)  |
 | **Canal** do Teams    | 60 minutos (1 hora)  |
+| Teams **chat** | 60 minutos (1 hora) |
 | Teams **chatMessage**    | 60 minutos (1 hora)  |
 | **conversationMember** do Teams    | 60 minutos (1 hora)  |
 | Equipe do **Teams**    | 60 minutos (1 hora)  |

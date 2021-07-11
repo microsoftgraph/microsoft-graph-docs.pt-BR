@@ -4,12 +4,12 @@ description: Microsoft Graph dá suporte ao parâmetro de consulta $search OData
 author: mumbi-o
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 54a7693ed74e003f87129a8d2059ee888429ac79
-ms.sourcegitcommit: 5a1cc1943527aa268e3797ee514871e65eb474a6
+ms.openlocfilehash: c552f510eb65370cd331784c98ea7359b278a56d
+ms.sourcegitcommit: 3873c85f53e026073addca92d31d234af244444c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53031392"
+ms.lasthandoff: 07/10/2021
+ms.locfileid: "53367007"
 ---
 # <a name="use-the-search-query-parameter-to-match-a-search-criterion"></a>Usar o parâmetro de consulta de pesquisa para corresponder a um critério de pesquisa
 
@@ -28,11 +28,9 @@ Se você realizar uma pesquisa em mensagens e especificar apenas um valor sem as
 
 O exemplo a seguir retorna todas as mensagens na Caixa de Entrada do usuário que contenham "pizza" em qualquer uma das três propriedades de pesquisa padrão:
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/messages?$search="pizza"
 ```
-
-[Experimentar no Explorador do Graph][search-example]
 
 Como alternativa, você pode pesquisar mensagens especificando os nomes de propriedade da mensagem na tabela a seguir, que são reconhecidos pela sintaxe da Linguagem de Consulta de Palavra-chave (KQL). Esses nomes de propriedades correspondem às propriedades definidas na entidade **mensagem** do Microsoft Graph. O Outlook e outros aplicativos do Microsoft 365 como o SharePoint são compatíveis com a sintaxe KQL, proporcionando a conveniência de um domínio de descoberta comum para seus repositórios de dados.
 
@@ -177,7 +175,6 @@ A tabela a seguir mostra alguns exemplos.
 
 Ambas as entradas da cadeia de caracteres fornecidas em `$search`, bem como as propriedades pesquisáveis, são divididas em partes por espaços, uso de maiúsculas/minúsculas e tipos de caracteres (números e caracteres especiais).
 
-[search-example]: https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$search=pizza&method=GET&version=v1.0
 [search-att-example]: https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$search=%22attachment%3Aapi-catalog%2Emd%22&method=GET&version=v1.0
 [search-bcc-example]: https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$search=%22bcc%3Asamanthab%40contoso%2Ecom%22%26$select=subject,bccRecipients&method=GET&version=v1.0
 [search-body-example]: https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$search=%22body%3Aexcitement%22&method=GET&version=v1.0

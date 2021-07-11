@@ -1,16 +1,16 @@
 ---
 title: Obter esquema
-description: Recuperar as propriedades de um esquema para um externalConnection.
+description: Recupere as propriedades de um esquema para um externalConnection.
 localization_priority: Normal
 author: snlraju-msft
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: d27457c3aab9876bc26d95ad2e5f52a1b11bdb79
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 99b46758ac6535aa847dc2b97571c0edde3e48b9
+ms.sourcegitcommit: 3873c85f53e026073addca92d31d234af244444c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48975333"
+ms.lasthandoff: 07/10/2021
+ms.locfileid: "53366986"
 ---
 # <a name="get-schema"></a>Obter esquema
 
@@ -18,9 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recuperar as propriedades de um [esquema](../resources/schema.md) para um [externalConnection](../resources/externalconnection.md).
-
-[!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
+Recupere as propriedades de um [esquema](../resources/schema.md) para [um externalConnection](../resources/externalconnection.md).
 
 ## <a name="permissions"></a>Permissões
 
@@ -30,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---------------------------------------|:--------------------------------------------|
 | Delegado (conta corporativa ou de estudante)     | Sem suporte. |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Application                            | ExternalItem.ReadWrite.All |
+| Aplicativo                            | ExternalItem.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -56,7 +54,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e o objeto de [esquema](../resources/schema.md) solicitado no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e o objeto de esquema solicitado `200 OK` no corpo da resposta. [](../resources/schema.md)
 
 ## <a name="examples"></a>Exemplos
 

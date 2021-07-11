@@ -1,16 +1,16 @@
 ---
 title: Atualizar externalConnection
-description: Atualizar as propriedades de um externalConnection.
+description: Atualize as propriedades de um externalConnection.
 localization_priority: Normal
 author: snlraju-msft
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 7e2b6418c9dcbdc89fc7701302ddf28a780cb6d0
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: f6de3acfbdc71a83e087c58f11b8d93d7fbc5452
+ms.sourcegitcommit: 3873c85f53e026073addca92d31d234af244444c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48954649"
+ms.lasthandoff: 07/10/2021
+ms.locfileid: "53366783"
 ---
 # <a name="update-connection"></a>Atualizar conexão
 
@@ -18,9 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Atualizar as propriedades de um [externalConnection](../resources/externalconnection.md).
-
-[!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
+Atualize as propriedades de [um externalConnection](../resources/externalconnection.md).
 
 ## <a name="permissions"></a>Permissões
 
@@ -30,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---------------------------------------|:--------------------------------------------|
 | Delegado (conta corporativa ou de estudante)     | Sem suporte. |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Application                            | ExternalItem.ReadWrite.All |
+| Aplicativo                            | ExternalItem.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -53,9 +51,9 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 | Propriedade      | Tipo                                           | Descrição |
 |:--------------|:-----------------------------------------------|:------------|
-| configuração | [configuration](../resources/configuration.md) | Especifica IDs de aplicativo adicionais que têm permissão para gerenciar a conexão e indexar o conteúdo na conexão. |
-| description   | String                                         | Descrição da conexão exibida no centro de administração do Microsoft 365. |
-| nome          | String                                         | O nome de exibição da conexão a ser exibida no centro de administração do Microsoft 365. Comprimento máximo de 128 caracteres. |
+| configuração | [configuration](../resources/configuration.md) | Especifica IDs de aplicativo adicionais que têm permissão para gerenciar a conexão e indexar conteúdo na conexão. |
+| descrição   | String                                         | Descrição da conexão exibida no Centro de administração do Microsoft 365. |
+| nome          | String                                         | O nome de exibição da conexão a ser exibida no Centro de administração do Microsoft 365. Comprimento máximo de 128 caracteres. |
 
 ## <a name="response"></a>Resposta
 

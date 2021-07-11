@@ -1,16 +1,16 @@
 ---
 title: Excluir externalItem
-description: Excluir um externalItem.
+description: Exclua um externalItem.
 localization_priority: Normal
 author: snlraju-msft
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 143b2d266eeea7a7b776f3f75e8005740b4c498e
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 2506d03831637d27ebe3b874361f650e843f1cf4
+ms.sourcegitcommit: 3873c85f53e026073addca92d31d234af244444c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48954583"
+ms.lasthandoff: 07/10/2021
+ms.locfileid: "53366792"
 ---
 # <a name="delete-externalitem"></a>Excluir externalItem
 
@@ -18,9 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Excluir um [externalitem](../resources/externalitem.md).
-
-[!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
+Excluir [um externalitem](../resources/externalitem.md).
 
 ## <a name="permissions"></a>Permissões
 
@@ -30,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---------------------------------------|:--------------------------------------------|
 | Delegado (conta corporativa ou de estudante)     | Sem suporte. |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Application                            | ExternalItem.ReadWrite.All |
+| Aplicativo                            | ExternalItem.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -44,8 +42,8 @@ DELETE /external/connections/{connection-id}/items/{item-id}
 
 | Parâmetro     | Tipo   | Descrição                                         |
 |:--------------|:-------|:----------------------------------------------------|
-| ID de conexão | string | A `id` Propriedade do [externalConnection](../resources/externalconnection.md) que contém |
-| item-id       | string | A propriedade fornecida pelo desenvolvedor `id` do [externalItem](../resources/externalitem.md). |
+| connection-id | cadeia de caracteres | A `id` propriedade do [externalConnection que](../resources/externalconnection.md) contém |
+| item-id       | cadeia de caracteres | A propriedade fornecida `id` pelo desenvolvedor do [externalItem](../resources/externalitem.md). |
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 

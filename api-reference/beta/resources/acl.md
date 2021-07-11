@@ -1,35 +1,33 @@
 ---
-title: tipo de recurso ACL
-description: Uma entrada de controle de acesso para um item indexado por um externalConnection de pesquisa da Microsoft.
+title: Tipo de recurso acl
+description: Uma entrada de controle de acesso para um item indexado por um Pesquisa da Microsoft externalConnection.
 localization_priority: Normal
 author: snlraju-msft
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: 6d390ac0fee3063bd8f0d292d14e04b2616c1d00
-ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
+ms.openlocfilehash: d4c3f3cc72c7fde56665c33561fa435e76842eb1
+ms.sourcegitcommit: 3873c85f53e026073addca92d31d234af244444c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48193530"
+ms.lasthandoff: 07/10/2021
+ms.locfileid: "53366588"
 ---
-# <a name="acl-resource-type"></a>tipo de recurso ACL
+# <a name="acl-resource-type"></a>Tipo de recurso acl
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Uma entrada de controle de acesso para um item indexado por um [externalConnection](externalconnection.md)de pesquisa da Microsoft.
-
-[!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
+Uma entrada de controle de acesso para um item indexado por um Pesquisa da Microsoft [externalConnection](externalconnection.md).
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade       | Tipo   | Descrição                                        |
 |:---------------|:-------|:---------------------------------------------------|
 | accessType     | String | O acesso concedido à identidade. Os valores possíveis são: `grant` e `deny`. |
-| identificação da identidade | String | A fonte de identidade. Os valores possíveis são `azureActiveDirectory` ou `external` .           |
-| tipo           | String | O tipo de identidade. Os valores possíveis são: `user` , `group` , `everyone` , `everyoneExceptGuests` se a identificação do próprio é `azureActiveDirectory` e apenas `group` se a identificação do próprio é `external` . |
-| value          | Cadeia de caracteres | O identificador exclusivo da identidade. No caso de identidades do Active Directory do Azure, `value` é definido como o identificador de objeto do usuário, grupo ou locatário para tipos usuário, grupo e todos (e everyoneExceptGuests), respectivamente. No caso de grupos externos, `value` está definido como a ID do grupo [externo](externalgroup.md).|
+| identitySource | String | A origem da identidade. Os valores possíveis são: `azureActiveDirectory` ou `external`.           |
+| tipo           | String | O tipo de identidade. Os valores possíveis são: `user` , , , se a `group` `everyone` `everyoneExceptGuests` identitySource for `azureActiveDirectory` e apenas se a `group` identitySource for `external` . |
+| value          | Cadeia de caracteres | O identificador exclusivo da identidade. No caso de Azure Active Directory identidades, é definido como o identificador de objeto do usuário, grupo ou locatário para tipos de usuário, grupo e todos `value` (e todosExceptGuests), respectivamente. No caso de grupos `value` externos ser definido como a ID do [externalGroup](externalgroup.md).|
 
 ## <a name="json-representation"></a>Representação JSON
 

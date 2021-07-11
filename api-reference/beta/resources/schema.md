@@ -1,40 +1,38 @@
 ---
-title: tipo de recurso schema
-description: O esquema de conexão determina como o conteúdo adicionado a uma conexão será usado em várias experiências do Microsoft Graph.
+title: tipo de recurso de esquema
+description: O esquema de conexão determina como o conteúdo adicionado a uma conexão será usado em várias experiências Graph Microsoft.
 localization_priority: Normal
 author: snlraju-msft
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: 88509a885a528f9ef2d55cd84381db493e128003
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: 6bcb5d7b10a71f6031a4215fe9f0c294c5af1840
+ms.sourcegitcommit: 3873c85f53e026073addca92d31d234af244444c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50156354"
+ms.lasthandoff: 07/10/2021
+ms.locfileid: "53366937"
 ---
-# <a name="schema-resource-type"></a>tipo de recurso schema
+# <a name="schema-resource-type"></a>tipo de recurso de esquema
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-O [esquema](externalconnection.md) de conexão determina como o conteúdo externo será usado em várias experiências do Microsoft Graph. O esquema é uma lista simples de todas as propriedades que você planeja adicionar à conexão, juntamente com seus atributos, rótulos e aliases. Você deve registrá-lo antes de adicionar itens na conexão.
-
-[!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
+O [esquema](externalconnection.md) de conexão determina como seu conteúdo externo será usado em várias experiências Graph Microsoft. O esquema é uma lista simples de todas as propriedades que você planeja adicionar à conexão, juntamente com seus atributos, rótulos e aliases. Você deve registrá-lo antes de adicionar itens na conexão.
 
 ## <a name="methods"></a>Métodos
 
 | Método                                                    | Tipo de retorno                   | Descrição |
 |:----------------------------------------------------------|:------------------------------|:--|
-| [Criar esquema](../api/externalconnection-post-schema.md) | Nenhum *ou* [esquema](schema.md) | Registre o esquema de conexão. |
-| [Obter esquema](../api/schema-get.md)                        | [schema](schema.md)           | Leia as propriedades de um objeto schema. |
+| [Criar esquema](../api/externalconnection-post-schema.md) | Nenhum *ou* [esquema](schema.md) | Registrar esquema de conexão. |
+| [Obter esquema](../api/schema-get.md)                        | [schema](schema.md)           | Ler propriedades de um objeto de esquema. |
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade   | Tipo                               | Descrição                |
 |:-----------|:-----------------------------------|:---------------------------|
 | baseType   | String                             | Deve ser definida como `microsoft.graph.externalItem`. Obrigatório. |
-| properties | [coleção de](property.md) propriedades | As propriedades definidas para os itens na conexão. O número mínimo de propriedades é um, o máximo é 128. |
+| properties | [coleção property](property.md) | As propriedades definidas para os itens na conexão. O número mínimo de propriedades é um, o máximo é 128. |
 
 ## <a name="relationships"></a>Relações
 

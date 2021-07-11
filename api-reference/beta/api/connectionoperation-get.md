@@ -1,16 +1,16 @@
 ---
 title: Obter connectionOperation
-description: Recupere as propriedades de um connectionOperation.
+description: Recupere as propriedades de uma connectionOperation.
 localization_priority: Normal
 author: snlraju-msft
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 53a52e4af74fcf8ee0528dbd3ac31f56a93a3d13
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: f709d05f1b93b3443dffc5171da6deb39dadc187
+ms.sourcegitcommit: 3873c85f53e026073addca92d31d234af244444c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48957544"
+ms.lasthandoff: 07/10/2021
+ms.locfileid: "53366573"
 ---
 # <a name="get-connectionoperation"></a>Obter connectionOperation
 
@@ -18,9 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere as propriedades de um [connectionOperation](../resources/connectionoperation.md).
-
-[!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
+Recupere as propriedades de [uma connectionOperation](../resources/connectionoperation.md).
 
 ## <a name="permissions"></a>Permissões
 
@@ -30,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---------------------------------------|:--------------------------------------------|
 | Delegado (conta corporativa ou de estudante)     | Sem suporte. |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Application                            | ExternalItem.ReadWrite.All |
+| Aplicativo                            | ExternalItem.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -52,7 +50,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e o objeto [connectionOperation](../resources/connectionoperation.md) solicitado no corpo da resposta.
+Se tiver êxito, este método retornará um código `200 OK` de resposta e o objeto [connectionOperation](../resources/connectionoperation.md) solicitado no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

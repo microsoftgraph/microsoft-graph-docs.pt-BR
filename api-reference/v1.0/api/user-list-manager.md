@@ -5,12 +5,12 @@ localization_priority: Priority
 author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 151e738e2766c7bcc0fc35443a8e8c0a2cdc65ce
-ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
+ms.openlocfilehash: f120af7868c5a55895e4c3d700b7276d6220cd1f
+ms.sourcegitcommit: 4888ac7504533344c4fc6828e2a06a002a1d72d3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51474092"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53351321"
 ---
 # <a name="list-manager"></a>Listar gerente
 
@@ -54,6 +54,7 @@ Este método oferece suporte aos parâmetros de consulta `$select` e `$expand`[O
 > + O valor `n` de `$levels` pode ser `max` (para retornar todos os gerentes) ou um número entre 1 e 1000.  
 > + Quando o `$levels` parâmetro não for especificado, apenas o gerente imediato será retornado.  
 > + Você pode especificar `$select` dentro de `$expand` para selecionar as propriedades do gerente individual. O parâmetro `$levels` é obrigatório: `$expand=manager($levels=max;$select=id,displayName)`
+> + Para selecionar as propriedades do gerenciador expandido, o parâmetro `$count=true` deve ser adicionado à consulta, bem como ao cabeçalho, `ConsistencyLevel=eventual`. Você pode ver isso implementado no Exemplo 2.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 

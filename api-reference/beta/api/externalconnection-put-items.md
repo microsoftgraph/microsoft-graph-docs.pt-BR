@@ -5,12 +5,12 @@ localization_priority: Normal
 author: snlraju-msft
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: b4617596a10a85a4378b1e7ad4c4ca94fb16ffac
-ms.sourcegitcommit: c7776e5659c391e7c9ce1cd46e242a5ddc38dba2
+ms.openlocfilehash: 170c3fb87903e6f2f66fe910d80ca8f4a6e87b50
+ms.sourcegitcommit: 3873c85f53e026073addca92d31d234af244444c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51491002"
+ms.lasthandoff: 07/10/2021
+ms.locfileid: "53366789"
 ---
 # <a name="create-externalitem"></a>Criar externalItem
 
@@ -21,8 +21,6 @@ Namespace: microsoft.graph
 Crie um novo [externalItem](../resources/externalitem.md).
 
 Essa API pode ser usada para criar um item personalizado. Especifique o tipo que você está criando incluindo `@odata.type` a propriedade no corpo JSON. O [externalConnection que contém](../resources/externalconnection.md) deve ter um [esquema](../resources/schema.md) registrado do tipo correspondente.
-
-[!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
 
 ## <a name="permissions"></a>Permissões
 
@@ -46,8 +44,8 @@ PUT /external/connections/{connection-id}/items/{item-id}
 
 | Parâmetro     | Tipo   | Descrição                                         |
 |:--------------|:-------|:----------------------------------------------------|
-| connection-id | string | A `id` propriedade do [externalConnection que](../resources/externalconnection.md) contém |
-| item-id       | string | A propriedade fornecida `id` pelo desenvolvedor do [externalItem](../resources/externalitem.md). Se nenhum item já existir com `id` isso, um novo item será criado. Se um item já existir com isso `id` , ele será substituído pelo objeto enviado no corpo. |
+| connection-id | cadeia de caracteres | A `id` propriedade do [externalConnection que](../resources/externalconnection.md) contém |
+| item-id       | cadeia de caracteres | A propriedade fornecida `id` pelo desenvolvedor do [externalItem](../resources/externalitem.md). Se nenhum item já existir com `id` isso, um novo item será criado. Se um item já existir com isso `id` , ele será substituído pelo objeto enviado no corpo. |
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 

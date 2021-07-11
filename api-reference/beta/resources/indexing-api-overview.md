@@ -5,12 +5,12 @@ localization_priority: Priority
 author: snlraju-msft
 ms.prod: search
 doc_type: conceptualPageType
-ms.openlocfilehash: 4940e2529a08f326f5e8615987e18488a5a2dbeb
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: 69a1c99af429b93d7fbddbea4e76523b281541d7
+ms.sourcegitcommit: 3873c85f53e026073addca92d31d234af244444c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48403868"
+ms.lasthandoff: 07/10/2021
+ms.locfileid: "53366959"
 ---
 # <a name="use-the-microsoft-search-api-to-index-data"></a>Usar a API de Pesquisa da Microsoft para indexar dados
 
@@ -19,8 +19,6 @@ ms.locfileid: "48403868"
 Você pode usar o Microsoft Graph para adicionar itens personalizados aos resultados da pesquisa na experiência de [Pesquisa da Microsoft](/microsoftsearch/overview-microsoft-search).
 
 As solicitações de indexação de dados são realizadas em nome de um aplicativo sem a presença de um usuário conectado, identificado usando um [token de acesso com permissão de aplicativo](/graph/auth-v2-service).
-
-[!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
 
 ## <a name="common-use-cases"></a>Casos de uso comuns
 

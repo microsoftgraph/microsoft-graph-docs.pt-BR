@@ -1,33 +1,31 @@
 ---
-title: tipo de recurso externalItemContent
-description: O conteúdo de um item indexado por meio de uma conexão de pesquisa da Microsoft.
+title: Tipo de recurso externalItemContent
+description: O conteúdo de um item indexado por meio de Pesquisa da Microsoft conexão.
 localization_priority: Normal
 author: snlraju-msft
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: 66e3fccc8c072d06d2328301100d6bf3a0d50806
-ms.sourcegitcommit: 7732d20bd99a125118f7cea146c3f2416879f949
+ms.openlocfilehash: 036b2e2d4081160680b7f5471bd2707ee503bc4a
+ms.sourcegitcommit: 3873c85f53e026073addca92d31d234af244444c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "49777624"
+ms.lasthandoff: 07/10/2021
+ms.locfileid: "53366538"
 ---
-# <a name="externalitemcontent-resource-type"></a>tipo de recurso externalItemContent
+# <a name="externalitemcontent-resource-type"></a>Tipo de recurso externalItemContent
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-O conteúdo de um [externalItem](externalitem.md) indexado por meio de uma [conexão](externalconnection.md)de pesquisa da Microsoft.
-
-[!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
+O conteúdo de [um externalItem](externalitem.md) indexado por meio de uma conexão Pesquisa da Microsoft [.](externalconnection.md)
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade | Tipo   | Descrição                                                                                 |
 |:---------|:-------|:--------------------------------------------------------------------------------------------|
 | valor    | Cadeia de caracteres | O conteúdo do externalItem. Obrigatório.                                                 |
-| type     | Cadeia de caracteres | O tipo de conteúdo na propriedade Value. Os valores possíveis são: `text` e `html`. Obrigatório. |
+| tipo     | String | O tipo de conteúdo na propriedade value. Os valores possíveis são: `text` e `html`. Obrigatório. |
 
 ## <a name="relationships"></a>Relações
 

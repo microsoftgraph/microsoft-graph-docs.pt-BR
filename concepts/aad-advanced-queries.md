@@ -4,12 +4,12 @@ description: Os objetos do diretório Microsoft Azure Active Directory suportam 
 author: Licantrop0
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: e8a6c4a3a2d37eafeaee85f7778baa68bad97357
-ms.sourcegitcommit: 4888ac7504533344c4fc6828e2a06a002a1d72d3
+ms.openlocfilehash: 03210e9c46776c4fbc92057870737a87c7e47371
+ms.sourcegitcommit: 3873c85f53e026073addca92d31d234af244444c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "53351283"
+ms.lasthandoff: 07/10/2021
+ms.locfileid: "53366511"
 ---
 # <a name="advanced-query-capabilities-on-azure-ad-directory-objects"></a>Recursos avançados de consulta nos objetos do diretório Microsoft Azure Active Directory
 
@@ -36,7 +36,7 @@ GET https://graph.microsoft.com/v1.0/users?$filter=accountEnabled eq false
   "name": "get_users_not_enabled"
 } -->
 ```msgraph-interactive
-https://graph.microsoft.com/v1.0/users?$filter=accountEnabled ne true&$count=true
+GET https://graph.microsoft.com/v1.0/users?$filter=accountEnabled ne true&$count=true
 ConsistencyLevel: eventual
 ```
 
@@ -202,4 +202,4 @@ Content-type: application/json
 
 - [Usar parâmetros de consulta para personalizar respostas](/graph/query-parameters)
 - [Limitações do parâmetro de consulta](known-issues.md#query-parameter-limitations)
-- [Usar o parâmetro de consulta $search para corresponder a um critério de pesquisa](/graph/aad-advanced-queries)
+- [Usar o parâmetro de consulta $search para corresponder a um critério de pesquisa](/graph/search-query-parameter)

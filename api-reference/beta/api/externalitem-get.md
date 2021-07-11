@@ -5,12 +5,12 @@ localization_priority: Normal
 author: snlraju-msft
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: a504455b1f898d675474406e249e2637c12e1c69
-ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
+ms.openlocfilehash: 2c0bdc7d44e2d9fb5c317ab2eb1cbc71cca76031
+ms.sourcegitcommit: 3873c85f53e026073addca92d31d234af244444c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48192187"
+ms.lasthandoff: 07/10/2021
+ms.locfileid: "53366748"
 ---
 # <a name="get-externalitem"></a>Obter externalItem
 
@@ -18,11 +18,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obtenha as propriedades e os relacionamentos de um objeto [externalitem](../resources/externalitem.md) .
+Obter as propriedades e as relações de um [objeto externalitem.](../resources/externalitem.md)
 
-Essa API é fornecida apenas para fins de diagnóstico. Ele não se destina a ser usado para qualquer outra finalidade. Solicitações repetidas para essa API podem resultar em `429` erros http.
-
-[!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
+Essa API é fornecida apenas para fins de diagnóstico. Ele não se destina a ser usado para qualquer outra finalidade. Solicitações repetidas para essa API podem resultar em `429` erros HTTP.
 
 ## <a name="permissions"></a>Permissões
 
@@ -31,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
 | Delegado (conta corporativa ou de estudante)     | Sem suporte. |
-| Delegada (conta pessoal da Microsoft) | Sem suporte. |
+| Delegado (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo                            | ExternalItem.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -46,12 +44,12 @@ GET /external/connections/{connection-id}/items/{item-id}
 
 | Parâmetro     | Tipo   | Descrição                                         |
 |:--------------|:-------|:----------------------------------------------------|
-| ID de conexão | string | A `id` Propriedade do [externalConnection](../resources/externalconnection.md) que contém |
-| item-id       | string | A propriedade fornecida pelo desenvolvedor `id` do [externalItem](../resources/externalitem.md). |
+| connection-id | cadeia de caracteres | A `id` propriedade do [externalConnection que](../resources/externalconnection.md) contém |
+| item-id       | cadeia de caracteres | A propriedade fornecida `id` pelo desenvolvedor do [externalItem](../resources/externalitem.md). |
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Este método não oferece suporte a parâmetros de consulta opcionais para personalizar a resposta.
+Este método não dá suporte a parâmetros de consulta opcionais para personalizar a resposta.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -65,7 +63,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [externalItem](../resources/externalitem.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código `200 OK` de resposta e um objeto [externalItem](../resources/externalitem.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
