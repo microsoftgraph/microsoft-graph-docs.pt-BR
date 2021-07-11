@@ -3,12 +3,12 @@ title: Problemas conhecidos com o Microsoft Graph
 description: Este artigo descreve os problemas conhecidos com o Microsoft Graph.
 author: MSGraphDocsVTeam
 localization_priority: Priority
-ms.openlocfilehash: 1adf4a4f756be0ce4f8e338ee016bbb3d3059177
-ms.sourcegitcommit: 5a1cc1943527aa268e3797ee514871e65eb474a6
+ms.openlocfilehash: 257d8966eabe2428072f470f290816a1c9c2e35d
+ms.sourcegitcommit: 4888ac7504533344c4fc6828e2a06a002a1d72d3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53030772"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53351105"
 ---
 # <a name="known-issues-with-microsoft-graph"></a>Problemas conhecidos com o Microsoft Graph
 
@@ -184,6 +184,15 @@ GET /users/{id | userPrincipalName}/contacts/{id}
 * O contexto de OData às vezes é retornado incorretamente ao controlar alterações nas relações.
 * As extensões de esquema (herdadas) não são retornadas com instrução $select, mas são retornadas sem $select.
 * Os clientes não podem controlar alterações em extensões abertas ou extensões de esquema.
+
+## <a name="devices-and-apps--device-updates-windows-updates"></a>Dispositivos e aplicativos | Atualizações do dispositivo (atualizações do Windows)
+
+### <a name="accessing-and-updating-deployment-audiences"></a>Acessando e atualizando audiências de implantação
+
+Acessando e atualizando audiências de implantação em recursos de **implantação** criados por meio do Intune não são suportados atualmente.
+
+* [Listando membros da audiência de implantação](/graph/api/windowsupdates-deploymentaudience-list-members) e [listando exclusões da audiência de implantação](/graph/api/windowsupdates-deploymentaudience-list-exclusions) retornos `404 Not Found`.
+* [Atualizar membros da audiência de implantação e exclusões](/graph/api/windowsupdates-deploymentaudience-updateaudience) ou [atualizar por ID](/graph/api/windowsupdates-deploymentaudience-updateaudiencebyid) retorna `202 Accepted`, mas a audiência não é atualizada.
 
 ## <a name="extensions"></a>Extensões
 
