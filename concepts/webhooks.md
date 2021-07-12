@@ -5,12 +5,12 @@ author: davidmu1
 ms.prod: non-product-specific
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: 769e3f9fcb5c14731db311f049afbc7a9982c0d6
-ms.sourcegitcommit: e4461c7eb8c3d265fc1aa766125e81b58c6e1099
+ms.openlocfilehash: 5f25acf793d2b8bda00e298665ae8f9766f410b4
+ms.sourcegitcommit: 3873c85f53e026073addca92d31d234af244444c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "52941449"
+ms.lasthandoff: 07/10/2021
+ms.locfileid: "53366881"
 ---
 # <a name="set-up-notifications-for-changes-in-user-data"></a>Configurar notificações para alterações nos dados de usuário
 
@@ -45,6 +45,7 @@ Usando a API do Microsoft Graph, um aplicativo pode se inscrever para alteraçõ
 - [Lista][] do Microsoft Office SharePoint Online
 - Teams [callRecord][]
 - [Canal][] do Teams
+- [Chat][] do Teams
 - [chatMessage][] do Teams
 - [conversationMember][] do Teams
 - [presence][] do Teams (visualização)
@@ -112,7 +113,7 @@ Cada recurso do Teams possui cotas de assinatura diferentes.
 
 ## <a name="subscription-lifetime"></a>Tempo de vida da assinatura
 
-As assinaturas têm tempo de vida limitado. Os aplicativos precisam renovar suas assinaturas antes do tempo de expiração. Caso contrário, será preciso criar uma nova assinatura. Confira a lista de prazos máximos em [Prazo máximo de assinatura por tipo de recurso](/graph/api/resources/subscription?view=graph-rest-1.0#maximum-length-of-subscription-per-resource-type).
+As assinaturas têm tempo de vida limitado. Os aplicativos precisam renovar suas assinaturas antes do tempo de expiração. Caso contrário, será preciso criar uma nova assinatura. Confira a lista de prazos máximos em [Prazo máximo de assinatura por tipo de recurso](/graph/api/resources/subscription#maximum-length-of-subscription-per-resource-type).
 
 Os aplicativos também podem cancelar a assinatura a qualquer momento para deixarem de receber notificações de alteração.
 
@@ -151,13 +152,13 @@ Content-Type: application/json
 }
 ```
 
-As propriedades `changeType`, `notificationUrl`, `resource` e `expirationDateTime` são obrigatórias. Confira os valores e as definições de propriedade em [tipo de recurso de assinatura](/graph/api/resources/subscription?view=graph-rest-1.0).
+As propriedades `changeType`, `notificationUrl`, `resource` e `expirationDateTime` são obrigatórias. Confira os valores e as definições de propriedade em [tipo de recurso de assinatura](/graph/api/resources/subscription).
 
 A propriedade `resource` especifica o recurso que será monitorado para detectar alterações. Por exemplo, você pode criar uma assinatura para uma pasta de email específica: `me/mailFolders('inbox')/messages` ou em nome de um usuário, atribuído com uma autorização do administrador: `users/john.doe@onmicrosoft.com/mailFolders('inbox')/messages`.
 
 Embora `clientState` não seja obrigatória, você deve incluí-la para manter a conformidade com nosso processo recomendado de manipulação de notificações de alterações. A definição desta propriedade permitirá confirmar se as notificações de alteração recebidas partiram do serviço do Microsoft Graph. Por esse motivo, o valor da propriedade deve continuar em segredo e deve ser conhecido somente por seu aplicativo e pelo serviço do Microsoft Graph.
 
-Se tiver êxito, o Microsoft Graph retornará um código `201 Created` e um objeto [subscription](/graph/api/resources/subscription?view=graph-rest-1.0) no corpo.
+Se tiver êxito, o Microsoft Graph retornará um código `201 Created` e um objeto [subscription](/graph/api/resources/subscription) no corpo.
 
 > **Observação:** Qualquer parâmetro da cadeia de caracteres de consulta incluído na propriedade **notificationUrl** será incluído na solicitação de POST HTTP quando as notificações estiverem sendo entregues.
 
@@ -207,7 +208,7 @@ Content-Type: application/json
 }
 ```
 
-Se tiver êxito, o Microsoft Graph retornará um código `200 OK` e um objeto [subscription](/graph/api/resources/subscription?view=graph-rest-1.0) no corpo. O objeto subscription inclui o novo valor de `expirationDateTime`.
+Se tiver êxito, o Microsoft Graph retornará um código `200 OK` e um objeto [subscription](/graph/api/resources/subscription) no corpo. O objeto subscription inclui o novo valor de `expirationDateTime`.
 
 ### <a name="deleting-a-subscription"></a>Excluindo uma assinatura
 
@@ -295,6 +296,7 @@ A tabela a seguir lista a latência esperada entre um evento acontecendo no serv
 |[alerta][] | Menos de 3 minutos | 5 minutos |
 |[callRecord][] | Menos de 15 minutos | 60 minutos |
 |[canal][] | Menos de 10 segundos | 60 minutos |
+|[chat][] | Menos de 10 segundos | 60 minutos |
 |[chatMessage][] | Menos de 10 segundos | 1 minuto |
 |[contato][] | Desconhecido | Desconhecido |
 |[conversa][] | Desconhecido | Desconhecido |
@@ -315,23 +317,23 @@ A tabela a seguir lista a latência esperada entre um evento acontecendo no serv
 
 ## <a name="see-also"></a>Confira também
 
-- [Tipo de recurso de assinatura](/graph/api/resources/subscription?view=graph-rest-1.0)
-- [Obter assinatura](/graph/api/subscription-get?view=graph-rest-1.0)
-- [Criar assinatura](/graph/api/subscription-post-subscriptions?view=graph-rest-1.0)
-- Tipo de recurso [changeNotification](/graph/api/resources/changenotification?view=graph-rest-beta)
-- Tipo de recurso [changeNotificationCollection](/graph/api/resources/changenotificationcollection?view=graph-rest-beta)
+- [Tipo de recurso de assinatura](/graph/api/resources/subscription?view=graph-rest-1.0&preserve-view=true)
+- [Obter assinatura](/graph/api/subscription-get?view=graph-rest-1.0&preserve-view=true)
+- [Criar assinatura](/graph/api/subscription-post-subscriptions?view=graph-rest-1.0&preserve-view=true)
+- Tipo de recurso [changeNotification](/graph/api/resources/changenotification?view=graph-rest-beta&preserve-view=true)
+- Tipo de recurso [changeNotificationCollection](/graph/api/resources/changenotificationcollection?view=graph-rest-beta&preserve-view=true)
 - [Tutorial para notificações de alteração as notificações e controle de alterações](/learn/modules/msgraph-changenotifications-trackchanges)
 - [Notificações do ciclo de vida](./webhooks-lifecycle.md)
 
-[contato]: /graph/api/resources/contact?view=graph-rest-1.0
-[conversa]: /graph/api/resources/conversation?view=graph-rest-1.0
-[driveItem]: /graph/api/resources/driveitem?view=graph-rest-1.0
-[event]: /graph/api/resources/event?view=graph-rest-1.0
-[group]: /graph/api/resources/group?view=graph-rest-1.0
-[message]: /graph/api/resources/message?view=graph-rest-1.0
-[user]: /graph/api/resources/user?view=graph-rest-1.0
-[alert]: /graph/api/resources/alert?view=graph-rest-1.0
-[callRecord]: /graph/api/resources/callrecords-callrecord?view=graph-rest-1.0
+[contato]: /graph/api/resources/contact
+[conversa]: /graph/api/resources/conversation
+[driveItem]: /graph/api/resources/driveitem
+[event]: /graph/api/resources/event
+[group]: /graph/api/resources/group
+[message]: /graph/api/resources/message
+[user]: /graph/api/resources/user
+[alert]: /graph/api/resources/alert
+[callRecord]: /graph/api/resources/callrecords-callrecord
 [presence]: /graph/api/resources/presence
 [chatMessage]: /graph/api/resources/chatmessage
 [list]: /graph/api/resources/list
@@ -339,5 +341,6 @@ A tabela a seguir lista a latência esperada entre um evento acontecendo no serv
 [printTaskDefinition]: /graph/api/resources/printtaskdefinition
 [todoTask]: /graph/api/resources/todotask
 [canal]: /graph/api/resources/channel
+[chat]: /graph/api/resources/chat
 [conversationMember]: /graph/api/resources/conversationmember
 [equipe]: /graph/api/resources/team
