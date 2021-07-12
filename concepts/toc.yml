@@ -530,12 +530,16 @@ items:
                 items:
                   - name: Visão Geral
                     href: change-notification-in-microsoft-teams-overview.md
-                  - name: Mensagens de chat e de canal
-                    href: teams-changenotifications-chatmessage.md
                   - name: Equipes e canais
                     href: teams-changenotifications-team-and-channel.md
                   - name: Associação da equipe
                     href: teams-changenotifications-teamMembership.md
+                  - name: Mensagens de chat e de canal
+                    href: teams-changenotifications-chatmessage.md
+                  - name: Chat
+                    href: teams-changenotifications-chat.md
+                  - name: Chat da associação
+                    href: teams-changenotifications-chatMembership.md
           - name: Controle de alterações
             displayName: 'Delta query, track changes, Outlook calendar, Groups, Outlook mail, Users'
             items:
