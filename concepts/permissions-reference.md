@@ -4,12 +4,12 @@ description: O Microsoft Graph expõe as permissões granulares que controlam o 
 author: jackson-woods
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 3f16aa9536fa780022cd596e849539488a7ff92d
-ms.sourcegitcommit: 4888ac7504533344c4fc6828e2a06a002a1d72d3
+ms.openlocfilehash: 2ffa8a0d1bc6359ec5a7424674a297e8763c989d
+ms.sourcegitcommit: 8b23038be1141d7f22eb61de6aafdb16d4f9c826
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "53350674"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "53401488"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Referência de permissões do Microsoft Graph
 
@@ -1724,10 +1724,11 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 ## <a name="search-permissions"></a>Permissões de pesquisa
 
 #### <a name="application-permissions"></a>Permissões de aplicativos
-
 |   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador | Suporte da conta da Microsoft |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _ExternalItem.ReadWrite.All_ | Ler e gravar dados externos | Permite que um aplicativo grave externamente com a API de indexação de conectores do Microsoft Graph. | Sim | Não |
+| _ExternalConnection.ReadWrite.OwnedBy_ | Leitura e gravação de conexões externas e configurações de conexão | Permite que o aplicativo faça leitura e gravação de conexões externas e suas configurações sem um usuário conectado. O aplicativo somente pode ler e gravar conexões externas às qual está autorizado ou pode criar novas conexões externas. | Sim | Não |
+| _ExternalItem.ReadWrite.OwnedBy_ | Ler e gravar itens externos | Permite que o aplicativo leia e grave itens externos sem um usuário conectado. O aplicativo somente pode ler itens externos da conexão à qual está autorizado. | Sim | Não |
+| _ExternalItem.ReadWrite.All_ | Leitura e gravação de todos os itens externos | Permite que o aplicativo faça leitura e gravação de todos os itens externos sem um usuário conectado. | Sim | Não |
 
 #### <a name="delegated-permissions"></a>Permissões delegadas
 

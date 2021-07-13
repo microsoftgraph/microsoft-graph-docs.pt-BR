@@ -5,12 +5,12 @@ localization_priority: Priority
 author: nmoreau
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: 0b15c7ceb87af0fa1d7deede3e583cc75f2a898e
-ms.sourcegitcommit: ae83b2b372902268517fd17a8b10d6d9add422af
+ms.openlocfilehash: 6b937c93e431501da3ad578135577d942c5d4b37
+ms.sourcegitcommit: 8b23038be1141d7f22eb61de6aafdb16d4f9c826
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "53334007"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "53401341"
 ---
 # <a name="use-the-microsoft-search-api-to-query-data"></a>Usar a API de Pesquisa da Microsoft para consultar dados
 
@@ -97,9 +97,9 @@ Ao pesquisar um tipo de entidade, como **mensagem**, **evento**, **unidade**, **
 
 Para todos esses tipos de entidade, especificar a propriedade **campos** reduz o número de propriedades retornadas na resposta, melhorando a carga na conexão.
 
-As entidades **listItem** e **externalItem** são as únicas entidades com suporte que permitem a colocação de campos estendidos configurados no esquema. Não é possível recuperar propriedades estendidas de todas as outras entidades. Por exemplo, se você criou um campo para **externalItem** no esquema de pesquisa ou se tiver uma coluna personalizada em uma **listItem**, você pode recuperar essas propriedades da pesquisa. Para recuperar uma propriedade estendida de um arquivo, especifique o tipo **listItem** na solicitação.
+As entidades **listItem** e **externalItem** são as únicas entidades suportadas que permitem a obtenção de campos extensíveis de recuperação configurados no esquema. Você não pode recuperar as propriedades estendidas de todas as outras entidades usando a API de pesquisa. Por exemplo, se você criou um campo recuperável para **externalItem** no esquema de pesquisa, ou se você tem uma coluna personalizada recuperável em uma **listItem**, você pode recuperar essas propriedades da pesquisa. Para recuperar uma propriedade estendida de um arquivo, especifique o tipo de **listItem** na solicitação.
 
-Se os **campos** especificados na solicitação não estiverem presentes no esquema, eles não serão retornados na resposta. Campos inválidos na solicitação são ignorados silenciosamente.
+Se os **campos** especificados na solicitação não estiverem presentes no esquema ou não estiverem marcados como recuperáveis, eles não serão devolvidos na resposta. Campos inválidos na solicitação são ignorados silenciosamente.
 
 Se você não especificar nenhum **campo** na solicitação, obterá o conjunto padrão de propriedades para todos os tipos. Para propriedades estendidas, **listItem** e **externalItem** se comportam de forma diferente quando nenhum **campo** é passado na solicitação:
 

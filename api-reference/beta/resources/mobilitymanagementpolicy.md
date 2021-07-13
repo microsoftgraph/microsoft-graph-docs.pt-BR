@@ -5,12 +5,12 @@ author: ravennMSFT
 localization_priority: Normal
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 7f0c073d0737c634872009fffa5425ffe74f4e54
-ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
+ms.openlocfilehash: 6c2035d96293a28f4d8289606df709fc64d9c3e7
+ms.sourcegitcommit: 8b23038be1141d7f22eb61de6aafdb16d4f9c826
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52547320"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "53401537"
 ---
 # <a name="mobilitymanagementpolicy-resource-type"></a>Tipo de recurso mobilityManagementPolicy
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-No Azure AD, uma política de gerenciamento de mobilidade representa uma configuração de registro automático para um aplicativo de gerenciamento de mobilidade (MDM ou MAM). Essas políticas só são aplicáveis a dispositivos com base no sistema operacional Windows 10 e seus derivados (Surface Hub, Hololens etc.). [O registro automático](https://docs.microsoft.com/windows/client-management/mdm/azure-ad-and-microsoft-intune-automatic-mdm-enrollment-in-the-new-portal) permite que as organizações registrem automaticamente dispositivos no aplicativo de gerenciamento de mobilidade escolhido como parte do processo de registro do [Azure AD](https://docs.microsoft.com/azure/active-directory/devices/concept-azure-ad-join) ou do [Azure AD](https://docs.microsoft.com/azure/active-directory/devices/concept-azure-ad-register) em Windows 10 dispositivos.
+No Azure AD, uma política de gerenciamento de mobilidade representa uma configuração de registro automático para um aplicativo de gerenciamento de mobilidade (MDM ou MAM). Essas políticas só são aplicáveis a dispositivos com base no sistema operacional Windows 10 e seus derivados (Surface Hub, Hololens etc.). [O registro automático](/windows/client-management/mdm/azure-ad-and-microsoft-intune-automatic-mdm-enrollment-in-the-new-portal) permite que as organizações registrem automaticamente dispositivos no aplicativo de gerenciamento de mobilidade escolhido como parte do processo de registro do [Azure AD](/azure/active-directory/devices/concept-azure-ad-join) ou do [Azure AD](/azure/active-directory/devices/concept-azure-ad-register) em Windows 10 dispositivos.
 
 ## <a name="methods"></a>Métodos
 
@@ -42,12 +42,13 @@ No Azure AD, uma política de gerenciamento de mobilidade representa uma configu
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |appliesTo|policyScope|Indica o escopo do usuário da política de gerenciamento de mobilidade. Os valores possíveis são: `none`, `all`, `selected`.|
-|complianceUrl|String|URL de conformidade do aplicativo de gerenciamento de mobilidade.|
-|descrição|String|Descrição do aplicativo de gerenciamento de mobilidade.|
-|discoveryUrl|String|URL de descoberta do aplicativo de gerenciamento de mobilidade.|
-|displayName|String|Nome de exibição do aplicativo de gerenciamento de mobilidade.|
-|id|String|ID do objeto do aplicativo de gerenciamento de mobilidade.|
-|termsOfUseUrl|String|Termos de Uso URL do aplicativo de gerenciamento de mobilidade.|
+|complianceUrl|Cadeia de caracteres|URL de conformidade do aplicativo de gerenciamento de mobilidade.|
+|description|Cadeia de caracteres|Descrição do aplicativo de gerenciamento de mobilidade.|
+|discoveryUrl|Cadeia de caracteres|URL de descoberta do aplicativo de gerenciamento de mobilidade.|
+|displayName|Cadeia de caracteres|Nome de exibição do aplicativo de gerenciamento de mobilidade.|
+|id|Cadeia de caracteres|ID do objeto do aplicativo de gerenciamento de mobilidade.|
+|isValid|Boolean|Se a política é válida. Políticas inválidas podem não ser atualizadas e devem ser excluídas.|
+|termsOfUseUrl|Cadeia de caracteres|Termos de Uso URL do aplicativo de gerenciamento de mobilidade.|
 
 ## <a name="relationships"></a>Relações
 
@@ -74,6 +75,7 @@ Veja a seguir uma representação JSON do recurso.
   "description": "String",
   "discoveryUrl": "String",
   "displayName": "String",
+  "isValid": "Boolean",
   "termsOfUseUrl": "String"
 }
 ```

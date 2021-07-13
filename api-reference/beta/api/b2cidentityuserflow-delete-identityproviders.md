@@ -1,22 +1,23 @@
 ---
-title: Excluir identityProvider de um b2cIdentityUserFlow
-description: Exclua um identityProvider de um b2cIdentityUserFlow.
+title: Excluir identityProvider de um b2cIdentityUserFlow (preterido)
+description: Exclua um identityProvider de um b2cIdentityUserFlow. (preterido)
 localization_priority: Normal
 doc_type: apiPageType
-author: jkdouglas
+author: namkedia
 ms.prod: identity-and-sign-in
-ms.openlocfilehash: 290a2e7597f0211bf4aefbda70273efb5003aa69
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: a6d825cd474a38176256e0e18dd6b77d1345a64b
+ms.sourcegitcommit: 8b23038be1141d7f22eb61de6aafdb16d4f9c826
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50944864"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "53400989"
 ---
-# <a name="delete-an-identityprovider-from-a-b2cidentityuserflow"></a>Excluir um identityProvider de um b2cIdentityUserFlow
+# <a name="delete-an-identityprovider-from-a-b2cidentityuserflow-deprecated"></a>Excluir um identityProvider de um b2cIdentityUserFlow (preterido)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+[!INCLUDE [identityprovider-deprecate](../../includes/identityprovider-deprecate.md)]
 
 Exclua um provedor de identidade de um [objeto b2cIdentityUserFlow.](../resources/b2cidentityuserflow.md) Para obter mais informações sobre provedores de identidade disponíveis para fluxos de usuários, consulte a referência da API [identityProviders.](../resources/identityprovider.md)
 
@@ -33,7 +34,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 A conta de trabalho ou de estudante precisa pertencer a uma das seguintes funções:
 
 * Administrador global
-* Administrador de Fluxo de Usuário de Identidade Externa
+* Administrador de identidade externa Flow usuário
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -63,8 +64,6 @@ Se tiver êxito, este método retornará um código de resposta `204 No Content`
 
 Este é um exemplo de solicitação.
 
-
-# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "delete_b2xUserFlows_identityProviders_1"
@@ -74,24 +73,6 @@ Este é um exemplo de solicitação.
 ``` http
 DELETE https://graph.microsoft.com/beta/identity/b2cUserFlows/B2C_1_CustomerSignUp/identityProviders/Facebook-OAUTH/$ref
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/delete-b2xuserflows-identityproviders-1-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/delete-b2xuserflows-identityproviders-1-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/delete-b2xuserflows-identityproviders-1-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/delete-b2xuserflows-identityproviders-1-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 
 ### <a name="response"></a>Resposta
 
@@ -105,5 +86,3 @@ Este é um exemplo de resposta.
 ```http
 HTTP/1.1 204 No Content
 ```
-
-

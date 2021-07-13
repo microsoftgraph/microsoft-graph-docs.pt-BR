@@ -5,12 +5,12 @@ author: ravennMSFT
 localization_priority: Normal
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 2b83a7c797d790600aa391712e1deb70b5639cf7
-ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
+ms.openlocfilehash: 9f29a263601958820d69fe51f146d34eb5a079c6
+ms.sourcegitcommit: 8b23038be1141d7f22eb61de6aafdb16d4f9c826
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52547293"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "53401453"
 ---
 # <a name="list-includedgroups"></a>Listar includedGroups
 
@@ -26,7 +26,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|Policy.Read.All, Policy.ReadWrite.All|
+|Delegado (conta corporativa ou de estudante)|Policy.Read.All, Policy.ReadWrite.MobilityManagement|
 |Delegado (conta pessoal da Microsoft) | Sem suporte.|
 |Aplicativo | Sem suporte.|
 

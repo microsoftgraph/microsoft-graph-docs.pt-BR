@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: e0d85470f8217887364d8c37e760945205edec51
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: f4cec8ead5d678e937b2648089593950fb104ff5
+ms.sourcegitcommit: 8b23038be1141d7f22eb61de6aafdb16d4f9c826
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52048523"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "53401003"
 ---
 # <a name="create-accesspackageresourcerequest"></a>Criar accessPackageResourceRequest
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Crie um novo [objeto accessPackageResourceRequest](../resources/accesspackageresourcerequest.md) para solicitar a adição de um recurso a um catálogo de pacotes de acesso ou a remoção de um recurso de um catálogo.
+Crie um novo [objeto accessPackageResourceRequest](../resources/accesspackageresourcerequest.md) para solicitar a adição de um recurso a um catálogo de pacotes de acesso ou a remoção de um recurso de um catálogo.  Um recurso deve ser incluído em um catálogo de pacotes de acesso antes que a função desse recurso possa ser adicionada a um pacote de acesso.
 
 ## <a name="permissions"></a>Permissões
 
@@ -64,7 +64,7 @@ Se tiver êxito, este método retornará um código de resposta e um `201 Create
 
 ## <a name="examples"></a>Exemplos
 
-### <a name="example-1-create-an-accesspackageresourcerequest"></a>Exemplo 1: Criar um accessPackageResourceRequest
+### <a name="example-1-create-an-accesspackageresourcerequest-for-adding-a-site-as-a-resource"></a>Exemplo 1: Criar um accessPackageResourceRequest para adicionar um site como um recurso
 
 #### <a name="request"></a>Solicitação
 
@@ -140,7 +140,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-create-an-accesspackageresourcerequest-for-a-resource-and-assign-an-accesspackageresourceenvironment-using-odatabind"></a>Exemplo 2: crie um accessPackageResourceRequest para um recurso e atribua um accessPackageResourceEnvironment usando @odata.bind
+### <a name="example-2-create-an-accesspackageresourcerequest-for-adding-a-site-as-a-resource-and-assign-an-accesspackageresourceenvironment-using-odatabind"></a>Exemplo 2: crie um accessPackageResourceRequest para adicionar um site como um recurso e atribuir um accessPackageResourceEnvironment usando @odata.bind
 
 #### <a name="request"></a>Solicitação
 
@@ -218,7 +218,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-3-create-an-accesspackageresourcerequest-for-a-resource-and-assign-an-accesspackageresourceenvironment-using-originid"></a>Exemplo 3: criar um accessPackageResourceRequest para um recurso e atribuir um accessPackageResourceEnvironment usando originId
+### <a name="example-3-create-an-accesspackageresourcerequest-for-adding-a-site-as-a-resource-and-assign-an-accesspackageresourceenvironment-using-originid"></a>Exemplo 3: criar um accessPackageResourceRequest para adicionar um site como um recurso e atribuir um accessPackageResourceEnvironment usando originId
 
 #### <a name="request"></a>Solicitação
 
@@ -298,6 +298,106 @@ Content-type: application/json
 }
 ```
 
+### <a name="example-4-create-an-accesspackageresourcerequest-for-adding-a-group-as-a-resource"></a>Exemplo 4: Criar um accessPackageResourceRequest para adicionar um grupo como um recurso
+
+#### <a name="request"></a>Solicitação
+
+Este é um exemplo de solicitação.
+
+<!-- {
+  "blockType": "request",
+  "name": "create_accesspackageresourcerequest_from_accesspackageresourcerequests4"
+}-->
+
+```http
+POST https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageResourceRequests
+Content-type: application/json
+
+{
+
+  "catalogId":"beedadfe-01d5-4025-910b-84abb9369997",
+  "requestType": "AdminAdd",
+  "accessPackageResource": {
+     "originId": "c6294667-7348-4f5a-be73-9d2c65f574f3",
+     "originSystem": "AadGroup"
+  }
+}
+```
+
+#### <a name="response"></a>Resposta
+
+Este é um exemplo de resposta.
+
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.accessPackageResourceRequest"
+} -->
+
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+  "catalogId": "beedadfe-01d5-4025-910b-84abb9369997",
+  "id": "acc2294e-f37f-42d3-981d-4e83847ed0ce",
+  "requestType": "AdminAdd",
+  "requestState": "Delivered",
+  "requestStatus": "Fulfilled"
+}
+```
+
+### <a name="example-5-create-an-accesspackageresourcerequest-for-removing-a-resource"></a>Exemplo 5: Criar um accessPackageResourceRequest para remover um recurso
+
+#### <a name="request"></a>Solicitação
+
+Este é um exemplo de solicitação.
+
+<!-- {
+  "blockType": "request",
+  "name": "create_accesspackageresourcerequest_from_accesspackageresourcerequests5"
+}-->
+
+```http
+POST https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageResourceRequests
+Content-type: application/json
+
+{
+  "catalogId": "beedadfe-01d5-4025-910b-84abb9369997",
+  "requestType": "AdminRemove",
+  "accessPackageResource": {
+    "id": "354078e5-dbce-4894-8af4-0ab274d41662"
+  }
+}
+
+```
+
+#### <a name="response"></a>Resposta
+
+Este é um exemplo de resposta.
+
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.accessPackageResourceRequest"
+} -->
+
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+  "catalogId": "beedadfe-01d5-4025-910b-84abb9369997",
+  "id": "65c3340d-defb-49a9-8930-63841fda0e68",
+  "requestType": "AdminRemove",
+  "requestState": "Delivered",
+  "requestStatus": "Fulfilled"
+}
+```
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->

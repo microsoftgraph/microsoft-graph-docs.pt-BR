@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: governance
 doc_type: conceptualPageType
-ms.openlocfilehash: 4ec0d13dd91ee55d886bcf13d0d8a0d227b2a558
-ms.sourcegitcommit: ada6eab637b9b318129aefb98edbe7316399d9ba
+ms.openlocfilehash: c75c88c4f7fd2d35eb6e214bbe3479abdac6b4da
+ms.sourcegitcommit: 8b23038be1141d7f22eb61de6aafdb16d4f9c826
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/07/2021
-ms.locfileid: "53317102"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "53401467"
 ---
 # <a name="working-with-the-azure-ad-entitlement-management-api"></a>Trabalhando com a API de gerenciamento de direitos do Azure AD
 
@@ -42,7 +42,7 @@ For a tutorial that shows you how to use entitlement management to create a pack
 
 Observe que o recurso de gerenciamento de direitos, incluindo a API, está incluído Azure AD Premium P2. O locatário em que o gerenciamento de direitos está sendo usado deve ter uma assinatura de compra ou avaliação válida Azure AD Premium P2 ou EMS E5.
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 
 A tabela a seguir lista os métodos que você pode usar para interagir com recursos relacionados ao gerenciamento de direitos.
 
@@ -58,6 +58,13 @@ A tabela a seguir lista os métodos que você pode usar para interagir com recur
 | [FilterByCurrentUser](../api/accesspackage-filterbycurrentuser.md) | [Coleção accessPackage](accesspackage.md) | Recupere uma lista de **objetos accessPackage** filtrados no usuário de entrada. |
 | [Listar accessPackageResourceRoleScopes](../api/accesspackage-list-accesspackageresourcerolescopes.md) | [Coleção accessPackageResourceRoleScope](accesspackageresourcerolescope.md) | Recupere uma lista de **objetos accessPackageResourceRoleScope** para um pacote de acesso. |
 | [Criar accessPackageResourceRoleScope](../api/accesspackage-post-accesspackageresourcerolescopes.md) | | Crie um novo **objeto accessPackageResourceRoleScope** para um pacote de acesso. |
+| [Listar incompatívelAccessPackages](../api/accesspackage-list-incompatibleaccesspackages.md) | [Coleção accessPackage](accesspackage.md) | Recupere uma lista dos objetos **accesspackage** incompatíveis para este pacote de acesso. |
+| [Adicionar accessPackage a incompatibleAccessPackages](../api/accesspackage-post-incompatibleaccesspackage.md) | Nenhum | Adicione um link para indicar que outro **pacote de acessos** é incompatível com um pacote de acesso especificado. |
+| [Remover accessPackage de incompatívelAccessPackages](../api/accesspackage-delete-incompatibleaccesspackage.md) | Nenhum | Remover um link que indicava que um **pacote de acesso** era incompatível. |
+| [Listar incompatibleGroups](../api/accesspackage-list-incompatiblegroups.md) | Coleção [group](group.md) | Recupere uma lista dos objetos **de** grupo incompatíveis para este pacote de acesso. |
+| [Adicionar grupo a incompatibleGroups](../api/accesspackage-post-incompatiblegroup.md) | Nenhum | Adicione um link para indicar que a associação de um **grupo** é incompatível com um pacote de acesso especificado. |
+| [Remover grupo de incompatibleGroups](../api/accesspackage-delete-incompatiblegroup.md) | Nenhum | Remover um link que indicava que uma associação **ao** grupo era incompatível.|
+| [Listar accessPackagesIncompatibleWith](../api/accesspackage-list-accesspackagesincompatiblewith.md) | [Coleção accessPackage](accesspackage.md) | Recupere uma lista dos  **objetos accesspackage que** listam esse pacote de acesso como incompatível. |
 | [Listar accessPackageAssignmentPolicies](../api/accesspackageassignmentpolicy-list.md) | [coleção accessPackageAssignmentPolicy](accesspackageassignmentpolicy.md) | Recupere uma lista de **objetos accessPackageAssignmentPolicy.** |
 | [Criar accessPackageAssignmentPolicy](../api/accesspackageassignmentpolicy-post.md) | [accessPackageAssignmentPolicy](accesspackageassignmentpolicy.md)| Crie um novo **objeto accessPackageAssignmentPolicy.** |
 | [Obter accessPackageAssignmentPolicy](../api/accesspackageassignmentpolicy-get.md) | [accessPackageAssignmentPolicy](accesspackageassignmentpolicy.md) | Ler propriedades e relações de um **objeto accessPackageAssignmentPolicy.** |

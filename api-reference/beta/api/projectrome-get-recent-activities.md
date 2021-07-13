@@ -1,24 +1,24 @@
 ---
-title: Obter atividades recentes do usuário
-description: " API. O serviço consultará o historyItems mais recente e, em seguida, extrairá as atividades relacionadas. As atividades serão classificadas de acordo com a **LastModified** mais recente no **historyItem**. Isso significa que as atividades sem **historyItems** não serão incluídas na resposta. A permissão UserActivity. ReadWrite. CreatedByApp também aplicará filtragem adicional à resposta, de modo que somente as atividades criadas por seu aplicativo serão retornadas. Essa filtragem do lado do servidor pode resultar em páginas vazias se o usuário for particularmente ativo e outros aplicativos tiverem criado atividades mais recentes. Para obter as atividades do aplicativo, use a propriedade **nextLink** para paginar."
+title: Obter atividades de usuário recentes
+description: " API. O serviço consultará os historyItems mais recentes e, em seguida, puxará essas atividades relacionadas. As atividades serão classificação de acordo com o **últimoModified mais recente** no **historyItem**. Isso significa que as atividades **sem historyItems** não serão incluídas na resposta. A permissão UserActivity.ReadWrite.CreatedByApp também aplicará filtragem extra à resposta, para que somente as atividades criadas pelo aplicativo sejam retornadas. Essa filtragem do lado do servidor pode resultar em páginas vazias se o usuário estiver particularmente ativo e outros aplicativos criarem atividades mais recentes. Para obter as atividades do aplicativo, use a **propriedade nextLink** para paginar."
 localization_priority: Normal
 ms.prod: project-rome
 doc_type: apiPageType
 author: ailae
-ms.openlocfilehash: 146b4d83b6fda3dc56744e1b60daf15811ed3747
-ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
+ms.openlocfilehash: 27361d56e62e1ea255c2a0e9e3b6d3e0b45ee44e
+ms.sourcegitcommit: 8b23038be1141d7f22eb61de6aafdb16d4f9c826
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48314967"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "53401502"
 ---
-# <a name="get-recent-user-activities"></a>Obter atividades recentes do usuário
+# <a name="get-recent-user-activities"></a>Obter atividades de usuário recentes
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obter atividades recentes para um determinado usuário. Essa função OData tem alguns comportamentos padrão incluídos para que funcionem como uma API "mais recentemente usada". O serviço consultará o [historyItems](../resources/projectrome-historyitem.md)mais recente e, em seguida, extrairá as atividades relacionadas. As atividades serão classificadas de acordo com a **LastModified** mais recente no **historyItem**. Isso significa que as atividades sem **historyItems** não serão incluídas na resposta. A permissão UserActivity. ReadWrite. CreatedByApp também aplicará filtragem adicional à resposta, de modo que somente as atividades criadas por seu aplicativo serão retornadas. Essa filtragem do lado do servidor pode resultar em páginas vazias se o usuário for particularmente ativo e outros aplicativos tiverem criado atividades mais recentes. Para obter as atividades do aplicativo, use a propriedade **nextLink** para paginar.
+Obter atividades recentes para um determinado usuário. Esta função OData tem alguns comportamentos padrão incluídos para fazê-lo funcionar como uma API "usada mais recentemente". O serviço consultará os [historyItems](../resources/projectrome-historyitem.md)mais recentes e, em seguida, puxará essas atividades relacionadas. As atividades serão classificação de acordo com o **últimoModified mais recente** no **historyItem**. Isso significa que as atividades **sem historyItems** não serão incluídas na resposta. A permissão UserActivity.ReadWrite.CreatedByApp também aplicará filtragem extra à resposta, para que somente as atividades criadas pelo aplicativo sejam retornadas. Essa filtragem do lado do servidor pode resultar em páginas vazias se o usuário estiver particularmente ativo e outros aplicativos criarem atividades mais recentes. Para obter as atividades do aplicativo, use a **propriedade nextLink** para paginar.
 
 ## <a name="permissions"></a>Permissões
 
@@ -40,15 +40,15 @@ GET /me/activities/recent
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Este método oferece suporte a alguns [parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta. Há suporte para os seguintes parâmetros de consulta:
+Este método dá suporte a alguns [Parâmetros de Consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta. Os seguintes parâmetros de consulta são suportados:
 
-- $expand da propriedade de navegação **historyItems** .
-- $top limitar o número máximo de itens nas páginas.
-- $filter na propriedade **lastModifiedDateTime** para **atividades** ou **historyItems**, se expandida.
+- $expand para a **propriedade de navegação historyItems.**
+- $top limitar o número máximo de itens entre páginas.
+- $filter na propriedade **lastModifiedDateTime** para **atividades** ou **historyItems**, se expandido.
 
-Veja a seguir alguns exemplos de consultas suportadas com codificação de URL.
+A seguir estão alguns exemplos de consultas com suporte com codificação de URL.
 
-```
+```http
 /me/activities/recent?$expand=historyItems($filter=lastModifiedDateTime%20gt%202018-01-22T21:45:00.347Z%20and%20lastModifiedDateTime%20lt%202018-01-22T22:00:00.347Z)
 
 /me/activities/recent?$filter=lastModifiedDateTime%20lt%202018-01-16T01:03:21.347Z%20and%20lastModifiedDateTime%20gt%202018-01-03T01:03:21.347Z
@@ -68,11 +68,11 @@ Não especifique um corpo de solicitação.
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna o `200 OK` código de resposta com as atividades recentes do usuário para seu aplicativo.
+Se tiver êxito, este método retornará o código de resposta com as atividades recentes do `200 OK` usuário para seu aplicativo.
 
 ## <a name="example"></a>Exemplo
 
-##### <a name="request"></a>Solicitação
+### <a name="request"></a>Solicitação
 
 Este é um exemplo de solicitação.
 
@@ -85,7 +85,7 @@ Este é um exemplo de solicitação.
 GET https://graph.microsoft.com/beta/me/activities/recent
 ```
 
-##### <a name="response"></a>Resposta
+### <a name="response"></a>Resposta
 
 Este é um exemplo de resposta.
 
@@ -100,48 +100,51 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(userActivity)",
-    "@odata.nextLink": "https://graph.microsoft.com/beta/me/activities/recent?$skiptoken=%24filter%3dlastModifiedDateTime+lt+2018-02-26T18%3a06%3a19.365Z",
-    "value": [{
-        "@odata.type": "#microsoft.graph.activity",
-        "activitySourceHost": "https://www.contoso.com",
-        "createdDateTime": "2018-02-26T18:34:29.592Z",
-        "lastModifiedDateTime": "2018-02-26T18:34:29.607Z",
-        "id": "5347642601316252694",
-        "appActivityId": "/article?12345",
-        "visualElements": {
-            "attribution": {
-              "iconUrl": "https://www.contoso.com/icon",
-              "alternateText": "Contoso, Ltd.",
-              "addImageQuery": "false",
-              },
-            "displayText": "Contoso How-To: How to Tie a Reef Knot",
-            "description": "How to Tie a Reef Knot. A step-by-step visual guide to the art of nautical knot-tying.",
-            "backgroundColor": "#ff0000",
-            "content": {
-              "$schema": "https://adaptivecards.io/schemas/adaptive-card.json",
-              "type": "AdaptiveCard",
-              "body":
-              [{
-                  "type": "TextBlock",
-                  "text": "Contoso MainPage"
-              }]
+   "@odata.context":"https://graph.microsoft.com/beta/$metadata#Collection(userActivity)",
+   "@odata.nextLink":"https://graph.microsoft.com/beta/me/activities/recent?$skiptoken=%24filter%3dlastModifiedDateTime+lt+2018-02-26T18%3a06%3a19.365Z",
+   "value":[
+      {
+         "@odata.type":"#microsoft.graph.activity",
+         "activitySourceHost":"https://www.contoso.com",
+         "createdDateTime":"2018-02-26T18:34:29.592Z",
+         "lastModifiedDateTime":"2018-02-26T18:34:29.607Z",
+         "id":"5347642601316252694",
+         "appActivityId":"/article?12345",
+         "visualElements":{
+            "attribution":{
+               "iconUrl":"https://www.contoso.com/icon",
+               "alternateText":"Contoso, Ltd.",
+               "addImageQuery":"false"
+            },
+            "displayText":"Contoso How-To: How to Tie a Reef Knot",
+            "description":"How to Tie a Reef Knot. A step-by-step visual guide to the art of nautical knot-tying.",
+            "backgroundColor":"#ff0000",
+            "content":{
+               "$schema":"https://adaptivecards.io/schemas/adaptive-card.json",
+               "type":"AdaptiveCard",
+               "body":[
+                  {
+                     "type":"TextBlock",
+                     "text":"Contoso MainPage"
+                  }
+               ]
             }
-        },
-        "activationUrl": "https://www.contoso.com/article?id=12345",
-        "appDisplayName": "Contoso, Ltd.",
-        "userTimezone": "Africa/Casablanca",
-        "fallbackUrl": "https://www.contoso.com/article?id=12345",
-        "contentUrl": "https://www.contoso.com/article?id=12345",
-        "contentInfo": {
-            "@context": "https://schema.org",
-            "@type": "Article",
-            "author": "John Doe",
-            "name": "How to Tie a Reef Knot"
-        },
-        "expirationDateTime": "2018-03-28T18:34:29.607Z",
-        "status": "updated"
-    }]
+         },
+         "activationUrl":"https://www.contoso.com/article?id=12345",
+         "appDisplayName":"Contoso, Ltd.",
+         "userTimezone":"Africa/Casablanca",
+         "fallbackUrl":"https://www.contoso.com/article?id=12345",
+         "contentUrl":"https://www.contoso.com/article?id=12345",
+         "contentInfo":{
+            "@context":"https://schema.org",
+            "@type":"Article",
+            "author":"John Doe",
+            "name":"How to Tie a Reef Knot"
+         },
+         "expirationDateTime":"2018-03-28T18:34:29.607Z",
+         "status":"updated"
+      }
+   ]
 }
 ```
 

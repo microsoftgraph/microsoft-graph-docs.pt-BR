@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 2d288465b04986b98de7b67fa049657b8bcf0a58
-ms.sourcegitcommit: c5cc948c764b4daab861aadb390b827f658a9b7f
+ms.openlocfilehash: faef8ab32caa9e065f264eed6a8ad862ef6f8dd0
+ms.sourcegitcommit: 8b23038be1141d7f22eb61de6aafdb16d4f9c826
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52298528"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "53401495"
 ---
 # <a name="accesspackage-resource-type"></a>Tipo de recurso accessPackage
 
@@ -31,10 +31,17 @@ Para atribuir um usuário a um pacote de acesso, [crie um accessPackageAssignmen
 | [Listar accessPackages](../api/accesspackage-list.md) | [Coleção accessPackage](accesspackage.md) | Recupere uma lista de **objetos accesspackage.** |
 | [Criar accessPackage](../api/accesspackage-post.md) | [accessPackage](accesspackage.md) | Crie um novo **objeto accesspackage.** |
 | [Obter accessPackage](../api/accesspackage-get.md) | [accessPackage](accesspackage.md) | Ler propriedades e relações de um **objeto accesspackage.** |
-| [Atualizar accessPackage](../api/accesspackage-update.md)|Nenhum(a) | Atualize as propriedades de um **objeto accesspackage.** |
-| [Excluir accessPackage](../api/accesspackage-delete.md) |Nenhum(a) | Excluir um **accesspackage**. |
+| [Atualizar accessPackage](../api/accesspackage-update.md)|Nenhum | Atualize as propriedades de um **objeto accesspackage.** |
+| [Excluir accessPackage](../api/accesspackage-delete.md) |Nenhum | Excluir um **accesspackage**. |
 | [Listar accessPackageResourceRoleScopes](../api/accesspackage-list-accesspackageresourcerolescopes.md) | [Coleção accessPackageResourceRoleScope](accesspackageresourcerolescope.md) | Recupere uma lista de **objetos accessPackageResourceRoleScope** para este pacote de acesso. |
-| [Criar accessPackageResourceRoleScope](../api/accesspackage-post-accesspackageresourcerolescopes.md) |Nenhum(a) | Crie um novo **objeto accessPackageResourceRoleScope** para este pacote de acesso. |
+| [Criar accessPackageResourceRoleScope](../api/accesspackage-post-accesspackageresourcerolescopes.md) |Nenhum | Crie um novo **objeto accessPackageResourceRoleScope** para este pacote de acesso. |
+| [Listar incompatívelAccessPackages](../api/accesspackage-list-incompatibleaccesspackages.md) | [Coleção accessPackage](accesspackage.md) | Recupere uma lista dos objetos **accesspackage** incompatíveis para este pacote de acesso. |
+| [Adicionar accessPackage a incompatibleAccessPackages](../api/accesspackage-post-incompatibleaccesspackage.md) | Nenhum | Adicione um link para indicar que outro **pacote de acessos** é incompatível com um pacote de acesso especificado. |
+| [Remover accessPackage de incompatívelAccessPackages](../api/accesspackage-delete-incompatibleaccesspackage.md) | Nenhum | Remover um link que indicava que um **pacote de acesso** era incompatível. |
+| [Listar incompatibleGroups](../api/accesspackage-list-incompatiblegroups.md) | Coleção [group](group.md) | Recupere uma lista dos objetos **de** grupo incompatíveis para este pacote de acesso. |
+| [Adicionar grupo a incompatibleGroups](../api/accesspackage-post-incompatiblegroup.md) | Nenhum | Adicione um link para indicar que a associação de um **grupo** é incompatível com um pacote de acesso especificado. |
+| [Remover grupo de incompatibleGroups](../api/accesspackage-delete-incompatiblegroup.md) | Nenhum | Remover um link que indicava que uma associação **ao** grupo era incompatível.|
+| [Listar accessPackagesIncompatibleWith](../api/accesspackage-list-accesspackagesincompatiblewith.md) | [Coleção accessPackage](accesspackage.md) | Recupere uma lista dos  **objetos accesspackage que** listam esse pacote de acesso como incompatível. |
 |[filterByCurrentUser](../api/accesspackage-filterbycurrentuser.md)|[Coleção accessPackage](../resources/accesspackage.md)|Recupere a lista de **objetos accessPackage** filtrados no usuário de entrada.|
 
 ## <a name="properties"></a>Propriedades
@@ -47,8 +54,8 @@ Para atribuir um usuário a um pacote de acesso, [crie um accessPackageAssignmen
 |description|Cadeia de caracteres|A descrição do pacote de acesso.|
 |displayName|Cadeia de caracteres|O nome de exibição do pacote de acesso.|
 |id|String| Somente leitura.|
-|isHidden|Booliano|Se o pacote de acesso está oculto do solicitante.|
-|isRoleScopesVisible|Booliano|Indica se os escopos de função estão visíveis.|
+|IsHidden|Booleano|Se o pacote de acesso está oculto do solicitante.|
+|isRoleScopesVisible|Boolean|Indica se os escopos de função estão visíveis.|
 |modifiedBy|Cadeia de caracteres|O UPN do usuário que modificou esse recurso pela última vez. Somente leitura.|
 |modifiedDateTime|DateTimeOffset|O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`. Somente leitura. |
 
@@ -59,6 +66,10 @@ Para atribuir um usuário a um pacote de acesso, [crie um accessPackageAssignmen
 |accessPackageAssignmentPolicies|[coleção accessPackageAssignmentPolicy](accesspackageassignmentpolicy.md)| Somente leitura. Anulável.|
 |accessPackageCatalog|[accessPackageCatalog](accesspackagecatalog.md)| Somente leitura. Anulável.|
 |accessPackageResourceRoleScopes|[Coleção accessPackageResourceRoleScope](accesspackageresourcerolescope.md)| Anulável.|
+| incompatibleAccessPackages | [Coleção accessPackage](accesspackagecatalog.md) | Os pacotes de acesso cujos usuários atribuídos são inelegíveis para serem atribuídos a esse pacote de acesso. |
+| accessPackagesIncompatibleWith | [Coleção accessPackage](accesspackagecatalog.md) | Os pacotes de acesso incompatíveis com esse pacote. Somente leitura. |
+| incompatibleGroups | Coleção [group](group.md) | Os grupos cujos membros são inelegíveis para serem atribuídos a este pacote de acesso. |
+
 
 ## <a name="json-representation"></a>Representação JSON
 

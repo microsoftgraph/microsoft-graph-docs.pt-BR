@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: resourcePageType
 ms.prod: identity-and-sign-in
 author: jkdouglas
-ms.openlocfilehash: 733a3b242b6c81c7ef111ccc95e9fec151e6405d
-ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
+ms.openlocfilehash: b84c9208ac6e1661e130f04642027e7304c7c459
+ms.sourcegitcommit: 8b23038be1141d7f22eb61de6aafdb16d4f9c826
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50516434"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "53401623"
 ---
 # <a name="b2xidentityuserflow-resource-type"></a>tipo de recurso b2xIdentityUserFlow
 
@@ -26,18 +26,21 @@ Os fluxos de usuário são usados para habilitar uma experiência de [inscriçã
 
 | Método       | Tipo de retorno  |Descrição|
 |:---------------|:--------|:----------|
-|[Listar fluxos de usuário](../api/identitycontainer-list-b2xuserflows.md)|Coleção b2xIdentityUserFlow|Recupere todos os fluxos de usuários de inscrição de autoatendimento.|
-|[Obter fluxo de usuário](../api/b2xidentityuserflow-get.md)|b2xIdentityUserFlow|Recuperar propriedades de um fluxo de usuário de inscrição de autoatendimento.|
-|[Criar fluxo de usuário](../api/identitycontainer-post-b2xuserflows.md)|b2xIdentityUserFlow|Criar um novo fluxo de usuário de inscrição de autoatendimento.|
-|[Excluir fluxo de usuário](../api/b2xidentityuserflow-delete.md)|Nenhum|Excluir um fluxo de usuário de inscrição de autoatendimento.|
-|[Listar os provedores de identidade](../api/b2xidentityuserflow-list-identityproviders.md)|Coleção [identityProvider](../resources/identityProvider.md)|Recuperar todos os provedores de identidade em um fluxo de usuário de inscrição de autoatendimento.|
-|[Adicionar provedor de identidade](../api/b2xidentityuserflow-post-identityproviders.md)|Nenhum|Adicionar um provedor de identidade a um fluxo de usuário de inscrição de autoatendimento.|
-|[Remover provedor de identidade](../api/b2xidentityuserflow-delete-identityproviders.md)|Nenhum|Remova um provedor de identidade de um fluxo de usuário de inscrição de autoatendimento.|
-|[Listar as atribuições de atributo de usuário](../api/b2xidentityuserflow-list-userattributeassignments.md)|Coleção[identityUserFlowAttributeAssignment](../resources/identityuserflowattributeassignment.md) |Recuperar todas as atribuições de atributos do usuário em um fluxo de usuário de inscrição de autoatendimento.|
-|[Criar uma tarefa de atributo de usuário](../api/b2xidentityuserflow-post-userattributeassignments.md)|[identityUserFlowAttributeAssignment](../resources/identityuserflowattributeassignment.md)|Criar uma atribuição de atributo de usuário em um fluxo de usuário de inscrição de autoatendimento.|
-|[Idiomas da lista](../api/b2xidentityuserflow-list-languages.md)|coleção [userFlowLanguageConfiguration](../resources/userflowlanguageconfiguration.md)|Recuperar todos os idiomas em um fluxo de usuário de inscrição de autoatendimento.|
-|[Obtenha a configuração dos conectores de API para o fluxo do usuário](../api/b2xidentityuserflow-get-apiConnectorConfiguration.md)|[userFlowApiConnectorConfiguration](../resources/userflowapiconnectorconfiguration.md)| Obter a configuração para conectores de API usados no fluxo de usuário de inscrição de autoatendimento. O parâmetro de consulta $expand não é compatível com este método.|
-|[Configurar um conector de API em um fluxo de usuários](../api/b2xidentityuserflow-put-apiConnectorConfiguration.md)|Nenhum| Configure um conector de API para etapas específicas em um fluxo de usuário de inscrição de autoatendimento atualizando o [apiConnectorConfiguration](../resources/userflowapiconnectorconfiguration.md) propriedade.|
+|[Listar fluxos de usuário](../api/identitycontainer-list-b2xuserflows.md)|Coleção b2xIdentityUserFlow|Recupere todos os fluxos de usuário B2X.|
+|[Obter fluxo de usuário](../api/b2xidentityuserflow-get.md)|b2xIdentityUserFlow|Recupere as propriedades de um fluxo de usuário B2X.|
+|[Criar fluxo de usuário](../api/identitycontainer-post-b2xuserflows.md)|b2xIdentityUserFlow|Crie um novo fluxo de usuário B2X.|
+|[Excluir fluxo de usuário](../api/b2xidentityuserflow-delete.md)|Nenhum|Exclua um fluxo de usuário B2X.|
+|[Listar os provedores de identidade](../api/b2xidentityuserflow-list-userflowidentityproviders.md)|Coleção [identityProvider](../resources/identityproviderbase.md)|Recupere todos os provedores de identidade em um fluxo de usuário B2X.|
+|[Adicionar provedor de identidade](../api/b2xidentityuserflow-userflowidentityproviders-update.md)|Nenhum|Adicione um provedor de identidade a um fluxo de usuário B2X.|
+|[Remover provedor de identidade](../api/b2xidentityuserflow-delete-userflowidentityproviders.md)|Nenhum|Remova um provedor de identidade de um fluxo de usuário B2X.|
+|[Listar os provedores de identidade](../api/b2xidentityuserflow-list-identityproviders.md) (preterido)|Coleção [identityProvider](../resources/identityProvider.md)|Recupere todos os provedores de identidade em um fluxo de usuário B2X.|
+|[Adicionar provedor de identidade](../api/b2xidentityuserflow-post-identityproviders.md) (preterido)|Nenhum|Adicione um provedor de identidade a um fluxo de usuário B2X.|
+|[Remover provedor de identidade](../api/b2xidentityuserflow-delete-identityproviders.md) (preterido)|Nenhum|Remova um provedor de identidade de um fluxo de usuário B2X.|
+|[Listar as atribuições de atributo de usuário](../api/b2xidentityuserflow-list-userattributeassignments.md)|Coleção[identityUserFlowAttributeAssignment](../resources/identityuserflowattributeassignment.md) |Recupere todas as atribuições de atributos do usuário em um fluxo de usuário B2X.|
+|[Criar uma tarefa de atributo de usuário](../api/b2xidentityuserflow-post-userattributeassignments.md)|[identityUserFlowAttributeAssignment](../resources/identityuserflowattributeassignment.md)|Crie uma atribuição de atributo de usuário em um fluxo de usuário B2X.|
+|[Idiomas da lista](../api/b2xidentityuserflow-list-languages.md)|coleção [userFlowLanguageConfiguration](../resources/userflowlanguageconfiguration.md)|Recupere todos os idiomas dentro de um fluxo de usuário B2X.|
+|[Obtenha a configuração dos conectores de API para o fluxo do usuário](../api/b2xidentityuserflow-get-apiConnectorConfiguration.md)|[userFlowApiConnectorConfiguration](../resources/userflowapiconnectorconfiguration.md)| Obtenha a configuração dos conectores de API usados no fluxo do usuário. O parâmetro de consulta $expand não é compatível com este método.|
+|[Configurar um conector de API em um fluxo de usuários](../api/b2xidentityuserflow-put-apiConnectorConfiguration.md)|Nenhum| Configure um conector de API para etapas específicas em um fluxo de usuário, atualizando a propriedade [apiConnectorConfiguration](../resources/userflowapiconnectorconfiguration.md).|
 
 ## <a name="properties"></a>Propriedades
 
@@ -52,7 +55,8 @@ Os fluxos de usuário são usados para habilitar uma experiência de [inscriçã
 
 | Relação       | Tipo  |Descrição|
 |:---------------|:--------|:----------|
-|identityProviders|Coleção [identityProvider](../resources/identityprovider.md)|Os provedores de identidade incluídos no fluxo de usuário.|
+|userflowIdentityProviders|Coleção [identityProviderBase](../resources/identityproviderbase.md)|Os provedores de identidade incluídos no fluxo de usuários.|
+|IdentityProviders (preterido)|Coleção [identityProvider](../resources/identityprovider.md)|Os provedores de identidade incluídos no fluxo de usuário.|
 |userAttributeAssignments|Coleção[identityUserFlowAttributeAssignment](../resources/identityuserflowattributeassignment.md) |As atribuições de atributo de usuário incluídas no fluxo do usuário.|
 |idiomas|coleção [userFlowLanguageConfiguration](../resources/userflowlanguageconfiguration.md)|Os idiomas com suporte para personalização dentro do fluxo do usuário. A personalização do idioma é habilitado por padrão no fluxo do usuário de inscrição de autoatendimento. Você não pode criar idiomas personalizados em fluxos de usuário de inscrição de autoatendimento.|
 
@@ -72,6 +76,7 @@ Veja a seguir uma representação JSON do recurso.
     "id": "String (identifier)",
     "userFlowType": "String",
     "userFlowTypeVersion": "Single",
+    "userflowIdentityProviders": [{"@odata.type": "microsoft.graph.identityProviderBase"}],
     "identityProviders": [{"@odata.type": "microsoft.graph.identityProvider"}],
     "userAttributeAssignments": [{"@odate.type": "microsoft.graph.identityUserFlowAttributeAssignment"}],
     "languages": [{"@odata.type": "microsoft.graph.userFlowLanguageConfiguration"}],

@@ -1,16 +1,16 @@
 ---
 title: Excluir uma atividade
-description: Excluir uma atividade de usuário existente para seu aplicativo.
+description: Exclua uma atividade de usuário existente para seu aplicativo.
 localization_priority: Normal
 ms.prod: project-rome
 doc_type: apiPageType
 author: ailae
-ms.openlocfilehash: e6a8b4d70c6066b46be28af98b2ee94a943ab766
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: d30fda3d79a7afe6f370a735f6ed6e331fba714b
+ms.sourcegitcommit: 8b23038be1141d7f22eb61de6aafdb16d4f9c826
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48968951"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "53401516"
 ---
 # <a name="delete-an-activity"></a>Excluir uma atividade
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Excluir uma atividade de usuário existente para seu aplicativo.
+Exclua uma atividade de usuário existente para seu aplicativo.
 
 ## <a name="permissions"></a>Permissões
 
@@ -51,13 +51,13 @@ Nenhum corpo de solicitação.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará o `204 No Content` código de resposta se a atividade tiver sido excluída.
+Se tiver êxito, este método retornará `204 No Content` o código de resposta se a atividade tiver sido excluída.
 
 ## <a name="example"></a>Exemplo
 
-##### <a name="request"></a>Solicitação
+### <a name="request"></a>Solicitação
 
-Este é um exemplo da solicitação.
+Este é um exemplo de solicitação.
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -88,9 +88,9 @@ DELETE https://graph.microsoft.com/beta/me/activities/13881113971988980728/
 ---
 
 
-##### <a name="response"></a>Resposta
+### <a name="response"></a>Resposta
 
-Veja a seguir um exemplo da resposta.
+Este é um exemplo de resposta.
 
 <!-- {
   "blockType": "response",

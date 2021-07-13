@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: ffaedc45cc512b554fda3ce4dd06794fba716b16
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 484ceb349acd3c431e02c08fa82e7bfce1bec41a
+ms.sourcegitcommit: 8b23038be1141d7f22eb61de6aafdb16d4f9c826
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50439804"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "53400968"
 ---
 # <a name="create-accesspackageresourcerolescope"></a>Criar accessPackageResourceRoleScope
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Crie um novo [accessPackageResourceRoleScope](../resources/accesspackageresourcerolescope.md) para adicionar uma função de recurso a um pacote de acesso.  O recurso do pacote de acesso já deve existir no catálogo de pacotes de acesso.  Qualquer solicitação de atribuição de pacote de acesso subsequente a esse pacote de acesso incluirá essa função de recurso.  
+Crie um novo [accessPackageResourceRoleScope](../resources/accesspackageresourcerolescope.md) para adicionar uma função de recurso a um pacote de acesso. O recurso do pacote de acesso, para um grupo, um aplicativo ou um site SharePoint Online, já deve existir no catálogo de pacotes de acesso e o **originId** da função de recurso recuperada da lista das funções de recurso [.](accesspackagecatalog-list-accesspackageresourceroles.md) Depois de adicionar o escopo da função de recurso ao pacote de acesso, o usuário receberá essa função de recurso por meio de quaisquer atribuições de pacote de acesso atuais e futuras.
 
 ## <a name="permissions"></a>Permissões
 
@@ -47,7 +47,7 @@ POST /identityGovernance/entitlementManagement/accessPackages/{id}/accessPackage
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, fornece uma representação JSON de um [objeto accessPackageResourceRoleScope.](../resources/accesspackageresourcerolescope.md)  Inclua no objeto as relações com [um accessPackageResourceRole](../resources/accesspackageresourcerole.md) e [accessPackageResourceScope](../resources/accesspackageresourcescope.md).  
+No corpo da solicitação, fornece uma representação JSON de um [objeto accessPackageResourceRoleScope.](../resources/accesspackageresourcerolescope.md)  Inclua no objeto as relações com [um accessPackageResourceRole](../resources/accesspackageresourcerole.md) e [accessPackageResourceScope](../resources/accesspackageresourcescope.md).
 
 ## <a name="response"></a>Resposta
 
@@ -55,9 +55,11 @@ Se tiver êxito, este método retornará um código de resposta de 200 séries e
 
 ## <a name="examples"></a>Exemplos
 
-### <a name="request"></a>Solicitação
+### <a name="example-1-add-group-membership-as-a-resource-role-to-an-access-package"></a>Exemplo 1: Adicionar associação de grupo como uma função de recurso a um pacote de acesso
 
-Este é um exemplo de solicitação.
+#### <a name="request"></a>Solicitação
+
+Este é um exemplo de solicitação.  O recurso do pacote de acesso para o grupo já deve ter sido adicionado ao catálogo de pacotes de acesso que contém esse pacote de acesso.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -100,7 +102,7 @@ Content-type: application/json
 ---
 
 
-### <a name="response"></a>Resposta
+#### <a name="response"></a>Resposta
 
 Este é um exemplo de resposta.
 
@@ -126,6 +128,58 @@ Content-type: application/json
 }
 ```
 
+### <a name="example-2-add-a-sharepoint-online-site-role-to-an-access-package"></a>Exemplo 2: adicionar uma função de site SharePoint Online a um pacote de acesso
+
+#### <a name="request"></a>Solicitação
+
+Este é um exemplo de solicitação.  O recurso do pacote de acesso para o site já deve ter sido adicionado ao catálogo de pacotes de acesso que contém esse pacote de acesso.
+
+<!-- {
+  "blockType": "request",
+  "name": "create_accesspackageresourcerolescope_from_accesspackage2"
+}-->
+
+```http
+POST https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackages/{id}/accessPackageResourceRoleScopes
+Content-type: application/json
+
+{
+    "accessPackageResourceRole": {
+        "originId": "4",
+        "originSystem": "SharePointOnline",
+        "accessPackageResource": {
+            "id": "53c71803-a0a8-4777-aecc-075de8ee3991"
+        }
+    },
+    "accessPackageResourceScope": {
+        "id": "5ae0ae7c-d0a5-42aa-ab37-1f15e9a61d33",
+        "originId": "https://microsoft.sharepoint.com/portals/Community",
+        "originSystem": "SharePointOnline"
+    }
+}
+```
+
+#### <a name="response"></a>Resposta
+
+Este é um exemplo de resposta.
+
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.accessPackageResourceRoleScope"
+} -->
+
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+   "id": "6646a29e-da03-49f6-bcd9-dec124492de3_5ae0ae7c-d0a5-42aa-ab37-1f15e9a61d33"
+}
+```
+
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
 <!-- {
@@ -135,5 +189,3 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: resourcePageType
 ms.prod: identity-and-sign-in
 author: jkdouglas
-ms.openlocfilehash: 8d95fca7096069810c7262eb9a26c91d439c2d55
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: f2924ce135aa02f56fea30575a1d899a3d515039
+ms.sourcegitcommit: 8b23038be1141d7f22eb61de6aafdb16d4f9c826
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50957076"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "53401621"
 ---
 # <a name="b2cidentityuserflow-resource-type"></a>tipo de recurso b2cIdentityUserFlow
 
@@ -37,15 +37,18 @@ Para ajudar você a configurar as tarefas de identidade mais comuns para seus ap
 |[Criar fluxo de usuário](../api/identitycontainer-post-b2cuserflows.md)|b2cIdentityUserFlow|Crie um novo fluxo de usuário B2C.|
 |[Atualizar fluxo de usuário](../api/b2cidentityuserflow-update.md)|b2cIdentityUserFlow|Atualizar as propriedades de um fluxo de usuário B2C.|
 |[Excluir fluxo de usuário](../api/b2cidentityuserflow-delete.md)|Nenhum|Exclua um fluxo de usuário B2C.|
-|[Listar os provedores de identidade](../api/b2cidentityuserflow-list-identityproviders.md)|Coleção [identityProvider](../resources/identityProvider.md)|Recupere todos os provedores de identidade em um fluxo de usuário B2C.|
-|[Adicionar provedor de identidade](../api/b2cidentityuserflow-post-identityproviders.md)|Nenhum|Adicione um provedor de identidade a um fluxo de usuário B2C.|
-|[Remover provedor de identidade](../api/b2cidentityuserflow-delete-identityproviders.md)|Nenhum|Remova um provedor de identidade de um fluxo de usuário B2C.|
+|[Listar os provedores de identidade](../api/b2cidentityuserflow-list-userflowidentityproviders.md)|Coleção [identityProvider](../resources/identityProviderbase.md)|Recupere todos os provedores de identidade em um fluxo de usuário B2C.|
+|[Adicionar provedor de identidade](../api/b2cidentityuserflow-userflowidentityproviders-update.md)|Nenhum|Adicione um provedor de identidade a um fluxo de usuário B2C.|
+|[Excluir provedor de identidade](../api/b2cidentityuserflow-delete-userflowidentityproviders.md)|Nenhum|Remova um provedor de identidade de um fluxo de usuários B2C|
 |[Listar as atribuições de atributo de usuário](../api/b2cidentityuserflow-list-userattributeassignments.md)|Coleção[identityUserFlowAttributeAssignment](../resources/identityuserflowattributeassignment.md) |Recupere todas as atribuições de atributos do usuário em um fluxo de usuário B2C.|
 |[Criar uma tarefa de atributo de usuário](../api/b2cidentityuserflow-post-userattributeassignments.md)|[identityUserFlowAttributeAssignment](../resources/identityuserflowattributeassignment.md)|Crie uma atribuição de atributo de usuário em um fluxo de usuário B2C.|
 |[Idiomas da lista](../api/b2cidentityuserflow-list-languages.md)|[userFlowLanguageConfiguration](../resources/userflowlanguageconfiguration.md) coleção|Recuperar todos os idiomas no fluxo de usuário do B2C.|
 |[Criar idioma](../api/b2cidentityuserflow-put-languages.md)|[userFlowLanguageConfiguration](../resources/userflowlanguageconfiguration.md)|Cria um idioma personalizado em um fluxo de usuário do B2C.|
 |[Obtenha a configuração dos conectores de API para o fluxo do usuário](../api/b2cidentityuserflow-get-apiConnectorConfiguration.md)|[userFlowApiConnectorConfiguration](../resources/userflowapiconnectorconfiguration.md)| Obtenha a configuração dos conectores de API usados no fluxo do usuário. O parâmetro de consulta $expand não é compatível com este método.|
 |[Configurar um conector de API em um fluxo de usuários](../api/b2cidentityuserflow-put-apiConnectorConfiguration.md)|Nenhum| Configure um conector de API para etapas específicas em um fluxo de usuário, atualizando a propriedade [apiConnectorConfiguration](../resources/userflowapiconnectorconfiguration.md).|
+|[Listar os provedores de identidade](../api/b2cidentityuserflow-list-identityproviders.md) (preterido)|Coleção [identityProvider](../resources/identityProvider.md)|Recupere todos os provedores de identidade em um fluxo de usuário B2C.|
+|[Adicionar provedor de identidade](../api/b2cidentityuserflow-post-identityproviders.md) (preterido)|Nenhum|Adicione um provedor de identidade a um fluxo de usuário B2C.|
+|[Excluir provedor de identidade](../api/b2cidentityuserflow-delete-identityproviders.md) (preterido)|Nenhum|Remova um provedor de identidade de um fluxo de usuários B2C|
 
 ## <a name="properties"></a>Propriedades
 
@@ -62,7 +65,8 @@ Para ajudar você a configurar as tarefas de identidade mais comuns para seus ap
 
 | Relação       | Tipo  |Descrição|
 |:---------------|:--------|:----------|
-|identityProviders|Coleção [identityProvider](../resources/identityprovider.md)|Os provedores de identidade incluídos no fluxo de usuário.|
+|userflowIdentityProviders|Coleção [identityProviderBase](../resources/identityproviderbase.md)|Os provedores de identidade incluídos no fluxo de usuários.|
+|IdentityProviders (preterido)|Coleção [identityProvider](../resources/identityprovider.md)|Os provedores de identidade incluídos no fluxo de usuário.|
 |userAttributeAssignments|Coleção[identityUserFlowAttributeAssignment](../resources/identityuserflowattributeassignment.md) |As atribuições de atributo de usuário incluídas no fluxo do usuário.|
 |idiomas|coleção [userFlowLanguageConfiguration](../resources/userflowlanguageconfiguration.md)|Os idiomas com suporte para personalização dentro do fluxo do usuário. A personalização de idioma não é habilitada por padrão para os fluxos de usuário do B2C.|
 
@@ -84,6 +88,7 @@ Veja a seguir uma representação JSON do recurso.
     "userFlowTypeVersion": "Single",
     "isLanguageCustomizationEnabled": "Boolean",
     "defaultLanguageTag": "String",
+    "userflowidentityProviders": [{"@odata.type": "microsoft.graph.identityProviderBase"}],
     "identityProviders": [{"@odata.type": "microsoft.graph.identityProvider"}],
     "userAttributeAssignments": [{"@odate.type": "microsoft.graph.identityUserFlowAttributeAssignment"}],
     "languages": [{"@odata.type": "microsoft.graph.userFlowLanguageConfiguration"}],

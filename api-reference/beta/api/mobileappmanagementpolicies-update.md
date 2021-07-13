@@ -5,12 +5,12 @@ author: ravennMSFT
 localization_priority: Normal
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 49c181f688fae97e0c9f58ecf68d830f3ca042fa
-ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
+ms.openlocfilehash: b553a291ce986a3084403c55f3c991fb260c4828
+ms.sourcegitcommit: 8b23038be1141d7f22eb61de6aafdb16d4f9c826
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52547311"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "53401642"
 ---
 # <a name="update-mobileappmanagementpolicy"></a>Atualizar mobileAppManagementPolicy
 
@@ -26,7 +26,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|Policy.Read.All, Policy.ReadWrite.All|
+|Delegado (conta corporativa ou de estudante)|Policy.Read.All, Policy.ReadWrite.MobilityManagement|
 |Delegado (conta pessoal da Microsoft) | Sem suporte.|
 |Aplicativo | Sem suporte.|
 
@@ -57,9 +57,9 @@ No corpo da solicitação, fornece os valores para os campos listados abaixo que
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |appliesTo|policyScope|Determina os grupos aos quais essa configuração de política se aplica. Os valores possíveis são: `none` , `all` , `selected` **Importante:** `selected` não pode ser usado ao especificar essa propriedade. Use [includedGroups](../api/mobileappmanagementpolicies-post-includedgroups.md) para adicionar grupos específicos.|
-|complianceUrl|String|URL de conformidade do aplicativo de gerenciamento de mobilidade|
-|discoveryUrl|String|URL de descoberta do aplicativo de gerenciamento de mobilidade|
-|termsOfUseUrl|String|TERMOS DE USO URL do aplicativo de gerenciamento de mobilidade|
+|complianceUrl|Cadeia de caracteres|URL de conformidade do aplicativo de gerenciamento de mobilidade|
+|discoveryUrl|Cadeia de caracteres|URL de descoberta do aplicativo de gerenciamento de mobilidade|
+|termsOfUseUrl|Cadeia de caracteres|TERMOS DE USO URL do aplicativo de gerenciamento de mobilidade|
 
 ## <a name="response"></a>Resposta
 

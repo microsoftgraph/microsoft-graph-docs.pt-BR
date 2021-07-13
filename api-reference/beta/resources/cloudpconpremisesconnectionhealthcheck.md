@@ -5,12 +5,12 @@ author: AshleyYangSZ
 localization_priority: Normal
 ms.prod: cloud-pc
 doc_type: resourcePageType
-ms.openlocfilehash: bdc9d440b31a650f69d16a0eab0db46f5265dfb5
-ms.sourcegitcommit: 3873c85f53e026073addca92d31d234af244444c
+ms.openlocfilehash: 3b3c2b47dd09c12a07d3adeec74b93a985701e34
+ms.sourcegitcommit: 8b23038be1141d7f22eb61de6aafdb16d4f9c826
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/10/2021
-ms.locfileid: "53366751"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "53400870"
 ---
 # <a name="cloudpconpremisesconnectionhealthcheck-resource-type"></a>Tipo de recurso cloudPcOnPremisesConnectionHealthCheck
 
@@ -32,13 +32,13 @@ O resultado de uma verificação de saúde de conexão local do computador na nu
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|displayName|String|O nome de exibição desse item de verificação de saúde.|
+|displayName|Cadeia de caracteres|O nome de exibição desse item de verificação de saúde.|
 |status|[cloudPcOnPremisesConnectionStatus](../resources/cloudpconpremisesconnection.md#cloudpconpremisesconnectionstatus-values)|O status do item de verificação de saúde. Os valores possíveis são: `pending`, `running`, `passed`, `failed`, `unknownFutureValue`. Somente leitura.|
 |startDateTime|DateTimeOffset|A hora de início do item de verificação de saúde. Somente leitura.|
 |endDateTime|DateTimeOffset|A hora de término do item de verificação de saúde. Somente leitura.|
 |errorType|[cloudPcOnPremisesConnectionHealthCheckErrorType](#cloudpconpremisesconnectionhealthcheckerrortype-values)|O tipo de erro que ocorreu durante essa verificação de saúde.|
-|recommendedAction|String|A ação recomendada para corrigir o erro correspondente.|
-|additionalDetails|String|Detalhes adicionais sobre a verificação de saúde ou a ação recomendada.|
+|recommendedAction|Cadeia de caracteres|A ação recomendada para corrigir o erro correspondente.|
+|additionalDetails|Cadeia de caracteres|Detalhes adicionais sobre a verificação de saúde ou a ação recomendada.|
 
 ### <a name="cloudpconpremisesconnectionhealthcheckerrortype-values"></a>valores cloudPcOnPremisesConnectionHealthCheckErrorType
 
@@ -71,6 +71,7 @@ O resultado de uma verificação de saúde de conexão local do computador na nu
 |permissionCheckNoSubscriptionReaderRole|A entidade de serviço de computador na nuvem não tem permissões suficientes na assinatura do Azure. Certifique-se de que a entidade de serviço do computador na nuvem tenha as *permissões Reader* na assinatura.|
 |permissionCheckNoResourceGroupOwnerRole|A entidade de serviço de computador na nuvem não tem permissões suficientes no grupo de recursos do Azure. Verifique se a entidade de serviço do computador na nuvem tem as *permissões Owner* no grupo de recursos. |
 |permissionCheckNoVNetContributorRole|A entidade de serviço de computador na nuvem não tem permissões suficientes na vNet do Azure. Verifique se o serviço de computador na nuvem tem as *permissões do* colaborador de rede na vNet.|
+|permissionCheckNoResourceGroupNetworkContributorRole|A entidade de serviço de computador na nuvem não tem permissões suficientes no grupo de recursos do Azure. Verifique se o aplicativo tem permissões de colaboradores de rede no grupo de recursos.|
 |permissionCheckUnknownError|A entidade de serviço de computador na nuvem não tem permissões suficientes. Verifique se a entidade de serviço do computador na nuvem recebe permissões suficientes do Azure.|
 |internalServerErrorDeploymentCanceled|A implantação foi cancelada. Tente novamente mais tarde. Se o problema persistir, entre em contato com o suporte.|
 |internalServerErrorAllocateResourceFailed|A alocação de recursos falhou. Tente novamente mais tarde. Se o problema persistir, entre em contato com o suporte.|

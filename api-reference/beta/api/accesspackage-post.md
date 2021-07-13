@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: e6f6a80316bbdf12792bb47078be7f4e3ca9b48c
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: ccbe9c22f04087431ba0b4ae4df53eca1ff76a04
+ms.sourcegitcommit: 8b23038be1141d7f22eb61de6aafdb16d4f9c826
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52048642"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "53400954"
 ---
 # <a name="create-accesspackage"></a>Criar accessPackage
 
@@ -20,6 +20,9 @@ Namespace: microsoft.graph
 
 Crie um novo [objeto accessPackage.](../resources/accesspackage.md)
 
+O pacote de acesso será adicionado a um [accessPackageCatalog existente.](../resources/accesspackagecatalog.md) Depois que o pacote de acesso for criado, você poderá criar [accessPackageAssignmentPolicies](../resources/accesspackageassignmentpolicy.md) que especificam como os usuários são atribuídos ao pacote de acesso.
+
+
 ## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -28,7 +31,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---------------------------------------|:--------------------------------------------|
 | Delegado (conta corporativa ou de estudante)     | EntitlementManagement.ReadWrite.All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Application                            | EntitlementManagement.ReadWrite.All |
+| Aplicativo                            | EntitlementManagement.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -43,11 +46,11 @@ POST /identityGovernance/entitlementManagement/accessPackages
 | Nome          | Descrição   |
 |:--------------|:--------------|
 | Autorização | \{token\} de portador. Obrigatório. |
-| Content-Type  | application/json  |
+| Content-type  | application/json. Obrigatório.  |
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, fornece uma representação JSON do [objeto accessPackage.](../resources/accesspackage.md)
+No corpo da solicitação, fornece uma representação JSON de um [objeto accessPackage.](../resources/accesspackage.md)
 
 ## <a name="response"></a>Resposta
 

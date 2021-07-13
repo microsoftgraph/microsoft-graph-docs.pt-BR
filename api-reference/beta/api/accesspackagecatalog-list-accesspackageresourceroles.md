@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 29e83c3254cfa4931f3faeb869d6312335565019
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 2facea352db9eb04265aaf6b86e77b89249631c3
+ms.sourcegitcommit: 8b23038be1141d7f22eb61de6aafdb16d4f9c826
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52048565"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "53400996"
 ---
 # <a name="list-accesspackageresourceroles"></a>Listar accessPackageResourceRoles
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere uma lista de [objetos accessPackageResourceRole](../resources/accesspackageresourcerole.md) de [um accessPackageResource](../resources/accesspackageresource.md) em [um accessPackageCatalog](../resources/accesspackagecatalog.md).  Essa lista de funções pode ser usada pelo chamador para selecionar uma função, que é necessária ao criar posteriormente um [accessPackageResourceRoleScope](accesspackage-post-accesspackageresourcerolescopes.md).
+Recupere uma lista de [objetos accessPackageResourceRole](../resources/accesspackageresourcerole.md) de [um accessPackageResource](../resources/accesspackageresource.md) em [um accessPackageCatalog](../resources/accesspackagecatalog.md). O recurso deve ter sido adicionado ao catálogo criando [um accessPackageResourceRequest](accesspackageresourcerequest-post.md). Essa lista de funções pode ser usada pelo chamador para selecionar uma função, que é necessária ao criar posteriormente um [accessPackageResourceRoleScope](accesspackage-post-accesspackageresourcerolescopes.md).
 
 ## <a name="permissions"></a>Permissões
 
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---------------------------------------|:--------------------------------------------|
 | Delegado (conta corporativa ou de estudante)     | EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Application                            | EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All |
+| Aplicativo                            | EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -58,7 +58,9 @@ Se tiver êxito, este método retornará um código de resposta e uma coleção 
 
 ## <a name="examples"></a>Exemplos
 
-### <a name="request"></a>Solicitação
+### <a name="example-1-retrieving-the-roles-of-a-resource-for-a-group"></a>Exemplo 1: Recuperando as funções de um recurso para um grupo
+
+#### <a name="request"></a>Solicitação
 
 Este é um exemplo de solicitação.
 
@@ -90,7 +92,7 @@ GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/ac
 ---
 
 
-### <a name="response"></a>Resposta
+#### <a name="response"></a>Resposta
 
 Este é um exemplo de resposta.
 
@@ -120,6 +122,63 @@ Content-type: application/json
 }
 ```
 
+### <a name="example-2-retrieve-the-roles-of-a-resource-for-a-sharepoint-online-site"></a>Exemplo 2: Recuperar as funções de um recurso para um site SharePoint Online
+
+Este é um exemplo de recuperação das funções de um recurso, para obter a **originId** de cada função.  Isso seria usado depois que um site SharePoint Online fosse adicionado como um recurso ao catálogo, pois a **origemId** de uma função é necessária para adicionar a função a um pacote de acesso.
+
+#### <a name="request"></a>Solicitação
+
+A seguir está um exemplo da solicitação, para recuperar as funções de um recurso **específico 53c71803-a0a8-4777-aecc-075de8ee3991,** que tem uma **origemSystem** do **SharePointOnline** e está localizada no catálogo **beedadfe-01d5-4025-910b-84abb936997**.
+
+
+<!-- {
+  "blockType": "request",
+  "name": "get_accesspackageresourceroles2"
+}-->
+
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageCatalogs/beedadfe-01d5-4025-910b-84abb9369997/accessPackageResourceRoles?$filter=(originSystem+eq+%27SharePointOnline%27+and+accessPackageResource/id+eq+%2753c71803-a0a8-4777-aecc-075de8ee3991%27)&$select=displayName,originId
+```
+
+
+
+#### <a name="response"></a>Resposta
+
+Este é um exemplo de resposta.  O **displayName** é o mesmo mostrado na exibição SharePoint Online de um site, e **o originId** é o identificador subjacente estabelecido pelo SharePoint Online para a função.
+
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.accessPackageResourceRole",
+  "isCollection": true
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "value": [
+    {
+        "displayName": "Contributors",
+        "originId": "4"
+    },
+    {
+        "displayName": "Creators",
+        "originId": "3"
+    },
+    {
+        "displayName": "Viewers",
+        "originId": "5"
+    }
+  ]
+}
+```
+
+
+
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
 <!-- {
@@ -129,5 +188,3 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

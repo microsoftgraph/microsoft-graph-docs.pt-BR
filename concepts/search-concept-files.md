@@ -1,19 +1,19 @@
 ---
-title: Usar a API de Pesquisa da Microsoft no Microsoft Graph para pesquisar arquivos
-description: Você pode usar a API de Pesquisa da Microsoft para pesquisar arquivos armazenados OneDrive ou SharePoint.
+title: Usar a API Pesquisa da Microsoft no Microsoft Graph para pesquisar arquivos
+description: Você pode usar a API Pesquisa da Microsoft para pesquisar arquivos armazenados OneDrive ou SharePoint.
 author: nmoreau
 localization_priority: Normal
 ms.prod: search
-ms.openlocfilehash: dc9d27255ca5306abf85462ca8e5715fe2345dac
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 93dca7b4c431140646ee22ae6772448e0554e35a
+ms.sourcegitcommit: 8b23038be1141d7f22eb61de6aafdb16d4f9c826
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52048649"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "53401334"
 ---
-# <a name="use-the-microsoft-search-api-to-search-content-in-onedrive-and-sharepoint"></a>Use a API de Pesquisa da Microsoft para pesquisar conteúdo em OneDrive e SharePoint
+# <a name="use-the-microsoft-search-api-to-search-content-in-onedrive-and-sharepoint"></a>Use a API Pesquisa da Microsoft para pesquisar conteúdo em OneDrive e SharePoint
 
-Use a API de Pesquisa da Microsoft para pesquisar conteúdo armazenado em OneDrive ou SharePoint: arquivos, pastas, listas, itens de lista ou sites.
+Use a API Pesquisa da Microsoft para pesquisar conteúdo armazenado em OneDrive ou SharePoint: arquivos, pastas, listas, itens de lista ou sites.
 
 [!INCLUDE [search-schema-updated](../includes/search-schema-updated.md)]
 
@@ -363,7 +363,7 @@ Para ser válida, a restrição de propriedades deve especificar um nome de prop
 
 Você pode especificar os campos que deseja retornar na resposta, como parte da sub-propriedade **fields** de um [objeto searchHit](/graph/api/resources/searchhit) na resposta. Essa é uma maneira de cortar a resposta sobre o fio ou solicitar algumas propriedades específicas que não fazem parte do esquema fora da caixa.
 
-Observe que a seleção de propriedades só está disponível para **listItem,** pois essa é a única entidade SharePoint no Microsoft Graph que oferece suporte a propriedades personalizadas.
+Observe que a seleção de propriedades para propriedades personalizadas no SharePoint está disponível apenas para **listItem,** pois essa é a única entidade SharePoint no Microsoft Graph que oferece suporte a propriedades personalizadas.
 
 Para recuperar uma propriedade personalizada para **um driveItem**, **listItem de** consulta.
 

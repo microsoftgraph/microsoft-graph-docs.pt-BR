@@ -5,12 +5,12 @@ localization_priority: Priority
 ms.prod: search
 author: snlraju-msft
 scenarios: getting-started
-ms.openlocfilehash: 732d6487bc73cf9cdf0f70168d00d4b0e13ce45e
-ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
+ms.openlocfilehash: 061252bb8006cbb3ce195ea656c7dbc50334f66a
+ms.sourcegitcommit: 8b23038be1141d7f22eb61de6aafdb16d4f9c826
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53208831"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "53401306"
 ---
 # <a name="overview-of-the-microsoft-search-api-in-microsoft-graph"></a>Visão geral da API da Pesquisa da Microsoft no Microsoft Graph
 
@@ -40,6 +40,7 @@ A API de pesquisa da Microsoft suporta para pesquisar o seguinte conteúdo na nu
 
 - [Mensagens](/graph/api/resources/message) de email do Outlook e objetos de [eventos](/graph/api/resources/event) do calendário
 - Arquivos e pastas do Microsoft Office SharePoint Online e do OneDrive ([driveItem](/graph/api/resources/driveitem)), [listas](/graph/api/resources/list), [listItems](/graph/api/resources/listitem), [sites](/graph/api/resources/site) e [unidades](/graph/api/resources/drive)
+- [Pessoas](/graph/api/resources/person) na organização que são mais relevantes para um usuário
 - Conteúdo ingerido na plataforma de conectores do Graph: [externalItem](/graph/api/resources/externalitem?view=graph-rest-beta&preserve-view=true) (pré-visualização)
 
 ## <a name="api-reference"></a>Referência da API
@@ -60,10 +61,12 @@ Está procurando a referência de API para esse serviço?
   - [Pesquisar eventos do calendário](search-concept-events.md)
   - [Pesquisar conteúdo no OneDrive e Microsoft Office SharePoint Online](search-concept-files.md)
   - [Pesquisar conteúdo externo](search-concept-custom-types.md)(pré-visualização)
+  - [Pesquisar pessoa](search-concept-person.md) (visualização)
   - [Classificar resultados de pesquisa](search-concept-sort.md) (pré-visualização)
   - [Refinar resultados de pesquisa](search-concept-aggregation.md) (pré-visualização)
   - [Solicitar correção ortográfica](search-concept-speller.md) (versão prévia)
   - [Layout de exibição de pesquisa](search-concept-display-layout.md) (versão prévia)
+ 
   
 - Explore as APIs no [Explorador do Graph](https://developer.microsoft.com/graph/graph-explorer).
 - Baixe o [exemplo de conector de pesquisa](https://github.com/microsoftgraph/msgraph-search-connector-sample) no GitHub.
