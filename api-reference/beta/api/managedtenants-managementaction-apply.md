@@ -1,0 +1,109 @@
+---
+title: 'managementAction: apply'
+description: Aplica uma ação de gerenciamento a um locatário gerenciado específico. Ao executar essa operação, as configurações apropriadas serão feitas e as políticas serão criadas. Por exemplo, ao aplicar a autenticação multifacional necessária para a ação de gerenciamento de administradores, criará uma política de acesso condicional Azure Active Directory que requer autenticação multifacional para todos os usuários que foram atribuídos a uma função de diretório administrativo.
+author: isaiahwilliams
+localization_priority: Normal
+ms.prod: microsoft-365-lighthouse
+doc_type: apiPageType
+ms.openlocfilehash: c5ba45154faf95e85a3f7f7878c18a4bb4981d16
+ms.sourcegitcommit: e372382019f1a136543eadab02ba70af3921e098
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "53402016"
+---
+# <a name="managementaction-apply"></a><span data-ttu-id="abbe8-105">managementAction: apply</span><span class="sxs-lookup"><span data-stu-id="abbe8-105">managementAction: apply</span></span>
+<span data-ttu-id="abbe8-106">Namespace: microsoft.graph.managedTenants</span><span class="sxs-lookup"><span data-stu-id="abbe8-106">Namespace: microsoft.graph.managedTenants</span></span>
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+<span data-ttu-id="abbe8-107">Aplica uma ação de gerenciamento a um locatário gerenciado específico.</span><span class="sxs-lookup"><span data-stu-id="abbe8-107">Applies a management action against a specific managed tenant.</span></span> <span data-ttu-id="abbe8-108">Ao executar essa operação, as configurações apropriadas serão feitas e as políticas serão criadas.</span><span class="sxs-lookup"><span data-stu-id="abbe8-108">By performing this operation the appropriate configurations will be made and policies created.</span></span> <span data-ttu-id="abbe8-109">Por exemplo, ao aplicar a autenticação multifacional necessária para a ação de gerenciamento de administradores, criará uma política de acesso condicional Azure Active Directory que requer autenticação multifacional para todos os usuários que foram atribuídos a uma função de diretório administrativo.</span><span class="sxs-lookup"><span data-stu-id="abbe8-109">As example when applying the require multi-factor authentication for admins management action will create an Azure Active Directory conditional access policy that requires multi-factor authentication for all users that have been assigned an administrative directory role.</span></span>
+
+## <a name="permissions"></a><span data-ttu-id="abbe8-110">Permissões</span><span class="sxs-lookup"><span data-stu-id="abbe8-110">Permissions</span></span>
+<span data-ttu-id="abbe8-p103">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="abbe8-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+
+|<span data-ttu-id="abbe8-113">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="abbe8-113">Permission type</span></span>|<span data-ttu-id="abbe8-114">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="abbe8-114">Permissions (from least to most privileged)</span></span>|
+|:---|:---|
+|<span data-ttu-id="abbe8-115">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="abbe8-115">Delegated (work or school account)</span></span>|<span data-ttu-id="abbe8-116">ManagedTenants.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="abbe8-116">ManagedTenants.ReadWrite.All</span></span>|
+|<span data-ttu-id="abbe8-117">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="abbe8-117">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="abbe8-118">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="abbe8-118">Not supported.</span></span>|
+|<span data-ttu-id="abbe8-119">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="abbe8-119">Application</span></span>|<span data-ttu-id="abbe8-120">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="abbe8-120">Not supported.</span></span>|
+
+## <a name="http-request"></a><span data-ttu-id="abbe8-121">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="abbe8-121">HTTP request</span></span>
+
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+POST /tenantRelationships/managedTenants/managementActions/{managementActionId}/apply
+```
+
+## <a name="request-headers"></a><span data-ttu-id="abbe8-122">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="abbe8-122">Request headers</span></span>
+|<span data-ttu-id="abbe8-123">Nome</span><span class="sxs-lookup"><span data-stu-id="abbe8-123">Name</span></span>|<span data-ttu-id="abbe8-124">Descrição</span><span class="sxs-lookup"><span data-stu-id="abbe8-124">Description</span></span>|
+|:---|:---|
+|<span data-ttu-id="abbe8-125">Autorização</span><span class="sxs-lookup"><span data-stu-id="abbe8-125">Authorization</span></span>|<span data-ttu-id="abbe8-p104">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="abbe8-p104">Bearer {token}. Required.</span></span>|
+|<span data-ttu-id="abbe8-128">Content-Type</span><span class="sxs-lookup"><span data-stu-id="abbe8-128">Content-Type</span></span>|<span data-ttu-id="abbe8-p105">application/json. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="abbe8-p105">application/json. Required.</span></span>|
+
+## <a name="request-body"></a><span data-ttu-id="abbe8-131">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="abbe8-131">Request body</span></span>
+<span data-ttu-id="abbe8-132">No corpo da solicitação, forneça uma representação JSON dos parâmetros.</span><span class="sxs-lookup"><span data-stu-id="abbe8-132">In the request body, supply JSON representation of the parameters.</span></span>
+
+<span data-ttu-id="abbe8-133">A tabela a seguir mostra os parâmetros que podem ser usados com esta ação.</span><span class="sxs-lookup"><span data-stu-id="abbe8-133">The following table shows the parameters that can be used with this action.</span></span>
+
+|<span data-ttu-id="abbe8-134">Parâmetro</span><span class="sxs-lookup"><span data-stu-id="abbe8-134">Parameter</span></span>|<span data-ttu-id="abbe8-135">Tipo</span><span class="sxs-lookup"><span data-stu-id="abbe8-135">Type</span></span>|<span data-ttu-id="abbe8-136">Descrição</span><span class="sxs-lookup"><span data-stu-id="abbe8-136">Description</span></span>|
+|:---|:---|:---|
+|<span data-ttu-id="abbe8-137">tenantId</span><span class="sxs-lookup"><span data-stu-id="abbe8-137">tenantId</span></span>|<span data-ttu-id="abbe8-138">String</span><span class="sxs-lookup"><span data-stu-id="abbe8-138">String</span></span>|<span data-ttu-id="abbe8-139">O Azure Active Directory do locatário para o [locatário gerenciado.](../resources/managedtenants-tenant.md)</span><span class="sxs-lookup"><span data-stu-id="abbe8-139">The Azure Active Directory tenant identifier for the [managed tenant](../resources/managedtenants-tenant.md).</span></span>|
+|<span data-ttu-id="abbe8-140">tenantGroupId</span><span class="sxs-lookup"><span data-stu-id="abbe8-140">tenantGroupId</span></span>|<span data-ttu-id="abbe8-141">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="abbe8-141">String</span></span>|<span data-ttu-id="abbe8-142">O identificador do grupo de locatários.</span><span class="sxs-lookup"><span data-stu-id="abbe8-142">The identifier of the tenant group.</span></span>|
+|<span data-ttu-id="abbe8-143">managementTemplateId</span><span class="sxs-lookup"><span data-stu-id="abbe8-143">managementTemplateId</span></span>|<span data-ttu-id="abbe8-144">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="abbe8-144">String</span></span>|<span data-ttu-id="abbe8-145">O identificador do modelo [de gerenciamento](../resources/managedtenants-managementtemplate.md).</span><span class="sxs-lookup"><span data-stu-id="abbe8-145">The identifier of the [management template](../resources/managedtenants-managementtemplate.md).</span></span>|
+
+## <a name="response"></a><span data-ttu-id="abbe8-146">Resposta</span><span class="sxs-lookup"><span data-stu-id="abbe8-146">Response</span></span>
+
+<span data-ttu-id="abbe8-147">Se tiver êxito, essa ação retornará um código `200 OK` de resposta e um [managementActionDeploymentStatus](../resources/managedtenants-managementactiondeploymentstatus.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="abbe8-147">If successful, this action returns a `200 OK` response code and a [managementActionDeploymentStatus](../resources/managedtenants-managementactiondeploymentstatus.md) in the response body.</span></span>
+
+## <a name="examples"></a><span data-ttu-id="abbe8-148">Exemplos</span><span class="sxs-lookup"><span data-stu-id="abbe8-148">Examples</span></span>
+
+### <a name="request"></a><span data-ttu-id="abbe8-149">Solicitação</span><span class="sxs-lookup"><span data-stu-id="abbe8-149">Request</span></span>
+<!-- {
+  "blockType": "request",
+  "name": "managementaction_apply"
+}
+-->
+``` http
+POST https://graph.microsoft.com/beta/tenantRelationships/managedTenants/managementActions/{managementActionId}/apply
+Content-Type: application/json
+Content-length: 95
+
+{
+  "tenantId": "String",
+  "tenantGroupId": "String",
+  "managementTemplateId": "String"
+}
+```
+
+### <a name="response"></a><span data-ttu-id="abbe8-150">Resposta</span><span class="sxs-lookup"><span data-stu-id="abbe8-150">Response</span></span>
+><span data-ttu-id="abbe8-151">**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.</span><span class="sxs-lookup"><span data-stu-id="abbe8-151">**Note:** The response object shown here might be shortened for readability.</span></span>
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.managedTenants.managementActionDeploymentStatus"
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#microsoft.graph.managedTenants.ManagementActionDeploymentStatus",
+  "managementTemplateId": "e2cadc41-a08f-45e7-8eb1-942d224dfb9a",
+  "managementActionId": "b22a4713-8428-4952-8cac-d48962ecbdc9",
+  "status": "completed",
+  "workloadActionDeploymentStatuses": [
+    {
+      "actionId": "46b80b42-06c7-45b4-b6fb-aa0aecace87b",
+      "status": "completed",
+      "deployedPolicyId": null,
+      "lastDeploymentDateTime": "2021-07-11T19:35:10.4463799Z",
+      "error": null
+    }
+  ]
+}
+```

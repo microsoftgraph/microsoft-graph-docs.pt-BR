@@ -5,38 +5,38 @@ description: " Obter uma coluna de site, lista ou tipo de conteúdo."
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: 3a2e1421c92b1634ea57cbedb74c2e3244d85924
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: f2e9bbca28dd0096401a2c59b92d5a26e35ee75e
+ms.sourcegitcommit: 8b23038be1141d7f22eb61de6aafdb16d4f9c826
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50952199"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "53401390"
 ---
-# <a name="get-columndefinition"></a><span data-ttu-id="1671c-103">Obter columnDefinition</span><span class="sxs-lookup"><span data-stu-id="1671c-103">Get columnDefinition</span></span>
-<span data-ttu-id="1671c-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="1671c-104">Namespace: microsoft.graph</span></span>
+# <a name="get-columndefinition"></a><span data-ttu-id="0fd62-103">Obter columnDefinition</span><span class="sxs-lookup"><span data-stu-id="0fd62-103">Get columnDefinition</span></span>
+<span data-ttu-id="0fd62-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="0fd62-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-<span data-ttu-id="1671c-105">Recupere os metadados de um [site,][] [lista ou][] [coluna contentType.][] [][columnDefinition]</span><span class="sxs-lookup"><span data-stu-id="1671c-105">Retrieve the metadata for a [site][], [list][] or [contentType][] [column][columnDefinition].</span></span>
+<span data-ttu-id="0fd62-105">Recupere os metadados de um [site,][] [lista ou][] [coluna contentType.][] [][columnDefinition]</span><span class="sxs-lookup"><span data-stu-id="0fd62-105">Retrieve the metadata for a [site][], [list][] or [contentType][] [column][columnDefinition].</span></span>
 
   
 
-## <a name="permissions"></a><span data-ttu-id="1671c-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="1671c-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="0fd62-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="0fd62-106">Permissions</span></span>
 
   
 
-<span data-ttu-id="1671c-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="1671c-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions_reference.md).</span></span>
+<span data-ttu-id="0fd62-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="0fd62-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions_reference.md).</span></span>
 
   
 
-|<span data-ttu-id="1671c-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="1671c-109">Permission type</span></span> | <span data-ttu-id="1671c-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="1671c-110">Permissions (from least to most privileged)</span></span> |
+|<span data-ttu-id="0fd62-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="0fd62-109">Permission type</span></span> | <span data-ttu-id="0fd62-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="0fd62-110">Permissions (from least to most privileged)</span></span> |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="1671c-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="1671c-111">Delegated (work or school account)</span></span> | <span data-ttu-id="1671c-112">Sites.Read.All, Sites.ReadWrite.All, Sites.Manage.All, Sites.FullControl.All</span><span class="sxs-lookup"><span data-stu-id="1671c-112">Sites.Read.All, Sites.ReadWrite.All, Sites.Manage.All, Sites.FullControl.All</span></span>  |
-|<span data-ttu-id="1671c-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="1671c-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="1671c-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="1671c-114">Not supported.</span></span> |
-|<span data-ttu-id="1671c-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="1671c-115">Application</span></span> | <span data-ttu-id="1671c-116">Sites.Read.All, Sites.ReadWrite.All, Sites.Manage.All, Sites.FullControl.All</span><span class="sxs-lookup"><span data-stu-id="1671c-116">Sites.Read.All, Sites.ReadWrite.All, Sites.Manage.All, Sites.FullControl.All</span></span>  |
+|<span data-ttu-id="0fd62-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="0fd62-111">Delegated (work or school account)</span></span> | <span data-ttu-id="0fd62-112">Sites.Read.All, Sites.ReadWrite.All, Sites.Manage.All, Sites.FullControl.All</span><span class="sxs-lookup"><span data-stu-id="0fd62-112">Sites.Read.All, Sites.ReadWrite.All, Sites.Manage.All, Sites.FullControl.All</span></span>  |
+|<span data-ttu-id="0fd62-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="0fd62-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="0fd62-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="0fd62-114">Not supported.</span></span> |
+|<span data-ttu-id="0fd62-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="0fd62-115">Application</span></span> | <span data-ttu-id="0fd62-116">Sites.Read.All, Sites.ReadWrite.All, Sites.Manage.All, Sites.FullControl.All</span><span class="sxs-lookup"><span data-stu-id="0fd62-116">Sites.Read.All, Sites.ReadWrite.All, Sites.Manage.All, Sites.FullControl.All</span></span>  |
 
   
 
-## <a name="http-request"></a><span data-ttu-id="1671c-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="1671c-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="0fd62-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="0fd62-117">HTTP request</span></span>
 
 <!-- {
   "blockType": "ignored"
@@ -50,29 +50,29 @@ GET /sites/{site-id}/contentTypes/{contentType-id}/columns/{column-id}
 GET /sites/{site-id}/lists/{list-id}/contentTypes/{contentType-id}/columns/{column-id}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="1671c-118">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="1671c-118">Request headers</span></span>
-|<span data-ttu-id="1671c-119">Nome</span><span class="sxs-lookup"><span data-stu-id="1671c-119">Name</span></span>|<span data-ttu-id="1671c-120">Descrição</span><span class="sxs-lookup"><span data-stu-id="1671c-120">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="0fd62-118">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="0fd62-118">Request headers</span></span>
+|<span data-ttu-id="0fd62-119">Nome</span><span class="sxs-lookup"><span data-stu-id="0fd62-119">Name</span></span>|<span data-ttu-id="0fd62-120">Descrição</span><span class="sxs-lookup"><span data-stu-id="0fd62-120">Description</span></span>|
 |:---|:---|
-|<span data-ttu-id="1671c-121">Autorização</span><span class="sxs-lookup"><span data-stu-id="1671c-121">Authorization</span></span>|<span data-ttu-id="1671c-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="1671c-p102">Bearer {token}. Required.</span></span>|  
+|<span data-ttu-id="0fd62-121">Autorização</span><span class="sxs-lookup"><span data-stu-id="0fd62-121">Authorization</span></span>|<span data-ttu-id="0fd62-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="0fd62-p102">Bearer {token}. Required.</span></span>|  
 
-## <a name="request-body"></a><span data-ttu-id="1671c-124">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="1671c-124">Request body</span></span>
-
-  
-
-<span data-ttu-id="1671c-125">Não forneça um corpo de solicitação com esse método.</span><span class="sxs-lookup"><span data-stu-id="1671c-125">Do not supply a request body with this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="0fd62-124">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="0fd62-124">Request body</span></span>
 
   
 
-## <a name="example"></a><span data-ttu-id="1671c-126">Exemplo</span><span class="sxs-lookup"><span data-stu-id="1671c-126">Example</span></span>
+<span data-ttu-id="0fd62-125">Não forneça um corpo de solicitação com esse método.</span><span class="sxs-lookup"><span data-stu-id="0fd62-125">Do not supply a request body with this method.</span></span>
 
   
 
-### <a name="request"></a><span data-ttu-id="1671c-127">Solicitação</span><span class="sxs-lookup"><span data-stu-id="1671c-127">Request</span></span>
+## <a name="example"></a><span data-ttu-id="0fd62-126">Exemplo</span><span class="sxs-lookup"><span data-stu-id="0fd62-126">Example</span></span>
+
+  
+
+### <a name="request"></a><span data-ttu-id="0fd62-127">Solicitação</span><span class="sxs-lookup"><span data-stu-id="0fd62-127">Request</span></span>
 
   
 
 
-# <a name="http"></a>[<span data-ttu-id="1671c-128">HTTP</span><span class="sxs-lookup"><span data-stu-id="1671c-128">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="0fd62-128">HTTP</span><span class="sxs-lookup"><span data-stu-id="0fd62-128">HTTP</span></span>](#tab/http)
 <!-- { "blockType": "request", "name": "get_column_from_contenttype" } -->
 
   
@@ -80,19 +80,19 @@ GET /sites/{site-id}/lists/{list-id}/contentTypes/{contentType-id}/columns/{colu
 ```msgraph-interactive
 GET /sites/{site-id}/contentTypes/{contentType-id}/columns/{column-id}
 ```
-# <a name="c"></a>[<span data-ttu-id="1671c-129">C#</span><span class="sxs-lookup"><span data-stu-id="1671c-129">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="0fd62-129">C#</span><span class="sxs-lookup"><span data-stu-id="0fd62-129">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-column-from-contenttype-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="1671c-130">JavaScript</span><span class="sxs-lookup"><span data-stu-id="1671c-130">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="0fd62-130">JavaScript</span><span class="sxs-lookup"><span data-stu-id="0fd62-130">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-column-from-contenttype-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="1671c-131">Objective-C</span><span class="sxs-lookup"><span data-stu-id="1671c-131">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="0fd62-131">Objective-C</span><span class="sxs-lookup"><span data-stu-id="0fd62-131">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-column-from-contenttype-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="1671c-132">Java</span><span class="sxs-lookup"><span data-stu-id="1671c-132">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="0fd62-132">Java</span><span class="sxs-lookup"><span data-stu-id="0fd62-132">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-column-from-contenttype-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -101,7 +101,7 @@ GET /sites/{site-id}/contentTypes/{contentType-id}/columns/{column-id}
 
   
 
-#### <a name="response"></a><span data-ttu-id="1671c-133">Resposta</span><span class="sxs-lookup"><span data-stu-id="1671c-133">Response</span></span>
+### <a name="response"></a><span data-ttu-id="0fd62-133">Resposta</span><span class="sxs-lookup"><span data-stu-id="0fd62-133">Response</span></span>
 
   
 
