@@ -1497,7 +1497,7 @@ items:
                     href: api/ediscovery-case-close.md
                   - name: Reabrir
                     href: api/ediscovery-case-reopen.md
-                  - name: Excluir
+                  - name: Delete
                     href: api/ediscovery-case-delete.md
               - name: Custodian
                 href: resources/ediscovery-custodian.md
@@ -1642,7 +1642,7 @@ items:
                     href: api/projectrome-put-historyitem.md
                   - name: Excluir um item do histórico
                     href: api/projectrome-delete-historyitem.md
-      - name: Reserva de clientes (visualização)
+      - name: Reserva de clientes (prévia)
         displayName: 'Bookings, Microsoft Bookings'
         items:
           - name: Visão Geral
@@ -1728,7 +1728,7 @@ items:
               - name: Excluir
                 href: api/bookingstaffmember-delete.md
       - name: Dispositivos e aplicativos
-        expanded: false
+        expanded: true
         items:
           - name: Impressão na nuvem
             items:
@@ -9255,7 +9255,7 @@ items:
                         href: api/intune-shared-devicemanagementderivedcredentialsettings-update.md
                       - name: List
                         href: api/intune-shared-devicemanagementderivedcredentialsettings-list.md
-                      - name: Excluir
+                      - name: Delete
                         href: api/intune-shared-devicemanagementderivedcredentialsettings-delete.md
                   - name: Script de gerenciamento de dispositivo
                     href: resources/intune-shared-devicemanagementscript.md
@@ -9670,7 +9670,7 @@ items:
                         href: api//unifiedroleassignmentmultiple-update.md
                       - name: Excluir
                         href: api/unifiedroleassignmentmultiple-delete.md
-          - name: Atualizações do dispositivo (prévia)
+          - name: Atualizações do dispositivo (visualização)
             displayName: Windows updates
             items:
               - name: Atualizações
@@ -9763,6 +9763,177 @@ items:
                         href: api/windowsupdates-updatableassetgroup-removemembers.md
                       - name: Remover membros por ID
                         href: api/windowsupdates-updatableassetgroup-removemembersbyid.md
+          - name: Gerenciamento multilocatário (visualização)
+            items:
+              - name: Locatário gerenciado
+                href: resources/managedtenants-managedtenant.md
+              - name: Conformidade de política agregada
+                href: resources/managedtenants-aggregatedpolicycompliance.md
+                items:
+                  - name: Listar conformidades de política agregada
+                    href: api/managedtenants-managedtenant-list-aggregatedpolicycompliances.md
+              - name: Conexão de computador na nuvem
+                href: resources/managedtenants-cloudpcconnection.md
+                items:
+                  - name: Listar conexões de computador na nuvem
+                    href: api/managedtenants-managedtenant-list-cloudpcconnections.md
+                  - name: Obter conexão de computador na nuvem
+                    href: api/managedtenants-cloudpcconnection-get.md
+              - name: Dispositivo de computador na nuvem
+                href: resources/managedtenants-cloudpcdevice.md
+                items:
+                  - name: Listar dispositivos de computador na nuvem
+                    href: api/managedtenants-managedtenant-list-cloudpcdevices.md
+                  - name: Obter dispositivo de computador na nuvem
+                    href: api/managedtenants-cloudpcdevice-get.md
+              - name: Visão geral do computador na nuvem
+                href: resources/managedtenants-cloudpcoverview.md
+                items:
+                  - name: Listar visão geral do computador na nuvem
+                    href: api/managedtenants-managedtenant-list-cloudpcsoverview.md
+                  - name: Obter visão geral do computador na nuvem
+                    href: api/managedtenants-cloudpcoverview-get.md
+              - name: Cobertura de política de acesso condicional
+                href: resources/managedtenants-conditionalaccesspolicycoverage.md
+                items:
+                  - name: Listar coberturas de acesso condicional
+                    href: api/managedtenants-managedtenant-list-conditionalaccesspolicycoverages.md
+                  - name: Obter cobertura de política de acesso condicional
+                    href: api/managedtenants-conditionalaccesspolicycoverage-get.md
+              - name: Resumo de registros de usuário de credenciais
+                href: resources/managedtenants-credentialuserregistrationssummary.md
+                items:
+                  - name: Listar resumos de registro do usuário de credencial
+                    href: api/managedtenants-managedtenant-list-credentialuserregistrationssummaries.md
+                  - name: Obter resumo de registros de usuário de credencial
+                    href: api/managedtenants-credentialuserregistrationssummary-get.md
+              - name: Resumo do estado da configuração de política de conformidade do dispositivo
+                href: resources/managedtenants-devicecompliancepolicysettingstatesummary.md
+                items:
+                  - name: Listar resumo do estado de configuração da política de conformidade do dispositivo
+                    href: api/managedtenants-managedtenant-list-devicecompliancepolicysettingstatesummary.md
+                  - name: Obter resumo de estado de configuração da política de conformidade do dispositivo
+                    href: api/managedtenants-devicecompliancepolicysettingstatesummary-get.md
+              - name: Conformidade de dispositivo gerenciado
+                href: resources/managedtenants-manageddevicecompliance.md
+                items:
+                  - name: Listar conformidades de dispositivos gerenciados
+                    href: api/managedtenants-managedtenant-list-manageddevicecompliances.md
+                  - name: Obter conformidade de dispositivo gerenciado
+                    href: api/managedtenants-manageddevicecompliance-get.md
+              - name: Tendência de conformidade de dispositivo gerenciado
+                href: resources/managedtenants-manageddevicecompliancetrend.md
+                items:
+                  - name: Listar tendências de conformidade de dispositivos gerenciados
+                    href: api/managedtenants-managedtenant-list-manageddevicecompliancetrends.md
+                  - name: Obter tendência de conformidade de dispositivo gerenciado
+                    href: api/managedtenants-manageddevicecompliancetrend-get.md
+              - name: Ação de gerenciamento
+                href: resources/managedtenants-managementaction.md
+                items:
+                  - name: Ação de gerenciamento de lista
+                    href: api/managedtenants-managedtenant-list-managementactions.md
+                  - name: Obter ação de gerenciamento
+                    href: api/managedtenants-managementaction-get.md
+                  - name: Aplicar ação de gerenciamento
+                    href: api/managedtenants-managementaction-apply.md
+              - name: Status de implantação do locatário de ações de gerenciamento
+                href: resources/managedtenants-managementactiontenantdeploymentstatus.md
+                items:
+                  - name: Listar status de implantação da ação de gerenciamento
+                    href: api/managedtenants-managedtenant-list-managementactiontenantdeploymentstatuses.md
+                  - name: Obter o status de implantação da ação de gerenciamento
+                    href: api/managedtenants-managementactiontenantdeploymentstatus-get.md
+                  - name: Alterar o status de implantação da ação de gerenciamento
+                    href: api/managedtenants-managementactiontenantdeploymentstatus-changedeploymentstatus.md
+              - name: Intenção de gerenciamento
+                href: resources/managedtenants-managementintent.md
+                items:
+                  - name: Listar intenções de gerenciamento
+                    href: api/managedtenants-managedtenant-list-managementintents.md
+                  - name: Obter intenção de gerenciamento
+                    href: api/managedtenants-managementintent-get.md
+              - name: Modelo de gerenciamento
+                href: resources/managedtenants-managementtemplate.md
+                items:
+                  - name: Listar modelos de gerenciamento
+                    href: api/managedtenants-managedtenant-list-managementtemplates.md
+                  - name: Obter modelo de gerenciamento
+                    href: api/managedtenants-managementtemplate-get.md
+              - name: Usuário arriscado
+                href: resources/managedtenants-riskyuser.md
+                items:
+                  - name: Listar usuário arriscado
+                    href: api/managedtenants-managedtenant-list-riskyusers.md
+                  - name: Obter usuário arriscado
+                    href: api/managedtenants-riskyuser-get.md
+              - name: Informações personalizadas do locatário
+                href: resources/managedtenants-tenantcustomizedinformation.md
+                items:
+                  - name: Listar informações personalizadas do locatário
+                    href: api/managedtenants-managedtenant-list-tenantscustomizedinformation.md
+                  - name: Obter informações personalizadas do locatário
+                    href: api/managedtenants-tenantcustomizedinformation-get.md
+                  - name: Atualizar informações personalizadas do locatário
+                    href: api/managedtenants-tenantcustomizedinformation-update.md
+              - name: Informações detalhadas do locatário
+                href: resources/managedtenants-tenantdetailedinformation.md
+                items:
+                  - name: Listar informações detalhadas do locatário
+                    href: api/managedtenants-managedtenant-list-tenantsdetailedinformation.md
+                  - name: Obter informações detalhadas do locatário
+                    href: api/managedtenants-tenantdetailedinformation-get.md
+              - name: Tenant
+                href: resources/managedtenants-tenant.md
+                items:
+                  - name: Listar locatários
+                    href: api/managedtenants-managedtenant-list-tenants.md
+                  - name: Obter locatário
+                    href: api/managedtenants-tenant-get.md
+                  - name: Locatário de offboard
+                    href: api/managedtenants-tenant-offboardtenant.md
+                  - name: Redefinir o status de integração do locatário
+                    href: api/managedtenants-tenant-resettenantonboardingstatus.md
+              - name: Grupo de locatários
+                href: resources/managedtenants-tenantgroup.md
+                items:
+                  - name: Listar grupos de locatários
+                    href: api/managedtenants-managedtenant-list-tenantgroups.md
+                  - name: Obter grupo de locatários
+                    href: api/managedtenants-tenantgroup-get.md
+                  - name: Pesquisar locatário
+                    href: api/managedtenants-tenantgroup-tenantsearch.md
+              - name: Marca de locatário
+                href: resources/managedtenants-tenanttag.md
+                items:
+                  - name: Listar marcas de locatário
+                    href: api/managedtenants-managedtenant-list-tenanttags.md
+                  - name: Criar marca de locatário
+                    href: api/managedtenants-managedtenant-post-tenanttags.md
+                  - name: Obter a marca de locatário
+                    href: api/managedtenants-tenanttag-get.md
+                  - name: Atualizar marca de locatário
+                    href: api/managedtenants-tenanttag-update.md
+                  - name: Excluir marca de locatário
+                    href: api/managedtenants-tenanttag-delete.md
+                  - name: Atribuir marca de locatário
+                    href: api/managedtenants-tenanttag-assigntag.md
+                  - name: Marca de locatário unassign
+                    href: api/managedtenants-tenanttag-unassigntag.md
+              - name: Estado de malware de dispositivo Windows
+                href: resources/managedtenants-windowsdevicemalwarestate.md
+                items:
+                  - name: Listar Windows de malware de dispositivo
+                    href: api/managedtenants-managedtenant-list-windowsdevicemalwarestates.md
+                  - name: Obter Windows estado de malware do dispositivo
+                    href: api/managedtenants-windowsdevicemalwarestate-get.md
+              - name: Estado de proteção do Windows
+                href: resources/managedtenants-windowsprotectionstate.md
+                items:
+                  - name: Listar Windows estado de proteção
+                    href: api/managedtenants-managedtenant-list-windowsprotectionstates.md
+                  - name: Obter Windows de proteção
+                    href: api/managedtenants-windowsprotectionstate-get.md
       - name: Educação
         items:
           - name: Visão geral
@@ -11383,7 +11554,7 @@ items:
                         href: api/b2cidentityuserflow-userflowidentityproviders-update.md
                       - name: Remover provedor de identidade
                         href: api/b2cidentityuserflow-delete-userflowidentityproviders.md
-                      - name: Listar provedores de identidade (preterido)
+                      - name: Listar os provedores de identidade (preterido)
                         href: api/b2cidentityuserflow-list-identityproviders.md
                       - name: Adicionar provedor de identidade (preterido)
                         href: api/b2cidentityuserflow-post-identityproviders.md
@@ -11419,7 +11590,7 @@ items:
                         href: api/b2xidentityuserflow-userflowidentityproviders-update.md
                       - name: Excluir o provedor de identidade
                         href: api/b2xidentityuserflow-delete-userflowidentityproviders.md
-                      - name: Listar provedores de identidade (preterido)
+                      - name: Listar os provedores de identidade (preterido)
                         href: api/b2xidentityuserflow-list-identityproviders.md
                       - name: Adicionar provedor de identidade (preterido)
                         href: api/b2xidentityuserflow-post-identityproviders.md
@@ -11493,7 +11664,7 @@ items:
                         href: api/identityapiconnector-update.md
                       - name: Upload um certificado de cliente
                         href: api/identityapiconnector-uploadclientcertificate.md
-                      - name: Excluir
+                      - name: Delete
                         href: api/identityapiconnector-delete.md
           - name: Governança
             items:
@@ -12229,7 +12400,7 @@ items:
             items:
               - name: Criar e enviar uma notificação
                 href: api/user-post-notifications.md
-      - name: Inteligência de pessoas e local de trabalho
+      - name: Inteligência de pessoas e no local de trabalho
         items:
           - name: Visão Geral
             href: resources/social-overview.md
@@ -12990,7 +13161,7 @@ items:
                     href: api/reportroot-getyammergroupsactivitygroupcounts.md
                   - name: Obter contagens de atividades
                     href: api/reportroot-getyammergroupsactivitycounts.md
-      - name: Search
+      - name: Pesquisar
         displayname: Microsoft Search API
         items:
           - name: Consulta
