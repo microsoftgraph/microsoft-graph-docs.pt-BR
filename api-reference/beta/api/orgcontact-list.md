@@ -5,60 +5,60 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: afc6c26238f3f63b71d5c4b1cb0fae28316daa39
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: b848c97277882b9f925117f6765c41c050cb7b0b
+ms.sourcegitcommit: 6d247f44a6ee4d8515c3863ee8a2683163c9f829
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52055523"
+ms.lasthandoff: 07/14/2021
+ms.locfileid: "53430288"
 ---
-# <a name="list-orgcontacts"></a><span data-ttu-id="0c7ab-103">Listar orgContacts</span><span class="sxs-lookup"><span data-stu-id="0c7ab-103">List orgContacts</span></span>
+# <a name="list-orgcontacts"></a><span data-ttu-id="69a5f-103">Listar orgContacts</span><span class="sxs-lookup"><span data-stu-id="69a5f-103">List orgContacts</span></span>
 
-<span data-ttu-id="0c7ab-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="0c7ab-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="69a5f-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="69a5f-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="0c7ab-105">Obter a lista de contatos organizacionais dessa organização.</span><span class="sxs-lookup"><span data-stu-id="0c7ab-105">Get the list of organizational contacts for this organization.</span></span>
+<span data-ttu-id="69a5f-105">Obter a lista de contatos organizacionais dessa organização.</span><span class="sxs-lookup"><span data-stu-id="69a5f-105">Get the list of organizational contacts for this organization.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="0c7ab-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="0c7ab-106">Permissions</span></span>
-<span data-ttu-id="0c7ab-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="0c7ab-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="69a5f-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="69a5f-106">Permissions</span></span>
+<span data-ttu-id="69a5f-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="69a5f-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="0c7ab-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="0c7ab-109">Permission type</span></span>      | <span data-ttu-id="0c7ab-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="0c7ab-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="69a5f-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="69a5f-109">Permission type</span></span>      | <span data-ttu-id="69a5f-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="69a5f-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="0c7ab-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="0c7ab-111">Delegated (work or school account)</span></span> | <span data-ttu-id="0c7ab-112">OrgContact.Read.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="0c7ab-112">OrgContact.Read.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="0c7ab-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="0c7ab-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="0c7ab-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="0c7ab-114">Not supported.</span></span>    |
-|<span data-ttu-id="0c7ab-115">Application</span><span class="sxs-lookup"><span data-stu-id="0c7ab-115">Application</span></span> | <span data-ttu-id="0c7ab-116">OrgContact.Read.All, Directory.Read.All, Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="0c7ab-116">OrgContact.Read.All, Directory.Read.All, Directory.ReadWrite.All</span></span> |
+|<span data-ttu-id="69a5f-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="69a5f-111">Delegated (work or school account)</span></span> | <span data-ttu-id="69a5f-112">OrgContact.Read.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="69a5f-112">OrgContact.Read.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="69a5f-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="69a5f-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="69a5f-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="69a5f-114">Not supported.</span></span>    |
+|<span data-ttu-id="69a5f-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="69a5f-115">Application</span></span> | <span data-ttu-id="69a5f-116">OrgContact.Read.All, Directory.Read.All, Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="69a5f-116">OrgContact.Read.All, Directory.Read.All, Directory.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="0c7ab-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="0c7ab-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="69a5f-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="69a5f-117">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /contacts
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="0c7ab-118">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="0c7ab-118">Optional query parameters</span></span>
-<span data-ttu-id="0c7ab-119">Este método dá suporte a [Parâmetros de consulta OData](/graph/query_parameters) para ajudar a personalizar a resposta, incluindo `$search`, `$count`, e `$filter`.</span><span class="sxs-lookup"><span data-stu-id="0c7ab-119">This method supports the [OData query parameters](/graph/query_parameters) to help customize the response, including `$search`, `$count`, and `$filter`.</span></span> <span data-ttu-id="0c7ab-120">Você pode usar `$search`na propriedade **displayName**.</span><span class="sxs-lookup"><span data-stu-id="0c7ab-120">You can use `$search` on the **displayName** property.</span></span> <span data-ttu-id="0c7ab-121">Quando itens são adicionados ou atualizados para este recurso, eles são indexados especialmente para uso com os `$count` e `$search` parâmetros de consulta.</span><span class="sxs-lookup"><span data-stu-id="0c7ab-121">When items are added or updated for this resource, they are specially indexed for use with the `$count` and `$search` query parameters.</span></span> <span data-ttu-id="0c7ab-122">Pode haver um pequeno atraso entre quando um item é adicionado ou atualizado e quando está disponível no índice.</span><span class="sxs-lookup"><span data-stu-id="0c7ab-122">There can be a slight delay between when an item is added or updated and when it is available in the index.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="69a5f-118">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="69a5f-118">Optional query parameters</span></span>
+<span data-ttu-id="69a5f-119">Este método suporta aos parâmetros de consulta `$count`, `$expand`, `$filter`, `$orderBy`, `$search`, `$select`, e `$top` [OData](/graph/query-parameters) para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="69a5f-119">This method supports the `$count`, `$expand`, `$filter`, `$orderBy`, `$search`, `$select`, and `$top` [OData query parameters](/graph/query-parameters) to help customize the response.</span></span> <span data-ttu-id="69a5f-120">Algumas consultas são suportadas somente quando se usa o cabeçalho **ConsistencyLevel** definido como `eventual` e `$count`.</span><span class="sxs-lookup"><span data-stu-id="69a5f-120">Some queries are supported only when you use the **ConsistencyLevel** header set to `eventual` and `$count`.</span></span> <span data-ttu-id="69a5f-121">Para obter mais informações, consulte [Funcionalidades avançadas de consulta nos objetos de diretório do Microsoft Azure AD](/graph/aad-advanced-queries).</span><span class="sxs-lookup"><span data-stu-id="69a5f-121">For more information, see [Advanced query capabilities on Azure AD directory objects](/graph/aad-advanced-queries).</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="0c7ab-123">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="0c7ab-123">Request headers</span></span>
-| <span data-ttu-id="0c7ab-124">Nome</span><span class="sxs-lookup"><span data-stu-id="0c7ab-124">Name</span></span>       | <span data-ttu-id="0c7ab-125">Descrição</span><span class="sxs-lookup"><span data-stu-id="0c7ab-125">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="69a5f-122">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="69a5f-122">Request headers</span></span>
+| <span data-ttu-id="69a5f-123">Nome</span><span class="sxs-lookup"><span data-stu-id="69a5f-123">Name</span></span>       | <span data-ttu-id="69a5f-124">Descrição</span><span class="sxs-lookup"><span data-stu-id="69a5f-124">Description</span></span>|
 |:-----------|:----------|
-| <span data-ttu-id="0c7ab-126">Autorização</span><span class="sxs-lookup"><span data-stu-id="0c7ab-126">Authorization</span></span>  | <span data-ttu-id="0c7ab-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="0c7ab-p103">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="0c7ab-129">ConsistencyLevel</span><span class="sxs-lookup"><span data-stu-id="0c7ab-129">ConsistencyLevel</span></span> | <span data-ttu-id="0c7ab-130">eventualmente.</span><span class="sxs-lookup"><span data-stu-id="0c7ab-130">eventual.</span></span> <span data-ttu-id="0c7ab-131">Este cabeçalho e `$count` são necessários quando se utiliza `$search`, ou quando se usa `$filter` com o `$orderby` parâmetro de consulta.</span><span class="sxs-lookup"><span data-stu-id="0c7ab-131">This header and `$count` are required when using `$search`, or when using `$filter` with the `$orderby` query parameter.</span></span> <span data-ttu-id="0c7ab-132">Ele usa um índice que pode não estar atualizado com as alterações recentes no objeto.</span><span class="sxs-lookup"><span data-stu-id="0c7ab-132">It uses an index that may not be up-to-date with recent changes to the object.</span></span> |
+| <span data-ttu-id="69a5f-125">Autorização</span><span class="sxs-lookup"><span data-stu-id="69a5f-125">Authorization</span></span>  | <span data-ttu-id="69a5f-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="69a5f-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="69a5f-128">ConsistencyLevel</span><span class="sxs-lookup"><span data-stu-id="69a5f-128">ConsistencyLevel</span></span> | <span data-ttu-id="69a5f-129">eventualmente.</span><span class="sxs-lookup"><span data-stu-id="69a5f-129">eventual.</span></span> <span data-ttu-id="69a5f-130">Este cabeçalho e `$count` são necessários quando se utiliza `$search`, ou em uso específico de `$filter`.</span><span class="sxs-lookup"><span data-stu-id="69a5f-130">This header and `$count` are required when using `$search`, or in specific usage of `$filter`.</span></span> <span data-ttu-id="69a5f-131">Para obter mais informações sobre o uso de **ConsistencyLevel** e `$count`, consulte [Funcionalidades avançadas de consulta nos objetos de diretório do Microsoft Azure AD](/graph/aad-advanced-queries).</span><span class="sxs-lookup"><span data-stu-id="69a5f-131">For more information about the use of **ConsistencyLevel** and `$count`, see [Advanced query capabilities on Azure AD directory objects](/graph/aad-advanced-queries).</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="0c7ab-133">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="0c7ab-133">Request body</span></span>
-<span data-ttu-id="0c7ab-134">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="0c7ab-134">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="69a5f-132">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="69a5f-132">Request body</span></span>
+<span data-ttu-id="69a5f-133">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="69a5f-133">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="0c7ab-135">Resposta</span><span class="sxs-lookup"><span data-stu-id="0c7ab-135">Response</span></span>
+## <a name="response"></a><span data-ttu-id="69a5f-134">Resposta</span><span class="sxs-lookup"><span data-stu-id="69a5f-134">Response</span></span>
 
-<span data-ttu-id="0c7ab-136">Se tiver êxito, este método retornará um código de resposta e uma coleção de objetos `200 OK` [orgContact](../resources/orgcontact.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="0c7ab-136">If successful, this method returns a `200 OK` response code and a collection of [orgContact](../resources/orgcontact.md) objects in the response body.</span></span>
+<span data-ttu-id="69a5f-135">Se tiver êxito, este método retornará um código de resposta e uma coleção de objetos `200 OK` [orgContact](../resources/orgcontact.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="69a5f-135">If successful, this method returns a `200 OK` response code and a collection of [orgContact](../resources/orgcontact.md) objects in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="0c7ab-137">Exemplos</span><span class="sxs-lookup"><span data-stu-id="0c7ab-137">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="69a5f-136">Exemplos</span><span class="sxs-lookup"><span data-stu-id="69a5f-136">Examples</span></span>
 
-### <a name="example-1-get-organizational-contacts-for-an-organization"></a><span data-ttu-id="0c7ab-138">Exemplo 1: Obter contatos organizacionais para uma organização</span><span class="sxs-lookup"><span data-stu-id="0c7ab-138">Example 1: Get organizational contacts for an organization</span></span>
+### <a name="example-1-get-organizational-contacts-for-an-organization"></a><span data-ttu-id="69a5f-137">Exemplo 1: Obter contatos organizacionais para uma organização</span><span class="sxs-lookup"><span data-stu-id="69a5f-137">Example 1: Get organizational contacts for an organization</span></span>
 
-#### <a name="request"></a><span data-ttu-id="0c7ab-139">Solicitação</span><span class="sxs-lookup"><span data-stu-id="0c7ab-139">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="69a5f-138">Solicitação</span><span class="sxs-lookup"><span data-stu-id="69a5f-138">Request</span></span>
 
-<span data-ttu-id="0c7ab-140">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="0c7ab-140">Here is an example of the request.</span></span>
+<span data-ttu-id="69a5f-139">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="69a5f-139">Here is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="0c7ab-141">HTTP</span><span class="sxs-lookup"><span data-stu-id="0c7ab-141">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="69a5f-140">HTTP</span><span class="sxs-lookup"><span data-stu-id="69a5f-140">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_orgcontact"
@@ -66,28 +66,28 @@ GET /contacts
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/contacts
 ```
-# <a name="c"></a>[<span data-ttu-id="0c7ab-142">C#</span><span class="sxs-lookup"><span data-stu-id="0c7ab-142">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="69a5f-141">C#</span><span class="sxs-lookup"><span data-stu-id="69a5f-141">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-orgcontact-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="0c7ab-143">JavaScript</span><span class="sxs-lookup"><span data-stu-id="0c7ab-143">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="69a5f-142">JavaScript</span><span class="sxs-lookup"><span data-stu-id="69a5f-142">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/list-orgcontact-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="0c7ab-144">Objective-C</span><span class="sxs-lookup"><span data-stu-id="0c7ab-144">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="69a5f-143">Objective-C</span><span class="sxs-lookup"><span data-stu-id="69a5f-143">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/list-orgcontact-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="0c7ab-145">Java</span><span class="sxs-lookup"><span data-stu-id="0c7ab-145">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="69a5f-144">Java</span><span class="sxs-lookup"><span data-stu-id="69a5f-144">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/list-orgcontact-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-#### <a name="response"></a><span data-ttu-id="0c7ab-146">Resposta</span><span class="sxs-lookup"><span data-stu-id="0c7ab-146">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="69a5f-145">Resposta</span><span class="sxs-lookup"><span data-stu-id="69a5f-145">Response</span></span>
 
-<span data-ttu-id="0c7ab-147">Veja a seguir um exemplo da resposta.</span><span class="sxs-lookup"><span data-stu-id="0c7ab-147">Here is an example of the response.</span></span> 
-><span data-ttu-id="0c7ab-148">**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.</span><span class="sxs-lookup"><span data-stu-id="0c7ab-148">**Note:** The response object shown here might be shortened for readability.</span></span>
+<span data-ttu-id="69a5f-146">Veja a seguir um exemplo da resposta.</span><span class="sxs-lookup"><span data-stu-id="69a5f-146">Here is an example of the response.</span></span> 
+><span data-ttu-id="69a5f-147">**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.</span><span class="sxs-lookup"><span data-stu-id="69a5f-147">**Note:** The response object shown here might be shortened for readability.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -132,11 +132,11 @@ Content-length: 222
 }
 ```
 
-### <a name="example-2-get-only-a-count-of-organizational-contacts"></a><span data-ttu-id="0c7ab-149">Exemplo 2: Obter apenas uma contagem de contatos organizacionais</span><span class="sxs-lookup"><span data-stu-id="0c7ab-149">Example 2: Get only a count of organizational contacts</span></span>
+### <a name="example-2-get-only-a-count-of-organizational-contacts"></a><span data-ttu-id="69a5f-148">Exemplo 2: Obter apenas uma contagem de contatos organizacionais</span><span class="sxs-lookup"><span data-stu-id="69a5f-148">Example 2: Get only a count of organizational contacts</span></span>
 
-#### <a name="request"></a><span data-ttu-id="0c7ab-150">Solicitação</span><span class="sxs-lookup"><span data-stu-id="0c7ab-150">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="69a5f-149">Solicitação</span><span class="sxs-lookup"><span data-stu-id="69a5f-149">Request</span></span>
 
-<span data-ttu-id="0c7ab-151">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="0c7ab-151">The following is an example of the request.</span></span>
+<span data-ttu-id="69a5f-150">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="69a5f-150">The following is an example of the request.</span></span> <span data-ttu-id="69a5f-151">Esta solicitação exige o cabeçalho **ConsistencyLevel** definido como `eventual` porque `$count` está na solicitação.</span><span class="sxs-lookup"><span data-stu-id="69a5f-151">This request requires the **ConsistencyLevel** header set to `eventual` because `$count` is in the request.</span></span> <span data-ttu-id="69a5f-152">Para obter mais informações sobre o uso de **ConsistencyLevel** e `$count`, consulte [Funcionalidades avançadas de consulta nos objetos de diretório do Microsoft Azure AD](/graph/aad-advanced-queries).</span><span class="sxs-lookup"><span data-stu-id="69a5f-152">For more information about the use of **ConsistencyLevel** and `$count`, see [Advanced query capabilities on Azure AD directory objects](/graph/aad-advanced-queries).</span></span>
 
 <!-- {
   "blockType": "ignored",
@@ -147,9 +147,9 @@ GET https://graph.microsoft.com/beta/contacts/$count
 ConsistencyLevel: eventual
 ```
 
-#### <a name="response"></a><span data-ttu-id="0c7ab-152">Resposta</span><span class="sxs-lookup"><span data-stu-id="0c7ab-152">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="69a5f-153">Resposta</span><span class="sxs-lookup"><span data-stu-id="69a5f-153">Response</span></span>
 
-<span data-ttu-id="0c7ab-153">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="0c7ab-153">The following is an example of the response.</span></span>
+<span data-ttu-id="69a5f-154">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="69a5f-154">The following is an example of the response.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -160,18 +160,19 @@ ConsistencyLevel: eventual
 ```http
 HTTP/1.1 200 OK
 Content-type: text/plain
+
+893
 ```
 
-<span data-ttu-id="0c7ab-154">893</span><span class="sxs-lookup"><span data-stu-id="0c7ab-154">893</span></span>
 
-### <a name="example-3-use-filter-and-top-to-get-one-organizational-contact-with-a-display-name-that-starts-with-a-including-a-count-of-returned-objects"></a><span data-ttu-id="0c7ab-155">Exemplo 3: use $filter e $top para obter um contato organizacional com um nome de exibição que comece com "a" incluindo uma contagem de objetos retornados</span><span class="sxs-lookup"><span data-stu-id="0c7ab-155">Example 3: Use $filter and $top to get one organizational contact with a display name that starts with 'a' including a count of returned objects</span></span>
+### <a name="example-3-use-filter-and-top-to-get-one-organizational-contact-with-a-display-name-that-starts-with-a-including-a-count-of-returned-objects"></a><span data-ttu-id="69a5f-155">Exemplo 3: use $filter e $top para obter um contato organizacional com um nome de exibição que comece com "a" incluindo uma contagem de objetos retornados</span><span class="sxs-lookup"><span data-stu-id="69a5f-155">Example 3: Use $filter and $top to get one organizational contact with a display name that starts with 'a' including a count of returned objects</span></span>
 
-#### <a name="request"></a><span data-ttu-id="0c7ab-156">Solicitação</span><span class="sxs-lookup"><span data-stu-id="0c7ab-156">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="69a5f-156">Solicitação</span><span class="sxs-lookup"><span data-stu-id="69a5f-156">Request</span></span>
 
-<span data-ttu-id="0c7ab-157">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="0c7ab-157">The following is an example of the request.</span></span>
+<span data-ttu-id="69a5f-157">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="69a5f-157">The following is an example of the request.</span></span> <span data-ttu-id="69a5f-158">Esta solicitação exige o cabeçalho **ConsistencyLevel** definido como `eventual` e a cadeia de caracteres de consulta `$count=true` porque a solicitação tem os parâmetros de consulta `$orderBy` e `$filter`.</span><span class="sxs-lookup"><span data-stu-id="69a5f-158">This request requires the **ConsistencyLevel** header set to `eventual` and the `$count=true` query string because the request has both the `$orderBy` and `$filter` query parameters.</span></span> <span data-ttu-id="69a5f-159">Para obter mais informações sobre o uso de **ConsistencyLevel** e `$count`, consulte [Funcionalidades avançadas de consulta nos objetos de diretório do Microsoft Azure AD](/graph/aad-advanced-queries).</span><span class="sxs-lookup"><span data-stu-id="69a5f-159">For more information about the use of **ConsistencyLevel** and `$count`, see [Advanced query capabilities on Azure AD directory objects](/graph/aad-advanced-queries).</span></span>
 
 <!-- {
-  "blockType": "ignored",
+  "blockType": "request",
   "name": "get_a_count"
 }-->
 ```msgraph-interactive
@@ -179,10 +180,10 @@ GET https://graph.microsoft.com/beta/contacts?$filter=startswith(displayName,'A'
 ConsistencyLevel: eventual
 ```
 
-#### <a name="response"></a><span data-ttu-id="0c7ab-158">Resposta</span><span class="sxs-lookup"><span data-stu-id="0c7ab-158">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="69a5f-160">Resposta</span><span class="sxs-lookup"><span data-stu-id="69a5f-160">Response</span></span>
 
-<span data-ttu-id="0c7ab-159">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="0c7ab-159">The following is an example of the response.</span></span>
-><span data-ttu-id="0c7ab-160">**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.</span><span class="sxs-lookup"><span data-stu-id="0c7ab-160">**Note:** The response object shown here might be shortened for readability.</span></span>
+<span data-ttu-id="69a5f-161">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="69a5f-161">The following is an example of the response.</span></span>
+><span data-ttu-id="69a5f-162">**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.</span><span class="sxs-lookup"><span data-stu-id="69a5f-162">**Note:** The response object shown here might be shortened for readability.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -207,14 +208,14 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-4-use-search-to-get-organizational-contacts-with-display-names-that-contain-the-letters-wa-including-a-count-of-returned-objects"></a><span data-ttu-id="0c7ab-161">Exemplo 4: use $search para obter contatos organizacionais com nomes de exibição que contenham as letras 'wa' incluindo uma contagem de objetos retornados</span><span class="sxs-lookup"><span data-stu-id="0c7ab-161">Example 4: Use $search to get organizational contacts with display names that contain the letters 'wa' including a count of returned objects</span></span>
+### <a name="example-4-use-search-to-get-organizational-contacts-with-display-names-that-contain-the-letters-wa-including-a-count-of-returned-objects"></a><span data-ttu-id="69a5f-163">Exemplo 4: use $search para obter contatos organizacionais com nomes de exibição que contenham as letras 'wa' incluindo uma contagem de objetos retornados</span><span class="sxs-lookup"><span data-stu-id="69a5f-163">Example 4: Use $search to get organizational contacts with display names that contain the letters 'wa' including a count of returned objects</span></span>
 
-#### <a name="request"></a><span data-ttu-id="0c7ab-162">Solicitação</span><span class="sxs-lookup"><span data-stu-id="0c7ab-162">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="69a5f-164">Solicitação</span><span class="sxs-lookup"><span data-stu-id="69a5f-164">Request</span></span>
 
-<span data-ttu-id="0c7ab-163">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="0c7ab-163">The following is an example of the request.</span></span>
+<span data-ttu-id="69a5f-165">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="69a5f-165">The following is an example of the request.</span></span> <span data-ttu-id="69a5f-166">Essa solicitação requer o header **ConsistencyLevel** definido como porque e a cadeia de caracteres de consulta `eventual` está na `$search` `$count=true` solicitação.</span><span class="sxs-lookup"><span data-stu-id="69a5f-166">This request requires the **ConsistencyLevel** header set to `eventual` because `$search` and the `$count=true` query string is in the request.</span></span> <span data-ttu-id="69a5f-167">Para obter mais informações sobre o uso de **ConsistencyLevel** e `$count`, consulte [Funcionalidades avançadas de consulta nos objetos de diretório do Microsoft Azure AD](/graph/aad-advanced-queries).</span><span class="sxs-lookup"><span data-stu-id="69a5f-167">For more information about the use of **ConsistencyLevel** and `$count`, see [Advanced query capabilities on Azure AD directory objects](/graph/aad-advanced-queries).</span></span>
 
 <!-- {
-  "blockType": "ignored",
+  "blockType": "request",
   "name": "get_phone_count"
 }-->
 ```msgraph-interactive
@@ -222,10 +223,10 @@ GET https://graph.microsoft.com/beta/contacts?$search="displayName:wa"&$count=tr
 ConsistencyLevel: eventual
 ```
 
-#### <a name="response"></a><span data-ttu-id="0c7ab-164">Resposta</span><span class="sxs-lookup"><span data-stu-id="0c7ab-164">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="69a5f-168">Resposta</span><span class="sxs-lookup"><span data-stu-id="69a5f-168">Response</span></span>
 
-<span data-ttu-id="0c7ab-165">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="0c7ab-165">The following is an example of the response.</span></span>
-><span data-ttu-id="0c7ab-166">**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.</span><span class="sxs-lookup"><span data-stu-id="0c7ab-166">**Note:** The response object shown here might be shortened for readability.</span></span>
+<span data-ttu-id="69a5f-169">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="69a5f-169">The following is an example of the response.</span></span>
+><span data-ttu-id="69a5f-170">**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.</span><span class="sxs-lookup"><span data-stu-id="69a5f-170">**Note:** The response object shown here might be shortened for readability.</span></span>
 
 <!-- {
   "blockType": "response",

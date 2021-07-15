@@ -5,34 +5,34 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: 9fd6c2d8297e62e7f2ce9eeaea47e98428e441ad
-ms.sourcegitcommit: ae83b2b372902268517fd17a8b10d6d9add422af
+ms.openlocfilehash: 955b47a05086f36b857c7443a962d81aa0aec735
+ms.sourcegitcommit: 486fe9c77d4d89c5416bb83e8c716e6918c47370
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "53334588"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53441284"
 ---
-# <a name="delete-an-approleassignment-granted-for-a-service-principal"></a><span data-ttu-id="c423d-103">Excluir um appRoleAssignment concedido para uma entidade de serviço</span><span class="sxs-lookup"><span data-stu-id="c423d-103">Delete an appRoleAssignment granted for a service principal</span></span>
+# <a name="delete-an-approleassignment-granted-for-a-service-principal"></a><span data-ttu-id="33b8c-103">Excluir um appRoleAssignment concedido para uma entidade de serviço</span><span class="sxs-lookup"><span data-stu-id="33b8c-103">Delete an appRoleAssignment granted for a service principal</span></span>
 
-<span data-ttu-id="c423d-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="c423d-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="33b8c-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="33b8c-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="c423d-105">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="c423d-105">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="33b8c-105">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="33b8c-105">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="c423d-106">Exclui um [appRoleAssignment](../resources/approleassignment.md) que um usuário, grupo ou entidade de serviço cliente foi concedido para uma entidade de serviço de recursos.</span><span class="sxs-lookup"><span data-stu-id="c423d-106">Deletes an [appRoleAssignment](../resources/approleassignment.md) that a user, group, or client service principal has been granted for a resource service principal.</span></span>
+<span data-ttu-id="33b8c-106">Exclui um [appRoleAssignment](../resources/approleassignment.md) que um usuário, grupo ou entidade de serviço cliente foi concedido para uma entidade de serviço de recursos.</span><span class="sxs-lookup"><span data-stu-id="33b8c-106">Deletes an [appRoleAssignment](../resources/approleassignment.md) that a user, group, or client service principal has been granted for a resource service principal.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="c423d-107">Permissões</span><span class="sxs-lookup"><span data-stu-id="c423d-107">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="33b8c-107">Permissions</span><span class="sxs-lookup"><span data-stu-id="33b8c-107">Permissions</span></span>
 
-<span data-ttu-id="c423d-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="c423d-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="33b8c-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="33b8c-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="c423d-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="c423d-110">Permission type</span></span>      | <span data-ttu-id="c423d-111">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="c423d-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="33b8c-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="33b8c-110">Permission type</span></span>      | <span data-ttu-id="33b8c-111">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="33b8c-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="c423d-112">Delegada (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="c423d-112">Delegated (work or school account)</span></span> | <span data-ttu-id="c423d-113">AppRoleAssignment.ReadWrite.All, Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="c423d-113">AppRoleAssignment.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="c423d-114">Delegada (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="c423d-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="c423d-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="c423d-115">Not supported.</span></span>    |
-|<span data-ttu-id="c423d-116">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="c423d-116">Application</span></span> | <span data-ttu-id="c423d-117">AppRoleAssignment.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="c423d-117">AppRoleAssignment.ReadWrite.All</span></span> |
+|<span data-ttu-id="33b8c-112">Delegada (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="33b8c-112">Delegated (work or school account)</span></span> | <span data-ttu-id="33b8c-113">AppRoleAssignment.ReadWrite.All, Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="33b8c-113">AppRoleAssignment.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="33b8c-114">Delegada (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="33b8c-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="33b8c-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="33b8c-115">Not supported.</span></span>    |
+|<span data-ttu-id="33b8c-116">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="33b8c-116">Application</span></span> | <span data-ttu-id="33b8c-117">AppRoleAssignment.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="33b8c-117">AppRoleAssignment.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="c423d-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="c423d-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="33b8c-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="33b8c-118">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -41,28 +41,30 @@ DELETE /servicePrincipals/{resource-SP-id}/appRoleAssignedTo/{appRoleAssignment-
 ```
 
 > [!NOTE]
-> <span data-ttu-id="c423d-119">Como prática prática, recomendamos excluir atribuições de função de aplicativo por meio da relação da entidade de serviço de recursos, em vez da relação do usuário, grupo ou entidade de `appRoleAssignedTo` serviço  `appRoleAssignments` atribuída.</span><span class="sxs-lookup"><span data-stu-id="c423d-119">As a best practice, we recommend deleting app role assignments through the `appRoleAssignedTo` relationship of the _resource_ service principal, instead of the `appRoleAssignments` relationship of the assigned user, group, or service principal.</span></span>
+> <span data-ttu-id="33b8c-119">Como prática prática, recomendamos excluir atribuições de função de aplicativo por meio da relação da entidade de serviço de recursos, em vez da relação do usuário, grupo ou entidade de `appRoleAssignedTo` serviço  `appRoleAssignments` atribuída.</span><span class="sxs-lookup"><span data-stu-id="33b8c-119">As a best practice, we recommend deleting app role assignments through the `appRoleAssignedTo` relationship of the _resource_ service principal, instead of the `appRoleAssignments` relationship of the assigned user, group, or service principal.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="c423d-120">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="c423d-120">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="33b8c-120">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="33b8c-120">Request headers</span></span>
 
-| <span data-ttu-id="c423d-121">Nome</span><span class="sxs-lookup"><span data-stu-id="c423d-121">Name</span></span>       | <span data-ttu-id="c423d-122">Tipo</span><span class="sxs-lookup"><span data-stu-id="c423d-122">Type</span></span> | <span data-ttu-id="c423d-123">Descrição</span><span class="sxs-lookup"><span data-stu-id="c423d-123">Description</span></span>|
+| <span data-ttu-id="33b8c-121">Nome</span><span class="sxs-lookup"><span data-stu-id="33b8c-121">Name</span></span>       | <span data-ttu-id="33b8c-122">Tipo</span><span class="sxs-lookup"><span data-stu-id="33b8c-122">Type</span></span> | <span data-ttu-id="33b8c-123">Descrição</span><span class="sxs-lookup"><span data-stu-id="33b8c-123">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="c423d-124">Autorização</span><span class="sxs-lookup"><span data-stu-id="c423d-124">Authorization</span></span>  | <span data-ttu-id="c423d-125">string</span><span class="sxs-lookup"><span data-stu-id="c423d-125">string</span></span>  | <span data-ttu-id="c423d-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="c423d-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="33b8c-124">Autorização</span><span class="sxs-lookup"><span data-stu-id="33b8c-124">Authorization</span></span>  | <span data-ttu-id="33b8c-125">string</span><span class="sxs-lookup"><span data-stu-id="33b8c-125">string</span></span>  | <span data-ttu-id="33b8c-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="33b8c-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="c423d-128">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="c423d-128">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="33b8c-128">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="33b8c-128">Request body</span></span>
 
-<span data-ttu-id="c423d-129">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="c423d-129">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="33b8c-129">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="33b8c-129">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="c423d-130">Resposta</span><span class="sxs-lookup"><span data-stu-id="c423d-130">Response</span></span>
+## <a name="response"></a><span data-ttu-id="33b8c-130">Resposta</span><span class="sxs-lookup"><span data-stu-id="33b8c-130">Response</span></span>
 
-<span data-ttu-id="c423d-p103">Se bem-sucedido, este método retorna um código de resposta `204 No Content`. Não retorna nada no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="c423d-p103">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="33b8c-p103">Se bem-sucedido, este método retorna um código de resposta `204 No Content`. Não retorna nada no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="33b8c-p103">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="c423d-133">Exemplos</span><span class="sxs-lookup"><span data-stu-id="c423d-133">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="33b8c-133">Exemplos</span><span class="sxs-lookup"><span data-stu-id="33b8c-133">Examples</span></span>
 
-### <a name="request"></a><span data-ttu-id="c423d-134">Solicitação</span><span class="sxs-lookup"><span data-stu-id="c423d-134">Request</span></span>
+### <a name="request"></a><span data-ttu-id="33b8c-134">Solicitação</span><span class="sxs-lookup"><span data-stu-id="33b8c-134">Request</span></span>
 
-<span data-ttu-id="c423d-135">Aqui está um exemplo da solicitação para excluir uma atribuição de função de aplicativo da entidade de serviço de recursos.</span><span class="sxs-lookup"><span data-stu-id="c423d-135">Here is an example of the request to delete an app role assignment from the resource service principal.</span></span>
+<span data-ttu-id="33b8c-135">Aqui está um exemplo da solicitação para excluir uma atribuição de função de aplicativo da entidade de serviço de recursos.</span><span class="sxs-lookup"><span data-stu-id="33b8c-135">Here is an example of the request to delete an app role assignment from the resource service principal.</span></span>
 
+
+# <a name="http"></a>[<span data-ttu-id="33b8c-136">HTTP</span><span class="sxs-lookup"><span data-stu-id="33b8c-136">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "serviceprincipal_delete_approleassignedto"
@@ -71,12 +73,30 @@ DELETE /servicePrincipals/{resource-SP-id}/appRoleAssignedTo/{appRoleAssignment-
 ```http
 DELETE https://graph.microsoft.com/beta/servicePrincipals/{resource-SP-id}/appRoleAssignedTo/{appRoleAssignment-id}
 ```
+# <a name="c"></a>[<span data-ttu-id="33b8c-137">C#</span><span class="sxs-lookup"><span data-stu-id="33b8c-137">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/serviceprincipal-delete-approleassignedto-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-<span data-ttu-id="c423d-136">Neste exemplo, é a id da entidade de serviço de recursos e é a id do `{resource-SP-id}` objeto appRoleAssignment que representa uma atribuição ao usuário, grupo ou entidade de serviço do `{appRoleAssignment-id}` cliente.</span><span class="sxs-lookup"><span data-stu-id="c423d-136">In this example, `{resource-SP-id}` is the id of the resource service principal, and `{appRoleAssignment-id}` is the id of the appRoleAssignment object that represents an assignment to the user, group, or client service principal.</span></span>
+# <a name="javascript"></a>[<span data-ttu-id="33b8c-138">JavaScript</span><span class="sxs-lookup"><span data-stu-id="33b8c-138">JavaScript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/serviceprincipal-delete-approleassignedto-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-### <a name="response"></a><span data-ttu-id="c423d-137">Resposta</span><span class="sxs-lookup"><span data-stu-id="c423d-137">Response</span></span>
+# <a name="objective-c"></a>[<span data-ttu-id="33b8c-139">Objective-C</span><span class="sxs-lookup"><span data-stu-id="33b8c-139">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/serviceprincipal-delete-approleassignedto-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-<span data-ttu-id="c423d-138">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="c423d-138">The following is an example of the response.</span></span>
+# <a name="java"></a>[<span data-ttu-id="33b8c-140">Java</span><span class="sxs-lookup"><span data-stu-id="33b8c-140">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/serviceprincipal-delete-approleassignedto-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+<span data-ttu-id="33b8c-141">Neste exemplo, é a id da entidade de serviço de recursos e é a id do `{resource-SP-id}` objeto appRoleAssignment que representa uma atribuição ao usuário, grupo ou entidade de serviço do `{appRoleAssignment-id}` cliente.</span><span class="sxs-lookup"><span data-stu-id="33b8c-141">In this example, `{resource-SP-id}` is the id of the resource service principal, and `{appRoleAssignment-id}` is the id of the appRoleAssignment object that represents an assignment to the user, group, or client service principal.</span></span>
+
+### <a name="response"></a><span data-ttu-id="33b8c-142">Resposta</span><span class="sxs-lookup"><span data-stu-id="33b8c-142">Response</span></span>
+
+<span data-ttu-id="33b8c-143">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="33b8c-143">The following is an example of the response.</span></span>
 
 <!-- {
   "blockType": "response",
