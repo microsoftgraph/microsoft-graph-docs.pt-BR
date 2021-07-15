@@ -4,12 +4,12 @@ description: Envie notificações de feed de atividade para os usuários em Micr
 author: RamjotSingh
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 5923b706321c9180fba8833aab029bf2396ecaff
-ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
+ms.openlocfilehash: 01e029092994c75ee5a787e830f6458755b3024b
+ms.sourcegitcommit: 6d247f44a6ee4d8515c3863ee8a2683163c9f829
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53210196"
+ms.lasthandoff: 07/14/2021
+ms.locfileid: "53429966"
 ---
 # <a name="send-activity-feed-notifications-to-users-in-microsoft-teams"></a>Enviar notificações de feed de atividade para usuários em Microsoft Teams
 
@@ -232,7 +232,7 @@ Content-Type: application/json
         "content": "New deployment requires your approval"
     },
     "recipient": {
-        "@odata.type": "Microsoft.Teams.GraphSvc.aadUserNotificationRecipient",
+        "@odata.type": "microsoft.graph.aadUserNotificationRecipient",
         "userId": "569363e2-4e49-4661-87f2-16f245c5d66a"
     },
     "templateParameters": [
@@ -419,4 +419,4 @@ As configurações serão exibidas depois que a primeira notificação for envia
 
 ## <a name="see-also"></a>Confira também
 
-[Práticas recomendadas para o uso Microsoft Teams de feed de atividade.](activity-feed-notifications-best-practices.md)
+[Práticas recomendadas para o uso Microsoft Teams de feed de atividade.](teams-activity-feed-notifications-best-practices.md)

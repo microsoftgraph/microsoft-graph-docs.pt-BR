@@ -503,7 +503,7 @@ Os limites anteriores se aplicam aos seguintes recursos: dataPolicyOperation.
 
 ### <a name="assignment-service-limits"></a>Limites de serviço de atribuição
 
-Os limites a seguir se aplicam às solicitações no serviço de atribuição API:
+Os limites a seguir se aplicam às solicitações na API do serviço de atribuição:
 
 | Tipo de solicitação                 | Limitar por aplicativo por locatário     | Limitar por locatário para todos os aplicativos |
 |---------------------------|------------------------------|----------------------------|

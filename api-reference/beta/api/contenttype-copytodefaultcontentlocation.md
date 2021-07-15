@@ -5,12 +5,12 @@ description: Copie um arquivo para um local de conteúdo padrão em um tipo de c
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: afe4a5aebe4e19dd3957e0be0cca334a33035981
-ms.sourcegitcommit: b736af7020db7311f7d28b301752b5669d7badba
+ms.openlocfilehash: 744000abf5e216bb2fe82644b9600ce1be5730f5
+ms.sourcegitcommit: 486fe9c77d4d89c5416bb83e8c716e6918c47370
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51201978"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53439347"
 ---
 # <a name="contenttype-copytodefaultcontentlocation"></a>contentType: copyToDefaultContentLocation
 Namespace: microsoft.graph
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 Copie um arquivo para um local de conteúdo padrão em um [tipo de conteúdo][contentType]. Em seguida, o arquivo pode ser adicionado como um arquivo ou modelo padrão por meio de uma operação POST.
 
-## <a name="permissions"></a>Permissões  
+## <a name="permissions"></a>Permissions  
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions_reference.md).
 
@@ -58,7 +58,7 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta ação.
 |Parâmetro|Tipo|Descrição|
 |-|-|-|
 |sourceFile| [itemReference](../resources/itemreference.md) |Metadados sobre o arquivo de origem que precisa ser copiado para o local de conteúdo padrão. Obrigatório.|
-|destinationFileName| cadeia de caracteres |Nome do arquivo de destino. 
+|destinationFileName| cadeia de caracteres |Nome do arquivo de destino. |
 
 ## <a name="response"></a>Resposta
 

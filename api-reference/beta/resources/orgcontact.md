@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: adcb3dd044162a7199cf23b1e625c62a9729e91f
-ms.sourcegitcommit: 3873c85f53e026073addca92d31d234af244444c
+ms.openlocfilehash: 704fdf67703928942bb58872a6a5fe83809d4fbb
+ms.sourcegitcommit: 6d247f44a6ee4d8515c3863ee8a2683163c9f829
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/10/2021
-ms.locfileid: "53366461"
+ms.lasthandoff: 07/14/2021
+ms.locfileid: "53430092"
 ---
 # <a name="orgcontact-resource-type"></a>Tipo de recurso orgContact
 
@@ -40,14 +40,17 @@ Esse recurso tem suporte para o uso da [consulta delta](/graph/delta-query-overv
 
 ## <a name="properties"></a>Propriedades
 
+> [!IMPORTANT]
+> O uso específico de `$filter` e o parâmetro de consulta `$search` é suportado somente quando se usa o cabeçalho **ConsistencyLevel** definido como `eventual` e `$count`. Para obter mais informações, consulte [Funcionalidades avançadas de consulta nos objetos de diretório do Microsoft Azure AD](/graph/aad-advanced-queries).
+
 | Propriedade | Tipo | Descrição |
 | -------- | ---- | ----------- |
 | addresses | [Coleção physicalOfficeAddress](physicalofficeaddress.md) | Endereços postais para esse contato organizacional. Por enquanto, um contato só pode ter um endereço físico. |
 | companyName | String | Nome da empresa à que esse contato organizacional pertence. Suporta `$filter` (`eq`, `ne`, `NOT`, `ge`, `le`, `in`, `startsWith`). |
 | departamento | String | O nome do departamento no qual o contato funciona. Suporta `$filter` (`eq`, `ne`, `NOT`, `ge`, `le`, `in`, `startsWith`). |
-| displayName | String | Nome de exibição para esse contato organizacional. Suporta `$filter` ( , , , , , , ), `eq` e `ne` `NOT` `ge` `le` `in` `startsWith` `$search` `$orderBy` .  |
-| givenName | String | Primeiro nome para esse contato organizacional. Suporta `$filter` (`eq`, `ne`, `NOT`, `ge`, `le`, `in`, `startsWith`).  |
-| id | String | Identificador exclusivo para esse contato organizacional. Suporta `$filter` (`eq`, `ne`, `NOT`, `in`). |
+| displayName | Cadeia de caracteres | Nome de exibição para esse contato organizacional. Suporta `$filter` (`eq`, `ne`, `NOT`, `ge`, `le`, `in`, `startsWith`), `$search`, e `$orderBy`.  |
+| givenName | Cadeia de caracteres | Primeiro nome para esse contato organizacional. Suporta `$filter` (`eq`, `ne`, `NOT`, `ge`, `le`, `in`, `startsWith`).  |
+| id | Cadeia de caracteres | Identificador exclusivo para esse contato organizacional. Suporta `$filter` (`eq`, `ne`, `NOT`, `in`). |
 | jobTitle | String | Cargo para esse contato organizacional. Suporta `$filter` (`eq`, `ne`, `NOT`, `ge`, `le`, `in`, `startsWith`). |
 | email | String | O endereço SMTP do contato, por exemplo, "jeff@contoso.onmicrosoft.com". Suporta `$filter` (`eq`, `ne`, `NOT`, `ge`, `le`, `in`, `startsWith`). |
 | mailNickname | String | Alias de email (parte do endereço de email pré-pendente do símbolo @) para esse contato organizacional. Suporta `$filter` (`eq`, `ne`, `NOT`, `ge`, `le`, `in`, `startsWith`). |
@@ -56,7 +59,7 @@ Esse recurso tem suporte para o uso da [consulta delta](/graph/delta-query-overv
 | onPremisesSyncEnabled | Booliano | **true** se esse objeto for sincronizado de um diretório local; **false** se esse objeto foi originalmente sincronizado de um diretório local, mas não está mais sincronizado e agora mestre em Exchange; **null** se esse objeto nunca tiver sido sincronizado de um diretório local (padrão). |
 | telefones | Coleção [phone](phone.md) | Lista de telefones para esse contato organizacional. Telefone tipos podem ser móveis, comerciais e businessFax. Somente um de cada tipo pode estar presente na coleção. Suporta `$filter` (`eq`, `ne`, `NOT`, `in`). |
 | proxyAddresses | Coleção de cadeias de caracteres | Por exemplo: "SMTP: bob@contoso.com", "smtp: bob@sales.contoso.com". O operador **any** é obrigatório para expressões de filtro em propriedades de vários valores. Suporta `$filter` (`eq`, `NOT`, `ge`, `le`, `startsWith`). |
-| surname | String | Sobrenome para esse contato organizacional. Suporta `$filter` (`eq`, `ne`, `NOT`, `ge`, `le`, `in`, `startsWith`) |
+| surname | Cadeia de caracteres | Sobrenome para esse contato organizacional. Suporta `$filter` (`eq`, `ne`, `NOT`, `ge`, `le`, `in`, `startsWith`) |
 
 ## <a name="relationships"></a>Relações
 
