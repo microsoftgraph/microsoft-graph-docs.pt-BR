@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 3ca73c7b078520f5f25b0948b8a41f272ba73669
-ms.sourcegitcommit: f77c1385306fd40557aceb24fdfe4832cbb60a27
+ms.openlocfilehash: af94dc0e6e9a2c2cef30a177509bf32f50faa3ae
+ms.sourcegitcommit: 486fe9c77d4d89c5416bb83e8c716e6918c47370
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/12/2021
-ms.locfileid: "52911890"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53439865"
 ---
 # <a name="create-educationassignmentresource"></a>Criar educationAssignmentResource
 
@@ -20,13 +20,13 @@ Namespace: microsoft.graph
 
 Criar um [recurso de atribuição](../resources/educationassignmentresource.md). O recurso em si tem um @odata.type para indicar qual tipo de recurso está sendo criado. Observe que os recursos baseados em arquivo devem primeiro ser carregados para as atribuições **resourceFolder**.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) |  EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite  |
-|Delegado (conta pessoal da Microsoft) |  Sem suporte.  |
+|Delegada (conta corporativa ou de estudante) |  EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite  |
+|Delegada (conta pessoal da Microsoft) |  Sem suporte.  |
 |Aplicativo | Sem suporte.  | 
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -48,7 +48,7 @@ No corpo da solicitação, fornece uma representação JSON do [objeto education
 Se tiver êxito, este método retornará um código de resposta e um `201 Created` [objeto educationAssignmentResource](../resources/educationassignmentresource.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
-##### <a name="request"></a>Solicitação
+### <a name="request"></a>Solicitação
 Este é um exemplo de solicitação.
 <!-- {
   "blockType": "ignored",
@@ -67,10 +67,9 @@ Content-length: 212
     "@odata.type": "#microsoft.education.assignments.api.educationLinkResource"
   }
 }
-
 ```
 No corpo da solicitação, fornece uma representação JSON do [objeto educationAssignmentResource.](../resources/educationassignmentresource.md)
-##### <a name="response"></a>Resposta
+### <a name="response"></a>Resposta
 Este é um exemplo de resposta. 
 
 >**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
@@ -95,7 +94,6 @@ Content-length: 229
     "@odata.type": "#microsoft.education.assignments.api.educationLinkResource"
   }
 }
-
 ```
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

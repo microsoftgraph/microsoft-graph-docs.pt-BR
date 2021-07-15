@@ -5,12 +5,12 @@ description: Listar colunas em um tipo de conteúdo.
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: 49a47efbeb59869dfc4f1b83946f9b6a8f178924
-ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
+ms.openlocfilehash: 0a22459519fe68c4359ef53b4700d080e5845bbd
+ms.sourcegitcommit: 6d247f44a6ee4d8515c3863ee8a2683163c9f829
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51468902"
+ms.lasthandoff: 07/14/2021
+ms.locfileid: "53430059"
 ---
 # <a name="list-columns-in-a-content-type"></a>Listar colunas em um tipo de conteúdo
 Namespace: microsoft.graph
@@ -102,7 +102,8 @@ GET https://graph.microsoft.com/beta/sites/{site-id}/contentTypes/{contentType-i
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.columnDefinition)"
+  "@odata.type": "microsoft.graph.columnDefinition",
+  "isCollection": true
 }
 -->  
 

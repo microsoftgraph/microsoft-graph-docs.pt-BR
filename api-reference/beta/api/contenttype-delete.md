@@ -1,16 +1,16 @@
 ---
 author: swapnil1993
 title: Excluir contentType
-description: Exclua um tipo de conteúdo de uma lista do sharepoint ou de um site.
+description: Exclua um tipo de conteúdo de uma SharePoint ou de um site.
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: 62ff8164a4deca10cc26d22556a00fd207e56fb0
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 9597f4b66a070ee40199b39f8accc8b3ab9f5c0e
+ms.sourcegitcommit: 486fe9c77d4d89c5416bb83e8c716e6918c47370
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50946997"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53439359"
 ---
 # <a name="delete-contenttype"></a>Excluir contentType
 Namespace: microsoft.graph
@@ -20,13 +20,13 @@ Namespace: microsoft.graph
 Remover um [tipo de conteúdo][contentType] de uma [lista][] ou de um [site][].
 
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions_reference.md).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Sites.Manage.All, Sites.FullControl.All    |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegada (conta corporativa ou de estudante) | Sites.Manage.All, Sites.FullControl.All    |
+|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Sites.Manage.All, Sites.FullControl.All |
 
 ## <a name="http-request"></a>Solicitação HTTP

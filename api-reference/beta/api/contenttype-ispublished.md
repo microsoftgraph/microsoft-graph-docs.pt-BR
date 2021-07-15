@@ -5,12 +5,12 @@ description: Verifique o status de publicação de um tipo de conteúdo em um si
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: 150caec3be0740d82563e280e6425d0d3b827ecd
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: e61d488dddc9797c3f0623a3e534f54b1bab4708
+ms.sourcegitcommit: 486fe9c77d4d89c5416bb83e8c716e6918c47370
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50770565"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53439402"
 ---
 # <a name="contenttype-ispublished"></a>contentType: isPublished
 Namespace: microsoft.graph
@@ -18,14 +18,14 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 Verifique o status de publicação de um [contentType][] em um site de hub de tipo de conteúdo.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Sites.FullControl.All    |
-|Delegado (conta pessoal da Microsoft) | Não suportado   |
+|Delegada (conta corporativa ou de estudante) | Sites.FullControl.All    |
+|Delegada (conta pessoal da Microsoft) | Não suportado   |
 |Aplicativo | Sites.FullControl.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -35,7 +35,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ```http
 GET /sites/{siteId}/contentTypes/{contentTypeId}/isPublished
 ```
->**Observação:** O siteId representa um site de hub de tipo de conteúdo.
+>**Observação:** _siteId_ representa um site de hub de tipo de conteúdo.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 |Nome|Descrição|
@@ -43,7 +43,7 @@ GET /sites/{siteId}/contentTypes/{contentTypeId}/isPublished
 |Autorização|{token} de portador. Obrigatório.|
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, essa chamada retornará uma resposta e um valor booleano especificando o estado `200 OK` de publicação do tipo de conteúdo.
+Se tiver êxito, essa chamada retornará uma resposta e um valor booleano que especifica o estado `200 OK` de publicação do tipo de conteúdo.
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

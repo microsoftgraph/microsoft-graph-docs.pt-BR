@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: resourcePageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: f645a7086759293e555e6db212cb2be0ed988eb3
-ms.sourcegitcommit: 3873c85f53e026073addca92d31d234af244444c
+ms.openlocfilehash: 23b8155781e1d6a32140adb403f9fd6bd446cb83
+ms.sourcegitcommit: 6d247f44a6ee4d8515c3863ee8a2683163c9f829
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/10/2021
-ms.locfileid: "53366902"
+ms.lasthandoff: 07/14/2021
+ms.locfileid: "53428812"
 ---
 # <a name="serviceprincipal-resource-type"></a>Tipo de recurso servicePrincipal
 
@@ -84,6 +84,9 @@ Esse recurso tem suporte para o uso da [consulta delta](/graph/delta-query-overv
 |[deletePasswordSingleSignOnCredentials](../api/serviceprincipal-deletepasswordsinglesignoncredentials.md)|Nenhum|Exclua uma credencial definida para o usuário ou grupo especificado no corpo.|
 
 ## <a name="properties"></a>Propriedades
+
+> [!IMPORTANT]
+> O uso específico de `$filter` e o parâmetro de consulta `$search` é suportado somente quando se usa o cabeçalho **ConsistencyLevel** definido como `eventual` e `$count`. Para obter mais informações, consulte [Funcionalidades avançadas de consulta nos objetos de diretório do Microsoft Azure AD](/graph/aad-advanced-queries).
 
 | Propriedade     | Tipo |Descrição|
 |:---------------|:--------|:----------|

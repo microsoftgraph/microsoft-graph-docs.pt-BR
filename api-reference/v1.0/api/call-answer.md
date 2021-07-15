@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 02bde925291b580186247a23f8bc3398d5ca0c2f
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: a0cf83ea366e8d2c03c8f3d28f4262bfc9616d65
+ms.sourcegitcommit: 6d247f44a6ee4d8515c3863ee8a2683163c9f829
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52786058"
+ms.lasthandoff: 07/14/2021
+ms.locfileid: "53430260"
 ---
 # <a name="call-answer"></a>call: answer
 
@@ -48,9 +48,10 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro        | Tipo                                     |Descrição                                                                                                                                    |
 |:-----------------|:-----------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------|
-|callbackUri       |String                                    |Permite que os bots forneçam um URI de retorno de chamada específico para que a chamada atual receba notificações posteriores. Se essa propriedade não tiver sido definida, o URI de retorno de chamada global do bot será usado em vez disso. Isso deve ser `https` .    |
-|acceptedModalities|Coleção de cadeias de caracteres                         |A lista de modalidades de aceitação. Os valores possíveis são: `audio`, `video`, `videoBasedScreenSharing`. Obrigatório para atender uma chamada. |
+|callbackUri       |String                                    |Permite que os bots forneçam um URI de retorno de chamada específico para que a chamada simultânea receba notificações posteriores. Se essa propriedade não tiver sido definida, o URI de retorno de chamada global do bot será usado em vez disso. Isso deve ser `https` .    |
+|acceptedModalities|Coleção String                         |A lista de modalidades de aceitação. Os valores possíveis são: `audio`, `video`, `videoBasedScreenSharing`. Obrigatório para atender uma chamada. |
 |mediaConfig       | [appHostedMediaConfig](../resources/apphostedmediaconfig.md) ou [serviceHostedMediaConfig](../resources/servicehostedmediaconfig.md) |A configuração de mídia. (Obrigatório)                                                                                                            |
+| participantCapacity | Int | O número de participantes que o aplicativo pode manipular para a chamada, Teams cenário de gravação [baseado em](/MicrosoftTeams/teams-recording-policy) política.                                                     |
 
 ## <a name="response"></a>Resposta
 Este método retorna um `202 Accepted` código de resposta.
@@ -80,7 +81,8 @@ Content-Length: 211
   },
   "acceptedModalities": [
     "audio"
-  ]
+  ],
+  "participantCapacity": 200
 }
 ```
 Esse blob é a configuração serializada para sessões de mídia geradas a partir do SDK de mídia.
@@ -437,6 +439,8 @@ Content-Type: application/json
 
 No cenário de registro [baseado](/microsoftteams/teams-recording-policy)em Política , antes de um participante em política ingressar em uma chamada, uma notificação de chamada de entrada será enviada para o bot associado à política.
 As informações de junção podem ser encontradas na **propriedade botData.** Em seguida, o bot pode optar por atender à chamada e [atualizar o status da](call-updaterecordingstatus.md) gravação de acordo.
+
+Quando for especificado na solicitação de uma notificação de registro baseada em política, o evento de participação do participante subsequente pertencente ao mesmo grupo de política será enviado como `participantCapacity` `Answer` [participanteJoiningNotification](../resources/participantJoiningNotification.md) em vez de uma nova notificação de chamada de entrada, até que o número de participantes que a instância de chamada atual está manipulando tenha atingido o número especificado em `participantCapacity` .
 
 Aqui está um exemplo da notificação de chamada de entrada que um bot receberia nesse caso.
 

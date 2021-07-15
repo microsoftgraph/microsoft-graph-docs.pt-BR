@@ -5,12 +5,12 @@ localization_priority: Priority
 author: sureshja
 ms.prod: applications
 doc_type: resourcePageType
-ms.openlocfilehash: 6415e6199234587ddc126fd59d017963afcbd250
-ms.sourcegitcommit: 3873c85f53e026073addca92d31d234af244444c
+ms.openlocfilehash: 5302b0f082520925149d7437d6fe1b3530b6cb56
+ms.sourcegitcommit: 6d247f44a6ee4d8515c3863ee8a2683163c9f829
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/10/2021
-ms.locfileid: "53366587"
+ms.lasthandoff: 07/14/2021
+ms.locfileid: "53430099"
 ---
 # <a name="application-resource-type"></a>tipo de recurso do aplicativo
 
@@ -66,6 +66,9 @@ Esse recurso tem suporte para o uso da [consulta delta](/graph/delta-query-overv
 |[Desmarcar distribuidor verificado](../api/application-unsetverifiedpublisher.md)| Nenhum | Desmarcar o distribuidor verificado de um aplicativo.|
 
 ## <a name="properties"></a>Propriedades
+
+> [!IMPORTANT]
+> O uso específico de `$filter` e o parâmetro de consulta `$search` é suportado somente quando se usa o cabeçalho **ConsistencyLevel** definido como `eventual` e `$count`. Para obter mais informações, consulte [Funcionalidades avançadas de consulta nos objetos de diretório do Microsoft Azure AD](/graph/aad-advanced-queries).
 
 | Propriedade | Tipo | Descrição |
 |:---------------|:--------|:----------|
