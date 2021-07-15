@@ -5,30 +5,30 @@ author: isaiahwilliams
 localization_priority: Normal
 ms.prod: microsoft-365-lighthouse
 doc_type: apiPageType
-ms.openlocfilehash: 2e4c5cd374638c5e147cc95043cf846f0323d1e6
-ms.sourcegitcommit: e372382019f1a136543eadab02ba70af3921e098
+ms.openlocfilehash: f074678ca774e66c659465fe4f7fc37fedd25cd0
+ms.sourcegitcommit: 486fe9c77d4d89c5416bb83e8c716e6918c47370
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "53401972"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53442568"
 ---
-# <a name="get-managementintent"></a><span data-ttu-id="22636-103">Obter managementIntent</span><span class="sxs-lookup"><span data-stu-id="22636-103">Get managementIntent</span></span>
-<span data-ttu-id="22636-104">Namespace: microsoft.graph.managedTenants</span><span class="sxs-lookup"><span data-stu-id="22636-104">Namespace: microsoft.graph.managedTenants</span></span>
+# <a name="get-managementintent"></a><span data-ttu-id="12fee-103">Obter managementIntent</span><span class="sxs-lookup"><span data-stu-id="12fee-103">Get managementIntent</span></span>
+<span data-ttu-id="12fee-104">Namespace: microsoft.graph.managedTenants</span><span class="sxs-lookup"><span data-stu-id="12fee-104">Namespace: microsoft.graph.managedTenants</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="22636-105">Leia as propriedades e as relações de um [objeto managementIntent.](../resources/managedtenants-managementintent.md)</span><span class="sxs-lookup"><span data-stu-id="22636-105">Read the properties and relationships of a [managementIntent](../resources/managedtenants-managementintent.md) object.</span></span>
+<span data-ttu-id="12fee-105">Leia as propriedades e as relações de um [objeto managementIntent.](../resources/managedtenants-managementintent.md)</span><span class="sxs-lookup"><span data-stu-id="12fee-105">Read the properties and relationships of a [managementIntent](../resources/managedtenants-managementintent.md) object.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="22636-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="22636-106">Permissions</span></span>
-<span data-ttu-id="22636-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="22636-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="12fee-106">Permissions</span><span class="sxs-lookup"><span data-stu-id="12fee-106">Permissions</span></span>
+<span data-ttu-id="12fee-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="12fee-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="22636-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="22636-109">Permission type</span></span>|<span data-ttu-id="22636-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="22636-110">Permissions (from least to most privileged)</span></span>|
+|<span data-ttu-id="12fee-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="12fee-109">Permission type</span></span>|<span data-ttu-id="12fee-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="12fee-110">Permissions (from least to most privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="22636-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="22636-111">Delegated (work or school account)</span></span>|<span data-ttu-id="22636-112">ManagedTenants.Read.All, ManagedTenants.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="22636-112">ManagedTenants.Read.All, ManagedTenants.ReadWrite.All</span></span>|
-|<span data-ttu-id="22636-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="22636-113">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="22636-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="22636-114">Not supported.</span></span>|
-|<span data-ttu-id="22636-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="22636-115">Application</span></span>|<span data-ttu-id="22636-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="22636-116">Not supported.</span></span>|
+|<span data-ttu-id="12fee-111">Delegada (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="12fee-111">Delegated (work or school account)</span></span>|<span data-ttu-id="12fee-112">ManagedTenants.Read.All, ManagedTenants.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="12fee-112">ManagedTenants.Read.All, ManagedTenants.ReadWrite.All</span></span>|
+|<span data-ttu-id="12fee-113">Delegada (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="12fee-113">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="12fee-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="12fee-114">Not supported.</span></span>|
+|<span data-ttu-id="12fee-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="12fee-115">Application</span></span>|<span data-ttu-id="12fee-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="12fee-116">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="22636-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="22636-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="12fee-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="12fee-117">HTTP request</span></span>
 
 <!-- {
   "blockType": "ignored"
@@ -38,24 +38,26 @@ ms.locfileid: "53401972"
 GET /tenantRelationships/managedTenants/managementIntents/{managementIntentId}
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="22636-118">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="22636-118">Optional query parameters</span></span>
-<span data-ttu-id="22636-119">Este método dá suporte aos [parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta, incluindo `$apply` , , , , , , e `$count` `$filter` `$orderBy` `$select` `$skip` `$top` .</span><span class="sxs-lookup"><span data-stu-id="22636-119">This method supports the [OData query parameters](/graph/query-parameters) to help customize the response, including `$apply`, `$count`, `$filter`, `$orderBy`, `$select`, `$skip`, and `$top`.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="12fee-118">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="12fee-118">Optional query parameters</span></span>
+<span data-ttu-id="12fee-119">Este método dá suporte aos [parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta, incluindo `$apply` , , , , , , e `$count` `$filter` `$orderBy` `$select` `$skip` `$top` .</span><span class="sxs-lookup"><span data-stu-id="12fee-119">This method supports the [OData query parameters](/graph/query-parameters) to help customize the response, including `$apply`, `$count`, `$filter`, `$orderBy`, `$select`, `$skip`, and `$top`.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="22636-120">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="22636-120">Request headers</span></span>
-|<span data-ttu-id="22636-121">Nome</span><span class="sxs-lookup"><span data-stu-id="22636-121">Name</span></span>|<span data-ttu-id="22636-122">Descrição</span><span class="sxs-lookup"><span data-stu-id="22636-122">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="12fee-120">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="12fee-120">Request headers</span></span>
+|<span data-ttu-id="12fee-121">Nome</span><span class="sxs-lookup"><span data-stu-id="12fee-121">Name</span></span>|<span data-ttu-id="12fee-122">Descrição</span><span class="sxs-lookup"><span data-stu-id="12fee-122">Description</span></span>|
 |:---|:---|
-|<span data-ttu-id="22636-123">Autorização</span><span class="sxs-lookup"><span data-stu-id="22636-123">Authorization</span></span>|<span data-ttu-id="22636-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="22636-p102">Bearer {token}. Required.</span></span>|
+|<span data-ttu-id="12fee-123">Autorização</span><span class="sxs-lookup"><span data-stu-id="12fee-123">Authorization</span></span>|<span data-ttu-id="12fee-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="12fee-p102">Bearer {token}. Required.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="22636-126">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="22636-126">Request body</span></span>
-<span data-ttu-id="22636-127">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="22636-127">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="12fee-126">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="12fee-126">Request body</span></span>
+<span data-ttu-id="12fee-127">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="12fee-127">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="22636-128">Resposta</span><span class="sxs-lookup"><span data-stu-id="22636-128">Response</span></span>
+## <a name="response"></a><span data-ttu-id="12fee-128">Resposta</span><span class="sxs-lookup"><span data-stu-id="12fee-128">Response</span></span>
 
-<span data-ttu-id="22636-129">Se tiver êxito, este método retornará um código `200 OK` de resposta e um objeto [managementIntent](../resources/managedtenants-managementintent.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="22636-129">If successful, this method returns a `200 OK` response code and a [managementIntent](../resources/managedtenants-managementintent.md) object in the response body.</span></span>
+<span data-ttu-id="12fee-129">Se tiver êxito, este método retornará um código `200 OK` de resposta e um objeto [managementIntent](../resources/managedtenants-managementintent.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="12fee-129">If successful, this method returns a `200 OK` response code and a [managementIntent](../resources/managedtenants-managementintent.md) object in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="22636-130">Exemplos</span><span class="sxs-lookup"><span data-stu-id="22636-130">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="12fee-130">Exemplos</span><span class="sxs-lookup"><span data-stu-id="12fee-130">Examples</span></span>
 
-### <a name="request"></a><span data-ttu-id="22636-131">Solicitação</span><span class="sxs-lookup"><span data-stu-id="22636-131">Request</span></span>
+### <a name="request"></a><span data-ttu-id="12fee-131">Solicitação</span><span class="sxs-lookup"><span data-stu-id="12fee-131">Request</span></span>
+
+# <a name="http"></a>[<span data-ttu-id="12fee-132">HTTP</span><span class="sxs-lookup"><span data-stu-id="12fee-132">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_managementintent"
@@ -64,9 +66,27 @@ GET /tenantRelationships/managedTenants/managementIntents/{managementIntentId}
 ``` http
 GET https://graph.microsoft.com/beta/tenantRelationships/managedTenants/managementIntents/{managementIntentId}
 ```
+# <a name="c"></a>[<span data-ttu-id="12fee-133">C#</span><span class="sxs-lookup"><span data-stu-id="12fee-133">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-managementintent-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-### <a name="response"></a><span data-ttu-id="22636-132">Resposta</span><span class="sxs-lookup"><span data-stu-id="22636-132">Response</span></span>
-><span data-ttu-id="22636-133">**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.</span><span class="sxs-lookup"><span data-stu-id="22636-133">**Note:** The response object shown here might be shortened for readability.</span></span>
+# <a name="javascript"></a>[<span data-ttu-id="12fee-134">JavaScript</span><span class="sxs-lookup"><span data-stu-id="12fee-134">JavaScript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-managementintent-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[<span data-ttu-id="12fee-135">Objective-C</span><span class="sxs-lookup"><span data-stu-id="12fee-135">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-managementintent-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[<span data-ttu-id="12fee-136">Java</span><span class="sxs-lookup"><span data-stu-id="12fee-136">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-managementintent-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+### <a name="response"></a><span data-ttu-id="12fee-137">Resposta</span><span class="sxs-lookup"><span data-stu-id="12fee-137">Response</span></span>
+><span data-ttu-id="12fee-138">**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.</span><span class="sxs-lookup"><span data-stu-id="12fee-138">**Note:** The response object shown here might be shortened for readability.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
