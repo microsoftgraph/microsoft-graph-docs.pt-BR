@@ -1,24 +1,18 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 213a21c9185ed70b9466e02efa93c444b62913f2
+ms.openlocfilehash: 4ad97c2c6e608e9a8697fb5bca22e8fdaf225aea
 ms.sourcegitcommit: 486fe9c77d4d89c5416bb83e8c716e6918c47370
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 07/15/2021
-ms.locfileid: "53444939"
+ms.locfileid: "53440013"
 ---
 ```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var group = new Group
-{
-    Description = "Contoso Life v2.0",
-    DisplayName = "Contoso Life Renewed"
-};
-
-await graphClient.Groups["{group-id}"]
+var credentialUserRegistrationsSummary = await graphClient.TenantRelationships.ManagedTenants.CredentialUserRegistrationsSummaries["{managedTenants.credentialUserRegistrationsSummary-id}"]
     .Request()
-    .UpdateAsync(group);
+    .GetAsync();
 
 ```

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: Jumaodhiss
 doc_type: resourcePageType
 ms.prod: change-notifications
-ms.openlocfilehash: 183812b655aa62ce48b405fccfaf3b4b8841117f
-ms.sourcegitcommit: 3873c85f53e026073addca92d31d234af244444c
+ms.openlocfilehash: b78a6ef57245603ae511d1c3b59237993c87f46e
+ms.sourcegitcommit: 486fe9c77d4d89c5416bb83e8c716e6918c47370
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/10/2021
-ms.locfileid: "53366958"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53443120"
 ---
 # <a name="subscription-resource-type"></a>tipo de recurso de assinatura
 
@@ -18,23 +18,26 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Uma assinatura que permite a um aplicativo cliente receber notificações sobre alterações de dados no Microsoft Graph. Atualmente, as assinaturas estão habilitadas para os seguintes recursos:
+Uma assinatura que permite a um aplicativo cliente receber notificações sobre alterações de dados no Microsoft Graph. Atualmente, as assinaturas estão habilitadas para os seguintes recursos. 
+
+> **Observação** Assinaturas marcadas com um asterisco (*) são suportadas apenas no ponto de extremidade beta.
 
 - Um [alert][] da API de Segurança do Microsoft Graph.
 - Uma [callRecord][] produzida após uma chamada ou uma reunião no Microsoft Teams.
-- Um [canal](./channel.md) em Microsoft Teams.
-- Um [chat](./chat.md) em Microsoft Teams.
+- Um [canal](./channel.md) em Microsoft Teams.*
+- Um [chat](./chat.md) em Microsoft Teams.*
 - Um [chatMessage][] enviado por meio de equipes ou canais no Microsoft Teams.
 - Uma [conversation][] em um grupo do Microsoft 365.
-- Uma [conversaMember](./conversationmember.md) em uma equipe, canal ou chat em Microsoft Teams.
+- Um [conversationMember](./conversationmember.md) em uma equipe, canal ou chat em Microsoft Teams.*
 - Conteúdo da hierarquia de uma pasta raiz [driveItem][] no OneDrive for Business ou de uma pasta raiz ou uma subpasta [driveItem][] no OneDrive pessoal do usuário.
+- Um [grupo][] em Azure Active Directory.
 - Uma [list][] em um [site][] do SharePoint.
 - Uma [message][], [event][] ou [contact][] no Outlook.
-- A [presença][] de um usuário no Microsoft Teams.
-- Uma [equipe](./team.md) em Microsoft Teams.
-- Um [user][] ou [group][] no Azure Active Directory.
+- A [presença][] de um usuário no Microsoft Teams.*
+- Uma [equipe](./team.md) em Microsoft Teams.*
 - Uma [printer][] (quando um trabalho de impressão para a impressora chegar ao estado JobFetchable – pronto para ser buscado para impressão) e uma [PrintTaskDefinition][] em Impressão Universal. Para saber mais, confira [Inscrever-se para alterar notificações de APIs de impressão na nuvem](/graph/universal-print-webhook-notifications).
-- Um [todoTask][] de um usuário no Microsoft To Do.
+- Um [todoTask][] de um usuário em Microsoft To Do.*
+- Um [usuário][] em Azure Active Directory.
 
 Consulte [usar o Microsoft Graph API para obter notificações de alteração](webhooks.md) dos possíveis valores de caminho de recurso de cada recurso suportado.
 
@@ -75,7 +78,7 @@ Consulte [usar o Microsoft Graph API para obter notificações de alteração](w
 | **Alerta** de segurança     | 43200 minutos (em 30 dias )  |
 | Teams **callRecord**    | 4230 minutos (em 3 dias)  |
 | **Canal** do Teams    | 60 minutos (1 hora)  |
-| Teams **chat** | 60 minutos (1 hora) |
+| **Chat** do Teams | 60 minutos (1 hora) |
 | Teams **chatMessage**    | 60 minutos (1 hora)  |
 | **conversationMember** do Teams    | 60 minutos (1 hora)  |
 | Equipe do **Teams**    | 60 minutos (1 hora)  |
