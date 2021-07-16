@@ -4,12 +4,12 @@ description: 'O Microsoft Graph permite a integração com os melhores serviços
 author: angelgolfer-ms
 localization_priority: Priority
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 97ec3f5ea6ffa7faefb891b2df719cea1866cbda
-ms.sourcegitcommit: e372382019f1a136543eadab02ba70af3921e098
+ms.openlocfilehash: fed271e2b94d787a9f0822ea7630d9b53c67185b
+ms.sourcegitcommit: 486fe9c77d4d89c5416bb83e8c716e6918c47370
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "53401871"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53443134"
 ---
 # <a name="major-services-and-features-in-microsoft-graph"></a>Principais serviços e recursos do Microsoft Graph
 
@@ -88,7 +88,7 @@ Alguns serviços do Microsoft Graph iniciam-se no próprio Microsoft Graph, outr
 | Impressão na nuvem | Impressão universal | A impressão universal é uma infraestrutura de impressão baseada na nuvem do Microsoft 365 que permite uma experiência de impressão simples, rica e segura aos usuários e reduz o tempo e o esforço de TI. | [Impressão na nuvem usando a API de Impressão Universal](universal-print-concept-overview.md) |
 |Gerenciamento corporativo de dispositivos e aplicativos | Intune | Registra e configura dispositivos e gerencia aplicativos móveis em sua organização. | [Visão geral de dispositivos e aplicativos do Intune](intune-concept-overview.md) |
 | Atualizações do dispositivo (visualização) | Serviço de implantação do Windows Update para Empresas | Fornece controle sobre a aprovação, agendamento, monitoramento e proteção do conteúdo fornecido pelo Windows Update. | [Atualizações do Windows no Microsoft Graph](windowsupdates-concept-overview.md) |
-| Gerenciamento multilocatário (visualização) | Microsoft 365 Lighthouse | Permite aos Provedores de Serviços Gerenciados (MSPs) gerenciar remotamente vários locatários de clientes para conformidade e ameaças, e ajudar a manter os dispositivos dos locatários em um estado íntegro e seguro. | [Gerenciamento multilocatário usando o Microsoft 365 Lighthouse](managedtenants-concept-overview.md) |
+| Gerenciamento multilocatário (visualização) | Microsoft 365 Lighthouse | Permite que os Provedores de Serviços Gerenciados (MSPs) gerenciem remotamente vários locatários do cliente para conformidade e detecção de ameaças, e ajudam a manter os dispositivos dos locatários em um estado íntegro e seguro. | [Gerenciamento multilocatário usando o Microsoft 365 Lighthouse](managedtenants-concept-overview.md) |
 
 
 ## <a name="security"></a>Segurança

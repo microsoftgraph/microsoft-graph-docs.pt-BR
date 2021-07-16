@@ -3,12 +3,12 @@ title: Novidades do Microsoft Graph
 description: O que há de novo no Microsoft Graph
 author: angelgolfer-ms
 localization_priority: Priority
-ms.openlocfilehash: b2e5cbb811e7e606fd57a9c967c40bc3956a2c58
-ms.sourcegitcommit: 0adbbcbc65b6acab80e9195f13321055994f56be
+ms.openlocfilehash: 873e6fa03fd02470eb520657573556266de6f2a7
+ms.sourcegitcommit: 486fe9c77d4d89c5416bb83e8c716e6918c47370
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "53236210"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53443204"
 ---
 # <a name="whats-new-in-microsoft-graph"></a>Novidades do Microsoft Graph
 
@@ -16,6 +16,35 @@ Veja os destaques das novidades nos dois últimos meses do Microsoft Graph, [o q
 
 > [!IMPORTANT]
 > Recursos, incluindo APIs e ferramentas, no status de _visualização_ podem mudar sem aviso prévio e alguns podem nunca ser promovidos ao status de disponibilidade geral (GA). Não utilize recursos de visualização em aplicativos de produção.
+
+## <a name="july-2021-new-and-generally-available"></a>Julho de 2021: Novo e disponível para o público em geral
+
+### <a name="cloud-communications--calls"></a>Comunicações na nuvem | Chamadas
+Suporte para um limite de capacidade para o número de participantes que um aplicativo pode controlar ao [atender](/graph/api/call-answer) uma [chamada](/graph/api/resources/call), em organizações que adotam [gravação baseada em políticas do Teams](/microsoftteams/teams-recording-policy).
+
+### <a name="users"></a>Usuários
+Permitir que um usuário [altere sua própria senha](/graph/api/user-changepassword) sem exigir uma função de administrador.
+
+
+## <a name="july-2021-new-in-preview-only"></a>Julho de 2021: Novo somente para visualização
+
+### <a name="devices-and-apps--cloud-pc"></a>Dispositivos e aplicativos | PC na nuvem
+Uma [verificação de integridade](/graph/api/cloudpconpremisesconnection-runhealthcheck?view=graph-rest-beta&preserve-view=true) de conexão local pode identificar mais alguns tipos de erros de verificação de integridade:
+- A conta do computador do PC na Nuvem não foi encontrada na unidade organizacional (`adJoinCheckComputerObjectAlreadyExists`).
+- O objeto do PC na Nuvem não foi encontrado no Microsoft Azure Active Directory (`azureAdDeviceSyncCheckDeviceNotFound`).
+- Tempo limite para verificar se um objeto do PC na nuvem foi sincronizado com o Microsoft Azure Active Directory (`azureAdDeviceSyncCheckLongSyncCircle`). 
+
+Consulte a [referência](/graph/api/resources/cloudpconpremisesconnectionhealthcheck?view=graph-rest-beta&preserve-view=true#cloudpconpremisesconnectionhealthcheckerrortype-values) para obter detalhes e as ações corretivas recomendadas.
+
+### <a name="devices-and-apps--multi-tenant-management"></a>Dispositivos e aplicativos | Gerenciamento de vários locatários
+Lançamento da [API do Microsoft 365 Lighthouse](managedtenants-concept-overview.md) que permite que os Provedores de Serviços Gerenciados (MSPs) gerenciem remotamente vários locatários de clientes em escala para conformidade e detecção de ameaças, e ajudam a manter os dispositivos dos locatários em um estado íntegro e seguro.
+
+### <a name="search"></a>Pesquisa
+Use a [API de Pesquisa da Microsoft para recuperar informações sobre as pessoas](search-concept-person.md) que são mais relevantes para um usuário. A relevância é determinada pelos padrões de comunicação, colaboração e pelas relações comerciais do usuário. 
+
+### <a name="teamwork"></a>Trabalho em equipe
+- [Inscreva-se para alterar notificações no recurso de chat](teams-changenotifications-chat.md).
+- [Inscreva-se para alterar notificações de usuários em um chat](teams-changenotifications-chatmembership.md), em um [canal](/graph/api/resources/channel?view=graph-rest-beta&preserve-view=true) ou em uma [equipe](/graph/api/resources/team?view=graph-rest-beta&preserve-view=true) (ou seja, recursos de [conversationMember](/graph/api/resources/conversationmember?view=graph-rest-beta&preserve-view=true)).
 
 ## <a name="june-2021-new-and-generally-available"></a>Junho de 2021: novos e disponíveis para o público em geral
 
@@ -75,58 +104,6 @@ Criar ou obter um [sharingLink](/graph/api/resources/sharinglink?view=graph-rest
 ### <a name="teamwork--shifts"></a>Trabalho em equipe | Turnos
 - Suporte para as entidades [offerShiftRequest](/graph/api/resources/offershiftrequest?view=graph-rest-beta&preserve-view=true), [timeOff](/graph/api/resources/timeoff?view=graph-rest-beta&preserve-view=true), [timeOffReason](/graph/api/resources/timeoffreason?view=graph-rest-beta&preserve-view=true), e [timeOffRequest](/graph/api/resources/timeoffrequest?view=graph-rest-beta&preserve-view=true) para notificações de alteração síncronas.
 - Suporte para gerenciar [recursos do cartão de ponto](/graph/api/resources/timecard?view=graph-rest-beta&preserve-view=true) e funcionalidades comuns, tais como [entrada do relógio](/graph/api/timecard-clockin?view=graph-rest-beta&preserve-view=true), [saída do relógio](/graph/api/timecard-clockout?view=graph-rest-beta&preserve-view=true), [partida inicial](/graph/api/timecard-startbreak?view=graph-rest-beta&preserve-view=true), [partida final](/graph/api/timecard-endbreak?view=graph-rest-beta&preserve-view=true), [confirmar](/graph/api/timecard-confirm?view=graph-rest-beta&preserve-view=true), e [substituir](/graph/api/timecard-replace?view=graph-rest-beta&preserve-view=true).
-
-## <a name="may-2021-new-and-generally-available"></a>Maio de 2021: Novo e disponível para o público geral
-
-### <a name="devices-and-apps--cloud-printing"></a>Dispositivos e aplicativos | Impressão na nuvem
-Descubra quando uma impressora interagiu pela última vez com a Impressão Universal, usando a propriedade **lastSeenDateTime** da [impressora](/graph/api/resources/printer).
-
-### <a name="identity-and-access--identity-and-sign-in"></a>Identidade e acesso | Identidade e login
-Obtenha ou atualize a função de um usuário convidado usando a propriedade **guestUserRoleId** de [AuthorPolicy](/graph/api/resources/authorizationpolicy).
-
-### <a name="mail"></a>Email
-- [Crie rascunhos e envie mensagens do Outlook no formato MIME](outlook-send-mime-message.md), anexe assinaturas digitais S/MIME e criptografe o conteúdo da mensagem em S/MIME.
-- Criar um [mailFolder](/graph/api/resources/mailfolder) como uma [pasta oculta](/graph/api/resources/mailfolder#hidden-mail-folders) ao [configurar a propriedade isHidden](/graph/api/user-post-mailfolders#example).
-
-### <a name="microsoft-graph-toolkit"></a>Kit de ferramentas do Microsoft Graph
-Experimente os seguintes novos recursos do Kit de Ferramentas do Microsoft Graph 2.2:
-- Componentes de[arquivos](/graph/toolkit/components/file) e [lista de arquivos](/graph/toolkit/components/file-list)
-- [Provedor de autenticação MSAL 2.0](/graph/toolkit/providers/msal2)
-- [Biblioteca da Estrutura do SharePoint](/graph/toolkit/get-started/mgt-spfx)
-
-### <a name="reports--azure-ad-activity-reports"></a>Relatórios | Relatórios de atividade do Microsoft Azure AD
-GA da API de relatório para [listar](/graph/api/provisioningobjectsummary-list) as ações realizadas pelo serviço de provisionamento do Microsoft Azure AD e suas propriedades associadas. Alinhou a versão beta anterior à versão v1.0 da API.
-
-## <a name="may-2021-new-in-preview-only"></a>Maio de 2021: Novo somente para visualização
-
-### <a name="connecting-external-content"></a>Conectando conteúdo externo
-- Esteja ciente dos [limites operacionais e à implementação](connecting-external-content-api-limits.md) durante a criação de conectores.
-- Experimente a [API de conectores com o Postman](connecting-external-content-connectors-api-postman.md).
-
-### <a name="devices-and-apps--cloud-pc"></a>Dispositivos e aplicativos | Computador na nuvem
-Solicite as permissões de aplicativos com menos privilégios, `CloudPC.Read.All` ou `CloudPC.ReadWrite.All`, para acessar os métodos dos seguintes recursos:
-  - Operações de leitura e gravação, e do método de [reprovision](/graph/api/cloudpc-reprovision?view=graph-rest-beta&preserve-view=true) de [cloudPC](/graph/api/resources/cloudpc?view=graph-rest-beta&preserve-view=true).
-  - Operações de leitura e gravação, e do método [getSourceImages](/graph/api/cloudpcdeviceimage-getsourceimages?view=graph-rest-beta&preserve-view=true) de [cloudPcDeviceImage](/graph/api/resources/cloudpcdeviceimage?view=graph-rest-beta&preserve-view=true).
-  - Operações de leitura e gravação, e do método [updateAdDomainPassword](/graph/api/cloudpconpremisesconnection-updateaddomainpassword?view=graph-rest-beta&preserve-view=true) de [cloudPcOnPremisesConnection](/graph/api/resources/cloudpconpremisesconnection?view=graph-rest-beta&preserve-view=true).
-  - Operações de leitura e gravação, e do método [assign](/graph/api/cloudpcprovisioningpolicy-assign?view=graph-rest-beta&preserve-view=true) de [cloudPcProvisioningPolicy](/graph/api/resources/cloudpcprovisioningpolicy?view=graph-rest-beta&preserve-view=true).
-
-### <a name="devices-and-apps--corporate-management"></a>Dispositivos e aplicativos | Gerenciamento corporativo
-Atualizações mensais do Intune para a versão beta. Defina o filtro **Data** para junho de 2021 e procure uma seção com esse mesmo título.
-
-### <a name="education"></a>Educação
-- [Configurar uma pasta de recursos do SharePoint](/graph/api/educationAssignment-setupresourcesfolder?view=graph-rest-beta&preserve-view=true) carregar e armazenar todos os recursos baseados em arquivo no mesmo local para um [educationAssignment](/graph/api/resources/educationAssignment?view=graph-rest-beta&preserve-view=true).
-- [Configurar uma pasta de recursos do SharePoint](/graph/api/educationsubmission-setupresourcesfolder?view=graph-rest-beta&preserve-view=true) para carregar e armazenar todos os recursos baseados em arquivo como um arquivo Word e Excel no mesmo local para um [educationAssignment](/graph/api/resources/educationsubmission?view=graph-rest-beta&preserve-view=true).
-
-### <a name="identity-and-access--governance"></a>Identidade e acesso | Governança
-- Obtenha uma coleção de recursos de [accessPackageAssignment](/graph/api/resources/accessPackageAssignment?view=graph-rest-beta&preserve-view=true) ao [filtrar no usuário conectado](/graph/api/accesspackageassignment-filterbycurrentuser?view=graph-rest-beta&preserve-view=true).
-- Obtenha uma coleção de recursos de [accessPackageAssignmentRequest](/graph/api/resources/accessPackageAssignmentRequest?view=graph-rest-beta&preserve-view=true) ao [filtrar no usuário conectado](/graph/api/accesspackageassignmentrequest-filterbycurrentuser?view=graph-rest-beta&preserve-view=true).
-
-### <a name="use-sdks"></a>Usar SDKs
-Experimente a versão de visualização do [Microsoft Graph .NET SDK v4](https://www.nuget.org/packages/Microsoft.Graph/4.0.0-preview.4) e aproveite as seguintes melhorias:
-- Use uma única API para autenticação em clientes do Microsoft Graph e Azure .NET.
-- Novo suporte para serialização e desserialização JSON.
-- Fácil acesso às informações de resposta.
-- Melhor experiência de atualização de dependências.
 
 
 ## <a name="want-to-stay-in-the-loop"></a>Quer ficar por dentro?

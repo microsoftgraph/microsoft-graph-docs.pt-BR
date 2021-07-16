@@ -4,18 +4,18 @@ description: Os objetos do diretório Microsoft Azure Active Directory suportam 
 author: Licantrop0
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 03210e9c46776c4fbc92057870737a87c7e47371
-ms.sourcegitcommit: 3873c85f53e026073addca92d31d234af244444c
+ms.openlocfilehash: eb8b5b7b8438f900535efd6ce625059919d76952
+ms.sourcegitcommit: 486fe9c77d4d89c5416bb83e8c716e6918c47370
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/10/2021
-ms.locfileid: "53366511"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53443197"
 ---
 # <a name="advanced-query-capabilities-on-azure-ad-directory-objects"></a>Recursos avançados de consulta nos objetos do diretório Microsoft Azure Active Directory
 
 Como o Microsoft Azure Active Directory continua a oferecer mais capacidades e melhorias na estabilidade, disponibilidade e desempenho, o Microsoft Graph também continua a evoluir e a escalar para acessar os dados de forma eficiente. Uma maneira é através do suporte crescente do Microsoft Graph para capacidades avançadas de consulta em vários objetos Microsoft Azure Active Directory e suas propriedades. Por exemplo, a adição de **Não** (`NOT`), **Não é igual a** (`ne`), e **Termina com** (`endsWith`) operadores no parâmetro `$filter` de consulta em outubro de 2020.
 
-O mecanismo de consulta do Microsoft Graph usa uma loja de índices para atender aos pedidos de consulta. Para adicionar suporte para capacidades adicionais de consulta em algumas propriedades, estas propriedades são agora indexadas em um servidor separado. Esta indexação separada permite que o MIcrosoft Azure Active Directory aumente o suporte e melhore o desempenho dos pedidos de consulta. Entretanto, estas capacidades avançadas de consulta não estão disponíveis por padrão, mas o solicitante também deve definir o **ConsistencyLevel** como `eventual` *e*, com exceção de `$search`, usar o parâmetro `$count` consulta (seja como [segmento URL](/graph/query-parameters#other-odata-url-capabilities) ou `$count=true` cadeia de caracteres). O cabeçalho **ConsistencyLevel** e `$count` são referidos como *parâmetros de consulta avançados*.
+O mecanismo de consulta do Microsoft Graph usa uma loja de índices para atender aos pedidos de consulta. Para adicionar suporte para capacidades adicionais de consulta em algumas propriedades, estas propriedades são agora indexadas em um servidor separado. Esta indexação separada permite que o MIcrosoft Azure Active Directory aumente o suporte e melhore o desempenho dos pedidos de consulta. No entanto, essas funcionalidades de consulta avançada não estão disponíveis por padrão, mas o solicitante também deve definir o cabeçalho **ConsistencyLevel** definido como `eventual` *e*, com exceção de `$search`, use o parâmetro de consulta `$count`. O cabeçalho **ConsistencyLevel** e `$count` são referidos como *parâmetros de consulta avançados*.
 
 Por exemplo, se você deseja recuperar apenas contas de usuários inativos, você pode executar qualquer uma destas consultas que utilizam o Parâmetro de consulta `$filter`.
 
@@ -63,7 +63,7 @@ A tabela a seguir lista cenários de consulta em objetos de diretório que são 
 | Usar o `$filter` com `ne` e `NOT` operadores                           | 
   [GET](https://developer.microsoft.com/en-us/graph/graph-explorer?request=users%3F%24filter%3DcompanyName%20ne%20null%20and%20NOT(companyName%20eq%20'Microsoft')%26%24count%3Dtrue&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d) `../users?$filter=companyName ne null and NOT(companyName eq 'Microsoft')&$count=true`                     |
 | Usar o `$filter` com `NOT` e `startsWith` operadores                   | 
-  [GET](https://developer.microsoft.com/en-us/graph/graph-explorer?request=%2Fusers%3F%24filter%3DNOT%20startsWith(displayName%2C%20'Conf')%26%24count%3Dtrue&method=GET&version=beta&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d) `../users?$filter=NOT startsWith(displayName, 'Conf')&$count=true`                                                                |
+  [GET](https://developer.microsoft.com/en-us/graph/graph-explorer?request=%2Fusers%3F%24filter%3DNOT%20startsWith(displayName%2C%20'Conf')%26%24count%3Dtrue&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d) `../users?$filter=NOT startsWith(displayName, 'Conf')&$count=true`                                                                |
 | Usar o molde de OData com outro parâmetro de consulta                           | [GET](https://developer.microsoft.com/graph/graph-explorer?request=me%2FtransitiveMemberOf%2Fmicrosoft.graph.group%3F%24count%3Dtrue&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d) `../me/transitiveMemberOf/microsoft.graph.group?$count=true`                                                                                             |
 
 > [!NOTE]
@@ -115,7 +115,7 @@ https://graph.microsoft.com/v1.0/users/$count
 }
 ```
 
-`$search` nos recursos do Microsoft Azure Active Directory que derivam de [diretórioObject](/graph/api/resources/directoryobject) funciona apenas em consultas avançadas. Se o cabeçalho **ConsistencyLevel** não for especificado, o pedido retorna um erro.
+Para objetos de diretório, `$search` funciona apenas em consultas avançadas. Se o cabeçalho **ConsistencyLevel** não for especificado, o pedido retorna um erro.
 
 ```http
 https://graph.microsoft.com/v1.0/applications?$search="displayName:Browser"
@@ -138,7 +138,7 @@ https://graph.microsoft.com/v1.0/applications?$search="displayName:Browser"
 Se uma propriedade ou parâmetro de consulta na URL for suportado apenas em consultas avançadas, mas o cabeçalho **ConsistencyLevel** ou a cadeia de caracteres `$count=true` estiver faltando, a solicitação retorna um erro.
 
 ```http
-https://graph.microsoft.com/beta/users?$filter=endsWith(mail,'@outlook.com')
+https://graph.microsoft.com/v1.0/users?$filter=endsWith(mail,'@outlook.com')
 ```
 
 ```json

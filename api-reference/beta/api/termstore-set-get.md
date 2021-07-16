@@ -3,14 +3,14 @@ title: Obter conjunto
 description: Leia as propriedades e as relações de um objeto set.
 author: mohitpcad
 localization_priority: Normal
-ms.prod: Sharepoint
+ms.prod: taxonomy
 doc_type: apiPageType
-ms.openlocfilehash: fcdd099ac3dd0664cd4af914fc3f9d0798d90261
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 995ed341a5b92e11f6ecfa7cac8405ec7dc2a2af
+ms.sourcegitcommit: 73bbf84e6f5dbc8c3db8ed2c48cc5ab9ae3cff78
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50955407"
+ms.lasthandoff: 07/16/2021
+ms.locfileid: "53456461"
 ---
 # <a name="get-set"></a>Obter conjunto
 Namespace: microsoft.graph.termStore [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -35,7 +35,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 -->
 
 ``` http
-GET /termStore/sets/{setId}
+GET /termStore/sets/{set-id}
+GET /sites/{site-id}/termStore/sets/{set-id}
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
@@ -55,16 +56,17 @@ Se tiver êxito, este método retornará um código `200 OK` de resposta e um ob
 
 ## <a name="examples"></a>Exemplos
 
-### <a name="request"></a>Solicitação
+### <a name="example-1-get-a-termstore-set"></a>Exemplo 1: Obter um conjunto termStore
 
-# <a name="http"></a>[HTTP](#tab/http)
+#### <a name="request"></a>Solicitação
+
 <!-- {
   "blockType": "request",
   "name": "get_set_2"
 }-->
 
 ``` http
-GET https://graph.microsoft.com/beta/termStore/sets/{setId}
+GET https://graph.microsoft.com/beta/termStore/sets/8ed8c9ea-7052-4c1d-a4d7-b9c10bffea6f
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-set-2-csharp-snippets.md)]
@@ -84,10 +86,47 @@ GET https://graph.microsoft.com/beta/termStore/sets/{setId}
 
 ---
 
+#### <a name="response"></a>Resposta
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.termStore.set"
+} -->
 
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
 
-### <a name="response"></a>Resposta
-**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+{
+
+  "createdDateTime": "2019-06-21T20:01:37Z",  
+  "description": "Starting term Set",
+  "id": "8ed8c9ea-7052-4c1d-a4d7-b9c10bffea6f",
+  "localizedNames" : [
+    {
+      "languageTag" : "en-US",
+      "name" : "Department"
+    }
+  ]
+}
+```
+
+### <a name="example-2-get-a-site-collection-termstore-set"></a>Exemplo 2: Obter um conjunto de sites termoStore Set
+
+#### <a name="request"></a>Solicitação
+
+<!-- {
+  "blockType": "request",
+  "name": "get_siteCollection_termStore_set"
+}-->
+
+``` http
+GET https://graph.microsoft.com/beta/sites/microsoft.sharepoint.com,c6482504-4a85-4b21-858a-7e88dafc8232,d90ca07d-25c0-4ce7-864b-d68b607e697f/termStore/sets/8ed8c9ea-7052-4c1d-a4d7-b9c10bffea6f
+```
+
+#### <a name="response"></a>Resposta
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,

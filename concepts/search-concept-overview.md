@@ -5,12 +5,12 @@ localization_priority: Priority
 ms.prod: search
 author: snlraju-msft
 scenarios: getting-started
-ms.openlocfilehash: 061252bb8006cbb3ce195ea656c7dbc50334f66a
-ms.sourcegitcommit: 8b23038be1141d7f22eb61de6aafdb16d4f9c826
+ms.openlocfilehash: 3a6c02b4f70cce4ac44090f5981372096fa17bce
+ms.sourcegitcommit: 486fe9c77d4d89c5416bb83e8c716e6918c47370
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "53401306"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53443123"
 ---
 # <a name="overview-of-the-microsoft-search-api-in-microsoft-graph"></a>Visão geral da API da Pesquisa da Microsoft no Microsoft Graph
 
@@ -36,19 +36,19 @@ Ao usar a API de pesquisa da Microsoft, seus clientes se beneficiam dos resultad
 
 ## <a name="what-data-can-i-add-or-access-by-using-the-microsoft-search-api"></a>Quais dados posso adicionar ou acessar usando a API de pesquisa da Microsoft?
 
-A API de pesquisa da Microsoft suporta para pesquisar o seguinte conteúdo na nuvem da Microsoft:
+A API de pesquisa da Microsoft suporta para pesquisar o seguinte conteúdo na nuvem da Microsoft: 
 
-- [Mensagens](/graph/api/resources/message) de email do Outlook e objetos de [eventos](/graph/api/resources/event) do calendário
-- Arquivos e pastas do Microsoft Office SharePoint Online e do OneDrive ([driveItem](/graph/api/resources/driveitem)), [listas](/graph/api/resources/list), [listItems](/graph/api/resources/listitem), [sites](/graph/api/resources/site) e [unidades](/graph/api/resources/drive)
-- [Pessoas](/graph/api/resources/person) na organização que são mais relevantes para um usuário
-- Conteúdo ingerido na plataforma de conectores do Graph: [externalItem](/graph/api/resources/externalitem?view=graph-rest-beta&preserve-view=true) (pré-visualização)
+- Recursos de [mensagens](/graph/api/resources/message) de email e [eventos](/graph/api/resources/event) do calendário do Outlook.
+- Arquivos e pastas do SharePoint e OneDrive (recursos [driveItem](/graph/api/resources/driveitem)), [lista](/graph/api/resources/list), [listItem](/graph/api/resources/listitem), [site](/graph/api/resources/site) e recursos de [unidade](/graph/api/resources/drive).
+- Recursos [pessoais](/graph/api/resources/person) em uma organização que são mais relevantes para um usuário.
+- Conteúdo ingerido por meio da plataforma de conectores do Microsoft Graph: recursos [externalItem](/graph/api/resources/externalitem?view=graph-rest-beta&preserve-view=true).
 
 ## <a name="api-reference"></a>Referência da API
 
 Está procurando a referência de API para esse serviço?
 
-- [Usar a API de Pesquisa da Microsoft para consultar dados](/graph/api/resources/search-api-overview?view=graph-rest-1.0)(v1.0)
-- [Usar a API de Pesquisa da Microsoft para consultar dados](/graph/api/resources/search-api-overview?view=graph-rest-beta)(pré-visualização)
+- [Usar a API de Pesquisa da Microsoft para consultar dados](/graph/api/resources/search-api-overview?view=graph-rest-1.0&preserve-view=true)(v1.0)
+- [Usar a API de Pesquisa da Microsoft para consultar dados](/graph/api/resources/search-api-overview?view=graph-rest-beta&preserve-view=true)(pré-visualização)
 - [Usar a API de Pesquisa da Microsoft para indexar dados](/graph/api/resources/indexing-api-overview) (pré-visualização)
 
 ## <a name="next-steps"></a>Próximas etapas
@@ -60,7 +60,7 @@ Está procurando a referência de API para esse serviço?
   - [Pesquisar mensagens do Outlook](search-concept-messages.md)
   - [Pesquisar eventos do calendário](search-concept-events.md)
   - [Pesquisar conteúdo no OneDrive e Microsoft Office SharePoint Online](search-concept-files.md)
-  - [Pesquisar conteúdo externo](search-concept-custom-types.md)(pré-visualização)
+  - [Pesquisar conteúdo externo](search-concept-custom-types.md)
   - [Pesquisar pessoa](search-concept-person.md) (visualização)
   - [Classificar resultados de pesquisa](search-concept-sort.md) (pré-visualização)
   - [Refinar resultados de pesquisa](search-concept-aggregation.md) (pré-visualização)

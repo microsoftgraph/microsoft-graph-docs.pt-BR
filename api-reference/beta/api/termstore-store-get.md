@@ -1,23 +1,23 @@
 ---
 title: Obter loja
-description: Leia as propriedades e os relacionamentos de um objeto store.
+description: Leia as propriedades e as relações de um objeto store.
 author: mohitpcad
 localization_priority: Normal
-ms.prod: Sharepoint
+ms.prod: taxonomy
 doc_type: apiPageType
-ms.openlocfilehash: fb94dd40644fc1c8ad3f1727fa41b9143f2b1e13
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: 71f23420196bab347cfe74068602b128eada36f4
+ms.sourcegitcommit: 73bbf84e6f5dbc8c3db8ed2c48cc5ab9ae3cff78
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49874414"
+ms.lasthandoff: 07/16/2021
+ms.locfileid: "53456482"
 ---
 # <a name="get-store"></a>Obter loja
 Namespace: microsoft.graph.termStore
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Leia as propriedades e os relacionamentos de um [objeto store.](../resources/termstore-store.md)
+Leia as propriedades e as relações de um [objeto](../resources/termstore-store.md) store.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -37,6 +37,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 ``` http
 GET /termStore
+GET /sites/{site-id}/termStore
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -46,11 +47,13 @@ GET /termStore
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna `200 OK` um código de resposta e um objeto [store](../resources/termstore-store.md) no corpo da resposta.
+Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto [store](../resources/termstore-store.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
-### <a name="request"></a>Solicitação
+### <a name="example-1-get-a-termstore"></a>Exemplo 1: Obter um termStore
+
+#### <a name="request"></a>Solicitação
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -81,8 +84,41 @@ GET https://graph.microsoft.com/beta/termStore
 
 
 
-### <a name="response"></a>Resposta
-**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+#### <a name="response"></a>Resposta
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.termStore.store"
+} -->
+
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{  
+  "id": "dad13b4b-3b4b-dad1-4b3b-d1da4b3bd1da",
+  "defaultLanguageTag" : "en-US",
+  "languageTags" : ["en-US", "de-DE", "fr-FR"]
+}
+```
+
+### <a name="example-2-get-a-site-collection-termstore"></a>Exemplo 2: Obter um conjunto de sites termStore
+
+#### <a name="request"></a>Solicitação
+
+<!-- {
+  "blockType": "request",
+  "name": "get_store"
+}-->
+
+``` http
+GET https://graph.microsoft.com/beta/sites/microsoft.sharepoint.com,c6482504-4a85-4b21-858a-7e88dafc8232,d90ca07d-25c0-4ce7-864b-d68b607e697f/termStore
+```
+
+#### <a name="response"></a>Resposta
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
   "blockType": "response",

@@ -1,28 +1,34 @@
 ---
-title: Permissões de escopo de aplicativo para caixas de correio específicas do Exchange Online
+title: Limitando permissões de escopo de aplicativo para caixas de correio específicas do Exchange Online
 description: Para definir o escopo das permissões de aplicativo de um aplicativo para caixas de correio específicas do Exchange Online, você precisará criar políticas de acesso a aplicativos.
 author: abheek-das
 localization_priority: Priority
 ms.prod: applications
-ms.openlocfilehash: f31f7bfc8ff72c8f3cb9e6f61185187f50bab7fc
-ms.sourcegitcommit: de3bc91a24d23b46bd0863487415fba8d8fce63c
+ms.openlocfilehash: e9f6b63f64981a49c655208c45ef9754324d5ae4
+ms.sourcegitcommit: 73bbf84e6f5dbc8c3db8ed2c48cc5ab9ae3cff78
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52266833"
+ms.lasthandoff: 07/16/2021
+ms.locfileid: "53456426"
 ---
-# <a name="scoping-application-permissions-to-specific-exchange-online-mailboxes"></a>Permissões de escopo de aplicativo para caixas de correio específicas do Exchange Online 
+# <a name="limiting-application-permissions-to-specific-exchange-online-mailboxes"></a>Limitando permissões de escopo de aplicativo para caixas de correio específicas do Exchange Online 
 
-Alguns aplicativos chamam o Microsoft Graph usando sua própria identidade e não em nome de um usuário. Geralmente, são serviços de segundo plano ou aplicativos daemon executados em um servidor sem a presença de um usuário conectado. Esses aplicativos usam o [fluxo de concessão de credenciais do cliente OAuth 2.0](/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow) para autenticar e são configurados com permissões de aplicativo, que permitem que esses aplicativos acessem todas as caixas de correio de uma organização no Exchange Online. Por exemplo, a permissão de aplicativo Mail.Read permite que os aplicativos leiam emails em todas as caixas de correio sem um usuário conectado. 
+Os administradores que desejam limitar o acesso do aplicativo a caixas de correio específicas podem criar uma política de acesso de aplicativo usando o cmdlet **New-ApplicationAccessPolicy** do PowerShell. Este artigo aborda as etapas básicas para configurar o controle de acesso. Estas etapas são específicas aos recursos do Exchange Online e não se aplicam a outras cargas de trabalho do Microsoft Graph. 
 
-Os administradores que desejem limitar o acesso ao aplicativo a um conjunto específico de caixas de correio podem usar o cmdlet **New-ApplicationAccessPolicy** do PowerShell para configurar o controle de acesso. Este artigo aborda as etapas básicas para configurar uma política de acesso a aplicativos.
+## <a name="background"></a>Histórico
+Alguns aplicativos chamam o Microsoft Graph usando sua própria identidade e não em nome de um usuário. Geralmente, são serviços de segundo plano ou aplicativos daemon executados em um servidor sem a presença de um usuário conectado. Esses aplicativos usam o [fluxo de concessão de credenciais do cliente OAuth 2.0](/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow) para autenticar e são configurados com permissões de aplicativo, que por padrão permitem que esses aplicativos acessem _todas_ as caixas de correio de uma organização no Exchange Online. Por exemplo, a permissão de aplicativo `Mail.Read` permite que os aplicativos leiam emails em todas as caixas de correio sem um usuário conectado. 
 
-Estas etapas são específicas aos recursos do Exchange Online e não se aplicam a outras cargas de trabalho do Microsoft Graph. 
+Há cenários em que os administradores podem querer limitar um aplicativo apenas a caixas de correio específicas e _não a todas_ as caixas de correio do Exchange Online na organização. Os administradores podem identificar o conjunto de caixas de correio para permitir o acesso colocando-as em um grupo de segurança habilitado para email. Os administradores podem limitar o acesso de aplicativos de terceiros somente a esse conjunto de caixas de correio criando uma política de acesso de aplicativo para acesso a esse grupo.
+
+> [!NOTE]
+> Depois que uma política de acesso a aplicativos é configurada para uma organização, a política se aplica a qualquer aplicativo que usa a API do Microsoft Graph ou os Serviços Web do Exchange para acessar caixas de correio do Exchange Online.
+
+Conforme descrito na seção [permissões com suporte e recursos adicionais](#supported-permissions-and-additional-resources) abaixo, a política de acesso ao aplicativo restringe o acesso à caixa de correio para aplicativos que foram concedidos a qualquer um dos escopos de permissão do Microsoft Graph ou dos Serviços Web do Exchange aos quais a política dá suporte.
 
 ## <a name="configure-applicationaccesspolicy"></a>Configurar ApplicationAccessPolicy
 
 Para configurar uma política de acesso a aplicativos e limitar o escopo das permissões de aplicativos:
-1.  Conecte-se ao PowerShell do Exchange Online. Para detalhes, consulte [Conectar-se ao PowerShell do Exchange Online](/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps).
+1.  Conecte-se ao PowerShell do Exchange Online. Para detalhes, consulte [Conectar-se ao PowerShell do Exchange Online](/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps&preserve-view=true).
 
 2.  Identifique o ID do cliente do aplicativo e um grupo de segurança habilitado para email para restringir o acesso do aplicativo.
 
@@ -37,7 +43,7 @@ Para configurar uma política de acesso a aplicativos e limitar o escopo das per
     ```
 4.  Teste a política de acesso a aplicativos recém-criada.
 
-    Execute o seguinte comando, substituindo os argumentos **AppId** e **Identity**.
+    Execute o comando a seguir, substituindo os argumentos para **Identity** e **AppId**.
     ```sh
     Test-ApplicationAccessPolicy -Identity user1@contoso.com -AppId e7e4dbfc-046-4074-9b3b-2ae8f144f59b 
     ```
@@ -46,20 +52,26 @@ Para configurar uma política de acesso a aplicativos e limitar o escopo das per
 >**Observação: as alterações nas políticas de acesso ao aplicativo podem levar até 30 minutos para entrar em vigor nas chamadas da API REST do Microsoft Graph.**
 
 ## <a name="supported-permissions-and-additional-resources"></a>Permissões compatíveis e recursos adicionais
-Os administradores podem usar os cmdlets ApplicationAccessPolicy para controlar o acesso à caixa de correio de um aplicativo que tenha recebido as seguintes permissões de aplicativo: 
-- Mail.Read
-- Mail.ReadBasic
-- Mail.ReadBasic.All
-- Mail.ReadWrite
-- Mail.Send
-- MailboxSettings.Read  
-- MailboxSettings.ReadWrite
-- Calendars.Read
-- Calendars.ReadWrite
-- Contacts.Read
-- Contacts.ReadWrite
 
-Para obter mais informações sobre como configurar a política de acesso a aplicativos, consulte a [referência de cmdlet do PowerShell para New-ApplicationAccessPolicy](/powershell/module/exchange/organization/new-applicationaccesspolicy). 
+Os administradores podem usar os cmdlets ApplicationAccessPolicy para controlar o acesso à caixa de correio de um aplicativo que recebeu qualquer uma das seguintes permissões de aplicativo do Microsoft Graph ou permissões de Serviços Web do Exchange. 
+
+Permissões de aplicativos do Microsoft Graph: 
+- `Mail.Read`
+- `Mail.ReadBasic`
+- `Mail.ReadBasic.All`
+- `Mail.ReadWrite`
+- `Mail.Send`
+- `MailboxSettings.Read`
+- `MailboxSettings.ReadWrite`
+- `Calendars.Read`
+- `Calendars.ReadWrite`
+- `Contacts.Read`
+- `Contacts.ReadWrite`
+
+Escopo de permissão dos Serviços Web do Exchange: `full_access_as_app`.
+
+Para obter mais informações sobre como configurar a política de acesso a aplicativos, consulte a [referência de cmdlet do PowerShell para New-ApplicationAccessPolicy](/powershell/module/exchange/new-applicationaccesspolicy?view=exchange-ps&preserve-view=true). 
+
 
 ## <a name="handling-api-errors"></a>Como lidar com erros da API
 Você poderá encontrar o seguinte erro quando uma chamada de API for negada devido a uma política de acesso de aplicativo configurada. 
@@ -87,3 +99,4 @@ Se as chamadas da API do Microsoft Graph de seu aplicativo retornarem esse erro,
 - [Remove-ApplicationAccessPolicy](/powershell/module/exchange/organization/remove-applicationaccesspolicy)
 - [Set-ApplicationAccessPolicy](/powershell/module/exchange/organization/set-applicationaccesspolicy)
 - [Test-ApplicationAccessPolicy](/powershell/module/exchange/organization/test-applicationaccesspolicy)
+- [Suporte à política de acesso a aplicativos no EWS](https://techcommunity.microsoft.com/t5/exchange-team-blog/application-access-policy-support-in-ews/ba-p/2110361)

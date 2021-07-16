@@ -4,12 +4,12 @@ description: Os limites de controle limitam número de chamadas simultâneas par
 author: davidmu1
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: 482b4cd4dba1c3cf7e2f726820480bd5e990df35
-ms.sourcegitcommit: 0ca0a1e2810701c2392e5c685e984fbfb6785579
+ms.openlocfilehash: 6b812bed46b7f389b0796dc2f79a54282e886dbe
+ms.sourcegitcommit: 6d247f44a6ee4d8515c3863ee8a2683163c9f829
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2021
-ms.locfileid: "53151507"
+ms.lasthandoff: 07/14/2021
+ms.locfileid: "53430197"
 ---
 # <a name="microsoft-graph-throttling-guidance"></a>Diretrizes de limitação do Microsoft Graph
 
@@ -170,7 +170,7 @@ Os recursos a seguir são fornecidos pelo serviço do Outlook.
 
 ### <a name="cloud-communication-service-limits"></a>Limites dos serviços de comunicação em nuvem
 
-| Recurso      | Limites por aplicativo e por inquilino    |
+| Recurso      | Limites por aplicativo    |
 | -------------- | ------------ |
 | [Chamadas](/graph/api/resources/call) | 10.000 chamadas/mês e 100 chamadas simultâneas   |
 | [Informações sobre a reunião ](/graph/api/resources/meetinginfo)   | 2000 reuniões/usuário a cada mês |
@@ -503,7 +503,7 @@ Os limites anteriores se aplicam aos seguintes recursos: dataPolicyOperation.
 
 ### <a name="assignment-service-limits"></a>Limites de serviço de atribuição
 
-Os limites a seguir se aplicam às solicitações na API do serviço de atribuição:
+Os limites a seguir se aplicam às solicitações no serviço de atribuição API:
 
 | Tipo de solicitação                 | Limitar por aplicativo por locatário     | Limitar por locatário para todos os aplicativos |
 |---------------------------|------------------------------|----------------------------|

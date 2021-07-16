@@ -9670,7 +9670,7 @@ items:
                         href: api//unifiedroleassignmentmultiple-update.md
                       - name: Excluir
                         href: api/unifiedroleassignmentmultiple-delete.md
-          - name: Atualizações do dispositivo (visualização)
+          - name: Atualizações do dispositivo (prévia)
             displayName: Windows updates
             items:
               - name: Atualizações
@@ -12400,7 +12400,7 @@ items:
             items:
               - name: Criar e enviar uma notificação
                 href: api/user-post-notifications.md
-      - name: Inteligência de pessoas e no local de trabalho
+      - name: Inteligência de pessoas e local de trabalho
         items:
           - name: Visão Geral
             href: resources/social-overview.md
@@ -13535,7 +13535,7 @@ items:
                   - name: Criar
                     href: api/termstore-group-post.md
                   - name: Obter
-                    href: api/termstore-store-get-group.md
+                    href: api/termstore-group-get.md
                   - name: Excluir
                     href: api/termstore-group-delete.md
                   - name: Listar

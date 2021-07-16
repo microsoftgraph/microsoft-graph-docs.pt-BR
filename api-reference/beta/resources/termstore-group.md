@@ -4,13 +4,13 @@ title: Tipo de recurso de grupo
 doc_type: resourcePageType
 description: Representa um grupo usado em um armazenamento de termos.
 localization_priority: Normal
-ms.prod: Sharepoint
-ms.openlocfilehash: 1249f94b96e0c6ff7251a2a97f4885a21258aaeb
-ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
+ms.prod: taxonomy
+ms.openlocfilehash: ec2e9609b2de278d2596d42b18cae2fe450efd86
+ms.sourcegitcommit: 73bbf84e6f5dbc8c3db8ed2c48cc5ab9ae3cff78
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51473462"
+ms.lasthandoff: 07/16/2021
+ms.locfileid: "53456356"
 ---
 # <a name="group-resource-type"></a>Tipo de recurso de grupo
 
@@ -29,7 +29,7 @@ Herda da [entidade](../resources/entity.md).
 | Método                                                   | Tipo de retorno       |    Descrição
 |:---------------------------------------------------------|:------------------|:---------------------
 | [Criar grupo](../api/termstore-group-post.md)                     | [microsoft.graph.termStore.group] | Criar um grupo em um armazenamento de [termos.]
-| [Obter grupo](../api/termstore-store-get-group.md)                           | [microsoft.graph.termStore.group] | Recupere os dados de um grupo em um armazenamento de [termos.]
+| [Obter grupo](../api/termstore-group-get.md)                           | [microsoft.graph.termStore.group] | Recupere os dados de um grupo em um armazenamento de [termos.]
 | [Excluir grupo](../api/termstore-group-delete.md)                     | Nenhum |  Excluir um grupo em um armazenamento de [termos.]
 
 ## <a name="properties"></a>Propriedades
@@ -88,7 +88,7 @@ A seguir está uma representação JSON de um **recurso de** grupo.
   "section": "documentation",
   "tocPath": "TermGroup",
   "tocBookmarks": {
-    "Resources/termStore.group": "#"
+    "Resources/termStore.group&quot;: &quot;#"
   },
   "suppressions": []
 }

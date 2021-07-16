@@ -4,12 +4,12 @@ description: Microsoft Graph dá suporte ao parâmetro de consulta $search OData
 author: mumbi-o
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: c552f510eb65370cd331784c98ea7359b278a56d
-ms.sourcegitcommit: 3873c85f53e026073addca92d31d234af244444c
+ms.openlocfilehash: 6e158d1d631536b11799b0b638b018dbbc98ef94
+ms.sourcegitcommit: 486fe9c77d4d89c5416bb83e8c716e6918c47370
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/10/2021
-ms.locfileid: "53367007"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53443106"
 ---
 # <a name="use-the-search-query-parameter-to-match-a-search-criterion"></a>Usar o parâmetro de consulta de pesquisa para corresponder a um critério de pesquisa
 
@@ -37,21 +37,21 @@ Como alternativa, você pode pesquisar mensagens especificando os nomes de propr
 
 | Propriedades de emails pesquisáveis                | Descrição | Exemplo 
 |:-------------------------|:------------|:---------|
-| **attachment**           | Os nomes dos arquivos anexados a uma mensagem de email.|[`me/messages?$search="attachment:api-catalog.md"`][search-att-example]
-| **bcc**           | O campo **Cco** de uma mensagem de email, especificado como um endereço SMTP, nome de exibição ou alias.|[`me/messages?$search="bcc:samanthab@contoso.com"&$select=subject,bccRecipients`][search-bcc-example]
-| **body**           | O corpo de uma mensagem de email.|[`me/messages?$search="body:excitement"`][search-body-example]
-| **cc**           | O campo **Cc** de uma mensagem de email, especificado como um endereço SMTP, nome de exibição ou alias.|[`me/messages?$search="cc:danas"&$select=subject,ccRecipients`][search-cc-example]
-| **from**           | O remetente de uma mensagem de email, especificado como um endereço SMTP, nome de exibição ou alias.|[`me/messages?$search="from:randiw"&$select=subject,from`][search-from-example]
-| **hasAttachment** | Verdadeiro se uma mensagem de email contiver um anexo que não seja um anexo embutido, caso contrário, falso. |[`me/messages?$search="hasAttachments:true"`][search-from-example]
-| **importance**           | A prioridade de uma mensagem de email, que um remetente pode especificar ao enviar uma mensagem. Os valores possíveis são `low`, `medium` ou `high`.|[`me/messages?$search="importance:high"&$select=subject,importance`][search-imp-example]
-| **kind**           | O tipo de mensagem. Os valores possíveis são `contacts`, `docs`, `email`, `faxes`, `im`, `journals`, `meetings`, `notes`, `posts`, `rssfeeds`, `tasks` ou `voicemail`.|[`me/messages?$search="kind:voicemail"`][search-kind-example]
-| **participants**           | Os campos **de**, **para**, **Cc** e **Cco** de uma mensagem de email, especificados como um endereço SMTP, nome de exibição ou alias.|[`me/messages?$search="participants:danas"`][search-part-example]
-| **received**           | A data em que uma mensagem de email foi recebida pelo destinatário.|[`me/messages?$search="received:07/23/2018"&$select=subject,receivedDateTime`][search-rcvd-example]
-| **recipients**           | Os campos **para**, **Cc** e **Cco** de uma mensagem de email, especificados como um endereço SMTP, nome de exibição ou alias.|[`me/messages?$search="recipients:randiq"&$select=subject,toRecipients,ccRecipients,bccRecipients`][search-rcpts-example]
-| **sent**           | A data em que uma mensagem de email foi enviada pelo remetente.|[`me/messages?$search="sent:07/23/2018"&$select=subject,sentDateTime`][search-sent-example]
-| **size**           | O tamanho de um item em bytes.|[`me/messages?$search="size:1..500000"`][search-size-example]
-| **subject**           | O texto na linha de assunto de uma mensagem de email. .|[`me/messages?$search="subject:has"&$select=subject`][search-sbj-example]
-| **to**           | O campo **para** de uma mensagem de email, especificado como um endereço SMTP, nome de exibição ou alias.|[`me/messages?$search="to:randiw"&$select=subject,toRecipients`][search-to-example]
+| **attachment**           | Os nomes dos arquivos anexados a uma mensagem de email.|[OBTER][search-att-example] `../me/messages?$search="attachment:api-catalog.md"`
+| **bcc**           | O campo **Cco** de uma mensagem de email, especificado como um endereço SMTP, nome de exibição ou alias.|[OBTER][search-bcc-example] `../me/messages?$search="bcc:samanthab@contoso.com"&$select=subject,bccRecipients`
+| **body**           | O corpo de uma mensagem de email.|[OBTER][search-body-example] `../me/messages?$search="body:excitement"`
+| **cc**           | O campo **Cc** de uma mensagem de email, especificado como um endereço SMTP, nome de exibição ou alias.|[OBTER][search-cc-example] `../me/messages?$search="cc:danas"&$select=subject,ccRecipients`
+| **from**           | O remetente de uma mensagem de email, especificado como um endereço SMTP, nome de exibição ou alias.| [OBTER][search-from-example] `../me/messages?$search="from:randiw"&$select=subject,from`
+| **hasAttachment** | Verdadeiro se uma mensagem de email contiver um anexo que não seja um anexo embutido, caso contrário, falso. | [OBTER][search-from-example] `../me/messages?$search="hasAttachments:true"`
+| **importance**           | A prioridade de uma mensagem de email, que um remetente pode especificar ao enviar uma mensagem. Os valores possíveis são `low`, `medium` ou `high`.|[OBTER][search-imp-example] `../me/messages?$search="importance:high"&$select=subject,importance`
+| **kind**           | O tipo de mensagem. Os valores possíveis são `contacts`, `docs`, `email`, `faxes`, `im`, `journals`, `meetings`, `notes`, `posts`, `rssfeeds`, `tasks` ou `voicemail`.| [OBTER][search-kind-example] `../me/messages?$search="kind:voicemail"`
+| **participants**           | Os campos **de**, **para**, **Cc** e **Cco** de uma mensagem de email, especificados como um endereço SMTP, nome de exibição ou alias.| [OBTER][search-part-example] `../me/messages?$search="participants:danas"`
+| **received**           | A data em que uma mensagem de email foi recebida pelo destinatário.| [OBTER][search-rcvd-example] `../me/messages?$search="received:07/23/2018"&$select=subject,receivedDateTime`
+| **recipients**           | Os campos **para**, **Cc** e **Cco** de uma mensagem de email, especificados como um endereço SMTP, nome de exibição ou alias.| [OBTER][search-rcpts-example] `../me/messages?$search="recipients:randiq"&$select=subject,toRecipients,ccRecipients,bccRecipients`
+| **sent**           | A data em que uma mensagem de email foi enviada pelo remetente.|[OBTER][search-sent-example] `../me/messages?$search="sent:07/23/2018"&$select=subject,sentDateTime`
+| **size**           | O tamanho de um item em bytes.|[OBTER][search-size-example] `../me/messages?$search="size:1..500000"`
+| **subject**           | O texto na linha de assunto de uma mensagem de email. .|[OBTER][search-sbj-example] `../me/messages?$search="subject:has"&$select=subject`
+| **to**           | O campo **para** de uma mensagem de email, especificado como um endereço SMTP, nome de exibição ou alias.|[OBTER][search-to-example]`.../me/messages?$search="to:randiw"&$select=subject,toRecipients`
 
 
 Para saber mais sobre as propriedades de email pesquisáveis, KQL como a sintaxe, operadores com suporte e dicas de pesquisa, confira os seguintes artigos:
@@ -136,13 +136,13 @@ Os recursos do Microsoft Azure Active Directory e suas relações que derivam de
 
 > **Observação**: após a geração de tokens, os tokens são combinados independentemente da capitalização original e são combinados em qualquer ordem.
 
-O suporte à pesquisa com token funciona apenas nos campos **displayName** e **descrição**. Qualquer campo de tipo de cadeia de caracteres pode ser colocado em `$search`; campos diferentes de **displayName** e **descrição** tem comportamento `$filter` `startswith` por padrão. Por exemplo:
+O suporte à pesquisa com token funciona apenas nos campos **displayName** e **descrição**. Qualquer campo do tipo Cadeia de Caracteres pode ser inserido em `$search`; campos diferentes de **displayName** e **descrição** assumem o comportamento padrão `$filter` `startswith`. Por exemplo:
 
-`https://graph.microsoft.com/beta/groups/?$search="displayName:OneVideo"`
+`https://graph.microsoft.com/v1.0/groups/?$search="displayName:OneVideo"`
 
 procurar todos os grupos com nomes de exibição que se pareçam com "OneVideo". O parâmetro `$search` também pode ser usado junto com o `$filter`. Por exemplo:
 
-`https://graph.microsoft.com/beta/groups/?$filter=mailEnabled eq true&$search="displayName:OneVideo"`
+`https://graph.microsoft.com/v1.0/groups/?$filter=mailEnabled eq true&$search="displayName:OneVideo"`
 
 procurar todos os grupos habilitados para email com nomes de exibição que se pareçam com "OneVideo". Os resultados são restringidos com base em uma conjunção lógica (um “AND”) do parâmetro `$filter` e na consulta inteira no parâmetro `$search`. O texto da pesquisa é tokenizado com base nas letras maiúsculas ou minúsculas, mas as equiparações são executadas de maneira insensível ao fato de a letra ser maiúscula ou minúscula. Por exemplo, "OneVideo" seria dividido em dois tokens de entrada "one" e "video", mas correspondendo a propriedades que não diferenciam maiúsculas de minúsculas.
 
@@ -161,17 +161,14 @@ A tabela a seguir mostra alguns exemplos.
 | Classe de objeto | Descrição | Exemplo |
 | ------------ | ----------- | ------- |
 | Usuário | O caderno de endereços exibe o nome do usuário. | 
-  [
-  https://graph.microsoft.com/beta/users?$search="displayName:Guthr"](https://developer.microsoft.com/en-us/graph/graph-explorer?request=users%3F%24search%3D%22displayName%3AGuthr%22&method=GET&version=beta&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d) |
+  [OBTER](https://developer.microsoft.com/en-us/graph/graph-explorer?request=users%3F%24search%3D%22displayName%3AGuthr%22&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d) `../users?$search="displayName:Guthr"`  |
 | Usuário | O caderno de endereços exibe o nome ou o email do usuário. | 
-  [
-  https://graph.microsoft.com/beta/users?$search="displayName:Guthr" OR "mail:Guthr"](https://developer.microsoft.com/en-us/graph/graph-explorer?request=users%3F%24search%3D%22displayName%3AGuthr%22%20OR%20%22mail%3AGuthr%22&method=GET&version=beta&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d) |
+  [OBTER](https://developer.microsoft.com/en-us/graph/graph-explorer?request=users%3F%24search%3D%22displayName%3AGuthr%22%20OR%20%22mail%3AGuthr%22&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d) `../users?$search="displayName:Guthr" OR "mail:Guthr"` |
 | Grupo | O caderno de endereços exibe o nome ou a descrição de um grupo. | 
-  [
-  https://graph.microsoft.com/beta/groups?$search="description:One" AND ("displayName:Video" OR "displayName:Drive")](https://developer.microsoft.com/en-us/graph/graph-explorer?request=groups%3F%24search%3D%22description%3AOne%22%20AND%20(%22displayName%3AVideo%22%20OR%20%22displayName%3ADrive%22)&method=GET&version=beta&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d) |
+  [OBTER](https://developer.microsoft.com/en-us/graph/graph-explorer?request=groups%3F%24search%3D%22description%3AOne%22%20AND%20(%22displayName%3AVideo%22%20OR%20%22displayName%3ADrive%22)&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d) `../groups?$search="description:One" AND ("displayName:Video" OR "displayName:Drive"` |
 | Grupo | Nome de exibição do catálogo de endereços em um grupo habilitado para email. | 
-  [
-  https://graph.microsoft.com/beta/groups?$filter=mailEnabled eq true&$search="displayName:OneVideo"](https://developer.microsoft.com/en-us/graph/graph-explorer?request=groups%3F%24filter%3DmailEnabled%20eq%20true%26%24search%3D%22displayName%3AOneVideo%22&method=GET&version=beta&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d) |
+  [OBTER](https://developer.microsoft.com/en-us/graph/graph-explorer?request=groups%3F%24filter%3DmailEnabled%20eq%20true%26%24search%3D%22displayName%3AOneVideo%22&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d) `../groups?$filter=mailEnabled eq true&$search="displayName:OneVideo"` |
+
 
 Ambas as entradas da cadeia de caracteres fornecidas em `$search`, bem como as propriedades pesquisáveis, são divididas em partes por espaços, uso de maiúsculas/minúsculas e tipos de caracteres (números e caracteres especiais).
 

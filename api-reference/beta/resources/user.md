@@ -5,12 +5,12 @@ author: jpettere
 localization_priority: Priority
 ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: dd51efc4c446449c8f09b89df0c977f5cc7ada65
-ms.sourcegitcommit: 8b23038be1141d7f22eb61de6aafdb16d4f9c826
+ms.openlocfilehash: 3fdde34ec80f1436a28a8b015f91eddff615ea44
+ms.sourcegitcommit: 73bbf84e6f5dbc8c3db8ed2c48cc5ab9ae3cff78
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "53401539"
+ms.lasthandoff: 07/16/2021
+ms.locfileid: "53456419"
 ---
 # <a name="user-resource-type"></a>Tipo de recurso de usuário
 
@@ -218,7 +218,7 @@ Esse recurso permite:
 | onPremisesSyncEnabled | Booliano | `true` se esse objeto está sincronizado de um diretório local; `false` se esse objeto foi originalmente sincronizado de um diretório local, mas não está mais sincronizado; `null` se esse objeto nunca foi sido sincronizado de um diretório local (padrão).  Somente leitura. <br><br>Suporta `$filter` (`eq`, `ne`, `NOT`, `in`). |
 | onPremisesUserPrincipalName | String | Contém o `userPrincipalName` local sincronizado no diretório local. A propriedade somente é preenchida para os clientes que estejam sincronizando o seu diretório local ao Azure Active Directory pelo Azure AD Connect. Somente leitura. <br><br>Suporta `$filter` (`eq`, `ne`, `NOT`, `ge`, `le`, `in`, `startsWith`). |
 | otherMails | Coleção String | Uma lista de endereços de email adicional para o usuário; Por exemplo: `["bob@contoso.com", "Robert@fabrikam.com"]`.<br>OBSERVAÇÃO: embora essa propriedade possa conter caracteres acentuados, eles podem causar problemas de acesso aos aplicativos primários para o usuário.<br><br>Suporta `$filter` (`eq`, `NOT`, `ge`, `le`, `in`, `startsWith`). |
-| passwordPolicies | String | Especifica as políticas de senha do usuário. Este valor é uma enumeração com um valor possível sendo `DisableStrongPassword`, que permite que senhas mais fracas do que a política padrão sejam especificadas. `DisablePasswordExpiration` também pode ser especificado. Os dois podem ser especificados juntos; por exemplo: `DisablePasswordExpiration, DisableStrongPassword`.<br><br>Suporta `$filter` (`ne`, `NOT`).|
+| passwordPolicies | String | Especifica as políticas de senha do usuário. Este valor é uma enumeração com um valor possível sendo `DisableStrongPassword`, que permite que senhas mais fracas do que a política padrão sejam especificadas. `DisablePasswordExpiration` também pode ser especificado. Os dois podem ser especificados juntos; por exemplo: `DisablePasswordExpiration, DisableStrongPassword`. Para mais informações sobre as políticas de senha padrão, veja [Azure Active Directory pasword policies](/azure/active-directory/authentication/concept-sspr-policy#password-policies-that-only-apply-to-cloud-user-accounts). <br><br>Suporta `$filter` (`ne`, `NOT`).|
 | passwordProfile | [passwordProfile](passwordprofile.md) | Especifica o perfil de senha do usuário. O perfil contém a senha do usuário. Essa propriedade é obrigatória quando um usuário é criado. A senha no perfil deve atender a requisitos mínimos, conforme especificado pela propriedade **passwordPolicies**. Por padrão, é obrigatória uma senha forte. **OBSERVAÇÃO:** Para locatários B2C do Azure, a propriedade **forceChangePasswordNextSignIn** deve ser definida como `false` e, em vez disso, usar políticas personalizadas e fluxos de usuário para forçar a redefinição de senha no primeiro logon. Confira [Forçar a redefinição de senha no primeiro logon](https://github.com/azure-ad-b2c/samples/tree/master/policies/force-password-reset-first-logon). <br><br>Suporta `$filter` (`eq`, `ne`, `NOT`, `in`).|
 | pastProjects | Coleção de cadeias de caracteres | Uma lista para o usuário enumerar seus projetos anteriores. <br><br>Retornado apenas em `$select`. |
 | postalCode | String | O código postal do endereço postal do usuário. O código postal é específico para o país/região do usuário. Nos Estados Unidos da América, este atributo contém o Código postal. O comprimento máximo é de 40 caracteres.<br><br>Suporta `$filter` (`eq`, `ne`, `NOT`, `ge`, `le`, `in`, `startsWith`).|

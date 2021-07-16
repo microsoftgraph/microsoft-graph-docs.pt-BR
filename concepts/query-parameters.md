@@ -4,12 +4,12 @@ description: O Microsoft Graph fornece parâmetros de consulta opcionais que voc
 author: mumbi-o
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: a30b4576740147ab6456d55ee5e123b12ec411cc
-ms.sourcegitcommit: 3873c85f53e026073addca92d31d234af244444c
+ms.openlocfilehash: 2cf22e03f4134c1e4612433bf8190e89eea97bbf
+ms.sourcegitcommit: 486fe9c77d4d89c5416bb83e8c716e6918c47370
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/10/2021
-ms.locfileid: "53366503"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53440664"
 ---
 # <a name="use-query-parameters-to-customize-responses"></a>Usar parâmetros de consulta para personalizar respostas
 
@@ -87,7 +87,7 @@ GET https://graph.microsoft.com/v1.0/me/messages?$filter=subject eq 'let''s meet
 Use o parâmetro de consulta `$count` para incluir uma contagem do número total de itens em um conjunto, juntamente com a página de valores de dados retornados do Microsoft Graph.
 
 > [!NOTE]
-> `$count` também pode ser usado como um [segmento de URL](#other-odata-url-capabilities) para recuperar o total inteiro da coleção. Em recursos que derivam de [directoryObject](/graph/api/resources/directoryobject), ele só tem suporte em uma [consulta avançada](/graph/aad-advanced-queries). Consulte [Recursos avançados de consulta em objetos de diretório do Microsoft Azure Active Directory](/graph/aad-advanced-queries).
+> `$count` também pode ser usado como um [segmento de URL](#other-odata-url-capabilities) para recuperar o total inteiro da coleção. Em recursos que derivam de [directoryObject](/graph/api/resources/directoryobject), ele ´r suportado apenas em uma consulta avançada. Consulte [Recursos avançados de consulta em objetos de diretório do Microsoft Azure Active Directory](/graph/aad-advanced-queries).
 >
 > Não há suporte para o uso de `$count` em locatários do Microsoft Azure Active Directory B2C.
 
@@ -103,7 +103,7 @@ O parâmetro de consulta `$count` tem suporte para essas coleções de recursos 
 - [device](/graph/api/resources/device)
 - [group](/graph/api/resources/group)
 - [servicePrincipal](/graph/api/resources/serviceprincipal)
-- [usuários](/graph/api/resources/user)
+- [user](/graph/api/resources/user)
 
 ## <a name="expand-parameter"></a>parâmetro expand
 
@@ -133,7 +133,7 @@ GET https://graph.microsoft.com/v1.0/me/drive/root?$expand=children($select=id,n
 
 Use o parâmetro de consulta `$filter` para recuperar apenas um subconjunto de um conjunto. O parâmetro de consulta `$filter` também pode ser usado para recuperar relações como members, memberOf, transitiveMembers e transitiveMemberOf. Por exemplo, obter todos os grupos de segurança dos quais sou membro.
 
-O exemplo a seguir pode ser usado para encontrar usuários cujo nome de exibição começa com a letra “J’: use `startsWith`.
+O exemplo a seguir encontra o usuários cujo nome de exibição começa com a letra 'J':
 
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/users?$filter=startsWith(displayName,'J')
@@ -154,7 +154,7 @@ O suporte para operadores `$filter` varia entre as APIs do Microsoft Graph. Os s
 
 ### <a name="filter-using-lambda-operators"></a>Filtrar usando operadores lambda
 
-OData define os operadores `any` e `all` para avaliar correspondências em propriedades com valores múltiplos, ou seja, uma coleção de valores primitivos, como tipos de **cadeia de caracteres** ou coleção de entidades.
+OData define os operadores `any` e `all` para avaliar correspondências em propriedades com valores múltiplos, ou seja, uma coleção de valores primitivos, como tipos de cadeia de caracteres ou coleção de entidades.
 
 O operador `any` aplica iterativamente uma expressão booliana a cada membro de uma coleção e retorna `true` se a expressão for `true` para *qualquer membro* da coleção, caso contrário, retornará `false`. A seguir está a sintaxe do operador `any`:
 
@@ -168,22 +168,24 @@ Em que
 + *subparam* é necessário quando a consulta se aplica a uma coleção de entidades. Ele representa a propriedade do tipo complexo cujo valor estamos correspondendo.
 + *value-to-match* representa o membro da coleção com o qual estamos correspondendo.
 
-Por exemplo, a propriedade **assignedLicenses** do recurso de usuários pode conter uma coleção de objetos **assignedLicense**, um tipo complexo com duas propriedades, **skuId** e **disabledPlans**. A consulta a seguir recupera apenas os usuários com uma licença atribuída identificada pelo **skuId** `184efa21-98c3-4e5d-95ab-d07053a96e67`.
+Por exemplo, a propriedade **imAddresses** do recurso do usuário contém uma coleção do tipo Cadeia de Caracteres primitiva. A consulta a seguir recupera apenas os usuários com um imAddress de `admin@contoso.com`.
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/users?$filter=assignedLicenses/any(s:s/skuId eq 184efa21-98c3-4e5d-95ab-d07053a96e67)
+GET https://graph.microsoft.com/v1.0/users?$filter=imAddresses/any(s:s eq 'admin@contoso.com')
 ```
 
-A propriedade **imAddresses** do recurso de usuários pode conter uma coleção de tipos primitivos de **cadeia de caracteres**. A consulta a seguir recupera apenas os usuários com um imAddress de `admin@contoso.com`.
+A propriedade **assignLicenses** do recurso do usuário contém uma coleção de objetos **assignLicense**, um tipo complexo com duas propriedades, **skuId** e **disabledPlans**. A consulta a seguir recupera apenas os usuários com uma licença atribuída identificada pela **skuId** `184efa21-98c3-4e5d-95ab-d07053a96e67`.
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/users?$filter=imAddresses/any(s:s eq 'admin@contoso.com')
+GET https://graph.microsoft.com/v1.0/users?$filter=assignedLicenses/any(s:s/skuId eq 184efa21-98c3-4e5d-95ab-d07053a96e67)
 ```
 
 Para negar o resultado da expressão dentro da cláusula `any`, use o operador `NOT`, não o operador `ne`. Por exemplo, a consulta a seguir recupera apenas os usuários que não receberam o **imAddress** de `admin@contoso.com`.
+>**Observação:** Para objetos de diretório como usuários, os operadores `NOT` e `ne` são suportados apenas em [consultas avançadas](/graph/aad-advanced-queries).
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/users?$filter=NOT imAddresses/any(s:s eq 'admin@contoso.com')&$count=true
+GET https://graph.microsoft.com/v1.0/users?$filter=NOT(imAddresses/any(s:s eq 'admin@contoso.com'))&$count=true
+ConsistencyLevel: eventual
 ```
 
 O operador `all` aplica uma expressão booliana a cada membro de uma coleção e retorna `true` se a expressão for `true` para *todos os membros* da coleção, caso contrário, retornará `false`. Não há suporte para ele em nenhuma propriedade.
@@ -206,13 +208,13 @@ A tabela a seguir mostra alguns exemplos que usam o parâmetro de consulta `$fil
 | Obter todos os usuários nos departamentos de Varejo e Vendas. | 
   [GET](https://developer.microsoft.com/en-us/graph/graph-explorer?request=users%3F%24filter%3Ddepartment%20in%20('Retail'%2C%20'Sales')&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com) `../users?$filter=department in ('Retail', 'Sales')`| 
 | Listar os usuários com um plano de serviço específico que está em um estado suspenso. | 
-  [GET](https://developer.microsoft.com/en-us/graph/graph-explorer?request=users%3F%24filter%3DassignedPlans%2Fany(a%3Aa%2FservicePlanId%20eq%202e2ddb96-6af9-4b1d-a3f0-d6ecfd22edb2%20and%20a%2FcapabilityStatus%20eq%20'Suspended')%26%24count%3Dtrue&method=GET&version=beta&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d) `../users?$filter=assignedPlans/any(a:a/servicePlanId eq 2e2ddb96-6af9-4b1d-a3f0-d6ecfd22edb2 and a/capabilityStatus eq 'Suspended')&$count=true`. Esta é uma [consulta avançada](/graph/aad-advanced-queries). |
+  [GET](https://developer.microsoft.com/en-us/graph/graph-explorer?request=users%3F%24filter%3DassignedPlans%2Fany(a%3Aa%2FservicePlanId%20eq%202e2ddb96-6af9-4b1d-a3f0-d6ecfd22edb2%20and%20a%2FcapabilityStatus%20eq%20'Suspended')%26%24count%3Dtrue&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d) `../users?$filter=assignedPlans/any(a:a/servicePlanId eq 2e2ddb96-6af9-4b1d-a3f0-d6ecfd22edb2 and a/capabilityStatus eq 'Suspended')&$count=true`. Esta é uma [consulta avançada](/graph/aad-advanced-queries). |
 | Listar todos os grupos que não são do Microsoft 365 em uma organização. | 
-  [GET](https://developer.microsoft.com/en-us/graph/graph-explorer?request=groups%3F%24filter%3DNOT%20groupTypes%2Fany(c%3Ac%20eq%20'Unified')%26%24count%3Dtrue&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d) `../groups?$filter=NOT groupTypes/any(c:c eq 'Unified')&$count=true` |
+  [GET](https://developer.microsoft.com/en-us/graph/graph-explorer?request=groups%3F%24filter%3DNOT%20groupTypes%2Fany(c%3Ac%20eq%20'Unified')%26%24count%3Dtrue&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d) `../groups?$filter=NOT groupTypes/any(c:c eq 'Unified')&$count=true`. Esta é uma [consulta avançada](/graph/aad-advanced-queries). |
 | Listar todos os usuários cujo nome da empresa não é indefinido (ou seja, não é um valor `null`) ou Microsoft. | 
   [GET](https://developer.microsoft.com/en-us/graph/graph-explorer?request=users%3F%24filter%3DcompanyName%20ne%20null%20and%20NOT(companyName%20eq%20'Microsoft')%26%24count%3Dtrue&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d) `../users?$filter=companyName ne null and NOT(companyName eq 'Microsoft')&$count=true`. Esta é uma [consulta avançada](/graph/aad-advanced-queries). |
 | Listar todos os usuários cujo nome da empresa seja indefinido ou Microsoft. | 
-  [GET](https://developer.microsoft.com/en-us/graph/graph-explorer?request=users%3F%24filter%3DcompanyName%20in%20(null%2C%20'Microsoft')%26%24count%3Dtrue&method=GET&version=beta&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d) `../users?$filter=companyName in (null, 'Microsoft')&$count=true`. Esta é uma [consulta avançada](/graph/aad-advanced-queries). |
+  [GET](https://developer.microsoft.com/en-us/graph/graph-explorer?request=users%3F%24filter%3DcompanyName%20in%20(null%2C%20'Microsoft')%26%24count%3Dtrue&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d) `../users?$filter=companyName in (null, 'Microsoft')&$count=true`. Esta é uma [consulta avançada](/graph/aad-advanced-queries). |
 | Use a conversão OData para obter uma participação transitória em grupos com um nome de exibição que comece com “a”, incluindo o número de objetos retornados. | 
   [GET](https://developer.microsoft.com/en-us/graph/graph-explorer?request=me%2FtransitiveMemberOf%2Fmicrosoft.graph.group%3F%24count%3Dtrue&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d) `../me/transitiveMemberOf/microsoft.graph.group?$count=true&$filter=startswith(displayName, 'a')`. Esta é uma [consulta avançada](/graph/aad-advanced-queries). |
 
@@ -328,7 +330,7 @@ GET https://graph.microsoft.com/v1.0/me/messages?$top=5
 Algumas solicitações retornarão uma mensagem de erro se não houver suporte para um parâmetro de consulta especificado. Por exemplo, você não pode usar `$expand` na relação `user/photo`. 
 
 ```http
-https://graph.microsoft.com/beta/me?$expand=photo
+https://graph.microsoft.com/v1.0/me?$expand=photo
 ```
 
 ```json
@@ -349,7 +351,16 @@ No entanto, é importante observar que os parâmetros de consulta especificados 
 [graph-explorer]: https://developer.microsoft.com/graph/graph-explorer
 [odata-filter]: https://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part2-url-conventions/odata-v4.0-errata03-os-part2-url-conventions-complete.html#_Toc453752358
 [odata-query]: https://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part2-url-conventions/odata-v4.0-errata03-os-part2-url-conventions-complete.html#_Toc453752356
+
 [count-example]: https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$top=2%26$count=true&method=GET&version=v1.0
+[expand-example]: https://developer.microsoft.com/graph/graph-explorer?request=groups?$expand=members&method=GET&version=v1.0
+[filter-example]: https://developer.microsoft.com/graph/graph-explorer?request=users?$filter=startswith(givenName,'J')&method=GET&version=v1.0
+[format-example]: https://developer.microsoft.com/graph/graph-explorer?request=users?$format=json&method=GET&version=v1.0
+[orderby-example]: https://developer.microsoft.com/graph/graph-explorer?request=users?$orderby=displayName%20DESC&method=GET&version=v1.0
+[search-example]: https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$search=pizza&method=GET&version=v1.0
+[select-example]: https://developer.microsoft.com/graph/graph-explorer?request=users?$select=givenName,surname&method=GET&version=v1.0
+[skip-example]: https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$skip=11&method=GET&version=v1.0
+[top-example]: https://developer.microsoft.com/graph/graph-explorer?request=users?$top=2&method=GET&version=v1.0
 
 ## <a name="see-also"></a>Confira também
 
