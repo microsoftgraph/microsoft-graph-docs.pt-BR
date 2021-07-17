@@ -378,24 +378,26 @@ items:
         items:
           - name: Visão geral
             href: search-concept-overview.md
-          - name: Pesquisar mensagens
-            href: search-concept-messages.md
-          - name: Pesquisar eventos
-            href: search-concept-events.md
-          - name: Pesquisar conteúdo no OneDrive e Microsoft Office SharePoint Online
-            href: search-concept-files.md
-          - name: Pesquisar conectores
-            href: search-concept-custom-types.md
-          - name: Pesquisar pessoas (visualização)
-            href: search-concept-person.md
-          - name: Classificar os resultados da busca (visualização)
-            href: search-concept-sort.md
-          - name: Refinar os resultados da busca (visualização)
-            href: search-concept-aggregation.md
-          - name: Solicitar correção ortográfica (prévia)
-            href: search-concept-speller.md
-          - name: Layout de exibição de pesquisa (visualização)
-            href: search-concept-display-layout.md
+          - name: Consulta
+            items:
+              - name: Pesquisar mensagens
+                href: search-concept-messages.md
+              - name: Pesquisar eventos
+                href: search-concept-events.md
+              - name: Pesquisar conteúdo no OneDrive e Microsoft Office SharePoint Online
+                href: search-concept-files.md
+              - name: Pesquisar conectores
+                href: search-concept-custom-types.md
+              - name: Pesquisar pessoa (visualização)
+                href: search-concept-person.md
+              - name: Classificar os resultados da busca (visualização)
+                href: search-concept-sort.md
+              - name: Refinar os resultados da busca (visualização)
+                href: search-concept-aggregation.md
+              - name: Solicitar correção ortográfica (prévia)
+                href: search-concept-speller.md
+              - name: Layout de exibição de pesquisa (visualização)
+                href: search-concept-display-layout.md
       - name: Segurança
         items:
           - name: Visão Geral
