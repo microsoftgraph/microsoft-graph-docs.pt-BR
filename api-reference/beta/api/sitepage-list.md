@@ -6,12 +6,12 @@ title: Listar as páginas em um site
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 1c8559fdc469823b3218a8af93ccda0d10ec357b
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: 342e7432b000b5ee6632b55857369ad70cad77e6
+ms.sourcegitcommit: 1940be9846055aa650c6c03982b74a961f1e316a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50475706"
+ms.lasthandoff: 07/17/2021
+ms.locfileid: "53466925"
 ---
 # <a name="list-the-pages-in-the-site-pages-list-of-a-site"></a>Listar as páginas na lista de páginas de site de um site
 
@@ -32,19 +32,18 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | Sites.Read.All, Sites.ReadWrite.All    |
-|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Sites.Read.All, Sites.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
 ```msgraph-interactive
 GET /sites/{site-id}/pages
-
 ```
 
 ## <a name="example"></a>Exemplo
 
-#### <a name="request"></a>Solicitação
+### <a name="request"></a>Solicitação
 
 <!-- 
 { 
@@ -59,7 +58,7 @@ GET /sites/{site-id}/pages
 GET /sites/{site-id}/pages
 ```
 
-#### <a name="response"></a>Resposta
+### <a name="response"></a>Resposta
 
 <!-- 
 { 

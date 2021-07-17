@@ -5,18 +5,18 @@ description: Publique um tipo de conteúdo presente no site do hub de tipo de co
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: 2137c9fe371103d68785e67cfc815a15dba2ec54
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: d69cbdabbb82612945dc6df85617e50bc2ca5b2c
+ms.sourcegitcommit: 1940be9846055aa650c6c03982b74a961f1e316a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50770432"
+ms.lasthandoff: 07/17/2021
+ms.locfileid: "53467082"
 ---
 # <a name="contenttype-publish"></a>contentType: publish
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-Publica um [contentType][] presente no site do hub de tipo de conteúdo.
+Publica um [contentType][] presente em um site de hub de tipo de conteúdo.
 
 ## <a name="permissions"></a>Permissões
 
@@ -38,7 +38,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 POST /sites/{siteId}/contentTypes/{contentTypeId}/publish
 ```
 
->**Observação:** O siteId representa um site de hub de tipo de conteúdo.
+>**Observação:** `siteId` representa um site de hub de tipo de conteúdo.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 |Nome|Descrição|

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 9c7b5e91c191ceaa747393e42e278bf9146bdc3a
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: 14bbbe23fca77f8fef06a2cb546cd0b1fdcc1949
+ms.sourcegitcommit: 1940be9846055aa650c6c03982b74a961f1e316a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50722193"
+ms.lasthandoff: 07/17/2021
+ms.locfileid: "53467110"
 ---
 # <a name="accesspackageresource-resource-type"></a>Tipo de recurso accessPackageResource
 
@@ -33,22 +33,22 @@ No [Azure AD Entitlement Management](entitlementmanagement-root.md), um recurso 
 |accessPackageResourceEnvironment|[accessPackageResourceEnvironment](../resources/accesspackageresourceenvironment.md)|Contém as informações de ambiente do recurso. Isso pode ser definido usando `@odata.bind` a anotação ou a *origem do ambienteId*.|
 |addedBy|String|Somente leitura.|
 |addedOn|DateTimeOffset|O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`|
-|description|Cadeia de caracteres|Uma descrição do recurso.|
-|displayName|Cadeia de caracteres|O nome de exibição do recurso, como nome do aplicativo, nome do grupo ou nome do site.|
+|description|String|Uma descrição do recurso.|
+|displayName|String|O nome de exibição do recurso, como nome do aplicativo, nome do grupo ou nome do site.|
 |id|String| Somente leitura.|
 |isPendingOnboarding|Booliano|True se o recurso ainda não estiver disponível para atribuição.|
-|originId|Cadeia de caracteres|O identificador exclusivo do recurso no sistema de origem. No caso de um grupo do Azure AD, esse é o identificador do grupo. |
-|originSystem|Cadeia de caracteres|O tipo do recurso no sistema de origem, como `SharePointOnline` , `AadApplication` ou `AadGroup` .|
-|resourceType|Cadeia de caracteres|O tipo do recurso, como se fosse um aplicativo conectado ao `Application` Azure AD ou `SharePoint Online Site` para um site do SharePoint Online.|
+|originId|String|O identificador exclusivo do recurso no sistema de origem. No caso de um grupo do Azure AD, esse é o identificador do grupo. |
+|originSystem|String|O tipo do recurso no sistema de origem, como `SharePointOnline` , `AadApplication` ou `AadGroup` .|
+|resourceType|String|O tipo do recurso, como se fosse um aplicativo conectado ao Azure AD ou para um `Application` `SharePoint Online Site` site SharePoint Online.|
 |url|Cadeia de caracteres|Um localizador de recurso exclusivo para o recurso, como a URL para assinar um usuário em um aplicativo.|
 
 ## <a name="relationships"></a>Relações
 
 | Relação | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|accessPackageResourceEnvironment|[accessPackageResourceEnvironment](accesspackageresourceenvironment.md)| Anulável.|
-|accessPackageResourceRoles|[Coleção accessPackageResourceRole](accesspackageresourcerole.md)| Somente leitura. Anulável.|
-|accessPackageResourceScopes|[Coleção accessPackageResourceScope](accesspackageresourcescope.md)| Somente leitura. Anulável.|
+|accessPackageResourceEnvironment|[accessPackageResourceEnvironment](accesspackageresourceenvironment.md)| Anulável. Suporta o `$expand`.|
+|accessPackageResourceRoles|[Coleção accessPackageResourceRole](accesspackageresourcerole.md)| Somente leitura. Anulável. Suporta o `$expand`.|
+|accessPackageResourceScopes|[Coleção accessPackageResourceScope](accesspackageresourcescope.md)| Somente leitura. Anulável. Suporta o `$expand`.|
 
 ## <a name="json-representation"></a>Representação JSON
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 3f5bbd3147b27193d8a8e8a3e4bea3914719124c
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: 0adfca021ec463029a4b35c047ac85f8ce52921b
+ms.sourcegitcommit: 1940be9846055aa650c6c03982b74a961f1e316a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50161779"
+ms.lasthandoff: 07/17/2021
+ms.locfileid: "53467054"
 ---
 # <a name="accesspackagesubject-resource-type"></a>Tipo de recurso accessPackageSubject
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-No gerenciamento de direitos do [Azure AD,](entitlementmanagement-root.md)um assunto do pacote de acesso é um usuário, entidade de serviço ou outra entidade que pode ser configurada para solicitar ou ser atribuído a um pacote de acesso.
+No gerenciamento de direitos do [Azure AD,](entitlementmanagement-root.md)um assunto do pacote de acesso é um usuário, entidade de serviço ou outra entidade que pode ser configurada para solicitar ou ter um pacote de acesso atribuído.  Ele pode representar um solicitante de uma organização conectada que ainda não está no locatário.
 
 ## <a name="properties"></a>Propriedades
 
@@ -27,13 +27,17 @@ No gerenciamento de direitos do [Azure AD,](entitlementmanagement-root.md)um ass
 |displayName|String|O nome de exibição do assunto.|
 |email|Cadeia de caracteres|O endereço de email do assunto.|
 |id|String| Somente leitura.|
-|objectId|Cadeia de caracteres|A ID do objeto do assunto.|
+|objectId|Cadeia de caracteres|O identificador de objeto do assunto. `null` se o assunto ainda não for um usuário no locatário.|
 |principalName|Cadeia de caracteres|O nome principal, se conhecido, do assunto.|
-|type|String|O tipo de recurso do assunto.|
+|tipo|String|O tipo de recurso do assunto.|
+|connectedOrganizationId|String|O identificador da organização conectada do assunto.|
 
 ## <a name="relationships"></a>Relações
 
-Nenhum
+| Relação | Tipo        | Descrição |
+|:-------------|:------------|:------------|
+|connectedOrganization|[connectedOrganization](connectedorganization.md)| A organização conectada do assunto. Somente leitura. Anulável.|
+
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -68,5 +72,4 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
-
 

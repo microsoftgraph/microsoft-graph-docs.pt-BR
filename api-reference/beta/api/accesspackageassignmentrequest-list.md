@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 193e257656abbcc13ea54099cd8d09897ffdb340
-ms.sourcegitcommit: 8b23038be1141d7f22eb61de6aafdb16d4f9c826
+ms.openlocfilehash: d5ce1ca824f104de9058be4ed748d5b87a731e71
+ms.sourcegitcommit: 1940be9846055aa650c6c03982b74a961f1e316a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "53401010"
+ms.lasthandoff: 07/17/2021
+ms.locfileid: "53466933"
 ---
 # <a name="list-accesspackageassignmentrequests"></a>Listar accessPackageAssignmentRequests
 
@@ -61,7 +61,7 @@ Se tiver êxito, este método retornará um código de resposta e uma coleção 
 
 ### <a name="request"></a>Solicitação
 
-Este é um exemplo de solicitação.
+Este é um exemplo de solicitação. O URI de solicitação inclui apenas retornar solicitações em um estado específico e para retornar detalhes do solicitante e sua `$filter` `$expand` organização conectada também.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -70,7 +70,7 @@ Este é um exemplo de solicitação.
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageAssignmentRequests
+GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageAssignmentRequests?$expand=requestor($expand=connectedOrganization)&$filter=(requestState eq 'PendingApproval')
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-accesspackageassignmentrequests-csharp-snippets.md)]
@@ -112,11 +112,22 @@ Content-type: application/json
   "value": [
     {
       "id": "433dafca-5047-4614-95f7-a03510b1ded3",
-      "requestType": "AdminAdd",
-      "requestState": "Delivered",
-      "requestStatus": "Fulfilled",
-      "isValidationOnly": false,
-      "createdDateTime": "2019-10-25T22:55:11.623Z"
+      "requestType": "UserAdd",
+      "requestState": "PendingApproval",
+      "createdDateTime": "2019-10-25T22:55:11.623Z",
+      "justification": "Need access",
+      "answers": [],
+      "requestor": {
+        "connectedOrganizationId": "c3c2adbc-a863-437f-9383-ee578665317d",
+        "id": "ba7ef0fb-e16f-474b-87aa-02815d061e67",
+        "displayName": "displayname",
+        "email": "displayname@example.com",
+        "type": "User",
+        "connectedOrganization": {
+          "id": "c3c2adbc-a863-437f-9383-ee578665317d",
+          "displayName": "example"
+        }
+      }
     }
   ]
 }

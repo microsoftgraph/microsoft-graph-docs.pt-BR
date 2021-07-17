@@ -4,12 +4,12 @@ description: Saiba como configurar aplicativos para acessar reuniões online em 
 author: mkhribech
 localization_priority: Normal
 ms.prod: cloud-communications
-ms.openlocfilehash: fa3771c1325f0c2a5f10b425e2eca51e9d1534ac
-ms.sourcegitcommit: 7abb0672a38a6d9b11a2e0d2cc221222cb8358bb
+ms.openlocfilehash: 331a3873aa619c6f86fc8109fc6f572d990f9686
+ms.sourcegitcommit: 1940be9846055aa650c6c03982b74a961f1e316a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52896701"
+ms.lasthandoff: 07/17/2021
+ms.locfileid: "53467166"
 ---
 # <a name="allow-applications-to-access-online-meetings-on-behalf-of-a-user"></a>Permitir que os aplicativos acessem reuniões online em nome de um usuário
 
@@ -44,6 +44,13 @@ Para configurar uma política de acesso a aplicativos e permitir que os aplicati
 
    ```powershell
    Grant-CsApplicationAccessPolicy -PolicyName Test-policy -Identity "ddb80e06-92f3-4978-bc22-a0eee85e6a9e"
+   ```
+5. (Opcional) Conceda a política a todo o locatário. Isso se aplicará aos usuários que não têm uma política de acesso a aplicativos atribuída. Para obter detalhes, consulte os links de cmdlet na [seção também.](#see-also)
+
+   Execute o cmdlet a seguir, substituindo o **argumento PolicyName.**
+
+   ```powershell
+   Grant-CsApplicationAccessPolicy -PolicyName Test-policy -Global
    ```
 
 > [!NOTE]

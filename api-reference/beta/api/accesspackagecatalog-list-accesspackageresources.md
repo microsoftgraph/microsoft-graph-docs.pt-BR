@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: be2ad10b946574ca48b93ada1d7833262f127059
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 3aaeddef635a80bb8a54d3680281b8b9edae98ae
+ms.sourcegitcommit: 1940be9846055aa650c6c03982b74a961f1e316a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52048558"
+ms.lasthandoff: 07/17/2021
+ms.locfileid: "53466940"
 ---
 # <a name="list-accesspackageresources"></a>Listar accessPackageResources
 
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---------------------------------------|:--------------------------------------------|
 | Delegado (conta corporativa ou de estudante)     | EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Application                            | EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All |
+| Aplicativo                            | EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -40,7 +40,7 @@ GET /identityGovernance/entitlementManagement/accessPackageCatalogs/{id}/accessP
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Este método dá suporte a alguns parâmetros de consulta OData para ajudar a personalizar a resposta. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
+Este método dá suporte a Parâmetros de consulta do OData para ajudar a personalizar a resposta. Por exemplo, para recuperar os escopos e ambientes de recursos do pacote de acesso para cada recurso, `$expand=accessPackageResourceScopes,accessPackageResourceEnvironment` inclua na consulta. Para recuperar as funções disponíveis de um recurso, inclua `$expand=accessPackageResourceRoles` . Para recuperar apenas recursos para aplicativos e não grupos ou sites, `$filter=resourceType eq 'Application'` inclua na consulta. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -60,7 +60,7 @@ Se tiver êxito, este método retornará um código de resposta e uma `200 OK` c
 
 ### <a name="request"></a>Solicitação
 
-Este é um exemplo de solicitação.
+A seguir está um exemplo da solicitação, usando um filtro para selecionar recursos de um tipo específico e para retornar escopos de `$expand` recurso de cada recurso.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -69,7 +69,7 @@ Este é um exemplo de solicitação.
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageCatalogs/{id}/accessPackageResources
+GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageCatalogs/{id}/accessPackageResources?$filter=resourceType eq 'Application'&$expand=accessPackageResourceScopes
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-accesspackageresources-csharp-snippets.md)]
@@ -115,11 +115,23 @@ Content-type: application/json
       "description": "Example application",
       "url": "https://myapps.microsoft.com/example.com/signin/Faculty%20cafeteria%20ordering/f1e3b407-942d-4934-9a3f-cef1975cb988/",
       "resourceType": "Application",
-      "originId": "2f1099a6-d4fc-4cc9-a0ef-ddd3f1bf0b7e"
+      "originId": "2f1099a6-d4fc-4cc9-a0ef-ddd3f1bf0b7e",
+      "accessPackageResourceScopes": [
+         {
+            "id": "452d78a7-69a5-482d-a82f-859a5169c55e",
+            "displayName": "Root",
+            "description": "Root Scope",
+            "originId": "2f1099a6-d4fc-4cc9-a0ef-ddd3f1bf0b7e",
+            "originSystem": "AadApplication",
+            "isRootScope": true
+         }
+      ]
     }
   ]
 }
 ```
+
+https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageCatalogs/e71fafe7-9ccb-4c5a-a7b3-77ec35e83e3c/accessPackageResources
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->

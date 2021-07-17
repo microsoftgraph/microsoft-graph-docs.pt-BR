@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 93b7e33bd072d4e92d15125a4009d5f33477326e
-ms.sourcegitcommit: 486fe9c77d4d89c5416bb83e8c716e6918c47370
+ms.openlocfilehash: 6b4abe2f9c2c0060e97560a26c22d19ed53e01b7
+ms.sourcegitcommit: 1940be9846055aa650c6c03982b74a961f1e316a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53439872"
+ms.lasthandoff: 07/17/2021
+ms.locfileid: "53466956"
 ---
 # <a name="create-accesspackageresourcerolescope"></a>Criar accessPackageResourceRoleScope
 
@@ -20,14 +20,14 @@ Namespace: microsoft.graph
 
 Crie um novo [accessPackageResourceRoleScope](../resources/accesspackageresourcerolescope.md) para adicionar uma função de recurso a um pacote de acesso. O recurso do pacote de acesso, para um grupo, um aplicativo ou um site SharePoint Online, já deve existir no catálogo de pacotes de acesso e o **originId** da função de recurso recuperada da lista das funções de recurso [.](accesspackagecatalog-list-accesspackageresourceroles.md) Depois de adicionar o escopo da função de recurso ao pacote de acesso, o usuário receberá essa função de recurso por meio de quaisquer atribuições de pacote de acesso atuais e futuras.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegada (conta corporativa ou de estudante)     | EntitlementManagement.ReadWrite.All |
-| Delegada (conta pessoal da Microsoft) | Sem suporte. |
+| Delegado (conta corporativa ou de estudante)     | EntitlementManagement.ReadWrite.All |
+| Delegado (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo                            | EntitlementManagement.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -47,7 +47,7 @@ POST /identityGovernance/entitlementManagement/accessPackages/{id}/accessPackage
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, fornece uma representação JSON de um [objeto accessPackageResourceRoleScope.](../resources/accesspackageresourcerolescope.md)  Inclua no objeto as relações com [um accessPackageResourceRole](../resources/accesspackageresourcerole.md) e [accessPackageResourceScope](../resources/accesspackageresourcescope.md).
+No corpo da solicitação, fornece uma representação JSON de um [objeto accessPackageResourceRoleScope.](../resources/accesspackageresourcerolescope.md)  Inclua no objeto as relações com um objeto [accessPackageResourceRole,](../resources/accesspackageresourcerole.md) que pode ser obtido de uma solicitação para listar funções de recurso do pacote de acesso [](accesspackagecatalog-list-accesspackageresources.md) a um recurso em um [catálogo](accesspackagecatalog-list-accesspackageresourceroles.md)e um [objeto accessPackageResourceScope,](../resources/accesspackageresourcescope.md) que pode ser obtido de uma solicitação para listar recursos de pacote de acesso com `$expand=accessPackageResourceScopes` .
 
 ## <a name="response"></a>Resposta
 
@@ -59,7 +59,7 @@ Se tiver êxito, este método retornará um código de resposta de 200 séries e
 
 #### <a name="request"></a>Solicitação
 
-Este é um exemplo de solicitação.  O recurso do pacote de acesso para o grupo já deve ter sido adicionado ao catálogo de pacotes de acesso que contém esse pacote de acesso.
+Este é um exemplo de solicitação.  Antes dessa solicitação, o recurso do pacote de acesso para o grupo já deve ter sido adicionado ao catálogo de pacotes de acesso `1d08498d-72a1-403f-8511-6b1f875746a0` que contém esse pacote de `b31fe1f1-3651-488f-bd9a-1711887fd4ca` acesso.  O recurso poderia ter sido adicionado ao catálogo criando uma solicitação de recurso [do pacote de acesso.](accesspackageresourcerequest-post.md)
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {

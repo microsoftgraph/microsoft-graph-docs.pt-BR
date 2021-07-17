@@ -5,12 +5,12 @@ doc_type: enumPageType
 localization_priority: Normal
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
-ms.openlocfilehash: 724110fb32fc225cc9fb0617c97ce2a7b752a6b6
-ms.sourcegitcommit: 8b23038be1141d7f22eb61de6aafdb16d4f9c826
+ms.openlocfilehash: d4cac5a2b0d7b5d9c2e6a969da7e8c05c85322fb
+ms.sourcegitcommit: 1940be9846055aa650c6c03982b74a961f1e316a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "53401558"
+ms.lasthandoff: 07/17/2021
+ms.locfileid: "53467131"
 ---
 # <a name="enum-values"></a>Valores denum
 
@@ -142,11 +142,11 @@ Namespace: microsoft.graph
 
 |Member|
 |:---|
-|Cadeia de caracteres|
+|String|
 |Inteiro|
 |Referência|
 |Binário|
-|Boolean|
+|Booliano|
 |DateTime|
 
 ### <a name="mutability-values"></a>valores de mutabilidade
@@ -886,7 +886,7 @@ Namespace: microsoft.graph
 |site|
 |list|
 |listItem|
-|drive|
+|Unidade|
 |unknownFutureValue|
 
 ### <a name="searchalterationtype-values"></a>searchAlterationType values
@@ -1780,7 +1780,7 @@ Valores possíveis para tipos de conta de usuário (associação ao grupo), por 
 | Nenhuma   | 0     |
 | Adicionar    | 1     |
 | Atualizar | 2     |
-| Excluir | 4      |
+| Delete | 4      |
 
 ### <a name="chatmessagetype-values"></a>valores chatMessageType
 
@@ -2154,20 +2154,6 @@ Valores possíveis para tipos de conta de usuário (associação ao grupo), por 
 | proposta              | 1     | As organizações conectadas que são criadas automaticamente pelo sistema têm esse valor de estado. Eles não são incluídos em políticas de atribuição com o tipo de escopo do `AllConfiguredConnectedOrganizationSubjects` solicitante.   |
 | unknownFutureValue    | 2     | Um membro do sentinel.                                                                                                                                                                                                 |
 
-### <a name="identitysourcetype-values"></a>valores identitySourceType
-
-|Member|
-|:---|
-|azureActiveDirectory|
-|external|
-
-### <a name="externalgroupmembertype-values"></a>valores externalGroupMemberType
-
-|Member|
-|:---|
-|usuário|
-|group|
-
 ### <a name="identityuserflowattributedatatype-values"></a>identityUserFlowAttributeDataType values
 
 | Membro                | Valor | Descrição                         |
@@ -2187,15 +2173,6 @@ Valores possíveis para tipos de conta de usuário (associação ao grupo), por 
 | custom                | 2     | Esse tipo de atributo de fluxo de usuário indica que ele foi criado pelo usuário   |
 |obrigatório|3||
 | unknownFutureValue    | 4      | Um membro do sentinel.                                                 |
-
-### <a name="connectionstate-values"></a>valores connectionState
-
-|Member|
-|:---|
-|draft|
-|ready|
-|obsoleto|
-|limitExceeded|
 
 ### <a name="permissionclassificationtype-values"></a>valores permissionClassificationType
 
@@ -2457,7 +2434,7 @@ Valores possíveis para tipos de conta de usuário (associação ao grupo), por 
 |Member|
 |:---|
 |equipe|
-|canal|
+|channel|
 |chat|
 |unknownFutureValue|
 
