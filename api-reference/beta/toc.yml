@@ -519,7 +519,7 @@ items:
         items:
           - name: Visão Geral
             href: resources/groups-overview.md
-          - name: Grupo
+          - name: Group
             href: resources/group.md
             items:
               - name: Listar grupos
@@ -1642,7 +1642,7 @@ items:
                     href: api/projectrome-put-historyitem.md
                   - name: Excluir um item do histórico
                     href: api/projectrome-delete-historyitem.md
-      - name: Reserva de clientes (prévia)
+      - name: Reserva de clientes (visualização)
         displayName: 'Bookings, Microsoft Bookings'
         items:
           - name: Visão Geral
@@ -13174,68 +13174,62 @@ items:
                 href: resources/searchresponse.md
               - name: Dados de consulta
                 href: api/search-query.md
-          - name: Índice (visualização)
+          - name: Index
             items:
               - name: Visão Geral
                 href: resources/indexing-api-overview.md
               - name: Conexão externa
                 items:
                   - name: Conexão externa
-                    href: resources/externalconnection.md
+                    href: resources/externalconnectors-externalconnection.md
                   - name: Listar conexões externas
-                    href: api/externalconnection-list.md
-                  - name: Obter conexão externa
-                    href: api/externalconnection-get.md
+                    href: api/externalconnectors-externalconnection-list.md
                   - name: Criar conexão externa
-                    href: api/external-post-connections.md
+                    href: api/externalconnectors-external-post-connections.md
+                  - name: Obter conexão externa
+                    href: api/externalconnectors-externalconnection-get.md
                   - name: Atualizar conexão externa
-                    href: api/externalconnection-update.md
+                    href: api/externalconnectors-externalconnection-update.md
                   - name: Excluir conexão externa
-                    href: api/externalconnection-delete.md
-                  - name: Criar esquema
-                    href: api/externalconnection-post-schema.md
+                    href: api/externalconnectors-externalconnection-delete.md
                   - name: Obter operação
-                    href: api/connectionoperation-get.md
-                  - name: Criar item externo
-                    href: api/externalconnection-put-items.md
+                    href: api/externalconnectors-connectionoperation-get.md
               - name: Esquema
                 items:
                   - name: Esquema
-                    href: resources/schema.md
-                  - name: Obter esquema
-                    href: api/schema-get.md
+                    href: resources/externalconnectors-schema.md
                   - name: Criar esquema
-                    href: api/externalconnection-post-schema.md
+                    href: api/externalconnectors-externalconnection-post-schema.md
+                  - name: Obter esquema
+                    href: api/externalconnectors-schema-get.md
               - name: Item externo
                 items:
                   - name: Item externo
-                    href: resources/externalitem.md
-                  - name: Criar
-                    href: api/externalconnection-put-items.md
-                  - name: Obter
-                    href: api/externalitem-get.md
-                  - name: Atualizar
-                    href: api/externalitem-update.md
-                  - name: Excluir
-                    href: api/externalitem-delete.md
+                    href: resources/externalconnectors-externalitem.md
+                  - name: Criar item externo
+                    href: api/externalconnectors-externalconnection-put-items.md
+                  - name: Obter item externo
+                    href: api/externalconnectors-externalitem-get.md
+                  - name: Atualizar item externo
+                    href: api/externalconnectors-externalitem-update.md
+                  - name: Excluir item externo
+                    href: api/externalconnectors-externalitem-delete.md
               - name: Grupo externo
                 items:
                   - name: Grupo externo
-                    href: resources/externalgroup.md
-                  - name: Criar
-                    href: api/externalconnection-post-groups.md
-                  - name: Excluir
-                    href: api/externalgroup-delete.md
-                  - name: Criar membros
-                    href: api/externalgroup-post-members.md
+                    href: resources/externalconnectors-externalgroup.md
+                  - name: Criar grupo externo
+                    href: api/externalconnectors-externalconnection-post-groups.md
+                  - name: Excluir grupo externo
+                    href: api/externalconnectors-externalgroup-delete.md
               - name: Membro do grupo externo
                 items:
                   - name: Membro do grupo externo
-                    href: resources/externalgroupmember.md
-                  - name: Criar
-                    href: api/externalgroup-post-members.md
-                  - name: Excluir
-                    href: api/externalgroupmember-delete.md
+                    href: resources/externalconnectors-externalgroupmember.md
+                  - name: Criar membro de grupo externo
+                    href: api/externalconnectors-externalgroup-post-members.md
+                  - name: Excluir membro do grupo externo
+                    href: api/externalconnectors-externalgroupmember-delete.md
       - name: Segurança
         displayname: 'Security API, Microsoft Graph Security API'
         items:
@@ -13529,7 +13523,7 @@ items:
                     href: api/termstore-store-get.md
                   - name: Atualizar
                     href: api/termstore-store-update.md
-              - name: Grupo
+              - name: Group
                 href: resources/termstore-group.md
                 items:
                   - name: Criar
@@ -13580,7 +13574,7 @@ items:
         items:
           - name: Visão Geral
             href: resources/planner-overview.md
-          - name: Plano
+          - name: Planejar
             href: resources/plannerplan.md
             items:
               - name: Listar os planos do grupo
