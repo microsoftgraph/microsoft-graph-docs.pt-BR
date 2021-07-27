@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: resourcePageType
 ms.prod: identity-and-sign-in
 author: namkedia
-ms.openlocfilehash: 71c6d58e9ad70773df39adc7d2a91393d64cd460
-ms.sourcegitcommit: c7776e5659c391e7c9ce1cd46e242a5ddc38dba2
+ms.openlocfilehash: a2cb3323314e486c6adb6d0dec29c9e0b36bac37
+ms.sourcegitcommit: 10d9f4c2cee192bd80984d48cabba63b47c54551
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51491045"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "53581013"
 ---
 # <a name="identityproviderbase-resource-type"></a>Tipo de recurso identityProviderBase
 Namespace: microsoft.graph
@@ -30,7 +30,7 @@ Representa provedores de identidade com [Identidades externas](/azure/active-dir
 
 |Propriedade|Tipo|Descrição|
 |:---------------|:--------|:----------|
-|id|Cadeia de caracteres|O ID do provedor de identidade.|
+|id|Cadeia de caracteres|O identificador do provedor de identidade.|
 |displayName|Cadeia de caracteres|O nome de exibição exclusivo do provedor de identidade.|
 
 ## <a name="json-representation"></a>Representação JSON

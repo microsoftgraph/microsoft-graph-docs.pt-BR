@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: e5143135f121964ff8724790f4ccf7b0bd001ceb
-ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
+ms.openlocfilehash: f60fd34dd06a328aa43f04bafd3ad091abccc539
+ms.sourcegitcommit: 5bb981b4853663354a566d4a4a5cbf288939e441
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44681988"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "53581448"
 ---
 ```csharp
 
@@ -25,9 +25,12 @@ var sitePage = new SitePage
         new WebPart
         {
             Type = "rte",
-            AdditionalData = new Dictionary<string, object>()
+            Data = new SitePageData
             {
-                {"innerHTML", "<p>Here are the team's upcoming events:</p>"}
+                AdditionalData = new Dictionary<string, object>()
+                {
+                    {"innerHTML", "<p>Here are the team's upcoming events:</p>"}
+                }
             }
         },
         new WebPart

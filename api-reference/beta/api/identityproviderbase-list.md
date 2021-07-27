@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: namkedia
 ms.prod: identity-and-sign-in
-ms.openlocfilehash: 47e136bc63cd7b95bdcf3778047eb77db58c8de0
-ms.sourcegitcommit: 32c83957ee69f21a10cd5f759adb884ce4b41c52
+ms.openlocfilehash: 2f7f8fd855ad406d5422806c1e6ef1bc6649a78b
+ms.sourcegitcommit: 5bb981b4853663354a566d4a4a5cbf288939e441
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51921375"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "53579222"
 ---
 # <a name="list-identityproviders"></a>Lista identityProviders
 Namespace: microsoft.graph
@@ -23,7 +23,7 @@ Para um locatário do Azure AD, ele pode ser [socialIdentityProviders](../resour
 
 Para um locatário do Azure AD B2C, pode ser [socialIdentityProviders,](../resources/socialidentityprovider.md) [objetos openIdConnectIdentityProviders](../resources/openidconnectidentityprovider.md) e/ou [appleIdentityProvider.](../resources/appleidentityprovider.md)
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -31,7 +31,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegada (conta corporativa ou de estudante)|IdentityProvider.Read.All, IdentityProvider.ReadWrite.All|
 |Delegada (conta pessoal da Microsoft)| Sem suporte.|
-|Application|IdentityProvider.Read.All, IdentityProvider.ReadWrite.All|
+|Aplicativo|IdentityProvider.Read.All, IdentityProvider.ReadWrite.All|
 
 A conta de trabalho ou de estudante precisa pertencer a uma das seguintes funções:
 
@@ -63,11 +63,11 @@ Se tiver êxito, este método retornará um código de resposta e uma coleção 
 
 Para um locatário do Azure AD B2C, este método retorna um código de resposta e uma coleção de objetos `200 OK` [socialIdentityProvider](../resources/socialidentityprovider.md), [openIdConnectIdentityProvider](../resources/openidconnectidentityprovider.md) e/ou [appleIdentityProvider](../resources/appleidentityprovider.md) no corpo da resposta.
 
-## <a name="example"></a>Exemplo
+## <a name="examples"></a>Exemplos
 
 ### <a name="example-1-list-all-identityprovider-configured-in-an-azure-ad-tenant"></a>Exemplo 1: listar **toda a identidadeProvider** configurada em um locatário do Azure AD
 
-### <a name="request"></a>Solicitação
+#### <a name="request"></a>Solicitação
 Este é um exemplo de solicitação.
 
 
@@ -100,7 +100,7 @@ GET https://graph.microsoft.com/beta/identity/identityProviders
 ---
 
 
-### <a name="response"></a>Resposta
+#### <a name="response"></a>Resposta
 Este é um exemplo de resposta.
 
 **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
@@ -139,7 +139,7 @@ Content-Type: application/json
 
 ### <a name="example-2-list-all-identityprovider-configured-in-an-azure-ad-b2c-tenant"></a>Exemplo 2: listar **toda a identidadeProvider** configurada em um locatário do Azure AD B2C
 
-### <a name="request"></a>Solicitação
+#### <a name="request"></a>Solicitação
 Este é um exemplo de solicitação.
 
 <!-- {
@@ -152,7 +152,7 @@ Este é um exemplo de solicitação.
 GET https://graph.microsoft.com/beta/identity/identityProviders
 ```
 
-### <a name="response"></a>Resposta
+#### <a name="response"></a>Resposta
 Este é um exemplo de resposta.
 
 **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.

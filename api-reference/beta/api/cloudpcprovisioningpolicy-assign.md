@@ -1,16 +1,16 @@
 ---
 title: 'cloudPcProvisioningPolicy: assign'
-description: Atribua a política de provisionamento do computador na nuvem ao seu grupo.
+description: Atribua a política de provisionamento do Cloud PC ao seu grupo.
 author: AshleyYangSZ
 localization_priority: Normal
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 46d9877b8a17056aee84f1216c4f38227bdc097c
-ms.sourcegitcommit: 9ac6bbab3df22e7629cf2bde796b527337c680aa
+ms.openlocfilehash: 3dc0382bc32b459fa07abd5a763c6e62d4fd60ea
+ms.sourcegitcommit: a598c09b73e4e43eea5f4aaefea7ffe062e15c39
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53082192"
+ms.lasthandoff: 07/22/2021
+ms.locfileid: "53533952"
 ---
 # <a name="cloudpcprovisioningpolicy-assign"></a>cloudPcProvisioningPolicy: assign
 
@@ -30,7 +30,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|CloudPC.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|CloudPC.ReadWrite.All|
+|Application|CloudPC.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -56,7 +56,7 @@ No corpo da solicitação, fornece uma representação JSON do [objeto cloudPcPr
 
 |Parâmetro|Tipo|Descrição|
 |:---|:---|:---|
-|assignments|[coleção cloudPcProvisioningPolicyAssignment](../resources/cloudpcprovisioningpolicyassignment.md) | A coleção de recursos de política de provisionamento de computadores na nuvem a serem atribuídos ao grupo de destino correspondente. Atualmente, Microsoft 365 grupos de segurança e grupos de segurança no Azure AD são suportados. |
+|assignments|[coleção cloudPcProvisioningPolicyAssignment](../resources/cloudpcprovisioningpolicyassignment.md) | A coleção de recursos de política de provisionamento do Cloud PC a serem atribuídos ao grupo de destino correspondente. Atualmente, Microsoft 365 grupos de segurança e grupos de segurança no Azure AD são suportados. |
 
 ## <a name="response"></a>Resposta
 

@@ -2,16 +2,16 @@
 author: rahmit
 description: Criar um novo sitePage na lista de páginas do site em um site.
 ms.date: 05/07/2018
-title: Criar uma nova página em um site do SharePoint
+title: Criar uma nova página em um SharePoint site
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: cc9b7a997602252aa58f94178b30fa719bc9ee11
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: 3094f5f42a56b5666c9aa0108de1840277ea876a
+ms.sourcegitcommit: a598c09b73e4e43eea5f4aaefea7ffe062e15c39
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50475748"
+ms.lasthandoff: 07/22/2021
+ms.locfileid: "53534162"
 ---
 # <a name="create-a-page-in-the-site-pages-list-of-a-site"></a>Criar uma página na lista de páginas do site de um site
 
@@ -65,7 +65,9 @@ Content-Type: application/json
     "webParts": [
         {
             "type": "rte",
-            "innerHTML": "<p>Here are the team's upcoming events:</p>"
+            "data": {
+                "innerHTML": "<p>Here are the team's upcoming events:</p>"
+            }
         },
         {
             "type": "d1d91016-032f-456d-98a4-721247c305e8",

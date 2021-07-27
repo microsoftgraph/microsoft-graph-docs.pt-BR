@@ -5,12 +5,12 @@ author: AshleyYangSZ
 localization_priority: Normal
 ms.prod: cloud-pc
 doc_type: resourcePageType
-ms.openlocfilehash: 232ad6a8de6634f028ec59080114110c902ce184
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 57d708c870339a98cc3fff1322968642ba62f4a1
+ms.sourcegitcommit: a598c09b73e4e43eea5f4aaefea7ffe062e15c39
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52787496"
+ms.lasthandoff: 07/22/2021
+ms.locfileid: "53534471"
 ---
 # <a name="cloudpc-resource-type"></a>Tipo de recurso cloudPC
 
@@ -28,25 +28,25 @@ Representa uma área de trabalho virtual gerenciada pela nuvem.
 |:---|:---|:---|
 |[Listar cloudPCs](../api/virtualendpoint-list-cloudpcs.md)|[Coleção cloudPC](../resources/cloudpc.md)|Listar propriedades e relações dos objetos [cloudPC.](../resources/cloudpc.md)|
 |[Obter cloudPC](../api/cloudpc-get.md)|[cloudPC](../resources/cloudpc.md)|Leia as propriedades e as relações de um [objeto cloudPC.](../resources/cloudpc.md)|
-|[Reprovision](../api/cloudpc-reprovision.md)|Nenhuma|Reprovisionar um [objeto cloudPC.](../resources/cloudpc.md)|
+|[Reprovision](../api/cloudpc-reprovision.md)|Nenhum|Reprovisionar um [objeto cloudPC.](../resources/cloudpc.md)|
 
 ## <a name="properties"></a>Propriedades
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Identificador exclusivo para o computador de nuvem. Somente leitura.|
+|id|String|Identificador exclusivo para o Cloud PC. Somente leitura.|
 |displayName|String|O nome de exibição do computador na nuvem.|
-|imageDisplayName|String|Nome da imagem do sistema operacional que está no computador de nuvem.|
-|managedDeviceId|String|A ID do dispositivo Intune do computador na nuvem.|
+|imageDisplayName|Cadeia de Caracteres|Nome da imagem do sistema operacional que está no cloud pc.|
+|managedDeviceId|Cadeia de Caracteres|A ID do dispositivo Intune do cloud pc.|
 |managedDeviceName|String|O nome do dispositivo Intune do computador na nuvem.|
-|provisioningPolicyId|String|ID da política de provisionamento do computador na nuvem.|
-|provisioningPolicyName|String|A política de provisionamento que é aplicada durante o provisionamento de PCs de nuvem.|
-|onPremisesConnectionName|String|A conexão local que é aplicada durante o provisionamento de PCs de nuvem.|
-|servicePlanId|String|ID do plano de serviço do computador na nuvem.|
-|servicePlanName|Cadeia de caracteres|O nome do plano de serviço do computador na nuvem.|
-|status|[cloudPcStatus](#cloudpcstatus-values)|Status do computador de nuvem. Os valores possíveis são: `notProvisioned`, `provisioning`, `provisioned`, `upgrading`, `inGracePeriod`, `deprovisioning`, `failed`.|
+|provisioningPolicyId|Cadeia de Caracteres|A ID da política de provisionamento do Cloud PC.|
+|provisioningPolicyName|Cadeia de Caracteres|A política de provisionamento aplicada durante o provisionamento de PCs na Nuvem.|
+|onPremisesConnectionName|Cadeia de Caracteres|A conexão local que é aplicada durante o provisionamento de PCs na Nuvem.|
+|servicePlanId|Cadeia de Caracteres|ID do plano de serviço do Cloud PC.|
+|servicePlanName|Cadeia de caracteres|O nome do plano de serviço do Computador na Nuvem.|
+|status|[cloudPcStatus](#cloudpcstatus-values)|Status do computador na nuvem. Os valores possíveis são: `notProvisioned`, `provisioning`, `provisioned`, `upgrading`, `inGracePeriod`, `deprovisioning`, `failed`.|
 |statusDetails|[cloudPcStatusDetails](../resources/cloudpcstatusdetails.md)|Os detalhes do status do computador na nuvem.|
-|userPrincipalName|String|O nome principal do usuário (UPN) do usuário atribuído ao computador de nuvem.|
+|userPrincipalName|String|O nome principal do usuário (UPN) do usuário atribuído ao Cloud PC.|
 |lastModifiedDateTime|DateTimeOffset|Data e hora da última modificação do computador na nuvem. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`.|
 |gracePeriodEndDateTime|DateTimeOffset|A data e a hora em que o período de carência termina e o reprovisionamento/desprovisionamento acontece. Obrigatório somente se o status for `inGracePeriod` . O timestamp é mostrado no formato ISO 8601 e tempo universal coordenado (UTC). Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`.|
 
@@ -55,12 +55,12 @@ Representa uma área de trabalho virtual gerenciada pela nuvem.
 |Member|Descrição|
 |:---|:---|
 |notProvisioned|O Cloud PC não foi provisionado.|
-|provisionamento|Cloud PC provisionamento está em andamento.|
+|provisionamento|O provisionamento do computador na nuvem está em andamento.|
 |provisionado|O Cloud PC é provisionado e pode ser acessado por usuários finais.|
-|atualização|Cloud PC resize está em andamento.|
+|atualização|O resize do Cloud PC está em andamento.|
 |inGracePeriod|O Cloud PC está no período de carência de uma semana antes de ser desprovisionado.|
 |desprovisionamento|O Cloud PC está desprovisionando.|
-|failed|A operação em Cloud PC falhou.|
+|failed|A operação no Cloud PC falhou.|
 
 ## <a name="relationships"></a>Relações
 

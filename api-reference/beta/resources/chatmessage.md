@@ -5,12 +5,12 @@ doc_type: resourcePageType
 localization_priority: Normal
 author: RamjotSingh
 ms.prod: microsoft-teams
-ms.openlocfilehash: 109a761f876018cbfce9d94da74e96724b01f17c
-ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
+ms.openlocfilehash: c3a1a0f8ce7fe1635a731a411525c9bcc47b8aad
+ms.sourcegitcommit: a598c09b73e4e43eea5f4aaefea7ffe062e15c39
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53207032"
+ms.lasthandoff: 07/22/2021
+ms.locfileid: "53533196"
 ---
 # <a name="chatmessage-resource-type"></a>Tipo de recurso chatMessage
 
@@ -55,26 +55,27 @@ Representa uma mensagem de bate-papo individual em um [canal](channel.md) ou [ba
 | Propriedade   | Tipo |Descrição|
 |:---------------|:--------|:----------|
 |id|String| Somente leitura. ID única da mensagem.|
-|replyToId| cadeia de caracteres | Somente leitura. ID da mensagem de chat pai ou da mensagem de chat raiz do thread. (Aplica-se apenas a mensagens de chat em canais, não chats.) |
+|replyToId| string | Somente leitura. ID da mensagem de chat pai ou da mensagem de chat raiz do thread. (Aplica-se apenas a mensagens de chat em canais, não chats.) |
 |from|[chatMessageFromIdentitySet](chatmessagefromidentityset.md)| Somente leitura. Detalhes do remetente da mensagem de chat.|
-|etag| cadeia de caracteres | Somente leitura. Número da versão da mensagem de chat. |
-|messageType|cadeia de caracteres|O tipo de mensagem de chat. O valor possível é: `message` .|
+|etag| string | Somente leitura. Número da versão da mensagem de chat. |
+|messageType|string|O tipo de mensagem de chat. Os valores possíveis são: `message`, `unknownFutureValue`, `systemEventMessage`.|
 |createdDateTime|dateTimeOffset|Timestamp de quando a mensagem de chat foi criada.|
 |lastModifiedDateTime|dateTimeOffset|Somente leitura. Timestamp quando a mensagem de chat é criada (configuração inicial) ou modificada, incluindo quando uma reação é adicionada ou removida. |
 |lastEditedDateTime|dateTimeOffset|Somente leitura. Timestamp quando as edições para a mensagem de chat foram feitas. Dispara um sinalizador "Editado" na interface Teams interface do usuário. Se nenhuma edição for feita, o valor será `null` .|
 |deletedDateTime|dateTimeOffset|Somente leitura. Timestamp no qual a mensagem de chat foi excluída ou nula se não for excluída. |
-|Assunto|cadeia de caracteres| O assunto da mensagem de chat, em texto sem formatção.|
+|Assunto|string| O assunto da mensagem de chat, em texto sem formatção.|
 |corpo|[itemBody](itembody.md)|Representação plaintext/HTML do conteúdo da mensagem de chat. A representação é especificada pelo contentType dentro do corpo. O conteúdo estará sempre em HTML se a mensagem de chat contiver [um chatMessageMention](chatmessagemention.md). |
-|summary|cadeia de caracteres| Texto de resumo da mensagem de chat que pode ser usada para notificações por push e exibições de resumo ou exibições de retorno. Aplica-se apenas a mensagens de chat de canal, não mensagens de chat em um chat. |
+|summary|string| Texto de resumo da mensagem de chat que pode ser usada para notificações por push e exibições de resumo ou exibições de retorno. Aplica-se apenas a mensagens de chat de canal, não mensagens de chat em um chat. |
 |attachments|[chatMessageAttachment](chatmessageattachment.md) collection |Arquivos anexos. No momento, os anexos são somente leitura, não há suporte para o envio de anexos. |
 |mentions|[chatMessageMention](chatmessagemention.md) collection| Lista de entidades mencionadas na mensagem de chat. Atualmente, dá suporte a usuário, bot, equipe, canal.|
-|importância|cadeia de caracteres | A importância da mensagem de chat. Os valores possíveis são: `normal`, `high`, `urgent`.|
+|importância|string | A importância da mensagem de chat. Os valores possíveis são: `normal`, `high`, `urgent`.|
 |reactions| [chatMessageReaction](chatmessagereaction.md) collection | Reações para essa mensagem de chat (por exemplo, Like).|
-|localidade|cadeia de caracteres|Localidade da mensagem de chat definida pelo cliente. Sempre definido para `en-us`.|
+|localidade|string|Localidade da mensagem de chat definida pelo cliente. Sempre definido para `en-us`.|
 |policyViolation | [chatMessagePolicyViolation](chatmessagepolicyviolation.md) |Define as propriedades de uma violação de política definida por um aplicativo de prevenção contra perda de dados (DLP).|
-|chatId|cadeia de caracteres|Se a mensagem foi enviada em um chat, representa a identidade do chat.|
+|chatId|string|Se a mensagem foi enviada em um chat, representa a identidade do chat.|
 |channelIdentity|[channelIdentity](channelidentity.md)|Se a mensagem foi enviada em um canal, representa a identidade do canal.|
 |webUrl|cadeia de caracteres|Somente leitura. Link para a mensagem em Microsoft Teams.|
+|eventDetail|[eventMessageDetail](../resources/eventmessagedetail.md)|Somente leitura.  Se presente, representa detalhes de um evento que aconteceu em um chat, um canal ou uma equipe, por exemplo, membros foram adicionados e assim por diante. Para mensagens de evento, a **propriedade messageType** será definida como `systemEventMessage` .|
 ## <a name="relationships"></a>Relações
 
 | Relação   | Tipo    | Descrição |
@@ -128,7 +129,10 @@ Veja a seguir uma representação JSON do recurso.
   "policyViolation": {"@odata.type": "microsoft.graph.chatMessagePolicyViolation"},
   "chatId": "string",
   "channelIdentity": {"@odata.type": "microsoft.graph.channelIdentity"},
-  "webUrl": "string"
+  "webUrl": "string",
+  "eventDetail": {
+    "@odata.type": "microsoft.graph.eventMessageDetail"
+  }
 }
 ```
 

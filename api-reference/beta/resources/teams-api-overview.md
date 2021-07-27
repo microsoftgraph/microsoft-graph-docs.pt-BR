@@ -5,12 +5,12 @@ localization_priority: Priority
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: conceptualPageType
-ms.openlocfilehash: 8eac2d77ffa5fa0f3be9a57e86fd4f490d66e583
-ms.sourcegitcommit: 456ec9510807d05623c0ed1dd049c9676f53f56b
+ms.openlocfilehash: a6911dddb813f69bca802a6e84ab4eae0a484ef9
+ms.sourcegitcommit: a598c09b73e4e43eea5f4aaefea7ffe062e15c39
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53059530"
+ms.lasthandoff: 07/22/2021
+ms.locfileid: "53534478"
 ---
 # <a name="use-the-microsoft-graph-api-to-work-with-microsoft-teams"></a>Usar o Microsoft Graph API para trabalhar com o Microsoft Teams
 
@@ -37,7 +37,7 @@ O Microsoft Teams é um espaço de trabalho baseado em chat no Microsoft 365 que
 |[timeOff](../resources/timeoff.md)| [Criar](../api/schedule-post-timesoff.md), [Listar](../api/schedule-list-timesoff.md), [Obter](../api/timeoff-get.md), [Substituir](../api/timeoff-put.md), [Excluir](../api/timeoff-delete.md) |
 |[timeOffReason](../resources/timeoffreason.md)| [Criar](../api/schedule-post-timeoffreasons.md), [Listar](../api/schedule-list-timeoffreasons.md), [Obter](../api/timeoffreason-get.md), [Substituir](../api/timeoffreason-put.md), [Excluir](../api/timeoffreason-delete.md) |
 |[marcar](../resources/teamworkTag.md)|[Listar](../api/teamworkTag-list.md), [Criar](../api/teamworkTag-post.md), [Obter](../api/teamworkTag-get.md), [Atualizar](../api/teamworkTag-update.md), [Excluir](../api/teamworkTag-delete.md)|
-|[tagMember](../resources/teamworkTagMember.md)|[Listar](../api/teamworkTagMember-list.md), [Obter](../api/teamworkTagMember-get.md), [Excluir](../api/teamworkTagMember-delete.md)|
+|[tagMember](../resources/teamworkTagMember.md)|[Lista](../api/teamworkTagMember-list.md), [Criar](../api/teamworkTagMember-post.md), [Obter](../api/teamworkTagMember-get.md), [Excluir](../api/teamworkTagMember-delete.md)|
 
 ## <a name="microsoft-teams-limits"></a>Limites do Microsoft Teams
 

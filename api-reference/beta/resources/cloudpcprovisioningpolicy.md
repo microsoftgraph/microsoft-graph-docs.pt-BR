@@ -5,12 +5,12 @@ author: AshleyYangSZ
 localization_priority: Normal
 ms.prod: cloud-pc
 doc_type: resourcePageType
-ms.openlocfilehash: b1f5a447c373e64b747fc77ec93c54d8adc09c60
-ms.sourcegitcommit: 9ac6bbab3df22e7629cf2bde796b527337c680aa
+ms.openlocfilehash: 928bc3159b1b87f54964f34b5cf42721605abebd
+ms.sourcegitcommit: a598c09b73e4e43eea5f4aaefea7ffe062e15c39
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53082073"
+ms.lasthandoff: 07/22/2021
+ms.locfileid: "53533910"
 ---
 # <a name="cloudpcprovisioningpolicy-resource-type"></a>Tipo de recurso cloudPcProvisioningPolicy
 
@@ -37,13 +37,13 @@ Representa uma política de provisionamento de computador na nuvem.
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Identificador exclusivo para a política de provisionamento de computador na nuvem. Somente leitura.|
+|id|String|Identificador exclusivo para a política de provisionamento do Cloud PC. Somente leitura.|
 |displayName|String|O nome de exibição da política de provisionamento.|
 |description|String|A descrição da política de provisionamento.|
-|onPremisesConnectionId|String|A ID do cloudPcOnPremisesConnection. Para garantir que os computadores de nuvem tenham conectividade de rede e que eles participem do domínio, escolha uma conexão com uma rede virtual validada pelo serviço de computador na nuvem.|
-|imageId|String|A ID da imagem do sistema operacional que você deseja provisionar em PCs de nuvem. O formato de uma imagem de tipo de galeria é: {publisher_offer_sku}.|
-|imageDisplayName|String|O nome de exibição da imagem do sistema operacional que você está provisionando.|
-|imageType|cloudPcProvisioningPolicyImageType|O tipo de imagem do sistema operacional (personalizado ou galeria) que você deseja provisionar em PCs de nuvem. Os valores possíveis são: `gallery`, `custom`.|
+|onPremisesConnectionId|Cadeia de Caracteres|A ID do cloudPcOnPremisesConnection. Para garantir que os computadores na nuvem tenham conectividade de rede e que eles participem do domínio, escolha uma conexão com uma rede virtual validada pelo serviço de Computador na Nuvem.|
+|imageId|Cadeia de Caracteres|A ID da imagem do sistema operacional que você deseja provisionar em PCs na Nuvem. O formato de uma imagem de tipo de galeria é: {publisher_offer_sku}.|
+|imageDisplayName|Cadeia de Caracteres|O nome de exibição da imagem do sistema operacional que você está provisionando.|
+|imageType|cloudPcProvisioningPolicyImageType|O tipo de imagem do sistema operacional (personalizada ou galeria) que você deseja provisionar em PCs na Nuvem. Os valores possíveis são: `gallery`, `custom`.|
 
 ## <a name="relationships"></a>Relações
 

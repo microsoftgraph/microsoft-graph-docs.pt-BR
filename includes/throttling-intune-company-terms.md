@@ -3,21 +3,21 @@ author: davidmu1
 localization_priority: Priority
 ms.prod: msgraph
 ms.topic: include
-ms.openlocfilehash: eb15a91a96fd14dbbca2d4175cb2b4362d6b4f4d
-ms.sourcegitcommit: bbff139eea483faaa2d1dd08af39314f35ef48ce
+ms.openlocfilehash: 8b07ef8b6be337f968ffd12ab499864013ef81d4
+ms.sourcegitcommit: 10d9f4c2cee192bd80984d48cabba63b47c54551
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/08/2020
-ms.locfileid: "46597976"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53578916"
 ---
 <!-- markdownlint-disable MD041 -->
 <!-- this file is auto-generated don't edit it manually! -->
 #### <a name="intune-company-terms-service-limits"></a>Limites do serviço de termos da empresa do Intune
 
 | Tipo de solicitação | Limitar por locatário para todos os aplicativos | Limitar por aplicativo por locatário |
-| ------------ | ------- | ------- |
-| POST, PUT, DELETE, PATCH | 200 solicitações por 20 segundos | 100 solicitações por 20 segundos |
+| ------------ | ----------------------------- | ------------------------ |
+| POST, PUT, DELATE, PATCH | 200 solicitações por 20 segundos | 100 solicitações por 20 segundos |
 | Qualquer | 2000 solicitações por 20 segundos | 1000 solicitações por 20 segundos |
 
 Os limites anteriores se aplicam aos seguintes recursos:  
-termsAndConditions, termsAndConditionsAcceptanceStatus, termsAndConditionsAssignment.
+termsAndConditions, termsAndConditionsAcceptanceStatus, termsAndConditionsAssignment, termsAndConditionsGroupAssignment.

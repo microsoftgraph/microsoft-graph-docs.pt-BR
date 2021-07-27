@@ -5,21 +5,21 @@ localization_priority: Priority
 doc_type: conceptualPageType
 ms.prod: non-product-specific
 author: angelgolfer-ms
-ms.openlocfilehash: 168be22ffe2cfa9884fc0e0e57f18c0282c86d95
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 78cfd8f03e663feffd0114d27bd1977fa49f4fdb
+ms.sourcegitcommit: a598c09b73e4e43eea5f4aaefea7ffe062e15c39
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49217267"
+ms.lasthandoff: 07/22/2021
+ms.locfileid: "53533790"
 ---
 # <a name="microsoft-graph-beta-endpoint-reference"></a>Referência do terminal beta do Microsoft Graph
 
-O conteúdo de referência nesta seção documenta o ponto de extremidade beta do Microsoft Graph. O ponto de extremidade beta inclui APIs que estão atualmente em visualização e ainda não estão geralmente disponíveis. Convidamos você a experimentar essas APIs e fornecer seus comentários pelos seguintes canais:
+O conteúdo de referência nesta seção documenta o ponto de extremidade beta do Microsoft Graph. O ponto da extremidade beta inclui APIs que estão atualmente em versão prévia e que ainda não estão geralmente disponíveis. Convidamos você a experimentar essas APIs e fornecer seus comentários pelos seguintes canais:
 
 - [GitHub](https://github.com/OfficeDev/microsoft-graph-docs/issues) - Para comentários sobre as APIs de Visualização. Marque com `beta`.
 - [StackOverflow](https://stackoverflow.com/questions/tagged/microsoft-graph-api) - Para dúvidas ou ajuda com o seu código. Marque com `microsoft-graph-api`.
 
-> **Observação:** As APIs no ponto de extremidade beta estão sujeitas a mudanças. Não recomendamos que você as use em seus aplicativos de produção. 
+> **Nota:** As APIs no ponto final beta estão sujeitas a alterações. Não recomendamos que as utilize nas suas aplicações de produção. 
 
 ## <a name="call-the-beta-endpoint"></a>Ligue para o ponto final beta
 

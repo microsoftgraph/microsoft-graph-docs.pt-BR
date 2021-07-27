@@ -5,12 +5,12 @@ description: Obter uma lista dos logins do usuário em um Azure Active Directory
 localization_priority: Normal
 author: besiler
 ms.prod: identity-and-access-reports
-ms.openlocfilehash: c85788d7ee1023e8f21097561105d7715f2074cd
-ms.sourcegitcommit: 8a9be6f65f62f29973508d82e0348d4142c18f23
+ms.openlocfilehash: 010ebe7d1d415c9e40613114874157884239be3e
+ms.sourcegitcommit: 5bb981b4853663354a566d4a4a5cbf288939e441
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "53129486"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "53579635"
 ---
 # <a name="list-signins"></a>Listar logons
 
@@ -26,19 +26,19 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão | Permissões (da com menos para a com mais privilégios) |
 |:--------------- |:------------------------------------------- |
-| Delegado (conta corporativa ou de estudante) | AuditLog.Read.All, Directory.Read.All |
+| Delegada (conta corporativa ou de estudante) | AuditLog.Read.All e Directory.Read.All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte |
-| Aplicativo | AuditLog.Read.All, Directory.Read.All | 
+| Aplicativo | AuditLog.Read.All e Directory.Read.All | 
 
 Os aplicativos devem [estar registrados corretamente](/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal) no Azure AD.
 
 Além das permissões delegadas, o usuário inscreveu precisa pertencer a uma das seguintes funções de diretório que permitem ler relatórios de logons. Para saber mais sobre funções de diretório, consulte Funções do [Azure AD integrados](/azure/active-directory/roles/permissions-reference):
 + Administrador global
-+ Leitor global
++ Leitor Global
 + Leitor de Relatórios
 + Administrador de Segurança
-+ Operador de segurança
-+ Leitor de segurança
++ Operador de Segurança
++ Leitor de Segurança
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->

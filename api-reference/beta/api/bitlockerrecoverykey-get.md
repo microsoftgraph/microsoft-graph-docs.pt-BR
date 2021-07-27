@@ -5,12 +5,12 @@ author: hafowler
 localization_priority: Normal
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 503d165d1d7c1a997c9e39f728a833a0dc422d68
-ms.sourcegitcommit: 2a35434fabc76672e21bfc3ed5a1d28f9f3b66bc
+ms.openlocfilehash: 8ec6a6dda75c1d2c2c597afa8cd677701c8fa21b
+ms.sourcegitcommit: a598c09b73e4e43eea5f4aaefea7ffe062e15c39
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52241083"
+ms.lasthandoff: 07/22/2021
+ms.locfileid: "53533238"
 ---
 # <a name="get-bitlockerrecoverykey"></a>Obter bitlockerRecoveryKey
 Namespace: microsoft.graph
@@ -26,21 +26,21 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|BitLockerKey.ReadBasic.All, BitLockerKey.Read.All|
+|Delegado (conta corporativa ou de estudante)|BitLockerKey.ReadBasic.All, BitLockerKey.Read.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte|
 |Aplicativo|Sem suporte|
 
->**Observação:** Para permissões delegadas para permitir que os aplicativos recebam recursos bitLockerRecoveryKey em nome do usuário conectado, o administrador do  locatário deve ter atribuído ao usuário uma das seguintes funções ou o usuário deve ser o proprietário registrado do dispositivo do qual a chave BitLocker foi originalmente backup: 
+>**Observação:** Para permissões delegadas permitirem que os aplicativos recebam recursos bitLockerRecoveryKey em nome do usuário conectado, o administrador de locatários deve ter atribuído ao usuário uma das seguintes funções ou o usuário deve ser o proprietário registrado do dispositivo do qual a chave BitLocker foi originalmente backup:  
 * Administrador global
 * Administrador de dispositivos de nuvem
-* Administrador da assistência técnica
+* Administrador do Helpdesk
 * Administrador de Serviço do Intune
 * Administrador de segurança
 * Leitor de segurança
 * Leitor global
 
 ## <a name="http-request"></a>Solicitação HTTP
-Para obter a chave BitLocker chave especificada sem retornar a **propriedade key:**
+Para obter a chave BitLocker especificada sem retornar a **propriedade key:**
 <!-- {
   "blockType": "ignored"
 }
@@ -49,7 +49,7 @@ Para obter a chave BitLocker chave especificada sem retornar a **propriedade key
 GET /informationProtection/bitlocker/recoveryKeys/'{bitlockeryRecoveryKeyId}'
 ```
 
-Para obter a chave BitLocker, incluindo sua **propriedade chave:**
+Para obter a chave BitLocker especificada, incluindo sua **propriedade chave:**
 <!-- {
   "blockType": "ignored"
 }
@@ -65,8 +65,8 @@ Este método dá suporte ao `$select` parâmetro de consulta OData para retornar
 |Nome|Descrição|
 |:---|:---|
 |Autorização|{token} de portador. Obrigatório.|
-|ocp-client-name|Nome do aplicativo cliente que executa a chamada da API. Obrigatório.|
-|ocp-client-version|Versão do aplicativo cliente executando a chamada da API. Obrigatório.|
+|ocp-client-name|O nome do aplicativo cliente que executa a chamada da API. Esse header é usado para fins de depuração. Opcional.|
+|ocp-client-version|A versão do aplicativo cliente que executa a chamada da API. Esse header é usado para fins de depuração. Opcional.|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.
@@ -78,7 +78,7 @@ Se tiver êxito, este método retornará um código de resposta e um `200 OK` [o
 ## <a name="examples"></a>Exemplos
 
 ### <a name="example-1"></a>Exemplo 1
-Obter a BitLocker tecla especificando a **id da chave**. Este exemplo não retorna a **propriedade key.**
+Obter a chave BitLocker especificando a **id da chave**. Este exemplo não retorna a **propriedade key.**
 
 #### <a name="request"></a>Solicitação
 Este é um exemplo de solicitação.
@@ -141,7 +141,7 @@ Content-type: application/json
 ```
 
 ### <a name="example-2"></a>Exemplo 2
-Obter a BitLocker chave com a propriedade **key** especificando a **id da chave**.
+Obter a chave BitLocker com a **propriedade key** especificando a **id da chave**.
 
 #### <a name="request"></a>Solicitação
 Este é um exemplo de solicitação.

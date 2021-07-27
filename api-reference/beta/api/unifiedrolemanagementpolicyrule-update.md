@@ -5,12 +5,12 @@ author: shauliu
 localization_priority: Normal
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 4d70b105f3516547c851e8be21be18b15009439a
-ms.sourcegitcommit: ae83b2b372902268517fd17a8b10d6d9add422af
+ms.openlocfilehash: 8a148db163811771ea9c06ac64a5b10c7a516816
+ms.sourcegitcommit: 5bb981b4853663354a566d4a4a5cbf288939e441
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "53334693"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "53579684"
 ---
 # <a name="update-unifiedrolemanagementpolicyrule"></a>Atualizar unifiedRoleManagementPolicyRule
 Namespace: microsoft.graph
@@ -22,7 +22,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|RoleManagementPolicy.ReadWrite.Directory, RoleManagement.ReadWrite.Directory|
+|Delegada (conta corporativa ou de estudante)|RoleManagementPolicy.ReadWrite.Directory, RoleManagement.ReadWrite.Directory|
 |Delegado (conta pessoal da Microsoft)|Sem suporte|
 |Aplicativo|Sem suporte|
 
@@ -72,10 +72,9 @@ Se tiver êxito, este método retornará um código de resposta e um objeto `200
 ``` http
 PATCH https://graph.microsoft.com/beta/policies/roleManagementPolicies/{unifiedRoleManagementPolicyId}/rules/{unifiedRoleManagementPolicyRuleId}
 Content-Type: application/json
-Content-length: 170
 
 {
-  "@odata.type": "#microsoft.graph.unifiedRoleManagementPolicyRule",
+  "@odata.type": "#microsoft.graph.unifiedRoleManagementPolicyApprovalRule",
   "target": {
     "@odata.type": "microsoft.graph.unifiedRoleManagementPolicyRuleTarget"
   }

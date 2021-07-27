@@ -3,21 +3,21 @@ author: davidmu1
 localization_priority: Priority
 ms.prod: msgraph
 ms.topic: include
-ms.openlocfilehash: 8a7c711caa0820d2aa2e88d604d6c0abb434abd8
-ms.sourcegitcommit: bbff139eea483faaa2d1dd08af39314f35ef48ce
+ms.openlocfilehash: 8f9cfd24fb14eeaa996fbd73e1b0c437a81487fb
+ms.sourcegitcommit: 10d9f4c2cee192bd80984d48cabba63b47c54551
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/08/2020
-ms.locfileid: "46597978"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53578915"
 ---
 <!-- markdownlint-disable MD041 -->
 <!-- this file is auto-generated don't edit it manually! -->
 #### <a name="intune-applications-service-limits"></a>Limites de serviços para aplicações do Intune
 
 | Tipo de solicitação | Limitar por locatário para todos os aplicativos | Limitar por aplicativo por locatário |
-| ------------ | ------- | ------- |
-| POST, PUT, DELETE, PATCH | 200 solicitações por 20 segundos | 100 solicitações por 20 segundos |
+| ------------ | ----------------------------- | ------------------------ |
+| POST, PUT, DELATE, PATCH | 200 solicitações por 20 segundos | 100 solicitações por 20 segundos |
 | Qualquer | 2000 solicitações por 20 segundos | 1000 solicitações por 20 segundos |
 
 Os limites anteriores se aplicam aos seguintes recursos:  
-iosMobileAppConfiguration, managedDeviceMobileAppConfiguration, managedDeviceMobileAppConfigurationAssignment, managedDeviceMobileAppConfigurationDeviceStatus, managedDeviceMobileAppConfigurationDeviceSummary, managedDeviceMobileAppConfigurationUserStatus, managedDeviceMobileAppConfigurationUserSummary, mobileApp, mobileAppAssignment, mobileAppCategory, mobileAppContent, mobileAppContentFile.
+androidForWorkApp, androidForWorkMobileAppConfiguration, androidLobApp, androidManagedStoreApp, androidManagedStoreAppConfiguration, androidManagedStoreWebApp, androidStoreApp, enterpriseCodeSigningCertificate, iosLobApp, iosLobAppProvisioningConfiguration, iosLobAppProvisioningConfigurationAssignment, iosMobileAppConfiguration, iosStoreApp, iosVppApp, iosVppAppAssignedDeviceLicense, iosVppAppAssignedLicense, iosVppAppAssignedUserLicense, macOSLobApp, macOSMdatpApp, macOSMicrosoftEdgeApp, macOSOfficeSuiteApp, macOsVppApp, macOsVppAppAssignedLicense, managedAndroidLobApp, managedAndroidStoreApp, managedApp, managedDeviceMobileAppConfiguration, managedDeviceMobileAppConfigurationAssignment, managedDeviceMobileAppConfigurationDeviceStatus, managedDeviceMobileAppConfigurationDeviceSummary, managedDeviceMobileAppConfigurationUserStatus, managedDeviceMobileAppConfigurationUserSummary, managedIOSLobApp, managedIOSStoreApp, managedMobileLobApp, microsoftStoreForBusinessApp, microsoftStoreForBusinessContainedApp, mobileApp, mobileAppAssignment, mobileAppCategory, mobileAppContent, mobileAppContentFile, mobileAppDependency, mobileAppInstallStatus, mobileAppInstallSummary, mobileAppProvisioningConfigGroupAssignment, mobileAppRelationship, mobileAppSupersedence, mobileContainedApp, mobileLobApp, officeSuiteApp, symantecCodeSigningCertificate, userAppInstallStatus, webApp, win32LobApp, windowsAppX, windowsMicrosoftEdgeApp, windowsMobileMSI, windowsPhone81AppX, windowsPhone81AppXBundle, windowsPhone81StoreApp, windowsPhoneXAP, windowsStoreApp, windowsUniversalAppX, windowsUniversalAppXContainedApp.

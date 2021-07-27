@@ -5,12 +5,12 @@ localization_priority: Normal
 author: jesakowi
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 7560d9935a2cf35bcf67637ce2353932ba522d2b
-ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
+ms.openlocfilehash: 8fd70a3c84889862244437973cc6e4d6712beee2
+ms.sourcegitcommit: 5bb981b4853663354a566d4a4a5cbf288939e441
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50759913"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "53578818"
 ---
 # <a name="application-unsetverifiedpublisher"></a>application: unsetVerifiedPublisher
 
@@ -18,13 +18,13 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Desajuste [o verificadoPublisher](../resources/verifiedPublisher.md) definido anteriormente em um [aplicativo,](../resources/application.md)removendo todas as propriedades do editor verificadas. Para obter mais informações, consulte [Verificação do Publisher](/azure/active-directory/develop/publisher-verification-overview).
+Desajuste [o verificadoPublisher](../resources/verifiedPublisher.md) definido anteriormente em um [aplicativo,](../resources/application.md)removendo todas as propriedades do editor verificadas. Para obter mais informações, [consulte Publisher verificação](/azure/active-directory/develop/publisher-verification-overview).
 
 ## <a name="permissions"></a>Permissões
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Application.ReadWrite.All |
+|Delegada (conta corporativa ou de estudante) | Application.ReadWrite.All |
 |Delegado (conta pessoal da Microsoft) | Sem suporte |
 |Aplicativo | Sem suporte |
 
@@ -72,6 +72,14 @@ POST https://graph.microsoft.com/beta/applications/{id}/unsetVerifiedPublisher
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/application-unsetverifiedpublisher-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/application-unsetverifiedpublisher-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/application-unsetverifiedpublisher-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

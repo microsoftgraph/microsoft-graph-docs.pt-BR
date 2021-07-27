@@ -5,18 +5,19 @@ localization_priority: Priority
 doc_type: resourcePageType
 ms.prod: identity-and-sign-in
 author: namkedia
-ms.openlocfilehash: 11c793a01cd1b0027e12cd831984dc30cd04961c
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 95f452483e4ff1503208c9b4bbd67ceb6129df73
+ms.sourcegitcommit: c7776e5659c391e7c9ce1cd46e242a5ddc38dba2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50945659"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "53580776"
 ---
-# <a name="identityprovider-resource-type"></a>Tipo de recurso do identityProvider
-
+# <a name="identityprovider-resource-type-deprecated"></a>Tipo de recurso do identityProvider (preterido)
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [identityprovider-deprecate](../../includes/identityprovider-deprecate.md)]
 
 Representa provedores de identidade com [Identidades externas](/azure/active-directory/external-identities/) para locatário do Azure Active Directory e um locatário do Azure AD B2C.
 
@@ -28,8 +29,7 @@ Em um locatário do Azure Active Directory B2C, o tipo de provedor de identidade
 
 A configuração de um provedor de identidade no locatário do Azure AD B2C permite que os usuários se inscrevam e entrem usando uma conta social ou um provedor personalizado suportado pelo OpenID Connect em um aplicativo. Por exemplo, um aplicativo pode usar o Azure AD B2C para permitir que os usuários se inscrevam no serviço usando uma conta do Facebook ou o seu próprio provedor de identidade personalizado que esteja em conformidade com o protocolo OIDC.
 
-
-Se for um provedor de identidade personalizado do OpenID Connect `OpenIDConnect` como `type` será representado usando o tipo de recurso [openIdConnectProvider](../resources/openidconnectprovider.md),que herdará do tipo de recurso identityProvider. 
+Se for um provedor de identidade personalizado do OpenID Connect `OpenIDConnect` como `type` será representado usando o tipo de recurso [openIdConnectProvider](../resources/openidconnectprovider.md),que herdará do tipo de recurso identityProvider.
 
 ## <a name="methods"></a>Métodos
 
@@ -49,7 +49,7 @@ Se for um provedor de identidade personalizado do OpenID Connect `OpenIDConnect`
 |clientId|Cadeia de caracteres|A ID do cliente para o aplicativo obtido ao registrar o aplicativo no provedor de identidade. Esse é um campo obrigatório.  Obrigatório. Não anulável.|
 |clientSecret|Cadeia de caracteres|O segredo do cliente para o aplicativo obtido ao registrar o aplicativo no provedor de identidade. Isso é somente para gravar. Uma operação de leitura retornará `****`. Esse é um campo obrigatório. Obrigatório. Não anulável.|
 |id|Cadeia de caracteres|O ID do provedor de identidade.|
-|nome|Cadeia de caracteres|O nome de exibição exclusivo do provedor de identidade. Não anulável.|
+|nome|Cadeia de caracteres|O nome de exibição do provedor de identidade. Não anulável.|
 |tipo|Cadeia de caracteres|O tipo de provedor de identidade é um campo obrigatório. Para o cenário B2B:`Google`, `Facebook`. Para o cenário B2B: `Microsoft`, `Google`, `Amazon`, `LinkedIn`, `Facebook`, `GitHub`, `Twitter`, `Weibo`,`QQ`, `WeChat`, `OpenIDConnect`. Não anulável.|
 
 ### <a name="where-to-get-the-client-id-and-secret"></a>Como obter o ID e segredo do cliente

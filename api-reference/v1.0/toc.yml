@@ -254,7 +254,7 @@ items:
                 href: api/user-list-events.md
               - name: Modo de exibição de lembrete
                 href: api/user-reminderview.md
-          - name: Contatos
+          - name: Contacts
             href: resources/contact.md
             items:
               - name: Criar contato
@@ -1101,7 +1101,7 @@ items:
                 href: api/calendarpermission-update.md
               - name: Excluir
                 href: api/calendarpermission-delete.md
-          - name: Categorias
+          - name: Categories
             items:
               - name: Categoria
                 href: resources/outlookcategory.md
@@ -1236,9 +1236,9 @@ items:
                     href: resources/callrecords-callrecord.md
                   - name: Obter registro de chamada
                     href: api/callrecords-callrecord-get.md
-              - name: Session
+              - name: Sessão
                 items:
-                  - name: Session
+                  - name: Sessão
                     href: resources/callrecords-session.md
                   - name: Listar sessões
                     href: api/callrecords-session-list.md
@@ -4560,10 +4560,17 @@ items:
                         href: api/windowshelloforbusinessauthenticationmethod-get.md
                       - name: Excluir
                         href: api/windowshelloforbusinessauthenticationmethod-delete.md
-              - name: Política de método de autenticação
+              - name: Política de métodos de autenticação
                 items:
                   - name: Visão Geral
                     href: resources/authenticationmethodspolicies-overview.md
+                  - name: Política de método de autenticação
+                    href: resources/authenticationmethodspolicy.md
+                    items:
+                      - name: Obter
+                        href: api/authenticationmethodspolicy-get.md
+                      - name: Atualizar
+                        href: api/authenticationmethodspolicy-update.md
                   - name: Política FIDO2
                     href: resources/fido2authenticationmethodconfiguration.md
                     items:
@@ -4704,17 +4711,38 @@ items:
                       - name: Ignorar
                         href: api/riskyuser-dismiss.md
               - name: Provedor de identidade
-                href: resources/identityprovider.md
                 items:
-                  - name: Listar os provedores de identidade
+                  - name: Base do provedor de identidade
+                    href: resources/identityproviderbase.md
+                  - name: Provedor de identidade integrado
+                    href: resources/builtinidentityprovider.md
+                  - name: Provedor de identidade social
+                    href: resources/socialidentityprovider.md
+                  - name: Listar
+                    href: api/identityproviderbase-list.md
+                  - name: Criar
+                    href: api/identityproviderbase-post-identityproviders.md
+                  - name: Obter
+                    href: api/identityproviderbase-get.md
+                  - name: Atualizar
+                    href: api/identityproviderbase-update.md
+                  - name: Excluir
+                    href: api/identityproviderbase-delete.md
+                  - name: Listar os tipos de provedor disponíveis
+                    href: api/identityproviderbase-list-availableprovidertypes.md
+              - name: Provedor de identidade (preterido)
+                items:
+                  - name: Tipo de provedor de identidade
+                    href: resources/identityprovider.md
+                  - name: Listar
                     href: api/identityprovider-list.md
-                  - name: Criar o provedor de identidade
+                  - name: Criar
                     href: api/identityprovider-post-identityproviders.md
-                  - name: Obter o provedor de identidade
+                  - name: Obter
                     href: api/identityprovider-get.md
-                  - name: Atualizar provedor de identidade
+                  - name: Atualizar
                     href: api/identityprovider-update.md
-                  - name: Excluir o provedor de identidade
+                  - name: Excluir
                     href: api/identityprovider-delete.md
                   - name: Listar os tipos de provedor disponíveis
                     href: api/identityprovider-list-availableprovidertypes.md
@@ -4935,7 +4963,7 @@ items:
                         href: api/identityapiconnector-update.md
                       - name: Upload um certificado de cliente
                         href: api/identityapiconnector-uploadclientcertificate.md
-                      - name: Delete
+                      - name: Excluir
                         href: api/identityapiconnector-delete.md
           - name: Governança
             items:
@@ -4945,10 +4973,8 @@ items:
                   - name: Definição do agendamento de revisão do Access
                     href: resources/accessreviewscheduledefinition.md
                     items:
-                      - name: List
+                      - name: Listar
                         href: api/accessreviewscheduledefinition-list.md
-                      - name: Instâncias de lista
-                        href: api/accessreviewscheduledefinition-list-instances.md
                       - name: Obter
                         href: api/accessreviewscheduledefinition-get.md
                       - name: Criar

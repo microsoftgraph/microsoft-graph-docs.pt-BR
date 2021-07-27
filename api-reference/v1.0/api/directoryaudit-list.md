@@ -5,12 +5,12 @@ localization_priority: Normal
 author: SarahBar
 ms.prod: identity-and-access-reports
 doc_type: apiPageType
-ms.openlocfilehash: 73568bcd34e8b8b89b2550edc0c62498664dee0a
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 8105ba2dd072ce5ed540a1a44df59f27c05ea56d
+ms.sourcegitcommit: 5bb981b4853663354a566d4a4a5cbf288939e441
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52786289"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "53579215"
 ---
 # <a name="list-directoryaudits"></a>Lista directoryAudits
 
@@ -24,9 +24,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 | :------------------------------------- | :------------------------------------------ |
-| Delegado (conta corporativa ou de estudante)     | AuditLog.Read.All e Directory.Read.All    |
+| Delegada (conta corporativa ou de estudante)     | AuditLog.Read.All e Directory.Read.All    |
 | Delegado (conta pessoal da Microsoft) | Sem suporte                               |
-| Aplicativo                            | AuditLog.Read.All                           |
+| Aplicativo                            | AuditLog.Read.All e Directory.Read.All    |
 
 ## <a name="http-request"></a>Solicitação HTTP
 

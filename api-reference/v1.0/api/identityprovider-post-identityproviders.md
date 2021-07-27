@@ -2,19 +2,20 @@
 title: Criar identityProvider
 description: Criar um novo identityProvider
 localization_priority: Priority
-author: Nickgmicrosoft
+author: namkedia
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 1e5e0a13b0518fc734f1c2d8d1fd40fa41833f71
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: fac9a583737b991e9f2b060a05eb64a893dde9cc
+ms.sourcegitcommit: a598c09b73e4e43eea5f4aaefea7ffe062e15c39
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50434241"
+ms.lasthandoff: 07/22/2021
+ms.locfileid: "53533994"
 ---
-# <a name="create-identityprovider"></a>Criar identityProvider
-
+# <a name="create-identityprovider-deprecated"></a>Criar IdentityProvider (obsoleto)
 Namespace: microsoft.graph
+
+[!INCLUDE [identityprovider-deprecate](../../includes/identityprovider-deprecate.md)]
 
 Criar um novo [identityProvider](../resources/identityprovider.md) especificando o nome de exibição, tipo de identityProvider, ID do cliente e o segredo do cliente.
 
@@ -50,10 +51,10 @@ No corpo da solicitação, forneça uma representação JSON do objeto [identity
 
 |Propriedade|Tipo|Descrição|
 |:---------------|:--------|:----------|
-|clientId|Cadeia de caracteres|O ID do cliente para o aplicativo. Esta é a ID do cliente obtida ao registrar o aplicativo com o provedor de identidade.|
+|clientId|Cadeia de caracteres|A ID do cliente para o aplicativo. Essa é a ID do cliente obtida ao registrar o aplicativo no provedor de identidade.|
 |clientSecret|Cadeia de caracteres|O segredo do cliente para o aplicativo. Este é o segredo do cliente obtido ao registrar o aplicativo com o provedor de identidade.|
 |nome|Cadeia de caracteres|O nome de exibição exclusivo do provedor de identidade.|
-|tipo|Cadeia de caracteres|A identidade do provedor de identidade. Ele deve ser um dos seguintes valores para cenários B2C: <ul><li/>Microsoft<li/>Google<li/>Amazon<li/>LinkedIn<li/>Facebook<li/>GitHub<li/>Twitter<li/>Weibo<li/>QQ<li/>WeChat</ul>Para B2B só pode ser Google|
+|tipo|Cadeia de caracteres|O tipo de provedor de identidade. Deve ser um dos seguintes valores para cenários B2C: <ul><li/>Microsoft<li/>Google<li/>Amazon<li/>LinkedIn<li/>Facebook<li/>GitHub<li/>Twitter<li/>Weibo<li/>QQ<li/>WeChat</ul>Para B2B só pode ser Google|
 
 ## <a name="response"></a>Resposta
 
@@ -93,6 +94,7 @@ Content-type: application/json
     "clientSecret": "*****"
 }
 ```
+
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!-- {
@@ -102,6 +104,3 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
-
-
-

@@ -3,19 +3,19 @@ author: davidmu1
 localization_priority: Priority
 ms.prod: msgraph
 ms.topic: include
-ms.openlocfilehash: 2706f9e907d91882b8c484903711a72e3c74f3a1
-ms.sourcegitcommit: ef47b165f7a140cfc0309a275cb8722dd265660d
+ms.openlocfilehash: af4c21b137ae0abeaf0c498e95b9a5ed81e2556c
+ms.sourcegitcommit: 10d9f4c2cee192bd80984d48cabba63b47c54551
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "46873851"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53578964"
 ---
 <!-- markdownlint-disable MD041 -->
 <!-- this file is auto-generated don't edit it manually! -->
 
 | Tipo de solicitação | Limitar por aplicativo em todos os locatários |
-| ------------ | ------- |
+| ------------ | ----------------------------- |
 | Qualquer | 5000 solicitações a cada 10 segundos |
 
-Os limites anteriores aplicam-se aos seguintes recursos:  
-chamada, cancelMediaProcessingOperation, cloudCommunications, commsOperation, inviteParticipantsOperation, muteParticipantOperation, onlineMeeting, participante, playPromptOperation, recordOperation, subscribeToToneOperation, unmuteParticipantOperation, updateRecordingStatusOperation.
+Os limites anteriores se aplicam aos seguintes recursos:  
+audioRoutingGroup, call, cancelMediaProcessingOperation, cloudCommunications, commsApplication, commsOperation, inviteParticipantsOperation, meetingAttendanceReport, muteParticipantOperation, muteParticipantsOperation, onlineMeeting, participant, participantJoiningNotification, participantLeftNotification, playPromptOperation, presence, recordOperation, subscribeToToneOperation, unmuteParticipantOperation, updateRecordingStatusOperation.

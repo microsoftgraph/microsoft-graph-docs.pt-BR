@@ -5,18 +5,18 @@ localization_priority: Normal
 author: jesakowi
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 3741529b51912a077bfb7abe217a6828f64d199f
-ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
+ms.openlocfilehash: 1680befcf64ec78c5548d59a4a3458f184b62952
+ms.sourcegitcommit: 5bb981b4853663354a566d4a4a5cbf288939e441
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50761311"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "53579656"
 ---
 # <a name="application-unsetverifiedpublisher"></a>application: unsetVerifiedPublisher
 
 Namespace: microsoft.graph
 
-[Desajuste o verificadoPublisher](../resources/verifiedPublisher.md) anteriormente definido em um [aplicativo,](../resources/application.md)removendo todas as propriedades do editor verificadas. Para obter mais informações, consulte [Verificação do Publisher](/azure/active-directory/develop/publisher-verification-overview).
+[Desajuste o verificadoPublisher](../resources/verifiedPublisher.md) anteriormente definido em um [aplicativo,](../resources/application.md)removendo todas as propriedades do editor verificadas. Para obter mais informações, [consulte Publisher verificação](/azure/active-directory/develop/publisher-verification-overview).
 
 ## <a name="permissions"></a>Permissões
 
@@ -70,6 +70,14 @@ POST https://graph.microsoft.com/v1.0/applications/{id}/unsetVerifiedPublisher
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/application-unsetverifiedpublisher-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/application-unsetverifiedpublisher-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/application-unsetverifiedpublisher-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

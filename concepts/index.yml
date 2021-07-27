@@ -66,7 +66,7 @@ conceptualContent:
         - url: ./azuread-identity-access-management-concept-overview.md
           itemType: overview
           text: Use os métodos do Azure AD para gerenciar o acesso e autenticar usuários.
-    - title: Microsoft Graph Data Conexão
+    - title: Conexão de Dados do Microsoft Graph
       links:
         - url: ./data-connect-concept-overview.md
           itemType: overview
@@ -77,20 +77,20 @@ tools:
     - title: SDKs
       imageSrc: ./images/hub/icon01-sdk.svg
       url: 'https://docs.microsoft.com/graph/sdks/sdk-installation'
-    - title: Guias de início rápido
+    - title: Inícios rápidos
       imageSrc: ./images/hub/icon02-quickstart.svg
       url: 'https://developer.microsoft.com/graph/quick-start'
-    - title: Explorador do Graph
+    - title: Graph Explorer
       imageSrc: ./images/hub/icon03-graphexplorer.svg
       url: 'https://developer.microsoft.com/graph/graph-explorer/'
-    - title: Kit de ferramentas do Microsoft Graph
+    - title: Microsoft Graph Toolkit
       imageSrc: ./images/hub/icon04-graphtoolkit.svg
       url: ./toolkit/overview.md
 additionalContent:
   sections:
-    - title: Guias e recursos
+    - title: Tutoriais e recursos
       items:
-        - title: Caminhos de aprendizagem
+        - title: Learning caminhos
           links:
             - text: Fundamentos Graph Microsoft
               url: 'https://docs.microsoft.com/learn/paths/m365-msgraph-fundamentals/'
@@ -100,18 +100,18 @@ additionalContent:
               url: 'https://docs.microsoft.com/learn/paths/m365-msgraph-toolkit'
         - title: Instruções
           links:
-            - text: Pesquisar conteúdo no OneDrive e no Sharepoint
+            - text: 'Conectores: crie seu primeiro conector personalizado'
+              url: 'https://docs.microsoft.com/en-us/graph/connecting-external-content-build-quickstart'
+            - text: 'Pesquisa da Microsoft: pesquisar conteúdo no OneDrive e no Sharepoint'
               url: 'https://docs.microsoft.com/graph/search-concept-files'
-            - text: Compartilhar ou delegar um calendário
-              url: 'https://docs.microsoft.com/graph/outlook-share-or-delegate-calendar'
-            - text: Propor novas horas de reunião
-              url: 'https://docs.microsoft.com/graph/outlook-calendar-meeting-proposals'
-            - text: Anexar arquivos grandes a uma mensagem ou evento
+            - text: 'Identidade: Gerenciar o acesso aos recursos'
+              url: 'https://docs.microsoft.com/en-us/graph/tutorial-access-package-api'
+            - text: 'Outlook: anexar arquivos grandes a uma mensagem ou evento'
               url: 'https://docs.microsoft.com/graph/outlook-large-attachments'
-            - text: Obter conteúdo MIME de uma mensagem
+            - text: 'Outlook: obter conteúdo MIME de uma mensagem'
               url: 'https://docs.microsoft.com/graph/outlook-get-mime-message'
-            - text: Agendar uma implantação Windows atualização
-              url: 'https://docs.microsoft.com/graph/windowsupdates-schedule-deployment'
+            - text: Mais tutoriais...
+              url: 'https://docs.microsoft.com/en-us/graph/tutorials'
         - title: Recursos e comunidade
           links:
             - text: Log de mudanças

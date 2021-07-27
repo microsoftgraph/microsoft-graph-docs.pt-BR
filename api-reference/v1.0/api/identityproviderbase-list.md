@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: namkedia
 ms.prod: identity-and-sign-in
-ms.openlocfilehash: 5a2c57f7a0d36a4f1fc865bd010f4d9ce7052925
-ms.sourcegitcommit: 5bb981b4853663354a566d4a4a5cbf288939e441
+ms.openlocfilehash: 6ced9d88f27b00c173fd36f63ae44b61deabb1a9
+ms.sourcegitcommit: a598c09b73e4e43eea5f4aaefea7ffe062e15c39
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "53579782"
+ms.lasthandoff: 07/22/2021
+ms.locfileid: "53535437"
 ---
 # <a name="list-identityproviders"></a>Lista identityProviders
 Namespace: microsoft.graph
@@ -33,7 +33,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 A conta de trabalho ou de estudante precisa pertencer a uma das seguintes funções:
 
-* Administrador Global
+* Administrador global
 * Administrador do Provedor de Identidade Externa
 * Administrador de fluxo de usuário de ID externa
 
@@ -61,15 +61,13 @@ Se tiver êxito, este método retornará um código de resposta e uma coleção 
 
 Para um locatário do Azure AD B2C, este método retorna um código de resposta e uma coleção de `200 OK` [objetos socialIdentityProvider](../resources/socialidentityprovider.md) no corpo da resposta.
 
-## <a name="examples"></a>Exemplos
+## <a name="example"></a>Exemplo
 
 ### <a name="example-1-list-all-identity-providers-configured-in-an-azure-ad-tenant"></a>Exemplo 1: listar todos os provedores de identidade configurados em um locatário do Azure AD
 
-#### <a name="request"></a>Solicitação
+### <a name="request"></a>Solicitação
 Este é um exemplo de solicitação.
 
-
-# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_identityproviderbase"
@@ -79,26 +77,8 @@ Este é um exemplo de solicitação.
 ``` http
 GET https://graph.microsoft.com/v1.0/identity/identityProviders
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-identityproviderbase-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-identityproviderbase-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-identityproviderbase-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-identityproviderbase-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-
-#### <a name="response"></a>Resposta
+### <a name="response"></a>Resposta
 Este é um exemplo de resposta.
 
 >**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
@@ -137,7 +117,7 @@ Content-Type: application/json
 
 ### <a name="example-2-list-all-identityprovider-objects-configured-in-an-azure-ad-b2c-tenant"></a>Exemplo 2: Listar todos os objetos identityProvider configurados em um locatário do Azure AD B2C
 
-#### <a name="request"></a>Solicitação
+### <a name="request"></a>Solicitação
 Este é um exemplo de solicitação.
 
 <!-- {
@@ -150,7 +130,7 @@ Este é um exemplo de solicitação.
 GET https://graph.microsoft.com/v1.0/identity/identityProviders
 ```
 
-#### <a name="response"></a>Resposta
+### <a name="response"></a>Resposta
 Este é um exemplo de resposta.
 
 >**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.

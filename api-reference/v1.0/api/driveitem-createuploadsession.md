@@ -6,12 +6,12 @@ localization_priority: Priority
 ms.prod: sharepoint
 description: Crie uma sessão de upload para permitir que seu aplicativo carregue arquivos até o tamanho máximo de arquivo.
 doc_type: apiPageType
-ms.openlocfilehash: 4a70e038838366b656a4d38d4d118f255794660e
-ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
+ms.openlocfilehash: 422f3068c2854a847d79d6dcb940c44cc49aaa07
+ms.sourcegitcommit: 486fe9c77d4d89c5416bb83e8c716e6918c47370
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50292186"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53441817"
 ---
 # <a name="upload-large-files-with-an-upload-session"></a>Carregar arquivos grandes com uma sessão de upload
 
@@ -55,7 +55,6 @@ POST /users/{userId}/drive/items/{itemId}/createUploadSession
 
 ### <a name="request-body"></a>Corpo da solicitação
 
-Nenhum corpo de solicitação é obrigatório.
 No entanto, você pode especificar propriedades no corpo da solicitação, fornecendo dados adicionais sobre o arquivo sendo carregado e personalizando a semântica da operação de carregamento.
 
 Por exemplo, a propriedade `item` permite definir os seguintes parâmetros:
@@ -92,7 +91,7 @@ O exemplo a seguir controla o comportamento se o nome do arquivo já estiver sen
 | Parâmetro            | Tipo                          | Descrição
 |:---------------------|:------------------------------|:---------------------------------
 | item                 | [driveItemUploadableProperties](../resources/driveItemUploadableProperties.md) | Dados sobre o arquivo sendo carregado
-| deferCommit          | Booliano                       | Se definido como verdadeiro, a criação final do arquivo no destino exigirá uma solicitação explícita. Somente no OneDrive for Business.
+| deferCommit          | Booliano                       | Se definido como verdadeiro, a criação final do arquivo no destino exigirá uma solicitação explícita. Apenas no OneDrive for Business.
 
 ### <a name="request"></a>Solicitação
 
@@ -247,7 +246,7 @@ Content-Type: application/json
 
 <!-- { "blockType": "request", "opaqueUrl": true, "name": "commit-upload", "scopes": "files.readwrite" } -->
 
-```
+```http
 POST https://sn3302.up.1drv.com/up/fe6987415ace7X4e1eF866337
 Content-Length: 0
 ```
@@ -321,7 +320,7 @@ Confira o status do upload enviando uma solicitação GET para `uploadUrl`.
 
 <!-- { "blockType": "request", "opaqueUrl": true, "name": "upload-fragment-resume", "scopes": "files.readwrite" } -->
 
-```
+```http
 GET https://sn3302.up.1drv.com/up/fe6987415ace7X4e1eF86633784148bb98a1zjcUhf7b0mpUadahs
 ```
 
@@ -414,6 +413,6 @@ Confira o tópico [Respostas de Erro][error-response] para saber detalhes sobre 
   "keywords": "upload,large file,fragment,BITS",
   "suppressions": [
   ],
-  "section": "documentation"
+  "section&quot;: &quot;documentation"
 } -->
 
