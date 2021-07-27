@@ -2,19 +2,20 @@
 title: Atualizar identityProvider
 description: Atualizar as propriedades de um identityProvider existente
 localization_priority: Priority
-author: Nickgmicrosoft
+author: namkedia
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: bb4695068871c2c741a1f1aa699b36a688e22b6e
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 191d936e71e725964f125aaa6b6ab1e8f276b957
+ms.sourcegitcommit: 5bb981b4853663354a566d4a4a5cbf288939e441
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50441834"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "53580566"
 ---
-# <a name="update-identityprovider"></a>Atualizar identityProvider
-
+# <a name="update-identityprovider-deprecated"></a>Atualizar identityProvider (preterido)
 Namespace: microsoft.graph
+
+[!INCLUDE [identityprovider-deprecate](../../includes/identityprovider-deprecate.md)]
 
 Atualizar as propriedades em um [identityProvider](../resources/identityprovider.md) existente.
 
@@ -50,7 +51,7 @@ No corpo da solicitação, fornece um objeto JSON com uma ou mais propriedades q
 
 |Propriedade|Tipo|Descrição|
 |:---------------|:--------|:----------|
-|clientId|Cadeia de caracteres|O ID do cliente para o aplicativo. Esta é a ID do cliente obtida ao registrar o aplicativo com o provedor de identidade.|
+|clientId|Cadeia de caracteres|A ID do cliente para o aplicativo. Essa é a ID do cliente obtida ao registrar o aplicativo no provedor de identidade.|
 |clientSecret|Cadeia de caracteres|O segredo do cliente para o aplicativo. Este é o segredo do cliente obtido ao registrar o aplicativo com o provedor de identidade.|
 |nome|Cadeia de caracteres|O nome exclusivo do provedor de identidade.|
 
@@ -70,6 +71,7 @@ O exemplo a seguir atualiza a definição da vida útil do token **identityProvi
   "blockType": "request",
   "name": "update-identityprovider"
 }-->
+
 ```http
 PATCH https://graph.microsoft.com/v1.0/identityProviders/Amazon-OAuth
 Content-type: application/json
@@ -119,4 +121,3 @@ HTTP/1.1 204 No Content
   "suppressions": [
   ]
 }-->
-

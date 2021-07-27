@@ -3,12 +3,12 @@ title: Problemas conhecidos com o Microsoft Graph
 description: Este artigo descreve os problemas conhecidos com o Microsoft Graph.
 author: MSGraphDocsVTeam
 localization_priority: Priority
-ms.openlocfilehash: 257d8966eabe2428072f470f290816a1c9c2e35d
-ms.sourcegitcommit: 4888ac7504533344c4fc6828e2a06a002a1d72d3
+ms.openlocfilehash: c884f16ac2128286ece218ffb110b0c74933c7a1
+ms.sourcegitcommit: 5bb981b4853663354a566d4a4a5cbf288939e441
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "53351105"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "53579327"
 ---
 # <a name="known-issues-with-microsoft-graph"></a>Problemas conhecidos com o Microsoft Graph
 
@@ -346,6 +346,9 @@ A consulta de filtro para obter membros de uma equipe com base em suas funções
 
 ### <a name="missing-properties-for-chat-members"></a>Propriedades ausentes para membros do bate-papo
 Em certos casos, a `tenantId` / `email` / `displayName` propriedade para os membros individuais de um bate-papo pode não ser preenchida em uma solicitação `GET /chats/chat-id/members` ou `GET /chats/chat-id/members/membership-id`.
+
+### <a name="missing-properties-in-the-list-of-teams-that-a-user-has-joined"></a>Propriedades ausentes na lista de equipes que um usuário ingressou
+A chamada à API para [me/joinedTeams](/graph/api/user-list-joinedteams) retorna apenas as propriedades **id**, **displayName** e **description** de uma [equipe](/graph/api/resources/team). Para obter todas as propriedades, use a operação[obter a equipe](/graph/api/team-get).
 
 ## <a name="users"></a>Usuários
 

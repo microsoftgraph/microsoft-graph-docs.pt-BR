@@ -3,19 +3,19 @@ author: davidmu1
 localization_priority: Priority
 ms.prod: msgraph
 ms.topic: include
-ms.openlocfilehash: 2c41ff749df7bfc4d53e09a59ab67a566ef5e5af
-ms.sourcegitcommit: bbff139eea483faaa2d1dd08af39314f35ef48ce
+ms.openlocfilehash: 8fa57befd686d80c694db4d4981c78aebee2e40c
+ms.sourcegitcommit: 10d9f4c2cee192bd80984d48cabba63b47c54551
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/08/2020
-ms.locfileid: "46597984"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53578927"
 ---
 <!-- markdownlint-disable MD041 -->
 <!-- this file is auto-generated don't edit it manually! -->
 #### <a name="intune-notifications-service-limits"></a>Limites de serviço para notificações do Intune
 
 | Tipo de solicitação | Limitar por locatário para todos os aplicativos | Limitar por aplicativo por locatário |
-| ------------ | ------- | ------- |
+| ------------ | ----------------------------- | ------------------------ |
 | POST, PUT, DELATE, PATCH | 200 solicitações por 20 segundos | 100 solicitações por 20 segundos |
 | Qualquer | 2000 solicitações por 20 segundos | 1000 solicitações por 20 segundos |
 

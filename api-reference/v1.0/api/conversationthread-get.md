@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: da9e54b919a046e826ec892cbeaf210d9add82fb
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: eb0f098c6400ef03691980cefd28d72e7a481fb0
+ms.sourcegitcommit: a598c09b73e4e43eea5f4aaefea7ffe062e15c39
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52053234"
+ms.lasthandoff: 07/22/2021
+ms.locfileid: "53534520"
 ---
 # <a name="get-conversationthread"></a>Obter conversationThread
 
@@ -77,7 +77,7 @@ GET https://graph.microsoft.com/v1.0/groups/{id}/threads/{id}
 ---
 
 ##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto de resposta exibido aqui pode ser encurtado para legibilidade.
+Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser reduzido para facilitar a leitura.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -86,31 +86,18 @@ Veja a seguir um exemplo da resposta. Observação: o objeto de resposta exibido
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 419
+Content-length: 223
 
 {
-  "toRecipients": [
-    {
-      "emailAddress": {
-        "name": "name-value",
-        "address": "address-value"
-      }
-    }
-  ],
+  "id": "thread-id",
   "topic": "topic-value",
   "hasAttachments": true,
   "lastDeliveredDateTime": "datetime-value",
   "uniqueSenders": [
     "uniqueSenders-value"
   ],
-  "ccRecipients": [
-    {
-      "emailAddress": {
-        "name": "name-value",
-        "address": "address-value"
-      }
-    }
-  ]
+  "preview": "preview-value",
+  "isLocked": false
 }
 ```
 

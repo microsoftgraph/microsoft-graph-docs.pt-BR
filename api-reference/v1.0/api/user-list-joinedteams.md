@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 50f396d2c2937fef071e607e1521c1aa3c0a657c
-ms.sourcegitcommit: a9a035e7cf7b500aebe5477c05361552e7c3a7ab
+ms.openlocfilehash: e71209c4878e2eb02543d09341ffa4d408906322
+ms.sourcegitcommit: 5bb981b4853663354a566d4a4a5cbf288939e441
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "52696237"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "53580909"
 ---
 # <a name="list-joinedteams"></a>Listar joinedTeams
 
@@ -29,19 +29,17 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Delegada (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Team.ReadBasic.All, TeamSettings.Read.All, TeamSettings.ReadWrite.All, User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
 
-> Com permissões de usuário delegado esta operação só funciona para o usuário "eu". 
-> Com permissões de aplicativo, funciona para todos os usuários especificando a id de usuário específico. ("eu" alias não é compatível com permissões de aplicativo)
+> **Observação:** atualmente, com as permissões delegadas pelo usuário, essa operação só funcionará para o usuário `me`. Com as permissões de aplicativo, ela funciona para todos os usuários especificando a ID de usuário específica (a alias`me` não é suportada com as permissões de aplicativo). Para mais detalhes, confira [Problemas conhecidos](/graph/known-issues#microsoft-teams-users-list-of-joined-teams-preview).
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/joinedTeams
-or
 GET /users/{id | user-principal-name}/joinedTeams
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Atualmente, os [Parâmetros de consulta OData](/graph/query-parameters) não têm suporte.
+No momento, esse método não é compatível com os [parâmetros de consulta OData](/graph/query-parameters) para personalizar a resposta.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Cabeçalho       | Valor |
@@ -54,10 +52,14 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um código de resposta `200 OK` e uma coleção de objetos [group](../resources/group.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um código de resposta `200 OK` e uma coleção de objetos da[equipe](../resources/team.md) no corpo da resposta.
+
+> [!Note]
+> Atualmente, essa chamada à API retorna apenas as propriedades **ID**, **displayName** e **description** de uma [equipe](../resources/team.md). Para obter todas as propriedades, use a operação[Obter equipe](../api/team-get.md). Para saber mais, confira [problemas conhecidos](/graph/known-issues#unable-to-return-all-values-for-properties-for-a-user-joined-teams).
+
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
-Este é um exemplo da solicitação.
+O exemplo a seguir mostra uma solicitação.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -86,7 +88,9 @@ GET https://graph.microsoft.com/v1.0/me/joinedTeams
 ---
 
 ##### <a name="response"></a>Resposta
-Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser reduzido para facilitar a leitura.
+O exemplo a seguir mostra a resposta.
+
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -100,18 +104,22 @@ Content-type: application/json
 {
   "value": [
     {
-      "id": "31aa74dd-dd65-43ac-8c4e-0ec1ae5a8ee1"
+      "id": "172b0cce-e65d-44ce-9a49-91d9f2e8493a",
+      "displayName": "Contoso Team",
+      "description": "This is a Contoso team, used to showcase the range of properties supported by this API"
     }
   ]
 }
 ```
 
 ## <a name="see-also"></a>Confira também
-[Listar todas as equipes](/graph/teams-list-all-teams)
+- [Listar todas as equipes](/graph/teams-list-all-teams)
+- [Obter equipe](../api/team-get.md)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "List joinedTeams",
   "keywords": "",
@@ -119,4 +127,5 @@ Content-type: application/json
   "tocPath": "",
   "suppressions": [
   ]
-}-->
+}
+-->

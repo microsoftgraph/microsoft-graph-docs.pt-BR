@@ -1,16 +1,16 @@
 ---
 title: 'virtualEndpoint: getEffectivePermissions'
-description: '**GetEffectivePermissions é uma função que recupera as permissões efetivas do usuário autenticado no momento, o que ajuda a experiência do usuário a ocultar ou desabilitar o conteúdo ao qual o usuário atual não tem acesso.**'
+description: '**GetEffectivePermissions é uma função que recupera as permissões efetivas do usuário autenticado no momento, o que ajuda o UX a ocultar ou desabilitar o conteúdo ao qual o usuário atual não tem acesso.**'
 author: AshleyYangSZ
 localization_priority: Normal
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 89150ac339a955db1a8d48f3da9e71c3823f9852
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: ff9eda317a29b2ceda09d1b750225a308a4db399
+ms.sourcegitcommit: a598c09b73e4e43eea5f4aaefea7ffe062e15c39
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49874036"
+ms.lasthandoff: 07/22/2021
+ms.locfileid: "53534169"
 ---
 # <a name="virtualendpoint-geteffectivepermissions"></a>virtualEndpoint: getEffectivePermissions
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Exibir as permissões efetivas do usuário autenticado no momento. GetEffectivePermissions é uma função que recupera as permissões efetivas do usuário autenticado no momento, o que ajuda a experiência do usuário a ocultar ou desabilitar o conteúdo ao qual o usuário atual não tem acesso.
+Exibir as permissões efetivas do usuário autenticado no momento. GetEffectivePermissions é uma função que recupera as permissões efetivas do usuário autenticado no momento, o que ajuda o UX a ocultar ou desabilitar o conteúdo ao qual o usuário atual não tem acesso.
 
 [!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 

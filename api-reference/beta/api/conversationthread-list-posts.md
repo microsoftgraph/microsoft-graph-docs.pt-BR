@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 4f4905edd2e1f23a5eda9bf38aa64a9bf69aa7ee
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 43c9f69a8ae83b6df823d65afe2f3c2c01d8d90e
+ms.sourcegitcommit: 5bb981b4853663354a566d4a4a5cbf288939e441
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52047011"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "53579446"
 ---
 # <a name="list-posts"></a>Listar postagens
 
@@ -32,8 +32,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /groups/{id}/threads/{id}/posts
-GET /groups/{id}/conversations/{id}/threads/{id}/posts
+GET /groups/{groupId}/threads/{threadId}/posts
+GET /groups/{groupId}/conversations/{conversationId}/threads/{threadId}/posts
 
 ```
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
@@ -80,7 +80,7 @@ GET https://graph.microsoft.com/beta/groups/0d75b8dc-c42d-44dd-890a-751a99c0589f
 ---
 
 ##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser reduzido para facilitar a leitura.
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -5,12 +5,12 @@ author: hafowler
 localization_priority: Normal
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 7e4fbd5a2a4c1b76ca985cb17e5c6799cb4f41c5
-ms.sourcegitcommit: 2a35434fabc76672e21bfc3ed5a1d28f9f3b66bc
+ms.openlocfilehash: 5f3820783530836a6b4afaf0637f69e95090fee7
+ms.sourcegitcommit: a598c09b73e4e43eea5f4aaefea7ffe062e15c39
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52240970"
+ms.lasthandoff: 07/22/2021
+ms.locfileid: "53533231"
 ---
 # <a name="list-recoverykeys"></a>Listar recoveryKeys
 Namespace: microsoft.graph
@@ -26,21 +26,21 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|BitLockerKey.ReadBasic.All, BitLockerKey.Read.All|
+|Delegado (conta corporativa ou de estudante)|BitLockerKey.ReadBasic.All, BitLockerKey.Read.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte|
 |Aplicativo|Sem suporte|
 
->**Observação**: para permissões delegadas permitirem que os aplicativos recebam recursos do BitLockerRecoveryKey em nome do usuário conectado, o administrador de locatários deve ter atribuído ao usuário uma das seguintes funções ou o usuário deve ser o proprietário registrado do dispositivo do qual BitLocker chave de recuperação foi originalmente backup: 
+>**Observação**: para permissões delegadas permitirem que os aplicativos recebam recursos do BitLockerRecoveryKey em nome do usuário conectado, o administrador de locatários deve ter atribuído ao usuário uma das seguintes funções ou o usuário deve ser o proprietário registrado do dispositivo do qual a chave de recuperação do BitLocker foi originalmente respaldada: 
 * Administrador global
 * Administrador de dispositivos de nuvem
-* Administrador da assistência técnica
+* Administrador do Helpdesk
 * Administrador de Serviço do Intune
 * Administrador de segurança
 * Leitor de segurança
 * Leitor global
 
 ## <a name="http-request"></a>Solicitação HTTP
-Para obter uma lista de BitLocker chaves dentro do locatário:
+Para obter uma lista de chaves do BitLocker no locatário:
 
 <!-- {
   "blockType": "ignored"
@@ -50,7 +50,7 @@ Para obter uma lista de BitLocker chaves dentro do locatário:
 GET /informationProtection/bitlocker/recoveryKeys
 ```
 
-Para obter uma lista de BitLocker chaves dentro do locatário filtrada pela **id do dispositivo**:
+Para obter uma lista de chaves do BitLocker dentro do locatário filtrada pela **id do dispositivo**:
 
 <!-- {
   "blockType": "ignored"
@@ -69,8 +69,8 @@ A resposta também pode conter `odata.nextLink` um , que você pode usar para p�
 |Nome|Descrição|
 |:---|:---|
 |Autorização|{token} de portador. Obrigatório.|
-|ocp-client-name|Nome do aplicativo cliente que executa a chamada da API. Obrigatório.|
-|ocp-client-version|Versão do aplicativo cliente executando a chamada da API. Obrigatório.|
+|ocp-client-name|O nome do aplicativo cliente que executa a chamada da API. Esse header é usado para fins de depuração. Opcional.|
+|ocp-client-version|A versão do aplicativo cliente que executa a chamada da API. Esse header é usado para fins de depuração. Opcional.|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.
@@ -82,7 +82,7 @@ Se tiver êxito, este método retornará um código de resposta e uma `200 OK` c
 ## <a name="examples"></a>Exemplos
 
 ### <a name="example-1"></a>Exemplo 1
-Recupere uma lista de BitLocker chaves no locatário.
+Recupere uma lista de chaves do BitLocker no locatário.
 
 #### <a name="request"></a>Solicitação
 Este é um exemplo de solicitação.
@@ -152,7 +152,7 @@ Content-Type: application/json
 }
 ```
 ### <a name="example-2"></a>Exemplo 2
-Recuperar uma lista de chaves BitLocker filtradas por **id do dispositivo.**
+Recuperar uma lista de chaves BitLocker filtradas por **id de dispositivo.**
 
 #### <a name="request"></a>Solicitação
 Este é um exemplo de solicitação.

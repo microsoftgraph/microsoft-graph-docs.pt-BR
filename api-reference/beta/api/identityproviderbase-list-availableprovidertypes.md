@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: namkedia
 ms.prod: identity-and-sign-in
-ms.openlocfilehash: 0ef9e0bb23109f41854c7c12b76e144ad6110ace
-ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
+ms.openlocfilehash: 90a41009b1ec41387d639e2f293ce81c6954b803
+ms.sourcegitcommit: 5bb981b4853663354a566d4a4a5cbf288939e441
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52546242"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "53579728"
 ---
 # <a name="list-availableprovidertypes"></a>Listar availableProviderTypes
 
@@ -60,7 +60,7 @@ Se tiver êxito, essa função retornará o código de resposta `200 OK` e a Col
 
 ### <a name="example-1-list-all-identityprovider-available-in-an-azure-ad-directory"></a>Exemplo 1: listar **toda a identidadeProvider** disponível em um diretório do Azure AD
 
-### <a name="request"></a>Solicitação
+#### <a name="request"></a>Solicitação
 Este é um exemplo de solicitação.
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -92,13 +92,11 @@ GET https://graph.microsoft.com/beta/identity/identityProviders/availableProvide
 ---
 
 
----
-
-### <a name="response"></a>Resposta
+#### <a name="response"></a>Resposta
 
 Este é um exemplo de resposta.
 
-**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
   "blockType": "response",
@@ -124,7 +122,7 @@ Content-Type: application/json
 
 ### <a name="example-2-list-all-identityprovider-available-in-an-azure-ad-b2c-directory"></a>Exemplo 2: Listar **todos os identityProvider** disponíveis em um diretório do Azure AD B2C
 
-### <a name="request"></a>Solicitação
+#### <a name="request"></a>Solicitação
 Este é um exemplo de solicitação.
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -156,13 +154,11 @@ GET https://graph.microsoft.com/beta/identity/identityProviders/availableProvide
 ---
 
 
----
-
-### <a name="response"></a>Resposta
+#### <a name="response"></a>Resposta
 
 Este é um exemplo de resposta.
 
-**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
   "blockType": "response",

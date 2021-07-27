@@ -5,12 +5,12 @@ localization_priority: Normal
 author: SarahBar
 ms.prod: identity-and-access-reports
 doc_type: apiPageType
-ms.openlocfilehash: d603045143ae379f55ed56dd1cd69be74946b1ed
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 6079c58dc4ba17cb185ed365ada24c902f310069
+ms.sourcegitcommit: 5bb981b4853663354a566d4a4a5cbf288939e441
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52787042"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "53579320"
 ---
 # <a name="get-directoryaudit"></a>Obter directoryAudit
 
@@ -20,15 +20,15 @@ Namespace: microsoft.graph
 
 Obter um item Azure Active Directory log de auditoria específico. Isso inclui um item de log de auditoria gerado por vários serviços no Azure Active Directory, como gerenciamento de usuário, aplicativo, dispositivo e grupo, pim (gerenciamento de identidade privilegiada), análises de acesso, termos de uso, proteção de identidade, gerenciamento de senha (redefinições de senha de autoatendados e administrador), gerenciamento de grupo de autoatendados e assim por diante.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | AuditLog.Read.All |
-|Delegado (conta pessoal da conta Microsoft) | Sem suporte   |
-|Aplicativo | AuditLog.Read.All | 
+|Delegada (conta corporativa ou de estudante) | AuditLog.Read.All e Directory.Read.All |
+|Delegado (conta pessoal da Microsoft) | Sem suporte   |
+|Aplicativo | AuditLog.Read.All e Directory.Read.All | 
 
 Além disso, os aplicativos devem ser [corretamente registrados](/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal) no Azure AD.
 

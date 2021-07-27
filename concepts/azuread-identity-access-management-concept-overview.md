@@ -5,12 +5,12 @@ author: jackson-woods
 localization_priority: Priority
 ms.prod: identity-and-access
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: e15685f1cf561713b25dc70b87264edd36168067
-ms.sourcegitcommit: 503c72036c376a30e08c29df8e7730a7afcab66e
+ms.openlocfilehash: 6aabd013bd7a0c17a2d22f5cbbf87eb8b32286e3
+ms.sourcegitcommit: a598c09b73e4e43eea5f4aaefea7ffe062e15c39
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52870756"
+ms.lasthandoff: 07/22/2021
+ms.locfileid: "53534043"
 ---
 # <a name="azure-ad-identity-and-access-management-api-overview"></a>Visão geral da API de gerenciamento de identidade e acesso do Azure AD
 
@@ -36,7 +36,7 @@ Você pode usar as APIs do Azure AD no Microsoft Graph para:
 
 - Pesquisar e gerenciar informações de [perfil de usuário](/graph/api/resources/user), como nome, foto, endereço de email, cargo, localização do escritório e muito mais de usuários na sua organização.
 - Criar [grupos](/graph/api/resources/groups-overview) para projetos e equipes na sua organização. Adicionar e remover membros do grupo para controlar o acesso aos recursos. (Os grupos dinâmicos podem alterar automaticamente a associação com base nos valores da propriedade do usuário).
-- Para controlar o acesso, você pode verificar a [associação transitiva](/graph/api/user-checkmembergroups) em uma lista de grupos ou obter todos os recursos de um tipo especificado (como um usuário ou grupo) de uma lista de [IDs de recursos genéricos](/graph/api/directoryobject-getbyids).
+- Verifique a [associação transitiva](/graph/api/user-checkmembergroups) em uma lista de grupos ou obtenha todos os recursos de um tipo especificado (como usuário ou grupo) de uma lista de [ IDs de recursos genéricos ](/graph/api/directoryobject-getbyids) para controlar o acesso.
 
 ### <a name="manage-directory-roles"></a>Gerenciar funções de diretório
 

@@ -5,12 +5,12 @@ localization_priority: Priority
 author: nmoreau
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: 6b937c93e431501da3ad578135577d942c5d4b37
-ms.sourcegitcommit: 8b23038be1141d7f22eb61de6aafdb16d4f9c826
+ms.openlocfilehash: c53cc0df5c9aefb6a42b5a28d6341f37b0f3d287
+ms.sourcegitcommit: 1940be9846055aa650c6c03982b74a961f1e316a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "53401341"
+ms.lasthandoff: 07/17/2021
+ms.locfileid: "53467096"
 ---
 # <a name="use-the-microsoft-search-api-to-query-data"></a>Usar a API de Pesquisa da Microsoft para consultar dados
 
@@ -57,7 +57,7 @@ A tabela a seguir descreve os tipos disponíveis para consulta e as permissões 
 |[list](list.md)|Sites.Read.All, Sites.ReadWrite.All| SharePoint e OneDrive | Listas. Observe que as bibliotecas de documentos também são retornadas como listas. |
 |[listItem](listitem.md)|Sites.Read.All, Sites.ReadWrite.All| SharePoint e OneDrive | Listar itens. Observe que os arquivos e as pastas também são retornados como itens de lista; **listItem** é a superclasse de **driveItem**. |
 |[site](site.md)|Sites.Read.All, Sites.ReadWrite.All| SharePoint | Sites no SharePoint.|
-|[externalItem](externalitem.md)|ExternalItem.Read.All| Conectores do Microsoft Graph| Todo o conteúdo está absorvido pela API dos conectores do Microsoft Graph.|
+|[externalItem](externalconnectors-externalitem.md)|ExternalItem.Read.All| Conectores do Microsoft Graph| Todo o conteúdo está absorvido pela API dos conectores do Microsoft Graph.|
 |[pessoa](person.md)|People.Read|Troca Online|Contatos pessoais e contatos ou objetos endereçáveis na sua organização.|
 
 ## <a name="page-search-results"></a>Resultados da pesquisa de página
@@ -142,7 +142,7 @@ As propriedades nas quais a agregação é solicitada devem ser refináveis no [
 
 Uma vez que a resposta é retornada contendo a coleção de objetos [searchBucket](searchBucket.md), é possível refinar a solicitação de pesquisa somente aos elementos correspondentes contidos em uma [searchBucket](searchBucket.md). Isso é conseguido passando o valor **aggregationsFilterToken** na propriedade **aggregationsFilters** na posterior [searchRequest](./searchrequest.md).
 
-As agregações atualmente têm suporte para qualquer propriedade refinável nos seguintes tipos do SharePoint e OneDrive: [driveItem](driveitem.md), [listItem](listitem.md), [list](list.md), [site](site.md) e nos conectores do Microsoft Graph [externalItem](externalItem.md).
+As agregações atualmente têm suporte para qualquer propriedade refinável nos seguintes tipos do SharePoint e OneDrive: [driveItem](driveitem.md), [listItem](listitem.md), [list](list.md), [site](site.md) e nos conectores do Microsoft Graph [externalItem](externalconnectors-externalitem.md).
 
 Confira [refinar os resultados da pesquisa](/graph/search-concept-aggregation) para obter exemplos que mostram como usar a agregação para melhorar e restringir os resultados da pesquisa.
 

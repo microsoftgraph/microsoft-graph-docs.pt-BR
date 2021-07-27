@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 3423c216e9b0c5b6928d0473c1e7db021e1344c9
-ms.sourcegitcommit: ae83b2b372902268517fd17a8b10d6d9add422af
+ms.openlocfilehash: 2925431e15516e678bb60d61e6c9ef4f4bb7fea9
+ms.sourcegitcommit: a598c09b73e4e43eea5f4aaefea7ffe062e15c39
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "53334490"
+ms.lasthandoff: 07/22/2021
+ms.locfileid: "53534064"
 ---
 # <a name="update-unifiedroleassignmentmultiple"></a>Atualizar unifiedRoleAssignmentMultiple
 
@@ -21,7 +21,7 @@ Namespace: microsoft.graph
 Atualize um objeto [unifiedRoleAssignmentMultiple](../resources/unifiedroleassignmentmultiple.md) existente de um provedor RBAC. 
 
 No momento, há suporte para os seguintes provedores RBAC:
-- cloud PC 
+- Cloud PC 
 - gerenciamento de dispositivos (Intune)
 
 [!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
@@ -38,7 +38,7 @@ Dependendo do provedor RBAC e do tipo de permissão (delegado ou aplicativo) nec
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) |  CloudPC.ReadWrite.All   |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | CloudPC.ReadWrite.All  |
+|Application | CloudPC.ReadWrite.All  |
 
 ### <a name="for-device-management-intune-provider"></a>Para o provedor de gerenciamento de dispositivos (Intune)
 
@@ -46,12 +46,12 @@ Dependendo do provedor RBAC e do tipo de permissão (delegado ou aplicativo) nec
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) |  DeviceManagementRBAC.ReadWrite.All   |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | DeviceManagementRBAC.ReadWrite.All |
+|Application | DeviceManagementRBAC.ReadWrite.All |
 
 
 ## <a name="http-request"></a>Solicitação HTTP
 
-Para atualizar um unfiedRoleAssignmentMultiple existente para um provedor de computadores na nuvem:
+Para atualizar um unfiedRoleAssignmentMultiple existente para um provedor de cloud pc:
 <!-- { "blockType": "ignored" } -->
 
 ```http

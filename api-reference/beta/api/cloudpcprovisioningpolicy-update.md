@@ -5,12 +5,12 @@ author: AshleyYangSZ
 localization_priority: Normal
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 935dd01d22afd6b6ef916a328c40b4fa08d978fd
-ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
+ms.openlocfilehash: 7494ab6f2fa18135e72bdfdf68bb183be05cff94
+ms.sourcegitcommit: a598c09b73e4e43eea5f4aaefea7ffe062e15c39
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52546396"
+ms.lasthandoff: 07/22/2021
+ms.locfileid: "53533726"
 ---
 # <a name="update-cloudpcprovisioningpolicy"></a>Atualizar cloudPcProvisioningPolicy
 
@@ -30,7 +30,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|CloudPC.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|CloudPC.ReadWrite.All|
+|Application|CloudPC.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -59,11 +59,11 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [o cloud
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |displayName|String|O nome de exibição da política de provisionamento. |
-|descrição|String|A descrição da política de provisionamento.|
-|onPremisesConnectionId|String|A ID do cloudPcOnPremisesConnection. Para garantir que os computadores de nuvem tenham conectividade de rede e que eles participem do domínio, escolha uma conexão com uma rede virtual validada pelo serviço de computador na nuvem.|
-|imageId|String|A ID da imagem do sistema operacional que você deseja provisionar em PCs de nuvem. O formato de uma imagem de tipo de galeria é: {publisher_offer_sku}.|
-|imageDisplayName|String|O nome de exibição da imagem do sistema operacional que você está provisionando.|
-|imageType|cloudPcProvisioningPolicyImageType|O tipo de imagem do sistema operacional (personalizado ou galeria) que você deseja provisionar em PCs de nuvem. Os valores possíveis são: `gallery` e `custom`.|
+|description|String|A descrição da política de provisionamento.|
+|onPremisesConnectionId|Cadeia de Caracteres|A ID do cloudPcOnPremisesConnection. Para garantir que os computadores na nuvem tenham conectividade de rede e que eles participem do domínio, escolha uma conexão com uma rede virtual validada pelo serviço de Computador na Nuvem.|
+|imageId|Cadeia de Caracteres|A ID da imagem do sistema operacional que você deseja provisionar em PCs na Nuvem. O formato de uma imagem de tipo de galeria é: {publisher_offer_sku}.|
+|imageDisplayName|Cadeia de Caracteres|O nome de exibição da imagem do sistema operacional que você está provisionando.|
+|imageType|cloudPcProvisioningPolicyImageType|O tipo de imagem do sistema operacional (personalizada ou galeria) que você deseja provisionar em PCs na Nuvem. Os valores possíveis são: `gallery` e `custom`.|
 
 ## <a name="response"></a>Resposta
 

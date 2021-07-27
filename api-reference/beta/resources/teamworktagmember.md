@@ -5,12 +5,12 @@ author: anniecolonna
 localization_priority: Normal
 ms.prod: teamwork
 doc_type: resourcePageType
-ms.openlocfilehash: 73666dd19720e6d8882bb16fd90c612097e41d10
-ms.sourcegitcommit: 456ec9510807d05623c0ed1dd049c9676f53f56b
+ms.openlocfilehash: b8e6d70a8249168383f2bc1b0e6d8884525855ec
+ms.sourcegitcommit: a598c09b73e4e43eea5f4aaefea7ffe062e15c39
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53059870"
+ms.lasthandoff: 07/22/2021
+ms.locfileid: "53534513"
 ---
 # <a name="teamworktagmember-resource-type"></a>Tipo de recurso teamworkTagMember
 
@@ -23,17 +23,18 @@ Representa um usuário em uma equipe à qual uma marca é aplicada.
 ## <a name="methods"></a>Métodos
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
-|[Listar o trabalho em equipeTagMembers](../api/teamworktagmember-list.md)|**coleção teamworkTagMember**|Obter uma lista dos membros de uma marca padrão em uma equipe e suas propriedades.|
-|[Obter trabalho em equipeTagMember](../api/teamworktagmember-get.md)|**teamworkTagMember**|Obter as propriedades e as relações de um membro de uma marca padrão em uma equipe.|
+|[Listar o trabalho em equipeTagMembers](../api/teamworktagmember-list.md)|[**coleção teamworkTagMember**](teamworktagmember.md)|Obter uma lista dos membros de uma marca padrão em uma equipe e suas propriedades.|
+|[Criar trabalho em equipeTagMember](../api/teamworktagmember-post.md)|[**teamworkTagMember**](teamworktagmember.md)|Crie um novo **objeto teamworkTagMember.**|
+|[Obter trabalho em equipeTagMember](../api/teamworktagmember-get.md)|[**teamworkTagMember**](teamworktagmember.md)|Obter as propriedades e as relações de um membro de uma marca padrão em uma equipe.|
 |[Excluir o trabalho em equipeTagMember](../api/teamworktagmember-delete.md)|Nenhum|Exclua um membro de uma marca padrão na equipe.|
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |displayName|String|O nome de exibição do membro.|
-|ID|String|ID do membro.|
-|tenantID|String|A ID do locatário do que o membro da marca faz parte.|
-|userID|String|A ID do usuário do membro.|
+|ID|Cadeia de Caracteres|ID do membro.|
+|tenantID|Cadeia de Caracteres|A ID do locatário do que o membro da marca faz parte.|
+|userID|Cadeia de Caracteres|A ID do usuário do membro.|
 
 ## <a name="relationships"></a>Relações
 Nenhum

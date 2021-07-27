@@ -2,14 +2,14 @@
 author: AshleyYangSZ
 ms.topic: include
 ms.date: 12/12/2020
-ms.openlocfilehash: 6cd10e387113a9c551ae928c57202cd48732de36
-ms.sourcegitcommit: 30903b12daf4cf2841524c57743889e23d11f85a
+ms.openlocfilehash: 5b6dea7d60b4ea28c86fe889a355f57c1ef4ab73
+ms.sourcegitcommit: a598c09b73e4e43eea5f4aaefea7ffe062e15c39
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/31/2021
-ms.locfileid: "52710143"
+ms.lasthandoff: 07/22/2021
+ms.locfileid: "53533259"
 ---
 <!-- markdownlint-disable MD041-->
 
 > [!IMPORTANT]
-> A API do computador na nuvem está em visualização privada e está disponível apenas para um grupo selecionado de clientes.
+> A API do Cloud PC está em visualização privada e está disponível apenas para um grupo selecionado de clientes.

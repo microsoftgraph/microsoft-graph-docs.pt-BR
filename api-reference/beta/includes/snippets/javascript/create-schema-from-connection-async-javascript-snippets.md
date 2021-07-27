@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: fa37152849f83d653ba3341cef86d35c01c5880a
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: c466dd2e166f07dba3211fcaab311388ee37da3b
+ms.sourcegitcommit: 5bb981b4853663354a566d4a4a5cbf288939e441
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50784270"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "53581508"
 ---
 ```javascript
 
@@ -20,7 +20,7 @@ const schema = {
   properties: [
     {
       name: 'ticketTitle',
-      type: 'String',
+      type: 'string',
       isSearchable: 'true',
       isRetrievable: 'true',
       labels: [
@@ -29,14 +29,14 @@ const schema = {
     },
     {
       name: 'priority',
-      type: 'String',
+      type: 'string',
       isQueryable: 'true',
       isRetrievable: 'true',
       isSearchable: 'false'
     },
     {
       name: 'assignee',
-      type: 'String',
+      type: 'string',
       isRetrievable: 'true'
     }
   ]
