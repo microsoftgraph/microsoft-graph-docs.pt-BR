@@ -4,12 +4,12 @@ description: Descreve os conjuntos de dados suportados e tipos de armazenamento 
 author: fercobo-msft
 localization_priority: Priority
 ms.prod: data-connect
-ms.openlocfilehash: 32215efe03db92684ac41301f7679774f040cd4e
-ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
+ms.openlocfilehash: 0a260d43f00d90b46a876acf8a40c0600c041967
+ms.sourcegitcommit: a598c09b73e4e43eea5f4aaefea7ffe062e15c39
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "52666734"
+ms.lasthandoff: 07/22/2021
+ms.locfileid: "53534548"
 ---
 # <a name="datasets-regions-and-sinks-that-microsoft-graph-data-connect-supports"></a>Conjuntos de dados, regiões e coletores compatíveis com a Conexão de Dados do Microsoft Graph
 
@@ -19,24 +19,24 @@ A Conexão de Dados do Microsoft Graph dá suporte a vários conjuntos de dados,
 
 A conexão de dados suporta hoje os seguintes conjuntos de dados. Para exibir esquemas de cada conjunto de dados, crie um novo conjunto de dados no Azure Data Factory e use a guia Esquema para exibi-los.
 
-<!-- Fernando's note: Some samples are pending, but Nik will update by 5/20 in the GitHub repo. -->
-| Nome do conjunto de dados                       | Descrição                                                                        | Amostra |
-| ---------------------------------- | ---------------------------------------------------------------------------------- | ------ |
-| BasicDataSet_v0.CalendarView_v0    | Contém os eventos da exibição Calendário.                                        | [CalendarView_v0](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/sampledatasets/BasicDataSet_v0.CalendarView_v0.json) |
-| BasicDataSet_v0.Contact_v0         | Contém as informações disponíveis do catálogo de endereços de cada usuário.                  | [Contact_v0](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/sampledatasets/BasicDataSet_v0.Contact_v0.json)       |
-| BasicDataSet_v0.Contact_v1         | Contém informações de contato do catálogo de endereços de cada usuário.                        | [Contact_v1](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/sampledatasets/BasicDataSet_v0.Contact_v1.json)       |
-| BasicDataSet_v0.DirectReport_v0    | Contém informações de usuário sobre funcionários que se reportam diretamente a cada usuário.   | [DirectReport_v0](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/sampledatasets/BasicDataSet_v0.DirectReport_v0.json)       |
-| BasicDataSet_v0.Event_v0           | Contém as informações de eventos de calendário de um usuário.                            | [Event_v0](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/sampledatasets/BasicDataSet_v0.Event_v0.json)       |
-| BasicDataSet_v0.Event_v1           | Contém os eventos do calendário de cada usuário.                                       | [Event_v1](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/sampledatasets/BasicDataSet_v0.Event_v1.json)       |
-| BasicDataSet_v0.MailboxSettings_v0 | Contém as configurações da caixa de correio de cada usuário.                                        | [MailboxSetting_v0](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/sampledatasets/BasicDataSet_v0.MailboxSettings_v0.json)       |
-| BasicDataSet_v0.MailFolder_v0      | Contém as pastas de email da caixa de correio de cada usuário.                                | [MailFolder_v0](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/sampledatasets/BasicDataSet_v0.MailFolder_v0.json)       |
-| BasicDataSet_v0.Manager_v0         | Contém as informações de usuário para o gerenciador de cada usuário.                            | [Manager_v0](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/sampledatasets/BasicDataSet_v0.Manager_v0.json)       |
-| BasicDataSet_v0.Message_v0         | Contém as mensagens da caixa de correio de um usuário.                                       | [Message_v0](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/sampledatasets/BasicDataSet_v0.Message_v0.json)       |
-| BasicDataSet_v0.Message_v1         | Contém a mensagem na caixa de correio de cada usuário.                                       | [Message_v1](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/sampledatasets/BasicDataSet_v0.Message_v1.json)       |
-| BasicDataSet_v0.SentItem_v0        | Contém as mensagens enviadas da caixa de correio de cada usuário.                               | [SentItem_v0](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/sampledatasets/BasicDataSet_v0.SentItem_v0.json)       |
-| BasicDataSet_v0.SentItem_v1        | Contém a mensagem enviada da caixa de correio de cada usuário.                                | [SentItem_v1](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/sampledatasets/BasicDataSet_v0.SentItem_v1.json)       |
-| BasicDataSet_v0.User_v0            | Contém informações do usuário (DisplayName, UserPrincipalName e outras informações). | [User_v0](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/sampledatasets/BasicDataSet_v0.User_v0.json)       |
-| BasicDataSet_v0.User_v1            | Contém informações do usuário.                                                         | [User_v1](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/sampledatasets/BasicDataSet_v0.User_v1.json)       |
+| Nome do conjunto de dados                       | Descrição                                                                        | Amostra                                                                                                                                        |
+|------------------------------------|------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------|
+| BasicDataSet_v0.CalendarView_v0    | Contém os eventos da exibição Calendário.                                        | [CalendarView_v0](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/sampledatasets/BasicDataSet_v0.CalendarView_v0.json)      |
+| BasicDataSet_v0.Contact_v0         | Contém as informações disponíveis do catálogo de endereços de cada usuário.                  | [Contact_v0](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/sampledatasets/BasicDataSet_v0.Contact_v0.json)                |
+| BasicDataSet_v0.Contact_v1         | Contém informações de contato do catálogo de endereços de cada usuário.                        | [Contact_v1](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/sampledatasets/BasicDataSet_v0.Contact_v1.json)                |
+| BasicDataSet_v0.DirectReport_v0    | Contém informações de usuário sobre funcionários que se reportam diretamente a cada usuário.   | [DirectReport_v0](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/sampledatasets/BasicDataSet_v0.DirectReport_v0.json)      |
+| BasicDataSet_v0.Event_v0           | Contém as informações de eventos de calendário de um usuário.                            | [Event_v0](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/sampledatasets/BasicDataSet_v0.Event_v0.json)                    |
+| BasicDataSet_v0.Event_v1           | Contém os eventos do calendário de cada usuário.                                       | [Event_v1](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/sampledatasets/BasicDataSet_v0.Event_v1.json)                    |
+| BasicDataSet_v0.MailboxSettings_v0 | Contém as configurações da caixa de correio de cada usuário.                                        | [MailboxSetting_v0](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/sampledatasets/BasicDataSet_v0.MailboxSettings_v0.json) |
+| BasicDataSet_v0.MailFolder_v0      | Contém as pastas de email da caixa de correio de cada usuário.                                | [MailFolder_v0](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/sampledatasets/BasicDataSet_v0.MailFolder_v0.json)          |
+| BasicDataSet_v0.Manager_v0         | Contém as informações de usuário para o gerenciador de cada usuário.                            | [Manager_v0](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/sampledatasets/BasicDataSet_v0.Manager_v0.json)                |
+| BasicDataSet_v0.Message_v0         | Contém as mensagens de email da caixa de correio de um usuário.                                       | [Message_v0](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/sampledatasets/BasicDataSet_v0.Message_v0.json)                |
+| BasicDataSet_v0.Message_v1         | Contém a mensagem de email na caixa de correio de cada usuário.                                       | [Message_v1](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/sampledatasets/BasicDataSet_v0.Message_v1.json)                |
+| BasicDataSet_v0.SentItem_v0        | Contém as mensagens enviadas da caixa de correio de cada usuário.                               | [SentItem_v0](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/sampledatasets/BasicDataSet_v0.SentItem_v0.json)              |
+| BasicDataSet_v0.SentItem_v1        | Contém a mensagem enviada da caixa de correio de cada usuário.                                | [SentItem_v1](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/sampledatasets/BasicDataSet_v0.SentItem_v1.json)              |
+| BasicDataSet_v0.TeamChat_v1        | Contém [Mensagens de chat do Teams](https://support.microsoft.com/office/first-things-to-know-about-chat-in-microsoft-teams-88ed0a06-6b59-43a3-8cf7-40c01f2f92f2) para mensagens de chat individuais e em grupo. Este conjunto de dados exclui mensagens de chat explicitamente excluídas pelos usuários.     | [TeamChat_v1](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/sampledatasets/BasicDataSet_v0.TeamChat_v1.json)              |
+| BasicDataSet_v0.User_v0            | Contém informações do usuário (DisplayName, UserPrincipalName e outras informações). | [User_v0](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/sampledatasets/BasicDataSet_v0.User_v0.json)                      |
+| BasicDataSet_v0.User_v1            | Contém informações do usuário.                                                         | [User_v1](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/sampledatasets/BasicDataSet_v0.User_v1.json)                      |
 
 ## <a name="regions"></a>Regiões
 
@@ -54,7 +54,7 @@ A Conexão de Dados dá suporte à extração de dados de diversas regiões do M
 
 Coletores são os locais de saída que o Data Factory usa para colocar os dados no armazenamento do Azure. A Conexão de Dados é compatível agora com os seguintes tipos de coletores:
 
-- [Azure Data Lake Storage Gen1 (ADLS Gen1)](https://docs.microsoft.com/azure/data-lake-store/data-lake-store-overview)
+- [Azure Data Lake Storage Gen1 (ADLS Gen1)](/azure/data-lake-store/data-lake-store-overview)
 - [Azure Data Lake Storage Gen2 (ADLS Gen2)](/azure/storage/blobs/data-lake-storage-introduction)
 - [Azure Storage Blob](/azure/storage/blobs/storage-blobs-overview)
 
@@ -66,5 +66,5 @@ Os coletores possuem as seguintes características:
 
 ## <a name="see-also"></a>Confira também
 
-- [Conector do Azure Data Factory para dados do Microsoft 365](https://docs.microsoft.com/azure/data-factory/connector-office-365)
+- [Conector do Azure Data Factory para dados do Microsoft 365](/azure/data-factory/connector-office-365)
 - [Políticas e cobrança](data-connect-policies.md)

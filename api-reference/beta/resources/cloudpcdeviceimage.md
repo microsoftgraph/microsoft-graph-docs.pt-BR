@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso cloudPcDeviceImage
-description: Representa o recurso de imagem no computador de nuvem.
+description: Representa o recurso de imagem no Cloud PC.
 author: AshleyYangSZ
 localization_priority: Normal
 ms.prod: cloud-pc
 doc_type: resourcePageType
-ms.openlocfilehash: 50154654835d1137db49f9f5690115c05ea7e0c1
-ms.sourcegitcommit: 3873c85f53e026073addca92d31d234af244444c
+ms.openlocfilehash: 83dfce84c3a1c911d51ca7cf66d864945f3391f9
+ms.sourcegitcommit: a598c09b73e4e43eea5f4aaefea7ffe062e15c39
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/10/2021
-ms.locfileid: "53367000"
+ms.lasthandoff: 07/22/2021
+ms.locfileid: "53533917"
 ---
 # <a name="cloudpcdeviceimage-resource-type"></a>Tipo de recurso cloudPcDeviceImage
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Representa o recurso de imagem em um computador de nuvem.
+Representa o recurso de imagem em um computador cloud.
 
 [!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
@@ -37,14 +37,14 @@ Representa o recurso de imagem em um computador de nuvem.
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Identificador exclusivo do recurso de imagem no computador de nuvem. Somente leitura.|
-|sourceImageResourceId|String|A ID do recurso de imagem de origem no Azure. Formato obrigatório: "/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/images/{imageName}".|
+|id|String|Identificador exclusivo do recurso de imagem no Cloud PC. Somente leitura.|
+|sourceImageResourceId|Cadeia de Caracteres|A ID do recurso de imagem de origem no Azure. Formato obrigatório: "/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/images/{imageName}".|
 |displayName|String|O nome de exibição da imagem.|
 |versão|String|A versão da imagem. Por exemplo: 0.0.1, 1.5.13.|
-|osBuildNumber|String|A versão de com build do sistema operacional da imagem. Por exemplo: 1909.|
+|osBuildNumber|Cadeia de Caracteres|A versão de com build do sistema operacional da imagem. Por exemplo: 1909.|
 |operatingSystem|String|O sistema operacional da imagem. Por exemplo: Windows 10 Enterprise.|
 |lastModifiedDateTime|DateTimeOffset|Os dados e a hora em que a imagem foi modificada pela última vez. O tempo é mostrado no formato ISO 8601 e hora UTC (Tempo Universal Coordenado). Por exemplo, meia-noite UTC em 1º de janeiro de 2014 aparece como '2014-01-01T00:00:00Z'.|
-|status|cloudPcDeviceImageStatus|O status da imagem no computador de nuvem. Os valores possíveis são: `pending`, `ready`, `failed`.|
+|status|cloudPcDeviceImageStatus|O status da imagem no Cloud PC. Os valores possíveis são: `pending`, `ready`, `failed`.|
 |statusDetails|cloudPcDeviceImageStatusDetails|Os detalhes do status da imagem, que indica por que o carregamento falhou, se aplicável. Os valores possíveis são: `internalServerError`, `sourceImageNotFound`, `osVersionNotSupported`, e `sourceImageInvalid`.|
 
 ### <a name="cloudpcdeviceimagestatus-values"></a>valores cloudPcDeviceImageStatus

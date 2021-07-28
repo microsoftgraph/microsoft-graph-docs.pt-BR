@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: namkedia
 ms.prod: identity-and-sign-in
-ms.openlocfilehash: 9d10f998916fcba2946d5fa9f4dc17d1da1ab3c7
-ms.sourcegitcommit: 5bb981b4853663354a566d4a4a5cbf288939e441
+ms.openlocfilehash: ecc3882e4c5ea8106209e32e75a8589d05d2a4cc
+ms.sourcegitcommit: a598c09b73e4e43eea5f4aaefea7ffe062e15c39
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "53578743"
+ms.lasthandoff: 07/22/2021
+ms.locfileid: "53535432"
 ---
 # <a name="create-identityprovider"></a>Criar identityProvider
 Namespace: microsoft.graph
@@ -31,7 +31,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 A conta de trabalho ou de estudante precisa pertencer a uma das seguintes funções:
 
-* Administrador Global
+* Administrador global
 * Administrador do Provedor de Identidade Externa
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -62,7 +62,7 @@ Todas as propriedades listadas na tabela a seguir são necessárias.
 |Propriedade|Tipo|Descrição|
 |:---------------|:--------|:----------|
 |clientId|Cadeia de caracteres|O identificador do cliente para o aplicativo obtido ao registrar o aplicativo com o provedor de identidade.|
-|clientSecret|Cadeia de caracteres|O segredo do cliente para o aplicativo obtido quando o aplicativo é registrado com o provedor de identidade. Isso é somente gravação. Uma operação de leitura retorna `****`.|
+|clientSecret|Cadeia de caracteres|O segredo do cliente para o aplicativo obtido quando o aplicativo é registrado com o provedor de identidade. Isso é somente gravação. Uma operação de leitura retorna `****` .|
 |displayName|Cadeia de caracteres|O nome de exibição exclusivo do provedor de identidade.|
 |identityProviderType|Cadeia de caracteres|Para um cenário B2B, valores possíveis: `Google`, `Facebook`. Para um cenário B2C, valores possíveis: `Microsoft`, `Google`, `Amazon`, `LinkedIn`, `Facebook`, `GitHub`, `Twitter`, `Weibo`, `QQ`, `WeChat`.|
 |escopo|String|O escopo define as informações e permissões que você está procurando coletar do provedor de identidade personalizado.|
@@ -81,8 +81,6 @@ Caso não consiga, um `4xx` erro será retornado com detalhes específicos.
 
 Este é um exemplo de solicitação.
 
-
-# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_socialidentityprovider_from_identityproviderbase"
@@ -101,24 +99,6 @@ Content-type: application/json
   "clientSecret": "000000000000"
 }
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-socialidentityprovider-from-identityproviderbase-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-socialidentityprovider-from-identityproviderbase-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-socialidentityprovider-from-identityproviderbase-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/create-socialidentityprovider-from-identityproviderbase-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 
 #### <a name="response"></a>Resposta
 

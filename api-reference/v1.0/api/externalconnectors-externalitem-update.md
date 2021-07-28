@@ -5,12 +5,12 @@ author: mecampos
 localization_priority: Normal
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 10c59c40dd5ae889469b00b708b852326a2fd0e8
-ms.sourcegitcommit: 1940be9846055aa650c6c03982b74a961f1e316a
+ms.openlocfilehash: b93fa76181e907987add5196bd8dc56481aef6e3
+ms.sourcegitcommit: 5bb981b4853663354a566d4a4a5cbf288939e441
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/17/2021
-ms.locfileid: "53467220"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "53580743"
 ---
 # <a name="update-externalitem"></a>Atualizar externalItem
 Namespace: microsoft.graph.externalConnectors
@@ -24,8 +24,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|Não aplicável|
-|Delegado (conta pessoal da Microsoft)|Não aplicável|
+|Delegada (conta corporativa ou de estudante)|Não aplicável|
+|Delegada (conta pessoal da Microsoft)|Não aplicável|
 |Aplicativo| ExternalItem.ReadWrite.OwnedBy, ExternalItem.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -40,8 +40,8 @@ PATCH /external/connections/{connection-id}/items/{item-id}
 
 | Parâmetro     | Tipo   | Descrição                                         |
 |:--------------|:-------|:----------------------------------------------------|
-| connection-id | cadeia de caracteres | A `id` propriedade do [externalConnection que](../resources/externalconnectors-externalconnection.md) contém |
-| item-id       | cadeia de caracteres | A propriedade fornecida `id` pelo desenvolvedor do [externalItem](../resources/externalconnectors-externalitem.md). |
+| connection-id | string | A `id` propriedade do [externalConnection que](../resources/externalconnectors-externalconnection.md) contém |
+| item-id       | string | A propriedade fornecida `id` pelo desenvolvedor do [externalItem](../resources/externalconnectors-externalitem.md). |
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -75,6 +75,8 @@ Se tiver êxito, este método retornará um código de resposta e um `200 OK` [o
 ## <a name="examples"></a>Exemplos
 
 ### <a name="request"></a>Solicitação
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_externalitem",
@@ -96,6 +98,24 @@ Content-length: 360
   ]
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-externalitem-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-externalitem-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-externalitem-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-externalitem-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### <a name="response"></a>Resposta

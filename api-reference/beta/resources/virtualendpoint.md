@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso virtualEndpoint
-description: O recurso virtualEndpoint representa um contêiner para a funcionalidade de gerenciamento de computadores na nuvem.
+description: O recurso virtualEndpoint representa um contêiner para a funcionalidade de gerenciamento de computador na nuvem.
 author: AshleyYangSZ
 localization_priority: Normal
 ms.prod: cloud-pc
 doc_type: resourcePageType
-ms.openlocfilehash: 215179905a9affc9d9c31770511ebbdf22d865ba
-ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
+ms.openlocfilehash: 929b6e1c404dad30d6009264ed8e6eb27985c9e8
+ms.sourcegitcommit: a598c09b73e4e43eea5f4aaefea7ffe062e15c39
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53208187"
+ms.lasthandoff: 07/22/2021
+ms.locfileid: "53533261"
 ---
 # <a name="virtualendpoint-resource-type"></a>Tipo de recurso virtualEndpoint
 
@@ -18,9 +18,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Representa um contêiner para APIs gerenciar computadores na nuvem.
+Representa um contêiner para APIs gerenciar o Cloud PC.
 
-Use a API do computador na nuvem para provisionar e gerenciar áreas de trabalho virtuais para funcionários em uma organização. Use-o em conjunto com a [API do Intune](../resources/intune-graph-overview.md) para gerenciar pontos de extremidade físicos e virtuais.
+Use a API do Cloud PC para provisionar e gerenciar áreas de trabalho virtuais para funcionários em uma organização. Use-o em conjunto com a [API do Intune](../resources/intune-graph-overview.md) para gerenciar pontos de extremidade físicos e virtuais.
 
 [!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 ## <a name="methods"></a>Métodos
@@ -50,8 +50,8 @@ Use a API do computador na nuvem para provisionar e gerenciar áreas de trabalho
 |Relação|Tipo|Descrição|
 |:---|:---|:---|
 |cloudPCs|[Coleção cloudPC](../resources/cloudpc.md)|Áreas de trabalho virtuais gerenciadas na nuvem.|
-|deviceImages|[Coleção cloudPcDeviceImage](../resources/cloudpcdeviceimage.md)|O recurso de imagem no computador de nuvem.|
-|onPremisesConnections|[Coleção cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md)|Uma coleção definida de informações de recursos do Azure que podem ser usadas para estabelecer conectividade de rede local para PCs de nuvem.|
+|deviceImages|[Coleção cloudPcDeviceImage](../resources/cloudpcdeviceimage.md)|O recurso de imagem no Cloud PC.|
+|onPremisesConnections|[Coleção cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md)|Uma coleção definida de informações de recursos do Azure que pode ser usada para estabelecer a conectividade de rede local para PCs na Nuvem.|
 |provisioningPolicies|[Coleção cloudPcProvisioningPolicy](../resources/cloudpcprovisioningpolicy.md)|Política de provisionamento de computadores na nuvem.|
 |userSettings|[Coleção cloudPcUserSetting](../resources/cloudpcusersetting.md)|Configurações do usuário do computador na nuvem. |
 |auditEvents|[Coleção cloudPcAuditEvent](../resources/cloudpcauditevent.md)|Evento de auditoria de computador na nuvem.|

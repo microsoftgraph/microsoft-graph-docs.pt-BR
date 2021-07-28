@@ -5,12 +5,12 @@ author: AshleyYangSZ
 localization_priority: Normal
 ms.prod: cloud-pc
 doc_type: resourcePageType
-ms.openlocfilehash: 534e2b14e7df4f8b571e14e1238ad6ed03d96a67
-ms.sourcegitcommit: 9ac6bbab3df22e7629cf2bde796b527337c680aa
+ms.openlocfilehash: 0772bfcb3ca6050ec9d920fef24613555e30f6db
+ms.sourcegitcommit: a598c09b73e4e43eea5f4aaefea7ffe062e15c39
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53082157"
+ms.lasthandoff: 07/22/2021
+ms.locfileid: "53534029"
 ---
 # <a name="cloudpcusersetting-resource-type"></a>Tipo de recurso cloudPcUserSetting
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Representa uma configuração de usuário de computador na nuvem.
+Representa uma configuração de usuário do computador na nuvem.
 
 [!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
@@ -35,10 +35,10 @@ Representa uma configuração de usuário de computador na nuvem.
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Identificador exclusivo para a configuração do usuário do computador na nuvem. Somente leitura.|
+|id|String|Identificador exclusivo para a configuração do usuário do Cloud PC. Somente leitura.|
 |displayName|String|O nome da configuração exibido na interface do usuário. |
-|localAdminEnabled|Booliano|Indica se a opção de administrador local está habilitada. O valor padrão é `false`. Para habilitar a opção de administrador local, altere a configuração para `true` . Se a opção de administrador local estiver habilitada, o usuário final poderá ser um administrador do dispositivo de computador na nuvem. |
-|selfServiceEnabled|Booliano|Indica se a opção self-service está habilitada. O valor padrão é `false`. Para habilitar a opção self-service, altere a configuração para `true` .Se a opção self-service estiver habilitada, o usuário final poderá executar algumas operações de autoatendenciamento, como atualizar o computador de nuvem por meio do portal do usuário final.|
+|localAdminEnabled|Boolean|Indica se a opção de administrador local está habilitada. O valor padrão é `false`. Para habilitar a opção de administrador local, altere a configuração para `true` . Se a opção de administrador local estiver habilitada, o usuário final poderá ser um administrador do dispositivo cloud pc. |
+|selfServiceEnabled|Boolean|Indica se a opção self-service está habilitada. O valor padrão é `false`. Para habilitar a opção self-service, altere a configuração para `true` .Se a opção self-service estiver habilitada, o usuário final poderá executar algumas operações de autoatendenciamento, como atualizar o computador na nuvem por meio do portal do usuário final.|
 |lastModifiedDateTime|DateTimeOffset|A última data e hora em que a configuração foi modificada. O tipo Timestamp representa as informações de data e hora usando o formato ISO 8601 e está sempre em horário UTC. Por exemplo, meia-noite UTC em 1º de janeiro de 2014 tem esta aparência: '2014-01-01T00:00:00Z'. |
 |createdDateTime|DateTimeOffset|A data e a hora em que a configuração foi criada. O tipo Timestamp representa as informações de data e hora usando o formato ISO 8601 e está sempre em horário UTC. Por exemplo, meia-noite UTC em 1º de janeiro de 2014 tem esta aparência: '2014-01-01T00:00:00Z'. |
 

@@ -5,12 +5,12 @@ doc_type: enumPageType
 localization_priority: Normal
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
-ms.openlocfilehash: d4cac5a2b0d7b5d9c2e6a969da7e8c05c85322fb
-ms.sourcegitcommit: 1940be9846055aa650c6c03982b74a961f1e316a
+ms.openlocfilehash: d628a45b99d5fe9fb0416820e34ecf296e740f79
+ms.sourcegitcommit: a598c09b73e4e43eea5f4aaefea7ffe062e15c39
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/17/2021
-ms.locfileid: "53467131"
+ms.lasthandoff: 07/22/2021
+ms.locfileid: "53533903"
 ---
 # <a name="enum-values"></a>Valores denum
 
@@ -124,7 +124,7 @@ Namespace: microsoft.graph
 
 |Member|
 |:---|
-|todos |
+|all|
 |Navegador|
 |mobileAppsAndDesktopClients|
 |exchangeActiveSync|
@@ -142,11 +142,11 @@ Namespace: microsoft.graph
 
 |Member|
 |:---|
-|String|
+|Cadeia de Caracteres|
 |Inteiro|
 |Referência|
 |Binário|
-|Booliano|
+|Boolean|
 |DateTime|
 
 ### <a name="mutability-values"></a>valores de mutabilidade
@@ -456,7 +456,7 @@ Namespace: microsoft.graph
 
 |Member|
 |:---|
-|todos |
+|all|
 |privilegedAdmin|
 |admin|
 |usuário|
@@ -466,7 +466,7 @@ Namespace: microsoft.graph
 
 |Member|
 |:---|
-|todos |
+|all|
 |Membro|
 |guest|
 |unknownFutureValue|
@@ -1069,7 +1069,7 @@ Namespace: microsoft.graph
 |:-------------------------
 | nenhuma
 | contactsOnly
-| todos 
+| all
 
 
 ### <a name="automaticrepliesstatus-values"></a>valores automaticRepliesStatus
@@ -1112,15 +1112,17 @@ Namespace: microsoft.graph
 
 ### <a name="educationsynchronizationstatus-values"></a>valores educationSynchronizationStatus
 
-| Membro             | Valor |
-| :----------------- | :---- |
-| pausado             | 0     |
-| inProgress         | 1     |
-| sucesso            | 2     |
-| erro              | 3     |
-| validationError    | 4      |
-| em quarentena        | 5      |
-| unknownFutureValue | 6      |
+| Member             |
+| :----------------- |
+| pausado             |
+| inProgress         |
+| sucesso            |
+| erro              |
+| validationError    |
+| em quarentena        |
+| unknownFutureValue |
+| extração         |
+| validação         |
 
 ### <a name="educationexternalsource-values"></a>valores educationExternalSource
 
@@ -1644,7 +1646,7 @@ Valores possíveis para tipos de conta de usuário (associação ao grupo), por 
 
 |Member|
 |:---|
-|todos |
+|all|
 |qualquer|
 
 ### <a name="risklevel-values"></a>valores riskLevel
@@ -1780,13 +1782,15 @@ Valores possíveis para tipos de conta de usuário (associação ao grupo), por 
 | Nenhuma   | 0     |
 | Adicionar    | 1     |
 | Atualizar | 2     |
-| Delete | 4      |
+| Excluir | 4      |
 
 ### <a name="chatmessagetype-values"></a>valores chatMessageType
 
 |Member|
 |:---|
 |message|
+|unknownFutureValue|
+|systemEventMessage|
 
 ### <a name="chatmessageimportance-values"></a>valores chatMessageImportance
 
@@ -1997,7 +2001,7 @@ Valores possíveis para tipos de conta de usuário (associação ao grupo), por 
 |windows|
 |windowsPhone|
 |macOS|
-|todos |
+|all|
 |unknownFutureValue|
 
 ### <a name="priority-values"></a>valores de prioridade
@@ -2253,14 +2257,14 @@ Valores possíveis para tipos de conta de usuário (associação ao grupo), por 
 |Member|
 |:---|
 |nenhuma|
-|todos |
+|all|
 |selected|
 
 ### <a name="teamsappinstallationscope-values"></a>Valores teamsAppInstallationScope
 
 |Membro    |Valor    |Descrição |
 |:---------|:--------|:----------- |
-|equipe      |0        |Indica que o aplicativo Teams pode ser instalado em uma equipe e está autorizado a acessar os dados dessa equipe.|
+|team      |0        |Indica que o aplicativo Teams pode ser instalado em uma equipe e está autorizado a acessar os dados dessa equipe.|
 |groupChat |1        |Indica que o aplicativo Teams pode ser instalado em um chat de grupo e está autorizado a acessar os dados desse chat de grupo.|
 |pessoal  |2        |Indica que o aplicativo Teams pode ser instalado no escopo pessoal de um usuário e está autorizado a acessar os dados desse usuário.|
 
@@ -2433,7 +2437,7 @@ Valores possíveis para tipos de conta de usuário (associação ao grupo), por 
 
 |Member|
 |:---|
-|equipe|
+|team|
 |channel|
 |chat|
 |unknownFutureValue|
@@ -2451,3 +2455,21 @@ Valores possíveis para tipos de conta de usuário (associação ao grupo), por 
 |phoneUser|
 |unknownFutureValue|
 
+### <a name="callrecordingstatus-values"></a>valores callRecordingStatus 
+
+|Member|
+|:---|
+|sucesso|
+|failure|
+|initial|
+|chunkFinished|
+|unknownFutureValue|
+
+### <a name="teamworkcalleventtype-values"></a>valores de teamworkCallEventType 
+
+|Member|
+|:---|
+|call|
+|meeting|
+|screenShare|
+|unknownFutureValue|

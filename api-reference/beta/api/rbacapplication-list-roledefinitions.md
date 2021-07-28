@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 58d8ca676a3462818e82e69d4ab344ec0479514d
-ms.sourcegitcommit: 486fe9c77d4d89c5416bb83e8c716e6918c47370
+ms.openlocfilehash: 42290c1b6473cb828a73c315f1b9cde4118c8713
+ms.sourcegitcommit: a598c09b73e4e43eea5f4aaefea7ffe062e15c39
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53442245"
+ms.lasthandoff: 07/22/2021
+ms.locfileid: "53534050"
 ---
 # <a name="list-unifiedroledefinitions"></a>Listar unifiedRoleDefinitions
 
@@ -21,14 +21,14 @@ Namespace: microsoft.graph
 Obter uma lista de [objetos unifiedRoleDefinition](../resources/unifiedroledefinition.md) para um provedor RBAC.
 
 No momento, há suporte para os seguintes provedores RBAC:
-- cloud PC 
+- Cloud PC 
 - gerenciamento de dispositivos (Intune)
 - directory (Azure AD) 
 - gerenciamento de direitos (Azure AD)
 
 [!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Dependendo do provedor RBAC e do tipo de permissão (delegado ou aplicativo) necessário, escolha na tabela a seguinte permissão com menos privilégios necessária para chamar essa API. Para saber mais, incluindo [ter cuidado antes](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) de escolher permissões mais privilegiadas, consulte [Permissions](/graph/permissions-reference).
 
@@ -36,32 +36,32 @@ Dependendo do provedor RBAC e do tipo de permissão (delegado ou aplicativo) nec
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) |  CloudPC.Read.All, CloudPC.ReadWrite.All   |
-|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | CloudPC.Read.All, CloudPC.ReadWrite.All  |
+|Delegado (conta corporativa ou de estudante) |  CloudPC.Read.All, CloudPC.ReadWrite.All   |
+|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
+|Application | CloudPC.Read.All, CloudPC.ReadWrite.All  |
 
 ### <a name="for-device-management-intune-provider"></a>Para o provedor de gerenciamento de dispositivos (Intune)
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) |  DeviceManagementRBAC.Read.All, DeviceManagementRBAC.ReadWrite.All   |
-|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | DeviceManagementRBAC.Read.All, DeviceManagementRBAC.ReadWrite.All |
+|Delegado (conta corporativa ou de estudante) |  DeviceManagementRBAC.Read.All, DeviceManagementRBAC.ReadWrite.All   |
+|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
+|Application | DeviceManagementRBAC.Read.All, DeviceManagementRBAC.ReadWrite.All |
 
 ### <a name="for-directory-azure-ad-provider"></a>Provedor do Azure AD (Diretório)
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) |  RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All, Directory.AccessAsUser.All   |
-|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All |
+|Delegado (conta corporativa ou de estudante) |  RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All, Directory.AccessAsUser.All   |
+|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
+|Application | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All |
 
 ### <a name="for-entitlement-management-provider"></a>Para provedor de gerenciamento de direitos
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) |  EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All   |
-|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegado (conta corporativa ou de estudante) |  EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All   |
+|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Sem suporte. |
 
 ## <a name="http-request"></a>Solicitação HTTP

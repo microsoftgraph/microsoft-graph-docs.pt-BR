@@ -5,12 +5,12 @@ author: mecampos
 localization_priority: Normal
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: f76eb8f174958d8698528e49fffda105c54cc7f4
-ms.sourcegitcommit: 1940be9846055aa650c6c03982b74a961f1e316a
+ms.openlocfilehash: 32d51980069ef74bed0d3c72f7a2d112d2f1a1f7
+ms.sourcegitcommit: 5bb981b4853663354a566d4a4a5cbf288939e441
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/17/2021
-ms.locfileid: "53467208"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "53580665"
 ---
 # <a name="get-schema"></a>Obter esquema
 Namespace: microsoft.graph.externalConnectors
@@ -24,8 +24,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|Não aplicável|
-|Delegado (conta pessoal da Microsoft)|Não aplicável|
+|Delegada (conta corporativa ou de estudante)|Não aplicável|
+|Delegada (conta pessoal da Microsoft)|Não aplicável|
 |Aplicativo| ExternalConnection.ReadWrite.OwnedBy|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -56,6 +56,8 @@ Se tiver êxito, este método retornará um código de resposta e um objeto `200
 ## <a name="examples"></a>Exemplos
 
 ### <a name="request"></a>Solicitação
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_schema"
@@ -64,6 +66,24 @@ Se tiver êxito, este método retornará um código de resposta e um objeto `200
 ``` http
 GET https://graph.microsoft.com/v1.0/connections/contosohr/schema
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-schema-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-schema-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-schema-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-schema-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### <a name="response"></a>Resposta

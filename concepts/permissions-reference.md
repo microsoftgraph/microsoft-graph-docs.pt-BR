@@ -4,12 +4,12 @@ description: O Microsoft Graph expõe as permissões granulares que controlam o 
 author: jackson-woods
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 2ffa8a0d1bc6359ec5a7424674a297e8763c989d
-ms.sourcegitcommit: 8b23038be1141d7f22eb61de6aafdb16d4f9c826
+ms.openlocfilehash: a98c092294f28b32ba5fc8a747b1ff9aad1ee17a
+ms.sourcegitcommit: 5bb981b4853663354a566d4a4a5cbf288939e441
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "53401488"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "53580416"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Referência de permissões do Microsoft Graph
 
@@ -231,6 +231,7 @@ Nenhum.
 | _Application.Read.All_ | Ler aplicativos | Permite que o aplicativo leia aplicativos e entidades de serviço em nome do usuário conectado. | Sim |
 | _Application.ReadWrite.All_ | Ler e gravar todos os aplicativos |  Permite que o aplicativo crie, leia, atualize e exclua aplicativos e entidades de serviço em nome do usuário conectado. | Sim |
 | _AppRoleAssignment.ReadWrite.All_ | Gerenciar concessões de permissão de aplicativo e atribuições de função de aplicativo | Permite que o aplicativo gerencie concessões de permissão para permissões de aplicativos para qualquer API (incluindo o Microsoft Graph) e atribuições de aplicativos para qualquer aplicativo, em nome do usuário conectado. | Sim |
+| _DelegatedPermissionGrant.ReadWrite.All_ | Gerenciar concessões de permissão delegadas | Permite que o aplicativo gerencie concessões de permissão para permissões de representante expostas por qualquer API (incluindo o Microsoft Graph), em nome do usuário conectado. | Sim |
 
 #### <a name="application-permissions"></a>Permissões de aplicativos
 
@@ -240,6 +241,7 @@ Nenhum.
 | _Application.ReadWrite.All_ | Ler e gravar todos os aplicativos | Permite que o aplicativo de chamada crie e gerencie (leia, atualize, atualize segredos do aplicativo e exclua) aplicativos e serviços sem um usuário conectado.  Não permite o gerenciamento de concessões de autorizações ou atribuições de aplicativos a usuários ou grupos. | Sim |
 | _Application.ReadWrite.OwnedBy_ | Gerenciar aplicativos que este aplicativo criar ou possuir | Permite que o aplicativo de chamada crie outros aplicativos e entidades de serviço, e gerencie completamente esses aplicativos e entidades de serviço (leia, atualize, atualize os segredos do aplicativo e exclua), sem um usuário conectado.  Ele não poderá atualizar os aplicativos que não pertencem a ele. Não permite o gerenciamento de concessões de autorizações ou atribuições de aplicativos a usuários ou grupos. | Sim |
 | _AppRoleAssignment.ReadWrite.All_ | Gerenciar concessões de permissão de aplicativo e atribuições de função de aplicativo | Permite que o aplicativo gerencie concessões de permissão para permissões de aplicativos para qualquer API (incluindo o Microsoft Graph) e atribuições de aplicativos para qualquer aplicativo, sem um usuário conectado. | Sim |
+| _DelegatedPermissionGrant.ReadWrite.All_ | Gerenciar todas as concessões de permissão de representante | Permite que o aplicativo conceda ou revogue qualquer permissão delegada para qualquer API (incluindo Microsoft Graph), sem um usuário conectado. | Sim |
 
 ### <a name="remarks"></a>Comentários
 

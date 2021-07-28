@@ -83,6 +83,8 @@ items:
             href: /graph/graph-explorer/graph-explorer-features?context=graph/api/beta
       - name: Usar o Postman
         href: /graph/use-postman?context=graph/api/beta
+      - name: Mensagens do sistema
+        href: /graph/system-messages?context=graph/api/beta
   - name: Migrar
     expanded: false
     items:
@@ -262,7 +264,7 @@ items:
                 href: api/user-list-events.md
               - name: Modo de exibição de lembrete
                 href: api/user-reminderview.md
-          - name: Contatos
+          - name: Contacts
             href: resources/contact.md
             items:
               - name: Criar contato
@@ -1430,9 +1432,9 @@ items:
                     href: resources/callrecords-callrecord.md
                   - name: Obter
                     href: api/callrecords-callrecord-get.md
-              - name: Session
+              - name: Sessão
                 items:
-                  - name: Session
+                  - name: Sessão
                     href: resources/callrecords-session.md
                   - name: List
                     href: api/callrecords-session-list.md
@@ -1497,7 +1499,7 @@ items:
                     href: api/ediscovery-case-close.md
                   - name: Reabrir
                     href: api/ediscovery-case-reopen.md
-                  - name: Delete
+                  - name: Excluir
                     href: api/ediscovery-case-delete.md
               - name: Custodian
                 href: resources/ediscovery-custodian.md
@@ -9255,7 +9257,7 @@ items:
                         href: api/intune-shared-devicemanagementderivedcredentialsettings-update.md
                       - name: List
                         href: api/intune-shared-devicemanagementderivedcredentialsettings-list.md
-                      - name: Delete
+                      - name: Excluir
                         href: api/intune-shared-devicemanagementderivedcredentialsettings-delete.md
                   - name: Script de gerenciamento de dispositivo
                     href: resources/intune-shared-devicemanagementscript.md
@@ -11664,7 +11666,7 @@ items:
                         href: api/identityapiconnector-update.md
                       - name: Upload um certificado de cliente
                         href: api/identityapiconnector-uploadclientcertificate.md
-                      - name: Delete
+                      - name: Excluir
                         href: api/identityapiconnector-delete.md
           - name: Governança
             items:
@@ -12642,7 +12644,7 @@ items:
                     href: api/itempublication-update.md
                   - name: Excluir
                     href: api/itempublication-delete.md
-              - name: Responsibilities
+              - name: Responsabilidades
                 items:
                   - name: Responsabilidade da pessoa
                     href: resources/personresponsibility.md
@@ -13901,6 +13903,8 @@ items:
                 href: api/teamworktag-delete.md
               - name: Listar membros
                 href: api/teamworktagmember-list.md
+              - name: Criar membro
+                href: api/teamworktagmember-post.md
               - name: Obter membro
                 href: api/teamworktagmember-get.md
               - name: Excluir membro

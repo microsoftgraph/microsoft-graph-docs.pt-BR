@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: namkedia
 ms.prod: identity-and-sign-in
-ms.openlocfilehash: 4056229ecb748ff9c99a3b332298d32e67fdaf66
-ms.sourcegitcommit: 32c83957ee69f21a10cd5f759adb884ce4b41c52
+ms.openlocfilehash: d458e6ad07603a9929d7271478aa87d2d46b9e4f
+ms.sourcegitcommit: 5bb981b4853663354a566d4a4a5cbf288939e441
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51921211"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "53579236"
 ---
 # <a name="update-identityprovider"></a>Atualizar identityProvider
 Namespace: microsoft.graph
@@ -21,7 +21,7 @@ Atualize as propriedades de um [objeto socialIdentityProvider](../resources/soci
 
 Para o Azure AD B2C, atualize as propriedades de [um objeto socialIdentityProvider](../resources/socialidentityprovider.md), [openIdConnectIdentityProvider](../resources/openidconnectidentityprovider.md) ou [appleIdentityProvider.](../resources/appleidentityprovider.md)
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegada (conta corporativa ou de estudante)|IdentityProvider.ReadWrite.All|
 |Delegada (conta pessoal da Microsoft)| Sem suporte.|
-|Application| IdentityProvider.ReadWrite.All|
+|Aplicativo| IdentityProvider.ReadWrite.All|
 
 A conta de trabalho ou de estudante precisa pertencer a uma das seguintes funções:
 
@@ -62,7 +62,7 @@ No Azure AD B2C, forneça um objeto JSON com uma ou mais propriedades que precis
 |Propriedade|Tipo|Descrição|
 |:---------------|:--------|:----------|
 |clientId|Cadeia de caracteres|O identificador do cliente para o aplicativo obtido ao registrar o aplicativo com o provedor de identidade.|
-|clientSecret|Cadeia de caracteres|O segredo do cliente para o aplicativo obtido quando o aplicativo é registrado com o provedor de identidade. Isso é somente gravação. Uma operação de leitura retorna "\*\*\*\*".|
+|clientSecret|Cadeia de caracteres|O segredo do cliente para o aplicativo obtido quando o aplicativo é registrado com o provedor de identidade. Isso é somente gravação. Uma operação de leitura retorna `****`.|
 |displayName|Cadeia de caracteres|O nome de exibição exclusivo do provedor de identidade.|
 
 ### <a name="openidconnectidentityprovider-object"></a>Objeto openIdConnectIdentityProvider
@@ -72,11 +72,11 @@ No Azure AD B2C, forneça um objeto JSON com uma ou mais propriedades que precis
 |clientId|Cadeia de caracteres|O identificador do cliente para o aplicativo obtido ao registrar o aplicativo com o provedor de identidade.|
 |clientSecret|Cadeia de caracteres|O segredo do cliente para o aplicativo obtido ao registrar o aplicativo no provedor de identidade. O clientSecret tem uma dependência de **responseType**. <ul><li>Quando **responseType** é `code` , um segredo é necessário para a troca de código de auth.</li><li>Quando **responseType** é `id_token` o segredo não é necessário porque não há troca de código. O id_token é retornado diretamente da resposta de autorização.</li></ul>|
 |displayName|Cadeia de caracteres|O nome de exibição exclusivo do provedor de identidade.|
-|domainHint|String|A dica de domínio pode ser usada para pular diretamente para a página de entrada do provedor de identidade especificado, em vez de fazer com que o usuário faça uma seleção entre a lista de provedores de identidade disponíveis.|
+|domainHint|Cadeia de caracteres|A dica de domínio pode ser usada para pular diretamente para a página de entrada do provedor de identidade especificado, em vez de fazer com que o usuário faça uma seleção entre a lista de provedores de identidade disponíveis.|
 |claimsMapping|[claimsMapping](../resources/claimsmapping.md)|Depois que o provedor OIDC envia um token de ID de volta para o Azure AD, o Azure AD precisa ser capaz de mapear as declarações do token recebido para as declarações que o Azure AD reconhece e usa. Esse tipo complexo captura esse mapeamento.|
-|metadataUrl|String|A URL do documento de metadados do provedor de identidade do OpenID Connect. Cada provedor de identidade do OpenID Connect descreve um documento de metadados que contém a maioria das informações necessárias para executar a conexão. Isso inclui informações como as URLs a ser usadas e o local das chaves de assinatura públicas do serviço. O documento de metadados do OpenID Connect está sempre localizado em um ponto de extremidade que termina em `.well-known/openid-configuration` . Forneça a URL de metadados para o provedor de identidade do OpenID Connect que você adicionar.|
-|responseMode|String|O modo de resposta define o método usado para enviar dados de volta do provedor de identidade personalizado para o Azure AD B2C. Valores possíveis: `form_post` , `query` .|
-|responseType|String|O tipo de resposta descreve o tipo de informação enviada de volta na chamada inicial para o authorization_endpoint do provedor de identidade personalizado. Valores possíveis: `code` , `id_token` , `token` .|
+|metadataUrl|Cadeia de caracteres|A URL do documento de metadados do provedor de Conexão OpenID. Cada provedor Conexão de identidade OpenID descreve um documento de metadados que contém a maioria das informações necessárias para executar a login. Isso inclui informações como as URLs a ser usadas e o local das chaves de assinatura públicas do serviço. O documento Conexão de metadados do OpenID está sempre localizado em um ponto de extremidade que termina em `.well-known/openid-configuration` . Forneça a URL de metadados para o provedor Conexão de identidade openid que você adicionar.|
+|responseMode|Cadeia de caracteres|O modo de resposta define o método usado para enviar dados de volta do provedor de identidade personalizado para o Azure AD B2C. Valores possíveis: `form_post` , `query` .|
+|responseType|Cadeia de caracteres|O tipo de resposta descreve o tipo de informação enviada de volta na chamada inicial para o authorization_endpoint do provedor de identidade personalizado. Valores possíveis: `code` , `id_token` , `token` .|
 |escopo|String|O escopo define as informações e permissões que você está procurando coletar do provedor de identidade personalizado.|
 
 ### <a name="applemanagedidentityprovider-object"></a>Objeto appleManagedIdentityProvider
@@ -91,7 +91,7 @@ No Azure AD B2C, forneça um objeto JSON com uma ou mais propriedades que precis
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um código de resposta `204 No Content`. Caso não consiga, um `4xx` erro será retornado com detalhes específicos.
+Se tiver êxito, este método retornará um código de resposta `204 No Content`. Caso não consiga, um `4xx` erro será retornado com detalhes específicos.
 
 ## <a name="examples"></a>Exemplos
 
@@ -112,9 +112,9 @@ Este é um exemplo de solicitação.
 ``` http
 PATCH https://graph.microsoft.com/beta/identity/identityProviders/Amazon-OAUTH
 Content-type: application/json
-Content-length: 41
 
 {
+  "@odata.type": "#microsoft.graph.socialIdentityProvider",
   "clientSecret": "1111111111111"
 }
 ```
@@ -137,8 +137,6 @@ Content-length: 41
 ---
 
 
----
-
 #### <a name="response"></a>Resposta
 
 Este é um exemplo de resposta.
@@ -152,7 +150,7 @@ Este é um exemplo de resposta.
 HTTP/1.1 204 No Content
 ```
 
-### <a name="example-2-update-a-specific-openid-connect-identity-provider-only-for-azure-ad-b2c"></a>Exemplo 2: atualizar um provedor de identidade **do OpenID Connect** específico (somente para o Azure AD B2C)
+### <a name="example-2-update-a-specific-openid-connect-identity-provider-only-for-azure-ad-b2c"></a>Exemplo 2: atualizar um provedor de identidade **Conexão OpenID específico** (somente para o Azure AD B2C)
 
 #### <a name="request"></a>Solicitação
 
@@ -193,8 +191,6 @@ Content-length: 41
 
 ---
 
-
----
 
 #### <a name="response"></a>Resposta
 
@@ -250,8 +246,6 @@ Content-length: 41
 
 ---
 
-
----
 
 #### <a name="response"></a>Resposta
 

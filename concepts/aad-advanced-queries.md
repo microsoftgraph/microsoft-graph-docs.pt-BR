@@ -4,12 +4,12 @@ description: Os objetos do diretório Microsoft Azure Active Directory suportam 
 author: Licantrop0
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: eb8b5b7b8438f900535efd6ce625059919d76952
-ms.sourcegitcommit: 486fe9c77d4d89c5416bb83e8c716e6918c47370
+ms.openlocfilehash: 5b076b047d06b81428dbbce83e152c23e677eb24
+ms.sourcegitcommit: a598c09b73e4e43eea5f4aaefea7ffe062e15c39
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53443197"
+ms.lasthandoff: 07/22/2021
+ms.locfileid: "53534183"
 ---
 # <a name="advanced-query-capabilities-on-azure-ad-directory-objects"></a>Recursos avançados de consulta nos objetos do diretório Microsoft Azure Active Directory
 
@@ -80,10 +80,10 @@ As propriedades dos objetos de diretório se comportam de forma diferente em seu
   + Todas as propriedades que suportam o `eq` operador também suportam os `ne` ou `NOT` operadores.
   + O `ne` operador nega onde de outra forma o `eq` operador avaliaria para `true`. Para consultas que utilizam o `any` operador lambda, usar o `NOT` operador. Veja [Filtrar utilizando operadores lambda](/graph/query-parameters#filter-using-lambda-operators).
 
-A tabela a seguir resume o suporte a `$filter` operadores por propriedades no [objeto de diretório](/graph/api/resources/user) de usuários.
+A tabela a seguir resume o suporte para operadores `$filter` por propriedades de todos os objetos de diretório.
 
 - ![Funciona por padrão. Não requer parâmetros de consulta avançados.](/graph/images/advanced-query-parameters/default.png) A propriedade suporta `$filter` com o operador por padrão.
-- ![Requer parâmetros de consulta avançados.](/graph/images/advanced-query-parameters/advanced.png) O operador específico `$filter` requer *parâmetros de consulta avançados*:
+- ![Requer parâmetros de consulta avançados.](/graph/images/advanced-query-parameters/advanced.png) O operador específico `$filter` requer *parâmetros de consulta avançados*, ou seja:
   - `ConsistencyLevel=eventual` cabeçalho
   - `$count=true` cadeia de caracteres
 - Células em branco indicam que a propriedade não suporta o uso de `$filter` com o operador.

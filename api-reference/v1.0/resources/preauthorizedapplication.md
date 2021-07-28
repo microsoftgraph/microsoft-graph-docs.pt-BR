@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: 276b6f618b01d80fd66fda40c0b617a8fd01a6ac
-ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
+ms.openlocfilehash: 9b82d18f769ddb9e1b0291a48ce506d414b88367
+ms.sourcegitcommit: 5bb981b4853663354a566d4a4a5cbf288939e441
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50760971"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "53580195"
 ---
 # <a name="preauthorizedapplication-resource-type"></a>Tipo de recurso preAuthorizedApplication
 
@@ -23,7 +23,7 @@ Lista os aplicativos cliente pré-autorizados com as permissões especificadas p
 | Propriedade | Tipo | Descrição |
 |:---------------|:--------|:----------|
 |appId|String| O identificador exclusivo do aplicativo. |
-|delegatedPermissionIds|Coleção de cadeias de caracteres| O identificador exclusivo para [o oauth2PermissionScopes](permissionscope.md) que o aplicativo requer. |
+|permissionIds|Coleção de cadeias de caracteres| O identificador exclusivo para [o oauth2PermissionScopes](permissionscope.md) que o aplicativo requer. |
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
