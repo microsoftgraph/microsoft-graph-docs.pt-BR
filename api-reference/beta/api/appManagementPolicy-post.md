@@ -1,0 +1,141 @@
+---
+title: Criar appManagementPolicy
+description: Criar uma política de gerenciamento de aplicativos.
+localization_priority: Normal
+author: madansr7
+ms.prod: identity-and-sign-in
+doc_type: apiPageType
+ms.openlocfilehash: 362e85ddd5ceb9727aabf398509a852282c3ef4a
+ms.sourcegitcommit: b711aed8acc18512cf6591f4108ed5ddf05b649d
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53660340"
+---
+# <a name="create-appmanagementpolicy"></a>Criar appManagementPolicy
+
+Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Crie um [objeto appManagementPolicy.](../resources/appManagementPolicy.md)
+
+## <a name="permissions"></a>Permissões
+
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
+
+| Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)                                                |
+| :------------------------------------- | :--------------------------------------------------------- |
+| Delegada (conta corporativa ou de estudante)     | Policy.ReadWrite.ApplicationConfiguration |
+| Delegada (conta pessoal da Microsoft) | Sem suporte.                                             |
+| Aplicativo                            | Policy.ReadWrite.ApplicationConfiguration |
+
+## <a name="http-request"></a>Solicitação HTTP
+
+<!-- { "blockType": "ignored" } -->
+
+```http
+POST /policies/appManagementPolicies
+```
+
+## <a name="request-headers"></a>Cabeçalhos de solicitação
+
+| Nome          | Descrição                 |
+| :------------ | :-------------------------- |
+| Autorização | {token} de portador. Obrigatório.   |
+| Content-Type  | application/json. Obrigatório. |
+
+## <a name="request-body"></a>Corpo da solicitação
+
+No corpo da solicitação, forneça uma representação JSON de [um appManagementPolicy](../resources/appManagementPolicy.md).
+
+## <a name="response"></a>Resposta
+
+Se tiver êxito, este método retornará um `201 Created` código de resposta com o novo objeto [appManagementPolicy ](../resources/appmanagementpolicy.md) na carga de resposta.
+
+## <a name="examples"></a>Exemplos
+
+### <a name="request"></a>Solicitação
+
+Este é um exemplo de solicitação. Essa solicitação criou uma política de gerenciamento de aplicativos com as seguintes configurações:
+
+- Habilita a política.
+- Bloqueia a criação de novas senhas para aplicativos e entidades de serviço após 2019-10-19 às 10:37 hora UTC.
+- Limita segredos de senha para aplicativos e entidades de serviço criadas após 2019-10-19 às 10:37 HORA UTC para menos de xx dias.
+
+<!-- {
+  "blockType": "request",
+  "name": "create_appManagementPolicy"
+}-->
+
+```http
+POST https://graph.microsoft.com/beta/policies/appManagementPolicies
+
+{
+    "displayName": "Credential management policy",
+    "description": "Cred policy sample",
+    "isEnabled": true,
+    "restrictions": {
+        "passwordCredentials": [
+            {
+                "restrictionType": "passwordAddition",
+                "maxLifetime": null,
+                "restrictForAppsCreatedAfterDateTime": "2019-10-19T10:37:00Z"
+            },
+            {
+                "restrictionType": "passwordLifetime",
+                "maxLifetime": "P4DT12H30M5S",
+                "restrictForAppsCreatedAfterDateTime": "2018-10-19T10:37:00Z"
+            }
+        ]
+    }
+}
+
+```
+
+### <a name="response"></a>Resposta
+
+Este é um exemplo de resposta.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.appManagementPolicy"
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#policies/appManagementPolicies/$entity",
+    "id": "a4ab1ed9-46bb-4bef-88d4-86fd6398dd5d",
+    "displayName": "credential management policy",
+    "description": "Lorem ipsum",
+    "isEnabled": true,
+    "restrictions": {
+        "passwordCredentials": [
+            {
+                "restrictionType": "passwordAddition",
+                "maxLifetime": null,
+                "restrictForAppsCreatedAfterDateTime": "2019-10-19T10:37:00Z"
+            },
+            {
+                "restrictionType": "passwordLifetime",
+                "maxLifetime": "P4DT12H30M5S",
+                "restrictForAppsCreatedAfterDateTime": "2018-10-19T10:37:00Z"
+            }
+        ]
+    }
+}
+```
+
+<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
+2019-02-04 14:57:30 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "create appManagementPolicies",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": ""
+}-->

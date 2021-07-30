@@ -4,18 +4,19 @@ description: Lista de verificação para migrar seus aplicativos do Azure AD Gra
 author: dkershaw10
 localization_priority: Normal
 ms.prod: applications
-ms.openlocfilehash: 84d486cd64d838a00998179a25dbba3ea35738eb
-ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
+ms.openlocfilehash: 0ff4d78ff297870f328acd78ac66d5db8f243207
+ms.sourcegitcommit: b711aed8acc18512cf6591f4108ed5ddf05b649d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52546928"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53660272"
 ---
 # <a name="app-migration-planning-checklist"></a>Lista de verificação de planejamento de migração de aplicativos
 
-> [!Important]
-> A API do Azure AD Graph está preterida. Continuaremos fornecendo suporte técnico e atualizações de segurança, mas não forneceremos mais atualizações de recursos.
-> A partir de 30 de junho de 2022, encerraremos o suporte ao Azure AD Graph e não forneceremos mais suporte técnico ou atualizações de segurança. Os aplicativos que usam o Azure AD Graph depois desse tempo não receberão mais respostas do ponto de extremidade do Azure AD Graph ponto de extremidade.
+> [!WARNING]
+> **O Azure AD Graph está preterido.** Para evitar a perda de funcionalidade, migre seus aplicativos para o Microsoft Graph antes de 30 de junho de 2022, quando os pontos de extremidade da API do Azure AD Graph deixarão de responder às solicitações.
+>
+> A Microsoft continuará com o suporte técnico e aplicará correções de segurança para o Azure AD Graph até 30 de junho de 2022, quando todas as funcionalidades e suporte terminarão. Se você não migrar seus aplicativos para a Microsoft Graph antes de 30 de junho de 2022, você colocará sua funcionalidade e estabilidade em risco.
 
 Use a lista de verificação a seguir para planejar sua migração.
 
@@ -57,6 +58,6 @@ Agora que você alternou para o Microsoft Graph, nunca foi mais fácil desbloque
 
 [A biblioteca de autenticação](/azure/active-directory/develop/reference-v2-libraries) da Microsoft (MSAL) agora é a biblioteca de autenticação recomendada para uso com a plataforma de identidade da Microsoft. Se você estiver usando a biblioteca de autenticação [do AD (ADAL),](/azure/active-directory/develop/active-directory-authentication-libraries) planeje alternar para MSAL. Consulte mais orientações para migrar aplicativos para a Biblioteca de Autenticação [da Microsoft (MSAL).](/azure/active-directory/develop/msal-migration)
 
-## <a name="next-steps"></a>Próximas Etapas
+## <a name="next-steps"></a>Próximos passos
 
 - Saiba mais [sobre a sintaxe de chamada de](migrate-azure-ad-graph-request-differences.md) solicitação para iniciar a etapa 1: analisar as diferenças de API.

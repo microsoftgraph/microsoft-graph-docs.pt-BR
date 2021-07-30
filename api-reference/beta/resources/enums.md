@@ -5,16 +5,24 @@ doc_type: enumPageType
 localization_priority: Normal
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
-ms.openlocfilehash: d628a45b99d5fe9fb0416820e34ecf296e740f79
-ms.sourcegitcommit: a598c09b73e4e43eea5f4aaefea7ffe062e15c39
+ms.openlocfilehash: aeb34a1494a4cc48a5b5c44d5ccfa8f540b4505c
+ms.sourcegitcommit: b711aed8acc18512cf6591f4108ed5ddf05b649d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/22/2021
-ms.locfileid: "53533903"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53660321"
 ---
 # <a name="enum-values"></a>Valores denum
 
 Namespace: microsoft.graph
+
+### <a name="appcredentialrestrictiontype-values"></a>valores appCredentialRestrictionType
+
+|Member|
+|:-----|
+|passwordAddition|
+|passwordLifetime|
+|unknownFutureValue|
 
 ### <a name="synchronizationsecret-values"></a>valores synchronizationSecret
 
@@ -142,11 +150,11 @@ Namespace: microsoft.graph
 
 |Member|
 |:---|
-|Cadeia de Caracteres|
+|Cadeia de caracteres|
 |Inteiro|
 |Referência|
 |Binário|
-|Boolean|
+|Booliano|
 |DateTime|
 
 ### <a name="mutability-values"></a>valores de mutabilidade
@@ -1569,7 +1577,7 @@ Enum para tipos de valor do Registro conforme definido pelos [tipos de valor do 
 | dwordLittleEndian | 3     | REG_DWORD_LITTLE_ENDIAN tipo de valor do Registro. |
 | dwordBigEndian    | 4      | REG_DWORD_BIG_ENDIAN tipo de valor do Registro.    |
 | expandSz          | 5      | REG_EXPAND_SZ tipo de valor do Registro.           |
-| vínculo              | 6      | REG_LINK tipo de valor do Registro.                |
+| link              | 6      | REG_LINK tipo de valor do Registro.                |
 | multiSz           | 7      | REG_MULTI_SZ tipo de valor do Registro.            |
 | nenhuma              | 8      | REG_NONE tipo de valor do Registro.                |
 | qword             | 9      | REG_QWORD tipo de valor do Registro.               |
@@ -2016,7 +2024,7 @@ Valores possíveis para tipos de conta de usuário (associação ao grupo), por 
 
 | Membro | Valor | Descrição             |
 |:-------|:------|:------------------------|
-| email   | 1     | Ameaça de email.            |
+| Email   | 1     | Ameaça de email.            |
 | url    | 2     | Ameaça de URL.             |
 | file   | 3     | Ameaça de arquivo de anexo. |
 
