@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: fa9ce48f9b0dd0dd1869a1e31937b70cf4edb975
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: 67e49c7cf9a23bbdfd0547e7b593c5a948359413
+ms.sourcegitcommit: 596b3d5636f3f3e042d180ea8f039f00ebd6b38a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50720148"
+ms.lasthandoff: 07/30/2021
+ms.locfileid: "53665715"
 ---
 # <a name="conversationthread-resource-type"></a>tipo de recurso conversationThread
 
@@ -20,7 +20,7 @@ Um conversationThread é uma coleção de [postagens](post.md).
 
 A coleção de destinatários da última postagem são os destinatários agregados do thread inteiro. Um thread pode ter uma coleção crescente de destinatários. Um novo thread é criado quando um destinatário é removido do thread.
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 
 | Método       | Tipo de retorno  |Descrição|
 |:---------------|:--------|:----------|
@@ -35,15 +35,15 @@ A coleção de destinatários da última postagem são os destinatários agregad
 ## <a name="properties"></a>Propriedades
 | Propriedade              | Tipo                                 | Descrição                                                                                                                                                                                      |
 |:----------------------|:-------------------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| id                    | String                               | Somente leitura.                                                                                                                                                                                       |
-| toRecipients          | Coleção [recipient](recipient.md) | Os destinatários Para: do thread.                                                                                                                                                               |
-| ccRecipients          | Coleção [recipient](recipient.md) | Os destinatários Cc: do thread.                                                                                                                                                               |
-| topic                 | String                               | O tópico da conversa. Essa propriedade pode ser definida quando a conversa é criada, mas não pode ser atualizada.                                                                              |
-| hasAttachments        | Booliano                              | Indica se qualquer uma das postagens neste thread tem pelo menos um anexo.                                                                                                               |
-| lastDeliveredDateTime | DateTimeOffset                       | O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z` |
-| uniqueSenders         | Coleção de cadeias de caracteres                    | Todos os usuários que enviaram uma mensagem para este thread.                                                                                                                                                |
-| visualização               | String                               | Um breve resumo do corpo da postagem mais recente nesta conversa.                                                                                                                           |
-| isLocked              | Booliano                              | Indica se o thread está bloqueado.                                                                                                                                                               |
+| id                    | String                               | Somente leitura. <br/><br/>Devolvido por padrão.                                                                                                                                                                                      |
+| toRecipients          | Coleção [recipient](recipient.md) | Os destinatários Para: do thread. <br/><br/>Retornado apenas em $select.                                                                                                                                                              |
+| ccRecipients          | Coleção [recipient](recipient.md) | Os destinatários Cc: do thread. <br/><br/>Retornado apenas em $select.                                                                                                                                                               |
+| topic                 | String                               | O tópico da conversa. Essa propriedade pode ser definida quando a conversa é criada, mas não pode ser atualizada. <br/><br/>Devolvido por padrão.                                                                              |
+| hasAttachments        | Booliano                              | Indica se qualquer uma das postagens neste thread tem pelo menos um anexo. <br/><br/>Devolvido por padrão.                                                                                                              |
+| lastDeliveredDateTime | DateTimeOffset                       | O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`.<br/><br/>Retornado por padrão. |
+| uniqueSenders         | Coleção de cadeias de caracteres                    | Todos os usuários que enviaram uma mensagem para este thread. <br/><br/>Devolvido por padrão.                                                                                                                                               |
+| visualização               | String                               | Um breve resumo do corpo da postagem mais recente nesta conversa. <br/><br/>Devolvido por padrão.                                                                                                                           |
+| isLocked              | Booliano                              | Indica se o thread está bloqueado. <br/><br/>Devolvido por padrão.                                                                                                                                                              |
 
 ## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|

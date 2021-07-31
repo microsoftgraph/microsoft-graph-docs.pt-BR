@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
 doc_type: enumPageType
-ms.openlocfilehash: 895ddba84728ebbc012a457890d43854268e7465
-ms.sourcegitcommit: 486fe9c77d4d89c5416bb83e8c716e6918c47370
+ms.openlocfilehash: 26fc51e2d8cff05a57955b437a93c1afac3f6f0b
+ms.sourcegitcommit: 596b3d5636f3f3e042d180ea8f039f00ebd6b38a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53443190"
+ms.lasthandoff: 07/30/2021
+ms.locfileid: "53665775"
 ---
 # <a name="enum-values"></a>Valores denum
 
@@ -157,7 +157,7 @@ Namespace: microsoft.graph
 |windows|
 |windowsPhone|
 |macOS|
-|todos |
+|all|
 |unknownFutureValue|
 
 ### <a name="signinfrequencytype-values"></a>Valores signinFrequencyType
@@ -200,7 +200,7 @@ Namespace: microsoft.graph
 
 |Member|
 |:---|
-|todos |
+|all|
 |Navegador|
 |mobileAppsAndDesktopClients|
 |exchangeActiveSync|
@@ -364,7 +364,7 @@ Namespace: microsoft.graph
 |:---|
 |Nenhum|
 |SecurityGroup|
-|Todas|
+|Todos|
 
 ### <a name="recipientscopetype-values"></a>valores recipientScopeType
 
@@ -524,7 +524,7 @@ Namespace: microsoft.graph
 |:-------------------------
 | nenhuma
 | contactsOnly
-| todos 
+| all
 
 
 ### <a name="automaticrepliesstatus-values"></a>valores automaticRepliesStatus
@@ -1004,7 +1004,7 @@ Enum para tipos de valor do Registro conforme definido por [/windows/desktop/sys
 |dwordLittleEndian|3| REG_DWORD_LITTLE_ENDIAN tipo de valor do Registro.|
 |dwordBigEndian|4 | REG_DWORD_BIG_ENDIAN tipo de valor do Registro.|
 |expandSz|5 | REG_EXPAND_SZ tipo de valor do Registro.|
-|vínculo|6 | REG_LINK tipo de valor do Registro.|
+|link|6 | REG_LINK tipo de valor do Registro.|
 |multiSz|7 | REG_MULTI_SZ tipo de valor do Registro.|
 |nenhuma|8 | REG_NONE tipo de valor do Registro.|
 |qword|9 | REG_QWORD tipo de valor do Registro.|
@@ -1186,7 +1186,7 @@ Valores possíveis para tipos de conta de usuário (associação ao grupo), por 
 
 | Membro | Valor | Descrição             |
 |:-------|:------|:------------------------|
-| email   | 1     | Ameaça de email.            |
+| Email   | 1     | Ameaça de email.            |
 | url    | 2     | Ameaça de URL.             |
 | file   | 3     | Ameaça de arquivo de anexo. |
 
@@ -1249,6 +1249,15 @@ Valores possíveis para tipos de conta de usuário (associação ao grupo), por 
 | notJunk               | 13    | Permitir devido a não lixo eletrônico.              |
 | junk                  | 14     | Bloqueado devido a lixo eletrônico.                |
 | unknownFutureValue    | 15    | Um membro do sentinel.                  |
+
+### <a name="chatmessagetype-values"></a>valores chatMessageType
+
+| Valor |
+|:-----------------|
+| message |
+| chatEvent |
+| digitação |
+| unknownFutureValue |
 
 ### <a name="chatmessagepolicyviolationdlpactiontype-values"></a>valores chatMessagePolicyViolationDlpActionType
 
@@ -1529,7 +1538,7 @@ Valores possíveis para tipos de conta de usuário (associação ao grupo), por 
 
 |Member|
 |:---|
-|equipe|
+|team|
 |channel|
 |chat|
 |unknownFutureValue|
