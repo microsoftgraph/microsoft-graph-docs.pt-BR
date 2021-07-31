@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 9239e9543b77348b4524dc76be8fee64e1b9919a
-ms.sourcegitcommit: 5a1cc1943527aa268e3797ee514871e65eb474a6
+ms.openlocfilehash: 2db0708ada9bb57ad4f0f88da89c797ff4a4e1e2
+ms.sourcegitcommit: 596b3d5636f3f3e042d180ea8f039f00ebd6b38a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53030835"
+ms.lasthandoff: 07/30/2021
+ms.locfileid: "53665897"
 ---
 # <a name="teamsasyncoperation-resource-type"></a>Tipo de recurso teamsAsyncOperation
 
@@ -23,7 +23,7 @@ Uma Microsoft Teams assíncrona é uma operação que transcende o tempo de vida
 Quando uma operação assíncrona é iniciada, o método retorna um código de resposta aceito 202. A resposta também conterá um header Location, que contém o local do teamsAsyncOperation. Verifique periodicamente o status da operação fazendo uma solicitação GET para esse local; aguarde >30 segundos entre verificações.
 Quando a solicitação for concluída com êxito, o status será "bem-sucedido" e o targetResourceLocation apontará para o recurso criado/modificado.
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 
 |  Método                                                                   |  Tipo de retorno                                                                     | Descrição                                                       | 
 | :------------------------------------------------------------------------ | :------------------------------------------------------------------------------- | :---------------------------------------------------------------- |
@@ -34,14 +34,14 @@ Quando a solicitação for concluída com êxito, o status será "bem-sucedido" 
 
 | Propriedade | Tipo   | Descrição |
 |:---------------|:--------|:----------|
-|id|cadeia de caracteres |ID de operação exclusiva.|
-|operationType|[teamsAsyncOperationType](teamsasyncoperationtype.md) |Indica qual tipo de operação está sendo descrito.|
+|id|string |ID de operação exclusiva.|
+|operationType|[teamsAsyncOperationType](teamsasyncoperationtype.md) |Indica o tipo de operação que está sendo descrito. |
 |createdDateTime|DateTimeOffset |Hora em que a operação foi criada.|
 |status|[teamsAsyncOperationStatus](teamsasyncoperationstatus.md)| Status da operação.|
 |lastActionDateTime|DateTimeOffset |Hora em que a operação assíncrona foi atualizada pela última vez.|
 |attemptsCount|Int32|Número de vezes que a operação foi tentada antes de ser marcada com êxito ou falha.|
 |targetResourceId|guid |A ID do objeto criado ou modificado como resultado dessa operação assíncrona, normalmente uma [equipe](../resources/team.md).|
-|targetResourceLocation|cadeia de caracteres|O local do objeto criado ou modificado como resultado dessa operação assíncrona. Essa URL deve ser tratada como um valor opaco e não analisado em seus caminhos de componente.|
+|targetResourceLocation|string|O local do objeto criado ou modificado como resultado dessa operação assíncrona. Essa URL deve ser tratada como um valor opaco e não analisado em seus caminhos de componente.|
 |erro|[operationError](operationerror.md)|Qualquer erro que cause falha na operação assíncrona.|
 
 ## <a name="json-representation"></a>Representação JSON
@@ -57,13 +57,13 @@ Veja a seguir uma representação JSON do recurso.
 ```json
 {
     "id": "string",
-    "operationType": "archiveTeam",
-    "createdDateTime": "2018-01-01T00:00:00.0000000Z",
-    "status": "succeeded",
-    "lastActionDateTime": "2018-01-01T00:00:00.0000000Z",
-    "attemptsCount": 1,
-    "targetResourceId": "fa4aa5a2-a75b-4769-86f4-9e2742a18fda",
-    "targetResourceLocation": "/groups('fa4aa5a2-a75b-4769-86f4-9e2742a18fda')/team",
+    "operationType": "string",
+    "createdDateTime": "string (timestamp)",
+    "status": "string",
+    "lastActionDateTime": "string (timestamp)",
+    "attemptsCount": "Integer",
+    "targetResourceId": "string",
+    "targetResourceLocation": "string",
     "error": null
 }
 ```

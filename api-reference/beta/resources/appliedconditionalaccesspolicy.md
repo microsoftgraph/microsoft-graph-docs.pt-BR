@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dhanyahk
 ms.prod: identity-and-access-reports
 doc_type: resourcePageType
-ms.openlocfilehash: ffb91b315772d017ce039237e353df68daa47bfc
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: c675d79598ff4428f3384518edc74cfcb8cc050d
+ms.sourcegitcommit: 596b3d5636f3f3e042d180ea8f039f00ebd6b38a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50952186"
+ms.lasthandoff: 07/30/2021
+ms.locfileid: "53665855"
 ---
 # <a name="appliedconditionalaccesspolicy-resource-type"></a>Tipo de recurso appliedConditionalAccessPolicy
 
@@ -29,7 +29,7 @@ Indica os atributos relacionados à política de acesso condicional ou política
 |enforcedGrantControls|Coleção de cadeias de caracteres|Refere-se aos controles de concessão imposto pela política de acesso condicional (exemplo: "Exigir autenticação multifacional").|
 |enforcedSessionControls|Coleção de cadeias de caracteres|Refere-se aos controles de sessão impostos pela política de acesso condicional (exemplo: "Exigir controles aplicados ao aplicativo").|
 |id|Cadeia de caracteres|Identificador da política de acesso condicional.|
-|resultado|appliedConditionalAccessPolicyResult| Indica o resultado da política de AC que foi disparada. Os valores possíveis são: , , , (A política não é aplicada porque as condições de política não foram atendidas), (Isso ocorre devido à política em estado `success` desabilitado), , , `failure` , `notApplied` `notEnabled` `unknown` `unknownFutureValue` `reportOnlySuccess` `reportOnlyFailure` , `reportOnlyNotApplied``reportOnlyInterrupted`|
+|resultado|appliedConditionalAccessPolicyResult| Indica o resultado da política de AC que foi disparada. Os valores possíveis são: , , , (A política não é aplicada porque as condições de política não foram atendidas), (Isso ocorre devido à política em estado `success` desabilitado), , , , , `failure` , `notApplied` `notEnabled` `unknown` `unknownFutureValue` `reportOnlySuccess` `reportOnlyFailure` `reportOnlyNotApplied` . `reportOnlyInterrupted` Observe que você deve usar o header de solicitação para obter os seguintes valores nesta `Prefer: include-unknown-enum-members` [enum evolvável](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `reportOnlySuccess` , , , `reportOnlyFailure` `reportOnlyNotApplied` `reportOnlyInterrupted` .|
 
 ## <a name="json-representation"></a>Representação JSON
 

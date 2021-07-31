@@ -5,12 +5,12 @@ localization_priority: Priority
 author: sureshja
 ms.prod: applications
 doc_type: resourcePageType
-ms.openlocfilehash: 5302b0f082520925149d7437d6fe1b3530b6cb56
-ms.sourcegitcommit: 6d247f44a6ee4d8515c3863ee8a2683163c9f829
+ms.openlocfilehash: 94111087c0541111af903201fb6503be49a48a88
+ms.sourcegitcommit: b711aed8acc18512cf6591f4108ed5ddf05b649d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/14/2021
-ms.locfileid: "53430099"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53660314"
 ---
 # <a name="application-resource-type"></a>tipo de recurso do aplicativo
 
@@ -120,6 +120,7 @@ Esse recurso tem suporte para o uso da [consulta delta](/graph/delta-query-overv
 
 | Relação | Tipo | Descrição |
 |:---------------|:--------|:----------|
+|appManagementPolicies|[appManagementPolicy](../resources/appManagementPolicy.md) collection| O appManagementPolicy aplicado a este aplicativo.|
 |calls           |Coleção [call](call.md)                   |Somente leitura. Anulável.|
 |connectorGroup|[connectorGroup](connectorgroup.md)| O conectorGrupo que o aplicativo está usando com o Proxy de Aplicativo do Microsoft Azure Active Directory. Anulável.|
 |createdOnBehalfOf|[directoryObject](directoryobject.md)| Somente leitura.|

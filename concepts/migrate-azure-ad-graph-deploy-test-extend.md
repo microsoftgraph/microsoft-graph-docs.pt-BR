@@ -4,12 +4,12 @@ description: 'Descreve como migrar aplicativos Azure Active Directory (Azure AD)
 author: dkershaw10
 localization_priority: Normal
 ms.prod: applications
-ms.openlocfilehash: 3f8129c434ba8a2d7c9455f3dbfad216fb216399
-ms.sourcegitcommit: 9bc1652890fe49d7ad5e5b7177c8a682b1759b75
+ms.openlocfilehash: 5ea9944a23ffdf849d97bd116b730413cdd0100d
+ms.sourcegitcommit: 596b3d5636f3f3e042d180ea8f039f00ebd6b38a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52100104"
+ms.lasthandoff: 07/30/2021
+ms.locfileid: "53665848"
 ---
 # <a name="deploy-test-and-extend"></a>Implantar, testar e estender
 
@@ -48,7 +48,7 @@ Esta é a etapa 4 do [processo para migrar aplicativos.](migrate-azure-ad-graph-
     O Microsoft Graph oferece acesso a muito mais serviços do que apenas Azure Active Directory. É o gateway [da API para Microsoft 365 serviços também.](./index.yml)
     Verifique novos conjuntos de dados e recursos regularmente.  
 
-    - Dê uma olhada no [que você pode fazer com o Microsoft Graph](https://developer.microsoft.com/graph/examples)
+    - Confira algumas soluções [de parceiros.](https://developer.microsoft.com/graph/partners)
     - Explore o [blog do Microsoft Graph](https://developer.microsoft.com/graph/blogs) para saber mais sobre o Microsoft Graph e algumas ótimas séries de aprendizado.
     - O [changelog](/graph/changelog) resume atualizações de serviço e documento. Após essas atualizações, você acompanhará novas APIs introduzidas para /beta (visualização) e aquelas promovidas para v1.0 (GA).  Essas novas APIs podem fornecer novas maneiras de adicionar mais valor e novas experiências aos seus aplicativos.  
 
@@ -62,7 +62,7 @@ Se você tiver problemas ou precisar de ajuda durante o processo de migração, 
   - **Aplicativos que usam** a API REST : explorar [inícios rápidos e exemplos,](https://developer.microsoft.com/graph/get-started)escolher sua plataforma de escolha e executar o início rápido ou pesquisar por um exemplo apropriado
   - **App that use the .NET client library**: [review console-csharp-snippets-sample](https://github.com/microsoftgraph/console-csharp-snippets-sample) and/or [dotnetcore-console-sample](https://github.com/microsoftgraph/dotnetcore-console-sample)
 
-## <a name="next-steps"></a>Próximas Etapas
+## <a name="next-steps"></a>Próximos passos
 
 - Use [inícios rápidos e exemplos](https://developer.microsoft.com/graph/get-started) para acelerar rapidamente.
 - Aproveitar [bibliotecas de clientes e SDKs](/graph/sdks/sdks-overview) para desenvolver aplicativos personalizados 

@@ -5,12 +5,12 @@ author: TarkanSevilmis
 localization_priority: Normal
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: acb7a85683bc94795953e524ee9630d6cfc01f24
-ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
+ms.openlocfilehash: ea0af35bf9f82928e9da3abc90670566f3cc0869
+ms.sourcegitcommit: 596b3d5636f3f3e042d180ea8f039f00ebd6b38a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51473882"
+ms.lasthandoff: 07/30/2021
+ms.locfileid: "53665752"
 ---
 # <a name="plannerplancontainer-resource-type"></a>Tipo de recurso plannerPlanContainer
 
@@ -30,8 +30,8 @@ No momento, o Planner dá suporte aos tipos de contêiner listados na tabela a s
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|containerId|String|O identificador do recurso que contém o plano.|
-|tipo|plannerContainerType| O tipo do recurso que contém o plano. Consulte a tabela anterior para tipos com suporte. Os valores possíveis são: `group`, `roster`, `unknownFutureValue`.|
+|containerId|Cadeia de caracteres|O identificador do recurso que contém o plano.|
+|tipo|plannerContainerType| O tipo do recurso que contém o plano. Consulte a tabela anterior para tipos com suporte. Os valores possíveis são: `group`, `unknownFutureValue`, `roster`. Observe que você deve usar o header de solicitação `Prefer: include-unknown-enum-members` para obter o seguinte valor neste número [evolvável](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `roster` .|
 |url|Cadeia de caracteres|A URL canônica completa do contêiner.|
 
 ## <a name="relationships"></a>Relações

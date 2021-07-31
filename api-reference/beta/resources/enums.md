@@ -5,12 +5,12 @@ doc_type: enumPageType
 localization_priority: Normal
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
-ms.openlocfilehash: aeb34a1494a4cc48a5b5c44d5ccfa8f540b4505c
-ms.sourcegitcommit: b711aed8acc18512cf6591f4108ed5ddf05b649d
+ms.openlocfilehash: 3aeaa5d297ccab533f970f39dc6567873bd1bc5a
+ms.sourcegitcommit: 596b3d5636f3f3e042d180ea8f039f00ebd6b38a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53660321"
+ms.lasthandoff: 07/30/2021
+ms.locfileid: "53665862"
 ---
 # <a name="enum-values"></a>Valores denum
 
@@ -1797,6 +1797,8 @@ Valores possíveis para tipos de conta de usuário (associação ao grupo), por 
 |Member|
 |:---|
 |message|
+|chatEvent |
+|digitação |
 |unknownFutureValue|
 |systemEventMessage|
 
@@ -1810,11 +1812,12 @@ Valores possíveis para tipos de conta de usuário (associação ao grupo), por 
 
 ### <a name="channelmembershiptype-values"></a>Valores channelMembershipType
 
-| Membro             | Valor |
-| :----------------- | :---- |
-| standard           | 0     |
-| private            | 1     |
-| unknownFutureValue | 2     |
+| Member             | 
+| :----------------- | 
+| standard           | 
+| private            | 
+| unknownFutureValue | 
+| compartilhado             |
 
 ### <a name="stagedfeaturename-values"></a>valores stagedFeatureName
 
@@ -2249,6 +2252,7 @@ Valores possíveis para tipos de conta de usuário (associação ao grupo), por 
 |:---|
 |group|
 |unknownFutureValue|
+|roster|
 
 ### <a name="plannerplancontexttype-values"></a>Valores plannerPlanContextType 
 
