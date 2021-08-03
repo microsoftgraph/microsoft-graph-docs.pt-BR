@@ -3,12 +3,12 @@ title: Práticas recomendadas para trabalhar com o Microsoft Graph
 description: Este artigo descreve as práticas recomendadas que você pode aplicar para ajudar seus aplicativos a tirar o máximo proveito do Microsoft Graph, caso isso envolva saber mais sobre o Microsoft Graph, melhorar o desempenho do aplicativo ou tornar seu aplicativo mais confiável para os usuários finais.
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: d6227c3bb90e620d741f387978f84ac12c171e19
-ms.sourcegitcommit: 32c83957ee69f21a10cd5f759adb884ce4b41c52
+ms.openlocfilehash: 35102a852ce3cc6fba92c83fe9e38756beb94e54
+ms.sourcegitcommit: 596b3d5636f3f3e042d180ea8f039f00ebd6b38a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51920030"
+ms.lasthandoff: 07/30/2021
+ms.locfileid: "53665722"
 ---
 # <a name="best-practices-for-working-with-microsoft-graph"></a>Práticas recomendadas para trabalhar com o Microsoft Graph
 
@@ -33,7 +33,7 @@ Use a API da Biblioteca de Autenticação Microsoft, [MSAL](/azure/active-direct
 
 Aplique as seguintes práticas recomendadas de consentimento e autorização ao aplicativo:
 
-- **Use privilégios mínimos**. Apenas solicite permissões absolutamente necessárias e somente quando você precisar delas. Para as APIs que o aplicativo chama, verifique a seção de permissões nos tópicos do método (por exemplo, confira [como criar um usuário](/graph/api/user-post-users?view=graph-rest-1.0) e escolha as permissões com menos privilégios. Uma ver uma lista completa de permissões, confira [referência de permissões](permissions-reference.md).
+- **Use privilégios mínimos**. Apenas solicite permissões absolutamente necessárias e somente quando você precisar delas. Para as APIs que o aplicativo chama, verifique a seção de permissões nos tópicos do método (por exemplo, confira [como criar um usuário](/graph/api/user-post-users) e escolha as permissões com menos privilégios. Uma ver uma lista completa de permissões, confira [referência de permissões](permissions-reference.md).
 
 - **Use o tipo de permissão correto com base nos cenários**. Se você estiver criando um aplicativo interativo no qual um usuário conectado está presente, seu aplicativo deverá usar permissões *delegadas* nas quais o aplicativo recebe permissão de atuar como um usuário conectado ao fazer chamadas para o Microsoft Graph. Se, no entanto, seu aplicativo for executado sem um usuário conectado, como um serviço em segundo plano ou um daemon, seu aplicativo deverá usar permissões de aplicativo.
 
@@ -85,12 +85,16 @@ Como seu aplicativo tem que lidar com todas as respostas de erro (nos intervalos
 |Limitação|429|As APIs podem limitar a qualquer momento por diversos motivos, portanto, seu aplicativo deve **sempre** estar preparado para manipular 429 respostas. Essa resposta de erro inclui o campo *Retry-After* no cabeçalho de resposta HTTP. Desativar solicitações usando o atraso *Retry-After* é a forma mais rápida de se recuperar da limitação. Para saber mais, confira [limitação](throttling.md).|
 |Serviço indisponível| 503 | O motivo mais provável é que os serviços estejam ocupados. Você deve empregar uma estratégia de retirada similar à 429. Além disso, você deve **sempre** fazer novas solicitações de novas tentativas em uma nova conexão HTTP.|
 
-### <a name="evolvable-enums"></a>Enums que evoluem
+### <a name="handling-future-members-in-evolvable-enumerations"></a>Manipular futuros membros em enumerações evolutivas
 
-Os aplicativos cliente podem ser desfeitos com a adição de membros a um enum existente. Para alguns dos enums mais recentes do Microsoft Graph, um mecanismo está disponível para permitir a adição de novos membros sem implicar em uma alteração significativa. Nesses enums mais recentes, você verá um membro *sentinela* comum chamado `unknownFutureValue` que demarca membros enum conhecidos e desconhecidos. Os membros conhecidos terão um número menor que o membro sentinela, enquanto os membros desconhecidos terão um valor maior.
-Por padrão, o Microsoft Graph não retorna membros desconhecidos. Se, no entanto, seu aplicativo tiver sido gravado para manipular a aparência de membros desconhecidos, ele poderá optar por receber membros enum desconhecidos usando um cabeçalho de solicitação HTTP *Prefer*.
+Adicionar membros a enumerações existentes pode interromper aplicativos que já usam essas enumerações. Enumeração evolutiva é um mecanismo que o Microsoft Graph API usa para adicionar novos membros às enumerações existentes sem causar uma mudança radical aos aplicativos.
 
->**Observação:** se o aplicativo estiver preparado para lidar com membros enum desconhecidos, ele deverá aceitar a condição usando um cabeçalho solicitação HTTP *prefer*: `Prefer: include-unknown-enum-members`.
+As enumeração evolutivas possuem um membro chamado _sentinela_ que `unknownFutureValue` demarca membros conhecidos que foram definidos inicialmente na enumeração, e membros desconhecidos que são acrescentados posteriormente ou que serão definidos no futuro. Internamente, os membros conhecidos são mapeados para valores numéricos que são menores que o membro sentinela, e os membros desconhecidos são maiores que o membro sentinela. A documentação de uma enumeração evolutiva lista os possíveis valores de _cadeia de caracteres_ em ordem crescente: membros conhecidos, seguidos por `unknownFutureValue`, seguidos por membros desconhecidos. Como outros tipos de enumerações, você deve _sempre_ fazer referência aos membros de enumeração evolutiva por seus valores de cadeia.de _cadeia de caracteres_.
+
+Por padrão, uma operação GET retorna apenas membros conhecidos por propriedades de tipos de enumeração evolutiva e seu aplicativo precisa lidar apenas com os membros conhecidos. Se você projetar seu aplicativo para também lidar com membros desconhecidos, poderá optar por receber esses membros usando um cabeçalho de solicitação `Prefer` HTTP:
+```
+Prefer: include-unknown-enum-members
+```
 
 
 ## <a name="storing-data-locally"></a>Armazenamento de dados no local
@@ -123,7 +127,7 @@ Para algumas operações, como PUT e PATCH (e, em alguns casos, POST), se seu ap
 
 Se for preciso que o aplicativo saiba quais alterações foram feitas nos dados, você provavelmente receberá uma notificação de webhook sempre que dados de seu interesse forem alterados. Isso é mais eficiente do que simplesmente fazer pesquisas regularmente.
 
-Use [notificações de webhook](/graph/api/resources/webhooks?view=graph-rest-1.0) para receber notificações por push quando os dados forem alterados.
+Use [notificações de webhook](/graph/api/resources/webhooks) para receber notificações por push quando os dados forem alterados.
 
 Use a consulta delta se seu aplicativo tiver que armazenar em cache ou armazenar dados do Microsoft Graph localmente, e mantê-los atualizados, ou tiver que controlar alterações nos dados por qualquer outro motivo. Isso evitará a computação excessiva do aplicativo para recuperar dados que ele já possui, minimizar o tráfego de rede e reduzir a probabilidade de atingir um limite de limitação.
 
@@ -131,9 +135,9 @@ Use a [consulta delta](delta-query-overview.md) para manter os dados atualizados
 
 ### <a name="using-webhooks-and-delta-query-together"></a>Usar consultas delta e webhooks em conjunto
 
-Os webhooks e a consulta delta geralmente funcionam melhor quando são usados em conjunto já que, se você usar a consulta delta sozinha, precisará calcular o intervalo de sondagem correto. Se esse intervalo for muito curto poderá levar a respostas vazias que desperdiçam recursos, mas, se for muito longo, você poderá acabar ficando com dados obsoletos. Você terá o melhor de dois mundos se usar as notificações de webhook como o gatilho para fazer chamadas de consulta delta.
+Os Webhooks e a consulta delta são geralmente melhor usados juntos, pois se você usa a consulta delta sozinho, você precisa descobrir o intervalo certo da votação - muito curto e isso pode levar a respostas vazias que desperdiçam recursos, muito longas e você pode acabar com dados obsoletos. Se você usar as notificações do Webhook como gatilho para fazer chamadas delta, você obtém o melhor dos dois mundos.
 
-Use as [notificações de webhook](/graph/api/resources/webhooks?view=graph-rest-1.0) como o gatilho para fazer chamadas de consulta delta. Você também deve garantir que seu aplicativo tenha um limite de pesquisa de backstop, caso nenhuma notificação seja acionada.
+Use as [notificações de webhook](/graph/api/resources/webhooks) como o gatilho para fazer chamadas de consulta delta. Você também deve garantir que seu aplicativo tenha um limite de pesquisa de backstop, caso nenhuma notificação seja acionada.
 
 ### <a name="batching"></a>Envio em lote
 

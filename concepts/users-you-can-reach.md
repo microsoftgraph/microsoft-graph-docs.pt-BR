@@ -4,12 +4,12 @@ description: 'A Microsoft oferece soluções e serviços que ampliam a vida mode
 author: dkershaw10
 localization_priority: Priority
 ms.prod: applications
-ms.openlocfilehash: c114b84871960c4ee890966ef4428d618a88e960
-ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
+ms.openlocfilehash: 5a60675944cb4b78baadf85a554fd2782fa6d2f6
+ms.sourcegitcommit: 596b3d5636f3f3e042d180ea8f039f00ebd6b38a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50761139"
+ms.lasthandoff: 07/30/2021
+ms.locfileid: "53665736"
 ---
 # <a name="users-you-can-reach-with-microsoft-graph"></a>Usuários que você pode alcançar com o Microsoft Graph
 
@@ -23,7 +23,7 @@ Use o Microsoft Graph para alcançar usuários com contas pessoais da Microsoft,
 
 ## <a name="connect-to-work-services"></a>Conectar-se aos serviços profissionais
 
-Use o Microsoft Graph para alcançar usuários e organizações que têm licenças para os serviços do Microsoft 365 para negócios, empresas ou educação. Esses serviços do Microsoft 365 incluem:
+Use o Microsoft Graph para alcançar usuários e organizações que possuem licenças de serviços do Microsoft 365 para negócios, empresas ou educação. Esses serviços do Microsoft 365 incluem:
 
 - Microsoft 365
 - Enterprise Mobility + Security
@@ -33,7 +33,7 @@ Com o consentimento deles, você pode usar o Microsoft Graph para obter acesso a
 
 ### <a name="worldwide-multigeo-and-national-clouds"></a>Nuvens nacionais, mundiais e multigeográficas
 
-Os serviços do Microsoft Graph fazem parte da nuvem mundial da Microsoft. Além disso, a Microsoft oferece:
+Os serviços no Microsoft Graph são parte da nuvem mundial da Microsoft. Além disso, a Microsoft oferece:
 
 - Recursos multigeográficos para organizações multinacionais com diversas regiões geográficas e/ou países em seu locatário existente.
 - Implantações de nuvem nacional para o governo dos EUA e Alemanha, além do Azure e Microsoft 365 operados pela 21Vianet na China.
@@ -46,7 +46,7 @@ Use o Microsoft Graph para alcançar alunos, professores e escolas que tenham li
 
 ## <a name="next-steps"></a>Próximas etapas
 
-- Confira alguns [Cenários em destaque](https://developer.microsoft.com/graph/examples).
+- Confira algumas [soluções de parceiros](https://developer.microsoft.com/graph/partners).
 - Experimente um exemplo de solicitação no [Explorador do Graph](https://developer.microsoft.com/graph/graph-explorer).
 - Use o [início rápido](https://developer.microsoft.com/graph/quick-start) para configurar um aplicativo de exemplo pronto para funcionar.
 - Consulte o item **Saiba mais** no índice para ler sobre os serviços e recursos que você pode usar em seus cenários.
