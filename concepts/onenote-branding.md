@@ -4,12 +4,12 @@ description: " "
 author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
-ms.openlocfilehash: 1000172e015ad8a48da906e38be32eca0fdf6662
-ms.sourcegitcommit: 32c83957ee69f21a10cd5f759adb884ce4b41c52
+ms.openlocfilehash: c745fd304e01efe2ce3804c08befab682cec4b1369e41d9b334bda006361c50b
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51920198"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54124028"
 ---
 # <a name="branding-guidelines-for-onenote-api-developers"></a>Diretrizes de marca para desenvolvedores da API do OneNote 
  

@@ -5,12 +5,12 @@ author: mmcla
 localization_priority: Normal
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 1fa7383d4946978d20ae7b32f9fe0ebc899bd48e
-ms.sourcegitcommit: 10d9f4c2cee192bd80984d48cabba63b47c54551
+ms.openlocfilehash: e704d7584aad0b2309863743f58663f0c04b23ab2fee99b8c21f7e9e2b210bad
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53547560"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54124567"
 ---
 # <a name="authenticationmethodspolicy-resource-type"></a>tipo de recurso authenticationMethodsPolicy
 
@@ -29,8 +29,8 @@ Define os métodos de autenticação e os usuários que têm permissão para us�
 |:---|:---|:---|
 |description|Cadeia de caracteres|Uma descrição da política. Somente leitura.|
 |displayName|Cadeia de caracteres|O nome da política. Somente leitura.|
-|id|Cadeia de caracteres|O identificador da política. Herdado da [entidade](../resources/entity.md).|
-|lastModifiedDateTime|DateTimeOffset|A data e a hora da última atualização para a política. Somente leitura.|
+|id|String|O identificador da política. Herdado da [entidade](../resources/entity.md).|
+|lastModifiedDateTime|DateTimeOffset|A data e a hora da última atualização para a política. Apenas leitura.|
 |policyVersion|Cadeia de caracteres|A versão da política em uso. Somente leitura.|
 
 ## <a name="relationships"></a>Relações

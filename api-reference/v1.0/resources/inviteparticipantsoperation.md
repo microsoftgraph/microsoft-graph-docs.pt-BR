@@ -1,31 +1,31 @@
 ---
-title: tipo de recurso inviteParticipantsOperation
-description: Representa o status de uma operação de convite de participante de execução longa, disparada por uma chamada para a API participante-INVITE.
+title: Tipo de recurso inviteParticipantsOperation
+description: Representa o status de uma operação de convite de participante de longa duração, disparada por uma chamada para a API de convite para participantes.
 author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 7e729a572ceb69f59ed6cc00cd0a2e132765ed8a
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 9aa707a68cccb7424cb6a2eabaa455ece784730478ce2469b3e2f70c40e5297e
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47967489"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54196975"
 ---
-# <a name="inviteparticipantsoperation-resource-type"></a>tipo de recurso inviteParticipantsOperation
+# <a name="inviteparticipantsoperation-resource-type"></a>Tipo de recurso inviteParticipantsOperation
 
 Namespace: microsoft.graph
 
-Representa o status de uma operação de convite de participante de execução longa, disparada por uma chamada para a API participante-INVITE.
+Representa o status de uma operação de convite de participante de longa duração, disparada por uma chamada para a API de convite para participantes.
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade                       | Tipo                        | Descrição                                                                                                                                       |
 | :----------------------------- | :---------------------------| :-------------------------------------------------------------------------------------------------------------------------------------------------|
-| clientContext                  | String                      | O contexto do cliente.                                                                                                                               |
-| id                             | String                      | A ID da operação do servidor. somente leitura.                                                                                              |
-| participants | conjunto [invitationParticipantInfo](invitationParticipantInfo.md) | Os participantes a serem convidados. |
-| resultInfo                     | [resultInfo](resultinfo.md) | As informações de resultado.  Somente leitura.                                                                                             |
+| clientContext                  | Cadeia de caracteres                      | O contexto do cliente.                                                                                                                               |
+| id                             | Cadeia de caracteres                      | A id da operação do servidor. Somente leitura.                                                                                              |
+| participants | conjunto [invitationParticipantInfo](invitationParticipantInfo.md) | Os participantes a convidar. |
+| resultInfo                     | [resultInfo](resultinfo.md) | As informações de resultado.  Apenas leitura.                                                                                             |
 | status                         | String                      | Os valores possíveis são: `notStarted`, `running`, `completed`, `failed`. Somente leitura.                                                  |
 
 ## <a name="json-representation"></a>Representação JSON

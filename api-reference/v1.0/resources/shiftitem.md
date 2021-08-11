@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 7b8c412af92606391316b92f732d2e24346de4b2
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: 97891ada6a9587f6ef679bdc13d58564ab407cc623c6c3b339fc7f4e289894c9
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50721758"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54189314"
 ---
 # <a name="shiftitem-resource-type"></a>Tipo de recurso shiftItem
 
@@ -21,8 +21,8 @@ Representa uma versão de um [turno](shift.md).
 ## <a name="properties"></a>Propriedades
 | Propriedade                         | Tipo                    | Descrição                                                                             |
 |------------------------------|-------------------------|---------------------------------------------------------------------------------------------|
-| notes               | cadeia de caracteres                  | As notas de turno para `shiftItem` o .      |
-| displayName               | cadeia de caracteres                  | O rótulo de turno do `shiftItem` . |
+| notes               | string                  | As notas de turno para `shiftItem` o .      |
+| displayName               | string                  | O rótulo de turno do `shiftItem` . |
 | startDateTime               | DateTimeOffset                  | A data e a hora de início do `shiftItem` . O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`. Obrigatório. |
 | endDateTime               | DateTimeOffset                 | A data e a hora de término do `shiftItem` . Obrigatório. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`. |
 | tema | scheduleEntityTheme   |  Cores com suporte: branco; azul; verde; roxo; rosa; amarelo; cinza; darkBlue; darkGreen; darkPurple; darkPink; darkYellow. |

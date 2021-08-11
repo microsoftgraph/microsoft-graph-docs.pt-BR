@@ -6,12 +6,12 @@ localization_priority: Normal
 description: O recurso photo fornece propriedades de foto e câmera, por exemplo, metadados EXIF, em um driveItem.
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: fce0ba456e07c798cfcfce534b6428720afa619e
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: 1f2d69159ba7a054ca821f00f56dfa7627b4422d6069708eaa6ad8f53de651e1
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50239524"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54196842"
 ---
 # <a name="photo-resource-type"></a>Tipo de recurso Photo
 
@@ -53,7 +53,7 @@ O recurso **photo** fornece propriedades de foto e câmera, por exemplo, metadad
 | **exposureNumerator**   | Duplo         | O numerador da fração do tempo de exposição da câmera. Somente leitura.
 | **focalLength**         | Double         | A distância focal da câmera. Somente leitura.
 | **iso**                 | Int32          | O valor de ISO da câmera. Somente leitura.
-| **orientation**         | Int16          | O valor de orientação da câmera. Writable no OneDrive Personal.      |
+| **orientation**         | Int16          | O valor de orientação da câmera. Writable on OneDrive Personal.      |
 
 ## <a name="remarks"></a>Comentários
 

@@ -5,12 +5,12 @@ author: nilakhan
 localization_priority: Normal
 ms.prod: cloud-printing
 doc_type: resourcePageType
-ms.openlocfilehash: 787a584b32c6f34d78d14fa4d676b1be30a62c25
-ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
+ms.openlocfilehash: 968958ef9d016b672bfe4d100cfc09f7a3b57d6c6c3ff28c36309ec6df04fe4d
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50516865"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54154886"
 ---
 # <a name="printoperationstatus-resource-type"></a>Tipo de recurso printOperationStatus
 
@@ -31,9 +31,9 @@ Representa o status atual de uma operação de Impressão Universal de longa dur
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |notStarted|0|A operação ainda não foi iniciada.|
-|running|1 |A operação está em execução.|
-|bem-sucedido|2 |A operação foi concluída com êxito.|
-|failed|3 |Falha na operação.|
+|running|1|A operação está em execução.|
+|bem-sucedido|2|A operação foi concluída com êxito.|
+|failed|3|Falha na operação.|
 |unknownFutureValue|4 |Valor de sentinela de enumeração evolvável. Não usar.|
 
 ## <a name="json-representation"></a>Representação JSON

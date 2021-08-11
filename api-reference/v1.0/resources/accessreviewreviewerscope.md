@@ -5,12 +5,12 @@ author: isabelleatmsft
 localization_priority: Normal
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 85d602f72bc103b1588c3c9a76455fa2de0f8259
-ms.sourcegitcommit: 5a1cc1943527aa268e3797ee514871e65eb474a6
+ms.openlocfilehash: 573e6934250ab6a932922185776b20af92f6f0615f8ede33e87d26e1944386c4
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53030807"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54121428"
 ---
 # <a name="accessreviewreviewerscope-resource-type"></a>Tipo de recurso accessReviewReviewerScope
 
@@ -23,9 +23,9 @@ Herda de [accessReviewScope](../resources/accessreviewscope.md).
 ## <a name="properties"></a>Propriedades
 | Propriedade | Tipo | Descrição |
 | :-------------------------| :---------- | :---------- |
-| consulta | String | A consulta especificando quem será o revistor. Consulte tabela para exemplos. |
-| queryType | String | O tipo de consulta. Exemplos incluem `MicrosoftGraph` `ARM` e . |
-| queryRoot | String | No cenário em que os revisadores precisam ser especificados dinamicamente, essa propriedade é usada para indicar a fonte relativa da consulta. Essa propriedade só será necessária se uma consulta relativa, por exemplo, `./manager` , for especificada. Valor possível: `decisions` . |
+| consulta | Cadeia de caracteres | A consulta especificando quem será o revistor. Consulte tabela para exemplos. |
+| queryType | Cadeia de caracteres | O tipo de consulta. Exemplos incluem `MicrosoftGraph` `ARM` e . |
+| queryRoot | Cadeia de caracteres | No cenário em que os revisadores precisam ser especificados dinamicamente, essa propriedade é usada para indicar a fonte relativa da consulta. Essa propriedade só será necessária se uma consulta relativa, por exemplo, `./manager` , for especificada. Valor possível: `decisions` . |
 
 Para obter mais informações sobre opções de configuração para revisadores, consulte Atribuir revisadores à sua definição de revisão de acesso [usando a API do Microsoft Graph](/graph/accessreviews-reviewers-concept).
 

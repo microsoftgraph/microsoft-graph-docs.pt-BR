@@ -5,12 +5,12 @@ author: nilakhan
 localization_priority: Normal
 ms.prod: cloud-printing
 doc_type: resourcePageType
-ms.openlocfilehash: 2026706ec46a2408d20231add8203d2f5a622c96
-ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
+ms.openlocfilehash: 1c7954730f42e6ac15a45c6a68de8c827dc6f0406a30066020fe578c1ee9bccd
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50516860"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54149685"
 ---
 # <a name="printtask-resource-type"></a>Tipo de recurso printTask
 
@@ -26,8 +26,8 @@ Para obter detalhes sobre como usar esse recurso para adicionar suporte à impre
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
 | [Lista (de printTaskDefintion)](../api/printtaskdefinition-list-tasks.md) | [printTask](printtask.md) | Obter uma lista de tarefas que foram criadas com base em uma determinada printTaskDefinition. A lista inclui tarefas executadas no momento e tarefas concluídas recentemente. |
-| [Get](../api/printtask-get.md) | [printTask](printtask.md) | Obter detalhes sobre uma tarefa de impressão. |
-| [Update](../api/printtaskdefinition-update-task.md) | [printTask](printtask.md) | Atualiza uma tarefa de impressão. |
+| [Obter](../api/printtask-get.md) | [printTask](printtask.md) | Obter detalhes sobre uma tarefa de impressão. |
+| [Atualizar](../api/printtaskdefinition-update-task.md) | [printTask](printtask.md) | Atualiza uma tarefa de impressão. |
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
@@ -39,7 +39,7 @@ Para obter detalhes sobre como usar esse recurso para adicionar suporte à impre
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|
 |:---|:---|:---|
-|trigger|[printTaskTrigger](printtasktrigger.md)|O printTaskTrigger que disparou a execução dessa tarefa. Somente leitura.|
+|trigger|[printTaskTrigger](printtasktrigger.md)|O printTaskTrigger que disparou a execução dessa tarefa. Apenas leitura.|
 |definition|[printTaskDefinition](printtaskdefinition.md)|A printTaskDefinition usada para criar essa tarefa. Somente leitura.|
 
 ## <a name="json-representation"></a>Representação JSON

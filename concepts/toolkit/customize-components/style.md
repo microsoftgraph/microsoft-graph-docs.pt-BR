@@ -1,18 +1,18 @@
 ---
-title: Estilos de componentes no Microsoft Graph Toolkit
-description: Use as propriedades personalizadas de CSS para modificar os estilos de componente do Microsoft Graph Toolkit.
+title: Componentes de estilo no microsoft Graph Toolkit
+description: Use propriedades personalizadas CSS para modificar os estilos de componente Graph Toolkit Microsoft.
 localization_priority: Normal
 author: beth-panx
-ms.openlocfilehash: 33ccc02f182731d494820976632b7cec2425d077
-ms.sourcegitcommit: f9f95402b8a15152ede90dd736b03d532204fc2e
+ms.openlocfilehash: 437bad7f8a8e76d04f277f0796e7b44b98cac0b8f3f32e7787352d7c3cd9c8f2
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49663922"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54221072"
 ---
-# <a name="styling-components-in-the-microsoft-graph-toolkit"></a>Estilos de componentes no Microsoft Graph Toolkit
+# <a name="styling-components-in-the-microsoft-graph-toolkit"></a>Componentes de estilo no microsoft Graph Toolkit
 
-Cada componente do kit de ferramentas do Microsoft Graph documenta um conjunto de [Propriedades personalizadas de CSS](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties) que você pode usar para alterar a aparência de determinados elementos. Você pode encontrar as propriedades CSS personalizadas disponíveis em cada um dos documentos do componente. Por exemplo:
+Cada componente Graph Toolkit Microsoft documenta um conjunto de [propriedades personalizadas CSS](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties) que você pode usar para alterar a aparência de determinados elementos. Você pode encontrar as propriedades CSS personalizadas disponíveis em cada documento de componente. Por exemplo:
 
 ```css
 mgt-person {
@@ -20,15 +20,15 @@ mgt-person {
 }
 ```
 
-Você não pode estilizar elementos internos de um componente, a menos que forneça uma propriedade personalizada de CSS. Os elementos filho do componente estão hospedados em um [dom de sombra](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_shadow_DOM).
+Não é possível estilização de elementos internos de um componente, a menos que você forneça uma propriedade personalizada CSS. Os elementos filho do componente são hospedados em um [dom de sombra.](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_shadow_DOM)
 
-Para obter mais flexibilidade, considere o uso de [modelos personalizados](./templates.md).
+Para obter mais flexibilidade, considere o uso [de modelos personalizados.](./templates.md)
 
 ## <a name="apply-themes"></a>Aplicar temas
 
-Dois temas estão disponíveis-claro e escuro. Por padrão, todos os componentes são estilizados com tema claro. Para mudar para o tema escuro, você pode simplesmente aplicar `class="mgt-dark"` à seção da página HTML. Os componentes dentro dessa seção terão temas escuros aplicados. Os exemplos a seguir mostram como os temas serão aplicados com base na forma como você estrutura o HTML.
+Dois temas estão disponíveis - claro e escuro. Por padrão, todos os componentes são estilados com tema claro. Para alternar para o tema escuro, você pode simplesmente `class="mgt-dark"` aplicar à seção da sua página HTML. Os componentes dentro dessa seção terão o tema escuro aplicado. Os exemplos a seguir mostram como os temas serão aplicados com base em como você estrutura seu HTML.
 
-Exemplo 1: tema global
+Exemplo 1: Tema global
 
 ```html
 <body class="mgt-light">
@@ -39,13 +39,13 @@ Exemplo 1: tema global
 </body>
 ```
 
-Exemplo 2: tema de componente individual
+Exemplo 2: Tema de componente individual
 
 ```html
 <mgt-person-card class="mgt-dark"></mgt-person-card>
 ```
 
-Exemplo 3: tema regional
+Exemplo 3: Tema regional
 
 ```html
 <div class="mgt-light">
@@ -60,7 +60,7 @@ Exemplo 3: tema regional
 </div>
 ```
 
-Exemplo 4: personalizar o CSS com o tema
+Exemplo 4: Personalizar CSS com tema
 
 ```html
 <mgt-people-picker class="mgt-dark custom-class"></mgt-people-picker>

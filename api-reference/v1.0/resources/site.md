@@ -5,12 +5,12 @@ description: O recurso do site fornece metadados e relações para um site do Sh
 localization_priority: Priority
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: d9015326d4a1f6ea49abbbd6b14731ebbdc78b56
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: b0ce021bbc07170879a11cab2d23a66efc45b82d9881d5157bcc9d44d34549e0
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50239328"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54126274"
 ---
 # <a name="site-resource"></a>Recurso do site
 
@@ -93,7 +93,7 @@ O identificador `root` sempre faz referência ao site raiz de um determinado des
 | **drives**        | Collection([drive][])            | O conjunto de unidades (bibliotecas de documentos) nesse site.
 | **items**         | Collection([baseItem][])         | Usado para lidar com qualquer item contido neste site. Não é possível enumerar este conjunto.
 | **lists**         | Collection([list][])             | O conjunto de listas neste site.
-| **permissions**   | Coleção ([permissão][])         | As permissões associadas ao site. Anulável.
+| **permissions**   | Coleção ([permissão][])         | As permissões associadas ao site. Nulas.
 | **sites**         | Collection([site][])             | O conjunto dos subsites neste site.
 | **onenote**       | [onenote][]                      | Chama o serviço OneNote para operações relacionadas ao bloco de anotações.
 
@@ -104,7 +104,7 @@ O identificador `root` sempre faz referência ao site raiz de um determinado des
 [identitySet]: identityset.md
 [itemAnalytics]: itemanalytics.md
 [list]: list.md
-[permission]: permission.md
+[permissão]: permission.md
 [site]: site.md
 [onenote]: onenote.md
 

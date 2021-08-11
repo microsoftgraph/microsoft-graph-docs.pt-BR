@@ -1,36 +1,36 @@
 ---
-title: tipo de recurso plannerProgressTaskBoardTaskFormat
-description: O recurso **plannerProgressTaskBoardTaskFormat** representa as informações usadas para renderizar uma tarefa corretamente no modo de exibição de progresso do quadro de tarefas (um modo organizado pelo estado do campo PercentComplete no objeto Task, com as colunas não iniciadas, em andamento e concluída). Cada tarefa terá um objeto **plannerProgressTaskBoardTaskFormat** associado a ela.
+title: Tipo de recurso plannerProgressTaskBoardTaskFormat
+description: O **recurso plannerProgressTaskBoardTaskFormat** representa as informações usadas para renderizar uma tarefa corretamente na exibição Progresso do Quadro de Tarefas (uma exibição organizada pelo estado do campo PercentComplete no objeto de tarefa, com colunas para Não Iniciado, Em Andamento e Concluído). Cada tarefa terá um **objeto plannerProgressTaskBoardTaskFormat** associado a ela.
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: 0c08fed11b53610c06b27b9fa9d5e898b2f0620d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 9715fb55187a3d48ea8d21f5bd088dbfb2e08f189ed9c96e66e747c100a1272f
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48037357"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54218433"
 ---
-# <a name="plannerprogresstaskboardtaskformat-resource-type"></a>tipo de recurso plannerProgressTaskBoardTaskFormat
+# <a name="plannerprogresstaskboardtaskformat-resource-type"></a>Tipo de recurso plannerProgressTaskBoardTaskFormat
 
 Namespace: microsoft.graph
 
-O recurso **plannerProgressTaskBoardTaskFormat** representa as informações usadas para renderizar uma tarefa corretamente no modo de exibição de progresso do quadro de tarefas (um modo organizado pelo estado do campo PercentComplete no objeto Task, com as colunas não iniciadas, em andamento e concluída). Cada [tarefa](plannertask.md) terá um objeto **plannerProgressTaskBoardTaskFormat** associado a ela.
+O **recurso plannerProgressTaskBoardTaskFormat** representa as informações usadas para renderizar uma tarefa corretamente na exibição Progresso do Quadro de Tarefas (uma exibição organizada pelo estado do campo PercentComplete no objeto de tarefa, com colunas para Não Iniciado, Em Andamento e Concluído). Cada [tarefa](plannertask.md) terá um **objeto plannerProgressTaskBoardTaskFormat** associado a ela.
 
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
-|[Obter plannerProgressTaskBoardTaskFormat](../api/plannerprogresstaskboardtaskformat-get.md) | [plannerProgressTaskBoardTaskFormat](plannerprogresstaskboardtaskformat.md) |Leia as propriedades e os relacionamentos do objeto **plannerProgressTaskBoardTaskFormat** .|
-|[Atualização](../api/plannerprogresstaskboardtaskformat-update.md) | [plannerProgressTaskBoardTaskFormat](plannerprogresstaskboardtaskformat.md)    |Atualize o objeto **plannerProgressTaskBoardTaskFormat** . |
+|[Obter plannerProgressTaskBoardTaskFormat](../api/plannerprogresstaskboardtaskformat-get.md) | [plannerProgressTaskBoardTaskFormat](plannerprogresstaskboardtaskformat.md) |Ler propriedades e relações do **objeto plannerProgressTaskBoardTaskFormat.**|
+|[Atualizar](../api/plannerprogresstaskboardtaskformat-update.md) | [plannerProgressTaskBoardTaskFormat](plannerprogresstaskboardtaskformat.md)    |Atualize **o objeto plannerProgressTaskBoardTaskFormat.** |
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |id|String| Somente leitura. ID do recurso. Tem 28 caracteres e diferencia maiúsculas de minúsculas. [Formatar validação](planner-identifiers-disclaimer.md) é feito no serviço.|
-|orderHint|String|O valor de dica usado para ordenar a tarefa no modo de exibição de progresso do quadro de tarefas. O formato é definido conforme descrito [aqui](planner-order-hint-format.md).|
+|orderHint|String|Valor de dica usado para ordenar a tarefa no modo de exibição Progresso do Quadro de Tarefas. O formato é definido como descrito [aqui](planner-order-hint-format.md).|
 
 ## <a name="relationships"></a>Relações
 Nenhum

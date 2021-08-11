@@ -3,12 +3,12 @@ title: Manipular eventos expostos pelos componentes Graph Toolkit Microsoft
 description: Muitos componentes Graph Toolkit Microsoft emitem eventos personalizados. Anexar manipuladores de eventos a esses eventos permite que você responda a eles e controle o comportamento do seu aplicativo.
 localization_priority: Normal
 author: waldekmastykarz
-ms.openlocfilehash: f20de269ed7f304f9c1d7198475b6fdb81b709c7
-ms.sourcegitcommit: 9ac6bbab3df22e7629cf2bde796b527337c680aa
+ms.openlocfilehash: a1258391ab657cd8759d87d786d7f6f7cc29d8fd020ad146ecdfda0bd74e5696
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53082388"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54251565"
 ---
 # <a name="handle-events-exposed-by-microsoft-graph-toolkit-components"></a>Manipular eventos expostos pelos componentes Graph Toolkit Microsoft
 

@@ -5,12 +5,12 @@ author: akumar39
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType_
-ms.openlocfilehash: 9d73892d8bcd8ca6beba8be66fe0acc1f036e41e
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: fc16be17d4aecb377d25eff7770f3e8b3881f5f1ce936310a78eae1d0d5476a7
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50720085"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54159803"
 ---
 # <a name="timeoffreason-resource-type"></a>Tipo de recurso timeOffReason
 
@@ -18,15 +18,15 @@ Namespace: microsoft.graph
 
 Representa um motivo válido para uma [instância timeOff](timeoff.md) em um [cronograma](schedule.md).
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 
 | Método       | Tipo de retorno  |Descrição|
 |:---------------|:--------|:----------|
 |[List](../api/schedule-list-timeoffreasons.md) | [Coleção timeOffReason](timeoffreason.md) | Obter a lista **de timeOffReason** em um cronograma.|
-|[Create](../api/schedule-post-timeoffreasons.md) | [timeOffReason](timeoffreason.md) | Crie um novo **timeOffReason**.|
-|[Get](../api/timeoffreason-get.md) | [timeOffReason](timeoffreason.md) | Obter um **timeOffReason** por ID.|
+|[Criar](../api/schedule-post-timeoffreasons.md) | [timeOffReason](timeoffreason.md) | Crie um novo **timeOffReason**.|
+|[Obter](../api/timeoffreason-get.md) | [timeOffReason](timeoffreason.md) | Obter um **timeOffReason** por ID.|
 |[Replace](../api/timeoffreason-put.md) | [timeOffReason](timeoffreason.md) | Substitua um **timeOffReason**.|
-|[Delete](../api/timeoffreason-delete.md) | Nenhum | Marque um **timeOffReason** como inativo.|
+|[Delete](../api/timeoffreason-delete.md) | None | Marque um **timeOffReason** como inativo.|
 
 ## <a name="properties"></a>Propriedades
 |Nome          |Tipo           |Descrição                                                                                 |

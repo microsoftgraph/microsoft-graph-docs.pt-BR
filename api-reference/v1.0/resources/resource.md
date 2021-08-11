@@ -1,24 +1,24 @@
 ---
-title: Tipo de recurso OneNoteResource
-description: 'Uma imagem ou outro recurso de arquivo em uma página do OneNote. '
+title: Tipo de recurso do OneNoteResource
+description: 'Uma imagem ou outro recurso de arquivo em uma OneNote página. '
 localization_priority: Normal
 author: jewan-microsoft
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: df3a11007de41b2ec503e8dd54cd6d0a1a7ee071
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 39945f3086c8470dcbccc9d11a242d71df2a99dfd99977f147b2fcd180d69d24
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47967237"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54218412"
 ---
-# <a name="onenoteresource-resource-type"></a>Tipo de recurso OneNoteResource
+# <a name="onenoteresource-resource-type"></a>Tipo de recurso do OneNoteResource
 
 Namespace: microsoft.graph
 
-Uma imagem ou outro recurso de arquivo em uma página do OneNote.
+Uma imagem ou outro recurso de arquivo em uma OneNote página.
 
-Você pode obter os dados binários de um recurso, mas obter uma representação JSON de um objeto Resource ou uma coleção de recursos não é suportada.
+Você pode obter os dados binários de um recurso, mas não há suporte para obter uma representação JSON de um objeto de recurso ou uma coleção de recursos.
 
 <!--{
   "blockType": "resource",
@@ -35,19 +35,19 @@ Você pode obter os dados binários de um recurso, mas obter uma representação
 }
 ```
 
-Obtenha os dados binários de um recurso específico enviando uma solicitação GET para o ponto de `content` extremidade do recurso:
+Obter os dados binários de um recurso específico enviando uma solicitação GET para o ponto de extremidade do `content` recurso:
 
 ```
 GET ../onenote/resources/{id}/content
 ```
 
-O URI de recurso do arquivo é retornado quando você obtém o conteúdo HTML de uma página usando a seguinte solicitação:
+O URI de recurso do arquivo é retornado quando você obter o conteúdo HTML de uma página usando a seguinte solicitação:
 
 ```
 GET ../onenote/pages/{id}/content
 ```
 
-Na página HTML, uma `img` marca inclui pontos de extremidade do recurso de imagem original no `data-fullres-src` atributo e a imagem otimizada no `src` atributo:
+Na página HTML, uma marca inclui pontos de extremidade para o recurso de imagem original no atributo e a imagem `img` `data-fullres-src` otimizada no `src` atributo:
 ```
 <img
     src="image-resource-url"
@@ -56,7 +56,7 @@ Na página HTML, uma `img` marca inclui pontos de extremidade do recurso de imag
     data-fullres-src-type="media-type" ... />
 ```
 
-Uma `object` marca (que representa arquivos como PDF, docx e png) inclui o ponto de extremidade para o recurso de arquivo no `data` atributo:
+Uma marca (que representa arquivos como PDF, DOCX e PNG) inclui o ponto de extremidade do recurso `object` de arquivo no `data` atributo:
 
 ```
 <object
@@ -70,16 +70,16 @@ Uma `object` marca (que representa arquivos como PDF, docx e png) inclui o ponto
 | Propriedade             | Tipo            | Descrição
 |:---------------------|:----------------|:---------------------------------
 | conteúdo              | Fluxo          | O fluxo de conteúdo
-| contentUrl           | Cadeia de caracteres (URL)    | A URL para baixar o conteúdo
+| contentUrl           | Cadeia de caracteres (url)    | A URL para baixar o conteúdo
 
 ## <a name="relationships"></a>Relações
 Nenhum
 
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
-|[Obter dados binários do recurso](../api/resource-get.md) | Stream |Recupere os dados binários de um recurso de arquivo ou imagem.|
+|[Obter dados binários de recursos](../api/resource-get.md) | Stream |Recupere os dados binários de um recurso de arquivo ou imagem.|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

@@ -5,19 +5,19 @@ author: cloudhandler
 localization_priority: Normal
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: fac6527f330bfc6f45e3a6acc773ac4323fcea75
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 6a209a07e8246e345a550e106e76a27cc51020c74abd4eb1d1ee7e8c69c47193
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50959449"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54155369"
 ---
 # <a name="get-riskyuser"></a>Obter riskyUser
 Namespace: microsoft.graph
 
 Leia as propriedades e as relações de um [objeto riskyUser.](../resources/riskyuser.md)
 
->**Observação:** Usar a API riskyUsers requer uma licença do Azure AD Premium P2.
+>**Observação:** Usar a API riskyUsers requer uma Azure AD Premium P2 de usuário.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions_reference).

@@ -5,12 +5,12 @@ author: preetikr
 localization_priority: Normal
 ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: 6bdee4ee550b44694a572e3611652b19c7ff574c
-ms.sourcegitcommit: 8a9be6f65f62f29973508d82e0348d4142c18f23
+ms.openlocfilehash: a25f3b624d6e4d725386958a3c26c739276f4aaff207cf2c9bca50f196754d3a
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "53129436"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54189874"
 ---
 # <a name="alerttrigger-resource-type"></a>Tipo de recurso alertTrigger
 
@@ -22,8 +22,8 @@ Contém informações sobre as propriedades que dispararam uma detecção (exist
 
 | Propriedade   | Tipo|Descrição|
 |:---------------|:--------|:----------|
-|nome|String|Nome da propriedade que serve como um gatilho de detecção.|
-|tipo|String|Tipo da propriedade no par key:value para interpretação. Por exemplo, String, Boolean etc.|
+|nome|Cadeia de caracteres|Nome da propriedade que serve como um gatilho de detecção.|
+|tipo|Cadeia de caracteres|Tipo da propriedade no par key:value para interpretação. Por exemplo, String, Boolean etc.|
 |value|Cadeia de caracteres|Valor da propriedade que serve como um gatilho de detecção.|
 
 ## <a name="json-representation"></a>Representação JSON

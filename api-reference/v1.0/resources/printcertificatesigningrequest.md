@@ -5,12 +5,12 @@ author: nilakhan
 localization_priority: Normal
 ms.prod: cloud-printing
 doc_type: resourcePageType
-ms.openlocfilehash: 4c3eda94bb0809991fe7f711a5290561ef1821d7
-ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
+ms.openlocfilehash: 0c86e7a2ecbd164f40dcbb0865954c4549622f16aa1f2b008a392f150b626aa8
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50516916"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54129972"
 ---
 # <a name="printcertificatesigningrequest-resource-type"></a>Tipo de recurso printCertificateSigningRequest
 

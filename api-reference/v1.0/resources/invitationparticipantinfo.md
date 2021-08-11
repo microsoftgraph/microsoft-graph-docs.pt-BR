@@ -1,29 +1,29 @@
 ---
-title: tipo de recurso invitationParticipantInfo
-description: O **InvitationParticipant** é usado para representar um conjunto de identidades associadas a um convite de conversa e fornece parâmetros de convite adicionais.
+title: Tipo de recurso invitationParticipantInfo
+description: '**InvitationParticipant** é usado para representar um conjunto de identidades associadas a um convite de conversa e fornece parâmetros de convite adicionais.'
 author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 2425f7ebd6ac516a9100605c9ebfe47f1b87a114
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 5b8432cf28dd078add91b517f75bc33a71fc4e8134ecff8155c97cc0acc887c8
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47984247"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54202242"
 ---
-# <a name="invitationparticipantinfo-resource-type"></a>tipo de recurso invitationParticipantInfo
+# <a name="invitationparticipantinfo-resource-type"></a>Tipo de recurso invitationParticipantInfo
 
 Namespace: microsoft.graph
 
-Este recurso é usado para representar a entidade que está sendo convidada para uma chamada de grupo. 
+Esse recurso é usado para representar a entidade que está sendo convidada para uma chamada de grupo. 
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade                           | Tipo                          | Descrição                                                                          |
 | :--------------------------------- | :---------------------------- | :----------------------------------------------------------------------------------- |
-| ladrões                           | [identitySet](identityset.md) | O [identityset](identityset.md) associado a este convite.                   |
-| replacesCallId                     | String                        | Opcional. A chamada na qual a identidade de destino faz parte no momento. Essa chamada será cancelada quando o participante for adicionado. |
+| identity                           | [identitySet](identityset.md) | O [identitySet](identityset.md) associado a esse convite.                   |
+| replacesCallId                     | String                        | Opcional. A chamada da qual a identidade de destino faz parte no momento. Essa chamada será retirada depois que o participante for adicionado. |
 
 ## <a name="json-representation"></a>Representação JSON
 

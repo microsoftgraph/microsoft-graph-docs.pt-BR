@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: fb67920598d883a126c18cdf8acdfb1b38d9014a
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 92974716cc3b036014560cb352b89c1e42193fc76ab4578bd5ca0979a1912d0f
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48015131"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54151953"
 ---
 # <a name="pivottable-resource-type"></a>tipo de recurso de tabela dinâmica
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 Representa uma Tabela Dinâmica do Excel.
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
@@ -29,8 +29,8 @@ Representa uma Tabela Dinâmica do Excel.
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|id|String| Id da Tabela Dinâmica.   Somente leitura.|
-|name|String|Nome da Tabela Dinâmica.    |
+|id|Cadeia de caracteres| Id da Tabela Dinâmica.   Somente leitura.|
+|name|Cadeia de caracteres|Nome da Tabela Dinâmica.    |
 
 ## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|

@@ -1,31 +1,31 @@
 ---
 title: Tipo de recurso appIdentity
-description: Indica a identidade do aplicativo que realizou a ação ou foi alterado. Inclui id do aplicativo, nome, ID da entidade de serviço e nome. Esse recurso é chamado pela API directoryAudit
+description: Indica a identidade do aplicativo que realizou a ação ou foi alterado. Inclui ID do Aplicativo, Nome, ID da Entidade de Serviço e Nome. Esse recurso é chamado pela API directoryAudit
 localization_priority: Normal
 author: dhanyahk
 ms.prod: identity-and-access-reports
 doc_type: resourcePageType
-ms.openlocfilehash: d0ba66e962f70a854fd028305b1e31c140ad1fe8
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 0d9347ecf3571b89843c6e2b83454d6ae45b5b65405ba66914227a994abc0fb7
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50134992"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54155208"
 ---
 # <a name="appidentity-resource-type"></a>Tipo de recurso appIdentity
 
 Namespace: microsoft.graph
 
-Indica a identidade do aplicativo que realizou a ação ou foi alterado. Inclui a ID do aplicativo, o nome e a ID da entidade de serviço e o nome. Esse recurso é usado pela [operação Get directoryAudit.](../api/directoryaudit-get.md)
+Indica a identidade do aplicativo que realizou a ação ou foi alterado. Inclui a ID, o nome e o nome da entidade de serviço. Esse recurso é usado pela [operação Get directoryAudit.](../api/directoryaudit-get.md)
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |appId|Cadeia de caracteres|Se refere a GUID exclusivo que representa o Id de aplicativo no Azure Active Directory.|
-|displayName|String|Refere-se ao Nome do Aplicativo exibido no Portal do Azure.|
-|servicePrincipalId|String|Refere-se ao GUID exclusivo que indica a ID da entidade de serviço no Azure Active Directory para o aplicativo correspondente.|
-|servicePrincipalName|Cadeia de caracteres|Refere-se ao nome da entidade de serviço é o nome do aplicativo no locatário. |
+|displayName|Cadeia de caracteres|Refere-se ao Nome do Aplicativo exibido no Portal do Azure.|
+|servicePrincipalId|Cadeia de caracteres|Refere-se ao GUID exclusivo que indica a ID da Entidade de Serviço Azure Active Directory para o aplicativo correspondente.|
+|servicePrincipalName|Cadeia de caracteres|Refere-se ao Nome da Entidade de Serviço é o nome do aplicativo no locatário. |
 
 ## <a name="json-representation"></a>Representação JSON
 

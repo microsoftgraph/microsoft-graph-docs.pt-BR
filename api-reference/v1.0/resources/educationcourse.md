@@ -5,12 +5,12 @@ author: mlafleur
 localization_priority: Normal
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 347eb92cd0b36789cc7ecce1dea72af6985ea330
-ms.sourcegitcommit: 34891a1c601976166958be1aa04bab5936592b44
+ms.openlocfilehash: e54870ad3633f0b0170a54fad32ce8aa0baa2843466dd0f0e051caeacca54ffa
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52232121"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54135250"
 ---
 # <a name="educationcourse-resource-type"></a>Tipo de recurso educationCourse
 
@@ -22,11 +22,11 @@ Representa as informações do curso para uma classe. É usada dentro de [educat
 
 | Propriedade     | Tipo   | Descrição                               |
 | :----------- | :----- | :---------------------------------------- |
-| courseNumber | String | Identificador exclusivo do curso.         |
-| descrição  | String | Descrição do curso.                |
-| displayName  | String | Nome do curso.                       |
+| courseNumber | Cadeia de caracteres | Identificador exclusivo do curso.         |
+| description  | String | Descrição do curso.                |
+| displayName  | Cadeia de caracteres | Nome do curso.                       |
 | externalId   | Cadeia de caracteres | ID do curso do sistema de sincronização. |
-| Assunto      | String | Assunto do curso.                    |
+| Assunto      | Cadeia de caracteres | Assunto do curso.                    |
 
 ## <a name="relationships"></a>Relações
 

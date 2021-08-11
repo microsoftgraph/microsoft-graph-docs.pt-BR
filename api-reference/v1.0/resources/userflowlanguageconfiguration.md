@@ -5,12 +5,12 @@ author: jkdouglas
 localization_priority: Normal
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 556860eb77c4707f1d180b7924ae3126958a4799
-ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
+ms.openlocfilehash: b40df72429bdc1b23bbb9426ae9b9f78154257491ba3c715d57c0804b226df98
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52547201"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54221149"
 ---
 # <a name="userflowlanguageconfiguration-resource-type"></a>Tipo de recurso userFlowLanguageConfiguration
 
@@ -34,7 +34,7 @@ Para [Azure Active Directory fluxos de usuário](/azure/active-directory/externa
 |:---|:---|:---|
 |id|Cadeia de caracteres|O identificador do idioma. Este campo é a marca de identificação de idioma [RFC 5646](https://tools.ietf.org/html/rfc5646) compatível e deve ser uma ID de idioma documentada.|
 |isEnabled|Booliano|Indica se o idioma está habilitado no fluxo do usuário.|
-|displayName|Cadeia de caracteres|O nome do idioma a ser exibido. Essa propriedade é somente leitura.|
+|displayName|String|O nome do idioma a ser exibido. Essa propriedade é somente leitura.|
 
 ## <a name="relationships"></a>Relações
 

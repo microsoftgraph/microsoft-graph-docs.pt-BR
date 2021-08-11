@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dougeby
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 20e86afa8d0d5fddf5b87a6c6667e2e16baa391a
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 68d782f2853596ac3d575eb74cc821b52460cee46d3d204fe2cb1d9a9fb9413b
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52752829"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54223561"
 ---
 # <a name="officeconfiguration-resource-type"></a>Tipo de recurso officeConfiguration
 
@@ -31,7 +31,7 @@ Entidade singleton que atua como um contêiner para todas as funcionalidades de 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|ID da configuração do office.|
+|id|Cadeia de caracteres|ID da configuração do office.|
 |tenantCheckinStatuses|[Coleção officeClientCheckinStatus](../resources/intune-cirrus-officeclientcheckinstatus.md)|Lista de status de check-in do cliente do office.|
 |tenantUserCheckinSummary|[officeUserCheckinSummary](../resources/intune-cirrus-officeusercheckinsummary.md)|Entidade que descreve as estatuetas de check-in do locatário|
 

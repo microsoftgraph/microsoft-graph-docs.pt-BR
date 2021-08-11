@@ -4,12 +4,12 @@ description: Ao executar uma operação GET para recuperar uma imagem de gráfic
 localization_priority: Normal
 author: lumine2008
 ms.prod: excel
-ms.openlocfilehash: 330c7d3a531a5735e824dda61928c3af2f05e5e3
-ms.sourcegitcommit: ca55fc5f5711966eaa41da31cd1ae99820e9e586
-ms.translationtype: HT
+ms.openlocfilehash: 6e456a8008eb3d50da818c2e3da1a48ca54f4211eb5b1e8300dd3bef6dbf5e59
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/13/2019
-ms.locfileid: "35645209"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54149566"
 ---
 # <a name="display-a-chart-image-in-excel-with-microsoft-graph"></a>Exibir uma imagem de gráfico do Excel com o Microsoft Graph
 

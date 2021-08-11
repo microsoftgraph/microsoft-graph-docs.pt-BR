@@ -1,33 +1,33 @@
 ---
-title: tipo de recurso plannerCategoryDescriptions
-description: 'O recurso **plannerCategoryDescriptions** representa os rótulos descritivos das categorias que foram definidas para um plano. Ele pertence ao objeto Plan details. Pode haver até 6 categorias definidas. '
+title: Tipo de recurso plannerCategoryDescriptions
+description: 'O **recurso plannerCategoryDescriptions** representa os rótulos descritivos para as categorias que foram definidas para um plano. Ele pertence ao objeto de detalhes do plano. Pode haver até 6 categorias definidas. '
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: 96aa53647b5efcfae891b2865bb5d5358f4d5048
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 5dcb6a9b2825b2a246f1bef9b55c453c6c53c1d8c6e56a45474bfa804d8caa15
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48037504"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54154914"
 ---
-# <a name="plannercategorydescriptions-resource-type"></a>tipo de recurso plannerCategoryDescriptions
+# <a name="plannercategorydescriptions-resource-type"></a>Tipo de recurso plannerCategoryDescriptions
 
 Namespace: microsoft.graph
 
-O recurso **plannerCategoryDescriptions** representa os rótulos descritivos das categorias que foram definidas para um plano. Ele pertence ao objeto [Plan Details](plannerplandetails.md) . Pode haver até 6 categorias definidas. 
+O **recurso plannerCategoryDescriptions** representa os rótulos descritivos para as categorias que foram definidas para um plano. Ele pertence ao [objeto de detalhes do](plannerplandetails.md) plano. Pode haver até 6 categorias definidas. 
 
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|category1|String|O rótulo associado à categoria 1|
-|category2|String|O rótulo associado à categoria 2|
-|category3|String|O rótulo associado à categoria 3|
-|category4|String|O rótulo associado à categoria 4|
-|category5|String|O rótulo associado à categoria 5|
-|category6|String|O rótulo associado à categoria 6|
+|category1|Cadeia de caracteres|O rótulo associado à Categoria 1|
+|category2|String|O rótulo associado à Categoria 2|
+|category3|String|O rótulo associado à Categoria 3|
+|category4|Cadeia de caracteres|O rótulo associado à Categoria 4|
+|category5|String|O rótulo associado à Categoria 5|
+|category6|Cadeia de caracteres|O rótulo associado à Categoria 6|
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.

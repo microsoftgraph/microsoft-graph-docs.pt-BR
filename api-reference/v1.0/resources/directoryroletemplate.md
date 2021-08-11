@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: b13fa5eada7202ed240fe748f0fc92bc15ba8648
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: feffbf6c0771d367b7d5c96aba849684bfed9507ecfc6166580a749cb6009257
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50439888"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54231849"
 ---
 # <a name="directoryroletemplate-resource-type"></a>tipo de recurso directoryRoleTemplate
 
@@ -31,7 +31,7 @@ Representa um modelo de função de diretório. Um modelo de função de diretó
 |:---------------|:--------|:----------|
 |description|Cadeia de caracteres|A descrição definida para a função de diretório. Somente leitura.|
 |displayName|Cadeia de caracteres|O nome de exibição para definir para a função de diretório. Somente leitura. |
-|id|Cadeia de caracteres|O identificador exclusivo do modelo. Herdado de [directoryObject](directoryobject.md). Você especifica a **id** do modelo de função do diretório para a propriedade **roleTemplateId** na solicitação POST para ativar um [directoryRole](directoryrole.md) em um locatário. Chave, Não anulável. Somente leitura.|
+|id|String|O identificador exclusivo do modelo. Herdado de [directoryObject](directoryobject.md). Você especifica a **id** do modelo de função do diretório para a propriedade **roleTemplateId** na solicitação POST para ativar um [directoryRole](directoryrole.md) em um locatário. Chave, Não anulável. Somente leitura.|
 
 ## <a name="relationships"></a>Relações
 Nenhum

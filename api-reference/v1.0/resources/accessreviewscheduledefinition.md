@@ -5,12 +5,12 @@ author: isabelleatmsft
 localization_priority: Normal
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 2e95db65d320426f49e92c2b76bc7129545dc553
-ms.sourcegitcommit: 10d9f4c2cee192bd80984d48cabba63b47c54551
+ms.openlocfilehash: 9e2ee2d4296855d7f8fdf5ccd5a46252d7a3a7c70bdff83199c6aed51a7667e2
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53547535"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54121421"
 ---
 # <a name="accessreviewscheduledefinition-resource-type"></a>Tipo de recurso accessReviewScheduleDefinition
 
@@ -35,7 +35,7 @@ Herda da [entidade](../resources/entity.md).
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-| id | Cadeia de caracteres | O identificador exclusivo atribuído ao recurso de uma revisão de acesso. Oferece suporte para `$select`. Somente leitura.|
+| id | String | O identificador exclusivo atribuído ao recurso de uma revisão de acesso. Oferece suporte para `$select`. Somente leitura.|
 | displayName | Cadeia de caracteres   | Nome da série de revisão de acesso. Oferece suporte para `$select` e `$orderBy`. Obrigatório durante a criação. |
 | createdDateTime  |DateTimeOffset  | Timestamp quando a série de revisão de acesso foi criada. Oferece suporte para `$select` e `$orderBy`. Somente leitura. |
 | lastModifiedDateTime | DateTimeOffset   | Timestamp quando a série de revisão de acesso foi modificada pela última vez. Oferece suporte para `$select`. Somente leitura.|

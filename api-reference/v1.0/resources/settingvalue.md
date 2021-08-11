@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: 171b08d4542af6900dcb6549527e956c4395c947
-ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
+ms.openlocfilehash: b2128c754c3ae30b0ffd0a4be142a1b361ababe049b09e2336e92b8fa3186a90
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52547040"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54149643"
 ---
 # <a name="settingvalue-resource-type"></a>tipo de recurso settingValue
 

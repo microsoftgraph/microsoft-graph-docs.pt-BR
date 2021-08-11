@@ -5,12 +5,12 @@ localization_priority: Normal
 author: sharad-sharma-msft
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: f70fded2c35576d31f3c5b17edf0342d97a88302
-ms.sourcegitcommit: f77c1385306fd40557aceb24fdfe4832cbb60a27
+ms.openlocfilehash: 946641cdaa3c7276d3119baa8e2f1921522a7ba11c2f16a1d9b9d31aeb654e06
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/12/2021
-ms.locfileid: "52912197"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54124497"
 ---
 # <a name="educationrubric-resource-type"></a>Tipo de recurso educationRubric
 
@@ -27,7 +27,7 @@ Consulte [Education rubric overview para](/graph/education-rubric-overview) obte
 | [Criar educationRubric](../api/educationuser-post-rubrics.md) | [educationRubric](educationrubric.md) | Crie um novo objeto educationRubric. |
 | [Obter educationRubric](../api/educationrubric-get.md) | [educationRubric](educationrubric.md) | Ler propriedades e relações do objeto educationRubric. |
 | [Atualizar educationRubric](../api/educationrubric-update.md) | [educationRubric](educationrubric.md) | Atualize o objeto educationRubric. |
-| [Excluir educationRubric](../api/educationrubric-delete.md) | Nenhum | Exclua o objeto educationRubric. |
+| [Excluir educationRubric](../api/educationrubric-delete.md) | None | Exclua o objeto educationRubric. |
 
 ## <a name="properties"></a>Propriedades
 
@@ -35,8 +35,8 @@ Consulte [Education rubric overview para](/graph/education-rubric-overview) obte
 |:-------------|:------------|:------------|
 |createdBy|[identitySet](identityset.md)|O usuário que criou esse recurso.|
 |createdDateTime|DateTimeOffset|O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`|
-|descrição|[itemBody](itembody.md)|A descrição dessa rubrica.|
-|displayName|String|O nome dessa rubrica.|
+|description|[itemBody](itembody.md)|A descrição dessa rubrica.|
+|displayName|Cadeia de caracteres|O nome dessa rubrica.|
 |grading|[educationAssignmentGradeType](educationassignmentgradetype.md)|O tipo de classificação dessa rubrica -- nulo para uma rubrica sem pontos ou [educationAssignmentPointsGradeType](educationassignmentpointsgradetype.md) para um rubric de pontos.|
 |lastModifiedBy|[identitySet](identityset.md)|O último usuário a modificar o recurso.|
 |lastModifiedDateTime|DateTimeOffset|Momento no tempo em que o recurso foi modificado pela última vez.  O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`|

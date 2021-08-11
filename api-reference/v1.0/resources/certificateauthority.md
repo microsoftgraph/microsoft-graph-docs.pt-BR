@@ -5,12 +5,12 @@ localization_priority: Normal
 author: adimitui
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 555243468312b9c0eb63ee1bae37d2088da8b025
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 4aa2ecb3c3d16ad942458da190247f1d6f6cb87babc926c97c95605d21d5418d
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50134957"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54235678"
 ---
 # <a name="certificateauthority-resource-type"></a>Tipo de recurso certificateAuthority
 
@@ -22,12 +22,12 @@ Representa uma autoridade de certificação.
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|certificado|Binário|Obrigatório. A cadeia de caracteres codificada em base64 que representa o certificado público.|
-|certificateRevocationListUrl|String|A URL da lista de certificados revogados.|
-|deltaCertificateRevocationListUrl|String|A URL contém a lista de todos os certificados revogados desde a última vez que uma lista de revogação de certificado completo foi criada.|
+|certificado|Binário|Obrigatório. A cadeia de caracteres codificada base64 que representa o certificado público.|
+|certificateRevocationListUrl|String|A URL da lista de revogação de certificados.|
+|deltaCertificateRevocationListUrl|Cadeia de caracteres|A URL contém a lista de todos os certificados revogados desde a última vez que uma lista de revogação de certificado completo foi criada.|
 |isRootAuthority|Booliano|Obrigatório. **true** se o certificado confiável for uma autoridade raiz, **false** se o certificado confiável for uma autoridade intermediária.|
 |emissor|String|O emissor do certificado, calculado a partir do valor **do** certificado. Somente leitura. |
-|issuerSki|String|O identificador da chave de assunto do certificado, calculado a partir do valor **do** certificado. Somente leitura.|
+|issuerSki|Cadeia de caracteres|O identificador da chave de assunto do certificado, calculado a partir do **valor do** certificado. Somente leitura.|
 
 ## <a name="json-representation"></a>Representação JSON
 

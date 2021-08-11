@@ -6,12 +6,12 @@ localization_priority: Normal
 description: 'O recurso Folder agrupa dados relacionados a pastas em um item em uma única estrutura. '
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 27ea5bc0d90d89c13fe751e78e9aef423dd099ff
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: 8160e90124d2e614c46a1aa87ad7d78900181b7ef6ee80e25e8083b1490515a0
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50240035"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54189741"
 ---
 # <a name="folder-resource-type"></a>Tipo de recurso Folder
 
@@ -57,6 +57,6 @@ Para saber mais sobre as facetas de um DriveItem, confira [DriveItem][].
   "description": "The Folder facet describes properties of a folder",
   "keywords": "folder,item,facet",
   "section": "documentation",
-  "tocPath": "Facets/Folder"
+  "tocPath&quot;: &quot;Facets/Folder"
 } -->
 

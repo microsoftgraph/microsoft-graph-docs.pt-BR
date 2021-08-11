@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: e3791d0a1f5f982c65564abbe0923f10c914737a
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 8c1280b6803188a7001a1e4ea1c064f9cfbc93eaca6323a748403ae457da3647
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52752438"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54235503"
 ---
 # <a name="mobilethreatpartnertenantstate-enum-type"></a>Tipo denum mobileThreatPartnerTenantState
 

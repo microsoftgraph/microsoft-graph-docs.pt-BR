@@ -3,12 +3,12 @@ title: Use o microsoft Graph Toolkit com React
 description: Começar a usar o microsoft Graph Toolkit em um React aplicativo.
 localization_priority: Normal
 author: waldekmastykarz
-ms.openlocfilehash: 6618599b767f5c7ebe3d0469aed012c81125738e
-ms.sourcegitcommit: 456ec9510807d05623c0ed1dd049c9676f53f56b
+ms.openlocfilehash: d7bf063a869e756554fa280406dfee3b5a569607f39bdd1763e15086dd2f29b2
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53060500"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54132946"
 ---
 # <a name="use-the-microsoft-graph-toolkit-with-react"></a>Use o microsoft Graph Toolkit com React
 

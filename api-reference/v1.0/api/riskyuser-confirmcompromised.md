@@ -5,17 +5,17 @@ author: cloudhandler
 localization_priority: Normal
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 193baf4a8e450f0fc05812da8cb48440ebfccab1
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 743279c5bc7b79b7da3f508d9f8fc1cc89a434aaf052421915a5952f57912e84
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50440091"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54124651"
 ---
 # <a name="riskyuser-confirmcompromised"></a>riskyUser: confirmCompromised
 Namespace: microsoft.graph
 
->**Observação:** A API riskyUsers requer uma licença do Azure AD Premium P2.
+>**Observação:** A API riskyUsers requer uma Azure AD Premium P2 de usuário.
 
 Confirme um ou mais [objetos riskyUser](../resources/riskyuser.md) como comprometidos. Essa ação define o nível de risco do usuário direcionado como alto.
 
@@ -51,7 +51,7 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta ação.
 
 |Parâmetro|Tipo|Descrição|
 |:---|:---|:---|
-|userIds|Conjunto de cadeias de caracteres|Especifique as IDs de usuário arriscadas para descartar no corpo da solicitação.|
+|userIds|Coleção de cadeias de caracteres|Especifique as IDs de usuário arriscadas para descartar no corpo da solicitação.|
 
 
 

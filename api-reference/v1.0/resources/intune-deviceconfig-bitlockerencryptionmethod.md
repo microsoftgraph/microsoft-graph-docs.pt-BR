@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 89bc204eaabc8b5c7f1c6b919aee2638317955f4
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 9af8ae7468e96bfc16187916fad56ff5a29c2ad54bad1a11ef8e17bbebeeb3fe
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52755893"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54189622"
 ---
 # <a name="bitlockerencryptionmethod-enum-type"></a>Tipo de número bitLockerEncryptionMethod
 

@@ -1,26 +1,26 @@
 ---
-title: tipo de recurso teamsAsyncOperation
-description: 'Uma operação assíncrona do Microsoft Teams transcende o tempo de vida de uma única solicitação de API. '
+title: Tipo de recurso teamsAsyncOperation
+description: 'Uma Microsoft Teams assíncrona transcende o tempo de vida de uma única solicitação de API. '
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: c11527f5a05018f02b4f3113ffa52e10e8929cfd
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 643a7f57253af36e52484166492fd1e373f4ff5415ce24f1ccf84b69a3ec4fd1
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48078966"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54196534"
 ---
-# <a name="teamsasyncoperation-resource-type"></a>tipo de recurso teamsAsyncOperation
+# <a name="teamsasyncoperation-resource-type"></a>Tipo de recurso teamsAsyncOperation
 
 Namespace: microsoft.graph
 
 
 
-Uma operação assíncrona do Microsoft Teams é uma operação que transcende o tempo de vida de uma única solicitação de API. Essas operações são de longa duração ou muito caras para concluir dentro do prazo de sua solicitação de origem.
+Uma Microsoft Teams assíncrona é uma operação que transcende o tempo de vida de uma única solicitação de API. Essas operações são de longa duração ou muito caras para concluir dentro do período de tempo de sua solicitação de origem.
 
-Quando uma operação assíncrona é iniciada, o método retorna um código de resposta aceito 202. A resposta também conterá um cabeçalho de local, que contém o local do teamsAsyncOperation. Verifique periodicamente o status da operação fazendo uma solicitação GET para este local; Aguarde >30 segundos entre as verificações.
+Quando uma operação assíncrona é iniciada, o método retorna um código de resposta aceito 202. A resposta também conterá um header Location, que contém o local do teamsAsyncOperation. Verifique periodicamente o status da operação fazendo uma solicitação GET para esse local; aguarde >30 segundos entre verificações.
 Quando a solicitação for concluída com êxito, o status será "bem-sucedido" e o targetResourceLocation apontará para o recurso criado/modificado.
 
 ## <a name="properties"></a>Propriedades
@@ -28,14 +28,14 @@ Quando a solicitação for concluída com êxito, o status será "bem-sucedido" 
 | Propriedade | Tipo   | Descrição |
 |:---------------|:--------|:----------|
 |id|string |ID de operação exclusiva.|
-|OperationType|[teamsAsyncOperationType](teamsasyncoperationtype.md) |Indica o tipo de operação que está sendo descrito.|
+|operationType|[teamsAsyncOperationType](teamsasyncoperationtype.md) |Indica qual tipo de operação está sendo descrito.|
 |createdDateTime|DateTimeOffset |Hora em que a operação foi criada.|
 |status|[teamsAsyncOperationStatus](teamsasyncoperationstatus.md)| Status da operação.|
 |lastActionDateTime|DateTimeOffset |Hora em que a operação assíncrona foi atualizada pela última vez.|
-|attemptsCount|Int32|Número de vezes em que a operação foi tentada antes de ser marcada com êxito ou falhou.|
-|targetResourceId|#c0 |A ID do objeto que é criado ou modificado como resultado dessa operação assíncrona, normalmente uma [equipe](../resources/team.md).|
-|targetResourceLocation|string|O local do objeto que é criado ou modificado como resultado dessa operação assíncrona. Essa URL deve ser tratada como um valor opaco e não analisada em seus caminhos de componente.|
-|erro|[operationError](operationerror.md)|Qualquer erro que causa falha na operação assíncrona.|
+|attemptsCount|Int32|Número de vezes que a operação foi tentada antes de ser marcada com êxito ou falha.|
+|targetResourceId|guid |A ID do objeto criado ou modificado como resultado dessa operação assíncrona, normalmente uma [equipe](../resources/team.md).|
+|targetResourceLocation|string|O local do objeto criado ou modificado como resultado dessa operação assíncrona. Essa URL deve ser tratada como um valor opaco e não analisado em seus caminhos de componente.|
+|erro|[operationError](operationerror.md)|Qualquer erro que cause falha na operação assíncrona.|
 
 ## <a name="json-representation"></a>Representação JSON
 

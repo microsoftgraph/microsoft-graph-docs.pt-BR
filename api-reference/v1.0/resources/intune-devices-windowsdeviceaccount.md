@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 28756dbb692ea13def2062653e7887f830368b2c
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: a5ccafb436f2fcbb7a5d149888eef3a69f87b8f44a86891243d5ceae03dc8dd5
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52754997"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54152471"
 ---
 # <a name="windowsdeviceaccount-resource-type"></a>Tipo de recurso windowsDeviceAccount
 
@@ -26,7 +26,7 @@ Ainda não documentado
 |password|String|Ainda não documentado|
 
 ## <a name="relationships"></a>Relações
-Nenhuma
+Nenhum
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
