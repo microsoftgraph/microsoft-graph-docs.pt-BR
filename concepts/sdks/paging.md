@@ -3,12 +3,12 @@ title: Page through a collection using the Microsoft Graph SDKs
 description: Fornece instruções para criar solicitações Graph API da Microsoft usando os SDKs do Microsoft Graph.
 localization_priority: Normal
 author: DarrelMiller
-ms.openlocfilehash: d06a23e5c1e53042192fe3fe8b4c8e3fe13c488d
-ms.sourcegitcommit: db3d2c6db8dd8f8cc14bdcebb2904d5e056a73e7
+ms.openlocfilehash: c0a291e71553f0e0c922756b4bfaa6ff86d6ae6cbbace9936eda3cad6d3124b4
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52579659"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54174700"
 ---
 # <a name="page-through-a-collection-using-the-microsoft-graph-sdks"></a>Page through a collection using the Microsoft Graph SDKs
 
@@ -16,7 +16,7 @@ Por motivos de desempenho, as coleções de entidades geralmente são divididas 
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
-Se você enviar quaisquer headers de solicitação adicionais em sua solicitação inicial, esses headers não serão incluídos por padrão nas solicitações de página subsequentes. Se esses headers precisam ser enviados em solicitações subsequentes, você deve defini-los explicitamente.
+Se você enviar quaisquer headers de solicitação adicionais em sua solicitação inicial, esses headers não serão incluídos por padrão nas solicitações de página subsequentes. Se esses cabeçalhos precisam ser enviados em solicitações subsequentes, você deve defini-los explicitamente.
 
 ## <a name="iterate-over-all-the-messages"></a>Iterar sobre todas as mensagens
 

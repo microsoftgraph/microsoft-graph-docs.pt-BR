@@ -1,18 +1,18 @@
 ---
-title: tipo de recurso recordOperation
+title: Tipo de recurso recordOperation
 description: Esse tipo de recurso contém informações relacionadas à gravação de áudio.
 author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 508404a3360b2b59656dc31df6ec44f16f682cf4
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: e655765044e7ed54746efda17e4e2e1c5129d0e6ca4bbf4a692d45817034f9f7
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47991891"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54202137"
 ---
-# <a name="recordoperation-resource-type"></a>tipo de recurso recordOperation
+# <a name="recordoperation-resource-type"></a>Tipo de recurso recordOperation
 
 Namespace: microsoft.graph
 
@@ -22,11 +22,11 @@ Esse tipo de recurso contém informações relacionadas à gravação de áudio.
 
 | Propriedade                       | Tipo                        | Descrição                                                                                                                                       |
 | :----------------------------- | :---------------------------| :-------------------------------------------------------------------------------------------------------------------------------------------------|
-| clientContext                  | String                      | Cadeia de caracteres de contexto de cliente exclusivo. O limite máximo é de 256 caracteres.                                                                                                                               |
-| id                             | String                      | A ID da operação do servidor. somente leitura.                                                                                              |
-| recordingAccessToken           | String                      | O token de acesso necessário para recuperar a gravação.                                                                                              |
-| recordingLocation              | String                      | O local onde a gravação está localizada.                                                                                                      |
-| resultInfo                     | [resultInfo](resultinfo.md) | As informações de resultado.  Somente leitura.                                                                                              |
+| clientContext                  | String                      | Cadeia de caracteres de contexto de cliente exclusiva. O limite máximo é 256 caracteres.                                                                                                                               |
+| id                             | Cadeia de caracteres                      | A id da operação do servidor. Somente leitura.                                                                                              |
+| recordingAccessToken           | Cadeia de caracteres                      | O token de acesso necessário para recuperar a gravação.                                                                                              |
+| recordingLocation              | Cadeia de caracteres                      | O local onde a gravação está localizada.                                                                                                      |
+| resultInfo                     | [resultInfo](resultinfo.md) | As informações de resultado.  Apenas leitura.                                                                                              |
 | status                         | String                      | Os valores possíveis são: `notStarted`, `running`, `completed`, `failed`. Somente leitura.                                                |
 
 ## <a name="relationships"></a>Relações

@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: cloud-printing
 doc_type: resourcePageType
-ms.openlocfilehash: 986749028a75f98157ff73138396a4ad56672fc8
-ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
+ms.openlocfilehash: 6971d34f2b2e3ee023a6bb2e57d5d02ca7de3bfb54b1571d4182905e3666f9b2
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50516863"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54178046"
 ---
 # <a name="printservice-resource-type"></a>Tipo de recurso printService
 

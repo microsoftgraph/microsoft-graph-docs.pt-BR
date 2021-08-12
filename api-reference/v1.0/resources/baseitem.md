@@ -6,12 +6,12 @@ localization_priority: Normal
 description: O recurso baseItem é um recurso abstrato que contém um conjunto comum de propriedades compartilhado entre vários outros tipos de recursos.
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 717426f29b8c466af5799871fcc12cf4cd8bdf65
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: 2352eb143bb0a8042ca38096d114c92fb3f181091d505df4487dd329c1abed15
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50239090"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54163856"
 ---
 # <a name="baseitem-resource-type"></a>Tipo de recurso BaseItem
 
@@ -89,6 +89,6 @@ O tipo `baseItem` não deve ser usado diretamente.
   "description": "",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "Resources/BaseItem"
+  "tocPath&quot;: &quot;Resources/BaseItem"
 } -->
 

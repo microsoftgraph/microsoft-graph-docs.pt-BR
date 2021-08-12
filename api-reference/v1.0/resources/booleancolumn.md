@@ -6,12 +6,12 @@ localization_priority: Normal
 description: booleanColumn em um recurso columnDefinition indica que a coluna mantém um valor booliano.
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 65832ebf041a300ff289b680cd273eedc799c2b3
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: df54ae53322cb933276abc33474ce9ce666b813bc91cbd831735d238e158f068
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50239083"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54169673"
 ---
 # <a name="booleancolumn-resource-type"></a>Tipo de recurso BooleanColumn
 

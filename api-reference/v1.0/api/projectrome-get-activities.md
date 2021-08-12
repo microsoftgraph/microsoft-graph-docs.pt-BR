@@ -1,22 +1,22 @@
 ---
 title: Obter atividades do usuário
-description: Obter atividades para um determinado usuário. Diferentemente da função OData **recente** , as atividades sem históricos serão retornadas. A permissão UserActivity. ReadWrite. CreatedByApp aplicará filtragem adicional à resposta, de modo que somente as atividades criadas por seu aplicativo serão retornadas. Essa filtragem do lado do servidor pode resultar em páginas vazias se o usuário for particularmente ativo e outros aplicativos tiverem criado atividades mais recentes. Para obter as atividades do aplicativo, use a propriedade **nextLink** para paginar.
+description: Obter atividades para um determinado usuário. Ao contrário **da função** OData recente, as atividades sem históricos serão retornadas. A permissão UserActivity.ReadWrite.CreatedByApp aplicará filtragem extra à resposta, para que somente as atividades criadas pelo aplicativo sejam retornadas. Essa filtragem do lado do servidor pode resultar em páginas vazias se o usuário estiver particularmente ativo e outros aplicativos criarem atividades mais recentes. Para obter as atividades do aplicativo, use a **propriedade nextLink** para paginar.
 localization_priority: Normal
 ms.prod: project-rome
 author: ailae
 doc_type: apiPageType
-ms.openlocfilehash: 0b2f9d7831a01760e871298b1df8de05a5b43978
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: bb099753a842b6aeef1a0c5f8353ea390ebb6de79a054db8081c72ca795a9dab
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48405880"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54175445"
 ---
 # <a name="get-user-activities"></a>Obter atividades do usuário
 
 Namespace: microsoft.graph
 
-Obter atividades para um determinado usuário. Diferentemente da função OData **recente** , as atividades sem históricos serão retornadas. A permissão UserActivity. ReadWrite. CreatedByApp aplicará filtragem adicional à resposta, de modo que somente as atividades criadas por seu aplicativo serão retornadas. Essa filtragem do lado do servidor pode resultar em páginas vazias se o usuário for particularmente ativo e outros aplicativos tiverem criado atividades mais recentes. Para obter as atividades do aplicativo, use a propriedade **nextLink** para paginar.
+Obter atividades para um determinado usuário. Ao contrário **da função** OData recente, as atividades sem históricos serão retornadas. A permissão UserActivity.ReadWrite.CreatedByApp aplicará filtragem extra à resposta, para que somente as atividades criadas pelo aplicativo sejam retornadas. Essa filtragem do lado do servidor pode resultar em páginas vazias se o usuário estiver particularmente ativo e outros aplicativos criarem atividades mais recentes. Para obter as atividades do aplicativo, use a **propriedade nextLink** para paginar.
 
 ## <a name="permissions"></a>Permissões
 
@@ -38,13 +38,13 @@ GET /me/activities
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Este método oferece suporte a alguns [parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta. Há suporte para os seguintes parâmetros de consulta:
+Este método dá suporte a alguns [Parâmetros de Consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta. Os seguintes parâmetros de consulta são suportados:
 
-- $expand da propriedade de navegação **historyItems** .
-- $top limitar o número máximo de itens nas páginas.
-- $filter na propriedade **lastModifiedDateTime** para atividades ou **historyItems**, se expandida.
+- $expand para a **propriedade de navegação historyItems.**
+- $top limitar o número máximo de itens entre páginas.
+- $filter na propriedade **lastModifiedDateTime** para atividades ou **historyItems**, se expandido.
 
-Veja a seguir alguns exemplos de consultas suportadas com codificação de URL:
+Veja a seguir alguns exemplos de consultas com suporte com codificação de URL:
 
 ```
 /me/activities?$expand=historyItems($filter=lastModifiedDateTime%20gt%202018-01-22T21:45:00.347Z%20and%20lastModifiedDateTime%20lt%202018-01-22T22:00:00.347Z)
@@ -66,7 +66,7 @@ Nenhum corpo de solicitação.
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna o `200 OK` código de resposta com as atividades do usuário para seu aplicativo.
+Se tiver êxito, este método retornará `200 OK` o código de resposta com as atividades do usuário para seu aplicativo.
 
 ## <a name="example"></a>Exemplo
 

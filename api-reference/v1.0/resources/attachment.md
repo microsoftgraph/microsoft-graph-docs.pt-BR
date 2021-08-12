@@ -5,12 +5,12 @@ localization_priority: Priority
 author: abheek-das
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: e82ce58786e23448458e9e1c60fad5d0c54b6388
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: 1151ff7a9392ba6450651b8d5df24eed1b6a28189a25b935ec2570a0280d436b
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50722430"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54178609"
 ---
 # <a name="attachment-resource-type"></a>tipo de recurso anexo
 
@@ -50,7 +50,7 @@ A seguir estão as propriedades de base de qualquer recurso de anexo. Consulte o
 |contentType|String|O tipo MIME.|
 |id|String| Somente leitura.|
 |isInline|Booliano|`true` se o anexo for embutido; caso contrário, `false`.|
-|lastModifiedDateTime|DateTimeOffset|O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`|
+|lastModifiedDateTime|DateTimeOffset|O tipo de carimbo de data/hora representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1º de janeiro de 2014 é `2014-01-01T00:00:00Z`|
 |nome|String|Nome de arquivo do anexo.|
 |size|Int32|O comprimento do anexo em bytes.|
 

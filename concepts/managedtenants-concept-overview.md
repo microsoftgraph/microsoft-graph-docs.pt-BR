@@ -4,12 +4,12 @@ description: Microsoft 365 Lighthouse é um portal de administração que ajuda 
 author: isaiahwilliams
 localization_priority: Normal
 ms.prod: microsoft-365-lighthouse
-ms.openlocfilehash: 177a2f03fe5ee0e2e7d90ade038dcef1f7d6c3db
-ms.sourcegitcommit: e372382019f1a136543eadab02ba70af3921e098
+ms.openlocfilehash: 2c05851c8cffb445feb49b089112516f6d2133373490a150d0176d7a51d670b2
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "53401885"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54236931"
 ---
 # <a name="overview-for-multi-tenant-management-using-the-microsoft-365-lighthouse-api"></a>Visão geral do gerenciamento de vários locatários usando Microsoft 365 Lighthouse API
 

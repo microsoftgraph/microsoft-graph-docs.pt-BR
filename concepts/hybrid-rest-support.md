@@ -2,12 +2,12 @@
 title: Usar as APIs REST para acessar caixas de correio em implantações híbridas do Exchange (visualização)
 description: O Microsoft Graph sempre forneceu acesso a caixas de correio do cliente na nuvem no Exchange Online como parte do Microsoft 365.
 localization_priority: Priority
-ms.openlocfilehash: ba9d4d734d90b60814841a2671b087fb5095a2fd
-ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
+ms.openlocfilehash: 87e907e5c3f13a48c2c7905d9c93c0d6c36371f2d303ff28afcb0064f6d003b9
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48289173"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54174854"
 ---
 # <a name="use-rest-apis-to-access-mailboxes-in-exchange-hybrid-deployments-preview"></a>Usar as APIs REST para acessar caixas de correio em implantações híbridas do Exchange (visualização)
 
@@ -28,7 +28,7 @@ O Microsoft Graph fornece abertura (suporte a padrões abertos como JSON, OAUTH 
 
 - Requisitos de caixa de correio
 
-  - Todas as caixas de correio locais que usarão as APIs REST devem estar localizadas em bancos de dados localizados em servidores Exchange 2016 CU3. 
+  - Todas as caixas de correio locais que usarão as APIs REST devem estar localizadas em bancos de dados localizados em servidores Exchange 2016 CU3. 
 
 - Requisitos de infraestrutura
 

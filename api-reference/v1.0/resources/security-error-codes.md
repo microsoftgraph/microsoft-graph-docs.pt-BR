@@ -1,39 +1,39 @@
 ---
-title: Respostas de erro da API de segurança do Microsoft Graph
-description: Erros na API de segurança do Microsoft Graph são retornados usando o código de status de conteúdo parcial HTTP 206, e são entregues por meio de um cabeçalho de aviso.
+title: Respostas de Graph de erro da API de Segurança da Microsoft
+description: Os erros na API de Segurança do Microsoft Graph são retornados usando o código de status de Conteúdo Parcial HTTP 206 padrão e são entregues por meio de um cabeçalho de aviso.
 author: preetikr
 localization_priority: Normal
 ms.prod: security
 doc_type: conceptualPageType
-ms.openlocfilehash: 7eae631aaa7f48b471c2dc1273f0ea0841434a57
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 1ec7f0846c0de3674f36cbe0c9a0499ad72481692679e73784a8aafb53387cc2
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47984009"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54205201"
 ---
-# <a name="microsoft-graph-security-api-error-responses"></a>Respostas de erro da API de segurança do Microsoft Graph
+# <a name="microsoft-graph-security-api-error-responses"></a>Respostas de Graph de erro da API de Segurança da Microsoft
 
 Namespace: microsoft.graph
 
-Erros na API de segurança do Microsoft Graph são retornados usando o código de status de conteúdo parcial HTTP 206, e são entregues por meio de um cabeçalho de aviso.
+Os erros na API de Segurança do Microsoft Graph são retornados usando o código de status de Conteúdo Parcial HTTP 206 padrão e são entregues por meio de um cabeçalho de aviso.
 
 ## <a name="errors"></a>Erros
 
-A API de segurança do Microsoft Graph é um serviço federado que recebe várias respostas de todos os provedores de dados. Quando um erro HTTP é recebido pela API de segurança do Microsoft Graph, ele envia de volta um cabeçalho de aviso no seguinte formato:
+A API Graph de Segurança da Microsoft é um serviço federado que recebe várias respostas de todos os provedores de dados. Quando um erro HTTP é recebido pela API de Segurança do Microsoft Graph, ele enviará de volta um cabeçalho de aviso no seguinte formato:
 <!-- { "blockType": "ignored" } -->
 
 ```http
 {Vendor}/{Provider}/{StatusCode}/{LatencyInMs}
 ```
 
-Esse cabeçalho de aviso é enviado de volta aos clientes quando um dos provedores de dados retorna um código de erro diferente de 2xx ou 404. Por exemplo:
+Esse header de aviso só é enviado de volta para clientes quando um dos provedores de dados retorna um código de erro diferente de 2xx ou 404. Por exemplo:
 
-- HttpStatusCode. proibido (403) poderá ser retornado se o acesso ao recurso não for concedido.
-- Se um provedor expirar, HttpStatusCode. GatewayTimeout (504) será retornado no cabeçalho de aviso.
-- Se ocorrer um erro de provedor interno, HttpStatusCode. InternalServerError (500) será usado no cabeçalho de aviso.
+- HttpStatusCode.Forbidden (403) pode ser retornado se o acesso ao recurso não for concedido.
+- Se um provedor se estime, HttpStatusCode.GatewayTimeout (504) será retornado no cabeçalho de aviso.
+- Se ocorrer um erro de provedor interno, HttpStatusCode.InternalServerError (500) será usado no cabeçalho de aviso.
 
-Se um provedor de dados retornar 2xx ou 404, ele não será mostrado no cabeçalho de aviso porque esses códigos são esperados para êxito ou quando os dados não são encontrados, respectivamente. Em um sistema federado, um 404 não encontrado é esperado quantas vezes os dados são conhecidos apenas por um ou vários provedores.
+Se um provedor de dados retornar 2xx ou 404, ele não será mostrado no header de aviso porque esses códigos são esperados para sucesso ou quando os dados não são encontrados, respectivamente. Em um sistema federado, um 404 não encontrado é esperado quantas vezes os dados são conhecidos apenas por um ou vários provedores, mas não todos.
 
 ## <a name="example"></a>Exemplo
 
@@ -46,22 +46,22 @@ Provider 3: 200 (success)
 Provider 4: 403 (customer has not licensed this provider)
 ```
 
-Como 404 e 200 são condições esperadas, o cabeçalho de aviso contém o seguinte:
+Como as condições 404 e 200 são esperadas, o header de aviso contém o seguinte:
 
 ```HTTP
 Warning : 199 - "{Vendor2}/{Provider 2}/504/10000",    (usual timeout limit is set at 10 seconds)
           199 - "{Vendor4}/{Provider 4}/403/10"       (Provider 4 rejected the request in 10 ms)
 ```
 
-> **Observação:** Cada cabeçalho HTTP é uma coleção de subitens, de forma que os usuários possam enumerar o cabeçalho de aviso e verificar todos os itens.
+> **Observação:** Cada cabeçalho HTTP é uma coleção de subitens, para que os usuários possam enumerar o cabeçalho Aviso e verificar todos os itens.
 
 ## <a name="constraints"></a>Restrições
 
 O `$top` parâmetro de consulta OData tem um limite de 1000 alertas. É recomendável incluir apenas o `$top` e não o `$skip` na primeira consulta OBTER. Você pode usar `@odata.nextLink` para paginação. Se você precisar usar o `$skip`, ele tem um limite de 500 alertas. Por exemplo, `/security/alerts?$top=10&$skip=500` retornará um código de resposta `200 OK`, mas `/security/alerts?$top=10&$skip=501` retornará um código de resposta `400 Bad Request`. Para obter mais informações, consulte as [respostas de erro da API de segurança do Microsoft Graph](../resources/security-error-codes.md).
 
-Um workaaround para esse limite é usar o `$filter` parâmetro de consulta OData com a `eventDateTime` entidade de alerta da API de segurança do Microsoft Graph, usando `?$filter=eventDateTime gt {YYYY-MM-DDT00:00:00.000Z}` e substituindo o valor DateTime pelo último alerta (1500th). Você também pode definir um intervalo para o `eventDateTime` ; por exemplo, *alertas? $Filter = eventDateTime **gt** 2018-11-**11**T00:00:00.000 z&eventDateTime **lt** 2018-11-**12**T00:00:00.000 z*
+Uma solução alternativa para esse limite é usar o parâmetro de consulta OData com a entidade de alerta da API de Segurança do Microsoft Graph, usando e substituindo o valor dateTime pelo último `$filter` `eventDateTime` alerta `?$filter=eventDateTime gt {YYYY-MM-DDT00:00:00.000Z}` (1500th). Você também pode definir um intervalo para o ; por `eventDateTime` exemplo, *alertas?$filter=eventDateTime **gt** 2018-11-**11** T00:00:00.000Z&eventDateTime **lt** 2018-11-**12** T00:00:00:00.000Z*
 
 ## <a name="see-also"></a>Confira também
 
-Se você estiver tendo problemas com a autorização, confira [autorização e a API de segurança do Microsoft Graph](/graph/security-authorization).
+Se você estiver tendo problemas com autorização, consulte Autorização e a API Graph [Segurança da Microsoft.](/graph/security-authorization)
 

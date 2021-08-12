@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 1468240f5d83002d21336299486bceca259a207f
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 9be9c7752b74d22050b879317f6f7d68e69420361354b6e6ad81140aff1044e4
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52755690"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54169491"
 ---
 # <a name="vpptokensyncstatus-enum-type"></a>Tipo de número vppTokenSyncStatus
 

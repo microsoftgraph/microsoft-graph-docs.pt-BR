@@ -1,18 +1,18 @@
 ---
-title: tipo de recurso callTranscriptionInfo
+title: Tipo de recurso callTranscriptionInfo
 description: Representa um único evento DTMF.
 author: rzhang
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: b825264623eb74507e43dcd9302499811377f3fb
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: d6d3afe17198d8c9eaa4df396500582d1bc52deeb5e5acb721131a7737dac55e
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48069243"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54178532"
 ---
-# <a name="calltranscriptioninfo-resource-type"></a>tipo de recurso callTranscriptionInfo
+# <a name="calltranscriptioninfo-resource-type"></a>Tipo de recurso callTranscriptionInfo
 
 Namespace: microsoft.graph
 
@@ -23,7 +23,7 @@ Representa um único evento DTMF.
 | Propriedade       | Tipo    | Descrição|
 |:---------------|:--------|:----------|
 | state | Cadeia de caracteres | Os valores possíveis são: `notStarted`, `active`, `inactive`. |
-| lastModifiedDateTime | DateTime | O horário de modificação do estado em UTC. |
+| lastModifiedDateTime | DateTime | O tempo de modificação de estado em UTC. |
 
 ## <a name="json-representation"></a>Representação JSON
 

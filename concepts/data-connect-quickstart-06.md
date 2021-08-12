@@ -1,12 +1,12 @@
 <!-- markdownlint-disable MD002 MD041 -->
 
-Um Microsoft 365 administrador tem a capacidade de aprovar ou negar solicitações de consentimento. Isso pode ser feito por meio do Microsoft 365 Admin Center ou programaticamente por meio do PowerShell.
+Um Microsoft 365 administrador tem a capacidade de aprovar ou negar solicitações de consentimento. Isso pode ser feito por meio do Centro Administração Microsoft 365 ou programaticamente por meio do PowerShell.
 
 ## <a name="approve-consent-requests"></a>Aprovar solicitações de consentimento
 
-# <a name="microsoft-365-admin-center"></a>[Microsoft 365 Centro de administração](#tab/Microsoft365)
+# <a name="microsoft-365-admin-center"></a>[Administração Microsoft 365 Center](#tab/Microsoft365)
 
-1. Abra um navegador e vá para seu [Microsoft 365 Admin Portal](https://admin.microsoft.com).
+1. Abra um navegador e vá para seu [Administração Microsoft 365 Portal](https://admin.microsoft.com).
 
 1. Para aprovar ou negar solicitações de consentimento, acesse [Acesso Privilegiado.](https://portal.office.com/adminportal/home#/Settings/PrivilegedAccess)
 
@@ -14,7 +14,7 @@ Um Microsoft 365 administrador tem a capacidade de aprovar ou negar solicitaçõ
 
 1. Na chamada **Solicitação de Acesso** a Dados, selecione o **botão Aprovar.**
 
-    ![Uma captura de tela mostrando uma solicitação de acesso a dados aguardando aprovação de consentimento no Microsoft 365 de administração.](images/data-connect-m365-approve.png)
+    ![Uma captura de tela mostrando uma solicitação de acesso a dados aguardando aprovação de consentimento no Centro de administração do Microsoft 365.](images/data-connect-m365-approve.png)
 
 # <a name="powershell"></a>[PowerShell](#tab/PowerShell)
 
@@ -43,7 +43,7 @@ Um Microsoft 365 administrador tem a capacidade de aprovar ou negar solicitaçõ
         > [!IMPORTANT]
         > Depois de terminar essa sessão, certifique-se de desconectar da sessão usando o comando do PowerShell `Remove-PSSession $Session` . Exchange Online permite apenas três sessões do PowerShell remotas abertas para proteger contra ataques de negação de serviço (DoS). Se você simplesmente fechar a janela do PowerShell, ela deixará a conexão aberta.
 
-1. Obter uma lista de todas as solicitações de dados pendentes conexão de dados do Microsoft Graph executando o PowerShell a seguir.
+1. Obter uma lista de todas as solicitações de dados pendentes Conexão de dados do Microsoft Graph executando o PowerShell a seguir.
 
     ```powershell
     Get-ElevatedAccessRequest | where {$_.RequestStatus -eq 'Pending'} | select RequestorUPN, Service, Identity, RequestedAccess | fl

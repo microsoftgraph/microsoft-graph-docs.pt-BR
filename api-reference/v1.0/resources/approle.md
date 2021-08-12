@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: applications
 author: psignoret
-ms.openlocfilehash: 7bff67b287c12a984299045b7ac0297b253974d5
-ms.sourcegitcommit: aa18eb8a9965f99cc97680808abba8df46f31ba5
+ms.openlocfilehash: 9da5a13e8e79de7a2f4bfb3405e96d3e577a9796cc0f2845e9d8c23fd9a3f53a
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/08/2021
-ms.locfileid: "51638848"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54205945"
 ---
 # <a name="approle-resource-type"></a>Tipo de recurso appRole
 
@@ -26,12 +26,12 @@ Com [appRoleAssignments,](approleassignment.md)as funções do aplicativo podem 
 
 | Propriedade   | Tipo |Descrição|
 |:---------------|:--------|:----------|
-|allowedMemberTypes|Coleção de cadeias de caracteres|Especifica se essa função de aplicativo pode ser atribuída a usuários e grupos (definindo como ), para outro aplicativo (definindo como , ou `["User"]` `["Application"]` ambos (definindo como `["User", "Application"]` ). Funções de aplicativo que suportam a atribuição a entidades de serviço de outros aplicativos também são conhecidas como [permissões de aplicativo.](/graph/auth/auth-concepts#microsoft-graph-permissions) O valor "Application" só é suportado para funções de aplicativo definidas em **entidades de** aplicativo.|
-|description|String|A descrição da função de aplicativo. Isso é exibido quando a função do aplicativo está sendo atribuída e, se a função do aplicativo funcionar como uma permissão de aplicativo, durante experiências de consentimento.|
-|displayName|String|Nome de exibição para a permissão que aparece na atribuição de função de aplicativo e experiências de consentimento.|
+|allowedMemberTypes|String collection|Especifica se essa função de aplicativo pode ser atribuída a usuários e grupos (definindo como ), para outro aplicativo (definindo como , ou `["User"]` `["Application"]` ambos (definindo como `["User", "Application"]` ). Funções de aplicativo que suportam a atribuição a entidades de serviço de outros aplicativos também são conhecidas como [permissões de aplicativo.](/graph/auth/auth-concepts#microsoft-graph-permissions) O valor "Application" só é suportado para funções de aplicativo definidas em **entidades de** aplicativo.|
+|description|Cadeia de caracteres|A descrição da função de aplicativo. Isso é exibido quando a função do aplicativo está sendo atribuída e, se a função do aplicativo funcionar como uma permissão de aplicativo, durante experiências de consentimento.|
+|displayName|Cadeia de caracteres|Nome de exibição para a permissão que aparece na atribuição de função de aplicativo e experiências de consentimento.|
 |id|Guid|Identificador de função exclusivo dentro da **coleção appRoles.** Ao criar uma nova função de aplicativo, um novo identificador guid deve ser fornecido. |
 |isEnabled|Booliano|Ao criar ou atualizar uma função de aplicativo, isso deve ser definido como **true** (que é o padrão). Para excluir uma função, isso deve ser definido primeiro como **false**.  Nesse ponto, em uma chamada subsequente, essa função pode ser removida.|
-|origin|String| Especifica se a função de aplicativo é definida no objeto [application](application.md) ou na [entidade servicePrincipal.](serviceprincipal.md) Não _deve_ ser incluído em nenhuma solicitação POST ou PATCH. Somente leitura. |
+|origin|Cadeia de caracteres| Especifica se a função de aplicativo é definida no objeto [application](application.md) ou na [entidade servicePrincipal.](serviceprincipal.md) Não _deve_ ser incluído em nenhuma solicitação POST ou PATCH. Somente leitura. |
 |value|Cadeia de caracteres|Especifica o valor a ser incluído na declaração em tokens de ID e tokens de acesso autenticando um usuário ou entidade `roles` de serviço atribuído. Não deve exceder 120 caracteres de comprimento. Os caracteres `:` `!` `#` `$` `%` `&` `'` `(` `)` `*` `+` `,` `-` `.` `/` `:` `;` <code>&lt;</code> `=` <code>&gt;</code> `?` `@` `[` `]` `^` `+` `_` <code>&#96;</code> `{` <code>&#124;</code> `}` `~` permitidos são , bem como caracteres nos intervalos `0-9` `A-Z` e `a-z` . Qualquer outro caractere, incluindo o caractere de espaço, não é permitido. Pode não começar com `.` . |
 
 ## <a name="json-representation"></a>Representação JSON

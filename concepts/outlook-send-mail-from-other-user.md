@@ -5,12 +5,12 @@ author: jasonjoh
 localization_priority: Priority
 ms.prod: outlook
 ms.date: 01/16/2019
-ms.openlocfilehash: becb0c4eb76e7ae337d42739f064a15b7ce233ca
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
+ms.openlocfilehash: b87a274288bf2119a9fd6b46d9d300634a00e0c68cdf93c93246d9b7152e13fe
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44895514"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54235125"
 ---
 # <a name="send-outlook-messages-from-another-user"></a>Enviar mensagens do Outlook de outro usuário
 
@@ -94,7 +94,7 @@ Por exemplo, para enviar emails do grupo `sales@contoso.com`, configure a mensag
 
 ## <a name="sent-items-behavior"></a>Comportamento de itens enviado
 
-Depois que a mensagem é enviada, pode ser salva em pastas de itens enviados do usuário de envio, a sua pasta Itens enviados do usuário ou ambas. Ele também não pode ser salvo de forma alguma.
+Depois que a mensagem é enviada, pode ser salva em pastas de itens enviados do usuário de envio, a sua pasta Itens enviados do usuário ou ambas.
 
 > [!NOTE]
 > Se a mensagem é enviada de um endereço que não tenha uma caixa de correio (uma lista de distribuição, por exemplo), não há nenhuma item enviados para o usuário.

@@ -3,12 +3,12 @@ title: Person-Card componente no microsoft Graph Toolkit
 description: Um Person-Card é um componente para exibir mais informações relacionadas a uma pessoa.
 localization_priority: Normal
 author: vogtn
-ms.openlocfilehash: 58efcb2c1ca7ec1e366340b1dcbe199fe054c7b8
-ms.sourcegitcommit: ae83b2b372902268517fd17a8b10d6d9add422af
+ms.openlocfilehash: 5f7232470edc576ae97fa745d4af523ec8f5e5af994b565b12c44667fecb5a8f
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "53334749"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54245356"
 ---
 # <a name="person-card-component-in-the-microsoft-graph-toolkit"></a>Person-Card componente no microsoft Graph Toolkit
 
@@ -135,7 +135,7 @@ Os eventos a seguir são disparados do componente.
 
 Evento | Quando é emitido | Dados personalizados | Cancelável | Bolhas | Funciona com modelo personalizado
 ------|-------------------|--------------|:-----------:|:---------:|:---------------------------:|
-`expanded` | O usuário abriu a seção detalhes expandidos do cartão | Nenhum | Não | Sim | Sim, a menos que você substitua o modelo padrão
+`expanded` | O usuário abriu a seção detalhes expandidos do cartão | Nenhuma | Não | Sim | Sim, a menos que você substitua o modelo padrão
 
 Para obter mais informações sobre como lidar com eventos, consulte [eventos](../customize-components/events.md).
 

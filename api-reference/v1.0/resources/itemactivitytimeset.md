@@ -5,20 +5,20 @@ description: O objeto itemActionSet fornece informações sobre uma atividade qu
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 1f614c597efdb95b04c4079bd68240aa865d66dd
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: 1e69ac8c539dcce56f369adec3d0e634afeeece06cc0b043b48e10f681d12ad8
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50238670"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54130076"
 ---
 # <a name="itemactivitytimeset-resource-type"></a>Tipo de recurso itemActivityTimeSet
 
 Namespace: microsoft.graph
 
-O **recurso itemActivityTimeSet** fornece informações sobre quando [ocorreu uma atividade][activity] em um item.
+O **recurso itemActivityTimeSet** fornece informações sobre quando uma [atividade][activity] em um item ocorreu.
 
->**Observação:** No momento, os registros de atividades do item só estão disponíveis no SharePoint e no OneDrive for Business.
+>**Observação:** No momento, os registros de atividade do item estão disponíveis apenas SharePoint e OneDrive for Business.
 
 [activity]: itemactivity.md
 
@@ -41,7 +41,7 @@ Em um momento posterior quando o usuário se conectar novamente à nuvem e as al
   "keyProperty": "id",
   "@type": "microsoft.graph.itemActivityTimeSet",
   "@type.aka": "oneDrive.times",
-  "@property.aka": "observedDateTime=observedTime recordedDateTime=recordedTime"
+  "@property.aka&quot;: &quot;observedDateTime=observedTime recordedDateTime=recordedTime"
 }-->
 
 ```json

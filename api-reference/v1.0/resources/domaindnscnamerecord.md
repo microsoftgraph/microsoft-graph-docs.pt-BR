@@ -5,12 +5,12 @@ author: adimitui
 localization_priority: Normal
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 2834aad1d0f46552eefbf2afba30b08f21924369
-ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
+ms.openlocfilehash: 3b626a13af3087eb65be24d3b33958cdba3c57cd71cc402a27f8547f44e45256
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50761385"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54169645"
 ---
 # <a name="domaindnscnamerecord-resource-type"></a>Tipo de recurso domainDnsCnameRecord
 
@@ -25,12 +25,12 @@ Não há suporte para consultas diretas a esse recurso. Consulte o tópico [de d
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|canonicalName|String| O nome canônico do registro CNAME. Usado para configurar o registro CNAME no host DNS. |
-|id|String| Identificador exclusivo atribuído a essa entidade. Não anulada, somente leitura|
+|canonicalName|Cadeia de caracteres| O nome canônico do registro CNAME. Usado para configurar o registro CNAME no host DNS. |
+|id|Cadeia de caracteres| Identificador exclusivo atribuído a essa entidade. Não anulada, somente leitura|
 |isOptional|Booliano| Se for falso, o registro CNAME deverá ser configurado pelo cliente no host DNS para que Microsoft Online Services funcione corretamente com o domínio. Não anulada |
-|rótulo|String| Valor usado ao configurar *o alias/host/nome* do registro CNAME no host DNS. |
+|rótulo|Cadeia de caracteres| Valor usado ao configurar *o alias/host/nome* do registro CNAME no host DNS. |
 |recordType|String| Tipo de registro DNS. O valor é sempre *CName*. Chave|
-|supportedService|String| Serviço ou recurso do Microsoft Online que tem uma dependência nesse registro CNAME.</br></br>Pode ser um dos seguintes valores: **null**, *Email*, *Sharepoint*, *EmailInternalRelayOnly*, *OfficeCommunicationsOnline*, *SharePointDefaultDomain*, *FullRedelegation*, *SharePointPublic*, *OrgIdAuthentication*, *Yammer*, *Intune*|
+|supportedService|Cadeia de caracteres| Serviço ou recurso do Microsoft Online que tem uma dependência nesse registro CNAME.</br></br>Pode ser um dos seguintes valores: **null**, *Email*, *Sharepoint*, *EmailInternalRelayOnly*, *OfficeCommunicationsOnline*, *SharePointDefaultDomain*, *FullRedelegation*, *SharePointPublic*, *OrgIdAuthentication*, *Yammer*, *Intune*|
 |ttl|Int32| Valor a ser usado ao configurar a propriedade time-to-live (ttl) do registro CNAME no host DNS. Não anulada |
 
 ## <a name="relationships"></a>Relações

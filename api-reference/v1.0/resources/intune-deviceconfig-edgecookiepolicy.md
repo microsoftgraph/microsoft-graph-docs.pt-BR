@@ -1,16 +1,16 @@
 ---
 title: Tipo de número edgeCookiePolicy
-description: Valores possíveis para especificar quais cookies são permitidos Microsoft Edge.
+description: Valores possíveis para especificar quais cookies são permitidos no Microsoft Edge.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 17915fde791db3fd3639c6ee4753844879269804
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 36c1ac3d4111c2df41b9d720c39cc67f8e31c21469269af67b8f4a62c3a5ab18
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52755074"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54235657"
 ---
 # <a name="edgecookiepolicy-enum-type"></a>Tipo de número edgeCookiePolicy
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Valores possíveis para especificar quais cookies são permitidos Microsoft Edge.
+Valores possíveis para especificar quais cookies são permitidos no Microsoft Edge.
 
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|

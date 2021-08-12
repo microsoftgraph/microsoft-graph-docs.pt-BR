@@ -5,20 +5,20 @@ description: O objeto ItemAnalytics fornece análises sobre atividades que ocorr
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 96ad65ef5cc8907663a9ca67e5ea2b7546b8fa03
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: 3ffedd01287f66a5640fa1a1868b05c42a6750ee223bc59546241b47733f1fc4
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50238656"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54196968"
 ---
 # <a name="itemanalytics-resource-type"></a>Tipo de recurso itemAnalytics
 
 Namespace: microsoft.graph
 
-O **recurso itemAnalytics** fornece análises sobre atividades que ocorreram em um item. No momento, esse recurso só está disponível no SharePoint e no OneDrive for Business.
+O **recurso itemAnalytics** fornece análises sobre atividades que ocorreram em um item. Atualmente, esse recurso só está disponível em SharePoint e OneDrive for Business.
 
-Você também pode usar a API [getActivitiesByInterval][] para recuperar a análise em um intervalo de tempo ou intervalo personalizado.
+Você também pode usar a API [getActivitiesByInterval][] para recuperar a análise em um intervalo ou intervalo de tempo personalizado.
 
 >**Observação:** O **recurso itemAnalytics** ainda não está disponível em todas as [implantações nacionais.](/graph/deployments)
 
@@ -26,7 +26,7 @@ Você também pode usar a API [getActivitiesByInterval][] para recuperar a anál
 
 | Propriedade      | Tipo                 | Descrição
 |:--------------|:---------------------|:--------------------------------------
-| allTime       | [itemActivityStat][] | Análise sobre o tempo de vida do item.
+| allTime       | [itemActivityStat][] | Análise sobre o tempo de vida útil do item.
 | lastSevenDays | [itemActivityStat][] | Análise dos últimos sete dias.
 
 [itemActivityStat]: itemactivitystat.md
@@ -38,7 +38,7 @@ Você também pode usar a API [getActivitiesByInterval][] para recuperar a anál
   "blockType": "resource",
   "optionalProperties": [ ],
   "@type": "microsoft.graph.itemAnalytics",
-  "@type.aka": "oneDrive.analytics"
+  "@type.aka&quot;: &quot;oneDrive.analytics"
 }-->
 
 ```json

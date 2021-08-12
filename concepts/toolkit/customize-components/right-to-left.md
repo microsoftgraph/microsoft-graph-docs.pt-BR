@@ -1,20 +1,20 @@
 ---
-title: Exibir componentes do Microsoft Graph Toolkit da direita para a esquerda (DPE)
-description: Descreve o suporte da direita para a esquerda (DPE) nos componentes do Microsoft Graph Toolkit.
+title: Exibir componentes Graph Toolkit Microsoft da direita para a esquerda (rtl)
+description: Descreve o suporte da direita para a esquerda (rtl) nos componentes Graph Toolkit Microsoft.
 localization_priority: Normal
 author: vogtn
-ms.openlocfilehash: 224526fb2b514a1821cd66c9b4b3d9aee51328de
-ms.sourcegitcommit: f9f95402b8a15152ede90dd736b03d532204fc2e
+ms.openlocfilehash: fce2d055ae5e859fe65d06edffb99039b8e258bec601f33b3ada8f5b2c671f1e
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49658618"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54129544"
 ---
-# <a name="display-microsoft-graph-toolkit-components-right-to-left-rtl"></a>Exibir componentes do Microsoft Graph Toolkit da direita para a esquerda (DPE)
+# <a name="display-microsoft-graph-toolkit-components-right-to-left-rtl"></a>Exibir componentes Graph Toolkit Microsoft da direita para a esquerda (rtl)
 
-Os componentes do Microsoft Graph Toolkit oferecem suporte à marcação bidirecional para scripts de idioma da direita para a esquerda.
+Os componentes Graph Toolkit Microsoft suportam marcação bidirecional para scripts de idioma da direita para a esquerda.
 
-Para alterar a direção de todos os componentes na página, defina o `dir` atributo no documento `html` ou `body` marca `rtl` como, conforme mostrado nos exemplos a seguir.
+Para alterar a direção de todos os componentes na página, de definir o atributo no documento ou marca como , conforme `dir` `html` mostrado nos `body` `rtl` exemplos a seguir.
 
 ```html
 <body dir="rtl"></body>

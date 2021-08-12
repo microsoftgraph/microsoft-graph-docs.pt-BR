@@ -4,12 +4,12 @@ description: A Conexão de Dados do Microsoft Graph depende do Privileged Access
 author: fercobo-msft
 localization_priority: Priority
 ms.prod: data-connect
-ms.openlocfilehash: 3631b652c5e17c333548662b429a56ce3015f55b
-ms.sourcegitcommit: 276a13a37c3772689dfc71f7cd47586c9581f27d
+ms.openlocfilehash: ecbe72e5444b5d1d9eab17ecdaea591b35aad5056b15fb51702fcce118b6c435
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52629319"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54246392"
 ---
 # <a name="microsoft-graph-data-connect-integration-with-privileged-access-management"></a>Integração do Conexão de Dados do Microsoft Graph com o Privileged Access Management
 

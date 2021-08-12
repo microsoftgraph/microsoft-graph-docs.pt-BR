@@ -1,41 +1,41 @@
 ---
-title: Visão geral de mídia
-description: Habilite seus bots para enviar e receber conteúdo relacionado a áudio e vídeo.
+title: Visão geral da mídia
+description: Habilita seus bots a enviar e receber conteúdo relacionado a áudio e vídeo.
 author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
-ms.openlocfilehash: 74738233915f0a0731790ee8b0646f437585cb67
-ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
+ms.openlocfilehash: d35d41b50777d6191721a234a3b233b985a4ecf045f22441aa8210bbd4eeafc7
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49522423"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54246485"
 ---
-# <a name="media-overview"></a>Visão geral de mídia
+# <a name="media-overview"></a>Visão geral da mídia
 
-As APIs de comunicação em nuvem no Microsoft Graph adicionam uma nova dimensão a como seus aplicativos e serviços interagem com os usuários por meio de vários recursos relacionados a comunicações, como chamadas e reuniões online. Você pode habilitar seus bots para enviar e receber conteúdo relacionado a áudio e vídeo. Ao fazer uso da mídia, você pode criar uma experiência mais interativa entre seus bots e usuários.
+As APIs de comunicações na nuvem na Microsoft Graph adicionar uma nova dimensão à forma como seus aplicativos e serviços interagem com os usuários por meio de vários recursos relacionados a comunicações, como chamada e reuniões online. Você pode permitir que seus bots enviem e recebam conteúdo relacionado a áudio e vídeo. Ao usar a mídia, você pode criar uma experiência mais interativa entre seus bots e usuários.
 
-Este artigo irá ajudá-lo a descobrir qual opção de Hospedagem de mídia é adequada para você com base em suas necessidades.
+Este artigo ajudará você a descobrir qual opção de hospedagem de mídia é ideal para você com base em suas necessidades.
 
-## <a name="service-hosted-media-remote-hosting"></a>Mídia hospedado pelo serviço (hospedagem remota)
-Se você quiser que o bot execute um aviso personalizado quando um cliente discar o número de sua empresa ou para detectar toques de telefone, gravar pequenos clipes de voz ou executar qualquer um dos vários cenários de[IVR](/graph/api/resources/calls-api-ivr-overview)(resposta interativa de voz), considere usar as [APIs de mídia hospedadas pelo serviço](/graph/api/resources/communications-api-overview).
+## <a name="service-hosted-media-remote-hosting"></a>Mídia hospedada pelo serviço (hospedagem remota)
+Se você quiser que o bot reproduza um prompt personalizado quando um cliente disca o número da sua empresa ou para detectar tons de telefone, gravar clipes de voz curtos ou executar qualquer um dos vários cenários de[IVR](/graph/api/resources/calls-api-ivr-overview)(Resposta Interativa de Voz), considere usar as [APIs](/graph/api/resources/communications-api-overview)de mídia hospedadas pelo serviço.
 
-**Se suas necessidades de mídia forem mais simples, explore esta opção primeiro**. Como o processamento de mídia intensa é descarregado remotamente, esta é uma solução de peso mais leve que permite que você crie seu bot de maneira mais flexível.
+**Se suas necessidades de mídia são mais simples, explore essa opção primeiro**. Como o processamento de mídia pesada é descarregado remotamente, essa é uma solução de peso mais leve que permite que você crie seu bot de uma maneira mais flexível.
 
-Para obter um exemplo que mostra como criar um bot que usa mídia de host de serviço, consulte os [exemplos de bot de chamada de mídia remota](https://github.com/microsoftgraph/microsoft-graph-comms-samples/tree/master/Samples/BetaSamples/RemoteMediaSamples).
+For an example that shows you how to create a bot that uses service-hosted media, see the [Remote media calling bot samples](https://github.com/microsoftgraph/microsoft-graph-comms-samples/tree/master/Samples/BetaSamples/RemoteMediaSamples).
 
 ![Diagrama de hospedagem remota](images/communications-remote-media.PNG)
 
 ## <a name="application-hosted-media-local-hosting"></a>Mídia hospedada por aplicativo (hospedagem local)
-Se você quiser que o bot acesse um fluxo ativo de áudio e vídeo de seus clientes para usar para gravação, transcrever, traduzir ou remediar a análise por meio de um serviço de processamento de idioma natural, considere hospedar sua mídia localmente.
+Se você quiser que seu bot acesse um fluxo ao vivo de áudio e vídeo de seus clientes para usar para gravação, transcrição, tradução ou análise de sentimentos por meio de um serviço de processamento de linguagem natural, considere hospedar sua mídia localmente.
 
->**Observação:** Você **não pode** usar a API de acesso à mídia para registrar ou manter o conteúdo de mídia de chamadas ou reuniões que seu aplicativo acessa, ou dados derivados desse conteúdo de mídia ("Record" ou "Recording"), sem primeiro chamar a [API updateRecordingStatus](/graph/api/call-updaterecordingstatus) para indicar que a gravação foi iniciada e receber uma resposta de êxito dessa API. Se o aplicativo começar a gravar qualquer reunião/chamada, ele deverá finalizar a gravação antes de chamar a API updateRecordingStatus para indicar que a gravação foi concluída. Certifique-se de que você está em conformidade com as leis e regulamentos de sua área em relação à proteção de dados e à confidencialidade das comunicações. Confira os [Termos de Uso](/legal/microsoft-apis/terms-of-use) e converse com sua assessoria jurídica para saber mais.
+>**Observação:** Você  não pode usar a API do Media Access para gravar ou persistir conteúdo de mídia de chamadas ou reuniões que seu aplicativo acessa ou dados derivados desse conteúdo de mídia ("registro" ou "gravação"), sem chamar primeiro a [API updateRecordingStatus](/graph/api/call-updaterecordingstatus) para indicar que a gravação começou e receber uma resposta de sucesso dessa API. Se o aplicativo começar a gravar qualquer reunião/chamada, ele deverá encerrar a gravação antes de chamar a API updateRecordingStatus para indicar que a gravação terminou. Certifique-se de estar em conformidade com as leis e regulamentos de sua área em relação à proteção de dados e à confidencialidade das comunicações. Confira os [Termos de Uso](/legal/microsoft-apis/terms-of-use) e converse com sua assessoria jurídica para saber mais.
 
-**Se você quiser mais controle sobre sua mídia, escolha essa opção**. Você terá acesso direto aos fluxos de mídia e poderá usar o compartilhamento de tela baseado em vídeo. Você poderá criar cenários IVR mais sofisticados que estão habilitados para fala. Esta é uma solução ponderada mais complicada que oferece maior flexibilidade na forma como você deseja programar a mídia.
+**Se você quiser mais controle sobre sua mídia, escolha esta opção**. Você terá acesso direto a fluxos de mídia e poderá usar o compartilhamento de tela baseado em vídeo. Você poderá criar cenários IVR mais sofisticados habilitados para fala. Esta é uma solução de peso mais pesada que oferece mais flexibilidade na forma como você deseja programar sua mídia.
 
-Confira também os [requisitos e considerações](/microsoftteams/platform/concepts/calls-and-meetings/requirements-considerations-application-hosted-media-bots) para bots de mídia hospedados por aplicativos.
+Consulte também os [requisitos e considerações](/microsoftteams/platform/concepts/calls-and-meetings/requirements-considerations-application-hosted-media-bots) para bots de mídia hospedados pelo aplicativo.
 
-Para obter um exemplo que mostra como criar um bot que usa mídia hospedada no aplicativo, consulte os [exemplos de mídia local](https://github.com/microsoftgraph/microsoft-graph-comms-samples/tree/master/Samples/V1.0Samples/LocalMediaSamples).
+Para um exemplo que mostra como criar um bot que usa mídia hospedada por aplicativo, consulte os [exemplos de mídia local](https://github.com/microsoftgraph/microsoft-graph-comms-samples/tree/master/Samples/V1.0Samples/LocalMediaSamples).
 
 ![Diagrama de hospedagem local](images/communications-local-media.PNG)
 

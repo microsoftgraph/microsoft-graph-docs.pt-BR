@@ -1,24 +1,24 @@
 ---
 title: 'reportRoot: getOffice365ActivationCounts'
-description: Obter a contagem de ativações do Microsoft 365 em desktops e dispositivos.
+description: Obter a contagem de Microsoft 365 ativações em desktops e dispositivos.
 localization_priority: Normal
 ms.prod: reports
 author: sarahwxy
 doc_type: apiPageType
-ms.openlocfilehash: dd33f734adc5a01b2f86909a7e0d7535740fa151
-ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
+ms.openlocfilehash: 2473276f59bcb2da6ded7f8561faec34ad59c25fea1ddb45c2806cc63ba5065a
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49981785"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54199771"
 ---
 # <a name="reportroot-getoffice365activationcounts"></a>reportRoot: getOffice365ActivationCounts
 
 Namespace: microsoft.graph
 
-Obter a contagem de ativações do Microsoft 365 em desktops e dispositivos.
+Obter a contagem de Microsoft 365 ativações em desktops e dispositivos.
 
-> **Observação:** Para obter detalhes sobre diferentes visualizações e nomes de relatórios, consulte [relatórios do Microsoft 365 - ativações do Microsoft Office.](https://support.office.com/client/Office-activations-87c24ae2-82e0-4d1e-be01-c3bcc3f18c60)
+> **Observação:** Para obter detalhes sobre diferentes exibições de relatório e nomes, [consulte Microsoft 365 relatórios - Microsoft Office ativações](https://support.office.com/client/Office-activations-87c24ae2-82e0-4d1e-be01-c3bcc3f18c60).
 
 ## <a name="permissions"></a>Permissões
 

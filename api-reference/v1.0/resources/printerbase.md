@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: cloud-printing
 doc_type: resourcePageType
-ms.openlocfilehash: 515c14bb4de7352a8c17cffdacbd7a4c9091fc70
-ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
+ms.openlocfilehash: 12b611e73fab82d0ac1eafbdc19b26069ccfd94fa3806e4286da0f0c6516202b
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50516820"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54235370"
 ---
 # <a name="printerbase-resource-type"></a>Tipo de recurso printerBase
 
@@ -26,9 +26,9 @@ Representa um tipo de base para [tipos de](printer.md) entidade printer e [print
 |capabilities|[printerCapabilities](printercapabilities.md)|Os recursos da impressora/printerShare.|
 |defaults|[printerDefaults](printerdefaults.md)|As configurações de impressão padrão de printer/printerShare.|
 |displayName|Cadeia de caracteres|O nome da impressora/printerShare.|
-|id|Cadeia de caracteres|O identificador.|
+|id|String|O identificador.|
 |isAcceptingJobs|Booliano|Se a impressora/printerShare está aceitando novos trabalhos de impressão no momento.|
-|location|[printerLocation](printerlocation.md)|O local físico e/ou organizacional da impressora/printerShare.|
+|localização|[printerLocation](printerlocation.md)|O local físico e/ou organizacional da impressora/printerShare.|
 |fabricante|String|O fabricante da impressora/printerShare.|
 |modelo|String|O nome do modelo da impressora/printerShare.|
 |status|[printerStatus](printerstatus.md)|O status de processamento da impressora/printerShare, incluindo quaisquer erros.|

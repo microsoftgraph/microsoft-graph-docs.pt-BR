@@ -4,18 +4,18 @@ description: 'Você pode usar qualquer função de pasta de trabalho com a segui
 localization_priority: Normal
 author: lumine2008
 ms.prod: excel
-ms.openlocfilehash: 6ba9c94f78325fe855ec6f0c4b2a0dcff8de559a
-ms.sourcegitcommit: c7776e5659c391e7c9ce1cd46e242a5ddc38dba2
+ms.openlocfilehash: 39b93c633951ffe8997a66132a830673459776963d5d537c61aa67fb29a41fe0
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51491037"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54205155"
 ---
 # <a name="use-workbook-functions-in-excel-with-microsoft-graph"></a>Usar funções de pasta de trabalho do Excel com o Microsoft Graph
 
 Você pode usar qualquer função de pasta de trabalho com a seguinte sintaxe: `POST /me/drive/root/workbook/functions/{function-name}`. Forneça o(s) argumento(s) de função no corpo usando um objeto JSON. O `value` resultante da função e quaisquer cadeias de caracteres `error` são retornados no objeto de resultado da função. O valor `error` de `null` indica a execução bem-sucedida da função.
 
-Para ver uma lista completa de funções com suporte, consulte [a classe Excel.Functions.](/javascript/api/excel/excel.functions?view=excel-js-preview) Confira a assinatura de função para tipos de dados e nomes de parâmetro específicos.
+Para uma lista completa de funções com suporte, [consulte Excel. Classe Functions](/javascript/api/excel/excel.functions?view=excel-js-preview). Confira a assinatura de função para tipos de dados e nomes de parâmetro específicos.
 
 _Observações importantes:_
 * O parâmetro de entrada do intervalo é fornecido usando um objeto range, em vez da cadeia de caracteres de endereço do intervalo.  

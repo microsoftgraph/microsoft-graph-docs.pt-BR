@@ -1,22 +1,22 @@
 ---
 title: Tipo de recurso do teamworkBot
-description: Um bot no ecossistema do Microsoft Teams.
+description: Um bot no Microsoft Teams ecossistema.
 author: AkJo
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 99bdde9a4ff26945dd5aa040f2741fdf50c1273b
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: ccfbb82cace0f9bc38eeb3a5e49a185b12abc99376497bb900e0f150bc39b5c6
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50476402"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54249101"
 ---
 # <a name="teamworkbot-resource-type"></a>Tipo de recurso do teamworkBot
 
 Namespace: microsoft.graph
 
-Representa um bot no ecossistema do Microsoft Teams.
+Representa um bot no ecossistema Microsoft Teams.
 
 ## <a name="methods"></a>Métodos
 |Método|Tipo de retorno|Descrição|

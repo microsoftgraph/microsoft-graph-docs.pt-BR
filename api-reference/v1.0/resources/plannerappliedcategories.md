@@ -1,27 +1,27 @@
 ---
-title: tipo de recurso plannerAppliedCategories
-description: O recurso **AppliedCategoriesCollection** representa a coleção de categorias (ou rótulos) que foram aplicados a uma tarefa. Ele faz parte do objeto plannerTask.
+title: Tipo de recurso plannerAppliedCategories
+description: O **recurso AppliedCategoriesCollection** representa a coleção de categorias (ou rótulos) que foram aplicadas a uma tarefa. Ele faz parte do objeto plannerTask.
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: fac4c69e9827e903d18f8665bc9b33e7c32705e2
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 1a7513ed9746cb73a08882f3b9c9167ef5336e281bf21fa7f359c80541232c81
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48037623"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54246651"
 ---
-# <a name="plannerappliedcategories-resource-type"></a>tipo de recurso plannerAppliedCategories
+# <a name="plannerappliedcategories-resource-type"></a>Tipo de recurso plannerAppliedCategories
 
 Namespace: microsoft.graph
 
 
-O recurso **AppliedCategoriesCollection** representa a coleção de categorias (ou rótulos) que foram aplicados a uma tarefa. Ele faz parte do objeto [plannerTask](plannertask.md) .
-Pode haver até 6 categorias aplicadas a uma tarefa. Descrições de categoria, por exemplo, `category1` `category2` etc., fazem parte do objeto [Plan Details](plannerplandetails.md) . Este é um tipo aberto.
+O **recurso AppliedCategoriesCollection** representa a coleção de categorias (ou rótulos) que foram aplicadas a uma tarefa. Ele faz parte do [objeto plannerTask.](plannertask.md)
+Pode haver até 6 categorias aplicadas a uma tarefa. Descrições de categoria, por `category1` exemplo, , `category2` etc., fazem parte do objeto de detalhes [do](plannerplandetails.md) plano. Esse é um tipo aberto.
 
 ## <a name="properties"></a>Propriedades
-As propriedades de um tipo aberto podem ser definidas pelo cliente. Nesse caso, no entanto, o cliente deve fornecer,,, `category1` `category2` `category3` `category4` `category5` e/ou `category6` como propriedades com seus valores sendo `true` Boolean quando as categorias correspondentes são aplicadas à tarefa. O exemplo é mostrado abaixo. Quando eles não se aplicam, as propriedades são removidas automaticamente definindo seus valores para o `false` Boolean. 
+As propriedades de um Tipo Aberto podem ser definidas pelo cliente. Nesse caso, porém, o cliente deve fornecer , , , , e/ou como propriedades com seus valores sendo o booleano quando as categorias correspondentes são `category1` `category2` `category3` `category4` `category5` `category6` `true` aplicadas à tarefa. Exemplo é mostrado abaixo. Quando não se aplicam, as propriedades são removidas automaticamente definindo seus valores como `false` booleano. 
 
 ## <a name="json-representation"></a>Representação JSON
 

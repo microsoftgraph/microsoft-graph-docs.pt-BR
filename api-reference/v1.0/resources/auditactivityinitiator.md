@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dhanyahk
 ms.prod: identity-and-access-reports
 doc_type: resourcePageType
-ms.openlocfilehash: fbc2fd2f6c93cac583fc1ec28375d8538d35b447
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 104e4a05e0c788c9fd71764f815b9305a8554f83d620cc6d01759fc86c794d1b
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50135755"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54197104"
 ---
 # <a name="auditactivityinitiator-resource-type"></a>Tipo de recurso auditActivityInitiator
 
@@ -23,7 +23,7 @@ Identidade do objeto de recurso que inicia a atividade. O iniciador pode ser um 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |aplicativo|[appIdentity](appidentity.md)|Se o recurso que inicia a atividade for um aplicativo, essa propriedade indicará todas as informações relacionadas ao aplicativo, como appId, Name, servicePrincipalId, Name.|
-|user|[userIdentity](useridentity.md)|Se o recurso que inicia a atividade for um usuário, essa propriedade indicará todas as informações relacionadas ao usuário, como userId, Name, UserPrinicpalName.|
+|usuário|[userIdentity](useridentity.md)|Se o recurso que inicia a atividade for um usuário, essa propriedade indicará todas as informações relacionadas ao usuário, como userId, Name, UserPrinicpalName.|
 
 ## <a name="json-representation"></a>Representação JSON
 

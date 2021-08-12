@@ -5,12 +5,12 @@ localization_priority: Normal
 author: stephenjust
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 837e72c52002c0084994b74d3991c69272bdf870
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: 8aa0874f0f6853d49472ff756b152aee06f7504fa42a4141c110d10830ae27aa
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50721800"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54155180"
 ---
 # <a name="session-resource-type"></a>tipo de recurso de sessão
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph.callRecords
 
 Representa uma User-User ou uma comunicação User-Meeting no caso de uma chamada de conferência.
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 
 | Método       | Tipo de retorno | Descrição |
 |:-------------|:------------|:------------|
@@ -29,7 +29,7 @@ Representa uma User-User ou uma comunicação User-Meeting no caso de uma chamad
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|id|cadeia de caracteres|Identificador exclusivo da sessão. Somente leitura.|
+|id|string|Identificador exclusivo da sessão. Somente leitura.|
 |chamador|[microsoft.graph.callRecords.endpoint](callrecords-endpoint.md)|Ponto de extremidade que iniciou a sessão.|
 |callee|[microsoft.graph.callRecords.endpoint](callrecords-endpoint.md)|Ponto de extremidade que atendeu a sessão.|
 |failureInfo|[microsoft.graph.callRecords.failureInfo](callrecords-failureinfo.md)|Informações de falha associadas à sessão se a sessão falhou.|

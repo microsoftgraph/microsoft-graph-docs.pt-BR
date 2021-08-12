@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: 666dd7e287e8bb460b039b58fe99b39febf581d0
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: 54b856543279b93795077485f418af1a258e845275a0b4c0809cc18856617cc8
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50720638"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54163814"
 ---
 # <a name="conversation-resource-type"></a>tipo de recurso conversation
 
@@ -20,7 +20,7 @@ Uma conversa é uma coleção de [threads](conversationthread.md) e um thread co
 
 Esse recurso dá suporte à assinatura para [alterar notificações.](/graph/webhooks)
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 
 | Método       | Tipo de retorno  |Descrição|
 |:---------------|:--------|:----------|

@@ -5,12 +5,12 @@ author: mmcla
 localization_priority: Normal
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 00137618daf327793d7d60d8dadbe8ad89abc840
-ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
+ms.openlocfilehash: e1ae1981de295e691c2cee5e0cda320446bebe1a021efb6c1898cd3ab91158d1
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51468622"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54175284"
 ---
 # <a name="fido2authenticationmethodconfiguration-resource-type"></a>tipo de recurso fido2AuthenticationMethodConfiguration
 
@@ -24,16 +24,16 @@ Representa uma política de métodos de autenticação FIDO2. As políticas de m
 |:---|:---|:---|
 |[Get](../api/fido2authenticationmethodconfiguration-get.md)|[fido2AuthenticationMethodConfiguration](../resources/fido2authenticationmethodconfiguration.md)|Leia as propriedades e as relações de um objeto fido2AuthenticationMethodConfiguration.|
 |[Atualizar](../api/fido2authenticationmethodconfiguration-update.md)|[fido2AuthenticationMethodConfiguration](../resources/fido2authenticationmethodconfiguration.md)|Atualize as propriedades de um objeto fido2AuthenticationMethodConfiguration.|
-|[Delete](../api/fido2authenticationmethodconfiguration-delete.md)|Nenhum|Reverte o objeto fido2AuthenticationMethodConfiguration para sua configuração padrão.|
+|[Delete](../api/fido2authenticationmethodconfiguration-delete.md)|None|Reverte o objeto fido2AuthenticationMethodConfiguration para sua configuração padrão.|
 
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|O identificador de política do método de autenticação.|
+|id|Cadeia de caracteres|O identificador de política do método de autenticação.|
 |isAttestationEnforced|Booliano|Determina se o atestado deve ser imposto para o registro da chave de segurança FIDO2.|
 |isSelfServiceRegistrationAllowed|Booliano|Determina se os usuários podem registrar novas chaves de segurança FIDO2.|
-|keyRestrictions|[fido2KeyRestrictions](../resources/fido2keyrestrictions.md)|Controla se as restrições de chave são impostas às teclas de segurança FIDO2, permitindo ou desproteção de determinados tipos de chave, conforme definido pelo AAGUID (Authenticator Attestation GUID), um identificador que indica o tipo (por exemplo, make e model) do autenticador.|
+|keyRestrictions|[fido2KeyRestrictions](../resources/fido2keyrestrictions.md)|Controla se as restrições de chave são impostas às teclas de segurança FIDO2, permitindo ou desproteção de determinados tipos de chave, conforme definido pelo Authenticator GUID de Atestado (AAGUID), um identificador que indica o tipo (por exemplo, make e model) do autenticador.|
 |state|authenticationMethodState|Os valores possíveis são: `enabled`, `disabled`.|
 
 ## <a name="relationships"></a>Relações
