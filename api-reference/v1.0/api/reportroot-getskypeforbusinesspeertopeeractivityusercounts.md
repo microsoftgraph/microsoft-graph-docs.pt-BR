@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: reports
 author: sarahwxy
 doc_type: apiPageType
-ms.openlocfilehash: c41a351a9280fcc5cb5d64522dbc4a8ccdd115d2
-ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
+ms.openlocfilehash: fcc4b6ddebf607d20325a4afe3d377799c48b801961e8dd96efe6a832a8ea089
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49981925"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54172110"
 ---
 # <a name="reportroot-getskypeforbusinesspeertopeeractivityusercounts"></a>reportRoot: getSkypeForBusinessPeerToPeerActivityUserCounts
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 Obtenha tendências de uso do número de usuários únicos e o tipo de sessões ponto a ponto realizadas em sua organização. Os tipos de sessões incluem mensagens instantâneas, áudio, vídeo, compartilhamento de aplicativos e transferência de arquivos em sessões ponto a ponto.
 
-> **Observação:** Para obter detalhes sobre diferentes visualizações e nomes de relatórios, consulte relatórios do [Microsoft 365 - atividade](/skypeforbusiness/skype-for-business-online-reporting/peer-to-peer-activity-report)ponto a ponto do Skype for Business.
+> **Observação:** Para obter detalhes sobre diferentes exibições de relatório e nomes, [consulte Microsoft 365 relatórios - Skype for Business atividade ponto a ponto](/skypeforbusiness/skype-for-business-online-reporting/peer-to-peer-activity-report).
 
 ## <a name="permissions"></a>Permissões
 

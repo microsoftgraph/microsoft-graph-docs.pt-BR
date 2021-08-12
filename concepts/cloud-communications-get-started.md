@@ -4,12 +4,12 @@ description: Saiba como você pode usar bots para responder às necessidades de 
 author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
-ms.openlocfilehash: a1c2ff420df58be8345924c2c6622f7cc6647551
-ms.sourcegitcommit: db3d2c6db8dd8f8cc14bdcebb2904d5e056a73e7
+ms.openlocfilehash: a977c2a81d40679eb3029bdfaf7560dd744fc9439e7a650e63d470198883ab0d
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52579680"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54246504"
 ---
 # <a name="get-started-with-cloud-communications"></a>Começar a trabalhar com comunicações na nuvem
 

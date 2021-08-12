@@ -5,12 +5,12 @@ author: nilakhan
 localization_priority: Normal
 ms.prod: cloud-printing
 doc_type: resourcePageType
-ms.openlocfilehash: 3115164fcc15ef6c2133ef3616624af9141da1af
-ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
+ms.openlocfilehash: 39c3ab6cbbf83773a28c5ce374322846e08fc43958eb0103640b080fa94b6e5a
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50517039"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54237583"
 ---
 # <a name="printjob-resource-type"></a>Tipo de recurso printJob
 
@@ -24,11 +24,11 @@ Representa um trabalho de impressão que foi ensuado para uma impressora.
 | Método       | Tipo de retorno | Descrição |
 |:-------------|:------------|:------------|
 | [Get](../api/printjob-get.md) | [printJob](printjob.md) | Ler propriedades e relações do objeto printJob. |
-| [Create](../api/printer-post-jobs.md) | [printJob](printjob.md) | Crie um novo objeto de trabalho de impressão. |
-| [Update](../api/printjob-update.md) | [printJob](printjob.md) | Atualizar um objeto de trabalho de impressão. |
-| [Start](../api/printjob-start.md)|Nenhum|Iniciar o trabalho de impressão.|
-| [Cancel](../api/printjob-cancel.md)|Nenhum|Cancele o trabalho de impressão.|
-| Anular**|Nenhum|Aborte o trabalho de impressão.|
+| [Criar](../api/printer-post-jobs.md) | [printJob](printjob.md) | Crie um novo objeto de trabalho de impressão. |
+| [Atualizar](../api/printjob-update.md) | [printJob](printjob.md) | Atualizar um objeto de trabalho de impressão. |
+| [Start](../api/printjob-start.md)|None|Iniciar o trabalho de impressão.|
+| [Cancel](../api/printjob-cancel.md)|None|Cancele o trabalho de impressão.|
+| Anular**|None|Aborte o trabalho de impressão.|
 | [Redirecionar (para outra impressora)](../api/printjob-redirect.md) | [printJob](printjob.md) | Um trabalho de impressão que está na fila para a impressora de destino. |
 
 
@@ -36,8 +36,8 @@ Representa um trabalho de impressão que foi ensuado para uma impressora.
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|Cadeia de caracteres|GUID da impressora. Somente leitura.|
-|createdDateTime|DateTimeOffset|DateTimeOffset quando o trabalho foi criado. Somente leitura.|
-|status|[printJobStatus](printjobstatus.md)|O status do trabalho de impressão. Somente leitura.|
+|createdDateTime|DateTimeOffset|DateTimeOffset quando o trabalho foi criado. Apenas leitura.|
+|status|[printJobStatus](printjobstatus.md)|O status do trabalho de impressão. Apenas leitura.|
 |configuração|[printJobConfiguration](printJobConfiguration.md)|Um grupo de configurações que uma impressora deve usar para imprimir um trabalho.|
 |isFetchable|Edm.Boolean|Se true, o documento pode ser buscado pela impressora.|
 |redirectedFrom|Edm.String|Contém a URL do trabalho de origem, se o trabalho tiver sido redirecionado de outra impressora.|

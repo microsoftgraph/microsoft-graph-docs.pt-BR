@@ -4,12 +4,12 @@ description: Usar a API de avaliações de acesso para revisar o acesso aos seus
 author: FaithOmbongi
 localization_priority: Normal
 ms.prod: governance
-ms.openlocfilehash: e57fb73c119f36dd0cdb50746910463cfa336d3c
-ms.sourcegitcommit: 5a1cc1943527aa268e3797ee514871e65eb474a6
+ms.openlocfilehash: a2237efa8be245519f9494473460ea3ef1a4875b1a3a5b745b687ebe430c880d
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53030268"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54237352"
 ---
 # <a name="tutorial-use-the-access-reviews-api-to-review-access-to-your-security-groups"></a>Tutorial: use a API de críticas de acesso para revisar o acesso aos seus grupos de segurança
 

@@ -1,21 +1,21 @@
 ---
-title: 'Tutorial: Gerenciar o acesso aos recursos no gerenciamento de direitos do Active Directory usando APIs do Microsoft Graph'
+title: 'Tutorial: gerenciar o acesso aos recursos no gerenciamento de direitos do Active Directory usando APIs do Microsoft Graph'
 description: Saiba como gerenciar o acesso aos recursos no Gerenciamento de direitos do Active Directory (Azure AD) usando APIs do Microsoft Graph.
 author: davidmu1
 localization_priority: Normal
 ms.prod: governance
-ms.openlocfilehash: b27bda23d32033205c21199d27d34dd360fa380d
-ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
+ms.openlocfilehash: 196c9b7b582c17341dfd9de46389620870b666ec6a49b6fb38bf7270b9032e1a
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50760978"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54186843"
 ---
-# <a name="tutorial-manage-access-to-resources-in-active-directory-entitlement-management-using-microsoft-graph-apis"></a>Tutorial: Gerenciar o acesso aos recursos no gerenciamento de direitos do Active Directory usando APIs do Microsoft Graph
+# <a name="tutorial-manage-access-to-resources-in-active-directory-entitlement-management-using-microsoft-graph-apis"></a>Tutorial: gerenciar o acesso aos recursos no gerenciamento de direitos do Active Directory usando APIs do Microsoft Graph
 
-Gerenciar o acesso a todos os recursos de que os funcionários precisam, como grupos, aplicativos e sites, é uma função importante para as organizações. Você deseja conceder aos funcionários o nível certo de acesso que precisam ser produtivos e remover o acesso quando não for mais necessário. O gerenciamento de direitos do [Azure Active Directory (Azure AD)](/azure/active-directory/governance/entitlement-management-overview) usando APIs do Microsoft Graph permite gerenciar esse tipo de acesso.
+Gerenciar o acesso a todos os recursos de que os funcionários precisam, como grupos, aplicativos e sites, é uma função importante para as organizações. Você deseja conceder aos funcionários o nível certo de acesso que precisam ser produtivos e remover o acesso quando não for mais necessário. [Azure Active Directory (Azure AD)](/azure/active-directory/governance/entitlement-management-overview) gerenciamento de direitos usando APIs do Microsoft Graph permite gerenciar esse tipo de acesso.
 
-Neste tutorial, você foi solicitado a desenvolver código para criar um pacote de recursos para uma campanha de marketing que os usuários internos possam solicitar por conta própria. As solicitações não exigem aprovação e o acesso do usuário expira após 30 dias. Para este tutorial, os recursos da campanha de marketing são apenas associação em um único grupo, mas pode ser uma coleção de grupos, aplicativos ou sites do SharePoint Online.
+Neste tutorial, você foi solicitado a desenvolver código para criar um pacote de recursos para uma campanha de marketing que os usuários internos possam solicitar por conta própria. As solicitações não exigem aprovação e o acesso do usuário expira após 30 dias. Para este tutorial, os recursos da campanha de marketing são apenas associação em um único grupo, mas pode ser uma coleção de grupos, aplicativos ou sites SharePoint Online.
 
 >**Observação:** Os objetos de resposta mostrados neste tutorial podem ser reduzidos para a capacidade de leitura. 
 
@@ -24,7 +24,7 @@ Neste tutorial, você foi solicitado a desenvolver código para criar um pacote 
 Para concluir com êxito este tutorial, certifique-se de que você tem os pré-requisitos necessários:
 - O gerenciamento de direitos do Azure AD exige licenças específicas. Para obter mais informações, consulte [Requisitos de licença](/azure/active-directory/governance/entitlement-management-overview#license-requirements). As seguintes licenças são necessárias em seu locatário:
     - Azure AD Premium P2
-    - Licença enterprise Mobility + Security (EMS) E5
+    - Enterprise Mobility + Security (EMS) E5
 - Este tutorial assume que você está usando o Microsoft Graph Explorer, mas você pode usar o Postman ou criar seu próprio aplicativo cliente para chamar o Microsoft Graph. Para chamar as APIs do Microsoft Graph neste tutorial, você precisa usar uma conta com a função de administrador global e as permissões apropriadas. Para este tutorial, `User.ReadWrite.All` as permissões , e `Group.ReadWrite.All` `EntitlementManagement.ReadWrite.All` delegadas são necessárias. Conclua as seguintes etapas para definir as permissões no Microsoft Graph Explorer:
     1. Inicie o [Microsoft Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
     2. Selecione **Entrar com a conta da Microsoft** e entre usando uma conta de administrador global do Azure AD. Uma vez acessado, você verá os detalhes da conta do usuário no painel esquerdo.
@@ -260,7 +260,7 @@ GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/ac
 
 ### <a name="get-resources-roles"></a>Obter funções de recursos
 
-O pacote de acesso atribui usuários às funções de um recurso. A função típica de um grupo é a função de membro. Outros recursos, como sites e aplicativos do SharePoint Online, podem ter muitas funções. A função típica de um grupo usado em um pacote de acesso é a função de membro. Você precisará da função de membro ao adicionar uma função de recurso ao pacote de acesso posteriormente neste tutorial. 
+O pacote de acesso atribui usuários às funções de um recurso. A função típica de um grupo é a função de membro. Outros recursos, como sites SharePoint online e aplicativos, podem ter muitas funções. A função típica de um grupo usado em um pacote de acesso é a função de membro. Você precisará da função de membro ao adicionar uma função de recurso ao pacote de acesso posteriormente neste tutorial. 
 
 Na solicitação, use a **id** do catálogo e a **id** do recurso de grupo no catálogo que você gravou para obter a **origemId** da função de recurso Membro. Grave o valor da **propriedade originId** a ser usada posteriormente neste tutorial.
 

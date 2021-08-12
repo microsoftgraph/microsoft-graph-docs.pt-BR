@@ -5,12 +5,12 @@ description: O objeto MoveAction fornece informações sobre uma atividade que m
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 2f588ecabefa1425f47d3efec6728587fb694798
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: 160afbc51196c60473dc40bec7b79daab6dc39eb3f302c1a1b9689c9c25929fe
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50239335"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54189461"
 ---
 # <a name="moveaction-resource-type"></a>Tipo de recurso moveAction
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 A presença do recurso **moveAction** em um [**itemActivity**][activity] indica que a atividade moveu um item.
 
->**Observação:** No momento, os registros de atividades do item só estão disponíveis no SharePoint e no OneDrive for Business.
+>**Observação:** No momento, os registros de atividade do item estão disponíveis apenas SharePoint e OneDrive for Business.
 
 [activity]: itemactivity.md
 
@@ -34,13 +34,13 @@ A presença do recurso **moveAction** em um [**itemActivity**][activity] indica 
 <!-- {
   "blockType": "resource",
   "optionalProperties": [ ],
-  "@type": "microsoft.graph.moveAction"
+  "@type&quot;: &quot;microsoft.graph.moveAction"
 }-->
 
 ```json
 {
   "from": "string",
-  "to": "string"
+  "to&quot;: &quot;string"
 }
 ```
 

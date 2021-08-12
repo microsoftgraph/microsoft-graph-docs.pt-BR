@@ -4,12 +4,12 @@ description: Descreve quais políticas são compatíveis e como atribuir acesso 
 author: fercobo-msft
 localization_priority: Priority
 ms.prod: data-connect
-ms.openlocfilehash: b550976f6fde1af5335fb328a9aaef8f48dea33d
-ms.sourcegitcommit: 276a13a37c3772689dfc71f7cd47586c9581f27d
+ms.openlocfilehash: 904890023526fac2d33d51347de53d4afc7bec46c9ef62479a32ebe9874561ab
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52629326"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54246399"
 ---
 # <a name="microsoft-graph-data-connect-policies-and-billing"></a>Políticas e cobrança da Conexão de Dados do Microsoft Graph
 

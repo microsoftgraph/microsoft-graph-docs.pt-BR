@@ -1,29 +1,29 @@
 ---
-title: tipo de recurso shiftPreferences
-description: Representa a disponibilidade de um usuário a ser atribuída a turnos no cronograma.
+title: Tipo de recurso shiftPreferences
+description: Representa a disponibilidade de um usuário a ser atribuído turnos na agenda.
 localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: c1f2b4acdc61fcf7889ea0b9dd1046aff112c9e7
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 5b807ba99eb811fb534276ae8ff7b4e180a3c94818fc00b5e57e111a6f75bf62
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47970660"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54230428"
 ---
-# <a name="shiftpreferences-resource-type"></a>tipo de recurso shiftPreferences
+# <a name="shiftpreferences-resource-type"></a>Tipo de recurso shiftPreferences
 
 Namespace: microsoft.graph
 
-Representa a disponibilidade de um usuário a ser atribuída a turnos no [cronograma](schedule.md).
+Representa a disponibilidade de um usuário a ser atribuída a turnos na [agenda](schedule.md).
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 
 | Método       | Tipo de retorno | Descrição |
 |:-------------|:------------|:------------|
-| [Get](../api/shiftpreferences-get.md) | [shiftPreferences](shiftpreferences.md) | Leia as propriedades e os relacionamentos de um objeto **shiftPreferences** . |
-| [Atualização](../api/shiftpreferences-put.md) | [shiftPreferences](shiftpreferences.md) | Atualizar um objeto **shiftPreferences** . |
+| [Get](../api/shiftpreferences-get.md) | [shiftPreferences](shiftpreferences.md) | Leia as propriedades e as relações de um **objeto shiftPreferences.** |
+| [Atualizar](../api/shiftpreferences-put.md) | [shiftPreferences](shiftpreferences.md) | Atualize um **objeto shiftPreferences.** |
 
 ## <a name="properties"></a>Propriedades
 
@@ -31,9 +31,9 @@ Representa a disponibilidade de um usuário a ser atribuída a turnos no [cronog
 |--------------|---------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
 | id | `Edm.String` | O identificador da entidade. |
 | @odata.etag | `Edm.String` | A chave de alteração da entidade. |
-| availability | coleção [shiftAvailability](shiftavailability.md) | Disponibilidade do usuário a ser agendada para trabalho e seu padrão de recorrência. |
-| createdDateTime | `Edm.DateTimeOffset` | Carimbo de data/hora correspondente a quando a entidade foi criada. |
-| lastModifiedDateTime | `Edm.DateTimeOffset` | Carimbo de data/hora correspondente a quando a entidade foi modificada pela última vez. |
+| availability | [Coleção shiftAvailability](shiftavailability.md) | Disponibilidade do usuário a ser agendado para o trabalho e seu padrão de recorrência. |
+| createdDateTime | `Edm.DateTimeOffset` | Timestamp correspondente a quando a entidade foi criada. |
+| lastModifiedDateTime | `Edm.DateTimeOffset` | Timestamp correspondente a quando a entidade foi modificada pela última vez. |
 | lastModifiedBy | [identitySet](identityset.md) | Identidade da pessoa que modificou a entidade pela última vez. |
 
 ## <a name="relationships"></a>Relações

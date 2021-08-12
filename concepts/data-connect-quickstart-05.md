@@ -1,6 +1,6 @@
 <!-- markdownlint-disable MD002 MD041 -->
 
-A próxima etapa é usar a Fábrica de Dados do Azure para criar um pipeline para extrair os dados do Microsoft 365 para a conta Armazenamento do Azure usando conexão de dados do Microsoft Graph.
+A próxima etapa é usar a Fábrica de Dados do Azure para criar um pipeline para extrair os dados do Microsoft 365 para a conta Armazenamento do Azure usando Conexão de dados do Microsoft Graph.
 
 ## <a name="create-an-azure-data-factory-pipeline"></a>Criar um pipeline do Azure Data Factory
 
@@ -132,4 +132,4 @@ Com o pipeline criado, agora é hora de ser executado.
 
     ![Uma captura de tela mostrando a interface do usuário do portal do Azure para o serviço de Fábrica de Dados em que o status de carga da solicitação é definido como "RequestConsent".](images/data-connect-adf-wait-for-approval.png)
 
-1. Neste ponto, a atividade é pausada internamente até que alguém aprove manualmente a solicitação de consentimento por meio do Microsoft 365 de administração ou por meio do PowerShell.
+1. Neste ponto, a atividade é pausada internamente até que alguém aprove manualmente a solicitação de consentimento por meio do Centro de administração do Microsoft 365 ou por meio do PowerShell.

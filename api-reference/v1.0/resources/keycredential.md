@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: 05b0aa71059bcf0ef974e49fb012a3815386b9be
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: ec191064f0dd14cac67279a6802bc57849e4a740c1e1248cba8234e95ce32c96
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50722234"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54196954"
 ---
 # <a name="keycredential-resource-type"></a>Tipo de recurso keyCredential
 
@@ -21,14 +21,14 @@ Contém uma credencial de chave associada a um aplicativo <!--or a service princ
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|customKeyIdentifier|Binária| Identificador de chave personalizada |
+|customKeyIdentifier|Binário| Identificador de chave personalizada |
 | displayName | Cadeia de caracteres | Nome amigável para a chave. Opcional. |
-|endDateTime|DateTimeOffset|A data e a hora em que a credencial expira. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre em horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`|
-|keyId|Guid|O identificador exclusivo (GUID) da chave.|
-|startDateTime|DateTimeOffset|A data e a hora em que a credencial se torna válida. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre em horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`|
-|tipo|Cadeia de caracteres|O tipo de credencial de chave; por exemplo, "Simétrico".|
-|usage|Cadeia de caracteres|Uma cadeia de caracteres que descreve a finalidade para a qual a chave pode ser usada; por exemplo, "Verify".|
+|endDateTime|DateTimeOffset|A data e a hora em que a credencial expira. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre em horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`.|
 |chave|Binário| Os dados brutos do certificado na matriz de byte convertidos na cadeia de caracteres Base64; por exemplo, `[System.Convert]::ToBase64String($Cert.GetRawCertData())` . |
+|keyId|Guid|O identificador exclusivo (GUID) da chave.|
+|startDateTime|DateTimeOffset|A data e a hora em que a credencial se torna válida. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre em horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`.|
+|tipo|Cadeia de caracteres|O tipo de credencial de chave; por exemplo, `Symmetric` .|
+|usage|Cadeia de caracteres|Uma cadeia de caracteres que descreve a finalidade para a qual a chave pode ser usada; por exemplo, `Verify` .|
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -44,16 +44,16 @@ Veja a seguir uma representação JSON do recurso
 
 ```json
 {
-  "customKeyIdentifier": "binary",
+  "@odata.type": "#microsoft.graph.keyCredential",
+  "customKeyIdentifier": "Binary",
   "displayName": "String",
   "endDateTime": "String (timestamp)",
-  "keyId": "guid",
+  "key": "Binary",
+  "keyId": "Guid",
   "startDateTime": "String (timestamp)",
-  "type": "string",
-  "usage": "string",
-  "key": "binary"
+  "type": "String",
+  "usage": "String"
 }
-
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

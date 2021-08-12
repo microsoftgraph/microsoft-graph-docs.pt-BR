@@ -5,12 +5,12 @@ author: nilakhan
 localization_priority: Normal
 ms.prod: cloud-printing
 doc_type: resourcePageType
-ms.openlocfilehash: c478a4f9827de96d4db0da5d8533628bd8468d98
-ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
+ms.openlocfilehash: eae95a17032ca69a9856ee44377bef0aeb733cb0babfbfa66b0b2fdd9b3c9d51
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50517011"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54222725"
 ---
 # <a name="printusagebyuser-resource-type"></a>Tipo de recurso printUsageByUser
 
@@ -25,7 +25,7 @@ Descreve a atividade de impressão de um usuário durante um período de tempo e
 |:---|:---|:---|
 | [Lista (diariamente)](../api/reportroot-list-dailyprintusagebyuser.md) | [printUsageByUser](printusagebyuser.md) | Obter uma lista de resumos de uso diário de impressão, agrupados por usuário. |
 | [Lista (mensal)](../api/reportroot-list-monthlyprintusagebyuser.md) | [printUsageByUser](printusagebyuser.md) | Obter uma lista de resumos de uso de impressão mensal, agrupados por usuário. |
-| [Get](../api/printusagebyuser-get.md) | [printUsageByUser](printusagebyuser.md) | Ler propriedades e relações de um objeto printUsageByUser. |
+| [Obter](../api/printusagebyuser-get.md) | [printUsageByUser](printusagebyuser.md) | Ler propriedades e relações de um objeto printUsageByUser. |
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|

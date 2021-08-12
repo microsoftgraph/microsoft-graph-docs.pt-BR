@@ -1,39 +1,39 @@
 ---
-title: tipo de recurso plannerTaskDetails
-description: O recurso **plannerTaskDetails** representa as informações adicionais sobre uma tarefa. Cada objeto Task tem um objeto details.
+title: Tipo de recurso plannerTaskDetails
+description: O **recurso plannerTaskDetails** representa as informações adicionais sobre uma tarefa. Cada objeto de tarefa tem um objeto details.
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: 32ea3fff1c97920a83f667282e1341926a02b5c1
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 852deda3e48c78b2e70968cb7e8b7ec9a11956bbf2fcab66ecc127ea653abce9
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48037371"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54189391"
 ---
-# <a name="plannertaskdetails-resource-type"></a>tipo de recurso plannerTaskDetails
+# <a name="plannertaskdetails-resource-type"></a>Tipo de recurso plannerTaskDetails
 
 Namespace: microsoft.graph
 
-O recurso **plannerTaskDetails** representa as informações adicionais sobre uma tarefa. Cada objeto [Task](plannertask.md) tem um objeto details.
+O **recurso plannerTaskDetails** representa as informações adicionais sobre uma tarefa. Cada [objeto de](plannertask.md) tarefa tem um objeto details.
 
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
-|[Obter plannerTaskDetails](../api/plannertaskdetails-get.md) | [plannerTaskDetails](plannertaskdetails.md) |Leia as propriedades e os relacionamentos do objeto **plannerTaskDetails** .|
-|[Atualização](../api/plannertaskdetails-update.md) | [plannerTaskDetails](plannertaskdetails.md)    |Atualize o objeto **plannerTaskDetails** . |
+|[Obter plannerTaskDetails](../api/plannertaskdetails-get.md) | [plannerTaskDetails](plannertaskdetails.md) |Ler propriedades e relações do **objeto plannerTaskDetails.**|
+|[Atualizar](../api/plannertaskdetails-update.md) | [plannerTaskDetails](plannertaskdetails.md)    |Atualize **o objeto plannerTaskDetails.** |
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|verificação|[plannerChecklistItems](plannerchecklistitems.md)|A coleção de itens de lista de verificação na tarefa.|
-|description|String|Descrição da tarefa|
+|checklist|[plannerChecklistItems](plannerchecklistitems.md)|A coleção de itens de lista de verificação na tarefa.|
+|description|Cadeia de caracteres|Descrição da tarefa|
 |id|String| Somente leitura. ID dos detalhes da tarefa. Tem 28 caracteres e diferencia maiúsculas de minúsculas. [Formatar validação](planner-identifiers-disclaimer.md) é feito no serviço.|
-|previewType|string|Isso define o tipo de visualização que aparece na tarefa. Os valores possíveis são: `automatic`, `noPreview`, `checklist`, `description`, `reference`. Quando definido para `automatic` a visualização exibida é escolhido pelo aplicativo que está exibindo a tarefa.|
-|Referencie|[plannerExternalReferences](plannerexternalreferences.md)|A coleção de referências na tarefa.|
+|previewType|string|Isso define o tipo de visualização que aparece na tarefa. Os valores possíveis são: `automatic`, `noPreview`, `checklist`, `description`, `reference`. Quando definido para `automatic` a visualização exibida, é escolhido pelo aplicativo exibindo a tarefa.|
+|referências|[plannerExternalReferences](plannerexternalreferences.md)|A coleção de referências na tarefa.|
 
 ## <a name="relationships"></a>Relações
 Nenhum

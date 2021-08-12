@@ -1,29 +1,29 @@
 ---
 title: Listar páginas
-description: Recupere uma lista de objetos Page da seção especificada.
+description: Recupere uma lista de objetos de página da seção especificada.
 localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: b96883d224665b8a506b58a3647bf134c4cde2d9
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: c2167af37a0c1c6972fea7e53b8432c6542fe59d2a9328cadc3306895b786d36
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48405355"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54250284"
 ---
 # <a name="list-pages"></a>Listar páginas
 
 Namespace: microsoft.graph
 
-Recupere uma lista de objetos [Page](../resources/page.md) da seção especificada.
+Recupere uma lista de [objetos de](../resources/page.md) página da seção especificada.
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Notes. Read, Notes. ReadWrite, Notes. Read. All, Notes. ReadWrite. All    |
-|Delegado (conta pessoal da Microsoft) | Notes. Read, Notes. ReadWrite    |
+|Delegado (conta corporativa ou de estudante) | Notes.Read, Notes.ReadWrite, Notes.Read.All, Notes.ReadWrite.All    |
+|Delegado (conta pessoal da Microsoft) | Notes.Read, Notes.ReadWrite    |
 |Aplicativo | Notes.Read.All, Notes.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -37,9 +37,9 @@ GET /sites/{id}/onenote/sections/{id}/pages
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
 
-A consulta padrão para páginas retorna as 20 principais páginas ordenadas por `lastModifiedTime desc` . Se a consulta padrão retornar mais de 20 páginas, a resposta conterá um `@odata.nextLink` que você pode usar para percorrer o conjunto de resultados. O número máximo de páginas retornadas para uma `top` solicitação é 100.
+A consulta padrão para páginas retorna as 20 principais páginas ordenadas por `lastModifiedTime desc` . Se a consulta padrão retornar mais de 20 páginas, a resposta conterá um que você pode usar para página `@odata.nextLink` através do conjunto de resultados. O número máximo de páginas retornadas para `top` uma solicitação é 100.
 
-A resposta padrão expande `parentSection` e seleciona as `id` `name` Propriedades, e e `self` . `expand`Os valores válidos para páginas são `parentNotebook` e `parentSection` .
+A resposta padrão `parentSection` expande e seleciona as `id` propriedades e , da `name` `self` seção. Os `expand` valores válidos para páginas `parentNotebook` são e `parentSection` .
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Tipo | Descrição|
@@ -52,7 +52,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [Page](../resources/page.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e uma `200 OK` coleção de objetos [de](../resources/page.md) página no corpo da resposta.
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.

@@ -5,12 +5,12 @@ localization_priority: Priority
 author: abheek-das
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: a1ab83dfa3e3da64935a8c3976f12ffd1faf2e3c
-ms.sourcegitcommit: 276a13a37c3772689dfc71f7cd47586c9581f27d
+ms.openlocfilehash: a65a5a88e2c0951c9b292140ca6a071b788651c8a0dcbebbb22eab5205407b64
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52629382"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54169435"
 ---
 # <a name="mailfolder-resource-type"></a>tipo de recurso mailFolder
 
@@ -97,7 +97,7 @@ https://outlook.office.com/api/v1.0/me/folders/inbox/messages?$count=true&$filte
 As pastas de email no Outlook podem conter mais de um tipo de item, por exemplo, a caixa de entrada pode conter itens que são diferentes de itens de email da solicitação de reunião. `TotalItemCount` e `UnreadItemCount` incluem itens em uma pasta de email independentemente seus tipos de item.
 
 ### <a name="hidden-mail-folders"></a>Pastas de email ocultas
-O valor padrão da propriedade `isHidden` é `false`. Você pode definir a **isHidden** apenas uma vez ao [criar a mailFolder ](../api/user-post-mailfolders.md). Você não pode atualizar a propriedade usando uma operação PATCH. Para alterar a propriedade **isHidden** de uma pasta, exclua a pasta existente e crie uma nova com o valor desejado.
+O valor padrão da propriedade `isHidden` é `false`. Você pode definir a **isHidden** apenas uma vez ao [criar a mailFolder](../api/user-post-mailfolders.md). Você não pode atualizar a propriedade usando uma operação PATCH. Para alterar a propriedade **isHidden** de uma pasta, exclua a pasta existente e crie uma nova com o valor desejado.
 
 As pastas de email ocultas oferecem suporte a todas as operações suportadas por uma pasta de email normal.
 

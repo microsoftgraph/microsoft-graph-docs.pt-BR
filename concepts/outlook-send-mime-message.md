@@ -4,12 +4,12 @@ description: Os clientes de email têm a capacidade de enviar emails pelo Exchan
 author: isvargasmsft
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: 2e36f84334937a6a3a68f29201c66deae554ecd8
-ms.sourcegitcommit: cec76c5a58b359d79df764c849c8b459349b3b52
+ms.openlocfilehash: 2cd092bcea50b800838a64dd0f8b89eb01dbe4d5d33b9ceb26e2fee910a050fc
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "52645757"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54146157"
 ---
 # <a name="send-messages-with-mime-content"></a>Enviar mensagens com conteúdo MIME
 
@@ -48,7 +48,7 @@ Você pode criar uma [mensagem](/graph/api-reference/v1.0/resources/message) no 
 - `Content-Type: application/json` para usar o formato JSON no corpo da solicitação.
 - `Content-Type: text/plain` para usar o formato MIME no corpo da solicitação.
 
-Ao especificar o corpo no formato MIME, forneça os [cabeçalhos de mensagem de Internet](https://tools.ietf.org/html/rfc2076) e o [conteúdo MIME](https://tools.ietf.org/html/rfc2045) aplicáveis e codifique-os no formato **base64** no corpo da solicitação. O Microsoft Graph não dá suporte à edição nem à atualização de propriedades MIME individualmente.
+Ao especificar o corpo no formato MIME, forneça os [Cabeçalhos de mensagem da internet](https://tools.ietf.org/html/rfc2076) aplicáveis e o [conteúdo MIME](https://tools.ietf.org/html/rfc2045) e codifique-os no formato **base64** no corpo da solicitação. O Microsoft Graph não oferece suporte à edição ou atualização de propriedades MIME individualmente.
 
 ## <a name="example"></a>Exemplo
 Veja a seguir um exemplo de conteúdo MIME com títulos de mensagens da Internet (antes da codificação):

@@ -5,12 +5,12 @@ author: nilakhan
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: resourcePageType
-ms.openlocfilehash: 2132b5a7cdf5024fb13845c57844220594ba6e1f
-ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
+ms.openlocfilehash: 45d1988e95661f586b4093b5ff033197b623b891ae5e78e59a57352c406f4085
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50516922"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54163905"
 ---
 # <a name="archivedprintjob-resource-type"></a>Tipo de recurso archivedPrintJob
 

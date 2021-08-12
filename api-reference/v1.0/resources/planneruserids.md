@@ -1,26 +1,26 @@
 ---
-title: tipo de recurso plannerUserIds
-description: O recurso **plannerUserIds** representa a lista de IDs de usuários com as quais um plano é compartilhado. Este é um tipo aberto. Se você estiver aproveitando os grupos do Microsoft 365, use a API de grupos para gerenciar a associação de grupo para compartilhar o plano do grupo. Você também pode adicionar membros existentes do grupo a essa coleção, embora não seja necessário que eles acessem o plano de Propriedade do grupo.
+title: Tipo de recurso plannerUserIds
+description: O **recurso plannerUserIds** representa a lista de IDs de usuários com as que um plano é compartilhado. Este é um Tipo Aberto. Se você estiver aproveitando Microsoft 365 grupos, use a API grupos para gerenciar a associação ao grupo para compartilhar o plano do grupo. Você também pode adicionar membros existentes do grupo a essa coleção, embora não seja necessário que eles acessem o plano de propriedade do grupo.
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: 3a02ce136acf23235889d36bd5c953180e018d40
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: b40b1681728bcebe85bab43254bb8414886ff3425d296596364992db7d5c8e7e
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48037350"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54223246"
 ---
-# <a name="planneruserids-resource-type"></a>tipo de recurso plannerUserIds
+# <a name="planneruserids-resource-type"></a>Tipo de recurso plannerUserIds
 
 Namespace: microsoft.graph
 
-O recurso **plannerUserIds** representa a lista de IDs de usuários com as quais um [plano](plannerplan.md) é compartilhado. Este é um tipo aberto. Se você estiver aproveitando os grupos do Microsoft 365, use a API de grupos para gerenciar a associação de grupo para compartilhar o plano [do grupo](group.md) . Você também pode adicionar membros existentes do grupo a essa coleção, embora não seja necessário que eles acessem o plano de Propriedade do grupo.
+O **recurso plannerUserIds** representa a lista de IDs de usuários com as que um [plano](plannerplan.md) é compartilhado. Este é um Tipo Aberto. Se você estiver aproveitando Microsoft 365 grupos, use a API grupos para gerenciar a associação ao grupo para compartilhar o [plano do](group.md) grupo. Você também pode adicionar membros existentes do grupo a essa coleção, embora não seja necessário que eles acessem o plano de propriedade do grupo.
 
 
 ## <a name="properties"></a>Propriedades
-As propriedades de um tipo aberto podem ser definidas pelo cliente. Nesse caso, o cliente deve fornecer IDs de usuário como propriedades com seus valores como `true` Boolean. Quando as IDs de usuário não são mais compartilhadas, as propriedades são removidas automaticamente definindo seus valores para o `false` Boolean.
+As propriedades de um Tipo Aberto podem ser definidas pelo cliente. Nesse caso, o cliente deve fornecer ids de usuário como propriedades, com seus valores sendo `true` booleano. Quando as ids do usuário não são mais compartilhadas, as propriedades são removidas automaticamente definindo seus valores como `false` booleano.
 
 
 ## <a name="json-representation"></a>Representação JSON

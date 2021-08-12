@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 8bb91dae367f9f9c95465aed0f8c71a26aaddd1a
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f69409c3bcab7eaa91e08341f5b81074589ca64e7fb83c56b48f30e451fc736f
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48014998"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54163611"
 ---
 # <a name="worksheetprotection-resource-type"></a>Tipo de recurso WorksheetProtection
 
@@ -19,7 +19,7 @@ Namespace: microsoft.graph
 Representa a proteção de um objeto sheet.
 
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|

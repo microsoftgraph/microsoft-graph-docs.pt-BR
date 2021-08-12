@@ -4,12 +4,12 @@ description: Emails são representados pelo recurso de mensagem no Microsoft Gra
 author: abheek-das
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: b64c06d86cc4228a3254840103496dbe89890788
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: 8935bb03fbb7d1cea9c3072d2f7aafb545215880991806125f87173a10d1db94
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50474439"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54157911"
 ---
 # <a name="automate-creating-sending-and-processing-messages"></a>Automatizar a criação, o envio e o processamento de mensagens
 
@@ -32,12 +32,11 @@ Por padrão, as mensagens de rascunho são salvas na pasta `Drafts` As mensagens
 Quando uma mensagem está sendo redigida, na maioria dos casos, o Outlook configura as propriedades **from** e **sender** para o mesmo usuário conectado. Você pode atualizar essas propriedades nas seguintes situações:
 
 - A propriedade **from** poderá ser alterada se o administrador do Exchange tiver atribuído direitos **sendAs** da caixa de correio a alguns outros usuários. O administrador pode fazer isso selecionando as **Permissões de Caixa de Correio** do proprietário da caixa de correio no Portal do Azure ou usando o Centro de Administração do Exchange ou um cmdlet Add-ADPermission do Windows PowerShell. Em seguida, você pode definir programaticamente a propriedade **from** como um desses usuários com direitos **sendAs** para essa caixa de correio.
-- A propriedade **sender** poderá ser alterada se o proprietário da caixa de correio tiver delegado o envio de mensagens dessa caixa de correio para um ou mais usuários. O proprietário da caixa de correio pode delegar no Outlook. Quando um representante envia uma mensagem em nome do proprietário da caixa de correio, o Outlook define a propriedade **sender** como a conta desse representante, enquanto a propriedade **from** continua a do proprietário da caixa de correio. Você pode definir programaticamente a propriedade **sender** para um usuário com permissões de representante para essa caixa de correio.
+- A propriedade **sender** poderá ser alterada se o proprietário da caixa de correio tiver delegado o envio de mensagens dessa caixa de correio para um ou mais usuários capazes de enviar mensagens dessa caixa de correio. O proprietário da caixa de correio pode delegar no Outlook. Quando um delegado envia uma mensagem em nome do proprietário da caixa de correio, o Outlook define a propriedade **sender** para a conta do delegado e a propriedade **from** permanece como o proprietário da caixa de correio. Programaticamente, você pode definir a propriedade **sender** para um usuário que tenha permissões de delegado para essa caixa de correio.
 
 ## <a name="using-mailtips-to-check-recipient-status-and-save-time-preview"></a>Usar as Dicas de Email para verificar o status do destinatário e economizar tempo (prévia)
 
-Use as [Dicas de Email](/graph/api/resources/mailtips?view=graph-rest-beta) para tomar decisões inteligentes antes de enviar um email.
-As Dicas de Email podem lhe dar informações, como saber que a caixa de correio do destinatário é restrita para remetentes específicos, ou que aprovação é necessária para enviar emails ao destinatário.
+Use as [Dicas de Email](/graph/api/resources/mailtips?view=graph-rest-beta) para tomar decisões inteligentes antes de enviar um email. As Dicas de Email podem fornecer informações como saber que a caixa de correio do destinatário restrita para remetentes específicos, ou que a aprovação é necessária para enviar um email ao destinatário.
 
 
 ## <a name="reading-messages-with-control-over-the-body-format-returned"></a>Ler mensagens com controle sobre o formato de corpo retornado

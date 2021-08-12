@@ -1,22 +1,22 @@
 ---
 title: Recurso onenoteEntitySchemaObjectModel
-description: Esse é um tipo base para entidades do OneNote.
+description: Esse é um tipo base para OneNote entidades.
 author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
 doc_type: resourcePageType
-ms.openlocfilehash: 9dd44c3360a58195f04632b849f5cafd73490676
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: 708f0b6fe3e63ddd79e94c282afaf197daf5efaa82377d35b8bd88823df22843
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50722332"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54237558"
 ---
 # <a name="onenoteentityschemaobjectmodel-resource"></a>Recurso onenoteEntitySchemaObjectModel
 
 Namespace: microsoft.graph
 
-Esse é um tipo base para entidades do OneNote.
+Esse é um tipo base para OneNote entidades.
 
 ## <a name="json-representation"></a>Representação JSON
 

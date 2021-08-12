@@ -4,12 +4,12 @@ description: Os limites de controle limitam número de chamadas simultâneas par
 author: davidmu1
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: 82abc2a316fc3a5d14902089802862165081fada
-ms.sourcegitcommit: 10d9f4c2cee192bd80984d48cabba63b47c54551
+ms.openlocfilehash: fe64a787247625409e0ec0343d7dfa0848d4f920452266aba57642e1bd3f12f2
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53578914"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54196585"
 ---
 # <a name="microsoft-graph-throttling-guidance"></a>Diretrizes de limitação do Microsoft Graph
 
@@ -522,7 +522,8 @@ Os limites a seguir se aplicam às solicitações no serviço de atribuição AP
 
 | Tipo de solicitação                 | Limitar por aplicativo por locatário     | Limitar por locatário para todos os aplicativos |
 |---------------------------|------------------------------|----------------------------|
-| Qualquer         | 5000 solicitações a cada 10 segundos   | 15.000 solicitações a cada 10 segundos |
+| Qualquer         | 500 solicitações a cada 10 segundos   | 1000 solicitações a cada 10 segundos
+|Qualquer          | 15000 solicitações a cada 3600 segundos|30000 solicitações a cada 3600 segundos|
 | GET me/Assignment  | 50 solicitações a cada 10 segundos | 150 solicitações a cada 10 segundos |  
 
 Os limites anteriores se aplicam aos seguintes recursos: [educationAssignment](/graph/api/resources/educationassignment?view=graph-rest)

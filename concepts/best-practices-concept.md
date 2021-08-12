@@ -3,12 +3,12 @@ title: Práticas recomendadas para trabalhar com o Microsoft Graph
 description: Este artigo descreve as práticas recomendadas que você pode aplicar para ajudar seus aplicativos a tirar o máximo proveito do Microsoft Graph, caso isso envolva saber mais sobre o Microsoft Graph, melhorar o desempenho do aplicativo ou tornar seu aplicativo mais confiável para os usuários finais.
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: 35102a852ce3cc6fba92c83fe9e38756beb94e54
-ms.sourcegitcommit: 596b3d5636f3f3e042d180ea8f039f00ebd6b38a
+ms.openlocfilehash: 97e07faac83e1d25dfc133fdda7484397b51ef71b1f8e385e027579fd8209c90
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/30/2021
-ms.locfileid: "53665722"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54149587"
 ---
 # <a name="best-practices-for-working-with-microsoft-graph"></a>Práticas recomendadas para trabalhar com o Microsoft Graph
 

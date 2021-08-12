@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dhanyahk
 ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: 814b7106bf738711099d6d6e8d5e821b7b638318
-ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
+ms.openlocfilehash: 37fe5dce01b14735b791ed86954afc25a6ea4bcf369227c4b99868b2ecf36b29
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50292158"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54230393"
 ---
 # <a name="useridentity-resource-type"></a>Tipo de recurso userIdentity
 
@@ -22,10 +22,10 @@ No contexto de um log de auditoria do Azure AD, isso representa as informações
 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-| displayName | String | Nome de exibição da identidade. Observe que isso pode nem sempre estar disponível ou atualizado.    |
-| id          | String | Identificador exclusivo da identidade.  |
+| displayName | Cadeia de caracteres | Nome de exibição da identidade. Observe que isso pode nem sempre estar disponível ou atualizado.    |
+| id          | Cadeia de caracteres | Identificador exclusivo da identidade.  |
 | ipAddress   | Cadeia de caracteres| Indica o endereço IP do cliente usado pelo usuário executando a atividade (somente log de auditoria).|
-| userPrincipalName | String  | O atributo userPrincipalName do usuário. |
+| userPrincipalName | Cadeia de caracteres  | O atributo userPrincipalName do usuário. |
 
 >**Observação:** Em alguns casos, o identificador exclusivo pode não estar disponível. Nesse caso, a propriedade **displayName** para a identidade será retornada, mas a propriedade **id** estará ausente do recurso.
 

@@ -1,36 +1,36 @@
 ---
-title: tipo de recurso plannerBucketTaskBoardTaskFormat
-description: O recurso **plannerBucketTaskBoardTaskFormat** representa as informações usadas para renderizar uma tarefa corretamente no modo de exibição buckets do quadro de tarefas (um modo de exibição organizado por tarefas dentro dos buckets aos quais são atribuídas). Cada tarefa terá um objeto **plannerBucketTaskBoardTaskFormat** associado a ela.
+title: Tipo de recurso plannerBucketTaskBoardTaskFormat
+description: O **recurso plannerBucketTaskBoardTaskFormat** representa as informações usadas para renderizar uma tarefa corretamente na exibição Buckets do Quadro de Tarefas (uma exibição organizada por tarefas dentro dos buckets aos que são atribuídas). Cada tarefa terá um **objeto plannerBucketTaskBoardTaskFormat** associado a ela.
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: 1bd9282a137640af0abc1fd590ac5a87c18ea94e
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 38e159858591f7e1725c455e07162f9e0f10bbd1f8fc8d8bcfe974e952c95ae6
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48037497"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54178112"
 ---
-# <a name="plannerbuckettaskboardtaskformat-resource-type"></a>tipo de recurso plannerBucketTaskBoardTaskFormat
+# <a name="plannerbuckettaskboardtaskformat-resource-type"></a>Tipo de recurso plannerBucketTaskBoardTaskFormat
 
 Namespace: microsoft.graph
 
-O recurso **plannerBucketTaskBoardTaskFormat** representa as informações usadas para renderizar uma tarefa corretamente no modo de exibição buckets do quadro de tarefas (um modo de exibição organizado por tarefas dentro dos buckets aos quais são atribuídas). Cada [tarefa](plannertask.md) terá um objeto **plannerBucketTaskBoardTaskFormat** associado a ela.
+O **recurso plannerBucketTaskBoardTaskFormat** representa as informações usadas para renderizar uma tarefa corretamente na exibição Buckets do Quadro de Tarefas (uma exibição organizada por tarefas dentro dos buckets aos que são atribuídas). Cada [tarefa](plannertask.md) terá um **objeto plannerBucketTaskBoardTaskFormat** associado a ela.
 
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
-|[Obter plannerBucketTaskBoardTaskFormat](../api/plannerbuckettaskboardtaskformat-get.md) | [plannerBucketTaskBoardTaskFormat](plannerbuckettaskboardtaskformat.md) |Leia as propriedades e os relacionamentos do objeto **plannerBucketTaskBoardTaskFormat** .|
-|[Atualização](../api/plannerbuckettaskboardtaskformat-update.md) | [plannerBucketTaskBoardTaskFormat](plannerbuckettaskboardtaskformat.md)  |Atualize o objeto **plannerBucketTaskBoardTaskFormat** . |
+|[Obter plannerBucketTaskBoardTaskFormat](../api/plannerbuckettaskboardtaskformat-get.md) | [plannerBucketTaskBoardTaskFormat](plannerbuckettaskboardtaskformat.md) |Ler propriedades e relações do **objeto plannerBucketTaskBoardTaskFormat.**|
+|[Atualizar](../api/plannerbuckettaskboardtaskformat-update.md) | [plannerBucketTaskBoardTaskFormat](plannerbuckettaskboardtaskformat.md)  |Atualize **o objeto plannerBucketTaskBoardTaskFormat.** |
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |id|String| Somente leitura. ID do recurso. Tem 28 caracteres e diferencia maiúsculas de minúsculas. [Formatar validação](planner-identifiers-disclaimer.md) é feito no serviço.|
-|orderHint|String|Dica usada para ordenar tarefas no modo de exibição de Bucket do quadro de tarefas. O formato é definido conforme descrito [aqui](planner-order-hint-format.md).|
+|orderHint|String|Dica usada para ordenar tarefas no modo de exibição Bucket do Quadro de Tarefas. O formato é definido como descrito [aqui](planner-order-hint-format.md).|
 
 ## <a name="relationships"></a>Relações
 Nenhum

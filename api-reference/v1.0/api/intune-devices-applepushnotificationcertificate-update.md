@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: fe39b333f9768837c9ddafd808d33aa67af6ecb2
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: f91640b561b53db7ab1a572e185faa2d017cd55d811fab80bfee1cf6b20f41b7
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52760395"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54250508"
 ---
 # <a name="update-applepushnotificationcertificate"></a>Atualizar applePushNotificationCertificate
 
@@ -51,12 +51,12 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [applePu
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|O identificador exclusivo do certificado.|
+|id|Cadeia de caracteres|O identificador exclusivo do certificado.|
 |appleIdentifier|Cadeia de caracteres|Id da Apple da conta usada para criar o certificado de push do MDM.|
 |topicIdentifier|Cadeia de caracteres|ID do tópico.|
 |lastModifiedDateTime|DateTimeOffset|Data e hora da última modificação de certificado de notificações por push da Apple.|
 |expirationDateTime|DateTimeOffset|Data e hora do vencimento de certificado de notificações por push da Apple.|
-|certificateSerialNumber|String|Número de série do certificado. Essa propriedade é somente leitura.|
+|certificateSerialNumber|Cadeia de caracteres|Número de série do certificado. Essa propriedade é somente leitura.|
 |certificado|Cadeia de caracteres|Ainda não documentado|
 
 

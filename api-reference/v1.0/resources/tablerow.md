@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 3eca83aeea75300ed9165ac822b15212c866f152
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 0b9d9d07a6c2382194458913217b414a30000150bf61a2e4771cb9e8a27d53b8
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48094089"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54189272"
 ---
 # <a name="tablerow-resource-type"></a>Tipo de recurso TableRow
 
@@ -26,7 +26,7 @@ Representa uma linha em uma tabela.
 |[Get TableRow](../api/tablerow-get.md) | [WorkbookTableRow](tablerow.md) |Leia as propriedades e os relacionamentos do objeto tableRow.|
 |[Update](../api/tablerow-update.md) | [WorkbookTableRow](tablerow.md)  |Atualize o objeto TableRow. |
 |[Range](../api/tablerow-range.md)|[Range](range.md)|Retorna o objeto de intervalo associado a toda a linha.|
-|[Delete](../api/tablerow-delete.md)|Nenhum|Exclui a linha da tabela.|
+|[Delete](../api/tablerow-delete.md)|None|Exclui a linha da tabela.|
 |[List](../api/tablerow-list.md) | Conjunto [WorkbookTableRow](tablerow.md) |Obtenha uma coleção de objetos tableRow. |
 |[Itemat](../api/tablerowcollection-itemat.md)|[WorkbookTableRow](tablerow.md)|Obtém uma linha com base em sua posição na coleção.|
 |[Add](../api/tablerowcollection-add.md)|[WorkbookTableRow](tablerow.md)|Adiciona uma nova linha à tabela.|

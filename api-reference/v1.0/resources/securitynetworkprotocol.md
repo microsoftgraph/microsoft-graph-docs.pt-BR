@@ -1,18 +1,18 @@
 ---
-title: tipo de enumeração securityNetworkProtocol
+title: tipo de número securityNetworkProtocol
 description: Valores possíveis para o protocolo de rede.
 localization_priority: Normal
 author: preetikr
 ms.prod: security
 doc_type: enumPageType
-ms.openlocfilehash: 7b9578977e5855f7b6d4b2fcebbcdda37c95eb7c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 657d13f25707baa7f351622700700aa16a5d277b0d5dd1019843661af3491cb9
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47983995"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54126288"
 ---
-# <a name="securitynetworkprotocol-enum-type"></a>tipo de enumeração securityNetworkProtocol
+# <a name="securitynetworkprotocol-enum-type"></a>tipo de número securityNetworkProtocol
 
 Namespace: microsoft.graph
 
@@ -23,26 +23,26 @@ Valores possíveis para o protocolo de rede.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |desconhecido|-1|Protocolo desconhecido.|
-|IP|,0|Protocolo de Internet.|
-|ICMP|1 | Protocolo de mensagens de controle da Internet.|
-|IGMP|2 | Protocolo de gerenciamento de grupos da Internet.|
-|ggp|3 | Gateway para protocolo gateway.|
-|IPv4|4 | Protocolo IP versão 4.|
-|tcp|6 | Protocolo de controle de transmissão.|
-|confiável|12 | Protocolo de pacote universal do PARC.|
-|via|17 | Protocolo de datagrama de usuário.|
-|IDP|22| Protocolo de datagrama da Internet.|
-|IPv6|41| Protocolo IP versão 6 (IPv6).|
-|ipv6RoutingHeader|43| cabeçalho de roteamento IPv6.|
-|ipv6FragmentHeader|44| cabeçalho de fragmento IPv6.|
-|ipSecEncapsulatingSecurityPayload|50| cabeçalho de carga de segurança de encapsulamento IPv6.|
-|ipSecAuthenticationHeader|51| cabeçalho de autenticação IPv6.|
-|icmpV6|58| Protocolo de mensagens de controle da Internet para IPv6.|
-|ipv6NoNextHeader|59| IPv6 sem cabeçalho seguinte.|
-|ipv6DestinationOptions|60| cabeçalho de opções de destino IPv6.|
-|término|77| Protocolo de disco de rede (não oficial).|
-|-|255| Protocolo de pacote IP bruto.|
-|roteador|1000| Protocolo Internet Packet Exchange.|
-|SPX|1256| Protocolo de troca de pacotes sequenciado.|
-|spxII|1257| Protocolo de troca de pacotes de versão 2.|
+|ip|0|Protocolo Internet.|
+|icmp|1| Protocolo de Mensagem de Controle da Internet.|
+|igmp|2| Protocolo de Gerenciamento de Grupo da Internet.|
+|ggp|3| Protocolo gateway para gateway.|
+|ipv4|4 | Protocolo internet versão 4.|
+|tcp|6 | Protocolo de Controle de Transmissão.|
+|cachorro-do-cachorro|12 | Protocolo de Pacote Universal do PARC.|
+|udp|17 | Protocolo datagram do usuário.|
+|idp|22| Protocolo Datagram da Internet.|
+|ipv6|41| Protocolo internet versão 6 (ipv6).|
+|ipv6RoutingHeader|43| Header de roteamento ipv6.|
+|ipv6FragmentHeader|44| Header de fragmento ipv6.|
+|ipSecEncapsulatingSecurityPayload|50| ipv6 Encapsulando o header de Carga de Segurança.|
+|ipSecAuthenticationHeader|51| Header de autenticação ipv6.|
+|icmpV6|58| Protocolo de Mensagem de Controle da Internet para ipv6.|
+|ipv6NoNextHeader|59| ipv6 Nenhum próximo header.|
+|ipv6DestinationOptions|60| Header de Opções de Destino ipv6.|
+|nd|77| Protocolo De Disco Líquido (não oficial).|
+|raw|255| Protocolo de pacote IP bruto.|
+|ipx|1000| Protocolo Exchange de Pacotes da Internet.|
+|spx|1256| Protocolo Exchange pacote sequenciado.|
+|spxII|1257| Pacote sequenciado Exchange versão 2 protocolo.|
 

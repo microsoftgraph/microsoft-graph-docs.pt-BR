@@ -1,18 +1,18 @@
 ---
-title: Tipo de recurso workbookTableColumn
+title: tipo de recurso workbookTableColumn
 description: Representa uma coluna em uma tabela.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 85a8c4b53eb39ae440946872718447f272ef841b
-ms.sourcegitcommit: 9a03b719d1316729dd022bf4d268894e91515475
+ms.openlocfilehash: 4bf6888443ccef65cc62dc728364ab7a5228fd4c22b6e8e977702c320503264d
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "50033908"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54221121"
 ---
-# <a name="workbooktablecolumn-resource-type"></a>Tipo de recurso workbookTableColumn
+# <a name="workbooktablecolumn-resource-type"></a>tipo de recurso workbookTableColumn
 
 Namespace: microsoft.graph
 
@@ -29,7 +29,7 @@ Representa uma coluna em uma tabela.
 |[Headerrowrange](../api/tablecolumn-headerrowrange.md)|[Range](range.md)|Obtém o objeto de intervalo associado à linha de cabeçalho da coluna.|
 |[Range](../api/tablecolumn-range.md)|[Range](range.md)|Obtém o objeto de intervalo associado a toda a coluna.|
 |[Totalrowrange](../api/tablecolumn-totalrowrange.md)|[Range](range.md)|Obtém o objeto de intervalo associado à linha de totais da coluna.|
-|[Delete](../api/tablecolumn-delete.md)|Nenhum(a)|Exclui a coluna da tabela.|
+|[Delete](../api/tablecolumn-delete.md)|None|Exclui a coluna da tabela.|
 |[List](../api/tablecolumn-list.md) | Conjunto [WorkbookTableColumn](workbooktablecolumn.md) |Obtenha uma coleção de objetos tableColumn. |
 |[Itemat](../api/tablecolumncollection-itemat.md)|[WorkbookTableColumn](workbooktablecolumn.md)|Obtém uma coluna com base em sua posição na coleção.|
 |[Add](../api/tablecolumncollection-add.md)|[WorkbookTableColumn](workbooktablecolumn.md)|Adiciona uma nova coluna à tabela.|
@@ -37,7 +37,7 @@ Representa uma coluna em uma tabela.
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|id|cadeia de caracteres|Retorna uma chave exclusiva que identifica a coluna na tabela. Essa propriedade deve ser interpretada como um valor de cadeia de caracteres opacas e não deve ser analisada para qualquer outro tipo. Somente leitura.|
+|id|string|Retorna uma chave exclusiva que identifica a coluna na tabela. Essa propriedade deve ser interpretada como um valor de cadeia de caracteres opacas e não deve ser analisada para qualquer outro tipo. Somente leitura.|
 |index|int|Retorna o número de índice da coluna na coleção de colunas da tabela. Indexado com zero. Somente leitura.|
 |nome|string|Retorna o nome da coluna da tabela.|
 |values|Json|Representa os valores brutos do intervalo especificado. Os dados retornados podem ser dos tipos: cadeia de caracteres, número ou booliano. Células que contêm um erro retornarão a cadeia de caracteres de erro.|

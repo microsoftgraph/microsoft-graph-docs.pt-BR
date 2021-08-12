@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 82f1de5e835ceba2a15559411a07638dee2602bd
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 792aa41c395615f958db59356f2c8f599a224a159257c54a0c3e9b79dfd0963c
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52742906"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54163793"
 ---
 # <a name="deviceconfiguration-resource-type"></a>Tipo de recurso deviceConfiguration
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 Configuração do dispositivo.
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
 |[Listar deviceConfigurations](../api/intune-deviceconfig-deviceconfiguration-list.md)|Conjunto [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|Listar propriedades e relações de objetos de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
@@ -34,7 +34,7 @@ Configuração do dispositivo.
 |id|Cadeia de caracteres|Chave da entidade.|
 |lastModifiedDateTime|DateTimeOffset|Última modificação de DateTime do objeto.|
 |createdDateTime|DateTimeOffset|DateTime em que o objeto foi criado.|
-|descrição|Cadeia de caracteres|O administrador forneceu a descrição da Configuração do dispositivo.|
+|description|Cadeia de caracteres|O administrador forneceu a descrição da Configuração do dispositivo.|
 |displayName|Cadeia de caracteres|O administrador forneceu o nome da Configuração do dispositivo.|
 |versão|Int32|Versão da configuração do dispositivo.|
 

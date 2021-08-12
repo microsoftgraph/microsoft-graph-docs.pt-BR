@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: bad89764571b6ab3a2770432a950428fec0d9407
-ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
+ms.openlocfilehash: 0d5c8a60b1080b1e605dde754d8007cf15b36b129d276a6b2d9f87421ba9ef25
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50761301"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54243306"
 ---
 # <a name="resourceaccess-resource-type"></a>tipo de recurso resourceAccess
 
@@ -22,7 +22,7 @@ Especifica um escopo de permissão OAuth 2.0 ou uma função de aplicativo que u
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |id|Guid|O identificador exclusivo de uma das [instâncias oauth2PermissionScopes](permissionscope.md) ou [appRole](approle.md) que o aplicativo de recurso expõe.|
-|tipo|String|Especifica se a **propriedade id** faz referência a [um oauth2PermissionScopes](permissionscope.md) ou um [appRole](approle.md). Os valores possíveis são: `Scope` ou `Role`.|
+|tipo|Cadeia de caracteres|Especifica se a **propriedade id** faz referência a [um oauth2PermissionScopes](permissionscope.md) ou um [appRole](approle.md). Os valores possíveis são: `Scope` ou `Role`.|
 
 ## <a name="json-representation"></a>Representação JSON
 

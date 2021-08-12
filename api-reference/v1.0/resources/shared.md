@@ -6,12 +6,12 @@ localization_priority: Normal
 description: O recurso Shared indica que um DriveItem foi compartilhado com outras pessoas.
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 13debbe04921a0eb0fdedd9f7e893fb38253e4ce
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: 7dc4eb845b1458da996a0ccbd23724b502cd899c205dca4515183b74162c6f5b
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50238880"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54251754"
 ---
 # <a name="shared-resource-type"></a>Tipo de recurso Shared
 

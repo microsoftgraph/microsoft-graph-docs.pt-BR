@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: a7be3183c2452e8a021d459cdecb85ea69d48b2d
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 46bc825a0a9056a3aa86b58bb32411f5d88002ea898632bdee1b2c701804e21f
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52756754"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54178203"
 ---
 # <a name="installintent-enum-type"></a>Tipo de número installIntent
 

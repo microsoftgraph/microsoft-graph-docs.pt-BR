@@ -5,12 +5,12 @@ author: nilakhan
 localization_priority: Normal
 ms.prod: cloud-printing
 doc_type: resourcePageType
-ms.openlocfilehash: c0871f936b0935e6a599e79d6fb1a75f7e28f7ed
-ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
+ms.openlocfilehash: ca4c5081521c2cbfd6e5ac4185548507f98e577ed2a590ded43d5788dde6cd9f
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50517013"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54218419"
 ---
 # <a name="printtasktrigger-resource-type"></a>Tipo de recurso printTaskTrigger
 
@@ -26,12 +26,12 @@ Para obter detalhes sobre como usar esse recurso para adicionar suporte à impre
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
 | [List](../api/printer-list-tasktriggers.md) | [Coleção printTaskTrigger](printtasktrigger.md) | Obter uma lista de printTaskTriggers associados a uma impressora [específica.](printer.md) |
-| [Get](../api/printtasktrigger-get.md) | [printTaskTrigger](printtasktrigger.md) | Obter o printTaskTrigger associado a um [printTask específico.](printtask.md) |
+| [Obter](../api/printtasktrigger-get.md) | [printTaskTrigger](printtasktrigger.md) | Obter o printTaskTrigger associado a um [printTask específico.](printtask.md) |
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|O identificador printTaskTrigger. Somente leitura.|
+|id|Cadeia de caracteres|O identificador printTaskTrigger. Apenas leitura.|
 |event|printEvent|O evento Impressão Universal que fará com que um [novo printTask](printtask.md) seja acionado. Os valores válidos são descritos na tabela a seguir.|
 
 ### <a name="printevent-values"></a>valores printEvent
@@ -39,7 +39,7 @@ Para obter detalhes sobre como usar esse recurso para adicionar suporte à impre
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |jobStarted|0|Representa um evento que ocorre quando um novo trabalho de impressão é iniciado.|
-|unknownFutureValue|1 |Valor de sentinela de enumeração evolvável. Não usar.|
+|unknownFutureValue|1|Valor de sentinela de enumeração evolvável. Não usar.|
 
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|

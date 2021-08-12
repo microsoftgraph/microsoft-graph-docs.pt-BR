@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: a0b4e045e405ec0b433d4268d4221e648402332f
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 02d5d67f6ecfdecc3e52c117ecc853d9c98a9158167c2537062500fcd25f1d50
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52752102"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54180716"
 ---
 # <a name="ratinggermanytelevisiontype-enum-type"></a>tipo de número ratingGermanyTelevisionType
 

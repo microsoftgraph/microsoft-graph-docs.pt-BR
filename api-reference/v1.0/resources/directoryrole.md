@@ -5,12 +5,12 @@ localization_priority: Priority
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 4ed98c9fef582d2299fb9ed63f2474b0a3903611
-ms.sourcegitcommit: d0d2d17a31cbcb01b1ae18bd6a18c39d7077069a
+ms.openlocfilehash: b54b743addeae4b8ff171da68079f487279234ac5d8d65b47271bca16b872840
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53118676"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54146983"
 ---
 # <a name="directoryrole-resource-type"></a>tipo de recurso directoryRole
 
@@ -47,7 +47,7 @@ Esse recurso permite:
 | Relação | Tipo |Descrição|
 |:---------------|:--------|:----------|
 |membros|Coleção [directoryObject](directoryobject.md)|Usuários que são membros desta função de diretório. Métodos HTTP: GET, POST, DELETE. Somente leitura. Anulável.|
-|scopedMembers|Coleção [scopedRoleMembership](scopedrolemembership.md)| Membros desta função de diretório que têm como escopo [unidades administrativas](administrativeunit.md). Somente leitura. Anulável.|
+|scopedMembers|Coleção [scopedRoleMembership](scopedrolemembership.md)| Membros dessa função de diretório que têm como escopo [unidades administrativas](administrativeunit.md). Somente leitura. Anulável.|
 
 ## <a name="json-representation"></a>Representação JSON
 

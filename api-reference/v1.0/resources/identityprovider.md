@@ -5,12 +5,12 @@ localization_priority: Priority
 author: namkedia
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 769310747aa83f30597d725757aadb3f8262270e
-ms.sourcegitcommit: a598c09b73e4e43eea5f4aaefea7ffe062e15c39
+ms.openlocfilehash: 87b007f65f055b94401fb4b4eb1ced4ed79104b534d3e752c2b3d7eda7ca8ac2
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/22/2021
-ms.locfileid: "53534485"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54152717"
 ---
 # <a name="identityprovider-resource-type-deprecated"></a>Tipo de recurso do identityProvider (preterido)
 Namespace: microsoft.graph
@@ -40,7 +40,7 @@ Configurar um provedor de identidade em seu locatário do Azure AD permite cená
 
 |Propriedade|Tipo|Descrição|
 |:---------------|:--------|:--------|
-|clientId|Cadeia de caracteres|O ID do cliente para o aplicativo. Esta é a ID do cliente obtida ao registrar o aplicativo com o provedor de identidade. Obrigatório. Não anulável.|
+|clientId|Cadeia de caracteres|A ID do cliente do aplicativo. Essa é a ID do cliente obtida ao registrar o aplicativo no provedor de identidade. Necessário. Não anulável.|
 |clientSecret|Cadeia de caracteres|O segredo do cliente para o aplicativo. Este é o segredo do cliente obtido ao registrar o aplicativo com o provedor de identidade. Isso é somente para gravar. Uma operação de leitura retornará `****`.  Obrigatório. Não anulável.|
 |id|Cadeia de caracteres|O ID do provedor de identidade.|
 |nome|Cadeia de caracteres|O nome de exibição do provedor de identidade. Não anulável.|

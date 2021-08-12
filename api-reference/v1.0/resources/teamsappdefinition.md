@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 8a43083e1f7fb717e2d54caef4017aeae97d9392
-ms.sourcegitcommit: cde4a3386b08a67cb476df6d46b51885c643d94f
+ms.openlocfilehash: 9ca384f507fec1bf813fea20ffb3b0034a5e43de0d92604c81cad84b514f37b8
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "50625930"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54218398"
 ---
 # <a name="teamsappdefinition-resource-type"></a>Tipo de recurso teamsAppDefinition
 
@@ -22,19 +22,19 @@ Representa os detalhes de uma versão de um [teamsApp](teamsapp.md).
 
 | Propriedade            | Tipo     | Descrição |
 |:------------------- |:-------- |:----------- |
-| id                  | cadeia de caracteres   | Uma ID exclusiva (não a ID do aplicativo do Teams). |
-| teamsAppId          | cadeia de caracteres   | A ID do manifesto do aplicativo teams. |
-| publishingState| cadeia de caracteres|O status publicado de uma versão específica de um aplicativo do Teams. Os valores possíveis são:</br>`submitted` — A versão específica do aplicativo teams foi enviada e está sob revisão. </br>`published`  — A solicitação para publicar a versão específica do aplicativo teams foi aprovada pelo administrador e o aplicativo é publicado. </br> `rejected` — A solicitação para publicar a versão específica do aplicativo teams foi rejeitada pelo administrador. |
-| displayName         | cadeia de caracteres   | O nome do aplicativo fornecido pelo desenvolvedor do aplicativo. |
-| versão             | cadeia de caracteres   | O número da versão do aplicativo. |
-| shortDescription    | cadeia de caracteres   | Descrição curta do aplicativo. |
+| id                  | string   | Uma ID exclusiva (não Teams ID do aplicativo). |
+| teamsAppId          | string   | A ID do manifesto Teams aplicativo. |
+| publishingState| string|O status publicado de uma versão específica de um Teams app. Os valores possíveis são:</br>`submitted`— A versão específica do aplicativo Teams foi enviada e está sob revisão. </br>`published`— A solicitação para publicar a versão específica do aplicativo Teams foi aprovada pelo administrador e o aplicativo é publicado. </br> `rejected`— A solicitação para publicar a versão específica do aplicativo Teams foi rejeitada pelo administrador. |
+| displayName         | string   | O nome do aplicativo fornecido pelo desenvolvedor do aplicativo. |
+| versão             | string   | O número da versão do aplicativo. |
+| shortDescription    | string   | Descrição curta do aplicativo. |
 | description         | string   | Descrição detalhada do aplicativo. |
 
 ## <a name="relationships"></a>Relações
 
 | Relação | Tipo   | Descrição |
 |:---------------|:--------|:----------|
-|bot|[teamworkBot](teamworkbot.md) | Os detalhes do bot especificados no manifesto do aplicativo teams. |
+|bot|[teamworkBot](teamworkbot.md) | Os detalhes do bot especificados no manifesto Teams aplicativo. |
 
 ## <a name="json-representation"></a>Representação JSON
 

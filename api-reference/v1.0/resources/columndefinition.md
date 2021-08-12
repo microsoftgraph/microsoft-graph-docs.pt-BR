@@ -6,12 +6,12 @@ localization_priority: Normal
 description: Aqui está uma representação JSON de um recurso ColumnDefinition.
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 83f278123a8153629593c54604ce1285a48439a7
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: 4beefa8523898b4770de217a895426e9cc1f5cf91edbc6835b677d450ffc4943
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50239237"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54126666"
 ---
 # <a name="columndefinition-resource"></a>Recurso ColumnDefinition
 
@@ -84,7 +84,7 @@ Essas propriedades são mutuamente exclusivas: uma coluna só pode ter uma delas
 | **currency**      | [currencyColumn][]      | Esta coluna armazena valores monetários.
 | **dateTime**      | [dateTimeColumn][]      | Esta coluna armazena valores de datetime.
 | **defaultValue**  | [defaultColumnValue][]  | O valor padrão dessa coluna.
-| **geolocalização**   | [geolocationColumn][]   | Essa coluna armazena uma localização geográfica.
+| **geolocalização**   | [geolocationColumn][]   | Esta coluna armazena uma localização geográfica.
 | **lookup**        | [lookupColumn][]        | Os dados dessa coluna são procurados por outra fonte no site.
 | **number**        | [numberColumn][]        | Esta coluna armazena valores numéricos.
 | **personOrGroup** | [personOrGroupColumn][] | Esta coluna armazena valores de Pessoa ou Grupo.

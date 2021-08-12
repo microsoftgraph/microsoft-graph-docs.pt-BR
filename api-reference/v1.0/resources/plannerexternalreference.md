@@ -5,12 +5,12 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: 536e7b6a933ffdad610bf6cce561b2546d60e5d2
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: cb856a9d147874428ab7e4d3e4169eba8bf1c028a80df4d0b6a459dc8bd1f430
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50722311"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54251868"
 ---
 # <a name="plannerexternalreference-resource-type"></a>Tipo de recurso plannerExternalReference
 
@@ -27,7 +27,7 @@ O **recurso plannerExternalReference** representa os metadados de uma referênci
 |lastModifiedBy|[identitySet](identityset.md)|Somente leitura. ID do usuário pela qual foi modificada pela última vez.|
 |lastModifiedDateTime|DateTimeOffset|Somente leitura. Data e hora em que isso foi modificado pela última vez. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`|
 |previewPriority|Cadeia de caracteres|Usado para definir a ordem de prioridade relativa na qual a referência será mostrada como uma visualização na tarefa.|
-|tipo|Cadeia de caracteres|Usado para descrever o tipo da referência. Os tipos `PowerPoint` incluem: `Word` , , , `Excel` `Other` .|
+|tipo|String|Usado para descrever o tipo da referência. Os tipos `PowerPoint` incluem: `Word` , , , `Excel` `Other` .|
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.

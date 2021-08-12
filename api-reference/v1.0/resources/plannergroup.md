@@ -1,38 +1,38 @@
 ---
-title: tipo de recurso do The Planner
-description: O recurso **Planner** fornece acesso a recursos do Planner para um grupo. Ele não contém propriedades utilizáveis.
+title: Tipo de recurso plannerGroup
+description: O **recurso plannerGroup** fornece acesso aos recursos do Planner para um grupo. Ele não contém propriedades usáveis.
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: 1c4156adb0466dc8261abb4539559e094a2dbfb6
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: be82fb6988c88f40bc975af28240e9a99f6f9d5c13ec7069af93c3f34b92e04c
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48037476"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54205224"
 ---
-# <a name="plannergroup-resource-type"></a>tipo de recurso do The Planner
+# <a name="plannergroup-resource-type"></a>Tipo de recurso plannerGroup
 
 Namespace: microsoft.graph
 
-O recurso **Planner** fornece acesso a recursos do Planner para um [grupo](group.md). Ele não contém propriedades utilizáveis.
+O **recurso plannerGroup** fornece acesso aos recursos do Planner para um [grupo](group.md). Ele não contém propriedades usáveis.
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
-|[Listar planos](../api/plannergroup-list-plans.md) |coleção [plannerPlan](plannerplan.md)| Obtenha uma coleção de objetos **plannerPlan** .|
+|[Listar planos](../api/plannergroup-list-plans.md) |coleção [plannerPlan](plannerplan.md)| Obter uma **coleção de objetos plannerPlan.**|
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|id|String| Somente leitura. Identificador do **complannerr**|
+|id|String| Somente leitura. Identificador do **plannerGroup**|
 
 ## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|Planeje|coleção [plannerPlan](plannerplan.md)| Somente leitura. Anulável. Retorna o [plannerPlans](plannerplan.md) de Propriedade do grupo.|
+|plans|coleção [plannerPlan](plannerplan.md)| Somente leitura. Anulável. Retorna os [plannerPlans pertencentes](plannerplan.md) ao grupo.|
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.

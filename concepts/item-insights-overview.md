@@ -5,12 +5,12 @@ author: simonhult
 localization_priority: Priority
 ms.prod: insights
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 03620c9958cf9c2af3c61ff511e8beaa35a540f8
-ms.sourcegitcommit: d586ddb253d27f9ccb621bd128f6a6b4b1933918
+ms.openlocfilehash: 0733e572035d07a0960d00dc8d80921c8674d382a0ff6a18fab5cb66507d6ca9
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53108953"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54230302"
 ---
 # <a name="overview-of-item-insights"></a>Visão geral dos insights do item
 As percepções do item são recomendações centradas no usuário para você e aqueles com quem você trabalha, com base em seu trabalho colaborativo no Microsoft 365.
@@ -46,7 +46,7 @@ A Microsoft não usa suas atividades de trabalho em um espaço privado para calc
 Por fim, seus colegas podem ver recomendações baseadas apenas no conteúdo ao qual eles já têm acesso. Se Alice colaborar com Robert na escrita de um documento, Alice e Robert podem obter recomendações com base neste trabalho colaborativo. Kate, que não tem acesso ao documento, não vê recomendações associadas a este arquivo ou à colaboração entre Alice e Robert. Esta regra se aplica a todos os usuários em uma organização. Em nosso exemplo, isso inclui o gerente e os administradores de Kate, que não veriam recomendações com base no conteúdo ao qual não têm acesso. 
 
 ## <a name="disabling-item-insights"></a>Desativando insights do item
-Ao permitir que a Microsoft compute percepções de itens a partir de sinais em seus espaços de trabalho compartilhados, você transforma atividades e conteúdo em recomendações utilizáveis ​​e torna esse conhecimento facilmente detectável e utilizável para você e seus colegas em sua organização. Ao fazer isso, você está ajudando a aumentar o produtividade de toda a sua organização.  
+Ao permitir que a Microsoft calcule percepções de itens a partir de sinais em seus espaços de trabalho compartilhados, você transforma atividades e conteúdo em recomendações utilizáveis e torna esse conhecimento facilmente detectável e utilizável para você e seus colegas em sua organização. Ao fazer isso, você está ajudando a aumentar a produtividade de toda a sua organização.  
 
 Mesmo que a Microsoft nunca divulgue seus documentos privados e use apenas percepções de conteúdo aos quais os usuários já têm acesso, pode haver casos em que o risco de descobrir o conteúdo por usuários indesejáveis ​​supera os possíveis benefícios. Nesses casos, você deve considerar desativar os insights do item. Lembre-se de que desabilitar insights de itens não é uma medida de segurança e você deve sempre começar revisando seus padrões de trabalho e certifique-se de que seu acesso de segurança está configurado conforme pretendido. Se quiser tornar seu conteúdo e atividades menos detectáveis, você pode desabilitar os insights do item usando o botão de alternância [disponível em Minha conta, em Configurações e Privacidade](https://myaccount.microsoft.com/settingsandprivacy/privacy).  
 ![chave de insights do item em Minha conta](images/item-insights-toggle-in-MyAccount.PNG)

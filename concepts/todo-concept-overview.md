@@ -4,12 +4,12 @@ description: O To Do Oferece uma maneira simples de gerenciar suas tarefas e pla
 author: avijityadav
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: 34dc63ab14bc6cc1a2c118e6a77f9f6cc597bccc
-ms.sourcegitcommit: d9457ac1b8c2e8ac4b9604dd9e116fd547d2bfbb
+ms.openlocfilehash: 0d93ba100fb48d2c6e833582a7f8238a5e51800e6b92d56ed4707e2aad2d8499
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "48796742"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54245391"
 ---
 # <a name="to-do-api-overview"></a>Visão geral da API do Tarefa Pendente
 O Microsoft To-Do fornece uma maneira simples para as pessoas gerenciarem suas tarefas e planejarem seu dia. As tarefas são organizadas em listas de tarefas, que podem ser acessadas através de clientes do To Do, Outlook e Teams a partir de qualquer dispositivo.
@@ -27,7 +27,7 @@ O Microsoft To Do ajuda você a criar uma lista para qualquer coisa, desde taref
 To Do é o único destino para tarefas pessoais no Microsoft 365. Portanto, está profundamente integrado aos hubs, da Microsoft 365, Outlook e Teams. As tarefas criadas nesses produtos são sincronizadas com o To Do, para que você possa acessá-las e gerenciá-las através de dispositivos. A integração do To Do pode ajudá-lo a alcançar milhões de usuários que usam o To Do para reunir tarefas do Outlook e do Teams em uma exibição integrada.  
 
 ### <a name="support-task-completion-using-linked-resources"></a>Dar suporte a conclusão de tarefas usando recursos vinculados
-O Microsoft To Do fornece uma nova entidade chamada _linkedResource_ , que você pode usar para criar tarefas que podem ser vinculadas de volta às suas fontes originais. Você pode usar isto para integrar perfeitamente ao To Do em seu fluxo de trabalho, criando tarefas que são vinculadas ao seu produto ou serviço. 
+O Microsoft To Do fornece uma nova entidade chamada _linkedResource_, que você pode usar para criar tarefas que podem ser vinculadas de volta às suas fontes originais. Você pode usar isto para integrar perfeitamente ao To Do em seu fluxo de trabalho, criando tarefas que são vinculadas ao seu produto ou serviço. 
 
 ## <a name="common-to-do-api-operations"></a>Operações comuns da API To Do.
 

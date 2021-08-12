@@ -5,18 +5,18 @@ localization_priority: Normal
 author: videor
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 130644ebf0d72b4870dc78e64455c2dfab446ae5
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: eabfdcc57439e2d254acc9ae5eeec2f613197f669f2ff68cd2ecf8bbc6bc98cb
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50134964"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54252155"
 ---
 # <a name="applicationenforcedrestrictionssessioncontrol-resource-type"></a>Tipo de recurso applicationEnforcedRestrictionsSessionControl
 
 Namespace: microsoft.graph
 
-Controle de sessão para impor restrições de aplicativo. Herda do [Controle de Sessão de Acesso Condicional.](conditionalaccesssessioncontrol.md)
+Controle de sessão para impor restrições de aplicativo. Herda do [Controle de Sessão de Acesso Condicional](conditionalaccesssessioncontrol.md).
 
 ## <a name="properties"></a>Propriedades
 

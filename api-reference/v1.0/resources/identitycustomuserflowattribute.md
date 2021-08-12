@@ -1,22 +1,22 @@
 ---
 title: Tipo de recurso identityCustomUserFlowAttribute
-description: Representa um atributo de fluxo de usuário personalizado em locatários do Azure Active Directory que podem ser usados em um fluxo de usuário de autoatenduro.
+description: Representa um atributo de fluxo de usuário personalizado Azure Active Directory locatários que podem ser usados em um fluxo de usuário de assinatura de autoatendado.
 author: jkdouglas
 localization_priority: Normal
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 2bb354ab8028a6d3ca96418c4b0566ea6fe195ef
-ms.sourcegitcommit: d033e7de12bccf92efcbe40c7b671e419a3e5b94
+ms.openlocfilehash: 5fdad3bf3fabb75cfa882e2c9b78dd2f008a596e70630b5eb34b3f3aa215baff
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2021
-ms.locfileid: "51882861"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54126575"
 ---
 # <a name="identitycustomuserflowattribute-resource-type"></a>Tipo de recurso identityCustomUserFlowAttribute
 
 Namespace: microsoft.graph
 
-Representa um atributo de fluxo de usuário personalizado em locatários do Azure Active Directory que podem ser usados em um fluxo de usuário de autoatenduro. Esses atributos não podem ser modificados e são somente leitura.
+Representa um atributo de fluxo de usuário personalizado Azure Active Directory locatários que podem ser usados em um fluxo de usuário de assinatura de autoatendado. Esses atributos não podem ser modificados e são somente leitura.
 
 Herda de [identityUserFlowAttribute](../resources/identityuserflowattribute.md).
 

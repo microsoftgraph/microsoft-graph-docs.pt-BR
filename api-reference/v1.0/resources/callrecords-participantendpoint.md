@@ -1,30 +1,30 @@
 ---
-title: tipo de recurso participantEndpoint
+title: Tipo de recurso participantEndpoint
 description: O tipo participantEndpoint
 localization_priority: Normal
 author: williamlooney
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 0002659ac32eaa1c76ad6dfecefd2a1f59c070e9
-ms.sourcegitcommit: af4b2fc18449c33979cf6d75bd680f40602ba708
+ms.openlocfilehash: d83690c1209d845f00dc902170eb547c567d6ec0cc654d6c9e9c3778da0fc275
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "48601570"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54223729"
 ---
-# <a name="participantendpoint-resource-type"></a>tipo de recurso participantEndpoint
+# <a name="participantendpoint-resource-type"></a>Tipo de recurso participantEndpoint
 
 Namespace: microsoft.graph.callRecords
 
-Representa um ponto de extremidade de participante em uma chamada. O ponto de extremidade representa uma entidade de usuário ou semelhante a um usuário. Herda de tipo de [ponto de extremidade](callrecords-endpoint.md) .
+Representa um ponto de extremidade do participante em uma chamada. O ponto de extremidade representa um usuário ou entidade do tipo usuário. Herda do [tipo de ponto de](callrecords-endpoint.md) extremidade.
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|userAgent|[Microsoft. Graph. callRecords. UserAgent](callrecords-useragent.md)|Agente de usuário relatado por este ponto de extremidade.|
-|comentários|[Microsoft. Graph. callRecords. userfeedback](callrecords-userfeedback.md)|Os comentários fornecidos pelo usuário deste ponto de extremidade sobre a qualidade da sessão.|
-|ladrões|[identitySet](identityset.md)|Identidade associada ao ponto de extremidade.|
+|userAgent|[microsoft.graph.callRecords.userAgent](callrecords-useragent.md)|Agente de usuário relatado por esse ponto de extremidade.|
+|comentários|[microsoft.graph.callRecords.userFeedback](callrecords-userfeedback.md)|Os comentários fornecidos pelo usuário deste ponto de extremidade sobre a qualidade da sessão.|
+|identity|[identitySet](identityset.md)|Identidade associada ao ponto de extremidade.|
 
 ## <a name="json-representation"></a>Representação JSON
 

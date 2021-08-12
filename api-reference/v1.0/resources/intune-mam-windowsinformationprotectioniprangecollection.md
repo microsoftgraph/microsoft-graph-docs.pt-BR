@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 722e96e69027cccb666bc789fc7516b914b975bb
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 1c317b58d0563c34c933dbc5c1472cb7878a8548e5480d9823b0696d39ca67d4
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52752305"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54237637"
 ---
 # <a name="windowsinformationprotectioniprangecollection-resource-type"></a>Tipo de recurso windowsInformationProtectionIPRangeCollection
 
@@ -27,7 +27,7 @@ Coleção de intervalos de IP da Proteção de Informações do Windows
 |ranges|Coleção [ipRange](../resources/intune-mam-iprange.md)|Coleção de intervalos de IP|
 
 ## <a name="relationships"></a>Relações
-Nenhuma
+Nenhum
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.

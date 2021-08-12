@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: fa30fcb276661e3a673c1942c4d35cc71ca41e6b
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: d381f8f9d25da07ce5ab52d05a90add1519e3e2fa695caf8a94b50b9bb1bc7bb
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52759443"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54184813"
 ---
 # <a name="auditresource-resource-type"></a>Tipo de recurso auditResource
 
@@ -23,9 +23,9 @@ Uma classe que contém as propriedades para o Recurso de auditoria.
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|displayName|String|Nome de exibição.|
+|displayName|Cadeia de caracteres|Nome de exibição.|
 |ModifiedProperties|Conjunto [auditProperty](../resources/intune-auditing-auditproperty.md)|Lista de propriedades modificadas.|
-|tipo|String|Tipo de recurso de auditoria.|
+|tipo|Cadeia de caracteres|Tipo de recurso de auditoria.|
 |resourceId|Cadeia de caracteres|ID do recurso de auditoria.|
 
 ## <a name="relationships"></a>Relações

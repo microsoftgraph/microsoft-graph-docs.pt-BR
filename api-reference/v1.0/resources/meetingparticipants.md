@@ -1,28 +1,28 @@
 ---
-title: tipo de recurso meetingParticipants
-description: Participantes de uma reunião.
+title: Tipo de recurso meetingParticipants
+description: Participantes em uma reunião.
 author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: ba13a5993a4969162a1b8753e6391afa01802dff
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: c060a26e35d6f4ff6f8031c192947869d90547888f0ddfe90153da8cebb145c2
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47984254"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54174931"
 ---
-# <a name="meetingparticipants-resource-type"></a>tipo de recurso meetingParticipants
+# <a name="meetingparticipants-resource-type"></a>Tipo de recurso meetingParticipants
 
 Namespace: microsoft.graph
 
-Participantes de uma reunião.
+Participantes em uma reunião.
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade       | Tipo    | Descrição|
 |:---------------|:--------|:----------|
-| attendees | coleção [meetingParticipantInfo](meetingparticipantinfo.md) |  |
+| attendees | [coleção meetingParticipantInfo](meetingparticipantinfo.md) |  |
 | organizer | [meetingParticipantInfo](meetingparticipantinfo.md) |  |
 
 ## <a name="json-representation"></a>Representação JSON

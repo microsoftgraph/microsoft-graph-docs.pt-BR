@@ -5,17 +5,17 @@ author: cloudhandler
 localization_priority: Normal
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: d03d2199d11b2b9f285d8a425e01c70a6a49da35
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 8abd44ce7da658d58b648ec622a06b7e33c98927f89e35971016e0bd305fcbda
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50440084"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54130538"
 ---
 # <a name="riskyuser-dismiss"></a>riskyUser: dismiss
 Namespace: microsoft.graph
 
->**Observação:** Usar a API riskyUsers requer uma licença do Azure AD Premium P2.
+>**Observação:** Usar a API riskyUsers requer uma Azure AD Premium P2 de usuário.
 
 Descartar o risco de um ou mais [objetos riskyUser.](../resources/riskyuser.md) Essa ação define o nível de risco do usuário direcionado como nenhum.
 
@@ -51,7 +51,7 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta ação.
 
 |Parâmetro|Tipo|Descrição|
 |:---|:---|:---|
-|userIds|Conjunto de cadeias de caracteres|Especifique os userIds a descartar no corpo da solicitação.|
+|userIds|Coleção de cadeias de caracteres|Especifique os userIds a descartar no corpo da solicitação.|
 
 
 

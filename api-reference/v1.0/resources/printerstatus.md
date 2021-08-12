@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: cloud-printing
 doc_type: resourcePageType
-ms.openlocfilehash: b1fec030433734d29e5557fe238eb41a6ca545c1
-ms.sourcegitcommit: d586ddb253d27f9ccb621bd128f6a6b4b1933918
+ms.openlocfilehash: ec8d240b79bc31df3bb4343a8bc68e7096cd344df559abb3e64638f1789ab4f1
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53107722"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54229021"
 ---
 # <a name="printerstatus-resource-type"></a>Tipo de recurso printerStatus
 
@@ -23,18 +23,18 @@ Representa o status de processamento da impressora, incluindo quaisquer erros.
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|state|printerProcessingState|O estado de processamento atual. Os valores válidos são descritos na tabela a seguir. Somente leitura.|
+|state|printerProcessingState|O estado de processamento atual. Os valores válidos são descritos na tabela a seguir. Apenas leitura.|
 |detalhes|Coleção printerProcessingStateDetail|A lista de detalhes que descrevem por que a impressora está no estado atual. Os valores válidos são descritos na tabela a seguir. Somente leitura.|
-|description|String|Uma descrição aceitável para humanos do estado de processamento atual da impressora. Somente leitura.|
+|description|Cadeia de caracteres|Uma descrição aceitável para humanos do estado de processamento atual da impressora. Apenas leitura.|
 
 ### <a name="printerprocessingstate-values"></a>printerProcessingState values
 
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |desconhecido|0|O estado de processamento relatado pela impressora é desconhecido.|
-|idle|1 |A impressora está ociosa e pronta para aceitar novos trabalhos de impressão.|
-|processamento|2 |No momento, a impressora está mediante o processamento de um trabalho de impressão e processará todos os trabalhos pendentes após a conclusão.|
-|stopped|3 |A impressora encontrou um problema (por exemplo, ficou sem papel na bandeja ativa) e não pode continuar o trabalho de impressão atual até que o problema seja resolvido. Confira os **valores** de detalhes ou o valor **de descrição** para obter mais informações.|
+|idle|1|A impressora está ociosa e pronta para aceitar novos trabalhos de impressão.|
+|processamento|2|No momento, a impressora está mediante o processamento de um trabalho de impressão e processará todos os trabalhos pendentes após a conclusão.|
+|stopped|3|A impressora encontrou um problema (por exemplo, ficou sem papel na bandeja ativa) e não pode continuar o trabalho de impressão atual até que o problema seja resolvido. Confira os **valores** de detalhes ou o valor **de descrição** para obter mais informações.|
 |unknownFutureValue|4 |Valor de sentinela de enumeração evolvável. Não usar.|
 
 ### <a name="printerprocessingstatedetail-values"></a>printerProcessingStateDetail values
@@ -42,17 +42,17 @@ Representa o status de processamento da impressora, incluindo quaisquer erros.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |pausado|0| Um trabalho de impressão em andamento foi pausado.|
-|mediaJam|2 |A mídia em uma ou mais bandejas está emperrada.|
-|mediaNeededed|3 |A mídia na bandeja de entrada usada no momento precisa ser substituída antes que o trabalho possa continuar.|
+|mediaJam|2|A mídia em uma ou mais bandejas está emperrada.|
+|mediaNeededed|3|A mídia na bandeja de entrada usada no momento precisa ser substituída antes que o trabalho possa continuar.|
 |mediaLow|4 |A mídia em uma ou mais bandejas está quase esgotada.|
 |mediaEmpty|5 |A mídia em uma ou mais bandejas está esgotada.|
 |coverOpen|6 |Uma ou mais capas estão abertas.|
 |interlockOpen|7 |Um ou mais dispositivos de bloqueio estão abertos.|
 |outputTrayMissing|9 |Uma ou mais bandejas de saída estão ausentes.|
 |outputAreaFull|10 |Uma ou mais bandejas de saída estão cheias e não podem aceitar mais mídia.|
-|markerSupplyLow|11 |Uma ou mais fontes de marcador (por exemplo, tinta, toner ou faixa de opções) estão baixas.|
+|markerSupplyLow|11|Uma ou mais fontes de marcador (por exemplo, tinta, toner ou faixa de opções) estão baixas.|
 |markerSupplyEmpty|12 |Uma ou mais fontes de marcador (por exemplo, tinta, toner ou faixa de opções) estão esgotadas.|
-|inputTrayMissing|13 |Uma ou mais bandejas de entrada não estão no dispositivo.|
+|inputTrayMissing|13|Uma ou mais bandejas de entrada não estão no dispositivo.|
 |outputAreaAlmostFull|14 |Uma ou mais área de saída está quase cheia (por exemplo, bandeja, empilhador, colator).|
 |markerWasteAlmostFull|15|O recipiente de lixo de fornecimento de marcador de dispositivo está quase cheio.|
 |markerWasteFull|16 |O recipiente de lixo de fornecimento de marcador de dispositivo está cheio.|

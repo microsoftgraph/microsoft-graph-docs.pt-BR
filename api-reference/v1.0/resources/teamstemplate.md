@@ -1,22 +1,22 @@
 ---
-title: tipo de recurso Teams
-description: Descreve a entidade Teams.
+title: Tipo de recurso teamsTemplate
+description: Descreve a entidade teamsTemplate.
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: ba27dc19f1d6561784d26105bcf8e089c664bbf1
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 5adcd554c687747fb45cdfd1a40e9e37cfaad2d9107a43ebc2ceca01b5d94f3c
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48088437"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54249122"
 ---
-# <a name="teamstemplate-resource-type"></a>tipo de recurso Teams
+# <a name="teamstemplate-resource-type"></a>Tipo de recurso teamsTemplate
 
 Namespace: microsoft.graph
 
-Um modelo de equipe é um gráfico para a criação de uma [equipe](../resources/team.md) no Microsoft Teams. Um modelo especifica a estrutura, as configurações e até o conteúdo que deve ser provisionado em uma nova equipe criada usando o modelo. A Microsoft fornece um pacote de modelos básicos e os clientes podem salvar seus próprios modelos personalizados.
+Um modelo de equipe é um modelo para criar uma [equipe](../resources/team.md) no Microsoft Teams. Um modelo especifica a estrutura, as configurações e até o conteúdo que deve ser provisionado em uma nova equipe criada usando o modelo. A Microsoft fornece um pacote de modelos básicos e os clientes podem salvar seus próprios modelos personalizados.
 
 ## <a name="properties"></a>Propriedades
 
@@ -40,6 +40,6 @@ Um modelo de equipe é um gráfico para a criação de uma [equipe](../resources
 
 ## <a name="see-also"></a>Confira também
 
-- [team](team.md)
+- [equipe](team.md)
 
 

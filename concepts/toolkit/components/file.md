@@ -3,12 +3,12 @@ title: Componente de arquivo no Microsoft Graph Toolkit
 description: O componente de arquivo é usado para exibir um arquivo mostrando o ícone e o nome
 localization_priority: Normal
 author: beth-panx
-ms.openlocfilehash: 314f08d396421c3b0afe0cf049e91cca9daa03fd
-ms.sourcegitcommit: db3d2c6db8dd8f8cc14bdcebb2904d5e056a73e7
+ms.openlocfilehash: a5e3569822d01c06d881070b56653f5bd2e2a89f2905c787699caa926c9b98b6
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52579790"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54196324"
 ---
 # <a name="file-component-in-the-microsoft-graph-toolkit"></a>Componente de arquivo no Microsoft Graph Toolkit
 
@@ -20,7 +20,7 @@ O exemplo a seguir exibe um arquivo usando o `mgt-file` componente. Você pode u
 
 <iframe src="https://mgt.dev/iframe.html?id=components-mgt-file--file&source=docs" height="250"></iframe>
 
-[Abra este exemplo em mgt.dev](https://mgt.dev/?path=/story/components-mgt-file--file&source=docs)
+[Abrir este exemplo no mgt.dev](https://mgt.dev/?path=/story/components-mgt-file--file&source=docs)
 
 ## <a name="properties"></a>Propriedades
 
@@ -133,7 +133,7 @@ Esse controle usa as seguintes APIs Graph Microsoft e permissões.
 
 O `mgt-file` componente dá suporte a vários [modelos](../customize-components/templates.md) que permitem substituir determinadas partes do componente. Para especificar um modelo, inclua um elemento dentro de um componente e de definir o `<template>` valor como um dos `data-type` seguintes:
 
-| Tipo de Dados | Contexto de dados | Descrição |
+| Tipo de dados | Contexto de dados | Descrição |
 | ----------- | -------------- | ------------- |
 | loading | nenhuma | O modelo a ser render enquanto o componente está em um estado de carregamento. |
 | no-data | nenhuma | O modelo a ser renderização quando nenhum dado de arquivo estiver disponível. |

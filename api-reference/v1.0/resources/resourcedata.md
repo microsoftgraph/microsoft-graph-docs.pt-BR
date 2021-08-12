@@ -5,12 +5,12 @@ localization_priority: Normal
 author: Jumaodhiss
 doc_type: resourcePageType
 ms.prod: change-notifications
-ms.openlocfilehash: d852268ee1a007b60014a224b34d12f25100fe8c
-ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
+ms.openlocfilehash: b2be1539226ac619b15e61cc7da55d3a9c844f9a47e0e60dcf6ff80914d1a12a
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51467964"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54169344"
 ---
 # <a name="resourcedata-resource-type"></a>Tipo de recurso resourceData
 
@@ -26,7 +26,7 @@ Nenhum.
 
 ## <a name="properties"></a>Propriedades
 
-Para recursos do Outlook, **resourceData** contém os seguintes campos:
+Para Outlook recursos, **resourceData** contém os seguintes campos:
 
 | Propriedade | Tipo | Descrição |
 |:---------|:-----|:------------|

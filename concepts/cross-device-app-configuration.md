@@ -3,12 +3,12 @@ title: 'Criar aplicativos para diversos dispositivos com a tecnologia do Project
 description: 'Você pode usar o Project Rome para criar experiências que abrangem vários dispositivos e plataformas sem complicações, reduzindo conflitos para usuários e ajudando a promover o engajamento com o aplicativo. Para que aplicativos compartilhem dados entre vários dispositivos e plataformas usando as APIs do Project Rome, é necessário configurar um aplicativo para diversos dispositivos que inclua informações sobre os aplicativos específicos de plataforma. '
 localization_priority: Normal
 ms.prod: project-rome
-ms.openlocfilehash: 7c1b93afa9f239d170475fea776bdc89e7170b0d
-ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
+ms.openlocfilehash: bb3b6bb5ce9cf420c647fff8e91d306e83de65193a958375cb7704af2f15b207
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48289341"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54216515"
 ---
 # <a name="build-cross-device-apps-powered-by-project-rome"></a>Criar aplicativos para diversos dispositivos com a tecnologia do Project Rome 
 
@@ -59,9 +59,9 @@ O domínio usado como sua ID de aplicativo entre dispositivos deve ser um domín
 Por exemplo, um desenvolvedor de aplicativos com um pacote de aplicativos de jogos pode usar um subdomínio separado para cada um para garantir que cada aplicativo esteja inscrito apenas nas atividades do usuário que pode retomar ao ler dados em vários dispositivos e plataformas. Por outro lado, um desenvolvedor de aplicativos com um pacote de aplicativos de produtividade projetados para funcionar juntos pode usar um domínio único para todos eles para que qualquer aplicativo possa iniciar um membro do pacote entre dispositivos.  
 
 #### <a name="assert-domain-ownership-with-the-windows-dev-center"></a>Reafirmar a propriedade do domínio com o Centro de Desenvolvimento do Windows
-Ao usar o Centro de Desenvolvimento do Windows para gerenciar a configuração do aplicativo entre dispositivos, o domínio que representa a ID de aplicativo entre dispositivos é armazenado como parte do perfil de aplicativo entre dispositivos para a Microsoft pode verificar se você é o proprietário do domínio. A propriedade do domínio **deve ser verificada** para concluir a publicação da configuração do aplicativo entre dispositivos, portanto, é uma boa ideia resolver isso primeiro.Se seu domínio ainda não tiver sido verificado, você poderá salvar os detalhes do aplicativo entre dispositivos e executar novamente a verificação depois de concluir esta etapa para publicar seu aplicativo entre dispositivos.
+Ao usar o Centro de Desenvolvimento do Windows para gerenciar a configuração do aplicativo entre dispositivos, o domínio que representa a ID de aplicativo entre dispositivos é armazenado como parte do perfil de aplicativo entre dispositivos para a Microsoft pode verificar se você é o proprietário do domínio. A propriedade do domínio **deve ser verificada** para concluir a publicação da configuração do aplicativo entre dispositivos, portanto, é uma boa ideia resolver isso primeiro. Se seu domínio ainda não tiver sido verificado, você poderá salvar os detalhes do aplicativo entre dispositivos e executar novamente a verificação depois de concluir esta etapa para publicar seu aplicativo entre dispositivos.
 
-Para reafirmar a propriedade do domínio do aplicativo entre dispositivos, será preciso adicionar uma entrada [DNS TXT](https://go.microsoft.com/fwlink/?linkid=871417) do seu domínio com um valor exclusivo fornecido no Centro de Desenvolvimento. Esse valor é exclusivo por aplicativo entre dispositivos. Para localizar o valor exclusivo do aplicativo, entre no Centro de Desenvolvimento do Windows e escolha **Experiências entre dispositivos** no menu à esquerda para começar a configurar um novo aplicativo entre dispositivos. Depois que você dá um nome para o novo aplicativo entre dispositivos, selecione **Verificar seu domínio de aplicativo entre dispositivos** no submenu. Esta página exibirá as instruções com um valor exclusivo  **em linha** (por exemplo, MS=95ff4557-813f-45a5-b2f6-1f94170b979f). Certifique-se de copiar o valor inteiro incluindo "MS =".
+Para reafirmar a propriedade do domínio do aplicativo entre dispositivos, será preciso adicionar uma entrada [DNS TXT](https://go.microsoft.com/fwlink/?linkid=871417) do seu domínio com um valor exclusivo fornecido no Centro de Desenvolvimento. Esse valor é exclusivo por aplicativo entre dispositivos. Para localizar o valor exclusivo do aplicativo, entre no Centro de Desenvolvimento do Windows e escolha **Experiências entre dispositivos** no menu à esquerda para começar a configurar um novo aplicativo entre dispositivos. Depois que você dá um nome para o novo aplicativo entre dispositivos, selecione **Verificar seu domínio de aplicativo entre dispositivos** no submenu. Esta página exibirá instruções com um valor exclusivo em **linha** (por exemplo, MS=95ff4557-813f-45a5-b2f6-1f94170b979f). Certifique-se de copiar o valor inteiro incluindo "MS =".
 
 ### <a name="step-2-collect-your-platform-specific-application-ids"></a>Etapa 2: Coletar as IDs de aplicativo específicas da plataforma
 Coletar as IDs de aplicativos específicas da plataforma para cada aplicativo e a plataforma usará [APIs do Project Rome](/graph/api/resources/project-rome-overview?view=graph-rest-1.0).
@@ -77,7 +77,7 @@ Para encontrar as IDs:
 * **msa** – entre no [portal de registro do Aplicativo](https://apps.dev.microsoft.com). Você pode exibir a ID de aplicativo/ID de cliente para qualquer um de seus aplicativos. O Live SDK (valores hexadecimais) e os Identificadores de aplicativos convergentes (GUIDs) têm suporte.   
 
 ### <a name="step-3-configure-support-for-microsoft-account-or-azure-ad"></a>Etapa 3: Configurar suporte para a conta Microsoft ou o Azure AD
-Para habilitar experiências entre dispositivos, os usuários do seu aplicativo devem entrar com uma  [conta Microsoft](https://account.microsoft.com/account)  ou uma conta do  [Azure Active Directory](/azure/active-directory/develop/active-directory-developers-guide)  (Azure AD). Você fornecerá IDs do cliente/aplicativo para oferecer suporte à autenticação como parte de sua configuração de aplicativo entre dispositivos para permitir o suporte entre plataformas. É possível fornecer até 10 instâncias.
+Para habilitar experiências entre dispositivos, os usuários do aplicativo devem entrar com uma conta [da Microsoft](https://account.microsoft.com/account) ou uma conta [Azure Active Directory](/azure/active-directory/develop/active-directory-developers-guide) (Azure AD). Você fornecerá IDs do cliente/aplicativo para oferecer suporte à autenticação como parte de sua configuração de aplicativo entre dispositivos para permitir o suporte entre plataformas. É possível fornecer até 10 instâncias.
 
 Você pode localizar as IDs de aplicativo/cliente existentes ou provisionar novas entrando no [portal de registro do aplicativo](https://apps.dev.microsoft.com) com sua conta de desenvolvedor. Quando você entra no portal, é possível exibir a ID do cliente/aplicativo de qualquer um dos aplicativos. O Live SDK (valores hexadecimais) e os identificadores de aplicativos convergentes (GUIDs) têm suporte.   
 
@@ -122,12 +122,12 @@ Você precisará coletar cada uma das IDs de aplicativo específicas da platafor
 
 #### <a name="constructing-your-cross-platform-app-identifiers-file"></a>Criar o arquivo cross-platform-app-identifiers
 O arquivo JSON em si deve ser chamado de **cross-platform-app-identifiers** e hospedado no raiz do domínio HTTPS. O conteúdo do arquivo é uma matriz JSON de mapeamentos entre as plataformas compatíveis de seu aplicativo e as IDs do aplicativo nesta plataforma. Quando criar o arquivo, inclua um objeto JSON para cada aplicativo e plataforma que usarão APIs do Project Rome. 
- 
+ 
 O arquivo permitirá diversos objetos JSON com o mesmo identificador de plataforma. Por exemplo, um aplicativo para iPhone e um aplicativo para iPad devem ser listados como objetos JSON separados, cada um com um valor de plataforma do iOS. O identificador de plataforma Web é mostrado no exemplo a seguir.
- 
-Não é necessário incluir um objeto JSON para todas as plataformas. Inclua apenas objetos JSON nas plataformas nas quais seu aplicativo esteja usando APIs do Project Rome.Por exemplo, se você não tiver um cliente de aplicativo na plataforma Android, não será necessária uma entrada de arquivo para Android.
- 
-O exemplo a seguir inclui todos os identificadores de plataforma válidos aceitos atualmente. Objetos JSON com um valor de plataforma inválido serão removidos.  
+ 
+Não é necessário incluir um objeto JSON para todas as plataformas. Inclua apenas objetos JSON nas plataformas nas quais seu aplicativo esteja usando APIs do Project Rome. Por exemplo, se você não tiver um cliente de aplicativo na plataforma Android, não será necessária uma entrada de arquivo para Android.
+ 
+O exemplo a seguir inclui todos os identificadores de plataforma válidos aceitos atualmente. Objetos JSON com um valor de plataforma inválido serão removidos.  
 
 ```[
 {"platform":"windows_universal", "application":"Microsoft.Contoso_8wekyb3d8bbwe"},
@@ -164,9 +164,9 @@ Para habilitar experiências entre dispositivos, seus usuários do aplicativo de
 ]
 ```
 
-Você pode localizar as IDs do cliente/aplicativo existentes ou provisionar novas entrando no  [Portal de Registro do Aplicativo](https://apps.dev.microsoft.com) com sua conta de desenvolvedor. Quando você entra, é possível exibir a ID do cliente/aplicativo de qualquer um dos aplicativos. O Live SDK (valores hexadecimais) e os identificadores de aplicativos convergentes (GUIDs) têm suporte. Use o tipo de plataforma "msa" ao adicionar as IDs usadas para habilitar o suporte em uma conta da Microsoft ou Azure AD, como mostrado no exemplo anterior.  
+Você pode encontrar suas IDs de aplicativo/IDs de cliente existentes ou provisionar novas ao entrar no [Portal](https://apps.dev.microsoft.com) de Registro de Aplicativos com sua conta de desenvolvedor. Quando você entra, é possível exibir a ID do cliente/aplicativo de qualquer um dos aplicativos. O Live SDK (valores hexadecimais) e os identificadores de aplicativos convergentes (GUIDs) têm suporte. Use o tipo de plataforma "msa" ao adicionar as IDs usadas para habilitar o suporte em uma conta da Microsoft ou Azure AD, como mostrado no exemplo anterior.  
 
->**Observação:** se você estiver criando um aplicativo que oferece suporte a usuários do Azure AD e não usar uma ID de aplicativo convergente emitida pelo  [Portal de Registro de Aplicativo](https://apps.dev.microsoft.com), será preciso fornecer o GUID para a ID de aplicativo do seu aplicativo do Azure. Esse tipo de ID também deve ser configurada como tipo de plataforma "msa". 
+>**Observação:** Se você estiver criando um aplicativo que dê suporte a usuários do Azure AD e não usar uma ID de aplicativo convergente emitida por meio do [Portal](https://apps.dev.microsoft.com)de Registro de Aplicativos, será necessário fornecer o GUID para a ID do aplicativo do seu aplicativo do Azure. Esse tipo de ID também deve ser configurada como tipo de plataforma "msa". 
 
 Para localizar o GUID no Portal do Azure para o seu locatário: 
 

@@ -5,12 +5,12 @@ author: payiAzure
 localization_priority: Priority
 ms.prod: service-communications
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: f10aabbdbdb7028af3f16058a6137bd9da8615d6
-ms.sourcegitcommit: d586ddb253d27f9ccb621bd128f6a6b4b1933918
+ms.openlocfilehash: 58eaec75761a0062a996f60c9c59c798c8fe0ae570da300821a4bf67780c12c7
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53108947"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54208661"
 ---
 # <a name="overview-for-accessing-service-health-and-communications-in-microsoft-graph"></a>Visão geral para acessar as comunicações e a integridade do serviço no Microsoft Graph
 Você pode usar a API de comunicações de serviço no Microsoft Graph para acessar o status de integridade e as postagens do centro de mensagens sobre os serviços em nuvem da Microsoft. O status de integridade real e as postagens correspondem aos serviços do Microsoft 365 e Dynamics 365 que são suportados pela API e assinados pelo locatário.
@@ -18,7 +18,7 @@ Você pode usar a API de comunicações de serviço no Microsoft Graph para aces
 ## <a name="why-integrate-with-service-health-and-communications-data"></a>Por que integrar com dados de comunicações e integridade do serviço?
 
 ### <a name="get-service-health-and-message-center-posts-for-a-tenant"></a>Obter postagens sobre a integridade do serviço e do centro de mensagens para um locatário
-Os clientes podem obter os dados de integridade atuais ou históricos dos serviços Microsoft com suporte. Ao enfrentar problemas com um serviço da Microsoft, eles podem verificar seu status de integridade para verificar se um problema foi identificado com uma solução em andamento, antes de ligar para o suporte ou gastar tempo solucionando o problema. 
+Os clientes podem obter dados de integridade atuais ou históricos de serviços Microsoft. Ao enfrentar problemas com um serviço da Microsoft, eles podem verificar seu status de integridade para verificar se um problema foi identificado com uma solução em andamento, antes de ligar para o suporte ou gastar tempo solucionando o problema. 
 
 Os clientes podem revisar regularmente as postagens do centro de mensagens para acompanhar os futuros novos recursos e atualizações, e outros anúncios importantes. Eles podem então prever como essas mudanças podem afetar os usuários e planejar de acordo.
 
@@ -66,6 +66,9 @@ No painel do **Centro de mensagens**, você pode exibir as alterações futuras,
 
 ## <a name="next-steps"></a>Próximas etapas
 
-- Experimente consultas de exemplos de comunicações de serviço no [Explorador do Graph](https://developer.microsoft.com/graph/graph-explorer/?request=admin%2FserviceAnnouncement%2FhealthOverviews&version=beta).
+- Experimente consultas de exemplos de comunicações de serviço no [Explorador do Graph](https://developer.microsoft.com/graph/graph-explorer/?request=admin%2FserviceAnnouncement%2FhealthOverviews&version=v1.0).
 
-- Saiba mais sobre a [API de comunicações do serviço](/graph/api/resources/service-communications-api-overview?view=graph-rest-beta&preserve-view=true).
+- Saiba mais sobre a [API de comunicações do serviço em v1.0](/graph/api/resources/service-communications-api-overview?view=graph-rest-1.0&preserve-view=true).
+
+- Saiba mais sobre a [API de comunicações do serviço em beta](/graph/api/resources/service-communications-api-overview?view=graph-rest-beta&preserve-view=true).
+

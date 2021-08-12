@@ -1,24 +1,24 @@
 ---
 title: 'reportRoot: getOffice365ActivationsUserCounts'
-description: Obter a contagem de usuários que estão habilitados e aqueles que ativaram a assinatura do Office em computadores desktop ou dispositivos ou computadores compartilhados.
+description: Obter a contagem de usuários habilitados e aqueles que ativaram a assinatura Office em desktop ou dispositivos ou computadores compartilhados.
 localization_priority: Normal
 ms.prod: reports
 author: sarahwxy
 doc_type: apiPageType
-ms.openlocfilehash: 07f3583aacdd246b0514d60d866d177765e6bd21
-ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
+ms.openlocfilehash: 6608fac79a7c37f27af35a375c3fe67bb77c4673d4452d1cf9944bbbb1e85a3d
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49982058"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54192660"
 ---
 # <a name="reportroot-getoffice365activationsusercounts"></a>reportRoot: getOffice365ActivationsUserCounts
 
 Namespace: microsoft.graph
 
-Obter a contagem de usuários que estão habilitados e aqueles que ativaram a assinatura do Office em computadores desktop ou dispositivos ou computadores compartilhados.
+Obter a contagem de usuários habilitados e aqueles que ativaram a assinatura Office em desktop ou dispositivos ou computadores compartilhados.
 
-> **Observação:** Para obter detalhes sobre diferentes visualizações e nomes de relatórios, consulte [relatórios do Microsoft 365 - ativações do Microsoft Office.](https://support.office.com/client/Office-activations-87c24ae2-82e0-4d1e-be01-c3bcc3f18c60)
+> **Observação:** Para obter detalhes sobre diferentes exibições de relatório e nomes, [consulte Microsoft 365 relatórios - Microsoft Office ativações](https://support.office.com/client/Office-activations-87c24ae2-82e0-4d1e-be01-c3bcc3f18c60).
 
 ## <a name="permissions"></a>Permissões
 
