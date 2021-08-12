@@ -6,12 +6,12 @@ localization_priority: Normal
 description: O choiceColumn em um recurso columnDefinition indica que os valores da coluna podem ser selecionados em uma lista de opções.
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 5c31dfd2630317d7c2e9110ee00262e9f332c583
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: 9f8a5f333c0904732ef47bcac0c962f522d3ecd4c5e11a6884eaf396e354b49b
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50238530"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54121302"
 ---
 # <a name="choicecolumn-resource-type"></a>Tipo de recurso ChoiceColumn
 
