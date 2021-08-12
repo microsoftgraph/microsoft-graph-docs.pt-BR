@@ -5,24 +5,24 @@ localization_priority: Normal
 author: williamlooney
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 3caf85f049c0b09caf5ae2ec3866ce9d24b2a1e8
-ms.sourcegitcommit: af4b2fc18449c33979cf6d75bd680f40602ba708
+ms.openlocfilehash: 4fe19bd5a69b456a0e74e70b118477131f7c8f2cb0011eac4270dad956d6667c
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "48601472"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54252120"
 ---
 # <a name="endpoint-resource-type"></a>tipo de recurso de ponto de extremidade
 
 Namespace: microsoft.graph.callRecords
 
-Representa um ponto de extremidade em uma chamada. O ponto de extremidade pode ser o dispositivo de um usuário, uma reunião, um aplicativo/bot, etc. Os tipos [participantEndpoint](callrecords-participantendpoint.md) e [serviceEndpoint](callrecords-serviceendpoint.md) herdam desse tipo.
+Representa um ponto de extremidade em uma chamada. O ponto de extremidade pode ser um dispositivo do usuário, uma reunião, um aplicativo/bot, etc. Os [tipos participantEndpoint](callrecords-participantendpoint.md) [e serviceEndpoint](callrecords-serviceendpoint.md) herdam desse tipo.
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|userAgent|[Microsoft. Graph. callRecords. UserAgent](callrecords-useragent.md)|Agente de usuário relatado por este ponto de extremidade.|
+|userAgent|[microsoft.graph.callRecords.userAgent](callrecords-useragent.md)|Agente de usuário relatado por esse ponto de extremidade.|
 
 ## <a name="json-representation"></a>Representação JSON
 

@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 9462971d1c2694b3443c9b3a4e799a24362eee80
-ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
+ms.openlocfilehash: 36a21359c4c336b122856417021c5291de01d2c1c3fd704420cd2f234831136c
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50515636"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54124581"
 ---
 # <a name="audioconferencing-resource-type"></a>Tipo de recurso audioConferencing
 
@@ -23,7 +23,7 @@ Representa as informações de acesso ao telefone para [um onlineMeeting](online
 | Propriedade            | Tipo    | Descrição                                                                    |
 |:--------------------|:--------|:-------------------------------------------------------------------------------|
 | dialinUrl           | Cadeia de caracteres  | Uma URL para a página da Web externamente acessível que contém informações de discagem. |
-| conferenceId        | Cadeia de caracteres  | A ID da conferência da reunião online.      |
+| conferenceId        | String  | A ID da conferência da reunião online.      |
 | tollFreeNumber      | Cadeia de caracteres  | O número gratuito que se conecta ao Provedor de Conferência de Áudio.              |
 | tollNumber          | Cadeia de caracteres  | O número de telefone que se conecta ao Provedor de Conferência de Áudio.                   |
 

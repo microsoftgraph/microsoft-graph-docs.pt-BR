@@ -1,30 +1,30 @@
 ---
-title: tipo de recurso searchHitsContainer
-description: Representa a lista de resultados de pesquisa.
+title: Tipo de recurso searchHitsContainer
+description: Represente a lista de resultados da pesquisa.
 localization_priority: Normal
 author: nmoreau
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: f32fa198624c04da6eadfc828b60350164cbdddc
-ms.sourcegitcommit: 5345c2f3265ede107fa0faaff7a3f1c2afee3810
+ms.openlocfilehash: 42abefb12b0ae1953caf9ecbfa04cd2bc29b69d8c9d8ca2a0797497efb8d6271
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "49377982"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54134956"
 ---
-# <a name="searchhitscontainer-resource-type"></a>tipo de recurso searchHitsContainer
+# <a name="searchhitscontainer-resource-type"></a>Tipo de recurso searchHitsContainer
 
 Namespace: microsoft.graph
 
-Representa a lista de resultados de pesquisa.
+Represente a lista de resultados da pesquisa.
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|falta|coleção [searchHit](searchhit.md)|Uma coleção dos resultados da pesquisa.|
-|moreResultsAvailable|Boolean|Fornece informações se mais resultados estiverem disponíveis. Com base nessas informações, você pode ajustar as propriedades **from** e **size** do [searchRequest](searchrequest.md) adequadamente.|
-|total|Int32|O número total de resultados. Observação Este não é o número de resultados na página, mas o número total de resultados que atendem à consulta.|
+|hits|[Coleção searchHit](searchhit.md)|Uma coleção dos resultados da pesquisa.|
+|moreResultsAvailable|Booliano|Fornece informações se mais resultados estão disponíveis. Com base nessa informação, você pode ajustar as **propriedades from** e **size** da [searchRequest](searchrequest.md) de acordo.|
+|total|Int32|O número total de resultados. Observe que esse não é o número de resultados na página, mas o número total de resultados que satisfazem a consulta.|
 
 
 ## <a name="json-representation"></a>Representação JSON

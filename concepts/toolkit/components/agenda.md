@@ -3,12 +3,12 @@ title: Componente agenda no microsoft Graph Toolkit
 description: O componente web mgt-agenda é usado para representar eventos em um calendário de usuário ou grupo.
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: a5f11214869c8f8bdc96a88613a40e9164c8fe32
-ms.sourcegitcommit: ae83b2b372902268517fd17a8b10d6d9add422af
+ms.openlocfilehash: 0cf1eff6e34716a30bc3479ec5c6d0ac4025442e4fcdbfa3ced1fe7a82b3bf47
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "53334784"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54134767"
 ---
 # <a name="agenda-component-in-the-microsoft-graph-toolkit"></a>Componente agenda no microsoft Graph Toolkit
 

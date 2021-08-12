@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 03787eed949221af2b4cbee5ca08d107aa60c229
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 7f59e5bf8ceefed1942acda1bf1f088bb148cd284ef4cc51127e493420fbe413
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52752753"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54249241"
 ---
 # <a name="deviceenrollmentconfiguration-resource-type"></a>Tipo de recurso deviceEnrollmentConfiguration
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 A Classe Base de Configuração de Registro de Dispositivo
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
 |[Listar deviceEnrollmentConfigurations](../api/intune-onboarding-deviceenrollmentconfiguration-list.md)|Conjunto [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)|Listar propriedades e relações de objetos de [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md).|
@@ -33,7 +33,7 @@ A Classe Base de Configuração de Registro de Dispositivo
 |:---|:---|:---|
 |id|Cadeia de caracteres|Identificador exclusivo da conta|
 |displayName|Cadeia de caracteres|O nome de exibição da configuração de registro do dispositivo|
-|descrição|Cadeia de caracteres|A descrição da configuração de registro do dispositivo|
+|description|Cadeia de caracteres|A descrição da configuração de registro do dispositivo|
 |prioridade|Int32|A prioridade é usada quando um usuário existe em vários grupos que são atribuídos à configuração de registro. Os usuários estão sujeitos apenas à configuração com o valor de prioridade mais baixo.|
 |createdDateTime|DateTimeOffset|Hora de data criada no UTC da configuração de registro do dispositivo|
 |lastModifiedDateTime|DateTimeOffset|Última data de modificação no UTC da configuração de registro do dispositivo|

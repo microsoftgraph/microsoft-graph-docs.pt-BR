@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 2b8126ded9f6d0e9f68c6a9f5e8bcbcbbb216294
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: a14b0edd46e88d6203b462bf43065533d134733ebccbc4b566fd4009e1248ce1
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52755914"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54184792"
 ---
 # <a name="applisttype-enum-type"></a>Tipo de número appListType
 

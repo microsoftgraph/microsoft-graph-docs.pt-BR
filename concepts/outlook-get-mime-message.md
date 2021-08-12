@@ -4,16 +4,16 @@ description: Multipurpose Internet Mail Extensions (MIME) é um padrão de email
 author: abheek-das
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: 48847396d14a280d5978e014bc31b10f7a77b65d
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: ff2724f5dd2f9325d53e5a7506887f944ba350e96d592be778e46b5c8e2dc67a
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50472262"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54126050"
 ---
 # <a name="get-mime-content-of-a-message"></a>Obter conteúdo MIME de uma mensagem
 
-MIME é um padrão de email do setor. Muitos aplicativos de email criam mensagens em formato MIME e as salvam em arquivos com a extensão .EML. 
+O MIME é um padrão de email da indústria. Muitos aplicativos de email criam mensagens em formato MIME e as salvam em arquivos com a extensão .EML. 
 
 Mesmo que o Outlook _não salve_ mensagens no formato MIME, há duas maneiras de obter um corpo de mensagem do Outlook no formato MIME:
 

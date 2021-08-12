@@ -5,12 +5,12 @@ localization_priority: Normal
 author: vrod9429
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 9c69925ee64dd3c39b7edb59a6416d0ddc5b533c
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: 3bcb4e113e1b0c5c132a8f152f59293930376b085fdeb3a0baf6c14af2bb274e
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50474460"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54238192"
 ---
 # <a name="attendeeavailability-resource-type"></a>Tipo de recurso attendeeAvailability
 

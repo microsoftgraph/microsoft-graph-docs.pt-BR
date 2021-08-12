@@ -5,12 +5,12 @@ author: jpettere
 localization_priority: Normal
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: c22bc60ab37d5eb015896dc6832b0a72390d64a8
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 862df73bbc3a8a76a2068c667dd0385cfb1e0053625d3295becaca925f5c2881
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52054284"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54214814"
 ---
 # <a name="update-settings"></a>Atualizar configurações
 
@@ -82,7 +82,7 @@ Content-length: 37
 
 ##### <a name="response"></a>Resposta
 
-Veja a seguir um exemplo da resposta. Observação: o objeto de resposta exibido aqui pode ser encurtado para legibilidade.
+Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser reduzido para facilitar a leitura.
 
 ```http
 HTTP/1.1 200 OK

@@ -5,18 +5,18 @@ localization_priority: Normal
 author: adimitui
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 2ec65433edf3a6d0ec5973c0a3bc8cf46cef00d0
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 82ca68723aaefceaa2ed852bd663822bfb0830ab20a97d62e7b155f850671621
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50962466"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54243592"
 ---
 # <a name="contract-resource-type"></a>Tipo de recurso de contrato
 
 Namespace: microsoft.graph Representa uma parceria existente que o locatário parceiro tem com um locatário do cliente.
 
-> **Importante:** Existe apenas em locatários parceiros. Os locatários de parceiros são locatários do Azure AD que pertencem aos parceiros da Microsoft que fazem parte do [Microsoft Cloud Solution Provider](https://partnercenter.microsoft.com/en-us/partner/programs), do Office 365 Syndication ou dos programas de parceiros do Microsoft Advisor.
+> **Importante:** Existe apenas em locatários parceiros. Os locatários parceiros são locatários do Azure AD que pertencem [aos](https://partnercenter.microsoft.com/en-us/partner/programs)parceiros da Microsoft que fazem parte dos programas de parceiros Provedor de Soluções na Nuvem da Microsoft , Office 365 Syndication ou Microsoft Advisor.
 
 ## <a name="methods"></a>Métodos
 
@@ -28,11 +28,11 @@ Namespace: microsoft.graph Representa uma parceria existente que o locatário pa
 ## <a name="properties"></a>Propriedades
 | Propriedade   | Tipo | Descrição |
 |:---------------|:--------|:----------|
-|contractType|Cadeia de caracteres|Tipo de contrato. Os valores possíveis são:  `SyndicationPartner` , `BreadthPartner` , `ResellerPartner` . Veja mais na [tabela abaixo](#contracttype-values).|
+|contractType|Cadeia de caracteres|Tipo de contrato. Os valores possíveis são:  `SyndicationPartner` , `BreadthPartner` , `ResellerPartner` . Confira mais na [tabela abaixo](#contracttype-values).|
 |customerId|Guid|O identificador exclusivo do locatário do cliente referenciado por essa parceria. Corresponde à propriedade id do recurso de organização do locatário do cliente. |
 |defaultDomainName|Cadeia de caracteres|Uma cópia do nome de domínio padrão do locatário do cliente. A cópia é feita quando a parceria com o cliente é estabelecida. Ele não será atualizado automaticamente se o nome de domínio padrão do locatário do cliente mudar.|
 |displayName|Cadeia de caracteres|Uma cópia do nome de exibição do locatário do cliente. A cópia é feita quando a parceria com o cliente é estabelecida. Ele não será atualizado automaticamente se o nome de exibição do locatário do cliente mudar.|
-|id|Cadeia de caracteres| O identificador exclusivo da parceria. Chave, somente leitura |
+|id|String| O identificador exclusivo da parceria. Chave, somente leitura |
 
 ### <a name="contracttype-values"></a>valores contractType
 

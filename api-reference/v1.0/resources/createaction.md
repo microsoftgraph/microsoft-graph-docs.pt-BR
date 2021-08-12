@@ -5,35 +5,35 @@ description: O objeto createAction fornece informações sobre a criação de um
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: d722953dbef726c054136a9a7beb225a31f93241
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: 4869683401b1db6c9d11176abb28f92839d1fa6e85d428530ae3586c27c867ad
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50238390"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54238136"
 ---
 # <a name="createaction-resource-type"></a>Tipo de recurso createAction
 
 Namespace: microsoft.graph
 
-A presença do recurso **createAction** em um [**itemActivity**][activity] indica que a atividade criou um item.
+A presença do **recurso createAction** em um [**itemActivity**][activity] indica que a atividade criou um item.
 
-**Observação:** No momento, esse recurso está vazio. No futuro, ele pode ser preenchido com propriedades adicionais.
+**Observação:** Esse recurso está vazio no momento. No futuro, ele pode ser preenchido com propriedades adicionais.
 
->**Observação:** No momento, os registros de atividades do item só estão disponíveis no SharePoint e no OneDrive for Business.
+>**Observação:** No momento, os registros de atividade do item estão disponíveis apenas SharePoint e OneDrive for Business.
 
 [activity]: itemactivity.md
 
 ## <a name="properties"></a>Propriedades
 
-Nenhum. Esta faceta tem um valor nulo ou não nulo e não contém propriedades.
+Nenhum. Esta faceta é um valor nulo ou não nulo e não contém propriedades.
 
 ## <a name="json-representation"></a>Representação JSON
 
 <!-- {
   "blockType": "resource",
   "optionalProperties": [ ],
-  "@type": "microsoft.graph.createAction"
+  "@type&quot;: &quot;microsoft.graph.createAction"
 }-->
 
 ```json

@@ -5,12 +5,12 @@ author: RamjotSingh
 doc_type: resourcePageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 46d839c6365c148777a280d7af8a36f3bf58ccd1
-ms.sourcegitcommit: 16ee16e7fddd662ca42dc5c9352cfb109e31ed1a
+ms.openlocfilehash: c9e6e7eeeabc4914e8be23ca6da3ccc7c963a01f881e847c200284c2ed30f36f
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/03/2021
-ms.locfileid: "51582750"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54169666"
 ---
 # <a name="chatmessagepolicyviolation-resource-type"></a>Tipo de recurso chatMessagePolicyViolation
 
@@ -20,11 +20,11 @@ Representa uma violação de política em uma mensagem de chat. As violações d
 
 | Propriedade   | Tipo |Descrição|
 |:---------------|:--------|:----------|
-|dlpAction|**chatMessagePolicyViolationDlpActionType**|A ação realizada pelo provedor DLP na mensagem com conteúdo sensível. Os valores com suporte são: <li>Nenhum</li><li>NotifySender - Informe o remetente da violação, mas permita que os leitores leiam a mensagem.</li><li>BlockAccess - Impedir que os leitores leiam a mensagem.</li><li>BlockAccessExternal - Impedir que os usuários de fora da organização leiam a mensagem, permitindo que os usuários dentro da organização leiam a mensagem.</li>|
+|dlpAction|**chatMessagePolicyViolationDlpActionType**|A ação realizada pelo provedor DLP na mensagem com conteúdo sensível. Os valores com suporte são: <li>None</li><li>NotifySender - Informe o remetente da violação, mas permita que os leitores leiam a mensagem.</li><li>BlockAccess - Impedir que os leitores leiam a mensagem.</li><li>BlockAccessExternal - Impedir que os usuários de fora da organização leiam a mensagem, permitindo que os usuários dentro da organização leiam a mensagem.</li>|
 |justificationText|string|Texto de justificativa fornecido pelo remetente da mensagem ao se sobressuperar uma violação de política.|
 |policyTip|[chatMessagePolicyViolationPolicyTip](chatmessagepolicyviolationpolicytip.md)|Informações a ser exibidas ao remetente da mensagem sobre o motivo pelo qual a mensagem foi sinalizada como uma violação. |
-|userAction|**chatMessagePolicyViolationUserActionType**|Indica a ação tomada pelo usuário em uma mensagem bloqueada pelo provedor DLP. Os valores com suporte são: <li>Nenhum</li><li>Override</li><li>ReportFalsePositive</li>Quando o provedor de DLP está atualizando a mensagem para bloquear conteúdos confidenciais, userAction não é necessário.|
-|verdictDetails|**chatMessagePolicyViolationVerdictDetailsType**|Indica quais ações o remetente pode tomar em resposta à violação da política. Os valores com suporte são: <li>Nenhum</li><li>AllowFalsePositiveOverride -- Permite que o remetente declare a políticaViolation como um erro no aplicativo DLP e suas regras e permita que os leitores vejam a mensagem novamente se a dlpAction a tiver ocultado.</li><li>AllowOverrideWithoutJustification -- permite que o remetente extravase a violação de DLP e permita que os leitores vejam a mensagem novamente se a dlpAction a tiver ocultado, sem a necessidade de fornecer uma explicação para fazer isso. </li><li>AllowOverrideWithJustification -- Permite que o remetente extravase a violação de DLP e permita que os leitores vejam a mensagem novamente se a dlpAction a tiver ocultado, depois de fornecer uma explicação para isso.</li>AllowOverrideWithoutJustification e AllowOverrideWithJustification são mutuamente exclusivos.|
+|userAction|**chatMessagePolicyViolationUserActionType**|Indica a ação tomada pelo usuário em uma mensagem bloqueada pelo provedor DLP. Os valores com suporte são: <li>None</li><li>Override</li><li>ReportFalsePositive</li>Quando o provedor de DLP está atualizando a mensagem para bloquear conteúdos confidenciais, userAction não é necessário.|
+|verdictDetails|**chatMessagePolicyViolationVerdictDetailsType**|Indica quais ações o remetente pode tomar em resposta à violação da política. Os valores com suporte são: <li>None</li><li>AllowFalsePositiveOverride -- Permite que o remetente declare a políticaViolation como um erro no aplicativo DLP e suas regras e permita que os leitores vejam a mensagem novamente se a dlpAction a tiver ocultado.</li><li>AllowOverrideWithoutJustification -- permite que o remetente extravase a violação de DLP e permita que os leitores vejam a mensagem novamente se a dlpAction a tiver ocultado, sem a necessidade de fornecer uma explicação para fazer isso. </li><li>AllowOverrideWithJustification -- Permite que o remetente extravase a violação de DLP e permita que os leitores vejam a mensagem novamente se a dlpAction a tiver ocultado, depois de fornecer uma explicação para isso.</li>AllowOverrideWithoutJustification e AllowOverrideWithJustification são mutuamente exclusivos.|
 
 ## <a name="json-representation"></a>Representação JSON
 

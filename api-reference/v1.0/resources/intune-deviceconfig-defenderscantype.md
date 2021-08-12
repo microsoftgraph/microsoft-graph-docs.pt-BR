@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 3d2231d1c8f18a6fd045ad9408e33e04ddaf8e8e
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 50791f9317b4e9d6e81c14aa331810f3c5d857a53d0a5a1059d5766e5e5ed4a3
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52752151"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54184785"
 ---
 # <a name="defenderscantype-enum-type"></a>Tipo de número defenderScanType
 

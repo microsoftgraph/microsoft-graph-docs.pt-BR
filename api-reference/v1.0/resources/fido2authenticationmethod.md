@@ -5,12 +5,12 @@ author: mmcla
 localization_priority: Normal
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 1212f1e473d6f8bfe6ac06fbee0b96b12256a377
-ms.sourcegitcommit: 2d8b04725ea4eaf304f3da1056a6451457a4630f
+ms.openlocfilehash: 49e2d2c70596910494b526b3dd92e0f3ed157802a7789c68d543bc044518ceaf
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52335587"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54152751"
 ---
 # <a name="fido2authenticationmethod-resource-type"></a>Tipo de recurso fido2AuthenticationMethod
 
@@ -23,14 +23,14 @@ Uma representação de uma chave de segurança FIDO2 registrada em um usuário. 
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
 |[List](../api/fido2authenticationmethod-list.md)|[coleção fido2AuthenticationMethod](../resources/fido2authenticationmethod.md)|Recupere uma lista dos objetos fido2AuthenticationMethod de um usuário e suas propriedades.|
-|[Get](../api/fido2authenticationmethod-get.md)|[fido2AuthenticationMethod](../resources/fido2authenticationmethod.md)|Leia as propriedades e as relações do objeto fido2AuthenticationMethod de um usuário.|
-|[Delete](../api/fido2authenticationmethod-delete.md)|Nenhum|Exclui o objeto fido2AuthenticationMethod de um usuário.|
+|[Obter](../api/fido2authenticationmethod-get.md)|[fido2AuthenticationMethod](../resources/fido2authenticationmethod.md)|Leia as propriedades e as relações do objeto fido2AuthenticationMethod de um usuário.|
+|[Delete](../api/fido2authenticationmethod-delete.md)|None|Exclui o objeto fido2AuthenticationMethod de um usuário.|
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|O identificador do método de autenticação.|
-|displayName|String|O nome de exibição da chave conforme dado pelo usuário.|
+|id|Cadeia de caracteres|O identificador do método de autenticação.|
+|displayName|Cadeia de caracteres|O nome de exibição da chave conforme dado pelo usuário.|
 |createdDateTime|DateTimeOffset|O timestamp quando essa chave foi registrada para o usuário.|
 |aaGuid|String|Authenticator GUID de atestado, um identificador que indica o tipo (por exemplo, make e model) do autenticador.|
 |modelo|String|O modelo atribuído pelo fabricante da chave de segurança FIDO2.|

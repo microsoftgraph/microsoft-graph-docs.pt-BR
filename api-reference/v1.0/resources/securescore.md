@@ -1,30 +1,30 @@
 ---
-title: tipo de recurso secureScore
-description: Representa a pontuação segura de um locatário por dia de dados de pontuação, no nível do locatário e do controle.
+title: Tipo de recurso secureScore
+description: Representa a pontuação segura de um locatário por dia de dados de pontuação, no nível de locatário e controle.
 localization_priority: Normal
 author: preetikr
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: e4f798ae64b881c95ed4330901c0a34ba4073f0e
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: fbc942784813545f5d276addbd4581cf30ea82c8c2d8d6cf17d5f3ef3fbc7246
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47984093"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54180478"
 ---
-# <a name="securescore-resource-type"></a>tipo de recurso secureScore
+# <a name="securescore-resource-type"></a>Tipo de recurso secureScore
 
 Namespace: microsoft.graph
 
-Representa a pontuação segura de um locatário por dia de dados de pontuação, no nível do locatário e do controle. Por padrão, são mantidos 90 dias de dados. Esses dados são classificados por **createdDateTime**, do mais recente para o mais antigo. Isso permitirá respostas de página usando $top = n, onde n = o número de dias de dados que você deseja recuperar. 
+Representa a pontuação segura de um locatário por dia de dados de pontuação, no nível de locatário e controle. Por padrão, 90 dias de dados são mantidos. Esses dados são organizados por **createdDateTime**, do mais recente ao mais antigo. Isso permitirá que você page responses by using $top=n, where n = the number of days of data that you want to retrieve. 
 
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 
 | Método   | Tipo de retorno|Descrição|
 |:---------------|:--------|:----------|
-|[Lista secureScores](../api/security-list-securescores.md) | coleção [secureScores](securescore.md) |Obtém a coleção de objetos secureScore.|
-|[Obter secureScore](../api/securescore-get.md) | [secureScore](securescore.md) |Leia as propriedades e os metadados de um objeto secureScore. | 
+|[Lista secureScores](../api/security-list-securescores.md) | [Coleção secureScores](securescore.md) |Obter coleção de objetos secureScore.|
+|[Obter secureScore](../api/securescore-get.md) | [secureScore](securescore.md) |Ler propriedades e metadados de um objeto secureScore. | 
 
 
 
@@ -33,16 +33,16 @@ Representa a pontuação segura de um locatário por dia de dados de pontuação
 |Propriedade |Tipo |Descrição |
 |:--|:--|:--|
 |id |String|Identificador GUID/exclusivo gerado pelo provedor. Somente leitura. Obrigatório.|
-|   azureTenantId   |   String  |   Cadeia de caracteres GUID para ID do locatário.  |
-|   activeUserCount |   Int32   |   Contagem de usuários ativos de um determinado locatário.  |
+|   azureTenantId   |   String  |   Cadeia de caracteres GUID para ID de locatário.  |
+|   activeUserCount |   Int32   |   Contagem ativa do usuário do locatário determinado.  |
 |   createdDateTime |   DateTimeOffset  |   A data em que a entidade é criada.  |
-|   currentScore    |   Duplo  |   Pontuação Obtida de locatário atual em data especificada.    |
-|   enabledservices |   Coleção de cadeias de caracteres   |   Serviços fornecidos pela Microsoft para o locatário (por exemplo, Exchange Online, Skype, SharePoint).   |
-|   licensedUserCount   |   Int32   |   Contagem de usuários licenciados de um determinado locatário.    |
-|   maxScore |  Duplo  |   Pontuação máxima possível de locatário na data especificada.    |
-|   averageComparativeScores |  coleção [averageComparativeScore](averagecomparativescore.md)    |Pontuação média por escopos diferentes (por exemplo, média por setor, média por meio de assentos) e categoria de controle (identidade, dados, dispositivo, aplicativos, infraestrutura) dentro do escopo. |
-|   controlScores | coleção [controlScore](controlscore.md)  |   Contém pontuações de locatários para um conjunto de controles.   |
-|vendorInformation |[securityVendorInformation](securityvendorinformation.md)|Tipo complexo que contém detalhes sobre o fornecedor de produtos/serviços de segurança, o provedor e o subfornecedor (por exemplo, fornecedor = Microsoft; Provider = SecureScore). Obrigatório.|
+|   currentScore    |   Duplo  |   Pontuação atual atingida pelo locatário na data especificada.    |
+|   enabledServices |   Coleção de cadeias de caracteres   |   Serviços fornecidos pela Microsoft para o locatário (por exemplo, Exchange online, Skype, Sharepoint).   |
+|   licensedUserCount   |   Int32   |   Contagem de usuários licenciados do locatário determinado.    |
+|   maxScore |  Duplo  |   Pontuação máxima possível do locatário na data especificada.    |
+|   averageComparativeScores |  [Coleção averageComparativeScore](averagecomparativescore.md)    |Pontuação média por escopos diferentes (por exemplo, média por setor, média por assento) e categoria de controle (Identidade, Dados, Dispositivo, Aplicativos, Infraestrutura) dentro do escopo. |
+|   controlScores | [Coleção controlScore](controlscore.md)  |   Contém pontuações de locatários para um conjunto de controles.   |
+|vendorInformation |[securityVendorInformation](securityvendorinformation.md)|Tipo complexo que contém detalhes sobre o fornecedor de produtos/serviços de segurança, provedor e subprovider (por exemplo, vendor=Microsoft; provider=SecureScore). Obrigatório.|
 
 
 ## <a name="relationships"></a>Relações

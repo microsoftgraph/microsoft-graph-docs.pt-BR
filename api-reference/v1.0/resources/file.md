@@ -6,12 +6,12 @@ localization_priority: Normal
 description: O recurso File agrupa itens de dados relacionados a arquivos em uma única estrutura.
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: c19f2afce6128c7fb29a81c6e8d8f2d1c08c7913
-ms.sourcegitcommit: ab578b062c534db57844490f35e802df8a8f4dfa
+ms.openlocfilehash: 57266222e9cbc2778673172b3b96a40ca4d51df466a8c90ae784d170b7e25175
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "48753392"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54146885"
 ---
 # <a name="file-resource-type"></a>Tipo de recurso File
 
@@ -19,7 +19,7 @@ Namespace: microsoft.graph
 
 O recurso **File** agrupa itens de dados relacionados a arquivos em uma única estrutura.
 
-Se um [**DriveItem**](driveitem.md) tiver uma faceta **File** não nula, o item representa um arquivo.
+Se um [**DriveItem**](driveitem.md) tiver uma **faceta** de arquivo não nulo, o item representará um arquivo.
 Além de outras propriedades, os arquivos têm um relacionamento **content**, que contém o fluxo de bytes do arquivo.
 
 ## <a name="json-representation"></a>Representação JSON

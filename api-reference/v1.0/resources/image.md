@@ -1,17 +1,17 @@
 ---
 author: JeremyKelley
 ms.date: 09/10/2017
-title: Image
+title: Imagem
 localization_priority: Normal
 description: O recurso Image agrupa propriedades relacionadas a imagens em uma única estrutura.
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 33a85707183edc23bf42f882b937ced09e741103
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: 8667c3750556ed429a88b8b7b19a09c03481b394c2a59d14085566bd8fee1192
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50239944"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54231793"
 ---
 # <a name="image-resource-type"></a>Tipo de recurso Image
 

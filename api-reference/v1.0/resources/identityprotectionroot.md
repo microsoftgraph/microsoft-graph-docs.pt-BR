@@ -5,12 +5,12 @@ author: cloudhandler
 localization_priority: Normal
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: d4eee47b1503b8c37eb0551817725b966d492866
-ms.sourcegitcommit: 9eeb056f311044aaa40654cdb3ae5ae61f1c4d04
+ms.openlocfilehash: f4766138275b034f2fd5dc1980c9bb266b667cf4f68a2a437a2512fccac750e5
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "52854121"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54230708"
 ---
 # <a name="identityprotectionroot-resource-type"></a>Tipo de recurso identityProtectionRoot
 
@@ -40,7 +40,7 @@ Para obter orientações específicas e informações adicionais, consulte Ident
 
 ## <a name="what-licenses-do-i-need"></a>De quais licenças eu preciso?
 
-A Proteção de Identidade do Azure AD é um recurso premium. Você precisa de uma licença do Azure AD Premium P1 ou P2 para acessar a API riskDetection (observação: as licenças P1 recebem informações de risco limitados). A API riskyUsers só está disponível para licenças do Azure AD Premium P2.
+A Proteção de Identidade do Azure AD é um recurso premium. Você precisa de uma Azure AD Premium P1 ou P2 para acessar a API riskDetection (observação: as licenças P1 recebem informações de risco limitados). A API riskyUsers só está disponível para Azure AD Premium P2 licenças.
 
 ## <a name="see-also"></a>Confira também
 

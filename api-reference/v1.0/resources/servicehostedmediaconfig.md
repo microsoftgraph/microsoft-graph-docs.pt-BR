@@ -1,28 +1,28 @@
 ---
-title: tipo de recurso serviceHostedMediaConfig
+title: Tipo de recurso serviceHostedMediaConfig
 description: O tipo serviceHostedMediaConfig.
 author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: d4bdea6009dae0bd06ec9ffc00d00e417e7c22d0
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: c82a4c9496007fafcace339c85bafdd3e0fa9152dbcce703b1ddf468f04d5e71
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47991842"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54211819"
 ---
-# <a name="servicehostedmediaconfig-resource-type"></a>tipo de recurso serviceHostedMediaConfig
+# <a name="servicehostedmediaconfig-resource-type"></a>Tipo de recurso serviceHostedMediaConfig
 
 Namespace: microsoft.graph
 
-A mídia que está hospedada remotamente. Isso é herdado de [mediaConfig](mediaconfig.md).
+A mídia hospedada remotamente. Isso é herdado de [mediaConfig](mediaconfig.md).
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade                    | Tipo                                                        | Descrição                                       |
 | :-------------------------- | :---------------------------------------------------------- | :-------------------------------------------------|
-| preFetchMedia               | coleção [mediaInfo](mediainfo.md)                        | A lista de mídias a buscar previamente.                   |
+| preFetchMedia               | [Coleção mediaInfo](mediainfo.md)                        | A lista de mídia a ser pré-buscada.                   |
 
 
 ## <a name="json-representation"></a>Representação JSON

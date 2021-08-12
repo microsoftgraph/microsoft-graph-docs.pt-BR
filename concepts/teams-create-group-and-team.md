@@ -4,12 +4,12 @@ description: 'Criar um grupo que inclui uma equipe envolve as seguintes etapas: 
 author: hachandr
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: 28729e0116e0b2959690449694197ac6acbfa501
-ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
+ms.openlocfilehash: 454466aff5a83cd9593c2a87a0c933c8ec7b0a4650d757c6754369f03eea0f4b
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48192767"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54246371"
 ---
 # <a name="creating-teams-and-managing-members-using-microsoft-graph"></a>Criar equipes e gerenciar membros usando o Microsoft Graph
 
@@ -18,7 +18,7 @@ Você pode usar a API do Microsoft Teams no Microsoft Graph para criar equipes d
 
 ## <a name="initial-team-creation"></a>Criação da equipe inicial
 
-Todas as equipes têm o respaldo de grupos do Microsoft 365. A maneira mais rápida de configurar e utilizar sua equipe ao criar novas equipes através do Microsoft Graph é configurar um novo grupo do Microsoft 365, todos os proprietários e membros e convertê-los em uma equipe.
+Todas as equipes são apoiadas pelo Microsoft 365 groups. A maneira mais rápida de preparar sua equipe ao criar novas equipes por meio do Microsoft Graph é configurar um novo grupo do Microsoft 365, todos os proprietários e membros e convertê-lo em uma equipe.
 
 1. Criar um [grupo do Microsoft 365](https://support.office.com/article/learn-about-office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2) usando a operação [criar grupo](/graph/api/group-post-groups?view=graph-rest-1.0). Você pode especificar os proprietários e os membros. Certifique-se de que tenha os proprietários certos do grupo recém-criado, conforme descrito na Etapa 2.
 
@@ -53,7 +53,7 @@ Todas as equipes têm o respaldo de grupos do Microsoft 365. A maneira mais ráp
 
     O exemplo a seguir mostra a resposta. 
 
-    >**Observação:** o objeto de resposta mostrado aqui pode ser encurtado com fins de legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+    >**Observação:** O objeto de resposta mostrado pode ser reduzido para facilitar a leitura. Todas as propriedades serão retornadas de uma chamada real.
 
     ```http
     HTTP/1.1 200 OK
@@ -82,7 +82,7 @@ Todas as equipes têm o respaldo de grupos do Microsoft 365. A maneira mais ráp
 
     O exemplo a seguir mostra a resposta. 
 
-    >**Observação:** o objeto de resposta mostrado aqui pode ser encurtado com fins de legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+    >**Observação:** O objeto de resposta mostrado pode ser reduzido para facilitar a leitura. Todas as propriedades serão retornadas de uma chamada real.
 
     ```http
     HTTP/1.1 202 Accepted

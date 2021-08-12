@@ -5,12 +5,12 @@ author: cloudhandler
 localization_priority: Normal
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 79052f4b57b225df6222415556939b99a81f5628
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 855d8b34da6c8cc24bd01f448164dc0b0b68b521d40c78bc6a3b06b95235423c
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50957986"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54154879"
 ---
 # <a name="riskdetection-resource-type"></a>Tipo de recurso riskDetection
 
@@ -18,10 +18,10 @@ Namespace: microsoft.graph Representa informações sobre um risco detectado em 
 
 O Azure AD [](riskyuser.md) avalia continuamente os [](signin.md) riscos do usuário e os riscos de entrada de aplicativo ou usuário com base em vários sinais e aprendizado de máquina. Essa API fornece acesso programático a todas as detecções de risco em seu ambiente do Azure AD.
 
-Para obter mais informações sobre eventos de risco, consulte [Azure Active Directory Identity Protection](/azure/active-directory/identity-protection/overview-identity-protection).
+Para obter mais informações sobre eventos de risco, [consulte Azure Active Directory Identity Protection](/azure/active-directory/identity-protection/overview-identity-protection).
 
 >[!NOTE]
->Você deve ter uma licença do Azure AD Premium P1 ou P2 para usar a API de detecção de riscos.
+>Você deve ter uma Azure AD Premium P1 ou P2 para usar a API de detecção de risco.
 
 ## <a name="methods"></a>Métodos
 |Método|Tipo de retorno|Descrição|
@@ -45,7 +45,7 @@ Para obter mais informações sobre eventos de risco, consulte [Azure Active Dir
 |location|[signInLocation](../resources/signinlocation.md)|Local da assinatura.|
 |requestId|Cadeia de caracteres|ID da solicitação da login associada à detecção de risco. Essa propriedade será nula se a detecção de risco não estiver associada a uma login.|
 |riskDetail|riskDetail|Detalhes do risco detectado. Os valores possíveis são: `none`, `adminGeneratedTemporaryPassword`, `userPerformedSecuredPasswordChange`, `userPerformedSecuredPasswordReset`, `adminConfirmedSigninSafe`, `aiConfirmedSigninSafe`, `userPassedMFADrivenByRiskBasedPolicy`, `adminDismissedAllRiskForUser`, `adminConfirmedSigninCompromised`, `hidden`, `adminConfirmedUserCompromised`, `unknownFutureValue`.|
-|riskEventType|Cadeia de caracteres|O tipo de evento de risco detectado. Os valores possíveis `unlikelyTravel` são , , , , , , , , `anonymizedIPAddress` , , , `maliciousIPAddress` , , `unfamiliarFeatures` , `malwareInfectedIPAddress` e `suspiciousIPAddress` `leakedCredentials` `investigationsThreatIntelligence` `generic` `adminConfirmedUserCompromised` `mcasImpossibleTravel` `mcasSuspiciousInboxManipulationRules` `investigationsThreatIntelligenceSigninLinked` `maliciousIPAddressValidCredentialsBlockedIP` `unknownFutureValue` . Se a detecção de risco for uma detecção premium, mostrará `generic`|
+|riskEventType|String|O tipo de evento de risco detectado. Os valores possíveis `unlikelyTravel` são , , , , , , , , `anonymizedIPAddress` , , , `maliciousIPAddress` , , `unfamiliarFeatures` , `malwareInfectedIPAddress` e `suspiciousIPAddress` `leakedCredentials` `investigationsThreatIntelligence` `generic` `adminConfirmedUserCompromised` `mcasImpossibleTravel` `mcasSuspiciousInboxManipulationRules` `investigationsThreatIntelligenceSigninLinked` `maliciousIPAddressValidCredentialsBlockedIP` `unknownFutureValue` . Se a detecção de risco for uma detecção premium, mostrará `generic`|
 |riskLevel|riskLevel|Nível do risco detectado. Os possíveis valores são: `low`, `medium`, `high`, `hidden`, `none`, `unknownFutureValue`.|
 |riskState|riskState|O estado de um usuário ou de login de risco detectado. Os valores possíveis são: `none`, `confirmedSafe`, `remediated`, `dismissed`, `atRisk`, `confirmedCompromised`, `unknownFutureValue`.|
 |source|Cadeia de caracteres|Origem da detecção de risco. Por exemplo, `activeDirectory`. |

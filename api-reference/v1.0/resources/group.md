@@ -5,12 +5,12 @@ localization_priority: Priority
 author: Jordanndahl
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: f9b2c51dff3d8c1d5c06ff417fa93e73edc73ac1
-ms.sourcegitcommit: 6d247f44a6ee4d8515c3863ee8a2683163c9f829
+ms.openlocfilehash: b3fa7d85bb824289417f93153325defa33919cb0efc3a9435c166cd11d2ebf5d
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/14/2021
-ms.locfileid: "53430227"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54152758"
 ---
 # <a name="group-resource-type"></a>tipo de recurso de grupo
 
@@ -43,7 +43,7 @@ Esse recurso permite:
 | [Adicionar membro](../api/group-post-members.md) | Nenhum | Adicionar um usuário ou grupo a esse grupo postando na propriedade de navegação **members** (com suporte somente para grupos de segurança e grupos de segurança habilitados para email). |
 | [Adicionar proprietário](../api/group-post-owners.md) | Nenhum | Adicionar um novo proprietário para o grupo postando na propriedade de navegação **owners** (com suporte somente para grupos de segurança e grupos de segurança habilitados para email). |
 | [Criar configuração](../api/groupsetting-post-groupsettings.md) | [groupSetting](groupsetting.md) | Crie um objeto de configuração com base em um groupSettingTemplate. A solicitação POST deve fornecer settingValues para todas as configurações definidas no modelo. Somente modelos específicos de grupos podem ser usados para essa operação. |
-| [Excluir configuração](../api/groupsetting-delete.md) | Nenhum | Excluir um objeto de configuração. |
+| [Excluir configuração](../api/groupsetting-delete.md) | None | Excluir um objeto de configuração. |
 | [Obter configuração](../api/groupsetting-get.md) | [groupSetting](groupsetting.md) | Ler propriedades de um objeto de configuração específico. |
 | [Listar groupLifecyclePolicies](../api/group-list-grouplifecyclepolicies.md)  | Coleção [groupLifecyclePolicy](grouplifecyclepolicy.md) | Listar políticas de ciclo de vida de grupo. |
 | [Listar membros](../api/group-list-members.md) | Coleção [directoryObject](directoryobject.md) | Obter os usuários e grupos que são membros diretos desse grupo da propriedade de navegação **members**. |
@@ -92,7 +92,7 @@ Esse recurso permite:
 | [Obter configuração](../api/groupsetting-get.md) | [groupSetting](groupsetting.md) | Ler propriedades de um objeto de configuração específico. |
 | [Listar configurações](../api/groupsetting-list.md) | Conjunto [groupSetting](groupsetting.md) | Lista propriedades de todos os objetos de configuração. |
 | [Atualizar configuração](../api/groupsetting-update.md) | Nenhum | Atualizar um objeto setting. |
-| [Excluir configuração](../api/groupsetting-delete.md) | Nenhum | Excluir um objeto de configuração. |
+| [Excluir configuração](../api/groupsetting-delete.md) | None | Excluir um objeto de configuração. |
 | [Obter modelo de configuração](../api/groupsettingtemplate-get.md) | Nenhum | Ler as propriedades de um modelo de configuração. |
 | [Listar modelo de configuração](../api/groupsettingtemplate-list.md) | Nenhum | Listar propriedades de todos os modelos de configuração. |
 | **Extensões abertas** |||

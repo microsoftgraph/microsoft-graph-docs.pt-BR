@@ -1,18 +1,18 @@
 ---
-title: Modelos no microsoft graph Toolkit
+title: Modelos no Microsoft Graph Toolkit
 description: Use modelos personalizados para modificar o conteúdo de um componente.
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: 1db3f315cd89932481a0a2325eecae19592d9276
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: cf8297e5e0f70ee1014c11a3ecbfc10ed5cc0e0aa1e15c7f2bb7239545c9105e
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50963278"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54231373"
 ---
-# <a name="templates-in-the-microsoft-graph-toolkit"></a>Modelos no microsoft graph Toolkit
+# <a name="templates-in-the-microsoft-graph-toolkit"></a>Modelos no Microsoft Graph Toolkit
 
-A maioria dos Toolkit do Microsoft Graph suporta o uso de modelos personalizados para modificar o conteúdo de um componente.
+A maioria Graph Toolkit da Microsoft suporta o uso de modelos personalizados para modificar o conteúdo de um componente.
 
 Todos os componentes da Web suportam modelos com base no `<template>` elemento. Por exemplo, para substituir o modelo de um componente, adicione um `<template>` elemento dentro de um componente.
 
@@ -36,7 +36,7 @@ Todos os componentes da Web suportam modelos com base no `<template>` elemento. 
 </mgt-agenda>
 ```
 
-Se você estiver usando os componentes do Microsoft Graph Toolkit React, poderá usar o React para modelos de autoria. Para obter detalhes, [consulte Use the toolkit with React](../get-started/mgt-react.md).
+Se você estiver usando os componentes do Microsoft Graph Toolkit React, poderá usar React para modelos de autoria. Para obter detalhes, [consulte Use the toolkit with React](../get-started/mgt-react.md).
 
 ## <a name="data-type"></a>Tipo de dados
 

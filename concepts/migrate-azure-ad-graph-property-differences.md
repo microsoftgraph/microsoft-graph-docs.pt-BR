@@ -4,12 +4,12 @@ description: Descreve as diferenças de propriedade entre os recursos do Azure A
 author: dkershaw10
 localization_priority: Normal
 ms.prod: applications
-ms.openlocfilehash: aafb94aee11292a0c6ee2055c7340914936a89c1
-ms.sourcegitcommit: 9bc1652890fe49d7ad5e5b7177c8a682b1759b75
+ms.openlocfilehash: f49bd3382af0f16999b89cb67b582027b2f24c7c67f31763fe6b5c91df86046a
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52100097"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54205168"
 ---
 # <a name="property-differences-between-azure-ad-graph-and-microsoft-graph"></a>Diferenças de propriedade entre o Azure AD Graph e o Microsoft Graph
 
@@ -35,7 +35,7 @@ Como o usuário e o grupo são usados com tanta frequência, esses recursos apar
 | **immutableId** | beta &nbsp; - &nbsp; **onPremisesImmutableId** <br> v1.0 &nbsp; - &nbsp; **onPremisesImmutableId**  | |
 | **isCompromised** | beta &nbsp; - &nbsp; _Não disponível_ <br> v1.0 &nbsp; - &nbsp; _Não disponível_ | A API Graph [de proteção de identidade](/graph/api/resources/identityprotection-root?view=graph-rest-beta&preserve-view=true) da Microsoft fornece funcionalidades mais sofisticadas. |
 | **lastDirSyncDateTime** | beta &nbsp; - &nbsp; **onPremisesLastSyncDateTime** <br> v1.0 &nbsp; - &nbsp; **onPremisesLastSyncDateTime** | |
-| **mobile** | beta &nbsp; - &nbsp; **mobilePhone** <br> v1.0 &nbsp; - &nbsp; **mobilePhone** | |
+| **móvel** | beta &nbsp; - &nbsp; **mobilePhone** <br> v1.0 &nbsp; - &nbsp; **mobilePhone** | |
 | **provisioningErrors** | beta &nbsp; - &nbsp; _Não disponível_ <br> v1.0 &nbsp; - &nbsp; _Não disponível_ | Essa propriedade e suas informações são preterida.  No entanto, uma nova propriedade que descreve qualquer erro de provisionamento Conexão AD pode ser encontrada em **onPremisesProvisioningErrors** |
 | **refreshTokensValidFromDateTime** | beta &nbsp; - &nbsp; **signinSessionsValidFromDateTime**<br>v1.0 &nbsp; - &nbsp; **signinSessionsValidFromDateTime** | |
 | **signinNames** | beta &nbsp; - &nbsp; **identities/signInType** <br> identidades &nbsp; - v1.0/signInType &nbsp;  | Essa propriedade agora faz parte do [recurso objectIdentity.](/graph/api/resources/objectIdentity)|
@@ -199,7 +199,7 @@ O certificado do Azure AD Graph CertificateAuthorityInformation é renomeado par
 | **trustedIssuer** | emissor &nbsp; - beta &nbsp; <br> emissor v1.0 &nbsp; - &nbsp;  | |
 | **trustedIssuerSki** | beta &nbsp; - &nbsp; **issuerSki**<br> emissor v1.0Ski &nbsp; - &nbsp;  | |
 
-## <a name="next-steps"></a>Próximas Etapas
+## <a name="next-steps"></a>Próximos passos
 
 - Saiba mais [sobre as diferenças de](migrate-azure-ad-graph-method-differences.md) método entre o Azure AD Graph e o Microsoft Graph.
 - Revise a [lista de verificação](migrate-azure-ad-graph-planning-checklist.md) novamente.

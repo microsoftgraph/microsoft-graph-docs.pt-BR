@@ -3,12 +3,12 @@ title: Use o microsoft Graph Toolkit com Angular
 description: Começar a usar o microsoft Graph Toolkit em um Angular aplicativo.
 localization_priority: Normal
 author: elisenyang
-ms.openlocfilehash: b1985598985f85c0f33676fee49656324c65c7c5
-ms.sourcegitcommit: a2d81138de2a0404e611fbb535679199477ef3d5
+ms.openlocfilehash: 8cd4c8039111dbc5f764cd4e698cf02c9aa0e1e621982e13947cb62846e1ea52
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52813181"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54159656"
 ---
 # <a name="use-the-microsoft-graph-toolkit-with-angular"></a>Use o microsoft Graph Toolkit com Angular
 
@@ -38,7 +38,7 @@ npm install @microsoft/mgt
 ```
 ## <a name="initialize-a-provider"></a>Inicializar um provedor
 
-Os provedores Graph Toolkit Microsoft habilitam a autenticação e o acesso ao Microsoft Graph para os componentes. Para saber mais, confira [Usando os provedores](../providers/providers.md). O provedor usado depende do contexto no qual sua solução será usada.
+Os provedores do Kit de ferramentas do Microsoft Graph permitem autenticação e acesso ao Microsoft Graph para os componentes. Para saber mais, confira [Usando os provedores](../providers/providers.md). O provedor usado depende do contexto no qual sua solução será usada.
 
 O exemplo a seguir mostra como adicionar o [Provedor MSAL 2](../providers/msal2.md), mas você pode seguir o mesmo modelo com qualquer um dos provedores.
 >[!NOTE] 
@@ -68,7 +68,7 @@ export class AppComponent implements OnInit {
 ### <a name="create-an-appclient-id"></a>Criar uma ID de aplicativo/cliente
 Para obter uma ID do cliente, você precisa registrar [seu aplicativo](../../auth-register-app-v2.md) no Azure AD. 
 
-## <a name="add-components"></a>Adicionar componentes
+## <a name="add-components"></a>Adicionar os componentes
 
 Agora, você pode usar qualquer um dos componentes do Microsoft Graph Toolkit como faria normalmente em seus modelos HTML. Por exemplo, para adicionar o [componente Person](../components/person.md), adicione o seguinte ao seu modelo:
 
@@ -125,6 +125,6 @@ Agora, você pode usar sua sintaxe de associação personalizada para definir mo
 
 ## <a name="next-steps"></a>Próximas etapas
 - Confira este tutorial passo a passo sobre como [criar um Angular app](https://developer.microsoft.com/graph/blogs/a-lap-around-microsoft-graph-toolkit-day-14-using-microsoft-graph-toolkit-with-angular/).
-- Experimente os componentes no [playground](https://mgt.dev).
-- Faça uma pergunta sobre [Stack Overflow](https://aka.ms/mgt-question).
-- Relatar bugs ou deixar uma solicitação de recurso [GitHub](https://aka.ms/mgt).
+- Experimente os componentes do [playground](https://mgt.dev).
+- Faça uma pergunta no [Stack Overflow](https://aka.ms/mgt-question).
+- Relate bugs ou deixe uma solicitação de recurso no [GitHub](https://aka.ms/mgt).

@@ -5,12 +5,12 @@ author: Alice-at-Microsoft
 localization_priority: Normal
 ms.prod: w10
 doc_type: conceptualPageType
-ms.openlocfilehash: 14488ec20fd65976188583142301490314b06ccd
-ms.sourcegitcommit: 1b09298649d5606b471b4cbe1055419bbe2fc7e5
+ms.openlocfilehash: 196b59b6fbe8e48643cb434d8f53c198a73c6279e1969f152e7efec9e9d97834
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "52067649"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54225598"
 ---
 # <a name="software-updates-with-the-windows-update-for-business-deployment-service"></a>Atualizações de software com o serviço de implantação Windows Update for Business
 
@@ -26,7 +26,7 @@ O catálogo de serviços [de implantação](/graph/api/resources/windowsupdates-
 
 Efetivamente, o serviço de implantação atualmente  implanta apenas atualizações de recursos e atualizações de qualidade de segurança, conforme definido em seu catálogo. No momento, o serviço não implanta atualizações de qualidade não segurança ou atualizações de driver.
 
-Para saber mais sobre Windows 10 atualizações e manutenção, consulte Guia rápido para Windows [como um serviço.](https://docs.microsoft.com/windows/deployment/update/waas-quick-start)
+Para saber mais sobre Windows 10 atualizações e manutenção, consulte [Guia rápido para Windows como serviço](https://docs.microsoft.com/windows/deployment/update/waas-quick-start).
 
 ## <a name="identifying-updates-for-deployment"></a>Identificar atualizações para implantação
 
@@ -73,7 +73,7 @@ Veja a seguir alguns exemplos de atualizações de recursos no catálogo de serv
 | Atualização de recursos Windows 10 versão 20H1 | 20H1    |
 | Atualização de recursos Windows 10 versão 1909 | 1909    |
 | Atualização de recursos Windows 10 versão 1903 | 1903    |
-| Atualização de recursos Windows 10 versão 1809 | 1809    |
+| Atualização de recursos para Windows 10, versão 1809 | 1809    |
 
 Depois de identificar uma versão desejada, atribua-a como conteúdo a uma implantação usando [um featureUpdateReference](/graph/api/resources/windowsupdates-featureupdatereference) e especificando a **propriedade version.**
 

@@ -1,26 +1,26 @@
 ---
 title: Identificadores no Planner
-description: 'Os identificadores para objetos no Planner são valores de cadeia de caracteres gerados pelo serviço. Os valores têm 28 caracteres de comprimento e diferenciam maiúsculas de minúsculas. Quando transmitido como em, o serviço fará uma validação de formato simples do identificador, se a validação de formato falhar, os chamadores receberão uma resposta de erro de solicitação inválida (400) indicando esse problema. Receber esse erro indica um bug no aplicativo de chamada, como:'
+description: 'Os identificadores de objetos no Planner são valores de cadeia de caracteres gerados pelo serviço. Os valores têm 28 caracteres e são sensíveis a minúsculas. Quando passado como dentro, o serviço fará uma validação de formato simples do identificador, se a validação do formato falhar, os chamadores receberão uma resposta de erro de Solicitação Inossa (400) indicando esse problema. Receber esse erro indica um bug no aplicativo de chamada, como:'
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: conceptualPageType
-ms.openlocfilehash: 2b11662fc985a89afdcd8cedd9d50e8f7871b7f2
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 97381d57e8f23b6f032cdf0ebfc02a5cdf32ca2219a1d7c8127e472666250c58
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48037658"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54202158"
 ---
 # <a name="identifiers-in-planner"></a>Identificadores no Planner
 
 Namespace: microsoft.graph
 
-Os identificadores para objetos no Planner são valores de cadeia de caracteres gerados pelo serviço. Os valores têm 28 caracteres de comprimento e diferenciam maiúsculas de minúsculas. Quando transmitido como em, o serviço fará uma validação de formato simples do identificador, se a validação de formato falhar, os chamadores receberão uma resposta de erro de solicitação inválida (400) indicando esse problema. Receber esse erro indica um bug no aplicativo de chamada, como:
+Os identificadores de objetos no Planner são valores de cadeia de caracteres gerados pelo serviço. Os valores têm 28 caracteres e são sensíveis a minúsculas. Quando passado como dentro, o serviço fará uma validação de formato simples do identificador, se a validação do formato falhar, os chamadores receberão uma resposta de erro de Solicitação Inossa (400) indicando esse problema. Receber esse erro indica um bug no aplicativo de chamada, como:
 
-- O aplicativo de chamada processou o identificador como uma cadeia de caracteres não sensível a um caso. Os identificadores nas tarefas diferenciam maiúsculas de minúsculas.
-- O aplicativo de chamada truncava o identificador. Os identificadores nas tarefas têm 28 caracteres de comprimento.
-- O aplicativo de chamada tentou gerar um valor de identificador para um objeto nas tarefas. Os identificadores gerados pelo cliente não são aceitos. Todos os identificadores são gerados pelo serviço na criação de objetos.
+- O aplicativo de chamada processou o identificador como uma cadeia de caracteres sem maiúsculas de minúsculas. Os identificadores em Tarefas são sensíveis a minúsculas.
+- O aplicativo de chamada truncado o identificador. Os identificadores em Tarefas têm 28 caracteres.
+- O aplicativo de chamada tentou gerar um valor de identificador para um objeto em Tarefas. Identificadores gerados pelo cliente não são aceitos. Todos os identificadores são gerados pelo serviço após a criação de objetos.
 
-Essa validação **não é um recurso de segurança**. O objetivo é apenas informar aplicativos sobre problemas relacionados ao identificador comum durante o desenvolvimento do aplicativo, o que, de outra forma, é difícil de identificar.
+Essa validação não **é um recurso de segurança.** Ele só deve informar os aplicativos sobre problemas relacionados ao identificador comum durante o desenvolvimento do aplicativo, que são difíceis de identificar.
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: preetikr
 ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: d682bb3cff853a58d230cbb37eac441d67143e98
-ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
+ms.openlocfilehash: 2f9f92fd27c6bac37d573288835a805cce9b9d0b4632cb1f43f6b52d43a958fb
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51474114"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54178182"
 ---
 # <a name="keyvaluepair-resource-type"></a>Tipo de recurso keyValuePair
 
@@ -22,7 +22,7 @@ Par de valores principais para parâmetros de ação.
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|nome|String|Nome deste par chave-valor|
+|nome|Cadeia de caracteres|Nome deste par chave-valor|
 |value|Cadeia de caracteres|Valor deste par chave-valor|
 
 ## <a name="json-representation"></a>Representação JSON

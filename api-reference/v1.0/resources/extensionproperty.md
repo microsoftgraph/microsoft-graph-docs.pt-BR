@@ -5,24 +5,24 @@ localization_priority: Normal
 author: keylimesoda
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 93b5c066895bcc3b8adc801bd7f8bf8283cc3535
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 9960c8840dfc7284f91d88d4818b57202cdbf2a90a3c4c16445869666d5121c7
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50961983"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54141704"
 ---
 # <a name="extensionproperty-resource-type"></a>Tipo de recurso extensionProperty
 
 Namespace: microsoft.graph
 
-Representa uma extensão de diretório que pode ser usada para adicionar uma propriedade personalizada a objetos de diretório sem exigir um armazenamento de dados externo. Por exemplo, se uma organização tiver um aplicativo LOB (linha de negócios) que exija uma ID do Skype para cada usuário no diretório, o Microsoft Graph poderá ser usado para registrar uma nova propriedade chamada skypeId no objeto User do diretório e, em seguida, gravar um valor na nova propriedade para um usuário específico.
+Representa uma extensão de diretório que pode ser usada para adicionar uma propriedade personalizada a objetos de diretório sem exigir um armazenamento de dados externo. Por exemplo, se uma organização tiver um aplicativo LOB (linha de negócios) que exija uma ID de Skype para cada usuário no diretório, o Microsoft Graph poderá ser usado para registrar uma nova propriedade chamada skypeId no objeto User do diretório e, em seguida, gravar um valor na nova propriedade para um usuário específico.
 
 Extensões podem ser adicionadas ao [usuário,](user.md) [grupo,](group.md) [organização,](organization.md) [dispositivo,](device.md) [recursos de](application.md) aplicativo. Somente 100 valores de extensão, em todos *os* tipos e todos os aplicativos, podem ser gravados em qualquer único recurso do Azure AD. 
 
 > [!IMPORTANT]
-> As extensões de esquema do Azure AD descritas aqui estão disponíveis no Microsoft Graph apenas por motivos de compatibilidade com compatibilidade com vertidas.
-> Ele permite que você use o Microsoft Graph para continuar a gerenciar propriedades de extensão adicionadas por meio do Azure AD Graph ou [do Azure AD Connect](/azure/active-directory/hybrid/whatis-azure-ad-connect).
+> As extensões de esquema do Azure AD descritas aqui estão disponíveis no Microsoft Graph apenas por motivos de compatibilidade com compatibilidade.
+> Ele permite que você use o Microsoft Graph para continuar a gerenciar propriedades de extensão adicionadas por meio do Azure AD Graph ou do [Azure AD Conexão](/azure/active-directory/hybrid/whatis-azure-ad-connect).
 > Para novas extensões personalizadas, recomendamos que você use extensões de esquema do Microsoft Graph para adicionar [dados personalizados aos recursos](/graph/extensibility-overview).
 
 ## <a name="methods"></a>Métodos
@@ -37,10 +37,10 @@ Extensões podem ser adicionadas ao [usuário,](user.md) [grupo,](group.md) [org
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|appDisplayName|Cadeia de caracteres| Nome de exibição do objeto application no qual essa propriedade de extensão é definida. Somente leitura. |
+|appDisplayName|Cadeia de caracteres| Nome de exibição do objeto application no qual essa propriedade de extensão é definida. Apenas leitura. |
 |dataType|Cadeia de caracteres| Especifica o tipo de dados do valor que a propriedade extension pode manter. Os valores a seguir são suportados. Não anulável. <ul><li>`Binary` - Máximo de 256 bytes</li><li>`Boolean`</li><li>`DateTime` - Deve ser especificado no formato ISO 8601. Serão armazenados no UTC.</li><li>`Integer` - Valor de 32 bits.</li><li>`LargeInteger` - Valor de 64 bits.</li><li>`String` - Máximo de 256 caracteres</li></ul>|
-|isSyncedFromOnPremises|Booliano| Indica se essa propriedade de extensão foi sycned do diretório onpremises usando o Azure AD Connect. Somente leitura. |
-|name|Cadeia de caracteres| Nome da propriedade extension. Não anulável. |
+|isSyncedFromOnPremises|Booliano| Indica se essa propriedade de extensão foi sycned do diretório onpremises usando o Azure AD Conexão. Somente leitura. |
+|name|String| Nome da propriedade extension. Não anulável. |
 |targetObjects|Coleção de cadeias de caracteres| Os valores a seguir são suportados. Não anulável. <ul><li>`User`</li><li>`Group`</li><li>`Organization`</li><li>`Device`</li><li>`Application`</li></ul>|
 
 ## <a name="relationships"></a>Relações

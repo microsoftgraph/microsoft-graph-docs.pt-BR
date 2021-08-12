@@ -5,12 +5,12 @@ author: TarkanSevilmis
 localization_priority: Priority
 ms.prod: planner
 doc_type: conceptualPageType
-ms.openlocfilehash: ae72d196c5d27160c94e0ba0d2309b43ece06bb5
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 58b2ce49b337fe7b266886586dcef98b84677d6f89ef3aa58b3d714cb68d683a
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48037637"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54169393"
 ---
 # <a name="use-the-planner-rest-api"></a>Usar a API REST do Planner
 

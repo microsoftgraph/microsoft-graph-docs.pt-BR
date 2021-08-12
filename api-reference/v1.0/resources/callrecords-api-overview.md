@@ -5,12 +5,12 @@ author: williamlooney
 doc_type: conceptualPageType
 ms.prod: cloud-communications
 localization_priority: Priority
-ms.openlocfilehash: 56b81ceb902701c0125cee6e1b0f20087bbeac50
-ms.sourcegitcommit: af4b2fc18449c33979cf6d75bd680f40602ba708
+ms.openlocfilehash: 561a7c9d3a3a8c4538fad392d6408def024a44b73206c5832a2bf8581e888a9e
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "48601577"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54178518"
 ---
 # <a name="working-with-the-call-records-api-in-microsoft-graph"></a>Trabalhar com a API de registros de chamadas no Microsoft Graph
 

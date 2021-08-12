@@ -5,12 +5,12 @@ description: O objeto ItemActivityStat fornece informações sobre atividades qu
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: a33453fc884fc6dba7bd5b8fbcf4edc0261c11cb
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: 8fe252948bc717584204ec9be0c34cd23e5799d1bf382ef9aa45b28cfc21d6ca
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50238677"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54130083"
 ---
 # <a name="itemactivitystat-resource-type"></a>Tipo de recurso itemActivityStat
 
@@ -22,15 +22,15 @@ O **recurso itemActivityStat** fornece informações sobre atividades que ocorre
 
 | Propriedade         | Tipo                    | Descrição
 |:-----------------|:------------------------|:----------------------------------------
-| incompleteData   | [incompleteData][]      | Indica que as estatísticas nesse intervalo se baseiam em dados incompletos. Somente leitura.
-| isTrending       | Booliano                 | Indica se o item é "trending". Somente leitura.
+| incompleteData   | [incompleteData][]      | Indica que as estatísticas nesse intervalo se baseiam em dados incompletos. Apenas leitura.
+| isTrending       | Booliano                 | Indica se o item está "em tendência". Apenas leitura.
 | startDateTime    | DateTimeOffset          | Quando o intervalo é iniciado. Somente leitura.
-| endDateTime      | DateTimeOffset          | Quando o intervalo termina. Somente leitura.
-| create           | [itemActionStat][]      | Estatísticas sobre as ações **de** criação nesse intervalo. Somente leitura.
-| edit             | [itemActionStat][]      | Estatísticas sobre as ações **de edição** neste intervalo. Somente leitura.
+| endDateTime      | DateTimeOffset          | Quando o intervalo terminar. Somente leitura.
+| create           | [itemActionStat][]      | Estatísticas sobre as ações **de** criação nesse intervalo. Apenas leitura.
+| edit             | [itemActionStat][]      | Estatísticas sobre as ações **de edição** neste intervalo. Apenas leitura.
 | delete           | [itemActionStat][]      | Estatísticas sobre as ações **de exclusão** nesse intervalo. Somente leitura.
-| move             | [itemActionStat][]      | Estatísticas sobre as ações **de** movimentação nesse intervalo. Somente leitura.
-| access           | [itemActionStat][]      | Estatísticas sobre as ações **de** acesso neste intervalo. Somente leitura.
+| move             | [itemActionStat][]      | Estatísticas sobre as ações **de movimentação** nesse intervalo. Apenas leitura.
+| access           | [itemActionStat][]      | Estatísticas sobre as ações **de acesso** nesse intervalo. Somente leitura.
 
 [itemActionStat]: itemactionstat.md
 [incompleteData]: incompletedata.md

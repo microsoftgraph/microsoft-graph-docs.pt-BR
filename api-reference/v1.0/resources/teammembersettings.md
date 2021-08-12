@@ -1,31 +1,31 @@
 ---
-title: tipo de recurso teamMemberSettings
+title: Tipo de recurso teamMemberSettings
 description: Configurações para configurar se os membros podem executar determinadas ações, por exemplo, criar canais e adicionar bots na equipe.
 localization_priority: Normal
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 7087457ac68c98b40b1c89dc4b99b13ae85d46b2
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 0383392f47c7f386e20860ad83ba090ce9ebe7244e62e19397525dcf7835c0dd
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48094005"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54189279"
 ---
-# <a name="teammembersettings-resource-type"></a>tipo de recurso teamMemberSettings
+# <a name="teammembersettings-resource-type"></a>Tipo de recurso teamMemberSettings
 
 Namespace: microsoft.graph
 
 
 
-Configurações para configurar se os membros podem executar determinadas ações, por exemplo, criar canais e adicionar bots, na [equipe](team.md).
+Configurações configurar se os membros podem executar determinadas ações, por exemplo, criar canais e adicionar bots, na [equipe](team.md).
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |allowCreatePrivateChannels|Booliano|Se definido como true, os membros podem adicionar e atualizar canais privados.|
 |allowCreateUpdateChannels|Booliano|Se definido como true, os membros podem adicionar e atualizar canais.|
-|allowDeleteChannels|Booliano|Se definido como true, os membros podem excluir canais.|
+|allowDeleteChannels|Booliano|Se definido como true, os membros poderão excluir canais.|
 |allowAddRemoveApps|Booliano|Se definido como true, os membros podem adicionar e remover aplicativos.|
 |allowCreateUpdateRemoveTabs|Booliano|Se definido como true, os membros podem adicionar, atualizar e remover guias. |
 |allowCreateUpdateRemoveConnectors|Booliano|Se definido como true, os membros podem adicionar, atualizar e remover conectores.|

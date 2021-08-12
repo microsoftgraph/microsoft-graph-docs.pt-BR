@@ -1,0 +1,156 @@
+---
+title: Obter serviceHealth
+description: Recupere as propriedades e as relações de um objeto serviceHealth.
+author: payiAzure
+localization_priority: Normal
+ms.prod: service-communications
+doc_type: apiPageType
+ms.openlocfilehash: 34475cf7f2c1be3c701901e4be2929e5e262fe8d8879618317ab1431c7213405
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54253776"
+---
+# <a name="get-servicehealth"></a>Obter serviceHealth
+Namespace: microsoft.graph
+
+Recupere as propriedades e as relações de um [objeto serviceHealth.](../resources/servicehealth.md)
+
+Esta operação fornece as informações de saúde de um serviço especificado para um locatário.
+
+## <a name="permissions"></a>Permissões
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
+
+|Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
+|:---|:---|
+|Delegado (conta corporativa ou de estudante)|ServiceHealth.Read.All|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Aplicativo|ServiceHealth.Read.All|
+
+## <a name="http-request"></a>Solicitação HTTP
+
+<!-- {
+  "blockType": "ignored"
+}
+-->
+
+``` http
+GET /admin/serviceAnnouncement/healthOverviews/{ServiceName}
+```
+
+## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
+Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
+
+## <a name="request-headers"></a>Cabeçalhos de solicitação
+|Nome|Descrição|
+|:---|:---|
+|Autorização|{token} de portador. Obrigatório.|
+
+## <a name="request-body"></a>Corpo da solicitação
+Não forneça um corpo de solicitação para esse método.
+
+## <a name="response"></a>Resposta
+
+Se tiver êxito, este método retornará um código de resposta e um `200 OK` [objeto serviceHealth](../resources/servicehealth.md) no corpo da resposta.
+
+## <a name="examples"></a>Exemplos
+
+### <a name="example-1-get-the-properties-of-a-servicehealth-object"></a>Exemplo 1: Obter as propriedades de um objeto serviceHealth
+
+#### <a name="request"></a>Solicitação
+
+<!-- {
+  "blockType": "request",
+  "sampleKeys": ["Microsoft 365 suite"],
+  "name": "get_servicehealth"
+}
+-->
+
+``` http
+GET https://graph.microsoft.com/v1.0/admin/serviceAnnouncement/healthOverviews/Microsoft 365 suite
+```
+
+#### <a name="response"></a>Resposta
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.serviceHealth"
+}
+-->
+
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#admin/serviceAnnouncement/healthOverviews/$entity",
+    "service": "Microsoft 365 suite",
+    "status": "RestoringService",
+    "id": "OSDPPlatform"
+}
+```
+
+### <a name="example-2-include-navigation-property-issues"></a>Exemplo 2: Incluir problemas de propriedade de navegação
+
+#### <a name="request"></a>Solicitação
+
+<!-- {
+  "blockType": "request",
+  "sampleKeys": ["Microsoft 365 suite"],
+  "name": "get_servicehealth_with_issues"
+}
+-->
+
+``` http
+GET https://graph.microsoft.com/v1.0/admin/serviceAnnouncement/healthOverviews/Microsoft 365 suite?$expand=issues
+```
+
+#### <a name="response"></a>Resposta
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.serviceHealth"
+}
+-->
+
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#admin/serviceAnnouncement/healthOverviews(issues())/$entity",
+  "service": "Microsoft 365 suite",
+  "status": "ServiceOperational",
+  "id": "OSDPPlatform",
+  "issues": [
+        {
+          "startDateTime": "2020-11-04T00:00:00Z",
+          "endDateTime": "2020-11-20T17:00:00Z",
+          "lastModifiedDateTime": "2020-11-20T17:56:31.39Z",
+          "title": "Intermittently unable to access some Microsoft 365 services",
+          "id": "MO226574",
+          "impactDescription": "Users may have been intermittently unable to access some Microsoft 365 services.",
+          "classification": "Advisory",
+          "origin": "Microsoft",
+          "status": "ServiceRestored",
+          "service": "Exchange Online",
+          "feature": "Tenant Administration (Provisioning, Remote PowerShell)",
+          "featureGroup": "Management and Provisioning",
+          "isResolved": true,
+          "details": [],
+          "posts": [
+              {
+                "createdDateTime": "2020-11-12T07:07:38.97Z",
+                "postType": "Regular",
+                "description": {
+                    "contentType": "Text",
+                    "content": "Users may have been intermittently unable to access some Microsoft 365 services. We'll provide an update within 30 minutes."
+                  }
+              }
+          ]
+        }
+    ]
+}
+```

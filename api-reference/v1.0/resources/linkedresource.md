@@ -1,47 +1,47 @@
 ---
-title: tipo de recurso linkedResource
-description: Representa a fonte do todoTask
+title: Tipo de recurso linkedResource
+description: Representa a origem do todoTask
 author: avijityadav
 localization_priority: Normal
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 70303742db1dabb866585be7099cb222f8a428bd
-ms.sourcegitcommit: d9457ac1b8c2e8ac4b9604dd9e116fd547d2bfbb
+ms.openlocfilehash: 8164e0436cdedee66c59fbc83b7f4fa7d594a4623c2a62bcab6d19cca4c52d28
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "48797184"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54237624"
 ---
-# <a name="linkedresource-resource-type"></a>tipo de recurso linkedResource
+# <a name="linkedresource-resource-type"></a>Tipo de recurso linkedResource
 
 Namespace: microsoft.graph
 
 
-Representa um item em um aplicativo parceiro relacionado a um [todoTask](./todotask.md). Um exemplo é um email de onde a tarefa foi criada. Um objeto **linkedResource** armazena informações sobre esse aplicativo de origem e permite que você vincule novamente ao item relacionado. Você pode ver o **linkedResource** no modo de exibição detalhes da tarefa, conforme mostrado.
+Representa um item em um aplicativo parceiro relacionado a [um todoTask](./todotask.md). Um exemplo é um email de onde a tarefa foi criada. Um **objeto linkedResource** armazena informações sobre esse aplicativo de origem e permite que você vincule de volta ao item relacionado. Você pode ver **o linkedResource** na exibição de detalhes da tarefa, conforme mostrado.
 
 ![Recurso vinculado no painel de detalhes da tarefa](/graph/images/todo-linkedresource-taskdetail.png)
 
-Alguns objetos **linkedResource** não estão associados a qualquer URL da Web, e nesse caso, a propriedade **WebUrl** não é necessária. Por exemplo, o item vinculado pode ser de um aplicativo de negócios personalizado ou de uma plataforma nativa, como um aplicativo do SMS em um telefone celular. Veja como um **linkedResource** aparece com e sem uma URL.
+Alguns **objetos linkedResource** não estão associados a URLs da Web, nesse caso, a **propriedade webUrl** não é necessária. Por exemplo, o item vinculado pode ser de um aplicativo comercial personalizado ou aplicativo de plataforma nativa, como um aplicativo SMS em um telefone celular. Veja como um **linkedResource** aparece com e sem uma URL.
 
 ![Recurso vinculado com e sem URL](/graph/images/todo-linkedresource.png)
 
 ## <a name="methods"></a>Métodos
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
-|[Listar linkedResources](../api/todotask-list-linkedresources.md)|coleção [linkedResource](../resources/linkedresource.md)|Obtenha o linkedResources da propriedade de navegação linkedResources.|
-|[Criar linkedResource](../api/todotask-post-linkedresources.md)|[linkedResource](../resources/linkedresource.md)|Criar um novo objeto linkedResources.|
-|[Obter linkedResource](../api/linkedresource-get.md)|[linkedResource](../resources/linkedresource.md)|Leia as propriedades e os relacionamentos de um objeto [linkedResource](../resources/linkedresource.md) .|
-|[Atualizar linkedResource](../api/linkedresource-update.md)|[linkedResource](../resources/linkedresource.md)|Atualiza as propriedades de um objeto [linkedResource](../resources/linkedresource.md) .|
-|[Excluir linkedResource](../api/linkedresource-delete.md)|Nenhum|Exclui um objeto [linkedResource](../resources/linkedresource.md) .|
+|[Listar linkedResources](../api/todotask-list-linkedresources.md)|[Coleção linkedResource](../resources/linkedresource.md)|Obter o linkedResources da propriedade de navegação linkedResources.|
+|[Criar linkedResource](../api/todotask-post-linkedresources.md)|[linkedResource](../resources/linkedresource.md)|Crie um novo objeto linkedResources.|
+|[Obter linkedResource](../api/linkedresource-get.md)|[linkedResource](../resources/linkedresource.md)|Leia as propriedades e as relações de um [objeto linkedResource.](../resources/linkedresource.md)|
+|[Atualizar linkedResource](../api/linkedresource-update.md)|[linkedResource](../resources/linkedresource.md)|Atualize as propriedades de um [objeto linkedResource.](../resources/linkedresource.md)|
+|[Excluir linkedResource](../api/linkedresource-delete.md)|None|Exclui um [objeto linkedResource.](../resources/linkedresource.md)|
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|applicationName|Cadeia de caracteres|Campo que indica o nome do aplicativo de origem que está enviando o **linkedResource** .|
-|displayName|String|Campo que indica o título do **linkedResource** .|
-|externalId|Cadeia de caracteres|ID do objeto que está associado a essa tarefa no sistema de parceiros ou de terceiros.|
-|id|String|ID gerada pelo servidor para o **linkedResource** . Herdado de [entidade](../resources/entity.md).|
-|webUrl|String|Link profundo para o **linkedResource** .|
+|applicationName|Cadeia de caracteres|Campo indicando o nome do aplicativo da fonte que está enviando **o linkedResource**.|
+|displayName|String|Campo que indica o título do **linkedResource**.|
+|externalId|Cadeia de caracteres|ID do objeto associado a essa tarefa no sistema de terceiros/parceiro.|
+|id|String|ID gerada pelo **servidor para o linkedResource**. Herdado da [entidade](../resources/entity.md).|
+|webUrl|String|Link profundo para **o linkedResource**.|
 
 ## <a name="relationships"></a>Relações
 Nenhum

@@ -6,12 +6,12 @@ localization_priority: Normal
 description: O recurso remoteItem indica que um driveItem faz referência a um item que existe em outra unidade.
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: d913645b0563834f0493243aa006c34058991f7c
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: 3b53c652b79ab6f3645ad372403b2a4689783d6d5a13616e89b5779f81b61174
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50240371"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54216641"
 ---
 # <a name="remoteitem-resource-type"></a>Tipo de recurso RemoteItem
 

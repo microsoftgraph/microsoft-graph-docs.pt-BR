@@ -5,12 +5,12 @@ author: mecampos
 localization_priority: Priority
 doc_type: conceptualPageType
 ms.prod: search
-ms.openlocfilehash: 63e11b086592a46a4e519a2ab7c79c20d049213a
-ms.sourcegitcommit: cec76c5a58b359d79df764c849c8b459349b3b52
+ms.openlocfilehash: 027becb5edeef1823444cdfb471925af238d1b4c275c0a21af10c72c60547419
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "52645774"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54221100"
 ---
 # <a name="working-with-the-connectors-api"></a>Trabalhando com a API de conectores
 

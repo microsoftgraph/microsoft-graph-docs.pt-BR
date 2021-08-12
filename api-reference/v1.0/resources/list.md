@@ -6,12 +6,12 @@ localization_priority: Priority
 ms.prod: sharepoint
 description: O recurso de lista representa uma lista em um site.
 doc_type: resourcePageType
-ms.openlocfilehash: 0f7c8600b8a4d8f41e6dd6e6ad4240252c004bbf
-ms.sourcegitcommit: ada6eab637b9b318129aefb98edbe7316399d9ba
+ms.openlocfilehash: 736c5d092587f5e6e57fc564bf9e5a22bc2efcea00c18bad4d4b5c7cba661971
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/07/2021
-ms.locfileid: "53317004"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54202235"
 ---
 # <a name="list-resource"></a>Recurso List
 
@@ -123,7 +123,7 @@ O recurso **list** tem as seguintes relações com outros recursos.
 
 | Nome da relação | Tipo                             | Descrição
 |:------------------|:---------------------------------|:----------------------
-| **drive**         | [drive][]                        | Presente somente em bibliotecas de documentos. Permite o acesso à lista como um recurso de [unidade][] com [driveItems][driveItem].
+| **drive**         | [drive][]                        | Presente apenas em bibliotecas de documentos. Permite o acesso à lista como um recurso [drive][] com [driveItems][driveItem].
 | **items**         | Collection([listItem][])         | Todos os itens contidos na lista.
 | **columns**       | Collection([columnDefinition][]) | A coleção de definições de campo para esta lista.
 | **contentTypes**  | Collection([contentType][])      | A coleção de tipos de conteúdo presentes nesta lista.
