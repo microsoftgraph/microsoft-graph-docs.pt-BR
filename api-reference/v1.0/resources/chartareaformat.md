@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 82855d03a6dfdd23be9c1bd71a77ecee1af4f6e0
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 2dd257316ab63d9dcfb9c1e6af43a00145274e7fc1ddae4e1f4fea3f16a4af8d
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48032814"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54249325"
 ---
 # <a name="chartareaformat-resource-type"></a>Tipo de recurso ChartAreaFormat
 
@@ -19,8 +19,8 @@ Namespace: microsoft.graph
 Encapsula as propriedades de formato da área de gráfico geral.
 
 
-## <a name="methods"></a>Methods
-Nenhum
+## <a name="methods"></a>Métodos
+None
 
 ## <a name="properties"></a>Propriedades
 Nenhuma

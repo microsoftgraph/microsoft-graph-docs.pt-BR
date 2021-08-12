@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 538ebc7586895a7c51b905a4b88183b48562c35f
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: d6cc990bb532742ff843e47e0578afb668defa481cf61a5c1014827844f68816
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52752340"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54192366"
 ---
 # <a name="iosmanagedappregistration-resource-type"></a>iosManagedAppRegistration resource type
 
@@ -24,7 +24,7 @@ O recurso ManagedAppRegistration representa os detalhes de um aplicativo, com ca
 
 Herda de [managedAppRegistration](../resources/intune-mam-managedappregistration.md)
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
 |[Listar iosManagedAppRegistrations](../api/intune-mam-iosmanagedappregistration-list.md)|Coleção [iosManagedAppRegistration](../resources/intune-mam-iosmanagedappregistration.md)|Lista propriedades e relações dos objetos [iosManagedAppRegistration](../resources/intune-mam-iosmanagedappregistration.md).|

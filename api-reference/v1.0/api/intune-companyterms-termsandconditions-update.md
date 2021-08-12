@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 49c9d7f1c80c039822ac798cc1de4d721288a0b4
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: c4ef937ad95dbacf1bf7f631d2586c998571148875987495fd1207cab56d8aa7
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52754011"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54219168"
 ---
 # <a name="update-termsandconditions"></a>Atualizar termsAndConditions
 
@@ -55,9 +55,9 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [termsAn
 |id|Cadeia de caracteres|Identificador exclusivo da política de T&C.|
 |createdDateTime|DateTimeOffset|DateTime em que o objeto foi criado.|
 |lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto.|
-|displayName|Cadeia de caracteres|Nome fornecido pelo administrador para a política de T&C. |
-|descrição|Cadeia de caracteres|Descrição fornecida pelo administrador para a política de T&C.|
-|title|Cadeia de caracteres|Título dos termos e condições fornecido pelo administrador. Isso é exibido ao usuário nos prompts de aceitação da política de T&C.|
+|displayName|String|Nome fornecido pelo administrador para a política de T&C. |
+|description|Cadeia de caracteres|Descrição fornecida pelo administrador para a política de T&C.|
+|title|String|Título dos termos e condições fornecido pelo administrador. Isso é exibido ao usuário nos prompts de aceitação da política de T&C.|
 |bodyText|String|Corpo de texto de termos e condições fornecido pelo administrador, normalmente os termos em si. Isso é exibido ao usuário nos prompts de aceitação da política de T&C.|
 |acceptanceStatement|String|Explicação dos termos e condições fornecida pelo administrador, normalmente para descrever o que significa aceitar os termos e condições definidos na política de T&C. Isso é exibido ao usuário nos prompts de aceitação da política de T&C.|
 |version|Int32|Inteiro que indica a versão atual dos termos. Incrementado quando um administrador faz uma alteração nos termos e deseja solicitar que os usuários aceitem novamente a política de T&C modificada.|

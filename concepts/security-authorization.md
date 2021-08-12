@@ -4,12 +4,12 @@ description: Os dados de segurança acessíveis por meio da API de Segurança do
 author: preetikr
 localization_priority: Priority
 ms.prod: security
-ms.openlocfilehash: 2814bf52b575176c95d6ae69f46008e7a56a4cd1
-ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
+ms.openlocfilehash: 3064f5f905503f4406f01dba0b34e243c443dafe81c4db8567c86e875abfd4e2
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48288165"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54233641"
 ---
 # <a name="authorization-and-the-microsoft-graph-security-api"></a>Autorização e API de Segurança do Microsoft Graph
 
@@ -77,7 +77,7 @@ Para registrar seu aplicativo:
 2. Selecione **Novo registro**.
 3. Na página de registro do novo aplicativo, digite um valor para **Nome** e selecione os tipos de conta aos quais deseja dar suporte. No campo **URI de redirecionamento**, insira o URL de redirecionamento.
 4. Selecione **Registrar** para criar o aplicativo e exibir a respectiva página de visão geral. *
-5. Acesse a página**permissões de API** do aplicativo.
+5. Acesse a página **permissões de API** do aplicativo.
 6. Selecione **Adicionar uma permissão** e selecione **Microsoft Graph** no submenu. Selecione **Permissões delegadas**. Use a caixa de pesquisa para localizar e selecionar as permissões necessárias. Para obter uma lista de permissões, consulte [Permissões de segurança](permissions-reference.md#security-permissions).
 
     >**Observação** A API de Segurança do Microsoft Graph requer o escopo *.Read.All para consultas GET, e o escopo *.ReadWrite.All para consultas PATCH/POST/DELETE.

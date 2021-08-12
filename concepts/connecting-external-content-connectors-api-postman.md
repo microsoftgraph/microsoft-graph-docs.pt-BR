@@ -5,12 +5,12 @@ author: mecampos
 localization_priority: Priority
 doc_type: conceptualPageType
 ms.prod: search
-ms.openlocfilehash: 0f0a1817ed0bcc215f4a8f5197166537b2aed36c
-ms.sourcegitcommit: cec76c5a58b359d79df764c849c8b459349b3b52
+ms.openlocfilehash: 9e520b5fe4d777edbe0a1e7f2f5300486b1772ea3c1dcf54a718854e56bd243d
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "52645677"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54126141"
 ---
 # <a name="use-postman-with-the-microsoft-graph-connectors-api"></a>Usar o Postman com a API de conectores do Microsoft Graph
 
@@ -19,11 +19,11 @@ Este tópico descreve como você pode usar as APIs do conector do Microsoft Grap
 ## <a name="prerequisites"></a>Pré-requisitos
 
 * Uma conta Microsoft ou uma conta corporativa ou de estudante.
-* Acesso a um locatário de desenvolvedor do Microsoft 365. Caso ainda não tenha uma, inscreva-se no [Programa para desenvolvedores do Microsoft 365] para obter uma assinatura de desenvolvedor gratuita.
+* Acesso a um locatário de desenvolvedor do Microsoft 365. Se você não tiver um, poderá se inscrever no [Programa para Desenvolvedores do Microsoft 365] para obter uma assinatura de desenvolvedor gratuita.
 
 ## <a name="step-1---import-the-microsoft-graph-postman-collection"></a>Etapa 1- Importar a coleção Postman do Microsoft Graph
 
-Para usar a coleção Postman, você precisa importá-la para o seu espaço de trabalho do Postman. Faça isso em um navegador da Web.
+Para usar a coleção Postman, você precisa importá-la para seu espaço de trabalho Postman. Faça isso a partir de um navegador da web.
 
 1. Acesse [Postman](https://identity.getpostman.com/signup) e inscreva-se. Se você já tiver uma conta do Postman, poderá [Entrar](https://identity.getpostman.com/login).
 
@@ -243,7 +243,7 @@ Location: https://graph.microsoft.com/beta/external/connections/contosotasks/ope
 ```
 
 > [!NOTE]
-> Registrar o esquema de conexão é uma operação assíncrona, portanto, não ingira itens na conexão até que o esquema de conexão esteja no estado Concluído. Para verificar o status do esquema de conexão, execute a seguinte solicitação:
+> Registrar o esquema de conexão é uma operação assíncrona, portanto, não ingerir itens na conexão até que o esquema de conexão esteja no estado Concluído. Para verificar o status do esquema de conexão, execute a seguinte solicitação:
 > ```http
 > GET /external/connections/contosotasks/operations/616bfeed-666f-4ce0-8cd9-058939010bfc 
 > ```

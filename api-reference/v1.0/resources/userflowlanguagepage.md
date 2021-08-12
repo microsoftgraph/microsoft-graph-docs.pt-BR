@@ -5,12 +5,12 @@ author: jkdouglas
 localization_priority: Normal
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: b3f3610607bfeef5f3e47a110c2491b635555494
-ms.sourcegitcommit: d033e7de12bccf92efcbe40c7b671e419a3e5b94
+ms.openlocfilehash: 0f25fd015168be97d3c737df73c11dd337191607cfca81f8fdeaca79b58398cb
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2021
-ms.locfileid: "51882796"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54230407"
 ---
 # <a name="userflowlanguagepage-resource-type"></a>Tipo de recurso userFlowLanguagePage
 
@@ -24,7 +24,7 @@ Determina as páginas de idioma de fluxo do usuário que são mostradas aos usu�
 |:---|:---|:---|
 |[Obter userFlowLanguagePage](../api/userflowlanguagepage-get.md)|[userFlowLanguagePage](../resources/userflowlanguagepage.md)|Recupere os valores de um objeto [userFlowLanguagePage](../resources/userflowlanguagepage.md) padrão ou personalizado.|
 |[Atualizar userFlowLanguagePage](../api/userflowlanguagepage-put.md)|[userFlowLanguagePage](../resources/userflowlanguagepage.md)|Atualize os valores em um [objeto userFlowLanguagePage](../resources/userflowlanguagepage.md) personalizado.|
-|[Excluir userFlowLanguagePage](../api/userflowlanguagepage-delete.md)|Nenhum|Exclui os valores de um [objeto userFlowLanguagePage](../resources/userflowlanguagepage.md) personalizado.|
+|[Excluir userFlowLanguagePage](../api/userflowlanguagepage-delete.md)|None|Exclui os valores de um [objeto userFlowLanguagePage](../resources/userflowlanguagepage.md) personalizado.|
 
 ## <a name="properties"></a>Propriedades
 

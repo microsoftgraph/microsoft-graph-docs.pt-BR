@@ -1,15 +1,15 @@
 ---
-title: Usar a API de Pesquisa da Microsoft no Microsoft Graph refinar consultas com agregação
-description: Você pode usar a API de Pesquisa da Microsoft para recuperar agregações
+title: Usar a API Pesquisa da Microsoft no Microsoft Graph refinar consultas com agregação
+description: Você pode usar a API Pesquisa da Microsoft para recuperar agregações
 author: nmoreau
 localization_priority: Normal
 ms.prod: search
-ms.openlocfilehash: fad049649172750cf2e362d2558cfc247467a6ed
-ms.sourcegitcommit: 1d2adc4062c8e83d23768682cf66a731bccd313c
+ms.openlocfilehash: edb0618751d54ca58578d56f7ee835bd9eeb7638fd9d4a4f5602708c11d48e5a
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "49883190"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54138291"
 ---
 # <a name="refine-search-results-using-aggregations-preview"></a>Refinar resultados de pesquisa usando agregação (visualização)
 
@@ -20,10 +20,10 @@ Refine os resultados da pesquisa e mostre sua distribuição no índice.
 O exemplo a seguir pesquisa **recursos listItem** e agrega resultados por seu tipo de arquivo e classe de conteúdo, ambos são valores de cadeia de caracteres.
 
 A resposta inclui dois [objetos searchBucket](/graph/api/resources/searchbucket?view=graph-rest-beta&preserve-view=true) para as duas agregação:
-- A **propriedade** de chave especifica o valor real (por ou ) para os objetos `FileType` `contentclass` **listItem** correspondentes que são agregados no mesmo bucket por esse valor.
-- A **propriedade** count especifica o número de tais objetos agregados no mesmo bucket. Observe que esse número é uma aproximação do número de combinações e não fornecerá um número exato de combinações.
-- Buckets de resultados agregados por tipo de arquivo são organizados por contagem em ordem decrescente. Neste exemplo, há 3 buckets para 3 tipos de arquivo: `docx` `xlsx` e `pptx` .
-- Buckets de resultados agregados por classe de conteúdo são organizados pelo valor da cadeia de caracteres da classe de conteúdo em ordem decrescente. Neste exemplo, há apenas um bucket com todos os objetos correspondentes compartilhando a mesma classe de `STS_ListItem_DocumentLibrary` conteúdo.
+- A **propriedade** key especifica o valor real (por ou ) para os objetos `FileType` `contentclass` **listItem** correspondentes que são agregados no mesmo bucket por esse valor.
+- A **propriedade count** especifica o número de tais objetos agregados no mesmo bucket. Observe que esse número é uma aproximação do número de combinações e não fornecerá um número exato de combinações.
+- Buckets de resultados agregados por tipo de arquivo são classificação por contagem em ordem decrescente. Neste exemplo, há 3 buckets para 3 tipos de arquivo: `docx` `xlsx` , e `pptx` .
+- Buckets de resultados agregados por classe de conteúdo são classificação pelo valor de cadeia de caracteres da classe de conteúdo em ordem decrescente. Neste exemplo, há apenas um bucket com todos os objetos correspondentes compartilhando a mesma classe de conteúdo, `STS_ListItem_DocumentLibrary` .
 
 ### <a name="request"></a>Solicitação
 
@@ -126,11 +126,11 @@ Content-type: application/json
 }
 ```
 
-## <a name="example-2-apply-an-aggregation-filter-based-on-a-previous-request"></a>Exemplo 2: Aplicar um filtro de agregação com base em uma solicitação anterior
+## <a name="example-2-apply-an-aggregation-filter-based-on-a-previous-request"></a>Exemplo 2: aplicar um filtro de agregação com base em uma solicitação anterior
 
-Neste exemplo, aplicamos um filtro de agregação baseado no **aggregationFilterToken** retornado como o campo `docx` no exemplo `FileType` 1.
+Neste exemplo, aplicamos um filtro de agregação baseado na **agregaçãoFilterToken** retornada como o `docx` campo no exemplo `FileType` 1.
 
-O valor da cadeia de caracteres atribuído à propriedade **aggregationFilters** segue o formato **"{field}: \\ "{aggregationFilterToken} \\ ""**. Se vários valores para o mesmo filtro são necessários, o valor de cadeia de caracteres atribuído à propriedade **aggregationFilters** deve seguir este formato: **"{field}:or( \\ "{aggregationFilterToken1} \\ ", \\ "{aggregationFilterToken2} \\ ")"**.
+O valor da cadeia de caracteres atribuído à propriedade **aggregationFilters** segue o formato **"{field}: \\ "{aggregationFilterToken} \\ ""**. Se vários valores para o mesmo filtro são necessários, o valor de cadeia de caracteres atribuído à propriedade **aggregationFilters** deve seguir esse formato : **"{field}:or( \\ "{aggregationFilterToken1} \\ ", \\ "{aggregationFilterToken2} \\ ")"**.
 
 ### <a name="request"></a>Solicitação
 
@@ -205,14 +205,14 @@ Content-type: application/json
 
 ## <a name="example-3-request-aggregation-by-a-numeric-field"></a>Exemplo 3: Solicitar agregação por um campo numérico
 
-O exemplo a seguir pesquisa **recursos driveItem** e agrega resultados por seu tamanho, que é um valor numérico. A solicitação especifica a agregação por 3 intervalos de tamanho:
-- Tamanho menor que 100
+O exemplo a seguir pesquisa **recursos driveItem** e agrega resultados por seu tamanho, que é um valor numérico. A solicitação especifica a agregação por intervalos de 3 tamanhos:
+- Tamanho inferior a 100
 - Tamanho entre 100 e 1000
-- Tamanho 1000 e superior
+- Tamanho 1000 ou superior
 
-A resposta inclui três **objetos searchBucket,** um para cada agregação de intervalo de tamanho:
-- Os 2 buckets dos intervalos de tamanho inferior não incluem nenhuma pesquisa coincidente.
-- Todas as 9 pesquisas têm tamanhos 1.000 ou superior.
+A resposta inclui 3 objetos **searchBucket,** um para cada agregação de intervalo de tamanho:
+- Os 2 buckets dos intervalos de tamanho inferior não incluem nenhuma pesquisa.
+- Todas as 9 combinações de pesquisa têm tamanhos 1000 ou superiores.
 
 ### <a name="request"></a>Solicitação
 
@@ -308,7 +308,7 @@ Content-type: application/json
 
 ## <a name="known-limitations"></a>Limitações conhecidas
 
-As agregação são suportadas apenas para itens do SharePoint ou do OneDrive. Não há suporte para mensagem **ou** **evento.**
+As agregaçãos são suportadas apenas para SharePoint ou OneDrive itens. Eles não têm suporte para mensagem **ou** **evento**.
 
 ## <a name="next-steps"></a>Próximas etapas
 

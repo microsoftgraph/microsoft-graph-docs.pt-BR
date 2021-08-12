@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 2aedb1869a0dee1cc9e0d13fa85ca3c06bcc1d1c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 160fcb95fd8ffe4b4d0c2d4e9233afe3492ef32d27b910ee40bb7519b20e591a
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48032821"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54121414"
 ---
 # <a name="chart-resource-type"></a>Tipo de recurso Chart
 
@@ -19,16 +19,16 @@ Namespace: microsoft.graph
 Representa um objeto chart em uma pasta de trabalho.
 
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
 |[Get Chart](../api/chart-get.md) | [WorkbookChart](chart.md) |Leia as propriedades e os relacionamentos do objeto de gráfico.|
 |[Create ChartSeries](../api/chart-post-series.md) |[WorkbookChartSeries](chartseries.md)| Crie uma nova ChartSeries postando na coleção de séries.|
-|[List series](../api/chart-list-series.md) |Coleção [WorkbookChartSeries](chartseries.md)| Obtenha uma coleção de objetos ChartSeries.|
+|[List series](../api/chart-list-series.md) |[Coleção WorkbookChartSeries](chartseries.md)| Obtenha uma coleção de objetos ChartSeries.|
 |[Update](../api/chart-update.md) | [WorkbookChart](chart.md)   |Atualize um objeto Chart. |
 |[Image](../api/chart-image.md)|Cadeia de caracteres de imagem codificada em base64|Processa o gráfico como uma imagem codificada em base64, dimensionando o gráfico para se ajustar às dimensões especificadas.|
-|[Delete](../api/chart-delete.md)|Nenhum|Exclui o objeto de gráfico.|
+|[Delete](../api/chart-delete.md)|None|Exclui o objeto de gráfico.|
 |[SetData](../api/chart-setdata.md)|Nenhum|Redefine os dados de origem do gráfico.|
 |[Setposition](../api/chart-setposition.md)|Nenhum|Posiciona o gráfico em relação às células na planilha.|
 |[List](../api/chart-list.md) | Conjunto [WorkbookChart](chart.md)  |Obtenha a coleção de objetos do gráfico. |
@@ -52,7 +52,7 @@ Representa um objeto chart em uma pasta de trabalho.
 |dataLabels|[WorkbookChartDataLabels](chartdatalabels.md)|Representa os rótulos de dados no gráfico. Somente leitura.|
 |format|[WorkbookChartAreaFormat](chartareaformat.md)|Encapsula as propriedades de formato da área do gráfico. Somente leitura.|
 |legend|[WorkbookChartLegend](chartlegend.md)|Representa a legenda do gráfico. Somente leitura.|
-|series|Coleção [WorkbookChartSeries](chartseries.md)|Representa uma única série ou uma coleção de séries no gráfico. Somente leitura.|
+|series|[Coleção WorkbookChartSeries](chartseries.md)|Representa uma única série ou uma coleção de séries no gráfico. Somente leitura.|
 |title|[WorkbookChartTitle](charttitle.md)|Representa o título do gráfico especificado, incluindo o texto, a visibilidade, a posição e a formatação. Somente leitura.|
 |planilha|[WorkbookWorksheet](worksheet.md)|A planilha que contém o gráfico atual. Somente leitura.|
 

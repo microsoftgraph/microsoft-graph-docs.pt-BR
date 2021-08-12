@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 6d4f10e4cd12b71664313ce368536ee001f090ab
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: b20f243738b7a7d096341ba04df3d03382387b5ee0b17055290f80b521a70c2e
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52751199"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54249234"
 ---
 # <a name="devicemanagementpartnertenantstate-enum-type"></a>Tipo de número deviceManagementPartnerTenantState
 

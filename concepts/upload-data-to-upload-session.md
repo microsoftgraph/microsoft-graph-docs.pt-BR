@@ -5,12 +5,12 @@ author: nilakhan
 localization_priority: Priority
 ms.prod: universal-print
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: bd34071caf8d428847693be86eb7082e7f80e99c
-ms.sourcegitcommit: b8b0e88b3ba9a434dc45f5ab640cb46f66fae299
+ms.openlocfilehash: c2fd6ac45d22b9c1c77b183f7a3412b7eb3dd46b3270f1d3f5a2ea5919970bf5
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "52473259"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54171963"
 ---
 # <a name="upload-documents-using-the-microsoft-graph-universal-print-api"></a>Faça o upload de documentos utilizando a API de Impressão Universal do Microsoft Graph
 
@@ -18,8 +18,7 @@ ms.locfileid: "52473259"
 
 Para imprimir um documento utilizando a API de Impressão Universal no Microsoft Graph, você [cria um trabalho de impressão](/graph/api/printershare-post-jobs), faz o upload do documento e, em seguida, [inicia o trabalho de impressão](/graph/api/printjob-start). Este artigo descreve como fazer o upload de um documento, que começa com [ a criação de uma sessão de upload ](/graph/api/printdocument-createuploadsession).
 
-Para fazer o upload de um arquivo, ou de parte de um arquivo, seu aplicativo faz uma solicitação PUT para o valor **uploadUrl** recebido na resposta **createUploadSession**.
-Você pode fazer o upload de todo o arquivo ou dividi-lo em vários intervalos de bytes, desde que o máximo de bytes em qualquer solicitação seja inferior a 10 MB.
+Para fazer o upload de um arquivo, ou de parte de um arquivo, seu aplicativo faz uma solicitação PUT para o valor **uploadUrl** recebido na resposta **createUploadSession**. Você pode fazer o upload de todo o arquivo ou dividi-lo em vários intervalos de bytes, desde que o máximo de bytes em qualquer solicitação seja inferior a 10 MB.
 
 É possível fazer o upload dos segmentos do arquivo em qualquer ordem e o upload pode ser feito em paralelo, com até quatro solicitações simultâneas. Quando todos os segmentos binários de um documento são carregados, o arquivo binário é vinculado a **printDocument**.
 
@@ -83,8 +82,7 @@ Content-Type: application/json
 
 ### <a name="remarks"></a>Comentários
 
-* Em falhas, quando o cliente envia um fragmento que o servidor já recebeu, o servidor responderá com `HTTP 416 Requested Range Not Satisfiable`. 
-  Você pode [solicitar o status do upload](#get-the-upload-session) para obter uma lista mais detalhada dos intervalos que estão faltando.
+* Em falhas, quando o cliente envia um fragmento que o servidor já recebeu, o servidor responderá com `HTTP 416 Requested Range Not Satisfiable`. Você pode [solicitar o status de upload](#get-the-upload-session) para obter uma lista mais detalhada dos intervalos ausentes.
 * A inclusão do cabeçalho de `Authorizatio` ao fazer a chamada `PUT` pode resultar em uma resposta `HTTP 401 Unauthorized`. O Cabeçalho de Autorização e o token de portador devem ser enviados apenas durante a criação da sessão de upload. Ele não deve ser incluído ao enviar dados para a sessão de upload.
 
 ## <a name="completing-a-file"></a>Concluindo um arquivo

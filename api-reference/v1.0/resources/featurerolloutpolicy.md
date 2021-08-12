@@ -5,12 +5,12 @@ localization_priority: Normal
 author: madhavpatel6
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: c655b69a588ced1777221289d41175a73c696854
-ms.sourcegitcommit: 6e7d9987a255f1bee04f196a4a7e37f56621bfb8
+ms.openlocfilehash: 517ee0b3b24b7bde2e651aff704b729798da64a75f3377990c87df2be84f3cec
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "51944216"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54146871"
 ---
 # <a name="featurerolloutpolicy-resource-type"></a>Tipo de recurso featureRolloutPolicy
 
@@ -28,8 +28,8 @@ A seguir estão os pré-requisitos para cada um dos recursos atualmente suportad
 
 ### <a name="passthrough-authentication"></a>Autenticação passo a passo
 
-* Identifique um servidor executando o Windows Server 2012 R2 ou posterior onde você deseja que o [Agente PassthroughAuthentication](/azure/active-directory/hybrid/how-to-connect-pta) seja executado.Verifique se o servidor está ingressado no domínio, pode autenticar usuários selecionados com o Active Directory e pode se comunicar com o Azure AD em portas de saída/URLs.
-* [Baixe](https://aka.ms/getauthagent) & instalar o Agente de Autenticação do Microsoft Azure AD Connect no servidor.
+* Identifique um servidor executando Windows Server 2012 R2 ou posterior onde você deseja que o [Agente PassthroughAuthentication](/azure/active-directory/hybrid/how-to-connect-pta) seja executado.Verifique se o servidor está ingressado no domínio, pode autenticar usuários selecionados com o Active Directory e pode se comunicar com o Azure AD em portas de saída/URLs.
+* [Baixe](https://aka.ms/getauthagent) & instalar o Microsoft Azure AD Conexão autenticação no servidor.
 * Para habilitar alta disponibilidade, instale agentes de autenticação adicionais em outros servidores conforme descrito [aqui](/azure/active-directory/hybrid/how-to-connect-pta-quick-start#step-4-ensure-high-availability).
 * Verifique se você configurou suas [configurações de Bloqueio](/azure/active-directory/authentication/howto-password-smart-lockout) Inteligente adequadamente. Isso é para garantir que as contas locais do Active Directory de seus usuários não são bloqueadas por atores ruins.
 
@@ -39,7 +39,7 @@ A seguir estão os pré-requisitos para cada um dos recursos atualmente suportad
 
 ### <a name="passwordhashsync"></a>PasswordHashSync
 
-*  [Habilitar PasswordHashSync](/azure/active-directory/hybrid/whatis-phs)na página   "Recursos opcionais" no Azure AD Connect.
+*  [Habilitar PasswordHashSync](/azure/active-directory/hybrid/whatis-phs)na página   "Recursos opcionais" no Azure AD Conexão.
 
 ### <a name="emailasalternateid"></a>EmailAsAlternateId
 
@@ -53,16 +53,16 @@ A seguir estão os pré-requisitos para cada um dos recursos atualmente suportad
 | [Obter featureRolloutPolicy](../api/featurerolloutpolicy-get.md)                 | [featureRolloutPolicy](featurerolloutpolicy.md) | Recupere as propriedades e as relações do objeto featurerolloutpolicy. |
 | [Criar featureRolloutPolicy](../api/featurerolloutpolicies-post.md) | [featureRolloutPolicy](featurerolloutpolicy.md) | Crie um novo objeto featureRolloutPolicy.                                 |
 | [Atualizar featureRolloutPolicy](../api/featurerolloutpolicy-update.md)           | [featureRolloutPolicy](featurerolloutpolicy.md) | Atualize as propriedades do objeto featurerolloutpolicy.                     |
-| [Excluir featureRolloutPolicy](../api/featurerolloutpolicy-delete.md)           | Nenhum                                            | Exclua um objeto featureRolloutPolicy.                                     |
+| [Excluir featureRolloutPolicy](../api/featurerolloutpolicy-delete.md)           | None                                            | Exclua um objeto featureRolloutPolicy.                                     |
 | [Atribuir appliesTo](../api/featurerolloutpolicy-post-appliesto.md)              | [directoryObject](directoryobject.md)           | Atribua um directoryObject à atribuição de recursos.                              |
-| [Remover appliesTo](../api/featurerolloutpolicy-delete-appliesto.md)            | Nenhum                                            | Remover um directoryObject da adoção de recursos.                            |
+| [Remover appliesTo](../api/featurerolloutpolicy-delete-appliesto.md)            | None                                            | Remover um directoryObject da adoção de recursos.                            |
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
 |description|Cadeia de caracteres|Uma descrição para essa política de lançamento de recursos.|
-|displayName|Cadeia de caracteres|O nome de exibição dessa política de lançamento de recursos.|
+|displayName|String|O nome de exibição dessa política de lançamento de recursos.|
 |feature|stagedFeatureName| Os valores possíveis são: `passthroughAuthentication`, `seamlessSso`, `passwordHashSync`, `emailAsAlternateId`, `unknownFutureValue`.|
 |id|String| Somente leitura.|
 |isAppliedToOrganization|Booliano|Indica se essa política de lançamento de recursos deve ser aplicada a toda a organização.|

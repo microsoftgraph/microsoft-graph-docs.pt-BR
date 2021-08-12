@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: reports
 author: sarahwxy
 doc_type: conceptualPageType
-ms.openlocfilehash: 060c33f6755af32ec0ae9138403e9cc2350a3836
-ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
+ms.openlocfilehash: c458d6b720e92473841edc54a2c2ca5cca028e6ba62b30756885a3cdca8e06f8
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49980903"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54235251"
 ---
 # <a name="skype-for-business-organizer-activity-reports"></a>Relatórios de atividades do organizador do Skype for Business
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 Você pode usar os relatórios de atividade do organizador do Skype for Business para obter dados sobre as atividades em conferências organizadas em toda a organização. Esses dados são muito úteis quando você está investigando, planejando e tomando outras decisões comerciais para sua organização.
 
-> **Observação:** Para obter detalhes sobre diferentes visualizações e nomes de relatórios, consulte relatórios do [Microsoft 365 - atividade do organizador de conferências do Skype for Business.](https://support.office.com/client/Skype-for-Business-Online-conference-organized-activity-03a255d4-0e1d-4b24-b73d-7a62fae36254)
+> **Observação:** Para obter detalhes sobre diferentes exibições de relatório e nomes, consulte Microsoft 365 relatórios - Skype for Business atividade do organizador [da conferência.](https://support.office.com/client/Skype-for-Business-Online-conference-organized-activity-03a255d4-0e1d-4b24-b73d-7a62fae36254)
 
 ## <a name="reports"></a>Relatórios
 

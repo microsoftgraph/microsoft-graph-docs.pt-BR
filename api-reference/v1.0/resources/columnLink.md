@@ -6,12 +6,12 @@ localization_priority: Normal
 description: Um columnLink em um contentType anexa um columnDefinition de site para esse tipo de conteúdo.
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 4087d97dfec976560bac7c8949d34fd962308950
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: c14edb1baf1b586e193f26df60f74d6d9b846aeae3f0eb2a4d6eb2422581313a
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50240574"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54124518"
 ---
 # <a name="columnlink-resource-type"></a>Tipo de recurso ColumnLink
 
@@ -32,7 +32,7 @@ Aqui está uma representação JSON de um recurso **columnLink**.
 ```json
 {
   "id": "string",
-  "name": "string"
+  "name&quot;: &quot;string"
 }
 ```
 
@@ -48,6 +48,6 @@ Aqui está uma representação JSON de um recurso **columnLink**.
   "description": "",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "Resources/ColumnLink"
+  "tocPath&quot;: &quot;Resources/ColumnLink"
 } -->
 

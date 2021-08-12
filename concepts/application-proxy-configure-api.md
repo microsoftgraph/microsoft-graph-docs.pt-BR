@@ -1,20 +1,20 @@
 ---
-title: Configurar Proxy de Aplicativo usando APIs do Microsoft Graph
+title: Configurar Proxy de Aplicativo usando APIs Graph Microsoft
 description: Configure o Proxy de Aplicativo usando as APIs do Microsoft Graph para fornecer acesso remoto e um único login a aplicativos locais.
 author: davidmu1
 ms.topic: conceptual
 localization_priority: Normal
 ms.prod: applications
-ms.openlocfilehash: efc22ff03bf5b32398be6711a8f44394bf623050
-ms.sourcegitcommit: 74a1fb3874e04c488e1b87dcee80d76cc586c1f3
+ms.openlocfilehash: 0394220290652a8be7931b384b16dc53631048210b7d982545636bc62bd86060
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51031076"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54149601"
 ---
-# <a name="configure-application-proxy-using-the-microsoft-graph-api"></a>Configurar o Proxy de Aplicativo usando a API do Microsoft Graph
+# <a name="configure-application-proxy-using-the-microsoft-graph-api"></a>Configurar o Proxy de Aplicativo usando a API Graph Microsoft
 
-Neste artigo, você aprenderá a configurar o Proxy de Aplicativo do Azure Active Directory (Azure AD) para um aplicativo. O Proxy de Aplicativo fornece acesso remoto seguro e um único login em aplicativos Web locais. Depois de configurar o Proxy de Aplicativo para um aplicativo, os usuários podem acessar seus aplicativos locais por meio de uma URL externa, do portal Meus Aplicativos ou de outros portais de aplicativos internos.
+Neste artigo, você aprenderá a configurar o proxy de aplicativo Azure Active Directory (Azure AD) para um aplicativo. O Proxy de Aplicativo fornece acesso remoto seguro e um único login em aplicativos Web locais. Depois de configurar o Proxy de Aplicativo para um aplicativo, os usuários podem acessar seus aplicativos locais por meio de uma URL externa, do portal Meus Aplicativos ou de outros portais de aplicativos internos.
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
@@ -236,7 +236,7 @@ HTTP/1.1 204 No content
 
 ## <a name="step-4-configure-single-sign-on"></a>Etapa 4: Configurar o login único
 
-Esse aplicativo usa a Autenticação Integrada do Windows (IWA). Para configurar o IWA, de definir as propriedades de login único para **onPremisesPublishing**.
+Este aplicativo usa a Autenticação Windows Integrada (IWA). Para configurar o IWA, de definir as propriedades de login único para **onPremisesPublishing**.
 
 #### <a name="request"></a>Solicitação
 
@@ -435,7 +435,7 @@ No Content - 204
 ## <a name="see-also"></a>Confira também
 
 - [Proxy de aplicativo](/azure/active-directory/manage-apps/what-is-application-proxy)
-- [aplicativo](/graph/api/resources/application?view=graph-rest-1.0)
+- [application](/graph/api/resources/application?view=graph-rest-1.0)
 - [applicationTemplate: instaurá-lo](/graph/api/applicationtemplate-instantiate?view=graph-rest-1.0)
 - [appRoleAssignment](/graph/api/resources/approleassignment?view=graph-rest-beta)
 - [connector](/graph/api/resources/connector?view=graph-rest-beta)

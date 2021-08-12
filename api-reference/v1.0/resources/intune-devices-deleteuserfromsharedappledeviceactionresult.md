@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 01680cd7604f1b830398fd77086b77d20028d7bc
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 29b8dc0a4e101ce9d15b487282b138f2aec3d01c0d469538691d8b477f01cf8a
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52754592"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54216676"
 ---
 # <a name="deleteuserfromsharedappledeviceactionresult-resource-type"></a>Tipo de recurso deleteUserFromSharedAppleDeviceActionResult
 
@@ -33,7 +33,7 @@ Herda de [deviceActionResult](../resources/intune-devices-deviceactionresult.md)
 |userPrincipalName|Cadeia de caracteres|Nome da entidade de segurança do usuário a ser excluído|
 
 ## <a name="relationships"></a>Relações
-Nenhuma
+Nenhum
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.

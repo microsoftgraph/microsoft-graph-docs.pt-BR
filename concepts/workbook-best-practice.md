@@ -1,27 +1,27 @@
 ---
-title: Práticas recomendadas para APIs do Excel no Microsoft Graph
-description: Listar as práticas recomendadas e exemplos para as APIs do Excel no Microsoft Graph
+title: Práticas recomendadas para Excel APIs no Microsoft Graph
+description: Listar práticas recomendadas e exemplos para Excel APIs no Microsoft Graph
 author: grangeryy
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: c7e72c4c6480c75d3080d32c2984e6d0f594c409
-ms.sourcegitcommit: a1675c7b8dfc7d7c3c7923d06cda2b0127f9c3e6
+ms.openlocfilehash: 2427d56fa8a95581a737fb04a3199219c6d7ba647583aa4dabd6cb898ed91984
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "49754065"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54225591"
 ---
-# <a name="best-practices-for-working-with-the-excel-api-in-microsoft-graph"></a>Práticas recomendadas para trabalhar com a API do Excel no Microsoft Graph
+# <a name="best-practices-for-working-with-the-excel-api-in-microsoft-graph"></a>Práticas recomendadas para trabalhar com a API Excel no Microsoft Graph
 
-Este artigo fornece recomendações para trabalhar com as APIs do Excel no Microsoft Graph.
+Este artigo fornece recomendações para trabalhar com as APIs Excel no Microsoft Graph.
 
 ## <a name="manage-sessions-in-the-most-efficient-way"></a>Gerenciar sessões da maneira mais eficiente
 
-Se você tiver mais de uma chamada para fazer dentro de um determinado período de tempo, recomendamos que você crie uma sessão e passe a ID da sessão com cada solicitação. Para representar a sessão na API, use o cabeçalho `workbook-session-id: {session-id}`. Fazendo isso, você pode usar as APIs do Excel da maneira mais eficiente.
+Se você tiver mais de uma chamada para fazer em um determinado período de tempo, recomendamos que você crie uma sessão e passe a ID da sessão com cada solicitação. Para representar a sessão na API, use o cabeçalho `workbook-session-id: {session-id}`. Ao fazer isso, você pode usar as APIs Excel de forma mais eficiente.
 
-O exemplo a seguir mostra como adicionar um novo número a uma tabela e localizar um registro em uma pasta de trabalho usando essa abordagem.
+O exemplo a seguir mostra como adicionar um novo número a uma tabela e, em seguida, encontrar um registro em uma lista de trabalho usando essa abordagem.
 
-### <a name="step-1-create-a-session"></a>Etapa 1: criar uma sessão
+### <a name="step-1-create-a-session"></a>Etapa 1: Criar uma sessão
 
 #### <a name="request"></a>Solicitação
 
@@ -36,7 +36,7 @@ Content-length: 52
 ```
 #### <a name="response"></a>Resposta
 
-A seguir está uma resposta bem-sucedida.
+A seguir, uma resposta bem-sucedida.
 
 ```http
 HTTP/1.1 201 Created
@@ -49,7 +49,7 @@ Content-length: 52
 }
 ```
 
-### <a name="step-2-add-a-new-row-to-the-table"></a>Etapa 2: adicionar uma nova linha à tabela
+### <a name="step-2-add-a-new-row-to-the-table"></a>Etapa 2: Adicionar uma nova linha à tabela
 
 #### <a name="request"></a>Solicitação
 
@@ -76,7 +76,7 @@ Content-length: 42
 }
 ```
 
-### <a name="step-3-look-up-a-value-in-the-updated-table"></a>Etapa 3: Pesquisar um valor na tabela atualizada
+### <a name="step-3-look-up-a-value-in-the-updated-table"></a>Etapa 3: procurar um valor na tabela atualizada
 
 #### <a name="request"></a>Solicitação
 
@@ -104,7 +104,7 @@ content-type: application/json
 }
 ```
 
-### <a name="step-4-close-the-session-after-all-the-requests-are-completed"></a>Etapa 4: fechar a sessão após todas as solicitações serem concluídas
+### <a name="step-4-close-the-session-after-all-the-requests-are-completed"></a>Etapa 4: fechar a sessão depois que todas as solicitações são concluídas
 
 #### <a name="request"></a>Solicitação
 
@@ -124,20 +124,20 @@ Content-length: 0
 HTTP/1.1 204 No Content
 ```
 
-Para obter mais detalhes, consulte [criar sessão](/graph/api/workbook-createsession?view=graph-rest-1.0) e [fechar sessão](/graph/api/workbook-closesession?view=graph-rest-1.0).
+Para obter mais detalhes, consulte [Create session and](/graph/api/workbook-createsession?view=graph-rest-1.0) Close [session](/graph/api/workbook-closesession?view=graph-rest-1.0).
 
-## <a name="working-with-apis-that-take-a-long-time-to-complete"></a>Trabalhar com APIs que levar muito tempo para ser concluído
+## <a name="working-with-apis-that-take-a-long-time-to-complete"></a>Trabalhar com APIs que levam muito tempo para ser concluída
 
-Você pode notar que algumas operações levam um tempo indeterminado para a conclusão; por exemplo, abrir uma pasta de trabalho grande. É fácil atingir o tempo limite enquanto aguarda a resposta para essas solicitações. Para resolver esse problema, fornecemos o padrão de operação de longa execução. Ao usar esse padrão, você não precisa se preocupar com o tempo limite da solicitação.
+Você pode notar que algumas operações levam um tempo indeterminado para ser concluída; por exemplo, abrir uma grande workbook. É fácil atingir o tempo de espera enquanto aguarda a resposta a essas solicitações. Para resolver esse problema, fornecemos o padrão de operação de longa duração. Quando você usa esse padrão, não precisa se preocupar com o tempo de espera da solicitação.
 
-Atualmente, a API do Excel de criação de sessão no Microsoft Graph tem o padrão de operação de execução demorada habilitado. Este padrão envolve as seguintes etapas:
+Atualmente, a api de Excel de criação de sessão no Microsoft Graph tem o padrão de operação de longa execução habilitado. Esse padrão envolve as seguintes etapas:
 
-1. Adicione um `Prefer: respond-async` cabeçalho à solicitação para indicar que é uma operação de execução demorada quando você faz uma sessão.
-2. Uma operação de execução longa retornará uma `202 Accepted` resposta junto com um cabeçalho de local para recuperar o status da operação. Se a criação da sessão for concluída em vários segundos, ela retornará uma resposta de criação de sessão regular em vez de usar o padrão de operação de longa execução.
-3. Com a `202 Accepted` resposta, você pode recuperar o status da operação no local especificado. Os valores de status de operação incluem `notStarted` ,, `running` `succeeded` e `failed` .
-4. Após a conclusão da operação, você pode obter o resultado da criação da sessão através da URL especificada na resposta bem-sucedida.
+1. Adicione um header à solicitação para indicar que é uma operação de longa `Prefer: respond-async` duração quando você engrada uma sessão.
+2. Uma operação de longa duração retornará uma resposta juntamente com um `202 Accepted` header location para recuperar o status da operação. Se a criação da sessão for concluída em alguns segundos, ela retornará uma resposta de sessão de criação regular em vez de usar o padrão de operação de longa execução.
+3. Com a `202 Accepted` resposta, você pode recuperar o status da operação no local especificado. Os valores de status da `notStarted` operação `running` incluem , `succeeded` , e `failed` .
+4. Depois que a operação for concluída, você poderá obter o resultado da criação da sessão por meio da URL especificada na resposta bem-sucedida.
 
-O exemplo a seguir cria uma sessão usando o padrão de operação de longa execução.
+O exemplo a seguir cria uma sessão usando o padrão de operação de longa duração.
 
 ### <a name="initial-request-to-create-session"></a>Solicitação inicial para criar sessão
 
@@ -153,7 +153,7 @@ Content-type: application/json
 ```
 
 #### <a name="response"></a>Resposta
-O padrão de operação de execução longa retornará uma `202 Accepted` resposta semelhante à seguinte.
+O padrão de operação de longa duração retornará `202 Accepted` uma resposta semelhante à seguinte.
 
 ```http
 HTTP/1.1 202 Accepted
@@ -164,7 +164,7 @@ Content-type: application/json
 }
 ```
 
-Em alguns casos, se a criação for bem-sucedida em segundos, ela não irá inserir o padrão de operação de longa execução; em vez disso, ele retorna como uma sessão de criação regular e a solicitação bem-sucedida retornará uma `201 Created` resposta.
+Em alguns casos, se a criação for bem-sucedida em segundos, ela não entrará no padrão de operação de longa duração; em vez disso, ele retorna como uma sessão de criação regular e a solicitação bem-sucedida retornará uma `201 Created` resposta.
 
 ```http
 HTTP/1.1 201 Created
@@ -201,10 +201,10 @@ Content-type: application/json
 }
 ```
 
-### <a name="poll-status-of-the-long-running-create-session"></a>Status de pesquisa da sessão de criação de execução longa
+### <a name="poll-status-of-the-long-running-create-session"></a>Status da sondagem da sessão de criação de longa duração
 
 
-Com o padrão de operação de execução longa, você pode obter o status de criação no local especificado usando a seguinte solicitação. O intervalo sugerido para o status da pesquisa é de cerca de 30 segundos. O intervalo máximo não deve ser superior a 4 minutos.
+Com o padrão de operação de longa duração, você pode obter o status de criação no local especificado usando a seguinte solicitação. O intervalo sugerido para o status da sondagem é de cerca de 30 segundos. O intervalo máximo não deve ser superior a 4 minutos.
 
 #### <a name="request"></a>Solicitação
 
@@ -216,7 +216,7 @@ GET https://graph.microsoft.com/v1.0/me/drive/items/{drive-item-id}/workbook/ope
 
 #### <a name="response"></a>Resposta
 
-A seguir está a resposta quando a operação tem um status de `running` .
+A seguir está a resposta quando a operação tem um status `running` de .
 
 ```http
 HTTP/1.1 200 OK
@@ -265,13 +265,13 @@ Content-type: application/json
 }
 ```
 
-Para obter mais detalhes sobre erros, consulte [códigos de erro](workbook-error-codes.md#error-code).
+Para obter mais detalhes sobre erros, consulte [Códigos de erro](workbook-error-codes.md#error-code).
 
-### <a name="acquire-session-information"></a>Obter informações de sessão
+### <a name="acquire-session-information"></a>Adquirir informações da sessão
 
 #### <a name="request"></a>Solicitação
 
-Com o status de `succeeded` , você pode obter as informações da sessão criada por meio de `resourceLocation` uma solicitação semelhante à seguinte.
+Com um status de , você pode obter as informações de sessão `succeeded` criadas `resourceLocation` com uma solicitação semelhante à seguinte.
 
 ```http
 GET https://graph.microsoft.com/v1.0/me/drive/items/{drive-item-id}/workbook/sessionInfoResource(key='{key}')
@@ -292,4 +292,4 @@ Content-type: application/json
 }
 ```
 
->**Observação:** Obter informações de sessão depende da solicitação inicial. Você não precisará adquirir o resultado se a solicitação inicial não retornar um corpo de resposta.
+>**Observação:** Adquirir informações da sessão depende da solicitação inicial. Você não precisa adquirir o resultado se a solicitação inicial não retornar um corpo de resposta.

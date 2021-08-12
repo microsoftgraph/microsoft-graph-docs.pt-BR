@@ -5,12 +5,12 @@ author: abheek-das
 localization_priority: Normal
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: fb13379cbd68319ae1384f6a3b8ce2caf663c8e0
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 3ba5d3d0d84e58fefb27d4540bddb092b951cda00fce4443853ae81cff774e73
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50132367"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54159950"
 ---
 # <a name="messagerule-resource-type"></a>Tipo de recurso messageRule
 
@@ -29,10 +29,10 @@ Programaticamente, você pode acessar regras por meio da propriedade de navegaç
 |:---------------|:--------|:----------|
 | actions | [messageRuleActions](messageruleactions.md) | Ações a serem realizadas em uma mensagem quando as condições correspondentes forem atendidas. |
 | conditions | [messageRulePredicates](messagerulepredicates.md) | Condições que, quando atendidas, acionarão as ações correspondentes dessa regra. |
-| displayName | String | O nome de exibição da regra. |
+| displayName | Cadeia de caracteres | O nome de exibição da regra. |
 | exceptions | [messageRulePredicates](messagerulepredicates.md) | Condições de exceção para a regra. |
 | hasError | Boolean | Indica se a regra está em uma condição de erro. Somente leitura. |
-| id |String|O identificador exclusivo da regra. Somente leitura.|
+| id |Cadeia de caracteres|O identificador exclusivo da regra. Somente leitura.|
 | isEnabled | Booliano | Indica se a regra está habilitada para ser aplicada a mensagens. |
 | isReadOnly | Boolean | Indica se a regra é somente leitura e não pode ser modificada ou excluída pelas regras da API REST. |
 | sequence | Int32 | Indica a ordem em que a regra é executada, entre outras regras. |
@@ -64,14 +64,14 @@ Veja a seguir uma representação JSON do recurso.
 
 ```
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
 |[Listar regras](../api/mailfolder-list-messagerules.md) | Coleção [messageRule](messagerule.md) |Obtenha todos os objetos **messageRule** definidos para a Caixa de Entrada do usuário.|
 |[Obter regra](../api/messagerule-get.md) | [messageRule](messagerule.md) |Leia as propriedades e as relações de um objeto **messageRule**.|
 |[Criar](../api/mailfolder-post-messagerules.md) | [messageRule](messagerule.md) |Crie um objeto **messageRule** especificando um conjunto de condições e ações.|
 |[Atualizar](../api/messagerule-update.md) | [messageRule](messagerule.md) |Altere as propriedades graváveis em um objeto **messageRule** e salve as alterações. |
-|[Delete](../api/messagerule-delete.md) | Nenhum |Exclua o objeto **messageRule** especificado. |
+|[Delete](../api/messagerule-delete.md) | None |Exclua o objeto **messageRule** especificado. |
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

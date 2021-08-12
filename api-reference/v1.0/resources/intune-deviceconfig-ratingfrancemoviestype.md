@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: abfb291df8428ebc97d9b4db2faa95d562668d18
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 9ac9116740d548008dd96792ab42d62f45616b6b212cedf2bb6086e6a518bbf1
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52754710"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54146472"
 ---
 # <a name="ratingfrancemoviestype-enum-type"></a>tipo de número ratingFranceMoviesType
 

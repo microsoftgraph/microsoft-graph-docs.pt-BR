@@ -5,12 +5,12 @@ author: fercobo-msft
 localization_priority: Priority
 ms.prod: data-connect
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: c94a82aae01110d9816ba0981e5aa14f3e2640b2
-ms.sourcegitcommit: cec76c5a58b359d79df764c849c8b459349b3b52
+ms.openlocfilehash: 52f272f5e1de21eb1277610aebdf4510b8ce40f77a042bdf8a3e15085966834b
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "52645539"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54196506"
 ---
 # <a name="overview-of-microsoft-graph-data-connect"></a>Visão geral da A Conexão de Dados do Microsoft Graph
 

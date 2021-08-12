@@ -1,22 +1,22 @@
 ---
-title: tipo de recurso averageComparativeScore
+title: Tipo de recurso averageComparativeScore
 description: Contém várias pontuações diferentes com base em escopos diferentes.
 localization_priority: Normal
 author: preetikr
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: bc104f3a9c19c38ef569d08d24da83d0e07d75f5
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 2041a366fcf37ff8a850fb8d6fd41e9c3fd6002a17916d41718588674a30a3e6
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48091898"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54147018"
 ---
-#  <a name="averagecomparativescore-resource-type"></a>tipo de recurso averageComparativeScore
+#  <a name="averagecomparativescore-resource-type"></a>Tipo de recurso averageComparativeScore
 
 Namespace: microsoft.graph
 
-Contém várias pontuações diferentes com base em escopos diferentes (por exemplo, média por tamanho da indústria vertical, média por tamanho de estação da empresa e assim por diante) e categoria de controle (identidade, dados, dispositivo, aplicativos, infraestrutura).
+Contém várias pontuações diferentes com base em escopos diferentes (por exemplo, média por setor vertical, média por tamanho de assento da empresa e assim por diante) e categoria de controle (Identidade, Dados, Dispositivo, Aplicativos, Infraestrutura).
 
 ## <a name="properties"></a>Propriedades
 

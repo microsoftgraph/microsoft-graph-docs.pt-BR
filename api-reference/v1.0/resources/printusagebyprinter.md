@@ -5,12 +5,12 @@ author: nilakhan
 localization_priority: Normal
 ms.prod: cloud-printing
 doc_type: resourcePageType
-ms.openlocfilehash: 8c5a69d01f0b8da05a5f72f5c2c7d9bacf10ff1a
-ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
+ms.openlocfilehash: f41ee77c390f63d05b0b6076b21948f8bdad9d4cf3f8751be02a675db1fb967f
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50517012"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54235335"
 ---
 # <a name="printusagebyprinter-resource-type"></a>Tipo de recurso printUsageByPrinter
 
@@ -25,13 +25,13 @@ Descreve a atividade de impressão de uma impressora durante um período de temp
 |:---|:---|:---|
 | [Lista (diariamente)](../api/reportroot-list-dailyprintusagebyprinter.md) | [printUsageByPrinter](printUsageByPrinter.md) | Obter uma lista de resumos de uso diário de impressão, agrupados por impressora. |
 | [Lista (mensal)](../api/reportroot-list-monthlyprintusagebyprinter.md) | [printUsageByPrinter](printUsageByPrinter.md) | Obter uma lista de resumos de uso de impressão mensal, agrupados por impressora. |
-| [Get](../api/printUsageByPrinter-get.md) | [printUsageByPrinter](printUsageByPrinter.md) | Leia as propriedades e as relações de um **objeto printUsageByPrinter.** |
+| [Obter](../api/printUsageByPrinter-get.md) | [printUsageByPrinter](printUsageByPrinter.md) | Leia as propriedades e as relações de um **objeto printUsageByPrinter.** |
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|Cadeia de caracteres|A ID deste resumo de uso.|
-|printerID|Cadeia de caracteres|A ID da impressora representada por essas estatísticas.|
+|printerID|String|A ID da impressora representada por essas estatísticas.|
 |usageDate|Data|A data associada a essas estatísticas.|
 |completedBlackAndWhiteJobCount|Int64|O número de trabalhos de impressão em preto e branco concluídos pela impressora na data associada.|
 |completedColorJobCount|Int64|O número de trabalhos de impressão de cores concluídos pela impressora na data associada.|

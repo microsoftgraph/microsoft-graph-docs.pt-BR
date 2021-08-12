@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 4a1b9a985753e54fcd36d9bcf568c10a9821fad9
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 031f77aaadb6eb129c9cc52969a4f5779b232a426434de6cf9c2a84cdf74be4f
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52752312"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54218552"
 ---
 # <a name="windowsinformationprotectionenforcementlevel-enum-type"></a>Tipo de número do windowsInformationProtectionEnforcementLevel
 

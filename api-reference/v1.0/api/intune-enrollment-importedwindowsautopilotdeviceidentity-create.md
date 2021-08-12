@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d0478e84f3bf0679588fbc9f962b3471dec90f1d
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: db733c26128388c9e338ebd1dce7d0bdf000465c9f59631eb30a80afdc66146b
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52752875"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54223918"
 ---
 # <a name="create-importedwindowsautopilotdeviceidentity"></a>Criar importedWindowsAutopilotDeviceIdentity
 
@@ -51,14 +51,14 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar imported
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|O GUID do objeto.|
+|id|Cadeia de caracteres|O GUID do objeto.|
 |groupTag|String|Marca de grupo do dispositivo Windows piloto automático.|
 |serialNumber|Cadeia de caracteres|Número de série do dispositivo do Windows AutoPilot.|
 |productKey|Cadeia de caracteres|Chave do produto (Product Key) do dispositivo do Windows AutoPilot.|
 |importId|String|A ID de Importação do dispositivo Windows piloto automático.|
 |hardwareIdentifier|Binária|Blob de hardware do dispositivo do Windows AutoPilot.|
 |state|[importedWindowsAutopilotDeviceIdentityState](../resources/intune-enrollment-importedwindowsautopilotdeviceidentitystate.md)|Estado atual do dispositivo importado.|
-|assignedUserPrincipalName|String|UPN do usuário que o dispositivo será atribuído|
+|assignedUserPrincipalName|Cadeia de caracteres|UPN do usuário que o dispositivo será atribuído|
 
 
 

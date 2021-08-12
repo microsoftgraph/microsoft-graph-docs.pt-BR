@@ -4,12 +4,12 @@ description: No Outlook, os clientes podem compartilhar um calendário com outro
 author: juforan
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: e09b3552ca0d4a3ecd85855c471ec1cc16950abf
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: e970017d26ef7ad9d45086e82816c5337eed6c0bcc86e5e7efac6b5bee29c3f9
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50941397"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54129725"
 ---
 # <a name="create-outlook-events-in-a-shared-or-delegated-calendar"></a>Crie eventos do Outlook em um calendário compartilhado ou delegado
 

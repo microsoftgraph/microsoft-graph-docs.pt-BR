@@ -5,12 +5,12 @@ localization_priority: Priority
 ms.prod: reports
 author: sarahwxy
 doc_type: apiPageType
-ms.openlocfilehash: 2f65cfabdfff4d4892e601d7ddcf253ca6dd6dc5
-ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
+ms.openlocfilehash: 20cbe41937ae926a1c3910b41e3041976b1d4c02c1293463d2cda2704b39f5dd
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49982093"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54143714"
 ---
 # <a name="reportroot-getmailboxusagedetail"></a>reportRoot: getMailboxUsageDetail
 
@@ -30,7 +30,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 | Delegada (conta pessoal da Microsoft) | Sem suporte.                           |
 | Aplicativo                            | Reports.Read.All                         |
 
-**Observação**: para permissões delegadas para permitir que os aplicativos leiam os relatórios de uso de serviço em nome de um usuário, o administrador de locatários deve atribuir a função apropriada de administrador limitada do Azure AD ao usuário. Para saber mais, confira [Autorização para APIs lerem os relatórios de uso do Microsoft 365](/graph/reportroot-authorization).
+**Observação**: Para permissões delegadas para permitir que os aplicativos leiam relatórios de uso do serviço em nome de um usuário, o administrador de locatários deve ter atribuído ao usuário a função de administrador limitada apropriada do Microsoft Azure Active Directory. Para obter mais detalhes, consulte [Autorização para APIs lerem relatórios de uso do Microsoft 365](/graph/reportroot-authorization).
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -54,7 +54,7 @@ Na URL da solicitação, forneça um valor válido ao seguinte parâmetro.
 | Nome          | Descrição                              |
 | :------------ | :--------------------------------------- |
 | Autorização | {token} de portador. Obrigatório.                |
-| If-None-Match | Se este cabeçalho de solicitação estiver incluso e a eTag fornecida corresponder à marca atual do arquivo, um código de resposta `304 Not Modified` será exibido. Opcional. |
+| If-None-Match | Se esse cabeçalho de solicitação estiver incluído e a eTag fornecida corresponder à marca atual no arquivo, um código de resposta `304 Not Modified` será retornado. Opcional. |
 
 ## <a name="response"></a>Resposta
 

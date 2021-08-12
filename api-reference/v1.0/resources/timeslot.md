@@ -5,12 +5,12 @@ localization_priority: Normal
 author: vrod9429
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 378a7ac71058ec80c9ce20ee0959c1dc5c3ce091
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: 08ba0c696c511e5a80c25262ba9d1d4cab6d2231aabea01cec0f573d70cd6ec1
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50474680"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54189195"
 ---
 # <a name="timeslot-resource-type"></a>Tipo de recurso timeSlot
 

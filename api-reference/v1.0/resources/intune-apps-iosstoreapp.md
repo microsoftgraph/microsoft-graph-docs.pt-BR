@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 27c81d59d9e5b4568a33c63cfec4447d47e897d3
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 8ad7741c976d80e1ff10eb73a1a6e1b4fadc7d8063c4fff9a07a728924f37511
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52755137"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54189699"
 ---
 # <a name="iosstoreapp-resource-type"></a>Tipo de recurso iosStoreApp
 
@@ -23,7 +23,7 @@ Contém propriedades e propriedades herdadas para aplicativos da loja iOS.
 
 Herda de [mobileApp](../resources/intune-apps-mobileapp.md)
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
 |[Listar iosStoreApps](../api/intune-apps-iosstoreapp-list.md)|Coleção [iosStoreApp](../resources/intune-apps-iosstoreapp.md)|Lista propriedades e relações dos objetos [iosStoreApp](../resources/intune-apps-iosstoreapp.md).|
@@ -37,7 +37,7 @@ Herda de [mobileApp](../resources/intune-apps-mobileapp.md)
 |:---|:---|:---|
 |id|Cadeia de caracteres|Chave da entidade. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|
 |displayName|Cadeia de caracteres|O título do aplicativo importado ou definido pelo administrador. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|
-|descrição|Cadeia de caracteres|A descrição do aplicativo. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|
+|description|String|A descrição do aplicativo. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|
 |publicador|String|O publicador do aplicativo. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|
 |largeIcon|[mimeContent](../resources/intune-shared-mimecontent.md)|O ícone grande, a ser exibido nos detalhes do aplicativo e usado para o carregamento do ícone. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|
 |createdDateTime|DateTimeOffset|A data e a hora da criação do aplicativo. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|

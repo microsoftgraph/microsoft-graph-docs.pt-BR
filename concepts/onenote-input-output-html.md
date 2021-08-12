@@ -4,12 +4,12 @@ description: 'O HTML que define o conteúdo e a estrutura da página quando voc�
 author: jewan-microsoft
 localization_priority: Priority
 ms.prod: onenote
-ms.openlocfilehash: 2ba3ce1432a2213a4ecdcfce1ab9a9c98c88c818
-ms.sourcegitcommit: af4b2fc18449c33979cf6d75bd680f40602ba708
+ms.openlocfilehash: 0d1aec43ad96c5d076f08928d554e639afc6f7164fde258235161ccf1433cfa3
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "48601703"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54123944"
 ---
 # <a name="input-and-output-html-in-onenote-pages"></a>HTML de entrada e saída nas páginas do OneNote
 

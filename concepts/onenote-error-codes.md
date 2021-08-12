@@ -4,12 +4,12 @@ description: Este artigo descreve os códigos de erro que são retornados pelas 
 author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
-ms.openlocfilehash: 47c8a56c0a6679957833a65e48c050932024b280
-ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
+ms.openlocfilehash: 7b135cb8275367a1c425fe2ab6aa41fec728982bc5028424016561e97d5585d7
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48288389"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54216354"
 ---
 # <a name="error-codes-for-onenote-apis-in-microsoft-graph"></a>Códigos de erro para APIs do OneNote no Microsoft Graph
 
@@ -333,7 +333,7 @@ O contexto não especifica uma ID de usuário válida. Um erro comum é que PUID
 ### <a name="20166"></a>20166
 O aplicativo emitiu muitas solicitações em nome de um usuário em um curto período de tempo. Para ajudar a garantir que a API do OneNote permaneça estável e responsiva, a API retorna um código de status 429 e esse erro quando detecta que um aplicativo está usando muitos recursos. 
 
-Para obter mais informações, consulte [orientação sobre a limitação específica do serviço do Microsoft Graph](./throttling.md#service-specific-limits).
+Para obter mais informações, [consulte Diretrizes](./throttling.md#service-specific-limits)de Graph de serviço específicos do serviço .
 
 ### <a name="20168"></a>20168
 Não há suporte para a fonte do vídeo especificada na solicitação. Confira [Sites de vídeo com suporte](onenote-images-files.md#adding-videos) para a lista atual.
@@ -365,9 +365,9 @@ O OneDrive for Business pessoal do usuário não pôde ser recuperado. A tabela 
 
 | Causa | Resolução |
 |:------|:------|
-| O site pessoal do usuário não foi provisionado. | O usuário deve abrir o OneDrive for Business e seguir as instruções para provisionar o site. Se isso falhar, ele deve entrar em contato com o administrador de locatários do Microsoft 365. |
+| O site pessoal do usuário não foi provisionado. | O usuário deve abrir o OneDrive for Business e seguir as instruções para provisionar o site. Se isso falhar, eles deverão entrar em contato com o administrador Microsoft 365 locatário. |
 | No momento, o site pessoal do usuário está sendo provisionado. | Tente a solicitação mais tarde. |
-| O usuário não tem uma licença válida do OneDrive for Business. | O usuário deve entrar em contato com o administrador de locatários do Microsoft 365. |
+| O usuário não tem uma licença válida do OneDrive for Business. | O usuário deve entrar em contato com o administrador Microsoft 365 locatário. |
 | Um problema de rede impediu a solicitação de ser enviada com êxito. | Tente a solicitação mais tarde. |
 
 ### <a name="30109"></a>30109

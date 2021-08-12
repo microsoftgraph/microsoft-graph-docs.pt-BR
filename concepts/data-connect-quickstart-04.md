@@ -1,6 +1,6 @@
 <!-- markdownlint-disable MD002 MD041 -->
 
-Nesta etapa, você criará uma conta do Azure Armazenamento onde conexão de dados do Microsoft Graph armazenará os dados extraídos do Microsoft 365 para processamento posterior.
+Nesta etapa, você criará uma conta do Azure Armazenamento onde Conexão de dados do Microsoft Graph armazenará os dados extraídos do Microsoft 365 para processamento posterior.
 
 1. Abra um navegador e vá para o [Portal do Azure.](https://portal.azure.com/)
 
@@ -30,9 +30,9 @@ Nesta etapa, você criará uma conta do Azure Armazenamento onde conexão de dad
 
         - **Função**: Armazenamento blob data contributor
         - **Atribuir acesso a**: Usuário, grupo ou entidade de serviço
-        - **Selecione**: conexão de dados do Microsoft Graph transferência de dados (o nome do aplicativo do Azure AD criado anteriormente)
+        - **Selecione**: Conexão de dados do Microsoft Graph transferência de dados (o nome do aplicativo do Azure AD criado anteriormente)
 
-        ![Uma captura de tela mostrando a atribuição de função adequada para o aplicativo do Microsoft Graph Data Conexão na conta do Azure Armazenamento no portal do Azure.](images/data-connect-azure-storage-role.png)
+        ![Uma captura de tela mostrando a atribuição de função adequada ao aplicativo para Conexão de Dados do Microsoft Graph na conta Armazenamento do Azure no portal do Azure.](images/data-connect-azure-storage-role.png)
 
 1. Crie um novo contêiner na **conta mgdcm365datastore** Azure Armazenamento.
 

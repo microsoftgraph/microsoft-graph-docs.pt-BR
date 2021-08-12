@@ -3,12 +3,12 @@ title: People-Picker componente
 description: Você pode usar o componente web mgt-people-picker para pesquisar um número especificado de pessoas e renderizar a lista de resultados por meio do Microsoft Graph.
 localization_priority: Normal
 author: elisenyang
-ms.openlocfilehash: 690e117064a43a65ea125e4e0d67a12daae185ae
-ms.sourcegitcommit: ae83b2b372902268517fd17a8b10d6d9add422af
+ms.openlocfilehash: 8c42a4dbdf6881a86794594e13ec6e799fbbd8ac556a499bef868926a7d49e56
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "53334756"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54216285"
 ---
 # <a name="people-picker-component-in-the-microsoft-graph-toolkit"></a>People-Picker componente no microsoft Graph Toolkit
 

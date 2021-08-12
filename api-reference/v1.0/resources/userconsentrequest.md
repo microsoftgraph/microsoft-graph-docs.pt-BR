@@ -5,12 +5,12 @@ author: psignoret
 localization_priority: Normal
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: a3ac490e4dcd7231c8b005eeb6a259e525bbf882
-ms.sourcegitcommit: ad1e4d758d4fe6025987c1c3528ce644edb27062
+ms.openlocfilehash: 0b7c69fb636efae5bd6e1a4ca71c9ba1b2943c20346262de20017ddea3da5849
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51698038"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54196499"
 ---
 # <a name="userconsentrequest-resource-type"></a>Tipo de recurso userConsentRequest
 
@@ -35,8 +35,8 @@ Método|Tipo de retorno|Descrição|
 |createdBy|[identitySet](../resources/identityset.md)|O usuário que criou a solicitação.|
 |createdDateTime|DateTimeOffset|A data e a hora em que a solicitação foi criada. As informações de data e hora usam o formato ISO 8601 e estão sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`. Suporta `$filter` ( `eq` somente) e `$orderby` .|
 |customData|String|Campo de texto livre para definir quaisquer dados personalizados para a solicitação de consentimento do usuário. Não usado.|
-|id|String|Identificador da solicitação. |
-|motivo|String|A justificativa do usuário para exigir acesso ao aplicativo. Suporta `$filter` ( `eq` somente) e `$orderby` .  |
+|id|Cadeia de caracteres|Identificador da solicitação. |
+|motivo|Cadeia de caracteres|A justificativa do usuário para exigir acesso ao aplicativo. Suporta `$filter` ( `eq` somente) e `$orderby` .  |
 |status|String|O status da solicitação de consentimento do aplicativo do usuário. Os valores possíveis são: `Initializing` `InProgress` , e `Completed` . Suporta `$filter` ( `eq` somente) e `$orderby` . |
 
 ## <a name="relationships"></a>Relações

@@ -5,12 +5,12 @@ author: preetikr
 localization_priority: Priority
 ms.prod: security
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 363ae9739205a6e96ff836a0190f066d919f5adf
-ms.sourcegitcommit: 366178d3fc37439791061082da80a63fba2c27df
+ms.openlocfilehash: 459f82f08ac8024ff1773809cd860e3b13acd051c822bb181b2ddd1718dff377
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48921813"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54235077"
 ---
 # <a name="microsoft-graph-security-api-overview"></a>Visão geral da API de Segurança do Microsoft Graph
 
@@ -38,7 +38,7 @@ Conecte o código uma vez para integrar os alertas de qualquer solução de segu
 
 ### <a name="correlate-security-alerts-to-improve-threat-protection-and-response"></a>Correlacionar alertas de segurança para melhorar a resposta e a proteção contra ameaças
 
-Correlacione alertas em soluções de segurança mais facilmente com um esquema de alerta unificado. Além de permitir que você receba informações de alerta acionáveis, permite também que analistas de segurança dinamizem e enriqueçam alertas com informações de ativos e usuários, possibilitando uma resposta mais rápida a ameaças e a proteção dos ativos.  
+Correlacione alertas entre soluções de segurança com mais facilidade com um esquema de alerta unificado. Além de permitir que você receba informações de alerta acionáveis, permite também que analistas de segurança dinamizem e enriqueçam alertas com informações de ativos e usuários, possibilitando uma resposta mais rápida a ameaças e a proteção dos ativos.  
 
 ### <a name="update-alert-tags-status-and-assignments"></a>Atualizar marcas, status e atribuições de alerta
 

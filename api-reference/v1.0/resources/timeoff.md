@@ -5,12 +5,12 @@ author: akumar39
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType_
-ms.openlocfilehash: a3060b9fcd47bddc2d589d2ffdfc249146ee4dca
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: 9390ec6e148bde2a5edab6b9984561a878d2d0d88e25078d4ecbbd7b50f2a63f
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50720848"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54196477"
 ---
 # <a name="timeoff-resource-type"></a>Tipo de recurso timeOff
 
@@ -18,15 +18,15 @@ Namespace: microsoft.graph
 
 Uma unidade que não funciona em um cronograma.
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 
 | Método       | Tipo de retorno  |Descrição|
 |:---------------|:--------|:----------|
 |[List](../api/schedule-list-timesoff.md) | [Coleção timeOff](timeoff.md) | Obter a lista de **objetos timeOff** nesta agenda.|
-|[Create](../api/schedule-post-timesoff.md) | [timeOff](timeoff.md) | Crie um novo **objeto timeOff.**|
-|[Get](../api/timeoff-get.md) | [timeOff](timeoff.md) | Obter um **objeto timeOff** por ID.|
+|[Criar](../api/schedule-post-timesoff.md) | [timeOff](timeoff.md) | Crie um novo **objeto timeOff.**|
+|[Obter](../api/timeoff-get.md) | [timeOff](timeoff.md) | Obter um **objeto timeOff** por ID.|
 |[Replace](../api/timeoff-put.md) | [timeOff](timeoff.md) | Substitua um **objeto timeOff.**|
-|[Delete](../api/timeoff-delete.md) | Nenhum | **Exclua um objeto timeOff** da agenda.|
+|[Delete](../api/timeoff-delete.md) | None | **Exclua um objeto timeOff** da agenda.|
 
 ## <a name="properties"></a>Propriedades
 |Nome          |Tipo           |Descrição                                                                                                                                      |
