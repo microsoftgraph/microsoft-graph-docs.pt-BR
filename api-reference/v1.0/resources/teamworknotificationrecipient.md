@@ -1,22 +1,22 @@
 ---
 title: tipo de recurso teamworkNotificationRecipient
-description: Representa o destinatário de uma notificação enviada em um feed de atividades do Microsoft Teams.
+description: Representa o destinatário de uma notificação enviada em um feed Microsoft Teams atividade.
 author: eddie-lee-msft
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 1706b3744566c527dba874de4cea53cf07464d00
-ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
+ms.openlocfilehash: 77ee747b57df3c0a2360b8d2011b94710dee62ca1f2d15730e36064f2458c14e
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51473991"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54182347"
 ---
 # <a name="teamworknotificationrecipient-resource-type"></a>tipo de recurso teamworkNotificationRecipient
 
 Namespace: microsoft.graph
 
-Representa o destinatário de uma notificação enviada em um feed de atividades do Microsoft Teams. Consulte também [aadUserNotificationRecipient](aadusernotificationrecipient.md).
+Representa o destinatário de uma notificação enviada em um feed Microsoft Teams atividade. Consulte também [aadUserNotificationRecipient](aadusernotificationrecipient.md).
 
 ## <a name="properties"></a>Propriedades
 Nenhum.

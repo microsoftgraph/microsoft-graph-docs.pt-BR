@@ -5,12 +5,12 @@ author: mecampos
 localization_priority: Normal
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: cd8f4ad66a80873d24f6ed14785e1f24d88077c4
-ms.sourcegitcommit: 1940be9846055aa650c6c03982b74a961f1e316a
+ms.openlocfilehash: 213c24c9388f555d772f2c0243b1d55d023239922d059b63478a8953ac6d5b25
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/17/2021
-ms.locfileid: "53467203"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54141669"
 ---
 # <a name="configuration-resource-type"></a>tipo de recurso de configuração
 

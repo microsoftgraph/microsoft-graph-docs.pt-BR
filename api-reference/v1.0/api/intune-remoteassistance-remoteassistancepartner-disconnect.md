@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: be378c81acd9872fa64402400a08227a90696d42
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: e3f69c6fcff4c1f709e2d6a6d9832cb75ac54b7bdf4d0ff821e4e5f56f1042ae
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52759013"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54238360"
 ---
 # <a name="disconnect-action"></a>Ação disconnect
 

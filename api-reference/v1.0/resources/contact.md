@@ -5,12 +5,12 @@ author: kevinbellinger
 localization_priority: Priority
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 91ce5d0c21d0b9dc700e2669efe881488d79257d
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: 2b07870ca74ed077030b0159c8892d98a3f398ea12bfd325f382b7c8134dc429
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50721996"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54235692"
 ---
 # <a name="contact-resource-type"></a>tipo de recurso contact
 
@@ -49,7 +49,7 @@ Esse recurso permite:
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |assistantName|String|O nome do assistente do contato.|
-|birthday|DateTimeOffset|O aniversário do contato. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`|
+|birthday|DateTimeOffset|O aniversário do contato. O tipo de Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria é `2014-01-01T00:00:00Z`|
 |businessAddress|[PhysicalAddress](physicaladdress.md)|O endereço comercial do contato.|
 |businessHomePage|String|A home page comercial do contato.|
 |businessPhones|Coleção de cadeias de caracteres|Os números de telefone comerciais do contato.|
@@ -57,7 +57,7 @@ Esse recurso permite:
 |changeKey|String|Identifica a versão do contato. Toda vez que o contato muda, a ChangeKey também muda. Isso permite que o Exchange aplique alterações na versão correta do objeto.|
 |children|Coleção de cadeias de caracteres|Os nomes dos filhos do contato.|
 |nomeDaEmpresa|String|O nome da empresa do contato.|
-|createdDateTime|DateTimeOffset|A hora em que o contato foi criado. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`|
+|createdDateTime|DateTimeOffset|A hora em que o contato foi criado. O tipo de Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 é `2014-01-01T00:00:00Z`|
 |department|String|O departamento do contato.|
 |displayName|String|O nome para exibição do contato. Você pode especificar o nome de exibição em uma operação [criar](../api/user-post-contacts.md) ou [atualizar](../api/contact-update.md). Observe que atualizações posteriores em outras propriedades podem fazer com que um valor gerado automaticamente sobrescreva o valor de displayName que você especificou. Para preservar a um valor preexistente, inclua-o como o displayName na operação [atualizar](../api/contact-update.md).|
 |emailAddresses|Coleção [EmailAddress](emailaddress.md)|Os endereços de email do contato.|
@@ -70,7 +70,7 @@ Esse recurso permite:
 |imAddresses|Coleção de cadeias de caracteres|Os endereços de mensagens instantâneas do contato.|
 |initials|String|As iniciais do contato.|
 |jobTitle|String|O cargo do contato.|
-|lastModifiedDateTime|DateTimeOffset|A hora em que o contato foi modificado. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`|
+|lastModifiedDateTime|DateTimeOffset|A hora em que o contato foi modificado. O tipo de Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 é `2014-01-01T00:00:00Z`|
 |manager|String|O nome do gerente do contato.
 |middleName|String|O nome do meio do contato.|
 |mobilePhone|String|O número de celular do contato.|

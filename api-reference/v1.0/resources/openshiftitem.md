@@ -1,28 +1,28 @@
 ---
-title: tipo de recurso openShiftItem
+title: Tipo de recurso openShiftItem
 description: Representa uma única contagem de um turno aberto.
 localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: d3e68f5cb558b67f92ed4107e8fb947cb7c300ca
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: d6c0a25ff8384b1312153cf19fa88f118aca9c9838057cba759ca60c3032a5a0
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48028242"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54152345"
 ---
-# <a name="openshiftitem-resource-type"></a>tipo de recurso openShiftItem
+# <a name="openshiftitem-resource-type"></a>Tipo de recurso openShiftItem
 
 Namespace: microsoft.graph
 
-Representa uma única contagem de um [openShift](../resources/openshift.md).
+Representa uma única contagem de [um openShift](../resources/openshift.md).
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|openSlotCount|Int32| Contagem do número de Slots para o turno aberto especificado.|
+|openSlotCount|Int32| Contagem do número de slots para o determinado turno aberto.|
 
 ## <a name="json-representation"></a>Representação JSON
 

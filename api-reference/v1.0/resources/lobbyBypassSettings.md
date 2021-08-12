@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso lobbyBypassSettings
 description: Especifica quais participantes podem ignorar o lobby da reunião.
-author: jsandoval-msft
+author: mkhribech
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: afd51167179d85706b76c0888f9ee745c7f8b3a3
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: e837f5e6b521988562f4d031845bf8c6cd63a3c4f80b49e543522a21eccb374f
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50959274"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54126414"
 ---
 # <a name="lobbybypasssettings-resource-type"></a>Tipo de recurso lobbyBypassSettings
 

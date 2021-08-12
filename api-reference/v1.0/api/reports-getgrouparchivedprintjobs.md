@@ -5,12 +5,12 @@ author: nilakhan
 localization_priority: Normal
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: 2f4a5861e55377548244971edb4c4e02056b55e9
-ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
+ms.openlocfilehash: 649dfc0dc7933bc8610620c8880c24141e35066e8e851f8133776eedeac1f349
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50516937"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54155397"
 ---
 # <a name="reportroot-getgrouparchivedprintjobs"></a>reportRoot: getGroupArchivedPrintJobs
 Namespace: microsoft.graph

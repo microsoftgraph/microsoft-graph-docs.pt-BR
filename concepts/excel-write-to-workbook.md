@@ -4,12 +4,12 @@ description: q=excelstarter).
 localization_priority: Priority
 author: lumine2008
 ms.prod: excel
-ms.openlocfilehash: 0f78069ae88cfcc7ac7ab18cd17f0ace61d24631
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 60f9b32cc6f769b309d64d5661781840b878e36605e63757f04b9538f170a428
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46806727"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54134809"
 ---
 # <a name="write-data-to-an-excel-workbook-with-microsoft-graph"></a>Gravar dados em uma pasta de trabalho do Excel com o Microsoft Graph
 

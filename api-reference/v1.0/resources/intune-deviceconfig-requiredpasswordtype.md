@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: fff639109994c8e094a17af8a8a8f7665a091de4
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: f77312652c10b229163c678ef42688a1a40d68e42653c6cbe6ce42784b728004
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52754703"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54237968"
 ---
 # <a name="requiredpasswordtype-enum-type"></a>tipo denum requiredPasswordType
 

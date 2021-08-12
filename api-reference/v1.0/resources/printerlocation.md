@@ -5,12 +5,12 @@ author: nilakhan
 localization_priority: Normal
 ms.prod: cloud-printing
 doc_type: resourcePageType
-ms.openlocfilehash: f357ab3b33182ac6ffb2f8ae705a359a0e955eed
-ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
+ms.openlocfilehash: c642c60cd148d7826432672d1bdef198c230e2a82f483299cbb7773bc2583d6d
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50516831"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54149713"
 ---
 # <a name="printerlocation-resource-type"></a>Tipo de recurso printerLocation
 
@@ -27,7 +27,7 @@ Representa o local físico e hierárquico de uma impressora.
 |longitude|Double|A longitude em que a impressora está localizada.|
 |altitudeInMeters|Int32|A altitude, em metros, em que a impressora está localizada.|
 |streetAddress|String|O endereço de rua onde a impressora está localizada.|
-|subUnit|Coleção de cadeias de caracteres|A hierarquia de subunidades onde a impressora está localizada. Os elementos devem estar em ordem hierárquica. Por exemplo, se um campus for dividido em seções diferentes, a hierarquia poderá ter esta aparência: `["East Wing", "Block A"]`|
+|subUnit|String collection|A hierarquia de subunidades onde a impressora está localizada. Os elementos devem estar em ordem hierárquica. Por exemplo, se um campus for dividido em seções diferentes, a hierarquia poderá ter esta aparência: `["East Wing", "Block A"]`|
 |city|Cadeia de caracteres|A cidade em que a impressora está localizada.|
 |postalCode|Cadeia de caracteres|O código postal em que a impressora está localizada.|
 |countryOrRegion|String|O país ou a região em que a impressora está localizada.|
@@ -36,8 +36,8 @@ Representa o local físico e hierárquico de uma impressora.
 |base|Cadeia de caracteres|O piso no que a impressora está localizada. Somente valores numéricos são suportados no momento.|
 |floorDescription|Cadeia de caracteres|A descrição do piso em que a impressora está localizada.|
 |roomName|Cadeia de caracteres|A sala em que a impressora está localizada. Somente valores numéricos são suportados no momento.|
-|roomDescription|Cadeia de caracteres|A descrição da sala em que a impressora está localizada.|
-|organização|Coleção de cadeias de caracteres|A hierarquia organizacional à que a impressora pertence. Os elementos devem estar em ordem hierárquica.|
+|roomDescription|String|A descrição da sala em que a impressora está localizada.|
+|organization|Coleção de cadeias de caracteres|A hierarquia organizacional à que a impressora pertence. Os elementos devem estar em ordem hierárquica.|
 |subdivisão|Coleção de cadeias de caracteres|A subdivisão em que a impressora está localizada. Os elementos devem estar em ordem hierárquica.|
 |stateOrProvince|Cadeia de caracteres|O estado ou província em que a impressora está localizada.|
 

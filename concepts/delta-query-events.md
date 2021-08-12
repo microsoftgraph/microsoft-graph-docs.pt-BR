@@ -4,12 +4,12 @@ description: 'O modo de visualização de calendário em um conjunto de eventos 
 author: davidmu1
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: 3720cf3fc263ba3cf9a63b2a5fbd3ad19480d555
-ms.sourcegitcommit: bbff139eea483faaa2d1dd08af39314f35ef48ce
+ms.openlocfilehash: 78a27c86623f5a608894bcbe69849b0568b18c1d0423adb046e887d7f2204519
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/08/2020
-ms.locfileid: "46598553"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54177827"
 ---
 # <a name="get-incremental-changes-to-events-in-a-calendar-view"></a>Obter as alterações incrementais para os eventos em um modo de exibição de calendário 
 
@@ -17,13 +17,13 @@ Usando a consulta delta, você pode obter eventos novos, atualizados ou excluíd
 
 > **Observação** O recurso para o primeiro - obter alterações incrementais nos eventos em um calendário não vinculado a um período fixo de datas de início e de término - está disponível atualmente apenas na versão beta. Para saber mais, confira a função[delta](/graph/api/event-delta?view=graph-rest-beta).
 
-O modo de visualização de calendário em um conjunto de eventos em um intervalo de data/horário (../me/calendarview) do calendário-padrão, ou de outro calendário especificado ou de um calendário de grupo. Os eventos retornados podem incluir instâncias únicas, ou ocorrências e exceções de uma série recorrente. Os dados-delta permitem manter e sincronizar o armazenamento local de eventos do usuário, sem ter de buscar todo o conjunto de eventos do usuário no servidor a cada vez que precise deles.
+Uma exibição de calendário é uma coleção de eventos em um intervalo de data/hora (.. /me/calendarview) do calendário padrão ou de algum outro calendário especificado de um usuário ou de um calendário de grupo. Os eventos retornados podem incluir instâncias individuais ou ocorrências e exceções de uma série recorrente. Os dados delta permitem que você mantenha e sincronize um repositório local de eventos de um usuário, sem precisar buscar todo o conjunto de eventos do usuário do servidor todas as vezes.
 
 A consulta delta oferece suporte à sincronização completa que recupera todos os eventos no modo de exibição calendário especificado e a sincronização incremental que recupera os eventos ocorridos no modo de exibição de calendário desde a última sincronização. Normalmente, você faria uma sincronização completa inicial e, logo após, obteria, periodicamente, as alterações incrementais para esse modo de exibição de calendário. 
 
 ## <a name="track-event-changes-in-a-calendar-view"></a>Rastrear alterações de evento em um modo de exibição de calendário
 
-A consulta delta para eventos em um modo de exibição de calendário é específica de um intervalo de calendário e data/hora que você especificar. Para controlar as alterações em vários calendários, você precisa controlar cada calendário individualmente. 
+A consulta delta para eventos em uma exibição de calendário é específica para um calendário e um intervalo de data/hora que você especificar. Para controlar as alterações em vários calendários, você precisa acompanhar cada calendário individualmente. 
 
 O rastreamento de alterações de evento em um modo de exibição de calendário normalmente corresponde a uma série de eventos de uma ou mais solicitações GET com a função [delta](/graph/api/event-delta?view=graph-rest-1.0). A solicitação GET inicial é muito semelhante à maneira como você [lista uma calendarView](/graph/api/calendar-list-calendarview?view=graph-rest-1.0), exceto se você incluir a função **delta**. A seguir está a solicitação delta GET inicial de um modo de exibição de calendário no calendário padrão do usuário conectado:
 
@@ -68,7 +68,7 @@ Confira também o que você vai fazer na [próxima fase](#the-next-round-sample-
 
 ### <a name="step-1-sample-initial-request"></a>Passo 1: solicitação inicial de exemplo
 
-Neste exemplo, o modo de exibição de calendário especificado no calendário padrão do usuário conectado está sendo sincronizado pela primeira vez, para que a solicitação de sincronização inicial não inclua nenhum token de estado. Essa rodada mostrará todos os eventos nesse modo de exibição de calendário.
+Neste exemplo, a exibição de calendário especificada no calendário padrão do usuário conectado está sendo sincronizada pela primeira vez, portanto, a solicitação de sincronização inicial não inclui nenhum token de estado. Esta rodada retornará todos os eventos nesse modo de exibição de calendário.
 
 A primeira solicitação especifica o seguinte:
 

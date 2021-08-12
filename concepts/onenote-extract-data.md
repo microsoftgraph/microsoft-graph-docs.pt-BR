@@ -4,12 +4,12 @@ description: " Notebooks empresariais no Microsoft 365"
 author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
-ms.openlocfilehash: d575ab5609adcc60f4886c726c50ced9bcb10d0b
-ms.sourcegitcommit: 32c83957ee69f21a10cd5f759adb884ce4b41c52
+ms.openlocfilehash: 41678fff4a84a20a49c4be94962a4381cf270e6a785a32568963dfed7a745184
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51920184"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54216319"
 ---
 # <a name="use-onenote-api-div-tags-to-extract-data-from-captures"></a>Usar marcas DIV da API do OneNote para extrair dados de capturas 
 

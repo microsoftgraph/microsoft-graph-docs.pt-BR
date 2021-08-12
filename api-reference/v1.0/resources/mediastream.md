@@ -1,32 +1,32 @@
 ---
-title: tipo de recurso mediaStream
+title: Tipo de recurso mediaStream
 description: O tipo mediaStream.
 author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: d1158dfb01b9e92c5dc97f34bef3bb3661da51b0
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 98fa09655faa6068c48c6fe2d1e340fa28ff253b99717900bed5d9f863561c1b
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48088486"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54141438"
 ---
-# <a name="mediastream-resource-type"></a>tipo de recurso mediaStream
+# <a name="mediastream-resource-type"></a>Tipo de recurso mediaStream
 
 Namespace: microsoft.graph
 
-Contém informações sobre o canal de mídia.
+Isso contém informações sobre o canal de mídia.
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade    | Tipo    | Descrição                                                                                                   |
 | :---------- | :------ | :------------------------------------------------------------------------------------------------------------ |
-| direction   | String  | A direção. Os valores possíveis são:,,, `inactive` `sendOnly` `receiveOnly` `sendReceive` .                  |
-| rótulo       | Cadeia de caracteres  | O rótulo do fluxo de mídia.                                                                                       |
-| mediaType   | Cadeia de caracteres  | O tipo de mídia. O valor possível é `unknown` , `audio` , `video` , `videoBasedScreenSharing` , `data` .        |
-| serverMuted | Booliano | Se a mídia estiver com mudo ativado pelo servidor.                                                                          |
-| sourceId    | Cadeia de caracteres  | A ID da fonte.                                                                                                |
+| direction   | String  | A direção. Os valores possíveis `inactive` são , , , `sendOnly` `receiveOnly` `sendReceive` .                  |
+| rótulo       | Cadeia de caracteres  | O rótulo de fluxo de mídia.                                                                                       |
+| mediaType   | Cadeia de caracteres  | O tipo de mídia. O valor possível é `unknown` , , , , `audio` `video` `videoBasedScreenSharing` `data` .        |
+| serverMuted | Booliano | Se a mídia for silenciada pelo servidor.                                                                          |
+| sourceId    | Cadeia de caracteres  | A ID de origem.                                                                                                |
 
 ## <a name="json-representation"></a>Representação JSON
 

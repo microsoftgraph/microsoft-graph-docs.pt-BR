@@ -5,12 +5,12 @@ localization_priority: Normal
 author: Jumaodhiss
 doc_type: resourcePageType
 ms.prod: change-notifications
-ms.openlocfilehash: 62098d3099549893165d60cb55699209e4034ccc
-ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
+ms.openlocfilehash: f4fd69bca39042c00630d21905e26d587b8d3ad8b0d014656eb2e9cf6a57d342
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51469317"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54189892"
 ---
 # <a name="changenotificationcollection-resource-type"></a>Tipo de recurso changeNotificationCollection
 
@@ -28,7 +28,7 @@ Nenhum.
 
 | Propriedade | Tipo | Descrição |
 |:---------|:-----|:------------|
-| validationTokens | collection(string) | Contém uma matriz de tokens JWT gerados pelo Microsoft Graph para o aplicativo validar a origem das notificações. O Microsoft Graph gera um único token para cada par de aplicativos e locatários distintos para um item se ele existir na matriz de valores. Lembre-se de que as notificações podem conter uma combinação de itens para vários aplicativos e locatários que assinaram usando a mesma URL de notificação. Fornecido apenas para [notificações de alteração com dados de recurso](/graph/webhooks-with-resource-data.md) Opcional. |
+| validationTokens | collection(string) | Contém uma matriz de tokens JWT gerados pela Microsoft Graph para o aplicativo validar a origem das notificações. O Microsoft Graph gera um único token para cada par de aplicativos e locatários distintos para um item se ele existir na matriz de valores. Lembre-se de que as notificações podem conter uma combinação de itens para vários aplicativos e locatários que assinaram usando a mesma URL de notificação. Fornecido apenas para [notificações de alteração com dados de recurso](/graph/webhooks-with-resource-data.md) Opcional. |
 | valor | collection([changeNotification](changenotification.md)) | O conjunto de notificações que está sendo enviado para a URL de notificação. Obrigatório. |
 
 ## <a name="relationships"></a>Relações

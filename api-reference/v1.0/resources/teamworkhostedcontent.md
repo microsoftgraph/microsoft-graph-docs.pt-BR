@@ -1,22 +1,22 @@
 ---
 title: Tipo de recurso teamworkHostedContent
-description: Representa conteúdo rich hospedado pelo Microsoft Teams.
+description: Representa conteúdo rich hospedado por Microsoft Teams.
 author: RamjotSingh
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 0a4a4d0a553f77766dd4ddb1f68e27b440fdbf2f
-ms.sourcegitcommit: cde4a3386b08a67cb476df6d46b51885c643d94f
+ms.openlocfilehash: 7fca2d17db16e101edb22bd1ddfa31e4234e35ec6817f226209429f6cb97757a
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "50634288"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54189251"
 ---
 # <a name="teamworkhostedcontent-resource-type"></a>Tipo de recurso teamworkHostedContent
 
 Namespace: microsoft.graph
 
-Representa conteúdo rico como imagens e trechos de código no Microsoft Teams. Para conteúdo rico em [mensagens de canal e chat,](chatMessage.md)consulte [chatMessageHostedContent](chatMessageHostedContent.md).
+Representa conteúdo rico como imagens e trechos de código em Microsoft Teams. Para conteúdo rico em [mensagens de canal e chat,](chatMessage.md)consulte [chatMessageHostedContent](chatMessageHostedContent.md).
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|

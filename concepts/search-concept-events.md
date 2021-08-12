@@ -1,19 +1,19 @@
 ---
-title: Usar a API de pesquisa da Microsoft no Microsoft Graph para pesquisar eventos de calendário
+title: Use a API Pesquisa da Microsoft no Microsoft Graph para pesquisar eventos de calendário
 description: Você pode pesquisar no próprio calendário do usuário.
 author: knightsu
 localization_priority: Normal
 ms.prod: search
-ms.openlocfilehash: bedad2dcf94df6024bcba7f0760dbe5c1cf97c18
-ms.sourcegitcommit: 5345c2f3265ede107fa0faaff7a3f1c2afee3810
+ms.openlocfilehash: 277c46e6298aa532d300b23fcba707c678e38e035007d2ef63fa249951afa633
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "49521905"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54171970"
 ---
-# <a name="use-the-microsoft-search-api-to-search-calendar-events"></a>Usar a API de pesquisa da Microsoft para pesquisar eventos de calendário
+# <a name="use-the-microsoft-search-api-to-search-calendar-events"></a>Usar a API Pesquisa da Microsoft para pesquisar eventos de calendário
 
-Use a API de pesquisa da Microsoft para pesquisar eventos no calendário principal do usuário conectado. A identidade do usuário para a pesquisa se baseia no token de autenticação.
+Use a API Pesquisa da Microsoft para pesquisar eventos no calendário principal do usuário inscreveu. A identidade do usuário da pesquisa é baseada no token de auth.
 
 [!INCLUDE [search-schema-updated](../includes/search-schema-updated.md)]
 
@@ -21,7 +21,7 @@ Use a API de pesquisa da Microsoft para pesquisar eventos no calendário princip
 
 ### <a name="request"></a>Solicitação
 
-Este exemplo procura a palavra-chave "contoso" no calendário do usuário e retorna até 25 resultados.
+Este exemplo pesquisa no calendário do usuário a palavra-chave "contoso" e retornará até 25 resultados.
 
 ```HTTP
 POST https://graph.microsoft.com/v1.0/search/query
@@ -96,9 +96,9 @@ Content-type: application/json
 
 ## <a name="known-limitations"></a>Limitações conhecidas
 
-- Você pode acessar somente a caixa de correio do usuário conectado. Não há suporte para a pesquisa de caixas de correio delegadas.
-- Para eventos, a propriedade **total** do tipo [searchHitsContainer](/graph/api/resources/searchhitscontainer) contém o número de resultados na página, e não o número total de resultados correspondentes.
-- A classificação de resultados não é suportada para eventos. Uma cláusula de classificação na solicitação retornará um código de erro de solicitação inválida na resposta.
+- Você pode acessar apenas a própria caixa de correio do usuário interno. Não há suporte para pesquisar caixas de correio delegadas.
+- Para eventos, a **propriedade total** do tipo [searchHitsContainer](/graph/api/resources/searchhitscontainer) contém o número de resultados na página, não o número total de resultados correspondentes.
+- A classificação de resultados não é suportada para eventos. Uma cláusula de classificação na solicitação retornará um código de erro de Solicitação Inoposta na resposta.
 
 ## <a name="next-steps"></a>Próximas etapas
 

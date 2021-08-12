@@ -5,12 +5,12 @@ author: Alice-at-Microsoft
 localization_priority: Normal
 ms.prod: w10
 doc_type: conceptualPageType
-ms.openlocfilehash: 98b75f278e33f56cf726a18c266000b06d817a6f
-ms.sourcegitcommit: 1b09298649d5606b471b4cbe1055419bbe2fc7e5
+ms.openlocfilehash: a8cd51524647c3fc34be1619cc0c61e433e4031ab805c4269e309e0502e1fae6
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "52067653"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54225668"
 ---
 # <a name="windows-updates-api-overview"></a>Windows visão geral da API de atualizações
 

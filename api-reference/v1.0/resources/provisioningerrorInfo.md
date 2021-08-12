@@ -5,12 +5,12 @@ localization_priority: Normal
 author: ArvindHarinder1
 ms.prod: identity-and-access-reports
 doc_type: resourcePageType
-ms.openlocfilehash: a682e176b40d58e2dc0a794b58b8561f8948d5a5
-ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
+ms.openlocfilehash: de8804ab2ae1e1e8f9516e25c0f0a5522d86a0ff2c3722fb9c10e47bc575869c
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52547152"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54205195"
 ---
 # <a name="provisioningerrorinfo-resource-type"></a>Tipo de recurso provisioningErrorInfo
 

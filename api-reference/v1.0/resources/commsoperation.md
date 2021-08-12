@@ -1,36 +1,36 @@
 ---
-title: tipo de recurso commsOperation
+title: Tipo de recurso commsOperation
 description: O status de determinadas operações de longa duração.
 author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 5b7c6e8dcf68ad867f206c5702e7d7af9b48b470
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: dd924966c34d39ceb26e7b92077f01f085f9f6779896db439c1ae6c7a57eae9c
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48057063"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54130384"
 ---
-# <a name="commsoperation-resource-type"></a>tipo de recurso commsOperation
+# <a name="commsoperation-resource-type"></a>Tipo de recurso commsOperation
 
 Namespace: microsoft.graph
 
 Representa o status de determinadas operações de longa duração.
 
-Esse recurso pode ser retornado como a resposta a uma ação ou como o conteúdo de um [commsNotification](commsNotification.md).  
+Esse recurso pode ser retornado como a resposta a uma ação ou como o conteúdo de [um commsNotification](commsNotification.md).  
 
-Quando ele é retornado como uma resposta a uma ação, o status indica se haverá notificações subsequentes. Se, por exemplo, uma operação com status `completed` ou `failed` for retornada, não haverá nenhuma operação subsequente por meio do canal de notificação. 
+Quando ele é retornado como uma resposta a uma ação, o status indica se haverá notificações subsequentes. Se, por exemplo, uma operação com status de ou for retornada, não haverá qualquer operação subsequente por meio `completed` `failed` do canal de notificação. 
 
-Se uma `null` operação ou uma operação com o status `notStarted` ou `running` for retornada, as atualizações subsequentes serão fornecidas pelo canal de notificação.
+Se uma operação ou uma operação com um status de ou for retornada, as atualizações `null` `notStarted` `running` subsequentes virão por meio do canal de notificação.
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade           | Tipo                        | Descrição                                                                     |
 | :----------------- | :-------------------------- | :-------------------------------------------------------------------------------|
-| clientContext      | String                      | Cadeia de caracteres de contexto de cliente exclusivo. O limite máximo é de 256 caracteres.                           |
-| id                 | String                      | A ID da operação. Somente leitura.                                                    |
-| resultInfo         | [resultInfo](resultinfo.md) | As informações de resultado. Somente leitura.                                              |
+| clientContext      | Cadeia de caracteres                      | Cadeia de caracteres de contexto de cliente exclusiva. O limite máximo é 256 caracteres.                           |
+| id                 | Cadeia de caracteres                      | A ID da operação. Somente leitura.                                                    |
+| resultInfo         | [resultInfo](resultinfo.md) | As informações de resultado. Apenas leitura.                                              |
 | status             | String                      | Os valores possíveis são: `notStarted`, `running`, `completed`, `failed`. Somente leitura. |
 
 ## <a name="relationships"></a>Relações

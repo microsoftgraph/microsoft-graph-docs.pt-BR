@@ -5,12 +5,12 @@ author: simonhult
 localization_priority: Normal
 ms.prod: insights
 doc_type: apiPageType
-ms.openlocfilehash: 9261db7230c1655398f61f5f37d9f6792f79d066
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: db5392cebe5762fb0e77f92860d0f2633c96c8712536f5d0a86d32909caed394
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52051358"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54187382"
 ---
 # <a name="list-trending"></a>Listar tendências
 

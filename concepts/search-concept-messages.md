@@ -1,33 +1,33 @@
 ---
-title: Usar a API do Microsoft Search no Microsoft Graph para pesquisar mensagens
-description: Você pode usar a API de pesquisa da Microsoft para pesquisar informações em mensagens de email, devolver mensagens classificadas por relevância e renderizar uma experiência de pesquisa dedicada.
+title: Usar a API Pesquisa da Microsoft no Microsoft Graph para pesquisar mensagens
+description: Você pode usar a API Pesquisa da Microsoft para pesquisar informações em mensagens de email, retornar mensagens classificadas por relevância e renderizar uma experiência de pesquisa dedicada.
 author: knightsu
 localization_priority: Normal
 ms.prod: search
-ms.openlocfilehash: 0ee9950ff136b3f97e063da252ec22d166f05b74
-ms.sourcegitcommit: 5345c2f3265ede107fa0faaff7a3f1c2afee3810
+ms.openlocfilehash: 1edc75cab2192fd000a29e565869e2534ecf4032540fbe3073b1b2dccdd39d76
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "49521359"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54165515"
 ---
-# <a name="use-the-microsoft-search-api-to-search-outlook-messages"></a>Usar a API de pesquisa da Microsoft para pesquisar mensagens do Outlook
+# <a name="use-the-microsoft-search-api-to-search-outlook-messages"></a>Usar a API Pesquisa da Microsoft para pesquisar Outlook mensagens
 
-Use a API de pesquisa da Microsoft para pesquisar informações em mensagens de email, retornar mensagens classificadas por relevância e renderizar uma experiência de pesquisa dedicada. A pesquisa se aplica ao corpo e aos anexos de mensagens na caixa de correio do usuário conectado.
+Use a API Pesquisa da Microsoft para pesquisar informações em mensagens de email, retornar mensagens classificadas por relevância e renderizar uma experiência de pesquisa dedicada. A pesquisa se aplica ao corpo e aos anexos de mensagens na própria caixa de correio do usuário inscreveu.
 
 [!INCLUDE [search-schema-updated](../includes/search-schema-updated.md)]
 
-Uma consulta de pesquisa pode incluir [filtros](https://support.office.com/article/learn-to-narrow-your-search-criteria-for-better-searches-in-outlook-d824d1e9-a255-4c8a-8553-276fb895a8da) que os usuários finais inserem na caixa de texto de **pesquisa** no Outlook.
+Uma consulta de pesquisa pode incluir [filtros](https://support.office.com/article/learn-to-narrow-your-search-criteria-for-better-searches-in-outlook-d824d1e9-a255-4c8a-8553-276fb895a8da) que os usuários finais insiram na caixa **de texto Pesquisar** Outlook.
 
-Os resultados da pesquisa de mensagens são classificados por **receivedDateTime** em ordem decrescente.
+Os resultados da pesquisa de mensagens são organizados **por receivedDateTime** em ordem decrescente.
 
-A pesquisa de mensagens aplica-se às contas corporativas ou de estudante. Os usuários podem pesquisar sua própria caixa de correio, mas não podem pesquisar caixas de correio delegadas. Para obter detalhes, consulte [limitações conhecidas](#known-limitations).
+A pesquisa de mensagens se aplica a contas de trabalho ou de estudante. Os usuários podem pesquisar suas próprias caixas de correio, mas não podem pesquisar caixas de correio delegadas. Para obter detalhes, consulte [limitações conhecidas](#known-limitations).
 
-A pesquisa de mensagens também procura anexos. Os [tipos de arquivo com suporte](/SharePoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types) para a pesquisa de anexo de mensagens são os mesmos que para a pesquisa do SharePoint Online.
+A pesquisa de mensagens também procura por anexos. Os [tipos de arquivo com suporte para](/SharePoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types) pesquisa de anexos de mensagens são os mesmos da pesquisa SharePoint Online.
 
 ## <a name="example-1-search-messages-in-a-users-mailbox"></a>Exemplo 1: Pesquisar mensagens na caixa de correio de um usuário
 
-O exemplo a seguir consulta mensagens na caixa de correio do usuário conectado que contêm a cadeia de caracteres "contoso" em qualquer parte da mensagem (o nome do remetente, assunto, corpo da mensagem ou qualquer anexo). A consulta retorna os 25 primeiros resultados. Os resultados da pesquisa são ordenados por **DateTime** decrescente.
+O exemplo a seguir consulta mensagens na caixa de correio do usuário que contém a cadeia de caracteres "contoso" em qualquer parte da mensagem (o nome do remetente, assunto, corpo da mensagem ou quaisquer anexos). A consulta retorna os primeiros 25 resultados. Os resultados da pesquisa são ordenados **pela decrescente DateTime.**
 
 ### <a name="request"></a>Solicitação
 
@@ -53,7 +53,7 @@ Content-Type: application/json
 
 ### <a name="response"></a>Resposta
 
-Veja a seguir um exemplo da resposta, que contém uma mensagem que corresponde ao critério de pesquisa.
+A seguir, um exemplo da resposta, que contém uma mensagem que corresponde ao critério de pesquisa.
 
 ```HTTP
 HTTP/1.1 200 OK
@@ -116,7 +116,7 @@ Content-type: application/json
 
 ## <a name="example-2-search-top-results-messages"></a>Exemplo 2: Pesquisar mensagens de resultados principais
 
-O exemplo a seguir usa a consulta de pesquisa mostrada no exemplo 1 e classifica os resultados por relevância. 
+O exemplo a seguir usa a consulta de pesquisa mostrada no Exemplo 1 e classifica os resultados por relevância. 
 
 <!-- markdownlint-disable MD024 -->
 ### <a name="request"></a>Solicitação
@@ -204,10 +204,10 @@ Content-type: application/json
 
 ## <a name="known-limitations"></a>Limitações conhecidas
 
-- Você pode acessar somente a caixa de correio do usuário conectado. Não há suporte para a pesquisa de caixas de correio delegadas.
-- Para mensagens, a propriedade **total** do tipo [searchHitsContainer](/graph/api/resources/searchhitscontainer) contém o número de resultados na página, e não o número total de resultados correspondentes.
-- A classificação de resultados não é suportada para eventos. Uma cláusula de classificação na solicitação retornará um código de erro de solicitação inválida na resposta.
+- Você pode acessar apenas a própria caixa de correio do usuário interno. Não há suporte para pesquisar caixas de correio delegadas.
+- Para mensagens, a **propriedade total** do [tipo searchHitsContainer](/graph/api/resources/searchhitscontainer) contém o número de resultados na página, não o número total de resultados correspondentes.
+- A classificação de resultados não é suportada para eventos. Uma cláusula de classificação na solicitação retornará um código de erro de Solicitação Inoposta na resposta.
 
 ## <a name="next-steps"></a>Próximas etapas
 
-- [Usar a API de pesquisa da Microsoft](/graph/api/resources/search-api-overview)
+- [Usar a API Pesquisa da Microsoft de usuário](/graph/api/resources/search-api-overview)

@@ -1,18 +1,18 @@
 ---
-title: tipo de recurso callRoute
+title: Tipo de recurso callRoute
 description: Representa o tipo de rota de chamada.
 author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 9ff55759e71cda0876a2ce5b0a65e47bcaf917a0
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 82d69edb17d1a68ab3fc0f22402bd26c94c02dd3f922f0eb091cce95ce0b921f
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48069264"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54141816"
 ---
-# <a name="callroute-resource-type"></a>tipo de recurso callRoute
+# <a name="callroute-resource-type"></a>Tipo de recurso callRoute
 
 Namespace: microsoft.graph
 
@@ -22,9 +22,9 @@ Representa o tipo de rota de chamada.
 
 | Propriedade            | Tipo                          | Descrição                                                  |
 | :------------------ | :---------------------------- | :----------------------------------------------------------- |
-| recente               | [identitySet](identityset.md) | A identidade que foi resolvida para na chamada.               |
-| Original            | [identitySet](identityset.md) | A identidade que foi usada originalmente na chamada.           |
-| RoutingType         | Cadeia de caracteres                        | Os valores possíveis são: `forwarded`, `lookup`, `selfFork`.  |
+| final               | [identitySet](identityset.md) | A identidade que foi resolvida na chamada.               |
+| Original            | [identitySet](identityset.md) | A identidade que foi originalmente usada na chamada.           |
+| routingType         | Cadeia de caracteres                        | Os valores possíveis são: `forwarded`, `lookup`, `selfFork`.  |
 
 ## <a name="json-representation"></a>Representação JSON
 

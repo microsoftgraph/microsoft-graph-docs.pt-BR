@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 092e2c0d3746f155dba002f57ab2b55c10a42088
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 0a07beccc5dfc0529a8966ae11441341aee2a4385d1e8b10ef9db4d8d88a7c85
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52757819"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54180751"
 ---
 # <a name="win32lobappreturncodetype-enum-type"></a>Tipo denum win32LobAppReturnCodeType
 

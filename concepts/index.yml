@@ -83,7 +83,7 @@ tools:
     - title: Graph Explorer
       imageSrc: ./images/hub/icon03-graphexplorer.svg
       url: 'https://developer.microsoft.com/graph/graph-explorer/'
-    - title: Microsoft Graph Toolkit
+    - title: Kit de ferramentas do Microsoft Graph
       imageSrc: ./images/hub/icon04-graphtoolkit.svg
       url: ./toolkit/overview.md
 additionalContent:

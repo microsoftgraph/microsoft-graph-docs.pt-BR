@@ -5,12 +5,12 @@ description: Representa um item em uma lista do sharepoint.
 localization_priority: Priority
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 7e9e7b00ee87127b7844d2d7208d63c8e4fb6af5
-ms.sourcegitcommit: 0d4377b0153bc339ab7b3b1a6ee4d52848b622d4
+ms.openlocfilehash: 9fdce383b28ee71a682e920011787b191012e1a52ef013aa585fac244dad2c04
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "49714113"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54130020"
 ---
 # <a name="listitem-resource"></a>recurso listItem
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 Representa um item em uma [lista][] do Microsoft Office SharePoint Online.
 
-Todos os itens em uma biblioteca de documentos do Microsoft Office SharePoint Online podem ser representados como um **listItem** ou um r[ecurso driveItem][].
+Todos os itens em uma biblioteca de documentos do Microsoft Office SharePoint Online podem ser representados como um **listItem** ou um r [ecurso driveItem][].
 
 Os valores de coluna na lista estão disponíveis por meio do dicionário `fieldValueSet`.
 
@@ -62,11 +62,11 @@ As propriedades a seguir são herdadas do **[baseItem][]**.
 |:---------------------|:------------------|:----------------------------------
 | id                   | string            | O identificador exclusivo do item. Somente leitura.
 | name                 | string            | O nome/título do item.
-| createdBy            | [identitySet][]   | Identidade do criador desse item. Somente leitura.
+| createdBy            | [identitySet][]   | Identidade do criador deste item. Somente leitura.
 | createdDateTime      | DateTimeOffset    | A data e a hora da criação do item. Somente leitura.
 | description          | string            | O texto descritivo do item.
 | eTag                 | string            | ETag do item. Somente leitura.                                                          |
-| lastModifiedBy       | [identitySet][]   | Identidade da última pessoa que alterou esse item. Somente leitura.
+| lastModifiedBy       | [identitySet][]   | Identidade do último modificador deste item. Somente leitura.
 | lastModifiedDateTime | DateTimeOffset    | A data e a hora que o item foi modificado pela última vez. Somente leitura.
 | parentReference      | [itemReference][] | Informações do pai, se o item tiver um pai. Leitura e gravação.
 | sharepointIds        | [sharepointIds][] | Retorna os identificadores úteis para fins de compatibilidade do REST do SharePoint. Somente leitura.
@@ -104,7 +104,7 @@ Veja a seguir uma representação JSON de um recurso **listItem**.
   "blockType": "resource",
   "keyProperty": "id",
   "baseType": "microsoft.graph.baseItem",
-  "@odata.type": "microsoft.graph.listItem"
+  "@odata.type&quot;: &quot;microsoft.graph.listItem"
 }-->
 
 ```json
@@ -129,7 +129,7 @@ Veja a seguir uma representação JSON de um recurso **listItem**.
   "lastModifiedBy": { "@odata.type": "microsoft.graph.identitySet" },
   "lastModifiedDateTime": "timestamp",
   "parentReference": { "@odata.type": "microsoft.graph.itemReference"},
-  "webUrl": "url"
+  "webUrl&quot;: &quot;url"
 }
 ```
 
@@ -140,7 +140,7 @@ Veja a seguir uma representação JSON de um recurso **listItem**.
   "section": "documentation",
   "tocPath": "Resources/listItem",
   "tocBookmarks": {
-    "ListItem": "#"
+    "ListItem&quot;: &quot;#"
   }
 } -->
 

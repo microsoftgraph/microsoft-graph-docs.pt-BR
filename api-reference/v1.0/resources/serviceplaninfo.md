@@ -5,12 +5,12 @@ localization_priority: Normal
 author: jpettere
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 68dd5a4af0b6406ef9e230e0d9ac848532db7e09
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: 11ab4116f357f188e5bb99ef7a98ebc4dc7bce3edafb1508dd9b4d1b9c42c69b
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50721786"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54177972"
 ---
 # <a name="serviceplaninfo-resource-type"></a>Tipo de recurso servicePlanInfo
 

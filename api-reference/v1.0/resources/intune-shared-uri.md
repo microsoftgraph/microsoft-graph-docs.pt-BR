@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 53d67e8926a6465ec9b78538b079aade351121cd
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 2cf5fbecba6f8c68f3f4c6524b001361812be71692271b6a9906f0892e62e62e
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52751164"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54141536"
 ---
 # <a name="uri-resource-type"></a>Tipo de recurso uri
 
@@ -26,7 +26,7 @@ Ainda não documentado
 |segmentos|String collection|Ainda não documentado|
 
 ## <a name="relationships"></a>Relações
-Nenhuma
+Nenhum
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.

@@ -5,26 +5,26 @@ description: O objeto itemActionSet fornece informações sobre as ações que o
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 6dcc630b76adcbec3c719a43280e4b28d1d933e5
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: 56a6e4ed3400be921dafcfd418a5bcb98b2e6e865939a93f22d06661a8df470c
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50239251"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54130104"
 ---
 # <a name="itemactionset-resource-type"></a>Tipo de recurso itemActionSet
 
 Namespace: microsoft.graph
 
-O **recurso itemActionSet** fornece informações sobre as ações que comviam uma [atividade][itemActivity] em um item.
+O **recurso itemActionSet** fornece informações sobre as ações que com fizeram parte de uma [atividade][itemActivity] em um item.
 
->**Observação:** No momento, os registros de atividades do item só estão disponíveis no SharePoint e no OneDrive for Business.
+>**Observação:** No momento, os registros de atividade do item estão disponíveis apenas SharePoint e OneDrive for Business.
 
 [itemActivity]: itemactivity.md
 
 ## <a name="properties"></a>Propriedades
 
-As ações a seguir estão disponíveis no momento. Como novas ações podem ser adicionadas no futuro, certifique-se de que seu aplicativo possa manipular um **itemActionSet** que inclui ações desconhecidas.
+As ações a seguir estão disponíveis no momento. Como novas ações podem ser adicionadas no futuro, certifique-se de que seu aplicativo possa manipular **um itemActionSet** que inclui ações desconhecidas.
 
 | Nome da propriedade | Tipo              | Descrição
 |:--------------|:------------------|:-----------------------------------------
@@ -57,7 +57,7 @@ As ações a seguir estão disponíveis no momento. Como novas ações podem ser
   "optionalProperties": [ ],
   "keyProperty": "id",
   "@type": "microsoft.graph.itemActionSet",
-  "@type.aka": "oneDrive.action"
+  "@type.aka&quot;: &quot;oneDrive.action"
 }-->
 
 ```json

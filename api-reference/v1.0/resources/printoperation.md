@@ -5,12 +5,12 @@ author: nilakhan
 localization_priority: Normal
 ms.prod: cloud-printing
 doc_type: resourcePageType
-ms.openlocfilehash: 9a397a0166ad62a503027499e9e0f5fd4f127b1e
-ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
+ms.openlocfilehash: 0630d05e30d415ad60f4dd7ea4e7f729506e41b2cc20bded955e1593a6f56161
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50517034"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54138455"
 ---
 # <a name="printoperation-resource-type"></a>Tipo de recurso printOperation
 
@@ -28,7 +28,7 @@ Representa uma operação de impressão universal de longa duração. Classe bas
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|O identificador da operação. Somente leitura.|
+|id|Cadeia de caracteres|O identificador da operação. Apenas leitura.|
 |status|[printOperationStatus](printoperationstatus.md)|O status da operação. Somente leitura.|
 |createdDateTime|DateTimeOffset|DateTimeOffset quando a operação foi criada. Somente leitura.|
 

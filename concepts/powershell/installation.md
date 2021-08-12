@@ -3,12 +3,12 @@ title: Instalar o Microsoft Graph PowerShell SDK
 description: Fornece instruções para instalar o Microsoft Graph PowerShell SDK.
 localization_priority: Normal
 author: jasonjoh
-ms.openlocfilehash: 58e967d7acedbbfe4f8c3781a7ec796e697a44c8
-ms.sourcegitcommit: d586ddb253d27f9ccb621bd128f6a6b4b1933918
+ms.openlocfilehash: 9a23e9498920f329cca5d8eaaef6178c9291803ec9ede965f2fe7569e0b454c8
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53107673"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54149517"
 ---
 # <a name="install-the-microsoft-graph-powershell-sdk"></a>Instalar o Microsoft Graph PowerShell SDK
 

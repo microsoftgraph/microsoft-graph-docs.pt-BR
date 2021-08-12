@@ -3,12 +3,12 @@ title: Componente Tarefas no microsoft Graph Toolkit
 description: O componente Tarefas permite ao usuário exibir, adicionar, remover, concluir ou editar tarefas. Ele funciona com qualquer tarefa no Microsoft Planner.
 localization_priority: Normal
 author: benotter
-ms.openlocfilehash: 35191c778c957c1c9c6c316fb4755b57e6690ff2
-ms.sourcegitcommit: ae83b2b372902268517fd17a8b10d6d9add422af
+ms.openlocfilehash: c28db228e40a6661fc5cb48bb86b961ba7f6871a91987e5255212463dc3c09d6
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "53334735"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54186878"
 ---
 # <a name="tasks-component-in-the-microsoft-graph-toolkit"></a>Componente Tarefas no microsoft Graph Toolkit
 
@@ -36,8 +36,8 @@ O exemplo a seguir exibe as tarefas do Microsoft Planner do usuário de logo-in 
 | target-id="planner_id/folder_id"| targetId | Uma ID de cadeia de caracteres para bloquear a interface de tarefas para o planejador ou a ID de pasta fornecida. |
 | target-bucket-id="bucket_id" |targetBucketId  | Uma ID de cadeia de caracteres para bloquear a interface de tarefas na ID de bucket fornecida (Planner Data-Source Only). |
 | group-id | groupId  | Uma ID de cadeia de caracteres para bloquear a interface de tarefas na ID do grupo. |
-| N/D | isNewTaskVisible  | Determina se o novo exibição de tarefa está visível na renderização. |
-| N/D | taskFilter  | Uma função opcional para filtrar quais tarefas são mostradas ao usuário. |
+| N/A | isNewTaskVisible  | Determina se o novo exibição de tarefa está visível na renderização. |
+| N/A | taskFilter  | Uma função opcional para filtrar quais tarefas são mostradas ao usuário. |
 
 O exemplo a seguir mostra apenas tarefas do Planner com a ID *12345* e não permite que o usuário crie novas tarefas.
 

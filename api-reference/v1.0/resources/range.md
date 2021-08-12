@@ -5,12 +5,12 @@ localization_priority: Priority
 author: lumine2008
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 43aa45bd8880a89869f19ca6905a35f9057a5b19
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 7a43f93ccb9c73a321d26b7fda8a37faccecaa5fb2c23ddca3c276b48b12e140
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48037084"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54205169"
 ---
 # <a name="range-resource-type"></a>Tipo de recurso Range
 

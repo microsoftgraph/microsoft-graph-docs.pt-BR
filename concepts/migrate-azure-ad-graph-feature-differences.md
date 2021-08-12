@@ -1,21 +1,21 @@
 ---
 title: Diferenças de recursos entre o Azure AD Graph e o Microsoft Graph
-description: Descreve as diferenças de recursos entre a API do Azure Active Directory (Azure AD) e a API do Microsoft Graph, para ajudar você a migrar aplicativos de forma rápida e fácil.
+description: Descreve as diferenças de recursos entre Azure Active Directory API (Azure AD) e a API do Microsoft Graph, para ajudar você a migrar aplicativos de forma rápida e fácil.
 author: dkershaw10
 localization_priority: Normal
 ms.prod: applications
-ms.openlocfilehash: a404c69370c7b6aaeee07e20df1165c43a98a243
-ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
+ms.openlocfilehash: aafa0ab718bf050b6575205f702bf81a614b9cac14216d360134166d331ec319
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50760676"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54163541"
 ---
 # <a name="feature-differences-between-azure-ad-graph-and-microsoft-graph"></a>Diferenças de recursos entre o Azure AD Graph e o Microsoft Graph
 
 Este artigo faz parte da *etapa 1: analisar as* diferenças de API do processo para [migrar aplicativos.](migrate-azure-ad-graph-planning-checklist.md)
 
-Muitos recursos no Microsoft Graph funcionam da mesma forma que seus equivalentes do Azure AD Graph. No entanto, alguns foram alterados e/ou melhorados. Aqui, você aprenderá a adaptar seus aplicativos para tirar proveito dessas diferenças.  Frequentemente, as alterações são secundárias, mas vale a pena o esforço.
+Muitos recursos na Microsoft Graph funcionam de forma semelhante às suas contrapartes do Azure AD Graph. No entanto, alguns foram alterados e/ou melhorados. Aqui, você aprenderá a adaptar seus aplicativos para tirar proveito dessas diferenças.  Frequentemente, as alterações são secundárias, mas vale a pena o esforço.
 
 Este artigo explora como o Microsoft Graph lida:
 
@@ -25,7 +25,7 @@ Este artigo explora como o Microsoft Graph lida:
 
 ## <a name="directory-schema-extensions"></a>Extensões de esquema de diretório
 
-Se seu aplicativo usar extensões de diretório do Azure AD Graph, você poderá continuar a usar as mesmas APIs básicas (com URLs de solicitação do Microsoft Graph) para:
+Se seu aplicativo usa extensões de diretório do Azure AD Graph, você pode continuar a usar as mesmas APIs básicas (com URLs de solicitação do Microsoft Graph) para:
 
 - Gerenciar definições de propriedade de extensão usando a propriedade **extensionProperties** no recurso [application][/graph/api/resources/application?view=graph-rest-v1.0).
 - Obter propriedades de extensão disponíveis usando [a ação getAvailableExtensionProperties.](/graph/api/directoryobject-getavailableextensionproperties?view=graph-rest-v1.0)
@@ -34,33 +34,33 @@ Se seu aplicativo usar extensões de diretório do Azure AD Graph, você poderá
 - Atualizar valores de extensão usando PATCH
 - Remover valores de extensão usando PATCH (definido como **nulo**)
 
-O Microsoft Graph fornece uma experiência de desenvolvedor de extensões de esquema aprimoradas, que hoje não é compatível com as extensões de diretório do Azure AD Graph. Para saber mais, confira [extensões de esquema em adicionar dados personalizados](./extensibility-overview.md#schema-extensions).
+O Microsoft Graph fornece uma experiência de desenvolvedor de extensões de esquema aprimoradas, que hoje não é compatível com o Azure AD Graph de diretório. Para saber mais, confira [extensões de esquema em adicionar dados personalizados](./extensibility-overview.md#schema-extensions).
 
 ### <a name="recommended-migration-approach"></a>Abordagem de migração recomendada
 
-Se o aplicativo do Azure AD Graph usar extensões de diretório, use uma abordagem incremental para migrar o aplicativo para o Microsoft Graph.
+Se o aplicativo de Graph do Azure AD usar extensões de diretório, tome uma abordagem incremental para migrar o aplicativo para o Microsoft Graph.
 
-Primeiro, alternar seu aplicativo para usar chamadas de API do Microsoft Graph, mas permitir que o aplicativo continue a utilizar extensões de diretório do Azure AD Graph.
+Primeiro, alternar seu aplicativo para usar chamadas de API do Microsoft Graph, mas permitir que o aplicativo continue a utilizar as extensões de diretório do Azure AD Graph diretório.
 
-Em seguida, você pode alternar para usar extensões de esquema do Microsoft Graph. Em alguns casos, a alternação não será apropriada. Não alternar se:
+Em seguida, você pode alternar para usar extensões Graph esquema da Microsoft. Em alguns casos, a alternação não será apropriada. Não alternar se:
 
-- Seu aplicativo usa extensões de diretório criadas por meio do AD Connect
+- Seu aplicativo usa extensões de diretório criadas por meio do AD Conexão
 - Seu aplicativo define valores de extensão de diretório usados em declarações de token por outros aplicativos
 - Seu aplicativo define valores de extensão de diretório usados em regras de associação dinâmicas 
 
->**OBSERVAÇÃO**: Ainda não há suporte para o uso das propriedades de extensão de esquema do Microsoft Graph como declarações em um token usando declarações opcionais ou em uma regra de associação dinâmica.
+>**OBSERVAÇÃO**: o uso Graph propriedades de extensão de esquema da Microsoft como declarações em um token usando declarações opcionais ou em uma regra de associação dinâmica ainda não é suportado.
 
-Para mudar para o modelo de extensão de esquema mais novo do Microsoft Graph, você precisará:
+Para alternar para o modelo de extensão Graph esquema mais novo da Microsoft, você precisará:
 
 - Defina novas definições de extensão de esquema usando o Microsoft Graph.
 - Atualize o aplicativo para dar suporte às novas definições de extensão de esquema.
-- Migre os dados das propriedades de extensão do esquema do Azure AD para as novas propriedades de extensão de esquema do Microsoft Graph.  Não há suporte para migração automática de dados.
+- Migre os dados das propriedades de extensão do esquema do Azure AD para as novas propriedades de extensão de esquema da Microsoft Graph esquema.  Não há suporte para migração automática de dados.
 
 ## <a name="differential-queries"></a>Consultas diferenciais
 
-O Azure AD Graph e o Microsoft Graph permitem que você acompanhe as alterações usando consultas.  A abordagem de alto nível é semelhante entre as duas APIs, mas a sintaxe é diferente.
+O Azure AD Graph e o Microsoft Graph permitir que você acompanhe as alterações usando consultas.  A abordagem de alto nível é semelhante entre as duas APIs, mas a sintaxe é diferente.
 
-O Azure AD Graph chama essas consultas diferenciais.  No Microsoft Graph, elas são consultas [delta.](./delta-query-overview.md)
+O Azure AD Graph essas consultas diferenciais.  No Microsoft Graph, elas são consultas [delta.](./delta-query-overview.md)
 
 A tabela a seguir destaca as principais semelhanças e diferenças:
 
@@ -78,9 +78,9 @@ Se seu aplicativo já estiver armazenar dados de estado, considere usar a "sincr
 
 ## <a name="batching"></a>Envio em lote
 
-O Azure AD Graph usou um sistema chamado mensagens MIME de várias partes para gerenciar o lote.  O Microsoft Graph usa [o lote JSON](json-batching.md) para permitir até 20 solicitações em uma única operação em lotes. O mecanismo de lote JSON é significativamente mais simples de usar, especialmente junto com bibliotecas de análise JSON.  Também permite sequenciar operações em lotes.  No entanto, ele não é compatível com a abordagem de lote do Azure AD Graph.
+O Azure AD Graph um sistema chamado mensagens MIME de várias partes para gerenciar o lote.  A Microsoft Graph usa [o lote JSON](json-batching.md) para permitir até 20 solicitações em uma única operação em lotes. O mecanismo de lote JSON é significativamente mais simples de usar, especialmente junto com bibliotecas de análise JSON.  Também permite sequenciar operações em lotes.  No entanto, ele não é compatível com a abordagem de Graph em lotes do Azure AD.
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>Próximos passos
 
 - Saiba mais [sobre as diferenças de recursos](migrate-azure-ad-graph-resource-differences.md) entre o Azure AD Graph e o Microsoft Graph.
 - Revise a [lista de verificação](migrate-azure-ad-graph-planning-checklist.md) novamente.

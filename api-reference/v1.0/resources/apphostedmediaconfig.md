@@ -1,18 +1,18 @@
 ---
-title: tipo de recurso appHostedMediaConfig
+title: Tipo de recurso appHostedMediaConfig
 description: Pilha de mídia hospedada pelo aplicativo.
 author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: f3d4f2eda3d3fa1a7e8fe206190d30ec79179a00
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: a5f40e1a29969f20046ba8f4439177b7a1b8209c2db36b14ac388b16639bbc4a
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48041614"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54205952"
 ---
-# <a name="apphostedmediaconfig-resource-type"></a>tipo de recurso appHostedMediaConfig
+# <a name="apphostedmediaconfig-resource-type"></a>Tipo de recurso appHostedMediaConfig
 
 Namespace: microsoft.graph
 
@@ -22,7 +22,7 @@ Pilha de mídia hospedada pelo aplicativo.
 
 | Propriedade                          | Tipo    | Descrição                                                     |
 | :-------------------------------- | :------ | :---------------------------------------------------------------|
-| blob                              | String  | O blob de configuração de mídia gerado pelo agente de mídia inteligente.    |
+| blob                              | Cadeia de caracteres  | O blob de configuração de mídia gerado pelo agente de mídia inteligente.    |
 
 ## <a name="json-representation"></a>Representação JSON
 

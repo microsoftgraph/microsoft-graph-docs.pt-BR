@@ -4,18 +4,18 @@ description: " Blocos de anotações empresariais no Microsoft 365"
 author: jewan-microsoft
 localization_priority: Priority
 ms.prod: onenote
-ms.openlocfilehash: f3e40662d2e750514ef6c71b3faa604e13ccc773
-ms.sourcegitcommit: 32c83957ee69f21a10cd5f759adb884ce4b41c52
+ms.openlocfilehash: 176fb6ee82f73c8cc6dc703f55bb68b388dcb1aa1dac3bea01410a7d19ccd099
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51921655"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54171949"
 ---
 # <a name="get-onenote-content-and-structure-with-microsoft-graph"></a>Obter a estrutura e o conteúdo do OneNote com o Microsoft Graph
 
 **Aplica-se a**: Blocos de anotações de consumidor no OneDrive | Blocos de anotações empresariais no Microsoft 365
 
-Para obter a estrutura e o conteúdo do OneNote, envie uma solicitação GET ao ponto de extremidade de destino. Por exemplo:
+Para obter a estrutura e o conteúdo do OneNote, você envia uma solicitação GET para o ponto de extremidade de destino. Por exemplo:
 
 `GET ../onenote/pages/{id}`
 
@@ -537,7 +537,7 @@ Obtenha o título e o link **self** das 50 primeiras páginas, classificadas em 
 
 ### <a name="skip--top--select--orderby"></a>skip, top, select e orderby  
 
-Obtenha páginas de 51 a 100. A API retorna 20 entradas por padrão com um máximo de 100.
+Obtenha as páginas de 51 a 100. A API retorna 20 entradas por padrão com um máximo de 100.
 
 ```
 [GET] ../pages?skip=50&top=50&select=title,self&orderby=title
@@ -559,11 +559,11 @@ Quando enviar solicitações GET para Microsoft Graph, você pode usar as opçõ
 | count | <p>`count=true`</p><p>A contagem de entidades da coleção. O valor é retornado na propriedade **odata.coun\@** t na resposta.</p> |  
 | expand | <p>`expand=sections,sectionGroups`</p><p>Propriedades de navegação para retornar embutidas na resposta. As propriedades a seguir têm suporte para expressões **expand**:<br /> – Páginas: **parentNotebook**, **parentSection**<br /> – Seções: **parentNotebook**, **parentSectionGroup**<br /> – Grupos de seções: **sections**, **sectionGroups**, **parentNotebook**, **parentSectionGroup**<br /> – Blocos de anotações: **sections**, **sectionGroups**</p><p>Por padrão, as solicitações GET de páginas expandem **parentSection** e selecionam as propriedades **id**, **name** e **self**. Solicitações GET padrão de seções e grupos de seções expandem **parentNotebook** e **parentSectionGroup** e selecionam as propriedades pai **id**, **name** e **self**. </p><p>Pode ser usado para uma única entidade ou uma coleção.<br />Separar com vírgulas várias propriedades.<br />Os nomes de propriedades diferenciam maiúsculas de minúsculas.</p> |   
 | filter | <p>`filter=isDefault eq true`</p><p>Uma expressão booliana para se deseja incluir uma entrada no conjunto de resultados. Compatível com os seguintes operadores e funções OData:<br /> – Operadores de comparação: **eq**, **ne**, **gt**, **ge**, **lt**, **le**<br /> – Operadores lógicos: **and**, **or**, **not**<br /> – Funções de cadeia de caracteres: **contains**, **endswith**, **startswith**, **length**, **indexof**, **substring**, **tolower**, **toupper**, **trim**, **concat**</p><p>Os nomes de [propriedade](#onenote-entity-properties) e as comparações de cadeias de caracteres de OData diferenciam maiúsculas de minúsculas. É recomendável usar a função **tolower** do OData para comparações de cadeia de caracteres.<br /><br />**Exemplo**: `filter=tolower(name) eq 'spring'`</p> |  
-| orderby | <p>`orderby=title,createdTime desc`</p><p>As [propriedades](#onenote-entity-properties) para classificar por, com uma ordem de classificação opcional **asc** (padrão) ou **desc**. Você pode classificar por qualquer propriedade da entidade na coleção solicitada.</p><p>A ordem de classificação padrão para blocos de anotações, grupos de seções e seções é `name asc`, e para páginas é `lastModifiedTime desc` (última página modificada primeiro).</p><p>Separe as várias propriedades com vírgulas e liste-as na ordem de aplicação desejada. Os nomes de propriedades diferenciam maiúsculas de minúsculas.</p> |  
-| search | <p>`search=cell div`</p><p>Disponível somente para blocos de anotações de consumidor.</p><p>O termo ou frase para pesquisar no título da página, corpo da página, texto alt da imagem e texto da imagem OCR. Por padrão, consultas de pesquisa retornam resultados classificados por relevância.</p><p>O OneNote usa a pesquisa de texto completo do Bing para dar suporte a pesquisa de frase, lematização, tolerância de ortografia, relevância e classificação, quebra de palavras, vários idiomas e outros recursos de pesquisa de texto completo. As cadeias de caracteres de pesquisa diferenciam maiúsculas de minúsculas.</p><p>Aplica-se somente a páginas em blocos de anotações de propriedade do usuário. O conteúdo indexado é privado e só pode ser acessado pelo proprietário. As páginas protegidas por senha não são indexadas. Aplicável somente ao ponto de extremidade `pages`.</p> |  
+| orderby | <p>`orderby=title,createdTime desc`</p><p>As [propriedades](#onenote-entity-properties) para classificar por, com uma ordem de classificação opcional **asc** (padrão) ou **desc**. Você pode classificar por qualquer propriedade da entidade na coleção solicitada.</p><p>A ordem de classificação padrão para blocos de anotações, grupos de seções e seções é `name asc`, e para páginas é `lastModifiedTime desc` (última página modificada primeiro).</p><p>Separe várias propriedades com vírgulas e liste-as na ordem em que deseja que sejam aplicadas. Os nomes de propriedades diferenciam maiúsculas de minúsculas.</p> |  
+| search | <p>`search=cell div`</p><p>Disponível somente para blocos de anotações de consumidor.</p><p>O termo ou frase a ser pesquisado no título da página, no corpo da página, no texto alt da imagem e no texto OCR da imagem. Por padrão, as consultas de pesquisa retornam com resultados classificados por relevância.</p><p>O OneNote usa a pesquisa de texto completo do Bing para oferecer suporte à pesquisa de frase, lematização, tolerância de ortografia, relevância e classificação, quebra de palavras, vários idiomas e outros recursos de pesquisa de texto completo. As cadeias de caracteres da pesquisa não diferenciam maiúsculas de minúsculas.</p><p>Aplica-se somente a páginas em blocos de anotações de propriedade do usuário. O conteúdo indexado é privado e só pode ser acessado pelo proprietário. As páginas protegidas por senha não são indexadas. Aplicável somente ao ponto de extremidade `pages`.</p> |  
 | select | <p>`select=id,title`</p><p>As [propriedades](#onenote-entity-properties) a serem retornadas. Pode ser usado para uma única entidade ou para uma coleção. Separar com vírgulas várias propriedades. Os nomes de propriedades diferenciam maiúsculas de minúsculas.</p> |  
 | skip | <p>`skip=10`</p><p>O número de entradas para ignorar no conjunto de resultados. Costumam ser usadas para resultados de paginação.</p> |  
-| top | <p>`top=50`</p><p>O número de entradas para retornar do conjunto de resultados, até um máximo de 100. O valor padrão é 20.</p> |  
+| top | <p>`top=50`</p><p>O número de entradas a serem retornadas no conjunto de resultados, até um máximo de 100. O valor padrão é 20.</p> |  
 
 O Microsoft Graph também fornece a opção de cadeia de caracteres de consulta `pagelevel` que você pode usar para obter o nível e ordem das páginas dentro da seção pai. Aplicam-se apenas às consultas de páginas em uma seção específica ou consultas para uma página específica. 
 
@@ -660,7 +660,7 @@ A opção de cadeia de caracteres de consulta **expand** pode ser usada com as s
 | Código de êxito | Um código de status de HTTP 200. |  
 | Corpo da resposta | Uma representação de OData da entidade ou conjunto de entidades no formato JSON, da página HTML ou dados binários do recurso de arquivo.  |  
 | Erros | Se a solicitação falhar, a API retornará erros no objeto [errors](onenote-error-codes.md) no **\@@api.diagnostics** no corpo da resposta. |  
-| Cabeçalho X-CorrelationId | Um GUID que identifica de forma exclusiva a solicitação. Você pode usar esse valor juntamente com o valor do cabeçalho Data ao trabalhar com o suporte da Microsoft para solucionar problemas. |  
+| Cabeçalho X-CorrelationId | Um GUID que identifica exclusivamente a solicitação. Você pode usar esse valor juntamente com o valor do cabeçalho Data ao trabalhar com o suporte da Microsoft para solucionar problemas. |  
 
 
 <a name="root-url"></a>

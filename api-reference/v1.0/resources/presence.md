@@ -5,12 +5,12 @@ author: mkhribech
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: cloud-communications
-ms.openlocfilehash: f155db24626420bfb43b225ee67d61ae923b048f
-ms.sourcegitcommit: 7abb0672a38a6d9b11a2e0d2cc221222cb8358bb
+ms.openlocfilehash: 11512cbb55f6cd61e9b947285d73531821ed7bbf4f80d374c4142f6f1a090d91
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52896715"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54237569"
 ---
 # <a name="presence-resource-type"></a>tipo de recurso de presença
 

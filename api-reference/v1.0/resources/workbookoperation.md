@@ -1,20 +1,20 @@
 ---
 title: tipo de recurso workbookOperation
-description: Representa o status de operações de uma longa execução de uma livro de trabalho.
+description: Representa o status de operações de uma área de trabalho de longa duração.
 localization_priority: Normal
 author: grangeryy
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: c674186befbb6a24c41cd8741f554876a17a4394
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: fe2cb3a1b899fb1aa9cef1fdc863a7d4432ead8877fed92bb0a53e40b62dd455
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50158944"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54221142"
 ---
 # <a name="workbookoperation-resource-type"></a>tipo de recurso workbookOperation
 
-Representa o status de uma operação de livro de trabalho de execução longa.
+Representa o status de uma operação de manual de trabalho de longa duração.
 
 
 ## <a name="methods"></a>Métodos
@@ -29,7 +29,7 @@ Representa o status de uma operação de livro de trabalho de execução longa.
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
 |status|Cadeia de caracteres| O status atual da operação. Os valores possíveis são: `NotStarted`, `Running`, `Completed`, `Failed`.|
-|id|Cadeia de caracteres| A ID da operação. Somente leitura.|
+|id|Cadeia de caracteres| A id da operação. Somente leitura.|
 |erro|[workbookOperationError](workbookoperationerror.md)| O erro retornado pela operação.|
 |resourceLocation|Cadeia de caracteres| O URI do recurso para o resultado.|
 

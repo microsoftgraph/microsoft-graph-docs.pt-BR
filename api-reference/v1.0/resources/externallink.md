@@ -1,22 +1,22 @@
 ---
-title: tipo de recurso externalLink
-description: Uma URL que abre uma página do OneNote ou um bloco de anotações.
+title: Tipo de recurso externalLink
+description: Uma url que abre uma página OneNote ou bloco de anotações.
 localization_priority: Normal
 author: jewan-microsoft
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 21acf8d47d9b22efb0b76ce419f80c84e800585c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 70db056b76fba4f331ab8becf014bf5fd8b02427d66e99c1a2ae3b70d813759b
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48018449"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54189762"
 ---
-# <a name="externallink-resource-type"></a>tipo de recurso externalLink
+# <a name="externallink-resource-type"></a>Tipo de recurso externalLink
 
 Namespace: microsoft.graph
 
-Uma URL que abre uma página do OneNote ou um bloco de anotações.
+Uma url que abre uma página OneNote ou bloco de anotações.
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -39,7 +39,7 @@ Veja a seguir uma representação JSON do recurso
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|href|String|A URL do link.|
+|href|Cadeia de caracteres|A url do link.|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
