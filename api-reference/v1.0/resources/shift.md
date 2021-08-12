@@ -5,12 +5,12 @@ author: akumar39
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: e8c871e580818d96edcb0eae244c88c7edcc128c
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: abec7f019750dbfe30335e1c8d6df3ecbb95c2d8e99a2c3720381307560ef22a
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50721835"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54169281"
 ---
 # <a name="shift-resource-type"></a>tipo de recurso shift
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 Representa uma unidade de trabalho agendada em um [cronograma](schedule.md). 
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 
 | Método       | Tipo de retorno  |Descrição|
 |:---------------|:--------|:----------|
@@ -26,7 +26,7 @@ Representa uma unidade de trabalho agendada em um [cronograma](schedule.md).
 |[Criar turno](../api/schedule-post-shifts.md) | [shift](shift.md) | Criar um novo **turno**.|
 |[Obter turno](../api/shift-get.md) | [shift](shift.md) | Obter um **turno** por ID.|
 |[Substituir turno](../api/shift-put.md) | [shift](shift.md) | Substitua um **turno**.|
-|[Excluir turno](../api/shift-delete.md) | Nenhum | **Exclua um turno** da agenda.|
+|[Excluir turno](../api/shift-delete.md) | None | **Exclua um turno** da agenda.|
 
 ## <a name="properties"></a>Propriedades
 |Nome          |Tipo           |Descrição                                                                                                                                      |

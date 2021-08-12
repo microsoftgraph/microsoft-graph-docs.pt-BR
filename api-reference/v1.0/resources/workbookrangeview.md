@@ -5,18 +5,18 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 5e15249590d858fbb57470fbb64051a7609558e9
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 8016bd6600a2c220823a2ea53260d41c381b4b9a4b56378888c2e73e49e7116b
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48015117"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54251684"
 ---
 # <a name="rangeview-resource-type"></a>tipo de recurso rangeView
 
-Namespace: Microsoft. Graph RangeView representa um conjunto de células visíveis do intervalo pai.
+Namespace: microsoft.graph RangeView representa um conjunto de células visíveis do intervalo pai.
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|

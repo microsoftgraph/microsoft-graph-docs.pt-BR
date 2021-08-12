@@ -5,12 +5,12 @@ localization_priority: Normal
 author: ruoyingl
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 84953f4917b3cbf4b5792ed3a7b74600ec2457c6
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: e872bf7bccec06d1ac4fb956a0e8e3b244b5bbc8dc7fe1354c9baea8a0492f20
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48054900"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54238121"
 ---
 # <a name="icon-resource-type"></a>Tipo de recurso Icon
 
@@ -19,7 +19,7 @@ Namespace: microsoft.graph
 Representa um ícone de célula.
 
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
@@ -30,7 +30,7 @@ Representa um ícone de célula.
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |index|int|Representa o índice do ícone em determinado conjunto.|
-|set|string|Representa o conjunto do qual ícone faz parte. Os valores possíveis são:,,,,,,,,,,,,,,,,,,,, `Invalid` `ThreeArrows` `ThreeArrowsGray` `ThreeFlags` `ThreeTrafficLights1` `ThreeTrafficLights2` `ThreeSigns` `ThreeSymbols` `ThreeSymbols2` `FourArrows` `FourArrowsGray` `FourRedToBlack` `FourRating` , `FourTrafficLights` ,,, `FiveArrows` `FiveArrowsGray` `FiveRating` , `FiveQuarters` , `ThreeStars` `ThreeTriangles` `FiveBoxes` ,,.|
+|set|string|Representa o conjunto do qual ícone faz parte. Os valores possíveis são: `Invalid` , , , , , , , , , `ThreeArrows` , `ThreeArrowsGray` , , , , `ThreeFlags` , , `ThreeTrafficLights1` `ThreeTrafficLights2` `ThreeSigns` , `ThreeSymbols` `ThreeSymbols2` `FourArrows` `FourArrowsGray` `FourRedToBlack` `FourRating` `FourTrafficLights` `FiveArrows` `FiveArrowsGray` `FiveRating` `FiveQuarters` , `ThreeStars` `ThreeTriangles` `FiveBoxes`|
 
 ## <a name="relationships"></a>Relações
 Nenhum

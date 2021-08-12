@@ -1,44 +1,44 @@
 ---
-title: tipo de recurso teleconferenceDeviceMediaQuality
-description: Dados de qualidade de mídia do dispositivo de teleconferência de vídeo.
+title: Tipo de recurso teleconferenceDeviceMediaQuality
+description: Dados de qualidade de mídia de dispositivo de teleconferência de vídeo.
 localization_priority: Normal
 author: dongkyun
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 75849cd322f50974299f92c752833045a7d2bd94
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 96e10a50dfa93f4a226585092c57d9ab8dbe5cb3b5e8a2593198ca32402852c4
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48086330"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54146367"
 ---
-# <a name="teleconferencedevicemediaquality-resource-type"></a>tipo de recurso teleconferenceDeviceMediaQuality
+# <a name="teleconferencedevicemediaquality-resource-type"></a>Tipo de recurso teleconferenceDeviceMediaQuality
 
 Namespace: microsoft.graph
 
-Representa dados de qualidade de mídia do dispositivo de teleconferência de vídeo.
+Representa dados de qualidade de mídia de dispositivo de teleconferência de vídeo.
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|averageInboundJitter|Duração|A tremulação média da rede de fluxo de entrada.|
-|averageInboundPacketLossRateInPercentage|Duplo|A taxa média de perda de pacote de fluxo de entrada em porcentagem (0-100). Por exemplo, 0, 1 significa 0, 1%.|
-|averageInboundRoundTripDelay|Duração|O intervalo médio de ida e volta da rede de fluxo de entrada.|
-|averageOutboundJitter|Duração|A tremulação média da rede de fluxo de saída.|
-|averageOutboundPacketLossRateInPercentage|Duplo|A taxa média de perda de pacotes de fluxo de saída em porcentagem (0-100). Por exemplo, 0, 1 significa 0, 1%.|
-|averageOutboundRoundTripDelay|Duração|O intervalo médio de ida e volta da rede de fluxo de saída.|
-|channelIndex|Int32|O índice de canal da mídia. A indexação começa com 1.  Se uma sessão de mídia contiver três modalidades de vídeo, os índices de canal serão 1, 2 e 3.|
-|inboundPackets|Int64|O número total de pacotes de entrada.|
+|averageInboundJitter|Duration|O treme de rede de fluxo de entrada médio.|
+|averageInboundPacketLossRateInPercentage|Duplo|A taxa média de perda de pacotes de fluxo de entrada em porcentagem (0-100). Por exemplo, 0,01 significa 0,01%.|
+|averageInboundRoundTripDelay|Duration|O atraso médio da viagem de ida e volta da rede de fluxo de entrada.|
+|averageOutboundJitter|Duration|O treme de rede de fluxo de saída médio.|
+|averageOutboundPacketLossRateInPercentage|Duplo|A taxa média de perda de pacotes de fluxo de saída em porcentagem (0-100). Por exemplo, 0,01 significa 0,01%.|
+|averageOutboundRoundTripDelay|Duration|O atraso médio da viagem de ida e volta da rede de fluxo de saída.|
+|channelIndex|Int32|O índice de canal de mídia. A indexação começa com 1.  Se uma sessão de mídia contiver 3 modalidades de vídeo, os índices de canal serão 1, 2 e 3.|
+|inboundPackets|Int64|O número total dos pacotes de entrada.|
 |localIPAddress|Cadeia de caracteres|o endereço IP local da sessão de mídia.|
 |localPort|Int32|A porta de mídia local.|
-|maximumInboundJitter|Duração|A tremulação máxima da rede de fluxo de entrada.|
-|maximumInboundPacketLossRateInPercentage|Duplo|A taxa máxima de perda de pacote de fluxo de entrada em porcentagem (0-100). Por exemplo, 0, 1 significa 0, 1%.|
-|maximumInboundRoundTripDelay|Duração|O intervalo máximo de ida e volta da rede de fluxo de entrada.|
-|maximumOutboundJitter|Duração|A tremulação de rede de fluxo de saída máximo.|
-|maximumOutboundPacketLossRateInPercentage|Duplo|A taxa máxima de perda de pacotes de fluxo de saída em porcentagem (0-100). Por exemplo, 0, 1 significa 0, 1%.|
-|maximumOutboundRoundTripDelay|Duração|O atraso máximo de ida e volta da rede de fluxo de saída.|
-|mediaDuration|Duração|A duração da modalidade total. Se a mídia habilitada e desabilitada várias vezes, MediaDuration será a soma de todas as durações.|
+|maximumInboundJitter|Duration|O treme de rede de fluxo de entrada máximo.|
+|maximumInboundPacketLossRateInPercentage|Duplo|A taxa máxima de perda de pacotes de fluxo de entrada em porcentagem (0-100). Por exemplo, 0,01 significa 0,01%.|
+|maximumInboundRoundTripDelay|Duration|O atraso máximo de ida e volta da rede de fluxo de entrada.|
+|maximumOutboundJitter|Duration|O treme de rede de fluxo de saída máximo.|
+|maximumOutboundPacketLossRateInPercentage|Duplo|A taxa máxima de perda de pacotes de fluxo de saída em porcentagem (0-100). Por exemplo, 0,01 significa 0,01%.|
+|maximumOutboundRoundTripDelay|Duration|O atraso máximo da viagem de ida e volta de fluxo de saída.|
+|mediaDuration|Duration|A duração total da modalidade. Se a mídia estiver habilitada e desabilitada várias vezes, MediaDuration será a soma de todas as durações.|
 |networkLinkSpeedInBytes|Int64|A velocidade do link de rede em bytes|
 |outboundPackets|Int64|O número total dos pacotes de saída.|
 |remoteIPAddress|Cadeia de caracteres|O endereço IP remoto da sessão de mídia.|
@@ -49,7 +49,7 @@ Representa dados de qualidade de mídia do dispositivo de teleconferência de v�
 | Tipo                                                 | Descrição                                                         |
 |:-----------------------------------------------------|:--------------------------------------------------------------------|
 | [teleconferenceDeviceAudioQuality](teleconferencedeviceaudioquality.md)    | Dados de qualidade de áudio do dispositivo de teleconferência de vídeo.                          |
-| [teleconferenceDeviceVideoQuality](teleconferencedevicevideoquality.md)    | Dados de qualidade de vídeo do dispositivo de teleconferência de vídeo.                          |
+| [teleconferenceDeviceVideoQuality](teleconferencedevicevideoquality.md)    | Dados de qualidade de vídeo de dispositivo de teleconferência de vídeo.                          |
 | [teleconferenceDeviceScreenSharingQuality](teleconferencedevicescreensharingquality.md)    | Dados de qualidade de compartilhamento de tela do dispositivo de teleconferência de vídeo. |
 
 ## <a name="json-representation"></a>Representação JSON

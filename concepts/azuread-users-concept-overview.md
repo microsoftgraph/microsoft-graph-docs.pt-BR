@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Priority
 ms.prod: users
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 026932f3f3aa3cb9912c288cbe91007905e2f51e
-ms.sourcegitcommit: c6e8a2097267ace4c78124be48646f9129114b26
+ms.openlocfilehash: 26e3eb7fe76cfabfd1b8a7348f84e575bc3590dca4f532b7b39196bcd646ad81
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47340020"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54169190"
 ---
 # <a name="overview-of-users-in-microsoft-graph"></a>Visão geral de usuários do Microsoft Graph
 
@@ -52,7 +52,7 @@ Você pode definir as configurações de email do usuário e as listas de contat
 
 ### <a name="enrich-your-app-with-user-insights"></a>Aprimorar seu aplicativo com informações sobre o usuário
 
-Maximizar a relevância no aplicativo promovendo documentos e contatos mais populares ou usados recentemente associados a um usuário. Você pode usar o Microsoft Graph para:
+Maximizar a relevância no aplicativo promovendo documentos e contatos mais populares ou usados recentemente associados a um usuário. Use o Microsoft Graph para:
 
 - Retornar documentos visualizados e modificados recentemente por um usuário.
 - Retornar documentos e sites mais populares relacionados à atividade do usuário.

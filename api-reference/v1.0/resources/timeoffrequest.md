@@ -5,12 +5,12 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 76eea937b03f3eb117e6b5f870a316f268df615c
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: 90124b48f69dbaa053c6facd7a2bb84e5d427be0c20bdbc9017bfa8e3a800ebc
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50721694"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54124014"
 ---
 # <a name="timeoffrequest-resource-type"></a>Tipo de recurso timeOffRequest
 
@@ -18,15 +18,15 @@ Namespace: microsoft.graph
 
 Representa um tipo de solicitação de turno para [fazer timeOff](../resources/timeoff.md).
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 
 | Método       | Tipo de retorno | Descrição |
 |:-------------|:------------|:------------|
 | [Get](../api/timeoffrequest-get.md) | [timeOffRequest](timeoffrequest.md) | Leia as propriedades e as relações de um **objeto timeOffRequest.** |
 | [List](../api/timeoffrequest-list.md) | [Coleção timeOffRequest](timeoffrequest.md) | Obter a lista de **objetos timeOffRequest** nesta agenda.|
-| [Delete](../api/timeoffrequest-delete.md) | Nenhum | **Exclua um objeto timeOffRequest.** |
-| [Aprovar](../api/timeoffrequest-approve.md)|Nenhum|Aprovar uma solicitação de tempo de folga.|
-| [Declínio](../api/timeoffrequest-decline.md)|Nenhum|Recusar uma solicitação de tempo de folga.|
+| [Delete](../api/timeoffrequest-delete.md) | None | **Exclua um objeto timeOffRequest.** |
+| [Aprovar](../api/timeoffrequest-approve.md)|None|Aprovar uma solicitação de tempo de folga.|
+| [Declínio](../api/timeoffrequest-decline.md)|None|Recusar uma solicitação de tempo de folga.|
 
 ## <a name="properties"></a>Propriedades
 

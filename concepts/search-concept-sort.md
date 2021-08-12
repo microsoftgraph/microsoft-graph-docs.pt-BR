@@ -1,19 +1,19 @@
 ---
-title: Usar a API de Pesquisa da Microsoft para classificar resultados de pesquisa (visualização)
-description: Você classificar resultados de pesquisa usando a API de Pesquisa da Microsoft.
+title: Use a API Pesquisa da Microsoft para classificar os resultados da pesquisa (visualização)
+description: Você classificará os resultados da pesquisa usando Pesquisa da Microsoft API.
 author: nmoreau
 localization_priority: Normal
 ms.prod: search
-ms.openlocfilehash: 4f4a2c8925e910520ca3d75d98f86d713105f6ac
-ms.sourcegitcommit: 1b09298649d5606b471b4cbe1055419bbe2fc7e5
+ms.openlocfilehash: f0914633d1d1d080f10205f1cd387d3aa5620cad79f707508930fa146ca477dd
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "52067184"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54151715"
 ---
-# <a name="use-the-microsoft-search-api-to-sort-search-results-preview"></a>Usar a API de Pesquisa da Microsoft para classificar resultados de pesquisa (visualização)
+# <a name="use-the-microsoft-search-api-to-sort-search-results-preview"></a>Use a API Pesquisa da Microsoft para classificar os resultados da pesquisa (visualização)
 
-Você pode usar a API de Pesquisa da Microsoft no Microsoft Graph classificar os resultados da pesquisa. Para classificar os resultados, especifique a propriedade **sortProperties** em um objeto [searchRequest](/graph/api/resources/searchrequest?view=graph-rest-beta&preserve-view=true) e identifique uma propriedade de recurso em **entityTypes** para classificar as corresponde por, em ordem crescente ou decrescente.
+Você pode usar a API Pesquisa da Microsoft no Microsoft Graph para classificar os resultados da pesquisa. Para classificar os resultados, especifique a propriedade **sortProperties** em um objeto [searchRequest](/graph/api/resources/searchrequest?view=graph-rest-beta&preserve-view=true) e identifique uma propriedade de recurso em **entityTypes** para classificar as corresponde por, em ordem crescente ou decrescente.
 
 A classificação só é suportada para SharePoint e OneDrive itens.
 A propriedade a ser classificação deve ser *Sortable* no esquema de pesquisa.

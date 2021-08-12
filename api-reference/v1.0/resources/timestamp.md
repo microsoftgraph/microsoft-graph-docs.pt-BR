@@ -1,18 +1,18 @@
 ---
-title: tipo de recurso timeStamp
+title: Tipo de recurso timeStamp
 description: Informações de data e hora para um ponto no tempo.
 localization_priority: Normal
 author: JeremyKelley
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 54b66af210f6360938be1df964f14a089d8168fb
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: a07dc3c6c1aa9bc787bed2e519ce8d4e7db4d582637fe2fdfbf41e79789a52f1
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48090743"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54163618"
 ---
-# <a name="timestamp-resource-type"></a>tipo de recurso timeStamp
+# <a name="timestamp-resource-type"></a>Tipo de recurso timeStamp
 
 Namespace: microsoft.graph
 
@@ -41,9 +41,9 @@ Veja a seguir uma representação JSON do recurso
 ## <a name="properties"></a>Propriedades
 | Propriedade       | Tipo    |Descrição|
 |:---------------|:--------|:----------|
-|data|Data|A parte de data do carimbo de data/hora.|
-|time|TimeOfDay|A parte de tempo do carimbo de data/hora.|
-|timeZone|Cadeia de caracteres|A parte de fuso horário do carimbo de data/hora, que é uma das 24 áreas de longitudinal do mundo.|
+|data|Data|A parte de data do data do data/hora.|
+|hora|TimeOfDay|A parte de tempo do timestamp.|
+|timeZone|Cadeia de caracteres|A parte do timezone do timestamp, que é uma das 24 áreas longitudinais do mundo.|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

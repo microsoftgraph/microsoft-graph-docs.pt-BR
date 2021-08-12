@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: baa3804fe4a26a0f1ce349c59918a981c819c56a
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: c557c348789b0cf65a3385ab7dcc38473653353d0dba63e3307e09cd69532e4e
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52752235"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54246840"
 ---
 # <a name="manageddevicemobileappconfigurationdevicesummary-resource-type"></a>Tipo de recurso managedDeviceMobileAppConfigurationDeviceSummary
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 Contém propriedades, propriedades herdadas e ações para um resumo de status do dispositivo de configuração de aplicativo móvel de MDM.
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
 |[Obter managedDeviceMobileAppConfigurationDeviceSummary](../api/intune-apps-manageddevicemobileappconfigurationdevicesummary-get.md)|[managedDeviceMobileAppConfigurationDeviceSummary](../resources/intune-apps-manageddevicemobileappconfigurationdevicesummary.md)|Ler propriedades e relações de objetos de [managedDeviceMobileAppConfigurationDeviceSummary](../resources/intune-apps-manageddevicemobileappconfigurationdevicesummary.md).|
@@ -39,7 +39,7 @@ Contém propriedades, propriedades herdadas e ações para um resumo de status d
 |configurationVersion|Int32|Versão da política para essa visão geral|
 
 ## <a name="relationships"></a>Relações
-Nenhuma
+Nenhum
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.

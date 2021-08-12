@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: reports
 author: sarahwxy
 doc_type: apiPageType
-ms.openlocfilehash: 83ecdf7f572a3737bfc6ef8b1a7b09b4583d8b7f
-ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
+ms.openlocfilehash: 6dbb17b11279ab031b5c20985b0bc736cf94b238e217eede5a4f129ac3f87e79
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49983150"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54208864"
 ---
 # <a name="reportroot-getsharepointsiteusagepages"></a>reportRoot: getSharePointSiteUsagePages
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 Obtenha o número de páginas visualizadas em todos os sites.
 
-> **Observação:** Para obter detalhes sobre diferentes visualizações e nomes de relatórios, consulte [relatórios do Microsoft 365 - uso do site do SharePoint.](https://support.office.com/client/SharePoint-site-usage-4ecfb843-e5d5-464d-8bf6-7ed512a9b213)
+> **Observação:** Para obter detalhes sobre diferentes exibições de relatório e nomes, [consulte Microsoft 365 relatórios - SharePoint uso do site](https://support.office.com/client/SharePoint-site-usage-4ecfb843-e5d5-464d-8bf6-7ed512a9b213).
 
 ## <a name="permissions"></a>Permissões
 

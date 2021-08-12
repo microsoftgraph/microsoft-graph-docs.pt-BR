@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f2b6fbbac6718f47bea0dafbfda1b2a76715dc95
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 87d2f6910347805578ebbdfa4c74f84cc85def100dadc1772a44ae70d2553266
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52753691"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54209263"
 ---
 # <a name="deleteuserfromsharedappledevice-action"></a>Ação deleteUserFromSharedAppleDevice
 

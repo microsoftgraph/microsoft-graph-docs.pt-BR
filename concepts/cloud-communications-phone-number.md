@@ -4,12 +4,12 @@ description: Este artigo descreve como criar um bot que é acessível por meio d
 author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
-ms.openlocfilehash: d6b71d2db1be951137ca33026f243dae6055c93f
-ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
+ms.openlocfilehash: 4f9215c0416001cd69d3fb4ad0728d0e858221fe1f06957e3251d0a253a7f791
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "50573569"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54246442"
 ---
 # <a name="manage-phone-numbers-for-bots"></a>Gerenciar números de telefone para bots 
 
@@ -41,12 +41,12 @@ Para obter mais informações sobre permissões relacionadas a chamada, consulte
 Atribuir um número de telefone ao bot envolve três etapas:
 
 1.  Crie uma instância de aplicativo.
-2.  Atribua licenças do Microsoft 365 à instância do aplicativo.
+2.  Atribua Microsoft 365 licenças à instância do aplicativo.
 3.  Atribua um número de telefone à instância do aplicativo (somente administrador de locatário).
 
 ### <a name="create-an-application-instance"></a>Criar uma instância de aplicativo
 
-Se ainda não tiver sido instalado, um administrador de locatário precisará instalar o [Módulo do Skype for Business Online](https://www.microsoft.com/download/details.aspx?id=39366) para o PowerShell. O administrador do locatário deve entrar usando suas credenciais antes de executar o cmdlet.
+Se ainda não tiver sido instalado, um administrador de locatário precisará instalar o [módulo Skype for Business Online](https://www.microsoft.com/download/details.aspx?id=39366) para o PowerShell. O administrador do locatário deve entrar usando suas credenciais antes de executar o cmdlet.
 
 Para criar uma nova instância de aplicativo, o administrador de locatário executa o cmdlet a seguir.
 
@@ -58,20 +58,20 @@ Quando a instância do aplicativo for criada, use o cmdlet de sincronização.
 
 Para obter mais informações, consulte [New-CsOnlineApplicationInstance](/powershell/module/skype/new-csonlineapplicationinstance?view=skype-ps&preserve-view=true) e [Sync-CsOnlineApplicationInstance](/powershell/module/skype/sync-csonlineapplicationinstance?view=skype-ps&preserve-view=true).
 
-### <a name="assign-microsoft-365-licenses-to-your-application-instance"></a>Atribuir licenças do Microsoft 365 à instância do aplicativo
+### <a name="assign-microsoft-365-licenses-to-your-application-instance"></a>Atribuir Microsoft 365 licenças à instância do aplicativo
 
-Atribua uma licença de usuário virtual à instância do aplicativo. Para obter detalhes, consulte [Phone system virtual user license](/microsoftteams/teams-add-on-licensing/virtual-user).
+Atribua uma licença de usuário virtual à instância do aplicativo. Para obter detalhes, [consulte Telefone licença de usuário virtual do sistema.](/microsoftteams/teams-add-on-licensing/virtual-user)
 
-Atribua um plano de chamada à instância do aplicativo. Para obter detalhes, consulte [Planos de chamada para o Microsoft 365](/microsoftteams/calling-plans-for-office-365).
+Atribua um plano de chamada à instância do aplicativo. Para obter detalhes, consulte [Planos de chamada para Microsoft 365](/microsoftteams/calling-plans-for-office-365).
 
 ### <a name="assign-a-phone-number-to-the-application-instance-only-tenant-admin"></a>Atribuir um número de telefone à instância do aplicativo (somente administrador de locatário)
 
-Antes de poder configurar os usuários em sua organização para fazer e receber chamadas telefônicas, você deve obter números de telefone para eles. Para obter detalhes, consulte [Obter números de telefone para seus usuários](/microsoftteams/getting-phone-numbers-for-your-users#get-new-phone-numbers-for-your-users).
+Antes de poder configurar os usuários em sua organização para fazer e receber chamadas telefônicas, você deve obter os números de telefone para eles. Para obter detalhes, consulte [Obter números de telefone para seus usuários](/microsoftteams/getting-phone-numbers-for-your-users#get-new-phone-numbers-for-your-users).
 
 Para atribuir o número de telefone à instância do aplicativo, o administrador do locatário:
 
-1. Entre no centro de administração do Teams como administrador de locatário.
-2. Vai para o **Centro de Administração do Teams** Números de  >  **Telefone** de  >  **Voz**.
+1. Entre no centro de administração Teams como administrador de locatários.
+2. Vai para **Teams Centro de administração**  >  **Voz**  >  **Telefone Números**.
 3. Atribui um número de telefone de serviço (formato+11D) usando o cmdlet a seguir.
 
   `PS C:\> Set-CsOnlineVoiceApplicationInstance -Identity <user@contoso.com> -TelephoneNumber <phone_number>`

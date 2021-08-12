@@ -5,12 +5,12 @@ localization_priority: Normal
 author: harini84
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: bd50b5e31a480b16a0f96a29d3bc80e1b32e42af
-ms.sourcegitcommit: 3cd8584827fef6751d40979aa5f950f3c46ff27d
+ms.openlocfilehash: d704072ac46899ec3158ddd290bbc56a628e3f8c9b8a4cb6d7105505f5cfd969
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "48755684"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54212092"
 ---
 # <a name="eventmessage-resource-type"></a>Tipo de recurso eventMessage
 
@@ -20,18 +20,18 @@ Uma mensagem que representa uma solicitação, cancelamento ou resposta de reuni
 
 A entidade **eventMessage** é derivada de [message](message.md). **eventMessage** é o tipo base para [eventMessageRequest](eventmessagerequest.md) e [eventMessageResponse](eventmessageresponse.md). A propriedade **meetingMessageType** identifica o tipo de mensagem do evento.
 
-Quando um organizador ou um aplicativo envia uma solicitação de reunião, a solicitação de reunião chega à caixa de correio de um convidado como uma instância do **eventMessage** com a **meetingMessageType** do **meetingRequest**. Além disso, o Outlook cria automaticamente uma instância de **evento** no calendário do convidado, com a propriedade **ShowAs** como **provisória**. 
+Quando um organizador ou aplicativo envia uma solicitação de reunião, a solicitação de reunião chega na caixa de correio de um convidado como **uma instância eventMessage** com **o meetingMessageType** de **meetingRequest**. Além disso, Outlook cria automaticamente uma instância de evento no calendário do convidado, com **a** propriedade **showAs** **como tentativa**. 
 
-Para obter as propriedades do evento associado na caixa de correio do convidado, o aplicativo pode usar a propriedade de navegação de **evento** do **eventMessage**, conforme mostrado neste [exemplo de mensagem de evento Get](../api/eventmessage-get.md#example-2). O aplicativo também pode responder ao evento em nome do convidado de forma programática, [aceitando](../api/event-accept.md), [aceitando provisoriamente](../api/event-tentativelyaccept.md)ou [recusando](../api/event-decline.md) o evento.
+Para obter as propriedades do evento associado na caixa de correio  do convidado, o aplicativo pode usar a propriedade de navegação de eventos **do eventMessage**, conforme mostrado neste exemplo de mensagem de evento get [.](../api/eventmessage-get.md#example-2) O aplicativo também pode responder ao evento em nome do convidado [](../api/event-tentativelyaccept.md)programaticamente, aceitando [,](../api/event-accept.md)aceitando ou [diminuindo](../api/event-decline.md) o evento.
 
-Além de uma solicitação de reunião, uma instância do **eventMessage** pode ser encontrada na caixa de correio de um convidado como resultado de um organizador de eventos cancelando uma reunião ou na caixa de correio do organizador como resultado de um convite responder à solicitação de reunião. Um aplicativo pode atuar em mensagens de evento da mesma maneira que atua em mensagens com poucas diferenças.
+Além de uma solicitação de reunião, uma instância **eventMessage** pode ser encontrada na caixa de correio de um convidado como resultado de um organizador de eventos cancelar uma reunião ou na caixa de correio do organizador como resultado de um convite respondendo à solicitação de reunião. Um aplicativo pode atuar em mensagens de evento da mesma maneira que atua em mensagens com poucas diferenças.
 ## <a name="methods"></a>Métodos
 
 | Método       | Tipo de retorno  |Descrição|
 |:---------------|:--------|:----------|
 |[Get eventMessage](../api/eventmessage-get.md) | [eventMessage](eventmessage.md) |Ler propriedades e relações do objeto eventMessage.|
 |[Update](../api/eventmessage-update.md) | [eventMessage](eventmessage.md)  |Atualizar o objeto eventMessage. |
-|[Delete](../api/message-delete.md) | Nenhum |Excluir o objeto eventMessage. |
+|[Delete](../api/message-delete.md) | None |Excluir o objeto eventMessage. |
 |[copy](../api/message-copy.md)|[message](message.md)|Copiar uma mensagem para uma pasta.|
 |[createForward](../api/message-createforward.md)|[message](message.md)|Criar um rascunho da mensagem de encaminhamento. Em seguida, você pode [atualizar](../api/message-update.md) ou [enviar](../api/message-send.md) esse rascunho.|
 |[createReply](../api/message-createreply.md)|[message](message.md)|Criar um rascunho da mensagem de resposta. Em seguida, você pode [atualizar](../api/message-update.md) ou [enviar](../api/message-send.md) esse rascunho.|
@@ -68,12 +68,12 @@ Além de uma solicitação de reunião, uma instância do **eventMessage** pode 
 |flag|[followupFlag](followupflag.md)|O valor do sinalizador que indica o status, a data de início, a data de conclusão ou a data de finalização da mensagem.|
 |from|[recipient](recipient.md)|O proprietário da caixa de correio da qual a mensagem foi enviada. Na maioria dos casos, esse valor é o mesmo que o da propriedade **remetente**, exceto para cenários de compartilhamento ou delegação. O valor deve corresponder à caixa de correio real que foi usada. Saiba mais sobre [como definir as propriedades from e sender](/graph/outlook-create-send-messages#setting-the-from-and-sender-properties) de uma mensagem.|
 |hasAttachments|Booliano|Indica se a mensagem tem anexos.|
-|id|String|Identificador exclusivo da mensagem de evento (Observe que esse valor pode ser alterado se uma mensagem for movida ou alterada)|
+|id|Cadeia de caracteres|Identificador exclusivo da mensagem de evento (observe que esse valor pode mudar se uma mensagem for movida ou alterada)|
 |importância|String| A importância da mensagem: `low`, `normal`, `high`.|
 |inferenceClassification|String| Os valores possíveis são: `focused` , `other` .|
 |internetMessageHeaders | Coleção [internetMessageHeader](internetmessageheader.md) | A coleção de cabeçalhos da mensagem, definida por [RFC5322](https://www.ietf.org/rfc/rfc5322.txt), que fornece detalhes do caminho de rede adotado por uma mensagem do remetente para o destinatário. Somente leitura.|
 |internetMessageId |String |A ID da mensagem no formato especificado por [RFC2822](https://www.ietf.org/rfc/rfc2822.txt). |
-|IsDelegated foi removida|Booliano|True se essa solicitação de reunião estiver acessível para um representante; caso contrário, false. O padrão é false.|
+|isDelegated|Booliano|True se essa solicitação de reunião estiver acessível a um representante, caso contrário, false. O padrão é false.|
 |isDeliveryReceiptRequested|Boolean|Indica se uma confirmação de leitura foi solicitada para a mensagem.|
 |isDraft|Boolean|Indica se a mensagem é um rascunho. Uma mensagem é um rascunho quando ela ainda não foi enviada.|
 |isRead|Boolean|Indica se a mensagem foi lida.|
@@ -88,7 +88,7 @@ Além de uma solicitação de reunião, uma instância do **eventMessage** pode 
 |subject|String|O assunto da mensagem.|
 |toRecipients|Coleção [recipient](recipient.md)|Os destinatários Para: da mensagem.|
 |uniqueBody|[itemBody](itembody.md)|A parte do corpo da mensagem que é exclusiva para a mensagem atual.|
-|webLink|String|A URL para abrir a mensagem no Outlook na Web.<br><br>Você pode acrescentar um argumento ispopout ao final da URL para alterar como a mensagem é exibida. Se ispopout não houver presente ou estiver definido como 1, a mensagem será mostrada em uma janela pop-up. Se ispopout estiver definido como 0, o navegador mostrará a mensagem no painel de revisão do Outlook na Web.<br><br>A mensagem será aberta no navegador se você estiver conectado à sua caixa de correio através do Outlook na Web. Você será solicitado a fazer login se já não estiver conectado no navegador.<br><br>Esta URL não pode ser acessada de dentro de um iFrame.|
+|webLink|String|O URL para abrir a mensagem no Outlook na Web.<br><br>Você pode acrescentar um argumento ispopout ao final da URL para alterar como a mensagem é exibida. Se ispopout não houver presente ou estiver definido como 1, a mensagem será mostrada em uma janela pop-up. Se a entrada for definida como 0, o navegador mostrará a mensagem no painel de revisão do Outlook na Web.<br><br>A mensagem será aberta no navegador se você estiver conectado à sua caixa de correio através do Outlook na Web. Você será solicitado a fazer o login, se ainda não estiver conectado com o navegador.<br><br>Este URL não pode ser acessado a partir de um iFrame.|
 
 ## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|

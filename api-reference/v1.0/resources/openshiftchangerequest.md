@@ -5,12 +5,12 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: b427d7914d95aaed794734bbbb39fa3eb139d06a
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: 0a6f34e566caa2ff623eb3a66ebf8584b1adeb764dd1e7918bc34f1dbd8455a3
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50158678"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54229105"
 ---
 # <a name="openshiftchangerequest-resource-type"></a>Tipo de recurso openShiftChangeRequest
 
@@ -22,11 +22,11 @@ Representa a solicitação para [reivindicar um openShift](../resources/openshif
 
 | Método       | Tipo de retorno | Descrição |
 |:-------------|:------------|:------------|
-| [List](../api/openshiftchangerequest-list.md) | Coleção de [openShiftChangeRequest](openshiftchangerequest.md) | Listar as propriedades e os relacionamentos dos **objetos openShiftChangeRequest** em uma equipe. |
+| [List](../api/openshiftchangerequest-list.md) | Coleção [de openShiftChangeRequest](openshiftchangerequest.md) | Listar as propriedades e as relações dos **objetos openShiftChangeRequest** em uma equipe. |
 | [Criar](../api/openshiftchangerequest-post.md) | [openShiftChangeRequest](openshiftchangerequest.md) | Crie uma instância de um **objeto openShiftChangeRequest.** |
-| [Get](../api/openshiftchangerequest-get.md) | [openShiftChangeRequest](openshiftchangerequest.md) | Leia as propriedades e os relacionamentos de um **objeto openShiftChangeRequest.** |
-|[Aprovar](../api/openshiftchangerequest-approve.md)|Nenhum|Aprovar uma solicitação de alteração de turno aberto.|
-|[Recusar](../api/openshiftchangerequest-decline.md)|Nenhum| Recusar uma solicitação de alteração de turno aberto.|
+| [Obter](../api/openshiftchangerequest-get.md) | [openShiftChangeRequest](openshiftchangerequest.md) | Leia as propriedades e as relações de um **objeto openShiftChangeRequest.** |
+|[Aprovar](../api/openshiftchangerequest-approve.md)|None|Aprovar uma solicitação de alteração de turno aberto.|
+|[Declínio](../api/openshiftchangerequest-decline.md)|None| Recusar uma solicitação de alteração de turno aberto.|
 
 ## <a name="properties"></a>Propriedades
 

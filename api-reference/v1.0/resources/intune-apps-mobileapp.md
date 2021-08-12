@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: a1682c08e4fb15de6e5fc9d66d86d83c832e4c27
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: c15f382e5106ad9ab32ac420f3e5abcf23b617cdb8eda6966b167ad03352fd0f
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52752417"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54243501"
 ---
 # <a name="mobileapp-resource-type"></a>Tipo de recurso mobileApp
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 Uma classe abstrata que contém as propriedades base de aplicativos móveis do Intune.
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
 |[Listar mobileApps](../api/intune-apps-mobileapp-list.md)|Coleção [mobileApp](../resources/intune-apps-mobileapp.md)|Lista propriedades e relações dos objetos [mobileApp](../resources/intune-apps-mobileapp.md).|
@@ -30,9 +30,9 @@ Uma classe abstrata que contém as propriedades base de aplicativos móveis do I
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Chave da entidade.|
-|displayName|Cadeia de caracteres|O título do aplicativo importado ou definido pelo administrador.|
-|descrição|Cadeia de caracteres|A descrição do aplicativo.|
+|id|String|Chave da entidade.|
+|displayName|String|O título do aplicativo importado ou definido pelo administrador.|
+|description|Cadeia de caracteres|A descrição do aplicativo.|
 |publisher|String|O publicador do aplicativo.|
 |largeIcon|[mimeContent](../resources/intune-shared-mimecontent.md)|O ícone grande, a ser exibido nos detalhes do aplicativo e usado para o carregamento do ícone.|
 |createdDateTime|DateTimeOffset|A data e a hora da criação do aplicativo.|

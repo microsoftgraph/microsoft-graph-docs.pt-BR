@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Priority
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: dc01389c119ff145ec976056327b2a56a2256a0d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: d9ca66d078181f3786a8f58c4f0ed2653ba9163a425fcae01bd11952a61182a8
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48094096"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54126253"
 ---
 # <a name="table-resource-type"></a>Tipo de recurso Table
 
@@ -55,7 +55,7 @@ Representa uma tabela do Excel.
 |showFilterButton|Booliano|Indica se os botões de filtro estão visíveis na parte superior de cada cabeçalho da coluna. Essa configuração só será permitida se a tabela tiver uma linha de cabeçalho.   |
 |legacyId|Cadeia de caracteres|ID herdada usada em clientes do Excel anteriores. O valor do identificador permanece o mesmo, ainda que a tabela seja renomeada. Essa propriedade deve ser interpretada como um valor de cadeia de caracteres opacas e não deve ser analisada para qualquer outro tipo. Somente leitura.   |
 
-## <a name="relationships"></a>Relacionamento
+## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |columns|Conjunto [WorkbookTableColumn](workbooktablecolumn.md)|Representa uma coleção de todas as colunas na tabela. Somente leitura.|

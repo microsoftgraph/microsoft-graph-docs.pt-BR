@@ -5,12 +5,12 @@ author: nilakhan
 localization_priority: Normal
 ms.prod: cloud-printing
 doc_type: resourcePageType
-ms.openlocfilehash: 53e0db2a1923cad0af1f35baf5bed6fecd896fb3
-ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
+ms.openlocfilehash: 4174f6f8dbd1a94ce3246189683529a9fdb4346927465b3f084fb77974313992
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50516861"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54163751"
 ---
 # <a name="printsettings-resource-type"></a>Tipo de recurso printSettings
 

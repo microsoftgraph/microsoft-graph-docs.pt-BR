@@ -1,29 +1,29 @@
 ---
 title: Tipo de recurso followupFlag
-description: 'Permite definir um sinalizador em um item para que o usuário acompanhe posteriormente. '
+description: 'Permite configurar um sinalizador em um item para que o usuário acompanhe posteriormente. '
 localization_priority: Normal
 author: abheek-das
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 9b690c86a6ccbef6f5c215e268f7b34243e3023e
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: e45fd04fa084fbc26c8eb43316de2f25b70cc0b7e2d5aa721bfc26ab1cfd0063
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50130203"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54180849"
 ---
 # <a name="followupflag-resource-type"></a>Tipo de recurso followupFlag
 
 Namespace: microsoft.graph
 
 
-Permite definir um sinalizador em um item para que o usuário acompanhe posteriormente.
+Permite configurar um sinalizador em um item para que o usuário acompanhe posteriormente.
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |completedDateTime|[dateTimeTimeZone](datetimetimezone.md)|Data e hora em que o acompanhamento foi concluído.|
-|dueDateTime|**dateTimeTimeZone**|A data e a hora em que o acompanhamento deve ser concluído. **Observação:** para definir a data de vencimento, você também deve especificar o ; `startDateTime` caso contrário, você receberá uma `400 Bad Request` resposta.|
+|dueDateTime|**dateTimeTimeZone**|A data e a hora em que o acompanhamento deve ser concluído. **Observação**: Para definir a data de vencimento, você também deve especificar o `startDateTime` ; caso contrário, você receberá uma `400 Bad Request` resposta.|
 |flagStatus|followupFlagStatus|O status de acompanhamento de um item. Os valores possíveis são: `notFlagged`, `complete` e `flagged`.|
 |startDateTime|**dateTimeTimeZone**|Data e hora em que o acompanhamento deve começar.|
 

@@ -4,12 +4,12 @@ description: Para receber notificações enviadas pelo Microsoft Graph, primeiro
 localization_priority: Priority
 ms.prod: notifications
 author: merzink
-ms.openlocfilehash: f975c6aebf9fa8a8dc045c4b60e1c4f21ef84c12
-ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
+ms.openlocfilehash: e070c6a86fb3726a0d4e593f6a7d7551498b9b9be6a0ef3f9e5e9c413d737b1b
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48288361"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54216361"
 ---
 # <a name="manage-app-registration-and-api-permission-for-microsoft-graph-notifications"></a>Gerenciar registro do aplicativo e permissão de API para notificações do Microsoft Graph
 
@@ -22,7 +22,7 @@ Registre seu aplicativo no portal do [Microsoft Azure](https://portal.azure.com/
 Para saber como registrar aplicativos, confira [Registrar um aplicativo na Microsoft Identity Platform](auth-register-app-v2.md). Ao registrar seu aplicativo, certifique-se de manter sempre à mão a ID do aplicativo/ID do cliente. Essa ID será usada posteriormente ao registrar seu aplicativo para experiências entre dispositivos no [Microsoft Partner Center](https://partner.microsoft.com/) para clientes Windows, Android ou iOS.
 
 > [!NOTE]
-> Se ainda não tiver uma conta da Microsoft e quiser usar uma, acesse a página  [conta da Microsoft](https://account.microsoft.com/account). Se estiver desenvolvendo um aplicativo que usa o Azure AD versão 1.0 como uma estrutura de autenticação e identidade para contas corporativas ou de estudante, confira [Bibliotecas de Autenticação do Azure Active Directory](/azure/active-directory/develop/active-directory-authentication-libraries). Para saber mais sobre ou se estiver usando a nova Microsoft Identity Platform convergida (versão 2.0), confira [comparação do ponto de extremidade da Microsoft Identity Platform e o ponto de extremidade do Azure AD versão 1.0](/azure/active-directory/develop/azure-ad-endpoint-comparison).
+> Se você ainda não tem uma conta Microsoft e deseja utilizar uma, vá para a página [Conta da Microsoft](https://account.microsoft.com/account). Se você estiver escrevendo um aplicativo que precisa usar o Azure AD v1.0 como uma estrutura de autenticação e identidade para contas corporativas ou escolares, consulte [Bibliotecas de autenticação do Azure Active Directory](/azure/active-directory/develop/active-directory-authentication-libraries). Para saber mais sobre ou se estiver usando a nova Microsoft Identity Platform convergida (versão 2.0), confira [comparação do ponto de extremidade da Microsoft Identity Platform e o ponto de extremidade do Azure AD versão 1.0](/azure/active-directory/develop/azure-ad-endpoint-comparison).
 
 
 ## <a name="app-certificates-and-secrets"></a>Certificados e segredos do aplicativo 
@@ -36,7 +36,7 @@ Para que o aplicativo se identifique e se autentique ao obter tokens de autentic
 
 ## <a name="api-permissions"></a>Permissões de API
 
-É preciso incluir permissões adicionais para usar as notificações do Microsoft Graph. Escolha **Adicionar uma permissão**e, em APIs Microsoft, selecione **Microsoft Graph**e depois **Permissões delegadas**.
+É preciso incluir permissões adicionais para usar as notificações do Microsoft Graph. Escolha **Adicionar uma permissão** e, em APIs Microsoft, selecione **Microsoft Graph** e depois **Permissões delegadas**.
     
 ![Captura de tela da página de permissões de API de solicitação do portal do Azure](images/notifications-api-permissions.png)
     

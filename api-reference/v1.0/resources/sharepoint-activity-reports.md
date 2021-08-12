@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: reports
 author: sarahwxy
 doc_type: conceptualPageType
-ms.openlocfilehash: 5cf20f8141c23944f87082b51216765ee0a6ab29
-ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
+ms.openlocfilehash: 4c67655dce0bbbe834051a536cb6917111c53fe0729f5430e0558886529edd7a
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49980609"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54231471"
 ---
 # <a name="sharepoint-activity-reports"></a>Relatório de atividades do SharePoint
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 Você pode usar os relatórios de atividades do SharePoint para obter as atividades de cada usuário licenciado para usar o SharePoint examinando sua interação com arquivos. Você também pode observar o nível de colaboração em andamento com base no número de arquivos compartilhados.
 
-> **Observação:** Para obter detalhes sobre diferentes visualizações e nomes de relatórios, consulte [relatórios do Microsoft 365 - atividade do SharePoint.](https://support.office.com/client/SharePoint-activity-a91c958f-1279-499d-9959-12f0de08dc8f)
+> **Observação:** Para obter detalhes sobre diferentes exibições de relatório e nomes, [consulte Microsoft 365 relatórios - SharePoint atividade](https://support.office.com/client/SharePoint-activity-a91c958f-1279-499d-9959-12f0de08dc8f).
 
 ## <a name="reports"></a>Relatórios
 

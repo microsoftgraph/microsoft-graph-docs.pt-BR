@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: a3b4245ccf1a5a03d8b2142b65bfed69685de254
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 908112925a38143206457ac2d76266ca1cb62bb59284a15354fac808b82cc7fd
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52751717"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54175078"
 ---
 # <a name="sharedpcaccountdeletionpolicytype-enum-type"></a>Tipo de número sharedPCAccountDeletionPolicyType
 

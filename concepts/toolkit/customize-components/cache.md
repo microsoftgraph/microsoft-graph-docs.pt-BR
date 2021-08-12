@@ -3,12 +3,12 @@ title: Cache Graph Toolkit Microsoft
 description: Explicando como o Cache funciona e como configurar as opções fornecidas aos desenvolvedores
 localization_priority: Normal
 author: adchau
-ms.openlocfilehash: 7bb13e97cc6ef0fa77ba05afb27a065f934e1f42
-ms.sourcegitcommit: db3d2c6db8dd8f8cc14bdcebb2904d5e056a73e7
+ms.openlocfilehash: 0e1c987adffe6433d5fcf681647d8e48f1dc06fdaea3ff997b6eb057fd124a4a
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52579932"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54251607"
 ---
 # <a name="microsoft-graph-toolkit-caching"></a>Cache Graph Toolkit Microsoft
 

@@ -5,12 +5,12 @@ description: O objeto RestoreAction fornece informações sobre uma atividade qu
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 51fe7daa69bd70b6e3f1a554131844b69d451d10
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: 8052c32952a0e7bc390062ec312e76b77c2c05d1c2c33e39e67b582f50567fe6
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50239776"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54177986"
 ---
 # <a name="restoreaction-resource-type"></a>Tipo de recurso restoreAction
 
@@ -18,22 +18,22 @@ Namespace: microsoft.graph
 
 A presença do recurso **restoreAction** em um [**itemActivity**][activity] indica que a atividade restaurou um item.
 
-**Observação:** este recurso está vazio no momento. No futuro, ele pode ser preenchido com propriedades adicionais.
+**Observação**: esse recurso está vazio no momento. No futuro, ele pode ser preenchido com propriedades adicionais.
 
->**Observação:** No momento, os registros de atividades do item só estão disponíveis no SharePoint e no OneDrive for Business.
+>**Observação:** No momento, os registros de atividade do item estão disponíveis apenas SharePoint e OneDrive for Business.
 
 [activity]: itemactivity.md
 
 ## <a name="properties"></a>Propriedades
 
-Nenhum. Esta faceta tem um valor nulo ou não nulo e não contém propriedades.
+Nenhum. Esta faceta é um valor nulo ou não nulo e não contém propriedades.
 
 ## <a name="json-representation"></a>Representação JSON
 
 <!-- {
   "blockType": "resource",
   "optionalProperties": [ ],
-  "@type": "microsoft.graph.restoreAction"
+  "@type&quot;: &quot;microsoft.graph.restoreAction"
 }-->
 
 ```json

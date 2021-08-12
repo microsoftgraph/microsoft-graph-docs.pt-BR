@@ -1,28 +1,28 @@
 ---
-title: tipo de recurso commsNotifications
-description: Lista de notificações usadas pelos servidores de comunicação para o envio de várias notificações em um único lote.
+title: Tipo de recurso commsNotifications
+description: Lista de notificações usadas pelos servidores de Comunicações para o envio de várias notificações em um único lote.
 author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: c3d6ac676013509502dd7af0ddfee4c115aa523e
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ec5a1cd338a0b774f93096172dc4940defcec4efb59615172918667ddd82f8f5
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48018967"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54235699"
 ---
-# <a name="commsnotifications-resource-type"></a>tipo de recurso commsNotifications
+# <a name="commsnotifications-resource-type"></a>Tipo de recurso commsNotifications
 
 Namespace: microsoft.graph
 
-Lista de notificações usadas pelos servidores de comunicação para o envio de várias notificações em um único lote.
+Lista de notificações usadas pelos servidores de Comunicações para o envio de várias notificações em um único lote.
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade       | Tipo                                                 | Descrição                                   |
 |:---------------|:-----------------------------------------------------|:----------------------------------------------|
-| valor          | coleção [commsNotification](commsnotification.md) | A notificação de uma alteração no recurso. |
+| valor          | [Coleção commsNotification](commsnotification.md) | A notificação de uma alteração no recurso. |
 
 ## <a name="json-representation"></a>Representação JSON
 

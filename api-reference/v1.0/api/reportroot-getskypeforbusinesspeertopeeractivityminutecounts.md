@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: reports
 author: sarahwxy
 doc_type: apiPageType
-ms.openlocfilehash: d813bf068517e899c024f94d181724037d57b274
-ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
+ms.openlocfilehash: 7ce77bdc647ccf7448d143e42147a7943e9287199ccc913eb910651e9c2ef6a8
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49981939"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54135425"
 ---
 # <a name="reportroot-getskypeforbusinesspeertopeeractivityminutecounts"></a>reportRoot: getSkypeForBusinessPeerToPeerActivityMinuteCounts
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 Obtenha tendências de uso da duração em minutos e tipo de sessões ponto a ponto realizadas em sua organização. Tipos de sessões incluem áudio e vídeo.
 
-> **Observação:** Para obter detalhes sobre diferentes visualizações e nomes de relatórios, consulte relatórios do [Microsoft 365 - atividade](https://support.office.com/client/Skype-for-Business-Online-peertopeer-activity-d3b2d569-4ee9-44b8-92bf-d518142f0713)ponto a ponto do Skype for Business.
+> **Observação:** Para obter detalhes sobre diferentes exibições de relatório e nomes, [consulte Microsoft 365 relatórios - Skype for Business atividade ponto a ponto](https://support.office.com/client/Skype-for-Business-Online-peertopeer-activity-d3b2d569-4ee9-44b8-92bf-d518142f0713).
 
 ## <a name="permissions"></a>Permissões
 

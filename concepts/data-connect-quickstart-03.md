@@ -20,7 +20,7 @@ A primeira etapa é criar um aplicativo do Azure AD que será usado como entidad
 
 1. Use os seguintes valores para criar um novo aplicativo do Azure AD e selecione **Registrar**.
 
-   - **Nome**: Microsoft Graph Dados Conexão Transferência de Dados
+   - **Nome**: Conexão de Dados do Microsoft Graph Transferência de Dados
    - **Tipos de conta com suporte**: Somente contas neste diretório organizacional.
    - **URI de redirecionamento**: deixe os valores padrão.
 

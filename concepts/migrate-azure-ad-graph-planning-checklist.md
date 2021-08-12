@@ -4,12 +4,12 @@ description: Lista de verificação para migrar seus aplicativos do Azure AD Gra
 author: dkershaw10
 localization_priority: Normal
 ms.prod: applications
-ms.openlocfilehash: 0ff4d78ff297870f328acd78ac66d5db8f243207
-ms.sourcegitcommit: b711aed8acc18512cf6591f4108ed5ddf05b649d
+ms.openlocfilehash: 70d05c2b53b5cc2fe09d17a4188f625d14ed18c02f6faaae08f304eef083cea8
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53660272"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54163478"
 ---
 # <a name="app-migration-planning-checklist"></a>Lista de verificação de planejamento de migração de aplicativos
 

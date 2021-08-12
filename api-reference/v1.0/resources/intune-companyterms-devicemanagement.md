@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8c0d862f3b1a3658fb22dd4b320c0ca0dc597e04
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 6876d956fa989355ad7ea6ca28171c8c0a49b7661e987d3de5aece0972130403
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52759440"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54146493"
 ---
 # <a name="devicemanagement-resource-type"></a>Tipo de recurso deviceManagement
 
@@ -29,7 +29,7 @@ Entidade singleton que atua como um contêiner para todas as funcionalidades de 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Ainda não documentado|
+|id|Cadeia de caracteres|Ainda não documentado|
 
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|

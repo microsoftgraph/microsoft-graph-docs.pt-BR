@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e5a327480fbc5f219dcd56b4436170261357dc17
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 993195bd027c6bd887f0a7dc96f2fee95c5d7b2a13aa28fa8e40cfe87188db32
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52756853"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54208983"
 ---
 # <a name="update-resourceoperation"></a>Atualizar resourceOperation
 
@@ -54,7 +54,7 @@ A tabela a seguir mostra as propriedades obrigatórias ao criar [resourceOperati
 |id|Cadeia de caracteres|Chave da operação de recurso. Somente leitura, gerada automaticamente.|
 |resourceName|Cadeia de caracteres|Nome do recurso em que essa operação é executada.|
 |actionName|Cadeia de caracteres|Tipo de ação em que essa operação será executada. O actionName deve ser conciso e limitado ao mínimo de palavras possível.|
-|descrição|Cadeia de caracteres|Descrição da operação de recurso. A descrição é usada no texto exibido com o passar o mouse para a operação quando exibida no Portal do Azure.|
+|description|Cadeia de caracteres|Descrição da operação de recurso. A descrição é usada no texto exibido com o passar o mouse para a operação quando exibida no Portal do Azure.|
 
 
 

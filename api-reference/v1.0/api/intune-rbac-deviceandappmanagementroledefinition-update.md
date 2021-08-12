@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e7ad1fd0ad74df9e81ceeafc599e795a91f7f68c
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: bc57380726d7b79a3dabf0b9e65bcaf2afeda7c9b8278ed6fdd21ad06c2802d3
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52756881"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54199883"
 ---
 # <a name="update-deviceandappmanagementroledefinition"></a>Atualizar deviceAndAppManagementRoleDefinition
 
@@ -54,7 +54,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [deviceA
 |:---|:---|:---|
 |id|Cadeia de caracteres|Chave da entidade. É somente leitura e gerada automaticamente. Herdada de [roleDefinition](../resources/intune-rbac-roledefinition.md)|
 |displayName|Cadeia de caracteres|Nome de exibição da definição de Função. Herdada de [roleDefinition](../resources/intune-rbac-roledefinition.md)|
-|descrição|Cadeia de caracteres|Descrição da definição de Função. Herdada de [roleDefinition](../resources/intune-rbac-roledefinition.md)|
+|description|String|Descrição da definição de Função. Herdada de [roleDefinition](../resources/intune-rbac-roledefinition.md)|
 |rolePermissions|Coleção [rolePermission](../resources/intune-rbac-rolepermission.md)|Lista de Permissões de Função que esta função está autorizada a executar. Elas devem corresponder ao actionName definido como parte de rolePermission. Herdada de [roleDefinition](../resources/intune-rbac-roledefinition.md)|
 |isBuiltIn|Booliano|Tipo de Função. Defina como True se for uma definição de função interna ou como False se for uma definição de função personalizada. Herdada de [roleDefinition](../resources/intune-rbac-roledefinition.md)|
 

@@ -4,12 +4,12 @@ description: As APIs do Microsoft Teams no Microsoft Graph, que acessam dados co
 author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: dd4b2a85fd0ab3b9fbceb993cfd72ef5bf19f48b
-ms.sourcegitcommit: e4461c7eb8c3d265fc1aa766125e81b58c6e1099
+ms.openlocfilehash: 393fcba98a893c9de7b2453281516aa1f1a41065aa2b9a3e106db4dad81937e1
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "52941428"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54192198"
 ---
 # <a name="protected-apis-in-microsoft-teams"></a>APIs protegidas no Microsoft Teams
 

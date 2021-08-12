@@ -3,12 +3,12 @@ title: Integração do aplicativo UWP do Windows no SDK do lado do cliente para 
 description: Integre o aplicativo UWP do Windows com notificações de usuário no SDK do cliente.
 localization_priority: Priority
 ms.prod: notifications
-ms.openlocfilehash: cc0605a1f6c8be879452a7779dfe828ffba9fafd
-ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
+ms.openlocfilehash: 5d692ba185fed4313f0f9c8afb73f5d6d8439d254f39ea3b4ab874beec9819a0
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48288648"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54177776"
 ---
 # <a name="integrate-your-windows-uwp-app-with-the-client-side-sdk-for-user-notifications"></a>Integração do aplicativo UWP do Windows no SDK do lado do cliente para notificações ao usuário
 
@@ -31,7 +31,7 @@ O processo envolve alguns componentes:
 
 O diagrama mostra as próximas etapas: 
 
-1. Lógica do aplicativo. Essa etapa captura o que aciona a notificação para ser publicada para o usuário. Isso é lógica específica do aplicativo e pode ser uma atualização de dados ou evento sobre algo diferente do Microsoft Graph, como um novo evento do calendário ou atribuição de tarefas, ou o que o serviço de aplicativo quer notificar o usuário.
+1. Lógica do aplicativo. Esta etapa captura o que aciona a notificação a ser publicada para o usuário. Esta é uma lógica específica do aplicativo e pode ser um evento ou atualização de dados sobre alguma outra coisa no Microsoft Graph, como um novo evento de calendário ou atribuição de tarefa, ou o que seu serviço de aplicativo desejar notificar ao usuário.
 2. O servidor do aplicativo publica uma notificação para o usuário alvo pela API de notificações do Microsoft Graph. Para saber mais, consulte [integração com o lado do servidor](notifications-integrating-app-server.md).
 3. Ao receber a solicitação Web com nova notificação, as notificações do Microsoft Graph mantêm o conteúdo da notificação em segurança na nuvem para esse aplicativo e esse usuário.
 4. Para cada instância do cliente do aplicativo inscrita para receber notificações para esse usuário, as notificações do Microsoft Graph envia um sinal para notificar cliente do aplicativo, por meio do serviço de envio por push nativo fornecido pelo sistema operacional. Nesse caso, o aplicativo é um aplicativo UWP no Windows, e ele usa [notificação bruta WNS](/windows/uwp/design/shell/tiles-and-notifications/raw-notification-overview) enviar o sinal. 
@@ -49,7 +49,7 @@ O diagrama a seguir mostra o fluxo de dados para alterar o estado de uma notific
 
 ![Atualização de fluxo de notificação para aplicativo do Windows](images/notifications-notification-update-windows.png)
 
-Observe que a segunda parte do fluxo é semelhante ao fluxo de tratamento de novas notificações de entrada. Isso é esperado – o padrão de programação no SDK  foi projetado para que o cliente do aplicativo possa lidar com todos os tipos de alterações de dados de notificações do usuário (novas notificações de entrada, alterações de estado de notificação, notificação excluída) de maneira semelhante.  
+Observe que a segunda parte do fluxo é semelhante ao fluxo para lidar com as novas notificações recebidas. Isso ocorre por design - o padrão de programação do SDK é projetado para que o aplicativo cliente possa lidar com todos os tipos de alterações de dados de notificação do usuário (novas notificações recebidas, alterações de estado de notificação, notificação excluída) de maneira semelhante.  
 
 O diagrama mostra as próximas etapas:
 
@@ -64,7 +64,7 @@ O diagrama mostra as próximas etapas:
 9. O SDK dispara retornos de evento para notificá-o aplicativo após as alterações são recuperadas com êxito. 
 10. Lógica do aplicativo. Essa etapa captura o que o aplicativo escolhe fazer dentro retorno de chamada do evento. Normalmente, isso resulta em alterações locais de dados do aplicativo e atualizações de interface do usuário locais. Nesse caso, como há atualizações de notificação, o aplicativo deve atualizar a interface do usuário no local para refletir a alteração de estado. Por exemplo, se uma notificação estiver marcada como ativada, você pode remover a notificação pop-up do sistema correspondente dentro da central de ações do Windows para obter "manipulada uma vez, descartada em todo lugar". 
 
-Para obter mais informações sobre as notificações do Microsoft Graph, consulte a  [visão geral das notificações do Microsoft Graph](notifications-concept-overview.md). Para saber mais sobre as etapas necessárias para integrar com as notificações do Microsoft Graph de ponta a ponta, confira a [visão geral da integração](notifications-integration-e2e-overview.md) das notificações do Microsoft Graph.
+Para obter mais informações sobre as notificações do Microsoft Graph, consulte a [visão geral das notificações do Microsoft Graph](notifications-concept-overview.md). Para saber mais sobre as etapas necessárias para integrar com as notificações do Microsoft Graph de ponta a ponta, confira a [visão geral da integração](notifications-integration-e2e-overview.md) das notificações do Microsoft Graph.
 
 ## <a name="adding-the-sdk-to-your-project"></a>Adicionar o SDK ao seu projeto
 
@@ -181,7 +181,7 @@ Se você estiver usando uma conta do Azure AD, você precisará solicitar o segu
 
 ## <a name="adding-the-user-account-to-the-platform"></a>Adicionar a conta de usuário à plataforma 
 
-Será preciso registrar a conta do usuário conectado com o SDK. Isso envolve a adição de conta e registro de um canal de push para receber as notificações por push iniciais através do WNS. 
+Será preciso registrar a conta do usuário conectado com um SDK.Isso envolve a adição de contas e o registro de um canal de push para receber as notificações por push iniciais através de WNS. 
 
 ```C#
 var account = new ConnectedDevicesAccount(accountId, accountType);           
@@ -222,7 +222,7 @@ reader.DataChanged += Reader_DataChanged;
 
 ## <a name="receiving-and-managing-user-notifications"></a>Receber e gerenciar as notificações do usuário
 
-O diagrama de fluxo já apresentado nesse tópico mostra que os padrões de programação para lidar com novas notificações de entrada de um servidor do aplicativo e uma atualização de notificação ou exclusão iniciado de outra instância do aplicativo do cliente são semelhantes. A seguir estão as etapas para lidar com essas alterações de dados. 
+O diagrama de fluxo anterior neste tópico mostra que os padrões de programação para lidar com novas notificações de entrada de um servidor de aplicativo e uma atualização ou exclusão de notificação iniciada a partir de outra instância do aplicativo cliente são semelhantes. A seguir estão as etapas para lidar com essas alterações de dados. 
 
 ### <a name="handling-incoming-push-notification-signal"></a>Gerenciar sinal de notificações por push de entrada
 

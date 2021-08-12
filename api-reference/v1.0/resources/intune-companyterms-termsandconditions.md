@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: b1dcb37dd703b2094d8104e9860aeb44e4807d1f
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 4b73cd3e5081d164498aed1adf7f7b66d6859c938302eb30d292fdb2e487d901
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52758936"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54231724"
 ---
 # <a name="termsandconditions-resource-type"></a>Tipo de recurso termsAndConditions
 
@@ -32,12 +32,12 @@ Uma entidade termsAndConditions representa os metadados e conteúdos de determin
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Identificador exclusivo da política de T&C.|
+|id|Cadeia de caracteres|Identificador exclusivo da política de T&C.|
 |createdDateTime|DateTimeOffset|DateTime em que o objeto foi criado.|
 |lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto.|
-|displayName|String|Nome fornecido pelo administrador para a política de T&C. |
-|description|String|Descrição fornecida pelo administrador para a política de T&C.|
-|title|String|Título dos termos e condições fornecido pelo administrador. Isso é exibido ao usuário nos prompts de aceitação da política de T&C.|
+|displayName|Cadeia de caracteres|Nome fornecido pelo administrador para a política de T&C. |
+|description|Cadeia de caracteres|Descrição fornecida pelo administrador para a política de T&C.|
+|title|Cadeia de caracteres|Título dos termos e condições fornecido pelo administrador. Isso é exibido ao usuário nos prompts de aceitação da política de T&C.|
 |bodyText|String|Corpo de texto de termos e condições fornecido pelo administrador, normalmente os termos em si. Isso é exibido ao usuário nos prompts de aceitação da política de T&C.|
 |acceptanceStatement|String|Explicação dos termos e condições fornecida pelo administrador, normalmente para descrever o que significa aceitar os termos e condições definidos na política de T&C. Isso é exibido ao usuário nos prompts de aceitação da política de T&C.|
 |version|Int32|Inteiro que indica a versão atual dos termos. Incrementado quando um administrador faz uma alteração nos termos e deseja solicitar que os usuários aceitem novamente a política de T&C modificada.|

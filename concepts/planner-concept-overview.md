@@ -4,12 +4,12 @@ description: O Planner oferece uma maneira simples e visual para as equipes orga
 author: TarkanSevilmis
 localization_priority: Priority
 ms.prod: planner
-ms.openlocfilehash: 076660fe1aa03dc79937166ac2549a9a4cb6a85d
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
+ms.openlocfilehash: 45ce4719e9fa46d163cb98f9318757255af9b9d6decea3af4947285f3419f243
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44895605"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54169050"
 ---
 # <a name="planner-tasks-and-plans-api-overview"></a>Visão geral da API de tarefas e planos do Planner
 O Planner oferece uma maneira simples e visual para as equipes organizarem o trabalho. Os clientes podem usar o Planner para criar planos, organizar e atribuir tarefas, compartilhar o progresso e colaborar em conteúdo.  O Planner fornece várias experiências interativas, incluindo um quadro de tarefas, uma página de gráficos e uma visualização de horários, assim como integrações em todo o Microsoft 365.
@@ -26,7 +26,7 @@ O Planner fornece recursos de acompanhamento de tarefas para experiências de co
 O Planner oferece um espaço compartilhado onde você pode criar uma equipe, [criar tarefas](/graph/api/planner-post-tasks?view=graph-rest-1.0) e atribuí-las aos outros membros da equipe. O Planner torna fácil para todos saber quem está fazendo o quê e se as coisas estão no prazo. Você pode atualizar tarefas com mais informações, como datas de vencimento, andamento e descrições, e então organizar mais tarefas com rótulos de categoria e buckets personalizáveis.   
 
 ### <a name="collaborate-across-microsoft-365"></a>Colabore no Microsoft 365
-O Planner se integra às experiências de colaboração no Microsoft 365. Além de clientes móveis e da Web do Planner, os usuários podem exibir e atualizar o planos e tarefas do Planner por meio do SharePoint e no Microsoft Teams.  
+O Planner se integra às experiências de colaboração do Microsoft 365. Além dos clientes Web e móveis do Planner, os usuários podem visualizar e atualizar os planos e tarefas do Planner no SharePoint e do Microsoft Teams.  
 
 O próprio Planner também é baseado no Microsoft Graph e no serviço de grupo do Microsoft 365. Os arquivos que você carrega e anexa às tarefas do Planner são armazenados no SharePoint. Os comentários do Planner são baseados em conversas em grupo do Outlook.
 

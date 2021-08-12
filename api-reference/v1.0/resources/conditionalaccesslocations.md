@@ -5,12 +5,12 @@ localization_priority: Normal
 author: videor
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 670f07e22b2027c74a79eaca505c624c04c19621
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: e2ad772d4e41e9244b126b8df4e0052d27a3a3d20ae9db7a974b4765eb0d190d
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50132111"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54205924"
 ---
 # <a name="conditionalaccesslocations-resource-type"></a>Tipo de recurso conditionalAccessLocations
 
@@ -22,8 +22,8 @@ Representa locais incluídos e excluídos do escopo da política.
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-| includeLocations | String collection | IDs de local no escopo da política, a menos que explicitamente `All` excluído, ou `AllTrusted` . |
-| excludeLocations | String collection | IDs de local excluídas do escopo da política. |
+| includeLocations | Coleção de cadeias de caracteres | IDs de local no escopo da política, a menos que explicitamente `All` excluídas, ou `AllTrusted` . |
+| excludeLocations | Coleção de cadeias de caracteres | IDs de local excluídas do escopo da política. |
 
 ## <a name="json-representation"></a>Representação JSON
 

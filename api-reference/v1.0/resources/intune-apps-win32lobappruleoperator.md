@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 14031c7d5526975843ff1d4b94608b422cd8056b
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 232f28943ac0619005a1a427330af7e7351a68f4d129fffb6665f1c29166102b
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52752375"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54211987"
 ---
 # <a name="win32lobappruleoperator-enum-type"></a>Tipo de número win32LobAppRuleOperator
 

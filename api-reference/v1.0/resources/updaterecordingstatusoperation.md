@@ -1,18 +1,18 @@
 ---
-title: tipo de recurso updateRecordingStatusOperation
+title: Tipo de recurso updateRecordingStatusOperation
 description: Descreve o formato de resposta de uma ação de status de gravação de atualização.
 author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 78c5e91fa966a91bc65291fa813807cdf44ee8ae
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: c79e97e3befcbce6b324cbaf2ac822edd9de49e1871deee815a27a4c0c62c4a3
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48090617"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54141277"
 ---
-# <a name="updaterecordingstatusoperation-resource-type"></a>tipo de recurso updateRecordingStatusOperation
+# <a name="updaterecordingstatusoperation-resource-type"></a>Tipo de recurso updateRecordingStatusOperation
 
 Namespace: microsoft.graph
 
@@ -22,9 +22,9 @@ Descreve o formato de resposta de uma ação de status de gravação de atualiza
 
 | Propriedade            | Tipo                        | Descrição|
 |:--------------------|:----------------------------|:-----------------------------------------------------------------------------------|
-| clientContext       | Cadeia de caracteres                      | Cadeia de caracteres de contexto de cliente exclusivo. O limite máximo é de 256 caracteres.                              |
+| clientContext       | String                      | Cadeia de caracteres de contexto de cliente exclusiva. O limite máximo é 256 caracteres.                              |
 | id                  | String                      | Somente leitura.                                                                         |
-| resultInfo          | [resultInfo](resultinfo.md) | As informações de resultado. Somente leitura.                                                 |
+| resultInfo          | [resultInfo](resultinfo.md) | As informações de resultado. Apenas leitura.                                                 |
 | status              | String                      | Os valores possíveis são: `notStarted`, `running`, `completed`, `failed`.               |
 
 ## <a name="relationships"></a>Relações

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 824bcb13741240b1f5bc462312004892ccd5c051
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 3f73f0845657725af61c178460054fe8519f892277c3355bb16c1a03a101e98f
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52751318"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54175022"
 ---
 # <a name="managedappdiagnosticstatus-resource-type"></a>Tipo de recurso managedAppDiagnosticStatus
 
@@ -24,11 +24,11 @@ Representa o status de diagnóstico.
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |validationName|Cadeia de caracteres|O nome amigável da validação|
-|estado|Cadeia de caracteres|O estado da operação|
+|state|Cadeia de caracteres|O estado da operação|
 |mitigationInstruction|Cadeia de caracteres|Instruções sobre como atenuar uma falha de validação|
 
 ## <a name="relationships"></a>Relações
-Nenhuma
+Nenhum
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.

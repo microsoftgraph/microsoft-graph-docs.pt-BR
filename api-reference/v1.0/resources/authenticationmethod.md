@@ -5,18 +5,18 @@ localization_priority: Normal
 author: mmcla
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 6f45971e29e3d1823f9dc7cc733bc089f04662cb
-ms.sourcegitcommit: 2d8b04725ea4eaf304f3da1056a6451457a4630f
+ms.openlocfilehash: 082ae6530ad429df632ba851483a2d3edf16c49778ac22effaaaf01f897be6a0
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52335580"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54160075"
 ---
 # <a name="authenticationmethod-resource-type"></a>tipo de recurso authenticationMethod
 
 Namespace: microsoft.graph
 
-Representa um método de autenticação registrado para um usuário. Um [método de autenticação](/azure/active-directory/authentication/concept-authentication-methods) é algo usado por um usuário para autenticar ou provar sua identidade para o sistema. Alguns exemplos incluem senha, telefone (que pode ser SMS ou chamada de voz), teclas de segurança FIDO2 e muito mais.
+Representa um método de autenticação registrado para um usuário. Um [método de autenticação](/azure/active-directory/authentication/concept-authentication-methods) é algo usado por um usuário para autenticar ou provar sua identidade para o sistema. Alguns exemplos incluem senha, telefone (usável por SMS ou chamada de voz), chaves de segurança FIDO2 e muito mais.
 
 > [!IMPORTANT]
 > Listar os métodos de autenticação dos usuários retorna apenas os métodos suportados nesta versão da API. Consulte [Azure AD authentication methods API overview](authenticationmethods-overview.md) for a list of currently supported methods.
@@ -31,7 +31,7 @@ Representa um método de autenticação registrado para um usuário. Um [método
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|id|String| O identificador dessa instância de um método de autenticação registrado nesse usuário. Somente leitura. |
+|id|Cadeia de caracteres| O identificador dessa instância de um método de autenticação registrado nesse usuário. Somente leitura. |
 
 ## <a name="relationships"></a>Relações
 

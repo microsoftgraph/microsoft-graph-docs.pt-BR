@@ -5,12 +5,12 @@ localization_priority: Normal
 author: vrod9429
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 5340fa9912ecb183dda8603d4b3ce4bbf6d70e8d
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: d023d77d987ff75d124f70fe805565c3a9a0c05082fe78ae48493fa9c578d344
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50474698"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54163709"
 ---
 # <a name="meetingtimesuggestion-resource-type"></a>Tipo de recurso meetingTimeSuggestion
 

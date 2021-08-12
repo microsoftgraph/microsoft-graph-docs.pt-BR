@@ -1,34 +1,34 @@
 ---
-title: tipo de recurso changeNotificationEncryptedContent
+title: Tipo de recurso changeNotificationEncryptedContent
 description: Um objeto changeNotificationEncryptedContent representa os dados criptografados anexados a uma notificação de alteração.
 localization_priority: Normal
 author: baywet
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: f86dc032e3f9e14790358a03e8026f1932ae9431
-ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
+ms.openlocfilehash: 01815c47312b33f9ca3d4dfa3d96df063219628ec28fab7d45066268a39a3f53
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48193628"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54246903"
 ---
-# <a name="changenotificationencryptedcontent-resource-type"></a>tipo de recurso changeNotificationEncryptedContent
+# <a name="changenotificationencryptedcontent-resource-type"></a>Tipo de recurso changeNotificationEncryptedContent
 
 Namespace: microsoft.graph
 
 Representa os dados criptografados anexados a uma notificação de alteração.
 
-Para obter mais informações, consulte [configurar notificações de alteração que incluem dados de recurso (visualização)](/graph/webhooks-with-resource-data.md).
+Para obter mais informações, consulte [Set up change notifications that include resource data (preview)](/graph/webhooks-with-resource-data.md).
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade | Tipo | Descrição |
 |:---------|:-----|:------------|
-| data | string | Dados criptografados codificados em base64 que produzem um respresented de recurso completo como JSON. Os dados foram criptografados com o fornecido `dataKey` usando um `AES/CBC/PKCS5PADDING` pacote de codificação. |
-| DataSignature | string | Hash HMAC-SHA256 codificado em base64 dos dados para fins de validação. |
-| DataKeyNames | string | Chave simétrica codificada em base64 gerada pelo Microsoft Graph para criptografar o valor dos dados e gerar a assinatura dos dados. Essa chave é criptografada com a chave pública de certificado fornecida durante a assinatura. Ele deve ser descriptografado com a chave privada do certificado para que possa ser usado para descriptografar os dados ou verificar a assinatura. Essa chave foi criptografada com o seguinte pacote de codificação: `RSA/ECB/OAEPWithSHA1AndMGF1Padding` . |
-| encryptionCertificateId | string | ID do certificado usado para criptografar o `dataKey` . |
-| encryptionCertificateThumbprint | string | Representação hexadecimal da impressão digital do certificado usado para criptografar o `dataKey` . |
+| data | string | Dados criptografados codificados com base64 que produzem um recurso completo respresentado como JSON. Os dados foram criptografados com o fornecido `dataKey` usando um pacote de `AES/CBC/PKCS5PADDING` codificação. |
+| dataSignature | string | Hash HMAC-SHA256 codificado com base64 dos dados para fins de validação. |
+| dataKey | string | Chave simétrica codificada com base64 gerada pela Microsoft Graph criptografar o valor de dados e gerar a assinatura de dados. Essa chave é criptografada com a chave pública do certificado fornecida durante a assinatura. Ele deve ser descriptografado com a chave privada do certificado antes de poder ser usado para descriptografar os dados ou verificar a assinatura. Essa chave foi criptografada com o seguinte pacote de codificação: `RSA/ECB/OAEPWithSHA1AndMGF1Padding` . |
+| encryptionCertificateId | cadeia de caracteres | ID do certificado usado para criptografar `dataKey` o . |
+| encryptionCertificateThumbprint | string | Representação hexadecimal da impressão digital do certificado usado para criptografar `dataKey` o . |
 
 ## <a name="json-representation"></a>Representação JSON
 

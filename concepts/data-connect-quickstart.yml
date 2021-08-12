@@ -1,8 +1,8 @@
 ### YamlMime:Tutorial
-title: Criar seu primeiro aplicativo microsoft Graph dados Conexão dados
+title: Criar seu primeiro Conexão de Dados do Microsoft Graph aplicativo
 metadata:
-  title: Criar seu primeiro aplicativo microsoft Graph dados Conexão dados
-  description: Neste tutorial, você criará seu primeiro aplicativo microsoft Graph data Conexão para métricas de email.
+  title: Criar seu primeiro Conexão de Dados do Microsoft Graph aplicativo
+  description: Neste tutorial, você criará seu primeiro aplicativo de Conexão de Dados do Microsoft Graph para métricas de email.
   audience: Developer
   level: Beginner
   displayType: one-column
@@ -10,18 +10,18 @@ metadata:
   author: fercobo-msft
   ms.topic: tutorial
   ms.custom: scenarios:getting-started, languages:ASP.NET
-  ms.openlocfilehash: 98127ccff39380f0d299a953b9b5abed61eedf75
-  ms.sourcegitcommit: cec76c5a58b359d79df764c849c8b459349b3b52
+  ms.openlocfilehash: af54756e2ec275210cb621e8e118f4fdd8fbd43f1a9f10065fdd04aa300d133a
+  ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
   ms.translationtype: MT
   ms.contentlocale: pt-BR
-  ms.lasthandoff: 05/25/2021
-  ms.locfileid: "52645661"
+  ms.lasthandoff: 08/05/2021
+  ms.locfileid: "54146501"
 items:
-- title: Criar seu primeiro aplicativo microsoft Graph dados Conexão dados
+- title: Criar seu primeiro Conexão de Dados do Microsoft Graph aplicativo
   durationInMinutes: 10
   content: >
     [!INCLUDE [](data-connect-quickstart-01.md)]
-- title: Configurar seu locatário Microsoft 365 e habilitar o Microsoft Graph Data Conexão
+- title: Configurar seu locatário Microsoft 365 e habilitar Conexão de Dados do Microsoft Graph
   durationInMinutes: 5
   content: >
     [!INCLUDE [](data-connect-quickstart-02.md)]
@@ -37,7 +37,7 @@ items:
   durationInMinutes: 15
   content: >
     [!INCLUDE [](data-connect-quickstart-05.md)]
-- title: Monitorar solicitações de consentimento de dados com Microsoft 365 Admin Center e PowerShell
+- title: Monitorar solicitações de consentimento de dados com o Administração Microsoft 365 Center e o PowerShell
   durationInMinutes: 5
   content: >
     [!INCLUDE [](data-connect-quickstart-06.md)]

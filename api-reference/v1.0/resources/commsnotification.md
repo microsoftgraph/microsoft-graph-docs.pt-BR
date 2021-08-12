@@ -1,30 +1,30 @@
 ---
-title: tipo de recurso commsNotification
-description: Tipo de base de notificação de comunicação publicado por servidores de comunicação para notificar as alterações.
+title: Tipo de recurso commsNotification
+description: Tipo de base de notificação de comunicações publicado pelos servidores de Comunicações para notificar as alterações.
 author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 2276547b99e297f1e015e12f9ed2254d3cb4632d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ff7d46a6d081889897940a93d5d111ffa2956a21fc61411060cad08ed2f7d5ab
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48018974"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54252015"
 ---
-# <a name="commsnotification-resource-type"></a>tipo de recurso commsNotification
+# <a name="commsnotification-resource-type"></a>Tipo de recurso commsNotification
 
 Namespace: microsoft.graph
 
-Tipo de base de notificação de comunicação publicado por servidores de comunicação para notificar as alterações.
+Tipo de base de notificação de comunicações publicado pelos servidores de Comunicações para notificar as alterações.
 
 ## <a name="properties"></a>Propriedades
 | Propriedade       | Tipo    | Descrição                                                |
 |:---------------|:--------|:-----------------------------------------------------------|
 | changeType     | String  | Os valores possíveis são: `created`, `updated`, `deleted`.      |
-| Resourceurl pela       | String  | URI do recurso que foi alterado.                      |
+| resourceUrl       | Cadeia de caracteres  | URI do recurso que foi alterado.                      |
 
-> **Observação:** `resourceData` está disponível como dados adicionais. É uma entidade ou uma coleção de entidades, dependendo do número de alterações empacotadas na notificação.
+> **Observação:** `resourceData` está disponível como dados adicionais. É uma entidade ou uma coleção de entidades, dependendo do número de alterações empacotada na notificação.
 
 ## <a name="json-representation"></a>Representação JSON
 

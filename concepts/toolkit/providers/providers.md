@@ -3,12 +3,12 @@ title: Microsoft Graph Toolkit provedores
 description: Os provedores Graph Toolkit Microsoft habilitam a autenticação e o microsoft Graph acesso para todos os componentes.
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: 05cbd59758b27266db7444333c72a2ba3a766ebb
-ms.sourcegitcommit: db3d2c6db8dd8f8cc14bdcebb2904d5e056a73e7
+ms.openlocfilehash: 3e64e7c5a9923be0184461ba56c6b6d995a9aad10eda2cdf94fda2b1850b0f8b
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52579694"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54204903"
 ---
 # <a name="microsoft-graph-toolkit-providers"></a>Microsoft Graph Toolkit provedores
 
@@ -121,7 +121,7 @@ Providers.onProviderUpdated(providerStateChanged);
 Providers.removeProviderUpdatedListener(providerStateChanged);
 ```
 
-## <a name="getting-an-access-token"></a>Obter um token de acesso
+## <a name="getting-an-access-token"></a>Como obter um token de acesso
 
 Cada provedor expõe uma função chamada que pode recuperar o token de acesso atual ou recuperar um novo token de `getAccessToken` acesso para os escopos fornecidos. O exemplo a seguir mostra como obter um novo token de acesso com o `User.Read` escopo de permissão.
 

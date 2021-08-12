@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 4bdd0b00249828c7ae45aff68b04a2acf900c8d4
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 489e7026eece1acea27330cdbf86ebd091177c0a1c82826f97175c1e1ae3022f
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52748928"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54212540"
 ---
 # <a name="update-devicemanagement"></a>Atualizar deviceManagement
 
@@ -51,7 +51,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [deviceM
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Identificador exclusivo|
+|id|Cadeia de caracteres|Identificador exclusivo|
 |settings|[deviceManagementSettings](../resources/intune-deviceconfig-devicemanagementsettings.md)|Configurações de nível da conta.|
 |intuneAccountId|Guid|ID da conta do Intune para determinado locatário|
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: reports
 author: sarahwxy
 doc_type: apiPageType
-ms.openlocfilehash: 1fdf65368158ff91dd8cc1db0ffc7d82c452e3ca
-ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
+ms.openlocfilehash: 6693d5b0468235ed0a57ff667929384542ff7c190e8a7b8ac1e183a160e6cf6c
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49982114"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54223778"
 ---
 # <a name="reportroot-getemailappusageusercounts"></a>reportRoot: getEmailAppUsageUserCounts
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 Obtenha a contagem de usuários únicos conectados ao Exchange Online usando qualquer aplicativo de email.
 
-> **Observação:** Para obter detalhes sobre diferentes visualizações e nomes de relatórios, consulte relatórios do [Microsoft 365 - Uso de aplicativos de email.](https://support.office.com/client/Email-apps-usage-c2ce12a2-934f-4dd4-ba65-49b02be4703d)
+> **Observação:** Para obter detalhes sobre diferentes exibições de relatório e nomes, [consulte Microsoft 365 relatórios - Uso de aplicativos de email](https://support.office.com/client/Email-apps-usage-c2ce12a2-934f-4dd4-ba65-49b02be4703d).
 
 ## <a name="permissions"></a>Permissões
 

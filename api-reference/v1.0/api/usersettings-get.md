@@ -5,19 +5,18 @@ author: jpettere
 localization_priority: Priority
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 0663f9581eb34be5c26c8666887c7c3bee7cffc1
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: dc651ab49af9de5cb56b03932e715a22bd61c320badf15c856c2d810b10578d7
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52031421"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54205980"
 ---
 # <a name="get-settings"></a>Obter configurações
 
 Namespace: microsoft.graph
 
-Leia o objeto [userSettings](../resources/usersettings.md) do usuário e da organização.
-Para saber como atualizar as propriedades do objeto [userSettings](../resources/usersettings.md), confira [atualizar as configurações de usuário](usersettings-update.md).
+Leia o objeto [userSettings](../resources/usersettings.md) do usuário e da organização. Para saber como atualizar as propriedades do objeto [userSettings](../resources/usersettings.md), consulte [atualizar as configurações do usuário](usersettings-update.md).
 
 ## <a name="permissions"></a>Permissões
 
@@ -35,7 +34,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 GET /me/settings/
 ```
 
-Solicitação com uma "id de usuário" ou "userPrincipalName" ficará acessível somente para o usuário ou um usuário com permissões User.ReadWrite.All. Para saber mais, confira [permissões](/graph/permissions-reference).
+A solicitação com uma 'ID de usuário' ou 'userPrincipalName' só pode ser acessada pelo usuário ou por um usuário com as permissões User.ReadWrite.All. Para saber mais, consulte [Permissões](/graph/permissions-reference).
 
 ```http
 GET /users/{id | userPrincipalName}/settings/
@@ -59,7 +58,7 @@ GET https://graph.microsoft.com/v1.0/me/settings
 
 ##### <a name="response"></a>Resposta
 
-Veja a seguir um exemplo da resposta. Observação: o objeto de resposta exibido aqui pode ser encurtado para legibilidade.
+Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser reduzido para facilitar a leitura.
 
 ```http
 HTTP/1.1 200 OK

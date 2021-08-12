@@ -1,29 +1,29 @@
 ---
-title: tipo de recurso workforceIntegrationEncryption
-description: Uma entidade de criptografia que define o protocolo e o segredo para uma integração de força de funcionários.
+title: Tipo de recurso workforceIntegrationEncryption
+description: Uma entidade de criptografia que define o protocolo e o segredo para uma integração de força de trabalho.
 localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 8888aafbe7b4f4cb116306a8e1fa086f513ba72a
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 8a05111fb561fe806b8b590eef321e3b7fcc9ebcd9054d2d8e5f7853e6d0c88b
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48015018"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54180450"
 ---
-# <a name="workforceintegrationencryption-resource-type"></a>tipo de recurso workforceIntegrationEncryption
+# <a name="workforceintegrationencryption-resource-type"></a>Tipo de recurso workforceIntegrationEncryption
 
 Namespace: microsoft.graph
 
-Uma entidade de criptografia que define o protocolo e o segredo de um [workforceintegration](../resources/workforceintegration.md).
+Uma entidade de criptografia que define o protocolo e o segredo de [uma workforceintegration](../resources/workforceintegration.md).
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|RDP|String| Os valores possíveis são: `sharedSecret` e `unknownFutureValue`.|
-|sigilo|String|Segredo compartilhado de criptografia.|
+|protocol|String| Os valores possíveis são: `sharedSecret` e `unknownFutureValue`.|
+|secret|Cadeia de caracteres|Segredo compartilhado de criptografia.|
 
 ## <a name="json-representation"></a>Representação JSON
 

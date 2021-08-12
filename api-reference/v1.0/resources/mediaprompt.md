@@ -1,22 +1,22 @@
 ---
-title: tipo de recurso mediaPrompt
-description: Esse tipo de recurso contém informações sobre o arquivo de áudio a ser reproduzido e outras configurações adicionais.
+title: Tipo de recurso mediaPrompt
+description: Esse tipo de recurso contém informações sobre o arquivo de áudio a ser tocado e outras configurações adicionais.
 author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 37329364ccfcb4b70de04ebfe8344ea407ce2bc7
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: b69111bda37ce59305aaf126225f974c25721ceb7ed0ac34af71c1f9bf743438
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47965516"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54141431"
 ---
-# <a name="mediaprompt-resource-type"></a>tipo de recurso mediaPrompt
+# <a name="mediaprompt-resource-type"></a>Tipo de recurso mediaPrompt
 
 Namespace: microsoft.graph
 
-Esse tipo de recurso contém informações sobre o arquivo de áudio a ser reproduzido e outras configurações adicionais.
+Esse tipo de recurso contém informações sobre o arquivo de áudio a ser tocado e outras configurações adicionais.
 
 ## <a name="properties"></a>Propriedades
 

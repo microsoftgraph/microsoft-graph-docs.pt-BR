@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ce928fd6f7de939a0edc708ddf5f6cab9dc60355
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 5f43843b7e91fd61670843da84ab9f81b1edf45f957599371efedac731a9be13
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52756386"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54172201"
 ---
 # <a name="create-user"></a>Criar usuário
 
@@ -51,7 +51,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar user.
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|O identificador do usuário.|
+|id|Cadeia de caracteres|O identificador do usuário.|
 
 
 

@@ -1,18 +1,18 @@
 ---
-title: tipo de recurso playPromptOperation
+title: Tipo de recurso playPromptOperation
 description: A operação playPrompt para obter o resultado da ação playPrompt.
 author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 43f36c1843a8f9e92081015dd349ee48a1f768ef
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ab75f0346bf0739a08e2608d1348ccf52030982fb0a75e0d0670f20debc362fe
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48037343"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54251847"
 ---
-# <a name="playpromptoperation-resource-type"></a>tipo de recurso playPromptOperation
+# <a name="playpromptoperation-resource-type"></a>Tipo de recurso playPromptOperation
 
 Namespace: microsoft.graph
 
@@ -22,9 +22,9 @@ A operação playPrompt para obter o resultado da ação playPrompt.
 
 | Propriedade            | Tipo                        | Descrição|
 |:--------------------|:----------------------------|:-----------------------------------------------------------------------------------|
-| clientContext       | String                      | Cadeia de caracteres de contexto de cliente exclusivo. O limite máximo é de 256 caracteres.                              |
+| clientContext       | String                      | Cadeia de caracteres de contexto de cliente exclusiva. O limite máximo é 256 caracteres.                              |
 | id                  | String                      | Somente leitura.                                                                         |
-| resultInfo          | [resultInfo](resultinfo.md) | As informações de resultado. Somente leitura.                                |
+| resultInfo          | [resultInfo](resultinfo.md) | As informações de resultado. Apenas leitura.                                |
 | status              | String                      | Os valores possíveis são: `notStarted`, `running`, `completed`, `failed`.               |
 
 ## <a name="relationships"></a>Relações

@@ -5,17 +5,17 @@ localization_priority: Normal
 author: AlexanderMars
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 7fb68fb65974e177e3fa55408ee1b90e59d419e9
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: b815f5f1c75842939526a008e960444d475e5e54f9ce94abe16706c5c387851e
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52682314"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54135047"
 ---
 # <a name="organizationalbrandingproperties-resource-type"></a>Tipo de recurso organizationalBrandingProperties
 
 >[!NOTE]
->A adição de identidade visual personalizada exige que você use Azure Active Directory Premium 1, Premium 2 ou edições Básicas ou para ter uma licença Microsoft 365. Para obter mais informações sobre licenciamento e edições, consulte [Inscrever-se no Azure AD Premium](/azure/active-directory/fundamentals/active-directory-get-started-premium).<br><br>As edições do Azure AD Premium Basic estão disponíveis para clientes na China usando a instância mundial de Azure Active Directory. As edições do Azure AD Premium Basic não têm suporte no serviço do Azure operado pela 21Vianet na China. Para obter mais informações, fale conosco usando o [fórum Azure Active Directory fórum](https://feedback.azure.com/forums/169401-azure-active-directory/).
+>A adição de identidade visual personalizada exige que você use Azure Active Directory Premium 1, Premium 2 ou edições Básicas ou ter uma licença Microsoft 365. Para obter mais informações sobre licenciamento e edições, consulte [Inscrever-se Azure AD Premium](/azure/active-directory/fundamentals/active-directory-get-started-premium).<br><br>Azure AD Premium e edições Básicas estão disponíveis para clientes na China usando a instância mundial de Azure Active Directory. Azure AD Premium e edições Básicas não têm suporte no serviço do Azure operado pela 21Vianet na China. Para obter mais informações, fale conosco usando o [fórum Azure Active Directory fórum](https://feedback.azure.com/forums/169401-azure-active-directory/).
 
 Contém detalhes sobre a identidade visual da organização.
 
@@ -30,9 +30,9 @@ As empresas podem adicionar identidade visual diferente com base na localidade. 
 | Método       | Tipo de retorno | Descrição |
 |:-------------|:------------|:------------|
 | [Criar](../api/organizationalbrandingproperties-create.md) | [organizationalBrandingProperties](organizationalbrandingproperties.md) | Criar identidade visual organizacional com o objeto organizationalBrandingProperties. |
-| [Get](../api/organizationalbrandingproperties-get.md) | [organizationalBrandingProperties](organizationalbrandingproperties.md) | Leia propriedades e relações do objeto organizationalBrandingProperties. |
+| [Obter](../api/organizationalbrandingproperties-get.md) | [organizationalBrandingProperties](organizationalbrandingproperties.md) | Leia propriedades e relações do objeto organizationalBrandingProperties. |
 | [Atualizar](../api/organizationalbrandingproperties-update.md) | [organizationalBrandingProperties](organizationalbrandingproperties.md) | Atualizar o objeto organizationalBrandingProperties. |
-| [Delete](../api/organizationalbrandingproperties-delete.md) | Nenhum | Exclua o objeto organizationalBrandingProperties. |
+| [Delete](../api/organizationalbrandingproperties-delete.md) | None | Exclua o objeto organizationalBrandingProperties. |
 
 ## <a name="properties"></a>Propriedades
 
@@ -44,7 +44,7 @@ As empresas podem adicionar identidade visual diferente com base na localidade. 
 |id|Cadeia de caracteres| Esta é uma id, herdada de microsoft.graph.entity, é a localidade que especifica o padrão ISO 639 para idioma, por exemplo, inglês é "en-us" ou "en". Daqui para frente, se expormos a funcionalidade para ter várias marcas para uma localidade, isso poderá ser alterado. Observe que id para Padrão /identidade visual é sempre 'und' até termos singletons sem teclas. Somente leitura. |
 |signInPageText|Cadeia de caracteres| Texto que aparece na parte inferior da caixa de login. Você pode usar isso para comunicar informações adicionais, como o número de telefone para o seu help desk ou uma declaração legal. Este texto deve ser Unicode e não exceder 1024 caracteres. |
 |squareLogo|Stream| Versão quadrada do logotipo da sua empresa. Isso aparece em Windows 10 experiências OOBE (out-of-box) e quando Windows Autopilot está habilitado para implantação. .png ou .jpg maior que 240x240px e não mais de 10kb de tamanho. Recomendamos usar uma imagem transparente sem preenchimento ao redor do logotipo. |
-|usernameHintText|Cadeia de caracteres| Cadeia de caracteres que mostra como a dica na caixa de texto do nome de usuário na tela de entrada. Este texto deve ser Unicode, sem links ou código, e não pode exceder 64 caracteres. |
+|usernameHintText|String| Cadeia de caracteres que mostra como a dica na caixa de texto do nome de usuário na tela de entrada. Este texto deve ser Unicode, sem links ou código, e não pode exceder 64 caracteres. |
 
 ## <a name="relationships"></a>Relações
 

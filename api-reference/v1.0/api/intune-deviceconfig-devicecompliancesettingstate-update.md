@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d42d431604e473dff229b8265f008b82f94aaedf
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 3c0243ca860b97ccfbfd327b88685d2a1b1430ade1e6581eecec5f6fc8f1566d
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52758369"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54240957"
 ---
 # <a name="update-devicecompliancesettingstate"></a>Atualizar deviceComplianceSettingState
 
@@ -59,7 +59,7 @@ A tabela a seguir mostra as propriedades obrigatórias ao criar [deviceComplianc
 |userId|Cadeia de caracteres|A ID do usuário sendo relatada|
 |userEmail|Cadeia de caracteres|O endereço de email do usuário que está sendo relatado|
 |userName|Cadeia de caracteres|O nome de usuário que está sendo relatado|
-|userPrincipalName|String|O PrincipalName do usuário que está sendo relatado|
+|userPrincipalName|Cadeia de caracteres|O PrincipalName do usuário que está sendo relatado|
 |deviceModel|Cadeia de caracteres|O modelo do dispositivo que está sendo relatado|
 |state|[complianceStatus](../resources/intune-shared-compliancestatus.md)|O estado de conformidade da configuração. Os valores possíveis são: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.|
 |complianceGracePeriodExpirationDateTime|DateTimeOffset|DateTime em que o período de cortesia de conformidade do dispositivo termina|

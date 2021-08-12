@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 6ba8e82f1ba8641a0b1966586744ffd4721b9b81
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 9f632fab8d5859a72eff551bba35184face6e3869255687ad9758decf3b131d6
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50135713"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54243305"
 ---
 # <a name="physicalofficeaddress-resource-type"></a>Tipo de recurso physicalOfficeAddress
 
@@ -24,10 +24,10 @@ Representa o endereço comercial de um recurso, como um contato organizacional.
 |:---------------|:--------|:----------|
 |city|String|A cidade.|
 |countryOrRegion|String|O país ou a região. É um valor de cadeia de caracteres de formato livre, por exemplo, "Brasil".|
-|officeLocation  | String | Local do escritório, como prédio e número de escritório para um contato organizacional.  |
-|postalCode|String|O código de endereçamento postal, ou CEP.|
-|estado|String|O estado.|
-|street|String|O tipo de logradouro (rua, alameda, avenida, etc.).|
+|officeLocation  | String | Office local, como construção e número de escritório para um contato organizacional.  |
+|postalCode|Cadeia de caracteres|O código de endereçamento postal, ou CEP.|
+|state|Cadeia de caracteres|O estado.|
+|street|Cadeia de caracteres|O tipo de logradouro (rua, alameda, avenida, etc.).|
 
 ## <a name="json-representation"></a>Representação JSON
 

@@ -1,29 +1,29 @@
 ---
-title: tipo de recurso plannerUser
-description: O recurso **plannerUser** fornece acesso a recursos do Planner para um usuário. Ele não contém propriedades utilizáveis.
+title: Tipo de recurso plannerUser
+description: O **recurso plannerUser** fornece acesso aos recursos do Planner para um usuário. Ele não contém propriedades usáveis.
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: 1bdf811e68e6a856d50621d063fe66daecf57748
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: a430efc0ca86043a566fce58481edcb2e212f17961b00647aa32781dbcb3dc5b
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48037358"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54154893"
 ---
-# <a name="planneruser-resource-type"></a>tipo de recurso plannerUser
+# <a name="planneruser-resource-type"></a>Tipo de recurso plannerUser
 
 Namespace: microsoft.graph
 
-O recurso **plannerUser** fornece acesso a recursos do Planner para um [usuário](user.md). Ele não contém propriedades utilizáveis.
+O **recurso plannerUser** fornece acesso aos recursos do Planner para um [usuário](user.md). Ele não contém propriedades usáveis.
 
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
-|[Listar planos](../api/planneruser-list-plans.md) |coleção [plannerPlan](plannerplan.md)| Obtenha uma coleção de objetos **plannerPlan** .|
+|[Listar planos](../api/planneruser-list-plans.md) |coleção [plannerPlan](plannerplan.md)| Obter uma **coleção de objetos plannerPlan.**|
 |[Listar tarefas](../api/planneruser-list-tasks.md) |Coleção [plannerTask](plannertask.md)| Obter uma coleção de objetos **plannerTask**.|
 
 ## <a name="properties"></a>Propriedades
@@ -34,8 +34,8 @@ O recurso **plannerUser** fornece acesso a recursos do Planner para um [usuário
 ## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|Planeje|coleção [plannerPlan](plannerplan.md)| Somente leitura. Anulável. Retorna o [plannerTasks](plannertask.md) atribuído ao usuário.|
-|tarefas|Coleção [plannerTask](plannertask.md)| Somente leitura. Anulável. Retorna o [plannerPlans](plannerplan.md) compartilhado com o usuário.|
+|plans|coleção [plannerPlan](plannerplan.md)| Somente leitura. Anulável. Retorna os [plannerTasks](plannertask.md) atribuídos ao usuário.|
+|tarefas|Coleção [plannerTask](plannertask.md)| Somente leitura. Anulável. Retorna os [plannerPlans compartilhados](plannerplan.md) com o usuário.|
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.

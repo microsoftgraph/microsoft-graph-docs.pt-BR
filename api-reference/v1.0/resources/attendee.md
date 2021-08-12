@@ -5,12 +5,12 @@ localization_priority: Normal
 author: harini84
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: de52b49bfc009158da839e00bd8fb7475d588c4b
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: e0cdbda6cf48e472e1178e8b22ba6b81b889fa60a270e2917e86a63cb1fcdbdf
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47988532"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54163898"
 ---
 # <a name="attendee-resource-type"></a>Tipo de recurso attendee
 
@@ -24,9 +24,9 @@ Derivado de [attendeeBase](attendeebase.md).
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |emailAddress|[emailAddress](emailaddress.md)|Inclui o nome e endereço SMTP do participante.|
-|proposedNewTime|[timeSlot](timeslot.md)|Uma data/hora alternativa proposta pelo participante para que uma solicitação de reunião inicie e termine. Se o participante não propôs outra vez, essa propriedade não é incluída em uma resposta de um evento GET.|
+|proposedNewTime|[timeSlot](timeslot.md)|Uma data/hora alternativa proposta pelo participante para que uma solicitação de reunião seja inicial e final. Se o participante não tiver proposto outra hora, essa propriedade não será incluída em uma resposta de um evento GET.|
 |status|[ResponseStatus](responsestatus.md)|A resposta do participante (nenhum, aceito, recusado, etc.) para o evento e a data e a hora em que a resposta foi enviada.|
-|tipo|String|O tipo de participante: `required`, `optional` ou `resource`.|
+|tipo|Cadeia de caracteres|O tipo de participante: `required`, `optional` ou `resource`.|
 
 ## <a name="json-representation"></a>Representação JSON
 

@@ -1,27 +1,27 @@
 ---
 author: daspek
-title: Tipo de recurso itemActivity
+title: tipo de recurso itemActivity
 description: O objeto itemActivity fornece informações sobre uma atividade que ocorreu em um item.
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: ef213dd50e5a6be8a96880ccd1a64f15f183f54b
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: 7fd7e75a7083f864ac8fbb24eae6bee3b4a41fcbf2f020fb671304c4bbe0ddce
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50238684"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54192240"
 ---
-# <a name="itemactivity-resource-type"></a>Tipo de recurso itemActivity
+# <a name="itemactivity-resource-type"></a>tipo de recurso itemActivity
 
 Namespace: microsoft.graph
 
 O **recurso itemActivity** fornece informações sobre atividades que ocorreram em um item ou em um contêiner.
 Disponível atualmente só no SharePoint e no OneDrive for Business.
 
-As ações que ocorreram em um itemActivity são detalhadas na [propriedade itemActionSet.][]
+As ações que ocorreram dentro de um itemActivity são detalhadas na [propriedade itemActionSet.][]
 
->**Observação:** **itemActivity** só está disponível atualmente no SharePoint e no OneDrive for Business.
+>**Observação:** **itemActivity** está disponível apenas no SharePoint e OneDrive for Business.
 
 [itemActionSet]: itemactionset.md#properties
 
@@ -54,7 +54,7 @@ As ações que ocorreram em um itemActivity são detalhadas na [propriedade item
   "optionalProperties": [ ],
   "keyProperty": "id",
   "@type": "microsoft.graph.itemActivity",
-  "@type.aka": "oneDrive.activityEntity"
+  "@type.aka&quot;: &quot;oneDrive.activityEntity"
 }-->
 
 ```json

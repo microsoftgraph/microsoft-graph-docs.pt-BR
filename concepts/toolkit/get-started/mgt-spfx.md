@@ -1,16 +1,16 @@
 ---
-title: Estrutura do SharePoint biblioteca do Microsoft Graph Toolkit
+title: Biblioteca da Estrutura do SharePoint para o Kit de ferramentas do Microsoft Graph
 description: Use a Estrutura do SharePoint do Microsoft Graph Toolkit para usar o Microsoft Graph Toolkit em Estrutura do SharePoint soluções.
 localization_priority: Normal
 author: waldekmastykarz
-ms.openlocfilehash: 5868f9fd523055d50f985f2fc8c8840563d56b28
-ms.sourcegitcommit: 276a13a37c3772689dfc71f7cd47586c9581f27d
+ms.openlocfilehash: 6d2f354dd8913fe7cf5807bae05dde803ad74aae78243ae9bc64b5d2afd70e96
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52629487"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54249031"
 ---
-# <a name="sharepoint-framework-library-for-microsoft-graph-toolkit"></a>Estrutura do SharePoint biblioteca do Microsoft Graph Toolkit
+# <a name="sharepoint-framework-library-for-microsoft-graph-toolkit"></a>Biblioteca da Estrutura do SharePoint para o Kit de ferramentas do Microsoft Graph
 
 Use a Estrutura do SharePoint do Microsoft Graph Toolkit para usar o Microsoft Graph Toolkit em Estrutura do SharePoint soluções.
 
@@ -33,7 +33,7 @@ yarn add @microsoft/mgt-spfx
 Antes de implantar seu pacote Estrutura do SharePoint no locatário, você precisará implantar o pacote Estrutura do SharePoint `@microsoft/mgt-spfx` para seu locatário. Você pode baixar o pacote correspondente à versão do que você usou em seu projeto, na seção `@microsoft/mgt-spfx` [Versões](https://github.com/microsoftgraph/microsoft-graph-toolkit/releases) no GitHub.
 
 >[!IMPORTANT]
->Como apenas uma versão da biblioteca Estrutura do SharePoint do Microsoft Graph Toolkit pode ser instalada no locatário, antes de usar o Microsoft Graph Toolkit em sua solução, determine se sua organização ou cliente já tem uma versão da biblioteca Estrutura do SharePoint implantada e use a mesma versão.
+>Como apenas uma versão da biblioteca da Estrutura do SharePoint para o Kit de ferramentas do Microsoft Graph pode ser instalada no locatário, antes de usar o Kit de ferramentas do Microsoft Graph em sua solução, determine se sua organização ou cliente já possui uma versão da biblioteca da Estrutura do SharePoint implantada e use o mesma versão.
 
 ## <a name="usage"></a>Uso
 
@@ -99,12 +99,12 @@ export default class MgtReact extends React.Component<IMgtReactProps, {}> {
 
 >[!IMPORTANT]
 > Certifique-se de que todas as Graph Toolkit da Microsoft em sua solução sejam de:
-> * `@microsoft/mgt-spfx` ou 
+> * `@microsoft/mgt-spfx` ou
 > * `@microsoft/mgt-react/dist/es6/spfx`
 > 
 > Não importe de nenhum outro pacote do Microsoft Graph Toolkit ( ) para evitar empacotar sua própria cópia do kit de ferramentas e colidir `@microsoft/mgt-*` com a biblioteca compartilhada.
 
 ## <a name="see-also"></a>Confira também
 
-* [Criar uma web part SharePoint com o microsoft Graph Toolkit](./build-a-sharepoint-web-part.md)
+* [Criar uma web part do Microsoft Office SharePoint Online com o Kit de ferramentas do Microsoft Graph](./build-a-sharepoint-web-part.md)
 * [Saiba mais sobre provedores de autenticação](../providers/providers.md)

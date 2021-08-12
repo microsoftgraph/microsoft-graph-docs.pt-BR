@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: af738e6c5f558b7460c8cbd7c5e02abae3dbb922
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 5dc166fc1ddbb104ebc6299307ce649373cd9716dfff1277f76b447d98f4e36f
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52756082"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54126561"
 ---
 # <a name="appconfigurationsettingitem-resource-type"></a>Tipo de recurso appConfigurationSettingItem
 
@@ -28,7 +28,7 @@ Contém propriedades do item de configuração de Configuração do aplicativo.
 |appConfigKeyValue|Cadeia de caracteres|valor de chave de configuração de aplicativo.|
 
 ## <a name="relationships"></a>Relações
-Nenhuma
+Nenhum
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.

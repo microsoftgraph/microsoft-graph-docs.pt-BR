@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 5a73f6a0e8a79067b9f3446f2f44523cb9728f92
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 1d4cbc34590a5e2df66f5119ac275d614f5be9de2719849253180b3b62ceb2f0
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52742878"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54141606"
 ---
 # <a name="iosupdatesinstallstatus-enum-type"></a>Tipo de número iosUpdatesInstallStatus
 

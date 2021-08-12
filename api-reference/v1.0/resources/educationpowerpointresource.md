@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 860387ea966061077929781f667a9cac5d3d2107
-ms.sourcegitcommit: f77c1385306fd40557aceb24fdfe4832cbb60a27
+ms.openlocfilehash: 7b06c124de0c4b040fe3a56f52f1b67c9c89d7e736381bb3c8ea4eb92e7cc452
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/12/2021
-ms.locfileid: "52912181"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54163807"
 ---
 # <a name="educationpowerpointresource-resource-type"></a>tipo de recurso educationPowerPointResource
 
@@ -24,7 +24,7 @@ Esse é um recurso PowerPoint. O PowerPoint arquivo deve ser carregado no **dire
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|fileUrl|String|Local do arquivo no disco.|
+|fileUrl|Cadeia de caracteres|Local do arquivo no disco.|
 
 ## <a name="json-representation"></a>Representação JSON
 
