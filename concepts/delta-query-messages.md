@@ -4,12 +4,12 @@ description: A consulta delta permite consultar adições, exclusões ou atualiz
 author: davidmu1
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: bef08802c4a917f21ffc795dcda52660f08623b8
-ms.sourcegitcommit: adc36691fd77544eeb1ec061ccfa59abffbfea9a
+ms.openlocfilehash: abfbd041ccea1d6f20355cdd8c164d8cd0ac0773b73076baab56e2528675523e
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2020
-ms.locfileid: "48819660"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54235153"
 ---
 # <a name="get-incremental-changes-to-messages-in-a-folder"></a>Obter as alterações incrementais para as mensagens em uma pasta
 
@@ -21,7 +21,7 @@ A consulta delta oferece suporte à sincronização completa, que recupera todas
 
 A consulta delta é uma operação por pasta. Para controlar as alterações das mensagens em uma hierarquia de pastas, você precisa controlar cada pasta individualmente.
 
-O rastreamento de alterações de mensagem em uma paste de email corresponde a uma série de solicitações GET com a função **delta** . A solicitação GET inicial é muito semelhante à maneira como você [obtém mensagens](/graph/api/user-list-messages?view=graph-rest-1.0), exceto se você incluir a função **delta** :
+O rastreamento de alterações de mensagem em uma paste de email corresponde a uma série de solicitações GET com a função **delta**. A solicitação GET inicial é muito semelhante à maneira como você [obtém mensagens](/graph/api/user-list-messages?view=graph-rest-1.0), exceto se você incluir a função **delta**:
 
 ```http
 GET https://graph.microsoft.com/v1.0/me/mailFolders/{id}/messages/delta
@@ -29,8 +29,8 @@ GET https://graph.microsoft.com/v1.0/me/mailFolders/{id}/messages/delta
 
 Uma solicitação GET com a função **delta** retorna:
 
-- Uma `nextLink` (que contém uma URL com chamada de função **delta** e um _skipToken_ ) ou
-- Uma `deltaLink` (que contém uma URL com chamada de função **delta** e _deltaToken_ ).
+- Uma `nextLink` (que contém uma URL com chamada de função **delta** e um _skipToken_) ou
+- Uma `deltaLink` (que contém uma URL com chamada de função **delta** e _deltaToken_).
 
 Esses tokens são [tokens de estado](delta-query-overview.md#state-tokens) que são completamente opacos para o cliente. Para prosseguir com uma fase de controle de alterações, basta copiar e aplicar a URL retornada da última solicitação GET para a próxima chamada de função **delta** da mesma pasta. Um `deltaLink` retornado em uma resposta significa que a fase atual do rastreamento de alterações está concluída. Você pode salvar e usar a URL `deltaLink` quando começar a próxima fase.
 
@@ -99,7 +99,7 @@ Neste exemplo,a pasta especificada está sendo sincronizada pela primeira vez, p
 A primeira solicitação especifica o seguinte:
 
 - Um parâmetro `$select` para retornar as propriedades `subject`, `sender` e `isRead` de cada mensagem na resposta.
-- O [cabeçalho de solicitação opcional](#optional-request-header), _odata.maxpagesize_ , retornando 2 mensagens de cada vez.
+- O [cabeçalho de solicitação opcional](#optional-request-header), _odata.maxpagesize_, retornando 2 mensagens de cada vez.
 
 <!-- {
   "blockType": "ignored",

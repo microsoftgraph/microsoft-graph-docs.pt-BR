@@ -1,33 +1,33 @@
 ---
-title: tipo de recurso teamMessagingSettings
+title: Tipo de recurso teamMessagingSettings
 description: Configurações para definir a mensagens e menções na equipe.
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 5fe43e317bd0231bb8d2e87143e4230c8719ce9c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 9818e161e21f78a83023ead66d7b790eadd01bb2737942a383665338d0ec73c4
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48093991"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54129957"
 ---
-# <a name="teammessagingsettings-resource-type"></a>tipo de recurso teamMessagingSettings
+# <a name="teammessagingsettings-resource-type"></a>Tipo de recurso teamMessagingSettings
 
 Namespace: microsoft.graph
 
 
 
-Configurações para configurar mensagens e menção na [equipe](team.md).
+Configurações configurar mensagens e menções na [equipe](team.md).
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |allowUserEditMessages|Booliano|Se definido como true, os usuários podem editar suas mensagens.|
-|allowUserDeleteMessages|Booliano|Se definido como true, os usuários podem excluir suas mensagens.|
-|allowOwnerDeleteMessages|Booliano|Se definido como true, os proprietários podem excluir qualquer mensagem.|
-|allowTeamMentions|Booliano|Se for definido como true, @team mencionadas serão permitidas.|
-|allowChannelMentions|Booliano|Se for definido como true, @channel mencionadas serão permitidas.|
+|allowUserDeleteMessages|Booliano|Se for definido como true, os usuários poderão excluir suas mensagens.|
+|allowOwnerDeleteMessages|Booliano|Se definido como true, os proprietários poderão excluir qualquer mensagem.|
+|allowTeamMentions|Booliano|Se definido como true, @team as menções são permitidas.|
+|allowChannelMentions|Booliano|Se definido como true, @channel as menções são permitidas.|
 
 ## <a name="json-representation"></a>Representação JSON
 

@@ -5,12 +5,12 @@ author: nilakhan
 localization_priority: Normal
 ms.prod: cloud-printing
 doc_type: resourcePageType
-ms.openlocfilehash: 06566b30e2292d6552e5c0a79281693b97ab6350
-ms.sourcegitcommit: 6e7d9987a255f1bee04f196a4a7e37f56621bfb8
+ms.openlocfilehash: c3e71186ff65490e31b711ff4c05788afd565cee5c87ea225985c3ec464aaa5d
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "51944238"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54138462"
 ---
 # <a name="printerdefaults-resource-type"></a>Tipo de recurso printerDefaults
 
@@ -27,8 +27,8 @@ Representa as configurações padrão da impressora. Verifique os recursos da [i
 |contentType|String|O tipo de conteúdo padrão (MIME) a ser usado ao processar documentos.|
 |finishings|[Coleção printFinishing](enums.md#printfinishing-values)|O conjunto padrão de acabamentos a ser aplicado a trabalhos de impressão. Os valores válidos são descritos na tabela a seguir.|
 |mediaColor|Cadeia de caracteres|A cor padrão da mídia (como papel) para imprimir o documento.|
-|mediaType|Cadeia de caracteres|O tipo de mídia padrão (como papel) para imprimir o documento.|
-|mediaSize|Cadeia de caracteres|O tamanho de mídia padrão a ser usado. Oferece suporte a nomes de tamanho padrão para tamanhos de mídia ISO e ANSI. Os valores válidos são listados no tópico [printerCapabilities.](printercapabilities.md#mediasizes-values)|
+|mediaType|String|O tipo de mídia padrão (como papel) para imprimir o documento.|
+|mediaSize|String|O tamanho de mídia padrão a ser usado. Oferece suporte a nomes de tamanho padrão para tamanhos de mídia ISO e ANSI. Os valores válidos são listados no tópico [printerCapabilities.](printercapabilities.md#mediasizes-values)|
 |pagesPerSheet|Int32|O número padrão de páginas de documento a ser impressa em cada planilha.
 |orientation|[printOrientation](enums.md#printorientation-values)|A orientação padrão a ser usada ao imprimir o documento. Os valores válidos são descritos na tabela a seguir.|
 |outputBin|Cadeia de caracteres|A lixeira de saída padrão para colocar as impressões concluídas. Consulte os recursos da [impressora para](printercapabilities.md) uma lista de caixas de saída com suporte.|
@@ -38,7 +38,7 @@ Representa as configurações padrão da impressora. Verifique os recursos da [i
 |quality|[printQuality](enums.md#printquality-values)|A qualidade padrão a ser usada ao imprimir o documento. Os valores válidos são descritos na tabela a seguir.|
 |duplexMode|[printDuplexMode](enums.md#printduplexmode-values)|A configuração duplex padrão (com duas laterais) a ser usada ao imprimir um documento. Os valores válidos são descritos na tabela a seguir.|
 |dpi|Int32|A resolução padrão no DPI a ser usada ao imprimir o trabalho.|
-|scaling|[printScaling](enums.md#printscaling-values)|Especifica como a impressora dimensiona os dados do documento para se ajustar à mídia solicitada. Os valores válidos são descritos na tabela a seguir.|
+|escala|[printScaling](enums.md#printscaling-values)|Especifica como a impressora dimensiona os dados do documento para se ajustar à mídia solicitada. Os valores válidos são descritos na tabela a seguir.|
 
 ## <a name="relationships"></a>Relações
 Nenhum

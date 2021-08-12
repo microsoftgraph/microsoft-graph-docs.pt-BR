@@ -5,12 +5,12 @@ author: AkJo
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 2fd6e9e09a092719f20de2c34f2120537cd00606
-ms.sourcegitcommit: b5fbb1a715e3479bdd095ef00deb0c932eafc328
+ms.openlocfilehash: 13a8f055d61037e3d346add591adfd90c6d7a5a98942e6dbd96a021ed1c2bdef
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/28/2021
-ms.locfileid: "53162193"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54177993"
 ---
 # <a name="resourcespecificpermissiongrant-resource-type"></a>tipo de recurso resourceSpecificPermissionGrant
 
@@ -24,19 +24,19 @@ Para obter mais informações sobre a concessão de consentimento de aplicativos
 
 |  Método                                                                   |  Tipo de retorno                                                                     | Descrição                                                  | 
 | :------------------------------------------------------------------------ | :------------------------------------------------------------------------------- | :----------------------------------------------------------- |
-|[Listar as concessões de permissões de um grupo](../api/group-list-permissiongrants.md) | Coleção [resourceSpecificPermissionGrant](resourcespecificpermissiongrant.md) | Listar permissões específicas de recursos que foram concedidas em um grupo [específico.](group.md) |
+|[Listar concessões de permissão de um grupo](../api/group-list-permissiongrants.md) | Coleção [resourceSpecificPermissionGrant](resourcespecificpermissiongrant.md) | Listar permissões específicas de recursos que foram concedidas em um grupo [específico.](group.md) |
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade        | Tipo          | Descrição                                                                           |
 | :-------------- | :------------ | :------------------------------------------------------------------------------------ |
-| id              | cadeia de caracteres        | O identificador exclusivo da concessão de permissão específica do recurso. Somente leitura.           |
+| id              | string        | O identificador exclusivo da concessão de permissão específica do recurso. Somente leitura.           |
 | deletedDateTime | dateTimeOffset| Não usado.                                                                             |
-| clientId        | cadeia de caracteres        | ID do aplicativo do Azure AD que recebeu acesso. Só leitura.                            |
-| clientAppId     | cadeia de caracteres        | ID da entidade de serviço do aplicativo do Azure AD que recebeu acesso. Só leitura.   |
-| resourceAppId   | cadeia de caracteres        | ID do aplicativo do Azure AD que está hospedando o recurso. Só leitura.                        |
-| permissionType  | cadeia de caracteres        | O tipo de permissão. Os valores possíveis são: `Application` e `Delegated`. Somente leitura. |
-| permission      | cadeia de caracteres        | O nome da permissão específica do recurso. Somente leitura.                                                |
+| clientId        | string        | ID do aplicativo do Azure AD que recebeu acesso. Apenas leitura.                            |
+| clientAppId     | string        | ID da entidade de serviço do aplicativo do Azure AD que recebeu acesso. Apenas leitura.   |
+| resourceAppId   | string        | ID do aplicativo do Azure AD que está hospedando o recurso. Apenas leitura.                        |
+| permissionType  | string        | O tipo de permissão. Os valores possíveis são: `Application` e `Delegated`. Somente leitura. |
+| permission      | string        | O nome da permissão específica do recurso. Somente leitura.                                                |
 
 ## <a name="json-representation"></a>Representação JSON
 

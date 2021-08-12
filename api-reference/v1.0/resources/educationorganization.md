@@ -5,12 +5,12 @@ author: mlafleur
 localization_priority: Normal
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: b24313b6b6061449faea0ecb4880a421a2333099
-ms.sourcegitcommit: 34891a1c601976166958be1aa04bab5936592b44
+ms.openlocfilehash: fa6d324602ba13ebe186bc0631de991e193d945757117217aa29296ee480ef74
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52231861"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54130349"
 ---
 # <a name="educationorganization-resource-type"></a>tipo de recurso educationOrganization
 
@@ -24,11 +24,11 @@ Herda da [entidade](../resources/entity.md).
 
 | Propriedade             | Tipo                    | Descrição                                                                            |
 | :------------------- | :---------------------- | :------------------------------------------------------------------------------------- |
-| description          | String                  | Descrição da organização.                                                              |
-| displayName          | String                  | Nome de exibição da organização.                                                             |
+| description          | Cadeia de caracteres                  | Descrição da organização.                                                              |
+| displayName          | Cadeia de caracteres                  | Nome de exibição da organização.                                                             |
 | externalSource       | educationExternalSource | Fonte de onde essa organização foi criada. Os valores possíveis são: `sis` e `manual`. |
 | externalSourceDetail | String                  | O nome da fonte externa de onde esses recursos foram gerados.                     |
-| id                   | String                  | Identificador de objeto. Herdado da [entidade](../resources/entity.md)                     |
+| id                   | Cadeia de caracteres                  | Identificador de objeto. Herdado da [entidade](../resources/entity.md)                     |
 
 ## <a name="relationships"></a>Relações
 

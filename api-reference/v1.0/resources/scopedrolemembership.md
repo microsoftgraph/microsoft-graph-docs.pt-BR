@@ -1,31 +1,31 @@
 ---
 title: Tipo de recurso scopedRoleMembership
-description: Uma associação de função com escopo descreve a associação de um usuário a uma função de diretório, que tem como escopo uma Unidade Administrativa (AU).  Isso fornece um mecanismo para permitir que um administrador de empresa em todo o locatário delegar privilégios administrativos a um usuário para gerenciar usuários e grupos em um subconjunto da organização (o subconjunto sendo definido por uma AU).
+description: Uma associação de função com escopo descreve a associação de um usuário a uma função de diretório, que é ainda mais escopo para uma Unidade Administrativa (AU).  Isso fornece um mecanismo para permitir que um administrador de uma empresa de todo o locatário delegar privilégios administrativos a um usuário gerencie usuários e grupos em um subconjunto da organização (o subconjunto que está sendo definido por uma AU).
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: directory-management
 author: abhijeetsinha
-ms.openlocfilehash: 8b7a2239d0ee44ab6caf0e98c7d818431764b1b1
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 1a05a741ecc14050d76ca2f414accf13cc3a41f0d80447e521cc74745a1bc3f1
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50129902"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54159810"
 ---
 # <a name="scopedrolemembership-resource-type"></a>Tipo de recurso scopedRoleMembership
 
 Namespace: microsoft.graph
 
-Uma associação de função com escopo descreve a associação de um usuário a uma função de diretório, que tem como escopo uma Unidade Administrativa (AU).  Isso fornece um mecanismo para permitir que um administrador de empresa de todo o locatário delegar privilégios administrativos a um usuário para gerenciar usuários e grupos em um subconjunto da organização (o subconjunto definido por uma AU).
+Uma associação de função com escopo descreve a associação de um usuário a uma função de diretório, que é ainda mais escopo para uma Unidade Administrativa (AU).  Isso fornece um mecanismo para permitir que um administrador de uma empresa de todo o locatário delegar privilégios administrativos a um usuário gerencie usuários e grupos em um subconjunto da organização (o subconjunto que está sendo definido por uma AU).
 
-## <a name="methods"></a>Methods
-Não há suporte para consultas diretas a esse recurso.  Consulte o tópico [de](administrativeunit.md) unidades administrativas para ver informações sobre como consultar associações de função com escopo, bem como adicionar e remover associações de função com escopo.
+## <a name="methods"></a>Métodos
+Não há suporte para consultas diretas a esse recurso.  Consulte o tópico [unidades administrativas](administrativeunit.md) para ver informações sobre como consultar associações de função com escopo, bem como adicionar e remover associações de funções com escopo.
 
 ## <a name="properties"></a>Propriedades
 | Propriedade   | Tipo | Descrição |
 |:---------------|:--------|:----------|
-|administrativeUnitId|string|Identificador exclusivo da unidade administrativa para a qual a função de diretório tem escopo|
-|id|string| Identificador exclusivo da associação de função com escopo. Somente leitura.|
+|administrativeUnitId|string|Identificador exclusivo da unidade administrativa à qual a função de diretório é escopo|
+|id|string| Identificador exclusivo para a associação de função com escopo. Somente leitura.|
 |roleId|string| Identificador exclusivo da função de diretório na qual o membro está.|
 |roleMemberInfo|[identity](identity.md)| Informações de identidade do membro da função. Representa o usuário que é membro dessa função com escopo.|
 

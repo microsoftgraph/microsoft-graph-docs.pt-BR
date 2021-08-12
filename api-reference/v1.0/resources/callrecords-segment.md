@@ -5,12 +5,12 @@ localization_priority: Normal
 author: williamlooney
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 886ea3661c83d6a84f9e171a11eee927920a8077
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: e01e227636f3328e4b481e59d5b4beab72c844b11cd3b4ba949fe745eb35d892
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50722241"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54184932"
 ---
 # <a name="segment-resource-type"></a>tipo de recurso segment
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph.callRecords
 
 Representa uma parte de uma comunicação User-User ou uma User-Meeting no caso de uma chamada de conferência. Uma chamada VOIP típica terá um segmento por sessão. Em determinados cenários, como chamadas PSTN, haverá vários segmentos por sessão devido à comunicação de servidor para servidor adicional necessária para conectar a chamada.
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 
 Não existem métodos para acessar diretamente segmentos. Use a api [Get callRecord](../api/callrecords-callrecord-get.md) com ou a api de sessão list com para obter os `$expand=sessions($expand=segments)` [](../api/callrecords-session-list.md) `$expand=segments` segmentos de um [callRecord](callrecords-callrecord.md).
 
@@ -30,7 +30,7 @@ Não existem métodos para acessar diretamente segmentos. Use a api [Get callRec
 |chamador|[microsoft.graph.callRecords.endpoint](callrecords-endpoint.md)|Ponto de extremidade que iniciou esse segmento.|
 |callee|[microsoft.graph.callRecords.endpoint](callrecords-endpoint.md)|Ponto de extremidade que respondeu a esse segmento.|
 |failureInfo|[microsoft.graph.callRecords.failureInfo](callrecords-failureinfo.md)|Informações de falha associadas ao segmento se falharem.|
-|mídia|[coleção microsoft.graph.callRecords.media](callrecords-media.md)|Mídia associada a esse segmento.|
+|media|[coleção microsoft.graph.callRecords.media](callrecords-media.md)|Mídia associada a esse segmento.|
 |startDateTime|DateTimeOffset|Hora UTC quando o segmento foi iniciado. O tipo DateTimeOffset representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`|
 |endDateTime|DateTimeOffset|Hora UTC quando o segmento terminou. O tipo DateTimeOffset representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`|
 

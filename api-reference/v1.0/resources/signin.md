@@ -5,18 +5,18 @@ author: besiler
 localization_priority: Normal
 ms.prod: identity-and-access-reports
 doc_type: resourcePageType
-ms.openlocfilehash: 3995ec6029397cc231ce383cde8ea6d1753ecf81
-ms.sourcegitcommit: 2a35434fabc76672e21bfc3ed5a1d28f9f3b66bc
+ms.openlocfilehash: 90a6b1441a5f5cd4c0f83130f30d26983ac6aa05c2b1bc0551ec757d5de5b25c
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52241048"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54124203"
 ---
 # <a name="signin-resource-type"></a>tipo de recurso de domínio
 
 Namespace: microsoft.graph
 
-Detalha a atividade de login do usuário e do aplicativo para um locatário (diretório). Você deve ter uma licença do Azure AD Premium P1 ou P2 para baixar logs de login usando a API do Microsoft Graph.
+Detalha a atividade de login do usuário e do aplicativo para um locatário (diretório). Você deve ter uma Azure AD Premium P1 ou P2 para baixar logs de login usando a API Graph Microsoft.
 
 ## <a name="methods"></a>Métodos
 
@@ -28,11 +28,11 @@ Detalha a atividade de login do usuário e do aplicativo para um locatário (dir
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|appDisplayName|Cadeia de caracteres|Nome do aplicativo exibido no Portal do Azure. Oferece `$filter` suporte ( e somente `eq` `startsWith` operadores).|
-|appId|Cadeia de caracteres|GUID exclusivo que representa a ID do aplicativo no Azure Active Directory. Suporta `$filter` ( `eq` somente operador).|
+|appDisplayName|String|Nome do aplicativo exibido no Portal do Azure. Oferece `$filter` suporte ( e somente `eq` `startsWith` operadores).|
+|appId|String|GUID exclusivo que representa a ID do aplicativo no Azure Active Directory. Suporta `$filter` ( `eq` somente operador).|
 |appliedConditionalAccessPolicy|[coleção appliedConditionalAccessPolicy](appliedconditionalaccesspolicy.md)|Fornece uma lista de políticas de acesso condicional acionada por atividade correspondente entrar.|
 |clientAppUsed|Cadeia de caracteres|Identifica o cliente herddo usado para a atividade de entrada.  Inclui `Browser` , `Exchange Active Sync` , , , , e `modern clients` `IMAP` `MAPI` `SMTP` `POP` . Suporta `$filter` ( `eq` somente operador).|
-|conditionalAccessStatus|conditionalAccessStatus| Relata o status de uma política de acesso condicional ativada. Os valores possíveis são: `success` `failure` , , e `notApplied` `unknownFutureValue` . Suporta `$filter` ( `eq` somente operador).|
+|conditionalAccessStatus|conditionalAccessStatus| Relata o status de uma política de acesso condicional ativada. Os valores possíveis são: `success`, `failure`, `notApplied`, e `unknownFutureValue`. Suporta `$filter` ( `eq` somente operador).|
 |correlationId|Cadeia de caracteres|A ID de solicitação enviada do cliente quando a entrada é iniciada; usado para solucionar problemas de atividade de login. Suporta `$filter` ( `eq` somente operador).|
 |createdDateTime|DateTimeOffset|Data e hora (UTC) a assinatura foi iniciada. Exemplo: meia-noite de 1º de janeiro de 2014 é relatada como `2014-01-01T00:00:00Z` . Oferece `$orderby` suporte e ( , e somente `$filter` `eq` `le` `ge` operadores).|
 |deviceDetail|[deviceDetail](devicedetail.md)|Informações do dispositivo de onde ocorreu a entrada; inclui iD do dispositivo, sistema operacional e navegador. Oferece `$filter` suporte ( e somente `eq` `startsWith` operadores) nas **propriedades browser** **e operatingSytem.** |
@@ -42,7 +42,7 @@ Detalha a atividade de login do usuário e do aplicativo para um locatário (dir
 |location|[signInLocation](signinlocation.md)|Fornece o código de cidade, estado e país de origem do login. Oferece `$filter` suporte ( e somente `eq` `startsWith` operadores) em **propriedades city**, **state** e **countryOrRegion.**|
 |resourceDisplayName|Cadeia de caracteres|Nome do recurso em que o usuário entrou. Suporta `$filter` ( `eq` somente operador).|
 |resourceId|Cadeia de caracteres|ID do recurso em que o usuário entrou. Suporta `$filter` ( `eq` somente operador).|
-|riskDetail|riskDetail|Fornece o motivo por trás de um estado específico de um usuário arriscado, uma entrada arriscada ou um evento de risco. Os valores possíveis são `none`, `adminGeneratedTemporaryPassword`, `userPerformedSecuredPasswordChange`, `userPerformedSecuredPasswordReset`, `adminConfirmedSigninSafe`, `aiConfirmedSigninSafe`, `userPassedMFADrivenByRiskBasedPolicy`, `adminDismissedAllRiskForUser`, `adminConfirmedSigninCompromised`, `unknownFutureValue`. O valor `none` significa que nenhuma ação foi realizada pelo usuário ou entrar até o momento.  Suporta `$filter` ( `eq` somente operador).<br>**Observação:** Os detalhes dessa propriedade exigem uma licença do Azure AD Premium P2. Outras licenças retornam o valor `hidden` .|
+|riskDetail|riskDetail|Fornece o motivo por trás de um estado específico de um usuário arriscado, uma entrada arriscada ou um evento de risco. Os valores possíveis são `none`, `adminGeneratedTemporaryPassword`, `userPerformedSecuredPasswordChange`, `userPerformedSecuredPasswordReset`, `adminConfirmedSigninSafe`, `aiConfirmedSigninSafe`, `userPassedMFADrivenByRiskBasedPolicy`, `adminDismissedAllRiskForUser`, `adminConfirmedSigninCompromised`, `unknownFutureValue`. O valor `none` significa que nenhuma ação foi realizada pelo usuário ou entrar até o momento.  Suporta `$filter` ( `eq` somente operador).<br>**Observação:** Os detalhes dessa propriedade exigem uma Azure AD Premium P2 de uso. Outras licenças retornam o valor `hidden` .|
 |riskEventTypes|Coleção riskEventType|Tipos de evento de risco associados à assinatura. Os valores possíveis são: `unlikelyTravel`, `anonymizedIPAddress`, `maliciousIPAddress`, `unfamiliarFeatures`, `malwareInfectedIPAddress`, `suspiciousIPAddress`, `leakedCredentials`, `investigationsThreatIntelligence`,  `generic` e `unknownFutureValue`. Suporta `$filter` ( `eq` somente operador).|
 |riskEventTypes_v2|Coleção de cadeias de caracteres|A lista de tipos de eventos de risco associados à assinatura. Valores possíveis: `unlikelyTravel` , , , , , , , , , `anonymizedIPAddress` ou `maliciousIPAddress` `unfamiliarFeatures` `malwareInfectedIPAddress` `suspiciousIPAddress` `leakedCredentials` `investigationsThreatIntelligence`  `generic` `unknownFutureValue` . Oferece `$filter` suporte ( e somente `eq` `startsWith` operadores).|
 |riskLevelAggregated|riskLevel|Nível de risco agregado. Os valores possíveis são: `none`, `low`, `medium`, `high`, `hidden`, e `unknownFutureValue`. O valor `hidden` significa que o usuário ou entrada não foi habilitado para proteção de identidade do Azure AD. Suporta `$filter` ( `eq` somente operador). <br> **Observação:** detalhes para esta propriedade estão disponíveis apenas para clientes do Azure AD Premium P2. Outros clientes serão retornados `hidden`.|
@@ -51,7 +51,7 @@ Detalha a atividade de login do usuário e do aplicativo para um locatário (dir
 |status|[signInStatus](signinstatus.md)|Status de login. Inclui o código de erro e a descrição do erro (no caso de uma falha de login). Suporta `$filter` ( `eq` somente operador) na propriedade **errorCode.**|
 |userDisplayName|Cadeia de caracteres|Nome de exibição do usuário que iniciou a login. Oferece `$filter` suporte ( e somente `eq` `startsWith` operadores).|
 |userId|Cadeia de caracteres|ID do usuário que iniciou a login. Suporta `$filter` ( `eq` somente operador).|
-|userPrincipalName|Cadeia de caracteres|Nome principal do usuário que iniciou a login. Oferece `$filter` suporte ( e somente `eq` `startsWith` operadores).|
+|userPrincipalName|String|Nome principal do usuário que iniciou a login. Oferece `$filter` suporte ( e somente `eq` `startsWith` operadores).|
 
 ## <a name="relationships"></a>Relações
 

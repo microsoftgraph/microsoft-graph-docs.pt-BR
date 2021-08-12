@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: b59ed2be941a03b91cbec91e16d822ddf73ecbe4
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 9e3fb791b1f9e71dd2ac55ff2d528b57770982ceba917540af2c18c7c2a2bdc6
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52755634"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54192324"
 ---
 # <a name="compliancemanagementpartner-resource-type"></a>Tipo de recurso complianceManagementPartner
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 Parceiro de gerenciamento de conformidade para todas as plataformas
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
 |[Listar complianceManagementPartners](../api/intune-onboarding-compliancemanagementpartner-list.md)|[coleção complianceManagementPartner](../resources/intune-onboarding-compliancemanagementpartner.md)|Listar propriedades e relações dos [objetos complianceManagementPartner.](../resources/intune-onboarding-compliancemanagementpartner.md)|
@@ -32,7 +32,7 @@ Parceiro de gerenciamento de conformidade para todas as plataformas
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|ID da entidade|
+|id|String|ID da entidade|
 |lastHeartbeatDateTime|DateTimeOffset|Timestamp de última pulsação depois que o administrador entrou no parceiro de gerenciamento de conformidade|
 |partnerState|[deviceManagementPartnerTenantState](../resources/intune-onboarding-devicemanagementpartnertenantstate.md)|Estado do parceiro desse locatário. Os possíveis valores são: `unknown`, `unavailable`, `enabled`, `terminated`, `rejected`, `unresponsive`.|
 |displayName|Cadeia de caracteres|Nome de exibição de parceiro|
@@ -44,7 +44,7 @@ Parceiro de gerenciamento de conformidade para todas as plataformas
 |iosEnrollmentAssignments|[coleção complianceManagementPartnerAssignment](../resources/intune-onboarding-compliancemanagementpartnerassignment.md)|Grupos de usuários que registram dispositivos ios por meio de parceiros.|
 
 ## <a name="relationships"></a>Relações
-Nenhuma
+Nenhum
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.

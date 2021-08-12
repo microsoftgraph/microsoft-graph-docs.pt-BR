@@ -1,22 +1,22 @@
 ---
 title: Tipo de recurso sectionGroup
-description: Um grupo de seção em um bloco de anotações do OneNote. Os grupos de seções podem conter seções e grupos de seções.
+description: Um grupo de seção em um bloco OneNote bloco de anotações. Os grupos de seções podem conter seções e grupos de seções.
 localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
 doc_type: resourcePageType
-ms.openlocfilehash: 5968a327800c823cd5767a382d019fba39f66927
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: 575aeb64fbb1f2ffe3df787311704f5fb4f262e6c71808b1d11c901fc2184d0c
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50722003"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54134949"
 ---
 # <a name="sectiongroup-resource-type"></a>Tipo de recurso sectionGroup
 
 Namespace: microsoft.graph
 
-Um grupo de seção em um bloco de anotações do OneNote. Os grupos de seções podem conter seções e grupos de seções.
+Um grupo de seção em um bloco OneNote bloco de anotações. Os grupos de seções podem conter seções e grupos de seções.
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -57,15 +57,15 @@ Veja a seguir uma representação JSON do recurso.
 |lastModifiedBy|[identitySet](identityset.md)|Identidade do usuário, dispositivo e aplicativo que criou o item. Somente leitura.|
 |lastModifiedDateTime|DateTimeOffset|A data e a hora em que o grupo de seções foi modificado pela última vez. O carimbo de data/hora representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`. Somente leitura.|
 |displayName|Cadeia de caracteres|O nome do grupo de seção.|
-|sectionGroupsUrl|Cadeia de caracteres|A URL da `sectionGroups` propriedade de navegação, que retorna todos os grupos de seções no grupo de seções. Somente leitura.|
-|sectionsUrl|Cadeia de caracteres|A URL da `sections` propriedade de navegação, que retorna todas as seções no grupo de seções. Somente leitura.|
+|sectionGroupsUrl|Cadeia de caracteres|A URL da `sectionGroups` propriedade de navegação, que retorna todos os grupos de seções no grupo de seções. Apenas leitura.|
+|sectionsUrl|Cadeia de caracteres|A URL da `sections` propriedade de navegação, que retorna todas as seções no grupo de seções. Apenas leitura.|
 |self|Cadeia de caracteres|O ponto de extremidade onde você pode obter detalhes sobre o grupo de seções. Somente leitura.|
 
 ## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |parentNotebook|[Notebook](notebook.md)|O bloco de anotações que contém o grupo de seções. Somente leitura.|
-|parentSectionGroup|[SectionGroup](sectiongroup.md)|O grupo de seções que contém o grupo de seções. Somente leitura.|
+|parentSectionGroup|[SectionGroup](sectiongroup.md)|O grupo de seções que contém o grupo de seções. Apenas leitura.|
 |sectionGroups|Coleção [SectionGroup](sectiongroup.md)|Os grupos de seção na seção. Somente leitura. Anulável.|
 |seções|Coleção [OnenoteSection](section.md)|As seções no grupo de seções. Somente leitura. Anulável.|
 

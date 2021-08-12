@@ -1,25 +1,25 @@
 ---
-title: Usar os SDKs do Microsoft Graph para solicitações em lotes
-description: Fornece instruções para criar um lote de solicitações de API usando os SDKs do Microsoft Graph.
+title: Usar os SDKs Graph Microsoft para solicitações em lotes
+description: Fornece instruções para criar um lote de solicitações de API usando o Microsoft Graph SDKs.
 localization_priority: Normal
 author: DarrelMiller
-ms.openlocfilehash: 2f9caf9ad7f20dd2b6601501fa8c6a8fb1541bde
-ms.sourcegitcommit: 08d47a31c48fd69ae4fcee26e34fdd65ad1ba69f
+ms.openlocfilehash: d8e44f6ed2c1fe03f81150eb8dbf07140c2da513d9a6d9c192559a56362a8e43
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51509006"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54146150"
 ---
-# <a name="use-the-microsoft-graph-sdks-to-batch-requests"></a>Usar os SDKs do Microsoft Graph para solicitações em lotes
+# <a name="use-the-microsoft-graph-sdks-to-batch-requests"></a>Usar os SDKs Graph Microsoft para solicitações em lotes
 
-[O lote](../json-batching.md) é uma maneira de combinar várias solicitações em uma única solicitação HTTP. As solicitações são combinadas em uma única carga JSON, que é enviada via POST para o `\$batch` ponto de extremidade. Os SDKs do Microsoft Graph têm um conjunto de classes para simplificar como você cria cargas em lotes e analisar cargas de resposta em lotes.
+[O lote](../json-batching.md) é uma maneira de combinar várias solicitações em uma única solicitação HTTP. As solicitações são combinadas em uma única carga JSON, que é enviada via POST para o `\$batch` ponto de extremidade. O Microsoft Graph SDKs têm um conjunto de classes para simplificar como você cria cargas em lotes e analisar cargas de resposta em lotes.
 
 > [!IMPORTANT]
 > Para limitações atuais com o lote JSON no Microsoft Graph, consulte [Problemas Conhecidos.](../known-issues.md#json-batching)
 
 ## <a name="create-a-batch-request"></a>Criar uma solicitação em lote
 
-Os SDKs do Microsoft Graph fornecem três classes para trabalhar com solicitações e respostas em lotes.
+Os SDKs Graph Microsoft fornecem três classes para trabalhar com solicitações e respostas em lotes.
 
 - **BatchRequestStep** - Representa uma única solicitação (como `GET /me` ) em um lote. Ele permite atribuir um identificador exclusivo à solicitação e especificar dependências entre solicitações.
 - **BatchRequestContent** - Simplifica a criação da carga de solicitação em lote. Ele contém vários **objetos BatchRequestStep.**

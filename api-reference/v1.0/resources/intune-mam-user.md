@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: b5f9c0ab08db3c8b9f6e48138e31d091ab5dde9a
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 86781a048bc995725c31a3c65a72121515af60a59863340910ab88be7556ed84
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52755211"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54205623"
 ---
 # <a name="user-resource-type"></a>Tipo de recurso de usuário
 
@@ -35,7 +35,7 @@ Representa um objeto de usuário do Azure Active Directory.
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|O identificador do usuário.|
+|id|Cadeia de caracteres|O identificador do usuário.|
 
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|

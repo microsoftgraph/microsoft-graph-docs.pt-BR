@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 83d4478692c0e4de4205a4b33eb05306bad76563
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 28405374a30d9b821a5240ff2dfedda4c9f4d65752fcfdec2caa4667aeee0745
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52751521"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54249507"
 ---
 # <a name="update-managedmobileapp"></a>Atualizar managedMobileApp
 

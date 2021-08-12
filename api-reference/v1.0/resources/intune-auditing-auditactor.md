@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 7ab8fc9f78fc647c82be80105cb3547e6a7a45f7
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 94da9e5bebd5e5fef645fcde656a82efc3614b96d7b97f8e6d372b03cc15ea63
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52755220"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54175235"
 ---
 # <a name="auditactor-resource-type"></a>Tipo de recurso auditActor
 
@@ -23,11 +23,11 @@ Uma classe que contém as propriedades para Ator de auditoria.
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|tipo|String|Tipo de ator.|
+|tipo|Cadeia de caracteres|Tipo de ator.|
 |userPermissions|Conjunto de cadeia de caracteres|Lista de permissões de usuário de quando a auditoria foi executada.|
 |ApplicationId|Cadeia de caracteres|ID do aplicativo AAD.|
 |applicationDisplayName|Cadeia de caracteres|Nome do aplicativo.|
-|userPrincipalName|String|Nome principal do usuário (UPN).|
+|userPrincipalName|Cadeia de caracteres|Nome principal do usuário (UPN).|
 |servicePrincipalName|Cadeia de caracteres|Nome da entidade de serviço (SPN).|
 |ipAddress|Cadeia de caracteres|IPAddress.|
 |userId|Cadeia de caracteres|ID do usuário.|

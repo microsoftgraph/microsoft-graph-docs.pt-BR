@@ -5,12 +5,12 @@ author: mlafleur
 localization_priority: Normal
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: b076b38e52bb8a7eb93a9eef35c866fc58e0e29a
-ms.sourcegitcommit: 34891a1c601976166958be1aa04bab5936592b44
+ms.openlocfilehash: 01f6bd1f7ebc77d90cb6fbdbf5d4daf22f9dda0a7bdb663516fc51933afc8ca1
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52231854"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54184904"
 ---
 # <a name="educationschool-resource-type"></a>Tipo de recurso educationSchool
 
@@ -37,12 +37,12 @@ Herda de [educationOrganization](../resources/educationorganization.md).
 | :------------------- | :------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | address              | [physicalAddress](../resources/physicaladdress.md) | Endereço da escola.                                                                                                                                               |
 | createdBy            | [identitySet](../resources/identityset.md)         | Entidade que criou a escola.                                                                                                                                       |
-| descrição          | String                                             | Descrição da escola. Herdado de [educationOrganization](../resources/educationorganization.md).                                                             |
+| description          | Cadeia de caracteres                                             | Descrição da escola. Herdado de [educationOrganization](../resources/educationorganization.md).                                                             |
 | displayName          | String                                             | Nome de exibição da escola. Herdado de [educationOrganization](../resources/educationorganization.md).                                                            |
 | externalId           | Cadeia de caracteres                                             | ID da escola no sistema de sincronização.                                                                                                                                      |
 | externalPrincipalId  | Cadeia de caracteres                                             | ID da entidade de segurança no sistema de sincronização.                                                                                                                                   |
 | externalSource       | educationExternalSource                            | Fonte de onde essa organização foi criada. Herdado de [educationOrganization](../resources/educationorganization.md). Os valores possíveis são: `sis` e `manual`. |
-| externalSourceDetail | String                                             | O nome da fonte externa de onde esses recursos foram gerados.                                                                                                   |
+| externalSourceDetail | Cadeia de caracteres                                             | O nome da fonte externa de onde esses recursos foram gerados.                                                                                                   |
 | highestGrade         | Cadeia de caracteres                                             | Ensino de nível mais alto.                                                                                                                                                |
 | id                   | String                                             | Identificador de objeto. Herdado da [entidade](../resources/entity.md).                                                                                                   |
 | lowestGrade          | Cadeia de caracteres                                             | Ensino de nível mais baixo.                                                                                                                                                 |

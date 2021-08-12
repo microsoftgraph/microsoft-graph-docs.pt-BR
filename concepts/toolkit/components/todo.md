@@ -3,12 +3,12 @@ title: To Do componente no microsoft Graph Toolkit
 description: O To Do componente permite ao usuário exibir, adicionar, remover, concluir ou editar todas as tarefas. Ele funciona com qualquer tarefa no Microsoft To-Do.
 localization_priority: Normal
 author: shweaver-MSFT
-ms.openlocfilehash: 94bdbf1777a4ebe6c60d91c227c805c2edf53809
-ms.sourcegitcommit: ae83b2b372902268517fd17a8b10d6d9add422af
+ms.openlocfilehash: 215315c67931c36019a4a83f1b295193ed0c7375487202c2ce58156aa64db42a
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "53334721"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54143644"
 ---
 # <a name="to-do-component-in-the-microsoft-graph-toolkit"></a>To Do componente no microsoft Graph Toolkit
 
@@ -33,8 +33,8 @@ Você pode usar os seguintes atributos e propriedades para personalizar o compon
 | hide-options | hideOptions | Um Boolean para mostrar ou ocultar as opções em tarefas. O padrão é `false`.
 | initial-id="folder_id" | initialId | Uma ID de cadeia de caracteres para definir a pasta inicialmente exibida como a ID fornecida. |
 | target-id="folder_id"| targetId | Uma ID de cadeia de caracteres para bloquear a interface de tarefas na ID da pasta fornecida. |
-| N/D | isNewTaskVisible  | Determina se o novo exibição de tarefa está visível na renderização. |
-| N/D | taskFilter  | Uma função opcional para filtrar quais tarefas são mostradas ao usuário. |
+| N/A | isNewTaskVisible  | Determina se o novo exibição de tarefa está visível na renderização. |
+| N/A | taskFilter  | Uma função opcional para filtrar quais tarefas são mostradas ao usuário. |
 
 O exemplo a seguir mostra apenas tarefas da pasta com a ID *12345* e não permite que o usuário crie novas tarefas.
 

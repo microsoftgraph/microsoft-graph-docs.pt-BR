@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 8d69c89304123e30176c4bb2a5e049b1d60d7b00
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: c33f9f9f0c4bd8b151cf54c42123068a8e49a0b882799840769a7438d8e688e2
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52754689"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54180709"
 ---
 # <a name="statemanagementsetting-enum-type"></a>tipo de número stateManagementSetting
 

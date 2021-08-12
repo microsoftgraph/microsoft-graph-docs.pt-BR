@@ -1,26 +1,26 @@
 ---
-title: tipo de recurso teleconferenceDeviceScreenSharingQuality
-description: Representa os dados de qualidade de compartilhamento de tela do dispositivo de teleconferência de vídeo.
+title: Tipo de recurso teleconferenceDeviceScreenSharingQuality
+description: Representa dados de qualidade de compartilhamento de tela de dispositivo de teleconferência de vídeo.
 localization_priority: Normal
 author: dongkyun
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 4485001c076fd25b4d5ab7dd7f06f7ccab4c81a4
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 626d0ba55080094a609fcf4496bae520266e1537b77a83457df0042093470bb4
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48086267"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54169232"
 ---
-# <a name="teleconferencedevicescreensharingquality-resource-type"></a>tipo de recurso teleconferenceDeviceScreenSharingQuality
+# <a name="teleconferencedevicescreensharingquality-resource-type"></a>Tipo de recurso teleconferenceDeviceScreenSharingQuality
 
 Namespace: microsoft.graph
 
-Representa os dados de qualidade de compartilhamento de tela do dispositivo de teleconferência de vídeo.
+Representa dados de qualidade de compartilhamento de tela de dispositivo de teleconferência de vídeo.
 
 ## <a name="properties"></a>Propriedades
 
-O **teleconferenceDeviceScreenSharingQuality** herda todas as propriedades de [teleconferenceDeviceVideoQuality](teleconferencedevicevideoquality.md).
+A **teleconferenceDeviceScreenSharingQuality** herda todas as propriedades de [teleconferenceDeviceVideoQuality](teleconferencedevicevideoquality.md).
 
 ## <a name="json-representation"></a>Representação JSON
 

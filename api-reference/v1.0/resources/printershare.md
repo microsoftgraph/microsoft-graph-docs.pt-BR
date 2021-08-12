@@ -5,12 +5,12 @@ author: nilakhan
 localization_priority: Normal
 ms.prod: cloud-printing
 doc_type: resourcePageType
-ms.openlocfilehash: fdd0cccd4be8e65718a118cbd7b0b344dc74c05c
-ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
+ms.openlocfilehash: ec674121a0d8785ee68b9939a10e42272924c5d1a2a1d6cd37b7a5a4c650cf26
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50517042"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54218447"
 ---
 # <a name="printershare-resource-type"></a>Tipo de recurso printerShare
 
@@ -26,17 +26,17 @@ Herda de [printerBase](../resources/printerbase.md).
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
 | [List](../api/print-list-shares.md) | [Coleção printerShare](printershare.md) | Obter uma lista de compartilhamentos de impressora no locatário. |
-| [Get](../api/printershare-get.md) | [printerShare](printershare.md) | Ler propriedades e relações de um **objeto printerShare.** |
-| [Update](../api/printershare-update.md) | [printerShare](printershare.md) | Atualize um **objeto printerShare.** |
-| [Delete](../api/printershare-delete.md) | Nenhum | Desaque o compartilhamento de uma impressora. |
+| [Obter](../api/printershare-get.md) | [printerShare](printershare.md) | Ler propriedades e relações de um **objeto printerShare.** |
+| [Atualizar](../api/printershare-update.md) | [printerShare](printershare.md) | Atualize um **objeto printerShare.** |
+| [Delete](../api/printershare-delete.md) | None | Desaque o compartilhamento de uma impressora. |
 | [Listar trabalhos](../api/printershare-list-jobs.md) | [Coleção printJob](printjob.md) | Obter uma lista de trabalhos de impressão que estão na fila para processamento pela printerShare. |
 | [Criar trabalho](../api/printershare-post-jobs.md) | [printJob](printjob.md) | Crie um novo trabalho de impressão para a printerShare. Para começar a imprimir o trabalho, use [start](../api/printjob-start.md). |
 | [Listar allowedUsers](../api/printershare-list-allowedusers.md) | Coleção [user](user.md) | Recupere uma lista de usuários que tiveram acesso para enviar trabalhos de impressão para o compartilhamento de impressora associado. |
-| [Adicionar allowedUser](../api/printershare-post-allowedusers.md) | Nenhum | Conceda ao usuário especificado acesso para enviar trabalhos de impressão para o compartilhamento de impressora associado. |
-| [Remover allowedUser](../api/printershare-delete-alloweduser.md) | Nenhum | Revogar o acesso de compartilhamento de impressora do usuário especificado. |
+| [Adicionar allowedUser](../api/printershare-post-allowedusers.md) | None | Conceda ao usuário especificado acesso para enviar trabalhos de impressão para o compartilhamento de impressora associado. |
+| [Remover allowedUser](../api/printershare-delete-alloweduser.md) | None | Revogar o acesso de compartilhamento de impressora do usuário especificado. |
 | [Listar allowedGroups](../api/printershare-list-allowedgroups.md) | Coleção [group](group.md) | Recupere uma lista de grupos que tiveram acesso para enviar trabalhos de impressão para o compartilhamento de impressora associado. |
-| [Adicionar allowedGroup](../api/printershare-post-allowedgroups.md) | Nenhum | Conceda ao grupo especificado acesso para enviar trabalhos de impressão para o compartilhamento de impressora associado. |
-| [Remover allowedGroup](../api/printershare-delete-allowedgroup.md) | Nenhum | Revogar o acesso de compartilhamento de impressora do grupo especificado. |
+| [Adicionar allowedGroup](../api/printershare-post-allowedgroups.md) | None | Conceda ao grupo especificado acesso para enviar trabalhos de impressão para o compartilhamento de impressora associado. |
+| [Remover allowedGroup](../api/printershare-delete-allowedgroup.md) | None | Revogar o acesso de compartilhamento de impressora do grupo especificado. |
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
@@ -49,15 +49,15 @@ Herda de [printerBase](../resources/printerbase.md).
 |isAcceptingJobs|Booliano|Se a impressora associada a esse compartilhamento de impressoras está aceitando novos trabalhos de impressão no momento. Herdado de [printerBase](../resources/printerbase.md).|
 |defaults|[printerDefaults](printerdefaults.md)|As configurações de impressão padrão da impressora associada a esse compartilhamento de impressora. Herdado de [printerBase](../resources/printerbase.md).|
 |capabilities|[printerCapabilities](printercapabilities.md)|Os recursos da impressora associados a esse compartilhamento de impressora. Herdado de [printerBase](../resources/printerbase.md).|
-|location|[printerLocation](printerlocation.md)|O local físico e/ou organizacional da impressora associada a esse compartilhamento de impressora. Herdado de [printerBase](../resources/printerbase.md).|
-|status|[printerStatus](printerstatus.md)|O status do processamento, incluindo quaisquer erros, da impressora associada a esse compartilhamento de impressora. Herdado de [printerBase](../resources/printerbase.md). Somente leitura.|
+|localização|[printerLocation](printerlocation.md)|O local físico e/ou organizacional da impressora associada a esse compartilhamento de impressora. Herdado de [printerBase](../resources/printerbase.md).|
+|status|[printerStatus](printerstatus.md)|O status do processamento, incluindo quaisquer erros, da impressora associada a esse compartilhamento de impressora. Herdado de [printerBase](../resources/printerbase.md). Apenas leitura.|
 |allowAllUsers|Booliano|Se for true, todos os usuários e grupos terão acesso a esse compartilhamento de impressora. Isso sobressalta as listas de permissão definidas pelas propriedades de navegação **allowedUsers** e **allowedGroups.**|
 
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|
 |:---|:---|:---|
 |impressora|[impressora](printer.md)|A impressora à que essa impressora está relacionada. |
-|allowedUsers|Coleção [user](user.md)|Os usuários que têm acesso à impressão usando a impressora.|
+|allowedUsers|Coleção [usuário](user.md)|Os usuários que têm acesso à impressão usando a impressora.|
 |allowedGroups|[group](group.md)|Os grupos cujos usuários têm acesso para imprimir usando a impressora.|
 |jobs|[Coleção printJob](printjob.md)| A lista de trabalhos que estão na fila para impressão pela impressora associada a esse compartilhamento de impressora.|
 ## <a name="json-representation"></a>Representação JSON

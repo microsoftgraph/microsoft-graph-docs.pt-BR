@@ -1,37 +1,37 @@
 ---
-title: Tipo de recurso workbookCommentReply
+title: tipo de recurso workbookCommentReply
 description: Definição do tipo de recurso workbookCommentReply
 localization_priority: Normal
 author: grangeryy
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 7c47a6eb7abf8bf675dd8be35db6a96e511dbbcf
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: 9e71033e1665572e73dd672cd3a1e0e668b5f04ff1432f354fc27764055fa8ff
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50158034"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54177769"
 ---
-# <a name="workbookcommentreply-resource-type"></a>Tipo de recurso workbookCommentReply
+# <a name="workbookcommentreply-resource-type"></a>tipo de recurso workbookCommentReply
 
 Namespace: microsoft.graph
 
-Representa uma resposta a um comentário do Excel.
+Representa uma resposta a um Excel comentário.
 
 ## <a name="methods"></a>Métodos
 
 | Método       | Tipo de retorno | Descrição |
 |:-------------|:------------|:------------|
-| [Listar workbookCommentReplies](../api/workbookcomment-list-replies.md) | [coleção workbookCommentReply](workbookcommentreply.md) | Recupere uma lista de objetos workbookcommentreply. |
-| [Obter workbookCommentReply](../api/workbookcommentreply-get.md) | [workbookCommentReply](workbookcommentreply.md) | Leia as propriedades e as relações do objeto workbookCommentReply. |
+| [Listar workbookCommentReplies](../api/workbookcomment-list-replies.md) | [workbookCommentReply](workbookcommentreply.md) collection | Recupere uma lista de objetos workbookcommentreply. |
+| [Obter workbookCommentReply](../api/workbookcommentreply-get.md) | [workbookCommentReply](workbookcommentreply.md) | Ler propriedades e relações do objeto workbookCommentReply. |
 | [Criar workbookCommentReply](../api/workbookcomment-post-replies.md) | [workbookCommentReply](workbookcommentreply.md) | Crie uma nova workbookCommentReply. |
 ## <a name="properties"></a>Propriedades
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
 |content|Cadeia de caracteres|O conteúdo de uma resposta de comentário.|
-|contentType|String|Indica o tipo da resposta do comentário.|
-|id|Cadeia de caracteres|Representa o identificador de comentário. Somente leitura.|
+|contentType|String|Indica o tipo para a resposta de comentário.|
+|id|String|Representa o identificador de comentário. Somente leitura.|
 
 
 ## <a name="relationships"></a>Relações

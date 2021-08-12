@@ -1,24 +1,24 @@
 ---
 title: tipo de recurso de contrato
-description: Representa os termos de uso personalizáveis de um locatário que são criados e gerenciados com o Azure Active Directory (Azure AD).
+description: Representa os termos de uso personalizáveis de um locatário que são criados e gerenciados com Azure Active Directory (Azure AD).
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: governance
 author: raprakasMSFT
-ms.openlocfilehash: 045d4b9142d4bd0c4bc01392975871e0253d33c0
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: d536b29a0220f4fef8b0e1c6e81142c177b7009902770a74b82cf50bed7f56db
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50722556"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54212225"
 ---
 # <a name="agreement-resource-type"></a>tipo de recurso de contrato
 
 Namespace: microsoft.graph
 
-Representa os termos de uso personalizáveis de um locatário que são criados e gerenciados com o Azure Active Directory (Azure AD). Você pode usar os métodos a seguir para criar e gerenciar o recurso Termos de Uso do [Azure Active Directory](/azure/active-directory/active-directory-tou) de acordo com seu cenário.
+Representa os termos de uso personalizáveis de um locatário que são criados e gerenciados com Azure Active Directory (Azure AD). Você pode usar os métodos a seguir para criar e gerenciar o recurso Azure Active Directory [termos de uso](/azure/active-directory/active-directory-tou) de acordo com seu cenário.
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 
 | Método       | Tipo de retorno | Descrição |
 |:-------------|:------------|:------------|
@@ -26,13 +26,13 @@ Representa os termos de uso personalizáveis de um locatário que são criados e
 | [Criar acordos](../api/agreement-post-agreements.md) | [agreement](agreement.md) | Crie um novo contrato postando na coleção de contratos. |
 | [Obter contrato](../api/agreement-get.md) | [agreement](agreement.md) | Ler propriedades e relações de um objeto de contrato. |
 | [Atualizar contrato](../api/agreement-update.md) | [agreement](agreement.md) | Atualize um objeto agreement. |
-| [Excluir contrato](../api/agreement-delete.md) | Nenhum | Excluir um objeto agreement. |
+| [Excluir contrato](../api/agreement-delete.md) | None | Excluir um objeto agreement. |
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
 |displayName|Cadeia de caracteres|Nome de exibição do contrato. O nome de exibição é usado para o controle interno do contrato, mas não é mostrado aos usuários finais que visualizam o contrato.|
-|id|Cadeia de caracteres| O identificador do contrato. Somente leitura.|
+|id|Cadeia de caracteres| O identificador do contrato. Apenas leitura.|
 |isPerDeviceAcceptanceRequired|Booliano|Indica se os usuários finais são necessários para aceitar esse contrato em todos os dispositivos de onde eles o acessam. O usuário final deve registrar seu dispositivo no Azure AD, caso ainda não tenha feito isso.|
 |isViewingBeforeAcceptanceRequired|Booliano|Indica se o usuário precisa expandir o contrato antes de aceitar.|
 |termsExpiration|[termsExpiration](termsexpiration.md)| Cronograma de expiração e frequência de acordo para todos os usuários. |

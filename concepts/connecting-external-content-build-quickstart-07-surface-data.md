@@ -1,10 +1,10 @@
 <!-- markdownlint-disable MD002 MD025 MD041 -->
 
-Crie tipos de resultados e verticais de pesquisa para personalizar os resultados da pesquisa no Microsoft SharePoint, Microsoft Office e Pesquisa da Microsoft no Bing, para facilitar a busca das informações que eles têm permissão para ver.
+Crie tipos de resultados e verticais de pesquisa para personalizar os resultados da pesquisa no Microsoft SharePoint, Microsoft Office e Pesquisa da Microsoft no Bing, para facilitar que os usuários encontrem as informações que eles têm permissão para ver.
 
 ## <a name="create-a-vertical"></a>Criar uma vertical
 
-Para criar e habilitar uma pesquisa vertical no nível da organização, entre no centro de administração do Microsoft 365 usando [a](https://admin.microsoft.com/) função de administrador global e faça o seguinte:
+Para criar e habilitar uma pesquisa vertical no nível da organização, entre no centro de Administração Microsoft 365 [usando](https://admin.microsoft.com/) a função de administrador global e faça o seguinte:
 
 1. Vá para **Configurações**  >  **Search & de** inteligência  >  **Personalizações.**
 2. Vá para **Vertical** e clique no **botão Adicionar.**

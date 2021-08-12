@@ -3,12 +3,12 @@ title: Componente Pessoas no Microsoft Graph Toolkit
 description: Você pode usar o componente web para exibir um grupo de pessoas ou contatos usando `mgt-people` suas fotos ou iniciais.
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: d169c5c51c4f846031d4519ab27a053f51c15f98
-ms.sourcegitcommit: 3f40fbb953b14c1f52341786569c678adfc5bd3e
+ms.openlocfilehash: 356b13bac27ba11c294694f8fa614af192e5871ef04433b4033d9dfd9c481330
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52780733"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54171956"
 ---
 # <a name="people-component-in-the-microsoft-graph-toolkit"></a>Componente Pessoas no Microsoft Graph Toolkit
 
@@ -22,7 +22,7 @@ O exemplo a seguir mostra um grupo de pessoas exibidas usando o `mgt-people` com
 
 <iframe src="https://mgt.dev/iframe.html?id=components-mgt-people--people&source=docs" height="350"></iframe>
 
-[Abra este exemplo em mgt.dev](https://mgt.dev/?path=/story/components-mgt-people--people&source=docs)
+[Abrir este exemplo no mgt.dev](https://mgt.dev/?path=/story/components-mgt-people--people&source=docs)
 
 ## <a name="properties"></a>Propriedades
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 814ea6119210184356c561ac4f6a3dee5d3eac10
-ms.sourcegitcommit: f77c1385306fd40557aceb24fdfe4832cbb60a27
+ms.openlocfilehash: c91b33734ea421c34e3627c76b7dd410ab8d251f262c509b15865d5c8db60814
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/12/2021
-ms.locfileid: "52912107"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54146913"
 ---
 # <a name="educationfileresource-resource-type"></a>Tipo de recurso educationFileResource
 
@@ -23,7 +23,7 @@ Nesse caso, o arquivo não é um dos arquivos especiais (Word, Excel e assim por
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|fileUrl|String|Local no disco do recurso de arquivo.|
+|fileUrl|Cadeia de caracteres|Local no disco do recurso de arquivo.|
 
 ## <a name="json-representation"></a>Representação JSON
 

@@ -1,26 +1,26 @@
 ---
 title: Tipo de recurso ipNamedLocation
-description: Representa um local nomeado pelo Azure Active Directory definido por intervalos IP. Locais nomeados são regras personalizadas que definem locais de rede que podem ser usados em uma política de Acesso Condicional.
+description: Representa um Azure Active Directory nome definido por intervalos IP. Locais nomeados são regras personalizadas que definem locais de rede que podem ser usados em uma política de Acesso Condicional.
 localization_priority: Normal
 author: videor
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 1781c10e28e2d3efc28154cd15a8c36c9b43ac21
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: 930db24ef40a68bb00f5724762652dfd1d75c1702d6af61be878a04cc68f1b94
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50719336"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54246721"
 ---
 # <a name="ipnamedlocation-resource-type"></a>Tipo de recurso ipNamedLocation
 
 Namespace: microsoft.graph
 
-Representa um local nomeado pelo Azure Active Directory definido por intervalos IP. Locais nomeados são regras personalizadas que definem locais de rede que podem ser usados em uma política de Acesso Condicional.
+Representa um Azure Active Directory nome definido por intervalos IP. Locais nomeados são regras personalizadas que definem locais de rede que podem ser usados em uma política de Acesso Condicional.
 
 Herda de [namedLocation](../resources/namedLocation.md)
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 
 | Método       | Tipo de retorno | Descrição |
 |:-------------|:------------|:------------|
@@ -28,7 +28,7 @@ Herda de [namedLocation](../resources/namedLocation.md)
 | [Criar ipNamedLocation](../api/conditionalaccessroot-post-namedlocations.md) | [ipNamedLocation](ipNamedLocation.md) | Crie um novo **objeto ipNamedLocation.** |
 | [Obter ipNamedLocation](../api/ipnamedlocation-get.md) | [ipNamedLocation](ipnamedlocation.md) | Leia as propriedades e as relações de um **objeto ipNamedLocation.** |
 | [Atualizar ipNamedLocation](../api/ipnamedlocation-update.md) | [ipNamedLocation](ipnamedlocation.md) | Atualize um **objeto ipNamedLocation.** |
-| [Excluir ipNamedLocation](../api/ipnamedlocation-delete.md) | Nenhum | **Exclua um objeto ipNamedLocation.** |
+| [Excluir ipNamedLocation](../api/ipnamedlocation-delete.md) | None | **Exclua um objeto ipNamedLocation.** |
 
 ## <a name="properties"></a>Propriedades
 
@@ -36,7 +36,7 @@ Herda de [namedLocation](../resources/namedLocation.md)
 |:-------------|:------------|:------------|
 |createdDateTime|DateTimeOffset|O tipo Timestamp representa a data e a hora de criação do local usando o formato ISO 8601 e está sempre em horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`. Somente leitura. Herdado [de namedLocation](../resources/namedLocation.md).|
 |displayName|Cadeia de caracteres|Nome acessível para humanos do local.|
-|id|Cadeia de caracteres|Identificador de um objeto namedLocation. Somente leitura. Herdado [de namedLocation](../resources/namedLocation.md).|
+|id|Cadeia de caracteres|Identificador de um objeto namedLocation. Apenas leitura. Herdado [de namedLocation](../resources/namedLocation.md).|
 |ipRanges|Coleção [ipRange](iprange.md)|Lista de intervalos de endereços IP no formato CIDR IPv4 (por exemplo, 1.2.3.4/32) ou qualquer formato IPv6 acessível do IETF RFC596.|
 |isTrusted|Booliano|True se esse local for explicitamente confiável.|
 |modifiedDateTime|DateTimeOffset|O tipo Timestamp representa a última data e hora modificadas do local usando o formato ISO 8601 e está sempre em horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`. Somente leitura. Herdado [de namedLocation](../resources/namedLocation.md).|

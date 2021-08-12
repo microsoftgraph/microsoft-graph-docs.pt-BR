@@ -5,12 +5,12 @@ author: Jordanndahl
 localization_priority: Normal
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: 1e18f78f0b0d7c9e8cb9c054afd5645ae45e1c48
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: 3f43baa14884fcb8843d99731e20e96f329aed2cfad2a1ba513b8e2039d8f776
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52680875"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54212078"
 ---
 # <a name="groupsetting-resource-type"></a>Tipo de recurso groupSetting
 
@@ -28,15 +28,15 @@ As configurações de grupo podem ser criadas com base no [groupSettingTemplates
 |[Obter configuração](../api/groupsetting-get.md) | [groupSetting](groupsetting.md) | Ler propriedades de um objeto de configuração específico. |
 |[Listar configurações](../api/groupsetting-list.md) | Conjunto [groupSetting](groupsetting.md) | Lista propriedades de todos os objetos de configuração. |
 |[Atualizar configuração](../api/groupsetting-update.md) | [groupSetting](groupsetting.md) | Atualizar objeto groupsetting. |
-|[Excluir configuração](../api/groupsetting-delete.md) | Nenhum | Excluir um objeto de configuração. |
+|[Excluir configuração](../api/groupsetting-delete.md) | None | Excluir um objeto de configuração. |
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade | Tipo | Descrição |
 |:---------------|:--------|:----------|
 |displayName|Cadeia de caracteres| Nome de exibição desse grupo de configurações, que vem do modelo associado. |
-|id|Cadeia de caracteres| Identificador exclusivo para essas configurações. Somente leitura. |
-|templateId|Cadeia de caracteres| Identificador exclusivo do modelo usado para criar esse grupo de configurações. Somente leitura. |
+|id|Cadeia de caracteres| Identificador exclusivo para essas configurações. Apenas leitura. |
+|templateId|String| Identificador exclusivo do modelo usado para criar esse grupo de configurações. Somente leitura. |
 |values|[coleção settingValue](settingvalue.md)| Coleção de pares de valores de nome. Deve conter e definir todas as configurações definidas no modelo. |
 
 ## <a name="relationships"></a>Relações

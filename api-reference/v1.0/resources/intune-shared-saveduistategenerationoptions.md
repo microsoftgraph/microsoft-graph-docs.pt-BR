@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 98d7e10daa23830a382b1cab021d137f3f45fe3f
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: dac42c0f8bda115f8474b006046b65f96d0b9b15eaa98bfab3cd051db8e925dd
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52756747"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54155019"
 ---
 # <a name="saveduistategenerationoptions-enum-type"></a>Tipo de número savedUIStateGenerationOptions
 

@@ -1,26 +1,26 @@
 ---
-title: tipo de recurso plannerChecklistItems
-description: O recurso **plannerChecklistItemCollection** representa a coleção de itens de lista de verificação em uma tarefa. É um tipo aberto. Ele faz parte do objeto de detalhes da tarefa. O valor no par propriedade-valor é o objeto checklistItem.
+title: Tipo de recurso plannerChecklistItems
+description: O **recurso plannerChecklistItemCollection** representa a coleção de itens de lista de verificação em uma tarefa. É um Tipo Aberto. Ele faz parte do objeto de detalhes da tarefa. O valor no par de valores de propriedade é o objeto checklistItem.
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: 6904d473ace51363f8cd292524456b378e6f4e86
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f465adf89e9cb344013e30edccf03513f8fb96065e676ffb78d7cb8fa13f14ac
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48037525"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54178070"
 ---
-# <a name="plannerchecklistitems-resource-type"></a>tipo de recurso plannerChecklistItems
+# <a name="plannerchecklistitems-resource-type"></a>Tipo de recurso plannerChecklistItems
 
 Namespace: microsoft.graph
 
-O recurso **plannerChecklistItemCollection** representa a coleção de itens de lista de verificação em uma tarefa. É um tipo aberto. Ele faz parte do objeto de [detalhes da tarefa](plannertaskdetails.md) . O valor no par propriedade-valor é o objeto [checklistItem](plannerchecklistitem.md) .
+O **recurso plannerChecklistItemCollection** representa a coleção de itens de lista de verificação em uma tarefa. É um Tipo Aberto. Ele faz parte do objeto [de detalhes da](plannertaskdetails.md) tarefa. O valor no par de valores de propriedade é o [objeto checklistItem.](plannerchecklistitem.md)
 
 
 ## <a name="properties"></a>Propriedades
-As propriedades de um tipo aberto podem ser definidas pelo cliente. Nesse caso, o cliente deve fornecer **GUIDs** como propriedades e seus valores devem ser objetos [checklistItem](plannerchecklistitem.md) . O exemplo é mostrado abaixo. Para remover um item da lista de verificação, defina o valor da propriedade como `null` .
+As propriedades de um Tipo Aberto podem ser definidas pelo cliente. Nesse caso, o cliente deve fornecer **GUIDs** como propriedades e seus valores devem ser [objetos checklistItem.](plannerchecklistitem.md) Exemplo é mostrado abaixo. Para remover um item na lista de verificação, defina o valor da propriedade como `null` .
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -45,7 +45,7 @@ Veja a seguir uma representação JSON do recurso
   }
 }
 ```
-Como
+Exemplo
 
 ```json
 {

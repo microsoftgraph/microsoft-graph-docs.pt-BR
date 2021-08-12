@@ -5,12 +5,12 @@ author: psignoret
 localization_priority: Normal
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 32744ce01f871c82a52710502e7fdc899537cef5
-ms.sourcegitcommit: ad1e4d758d4fe6025987c1c3528ce644edb27062
+ms.openlocfilehash: d6fae1c3914f901c24190b5c27b184b4c90aa5e67cfdc54416ec5e6f81703361
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51698010"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54155222"
 ---
 # <a name="appconsentrequest-resource-type"></a>Tipo de recurso appConsentRequest
 
@@ -30,9 +30,9 @@ Uma coleção de [objetos userConsentRequest](../resources/userconsentrequest.md
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|appDisplayName|String|O nome de exibição do aplicativo para o qual o consentimento é solicitado. Obrigatório. Suporta `$filter` ( `eq` somente) e `$orderby` . |
-|appId|String|O identificador do aplicativo. Obrigatório. Suporta `$filter` ( `eq` somente) e `$orderby` . |
-|id|String|O identificador da solicitação de consentimento do aplicativo. Obrigatório.|
+|appDisplayName|Cadeia de caracteres|O nome de exibição do aplicativo para o qual o consentimento é solicitado. Obrigatório. Suporta `$filter` ( `eq` somente) e `$orderby` . |
+|appId|Cadeia de caracteres|O identificador do aplicativo. Obrigatório. Suporta `$filter` ( `eq` somente) e `$orderby` . |
+|id|Cadeia de caracteres|O identificador da solicitação de consentimento do aplicativo. Obrigatório.|
 |pendingScopes|[Coleção appConsentRequestScope](../resources/appconsentrequestscope.md)|Uma lista de escopos pendentes aguardando aprovação. Obrigatório.|
 
 ## <a name="relationships"></a>Relações

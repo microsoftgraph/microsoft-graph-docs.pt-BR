@@ -5,12 +5,12 @@ localization_priority: Normal
 author: sharad-sharma-msft
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 82fdb8fa226ab6eb2c38b1e49e12904ff26b6491
-ms.sourcegitcommit: f77c1385306fd40557aceb24fdfe4832cbb60a27
+ms.openlocfilehash: 6230732caf190bc255f63e7eee79af6971d3e4a805f1ead94332c13b6115555b
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/12/2021
-ms.locfileid: "52911375"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54211847"
 ---
 # <a name="rubricquality-resource-type"></a>Tipo de recurso rubricQuality
 
@@ -25,9 +25,9 @@ Consulte [educationRubric](educationrubric.md) para ver uma descrição da rela�
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
 |criteria|[Coleção rubricCriterion](rubriccriterion.md)|A coleção de critérios para essa qualidade rubrica.|
-|descrição|[itemBody](itembody.md)|A descrição dessa qualidade rubrica.|
-|displayName|String|O nome dessa qualidade rubrica.|
-|qualityId|String|A ID desse recurso.|
+|description|[itemBody](itembody.md)|A descrição dessa qualidade rubrica.|
+|displayName|Cadeia de caracteres|O nome dessa qualidade rubrica.|
+|qualityId|Cadeia de caracteres|A ID desse recurso.|
 |weight|Único|Se presente, um peso numérico para essa qualidade.  Os pesos devem adicionar até 100.|
 
 ## <a name="json-representation"></a>Representação JSON

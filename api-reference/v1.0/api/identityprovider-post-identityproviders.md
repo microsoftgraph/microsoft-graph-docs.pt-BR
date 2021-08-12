@@ -5,12 +5,12 @@ localization_priority: Priority
 author: namkedia
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: fac9a583737b991e9f2b060a05eb64a893dde9cc
-ms.sourcegitcommit: a598c09b73e4e43eea5f4aaefea7ffe062e15c39
+ms.openlocfilehash: abe7e5a3fff0c677499d5c47a42cf2fbc43f26f9705f0e51dd108c1e1367e719
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/22/2021
-ms.locfileid: "53533994"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54219294"
 ---
 # <a name="create-identityprovider-deprecated"></a>Criar IdentityProvider (obsoleto)
 Namespace: microsoft.graph

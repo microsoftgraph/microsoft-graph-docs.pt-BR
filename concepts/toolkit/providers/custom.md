@@ -1,27 +1,27 @@
 ---
 title: Provedor personalizado
-description: Crie um provedor personalizado para habilitar a autenticação e o acesso de gráfico para os componentes do Microsoft Graph Toolkit, se você tiver um código de autenticação existente em seu aplicativo.
+description: Crie um provedor personalizado para habilitar a autenticação e o acesso gráfico para os componentes do Microsoft Graph Toolkit, se você tiver código de autenticação existente em seu aplicativo.
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: 57b7ca843f71d22992df18dc2466d0182d3fc556
-ms.sourcegitcommit: 186d738f04e5a558da423f2429165fb4fbe780aa
+ms.openlocfilehash: 4327bea637043fa8280bf6c39f55cdb8a0333b1c529f4994e9c8273ff0e3d99b
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "49086596"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54204923"
 ---
 # <a name="custom-provider"></a>Provedor personalizado
 
-Se você tiver um código de autenticação existente em seu aplicativo, poderá criar um provedor personalizado para habilitar a autenticação e o acesso ao Microsoft Graph para os componentes do Microsoft Graph Toolkit. Há duas maneiras de criar provedores personalizados:
+Se você tiver código de autenticação existente em seu aplicativo, poderá criar um provedor personalizado para habilitar a autenticação e o acesso ao Microsoft Graph para componentes Graph Toolkit Microsoft. Há duas maneiras de criar provedores personalizados:
 
 - Criar um novo `SimpleProvider` passando uma função para obter um token de acesso
 - Estender a `IProvider` classe abstrata
 
-Este artigo descreve cada abordagem em mais detalhes.
+Este artigo descreve cada abordagem com mais detalhes.
 
-## <a name="simpleprovider"></a>Simpleprovider
+## <a name="simpleprovider"></a>SimpleProvider
 
-Crie uma instância da `SimpleProvider` classe passando uma função que retornará um token de acesso para escopos aprovados. 
+Insinue a classe passando uma função que retornará um `SimpleProvider` token de acesso para escopos passados. 
 
 ```ts
 let provider = new SimpleProvider((scopes: string[]) => {
@@ -29,10 +29,10 @@ let provider = new SimpleProvider((scopes: string[]) => {
 });
 ```
 
-Além disso, você também pode fornecer uma `login` função opcional e `logout` que possa lidar com as chamadas de entrada e de saída do componente de [logon](../components/login.md) .
+Além disso, você também pode fornecer um opcional e funções que podem manipular a entrar e fazer chamadas `login` `logout` do componente De [logon.](../components/login.md)
 
 > [!IMPORTANT] 
-> Para indicar aos componentes que eles podem começar a chamar as APIs do Microsoft Graph após um usuário entrar com êxito, você precisará chamar `Providers.setState(ProviderState.SignedIn)` . Um exemplo disso é mostrado na função a `login` seguir.
+> Para indicar aos componentes que eles podem começar a chamar as APIs do Microsoft Graph depois que um usuário entrar com êxito, você precisa chamar `Providers.setState(ProviderState.SignedIn)` . Um exemplo disso é mostrado na `login` função abaixo.
 
 ```ts
 function getAccessToken(scopes: string[]) {
@@ -53,7 +53,7 @@ let provider = new SimpleProvider(getAccessToken, login, logout);
 
 ### <a name="manage-state"></a>Gerenciar estado
 
-Para que os componentes estejam cientes do estado do provedor, será necessário chamar o `provider.setState(state: ProviderState)` método sempre que o estado for alterado. Por exemplo, quando o usuário entrou, ligue para `provider.setState(ProviderState.SignedIn)` . A `ProviderState` enumeração define três Estados, conforme mostrado.
+Para que os componentes sejam cientes do estado do provedor, você precisará chamar o método sempre `provider.setState(state: ProviderState)` que o estado mudar. Por exemplo, quando o usuário tiver se assinado, chame `provider.setState(ProviderState.SignedIn)` . O `ProviderState` número define três estados, conforme mostrado.
 
 ```ts
 export enum ProviderState {
@@ -65,37 +65,37 @@ export enum ProviderState {
 
 ## <a name="iprovider"></a>IProvider
 
-Você pode estender a `IProvider` classe abstract para criar seu próprio provedor.
+Você pode estender a `IProvider` classe abstrata para criar seu próprio provedor.
 
 ### <a name="state"></a>Estado
 
-Um provedor deve acompanhar o estado de autenticação e atualizar os componentes quando o estado for alterado. A `IProvider` classe já implementa o `onStateChanged(eventHandler)` manipulador e a `state: ProviderState` propriedade. Você só precisa usar o `setState(state:ProviderState)` método na sua implementação para atualizar o estado quando ele for alterado. A atualização do estado acionará o `stateChanged` evento e atualizará todos os componentes automaticamente.
+Um provedor deve acompanhar o estado de autenticação e atualizar os componentes quando o estado mudar. A `IProvider` classe já implementa o manipulador e a `onStateChanged(eventHandler)` `state: ProviderState` propriedade. Você só precisa usar o `setState(state:ProviderState)` método em sua implementação para atualizar o estado quando ele mudar. A atualização do estado disparará o `stateChanged` evento e atualizará todos os componentes automaticamente.
 
-### <a name="loginlogout"></a>Login/logout
+### <a name="loginlogout"></a>Logout/Logout
 
-Se seu provedor fornece a funcionalidade de logon ou logout, implemente os `login(): Promise<void>` `logout(): Promise<void>` métodos e. Esses métodos são opcionais.
+Se o provedor fornece funcionalidade de logon ou logout, implemente `login(): Promise<void>` os `logout(): Promise<void>` métodos e. Esses métodos são opcionais.
 
 ### <a name="access-token"></a>Token de acesso
 
-Você deve implementar o `getAccessToken({'scopes': scopes[]}) : Promise<string>` método. Este método é usado para obter um token válido antes de cada chamada para o Microsoft Graph.
+Você deve implementar o `getAccessToken({'scopes': scopes[]}) : Promise<string>` método. Esse método é usado para obter um token válido antes de cada chamada para o Microsoft Graph.
 
 ### <a name="graph"></a>Graph
 
-Os componentes usam o SDK do JavaScript do Microsoft Graph para todas as chamadas para o Microsoft Graph. Seu provedor deve tornar o SDK disponível por meio da `graph` propriedade. No construtor, crie uma nova `Graph` instância, conforme mostrado.
+Os componentes usam o Microsoft Graph Javascript SDK para todas as chamadas para o Microsoft Graph. Seu provedor deve disponibilizar o SDK por meio da `graph` propriedade. Em seu construtor, crie uma nova `Graph` instância, conforme mostrado.
 
 ```js
 this.graph = new Graph(this);
 ```
 
-A `Graph` classe é um invólucro claro na parte superior do SDK do Microsoft Graph.
+A `Graph` classe é um invólucro claro sobre o Microsoft Graph SDK.
 
 ### <a name="example"></a>Exemplo
 
-Todos os provedores estendem a `IProvider` classe abstrata. Para obter exemplos, dê uma olhada no código-fonte de qualquer um dos [provedores existentes](https://github.com/microsoftgraph/microsoft-graph-toolkit/tree/main/packages/mgt/src/providers).
+Todos os provedores estendem a `IProvider` classe abstrata. Por exemplo, dê uma olhada no código-fonte de qualquer um dos [provedores existentes.](https://github.com/microsoftgraph/microsoft-graph-toolkit/tree/main/packages/mgt/src/providers)
 
 ## <a name="set-the-global-provider"></a>Definir o provedor global
 
-Os componentes usam a `Providers.globalProvider` propriedade para acessar um provedor. Depois de criar seu próprio provedor, defina essa propriedade como seu provedor.
+Os componentes usam `Providers.globalProvider` a propriedade para acessar um provedor. Depois de criar seu próprio provedor, de definir essa propriedade como seu provedor.
 
 ```ts
 import { Providers } from '@microsoft/mgt';

@@ -6,12 +6,12 @@ localization_priority: Normal
 description: " ou uma coleção de itens que devem ser tratados como uma coleção em vez de itens individuais."
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: e248c74add209690dbd7c3cc11d8056c5ca30dcc
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: 09a335605e4a7ed258f27c120b9fdb4ecb95a59a42ccbf0a52866c5338f25d99
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50239811"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54138490"
 ---
 # <a name="package-resource-type"></a>Tipo de recurso Package
 
@@ -36,7 +36,7 @@ DriveItems com a faceta **package** não incluem uma faceta **folder** ou **file
 
 | Nome da propriedade | Tipo   | Descrição                                                                                                                                                                      |
 |:--------------|:-------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| type          | string | Uma cadeia de caracteres indicando o tipo de pacote. Embora `oneNote` seja o único valor definido atualmente, você deve esperar que outros tipos de pacote sejam retornados e lidar com eles da forma apropriada. |
+| type          | string | Uma cadeia de caracteres que indica o tipo de pacote. Embora `oneNote` seja o único valor definido atualmente, você deve esperar que outros tipos de pacote sejam retornados e lidar com eles da forma apropriada. |
 
 ## <a name="remarks"></a>Comentários 
 

@@ -4,12 +4,12 @@ description: O Outlook permite que os clientes compartilhem pastas de e-mail ent
 author: abheek-das
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: f6c1ece4dddc8e8da25a03b76da0f8be303fe557
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: 1687c6ca82c4188f4001e2cf4c472af9e39387f38746bb1e3726620f2af6859d
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50474390"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54233655"
 ---
 # <a name="get-outlook-messages-in-a-shared-or-delegated-folder"></a>Obtenha mensagens do Outlook em uma pasta compartilhada ou delegada
 

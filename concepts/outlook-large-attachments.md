@@ -4,12 +4,12 @@ description: Dependendo do tamanho do arquivo, você pode escolher uma das duas 
 author: abheek-das
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: 014fa749dfc7a06522b317cade0cbce81940e12d
-ms.sourcegitcommit: 48fff935d56fe96e97577a80a3a0aa15c45419ba
+ms.openlocfilehash: e33619e77e35b9260c6ff802c6ca8da4dc8051ce075c56d6bcf9ec61bb85d8dc
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "50177239"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54240405"
 ---
 # <a name="attach-large-files-to-outlook-messages-or-events"></a>Anexar arquivos grandes a mensagens ou eventos do Outlook
 

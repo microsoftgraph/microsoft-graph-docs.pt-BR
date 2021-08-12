@@ -5,12 +5,12 @@ author: Alice-at-Microsoft
 localization_priority: Normal
 ms.prod: w10
 doc_type: conceptualPageType
-ms.openlocfilehash: 7468bef695b704ef40b630e3f0e332e97fb12031
-ms.sourcegitcommit: 1b09298649d5606b471b4cbe1055419bbe2fc7e5
+ms.openlocfilehash: 60a76a1292322233e23920f9be47030a883f9717468ce06e1043f5751dffbc89
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "52067656"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54225619"
 ---
 # <a name="manage-monitoring-rules-for-a-feature-update-deployment-using-the-windows-update-for-business-deployment-service"></a>Gerenciar regras de monitoramento para uma implantação de atualização de recursos usando o serviço de implantação Windows Update for Business
 

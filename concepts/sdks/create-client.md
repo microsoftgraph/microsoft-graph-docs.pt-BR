@@ -3,12 +3,12 @@ title: Criar um cliente microsoft Graph
 description: Descreve como criar um cliente a ser usado para fazer chamadas para o Microsoft Graph. Inclui como configurar a autenticação e selecionar uma nuvem soberana.
 localization_priority: Normal
 author: MichaelMainer
-ms.openlocfilehash: 0256ad20b3078c081102221189a12e27432df058
-ms.sourcegitcommit: 99fdbd9a1806d64626423e1f39342dcde8a1eaf4
+ms.openlocfilehash: bcbe925289220390bd252bda65ee9b90c5d67d495ad932af7f7112bce062e1d4
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/16/2021
-ms.locfileid: "52971357"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54237345"
 ---
 # <a name="create-a-microsoft-graph-client"></a>Criar um cliente microsoft Graph
 

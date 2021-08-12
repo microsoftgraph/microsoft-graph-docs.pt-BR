@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: resourcePageType
 ms.prod: identity-and-sign-in
 author: namkedia
-ms.openlocfilehash: b26bb5ed3afe773fd572c1116465eab689a8021c
-ms.sourcegitcommit: a598c09b73e4e43eea5f4aaefea7ffe062e15c39
+ms.openlocfilehash: c5b45b142cb90eb1b7f2e43f719a2e9e9650d6b2a9917ca79c514e60a8f6fb1d
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/22/2021
-ms.locfileid: "53535434"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54134921"
 ---
 # <a name="socialidentityprovider-resource-type"></a>tipo de recurso socialIdentityProvider
 Namespace: microsoft.graph
