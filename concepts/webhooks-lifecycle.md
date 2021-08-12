@@ -4,12 +4,12 @@ description: Os aplicativos que estão se inscrevendo para alterar as notificaç
 author: davidmu1
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: bf870eecce08d61b6ad80ce774ed2b97af3ce3b2
-ms.sourcegitcommit: 366178d3fc37439791061082da80a63fba2c27df
+ms.openlocfilehash: 0f0fd13d70089ddbb378b1baf97c01e1240bb36366680bc009d3f6d6a9f7b952
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48921687"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54159649"
 ---
 # <a name="reduce-missing-subscriptions-and-change-notifications"></a>Reduzir assinaturas ausentes e alterar notificações
 
@@ -105,7 +105,7 @@ Alguns aspectos a serem observados neste tipo de notificação:
 
 - O `"lifecycleEvent": "subscriptionRemoved"` campo designa essa notificação como relacionada à remoção de assinatura. Outros tipos de notificações de ciclo de vida também são possíveis, e novos serão disponibilizados no futuro.
 - A notificação de ciclo de vida não contém informações sobre um recurso específico, porque ela não está relacionada a uma alteração de recurso, mas a alteração de estado da assinatura.
-- Assim como notificações de alteração, notificações de ciclo de vida devem ser agrupadas (na matriz **valor** ), cada com uma possivelmente valores diferentes **lifecycleEvent**. Processe cada notificação de ciclo de vida no lote adequadamente.
+- Assim como notificações de alteração, notificações de ciclo de vida devem ser agrupadas (na matriz **valor**), cada com uma possivelmente valores diferentes **lifecycleEvent**. Processe cada notificação de ciclo de vida no lote adequadamente.
 
 > **Observação:** para obter uma descrição completa dos dados enviados quando as notificações de alteração forem entregues, confira [changeNotificationCollection](/graph/api/resources/changenotificationcollection).
 
@@ -114,7 +114,7 @@ Alguns aspectos a serem observados neste tipo de notificação:
 1. [Confirme](webhooks.md#change-notifications) o recebimento da notificação do ciclo de vida respondendo à chamada do POST com `202 - Accepted`.
 2. [Validar](webhooks.md#change-notifications) a autenticidade da notificação do ciclo de vida.
 3. Certifique-se de que o aplicativo tenha um token de acesso válido para a próxima etapa. 
-  > **Observação** : se você estiver usando uma das [bibliotecas de autenticação](/azure/active-directory/develop/reference-v2-libraries), elas farão isso para você ao reutilizar um token de cache válido ou obtendo um novo token, inclusive pedindo ao usuário para fazer logon novamente (com uma nova senha). Observe que a obtenção de um novo token pode falhar, pois as condições de acesso podem ser alteradas e o chamador não poderá mais acessar os dados de recursos. 
+  > **Observação**: se você estiver usando uma das [bibliotecas de autenticação](/azure/active-directory/develop/reference-v2-libraries), elas farão isso para você ao reutilizar um token de cache válido ou obtendo um novo token, inclusive pedindo ao usuário para fazer logon novamente (com uma nova senha). Observe que a obtenção de um novo token pode falhar, pois as condições de acesso podem ser alteradas e o chamador não poderá mais acessar os dados de recursos. 
 
 4. Criar uma nova assinatura usando o processo padrão descrito [aqui](webhooks.md#subscription-request-example).
 
@@ -146,14 +146,14 @@ Alguns aspectos a serem observados neste tipo de notificação:
 
 - O `"lifecycleEvent": "missed"` campo designa isso como um sinal de notificações perdidas. Outros tipos de notificações de ciclo de vida também são possíveis, e novos serão disponibilizados no futuro.
 - A notificação de ciclo de vida não contém informações sobre um recurso específico, porque ela não está relacionada a uma alteração de recurso, mas a alteração de estado da assinatura.
-- Assim como notificações de alteração, notificações de ciclo de vida podem ser agrupadas (na matriz **valor** ), cada com uma possivelmente valores diferentes **lifecycleEvent**. Processe cada notificação de ciclo de vida no lote adequadamente.
+- Assim como notificações de alteração, notificações de ciclo de vida podem ser agrupadas (na matriz **valor**), cada com uma possivelmente valores diferentes **lifecycleEvent**. Processe cada notificação de ciclo de vida no lote adequadamente.
 
 > **Observação:** para obter uma descrição completa dos dados enviados quando as notificações de alteração forem entregues, confira [changeNotificationCollection](/graph/api/resources/changenotificationcollection).
 
 ### <a name="actions-to-take"></a>Ações a serem executadas
 
 1. [Confirme](webhooks.md#change-notifications) o recebimento da notificação do ciclo de vida respondendo à chamada do POST com `202 - Accepted`.
-    - Caso você ignore estes sinais, não faça nada. Caso contrário:
+    - Se você ignorar esses sinais, não faça mais nada. Caso contrário:
 2. [Validar](webhooks.md#change-notifications) a autenticidade da notificação do ciclo de vida.
 3. Executaremos ressincronização de dados completa para identificar as alterações que não foram entregues como notificações. 
 
@@ -177,12 +177,12 @@ As etapas a seguir representam o fluxo de um desafio de autorização para uma a
     Observe que o fluxo de notificações de alterações pode continuar por um tempo, dando a você tempo extra para responder. No entanto, eventualmente a alteração na entrega de notificação fará uma pausa até você executar a ação necessária.
 
 3. Responda a esta notificação do ciclo de vida de duas maneiras:
-    - Autorizar a assinatura novamente. Isso não estende a data de vencimento da assinatura.
-    - Renove a assinatura. Isso autoriza novamente e estende a data de vencimento.
+    - Reautorize a assinatura. Isso não estende a data de expiração da assinatura.
+    - Renove a assinatura. Isso reautoriza e estende a data de expiração.
 
     Observação: as duas ações exigem a apresentação de um token de autenticação válido, semelhante a [criar uma nova assinatura](webhooks.md#creating-a-subscription) ou [renova uma assinatura antes da sua expiração](webhooks.md#renewing-a-subscription).
 
-4. Se você autorizar novamente ou renovar com êxito a inscrição, as notificações de alteração continuarão. Caso contrário, as notificações de alteração permanecerão pausadas.
+4. Se você reautorizar ou renovar a assinatura com êxito, as notificações de alteração continuarão. Caso contrário, as notificações de alteração permanecerão em pausa.
 
 ### <a name="reauthorizationrequired-notification-example"></a>exemplo de notificação reauthorizationRequired
 
@@ -204,7 +204,7 @@ Alguns aspectos a serem observados neste tipo de notificação:
 
 - O campo `"lifecycleEvent": "reauthorizationRequired"` identifica essa notificação como um desafio de autorização. Outros tipos de notificações de ciclo de vida também são possíveis, e novos serão disponibilizados no futuro.
 - A notificação de ciclo de vida não contém informações sobre um recurso específico, porque ela não está relacionada a uma alteração de recurso, mas a alteração de estado da assinatura.
-- Semelhante às notificações de alteração, você pode agrupar as notificações do ciclo de vida em conjunto (na coleção de **valores** ), cada uma com um valor possivelmente diferente do **lifecycleEvent**. Processe cada notificação de ciclo de vida no lote adequadamente.
+- Semelhante às notificações de alteração, você pode agrupar as notificações do ciclo de vida em conjunto (na coleção de **valores**), cada uma com um valor possivelmente diferente do **lifecycleEvent**. Processe cada notificação de ciclo de vida no lote adequadamente.
 
 > **Observação:** para obter uma descrição completa dos dados enviados quando as notificações de alteração forem entregues, confira [changeNotificationCollection](/graph/api/resources/changenotificationcollection).
 
@@ -213,7 +213,7 @@ Alguns aspectos a serem observados neste tipo de notificação:
 1. [Confirme](webhooks.md#change-notifications) o recebimento da notificação do ciclo de vida respondendo à chamada do POST com `202 - Accepted`.
 2. [Validar](webhooks.md#change-notifications) a autenticidade da notificação do ciclo de vida.
 3. Certifique-se de que o aplicativo tenha um token de acesso válido para a próxima etapa. 
-  > **Observação** : se você estiver usando uma das [bibliotecas de autenticação](/azure/active-directory/develop/reference-v2-libraries), elas farão isso para você ao reutilizar um token de cache válido ou obtendo um novo token, inclusive pedindo ao usuário para fazer logon novamente (com uma nova senha). Observe que a obtenção de um novo token pode falhar, pois as condições de acesso podem ser alteradas e o chamador não poderá mais acessar os dados de recursos. 
+  > **Observação**: se você estiver usando uma das [bibliotecas de autenticação](/azure/active-directory/develop/reference-v2-libraries), elas farão isso para você ao reutilizar um token de cache válido ou obtendo um novo token, inclusive pedindo ao usuário para fazer logon novamente (com uma nova senha). Observe que a obtenção de um novo token pode falhar, pois as condições de acesso podem ser alteradas e o chamador não poderá mais acessar os dados de recursos. 
 
 4. Chamar uma das duas APIs a seguir. Se a chamada da API for bem-sucedida, o fluxo de notificação de mudança será retomado.
 
@@ -250,13 +250,13 @@ As informações a seguir podem ajudá-lo a entender os desafios de autorizaçã
 
 ## <a name="future-proof-the-code-handling-lifecycle-notifications"></a>À prova de futuro o código lidar com as notificações de ciclo de vida
 
-No futuro, o Microsoft Graph adicionará mais tipos de notificações de ciclo de vida da assinatura. Elas serão publicadas no mesmo ponto de extremidade: **lifecycleNotificationUrl** , mas terão um valor diferente sob **lifecycleEvent** e podem conter um esquema e propriedades ligeiramente diferentes, específicas para o cenário para o qual serão enviadas.
+No futuro, o Microsoft Graph adicionará mais tipos de notificações de ciclo de vida da assinatura. Elas serão publicadas no mesmo ponto de extremidade: **lifecycleNotificationUrl**, mas terão um valor diferente sob **lifecycleEvent** e podem conter um esquema e propriedades ligeiramente diferentes, específicas para o cenário para o qual serão enviadas.
 
-Você deve implementar seu código de uma maneira mais segura, para que ele não se pare quando o Microsoft Graph apresentar novos tipos de notificações do ciclo de vida. Recomendamos as seguintes abordagens:
+Você deve implementar seu código de forma à prova de futuro, para que ele não seja interrompido quando Microsoft Graph novos tipos de notificações de ciclo de vida. Recomendamos a seguinte abordagem:
 
 1. Identifique explicitamente cada notificação do ciclo de vida como um evento que você oferece suporte, usando a propriedade **lifecycleEvent**. Por exemplo, procure a `"lifecycleEvent": "subscriptionRemoved"` propriedade para identificar um evento específico e tratá-lo.
 
-2. Assista aos comunicados de notificações do ciclo de vida para os novos cenários. Pode haver mais tipos de notificações de ciclo de vida no futuro.
+2. Fique atento aos anúncios de notificações de ciclo de vida para novos cenários. Pode haver mais tipos de notificações de ciclo de vida no futuro.
 
 3. Em seu aplicativo ignore todos os eventos de ciclo de vida que o aplicativo não reconhece e registre-os para obter conhecimento.
 

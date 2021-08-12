@@ -5,12 +5,12 @@ description: O objeto MentionAction fornece informações sobre quem foi mencion
 localization_priority: Normal
 ms.prod: insights
 doc_type: resourcePageType
-ms.openlocfilehash: bc876f05949beb09b3e495a8b9b0536070b352cb
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: bdcef79492604aa5ee2afae0897361eb41dd6889229b4b41259cc3d47f72bf92
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50238383"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54152380"
 ---
 # <a name="mentionaction-resource-type"></a>Tipo de recurso mentionAction
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 O recurso **MentionAction** fornece informações sobre um [atividade][] que mencionou pessoas.
 
->**Observação:** No momento, os registros de atividades do item só estão disponíveis no SharePoint e no OneDrive for Business.
+>**Observação:** No momento, os registros de atividade do item estão disponíveis apenas SharePoint e OneDrive for Business.
 
 [atividade]: itemactivity.md
 
@@ -35,7 +35,7 @@ O recurso **MentionAction** fornece informações sobre um [atividade][] que men
 <!-- {
   "blockType": "resource",
   "optionalProperties": [ ],
-  "@type": "microsoft.graph.mentionAction"
+  "@type&quot;: &quot;microsoft.graph.mentionAction"
 }-->
 
 ```json

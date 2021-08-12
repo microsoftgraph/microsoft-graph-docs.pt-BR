@@ -4,12 +4,12 @@ description: O Microsoft Graph usa um mecanismo de webhook para fornecer notific
 author: davidmu1
 ms.prod: non-product-specific
 localization_priority: Priority
-ms.openlocfilehash: 4da690a646c47ef857de860d36bde17a4ee26761
-ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
+ms.openlocfilehash: 867d192a2516a82a7ca4fbe07b6a9628285f9c25bf89c2400862e33065a8546c
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52547180"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54208633"
 ---
 # <a name="set-up-change-notifications-that-include-resource-data"></a>Configurar notificações de alteração que incluam dados de recurso
 

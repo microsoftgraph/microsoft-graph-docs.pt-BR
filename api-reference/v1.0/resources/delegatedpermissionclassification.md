@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: applications
 author: psignoret
-ms.openlocfilehash: ff9f4ca394e2065c69fd7cd08a19d60817fc4f99
-ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
+ms.openlocfilehash: a7842eb4efdd54f63743a786b0be28990dee609a27fa960bfa38ac2e476921ed
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50761755"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54146990"
 ---
 # <a name="delegatedpermissionclassification-resource-type"></a>Tipo de recurso delegatedPermissionClassification
 
@@ -24,10 +24,10 @@ As classificações de permissão delegadas podem ser usadas em combinação com
 
 | Propriedade | Tipo | Descrição |
 |:---------------|:--------|:----------|
-| id | String | Um identificador exclusivo para **a chave delegatedPermissionClassification.** Não anulável. Somente leitura. |
+| id | Cadeia de caracteres | Um identificador exclusivo para **a chave delegatedPermissionClassification.** Não anulável. Somente leitura. |
 | classificação | permissionClassificationType | O valor de classificação que está sendo dado. Valor possível: `low` . O não tem suporte para `$filter`. |
 | permissionId | Guid | O identificador exclusivo (**id**) da permissão delegada listada na coleção **oauth2PermissionScopes** [do servicePrincipal](servicePrincipal.md). Obrigatório durante a criação. O não tem suporte para `$filter`. |
-| permissionName | String | O valor da declaração (**valor**) da permissão delegada listada na coleção **oauth2PermissionScopes** do [servicePrincipal](servicePrincipal.md). O não tem suporte para `$filter`. |
+| permissionName | Cadeia de caracteres | O valor da declaração (**valor**) da permissão delegada listada na coleção **oauth2PermissionScopes** do [servicePrincipal](servicePrincipal.md). O não tem suporte para `$filter`. |
 
 ## <a name="json-representation"></a>Representação JSON
 

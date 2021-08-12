@@ -5,12 +5,12 @@ author: isabelleatmsft
 localization_priority: Normal
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 5217524105fd5dcca0248b331f5cc5d0584784aa
-ms.sourcegitcommit: 5a1cc1943527aa268e3797ee514871e65eb474a6
+ms.openlocfilehash: cc6a8453b804e33eff2788b280928219ddf191cec4f49d2cb1b8c76725eab7c4
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53030977"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54180905"
 ---
 # <a name="accessreviewqueryscope-resource-type"></a>Tipo de recurso accessReviewQueryScope
 
@@ -23,9 +23,9 @@ Herda de [accessReviewScope](../resources/accessreviewscope.md).
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|consulta|String|A consulta que representa o que será revisado em uma revisão de acesso.|
-|queryRoot|String|No cenário em que os revisadores precisam ser especificados dinamicamente, essa propriedade é usada para indicar a fonte relativa da consulta. Essa propriedade só será necessária se uma consulta relativa for especificada. Por exemplo, `./manager`.|
-|queryType|String|Indica o tipo de consulta. Os tipos `MicrosoftGraph` incluem `ARM` e .|
+|consulta|Cadeia de caracteres|A consulta que representa o que será revisado em uma revisão de acesso.|
+|queryRoot|Cadeia de caracteres|No cenário em que os revisadores precisam ser especificados dinamicamente, essa propriedade é usada para indicar a fonte relativa da consulta. Essa propriedade só será necessária se uma consulta relativa for especificada. Por exemplo, `./manager`.|
+|queryType|Cadeia de caracteres|Indica o tipo de consulta. Os tipos `MicrosoftGraph` incluem `ARM` e .|
 
 A especificação da **propriedade @odata.type** com o valor `#microsoft.graph.accessReviewQueryScope` é altamente recomendada. Para obter mais  informações sobre opções de configuração para escopo usando **accessReviewQueryScope,** consulte Configure the scope of your [access review definition using the Microsoft Graph API](/graph/accessreviews-scope-concept).
 

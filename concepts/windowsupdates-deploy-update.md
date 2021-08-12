@@ -5,12 +5,12 @@ author: Alice-at-Microsoft
 localization_priority: Normal
 ms.prod: w10
 doc_type: conceptualPageType
-ms.openlocfilehash: 2022294dc9467c2854642ac255169aa867ac162e
-ms.sourcegitcommit: 0ca0a1e2810701c2392e5c685e984fbfb6785579
+ms.openlocfilehash: 59e3c5351ed88cebe76ee9c66fa99563379065af36b2b96e67c44600b279f6ec
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2021
-ms.locfileid: "53151598"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54225633"
 ---
 # <a name="deploy-a-feature-update-using-the-windows-update-for-business-deployment-service"></a>Implantar uma atualização de recurso usando o serviço de implantação Windows Atualização para Empresas
 

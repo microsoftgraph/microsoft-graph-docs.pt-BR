@@ -5,12 +5,12 @@ ms.date: 4/9/2019
 author: anthona
 localization_priority: Priority
 ms.prod: insights
-ms.openlocfilehash: 0a519fa3b7f6604e5cb0165909b0f754462ccae0
-ms.sourcegitcommit: 3afb8123098a25ce30b16648ce2f31e8eaac388c
+ms.openlocfilehash: 2eda6a2dae70429e6467337ac75a10dde278aca4318bbe98e65daeca155be22e
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "48816186"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54235112"
 ---
 # <a name="use-the-people-api-in-microsoft-graph-to-get-information-about-the-people-most-relevant-to-you"></a>Usar a API de Pessoas no Microsoft Graph para obter informações sobre as pessoas mais relevantes para você
 
@@ -25,7 +25,7 @@ Para chamar a API de Pessoas no Microsoft Graph, seu aplicativo precisará das p
 
 ## <a name="browse-people"></a>Procurar pessoas
 
-As solicitações nesta seção obtém as pessoas mais relevantes para o usuário conectado (`/me`) ou para um usuário específico na organização do usuário conectado. Essas solicitações exigem a permissão People.Read ou People.Read.All, respectivamente. Por padrão, cada resposta retorna 10 registros, mas você pode alterar isso usando o parâmetro de consulta *$top* .
+As solicitações nesta seção obtém as pessoas mais relevantes para o usuário conectado (`/me`) ou para um usuário específico na organização do usuário conectado. Essas solicitações exigem a permissão People.Read ou People.Read.All, respectivamente. Por padrão, cada resposta retorna 10 registros, mas você pode alterar isso usando o parâmetro de consulta *$top*.
 
 ### <a name="get-a-collection-of-relevant-people"></a>Obter uma coleção de pessoas relevantes
 
@@ -35,7 +35,7 @@ A solicitação a seguir obtém as pessoas mais relevantes para o usuário conec
 GET https://graph.microsoft.com/v1.0/me/people/
 ```
 
-O exemplo a seguir mostra a resposta. Por padrão, cada resposta retorna 10 registros. Você pode alterar isso usando o parâmetro de consulta *$top* . Este exemplo usa *$top* para limitar a resposta a três registros.
+O exemplo a seguir mostra a resposta. Por padrão, cada resposta retorna 10 registros. Você pode alterar isso usando o parâmetro de consulta *$top*. Este exemplo usa *$top* para limitar a resposta a três registros.
 
 ```http
 HTTP/1.1 200 OK
@@ -160,7 +160,7 @@ Se a primeira resposta não contiver a lista completa das pessoas relevantes, vo
 GET https://graph.microsoft.com/v1.0/me/people/?$top=3&$skip=10
 ```
 
-O exemplo a seguir mostra a resposta. Por padrão, cada resposta retorna 10 registros. Você pode alterar isso usando o parâmetro de consulta *$top* . Este exemplo usa *$top* para limitar a resposta a três registros.
+O exemplo a seguir mostra a resposta. Por padrão, cada resposta retorna 10 registros. Você pode alterar isso usando o parâmetro de consulta *$top*. Este exemplo usa *$top* para limitar a resposta a três registros.
 
 ```http
 HTTP/1.1 200 OK
@@ -279,13 +279,13 @@ Content-type: application/json
 
 ### <a name="sort-the-response"></a>Classificar a resposta
 
-Por padrão, as pessoas na resposta são classificadas pela relevância delas à consulta. Você pode alterar a ordem das pessoas na resposta ao usar o parâmetro *$orderby* . Essa consulta seleciona as pessoas mais relevantes para você, classifica-as por **displayName** e, em seguida, retorna as primeiras 10 pessoas na lista classificada.
+Por padrão, as pessoas na resposta são classificadas pela relevância delas à consulta. Você pode alterar a ordem das pessoas na resposta ao usar o parâmetro *$orderby*. Essa consulta seleciona as pessoas mais relevantes para você, classifica-as por **displayName** e, em seguida, retorna as primeiras 10 pessoas na lista classificada.
 
 ```http
 GET https://graph.microsoft.com/v1.0/me/people/?$orderby=displayName
 ```
 
-O exemplo a seguir mostra a resposta. Por padrão, cada resposta retorna 10 registros. Você pode alterar isso ao usar o parâmetro *$top* . O exemplo a seguir usa *$top* para limitar a resposta a três registros.
+O exemplo a seguir mostra a resposta. Por padrão, cada resposta retorna 10 registros. Você pode alterar isso ao usar o parâmetro *$top*. O exemplo a seguir usa *$top* para limitar a resposta a três registros.
 
 ```http
 HTTP/1.1 200 OK
@@ -404,7 +404,7 @@ Content-type: application/json
 
 ### <a name="change-the-number-of-people-and-fields-returned"></a>Alterar o número de pessoas e campos retornados
 
-Você pode alterar o número de pessoas retornadas na resposta definindo o parâmetro *$top* .
+Você pode alterar o número de pessoas retornadas na resposta definindo o parâmetro *$top*.
 
 O exemplo a seguir solicita as 1.000 pessoas mais relevantes para `/me`. A solicitação também limita a quantidade de dados enviados de volta do servidor solicitando somente o **displayName** da pessoa.
 
@@ -491,7 +491,7 @@ O exemplo a seguir limita a resposta ao **displayName** e **scoredEmailAddresses
 GET https://graph.microsoft.com/v1.0/me/people/?$select=displayName,scoredEmailAddresses
 ```
 
-O exemplo a seguir mostra a resposta. Por padrão, cada resposta retorna 10 registros. Você pode alterar isso usando o parâmetro *$top* . Este exemplo usa *$top* para limitar a resposta a três registros.
+O exemplo a seguir mostra a resposta. Por padrão, cada resposta retorna 10 registros. Você pode alterar isso usando o parâmetro *$top*. Este exemplo usa *$top* para limitar a resposta a três registros.
 
 ```http
 HTTP/1.1 200 OK
@@ -537,13 +537,13 @@ Content-type: application/json
 
 Você pode usar o parâmetro *$filter* para limitar a resposta apenas às pessoas cujo registro contém os critérios especificados.
 
-A consulta a seguir limita a resposta a instâncias **person** com a propriedade **personType** com as atribuições de **person** como **classe** e **organizationUser** como **subclasse** .
+A consulta a seguir limita a resposta a instâncias **person** com a propriedade **personType** com as atribuições de **person** como **classe** e **organizationUser** como **subclasse**.
 
 ```http
 GET https://graph.microsoft.com/v1.0/me/people/?$filter=personType/class eq 'Person' and personType/subclass eq 'OrganizationUser'
 ```
 
-O exemplo a seguir mostra a resposta. Por padrão, cada resposta retorna 10 registros. Você pode alterar isso usando o parâmetro *$top* . Este exemplo usa *$top* para limitar a resposta a três registros.
+O exemplo a seguir mostra a resposta. Por padrão, cada resposta retorna 10 registros. Você pode alterar isso usando o parâmetro *$top*. Este exemplo usa *$top* para limitar a resposta a três registros.
 
 ```http
 HTTP/1.1 200 OK
@@ -702,7 +702,7 @@ Neste exemplo, as pessoas relevantes de Vinícius Monte são exibidas.
 GET https://graph.microsoft.com/v1.0/users('roscoes@contoso.com')/people/
 ```
 
-O exemplo a seguir mostra a resposta. Por padrão, cada resposta retorna 10 registros. Você pode alterar isso usando o parâmetro *$top* . O exemplo abaixo usa *$top* para limitar a resposta a três registros.
+O exemplo a seguir mostra a resposta. Por padrão, cada resposta retorna 10 registros. Você pode alterar isso usando o parâmetro *$top*. O exemplo abaixo usa *$top* para limitar a resposta a três registros.
 
 ```http
 HTTP/1.1 200 OK
@@ -821,7 +821,7 @@ Content-type: application/json
 
 ## <a name="search-people"></a>Pesquisar pessoas
 
-As solicitações nesta seção permitem procurar pessoas relevantes para o usuário conectado (`/me`) e para outros usuários na organização do usuário conectado. Essas solicitações requerem a permissão People.Read, com exceção da pesquisa de pessoas relevantes de outros usuários, que exige People.Read.All. Por padrão, cada resposta retorna 10 registros, mas você pode alterar isso usando o parâmetro *$top* .
+As solicitações nesta seção permitem procurar pessoas relevantes para o usuário conectado (`/me`) e para outros usuários na organização do usuário conectado. Essas solicitações requerem a permissão People.Read, com exceção da pesquisa de pessoas relevantes de outros usuários, que exige People.Read.All. Por padrão, cada resposta retorna 10 registros, mas você pode alterar isso usando o parâmetro *$top*.
 
 ### <a name="use-search-to-select-people"></a>Usar a pesquisa para selecionar pessoas
 
@@ -833,7 +833,7 @@ A consulta de pesquisa a seguir retorna pessoas relevantes para `/me` cujo **dis
 GET https://graph.microsoft.com/v1.0/me/people/?$search=j
 ```
 
-O exemplo a seguir mostra a resposta. Por padrão, cada resposta retorna 10 registros. Você pode alterar isso usando o parâmetro *$top* . Este exemplo usa *$top* para limitar a resposta a três registros.
+O exemplo a seguir mostra a resposta. Por padrão, cada resposta retorna 10 registros. Você pode alterar isso usando o parâmetro *$top*. Este exemplo usa *$top* para limitar a resposta a três registros.
 
 ```http
 HTTP/1.1 200 OK

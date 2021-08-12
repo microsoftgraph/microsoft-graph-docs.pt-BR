@@ -4,12 +4,12 @@ description: Este artigo fornece práticas recomendadas e exemplos para trabalha
 author: KirtiPereira
 localization_priority: Normal
 ms.prod: teamwork
-ms.openlocfilehash: 52a207c780922079731091b6dea11050fd38faeb
-ms.sourcegitcommit: 6d247f44a6ee4d8515c3863ee8a2683163c9f829
+ms.openlocfilehash: e36c5df9314c09fb78b0a76a014c874156d91b404978a60201f44aaddc1c40f9
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/14/2021
-ms.locfileid: "53430883"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54177706"
 ---
 # <a name="best-practices-for-using-microsoft-teams-activity-feed-notifications"></a>Práticas recomendadas para o uso Microsoft Teams de feed de atividade
 

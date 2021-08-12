@@ -1,26 +1,26 @@
 ---
 author: learafa
-description: O geolocationColumn em um recurso columnDefinition indica que a coluna contém uma localização geográfica.
+description: A localização geográficaColumn em um recurso columnDefinition indica que a coluna mantém uma localização geográfica.
 title: GeolocationColumn
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: files
-ms.openlocfilehash: ab46534dd92eb80e40e7943ce67a41ed7c73ca84
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 2c7640d8e92b1b241fbb67c0bcb69a539877076b18cf62323ee962c3b25474da
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48018162"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54246868"
 ---
-# <a name="geolocationcolumn-resource-type"></a>tipo de recurso geolocationColumn
+# <a name="geolocationcolumn-resource-type"></a>Tipo de recurso geolocationColumn
 
 Namespace: microsoft.graph
 
-Indica que a coluna em um recurso [columnDefinition](columndefinition.md) contém uma localização geográfica.
+Indica que a coluna em um [recurso columnDefinition](columndefinition.md) contém uma localização geográfica.
 
 ## <a name="json-representation"></a>Representação JSON
 
-Veja a seguir uma representação JSON do recurso.
+A seguir está uma representação JSON do recurso.
 <!-- { "blockType": "resource", "@odata.type": "microsoft.graph.geolocationColumn" } -->
 
 ```json

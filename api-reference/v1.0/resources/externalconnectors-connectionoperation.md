@@ -5,12 +5,12 @@ author: mecampos
 localization_priority: Normal
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: f81300c0fd2f895daccb816c86cdd7151c803b2d
-ms.sourcegitcommit: 1940be9846055aa650c6c03982b74a961f1e316a
+ms.openlocfilehash: 7cf9310eef057bbd4bcda57273089f05a24501986c90b6bffbc072d39932cac2
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/17/2021
-ms.locfileid: "53467202"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54121281"
 ---
 # <a name="connectionoperation-resource-type"></a>Tipo de recurso connectionOperation
 
@@ -29,7 +29,7 @@ Descreve o status de uma solicitação assíncrona para criar um Pesquisa da Mic
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |erro|publicError| Se `status` for , fornece mais informações sobre o erro que causou a `failed` falha.|
-|id|String| Identificador exclusivo da connectionOperation. Somente leitura. |
+|id|Cadeia de caracteres| Identificador exclusivo da connectionOperation. Somente leitura. |
 |status|microsoft.graph.externalConnectors.connectionOperationStatus| Indica o status da operação assíncrona. Os valores possíveis são: `unspecified`, `inprogress`, `completed`, `failed`, `unknownFutureValue`.|
 
 ## <a name="relationships"></a>Relações

@@ -3,12 +3,12 @@ title: Iniciando o microsoft Graph Toolkit
 description: Começar a usar o microsoft Graph Toolkit em seu aplicativo.
 localization_priority: Normal
 author: elisenyang
-ms.openlocfilehash: 68260cf83f0e9bec34d2c3b23911d04c53143e76
-ms.sourcegitcommit: 276a13a37c3772689dfc71f7cd47586c9581f27d
+ms.openlocfilehash: 0fc7e189dca2585720e5be31546426ccbcd46482a77121c92d5ee4970bc9e92b
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52629151"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54214779"
 ---
 # <a name="getting-started-with-the-microsoft-graph-toolkit"></a>Iniciando o microsoft Graph Toolkit
 
@@ -105,7 +105,7 @@ O pacote contém todos os componentes de React gerados automaticamente e tem [`@
 
 O pacote contém uma Estrutura do SharePoint que é necessária para usar o [`@microsoft/mgt-spfx`](./mgt-spfx.md) Microsoft Graph Toolkit em Estrutura do SharePoint soluções.
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>Próximos passos
 Agora você está pronto para começar a desenvolver com o microsoft Graph Toolkit! Os guias a seguir estão disponíveis para ajudá-lo a começar:
 
 - [Registrar um aplicativo no Azure Active Directory](./add-aad-app-registration.md)

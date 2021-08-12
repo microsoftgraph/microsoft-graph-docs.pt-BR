@@ -5,12 +5,12 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: 724694c2348c250be5396f5a5be5e4f4eb2d7e04
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: a183ee092c0b7af5468e67fa54a63830314aef0490f4001d3527a01d7979b724
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50722318"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54154907"
 ---
 # <a name="plannerchecklistitem-resource-type"></a>Tipo de recurso plannerChecklistItem
 

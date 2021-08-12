@@ -5,12 +5,12 @@ localization_priority: Normal
 author: jpettere
 ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: c5aceba073cf7962b7b1caeb9a25a1936d5d4248
-ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
+ms.openlocfilehash: db2d164f076722abd2006408147c4dda3d3df128578d030b8454b7ed6395fba4
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52546956"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54141844"
 ---
 # <a name="assignedlicense-resource-type"></a>Tipo de recurso assignedLicense
 

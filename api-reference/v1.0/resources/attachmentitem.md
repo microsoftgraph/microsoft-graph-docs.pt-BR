@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abheek-das
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 385af6c31033ceabf1293c29e9127187cf879d64
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 0c50576b203254517d0718fc32d7322a42eb67b9160b848081f687fc35c0748a
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50135776"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54182599"
 ---
 # <a name="attachmentitem-resource-type"></a>Tipo de recurso attachmentItem
 
@@ -25,7 +25,7 @@ Representa atributos de um item a ser anexado.
 |attachmentType|String| O tipo de anexo. Os valores possíveis são: `file`, `item`, `reference`. Obrigatório.|
 |contentType|String|A natureza dos dados no anexo. Opcional.|
 |isInline|Booliano|`true` se o anexo for embutido; caso contrário, `false`. Opcional.|
-|nome|Cadeia de caracteres|O nome de exibição do anexo. Pode ser uma cadeia de caracteres descritiva e não precisa ser o nome de arquivo real. Obrigatório.|
+|nome|Cadeia de caracteres|O nome de exibição do anexo. Isso pode ser uma cadeia de caracteres descritiva e não precisa ser o nome de arquivo real. Obrigatório.|
 |size|Int64|O comprimento do anexo em bytes. Obrigatório.|
 
 ## <a name="json-representation"></a>Representação JSON

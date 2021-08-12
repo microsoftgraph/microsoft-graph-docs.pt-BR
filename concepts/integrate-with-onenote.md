@@ -5,12 +5,12 @@ author: Jewan-microsoft
 localization_priority: Priority
 ms.prod: onenote
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 933c37df5b02eef73c44e5dcff0386fef06e49f3
-ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
+ms.openlocfilehash: 3e92e05d109ed767db75f015c28ce26049cff5e8b085686ed609d355131fe9d7
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48288879"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54208696"
 ---
 # <a name="onenote-api-overview"></a>Visão geral da API do OneNote
 

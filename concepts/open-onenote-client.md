@@ -3,18 +3,18 @@ title: abrir o cliente do OneNote
 description: 'Você pode usar a propriedade **links** de uma página ou de um bloco de anotações para abrir um aplicativo do OneNote em determinada página ou bloco de anotações. '
 author: Jewan-microsoft
 localization_priority: Normal
-ms.openlocfilehash: d9f4ec45e79ed0526b4d02a6c3f676944384ab46
-ms.sourcegitcommit: 9cee9d8229fc84dd7ef97670ff27c145e1a78408
+ms.openlocfilehash: ada371ab457e4bd5c760770dbdc2baaea8557efeef14a5fe1ddb37c2f4c33059
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35778289"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54123902"
 ---
 # <a name="open-the-onenote-client"></a>Abrir o cliente do OneNote
 
 Você pode usar a propriedade **links** de uma página ou de um bloco de anotações para abrir um aplicativo do OneNote em determinada página ou bloco de anotações. 
 
-A propriedade **links** é um objeto JSON que contém duas URLs. As URLs abrirão a página ou o bloco de anotações no aplicativo cliente do OneNote ou no OneNote na Web.
+A propriedade **links** é um objeto JSON que contém duas URLs. As URLs abrirão a página ou bloco de anotações no aplicativo OneNote cliente ou no OneNote na Web.
 
 ```json
 { 
@@ -36,7 +36,7 @@ A propriedade **links** é um objeto JSON que contém duas URLs. As URLs abrirã
 
 - **oneNoteWebUrl** 
 
-  - Abre o OneNote na Web se o navegador padrão no dispositivo oferecer suporte a ele. 
+  - Abre OneNote na Web se o navegador padrão no dispositivo oferece suporte a ele. 
   - Usa a configuração de idioma do navegador.
 
 
@@ -96,7 +96,7 @@ O exemplo a seguir obtém as URLs de cliente do OneNote da resposta JSON. Ele us
 
 <br/>
 
-Após analisar as URLs de resposta, você poderá abrir o OneNote usando o código a seguir. Use `oneNoteClientUrl` o para abrir o cliente do OneNote `oneNoteWebURL` instalado ou para abrir o OneNote na Web.
+Após analisar as URLs de resposta, você poderá abrir o OneNote usando o código a seguir. Use `oneNoteClientUrl` para abrir o cliente OneNote instalado ou para abrir `oneNoteWebURL` OneNote na Web.
 
 ```objc
 NSURL *url = [NSURL URLWithString:standardResponse.oneNoteWebUrl];
@@ -164,7 +164,7 @@ public ApiResponse getResponse() throws Exception {
 
 <br/>
 
-Usando as propriedades de resposta, seu aplicativo pode abrir o OneNote na Web, conforme mostrado no exemplo a seguir.
+Usando as propriedades de resposta, seu aplicativo pode OneNote na Web, conforme mostrado no exemplo a seguir.
 
 ```java 
 if (response.getResponseCode() == 201) {

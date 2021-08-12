@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: c9c7a1eabedaafca99fc908ed1dd194751a00500
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: dc455366a64d37a887ae1e43edde7b95d3dc481b2d7925caa43c37756505a065
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52752284"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54155096"
 ---
 # <a name="androidminimumoperatingsystem-resource-type"></a>Tipo de recurso androidMinimumOperatingSystem
 
@@ -35,7 +35,7 @@ Contém propriedades para o sistema operacional mínimo obrigatório para um apl
 |v11_0|Booliano|Versão 11.0 ou posterior.|
 
 ## <a name="relationships"></a>Relações
-Nenhuma
+Nenhum
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.

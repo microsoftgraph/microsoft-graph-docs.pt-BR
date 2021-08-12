@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: d249c150870a3a7149b92ad7aab55a84c23896dd
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: e0c60cdde2d636321f3777b4b41bdf11bfe1da69d3303169f4fce1a3a71b3acc
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50132101"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54178385"
 ---
 # <a name="informationalurl-resource-type"></a>Tipo de recurso informationalUrl
 
@@ -22,11 +22,11 @@ Informações de perfil básicas do aplicativo.
 
 | Propriedade | Tipo | Descrição |
 |:---------------|:--------|:----------|
-|logoUrl|String|URL da CDN para o logotipo do aplicativo, somente leitura.|
+|logoUrl|Cadeia de caracteres|CDN URL para o logotipo do aplicativo, somente leitura.|
 |marketingUrl|String| Link para a página de marketing do aplicativo. Por exemplo, https://www.contoso.com/app/marketing |
-|privacyStatementUrl|String| Link para a política de privacidade do aplicativo. Por exemplo, https://www.contoso.com/app/privacy |
+|privacyStatementUrl|Cadeia de caracteres| Link para a declaração de privacidade do aplicativo. Por exemplo, https://www.contoso.com/app/privacy |
 |supportUrl|String| Link para a página de suporte do aplicativo. Por exemplo, https://www.contoso.com/app/support |
-|termsOfServiceUrl|String| Link para a instrução de termos de serviço do aplicativo. Por exemplo, https://www.contoso.com/app/termsofservice |
+|termsOfServiceUrl|Cadeia de caracteres| Link para a instrução de termos de serviço do aplicativo. Por exemplo, https://www.contoso.com/app/termsofservice |
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.

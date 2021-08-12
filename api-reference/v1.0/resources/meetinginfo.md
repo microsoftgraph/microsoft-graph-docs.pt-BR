@@ -1,24 +1,24 @@
 ---
-title: tipo de recurso meetingInfo
+title: Tipo de recurso meetingInfo
 description: Informações de reunião especificadas para criar ou ingressar em uma reunião.
 author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: cb79cae4f413e3d027b8dbbcccc621ba9b3b8233
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ab866ada9fa4b886cbd90cb999132ff13b48d74437f11710a43aee31ba7857fe
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48020542"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54126407"
 ---
-# <a name="meetinginfo-resource-type"></a>tipo de recurso meetingInfo
+# <a name="meetinginfo-resource-type"></a>Tipo de recurso meetingInfo
 
 Namespace: microsoft.graph
 
 Esta é uma classe abstrata que contém informações específicas da reunião.
  
-Para ingressar em uma reunião existente, você deve especificar o [organizerMeetingInfo](organizermeetinginfo.md) em combinação com o [chatInfo](./chatinfo.md)ou apenas o [tokenMeetingInfo](tokenmeetinginfo.md).
+Para ingressar em uma reunião existente, você deve especificar o [organizerMeetingInfo](organizermeetinginfo.md) em combinação com [o chatInfo](./chatinfo.md)ou apenas [o tokenMeetingInfo](tokenmeetinginfo.md).
 
 
 ## <a name="derived-types"></a>Tipos derivados

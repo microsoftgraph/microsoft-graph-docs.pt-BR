@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso appRoleAssignment
-description: Utilizado para registro quando um usuário, grupo ou entidade de serviço é atribuído a uma função de aplicativo na entidade de serviço de um aplicativo. Você pode criar, ler e excluir as atribuições de função.
+description: Usado para registrar quando um usuário, grupo ou entidade de serviço é atribuído a uma função de aplicativo na entidade de serviço de um aplicativo. Você pode criar, ler e excluir atribuições de função de aplicativo.
 localization_priority: Priority
 doc_type: resourcePageType
 ms.prod: applications
 author: psignoret
-ms.openlocfilehash: 6f58f116b82c0f6b8c5d45f6d55aff695fcabd44
-ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
+ms.openlocfilehash: cb0a76893eba2274105c49b236703dace1ea6cf31ebd5eac291811835baa9ab8
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51468643"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54147123"
 ---
 # <a name="approleassignment-resource-type"></a>Tipo de recurso appRoleAssignment
 

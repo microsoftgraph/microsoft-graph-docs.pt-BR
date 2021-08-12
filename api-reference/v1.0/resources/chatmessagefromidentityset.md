@@ -5,12 +5,12 @@ author: RamjotSingh
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 30b8c8add62c94ff16fe5e560a78ec5c9c95627d
-ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
+ms.openlocfilehash: 58f5654dc8019950134c25cdc50529b29032d8870462d46a46481b489f4ba15a
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53211059"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54192576"
 ---
 # <a name="chatmessagefromidentityset-resource-type"></a>Tipo de recurso chatMessageFromIdentitySet
 
@@ -26,7 +26,7 @@ Herda de [identitySet](../resources/identityset.md).
 |:---|:---|:---|
 |aplicativo|[identity](../resources/identity.md)|Herdado [de identitySet](../resources/identityset.md). Se presente, representa o aplicativo (por exemplo, bot) que enviou a mensagem.|
 |device|[identity](../resources/identity.md)|Herdado [de identitySet](../resources/identityset.md). Não usado.|
-|user|[identity](../resources/identity.md)|Herdado [de identitySet](../resources/identityset.md). Se presente, representa o usuário que enviou a mensagem.|
+|usuário|[identity](../resources/identity.md)|Herdado [de identitySet](../resources/identityset.md). Se presente, representa o usuário que enviou a mensagem.|
 
 ## <a name="relationships"></a>Relações
 Nenhum

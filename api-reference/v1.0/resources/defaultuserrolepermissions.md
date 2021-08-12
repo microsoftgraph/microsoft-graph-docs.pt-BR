@@ -1,18 +1,18 @@
 ---
-title: Tipo de recurso defaultUserRolePermissions
+title: tipo de recurso defaultUserRolePermissions
 description: Contém determinadas permissões personalizáveis da função de usuário padrão.
 localization_priority: Normal
 author: abhijeetsinha
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 0e89f175a62615efe172646613897222a9ae75fa
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: c55f24fc0733a0cd20e88a080f83fcda8314aa3bad3dcc18122aaf2eea7ada13
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50137554"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54178490"
 ---
-# <a name="defaultuserrolepermissions-resource-type"></a>Tipo de recurso defaultUserRolePermissions
+# <a name="defaultuserrolepermissions-resource-type"></a>tipo de recurso defaultUserRolePermissions
 
 Contém determinadas permissões personalizáveis da função de usuário padrão no Azure Active Directory (AD).
 
@@ -23,7 +23,7 @@ Contém determinadas permissões personalizáveis da função de usuário padrã
 | allowedToCreateApps | Booliano | Indica se a função de usuário padrão pode criar aplicativos. |  
 | allowedToCreateSecurityGroups | Booliano | Indica se a função de usuário padrão pode criar grupos de segurança. |  
 | allowedToReadOtherUsers | Booliano | Indica se a função de usuário padrão pode ler outros usuários. |
-|permissionGrantPoliciesAssigned|String collection|Indica se o consentimento do usuário para aplicativos é permitido e, se for, qual permissão para conceder consentimento e qual política de consentimento do aplicativo (permissionGrantPolicy) regem a permissão para que os usuários concedam consentimento. Value should be in the format `managePermissionGrantsForSelf.{id}` , where is the `{id}` **id** of a built-in or custom [app consent policy](/azure/active-directory/manage-apps/manage-app-consent-policies). Uma lista vazia indica que o consentimento do usuário para aplicativos está desabilitado. |
+|permissionGrantPoliciesAssigned|Coleção de cadeias de caracteres|Indica se o consentimento do usuário para aplicativos é permitido e, se for, qual permissão conceder consentimento e qual política de consentimento de aplicativo (permissionGrantPolicy) regem a permissão para que os usuários concedam consentimento. O valor deve estar no formato `managePermissionGrantsForSelf.{id}` , onde é a `{id}` **id** de uma política de consentimento de aplicativo interna ou [personalizada.](/azure/active-directory/manage-apps/manage-app-consent-policies) Uma lista vazia indica que o consentimento do usuário para aplicativos está desabilitado. |
 
 ## <a name="relationships"></a>Relações
 

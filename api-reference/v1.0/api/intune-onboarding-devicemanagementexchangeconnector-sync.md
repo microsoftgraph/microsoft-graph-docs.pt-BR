@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ad6479e426944ecda19fd26a2e11a865d587d6a6
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 535efeda4c08c3368de44ba9347b133f114c799f1ff55356958e4897af1f43bf
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52754801"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54250459"
 ---
 # <a name="sync-action"></a>Ação sync
 

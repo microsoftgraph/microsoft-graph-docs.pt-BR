@@ -1,36 +1,36 @@
 ---
-title: Usar a API do Microsoft Graph para trabalhar com o Project Roma
-description: O Project Roma é uma iniciativa da Microsoft para criar uma plataforma de experiências entre dispositivos. O Project Roma permite que um aplicativo em um cliente ou serviço local interaja com aplicativos e serviços em um host remoto quando o usuário entrar com a mesma conta da Microsoft que eles usam para entrar no dispositivo cliente. Isso permite programar experiências entre dispositivos e várias plataformas centradas em tarefas do usuário, em vez de dispositivos.
+title: Usar a API Graph Microsoft para trabalhar com Project Rome
+description: Project Roma é uma iniciativa da Microsoft para criar uma plataforma de experiências entre dispositivos. Project Roma permite que um aplicativo em um cliente ou serviço local interaja com aplicativos e serviços em um host remoto quando o usuário entrar com a mesma conta da Microsoft usada para entrar no dispositivo cliente. Isso permite que você programe experiências entre dispositivos e plataformas centralizadas em torno de tarefas do usuário, em vez de dispositivos.
 localization_priority: Normal
 author: ailae
 ms.prod: ''
 doc_type: conceptualPageType
-ms.openlocfilehash: 945d3925362c6d013fa411d9b586bca18c8a24a3
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 4b011f217d4ef3f55afdafa6880e60a8cd38bf53cecadee70f4355dafbdb7642
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48037203"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54152310"
 ---
-# <a name="use-the-microsoft-graph-api-to-work-with-project-rome"></a>Usar a API do Microsoft Graph para trabalhar com o Project Roma
+# <a name="use-the-microsoft-graph-api-to-work-with-project-rome"></a>Usar a API Graph Microsoft para trabalhar com Project Rome
 
-O [Project Roma](https://developer.microsoft.com/en-us/windows/project-rome) é uma iniciativa da Microsoft para criar uma plataforma de experiências entre dispositivos. O Project Roma permite que um aplicativo em um cliente ou serviço local interaja com aplicativos e serviços em um host remoto quando o usuário entrar com a mesma conta da Microsoft que eles usam para entrar no dispositivo cliente. Isso permite programar experiências entre dispositivos e várias plataformas centradas em tarefas do usuário, em vez de dispositivos.
+[Project Roma é](https://developer.microsoft.com/en-us/windows/project-rome) uma iniciativa da Microsoft para criar uma plataforma de experiências entre dispositivos. Project Roma permite que um aplicativo em um cliente ou serviço local interaja com aplicativos e serviços em um host remoto quando o usuário entrar com a mesma conta da Microsoft usada para entrar no dispositivo cliente. Isso permite que você programe experiências entre dispositivos e plataformas centralizadas em torno de tarefas do usuário, em vez de dispositivos.
 
-Um componente importante é exposto pelo Microsoft Graph para habilitar essas experiências: atividades.
+Um componente chave é exposto por meio do Microsoft Graph para habilitar essas experiências: atividades.
 
 ## <a name="activities"></a>Atividades
 
-As atividades no Microsoft Graph permitem que você direcionar o compromisso do usuário com seus aplicativos entre dispositivos e plataformas. Uma atividade é a unidade de contrato de usuário e consiste em três componentes:
+As atividades no Microsoft Graph permitem que você conduza o envolvimento do usuário com seus aplicativos em dispositivos e plataformas. Uma atividade é a unidade de envolvimento do usuário e consiste em três componentes:
 
 - Um link profundo
 - Uma representação visual
-- Metadados de conteúdo que descrevem a atividade, usando o [https://schema.org/](https://schema.org/) vocabulário compartilhado
+- Metadados de conteúdo que descrevem a atividade usando o [https://schema.org/](https://schema.org/) vocabulário compartilhado
 
-Quando uma sessão é criada por um aplicativo, um item de histórico é adicionado à atividade para refletir o período de envolvimento do usuário. Cada vez que um usuário reparticipa de uma atividade, um novo item de histórico é adicionado à atividade para acumular o envolvimento do usuário.
+Quando uma sessão é criada por um aplicativo, um item de histórico é adicionado à atividade para refletir o período de envolvimento do usuário. Sempre que um usuário reaja com uma atividade, um novo item de histórico é adicionado à atividade para acumular o envolvimento do usuário.
 
-Quando um aplicativo publica objetos de atividade do usuário, o objeto aparecerá em algumas das novas superfícies de interface de usuário no Windows; por exemplo, notificações e cronograma da Cortana. Você pode especificar tanto metadados avançados (para permitir que as atividades sejam apresentadas no contexto certo) e Visual ricos (usando a marcação de [cartão adaptável](https://adaptivecards.io/) ) em seus objetos de atividade.
+Quando um aplicativo publica objetos de atividade do usuário, o objeto aparece em algumas das novas superfícies da interface do usuário no Windows; por exemplo, Cortana Notificações e Linha do Tempo. Você pode especificar metadados ricos (para permitir que atividades sejam apresentadas [](https://adaptivecards.io/) apenas no contexto correto) e elementos visuais ricos (usando marcação de Cartão Adaptável) em seus objetos de atividade.
 
-Você pode usar as seguintes APIs do Microsoft Graph para criar e recuperar atividades do usuário:
+Você pode usar as seguintes APIs Graph Microsoft para criar e recuperar atividades do usuário:
 
 - [Criar ou substituir atividade](../api/projectrome-put-activity.md)
 - [Obter atividades](../api/projectrome-get-activities.md)
@@ -39,5 +39,5 @@ Você pode usar as seguintes APIs do Microsoft Graph para criar e recuperar ativ
 - [Criar ou substituir um item do histórico](../api/projectrome-put-historyitem.md)
 - [Excluir um item do histórico](../api/projectrome-delete-historyitem.md)
 
-## <a name="whats-new"></a>O que há de novo
+## <a name="whats-new"></a>Novidades
 Saiba mais sobre os [novos recursos e atualizações mais recentes](/graph/whats-new-overview) para este conjunto de APIs.

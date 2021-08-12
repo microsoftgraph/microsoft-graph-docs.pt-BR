@@ -1,114 +1,114 @@
 ---
-title: Usar a autenticação somente de aplicativo com o SDK do Microsoft Graph PowerShell
-description: Saiba como usar a autenticação somente de aplicativo para habilitar cenários não interativos com o SDK do Microsoft Graph PowerShell.
+title: Usar autenticação somente aplicativo com o Microsoft Graph PowerShell SDK
+description: Saiba como usar a autenticação somente para aplicativos para habilitar cenários não interativos com o SDK do Microsoft Graph PowerShell.
 localization_priority: Normal
 author: jasonjoh
-ms.openlocfilehash: 6cad5979e5bd7523174a792465d015dfe7d3d217
-ms.sourcegitcommit: 60ced1be6ed8dd2d23263090a1cfbc16689bb043
+ms.openlocfilehash: 4393982c09d868b3872bdba895ffc3811dd488bf208eb50e5c51c5b41d5c61b6
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "48782925"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54169008"
 ---
-# <a name="use-app-only-authentication-with-the-microsoft-graph-powershell-sdk"></a>Usar a autenticação somente de aplicativo com o SDK do Microsoft Graph PowerShell
+# <a name="use-app-only-authentication-with-the-microsoft-graph-powershell-sdk"></a>Usar autenticação somente aplicativo com o Microsoft Graph PowerShell SDK
 
-O SDK do PowerShell oferece suporte a dois tipos de autenticação: [acesso delegado](..\auth-v2-user.md)e [acesso somente de aplicativo](..\auth-v2-service.md). Este guia se concentrará na configuração necessária para habilitar o acesso somente de aplicativo.
+O SDK do PowerShell dá suporte a dois tipos de autenticação: [acesso](..\auth-v2-user.md)delegado e [acesso somente aplicativo.](..\auth-v2-service.md) Este guia se concentrará na configuração necessária para habilitar o acesso somente ao aplicativo.
 
 > [!IMPORTANT]
-> O acesso somente do aplicativo concede permissões diretamente a um aplicativo e exige que um administrador concorde com os escopos de permissão necessários. Para obter mais detalhes sobre acesso somente de aplicativo, consulte [Microsoft Identity Platform e The OAuth 2,0 Client Credentials Flow](/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow).
+> O acesso somente a aplicativo concede permissões diretamente a um aplicativo e exige que um administrador consenta com os escopos de permissão necessários. Para obter mais detalhes sobre o acesso somente a aplicativos, consulte plataforma de identidade da Microsoft e o fluxo de credenciais do cliente [OAuth 2.0](/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow).
 
-Vamos examinar a configuração de acesso somente aplicativo para um script simples para listar usuários e grupos em seu locatário do Microsoft 365.
+Vamos falar sobre como configurar o acesso somente a aplicativos para um script simples para listar usuários e grupos em seu Microsoft 365 locatário.
 
 ## <a name="configuration"></a>Configuração
 
-Para poder usar o acesso somente de aplicativo com o SDK, você precisa do seguinte.
+Antes de usar o acesso somente a aplicativos com o SDK, você precisa do seguinte.
 
-- Um certificado a ser usado como uma credencial para o aplicativo. Pode ser um certificado autoassinado ou um certificado de uma autoridade.
-- Você deve [registrar um aplicativo](/azure/active-directory/develop/app-objects-and-service-principals) no Azure AD, configurá-lo com os escopos de permissão que seu cenário requer e compartilhar a chave pública do seu certificado.
+- Um certificado a ser usado como uma credencial para o aplicativo. Pode ser um certificado auto-assinado ou um certificado de uma autoridade.
+- Você deve [registrar um aplicativo](/azure/active-directory/develop/app-objects-and-service-principals) no Azure AD, configurá-lo com os escopos de permissão que seu cenário exige e compartilhar a chave pública do certificado.
 
 ### <a name="certificate"></a>Certificado
 
-Você precisará de um certificado X. 509 instalado no armazenamento confiável do usuário no computador em que o script será executado. Você também precisará da chave pública do certificado exportada no formato. cer,. PEM ou. CRT. Você precisará do valor do requerente do certificado.
+Você precisará de um certificado X.509 instalado no armazenamento confiável do usuário no computador onde você executará o script. Você também precisará da chave pública do certificado exportada no formato .cer, .pem ou .crt. Você precisará do valor do assunto do certificado.
 
 ### <a name="register-the-application"></a>Registrar o aplicativo
 
-Você pode registrar o aplicativo no [portal do Azure Active Directory](https://aad.portal.azure.com)ou usando o PowerShell.
+Você pode registrar o aplicativo no [portal Azure Active Directory ou](https://aad.portal.azure.com)usando o PowerShell.
 
 # <a name="portal"></a>[Portal](#tab/azure-portal)
 
-1. Abra um navegador e navegue até o [centro de administração do Azure Active Directory](https://aad.portal.azure.com) e faça logon usando um administrador da organização de locatários do Microsoft 365.
+1. Abra um navegador e navegue até o centro de administração Azure Active Directory [e](https://aad.portal.azure.com) faça logon usando um administrador Microsoft 365 da organização de locatários.
 
-1. Selecione **Azure Active Directory** na navegação esquerda e selecione **Registros de aplicativos** em **Gerenciar** .
+1. Selecione **Azure Active Directory** na navegação esquerda e selecione **Registros de aplicativos** em **Gerenciar**.
 
-    ![Uma captura de tela dos registros de aplicativo ](./images/aad-portal-app-registrations.png)
+    ![Uma captura de tela dos registros do aplicativo ](./images/aad-portal-app-registrations.png)
 
-1. Selecione **Novo registro** . Na página **Registrar um aplicativo** , defina os valores da seguinte forma.
+1. Selecione **Novo registro**. Na página **Registrar um aplicativo**, defina os valores da seguinte forma.
 
     - Defina **Nome** para `Graph PowerShell Script`.
-    - Defina os **tipos de conta com suporte** para **contas nesse diretório organizacional apenas** .
-    - Deixe **URI de redirecionamento** em branco.
+    - Definir **tipos de conta com suporte** como Contas neste diretório organizacional **somente**.
+    - Deixe **o URI de redirecionamento em** branco.
 
-    ![Uma captura de tela da página registrar um aplicativo](./images/register-app.png)
+    ![Captura de tela da página Registrar um aplicativo](./images/register-app.png)
 
-1. Selecione **Registrar** . Na página **script do PowerShell do Graph** , copie os valores da ID do **aplicativo (cliente)** e da ID do **diretório (locatário)** e salve-os.
+1. Selecione **Registrar**. Na página **Graph script do PowerShell,** copie os valores da ID do Aplicativo **(cliente)** e da ID de Diretório **(locatário)** e salve-os.
 
-    ![Uma captura de tela da ID do aplicativo do novo registro de aplicativo](./images/aad-application-id.png)
+    ![Captura de tela da ID do aplicativo do novo registro do aplicativo](./images/aad-application-id.png)
 
-1. Selecione **permissões de API** em **gerenciar** . Escolha **Adicionar uma permissão** .
+1. Selecione **Permissões de API em** **Gerenciar**. Escolha **Adicionar uma permissão**.
 
-1. Selecione **Microsoft Graph** e, em seguida, **permissões de aplicativo** . Add **User. Read. All** e **Group. Read. All** e, em seguida, selecione **adicionar permissões** .
+1. Selecione **Microsoft Graph**, em **seguida, Permissões de Aplicativo.** Adicione **User.Read.All e** **Group.Read.All**, selecione **Adicionar permissões**.
 
-1. Nas **permissões configuradas** , remova a permissão **usuário delegado. Read** no **Microsoft Graph** selecionando o **...** à direita da permissão e selecionando **remover permissão** . Selecione **Sim, remover** para confirmar.
+1. Nas **permissões configuradas,** remova a permissão **User.Read** delegada em **Microsoft Graph** selecionando **o ...** à direita da permissão e selecionando Remover **permissão**. Selecione **Sim, remova** para confirmar.
 
-1. Selecione o botão **conceder permissão de administrador para...** e, em seguida, selecione **Sim** para conceder consentimento de administrador para as permissões de aplicativo configuradas. A coluna **status** na tabela de **permissões configurada** é alterada para **concedido para..** ..
+1. Selecione o **botão Conceder consentimento do administrador para...** e selecione **Sim** para conceder o consentimento do administrador para as permissões de aplicativo configuradas. A **coluna Status** na tabela Permissões **Configuradas** muda para **Concedido para ...**.
 
-    ![Uma captura de tela das permissões configuradas para o webhook com consentimento de administrador concedido](./images/configured-permissions.png)
+    ![Uma captura de tela das permissões configuradas para o webhook com o consentimento do administrador concedido](./images/configured-permissions.png)
 
-1. Selecione **Certificados e segredos** sob **Gerenciar** . Selecione o botão **carregar certificado** . Navegue até o arquivo de chave pública do certificado e selecione **Adicionar** .
+1. Selecione **Certificados e segredos** sob **Gerenciar**. Selecione o **botão Upload certificado.** Navegue até o arquivo de chave pública do certificado e selecione **Adicionar**.
 
 # <a name="powershell"></a>[PowerShell](#tab/powershell)
 
 > [!NOTE]
-> Você deve ter o SDK do Microsoft Graph PowerShell [instalado](installation.md) antes de seguir estas etapas.
+> Você deve ter o Microsoft Graph PowerShell SDK [instalado](installation.md) antes de seguir estas etapas.
 
-Você pode estar se perguntando: "posso usar o SDK do PowerShell para registrar um aplicativo, para que eu possa usar o SDK do PowerShell?" Sim! Nesse caso, você está usando o SDK do PowerShell com acesso delegado, fazendo logon como administrador e criando o registro do aplicativo. Em seguida, usando esse registro de aplicativo, você é capaz de usar o SDK do PowerShell com acesso somente de aplicativo, permitindo scripts autônomos.
+Você pode estar se perguntando: "Posso usar o SDK do PowerShell para registrar um aplicativo, para que eu possa usar o SDK do PowerShell?" Sim! Nesse caso, você está usando o SDK do PowerShell com acesso delegado, fazendo logom como administrador e criando o registro do aplicativo. Em seguida, usando esse registro de aplicativo, você pode usar o SDK do PowerShell com acesso somente a aplicativos, permitindo scripts autônomos.
 
-1. Use um editor de texto para criar um novo arquivo chamado **RegisterAppOnly.ps1** . Cole o código a seguir no arquivo.
+1. Use um editor de texto para criar um novo arquivo chamado **RegisterAppOnly.ps1**. Colar o código a seguir no arquivo.
 
     :::code language="powershell" source="RegisterAppOnly.ps1":::
 
-1. Salve o arquivo. Abra o PowerShell no diretório que contém **RegisterAppOnly.ps1** e execute o comando a seguir.
+1. Salve o arquivo. Abra o PowerShell no diretório **que** contémRegisterAppOnly.ps1e execute o seguinte comando.
 
     ```powershell
     .\RegisterAppOnly.ps1 -AppName "Graph PowerShell Script" -CertPath "PATH_TO_PUBLIC_KEY_FILE"
     ```
 
-1. Abra o navegador conforme solicitado. Entre com uma conta de administrador e aceite as permissões.
+1. Abra seu navegador conforme solicitado. Entre com uma conta de administrador e aceite as permissões.
 
-1. Revise a saída do prompt `Please go to the following URL in your browser to provide admin consent` . Copie a URL fornecida e cole-a no navegador. Entre com uma conta de administrador para conceder o consentimento do administrador ao aplicativo recentemente registrado.
+1. Revise a saída do prompt `Please go to the following URL in your browser to provide admin consent` . Copie a URL fornecida e a colar no navegador. Entre com uma conta de administrador para conceder o consentimento do administrador ao seu aplicativo recém-registrado.
 
     > [!NOTE]
-    > Após conceder o consentimento do administrador, o navegador exibirá um erro: `AADSTS500113: No reply address is registered for the application` . Isso ocorre porque o registro do aplicativo não inclui uma URL de redirecionamento. Esse erro pode ser ignorado.
+    > Depois de conceder o consentimento do administrador, o navegador exibirá um erro: `AADSTS500113: No reply address is registered for the application` . Isso acontece porque o registro do aplicativo não inclui uma URL de redirecionamento. Esse erro pode ser ignorado.
 
-1. Revise o restante da saída do PowerShell para o `Connect-MgGraph` comando previamente preenchido com os valores para o registro do aplicativo.
+1. Revise o restante da saída do PowerShell para `Connect-MgGraph` o comando pré-preenchido com os valores do registro do aplicativo.
 
 ---
 
 ## <a name="authenticate"></a>Autenticar
 
-Você deve ter três informações depois de concluir as etapas de configuração acima.
+Você deve ter três informações após concluir as etapas de configuração acima.
 
-- Requerente do certificado do certificado carregado no registro de aplicativo do Azure AD.
-- ID de aplicativo para o registro do aplicativo.
+- Assunto do certificado carregado no registro do aplicativo do Azure AD.
+- ID do aplicativo para o registro do aplicativo.
 - Sua ID de locatário.
 
-Vamos usá-los para testar a autenticação. Abra o PowerShell e execute o comando a seguir, substituindo os espaços reservados por suas informações.
+Vamos usá-los para testar a autenticação. Abra o PowerShell e execute o seguinte comando, substituindo os espaço reservados por suas informações.
 
 ```powershell
 Connect-MgGraph -ClientID YOUR_APP_ID -TenantId YOUR_TENANT_ID -CertificateName YOUR_CERT_SUBJECT
 ```
 
-Se isso tiver êxito, você verá `Welcome To Microsoft Graph!` . Execute `Get-MgContext` para verificar se você se autenticou somente com o aplicativo. A saída deve ter a seguinte aparência.
+Se isso for bem-sucedido, você verá `Welcome To Microsoft Graph!` . Execute `Get-MgContext` para verificar se você se autentica com somente aplicativo. A saída deve ter a seguinte aparência.
 
 ```powershell
 ClientId              : YOUR_APP_ID
@@ -144,13 +144,13 @@ Get-MgGroup -Property "id,displayName" -PageSize 50 | Format-Table DisplayName, 
 Disconnect-MgGraph
 ```
 
-Substitua os espaços reservados no `Connect-MgGraph` comando por suas informações. Salve o arquivo e, em seguida, abra o PowerShell no diretório em que você criou o arquivo. Execute o script com o comando a seguir.
+Substitua os espaço reservados no `Connect-MgGraph` comando por suas informações. Salve o arquivo e abra o PowerShell no diretório onde você criou o arquivo. Execute o script com o seguinte comando.
 
 ```powershell
 .\GraphAppOnly.ps1
 ```
 
-O script gera uma lista de usuários e grupos semelhante à saída abaixo (truncada para obter brevidade).
+O script gera uma lista de usuários e grupos semelhantes à saída abaixo (truncado para brevidade).
 
 ```powershell
 Welcome To Microsoft Graph!

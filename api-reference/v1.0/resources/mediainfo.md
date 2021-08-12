@@ -1,18 +1,18 @@
 ---
-title: tipo de recurso mediaInfo
+title: Tipo de recurso mediaInfo
 description: As informações de mídia usadas em ações para prompts.
 author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 8e2f5a0d59f06449d122f4ca2db582afa4da9c39
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 8d3a03604a608963c3d5ead22b523f0b8ce3d0979aa34666f4470bad5b61fad1
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47965523"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54141424"
 ---
-# <a name="mediainfo-resource-type"></a>tipo de recurso mediaInfo
+# <a name="mediainfo-resource-type"></a>Tipo de recurso mediaInfo
 
 Namespace: microsoft.graph
 
@@ -21,8 +21,8 @@ As informações de mídia usadas em ações para prompts.
 ## <a name="properties"></a>Propriedades
 | Propriedade       | Tipo    | Descrição                      |
 |:---------------|:--------|:---------------------------------|
-| resourceId     | String  | Opcional. Usada para identificar exclusivamente o recurso. Se passadas, o URI de prompt será armazenado em cache em relação a este ResourceId como uma chave. |
-| URI            | String  | Caminho para o prompt que será reproduzido. O atualmente oferece suporte somente a exemplos de arquivo Wave (. wav), de canal único e 16 bits com uma taxa de amostragem de 16.000 (16 kHz). |
+| resourceId     | Cadeia de caracteres  | Opcional. Usado para identificar exclusivamente o recurso. Se passado, o uri do prompt será armazenado em cache em relação a esse resourceId como uma chave. |
+| uri            | Cadeia de caracteres  | Caminho para o prompt que será tocado. Atualmente, só há suporte para formato de arquivo Wave (.wav), amostras de um único canal, de 16 bits com uma taxa de amostragem de 16.000 (16KHz). |
 
 
 ## <a name="json-representation"></a>Representação JSON

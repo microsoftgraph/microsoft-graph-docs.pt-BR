@@ -5,12 +5,12 @@ author: AkJo
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: f089c120ac4ba1307f0b0ffa2f08f8578613eaa1
-ms.sourcegitcommit: 1940be9846055aa650c6c03982b74a961f1e316a
+ms.openlocfilehash: e9e3bbc643666d3dc0596915e8734802065bca413f6d5d73bc51d880a64d1b5c
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/17/2021
-ms.locfileid: "53467234"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54178000"
 ---
 # <a name="publicinnererror-resource-type"></a>Tipo de recurso publicInnerError
 
@@ -20,10 +20,10 @@ Representa os detalhes internos de [um publicError](../resources/publicerrordeta
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|código|String|O código de erro.|
+|código|Cadeia de caracteres|O código de erro.|
 |detalhes|[Coleção publicErrorDetail](../resources/publicerrordetail.md)|Uma coleção de detalhes de erro.|
 |mensagem|String|A mensagem de erro.|
-|destino|String|O destino do erro.|
+|destino|Cadeia de caracteres|O destino do erro.|
 
 ## <a name="relationships"></a>Relações
 Nenhum

@@ -5,12 +5,12 @@ author: isabelleatmsft
 localization_priority: Normal
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: b0e28deb57a84ac9d1a7072ebc2e351a704d1142
-ms.sourcegitcommit: 5a1cc1943527aa268e3797ee514871e65eb474a6
+ms.openlocfilehash: c7c0fcfb14041888ba760492bcfe6a2a224eb8656fdab8d7fee922f3e86b2af9
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53030985"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54230820"
 ---
 # <a name="accessreviewinactiveusersqueryscope-resource-type"></a>Tipo de recurso accessReviewInactiveUsersQueryScope
 
@@ -23,10 +23,10 @@ Herda de [accessReviewQueryScope](../resources/accessreviewqueryscope.md).
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|inactiveDuration|Duração|Define a duração da inatividade. A inatividade é baseada na última data de entrada do usuário em comparação com a data de início da instância de revisão de acesso. Se essa propriedade não for especificada, ela será atribuída ao valor padrão `PT0S` .|
-|consulta|String|Herdado [de accessReviewQueryScope](../resources/accessreviewqueryscope.md).|
+|inactiveDuration|Duration|Define a duração da inatividade. A inatividade é baseada na última data de entrada do usuário em comparação com a data de início da instância de revisão de acesso. Se essa propriedade não for especificada, ela será atribuída ao valor padrão `PT0S` .|
+|consulta|Cadeia de caracteres|Herdado [de accessReviewQueryScope](../resources/accessreviewqueryscope.md).|
 |queryRoot|String|Herdado [de accessReviewQueryScope](../resources/accessreviewqueryscope.md).|
-|queryType|String|Herdado [de accessReviewQueryScope](../resources/accessreviewqueryscope.md).|
+|queryType|Cadeia de caracteres|Herdado [de accessReviewQueryScope](../resources/accessreviewqueryscope.md).|
 
 Você também deve especificar a **propriedade @odata.type com** o valor `#microsoft.graph.accessReviewInactiveUsersQueryScope` . Para obter mais  informações sobre opções de configuração para escopo usando **accessReviewInactiveUsersQueryScope**, consulte Configure the scope of your [access review definition using the Microsoft Graph API](/graph/accessreviews-scope-concept).
 

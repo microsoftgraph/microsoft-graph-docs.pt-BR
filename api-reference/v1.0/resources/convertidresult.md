@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: outlook
 author: abheek-das
-ms.openlocfilehash: 1710c437421426b4bd072e3c654df7d076d0f9f7
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: ec94f586f0f8233f1b56965f4dea4640360b63eb43f9d1fae69988ae61d401e2
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50135151"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54155159"
 ---
 # <a name="convertidresult-resource-type"></a>Tipo de recurso convertIdResult
 
@@ -23,8 +23,8 @@ O resultado de uma conversão de formato de ID executada pela [função translat
 | Propriedade | Tipo | Descrição |
 |:---------|:-----|:------------|
 | sourceId | String | O identificador que foi convertido. Esse valor é o identificador original não convertido. |
-| targetId | String | O identificador convertido. Esse valor não estará presente se a conversão falhar. |
-| errorDetails | [genericError](genericerror.md) | Um objeto de erro indicando o motivo da falha de conversão. Esse valor não estará presente se a conversão tiver êxito. |
+| targetId | Cadeia de caracteres | O identificador convertido. Esse valor não estará presente se a conversão falhar. |
+| errorDetails | [genericError](genericerror.md) | Um objeto de erro que indica o motivo da falha de conversão. Esse valor não estará presente se a conversão tiver êxito. |
 
 ## <a name="json-representation"></a>Representação JSON
 

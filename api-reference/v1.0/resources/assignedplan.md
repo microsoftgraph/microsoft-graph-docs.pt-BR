@@ -5,12 +5,12 @@ localization_priority: Normal
 author: jpettere
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 182ef3239437234c74945fa37483924429f2200b
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 443b7c161a1d1742ec01b7b39537c07de2b25c781ed22e13ac5a8ad122e0cdd9
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50958091"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54218832"
 ---
 # <a name="assignedplan-resource-type"></a>Tipo de recurso assignedPlan
 
@@ -36,7 +36,7 @@ A propriedade **assignedPlans** das entidades [user](user.md) e [organization](o
 | Habilitado | Disponível para uso normal. |
 | Aviso | Disponível para uso normal, mas está em um período de carência. |
 | Suspenso | Indisponível, mas todos os dados associados à funcionalidade devem ser preservados. |
-| Excluída | Indisponíveis e quaisquer dados associados à funcionalidade podem ser excluídos. |
+| Deleted | Indisponíveis e quaisquer dados associados à funcionalidade podem ser excluídos. |
 | LockedOut | Indisponível para todos os administradores e usuários, mas todos os dados associados à funcionalidade devem ser preservados. |
 
 ## <a name="json-representation"></a>Representação JSON

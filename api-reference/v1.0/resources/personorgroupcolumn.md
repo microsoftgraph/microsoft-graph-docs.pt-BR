@@ -6,12 +6,12 @@ localization_priority: Normal
 ms.prod: insights
 description: O recurso personOrGroupColumn em uma columnDefinition indica que os valores da coluna representam uma pessoa ou grupo escolhido no diretório.
 doc_type: resourcePageType
-ms.openlocfilehash: 8d4875ba813f5c1491135b2d1615c4146b438304
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 728d9244a08d893eacc53f01106d07a952f536f5ea978a03584ed41d3151c3c1
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48032415"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54196919"
 ---
 # <a name="personorgroupcolumn-resource-type"></a>Tipo de recurso PersonOrGroupColumn
 
@@ -40,7 +40,7 @@ Aqui está uma representação JSON de um recurso **personOrGroupColumn**.
 | **displayAs**              | string  | Como exibir as informações sobre a pessoa ou grupo escolhido. Veja a seguir.
 | **chooseFromType**         | string  | Se permite somente a seleção de pessoas, ou de pessoas e grupos. Deve ser `peopleAndGroups` ou `peopleOnly`.
 
-## <a name="displayas-options"></a>Opções de displayas
+## <a name="displayas-options"></a>Opções DisplayAs
 
 | Valor de displayAs               | Descrição
 |:------------------------------|:-----------------------

@@ -1,24 +1,24 @@
 ---
 title: 'reportRoot: getOffice365GroupsActivityDetail'
-description: Obter detalhes sobre a atividade de grupos do Microsoft 365 por grupo.
+description: Obter detalhes sobre Microsoft 365 grupos por grupo.
 localization_priority: Normal
 ms.prod: reports
 author: sarahwxy
 doc_type: apiPageType
-ms.openlocfilehash: 059a2b3bfb35545df66ea68015f5b68354e332e6
-ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
+ms.openlocfilehash: 9c6875bfb4cc37bb9ea65e6a51f6bf926517ec0ae3a19723983ea8f42914f83d
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49981736"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54238325"
 ---
 # <a name="reportroot-getoffice365groupsactivitydetail"></a>reportRoot: getOffice365GroupsActivityDetail
 
 Namespace: microsoft.graph
 
-Obter detalhes sobre a atividade de grupos do Microsoft 365 por grupo.
+Obter detalhes sobre Microsoft 365 grupos por grupo.
 
-> **Observação:** Para obter detalhes sobre diferentes visualizações e nomes de relatórios, consulte relatórios do [Microsoft 365 - grupos do Microsoft 365.](https://support.office.com/client/Office-365-groups-a27f1a99-3557-4f85-9560-a28e3d822a40)
+> **Observação:** Para obter detalhes sobre diferentes exibições de relatório e nomes, [consulte Microsoft 365 relatórios - Microsoft 365 grupos](https://support.office.com/client/Office-365-groups-a27f1a99-3557-4f85-9560-a28e3d822a40).
 
 ## <a name="permissions"></a>Permissões
 
@@ -85,7 +85,7 @@ O arquivo CSV possui os seguintes cabeçalhos para colunas.
 - Armazenamento utilizado da caixa de correio do Exchange (bytes)
 - Contagem total de arquivos do SharePoint
 - Armazenamento utilizado do site do SharePoint (bytes)
-- ID do Grupo
+- Id do grupo
 - Período de Relatório
 
 ## <a name="example"></a>Exemplo

@@ -1,22 +1,22 @@
 ---
-title: recurso onenoteEntityBaseModel
-description: Este é o tipo base para entidades do OneNote.
+title: Recurso onenoteEntityBaseModel
+description: Esse é o tipo base para OneNote entidades.
 author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
 doc_type: resourcePageType
-ms.openlocfilehash: 1ae81a7f3ddc221d14e0427c11245b283e96ec94
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: b80bedb6c119045287dab768407759f63538f7ed420d67b05da929e4f2d3e36a
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48079099"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54154935"
 ---
-# <a name="onenoteentitybasemodel-resource"></a>recurso onenoteEntityBaseModel
+# <a name="onenoteentitybasemodel-resource"></a>Recurso onenoteEntityBaseModel
 
 Namespace: microsoft.graph
 
-Este é o tipo base para entidades do OneNote.
+Esse é o tipo base para OneNote entidades.
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -41,7 +41,7 @@ Veja a seguir uma representação JSON do recurso.
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|própria|Cadeia de caracteres|O ponto de extremidade onde você pode obter detalhes sobre a página. Somente leitura.|
+|self|Cadeia de caracteres|O ponto de extremidade onde você pode obter detalhes sobre a página. Somente leitura.|
 
 <!-- uuid: bfb567de-2a2a-4b81-bf47-a55626a0c166
 2015-10-25 14:57:30 UTC -->

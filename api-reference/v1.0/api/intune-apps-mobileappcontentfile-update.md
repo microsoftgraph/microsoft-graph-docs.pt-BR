@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 1e2d577685e2f1764446993486d1a3d845d4824a
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 0fe9aa7a32ec818b9ab15d06011842640acf2b7313d4f3d72596b91bb9072028
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52758747"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54147655"
 ---
 # <a name="update-mobileappcontentfile"></a>Atualizar mobileAppContentFile
 
@@ -53,7 +53,7 @@ A tabela a seguir mostra as propriedades obrigatórias ao criar [mobileAppConten
 |:---|:---|:---|
 |azureStorageUri|Cadeia de caracteres|O URI de Armazenamento do Azure.|
 |isCommitted|Booliano|Um valor que indica se o arquivo tem está confirmado.|
-|id|String|A ID do arquivo.|
+|id|Cadeia de caracteres|A ID do arquivo.|
 |createdDateTime|DateTimeOffset|A hora em que o arquivo foi criado.|
 |nome|String|O nome do arquivo.|
 |size|Int64|O tamanho do arquivo antes da criptografia.|

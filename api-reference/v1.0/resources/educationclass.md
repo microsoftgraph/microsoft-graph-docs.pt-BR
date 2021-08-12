@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mlafleur
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 528ea878ad5ed507c83a750d617209b4cde3d589
-ms.sourcegitcommit: 34891a1c601976166958be1aa04bab5936592b44
+ms.openlocfilehash: 3d1d6eb24e9d9b21ed8e828488ae306ec5c4bae549e51ecf0e69d63c5319e3a5
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52231515"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54160055"
 ---
 # <a name="educationclass-resource-type"></a>Tipo de recurso educationClass
 
@@ -28,7 +28,7 @@ Herda da [entidade](../resources/entity.md).
 | [Criar educationClass](../api/educationclass-post.md) | [educationClass](../resources/educationclass.md)            | Crie um novo [objeto educationClass.](../resources/educationclass.md)                                |
 | [Obter educationClass](../api/educationclass-get.md)       | [educationClass](../resources/educationclass.md)            | Leia as propriedades e as relações de um [objeto educationClass.](../resources/educationclass.md) |
 | [Atualizar educationClass](../api/educationclass-update.md) | [educationClass](../resources/educationclass.md)            | Atualize as propriedades de um [objeto educationClass.](../resources/educationclass.md)                 |
-| [Excluir educationClass](../api/educationclass-delete.md) | Nenhum                                                        | [Exclua um objeto educationClass.](../resources/educationclass.md)                                  |
+| [Excluir educationClass](../api/educationclass-delete.md) | None                                                        | [Exclua um objeto educationClass.](../resources/educationclass.md)                                  |
 | [delta](../api/educationclass-delta.md)                  | Coleção [educationClass](../resources/educationclass.md) | Obter alterações incrementais na coleção de recursos.                                                  |
 
 ## <a name="properties"></a>Propriedades
@@ -38,13 +38,13 @@ Herda da [entidade](../resources/entity.md).
 | id                   | String                                         | Identificador de objeto. Herdado da [entidade](../resources/entity.md). |
 | displayName          | String                                         | Nome da aula.                                                 |
 | mailNickname         | String                                         | Nome de email para enviar email a todos os membros, se essa propriedade estiver habilitada.    |
-| descrição          | String                                         | Descrição da aula.                                          |
+| description          | Cadeia de caracteres                                         | Descrição da aula.                                          |
 | createdBy            | [identitySet](../resources/identityset.md)     | Entidade que criou a aula                                       |
 | classCode            | Cadeia de caracteres                                         | Código de aula usada pela escola para identificar a aula.               |
 | externalName         | Cadeia de caracteres                                         | Nome da aula no sistema de sincronização.                           |
 | externalId           | Cadeia de caracteres                                         | ID da aula no sistema de sincronização.                           |
 | externalSource       | educationExternalSource                        | Como essa aula foi criada. Os valores possíveis são: `sis` e `manual`.  |
-| externalSourceDetail | String                                         | O nome da fonte externa de onde esses recursos foram gerados. |
+| externalSourceDetail | Cadeia de caracteres                                         | O nome da fonte externa de onde esses recursos foram gerados. |
 | grade                | Cadeia de caracteres                                         | Nível de nota da classe.                                          |
 | term                 | [educationTerm](../resources/educationterm.md) | Termos dessa aula.                                               |
 

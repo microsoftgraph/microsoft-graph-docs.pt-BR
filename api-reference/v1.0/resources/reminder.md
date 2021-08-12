@@ -5,18 +5,18 @@ localization_priority: Normal
 author: harini84
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 4e5343299e424d299328ec531ed7c3a52fbc4be2
-ms.sourcegitcommit: 60ced1be6ed8dd2d23263090a1cfbc16689bb043
+ms.openlocfilehash: 8a60e6eb0ebdd91540fafc5c579ec6992428bd13fc2edae8668f5878205c54aa
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "48782967"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54184498"
 ---
 # <a name="reminder-resource-type"></a>Tipo de recurso reminder
 
 Namespace: microsoft.graph
 
-Um lembrete para um [evento](event.md) em um [calendário](calendar.md)do usuário.
+Um lembrete para um [evento](event.md) em um calendário do [usuário.](calendar.md)
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|

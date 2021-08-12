@@ -3,12 +3,12 @@ title: Integração do aplicativo Android no SDK do lado do cliente para notific
 description: Integre o aplicativo Android com notificações de usuário no SDK do cliente.
 localization_priority: Priority
 ms.prod: notifications
-ms.openlocfilehash: c56aef1befa98c2082d3476900a8e40c4034653f
-ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
+ms.openlocfilehash: 720991eb253a9f1a23ff0299997e99c9c24345439d2f85c897a0e758e346a79a
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48288676"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54211700"
 ---
 # <a name="integrate-your-android-app-with-the-client-side-sdk-for-user-notifications"></a>Integração do aplicativo Android no SDK do lado do cliente para notificações ao usuário
 
@@ -31,7 +31,7 @@ O processo envolve alguns componentes:
 
 O diagrama mostra as próximas etapas: 
 
-1. Lógica do aplicativo. Essa etapa captura o que aciona a notificação para ser publicada para o usuário. Isso é lógica específica do aplicativo e pode ser uma atualização de dados ou evento sobre algo diferente do Microsoft Graph, como um novo evento do calendário ou atribuição de tarefas, ou o que o serviço de aplicativo quer notificar o usuário.
+1. Lógica do aplicativo. Esta etapa captura o que aciona a notificação a ser publicada para o usuário. Esta é uma lógica específica do aplicativo e pode ser um evento ou atualização de dados sobre alguma outra coisa no Microsoft Graph, como um novo evento de calendário ou atribuição de tarefa, ou então seu serviço de aplicativo deseja notificar o usuário sobre.
 2. O servidor do aplicativo publica uma notificação para o usuário alvo pela API de notificações do Microsoft Graph. Para saber mais, consulte [integração com o lado do servidor](notifications-integrating-app-server.md).
 3. Ao receber a solicitação Web com nova notificação, as notificações do Microsoft Graph mantêm o conteúdo da notificação em segurança na nuvem para esse aplicativo e esse usuário.
 4. Para cada instância do cliente do aplicativo inscrita para receber notificações para esse usuário, as notificações do Microsoft Graph envia um sinal para notificar cliente do aplicativo, por meio do serviço de envio por push nativo fornecido pelo sistema operacional. Nesse caso, o aplicativo é um aplicativo Android, e ele usa [mensagens de dados FCM](https://firebase.google.com/docs/cloud-messaging/concept-options) para enviar o sinal. 
@@ -49,7 +49,7 @@ O diagrama a seguir mostra o fluxo de dados para alterar o estado de uma notific
 
 ![Atualização de fluxo de notificação para aplicativo Android](images/notifications-notification-update-android.png)
 
-Observe que a segunda parte do fluxo é semelhante ao fluxo de tratamento de novas notificações de entrada. Isso é esperado – o padrão de programação no SDK  foi projetado para que o cliente do aplicativo possa lidar com todos os tipos de alterações de dados de notificações do usuário (novas notificações de entrada, alterações de estado de notificação, notificação excluída) de maneira semelhante.  
+Observe que a segunda parte do fluxo é semelhante ao fluxo para lidar com novas notificações recebidas. Isso ocorre por design - o padrão de programação do SDK é projetado para que o aplicativo cliente possa lidar com todos os tipos de alterações de dados de notificação do usuário (novas notificações recebidas, alterações de estado de notificação, notificação excluída) de maneira semelhante.  
 
 O diagrama mostra as próximas etapas:
 
@@ -104,7 +104,7 @@ Observe que as permissões relacionadas ao Bluetooth só são necessárias para 
 <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
 <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 ```
-Em seguida, acesse as classes de atividade onde desejar que a funcionalidade dos Dispositivos Conectados seja localizada. Importar os namespaces a seguir.
+Em seguida, vá para as aulas de atividades nas quais deseja que a funcionalidade Dispositivos conectados esteja localizada. Importe os seguintes namespaces.
 
 ```java
 import com.microsoft.connecteddevices;

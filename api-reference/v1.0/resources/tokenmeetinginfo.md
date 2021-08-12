@@ -1,24 +1,24 @@
 ---
-title: tipo de recurso tokenMeetingInfo
+title: Tipo de recurso tokenMeetingInfo
 description: O tipo tokenMeetingInfo.
 author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 5ac5e8303b0326e4c540757b7564edc55945cfc8
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 269cd5589539cb63b20d61e5103a273a083882a4ffa89446e1c6629444d1b9c5
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48090666"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54159859"
 ---
-# <a name="tokenmeetinginfo-resource-type"></a>tipo de recurso tokenMeetingInfo
+# <a name="tokenmeetinginfo-resource-type"></a>Tipo de recurso tokenMeetingInfo
 
 Namespace: microsoft.graph
 
-Estas são as informações do token que permitem participar de uma reunião existente. Isso é obtido como parte da notificação de chamada de entrada. 
+Essas são as informações de token que permitem que você participe de uma reunião existente. Isso é obtido como parte da notificação de chamada de entrada. 
 
-No caso de uma chamada ser desconectada, essas informações podem ajudá-lo a reingressar nessa chamada.
+Caso uma chamada seja desconectada, essas informações podem ajudá-lo a reatar essa chamada.
 
 ## <a name="properties"></a>Propriedades
 

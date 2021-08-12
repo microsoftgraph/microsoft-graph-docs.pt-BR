@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso outlookCategory
-description: Representa uma categoria pela qual um usuário pode agrupar itens do Outlook como mensagens e eventos. O usuário define categorias em uma lista mestra e pode aplicar uma ou mais dessas definições pelo usuário
+description: Representa uma categoria pela qual um usuário pode agrupar itens do Outlook como mensagens e eventos. O usuário define categorias em uma lista mestra e pode aplicar uma ou mais dessas definidas pelo usuário
 localization_priority: Normal
 author: abheek-das
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: a2adf42417c6c5c61f5e161d3f93bd4c58fd850d
-ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
+ms.openlocfilehash: 30bed7723cc25b668029bae494a24cbc6c4278fc4caeb6d55f039e65c68e63f9
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50293005"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54182375"
 ---
 # <a name="outlookcategory-resource-type"></a>Tipo de recurso outlookCategory
 
@@ -27,7 +27,7 @@ Cada categoria é atribuída por duas propriedades: **displayName** e **color**.
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|displayName|String|Um nome exclusivo que identifica uma categoria na caixa de correio do usuário. Após a criação de uma categoria, o nome não poderá ser alterado. Somente leitura.|
+|displayName|Cadeia de caracteres|Um nome exclusivo que identifica uma categoria na caixa de correio do usuário. Após a criação de uma categoria, o nome não poderá ser alterado. Somente leitura.|
 |color|categoryColor|Uma constante de cor predefinida que caracteriza uma categoria e que é mapeada para uma das 25 cores predefinidas. Confira a observação abaixo. |
 
 > **Observação** Os valores possíveis para **color** são constantes predefinidas como `None`, `preset0` e `preset1`. Cada constante predefinida é mapeada para uma cor. A cor real depende do cliente do Outlook em que as categorias estão sendo exibidas. A tabela a seguir mostra as cores mapeadas para cada constante predefinida do Outlook (cliente da área de trabalho). 
@@ -88,7 +88,7 @@ Veja a seguir uma representação JSON do recurso.
 |[Obter categoria](../api/outlookcategory-get.md) | [outlookCategory](../resources/outlookcategory.md) |Obtenha as propriedades e as relações do objeto **outlookCategory** especificado.|
 |[Criar](../api/outlookuser-post-mastercategories.md) | [outlookCategory](../resources/outlookcategory.md) |Cria um objeto **outlookCategory** na lista mestra de categorias do usuário.|
 |[Atualizar](../api/outlookcategory-update.md) | [outlookCategory](../resources/outlookcategory.md) |Atualize a propriedade gravável, **color**, do objeto **outlookCategory** especificado. |
-|[Delete](../api/outlookcategory-delete.md) | Nenhum |Exclua o objeto **outlookCategory** especificado. |
+|[Delete](../api/outlookcategory-delete.md) | None |Exclua o objeto **outlookCategory** especificado. |
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

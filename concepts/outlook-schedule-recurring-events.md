@@ -1,19 +1,19 @@
 ---
 title: Agendar compromissos repetidos como eventos recorrentes no Outlook
-description: Eventos recorrentes são uma parte importante do calendário do Outlook. Seja uma reunião semanal individual com seu gerente ou uma reunião de revisão de toda a divisão que ocorre na segunda terça-feira de cada mês, eventos recorrentes permitem que o evento seja criado uma fez e que o servidor preencha o restante da série.
+description: Os eventos recorrentes são uma parte importante do calendário do Outlook. Quer seja uma reunião individual semanal com seu gerente ou uma reunião de revisão de toda a divisão que acontece na segunda terça-feira de cada mês, os eventos recorrentes tornam mais fácil criar o evento uma vez e deixar o servidor preencher o resto da série.
 author: harini84
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: 67736178c0f1987b85bbf1004ed41df8110f512f
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: dccb42e0e4363eee23bc675154716abde6ffa44dba7abaf64ad7720eceb0e36d
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50470078"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54165557"
 ---
 # <a name="schedule-repeating-appointments-as-recurring-events-in-outlook"></a>Agendar compromissos repetidos como eventos recorrentes no Outlook
 
-Eventos recorrentes são uma parte importante do calendário do Outlook. Seja uma reunião semanal individual com seu gerente ou uma reunião de revisão de toda a divisão que ocorre na segunda terça-feira de cada mês, eventos recorrentes permitem que o evento seja criado uma fez e que o servidor preencha o restante da série.
+Os eventos recorrentes são uma parte importante do calendário do Outlook. Quer seja uma reunião individual semanal com seu gerente ou uma reunião de revisão de toda a divisão que acontece na segunda terça-feira de cada mês, os eventos recorrentes tornam mais fácil criar o evento uma vez e deixar o servidor preencher o resto da série.
 
 O principal dado que permite que os eventos recorrentes sejam "expandidos" em ocorrências individuais é a regra de recorrência. A regra especifica a frequência de repetição do evento e sua duração. As regras de recorrência modelam as APIs REST do Outlook na propriedade **recorrência** do [recurso de evento](/graph/api/resources/event?view=graph-rest-1.0). 
 
@@ -137,7 +137,7 @@ O padrão mensal relativo faz com que um evento se repita no mesmo dia da semana
 
 | Propriedade | Relevância | Descrição |
 |----------|-----------|-------------|
-| **daysOfWeek** | Obrigatório | Especifica em quais dias da semana o evento pode ocorrer. Eventos mensais relativos apenas ocorrerem uma vez por mês, portanto, se mais de um valor for especificado, o evento ocorrerá no primeiro dia que satisfaz o padrão. |
+| **daysOfWeek** | Obrigatório | Especifica em quais dias da semana o evento pode ocorrer. Os eventos mensais relativos ocorrem apenas uma vez por mês, portanto, se mais de um valor for especificado, o evento cairá no primeiro dia que satisfaça o padrão. |
 | **índice** | Opcional | Especifica em qual instância dos dias permitidos especificados em **daysOfsWeek** o evento ocorre, contando a partir da primeira instância no mês. Valores possíveis: `first`, `second`, `third`, `fourth` e `last`. Valor padrão: `first`. |
 | **intervalo** | Obrigatório | Especifica o número de meses entre cada ocorrência. |
 | **type** | Obrigatório | Tem que ser definida como `relativeMonthly`. |
@@ -193,13 +193,13 @@ O padrão anual absoluto faz com que um evento se repita no mesmo mês e dia (po
 
 ### <a name="relative-yearly"></a>Anual relativo
 
-O padrão anual relativo faz com que um evento se repita no mesmo dia da semana na mesma posição relativa de um mês específico, com base no número de anos entre cada ocorrência. Por exemplo, "toda última quarta-feira de novembro".
+O padrão anual relativo faz com que um evento se repita no mesmo dia da semana na mesma posição relativa em um mês específico, com base no número de anos entre cada ocorrência. Por exemplo, "toda última quarta-feira de novembro".
 
 #### <a name="relevant-properties"></a>Propriedades relevantes
 
 | Propriedade | Relevância | Descrição |
 |----------|-----------|-------------|
-| **daysOfWeek** | Obrigatório | Especifica em quais dias da semana o evento pode ocorrer. Eventos anuais relativos apenas ocorrerem uma vez por ano, portanto, se mais de um valor for especificado, o evento ocorrerá no primeiro dia que satisfaz o padrão. |
+| **daysOfWeek** | Obrigatório | Especifica em quais dias da semana o evento pode ocorrer. Os eventos anuais relativos ocorrem apenas uma vez por ano, portanto, se mais de um valor for especificado, o evento cairá no primeiro dia que satisfaça o padrão. |
 | **índice** | Opcional | Especifica em qual instância dos dias permitidos especificados em **daysOfsWeek** o evento ocorre, contando a partir da primeira instância no mês. Valores possíveis: `first`, `second`, `third`, `fourth` e `last`. Valor padrão: `first`. |
 | **Mês** | Obrigatório | Especifica em qual mês o evento ocorre. |
 | **intervalo** | Obrigatório | Especifica o número de anos entre cada ocorrência. |
@@ -262,7 +262,7 @@ O intervalo de datas de término faz com que um evento ocorra em todos os dias q
 
 | Propriedade | Relevância | Descrição |
 |----------|-----------|-------------|
-| **endDate** | Obrigatório | Especifica a data para parar de aplicar o padrão. Observação: Esta última ocorrência da reunião pode não ocorrer nessa data se ela não se encaixar no padrão. |
+| **endDate** | Obrigatório | Especifica a data para parar de aplicar o padrão. Observe que a última ocorrência da reunião pode não ocorrer nesta data se não se enquadrar no padrão. |
 | **recurrenceTimeZone** | Opcional | Especifica o fuso horário das propriedades **startDate** e **endDate**. Se a propriedade não for especificada, será usado o fuso horário do evento. |
 | **startDate** | Obrigatório | Especifica a data para começar a aplicar o padrão. O valor de **startDate** DEVE corresponder ao valor da data da propriedade **iniciar** no [recurso de evento](/graph/api/resources/event?view=graph-rest-1.0). Observação: Esta primeira ocorrência da reunião poderá não ocorrer nessa data se ela não se encaixar no padrão. |
 | **type** | Obrigatório | Tem que ser definida como **endDate**. |

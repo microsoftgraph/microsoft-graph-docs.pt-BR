@@ -1,30 +1,30 @@
 ---
-title: tipo de recurso serviceUserAgent
+title: Tipo de recurso serviceUserAgent
 description: O tipo serviceUserAgent
 localization_priority: Normal
 author: williamlooney
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: b3d939042c4688ee3512ad380e0f3f75e0badffa
-ms.sourcegitcommit: af4b2fc18449c33979cf6d75bd680f40602ba708
+ms.openlocfilehash: bb8880b130c763599d75c5542725f1bb0fe850bad532693a62ee73ff25ffbfb3
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "48601458"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54243627"
 ---
-# <a name="serviceuseragent-resource-type"></a>tipo de recurso serviceUserAgent
+# <a name="serviceuseragent-resource-type"></a>Tipo de recurso serviceUserAgent
 
 Namespace: microsoft.graph.callRecords
 
-Representa um agente do usuário de serviço de um ponto de extremidade em uma chamada. Herda de tipo [UserAgent](callrecords-useragent.md) .
+Representa um agente de usuário de serviço de um ponto de extremidade em uma chamada. Herda do [tipo userAgent.](callrecords-useragent.md)
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|applicationVersion|String|Identifica a versão do software do aplicativo usado por esse ponto de extremidade.|
-|headerValue|String|Valor do cabeçalho do agente de usuário relatado por esse ponto de extremidade.|
-|role|Microsoft. Graph. callRecords. onrole|Identifica a função do serviço usado por esse ponto de extremidade. Os valores possíveis são:,,,,,,,,,,,,,,,,,,,, `unknown` `customBot` `skypeForBusinessMicrosoftTeamsGateway` `skypeForBusinessAudioVideoMcu` `skypeForBusinessApplicationSharingMcu` `skypeForBusinessCallQueues` `skypeForBusinessAutoAttendant` `mediationServer` `mediationServerCloudConnectorEdition` `exchangeUnifiedMessagingService` `mediaController` `conferencingAnnouncementService` `conferencingAttendant` , `audioTeleconferencerController` , `skypeForBusinessUnifiedCommunicationApplicationPlatform` ,, `responseGroupServiceAnnouncementService` `gateway` , `skypeTranslator` `skypeForBusinessAttendant` `responseGroupService` `voicemail` `unknownFutureValue` ,,,,,.|
+|applicationVersion|String|Identifica a versão do software de aplicativo usado por esse ponto de extremidade.|
+|headerValue|Cadeia de caracteres|Valor de header do agente do usuário relatado por esse ponto de extremidade.|
+|role|microsoft.graph.callRecords.serviceRole|Identifica a função do serviço usado por esse ponto de extremidade. Os valores possíveis são: `unknown` , , , , , , , , `customBot` `skypeForBusinessMicrosoftTeamsGateway` , , , `skypeForBusinessAudioVideoMcu` `skypeForBusinessApplicationSharingMcu` `skypeForBusinessCallQueues` , `skypeForBusinessAutoAttendant` `mediationServer` `mediationServerCloudConnectorEdition` `exchangeUnifiedMessagingService` `mediaController` `conferencingAnnouncementService` `conferencingAttendant` `audioTeleconferencerController` `skypeForBusinessUnifiedCommunicationApplicationPlatform` `responseGroupServiceAnnouncementService` `gateway` , `skypeTranslator` `skypeForBusinessAttendant` `responseGroupService` `voicemail` `unknownFutureValue` , .|
 
 ## <a name="json-representation"></a>Representação JSON
 

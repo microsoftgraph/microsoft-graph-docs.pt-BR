@@ -4,12 +4,12 @@ description: Descreve os conjuntos de dados suportados e tipos de armazenamento 
 author: fercobo-msft
 localization_priority: Priority
 ms.prod: data-connect
-ms.openlocfilehash: 0a260d43f00d90b46a876acf8a40c0600c041967
-ms.sourcegitcommit: a598c09b73e4e43eea5f4aaefea7ffe062e15c39
+ms.openlocfilehash: 6b6d4db9b15fdf3ba56b565af98532d197ceb8032ab1ff173837e28e7fd7c7da
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/22/2021
-ms.locfileid: "53534548"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54189146"
 ---
 # <a name="datasets-regions-and-sinks-that-microsoft-graph-data-connect-supports"></a>Conjuntos de dados, regiões e coletores compatíveis com a Conexão de Dados do Microsoft Graph
 

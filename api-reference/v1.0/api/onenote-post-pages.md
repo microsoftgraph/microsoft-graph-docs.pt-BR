@@ -1,28 +1,28 @@
 ---
 title: Criar página
-description: Crie uma nova página do OneNote na seção padrão do bloco de anotações padrão.
+description: Crie uma nova OneNote na seção padrão do bloco de anotações padrão.
 author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: b706d23f948b80e1d8cebf01f768c47d01c22ab2
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 53f770410fe130d3ec723a975701246bd28388840d92343904941f03698e4e3d
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48020703"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54225794"
 ---
 # <a name="create-page"></a>Criar página
 
 Namespace: microsoft.graph
 
-Crie uma nova página do OneNote na seção padrão do bloco de anotações padrão.
+Crie uma nova OneNote na seção padrão do bloco de anotações padrão.
 
 Para criar uma página em uma seção diferente no bloco de anotações padrão, você pode usar o `sectionName` parâmetro de consulta.  Exemplo: `../onenote/pages?sectionName=My%20section`
 
-A `POST /onenote/pages` operação é usada apenas para criar páginas no bloco de anotações padrão do usuário atual. Se você estiver direcionando outros blocos de anotações, poderá [criar páginas em uma seção especificada](../api/section-post-pages.md).  
+A operação é usada apenas para criar páginas no bloco de anotações padrão `POST /onenote/pages` do usuário atual. Se você estiver direcionando outros blocos de anotações, poderá [criar páginas em uma seção especificada.](../api/section-post-pages.md)  
 
-> **Observação:** Há um limite para o número de páginas que podem ser adicionadas a uma seção usando essa API. Para obter detalhes, consulte [criar páginas do OneNote](/graph/onenote-create-page) para todas as limitações com esta API.
+> **Observação:** Há um limite para o número de páginas que podem ser adicionadas a uma seção usando essa API. Para obter detalhes, [consulte Create OneNote pages](/graph/onenote-create-page) for all limitations with this API.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -50,19 +50,19 @@ POST /sites/{id}/onenote/pages
 | Content-Type | string | `text/html`ou `application/xhtml+xml` para o conteúdo HTML, inclusive para a parte obrigatória "Apresentação" de solicitações com várias partes. As solicitações com várias partes usam o tipo de conteúdo `multipart/form-data; boundary=your-boundary`. |
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça o conteúdo HTML da página.
+No corpo da solicitação, fornece o conteúdo HTML para a página.
 
 O corpo pode conter HTML colocado diretamente no corpo da solicitação ou pode conter um formato de mensagem com várias partes conforme mostrado no exemplo. Se você estiver enviando dados binários, envie uma solicitação com várias partes.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `201 Created` código de resposta e o novo objeto [Page](../resources/page.md) no corpo da resposta.
+Se tiver êxito, este método retornará `201 Created` um código de resposta e o novo objeto [page](../resources/page.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
 
-No `../onenote/pages` caminho, você pode usar o `sectionName` parâmetro de consulta para criar uma página em uma seção específica no bloco de anotações padrão. Exemplo: `../onenote/pages?sectionName=My%20section`. Se a seção não existir (ou tiver sido renomeada), a API criará uma nova seção.
+No `../onenote/pages` caminho, você pode usar o parâmetro de consulta para criar uma `sectionName` página em uma seção específica no bloco de anotações padrão. Exemplo: `../onenote/pages?sectionName=My%20section`. Se a seção não existir (ou tiver sido renomeada), a API criará uma nova seção.
 
 <!-- { "blockType": "ignored" } -->
 ```http

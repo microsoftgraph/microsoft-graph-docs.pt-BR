@@ -5,12 +5,12 @@ description: Use a API Pesquisa da Microsoft no Microsoft Graph para exibir os r
 author: yiwenwang
 localization_priority: Normal
 ms.prod: search
-ms.openlocfilehash: 4f58e7b4a303ba6b20b1d70bd765b38d1526bbca
-ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
+ms.openlocfilehash: a78f7be7b28e97e96d781b43c23c456e756e99405eb16260daed584753fe5753
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53211159"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54129565"
 ---
 # <a name="use-the-microsoft-search-api-in-microsoft-graph-to-render-display-layout-preview"></a>Use a API Pesquisa da Microsoft no Microsoft Graph renderizar layout de exibição (visualização)
 

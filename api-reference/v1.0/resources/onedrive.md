@@ -5,17 +5,16 @@ localization_priority: Priority
 ms.prod: sharepoint
 author: jewan-microsoft
 doc_type: conceptualPageType
-ms.openlocfilehash: 3931fb9a327f682765b3795adbe90c4398cb38d5
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 1821fd27b0f0f860f21a99952989febff1df2bb591183199e8567330da05ae64
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48079106"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54141417"
 ---
 # <a name="working-with-files-in-microsoft-graph"></a>Trabalhando com arquivos no Microsoft Graph
 
-Você pode usar o Microsoft Graph para criar um aplicativo que se conecta a arquivos entre bibliotecas de documentos do OneDrive, OneDrive for Business e SharePoint.
-Com o Microsoft Graph, você pode criar uma variedade de experiências com arquivos armazenados no Microsoft 365, desde simplesmente armazenar documentos de usuários até cenários de compartilhamento de arquivos complexos.
+Você pode usar o Microsoft Graph para criar um aplicativo que se conecta aos arquivos nas bibliotecas de documentos do OneDrive, OneDrive for Business e do SharePoint. Com o Microsoft Graph, você pode criar uma variedade de experiências com arquivos armazenados no Microsoft 365, desde simplesmente armazenar documentos do usuário até cenários complexos de compartilhamento de arquivos.
 
 O Microsoft Graph expõe dois tipos de recursos para trabalhar com arquivos:
 
@@ -86,8 +85,7 @@ Além de endereçar **DriveItem** dentro de **Drive** com base na ID exclusiva, 
 
 ## <a name="drive-resource"></a>Recurso Drive
 
-O [recurso de Unidade](drive.md) é o objeto de nível superior no OneDrive do usuário ou em uma biblioteca de documentos do [SharePoint][].
-Quase todas as operações de arquivos serão iniciadas com o endereçamento de um recurso Drive específico.
+O [Recurso drive](drive.md) é o objeto de nível superior no OneDrive de um usuário ou uma biblioteca de documentos do [Sharepoint][]. Quase todas as operações de arquivos começarão abordando um recurso drive específico.
 
 Um recurso Drive pode ser endereçado pela ID exclusiva da unidade ou pela unidade padrão de um [Usuário](user.md), [Grupo](group.md) ou organização.
 

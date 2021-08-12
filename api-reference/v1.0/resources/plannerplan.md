@@ -5,12 +5,12 @@ localization_priority: Priority
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: da5f4b882ad0c364d590b3db64913c170bb5a1d8
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: b5b27469f08caf764031030a88c35d2f976a5dd3f420cdf6221ab858f2ccd137
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50720680"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54243316"
 ---
 # <a name="plannerplan-resource-type"></a>Tipo de recurso plannerPlan
 

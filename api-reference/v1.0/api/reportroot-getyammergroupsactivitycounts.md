@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: reports
 author: sarahwxy
 doc_type: apiPageType
-ms.openlocfilehash: 3275af94651d876db5daa486407293b0bd95cdbc
-ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
+ms.openlocfilehash: 6995fb8fb190b0bece0c42e707889c885fd24c49d059a7ff72710796245fdae6
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49981136"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54138560"
 ---
 # <a name="reportroot-getyammergroupsactivitycounts"></a>reportRoot: getYammerGroupsActivityCounts
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 Obtenha o número de mensagens postadas, lidas e curtidas em grupos do Yammer.
 
-> **Observação:** Para obter detalhes sobre diferentes visualizações e nomes de relatórios, confira [relatórios do Microsoft 365 - atividade de grupos do Yammer.](https://support.office.com/client/Yammer-groups-activity-report-94dd92ec-ea73-43c6-b51f-2a11fd78aa31)
+> **Observação:** Para obter detalhes sobre diferentes exibições de relatório e nomes, [consulte Microsoft 365 relatórios - atividade Yammer grupos](https://support.office.com/client/Yammer-groups-activity-report-94dd92ec-ea73-43c6-b51f-2a11fd78aa31).
 
 ## <a name="permissions"></a>Permissões
 

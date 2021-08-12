@@ -1,30 +1,30 @@
 ---
-title: tipo de recurso UserAgent
-description: O tipo UserAgent
+title: Tipo de recurso userAgent
+description: O tipo userAgent
 localization_priority: Normal
 author: williamlooney
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 55db3bcfc00c54cb51f552624a9e2c51fcce5a7b
-ms.sourcegitcommit: af4b2fc18449c33979cf6d75bd680f40602ba708
+ms.openlocfilehash: 3a32c74957d0d0a2c41323c1f76d4e990897d61948892821e2d56154eceec271
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "48601451"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54189916"
 ---
-# <a name="useragent-resource-type"></a>tipo de recurso UserAgent
+# <a name="useragent-resource-type"></a>Tipo de recurso userAgent
 
 Namespace: microsoft.graph.callRecords
 
 Representa o agente do usuário de um ponto de extremidade em uma chamada.
-Os tipos [clientUserAgent](callrecords-clientuseragent.md) e [serviceUserAgent](callrecords-serviceuseragent.md)) são herdados desse tipo.
+Os [tipos clientUserAgent](callrecords-clientuseragent.md) [e serviceUserAgent](callrecords-serviceuseragent.md)) herdam desse tipo.
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|applicationVersion|String|Identifica a versão do software do aplicativo usado por esse ponto de extremidade.|
-|headerValue|String|Valor do cabeçalho do agente de usuário relatado por esse ponto de extremidade.|
+|applicationVersion|String|Identifica a versão do software de aplicativo usado por esse ponto de extremidade.|
+|headerValue|Cadeia de caracteres|Valor de header do agente do usuário relatado por esse ponto de extremidade.|
 
 ## <a name="json-representation"></a>Representação JSON
 

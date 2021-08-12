@@ -1,16 +1,16 @@
 ---
-title: Provedor de eletrônica
-description: O provedor MSAL para o Eletrônica usa o msal-node para entrar nos usuários e adquirir tokens para usar com o Microsoft Graph.
+title: Provedor de Electron
+description: O provedor MSAL para o Eletrônica usa o nó msal para entrar em usuários e adquirir tokens para usar com o microsoft Graph.
 localization_priority: Normal
 author: amrutha95
-ms.openlocfilehash: a9e391f96988f8beaf8395e872a6efa08efca8f5
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: 13a81a098fb69223e8ca5e85fcbce83dd4e83c9272fb781281d8b8b0379495b1
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50471419"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54208647"
 ---
-# <a name="electron-provider"></a>Provedor de eletrônica
+# <a name="electron-provider"></a>Provedor de Electron
 
 O provedor Demão usa [o nó msal](https://github.com/AzureAD/microsoft-authentication-library-for-js/tree/dev/lib/msal-node) para entrar em usuários e adquirir tokens para usar com o Microsoft Graph em um aplicativo Demão.
 
@@ -68,18 +68,18 @@ ElectronAuthenticator.initialize(config);
     
 ## <a name="create-an-appclient-id"></a>Criar uma ID de aplicativo/cliente
 
-### <a name="add-new-application-registration-in-azure-active-directory-to-get-a-client-id"></a>Adicionar novo registro de aplicativo no Azure Active Directory para obter uma ID do cliente
+### <a name="add-new-application-registration-in-azure-active-directory-to-get-a-client-id"></a>Adicionar novo registro de aplicativo Azure Active Directory para obter uma ID do cliente
 
 Para criar um aplicativo no Azure Active Directory, adicione um novo registro de aplicativo e configure um nome de aplicativo e URI de redirecionamento.
 
-Para criar o aplicativo no Azure Active Directory:
+Para criar o aplicativo em Azure Active Directory:
 
-1. Vá para o [portal do Azure](https://portal.azure.com).
+1. Acesse o [Portal do Azure](https://portal.azure.com).
 1. No menu, selecione **Azure Active Directory**.
-1. No menu do Azure Active Directory, selecione **Registros de aplicativos**.
+1. No menu Azure Active Directory, selecione **Registros de aplicativos**.
 1. No menu superior, selecione o **botão Novo registro.**
 1. Insira o nome do seu aplicativo; por exemplo, `My Electron-App` .
-1. Para o tipo de tipos de conta com [suporte,](/azure/active-directory/develop/single-and-multi-tenant-apps#who-can-sign-in-to-your-app)selecione Contas em qualquer diretório organizacional (Qualquer diretório do **Azure AD - Multitenant) e contas pessoais da Microsoft (por exemplo, Skype, Xbox)**.
+1. Para o tipo de tipos de conta com [suporte,](/azure/active-directory/develop/single-and-multi-tenant-apps#who-can-sign-in-to-your-app)selecione Contas em qualquer diretório organizacional (Qualquer diretório **do Azure AD - Multitenant) e contas pessoais da Microsoft (por exemplo, Skype, Xbox)**.
 1. No campo **Redirecionar URI,** no menu suspenso, selecione **Cliente público/nativo (área** de trabalho móvel &) e, no campo URL, digite `msal://redirect` .
 1. Confirme as alterações selecionando o **botão Registrar.**
 

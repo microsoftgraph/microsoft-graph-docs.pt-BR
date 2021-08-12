@@ -5,12 +5,12 @@ author: keylimesoda
 localization_priority: Normal
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 905b65c5d02bd27ffad17f30290c5ea36118bff3
-ms.sourcegitcommit: d586ddb253d27f9ccb621bd128f6a6b4b1933918
+ms.openlocfilehash: b9cf3fc43b8baedd7d96b0635d7590c3c57f3aac387f38ca6f71a773e248e024
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53108912"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54202929"
 ---
 # <a name="list-deleted-items"></a>Listar itens excluídos
 
