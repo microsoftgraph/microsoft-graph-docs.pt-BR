@@ -6,12 +6,12 @@ localization_priority: Normal
 description: calculatedColumn em um recurso columnDefinition indica que os dados da coluna são calculados com base em outras colunas do site.
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: a75db3ea7a3973d57a3d09aa6cba2cb85a66ce11
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: 1fa095d07eb9a2625385f8d3a502bda94c664640f528a877b61e97c4b7d5aa87
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50239076"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54182571"
 ---
 # <a name="calculatedcolumn-resource-type"></a>Tipo de recurso CalculatedColumn
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 12e7206707a070be2f5e7463d85a2a09d94c5ad0
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 9d9ef5732080db5c89922b9737a29b6d59232efa43cd3be4218a59cedcb46b00
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52754088"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54219189"
 ---
 # <a name="get-mobileappcategory"></a>Get mobileAppCategory
 

@@ -5,12 +5,12 @@ author: adimitui
 localization_priority: Normal
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 62c48eca4f3672113c9eabbee7c420f7e2c9e4c4
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: c832ba7b8d16964df53d9530f5aab0113afcd00f422bd701530cd4088b06f178
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50962459"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54141809"
 ---
 # <a name="domain-resource-type"></a>tipo de recurso de domínio
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 Representa um domínio associado ao locatário.
 
-Use operações de domínio para associar domínios a um locatário, verificar a propriedade do domínio e configurar serviços com suporte.  As operações de domínio permitem que os registradores automatizem a associação de domínio para serviços como o Microsoft 365. Por exemplo, como parte da inscrição no domínio, um registrador pode habilitar um domínio de vaidade para email, sites, autenticação etc.
+Use operações de domínio para associar domínios a um locatário, verificar a propriedade do domínio e configurar serviços com suporte.  As operações de domínio permitem que os registradores automatizem a associação de domínio para serviços como Microsoft 365. Por exemplo, como parte da inscrição no domínio, um registrador pode habilitar um domínio de vaidade para email, sites, autenticação etc.
 
 Para associar um domínio a um locatário:
 
@@ -42,8 +42,8 @@ Para associar um domínio a um locatário:
 |[Listar serviceConfigurationRecords](../api/domain-list-serviceconfigurationrecords.md) |[coleção domainDnsRecord](domaindnsrecord.md)|  Recupere uma lista de registros DNS de domínio para configuração de domínio.|
 |[Listar verificationDnsRecords](../api/domain-list-verificationdnsrecords.md) |[coleção domainDnsRecord](domaindnsrecord.md)|  Recupere uma lista de registros DNS de domínio para verificação de domínio.|
 |[Atualizar domínio](../api/domain-update.md) | [domain](domain.md) |Atualiza um domínio.|
-|[Excluir domínio](../api/domain-delete.md) | Nenhum |Exclui um domínio.|
-|[Domínio ForceDelete](../api/domain-forcedelete.md)|Nenhum|Exclui um domínio usando uma operação assíncrona.|
+|[Excluir domínio](../api/domain-delete.md) | None |Exclui um domínio.|
+|[Domínio ForceDelete](../api/domain-forcedelete.md)|None|Exclui um domínio usando uma operação assíncrona.|
 |[Verificar domínio](../api/domain-verify.md)|[domain](domain.md)|Valida a propriedade do domínio.|
 
 ## <a name="properties"></a>Propriedades
@@ -53,15 +53,15 @@ Para associar um domínio a um locatário:
 |authenticationType|Cadeia de caracteres| Indica o tipo de autenticação configurado para o domínio. O valor é ou `Managed` `Federated` . `Managed` indica um domínio gerenciado na nuvem em que o Azure AD executa a autenticação do usuário. `Federated` indica que a autenticação é federada com um provedor de identidade, como o Active Directory local do locatário por meio dos Serviços de Federação do Active Directory. Essa propriedade é somente leitura e não é anulada. |
 |availabilityStatus|Cadeia de caracteres| Essa propriedade é sempre `null` exceto quando a ação de [verificação](../api/domain-verify.md) é usada. Quando a [ação verify](../api/domain-verify.md) é usada, uma entidade **de** domínio é retornada na resposta. A **propriedade availabilityStatus** da entidade **de** domínio na resposta é `AvailableImmediately` ou `EmailVerifiedDomainTakeoverScheduled` .|
 |id|Cadeia de caracteres| O nome totalmente qualificado do domínio. Chave, imutável, não anulada, exclusiva. |
-|isAdminManaged|Booliano| O valor da propriedade é se o gerenciamento de registro DNS do domínio tiver sido `false` delegado ao Microsoft 365. Caso contrário, o valor será `true` . Não anulada |
+|isAdminManaged|Booliano| O valor da propriedade é se o gerenciamento de registro DNS do domínio tiver sido `false` delegado a Microsoft 365. Caso contrário, o valor será `true` . Não anulada |
 |isDefault|Booliano| `true` se esse for o domínio padrão usado para a criação do usuário. Há apenas um domínio padrão por empresa. Não anulada |
 |isInitial|Booliano| `true` se esse for o domínio inicial criado por Microsoft Online Services (companyname.onmicrosoft.com). Há apenas um domínio inicial por empresa. Não anulada |
 |isRoot|Booliano| `true` se o domínio for um domínio raiz verificado. Caso contrário, `false` se o domínio for um subdomínio ou não verificado. Não anulada |
 |isVerified|Booliano| `true` se o domínio concluiu a verificação de propriedade do domínio. Não anulada |
 |passwordNotificationWindowInDays|Int32|Especifica o número de dias antes de um usuário receber uma notificação de que sua senha expirará. Se a propriedade não estiver definida, um valor padrão de 14 dias será usado.|
 |passwordValidityPeriodInDays|Int32| Especifica o período de tempo em que uma senha é válida antes de ser alterada. Se a propriedade não estiver definida, um valor padrão de 90 dias será usado. |
-|supportedServices|Coleção de cadeias de caracteres| Os recursos atribuídos ao domínio. Pode incluir `0` , ou mais dos seguintes `1` valores: , , , `Email` , , , , , , , , `Sharepoint` , `EmailInternalRelayOnly` `OfficeCommunicationsOnline` `SharePointDefaultDomain` `FullRedelegation` `SharePointPublic` `OrgIdAuthentication` `Yammer` `Intune` . Os valores que você pode adicionar/remover usando a API do Graph incluem: `Email` , `OfficeCommunicationsOnline` , `Yammer` . Não anulada|
-|estado|[domainState](domainstate.md)| Status de operações assíncronas agendadas para o domínio. |
+|supportedServices|String collection| Os recursos atribuídos ao domínio. Pode incluir `0` , ou mais dos seguintes `1` valores: , , , `Email` , , , , , , , , `Sharepoint` , `EmailInternalRelayOnly` `OfficeCommunicationsOnline` `SharePointDefaultDomain` `FullRedelegation` `SharePointPublic` `OrgIdAuthentication` `Yammer` `Intune` . Os valores que você pode adicionar/remover usando Graph API incluem: `Email` , `OfficeCommunicationsOnline` , `Yammer` . Não anulada|
+|state|[domainState](domainstate.md)| Status de operações assíncronas agendadas para o domínio. |
 
 ## <a name="relationships"></a>Relações
 

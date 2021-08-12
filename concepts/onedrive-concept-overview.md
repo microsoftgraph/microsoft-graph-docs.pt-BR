@@ -4,12 +4,12 @@ description: O OneDrive é a central de arquivos no Microsoft 365.
 localization_priority: Priority
 ms.prod: onedrive
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 59c9c711f7728b65006d1553cb9595dcecc76ed1
-ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
+ms.openlocfilehash: 457bb9e40a1b5923580df93b29ee7a90a26885ec12933010e9d4af40ca9189e5
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48289082"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54228923"
 ---
 # <a name="onedrive-file-storage-api-overview"></a>Visão geral da API de armazenamento de arquivos do OneDrive
 

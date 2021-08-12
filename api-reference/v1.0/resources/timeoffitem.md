@@ -5,12 +5,12 @@ author: akumar39
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType_
-ms.openlocfilehash: a710c1c2de9a2ff127b19a083a3c90d5bfface5a
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: 49b5031da7ecf3ca50ea58db25d4c23c92343526db74bf771a131bfadff334e8
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50720839"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54189244"
 ---
 # <a name="timeoffitem-resource-type"></a>Tipo de recurso timeOffItem
 
@@ -21,7 +21,7 @@ Representa uma versão do [timeOff](timeoff.md).
 ## <a name="properties"></a>Propriedades
 | Propriedade                         | Tipo                    | Descrição                                                                                                                                                                        |
 |------------------------------|-------------------------|---------------------------------------------------------------------------------------------|
-| timeOffReasonId               | cadeia de caracteres                  | ID do `timeOffReason` para isso `timeOffItem` . Obrigatório.     |
+| timeOffReasonId               | string                  | ID do `timeOffReason` para isso `timeOffItem` . Obrigatório.     |
 | startDateTime               | DateTimeOffset                  | A data e a hora de início do `timeOffItem` . Obrigatório. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`. |
 | endDateTime               | DateTimeOffset                  | A data e a hora de término do `timeOffItem` . Obrigatório. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`. |
 | tema | scheduleEntityTheme   | Cores com suporte: branco; azul; verde; roxo; rosa; amarelo; cinza; darkBlue; darkGreen; darkPurple; darkPink; darkYellow. |

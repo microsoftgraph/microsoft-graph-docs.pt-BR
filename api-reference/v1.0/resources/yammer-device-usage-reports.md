@@ -1,24 +1,24 @@
 ---
-title: Relatórios de uso de dispositivos do Yammer
-description: Os relatórios de uso de dispositivos do Yammer dão informações sobre quais dispositivos seus usuários utilizam para se envolver no Yammer. Você pode exibir o número de usuários por tipo de dispositivo durante um período de tempo selecionado e exibir detalhes por usuário.
+title: Yammer de uso do dispositivo
+description: Os relatórios de uso do dispositivo Yammer informações sobre quais dispositivos seus usuários utilizam para se envolver Yammer. Você pode exibir o número de usuários por tipo de dispositivo em um período de tempo selecionado e exibir detalhes por usuário.
 localization_priority: Normal
 ms.prod: reports
 author: sarahwxy
 doc_type: conceptualPageType
-ms.openlocfilehash: cb67f7613233b19233ad1f03356cb41a2ff24d96
-ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
+ms.openlocfilehash: c5c15e7a2bc55c90ee129cc6d08b442e1fe399bfeb9c5d865743fd00decae364
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49982289"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54243298"
 ---
-# <a name="yammer-device-usage-reports"></a>Relatórios de uso de dispositivos do Yammer
+# <a name="yammer-device-usage-reports"></a>Yammer de uso do dispositivo
 
 Namespace: microsoft.graph
 
-Os relatórios de uso de dispositivos do Yammer dão informações sobre quais dispositivos seus usuários utilizam para se envolver no Yammer. Você pode exibir o número de usuários por tipo de dispositivo durante um período de tempo selecionado e exibir detalhes por usuário.
+Os relatórios de uso do dispositivo Yammer informações sobre quais dispositivos seus usuários utilizam para se envolver Yammer. Você pode exibir o número de usuários por tipo de dispositivo em um período de tempo selecionado e exibir detalhes por usuário.
 
-> **Observação:** Para obter detalhes sobre diferentes visualizações e nomes de relatórios, confira [relatórios do Microsoft 365 - uso de dispositivos do Yammer.](https://support.office.com/client/Yammer-device-usage-b793ffdd-effa-43d0-849a-b1ca2e899f38)
+> **Observação:** Para obter detalhes sobre diferentes exibições de relatório e nomes, [consulte Microsoft 365 relatórios - Yammer uso do dispositivo](https://support.office.com/client/Yammer-device-usage-b793ffdd-effa-43d0-849a-b1ca2e899f38).
 
 ## <a name="reports"></a>Relatórios
 

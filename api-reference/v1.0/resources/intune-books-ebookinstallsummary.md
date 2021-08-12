@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 86a9531ec928fd97e800a9df06bedf08089de6ca
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: db83e7fd921715e25e2ae23fa3bb43f43d2dcc51ed22eba11d316842be73fed2
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52760290"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54135229"
 ---
 # <a name="ebookinstallsummary-resource-type"></a>Tipo de recurso eBookInstallSummary
 
@@ -29,7 +29,7 @@ Contém propriedades do resumo da instalação de um livro para um dispositivo.
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave da entidade.|
+|id|Cadeia de caracteres|Chave da entidade.|
 |installedDeviceCount|Int32|Número de dispositivos que instalaram este livro com êxito.|
 |failedDeviceCount|Int32|Número de dispositivos que falharam ao instalar este livro.|
 |notInstalledDeviceCount|Int32|Número de dispositivos que não instalaram este livro.|

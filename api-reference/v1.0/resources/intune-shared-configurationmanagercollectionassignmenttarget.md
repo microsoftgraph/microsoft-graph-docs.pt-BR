@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 28aa1e4e7fbb0d65a74f9a7b84bc48df19f3201c
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: b0bc49cb342990c21437e5ff18196db2e40f1f56a3660864ef014dbf9c1f4831
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52751743"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54146451"
 ---
 # <a name="configurationmanagercollectionassignmenttarget-resource-type"></a>tipo de recurso configurationManagerCollectionAssignmentTarget
 
@@ -26,7 +26,7 @@ Herda de [deviceAndAppManagementAssignmentTarget](../resources/intune-shared-dev
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|collectionId|String|A ID da coleção que é o destino da atribuição.|
+|collectionId|Cadeia de caracteres|A ID da coleção que é o destino da atribuição.|
 
 ## <a name="relationships"></a>Relações
 Nenhum

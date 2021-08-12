@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: a23a05a53170929712d4cfd8c4dd9f634fba5dc4
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: e8291d2e3e30d048f94a8dde1e3a27ed91f3054a2fd2f0979cc3249df74c8b4a
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52751276"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54149783"
 ---
 # <a name="windowsinformationprotectiondatarecoverycertificate-resource-type"></a>Tipo de recurso windowsInformationProtectionDataRecoveryCertificate
 
@@ -24,12 +24,12 @@ DataRecoveryCertificate da proteção de informações do Windows
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |SubjectName|Cadeia de caracteres|Nome do assunto do certificado de recuperação de dados|
-|descrição|Cadeia de caracteres|Descrição do certificado de recuperação de dados|
+|description|String|Descrição do certificado de recuperação de dados|
 |expirationDateTime|DateTimeOffset|Datetime de vencimento do certificado de recuperação de dados|
 |certificado|Binário|Certificado de recuperação de dados|
 
 ## <a name="relationships"></a>Relações
-Nenhuma
+Nenhum
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.

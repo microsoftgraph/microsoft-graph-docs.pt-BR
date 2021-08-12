@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3053911b32e0850009adb42815114adc6c2848b2
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 4c61d57519ee618ed2b5ecbe23109ad9a79b83e90f929be452528b84c3cc3c3e
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52758705"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54130881"
 ---
 # <a name="update-ebookinstallsummary"></a>Atualizar eBookInstallSummary
 
@@ -51,7 +51,7 @@ A tabela a seguir mostra as propriedades obrigatórias ao criar [eBookInstallSum
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave da entidade.|
+|id|Cadeia de caracteres|Chave da entidade.|
 |installedDeviceCount|Int32|Número de dispositivos que instalaram este livro com êxito.|
 |failedDeviceCount|Int32|Número de dispositivos que falharam ao instalar este livro.|
 |notInstalledDeviceCount|Int32|Número de dispositivos que não instalaram este livro.|

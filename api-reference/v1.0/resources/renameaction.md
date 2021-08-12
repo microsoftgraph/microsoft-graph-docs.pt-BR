@@ -5,12 +5,12 @@ description: O objeto renameAction fornece informações sobre uma atividade que
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 35e0aa9929b8e152265a5540625f5981a587edb7
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: c1abe3f322f039339514aee0374c0e2e0bd4e3f62aa48534abe37856609cd975
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50238649"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54202130"
 ---
 # <a name="renameaction-resource-type"></a>Tipo de recurso renameAction
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 A presença do recurso **renameAction** em um [**itemActivity**][activity] indica que a atividade renomeou um item.
 
->**Observação:** No momento, os registros de atividades do item só estão disponíveis no SharePoint e no OneDrive for Business.
+>**Observação:** No momento, os registros de atividade do item estão disponíveis apenas SharePoint e OneDrive for Business.
 
 [activity]: itemactivity.md
 
@@ -34,13 +34,13 @@ A presença do recurso **renameAction** em um [**itemActivity**][activity] indic
 <!-- {
   "blockType": "resource",
   "optionalProperties": [ ],
-  "@type": "microsoft.graph.renameAction"
+  "@type&quot;: &quot;microsoft.graph.renameAction"
 }-->
 
 ```json
 {
   "oldName": "string",
-  "newName": "string"
+  "newName&quot;: &quot;string"
 }
 ```
 

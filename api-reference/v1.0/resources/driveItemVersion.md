@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso DriveItemVersion
-description: O recurso **DriveItemVersion** representa uma versão específica de um DriveItem.
+description: O **recurso DriveItemVersion** representa uma versão específica de um DriveItem.
 localization_priority: Normal
 ms.prod: sharepoint
 author: JeremyKelley
 doc_type: resourcePageType
-ms.openlocfilehash: 1f7c45ecc82a209094748410614d6b25993e2aa7
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: d015175df3f4fb91d6a91dce7cf5b10714f6d1988044e9c98c81fcd5c3dd5369
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48018575"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54135257"
 ---
 # <a name="driveitemversion-resource-type"></a>Tipo de recurso DriveItemVersion
 
@@ -43,7 +43,7 @@ Na tabela anterior, os exemplos usam `/drive`, mas há muitas solicitações vá
   "blockType": "resource",
   "baseType": "microsoft.graph.baseItemVersion",
   "@odata.type": "microsoft.graph.driveItemVersion",
-  "@type.aka": "oneDrive.driveItemVersion"
+  "@type.aka&quot;: &quot;oneDrive.driveItemVersion"
 }-->
 
 ```json

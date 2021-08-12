@@ -1,30 +1,30 @@
 ---
-title: tipo de recurso organizerMeetingInfo
+title: Tipo de recurso organizerMeetingInfo
 description: 'Contém detalhes sobre o organizador da reunião. '
 author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: d3b1f37e6ac5f33d6d59988054d5abfedf5e68e7
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: fc97e94b2657273a55798528991762e43ec98023ba3e861f51a0e03d3d27f13f
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48066282"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54178126"
 ---
-# <a name="organizermeetinginfo-resource-type"></a>tipo de recurso organizerMeetingInfo
+# <a name="organizermeetinginfo-resource-type"></a>Tipo de recurso organizerMeetingInfo
 
 Namespace: microsoft.graph
 
 Contém detalhes sobre o organizador da reunião. 
 
-Para ingressar em uma reunião existente, você deve fornecer uma combinação dos tipos de recurso organizerMeetingInfo e [chatInfo](./chatinfo.md) ou o tipo de recurso [tokenMeetingInfo](./tokenmeetinginfo.md) sozinho.
+Para ingressar em uma reunião existente, você deve fornecer uma combinação entre o organizerMeetingInfo e os tipos de recurso [chatInfo](./chatinfo.md) ou o tipo de recurso [tokenMeetingInfo](./tokenmeetinginfo.md) por si só.
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade                     | Tipo                          | Descrição                                     |
 | :--------------------------- | :---------------------------- | :-----------------------------------------------|
-| organizer                    | [identitySet](identityset.md) | A identidade do Azure Active Directory do organizador.  |
+| organizer                    | [identitySet](identityset.md) | O organizador Azure Active Directory identidade.  |
 
 ## <a name="json-representation"></a>Representação JSON
 

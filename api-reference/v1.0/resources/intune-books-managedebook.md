@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d743b425cb57a0b233ae83e5e044fd63fc85890e
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: b52c7a183046741e05afa6be2832dc6a32673cc62f06f542b75bae0d9e67bfbf
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52755970"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54175221"
 ---
 # <a name="managedebook-resource-type"></a>Tipo de recurso managedEBook
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 Uma classe abstrata que contém as propriedades base do livro eletrônico gerenciado.
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
 |[Listar managedEBooks](../api/intune-books-managedebook-list.md)|Coleção [managedEBook](../resources/intune-books-managedebook.md)|Lista propriedades e relações dos objetos [managedEBook](../resources/intune-books-managedebook.md).|
@@ -31,8 +31,8 @@ Uma classe abstrata que contém as propriedades base do livro eletrônico gerenc
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|Cadeia de caracteres|Chave da entidade.|
-|displayName|Cadeia de caracteres|Nome do livro eletrônico.|
-|descrição|Cadeia de caracteres|Descrição.|
+|displayName|String|Nome do livro eletrônico.|
+|description|Cadeia de caracteres|Descrição.|
 |publisher|Cadeia de caracteres|Publicador.|
 |publishedDateTime|DateTimeOffset|A data e hora em que o livro eletrônico foi publicado.|
 |largeCover|[mimeContent](../resources/intune-shared-mimecontent.md)|Capa do livro.|

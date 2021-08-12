@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Priority
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: acfcb3dc067f69e8cf7e3e3b9295a6e9e5c8396c
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 8a3fb0ced8fec9c0a2dfba0127e22e79c241ec1eb611fc3c7da45148733097d0
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50952540"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54178616"
 ---
 # <a name="call-resource-type"></a>Tipo de recurso de chamada
 
@@ -67,11 +67,11 @@ https://teams.microsoft.com/l/meetup-join/19:meeting_NTg0NmQ3NTctZDVkZC00YzRhLTh
 | :------------------ | :------------------------------------------------------------------------------------------------------| :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | callbackUri         | String                                                                                                 | A URL de retorno de chamada à qual os retornos serão entregues. Deve ser `https`.                                                                                                                               |
 | callChainId         | Cadeia de caracteres                                                                                                 | Um identificador único para todas as chamadas de participantes em uma conferência ou um identificador exclusivo para chamadas com dois participantes em uma chamada P2P.  Isso precisa ser copiado de `Microsoft.Graph.Call.CallChainId`. |
-| callRoutes         | [callRoute](callRoute.md) collection                                                                                                 | As informações de roteamento sobre como a chamada foi redirecionada. Apenas leitura.                                                                                                                |
+| callRoutes         | [callRoute](callRoute.md) collection                                                                                                 | As informações de roteamento sobre como a chamada foi redirecionada. Somente leitura.                                                                                                                |
 | chatInfo            | [chatInfo](chatinfo.md)                                                                                | As informações de chat. Informações necessárias para ingressar em uma reunião.                                                                                                                              |
 | direction           | callDirection                                                                                                 | A direção da chamada. Os valores possíveis são `incoming` ou `outgoing`. Somente leitura.                                                                                            |
 | id                  | String                                                                                                 | A ID de chamada. Somente leitura.                                                                                                                                                                        |
-| mediaConfig         | [appHostedMediaConfig](apphostedmediaconfig.md) ou [serviceHostedMediaConfig](servicehostedmediaconfig.md) | A configuração de mídia. Obrigatório.                                                                        |
+| mediaConfig         | [appHostedMediaConfig](apphostedmediaconfig.md) ou [serviceHostedMediaConfig](servicehostedmediaconfig.md) | A configuração de mídia. Necessário.                                                                        |
 | mediaState          | [callMediaState](callmediastate.md)                                                                    | Somente leitura. O estado da mídia de chamadas. |
 | meetingInfo         | [organizerMeetingInfo](organizermeetinginfo.md) ou [tokenMeetingInfo](tokenmeetinginfo.md)             | As informações de reunião necessárias para ingressar em uma reunião.                                                                                                            |
 transcrição     | [callTranscriptionInfo](calltranscriptioninfo.md)                                                          | As informações da transcrição da chamada. Somente leitura.    |

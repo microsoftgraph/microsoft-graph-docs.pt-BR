@@ -10,7 +10,7 @@ Você pode usar o data Conexão para habilitar cenários de aprendizado de máqu
 
 ## <a name="get-started"></a>Introdução
 
-Neste tutorial, você estará criando seu primeiro aplicativo microsoft Graph data Conexão. Interessante, não é? Também acreditamos nisso! Para começar, você precisará configurar algumas coisas primeiro.
+Neste tutorial, você criará seu primeiro aplicativo de Conexão de Dados do Microsoft Graph. Interessante, não é? Também acreditamos nisso! Para começar, você precisará configurar algumas coisas primeiro.
 
 ### <a name="prerequisites"></a>Pré-requisitos
 
@@ -22,7 +22,7 @@ Para concluir esse laboratório, você precisará das seguintes assinaturas ou l
    - Vários Microsoft 365 usuários com emails enviados e recebidos.
    - Acesso a pelo menos duas contas que atendem aos seguintes requisitos:
       - Deve ter a **função de administrador global** atribuída.
-      - Deve ter acesso ao Microsoft 365 Admin Center.
+      - Deve ter acesso à Central Administração Microsoft 365.
 
 1. **Assinatura do Microsoft Azure**
   

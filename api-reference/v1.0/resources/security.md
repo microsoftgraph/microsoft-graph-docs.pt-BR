@@ -5,12 +5,12 @@ localization_priority: Normal
 author: preetikr
 ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: 345e3e81b86fe42d16f4110450120c9f225c22dd
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: 7681472eb3f30676b35b9501ba410b660e8006710d375679254213cee239eb31
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50473662"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54141305"
 ---
 # <a name="security-resource-type"></a>tipo de recurso de segurança
 
@@ -32,7 +32,7 @@ Nenhuma
 ## <a name="relationships"></a>Relações
 | Relação | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|alerts|conjunto [alerta](alert.md) | Somente leitura. Anulável.|
+|alertas|conjunto [alerta](alert.md) | Somente leitura. Anulável.|
 
 
 ## <a name="json-representation"></a>Representação JSON

@@ -1,16 +1,16 @@
 ---
 title: Gerenciar a Caixa de Entrada Prioritária
-description: 'A Caixa de Entrada Focada permite que você veja mensagens importantes na guia da Caixa de Entrada e o restante das mensagens da Caixa `Focused` de Entrada na `Other` guia. O sistema de classificação '
+description: 'A Caixa de Entrada Focada permite que você veja mensagens importantes na guia Caixa de Entrada e o restante das mensagens de Caixa `Focused` de Entrada na `Other` guia. O sistema de classificação '
 localization_priority: Normal
 author: abheek-das
 ms.prod: ''
 doc_type: conceptualPageType
-ms.openlocfilehash: f071bf362751b0bd37718f341fd6fdbf9ad36326
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 3f30bab46d1f51babc0064b22dfa8ce6975b0a2c7f86e53107ee77b59ae1a920
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50130932"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54141466"
 ---
 # <a name="manage-focused-inbox"></a>Gerenciar a Caixa de Entrada Prioritária
 

@@ -1,18 +1,18 @@
 ---
-title: tipo de recurso teleconferenceDeviceAudioQuality
+title: Tipo de recurso teleconferenceDeviceAudioQuality
 description: Dados de qualidade de áudio do dispositivo de teleconferência de vídeo.
 localization_priority: Normal
 author: dongkyun
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 898d552e8943da11e0d57b45630bf42848f01d04
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ac7aa441786cb337377544704af9b35d278eeeefdc15ec81019e6c6ec07be3bd
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48086337"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54251733"
 ---
-# <a name="teleconferencedeviceaudioquality-resource-type"></a>tipo de recurso teleconferenceDeviceAudioQuality
+# <a name="teleconferencedeviceaudioquality-resource-type"></a>Tipo de recurso teleconferenceDeviceAudioQuality
 
 Namespace: microsoft.graph
 
@@ -20,7 +20,7 @@ Representa dados de qualidade de áudio do dispositivo de teleconferência de v�
 
 ## <a name="properties"></a>Propriedades
 
-**teleconferenceDeviceAudioQuality** herda todas as propriedades do recurso [teleconferenceDeviceMediaQuality](teleconferencedevicemediaquality.md) .
+**teleconferenceDeviceAudioQuality** herda todas as propriedades do recurso [teleconferenceDeviceMediaQuality.](teleconferencedevicemediaquality.md)
 
 ## <a name="json-representation"></a>Representação JSON
 

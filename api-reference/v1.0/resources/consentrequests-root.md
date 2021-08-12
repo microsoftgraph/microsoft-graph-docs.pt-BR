@@ -1,22 +1,22 @@
 ---
-title: Active Directory do Azure de consentimento
+title: Azure Active Directory de consentimento
 description: Use as solicitações de consentimento do Azure AD para gerenciar o fluxo de trabalho de solicitação para usuários que tentam acessar aplicativos que exigem consentimento do administrador.
 localization_priority: Normal
 author: psignoret
 ms.prod: governance
 doc_type: conceptualPageType
-ms.openlocfilehash: e39a1c71064282f3422a3bc48e3d019a852dbb95
-ms.sourcegitcommit: 99fdbd9a1806d64626423e1f39342dcde8a1eaf4
+ms.openlocfilehash: fc687460d397c4f8048607e1a1434ae48a7505d3af06590995dd2f47a08340d1
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/16/2021
-ms.locfileid: "52971367"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54212107"
 ---
-# <a name="azure-active-directory-consent-requests"></a>Active Directory do Azure de consentimento
+# <a name="azure-active-directory-consent-requests"></a>Azure Active Directory de consentimento
 
 Namespace: microsoft.graph
 
-Active Directory do Azure solicitações de consentimento (Azure AD) ajudam você a gerenciar o fluxo de trabalho de solicitação para usuários que tentam acessar aplicativos que exigem aprovação do administrador.
+Azure Active Directory solicitações de consentimento (Azure AD) ajudam você a gerenciar o fluxo de trabalho de solicitação para usuários que tentam acessar aplicativos que exigem aprovação do administrador.
 
 Para permitir que os usuários solicitem acesso ou consentimento de administrador para aplicativos que não estão autorizados a conceder consentimento a si mesmos, primeiro habilita o fluxo de trabalho de solicitação de consentimento. 
 
@@ -49,9 +49,9 @@ A tabela a seguir lista os métodos que você pode usar para interagir com recur
 
 As seguintes funções de diretório são necessárias para que um usuário de chamada gerencie o fluxo de trabalho de solicitações ou leia a lista de solicitações.
 
-| Operação | Permissões delegadas | Função de diretório necessária do usuário chamador |
+| Operation | Permissões delegadas | Função de diretório necessária do usuário chamador |
 |:------------------|:------------|:--------------------------------------------|
-| Leitura | ConsentRequest.Read.All, ConsentRequest.ReadWrite.All | Administrador Global, Leitor Global, Administrador de Aplicativos na Nuvem e Administrador de Aplicativos |
+| Ler | ConsentRequest.Read.All, ConsentRequest.ReadWrite.All | Administrador Global, Leitor Global, Administrador de Aplicativos na Nuvem e Administrador de Aplicativos |
 
 ## <a name="see-also"></a>Confira também
 

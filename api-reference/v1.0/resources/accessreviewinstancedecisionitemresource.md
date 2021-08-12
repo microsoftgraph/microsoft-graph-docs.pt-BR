@@ -5,12 +5,12 @@ author: isabelleatmsft
 localization_priority: Normal
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: d75fb2f2b2fd4338f63d2c71893f2dab17524bc8
-ms.sourcegitcommit: 5a1cc1943527aa268e3797ee514871e65eb474a6
+ms.openlocfilehash: 6693b849651fa8b96fbe08880052bf1cdd9a77f5d892fccb171307e05033494b
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53030978"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54178630"
 ---
 # <a name="accessreviewinstancedecisionitemresource-resource-type"></a>Tipo de recurso accessReviewInstanceDecisionItemResource
 
@@ -21,8 +21,8 @@ Cada item de decisão em uma revisão de acesso representa o acesso de uma entid
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|displayName|String|Nome de exibição do recurso|
-|id|String|Identificador do recurso|
+|displayName|Cadeia de caracteres|Nome de exibição do recurso|
+|id|Cadeia de caracteres|Identificador do recurso|
 |tipo|String|Tipo de recurso. Os tipos `Group` incluem: `ServicePrincipal` , , , , `DirectoryRole` `AzureRole` `AccessPackageAssignmentPolicy` .|
 
 ## <a name="relationships"></a>Relações

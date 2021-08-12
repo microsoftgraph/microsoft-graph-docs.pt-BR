@@ -4,12 +4,12 @@ description: O Microsoft Graph expõe as permissões granulares que controlam o 
 author: jackson-woods
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: a98c092294f28b32ba5fc8a747b1ff9aad1ee17a
-ms.sourcegitcommit: 5bb981b4853663354a566d4a4a5cbf288939e441
+ms.openlocfilehash: 905316d0b080d718ab44388613d7a6b10192e1c4
+ms.sourcegitcommit: c541d3eceafda4812e2c0c029c95ddfb92ef58b3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "53580416"
+ms.lasthandoff: 08/04/2021
+ms.locfileid: "53726737"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Referência de permissões do Microsoft Graph
 
@@ -1297,7 +1297,7 @@ _Notes.ReadWrite_ e _Notes.ReadWrite.All_ também permitem que o aplicativo modi
 Para contas corporativas ou de estudante, _Notes.Read.All_ e _Notes.ReadWrite.All_ permitem que o aplicativo acesse o conteúdo do OneNote de outros usuários ao qual o usuário conectado tenha permissão dentro da organização.
 
 ### <a name="example-usage"></a>Exemplo de uso
-#### <a name="delegated"></a>Delegated
+#### <a name="delegated"></a>Delegado
 
 * _Notes.Create_: Criar novos blocos de anotações para o usuário conectado (`POST /me/onenote/notebooks`).
 * _Notes.Read_: Criar blocos de anotações para o usuário conectado (`GET /me/onenote/notebooks`).
@@ -1511,7 +1511,7 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 |:---------- |:-------------- |:----------- |:---------------------- |
 | _PrivilegedAccess.Read.AzureAD_ |Leitura do Privileged Identity Management para Diretório  | Permite que o aplicativo tenha acesso de leitura às APIs do Privileged Identity Management para o Microsoft Azure AD. | Sim |
 | _PrivilegedAccess.Read.AzureADGroup_ |Leitura do Privileged Identity Management para grupos de acesso privilegiado | Permite que o aplicativo tenha acesso de leitura às APIs do Privileged Identity Management para grupos. | Sim |
-| _PrivilegedAccess.Read.AzureADResources_ |Leitura do Privileged Identity Management para recursos do Azure | Permite que o aplicativo tenha acesso de leitura às APIs do Privileged Identity Management para os recursos do Microsoft Azure AD. | Sim |
+| _PrivilegedAccess.Read.AzureResources_ |Leitura do Privileged Identity Management para recursos do Azure | Permite que o aplicativo tenha acesso de leitura às APIs do Privileged Identity Management para os recursos do Microsoft Azure AD. | Sim |
 
 ---
 
@@ -2409,7 +2409,7 @@ Para que um aplicativo leia ou grave todas as configurações de implantação d
 
 ### <a name="example-usage"></a>Exemplo de uso
 
-#### <a name="delegated"></a>Delegated
+#### <a name="delegated"></a>Delegado
 
 * _WindowsUpdates.ReadWrite.All_: crie uma implantação (`POST /beta/admin/windows/updates/deployments`).
 

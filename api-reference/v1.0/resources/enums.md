@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
 doc_type: enumPageType
-ms.openlocfilehash: 26fc51e2d8cff05a57955b437a93c1afac3f6f0b
-ms.sourcegitcommit: 596b3d5636f3f3e042d180ea8f039f00ebd6b38a
+ms.openlocfilehash: 4ee76cc32b9a2b07d9b1d5d6de5a9c00508038b52cf58074cac2a40a124ee656
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/30/2021
-ms.locfileid: "53665775"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54146899"
 ---
 # <a name="enum-values"></a>Valores denum
 
@@ -362,7 +362,7 @@ Namespace: microsoft.graph
 
 |Member|
 |:---|
-|Nenhum|
+|None|
 |SecurityGroup|
 |Todos|
 
@@ -1186,7 +1186,7 @@ Valores possíveis para tipos de conta de usuário (associação ao grupo), por 
 
 | Membro | Valor | Descrição             |
 |:-------|:------|:------------------------|
-| Email   | 1     | Ameaça de email.            |
+| email   | 1     | Ameaça de email.            |
 | url    | 2     | Ameaça de URL.             |
 | file   | 3     | Ameaça de arquivo de anexo. |
 
@@ -1435,7 +1435,7 @@ Valores possíveis para tipos de conta de usuário (associação ao grupo), por 
 
 | Member                |
 |:----------------------|
-| cadeia de caracteres                |
+| string                |
 | booliano               |
 | int64                 |
 | stringCollection      |
@@ -1554,4 +1554,71 @@ Valores possíveis para tipos de conta de usuário (associação ao grupo), por 
 |personalMicrosoftAccountUser|
 |skypeUser|
 |phoneUser|
+|unknownFutureValue|
+
+### <a name="posttype-values"></a>valores postType 
+
+|Member|
+|:---|
+|regular|
+|quick|
+|estratégico|
+|unknownFutureValue|
+
+### <a name="servicehealthclassificationtype-values"></a>valores serviceHealthClassificationType 
+
+|Member|
+|:---|
+|advisory|
+|incident|
+|unknownFutureValue|
+
+### <a name="servicehealthorigin-values"></a>valores serviceHealthOrigin 
+
+|Member|
+|:---|
+|microsoft|
+|thirdParty|
+|customer|
+|unknownFutureValue|
+
+### <a name="servicehealthstatus-values"></a>valores serviceHealthStatus 
+
+|Member|
+|:---|
+|serviceOperational|
+|investigar|
+|restoringService|
+|verifyingService|
+|serviceRestored|
+|postIncidentReviewPublished|
+|serviceDegradation|
+|serviceInterruption|
+|extendedRecovery|
+|falsePositive|
+|investigationSuspended|
+|resolvido|
+|mitigatedExternal|
+|mitigado|
+|resolvedExternal|
+|confirmed|
+|reportado|
+|unknownFutureValue|
+
+### <a name="serviceupdatecategory-values"></a>valores serviceUpdateCategory 
+
+|Member|
+|:---|
+|preventOrFixIssue|
+|planForChange|
+|stayInformed|
+|unknownFutureValue|
+
+### <a name="serviceupdateseverity-values"></a>valores serviceUpdateSeverity 
+
+|Member|
+|:---|
+|normal|
+|high|
+|critical|
 |unknownFutureValue|

@@ -1,22 +1,22 @@
 ---
-title: tipo de recurso onenoteOperationError
-description: Um erro de uma operação do OneNote com falha.
+title: Tipo de recurso onenoteOperationError
+description: Um erro de uma operação OneNote falha.
 author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
 doc_type: resourcePageType
-ms.openlocfilehash: 8159fc93744c18205e3373780c128ca37242419f
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: e0c355cbd444362e548ec69c231b1829c02d705a670f8295f08bff1af95a9cb5
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48041180"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54159936"
 ---
-# <a name="onenoteoperationerror-resource-type"></a>tipo de recurso onenoteOperationError
+# <a name="onenoteoperationerror-resource-type"></a>Tipo de recurso onenoteOperationError
 
 Namespace: microsoft.graph
 
-Um erro de uma operação do OneNote com falha.
+Um erro de uma operação OneNote falha.
 
 ## <a name="json-representation"></a>Representação JSON
 

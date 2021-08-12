@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: a56c45110ecc2c31ca510ae8d18c29a5c9601e80
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 6c57d61524c22feaca64664a0e9fd2cc873ab057ce596dc0e156c92a6b20aee4
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52755178"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54184666"
 ---
 # <a name="reportroot-resource-type"></a>Tipo de recurso reportRoot
 
@@ -31,7 +31,7 @@ O recurso que representa uma instância dos Relatórios de históricos.
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|O identificador exclusivo dessa entidade.|
+|id|Cadeia de caracteres|O identificador exclusivo dessa entidade.|
 
 ## <a name="relationships"></a>Relações
 Nenhum

@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: 67e49c7cf9a23bbdfd0547e7b593c5a948359413
-ms.sourcegitcommit: 596b3d5636f3f3e042d180ea8f039f00ebd6b38a
+ms.openlocfilehash: a140f822e40f18b4430b28fab7b3aa28279acb92a50bab76fac28371b39706ff
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/30/2021
-ms.locfileid: "53665715"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54192562"
 ---
 # <a name="conversationthread-resource-type"></a>tipo de recurso conversationThread
 
@@ -28,7 +28,7 @@ A coleção de destinatários da última postagem são os destinatários agregad
 |[Criar thread](../api/group-post-threads.md) | [conversationThread](conversationthread.md) |Inicie uma nova conversa criando primeiro um thread. Uma nova conversa, thread de conversas e posts são criados no grupo.|
 |[Obter conversationThread](../api/conversationthread-get.md) | [conversationThread](conversationthread.md) |Obtenha um thread específico pertencente a um grupo. |
 |[Update](../api/conversationthread-update.md) | [conversationThread](conversationthread.md)  |Atualize o objeto conversationThread. |
-|[Delete](../api/conversationthread-delete.md) | Nenhum |Exclua um objeto conversationThread. |
+|[Delete](../api/conversationthread-delete.md) | None |Exclua um objeto conversationThread. |
 |[Responder](../api/conversationthread-reply.md)|Nenhuma|Responda a este thread criando uma nova entidade Post.|
 |[Listar Postagens](../api/conversationthread-list-posts.md) |Coleção [post](post.md)| Obtenha as postagens do thread especificado. |
 
@@ -38,12 +38,12 @@ A coleção de destinatários da última postagem são os destinatários agregad
 | id                    | String                               | Somente leitura. <br/><br/>Devolvido por padrão.                                                                                                                                                                                      |
 | toRecipients          | Coleção [recipient](recipient.md) | Os destinatários Para: do thread. <br/><br/>Retornado apenas em $select.                                                                                                                                                              |
 | ccRecipients          | Coleção [recipient](recipient.md) | Os destinatários Cc: do thread. <br/><br/>Retornado apenas em $select.                                                                                                                                                               |
-| topic                 | String                               | O tópico da conversa. Essa propriedade pode ser definida quando a conversa é criada, mas não pode ser atualizada. <br/><br/>Devolvido por padrão.                                                                              |
-| hasAttachments        | Booliano                              | Indica se qualquer uma das postagens neste thread tem pelo menos um anexo. <br/><br/>Devolvido por padrão.                                                                                                              |
+| topic                 | String                               | O tópico da conversa. Essa propriedade pode ser definida quando a conversa é criada, mas não pode ser atualizada. <br/><br/>Retornado por padrão.                                                                              |
+| hasAttachments        | Booliano                              | Indica se qualquer uma das postagens neste thread tem pelo menos um anexo. <br/><br/>Retornado por padrão.                                                                                                              |
 | lastDeliveredDateTime | DateTimeOffset                       | O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`.<br/><br/>Retornado por padrão. |
-| uniqueSenders         | Coleção de cadeias de caracteres                    | Todos os usuários que enviaram uma mensagem para este thread. <br/><br/>Devolvido por padrão.                                                                                                                                               |
-| visualização               | String                               | Um breve resumo do corpo da postagem mais recente nesta conversa. <br/><br/>Devolvido por padrão.                                                                                                                           |
-| isLocked              | Booliano                              | Indica se o thread está bloqueado. <br/><br/>Devolvido por padrão.                                                                                                                                                              |
+| uniqueSenders         | Coleção de cadeias de caracteres                    | Todos os usuários que enviaram uma mensagem para este thread. <br/><br/>Retornado por padrão.                                                                                                                                               |
+| visualização               | String                               | Um breve resumo do corpo da postagem mais recente nesta conversa. <br/><br/>Retornado por padrão.                                                                                                                           |
+| isLocked              | Booliano                              | Indica se o thread está bloqueado. <br/><br/>Retornado por padrão.                                                                                                                                                              |
 
 ## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|

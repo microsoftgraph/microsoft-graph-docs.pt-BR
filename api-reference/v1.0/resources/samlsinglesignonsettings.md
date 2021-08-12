@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: c923c4c5b7294abb78e7fe93f852f14304601de6
-ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
+ms.openlocfilehash: 9714a3294374c886a29f33d554a7701951a5ca132cbe1dbf5c3ebe802cc714e8
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50761083"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54222697"
 ---
 # <a name="samlsinglesignonsettings-resource-type"></a>Tipo de recurso samlSingleSignOnSettings
 
@@ -20,7 +20,7 @@ Representa um contêiner para configurações relacionadas ao login único SAML.
 
 | Propriedade | Tipo | Descrição |
 |:---------------|:--------|:----------|
-|relayState|String| O URI relativo para o que o provedor de serviços redirecionaria após a conclusão do fluxo de logom único. |
+|relayState|Cadeia de caracteres| O URI relativo para o que o provedor de serviços redirecionaria após a conclusão do fluxo de logom único. |
 
 
 ## <a name="json-representation"></a>Representação JSON

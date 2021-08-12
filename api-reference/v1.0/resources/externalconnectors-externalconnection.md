@@ -5,12 +5,12 @@ author: mecampos
 localization_priority: Normal
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: 18254f8776371871f1dc0fb5ae6ac54a51cea83b
-ms.sourcegitcommit: 1940be9846055aa650c6c03982b74a961f1e316a
+ms.openlocfilehash: beb0a9b424f1207a7cf378e6bbb17c747ca68ca50617381766ee4dc8d5232828
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/17/2021
-ms.locfileid: "53467192"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54180856"
 ---
 # <a name="externalconnection-resource-type"></a>Tipo de recurso externalConnection
 
@@ -25,7 +25,7 @@ Um contêiner lógico para adicionar conteúdo de uma fonte externa à Microsoft
 |[Listar externalConnections](../api/externalconnectors-externalconnection-list.md)|[Coleção externalConnection](../resources/externalconnectors-externalconnection.md)|Obter uma lista dos [objetos externalConnection](../resources/externalconnectors-externalconnection.md) e suas propriedades.|
 |[Obter externalConnection](../api/externalconnectors-externalconnection-get.md)|[externalConnection](../resources/externalconnectors-externalconnection.md)|Leia as propriedades e as relações de um [objeto externalConnection.](../resources/externalconnectors-externalconnection.md)|
 |[Atualizar externalConnection](../api/externalconnectors-externalconnection-update.md)|[externalConnection](../resources/externalconnectors-externalconnection.md)|Atualize as propriedades de [um objeto externalConnection.](../resources/externalconnectors-externalconnection.md)|
-|[Excluir externalConnection](../api/externalconnectors-externalconnection-delete.md)|Nenhum|Exclui um [objeto externalConnection.](../resources/externalconnectors-externalconnection.md)|
+|[Excluir externalConnection](../api/externalconnectors-externalconnection-delete.md)|None|Exclui um [objeto externalConnection.](../resources/externalconnectors-externalconnection.md)|
 |[Criar esquema](../api/externalconnectors-schema-create.md)|[schema](../resources/externalconnectors-schema.md)|Crie um novo objeto de esquema.|
 |[Criar externalItem](../api/externalconnectors-externalitem-create.md)|[externalItem](../resources/externalconnectors-externalitem.md)|Crie um novo objeto externalItem.|
 
@@ -33,8 +33,8 @@ Um contêiner lógico para adicionar conteúdo de uma fonte externa à Microsoft
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |configuração|[microsoft.graph.externalConnectors.configuration](../resources/externalconnectors-configuration.md)|Especifica IDs de aplicativo adicionais que têm permissão para gerenciar a conexão e indexar conteúdo na conexão. Opcional.|
-|description|String|Descrição da conexão exibida no Centro de administração do Microsoft 365. Opcional.|
-|id|String| ID exclusiva fornecida pelo desenvolvedor da conexão no Azure Active Directory locatário. Deve ter entre 3 e 32 caracteres de comprimento. Deve conter somente caracteres alfanuméricos. Não é possível começar ou ser um dos `Microsoft` seguintes valores: `None` , , , , , , , , `Directory` , , , , `Exchange` , , `ExchangeArchive` , `LinkedIn` , `Mailbox` `OneDriveBusiness` `SharePoint` `Teams` `Yammer` `Connectors` `TaskFabric` `PowerBI` `Assistant` `TopicEngine` . `MSFT_All_Connectors` Obrigatório. |
+|description|Cadeia de caracteres|Descrição da conexão exibida no Centro de administração do Microsoft 365. Opcional.|
+|id|Cadeia de caracteres| ID exclusiva fornecida pelo desenvolvedor da conexão no Azure Active Directory locatário. Deve ter entre 3 e 32 caracteres de comprimento. Deve conter somente caracteres alfanuméricos. Não é possível começar ou ser um dos `Microsoft` seguintes valores: `None` , , , , , , , , `Directory` , , , , `Exchange` , , `ExchangeArchive` , `LinkedIn` , `Mailbox` `OneDriveBusiness` `SharePoint` `Teams` `Yammer` `Connectors` `TaskFabric` `PowerBI` `Assistant` `TopicEngine` . `MSFT_All_Connectors` Obrigatório. |
 |nome|String|O nome de exibição da conexão a ser exibida no Centro de administração do Microsoft 365. Comprimento máximo de 128 caracteres. Obrigatório.|
 |state|microsoft.graph.externalConnectors.connectionState|Indica o estado atual da conexão. Os valores possíveis são: `draft`, `ready`, `obsolete`, `limitExceeded`, `unknownFutureValue`.|
 

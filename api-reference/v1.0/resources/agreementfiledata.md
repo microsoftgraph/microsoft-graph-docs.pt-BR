@@ -1,27 +1,27 @@
 ---
 title: Tipo de recurso agreementFileData
-description: Representa um arquivo de contrato de uso do Azure Active Directory (Azure AD).
+description: Representa um Azure Active Directory (Azure AD) de termos de contrato de uso.
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: governance
 author: raprakasMSFT
-ms.openlocfilehash: 31837b69a87f731f41de23a458dedec665bfe5c4
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: 8572dac857f02661bcebb84ee3269939caf324ce12593091e8ee995e390abd07
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50722552"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54216956"
 ---
 # <a name="agreementfiledata-resource-type"></a>Tipo de recurso agreementFileData
 
 Namespace: microsoft.graph
 
-Representa um arquivo de contrato de uso do Azure Active Directory (Azure AD).
+Representa um Azure Active Directory (Azure AD) de termos de contrato de uso.
 
 ## <a name="properties"></a>Propriedades
 | Método       | Tipo de retorno | Descrição |
 |:-------------|:------------|:------------|
-|data|Binária|Dados que representam os termos de uso do documento PDF. Somente leitura.|
+|data|Binário|Dados que representam os termos de uso do documento PDF. Somente leitura.|
 
 ## <a name="json-representation"></a>Representação JSON
 

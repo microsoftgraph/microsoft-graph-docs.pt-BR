@@ -5,12 +5,12 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 508f8c79606ef6e9e0d3778899cb04789b9defde
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: e3ef8c7dee695255c7802780f786d4555adc61dae78db191010e7e88d6e3190a
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50720799"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54138525"
 ---
 # <a name="offershiftrequest-resource-type"></a>Tipo de recurso offerShiftRequest
 
@@ -18,15 +18,15 @@ Namespace: microsoft.graph
 
 Representa uma solicitação para oferecer uma mudança para outro usuário na equipe.
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 
 | Método       | Tipo de retorno | Descrição |
 |:-------------|:------------|:------------|
 | [List](../api/offershiftrequest-list.md) | Coleção [of offerShiftRequest](offershiftrequest.md) | Leia as propriedades e as relações de todos os **objetos offerShiftRequest** em uma equipe. |
-| [Create](../api/offershiftrequest-post.md) | [offerShiftRequest](offershiftrequest.md) | Crie uma instância de um **objeto offerShiftRequest.** |
-| [Get](../api/offershiftrequest-get.md) | [offerShiftRequest](offershiftrequest.md) | Leia as propriedades e as relações de um **objeto offerShiftRequest.** |
-|[Aprovar](../api/offershiftrequest-approve.md)|Nenhum|Aprovar uma **ofertaShiftRequest**. |
-|[Declínio](../api/offershiftrequest-decline.md)|Nenhum|Recusar uma **ofertaShiftRequest**. |
+| [Criar](../api/offershiftrequest-post.md) | [offerShiftRequest](offershiftrequest.md) | Crie uma instância de um **objeto offerShiftRequest.** |
+| [Obter](../api/offershiftrequest-get.md) | [offerShiftRequest](offershiftrequest.md) | Leia as propriedades e as relações de um **objeto offerShiftRequest.** |
+|[Aprovar](../api/offershiftrequest-approve.md)|None|Aprovar uma **ofertaShiftRequest**. |
+|[Declínio](../api/offershiftrequest-decline.md)|None|Recusar uma **ofertaShiftRequest**. |
 
 ## <a name="properties"></a>Propriedades
 

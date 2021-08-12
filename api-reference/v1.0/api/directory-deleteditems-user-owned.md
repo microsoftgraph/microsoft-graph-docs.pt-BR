@@ -5,12 +5,12 @@ author: keylimesoda
 localization_priority: Normal
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 7c947d6ebb8a1f268728c07be64451e230497fb6
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 4064c395ba3275575fa0c698d602f30ec2d164b90714e0e26ea4178efd0800c5
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50434472"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54138966"
 ---
 # <a name="list-deleted-items-owned-by-a-user"></a>Listar itens excluídos pertencentes a um usuário
 
@@ -58,7 +58,7 @@ O corpo da solicitação requer os seguintes parâmetros:
 | Parâmetro    | Tipo |Descrição|
 |:---------------|:--------|:----------|
 |userId|Cadeia de caracteres|ID do proprietário.|
-|tipo|Cadeia de caracteres|Tipo de objetos de propriedade a retornar; `Group` atualmente é o único valor com suporte.|
+|tipo|String|Tipo de objetos de propriedade a retornar; `Group` atualmente é o único valor com suporte.|
 
 
 ## <a name="response"></a>Resposta

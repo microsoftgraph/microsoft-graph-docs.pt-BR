@@ -5,12 +5,12 @@ localization_priority: Normal
 author: sharad-sharma-msft
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 9e69fa26d97684db4964ffba3d268ee1d1c11b44
-ms.sourcegitcommit: f77c1385306fd40557aceb24fdfe4832cbb60a27
+ms.openlocfilehash: bef762ca4928dbde1d8e15ead4520af0dd1aa36502b74a1ed6d100a2d0480c28
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/12/2021
-ms.locfileid: "52911373"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54246602"
 ---
 # <a name="rubricqualityselectedcolumnmodel-resource-type"></a>Tipo de recurso rubricQualitySelectedColumnModel
 
@@ -22,8 +22,8 @@ Indica o [rubricLevel](rubriclevel.md) selecionado pelo professor ao classificar
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|columnId|String|ID do nível selecionado para essa qualidade.|
-|qualityId|String|ID da qualidade associada.|
+|columnId|Cadeia de caracteres|ID do nível selecionado para essa qualidade.|
+|qualityId|Cadeia de caracteres|ID da qualidade associada.|
 
 ## <a name="json-representation"></a>Representação JSON
 

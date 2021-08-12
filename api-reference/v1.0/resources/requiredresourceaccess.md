@@ -1,22 +1,22 @@
 ---
 title: Tipo de recurso requiredResourceAccess
-description: Especifica o conjunto de escopos de permissão do OAuth 2.0 e funções de aplicativo.
+description: Especifica o conjunto de escopos de permissão OAuth 2.0 e funções de aplicativo.
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: applications
 author: psignoret
-ms.openlocfilehash: 0ca072b679a7ec3b69c311d09aaf2000f4754f19
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 24d4e48fb6a15fabb61552d1ee2f2d884f276e6a862706b290fb97c1a2a78096
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50133256"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54184491"
 ---
 # <a name="requiredresourceaccess-resource-type"></a>Tipo de recurso requiredResourceAccess
 
 Namespace: microsoft.graph
 
-Especifica o conjunto de escopos de permissão OAuth 2.0 e funções de aplicativo sob o recurso especificado que um aplicativo requer acesso. Os escopos de permissão OAuth 2.0 especificados podem ser solicitados por aplicativos cliente (por meio da coleção **requiredResourceAccess)** ao chamar um aplicativo de recurso. A **propriedade requiredResourceAccess** da entidade [do](application.md) aplicativo é uma coleção de **ReqiredResourceAccess**.
+Especifica o conjunto de escopos de permissão OAuth 2.0 e funções de aplicativo sob o recurso especificado ao que um aplicativo requer acesso. Os escopos de permissão OAuth 2.0 especificados podem ser solicitados por aplicativos cliente (por meio da coleção **requiredResourceAccess)** ao chamar um aplicativo de recurso. A **propriedade requiredResourceAccess** da entidade [application](application.md) é uma coleção de **ReqiredResourceAccess**.
 
 
 ## <a name="json-representation"></a>Representação JSON
@@ -41,8 +41,8 @@ Veja a seguir uma representação JSON do recurso
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|resourceAccess|[Coleção resourceAccess](resourceaccess.md)|A lista de escopos de permissão OAuth2.0 e funções de aplicativo que o aplicativo requer do recurso especificado.|
-|resourceAppId|String|O identificador exclusivo do recurso ao que o aplicativo exige acesso.  Isso deve ser igual à **appId** declarada no aplicativo de recurso de destino.|
+|resourceAccess|[coleção resourceAccess](resourceaccess.md)|A lista de escopos de permissão OAuth2.0 e funções de aplicativo que o aplicativo exige do recurso especificado.|
+|resourceAppId|Cadeia de caracteres|O identificador exclusivo do recurso ao que o aplicativo requer acesso.  Isso deve ser igual ao **appId** declarado no aplicativo de recurso de destino.|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

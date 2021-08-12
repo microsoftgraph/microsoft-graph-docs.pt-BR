@@ -5,12 +5,12 @@ author: jewan-microsoft
 localization_priority: Priority
 ms.prod: onenote
 doc_type: resourcePageType
-ms.openlocfilehash: 8c81804c9ea93e6da9f0f9b7134f5b38aa4afd64
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 5280edcec076a924afa5648ee6841d7659ad54da10a491dc15a4ba86fbb2640e
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50961976"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54154949"
 ---
 # <a name="onenote-resource-type"></a>tipo de recurso do onenote
 
@@ -54,10 +54,10 @@ Para obter informações sobre as permissões necessárias para trabalhar com o 
 |:---------------|:--------|:----------|
 |notebooks|Coleção [bloco de anotações](notebook.md)|A coleção de blocos de anotações do OneNote que pertencem ao usuário ou ao grupo. Somente leitura. Anulável.|
 |operations|Coleção [OnenoteOperation](onenoteoperation.md)  |O status das operações do OneNote. Não há suporte para a obtenção de uma coleção de operações, mas você pode obter o status das operações longas se o cabeçalho `Operation-Location` for retornado na resposta. Somente leitura. Anulável.|
-|páginas|Coleção [OnenotePage](page.md) |As páginas em todos os blocos de anotações do OneNote que pertencem ao usuário ou ao grupo.  Somente leitura. Anulável.|
+|páginas|Coleção [OnenotePage](page.md) |As páginas em todos os blocos de anotações do OneNote que pertencem ao usuário ou ao grupo. Somente leitura. Anuláveis.|
 |recursos|Coleção [OnenoteResource](resource.md)  |A imagem e outros recursos de arquivos nas páginas do OneNote. Não há suporte para a obtenção de uma coleção de recursos, mas você pode [obter o conteúdo de um recurso binário específico](resource.md). Somente leitura. Anulável.|
-|sectionGroups|Coleção [SectionGroup](sectiongroup.md)|Os grupos de seção em todos os blocos de anotações do OneNote que pertencem ao usuário ou ao grupo.  Somente leitura. Anulável.|
-|seções|Coleção [OnenoteSection](section.md)|As seções em todos os blocos de anotações do OneNote que pertencem ao usuário ou ao grupo.  Somente leitura. Anulável.|
+|sectionGroups|Coleção [SectionGroup](sectiongroup.md)|Os grupos de seção em todos os blocos de anotações do OneNote que pertencem ao usuário ou ao grupo. Somente leitura. Anuláveis.|
+|seções|Coleção [OnenoteSection](section.md)|As seções em todos os blocos de anotações do OneNote que pertencem ao usuário ou ao grupo. Somente leitura. Anuláveis.|
 
 ## <a name="methods"></a>Métodos
 

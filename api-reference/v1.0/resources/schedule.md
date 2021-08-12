@@ -1,59 +1,59 @@
 ---
-title: tipo de recurso Schedule
-description: Uma coleção de schedulingGroups, Shifts, timeOffReasons e timesOff dentro de uma equipe.
+title: tipo de recurso agendar
+description: Uma coleção de schedulingGroups, shifts, timeOffReasons e timesOff em uma equipe.
 author: akumar39
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType_
-ms.openlocfilehash: a589d63c59636db385bafb04a8c646dc2dc6c030
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: b7ad28acfc03726d9645afce686b327d6d5414b9755f6f01791e21b544a5d8e4
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48037056"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54189342"
 ---
-# <a name="schedule-resource-type"></a>tipo de recurso Schedule
+# <a name="schedule-resource-type"></a>tipo de recurso agendar
 
 Namespace: microsoft.graph
 
-Uma coleção de objetos de grupo de [agendamento](schedulinggroup.md) , objetos [Shift](shift.md) , objetos [timeOffReason](timeoffreason.md) e objetos [timeOff](timeoff.md) dentro de uma [equipe](../resources/team.md). 
+Uma coleção de [objetos schedulingGroup,](schedulinggroup.md) [objetos shift,](shift.md) [objetos timeOffReason](timeoffreason.md) e [objetos timeOff](timeoff.md) dentro de uma [equipe](../resources/team.md). 
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 
 | Método       | Tipo de retorno  |Descrição|
 |:---------------|:--------|:----------|
-|[Criar ou substituir agendamento](../api/team-put-schedule.md) | [Cronograma](schedule.md) | Criar ou substituir uma agenda.|
-|[Obter cronograma](../api/schedule-get.md) | [Cronograma](schedule.md) | Obter um cronograma.|
-|[Compartilhar](../api/schedule-share.md) | Nenhum | Compartilhar um intervalo de tempo de agendamento com membros de agendamento.|
+|[Criar ou substituir agendamento](../api/team-put-schedule.md) | [cronograma](schedule.md) | Crie ou substitua um agendamento.|
+|[Obter agendamento](../api/schedule-get.md) | [cronograma](schedule.md) | Obter um cronograma.|
+|[Compartilhar](../api/schedule-share.md) | None | Compartilhe um intervalo de tempo de agendamento com membros de agendamento.|
 
 ## <a name="properties"></a>Propriedades
 |Nome                   |Tipo           |Descrição                                                                                                                                      |
 |-----------------------|---------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
-| id                    |string  |ID do cronograma.|
-| enabled               |Boolean    | Indica se o cronograma está habilitado para a equipe. Obrigatório.|
-| timeZone              |string  | Indica o fuso horário da equipe de agendamento usando o formato de banco de dados da TZ. Obrigatório.|
-| provisionStatus       |operationStatus    | O status do provisionamento de agendamento. Os valores possíveis são:,,, `notStarted` `running` `completed` `failed` . |
+| id                    |string  |ID do agendamento.|
+| enabled               |Boolean    | Indica se a agenda está habilitada para a equipe. Obrigatório.|
+| timeZone              |string  | Indica o fuso horário da equipe de agendamento usando o formato de banco de dados tz. Obrigatório.|
+| provisionStatus       |operationStatus    | O status do provisionamento de agendamento. Os valores possíveis `notStarted` são , , , `running` `completed` `failed` . |
 | provisionStatusCode   |string  | Informações adicionais sobre por que o provisionamento de agendamento falhou. |
-| timeClockEnabled                  |Boolean  | Indica se o relógio de hora está habilitado para o cronograma.             |
-| openShiftsEnabled                 |Boolean  | Indica se os turnos abertos estão habilitados para o cronograma.             | 
-| swapShiftsRequestsEnabled                 |Boolean| Indica se as solicitações de troca alternadas estão habilitadas para o cronograma.             |
-| offerShiftRequestsEnabled                 |Boolean  | Indica se as solicitações de mudança de oferta estão habilitadas para o cronograma.             | 
-| timeOffRequestsEnabled                    |Boolean | Indica se as solicitações de folga estão habilitadas para o cronograma.             | 
+| timeClockEnabled                  |Booliano  | Indica se o relógio está habilitado para o agendamento.             |
+| openShiftsEnabled                 |Booliano  | Indica se os turnos abertos estão habilitados para o agendamento.             | 
+| swapShiftsRequestsEnabled                 |Booliano| Indica se as solicitações de turnos de troca estão habilitadas para o agendamento.             |
+| offerShiftRequestsEnabled                 |Booliano  | Indica se as solicitações de turno de oferta estão habilitadas para o agendamento.             | 
+| timeOffRequestsEnabled                    |Booliano | Indica se as solicitações de tempo de folga estão habilitadas para o agendamento.             | 
 
 
 
 ## <a name="relationships"></a>Relacionamentos
 |Nome                   |Tipo           |Descrição                                                                                                                                      |
 |-----------------------|---------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
-| desloca   | coleção [Shift](shift.md)  | Os turnos no cronograma. |
-| timesOff   |coleção [timeOff](timeoff.md)  | As instâncias de folgas no cronograma. |
-| timeOffReasons   |coleção [timeOffReason](timeoffreason.md)  | O conjunto de motivos para uma folga no cronograma. |
-| schedulingGroups   |[schedulingGroup](schedulinggroup.md) conjunto  | O agrupamento lógico de usuários no cronograma (geralmente por função). |
-| openshifts   |coleção [openShift](openshift.md) | O conjunto de turnos abertos em um grupo de agendamento no cronograma. |
-| workforceintegrations   |coleção [workforceIntegration](workforceintegration.md)  | Uma instância de uma integração de força de funcionários por equipe com fluxo de dados de saída em notificações de alteração síncrona (para entidades com suporte). |
-| swapshiftchangerequests   |coleção [swapShiftsChangeRequest](swapshiftschangerequest.md)  | As solicitações de troca de turnos no cronograma. |
-| openshiftchangerequests   |coleção [openShiftChangeRequest](openshiftchangerequest.md)  | As solicitações de mudança abertas no cronograma. |
-| timeoffrequest   |coleção [timeOffRequest](timeoffrequest.md)  | As solicitações de folga no cronograma. |
+| shifts   | [coleção shift](shift.md)  | Os turnos na agenda. |
+| timesOff   |[Coleção timeOff](timeoff.md)  | As instâncias de horários de folga na agenda. |
+| timeOffReasons   |[Coleção timeOffReason](timeoffreason.md)  | O conjunto de motivos para uma folga na agenda. |
+| schedulingGroups   |[schedulingGroup](schedulinggroup.md) conjunto  | O agrupamento lógico de usuários na agenda (geralmente por função). |
+| openshifts   |[Coleção openShift](openshift.md) | O conjunto de turnos abertos em um grupo de agendamento na agenda. |
+| workforceintegrations   |[coleção workforceIntegration](workforceintegration.md)  | Uma instância de uma integração de força de trabalho por equipe com fluxo de dados de saída em notificações de alteração síncrona (para entidades com suporte). |
+| swapshiftchangerequests   |[Coleção swapShiftsChangeRequest](swapshiftschangerequest.md)  | As solicitações de troca para turnos na agenda. |
+| openshiftchangerequests   |[Coleção openShiftChangeRequest](openshiftchangerequest.md)  | As solicitações de turno aberto na agenda. |
+| timeoffrequest   |[Coleção timeOffRequest](timeoffrequest.md)  | As solicitações de tempo de folga na agenda. |
 
 ## <a name="json-representation"></a>Representação JSON
 

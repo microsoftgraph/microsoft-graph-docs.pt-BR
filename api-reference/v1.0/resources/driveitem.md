@@ -5,12 +5,12 @@ description: Item é o principal modelo de dados na API do OneDrive. Tudo é um 
 localization_priority: Priority
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: f4fc16e311a696c10076588023945064f76ee3dc
-ms.sourcegitcommit: a1675c7b8dfc7d7c3c7923d06cda2b0127f9c3e6
+ms.openlocfilehash: c7e611b40ab2d0f770760bbedcbddaea8d0c3eecbd6efcd1c437a1ab1a9ef326
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "49752773"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54182564"
 ---
 # <a name="driveitem-resource-type"></a>tipo de recurso driveItem
 
@@ -25,8 +25,7 @@ Há duas maneiras principais de endereçar um recurso **driveItem**:
 * Pelo identificador exclusivo de **driveItem** usando `drive/items/{item-id}`
 * Usando o caminho do sistema de arquivos `/drive/root:/path/to/file`
 
-Os recursos de **driveItem** têm facetas modeladas como propriedades que fornecem dados sobre as identidades e recursos do driveItem.
-Por exemplo:
+Os recursos **driveItem** têm facetas modeladas como propriedades que fornecem dados sobre as identidades e capacidades de driveItem. Por exemplo:
 
 * As pastas têm uma [**faceta folder**][folder]
 * Os arquivos têm uma [**faceta file**][file].

@@ -3,12 +3,12 @@ title: Defina os comportamentos de grupo do Microsoft 365 e opções de provisio
 description: Usando o recurso de grupo no Microsoft Graph, você pode definir comportamentos e recursos de grupo específicos para provisionar ao criar um grupo do Microsoft 365.
 author: Jordanndahl
 localization_priority: Priority
-ms.openlocfilehash: 54e4622a69f33980494962882ac1aa06d07eaec5
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: 7809160bf34a6a24c0c2058a9e509e000b655875d8ee6dfaeebfbf97a0fcead7
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52682177"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54216494"
 ---
 # <a name="set-microsoft-365-group-behaviors-and-provisioning-options-preview"></a>Definir comportamentos de grupo do Microsoft 365 e opções de provisionamento (visualização)
 

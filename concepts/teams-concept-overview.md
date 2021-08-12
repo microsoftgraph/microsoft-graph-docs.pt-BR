@@ -5,16 +5,16 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: aa1cb7a2bedbf6ab696b6731546eb97861bfb697
-ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
+ms.openlocfilehash: 5e3a8e6ba1110aa9183f9ab80732e6128b4c0d1ff327ab0bc13ee71aa5b26500
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52546984"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54218288"
 ---
 # <a name="microsoft-teams-api-overview"></a>Visão geral da API do Microsoft Teams
 
-O [Microsoft Teams](https://products.office.com/microsoft-teams) é o melhor hub para trabalhos em equipe e comunicações inteligentes. Criado com base na força e na escala do [Microsoft 365](https://products.office.com/), que conta com mais de 120 milhões de usuários, o Microsoft Teams oferece recursos de colaboração, reuniões, chamadas e empresariais de voz baseados em bate-papo.
+O [Microsoft Teams](https://products.office.com/microsoft-teams) é o hub definitivo para o trabalho em equipe e as comunicações inteligentes. Construído na força e escala do [Microsoft 365](https://products.office.com/) com mais de 120 milhões de usuários, o Microsoft Teams oferece colaboração baseada em chat, reuniões, chamadas e recursos de voz corporativa.
 
 
 > [!VIDEO https://www.youtube-nocookie.com/embed/KCvAhQEJmyY]

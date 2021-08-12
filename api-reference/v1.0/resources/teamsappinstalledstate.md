@@ -5,14 +5,14 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: enumPageType
-ms.openlocfilehash: a74fe1f9c18f91705c5774f8a23b9c9947569e85
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 32f82fc8573074e69e6cf42a71c44de380e2fd8228835e96be0069b16c6031f2
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48041187"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54189258"
 ---
-# <a name="teamsappinstalledstate-enum-type"></a>tipo de enumeração teamsAppInstalledState
+# <a name="teamsappinstalledstate-enum-type"></a>Tipo de número teamsAppInstalledState
 
 
 
@@ -22,8 +22,8 @@ Descreve o status de instalação atual de um [teamsApp](teamsapp.md).
 
 | Membro | Valor| Descrição |
 |:---------------|:--------|:----------|
-|não instalado|,0|O aplicativo não está instalado na equipe.|
-|instalação|1 |O aplicativo está instalado normalmente.|
-|installedAndHidden|2 |O aplicativo está instalado, mas oculto no modo de exibição.|
-|installedAndPermanent|3 |O aplicativo está instalado permanentemente e não pode ser removido.|
+|notInstalled|0|O aplicativo não está instalado na equipe.|
+|instalado|1|O aplicativo é instalado normalmente.|
+|installedAndHidden|2|O aplicativo está instalado, mas está oculto do ponto de vista.|
+|installedAndPermanent|3|O aplicativo é instalado permanentemente e pode não ser removido.|
 

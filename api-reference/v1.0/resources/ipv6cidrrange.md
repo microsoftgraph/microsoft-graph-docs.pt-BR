@@ -5,12 +5,12 @@ localization_priority: Normal
 author: videor
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: a8afeeed483b3610c5c1dde1afee5f4a24317ff4
-ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
+ms.openlocfilehash: 785df5cc15d1d052c987083fac9763982c64142309b5b361785be918803483fe
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50760859"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54182423"
 ---
 # <a name="ipv6cidrrange-resource-type"></a>Tipo de recurso iPv6CidrRange
 
@@ -24,7 +24,7 @@ Herda de [ipRange](../resources/iprange.md)
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|cidrAddress|String|Endereço IPv6 na notação CIDR|
+|cidrAddress|Cadeia de caracteres|Endereço IPv6 na notação CIDR|
 
 ## <a name="json-representation"></a>Representação JSON
 

@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 0d06cbc518f421802a529c17046c1670bd16cd71
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 878dc98870c32f70ed9c4b36ff1252109c72d819b2a9912647ba80a54f0c6edd
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48094068"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54222634"
 ---
 # <a name="tablesort-resource-type"></a>Tipo de recurso TableSort
 
@@ -31,7 +31,7 @@ Gerencia operações de classificação em objetos Table.
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|campos|Coleção [WorkbookSortField](sortfield.md)|Representa as condições atuais usadas para a última classificação da tabela. Somente leitura.|
+|campos|[Coleção WorkbookSortField](sortfield.md)|Representa as condições atuais usadas para a última classificação da tabela. Somente leitura.|
 |matchCase|booliano|Indica se o uso de maiúsculas ou minúsculas afetou a última classificação da tabela. Somente leitura.|
 |method|string|Indica o último método de ordenação de caracteres chineses usado para classificar a tabela. Os valores possíveis são: `PinYin` , `StrokeCount` . Somente leitura.|
 

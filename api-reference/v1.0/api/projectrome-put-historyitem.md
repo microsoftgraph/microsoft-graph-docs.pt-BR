@@ -1,22 +1,22 @@
 ---
 title: Criar ou substituir um historyItem
-description: Criar uma nova ou substituir um item de histórico existente para uma atividade existente do usuário.
+description: Crie um novo ou substitua um item de histórico existente para uma atividade de usuário existente.
 localization_priority: Normal
 ms.prod: project-rome
 author: ailae
 doc_type: apiPageType
-ms.openlocfilehash: ee46c25555e3621bd18d020bd3312bd7b1d543aa
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: dfeb7dce28e04346e82a91feda155bc29db7013746dac44545ac7d48433d7bae
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48083306"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54192695"
 ---
 # <a name="create-or-replace-a-historyitem"></a>Criar ou substituir um historyItem
 
 Namespace: microsoft.graph
 
-Criar uma nova ou substituir um item de histórico existente para uma atividade existente do usuário.
+Crie um novo ou substitua um item de histórico existente para uma atividade de usuário existente.
 
 ## <a name="permissions"></a>Permissões
 
@@ -25,8 +25,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | UserActivity.ReadWrite.CreatedByApp    |
-|Delegada (conta pessoal da Microsoft) | UserActivity.ReadWrite.CreatedByApp    |
+|Delegado (conta corporativa ou de estudante) | UserActivity.ReadWrite.CreatedByApp    |
+|Delegado (conta pessoal da Microsoft) | UserActivity.ReadWrite.CreatedByApp    |
 |Aplicativo | Sem suporte. |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -37,7 +37,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 PUT /me/activities/{id}/historyItems/{id}
 ```
 
-ID precisa ser um GUID.
+A ID precisa ser um GUID.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -47,11 +47,11 @@ ID precisa ser um GUID.
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, forneça uma representação JSON de um objeto [historyItem](../resources/projectrome-historyitem.md) .
+No corpo da solicitação, fornece uma representação JSON de um [objeto historyItem.](../resources/projectrome-historyitem.md)
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará o `201 Created` código de resposta se o historyItem foi criado ou `200 OK` se o historyItem foi substituído.
+Se tiver êxito, este método retornará o código de resposta se historyItem tiver sido criado ou se `201 Created` `200 OK` historyItem tiver sido substituído.
 
 ## <a name="example"></a>Exemplo
 

@@ -4,18 +4,18 @@ description: A API dos métodos de autenticação do Microsoft Graph oferece às
 author: mmcla
 localization_priority: Priority
 ms.prod: identity-and-sign-in
-ms.openlocfilehash: 36385345141daa8dc782b64fa154ef97c46b3091
-ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
+ms.openlocfilehash: 8750f56db54c1dd5c2ef8708ccd1f3b873c9ea0328517743b881f7502f299f89
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50761448"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54251656"
 ---
 # <a name="get-started-with-the-microsoft-graph-authentication-methods-api"></a>Introdução à API dos métodos de autenticação do Microsoft Graph
 
 Os [métodos de autenticação](/azure/active-directory/authentication/concept-authentication-methods) são como os usuários se autenticam no Azure Active Directory (Azure AD). Os métodos de autenticação do Azure AD incluem senha e telefone (por exemplo, SMS e chamadas de voz), que hoje são gerenciáveis no Microsoft Graph, entre muitos outros, como chaves de segurança FIDO2 e o aplicativo Microsoft Authenticator. Os métodos de autenticação são usados nas autenticações primária, de segundo fator e de step-up. Além disso, no processo de redefinição de senha de autoatendimento (SSPR).
 
-Também é possível usar as APIs do método de autenticação para gerenciar os métodos de autenticação de um usuário. Por exemplo, você pode:
+Você pode usar as APIs de método de autenticação para gerenciar os métodos de autenticação de um usuário. Por exemplo, você pode:
 
 * Adicionar um número de telefone para um usuário, que pode usar esse número para SMS e autenticação de chamada de voz, se estiverem habilitados para o uso pela política
 * Atualizar ou excluir o número de telefone atribuído a um usuário

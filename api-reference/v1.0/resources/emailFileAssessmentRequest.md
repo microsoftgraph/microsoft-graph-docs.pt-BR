@@ -5,12 +5,12 @@ localization_priority: Normal
 author: hafen-ms
 ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: 707cc20666df8d225e0e2f0853cf47cb9b6352c4
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 51689660b30045a93262645acab3495f14e75a0c95f4f09ae9d2ea64bc85d784
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50959302"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54192492"
 ---
 # <a name="emailfileassessmentrequest-resource-type"></a>Tipo de recurso emailFileAssessmentRequest
 
@@ -31,7 +31,7 @@ O arquivo de email pode ser um tipo de arquivo .eml.
 |:-------------|:------------|:------------|
 |contentData|Cadeia de caracteres|Conteúdo de arquivo de email .eml codificado em base64. O conteúdo do arquivo não pode ser buscar de volta porque não está armazenado.|
 |destinationRoutingReason|[mailDestinationRoutingReason](enums.md#maildestinationroutingreason-values)|O motivo do email roteado para seu destino. Os valores possíveis são: `none` , , , , , , , , , `mailFlowRule` , , `safeSender` , , , `blockedSender` `advancedSpamFiltering` `domainAllowList` , `domainBlockList` `notInAddressBook` `firstTimeSender` `autoPurgeToInbox` `autoPurgeToJunk` `autoPurgeToDeleted` `outbound` `notJunk` `junk` .|
-|recipientEmail|Cadeia de caracteres|O destinatário de email cujas políticas são usadas para avaliar o email.|
+|recipientEmail|String|O destinatário de email cujas políticas são usadas para avaliar o email.|
 |category|[threatCategory](enums.md#threatcategory-values)|A categoria de ameaça. Os valores possíveis são: `spam`, `phishing`, `malware`.|
 |contentType|[threatAssessmentContentType](enums.md#threatassessmentcontenttype-values)|O tipo de conteúdo da avaliação de ameaças. Os valores possíveis são: `mail`, `url`, `file`.|
 |createdBy|[identitySet](identityset.md)|O criador da solicitação de avaliação de ameaças.|

@@ -1,18 +1,18 @@
 ---
-title: Usar o microsoft graph Toolkit com oTron
-description: Começar a usar o microsoft graph Toolkit em um aplicativo Detron.
+title: Usar o Microsoft Graph Toolkit com oTron
+description: Começar a usar o microsoft Graph Toolkit em um aplicativo Desotron.
 localization_priority: Normal
 author: amrutha95
-ms.openlocfilehash: b57315e3fcc44f94cc18d3f4a93826b00a5ce4b9
-ms.sourcegitcommit: 32c83957ee69f21a10cd5f759adb884ce4b41c52
+ms.openlocfilehash: 4c415d7d99981f3bd3e10180d46a142e5f80231ed7d5222a64faaf7942a05044
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51920051"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54157897"
 ---
-# <a name="use-the-microsoft-graph-toolkit-with-electron"></a>Usar o microsoft graph Toolkit com oTron
+# <a name="use-the-microsoft-graph-toolkit-with-electron"></a>Usar o Microsoft Graph Toolkit com oTron
 
-Este artigo descreve o processo passo a passo de usar o microsoft graph Toolkit criar um aplicativo Detron e conectá-lo ao Microsoft 365. Depois de concluir as etapas, você terá um aplicativo Detron que mostra os próximos compromissos do usuário atualmente inscrevado do Microsoft 365.
+Este artigo descreve o processo passo a passo de usar o microsoft Graph Toolkit para criar um aplicativo Detron e conectá-lo ao Microsoft 365. Depois de concluir as etapas, você terá um aplicativo Detron que mostra os próximos compromissos do usuário atualmente Microsoft 365.
 
 ## <a name="create-an-electron-app"></a>Criar um aplicativo Detron 
 Crie um novo aplicativo Detron clonando [o repositório do tiposcript](https://github.com/electron/electron-quick-start-typescript) de início rápido do sistema. Isso criará um novo aplicativo Detron usando TypeScript, o que ajudará você a escrever um código mais robusto e a evitar erros de tempo de execução.
@@ -28,7 +28,7 @@ cd electron-quick-start-typescript
 npm install
 ```
 
-Instale o pacote "@microsoft/mgt-components" que contém todos os componentes web conectados ao Microsoft Graph.
+Instale o pacote "@microsoft/mgt-components" que contém todos os componentes web Graph da Microsoft conectados.
 
 ```cmd
 npm i @microsoft/mgt-components
@@ -54,19 +54,19 @@ Para criar um aplicativo no Azure Active Directory (Azure AD), você precisa adi
 
 Para criar o aplicativo no Azure AD:
 
-1. Vá para o [portal do Azure](https://portal.azure.com).
+1. Acesse o [Portal do Azure](https://portal.azure.com).
 1. No menu, selecione **Azure Active Directory**.
-1. No menu do Azure Active Directory, selecione **Registros de aplicativos**.
+1. No menu Azure Active Directory, selecione **Registros de aplicativos**.
 1. No menu superior, selecione o **botão Novo registro.**
 1. Insira o nome do seu aplicativo; por exemplo, `My Electron-App` .
-1. Para o tipo de tipos de conta com [suporte,](/azure/active-directory/develop/single-and-multi-tenant-apps#who-can-sign-in-to-your-app)selecione Contas em qualquer diretório organizacional (Qualquer diretório do **Azure AD - Multitenant) e contas pessoais da Microsoft (por exemplo, Skype, Xbox)**.
+1. Para o tipo de tipos de conta com [suporte,](/azure/active-directory/develop/single-and-multi-tenant-apps#who-can-sign-in-to-your-app)selecione Contas em qualquer diretório organizacional (Qualquer diretório **do Azure AD - Multitenant) e contas pessoais da Microsoft (por exemplo, Skype, Xbox)**.
 1. No campo **Redirecionar URI,** no menu suspenso, selecione **Cliente público/nativo (área** de trabalho móvel &) e, no campo URL, digite `msal://redirect` .
 1. Confirme as alterações selecionando o **botão Registrar.**
 1. Vá para o registro do aplicativo.
 1. Verifique se você está na página **Visão** Geral.
 1. Na seção **Essentials,** copie o valor da propriedade **Application (client).**
 
-## <a name="configure-the-microsoft-graph-toolkit-authentication-provider"></a>Configurar o provedor de autenticação Toolkit Microsoft Graph
+## <a name="configure-the-microsoft-graph-toolkit-authentication-provider"></a>Configurar o provedor de autenticação Graph Toolkit Microsoft
 
 ### <a name="initializing-electronprovider-in-your-renderer-process"></a>Inicializando oTronProvider no processo de renderização
 
@@ -129,7 +129,7 @@ const mainWindow = new BrowserWindow({
  
 ### <a name="add-components-to-your-html-page"></a>Adicionar componentes à sua página HTML
  
-Adicione algum conteúdo ao seu aplicativo. Agora você pode usar os componentes do kit de ferramentas do Microsoft Graph na página *index.html e* mostrar a agenda do usuário. Substitua o conteúdo da página *index.html* pelo seguinte.
+Adicione algum conteúdo ao seu aplicativo. Agora você pode usar os componentes Graph kit de ferramentas da Microsoft em sua *páginaindex.html e* mostrar a agenda do usuário. Substitua o conteúdo da página *index.html* pelo seguinte.
  
  ```html
 <!DOCTYPE html>
@@ -225,7 +225,7 @@ Crie um novo *arquivowebpack.config.js* na pasta raiz do seu projeto e colar a c
  }                
  ```
  
- #### <a name="run-your-app"></a>Executar seu aplicativo
+ #### <a name="run-your-app"></a>Execute seu aplicativo
  
  ```cmd
  npm start
@@ -243,7 +243,7 @@ let config: MsalElectronConfig = {
 ```
 Para obter mais detalhes sobre como implementar isso, consulte o [exemplo microsoft-authentication-library-for-js.](https://github.com/AzureAD/microsoft-authentication-library-for-js/blob/dev/extensions/samples/msal-node-extensions/index.js)
 
-## <a name="next-steps"></a>Próximas Etapas
-- Experimente os componentes no [playground](https://mgt.dev).
+## <a name="next-steps"></a>Próximos passos
+- Experimente os componentes do [playground](https://mgt.dev).
 - Faça uma pergunta sobre [o Microsoft Q&A](/answers/products/m365#microsoft-graph).
-- Relatar bugs ou deixar uma solicitação de recurso [no GitHub](https://aka.ms/mgt).
+- Relate bugs ou deixe uma solicitação de recurso no [GitHub](https://aka.ms/mgt).
