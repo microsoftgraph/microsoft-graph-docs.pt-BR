@@ -5,12 +5,12 @@ author: mecampos
 localization_priority: Normal
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: 5581d988cc47d5803e2a753182289458cbeaa747
-ms.sourcegitcommit: 596b3d5636f3f3e042d180ea8f039f00ebd6b38a
+ms.openlocfilehash: fa8d162920c0a3678535ac6e8857191354216783b18ea348436b3d9681e1157f
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/30/2021
-ms.locfileid: "53665877"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54229278"
 ---
 # <a name="property-resource-type"></a>tipo de recurso de propriedade
 

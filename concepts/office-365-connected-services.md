@@ -4,12 +4,12 @@ description: Você pode usar os serviços conectados no Visual Studio para confi
 localization_priority: Priority
 ms.prod: reports
 author: sarahwxy
-ms.openlocfilehash: 95fbe544edff9543d694f5fa024929fd7e241160
-ms.sourcegitcommit: 32c83957ee69f21a10cd5f759adb884ce4b41c52
+ms.openlocfilehash: 0a9dcd50126a7de5a27aadd7d47a492d2199f7b652bd5d8657e35b36b9afcef8
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51921662"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54218321"
 ---
 # <a name="call-microsoft-365-services-in-visual-studio-2017-with-the-microsoft-graph-api"></a>Como chamar os serviços do Microsoft 365 no Visual Studio 2017 com a API do Microsoft Graph
 
@@ -81,7 +81,7 @@ O exemplo inicial inclui os seguintes arquivos:
 
 - [Startup.Auth.cs](https://github.com/microsoftgraph/aspnet-connect-sample/tree/Office365connectedservice/Microsoft%20Graph%20SDK%20ASPNET%20Sample/Microsoft%20Graph%20SDK%20ASPNET%20Sample/App_Start/Startup.Auth.cs) – autentica o usuário atual e inicializa o cache de token do exemplo.
 
-- TokenStorage\\[SessionTokenCache.cs](https://github.com/microsoftgraph/aspnet-connect-sample/tree/Office365connectedservice/Microsoft%20Graph%20SDK%20ASPNET%20Sample/Microsoft%20Graph%20SDK%20ASPNET%20Sample/TokenStorage/SessionTokenCache.cs) – Armazena as informações de token do usuário. Você pode substituir isto por seu próprio cache de token personalizado. Para mais informações, veja [Armazenamento de cache dos tokens de acesso em uma aplicação com vários locatários](/azure/architecture/multitenant-identity/token-cache).
+- \\TokenStorage[SessionTokenCache.cs](https://github.com/microsoftgraph/aspnet-connect-sample/tree/Office365connectedservice/Microsoft%20Graph%20SDK%20ASPNET%20Sample/Microsoft%20Graph%20SDK%20ASPNET%20Sample/TokenStorage/SessionTokenCache.cs) - Armazena as informações de token do usuário. Você pode substituí-lo por seu próprio cache de token personalizado. Para obter mais informações, confira [Cache de tokens de acesso em um aplicativo multilocatário](/azure/architecture/multitenant-identity/token-cache).
 
 - Helpers\\[SampleAuthProvider.cs](https://github.com/microsoftgraph/aspnet-connect-sample/tree/Office365connectedservice/Microsoft%20Graph%20SDK%20ASPNET%20Sample/Microsoft%20Graph%20SDK%20ASPNET%20Sample/Helpers/SampleAuthProvider.cs) – implementa a interface IAuthProvider local e obtém um token de acesso. 
 

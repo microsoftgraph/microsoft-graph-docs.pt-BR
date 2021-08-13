@@ -4,18 +4,18 @@ description: Envie notificações de feed de atividade para os usuários em Micr
 author: RamjotSingh
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 01e029092994c75ee5a787e830f6458755b3024b
-ms.sourcegitcommit: 6d247f44a6ee4d8515c3863ee8a2683163c9f829
+ms.openlocfilehash: 5f22e1cc24a2ac622cdf918f3abe6c5bba0ea699fb7d5c97bf14b59a5fee063b
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/14/2021
-ms.locfileid: "53429966"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54174728"
 ---
 # <a name="send-activity-feed-notifications-to-users-in-microsoft-teams"></a>Enviar notificações de feed de atividade para usuários em Microsoft Teams
 
 O Microsoft Teams de atividade permite que os usuários triagem itens que exigem atenção notificando-os sobre as alterações. Você pode usar as APIs de notificação de feed de atividade no Microsoft Graph estender essa funcionalidade para seus aplicativos. Isso permite que seus aplicativos forneçam experiências mais ricas e envolvam melhor os usuários, ajudando a mantê-los atualizados com as alterações nas ferramentas e fluxos de trabalho que usam.
 
-## <a name="understanding-the-basics-of-activity-feed-notification"></a>Noções básicas da notificação de feed de atividade
+## <a name="understanding-the-basics-of-activity-feed-notification"></a>Noções básicas da notificação do feed de atividades
 
 As notificações de feed de atividade Microsoft Teams são compostas por vários bits de informações, exibidos juntos, conforme mostrado na imagem a seguir.
 
@@ -26,7 +26,7 @@ Os componentes incluem:
 - Um ícone que representa o tipo de atividade
 - O motivo pelo qual o ator fez a atividade
 - Uma visualização de texto
-- Um carimbo de data/hora
+- Um carimbo de data/hora.
 - O local da atividade
 
 O exemplo a seguir mostra como esses componentes juntos fornecem os detalhes sobre uma notificação. Este exemplo é uma notificação sobre um usuário mencionado em uma Yammer comunidade.
@@ -62,8 +62,8 @@ Esta seção descreve as alterações que precisam ser adicionadas ao manifesto 
 
 |Parâmetro|Tipo|Descrição|
 |:---|:---|:---|
-|id|cadeia de caracteres|ID do aplicativo do Azure AD (ID do cliente).|
-|recurso|cadeia de caracteres|Recurso associado ao aplicativo do Azure AD. Também conhecido como URL de resposta ou redirecionamento no Portal do Azure.|
+|id|string|ID do aplicativo do Azure AD (ID do cliente).|
+|recurso|string|Recurso associado ao aplicativo do Azure AD. Também conhecido como URL de resposta ou redirecionamento no Portal do Azure.|
 
 > **Observação:** Você pode obter um erro se vários Teams aplicativos no mesmo escopo (equipe, chat ou usuário) estão usando o mesmo aplicativo do Azure AD. Certifique-se de que você esteja usando aplicativos exclusivos do Azure AD.
 
@@ -91,7 +91,7 @@ Esta seção descreve as alterações que precisam ser adicionadas ao manifesto 
 |:---|:---|:---|
 |type|string|Tipo de atividade. Isso precisa ser exclusivo em um manifesto específico.|
 |description|string|Descrição curta acessível por humanos. Isso ficará visível no cliente Microsoft Teams cliente.|
-|templateText|cadeia de caracteres|Texto do modelo para a notificação de atividade. Você pode declarar seus parâmetros encapsulando parâmetros em `{}` .|
+|templateText|string|Texto do modelo para a notificação de atividade. Você pode declarar seus parâmetros encapsulando parâmetros em `{}` .|
 
 >**Observação:** `actor` é um parâmetro especial que sempre leva o nome do chamador. Em chamadas delegadas, `actor` é o nome do usuário. Em chamadas somente de aplicativo, ele leva o nome do aplicativo Teams aplicativo.
 

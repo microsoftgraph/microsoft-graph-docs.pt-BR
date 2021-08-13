@@ -5,12 +5,12 @@ localization_priority: Priority
 author: kevinbellinger
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: c3bd5a0d69ab392fc55ac1f44bfbe3dc6d74ad08
-ms.sourcegitcommit: de175a11806f9e9ba3c916384e897aee1cc7f75c
+ms.openlocfilehash: cb97f04a311956337403b4900abda00c9acf9fbcc9c6083511616ec39056989a
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/09/2021
-ms.locfileid: "49790612"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54235874"
 ---
 # <a name="get-photo"></a>Obter foto
 
@@ -126,7 +126,7 @@ Content-Type: image/jpg
 ```
 
 ##### <a name="response"></a>Resposta
-Contém os dados binários da foto de 48x48 solicitada. O código de resposta HTTP é 200.
+Contém os dados binários da foto 48x48 solicitada. O código de resposta HTTP é 200.
 
 ### <a name="example-3-get-the-metadata-of-the-user-photo-of-the-signed-in-user"></a>Exemplo 3: Esta solicitação obtém os metadados da foto do usuário conectado.
 ##### <a name="request"></a>Solicitação
@@ -199,7 +199,7 @@ const attachments = [{
 
 Confira [Amostra de conexão do Microsoft Graph para Node.js](https://github.com/microsoftgraph/nodejs-connect-rest-sample) para ver uma implementação desse exemplo.
 
-Se quiser exibir a imagem em uma página da Web, crie um objeto de memória usando a imagem e torne esse objeto a fonte de um elemento de imagem. Veja aqui um exemplo dessa operação no JavaScript.
+Se você quiser exibir a imagem em uma página da Web, crie um objeto na memória com base na imagem e torne esse objeto a origem de um elemento de imagem. Eis um exemplo em JavaScript dessa operação.
 
 ```javascript
 const url = window.URL || window.webkitURL;

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 1d29ec2d96d38c6bc1f2fccf5fb5b36e16e1c5be
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 3f7a84093947ad51ea6aa3eac64a85fd4cd25515e7f0a17e127e2b77f403c4fe
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52752767"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54192341"
 ---
 # <a name="managedappstatusraw-resource-type"></a>tipo de recurso managedAppStatusRaw
 
@@ -23,7 +23,7 @@ Representa um relatório de status não digitado sobre configuração e proteç�
 
 Herda de [managedAppStatus](../resources/intune-mam-managedappstatus.md)
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
 |[Listar managedAppStatusRaws](../api/intune-mam-managedappstatusraw-list.md)|Conjunto [managedAppStatusRaw](../resources/intune-mam-managedappstatusraw.md)|Listar propriedades e relações de objetos de [managedAppStatusRaw](../resources/intune-mam-managedappstatusraw.md).|
@@ -38,7 +38,7 @@ Herda de [managedAppStatus](../resources/intune-mam-managedappstatus.md)
 |content|[Json](../resources/intune-mam-json.md)|Conteúdo do relatório de status.|
 
 ## <a name="relationships"></a>Relações
-Nenhuma
+Nenhum
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.

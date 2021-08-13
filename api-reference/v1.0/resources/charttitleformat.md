@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 632b3a165a5f2f3a4216868bf440099610cdc800
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: dc49c38ac674f6adf789785932f81fbf2094941fe660d2ada4efc1bfb42bcca1
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48059212"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54230834"
 ---
 # <a name="charttitleformat-resource-type"></a>Tipo de recurso ChartTitleFormat
 
@@ -19,8 +19,8 @@ Namespace: microsoft.graph
 Abrange as propriedades de formatação do título do gráfico.
 
 
-## <a name="methods"></a>Methods
-Nenhum
+## <a name="methods"></a>Métodos
+None
 
 ## <a name="properties"></a>Propriedades
 Nenhuma

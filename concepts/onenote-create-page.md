@@ -4,12 +4,12 @@ description: " Blocos de anotações empresariais no Microsoft 365"
 author: jewan-microsoft
 localization_priority: Priority
 ms.prod: onenote
-ms.openlocfilehash: 856a266a435bf0fb2146fc786ec72058e38debce
-ms.sourcegitcommit: 32c83957ee69f21a10cd5f759adb884ce4b41c52
+ms.openlocfilehash: 4bfd49759e7503992592492b17775e1d7ffb54015434dcca4a628afc0779550b
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51920191"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54165571"
 ---
 # <a name="create-onenote-pages"></a>Criar páginas do OneNote
 
@@ -225,7 +225,7 @@ Consulte [Requisitos e limitações do HTML de entrada](#requirements-and-limita
 | Corpo da resposta | Uma representação OData da nova página no formato JSON. |  
 | Erros | Se a solicitação falhar, a API retornará erros no objeto **\@@api.diagnostics** no corpo da resposta. |  
 | Cabeçalho location | A URL do recurso para a nova página. |  
-| Cabeçalho X-CorrelationId | Um GUID que identifica de forma exclusiva a solicitação. Você pode usar esse valor juntamente com o valor do cabeçalho Data ao trabalhar com o suporte da Microsoft para solucionar problemas. |  
+| Cabeçalho X-CorrelationId | Um GUID que identifica exclusivamente a solicitação. Você pode usar esse valor juntamente com o valor do cabeçalho Data ao trabalhar com o suporte da Microsoft para solucionar problemas. |  
 
 
 <a name="root-url"></a>

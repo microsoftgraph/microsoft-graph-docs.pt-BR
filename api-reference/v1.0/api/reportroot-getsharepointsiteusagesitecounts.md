@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: reports
 author: sarahwxy
 doc_type: apiPageType
-ms.openlocfilehash: 6d10f1455055ebb6fc624fc0732e795a1e6b28c4
-ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
+ms.openlocfilehash: caa6bc5c4a96a83d9a856257fe172dec054a6f2f8d39044d4d22aaa899dcca99
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49983465"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54126792"
 ---
 # <a name="reportroot-getsharepointsiteusagesitecounts"></a>reportRoot: getSharePointSiteUsageSiteCounts
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 Obtenha o número total de arquivos em todos os sites e o número de arquivos ativos. Um arquivo (usuário ou sistema) é considerado ativo se ele foi salvo, sincronizado, modificado ou compartilhado dentro do período de tempo especificado.
 
-> **Observação:** Para obter detalhes sobre diferentes visualizações e nomes de relatórios, consulte [relatórios do Microsoft 365 - uso do site do SharePoint.](https://support.office.com/client/SharePoint-site-usage-4ecfb843-e5d5-464d-8bf6-7ed512a9b213)
+> **Observação:** Para obter detalhes sobre diferentes exibições de relatório e nomes, [consulte Microsoft 365 relatórios - SharePoint uso do site](https://support.office.com/client/SharePoint-site-usage-4ecfb843-e5d5-464d-8bf6-7ed512a9b213).
 
 ## <a name="permissions"></a>Permissões
 

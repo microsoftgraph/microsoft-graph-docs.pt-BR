@@ -4,12 +4,12 @@ description: O Rubrics é uma maneira eficaz e amplamente utilizada de gradaçã
 author: mmast-msft
 localization_priority: Priority
 ms.prod: education
-ms.openlocfilehash: d17b325c12c75fbdd54d17a293aa6352707666e3
-ms.sourcegitcommit: b083a570375252eff8054f9fe70e1e5e2becc06d
+ms.openlocfilehash: 824cffcf385e1f5d8f2776cfa898335c5708a288c90ea0c6eb3bc01d02958eb5
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "44845481"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54151799"
 ---
 # <a name="education-rubric-overview"></a>Visão geral do Rubric Education
 

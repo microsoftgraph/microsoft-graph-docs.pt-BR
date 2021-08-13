@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 7598e7f7a54910d706ec95741234a38a9a9ba422
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: ec9fe67ab7cf3af5071f20cddf0775b70d84eddb83d14ef93aa3a376fab7a53a
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52752746"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54192303"
 ---
 # <a name="rolepermission-resource-type"></a>Tipo de recurso rolePermission
 
@@ -26,7 +26,7 @@ Contém o conjunto de ResourceActions que determina as permissões permitidas e 
 |resourceActions|Coleção [resourceAction](../resources/intune-rbac-resourceaction.md)|Ações de Recurso que contêm um conjunto de permissões permitidas e não permitidas.|
 
 ## <a name="relationships"></a>Relações
-Nenhuma
+Nenhum
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.

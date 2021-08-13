@@ -6,12 +6,12 @@ localization_priority: Priority
 description: O recurso Permission fornece informações sobre uma permissão de compartilhamento concedida a um recurso DriveItem.
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 5c14371966d4620450c7d791a3ed90a38b12c61b
-ms.sourcegitcommit: 2d8b04725ea4eaf304f3da1056a6451457a4630f
+ms.openlocfilehash: 0d46c94d66339ad5329107e50a781d6f2f4e507d048707cced64dae35748e7da
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52335603"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54126386"
 ---
 # <a name="permission-resource-type"></a>Tipo de recurso permission
 
@@ -19,8 +19,7 @@ Namespace: microsoft.graph
 
 O recurso **Permission** fornece informações sobre uma permissão de compartilhamento concedida a um recurso [DriveItem](driveitem.md).
 
-As permissões de compartilhamento têm várias formas diferentes.
-O recurso **Permission** representa estes diferentes formulários por meio de facetas do recurso.
+As permissões de compartilhamento têm várias formas diferentes. O recurso **Permission** representa esses diferentes formulários por meio de facetas do recurso.
 
 ## <a name="json-representation"></a>Representação JSON
 

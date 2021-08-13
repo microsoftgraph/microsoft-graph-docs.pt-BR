@@ -5,12 +5,12 @@ author: nilakhan
 localization_priority: Normal
 ms.prod: cloud-printing
 doc_type: resourcePageType
-ms.openlocfilehash: 1680cc641da02f3339dcd75977c411d3255cf037
-ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
+ms.openlocfilehash: d15b488985bbf1c51f03a0c030fab16fdf3d25cbd8c8b53b29368e4f0af2d151
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50517035"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54196562"
 ---
 # <a name="printmargin-resource-type"></a>Tipo de recurso printMargin
 

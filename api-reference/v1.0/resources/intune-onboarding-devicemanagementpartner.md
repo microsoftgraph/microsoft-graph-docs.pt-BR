@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: a20ff769c36e56d5c83a480c0b4eedfbea618de8
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: c6a6b107703678c0437fc7b0818ca436141a055b18edf939bda3c511c54aae3c
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52751206"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54205256"
 ---
 # <a name="devicemanagementpartner-resource-type"></a>Tipo de recurso deviceManagementPartner
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 Entidade que representa uma conexão ao parceiro de gerenciamento de dispositivos.
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
 |[Listar deviceManagementPartners](../api/intune-onboarding-devicemanagementpartner-list.md)|Conjunto [deviceManagementPartner](../resources/intune-onboarding-devicemanagementpartner.md)|Listar propriedades e relações de objetos de [deviceManagementPartner](../resources/intune-onboarding-devicemanagementpartner.md).|
@@ -43,7 +43,7 @@ Entidade que representa uma conexão ao parceiro de gerenciamento de dispositivo
 |whenPartnerDevicesWillBeMarkedAsNonCompliantDateTime|DateTimeOffset|DateTime no UTC quando PartnerDevices for marcado como não compatível|
 
 ## <a name="relationships"></a>Relações
-Nenhuma
+Nenhum
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.

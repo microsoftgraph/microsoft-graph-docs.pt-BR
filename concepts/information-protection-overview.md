@@ -1,56 +1,56 @@
 ---
-title: Visão geral da rotulação de proteção de informações da Microsoft
-description: O rótulo de proteção de informações da Microsoft ajuda as organizações a classificar, identificar e proteger os dados com base nos rótulos de confidencialidade do centro de conformidade e segurança do Office 365.
+title: Proteção de Informações da Microsoft visão geral de rotulagem
+description: Proteção de Informações da Microsoft rotulagem ajuda as organizações a classificar, rotular e proteger dados com base Office 365 Rótulos de Sensibilidade do Centro de Conformidade e Segurança.
 author: tommoser
 localization_priority: Normal
 ms.prod: security
-ms.openlocfilehash: 599e395d82cf74a22a9c26ceab066bdf53176e0c
-ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
+ms.openlocfilehash: dafa396b5c0d7a27400ddee5c6bb2965dd4abb1d83ccb5f9deef0f71283e1a02
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48288900"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54237415"
 ---
-# <a name="information-protection-overview"></a>Visão geral da proteção de informações
+# <a name="information-protection-overview"></a>Visão geral da Proteção de Informações
 
-A proteção de informações da Microsoft ajuda as organizações a classificar, identificar e proteger os dados com base na [confidencialidade](/Office365/SecurityCompliance/sensitivity-labels). 
+Proteção de Informações da Microsoft ajuda as organizações a classificar, rotular e proteger dados com base [na sensibilidade](/Office365/SecurityCompliance/sensitivity-labels). 
 
 As organizações usam rótulos para ajudar:
 
-* Os usuários que compreendem a importância das informações que estão sendo tratadas.
-* Administradores de conformidade na descoberta de onde as informações confidenciais residem. 
-* Administradores de segurança em Implantando o acesso a dados e as políticas de prevenção contra perda de dados com base em informações mais ricas de rótulo.
+* Os usuários no entendimento da importância das informações que estão sendo manipuladas.
+* Administradores de conformidade na descoberta de onde residem informações confidenciais. 
+* Administradores de segurança na implantação de políticas de prevenção contra perda de dados e acesso a dados com base em informações de rótulo mais ricas.
 
-## <a name="why-integrate-microsoft-information-protection"></a>Por que integrar a proteção de informações da Microsoft? 
+## <a name="why-integrate-microsoft-information-protection"></a>Por que integrar Proteção de Informações da Microsoft? 
 
-### <a name="integrate-with-the-ubiquitous-labeling-platform-servicing-millions-of-users-and-devices"></a>Integre-se com a plataforma de rotulagem onipresente, servindo milhões de usuários e dispositivos
+### <a name="integrate-with-the-ubiquitous-labeling-platform-servicing-millions-of-users-and-devices"></a>Integrar-se à plataforma de rotulagem onipresente, atendendo milhões de usuários e dispositivos
 
-Mais de um milhão de organizações com dezenas de milhões de usuários usam a proteção de informações da Microsoft para classificar, rotular e proteger os dados.  Além do Microsoft 365, vários serviços de prevenção de perda de dados (DLP), plataformas de Business Intelligence e software como serviço (SaaS) [adotaram](https://www.microsoft.com/security/technology/information-protection) a identificação de proteção de informações da Microsoft para fornecer uma experiência de classificação de dados mais rica. 
+Mais de um milhão de organizações com dezenas de milhões de usuários usam Proteção de Informações da Microsoft para classificar, rotular e proteger dados.  Além do Microsoft 365, vários serviços de prevenção contra perda de dados (DLP), plataformas de business intelligence e soluções de software como serviço (SaaS) adotaram uma rotulagem [Proteção de Informações da Microsoft](https://www.microsoft.com/security/technology/information-protection) para fornecer uma experiência de classificação de dados mais rica. 
 
 ### <a name="label-information-in-line-of-business-applications"></a>Informações de rótulo em aplicativos de linha de negócios
 
-Os desenvolvedores corporativos usam a proteção de informações da Microsoft para rotular e proteger informações confidenciais do cliente sobre exportação de aplicativos de linha de negócios para garantir a segurança das informações do cliente. A conexão de seus aplicativos ao ecossistema de proteção de informações da Microsoft permite que os aplicativos apliquem, atualizem e excluam [Rótulos de confidencialidade](/Office365/SecurityCompliance/sensitivity-labels) em seus próprios dados de aplicativo, sem a sobrecarga da integração de um SDK completo.
+Enterprise os desenvolvedores usam Proteção de Informações da Microsoft para rotular e proteger informações confidenciais do cliente sobre a exportação de aplicativos de linha de negócios para garantir a segurança das informações do cliente. Conectar seus aplicativos ao ecossistema Proteção de Informações da Microsoft permite que os aplicativos [](/Office365/SecurityCompliance/sensitivity-labels) apliquem, atualizem e excluam rótulos de sensibilidade em seus próprios dados de aplicativo, sem a sobrecarga de integrar um SDK completo.
 
-## <a name="what-can-i-do-with-microsoft-information-protection-label-apis-in-microsoft-graph"></a>O que posso fazer com as APIs de rótulo de proteção de informações da Microsoft no Microsoft Graph? 
+## <a name="what-can-i-do-with-microsoft-information-protection-label-apis-in-microsoft-graph"></a>O que posso fazer com Proteção de Informações da Microsoft de rótulos no Microsoft Graph? 
 
 ### <a name="discover-labels-available-to-a-user-or-organization"></a>Descobrir rótulos disponíveis para um usuário ou organização
 
-Com o Microsoft Graph, você pode acessar os [Rótulos de confidencialidade](/graph/api/informationprotectionlabel?view=graph-rest-beta) disponíveis para um usuário ou organização. Os rótulos são aplicados por aplicativos e serviços aos dados em repouso ou em movimento, ajudando os usuários e os aplicativos e serviços downstream a entender a confidencialidade das informações que estão lidando.
+Com o microsoft Graph você pode acessar [os](/graph/api/informationprotectionlabel?view=graph-rest-beta) rótulos de sensibilidade disponíveis para um usuário ou para a organização. Os rótulos são aplicados por aplicativos e serviços aos dados em repouso ou em movimento, ajudando os usuários e aplicativos e serviços downstream a entender a sensibilidade das informações que estão manipulando.
 
 ### <a name="understand-how-to-apply-labels"></a>Entender como aplicar rótulos
 
-Fornecendo informações sobre o rótulo de confidencialidade existente e desejado, a API REST pode informar, de forma inteligente, o aplicativo sobre as [ações](/graph/api/resources/informationprotectionaction?view=graph-rest-beta) que devem ser executadas para aplicar corretamente o rótulo. Isso inclui ações como aplicativo de [metadados](/graph/api/resources/metadataaction?view=graph-rest-beta) , geração de [marca d' água](/graph/api/resources/addwatermarkaction?view=graph-rest-beta) , [proteção](/graph/api/resources/protectbytemplateaction?view=graph-rest-beta)e muito mais.
+Fornecendo informações sobre o rótulo de sensibilidade existente e desejado, a API [](/graph/api/resources/informationprotectionaction?view=graph-rest-beta) REST pode informar inteligentemente sua aplicação das ações que devem ser tomadas para aplicar corretamente o rótulo. Isso inclui ações como aplicativo de [metadados,](/graph/api/resources/metadataaction?view=graph-rest-beta) geração [de marcas](/graph/api/resources/addwatermarkaction?view=graph-rest-beta) d'água, [proteção](/graph/api/resources/protectbytemplateaction?view=graph-rest-beta)e muito mais.
 
 ### <a name="interpret-labels-applied-to-data"></a>Interpretar rótulos aplicados aos dados
 
-Os aplicativos que consomem informações que já possuem [metadados de rótulo de confidencialidade](/graph/api/resources/metadataaction?view=graph-rest-beta) aplicados podem usar a API **extractLabel** para resolver metadados de rótulo para um [rótulo de confidencialidade](/graph/api/resources/informationprotectionlabel.md?view=graph-rest-beta)de proteção de informações da Microsoft. Use o rótulo para identificar as ações que devem ser tomadas pelo aplicativo ao lidar ou consumo dos dados rotulados. 
+Aplicativos que consomem informações que já têm [metadados](/graph/api/resources/metadataaction?view=graph-rest-beta) de rótulo de sensibilidade aplicados podem usar a API **extractLabel** para resolver metadados de rótulo para um rótulo Proteção de Informações da Microsoft [de sensibilidade](/graph/api/resources/informationprotectionlabel.md?view=graph-rest-beta). Use o rótulo para identificar as ações que devem ser tomadas pelo aplicativo ao manipular ou consumir os dados rotulados. 
 
 ## <a name="api-reference"></a>Referência da API
 
 Está procurando a referência de API para esse serviço?
 
-- [API de proteção de informações da Microsoft no Microsoft Graph beta](/graph/api/resources/informationprotectionlabel?view=graph-rest-beta)
+- [Proteção de Informações da Microsoft API no Microsoft Graph beta](/graph/api/resources/informationprotectionlabel?view=graph-rest-beta)
 
 ## <a name="next-steps"></a>Próximas etapas
 
-- Selecione e tente a proteção de informações rotular consultas de exemplo no [Explorador do Graph](https://developer.microsoft.com/graph/graph-explorer). Escolha **Mostrar mais exemplos** na coluna à esquerda. Use o menu para ativar a **proteção de informações da Microsoft**.
+- Selecione e experimente consultas de exemplo de rotulagem da Proteção de Informações [no Graph Explorer](https://developer.microsoft.com/graph/graph-explorer). Escolha **Mostrar mais exemplos** na coluna à esquerda. Use o menu para **ativar** Proteção de Informações da Microsoft .

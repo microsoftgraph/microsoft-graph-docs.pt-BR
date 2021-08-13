@@ -3,12 +3,12 @@ title: Provedor MSAL 2
 description: O provedor MSAL 2 usa o msal-browser para entrar em usuários e adquirir tokens para usar com o microsoft Graph
 localization_priority: Normal
 author: amrutha95
-ms.openlocfilehash: f583845f5c1929669242323501d08fa4a861197e
-ms.sourcegitcommit: db3d2c6db8dd8f8cc14bdcebb2904d5e056a73e7
+ms.openlocfilehash: f856c900b0b8aace7a1c2248d2921b39fe0a2c44c6fc9e05c35003c0d0c53d50
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52579785"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54204904"
 ---
 # <a name="msal-2--provider"></a>Provedor MSAL 2
 

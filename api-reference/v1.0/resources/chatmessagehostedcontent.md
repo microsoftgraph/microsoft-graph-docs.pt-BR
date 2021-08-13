@@ -5,19 +5,19 @@ localization_priority: Normal
 author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 8967f939bd0d61f4821375cac3ddfc9861cabe5a
-ms.sourcegitcommit: 16ee16e7fddd662ca42dc5c9352cfb109e31ed1a
+ms.openlocfilehash: 946a1974540adf0539e85519bc75c637c1469347d411b48b686378339eb0f48a
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/03/2021
-ms.locfileid: "51582764"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54192569"
 ---
 # <a name="chatmessagehostedcontent-resource-type"></a>Tipo de recurso chatMessageHostedContent
 
 Namespace: microsoft.graph
 
-Representa o conteúdo do Teams hospedado em uma mensagem de chat, como imagens ou trechos de código.
-[Anexos de arquivo](chatmessageattachment.md) não são conteúdo hospedado; eles são armazenados no SharePoint ou no OneDrive.
+Representa Teams conteúdo hospedado em uma mensagem de chat, como imagens ou trechos de código.
+[Anexos de arquivo](chatmessageattachment.md) não são conteúdo hospedado; eles são armazenados em SharePoint ou OneDrive.
 
 ## <a name="methods"></a>Métodos
 

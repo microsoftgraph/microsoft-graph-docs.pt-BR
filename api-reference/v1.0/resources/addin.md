@@ -5,18 +5,18 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: dcd3b36ed01d455feca2a996e740203d21d33455
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: bccea3c78818a2cd4dfaf62cdb402aa695bda621f1c5a540b744f2cd3c905e84
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50135006"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54169701"
 ---
 # <a name="addin-resource-type"></a>Tipo de recurso addIn
 
 Namespace: microsoft.graph
 
-Define o comportamento personalizado que um serviço de consumo pode usar para chamar um aplicativo em contextos específicos. Por exemplo, aplicativos que podem renderizar fluxos de arquivo [podem configurar addIns](/onedrive/developer/file-handlers/?view=odsp-graph-online) para sua funcionalidade "FileHandler". Isso permitirá que os serviços como o Microsoft 365 chamem o aplicativo no contexto de um documento no qual o usuário esteja trabalhando.
+Define o comportamento personalizado que um serviço de consumo pode usar para chamar um aplicativo em contextos específicos. Por exemplo, aplicativos que podem renderizar fluxos de arquivos podem [configurar addIns](/onedrive/developer/file-handlers/?view=odsp-graph-online) para sua funcionalidade "FileHandler". Isso permitirá que os serviços como o Microsoft 365 chamem o aplicativo no contexto de um documento no qual o usuário esteja trabalhando.
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|

@@ -5,12 +5,12 @@ author: mmcla
 localization_priority: Normal
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: e4b5d5602c99b4a0c637f00a9bb638d456e8a3fd
-ms.sourcegitcommit: 4888ac7504533344c4fc6828e2a06a002a1d72d3
+ms.openlocfilehash: f49eae82a1c516949bab2dd2a375738ffc2e9fddc7b78c26ddd3ec5dff8b9179
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "53350989"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54130923"
 ---
 # <a name="get-fido2authenticationmethod"></a>Obter fido2AuthenticationMethod
 Namespace: microsoft.graph
@@ -38,7 +38,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 | Aplicativo                            | UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All |
 
 Para cenários delegados em que um administrador está atuando em outro usuário, o administrador precisa de uma [das seguintes funções:](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
-* Administrador global
+* Administração global
 * Leitor global
 * Administrador de autenticação privilegiada
 * Administrador de autenticação (apenas vê números de telefone mascarados)

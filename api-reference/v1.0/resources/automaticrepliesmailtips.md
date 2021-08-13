@@ -1,31 +1,31 @@
 ---
 title: Tipo de recurso automaticRepliesMailTips
-description: Dicas de Email sobre as respostas automáticas que foram configuradas em uma caixa de correio.
+description: Dicas de Email sobre quaisquer respostas automáticas que tenham sido configuradas em uma caixa de correio.
 localization_priority: Normal
 author: abheek-das
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 1cc7f65a526d4550182f1e6dc0c5ea25a12ee182
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 98f509f1bf8010e40924de0a525d876f2a08e9e08df0a9b5826e98a00f14696c
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50135748"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54147039"
 ---
 # <a name="automaticrepliesmailtips-resource-type"></a>Tipo de recurso automaticRepliesMailTips
 
 Namespace: microsoft.graph
 
 
-[Dicas de Email](../resources/mailtips.md) sobre as respostas automáticas que foram configuradas em uma caixa de correio.
+[Dicas de Email](../resources/mailtips.md) sobre quaisquer respostas automáticas que tenham sido configuradas em uma caixa de correio.
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:-----|:-----|:-----|
 | mensagem | String | A mensagem de resposta automática. |
 | messageLanguage | [localeInfo](../resources/localeinfo.md) | O idioma em que a mensagem de resposta automática está. |
-| scheduledEndTime | [dateTimeTimeZone](../resources/datetimetimezone.md) | A data e a hora em que as respostas automáticas são definidas para terminar. |
-| scheduledStartTime | [dateTimeTimeZone](../resources/datetimetimezone.md) | A data e a hora em que as respostas automáticas são definidas para começar. |
+| scheduledEndTime | [dateTimeTimeZone](../resources/datetimetimezone.md) | A data e a hora em que as respostas automáticas estão definidas como terminadas. |
+| scheduledStartTime | [dateTimeTimeZone](../resources/datetimetimezone.md) | A data e a hora em que as respostas automáticas estão definidas para começar. |
 
 ## <a name="json-representation"></a>Representação JSON
 

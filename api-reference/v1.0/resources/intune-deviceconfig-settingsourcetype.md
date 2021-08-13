@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 67f2f6220885576466a7e3a71d5150c356597a14
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 023fd437c0e028aee539282dbdc6cd257bf3e25184c818ea4f58cdf46d0989c9
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52755177"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54218587"
 ---
 # <a name="settingsourcetype-enum-type"></a>settingSourceType tipo de número
 

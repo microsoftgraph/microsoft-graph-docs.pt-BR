@@ -5,12 +5,12 @@ localization_priority: Normal
 author: spunukol
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: f79ebeee2cce60ee225383556ef89a0aa124089d
-ms.sourcegitcommit: 6d247f44a6ee4d8515c3863ee8a2683163c9f829
+ms.openlocfilehash: cadd060d64a95da767ca25ad9594120fc5983ea6255ccb301880514180b05e88
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/14/2021
-ms.locfileid: "53430204"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54205875"
 ---
 # <a name="device-resource-type"></a>tipo de recurso de dispositivo
 
@@ -53,11 +53,11 @@ Esse recurso permite que você adicione seus próprios dados às propriedades pe
 |deviceId|Cadeia de caracteres| Identificador exclusivo definido pelo serviço de registro do dispositivo Azure no momento do registro. Suporta `$filter` (`eq`, `ne`, `NOT`, `startsWith`).|
 |deviceMetadata|String| Apenas para uso interno. Definido como `null`. |
 |deviceVersion|Int32| Apenas para uso interno. |
-|displayName|Cadeia de caracteres|O nome de exibição do dispositivo. Obrigatório. Suporta `$filter` (`eq`, `ne`, `NOT`, `ge`, `le`, `in`, `startsWith`), `$search`, e `$orderBy`.  |
+|displayName|String|O nome de exibição do dispositivo. Obrigatório. Suporta `$filter` (`eq`, `ne`, `NOT`, `ge`, `le`, `in`, `startsWith`), `$search`, e `$orderBy`.  |
 |id|Cadeia de caracteres|O identificador exclusivo do dispositivo. Herdado de [directoryObject](directoryobject.md). Chave, Não anulável. Somente leitura. Suporta `$filter` (`eq`, `ne`, `NOT`, `in`). |
 |isCompliant|Booliano|`true` se o dispositivo estiver em conformidade com políticas de Gerenciamento de Dispositivo Móvel (MDM); caso contrário, `false` . Somente leitura. Isso só pode ser atualizado pelo Intune para qualquer tipo de sistema operacional de dispositivo ou por um [aplicativo MDM](/windows/client-management/mdm/azure-active-directory-integration-with-mdm) aprovado para Windows do sistema operacional. Suporta `$filter` (`eq`, `ne`, `NOT`).|
 |isManaged|Booliano|`true` se o dispositivo for gerenciado por um aplicativo MDM (Gerenciamento de Dispositivo Móvel). caso contrário, `false` . Isso só pode ser atualizado pelo Intune para qualquer tipo de sistema operacional de dispositivo ou por um [aplicativo MDM](/windows/client-management/mdm/azure-active-directory-integration-with-mdm) aprovado para Windows do sistema operacional. Suporta `$filter` (`eq`, `ne`, `NOT`). |
-|fabricante|String| Fabricante do dispositivo. Somente leitura. |
+|fabricante|String| Fabricante do dispositivo. Apenas leitura. |
 |mdmAppId|Cadeia de caracteres|Identificador de aplicativo usado para registrar o dispositivo no MDM. Somente leitura. Suporta `$filter` (`eq`, `ne`, `NOT`, `startsWith`).|
 |modelo|String| Modelo do dispositivo. Somente leitura. |
 |onPremisesLastSyncDateTime|DateTimeOffset|A última vez em que o objeto foi sincronizado com o diretório local. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1º de janeiro de 2014 é `2014-01-01T00:00:00Z` somente leitura. Suporta `$filter` (`eq`, `ne`, `NOT`, `ge`, `le`, `in`).|
@@ -66,15 +66,15 @@ Esse recurso permite que você adicione seus próprios dados às propriedades pe
 |operatingSystemVersion|String|A versão do sistema operacional do dispositivo. Obrigatório. Suporta `$filter` (`eq`, `ne`, `NOT`, `ge`, `le`, `startsWith`). |
 |physicalIds|Coleção de cadeias de caracteres| Apenas para uso interno. Não anulável. Suporta `$filter` (`eq`, `NOT`, `ge`, `le`, `startsWith`). |
 |profileType|deviceProfileType|O tipo de perfil do dispositivo. Valores possíveis: `RegisteredDevice` (padrão), `SecureVM` , , , `Printer` `Shared` `IoT` .|
-|systemLabels|Coleção String| Lista de rótulos aplicados ao dispositivo pelo sistema. |
+|systemLabels|String collection| Lista de rótulos aplicados ao dispositivo pelo sistema. |
 |trustType|Cadeia de caracteres| Tipo de relação de confiança para o dispositivo associado. Somente leitura. Valores possíveis: (indica trazer seus próprios dispositivos pessoais ), (Dispositivos ingressados apenas na nuvem) (dispositivos ingressados no domínio local `Workplace`  `AzureAd` `ServerAd` ingressados no Azure AD). Saiba mais em [Introdução ao gerenciamento de dispositivo no Azure Active Directory](/azure/active-directory/device-management-introduction) |
 
 ## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|extensions|Coleção [extension](extension.md)|A coleção de extensões abertas definidas para o dispositivo. Somente leitura. Anulável.|
+|extensions|[extension](extension.md) collection|A coleção de extensões abertas definidas para o dispositivo. Somente leitura. Anulável.|
 |memberOf|Coleção [directoryObject](directoryobject.md)|Grupos dos que esse dispositivo é membro. Somente leitura. Anulável. Suporta o `$expand`. |
-|transitiveMemberOf |Coleção [directoryObject](directoryobject.md)| Grupos dos que o dispositivo é membro. Esta operação é transitiva. Suporta `$expand`.  |
+|transitiveMemberOf |Coleção [directoryObject](directoryobject.md)| Grupos dos que o dispositivo é membro. Esta operação é transitiva. Suporta o `$expand`.  |
 |registeredOwners|Coleção [directoryObject](directoryobject.md)|O usuário que associou o dispositivo na nuvem ou registrou seu dispositivo pessoal. O proprietário registrado é definido no momento do registro. Atualmente, só pode haver um proprietário. Somente leitura. Anulável. Suporta o `$expand`.  |
 |registeredUsers|Coleção [directoryObject](directoryobject.md)|Coleção de usuários registrados do dispositivo. Para dispositivos associados em nuvem e dispositivos pessoais registrados, os usuários registrados são definidos para o mesmo valor que proprietários registrados no momento do registro. Somente leitura. Anulável. Suporta o `$expand`. |
 

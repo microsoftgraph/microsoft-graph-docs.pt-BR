@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: 838be4b5a21e2117fd06d33c62c94f1ae6488794
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: 41d29fe72dcc76e0e45e8133d4b4ecf2d5f56863ae946bc5cf0dd25759a4badd
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50720785"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54169358"
 ---
 # <a name="post-resource-type"></a>tipo de recurso post
 
@@ -34,7 +34,7 @@ Esse recurso permite que você adicione seus próprios dados às propriedades pe
 |[Responder](../api/post-reply.md)|Nenhuma|Responda a uma postagem e adicione uma nova postagem ao thread especificado em uma conversa de grupo.|
 |[Encaminhar](../api/post-forward.md)|Nenhuma|Encaminhe uma postagem para um destinatário.|
 |**Anexos**| | |
-|[List attachments](../api/post-list-attachments.md) |Coleção [anexo](attachment.md)| Obtenha todos os anexos em uma postagem.|
+|[List attachments](../api/post-list-attachments.md) |Coleção [attachment](attachment.md)| Obtenha todos os anexos em uma postagem.|
 |[Add attachment](../api/post-post-attachments.md) |[attachment](attachment.md)| Adicione um anexo a uma postagem. |
 |**Extensões abertas**| | |
 |[Criar extensão aberta](../api/opentypeextension-post-opentypeextension.md) |[openTypeExtension](opentypeextension.md)| Criar uma extensão aberta e adicionar propriedades personalizadas em uma instância nova ou existente de um recurso.|
@@ -51,7 +51,7 @@ Esse recurso permite que você adicione seus próprios dados às propriedades pe
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |corpo|[itemBody](itembody.md)|O conteúdo da postagem. Esta é uma propriedade padrão. Esta propriedade pode ser nula.|
-|Categorias|Coleção de cadeias de caracteres|As categorias associadas à postagem.|
+|Categorias|String collection|As categorias associadas à postagem.|
 |changeKey|Cadeia de caracteres|Identifica a versão da postagem. Toda vez que a postagem muda, ChangeKey também muda. Isso permite que o Exchange aplique alterações na versão correta do objeto.|
 |conversationId|String|ID exclusiva da conversa. Somente leitura.|
 |conversationThreadId|String|ID exclusiva do thread de conversa. Somente leitura.|

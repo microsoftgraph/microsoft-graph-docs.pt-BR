@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ec1b815b86e9ce7618dfdd5f66b32c9dd7737bb0
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 6240314b4ad7a3b6ec94bb4fa9edbd63f0b176f72299fccd626c5657f946e211
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52759389"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54238619"
 ---
 # <a name="create-termsandconditionsacceptancestatus"></a>Criar termsAndConditionsAcceptanceStatus
 
@@ -51,11 +51,11 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar termsAnd
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Identificador exclusivo da entidade.|
+|id|Cadeia de caracteres|Identificador exclusivo da entidade.|
 |userDisplayName|Cadeia de caracteres|Nome de exibição do usuário cuja aceitação a entidade representa.|
 |acceptedVersion|Int32|Número da versão mais recente dos T&C aceitos pelo usuário.|
 |acceptedDateTime|DateTimeOffset|A data e a hora em que os termos foram aceitos pela última vez pelo usuário.|
-|userPrincipalName|String|O userPrincipalName do Usuário que aceitou o termo.|
+|userPrincipalName|Cadeia de caracteres|O userPrincipalName do Usuário que aceitou o termo.|
 
 
 

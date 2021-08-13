@@ -1,30 +1,30 @@
 ---
-title: tipo de recurso userfeedback
-description: O tipo userfeedback.
+title: Tipo de recurso userFeedback
+description: O tipo userFeedback.
 localization_priority: Normal
 author: williamlooney
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 1c5aef3419c92ddaf9f9fa8f2ebb2727b038d4e9
-ms.sourcegitcommit: af4b2fc18449c33979cf6d75bd680f40602ba708
+ms.openlocfilehash: 4f38484219f33432aa5f4c215869c5f6df33aba133d38bcc79ce4f52a28eb2c1
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "48601556"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54180884"
 ---
-# <a name="userfeedback-resource-type"></a>tipo de recurso userfeedback
+# <a name="userfeedback-resource-type"></a>Tipo de recurso userFeedback
 
 Namespace: microsoft.graph.callRecords
 
-Representa os comentários fornecidos pelo usuário para um ponto de extremidade sobre a qualidade da sessão.
+Representa os comentários fornecidos pelo usuário um ponto de extremidade sobre a qualidade da sessão.
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|classificação|Microsoft. Graph. callRecords. userFeedbackRating|A classificação fornecida pelo usuário deste ponto de extremidade sobre a qualidade desta sessão. Os valores possíveis são: `notRated`, `bad`, `poor`, `fair`, `good`, `excellent`, `unknownFutureValue`.|
-|texto|String|O texto de comentários fornecido pelo usuário deste ponto de extremidade para a sessão.|
-|sinais|[Microsoft. Graph. callRecords. feedbackTokenSet](callrecords-feedbacktokenset.md)|O conjunto de tokens de comentários fornecidos pelo usuário deste ponto de extremidade para a sessão. Este é um conjunto de propriedades booleanas. Os nomes de propriedade não devem ser dependentes, já que eles podem ser alterados, dependendo de quais tokens são oferecidos para o usuário.|
+|rating|microsoft.graph.callRecords.userFeedbackRating|A classificação fornecida pelo usuário deste ponto de extremidade sobre a qualidade desta Sessão. Os valores possíveis são: `notRated`, `bad`, `poor`, `fair`, `good`, `excellent`, `unknownFutureValue`.|
+|texto|Cadeia de caracteres|O texto de comentários fornecido pelo usuário deste ponto de extremidade para a sessão.|
+|tokens|[microsoft.graph.callRecords.feedbackTokenSet](callrecords-feedbacktokenset.md)|O conjunto de tokens de feedback fornecidos pelo usuário deste ponto de extremidade para a sessão. Este é um conjunto de propriedades Boolean. Os nomes de propriedade não devem ser confiados, pois eles podem mudar dependendo de quais tokens são oferecidos ao usuário.|
 
 ## <a name="json-representation"></a>Representação JSON
 

@@ -1,83 +1,83 @@
 ---
-title: Usar o Explorador do Graph para experimentar as APIs do Microsoft Graph
-description: Use o Explorador do Graph para experimentar as APIs do Microsoft Graph no locatário de exemplo padrão para explorar os recursos ou entre em seu próprio locatário e use-o como uma ferramenta de criação de protótipo para atender aos cenários do aplicativo.
+title: Usar Graph Explorer para experimentar APIs do Microsoft Graph
+description: Use o Graph Explorer para tentar apIs do Microsoft Graph no locatário de exemplo padrão para explorar recursos ou entrar no seu próprio locatário e usá-lo como uma ferramenta de prototipagem para atender aos cenários do aplicativo.
 localization_priority: Normal
 author: bettirosengugi
-ms.openlocfilehash: 3f957d940d4dde483324492f1778ede970a5aefc
-ms.sourcegitcommit: 6ec748ef00d025ee216274a608291be3c1257777
+ms.openlocfilehash: e5b6f31af1b4773b208180214f4691c276a4674deb72ab4af7e44ef5b6cb4075
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "50013716"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54134816"
 ---
-# <a name="use-graph-explorer-to-try-microsoft-graph-apis"></a>Usar o Explorador do Graph para experimentar as APIs do Microsoft Graph
+# <a name="use-graph-explorer-to-try-microsoft-graph-apis"></a>Usar Graph Explorer para experimentar APIs do Microsoft Graph
 
-[O Explorador do Graph](https://developer.microsoft.com/graph/graph-explorer/) é uma ferramenta de desenvolvedor que permite que você faça convenientemente solicitações da API REST do Microsoft Graph e veja as respostas correspondentes. Use o Explorador do Graph para experimentar APIs no exemplo de locatário padrão para explorar as funcionalidades ou entre em seu próprio locatário e use-o como uma ferramenta de criação de protótipo para atender aos cenários do aplicativo. Essa ferramenta inclui recursos úteis, como trechos de código em C#, Java, JavaScript e Objective C; Integração de cartões adaptáveis e kits de ferramentas do Microsoft Graph; e muito mais.
+[Graph Explorer é](https://developer.microsoft.com/graph/graph-explorer/) uma ferramenta de desenvolvedor que permite que você faça convenientemente solicitações de API REST da Microsoft Graph exibir respostas correspondentes. Use Graph Explorer para experimentar APIs no locatário de exemplo padrão para explorar recursos ou entrar no seu próprio locatário e usá-lo como uma ferramenta de prototipagem para atender aos cenários do aplicativo. Esta ferramenta inclui recursos úteis, como trechos de código em C#, Java, JavaScript e Objective C; Integração Graph Toolkit cartões adaptáveis e da Microsoft; e muito mais.
 
-Use o Explorador do Graph para:
+Use Graph Explorer para:
 
-- Faça solicitações da API do Microsoft Graph (GET, POST, PUT, PATCH e DELETE) e veja respostas, incluindo o código de resposta e quaisquer headers e corpos.
+- Faça solicitações Graph API da Microsoft (GET, POST, PUT, PATCH e DELETE) e consulte respostas, incluindo código de resposta e quaisquer headers e corpos.
 - Consentimento para permissões.
-- Adicione um corpo de solicitação e um header de solicitação à sua consulta.
+- Adicione um corpo de solicitação e um header de solicitação à consulta.
 - Exibir e copiar o token de acesso.
-- Veja exemplos de consultas para diferentes serviços no Microsoft Graph.
+- Exibir consultas de exemplo para diferentes serviços no Microsoft Graph.
 - Exibir, baixar ou excluir as consultas que você fez nos últimos 30 dias.
-- Exibir e copiar trechos de código de cada consulta que você executar em C#, Java, JavaScript e Objective C.
-- Acesse os componentes e cartões adaptáveis do Microsoft Graph Toolkit para algumas consultas de exemplo.
+- Exibir e copiar trechos de código de cada consulta que você executar em C#, Java, JavaScript e Objetivo C.
+- Acesse os Graph Toolkit microsoft e cartões adaptáveis para algumas consultas de exemplo.
 - Compartilhe consultas, incluindo o corpo da solicitação e os headers de solicitação.
 
-O Explorador do Graph lida com o processo de autenticação para você. Personalize a experiência repondo a barra lateral e alterando o tema.
+Graph O Explorer lida com o processo de autenticação para você. Personalize a experiência desmontando a barra lateral e alterando o tema.
 
 ## <a name="get-started"></a>Introdução
 
-O Graph Explorer é um aplicativo Web hospedado na central de desenvolvedores [do Microsoft Graph.](https://developer.microsoft.com/en-us/graph/graph-explorer) É um projeto de código aberto e damos as boas-vindas às suas contribuições e comentários no [repositório do GitHub.](https://github.com/microsoftgraph/microsoft-graph-explorer-v4)
+Graph O Explorer é um aplicativo Web hospedado no centro de desenvolvedores [do Microsoft Graph.](https://developer.microsoft.com/en-us/graph/graph-explorer) É um projeto de código aberto e saudamos suas contribuições e comentários no [GitHub repo.](https://github.com/microsoftgraph/microsoft-graph-explorer-v4)
 
-O Graph Explorer inclui os seguintes elementos:
+Graph O Explorer inclui os seguintes elementos:
 
-1. Lista drop-down de verbo HTTP
-2. Lista drop-down de versão da API
+1. Lista drop-down do verbo HTTP
+2. Lista de versões da API lista listada
 3. Barra de endereços de consulta de solicitação
 4. Consulta de exemplo
 5. Link de documentação para a consulta de exemplo
 
-![Captura de tela da interface do usuário do Graph Explorer](./images/getting-started.png)
+![Captura de tela da interface do usuário Graph Explorer](./images/getting-started.png)
 
-### <a name="make-a-get-request-in-graph-explorer"></a>Fazer uma solicitação GET no Explorador do Graph
+### <a name="make-a-get-request-in-graph-explorer"></a>Fazer uma solicitação GET no Graph Explorer
 
-Para executar uma solicitação GET no Explorador do Graph, você não precisa entrar. Basta clicar em um exemplo de consulta e mostrar dados de exemplo na visualização da resposta. 
+Para executar uma solicitação GET no Graph Explorer, não é preciso entrar. Basta clicar em uma consulta de exemplo e os dados de exemplo mostrarão na visualização da resposta. 
 
-![Captura de tela de uma solicitação de exemplo no Explorador do Graph](./images/making-a-get-request.png)
+![Captura de tela de uma solicitação de exemplo no Graph Explorer](./images/making-a-get-request.png)
 
 Para fazer uma solicitação:
 
 1. Selecione uma consulta de exemplo e execute-a.
 2. Obter o código de resposta HTTP.
-3. Veja a resposta da API do Microsoft Graph com dados de exemplo.
+3. Consulte a resposta da API do Microsoft Graph com dados de exemplo.
 
-Quando você entrar no Explorador do Graph e clicar na mesma consulta, a resposta será retornada com dados reais do locatário em que você se inscreveu.
+Quando você entrar no Graph Explorer e clicar na mesma consulta, a resposta será retornada com dados reais do locatário em que você se inscreveu.
 
-### <a name="running-non-get-requests-in-graph-explorer"></a>Executando solicitações não GET no Explorador do Graph
+### <a name="running-non-get-requests-in-graph-explorer"></a>Executando solicitações não GET no Graph Explorer
 
-Para experimentar solicitações POST, PUT, PATCH e DELETE, entre no Explorador do Graph usando uma conta do Microsoft 365. Pode ser uma conta organizacional para fins de teste ou demonstração. Para obter um exemplo gratuito de assinatura de desenvolvedor do Microsoft 365 E5, juntamente com ferramentas e outros recursos para ajudá-lo a criar soluções para a plataforma Microsoft 365, participe do Programa para Desenvolvedores [do Microsoft 365.](https://developer.microsoft.com/microsoft-365/dev-program) 
+Para experimentar solicitações POST, PUT, PATCH e DELETE, entre no Graph Explorer usando uma conta Microsoft 365. Pode ser uma conta organizacional para fins de teste ou demonstração. Para obter uma assinatura gratuita de Microsoft 365 E5 desenvolvedor, juntamente com ferramentas e outros recursos para ajudá-lo a criar soluções para a plataforma Microsoft 365, participe do programa Microsoft 365 [Desenvolvedor.](https://developer.microsoft.com/microsoft-365/dev-program) 
 
 >[!IMPORTANT]
->Se você optar por entrar usando sua conta organizacional, executar uma solicitação não GET pode afetar os dados no locatário.
+>Se você optar por entrar usando sua conta organizacional, executar uma solicitação não GET poderá afetar os dados no locatário.
 
-Por exemplo, para executar uma solicitação POST, selecione POST na lista drop-down para o verbo HTTP e adicione um corpo de solicitação e cabeçalhos de solicitação conforme apropriado.
+Por exemplo, para executar uma solicitação POST, selecione POST na lista drop-down do verbo HTTP e adicione um corpo de solicitação e cabeçalhos de solicitação conforme apropriado.
 
-![Captura de tela de uma solicitação POST no Explorador do Graph](./images/making-a-post-request.png)
+![Captura de tela de uma solicitação POST no Graph Explorer](./images/making-a-post-request.png)
 
 1. Selecione uma consulta de exemplo POST.
 2. Atualizar **corpo da solicitação;** por exemplo, dê um nome ao aplicativo.
 3. Clique **em Executar consulta**.
-4. Veja a resposta da API do Microsoft Graph.
+4. Consulte a resposta da API Graph Microsoft.
 
-Para exibir a resposta em um formato diferente do JSON padrão, escolha a guia Solicitação de **headers** no painel de solicitação, defina o par chave/valor e clique em **Adicionar**.
+Para exibir a resposta em um formato diferente do JSON padrão, escolha a guia Solicitar **headers** no painel de solicitação, defina o par chave/valor e clique em **Adicionar**.
 
-![Screenshot that shows the Request headers tab in Graph Explorer](./images/adding-key-value-pairs.png)
+![Captura de tela que mostra a guia Solicitação de headers no Graph Explorer](./images/adding-key-value-pairs.png)
 
 ## <a name="next-steps"></a>Próximas etapas
 
-- Visite [o Explorador do Graph.](https://developer.microsoft.com/graph/graph-explorer/)
-- Saiba mais sobre os [recursos do Graph Explorer.](./graph-explorer-features.md)
-- Contribuir ou fornecer comentários no [repositório do GitHub.](https://github.com/microsoftgraph/microsoft-graph-explorer-v4/issues/new/choose)
+- Visite [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer/).
+- Saiba mais sobre Graph [recursos do Explorer.](./graph-explorer-features.md)
+- Contribuir ou fornecer comentários no [GitHub repo](https://github.com/microsoftgraph/microsoft-graph-explorer-v4/issues/new/choose).

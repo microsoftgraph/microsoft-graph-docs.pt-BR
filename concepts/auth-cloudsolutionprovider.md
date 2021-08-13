@@ -5,12 +5,12 @@ author: jackson-woods
 localization_priority: Priority
 ms.prod: applications
 ms.custom: graphiamtop20
-ms.openlocfilehash: cb6480bd595684249b8778c3f7200c3b112cbefb
-ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
+ms.openlocfilehash: 47bcefa610d3616e5c162c5c5f8946b75694213c25ce211557f47338de8706f8
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50760816"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54151897"
 ---
 # <a name="call-microsoft-graph-from-a-cloud-solution-provider-application"></a>Chamar o Microsoft Graph por um Provedor de Soluções na Nuvem
 
@@ -107,6 +107,6 @@ Atualmente, o contrato de cliente do CSP encontra-se limitado a uma única regi�
 
 Quando você cria um novo cliente usando a [API do Partner Center](https://partnercenter.microsoft.com/partner/developer), é criado um novo locatário do cliente. Além disso, uma relação de parceiro também é criada, que torna você o parceiro de registro deste novo locatário do cliente. Essa relação de parceiro pode levar até 3 minutos para ser propagada para o novo locatário do cliente. Se seu aplicativo chamar o Microsoft Graph logo após a criação, é provável que seu aplicativo receba um erro de acesso negado. Um atraso semelhante poderá ocorrer quando um cliente existente aceitar o convite. Isso ocorre porque o consentimento prévio depende da relação de parceiro estar presente no locatário do cliente.
 
-Para evitar esse problema, recomendamos que seu aplicativo de parceiro aguarde **três minutos** após a criação do cliente antes de chamar o Azure AD para obter um token (para chamar o Microsoft Graph). Isso deve abranger a maioria dos casos. No entanto, se após esperar três minutos ainda receber um erro de autorização, aguarde mais 60 segundos e tente novamente.
+Para evitar esse problema, recomendamos que seu aplicativo parceiro aguarde **três minutos** após a criação do cliente antes de chamar o Azure AD para adquirir um token (para chamar o Microsoft Graph). Isso deve abranger a maioria dos casos. No entanto, se depois de esperar três minutos você ainda receber um erro de autorização, aguarde mais 60 segundos e tente novamente.
 
 > **Observação:** Na repetição, você deve adquirir um novo token de acesso do Azure AD antes de chamar o Microsoft Graph.  Não adiantará chamar o Microsoft Graph com o token de acesso que você já tem porque o token de acesso serve para uma hora e não conterá as declarações de permissão pré-autorizadas.

@@ -5,12 +5,12 @@ author: nilakhan
 localization_priority: Normal
 ms.prod: cloud-printing
 doc_type: resourcePageType
-ms.openlocfilehash: e81614ba6c17955e8199e5c5aae6c643d93e9068
-ms.sourcegitcommit: 34891a1c601976166958be1aa04bab5936592b44
+ms.openlocfilehash: 07e160d21696992588642cd904ffe1f2625c1d1af3fec8e3d56d0feaf9f5d372
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52232036"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54178056"
 ---
 # <a name="printer-resource-type"></a>Tipo de recurso de impressora
 
@@ -29,26 +29,26 @@ Herda de [printerBase](../resources/printerbase.md).
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
 | [Criar](../api/printer-create.md) | [printerCreateOperation](printerCreateOperation.md) | Criar (registrar) uma nova impressora com Impressão Universal. |
-| [Get](../api/printer-get.md) | [impressora](printer.md) | Leia as propriedades e as relações do objeto printer. |
-| [Atualização](../api/printer-update.md) | [impressora](printer.md) | Atualize o objeto printer. |
-| [Delete](../api/printer-delete.md) | Nenhum | Desaconselhe a impressora física do serviço de Impressão Universal. |
-| [restoreFactoryDefaults](../api/printer-restorefactorydefaults.md) | Nenhum | Restaure as configurações padrão de uma impressora para os valores especificados pelo fabricante. |
+| [Obter](../api/printer-get.md) | [impressora](printer.md) | Leia as propriedades e as relações do objeto printer. |
+| [Atualizar](../api/printer-update.md) | [impressora](printer.md) | Atualize o objeto printer. |
+| [Delete](../api/printer-delete.md) | None | Desaconselhe a impressora física do serviço de Impressão Universal. |
+| [restoreFactoryDefaults](../api/printer-restorefactorydefaults.md) | None | Restaure as configurações padrão de uma impressora para os valores especificados pelo fabricante. |
 | [Listar trabalhos](../api/printer-list-jobs.md) | [Coleção printJob](printjob.md) | Obter uma lista de trabalhos de impressão que estão na fila para processamento pela impressora. |
 | [Criar trabalho](../api/printer-post-jobs.md) | [printJob](printjob.md) | Crie um novo trabalho de impressão para a impressora. Para começar a imprimir o trabalho, use [start](../api/printjob-start.md). |
 | [Listar conectores](../api/printer-list-connectors.md) | [Coleção printConnector](printconnector.md) | Obter uma lista de conectores que esta impressora está associada. |
 | [Listar shares](../api/printer-list-shares.md) | [Coleção printerShare](printerShare.md) | Obter uma lista de printerShares que esta impressora está associada. Atualmente, apenas uma impressoraShare pode ser associada a uma impressora. |
-| [List taskTriggers](../api/printer-list-tasktriggers.md) | Nenhum | Listar [printTaskTriggers](printtasktrigger.md) associados a essa impressora. |
+| [List taskTriggers](../api/printer-list-tasktriggers.md) | None | Listar [printTaskTriggers](printtasktrigger.md) associados a essa impressora. |
 | [Create taskTrigger](../api/printer-post-tasktriggers.md) | [printTaskTrigger](printtasktrigger.md) | Crie um [printTaskTrigger que](printtasktrigger.md) é executado quando ocorrem eventos de impressão. |
-| [Delete taskTrigger](../api/printer-delete-tasktrigger.md) | Nenhum | [Exclua um printTaskTrigger](printtasktrigger.md) associado à impressora. |
+| [Delete taskTrigger](../api/printer-delete-tasktrigger.md) | None | [Exclua um printTaskTrigger](printtasktrigger.md) associado à impressora. |
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|O identificador do documento. Herdado de [printerBase](../resources/printerbase.md). Somente leitura.|
+|id|Cadeia de caracteres|O identificador do documento. Herdado de [printerBase](../resources/printerbase.md). Somente leitura.|
 |displayName|String|O nome da impressora. Herdado de [printerBase](../resources/printerbase.md).|
 |fabricante|String|O fabricante relatado pela impressora. Herdado de [printerBase](../resources/printerbase.md).|
 |modelo|String|O nome do modelo relatado pela impressora. Herdado de [printerBase](../resources/printerbase.md).|
-|registeredDateTime|DateTimeOffset|DateTimeOffset quando a impressora foi registrada. Somente leitura.|
+|registeredDateTime|DateTimeOffset|DateTimeOffset quando a impressora foi registrada. Apenas leitura.|
 |status|[printerStatus](printerstatus.md)|O status de processamento da impressora, incluindo quaisquer erros. Herdado de [printerBase](../resources/printerbase.md).|
 |isShared|Booliano|True se a impressora for compartilhada; false caso contrário. Somente leitura.|
 |hasPhysicalDevice|Booliano|True se a impressora tiver um dispositivo físico para impressão. Somente leitura.|

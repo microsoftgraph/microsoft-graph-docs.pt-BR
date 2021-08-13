@@ -5,12 +5,12 @@ localization_priority: Normal
 author: DougKirschner
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: ed3559a0345c2ca1ca190d6ed08c1cec542837fe
-ms.sourcegitcommit: 979fe005c74eb99cd971df6b9511b2d3f7fe3cd4
+ms.openlocfilehash: 9a9ad564db84a19a2402f34edddc85858dd37c7c00e04eea7fad79acb6d4c466
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52991166"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54212232"
 ---
 # <a name="administrativeunit-resource-type"></a>Tipo de recurso administrativeUnit
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 Uma unidade administrativa fornece um contêiner conceitual para objetos de diretório usuário e grupo. Usando unidades administrativas, um administrador da empresa agora pode delegar responsabilidades administrativas para gerenciar os usuários e grupos contidos dentro ou com escopo para uma unidade administrativa para um administrador regional ou departamento.
 
-Vejamos um exemplo. Imagine que a Contoso Corp é feita de duas divisões : uma Divisão da Costa Oeste e uma Divisão da Costa Leste. As funções de diretório na Contoso têm escopo para todo o locatário. Lee, administrador da empresa Contoso, deseja delegar responsabilidades administrativas, mas as escopo para a Divisão da Costa Oeste ou para a divisão da Costa Leste.  Lee pode criar uma *unidade admistrativa* da Costa Oeste e colocar todos os usuários da Costa Oeste nessa unidade administrativa.  Da mesma forma, Lee pode criar uma unidade administrativa da Costa *Leste.*  Agora, Lee pode começar a delegar  responsabilidades administrativas a outras pessoas, mas com escopo para as novas unidades administrativas que ele criou. Lee coloca Jennifer em *uma função de administrador de helpdesk* **com** escopo para a unidade administrativa da *Costa Oeste.*  Isso permite que a Jennifer redefinir a senha de qualquer usuário, mas somente se esses usuários estão na unidade administrativa *da Costa Oeste.*  Da mesma forma, Lee coloca Dave em uma função *de* administrador de conta de usuário com escopo **para** a unidade administrativa da Costa *Leste.*  Isso permite que Dave atualize usuários, atribua licenças e redefinir a senha de qualquer usuário, mas somente se esses usuários estão na unidade administrativa da Costa *Leste.* Para uma visão geral de vídeo, consulte [Introdução Active Directory do Azure Unidades Administrativas](https://channel9.msdn.com/Series/Windows-Azure-Active-Directory/Introduction-to-Azure-Active-Directory-Administrative-Units).
+Vejamos um exemplo. Imagine que a Contoso Corp é feita de duas divisões : uma Divisão da Costa Oeste e uma Divisão da Costa Leste. As funções de diretório na Contoso têm escopo para todo o locatário. Lee, administrador da empresa Contoso, deseja delegar responsabilidades administrativas, mas as escopo para a Divisão da Costa Oeste ou para a divisão da Costa Leste.  Lee pode criar uma *unidade admistrativa* da Costa Oeste e colocar todos os usuários da Costa Oeste nessa unidade administrativa.  Da mesma forma, Lee pode criar uma unidade administrativa da Costa *Leste.*  Agora, Lee pode começar a delegar  responsabilidades administrativas a outras pessoas, mas com escopo para as novas unidades administrativas que ele criou. Lee coloca Jennifer em *uma função de administrador de helpdesk* **com** escopo para a unidade administrativa da *Costa Oeste.*  Isso permite que a Jennifer redefinir a senha de qualquer usuário, mas somente se esses usuários estão na unidade administrativa *da Costa Oeste.*  Da mesma forma, Lee coloca Dave em uma função *de* administrador de conta de usuário com escopo **para** a unidade administrativa da Costa *Leste.*  Isso permite que Dave atualize usuários, atribua licenças e redefinir a senha de qualquer usuário, mas somente se esses usuários estão na unidade administrativa da Costa *Leste.* Para uma visão geral de vídeo, consulte [Introdução Azure Active Directory Unidades Administrativas](https://channel9.msdn.com/Series/Windows-Azure-Active-Directory/Introduction-to-Azure-Active-Directory-Administrative-Units).
 
 
 Este tópico fornece descrições das propriedades declaradas e propriedades de navegação expostas pela entidade administrativeUnit, bem como as operações e funções que podem ser chamadas no recurso administrativeUnits.
@@ -29,10 +29,10 @@ Este tópico fornece descrições das propriedades declaradas e propriedades de 
 | Método   | Tipo de retorno | Descrição |
 |:---------------|:--------|:----------|
 |[Criar](../api/administrativeunit-post-administrativeunits.md) | [administrativeUnit](administrativeunit.md) | Crie uma nova unidade administrativa.|
-|[Lista](../api/administrativeunit-list.md) | [Coleção administrativeUnit](administrativeunit.md) |Listar propriedades de todas as administrativeUnits.|
-|[Get](../api/administrativeunit-get.md) | [administrativeUnit](administrativeunit.md) |Ler propriedades e relações de um objeto administrativeUnit específico.|
-|[Atualização](../api/administrativeunit-update.md) | [administrativeUnit](administrativeunit.md)    |Atualizar o objeto administrativeUnit. |
-|[Delete](../api/administrativeunit-delete.md) | Nenhum |Excluir objeto administrativeUnit. |
+|[List](../api/administrativeunit-list.md) | [Coleção administrativeUnit](administrativeunit.md) |Listar propriedades de todas as administrativeUnits.|
+|[Obter](../api/administrativeunit-get.md) | [administrativeUnit](administrativeunit.md) |Ler propriedades e relações de um objeto administrativeUnit específico.|
+|[Atualizar](../api/administrativeunit-update.md) | [administrativeUnit](administrativeunit.md)    |Atualizar o objeto administrativeUnit. |
+|[Delete](../api/administrativeunit-delete.md) | None |Excluir objeto administrativeUnit. |
 |[Adicionar um membro](../api/administrativeunit-post-members.md) |[directoryObject](directoryobject.md)| Adicionar um membro (usuário ou grupo).|
 |[Listar membros](../api/administrativeunit-list-members.md) |Coleção [directoryObject](directoryobject.md)| Obter a lista de membros (usuário e grupo).|
 |[Obter um membro](../api/administrativeunit-get-members.md) |[directoryObject](directoryobject.md)| Obter um membro específico.|
@@ -46,14 +46,14 @@ Este tópico fornece descrições das propriedades declaradas e propriedades de 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |description|string|Uma descrição opcional para a unidade administrativa.|
-|displayName|cadeia de caracteres|Nome de exibição da unidade administrativa.|
-|id|cadeia de caracteres|Identificador exclusivo da unidade administrativa. Somente leitura.|
+|displayName|string|Nome de exibição da unidade administrativa.|
+|id|string|Identificador exclusivo da unidade administrativa. Apenas leitura.|
 |visibilidade|string|Controla se a unidade administrativa e seus membros estão ocultos ou públicos. Pode ser definido como `HiddenMembership` ou `Public` . Se não estiver definido, o comportamento padrão será `Public` . Quando definido como `HiddenMembership` , somente membros da unidade administrativa podem listar outros membros da unidade administrativa.|
 
 ## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|extensions|Coleção [extension](extension.md)|A coleção de extensões abertas definidas para esta Unidade Administrativa. Anulável.|
+|extensions|[extension](extension.md) collection|A coleção de extensões abertas definidas para esta Unidade Administrativa. Anulável.|
 |members|Coleção [directoryObject](directoryobject.md)|Usuários e grupos que são membros desta Unidade Adminsitrative. Métodos HTTP: GET (membros da lista), POST (adicionar membros), DELETE (remover membros).|
 |scopedRoleMembers|Coleção [scopedRoleMembership](scopedrolemembership.md)| Membros de função de escopo desta Unidade Administrativa.  Métodos HTTP: GET (list scopedRoleMemberships), POST (adicionar scopedRoleMembership), DELETE (remover scopedRoleMembership). |
 

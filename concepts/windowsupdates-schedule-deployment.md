@@ -5,12 +5,12 @@ author: Alice-at-Microsoft
 localization_priority: Normal
 ms.prod: w10
 doc_type: conceptualPageType
-ms.openlocfilehash: 461b40ef1e25d6a1943c70456404e7a48bf73d8c
-ms.sourcegitcommit: 1b09298649d5606b471b4cbe1055419bbe2fc7e5
+ms.openlocfilehash: ac30d812294f9c05f7a32748d8b2094d700a816aec50c07553032499b3010f71
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "52067655"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54225612"
 ---
 # <a name="schedule-a-deployment-using-the-windows-update-for-business-deployment-service"></a>Agendar uma implantação usando o serviço de implantação Windows Atualização para Empresas
 

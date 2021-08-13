@@ -5,12 +5,12 @@ author: nilakhan
 localization_priority: Normal
 ms.prod: cloud-printing
 doc_type: resourcePageType
-ms.openlocfilehash: f848b9274172113404a39f13e42c003643dfdf74
-ms.sourcegitcommit: 6e7d9987a255f1bee04f196a4a7e37f56621bfb8
+ms.openlocfilehash: 1e13d74fb7a9ed977a380050e49c8d3f267e045299474ca622aa408d738a4562
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "51944237"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54223239"
 ---
 # <a name="printjobconfiguration-resource-type"></a>Tipo de recurso printJobConfiguration
 
@@ -25,22 +25,22 @@ Um grupo de configurações que uma impressora deve usar para imprimir um trabal
 |:---|:---|:---|
 |pageRanges|[Coleção integerRange](integerrange.md)|A página varia para imprimir. Somente leitura.|
 |quality|[printQuality](enums.md#printquality-values)|A qualidade de impressão a ser usada ao imprimir o trabalho. Os valores válidos são descritos na tabela abaixo. Somente leitura.|
-|dpi|Int32|A resolução a ser usada ao imprimir o trabalho, expressa em pontos por polegada (DPI). Somente leitura.|
-|feedOrientation|printerFeedOrientation|A orientação a ser usada ao alimentar mídia na impressora. Os valores válidos são descritos na tabela a seguir. Somente leitura.|
+|dpi|Int32|A resolução a ser usada ao imprimir o trabalho, expressa em pontos por polegada (DPI). Apenas leitura.|
+|feedOrientation|printerFeedOrientation|A orientação a ser usada ao alimentar mídia na impressora. Os valores válidos são descritos na tabela a seguir. Apenas leitura.|
 |orientation|[printOrientation](enums.md#printorientation-values)|A configuração de orientação que a impressora deve usar ao imprimir o trabalho. Os valores válidos são descritos na tabela a seguir.|
 |duplexMode|[printDuplexMode](enums.md#printduplexmode-values)|O modo duplex que a impressora deve usar ao imprimir o trabalho. Os valores válidos são descritos na tabela abaixo. Somente leitura.|
-|copies|Int32|O número de cópias que devem ser impressas. Somente leitura.|
-|colorMode|[printColorMode](enums.md#printcolormode-values)|O modo de cor que a impressora deve usar para imprimir o trabalho. Os valores válidos são descritos na tabela abaixo. Somente leitura.|
+|copies|Int32|O número de cópias que devem ser impressas. Apenas leitura.|
+|colorMode|[printColorMode](enums.md#printcolormode-values)|O modo de cor que a impressora deve usar para imprimir o trabalho. Os valores válidos são descritos na tabela abaixo. Apenas leitura.|
 |inputBin|Cadeia de caracteres|A bandeja de entrada (bandeja) a ser usada durante a impressão. Consulte os recursos da [impressora para](printercapabilities.md) uma lista de caixas de entrada com suporte.|
 |outputBin|Cadeia de caracteres|A lixeira de saída para colocar as impressões concluídas. Consulte os recursos da [impressora para](printercapabilities.md) uma lista de caixas de saída com suporte.|
 |mediaSize|Cadeia de caracteres|O tamanho da mídia a ser usado ao imprimir. Oferece suporte a nomes de tamanho padrão para tamanhos de mídia ISO e ANSI. Valores válidos listados no tópico [printerCapabilities.](printercapabilities.md#mediasizes-values)|
 |margin|[printMargin](printmargin.md)|As configurações de margem a ser usadas ao imprimir.|
-|mediaType|Cadeia de caracteres|O tipo de mídia padrão (como papel) para imprimir o documento.|
+|mediaType|String|O tipo de mídia padrão (como papel) para imprimir o documento.|
 |finishings|[Coleção printFinishing](enums.md#printfinishing-values)|Processos de término a ser usado ao imprimir.|
 |pagesPerSheet|Int32|O número de páginas de documento a ser impressa em cada planilha.
 |multipageLayout|[printMultipageLayout](enums.md#printmultipagelayout-values)|A direção para colocar as páginas quando várias páginas estão sendo impressas por planilha. Os valores válidos são descritos na tabela a seguir.|
 |collate|Booliano|Se a impressora deve colá-los para imprimir várias cópias de um documento de várias páginas.|
-|scaling|[printScaling](enums.md#printscaling-values)|Especifica como a impressora deve dimensionar os dados do documento para se ajustar à mídia solicitada. Os valores válidos são descritos na tabela a seguir.|
+|escala|[printScaling](enums.md#printscaling-values)|Especifica como a impressora deve dimensionar os dados do documento para se ajustar à mídia solicitada. Os valores válidos são descritos na tabela a seguir.|
 
 ## <a name="relationships"></a>Relações
 Nenhum

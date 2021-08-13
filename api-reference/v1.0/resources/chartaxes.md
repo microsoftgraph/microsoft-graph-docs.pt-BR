@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 5f647e40c2d4d5f3ab3b5206a4b172f70463c2ee
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 3b6c99121186044820282da58ddbcf97ed28d30abbfdf9e1405140f042442a24
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48032793"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54135354"
 ---
 # <a name="chartaxes-resource-type"></a>Tipo de recurso ChartAxes
 
@@ -19,8 +19,8 @@ Namespace: microsoft.graph
 Representa os eixos de um gráfico.
 
 
-## <a name="methods"></a>Methods
-Nenhum
+## <a name="methods"></a>Métodos
+None
 
 ## <a name="properties"></a>Propriedades
 Nenhuma

@@ -1,29 +1,29 @@
 ---
-title: tipo de recurso FileHash
-description: Contém informações com monitoração de hash de arquivo (criptografia e confidencialidade de local).
+title: Tipo de recurso fileHash
+description: Contém informações de estado sobre hashes de arquivo (criptográficos e confidenciais de localização).
 localization_priority: Normal
 author: preetikr
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 412308fc20c3baee63640451bb1a2c8059e71be0
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 98b2e9ed0ba4ca6a7af23d1fe6cf7acb278975ccf36f45983c58aeb5d721e744
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48018372"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54218713"
 ---
-# <a name="filehash-resource-type"></a>tipo de recurso FileHash
+# <a name="filehash-resource-type"></a>Tipo de recurso fileHash
 
 Namespace: microsoft.graph
 
-Contém informações com monitoração de hash de arquivo (criptografia e confidencialidade de local).
+Contém informações de estado sobre hashes de arquivo (criptográficos e confidenciais de localização).
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|hashtype|fileHashType|Tipo de hash de arquivo. Os valores possíveis são: `unknown`, `sha1`, `sha256`, `md5`, `authenticodeHash256`, `lsHash`, `ctph`, `peSha1`, `peSha256`.|
-|hashValue|String|Valor do hash do arquivo.|
+|hashType|fileHashType|Tipo de hash de arquivo. Os valores possíveis são: `unknown`, `sha1`, `sha256`, `md5`, `authenticodeHash256`, `lsHash`, `ctph`, `peSha1`, `peSha256`.|
+|hashValue|Cadeia de caracteres|Valor do hash do arquivo.|
 
 ## <a name="json-representation"></a>Representação JSON
 

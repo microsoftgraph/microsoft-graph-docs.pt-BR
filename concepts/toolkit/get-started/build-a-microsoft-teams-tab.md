@@ -3,22 +3,22 @@ title: Crie uma Microsoft Teams com o microsoft Graph Toolkit
 description: Começar a criar uma guia Microsoft Teams usando o microsoft Graph Toolkit.
 localization_priority: Normal
 author: elisenyang
-ms.openlocfilehash: 7bd9d989d30b7fc4286a6ca78445ffb01a772084
-ms.sourcegitcommit: a2d81138de2a0404e611fbb535679199477ef3d5
+ms.openlocfilehash: 1751214a354de77edfdf730463320caf5d963a27c6cc47b553f20b61aaaa71d9
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52813164"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54143602"
 ---
 # <a name="build-a-microsoft-teams-tab-with-the-microsoft-graph-toolkit"></a>Crie uma Microsoft Teams com o microsoft Graph Toolkit
 
-Este tópico aborda como começar a usar o microsoft Graph Toolkit em uma solução Microsoft Teams. Começar envolve as seguintes etapas:
+Este tópico aborda como começar a usar o microsoft Graph Toolkit em uma solução Microsoft Teams. Os primeiros passos envolvem as seguintes etapas:
 
 1. Crie um novo Teams com uma guia personalizada.
 2. Adicione o microsoft Graph Toolkit.
 3. Inicializar o Microsoft Teams provedor.
 4. Crie a página pop-up de auth.
-5. Adicione componentes.
+5. Adicione os componentes.
 6. Teste seu aplicativo.
 
 ## <a name="create-a-new-teams-application-with-a-custom-tab"></a>Criar um novo aplicativo Teams com uma guia personalizada
@@ -46,7 +46,7 @@ npm install @microsoft/mgt @microsoft/teams-js
 
 ## <a name="initialize-the-teams-provider"></a>Inicializar o provedor Teams
 
-Os provedores Graph Toolkit Microsoft habilitam a autenticação e o acesso ao Microsoft Graph para os componentes. Para saber mais, confira [Usando os provedores](../providers/providers.md). O [Teams provedor](../providers/teams.md) lida com toda a lógica e interações que precisam ser implementadas com o SDK Teams para autenticar o usuário.
+Os provedores do Kit de ferramentas do Microsoft Graph permitem autenticação e acesso ao Microsoft Graph para os componentes. Para saber mais, confira [Usando os provedores](../providers/providers.md). O [Teams provedor](../providers/teams.md) lida com toda a lógica e interações que precisam ser implementadas com o SDK Teams para autenticar o usuário.
 
 Você pode optar por inicializar o provedor em seu HTML ou no código JavaScript. 
 
@@ -109,7 +109,7 @@ Você pode fazer isso adicionando um novo arquivo na pasta (que deve estar no me
 </html>
 ```
 
-## <a name="add-components"></a>Adicionar componentes
+## <a name="add-components"></a>Adicionar os componentes
 
 Agora, você está pronto para adicionar qualquer um dos componentes do Microsoft Graph Toolkit à sua guia. 
 
@@ -153,8 +153,8 @@ npm start
 
 Para testar seu aplicativo, você pode instalar seu aplicativo para Teams por meio do Teams Toolkit Extension. Abra o Teams Toolkit Extension e clique **em Abrir Microsoft Teams Toolkit**. Clique **em App Studio** no menu esquerdo, role para baixo e selecione Testar e **Distribuir**, em **seguida, Instalar**. Teams abrirá no navegador e você será redirecionado para a guia criada. Você deve ser capaz de ver o componente de Logon e usá-lo para entrar no seu aplicativo.
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>Próximos passos
 - Confira este tutorial passo a passo sobre [como criar uma Teams guia](https://developer.microsoft.com/graph/blogs/a-lap-around-microsoft-graph-toolkit-day-10-microsoft-graph-toolkit-teams-provider/).
-- Experimente os componentes no [playground](https://mgt.dev).
-- Faça uma pergunta sobre [Stack Overflow](https://aka.ms/mgt-question).
-- Relatar bugs ou deixar uma solicitação de recurso [GitHub](https://aka.ms/mgt).
+- Experimente os componentes do [playground](https://mgt.dev).
+- Faça uma pergunta no [Stack Overflow](https://aka.ms/mgt-question).
+- Relate bugs ou deixe uma solicitação de recurso no [GitHub](https://aka.ms/mgt).

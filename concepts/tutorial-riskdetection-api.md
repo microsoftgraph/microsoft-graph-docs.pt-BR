@@ -1,15 +1,15 @@
 ---
 title: 'Tutorial: identificar e correção de riscos usando APIs do Microsoft Graph'
-description: Saiba como identificar e correção de riscos usando APIs do Microsoft Graph.
+description: Saiba como identificar e correção de riscos usando APIs Graph Microsoft.
 author: davidmu1
 localization_priority: Normal
 ms.prod: identity-and-sign-in
-ms.openlocfilehash: 85421d493e94957cc7fca5182d609b19225311e4
-ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
+ms.openlocfilehash: 60690454c9b3b7adfc7ac256cb3e3a5ff72b6d3336404b6beefe421bb2eea8e1
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50760950"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54220995"
 ---
 # <a name="tutorial-identify-and-remediate-risks-using-microsoft-graph-apis"></a>Tutorial: identificar e correção de riscos usando APIs do Microsoft Graph
 
@@ -23,7 +23,7 @@ Neste tutorial, você aprenderá a gerar uma entrada arriscada e correção do s
 
 Para concluir com êxito este tutorial, certifique-se de que você tem os pré-requisitos necessários:
 
-- Você deve ter uma licença do Azure AD Premium P1 ou P2 para usar a API de detecção de riscos.
+- Você deve ter uma Azure AD Premium P1 ou P2 para usar a API de detecção de risco.
 - Este tutorial usa o navegador Tor para entrar no portal do Azure anonimamente. Você pode usar qualquer navegador anônimo para realizar a tarefa. Para baixar o navegador Tor, consulte [Download Tor Browser](https://www.torproject.org/download/).
 - Este tutorial assume que você está usando o Microsoft Graph Explorer, mas você pode usar o Postman ou criar seu próprio aplicativo cliente para chamar o Microsoft Graph. Para chamar as APIs do Microsoft Graph neste tutorial, você precisa usar uma conta com a função de administrador global e as permissões apropriadas. Conclua as seguintes etapas para definir as permissões no Microsoft Graph Explorer:
     1. Inicie o [Microsoft Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
@@ -487,7 +487,7 @@ Neste tutorial, você usou muitas APIs para realizar tarefas. Explore a referên
 
 - [O que é a Proteção de Identidade?](/azure/active-directory/identity-protection/overview-identity-protection)
 - [O que é Acesso Condicional?](/azure/active-directory/conditional-access/overview)
-- [Como funciona: Autenticação multifafação do Azure](/azure/active-directory/authentication/concept-mfa-howitworks)
+- [Como funciona: autenticação multifator do Azure](/azure/active-directory/authentication/concept-mfa-howitworks)
 - [conditionalAccessPolicy](/graph/api/resources/conditionalaccesspolicy?view=graph-rest-1.0)
 - [riskDetection](/graph/api/resources/riskdetection?view=graph-rest-1.0)
 - [riskyUser](/graph/api/resources/riskyuser?view=graph-rest-1.0)

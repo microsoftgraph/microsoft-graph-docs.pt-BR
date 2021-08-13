@@ -1,24 +1,24 @@
 ---
 title: 'reportRoot: getOffice365ActivationsUserDetail'
-description: Obter detalhes sobre os usuários que ativaram o Microsoft 365.
+description: Obter detalhes sobre usuários que ativaram Microsoft 365.
 localization_priority: Normal
 ms.prod: reports
 author: sarahwxy
 doc_type: apiPageType
-ms.openlocfilehash: 83a59693898f85dd910e4f87765427fda4c10f90
-ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
+ms.openlocfilehash: b33ad480d37f2eb7a0708007015d21b7ecf8d981a1312c0e180877e4858adfb8
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49981778"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54130552"
 ---
 # <a name="reportroot-getoffice365activationsuserdetail"></a>reportRoot: getOffice365ActivationsUserDetail
 
 Namespace: microsoft.graph
 
-Obter detalhes sobre os usuários que ativaram o Microsoft 365.
+Obter detalhes sobre usuários que ativaram Microsoft 365.
 
-> **Observação:** Para obter detalhes sobre diferentes visualizações e nomes de relatórios, consulte [relatórios do Microsoft 365 - ativações do Microsoft Office.](https://support.office.com/client/Office-activations-87c24ae2-82e0-4d1e-be01-c3bcc3f18c60)
+> **Observação:** Para obter detalhes sobre diferentes exibições de relatório e nomes, [consulte Microsoft 365 relatórios - Microsoft Office ativações](https://support.office.com/client/Office-activations-87c24ae2-82e0-4d1e-be01-c3bcc3f18c60).
 
 ## <a name="permissions"></a>Permissões
 
@@ -66,7 +66,7 @@ O arquivo CSV possui os seguintes cabeçalhos para colunas.
 - Windows 10 Mobile
 - iOS
 - Android
-- Ativado em um computador compartilhado
+- Ativado no computador compartilhado
 
 ## <a name="example"></a>Exemplo
 

@@ -1,24 +1,24 @@
 ---
 title: 'reportRoot: getOffice365GroupsActivityFileCounts'
-description: Obter o número total de arquivos e quantos deles estavam ativos em todos os sites de grupo associados a um grupo do Microsoft 365.
+description: Obter o número total de arquivos e quantos deles estavam ativos em todos os sites de grupo associados a um Microsoft 365 grupo.
 localization_priority: Normal
 ms.prod: reports
 author: sarahwxy
 doc_type: apiPageType
-ms.openlocfilehash: f22a9bde53e9a7e77033a08263bb19b7c20f3255
-ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
+ms.openlocfilehash: 37e3b64dac8fc543f59c980d6e78716a9e0fafe34210e14604beac79076af9cc
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49982002"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54155474"
 ---
 # <a name="reportroot-getoffice365groupsactivityfilecounts"></a>reportRoot: getOffice365GroupsActivityFileCounts
 
 Namespace: microsoft.graph
 
-Obter o número total de arquivos e quantos deles estavam ativos em todos os sites de grupo associados a um grupo do Microsoft 365.
+Obter o número total de arquivos e quantos deles estavam ativos em todos os sites de grupo associados a um Microsoft 365 grupo.
 
-> **Observação:** Para obter detalhes sobre diferentes visualizações e nomes de relatórios, consulte relatórios do [Microsoft 365 - grupos do Microsoft 365.](https://support.office.com/client/Office-365-groups-a27f1a99-3557-4f85-9560-a28e3d822a40)
+> **Observação:** Para obter detalhes sobre diferentes exibições de relatório e nomes, [consulte Microsoft 365 relatórios - Microsoft 365 grupos](https://support.office.com/client/Office-365-groups-a27f1a99-3557-4f85-9560-a28e3d822a40).
 
 ## <a name="permissions"></a>Permissões
 

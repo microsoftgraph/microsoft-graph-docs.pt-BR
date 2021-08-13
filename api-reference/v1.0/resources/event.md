@@ -5,12 +5,12 @@ author: harini84
 localization_priority: Priority
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: c06c2db99189303572e48017469b5511a2fd592b
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: 89a24946dd170b7442c950277c89b9f54bcbd6a7e51331e0dba13b772fc649a7
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50722066"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54146906"
 ---
 # <a name="event-resource-type"></a>tipo de recurso de evento
 
@@ -88,11 +88,11 @@ Esse recurso permite:
 |lastModifiedDateTime|DateTimeOffset|O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`|
 |location|[location](location.md)|O local do evento.|
 |locations|Coleção [location](location.md)|Locais onde o evento é realizado ou onde participar. As propriedades **location** e **locations** sempre correspondem entre si. Se você atualizar a propriedade **location**, os locais anteriores na coleção **locations** deverão ser removidos e substituídos pelo novo valor **location**. |
-|onlineMeeting|[OnlineMeetingInfo](onlinemeetinginfo.md)| Detalhes para o participante entrar na reunião online. Somente leitura.|
+|onlineMeeting|[OnlineMeetingInfo](onlinemeetinginfo.md)| Detalhes para um participante entrar na reunião on-line. Somente leitura.|
 |onlineMeetingProvider|onlineMeetingProviderType| Representa o provedor de serviços de reunião online. Os valores possíveis são `teamsForBusiness`, `skypeForBusiness` e `skypeForConsumer`. Opcional. |
-|onlineMeetingUrl|String|Uma URL para uma reunião online. A propriedade só é definida quando um organizador especifica um evento como uma reunião online como o Skype. Somente leitura.|
+|onlineMeetingUrl|String|Uma URL de uma reunião on-line. A propriedade é definida somente quando um organizador especifica um evento como uma reunião on-line, como uma reunião do Skype. Somente leitura.|
 |organizer|[recipient](recipient.md)|O organizador do evento.|
-|originalEndTimeZone|String|O fuso horário de término que foi definido quando o evento foi criado. Um valor de `tzone://Microsoft/Custom` indica que um fuso horário personalizado herdado foi definido no Outlook para área de trabalho.|
+|originalEndTimeZone|String|O fuso horário de término que foi definido quando o evento foi criado. Um valor de `tzone://Microsoft/Custom` indica que um fuso horário personalizado herdado foi definido no Outlook da área de trabalho.|
 |originalStart|DateTimeOffset|O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`|
 |originalStartTimeZone|String|O fuso horário de início que foi definido quando o evento foi criado. Um valor de `tzone://Microsoft/Custom` indica que um fuso horário personalizado herdado foi definido no Outlook para área de trabalho. |
 |recurrence|[patternedRecurrence](patternedrecurrence.md)|O padrão de recorrência do evento.|

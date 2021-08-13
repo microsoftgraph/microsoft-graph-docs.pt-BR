@@ -5,12 +5,12 @@ author: jpettere
 localization_priority: Priority
 ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: 279dec9a4c7567f243d464d185db4763d11184f3b2abbc38aa5c55547ecf4b39
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: b2dc8daa71e538729178e7a2647a9888b9c99c45
+ms.sourcegitcommit: c541d3eceafda4812e2c0c029c95ddfb92ef58b3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54221163"
+ms.lasthandoff: 08/04/2021
+ms.locfileid: "53726720"
 ---
 # <a name="user-resource-type"></a>Tipo de recurso de usuário
 

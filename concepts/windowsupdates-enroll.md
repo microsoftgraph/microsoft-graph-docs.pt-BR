@@ -5,12 +5,12 @@ author: Alice-at-Microsoft
 localization_priority: Normal
 ms.prod: w10
 doc_type: conceptualPageType
-ms.openlocfilehash: 86a10a5b8b6878faad92e48132ab9283039ee3e6
-ms.sourcegitcommit: 0ca0a1e2810701c2392e5c685e984fbfb6785579
+ms.openlocfilehash: 7e20fd175e1dc70c843a39ea8b0b818f45d975f1aa63d92ad3374ebc1ac961ca
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2021
-ms.locfileid: "53151423"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54225640"
 ---
 # <a name="enroll-in-update-management-by-the-windows-update-for-business-deployment-service"></a>Registrar-se no gerenciamento de atualizações pelo serviço de implantação Windows Atualização para Empresas
 

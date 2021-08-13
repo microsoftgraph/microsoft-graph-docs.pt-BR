@@ -5,12 +5,12 @@ localization_priority: Priority
 author: lumine2008
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 9b71e25cc2590d599f79c199200eb2f82da603c5
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 41712584a612e8f9445c7bc67c25394188d3efc8e0328683a1128bbafce26605
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48015026"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54141263"
 ---
 # <a name="worksheet-resource-type"></a>Tipo de recurso Worksheet
 
@@ -49,7 +49,7 @@ Uma planilha do Excel é uma grade de células. Ela pode conter dados, tabelas, 
 ## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|charts|Conjunto [WorkbookChart](chart.md) |Retorna uma coleção de gráficos que fazem parte da planilha. Somente leitura.|
+|charts|Conjunto [WorkbookChart](chart.md) |Retorna a coleção de gráficos que fazem parte da planilha. Somente leitura.|
 |names|Coleção [WorkbookNamedItem](nameditem.md) |Retorna a coleção de nomes associados à planilha. Somente leitura.|
 |pivotTables|Coleção [workbookPivotTable](workbookpivottable.md)| Coleção de Tabelas Dinâmicas que fazem parte da planilha. |
 |proteção|[WorkbookWorksheetProtection](worksheetprotection.md)|Retorna o objeto de proteção da planilha para uma planilha. Somente leitura.|

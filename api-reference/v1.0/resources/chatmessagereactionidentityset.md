@@ -5,12 +5,12 @@ author: RamjotSingh
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 086cca8963bbb019ab7754a6aba3b644a5e14e2e
-ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
+ms.openlocfilehash: 59b1e110f5d74fdf4883cf7e59adfe5aacdf8b88fcd6e5e6da5728cc2e948f9a
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53211057"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54189876"
 ---
 # <a name="chatmessagereactionidentityset-resource-type"></a>Tipo de recurso chatMessageReactionIdentitySet
 
@@ -26,7 +26,7 @@ Herda de [identitySet](../resources/identityset.md).
 |:---|:---|:---|
 |aplicativo|[identity](../resources/identity.md)|Herdado [de identitySet](../resources/identityset.md). Não definido porque os aplicativos não podem reagir às mensagens.|
 |device|[identity](../resources/identity.md)|Herdado [de identitySet](../resources/identityset.md). Não definido porque os dispositivos não podem reagir às mensagens.|
-|user|[identity](../resources/identity.md)|Herdado [de identitySet](../resources/identityset.md). Detalhes sobre o usuário que reagia à mensagem.|
+|usuário|[identity](../resources/identity.md)|Herdado [de identitySet](../resources/identityset.md). Detalhes sobre o usuário que reagia à mensagem.|
 
 ## <a name="relationships"></a>Relações
 Nenhum

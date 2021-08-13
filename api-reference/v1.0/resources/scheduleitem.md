@@ -1,32 +1,32 @@
 ---
-title: tipo de recurso scheduleItem
-description: Um item que descreve a disponibilidade de um usuário correspondente a um evento real no calendário padrão do usuário. Este item se aplica a um recurso (sala ou equipamento) também.
+title: Tipo de recurso scheduleItem
+description: Um item que descreve a disponibilidade de um usuário correspondente a um evento real no calendário padrão do usuário. Este item também se aplica a um recurso (sala ou equipamento).
 localization_priority: Normal
 author: harini84
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: ce43ccb949aa4bba787289a8d2e3d80c84dd7c09
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: c097bb722e69c25e4709f1ef5465eb5d603e1f6a96591a94f799009a9c97c51c
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47977968"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54216634"
 ---
-# <a name="scheduleitem-resource-type"></a>tipo de recurso scheduleItem
+# <a name="scheduleitem-resource-type"></a>Tipo de recurso scheduleItem
 
 Namespace: microsoft.graph
 
-Um item que descreve a disponibilidade de um usuário correspondente a um evento real no calendário padrão do usuário. Este item se aplica a um recurso (sala ou equipamento) também.
+Um item que descreve a disponibilidade de um usuário correspondente a um evento real no calendário padrão do usuário. Este item também se aplica a um recurso (sala ou equipamento).
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|end |[dateTimeTimeZone](datetimetimezone.md) |A data, a hora e o fuso horário em que o evento correspondente termina. |
-|IsPrivate |Boolean |A sensibilidade do evento correspondente. True se o evento estiver marcado `private` ; caso contrário, false. Opcional.|
-|localização |String | O local onde o evento correspondente é mantido ou participado. Opcional.|
-|iniciar |[dateTimeTimeZone](datetimetimezone.md) |A data, a hora e o fuso horário em que o evento correspondente é iniciado. |
+|end |[dateTimeTimeZone](datetimetimezone.md) |A data, hora e fuso horário que o evento correspondente termina. |
+|isPrivate |Booliano |A sensibilidade do evento correspondente. True se o evento for marcado `private` , false caso contrário. Opcional.|
+|localização |Cadeia de caracteres | O local do qual o evento correspondente é realizado ou atendido. Opcional.|
+|iniciar |[dateTimeTimeZone](datetimetimezone.md) |A data, a hora e o fuso horário que o evento correspondente inicia. |
 |status |freeBusyStatus | O status de disponibilidade do usuário ou recurso durante o evento correspondente. Os valores possíveis são: `free`, `tentative`, `busy`, `oof`, `workingElsewhere`, `unknown`. |
-|assunto |String | A linha de assunto do evento correspondente. Opcional.|
+|Assunto |Cadeia de caracteres | A linha de assunto do evento correspondente. Opcional.|
 
 
 ## <a name="json-representation"></a>Representação JSON

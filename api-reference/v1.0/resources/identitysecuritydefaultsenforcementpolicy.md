@@ -1,22 +1,22 @@
 ---
 title: Tipo de recurso identitySecurityDefaultsEnforcementPolicy
-description: Representa a política de padrões de segurança do Azure Active Directory. Os padrões de segurança contêm configurações de segurança pré-configuradas que protegem contra ataques comuns.
+description: Representa a Azure Active Directory de padrões de segurança. Os padrões de segurança contêm configurações de segurança pré-configuradas que protegem contra ataques comuns.
 localization_priority: Normal
 author: rohinigoyal1
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 2609a75ad90aba9ab545e81207bc0d3ea33f0a8a
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: d2e3c4af8bbb7dbac35f2a28a4704010b6c6d50542d2c5de9bd1cad3cb443a90
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50944840"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54238087"
 ---
 # <a name="identitysecuritydefaultsenforcementpolicy-resource-type"></a>Tipo de recurso identitySecurityDefaultsEnforcementPolicy
 
 Namespace: microsoft.graph
 
-Representa a política de padrões de [segurança](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults) do Azure Active Directory. Os padrões de segurança contêm configurações de segurança pré-configuradas que protegem contra ataques comuns.
+Representa a Azure Active Directory [de padrões de](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults) segurança. Os padrões de segurança contêm configurações de segurança pré-configuradas que protegem contra ataques comuns.
 
 Herda de [policyBase](../resources/policybase.md).
 
@@ -25,16 +25,16 @@ Herda de [policyBase](../resources/policybase.md).
 | Método       | Tipo de retorno | Descrição |
 |:-------------|:------------|:------------|
 | [Get](../api/identitysecuritydefaultsenforcementpolicy-get.md) | [identitySecurityDefaultsEnforcementPolicy](identitysecuritydefaultsenforcementpolicy.md) | Leia as propriedades de **um objeto identitySecurityDefaultsEnforcementPolicy.** |
-| [Atualização](../api/identitysecuritydefaultsenforcementpolicy-update.md) | [identitySecurityDefaultsEnforcementPolicy](identitysecuritydefaultsenforcementpolicy.md) | Atualize **um objeto identitySecurityDefaultsEnforcementPolicy.** |
+| [Atualizar](../api/identitysecuritydefaultsenforcementpolicy-update.md) | [identitySecurityDefaultsEnforcementPolicy](identitysecuritydefaultsenforcementpolicy.md) | Atualize **um objeto identitySecurityDefaultsEnforcementPolicy.** |
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
 |description|Cadeia de caracteres|Descrição dessa política. Somente leitura.|
-|displayName|Cadeia de caracteres|Nome de exibição para esta política. Somente leitura.|
+|displayName|String|Nome de exibição para esta política. Somente leitura.|
 |id|Cadeia de caracteres|Identificador dessa política. Somente leitura.|
-|isEnabled|Booliano|Se definido como , os padrões de segurança do `true` Azure Active Directory estão habilitados para o locatário.|
+|isEnabled|Booliano|Se definido como `true` , Azure Active Directory de segurança está habilitado para o locatário.|
 
 ## <a name="relationships"></a>Relações
 

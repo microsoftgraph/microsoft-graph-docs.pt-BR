@@ -6,12 +6,12 @@ localization_priority: Normal
 description: textColumn em um recurso columnDefinition indica que os valores da coluna são texto.
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 62711f2f44004e5b3d594eb472b7c018205d9e31
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: 6c551ce7568cb31f92d2bf02bb328ffa77fa95d63c8aca547b2add5e5cb57469
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50239271"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54211805"
 ---
 # <a name="textcolumn-resource-type"></a>Tipo de recurso TextColumn
 

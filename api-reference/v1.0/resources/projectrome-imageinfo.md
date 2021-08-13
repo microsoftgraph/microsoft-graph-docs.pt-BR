@@ -1,30 +1,30 @@
 ---
-title: tipo de recurso imageInfo
-description: Um tipo complexo para representar a propriedade de **atribuição** na parte visualInfo do objeto Activity.
+title: Tipo de recurso imageInfo
+description: Um tipo complexo para representar **a propriedade de atribuição** na parte visualInfo do objeto activity.
 localization_priority: Normal
 ms.prod: project-rome
 author: ailae
 doc_type: resourcePageType
-ms.openlocfilehash: d4ed317b987d461c9ef6816e9d05aae0de358ec7
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 1f8f4a69304412296030eb50a907bdf9ca6f6c000b16e295688c836585fbb775
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48037196"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54229000"
 ---
-# <a name="imageinfo-resource-type"></a>tipo de recurso imageInfo
+# <a name="imageinfo-resource-type"></a>Tipo de recurso imageInfo
 
 Namespace: microsoft.graph
 
-Um tipo complexo para representar a propriedade de **atribuição** na parte [visualInfo](../resources/projectrome-visualinfo.md) do objeto [Activity](../resources/projectrome-activity.md) .
+Um tipo complexo para representar **a propriedade de atribuição** na parte [visualInfo](../resources/projectrome-visualinfo.md) do [objeto activity.](../resources/projectrome-activity.md)
 
 ## <a name="properties"></a>Propriedades
 
 |Nome | Tipo | Descrição|
 |:----|:-----|:-----------|
-|iconUrl | String | Opcion URI que aponta para um ícone que representa o aplicativo usado para gerar a atividade|
-|alternateText | String | Opcion Alt-conteúdo de texto acessível para a imagem|
-|addImageQuery | Boolean | Opcion parâmetro usado para indicar que o servidor é capaz de renderizar a imagem dinamicamente em resposta à parametrização. Por exemplo, uma imagem de alto contraste|
+|iconUrl | String | Opcional; URI que aponta para um ícone que representa o aplicativo usado para gerar a atividade|
+|alternateText | Cadeia de caracteres | Opcional; alt-text accessible content for the image|
+|addImageQuery | Booliano | Opcional; usado para indicar que o servidor é capaz de renderizar a imagem dinamicamente em resposta à parametrização. Por exemplo: uma imagem de alto contraste|
 
 ## <a name="json-representation"></a>Representação JSON
 

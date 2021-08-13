@@ -1,27 +1,27 @@
 ---
-title: tipo de recurso plannerOrderHintsByAssignee
-description: O **plannerOrderHintsByAssignee** é um recurso que contém dicas de ordenação para destinatários em um recurso plannerTask, para indicar a ordem da tarefa em atribuída ao modo de exibição do quadro de tarefas.
+title: Tipo de recurso plannerOrderHintsByAssignee
+description: O **plannerOrderHintsByAssignee** é um recurso que contém dicas de ordenação para os atribuídos em um recurso plannerTask, para indicar a ordem da tarefa em Atribuído a modo de exibição do Quadro de Tarefas.
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: e083f171b777b3223d698530b64539c86bb15139
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 9ddfe9f30387d66e6a55da680eb176d5d20f8e33e44f6f827e84efe687d29e92
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48037469"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54146325"
 ---
-# <a name="plannerorderhintsbyassignee-resource-type"></a>tipo de recurso plannerOrderHintsByAssignee
+# <a name="plannerorderhintsbyassignee-resource-type"></a>Tipo de recurso plannerOrderHintsByAssignee
 
 Namespace: microsoft.graph
 
-O **plannerOrderHintsByAssignee** é um recurso que contém [dicas de ordenação](planner-order-hint-format.md) para destinatários em um recurso [plannerTask](plannertask.md) , para indicar a ordem da tarefa em atribuída ao modo de exibição do quadro de tarefas.
-Este tipo é um tipo aberto. As propriedades são as IDs dos usuários atribuídos à tarefa e os valores são dicas de ordenação.
+O **plannerOrderHintsByAssignee** é um recurso que contém dicas de ordenação para os [atribuídos](planner-order-hint-format.md) em um [recurso plannerTask,](plannertask.md) para indicar a ordem da tarefa em Atribuído a modo de exibição do Quadro de Tarefas.
+Esse tipo é um tipo aberto. As propriedades são as ids dos usuários atribuídos à tarefa e os valores são dicas de ordem.
 
 ## <a name="properties"></a>Propriedades
-As propriedades de um tipo aberto podem ser definidas pelo cliente. Nesse caso, o cliente deve fornecer IDs de usuários atribuídos à tarefa como nomes de propriedade e uma [dica de ordem](planner-order-hint-format.md) válida como o valor.
-As propriedades não podem ser removidas desse tipo. O serviço removerá automaticamente os valores, já que as atribuições no [plannerTask](plannertask.md) que o contém são atualizadas.
+As propriedades de um Tipo Aberto podem ser definidas pelo cliente. Nesse caso, o cliente deve fornecer ids de usuários atribuídos à tarefa como nomes de propriedade e uma dica de ordem [válida](planner-order-hint-format.md) como o valor.
+As propriedades não podem ser removidas desse tipo. O serviço removerá automaticamente os valores à medida que as atribuições no [plannerTask](plannertask.md) que contêm são atualizadas.
 
 Exemplo:
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0fc2fa997d56fffd673964a1d387b175bfef2ba1
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 76a1415822d533eeaaaeabcd1c33724a710b63f75c4d423d62f0583c9cc188a0
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52754557"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54231604"
 ---
 # <a name="locatedeviceactionresult-resource-type"></a>Tipo de recurso locateDeviceActionResult
 
@@ -33,7 +33,7 @@ Herda de [deviceActionResult](../resources/intune-devices-deviceactionresult.md)
 |deviceLocation|[deviceGeoLocation](../resources/intune-devices-devicegeolocation.md)|local do dispositivo|
 
 ## <a name="relationships"></a>Relações
-Nenhuma
+Nenhum
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.

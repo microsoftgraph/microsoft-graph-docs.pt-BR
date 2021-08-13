@@ -4,12 +4,12 @@ description: Registre seu aplicativo no Centro de Desenvolvimento do Windows par
 localization_priority: Priority
 ms.prod: notifications
 author: merzink
-ms.openlocfilehash: e693e3edb0f6ec718d4aed6eb976da5a6f14c736
-ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
+ms.openlocfilehash: 1a3b55583ff2d945207b3f49f15ff055b033ec2c1420c950fe2238d7964cd768
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48288367"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54169127"
 ---
 # <a name="onboarding-to-cross-device-experiences-for-microsoft-graph-notifications"></a>Integração de experiências entre dispositivos para as notificações do Microsoft Graph
 
@@ -27,7 +27,7 @@ Para começar, entre no [painel do Partner Center](https://partner.microsoft.com
 
 ![Configure um novo registro do aplicativo entre dispositivos](images/notifications-crossdevice-new-configure.png)
 
-2.  Selecione todas as plataformas compatíveis em que seu aplicativo estará disponível e habilitado para receber notificações. Você pode selecionar plataformas compatíveis que incluem o Windows, Android e iOS, conforme mostrado. 
+2.  Selecione todas as plataformas compatíveis em que seu aplicativo estará disponível e habilitado para receber notificações. Você pode selecionar plataformas compatíveis que incluem o Windows, Android e iOS, conforme mostrado. 
 
 ![Configure tipos de plataforma compatível](images/notifications-crossdevice-supported-platforms.png)
 

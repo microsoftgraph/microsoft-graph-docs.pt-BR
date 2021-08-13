@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: af1feaf16cbff0f915982a78a623647803efcd2f
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: fc474f933a558eb0d7ab5894b29ca926a06e2d9b5edde968b7379275400f9077
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52751192"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54205231"
 ---
 # <a name="roleassignment-resource-type"></a>Tipo de recurso roleAssignment
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 O recurso de Atribuição de Função. Atribuições de função unem uma definição de função a membros e escopos. Pode haver uma ou mais atribuições de função por função. Aplica-se às funções internas e personalizadas
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
 |[Listar roleAssignments](../api/intune-rbac-roleassignment-list.md)|Conjunto [roleAssignment](../resources/intune-rbac-roleassignment.md)|Listar propriedades e relações de objeto de [roleAssignment](../resources/intune-rbac-roleassignment.md).|
@@ -34,7 +34,7 @@ O recurso de Atribuição de Função. Atribuições de função unem uma defini
 |:---|:---|:---|
 |id|Cadeia de caracteres|Chave da entidade. É somente leitura e gerada automaticamente.|
 |displayName|Cadeia de caracteres|O nome de exibição ou nome amigável da atribuição de função.|
-|descrição|Cadeia de caracteres|Descrição da atribuição de função.|
+|description|Cadeia de caracteres|Descrição da atribuição de função.|
 |resourceScopes|Coleção de cadeias de caracteres|Lista de IDs de grupos de segurança de membros de escopo da função.  Estas são as IDs do Azure Active Directory.|
 
 ## <a name="relationships"></a>Relações

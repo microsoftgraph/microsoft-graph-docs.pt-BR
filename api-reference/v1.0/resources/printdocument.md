@@ -5,12 +5,12 @@ author: nilakhan
 localization_priority: Normal
 ms.prod: cloud-printing
 doc_type: resourcePageType
-ms.openlocfilehash: d8ca73a6e8acfb6ac2326b171b2b8c04fed7e039
-ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
+ms.openlocfilehash: 4e2c8359b49e2154e3f107c97edf93fc64bd394837d5cf8ca8b1daa14446b857
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50516913"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54169365"
 ---
 # <a name="printdocument-resource-type"></a>Tipo de recurso printDocument
 
@@ -30,7 +30,7 @@ Representa um documento que está sendo impresso.
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|Cadeia de caracteres|O identificador do documento. Somente leitura.|
-|displayName|Cadeia de caracteres|O nome do documento. Somente leitura.|
+|displayName|String|O nome do documento. Somente leitura.|
 |contentType|String|Tipo de conteúdo do documento (MIME). Somente leitura.|
 |size|Int64|O tamanho do documento em bytes. Somente leitura.|
 

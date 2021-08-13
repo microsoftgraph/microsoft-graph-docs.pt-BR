@@ -5,12 +5,12 @@ localization_priority: Normal
 author: SumitParikh
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 291a30b0d8d4aa9181114cf392b5c466fc395925
-ms.sourcegitcommit: 5a1cc1943527aa268e3797ee514871e65eb474a6
+ms.openlocfilehash: f42df21b5c7e414f03c172b41a0f25ba3dcd59359ec699af9c7e0a06869059fd
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53030793"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54163646"
 ---
 # <a name="subscribedsku-resource-type"></a>Tipo de recurso subscribedSku
 

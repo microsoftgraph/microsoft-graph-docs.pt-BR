@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: reports
 author: sarahwxy
 doc_type: conceptualPageType
-ms.openlocfilehash: f27942e93ee92a1eb6c1c39ec24b376a8d2ecb2f
-ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
+ms.openlocfilehash: 0aae31ba04927b779f471921bf36dce358a3e2cff397b62e6733e05d34721d5c
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49980630"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54202102"
 ---
 # <a name="skype-for-business-participant-activity-reports"></a>Relatórios de atividades do participante do Skype for Business
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 Você pode usar os relatórios de atividade do participante do Skype for Business para obter dados sobre as atividades em conferências em toda a organização. Esses dados são muito úteis quando você está investigando, planejando e tomando outras decisões comerciais para sua organização.
 
-> **Observação:** Para obter detalhes sobre diferentes visualizações e nomes de relatórios, consulte relatórios do [Microsoft 365 - Atividade de participantes de conferências do Skype for Business.](https://support.office.com/client/Skype-for-Business-Online-conference-participant-activity-c3c89995-65dd-4715-9e38-bb244c742c6b)
+> **Observação:** Para obter detalhes sobre diferentes exibições de relatório e nomes, [consulte Microsoft 365 relatórios - Skype for Business atividade](https://support.office.com/client/Skype-for-Business-Online-conference-participant-activity-c3c89995-65dd-4715-9e38-bb244c742c6b)do participante da conferência .
 
 ## <a name="reports"></a>Relatórios
 

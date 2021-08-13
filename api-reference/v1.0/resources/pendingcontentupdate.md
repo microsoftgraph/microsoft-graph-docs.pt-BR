@@ -1,28 +1,28 @@
 ---
 title: pendingContentUpdate
-description: O recurso pendingContentUpdate indica que uma operação que pode afetar o conteúdo binário do driveItem está aguardando a conclusão.
+description: O recurso pendingContentUpdate indica que uma operação que pode afetar o conteúdo binário do driveItem está pendente de conclusão.
 localization_priority: Normal
 author: learafa
 ms.prod: files
 doc_type: resourcePageType
-ms.openlocfilehash: 150f94df57c653ad7a735c30dceff694d0023a2b
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 917a952ba9694178c17b3ef6ccb89780790528860f227a3a5f02f5cb5f44cf5e
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48022908"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54178133"
 ---
-# <a name="pendingcontentupdate-resource-type"></a>tipo de recurso pendingContentUpdate
+# <a name="pendingcontentupdate-resource-type"></a>Tipo de recurso pendingContentUpdate
 
 Namespace: microsoft.graph
 
-Indica que uma operação que pode afetar o conteúdo binário do **driveItem** está aguardando a conclusão.
+Indica que uma operação que pode afetar o conteúdo binário do **driveItem** está pendente de conclusão.
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade     | Tipo         | Descrição |
 |:-------------|:-------------|:------------|
-|**queuedDateTime**|DateTimeOffset|Data e hora em que a operação binária pendente foi enfileirada no horário UTC. Somente leitura.|
+|**queuedDateTime**|DateTimeOffset|Data e hora em que a operação binária pendente foi en fila no horário UTC. Somente leitura.|
 
 ## <a name="json-representation"></a>Representação JSON
 

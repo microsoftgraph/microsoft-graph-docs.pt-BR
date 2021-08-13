@@ -1,18 +1,18 @@
 ---
-title: tipo de recurso searchQuery
+title: Tipo de recurso searchQuery
 description: searchQuery
 localization_priority: Normal
 author: nmoreau
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: 3745083b404a8de6f68844af9b1767ac2319059f
-ms.sourcegitcommit: 5345c2f3265ede107fa0faaff7a3f1c2afee3810
+ms.openlocfilehash: 5d28f3a2a423947eaf27a5b6878607d6efac6dda3dd6d2f01907621b17177732
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "49377955"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54149671"
 ---
-# <a name="searchquery-resource-type"></a>tipo de recurso searchQuery
+# <a name="searchquery-resource-type"></a>Tipo de recurso searchQuery
 
 Namespace: microsoft.graph
 
@@ -22,7 +22,7 @@ Representa uma consulta de pesquisa que contém termos de pesquisa e filtros opc
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|queryString|Cadeia de Caracteres|A consulta de pesquisa que contém os termos da pesquisa. Obrigatório.|
+|queryString|Cadeia de caracteres|A consulta de pesquisa que contém os termos de pesquisa. Obrigatório.|
 
 ## <a name="json-representation"></a>Representação JSON
 
