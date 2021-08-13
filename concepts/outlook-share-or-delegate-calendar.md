@@ -4,12 +4,12 @@ description: No Outlook, um proprietário de calendário pode compartilhá-lo co
 author: juforan
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: 8bf08b8d32a53e5b309b2048060a8c64d1cb1ce7
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 3e86fa3ec032e17e5859bd9bb76c9db4cb91df4571e59178264e8ef1c764e3cd
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50962445"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54237017"
 ---
 # <a name="share-or-delegate-a-calendar-in-outlook"></a>Compartilhar ou delegar um calendário no Outlook
 

@@ -1,30 +1,30 @@
 ---
 title: Provedor do Microsoft Teams
-description: Use o provedor do Teams dentro de sua guia do Microsoft Teams para facilitar a autenticação e o acesso do Microsoft Graph a todos os componentes.
+description: Use o provedor Teams sua guia Microsoft Teams para facilitar a autenticação e o acesso Graph Microsoft a todos os componentes.
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: 2d4bff6363cc87256f7ec3f9456fbd11f011b48e
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: 3ede17c756a5b8af009f03555041d2a1c08a1b0d8c6d0671522273aa445afbad
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50719750"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54208640"
 ---
 # <a name="microsoft-teams-provider"></a>Provedor do Microsoft Teams
 
-Use o provedor do Teams dentro de sua guia do Microsoft Teams para facilitar a autenticação e o acesso do Microsoft Graph a todos os componentes.
+Use o provedor Teams sua guia Microsoft Teams para facilitar a autenticação e o acesso Graph Microsoft a todos os componentes.
 
 Para saber mais sobre provedores de autenticação, consulte [provedores](./providers.md).
 
->**Dica:** Para obter detalhes sobre como começar a criar um aplicativo do Microsoft Teams com o Provedor do Teams, consulte o guia [Criar uma guia do Microsoft Teams](../get-started/build-a-microsoft-teams-tab.md) começando.
+>**Dica:** Para obter detalhes sobre como começar a criar um aplicativo Microsoft Teams com o provedor Teams, consulte o guia Criar um Microsoft Teams [de](../get-started/build-a-microsoft-teams-tab.md) início.
 
 ## <a name="get-started"></a>Introdução
 
-Antes de usar o provedor do Teams, você precisará se certificar de ter referenciado o [SDK](/javascript/api/overview/msteams-client?view=msteams-client-js-latest&preserve-view=true#using-the-sdk) do Microsoft Teams em sua página.
+Antes de usar o provedor Teams, você precisará se certificar de ter referenciado o [SDK](/javascript/api/overview/msteams-client?view=msteams-client-js-latest&preserve-view=true#using-the-sdk) Microsoft Teams na sua página.
 
 # <a name="npm"></a>[npm](#tab/ts)
 
-Instale o kit de ferramentas e o SDK do Microsoft Teams.
+Certifique-se de instalar o kit de ferramentas e o Microsoft Teams SDK.
 
 ```cmd
 npm install @microsoft/mgt @microsoft/teams-js
@@ -79,7 +79,7 @@ export interface TeamsConfig {
 
 ### <a name="create-the-popup-page"></a>Criar a página pop-up
 
-Para entrar com suas credenciais do Teams, você precisa fornecer uma URL que o aplicativo do Teams abrirá em um pop-up, que seguirá o fluxo de autenticação. Essa URL precisa estar em seu domínio e precisa chamar o `TeamsProvider.handleAuth();` método. Essa é a única coisa que essa página precisa fazer. Por exemplo:
+Para entrar com suas credenciais Teams, você precisa fornecer uma URL que o aplicativo Teams abrirá em um pop-up, que seguirá o fluxo de autenticação. Essa URL precisa estar em seu domínio e precisa chamar o `TeamsProvider.handleAuth();` método. Essa é a única coisa que essa página precisa fazer. Por exemplo:
 
 # <a name="npm"></a>[npm](#tab/ts)
 
@@ -107,13 +107,13 @@ TeamsProvider.handleAuth();
 
 Depois de publicar a página pop-up em seu site, você precisará usar a URL na `auth-popup-url/authPopupUrl` propriedade. Essa URL também precisa ser configurada como um URI de redirecionamento válido na configuração do aplicativo no portal do Azure AD.
 
-## <a name="configure-your-teams-app"></a>Configurar seu aplicativo do Teams
+## <a name="configure-your-teams-app"></a>Configurar seu Teams aplicativo
 
-Se você está apenas começando com aplicativos do Teams, consulte [Adicionar guias aos aplicativos do Microsoft Teams.](/microsoftteams/platform/concepts/tabs/tabs-overview) Você também pode usar [o App Studio](/microsoftteams/platform/get-started/get-started-app-studio) para desenvolver rapidamente o manifesto do aplicativo.
+Se você estiver apenas começando a Teams [aplicativos,](/microsoftteams/platform/concepts/tabs/tabs-overview)consulte Adicionar guias a Microsoft Teams aplicativos . Você também pode usar [o App Studio](/microsoftteams/platform/get-started/get-started-app-studio) para desenvolver rapidamente o manifesto do aplicativo.
 ### <a name="creating-an-appclient-id"></a>Criando uma ID de aplicativo/cliente
 Para obter uma ID do cliente, você precisa registrar [seu aplicativo](../get-started/add-aad-app-registration.md) no Azure AD. 
->**Observação**: O MSAL só dá suporte ao Fluxo Implícito para OAuth. Certifique-se de habilitar o Fluxo Implícito em seu aplicativo no Portal do Azure (ele não está habilitado por padrão). Em **Autenticação**, encontre a seção **Concessão implícita** e selecione as caixas de seleção para **tokens de Acesso** e **tokens de ID**. 
+>**Observação**: O MSAL só dá suporte ao Flow implícito para OAuth. Certifique-se de habilitar o Flow implícito em seu aplicativo no Portal do Azure (ele não está habilitado por padrão). Em **Autenticação**, encontre a seção **Concessão implícita** e selecione as caixas de seleção para **tokens de Acesso** e **tokens de ID**. 
 
 ## <a name="see-also"></a>Confira também
-* [Exemplo de guia do Microsoft Teams](https://github.com/microsoftgraph/microsoft-graph-toolkit/tree/master/samples/teams-tab)
+* [Microsoft Teams de tabulação](https://github.com/microsoftgraph/microsoft-graph-toolkit/tree/master/samples/teams-tab)
 * [Criar uma guia do Microsoft Teams](../get-started/build-a-microsoft-teams-tab.md)

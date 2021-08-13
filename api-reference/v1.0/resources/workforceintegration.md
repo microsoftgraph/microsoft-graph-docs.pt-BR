@@ -5,12 +5,12 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: e8c05e82ccf92a46f9d3e511de000d2d36cd38db
-ms.sourcegitcommit: 596b3d5636f3f3e042d180ea8f039f00ebd6b38a
+ms.openlocfilehash: c1d5665f289215a7a5ffb8721976ec9b93289785804be0b49d40c79cd5ad963d
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/30/2021
-ms.locfileid: "53665869"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54163632"
 ---
 # <a name="workforceintegration-resource-type"></a>Tipo de recurso workforceIntegration
 
@@ -26,7 +26,7 @@ Uma instância de integração de força de trabalho com turnos.
 | [List](../api/workforceintegration-list.md) | [coleção workforceIntegration](workforceintegration.md) | Obter a lista de **objetos workforceIntegration** associados a essa agenda.|
 | [Obter](../api/workforceintegration-get.md) | [workforceIntegration](workforceintegration.md) | Leia as propriedades e as relações de um **objeto workforceIntegration.** |
 | [Atualizar](../api/workforceintegration-update.md) | [workforceIntegration](workforceintegration.md) | Atualizar um **objeto workforceIntegration.** |
-| [Delete](../api/workforceintegration-delete.md) | Nenhum | Excluir um **objeto workforceIntegration.** |
+| [Delete](../api/workforceintegration-delete.md) | None | Excluir um **objeto workforceIntegration.** |
 
 ## <a name="properties"></a>Propriedades
 

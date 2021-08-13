@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: d8b358dbc5c0de9c50f442c21213afa2dedd88f3
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: e5d65969f8f541d0622b9cce0d194845085c5902141a2f4de33457a56aa33075
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52755949"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54216774"
 ---
 # <a name="androidworkprofiledefaultapppermissionpolicytype-enum-type"></a>tipo de número androidWorkProfileDefaultAppPermissionPolicyType
 

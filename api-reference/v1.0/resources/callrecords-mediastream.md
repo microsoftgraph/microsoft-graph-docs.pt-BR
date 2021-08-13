@@ -5,12 +5,12 @@ localization_priority: Normal
 author: williamlooney
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: f30aef10b29d2880b1c892522e9d91218c0b081b
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: 2ffa02db859321c09cf329e6404dcb5d065f5a688b19291548205f15858f39ad
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50721555"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54252099"
 ---
 # <a name="mediastream-resource-type"></a>Tipo de recurso mediaStream
 
@@ -102,5 +102,5 @@ Veja a seguir uma representação JSON do recurso.
   "description": "mediaStream resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath&quot;: &quot;"
 }-->

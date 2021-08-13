@@ -3,12 +3,12 @@ title: Integração do aplicativo iOS no SDK do lado do cliente para notificaç�
 description: Integre o aplicativo iOS com notificações de usuário no SDK do cliente.
 localization_priority: Priority
 ms.prod: notifications
-ms.openlocfilehash: 9a89fd3080b4bcc5d16f58be35d9e339388c0e39
-ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
+ms.openlocfilehash: efe4505e0c56e37150f8066f9571c06f2b41797e04c1f671bb790bb27adb00b0
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48288669"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54211721"
 ---
 # <a name="integrate-your-ios-app-with-the-client-side-sdk-for-user-notifications"></a>Integração do aplicativo iOS no SDK do lado do cliente para notificações ao usuário
 
@@ -49,7 +49,7 @@ O diagrama a seguir mostra o fluxo de dados para alterar o estado de uma notific
 
 ![Atualização de fluxo de nova notificação para aplicativo iOS](images/notifications-notification-update-ios.png)
 
-Observe que a segunda parte do fluxo é semelhante ao fluxo de tratamento de novas notificações de entrada. Isso é esperado – o padrão de programação no SDK  foi projetado para que o cliente do aplicativo possa lidar com todos os tipos de alterações de dados de notificações do usuário (novas notificações de entrada, alterações de estado de notificação, notificação excluída) de maneira semelhante.  
+Observe que a segunda parte do fluxo é semelhante ao fluxo para lidar com novas notificações recebidas. Isso ocorre por design - o padrão de programação do SDK é projetado para que o aplicativo cliente possa lidar com todos os tipos de alterações de dados de notificação do usuário (novas notificações recebidas, alterações de estado de notificação, notificação excluída) de maneira semelhante.  
 
 O diagrama mostra as próximas etapas:
 
@@ -180,7 +180,7 @@ NSArray<MCDUserDataFeedSyncScope*>* syncScopes = @[ [MCDUserNotificationChannel 
 
 ## <a name="receiving-and-managing-user-notifications"></a>Receber e gerenciar as notificações do usuário
 
-O diagrama de fluxo já apresentado nesse tópico mostra que os padrões de programação para lidar com novas notificações de entrada de um servidor do aplicativo e uma atualização de notificação ou exclusão iniciado de outra instância do aplicativo do cliente são semelhantes. A seguir estão as etapas para lidar com essas alterações de dados. 
+O diagrama de fluxo anterior neste tópico mostra que os padrões de programação para lidar com novas notificações de entrada de um servidor de aplicativo e uma atualização ou exclusão de notificação iniciada a partir de outra instância do aplicativo cliente são semelhantes. A seguir estão as etapas para lidar com essas alterações de dados. 
 
 ### <a name="handling-incoming-push-notification-signal"></a>Gerenciar sinal de notificações por push de entrada
 

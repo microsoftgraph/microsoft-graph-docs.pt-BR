@@ -1,22 +1,22 @@
 ---
-title: tipo de recurso timerange
-description: Um recurso de intervalo de tempo com um horário de início e de término.
+title: Tipo de recurso timeRange
+description: Um recurso de intervalo de tempo com hora de início e término.
 localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 64f018cb0c554ae36c9ec0b8ec0bfa655b7499f4
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: efd466503a2f3a8e840170c551b258310e018a0ac62f6073f4fcb1c24c2f5d85
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48090757"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54189209"
 ---
-# <a name="timerange-resource-type"></a>tipo de recurso timerange
+# <a name="timerange-resource-type"></a>Tipo de recurso timeRange
 
 Namespace: microsoft.graph
 
-Um recurso de intervalo de tempo com um horário de início e de término.
+Um recurso de intervalo de tempo com hora de início e término.
 
 ## <a name="properties"></a>Propriedades
 

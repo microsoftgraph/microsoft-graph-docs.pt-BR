@@ -5,12 +5,12 @@ localization_priority: Normal
 author: jpettere
 ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: 3081b377a30bbf09131650517dcee61597dea597
-ms.sourcegitcommit: f77c1385306fd40557aceb24fdfe4832cbb60a27
+ms.openlocfilehash: 8bc170e1878c1382cdf999211aae8ee0fbf05231c92c297ec87ca11ce64f505e
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/12/2021
-ms.locfileid: "52912044"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54189405"
 ---
 # <a name="onpremisesextensionattributes-resource-type"></a>Tipo de recurso onPremisesExtensionAttributes
 
@@ -23,21 +23,21 @@ A **propriedade onPremisesExtensionAttributes** da entidade do usuário contém 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|extensionAttribute1|String| Primeiro atributo de extensão personalizável. |
-|extensionAttribute2|String| Segundo atributo de extensão personalizável. |
-|extensionAttribute3|String| Terceiro atributo de extensão personalizável. |
-|extensionAttribute4|String| Quarto atributo de extensão personalizável. |
-|extensionAttribute5|String| Quinto atributo de extensão personalizável. |
-|extensionAttribute6|String| Sexto atributo de extensão personalizável. |
-|extensionAttribute7|String| Sétimo atributo de extensão personalizável. |
+|extensionAttribute1|Cadeia de caracteres| Primeiro atributo de extensão personalizável. |
+|extensionAttribute2|Cadeia de caracteres| Segundo atributo de extensão personalizável. |
+|extensionAttribute3|Cadeia de caracteres| Terceiro atributo de extensão personalizável. |
+|extensionAttribute4|Cadeia de caracteres| Quarto atributo de extensão personalizável. |
+|extensionAttribute5|Cadeia de caracteres| Quinto atributo de extensão personalizável. |
+|extensionAttribute6|Cadeia de caracteres| Sexto atributo de extensão personalizável. |
+|extensionAttribute7|Cadeia de caracteres| Sétimo atributo de extensão personalizável. |
 |extensionAttribute8|String| Oitavo atributo de extensão personalizável. |
 |extensionAttribute9|String| Nono atributo de extensão personalizável. |
-|extensionAttribute10|String| Décimo atributo de extensão personalizável. |
-|extensionAttribute11|String| Décimo primeiro atributo de extensão personalizável. |
+|extensionAttribute10|Cadeia de caracteres| Décimo atributo de extensão personalizável. |
+|extensionAttribute11|Cadeia de caracteres| Décimo primeiro atributo de extensão personalizável. |
 |extensionAttribute12|String| Décimo segundo atributo de extensão personalizável. |
-|extensionAttribute13|String| Décimo terceiro atributo de extensão personalizável. |
-|extensionAttribute14|String| Décimo quarto atributo de extensão personalizável. |
-|extensionAttribute15|String| Décimo quinto atributo de extensão personalizável. |
+|extensionAttribute13|Cadeia de caracteres| Décimo terceiro atributo de extensão personalizável. |
+|extensionAttribute14|Cadeia de caracteres| Décimo quarto atributo de extensão personalizável. |
+|extensionAttribute15|Cadeia de caracteres| Décimo quinto atributo de extensão personalizável. |
 
 ## <a name="json-representation"></a>Representação JSON
 

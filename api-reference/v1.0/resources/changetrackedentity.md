@@ -5,12 +5,12 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 6037e8ff07c79834dd8929ec93997c2a26282d28
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: 8f1326d316c686d6f9480b6117f189d3ef7ce70808eb28bd1c5aaf3bc66a1e71
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50719791"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54218811"
 ---
 # <a name="changetrackedentity-resource-type"></a>Tipo de recurso changeTrackedEntity
 

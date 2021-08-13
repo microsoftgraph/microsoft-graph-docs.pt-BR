@@ -1,30 +1,30 @@
 ---
-title: tipo de recurso historyItem
-description: Representa um item de histórico de uma atividade em um aplicativo. As atividades do usuário representam um único destino dentro de seu aplicativo, por exemplo, um programa de TV, um documento ou uma campanha atual em um jogo de vídeo. Quando um usuário participa dessa atividade, o contrato é capturado como um item de histórico que indica a hora de início e término da atividade. À medida que o usuário se reencaixa com essa atividade ao longo do tempo, vários itens de histórico são registrados para uma única atividade do usuário.
+title: Tipo de recurso historyItem
+description: Representa um item de histórico para uma atividade em um aplicativo. As atividades do usuário representam um único destino em seu aplicativo - por exemplo, um programa de TV, um documento ou uma campanha atual em um jogo de vídeo. Quando um usuário se envolve com essa atividade, o envolvimento é capturado como um item de histórico que indica a hora de início e término dessa atividade. À medida que o usuário se envolve com essa atividade ao longo do tempo, vários itens de histórico são gravados para uma única atividade do usuário.
 localization_priority: Normal
 ms.prod: project-rome
 author: ailae
 doc_type: resourcePageType
-ms.openlocfilehash: 78607834ec8604ea7d037381849c0932448dcb13
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 7e845158dce7b8b3d0ea74eff673e179cda19b78e74d5a20512ea2c786fa1796
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48037210"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54246623"
 ---
-# <a name="historyitem-resource-type"></a>tipo de recurso historyItem
+# <a name="historyitem-resource-type"></a>Tipo de recurso historyItem
 
 Namespace: microsoft.graph
 
-Representa um item de histórico de uma [atividade](projectrome-activity.md) em um aplicativo. As atividades do usuário representam um único destino dentro de seu aplicativo, por exemplo, um programa de TV, um documento ou uma campanha atual em um jogo de vídeo. Quando um usuário participa dessa atividade, o contrato é capturado como um item de histórico que indica a hora de início e término da atividade. À medida que o usuário se reencaixa com essa atividade ao longo do tempo, vários itens de histórico são registrados para uma única atividade do usuário.
+Representa um item de histórico para [uma atividade](projectrome-activity.md) em um aplicativo. As atividades do usuário representam um único destino em seu aplicativo - por exemplo, um programa de TV, um documento ou uma campanha atual em um jogo de vídeo. Quando um usuário se envolve com essa atividade, o envolvimento é capturado como um item de histórico que indica a hora de início e término dessa atividade. À medida que o usuário se envolve com essa atividade ao longo do tempo, vários itens de histórico são gravados para uma única atividade do usuário.
 
-Quando um aplicativo cria uma sessão, um objeto **historyItem** deve ser adicionado ao objeto **Activity** para refletir o período do contrato do usuário. Cada vez que um usuário reparticipa de uma atividade, um novo **historyItem** é adicionado à atividade para acumular o envolvimento do usuário.
+Quando um aplicativo cria uma sessão, um **objeto historyItem** deve ser adicionado ao objeto **de** atividade para refletir o período de envolvimento do usuário. Sempre que um usuário reaja a uma atividade, um **novo historyItem** é adicionado à atividade para acumular o envolvimento do usuário.
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 
 |Método | Tipo de retorno | Descrição|
 |:------|:------------|:-----------|
-|[Criar ou substituir historyItem](../api/projectrome-put-historyitem.md) | [historyItem](projectrome-historyitem.md) | Cria ou substitui um **historyItem** existente para aquela atividade (Upsert). A ID precisa ser um GUID.|
+|[Criar ou substituir historyItem](../api/projectrome-put-historyitem.md) | [historyItem](projectrome-historyitem.md) | Cria ou substitui um **historyItem** existente para essa atividade (upsert). A ID precisa ser um GUID.|
 |[Excluir um historyItem](../api/projectrome-delete-historyitem.md) | Sem Conteúdo | Exclui o **historyItem** especificado para essa atividade.|
 
 ## <a name="properties"></a>Propriedades
@@ -32,20 +32,20 @@ Quando um aplicativo cria uma sessão, um objeto **historyItem** deve ser adicio
 |Nome | Tipo | Descrição|
 |:----|:-----|:-----------|
 |status | status | Definido pelo servidor. Um código de status usado para identificar objetos válidos. Valores: ativo, atualizado, excluído, ignorado.|
-|usertimezone | String | Opcional. O fuso horário em que o dispositivo do usuário usado para gerar a atividade estava localizado no momento da criação da atividade. Valores fornecidos como IDs de Olson para oferecer suporte à representação de plataforma cruzada.|
+|userTimezone | String | Opcional. O timezone no qual o dispositivo do usuário usado para gerar a atividade estava localizado no momento da criação da atividade. Valores fornecidos como IDs Olson para dar suporte à representação entre plataformas.|
 |createdDateTime | DateTimeOffset | Definido pelo servidor. DateTime em UTC quando o objeto foi criado no servidor.|
 |lastModifiedDateTime | DateTimeOffset | Definido pelo servidor. DateTime em UTC quando o objeto foi modificado no servidor.|
-|id | String | Obrigatório. Client-set GUID para o objeto **historyItem** .|
-|startedDateTime | DateTimeOffset | Obrigatório. DateTime UTC quando o **historyItem** (sessão de atividade) foi iniciado. Obrigatório para histórico de linha do tempo.|
-|lastActiveDateTime | DateTimeOffset | Opcional. DateTime UTC quando o **historyItem** (sessão de atividade) foi compreendido pela última vez como ativo ou concluído-se nulo, o status do **HistoryItem** deve ser contínuo.|
-|expirationDateTime | DateTimeOffset | Opcional. DateTime UTC quando o **historyItem** passará pela exclusão permanente. Pode ser definido pelo cliente.|
-|activeDurationSeconds | int | Opcional. A duração do contrato de usuário ativo. Se não for fornecido, isso será calculado a partir do **startedDateTime** e do **lastActiveDateTime**.|
+|id | String | Obrigatório. GUID definido pelo cliente para o **objeto historyItem.**|
+|startedDateTime | DateTimeOffset | Obrigatório. UTC DateTime quando **o historyItem** (sessão de atividade) foi iniciado. Obrigatório para o histórico da linha do tempo.|
+|lastActiveDateTime | DateTimeOffset | Opcional. UTC DateTime quando **o historyItem** (sessão de atividade) foi entendido pela última vez como ativo ou concluído - se nulo, o status **historyItem** deve ser Contínuo.|
+|expirationDateTime | DateTimeOffset | Opcional. UTC DateTime quando **historyItem** passará por exclusão permanente. Pode ser definido pelo cliente.|
+|activeDurationSeconds | int | Opcional. A duração do envolvimento do usuário ativo. se não for fornecido, isso é calculado a partir do **startedDateTime** e **lastActiveDateTime**.|
 
 ## <a name="relationships"></a>Relações
 
 |Relação | Tipo | Descrição|
 |:------------|:-----|:-----------|
-|atividade| [userActivity](../resources/projectrome-activity.md) | Opcional. NavigationProperty/confinamento; Propriedade de navegação para a atividade associada.|
+|atividade| [userActivity](../resources/projectrome-activity.md) | Opcional. NavigationProperty/Containment; propriedade navigation para a atividade associada.|
 
 ## <a name="json-representation"></a>Representação JSON
 

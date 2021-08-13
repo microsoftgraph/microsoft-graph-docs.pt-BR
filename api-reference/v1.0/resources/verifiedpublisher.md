@@ -5,25 +5,25 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: applications
 author: jesakowi
-ms.openlocfilehash: 0c7d500a4fd032704f36953c8bf18efe6fa0f68d
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: f53559da47f61de645661c1acc8e0a94e4a6e6e6e9cf3c55e6faa8e2149452a3
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50129676"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54129901"
 ---
 # <a name="verifiedpublisher-resource-type"></a>Tipo de recurso verifiedPublisher
 
 Namespace: microsoft.graph
 
-Representa o editor verificado do [aplicativo](application.md). Para obter mais informações, consulte Verificação [do Publisher.](/azure/active-directory/develop/publisher-verification-overview) Os editores verificados são definidos usando [setVerifiedPublisher](../api/application-setverifiedpublisher.md) e só podem ser removidos usando [unsetVerifiedPublisher](../api/application-unsetverifiedpublisher.md).
+Representa o editor verificado do [aplicativo](application.md). Para obter mais informações, [consulte Publisher verificação](/azure/active-directory/develop/publisher-verification-overview). Os editores verificados são definidos usando [setVerifiedPublisher](../api/application-setverifiedpublisher.md) e só podem ser removidos usando [unsetVerifiedPublisher](../api/application-unsetverifiedpublisher.md).
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade | Tipo | Descrição |
 |:---------------|:--------|:----------|
-|displayName|String|O nome do editor verificado da conta do Partner Center do editor de aplicativos.|
-|verifiedPublisherId|String| A ID do editor verificado da conta do Partner Center do editor de aplicativos. |
+|displayName|Cadeia de caracteres|O nome do editor verificado da conta do Partner Center do editor de aplicativos.|
+|verifiedPublisherId|String| A ID do editor verificado na conta do Partner Center do editor de aplicativos. |
 |addedDateTime|DateTimeOffSet| O timestamp quando o editor verificado foi adicionado pela primeira vez ou atualizado mais recentemente. |
 
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: lujiangfeng666
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: d143faa87af81fbaae73973510bafe3fd3ee4fcb
-ms.sourcegitcommit: 2a35434fabc76672e21bfc3ed5a1d28f9f3b66bc
+ms.openlocfilehash: 1d35f0befc6e61aafb515e19cbc777029f627989078b003d12728e034d668896
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52241041"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54189153"
 ---
 # <a name="tokenlifetimepolicy-resource-type"></a>Tipo de recurso tokenLifetimePolicy
 
@@ -31,17 +31,17 @@ Herda de [stsPolicy](stsPolicy.md).
 | [Listar tokenLifetimePolicies](../api/tokenlifetimepolicy-list.md) | [tokenLifetimePolicy](tokenlifetimepolicy.md) | Leia propriedades e relações de objetos tokenLifetimePolicies. |
 | [Criar tokenLifetimePolicy](../api/tokenlifetimepolicy-post-tokenlifetimepolicies.md) | [tokenLifetimePolicy](tokenlifetimepolicy.md) | Crie um objeto tokenLifetimePolicy. |
 | [Obter tokenLifetimePolicy](../api/tokenlifetimepolicy-get.md) | [tokenLifetimePolicy](tokenlifetimepolicy.md) | Ler propriedades e relações de um objeto tokenLifetimePolicy. |
-| [Atualizar tokenLifetimePolicy](../api/tokenlifetimepolicy-update.md) | Nenhum | Atualize um objeto tokenLifetimePolicy. |
-| [Excluir tokenLifetimePolicy](../api/tokenlifetimepolicy-delete.md) | Nenhum | Exclua um objeto tokenLifetimePolicy. |
+| [Atualizar tokenLifetimePolicy](../api/tokenlifetimepolicy-update.md) | None | Atualize um objeto tokenLifetimePolicy. |
+| [Excluir tokenLifetimePolicy](../api/tokenlifetimepolicy-delete.md) | None | Exclua um objeto tokenLifetimePolicy. |
 | [Lista appliesTo](../api/tokenlifetimepolicy-list-appliesto.md) | Coleção [directoryObject](directoryobject.md) | Obter a lista de directoryObjects aos qual essa política foi aplicada. |
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|id|Cadeia de caracteres| Identificador exclusivo dessa política. Somente leitura.|
-|definition|Coleção de cadeias de caracteres| Uma coleção de cadeias de caracteres que contém uma cadeia de caracteres JSON que define as regras e as configurações dessa política. Consulte abaixo para obter mais detalhes sobre o esquema JSON para esta propriedade. Obrigatório.|
-|description|Cadeia de caracteres| Descrição dessa política.|
+|id|Cadeia de caracteres| Identificador exclusivo dessa política. Apenas leitura.|
+|definition|String collection| Uma coleção de cadeias de caracteres que contém uma cadeia de caracteres JSON que define as regras e as configurações dessa política. Consulte abaixo para obter mais detalhes sobre o esquema JSON para esta propriedade. Obrigatório.|
+|description|String| Descrição dessa política.|
 |displayName|Cadeia de caracteres| Nome de exibição para esta política. Obrigatório.|
 |isOrganizationDefault|Booliano|Se definido como `true` , ativa essa política. Pode haver muitas políticas para o mesmo tipo de política, mas apenas uma pode ser ativada como o padrão da organização. Opcional, o valor padrão é `false` .|
 

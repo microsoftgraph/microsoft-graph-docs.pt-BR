@@ -5,12 +5,12 @@ localization_priority: Priority
 author: dkershaw10
 ms.prod: identity-and-access
 doc_type: conceptualPageType
-ms.openlocfilehash: 46ec3aa87714b48570f529764e64e848189e75d8
-ms.sourcegitcommit: d0d2d17a31cbcb01b1ae18bd6a18c39d7077069a
+ms.openlocfilehash: 6d0b1f94af4da6e94f803a5204583a8097acb1478b246fe312167b6d28488663
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53118425"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54126701"
 ---
 # <a name="working-with-azure-active-directory-resources-in-microsoft-graph"></a>Trabalhar com os recursos do Azure Active Directory no Microsoft Graph
 

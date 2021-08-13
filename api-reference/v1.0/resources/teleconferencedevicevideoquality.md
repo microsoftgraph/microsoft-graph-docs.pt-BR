@@ -1,18 +1,18 @@
 ---
-title: tipo de recurso teleconferenceDeviceVideoQuality
+title: Tipo de recurso teleconferenceDeviceVideoQuality
 description: Representa dados de qualidade de vídeo do dispositivo de teleconferência de vídeo.
 localization_priority: Normal
 author: dongkyun
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 8f892fe059828cd7fd71ec19914b5b5db0b9e3cf
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 30c9c8f383a5d4b41b5c2355a5b2da910d560282aa4e450fa462313d4cb65b34
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48086225"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54231422"
 ---
-# <a name="teleconferencedevicevideoquality-resource-type"></a>tipo de recurso teleconferenceDeviceVideoQuality
+# <a name="teleconferencedevicevideoquality-resource-type"></a>Tipo de recurso teleconferenceDeviceVideoQuality
 
 Namespace: microsoft.graph
 
@@ -20,7 +20,7 @@ Representa dados de qualidade de vídeo do dispositivo de teleconferência de v�
 
 ## <a name="properties"></a>Propriedades
 
-O recurso **teleconferenceDeviceVideoQuality** herda as propriedades de [teleconferenceDeviceMediaQuality](teleconferencedevicemediaquality.md)e inclui as seguintes propriedades adicionais.
+O **recurso teleconferenceDeviceVideoQuality** herda as propriedades de [teleconferenceDeviceMediaQuality](teleconferencedevicemediaquality.md)e inclui as seguintes propriedades adicionais.
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|

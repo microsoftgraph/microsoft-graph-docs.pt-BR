@@ -6,12 +6,12 @@ localization_priority: Normal
 ms.prod: sharepoint
 description: O recurso siteCollection fornece mais informações sobre um conjunto de sites.
 doc_type: resourcePageType
-ms.openlocfilehash: 1e80ad630fd1ac823ce76c44c3b789b0986d031f
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: 196958674462095b8b47f82d07ac4fa7a885243b240473444c30b24014578c18
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50239433"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54251740"
 ---
 # <a name="sitecollection-resource"></a>Recurso SiteCollection
 
@@ -45,8 +45,8 @@ Veja a seguir uma representação JSON do recurso.
 | Nome da propriedade        | Tipo     | Descrição
 |:---------------------|:---------|:---------------------------------------------------
 | **hostname**         | string   | O nome do host do conjunto de sites. Somente leitura.
-| **dataLocationCode** | string   | O código de região geográfica para onde reside esse conjunto de sites. Somente leitura.
-| **root**             | [root][] | Se presente, indica que este é um conjunto de sites raiz no SharePoint. Somente leitura.
+| **dataLocationCode** | string   | O código de região geográfica para onde esse conjunto de sites reside. Somente leitura.
+| **root**             | [root][] | Se presente, indica que esse é um conjunto de sites raiz no SharePoint. Somente leitura.
 
 [root]: root.md
 
@@ -57,6 +57,6 @@ Veja a seguir uma representação JSON do recurso.
   "description": "",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "Facets/SiteCollection"
+  "tocPath&quot;: &quot;Facets/SiteCollection"
 }-->
 

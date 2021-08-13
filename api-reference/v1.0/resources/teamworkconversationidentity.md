@@ -5,12 +5,12 @@ author: RamjotSingh
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 1bf17f9954459a1e476106315db60f65dc536b02
-ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
+ms.openlocfilehash: fe6315b6546d603c203fad878c291f61e1f8394fc56acba4cfdf788ee86a2856
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53211065"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54249108"
 ---
 # <a name="teamworkconversationidentity-resource-type"></a>Tipo de recurso teamworkConversationIdentity
 
@@ -24,8 +24,8 @@ Herda da [identidade](../resources/identity.md).
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |conversationIdentityType|teamworkConversationIdentityType|Tipo de conversa. Os valores possíveis são: `team`, `channel`, `chat`, e `unknownFutureValue`.|
-|displayName|String|Herdado da [identidade](../resources/identity.md). Nome de exibição da conversa. Opcional.|
-|id|String|Herdado da [identidade](../resources/identity.md). ID da conversa.|
+|displayName|Cadeia de caracteres|Herdado da [identidade](../resources/identity.md). Nome de exibição da conversa. Opcional.|
+|id|Cadeia de caracteres|Herdado da [identidade](../resources/identity.md). ID da conversa.|
 
 ## <a name="relationships"></a>Relações
 Nenhum

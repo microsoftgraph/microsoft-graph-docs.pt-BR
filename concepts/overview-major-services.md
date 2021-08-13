@@ -4,12 +4,12 @@ description: 'O Microsoft Graph permite a integração com os melhores serviços
 author: angelgolfer-ms
 localization_priority: Priority
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: fed271e2b94d787a9f0822ea7630d9b53c67185b
-ms.sourcegitcommit: 486fe9c77d4d89c5416bb83e8c716e6918c47370
+ms.openlocfilehash: d4f80c6cf33a6b53bbbf08c7c81e7efcbcff4c9587aadf0e919a960819307880
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53443134"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54169086"
 ---
 # <a name="major-services-and-features-in-microsoft-graph"></a>Principais serviços e recursos do Microsoft Graph
 
@@ -81,7 +81,7 @@ Alguns serviços do Microsoft Graph iniciam-se no próprio Microsoft Graph, outr
 | Análise (visualização) | MyAnalytics | Usa análises e técnicas avançadas de aprendizado de máquina para fornecer informações sobre como e com quem as pessoas passam o tempo. Esses dados podem ajudar as pessoas a planejar o dia, obter informações sobre seus diferentes padrões de trabalho e ajudar a equilibrar o trabalho e a vida.  | [Inteligência de pessoas e no local de trabalho no Microsoft Graph](social-intel-concept-overview.md) |
 
 
-## <a name="device-management"></a>Gerenciamento de dispositivo
+## <a name="device-and-app-management"></a>Gerenciamento de aplicativo e dispositivo
 
 |Recurso     |Serviços de suporte  |Descrição |Mais informações |
 |:-----------|:--------------------|:-----------|:----------------|
@@ -89,6 +89,7 @@ Alguns serviços do Microsoft Graph iniciam-se no próprio Microsoft Graph, outr
 |Gerenciamento corporativo de dispositivos e aplicativos | Intune | Registra e configura dispositivos e gerencia aplicativos móveis em sua organização. | [Visão geral de dispositivos e aplicativos do Intune](intune-concept-overview.md) |
 | Atualizações do dispositivo (visualização) | Serviço de implantação do Windows Update para Empresas | Fornece controle sobre a aprovação, agendamento, monitoramento e proteção do conteúdo fornecido pelo Windows Update. | [Atualizações do Windows no Microsoft Graph](windowsupdates-concept-overview.md) |
 | Gerenciamento multilocatário (visualização) | Microsoft 365 Lighthouse | Permite que os Provedores de Serviços Gerenciados (MSPs) gerenciem remotamente vários locatários do cliente para conformidade e detecção de ameaças, e ajudam a manter os dispositivos dos locatários em um estado íntegro e seguro. | [Gerenciamento multilocatário usando o Microsoft 365 Lighthouse](managedtenants-concept-overview.md) |
+| Comunicações e Integridade do serviço | Serviços do Microsoft 365 e Dynamics 365 | Fornece acesso ao status de integridade e postagens do centro de mensagens sobre os serviços em nuvem da Microsoft. Um exemplo importante que usa a API de comunicações de serviço é o Centro de administração do Microsoft 365. | [Acessando as comunicações e a Integridade do serviço no Microsoft Graph](service-communications-concept-overview.md) |
 
 
 ## <a name="security"></a>Segurança

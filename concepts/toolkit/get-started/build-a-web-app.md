@@ -3,12 +3,12 @@ title: Criar um aplicativo Web com o microsoft Graph Toolkit
 description: Começar a criar um aplicativo Web usando o microsoft Graph Toolkit.
 localization_priority: Normal
 author: elisenyang
-ms.openlocfilehash: a4716b97eb3bbb9e64160d1bda3e44f32705403f
-ms.sourcegitcommit: 9ac6bbab3df22e7629cf2bde796b527337c680aa
+ms.openlocfilehash: 9890a042ce08533ce17c014a0815f1f63dbfdd46739f4f4af284bf87706124d4
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53082143"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54236854"
 ---
 # <a name="build-a-web-application-with-the-microsoft-graph-toolkit"></a>Criar um aplicativo Web com o microsoft Graph Toolkit
 
@@ -20,7 +20,7 @@ Começar com o microsoft Graph Toolkit envolve as seguintes etapas:
 3. Adicione os componentes.
 4. Teste seu aplicativo.
 
-## <a name="add-the-microsoft-graph-toolkit-to-your-project"></a>Adicionar o microsoft Graph Toolkit ao seu projeto
+## <a name="add-the-microsoft-graph-toolkit-to-your-project"></a>Adicionar o Microsoft Graph Toolkit ao seu projeto
 Você pode usar o microsoft Graph Toolkit em seu aplicativo fazendo referência ao carregador diretamente (via unpkg) ou instalando o pacote npm.
 
 # <a name="unpkg"></a>[unpkg](#tab/html)

@@ -5,12 +5,12 @@ author: RamjotSingh
 doc_type: resourcePageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 58b0a80a7e9a8864b13e36e2cef8355c46fd340d
-ms.sourcegitcommit: 16ee16e7fddd662ca42dc5c9352cfb109e31ed1a
+ms.openlocfilehash: 4373475c4219c05b1bdf7ea741c0ed6526253d234da916e0760a3ed46fee3312
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/03/2021
-ms.locfileid: "51582741"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54169659"
 ---
 # <a name="chatmessagepolicytip-resource-type"></a>Tipo de recurso chatMessagePolicyTip
 

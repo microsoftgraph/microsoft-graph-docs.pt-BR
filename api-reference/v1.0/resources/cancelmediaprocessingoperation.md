@@ -1,28 +1,28 @@
 ---
 title: tipo de recurso cancelMediaProcessingOperation
-description: Esse tipo de recurso é usado para descrever o formato de resposta da operação de processamento de mídia de cancelamento.
+description: Esse tipo de recurso é usado para descrever o formato de resposta da operação de processamento de mídia cancelada.
 author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 8edbc7dcc770429fd4c1ccaf7bc3374d973cd2ed
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 6896a7a4d08aea0c4d394bfbaef8a54bd4c789b310f0079dbbf08daac99606d6
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48069215"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54235685"
 ---
 # <a name="cancelmediaprocessingoperation-resource-type"></a>Tipo de recurso CancelMediaProcessingOperation
 
 Namespace: microsoft.graph
 
-Descreve o formato de resposta da operação de processamento de mídia de cancelamento.
+Descreve o formato de resposta da operação de processamento de mídia cancelada.
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade      | Tipo                        | Descrição                                                                     |
 | :------------ | :-------------------------- | :------------------------------------------------------------------------------ |
-| todos os           | Booliano                     | Indica se todas as operações ou atuais serão interrompidas.                            |
+| all           | Booliano                     | Indica se todas as operações ou atuais são paradas.                            |
 | clientContext | Cadeia de caracteres                      | O contexto do cliente.                                                             |
 | id            | Cadeia de caracteres                      | A ID da operação do servidor. Somente leitura.                                             |
 | resultInfo    | [resultInfo](resultinfo.md) | As informações de resultado.  Somente leitura.                                             |

@@ -4,12 +4,12 @@ description: " Blocos de anotações empresariais no Microsoft 365"
 author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
-ms.openlocfilehash: 8786bcf8a0aa3aafaca8406f11e6243b8dd7b49c
-ms.sourcegitcommit: 32c83957ee69f21a10cd5f759adb884ce4b41c52
+ms.openlocfilehash: 089f0034c5b3cf6ef3a5ab7984c83cb3b7ea00d34b51e7ff14b17af3343e0197
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51920100"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54123916"
 ---
 # <a name="update-onenote-page-content"></a>Atualizar o conteúdo da página do OneNote
 
@@ -59,7 +59,7 @@ Suas alterações serão enviadas no corpo da mensagem como uma matriz de objeto
 A matriz a seguir define duas alterações. A primeira insere uma imagem acima de um parágrafo como um irmão, e a segunda acrescenta um item em uma lista como um último filho.
 
 > [!NOTE]
-> Ao atualizar uma imagem em uma página do OneNote, não é possível usar links de www. O serviço não tentará baixar recursos aleatórios. Em vez disso, a imagem deve fazer parte da solicitação, seja por uma imagem-data-url ou um nome de parte de uma solicitação de várias partes.
+> Ao atualizar uma imagem em uma página OneNote, não é possível usar links de www. O serviço não tentará baixar recursos aleatórios. Em vez disso, a imagem deve fazer parte da solicitação, seja por uma imagem-data-url ou um nome de parte de uma solicitação de várias partes.
 
 ```json
 [

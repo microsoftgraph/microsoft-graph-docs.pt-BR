@@ -1,6 +1,6 @@
 <!-- markdownlint-disable MD002 MD041 -->
 
-Nesta seção, criaremos seu primeiro aplicativo de projeto ASP.NET para processar os dados Graph dados Conexão Microsoft que foram exportados.
+Nesta seção, criaremos seu primeiro aplicativo de projeto ASP.NET para processar os dados Conexão de Dados do Microsoft Graph que foram exportados.
 
 ## <a name="create-a-new-aspnet-project"></a>Criar um novo ASP.NET projeto
 

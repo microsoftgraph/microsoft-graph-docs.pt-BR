@@ -4,12 +4,12 @@ description: Descreve como usar a Conexão de Dados do Microsoft Graph ara selec
 author: fercobo-msft
 localization_priority: Priority
 ms.prod: data-connect
-ms.openlocfilehash: c29c088ac4efc7d286e8d10b92edd5bcbac373a6
-ms.sourcegitcommit: 276a13a37c3772689dfc71f7cd47586c9581f27d
+ms.openlocfilehash: c6975eb7a3cac5a6690ac6071b8c686de3a2c4861d7fc82ed4b4bcbbfc3796fe
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52629375"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54249073"
 ---
 # <a name="user-selection-and-filtering-capabilities-in-microsoft-graph-data-connect"></a>Recursos de seleção e filtragem de usuários na Conexão de Dados do Microsoft Graph
 

@@ -1,28 +1,28 @@
 ---
-title: Componentes de reagir do Microsoft Graph Toolkit
-description: O Microsoft Graph Toolkit reajam Components ( `mgt-react` ) permite que os desenvolvedores de reagir usem o Microsoft Graph Toolkit em seus aplicativos de reagem.
+title: Componentes Graph Toolkit React Microsoft
+description: Os componentes Graph Toolkit React microsoft ( ) permitem que React `mgt-react` desenvolvedores usem o microsoft Graph Toolkit em seus React aplicativos.
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: 6781a894e451e2c4751f151beddcacf4e0cdb608
-ms.sourcegitcommit: f9f95402b8a15152ede90dd736b03d532204fc2e
+ms.openlocfilehash: 89225af263c4c8f1cb29b7f6bb02dff6b6badbe379af510f90bed821935be047
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49658226"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54225675"
 ---
-# <a name="microsoft-graph-toolkit-react-components"></a>Componentes de reagir do Microsoft Graph Toolkit
+# <a name="microsoft-graph-toolkit-react-components"></a>Componentes Graph Toolkit React Microsoft
 
-O Microsoft Graph Toolkit reajam Components ( `mgt-react` ) permite que os desenvolvedores de reagir usem o Microsoft Graph Toolkit em seus aplicativos de reagem. A biblioteca envolve todos os componentes do Microsoft Graph Toolkit e os exporta como componentes de reagir.
+Os componentes Graph Toolkit React microsoft ( ) permitem que React `mgt-react` desenvolvedores usem o microsoft Graph Toolkit em seus React aplicativos. A biblioteca quebra todos os componentes do Microsoft Graph Toolkit e os exporta como React componentes.
 
-## <a name="what-components-can-i-use"></a>Quais componentes eu posso usar?
+## <a name="what-components-can-i-use"></a>Quais componentes posso usar?
 
-A biblioteca é gerada automaticamente a partir do Microsoft Graph Toolkit Web Components e todos os componentes estão disponíveis como componentes de reagir.
+A biblioteca é automaticamentegenerada a partir dos componentes da Web do Microsoft Graph Toolkit e todos os componentes estão disponíveis como React componentes.
 
-Os nomes dos componentes de reagir estão no PascalCase e não incluem o `Mgt` prefixo. Por exemplo, o `mgt-person` componente está disponível como `Person` , e o `mgt-people-picker` componente está disponível como `PeoplePicker` .
+Os nomes dos componentes React estão em PascalCase e não incluem o `Mgt` prefixo. Por exemplo, o `mgt-person` componente está disponível como , e o componente está disponível como `Person` `mgt-people-picker` `PeoplePicker` .
 
 ## <a name="installation"></a>Instalação 
 
-Para instalar o, use um dos seguintes comandos.
+Para instalar, use um dos seguintes comandos.
 
 ```bash
 npm install @microsoft/mgt-react
@@ -36,21 +36,21 @@ yarn add @microsoft/mgt-react
 
 ## <a name="usage"></a>Uso
 
-Todos os componentes estão disponíveis por meio do pacote NPM e são nomeados usando o PascalCase. Para usar um componente, primeiro importe-o na parte superior.
+Todos os componentes estão disponíveis por meio do pacote npm e são nomeados usando PascalCase. Para usar um componente, primeiro importe-o na parte superior.
 
 ```tsx
 import { Person } from '@microsoft/mgt-react';
 ```
 
-Agora você pode usar `Person` qualquer lugar no seu JSX como um componente de reagir normal.
+Agora você pode usar `Person` em qualquer lugar do JSX como um componente React regular.
 
 ```tsx
 <Person personQuery="me" />
 ```
 
-Todos os eventos e propriedades mapeiam exatamente como estão definidos na documentação do componente.
+Todas as propriedades e eventos mapeiam exatamente como são definidos na documentação do componente.
 
-Por exemplo, você pode definir a `personDetails` propriedade para um objeto:
+Por exemplo, você pode definir a `personDetails` propriedade como um objeto:
 
 ```jsx
 const App = (props) => {
@@ -62,7 +62,7 @@ const App = (props) => {
 };
 ```
 
-Ou registre um manipulador de eventos:
+Ou, registre um manipulador de eventos:
 
 ```jsx
 import { PeoplePicker, People } from '@microsoft/mgt-react';
@@ -84,9 +84,9 @@ const App = (props) => {
 
 ## <a name="templates"></a>Modelos
 
-A maioria dos componentes do kit de ferramentas do Microsoft Graph [oferece suporte](../customize-components/templates.md) a `mgt-react` modelos e permite que você use o reagir à gravação de modelos.
+A maioria dos Graph Toolkit microsoft [suporta a tentação](../customize-components/templates.md) e permite que você use React `mgt-react` para gravar modelos.
 
-Por exemplo, para criar um modelo a ser usado para renderizar eventos no `mgt-agenda` componente, primeiro defina um componente a ser usado para renderizar um evento:
+Por exemplo, para criar um modelo a ser usado para renderizar eventos no componente, primeiro defina um componente a ser usado para `mgt-agenda` renderizar um evento:
 
 ```tsx
 import { MgtTemplateProps } from '@microsoft/mgt-react';
@@ -97,7 +97,7 @@ const MyEvent = (props: MgtTemplateProps) => {
 };
 ```
 
-Em seguida, use-o como um filho do componente disposto e defina o modelo prop para `event` .
+Em seguida, use-o como um filho do componente empacotado e de definir o modelo prop como `event` .
 
 ```tsx
 import { Agenda } from '@microsoft/mgt-react';
@@ -109,9 +109,9 @@ const App = (props) => {
 }
 ```
 
-A `template` prop permite que você especifique qual modelo substituir. Nesse caso, o `MyEvent` componente será repetido para cada evento e o `event` objeto será passado como parte da `dataContext` prop.
+O `template` prop permite especificar qual modelo substituir. Nesse caso, o componente será repetido para cada evento e o `MyEvent` objeto será passado como parte do `event` `dataContext` prop.
 
-## <a name="see-also"></a>Também consulte
+## <a name="see-also"></a>Confira também
 
-* [Introdução ao Microsoft Graph Toolkit em reagir](./use-toolkit-with-react.md)
+* [Começar a trabalhar com o microsoft Graph Toolkit no React](./use-toolkit-with-react.md)
 * [Saiba mais sobre provedores de autenticação](../providers/providers.md)

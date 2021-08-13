@@ -1,22 +1,22 @@
 ---
 title: Tipo de recurso aadUserNotificationRecipient
-description: Representa um destinatário de usuário do Azure Active Directory (Azure AD) de uma notificação enviada em um feed de atividades do Microsoft Teams.
+description: Representa um Azure Active Directory (Azure AD) destinatário de uma notificação enviada em um feed Microsoft Teams atividade.
 author: eddie-lee-msft
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: dadb08dad99f6c4fd6857e8e60f457ea51811de1
-ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
+ms.openlocfilehash: bb5d95c36fb362af6d4f66c1e18a4dcb768c1b204a4e2f70f24f5afe80545483
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51474115"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54230848"
 ---
 # <a name="aadusernotificationrecipient-resource-type"></a>Tipo de recurso aadUserNotificationRecipient
 
 Namespace: microsoft.graph
 
-Representa um destinatário de usuário do Azure Active Directory (Azure AD) de uma notificação enviada em um feed de atividades do Microsoft Teams.
+Representa um Azure Active Directory (Azure AD) destinatário de uma notificação enviada em um feed Microsoft Teams atividade.
 
 Herda de [teamworkNotificationRecipient](teamworknotificationrecipient.md).
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: akjo
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: c82f7e1ec927c73ad41771fc00e013dda1755a80
-ms.sourcegitcommit: 456ec9510807d05623c0ed1dd049c9676f53f56b
+ms.openlocfilehash: 73d7e7526c870887edbade4555b3a699e458183f3b3753176574448525997105
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53060304"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54155166"
 ---
 # <a name="conversationmember-resource-type"></a>tipo de recurso conversationMember
 
@@ -42,7 +42,7 @@ Consulte também [aadUserConversationMember](aaduserconversationmember.md).
 
 | Propriedade   | Tipo |Descrição|
 |:---------------|:--------|:----------|
-|id|String| Somente leitura. ID exclusivo do usuário.|
+|id|String| Somente leitura. ID exclusiva do usuário.|
 |displayName| cadeia de caracteres | O nome de exibição do usuário. |
 |funções| coleção de cadeias de caracteres | As funções desse usuário. |
 |visibleHistoryStartDateTime| DateTimeOffset | O carimbo de data/hora indicando quanto o histórico de uma conversa é compartilhado com o membro da conversa. Essa propriedade é configurável somente para os membros de um bate-papo. |

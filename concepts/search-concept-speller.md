@@ -1,19 +1,19 @@
 ---
-title: Usar a API de Pesquisa da Microsoft no Microsoft Graph para solicitar correções ortográficas
-description: Você pode usar a API de Pesquisa da Microsoft para obter a sugestão ortográfica ou a modificação ortográfica para a consulta de pesquisa.
+title: Use a API Pesquisa da Microsoft no Microsoft Graph para solicitar correções ortográficas
+description: Você pode usar a API Pesquisa da Microsoft para obter a sugestão ortográfica ou a modificação ortográfica para a consulta de pesquisa.
 author: nmoreau
 localization_priority: Normal
 ms.prod: search
-ms.openlocfilehash: 9d7f935f2de7e0777679266fc479b302fcfaf2a9
-ms.sourcegitcommit: 1b09298649d5606b471b4cbe1055419bbe2fc7e5
+ms.openlocfilehash: 0ba5d3fa36deec56cc1cd2e0aef77c27a921f6a52d81257cf5b39ef524a394df
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "52067660"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54233648"
 ---
-# <a name="use-the-microsoft-search-api-in-microsoft-graph-to-request-spelling-correction-preview"></a>Use a API de Pesquisa da Microsoft no Microsoft Graph para solicitar correção ortográfica (visualização)
+# <a name="use-the-microsoft-search-api-in-microsoft-graph-to-request-spelling-correction-preview"></a>Use a API Pesquisa da Microsoft no Microsoft Graph para solicitar correção ortográfica (visualização)
 
-Você pode usar a API de Pesquisa da Microsoft para solicitar correções ortográficas para lidar com incompatibilidades entre erros de digitação em consultas do usuário e palavras corretas em conteúdos matched. Para solicitar correções ortográficas, especifique as seguintes propriedades na **propriedade queryAlterationOptions** do corpo da solicitação do [método de](/graph/api/search-query?view=graph-rest-beta&preserve-view=true) consulta:
+Você pode usar a API Pesquisa da Microsoft para solicitar correções ortográficas para lidar com incompatibilidades entre erros de digitação em consultas do usuário e palavras corretas em conteúdos matched. Para solicitar correções ortográficas, especifique as seguintes propriedades na **propriedade queryAlterationOptions** do corpo da solicitação do [método de](/graph/api/search-query?view=graph-rest-beta&preserve-view=true) consulta:
 
 - **enableSuggestion** to enable/disable spelling suggestions for the user query. Você pode passar `true` para obter as informações de correção ortográfica sugeridas para erros de digitação na consulta do usuário.
 

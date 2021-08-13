@@ -6,12 +6,12 @@ title: Tipo de recurso de hashes
 description: O recurso hash agrupa hashes disponíveis em uma estrutura simples para um item.
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 9b45d872966bc8eba3ef3d622b5b0e37c83122b6
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: bd04ff57aff3d276655a173d123f228520a77b7d548afb9f8d75d30fd6ba4e6f
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50240000"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54243550"
 ---
 # <a name="hashes-resource-type"></a>Tipo de recurso de hashes
 
@@ -53,7 +53,7 @@ Veja a seguir uma representação JSON do recurso.
 
 ## <a name="remarks"></a>Comentários
 
-No OneDrive for Business e no SharePoint Server 2016, **sha1Hash** e **crc32Hash** e **sha256Hash** não estão disponíveis.
+No OneDrive for Business e SharePoint Server 2016, **sha1Hash** e **crc32Hash**, **e sha256Hash** não estão disponíveis.
 
 No OneDrive Personal, o **quickXorHash** não está disponível.
 

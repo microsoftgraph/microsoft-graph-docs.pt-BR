@@ -1,18 +1,18 @@
 ---
-title: tipo de recurso incomingContext
+title: Tipo de recurso incomingContext
 description: Representa o contexto associado a uma chamada de entrada.
 author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 02bc6117ccf8a7ab0ce0bd1905883afdf61fc542
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 8f7409048acb19e36446b257ed32acceff76d5783f3cf4050620de3da5e11314
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48054907"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54231786"
 ---
-# <a name="incomingcontext-resource-type"></a>tipo de recurso incomingContext
+# <a name="incomingcontext-resource-type"></a>Tipo de recurso incomingContext
 
 Namespace: microsoft.graph
 
@@ -23,9 +23,9 @@ Representa o contexto associado a uma chamada de entrada.
 | Propriedade              | Tipo                          | Descrição                                                             |
 |:----------------------|:------------------------------|:------------------------------------------------------------------------|
 | sourceParticipantId   | String                        | A ID do participante que disparou a chamada de entrada. Somente leitura.  |
-| observedParticipantId | String                        | A ID do participante que está sob observação. Somente leitura.         |
-| onBehalfOf            | [identitySet](identityset.md) | A identidade em que a chamada está acontecendo em nome de.                   |
-| transferidar            | [identitySet](identityset.md) | A identidade que transferiu a chamada.                                 |
+| observedParticipantId | Cadeia de caracteres                        | A ID do participante que está em observação. Somente leitura.         |
+| onBehalfOf            | [identitySet](identityset.md) | A identidade de que a chamada está acontecendo em nome.                   |
+| transferor            | [identitySet](identityset.md) | A identidade que transferiu a chamada.                                 |
 
 ## <a name="json-representation"></a>Representação JSON
 

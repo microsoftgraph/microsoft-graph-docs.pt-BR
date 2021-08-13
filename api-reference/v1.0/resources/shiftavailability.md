@@ -1,30 +1,30 @@
 ---
-title: tipo de recurso shiftAvailability
-description: Disponibilidade do usuário a ser agendada para trabalho e seu padrão de recorrência.
+title: Tipo de recurso shiftAvailability
+description: Disponibilidade do usuário a ser agendado para o trabalho e seu padrão de recorrência.
 localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 653d2be96fb0585c39fc7991c3972207fd7dcf9a
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: d1c75c5496df6e8d858be74b8001c57fe16de0b3d44a98d4229e1ad09ab77f8c
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48074864"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54174875"
 ---
-# <a name="shiftavailability-resource-type"></a>tipo de recurso shiftAvailability
+# <a name="shiftavailability-resource-type"></a>Tipo de recurso shiftAvailability
 
 Namespace: microsoft.graph
 
-Disponibilidade do usuário a ser agendada para um [turno](shift.md) e seu padrão de recorrência.
+Disponibilidade do usuário a ser agendado para um [turno](shift.md) e seu padrão de recorrência.
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|recurrence|[patternedRecurrence](patternedrecurrence.md)| Especifica o padrão de recorrência |
-|Intervalos|coleção [timerange](timerange.md)|O (s) intervalo (s) de tempo preferido pelo usuário.|
-|timeZone|Cadeia de caracteres|Especifica o fuso horário do horário indicado. |
+|recurrence|[patternedRecurrence](patternedrecurrence.md)| Especifica o padrão para recorrência |
+|timeSlots|[Coleção timeRange](timerange.md)|Os intervalos de tempo preferidos pelo usuário.|
+|timeZone|Cadeia de caracteres|Especifica o fuso horário para a hora indicada. |
 
 ## <a name="json-representation"></a>Representação JSON
 

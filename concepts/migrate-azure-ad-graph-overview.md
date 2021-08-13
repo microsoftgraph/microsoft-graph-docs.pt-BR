@@ -4,12 +4,12 @@ description: Descreve como migrar aplicativos de API Azure Active Directory (Azu
 author: dkershaw10
 localization_priority: Normal
 ms.prod: applications
-ms.openlocfilehash: 46880f0bd12fa894555e315976213866a01428e9
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: 2eba88d5995d44098473ad138d65df8650cbddb350ad401f731238b8c381be2b
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52682086"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54163513"
 ---
 # <a name="migrate-azure-ad-graph-apps-to-microsoft-graph"></a>Migrar aplicativos do Azure AD Graph microsoft Graph
 
@@ -64,7 +64,7 @@ Embora não temos ferramentas para anunciar no momento, estamos sempre trabalhan
 Consulte a seção Próximas Etapas deste artigo. Se depois de ler você tiver perguntas adicionais, poderá postar em Stack Overflow com a marca ou abrir um problema no repositório de GitHub `[aadgraph-deprecation]` [da API.](https://github.com/microsoftgraph)
 
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>Próximos passos
 
 - Ande pela lista de verificação [de migração de aplicativos](migrate-azure-ad-graph-planning-checklist.md) para ajudá-lo a planejar a movimentação.
 - Explore os Graph e práticas da [Microsoft.](/graph/overview)

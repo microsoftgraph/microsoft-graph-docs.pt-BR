@@ -1,32 +1,32 @@
 ---
-title: tipo de recurso searchHit
+title: Tipo de recurso searchHit
 description: Descrição da entidade searchHit
 localization_priority: Normal
 author: nmoreau
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: bad671657e46068263d3386eb0bb04026cfaa28e
-ms.sourcegitcommit: 5345c2f3265ede107fa0faaff7a3f1c2afee3810
+ms.openlocfilehash: 3cc9d069e91dd8c8d51ba6b010c2c3ccc9dad01ac01695d6782e99bffea973e3
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "49377954"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54138326"
 ---
-# <a name="searchhit-resource-type"></a>tipo de recurso searchHit
+# <a name="searchhit-resource-type"></a>Tipo de recurso searchHit
 
 Namespace: microsoft.graph
 
-Representa um único resultado dentro da lista de resultados de pesquisa.
+Representa um único resultado na lista de resultados da pesquisa.
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|hitId|Cadeia de Caracteres|O identificador interno do item.|
+|hitId|Cadeia de caracteres|O identificador interno do item.|
 |classificação|Int32|A classificação ou a ordem do resultado.|
-|contentSource|Cadeia de Caracteres|O nome da fonte de conteúdo da qual o **externalItem** faz parte.|
-|summary|Cadeia de Caracteres|Um resumo do resultado, se um resumo estiver disponível.|
-|recurso|[entity](entity.md)|A representação subjacente do Microsoft Graph do resultado da pesquisa.|
+|contentSource|String|O nome da fonte de conteúdo da **qual o externalItem** faz parte .|
+|summary|Cadeia de caracteres|Um resumo do resultado, se um resumo estiver disponível.|
+|recurso|[entity](entity.md)|A representação básica da Microsoft Graph do resultado da pesquisa.|
 
 ## <a name="json-representation"></a>Representação JSON
 

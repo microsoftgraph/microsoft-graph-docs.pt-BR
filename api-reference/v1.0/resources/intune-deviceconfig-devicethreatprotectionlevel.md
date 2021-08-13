@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 21147e2be838bef34bc61eb401f57e1c650028d5
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 3765e3cbdd8ea1ae40183d621a7ff0fb352ba19fcfa58b27201b5eb62b4e20ce
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52755088"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54163779"
 ---
 # <a name="devicethreatprotectionlevel-enum-type"></a>Tipo de número deviceThreatProtectionLevel
 

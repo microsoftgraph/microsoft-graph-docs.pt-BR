@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 0a11300891ca4b12b15de26b5be929823b4a8ddf
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: fc6669fae134a53886a425fab2635f9ef83d7c4626fcb1056a0d7cda179d932b
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52751353"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54149853"
 ---
 # <a name="managementagenttype-enum-type"></a>tipo de número managementAgentType
 

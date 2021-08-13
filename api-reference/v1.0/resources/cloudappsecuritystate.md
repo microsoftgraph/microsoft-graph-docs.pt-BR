@@ -1,18 +1,18 @@
 ---
-title: tipo de recurso cloudAppSecurityState
+title: Tipo de recurso cloudAppSecurityState
 description: Contém informações de estado sobre o aplicativo de nuvem (destinationServiceName, destinationServiceIp).
 localization_priority: Normal
 author: preetikr
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 0f987f64960290c4104ed1c0746ce38591cb3ab6
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: c9f8d3cda7fae6ae68cd43db0bfa69d6ac7016312dc4749ae640e9988168d584
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48086792"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54124532"
 ---
-# <a name="cloudappsecuritystate-resource-type"></a>tipo de recurso cloudAppSecurityState
+# <a name="cloudappsecuritystate-resource-type"></a>Tipo de recurso cloudAppSecurityState
 
 Namespace: microsoft.graph
 
@@ -22,9 +22,9 @@ Contém informações de estado sobre o aplicativo de nuvem (destinationServiceN
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|destinationServiceIp|Cadeia de caracteres|Endereço IP de destino da conexão com o aplicativo/serviço de nuvem.|
-|destinationServiceName|Cadeia de caracteres|Nome do serviço/aplicativo na nuvem (por exemplo, "Salesforce", "DropBox", etc.).|
-|riskScore|Cadeia de caracteres|Pontuação de risco calculado/gerado pelo provedor do aplicativo/serviço de nuvem. O intervalo de valor recomendado de 0-1, que é igual a uma porcentagem.|
+|destinationServiceIp|Cadeia de caracteres|Endereço IP de destino da conexão com o aplicativo/serviço na nuvem.|
+|destinationServiceName|String|Nome do aplicativo/serviço na nuvem (por exemplo, "Salesforce", "DropBox", etc.).|
+|riskScore|Cadeia de caracteres|Pontuação de risco gerada/calculada pelo provedor do Aplicativo/Serviço na Nuvem. Intervalo de valores recomendado de 0 a 1, que equivale a uma porcentagem.|
 
 ## <a name="json-representation"></a>Representação JSON
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 26d66bc4c9b8c71a0e6fe0146222b55228068fec
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 536f7af7169fc07023325ce23570f4c4a41722166ebfd5fb81e0c5f64661a258
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52756385"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54160300"
 ---
 # <a name="update-user"></a>Atualizar usuário
 
@@ -51,7 +51,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [user](.
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|O identificador do usuário.|
+|id|Cadeia de caracteres|O identificador do usuário.|
 
 
 

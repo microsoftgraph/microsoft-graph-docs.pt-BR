@@ -6,12 +6,12 @@ localization_priority: Normal
 description: O recurso ItemReference proporciona as informações necessárias para enviar um DriveItem pela API.
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: dd24f0d1fc0a5f5db576f5eea89b8205ff55b2b7
-ms.sourcegitcommit: 0d4377b0153bc339ab7b3b1a6ee4d52848b622d4
+ms.openlocfilehash: bbd491fb47404ad0ae58f3a0e10964e90a1c710198733ac6994db15848f9b00b
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "49714253"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54141529"
 ---
 # <a name="itemreference-resource-type"></a>Tipo de recurso ItemReference
 
@@ -53,7 +53,7 @@ Veja a seguir uma representação JSON do recurso
 | caminho          | String            | Caminho que pode ser usado para navegar até o item. Somente leitura.
 | shareId       | Cadeia de caracteres            | Um identificador exclusivo para um recurso compartilhado que pode ser acessado através da API [Shares][].
 | sharepointIds | [sharepointIds][] | Retorna os identificadores úteis para fins de compatibilidade do REST do SharePoint. Somente leitura.
-| siteId        | Cadeia de caracteres            | Para o OneDrive for Business e o SharePoint, essa propriedade representa a ID do site que contém a biblioteca de documentos pai do recurso driveItem. O valor é o mesmo que a propriedade ID do recurso [site][] . É uma [cadeia de caracteres opaca que consiste em três identificadores](/graph/api/resources/site#id-property) do site. <br>Para o OneDrive, essa propriedade não é preenchida.
+| siteId        | Cadeia de caracteres            | Para OneDrive for Business e SharePoint, essa propriedade representa a ID do site que contém a biblioteca de documentos pai do recurso driveItem. O valor é o mesmo que a propriedade id desse [recurso de][] site. É uma cadeia [de caracteres opaca que consiste em três identificadores](/graph/api/resources/site#id-property) do site. <br>Para OneDrive, essa propriedade não é preenchida.
 
 [unidade]: ../resources/drive.md
 [sharepointIds]: ../resources/sharepointids.md

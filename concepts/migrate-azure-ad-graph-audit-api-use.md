@@ -1,17 +1,17 @@
 ---
-title: Examinar o uso do aplicativo APIs do Azure AD Graph
-description: Descreve como auditar AS APIs do Azure Active Directory (Azure AD) para migrar um aplicativo para a API do Microsoft Graph.
+title: Examinar o uso do aplicativo Graph APIs do Azure AD
+description: Descreve como auditar Azure Active Directory APIs (Azure AD) para migrar um aplicativo para a API Graph Microsoft.
 author: dkershaw10
 localization_priority: Normal
 ms.prod: applications
-ms.openlocfilehash: e7e21f03cdfd8ce3d45f0201d15ec489c7322530
-ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
+ms.openlocfilehash: fbd75626e03cbd4c433a7fa955aa0bc476ed76e6375261bb3bad9d32409302c7
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50760690"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54216389"
 ---
-# <a name="examine-azure-ad-graph-apis-app-usage"></a>Examinar o uso do aplicativo APIs do Azure AD Graph
+# <a name="examine-azure-ad-graph-apis-app-usage"></a>Examinar o uso do aplicativo Graph APIs do Azure AD
 
 Esta é a etapa 2 do [processo para migrar aplicativos.](migrate-azure-ad-graph-planning-checklist.md)
 
@@ -19,7 +19,7 @@ Ao planejar sua migração para o Microsoft Graph, leve tempo para revisar seu a
 
 Compare sua lista com as diferenças conhecidas.  Isso ajuda a identificar alterações específicas que você precisará fazer para migrar seu aplicativo.  Elas incluem alterações simples facilmente resolvidas usando os recursos de pesquisa e substituição de um editor ou atualizações mais complicadas que podem exigir mais análise.
 
-O Microsoft Graph dá suporte a muitos dos mesmos recursos e recursos do gráfico do Azure AD.  Há algumas diferenças importantes:
+O microsoft Graph oferece suporte a muitos dos mesmos recursos e recursos do gráfico do Azure AD.  Há algumas diferenças importantes:
 
 - [Diferenças de solicitação](migrate-azure-ad-graph-request-differences.md)
 - [Diferenças de recursos](migrate-azure-ad-graph-feature-differences.md)
@@ -31,7 +31,7 @@ Você também vai querer verificar as permissões necessárias para os recursos 
 
 Para saber mais, confira [permissões](permissions-reference.md).
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>Próximos passos
 
 - Saiba mais [sobre o registro de aplicativos, permissões](migrate-azure-ad-graph-app-registration.md) e diferenças de consentimento entre o Azure AD Graph e o Microsoft Graph.
 - Revise a [lista de verificação](migrate-azure-ad-graph-planning-checklist.md) novamente.

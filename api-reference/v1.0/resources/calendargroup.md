@@ -1,24 +1,24 @@
 ---
 title: Tipo de recurso calendarGroup
-description: Um grupo de calendários do usuário.
+description: Um grupo de calendários de usuários.
 author: harini84
 localization_priority: Normal
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 7a78daf6f0e1dd1cd4a271e89b19d541fbe32d0d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: bceac8ed16809ad99fcf479997b754a2e1c6af143e6413222531708752d342f8
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48043924"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54147004"
 ---
 # <a name="calendargroup-resource-type"></a>Tipo de recurso calendarGroup
 
 Namespace: microsoft.graph
 
-Um grupo de calendários do usuário.
+Um grupo de calendários de usuários.
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 
 | Método                                                      | Tipo de retorno                        | Descrição                                                   |
 | :---------------------------------------------------------- | :--------------------------------- | :------------------------------------------------------------ |
@@ -26,7 +26,7 @@ Um grupo de calendários do usuário.
 | [Create calendar group](../api/user-post-calendargroups.md) | [Calendar](calendar.md)            | Criar um novo grupo de calendários.                                  |
 | [Get calendar group](../api/calendargroup-get.md)           | [calendarGroup](calendargroup.md)  | Leia as propriedades e os relacionamentos de um objeto de grupo de calendários. |
 | [Update](../api/calendargroup-update.md)                    | [calendarGroup](calendargroup.md)  | Atualize o objeto calendarGroup.                                  |
-| [Delete](../api/calendargroup-delete.md)                    | Nenhum                               | Exclua o objeto calendarGroup.                                  |
+| [Delete](../api/calendargroup-delete.md)                    | None                               | Exclua o objeto calendarGroup.                                  |
 | [Listar calendários](../api/calendargroup-list-calendars.md)    | Coleção [Calendar](calendar.md) | Liste os calendários em um grupo de calendários.                           |
 | [Create Calendar](../api/calendargroup-post-calendars.md)   | [Calendar](calendar.md)            | Crie um novo calendário em um grupo de calendários.                    |
 
@@ -34,8 +34,8 @@ Um grupo de calendários do usuário.
 
 | Propriedade  | Tipo   | Descrição                                                                                                                                                                                               |
 | :-------- | :----- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| nome      | String | O nome do grupo.                                                                                                                                                                                           |
-| changeKey | String | Identifica a versão do grupo de calendários. Toda vez que o grupo de calendários é alterado, ChangeKey também muda. Isso permite que o Exchange aplique as alterações na versão correta do objeto. Somente leitura. |
+| nome      | Cadeia de caracteres | O nome do grupo.                                                                                                                                                                                           |
+| changeKey | Cadeia de caracteres | Identifica a versão do grupo de calendários. Toda vez que o grupo de calendários é alterado, ChangeKey também muda. Isso permite que o Exchange aplique as alterações na versão correta do objeto. Somente leitura. |
 | classId   | Guid   | O identificador de classe. Somente leitura.                                                                                                                                                                          |
 | id        | String | O identificador exclusivo do grupo. Somente leitura.                                                                                                                                                                 |
 

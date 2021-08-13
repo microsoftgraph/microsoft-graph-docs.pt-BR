@@ -1,30 +1,30 @@
 ---
 title: Tipo de recurso modifiedProperty
-description: Indica todas as propriedades em um recurso do Azure AD que foram modificadas, incluindo os valores antigo e novo.
+description: Indica todas as propriedades em um recurso do Azure AD que foram modificadas, incluindo os valores antigos e novos.
 localization_priority: Normal
 author: dhanyahk
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 4e34501f5011310eb7ade73d1c5d938cb58e65cc
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 9b1c520ac4be4e0c0957fe2b9f4f833f4065a19a2ed76ecd3166a46f7e50de6c
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50136035"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54192205"
 ---
 # <a name="modifiedproperty-resource-type"></a>Tipo de recurso modifiedProperty
 
 Namespace: microsoft.graph
 
-Indica todas as propriedades em um recurso do Azure AD que foram modificadas, incluindo os valores antigo e novo.
+Indica todas as propriedades em um recurso do Azure AD que foram modificadas, incluindo os valores antigos e novos.
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|displayName|String|Indica o nome da propriedade do atributo de destino que foi alterado.|
+|displayName|Cadeia de caracteres|Indica o nome da propriedade do atributo de destino que foi alterado.|
 |newValue|Cadeia de caracteres|Indica o valor atualizado para a adequada.|
-|oldValue|Cadeia de caracteres|Indica o valor anterior (antes da atualização) para a propriedade.|
+|oldValue|Cadeia de caracteres|Indica o valor anterior (antes da atualização) da propriedade.|
 
 ## <a name="json-representation"></a>Representação JSON
 

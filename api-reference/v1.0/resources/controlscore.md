@@ -1,18 +1,18 @@
 ---
-title: tipo de recurso controlScore
-description: Este recurso contém uma pontuação de locatário e uma descrição para um controle individual.
+title: Tipo de recurso controlScore
+description: Esse recurso contém uma pontuação de locatário e uma descrição para um controle individual.
 localization_priority: Normal
 author: preetikr
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 9e4470d1ce22f5ffbf3c805adc5328398d57d9fe
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: be1da81848b5669f66735e4288dccd09ccc30ac0384cc66897fb0a501907f031
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48056921"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54202508"
 ---
-#  <a name="controlscore-resource-type"></a>tipo de recurso controlScore
+#  <a name="controlscore-resource-type"></a>Tipo de recurso controlScore
 
 Namespace: microsoft.graph
 
@@ -22,10 +22,10 @@ Contém uma pontuação de locatário e uma descrição para um controle individ
 
 |Nome |Tipo |Descrição |
 |:--|:--|:--|
-|controlName|String|Controlar o nome exclusivo.|
-|Pontuação|Duplo|A pontuação alcançada do locatário para o controle (ele varia dia a dia, dependendo das operações do locatário no controle).|
-|controlCategory|String|Categoria de ação de controle (identidade, dados, dispositivo, aplicativos, infraestrutura).|
-|description|String| Descrição do controle.|
+|controlName|Cadeia de caracteres|Controlar nome exclusivo.|
+|score|Duplo|O locatário obteve pontuação para o controle (varia dia a dia, dependendo das operações do locatário no controle).|
+|controlCategory|Cadeia de caracteres|Categoria de ação de controle (Identidade, Dados, Dispositivo, Aplicativos, Infraestrutura).|
+|description|Cadeia de caracteres| Descrição do controle.|
 
 ## <a name="json-representation"></a>Representação JSON
 

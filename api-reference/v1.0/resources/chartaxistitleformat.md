@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: e3f830edcd28781a2be64a51c48497976d38c17c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 96b5bb7cf0865a8ae859d392c9d59d8dce78580870807adaebfcd802655d88c3
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48032758"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54230827"
 ---
 # <a name="chartaxistitleformat-resource-type"></a>Tipo de recurso ChartAxisTitleFormat
 
@@ -19,8 +19,8 @@ Namespace: microsoft.graph
 Representa a formatação do título do eixo do gráfico.
 
 
-## <a name="methods"></a>Methods
-Nenhum
+## <a name="methods"></a>Métodos
+None
 
 ## <a name="properties"></a>Propriedades
 Nenhuma

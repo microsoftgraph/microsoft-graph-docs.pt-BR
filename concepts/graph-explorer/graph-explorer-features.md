@@ -1,22 +1,22 @@
 ---
-title: Trabalhando com o Graph Explorer
+title: Trabalhar com Graph Explorer
 description: Saiba como usar alguns dos recursos importantes no Graph Explorer.
 localization_priority: Normal
 author: bettirosengugi
-ms.openlocfilehash: a0a6ce380942d6677877c65ac20242d3b3ad37fa
-ms.sourcegitcommit: 32c83957ee69f21a10cd5f759adb884ce4b41c52
+ms.openlocfilehash: dab8803be00de3cc8ab27fc80c5f3b8cc0f0ac4307f29b9f276516ad13c86888
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51921130"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54138364"
 ---
-# <a name="working-with-graph-explorer"></a>Trabalhando com o Graph Explorer
+# <a name="working-with-graph-explorer"></a>Trabalhar com Graph Explorer
 
-[O Graph Explorer](https://developer.microsoft.com/graph/graph-explorer/) é uma ferramenta de desenvolvedor que permite que você faça convenientemente solicitações de API REST do Microsoft Graph e veja as respostas correspondentes. Este artigo descreve como usar alguns dos recursos importantes no Graph Explorer.
+[Graph Explorer é](https://developer.microsoft.com/graph/graph-explorer/) uma ferramenta de desenvolvedor que permite que você faça convenientemente solicitações de API REST da Microsoft Graph exibir respostas correspondentes. Este artigo descreve como usar alguns dos recursos importantes no Graph Explorer.
 
 ## <a name="consent-to-permissions"></a>Consentimento para permissões
 
-O usuário ou administrador deve conceder ao Graph Explorer as permissões corretas por meio de um processo de consentimento para acessar dados no Microsoft Graph. Consentir com permissões no Graph  Explorer por meio  da guia Modificar permissões ou da opção Selecionar permissões na engrenagem de configurações ao lado do seu perfil quando você estiver dentro. A **guia Modificar permissões** lista todas as permissões que você precisa para executar a consulta na barra de endereços. 
+O usuário ou administrador deve conceder Graph permissões corretas ao Explorer por meio de um processo de consentimento para acessar dados no Microsoft Graph. Consenta com permissões no Graph Explorer  por meio da  guia Modificar permissões ou da opção Selecionar permissões na engrenagem de configurações ao lado do seu perfil quando você estiver dentro. A **guia Modificar permissões** lista todas as permissões que você precisa para executar a consulta na barra de endereços. 
 
 Para consentir as permissões:
 
@@ -36,29 +36,29 @@ O **recurso Modificar permissões** está atualmente em visualização, e alguma
 
 ## <a name="get-an-access-or-authentication-token"></a>Obter um token de acesso ou autenticação
 
-O Graph Explorer inclui uma guia **de tokens do Access** que mostra seu token de acesso quando você está assinado. Na guia **Token de Acesso,** você pode copiar o token se precisar usá-lo em seu aplicativo cliente REST favorito.
+Graph O Explorer inclui uma **guia de tokens do Access** que mostra seu token de acesso quando você está dentro. Na guia **Token de Acesso,** você pode copiar o token se precisar usá-lo em seu aplicativo cliente REST favorito.
 
 ![Captura de tela da guia Token de Acesso no Graph Explorer com o botão Copiar realçada](./images/access-token.png)
 
 ## <a name="copy-code-snippets"></a>Copiar trechos de código
 
-Para cada consulta da API REST que você seleciona ou inspeciona no Graph Explorer, você pode encontrar como chamar essa API em cada um dos quatro idiomas exibidos na guia **Trechos** de código - C#, Java, JavaScript e Objective-C. 
+Para cada consulta da API REST que você selecionar ou inserir no Graph Explorer, você pode encontrar como chamar essa API em cada um dos quatro idiomas exibidos na guia **Trechos** de código - C#, Java, JavaScript e Objective-C. 
 
 ![Captura de tela do Graph Explorer com a guia trechos de código realçadas](./images/code-snippets.png)
 
 ## <a name="ui-component-integration"></a>Integração de componentes da interface do usuário
 
-O Graph Explorer inclui vários recursos para facilitar a implementação da interface do usuário. Reutilizar esses componentes em seus aplicativos também.
+Graph O Explorer inclui vários recursos para facilitar a implementação da interface do usuário. Reutilizar esses componentes em seus aplicativos também.
 
-### <a name="microsoft-graph-toolkit-integration"></a>Integração Toolkit Microsoft Graph
+### <a name="microsoft-graph-toolkit-integration"></a>Integração Graph Toolkit Microsoft
 
-O [microsoft graph Toolkit](../toolkit/overview.md) é uma coleção de componentes web reutilizáveis e agnósticos e auxiliares para acessar e trabalhar com o Microsoft Graph. Os componentes são totalmente funcionais, com provedores internos que se autenticam com e buscar dados do Microsoft Graph.
+O [Microsoft Graph Toolkit](../toolkit/overview.md) é uma coleção de componentes web reutilizáveis e agnósticos e auxiliares para acessar e trabalhar com o Microsoft Graph. Os componentes são totalmente funcionais, com provedores internos que se autenticam com e buscar dados da Microsoft Graph.
 
-O Graph Explorer fornece consultas de API REST de exemplo que correspondem aos componentes Toolkit Microsoft Graph. Um ponto azul na guia **Toolkit componente** indica que o Toolkit fornece um componente para a consulta da API REST especificada no momento no Graph Explorer. Você pode copiar convenientemente o código do componente para seu aplicativo.
+Graph O Explorer fornece consultas de API REST de exemplo que correspondem aos componentes Graph Toolkit Microsoft. Um ponto azul na guia **Toolkit componente** indica que o Toolkit fornece um componente para a consulta da API REST especificada no Graph Explorer. Você pode copiar convenientemente o código do componente para seu aplicativo.
 
 A tabela a seguir lista as consultas de exemplo que atualmente incluem um Toolkit componente.
 
-| **Consulta de exemplo do Graph Explorer** | **Toolkit exemplo de URL iFrame** |
+| **Graph Consulta de exemplo do Explorer** | **Toolkit exemplo de URL iFrame** |
 | --- | --- |
 | GET meu perfil | [https://mgt.dev/iframe.html?id=components-mgt-person-card—person-card-hover](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fmgt.dev%2Fiframe.html%3Fid%3Dcomponents-mgt-person-card--person-card-hover&amp;data=04%7C01%7CElise.Yang%40microsoft.com%7Ca81f0f07873240d8571b08d7dac329d4%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637218404083362882%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C-1&amp;sdata=9FvGlMZNc78EE66JiY7hrusYVuGUm2NeflYlVgwTVwo%3D&amp;reserved=0) |
 | OBTER pessoas com quem trabalho | [https://mgt.dev/iframe.html?id=components-mgt-people—people](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fmgt.dev%2Fiframe.html%3Fid%3Dcomponents-mgt-people--people&amp;data=04%7C01%7CElise.Yang%40microsoft.com%7Ca81f0f07873240d8571b08d7dac329d4%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637218404083372878%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C-1&amp;sdata=yMF3X0M%2FmvWTUfhMdNYkG5I7fDMXpPHS6Fwea%2B3ycPs%3D&amp;reserved=0) |
@@ -66,7 +66,7 @@ A tabela a seguir lista as consultas de exemplo que atualmente incluem um Toolki
 | OBTER meus eventos para a próxima semana | [https://mgt.dev/iframe.html?id=components-mgt-agenda—get-events-for-next-week](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fmgt.dev%2Fiframe.html%3Fid%3Dcomponents-mgt-agenda--get-events-for-next-week&amp;data=04%7C01%7CElise.Yang%40microsoft.com%7Ca81f0f07873240d8571b08d7dac329d4%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637218404083382869%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C-1&amp;sdata=VVFcx3gXMmg%2B%2BdQCZXjAmkCk5zKcrntK6fI35jbdN94%3D&amp;reserved=0) |
 | GET minha foto | [https://mgt.dev/iframe.html?id=components-mgt-person—person-photo-only](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fmgt.dev%2Fiframe.html%3Fid%3Dcomponents-mgt-person--person-photo-only&amp;data=04%7C01%7CElise.Yang%40microsoft.com%7Ca81f0f07873240d8571b08d7dac329d4%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637218404083392872%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C-1&amp;sdata=aI%2BUqciLPOxEqlIpbjT8wtWBgcaJWM6sqooRlLVspZ0%3D&amp;reserved=0) |
 
-![Captura de tela mostrando a guia componentes Toolkit com o código para gerar o componente realçado](./images/get-graph-toolkit-card.png)
+![Captura de tela mostrando a guia Toolkit componentes com o código para gerar o componente realçado](./images/get-graph-toolkit-card.png)
 
 ### <a name="adaptive-cards-integration"></a>Integração de cartões adaptáveis
 
@@ -82,7 +82,7 @@ Escolha o tema do Graph Explorer selecionando a opção **Alterar tema** na engr
 
 ## <a name="storing-and-sharing-queries"></a>Armazenar e compartilhar consultas
 
-As consultas executados no Graph Explorer são salvas por 30 dias na **guia Histórico.** Na guia Histórico, você pode:
+As consultas são Graph Explorer são salvas por 30 dias na **guia** Histórico. Na guia Histórico, você pode:
 
 1.  Exportar todos os itens de histórico no formato .har.
 2.  Exclua todos os itens de histórico.
@@ -95,9 +95,9 @@ As consultas executados no Graph Explorer são salvas por 30 dias na **guia Hist
 
 Para compartilhar consultas que você executar, clique no botão compartilhar consulta no painel de resposta e clique em **copiar**. Isso copia um link para compartilhar e permitir que outras pessoas vejam sua consulta e os resultados.
 
-![Captura de tela do Graph Explorer com as opções De Compartilhamento e Cópia realçadas](./images/share-query.png)
+![Captura de tela do Graph Explorer com as opções Compartilhar e Copiar realçadas](./images/share-query.png)
 
-## <a name="graph-explorer-ui-features"></a>Recursos da interface do usuário do Graph Explorer
+## <a name="graph-explorer-ui-features"></a>Graph Recursos da interface do usuário do Explorer
 
 Rebaixe e expanda o componente da barra lateral no Graph Explorer quando quiser ampliar a área de solicitação e resposta. Para fechar o componente da barra lateral, selecione o ícone de hambúrguer na parte superior esquerda da barra lateral.
 
@@ -107,13 +107,13 @@ Expanda e ressule a visualização de resposta selecionando a seta de expansão 
 
 ![Captura de tela do painel de resposta com as opções de expansão e colapso realçadas](./images/expand-collapse-response-preview.png)
 
-Convenientemente, acesse o site do Programa de Desenvolvedores do Microsoft 365 da interface do usuário do Graph Explorer para obter uma área de segurança gratuita com dados de exemplo para testar. Na engrenagem de configuração, selecione **Obter uma área de segurança com dados de exemplo.**
+Convenientemente, acesse o site Microsoft 365 programa de desenvolvedor da interface do usuário do Graph Explorer para obter uma área de segurança gratuita com dados de exemplo para testar. Na engrenagem de configuração, selecione **Obter uma área de segurança com dados de exemplo.**
 
 ![Captura de tela do Graph Explorer com a opção Obter uma área de proteção com dados de exemplo realçada](./images/link-to-m365-dev-program.png)
 
 
 ## <a name="next-steps"></a>Próximas etapas
 
-- Visite [o Graph Explorer](https://developer.microsoft.com/graph/graph-explorer/) e explore as consultas de exemplo.
+- Visite [Graph Explorer e](https://developer.microsoft.com/graph/graph-explorer/) explore as consultas de exemplo.
 - Explore a [documentação do Microsoft Graph Toolkit](../toolkit/overview.md).
-- Contribuir ou fornecer comentários no [repositório do GitHub do Explorador](https://github.com/microsoftgraph/microsoft-graph-explorer-v4/issues/new/choose)do Graph.
+- Contribuir ou fornecer comentários no [Graph Explorer GitHub repo](https://github.com/microsoftgraph/microsoft-graph-explorer-v4/issues/new/choose).

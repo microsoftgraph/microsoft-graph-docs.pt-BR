@@ -5,12 +5,12 @@ author: abheek-das
 localization_priority: Priority
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 3a415503dfc6f6c99d47643de7a5819cca22186f
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 172156bf63c045370e58c63a8933bcf3575a522408868d658a01683a67e1c0e7
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50962438"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54237639"
 ---
 # <a name="message-resource-type"></a>tipo de recurso de mensagem
 
@@ -100,7 +100,7 @@ Esse recurso permite:
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |attachments|Coleção [attachment](attachment.md)|Os anexos [fileAttachment](fileattachment.md) e [itemAttachment](itemattachment.md) da mensagem.|
-|extensions|Coleção [extension](extension.md)|A coleção de extensões abertas definidas para a mensagem. Anulável.|
+|extensions|[extension](extension.md) collection|A coleção de extensões abertas definidas para a mensagem. Anulável.|
 |multiValueExtendedProperties|Coleção [multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md)| A coleção de propriedades estendidas de vários valores definidas para a mensagem. Anulável.|
 |singleValueExtendedProperties|Coleção [singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md)| A coleção de propriedades estendidas de valor único definidas para a mensagem. Anulável.|
 

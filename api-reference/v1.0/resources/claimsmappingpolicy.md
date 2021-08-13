@@ -1,22 +1,22 @@
 ---
 title: tipo de recurso claimsMappingPolicy
-description: Representa as políticas de mapeamento de declaração para protocolos WS-Fed, SAML, OAuth 2.0 e OpenID Connect para tokens emitidos para um aplicativo específico.
+description: Representa as políticas de mapeamento de declaração para protocolos WS-Fed, SAML, OAuth 2.0 e OpenID Conexão, para tokens emitidos para um aplicativo específico.
 localization_priority: Normal
 author: paulgarn
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 9d75b442d77155636cda6834abaea99f4a40a3e2
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 2ef027ac3729f85cc7f0e925067dd785eb10adfc86cea29435f02aecb6fc46b2
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50448036"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54189875"
 ---
 # <a name="claimsmappingpolicy-resource-type"></a>tipo de recurso claimsMappingPolicy
 
 Namespace: microsoft.graph
 
-Representa as políticas de mapeamento de declaração para protocolos WS-Fed, SAML, OAuth 2.0 e OpenID Connect para tokens emitidos para um aplicativo específico. Você pode usar políticas de mapeamento de declarações para:
+Representa as políticas de mapeamento de declaração para protocolos WS-Fed, SAML, OAuth 2.0 e OpenID Conexão, para tokens emitidos para um aplicativo específico. Você pode usar políticas de mapeamento de declarações para:
 
 - Selecione quais declarações estão incluídas em tokens
 - Criar tipos de declaração que ainda não existem
@@ -33,19 +33,19 @@ Herda de [stsPolicy](stsPolicy.md).
 | [Criar claimsMappingPolicy](../api/claimsmappingpolicy-post-claimsmappingpolicies.md) | [claimsMappingPolicy](claimsmappingpolicy.md) | Crie um objeto claimsMappingPolicy. |
 | [Obter claimsMappingPolicy](../api/claimsmappingpolicy-get.md) | [claimsMappingPolicy](claimsmappingpolicy.md) | Leia propriedades e relações de um objeto claimsMappingPolicy. |
 | [Listar claimsMappingPolicies](../api/claimsmappingpolicy-list.md) | [claimsMappingPolicy](claimsmappingpolicy.md) | Ler propriedades e relações de objetos claimsMappingPolicies. |
-| [Update claimsMappingPolicy](../api/claimsmappingpolicy-update.md) | Nenhum | Atualize um objeto claimsMappingPolicy. |
-| [Excluir claimsMappingPolicy](../api/claimsmappingpolicy-delete.md) | Nenhum | Exclua um objeto claimsMappingPolicy. |
+| [Update claimsMappingPolicy](../api/claimsmappingpolicy-update.md) | None | Atualize um objeto claimsMappingPolicy. |
+| [Excluir claimsMappingPolicy](../api/claimsmappingpolicy-delete.md) | None | Exclua um objeto claimsMappingPolicy. |
 | [Lista appliesTo](../api/claimsmappingpolicy-list-appliesto.md) | Coleção [directoryObject](directoryobject.md) | Obter a lista de directoryObjects aos qual essa política foi aplicada. |
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|id|Cadeia de caracteres| Identificador exclusivo dessa política. Somente leitura.|
-|definition|Conjunto de cadeias de caracteres| Uma coleção de cadeias de caracteres que contém uma cadeia de caracteres JSON que define as regras e as configurações dessa política. Consulte abaixo para obter mais detalhes sobre o esquema JSON para esta propriedade. Obrigatório.|
+|id|String| Identificador exclusivo dessa política. Apenas leitura.|
+|definition|Coleção de cadeias de caracteres| Uma coleção de cadeias de caracteres que contém uma cadeia de caracteres JSON que define as regras e as configurações dessa política. Consulte abaixo para obter mais detalhes sobre o esquema JSON para esta propriedade. Obrigatório.|
 |description|Cadeia de caracteres| Descrição dessa política.|
 |displayName|Cadeia de caracteres| Nome de exibição para esta política. Obrigatório.|
-|isOrganizationDefault|Boolean|Ignore essa propriedade. A política de mapeamento de declarações só pode ser aplicada a entidades de serviço e não pode ser definida globalmente para a organização.|
+|isOrganizationDefault|Booliano|Ignore essa propriedade. A política de mapeamento de declarações só pode ser aplicada a entidades de serviço e não pode ser definida globalmente para a organização.|
 
 ### <a name="properties-of-a-claims-mapping-policy-definition"></a>Propriedades de uma definição de política de mapeamento de declarações
 
@@ -95,7 +95,7 @@ As propriedades abaixo formam o objeto JSON que representa uma política de mape
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |Versão|Inteiro|Definir o valor de 1. Obrigatório.|
-|IncludeBasicClaimSet|Boolean|Se definido como true, todas as declarações no conjunto de declarações básico são emitidas em tokens afetados pela política. Se definido como false, as declarações no conjunto de declarações básicas não estão nos tokens, a menos que sejam adicionadas individualmente na propriedade ClaimsSchema da mesma política.|
+|IncludeBasicClaimSet|Booliano|Se definido como true, todas as declarações no conjunto de declarações básico são emitidas em tokens afetados pela política. Se definido como false, as declarações no conjunto de declarações básicas não estão nos tokens, a menos que sejam adicionadas individualmente na propriedade ClaimsSchema da mesma política.|
 |ClaimsSchema|Objeto JSON|Define quais declarações estão presentes nos tokens afetados pela política, além do conjunto de declarações básico e do conjunto de declarações principais. Para cada entrada de esquema de declaração definida nesta propriedade, determinadas informações são necessárias. Especifique de onde os dados estão vindo (par Valor ou Fonte/ID) e que dizem que os dados são emitidos como (Tipo de Declaração). Para obter mais informações, consulte [ClaimsSchema definition](/azure/active-directory/develop/active-directory-claims-mapping#claims-schema).|
 |ClaimsTransformation|Objeto JSON| Define transformações comuns que podem ser aplicadas aos dados de origem, para gerar os dados de saída para declarações especificadas no ClaimsSchema. Para obter mais informações, consulte [ClaimsTransformation definition](/azure/active-directory/develop/active-directory-claims-mapping#claims-transformation).|
 

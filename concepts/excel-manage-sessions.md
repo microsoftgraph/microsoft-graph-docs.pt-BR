@@ -4,12 +4,12 @@ description: Se o aplicativo precisar realizar mais do que uma ou duas chamadas 
 localization_priority: Normal
 author: lumine2008
 ms.prod: excel
-ms.openlocfilehash: 488637f53ffc1298420d40e93f3f5d9fd7a0b518
-ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
+ms.openlocfilehash: 89ff7ed3d925e9457b21da45ff08b8f1583386131709f3ed33e65f91ac402f6a
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48289222"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54169183"
 ---
 # <a name="manage-sessions-and-persistence-in-excel-with-microsoft-graph"></a>Gerenciar sessões e persistências no Excel usando o Microsoft Graph
 
@@ -26,11 +26,11 @@ Para representar a sessão na API, use o cabeçalho `workbook-session-id: {sessi
 >**Observação:** o cabeçalho de sessão não é obrigatório para uma API do Excel funcionar. No entanto, recomendamos que você use o cabeçalho de sessão para melhorar o desempenho. Se você não usar um cabeçalho de sessão, as alterações feitas durante a chamada à API _serão_ mantidas como persistentes no arquivo.  
 
 ## <a name="request-types"></a>Tipos de solicitação
-O [tratamento de erros](workbook-error-handling.md) sugerido para APIs do Excel é baseado no tipo de solicitação, código de erro e código de status. Estes são os tipos de solicitação:
+O [tratamento de erro sugerido](workbook-error-handling.md) para Excel APIs se baseia no tipo de solicitação, no código de erro e no código de status. Veja a seguir os tipos de solicitação:
 
-- **Solicitação CreateSession** -usada para criar uma sessão persistente ou não persistente. Em uma resposta bem-sucedida, a ID da sessão será retornada na propriedade **ID** no corpo da resposta. Para obter detalhes, consulte [Create Session](/graph/api/workbook-createsession?view=graph-rest-1.0).
-- **Solicitação de sessão** -solicitações subsequentes que seguem uma solicitação CreateSession. Em geral, eles incluem um `workbook-session-id: {session-id}` cabeçalho. A exceção é uma solicitação de status de sondagem, que usa o padrão de operação de execução longa. Para obter detalhes, consulte [Working with APIs que levam muito tempo para ser concluído](./workbook-best-practice.md#working-with-apis-that-take-a-long-time-to-complete).
-- **Solicitação sem sessão** -usada no modo sem sessão. Essas solicitações não têm um `workbook-session-id: {session-id}` cabeçalho.  
+- **Solicitação CreateSession** - Usada para criar uma sessão persistente ou não persistente. Em uma resposta bem-sucedida, a ID da sessão será retornada na **propriedade id** no corpo da resposta. Para obter detalhes, consulte [Create session](/graph/api/workbook-createsession?view=graph-rest-1.0).
+- **Solicitação de sessão** - Solicitações subsequentes que seguem uma solicitação CreateSession. Eles geralmente incluem `workbook-session-id: {session-id}` um header. A exceção é uma solicitação de status de sondagem, que usa o padrão de operação de longa duração. Para obter detalhes, [consulte working with APIs that take a long time to complete](./workbook-best-practice.md#working-with-apis-that-take-a-long-time-to-complete).
+- **Solicitação sem sessão** - Usada no modo Sem Sessão. Essas solicitações não têm `workbook-session-id: {session-id}` um header.  
 
 ## <a name="next-steps"></a>Próximas etapas
 Para saber como criar e usar sessões, confira o [tópico de referência de criação de sessão](/graph/api/workbook-createsession?view=graph-rest-1.0).
