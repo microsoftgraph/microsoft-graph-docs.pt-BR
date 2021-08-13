@@ -5,12 +5,12 @@ author: cloudhandler
 localization_priority: Normal
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: f3af631bc0c49d6b0ea2a71325df2b559917a2e2
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: a549ff8eb6890b700e3e29f6a159d078135c0739ddd7bac8e056c92cf0cc48df
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50959519"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54247071"
 ---
 # <a name="get-history"></a>Obter histórico
 Namespace: microsoft.graph
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 Leia as propriedades e as relações de um [objeto riskyUserHistoryItem.](../resources/riskyuserhistoryitem.md)
 
 
->**Observação:** Usar a API riskyUsers requer uma licença do Azure AD Premium P2.
+>**Observação:** Usar a API riskyUsers requer uma Azure AD Premium P2 de usuário.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions_reference).

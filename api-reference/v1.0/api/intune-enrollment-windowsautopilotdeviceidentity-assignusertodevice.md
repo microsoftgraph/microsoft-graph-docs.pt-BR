@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 377cd1d1323a4f9973c49d4fb1c9a8b8ebd62616
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: f1d186235ef4d2a8256baff83860030d915fbee01a2161980d2798509e04a643
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52752864"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54240831"
 ---
 # <a name="assignusertodevice-action"></a>ação assignUserToDevice
 
@@ -51,7 +51,7 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta ação.
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|userPrincipalName|String|Ainda não documentado|
+|userPrincipalName|Cadeia de caracteres|Ainda não documentado|
 |addressableUserName|String|Ainda não documentado|
 
 

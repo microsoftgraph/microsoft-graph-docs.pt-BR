@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 718a19f8e2e423ce86abdb78bca6cc8a94b10762
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 11c403f1d64d6cb13684952b93c28d495c5bcf9b563acda42a4859d10322fedf
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52755767"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54246763"
 ---
 # <a name="manageddevice-resource-type"></a>Tipo de recurso managedDevice
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 Dispositivos gerenciados ou pré-registrados pelo Intune
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
 |[Listar managedDevices](../api/intune-devices-manageddevice-list.md)|Conjunto [managedDevice](../resources/intune-devices-manageddevice.md)|Listar propriedades e relações dos objetos [managedDevice](../resources/intune-devices-manageddevice.md).|
@@ -98,7 +98,7 @@ Dispositivos gerenciados ou pré-registrados pelo Intune
 |managedDeviceName|String|Nome gerado automaticamente para identificar um dispositivo. Pode ser substituído por um nome amigável ao usuário.|
 |partnerReportedThreatState|[managedDevicePartnerReportedHealthState](../resources/intune-devices-manageddevicepartnerreportedhealthstate.md)|Indica o estado de ameaças de um dispositivo quando um parceiro de Defesa contra ameaças móveis está em uso pela conta e pelo dispositivo. Somente leitura. Essa propriedade é somente leitura. Os valores possíveis são: `unknown`, `activated`, `deactivated`, `secured`, `lowSeverity`, `mediumSeverity`, `highSeverity`, `unresponsive`, `compromised`, `misconfigured`.|
 |iccid|Cadeia de caracteres|Identificador integrado de cartão de circuito, é o número de identificação exclusivo de um cartão SIM. Essa propriedade é somente leitura.|
-|udid|Cadeia de caracteres|Identificador de dispositivo exclusivo para dispositivos iOS e macOS. Essa propriedade é somente leitura.|
+|udid|String|Identificador de dispositivo exclusivo para dispositivos iOS e macOS. Essa propriedade é somente leitura.|
 |notes|String|Observações sobre o dispositivo criado pelo administrador de IT|
 |ethernetMacAddress|Cadeia de caracteres|Ethernet MAC. Essa propriedade é somente leitura.|
 |physicalMemoryInBytes|Int64|Memória total em bytes. Essa propriedade é somente leitura.|

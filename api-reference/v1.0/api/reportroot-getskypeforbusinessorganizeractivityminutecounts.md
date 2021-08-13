@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: reports
 author: sarahwxy
 doc_type: apiPageType
-ms.openlocfilehash: 62cf8cd8de20f3a6f9cf47241fadd677efa2f67f
-ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
+ms.openlocfilehash: ac766e383a68adfb6a5e8654e4d91399f2952a389c90c02b9796efd2eb04bcf5
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49981393"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54240628"
 ---
 # <a name="reportroot-getskypeforbusinessorganizeractivityminutecounts"></a>reportRoot: getSkypeForBusinessOrganizerActivityMinuteCounts
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 Obtenha tendências de uso na duração em minutos e tipo de sessões de conferência realizadas e organizadas pelos usuários em sua organização. Tipos de sessões de conferência incluem áudio/vídeo e dial-in/out pela Microsoft.
 
-> **Observação:** Para obter detalhes sobre diferentes visualizações e nomes de relatórios, consulte relatórios do [Microsoft 365 - atividade do organizador de conferências do Skype for Business.](https://support.office.com/client/Skype-for-Business-Online-conference-organized-activity-03a255d4-0e1d-4b24-b73d-7a62fae36254)
+> **Observação:** Para obter detalhes sobre diferentes exibições de relatório e nomes, consulte Microsoft 365 relatórios - Skype for Business atividade do organizador [da conferência.](https://support.office.com/client/Skype-for-Business-Online-conference-organized-activity-03a255d4-0e1d-4b24-b73d-7a62fae36254)
 
 ## <a name="permissions"></a>Permissões
 

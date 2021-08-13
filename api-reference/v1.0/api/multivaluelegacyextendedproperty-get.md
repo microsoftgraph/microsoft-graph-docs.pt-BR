@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abheek-das
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: 7662a756b3e0ff944f67f17c6e9ef35bbf7c930c
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 9fe5cfa98a97db07ab1dac6ce03504d5f768651da93404dda3e4b4eee798b75f
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50136875"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54250375"
 ---
 # <a name="get-multivaluelegacyextendedproperty"></a>Obter multiValueLegacyExtendedProperty
 
@@ -44,10 +44,10 @@ Dependendo do recurso do qual você está recebendo a propriedade estendida e do
 |:-----|:-----|:-----|:-----|
 | [calendar](../resources/calendar.md) | Calendars.Read | Calendars.Read | Calendars.Read |
 | [contato](../resources/contact.md) | Contacts.Read | Contacts.Read | Contacts.Read |
-| [contactFolder](../resources/contactfolder.md) | Contacts.Read | Contacts.Read | Contacts.Read |
+| [pastadeContatos](../resources/contactfolder.md) | Contacts.Read | Contacts.Read | Contacts.Read |
 | [evento](../resources/event.md) | Calendars.Read | Calendars.Read |  Calendars.Read|
-| grupo [calendar](../resources/calendar.md) | Group.Read.All | Sem suporte | Incompatível |
-| grupo [event](../resources/event.md) | Group.Read.All | Sem suporte | Incompatível |
+| grupo [calendar](../resources/calendar.md) | Group.Read.All | Sem suporte | Sem suporte |
+| grupo [event](../resources/event.md) | Group.Read.All | Sem suporte | Sem suporte |
 | grupo [post](../resources/post.md) | Group.Read.All | Sem suporte | Group.Read.All |
 | [mailFolder](../resources/mailfolder.md) | Mail.Read | Mail.Read | Mail.Read |
 | [message](../resources/message.md) | Mail.Read | Mail.Read | Mail.Read |

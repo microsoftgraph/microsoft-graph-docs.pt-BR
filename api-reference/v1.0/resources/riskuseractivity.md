@@ -1,28 +1,28 @@
 ---
 title: Tipo de recurso riskUserActivity
-description: Detecções riskUserActivity
+description: detecções riskUserActivity
 author: cloudhandler
 localization_priority: Normal
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 7677832b2887bbb5dcddbeda21481da39f079669
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: b76c89ad73caf3f4985c81041178f05fc3d88bebbba0327ca503f7bf0e8f374d
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50133221"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54246609"
 ---
 # <a name="riskuseractivity-resource-type"></a>Tipo de recurso riskUserActivity
 
 Namespace: microsoft.graph
 
-Representa os activites de risco de um usuário do Azure AD, conforme determinado pelo Azure AD Identity Protection.
+Representa os activites de risco de um usuário do Azure AD, conforme determinado pela Proteção de Identidade do Azure AD.
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|detalhe|riskDetail|Detalhes do risco detectado. Os valores possíveis são: `none`, `adminGeneratedTemporaryPassword`, `userPerformedSecuredPasswordChange`, `userPerformedSecuredPasswordReset`, `adminConfirmedSigninSafe`, `aiConfirmedSigninSafe`, `userPassedMFADrivenByRiskBasedPolicy`, `adminDismissedAllRiskForUser`, `adminConfirmedSigninCompromised`, `hidden`, `adminConfirmedUserCompromised`, `unknownFutureValue`.|
-|riskEventTypes|String collection|O tipo de evento de risco detectado.|
+|detail|riskDetail|Detalhes do risco detectado. Os valores possíveis são: `none`, `adminGeneratedTemporaryPassword`, `userPerformedSecuredPasswordChange`, `userPerformedSecuredPasswordReset`, `adminConfirmedSigninSafe`, `aiConfirmedSigninSafe`, `userPassedMFADrivenByRiskBasedPolicy`, `adminDismissedAllRiskForUser`, `adminConfirmedSigninCompromised`, `hidden`, `adminConfirmedUserCompromised`, `unknownFutureValue`.|
+|riskEventTypes|Coleção de cadeias de caracteres|O tipo de evento de risco detectado.|
 
 ## <a name="relationships"></a>Relações
 Nenhum
