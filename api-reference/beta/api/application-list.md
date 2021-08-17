@@ -5,12 +5,12 @@ author: sureshja
 localization_priority: Priority
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: b2bf3991edc05d3c3a81a98713e7eedea6d11286
-ms.sourcegitcommit: 5bb981b4853663354a566d4a4a5cbf288939e441
+ms.openlocfilehash: a2fa946e906336aaf7b7c20560056b9d08b93852c5e01255482d0bfb63d83d27
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "53579344"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "57099695"
 ---
 # <a name="list-applications"></a>Listar aplicativos
 

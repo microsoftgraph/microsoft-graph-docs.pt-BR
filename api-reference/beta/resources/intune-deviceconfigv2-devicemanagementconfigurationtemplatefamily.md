@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 088e1ccd80e59b95419c17d532c82c1ea9c388bc
-ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
+ms.openlocfilehash: 68a595f68764019cc0119822bb6da69fd98361ec
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "52666685"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58248138"
 ---
 # <a name="devicemanagementconfigurationtemplatefamily-enum-type"></a>deviceManagementConfigurationTemplateFamily enum type
 
@@ -25,13 +25,13 @@ Descreve TemplateFamily para a entidade Template
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|nenhuma|0|Padrão para a família de modelos quando a política não está vinculada a um modelo|
+|Nenhuma|0|Padrão para a família de modelos quando a política não está vinculada a um modelo|
 |endpointSecurityAntivirus|10 |Família de Modelos para EndpointSecurityAntivirus que gerencia o grupo discreto de configurações de antivírus para dispositivos gerenciados|
-|endpointSecurityDiskEncryption|11|Família de Modelos para EndpointSecurityDiskEncryption que fornece configurações relevantes para um método de criptografia integrado de dispositivos, como FileVault ou BitLocker|
+|endpointSecurityDiskEncryption|11 |Família de Modelos para EndpointSecurityDiskEncryption que fornece configurações relevantes para um método de criptografia integrado de dispositivos, como FileVault ou BitLocker|
 |endpointSecurityFirewall|12 |Família de Modelos para EndpointSecurityFirewall que ajuda a configurar um firewall integrado de dispositivos para dispositivos que executem macOS e Windows 10|
-|endpointSecurityEndpointDetectionAndResponse|13|Família de modelos para EndpointSecurityEndpointDectionAndResponse que facilita o gerenciamento das configurações EDR e dispositivos de integração do Microsoft Defender para Ponto de Extremidade|
+|endpointSecurityEndpointDetectionAndResponse|13 |Família de modelos para EndpointSecurityEndpointDetectionAndResponse que facilita o gerenciamento das configurações EDR e dispositivos de integração do Microsoft Defender para Ponto de Extremidade|
 |endpointSecurityAttackSurfaceReduction|14 |Família de Modelos para EndpointSecurityAttackSurfaceReduction que ajudam a reduzir suas superfícies de ataque, minimizando os locais onde sua organização está vulnerável a ameaças cibernéticas e ataques|
-|endpointSecurityAccountProtection|15|Família de modelos para EndpointSecurityAccountProtection que facilita a proteção da identidade e contas dos usuários|
+|endpointSecurityAccountProtection|15 |Família de modelos para EndpointSecurityAccountProtection que facilita a proteção da identidade e contas dos usuários|
 |endpointSecurityApplicationControl|16 |Família de Modelos para ApplicationControl que ajuda a reduzir as ameaças de segurança restringindo os aplicativos que os usuários podem executar e o código que é executado no System Core (kernel)|
 
 

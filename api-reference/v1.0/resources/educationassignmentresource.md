@@ -5,12 +5,12 @@ localization_priority: Normal
 author: sharad-sharma-msft
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 8c70c89d35101e6170f27d9032759cbabadcaf556c680b14f6155a0ee66954b7
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: f1686ebac67e5f8865328e90d77607851fa6de20
+ms.sourcegitcommit: 1e9a53e7b8e67349288f5cfbabe8355de83817b0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54205861"
+ms.lasthandoff: 08/17/2021
+ms.locfileid: "58367027"
 ---
 # <a name="educationassignmentresource-resource-type"></a>Tipo de recurso educationAssignmentResource
 
@@ -26,13 +26,13 @@ O wrapper adiciona **a propriedade distributeForStudentWork** e indica que esse 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
 |[Obter educationAssignmentResource](../api/educationassignmentresource-get.md) | [educationAssignmentResource](educationassignmentresource.md) |Leia propriedades e relações de um **objeto educationAssignmentResource.**|
-|[Delete](../api/educationassignmentresource-delete.md) | None |**Exclua um objeto educationAssignmentResource.** |
+|[Delete](../api/educationassignmentresource-delete.md) | Nenhum |**Exclua um objeto educationAssignmentResource.** |
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|distributeForStudentWork|Booliano|Indica se esse recurso deve ser copiado para cada envio de alunos para modificação e envio.|
-|id|Cadeia de caracteres| ID desse recurso. Apenas leitura.|
+|distributeForStudentWork|Boolean|Indica se esse recurso deve ser copiado para cada envio de alunos para modificação e envio. Obrigatório|
+|id|Cadeia de caracteres| ID desse recurso. Somente leitura.|
 |recurso|[educationResource](educationresource.md)|Objeto Resource que foi associado a essa atribuição.|
 
 ## <a name="relationships"></a>Relações

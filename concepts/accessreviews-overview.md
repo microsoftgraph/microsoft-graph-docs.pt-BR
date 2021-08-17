@@ -4,18 +4,20 @@ description: A API de críticas de acesso permite que você revise programaticam
 author: FaithOmbongi
 localization_priority: Normal
 ms.prod: governance
-ms.openlocfilehash: b22fcf84e8303f10ad6d9f0f30cf0e508db5f103aee8430c35fb9981bcaec8c1
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: ea3caf2fd375d56ce128f8ec84be71b468f40b90
+ms.sourcegitcommit: b7e01a1331abe5f5c9aa2828d93dad08229573f1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54154851"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58336653"
 ---
 # <a name="overview-of-the-access-reviews-api"></a>Visão geral da API de análises de acesso
 
-A [API de revisões](/graph/api/resources/accessreviewsv2-root?view=graph-rest-beta&preserve-view=true) de acesso no Microsoft Graph permite que você revise programaticamente o acesso aos recursos do Azure AD. Isso inclui:
-+ Criando, lendo, atualizando e excluindo avaliações de acesso, configurações de revisão de acesso e agendamentos.
-+ Investigando as análises de acesso anteriores e as decisões tomadas pelos revisadores, incluindo as etapas que o Azure AD tomou automaticamente.
+A [API de revisões](/graph/api/resources/accessreviewsv2-root) de acesso no Microsoft Graph permite que você revise programaticamente o acesso aos recursos do Azure AD. Essa revisão ajuda a garantir que as pessoas certas tenham o acesso certo aos recursos certos na organização.
+
+Usando a API de críticas de acesso, você pode fazer as seguintes ações:
++ Crie, leia, atualize e exclua avaliações de acesso, configurações de revisão de acesso e agendamentos.
++ Investigue as avaliações de acesso passado e as decisões tomadas pelos revisadores, incluindo as etapas que o Azure AD tomou automaticamente.
 
 ## <a name="scope-of-use"></a>Escopo de uso
 
@@ -44,7 +46,6 @@ Experimente os seguintes tutoriais para gerenciar análises de acesso:
 
 ## <a name="see-also"></a>Confira também
 
++ [Revisões de acesso ao Azure AD](/graph/api/resources/accessreviewsv2-root)
 + [Planejamento Azure Active Directory implantação de Avaliações do Access](/azure/active-directory/governance/deploy-access-reviews)
 + [Criar uma revisão de acesso de grupos & aplicativos](/azure/active-directory/governance/create-access-review)
-+ [Obter acesso em nome de um usuário](/graph/auth-v2-user)
-+ [Obter acesso sem um usuário](/graph/auth-v2-service)

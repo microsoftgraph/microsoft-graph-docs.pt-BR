@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 56e25c57e5cc73cb8ee5c42b142c6f33a1949be2
-ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
+ms.openlocfilehash: 03d270408e383d21cb63cb512dcccb58a155cb08
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51865597"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58256084"
 ---
 # <a name="windowsminimumoperatingsystem-resource-type"></a>Tipo de recurso windowsMinimumOperatingSystem
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -37,6 +37,7 @@ O sistema operacional mínimo obrigatório para um aplicativo móvel do Windows.
 |v10_1909|Boolean|Windows 10 1909 ou posterior.|
 |v10_2004|Boolean|Windows 10 2004 ou posterior.|
 |v10_2H20|Boolean|Windows 10 2H20 ou posterior.|
+|v10_21H1|Boolean|Windows 10 21H1 ou posterior.|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -62,7 +63,8 @@ Veja a seguir uma representação JSON do recurso.
   "v10_1903": true,
   "v10_1909": true,
   "v10_2004": true,
-  "v10_2H20": true
+  "v10_2H20": true,
+  "v10_21H1": true
 }
 ```
 

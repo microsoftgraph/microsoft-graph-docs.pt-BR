@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 52cb11cbd071be59c36f6db73c94d685d0e1a85d
-ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
+ms.openlocfilehash: 9833d2c9053abd1cba881f73b3516e2c6df74564
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "52665417"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58261012"
 ---
 # <a name="create-devicemanagementreusablepolicysetting"></a>Criar deviceManagementReusablePolicySetting
 
@@ -27,9 +27,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
+|Delegada (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Aplicativo|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -53,10 +53,10 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar deviceMa
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|id de configuração reutilizável gerada pelo sistema.|
-|displayName|String|nome de exibição de configuração reutilizável fornecido pelo usuário.|
-|descrição|String|descrição da configuração reutilizável fornecida pelo usuário.|
-|settingDefinitionId|String|id de definição de definição associada a essa configuração reutilizável.|
+|id|Cadeia de caracteres|id de configuração reutilizável gerada pelo sistema.|
+|displayName|Cadeia de caracteres|nome de exibição de configuração reutilizável fornecido pelo usuário.|
+|description|Cadeia de caracteres|descrição da configuração reutilizável fornecida pelo usuário.|
+|settingDefinitionId|Cadeia de caracteres|id de definição de definição associada a essa configuração reutilizável.|
 |settingInstance|[deviceManagementConfigurationSettingInstance](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettinginstance.md)|instância de configuração de configuração reutilizável|
 |createdDateTime|DateTimeOffset|reutilizável definindo data e hora de criação. Essa propriedade é somente leitura.|
 |lastModifiedDateTime|DateTimeOffset|data e hora em que a configuração reutilizável foi modificada pela última vez. Essa propriedade é somente leitura.|

@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 0e4da220f260ff6f130ac3f632ea2496d9bb24b7e5b12530d16afed2b42e94ae
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 3bada1be911bda02e49229a20793289b61934f74
+ms.sourcegitcommit: 1e9a53e7b8e67349288f5cfbabe8355de83817b0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54152338"
+ms.lasthandoff: 08/17/2021
+ms.locfileid: "58367139"
 ---
 # <a name="participant-resource-type"></a>tipo de recurso participante
 
@@ -24,7 +24,7 @@ Representa um participante em uma chamada.
 |:-------------------------------------------------------|:------------------------------------------------------------|:-----------------------------------------------|
 | [Listar participante](../api/participant-get.md)          | [participante](participant.md)                               | Recupere uma lista de **objetos** participantes na chamada. |
 | [Obter participante](../api/participant-get.md)           | [participante](participant.md)                               | Ler propriedades do **objeto** participante. |
-| [Excluir participante](../api/participant-delete.md)         | None   | Exclua um participante em uma chamada.                  |
+| [Excluir participante](../api/participant-delete.md)         | Nenhum   | Exclua um participante em uma chamada.                  |
 | [Convidar](../api/participant-invite.md)                 | [inviteParticipantsOperation](../resources/inviteparticipantsoperation.md)                        | Convide um participante para a chamada.              |
 | [Ativar mudo para participante](../api/participant-mute.md)         | [muteParticipantOperation](muteparticipantoperation.md)     | Silenciar um participante em uma chamada.                  |
 
@@ -34,9 +34,10 @@ Representa um participante em uma chamada.
 | :------------------- | :--------------------------------------- | :------------------------------------------------------------|
 | id                   | Cadeia de caracteres                                   | A ID do participante.                                          |
 | informações                  | [participantInfo](participantinfo.md)    | Informações sobre o participante.                          |
-| isInLobby            | Booliano                                  | `true` se o participante estiver no lobby.                          |
-| isMuted              | Booliano                                  | `true` se o participante estiver mudo (cliente ou servidor em mudo).    |
+| isInLobby            | Boolean                                  | `true` se o participante estiver no lobby.                          |
+| isMuted              | Boolean                                  | `true` se o participante estiver mudo (cliente ou servidor em mudo).    |
 | mediaStreams         | [Coleção mediaStream](mediastream.md) | A lista de fluxos de mídia.                                   |
+| metadados             | Cadeia de caracteres                                   | Um blob de dados fornecidos pelo participante na lista.     |
 | recordingInfo        | [recordingInfo](recordinginfo.md)        | Informações sobre se o participante tem capacidade de gravação. |
 
 ## <a name="relationships"></a>Relações
@@ -59,7 +60,9 @@ Veja a seguir uma representação JSON do recurso.
   "info": {"@odata.type": "#microsoft.graph.participantInfo"},
   "isInLobby": true,
   "isMuted": true,
-  "mediaStreams": [ { "@odata.type": "#microsoft.graph.mediaStream" } ]
+  "mediaStreams": [ { "@odata.type": "#microsoft.graph.mediaStream" } ],
+  "metadata": "String",
+  "recordingInfo": { "@odata.type": "#microsoft.graph.recordingInfo" }
 }
 ```
 

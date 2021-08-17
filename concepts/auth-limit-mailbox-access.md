@@ -4,12 +4,12 @@ description: Para definir o escopo das permissões de aplicativo de um aplicativ
 author: abheek-das
 localization_priority: Priority
 ms.prod: applications
-ms.openlocfilehash: 54f899f9a4b1f7fba71acaa476f994b742ad58a6cfa3cc51d18adb42ee1a3c50
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: f37334942a892713c687c6be8410ee5d16515f01
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54141214"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58250887"
 ---
 # <a name="limiting-application-permissions-to-specific-exchange-online-mailboxes"></a>Limitando permissões de escopo de aplicativo para caixas de correio específicas do Exchange Online 
 
@@ -19,9 +19,6 @@ Os administradores que desejam limitar o acesso do aplicativo a caixas de correi
 Alguns aplicativos chamam o Microsoft Graph usando sua própria identidade e não em nome de um usuário. Geralmente, são serviços de segundo plano ou aplicativos daemon executados em um servidor sem a presença de um usuário conectado. Esses aplicativos usam o [fluxo de concessão de credenciais do cliente OAuth 2.0](/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow) para autenticar e são configurados com permissões de aplicativo, que por padrão permitem que esses aplicativos acessem _todas_ as caixas de correio de uma organização no Exchange Online. Por exemplo, a permissão de aplicativo `Mail.Read` permite que os aplicativos leiam emails em todas as caixas de correio sem um usuário conectado. 
 
 Há cenários em que os administradores podem querer limitar um aplicativo apenas a caixas de correio específicas e _não a todas_ as caixas de correio do Exchange Online na organização. Os administradores podem identificar o conjunto de caixas de correio para permitir o acesso colocando-as em um grupo de segurança habilitado para email. Os administradores podem limitar o acesso de aplicativos de terceiros somente a esse conjunto de caixas de correio criando uma política de acesso de aplicativo para acesso a esse grupo.
-
-> [!NOTE]
-> Depois que uma política de acesso a aplicativos é configurada para uma organização, a política se aplica a qualquer aplicativo que usa a API do Microsoft Graph ou os Serviços Web do Exchange para acessar caixas de correio do Exchange Online.
 
 Conforme descrito na seção [permissões com suporte e recursos adicionais](#supported-permissions-and-additional-resources) abaixo, a política de acesso ao aplicativo restringe o acesso à caixa de correio para aplicativos que foram concedidos a qualquer um dos escopos de permissão do Microsoft Graph ou dos Serviços Web do Exchange aos quais a política dá suporte.
 

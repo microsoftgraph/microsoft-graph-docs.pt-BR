@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 8475327164c92ee0720a2236ca41294e6b8ff472
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: c9eb3eba452a5da377a9bc00fd1be527aeb5aa20
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52051624"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58250905"
 ---
 # <a name="attachment-createuploadsession"></a>attachment: createUploadSession
 
@@ -43,8 +43,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | Calendars.ReadWrite, Mail.ReadWrite |
-| Delegado (conta pessoal da Microsoft) | Calendars.ReadWrite, Mail.ReadWrite |
+| Delegada (conta corporativa ou de estudante)     | Calendars.ReadWrite, Mail.ReadWrite |
+| Delegada (conta pessoal da Microsoft) | Calendars.ReadWrite, Mail.ReadWrite |
 | Aplicativo                            | Calendars.ReadWrite, Mail.ReadWrite |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -54,6 +54,7 @@ Para criar uma sessão de carregamento para anexar um arquivo a um **evento**:
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/events/{id}/attachments/createUploadSession
+POST /users/{id | userPrincipalName}/events/{id}/attachments/createUploadSession
 ```
 
 Para criar uma sessão de carregamento para anexar um arquivo a uma **mensagem**: 
@@ -61,6 +62,7 @@ Para criar uma sessão de carregamento para anexar um arquivo a uma **mensagem**
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/messages/{id}/attachments/createUploadSession
+POST /users/{id | userPrincipalName}/messages/{id}/attachments/createUploadSession
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação

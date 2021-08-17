@@ -5,12 +5,12 @@ author: ravennMSFT
 localization_priority: Normal
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 00f49c6c0ccb34fd18de68b65fc9f6ce7ff94605
-ms.sourcegitcommit: 8b23038be1141d7f22eb61de6aafdb16d4f9c826
+ms.openlocfilehash: afba78e846d8e45ccf21a612b99874a9c6d16681e967fd6b6a3c021c194f4290
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "53401360"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "57099653"
 ---
 # <a name="delete-includedgroup"></a>Excluir includedGroup
 
@@ -26,8 +26,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|Policy.ReadWrite.MobilityManagement|
-|Delegado (conta pessoal da Microsoft) | Sem suporte.|
+|Delegada (conta corporativa ou de estudante)|Policy.ReadWrite.MobilityManagement|
+|Delegada (conta pessoal da Microsoft) | Sem suporte.|
 |Aplicativo | Sem suporte.|
 
 ## <a name="http-request"></a>Solicitação HTTP

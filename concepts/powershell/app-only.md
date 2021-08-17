@@ -3,19 +3,19 @@ title: Usar autenticação somente aplicativo com o Microsoft Graph PowerShell S
 description: Saiba como usar a autenticação somente para aplicativos para habilitar cenários não interativos com o SDK do Microsoft Graph PowerShell.
 localization_priority: Normal
 author: jasonjoh
-ms.openlocfilehash: 4393982c09d868b3872bdba895ffc3811dd488bf208eb50e5c51c5b41d5c61b6
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 1939bc46d9862004b5d86f460a88d30eb396902b
+ms.sourcegitcommit: b7e01a1331abe5f5c9aa2828d93dad08229573f1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54169008"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58336674"
 ---
 # <a name="use-app-only-authentication-with-the-microsoft-graph-powershell-sdk"></a>Usar autenticação somente aplicativo com o Microsoft Graph PowerShell SDK
 
 O SDK do PowerShell dá suporte a dois tipos de autenticação: [acesso](..\auth-v2-user.md)delegado e [acesso somente aplicativo.](..\auth-v2-service.md) Este guia se concentrará na configuração necessária para habilitar o acesso somente ao aplicativo.
 
 > [!IMPORTANT]
-> O acesso somente a aplicativo concede permissões diretamente a um aplicativo e exige que um administrador consenta com os escopos de permissão necessários. Para obter mais detalhes sobre o acesso somente a aplicativos, consulte plataforma de identidade da Microsoft e o fluxo de credenciais do cliente [OAuth 2.0](/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow).
+> O acesso somente a aplicativo concede permissões diretamente a um aplicativo e exige que um administrador consenta com os escopos de permissão necessários. Para obter mais informações sobre o acesso somente a aplicativos, consulte plataforma de identidade da Microsoft e o fluxo de credenciais do cliente [OAuth 2.0](/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow).
 
 Vamos falar sobre como configurar o acesso somente a aplicativos para um script simples para listar usuários e grupos em seu Microsoft 365 locatário.
 
@@ -23,12 +23,12 @@ Vamos falar sobre como configurar o acesso somente a aplicativos para um script 
 
 Antes de usar o acesso somente a aplicativos com o SDK, você precisa do seguinte.
 
-- Um certificado a ser usado como uma credencial para o aplicativo. Pode ser um certificado auto-assinado ou um certificado de uma autoridade.
-- Você deve [registrar um aplicativo](/azure/active-directory/develop/app-objects-and-service-principals) no Azure AD, configurá-lo com os escopos de permissão que seu cenário exige e compartilhar a chave pública do certificado.
+- Um certificado a ser usado como uma credencial para o aplicativo. Pode ser um certificado auto-assinado ou um certificado de uma autoridade. Consulte a [seção Consulte também para](#see-also) obter orientações sobre como criar um certificado auto-assinado.
+- [Registre um aplicativo](/azure/active-directory/develop/app-objects-and-service-principals) no Azure AD, configure-o com os escopos de permissão que seu cenário exige e compartilhe a chave pública do certificado.
 
 ### <a name="certificate"></a>Certificado
 
-Você precisará de um certificado X.509 instalado no armazenamento confiável do usuário no computador onde você executará o script. Você também precisará da chave pública do certificado exportada no formato .cer, .pem ou .crt. Você precisará do valor do assunto do certificado.
+Você precisará de um certificado X.509 instalado no armazenamento confiável do usuário no computador onde você executará o script. Você também precisará da chave pública do certificado exportada no formato .cer, .pem ou .crt. Você precisará do valor do assunto do certificado ou de sua impressão digital.
 
 ### <a name="register-the-application"></a>Registrar o aplicativo
 
@@ -36,7 +36,7 @@ Você pode registrar o aplicativo no [portal Azure Active Directory ou](https://
 
 # <a name="portal"></a>[Portal](#tab/azure-portal)
 
-1. Abra um navegador e navegue até o centro de administração Azure Active Directory [e](https://aad.portal.azure.com) faça logon usando um administrador Microsoft 365 da organização de locatários.
+1. Abra um navegador e navegue até o centro de administração [Azure Active Directory e](https://aad.portal.azure.com) faça logon usando um administrador Microsoft 365 da organização de locatários.
 
 1. Selecione **Azure Active Directory** na navegação esquerda e selecione **Registros de aplicativos** em **Gerenciar**.
 
@@ -98,14 +98,14 @@ Você pode estar se perguntando: "Posso usar o SDK do PowerShell para registrar 
 
 Você deve ter três informações após concluir as etapas de configuração acima.
 
-- Assunto do certificado carregado no registro do aplicativo do Azure AD.
+- Assunto de certificado ou impressão digital do certificado carregado no registro do aplicativo do Azure AD.
 - ID do aplicativo para o registro do aplicativo.
 - Sua ID de locatário.
 
 Vamos usá-los para testar a autenticação. Abra o PowerShell e execute o seguinte comando, substituindo os espaço reservados por suas informações.
 
 ```powershell
-Connect-MgGraph -ClientID YOUR_APP_ID -TenantId YOUR_TENANT_ID -CertificateName YOUR_CERT_SUBJECT
+Connect-MgGraph -ClientID YOUR_APP_ID -TenantId YOUR_TENANT_ID -CertificateName YOUR_CERT_SUBJECT ## Or -CertificateThumbprint instead of -CertificateName
 ```
 
 Se isso for bem-sucedido, você verá `Welcome To Microsoft Graph!` . Execute `Get-MgContext` para verificar se você se autentica com somente aplicativo. A saída deve ter a seguinte aparência.
@@ -174,3 +174,8 @@ All Employees                       1a1cd42d-9801-4e9d-9b77-5215886174ef
 Mark 8 Project Team                 2bf1b0d0-81f6-4e80-b971-d1db69f8d651
 ...
 ```
+
+
+## <a name="see-also"></a>Confira também
+
++ [Como: criar um certificado público auto-assinado para autenticar seu aplicativo](/azure/active-directory/develop/howto-create-self-signed-certificate)

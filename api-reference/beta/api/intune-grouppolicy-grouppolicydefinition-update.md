@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 40012449a86324874251588dad27021e3e38fcec
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: 090f90e2f8b8c781bb4d6e9de3cab106f7120da6
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51145744"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58248158"
 ---
 # <a name="update-grouppolicydefinition"></a>Atualizar groupPolicyDefinition
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -40,6 +40,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 PATCH /deviceManagement/groupPolicyDefinitions/{groupPolicyDefinitionId}
 PATCH /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/definitionValues/{groupPolicyDefinitionValueId}/definition
 PATCH /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/definitionValues/{groupPolicyDefinitionValueId}/presentationValues/{groupPolicyPresentationValueId}/presentation/definition
+PATCH /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/definitionValues/{groupPolicyDefinitionValueId}/presentationValues/{groupPolicyPresentationValueId}/presentation/definition/nextVersionDefinition
+PATCH /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/definitionValues/{groupPolicyDefinitionValueId}/presentationValues/{groupPolicyPresentationValueId}/presentation/definition/previousVersionDefinition
 PATCH /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/definitionValues/{groupPolicyDefinitionValueId}/presentationValues/{groupPolicyPresentationValueId}/presentation/definition/category/definitions/{groupPolicyDefinitionId}
 PATCH /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/definitionValues/{groupPolicyDefinitionValueId}/presentationValues/{groupPolicyPresentationValueId}/presentation/definition/definitionFile/definitions/{groupPolicyDefinitionId}
 ```
@@ -63,7 +65,9 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [o group
 |categoryPath|Cadeia de caracteres|O caminho de categoria completa localizado para a política.|
 |supportedOn|Cadeia de caracteres|Cadeia de caracteres localizada usada para especificar qual versão do sistema operacional ou aplicativo é afetada pela política.|
 |policyType|[groupPolicyType](../resources/intune-grouppolicy-grouppolicytype.md)|Especifica o tipo de política de grupo. Os valores possíveis são: `admxBacked` e `admxIngested`.|
+|hasRelatedDefinitions|Boolean|Significa se há ou não definições relacionadas a essa definição|
 |groupPolicyCategoryId|Guid|A id de categoria da categoria pai|
+|versão|String|Definindo a versão de definição|
 |id|Cadeia de caracteres|Chave da entidade.|
 |lastModifiedDateTime|DateTimeOffset|A data e a hora em que a entidade foi modificada pela última vez.|
 
@@ -79,7 +83,7 @@ Este é um exemplo da solicitação.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/groupPolicyDefinitions/{groupPolicyDefinitionId}
 Content-type: application/json
-Content-length: 353
+Content-length: 418
 
 {
   "@odata.type": "#microsoft.graph.groupPolicyDefinition",
@@ -89,7 +93,9 @@ Content-length: 353
   "categoryPath": "Category Path value",
   "supportedOn": "Supported On value",
   "policyType": "admxIngested",
-  "groupPolicyCategoryId": "4d1e97a2-97a2-4d1e-a297-1e4da2971e4d"
+  "hasRelatedDefinitions": true,
+  "groupPolicyCategoryId": "4d1e97a2-97a2-4d1e-a297-1e4da2971e4d",
+  "version": "Version value"
 }
 ```
 
@@ -98,7 +104,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 466
+Content-Length: 531
 
 {
   "@odata.type": "#microsoft.graph.groupPolicyDefinition",
@@ -108,7 +114,9 @@ Content-Length: 466
   "categoryPath": "Category Path value",
   "supportedOn": "Supported On value",
   "policyType": "admxIngested",
+  "hasRelatedDefinitions": true,
   "groupPolicyCategoryId": "4d1e97a2-97a2-4d1e-a297-1e4da2971e4d",
+  "version": "Version value",
   "id": "f9607947-7947-f960-4779-60f9477960f9",
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00"
 }

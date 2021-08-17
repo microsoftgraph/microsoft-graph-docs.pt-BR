@@ -5,12 +5,12 @@ author: isabelleatmsft
 localization_priority: Normal
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 14538f769fb55e5b910f7f3b27a59ed9b83cdc5e
-ms.sourcegitcommit: a598c09b73e4e43eea5f4aaefea7ffe062e15c39
+ms.openlocfilehash: 9ab3dd9b72dc26a17e0508537e67a85cf2f2a70e
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/22/2021
-ms.locfileid: "53533939"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58256134"
 ---
 # <a name="accessreviewinstance-resource-type"></a>Tipo de recurso accessReviewInstance
 
@@ -43,17 +43,21 @@ Cada **accessReviewInstance** contém uma lista de [decisões](accessreviewinsta
 ## <a name="properties"></a>Propriedades
 | Propriedade | Tipo | Descrição |
 | :-------------------------| :---------------------------------- | :---------- |
-| id | String | Identificador exclusivo da instância. Oferece suporte para `$select`. Somente leitura.|
-| startDateTime | DateTimeOffset | DateTime quando a instância de revisão está agendada para começar. Pode ser no futuro. O tipo DateTimeOffset representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`. Oferece suporte para `$select`. Somente leitura. |
 | endDateTime | DateTimeOffset | DateTime quando a instância de revisão está agendada para terminar. O tipo DatetimeOffset representa informações de data e hora usando o formato ISO 8601 e está sempre em horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`. Oferece suporte para `$select`. Somente leitura.|
-| status | String | Especifica o status de um accessReview. Valores possíveis: `Initializing` , , , , , , e `NotStarted` `Starting` `InProgress` `Completing` `Completed` `AutoReviewing` `AutoReviewed` . Suporta `$select` `$orderby` , e ( `$filter` `eq` somente). Somente leitura.|
-| escopo | [accessReviewScope](accessreviewscope.md) | Criado com base **no escopo** e **instanceEnumerationScope** no nível accessReviewScheduleDefinition. Define o escopo dos usuários revisados em um grupo. Suporta `$select` e `$filter` ( `contains` somente). Somente leitura. |
 | erros | [Coleção accessReviewError](accessreviewerror.md)| Coleção de erros em um ciclo de vida da instância de revisão de acesso. Somente leitura. |
+| fallbackReviewers   |[Coleção accessReviewReviewerScope](../resources/accessreviewreviewerscope.md)| Essa coleção de escopos do revistor é usada para definir a lista de revisadores de fallback. Esses revisadores de fallback serão notificados para tomar medidas se nenhum usuário for encontrado na lista de revisadores especificados. Isso pode ocorrer quando o proprietário do grupo é especificado como o revistor, mas o proprietário do grupo não existe, ou o gerente é especificado como revistor, mas o gerente de um usuário não existe. Suporta `$select`.|
+| id | Cadeia de caracteres | Identificador exclusivo da instância. Oferece suporte para `$select`. Somente leitura.|
+| escopo | [accessReviewScope](accessreviewscope.md) | Criado com base **no escopo** e **instanceEnumerationScope** no nível accessReviewScheduleDefinition. Define o escopo dos usuários revisados em um grupo. Suporta `$select` e `$filter` ( `contains` somente). Somente leitura. |
+| startDateTime | DateTimeOffset | DateTime quando a instância de revisão está agendada para começar. Pode ser no futuro. O tipo DateTimeOffset representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`. Oferece suporte para `$select`. Somente leitura. |
+| status | Cadeia de caracteres | Especifica o status de um accessReview. Valores possíveis: `Initializing` , , , , , , e `NotStarted` `Starting` `InProgress` `Completing` `Completed` `AutoReviewing` `AutoReviewed` . Suporta `$select` `$orderby` , e ( `$filter` `eq` somente). Somente leitura.|
+| revisadores   |[Coleção accessReviewReviewerScope](../resources/accessreviewreviewerscope.md)| Essa coleção de escopos de revisão de acesso é usada para definir quem são os revisadores. Suporta `$select`. Para exemplos de opções para atribuir revisadores, consulte Atribuir revisadores à sua definição de revisão de acesso [usando a API do Microsoft Graph](/graph/accessreviews-scope-concept).|
+
 
 ## <a name="relationships"></a>Relações
 
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
+| `contactedReviewers`   |[Coleção accessReviewReviewer](../resources/accessreviewreviewer.md)| Retorna a coleção de revisadores que foram contatados para concluir essa revisão. Embora as propriedades **reviewers** e **fallbackReviewers** do accessReviewScheduleDefinition possam especificar proprietários de grupo ou gerentes como revisores, contactedReviewers retorna suas identidades individuais. Oferece suporte para `$select`. Somente leitura. |
 | `definition`               |[accessReviewScheduleDefinition](accessreviewscheduledefinition.md)          | Há exatamente um `accessReviewScheduleDefinition` associado a cada instância. É a agenda pai da instância, onde as instâncias são criadas para cada recorrência de uma definição de revisão e cada grupo selecionado para revisar pela definição. |
 | `decisions`               |[Coleção accessReviewInstanceDecisionItem](accessreviewinstancedecisionitem.md)        | Cada usuário revisado em um tem um item de decisão representando se eles foram `accessReviewInstance` aprovados, negados ou ainda não revisados. |
 
@@ -79,7 +83,22 @@ Veja a seguir uma representação JSON do recurso.
  "status": "string",
  "scope": {
     "@odata.type": "microsoft.graph.accessReviewScope"
-  }
+  },
+  "reviewers": [
+    {
+      "@odata.type": "microsoft.graph.accessReviewReviewerScope"
+    }
+  ],
+  "fallbackReviewers": [
+    {
+      "@odata.type": "microsoft.graph.accessReviewReviewerScope"
+    }
+  ],
+  "contactedReviewers": [
+    {
+      "@odata.type": "microsoft.graph.accessReviewReviewer"
+    }
+  ]
 }
 ```
 

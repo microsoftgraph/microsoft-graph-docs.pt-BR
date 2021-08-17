@@ -5,12 +5,12 @@ author: isabelleatmsft
 localization_priority: Normal
 ms.prod: governance
 doc_type: conceptualPageType
-ms.openlocfilehash: 268e9ce5a364e23551fd8140456ce245f6613ff75e878940feb467b9b5bd0de6
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: d820996945b0d03f3f11f1052d246f33a9a05595
+ms.sourcegitcommit: b7e01a1331abe5f5c9aa2828d93dad08229573f1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54129712"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58336639"
 ---
 # <a name="configure-the-scope-of-your-access-review-using-the-microsoft-graph-api"></a>Configurar o escopo da sua revisão de acesso usando a API Graph Microsoft
 
@@ -116,7 +116,7 @@ Como essa revisão é aplicada a todas as equipes, configure a **propriedade ins
 }
 ```
 
-### <a name="example-7-review-of-service-principals-assigned-to-privileged-roles"></a>Exemplo 7: Revisão das entidades de serviço atribuídas a funções privilegiadas 
+### <a name="example-7-review-of-all-service-principals-assigned-to-a-privileged-role-all-active-and-eligible-assignments-included"></a>Exemplo 7: Revisão de todas as entidades de serviço atribuídas a uma função privilegiada (todas as atribuições ativas e qualificadas incluídas)
 
 ```http
 "scope": {
@@ -125,12 +125,42 @@ Como essa revisão é aplicada a todas as equipes, configure a **propriedade ins
     "queryType": "MicrosoftGraph"
 }
 ```
+    
+### <a name="example-8-review-of-all-users-assigned-to-a-privileged-role-all-active-and-eligible-assignments-included"></a>Exemplo 8: Revisão de todos os usuários atribuídos a uma função privilegiada (todas as atribuições ativas e qualificadas incluídas)
+
+```http
+"scope": {
+    "@odata.type": "#microsoft.graph.accessReviewQueryScope",
+    "query": "/roleManagement/directory/roleDefinitions/{role ID}",
+    "queryType": "MicrosoftGraph"
+}
+```
+    
+### <a name="example-9-review-of-all-users-with-eligible-assignment-to-a-privileged-role"></a>Exemplo 9: Revisão de todos os usuários com atribuição qualificada para uma função privilegiada
+
+```http
+"scope": {
+    "@odata.type": "#microsoft.graph.accessReviewQueryScope",
+    "query": "/roleManagement/directory/roleEligibilityScheduleInstances?$expand=principal&$filter=(isof(principal,'microsoft.graph.user') and roleDefinitionId eq '{role ID}')",
+    "queryType": "MicrosoftGraph"
+}
+```
+    
+### <a name="example-10-review-of-all-users-with-active-assignment-to-a-privileged-role"></a>Exemplo 10: Revisão de todos os usuários com atribuição ativa a uma função privilegiada
+
+```http
+"scope": {
+    "@odata.type": "#microsoft.graph.accessReviewQueryScope",
+    "query": "/roleManagement/directory/roleAssignmentScheduleInstances?$expand=principal&$filter=(assignmentType eq 'Assigned' and isof(principal,'microsoft.graph.user') and roleDefinitionId eq '{role ID}')",
+    "queryType": "MicrosoftGraph"
+}
+```
 
 ## <a name="use-principalresourcemembershipsscope-to-configure-scope"></a>Usar o principalResourceMembershipsScope para configurar o escopo
 
 O **principalResourceMembershipsScope** expõe as propriedades **principalScopes** e **resourceScopes** para dar suporte a opções de configuração mais personalizadas para o escopo **do accessReviewScheduleDefinition**. Isso inclui a revisão do acesso a várias entidades ou grupos de entidades para vários recursos.
 
-### <a name="example-1-review-access-of-all-inactive-guest-users-to-groups"></a>Exemplo 1: revisar o acesso de todos os usuários convidados inativos a grupos
+### <a name="example-1-review-access-of-all-inactive-guest-users-to-all-groups"></a>Exemplo 1: Revisar o acesso de todos os usuários convidados inativos a todos os grupos
 
 ```http
 "scope": {

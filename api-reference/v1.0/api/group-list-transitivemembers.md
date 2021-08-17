@@ -5,12 +5,12 @@ author: Jordanndahl
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: edef20f23978b7a9b98e4e78d87ba0546e6fd439
-ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
+ms.openlocfilehash: 3df467df3a12eab3ba9302b090bfb3519154d077795cd13d24930e3c6c133406
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53209385"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "57326913"
 ---
 # <a name="list-group-transitive-members"></a>Listar membros transitivos de grupo
 
