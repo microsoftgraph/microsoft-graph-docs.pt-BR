@@ -1,18 +1,18 @@
 ---
-title: tipo de recurso onlineMeetingInfo
+title: Tipo de recurso onlineMeetingInfo
 description: Detalhes para o participante entrar na reunião online.
 localization_priority: Normal
 author: ananmishr
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: fb971295919f779c3faddb34ceeb96d531011b1f
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: a12c194f37f119211ccbe45c337cf8256d6110155382951c49b563b8d71b450d
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48052569"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54226123"
 ---
-# <a name="onlinemeetinginfo-resource-type"></a>tipo de recurso onlineMeetingInfo
+# <a name="onlinemeetinginfo-resource-type"></a>Tipo de recurso onlineMeetingInfo
 
 Namespace: microsoft.graph
 
@@ -22,12 +22,12 @@ Detalhes para o participante entrar na reunião online.
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|ID|Cadeia de caracteres| A ID da conferência.|
-|joinUrl|Cadeia de caracteres| O link externo que inicia a reunião online. Esta é uma URL que os clientes serão inicializados em um navegador e redirecionará o usuário para participar da reunião.|
-|telefones|Coleção [phone](phone.md)| Todos os números de telefone associados a esta conferência.|
-|quickDial|Cadeia de caracteres| O Quickdial pré-formatado para esta chamada.|
-|tollFreeNumbers|Coleção de cadeias de caracteres| Os números de chamada gratuita que podem ser usados para ingressar na conferência.|
-|tollNumber|Cadeia de caracteres| O número de chamada tarifada que pode ser usado para ingressar na conferência.|
+|conferenceId|Cadeia de caracteres| A ID da conferência.|
+|joinUrl|Cadeia de caracteres| O link externo que inicia a reunião online. Essa é uma URL que os clientes iniciarão em um navegador e redirecionam o usuário para ingressar na reunião.|
+|telefones|Coleção [phone](phone.md)| Todos os números de telefone associados a essa conferência.|
+|quickDial|Cadeia de caracteres| O quickdial pré-formatado para essa chamada.|
+|tollFreeNumbers|String collection| Os números gratuitos que podem ser usados para ingressar na conferência.|
+|tollNumber|Cadeia de caracteres| O número de telefone que pode ser usado para ingressar na conferência.|
 
 ## <a name="json-representation"></a>Representação JSON
 

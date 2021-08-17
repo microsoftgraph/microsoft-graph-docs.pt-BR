@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 798fa1eb36a9f9dd58aae6cae8dd4e4960b6299c
-ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
+ms.openlocfilehash: 336978886f5bc26fe9b69be97ee9476a322fc8c3288a1da54be56eefd0029a63
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51864610"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54173734"
 ---
 # <a name="get-deviceappmanagement"></a>Get deviceAppManagement
 
 Namespace: microsoft.graph
 
-> **Importante:** APIs na versão /beta do Microsoft Graph estão sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** APIs na versão /beta no Microsoft Graph estão sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -30,11 +30,11 @@ Uma das seguintes permissões é necessária para chamar essa API. Para saber ma
 |:---|:---|
 | Delegada (conta corporativa ou de estudante) | |
 | &nbsp;&nbsp; **Aplicativos,** **livros,** **integração,** **integração de** parceiros ou **conjunto de políticas** | DeviceManagementApps.ReadWrite.All, DeviceManagementApps.ReadW.All |
-| &nbsp; &nbsp; **Gerenciamento de dispositivo** | DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All |
+| &nbsp;&nbsp; **Gerenciamento de dispositivos** | DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All |
 |Delegada (conta pessoal da Microsoft)|Sem suporte.|
-|Application| |
+|Aplicativo| |
 | &nbsp;&nbsp; **Aplicativos,** **livros,** **integração,** **integração de** parceiros ou **conjunto de políticas** | DeviceManagementApps.ReadWrite.All, DeviceManagementApps.ReadW.All |
-| &nbsp; &nbsp; **Gerenciamento de dispositivo** | DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All |
+| &nbsp;&nbsp; **Gerenciamento de dispositivos** | DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {

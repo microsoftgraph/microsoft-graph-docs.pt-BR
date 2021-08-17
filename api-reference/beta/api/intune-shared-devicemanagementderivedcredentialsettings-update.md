@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0f94ac3eb5328cd8723008a25fd72e30347a1ac9
-ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
+ms.openlocfilehash: 338874b4f191a307d11cfde1102fbde0de80554b77c40d055be0407e1031f0cf
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51867851"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54173650"
 ---
 # <a name="update-devicemanagementderivedcredentialsettings"></a>Atualizar deviceManagementDerivedCredentialSettings
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -31,7 +31,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 | &nbsp; &nbsp; **Configuração do dispositivo** | DeviceManagementConfiguration.ReadWrite.All|
 | &nbsp;&nbsp; **Política de Acesso a Recursos** | DeviceManagementConfiguration.ReadWrite.All|
 |Delegada (conta pessoal da Microsoft)|Sem suporte.|
-|Application||
+|Aplicativo||
 | &nbsp; &nbsp; **Configuração do dispositivo** | DeviceManagementConfiguration.ReadWrite.All|
 | &nbsp;&nbsp; **Política de Acesso a Recursos** | DeviceManagementConfiguration.ReadWrite.All|
 
@@ -64,10 +64,10 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [deviceM
 |:---|:---|:---|
 |id|Cadeia de caracteres|Identificador exclusivo da Credencial Derivada|
 |**Política rara**|
-|helpUrl|Cadeia de Caracteres|A URL que será acessível aos usuários finais à medida que eles recuperam uma credencial derivada usando o Portal da Empresa.|
+|helpUrl|Cadeia de caracteres|A URL que será acessível aos usuários finais à medida que eles recuperam uma credencial derivada usando o Portal da Empresa.|
 |displayName|Cadeia de caracteres|O nome de exibição do perfil.|
 |emissor|[deviceManagementDerivedCredentialIssuer](../resources/intune-rapolicy-devicemanagementderivedcredentialissuer.md)|O provedor de credenciais derivado a ser usado. Os valores possíveis são: `intercede`, `entrustDatacard`, `purebred`.|
-|notificationType|[deviceManagementDerivedCredentialNotificationType](../resources/intune-rapolicy-devicemanagementderivedcredentialnotificationtype.md)|Os métodos usados para informar o usuário final para abrir o Portal da Empresa para fornecer perfis de Wi-Fi, VPN ou email que usam certificados no dispositivo. Os valores possíveis são: `none`, `companyPortal`, `email`.|
+|notificationType|[deviceManagementDerivedCredentialNotificationType](../resources/intune-rapolicy-devicemanagementderivedcredentialnotificationtype.md)|Os métodos usados para informar o usuário final para abrir Portal da Empresa para fornecer perfis de Wi-Fi, VPN ou email que usam certificados no dispositivo. Os valores possíveis são: `none`, `companyPortal`, `email`.|
 
 
 ## <a name="response"></a>Resposta

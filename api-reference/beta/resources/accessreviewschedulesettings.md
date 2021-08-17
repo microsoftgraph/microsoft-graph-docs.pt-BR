@@ -5,12 +5,12 @@ author: isabelleatmsft
 localization_priority: Normal
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: b354ebfc2b5e6c8093f65c8712516421f0b1d332
-ms.sourcegitcommit: db3d2c6db8dd8f8cc14bdcebb2904d5e056a73e7
+ms.openlocfilehash: 23174a0286220175104973290fd00c39bbbaa941
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52579729"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58262449"
 ---
 # <a name="accessreviewschedulesettings-resource-type"></a>Tipo de recurso accessReviewScheduleSettings
 
@@ -25,16 +25,17 @@ O **accessReviewScheduleSettings** define as configurações de [um accessReview
 ## <a name="properties"></a>Propriedades
 | Propriedade    | Tipo   | Descrição |
 | :---------------| :---------- | :---------- |
-| mailNotificationsEnabled|Booliano | Indica se os emails estão habilitados ou desabilitados. O valor padrão é `false`.               |
-| reminderNotificationsEnabled|Booliano  | Indica se os lembretes estão habilitados ou desabilitados. O valor padrão é `false`.  |
-| justificationRequiredOnApproval|Booliano | Indica se os revisadores são necessários para fornecer justificativa com sua decisão. O valor padrão é `false`. |
-| defaultDecisionEnabled|Booliano | Indica se a decisão padrão está habilitada ou desabilitada quando os revisadores não respondem. O valor padrão é `false`. |
-| defaultDecision|String | Decisão escolhida se `defaultDecisionEnabled` estiver habilitada. Pode ser um `Approve` dos `Deny` , ou `Recommendation` . |
+| mailNotificationsEnabled|Boolean | Indica se os emails estão habilitados ou desabilitados. O valor padrão é `false`.               |
+| reminderNotificationsEnabled|Boolean  | Indica se os lembretes estão habilitados ou desabilitados. O valor padrão é `false`.  |
+| justificationRequiredOnApproval|Boolean | Indica se os revisadores são necessários para fornecer justificativa com sua decisão. O valor padrão é `false`. |
+| defaultDecisionEnabled|Boolean | Indica se a decisão padrão está habilitada ou desabilitada quando os revisadores não respondem. O valor padrão é `false`. |
+| defaultDecision|Cadeia de caracteres | Decisão escolhida se `defaultDecisionEnabled` estiver habilitada. Pode ser um `Approve` dos `Deny` , ou `Recommendation` . |
 | instanceDurationInDays|Int32 | Duração de cada recorrência de revisão ( `accessReviewInstance` ) em número de dias. |
 | recurrence|[patternedRecurrence](../resources/patternedrecurrence.md) | Configurações detalhadas para recorrência usando o objeto Outlook de recorrência padrão. Somente `weekly` e `absoluteMonthly` em **recorrênciaPattern** são suportados. Use a propriedade **startDate** em **recurrenceRange** para determinar o dia em que a revisão é iniciada. |
-| autoApplyDecisionsEnabled|Booliano | Indica se as decisões são aplicadas automaticamente. Quando definido como , um usuário deve aplicar as decisões manualmente depois que o `false` revistor concluir a revisão de acesso. Quando definido como , as decisões são aplicadas automaticamente após o fim da duração da instância de revisão de acesso, se os `true` revisadores responderam ou não. O valor padrão é `false`. |
+| autoApplyDecisionsEnabled|Boolean | Indica se as decisões são aplicadas automaticamente. Quando definido como , um usuário deve aplicar as decisões manualmente depois que o `false` revistor concluir a revisão de acesso. Quando definido como , as decisões são aplicadas automaticamente após o fim da duração da instância de revisão de acesso, se os `true` revisadores responderam ou não. O valor padrão é `false`. |
 | applyActions|[Coleção accessReviewApplyAction](../resources/accessreviewapplyaction.md) | Campo opcional. Descreve as ações a ser realizadas depois que uma revisão é concluída. Há dois tipos com suporte no momento: `removeAccessApplyAction` (padrão) e `disableAndDeleteUserApplyAction` . O campo só precisa ser especificado no caso de `disableAndDeleteUserApplyAction` . Consulte [accessReviewApplyAction](accessreviewapplyaction.md). |
-| recommendationsEnabled|Booliano | Indica se as recomendações de decisão estão habilitadas/desabilitadas. |
+| recommendationsEnabled|Boolean | Indica se as recomendações de decisão estão habilitadas/desabilitadas. |
+| recommendationLookBackDuration | Duration| Campo opcional. Indica o período de inatividade (em relação à data de início da instância de revisão) de onde as recomendações serão configuradas. A recomendação será para `deny` se o usuário estiver inativo durante a duração de retorno. As durações suportadas são 30, 60 ou 90 dias.  |
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -64,7 +65,8 @@ Veja a seguir uma representação JSON do recurso.
       "@odata.type": "microsoft.graph.removeAccessApplyAction"
     }
   ],
-  "recommendationsEnabled": "Boolean"
+  "recommendationsEnabled": "Boolean",
+  "recommendationLookBackDuration": "Duration"
 }
 ```
 

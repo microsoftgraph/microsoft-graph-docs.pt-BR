@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 189b1d542af3da6724597a1f9546b68b9d73a61c
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: 49a41b9f70512a6c758d059f1668c9f101fc7c4e
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51127925"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58266104"
 ---
 # <a name="list-macoscustomconfigurations"></a>Listar macOSCustomConfigurations
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -66,7 +66,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1491
+Content-Length: 1534
 
 {
   "value": [
@@ -105,7 +105,8 @@ Content-Length: 1491
       "version": 7,
       "payloadName": "Payload Name value",
       "payloadFileName": "Payload File Name value",
-      "payload": "cGF5bG9hZA=="
+      "payload": "cGF5bG9hZA==",
+      "deploymentChannel": "userChannel"
     }
   ]
 }

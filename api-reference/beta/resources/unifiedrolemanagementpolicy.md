@@ -5,12 +5,12 @@ author: shauliu
 localization_priority: Normal
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 7abeb69f469b9c8b7bec37b240c739774cbd8163
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: 71456639325f586f36652891ab21bb2ccc4ca8454f5037f6362d39fb7b4a6898
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52679873"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54160713"
 ---
 # <a name="unifiedrolemanagementpolicy-resource-type"></a>Tipo de recurso unifiedRoleManagementPolicy
 
@@ -29,14 +29,14 @@ Um unifiedRoleManagementPolicy especifica as várias políticas associadas a um 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|description|String|Descrição da política.|
-|displayName|String|Nome de exibição da política.|
-|id|String|Identificador exclusivo da política.|
+|description|Cadeia de caracteres|Descrição da política.|
+|displayName|Cadeia de caracteres|Nome de exibição da política.|
+|id|Cadeia de caracteres|Identificador exclusivo da política.|
 |isOrganizationDefault|Boolean|Isso só pode ser definido como true para uma única política de toda a locatário que se aplicará a todos os escopos e funções. De definir o scopeId como "/" e scopeType como Directory.|
 |lastModifiedBy|[identity](../resources/identity.md)|A identidade que modificou a configuração da função pela última vez.|
 |lastModifiedDateTime|DateTimeOffset|A hora em que a configuração da função foi modificada pela última vez.|
-|scopeId|String|A id do escopo em que a política é criada. Por exemplo "/", groupId, etc.|
-|scopeType|String|O tipo do escopo em que a política é criada. Um de Directory, DirectoryRole, Group.|
+|scopeId|Cadeia de caracteres|A id do escopo em que a política é criada. Por exemplo "/", groupId, etc.|
+|scopeType|Cadeia de caracteres|O tipo do escopo em que a política é criada. Um de Directory, DirectoryRole, Group.|
 
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|

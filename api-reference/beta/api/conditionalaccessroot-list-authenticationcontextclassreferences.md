@@ -5,12 +5,12 @@ localization_priority: Normal
 author: calebb
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: e744c182c99d91f668605090f52f0f346cc7c9f4
-ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
+ms.openlocfilehash: 44ad9e9d1f62d0f4882160118f98da91a7a571c9aff94b3d59f31809ed3a3a4a
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "52663972"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "57217211"
 ---
 # <a name="list-authenticationcontextclassreferences"></a>Listar authenticationContextClassReferences
 
@@ -26,8 +26,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)                                       |
 |:--------------------------------------|:----------------------------------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante)     | Policy.Read.ConditionalAccess, Policy.ReadWrite.ConditionalAccess |
-|Delegado (conta pessoal da Microsoft) | Sem suporte. |
+|Delegada (conta corporativa ou de estudante)     | Policy.Read.ConditionalAccess, Policy.ReadWrite.ConditionalAccess |
+|Delegada (conta pessoal da Microsoft) | Sem suporte. |
 |Aplicativo                            | Policy.Read.ConditionalAccess, Policy.ReadWrite.ConditionalAccess |
 
 ## <a name="http-request"></a>Solicitação HTTP

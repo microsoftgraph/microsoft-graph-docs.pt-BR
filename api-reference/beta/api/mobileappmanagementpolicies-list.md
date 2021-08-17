@@ -5,12 +5,12 @@ author: ravennMSFT
 localization_priority: Normal
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: a0b59357aad7aa127e7e1d93ce71f63943e6e9db
-ms.sourcegitcommit: 486fe9c77d4d89c5416bb83e8c716e6918c47370
+ms.openlocfilehash: e68d361673f1dd86383843a6accfcbe50427816a3da842a088479c868762b136
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53442124"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "57160091"
 ---
 # <a name="list-mobileappmanagementpolicies"></a>Listar mobileAppManagementPolicies
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 Obter uma lista dos [objetos mobilityManagementPolicy](../resources/mobilitymanagementpolicy.md) e suas propriedades.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 

@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f03bc28996ebe2b5d4185b1eac2d4914653ef433
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: 59bcc62aff03f8320e7547dfa8a3ef0cd717ad37
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51126294"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58263853"
 ---
 # <a name="list-activedirectorywindowsautopilotdeploymentprofiles"></a>Listar activeDirectoryWindowsAutopilotDeploymentProfiles
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -65,7 +65,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1559
+Content-Length: 1627
 
 {
   "value": [
@@ -103,6 +103,7 @@ Content-Length: 1559
       "roleScopeTagIds": [
         "Role Scope Tag Ids value"
       ],
+      "managementServiceAppId": "Management Service App Id value",
       "hybridAzureADJoinSkipConnectivityCheck": true
     }
   ]

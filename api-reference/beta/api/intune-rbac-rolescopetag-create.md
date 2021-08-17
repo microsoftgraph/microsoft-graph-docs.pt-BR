@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b7d02eb907ee0fbedde3240906277601eca8601e
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: 6c6f2ec200e4b50c6a88d7ec50d5be674345c3d221d4be41803f28b4282595a9
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51156664"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54136811"
 ---
 # <a name="create-rolescopetag"></a>Criar roleScopeTag
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -56,7 +56,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar a roleSc
 |:---|:---|:---|
 |id|Cadeia de caracteres|Chave da entidade. É somente leitura e gerada automaticamente.|
 |displayName|Cadeia de caracteres|O nome de exibição ou amigável da Marca de Escopo de Função.|
-|descrição|Cadeia de caracteres|Descrição da marca escopo de função.|
+|description|Cadeia de caracteres|Descrição da marca escopo de função.|
 |isBuiltIn|Booliano|Descrição da marca escopo de função.|
 
 

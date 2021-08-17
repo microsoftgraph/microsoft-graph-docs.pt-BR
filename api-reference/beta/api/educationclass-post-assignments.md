@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: c15bca046a08b62ff9a3d6cc75631e6a9110ef34
-ms.sourcegitcommit: f77c1385306fd40557aceb24fdfe4832cbb60a27
+ms.openlocfilehash: 31ed1c08a0b7cd673382b62f55b90903969b47ac
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/12/2021
-ms.locfileid: "52911778"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58264035"
 ---
 # <a name="create-educationassignment"></a>Criar educationAssignment
 
@@ -27,8 +27,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) |  EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite  |
-|Delegado (conta pessoal da Microsoft) |  Sem suporte.  |
+|Delegada (conta corporativa ou de estudante) |  EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite  |
+|Delegada (conta pessoal da Microsoft) |  Sem suporte.  |
 |Aplicativo | Sem suporte. | 
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -52,12 +52,14 @@ Se tiver êxito, este método retornará um código de resposta e um `201 Create
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
 Este é um exemplo de solicitação.
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
-  "blockType": "ignored",
+  "blockType": "request",
   "name": "create_educationassignment_from_educationclass"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/education/classes/11019/assignments
+POST https://graph.microsoft.com/beta/education/classes/8b8cec7f-d0d8-4974-982a-e29396ddbe7f/assignments
 Content-type: application/json
 Content-length: 279
 
@@ -69,11 +71,11 @@ Content-length: 279
       "content": "Read chapters 1 through 3"
     },
       "grading": {
-        "@odata.type": "#microsoft.education.assignments.api.educationAssignmentPointsGradeType",
+        "@odata.type": "#microsoft.graph.educationAssignmentPointsGradeType",
         "maxPoints": 100
       },
       "assignTo": {
-        "@odata.type": "#microsoft.education.assignments.api.educationAssignmentClassRecipient"
+        "@odata.type": "#microsoft.graph.educationAssignmentClassRecipient"
       },
       "status":"draft",
       "allowStudentsToAddResourcesToSubmission": true
@@ -134,7 +136,13 @@ Content-length: 279
   },
   "lastModifiedDateTime": "2014-02-01T00:00:00Z",
   "notificationChannelUrl": null,
-  "status": "published"
+  "resourcesFolderUrl": null,
+  "allowStudentsToAddResourcesToSubmission": false,
+  "status": "draft",
+  "notificationChannelUrl": null,
+  "webUrl": "https://teams.microsoft.com/l/entity/66aeee93-507d-479a-a3ef-8f494af43945/classroom?context=%7b%22subEntityId%22%3a%22%7b%5c%22version%5c%22%3a%5c%221.0%5c%22%2c%5c%22config%5c%22%3a%7b%5c%22classes%5c%22%3a%5b%7b%5c%22id%5c%22%3a%5c%228b8cec7f-d0d8-4974-982a-e29396ddbe7f%5c%22%2c%5c%22displayName%5c%22%3anull%2c%5c%22assignmentIds%5c%22%3a%5b%5c%22107dac08-35a5-4546-b4b5-1736fea56847%5c%22%5d%7d%5d%7d%2c%5c%22action%5c%22%3a%5c%22navigate%5c%22%2c%5c%22view%5c%22%3a%5c%22assignment-viewer%5c%22%7d%22%2c%22channelId%22%3anull%7d",  
+  "addToCalendarAction": "none",
+  "addedStudentAction": "none"
 }
 ```
 

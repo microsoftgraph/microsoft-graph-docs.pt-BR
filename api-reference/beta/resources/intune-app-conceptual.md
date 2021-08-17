@@ -1,15 +1,15 @@
 ---
-title: Como proteger os dados do aplicativo da empresa com o Microsoft Intune - API do Microsoft Graph
-description: Lista a API do Microsoft Graph para pontos de extremidade do Intune (REST) que gerenciam aplicativos e suas políticas para uma organização de locatários.
+title: Como proteger os dados do aplicativo da sua empresa com Microsoft Intune - API do Microsoft Graph
+description: Lista a API Graph microsoft para pontos de extremidade do Intune (REST) que gerenciam aplicativos e suas políticas para uma organização de locatários.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 0faa6c3b62a865c027d1ece4e5b34915f2da996b
-ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
+ms.openlocfilehash: 3ab2c83a2aea69f91e46045e82f19eb975c56b0c
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51863973"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58266475"
 ---
 # <a name="how-to-protect-your-company-app-data-with-microsoft-intune"></a>Como proteger dados de aplicativos corporativos com o Microsoft Intune
 
@@ -77,6 +77,7 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar políticas de 
 - [Resultado da ação de revogar licenças de aplicativo do VPP do iOS](intune-apps-iosvppapprevokelicensesactionresult.md)
 - [Livro eletrônico do VPP do iOS](intune-books-iosvppebook.md)
 - [Atribuição de livros eletrônicos do VPP do iOS](intune-books-iosvppebookassignment.md)
+- [Par chave/valor](intune-androidforwork-keyvaluepair.md)
 - [Aplicativo LOB para macOS](intune-apps-macoslobapp.md)
 - [Aplicativo filho macOS LOB](intune-apps-macoslobchildapp.md)
 - [aplicativo mdatp do macOS](intune-apps-macosmdatpapp.md)
@@ -125,10 +126,11 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar políticas de 
 - [Tipo de supersedência de aplicativo móvel](intune-apps-mobileappsupersedencetype.md)
 - [Aplicativo contido móvel](intune-apps-mobilecontainedapp.md)
 - [Aplicativo LOB móvel](intune-apps-mobilelobapp.md)
-- [ID do produto do Office](intune-apps-officeproductid.md)
+- [Office id do produto](intune-apps-officeproductid.md)
 - [Aplicativo do pacote Office](intune-apps-officesuiteapp.md)
 - [Nível de exibição do andamento da instalação do pacote Office](intune-apps-officesuiteinstallprogressdisplaylevel.md)
 - [Canal de atualização do Office](intune-apps-officeupdatechannel.md)
+- [Estado do aplicativo resultante](intune-apps-resultantappstate.md)
 - [Detalhe do estado do aplicativo resultante](intune-apps-resultantappstatedetail.md)
 - [Certificado de assinatura de código da Symantec](intune-apps-symanteccodesigningcertificate.md)
 - [Status de instalação do aplicativo do usuário](intune-apps-userappinstallstatus.md)
@@ -168,7 +170,7 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar políticas de 
 - [Windows AppX](intune-apps-windowsappx.md)
 - [Arquitetura do Windows](intune-apps-windowsarchitecture.md)
 - [Tipo de dispositivo Windows](intune-apps-windowsdevicetype.md)
-- [Aplicativo do Microsoft Edge do Windows](intune-apps-windowsmicrosoftedgeapp.md)
+- [Windows microsoft edge app](intune-apps-windowsmicrosoftedgeapp.md)
 - [Sistema operacional mínimo do Windows](intune-apps-windowsminimumoperatingsystem.md)
 - [Windows Mobile MSI](intune-apps-windowsmobilemsi.md)
 - [Informações de pacote do Windows](intune-apps-windowspackageinformation.md)

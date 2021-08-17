@@ -1,34 +1,34 @@
 ---
-title: tipo de recurso windowsKioskLocalGroup
-description: A classe usada para identificar um grupo local para a configuração do quiosque
+title: Tipo de recurso windowsKioskLocalGroup
+description: A classe usada para identificar um grupo local para a configuração de quiosque
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 50ebc28381d1453fe7f178f9ede846a60f2dcf0f
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: aaa2c0e0f190b78b4beda429c4ee60447f24bdb798884f0584029c1f150d6eb6
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49226647"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54193752"
 ---
-# <a name="windowskiosklocalgroup-resource-type"></a>tipo de recurso windowsKioskLocalGroup
+# <a name="windowskiosklocalgroup-resource-type"></a>Tipo de recurso windowsKioskLocalGroup
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-A classe usada para identificar um grupo local para a configuração do quiosque
+A classe usada para identificar um grupo local para a configuração de quiosque
 
 
-Herda de [windowsKioskUser](../resources/intune-deviceconfig-windowskioskuser.md)
+Herda do [windowsKioskUser](../resources/intune-deviceconfig-windowskioskuser.md)
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|Nome_do_grupo|String|O nome do grupo local que será bloqueado para esta configuração de quiosque|
+|groupName|Cadeia de caracteres|O nome do grupo local que será bloqueado para essa configuração de quiosque|
 
 ## <a name="relationships"></a>Relações
 Nenhum

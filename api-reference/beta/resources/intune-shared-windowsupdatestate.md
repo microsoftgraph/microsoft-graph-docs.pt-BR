@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: f7e5fd52f86af89cc886e88d40cd8098d0c13c7e
-ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
+ms.openlocfilehash: 648e8bb9348f8b1bea78e8c06113555d350891bea0265faa768ad8fa0dc76fc2
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51864932"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54193535"
 ---
 # <a name="windowsupdatestate-resource-type"></a>Tipo de recurso windowsUpdateState
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -39,11 +39,11 @@ Ainda não documentado
 |userId|Cadeia de caracteres|A id do usuário.|
 |deviceDisplayName|Cadeia de caracteres|Nome de exibição do dispositivo.|
 |userPrincipalName|Cadeia de caracteres|Nome principal do usuário.|
-|status|[windowsUpdateStatus](../resources/intune-deviceconfig-windowsupdatestatus.md)|Status udpate do Windows. Os valores possíveis são: `upToDate`, `pendingInstallation`, `pendingReboot`, `failed`.|
-|qualityUpdateVersion|Cadeia de Caracteres|A Versão de Atualização de Qualidade do dispositivo.|
-|featureUpdateVersion|Cadeia de Caracteres|A versão atual de atualização de recursos do dispositivo.|
-|lastScanDateTime|DateTimeOffset|A data em que o Agente do Windows Update fez uma verificação bem-sucedida.|
-|lastSyncDateTime|DateTimeOffset|Última data em que o dispositivo sincroniza com o Microsoft Intune.|
+|status|[windowsUpdateStatus](../resources/intune-deviceconfig-windowsupdatestatus.md)|Windows status udpate. Os valores possíveis são: `upToDate`, `pendingInstallation`, `pendingReboot`, `failed`.|
+|qualityUpdateVersion|Cadeia de caracteres|A Versão de Atualização de Qualidade do dispositivo.|
+|featureUpdateVersion|Cadeia de caracteres|A versão atual de atualização de recursos do dispositivo.|
+|lastScanDateTime|DateTimeOffset|A data em que o Windows Update Agent fez uma verificação bem-sucedida.|
+|lastSyncDateTime|DateTimeOffset|Última data em que o dispositivo sincroniza com Microsoft Intune.|
 
 ## <a name="relationships"></a>Relações
 Nenhum
