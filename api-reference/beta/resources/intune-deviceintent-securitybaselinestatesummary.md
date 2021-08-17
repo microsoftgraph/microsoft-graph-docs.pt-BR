@@ -1,22 +1,22 @@
 ---
-title: tipo de recurso securityBaselineStateSummary
+title: Tipo de recurso securityBaselineStateSummary
 description: O resumo do estado de conformidade da linha de base de segurança para a linha de base de segurança da conta.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: f162da0276f9759fa04f40cbd99a57ac6816b5bc
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 67af97c477bd559080ce8aa1b10f5418614f716d8aa439b590680b8416bebf59
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49209238"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54193661"
 ---
-# <a name="securitybaselinestatesummary-resource-type"></a>tipo de recurso securityBaselineStateSummary
+# <a name="securitybaselinestatesummary-resource-type"></a>Tipo de recurso securityBaselineStateSummary
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -25,13 +25,13 @@ O resumo do estado de conformidade da linha de base de segurança para a linha d
 ## <a name="methods"></a>Métodos
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
-|[Obter securityBaselineStateSummary](../api/intune-deviceintent-securitybaselinestatesummary-get.md)|[securityBaselineStateSummary](../resources/intune-deviceintent-securitybaselinestatesummary.md)|Leia as propriedades e as relações do objeto [securityBaselineStateSummary](../resources/intune-deviceintent-securitybaselinestatesummary.md) .|
-|[Atualizar securityBaselineStateSummary](../api/intune-deviceintent-securitybaselinestatesummary-update.md)|[securityBaselineStateSummary](../resources/intune-deviceintent-securitybaselinestatesummary.md)|Atualiza as propriedades de um objeto [securityBaselineStateSummary](../resources/intune-deviceintent-securitybaselinestatesummary.md) .|
+|[Obter securityBaselineStateSummary](../api/intune-deviceintent-securitybaselinestatesummary-get.md)|[securityBaselineStateSummary](../resources/intune-deviceintent-securitybaselinestatesummary.md)|Leia propriedades e relações do [objeto securityBaselineStateSummary.](../resources/intune-deviceintent-securitybaselinestatesummary.md)|
+|[Atualizar securityBaselineStateSummary](../api/intune-deviceintent-securitybaselinestatesummary-update.md)|[securityBaselineStateSummary](../resources/intune-deviceintent-securitybaselinestatesummary.md)|Atualize as propriedades de [um objeto securityBaselineStateSummary.](../resources/intune-deviceintent-securitybaselinestatesummary.md)|
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Identificador exclusivo da entidade.|
+|id|Cadeia de caracteres|Identificador exclusivo da entidade.|
 |secureCount|Int32|Número de dispositivos seguros|
 |notSecureCount|Int32|Número de dispositivos não seguros|
 |unknownCount|Int32|Número de dispositivos desconhecidos|

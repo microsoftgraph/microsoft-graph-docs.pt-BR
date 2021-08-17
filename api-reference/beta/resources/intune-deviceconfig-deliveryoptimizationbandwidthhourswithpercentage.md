@@ -1,26 +1,26 @@
 ---
 title: tipo de recurso deliveryOptimizationBandwidthHoursWithPercentage
-description: Limite de largura de banda como uma porcentagem com horário comercial.
+description: Limite de largura de banda como porcentagem com horário comercial.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 86d01e5af73da903d138dd061204adb6a6955abd
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 85e19d637b4f0002ce16a98b0eaa5795d396c441f878fcbf5992ead7f4aa392b
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49288779"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54195131"
 ---
 # <a name="deliveryoptimizationbandwidthhourswithpercentage-resource-type"></a>tipo de recurso deliveryOptimizationBandwidthHoursWithPercentage
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Limite de largura de banda como uma porcentagem com horário comercial.
+Limite de largura de banda como porcentagem com horário comercial.
 
 
 Herda de [deliveryOptimizationBandwidth](../resources/intune-deviceconfig-deliveryoptimizationbandwidth.md)
@@ -28,8 +28,8 @@ Herda de [deliveryOptimizationBandwidth](../resources/intune-deviceconfig-delive
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|bandwidthBackgroundPercentageHours|[deliveryOptimizationBandwidthBusinessHoursLimit](../resources/intune-deviceconfig-deliveryoptimizationbandwidthbusinesshourslimit.md)|Porcentagem de tempo de download em segundo plano.|
-|bandwidthForegroundPercentageHours|[deliveryOptimizationBandwidthBusinessHoursLimit](../resources/intune-deviceconfig-deliveryoptimizationbandwidthbusinesshourslimit.md)|Porcentagem de tempo de download do primeiro plano.|
+|bandwidthBackgroundPercentageHours|[deliveryOptimizationBandwidthBusinessHoursLimit](../resources/intune-deviceconfig-deliveryoptimizationbandwidthbusinesshourslimit.md)|Horário de porcentagem de download em segundo plano.|
+|bandwidthForegroundPercentageHours|[deliveryOptimizationBandwidthBusinessHoursLimit](../resources/intune-deviceconfig-deliveryoptimizationbandwidthbusinesshourslimit.md)|Horas percentuais de download em primeiro plano.|
 
 ## <a name="relationships"></a>Relações
 Nenhum

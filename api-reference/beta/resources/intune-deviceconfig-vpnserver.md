@@ -1,33 +1,33 @@
 ---
-title: tipo de recurso vpnServer
-description: Definição do servidor VPN.
+title: Tipo de recurso vpnServer
+description: Definição do Servidor VPN.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8281aaaec193b5a78e913af52ce51d8f327ce8cf
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: b620b47742d8f5bc64eeacee361683cf0676950ff85839941c9972e8a4c91277
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49279476"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54139625"
 ---
-# <a name="vpnserver-resource-type"></a>tipo de recurso vpnServer
+# <a name="vpnserver-resource-type"></a>Tipo de recurso vpnServer
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Definição do servidor VPN.
+Definição do Servidor VPN.
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|description|String|Descrição.|
+|description|Cadeia de caracteres|Descrição.|
 |address|Cadeia de caracteres|Endereço (endereço IP, FQDN ou URL)|
-|isDefaultServer|Booliano|Servidor padrão.|
+|isDefaultServer|Boolean|Servidor padrão.|
 
 ## <a name="relationships"></a>Relações
 Nenhum

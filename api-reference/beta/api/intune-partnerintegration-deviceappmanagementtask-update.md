@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c22587015dbf22b1537c7774244d551225e8690f
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: 969cb07a6ca2611a2d47f33d091553be161afb58454c19871bb4098d0aeeed7d
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51134876"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54186143"
 ---
 # <a name="update-deviceappmanagementtask"></a>Atualizar deviceAppManagementTask
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -55,7 +55,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [deviceA
 |:---|:---|:---|
 |id|Cadeia de caracteres|A chave da entidade.|
 |displayName|Cadeia de caracteres|O nome.|
-|descrição|Cadeia de caracteres|A descrição.|
+|description|Cadeia de caracteres|A descrição.|
 |createdDateTime|DateTimeOffset|A data criada.|
 |dueDateTime|DateTimeOffset|A data de vencimento.|
 |category|[deviceAppManagementTaskCategory](../resources/intune-partnerintegration-deviceappmanagementtaskcategory.md)|A categoria. Os valores possíveis são: `unknown` e `advancedThreatProtection`.|

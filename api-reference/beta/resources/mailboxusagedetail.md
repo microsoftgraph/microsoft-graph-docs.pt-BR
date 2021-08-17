@@ -1,18 +1,18 @@
 ---
-title: Tipo de recurso mailboxUsageDetail
+title: tipo de recurso mailboxUsageDetail
 description: Veja a seguir uma representação JSON do recurso.
 localization_priority: Normal
 author: sarahwxy
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 5b3eb643f74129d481b379d72515dbffaafd336c
-ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
+ms.openlocfilehash: 56f2046c1979226a7ea6bb4e6ffe2c0a5bbfcdccbbe3f93a3675490b1a4725a5
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49980756"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54195082"
 ---
-# <a name="mailboxusagedetail-resource-type"></a>Tipo de recurso mailboxUsageDetail
+# <a name="mailboxusagedetail-resource-type"></a>tipo de recurso mailboxUsageDetail
 
 Namespace: microsoft.graph
 
@@ -23,7 +23,7 @@ Namespace: microsoft.graph
 | reportRefreshDate               | Data    |
 | userPrincipalName               | Cadeia de caracteres  |
 | displayName                     | Cadeia de caracteres  |
-| isDeleted                       | Booliano |
+| isDeleted                       | Boolean |
 | deletedDate                     | Data    |
 | createdDate                     | Data    |
 | lastActivityDate                | Data    |

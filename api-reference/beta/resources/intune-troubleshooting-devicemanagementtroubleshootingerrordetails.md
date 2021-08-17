@@ -1,22 +1,20 @@
 ---
-title: tipo de recurso deviceManagementTroubleshootingErrorDetails
+title: Tipo de recurso deviceManagementTroubleshootingErrorDetails
 description: Objeto contendo informações detalhadas sobre o erro e sua correção.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: e28d47e9ab8752c733a32bb96f2685bfd90bd6d3
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: c67de7db6a74c327e765e13a6440c7ec6bf3a1ce
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49255333"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58248162"
 ---
-# <a name="devicemanagementtroubleshootingerrordetails-resource-type"></a>tipo de recurso deviceManagementTroubleshootingErrorDetails
+# <a name="devicemanagementtroubleshootingerrordetails-resource-type"></a>Tipo de recurso deviceManagementTroubleshootingErrorDetails
 
 Namespace: microsoft.graph
-
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -26,10 +24,10 @@ Objeto contendo informações detalhadas sobre o erro e sua correção.
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |context|String|Ainda não documentado|
-|alguma|String|Ainda não documentado|
-|failureDetails|String|A descrição detalhada do que deu errado.|
-|correção|String|A descrição detalhada de como corrigir esse problema.|
-|recursos|coleção [deviceManagementTroubleshootingErrorResource](../resources/intune-troubleshooting-devicemanagementtroubleshootingerrorresource.md)|Links para a documentação útil sobre esta falha.|
+|failure|String|Ainda não documentado|
+|failureDetails|Cadeia de caracteres|A descrição detalhada do que deu errado.|
+|correção|Cadeia de caracteres|A descrição detalhada de como remediar esse problema.|
+|recursos|[Coleção deviceManagementTroubleshootingErrorResource](../resources/intune-troubleshooting-devicemanagementtroubleshootingerrorresource.md)|Links para documentação útil sobre essa falha.|
 
 ## <a name="relationships"></a>Relações
 Nenhum

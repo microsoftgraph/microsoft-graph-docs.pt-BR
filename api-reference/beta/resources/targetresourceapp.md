@@ -1,20 +1,20 @@
 ---
-title: tipo de recurso targetResourceApp
-description: Indica o objeto app que foi adicionado, atualizado ou excluído por administradores como parte da atividade de auditoria. Derivado do recurso targetResource.
+title: Tipo de recurso targetResourceApp
+description: Indica o objeto do aplicativo que foi adicionado, atualizado ou excluído pelos administradores como parte da atividade de auditoria. Derivado do recurso targetResource.
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: SarahBar
-ms.openlocfilehash: a34e235cb89688b003691b5c50c5012e617c16a3
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 7a961d5136b517fbfd4b6018edf601cb9d0d6daa59feb16b038b02b9669e35fc
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47985640"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54200310"
 ---
-# <a name="targetresourceapp-resource-type"></a>tipo de recurso targetResourceApp
+# <a name="targetresourceapp-resource-type"></a>Tipo de recurso targetResourceApp
 
-Namespace: Microsoft. Graph indica o objeto app que foi adicionado, atualizado ou excluído por administradores como parte da atividade de auditoria. Derivado do recurso [targetResource](targetresource.md) .
+Namespace: microsoft.graph Indica o objeto de aplicativo que foi adicionado, atualizado ou excluído pelos administradores como parte da atividade de auditoria. Derivado do recurso [targetResource.](targetresource.md)
 
 
 

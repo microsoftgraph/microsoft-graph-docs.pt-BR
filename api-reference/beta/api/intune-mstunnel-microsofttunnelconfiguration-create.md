@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e17cd32c6fedf529cab0c840bea93e7d81c1a4cf
-ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
+ms.openlocfilehash: 79aa609f4902f518a492adfeea2bbc4a050c6cd5
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51868152"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58263237"
 ---
 # <a name="create-microsofttunnelconfiguration"></a>Criar microsoftTunnelConfiguration
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -27,9 +27,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All, MicrosoftTunnelGateway.Read.All, MicrosoftTunnelGateway.ReadWrite.All|
+|Delegada (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegada (conta pessoal da Microsoft)|Sem suporte.|
-|Application|MicrosoftTunnelGateway.ReadWrite.All|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -56,16 +56,16 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar o micros
 |id|Cadeia de caracteres|Id do MicrosoftTunnelConfiguration|
 |displayName|Cadeia de caracteres|O nome de exibição do MicrosoftTunnelConfiguration|
 |description|Cadeia de caracteres|A descrição do MicrosoftTunnelConfiguration|
-|network|Cadeia de Caracteres|A sub-rede que será usada para alocar endereço virtual para os clientes|
-|dnsServers|Coleção String|Os servidores DNS que serão usados pelos clientes|
-|defaultDomainSuffix|Cadeia de Caracteres|O apêndice Domínio Padrão que será usado pelos clientes|
-|routesInclude|Coleção String|Os routs que serão roteados pelo servidor|
-|routesExclude|Coleção String|Subconjunto das rotas que não serão roteadas pelo servidor|
-|splitDNS|Coleção String|Os domínios que serão resolvidos usando os servidores dns fornecidos|
+|network|Cadeia de caracteres|A sub-rede que será usada para alocar endereço virtual para os clientes|
+|dnsServers|String collection|Os servidores DNS que serão usados pelos clientes|
+|defaultDomainSuffix|Cadeia de caracteres|O apêndice Domínio Padrão que será usado pelos clientes|
+|routesInclude|String collection|Os routs que serão roteados pelo servidor|
+|routesExclude|String collection|Subconjunto das rotas que não serão roteadas pelo servidor|
+|splitDNS|String collection|Os domínios que serão resolvidos usando os servidores dns fornecidos|
 |listenPort|Int32|A porta que o TCP e o UPD escutarão no servidor|
-|advancedSettings|Coleção [keyValuePair](../resources/intune-shared-keyvaluepair.md)|Configurações adicionais que podem ser aplicadas ao servidor|
+|advancedSettings|Coleção [keyValuePair](../resources/intune-mstunnel-keyvaluepair.md)|Configurações adicionais que podem ser aplicadas ao servidor|
 |lastUpdateDateTime|DateTimeOffset|Quando o MicrosoftTunnelConfiguration foi atualizado pela última vez|
-|roleScopeTagIds|Coleção String|Lista de marcas de escopo para esta instância entity.|
+|roleScopeTagIds|String collection|Lista de marcas de escopo para esta instância entity.|
 
 
 
