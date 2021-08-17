@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f8bd6f14ff7ca0f3d75bc9229e9d9fefc27e342c
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: fdd5e77d382636a9f81df9ab0b0ba9cd66230dd7df5abefbc706d947d88c6a02
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51133700"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54132512"
 ---
 # <a name="create-deviceinstallstate"></a>Criar deviceInstallState
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 

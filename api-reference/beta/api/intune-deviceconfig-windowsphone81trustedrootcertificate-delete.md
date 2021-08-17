@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5d161f4dd88cb41206c1ed5eecfe255b7108cb78
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: 65d6306a369acc486152c58453ed25e4fbfc2f0c00402b074d13540665c19028
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51129346"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54154158"
 ---
 # <a name="delete-windowsphone81trustedrootcertificate"></a>Excluir windowsPhone81TrustedRootCertificate
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 

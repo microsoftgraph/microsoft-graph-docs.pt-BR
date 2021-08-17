@@ -1,32 +1,32 @@
 ---
-title: tipo de recurso deviceManagementExchangeDeviceClass
-description: Classe de dispositivo no Exchange.
+title: Tipo de recurso deviceManagementExchangeDeviceClass
+description: Classe device no Exchange.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 86b26f41e756471b416686cf7443b6280341097b
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 27f74ea0e26fc5f5371bdc864cb4da3c4730c31910b8b1ec366c571eecfa6ade
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49272238"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54178847"
 ---
-# <a name="devicemanagementexchangedeviceclass-resource-type"></a>tipo de recurso deviceManagementExchangeDeviceClass
+# <a name="devicemanagementexchangedeviceclass-resource-type"></a>Tipo de recurso deviceManagementExchangeDeviceClass
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Classe de dispositivo no Exchange.
+Classe device no Exchange.
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|nome|String|Nome da classe de dispositivo que será afetada por essa regra.|
-|tipo|[deviceManagementExchangeAccessRuleType](../resources/intune-onboarding-devicemanagementexchangeaccessruletype.md)|Tipo de dispositivo afetado por essa regra, por exemplo, Family. Os valores possíveis são: `family`, `model`.|
+|nome|Cadeia de caracteres|Nome da classe de dispositivo que será impactada por essa regra.|
+|type|[deviceManagementExchangeAccessRuleType](../resources/intune-onboarding-devicemanagementexchangeaccessruletype.md)|Tipo de dispositivo que é afetado por essa regra, por exemplo, Model, Family. Os valores possíveis são: `family`, `model`.|
 
 ## <a name="relationships"></a>Relações
 Nenhum

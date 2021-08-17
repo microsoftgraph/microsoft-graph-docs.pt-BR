@@ -1,33 +1,33 @@
 ---
-title: tipo de enumeração ndesConnectorState
-description: O status atual do conector NDES.
+title: Tipo de número ndesConnectorState
+description: O status atual do Conector do Ndes.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 228093f29880f9b73b2ea8b8efb6ba6118179780
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 1b47c59cc5e4c60ac7cfd2f1adb4b544684d3be753d1a71f9c48c7baf3e79420
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49273260"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54164332"
 ---
-# <a name="ndesconnectorstate-enum-type"></a>tipo de enumeração ndesConnectorState
+# <a name="ndesconnectorstate-enum-type"></a>Tipo de número ndesConnectorState
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-O status atual do conector NDES.
+O status atual do Conector do Ndes.
 
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|nenhum|,0|Estado ainda não disponível para esse conector.|
-|active|1|O conector NDES se conectou recentemente|
-|inativa|duas|Nenhuma atividade recente para o conector NDES|
+|Nenhuma|0|Estado não disponível ainda para esse conector.|
+|active|1 |O conector do Ndes se conectou recentemente|
+|inativo|2|Nenhuma atividade recente para o conector do Ndes|
 
 
 

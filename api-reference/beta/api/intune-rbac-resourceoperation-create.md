@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ed4978f42ed8f336720a9bc6458640111590d71f
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: c214c4e0b9bc2ddddcac750b834bad291ec97bfaf99908c3510d64f373413031
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51148474"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54224989"
 ---
 # <a name="create-resourceoperation"></a>Criar resourceOperation
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -57,8 +57,8 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar resource
 |recurso|Cadeia de caracteres|Categoria de recurso à qual esta Operação pertence.|
 |resourceName|Cadeia de caracteres|Nome do recurso em que essa operação é executada.|
 |actionName|Cadeia de caracteres|Tipo de ação em que essa operação será executada. O actionName deve ser conciso e limitado ao mínimo de palavras possível.|
-|descrição|Cadeia de caracteres|Descrição da operação de recurso. A descrição é usada no texto exibido com o passar o mouse para a operação quando exibida no Portal do Azure.|
-|enabledForScopeValidation|Booleano|Determina se a Permissão é validada para Escopos definidos por Atribuição de Função.|
+|description|Cadeia de caracteres|Descrição da operação de recurso. A descrição é usada no texto exibido com o passar o mouse para a operação quando exibida no Portal do Azure.|
+|enabledForScopeValidation|Boolean|Determina se a Permissão é validada para Escopos definidos por Atribuição de Função.|
 
 
 

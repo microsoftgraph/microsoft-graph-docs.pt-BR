@@ -5,12 +5,12 @@ author: shauliu
 localization_priority: Normal
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 5e3db8812b58b8276ab2fdd977e110f30a874c9b
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: d12f3ed100179198d66fe780c9aee6dd93039012edfc105ac58001d24f6e3d77
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52680693"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54155887"
 ---
 # <a name="unifiedrolemanagementpolicyauthenticationcontextrule-resource-type"></a>Tipo de recurso unifiedRoleManagementPolicyAuthenticationContextRule
 
@@ -23,8 +23,8 @@ Herda [de unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpol
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|claimValue|String|Valor da declaração de contexto de autenticação.|
-|id|String|Identificador exclusivo da regra. Herdado [de unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md)|
+|claimValue|Cadeia de caracteres|Valor da declaração de contexto de autenticação.|
+|id|Cadeia de caracteres|Identificador exclusivo da regra. Herdado [de unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md)|
 |isEnabled|Booliano|Indica se a configuração está habilitada.|
 |destino|[unifiedRoleManagementPolicyRuleTarget](../resources/unifiedrolemanagementpolicyruletarget.md)|O destino da regra. Herdado [de unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md)|
 

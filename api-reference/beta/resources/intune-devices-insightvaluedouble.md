@@ -1,26 +1,26 @@
 ---
-title: tipo de recurso insightValueDouble
-description: O valor em uma visão geral da análise da experiência do usuário.
+title: Tipo de recurso insightValueDouble
+description: O valor em um insight de análise de experiência do usuário.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: b24b8fd90d09de44f47316dccf7a31ced31338d9
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 087a2f432a74bdde512f09a690db9d1b6b5ea3b70e334ac359dc9e735b00b99f
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49209077"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54156181"
 ---
-# <a name="insightvaluedouble-resource-type"></a>tipo de recurso insightValueDouble
+# <a name="insightvaluedouble-resource-type"></a>Tipo de recurso insightValueDouble
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-O valor em uma visão geral da análise da experiência do usuário.
+O valor em um insight de análise de experiência do usuário.
 
 
 Herda de [userExperienceAnalyticsInsightValue](../resources/intune-devices-userexperienceanalyticsinsightvalue.md)

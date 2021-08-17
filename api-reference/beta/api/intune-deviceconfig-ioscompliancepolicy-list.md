@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: fd180287000a273c779ff500dc391b1c6e19ebae
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: 8bd9fc7bafe8f5e72cdfcb5c2dc3f6d250c078dd6bb4e22b38b7d39fa03ad89f
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51151491"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54225388"
 ---
 # <a name="list-ioscompliancepolicies"></a>Listar iosCompliancePolicies
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 

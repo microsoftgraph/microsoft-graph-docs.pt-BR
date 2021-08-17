@@ -1,26 +1,26 @@
 ---
-title: tipo de recurso deliveryOptimizationGroupIdCustom
-description: Tipo de ID de grupo personalizado
+title: Tipo de recurso deliveryOptimizationGroupIdCustom
+description: Tipo de id de grupo personalizado
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 2103e2df1b574c501a688c2e260700d018871eb4
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 619e2cd7a933994703f4beee13c6356fc31a5a320d6797455813e7e409f16f1b
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49294750"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54209922"
 ---
-# <a name="deliveryoptimizationgroupidcustom-resource-type"></a>tipo de recurso deliveryOptimizationGroupIdCustom
+# <a name="deliveryoptimizationgroupidcustom-resource-type"></a>Tipo de recurso deliveryOptimizationGroupIdCustom
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Tipo de ID de grupo personalizado
+Tipo de id de grupo personalizado
 
 
 Herda de [deliveryOptimizationGroupIdSource](../resources/intune-deviceconfig-deliveryoptimizationgroupidsource.md)
@@ -28,7 +28,7 @@ Herda de [deliveryOptimizationGroupIdSource](../resources/intune-deviceconfig-de
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|groupIdCustom|String|Especifica uma ID de grupo arbitrária à qual o dispositivo pertence|
+|groupIdCustom|Cadeia de caracteres|Especifica uma ID de grupo arbitrária à que o dispositivo pertence|
 
 ## <a name="relationships"></a>Relações
 Nenhum

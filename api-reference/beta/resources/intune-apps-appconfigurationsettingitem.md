@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 7f29e8780ad6c71eaf331f9fe1b1e32d383f0b17
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: e9c5349ecbbd9b61c1a5dacd5ac7006fe29f41a529c72f0bb0bf5e47a9d269a3
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49284726"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54142194"
 ---
 # <a name="appconfigurationsettingitem-resource-type"></a>Tipo de recurso appConfigurationSettingItem
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 

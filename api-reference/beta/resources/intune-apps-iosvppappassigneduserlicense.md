@@ -1,26 +1,26 @@
 ---
-title: tipo de recurso iosVppAppAssignedUserLicense
-description: atribuição de licença de usuário do programa de compra de volume iOS. Essa classe não oferece suporte para Criar, Excluir ou Atualizar.
+title: Tipo de recurso iosVppAppAssignedUserLicense
+description: Atribuição de licença de usuário do Programa de Compra de Volume do iOS. Essa classe não oferece suporte para Criar, Excluir ou Atualizar.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 370c59af9aa3997340987457b2395c3d7024de86
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 7df3d131b8fa932b3cee492736ef33034deb405264f2e4429af8965656a4f22b
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49284572"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54179155"
 ---
-# <a name="iosvppappassigneduserlicense-resource-type"></a>tipo de recurso iosVppAppAssignedUserLicense
+# <a name="iosvppappassigneduserlicense-resource-type"></a>Tipo de recurso iosVppAppAssignedUserLicense
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-atribuição de licença de usuário do programa de compra de volume iOS. Essa classe não oferece suporte para Criar, Excluir ou Atualizar.
+Atribuição de licença de usuário do Programa de Compra de Volume do iOS. Essa classe não oferece suporte para Criar, Excluir ou Atualizar.
 
 
 Herda de [iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md)
@@ -28,20 +28,20 @@ Herda de [iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedli
 ## <a name="methods"></a>Métodos
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
-|[Listar iosVppAppAssignedUserLicenses](../api/intune-apps-iosvppappassigneduserlicense-list.md)|coleção [iosVppAppAssignedUserLicense](../resources/intune-apps-iosvppappassigneduserlicense.md)|Listar Propriedades e relações dos objetos [iosVppAppAssignedUserLicense](../resources/intune-apps-iosvppappassigneduserlicense.md) .|
-|[Obter iosVppAppAssignedUserLicense](../api/intune-apps-iosvppappassigneduserlicense-get.md)|[iosVppAppAssignedUserLicense](../resources/intune-apps-iosvppappassigneduserlicense.md)|Leia as propriedades e as relações do objeto [iosVppAppAssignedUserLicense](../resources/intune-apps-iosvppappassigneduserlicense.md) .|
-|[Criar iosVppAppAssignedUserLicense](../api/intune-apps-iosvppappassigneduserlicense-create.md)|[iosVppAppAssignedUserLicense](../resources/intune-apps-iosvppappassigneduserlicense.md)|Criar um novo objeto [iosVppAppAssignedUserLicense](../resources/intune-apps-iosvppappassigneduserlicense.md) .|
-|[Excluir iosVppAppAssignedUserLicense](../api/intune-apps-iosvppappassigneduserlicense-delete.md)|Nenhum|Exclui [iosVppAppAssignedUserLicense](../resources/intune-apps-iosvppappassigneduserlicense.md).|
-|[Atualizar iosVppAppAssignedUserLicense](../api/intune-apps-iosvppappassigneduserlicense-update.md)|[iosVppAppAssignedUserLicense](../resources/intune-apps-iosvppappassigneduserlicense.md)|Atualiza as propriedades de um objeto [iosVppAppAssignedUserLicense](../resources/intune-apps-iosvppappassigneduserlicense.md) .|
+|[Listar iosVppAppAssignedUserLicenses](../api/intune-apps-iosvppappassigneduserlicense-list.md)|[Coleção iosVppAppAssignedUserLicense](../resources/intune-apps-iosvppappassigneduserlicense.md)|Listar propriedades e relações dos [objetos iosVppAppAssignedUserLicense.](../resources/intune-apps-iosvppappassigneduserlicense.md)|
+|[Obter iosVppAppAssignedUserLicense](../api/intune-apps-iosvppappassigneduserlicense-get.md)|[iosVppAppAssignedUserLicense](../resources/intune-apps-iosvppappassigneduserlicense.md)|Ler propriedades e relações do [objeto iosVppAppAssignedUserLicense.](../resources/intune-apps-iosvppappassigneduserlicense.md)|
+|[Criar iosVppAppAssignedUserLicense](../api/intune-apps-iosvppappassigneduserlicense-create.md)|[iosVppAppAssignedUserLicense](../resources/intune-apps-iosvppappassigneduserlicense.md)|Crie um novo [objeto iosVppAppAssignedUserLicense.](../resources/intune-apps-iosvppappassigneduserlicense.md)|
+|[Excluir iosVppAppAssignedUserLicense](../api/intune-apps-iosvppappassigneduserlicense-delete.md)|Nenhum|Exclui um [iosVppAppAssignedUserLicense](../resources/intune-apps-iosvppappassigneduserlicense.md).|
+|[Atualizar iosVppAppAssignedUserLicense](../api/intune-apps-iosvppappassigneduserlicense-update.md)|[iosVppAppAssignedUserLicense](../resources/intune-apps-iosvppappassigneduserlicense.md)|Atualize as propriedades de [um objeto iosVppAppAssignedUserLicense.](../resources/intune-apps-iosvppappassigneduserlicense.md)|
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave da entidade. Herdado de [iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md)|
-|useremailaddress|String|O endereço de email do usuário. Herdado de [iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md)|
-|userId|Cadeia de caracteres|A ID do usuário. Herdado de [iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md)|
-|userName|Cadeia de caracteres|O nome de usuário. Herdado de [iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md)|
-|userPrincipalName|String|O nome da entidade de segurança do usuário. Herdado de [iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md)|
+|id|Cadeia de caracteres|Chave da entidade. Herdado [do iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md)|
+|userEmailAddress|Cadeia de caracteres|O endereço de email do usuário. Herdado [do iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md)|
+|userId|Cadeia de caracteres|A ID do usuário. Herdado [do iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md)|
+|userName|Cadeia de caracteres|O nome do usuário. Herdado [do iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md)|
+|userPrincipalName|Cadeia de caracteres|O nome da entidade de segurança do usuário. Herdado [do iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md)|
 
 ## <a name="relationships"></a>Relações
 Nenhum

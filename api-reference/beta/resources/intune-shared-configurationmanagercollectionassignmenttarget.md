@@ -1,26 +1,26 @@
 ---
-title: Tipo de recurso configurationManagerCollectionAssignmentTarget
-description: Representa uma atribuição a uma coleção do Configuration Manager.
+title: tipo de recurso configurationManagerCollectionAssignmentTarget
+description: Representa uma atribuição a uma coleção configuration manager.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 5d32813e7c5c7cdae889406d694f686630311166
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: 5ca11ff0cbe2e7d350ccd5ddcc015da060205aa920d8a6801fc1d186871c1983
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50160301"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54158184"
 ---
-# <a name="configurationmanagercollectionassignmenttarget-resource-type"></a>Tipo de recurso configurationManagerCollectionAssignmentTarget
+# <a name="configurationmanagercollectionassignmenttarget-resource-type"></a>tipo de recurso configurationManagerCollectionAssignmentTarget
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para o uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Representa uma atribuição a uma coleção do Configuration Manager.
+Representa uma atribuição a uma coleção configuration manager.
 
 
 Herda de [deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)
@@ -28,9 +28,9 @@ Herda de [deviceAndAppManagementAssignmentTarget](../resources/intune-shared-dev
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|deviceAndAppManagementAssignmentFilterId|String|A ID do filtro para a atribuição de destino. Herdado [de deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|
-|deviceAndAppManagementAssignmentFilterType|[deviceAndAppManagementAssignmentFilterType](../resources/intune-shared-deviceandappmanagementassignmentfiltertype.md)|O tipo de filtro da atribuição de destino, ou seja, Excluir ou Incluir. Herdado [de deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md). Os valores possíveis são: `none`, `include`, `exclude`.|
-|collectionId|String|A ID da coleção que é o destino da atribuição.|
+|deviceAndAppManagementAssignmentFilterId|Cadeia de caracteres|A ID do filtro para a atribuição de destino. Herdado [de deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|
+|deviceAndAppManagementAssignmentFilterType|[deviceAndAppManagementAssignmentFilterType](../resources/intune-shared-deviceandappmanagementassignmentfiltertype.md)|O tipo de filtro da atribuição de destino ou seja, Excluir ou Incluir. Herdado [de deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md). Os valores possíveis são: `none`, `include`, `exclude`.|
+|collectionId|Cadeia de caracteres|A ID da coleção que é o destino da atribuição.|
 
 ## <a name="relationships"></a>Relações
 Nenhum

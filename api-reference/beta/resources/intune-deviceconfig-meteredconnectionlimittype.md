@@ -1,33 +1,33 @@
 ---
-title: tipo de enumeração meteredConnectionLimitType
-description: Configurações de limite de conexão limitada.
+title: tipo de número meteredConnectionLimitType
+description: Limite de conexão Configurações.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 45bdee1a3281412dcdbd80a53c593c6cfc7e6e4b
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 07448d05dfd13258934f9e69e78a8a6f6d81c273c70160f648f5069d3b5a90b9
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49273407"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54181122"
 ---
-# <a name="meteredconnectionlimittype-enum-type"></a>tipo de enumeração meteredConnectionLimitType
+# <a name="meteredconnectionlimittype-enum-type"></a>tipo de número meteredConnectionLimitType
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Configurações de limite de conexão limitada.
+Limite de conexão Configurações.
 
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|irrestrito|,0|Unrestricted|
-|prefixo|1|Fixed|
-|variável|duas|Variável|
+|irrestrito|0|Irrestrita|
+|fixed|1 |Fixed|
+|variável|2|Variável|
 
 
 

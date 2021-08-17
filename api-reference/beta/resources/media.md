@@ -5,12 +5,12 @@ title: tipo de recurso de mídia
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: 488201407363469ff09220c1dcce3c15f02e3b93
-ms.sourcegitcommit: 0adbbcbc65b6acab80e9195f13321055994f56be
+ms.openlocfilehash: 5b25d24ffb566e4c7030a02ee03f691ad397553bfb8dea599877c588a1f60cdb
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "53236297"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54224261"
 ---
 # <a name="media-resouce-type"></a>tipo de resouce de mídia
 
@@ -23,7 +23,7 @@ Ele está disponível na propriedade de mídia dos [recursos driveItem.][item-re
 
 | Propriedade                 | Tipo                  | Descrição                                                                                                   |
 | :----------------------- | :-------------------- | :------------------------------------------------------------------------------------------------------------ 
-| **isTranscriptionShown** | Booleano               | Se um arquivo tiver uma transcrição, essa configuração controlará se as legendas/transcrição fechadas do arquivo de mídia devem ser mostradas para as pessoas durante a exibição. Leitura-Gravação.                                                    |
+| **isTranscriptionShown** | Boolean               | Se um arquivo tiver uma transcrição, essa configuração controlará se as legendas/transcrição fechadas do arquivo de mídia devem ser mostradas para as pessoas durante a exibição. Leitura-Gravação.                                                    |
 | **mediaSource**          | [mediaSource](mediaSource.md)         | Informações sobre a origem da mídia. Somente leitura.                                                             | 
 
 

@@ -1,34 +1,34 @@
 ---
-title: tipo de enumeração androidForWorkDefaultAppPermissionPolicyType
-description: Tipo de política de permissão de aplicativo padrão do Android para trabalho.
+title: tipo de número androidForWorkDefaultAppPermissionPolicyType
+description: Tipo de política de permissão de aplicativo padrão do Android For Work.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 1c54879f28029deb5f211b511131f3f0924f038f
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 5984111d9e6782bc6a6a1b3d124716bc4edb92d3785b1887b12eb899a52b1a64
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49284061"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54148313"
 ---
-# <a name="androidforworkdefaultapppermissionpolicytype-enum-type"></a>tipo de enumeração androidForWorkDefaultAppPermissionPolicyType
+# <a name="androidforworkdefaultapppermissionpolicytype-enum-type"></a>tipo de número androidForWorkDefaultAppPermissionPolicyType
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Tipo de política de permissão de aplicativo padrão do Android para trabalho.
+Tipo de política de permissão de aplicativo padrão do Android For Work.
 
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|deviceDefault|,0|Valor padrão do dispositivo, sem intenção.|
-|prompt|1|Notifica.|
-|Concessão autogrant|duas|Concessão automática.|
-|Negação de permissão|3D|Negação automática.|
+|deviceDefault|0|Valor padrão do dispositivo, sem intenção.|
+|prompt|1 |Prompt.|
+|autoGrant|2|Concessão automática.|
+|autoDeny|3 |Negar automaticamente.|
 
 
 

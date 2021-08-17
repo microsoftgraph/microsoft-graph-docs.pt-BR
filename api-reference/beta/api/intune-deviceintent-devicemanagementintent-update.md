@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c801fe8c2f6ecb6cd64d8aef5f9748f3cbc1ddf3
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: c71ddecdce69d701c9060f2f8bff12f1adedec5876265104189fe4b733308159
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51128856"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54166523"
 ---
 # <a name="update-devicemanagementintent"></a>Atualizar deviceManagementIntent
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -55,11 +55,11 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [deviceM
 |:---|:---|:---|
 |id|Cadeia de caracteres|A ID de intenção|
 |displayName|Cadeia de caracteres|O nome de exibição dado pelo usuário|
-|descrição|Cadeia de caracteres|A descrição dada pelo usuário|
+|description|Cadeia de caracteres|A descrição dada pelo usuário|
 |isAssigned|Boolean|Significa se a intenção é atribuída ou não aos usuários|
 |lastModifiedDateTime|DateTimeOffset|Quando a intenção foi modificada pela última vez|
 |templateId|Cadeia de caracteres|A ID do modelo de que essa intenção foi criada (se alguma)|
-|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de marcas de escopo para esta instância entity.|
+|roleScopeTagIds|String collection|Lista de marcas de escopo para esta instância entity.|
 
 
 

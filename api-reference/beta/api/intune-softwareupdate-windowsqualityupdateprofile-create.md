@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 19a6a9c7b267ad4de2e675a43f5fd5420736a5c6
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: 8fd6a4e988384112ef957bf38b52dcd4827547b9c3b5765c9dbaae052f5dbe61
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51156244"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54145583"
 ---
 # <a name="create-windowsqualityupdateprofile"></a>Criar windowsQualityUpdateProfile
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -55,11 +55,11 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar o window
 |:---|:---|:---|
 |id|Cadeia de caracteres|A ID da política do Intune.|
 |displayName|Cadeia de caracteres|O nome de exibição do perfil.|
-|descrição|Cadeia de caracteres|A descrição do perfil especificado pelo usuário.|
+|description|Cadeia de caracteres|A descrição do perfil especificado pelo usuário.|
 |expeditedUpdateSettings|[expeditedWindowsQualityUpdateSettings](../resources/intune-softwareupdate-expeditedwindowsqualityupdatesettings.md)|Configurações de atualização aceleradas.|
 |createdDateTime|DateTimeOffset|A data em que o perfil foi criado.|
 |lastModifiedDateTime|DateTimeOffset|A data em que o perfil foi modificado pela última vez.|
-|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de Marcas de Escopo para esta entidade de Atualização de Qualidade.|
+|roleScopeTagIds|String collection|Lista de Marcas de Escopo para esta entidade de Atualização de Qualidade.|
 |releaseDateDisplayName|Cadeia de caracteres|Data de lançamento amigável a ser exibida para um lançamento de Atualização de Qualidade|
 |deployableContentDisplayName|Cadeia de caracteres|Nome de exibição amigável do conteúdo implantável do perfil de atualização de qualidade|
 

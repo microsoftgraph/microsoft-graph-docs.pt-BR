@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d6ec4b67826e5fab4155abb84f3286e412fbb5c6
-ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
+ms.openlocfilehash: 5131f6a371db46079a7afdcb4c2bc887a6f9d42c2bac13bcaf6d977f0a491560
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "52662855"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54156174"
 ---
 # <a name="manageddeviceoverview-resource-type"></a>Tipo de recurso managedDeviceOverview
 
@@ -31,7 +31,7 @@ Dados de resumo de dispositivos gerenciados
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|O identificador exclusivo do resumo|
+|id|Cadeia de caracteres|O identificador exclusivo do resumo|
 |enrolledDeviceCount|Int32|Contagem total de dispositivos registrados. Não inclui dispositivos PC gerenciados pelo Intune PC Agent|
 |mdmEnrolledCount|Int32|O número de dispositivos registrados no MDM|
 |dualEnrolledDeviceCount|Int32|O número de dispositivos registrados no MDM e no EAS|
@@ -41,7 +41,7 @@ Dados de resumo de dispositivos gerenciados
 |lastModifiedDateTime|DateTimeOffset|Última data de modificação da visão geral do dispositivo|
 
 ## <a name="relationships"></a>Relações
-Nenhuma
+Nenhum
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
