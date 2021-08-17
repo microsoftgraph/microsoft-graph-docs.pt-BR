@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: conceptualPageType
-ms.openlocfilehash: 34a7b756ba02773b63410d03325cd420035303305493e1e40fae832bd77ac5e9
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 9d9c33c540aa764566fc90fab1fa4ca4e2c6d9eb
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54184806"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58262148"
 ---
 # <a name="manage-apps-using-microsoft-intune"></a>Gerenciar aplicativos usando Microsoft Intune
 
@@ -72,13 +72,6 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar aplicativos m�
 - [Configurações de tempo de instalação do aplicativo móvel](intune-apps-mobileappinstalltimesettings.md)
 - [Estado de publicação do aplicativo móvel](intune-apps-mobileapppublishingstate.md)
 - [Aplicativo LOB móvel](intune-apps-mobilelobapp.md)
-- [Status de check-in de cliente do Office](intune-cirrus-officeclientcheckinstatus.md)
-- [Configuração de Cliente do Office](intune-cirrus-officeclientconfiguration.md)
-- [Atribuição de configuração de cliente do Office](intune-cirrus-officeclientconfigurationassignment.md)
-- [Configuração do Office](intune-cirrus-officeconfiguration.md)
-- [Destino de atribuição de configuração do Office](intune-cirrus-officeconfigurationassignmenttarget.md)
-- [Destino de atribuição de grupo de configuração do Office](intune-cirrus-officeconfigurationgroupassignmenttarget.md)
-- [Resumo de check-in de usuário do Office](intune-cirrus-officeusercheckinsummary.md)
 - [Executar como tipo de conta](intune-apps-runasaccounttype.md)
 - [Resumo de estado de instalação de usuários](intune-books-userinstallstatesummary.md)
 - [Tipo de licenciamento do VPP](intune-apps-vpplicensingtype.md)
@@ -108,6 +101,4 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar aplicativos m�
 - [Tipo de dispositivo Windows](intune-apps-windowsdevicetype.md)
 - [Sistema operacional mínimo do Windows](intune-apps-windowsminimumoperatingsystem.md)
 - [Windows Mobile MSI](intune-apps-windowsmobilemsi.md)
-- [Windows configuração do cliente do office](intune-cirrus-windowsofficeclientconfiguration.md)
-- [Windows configuração de segurança do cliente do office](intune-cirrus-windowsofficeclientsecurityconfiguration.md)
 - [Windows universal AppX](intune-apps-windowsuniversalappx.md)

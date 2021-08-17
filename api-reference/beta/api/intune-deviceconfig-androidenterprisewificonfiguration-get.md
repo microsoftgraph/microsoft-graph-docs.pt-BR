@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c8ebb26253e7bc46ae4ca5ca27b1ef89174afd63
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: eb1a8d0d093626deebb5fe7181ad601028819e21
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51128387"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58262575"
 ---
 # <a name="get-androidenterprisewificonfiguration"></a>Obter androidEnterpriseWiFiConfiguration
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -70,7 +70,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1980
+Content-Length: 2076
 
 {
   "value": {
@@ -112,6 +112,9 @@ Content-Length: 1980
     "connectWhenNetworkNameIsHidden": true,
     "wiFiSecurityType": "wpaEnterprise",
     "eapType": "eapTtls",
+    "trustedServerCertificateNames": [
+      "Trusted Server Certificate Names value"
+    ],
     "authenticationMethod": "usernameAndPassword",
     "innerAuthenticationProtocolForEapTtls": "challengeHandshakeAuthenticationProtocol",
     "innerAuthenticationProtocolForPeap": "microsoftChapVersionTwo",

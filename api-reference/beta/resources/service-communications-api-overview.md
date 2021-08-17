@@ -5,12 +5,12 @@ author: payiAzure
 localization_priority: Normal
 ms.prod: service-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 1c5690d3cb7eafa6a4914b22687993a1e145cc0a
-ms.sourcegitcommit: d586ddb253d27f9ccb621bd128f6a6b4b1933918
+ms.openlocfilehash: 0c00bf36e3f745614bd3f0e523e75b7229561d78
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53109071"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58257737"
 ---
 # <a name="working-with-service-communications-api-in-microsoft-graph"></a>Trabalhando com a API de comunicações de serviço no Microsoft Graph
 A API de comunicações de serviço fornece postagens de centro de mensagens e de saúde do serviço pertencentes aos serviços de nuvem da Microsoft inscritos pelo locatário. Você pode obter dados de saúde atuais e históricos de um serviço da Microsoft (por exemplo, o serviço Exchange Online está para baixo). Você pode verificar a saúde do serviço para determinar se um problema foi rastreado e uma resolução está em andamento antes de chamar o suporte ou passar o tempo solucionando problemas. As postagens da central de mensagens permitem que você acompanhe as alterações futuras, incluindo novos recursos, atualizações e outros comunicados importantes (por exemplo, Exchange Online está recebendo um novo recurso).
@@ -22,7 +22,7 @@ Para obter mais informações sobre tokens de acesso, registro de aplicativo e p
 
 ### <a name="access-service-communications-api-on-behalf-of-signed-in-user"></a>API de comunicações de serviço de acesso em nome do usuário interno
 
-As permissões delegadas são necessárias para acessar a API de comunicações de serviço em nome de um usuário interno. Aplicativos de tela voltados para o cliente, como o [Centro de administração do Microsoft 365](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/homepage) (acessível apenas a funções de administrador), podem chamar a API de comunicações de serviço para obter os dados de comunicados de serviço e de serviço para o locatário do usuário de _entrada,_ em nome do usuário de entrada. Os usuários podem descobrir se seus servies inscritos são saudáveis ou têm problemas. Eles também podem aprender sobre quaisquer problemas de serviço atuais que afetam seus locatários. 
+As permissões delegadas são necessárias para acessar a API de comunicações de serviço em nome de um usuário interno. Aplicativos de tela voltados para o cliente, como o [Centro de administração do Microsoft 365](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/homepage) (acessível apenas a funções de administrador), podem chamar a API de comunicações de serviço para obter os dados de comunicados de serviço e de serviço para o locatário do usuário de _entrada,_ em nome do usuário de entrada. Os usuários podem descobrir se seus serviços inscritos são saudáveis ou têm problemas. Eles também podem aprender sobre quaisquer problemas de serviço atuais que afetam seus locatários. 
 
 ### <a name="access-service-communications-api-without-user"></a>Api de comunicações de serviço de acesso sem usuário
 
@@ -42,6 +42,17 @@ As permissões de aplicativo são necessárias para acessar a API de comunicaç�
 | Obter uma mensagem de serviço específica para locatário | [Obter mensagem](/graph/api/serviceupdatemessage-get?view=graph-rest-beta&preserve-view=true) | _ServiceMessage.Read.All_ | Delegado e aplicativo |
 | Atualizar o status da mensagem de serviço para o usuário que está assinado | Para ver uma lista de operações de status, [consulte serviceUpdateMessage](/graph/api/resources/serviceupdatemessage?view=graph-rest-beta&preserve-view=true).| _ServiceMessageViewpoint.Write_ | Delegated |
 
+## <a name="availability-in-national-clouds"></a>Disponibilidade em nuvens nacionais
+Essa API de comunicações de serviço está disponível em todas as implantações de nuvem nacionais da Microsoft. Você pode obter dados de comunicações e de saúde do serviço para todos os locatários nas nuvens nacionais da Microsoft. Para obter detalhes, consulte [implantações nacionais de nuvem](/graph/deployments).
+
+|Nuvens nacionais|URL da API (parcial)|
+|:--------------|:-----------------|
+|Serviço global do Microsoft Graph| https://graph.microsoft.com/beta/admin/serviceAnnouncement/|
+|Microsoft Graph para US Government L4 (GccHigh)|https://graph.microsoft.us/beta/admin/serviceAnnouncement/|
+|Microsoft Graph para o Us Government L5 (DoD)|https://dod-graph.microsoft.us/beta/admin/serviceAnnouncement/|
+|Microsoft Graph Alemanha|https://graph.microsoft.de/beta/admin/serviceAnnouncement/|
+|Microsoft Graph China operado pela 21Vianet|https://microsoftgraph.chinacloudapi.cn/beta/admin/serviceAnnouncement/|
+
 ## <a name="whats-new"></a>Novidades
 Saiba mais sobre os [novos recursos e atualizações mais recentes](/graph/whats-new-overview) para este conjunto de APIs.
 
@@ -49,7 +60,7 @@ Saiba mais sobre os [novos recursos e atualizações mais recentes](/graph/whats
 
 A API de comunicações de serviço pode abrir novas maneiras de você se envolver com os usuários:
 
-- [Visão geral para acessar a saúde e as comunicações do serviço no Microsoft Graph](/graph/service-communications-concept-overview)
+- [Visão geral para acessar as comunicações e a integridade do serviço no Microsoft Graph](/graph/service-communications-concept-overview)
 - Experimente a API no [Explorador do Graph](https://developer.microsoft.com/graph/graph-explorer).
 
 Precisa de mais ideias? Veja [como alguns de nossos parceiros usam o Microsoft Graph](https://developer.microsoft.com/en-us/graph/partners).

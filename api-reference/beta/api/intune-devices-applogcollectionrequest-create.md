@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: dbd19f042c6dbfe80a4c02ec224fde5b1e5fb696
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: 43683d2836fb3ec5f7a3c35d190a0b577be5bcd5
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51136479"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58266433"
 ---
 # <a name="create-applogcollectionrequest"></a>Criar appLogCollectionRequest
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -27,9 +27,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All|
+|Delegada (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 |Delegada (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementManagedDevices.ReadWrite.All|
+|Aplicativo|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -56,7 +56,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar o appLog
 |id|Cadeia de caracteres|O Identificador exclusivo. Esta é userId_DeviceId_AppId id.|
 |status|[appLogUploadState](../resources/intune-devices-apploguploadstate.md)|Status do carregamento de log. Os valores possíveis são: `pending`, `completed`, `failed`.|
 |errorMessage|Cadeia de caracteres|Mensagem de erro se alguma durante o processo de carregamento|
-|customLogFolders|Coleção de cadeias de caracteres|Lista de pastas de log. |
+|customLogFolders|String collection|Lista de pastas de log. |
 |completedDateTime|DateTimeOffset|Hora em que a solicitação de log de carregamento atingiu um estado de terminal|
 
 

@@ -5,12 +5,12 @@ author: Jordanndahl
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 62750cd92071b5a14496dc0ea6a3cecb83ca338b
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: d6cfd6eb53c310e5841874b928fbf6869f7f43bc
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52681785"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58262586"
 ---
 # <a name="delete-group"></a>Excluir grupo
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 Exclui um grupo.  
 
-Quando excluídos, Microsoft 365 grupos são movidos para um contêiner temporário e podem ser restaurados dentro de 30 dias.  Após esse período, elas serão permanentemente excluídos.  Para saber mais, confira [deletedItems](../resources/directory.md).  Isso se aplica somente Microsoft 365 grupos.
+Quando excluídos, Microsoft 365 grupos são movidos para um contêiner temporário e podem ser restaurados dentro de 30 dias.  Após esse período, elas serão permanentemente excluídos. Isso não se aplica aos grupos de Segurança e Distribuição que são excluídos permanentemente imediatamente. Para saber mais, confira [deletedItems](../resources/directory.md).
 
 ## <a name="permissions"></a>Permissões
 
@@ -28,8 +28,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Group.ReadWrite.All, Directory.AccessAsUser.All   |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegada (conta corporativa ou de estudante) | Group.ReadWrite.All, Directory.AccessAsUser.All   |
+|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Group.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP

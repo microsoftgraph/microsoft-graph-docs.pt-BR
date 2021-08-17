@@ -1,22 +1,22 @@
 ---
-title: tipo de recurso customUpdateTimeWindow
+title: Tipo de recurso customUpdateTimeWindow
 description: Janela de tempo de atualização personalizada
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 6f46490aff53eea8e8e6436b85d2f11fd0ac086f
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 7e436738cd7a8bf8d022307a85f597eb63467622f205d0bbdbee2c5de5c79ad4
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49256710"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54122653"
 ---
-# <a name="customupdatetimewindow-resource-type"></a>tipo de recurso customUpdateTimeWindow
+# <a name="customupdatetimewindow-resource-type"></a>Tipo de recurso customUpdateTimeWindow
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -25,8 +25,8 @@ Janela de tempo de atualização personalizada
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|startDay|[dayOfWeek](../resources/intune-deviceconfig-dayofweek.md)|Dia inicial da janela de tempo. Os valores possíveis são: `sunday`, `monday`, `tuesday`, `wednesday`, `thursday`, `friday`, `saturday`.|
-|endDay|[dayOfWeek](../resources/intune-deviceconfig-dayofweek.md)|Dia de término da janela de tempo. Os valores possíveis são: `sunday`, `monday`, `tuesday`, `wednesday`, `thursday`, `friday`, `saturday`.|
+|startDay|[dayOfWeek](../resources/intune-deviceconfig-dayofweek.md)|Dia de início da janela de tempo. Os valores possíveis são: `sunday`, `monday`, `tuesday`, `wednesday`, `thursday`, `friday`, `saturday`.|
+|endDay|[dayOfWeek](../resources/intune-deviceconfig-dayofweek.md)|Fim do dia da janela de tempo. Os valores possíveis são: `sunday`, `monday`, `tuesday`, `wednesday`, `thursday`, `friday`, `saturday`.|
 |startTime|TimeOfDay|Hora de início da janela de tempo|
 |endTime|TimeOfDay|Hora de término da janela de tempo|
 

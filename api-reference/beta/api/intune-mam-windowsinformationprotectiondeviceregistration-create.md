@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6a752cb3262d4ca8899660e0de50b637315680ab
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: c6ff3461af66448223f2f2ec28ff158d9504ddd111a5a7a5dcab8d8001986e31
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51158882"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54131658"
 ---
 # <a name="create-windowsinformationprotectiondeviceregistration"></a>Criar windowsInformationProtectionDeviceRegistration
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -57,7 +57,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar windowsI
 |userId|Cadeia de caracteres|UserId associado a esse registro de dispositivo.|
 |deviceRegistrationId|Cadeia de caracteres|Identificador de dispositivo para esse registro de dispositivo.|
 |deviceName|Cadeia de caracteres|Nome do dispositivo.|
-|deviceType|String|Tipo de dispositivo, por exemplo, telefone windows laptop VS Windows.|
+|deviceType|String|Tipo de dispositivo, por exemplo, Windows laptop VS Windows telefone.|
 |deviceMacAddress|Cadeia de caracteres|Endereço do Device Mac.|
 |lastCheckInDateTime|DateTimeOffset|Última verificação na hora do dispositivo.|
 

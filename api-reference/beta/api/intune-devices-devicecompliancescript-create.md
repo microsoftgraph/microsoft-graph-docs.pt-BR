@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c900a21083ec1ee775a355a514c9e323ae96314f
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: 38ebf4e1524a3c973106522e7aaa84f03b9da71f
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51128660"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58264910"
 ---
 # <a name="create-devicecompliancescript"></a>Criar deviceComplianceScript
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -27,9 +27,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All|
+|Delegada (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 |Delegada (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementManagedDevices.ReadWrite.All|
+|Aplicativo|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -57,14 +57,14 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar deviceCo
 |publicador|String|Nome do editor de scripts de conformidade do dispositivo|
 |versão|String|Versão do script de conformidade do dispositivo|
 |displayName|Cadeia de caracteres|Nome do script de conformidade do dispositivo|
-|descrição|Cadeia de caracteres|Descrição do script de conformidade do dispositivo|
+|description|Cadeia de caracteres|Descrição do script de conformidade do dispositivo|
 |detectionScriptContent|Binário|Todo o conteúdo do script do powershell de detecção|
 |createdDateTime|DateTimeOffset|O data/hora de quando o script de conformidade do dispositivo foi criado. Essa propriedade é somente leitura.|
 |lastModifiedDateTime|DateTimeOffset|O data/hora de quando o script de conformidade do dispositivo foi modificado. Essa propriedade é somente leitura.|
 |runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|Indica o tipo de contexto de execução. Os valores possíveis são: `system` e `user`.|
-|enforceSignatureCheck|Booleano|Indicar se a assinatura de script precisa ser verificada|
-|runAs32Bit|Booleano|Indicar se os scripts do PowerShell devem ser executados como 32 bits|
-|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de IDs de marca de escopo para o script de conformidade do dispositivo|
+|enforceSignatureCheck|Boolean|Indicar se a assinatura de script precisa ser verificada|
+|runAs32Bit|Boolean|Indicar se os scripts do PowerShell devem ser executados como 32 bits|
+|roleScopeTagIds|String collection|Lista de IDs de marca de escopo para o script de conformidade do dispositivo|
 
 
 

@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e0b7d2f1ffdbe7dba4fbde09d80883fa60b5abaa
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: bdb3e1f825c075e52ef9e7706bf96ea6013d1f15
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51153731"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58263972"
 ---
 # <a name="getmanagementconditionsforplatform-function"></a>função getManagementConditionsForPlatform
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -53,7 +53,7 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta função.
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|plataforma|[devicePlatformType](../resources/intune-shared-deviceplatformtype.md)|Ainda não documentado|
+|plataforma|[devicePlatformType](../resources/intune-fencing-deviceplatformtype.md)|Ainda não documentado|
 
 
 

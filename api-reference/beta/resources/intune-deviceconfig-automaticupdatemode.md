@@ -1,22 +1,22 @@
 ---
-title: tipo de enumeração Propriedades automaticupdatemode
+title: Tipo de número automaticUpdateMode
 description: Valores possíveis para o modo de atualização automática.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: a1ea942a2418f763a6914329dabe26cd0ace1e8a
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: ab80ab2f3e811435107fbbc8e1395b16f5c5340c39b4b68a138316d91ecc30b3
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49260758"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54131189"
 ---
-# <a name="automaticupdatemode-enum-type"></a>tipo de enumeração Propriedades automaticupdatemode
+# <a name="automaticupdatemode-enum-type"></a>Tipo de número automaticUpdateMode
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -25,13 +25,13 @@ Valores possíveis para o modo de atualização automática.
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|UserDefined|,0|Definido pelo usuário, valor padrão, sem intenção.|
-|notifyDownload|1|Notifique o download.|
-|autoInstallAtMaintenanceTime|duas|Instalação automática no momento da manutenção.|
-|autoInstallAndRebootAtMaintenanceTime|3D|Instalação automática e reinicialização no momento da manutenção.|
-|autoInstallAndRebootAtScheduledTime|4 |Instalação automática e reinicialização no horário agendado.|
-|autoInstallAndRebootWithoutEndUserControl|5 |Instalação e reinício automáticos sem controle de usuário final|
-|windowsDefault|6 |Redefina como o valor padrão do Windows.|
+|userDefined|0|User Defined, default value, no intent.|
+|notifyDownload|1 |Notificar no download.|
+|autoInstallAtMaintenanceTime|2|Instalação automática no momento da manutenção.|
+|autoInstallAndRebootAtMaintenanceTime|3 |Instale e reinicie automaticamente no momento da manutenção.|
+|autoInstallAndRebootAtScheduledTime|4 |Instale e reinicie automaticamente no horário agendado.|
+|autoInstallAndRebootWithoutEndUserControl|5 |Instalar e reiniciar automaticamente sem o controle do usuário final|
+|windowsDefault|6 |Redefinir para Windows valor padrão.|
 
 
 

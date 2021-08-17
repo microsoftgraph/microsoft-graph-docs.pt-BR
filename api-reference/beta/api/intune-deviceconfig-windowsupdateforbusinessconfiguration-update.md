@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: cf6816b8aa6a79a7f4b2b6f1a56f91a4ef319de1
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: 494922b9c46a3b950dfb39621ef418c8cb81cd40f8729911245d5a927bbfb3d0
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51127218"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54127786"
 ---
 # <a name="update-windowsupdateforbusinessconfiguration"></a>Atualizar windowsUpdateForBusinessConfiguration
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -57,13 +57,13 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [windows
 |:---|:---|:---|
 |id|Cadeia de caracteres|Chave da entidade. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de marcas de escopo para esta instância entity. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|supportsScopeTags|Booleano|Indica se a Configuração de Dispositivo subjacente dá suporte ou não à atribuição de marcas de escopo. A atribuição à propriedade ScopeTags não é permitida quando esse valor é falso e as entidades não estarão visíveis para usuários com escopo. Isso ocorre para políticas herdadas criadas no Silverlight e podem ser resolvidas excluindo e recriando a política no Portal do Azure. Essa propriedade é somente leitura. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|roleScopeTagIds|String collection|Lista de marcas de escopo para esta instância entity. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|supportsScopeTags|Boolean|Indica se a Configuração de Dispositivo subjacente dá suporte ou não à atribuição de marcas de escopo. A atribuição à propriedade ScopeTags não é permitida quando esse valor é falso e as entidades não estarão visíveis para usuários com escopo. Isso ocorre para políticas herdadas criadas no Silverlight e podem ser resolvidas excluindo e recriando a política no Portal do Azure. Essa propriedade é somente leitura. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|A aplicabilidade da edição do sistema operacional para esta Política. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|A regra de aplicabilidade da versão do sistema operacional para esta Política. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|A regra de aplicabilidade do modo de dispositivo para esta Política. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|DateTime em que o objeto foi criado. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|descrição|Cadeia de caracteres|O administrador forneceu a descrição da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|description|Cadeia de caracteres|O administrador forneceu a descrição da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |displayName|Cadeia de caracteres|O administrador forneceu o nome da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |versão|Int32|Versão da configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deliveryOptimizationMode|[windowsDeliveryOptimizationMode](../resources/intune-deviceconfig-windowsdeliveryoptimizationmode.md)|Modo de Otimização de Entrega. Os valores possíveis são: `userDefined`, `httpOnly`, `httpWithPeeringNat`, `httpWithPeeringPrivateGroup`, `httpWithInternetPeering`, `simpleDownload`, `bypassMode`.|
@@ -79,13 +79,13 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [windows
 |qualityUpdatesPauseExpiryDateTime|DateTimeOffset|Data e hora de expiração da pausa de atualizações de qualidade|
 |featureUpdatesPauseExpiryDateTime|DateTimeOffset|Data e hora de expiração da pausa de atualizações de recursos|
 |businessReadyUpdatesOnly|[windowsUpdateType](../resources/intune-deviceconfig-windowsupdatetype.md)|Determina de quais dispositivos de filial receberão suas atualizações. Os possíveis valores são: `userDefined`, `all`, `businessReadyOnly`, `windowsInsiderBuildFast`, `windowsInsiderBuildSlow`, `windowsInsiderBuildRelease`.|
-|skipChecksBeforeRestart|Booleano|Desmarcar todas as verificações antes da reinicialização: Nível da bateria = 40%, Presença do usuário, Exibição Necessária, Modo de Apresentação, modo de tela inteira, estado de chamada telefônica, modo de jogo etc. |
+|skipChecksBeforeRestart|Boolean|Desmarcar todas as verificações antes da reinicialização: Nível da bateria = 40%, Presença do usuário, Exibição Necessária, Modo de Apresentação, modo de tela inteira, estado de chamada telefônica, modo de jogo etc. |
 |updateWeeks|[windowsUpdateForBusinessUpdateWeeks](../resources/intune-deviceconfig-windowsupdateforbusinessupdateweeks.md)|Agendou a instalação da atualização nas semanas do mês. Os possíveis valores são: `userDefined`, `firstWeek`, `secondWeek`, `thirdWeek`, `fourthWeek`, `everyWeek`.|
 |qualityUpdatesPauseStartDate|Data|Atualizações de qualidade Pausar a data de início. Essa propriedade é somente leitura.|
 |featureUpdatesPauseStartDate|Data|Atualizações de recursos Pausar a data de início. Essa propriedade é somente leitura.|
 |featureUpdatesRollbackWindowInDays|Int32|O número de dias após uma Atualização de Recursos para a qual uma reação é válida|
-|qualityUpdatesWillBeRolledBack|Booleano|Especifica se as Atualizações de Qualidade de rebaixamento no próximo dispositivo de check-in|
-|featureUpdatesWillBeRolledBack|Booleano|Especifica se as Atualizações de Recursos de rebaixamento no próximo dispositivo de check-in|
+|qualityUpdatesWillBeRolledBack|Boolean|Especifica se as Atualizações de Qualidade de rebaixamento no próximo dispositivo de check-in|
+|featureUpdatesWillBeRolledBack|Boolean|Especifica se as Atualizações de Recursos de rebaixamento no próximo dispositivo de check-in|
 |qualityUpdatesRollbackStartDateTime|DateTimeOffset|Data de início das atualizações de qualidade|
 |featureUpdatesRollbackStartDateTime|DateTimeOffset|Data de início das atualizações de recursos|
 |engagedRestartDeadlineInDays|Int32|Prazo em dias antes de agendar automaticamente e executar uma reinicialização pendente fora do horário ativo, com intervalo válido de 2 a 30 dias|
@@ -94,13 +94,13 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [windows
 |deadlineForFeatureUpdatesInDays|Int32|Número de dias antes que as atualizações de recursos sejam instaladas automaticamente com intervalo válido de 2 a 30 dias|
 |deadlineForQualityUpdatesInDays|Int32|Número de dias antes que as atualizações de qualidade sejam instaladas automaticamente com intervalo válido de 2 a 30 dias|
 |deadlineGracePeriodInDays|Int32|Número de dias após o prazo até que as reinicializações ocorram automaticamente com intervalo válido de 0 a 7 dias|
-|postponeRebootUntilAfterDeadline|Booleano|Especifica se o dispositivo deve esperar até o prazo final para reiniciar fora do horário ativo|
+|postponeRebootUntilAfterDeadline|Boolean|Especifica se o dispositivo deve esperar até o prazo final para reiniciar fora do horário ativo|
 |autoRestartNotificationDismissal|[autoRestartNotificationDismissalMethod](../resources/intune-deviceconfig-autorestartnotificationdismissalmethod.md)|Especifique o método pelo qual a notificação necessária de reinicialização automática é descartada. Os valores possíveis são: `notConfigured`, `automatic`, `user`.|
 |scheduleRestartWarningInHours|Int32|Especifique o período para notificações de lembrete de aviso de reinicialização automática. Valores suportados: 2, 4, 8, 12 ou 24 (horas).|
 |scheduleImminentRestartWarningInMinutes|Int32|Especifique o período para notificações de aviso iminente de reinicialização automática. Valores suportados: 15, 30 ou 60 (minutos).|
 |userPauseAccess|[enablement](../resources/intune-shared-enablement.md)|Especifica se é possível habilitar o acesso do usuário final a pausar atualizações de software. Os valores possíveis são: `notConfigured`, `enabled`, `disabled`.|
-|userWindowsUpdateScanAccess|[enablement](../resources/intune-shared-enablement.md)|Especifica se o acesso do usuário deve ser desabilitado para verificar o Windows Update. Os valores possíveis são: `notConfigured`, `enabled`, `disabled`.|
-|updateNotificationLevel|[windowsUpdateNotificationDisplayOption](../resources/intune-deviceconfig-windowsupdatenotificationdisplayoption.md)|Especifica o que os usuários de notificações do Windows Update veem. Os valores possíveis são: `notConfigured`, `defaultNotifications`, `restartWarningsOnly`, `disableAllNotifications`.|
+|userWindowsUpdateScanAccess|[enablement](../resources/intune-shared-enablement.md)|Especifica se o acesso do usuário deve ser desabilitado para verificar Windows Update. Os valores possíveis são: `notConfigured`, `enabled`, `disabled`.|
+|updateNotificationLevel|[windowsUpdateNotificationDisplayOption](../resources/intune-deviceconfig-windowsupdatenotificationdisplayoption.md)|Especifica o que Windows notificações de atualização que os usuários veem. Os valores possíveis são: `notConfigured`, `defaultNotifications`, `restartWarningsOnly`, `disableAllNotifications`.|
 
 
 

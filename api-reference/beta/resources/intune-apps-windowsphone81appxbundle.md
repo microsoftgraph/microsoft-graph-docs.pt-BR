@@ -1,26 +1,26 @@
 ---
 title: Tipo de recurso windowsPhone81AppXBundle
-description: Contém propriedades e propriedades herdadas para aplicativos da Linha de Negócios do Pacote appX do Windows Phone 8.1.
+description: Contém propriedades e propriedades herdadas para Windows Phone 8.1 AppX Bundle Line of Business apps.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 1de2ee5a013b40bb9b965b4ffc1613d766ebfd30
-ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
+ms.openlocfilehash: a06a41c14c8e842bd4fe705c33612c353394326e
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51867690"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58265992"
 ---
 # <a name="windowsphone81appxbundle-resource-type"></a>Tipo de recurso windowsPhone81AppXBundle
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Contém propriedades e propriedades herdadas para aplicativos da Linha de Negócios do Pacote appX do Windows Phone 8.1.
+Contém propriedades e propriedades herdadas para Windows Phone 8.1 AppX Bundle Line of Business apps.
 
 
 Herda do [windowsPhone81AppX](../resources/intune-apps-windowsphone81appx.md)
@@ -53,7 +53,7 @@ Herda do [windowsPhone81AppX](../resources/intune-apps-windowsphone81appx.md)
 |uploadState|Int32|O estado de carregamento. Os valores possíveis são: 0 - `Not Ready` , 1 - `Ready` , 2 - `Processing` . Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
 |publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|O estado de publicação do aplicativo. O aplicativo não pode ser assinado, a menos que ele seja publicado. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md). Os valores possíveis são: `notPublished`, `processing`, `published`.|
 |isAssigned|Boolean|O valor que indica se o aplicativo é atribuído a pelo menos um grupo. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
-|roleScopeTagIds|Coleção String|Lista de ids de marca de escopo para este aplicativo móvel. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
+|roleScopeTagIds|String collection|Lista de ids de marca de escopo para este aplicativo móvel. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
 |dependentAppCount|Int32|O número total de dependências que o aplicativo filho tem. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
 |supersedingAppCount|Int32|O número total de aplicativos que esse aplicativo sobressede direta ou indiretamente. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
 |supersededAppCount|Int32|O número total de aplicativos pelos quais esse aplicativo é, direta ou indiretamente, é suplido. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
@@ -65,8 +65,8 @@ Herda do [windowsPhone81AppX](../resources/intune-apps-windowsphone81appx.md)
 |identityPublisherHash|String|O Hash do Publicador de Identidade. Herdado do [windowsPhone81AppX](../resources/intune-apps-windowsphone81appx.md)|
 |identityResourceIdentifier|String|O Identificador de Recurso da Identidade. Herdado do [windowsPhone81AppX](../resources/intune-apps-windowsphone81appx.md)|
 |minimumSupportedOperatingSystem|[windowsMinimumOperatingSystem](../resources/intune-apps-windowsminimumoperatingsystem.md)|O valor do sistema de operacional mínimo aplicável. Herdado do [windowsPhone81AppX](../resources/intune-apps-windowsphone81appx.md)|
-|phoneProductIdentifier|Cadeia de Caracteres|O Identificador de Produto de Telefone. Herdado do [windowsPhone81AppX](../resources/intune-apps-windowsphone81appx.md)|
-|phonePublisherId|Cadeia de Caracteres|A ID do Editor de Telefones. Herdada do [windowsPhone81AppX](../resources/intune-apps-windowsphone81appx.md)|
+|phoneProductIdentifier|Cadeia de caracteres|O Telefone identificador de produto. Herdado do [windowsPhone81AppX](../resources/intune-apps-windowsphone81appx.md)|
+|phonePublisherId|Cadeia de caracteres|A Telefone Publisher ID. Herdada do [windowsPhone81AppX](../resources/intune-apps-windowsphone81appx.md)|
 |identityVersion|String|A versão da identidade. Herdado do [windowsPhone81AppX](../resources/intune-apps-windowsphone81appx.md)|
 |appXPackageInformationList|[Coleção windowsPackageInformation](../resources/intune-apps-windowspackageinformation.md)|A lista de Informações do Pacote AppX.|
 
@@ -138,7 +138,8 @@ Veja a seguir uma representação JSON do recurso.
     "v10_1903": true,
     "v10_1909": true,
     "v10_2004": true,
-    "v10_2H20": true
+    "v10_2H20": true,
+    "v10_21H1": true
   },
   "phoneProductIdentifier": "String",
   "phonePublisherId": "String",
@@ -165,7 +166,8 @@ Veja a seguir uma representação JSON do recurso.
         "v10_1903": true,
         "v10_1909": true,
         "v10_2004": true,
-        "v10_2H20": true
+        "v10_2H20": true,
+        "v10_21H1": true
       }
     }
   ]

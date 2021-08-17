@@ -5,12 +5,12 @@ author: payiAzure
 localization_priority: Priority
 ms.prod: service-communications
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 58eaec75761a0062a996f60c9c59c798c8fe0ae570da300821a4bf67780c12c7
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: db7005e9bfddd141a429c2d85320f9e1dd1d3666
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54208661"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58255167"
 ---
 # <a name="overview-for-accessing-service-health-and-communications-in-microsoft-graph"></a>Visão geral para acessar as comunicações e a integridade do serviço no Microsoft Graph
 Você pode usar a API de comunicações de serviço no Microsoft Graph para acessar o status de integridade e as postagens do centro de mensagens sobre os serviços em nuvem da Microsoft. O status de integridade real e as postagens correspondem aos serviços do Microsoft 365 e Dynamics 365 que são suportados pela API e assinados pelo locatário.
