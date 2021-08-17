@@ -5,12 +5,12 @@ author: shauliu
 localization_priority: Normal
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 59c8dc5c769ee276a6a6c2e3f6cdf1fa2b2d6612
-ms.sourcegitcommit: 5bb981b4853663354a566d4a4a5cbf288939e441
+ms.openlocfilehash: b8b474102e0605fda38db7b0ef39b1105097ba8d5d4b7f376ec3db83e1c07541
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "53579646"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54145093"
 ---
 # <a name="unifiedrolemanagementpolicyruletarget-resource-type"></a>Tipo de recurso unifiedRoleManagementPolicyRuleTarget
 
@@ -23,10 +23,10 @@ Um unifiedRoleManagementPolicyRuleTarget especifica o destino associado à polí
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |chamador|Cadeia de caracteres|O chamador do destino da regra de política. Os valores permitidos são: `None` `Admin` , , `EndUser` .|
-|enforcedSettings|Coleção de cadeias de caracteres|A lista de configurações que são impostas e não podem ser substituídos por escopos filho. Use `All` para todas as configurações.|
-|inheritableSettings|Coleção de cadeias de caracteres|A lista de configurações que podem ser herdadas por escopos filho. Use `All` para todas as configurações.|
+|enforcedSettings|String collection|A lista de configurações que são impostas e não podem ser substituídos por escopos filho. Use `All` para todas as configurações.|
+|inheritableSettings|String collection|A lista de configurações que podem ser herdadas por escopos filho. Use `All` para todas as configurações.|
 |level|Cadeia de caracteres|O nível do destino da regra de política. Os valores permitidos são: `Eligibility` , `Assignment` .    |
-|operations|Coleção de cadeias de caracteres|As operações para o destino da regra de política. Os valores permitidos são: `All` , , , , , , , , `Activate` `Deactivate` `Assign` `Update` `Remove` `Extend` `Renew` .|
+|operations|String collection|As operações para o destino da regra de política. Os valores permitidos são: `All` , , , , , , , , `Activate` `Deactivate` `Assign` `Update` `Remove` `Extend` `Renew` .|
 
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|

@@ -1,26 +1,26 @@
 ---
-title: tipo de recurso macOSKerberosSingleSignOnExtension
-description: Representa um único perfil de extensão de Sign-On de tipo Kerberos para dispositivos macOS.
+title: Tipo de recurso macOSKerberosSingleSignOnExtension
+description: Representa um perfil de extensão único do tipo Kerberos Sign-On para dispositivos macOS.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: bb27b51c70bc111e519cf8bb993354e638e7102d
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 8c21bdffd5b955ab11e42e67e4fe783b14c371fb855b2d479d9baf9dd702dc1c
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49294309"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54122639"
 ---
-# <a name="macoskerberossinglesignonextension-resource-type"></a>tipo de recurso macOSKerberosSingleSignOnExtension
+# <a name="macoskerberossinglesignonextension-resource-type"></a>Tipo de recurso macOSKerberosSingleSignOnExtension
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Representa um único perfil de extensão de Sign-On de tipo Kerberos para dispositivos macOS.
+Representa um perfil de extensão único do tipo Kerberos Sign-On para dispositivos macOS.
 
 
 Herda de [macOSSingleSignOnExtension](../resources/intune-deviceconfig-macossinglesignonextension.md)
@@ -28,27 +28,27 @@ Herda de [macOSSingleSignOnExtension](../resources/intune-deviceconfig-macossing
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|esfera|String|Obtém ou define o nome de território que diferencia maiúsculas de minúsculas para esse perfil.|
-|domínio|Coleção de cadeias de caracteres|Obtém ou define uma lista de hosts ou nomes de domínio para os quais a extensão de aplicativo executa SSO.|
-|blockAutomaticLogin|Booliano|Habilita ou desabilita o uso do chaveiro.|
-|CacheName|String|Obtém ou define o nome genérico dos serviços de segurança do cache Kerberos a ser usado para esse perfil.|
-|credentialBundleIdAccessControlList|Coleção de cadeias de caracteres|Obtém ou define uma lista de IDs de lote de aplicativos que têm permissão para acessar o tíquete de concessão de tíquete Kerberos.|
-|domainRealms|Coleção de cadeias de caracteres|Obtém ou define uma lista de Realms para o mapeamento do realm do domínio personalizado. Os territórios diferenciam maiúsculas de minúsculas.|
-|isDefaultRealm|Booliano|Quando for true, o realm deste perfil será selecionado como o padrão. Necessário se vários perfis de tipo Kerberos estiverem configurados.|
-|passwordBlockModification|Booliano|Habilita ou desabilita as alterações de senha.|
-|passwordExpirationDays|Int32|Substitui a expiração padrão da senha em dias. Para a maioria dos domínios, esse valor é calculado automaticamente.|
-|passwordExpirationNotificationDays|Int32|Obtém ou define o número de dias até que o usuário seja notificado de que sua senha irá expirar (o padrão é 15).|
-|userPrincipalName|String|Obtém ou define o nome de usuário de princípio a ser usado para esse perfil. O nome do Realm não precisa ser incluído.|
-|passwordRequireActiveDirectoryComplexity|Booliano|Habilita ou desabilita se as senhas devem atender aos requisitos de complexidade do Active Directory.|
-|passwordPreviousPasswordBlockCount|Int32|Obtém ou define o número de senhas anteriores para bloquear.|
+|realm|Cadeia de caracteres|Obtém ou define o nome do realm que diferencia minúsculas para esse perfil.|
+|domínios|String collection|Obtém ou define uma lista de hosts ou nomes de domínio para os quais a extensão do aplicativo executa SSO.|
+|blockAutomaticLogin|Boolean|Habilita ou desabilita o uso de chaveiro.|
+|cacheName|Cadeia de caracteres|Obtém ou define o nome genérico dos Serviços de Segurança do cache Kerberos a ser usado para esse perfil.|
+|credentialBundleIdAccessControlList|String collection|Obtém ou define uma lista de IDs de pacote de aplicativos permitidas para acessar o Tíquete de Concessão de Tíquete Kerberos.|
+|domainRealms|String collection|Obtém ou define uma lista de realms para mapeamento de domínio personalizado. Os realms são sensíveis a casos.|
+|isDefaultRealm|Boolean|Quando true, o realm desse perfil será selecionado como o padrão. Necessário se vários perfis do tipo Kerberos estão configurados.|
+|passwordBlockModification|Boolean|Habilita ou desabilita alterações de senha.|
+|passwordExpirationDays|Int32|Substitui a expiração de senha padrão em dias. Para a maioria dos domínios, esse valor é calculado automaticamente.|
+|passwordExpirationNotificationDays|Int32|Obtém ou define o número de dias até que o usuário seja notificado de que sua senha expirará (o padrão é 15).|
+|userPrincipalName|Cadeia de caracteres|Obtém ou define o nome de usuário principal a ser usado para esse perfil. O nome do realm não precisa ser incluído.|
+|passwordRequireActiveDirectoryComplexity|Boolean|Habilita ou desabilita se as senhas devem atender aos requisitos de complexidade do Active Directory.|
+|passwordPreviousPasswordBlockCount|Int32|Obtém ou define o número de senhas anteriores a ser bloqueado.|
 |passwordMinimumLength|Int32|Obtém ou define o comprimento mínimo de uma senha.|
 |passwordMinimumAgeDays|Int32|Obtém ou define o número mínimo de dias até que um usuário possa alterar sua senha novamente.|
-|passwordRequirementsDescription|String|Obtém ou define uma descrição dos requisitos de complexidade de senha.|
-|requireUserPresence|Booliano|Obtém ou define se deve exigir autenticação por meio de ID de toque, ID de face ou uma senha para acessar a entrada de keychain.|
-|activeDirectorySiteCode|String|Obtém ou define o site do Active Directory.|
-|passwordEnableLocalSync|Booliano|Habilita ou desabilita a sincronização de senha. Isso não afetará os usuários conectados com uma conta móvel no macOS.|
-|blockActiveDirectorySiteAutoDiscovery|Booliano|Habilita ou desabilita se a extensão Kerberos pode determinar automaticamente o nome do site.|
-|passwordChangeUrl|String|Obtém ou define a URL para a qual o usuário será enviado quando iniciar uma alteração de senha.|
+|passwordRequirementsDescription|Cadeia de caracteres|Obtém ou define uma descrição dos requisitos de complexidade de senha.|
+|requireUserPresence|Boolean|Obtém ou define se a autenticação deve ser necessária por meio de ID de Toque, ID de Face ou uma senha para acessar a entrada do chaveiro.|
+|activeDirectorySiteCode|Cadeia de caracteres|Obtém ou define o site do Active Directory.|
+|passwordEnableLocalSync|Boolean|Habilita ou desabilita a sincronização de senha. Isso não afetará os usuários conectados com uma conta móvel no macOS.|
+|blockActiveDirectorySiteAutoDiscovery|Boolean|Habilita ou desabilita se a extensão Kerberos pode determinar automaticamente seu nome de site.|
+|passwordChangeUrl|Cadeia de caracteres|Obtém ou define a URL para a que o usuário será enviado quando iniciar uma alteração de senha.|
 
 ## <a name="relationships"></a>Relações
 Nenhum

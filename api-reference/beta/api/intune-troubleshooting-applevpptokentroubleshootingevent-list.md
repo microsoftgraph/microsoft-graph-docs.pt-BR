@@ -5,18 +5,16 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 45ddfa25929e4ec536d88ba128acc78813354d22
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: 029aa3949f1f20f29b77f3031876563805e88202
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51123452"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58264224"
 ---
 # <a name="list-applevpptokentroubleshootingevents"></a>Listar appleVppTokenTroubleshootingEvents
 
 Namespace: microsoft.graph
-
-> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -57,7 +55,7 @@ Se tiver êxito, este método retornará um código de resposta e uma coleção 
 ### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
 ``` http
-GET https://graph.microsoft.com/beta/deviceManagement/troubleshootingEvents
+GET https://graph.microsoft.com/v1/deviceManagement/troubleshootingEvents
 ```
 
 ### <a name="response"></a>Resposta

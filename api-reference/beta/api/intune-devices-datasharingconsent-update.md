@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0d617546464b1333af2b535bbc1c17f61fa03386
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: cc55258ce11e3196126097b9442aeb53b43184a9
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51146542"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58262288"
 ---
 # <a name="update-datasharingconsent"></a>Atualizar dataSharingConsent
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -27,9 +27,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All|
+|Delegada (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All|
 |Delegada (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementServiceConfig.ReadWrite.All|
+|Aplicativo|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -56,7 +56,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [o dataS
 |id|Cadeia de caracteres|A ID de consentimento de compartilhamento de dados|
 |serviceDisplayName|Cadeia de caracteres|O nome de exibição do fluxo de trabalho do serviço|
 |termsUrl|Cadeia de caracteres|The TermsUrl for the data sharing consent|
-|concedido|Booleano|O estado concedido para o consentimento de compartilhamento de dados|
+|concedido|Boolean|O estado concedido para o consentimento de compartilhamento de dados|
 |grantDateTime|DateTimeOffset|O consentimento de hora foi concedido para essa conta|
 |grantedByUpn|Cadeia de caracteres|O Upn do usuário que concedeu consentimento para essa conta|
 |grantedByUserId|Cadeia de caracteres|UserId do usuário que concedeu consentimento para essa conta|
