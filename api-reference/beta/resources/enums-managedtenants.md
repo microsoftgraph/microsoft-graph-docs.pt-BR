@@ -5,26 +5,26 @@ author: isaiahwilliams
 localization_priority: Normal
 ms.prod: microsoft-365-lighthouse
 doc_type: enumTypes
-ms.openlocfilehash: 8cc2d6e1e95d4b780dd164187e0c8c87f6b11f80
-ms.sourcegitcommit: e372382019f1a136543eadab02ba70af3921e098
+ms.openlocfilehash: f1d906e2693725898be14d0480afcc26ac8331ca4720c67db42342a14772b700
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "53401978"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54203320"
 ---
 # <a name="multi-tenant-management-enumeration-values"></a>Valores de enumeração de gerenciamento de vários locatários
 
 ### <a name="delegatedprivilegestatus-values"></a>valores delegatedPrivilegeStatus
 
-|Member|
+|Membro|
 |:---|
-|nenhuma|
+|Nenhuma|
 |delegatedAdminPrivileges|
 |unknownFutureValue|
 
 ### <a name="managementactionstatus-values"></a>valores managementActionStatus
 
-|Member|
+|Membro|
 |:---|
 |toAddress|
 |completed|
@@ -39,7 +39,7 @@ ms.locfileid: "53401978"
 
 ### <a name="managementcategory-values"></a>valores managementCategory
 
-|Member|
+|Membro|
 |:---|
 |custom|
 |devices|
@@ -48,7 +48,7 @@ ms.locfileid: "53401978"
 
 ### <a name="managementparametervaluetype-values"></a>valores managementParameterValueType
 
-|Member|
+|Membro|
 |:---|
 |cadeia de caracteres|
 |inteiro|
@@ -62,7 +62,7 @@ ms.locfileid: "53401978"
 
 ### <a name="tenantonboardingstatus-values"></a>valores tenantOnboardingStatus
 
-|Member|
+|Membro|
 |:---|
 |inelegível|
 |inProcess|
@@ -72,7 +72,7 @@ ms.locfileid: "53401978"
 
 ### <a name="workloadactioncategory-values"></a>valores workloadActionCategory
 
-|Member|
+|Membro|
 |:---|
 |automatizado|
 |Manual|
@@ -80,7 +80,7 @@ ms.locfileid: "53401978"
 
 ### <a name="workloadactionstatus-values"></a>valores workloadActionStatus
 
-|Member|
+|Membro|
 |:---|
 |toAddress|
 |completed|
@@ -91,7 +91,7 @@ ms.locfileid: "53401978"
 
 ### <a name="workloadonboardingstatus-values"></a>valores workloadOnboardingStatus
 
-|Member|
+|Membro|
 |:---|
 |notOnboarded|
 |onboarded|

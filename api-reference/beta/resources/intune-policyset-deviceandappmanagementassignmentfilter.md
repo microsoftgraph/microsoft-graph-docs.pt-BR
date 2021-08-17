@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: c8b0811bd8ab91aca4ad71c72cc9691193172e6c
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: 135594e3dd1ea54b6ca61b0724a31537519258c9
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51130634"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58266825"
 ---
 # <a name="deviceandappmanagementassignmentfilter-resource-type"></a>Tipo de recurso deviceAndAppManagementAssignmentFilter
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -33,6 +33,8 @@ Uma classe que contém as propriedades usadas para Filtro de Atribuição.
 |[Ação validateFilter](../api/intune-policyset-deviceandappmanagementassignmentfilter-validatefilter.md)|[assignmentFilterValidationResult](../resources/intune-policyset-assignmentfiltervalidationresult.md)|Ainda não documentado|
 |[habilitar ação](../api/intune-policyset-deviceandappmanagementassignmentfilter-enable.md)|Nenhuma|Ainda não documentado|
 |[função getState](../api/intune-policyset-deviceandappmanagementassignmentfilter-getstate.md)|[assignmentFilterState](../resources/intune-policyset-assignmentfilterstate.md)|Ainda não documentado|
+|[função getPlatformSupportedProperties](../api/intune-policyset-deviceandappmanagementassignmentfilter-getplatformsupportedproperties.md)|[coleção assignmentFilterSupportedProperty](../resources/intune-policyset-assignmentfiltersupportedproperty.md)|Ainda não documentado|
+|[função getSupportedProperties](../api/intune-policyset-deviceandappmanagementassignmentfilter-getsupportedproperties.md)|[coleção assignmentFilterSupportedProperty](../resources/intune-policyset-assignmentfiltersupportedproperty.md)|Ainda não documentado|
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
@@ -41,10 +43,10 @@ Uma classe que contém as propriedades usadas para Filtro de Atribuição.
 |createdDateTime|DateTimeOffset|Hora de criação do Filtro de Atribuição.|
 |lastModifiedDateTime|DateTimeOffset|Última hora modificada do Filtro de Atribuição.|
 |displayName|Cadeia de caracteres|DisplayName do Filtro de Atribuição.|
-|descrição|Cadeia de caracteres|Descrição do Filtro de Atribuição.|
-|plataforma|[devicePlatformType](../resources/intune-shared-deviceplatformtype.md)|Tipo de plataforma dos dispositivos nos quais o Filtro de Atribuição será aplicável. Os valores possíveis são: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `unknown`.|
+|description|Cadeia de caracteres|Descrição do Filtro de Atribuição.|
+|plataforma|[devicePlatformType](../resources/intune-policyset-deviceplatformtype.md)|Tipo de plataforma dos dispositivos nos quais o Filtro de Atribuição será aplicável. Os valores possíveis são: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `unknown`.|
 |rule|Cadeia de caracteres|Definição de regra do Filtro de Atribuição.|
-|roleScopeTags|Coleção de cadeias de caracteres|RoleScopeTags do Filtro de Atribuição.|
+|roleScopeTags|String collection|RoleScopeTags do Filtro de Atribuição.|
 
 ## <a name="relationships"></a>Relações
 Nenhum

@@ -1,35 +1,35 @@
 ---
-title: tipo de enumeração webBrowserCookieSettings
-description: Configurações de cookies do navegador da Web.
+title: Tipo de número webBrowserCookieSettings
+description: Cookie do Navegador da Web Configurações.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 0473b2d02ec1407e40b7d08444721995b6276ba9
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 9acdcda1ff29f0f5274d762856a5047cbfe2cba32d3f633b00acdee40098ab6d
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49215580"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54148180"
 ---
-# <a name="webbrowsercookiesettings-enum-type"></a>tipo de enumeração webBrowserCookieSettings
+# <a name="webbrowsercookiesettings-enum-type"></a>Tipo de número webBrowserCookieSettings
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Configurações de cookies do navegador da Web.
+Cookie do Navegador da Web Configurações.
 
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|browserDefault|,0|O valor padrão do navegador, sem intenção.|
-|blockAlways|1|Sempre bloquear cookies.|
-|allowCurrentWebSite|duas|Permitir cookies do site atual.|
-|allowFromWebsitesVisited|3D|Permitir cookies de sites visitados.|
-|allowAlways|4 |Sempre permitir cookies.|
+|browserDefault|0|Valor padrão do navegador, sem intenção.|
+|blockAlways|1 |Sempre bloqueie cookies.|
+|allowCurrentWebSite|2|Permitir cookies do site atual.|
+|allowFromWebsitesVisited|3 |Permitir Cookies de sites visitados.|
+|allowAlways|4 |Sempre permita cookies.|
 
 
 

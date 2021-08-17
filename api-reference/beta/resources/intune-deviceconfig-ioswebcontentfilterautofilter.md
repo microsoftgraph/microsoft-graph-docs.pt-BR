@@ -1,26 +1,26 @@
 ---
-title: tipo de recurso iosWebContentFilterAutoFilter
-description: Representa um tipo de configuração de filtro de conteúdo da Web iOS, que habilita o recurso de filtro automático do iOS e permite o controle de acesso à URL adicional. Quando construído sem valores de propriedade, o dispositivo iOS habilitará o filtro automático independentemente.
+title: Tipo de recurso iosWebContentFilterAutoFilter
+description: Representa um tipo de configuração do Filtro de Conteúdo da Web do iOS, que habilita o recurso de filtro automático do iOS e permite um controle de acesso de URL adicional. Quando construído sem valores de propriedade, o dispositivo iOS habilitará o filtro automático independentemente.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: c1c294ae84da91c6c61bb195fb79ea25c33134ac
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 9d09b964b02b5bc329fca67662d9a46a69c67740732d068c7bd918e4b37aff3a
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49215867"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54206652"
 ---
-# <a name="ioswebcontentfilterautofilter-resource-type"></a>tipo de recurso iosWebContentFilterAutoFilter
+# <a name="ioswebcontentfilterautofilter-resource-type"></a>Tipo de recurso iosWebContentFilterAutoFilter
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Representa um tipo de configuração de filtro de conteúdo da Web iOS, que habilita o recurso de filtro automático do iOS e permite o controle de acesso à URL adicional. Quando construído sem valores de propriedade, o dispositivo iOS habilitará o filtro automático independentemente.
+Representa um tipo de configuração do Filtro de Conteúdo da Web do iOS, que habilita o recurso de filtro automático do iOS e permite um controle de acesso de URL adicional. Quando construído sem valores de propriedade, o dispositivo iOS habilitará o filtro automático independentemente.
 
 
 Herda de [iosWebContentFilterBase](../resources/intune-deviceconfig-ioswebcontentfilterbase.md)
@@ -28,8 +28,8 @@ Herda de [iosWebContentFilterBase](../resources/intune-deviceconfig-ioswebconten
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|allowedUrls|Coleção de cadeias de caracteres|URLs adicionais permitidas para acesso|
-|blockedUrls|Coleção de cadeias de caracteres|URLs adicionais bloqueadas para acesso|
+|allowedUrls|String collection|URLs adicionais permitidas para acesso|
+|blockedUrls|String collection|URLs adicionais bloqueadas para acesso|
 
 ## <a name="relationships"></a>Relações
 Nenhum

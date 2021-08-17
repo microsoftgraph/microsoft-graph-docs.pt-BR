@@ -1,35 +1,35 @@
 ---
-title: tipo de enumeração windowsAppStartLayoutTileSize
-description: O tamanho do bloco do aplicativo do Windows no layout de início.
+title: Tipo de número do windowsAppStartLayoutTileSize
+description: O tamanho do Windows no layout inicial.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: a73d549294ab786c8f5e43982253992e0d6bec1a
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 7589a77848decce46678302957d422d865997c5b86cb213be1d088d2f9875dd6
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49279133"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54198119"
 ---
-# <a name="windowsappstartlayouttilesize-enum-type"></a>tipo de enumeração windowsAppStartLayoutTileSize
+# <a name="windowsappstartlayouttilesize-enum-type"></a>Tipo de número do windowsAppStartLayoutTileSize
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-O tamanho do bloco do aplicativo do Windows no layout de início.
+O tamanho do Windows no layout inicial.
 
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|hidden|,0|Oculta.|
-|small|1|1x1 pequeno.|
-|medium|duas|2x2 médio.|
-|várias|3D|Wide 4x2.|
-|large|4 |4x4 grande.|
+|hidden|0|Oculto.|
+|small|1 |Pequeno 1x1.|
+|medium|2|Médio 2x2.|
+|wide|3 |Wide 4x2.|
+|large|4 |Grande 4x4.|
 
 
 

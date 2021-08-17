@@ -1,32 +1,32 @@
 ---
-title: tipo de enumeração deviceManagementExchangeConnectorSyncType
-description: O tipo de sincronização do Exchange Connector solicitada.
+title: Tipo de número deviceManagementExchangeConnectorSyncType
+description: O tipo de sincronização Exchange Conector solicitado.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: a4cb695d129f77409bfc83d902c10f2af511a86b
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 9e9d1a16e7de89c6f0092aa14795f16337b80909ae53a49280f871cebdb2406b
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49307434"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54213022"
 ---
-# <a name="devicemanagementexchangeconnectorsynctype-enum-type"></a>tipo de enumeração deviceManagementExchangeConnectorSyncType
+# <a name="devicemanagementexchangeconnectorsynctype-enum-type"></a>Tipo de número deviceManagementExchangeConnectorSyncType
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-O tipo de sincronização do Exchange Connector solicitada.
+O tipo de sincronização Exchange Conector solicitado.
 
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|fullSync|,0|Descubra todos os dispositivos no Exchange.|
-|deltaSync|1|Descubra apenas o dispositivo no Exchange que foi atualizado durante a janela de sincronização Delta.|
+|fullSync|0|Descubra todos os dispositivos Exchange.|
+|deltaSync|1 |Descubra apenas o dispositivo em Exchange que foram atualizados durante a janela de sincronização delta.|
 
 
 

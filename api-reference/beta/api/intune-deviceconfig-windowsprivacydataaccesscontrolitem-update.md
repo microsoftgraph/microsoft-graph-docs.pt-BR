@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 85c912c244d2554fd9a05ccaedf16bf60cfc565d
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: 88f5cc7e2c2771ffcd7080ce369ba735fd8d6887f2668296ec60afa73e35f1a2
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51147081"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54211062"
 ---
 # <a name="update-windowsprivacydataaccesscontrolitem"></a>Atualizar windowsPrivacyDataAccessControlItem
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -56,8 +56,8 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [o windo
 |id|Cadeia de caracteres|A chave do WindowsPrivacyDataAccessControlItem.|
 |accessLevel|[windowsPrivacyDataAccessLevel](../resources/intune-deviceconfig-windowsprivacydataaccesslevel.md)|Isso indica um nível de acesso para a categoria de dados de privacidade ao qual o aplicativo especificado será dado. Os valores possíveis são: `notConfigured`, `forceAllow`, `forceDeny`, `userInControl`.|
 |dataCategory|[windowsPrivacyDataCategory](../resources/intune-deviceconfig-windowsprivacydatacategory.md)|Isso indica uma categoria de dados de privacidade à qual o controle de acesso específico será aplicado. Os valores possíveis são: `notConfigured` , , , , , , , , , `accountInfo` , , , , `appsRunInBackground` , , , `calendar` , `callHistory` `camera` , `contacts` `diagnosticsInfo` `email` `location` `messaging` `microphone` `motion` `notifications` `phone` `radios` `tasks` . `syncWithDevices` `trustedDevices`|
-|appPackageFamilyName|Cadeia de caracteres|O Nome da Família de Pacotes de um aplicativo do Windows. Quando definido, o nível de acesso se aplica ao aplicativo especificado.|
-|appDisplayName|Cadeia de caracteres|O Nome da Família de Pacotes de um aplicativo do Windows. Quando definido, o nível de acesso se aplica ao aplicativo especificado.|
+|appPackageFamilyName|Cadeia de caracteres|O Nome da Família de Pacotes de um Windows aplicativo. Quando definido, o nível de acesso se aplica ao aplicativo especificado.|
+|appDisplayName|Cadeia de caracteres|O Nome da Família de Pacotes de um Windows aplicativo. Quando definido, o nível de acesso se aplica ao aplicativo especificado.|
 
 
 

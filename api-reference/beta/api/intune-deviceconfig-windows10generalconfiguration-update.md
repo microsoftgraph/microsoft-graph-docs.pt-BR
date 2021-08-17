@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: eff541671d0f6994b5d020a979c20591088263dd
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: 04fb15ab3a7291e722c7627fe7f4915457e820278ee819da9d72b6cbec157164
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51127792"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54140395"
 ---
 # <a name="update-windows10generalconfiguration"></a>Atualizar windows10GeneralConfiguration
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -57,74 +57,74 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [windows
 |:---|:---|:---|
 |id|Cadeia de caracteres|Chave da entidade. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de marcas de escopo para esta instância entity. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|supportsScopeTags|Booleano|Indica se a Configuração de Dispositivo subjacente dá suporte ou não à atribuição de marcas de escopo. A atribuição à propriedade ScopeTags não é permitida quando esse valor é falso e as entidades não estarão visíveis para usuários com escopo. Isso ocorre para políticas herdadas criadas no Silverlight e podem ser resolvidas excluindo e recriando a política no Portal do Azure. Essa propriedade é somente leitura. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|roleScopeTagIds|String collection|Lista de marcas de escopo para esta instância entity. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|supportsScopeTags|Boolean|Indica se a Configuração de Dispositivo subjacente dá suporte ou não à atribuição de marcas de escopo. A atribuição à propriedade ScopeTags não é permitida quando esse valor é falso e as entidades não estarão visíveis para usuários com escopo. Isso ocorre para políticas herdadas criadas no Silverlight e podem ser resolvidas excluindo e recriando a política no Portal do Azure. Essa propriedade é somente leitura. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|A aplicabilidade da edição do sistema operacional para esta Política. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|A regra de aplicabilidade da versão do sistema operacional para esta Política. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|A regra de aplicabilidade do modo de dispositivo para esta Política. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|DateTime em que o objeto foi criado. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|descrição|Cadeia de caracteres|O administrador forneceu a descrição da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|description|Cadeia de caracteres|O administrador forneceu a descrição da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |displayName|Cadeia de caracteres|O administrador forneceu o nome da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |versão|Int32|Versão da configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|taskManagerBlockEndTask|Booleano|Especifique se os não administradores podem usar o Gerenciador de Tarefas para finalizar tarefas.|
+|taskManagerBlockEndTask|Boolean|Especifique se os não administradores podem usar o Gerenciador de Tarefas para finalizar tarefas.|
 |energySaverOnBatteryThresholdPercentage|Int32|Essa configuração permite especificar o nível de carga da bateria no qual o Economia de Energia está ligado. Durante a bateria, o Economia de Energia é ativado automaticamente em (e abaixo) do nível de carga da bateria especificado. Intervalo de entrada válido (0-100). Valores válidos de 0 a 100|
 |energySaverPluggedInThresholdPercentage|Int32|Essa configuração permite especificar o nível de carga da bateria no qual o Economia de Energia está ligado. Quando conectado, o Economia de Energia é ativado automaticamente em (e abaixo) do nível de carga da bateria especificado. Intervalo de entrada válido (0-100). Valores válidos de 0 a 100|
-|powerLidCloseActionOnBattery|[powerActionType](../resources/intune-deviceconfig-poweractiontype.md)|Essa configuração especifica a ação que o Windows toma quando um usuário fecha a tampa de um computador móvel durante a bateria. Os valores possíveis são: `notConfigured`, `noAction`, `sleep`, `hibernate`, `shutdown`.|
-|powerLidCloseActionPluggedIn|[powerActionType](../resources/intune-deviceconfig-poweractiontype.md)|Essa configuração especifica a ação que o Windows toma quando um usuário fecha a tampa de um computador móvel enquanto está conectado. Os valores possíveis são: `notConfigured`, `noAction`, `sleep`, `hibernate`, `shutdown`.|
-|powerButtonActionOnBattery|[powerActionType](../resources/intune-deviceconfig-poweractiontype.md)|Essa configuração especifica a ação que o Windows toma quando um usuário pressiona o botão Ligar durante a bateria. Os valores possíveis são: `notConfigured`, `noAction`, `sleep`, `hibernate`, `shutdown`.|
-|powerButtonActionPluggedIn|[powerActionType](../resources/intune-deviceconfig-poweractiontype.md)|Essa configuração especifica a ação que o Windows toma quando um usuário pressiona o botão Ligar enquanto está conectado. Os valores possíveis são: `notConfigured`, `noAction`, `sleep`, `hibernate`, `shutdown`.|
-|powerSleepButtonActionOnBattery|[powerActionType](../resources/intune-deviceconfig-poweractiontype.md)|Essa configuração especifica a ação que o Windows toma quando um usuário pressiona o botão Desodorando durante a bateria. Os valores possíveis são: `notConfigured`, `noAction`, `sleep`, `hibernate`, `shutdown`.|
-|powerSleepButtonActionPluggedIn|[powerActionType](../resources/intune-deviceconfig-poweractiontype.md)|Essa configuração especifica a ação que o Windows toma quando um usuário pressiona o botão Desodorado enquanto está conectado. Os valores possíveis são: `notConfigured`, `noAction`, `sleep`, `hibernate`, `shutdown`.|
+|powerLidCloseActionOnBattery|[powerActionType](../resources/intune-deviceconfig-poweractiontype.md)|Essa configuração especifica a ação Windows tomada quando um usuário fecha a tampa de um computador móvel durante a bateria. Os valores possíveis são: `notConfigured`, `noAction`, `sleep`, `hibernate`, `shutdown`.|
+|powerLidCloseActionPluggedIn|[powerActionType](../resources/intune-deviceconfig-poweractiontype.md)|Essa configuração especifica a ação Windows tomada quando um usuário fecha a tampa de um computador móvel enquanto está conectado. Os valores possíveis são: `notConfigured`, `noAction`, `sleep`, `hibernate`, `shutdown`.|
+|powerButtonActionOnBattery|[powerActionType](../resources/intune-deviceconfig-poweractiontype.md)|Essa configuração especifica a ação Windows tomada quando um usuário pressiona o botão Ligar durante a bateria. Os valores possíveis são: `notConfigured`, `noAction`, `sleep`, `hibernate`, `shutdown`.|
+|powerButtonActionPluggedIn|[powerActionType](../resources/intune-deviceconfig-poweractiontype.md)|Essa configuração especifica a ação Windows tomada quando um usuário pressiona o botão Ligar enquanto estiver conectado. Os valores possíveis são: `notConfigured`, `noAction`, `sleep`, `hibernate`, `shutdown`.|
+|powerSleepButtonActionOnBattery|[powerActionType](../resources/intune-deviceconfig-poweractiontype.md)|Essa configuração especifica a ação que Windows tomada quando um usuário pressiona o botão Sleep durante a bateria. Os valores possíveis são: `notConfigured`, `noAction`, `sleep`, `hibernate`, `shutdown`.|
+|powerSleepButtonActionPluggedIn|[powerActionType](../resources/intune-deviceconfig-poweractiontype.md)|Essa configuração especifica a ação Windows tomada quando um usuário pressiona o botão Sleep enquanto está conectado. Os valores possíveis são: `notConfigured`, `noAction`, `sleep`, `hibernate`, `shutdown`.|
 |powerHybridSleepOnBattery|[enablement](../resources/intune-shared-enablement.md)|Essa configuração permite desativar o sono híbrido durante a bateria. Se você definir essa configuração como desabilitada, um hiberfile não será gerado quando o sistema faz a transição para o sleep (Stand By). Se você definir essa configuração para habilitar ou não configurar essa configuração de política, os usuários controlarão essa configuração. Os valores possíveis são: `notConfigured`, `enabled`, `disabled`.|
 |powerHybridSleepPluggedIn|[enablement](../resources/intune-shared-enablement.md)|Essa configuração permite desativar o sono híbrido enquanto estiver conectado. Se você definir essa configuração como desabilitada, um hiberfile não será gerado quando o sistema faz a transição para o sleep (Stand By). Se você definir essa configuração para habilitar ou não configurar essa configuração de política, os usuários controlarão essa configuração. Os valores possíveis são: `notConfigured`, `enabled`, `disabled`.|
-|windows10AppsForceUpdateSchedule|[windows10AppsForceUpdateSchedule](../resources/intune-deviceconfig-windows10appsforceupdateschedule.md)|Agenda de atualização de força do Windows 10 para Aplicativos.|
-|enableAutomaticRedeployment|Booleano|Permitir que os usuários com direitos administrativos excluam todos os dados e configurações do usuário usando CTRL + Win + R na tela de bloqueio do dispositivo para que o dispositivo possa ser automaticamente reconfigurado e re-inscrito no gerenciamento.|
+|windows10AppsForceUpdateSchedule|[windows10AppsForceUpdateSchedule](../resources/intune-deviceconfig-windows10appsforceupdateschedule.md)|Windows 10 forçar o agendamento de atualização para Aplicativos.|
+|enableAutomaticRedeployment|Boolean|Permitir que os usuários com direitos administrativos excluam todos os dados e configurações do usuário usando CTRL + Win + R na tela de bloqueio do dispositivo para que o dispositivo possa ser automaticamente reconfigurado e re-inscrito no gerenciamento.|
 |microsoftAccountSignInAssistantSettings|[signInAssistantOptions](../resources/intune-deviceconfig-signinassistantoptions.md)|Controla o serviço NT Sign-In assistente de conta da Microsoft (wlidsvc). Os valores possíveis são: `notConfigured` e `disabled`.|
-|authenticationAllowSecondaryDevice|Booleano|Permite que dispositivos de autenticação secundários funcionem com o Windows.|
+|authenticationAllowSecondaryDevice|Boolean|Permite que dispositivos de autenticação secundários funcionem com Windows.|
 |authenticationWebSignIn|[enablement](../resources/intune-shared-enablement.md)|Indica se o Provedor de Credenciais da Web será habilitado ou não. Os valores possíveis são: `notConfigured`, `enabled`, `disabled`.|
 |authenticationPreferredAzureADTenantDomainName|Cadeia de caracteres|Especifica o domínio preferencial entre os domínios disponíveis no locatário do Azure AD.|
-|cryptographyAllowFipsAlgorithmPolicy|Booleano|Especifique se é permitido ou não a política FIPS (Federal Information Processing Standard).|
-|displayAppListWithGdiDPIScalingTurnedOn|Coleção de cadeias de caracteres|Lista de aplicativos herdado que têm o Dimensionamento de DPI GDI ligado.|
-|displayAppListWithGdiDPIScalingTurnedOff|Coleção de cadeias de caracteres|Lista de aplicativos herdado que têm o Dimensionamento de DPI GDI desligado.|
+|cryptographyAllowFipsAlgorithmPolicy|Boolean|Especifique se é permitido ou não a política FIPS (Federal Information Processing Standard).|
+|displayAppListWithGdiDPIScalingTurnedOn|String collection|Lista de aplicativos herdado que têm o Dimensionamento de DPI GDI ligado.|
+|displayAppListWithGdiDPIScalingTurnedOff|String collection|Lista de aplicativos herdado que têm o Dimensionamento de DPI GDI desligado.|
 |enterpriseCloudPrintDiscoveryEndPoint|String|Ponto de extremidade para descoberta de impressoras na nuvem.|
 |enterpriseCloudPrintOAuthAuthority|String|Ponto de extremidade para aquisição de tokens OAuth.|
 |enterpriseCloudPrintOAuthClientIdentifier|String|GUID de um aplicativo cliente autorizado a recuperar tokens OAuth da autoridade OAuth.|
 |enterpriseCloudPrintResourceIdentifier|String|URI do recurso OAuth para serviço de impressão, conforme configurado no portal do Azure.|
 |enterpriseCloudPrintDiscoveryMaxLimit|Int32|Número máximo de impressoras que devem ser consultadas em um ponto de extremidade de descoberta. Esta é uma configuração somente para dispositivos móveis. Valores válidos de 1 a 65535|
 |enterpriseCloudPrintMopriaDiscoveryResourceIdentifier|String|URI do recurso OAuth para serviço de descoberta de impressoras, conforme configurado no portal do Azure.|
-|experienceDoNotSyncBrowserSettings|[browserSyncSetting](../resources/intune-deviceconfig-browsersyncsetting.md)|Permitir ou impedir a sincronização das configurações do Navegador do Microsoft Edge. Opção para os administradores de IT impedirem a sincronização entre dispositivos, mas permitir a substituição do usuário. Os valores possíveis são: `notConfigured`, `blockedWithUserOverride`, `blocked`.|
-|messagingBlockSync|Booleano|Indica se a mensagem de texto deve ou não ser restaurada e restaurada em todos os lugares.|
-|messagingBlockMMS|Booleano|Indica se a funcionalidade de envio/recebimento MMS deve ou não ser bloqueado no dispositivo.|
-|messagingBlockRichCommunicationServices|Booleano|Indica se o RCS deve ou não bloquear a funcionalidade de envio/recebimento do RCS no dispositivo.|
-|printerNames|Coleção de cadeias de caracteres|Provisionar impressoras automaticamente com base em seus nomes (nomes de host de rede).|
+|experienceDoNotSyncBrowserSettings|[browserSyncSetting](../resources/intune-deviceconfig-browsersyncsetting.md)|Permitir ou impedir a sincronização de configurações Microsoft Edge Navegador. Opção para os administradores de IT impedirem a sincronização entre dispositivos, mas permitir a substituição do usuário. Os valores possíveis são: `notConfigured`, `blockedWithUserOverride`, `blocked`.|
+|messagingBlockSync|Boolean|Indica se a mensagem de texto deve ou não ser restaurada e restaurada em todos os lugares.|
+|messagingBlockMMS|Boolean|Indica se a funcionalidade de envio/recebimento MMS deve ou não ser bloqueado no dispositivo.|
+|messagingBlockRichCommunicationServices|Boolean|Indica se a funcionalidade RCS enviar/receber no dispositivo.|
+|printerNames|String collection|Provisionar impressoras automaticamente com base em seus nomes (nomes de host de rede).|
 |printerDefaultName|Cadeia de caracteres|Nome (nome do host de rede) de uma impressora instalada.|
-|printerBlockAddition|Booleano|Impedir a instalação do usuário de impressoras adicionais de configurações de impressoras.|
+|printerBlockAddition|Boolean|Impedir a instalação do usuário de impressoras adicionais de configurações de impressoras.|
 |searchBlockDiacritics|Boolean|Especifica se a pesquisa pode usar diacríticos.|
 |searchDisableAutoLanguageDetection|Boolean|Especifica se a detecção automática de idioma será usada ao indexar conteúdo e propriedades.|
 |searchDisableIndexingEncryptedItems|Boolean|Indica se a indexação de itens protegidos por WIP será bloqueada ou não para que eles não apareçam nos resultados de pesquisa da Cortana ou do Explorer.|
 |searchEnableRemoteQueries|Boolean|Indica se as consultas remotas do índice deste computador serão bloqueadas ou não.|
-|searchDisableUseLocation|Booleano|Especifica se a pesquisa pode usar informações de local.|
-|searchDisableLocation|Booleano|Especifica se a pesquisa pode usar informações de local.|
+|searchDisableUseLocation|Boolean|Especifica se a pesquisa pode usar informações de local.|
+|searchDisableLocation|Boolean|Especifica se a pesquisa pode usar informações de local.|
 |searchDisableIndexerBackoff|Boolean|Indica se o recurso de retirada de indexador de pesquisa deve ou não ser desativado.|
 |searchDisableIndexingRemovableDrive|Boolean|Indica se os usuários poderão ou não adicionar locais de unidades removíveis a bibliotecas e para serem indexados.|
 |searchEnableAutomaticIndexSizeManangement|Boolean|Especifica uma quantidade mínima de espaço em disco rígido na mesma unidade como o local do índice antes que a indexação seja interrompida.|
-|searchBlockWebResults|Booleano|Indica se a pesquisa da Web deve ou não ser bloqueado.|
+|searchBlockWebResults|Boolean|Indica se a pesquisa da Web deve ou não ser bloqueado.|
 |findMyFiles|[enablement](../resources/intune-shared-enablement.md)|Controla se o usuário pode configurar a pesquisa para o modo Encontrar Meus Arquivos, que pesquisa arquivos em discos rígidos secundários e também fora do perfil de usuário. Find My Files não permite que os usuários pesquisem arquivos ou locais aos quais eles não têm acesso. Os valores possíveis são: `notConfigured`, `enabled`, `disabled`.|
-|securityBlockAzureADJoinedDevicesAutoEncryption|Booleano|Especifique se é necessário permitir a criptografia automática de dispositivo durante o OOBE quando o dispositivo estiver ingressado no Azure AD (somente área de trabalho).|
+|securityBlockAzureADJoinedDevicesAutoEncryption|Boolean|Especifique se é necessário permitir a criptografia automática de dispositivo durante o OOBE quando o dispositivo estiver ingressado no Azure AD (somente área de trabalho).|
 |diagnosticsDataSubmissionMode|[diagnosticDataSubmissionMode](../resources/intune-deviceconfig-diagnosticdatasubmissionmode.md)|Obtém ou define um valor que permite que o dispositivo envie dados de diagnóstico e de telemetria de uso, como Watson. Os valores possíveis são: `userDefined`, `none`, `basic`, `enhanced`, `full`.|
 |oneDriveDisableFileSync|Boolean|Obtém ou define um valor para permitir que os administradores de TI impeçam aplicativos e recursos de trabalhar com arquivos no OneDrive.|
 |systemTelemetryProxyServer|Cadeia de caracteres|Obtém ou define o FQDN (nome de domínio totalmente qualificado) ou endereço IP de um servidor proxy para encaminhar as experiências do usuário conectado e solicitações de Telemetria.|
-|edgeTelemetryForMicrosoft365Analytics|[edgeTelemetryMode](../resources/intune-deviceconfig-edgetelemetrymode.md)|Especifica que tipo de dados de telemetria (nenhum, intranet, internet, ambos) são enviados para o Microsoft 365 Analytics. Os valores possíveis são: `notConfigured`, `intranet`, `internet`, `intranetAndInternet`.|
+|edgeTelemetryForMicrosoft365Analytics|[edgeTelemetryMode](../resources/intune-deviceconfig-edgetelemetrymode.md)|Especifica que tipo de dados de telemetria (nenhum, intranet, internet, ambos) são enviados para Microsoft 365 Analytics. Os valores possíveis são: `notConfigured`, `intranet`, `internet`, `intranetAndInternet`.|
 |inkWorkspaceAccess|[inkAccessSetting](../resources/intune-deviceconfig-inkaccesssetting.md)|Controla o acesso do usuário ao espaço de trabalho de tinta, da área de trabalho e de cima da tela de bloqueio. Os valores possíveis são: `notConfigured`, `enabled`, `disabled`.|
 |inkWorkspaceAccessState|[stateManagementSetting](../resources/intune-deviceconfig-statemanagementsetting.md)|Controla o acesso do usuário ao espaço de trabalho de tinta, da área de trabalho e de cima da tela de bloqueio. Os valores possíveis são: `notConfigured`, `blocked`, `allowed`.|
-|inkWorkspaceBlockSuggestedApps|Booleano|Especifique se deve mostrar sugestões de aplicativo recomendadas no espaço de trabalho de tinta.|
+|inkWorkspaceBlockSuggestedApps|Boolean|Especifique se deve mostrar sugestões de aplicativo recomendadas no espaço de trabalho de tinta.|
 |smartScreenEnableAppInstallControl|Boolean|Essa propriedade será preterida em julho de 2019 e será substituída pela propriedade SmartScreenAppInstallControl. Permite que os administradores de TI controlem se os usuários poderão instalar aplicativos de lugares que não sejam a Store.|
-|smartScreenAppInstallControl|[appInstallControlType](../resources/intune-deviceconfig-appinstallcontroltype.md)|Adicionado ao Windows 10, versão 1703. Permite que os administradores de TI controlem se os usuários poderão instalar aplicativos de lugares que não sejam a Store. Os valores possíveis são: `notConfigured`, `anywhere`, `storeOnly`, `recommendations`, `preferStore`.|
+|smartScreenAppInstallControl|[appInstallControlType](../resources/intune-deviceconfig-appinstallcontroltype.md)|Adicionado na Windows 10, versão 1703. Permite que os administradores de TI controlem se os usuários poderão instalar aplicativos de lugares que não sejam a Store. Os valores possíveis são: `notConfigured`, `anywhere`, `storeOnly`, `recommendations`, `preferStore`.|
 |personalizationDesktopImageUrl|String|Uma URL http ou https para uma imagem jpg, jpeg ou png que precisa ser baixada e usada como a imagem da área de trabalho ou uma URL de arquivo para uma imagem local no sistema de arquivos que precisa ser usada como a imagem da área de trabalho.|
 |personalizationLockScreenImageUrl|String|Uma URL http ou https para uma imagem jpg, jpeg ou png que precisa ser baixada e usada como a imagem da tela de bloqueio ou uma URL de arquivo para uma imagem local no sistema de arquivos que precisa ser usada como a imagem da tela de bloqueio.|
 |bluetoothAllowedServices|String collection|Especifica uma lista de serviços e perfis Bluetooth permitidos em cadeias de caracteres de formato hexadecimal.|
 |bluetoothBlockAdvertising|Boolean|Se o usuário será ou não impedido de usar a publicidade do bluetooth.|
-|bluetoothBlockPromptedProximalConnections|Booleano|Se os usuários usarão o Swift Pair ou não e outros cenários baseados em proximidade.|
+|bluetoothBlockPromptedProximalConnections|Boolean|Se os usuários usarão o Swift Pair ou não e outros cenários baseados em proximidade.|
 |bluetoothBlockDiscoverableMode|Boolean|Se o usuário será ou não impedido de usar o modo de descoberta de bluetooth.|
 |bluetoothBlockPrePairing|Boolean|Se determinados periféricos Bluetooth agrupados serão bloqueados ou não do emparelhamento automático com o dispositivo host.|
 |edgeBlockAutofill|Boolean|Indica se o preenchimento automático deve ou não ser bloqueado.|
@@ -144,24 +144,24 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [windows
 |edgeBlockLiveTileDataCollection|Boolean|Bloquear a coleta de informações da Microsoft para criação de bloco dinâmico quando os usuários fixarem um site para iniciar no Microsoft Edge.|
 |edgeSyncFavoritesWithInternetExplorer|Boolean|Habilitar a sincronização de favoritos entre o Internet Explorer e o Microsoft Edge. Adições, exclusões, modificações e outras alterações para favoritos são compartilhadas entre navegadores.|
 |edgeFavoritesListLocation|Cadeia de caracteres|O local da lista de favoritos a ser provisionamento. Pode ser um arquivo local, rede local ou local http.|
-|edgeBlockEditFavorites|Booleano|Indica se o usuário deve ou não bloquear as alterações feitas em Favoritos.|
+|edgeBlockEditFavorites|Boolean|Indica se o usuário deve ou não bloquear as alterações feitas em Favoritos.|
 |edgeNewTabPageURL|Cadeia de caracteres|Especifique a página aberta quando novas guias são criadas.|
 |edgeHomeButtonConfiguration|[edgeHomeButtonConfiguration](../resources/intune-deviceconfig-edgehomebuttonconfiguration.md)|Faz com que o botão Página Inicial seja ocultado, carregue a página Inicial padrão, carregue uma página nova guia ou uma URL personalizada|
-|edgeHomeButtonConfigurationEnabled|Booleano|Habilita a configuração do botão Página Inicial.|
+|edgeHomeButtonConfigurationEnabled|Boolean|Habilita a configuração do botão Página Inicial.|
 |edgeOpensWith|[edgeOpenOptions](../resources/intune-deviceconfig-edgeopenoptions.md)|Especifique que tipo de páginas estão abertas no início. Os valores possíveis são: `notConfigured`, `startPage`, `newTabPage`, `previousPages`, `specificPages`.|
-|edgeBlockSideloadingExtensions|Booleano|Indica se o usuário pode fazer sideload de extensões.|
-|edgeRequiredExtensionPackageFamilyNames|Coleção de cadeias de caracteres|Especifique a lista de nomes de família de pacotes de extensões do navegador que são necessárias e não podem ser desligadas pelo usuário.|
-|edgeBlockPrinting|Booleano|Configure Edge para permitir ou bloquear a impressão.|
+|edgeBlockSideloadingExtensions|Boolean|Indica se o usuário pode fazer sideload de extensões.|
+|edgeRequiredExtensionPackageFamilyNames|String collection|Especifique a lista de nomes de família de pacotes de extensões do navegador que são necessárias e não podem ser desligadas pelo usuário.|
+|edgeBlockPrinting|Boolean|Configure Edge para permitir ou bloquear a impressão.|
 |edgeFavoritesBarVisibility|[visibilitySetting](../resources/intune-deviceconfig-visibilitysetting.md)|Obter ou definir um valor que especifica se a barra de favoritos deve ser sempre visível ou oculta em qualquer página. Os valores possíveis são: `notConfigured`, `hide`, `show`.|
-|edgeBlockSavingHistory|Booleano|Configure o Edge para permitir que o histórico de navegação seja salvo ou nunca salve o histórico de navegação.|
-|edgeBlockFullScreenMode|Booleano|Permitir ou impedir que Edge entre no modo de tela inteira.|
-|edgeBlockWebContentOnNewTabPage|Booleano|Configure para carregar uma página em branco no Edge em vez da página de guia Nova padrão e impedir que os usuários a mudem.|
-|edgeBlockTabPreloading|Booleano|Configure se o Edge pré-carregará a nova página de tabulação na inicialização do Windows.|
-|edgeBlockPrelaunch|Booleano|Decida se o Microsoft Edge está pré-inicializado na inicialização do Windows.|
+|edgeBlockSavingHistory|Boolean|Configure o Edge para permitir que o histórico de navegação seja salvo ou nunca salve o histórico de navegação.|
+|edgeBlockFullScreenMode|Boolean|Permitir ou impedir que Edge entre no modo de tela inteira.|
+|edgeBlockWebContentOnNewTabPage|Boolean|Configure para carregar uma página em branco no Edge em vez da página de guia Nova padrão e impedir que os usuários a mudem.|
+|edgeBlockTabPreloading|Boolean|Configure se o Edge pré-carregará a nova página de tabulação na Windows inicialização.|
+|edgeBlockPrelaunch|Boolean|Decida se Microsoft Edge pré-inicialização na Windows inicialização.|
 |edgeShowMessageWhenOpeningInternetExplorerSites|[internetExplorerMessageSetting](../resources/intune-deviceconfig-internetexplorermessagesetting.md)|Controla a mensagem exibida pelo Edge antes de alternar para o Internet Explorer. Os valores possíveis são: `notConfigured`, `disabled`, `enabled`, `keepGoing`.|
-|edgePreventCertificateErrorOverride|Booleano|Permitir ou impedir que os usuários anulam erros de certificado.|
-|edgeKioskModeRestriction|[edgeKioskModeRestrictionType](../resources/intune-deviceconfig-edgekioskmoderestrictiontype.md)|Controla como as configurações do Microsoft Edge são restritas com base no modo configurar quiosque. Os valores possíveis são: `notConfigured`, `digitalSignage`, `normalMode`, `publicBrowsingSingleApp`, `publicBrowsingMultiApp`.|
-|edgeKioskResetAfterIdleTimeInMinutes|Int32|Especifica o tempo em minutos da última atividade do usuário antes da redefinição do quiosque do Microsoft Edge.  Os valores válidos são 0-1440. O padrão é 5. 0 indica nenhuma redefinição. Valores válidos de 0 a 1440|
+|edgePreventCertificateErrorOverride|Boolean|Permitir ou impedir que os usuários anulam erros de certificado.|
+|edgeKioskModeRestriction|[edgeKioskModeRestrictionType](../resources/intune-deviceconfig-edgekioskmoderestrictiontype.md)|Controla como as Microsoft Edge são restritas com base no modo configurar quiosque. Os valores possíveis são: `notConfigured`, `digitalSignage`, `normalMode`, `publicBrowsingSingleApp`, `publicBrowsingMultiApp`.|
+|edgeKioskResetAfterIdleTimeInMinutes|Int32|Especifica o tempo em minutos da última atividade do usuário antes Microsoft Edge de quiosque.  Os valores válidos são 0-1440. O padrão é 5. 0 indica nenhuma redefinição. Valores válidos de 0 a 1440|
 |cellularBlockDataWhenRoaming|Boolean|Se o usuário será ou não impedido de usar dados da rede celular durante roaming.|
 |cellularBlockVpn|Boolean|Se o usuário será ou não impedido de usar VPN na rede celular.|
 |cellularBlockVpnWhenRoaming|Boolean|Se o usuário será ou não impedido de usar VPN durante roaming na rede celular.|
@@ -170,9 +170,9 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [windows
 |defenderRequireBehaviorMonitoring|Boolean|Indica se o monitoramento de comportamento deve ou não ser exigido.|
 |defenderRequireNetworkInspectionSystem|Boolean|Indica se o sistema de inspeção de rede deve ou não ser exigido.|
 |defenderScanDownloads|Boolean|Indica se os downloads devem ou não ser verificados.|
-|defenderScheduleScanEnableLowCpuPriority|Booleano|Quando habilitada, a baixa prioridade da CPU será usada durante verificações agendadas.|
-|defenderDisableCatchupQuickScan|Booleano|Quando bloqueado, as verificações de recuperação de verificações rápidas agendadas serão desligadas.|
-|defenderDisableCatchupFullScan|Booleano|Quando bloqueado, as verificações de catch-up para verificações completas agendadas serão desligadas.|
+|defenderScheduleScanEnableLowCpuPriority|Boolean|Quando habilitada, a baixa prioridade da CPU será usada durante verificações agendadas.|
+|defenderDisableCatchupQuickScan|Boolean|Quando bloqueado, as verificações de recuperação de verificações rápidas agendadas serão desligadas.|
+|defenderDisableCatchupFullScan|Boolean|Quando bloqueado, as verificações de catch-up para verificações completas agendadas serão desligadas.|
 |defenderScanScriptsLoadedInInternetExplorer|Boolean|Indica se os scripts carregados no navegador Internet Explorer devem ou não ser verificados.|
 |defenderBlockEndUserAccess|Boolean|Se o usuário final será ou não impedido de acessar o Defender.|
 |defenderSignatureUpdateIntervalInHours|Int32|O intervalo de atualização da assinatura em horas. Especifique 0 para não verificar. Valores válidos de 0 a 24|
@@ -193,10 +193,10 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [windows
 |defenderScanType|[defenderScanType](../resources/intune-deviceconfig-defenderscantype.md)|O tipo de verificação do sistema do Defender. Os valores possíveis são: `userDefined`, `disabled`, `quick`, `full`.|
 |defenderSystemScanSchedule|[weeklySchedule](../resources/intune-deviceconfig-weeklyschedule.md)|Dia da semana em que o Defender fará a verificação do sistema. Os valores possíveis são: `userDefined`, `everyday`, `sunday`, `monday`, `tuesday`, `wednesday`, `thursday`, `friday`, `saturday`, `noScheduledScan`.|
 |defenderScheduledScanTime|TimeOfDay|A hora em que o Defender fará a verificação do sistema.|
-|defenderPotentiallyUnwantedAppAction|[defenderPotentiallyUnwantedAppAction](../resources/intune-deviceconfig-defenderpotentiallyunwantedappaction.md)|Obtém ou define a ação do Defender a ser tomada no PuA (Aplicativo Potencialmente Indesejado), que inclui software com comportamentos de injeção de ad, agregação de software, solicitação persistente para pagamento ou assinatura, etc. O Defender alerta o usuário quando o PUA está sendo baixado ou tenta se instalar. Adicionado ao Windows 10 para área de trabalho. Os valores possíveis são: `deviceDefault`, `block`, `audit`.|
-|defenderPotentiallyUnwantedAppActionSetting|[defenderProtectionType](../resources/intune-deviceconfig-defenderprotectiontype.md)|Obtém ou define a ação do Defender a ser tomada no PuA (Aplicativo Potencialmente Indesejado), que inclui software com comportamentos de injeção de ad, agregação de software, solicitação persistente para pagamento ou assinatura, etc. O Defender alerta o usuário quando o PUA está sendo baixado ou tenta se instalar. Adicionado ao Windows 10 para área de trabalho. Os valores possíveis são: `userDefined`, `enable`, `auditMode`, `warn`, `notConfigured`.|
+|defenderPotentiallyUnwantedAppAction|[defenderPotentiallyUnwantedAppAction](../resources/intune-deviceconfig-defenderpotentiallyunwantedappaction.md)|Obtém ou define a ação do Defender a ser tomada no PuA (Aplicativo Potencialmente Indesejado), que inclui software com comportamentos de injeção de ad, agregação de software, solicitação persistente para pagamento ou assinatura, etc. O Defender alerta o usuário quando o PUA está sendo baixado ou tenta se instalar. Adicionado em Windows 10 para área de trabalho. Os valores possíveis são: `deviceDefault`, `block`, `audit`.|
+|defenderPotentiallyUnwantedAppActionSetting|[defenderProtectionType](../resources/intune-deviceconfig-defenderprotectiontype.md)|Obtém ou define a ação do Defender a ser tomada no PuA (Aplicativo Potencialmente Indesejado), que inclui software com comportamentos de injeção de ad, agregação de software, solicitação persistente para pagamento ou assinatura, etc. O Defender alerta o usuário quando o PUA está sendo baixado ou tenta se instalar. Adicionado em Windows 10 para área de trabalho. Os valores possíveis são: `userDefined`, `enable`, `auditMode`, `warn`, `notConfigured`.|
 |defenderSubmitSamplesConsentType|[defenderSubmitSamplesConsentType](../resources/intune-deviceconfig-defendersubmitsamplesconsenttype.md)|Verifica se o nível de consentimento do usuário Windows Defender enviar dados. Os valores possíveis são: `sendSafeSamplesAutomatically`, `alwaysPrompt`, `neverSend`, `sendAllSamplesAutomatically`.|
-|defenderBlockOnAccessProtection|Booleano|Permite ou não permite Windows Defender funcionalidade na Proteção do Access.|
+|defenderBlockOnAccessProtection|Boolean|Permite ou não permite Windows Defender funcionalidade na Proteção do Access.|
 |defenderDetectedMalwareActions|[defenderDetectedMalwareActions](../resources/intune-deviceconfig-defenderdetectedmalwareactions.md)|Obtém ou define ações do Defender a serem realizadas em um malware detectado por nível de ameaça.|
 |defenderFileExtensionsToExclude|String collection|Extensões de arquivo a serem excluídas das verificações e da proteção em tempo real.|
 |defenderFilesAndFoldersToExclude|String collection|Arquivos e pastas a serem excluídos das verificações e da proteção em tempo real.|
@@ -206,7 +206,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [windows
 |lockScreenBlockCortana|Boolean|Indica se o usuário pode ou não interagir com a Cortana usando a fala enquanto o sistema estiver bloqueado.|
 |lockScreenBlockToastNotifications|Boolean|Indica se serão permitidas notificações do sistema acima da tela de bloqueio do dispositivo.|
 |lockScreenTimeoutInSeconds|Int32|Defina a duração (em segundos) da tela de bloqueio para a tela em desligamento para dispositivos Windows Mobile 10. Os valores compatíveis ficam entre 11 e 1800. Valores válidos de 11 a 1800|
-|lockScreenActivateAppsWithVoice|[enablement](../resources/intune-shared-enablement.md)|Essa configuração de política especifica se os aplicativos do Windows podem ser ativados por voz enquanto o sistema está bloqueado. Os valores possíveis são: `notConfigured`, `enabled`, `disabled`.|
+|lockScreenActivateAppsWithVoice|[enablement](../resources/intune-shared-enablement.md)|Essa configuração de política especifica se Windows aplicativos podem ser ativados por voz enquanto o sistema está bloqueado. Os valores possíveis são: `notConfigured`, `enabled`, `disabled`.|
 |passwordBlockSimple|Boolean|Especifique se PINs ou senhas como "1111" ou "1234" são permitidas. Para computadores do Windows 10, isso também controla o uso de senhas com imagem.|
 |passwordExpirationDays|Int32|A expiração da senha em dias. Valores válidos de 0 a 730|
 |passwordMinimumLength|Int32|O comprimento mínimo da senha. Valores válidos de 4 a 16|
@@ -220,11 +220,11 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [windows
 |passwordMinimumAgeInDays|Int32|Essa configuração de segurança determina o período de tempo (em dias) que uma senha deve ser usada para que o usuário possa alterá-la. Valores válidos de 0 a 998|
 |privacyAdvertisingId|[stateManagementSetting](../resources/intune-deviceconfig-statemanagementsetting.md)|Habilita ou desabilita o uso da ID de publicidade. Adicionado no Windows 10, versão 1607. Os valores possíveis são: `notConfigured`, `blocked`, `allowed`.|
 |privacyAutoAcceptPairingAndConsentPrompts|Boolean|Indica se será permitida ou não a aceitação automática da caixa de diálogo de consentimento do usuário com emparelhamento e privacidade ao iniciar aplicativos.|
-|privacyDisableLaunchExperience|Booleano|Essa política impede que a experiência de privacidade seja lançada durante o logon do usuário para usuários novos e atualizados.|
+|privacyDisableLaunchExperience|Boolean|Essa política impede que a experiência de privacidade seja lançada durante o logon do usuário para usuários novos e atualizados.|
 |privacyBlockInputPersonalization|Boolean|Indica se o uso dos serviços de fala baseados na nuvem será bloqueado para os aplicativos Cortana, Ditado ou Store.|
-|privacyBlockPublishUserActivities|Booleano|Bloqueia as experiências compartilhadas/descoberta de recursos usados recentemente no alternador de tarefas etc.|
-|privacyBlockActivityFeed|Booleano|Bloqueia o uso de serviços de fala baseados em nuvem para aplicativos Cortana, Ditado ou Store.|
-|activateAppsWithVoice|[enablement](../resources/intune-shared-enablement.md)|Especifica se os aplicativos do Windows podem ser ativados por voz. Os valores possíveis são: `notConfigured`, `enabled`, `disabled`.|
+|privacyBlockPublishUserActivities|Boolean|Bloqueia as experiências compartilhadas/descoberta de recursos usados recentemente no alternador de tarefas etc.|
+|privacyBlockActivityFeed|Boolean|Bloqueia o uso de serviços de fala baseados em nuvem para aplicativos Cortana, Ditado ou Store.|
+|activateAppsWithVoice|[enablement](../resources/intune-shared-enablement.md)|Especifica se Windows aplicativos podem ser ativados por voz. Os valores possíveis são: `notConfigured`, `enabled`, `disabled`.|
 |startBlockUnpinningAppsFromTaskbar|Boolean|Indica se o usuário será ou não impedido de desafixar aplicativos da barra de tarefas.|
 |startMenuAppListVisibility|[windowsStartMenuAppListVisibilityType](../resources/intune-deviceconfig-windowsstartmenuapplistvisibilitytype.md)|A definição desse valor recolhe a lista de aplicativos, remove a lista de aplicativos totalmente ou desabilita a alternância correspondente no aplicativo Configurações. Os valores possíveis são: `userDefined`, `collapse`, `remove`, `disableSettingsApp`.|
 |startMenuHideChangeAccountSettings|Boolean|Habilitar essa política impede a exibição da configuração de conta de alteração no bloco de usuário no menu Iniciar.|
@@ -290,9 +290,9 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [windows
 |safeSearchFilter|[safeSearchFilterType](../resources/intune-deviceconfig-safesearchfiltertype.md)|Especifica que nível de filtro de pesquisa segura é necessário. Os valores possíveis são: `userDefined`, `strict`, `moderate`.|
 |edgeBlockPopups|Boolean|Indica se janelas pop-ups devem ou não ser bloqueadas.|
 |edgeBlockSearchSuggestions|Boolean|Indica se o usuário deve ou não bloquear o uso das sugestões de pesquisa na barra de endereços.|
-|edgeBlockSearchEngineCustomization|Booleano|Indica se o usuário deve ou não bloquear a adição do novo mecanismo de pesquisa ou a alteração do mecanismo de pesquisa padrão.|
+|edgeBlockSearchEngineCustomization|Boolean|Indica se o usuário deve ou não bloquear a adição do novo mecanismo de pesquisa ou a alteração do mecanismo de pesquisa padrão.|
 |edgeBlockSendingIntranetTrafficToInternetExplorer|Boolean|Indica se o tráfego da intranet deve ou não ser alternado do Edge para o Internet Explorer. Observação: o nome dessa propriedade é enganoso; a propriedade é obsoleta, use EdgeSendIntranetTrafficToInternetExplorer.|
-|edgeSendIntranetTrafficToInternetExplorer|Booleano|Indica se o tráfego da intranet deve ou não ser alternado do Edge para o Internet Explorer.|
+|edgeSendIntranetTrafficToInternetExplorer|Boolean|Indica se o tráfego da intranet deve ou não ser alternado do Edge para o Internet Explorer.|
 |edgeRequireSmartScreen|Boolean|Indica se o usuário deverá ou não usar o Filtro SmartScreen.|
 |edgeEnterpriseModeSiteListLocation|String|Indica o local da lista de sites do modo Empresarial. Pode ser um arquivo local, rede local ou local http.|
 |edgeFirstRunUrl|String|A primeira URL a ser executada quando o navegador Edge é aberto pela primeira vez.|
@@ -341,13 +341,13 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [windows
 |experienceBlockErrorDialogWhenNoSIM|Boolean|Indica se a caixa de diálogo de erro poderá ou não ser exibida se nenhum cartão SIM for detectado.|
 |experienceBlockTaskSwitcher|Boolean|Indica se a alternância de tarefas será ativada ou não no dispositivo.|
 |logonBlockFastUserSwitching|Boolean|Desabilita a capacidade para alternar rapidamente entre os usuários conectados simultaneamente sem fazer logoff.|
-|tenantLockdownRequireNetworkDuringOutOfBoxExperience|Booleano|Se o dispositivo é necessário para se conectar à rede.|
-|appManagementMSIAllowUserControlOverInstall|Booleano|Essa configuração de política permite que os usuários alterem as opções de instalação que normalmente estão disponíveis apenas para administradores do sistema.|
-|appManagementMSIAlwaysInstallWithElevatedPrivileges|Booleano|Essa configuração de política direciona o Windows Installer a usar permissões elevadas quando instala qualquer programa no sistema.|
-|dataProtectionBlockDirectMemoryAccess|Booleano|Essa configuração de política permite que você bloqueie o acesso direto à memória (DMA) para todas as portas de fluxo in-locável a quente do PCI até que um usuário conecte-se ao Windows.|
-|appManagementPackageFamilyNamesToLaunchAfterLogOn|Coleção de cadeias de caracteres|Lista de nomes de família de pacotes delimitados de dois pontos-e-vírgulas de aplicativos do Windows. Os aplicativos do Windows listados devem ser lançados após o logon.|
+|tenantLockdownRequireNetworkDuringOutOfBoxExperience|Boolean|Se o dispositivo é necessário para se conectar à rede.|
+|appManagementMSIAllowUserControlOverInstall|Boolean|Essa configuração de política permite que os usuários alterem as opções de instalação que normalmente estão disponíveis apenas para administradores do sistema.|
+|appManagementMSIAlwaysInstallWithElevatedPrivileges|Boolean|Essa configuração de política direciona Windows o Instalador a usar permissões elevadas quando instala qualquer programa no sistema.|
+|dataProtectionBlockDirectMemoryAccess|Boolean|Essa configuração de política permite que você bloqueie o acesso direto à memória (DMA) para todas as portas de fluxo in-loqueável do PCI a quente até que um usuário entre no Windows.|
+|appManagementPackageFamilyNamesToLaunchAfterLogOn|String collection|Lista de nomes de família de pacotes delimitados por dois pontos de Windows aplicativos. Os Windows aplicativos listados devem ser lançados após o logon.|
 |uninstallBuiltInApps|Booliano|Indica se deseja ou não desinstalar uma lista fixa de aplicativos internos do Windows.|
-|configureTimeZone|Cadeia de caracteres|Especifica o fuso horário a ser aplicado ao dispositivo. Esse é o nome padrão do Windows para o fuso horário de destino.|
+|configureTimeZone|Cadeia de caracteres|Especifica o fuso horário a ser aplicado ao dispositivo. Esse é o nome Windows padrão para o fuso horário de destino.|
 
 
 

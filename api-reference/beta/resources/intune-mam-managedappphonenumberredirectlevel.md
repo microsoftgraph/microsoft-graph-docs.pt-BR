@@ -1,22 +1,22 @@
 ---
-title: tipo de enumeração managedAppPhoneNumberRedirectLevel
+title: Tipo de número managedAppPhoneNumberRedirectLevel
 description: As classes de aplicativos que têm permissão para clicar para abrir um número de telefone, para fazer chamadas telefônicas ou enviar mensagens de texto.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 12e84e617d74dc73c0234ab1cddfbe004ddc8a6a
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 3b7bb1aeba937f14598b35de5c229acf4cb95cf53cc0bb5351da60576391aa26
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49302590"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54139338"
 ---
-# <a name="managedappphonenumberredirectlevel-enum-type"></a>tipo de enumeração managedAppPhoneNumberRedirectLevel
+# <a name="managedappphonenumberredirectlevel-enum-type"></a>Tipo de número managedAppPhoneNumberRedirectLevel
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -25,10 +25,10 @@ As classes de aplicativos que têm permissão para clicar para abrir um número 
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|todos os aplicativos|,0|O compartilhamento é permitido para todos os aplicativos.|
-|managedApps|1|O compartilhamento é permitido para todos os aplicativos gerenciados.|
-|customApp|duas|O compartilhamento é permitido para um aplicativo personalizado.|
-|bloqueou|3D|O compartilhamento entre aplicativos é bloqueado.|
+|allApps|0|O compartilhamento tem permissão para todos os aplicativos.|
+|managedApps|1 |O compartilhamento tem permissão para todos os aplicativos gerenciados.|
+|customApp|2|O compartilhamento é permitido para um aplicativo personalizado.|
+|blocked|3 |O compartilhamento entre aplicativos é bloqueado.|
 
 
 

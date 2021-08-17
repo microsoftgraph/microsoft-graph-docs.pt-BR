@@ -5,12 +5,12 @@ author: shauliu
 localization_priority: Normal
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 0b51d9c088a9d6da4e1a3a671dd578e07ed22691
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: 1d35d2937e0636803a82d5b47bc2db165b677baf04936de46d11bc4ff87b00f9
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52682618"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54145128"
 ---
 # <a name="unifiedrolemanagementpolicyassignment-resource-type"></a>Tipo de recurso unifiedRoleManagementPolicyAssignment
 
@@ -25,11 +25,11 @@ Um unifiedRoleManagementPolicyAssignment atribui a política a um escopo especí
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Identificador exclusivo da atribuição de política.|
-|policyId|String|A id da política.|
-|roleDefinitionId|String|A id da definição de função em que a política se aplica. Se não for especificada, a política se aplicará a todas as funções.|
-|scopeId|String|A id do escopo em que a política é atribuída. Por exemplo "/", groupId, etc.|
-|scopeType|String|O tipo do escopo em que a política é atribuída. Um de Directory, DirectoryRole, Group.|
+|id|Cadeia de caracteres|Identificador exclusivo da atribuição de política.|
+|policyId|Cadeia de caracteres|A id da política.|
+|roleDefinitionId|Cadeia de caracteres|A id da definição de função em que a política se aplica. Se não for especificada, a política se aplicará a todas as funções.|
+|scopeId|Cadeia de caracteres|A id do escopo em que a política é atribuída. Por exemplo "/", groupId, etc.|
+|scopeType|Cadeia de caracteres|O tipo do escopo em que a política é atribuída. Um de Directory, DirectoryRole, Group.|
 
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|

@@ -5,12 +5,12 @@ author: shauliu
 localization_priority: Normal
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: c4392055d199e444acefa497a009cf5b71cb8cda
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: bcf4a9dca524f1c0d8c36328df5c140e0bedb47c0d1fb56d871dd7942d9fb80a
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52680196"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54145114"
 ---
 # <a name="unifiedrolemanagementpolicynotificationrule-resource-type"></a>Tipo de recurso unifiedRoleManagementPolicyNotificationRule
 
@@ -23,11 +23,11 @@ Herda [de unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpol
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Identificador exclusivo da regra. Herdado [de unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md)|
-|notificationLevel|String|O nível de notificação. Um de Nenhum, Crítico, Todos.|
-|notificationRecipients|Coleção de cadeias de caracteres|A lista de recepients de notificação como email.|
-|notificationType|String|O tipo de notificação. Um de Email.|
-|recipientType|String|O tipo de destinatário. Um dos Solicitadores, Aprovadores, Administradores.|
+|id|Cadeia de caracteres|Identificador exclusivo da regra. Herdado [de unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md)|
+|notificationLevel|Cadeia de caracteres|O nível de notificação. Um de Nenhum, Crítico, Todos.|
+|notificationRecipients|String collection|A lista de recepients de notificação como email.|
+|notificationType|Cadeia de caracteres|O tipo de notificação. Um de Email.|
+|recipientType|Cadeia de caracteres|O tipo de destinatário. Um dos Solicitadores, Aprovadores, Administradores.|
 |isDefaultRecipientsEnabled|Boolean|Se o destinatário padrão está recebendo o email ou não.|
 |destino|[unifiedRoleManagementPolicyRuleTarget](../resources/unifiedrolemanagementpolicyruletarget.md)|O destino da regra. Herdado [de unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md)|
 

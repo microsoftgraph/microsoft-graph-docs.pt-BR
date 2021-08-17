@@ -1,22 +1,20 @@
 ---
-title: tipo de enumeração mobileAppIntent
+title: Tipo de número mobileAppIntent
 description: Indica o status do aplicativo móvel no dispositivo.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 07c57d57217e76e67dd6e66a58f76d98eccd4eeb
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 485519fdc142a472cba5db0e05df374b6426e17a
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49271608"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58265169"
 ---
-# <a name="mobileappintent-enum-type"></a>tipo de enumeração mobileAppIntent
+# <a name="mobileappintent-enum-type"></a>Tipo de número mobileAppIntent
 
 Namespace: microsoft.graph
-
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -25,13 +23,13 @@ Indica o status do aplicativo móvel no dispositivo.
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|disponível|,0|Disponível|
-|Não disponível|1|Não disponível|
-|requiredInstall|duas|Instalação necessária|
-|requiredUninstall|3D|Desinstalação necessária|
+|disponível|0|Disponível|
+|notAvailable|1 |Não disponível|
+|requiredInstall|2|Instalação Necessária|
+|requiredUninstall|3 |Desinstalação necessária|
 |requiredAndAvailableInstall|4 |RequiredAndAvailableInstall|
 |availableInstallWithoutEnrollment|5 |AvailableInstallWithoutEnrollment|
-|impedir|6 |Excluir|
+|exclude|6 |Excluir|
 
 
 

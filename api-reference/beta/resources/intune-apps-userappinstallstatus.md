@@ -1,22 +1,22 @@
 ---
-title: tipo de recurso userAppInstallStatus
+title: Tipo de recurso userAppInstallStatus
 description: Contém propriedades para o status de instalação de um usuário.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 6ff97ad83ee8b25194b784d0dcdaafc68bfb7fc0
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 4df870536093a2cf47caa62fae9bb098a545d6f1e3735446f144243492c41ff2
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49200028"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54183293"
 ---
-# <a name="userappinstallstatus-resource-type"></a>tipo de recurso userAppInstallStatus
+# <a name="userappinstallstatus-resource-type"></a>Tipo de recurso userAppInstallStatus
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -25,18 +25,18 @@ Contém propriedades para o status de instalação de um usuário.
 ## <a name="methods"></a>Métodos
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
-|[Listar userAppInstallStatuses](../api/intune-apps-userappinstallstatus-list.md)|coleção [userAppInstallStatus](../resources/intune-apps-userappinstallstatus.md)|Listar Propriedades e relações dos objetos [userAppInstallStatus](../resources/intune-apps-userappinstallstatus.md) .|
-|[Obter userAppInstallStatus](../api/intune-apps-userappinstallstatus-get.md)|[userAppInstallStatus](../resources/intune-apps-userappinstallstatus.md)|Leia as propriedades e as relações do objeto [userAppInstallStatus](../resources/intune-apps-userappinstallstatus.md) .|
-|[Criar userAppInstallStatus](../api/intune-apps-userappinstallstatus-create.md)|[userAppInstallStatus](../resources/intune-apps-userappinstallstatus.md)|Criar um novo objeto [userAppInstallStatus](../resources/intune-apps-userappinstallstatus.md) .|
-|[Excluir userAppInstallStatus](../api/intune-apps-userappinstallstatus-delete.md)|Nenhum|Exclui [userAppInstallStatus](../resources/intune-apps-userappinstallstatus.md).|
-|[Atualizar userAppInstallStatus](../api/intune-apps-userappinstallstatus-update.md)|[userAppInstallStatus](../resources/intune-apps-userappinstallstatus.md)|Atualiza as propriedades de um objeto [userAppInstallStatus](../resources/intune-apps-userappinstallstatus.md) .|
+|[Listar userAppInstallStatuses](../api/intune-apps-userappinstallstatus-list.md)|[Coleção userAppInstallStatus](../resources/intune-apps-userappinstallstatus.md)|Listar propriedades e relações dos [objetos userAppInstallStatus.](../resources/intune-apps-userappinstallstatus.md)|
+|[Obter userAppInstallStatus](../api/intune-apps-userappinstallstatus-get.md)|[userAppInstallStatus](../resources/intune-apps-userappinstallstatus.md)|Leia propriedades e relações do [objeto userAppInstallStatus.](../resources/intune-apps-userappinstallstatus.md)|
+|[Criar userAppInstallStatus](../api/intune-apps-userappinstallstatus-create.md)|[userAppInstallStatus](../resources/intune-apps-userappinstallstatus.md)|Crie um novo [objeto userAppInstallStatus.](../resources/intune-apps-userappinstallstatus.md)|
+|[Excluir userAppInstallStatus](../api/intune-apps-userappinstallstatus-delete.md)|Nenhum|Exclui um [userAppInstallStatus](../resources/intune-apps-userappinstallstatus.md).|
+|[Atualizar userAppInstallStatus](../api/intune-apps-userappinstallstatus-update.md)|[userAppInstallStatus](../resources/intune-apps-userappinstallstatus.md)|Atualize as propriedades de um [objeto userAppInstallStatus.](../resources/intune-apps-userappinstallstatus.md)|
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave da entidade.|
+|id|Cadeia de caracteres|Chave da entidade.|
 |userName|Cadeia de caracteres|Nome de usuário.|
-|userPrincipalName|String|Nome principal do usuário.|
+|userPrincipalName|Cadeia de caracteres|Nome principal do usuário.|
 |installedDeviceCount|Int32|Contagem de dispositivos instalados.|
 |failedDeviceCount|Int32|Falha na contagem de dispositivos.|
 |notInstalledDeviceCount|Int32|Sem contagem de dispositivos instalados.|
@@ -45,7 +45,7 @@ Contém propriedades para o status de instalação de um usuário.
 |Relação|Tipo|Descrição|
 |:---|:---|:---|
 |aplicativo|[mobileApp](../resources/intune-shared-mobileapp.md)|O link de navegação para o aplicativo móvel.|
-|deviceStatuses|coleção [mobileAppInstallStatus](../resources/intune-apps-mobileappinstallstatus.md)|O estado de instalação do aplicativo em dispositivos.|
+|deviceStatuses|[Coleção mobileAppInstallStatus](../resources/intune-apps-mobileappinstallstatus.md)|O estado de instalação do aplicativo em dispositivos.|
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.

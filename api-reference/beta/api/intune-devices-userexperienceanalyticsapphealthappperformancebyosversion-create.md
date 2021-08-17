@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 4e90ced56c6831005d9d878bcec6ab613e8060c8
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: ce7c73102d6e4e54591f81834036c8e7f6100b68
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51158028"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58264742"
 ---
 # <a name="create-userexperienceanalyticsapphealthappperformancebyosversion"></a>Criar userExperienceAnalyticsAppHealthAppPerformanceByOSVersion
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -27,9 +27,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All|
+|Delegada (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 |Delegada (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementManagedDevices.ReadWrite.All|
+|Aplicativo|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -56,13 +56,13 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar o userEx
 |id|Cadeia de caracteres|O identificador exclusivo do objeto de desempenho de versão do aplicativo de análise de experiência do usuário.|
 |osVersion|String|A versão do sistema operacional do aplicativo.|
 |osBuildNumber|Cadeia de caracteres|O número de com build do sistema operacional do aplicativo.|
-|activeDeviceCount|Int32|O número de dispositivos em que o aplicativo está ativo. Valores válidos -2147483648 a 2147483647|
+|activeDeviceCount|Int32|O número de dispositivos em que o aplicativo está ativo. Valores válidos -2147483648 para 2147483647|
 |appName|Cadeia de caracteres|O nome do aplicativo.|
 |appDisplayName|Cadeia de caracteres|O nome amigável do aplicativo.|
 |appPublisher|Cadeia de caracteres|O editor do aplicativo.|
-|appUsageDuration|Int32|O tempo total de uso do aplicativo em minutos. Valores válidos -2147483648 a 2147483647|
-|appCrashCount|Int32|O número de falhas para o aplicativo. Valores válidos -2147483648 a 2147483647|
-|meanTimeToFailureInMinutes|Int32|O tempo de falha média do aplicativo em minutos. Valores válidos -2147483648 a 2147483647|
+|appUsageDuration|Int32|O tempo total de uso do aplicativo em minutos. Valores válidos -2147483648 para 2147483647|
+|appCrashCount|Int32|O número de falhas para o aplicativo. Valores válidos -2147483648 para 2147483647|
+|meanTimeToFailureInMinutes|Int32|O tempo de falha média do aplicativo em minutos. Valores válidos -2147483648 para 2147483647|
 
 
 
