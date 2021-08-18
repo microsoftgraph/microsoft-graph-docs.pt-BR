@@ -1,26 +1,26 @@
 ---
-title: tipo de recurso deviceManagementSettingAbstractImplementationConstraint
-description: A restrição que impõe um tipo de AbstractComplex tem ou está definida para um valor específico
+title: Tipo de recurso deviceManagementSettingAbstractImplementationConstraint
+description: Restrição que impõe um tipo AbstractComplex tem ou está definida como um valor específico
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 89ea13dc05537c51fc5e3e0effaab11fc874419b
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: f0b3956b78ef63f1b6d7d15f4d5b51a0225b92334643935ef1050aa4e70be456
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49275605"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54252904"
 ---
-# <a name="devicemanagementsettingabstractimplementationconstraint-resource-type"></a>tipo de recurso deviceManagementSettingAbstractImplementationConstraint
+# <a name="devicemanagementsettingabstractimplementationconstraint-resource-type"></a>Tipo de recurso deviceManagementSettingAbstractImplementationConstraint
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-A restrição que impõe um tipo de AbstractComplex tem ou está definida para um valor específico
+Restrição que impõe um tipo AbstractComplex tem ou está definida como um valor específico
 
 
 Herda de [deviceManagementConstraint](../resources/intune-deviceintent-devicemanagementconstraint.md)
@@ -28,7 +28,7 @@ Herda de [deviceManagementConstraint](../resources/intune-deviceintent-deviceman
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|allowedAbstractImplementationDefinitionIds|Coleção de cadeias de caracteres|Lista de valores que significa não configurado para a configuração|
+|allowedAbstractImplementationDefinitionIds|String collection|Lista de valores que significa não configurado para a configuração|
 
 ## <a name="relationships"></a>Relações
 Nenhum

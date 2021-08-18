@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: e8e6bdcd9cf5903d07fb858103bd3620e9a187da
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: a46fb117b4201949c7e42f99eedad09e3c54567a04225dd0fa67c0e5cb45bb42
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50161562"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54229643"
 ---
 # <a name="mobileappdependency-resource-type"></a>Tipo de recurso mobileAppDependency
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para o uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -29,23 +29,23 @@ Herda de [mobileAppRelationship](../resources/intune-apps-mobileapprelationship.
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
 |[Listar mobileAppDependencies](../api/intune-apps-mobileappdependency-list.md)|[Coleção mobileAppDependency](../resources/intune-apps-mobileappdependency.md)|Listar propriedades e relações dos objetos [mobileAppDependency.](../resources/intune-apps-mobileappdependency.md)|
-|[Obter mobileAppDependency](../api/intune-apps-mobileappdependency-get.md)|[mobileAppDependency](../resources/intune-apps-mobileappdependency.md)|Leia as propriedades e as relações do [objeto mobileAppDependency.](../resources/intune-apps-mobileappdependency.md)|
+|[Obter mobileAppDependency](../api/intune-apps-mobileappdependency-get.md)|[mobileAppDependency](../resources/intune-apps-mobileappdependency.md)|Leia propriedades e relações do [objeto mobileAppDependency.](../resources/intune-apps-mobileappdependency.md)|
 |[Criar mobileAppDependency](../api/intune-apps-mobileappdependency-create.md)|[mobileAppDependency](../resources/intune-apps-mobileappdependency.md)|Crie um novo [objeto mobileAppDependency.](../resources/intune-apps-mobileappdependency.md)|
-|[Excluir mobileAppDependency](../api/intune-apps-mobileappdependency-delete.md)|Nenhum(a)|Exclui [mobileAppDependency](../resources/intune-apps-mobileappdependency.md).|
-|[Atualizar mobileAppDependency](../api/intune-apps-mobileappdependency-update.md)|[mobileAppDependency](../resources/intune-apps-mobileappdependency.md)|Atualizar as propriedades de um [objeto mobileAppDependency.](../resources/intune-apps-mobileappdependency.md)|
+|[Excluir mobileAppDependency](../api/intune-apps-mobileappdependency-delete.md)|Nenhum|Exclui um [mobileAppDependency](../resources/intune-apps-mobileappdependency.md).|
+|[Atualizar mobileAppDependency](../api/intune-apps-mobileappdependency-update.md)|[mobileAppDependency](../resources/intune-apps-mobileappdependency.md)|Atualize as propriedades de um [objeto mobileAppDependency.](../resources/intune-apps-mobileappdependency.md)|
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|A ID da entidade de relação. Herdado [de mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md)|
-|targetId|String|A ID do aplicativo móvel de destino. Herdado [de mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md)|
-|targetDisplayName|String|O nome de exibição do aplicativo móvel de destino. Herdado [de mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md)|
-|targetDisplayVersion|String|A versão de exibição do aplicativo móvel de destino. Herdado [de mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md)|
-|targetPublisher|String|O editor do aplicativo móvel de destino. Herdado [de mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md)|
-|targetType|[mobileAppRelationshipType](../resources/intune-apps-mobileapprelationshiptype.md)|O tipo de relação que indica se o destino é um pai ou filho. Herdado [de mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md). Os valores possíveis são: `child` e `parent`.|
+|id|Cadeia de caracteres|A ID da entidade de relação. Herdado [de mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md)|
+|targetId|Cadeia de caracteres|A ID do aplicativo móvel de destino. Herdado [de mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md)|
+|targetDisplayName|Cadeia de caracteres|O nome de exibição do aplicativo móvel de destino. Herdado [de mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md)|
+|targetDisplayVersion|Cadeia de caracteres|A versão de exibição do aplicativo móvel de destino. Herdado [de mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md)|
+|targetPublisher|Cadeia de caracteres|O editor do aplicativo móvel de destino. Herdado [de mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md)|
+|targetType|[mobileAppRelationshipType](../resources/intune-apps-mobileapprelationshiptype.md)|O tipo de relação que indica se o destino é pai ou filho. Herdado [de mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md). Os valores possíveis são: `child` e `parent`.|
 |dependencyType|[mobileAppDependencyType](../resources/intune-apps-mobileappdependencytype.md)|O tipo de relação de dependência entre os aplicativos pai e filho. Os valores possíveis são: `detect` e `autoInstall`.|
 |dependentAppCount|Int32|O número total de aplicativos que dependem direta ou indiretamente do aplicativo pai.|
-|dependsOnAppCount|Int32|O número total de aplicativos dos quais o aplicativo filho está direta ou indiretamente depende.|
+|dependsOnAppCount|Int32|O número total de aplicativos dos quais o aplicativo filho depende direta ou indiretamente.|
 
 ## <a name="relationships"></a>Relações
 Nenhum

@@ -1,22 +1,22 @@
 ---
 title: Atualizar mobileAppTroubleshootingEvent
-description: Descreve o método Update mobileAppTroubleshootingEvent da API do Microsoft Graph para Intune, que oferece suporte a vários fluxos de trabalho.
+description: Descreve o método Update mobileAppTroubleshootingEvent da API do Microsoft Graph para o Intune, que oferece suporte a vários fluxos de trabalho.
 localization_priority: Normal
 author: rolyon
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d159662ba7823560a321fae03e73b37721b44d4a
-ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
+ms.openlocfilehash: af1eb5af42745adc4e8cc50fe0aa44aa726c5cfe
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51863686"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58265732"
 ---
 # <a name="update-mobileapptroubleshootingevent"></a>Atualizar mobileAppTroubleshootingEvent
 
 Namespace: microsoft.graph
 
-> **Importante:** APIs na versão /beta do Microsoft Graph estão sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** APIs na versão /beta no Microsoft Graph estão sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -28,12 +28,12 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
 |Delegada (conta corporativa ou de estudante)||
-|&nbsp; &nbsp; **Gerenciamento de dispositivo**|DeviceManagementManagedDevices.ReadWrite.All|
-|&nbsp; &nbsp; **Solução de Problemas**|DeviceManagementManagedDevices.ReadWrite.All|
+|&nbsp;&nbsp; **Gerenciamento de dispositivos**|DeviceManagementManagedDevices.ReadWrite.All|
+|&nbsp; &nbsp; **Solução de problemas**|DeviceManagementManagedDevices.ReadWrite.All|
 |Delegada (conta pessoal da Microsoft)|Sem suporte.|
-|Application||
-|&nbsp; &nbsp; **Gerenciamento de dispositivo**|DeviceManagementManagedDevices.ReadWrite.All|
-|&nbsp; &nbsp; **Solução de Problemas**|DeviceManagementManagedDevices.ReadWrite.All|
+|Aplicativo||
+|&nbsp;&nbsp; **Gerenciamento de dispositivos**|DeviceManagementManagedDevices.ReadWrite.All|
+|&nbsp; &nbsp; **Solução de problemas**|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -60,11 +60,11 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [mobileA
 |:---|:---|:---|
 |id|Cadeia de caracteres|O GUID do objeto.|
 |**Solução de Problemas**|
-|additionalInformation|Coleção [keyValuePair](../resources/intune-shared-keyvaluepair.md)|Um conjunto de pares de valores de chave de cadeia de caracteres e cadeia de caracteres que fornece informações adicionais sobre o evento Solução de problemas.|
+|additionalInformation|Coleção [keyValuePair](../resources/intune-troubleshooting-keyvaluepair.md)|Um conjunto de pares de valores de chave de cadeia de caracteres e cadeia de caracteres que fornece informações adicionais sobre o evento Solução de problemas.|
 |ApplicationId|Cadeia de caracteres|Identificador de aplicativo do Intune.|
 |correlationId|Cadeia de caracteres|ID usada para rastrear a falha no serviço. |
 |eventDateTime|DateTimeOffset|Hora em que o evento ocorreu. |
-|eventName|Cadeia de Caracteres|Nome do Evento correspondente ao Evento de Solução de Problemas. Opcional.|
+|eventName|Cadeia de caracteres|Nome do Evento correspondente ao Evento de Solução de Problemas. Opcional.|
 |history|[coleção mobileAppTroubleshootingHistoryItem](../resources/intune-troubleshooting-mobileapptroubleshootinghistoryitem.md)|Item histórico de solução de problemas de aplicativo móvel do Intune.|
 |managedDeviceIdentifier|Cadeia de caracteres|Identificador de dispositivo criado ou coletado pelo Intune.|
 |troubleshootingErrorDetails|[deviceManagementTroubleshootingErrorDetails](../resources/intune-troubleshooting-devicemanagementtroubleshootingerrordetails.md)|Objeto contendo informações detalhadas sobre o erro e sua correção. |

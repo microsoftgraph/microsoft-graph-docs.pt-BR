@@ -1,26 +1,26 @@
 ---
-title: tipo de recurso iosAzureAdSingleSignOnExtension
-description: Representa um perfil de extensão single Sign-On de tipo de AD do Azure para dispositivos iOS.
+title: Tipo de recurso iosAzureAdSingleSignOnExtension
+description: Representa um perfil de extensão único do tipo Azure AD Sign-On para dispositivos iOS.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 12bfdea3ee6c5b07d8a94f82d4344b2d679f627e
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: a2decb099afae983af7c8bf1e8e0d47a90a4d35aaeaa2b76dd69c2a6e2f3d59f
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49280561"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54242927"
 ---
-# <a name="iosazureadsinglesignonextension-resource-type"></a>tipo de recurso iosAzureAdSingleSignOnExtension
+# <a name="iosazureadsinglesignonextension-resource-type"></a>Tipo de recurso iosAzureAdSingleSignOnExtension
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Representa um perfil de extensão single Sign-On de tipo de AD do Azure para dispositivos iOS.
+Representa um perfil de extensão único do tipo Azure AD Sign-On para dispositivos iOS.
 
 
 Herda de [iosSingleSignOnExtension](../resources/intune-deviceconfig-iossinglesignonextension.md)
@@ -28,9 +28,9 @@ Herda de [iosSingleSignOnExtension](../resources/intune-deviceconfig-iossinglesi
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|enableSharedDeviceMode|Booliano|Habilita ou desabilita o modo de dispositivo compartilhado.|
-|bundleIdAccessControlList|Coleção de cadeias de caracteres|Uma lista opcional de IDs de pacote adicionais que podem usar a extensão AAD para logon único.|
-|as|coleção [keyTypedValuePair](../resources/intune-deviceconfig-keytypedvaluepair.md)|Obtém ou define uma lista de pares de valores de chave digitados usados para configurar perfis de tipo de credencial. Esta coleção pode conter um máximo de 500 elementos.|
+|enableSharedDeviceMode|Boolean|Habilita ou desabilita o modo de dispositivo compartilhado.|
+|bundleIdAccessControlList|String collection|Uma lista opcional de IDs de pacote adicionais permitidas para usar a extensão do AAD para um único login.|
+|configurações|[Coleção keyTypedValuePair](../resources/intune-deviceconfig-keytypedvaluepair.md)|Obtém ou define uma lista de pares de valores de chave digitados usados para configurar perfis de tipo de credencial. Esta coleção pode conter um máximo de 500 elementos.|
 
 ## <a name="relationships"></a>Relações
 Nenhum

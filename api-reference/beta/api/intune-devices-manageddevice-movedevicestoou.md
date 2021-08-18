@@ -1,18 +1,18 @@
 ---
-title: Ação completeSignup
+title: Ação moveDevicesToOU
 description: Ainda não documentado
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 09172daecda72634a5f078a217677921cecb43fc9ff1cddcd1808e37cdf0208d
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: bace04cb13ae740b8b2a621bfa4199b74a45e6b4
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54227194"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58265428"
 ---
-# <a name="completesignup-action"></a>Ação completeSignup
+# <a name="movedevicestoou-action"></a>Ação moveDevicesToOU
 
 Namespace: microsoft.graph
 
@@ -27,9 +27,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
+|Delegada (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 |Delegada (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
+|Aplicativo|**TODO: Determine AppOnly scopes **|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -37,7 +37,10 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 }
 -->
 ``` http
-POST /deviceManagement/androidForWorkSettings/completeSignup
+POST /deviceManagement/managedDevices/moveDevicesToOU
+POST /deviceManagement/comanagedDevices/moveDevicesToOU
+POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates/{deviceManagementScriptDeviceStateId}/managedDevice/users/{userId}/managedDevices/moveDevicesToOU
+POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates/{deviceManagementScriptDeviceStateId}/managedDevice/detectedApps/{detectedAppId}/managedDevices/moveDevicesToOU
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -53,7 +56,8 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta ação.
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|enterpriseToken|Cadeia de caracteres|Ainda não documentado|
+|deviceIds|Coleção de GUIDs|Ainda não documentado|
+|organizationalUnitPath|String|Ainda não documentado|
 
 
 
@@ -65,13 +69,16 @@ Se tiver êxito, esta ação retornará um código de resposta `204 No Content`.
 ### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
 ``` http
-POST https://graph.microsoft.com/beta/deviceManagement/androidForWorkSettings/completeSignup
+POST https://graph.microsoft.com/beta/deviceManagement/managedDevices/moveDevicesToOU
 
 Content-type: application/json
-Content-length: 51
+Content-length: 134
 
 {
-  "enterpriseToken": "Enterprise Token value"
+  "deviceIds": [
+    "fb450a76-0a76-fb45-760a-45fb760a45fb"
+  ],
+  "organizationalUnitPath": "Organizational Unit Path value"
 }
 ```
 
