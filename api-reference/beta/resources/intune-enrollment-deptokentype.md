@@ -1,22 +1,22 @@
 ---
-title: tipo de enumeração depTokenType
+title: Tipo denum depTokenType
 description: Ainda não documentado
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 67703fd310f2e907c66c618b8f8ca3b81e58b708
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 058f3e1a4e6a27ad0313c9b220c49c1c8b04f2ed31ea8d3a68ce5b2ca377fda2
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49207264"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54253597"
 ---
-# <a name="deptokentype-enum-type"></a>tipo de enumeração depTokenType
+# <a name="deptokentype-enum-type"></a>Tipo denum depTokenType
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -25,9 +25,9 @@ Ainda não documentado
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|nenhum|,0|O tipo de token é nenhum|
-|baseada|1|O tipo de token é Dep.|
-|appleSchoolManager|duas|Tipo de token é gerente Apple School|
+|Nenhuma|0|Tipo de Token é Nenhum|
+|dep|1 |Tipo de token é Dep.|
+|appleSchoolManager|2|Tipo de token é o Gerenciador da Escola da Apple|
 
 
 

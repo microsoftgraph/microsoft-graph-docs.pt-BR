@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
 author: JeremyKelley
-ms.openlocfilehash: f8f06cf9fcf1dfc01af3e98c01a79a86426e19ee
-ms.sourcegitcommit: 1b01c820be659f85f380fc883bbb36036b7daadf
+ms.openlocfilehash: d52d7675521c297ee602102847ddb3fa653d3d8af3efba64f3a71d783d83a708
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "50115217"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54176173"
 ---
 # <a name="sharepointsiteusagedetail-resource-type"></a>Tipo de recurso sharePointSiteUsageDetail
 
@@ -22,15 +22,15 @@ Namespace: microsoft.graph
 | :---------------------- | :------ |
 | reportRefreshDate       | Data    |
 | siteId                  | Guid  |
-| siteUrl                 | String  |
-| ownerDisplayName        | String  |
-| ownerPrincipalName      | String  |
+| siteUrl                 | Cadeia de caracteres  |
+| ownerDisplayName        | Cadeia de caracteres  |
+| ownerPrincipalName      | Cadeia de caracteres  |
 | isDeleted               | Boolean |
 | lastActivityDate        | Data    |
-| SiteSensitivityLabelId  | String  |
+| SiteSensitivityLabelId  | Cadeia de caracteres  |
 | ExternalSharing         | Boolean |
-| UnmanagedDevicePolicy   | String  |
-| GeoLocation             | String  |
+| UnmanagedDevicePolicy   | Cadeia de caracteres  |
+| GeoLocation             | Cadeia de caracteres  |
 | fileCount               | Int64   |
 | activeFileCount         | Int64   |
 | pageViewCount           | Int64   |
@@ -41,8 +41,8 @@ Namespace: microsoft.graph
 | SecureLinkForMemberCount| Int64   |
 | storageUsedInBytes      | Int64   |
 | storageAllocatedInBytes | Int64   |
-| rootWebTemplate         | String  |
-| reportPeriod            | String  |
+| rootWebTemplate         | Cadeia de caracteres  |
+| reportPeriod            | Cadeia de caracteres  |
 
 ## <a name="json-representation"></a>Representação JSON
 

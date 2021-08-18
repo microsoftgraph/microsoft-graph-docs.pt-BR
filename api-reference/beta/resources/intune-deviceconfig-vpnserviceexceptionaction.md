@@ -1,22 +1,22 @@
 ---
-title: tipo de enumeração vpnServiceExceptionAction
+title: Tipo de número vpnServiceExceptionAction
 description: A ação VPN a ser tomada para um serviço específico.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 069b7dc910a7c4ce9e281235aefc52b498519351
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: baf1fa3bf6edcb3358c8ae56d2572365702c41273a04bd578c2c98af5e68d0ba
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49279434"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54139597"
 ---
-# <a name="vpnserviceexceptionaction-enum-type"></a>tipo de enumeração vpnServiceExceptionAction
+# <a name="vpnserviceexceptionaction-enum-type"></a>Tipo de número vpnServiceExceptionAction
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -25,9 +25,9 @@ A ação VPN a ser tomada para um serviço específico.
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|forceTrafficViaVPN|,0|Fazer com que todo o tráfego desse serviço percorra a VPN|
-|allowTrafficOutside|1|Permitir o serviço fora da VPN|
-|dropTraffic|duas|Remover todo o tráfego do serviço|
+|forceTrafficViaVPN|0|Fazer todo o tráfego desse serviço passar pela VPN|
+|allowTrafficOutside|1 |Permitir o serviço fora da VPN|
+|dropTraffic|2|Soltar todo o tráfego do serviço|
 
 
 

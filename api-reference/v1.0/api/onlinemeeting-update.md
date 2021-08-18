@@ -1,16 +1,16 @@
 ---
 title: Atualizar onlineMeeting
 description: Atualize as propriedades de uma reunião online.
-author: jsandoval-msft
+author: mkhribech
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 6d239a98275b6ca8fb390ae646f67a82c2212c99
-ms.sourcegitcommit: 2a35434fabc76672e21bfc3ed5a1d28f9f3b66bc
+ms.openlocfilehash: 0912e44d402b77fb09266376e8430c76d10265e1
+ms.sourcegitcommit: ac0e544853ce8476d76dc321e0d34e4b668b7651
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52241076"
+ms.lasthandoff: 08/14/2021
+ms.locfileid: "58350993"
 ---
 # <a name="update-onlinemeeting"></a>Atualizar onlineMeeting
 
@@ -55,21 +55,31 @@ PATCH /users/{userId}/onlineMeetings/{meetingId}
 | Content-type  | application/json. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
-A tabela abaixo lista as propriedades que podem ser atualizadas. No corpo da solicitação, inclua apenas as propriedades que precisam ser atualizadas, com as seguintes exceções:
+A tabela a seguir lista as propriedades que podem ser atualizadas. No corpo da solicitação, inclua apenas as propriedades que precisam ser atualizadas, com as seguintes exceções:
 
 - Ajustar a data/hora inicial ou final de uma reunião online sempre requer as propriedades **startDateTime** e **endDateTime** no corpo da solicitação.
-- **o** campo organizador **da propriedade participante não** pode ser atualizado. O organizador da reunião não pode ser modificado depois que a reunião é criada.
+- O **campo** organizador da **propriedade participants** não pode ser atualizado. O organizador da reunião não pode ser modificado após a criação da reunião.
 - Ajustar o **campo de** participantes  da propriedade participantes, como adicionar ou remover um participante à reunião, sempre requer a lista completa de participantes no corpo da solicitação.
 
-| Propriedade             | Tipo                                                         | Descrição                                                                                                                                    |
-|----------------------|--------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------|
-| startDateTime        | DateTime                                                     | O horário de início da reunião em UTC.                                                                                                                 |
-| endDateTime          | DateTime                                                     | A hora de término da reunião em UTC.                                                                                                                   |
-| Assunto              | Cadeia de caracteres                                                       | O assunto da reunião online.                                                                                                             |
-| participants         | [meetingParticipants](../resources/meetingparticipants.md)   | Os participantes associados à reunião online. Somente participantes podem ser atualizados.                                            |
-| isEntryExitAnnounced | Booliano                                                      | Se os chamadores ingressarão ou sairão.                                                                                         |
-| lobbyBypassSettings  | [lobbyBypassSettings](../resources/lobbyBypassSettings.md)   | Especifica quais participantes podem ignorar o lobby da reunião.                                                                                     |
-| allowedPresenters    | onlineMeetingPresenters                                      | Especifica quem pode ser um apresentador em uma reunião. Os valores possíveis são todos, organização, roleIsPresenter, organizador e unknownFutureValue. |
+A última coluna indica se a atualização dessa propriedade terá efeito para uma reunião em andamento.
+
+
+| Propriedade                    | Tipo                                                       | Descrição                                                                         | Aplica-se a reuniões em andamento?    |
+|-----------------------------|------------------------------------------------------------|-------------------------------------------------------------------------------------|------------------------------|
+| startDateTime               | DateTime                                                   | O horário de início da reunião em UTC.                                                      | Não                           |
+| endDateTime                 | DateTime                                                   | A hora de término da reunião em UTC.                                                        | Não                           |
+| assunto                     | Cadeia de caracteres                                                     | O assunto da reunião online.                                                  | Não                           |
+| participants                | [meetingParticipants](../resources/meetingparticipants.md) | Os participantes associados à reunião online. Somente participantes podem ser atualizados. | Não                           |
+| isEntryExitAnnounced        | Boolean                                                    | Se os chamadores ingressarão ou sairão.                              | Sim                          |
+| lobbyBypassSettings         | [lobbyBypassSettings](../resources/lobbyBypassSettings.md) | Especifica quais participantes podem ignorar o lobby da reunião.                          | Sim                          |
+| allowedPresenters           | onlineMeetingPresenters                                    | Especifica quem pode ser um apresentador em uma reunião.                                      | Sim, exceto quando o valor é `roleIsPresenter` |
+| allowAttendeeToEnableCamera | Boolean                                                    | Indica se os participantes podem ativar a câmera.                               | Sim                          |
+| allowAttendeeToEnableMic    | Boolean                                                    | Indica se os participantes podem ativar o microfone.                           | Sim                          |
+| allowMeetingChat            | meetingChatMode                                            | Especifica o modo de chat de reunião.                                                 | Sim                          |
+| allowTeamworkReactions      | Boolean                                                    | Indica se Teams reações estão habilitadas para a reunião.                      | Sim                          |
+
+> [!NOTE]
+> Para ver a lista de valores possíveis **para allowedPresenters** e **allowMeetingChat,** consulte [onlineMeeting](../resources/onlinemeeting.md).
 
 ## <a name="response"></a>Resposta
 Se bem-sucedido, este método retorna o código de resposta `200 OK` e um objeto [onlineMeeting](../resources/onlinemeeting.md) no corpo da resposta.
@@ -80,7 +90,7 @@ Se bem-sucedido, este método retorna o código de resposta `200 OK` e um objeto
 
 #### <a name="request"></a>Solicitação
 
-> **Observação:** A ID da reunião foi truncada para capacidade de leitura.
+> **Observação:** A ID da reunião foi reduzida para a capacidade de leitura.
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -170,7 +180,7 @@ Content-Type: application/json
 ```
 
 #### <a name="example-2-update-the-lobbybypasssettings"></a>Exemplo 2: atualizar o lobbyBypassSettings
-> **Observação:** A ID da reunião foi truncada para capacidade de leitura.
+> **Observação:** A ID da reunião foi reduzida para a capacidade de leitura.
 
 
 # <a name="http"></a>[HTTP](#tab/http)

@@ -1,26 +1,24 @@
 ---
-title: tipo de recurso mobileAppTroubleshootingHistoryItem
-description: Item de histórico contido no evento de solução de problemas de aplicativo móvel.
+title: Tipo de recurso mobileAppTroubleshootingHistoryItem
+description: Item histórico contido no evento Solução de Problemas de Aplicativo Móvel.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d017c6b1bba7552bc2524f21cf5c102254b4dfcc
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: eca7ddacef439b6542619f10ad65a3bfceb2c507
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49271475"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58266909"
 ---
-# <a name="mobileapptroubleshootinghistoryitem-resource-type"></a>tipo de recurso mobileAppTroubleshootingHistoryItem
+# <a name="mobileapptroubleshootinghistoryitem-resource-type"></a>Tipo de recurso mobileAppTroubleshootingHistoryItem
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
-
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Item de histórico contido no evento de solução de problemas de aplicativo móvel.
+Item histórico contido no evento Solução de Problemas de Aplicativo Móvel.
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|

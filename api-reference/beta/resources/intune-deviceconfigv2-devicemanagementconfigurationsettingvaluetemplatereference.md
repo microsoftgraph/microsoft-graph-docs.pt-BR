@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: fa4ecc07044d90bfc869467de8e8249f7581e228
-ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
+ms.openlocfilehash: 85ba2f21b8de862952535cf952aac1712c201f29a138cc5d03cddd4233862d1d
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "52666769"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54127009"
 ---
 # <a name="devicemanagementconfigurationsettingvaluetemplatereference-resource-type"></a>Tipo de recurso deviceManagementConfigurationSettingValueTemplateReference
 
@@ -25,11 +25,11 @@ Definindo informações de referência do modelo de valor
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|settingValueTemplateId|String|Definindo a id do modelo de valor|
-|useTemplateDefault|Booleano|Indica se o valor de configuração da política deve ser atualizado para corresponder ao valor padrão da configuração do modelo|
+|settingValueTemplateId|Cadeia de caracteres|Definindo a id do modelo de valor|
+|useTemplateDefault|Boolean|Indica se o valor de configuração da política deve ser atualizado para corresponder ao valor padrão da configuração do modelo|
 
 ## <a name="relationships"></a>Relações
-Nenhuma
+Nenhum
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.

@@ -1,22 +1,22 @@
 ---
-title: tipo de enumeração ratingAustraliaMoviesType
+title: tipo de número ratingAustraliaMoviesType
 description: Rótulos de classificação de filmes na Austrália
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 8c1425989a3888b730190cf5dd73b8491725f368
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: e602dc4f9535e87f5ace37cfeb38bb5937ae199af7f629506374b3754cea7e4c
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49198586"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54237178"
 ---
-# <a name="ratingaustraliamoviestype-enum-type"></a>tipo de enumeração ratingAustraliaMoviesType
+# <a name="ratingaustraliamoviestype-enum-type"></a>tipo de número ratingAustraliaMoviesType
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -25,13 +25,13 @@ Rótulos de classificação de filmes na Austrália
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|Permitido|,0|Valor padrão, permitir todo o conteúdo de filmes|
-|Bloqueado|1|Não permitir conteúdo de filmes|
-|geral|duas|A classificação G é adequada para todos|
-|parentalGuidance|3D|A PG recomenda visualizadores em 15 com orientação de pais ou guardiões|
-|completa|4 |A classificação M não é recomendada para visualizadores abaixo de 15|
-|agesAbove15|5 |A classificação MA15 + não é adequada para visualizadores abaixo de 15|
-|agesAbove18|6 |A classificação R18 + não é adequada para visualizadores em 18|
+|allAllowed|0|Valor padrão, permitir todo o conteúdo de filmes|
+|allBlocked|1 |Não permitir conteúdo de filmes|
+|geral|2|A classificação G é adequada para todos|
+|parentalGuidance|3 |A PG recomenda visualizadores menores de 15 anos com orientações de pais ou responsáveis|
+|mature|4 |A classificação M não é recomendada para visualizadores com menos de 15 anos|
+|agesAbove15|5 |A classificação MA15+ não é adequada para visualizadores com menos de 15 anos|
+|agesAbove18|6 |A classificação R18+ não é adequada para visualizadores com menos de 18 anos|
 
 
 

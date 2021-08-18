@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 21298ccc592f2b80868bbe68393f5fdf9223f055
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: 1447f7d811fadda2c862634c2f95d07e7600949f68d3f52a0e3751aa7b8b51ef
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51132419"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54171410"
 ---
 # <a name="create-windowsdeliveryoptimizationconfiguration"></a>Criar windowsDeliveryOptimizationConfiguration
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -56,13 +56,13 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar windowsD
 |:---|:---|:---|
 |id|Cadeia de caracteres|Chave da entidade. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de marcas de escopo para esta instância entity. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|supportsScopeTags|Booleano|Indica se a Configuração de Dispositivo subjacente dá suporte ou não à atribuição de marcas de escopo. A atribuição à propriedade ScopeTags não é permitida quando esse valor é falso e as entidades não estarão visíveis para usuários com escopo. Isso ocorre para políticas herdadas criadas no Silverlight e podem ser resolvidas excluindo e recriando a política no Portal do Azure. Essa propriedade é somente leitura. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|roleScopeTagIds|String collection|Lista de marcas de escopo para esta instância entity. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|supportsScopeTags|Boolean|Indica se a Configuração de Dispositivo subjacente dá suporte ou não à atribuição de marcas de escopo. A atribuição à propriedade ScopeTags não é permitida quando esse valor é falso e as entidades não estarão visíveis para usuários com escopo. Isso ocorre para políticas herdadas criadas no Silverlight e podem ser resolvidas excluindo e recriando a política no Portal do Azure. Essa propriedade é somente leitura. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|A aplicabilidade da edição do sistema operacional para esta Política. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|A regra de aplicabilidade da versão do sistema operacional para esta Política. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|A regra de aplicabilidade do modo de dispositivo para esta Política. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|DateTime em que o objeto foi criado. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|descrição|Cadeia de caracteres|O administrador forneceu a descrição da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|description|Cadeia de caracteres|O administrador forneceu a descrição da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |displayName|Cadeia de caracteres|O administrador forneceu o nome da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |versão|Int32|Versão da configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deliveryOptimizationMode|[windowsDeliveryOptimizationMode](../resources/intune-deviceconfig-windowsdeliveryoptimizationmode.md)|Especifica o método de download que a otimização de entrega pode usar para gerenciar o consumo de largura de banda de rede para cenários de distribuição de conteúdo grandes. Os valores possíveis são: `userDefined`, `httpOnly`, `httpWithPeeringNat`, `httpWithPeeringPrivateGroup`, `httpWithInternetPeering`, `simpleDownload`, `bypassMode`.|
@@ -74,18 +74,18 @@ As opções definidas nesta política aplicam-se apenas ao modo de download do M
 |backgroundDownloadFromHttpDelayInSeconds|Int64|Especifica o número de segundos para atrasar uma fonte HTTP em um download em segundo plano que tem permissão para usar ponto a ponto. Valores válidos de 0 a 4294967295|
 |foregroundDownloadFromHttpDelayInSeconds|Int64|Especifica o número de segundos para atrasar uma fonte HTTP em um download em primeiro plano que tem permissão para usar ponto a ponto (0-86400). Valores válidos de 0 a 86400
 A especificação 0 define a Otimização de Entrega para gerenciar essa configuração usando o serviço de nuvem. Valores válidos de 0 a 86400|
-|minimumRamAllowedToPeerInGigabytes|Int32|Especifica o tamanho mínimo de RAM em GB para usar Cache Par (1-100000). Valores válidos de 1 a 100000|
-|minimumDiskSizeAllowedToPeerInGigabytes|Int32|Especifica o tamanho mínimo do disco em GB para usar Cache Par (1-100000). Valores válidos de 1 a 100000
+|minimumRamAllowedToPeerInGigabytes|Int32|Especifica o tamanho mínimo de RAM em GB para usar o par Caching (1-100000). Valores válidos de 1 a 100000|
+|minimumDiskSizeAllowedToPeerInGigabytes|Int32|Especifica o tamanho mínimo do disco em GB para usar o par Caching (1-100000). Valores válidos de 1 a 100000
 Valores recomendados: 64 GB a 256 GB. Valores válidos de 1 a 100000|
-|minimumFileSizeToCacheInMegabytes|Int32|Especifica o tamanho mínimo de arquivo de conteúdo em MB habilitado para usar Cache Par (1-100000). Valores válidos de 1 a 100000
+|minimumFileSizeToCacheInMegabytes|Int32|Especifica o tamanho mínimo de arquivo de conteúdo em MB habilitado para usar o par Caching (1-100000). Valores válidos de 1 a 100000
 Valores recomendados: 1 MB a 100.000 MB. Valores válidos de 1 a 100000|
 |minimumBatteryPercentageAllowedToUpload|Int32|Especifica a porcentagem mínima de bateria para permitir que o dispositivo carregue dados (0-100). Valores válidos de 0 a 100
 O valor padrão é 0. O valor 0 (zero) significa "não limitado" e o valor padrão do serviço de nuvem será usado. Valores válidos de 0 a 100|
 |modifyCacheLocation|Cadeia de caracteres|Especifica a unidade que a Otimização de Entrega deve usar para seu cache.|
 |maximumCacheAgeInDays|Int32|Especifica o tempo máximo em dias em que cada arquivo é mantido no cache de Otimização de Entrega após o download com êxito (0-3650). Valores válidos de 0 a 3650|
 |maximumCacheSize|[deliveryOptimizationMaxCacheSize](../resources/intune-deviceconfig-deliveryoptimizationmaxcachesize.md)|Especifica o tamanho máximo de cache que a Otimização de Entrega como porcentagem ou em GB.|
-|vpnPeerCaching|[enablement](../resources/intune-shared-enablement.md)|Especifica se o dispositivo tem permissão para participar do Cache Par enquanto estiver conectado via VPN à rede de domínio. Os valores possíveis são: `notConfigured`, `enabled`, `disabled`.|
-|cacheServerHostNames|Coleção de cadeias de caracteres|Especifica nomes de host de servidores de cache.|
+|vpnPeerCaching|[enablement](../resources/intune-shared-enablement.md)|Especifica se o dispositivo tem permissão para participar do Peer Caching enquanto estiver conectado via VPN à rede de domínio. Os valores possíveis são: `notConfigured`, `enabled`, `disabled`.|
+|cacheServerHostNames|String collection|Especifica nomes de host de servidores de cache.|
 |cacheServerForegroundDownloadFallbackToHttpDelayInSeconds|Int32|Especifica o número de segundos para atrasar um retorno de servidores de cache para uma fonte HTTP para um download em primeiro plano. Valores válidos de 0 a 2592000.|
 |cacheServerBackgroundDownloadFallbackToHttpDelayInSeconds|Int32|Especifica o número de segundos para atrasar um retorno de servidores de cache para uma fonte HTTP para um download em segundo plano. Valores válidos de 0 a 2592000.|
 

@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 035e7917be4ba7fea7470f03bd5e3273cbdc8776
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: d880307e03868b230b15a04ede470d46a2ed65d574ef445a329a17ce0e124b1c
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51135009"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54181570"
 ---
 # <a name="create-vpptoken"></a>Criar vppToken
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -66,11 +66,11 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar o vppTok
 |lastSyncStatus|[vppTokenSyncStatus](../resources/intune-onboarding-vpptokensyncstatus.md)|Status atual de sincronização da última sincronização de aplicativo que foi feita usando o Token do Apple Volume Purchase Program. Os valores possíveis são: `none`, `inProgress`, `completed`, `failed`. Os valores possíveis são: `none`, `inProgress`, `completed`, `failed`.|
 |automaticallyUpdateApps|Boolean|Se os aplicativos para o token VPP serão automaticamente atualizados ou não.|
 |countryOrRegion|Cadeia de caracteres|Se os aplicativos para o token VPP serão automaticamente atualizados ou não.|
-|dataSharingConsentGranted|Booleano|Consentimento concedido para compartilhamento de dados com o Programa de Compra de Volume da Apple.|
+|dataSharingConsentGranted|Boolean|Consentimento concedido para compartilhamento de dados com o Programa de Compra de Volume da Apple.|
 |displayName|Cadeia de caracteres|Um nome amigável de token especificado pelo administrador.|
 |locationName|Cadeia de caracteres|Local do token retornado do VPP da Apple.|
-|claimTokenManagementFromExternalMdm|Booleano|Consentimento do administrador para permitir o gerenciamento de token de declaração do MDM externo.|
-|roleScopeTagIds|Coleção de cadeias de caracteres|IDs de marcas de escopo de função atribuídas a essa entidade.|
+|claimTokenManagementFromExternalMdm|Boolean|Consentimento do administrador para permitir o gerenciamento de token de declaração do MDM externo.|
+|roleScopeTagIds|String collection|IDs de marcas de escopo de função atribuídas a essa entidade.|
 
 
 

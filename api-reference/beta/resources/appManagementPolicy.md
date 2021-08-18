@@ -5,12 +5,12 @@ author: madansr7
 localization_priority: Normal
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: c3a705a567e4692d07220398317cc36c2bab71a6
-ms.sourcegitcommit: b711aed8acc18512cf6591f4108ed5ddf05b649d
+ms.openlocfilehash: c34d9c285b4add5976603f8b9dafa4c67dd94b7d
+ms.sourcegitcommit: b7e01a1331abe5f5c9aa2828d93dad08229573f1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53660355"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58336867"
 ---
 # <a name="appmanagementpolicy-resource-type"></a>Tipo de recurso appManagementPolicy
 
@@ -18,15 +18,15 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Impor restrições às operações de gerenciamento de aplicativos para aplicativos e entidades de serviço específicas. Se esse recurso não estiver configurado para um aplicativo ou entidade de serviço, as restrições padrão para as configurações no [objeto tenantAppManagementPolicy.](tenantappmanagementpolicy.md)
+Restrições às operações de gerenciamento de aplicativos para aplicativos específicos e entidades de serviço. Se esse recurso não estiver configurado para um aplicativo ou entidade de serviço, as restrições padrão para as configurações no [objeto tenantAppManagementPolicy.](tenantappmanagementpolicy.md)
 
 ## <a name="methods"></a>Métodos
 
 | Método                                                         | Tipo de retorno                                                                | Descrição                                                                                                            |
 | :------------------------------------------------------------- | :------------------------------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------- |
 | [List](../api/appManagementPolicy-list.md)      | [appManagementPolicy](../resources/appManagementPolicy.md) | Retorna uma lista de políticas de gerenciamento de aplicativos criadas para aplicativos e entidades de serviço juntamente com suas propriedades. |
-| [Criar](../api/appManagementPolicy-post.md)    | [appManagementPolicy](../resources/appManagementPolicy.md) | Cria uma política de gerenciamento de aplicativos que pode ser atribuída a um objeto de entidade de serviço ou aplicativo.                   |
-| [Obter](../api/appManagementPolicy-get.md)       | [appManagementPolicy](../resources/appManagementPolicy.md) | Obtém um único objeto de política de gerenciamento de aplicativo.                                                                            |
+| [Create](../api/appManagementPolicy-post.md)    | [appManagementPolicy](../resources/appManagementPolicy.md) | Cria uma política de gerenciamento de aplicativos que pode ser atribuída a um objeto de entidade de serviço ou aplicativo.                   |
+| [Get](../api/appManagementPolicy-get.md)       | [appManagementPolicy](../resources/appManagementPolicy.md) | Obtém um único objeto de política de gerenciamento de aplicativo.                                                                            |
 | [Atualizar](../api/appManagementPolicy-update.md) | Nenhum(a)                                                                       | Atualiza uma política de gerenciamento de aplicativos.                                                                                      |
 | [Delete](../api/appManagementPolicy-delete.md) | Nenhum                                                                       | Exclui uma política de gerenciamento de aplicativos da coleção de políticas em appManagementPolicies.                             |
 | [Lista appliesTo](../api/appManagementPolicy-list-appliesTo.md)| [appManagementPolicy](../resources/appManagementPolicy.md)|Retorna uma lista de aplicativos e entidades de serviço às quais a política é aplicada. |

@@ -5,12 +5,12 @@ author: ravennMSFT
 localization_priority: Normal
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: fe577a8c27b7c32e320416da74a4fa34fabb3339
-ms.sourcegitcommit: 486fe9c77d4d89c5416bb83e8c716e6918c47370
+ms.openlocfilehash: 06e52397e879148ca9a30ec840e507ab7dff3aaddd8366e1fccde3ecdd7ec40a
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53440341"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "57217453"
 ---
 # <a name="update-mobileappmanagementpolicy"></a>Atualizar mobileAppManagementPolicy
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 Atualize as propriedades de [um objeto mobilityManagementPolicy.](../resources/mobilitymanagementpolicy.md)
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
