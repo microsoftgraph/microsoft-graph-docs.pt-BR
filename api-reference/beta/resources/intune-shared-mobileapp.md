@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: fcc26a7bf0ea8f9cb6565a4bf01bed8ff55b5dcb
-ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
+ms.openlocfilehash: 4b606226e62e7eccfc65bb3c19fd359fff4a2c7161506404aa6eed09c481e2f8
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51864960"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54214912"
 ---
 # <a name="mobileapp-resource-type"></a>Tipo de recurso mobileApp
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -55,7 +55,7 @@ Uma classe abstrata que contém as propriedades base de aplicativos móveis do I
 |uploadState|Int32|O estado de carregamento.|
 |publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|O estado de publicação do aplicativo. O aplicativo não pode ser assinado, a menos que ele seja publicado. Os valores possíveis são: `notPublished`, `processing`, `published`.|
 |isAssigned|Boolean|O valor que indica se o aplicativo é atribuído a pelo menos um grupo.|
-|roleScopeTagIds|Coleção String|Lista de ids de marca de escopo para este aplicativo móvel.|
+|roleScopeTagIds|String collection|Lista de ids de marca de escopo para este aplicativo móvel.|
 |dependentAppCount|Int32|O número total de dependências que o aplicativo filho tem.|
 
 ## <a name="relationships"></a>Relações

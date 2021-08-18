@@ -1,26 +1,26 @@
 ---
-title: tipo de recurso win32LobAppRegistryRequirement
-description: Contém as propriedades do registro para detectar um aplicativo Win32
+title: Tipo de recurso win32LobAppRegistryRequirement
+description: Contém propriedades do Registro para detectar um aplicativo Win32
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 860bb42b4ed175310e8cd8491f242b2cb87cafd1
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: a4400f756918989429d5a6f02c7a5df43f7ca490d27b5f9804bae15258d41960
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49280715"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54153269"
 ---
-# <a name="win32lobappregistryrequirement-resource-type"></a>tipo de recurso win32LobAppRegistryRequirement
+# <a name="win32lobappregistryrequirement-resource-type"></a>Tipo de recurso win32LobAppRegistryRequirement
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Contém as propriedades do registro para detectar um aplicativo Win32
+Contém propriedades do Registro para detectar um aplicativo Win32
 
 
 Herda de [win32LobAppRequirement](../resources/intune-apps-win32lobapprequirement.md)
@@ -28,12 +28,12 @@ Herda de [win32LobAppRequirement](../resources/intune-apps-win32lobapprequiremen
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|operator|[win32LobAppDetectionOperator](../resources/intune-apps-win32lobappdetectionoperator.md)|O operador para detecção herdada de [win32LobAppRequirement](../resources/intune-apps-win32lobapprequirement.md). Os valores possíveis são: `notConfigured`, `equal`, `notEqual`, `greaterThan`, `greaterThanOrEqual`, `lessThan`, `lessThanOrEqual`.|
-|detecçaovalue|String|O valor de detecção herdado de [win32LobAppRequirement](../resources/intune-apps-win32lobapprequirement.md)|
-|check32BitOn64System|Booliano|Um valor que indica se este caminho de registro é para verificar o aplicativo de 32 bits no sistema de 64 bits|
-|Caminho-chave|String|O caminho da chave do registro para detectar o aplicativo de LoB (linha de negócios) do Win32|
-|valueName|String|O nome do valor do registro|
-|Detecção|[win32LobAppRegistryDetectionType](../resources/intune-apps-win32lobappregistrydetectiontype.md)|O tipo de detecção de dados do registro. Os possíveis valores são: `notConfigured`, `exists`, `doesNotExist`, `string`, `integer`, `version`.|
+|operator|[win32LobAppDetectionOperator](../resources/intune-apps-win32lobappdetectionoperator.md)|O operador para detecção Herdado de [win32LobAppRequirement](../resources/intune-apps-win32lobapprequirement.md). Os valores possíveis são: `notConfigured`, `equal`, `notEqual`, `greaterThan`, `greaterThanOrEqual`, `lessThan`, `lessThanOrEqual`.|
+|detectionValue|Cadeia de caracteres|O valor de detecção Herdado [de win32LobAppRequirement](../resources/intune-apps-win32lobapprequirement.md)|
+|check32BitOn64System|Boolean|Um valor que indica se esse caminho do Registro é para verificar o aplicativo de 32 bits no sistema de 64 bits|
+|keyPath|Cadeia de caracteres|O caminho da chave do Registro para detectar o aplicativo Win32 Line of Business (LoB)|
+|valueName|Cadeia de caracteres|O nome do valor do Registro|
+|detectionType|[win32LobAppRegistryDetectionType](../resources/intune-apps-win32lobappregistrydetectiontype.md)|O tipo de detecção de dados do Registro. Os possíveis valores são: `notConfigured`, `exists`, `doesNotExist`, `string`, `integer`, `version`.|
 
 ## <a name="relationships"></a>Relações
 Nenhum

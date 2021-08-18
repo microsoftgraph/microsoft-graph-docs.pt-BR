@@ -5,12 +5,12 @@ localization_priority: Normal
 author: sarahwxy
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: fb6dded6e7c86644191f1d941900050813b84594
-ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
+ms.openlocfilehash: dce83b17f029bec2bf8977d0e863dcdb5c7fc4e1a9c5dea731b654d5ce6ab9f3
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49981813"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54210068"
 ---
 # <a name="emailappusageuserdetail-resource-type"></a>Tipo de recurso emailAppUsageUserDetail
 
@@ -23,18 +23,18 @@ Namespace: microsoft.graph
 | reportRefreshDate | Data              |
 | userPrincipalName | Cadeia de caracteres            |
 | displayName       | Cadeia de caracteres            |
-| isDeleted         | Booliano           |
+| isDeleted         | Boolean           |
 | deletedDate       | Data              |
 | lastActivityDate  | Data              |
-| mailForMac        | Coleção String |
-| outlookForMac     | Coleção String |
-| outlookForWindows | Coleção String |
-| outlookForMobile  | Coleção String |
-| otherForMobile    | Coleção String |
-| outlookForWeb     | Coleção String |
-| pop3App           | Coleção String |
-| imap4App          | Coleção String |
-| smtpApp           | Coleção String |
+| mailForMac        | String collection |
+| outlookForMac     | String collection |
+| outlookForWindows | String collection |
+| outlookForMobile  | String collection |
+| otherForMobile    | String collection |
+| outlookForWeb     | String collection |
+| pop3App           | String collection |
+| imap4App          | String collection |
+| smtpApp           | String collection |
 | reportPeriod      | Cadeia de caracteres            |
 
 ## <a name="json-representation"></a>Representação JSON

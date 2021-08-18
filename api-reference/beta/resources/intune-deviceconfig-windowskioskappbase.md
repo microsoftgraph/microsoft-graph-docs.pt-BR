@@ -1,34 +1,34 @@
 ---
-title: tipo de recurso windowsKioskAppBase
-description: A classe base de um tipo de aplicativo
+title: Tipo de recurso windowsKioskAppBase
+description: A classe base para um tipo de aplicativo
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3c4a0d1afa615cf2b1e77c67061f9a88e40b2b72
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: f184f1533f6dc5de3b0cd5f334e0b58f802570e83e1703774544c1a45470f51a
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49293602"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54156314"
 ---
-# <a name="windowskioskappbase-resource-type"></a>tipo de recurso windowsKioskAppBase
+# <a name="windowskioskappbase-resource-type"></a>Tipo de recurso windowsKioskAppBase
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-A classe base de um tipo de aplicativo
+A classe base para um tipo de aplicativo
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|Propriedadesstartlayouttilesize|[windowsAppStartLayoutTileSize](../resources/intune-deviceconfig-windowsappstartlayouttilesize.md)|O tamanho do bloco do aplicativo para o layout inicial. Os valores possíveis são: `hidden`, `small`, `medium`, `wide`, `large`.|
-|nome|String|Representa o nome amigável de um aplicativo|
+|startLayoutTileSize|[windowsAppStartLayoutTileSize](../resources/intune-deviceconfig-windowsappstartlayouttilesize.md)|O tamanho do azulejo do aplicativo para o layout inicial. Os valores possíveis são: `hidden`, `small`, `medium`, `wide`, `large`.|
+|nome|Cadeia de caracteres|Representa o nome amigável de um aplicativo|
 |appType|[windowsKioskAppType](../resources/intune-deviceconfig-windowskioskapptype.md)|O tipo de aplicativo. Os valores possíveis são: `unknown`, `store`, `desktop`, `aumId`.|
-|autolançamento|Booliano|Permitir que o aplicativo seja iniciado automaticamente no modo de quiosque de vários aplicativos|
+|autoLaunch|Boolean|Permitir que o aplicativo seja lançado automaticamente no modo de quiosque de vários aplicativos|
 
 ## <a name="relationships"></a>Relações
 Nenhum

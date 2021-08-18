@@ -1,56 +1,56 @@
 ---
-title: tipo de recurso macOSPrivacyAccessControlItem
-description: Representa as preferências de privacidade por processo.
+title: Tipo de recurso macOSPrivacyAccessControlItem
+description: Representa preferências de privacidade por processo.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: fc290e76b7f0f1988f65e44a107b73c8188704df
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 1e2c3bf92cf3190d5e9a734737dca1467ee5351b4f41e1ae64f88c7480452d54
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49294148"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54165669"
 ---
-# <a name="macosprivacyaccesscontrolitem-resource-type"></a>tipo de recurso macOSPrivacyAccessControlItem
+# <a name="macosprivacyaccesscontrolitem-resource-type"></a>Tipo de recurso macOSPrivacyAccessControlItem
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Representa as preferências de privacidade por processo.
+Representa preferências de privacidade por processo.
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|displayName|String|O nome de exibição do aplicativo, processo ou executável.|
-|identificador|String|O caminho ou a ID do pacote do aplicativo, processo ou executável.|
+|displayName|Cadeia de caracteres|O nome de exibição do aplicativo, processo ou executável.|
+|identificador|Cadeia de caracteres|A ID do pacote ou o caminho do aplicativo, processo ou executável.|
 |identifierType|[macOSProcessIdentifierType](../resources/intune-deviceconfig-macosprocessidentifiertype.md)|Uma ID de pacote é usada para identificar um aplicativo. Um caminho é usado para identificar um processo ou executável. Os valores possíveis são: `bundleID` e `path`.|
-|codeRequirement|String|Insira o requisito de código, que pode ser obtido com o comando "codesign – display-r –" no aplicativo de terminal. Inclua tudo após "=>".|
-|staticCodeValidation|Booliano|Valida estaticamente o requisito de código. Use essa configuração se o processo invalida sua assinatura de código dinâmico.|
-|blockCamera|Booliano|Bloquear o acesso ao aplicativo de câmera.|
-|blockMicrophone|Booliano|Bloquear o acesso ao microfone.|
-|blockScreenCapture|Booliano|Bloquear o aplicativo para capturar o conteúdo da exibição do sistema. Requer o macOS 10,15 ou posterior.|
-|blockListenEvent|Booliano|Bloquear o aplicativo ou processo de ouvir eventos de dispositivos de entrada, como mouse, teclado e trackpad. Requer o macOS 10,15 ou posterior.|
-|speechRecognition|[habilitação](../resources/intune-shared-enablement.md)|Permitir ou bloquear o acesso ao recurso de reconhecimento de fala do sistema. Os valores possíveis são: `notConfigured`, `enabled`, `disabled`.|
-|disponibilidade|[habilitação](../resources/intune-shared-enablement.md)|Permitir que o aplicativo ou processo controle o Mac por meio do subsistema de acessibilidade. Os valores possíveis são: `notConfigured`, `enabled`, `disabled`.|
-|addressBook|[habilitação](../resources/intune-shared-enablement.md)|Permitir ou bloquear o acesso a informações de contato gerenciadas pelos contatos. Os valores possíveis são: `notConfigured`, `enabled`, `disabled`.|
-|calendar|[habilitação](../resources/intune-shared-enablement.md)|Permitir ou bloquear o acesso a informações de evento gerenciadas pelo calendário. Os valores possíveis são: `notConfigured`, `enabled`, `disabled`.|
-|lembretes|[habilitação](../resources/intune-shared-enablement.md)|Permitir ou bloquear o acesso a informações gerenciadas por lembretes. Os valores possíveis são: `notConfigured`, `enabled`, `disabled`.|
-|photos|[habilitação](../resources/intune-shared-enablement.md)|Permitir ou bloquear o acesso a imagens gerenciadas por fotos. Os valores possíveis são: `notConfigured`, `enabled`, `disabled`.|
-|mediaLibrary|[habilitação](../resources/intune-shared-enablement.md)|Permitir ou bloquear o acesso a músicas e à biblioteca de mídia. Os valores possíveis são: `notConfigured`, `enabled`, `disabled`.|
-|fileProviderPresence|[habilitação](../resources/intune-shared-enablement.md)|Permitir que o aplicativo ou o processo Acesse arquivos gerenciados por uma extensão de provedor de arquivos de outro aplicativo. Requer o macOS 10,15 ou posterior. . Os valores possíveis são: `notConfigured`, `enabled`, `disabled`.|
-|systemPolicyAllFiles|[habilitação](../resources/intune-shared-enablement.md)|Controlar o acesso a todos os arquivos protegidos em um dispositivo. Os arquivos podem estar em locais como emails, mensagens, aplicativos e configurações administrativas. Aplique essa configuração com cuidado. Os valores possíveis são: `notConfigured`, `enabled`, `disabled`.|
-|systemPolicySystemAdminFiles|[habilitação](../resources/intune-shared-enablement.md)|Permitir que o aplicativo ou o acesse os arquivos usados na administração do sistema. Os valores possíveis são: `notConfigured`, `enabled`, `disabled`.|
-|systemPolicyDesktopFolder|[habilitação](../resources/intune-shared-enablement.md)|Permitir ou bloquear o acesso à pasta da área de trabalho. Os valores possíveis são: `notConfigured`, `enabled`, `disabled`.|
-|systemPolicyDocumentsFolder|[habilitação](../resources/intune-shared-enablement.md)|Permitir ou bloquear o acesso à pasta documentos. Os valores possíveis são: `notConfigured`, `enabled`, `disabled`.|
-|systemPolicyDownloadsFolder|[habilitação](../resources/intune-shared-enablement.md)|Permitir ou bloquear o acesso à pasta downloads. Os valores possíveis são: `notConfigured`, `enabled`, `disabled`.|
-|systemPolicyNetworkVolumes|[habilitação](../resources/intune-shared-enablement.md)|Permitir ou bloquear o acesso a volumes de rede. Requer o macOS 10,15 ou posterior. Os valores possíveis são: `notConfigured`, `enabled`, `disabled`.|
-|systemPolicyRemovableVolumes|[habilitação](../resources/intune-shared-enablement.md)|Controlar o acesso a volumes removíveis no dispositivo, como uma unidade de disco rígido externa. Requer o macOS 10,15 ou posterior. Os valores possíveis são: `notConfigured`, `enabled`, `disabled`.|
-|CreateEvent|[habilitação](../resources/intune-shared-enablement.md)|Controlar o acesso a APIs do CoreGraphics, que são usadas para enviar CGEvents para o fluxo de eventos do sistema. Os valores possíveis são: `notConfigured`, `enabled`, `disabled`.|
-|appleEventsAllowedReceivers|coleção [macOSAppleEventReceiver](../resources/intune-deviceconfig-macosappleeventreceiver.md)|Permitir ou negar que o aplicativo ou processo envie um evento Apple restrito para outro aplicativo ou processo. Você precisará saber o identificador, o tipo de identificador e o requisito de código do aplicativo ou processo de recebimento. Esta coleção pode conter um máximo de 500 elementos.|
+|codeRequirement|Cadeia de caracteres|Insira o requisito de código, que pode ser obtido com o comando 'codesign –display -r –' no aplicativo Terminal. Inclua tudo depois de '=>'.|
+|staticCodeValidation|Boolean|Valida estáticamente o requisito de código. Use essa configuração se o processo invalidar sua assinatura de código dinâmico.|
+|blockCamera|Boolean|Bloquear o acesso ao aplicativo câmera.|
+|blockMicrophone|Boolean|Bloquear o acesso ao microfone.|
+|blockScreenCapture|Boolean|Impedir que o aplicativo captura o conteúdo da exibição do sistema. Requer macOS 10.15 ou posterior.|
+|blockListenEvent|Boolean|Impedir que o aplicativo ou o processo ouça eventos de dispositivos de entrada, como mouse, teclado e trackpad. Requer macOS 10.15 ou posterior.|
+|speechRecognition|[enablement](../resources/intune-shared-enablement.md)|Permitir ou bloquear o acesso à instalação de reconhecimento de fala do sistema. Os valores possíveis são: `notConfigured`, `enabled`, `disabled`.|
+|acessibilidade|[enablement](../resources/intune-shared-enablement.md)|Permitir que o aplicativo ou o processo controle o Mac por meio do subsistema Acessibilidade. Os valores possíveis são: `notConfigured`, `enabled`, `disabled`.|
+|addressBook|[enablement](../resources/intune-shared-enablement.md)|Permitir ou bloquear o acesso às informações de contato gerenciadas por Contatos. Os valores possíveis são: `notConfigured`, `enabled`, `disabled`.|
+|calendário|[enablement](../resources/intune-shared-enablement.md)|Permitir ou bloquear o acesso às informações de evento gerenciadas pelo Calendário. Os valores possíveis são: `notConfigured`, `enabled`, `disabled`.|
+|lembretes|[enablement](../resources/intune-shared-enablement.md)|Permitir ou bloquear o acesso a informações gerenciadas por Lembretes. Os valores possíveis são: `notConfigured`, `enabled`, `disabled`.|
+|fotos|[enablement](../resources/intune-shared-enablement.md)|Permitir ou bloquear o acesso a imagens gerenciadas por Fotos. Os valores possíveis são: `notConfigured`, `enabled`, `disabled`.|
+|mediaLibrary|[enablement](../resources/intune-shared-enablement.md)|Permitir ou bloquear o acesso à música e à biblioteca de mídia. Os valores possíveis são: `notConfigured`, `enabled`, `disabled`.|
+|fileProviderPresence|[enablement](../resources/intune-shared-enablement.md)|Permitir que o aplicativo ou o processo acesse arquivos gerenciados pela extensão do provedor de arquivos de outro aplicativo. Requer macOS 10.15 ou posterior. . Os valores possíveis são: `notConfigured`, `enabled`, `disabled`.|
+|systemPolicyAllFiles|[enablement](../resources/intune-shared-enablement.md)|Controlar o acesso a todos os arquivos protegidos em um dispositivo. Os arquivos podem estar em locais como emails, mensagens, aplicativos e configurações administrativas. Aplique essa configuração com cuidado. Os valores possíveis são: `notConfigured`, `enabled`, `disabled`.|
+|systemPolicySystemAdminFiles|[enablement](../resources/intune-shared-enablement.md)|Permitir que o aplicativo ou o processo acesse arquivos usados na administração do sistema. Os valores possíveis são: `notConfigured`, `enabled`, `disabled`.|
+|systemPolicyDesktopFolder|[enablement](../resources/intune-shared-enablement.md)|Permitir ou bloquear o acesso à pasta Área de Trabalho. Os valores possíveis são: `notConfigured`, `enabled`, `disabled`.|
+|systemPolicyDocumentsFolder|[enablement](../resources/intune-shared-enablement.md)|Permitir ou bloquear o acesso à pasta Documentos. Os valores possíveis são: `notConfigured`, `enabled`, `disabled`.|
+|systemPolicyDownloadsFolder|[enablement](../resources/intune-shared-enablement.md)|Permitir ou bloquear o acesso à pasta Downloads. Os valores possíveis são: `notConfigured`, `enabled`, `disabled`.|
+|systemPolicyNetworkVolumes|[enablement](../resources/intune-shared-enablement.md)|Permitir ou bloquear o acesso aos volumes de rede. Requer macOS 10.15 ou posterior. Os valores possíveis são: `notConfigured`, `enabled`, `disabled`.|
+|systemPolicyRemovableVolumes|[enablement](../resources/intune-shared-enablement.md)|Controle o acesso a volumes removíveis no dispositivo, como um disco rígido externo. Requer macOS 10.15 ou posterior. Os valores possíveis são: `notConfigured`, `enabled`, `disabled`.|
+|postEvent|[enablement](../resources/intune-shared-enablement.md)|Controle o acesso às APIs CoreGraphics, que são usadas para enviar CGEvents para o fluxo de eventos do sistema. Os valores possíveis são: `notConfigured`, `enabled`, `disabled`.|
+|appleEventsAllowedReceivers|[Coleção macOSAppleEventReceiver](../resources/intune-deviceconfig-macosappleeventreceiver.md)|Permitir ou negar que o aplicativo ou processo envie um evento Apple restrito para outro aplicativo ou processo. Você precisará saber o identificador, o tipo de identificador e o requisito de código do aplicativo ou processo de recebimento. Esta coleção pode conter um máximo de 500 elementos.|
 
 ## <a name="relationships"></a>Relações
 Nenhum

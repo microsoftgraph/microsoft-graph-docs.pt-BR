@@ -1,26 +1,26 @@
 ---
 title: Tipo de recurso windowsPhoneXAP
-description: Contém propriedades e propriedades herdadas para aplicativos da Linha de Negócios XAP do Windows Phone.
+description: Contém propriedades e propriedades herdadas para Windows Phone aplicativos XAP Line Of Business.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9f4cbf245049ac5605207642337fe34570451b63
-ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
+ms.openlocfilehash: 625bb7e6c5fd41505dc16bfa14915b92c4bd99d1
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51863959"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58264693"
 ---
 # <a name="windowsphonexap-resource-type"></a>Tipo de recurso windowsPhoneXAP
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Contém propriedades e propriedades herdadas para aplicativos da Linha de Negócios XAP do Windows Phone.
+Contém propriedades e propriedades herdadas para Windows Phone aplicativos XAP Line Of Business.
 
 
 Herda de [mobileLobApp](../resources/intune-apps-mobilelobapp.md)
@@ -53,7 +53,7 @@ Herda de [mobileLobApp](../resources/intune-apps-mobilelobapp.md)
 |uploadState|Int32|O estado de carregamento. Os valores possíveis são: 0 - `Not Ready` , 1 - `Ready` , 2 - `Processing` . Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
 |publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|O estado de publicação do aplicativo. O aplicativo não pode ser assinado, a menos que ele seja publicado. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md). Os valores possíveis são: `notPublished`, `processing`, `published`.|
 |isAssigned|Boolean|O valor que indica se o aplicativo é atribuído a pelo menos um grupo. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
-|roleScopeTagIds|Coleção String|Lista de ids de marca de escopo para este aplicativo móvel. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
+|roleScopeTagIds|String collection|Lista de ids de marca de escopo para este aplicativo móvel. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
 |dependentAppCount|Int32|O número total de dependências que o aplicativo filho tem. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
 |supersedingAppCount|Int32|O número total de aplicativos que esse aplicativo sobressede direta ou indiretamente. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
 |supersededAppCount|Int32|O número total de aplicativos pelos quais esse aplicativo é, direta ou indiretamente, é suplido. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
@@ -61,7 +61,7 @@ Herda de [mobileLobApp](../resources/intune-apps-mobilelobapp.md)
 |fileName|String|O nome do arquivo do aplicativo Lob principal. Herdado de [mobileLobApp](../resources/intune-apps-mobilelobapp.md)|
 |size|Int64|O tamanho total, incluindo todos os arquivos carregados. Herdado de [mobileLobApp](../resources/intune-apps-mobilelobapp.md)|
 |minimumSupportedOperatingSystem|[windowsMinimumOperatingSystem](../resources/intune-apps-windowsminimumoperatingsystem.md)|O valor do sistema de operacional mínimo aplicável.|
-|productIdentifier|Cadeia de Caracteres|O Identificador de Produto.|
+|productIdentifier|Cadeia de caracteres|O Identificador de Produto.|
 |identityVersion|String|A versão da identidade.|
 
 ## <a name="relationships"></a>Relações
@@ -128,7 +128,8 @@ Veja a seguir uma representação JSON do recurso.
     "v10_1903": true,
     "v10_1909": true,
     "v10_2004": true,
-    "v10_2H20": true
+    "v10_2H20": true,
+    "v10_21H1": true
   },
   "productIdentifier": "String",
   "identityVersion": "String"

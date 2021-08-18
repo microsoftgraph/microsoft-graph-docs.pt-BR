@@ -1,34 +1,34 @@
 ---
-title: tipo de enumeração androidDeviceOwnerWiFiSecurityType
-description: Wi-Fi tipos de segurança para o proprietário do dispositivo Android.
+title: tipo de número androidDeviceOwnerWiFiSecurityType
+description: Wi-Fi Tipos de Segurança para Proprietário de Dispositivo Android.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 742c21c0358cab27050d75e94065bb788ceec6fa
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 62641bc1b12ffc580e4eb973d3ca6709b4c023d1c606b6225a8306dbbad8b4fc
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49294834"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54150497"
 ---
-# <a name="androiddeviceownerwifisecuritytype-enum-type"></a>tipo de enumeração androidDeviceOwnerWiFiSecurityType
+# <a name="androiddeviceownerwifisecuritytype-enum-type"></a>tipo de número androidDeviceOwnerWiFiSecurityType
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Wi-Fi tipos de segurança para o proprietário do dispositivo Android.
+Wi-Fi Tipos de Segurança para Proprietário de Dispositivo Android.
 
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|Abre|,0|Abrir (sem autenticação).|
-|Deixa|1|Criptografia WEP.|
-|wpaPersonal|duas|WPA-Pessoal/WPA2-Pessoal.|
-|wpaEnterprise|4 |WPA-Enterprise/WPA2-Enterprise. Deve usar o tipo AndroidDeviceOwnerEnterpriseWifiConfiguration para configurar opções da empresa.|
+|open|0|Open (Sem Autenticação).|
+|wep|1 |Criptografia WEP.|
+|wpaPersonal|2|WPA-Personal/WPA2-Personal.|
+|wpaEnterprise|4 |WPA-Enterprise/WPA2-Enterprise. Deve usar o tipo AndroidDeviceOwnerEnterpriseWifiConfiguration para configurar as opções corporativas.|
 
 
 

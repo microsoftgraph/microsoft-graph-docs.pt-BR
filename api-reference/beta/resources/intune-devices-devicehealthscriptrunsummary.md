@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: b1c1b31413c19436c7dceb34a2055a238fe5881a
-ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
+ms.openlocfilehash: d1bf94f10b164e13600989b6fed982f6426a505a9f952ff67a1aa97dc4843da5
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "52665228"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54156195"
 ---
 # <a name="devicehealthscriptrunsummary-resource-type"></a>Tipo de recurso deviceHealthScriptRunSummary
 
@@ -31,7 +31,7 @@ Contém propriedades para o resumo de executar um script de gerenciamento de dis
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave da entidade resumo do script de saúde do dispositivo. Essa propriedade é somente leitura.|
+|id|Cadeia de caracteres|Chave da entidade resumo do script de saúde do dispositivo. Essa propriedade é somente leitura.|
 |noIssueDetectedDeviceCount|Int32|Número de dispositivos para os quais o script de detecção não encontrou um problema e o dispositivo está saudável|
 |issueDetectedDeviceCount|Int32|Número de dispositivos para os quais o script de detecção encontrou um problema|
 |detectionScriptErrorDeviceCount|Int32|Número de dispositivos nos quais a execução do script de detecção encontrou um erro e não foi concluída|
@@ -45,7 +45,7 @@ Contém propriedades para o resumo de executar um script de gerenciamento de dis
 |issueRemediatedCumulativeDeviceCount|Int32|Número de dispositivos que foram remediados nos últimos 30 dias|
 
 ## <a name="relationships"></a>Relações
-Nenhuma
+Nenhum
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.

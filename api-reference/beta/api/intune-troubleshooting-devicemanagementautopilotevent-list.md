@@ -5,18 +5,16 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f138f09e8cb913023e60cec5ef30d24a4d2a26e3
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: a65f15c0a80438821e1b0fa76a1afe32a782c649
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51148264"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58266209"
 ---
 # <a name="list-devicemanagementautopilotevents"></a>Listar deviceManagementAutopilotEvents
 
 Namespace: microsoft.graph
-
-> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -57,7 +55,7 @@ Se tiver êxito, este método retornará um código de resposta e uma `200 OK` c
 ### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
 ``` http
-GET https://graph.microsoft.com/beta/deviceManagement/autopilotEvents
+GET https://graph.microsoft.com/v1/deviceManagement/autopilotEvents
 ```
 
 ### <a name="response"></a>Resposta

@@ -1,22 +1,22 @@
 ---
-title: tipo de enumeração deviceAppManagementTaskCategory
+title: Tipo de número deviceAppManagementTaskCategory
 description: Categoria de tarefa de gerenciamento de aplicativo de dispositivo.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: eb52f2fa9c891694f3b125c438bc8a767a9a6129
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: d1e4157bcc2f2cbba3a3edf390ffacfd34b1a1a610f4877ccccfa4e1b3ca072b
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49222489"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54164150"
 ---
-# <a name="deviceappmanagementtaskcategory-enum-type"></a>tipo de enumeração deviceAppManagementTaskCategory
+# <a name="deviceappmanagementtaskcategory-enum-type"></a>Tipo de número deviceAppManagementTaskCategory
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -25,8 +25,8 @@ Categoria de tarefa de gerenciamento de aplicativo de dispositivo.
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|desconhecido|,0|Fonte desconhecida.|
-|advancedThreatProtection|1|Windows Defender ATP Threat & gerenciamento de vulnerabilidade.|
+|desconhecido|0|Origem desconhecida.|
+|advancedThreatProtection|1 |Windows Defender Atp Threat & Gerenciamento de Vulnerabilidades.|
 
 
 

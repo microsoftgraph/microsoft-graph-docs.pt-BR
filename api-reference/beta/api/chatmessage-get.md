@@ -5,12 +5,12 @@ author: RamjotSingh
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 456dea5464d005af0ffc7c1621366e59f1aa8c41
-ms.sourcegitcommit: a598c09b73e4e43eea5f4aaefea7ffe062e15c39
+ms.openlocfilehash: 978f43be63f740278051310c3c78d0b4bed5a637
+ms.sourcegitcommit: 22bd45d272681658d46a8b99af3c3eabc7b05cb1
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/22/2021
-ms.locfileid: "53533868"
+ms.lasthandoff: 08/18/2021
+ms.locfileid: "58384433"
 ---
 # <a name="get-chatmessage-in-a-channel-or-chat"></a>Receber chatMessagem em um canal ou chat
 
@@ -28,9 +28,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-|Delegado (conta corporativa ou de estudante)| ChannelMessage.Read.All, Group.Read.All, Group.Read.WriteAll |
+|Delegado (conta corporativa ou de estudante)| ChannelMessage.Read.All, Group.Read.All, Group.ReadWrite.All |
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo| ChannelMessage.Read.Group*, ChannelMessage.Read.All, Group.Read.All, Group.ReadWrite.All |
+|Aplicativo| ChannelMessage.Read.Group, ChannelMessage.Read.All, Group.Read.All, Group.ReadWrite.All |
 
 ### <a name="permissions-for-chat"></a>Permissões para o chat
 
@@ -38,9 +38,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---------------------------------------|:--------------------------------------------|
 |Delegado (conta corporativa ou de estudante)| Chat.Read, Chat.ReadWrite|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo| ChatMessage.Read.Chat*, Chat.Read.All, Chat.ReadWrite.All|
+|Aplicativo| ChatMessage.Read.Chat, Chat.Read.All, Chat.ReadWrite.All|
 
-> **Observação**: Permissões marcadas com * usam [consentimento específico de recurso]( https://aka.ms/teams-rsc).
+> **Observação**: as permissões _ChannelMessage.Read.Group_ e _ChatMessage.Read.Chat_ usam o [consentimento específico do recurso]( https://aka.ms/teams-rsc).
 
 > [!NOTE]
 > É necessário solicitar acesso antes de chamar essa API com permissões de aplicativo. Para obter detalhes, confira [APIs protegidas no Microsoft Teams](/graph/teams-protected-apis).

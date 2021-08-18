@@ -5,12 +5,12 @@ localization_priority: Normal
 author: Sammak
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: d27825f33e3afa65ad7b89b24c940e9a8a29634e
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 9537b8ce7d677d6430a8690916996f3e80f2dd9c
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50952799"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58263804"
 ---
 # <a name="invitation-resource-type"></a>tipo de recurso convite
 
@@ -43,16 +43,16 @@ A criação de um convite retornará uma URL de resgate na resposta (*inviteRede
 |invitedUserDisplayName|String|O nome de exibição do usuário que está sendo convidado.|
 |invitedUserEmailAddress|String|O endereço de email do usuário que está sendo convidado. Obrigatório. Os seguintes caracteres especiais não são permitidos no endereço de email:<br><ul><li>Til (~)</li><li>Ponto de exclamação (`!`)</li><li>Arroba (`@`)</li><li>Hashtag (`#`)</li><li>Cifrão (`$`)</li><li>Percentagem (`%`)</li><li>Acento circunflexo (`^`)</li><li>E comercial (`&`)</li><li>Asterisco (`*`)</li><li>Parênteses (`( )`)</li><li>Hífen (`-`)</li><li>Sinal de mais (`+`)</li><li>Sinal de igualdade (`=`)</li><li>Colchetes (`[ ]`)</li><li>Chaves (`{ }`)</li><li>Barra invertida (`\`)</li><li>Barra (`/`)</li><li>Barra vertical (`|`)</li><li>Ponto e vírgula (`;`)</li><li>Dois pontos (`:`)</li><li>Aspas (`"`)</li><li>Sinais de maior-que e menor-que(`< >`)</li><li>Sinal de interrogação (`?`)</li><li>Vírgula (`,`)</li></ul><br>No entanto, as seguintes exceções se aplicam:<br><ul><li>Um ponto (`.`) ou um hífen (`-`) é permitido em qualquer lugar no nome de usuário, exceto no início ou no final do nome.</li><li>Um underline (`_`) é permitido em qualquer lugar no nome de usuário. Isso inclui no início ou no final do nome.</li></ul>|
 |invitedUserMessageInfo|[invitedUserMessageInfo](invitedusermessageinfo.md)|Configurações adicionais para a mensagem que está sendo enviada ao usuário convidado, incluindo a lista de destinatários cc, o idioma e o texto da mensagem de personalização.|
-|sendInvitationMessage|Boolean|Indica se um email deve ser enviado ao usuário que está sendo convidado ou não. O padrão é false.|
+|sendInvitationMessage|Boolean|Indica se um email deve ser enviado para o usuário que está sendo convidado. O padrão é `false`.|
 |inviteRedirectUrl|String|A URL para a qual o usuário deve ser redirecionado após o resgate do convite. Obrigatório.|
-|inviteRedeemUrl|Cadeia de caracteres|O URL que o usuário pode usar para resgatar o convite dele. Somente leitura.|
-|invitedUserType|String|O userType do usuário que está sendo convidado. Por padrão, isso é `Guest` . Você pode convidar `Member` como se fosse administrador da empresa. |
+|inviteRedeemUrl|Cadeia de caracteres|O URL que o usuário pode usar para resgatar seu convite. Somente leitura.|
+|invitedUserType|String|O userType do usuário que está sendo convidado. Por padrão, é `Guest` Você pode convidar `Member` como se fosse administrador da empresa. |
 |status|Cadeia de caracteres|O status do convite. Valores possíveis: `PendingAcceptance` `Completed` , , `InProgress` e `Error`|
 
 ## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|invitedUser|[Usuário](user.md)|O usuário criado como parte da criação do convite. Somente leitura|
+|invitedUser|[user](user.md)|O usuário criado como parte da criação do convite. Somente leitura|
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso
