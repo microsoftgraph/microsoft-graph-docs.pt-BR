@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8306b2afc8f3b82440d8524759ff3f89bca4663d
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: 30b828904ed3cdd63fa1495e010126bb5b20e4e76b7cdc22cb9221f80d81ce77
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50154296"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54161308"
 ---
 # <a name="devicecompliancescriptruleerror-resource-type"></a>Tipo de recurso deviceComplianceScriptRuleError
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para o uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -28,10 +28,10 @@ Herda de [deviceComplianceScriptError](../resources/intune-deviceconfig-deviceco
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|código|[code](../resources/intune-deviceconfig-code.md)|Código de erro. Herdado [de deviceComplianceScriptError](../resources/intune-deviceconfig-devicecompliancescripterror.md). Os valores possíveis são: `none` , , , , , , `jsonFileInvalid` `jsonFileMissing` `jsonFileTooLarge` `rulesMissing` `duplicateRules` `tooManyRulesSpecified` , `operatorMissing` `operatorNotSupported` , `datatypeMissing` , `datatypeNotSupported` , `operatorDataTypeCombinationNotSupported` , , `moreInfoUriMissing` , `moreInfoUriInvalid` , `moreInfoUriTooLarge` `descriptionMissing` `descriptionInvalid` `descriptionTooLarge` `titleMissing` `titleInvalid` `titleTooLarge` , `operandMissing` `operandInvalid` `operandTooLarge` `settingNameMissing` `settingNameInvalid` `settingNameTooLarge` `englishLocaleMissing` `duplicateLocales` `unrecognizedLocale` `unknown` `remediationStringsMissing` .|
-|deviceComplianceScriptRulesValidationError|[deviceComplianceScriptRulesValidationError](../resources/intune-deviceconfig-devicecompliancescriptrulesvalidationerror.md)|Código de erro. Herdado [de deviceComplianceScriptError](../resources/intune-deviceconfig-devicecompliancescripterror.md). Os valores possíveis são: `none` , , , , , , `jsonFileInvalid` `jsonFileMissing` `jsonFileTooLarge` `rulesMissing` `duplicateRules` `tooManyRulesSpecified` , `operatorMissing` `operatorNotSupported` , `datatypeMissing` , `datatypeNotSupported` , `operatorDataTypeCombinationNotSupported` , , `moreInfoUriMissing` , `moreInfoUriInvalid` , `moreInfoUriTooLarge` `descriptionMissing` `descriptionInvalid` `descriptionTooLarge` `titleMissing` `titleInvalid` `titleTooLarge` , `operandMissing` `operandInvalid` `operandTooLarge` `settingNameMissing` `settingNameInvalid` `settingNameTooLarge` `englishLocaleMissing` `duplicateLocales` `unrecognizedLocale` `unknown` `remediationStringsMissing` .|
+|código|[code](../resources/intune-deviceconfig-code.md)|Código de erro. Herdado [de deviceComplianceScriptError](../resources/intune-deviceconfig-devicecompliancescripterror.md). Os valores possíveis são: `none` , `jsonFileInvalid` , , `jsonFileMissing` `jsonFileTooLarge` , `rulesMissing` `duplicateRules` `tooManyRulesSpecified` `operatorMissing` `operatorNotSupported` `datatypeMissing` `datatypeNotSupported` `operatorDataTypeCombinationNotSupported` `moreInfoUriMissing` `moreInfoUriInvalid` `moreInfoUriTooLarge` `descriptionMissing` `descriptionInvalid` `descriptionTooLarge` `titleMissing` `titleInvalid` `titleTooLarge` `operandMissing` `operandInvalid` `operandTooLarge` `settingNameMissing` `settingNameInvalid` `settingNameTooLarge` `englishLocaleMissing` `duplicateLocales` `unrecognizedLocale` `unknown` `remediationStringsMissing`|
+|deviceComplianceScriptRulesValidationError|[deviceComplianceScriptRulesValidationError](../resources/intune-deviceconfig-devicecompliancescriptrulesvalidationerror.md)|Código de erro. Herdado [de deviceComplianceScriptError](../resources/intune-deviceconfig-devicecompliancescripterror.md). Os valores possíveis são: `none` , `jsonFileInvalid` , , `jsonFileMissing` `jsonFileTooLarge` , `rulesMissing` `duplicateRules` `tooManyRulesSpecified` `operatorMissing` `operatorNotSupported` `datatypeMissing` `datatypeNotSupported` `operatorDataTypeCombinationNotSupported` `moreInfoUriMissing` `moreInfoUriInvalid` `moreInfoUriTooLarge` `descriptionMissing` `descriptionInvalid` `descriptionTooLarge` `titleMissing` `titleInvalid` `titleTooLarge` `operandMissing` `operandInvalid` `operandTooLarge` `settingNameMissing` `settingNameInvalid` `settingNameTooLarge` `englishLocaleMissing` `duplicateLocales` `unrecognizedLocale` `unknown` `remediationStringsMissing`|
 |mensagem|String|Mensagem de erro. Herdado [de deviceComplianceScriptError](../resources/intune-deviceconfig-devicecompliancescripterror.md)|
-|settingName|Cadeia de caracteres|Definir o nome da regra com erro.|
+|settingName|Cadeia de caracteres|Definindo o nome da regra com erro.|
 
 ## <a name="relationships"></a>Relações
 Nenhum

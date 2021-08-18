@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 864df7c89a6dbbcc80932e87f6616c79d52eca99
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: 7d12d43cf0f4da721ef5361fe94aa845134f1c6a1668fd20449f6d3a1f18747e
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51134638"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54207758"
 ---
 # <a name="create-policyset"></a>Criar policySet
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -57,11 +57,11 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar o policy
 |createdDateTime|DateTimeOffset|Hora de criação do PolicySet.|
 |lastModifiedDateTime|DateTimeOffset|Última hora modificada do PolicySet.|
 |displayName|Cadeia de caracteres|DisplayName do PolicySet.|
-|descrição|Cadeia de caracteres|Descrição do PolicySet.|
+|description|Cadeia de caracteres|Descrição do PolicySet.|
 |status|[policySetStatus](../resources/intune-policyset-policysetstatus.md)|Status de validação/atribuição do PolicySet. Os valores possíveis são: `unknown`, `validating`, `partialSuccess`, `success`, `error`, `notAssigned`.|
 |errorCode|[errorCode](../resources/intune-policyset-errorcode.md)|Código de erro se ocorrer algum. Os valores possíveis são: `noError`, `unauthorized`, `notFound`, `deleted`.|
-|guidedDeploymentTags|Coleção de cadeias de caracteres|Marcas da implantação guiada|
-|roleScopeTags|Coleção de cadeias de caracteres|RoleScopeTags do PolicySet|
+|guidedDeploymentTags|String collection|Marcas da implantação guiada|
+|roleScopeTags|String collection|RoleScopeTags do PolicySet|
 
 
 

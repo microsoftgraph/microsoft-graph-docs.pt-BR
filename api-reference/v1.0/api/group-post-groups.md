@@ -5,12 +5,12 @@ author: Jordanndahl
 localization_priority: Priority
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: e6af591272ea3c1631107485609b7c43fcec59cd
-ms.sourcegitcommit: ada6eab637b9b318129aefb98edbe7316399d9ba
+ms.openlocfilehash: 95e6fc4e9e4f2f96dbeadec87b78872753ce9960
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/07/2021
-ms.locfileid: "53316516"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58255513"
 ---
 # <a name="create-group"></a>Criar grupo
 
@@ -281,7 +281,7 @@ Content-type: application/json
 
 #### <a name="request"></a>Solicitação
 
-Este é um exemplo de solicitação. O usuário chamador deve receber a permissão *Directory.AccessAsUser.All* para definir a propriedade **isAssignableToRole**.
+Este é um exemplo de solicitação. O usuário ou aplicativo de chamada deve receber a permissão *RoleManagement.ReadWrite.Directory* para definir a propriedade **isAssignableToRole** ou atualizar a associação desses grupos.
 
 
 # <a name="http"></a>[HTTP](#tab/http)

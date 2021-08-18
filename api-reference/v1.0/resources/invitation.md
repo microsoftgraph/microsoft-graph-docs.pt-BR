@@ -5,12 +5,12 @@ localization_priority: Priority
 author: Sammak
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: c70433fe800c38b139b5f9f6ad050ab06254f067674cc203e592c82cb51b8a59
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 86946a61024739f0722ddab5cba007b51c81c75d
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54249206"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58260790"
 ---
 # <a name="invitation-resource-type"></a>tipo de recurso convite
 
@@ -39,8 +39,8 @@ A criação de um convite retornará uma URL de resgate na resposta (*inviteRede
 |:---|:---|:---|
 |invitedUserDisplayName|String|O nome de exibição do usuário que está sendo convidado.|
 |invitedUserEmailAddress|String|O endereço de email do usuário que está sendo convidado. Obrigatório. Os seguintes caracteres especiais não são permitidos no endereço de email:<br><ul><li>Til (`~`)</li><li>Ponto de exclamação (`!`)</li><li>Hashtag (`#`)</li><li>Cifrão (`$`)</li><li>Percentagem (`%`)</li><li>Acento circunflexo (`^`)</li><li>E comercial (`&`)</li><li>Asterisco (`*`)</li><li>Parênteses (`( )`)</li><li>Sinal de mais (`+`)</li><li>Sinal de igualdade (`=`)</li><li>Colchetes (`[ ]`)</li><li>Chaves (`{ }`)</li><li>Barra invertida (`\`)</li><li>Barra (`/`)</li><li>Barra vertical (`\|`)</li><li>Ponto e vírgula (`;`)</li><li>Dois pontos (`:`)</li><li>Aspas (`"`)</li><li>Sinais de maior-que e menor-que(`< >`)</li><li>Sinal de interrogação (`?`)</li><li>Vírgula (`,`)</li></ul><br>No entanto, as seguintes exceções se aplicam:<br><ul><li>Um ponto (`.`) ou um hífen (`-`) é permitido em qualquer lugar no nome de usuário, exceto no início ou no final do nome.</li><li>Um underline (`_`) é permitido em qualquer lugar no nome de usuário. Isso inclui no início ou no final do nome.</li></ul>|
-|invitedUserMessageInfo|[invitedUserMessageInfo](invitedusermessageinfo.md|Configurações adicionais para a mensagem que está sendo enviada ao usuário convidado, incluindo a lista de destinatários cc, o idioma e o texto da mensagem de personalização.|
-|sendInvitationMessage|Boolean|Indica se um email deve ser enviado ao usuário que está sendo convidado ou não. O padrão é false.|
+|invitedUserMessageInfo|[invitedUserMessageInfo](invitedusermessageinfo.md)|Configurações adicionais para a mensagem que está sendo enviada ao usuário convidado, incluindo a lista de destinatários cc, o idioma e o texto da mensagem de personalização.|
+|sendInvitationMessage|Boolean|Indica se um email deve ser enviado ao usuário que está sendo convidado. O padrão é `false`.|
 |inviteRedirectUrl|Cadeia de caracteres|O URL para a qual o usuário deve ser redirecionado uma vez que o convite seja resgatado. Obrigatório.|
 |inviteRedeemUrl|Cadeia de caracteres|O URL que o usuário pode usar para resgatar seu convite. Somente leitura.|
 |invitedUserType|String|O userType do usuário que está sendo convidado. Por padrão, é `Guest` Você pode convidar como `Member` se fosse um administrador da empresa. |
