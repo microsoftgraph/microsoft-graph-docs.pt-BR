@@ -1,33 +1,33 @@
 ---
-title: tipo de enumeração editionUpgradeLicenseType
-description: Tipo de licença de atualização de edição
+title: tipo de número editionUpgradeLicenseType
+description: Tipo de Licença de Atualização da Edição
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: f2d19e8173103172e513122c459fcc7e04508694
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 75bbbb5d0bc201b47c8864d8724f3b423e0a2276efa63d91d863d6b6ac1ece15
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49303381"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54248912"
 ---
-# <a name="editionupgradelicensetype-enum-type"></a>tipo de enumeração editionUpgradeLicenseType
+# <a name="editionupgradelicensetype-enum-type"></a>tipo de número editionUpgradeLicenseType
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Tipo de licença de atualização de edição
+Tipo de Licença de Atualização da Edição
 
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|productKey|,0|Tipo de chave do produto|
-|LicenseFile|1|Tipo de arquivo de licença|
-|notConfigured|duas|NotConfigured|
+|productKey|0|Tipo de chave do produto|
+|licenseFile|1 |Tipo de arquivo de licença|
+|notConfigured|2|NotConfigured|
 
 
 

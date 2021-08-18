@@ -1,18 +1,18 @@
 ---
-title: tipo de recurso educationOnPremisesInfo
+title: Tipo de recurso educationOnPremisesInfo
 description: Informações adicionais usadas para associar uma conta de usuário local do Active Directory ao objeto de usuário do Azure AD.
 author: mlafleur
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: ff575398f3829c5d2adbe92799f5b9dca953aa4e
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: b6e16db3b73faa0affad9586fb310a367d02d46ea78bfe66d52f90dc162f3c88
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47998821"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54253247"
 ---
-# <a name="educationonpremisesinfo-resource-type"></a>tipo de recurso educationOnPremisesInfo
+# <a name="educationonpremisesinfo-resource-type"></a>Tipo de recurso educationOnPremisesInfo
 
 Namespace: microsoft.graph
 
@@ -22,7 +22,7 @@ Informações adicionais usadas para associar uma conta de usuário local do Act
 
 | Propriedade    | Tipo   | Descrição                                               |
 | :---------- | :----- | :-------------------------------------------------------- |
-| imutávelid | String | Identificador exclusivo do objeto de usuário no Active Directory. |
+| immutableId | Cadeia de caracteres | Identificador exclusivo do objeto do usuário no Active Directory. |
 
 ## <a name="json-representation"></a>Representação JSON
 

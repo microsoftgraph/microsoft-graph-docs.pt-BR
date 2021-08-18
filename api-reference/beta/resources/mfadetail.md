@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: identity-and-access-reports
 author: besiler
-ms.openlocfilehash: b3cd2392b9591cfb5465f2f269db547cd37754ea
-ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
+ms.openlocfilehash: 52cf5f15c31502fd796e581f8b45e8d00b80eeb83939d7bb6b3c70d6c4906ef2
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50759794"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54249696"
 ---
 # <a name="mfadetail-resource-type"></a>Tipo de recurso mfaDetail
 
@@ -21,8 +21,8 @@ Namespace: microsoft.graph Indica detalhes de MFA para uma conexão específica.
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|authDetail|Cadeia de Caracteres|Indica o detalhe de auth MFA para a atividade de Login correspondente quando o MFA Obrigatório é "Sim".|
-|authMethod|Cadeia de Caracteres|Indica que os métodos MFA Auth (SMS, Telefone, Aplicativo Autenticador são parte do valor) para a atividade de login correspondente quando o campo MFA Obrigatório for "Sim".|
+|authDetail|Cadeia de caracteres|Indica o detalhe de auth MFA para a atividade de Login correspondente quando o MFA Obrigatório é "Sim".|
+|authMethod|Cadeia de caracteres|Indica que os métodos MFA Auth (SMS, Telefone, Authenticator App são parte do valor) para a atividade de login correspondente quando o campo MFA Obrigatório for "Sim".|
 
 ## <a name="json-representation"></a>Representação JSON
 

@@ -1,47 +1,47 @@
 ---
-title: tipo de recurso configManagerCollection
-description: Um Configmanager definido como um conjunto de dispositivos ou usuários.
+title: Tipo de recurso configManagerCollection
+description: Uma coleção definida configManager de dispositivos ou usuários.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3bc7d7d371a0bbc07b29835c5ed2a4b23078cf04
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 1a3833f2ee3ae94807af402b1109954b8785ab5a826ee0762ea0a4f0e1208af3
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49301611"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54226242"
 ---
-# <a name="configmanagercollection-resource-type"></a>tipo de recurso configManagerCollection
+# <a name="configmanagercollection-resource-type"></a>Tipo de recurso configManagerCollection
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Um Configmanager definido como um conjunto de dispositivos ou usuários.
+Uma coleção definida configManager de dispositivos ou usuários.
 
 ## <a name="methods"></a>Métodos
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
-|[Listar configManagerCollections](../api/intune-partnerintegration-configmanagercollection-list.md)|coleção [configManagerCollection](../resources/intune-partnerintegration-configmanagercollection.md)|Listar Propriedades e relações dos objetos [configManagerCollection](../resources/intune-partnerintegration-configmanagercollection.md) .|
-|[Obter configManagerCollection](../api/intune-partnerintegration-configmanagercollection-get.md)|[configManagerCollection](../resources/intune-partnerintegration-configmanagercollection.md)|Leia as propriedades e as relações do objeto [configManagerCollection](../resources/intune-partnerintegration-configmanagercollection.md) .|
-|[Criar configManagerCollection](../api/intune-partnerintegration-configmanagercollection-create.md)|[configManagerCollection](../resources/intune-partnerintegration-configmanagercollection.md)|Criar um novo objeto [configManagerCollection](../resources/intune-partnerintegration-configmanagercollection.md) .|
-|[Excluir configManagerCollection](../api/intune-partnerintegration-configmanagercollection-delete.md)|Nenhum|Exclui [configManagerCollection](../resources/intune-partnerintegration-configmanagercollection.md).|
-|[Atualizar configManagerCollection](../api/intune-partnerintegration-configmanagercollection-update.md)|[configManagerCollection](../resources/intune-partnerintegration-configmanagercollection.md)|Atualiza as propriedades de um objeto [configManagerCollection](../resources/intune-partnerintegration-configmanagercollection.md) .|
+|[Listar configManagerCollections](../api/intune-partnerintegration-configmanagercollection-list.md)|[Coleção configManagerCollection](../resources/intune-partnerintegration-configmanagercollection.md)|Listar propriedades e relações dos [objetos configManagerCollection.](../resources/intune-partnerintegration-configmanagercollection.md)|
+|[Obter configManagerCollection](../api/intune-partnerintegration-configmanagercollection-get.md)|[configManagerCollection](../resources/intune-partnerintegration-configmanagercollection.md)|Ler propriedades e relações do [objeto configManagerCollection.](../resources/intune-partnerintegration-configmanagercollection.md)|
+|[Criar configManagerCollection](../api/intune-partnerintegration-configmanagercollection-create.md)|[configManagerCollection](../resources/intune-partnerintegration-configmanagercollection.md)|Crie um novo [objeto configManagerCollection.](../resources/intune-partnerintegration-configmanagercollection.md)|
+|[Excluir configManagerCollection](../api/intune-partnerintegration-configmanagercollection-delete.md)|Nenhum|Exclui um [configManagerCollection](../resources/intune-partnerintegration-configmanagercollection.md).|
+|[Atualizar configManagerCollection](../api/intune-partnerintegration-configmanagercollection-update.md)|[configManagerCollection](../resources/intune-partnerintegration-configmanagercollection.md)|Atualize as propriedades de [um objeto configManagerCollection.](../resources/intune-partnerintegration-configmanagercollection.md)|
 |[função getPolicySummary](../api/intune-partnerintegration-configmanagercollection-getpolicysummary.md)|[configManagerPolicySummary](../resources/intune-partnerintegration-configmanagerpolicysummary.md)|Ainda não documentado|
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|A chave da coleção Configmanager.|
-|displayName|String|O DisplayName.|
-|collectionIdentifier|String|O identificador de coleção no SCCM.|
-|HierarchyName|String|O HierarchyName.|
-|hierarchyIdentifier|String|O identificador de hierarquia.|
-|createdDateTime|DateTimeOffset|A data de criação.|
-|lastModifiedDateTime|DateTimeOffset|A data da última modificação.|
+|id|Cadeia de caracteres|A chave da Coleção ConfigManager.|
+|displayName|Cadeia de caracteres|The DisplayName.|
+|collectionIdentifier|Cadeia de caracteres|O identificador de coleção no SCCM.|
+|hierarchyName|Cadeia de caracteres|O HierarchyName.|
+|hierarchyIdentifier|Cadeia de caracteres|O Identificador de Hierarquia.|
+|createdDateTime|DateTimeOffset|A data criada.|
+|lastModifiedDateTime|DateTimeOffset|A última data modificada.|
 
 ## <a name="relationships"></a>Relações
 Nenhum

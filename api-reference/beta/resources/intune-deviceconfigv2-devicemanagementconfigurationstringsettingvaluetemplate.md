@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: db9e15e7aae70b4023aaf9305ef533ea37597e3b
-ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
+ms.openlocfilehash: 2ddf920aeee3dd22af84afc359c5e6072133ad8f0a5020fc4a0f1215fe5ab72a
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "52666790"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54246210"
 ---
 # <a name="devicemanagementconfigurationstringsettingvaluetemplate-resource-type"></a>Tipo de recurso deviceManagementConfigurationStringSettingValueTemplate
 
@@ -28,11 +28,11 @@ Herda [de deviceManagementConfigurationSimpleSettingValueTemplate](../resources/
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|settingValueTemplateId|String|Definição da ID do Modelo de Valor Herdada [de deviceManagementConfigurationSimpleSettingValueTemplate](../resources/intune-deviceconfigv2-devicemanagementconfigurationsimplesettingvaluetemplate.md)|
+|settingValueTemplateId|Cadeia de caracteres|Definição da ID do Modelo de Valor Herdada [de deviceManagementConfigurationSimpleSettingValueTemplate](../resources/intune-deviceconfigv2-devicemanagementconfigurationsimplesettingvaluetemplate.md)|
 |defaultValue|[deviceManagementConfigurationStringSettingValueDefaultTemplate](../resources/intune-deviceconfigv2-devicemanagementconfigurationstringsettingvaluedefaulttemplate.md)|Modelo padrão de valor de configuração de cadeia de caracteres.|
 
 ## <a name="relationships"></a>Relações
-Nenhuma
+Nenhum
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.

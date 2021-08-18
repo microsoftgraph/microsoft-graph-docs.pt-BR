@@ -1,49 +1,49 @@
 ---
-title: tipo de recurso deviceLogCollectionResponse
-description: Entidade de solicitação de conjunto de logs do Windows.
+title: Tipo de recurso deviceLogCollectionResponse
+description: Windows Entidade de solicitação do Conjunto de Log.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: b8cde943ccfd4befad2a14f607350a9989e1e42d
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: fa4bffe14538618e1338b87f107148422086931e1761e171eff999eaac070626
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49299307"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54244733"
 ---
-# <a name="devicelogcollectionresponse-resource-type"></a>tipo de recurso deviceLogCollectionResponse
+# <a name="devicelogcollectionresponse-resource-type"></a>Tipo de recurso deviceLogCollectionResponse
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Entidade de solicitação de conjunto de logs do Windows.
+Windows Entidade de solicitação do Conjunto de Log.
 
 ## <a name="methods"></a>Métodos
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
-|[Listar deviceLogCollectionResponses](../api/intune-devices-devicelogcollectionresponse-list.md)|coleção [deviceLogCollectionResponse](../resources/intune-devices-devicelogcollectionresponse.md)|Listar Propriedades e relações dos objetos [deviceLogCollectionResponse](../resources/intune-devices-devicelogcollectionresponse.md) .|
-|[Obter deviceLogCollectionResponse](../api/intune-devices-devicelogcollectionresponse-get.md)|[deviceLogCollectionResponse](../resources/intune-devices-devicelogcollectionresponse.md)|Leia as propriedades e as relações do objeto [deviceLogCollectionResponse](../resources/intune-devices-devicelogcollectionresponse.md) .|
-|[Criar deviceLogCollectionResponse](../api/intune-devices-devicelogcollectionresponse-create.md)|[deviceLogCollectionResponse](../resources/intune-devices-devicelogcollectionresponse.md)|Criar um novo objeto [deviceLogCollectionResponse](../resources/intune-devices-devicelogcollectionresponse.md) .|
-|[Excluir deviceLogCollectionResponse](../api/intune-devices-devicelogcollectionresponse-delete.md)|Nenhum|Exclui [deviceLogCollectionResponse](../resources/intune-devices-devicelogcollectionresponse.md).|
-|[Atualizar deviceLogCollectionResponse](../api/intune-devices-devicelogcollectionresponse-update.md)|[deviceLogCollectionResponse](../resources/intune-devices-devicelogcollectionresponse.md)|Atualiza as propriedades de um objeto [deviceLogCollectionResponse](../resources/intune-devices-devicelogcollectionresponse.md) .|
+|[Listar deviceLogCollectionResponses](../api/intune-devices-devicelogcollectionresponse-list.md)|[Coleção deviceLogCollectionResponse](../resources/intune-devices-devicelogcollectionresponse.md)|Listar propriedades e relações dos [objetos deviceLogCollectionResponse.](../resources/intune-devices-devicelogcollectionresponse.md)|
+|[Obter deviceLogCollectionResponse](../api/intune-devices-devicelogcollectionresponse-get.md)|[deviceLogCollectionResponse](../resources/intune-devices-devicelogcollectionresponse.md)|Leia propriedades e relações do [objeto deviceLogCollectionResponse.](../resources/intune-devices-devicelogcollectionresponse.md)|
+|[Criar deviceLogCollectionResponse](../api/intune-devices-devicelogcollectionresponse-create.md)|[deviceLogCollectionResponse](../resources/intune-devices-devicelogcollectionresponse.md)|Crie um novo [objeto deviceLogCollectionResponse.](../resources/intune-devices-devicelogcollectionresponse.md)|
+|[Excluir deviceLogCollectionResponse](../api/intune-devices-devicelogcollectionresponse-delete.md)|Nenhum|Exclui um [deviceLogCollectionResponse](../resources/intune-devices-devicelogcollectionresponse.md).|
+|[Atualizar deviceLogCollectionResponse](../api/intune-devices-devicelogcollectionresponse-update.md)|[deviceLogCollectionResponse](../resources/intune-devices-devicelogcollectionresponse.md)|Atualize as propriedades de um [objeto deviceLogCollectionResponse.](../resources/intune-devices-devicelogcollectionresponse.md)|
 |[ação createDownloadUrl](../api/intune-devices-devicelogcollectionresponse-createdownloadurl.md)|String|Ainda não documentado|
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|O identificador exclusivo no formato de tenantId_deviceId_requestId|
-|status|String|O status da solicitação de coleção de logs|
+|id|Cadeia de caracteres|O identificador exclusivo na forma de tenantId_deviceId_requestId|
+|status|Cadeia de caracteres|O status da solicitação do conjunto de log|
 |managedDeviceId|Guid|A ID do dispositivo|
-|errorCode|Int64|O código de erro, se houver. Valores válidos-9.22337203685478 E + 18 para 9.22337203685478 E + 18|
-|requestedDateTimeUTC|DateTimeOffset|O DateTime da solicitação|
-|receivedDateTimeUTC|DateTimeOffset|O DateTime que a solicitação foi recebida|
-|initiatedByUserPrincipalName|String|O UPN para quem iniciou a solicitação|
-|expirationDateTimeUTC|DateTimeOffset|O DateTime do vencimento dos logs|
-|size|Duplo|O tamanho dos logs. Valores válidos-1.79769313486232 E + 308 a 1.79769313486232 E + 308|
+|errorCode|Int64|O código de erro, se for o caso. Valores válidos -9.22337203685478E+18 a 9.22337203685478E+18|
+|requestedDateTimeUTC|DateTimeOffset|DateTime da solicitação|
+|receivedDateTimeUTC|DateTimeOffset|DateTime a solicitação foi recebida|
+|initiatedByUserPrincipalName|Cadeia de caracteres|O UPN para quem iniciou a solicitação|
+|expirationDateTimeUTC|DateTimeOffset|DateTime da expiração dos logs|
+|tamanho|Duplo|O tamanho dos logs. Valores válidos -1,79769313486232E+308 a 1.79769313486232E+308|
 
 ## <a name="relationships"></a>Relações
 Nenhum

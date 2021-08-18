@@ -1,18 +1,18 @@
 ---
-title: tipo de recurso sharePointActivityUserDetail
+title: Tipo de recurso sharePointActivityUserDetail
 description: Veja a seguir uma representação JSON do recurso.
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
 author: JeremyKelley
-ms.openlocfilehash: 7394e2fab0604286e8066b64e86f413f421472cf
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 7976ccd15156f1b4f271729d1b7058dc81b60974ce5e9f57a26ee30ce7ce7880
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47997792"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54252792"
 ---
-# <a name="sharepointactivityuserdetail-resource-type"></a>tipo de recurso sharePointActivityUserDetail
+# <a name="sharepointactivityuserdetail-resource-type"></a>Tipo de recurso sharePointActivityUserDetail
 
 Namespace: microsoft.graph
 
@@ -21,7 +21,7 @@ Namespace: microsoft.graph
 | Propriedade                  | Tipo              |
 | :------------------------ | :---------------- |
 | reportRefreshDate         | Data              |
-| userPrincipalName         | String            |
+| userPrincipalName         | Cadeia de caracteres            |
 | isDeleted                 | Boolean           |
 | deletedDate               | Data              |
 | lastActivityDate          | Data              |
@@ -29,9 +29,9 @@ Namespace: microsoft.graph
 | syncedFileCount           | Int64             |
 | sharedInternallyFileCount | Int64             |
 | sharedExternallyFileCount | Int64             |
-| visitedPageCount          | Int64             |
-| assignedProducts          | Coleção de cadeias de caracteres |
-| reportPeriod              | String            |
+| visitPageCount          | Int64             |
+| assignedProducts          | String collection |
+| reportPeriod              | Cadeia de caracteres            |
 
 ## <a name="json-representation"></a>Representação JSON
 

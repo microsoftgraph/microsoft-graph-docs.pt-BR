@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: faef8ab32caa9e065f264eed6a8ad862ef6f8dd0
-ms.sourcegitcommit: 8b23038be1141d7f22eb61de6aafdb16d4f9c826
+ms.openlocfilehash: 95bf04ace23b6340fcef3c0945fad1bd221e8a12
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "53401495"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58256153"
 ---
 # <a name="accesspackage-resource-type"></a>Tipo de recurso accessPackage
 
@@ -43,6 +43,7 @@ Para atribuir um usuário a um pacote de acesso, [crie um accessPackageAssignmen
 | [Remover grupo de incompatibleGroups](../api/accesspackage-delete-incompatiblegroup.md) | Nenhum | Remover um link que indicava que uma associação **ao** grupo era incompatível.|
 | [Listar accessPackagesIncompatibleWith](../api/accesspackage-list-accesspackagesincompatiblewith.md) | [Coleção accessPackage](accesspackage.md) | Recupere uma lista dos  **objetos accesspackage que** listam esse pacote de acesso como incompatível. |
 |[filterByCurrentUser](../api/accesspackage-filterbycurrentuser.md)|[Coleção accessPackage](../resources/accesspackage.md)|Recupere a lista de **objetos accessPackage** filtrados no usuário de entrada.|
+| [getApplicablePolicyRequirements](../api/accesspackage-getapplicablepolicyrequirements.md) | [coleção accessPackageAssignmentRequestRequirements](../resources/accesspackageassignmentrequestrequirements.md) | Recupere uma lista de **objetos accessPackageAssignmentRequestRequirement** com requisitos de solicitação. |
 
 ## <a name="properties"></a>Propriedades
 
