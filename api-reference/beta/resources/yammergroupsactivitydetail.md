@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: reports
 author: sarahwxy
 doc_type: resourcePageType
-ms.openlocfilehash: cb4f04b04d59a5b14185e82d47c5366f3e2890e4
-ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
+ms.openlocfilehash: 7c3b10b7b96c40ae7b7404eee2c9af99ea4bc2d602c93f9f6c68ef2ed7ad8cbe
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49982338"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54176082"
 ---
 # <a name="yammergroupsactivitydetail-resource-type"></a>Tipo de recurso yammerGroupsActivityDetail
 
@@ -22,11 +22,11 @@ Namespace: microsoft.graph
 | :----------------- | :------ |
 | reportRefreshDate  | Data    |
 | groupDisplayName   | Cadeia de caracteres  |
-| isDeleted          | Booliano |
+| isDeleted          | Boolean |
 | ownerPrincipalName | Cadeia de caracteres  |
 | lastActivityDate   | Data    |
 | groupType          | Cadeia de caracteres  |
-| office365Connected | Booliano |
+| office365Connected | Boolean |
 | memberCount        | Int64   |
 | postedCount        | Int64   |
 | readCount          | Int64   |

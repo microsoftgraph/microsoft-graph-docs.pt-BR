@@ -1,22 +1,22 @@
 ---
-title: tipo de enumeração firewallPacketQueueingMethodType
+title: tipo de número firewallPacketQueueingMethodType
 description: Valores possíveis para firewallPacketQueueingMethod
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: aca93f0c7afaa0e7859ceccb73fad656f3590b1a
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 2917c7714341503b479ed043539a03aefa75c723808c2aad87b8832d2d6300c7
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49294449"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54122631"
 ---
-# <a name="firewallpacketqueueingmethodtype-enum-type"></a>tipo de enumeração firewallPacketQueueingMethodType
+# <a name="firewallpacketqueueingmethodtype-enum-type"></a>tipo de número firewallPacketQueueingMethodType
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -25,11 +25,11 @@ Valores possíveis para firewallPacketQueueingMethod
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|deviceDefault|,0|Nenhum valor configurado pelo Intune, não substitua o valor padrão do dispositivo configurado pelo usuário|
-|desabilitadas|1|Desabilitar enfileiramento de pacotes|
-|queueInbound|duas|Enfileirar pacotes criptografados de entrada|
-|queueOutbound|3D|Pacotes de saída de fila descriptografados para encaminhamento|
-|queueBoth|4 |Enfileiramento de pacotes de entrada e de saída|
+|deviceDefault|0|Nenhum valor configurado pelo Intune, não substitua o valor padrão do dispositivo configurado pelo usuário|
+|desabilitadas|1 |Desabilitar a fila de pacotes|
+|queueInbound|2|Fila de pacotes criptografados de entrada|
+|queueOutbound|3 |Pacotes de saída descriptografados da fila para encaminhamento|
+|queueBoth|4 |Fila de pacotes de entrada e de saída|
 
 
 

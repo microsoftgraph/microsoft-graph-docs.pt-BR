@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 4d4a922aa2d6101667024dff7fa458f43fb82f25
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: d9b10b7acc32fa8b5bf510e2771a7738717e5744
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51136010"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58255406"
 ---
 # <a name="update-userexperienceanalyticsapphealthdeviceperformancedetails"></a>Atualizar userExperienceAnalyticsAppHealthDevicePerformanceDetails
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -27,9 +27,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All|
+|Delegada (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 |Delegada (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementManagedDevices.ReadWrite.All|
+|Aplicativo|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -57,6 +57,8 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [o userE
 |eventDateTime|DateTimeOffset|A hora em que o evento ocorreu.|
 |eventType|Cadeia de caracteres|O tipo do evento.|
 |appDisplayName|Cadeia de caracteres|O nome amigável do aplicativo para o qual o evento ocorreu.|
+|appPublisher|Cadeia de caracteres|O editor do aplicativo.|
+|appVersion|Cadeia de caracteres|A versão do aplicativo.|
 |deviceId|Cadeia de caracteres|A id do dispositivo.|
 |deviceDisplayName|Cadeia de caracteres|O nome do dispositivo.|
 
@@ -72,13 +74,15 @@ Este é um exemplo da solicitação.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsAppHealthDevicePerformanceDetails/{userExperienceAnalyticsAppHealthDevicePerformanceDetailsId}
 Content-type: application/json
-Content-length: 325
+Content-length: 405
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsAppHealthDevicePerformanceDetails",
   "eventDateTime": "2016-12-31T23:59:23.3984029-08:00",
   "eventType": "Event Type value",
   "appDisplayName": "App Display Name value",
+  "appPublisher": "App Publisher value",
+  "appVersion": "App Version value",
   "deviceId": "Device Id value",
   "deviceDisplayName": "Device Display Name value"
 }
@@ -89,7 +93,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 374
+Content-Length: 454
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsAppHealthDevicePerformanceDetails",
@@ -97,6 +101,8 @@ Content-Length: 374
   "eventDateTime": "2016-12-31T23:59:23.3984029-08:00",
   "eventType": "Event Type value",
   "appDisplayName": "App Display Name value",
+  "appPublisher": "App Publisher value",
+  "appVersion": "App Version value",
   "deviceId": "Device Id value",
   "deviceDisplayName": "Device Display Name value"
 }

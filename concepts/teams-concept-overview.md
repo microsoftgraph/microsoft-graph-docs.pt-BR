@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 5e3a8e6ba1110aa9183f9ab80732e6128b4c0d1ff327ab0bc13ee71aa5b26500
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 4554c065d342e2d3eb7fdc3234e6f9046aeda437
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54218288"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58264147"
 ---
 # <a name="microsoft-teams-api-overview"></a>Visão geral da API do Microsoft Teams
 
@@ -45,8 +45,8 @@ Permita que os clientes criem novas [equipes](/graph/api/resources/team) e [cana
 
 ### <a name="create-and-manage-multiple-teams-and-channels"></a>Criar e gerenciar várias equipes e canais
 
-O Microsoft Graph facilita a criação de um grande número de equipes e seu preenchimento com usuários e canais, ao criar e gerenciar automaticamente [equipes](/graph/api/resources/team), [canais](/graph/api/resources/channel), [guias](/graph/api/resources/teamstab) e [aplicativos](/graph/api/resources/teamsapp).
-O Microsoft Graph também permite [encontrar](teams-list-all-teams.md) e [arquivar](/graph/api/team-archive) equipes que você não está mais usando. Esta é a mesma API que em que são criados o [Centro Administrativo do Microsoft Teams](/microsoftteams/enable-features-office-365) e as [cmdlets de Equipes do PowerShell](/microsoftteams/teams-powershell-overview).
+O Microsoft Graph torna mais fácil criar um grande número de equipes e preenchê-los com usuários e canais, automatizando a criação e o gerenciamento de [equipes](/graph/api/resources/team), [canais](/graph/api/resources/channel), [guias](/graph/api/resources/teamstab) e [aplicativos](/graph/api/resources/teamsapp).
+O Microsoft Graph também permite [encontrar](teams-list-all-teams.md) e [arquivar](/graph/api/team-archive) equipes que você não está mais usando. Esta é a mesma API em que o [Centro de Administração do Microsoft Teams](/microsoftteams/enable-features-office-365) e os [cmdlets do Teams PowerShell](/microsoftteams/teams-powershell-overview) são construídos.
 
 ### <a name="deploy-apps-to-teams"></a>Implantar aplicativos em equipes
 
@@ -57,7 +57,7 @@ O Microsoft Graph também permite [encontrar](teams-list-all-teams.md) e [arquiv
 
 Os aplicativos do Microsoft Teams oferecem aos grupos de trabalho uma nova ferramenta para tornar a colaboração mais produtiva e atraente. Estes aplicativos permitem que os usuários do grupo compartilhem ativos, interajam por meio de bate-papo e agendem eventos no calendário da equipe. Estes aplicativos também podem automatizar a criação de equipes, canais e conversas, aumentando o valor do Microsoft Teams.
 
-Você pode criar sites da web, serviços e aplicativos na plataforma nativa que são executados fora da experiência de usuário do Microsoft Teams, e chamar a API do Teams para automatizar cenários do Teams.
+Você pode criar sites, serviços e aplicativos de plataforma nativa que são executados fora da experiência do usuário do Microsoft Teams e chamar a API do Teams para automatizar os cenários do Teams.
 
 **Tipos de aplicativos habilitados para o Microsoft Teams**
 
@@ -74,7 +74,7 @@ As APIs do Microsoft Teams podem melhorar os aplicativos dentro e fora do Teams:
 | [Conectores](/microsoftteams/platform/concepts/connectors/connectors) |Postam atualizações de serviços externos para canais.|
 | [Mensagens Acionáveis](/microsoftteams/platform/concepts/cards/cards) |Adicionam interação aprimorada aos cartões do conector.|
 | [Extensões de Mensagens](/microsoftteams/platform/concepts/messaging-extensions) |Permitem que os usuários consultem e compartilhem informações em conversas.|
-|Sites| Exibem conteúdo aprimorado em suas páginas da Web.|
+|Sites| Exibir conteúdo aprimorado em suas páginas da web.|
 |Serviços|Aprimoram seus aplicativos de cliente com dados do Microsoft Graph por meio do seu serviço Web.|
 | [Feed de atividades](/microsoftteams/platform/concepts/activity-feed)|Envolve os usuários por meio de notificações do feed.|
 | [Chamadas e reuniões online (visualização)](/graph/api/resources/communications-api-overview) |Crie aplicativos do Microsoft Teams usando bots podem iniciar e participar de chamadas de áudio/vídeo, rotear/transferir chamadas com base em fluxos de resposta de voz interativa (IVR) e participe de reuniões online.|

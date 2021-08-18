@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 80d2638a6e51c56968e5bcbaab42a616fed33a58
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: 52801d49d11d25817317a88368d9db9318678068
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51145954"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58263244"
 ---
 # <a name="list-depiosenrollmentprofiles"></a>Listar depIOSEnrollmentProfiles
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -65,7 +65,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2414
+Content-Length: 2662
 
 {
   "value": [
@@ -125,7 +125,12 @@ Content-Length: 2414
       "passCodeDisabled": true,
       "zoomDisabled": true,
       "restoreCompletedScreenDisabled": true,
-      "updateCompleteScreenDisabled": true
+      "updateCompleteScreenDisabled": true,
+      "forceTemporarySession": true,
+      "temporarySessionTimeoutInSeconds": 0,
+      "userSessionTimeoutInSeconds": 11,
+      "passcodeLockGracePeriodInSeconds": 0,
+      "carrierActivationUrl": "https://example.com/carrierActivationUrl/"
     }
   ]
 }

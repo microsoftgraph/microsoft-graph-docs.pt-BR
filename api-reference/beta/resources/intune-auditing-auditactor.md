@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 01dd1df7e273e9ef2bbd6fabb9a0ea0203e5347f
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 4b73edbbaf73c93b6df3c90a3b42b51a80350467298980069cdf16d4da04e585
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49295534"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54240019"
 ---
 # <a name="auditactor-resource-type"></a>Tipo de recurso auditActor
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -25,17 +25,17 @@ Uma classe que contém as propriedades para Ator de auditoria.
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|tipo|String|Tipo de ator.|
+|type|Cadeia de caracteres|Tipo de ator.|
 |userPermissions|Conjunto de cadeia de caracteres|Lista de permissões de usuário de quando a auditoria foi executada.|
 |ApplicationId|Cadeia de caracteres|ID do aplicativo AAD.|
 |applicationDisplayName|Cadeia de caracteres|Nome do aplicativo.|
-|userPrincipalName|String|Nome principal do usuário (UPN).|
+|userPrincipalName|Cadeia de caracteres|Nome principal do usuário (UPN).|
 |servicePrincipalName|Cadeia de caracteres|Nome da entidade de serviço (SPN).|
 |ipAddress|Cadeia de caracteres|IPAddress.|
 |userId|Cadeia de caracteres|ID do usuário.|
-|userRoleScopeTags|coleção [roleScopeTagInfo](../resources/intune-auditing-rolescopetaginfo.md)|Lista de marcas de escopo de usuário quando a auditoria foi realizada.|
-|remoteTenantId|String|ID de locatário remoto|
-|remoteUserId|String|ID de usuário remoto|
+|userRoleScopeTags|[Coleção roleScopeTagInfo](../resources/intune-auditing-rolescopetaginfo.md)|Lista de marcas de escopo do usuário quando a auditoria foi realizada.|
+|remoteTenantId|Cadeia de caracteres|ID de locatário remoto|
+|remoteUserId|Cadeia de caracteres|ID do usuário remoto|
 
 ## <a name="relationships"></a>Relações
 Nenhum

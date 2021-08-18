@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3245d4a22a84ab0dea72146f7724cfdd83a88c9b
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: c8befb67a265066cd645cd2f4d45e193e0574be3
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51125279"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58253527"
 ---
 # <a name="create-deviceandappmanagementassignmentfilter"></a>Criar deviceAndAppManagementAssignmentFilter
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -57,10 +57,10 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar deviceAn
 |createdDateTime|DateTimeOffset|Hora de criação do Filtro de Atribuição.|
 |lastModifiedDateTime|DateTimeOffset|Última hora modificada do Filtro de Atribuição.|
 |displayName|Cadeia de caracteres|DisplayName do Filtro de Atribuição.|
-|descrição|Cadeia de caracteres|Descrição do Filtro de Atribuição.|
-|plataforma|[devicePlatformType](../resources/intune-shared-deviceplatformtype.md)|Tipo de plataforma dos dispositivos nos quais o Filtro de Atribuição será aplicável. Os valores possíveis são: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `unknown`.|
+|description|Cadeia de caracteres|Descrição do Filtro de Atribuição.|
+|plataforma|[devicePlatformType](../resources/intune-policyset-deviceplatformtype.md)|Tipo de plataforma dos dispositivos nos quais o Filtro de Atribuição será aplicável. Os valores possíveis são: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `unknown`.|
 |rule|Cadeia de caracteres|Definição de regra do Filtro de Atribuição.|
-|roleScopeTags|Coleção de cadeias de caracteres|RoleScopeTags do Filtro de Atribuição.|
+|roleScopeTags|String collection|RoleScopeTags do Filtro de Atribuição.|
 
 
 
