@@ -1,18 +1,18 @@
 ---
-title: Excluir securityBaselineCategoryStateSummary
-description: Exclui um securityBaselineCategoryStateSummary.
+title: Atualizar deviceManagementReports
+description: Atualize as propriedades de um objeto deviceManagementReports.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 1b1670477bcd96e960a604a320f889cd46c9e589a6a60556530029b666ec4f13
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 78e04697943e6ca1bc09f17539f70ddd4c78ebaf
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54188425"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58263335"
 ---
-# <a name="delete-securitybaselinecategorystatesummary"></a>Excluir securityBaselineCategoryStateSummary
+# <a name="update-devicemanagementreports"></a>Atualizar deviceManagementReports
 
 Namespace: microsoft.graph
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Exclui um [securityBaselineCategoryStateSummary](../resources/intune-deviceintent-securitybaselinecategorystatesummary.md).
+Atualize as propriedades de [um objeto deviceManagementReports.](../resources/intune-grouppolicy-devicemanagementreports.md)
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -37,7 +37,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 }
 -->
 ``` http
-DELETE /deviceManagement/templates/{deviceManagementTemplateId}/microsoft.graph.securityBaselineTemplate/categoryDeviceStateSummaries/{securityBaselineCategoryStateSummaryId}
+PATCH /deviceManagement/reports
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -47,23 +47,44 @@ DELETE /deviceManagement/templates/{deviceManagementTemplateId}/microsoft.graph.
 |Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
-Não forneça um corpo de solicitação para esse método.
+No corpo da solicitação, fornece uma representação JSON para o [objeto deviceManagementReports.](../resources/intune-grouppolicy-devicemanagementreports.md)
+
+A tabela a seguir mostra as propriedades que são necessárias ao criar [deviceManagementReports](../resources/intune-grouppolicy-devicemanagementreports.md).
+
+|Propriedade|Tipo|Descrição|
+|:---|:---|:---|
+|id|Cadeia de caracteres|Identificador exclusivo dessa entidade|
+
+
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um código de resposta `204 No Content`.
+Se tiver êxito, este método retornará um código de resposta e um `200 OK` [objeto deviceManagementReports](../resources/intune-grouppolicy-devicemanagementreports.md) atualizado no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
 ### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
 ``` http
-DELETE https://graph.microsoft.com/beta/deviceManagement/templates/{deviceManagementTemplateId}/microsoft.graph.securityBaselineTemplate/categoryDeviceStateSummaries/{securityBaselineCategoryStateSummaryId}
+PATCH https://graph.microsoft.com/beta/deviceManagement/reports
+Content-type: application/json
+Content-length: 65
+
+{
+  "@odata.type": "#microsoft.graph.deviceManagementReports"
+}
 ```
 
 ### <a name="response"></a>Resposta
 Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 ``` http
-HTTP/1.1 204 No Content
+HTTP/1.1 200 OK
+Content-Type: application/json
+Content-Length: 114
+
+{
+  "@odata.type": "#microsoft.graph.deviceManagementReports",
+  "id": "d6a697d3-97d3-d6a6-d397-a6d6d397a6d6"
+}
 ```
 
 

@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: abfc5532d22a60c8bbd4cb6423ed59ef24047716
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: cf7ce703b19e087f43096631822cae2c20336e5fc65984c0a46b97cb77fea114
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49261306"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54142201"
 ---
 # <a name="androidforworkenrollmentprofile-resource-type"></a>Tipo de recurso androidForWorkEnrollmentProfile
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -37,9 +37,9 @@ Perfil de registro usado para registrar dispositivos COSU usando o Gerenciamento
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |accountId|String|GUID de locatário ao qual o perfil de registro pertence.|
-|id|String|GUID exclusivo do perfil de registro.|
-|displayName|String|Nome de exibição do perfil de registro.|
-|description|String|Descrição do perfil de registro.|
+|id|Cadeia de caracteres|GUID exclusivo do perfil de registro.|
+|displayName|Cadeia de caracteres|Nome de exibição do perfil de registro.|
+|description|Cadeia de caracteres|Descrição do perfil de registro.|
 |createdDateTime|DateTimeOffset|Data e hora de criação do perfil de registro.|
 |lastModifiedDateTime|DateTimeOffset|Data e hora da última modificação do perfil de registro.|
 |tokenValue|String|Valor do token mais recentemente criado para este perfil de registro.|

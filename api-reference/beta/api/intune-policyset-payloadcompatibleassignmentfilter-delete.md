@@ -1,18 +1,18 @@
 ---
-title: Listar telecomExpenseManagementPartners
-description: Lista propriedades e relações dos objetos telecomExpenseManagementPartner.
+title: Excluir payloadCompatibleAssignmentFilter
+description: Exclui um payloadCompatibleAssignmentFilter.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ca04017533fb1a524ddaefc84e30445cafc9a8f270a90400b30726d888b1a5d1
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 719f58e9aad7e27101cf63cb999fb07cf61baed0
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54181430"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58263403"
 ---
-# <a name="list-telecomexpensemanagementpartners"></a>Listar telecomExpenseManagementPartners
+# <a name="delete-payloadcompatibleassignmentfilter"></a>Excluir payloadCompatibleAssignmentFilter
 
 Namespace: microsoft.graph
 
@@ -20,16 +20,16 @@ Namespace: microsoft.graph
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Lista propriedades e relações dos objetos [telecomExpenseManagementPartner](../resources/intune-tem-telecomexpensemanagementpartner.md).
+Exclui um [payloadCompatibleAssignmentFilter](../resources/intune-policyset-payloadcompatibleassignmentfilter.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All|
+|Delegada (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegada (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -37,7 +37,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 }
 -->
 ``` http
-GET /deviceManagement/telecomExpenseManagementPartners
+DELETE /deviceManagement/assignmentFilters/{deviceAndAppManagementAssignmentFilterId}
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -50,36 +50,20 @@ GET /deviceManagement/telecomExpenseManagementPartners
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um código de resposta `200 OK` e uma coleção de objetos [telecomExpenseManagementPartner](../resources/intune-tem-telecomexpensemanagementpartner.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta `204 No Content`.
 
 ## <a name="example"></a>Exemplo
 
 ### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
 ``` http
-GET https://graph.microsoft.com/beta/deviceManagement/telecomExpenseManagementPartners
+DELETE https://graph.microsoft.com/beta/deviceManagement/assignmentFilters/{deviceAndAppManagementAssignmentFilterId}
 ```
 
 ### <a name="response"></a>Resposta
 Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 ``` http
-HTTP/1.1 200 OK
-Content-Type: application/json
-Content-Length: 358
-
-{
-  "value": [
-    {
-      "@odata.type": "#microsoft.graph.telecomExpenseManagementPartner",
-      "id": "47a3b399-b399-47a3-99b3-a34799b3a347",
-      "displayName": "Display Name value",
-      "url": "Url value",
-      "appAuthorized": true,
-      "enabled": true,
-      "lastConnectionDateTime": "2016-12-31T23:58:36.6670033-08:00"
-    }
-  ]
-}
+HTTP/1.1 204 No Content
 ```
 
 

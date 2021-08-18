@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: abd243eb77d39a09aa128161d806f4f41994293a
-ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
+ms.openlocfilehash: 61a485c19544682b86f939c0e3745db528057efa
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "52665674"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58262337"
 ---
 # <a name="list-aospdeviceownercompliancepolicies"></a>Listar aospDeviceOwnerCompliancePolicies
 
@@ -27,8 +27,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta corporativa ou de estudante)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -65,7 +65,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 870
+Content-Length: 917
 
 {
   "value": [
@@ -83,6 +83,7 @@ Content-Length: 870
       "osMinimumVersion": "Os Minimum Version value",
       "osMaximumVersion": "Os Maximum Version value",
       "minAndroidSecurityPatchLevel": "Min Android Security Patch Level value",
+      "securityBlockJailbrokenDevices": true,
       "passwordRequired": true,
       "passwordRequiredType": "required",
       "passwordMinutesOfInactivityBeforeLock": 5,

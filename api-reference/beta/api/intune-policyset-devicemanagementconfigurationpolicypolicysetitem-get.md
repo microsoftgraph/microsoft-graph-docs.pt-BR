@@ -1,18 +1,18 @@
 ---
-title: Listar androidForWorkEnrollmentProfiles
-description: Listar propriedades e relações dos objetos androidForWorkEnrollmentProfile.
+title: Obter deviceManagementConfigurationPolicyPolicySetItem
+description: Leia propriedades e relações do objeto deviceManagementConfigurationPolicyPolicySetItem.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6e1973947cacad804a964b1ec2ba757ef1b78337d9a50317a88b5481859487e1
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: e3e78526860e76d9ef1b529395922750289eb67e
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54186668"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58263289"
 ---
-# <a name="list-androidforworkenrollmentprofiles"></a>Listar androidForWorkEnrollmentProfiles
+# <a name="get-devicemanagementconfigurationpolicypolicysetitem"></a>Obter deviceManagementConfigurationPolicyPolicySetItem
 
 Namespace: microsoft.graph
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Listar propriedades e relações dos objetos [androidForWorkEnrollmentProfile](../resources/intune-androidforwork-androidforworkenrollmentprofile.md).
+Leia propriedades e relações do [objeto deviceManagementConfigurationPolicyPolicySetItem.](../resources/intune-policyset-devicemanagementconfigurationpolicypolicysetitem.md)
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -37,8 +37,11 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 }
 -->
 ``` http
-GET /deviceManagement/androidForWorkEnrollmentProfiles
+GET /deviceAppManagement/policySets/{policySetId}/items/{policySetItemId}
 ```
+
+## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
+Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 |Cabeçalho|Valor|
@@ -50,14 +53,14 @@ GET /deviceManagement/androidForWorkEnrollmentProfiles
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um código de resposta `200 OK` e uma coleção de objetos [androidForWorkEnrollmentProfile](../resources/intune-androidforwork-androidforworkenrollmentprofile.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e um `200 OK` [objeto deviceManagementConfigurationPolicyPolicySetItem](../resources/intune-policyset-devicemanagementconfigurationpolicypolicysetitem.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
 ### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
 ``` http
-GET https://graph.microsoft.com/beta/deviceManagement/androidForWorkEnrollmentProfiles
+GET https://graph.microsoft.com/beta/deviceAppManagement/policySets/{policySetId}/items/{policySetItemId}
 ```
 
 ### <a name="response"></a>Resposta
@@ -65,29 +68,23 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 765
+Content-Length: 545
 
 {
-  "value": [
-    {
-      "@odata.type": "#microsoft.graph.androidForWorkEnrollmentProfile",
-      "accountId": "Account Id value",
-      "id": "e6742553-2553-e674-5325-74e6532574e6",
-      "displayName": "Display Name value",
-      "description": "Description value",
-      "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
-      "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
-      "tokenValue": "Token Value value",
-      "tokenExpirationDateTime": "2016-12-31T23:59:54.0590989-08:00",
-      "enrolledDeviceCount": 3,
-      "qrCodeContent": "Qr Code Content value",
-      "qrCodeImage": {
-        "@odata.type": "microsoft.graph.mimeContent",
-        "type": "Type value",
-        "value": "dmFsdWU="
-      }
-    }
-  ]
+  "value": {
+    "@odata.type": "#microsoft.graph.deviceManagementConfigurationPolicyPolicySetItem",
+    "id": "feba655d-655d-feba-5d65-bafe5d65bafe",
+    "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
+    "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
+    "payloadId": "Payload Id value",
+    "itemType": "Item Type value",
+    "displayName": "Display Name value",
+    "status": "validating",
+    "errorCode": "unauthorized",
+    "guidedDeploymentTags": [
+      "Guided Deployment Tags value"
+    ]
+  }
 }
 ```
 

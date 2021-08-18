@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: cd800d6ae8d1e2f1de3ba6ccec82c7a333180ddb
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: d69f52c8b40158851cb239f327d93cf66e563d64b6d3b2cb9b72076e401f5b96
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51152730"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54194018"
 ---
 # <a name="create-compliancemanagementpartner"></a>Criar complianceManagementPartner
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -57,12 +57,12 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar complian
 |lastHeartbeatDateTime|DateTimeOffset|Timestamp de última pulsação depois que o administrador entrou no parceiro de gerenciamento de conformidade|
 |partnerState|[deviceManagementPartnerTenantState](../resources/intune-onboarding-devicemanagementpartnertenantstate.md)|Estado do parceiro desse locatário. Os possíveis valores são: `unknown`, `unavailable`, `enabled`, `terminated`, `rejected`, `unresponsive`.|
 |displayName|Cadeia de caracteres|Nome de exibição de parceiro|
-|macOsOnboarded|Booleano|Parceiro a bordo para dispositivos Mac.|
-|windowsOnboarded|Booleano|Parceiro a bordo para dispositivos Windows.|
-|androidOnboarded|Booleano|Parceiro a bordo para dispositivos Android.|
-|iosOnboarded|Booleano|Parceiro internado para dispositivos ios.|
+|macOsOnboarded|Boolean|Parceiro a bordo para dispositivos Mac.|
+|windowsOnboarded|Boolean|Parceiro integrado para Windows dispositivos.|
+|androidOnboarded|Boolean|Parceiro a bordo para dispositivos Android.|
+|iosOnboarded|Boolean|Parceiro internado para dispositivos ios.|
 |macOsEnrollmentAssignments|[coleção complianceManagementPartnerAssignment](../resources/intune-onboarding-compliancemanagementpartnerassignment.md)|Grupos de usuários que registram dispositivos Mac por meio de parceiros.|
-|windowsEnrollmentAssignments|[coleção complianceManagementPartnerAssignment](../resources/intune-onboarding-compliancemanagementpartnerassignment.md)|Grupos de usuários que registram dispositivos Windows por meio de parceiros.|
+|windowsEnrollmentAssignments|[coleção complianceManagementPartnerAssignment](../resources/intune-onboarding-compliancemanagementpartnerassignment.md)|Grupos de usuários que registram Windows por meio de parceiros.|
 |androidEnrollmentAssignments|[coleção complianceManagementPartnerAssignment](../resources/intune-onboarding-compliancemanagementpartnerassignment.md)|Grupos de usuários que registram dispositivos Android por meio de parceiros.|
 |iosEnrollmentAssignments|[coleção complianceManagementPartnerAssignment](../resources/intune-onboarding-compliancemanagementpartnerassignment.md)|Grupos de usuários que registram dispositivos ios por meio de parceiros.|
 

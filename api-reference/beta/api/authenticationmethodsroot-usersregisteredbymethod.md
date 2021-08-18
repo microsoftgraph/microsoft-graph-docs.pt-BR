@@ -5,12 +5,12 @@ author: danielwood95
 localization_priority: Normal
 ms.prod: identity-and-access-reports
 doc_type: apiPageType
-ms.openlocfilehash: 5cccef1ba35edbb3eb947cee90fb70c05ff19389
-ms.sourcegitcommit: b8b0e88b3ba9a434dc45f5ab640cb46f66fae299
+ms.openlocfilehash: 71c6274cb2e898a5047dcdaf71dadd6aac1012c0
+ms.sourcegitcommit: 22bd45d272681658d46a8b99af3c3eabc7b05cb1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "52473455"
+ms.lasthandoff: 08/18/2021
+ms.locfileid: "58384349"
 ---
 # <a name="authenticationmethodsroot-usersregisteredbymethod"></a>authenticationMethodsRoot: usersRegisteredByMethod
 Namespace: microsoft.graph
@@ -19,12 +19,12 @@ Namespace: microsoft.graph
 
 Obter o número de usuários registrados para cada método de autenticação.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|AuditLogs.Read.All|
+|Delegado (conta corporativa ou de estudante)|AuditLog.Read.All|
 |Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|Sem suporte.|
 
@@ -34,7 +34,7 @@ Para acessar a API, uma [das seguintes funções](/azure/active-directory/users-
 * Leitor de segurança
 * Administrador de segurança
 * Leitor global
-* Administração global
+* Administrador global
 
 ## <a name="http-request"></a>Solicitação HTTP
 
