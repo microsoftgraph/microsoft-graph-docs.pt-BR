@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: af94dc0e6e9a2c2cef30a177509bf32f50faa3ae
-ms.sourcegitcommit: 486fe9c77d4d89c5416bb83e8c716e6918c47370
+ms.openlocfilehash: 3f16f5f92f85beff3c97a0e85f39f0e05f47cd0b
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53439865"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58260599"
 ---
 # <a name="create-educationassignmentresource"></a>Criar educationAssignmentResource
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 Criar um [recurso de atribuição](../resources/educationassignmentresource.md). O recurso em si tem um @odata.type para indicar qual tipo de recurso está sendo criado. Observe que os recursos baseados em arquivo devem primeiro ser carregados para as atribuições **resourceFolder**.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
@@ -64,7 +64,7 @@ Content-length: 212
   "resource": {
     "displayName": "Bing",
     "link": "https://www.bing.com",
-    "@odata.type": "#microsoft.education.assignments.api.educationLinkResource"
+    "@odata.type": "#microsoft.graph.educationLinkResource"
   }
 }
 ```
@@ -91,7 +91,7 @@ Content-length: 229
   "resource": {
     "displayName": "Bing",
     "link": "https://www.bing.com",
-    "@odata.type": "#microsoft.education.assignments.api.educationLinkResource"
+    "@odata.type": "#microsoft.graph.educationLinkResource"
   }
 }
 ```

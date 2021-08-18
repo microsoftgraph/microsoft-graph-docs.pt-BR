@@ -1,26 +1,27 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 3c2b0abcc90061dca83c5c8e35ff28c49c9f91e9f9314ab2eed0f1380120a953
+ms.openlocfilehash: c5dfebd63a0483dce58c49e5c8543bbba4a0acbd9979f852dbe8ee24c91ccf4a
 ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 08/05/2021
-ms.locfileid: "57157009"
+ms.locfileid: "57406920"
 ---
 ```objc
 
 MSHTTPClient *httpClient = [MSClientFactory createHTTPClientWithAuthenticationProvider:authenticationProvider];
 
-NSString *MSGraphBaseURL = @"https://graph.microsoft.com/beta/";
-NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/education/classes/11021/assignments/19002/submissions"]]];
+NSString *MSGraphBaseURL = @"https://graph.microsoft.com/v1.0/";
+NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/applications?$search=%22displayName:Web%22&$count=true"]]];
 [urlRequest setHTTPMethod:@"GET"];
+[urlRequest setValue:@"eventual" forHTTPHeaderField:@"ConsistencyLevel"];
 
 MSURLSessionDataTask *meDataTask = [httpClient dataTaskWithRequest:urlRequest 
     completionHandler: ^(NSData *data, NSURLResponse *response, NSError *nserror) {
 
         NSError *jsonError = nil;
         MSCollection *collection = [[MSCollection alloc] initWithData:data error:&jsonError];
-        MSGraphEducationSubmission *educationSubmission = [[MSGraphEducationSubmission alloc] initWithDictionary:[[collection value] objectAtIndex: 0] error:&nserror];
+        MSGraphApplication *application = [[MSGraphApplication alloc] initWithDictionary:[[collection value] objectAtIndex: 0] error:&nserror];
 
 }];
 

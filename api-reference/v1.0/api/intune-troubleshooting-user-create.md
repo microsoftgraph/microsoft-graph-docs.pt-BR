@@ -1,35 +1,33 @@
 ---
-title: Excluir importedDeviceIdentityResult
-description: Exclui um importedDeviceIdentityResult.
+title: Criar usuário
+description: Criar um novo objeto user.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3f37afa888065c8a09100454e8988af5be5b9f995b5b6c5b2a06760f53126005
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: c58c3893a0ba41efcc9252a5ff9ad5934279ec9e
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54127604"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58258809"
 ---
-# <a name="delete-importeddeviceidentityresult"></a>Excluir importedDeviceIdentityResult
+# <a name="create-user"></a>Criar usuário
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
-
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Exclui um [importedDeviceIdentityResult](../resources/intune-enrollment-importeddeviceidentityresult.md).
+Criar um novo objeto [user](../resources/intune-troubleshooting-user.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All|
+|Delegada (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All|
 |Delegada (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementServiceConfig.ReadWrite.All|
+|Aplicativo|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -37,7 +35,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 }
 -->
 ``` http
-DELETE /deviceManagement/importedDeviceIdentities/{importedDeviceIdentityId}
+POST /users
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -47,23 +45,44 @@ DELETE /deviceManagement/importedDeviceIdentities/{importedDeviceIdentityId}
 |Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
-Não forneça um corpo de solicitação para esse método.
+No corpo da solicitação, forneça uma representação JSON do objeto user.
+
+A tabela a seguir mostra as propriedades que são necessárias ao criar user.
+
+|Propriedade|Tipo|Descrição|
+|:---|:---|:---|
+|id|Cadeia de caracteres|O identificador exclusivo do usuário.|
+
+
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um código de resposta `204 No Content`.
+Se tiver êxito, este método retornará um código de resposta `201 Created` e um objeto [user](../resources/intune-troubleshooting-user.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
 ### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
 ``` http
-DELETE https://graph.microsoft.com/beta/deviceManagement/importedDeviceIdentities/{importedDeviceIdentityId}
+POST https://graph.microsoft.com/v1/users
+Content-type: application/json
+Content-length: 46
+
+{
+  "@odata.type": "#microsoft.graph.user"
+}
 ```
 
 ### <a name="response"></a>Resposta
 Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 ``` http
-HTTP/1.1 204 No Content
+HTTP/1.1 201 Created
+Content-Type: application/json
+Content-Length: 95
+
+{
+  "@odata.type": "#microsoft.graph.user",
+  "id": "d36894ae-94ae-d368-ae94-68d3ae9468d3"
+}
 ```
 
 

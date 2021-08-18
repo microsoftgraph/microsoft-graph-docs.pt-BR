@@ -5,12 +5,12 @@ author: dipakboyed
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: cdd4cb3814900f41f7cb7ee5ede407af61e9c4d7
-ms.sourcegitcommit: 3f40fbb953b14c1f52341786569c678adfc5bd3e
+ms.openlocfilehash: d13626996917160bdb2b9cb60b67750fe6a89f2f
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52781062"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58255590"
 ---
 # <a name="educationassignmentdefaults-resource-type"></a>Tipo de recurso educationAssignmentDefaults
 
@@ -30,9 +30,9 @@ Especifica os padrões de nível de classe respeitados por novas atribuições c
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |addedStudentAction|educationAddedStudentAction|Comportamento padrão no nível de classe para lidar com alunos que são adicionados após a publicação da atribuição. Os valores possíveis são: `none` e `assignIfOpen`.|
-|addToCalendarAction| educationAddToCalendarOptions|Campo opcional para controlar a adição de atribuições aos calendários dos alunos e professores quando a atribuição for publicada. Os valores possíveis são: `studentsAndPublisher`, `studentsAndTeamOwners`, `none`. O valor padrão é `none`.|
+|addToCalendarAction| educationAddToCalendarOptions|Campo opcional para controlar a adição de atribuições aos calendários dos alunos e professores quando a atribuição for publicada. Os valores possíveis são: `studentsAndPublisher` e `studentsAndTeamOwners` . |
 |dueTime|TimeOfDay|Valor padrão de nível de classe para o campo de tempo de vencimento. O valor padrão é `23:59:00`.|
-|notificationChannelUrl|String|Canal Teams padrão para o qual as notificações serão enviadas. O valor padrão é `null`.|
+|notificationChannelUrl|Cadeia de caracteres|Canal Teams padrão para o qual as notificações serão enviadas. O valor padrão é `null`.|
 
 ## <a name="relationships"></a>Relações
 Nenhum

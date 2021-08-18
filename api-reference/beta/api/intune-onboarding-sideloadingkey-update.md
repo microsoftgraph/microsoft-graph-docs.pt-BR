@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 65ae9cfcb7fd2d66c8b56108929a284f26d840fa
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: 1bb6afcb77f9cdb2dd09244723e5bebc2c8c7537356488d8531b0828505a9cea
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51152667"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54133723"
 ---
 # <a name="update-sideloadingkey"></a>Atualizar sideLoadingKey
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -56,7 +56,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [o sideL
 |id|Cadeia de caracteres|ID exclusiva da chave de carregamento lateral.|
 |value|Cadeia de caracteres|Side Loading Key Value, it is 5x5 value, seperated by hiphens.|
 |displayName|Cadeia de caracteres|Side Loading Key Name displayed to the ITPro Admins.|
-|descrição|Cadeia de caracteres|Descrição da Chave de Carregamento lateral exibida para os administradores do ITPro..|
+|description|Cadeia de caracteres|Descrição da Chave de Carregamento lateral exibida para os administradores do ITPro..|
 |totalActivation|Int32|Side Loading Key Total Activation displayed to the ITPro Admins.|
 |lastUpdatedDateTime|Cadeia de caracteres|Side Loading Key Last Updated Date displayed to the ITPro Admins.|
 
