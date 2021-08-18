@@ -5,16 +5,16 @@ localization_priority: Priority
 ms.prod: sharepoint
 doc_type: conceptualPageType
 author: JeremyKelley
-ms.openlocfilehash: d986ca63d3508ec9450b0477b1e5abbbc44915e8
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: c21b2f23b260051aadc663ad915ec1e1853c37f54bd1b93c0241f67f4dbd681e
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47973663"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54131091"
 ---
 # <a name="working-with-sharepoint-sites-in-microsoft-graph"></a>Trabalhar com sites do SharePoint no Microsoft Graph
 
-A API do SharePoint no Microsoft Graph suporta os seguintes cenários principais:
+A API do SharePoint no Microsoft Graph oferece suporte aos seguintes cenários principais:
 
 * Acesso aos **sites**, **lists** e **drives** do SharePoint (bibliotecas de documentos)
 * Suporte somente leitura para recursos de **site** (nenhuma capacidade de criar novos sites)

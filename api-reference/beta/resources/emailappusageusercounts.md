@@ -5,12 +5,12 @@ localization_priority: Normal
 author: sarahwxy
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 5630b239f9fb8d887e857993268a45c9d0e0d3b4
-ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
+ms.openlocfilehash: 811df58d494cfb8ccfc8d8a3d84383bbbb3c816a0bc815f7d3ce778785195b92
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49981833"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54122758"
 ---
 # <a name="emailappusageusercounts-resource-type"></a>Tipo de recurso emailAppUsageUserCounts
 

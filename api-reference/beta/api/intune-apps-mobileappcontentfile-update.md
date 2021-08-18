@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 92beb4907c47548634422816425ee10d98fbbcb2
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: c4dbf1d310b2e1010df8b543347bd8b9200d980af2c6093d809ed5b07a3d9c3f
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51143231"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54186621"
 ---
 # <a name="update-mobileappcontentfile"></a>Atualizar mobileAppContentFile
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -63,8 +63,8 @@ A tabela a seguir mostra as propriedades obrigatórias ao criar [mobileAppConten
 |azureStorageUriExpirationDateTime|DateTimeOffset|A hora de expiração do URI do armazenamento do Azure.|
 |manifest|Binária|As informações do manifesto.|
 |uploadState|[mobileAppContentFileUploadState](../resources/intune-apps-mobileappcontentfileuploadstate.md)|O estado da solicitação de carregamento atual. Os valores possíveis são: `success`, `transientError`, `error`, `unknown`, `azureStorageUriRequestSuccess`, `azureStorageUriRequestPending`, `azureStorageUriRequestFailed`, `azureStorageUriRequestTimedOut`, `azureStorageUriRenewalSuccess`, `azureStorageUriRenewalPending`, `azureStorageUriRenewalFailed`, `azureStorageUriRenewalTimedOut`, `commitFileSuccess`, `commitFilePending`, `commitFileFailed`, `commitFileTimedOut`.|
-|isFrameworkFile|Booleano|Um valor que indica se o arquivo é um arquivo de estrutura.|
-|isDependency|Booleano|Se o arquivo de conteúdo é uma dependência do arquivo de conteúdo principal.|
+|isFrameworkFile|Boolean|Um valor que indica se o arquivo é um arquivo de estrutura.|
+|isDependency|Boolean|Se o arquivo de conteúdo é uma dependência do arquivo de conteúdo principal.|
 
 
 

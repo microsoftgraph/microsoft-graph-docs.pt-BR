@@ -1,18 +1,18 @@
 ---
-title: tipo de recurso sharePointActivityUserCounts
+title: Tipo de recurso sharePointActivityUserCounts
 description: Veja a seguir uma representação JSON do recurso.
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
 author: JeremyKelley
-ms.openlocfilehash: 7ca7a7dc047fff602cec25813faad14e95e63819
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 28fd52a5da5ded75beb3713f9d3e39f3ba424c4eab3fa3fd347e61ea0b0c5e66
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47973656"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54190413"
 ---
-# <a name="sharepointactivityusercounts-resource-type"></a>tipo de recurso sharePointActivityUserCounts
+# <a name="sharepointactivityusercounts-resource-type"></a>Tipo de recurso sharePointActivityUserCounts
 
 Namespace: microsoft.graph
 
@@ -21,13 +21,13 @@ Namespace: microsoft.graph
 | Propriedade          | Tipo   |
 | :---------------- | :----- |
 | reportRefreshDate | Data   |
-| visitedPage       | Int64  |
+| visitPage       | Int64  |
 | viewedOrEdited    | Int64  |
-| sincronizados            | Int64  |
+| sincronizado            | Int64  |
 | sharedInternally  | Int64  |
 | sharedExternally  | Int64  |
 | reportDate        | Data   |
-| reportPeriod      | String |
+| reportPeriod      | Cadeia de caracteres |
 
 ## <a name="json-representation"></a>Representação JSON
 

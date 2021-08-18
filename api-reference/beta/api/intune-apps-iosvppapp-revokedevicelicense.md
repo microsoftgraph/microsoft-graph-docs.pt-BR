@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 648677f00c26c4432614eda9ce840b152528a5e4
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: 0297e7642e091f4d9fe262c1565370c4c4161230fdba3f9f20b1677f549deb7f
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51144099"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54125862"
 ---
 # <a name="revokedevicelicense-action"></a>ação revokeDeviceLicense
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -56,7 +56,7 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta ação.
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |managedDeviceId|Cadeia de caracteres|DeviceId para quem a licença de aplicativo atribuída deve ser revogada|
-|notifyManagedDevices|Booleano|Boolean que indica se a notificação de revogação deve ser enviada ao dispositivo|
+|notifyManagedDevices|Boolean|Boolean que indica se a notificação de revogação deve ser enviada ao dispositivo|
 
 
 

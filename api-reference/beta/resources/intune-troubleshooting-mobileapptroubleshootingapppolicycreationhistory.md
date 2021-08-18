@@ -1,26 +1,24 @@
 ---
-title: tipo de recurso mobileAppTroubleshootingAppPolicyCreationHistory
-description: Item de histórico contido no evento de solução de problemas de aplicativo móvel.
+title: Tipo de recurso mobileAppTroubleshootingAppPolicyCreationHistory
+description: Item histórico contido no evento Solução de Problemas de Aplicativo Móvel.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: cb8ef3d71e9e8d80486836f1657df8afc3bc293c
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: d3b3cefea47e18fb33658dd026a6f23323f3c924
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49222168"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58253134"
 ---
-# <a name="mobileapptroubleshootingapppolicycreationhistory-resource-type"></a>tipo de recurso mobileAppTroubleshootingAppPolicyCreationHistory
+# <a name="mobileapptroubleshootingapppolicycreationhistory-resource-type"></a>Tipo de recurso mobileAppTroubleshootingAppPolicyCreationHistory
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
-
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Item de histórico contido no evento de solução de problemas de aplicativo móvel.
+Item histórico contido no evento Solução de Problemas de Aplicativo Móvel.
 
 
 Herda de [mobileAppTroubleshootingHistoryItem](../resources/intune-troubleshooting-mobileapptroubleshootinghistoryitem.md)
@@ -28,10 +26,10 @@ Herda de [mobileAppTroubleshootingHistoryItem](../resources/intune-troubleshooti
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|occurrenceDateTime|DateTimeOffset|Hora em que o item de histórico ocorreu. Herdado de [mobileAppTroubleshootingHistoryItem](../resources/intune-troubleshooting-mobileapptroubleshootinghistoryitem.md)|
-|troubleshootingErrorDetails|[deviceManagementTroubleshootingErrorDetails](../resources/intune-troubleshooting-devicemanagementtroubleshootingerrordetails.md)|Objeto contendo informações detalhadas sobre o erro e sua correção. Herdado de [mobileAppTroubleshootingHistoryItem](../resources/intune-troubleshooting-mobileapptroubleshootinghistoryitem.md)|
-|runState|[runState](../resources/intune-shared-runstate.md)|Status do item. Os valores possíveis são: `unknown`, `success`, `fail`, `scriptError`, `pending`, `notApplicable`.|
-|errorCode|Cadeia de caracteres|Código de erro para a falha, vazio se não houver falha.|
+|occurrenceDateTime|DateTimeOffset|Hora em que o item de histórico ocorreu. Herdado [de mobileAppTroubleshootingHistoryItem](../resources/intune-troubleshooting-mobileapptroubleshootinghistoryitem.md)|
+|troubleshootingErrorDetails|[deviceManagementTroubleshootingErrorDetails](../resources/intune-troubleshooting-devicemanagementtroubleshootingerrordetails.md)|Objeto contendo informações detalhadas sobre o erro e sua correção. Herdado [de mobileAppTroubleshootingHistoryItem](../resources/intune-troubleshooting-mobileapptroubleshootinghistoryitem.md)|
+|runState|[runState](../resources/intune-troubleshooting-runstate.md)|Status do item. Os valores possíveis são: `unknown`, `success`, `fail`, `scriptError`, `pending`, `notApplicable`.|
+|errorCode|Cadeia de caracteres|Código de erro para a falha, vazio se não há falha.|
 
 ## <a name="relationships"></a>Relações
 Nenhum

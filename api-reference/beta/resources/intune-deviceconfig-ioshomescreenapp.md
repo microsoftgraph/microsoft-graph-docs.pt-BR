@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 24c21b6260800250daa768df0684298f3bb142ae
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: adc5e0fbda8234a5044ce72508573494a660c819abb760cc23ab0da757b6b5e4
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50161821"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54142033"
 ---
 # <a name="ioshomescreenapp-resource-type"></a>Tipo de recurso iosHomeScreenApp
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para o uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -28,9 +28,9 @@ Herda de [iosHomeScreenItem](../resources/intune-deviceconfig-ioshomescreenitem.
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|displayName|String|Nome do aplicativo Herdado de [iosHomeScreenItem](../resources/intune-deviceconfig-ioshomescreenitem.md)|
-|bundleID|Cadeia de caracteres|BundleID do aplicativo se isWebClip for false ou a URL de um web clip se isWebClip for verdadeira.|
-|isWebClip|Boolean|Quando verdadeiro, a ID do pacote será tratada como uma URL para um web clip.|
+|displayName|Cadeia de caracteres|Nome do aplicativo Herdado de [iosHomeScreenItem](../resources/intune-deviceconfig-ioshomescreenitem.md)|
+|bundleID|Cadeia de caracteres|BundleID do aplicativo se forWebClip for false ou a URL de um clipe da Web se forWebClip for true.|
+|isWebClip|Boolean|Quando true, a ID do pacote será manipulada como uma URL para um clipe da Web.|
 
 ## <a name="relationships"></a>Relações
 Nenhum
