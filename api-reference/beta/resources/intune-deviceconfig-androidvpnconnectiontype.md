@@ -1,22 +1,22 @@
 ---
-title: Tipo de enum androidVpnConnectionType
+title: Tipo de número androidVpnConnectionType
 description: Tipo de conexão VPN do Android.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: b70bbec4de7c2c2088478aa334ba14ca780c9e75
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: 0c1c1e78fe1ea9e93f7544feee3b07bb92bc2b3bc08b5f8ecd0c5da821802c17
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50161548"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54150476"
 ---
-# <a name="androidvpnconnectiontype-enum-type"></a>Tipo de enum androidVpnConnectionType
+# <a name="androidvpnconnectiontype-enum-type"></a>Tipo de número androidVpnConnectionType
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para o uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -27,13 +27,13 @@ Tipo de conexão VPN do Android.
 |:---|:---|:---|
 |ciscoAnyConnect|0|Cisco AnyConnect.|
 |pulseSecure|1 |Pulse Secure.|
-|f5EdgeClient|2 |Cliente de Borda F5.|
+|f5EdgeClient|2|Cliente de Borda F5.|
 |dellSonicWallMobileConnect|3 |Dell SonicWALL Mobile Connection.|
-|checkPointCapsuleVpn|4 |VPN de Ponto de Verificação de Vpn de Ponto de Verificação.|
+|checkPointCapsuleVpn|4 |Verifique a VPN da Capsula de Ponto.|
 |citrix|5 |Citrix|
-|microsoftTunnel|7 |Túnel da Microsoft.|
-|netMotionMobility|8 |Mobilidade do NetMotion.|
-|microsoftProtect|9 |Proteção da Microsoft.|
+|microsoftTunnel|7 |Microsoft Tunnel.|
+|netMotionMobility|8 |NetMotion Mobility.|
+|microsoftProtect|9 |Microsoft Protect.|
 
 
 

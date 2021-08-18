@@ -5,12 +5,12 @@ author: Alice-at-Microsoft
 localization_priority: Normal
 ms.prod: w10
 doc_type: enumTypes
-ms.openlocfilehash: 70b0dbf8822c46c06cb6ade17e7b0e80c211c60a
-ms.sourcegitcommit: 1b09298649d5606b471b4cbe1055419bbe2fc7e5
+ms.openlocfilehash: ab13ec1222b9d92a0dde46327ab80acd3f81a6e1273da839820510286dd1a0cc
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "52067805"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54203285"
 ---
 # <a name="microsoft-graph-windows-updates-enumeration-values"></a>Valores de enumeração do Microsoft Graph Windows Updates
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph.windowsUpdates
 
 ### <a name="azureaddeviceregistrationerrorreason-values"></a>Valores do azureADDeviceRegistrationErrorReason 
 
-|Member|
+|Membro|
 |:---|
 |invalidGlobalDeviceId|
 |invalidAzureADDeviceId|
@@ -27,7 +27,7 @@ Namespace: microsoft.graph.windowsUpdates
 
 ### <a name="deploymentstatereasonvalue-values"></a>valores deploymentStateReasonValue 
 
-|Member|
+|Membro|
 |:---|
 |scheduledByOfferWindow|
 |offeringByRequest|
@@ -36,7 +36,7 @@ Namespace: microsoft.graph.windowsUpdates
 
 ### <a name="deploymentstatevalue-values"></a>valores deploymentStateValue 
 
-|Member|
+|Membro|
 |:---|
 |agendado|
 |offering|
@@ -46,27 +46,27 @@ Namespace: microsoft.graph.windowsUpdates
 
 ### <a name="equivalentcontentoption-values"></a>valores equivalentContentOption 
 
-|Member|
+|Membro|
 |:---|
-|nenhuma|
+|Nenhuma|
 |latestSecurity|
 
 ### <a name="monitoringaction-values"></a>valores monitoringAction 
 
-|Member|
+|Membro|
 |:---|
 |alertError|
 |pauseDeployment|
 
 ### <a name="monitoringsignal-values"></a>monitoringSignal values 
 
-|Member|
+|Membro|
 |:---|
 |rollback|
 
 ### <a name="qualityupdateclassification-values"></a>valores qualityUpdateClassification 
 
-|Member|
+|Membro|
 |:---|
 |all|
 |security|
@@ -74,15 +74,15 @@ Namespace: microsoft.graph.windowsUpdates
 
 ### <a name="requesteddeploymentstatevalue-values"></a>valores requestedDeploymentStateValue 
 
-|Member|
+|Membro|
 |:---|
-|nenhuma|
+|Nenhuma|
 |pausado|
 |arquivado|
 
 ### <a name="updatecategory-values"></a>valores updateCategory 
 
-|Member|
+|Membro|
 |:---|
 |feature|
 |quality|

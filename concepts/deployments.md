@@ -2,12 +2,12 @@
 title: Implantações de nuvens nacionais
 description: Além de uma rede global de datacenters, os serviços em nuvem da Microsoft estão disponíveis em três nuvens nacionais separadas.
 author: arpitha-dhanapathi
-ms.openlocfilehash: c4df0538c5721e05b09c4c59c3af2fd5aac61a9fb0dcf03e584b35e37cd2883f
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 951e907eca736042cf4684811618d0f5939acc2d
+ms.sourcegitcommit: 22bd45d272681658d46a8b99af3c3eabc7b05cb1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54237548"
+ms.lasthandoff: 08/18/2021
+ms.locfileid: "58384461"
 ---
 # <a name="national-cloud-deployments"></a>Implantações de nuvem nacional
 
@@ -72,28 +72,28 @@ Os seguintes recursos do Microsoft Graph estão geralmente disponíveis no ponto
 
 | Recursos Graph Microsoft | Microsoft Cloud para o Governo dos EUA | Microsoft Cloud China operado pela 21Vianet | Microsoft Cloud Germany |
 | ------------------------ | --------------------------------- | ------------------------------------------ | ----------------------- |
-| Usuários | ✔ | ✔ | ✔ |
-| Grupos | ✔ | ✔ | ✔ |
-| Excel | ✔ | ✔\* | ✔ |
-| OneDrive | ✔ | ✔\* | ✔ |
-| Email do Outlook | ✔ | ✔ | ✔ |
-| Calendário do Outlook | ✔ | ✔ | ✔ |
-| Contatos pessoais | ✔ | ✔ | ✔ |
-| Segurança | ✔ | ✔ | ✔ |
-| SharePoint | ✔ | ✔ | ✔ |
-| Teams | ✔ | ✔ | ✔ |
-| Planner | ✔ | ✔ | ✔ |
-| Relatórios | ➖ | ✔ | ➖ |
-| Contatos organizacionais | ✔ | ➖ | ➖ |
 | Aplicativos | ✔ | ➖ | ➖ |
-| Entidades de serviço | ✔ | ➖ | ➖ |
 | Alterar notificações (Webhooks) | ✔ | ✔ | ✔\* |
 | Consulta delta | ✔ | ✔ | ➖ |
 | Extensões de esquema de diretório | ✔ | ✔ | ➖ |
+| Excel | ✔ | ✔\* | ✔ |
+| Grupos | ✔ | ✔ | ✔ |
+| OneDrive | ✔ | ✔\* | ✔ |
 | Extensões de tipo aberto | ✔ | ➖ | ➖ |
+| Contatos organizacionais | ✔ | ➖ | ➖ |
+| Calendário do Outlook | ✔ | ✔ | ✔ |
+| Email do Outlook | ✔ | ✔ | ✔ |
+| Contatos pessoais | ✔ | ✔ | ✔ |
+| Planner | ✔ | ✔ | ✔ |
+| Relatórios | ➖ | ✔ | ➖ |
 | Pesquisa (Pesquisa da Microsoft) | ➖ | ➖ | ➖ |
-| Saúde e comunicações do serviço | ✔ | ✔ | ✔ |
- 
+| Segurança | ✔ | ✔ | ✔ |
+| Comunicações e Integridade do serviço | ✔ | ✔ | ✔ |
+| Entidades de serviço | ✔ | ➖ | ➖ |
+| SharePoint | ✔ | ✔ | ✔ |
+| Teams | ✔ | ✔ | ✔ |
+| Usuários | ✔ | ✔ | ✔ |
+
 Os seguintes recursos do Microsoft Graph estão disponíveis na visualização (no ponto de extremidade) no Microsoft Cloud China e no Microsoft Cloud Germany (pontos de extremidade V1.0 para esses recursos estão disponíveis somente `/beta` no Microsoft Cloud for US Government):
 
 * Contatos organizacionais

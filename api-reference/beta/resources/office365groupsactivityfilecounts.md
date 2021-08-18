@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: reports
 author: sarahwxy
 doc_type: resourcePageType
-ms.openlocfilehash: 1f4f26e141dc25e1e5e249ad116bc9a988274f18
-ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
+ms.openlocfilehash: f05cf16e1b2e0273aaa62241bbeac3b0d872bf87605e2c852ac2ab28e25f9526
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49981498"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54160860"
 ---
 # <a name="office365groupsactivityfilecounts-resource-type"></a>Tipo de recurso office365GroupsActivityFileCounts
 
@@ -21,10 +21,10 @@ Namespace: microsoft.graph
 | Propriedade          | Tipo   | Descrição                              |
 | :---------------- | :----- | ---------------------------------------- |
 | reportRefreshDate | Data   | A data mais recente do conteúdo.          |
-| total             | Int64  | O número total de arquivos na biblioteca de documentos do SharePoint do grupo. |
-| ativo            | Int64  | O número de arquivos que foram exibidos, editados, compartilhados ou sincronizados na biblioteca de documentos do SharePoint do grupo. |
-| reportDate        | Data   | A data em que vários arquivos estavam ativos no site do SharePoint do grupo. |
-| reportPeriod      | Cadeia de caracteres | O número de dias que o relatório abrange.    |
+| total             | Int64  | O número total de arquivos na biblioteca de documentos SharePoint do grupo. |
+| active            | Int64  | O número de arquivos que foram exibidos, editados, compartilhados ou sincronizados na biblioteca de documentos SharePoint do grupo. |
+| reportDate        | Data   | A data em que vários arquivos estavam ativos no site de SharePoint do grupo. |
+| reportPeriod      | Cadeia de caracteres | O número de dias que o relatório aborda.    |
 
 ## <a name="json-representation"></a>Representação JSON
 

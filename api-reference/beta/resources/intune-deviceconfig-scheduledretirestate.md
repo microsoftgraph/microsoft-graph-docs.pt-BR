@@ -1,32 +1,32 @@
 ---
-title: tipo de enumeração scheduledRetireState
-description: 'Cancelar ou confirmar desativação agendada '
+title: Tipo de número scheduledRetireState
+description: 'Cancelar ou confirmar a reforma agendada '
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: fdb4f745f8eeee059326135319f50277a9cf3721
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 7cd5ef1f5aa4c6e83ba9299569e2012f4bdd1abca0609d7a2ca22e20299ccd9b
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49293875"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54198210"
 ---
-# <a name="scheduledretirestate-enum-type"></a>tipo de enumeração scheduledRetireState
+# <a name="scheduledretirestate-enum-type"></a>Tipo de número scheduledRetireState
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Cancelar ou confirmar desativação agendada 
+Cancelar ou confirmar a reforma agendada 
 
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|cancelRetire|,0|Cancelar a desativação.|
-|comfirmRetire|1|Desative esses dispositivos.|
+|cancelRetire|0|Cancele a reforma.|
+|comfirmRetire|1 |Retire esses dispositivos.|
 
 
 

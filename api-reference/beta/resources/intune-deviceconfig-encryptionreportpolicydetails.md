@@ -1,32 +1,32 @@
 ---
-title: tipo de recurso encryptionReportPolicyDetails
-description: Detalhes da política para o relatório de criptografia
+title: Tipo de recurso encryptionReportPolicyDetails
+description: Detalhes da política para relatório de criptografia
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 874af3d0bf98cbfc5884a4f3387eb8d55323acaf
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 84a5f10542db3f2677cda68923eebf1bc2fb4008bfb0ee6a2669fd8be33f6951
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49294575"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54241962"
 ---
-# <a name="encryptionreportpolicydetails-resource-type"></a>tipo de recurso encryptionReportPolicyDetails
+# <a name="encryptionreportpolicydetails-resource-type"></a>Tipo de recurso encryptionReportPolicyDetails
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Detalhes da política para o relatório de criptografia
+Detalhes da política para relatório de criptografia
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|PolicyId|String|ID de política para o relatório de criptografia|
-|policyName|String|Nome da política para o relatório de criptografia|
+|policyId|Cadeia de caracteres|ID de política para relatório de criptografia|
+|policyName|Cadeia de caracteres|Nome da Política para Relatório de Criptografia|
 
 ## <a name="relationships"></a>Relações
 Nenhum
