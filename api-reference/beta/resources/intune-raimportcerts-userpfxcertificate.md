@@ -1,22 +1,22 @@
 ---
-title: tipo de recurso userPFXCertificate
+title: Tipo de recurso userPFXCertificate
 description: Entidade que encapsula todas as informações necessárias para os certificados PFX de um usuário.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 7d893d27a46036b2eb7bc9aa59960b8182aef478
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 9873d6e5a17e356ce166a90107bbf74cf8a341411fa8e741d3b989f684e967bc
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49300952"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54242423"
 ---
-# <a name="userpfxcertificate-resource-type"></a>tipo de recurso userPFXCertificate
+# <a name="userpfxcertificate-resource-type"></a>Tipo de recurso userPFXCertificate
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -25,28 +25,28 @@ Entidade que encapsula todas as informações necessárias para os certificados 
 ## <a name="methods"></a>Métodos
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
-|[Listar userPFXCertificates](../api/intune-raimportcerts-userpfxcertificate-list.md)|coleção [userPFXCertificate](../resources/intune-raimportcerts-userpfxcertificate.md)|Listar Propriedades e relações dos objetos [userPFXCertificate](../resources/intune-raimportcerts-userpfxcertificate.md) .|
-|[Obter userPFXCertificate](../api/intune-raimportcerts-userpfxcertificate-get.md)|[userPFXCertificate](../resources/intune-raimportcerts-userpfxcertificate.md)|Leia as propriedades e as relações do objeto [userPFXCertificate](../resources/intune-raimportcerts-userpfxcertificate.md) .|
-|[Criar userPFXCertificate](../api/intune-raimportcerts-userpfxcertificate-create.md)|[userPFXCertificate](../resources/intune-raimportcerts-userpfxcertificate.md)|Criar um novo objeto [userPFXCertificate](../resources/intune-raimportcerts-userpfxcertificate.md) .|
-|[Excluir userPFXCertificate](../api/intune-raimportcerts-userpfxcertificate-delete.md)|Nenhum|Exclui [userPFXCertificate](../resources/intune-raimportcerts-userpfxcertificate.md).|
-|[Atualizar userPFXCertificate](../api/intune-raimportcerts-userpfxcertificate-update.md)|[userPFXCertificate](../resources/intune-raimportcerts-userpfxcertificate.md)|Atualiza as propriedades de um objeto [userPFXCertificate](../resources/intune-raimportcerts-userpfxcertificate.md) .|
+|[Listar userPFXCertificates](../api/intune-raimportcerts-userpfxcertificate-list.md)|[Coleção userPFXCertificate](../resources/intune-raimportcerts-userpfxcertificate.md)|Listar propriedades e relações dos [objetos userPFXCertificate.](../resources/intune-raimportcerts-userpfxcertificate.md)|
+|[Obter userPFXCertificate](../api/intune-raimportcerts-userpfxcertificate-get.md)|[userPFXCertificate](../resources/intune-raimportcerts-userpfxcertificate.md)|Leia propriedades e relações do [objeto userPFXCertificate.](../resources/intune-raimportcerts-userpfxcertificate.md)|
+|[Criar userPFXCertificate](../api/intune-raimportcerts-userpfxcertificate-create.md)|[userPFXCertificate](../resources/intune-raimportcerts-userpfxcertificate.md)|Crie um novo [objeto userPFXCertificate.](../resources/intune-raimportcerts-userpfxcertificate.md)|
+|[Excluir userPFXCertificate](../api/intune-raimportcerts-userpfxcertificate-delete.md)|Nenhum|Exclui um [userPFXCertificate](../resources/intune-raimportcerts-userpfxcertificate.md).|
+|[Atualizar userPFXCertificate](../api/intune-raimportcerts-userpfxcertificate-update.md)|[userPFXCertificate](../resources/intune-raimportcerts-userpfxcertificate.md)|Atualize as propriedades de [um objeto userPFXCertificate.](../resources/intune-raimportcerts-userpfxcertificate.md)|
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Identificador exclusivo do certificado PFX.|
-|identificação|String|Impressão digital SHA-1 do certificado PFX.|
-|Da intendedpurpose|[userPfxIntendedPurpose](../resources/intune-raimportcerts-userpfxintendedpurpose.md)|Finalidade do certificado do ponto de vista da implantação. Os valores possíveis são: `unassigned`, `smimeEncryption`, `smimeSigning`, `vpn`, `wifi`.|
-|userPrincipalName|String|Nome principal de usuário do certificado PFX.|
+|id|Cadeia de caracteres|Identificador exclusivo do certificado PFX.|
+|thumbprint|Cadeia de caracteres|Impressão digital SHA-1 do certificado PFX.|
+|intendedPurpose|[userPfxIntendedPurpose](../resources/intune-raimportcerts-userpfxintendedpurpose.md)|Finalidade pretendido do certificado do ponto de vista da implantação. Os valores possíveis são: `unassigned`, `smimeEncryption`, `smimeSigning`, `vpn`, `wifi`.|
+|userPrincipalName|Cadeia de caracteres|Nome principal do usuário do certificado PFX.|
 |startDateTime|DateTimeOffset|Data/hora de início da validade do certificado.|
 |expirationDateTime|DateTimeOffset|Data/hora de validade do certificado.|
-|providerName|String|Provedor de criptografia usado para criptografar este BLOB.|
-|keyName|String|Nome da chave (dentro do provedor) usada para criptografar o blob.|
+|providerName|Cadeia de caracteres|Provedor de criptografia usado para criptografar esse blob.|
+|keyName|Cadeia de caracteres|Nome da chave (dentro do provedor) usada para criptografar o blob.|
 |paddingScheme|[userPfxPaddingScheme](../resources/intune-raimportcerts-userpfxpaddingscheme.md)|Esquema de preenchimento usado pelo provedor durante a criptografia/descriptografia. Os possíveis valores são: `none`, `pkcs1`, `oaepSha1`, `oaepSha256`, `oaepSha384`, `oaepSha512`.|
-|encryptedPfxBlob|Binária|Blob PFX criptografado.|
-|encryptedPfxPassword|String|Senha PFX criptografada.|
-|createdDateTime|DateTimeOffset|Data/hora em que este certificado PFX foi importado.|
-|lastModifiedDateTime|DateTimeOffset|Data/hora em que este certificado PFX foi modificado pela última vez.|
+|encryptedPfxBlob|Binário|Blob PFX criptografado.|
+|encryptedPfxPassword|Cadeia de caracteres|Senha PFX criptografada.|
+|createdDateTime|DateTimeOffset|Data/hora em que esse certificado PFX foi importado.|
+|lastModifiedDateTime|DateTimeOffset|Data/hora em que esse certificado PFX foi modificado pela última vez.|
 
 ## <a name="relationships"></a>Relações
 Nenhum

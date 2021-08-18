@@ -5,12 +5,12 @@ author: AkJo
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 29c58d1a3783a6e47351a1bb62c632ad3ca824e9
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: af9c123db8e5bbb4102399f3a849977ae255d1ec
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50958417"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58255899"
 ---
 # <a name="remove-member-from-chat"></a>Remover membro do bate-papo
 Namespace: microsoft.graph
@@ -22,8 +22,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)| ChatMember.ReadWrite.All |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegada (conta corporativa ou de estudante)| ChatMember.ReadWrite |
+|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo| ChatMember.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP

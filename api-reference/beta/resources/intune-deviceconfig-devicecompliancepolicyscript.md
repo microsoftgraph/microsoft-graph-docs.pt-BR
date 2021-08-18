@@ -1,22 +1,22 @@
 ---
-title: tipo de recurso deviceCompliancePolicyScript
+title: Tipo de recurso deviceCompliancePolicyScript
 description: Ainda não documentado
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: f1299848a53ea924278af06a71db9f1554849b53
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 84c625371c4568d78beec0feedf9ad6e911f70fecd2c065815472fe98b6e6ed6
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49216161"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54250018"
 ---
-# <a name="devicecompliancepolicyscript-resource-type"></a>tipo de recurso deviceCompliancePolicyScript
+# <a name="devicecompliancepolicyscript-resource-type"></a>Tipo de recurso deviceCompliancePolicyScript
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -25,8 +25,8 @@ Ainda não documentado
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|deviceComplianceScriptId|String|ID do script de conformidade do dispositivo.|
-|rulesContent|Binária|JSON das regras.|
+|deviceComplianceScriptId|Cadeia de caracteres|ID do script de conformidade do dispositivo.|
+|rulesContent|Binário|Json das regras.|
 
 ## <a name="relationships"></a>Relações
 Nenhum

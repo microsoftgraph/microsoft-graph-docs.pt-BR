@@ -1,37 +1,37 @@
 ---
-title: tipo de recurso windowsEnrollmentStatusScreenSettings
-description: Configuração da tela status do registro
+title: Tipo de recurso windowsEnrollmentStatusScreenSettings
+description: Configuração da tela de status do registro
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0028f432708946ee983316d7702225e05bc5d6d7
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 0f483d4217506aa440df1108c968ba4df83f8fc7f55433e193d4c07388a70ce2
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49288562"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54164213"
 ---
-# <a name="windowsenrollmentstatusscreensettings-resource-type"></a>tipo de recurso windowsEnrollmentStatusScreenSettings
+# <a name="windowsenrollmentstatusscreensettings-resource-type"></a>Tipo de recurso windowsEnrollmentStatusScreenSettings
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Configuração da tela status do registro
+Configuração da tela de status do registro
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|hideInstallationProgress|Booliano|Mostrar ou ocultar o andamento da instalação para o usuário|
-|allowDeviceUseBeforeProfileAndAppInstallComplete|Booliano|Permitir ou bloquear o usuário para usar dispositivo antes da conclusão da instalação de perfil e aplicativo|
-|blockDeviceSetupRetryByUser|Booliano|Permitir que o usuário repita a configuração após a instalação falhar|
-|allowLogCollectionOnInstallFailure|Booliano|Permitir ou bloquear coleta de log na falha de instalação|
-|customErrorMessage|String|Definir uma mensagem de erro personalizada para mostrar após falha da instalação|
-|installProgressTimeoutInMinutes|Int32|Definir o tempo limite de progresso da instalação em minutos|
-|allowDeviceUseOnInstallFailure|Booliano|Permitir que o usuário continue usando o dispositivo em caso de falha de instalação|
+|hideInstallationProgress|Boolean|Mostrar ou ocultar o progresso da instalação para o usuário|
+|allowDeviceUseBeforeProfileAndAppInstallComplete|Boolean|Permitir ou bloquear o usuário para usar o dispositivo antes da conclusão da instalação do perfil e do aplicativo|
+|blockDeviceSetupRetryByUser|Boolean|Permitir que o usuário repetir a instalação na falha de instalação|
+|allowLogCollectionOnInstallFailure|Boolean|Permitir ou bloquear o conjunto de log na falha de instalação|
+|customErrorMessage|Cadeia de caracteres|Definir mensagem de erro personalizada para mostrar após a falha na instalação|
+|installProgressTimeoutInMinutes|Int32|Definir o tempo de tempo de duração da instalação em minutos|
+|allowDeviceUseOnInstallFailure|Boolean|Permitir que o usuário continue usando o dispositivo na falha de instalação|
 
 ## <a name="relationships"></a>Relações
 Nenhum

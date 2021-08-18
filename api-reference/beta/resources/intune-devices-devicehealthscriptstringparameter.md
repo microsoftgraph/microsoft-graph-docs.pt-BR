@@ -1,26 +1,26 @@
 ---
-title: tipo de recurso deviceHealthScriptStringParameter
-description: Propriedades do parâmetro de script de cadeia de caracteres.
+title: Tipo de recurso deviceHealthScriptStringParameter
+description: Propriedades do parâmetro de script String.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: e0515553688e21d63cb52c9883f7da5b7e425b10
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: e08160be229f9be3688df875d884a1c2750d733691ae088b95e852995a7dd42a
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49299370"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54224667"
 ---
-# <a name="devicehealthscriptstringparameter-resource-type"></a>tipo de recurso deviceHealthScriptStringParameter
+# <a name="devicehealthscriptstringparameter-resource-type"></a>Tipo de recurso deviceHealthScriptStringParameter
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Propriedades do parâmetro de script de cadeia de caracteres.
+Propriedades do parâmetro de script String.
 
 
 Herda de [deviceHealthScriptParameter](../resources/intune-devices-devicehealthscriptparameter.md)
@@ -28,11 +28,11 @@ Herda de [deviceHealthScriptParameter](../resources/intune-devices-devicehealths
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|nome|String|O nome do parâmetro herdado de [deviceHealthScriptParameter](../resources/intune-devices-devicehealthscriptparameter.md)|
-|description|String|A descrição do parâmetro herdado de [deviceHealthScriptParameter](../resources/intune-devices-devicehealthscriptparameter.md)|
-|isRequired|Booliano|Se o parâmetro obrigatório é herdado de [deviceHealthScriptParameter](../resources/intune-devices-devicehealthscriptparameter.md)|
-|applyDefaultValueWhenNotAssigned|Booliano|Se aplica DefaultValue quando não atribuído herdado de [deviceHealthScriptParameter](../resources/intune-devices-devicehealthscriptparameter.md)|
-|defaultValue|String|O valor padrão do parâmetro String|
+|nome|Cadeia de caracteres|O nome do param Herdado de [deviceHealthScriptParameter](../resources/intune-devices-devicehealthscriptparameter.md)|
+|description|Cadeia de caracteres|A descrição do param Herdado de [deviceHealthScriptParameter](../resources/intune-devices-devicehealthscriptparameter.md)|
+|isRequired|Booliano|Se o param é necessário Herdado de [deviceHealthScriptParameter](../resources/intune-devices-devicehealthscriptparameter.md)|
+|applyDefaultValueWhenNotAssigned|Boolean|Se aplicar DefaultValue quando não atribuído herdado de [deviceHealthScriptParameter](../resources/intune-devices-devicehealthscriptparameter.md)|
+|defaultValue|Cadeia de caracteres|O valor padrão do param de cadeia de caracteres|
 
 ## <a name="relationships"></a>Relações
 Nenhum

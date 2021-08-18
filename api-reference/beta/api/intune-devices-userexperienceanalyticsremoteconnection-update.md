@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a26b5bfaabe9a10eb77f7f3337138d47db0dea88
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: f761c20909cfd932fd0dbb7971a8a8fda97dc86c
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51159134"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58263986"
 ---
 # <a name="update-userexperienceanalyticsremoteconnection"></a>Atualizar userExperienceAnalyticsRemoteConnection
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -27,9 +27,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All|
+|Delegada (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 |Delegada (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementManagedDevices.ReadWrite.All|
+|Aplicativo|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -58,6 +58,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [o userE
 |deviceName|String|O nome do dispositivo.|
 |modelo|String|O modelo de dispositivo de análise de experiência do usuário.|
 |virtualNetwork|Cadeia de caracteres|A rede virtual de análise de experiência do usuário.|
+|fabricante|String|O fabricante de análise de experiência do usuário.|
 |deviceCount|Int32|A contagem de conexão remota. Valores válidos de 0 a 2147483647|
 |cloudPcRoundTripTime|Duplo|O tempo de dica de ida e volta do dispositivo cloud pc. Valores válidos de 0 a 1,79769313486232E+308|
 |cloudPcSignInTime|Duplo|A hora de entrada do dispositivo cloud pc. Valores válidos de 0 a 1,79769313486232E+308|
@@ -65,6 +66,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [o userE
 |coreBootTime|Duplo|O tempo de inicialização principal do Dispositivo cloud pc. Valores válidos de 0 a 1,79769313486232E+308|
 |coreSignInTime|Duplo|A hora de entrada principal do dispositivo cloud pc. Valores válidos de 0 a 1,79769313486232E+308|
 |cloudPcFailurePercentage|Duplo|A porcentagem de falha de entrada do dispositivo cloud pc. Valores válidos de 0 a 100|
+|userPrincipalName|Cadeia de caracteres|O usuário de análise de experiência do usuárioPrincipalName.|
 
 
 
@@ -78,7 +80,7 @@ Este é um exemplo da solicitação.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsRemoteConnection/{userExperienceAnalyticsRemoteConnectionId}
 Content-type: application/json
-Content-length: 479
+Content-length: 573
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsRemoteConnection",
@@ -86,13 +88,15 @@ Content-length: 479
   "deviceName": "Device Name value",
   "model": "Model value",
   "virtualNetwork": "Virtual Network value",
+  "manufacturer": "Manufacturer value",
   "deviceCount": 11,
   "cloudPcRoundTripTime": 6.666666666666667,
   "cloudPcSignInTime": 5.666666666666667,
   "remoteSignInTime": 5.333333333333333,
   "coreBootTime": 4.0,
   "coreSignInTime": 4.666666666666667,
-  "cloudPcFailurePercentage": 8.0
+  "cloudPcFailurePercentage": 8.0,
+  "userPrincipalName": "User Principal Name value"
 }
 ```
 
@@ -101,7 +105,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 528
+Content-Length: 622
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsRemoteConnection",
@@ -110,13 +114,15 @@ Content-Length: 528
   "deviceName": "Device Name value",
   "model": "Model value",
   "virtualNetwork": "Virtual Network value",
+  "manufacturer": "Manufacturer value",
   "deviceCount": 11,
   "cloudPcRoundTripTime": 6.666666666666667,
   "cloudPcSignInTime": 5.666666666666667,
   "remoteSignInTime": 5.333333333333333,
   "coreBootTime": 4.0,
   "coreSignInTime": 4.666666666666667,
-  "cloudPcFailurePercentage": 8.0
+  "cloudPcFailurePercentage": 8.0,
+  "userPrincipalName": "User Principal Name value"
 }
 ```
 

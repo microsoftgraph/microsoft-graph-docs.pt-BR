@@ -1,22 +1,20 @@
 ---
-title: Tipo de enum windowsAutopilotDeploymentState
+title: Tipo de número windowsAutopilotDeploymentState
 description: Ainda não documentado
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 75d3c9845def01adcde4912ae28590cc5166f96d
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: 036e7395f940275518cc6ad3e75f20116ffced70
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50159026"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58264343"
 ---
-# <a name="windowsautopilotdeploymentstate-enum-type"></a>Tipo de enum windowsAutopilotDeploymentState
+# <a name="windowsautopilotdeploymentstate-enum-type"></a>Tipo de número windowsAutopilotDeploymentState
 
 Namespace: microsoft.graph
-
-> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para o uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -27,8 +25,8 @@ Ainda não documentado
 |:---|:---|:---|
 |desconhecido|0|Ainda não documentado|
 |sucesso|1 |Ainda não documentado|
-|inProgress|2 |Ainda não documentado|
-|falha|3 |Ainda não documentado|
+|inProgress|2|Ainda não documentado|
+|failure|3 |Ainda não documentado|
 |successWithTimeout|4 |Ainda não documentado|
 |notAttempted|5 |Ainda não documentado|
 |desabilitadas|6 |Ainda não documentado|

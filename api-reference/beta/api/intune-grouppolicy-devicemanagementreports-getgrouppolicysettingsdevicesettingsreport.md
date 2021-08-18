@@ -1,18 +1,18 @@
 ---
-title: Listar pfxRecryptionRequests
-description: Listar propriedades e relações dos objetos pfxRecryptionRequest.
+title: ação getGroupPolicySettingsDeviceSettingsReport
+description: Ainda não documentado
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: faa39227496f977d9db51aff5cbc5608c7e8285c53bfaf8e405cdfd659d466bf
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 6707eb2c21e784bc152dd1c03b5259091d2f12da
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54176936"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58263336"
 ---
-# <a name="list-pfxrecryptionrequests"></a>Listar pfxRecryptionRequests
+# <a name="getgrouppolicysettingsdevicesettingsreport-action"></a>ação getGroupPolicySettingsDeviceSettingsReport
 
 Namespace: microsoft.graph
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Listar propriedades e relações dos objetos [pfxRecryptionRequest.](../resources/intune-raimportcerts-pfxrecryptionrequest.md)
+Ainda não documentado
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -37,7 +37,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 }
 -->
 ``` http
-GET /pfxRecryptionRequests
+POST /deviceManagement/reports/getGroupPolicySettingsDeviceSettingsReport
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -47,17 +47,54 @@ GET /pfxRecryptionRequests
 |Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
-Não forneça um corpo de solicitação para esse método.
+No corpo da solicitação, forneça uma representação JSON dos parâmetros.
+
+A tabela a seguir mostra os parâmetros que podem ser usados com esta ação.
+
+|Propriedade|Tipo|Descrição|
+|:---|:---|:---|
+|nome|Cadeia de caracteres|Ainda não documentado|
+|select|String collection|Ainda não documentado|
+|search|String|Ainda não documentado|
+|groupBy|String collection|Ainda não documentado|
+|orderBy|String collection|Ainda não documentado|
+|skip|Int32|Ainda não documentado|
+|top|Int32|Ainda não documentado|
+|sessionId|String|Ainda não documentado|
+|filter|String|Ainda não documentado|
+
+
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um código de resposta e uma coleção de objetos `200 OK` [pfxRecryptionRequest](../resources/intune-raimportcerts-pfxrecryptionrequest.md) no corpo da resposta.
+Se tiver êxito, essa ação retornará `200 OK` um código de resposta e um Stream no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
 ### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
 ``` http
-GET https://graph.microsoft.com/beta/pfxRecryptionRequests
+POST https://graph.microsoft.com/beta/deviceManagement/reports/getGroupPolicySettingsDeviceSettingsReport
+
+Content-type: application/json
+Content-length: 278
+
+{
+  "name": "Name value",
+  "select": [
+    "Select value"
+  ],
+  "search": "Search value",
+  "groupBy": [
+    "Group By value"
+  ],
+  "orderBy": [
+    "Order By value"
+  ],
+  "skip": 4,
+  "top": 3,
+  "sessionId": "Session Id value",
+  "filter": "Filter value"
+}
 ```
 
 ### <a name="response"></a>Resposta
@@ -65,26 +102,10 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 659
+Content-Length: 115
 
 {
-  "value": [
-    {
-      "@odata.type": "#microsoft.graph.pfxRecryptionRequest",
-      "tenantId": "f9882bcd-2bcd-f988-cd2b-88f9cd2b88f9",
-      "userId": "a991071c-071c-a991-1c07-91a91c0791a9",
-      "deviceId": "6de0af45-af45-6de0-45af-e06d45afe06d",
-      "profileId": "6389d896-d896-6389-96d8-896396d88963",
-      "thumbprint": "Thumbprint value",
-      "deviceKeyThumbprint": "Device Key Thumbprint value",
-      "status": 6,
-      "sourceType": 10,
-      "createdTime": "2017-01-01T00:03:18.9597073-08:00",
-      "lastModifiedTime": "2017-01-01T00:03:18.5958204-08:00",
-      "isDeleted": true,
-      "eTag": "ETag value"
-    }
-  ]
+  "value": "Z2V0R3JvdXBQb2xpY3lTZXR0aW5nc0RldmljZVNldHRpbmdzUmVwb3J0IEludHVuZSBEb2MgU2FtcGxlIDYzMDIzNDI3MQ=="
 }
 ```
 

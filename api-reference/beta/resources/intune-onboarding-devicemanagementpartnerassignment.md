@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: f0cda49b654313ec4d69e810033ae681b8ac2645
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: ee082d4d760944d8b2d3ca7fcee9a0f9c4585bda4aa53a94b9f88f8c62778e8b
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50157537"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54224513"
 ---
 # <a name="devicemanagementpartnerassignment-resource-type"></a>Tipo de recurso deviceManagementPartnerAssignment
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para o uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -25,7 +25,7 @@ Direcionamento de grupo de usuários para Parceiro de Gerenciamento de Dispositi
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|destino|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Grupos de usuários voltados para dispositivos a serem inscritos por meio de parceiros.|
+|destino|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Grupos de usuários destinados a dispositivos a serem inscritos por meio do parceiro.|
 
 ## <a name="relationships"></a>Relações
 Nenhum

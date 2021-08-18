@@ -6,12 +6,12 @@ title: AccessAction
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: 1c01a989b56e78beccb09930ac67ba262fa374f5
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 372caa82e979cdb2e76e1ee327119cc0bf607480e6713311cacdf7fc6ba89223
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50945720"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54246308"
 ---
 # <a name="accessaction-resource-type"></a>Tipo de recurso accessAction
 
@@ -21,7 +21,7 @@ Namespace: microsoft.graph
 
 A presença do **recurso accessAction** em um [**itemActivity**][activity] indica que a atividade acessou um item.
 
->**Observação:** No momento, os registros de atividade do Access estão disponíveis apenas no SharePoint e no OneDrive for Business.
+>**Observação:** No momento, os registros de atividades do Access estão disponíveis apenas SharePoint e OneDrive for Business.
 
 [activity]: itemactivity.md
 
@@ -34,7 +34,7 @@ Esse tipo de recurso não tem propriedades.
 <!-- {
   "blockType": "resource",
   "optionalProperties": [ ],
-  "@type": "microsoft.graph.accessAction"
+  "@type&quot;: &quot;microsoft.graph.accessAction"
 }-->
 
 ```json

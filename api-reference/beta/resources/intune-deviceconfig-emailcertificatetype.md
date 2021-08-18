@@ -1,33 +1,33 @@
 ---
-title: tipo de enumeração emailCertificateType
-description: Fontes de certificado com suporte para assinatura e criptografia de email.
+title: Tipo de número emailCertificateType
+description: Fontes de certificados com suporte para assinatura de email e criptografia.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 3d94c2a50542eb4d97a19fdb4ca0e1de2dcabf17
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: db022adb518df4f86f44e01b32cca049ea4480491bbf19acd8bc3b3ea39d4342
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49303304"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54206666"
 ---
-# <a name="emailcertificatetype-enum-type"></a>tipo de enumeração emailCertificateType
+# <a name="emailcertificatetype-enum-type"></a>Tipo de número emailCertificateType
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Fontes de certificado com suporte para assinatura e criptografia de email.
+Fontes de certificados com suporte para assinatura de email e criptografia.
 
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|nenhum|,0|Não use um certificado como fonte.|
-|certificado|1|Usar um certificado para a fonte do certificado.|
-|derivedCredential|duas|Use uma credencial derivada para a fonte do certificado.|
+|Nenhuma|0|Não use um certificado como fonte.|
+|certificado|1 |Use um certificado para a origem do certificado.|
+|derivedCredential|2|Use uma credencial derivada para a origem do certificado.|
 
 
 
