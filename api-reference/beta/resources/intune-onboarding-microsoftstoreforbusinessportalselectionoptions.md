@@ -1,33 +1,33 @@
 ---
-title: tipo de enumeração microsoftStoreForBusinessPortalSelectionOptions
-description: Portal para o qual o administrador sincroniza a Microsoft Store para aplicativos corporativos disponíveis. Isso está disponível no console de administração do Intune.
+title: tipo de número microsoftStoreForBusinessPortalSelectionOptions
+description: Portal para o qual o administrador sincroniza Microsoft Store para Empresas aplicativos. Isso está disponível no Console de Administração do Intune.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: cf384f8e99c3e6d1e3b88b385628cd07204dc38c
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 882d81125ba8313440854b3bca376061bc76ce4c022f90be023d4edd7e8da759
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49307357"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54200492"
 ---
-# <a name="microsoftstoreforbusinessportalselectionoptions-enum-type"></a>tipo de enumeração microsoftStoreForBusinessPortalSelectionOptions
+# <a name="microsoftstoreforbusinessportalselectionoptions-enum-type"></a>tipo de número microsoftStoreForBusinessPortalSelectionOptions
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Portal para o qual o administrador sincroniza a Microsoft Store para aplicativos corporativos disponíveis. Isso está disponível no console de administração do Intune.
+Portal para o qual o administrador sincroniza Microsoft Store para Empresas aplicativos. Isso está disponível no Console de Administração do Intune.
 
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|nenhum|,0|Essa opção não está disponível para a conta|
-|companyPortal|1|Somente portal da empresa do Intune.|
-|privateStore|duas|Somente repositório privado MSFB.|
+|Nenhuma|0|Essa opção não está disponível para a conta|
+|companyPortal|1 |Portal da Empresa do Intune.|
+|privateStore|2|Somente armazenamento particular MSFB.|
 
 
 
