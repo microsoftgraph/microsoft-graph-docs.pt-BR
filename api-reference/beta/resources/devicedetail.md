@@ -5,12 +5,12 @@ localization_priority: Normal
 author: spunukol
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 3fb6b338793b77e3079922cd8c372e402488a22c
-ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
+ms.openlocfilehash: 00859ab80f022464be57b38cc62e9ab1a6c1b5a4444f7d066ffd7c06d84a63e8
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50761125"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54213435"
 ---
 # <a name="devicedetail-resource-type"></a>Tipo de recurso deviceDetail
 
@@ -21,7 +21,7 @@ Namespace: microsoft.graph Indica detalhes do dispositivo associados a um dispos
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|Navegador|Cadeia de Caracteres|Indica as informações do navegador do usado para entrar.|
+|Navegador|Cadeia de caracteres|Indica as informações do navegador do usado para entrar.|
 |deviceId|Cadeia de caracteres|Refere-se à UniqueID do dispositivo usado para entrar.|
 |displayName|Cadeia de caracteres|Refere-se ao nome do dispositivo usado para entrar.|
 |isCompliant|Booliano|Indica se o dispositivo está em conformidade ou não.|

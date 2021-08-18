@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0e17df5baad3df0237218f314cdb1c5ee99f03c6
-ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
+ms.openlocfilehash: a1d8a94e44663bd6070d9b6f9d50a3fed7db9e22d12dcb70bc1cf9400f5342a0
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51868173"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54148054"
 ---
 # <a name="hardwareinformation-resource-type"></a>Tipo de recurso hardwareInformation
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -34,29 +34,29 @@ Informações de hardware de um determinado dispositivo.
 |modelo|String|Modelo do dispositivo|
 |phoneNumber|String|Número de telefone do dispositivo|
 |subscriberCarrier|String|Operadora de assinante do dispositivo|
-|cellularTechnology|Cadeia de Caracteres|Tecnologia celular do dispositivo|
-|wifiMac|Cadeia de Caracteres|Endereço MAC WiFi do dispositivo|
-|operatingSystemLanguage|Cadeia de Caracteres|Idioma do sistema operacional do dispositivo|
+|cellularTechnology|Cadeia de caracteres|Tecnologia celular do dispositivo|
+|wifiMac|Cadeia de caracteres|Endereço MAC WiFi do dispositivo|
+|operatingSystemLanguage|Cadeia de caracteres|Idioma do sistema operacional do dispositivo|
 |isSupervised|Boolean|Modo supervisionado do dispositivo|
 |isEncrypted|Boolean|Status de criptografia do dispositivo|
-|batterySerialNumber|Cadeia de Caracteres|O número de série da bateria atual do dispositivo|
+|batterySerialNumber|Cadeia de caracteres|O número de série da bateria atual do dispositivo|
 |batteryHealthPercentage|Int32|A porcentagem de saúde da bateria atual do dispositivo. Valores válidos de 0 a 100|
 |batteryChargeCycles|Int32|O número de ciclos de carga que a bateria atual do dispositivo passou. Valores válidos de 0 a 2147483647|
-|isSharedDevice|Boolean|IPad compartilhado|
+|isSharedDevice|Boolean|Dados iPad|
 |sharedDeviceCachedUsers|[Coleção sharedAppleDeviceUser](../resources/intune-devices-sharedappledeviceuser.md)|Todos os usuários no dispositivo Apple compartilhado|
-|tpmSpecificationVersion|Cadeia de Caracteres|Cadeia de caracteres que especifica a versão de especificação.|
-|operatingSystemEdition|Cadeia de Caracteres|Cadeia de caracteres que especifica a edição do sistema operacional.|
-|deviceFullQualifiedDomainName|Cadeia de Caracteres|Retorna o nome de domínio totalmente qualificado do dispositivo (se for o caso). Se o dispositivo não for ingressado no domínio, ele retornará uma cadeia de caracteres vazia. |
+|tpmSpecificationVersion|Cadeia de caracteres|Cadeia de caracteres que especifica a versão de especificação.|
+|operatingSystemEdition|Cadeia de caracteres|Cadeia de caracteres que especifica a edição do sistema operacional.|
+|deviceFullQualifiedDomainName|Cadeia de caracteres|Retorna o nome de domínio totalmente qualificado do dispositivo (se for o caso). Se o dispositivo não for ingressado no domínio, ele retornará uma cadeia de caracteres vazia. |
 |deviceGuardVirtualizationBasedSecurityHardwareRequirementState|[deviceGuardVirtualizationBasedSecurityHardwareRequirementState](../resources/intune-devices-deviceguardvirtualizationbasedsecurityhardwarerequirementstate.md)|Status do requisito de hardware de segurança baseado em virtualização. Os valores possíveis são: `meetHardwareRequirements`, `secureBootRequired`, `dmaProtectionRequired`, `hyperVNotSupportedForGuestVM`, `hyperVNotAvailable`.|
 |deviceGuardVirtualizationBasedSecurityState|[deviceGuardVirtualizationBasedSecurityState](../resources/intune-devices-deviceguardvirtualizationbasedsecuritystate.md)|Status de segurança baseado em virtualização. . Os valores possíveis são: `running`, `rebootRequired`, `require64BitArchitecture`, `notLicensed`, `notConfigured`, `doesNotMeetHardwareRequirements`, `other`.|
 |deviceGuardLocalSystemAuthorityCredentialGuardState|[deviceGuardLocalSystemAuthorityCredentialGuardState](../resources/intune-devices-deviceguardlocalsystemauthoritycredentialguardstate.md)|Status do proteção de credenciais da Autoridade de Sistema Local (LSA). . Os valores possíveis são: `running`, `rebootRequired`, `notLicensed`, `notConfigured`, `virtualizationBasedSecurityNotRunning`.|
-|osBuildNumber|Cadeia de Caracteres|Número de com build do sistema operacional no dispositivo Android|
-|operatingSystemProductType|Int32|Int que especifica o ProductType do Sistema Operacional Windows. Mais detalhes aqui https://go.microsoft.com/fwlink/?linkid=2126950 . Valores válidos de 0 a 2147483647|
-|ipAddressV4|Cadeia de Caracteres|IPAddressV4|
-|subnetAddress|Cadeia de Caracteres|SubnetAddress|
-|esimIdentifier|Cadeia de Caracteres|Identificador eSIM|
-|systemManagementBIOSVersion|Cadeia de Caracteres|Versão do BIOS conforme relatado por SMBIOS|
-|tpmManufacturer|Cadeia de Caracteres|As informações de identificação que nomeia exclusivamente o fabricante do TPM|
+|osBuildNumber|Cadeia de caracteres|Número de com build do sistema operacional no dispositivo Android|
+|operatingSystemProductType|Int32|Int que especifica o Windows ProductType do Sistema Operacional. Mais detalhes aqui https://go.microsoft.com/fwlink/?linkid=2126950 . Valores válidos de 0 a 2147483647|
+|ipAddressV4|Cadeia de caracteres|IPAddressV4|
+|subnetAddress|Cadeia de caracteres|SubnetAddress|
+|esimIdentifier|Cadeia de caracteres|Identificador eSIM|
+|systemManagementBIOSVersion|Cadeia de caracteres|Versão do BIOS conforme relatado por SMBIOS|
+|tpmManufacturer|Cadeia de caracteres|As informações de identificação que nomeia exclusivamente o fabricante do TPM|
 |tpmVersion|Cadeia de caracteres|A versão do TPM, conforme especificado pelo fabricante|
 
 ## <a name="relationships"></a>Relações

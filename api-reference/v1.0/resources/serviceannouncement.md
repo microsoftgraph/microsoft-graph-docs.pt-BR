@@ -5,12 +5,12 @@ author: payiAzure
 localization_priority: Normal
 ms.prod: service-communications
 doc_type: resourcePageType
-ms.openlocfilehash: eeceee1bbef3418253f7735383a052cfbd9f4a50b6bddcaad75262a265d78542
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 761594fd25e31fe7b1edd009db234a491ff5d11e
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54215255"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58266727"
 ---
 # <a name="serviceannouncement-resource-type"></a>Tipo de recurso serviceAnnouncement
 

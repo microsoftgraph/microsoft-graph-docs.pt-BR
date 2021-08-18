@@ -1,22 +1,22 @@
 ---
-title: tipo de enumeração deviceManagementReportStatus
+title: Tipo de número deviceManagementReportStatus
 description: Status possíveis associados a um relatório gerado
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: eb85ade317129c1bae790dff43b42d5c839d45d6
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: c786a67a28674313f7a205d43e9f9caf8e7d9cce9894af480fdc70f5b94cf29f
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49287673"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54217159"
 ---
-# <a name="devicemanagementreportstatus-enum-type"></a>tipo de enumeração deviceManagementReportStatus
+# <a name="devicemanagementreportstatus-enum-type"></a>Tipo de número deviceManagementReportStatus
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -25,11 +25,11 @@ Status possíveis associados a um relatório gerado
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|desconhecido|,0|O status da geração de relatórios é desconhecido|
-|notStarted|1|A geração de relatório não foi iniciada|
-|inProgress|duas|Geração de relatório em andamento|
-|Completed|3D|Geração de relatório concluída|
-|falhou|4 |A geração de relatórios falhou|
+|desconhecido|0|O status de geração de relatório é desconhecido|
+|notStarted|1 |A geração de relatório não foi iniciada|
+|inProgress|2|A geração de relatório está em andamento|
+|completed|3 |A geração de relatório é concluída|
+|failed|4 |Falha na geração de relatório|
 
 
 

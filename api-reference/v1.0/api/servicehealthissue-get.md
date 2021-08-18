@@ -5,12 +5,12 @@ author: payiAzure
 localization_priority: Normal
 ms.prod: service-communications
 doc_type: apiPageType
-ms.openlocfilehash: eb94dd13b071a97a3076216052c5932fda3d0f7ee49bf0cd822c4c67e025898c
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 59b21b77653f9e94527dd1180b600cc22780c529
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54253775"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58265926"
 ---
 # <a name="get-servicehealthissue"></a>Obter serviceHealthIssue
 Namespace: microsoft.graph
@@ -24,8 +24,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|ServiceHealth.Read.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta corporativa ou de estudante)|ServiceHealth.Read.All|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|ServiceHealth.Read.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -57,6 +57,8 @@ Se tiver êxito, este método retornará um código de resposta e um `200 OK` [o
 
 ### <a name="request"></a>Solicitação
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "sampleKeys": ["MO226784"],
@@ -66,6 +68,24 @@ Se tiver êxito, este método retornará um código de resposta e um `200 OK` [o
 ``` http
 GET https://graph.microsoft.com/v1.0/admin/serviceAnnouncement/issues/MO226784
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-servicehealthissue-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-servicehealthissue-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-servicehealthissue-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-servicehealthissue-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>Resposta
 >**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.

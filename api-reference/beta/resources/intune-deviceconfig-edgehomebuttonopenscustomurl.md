@@ -1,26 +1,26 @@
 ---
-title: tipo de recurso edgeHomeButtonOpensCustomURL
-description: Mostrar o botão página inicial; clicar no botão página inicial carrega uma URL específica.
+title: Tipo de recurso edgeHomeButtonOpensCustomURL
+description: Mostrar o botão home; clicar no botão home carrega uma URL específica.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: fdf8771dec9bd27a74f3a3e0f60d2106733d5c8c
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 3e61160451a7e3c5d72c1cb389cbbf78aa5bd760cd127ab2435b088cb8f32b32
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49199144"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54209914"
 ---
-# <a name="edgehomebuttonopenscustomurl-resource-type"></a>tipo de recurso edgeHomeButtonOpensCustomURL
+# <a name="edgehomebuttonopenscustomurl-resource-type"></a>Tipo de recurso edgeHomeButtonOpensCustomURL
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Mostrar o botão página inicial; clicar no botão página inicial carrega uma URL específica.
+Mostrar o botão home; clicar no botão home carrega uma URL específica.
 
 
 Herda de [edgeHomeButtonConfiguration](../resources/intune-deviceconfig-edgehomebuttonconfiguration.md)
@@ -28,7 +28,7 @@ Herda de [edgeHomeButtonConfiguration](../resources/intune-deviceconfig-edgehome
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|homeButtonCustomURL|String|A URL específica a ser carregada.|
+|homeButtonCustomURL|Cadeia de caracteres|A URL específica a ser carregada.|
 
 ## <a name="relationships"></a>Relações
 Nenhum

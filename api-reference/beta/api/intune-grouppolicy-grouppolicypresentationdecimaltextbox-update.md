@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0bc44a9a058951e2525b2f9b6c43f3fe990d2694
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: 3118117719dffe8b01b979e778a855fdf1ce53fc384608a55bae184a90a0685c
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51149643"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54153969"
 ---
 # <a name="update-grouppolicypresentationdecimaltextbox"></a>Atualizar groupPolicyPresentationDecimalTextBox
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -58,9 +58,9 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [o group
 |id|Cadeia de caracteres|Chave da entidade. Herdado [de groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
 |lastModifiedDateTime|DateTimeOffset|A data e a hora em que a entidade foi modificada pela última vez. Herdado [de groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
 |defaultValue|Int64|Um inteiro não assinado que especifica o valor inicial da caixa de texto decimal. O valor padrão é 1.|
-|spin|Booleano|Se for true, crie um controle de rotação; caso contrário, crie uma caixa de texto para entrada numérica. O valor padrão é true.|
+|spin|Boolean|Se for true, crie um controle de rotação; caso contrário, crie uma caixa de texto para entrada numérica. O valor padrão é true.|
 |spinStep|Int64|Um inteiro não assinado que especifica o incremento de alteração para o controle de rotação. O valor padrão é 1.|
-|obrigatório|Booleano|Requisito para inserir um valor na caixa de parâmetros. O valor padrão é falso.|
+|obrigatório|Boolean|Requisito para inserir um valor na caixa de parâmetros. O valor padrão é falso.|
 |minValue|Int64|Um inteiro não assinado que especifica o valor mínimo permitido. O valor padrão é 0.|
 |maxValue|Int64|Um inteiro não assinado que especifica o valor máximo permitido. O valor padrão é 9999.|
 

@@ -1,18 +1,18 @@
 ---
-title: tipo de recurso publicError
+title: Tipo de recurso publicError
 description: Representa um erro genérico e seus detalhes.
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-teams
 author: AkJo
-ms.openlocfilehash: 65a75b6eb2756b92f9da6386390fae3b254f818b
-ms.sourcegitcommit: f9f95402b8a15152ede90dd736b03d532204fc2e
+ms.openlocfilehash: 605999722a36952420a126b8ab80ad183c500bbfce5dfa0c671cdaed6c2e06e6
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49660083"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54145135"
 ---
-# <a name="publicerror-resource-type"></a>tipo de recurso publicError
+# <a name="publicerror-resource-type"></a>Tipo de recurso publicError
 
 Namespace: microsoft.graph
 
@@ -22,10 +22,10 @@ Representa um erro genérico e seus detalhes.
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |código|cadeia de caracteres| Representa o código de erro.
-|detalhes|coleção [publicErrorDetail](publicerrordetail.md)|Detalhes do erro.|
+|detalhes|[Coleção publicErrorDetail](publicerrordetail.md)|Detalhes do erro.|
 |innerError|[publicInnerError](publicinnererror.md)|Detalhes do erro interno.|
 |mensagem|cadeia de caracteres| Uma mensagem não localizada para o desenvolvedor.
-|destino|String|O destino do erro.|
+|destino|Cadeia de caracteres|O destino do erro.|
 
 ## <a name="relationships"></a>Relações
 Nenhum
