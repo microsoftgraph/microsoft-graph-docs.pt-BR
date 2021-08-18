@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 9df14360ac503b20eaf881fb37a79c111c8c2c2a
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: 62e166075dfa03c45457b080bb0c8a6e8e13d2ab0e8a19b6d6339508687c7db4
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51124600"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54191190"
 ---
 # <a name="create-devicemanagementcachedreportconfiguration"></a>Criar deviceManagementCachedReportConfiguration
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -56,8 +56,8 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar deviceMa
 |id|Cadeia de caracteres|Identificador exclusivo dessa entidade|
 |reportName|Cadeia de caracteres|Nome do relatório|
 |filter|Cadeia de caracteres|Filtros aplicados na criação de relatório.|
-|select|Coleção de cadeias de caracteres|Colunas selecionadas no relatório|
-|orderBy|Coleção de cadeias de caracteres|Ordenação de colunas no relatório|
+|select|String collection|Colunas selecionadas no relatório|
+|orderBy|String collection|Ordenação de colunas no relatório|
 |metadados|Cadeia de caracteres|Metadados gerenciados pelo chamador associados ao relatório|
 |status|[deviceManagementReportStatus](../resources/intune-reporting-devicemanagementreportstatus.md)|Status do relatório armazenado em cache. Os valores possíveis são: `unknown`, `notStarted`, `inProgress`, `completed`, `failed`.|
 |lastRefreshDateTime|DateTimeOffset|Hora em que o relatório em cache foi atualizado pela última vez|

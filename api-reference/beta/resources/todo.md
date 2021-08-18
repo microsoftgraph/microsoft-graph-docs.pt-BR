@@ -5,12 +5,12 @@ author: avijityadav
 localization_priority: Normal
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: aa468c6d6556ad70d3650e40fb3fd01c46ccdb35
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 89bbdd1bd3d91c5114850ffad8afc3aeec90e8bf3bbfb0b65e540444c2022b7b
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47971472"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54246007"
 ---
 # <a name="todo-resource-type"></a>tipo de recurso todo
 
@@ -18,9 +18,9 @@ Namespace: microsoft.graph
 
 Representa os serviços To Do disponíveis para um usuário.
 
-Herda de [entidade](../resources/entity.md).
+Herda da [entidade](../resources/entity.md).
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
 |[List lists](../api/todo-list-lists.md) | Coleção [todoTaskList](todotasklist.md) | Obtenha todas as listas de tarefas na caixa de correio do usuário. |

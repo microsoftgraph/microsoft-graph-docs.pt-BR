@@ -1,22 +1,22 @@
 ---
-title: tipo de recurso extendedKeyUsage
+title: Tipo de recurso extendedKeyUsage
 description: Definição de uso de chave estendida personalizada
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: a9478750010597f30ae19801b1e40659dd3247ac
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 5b05bd1d1c608161e70d69fab483a383c716ec5f6f1378a4ea98eef4890d329f
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49301430"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54126869"
 ---
-# <a name="extendedkeyusage-resource-type"></a>tipo de recurso extendedKeyUsage
+# <a name="extendedkeyusage-resource-type"></a>Tipo de recurso extendedKeyUsage
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -25,8 +25,8 @@ Definição de uso de chave estendida personalizada
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|nome|String|Nome estendido do uso de chave|
-|objectidentifier|String|Identificador de objeto de uso estendido de chave|
+|nome|Cadeia de caracteres|Nome de uso de chave estendida|
+|objectIdentifier|Cadeia de caracteres|Identificador de objeto de uso de chave estendida|
 
 ## <a name="relationships"></a>Relações
 Nenhum

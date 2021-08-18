@@ -1,22 +1,22 @@
 ---
-title: tipo de recurso bitLockerRecoveryOptions
+title: Tipo de recurso bitLockerRecoveryOptions
 description: Opções de recuperação do BitLocker.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: e381b559c291a3da86b7ee6f9a70a67dedf63bb7
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 2b397840142face36af52b501a56d15f81b37fc6d54d720081dbf3474724b838
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49260618"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54239879"
 ---
-# <a name="bitlockerrecoveryoptions-resource-type"></a>tipo de recurso bitLockerRecoveryOptions
+# <a name="bitlockerrecoveryoptions-resource-type"></a>Tipo de recurso bitLockerRecoveryOptions
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -25,13 +25,13 @@ Opções de recuperação do BitLocker.
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|blockDataRecoveryAgent|Booliano|Indica se o agente de recuperação de dados baseado em certificado deve ser bloqueado.|
-|recoveryPasswordUsage|[configurationUsage](../resources/intune-deviceconfig-configurationusage.md)|Indica se os usuários são permitidos ou necessários para gerar uma senha de recuperação de 48 dígitos para o disco fixo ou do sistema. Os valores possíveis são: `blocked`, `required`, `allowed`, `notConfigured`.|
-|recoveryKeyUsage|[configurationUsage](../resources/intune-deviceconfig-configurationusage.md)|Indica se os usuários são permitidos ou necessários para gerar uma chave de recuperação de 256 bits para o disco fixo ou do sistema. Os valores possíveis são: `blocked`, `required`, `allowed`, `notConfigured`.|
-|hideRecoveryOptions|Booliano|Indica se a exibição das opções de recuperação no assistente de configuração do BitLocker deve ou não ser permitida no disco fixo ou do sistema.|
-|enableRecoveryInformationSaveToStore|Booliano|Indica se as informações de recuperação do BitLocker devem ou não ser armazenadas no AD DS.|
+|blockDataRecoveryAgent|Boolean|Indica se o agente de recuperação de dados baseado em certificado deve ser bloqueado.|
+|recoveryPasswordUsage|[configurationUsage](../resources/intune-deviceconfig-configurationusage.md)|Indica se os usuários são permitidos ou necessários para gerar uma senha de recuperação de 48 dígitos para disco fixo ou do sistema. Os valores possíveis são: `blocked`, `required`, `allowed`, `notConfigured`.|
+|recoveryKeyUsage|[configurationUsage](../resources/intune-deviceconfig-configurationusage.md)|Indica se os usuários são permitidos ou necessários para gerar uma chave de recuperação de 256 bits para disco fixo ou do sistema. Os valores possíveis são: `blocked`, `required`, `allowed`, `notConfigured`.|
+|hideRecoveryOptions|Boolean|Indica se é possível ou não permitir a exibição de opções de recuperação no Assistente de Instalação do BitLocker para disco fixo ou do sistema.|
+|enableRecoveryInformationSaveToStore|Boolean|Indica se as informações de recuperação do BitLocker podem ou não ser armazenadas no AD DS.|
 |recoveryInformationToStore|[bitLockerRecoveryInformationType](../resources/intune-deviceconfig-bitlockerrecoveryinformationtype.md)|Configure quais partes das informações de recuperação do BitLocker são armazenadas no AD DS. Os valores possíveis são: `passwordAndKey` e `passwordOnly`.|
-|enableBitLockerAfterRecoveryInformationToStore|Booliano|Indica se o BitLocker deve ou não ser habilitado até que as informações de recuperação sejam armazenadas no AD DS.|
+|enableBitLockerAfterRecoveryInformationToStore|Boolean|Indica se o BitLocker deve ou não ser habilitado até que as informações de recuperação sejam armazenadas no AD DS.|
 
 ## <a name="relationships"></a>Relações
 Nenhum

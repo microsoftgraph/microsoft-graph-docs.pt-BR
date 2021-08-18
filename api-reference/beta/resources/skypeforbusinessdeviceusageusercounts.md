@@ -1,18 +1,18 @@
 ---
-title: tipo de recurso skypeForBusinessDeviceUsageUserCounts
+title: Tipo de recurso skypeForBusinessDeviceUsageUserCounts
 description: Veja a seguir uma representação JSON do recurso.
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: kszb
-ms.openlocfilehash: e568e2bc396c5b7299441f8f8c513afcdada5c16
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 0663e2b56018412ee578c285974a61aa1da685c3906ccdc7d8ec34b822810cdd
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47997533"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54241307"
 ---
-# <a name="skypeforbusinessdeviceusageusercounts-resource-type"></a>tipo de recurso skypeForBusinessDeviceUsageUserCounts
+# <a name="skypeforbusinessdeviceusageusercounts-resource-type"></a>Tipo de recurso skypeForBusinessDeviceUsageUserCounts
 
 Namespace: microsoft.graph
 
@@ -21,13 +21,13 @@ Namespace: microsoft.graph
 | Propriedade          | Tipo   |
 | :---------------- | :----- |
 | reportRefreshDate | Data   |
-| Windows           | Int64  |
-| Windowsphonee      | Int64  |
+| windows           | Int64  |
+| windowsPhone      | Int64  |
 | androidPhone      | Int64  |
 | iPhone            | Int64  |
 | iPad              | Int64  |
 | reportDate        | Data   |
-| reportPeriod      | String |
+| reportPeriod      | Cadeia de caracteres |
 
 ## <a name="json-representation"></a>Representação JSON
 

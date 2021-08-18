@@ -1,22 +1,22 @@
 ---
-title: tipo de enumeração de código
+title: tipo de número de código
 description: Código de erro para validação de regra.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 778beac6c0d489ba6ce4e2b51dafc8c4be768974
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 830ab9dac9953791036ea111f7ffe26109c6826e900ff3e2ac660cf171515f71
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49199666"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54241923"
 ---
-# <a name="code-enum-type"></a>tipo de enumeração de código
+# <a name="code-enum-type"></a>tipo de número de código
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -25,38 +25,38 @@ Código de erro para validação de regra.
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|nenhum|,0|Nenhum erro.|
-|jsonFileInvalid|1|Erro inválido no arquivo JSON.|
-|jsonFileMissing|duas|Erro de arquivo JSON ausente.|
-|jsonFileTooLarge|3D|Erro de arquivo JSON muito grande.|
-|rulesMissing|4 |Falta de regras no erro.|
+|Nenhuma|0|Nenhum erro.|
+|jsonFileInvalid|1 |Erro inválido do arquivo Json.|
+|jsonFileMissing|2|Erro de arquivo Json ausente.|
+|jsonFileTooLarge|3 |Erro muito grande do arquivo Json.|
+|rulesMissing|4 |Erro de regras ausentes.|
 |duplicateRules|5 |Erro de regras duplicadas.|
-|tooManyRulesSpecified|6 |Número excessivo de regras especificado.|
-|operatorMissing|7 |Falta de erro no operador.|
-|operatorNotSupported|8 |Não há suporte para o operador erro.|
+|tooManyRulesSpecified|6 |Erro especificado em muitas regras.|
+|operatorMissing|7 |Erro de operador ausente.|
+|operatorNotSupported|8 |Erro do operador não suportado.|
 |datatypeMissing|9 |Erro de tipo de dados ausente.|
-|datatypeNotSupported|10 |Erro de tipo de dados sem suporte.|
-|operatorDataTypeCombinationNotSupported|11 |Erro de combinação de tipo de dados operador sem suporte.|
-|moreInfoUriMissing|12 |Mais informações urlmissing erro.|
-|moreInfoUriInvalid|13 |Mais informações de URL erro inválido.|
-|moreInfoUriTooLarge|14 |Saiba mais sobre o erro ltoo grande.|
-|descriptionMissing|15 |Falta o erro na descrição.|
-|descriptionInvalid|16 |Erro de descrição inválida.|
-|descriptionTooLarge|17 |Erro de descrição muito grande.|
-|titleMissing|18 |Falta o título em erro.|
-|titleInvalid|19|Título inválido erro.|
-|titleTooLarge|508|Erro de título muito grande.|
-|operandMissing| 21 |Falta de erro no operando.|
-|operandInvalid|22|Erro inválido do operando.|
-|operandTooLarge|23|Erro de operando muito grande.|
-|settingNameMissing|dia|Erro de configuração ausente.|
-|settingNameInvalid|25|Nome de configuração erro inválido.|
-|settingNameTooLarge|660|Erro de configuração de nome muito grande.|
-|englishLocaleMissing|27|Erro de localidade em inglês ausente.|
+|datatypeNotSupported|10 |Erro do tipo de dados não suportado.|
+|operatorDataTypeCombinationNotSupported|11 |Combinação de tipo de dados do operador não foi suportada.|
+|moreInfoUriMissing|12 |Mais informações urlmissing error.|
+|moreInfoUriInvalid|13 |Mais informações url erro inválido.|
+|moreInfoUriTooLarge|14 |Mais informações seu erro ltoo grande.|
+|descriptionMissing|15 |Erro de descrição ausente.|
+|descriptionInvalid|16 |Erro inválido de descrição.|
+|descriptionTooLarge|17 |Descrição erro muito grande.|
+|titleMissing|18 |Erro de falta de título.|
+|titleInvalid|19|Erro inválido do título.|
+|titleTooLarge|20|Erro de título muito grande.|
+|operandMissing| 21 |Erro de operação ausente.|
+|operandInvalid|22|Erro inválido do operand.|
+|operandTooLarge|23|Erro muito grande do operand.|
+|settingNameMissing|24|Erro de definição de nome ausente.|
+|settingNameInvalid|25|Erro inválido de nome de configuração.|
+|settingNameTooLarge|26|Erro de definição de nome muito grande.|
+|englishLocaleMissing|27|Erro de localização em inglês ausente.|
 |duplicateLocales|28|Erro de localidades duplicadas.|
-|unrecognizedLocale|anos|Erro de localidade não reconhecido.|
-|desconhecido|até|Erro desconhecido.|
-|remediationStringsMissing|31|Erros de cadeia de caracteres de correção ausente.|
+|unrecognizedLocale|29|Erro de localidade não-recognizado.|
+|desconhecido|30|Erro desconhecido.|
+|remediationStringsMissing|31|Erro nas cadeias de caracteres de correção.|
 
 
 
