@@ -6,18 +6,18 @@ title: ItemReference
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: sharepoint
-ms.openlocfilehash: 52cf21a4bb6d387da2c50a7ad28ab49c1b9e70ea
-ms.sourcegitcommit: 0d4377b0153bc339ab7b3b1a6ee4d52848b622d4
+ms.openlocfilehash: e98131cb91562bc7f0b4974383693246826ebd85046c64150cffa4d398d4a932
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "49714330"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54248296"
 ---
 # <a name="itemreference-resource-type"></a>Tipo de recurso ItemReference
 
 Namespace: microsoft.graph
 
-O recurso de **referência** fornece as informações necessárias para lidar com o [driveItem](driveitem.md) por meio da API.
+O **recurso ItemReference** fornece informações necessárias para lidar com [um driveItem](driveitem.md) por meio da API.
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -53,7 +53,7 @@ Veja a seguir uma representação JSON do recurso
 | caminho          | String            | Caminho que pode ser usado para navegar até o item. Somente leitura.
 | shareId       | Cadeia de caracteres            | Um identificador exclusivo para um recurso compartilhado que pode ser acessado através da API [Shares][].
 | sharepointIds | [sharepointIds][] | Retorna os identificadores úteis para fins de compatibilidade do REST do SharePoint. Somente leitura.
-| siteId        | Cadeia de caracteres            | Para o OneDrive for Business e o SharePoint, essa propriedade representa a ID do site que contém a biblioteca de documentos pai do recurso driveItem. O valor é o mesmo que a propriedade ID do recurso [site][] . É uma [cadeia de caracteres opaca que consiste em três identificadores](/graph/api/resources/site?view=graph-rest-beta&preserve-view=true#id-property) do site. <br>Para o OneDrive, essa propriedade não é preenchida.
+| siteId        | Cadeia de caracteres            | Para OneDrive for Business e SharePoint, essa propriedade representa a ID do site que contém a biblioteca de documentos pai do recurso driveItem. O valor é o mesmo que a propriedade id desse [recurso de][] site. É uma cadeia [de caracteres opaca que consiste em três identificadores](/graph/api/resources/site?view=graph-rest-beta&preserve-view=true#id-property) do site. <br>Para OneDrive, essa propriedade não é preenchida.
 
 [unidade]: ../resources/drive.md
 [sharepointIds]: ../resources/sharepointids.md
@@ -78,7 +78,7 @@ Para recuperar o caminho legível para a navegação estrutural, ignore tudo at�
   "type": "#page.annotation",
   "description": "ItemReference returns a pointer to another item.",
   "section": "documentation",
-  "tocPath": "Resources/ItemReference"
+  "tocPath&quot;: &quot;Resources/ItemReference"
 } -->
 
 

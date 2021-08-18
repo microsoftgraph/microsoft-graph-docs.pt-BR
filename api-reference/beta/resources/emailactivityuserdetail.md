@@ -5,12 +5,12 @@ localization_priority: Normal
 author: sarahwxy
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 73e743bc6409f762a7898ec8037633c7bc3f00e4
-ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
+ms.openlocfilehash: a25061ccea7c6971625a96e9ececd60b3f87a9f4817c1aee4c8892385a6c7d55
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49981848"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54248975"
 ---
 # <a name="emailactivityuserdetail-resource-type"></a>Tipo de recurso emailActivityUserDetail
 
@@ -23,13 +23,13 @@ Namespace: microsoft.graph
 | reportRefreshDate | Data              |
 | userPrincipalName | Cadeia de caracteres            |
 | displayName       | Cadeia de caracteres            |
-| isDeleted         | Booliano           |
+| isDeleted         | Boolean           |
 | deletedDate       | Data              |
 | lastActivityDate  | Data              |
 | sendCount         | Int64             |
 | receiveCount      | Int64             |
 | readCount         | Int64             |
-| assignedProducts  | Coleção String |
+| assignedProducts  | String collection |
 | reportPeriod      | Cadeia de caracteres            |
 
 ## <a name="json-representation"></a>Representação JSON

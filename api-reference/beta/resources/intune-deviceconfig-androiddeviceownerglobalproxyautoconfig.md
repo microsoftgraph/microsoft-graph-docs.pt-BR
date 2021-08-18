@@ -1,26 +1,26 @@
 ---
 title: tipo de recurso androidDeviceOwnerGlobalProxyAutoConfig
-description: Configuração automática de proxy global de proprietário do dispositivo Android.
+description: Configuração Automática do Proxy Global do Proprietário do Dispositivo Android.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 70b2fc59c2136364af0f2023b17c9f888fad8b6d
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: bb96bcf0219eb6f255efc26a321b42774c0be54033685635071e1e4f604fc441
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49303535"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54239970"
 ---
 # <a name="androiddeviceownerglobalproxyautoconfig-resource-type"></a>tipo de recurso androidDeviceOwnerGlobalProxyAutoConfig
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Configuração automática de proxy global de proprietário do dispositivo Android.
+Configuração Automática do Proxy Global do Proprietário do Dispositivo Android.
 
 
 Herda de [androidDeviceOwnerGlobalProxy](../resources/intune-deviceconfig-androiddeviceownerglobalproxy.md)
@@ -28,7 +28,7 @@ Herda de [androidDeviceOwnerGlobalProxy](../resources/intune-deviceconfig-androi
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|proxyAutoConfigURL|String|A URL de configuração automática do proxy|
+|proxyAutoConfigURL|Cadeia de caracteres|A URL de configuração automática do proxy|
 
 ## <a name="relationships"></a>Relações
 Nenhum

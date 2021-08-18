@@ -1,18 +1,18 @@
 ---
-title: tipo de recurso oneDriveUsageAccountDetail
+title: Tipo de recurso oneDriveUsageAccountDetail
 description: Veja a seguir uma representação JSON do recurso.
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
 author: JeremyKelley
-ms.openlocfilehash: 6e355e1f71d493b30ffb2fe41816208dfe4816e9
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 210728ee77bb013a4894156aef79d35248e7d2f32eed129baf8905655f192f5a
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48039283"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54155971"
 ---
-# <a name="onedriveusageaccountdetail-resource-type"></a>tipo de recurso oneDriveUsageAccountDetail
+# <a name="onedriveusageaccountdetail-resource-type"></a>Tipo de recurso oneDriveUsageAccountDetail
 
 Namespace: microsoft.graph
 
@@ -21,16 +21,16 @@ Namespace: microsoft.graph
 | Propriedade                | Tipo    |
 | :---------------------- | :------ |
 | reportRefreshDate       | Data    |
-| siteUrl                 | String  |
-| ownerDisplayName        | String  |
-| ownerPrincipalName      | String  |
-| isDeleted               | Booliano |
+| siteUrl                 | Cadeia de caracteres  |
+| ownerDisplayName        | Cadeia de caracteres  |
+| ownerPrincipalName      | Cadeia de caracteres  |
+| isDeleted               | Boolean |
 | lastActivityDate        | Data    |
-| Contagem de FileCount               | Int64   |
+| fileCount               | Int64   |
 | activeFileCount         | Int64   |
 | storageUsedInBytes      | Int64   |
 | storageAllocatedInBytes | Int64   |
-| reportPeriod            | String  |
+| reportPeriod            | Cadeia de caracteres  |
 
 ## <a name="json-representation"></a>Representação JSON
 
