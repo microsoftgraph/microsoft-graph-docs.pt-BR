@@ -1,35 +1,35 @@
 ---
-title: tipo de enumeração androidDeviceOwnerAppAutoUpdatePolicyType
-description: Proprietário do dispositivo Android valores possíveis para Estados da política de atualização automática do aplicativo do dispositivo.
+title: tipo de número androidDeviceOwnerAppAutoUpdatePolicyType
+description: Valores possíveis do Proprietário do Dispositivo Android para estados da política de atualização automática do aplicativo do dispositivo.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: f7eb22977f571d0e15e8d9cd20f3ee02e52faff7
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 80eb0a433b21584e1335c04276cc837ce22598ebf38e886acecdeaea54741145
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49216735"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54236511"
 ---
-# <a name="androiddeviceownerappautoupdatepolicytype-enum-type"></a>tipo de enumeração androidDeviceOwnerAppAutoUpdatePolicyType
+# <a name="androiddeviceownerappautoupdatepolicytype-enum-type"></a>tipo de número androidDeviceOwnerAppAutoUpdatePolicyType
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Proprietário do dispositivo Android valores possíveis para Estados da política de atualização automática do aplicativo do dispositivo.
+Valores possíveis do Proprietário do Dispositivo Android para estados da política de atualização automática do aplicativo do dispositivo.
 
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|notConfigured|,0|Não configurado; Esse valor é ignorado.|
-|UserChoice|1|O usuário pode controlar as atualizações automáticas.|
-|Édito|duas|Os aplicativos nunca são atualizados automaticamente.|
-|wiFiOnly|3D|Os aplicativos são atualizados automaticamente através do Wi-Fi.|
-|permanente|4 |Os aplicativos são atualizados automaticamente a qualquer momento. Tarifas de dados podem ser aplicadas.|
+|notConfigured|0|Não configurado; esse valor é ignorado.|
+|userChoice|1 |O usuário pode controlar as atualizações automáticas.|
+|never|2|Os aplicativos nunca são atualizados automaticamente.|
+|wiFiOnly|3 |Os aplicativos são atualizados automaticamente Wi-Fi somente.|
+|always|4 |Os aplicativos são atualizados automaticamente a qualquer momento. Os encargos de dados podem ser aplicados.|
 
 
 

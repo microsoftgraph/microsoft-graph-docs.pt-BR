@@ -1,34 +1,34 @@
 ---
-title: tipo de enumeração androidDeviceOwnerBatteryPluggedMode
-description: O proprietário do dispositivo Android valores possíveis para Estados dos modos de energia conectados ao dispositivo.
+title: tipo de número androidDeviceOwnerBatteryPluggedMode
+description: Valores possíveis do Proprietário do Dispositivo Android para estados dos modos de energia conectados do dispositivo.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 92f2234825a027d31631b2b1972a1cfeebc11b7b
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: d26159cb0cc578232c3c01e30afc963570cd85546a516e058fa31aa7edbc6557
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49216721"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54236497"
 ---
-# <a name="androiddeviceownerbatterypluggedmode-enum-type"></a>tipo de enumeração androidDeviceOwnerBatteryPluggedMode
+# <a name="androiddeviceownerbatterypluggedmode-enum-type"></a>tipo de número androidDeviceOwnerBatteryPluggedMode
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-O proprietário do dispositivo Android valores possíveis para Estados dos modos de energia conectados ao dispositivo.
+Valores possíveis do Proprietário do Dispositivo Android para estados dos modos de energia conectados do dispositivo.
 
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|notConfigured|,0|Não configurado; Esse valor é ignorado.|
-|AC|1|A fonte de alimentação é um carregador AC.|
-|dispositivo|duas|A fonte de alimentação é uma porta USB.|
-|conexão|3D|A fonte de energia é sem fio.|
+|notConfigured|0|Não configurado; esse valor é ignorado.|
+|ac|1 |A fonte de energia é um carregador AC.|
+|usb|2|Fonte de energia é uma porta USB.|
+|wireless|3 |A fonte de energia é sem fio.|
 
 
 

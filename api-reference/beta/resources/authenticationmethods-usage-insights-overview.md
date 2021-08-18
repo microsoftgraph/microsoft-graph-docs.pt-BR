@@ -5,12 +5,12 @@ localization_priority: Normal
 author: besiler
 ms.prod: identity-and-access-reports
 doc_type: conceptualPageType
-ms.openlocfilehash: 53ec8c6046c9682c0bdea607a942cb673671d0b3
-ms.sourcegitcommit: 34891a1c601976166958be1aa04bab5936592b44
+ms.openlocfilehash: 451d1abc82be09f37933dce7bbacdfc4931252d3
+ms.sourcegitcommit: 22bd45d272681658d46a8b99af3c3eabc7b05cb1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52231641"
+ms.lasthandoff: 08/18/2021
+ms.locfileid: "58384363"
 ---
 # <a name="working-with-the-authentication-methods-usage-report-api"></a>Trabalhando com a API de relatório de uso de métodos de autenticação
 
@@ -27,13 +27,13 @@ Esses relatórios fornecem informações como:
 - As taxas de falha de cada método de autenticação 
 
 ## <a name="permissions"></a>Permissões
-As permissões a seguir são necessárias para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
+As seguintes permissões são obrigatórias para chamar esta API. Para saber mais, incluindo como escolher as permissões, consulte [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|Reports.Read.All<br>AuditLogs.Read.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|Reports.Read.All<br>AuditLogs.Read.All|
+|Delegada (conta corporativa ou de estudante)|Reports.Read.All, AuditLog.Read.All|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Aplicativo|Reports.Read.All, AuditLog.Read.All|
 
 Para acessar a API, uma [das seguintes funções](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles) é necessária:
 
@@ -45,13 +45,13 @@ Para acessar a API, uma [das seguintes funções](/azure/active-directory/users-
 
 ## <a name="licenses"></a>Licenças
 
-Uma licença do Azure AD Premium P1 ou P2 é necessária para acessar o uso e as percepções. As informações de licenciamento de autenticação multifafação e de redefinição de senha de autoatendificação do Azure AD (SSPR) podem ser encontradas no site Azure Active Directory [preço.](https://azure.microsoft.com/pricing/details/active-directory/)
+Uma Azure AD Premium P1 ou P2 é necessária para acessar o uso e as percepções. As informações de licenciamento de autenticação multifafação e de redefinição de senha de autoatendificação do Azure AD (SSPR) podem ser encontradas no site Azure Active Directory [preço.](https://azure.microsoft.com/pricing/details/active-directory/)
 
 ## <a name="common-requests"></a>Solicitações comuns
 
 A tabela a seguir lista algumas solicitações comuns que você pode usar com essa API.
 
-| Operation | Experimente o Explorador do Graph | Descrição |
+| Operação | Experimente o Explorador do Graph | Descrição |
 | --------- | --- | ----------- |
 | [getCredentialUserRegistrationcount](/graph/api/resources/credentialuserregistrationcount?view=graph-rest-beta&preserve-view=true) | [GET /credentialuserregistrationcount](https://developer.microsoft.com/graph/graph-explorer?request=reports/getCredentialUserRegistrationcount()&version=beta) | Obter o número de usuários registrados para redefinição de senha de autoatendados e MFA. |
 | [getCredentialUsageSummary](/graph/api/resources/credentialusagesummary?view=graph-rest-beta&preserve-view=true) | [GET /credentialusagesummary](https://developer.microsoft.com/graph/graph-explorer?request=reports/getCredentialUsageSummary&version=beta) | Obter o número de usuários que usam redefinição de senha de autoatendados. |

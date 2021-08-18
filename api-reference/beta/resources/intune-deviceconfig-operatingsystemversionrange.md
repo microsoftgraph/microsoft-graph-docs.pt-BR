@@ -1,22 +1,22 @@
 ---
-title: tipo de recurso operatingSystemVersionRange
+title: Tipo de recurso operatingSystemVersionRange
 description: Intervalo de versão do sistema operacional.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: e9019150efed2f52f884746d7c62f1d7e5a35e83
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: e0915f61edd6ba8566fef42dab26a489333605506419d4adb7db058abf1bea8d
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49293952"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54232773"
 ---
-# <a name="operatingsystemversionrange-resource-type"></a>tipo de recurso operatingSystemVersionRange
+# <a name="operatingsystemversionrange-resource-type"></a>Tipo de recurso operatingSystemVersionRange
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -25,9 +25,9 @@ Intervalo de versão do sistema operacional.
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|description|String|A descrição desse intervalo (por exemplo, Builds 1702 válidos)|
-|lowestVersion|String|A versão mais antiga inclusive que este intervalo contém.|
-|highestVersion|String|A versão mais recente inclusive que este intervalo contém.|
+|description|Cadeia de caracteres|A descrição desse intervalo (por exemplo, builds válidos 1702)|
+|lowestVersion|Cadeia de caracteres|A versão inclusiva mais baixa que esse intervalo contém.|
+|highestVersion|Cadeia de caracteres|A versão inclusiva mais alta que esse intervalo contém.|
 
 ## <a name="relationships"></a>Relações
 Nenhum

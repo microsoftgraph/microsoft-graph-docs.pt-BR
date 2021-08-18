@@ -1,32 +1,32 @@
 ---
-title: tipo de enumeração groupPolicyType
-description: Tipo de arquivo de política de grupo ou definição.
+title: Tipo denum groupPolicyType
+description: Tipo de Arquivo de Política de Grupo ou Definição.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 1241cb3bad75b8daa1c4fe944a361d7cb710fd23
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 45e0d66dd9bdb456089f316508af1916d321a2f4908c8571b17077a0e4975db2
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49298271"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54239221"
 ---
-# <a name="grouppolicytype-enum-type"></a>tipo de enumeração groupPolicyType
+# <a name="grouppolicytype-enum-type"></a>Tipo denum groupPolicyType
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Tipo de arquivo de política de grupo ou definição.
+Tipo de Arquivo de Política de Grupo ou Definição.
 
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|admxBacked|,0|Os modelos administrativos da política de grupo internos para o provedor de serviços de configuração de política (CSP).|
-|admxIngested|1|Modelos administrativos da política de grupo instalados usando o provedor de serviços de configuração de política (CSP).|
+|admxBacked|0|Modelos administrativos de Política de Grupo integrados ao provedor de serviços de configuração de política (CSP).|
+|admxIngested|1 |Modelos administrativos de Política de Grupo instalados usando o provedor de serviços de configuração de política (CSP).|
 
 
 
