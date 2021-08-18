@@ -1,34 +1,34 @@
 ---
-title: tipo de enumeração mobileAppContentFileUploadState
-description: Contém propriedades para carregar Estados de solicitação.
+title: Tipo de número mobileAppContentFileUploadState
+description: Contém propriedades para estados de solicitação de carregamento.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: c784b959d53c5a07d1d81796b1ac7be2acb8d6f7
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 994af77cd8cc847496fbe8678b25286164ed5e6ae65577f909320373b59c6f94
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49281002"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54227642"
 ---
-# <a name="mobileappcontentfileuploadstate-enum-type"></a>tipo de enumeração mobileAppContentFileUploadState
+# <a name="mobileappcontentfileuploadstate-enum-type"></a>Tipo de número mobileAppContentFileUploadState
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Contém propriedades para carregar Estados de solicitação.
+Contém propriedades para estados de solicitação de carregamento.
 
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|sucesso|,0|Ainda não documentado|
-|transientError|1|Ainda não documentado|
-|erro|duas|Ainda não documentado|
-|desconhecido|3D|Ainda não documentado|
+|sucesso|0|Ainda não documentado|
+|transientError|1 |Ainda não documentado|
+|erro|2|Ainda não documentado|
+|desconhecido|3 |Ainda não documentado|
 |azureStorageUriRequestSuccess|100|Ainda não documentado|
 |azureStorageUriRequestPending|101|Ainda não documentado|
 |azureStorageUriRequestFailed|102|Ainda não documentado|

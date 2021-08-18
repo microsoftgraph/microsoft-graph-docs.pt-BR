@@ -1,32 +1,32 @@
 ---
-title: tipo de recurso deviceHealthScriptRemediationHistory
-description: O número de dispositivos corrigidos por um script de integridade do dispositivo em uma determinada data com o horário da última modificação.
+title: Tipo de recurso deviceHealthScriptRemediationHistory
+description: O número de dispositivos remediados por um script de saúde do dispositivo em uma determinada data com a última hora modificada.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 04fcc7748897c581ed5fd7a944e7f4f9605d4f8a
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 96840d696fdf85bced2b3f356f4322c5f912180dc10fddb2d983853e108f77ab
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49259967"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54148040"
 ---
-# <a name="devicehealthscriptremediationhistory-resource-type"></a>tipo de recurso deviceHealthScriptRemediationHistory
+# <a name="devicehealthscriptremediationhistory-resource-type"></a>Tipo de recurso deviceHealthScriptRemediationHistory
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-O número de dispositivos corrigidos por um script de integridade do dispositivo em uma determinada data com o horário da última modificação.
+O número de dispositivos remediados por um script de saúde do dispositivo em uma determinada data com a última hora modificada.
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|lastModifiedDateTime|DateTimeOffset|A data na qual o histórico de resultados é calculado para o healthscript.|
-|historyData|coleção [deviceHealthScriptRemediationHistoryData](../resources/intune-devices-devicehealthscriptremediationhistorydata.md)|O número de dispositivos corrigidos pelo script de integridade do dispositivo na data especificada.|
+|lastModifiedDateTime|DateTimeOffset|A data em que o histórico de resultados é calculado para o healthscript.|
+|historyData|[Coleção deviceHealthScriptRemediationHistoryData](../resources/intune-devices-devicehealthscriptremediationhistorydata.md)|O número de dispositivos remediados pelo script de saúde do dispositivo na data determinada.|
 
 ## <a name="relationships"></a>Relações
 Nenhum
