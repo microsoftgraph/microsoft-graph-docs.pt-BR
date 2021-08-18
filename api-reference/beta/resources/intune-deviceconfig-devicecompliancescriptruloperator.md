@@ -1,22 +1,22 @@
 ---
-title: Tipo de enum deviceComplianceScriptRulOperator
+title: Tipo de número deviceComplianceScriptRulOperator
 description: Operador para regras.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 20046651a39e0ffd6826f49043c0f71cb80b5ccb
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: a5d43040b2c76a03ab4a04fc55dfc77a00085676e1cccd56eb044616962f5ff8
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50160072"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54231023"
 ---
-# <a name="devicecompliancescriptruloperator-enum-type"></a>Tipo de enum deviceComplianceScriptRulOperator
+# <a name="devicecompliancescriptruloperator-enum-type"></a>Tipo de número deviceComplianceScriptRulOperator
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para o uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -25,14 +25,14 @@ Operador para regras.
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|nenhum|0|Operador Nenhum.|
-|e|1 |Operador And.|
-|ou|2 |Operador Or.|
+|Nenhuma|0|Operador Nenhum.|
+|e|1 |E operador.|
+|ou|2|Ou operador.|
 |isEquals|3 |Operador IsEquals.|
 |notEquals|4 |Operador NotEquals.|
 |greaterThan|5 |Operador GreaterThan.|
 |lessThan|6 |Operador LessThan.|
-|between|7 |Operador Between.|
+|between|7 |Entre o operador.|
 |notBetween|8 |Operador NotBetween.|
 |greaterEquals|9 |Operador GreaterEquals.|
 |lessEquals|10 |Operador LessEquals.|
@@ -49,7 +49,7 @@ Operador para regras.
 |setEquals| 21 |Operador SetEquals.|
 |orderedSetEquals|22|Operador OrderedSetEquals.|
 |subsetOf|23|Operador SubsetOf.|
-|excludesAll|24|Operador ExcludesAll.|
+|excludesAll|24|ExcludesAll operator.|
 
 
 

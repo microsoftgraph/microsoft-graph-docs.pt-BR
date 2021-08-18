@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 05c9a3eabd22e7e22a6d74229b7aa47901e05db6
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: 47a3fdcb4275c55578fd154366563dcc9714512b
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51155978"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58248147"
 ---
 # <a name="assignmentfilterevaluationsummary-resource-type"></a>Tipo de recurso assignmentFilterEvaluationSummary
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -28,7 +28,7 @@ Representar resumo de resultados para avaliação de filtro de atribuição
 |assignmentFilterId|Cadeia de caracteres|Identificador exclusivo do objeto de filtro de atribuição|
 |assignmentFilterLastModifiedDateTime|DateTimeOffset|A hora em que o filtro de atribuição foi modificado pela última vez.|
 |assignmentFilterDisplayName|Cadeia de caracteres|O nome definido pelo administrador para filtro de atribuição.|
-|assignmentFilterPlatform|[devicePlatformType](../resources/intune-shared-deviceplatformtype.md)|A plataforma para a qual esse filtro de atribuição é criado. Os valores possíveis são: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `unknown`.|
+|assignmentFilterPlatform|[devicePlatformType](../resources/intune-policyset-deviceplatformtype.md)|A plataforma para a qual esse filtro de atribuição é criado. Os valores possíveis são: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `unknown`.|
 |evaluationResult|[assignmentFilterEvaluationResult](../resources/intune-policyset-assignmentfilterevaluationresult.md)|Resultado da avaliação do filtro de atribuição. Os possíveis valores são: `unknown`, `match`, `notMatch`, `inconclusive`, `failure`, `notEvaluated`.|
 |evaluationDateTime|DateTimeOffset|O filtro de atribuição de hora foi avaliado.|
 |assignmentFilterType|[deviceAndAppManagementAssignmentFilterType](../resources/intune-shared-deviceandappmanagementassignmentfiltertype.md)|Indique o tipo de filtro incluir ou excluir. Os valores possíveis são: `none`, `include`, `exclude`.|
