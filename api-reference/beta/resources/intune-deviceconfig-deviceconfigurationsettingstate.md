@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9bf91b3acef707bafc33d1498486ed45c9fc4793
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: b8f6accd388862f29efbb9721c6dfbd7c65c47c855b940bb5bb5ae2a7e2c292e
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49199396"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54203117"
 ---
 # <a name="deviceconfigurationsettingstate-resource-type"></a>tipo de recurso deviceConfigurationSettingState
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -34,10 +34,10 @@ Estado da definição de configuração de um determinado dispositivo.
 |userId|Cadeia de caracteres|UserId|
 |userName|Cadeia de caracteres|UserName|
 |userEmail|Cadeia de caracteres|UserEmail|
-|userPrincipalName|String|UserPrincipalName.|
+|userPrincipalName|Cadeia de caracteres|UserPrincipalName.|
 |fontes|Conjunto [settingSource](../resources/intune-deviceconfig-settingsource.md)|Políticas de colaboração|
 |currentValue|Cadeia de caracteres|Valor atual da configuração em um dispositivo|
-|settingInstanceId|String|SettingInstanceId|
+|settingInstanceId|Cadeia de caracteres|SettingInstanceId|
 
 ## <a name="relationships"></a>Relações
 Nenhum

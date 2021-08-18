@@ -1,18 +1,18 @@
 ---
-title: Listar groupPolicyPresentationValueLists
-description: Listar propriedades e relações dos objetos groupPolicyPresentationValueList.
+title: Listar payloadCompatibleAssignmentFilters
+description: Listar propriedades e relações dos objetos payloadCompatibleAssignmentFilter.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b2f3ae188ccd9bb3cc844d3000c9d4c8ebd9569f6ef840900c39edec47d8386e
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 9719d4e0601388740a744474fc142db1b124778c
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54210649"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58263295"
 ---
-# <a name="list-grouppolicypresentationvaluelists"></a>Listar groupPolicyPresentationValueLists
+# <a name="list-payloadcompatibleassignmentfilters"></a>Listar payloadCompatibleAssignmentFilters
 
 Namespace: microsoft.graph
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Listar propriedades e relações dos [objetos groupPolicyPresentationValueList.](../resources/intune-grouppolicy-grouppolicypresentationvaluelist.md)
+Listar propriedades e relações dos objetos [payloadCompatibleAssignmentFilter.](../resources/intune-policyset-payloadcompatibleassignmentfilter.md)
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -37,7 +37,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 }
 -->
 ``` http
-GET /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/definitionValues/{groupPolicyDefinitionValueId}/presentationValues
+GET /deviceManagement/assignmentFilters
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -50,14 +50,14 @@ GET /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/def
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um código de resposta e uma `200 OK` coleção [de objetos groupPolicyPresentationValueList](../resources/intune-grouppolicy-grouppolicypresentationvaluelist.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e uma coleção de objetos `200 OK` [payloadCompatibleAssignmentFilter](../resources/intune-policyset-payloadcompatibleassignmentfilter.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
 ### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
 ``` http
-GET https://graph.microsoft.com/beta/deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/definitionValues/{groupPolicyDefinitionValueId}/presentationValues
+GET https://graph.microsoft.com/beta/deviceManagement/assignmentFilters
 ```
 
 ### <a name="response"></a>Resposta
@@ -65,22 +65,23 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 471
+Content-Length: 566
 
 {
   "value": [
     {
-      "@odata.type": "#microsoft.graph.groupPolicyPresentationValueList",
-      "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
+      "@odata.type": "#microsoft.graph.payloadCompatibleAssignmentFilter",
+      "id": "6d189738-9738-6d18-3897-186d3897186d",
       "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
-      "id": "1dbb7865-7865-1dbb-6578-bb1d6578bb1d",
-      "values": [
-        {
-          "@odata.type": "microsoft.graph.keyValuePair",
-          "name": "Name value",
-          "value": "Value value"
-        }
-      ]
+      "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
+      "displayName": "Display Name value",
+      "description": "Description value",
+      "platform": "androidForWork",
+      "rule": "Rule value",
+      "roleScopeTags": [
+        "Role Scope Tags value"
+      ],
+      "payloadType": "enrollmentRestrictions"
     }
   ]
 }

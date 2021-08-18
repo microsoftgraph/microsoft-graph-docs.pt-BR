@@ -1,26 +1,26 @@
 ---
-title: tipo de recurso binaryManagementConditionExpression
-description: Uma expressão de condição de gerenciamento que é avaliada usando uma operação binária.
+title: Tipo de recurso binaryManagementConditionExpression
+description: Uma expressão de condição de gerenciamento avaliada usando uma operação binária.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: b7f8efa0bba16a9567258449e42b5d3e8ed28dab
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: cfc716edcce00e9c777f79796f6c9c792038153eccaccf91d40d62af49fcb28c
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49299078"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54197930"
 ---
-# <a name="binarymanagementconditionexpression-resource-type"></a>tipo de recurso binaryManagementConditionExpression
+# <a name="binarymanagementconditionexpression-resource-type"></a>Tipo de recurso binaryManagementConditionExpression
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Uma expressão de condição de gerenciamento que é avaliada usando uma operação binária.
+Uma expressão de condição de gerenciamento avaliada usando uma operação binária.
 
 
 Herda de [managementConditionExpressionModel](../resources/intune-fencing-managementconditionexpressionmodel.md)
@@ -29,8 +29,8 @@ Herda de [managementConditionExpressionModel](../resources/intune-fencing-manage
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |operator|[binaryManagementConditionExpressionOperatorType](../resources/intune-fencing-binarymanagementconditionexpressionoperatortype.md)|O operador usado na avaliação da operação binária. Os valores possíveis são: `or` e `and`.|
-|firstOperand|[managementConditionExpressionModel](../resources/intune-fencing-managementconditionexpressionmodel.md)|O primeiro operando da operação binária.|
-|secondOperand|[managementConditionExpressionModel](../resources/intune-fencing-managementconditionexpressionmodel.md)|O segundo operando da operação binária.|
+|firstOperand|[managementConditionExpressionModel](../resources/intune-fencing-managementconditionexpressionmodel.md)|O primeiro operand da operação binária.|
+|secondOperand|[managementConditionExpressionModel](../resources/intune-fencing-managementconditionexpressionmodel.md)|O segundo operand da operação binária.|
 
 ## <a name="relationships"></a>Relações
 Nenhum

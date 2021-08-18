@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0e6b8d89b2575402cc38b5f86ecd8a872fd666b3
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: 7b75c9ae8d755b74eb16049570382c123315e606fc26b00f3d9badb8f91c7f37
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51133847"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54158493"
 ---
 # <a name="create-intunebrandingprofile"></a>Criar intuneBrandingProfile
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -56,18 +56,18 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar o intune
 |id|Cadeia de caracteres|Chave de Perfil|
 |profileName|Cadeia de caracteres|Nome do perfil|
 |profileDescription|Cadeia de caracteres|Descrição do perfil|
-|isDefaultProfile|Booleano|Boolean que representa se o perfil é usado como padrão ou não|
+|isDefaultProfile|Boolean|Boolean que representa se o perfil é usado como padrão ou não|
 |createdDateTime|DateTimeOffset|Hora em que o BrandingProfile foi criado|
 |lastModifiedDateTime|DateTimeOffset|Hora em que o BrandingProfile foi modificado pela última vez|
 |displayName|Cadeia de caracteres|Nome da empresa/organização exibido para usuários finais|
-|themeColor|[rgbColor](../resources/intune-shared-rgbcolor.md)|Cor de tema principal usada nos aplicativos do Portal da Empresa e no portal da Web|
+|themeColor|[rgbColor](../resources/intune-shared-rgbcolor.md)|Cor de tema principal usada nos aplicativos Portal da Empresa web e portal da Web|
 |showLogo|Booliano|Boolean que representa se as imagens de logotipo fornecidas pelo administrador são mostradas ou não|
 |showDisplayNameNextToLogo|Booliano|Boolean que representa se o nome de exibição fornecido pelo administrador será mostrado ao lado da imagem de logotipo ou não|
-|themeColorLogo|[mimeContent](../resources/intune-shared-mimecontent.md)|Imagem de logotipo exibida em aplicativos do Portal da Empresa que têm um plano de fundo de cor de tema atrás do logotipo|
-|lightBackgroundLogo|[mimeContent](../resources/intune-shared-mimecontent.md)|Imagem de logotipo exibida em aplicativos do Portal da Empresa que têm um plano de fundo claro atrás do logotipo|
-|landingPageCustomizedImage|[mimeContent](../resources/intune-shared-mimecontent.md)|Imagem personalizada exibida na página inicial de aplicativos do Portal da Empresa|
+|themeColorLogo|[mimeContent](../resources/intune-shared-mimecontent.md)|Imagem de logotipo exibida em Portal da Empresa que têm um plano de fundo de cor de tema atrás do logotipo|
+|lightBackgroundLogo|[mimeContent](../resources/intune-shared-mimecontent.md)|Imagem de logotipo exibida em Portal da Empresa que têm um plano de fundo claro atrás do logotipo|
+|landingPageCustomizedImage|[mimeContent](../resources/intune-shared-mimecontent.md)|Imagem personalizada exibida na página inicial Portal da Empresa aplicativos|
 |contactITName|Cadeia de caracteres|Nome da pessoa/organização responsável pelo suporte a IT|
-|contactITPhoneNumber|Cadeia de caracteres|Número de telefone da pessoa/organização responsável pelo suporte a IT|
+|contactITPhoneNumber|Cadeia de caracteres|Telefone número da pessoa/organização responsável pelo suporte a IT|
 |contactITEmailAddress|Cadeia de caracteres|Endereço de email da pessoa/organização responsável pelo suporte a IT|
 |contactITNotes|Cadeia de caracteres|Comentários de texto sobre a pessoa/organização responsável pelo suporte a IT|
 |onlineSupportSiteUrl|Cadeia de caracteres|URL para o site de ajuda de IT da empresa/organização|
@@ -76,15 +76,15 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar o intune
 |customPrivacyMessage|Cadeia de caracteres|Comentários de texto sobre o que o administrador não tem acesso no dispositivo|
 |customCanSeePrivacyMessage|Cadeia de caracteres|Comentários de texto sobre o que o administrador tem acesso no dispositivo|
 |customCantSeePrivacyMessage|Cadeia de caracteres|Comentários de texto sobre o que o administrador não tem acesso no dispositivo|
-|isRemoveDeviceDisabled|Booleano|Boolean que representa se o administrador desabilitou a ação "Remover Dispositivo" em dispositivos de propriedade corporativa.|
-|isFactoryResetDisabled|Booleano|Boolean que representa se o administrador desabilitou a ação 'Redefinição de Fábrica' em dispositivos de propriedade corporativa.|
+|isRemoveDeviceDisabled|Boolean|Boolean que representa se o administrador desabilitou a ação "Remover Dispositivo" em dispositivos de propriedade corporativa.|
+|isFactoryResetDisabled|Boolean|Boolean que representa se o administrador desabilitou a ação 'Redefinição de Fábrica' em dispositivos de propriedade corporativa.|
 |companyPortalBlockedActions|[Coleção companyPortalBlockedAction](../resources/intune-shared-companyportalblockedaction.md)|Coleção de ações bloqueadas no portal da empresa de acordo com os tipos de propriedade da plataforma e do dispositivo.|
-|showAzureADEnterpriseApps|Booleano|Boolean que indica se os aplicativos corporativos do AzureAD serão mostrados no Portal da Empresa|
-|showOfficeWebApps|Booleano|Boolean que indica se o Office WebApps será mostrado no Portal da Empresa|
-|sendDeviceOwnershipChangePushNotification|Booleano|Boolean que indica se uma notificação por push é enviada aos usuários quando o tipo de propriedade do dispositivo muda de pessoal para corporativo|
+|showAzureADEnterpriseApps|Boolean|Boolean que indica se os aplicativos Enterprise AzureAD serão mostrados em Portal da Empresa|
+|showOfficeWebApps|Boolean|Boolean que indica se Office WebApps serão mostrados em Portal da Empresa|
+|sendDeviceOwnershipChangePushNotification|Boolean|Boolean que indica se uma notificação por push é enviada aos usuários quando o tipo de propriedade do dispositivo muda de pessoal para corporativo|
 |enrollmentAvailability|[enrollmentAvailabilityOptions](../resources/intune-shared-enrollmentavailabilityoptions.md)|Fluxo de registro de dispositivo personalizado exibido para o usuário final . Os valores possíveis são: `availableWithPrompts`, `availableWithoutPrompts`, `unavailable`.|
-|disableClientTelemetry|Booleano|Aplica-se à telemetria enviada de todos os clientes para o serviço do Intune. Quando desabilitado, todos os avisos de solução de problemas e problemas proativos dentro do cliente são desativados, e as configurações de telemetria aparecem inativas ou ocultas para o usuário do dispositivo.|
-|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de marcas de escopo atribuídas ao perfil de identidade visual|
+|disableClientTelemetry|Boolean|Aplica-se à telemetria enviada de todos os clientes para o serviço do Intune. Quando desabilitado, todos os avisos de solução de problemas e problemas proativos dentro do cliente são desativados, e as configurações de telemetria aparecem inativas ou ocultas para o usuário do dispositivo.|
+|roleScopeTagIds|String collection|Lista de marcas de escopo atribuídas ao perfil de identidade visual|
 
 
 

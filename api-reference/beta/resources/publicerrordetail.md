@@ -1,29 +1,29 @@
 ---
-title: tipo de recurso publicErrorDetail
+title: Tipo de recurso publicErrorDetail
 description: Representa os detalhes de um erro.
 author: AkJo
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 8620d19d1cd540f7ed523a392e71c304cbbf1774
-ms.sourcegitcommit: f9f95402b8a15152ede90dd736b03d532204fc2e
+ms.openlocfilehash: 3d629816bb8d06065ed74a1ff8d19638a2a84a2d964945882ec0cf57a3c7d2a3
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49659398"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54226129"
 ---
-# <a name="publicerrordetail-resource-type"></a>tipo de recurso publicErrorDetail
+# <a name="publicerrordetail-resource-type"></a>Tipo de recurso publicErrorDetail
 
 Namespace: microsoft.graph
 
-Representa os detalhes de [publicError](../resources/publicerror.md) ou [publicInnerError](../resources/publicinnererror.md).
+Representa os detalhes [de publicError](../resources/publicerror.md) ou [publicInnerError](../resources/publicinnererror.md).
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|código|String|O código de erro.|
+|código|Cadeia de caracteres|O código de erro.|
 |mensagem|String|A mensagem de erro.|
-|destino|String|O destino do erro.|
+|destino|Cadeia de caracteres|O destino do erro.|
 
 ## <a name="relationships"></a>Relações
 Nenhum

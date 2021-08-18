@@ -5,18 +5,16 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e6cc7b00e0220a0337547ac994b266ce951961c9
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: 55c5484f482cda8d1f7f16deeebaeb81793d9389
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51151855"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58260856"
 ---
 # <a name="create-mobileappintentandstate"></a>Criar mobileAppIntentAndState
 
 Namespace: microsoft.graph
-
-> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -68,7 +66,7 @@ Se tiver êxito, este método retornará um código de resposta e um `201 Create
 ### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
 ``` http
-POST https://graph.microsoft.com/beta/users/{usersId}/mobileAppIntentAndStates
+POST https://graph.microsoft.com/v1/users/{usersId}/mobileAppIntentAndStates
 Content-type: application/json
 Content-length: 831
 

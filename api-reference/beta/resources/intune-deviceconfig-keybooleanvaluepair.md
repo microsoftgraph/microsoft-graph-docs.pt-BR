@@ -1,26 +1,26 @@
 ---
-title: tipo de recurso keyBooleanValuePair
-description: Um par chave-valor com uma chave de cadeia de caracteres e um valor Boolean.
+title: Tipo de recurso keyBooleanValuePair
+description: Um par de valores-chave com uma chave de cadeia de caracteres e um valor Boolean.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0d034eea836ed59eecfa712b80d5cadcbb01ea12
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 3a4e3e036e5811070ab945ebf47ee1fbd8b7928e664fee70bb23a62905870af4
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49269207"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54203047"
 ---
-# <a name="keybooleanvaluepair-resource-type"></a>tipo de recurso keyBooleanValuePair
+# <a name="keybooleanvaluepair-resource-type"></a>Tipo de recurso keyBooleanValuePair
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Um par chave-valor com uma chave de cadeia de caracteres e um valor Boolean.
+Um par de valores-chave com uma chave de cadeia de caracteres e um valor Boolean.
 
 
 Herda de [keyTypedValuePair](../resources/intune-deviceconfig-keytypedvaluepair.md)
@@ -28,8 +28,8 @@ Herda de [keyTypedValuePair](../resources/intune-deviceconfig-keytypedvaluepair.
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|key|String|A chave de cadeia de caracteres do par chave-valor. Herdado de [keyTypedValuePair](../resources/intune-deviceconfig-keytypedvaluepair.md)|
-|value|Boolean|O valor booliano do par chave-valor.|
+|key|Cadeia de caracteres|A chave de cadeia de caracteres do par de valores-chave. Herdado de [keyTypedValuePair](../resources/intune-deviceconfig-keytypedvaluepair.md)|
+|value|Boolean|O valor Boolean do par de valores-chave.|
 
 ## <a name="relationships"></a>Relações
 Nenhum

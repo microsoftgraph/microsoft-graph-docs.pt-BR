@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b98199e9e5f691cbceead1b22657bb31c2fb6b6c
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: 967cc17b592f685284a68745cd9134bb1d22adfaf5a02694b9acdaf3178d0df2
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51136633"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54228405"
 ---
 # <a name="update-devicemanagementsettingcategory"></a>Atualizar deviceManagementSettingCategory
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -55,7 +55,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [deviceM
 |:---|:---|:---|
 |id|Cadeia de caracteres|A ID da categoria|
 |displayName|Cadeia de caracteres|O nome da categoria|
-|hasRequiredSetting|Booleano|A categoria contém a configuração necessária de nível superior|
+|hasRequiredSetting|Boolean|A categoria contém a configuração necessária de nível superior|
 
 
 

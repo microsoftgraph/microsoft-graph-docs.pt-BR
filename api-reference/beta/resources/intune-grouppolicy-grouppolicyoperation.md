@@ -1,22 +1,22 @@
 ---
-title: tipo de recurso groupPolicyOperation
+title: Tipo de recurso groupPolicyOperation
 description: A entidade representa uma operação de política de grupo.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: ff1f165c83d7d0763da320ffd33a3bd6c1dda3a1
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: b469baabe89ea5a05477fb1734fe0bfc4b2a63d103cb050efb541cac020e6f0a
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49259715"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54251166"
 ---
-# <a name="grouppolicyoperation-resource-type"></a>tipo de recurso groupPolicyOperation
+# <a name="grouppolicyoperation-resource-type"></a>Tipo de recurso groupPolicyOperation
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -25,19 +25,19 @@ A entidade representa uma operação de política de grupo.
 ## <a name="methods"></a>Métodos
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
-|[Listar groupPolicyOperations](../api/intune-grouppolicy-grouppolicyoperation-list.md)|coleção [groupPolicyOperation](../resources/intune-grouppolicy-grouppolicyoperation.md)|Listar Propriedades e relações dos objetos [groupPolicyOperation](../resources/intune-grouppolicy-grouppolicyoperation.md) .|
-|[Obter groupPolicyOperation](../api/intune-grouppolicy-grouppolicyoperation-get.md)|[groupPolicyOperation](../resources/intune-grouppolicy-grouppolicyoperation.md)|Leia as propriedades e as relações do objeto [groupPolicyOperation](../resources/intune-grouppolicy-grouppolicyoperation.md) .|
-|[Criar groupPolicyOperation](../api/intune-grouppolicy-grouppolicyoperation-create.md)|[groupPolicyOperation](../resources/intune-grouppolicy-grouppolicyoperation.md)|Criar um novo objeto [groupPolicyOperation](../resources/intune-grouppolicy-grouppolicyoperation.md) .|
-|[Excluir groupPolicyOperation](../api/intune-grouppolicy-grouppolicyoperation-delete.md)|Nenhum|Exclui [groupPolicyOperation](../resources/intune-grouppolicy-grouppolicyoperation.md).|
-|[Atualizar groupPolicyOperation](../api/intune-grouppolicy-grouppolicyoperation-update.md)|[groupPolicyOperation](../resources/intune-grouppolicy-grouppolicyoperation.md)|Atualiza as propriedades de um objeto [groupPolicyOperation](../resources/intune-grouppolicy-grouppolicyoperation.md) .|
+|[Listar groupPolicyOperations](../api/intune-grouppolicy-grouppolicyoperation-list.md)|[coleção groupPolicyOperation](../resources/intune-grouppolicy-grouppolicyoperation.md)|Listar propriedades e relações dos [objetos groupPolicyOperation.](../resources/intune-grouppolicy-grouppolicyoperation.md)|
+|[Obter groupPolicyOperation](../api/intune-grouppolicy-grouppolicyoperation-get.md)|[groupPolicyOperation](../resources/intune-grouppolicy-grouppolicyoperation.md)|Ler propriedades e relações do [objeto groupPolicyOperation.](../resources/intune-grouppolicy-grouppolicyoperation.md)|
+|[Criar groupPolicyOperation](../api/intune-grouppolicy-grouppolicyoperation-create.md)|[groupPolicyOperation](../resources/intune-grouppolicy-grouppolicyoperation.md)|Crie um novo [objeto groupPolicyOperation.](../resources/intune-grouppolicy-grouppolicyoperation.md)|
+|[Excluir groupPolicyOperation](../api/intune-grouppolicy-grouppolicyoperation-delete.md)|Nenhum|Exclui um [groupPolicyOperation](../resources/intune-grouppolicy-grouppolicyoperation.md).|
+|[Atualizar groupPolicyOperation](../api/intune-grouppolicy-grouppolicyoperation-update.md)|[groupPolicyOperation](../resources/intune-grouppolicy-grouppolicyoperation.md)|Atualize as propriedades de [um objeto groupPolicyOperation.](../resources/intune-grouppolicy-grouppolicyoperation.md)|
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|OperationType|[groupPolicyOperationType](../resources/intune-grouppolicy-grouppolicyoperationtype.md)|O tipo de operação de política de grupo. Os valores possíveis são: `none`, `upload`, `uploadNewVersion`, `addLanguageFiles`, `removeLanguageFiles`, `updateLanguageFiles`, `remove`.|
-|operationStatus|[groupPolicyOperationStatus](../resources/intune-grouppolicy-grouppolicyoperationstatus.md)|O status da operação da política de grupo. Os valores possíveis são: `unknown`, `inProgress`, `success`, `failed`.|
-|statusDetails|String|Detalhes do status da operação da política de grupo.|
-|id|String|Chave da entidade.|
+|operationType|[groupPolicyOperationType](../resources/intune-grouppolicy-grouppolicyoperationtype.md)|O tipo de operação de política de grupo. Os valores possíveis são: `none`, `upload`, `uploadNewVersion`, `addLanguageFiles`, `removeLanguageFiles`, `updateLanguageFiles`, `remove`.|
+|operationStatus|[groupPolicyOperationStatus](../resources/intune-grouppolicy-grouppolicyoperationstatus.md)|O status da operação de política de grupo. Os valores possíveis são: `unknown`, `inProgress`, `success`, `failed`.|
+|statusDetails|Cadeia de caracteres|O detalhe do status da operação de política de grupo.|
+|id|Cadeia de caracteres|Chave da entidade.|
 |lastModifiedDateTime|DateTimeOffset|A data e a hora em que a entidade foi modificada pela última vez.|
 
 ## <a name="relationships"></a>Relações

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 05ec72fd936c44d0414c9b9b983d5e0fc1275fe0
-ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
+ms.openlocfilehash: 7c19893be9107acc934e251baa702f6d2908f2aee99c05123b31b1fa73337dca
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "52666594"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54246182"
 ---
 # <a name="devicemanagementconfigurationchoicesettingvalue-resource-type"></a>Tipo de recurso deviceManagementConfigurationChoiceSettingValue
 
@@ -33,7 +33,7 @@ Herda de [deviceManagementConfigurationSettingValue](../resources/intune-devicec
 |children|[Coleção deviceManagementConfigurationSettingInstance](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettinginstance.md)|Configurações filho.|
 
 ## <a name="relationships"></a>Relações
-Nenhuma
+Nenhum
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
