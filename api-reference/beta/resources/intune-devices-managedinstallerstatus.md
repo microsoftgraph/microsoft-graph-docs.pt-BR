@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 3583804faff1884b5ce288f05a903ba99df9dcbf
-ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
+ms.openlocfilehash: 469dd0f968e3fbcb7283e5e0609f9fe9217c7a9af89a7286f7ef81ac500ed550
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "52665639"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54249878"
 ---
 # <a name="managedinstallerstatus-enum-type"></a>tipo de número managedInstallerStatus
 
@@ -26,7 +26,7 @@ ManagedInstallerStatus
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |desabilitadas|0|O Instalador Gerenciado está Desabilitado|
-|habilitadas|1|O Instalador Gerenciado está habilitado|
+|habilitadas|1 |O Instalador Gerenciado está habilitado|
 
 
 

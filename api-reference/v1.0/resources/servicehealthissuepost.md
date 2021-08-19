@@ -5,12 +5,12 @@ author: payiAzure
 localization_priority: Normal
 ms.prod: service-communications
 doc_type: resourcePageType
-ms.openlocfilehash: c005beb7b27956cad6f42c7251bb15be7024415c5096d8f012a88049534b6cad
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: a53f09c6fc32de1c65e52e2554aa89b634f2b0e3
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54243006"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58266895"
 ---
 # <a name="servicehealthissuepost-resource-type"></a>Tipo de recurso serviceHealthIssuePost
 

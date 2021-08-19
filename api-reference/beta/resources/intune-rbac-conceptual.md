@@ -1,15 +1,15 @@
 ---
 title: Controle de acesso baseado em função no Microsoft Intune
-description: Lista a API do Microsoft Graph para os pontos de extremidade do Intune (REST) que definem e gerenciam o controle de acesso baseado em função (RBAC) para uma organização de locatário.
+description: Lista a API do Microsoft Graph para pontos de extremidade do Intune (REST) que definem e gerenciam o RBAC (controle de acesso baseado em função) para uma organização de locatários.
 localization_priority: Normal
 author: dougeby
 ms.prod: intune
-ms.openlocfilehash: a95c71613755cd9853cca4a56d4cd36caf0d7df7
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ad014fe19bf427ccb4c4d8c60f2145ef96b1c1a860d419d991d75b759ea3ee6d
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48084419"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54126890"
 ---
 # <a name="role-based-access-control-in-microsoft-intune"></a>Controle de acesso baseado em função no Microsoft Intune
 
@@ -26,7 +26,7 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar o controle de 
 - [Detalhes de função atribuídos ao gerenciamento de aplicativo e dispositivo](intune-rbac-deviceandappmanagementassignedroledetails.md)
 - [Atribuição de função de gerenciamento de aplicativo e dispositivo](intune-rbac-deviceandappmanagementroleassignment.md)
 - [Definição de função de gerenciamento de aplicativo e dispositivo](intune-rbac-deviceandappmanagementroledefinition.md)
-- [Vários aplicativos RBAC](intune-rbac-rbacapplicationmultiple.md)
+- [Múltiplos aplicativos Rbac](intune-rbac-rbacapplicationmultiple.md)
 - [Ação de recurso](intune-rbac-resourceaction.md)
 - [Operação de recurso](intune-rbac-resourceoperation.md)
 - [Atribuição de função](intune-rbac-roleassignment.md)
@@ -36,5 +36,3 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar o controle de 
 - [Permissão de função](intune-rbac-rolepermission.md)
 - [Marca de escopo de função](intune-rbac-rolescopetag.md)
 - [Atribuição automática de marca de escopo de função](intune-rbac-rolescopetagautoassignment.md)
-
-

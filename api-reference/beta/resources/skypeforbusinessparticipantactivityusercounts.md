@@ -1,18 +1,18 @@
 ---
-title: tipo de recurso skypeForBusinessParticipantActivityUserCounts
+title: Tipo de recurso skypeForBusinessParticipantActivityUserCounts
 description: Veja a seguir uma representação JSON do recurso.
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: kszb
-ms.openlocfilehash: 1a2d8d94adcfc863efd014a14bcec0ca469b056b
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f76a18a3129ed90debc206a2c956df6a369094c4419c27b281cb5cdfcd98385f
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48063853"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54248268"
 ---
-# <a name="skypeforbusinessparticipantactivityusercounts-resource-type"></a>tipo de recurso skypeForBusinessParticipantActivityUserCounts
+# <a name="skypeforbusinessparticipantactivityusercounts-resource-type"></a>Tipo de recurso skypeForBusinessParticipantActivityUserCounts
 
 Namespace: microsoft.graph
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 | Propriedade          | Tipo   |
 | :---------------- | :----- |
-| respectiva                | Int64  |
+| im                | Int64  |
 | audioVideo        | Int64  |
 | appSharing        | Int64  |
 | web               | Int64  |
