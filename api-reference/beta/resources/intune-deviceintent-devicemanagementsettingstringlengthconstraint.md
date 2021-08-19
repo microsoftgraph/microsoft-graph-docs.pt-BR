@@ -1,26 +1,26 @@
 ---
-title: tipo de recurso deviceManagementSettingStringLengthConstraint
-description: Restrição que impõe um determinado intervalo de duração da cadeia de caracteres
+title: Tipo de recurso deviceManagementSettingStringLengthConstraint
+description: Restrição que aplica um determinado intervalo de comprimento de cadeia de caracteres
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0b1837c127fa66ee638423c185065031094e7986
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 4348ac61cd132e3ee361dd3ecc374d56d5bc177ca25521ab485b61718d00c439
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49209581"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54172992"
 ---
-# <a name="devicemanagementsettingstringlengthconstraint-resource-type"></a>tipo de recurso deviceManagementSettingStringLengthConstraint
+# <a name="devicemanagementsettingstringlengthconstraint-resource-type"></a>Tipo de recurso deviceManagementSettingStringLengthConstraint
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Restrição que impõe um determinado intervalo de duração da cadeia de caracteres
+Restrição que aplica um determinado intervalo de comprimento de cadeia de caracteres
 
 
 Herda de [deviceManagementConstraint](../resources/intune-deviceintent-devicemanagementconstraint.md)
@@ -28,8 +28,8 @@ Herda de [deviceManagementConstraint](../resources/intune-deviceintent-deviceman
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|minimumLength|Int32|O tamanho mínimo permitido da cadeia de caracteres|
-|maximumLength|Int32|O tamanho máximo permitido da cadeia de caracteres|
+|minimumLength|Int32|O comprimento mínimo permitido da cadeia de caracteres|
+|maximumLength|Int32|O comprimento máximo permitido da cadeia de caracteres|
 
 ## <a name="relationships"></a>Relações
 Nenhum

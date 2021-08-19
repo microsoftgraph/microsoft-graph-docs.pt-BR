@@ -1,37 +1,37 @@
 ---
-title: tipo de recurso win32LobAppMsiInformation
-description: Contém as propriedades do aplicativo MSI para um aplicativo Win32.
+title: Tipo de recurso win32LobAppMsiInformation
+description: Contém propriedades de aplicativo MSI para um aplicativo Win32.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 6fb872d970256a795c51570d68b3279fce43506f
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 5d115b746161bf91702a80ff2a69e6da0cfe4b37636286ef431f5905295e29f8
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49274002"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54131266"
 ---
-# <a name="win32lobappmsiinformation-resource-type"></a>tipo de recurso win32LobAppMsiInformation
+# <a name="win32lobappmsiinformation-resource-type"></a>Tipo de recurso win32LobAppMsiInformation
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Contém as propriedades do aplicativo MSI para um aplicativo Win32.
+Contém propriedades de aplicativo MSI para um aplicativo Win32.
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |productCode|String|O código do produto MSI.|
 |productVersion|String|A versão do produto MSI.|
-|upgradeCode|String|O código de atualização MSI.|
-|requiresReboot|Booliano|Se o aplicativo MSI exige a reinicialização do computador para concluir a instalação.|
-|PackageType|[win32LobAppMsiPackageType](../resources/intune-apps-win32lobappmsipackagetype.md)|O tipo de pacote MSI. Os valores possíveis são: `perMachine`, `perUser`, `dualPurpose`.|
+|upgradeCode|Cadeia de caracteres|O código de atualização MSI.|
+|requiresReboot|Boolean|Se o aplicativo MSI exige que o computador seja reiniciado para concluir a instalação.|
+|packageType|[win32LobAppMsiPackageType](../resources/intune-apps-win32lobappmsipackagetype.md)|O tipo de pacote MSI. Os valores possíveis são: `perMachine`, `perUser`, `dualPurpose`.|
 |productName|Cadeia de caracteres|O nome do produto MSI.|
-|publicador|String|O Publicador MSI.|
+|publicador|String|O editor MSI.|
 
 ## <a name="relationships"></a>Relações
 Nenhum

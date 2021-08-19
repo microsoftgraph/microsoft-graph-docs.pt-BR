@@ -5,12 +5,12 @@ localization_priority: Normal
 author: madansr7
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 9553accf83925e1ab33c36f353a7ca74da6ad623
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 30b46570c29ed86e645865a4cb10660c2a752a63
+ms.sourcegitcommit: 6f04ad0e0cde696661511dcdf343942b43f73fc6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58262383"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58396757"
 ---
 # <a name="create-appmanagementpolicy"></a>Criar appManagementPolicy
 
@@ -26,8 +26,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)                                                |
 | :------------------------------------- | :--------------------------------------------------------- |
-| Delegada (conta corporativa ou de estudante)     | Policy.ReadWrite.ApplicationConfiguration |
-| Delegada (conta pessoal da Microsoft) | Sem suporte.                                             |
+| Delegado (conta corporativa ou de estudante)     | Policy.ReadWrite.ApplicationConfiguration |
+| Delegado (conta pessoal da Microsoft) | Sem suporte.                                             |
 | Aplicativo                            | Policy.ReadWrite.ApplicationConfiguration |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -61,7 +61,7 @@ Este é um exemplo de solicitação. Essa solicitação criou uma política de g
 
 - Habilita a política.
 - Bloqueia a criação de novas senhas para aplicativos e entidades de serviço após 2019-10-19 às 10:37 hora UTC.
-- Limita segredos de senha para aplicativos e entidades de serviço criadas após 2019-10-19 às 10:37 HORA UTC para menos de xx dias.
+- Limita segredos de senha para aplicativos e entidades de serviço criadas após 2019-10-19 às 10:37 HORA UTC para menos de 4 dias, 12 horas, 30 minutos e 5 segundos.
 
 
 # <a name="http"></a>[HTTP](#tab/http)

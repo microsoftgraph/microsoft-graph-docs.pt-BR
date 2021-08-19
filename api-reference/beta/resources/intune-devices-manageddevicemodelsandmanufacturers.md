@@ -1,32 +1,32 @@
 ---
-title: tipo de recurso managedDeviceModelsAndManufacturers
-description: Modela e fabrica meatadata para dispositivos gerenciados na conta
+title: Tipo de recurso managedDeviceModelsAndManufacturers
+description: Modelos e Manufaturas de carmadata para dispositivos gerenciados na conta
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 6ed8f1d2bc55e05edc54c3ec19d84c5d7fc46e96
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 3d57976ef6d66205a79f60b242ccefc3f8b5bcb20f46ace5be2ab856dc193fd4
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49208818"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54249920"
 ---
-# <a name="manageddevicemodelsandmanufacturers-resource-type"></a>tipo de recurso managedDeviceModelsAndManufacturers
+# <a name="manageddevicemodelsandmanufacturers-resource-type"></a>Tipo de recurso managedDeviceModelsAndManufacturers
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Modela e fabrica meatadata para dispositivos gerenciados na conta
+Modelos e Manufaturas de carmadata para dispositivos gerenciados na conta
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|deviceModels|Coleção de cadeias de caracteres|Lista de modelos para dispositivos gerenciados na conta|
-|deviceManufacturers|Coleção de cadeias de caracteres|Lista de fabricantes de dispositivos gerenciados na conta|
+|deviceModels|String collection|Lista de modelos para dispositivos gerenciados na conta|
+|deviceManufacturers|String collection|Lista de Manufaturas para dispositivos gerenciados na conta|
 
 ## <a name="relationships"></a>Relações
 Nenhum

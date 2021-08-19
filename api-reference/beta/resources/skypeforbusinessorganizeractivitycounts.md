@@ -1,18 +1,18 @@
 ---
-title: tipo de recurso skypeForBusinessOrganizerActivityCounts
+title: Tipo de recurso skypeForBusinessOrganizerActivityCounts
 description: Veja a seguir uma representação JSON do recurso.
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: kszb
-ms.openlocfilehash: aa0721c13d78be8b88e399b1342d8f0c0ecd3efa
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 1289e1001a8d6b3cdb2cba69aa85b1b1c31cc023c71b0d0b802adc39c3c2ebd5
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47997513"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54241286"
 ---
-# <a name="skypeforbusinessorganizeractivitycounts-resource-type"></a>tipo de recurso skypeForBusinessOrganizerActivityCounts
+# <a name="skypeforbusinessorganizeractivitycounts-resource-type"></a>Tipo de recurso skypeForBusinessOrganizerActivityCounts
 
 Namespace: microsoft.graph
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 | Propriedade           | Tipo   |
 | :----------------- | :----- |
-| respectiva                 | Int64  |
+| im                 | Int64  |
 | audioVideo         | Int64  |
 | appSharing         | Int64  |
 | web                | Int64  |
@@ -28,7 +28,7 @@ Namespace: microsoft.graph
 | dialInOutMicrosoft | Int64  |
 | reportRefreshDate  | Data   |
 | reportDate         | Data   |
-| reportPeriod       | String |
+| reportPeriod       | Cadeia de caracteres |
 
 ## <a name="json-representation"></a>Representação JSON
 

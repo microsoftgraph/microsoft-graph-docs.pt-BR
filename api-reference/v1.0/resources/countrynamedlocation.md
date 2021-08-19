@@ -5,12 +5,12 @@ localization_priority: Normal
 author: videor
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 2e192661873b6e804156d413388f30fd57b7b1de62c511a2e0f029615292a47a
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 2952e5b391adf12d53b32d1f545fd1c92c623233
+ms.sourcegitcommit: 6f04ad0e0cde696661511dcdf343942b43f73fc6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54121272"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58397065"
 ---
 # <a name="countrynamedlocation-resource-type"></a>Tipo de recurso countryNamedLocation
 
@@ -28,14 +28,14 @@ Herda de [namedLocation](../resources/namedLocation.md)
 | [Criar countryNamedLocation](../api/conditionalaccessroot-post-namedlocations.md) | [countryNamedLocation](countryNamedLocation.md) | Crie um novo **objeto countryNamedLocation.** |
 | [Obter countryNamedLocation](../api/countrynamedlocation-get.md) | [countryNamedLocation](countrynamedlocation.md) | Leia as propriedades e as relações de um **objeto countryNamedLocation.** |
 | [Atualizar countryNamedLocation](../api/countrynamedlocation-update.md) | [countryNamedLocation](countrynamedlocation.md) | Atualize um **objeto countryNamedLocation.** |
-| [Excluir countryNamedLocation](../api/countrynamedlocation-delete.md) | None | Exclua **um objeto countryNamedLocation.** |
+| [Excluir countryNamedLocation](../api/countrynamedlocation-delete.md) | Nenhum | Exclua **um objeto countryNamedLocation.** |
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
 |countriesAndRegions|String collection|Lista de países e/ou regiões no formato de duas letras especificado pela ISO 3166-2.|
-|countryLookupMethod|countryLookupMethodType|Determina em qual método é usado para decidir em qual país o usuário está localizado. Os valores possíveis são: `clientIpAddress` e `authenticatorAppGps`.|
+|countryLookupMethod|countryLookupMethodType|Determina em qual método é usado para decidir em qual país o usuário está localizado. Os valores possíveis são: `clientIpAddress` e `authenticatorAppGps`. Observação: `authenticatorAppGps` ainda não há suporte no Microsoft Cloud for US Government.|
 |createdDateTime|DateTimeOffset|O tipo Timestamp representa a data e a hora de criação do local usando o formato ISO 8601 e está sempre em horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`. Somente leitura. Herdado [de namedLocation](../resources/namedLocation.md).|
 |displayName|Cadeia de caracteres|Nome acessível para humanos do local. Herdado [de namedLocation](../resources/namedLocation.md).|
 |id|Cadeia de caracteres|Identificador de um objeto namedLocation. Apenas leitura. Herdado [de namedLocation](../resources/namedLocation.md).|
