@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 42b4903965d90641955659277360c46428562ed4
-ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
+ms.openlocfilehash: c2688b4b3459232af9f2948e3f1cdb2c7ac7fc20afeecacd209e3eb4e0df4374
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "52666755"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54232591"
 ---
 # <a name="chromeosdeviceproperty-resource-type"></a>Tipo de recurso chromeOSDeviceProperty
 
@@ -25,13 +25,13 @@ Representa uma propriedade do dispositivo ChromeOS.
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|nome|String|Nome da propriedade|
+|nome|Cadeia de caracteres|Nome da propriedade|
 |value|Cadeia de caracteres|Valor da propriedade|
-|valueType|String|Tipo do valor|
-|atualizável|Booleano|Se essa propriedade é atualizável|
+|valueType|Cadeia de caracteres|Tipo do valor|
+|atualizável|Boolean|Se essa propriedade é atualizável|
 
 ## <a name="relationships"></a>Relações
-Nenhuma
+Nenhum
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.

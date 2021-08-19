@@ -1,22 +1,22 @@
 ---
-title: tipo de enumeração disktype
+title: Tipo de número diskType
 description: Ainda não documentado
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 0f5a9d8ded765e353c1edefb5758472af841c5f0
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 5edb62400ff182c43c4d0173afdfce34c581ef958c4977b1b1a20a89b2c7a79c
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49209091"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54156188"
 ---
-# <a name="disktype-enum-type"></a>tipo de enumeração disktype
+# <a name="disktype-enum-type"></a>Tipo de número diskType
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -25,9 +25,9 @@ Ainda não documentado
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|desconhecida|,0|Ainda não documentado|
-|rígido|1|Ainda não documentado|
-|ssd|duas|Ainda não documentado|
+|unkown|0|Ainda não documentado|
+|hdd|1 |Ainda não documentado|
+|ssd|2|Ainda não documentado|
 
 
 

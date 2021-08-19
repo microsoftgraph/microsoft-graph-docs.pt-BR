@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: b32e08474296894e2bb54135f6daab347b6fb7fa
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 1796fa90392b07e01a5dc4c5b302b61721baf1185e3068585418c0a1e1cfa8b1
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49260807"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54232864"
 ---
 # <a name="applistitem-resource-type"></a>Tipo de recurso appListItem
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -25,10 +25,10 @@ Representa um aplicativo na lista de aplicativos gerenciados
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|nome|String|O nome do aplicativo|
+|nome|Cadeia de caracteres|O nome do aplicativo|
 |distribuidor|Cadeia de caracteres|O distribuidor do aplicativo|
 |appStoreUrl|Cadeia de caracteres|A URL da loja do aplicativo|
-|appId|String|O aplicativo ou identificador do pacote do aplicativo|
+|appId|Cadeia de caracteres|O aplicativo ou identificador do pacote do aplicativo|
 
 ## <a name="relationships"></a>Relações
 Nenhum

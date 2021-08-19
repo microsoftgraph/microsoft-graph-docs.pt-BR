@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0c5433edec34908e7b10e6212387b442e76edcd6
-ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
+ms.openlocfilehash: 04ad5a4dd42a9cf220a85bc1a6d4db8e4eb68ba9d53ae3514c95f731d5d9e310
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "52666559"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54182942"
 ---
 # <a name="devicemanagementconfigurationgroupsettingcollectioninstancetemplate-resource-type"></a>Tipo de recurso deviceManagementConfigurationGroupSettingCollectionInstanceTemplate
 
@@ -28,14 +28,14 @@ Herda de [deviceManagementConfigurationSettingInstanceTemplate](../resources/int
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|settingInstanceTemplateId|String|Id do modelo de instância de configuração Herdada [de deviceManagementConfigurationSettingInstanceTemplate](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettinginstancetemplate.md)|
-|settingDefinitionId|String|Definição Id De definição Herdada [de deviceManagementConfigurationSettingInstanceTemplate](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettinginstancetemplate.md)|
+|settingInstanceTemplateId|Cadeia de caracteres|Id do modelo de instância de configuração Herdada [de deviceManagementConfigurationSettingInstanceTemplate](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettinginstancetemplate.md)|
+|settingDefinitionId|Cadeia de caracteres|Definição Id De definição Herdada [de deviceManagementConfigurationSettingInstanceTemplate](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettinginstancetemplate.md)|
 |isRequired|Booliano|Indica se uma política deve especificar essa configuração. Herdado [de deviceManagementConfigurationSettingInstanceTemplate](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettinginstancetemplate.md)|
 |groupSettingCollectionValueTemplate|[Coleção deviceManagementConfigurationGroupSettingValueTemplate](../resources/intune-deviceconfigv2-devicemanagementconfigurationgroupsettingvaluetemplate.md)|Modelo de valor da coleção de configurações de grupo|
-|allowUnmanagedValues|Booleano|A política vinculada pode anexar valores que não estão presentes no modelo.|
+|allowUnmanagedValues|Boolean|A política vinculada pode anexar valores que não estão presentes no modelo.|
 
 ## <a name="relationships"></a>Relações
-Nenhuma
+Nenhum
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.

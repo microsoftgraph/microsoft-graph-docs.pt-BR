@@ -1,33 +1,33 @@
 ---
-title: tipo de recurso mobileAppInstallTimeSettings
-description: Contém propriedades usadas para determinar quando oferecer um aplicativo a dispositivos e quando instalar o aplicativo em dispositivos.
+title: Tipo de recurso mobileAppInstallTimeSettings
+description: Contém propriedades usadas para determinar quando oferecer um aplicativo para dispositivos e quando instalar o aplicativo em dispositivos.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8aec3852f68813d6d42acbec73f76c6e32f9ab92
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 4b22ae3e5e9b94527417f671d0c6ca3a3545fee6e6819ef31743d0be410129e2
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49266127"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54251124"
 ---
-# <a name="mobileappinstalltimesettings-resource-type"></a>tipo de recurso mobileAppInstallTimeSettings
+# <a name="mobileappinstalltimesettings-resource-type"></a>Tipo de recurso mobileAppInstallTimeSettings
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Contém propriedades usadas para determinar quando oferecer um aplicativo a dispositivos e quando instalar o aplicativo em dispositivos.
+Contém propriedades usadas para determinar quando oferecer um aplicativo para dispositivos e quando instalar o aplicativo em dispositivos.
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|useLocalTime|Booliano|Se a hora do dispositivo local ou a hora UTC deve ser usada ao determinar os horários disponíveis e prazos.|
-|startDateTime|DateTimeOffset|O horário em que o aplicativo deve estar disponível para instalação.|
-|deadlineDateTime|DateTimeOffset|O horário em que o aplicativo deve ser instalado.|
+|useLocalTime|Boolean|Se a hora do dispositivo local ou utc deve ser usada ao determinar os tempos disponíveis e de prazo.|
+|startDateTime|DateTimeOffset|O momento em que o aplicativo deve estar disponível para instalação.|
+|deadlineDateTime|DateTimeOffset|O momento em que o aplicativo deve ser instalado.|
 
 ## <a name="relationships"></a>Relações
 Nenhum

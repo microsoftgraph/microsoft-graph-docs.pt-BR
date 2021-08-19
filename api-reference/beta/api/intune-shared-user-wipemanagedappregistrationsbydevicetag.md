@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: bf8cd20fd822f7fb95f763775c8b693dddcc1267
-ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
+ms.openlocfilehash: df8732634294ad78e6757340336146d55e14cc0489c26f1c2d6f247431801963
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51865023"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54161798"
 ---
 # <a name="wipemanagedappregistrationsbydevicetag-action"></a>Ação wipeManagedAppRegistrationsByDeviceTag
 
 Namespace: microsoft.graph
 
-> **Importante:** APIs na versão /beta do Microsoft Graph estão sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** APIs na versão /beta no Microsoft Graph estão sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -31,7 +31,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Delegada (conta corporativa ou de estudante)||
 | &nbsp;&nbsp; **MAM** | DeviceManagementApps.ReadWrite.All|
 |Delegada (conta pessoal da Microsoft)|Sem suporte.|
-|Application||
+|Aplicativo||
 | &nbsp;&nbsp; **MAM** | DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP

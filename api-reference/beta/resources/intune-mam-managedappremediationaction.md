@@ -1,33 +1,33 @@
 ---
-title: tipo de enumeração managedAppRemediationAction
-description: Uma ação iniciada pelo administrador para ser aplicada em um aplicativo gerenciado.
+title: Tipo de número managedAppRemediationAction
+description: Uma ação iniciada pelo administrador a ser aplicada em um aplicativo gerenciado.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 4784a889b5677c6744636284af2c29034764282c
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 7a8f1329229261c894b3157dc23c1daad05a2b71c46c2efcfe6c23d07fb55d57
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49307441"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54178909"
 ---
-# <a name="managedappremediationaction-enum-type"></a>tipo de enumeração managedAppRemediationAction
+# <a name="managedappremediationaction-enum-type"></a>Tipo de número managedAppRemediationAction
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Uma ação iniciada pelo administrador para ser aplicada em um aplicativo gerenciado.
+Uma ação iniciada pelo administrador a ser aplicada em um aplicativo gerenciado.
 
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|Larga|,0|aplicativo e os dados da empresa correspondentes a serem bloqueados|
-|revelar|1|aplicativo e os dados da empresa correspondentes a serem apagados|
-|emite|duas|o aplicativo e o usuário correspondente serão avisados|
+|block|0|app e os dados da empresa correspondentes a serem bloqueados|
+|wipe|1 |app e os dados da empresa correspondentes a serem apagados|
+|warn|2|app e o usuário correspondente a ser avisado|
 
 
 
