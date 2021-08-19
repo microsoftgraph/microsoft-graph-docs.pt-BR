@@ -1,22 +1,22 @@
 ---
-title: tipo de enumeração hashAlgorithm
+title: Tipo de número hashAlgorithms
 description: Opções de algoritmo de hash.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: c8e693d91894dbf56228d19e60b8a17746b3d549
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: b481811abb43678e1402b99e3cf4c6b2163df371af3581e510928b6dd07221c5
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49301429"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54195103"
 ---
-# <a name="hashalgorithms-enum-type"></a>tipo de enumeração hashAlgorithm
+# <a name="hashalgorithms-enum-type"></a>Tipo de número hashAlgorithms
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -25,8 +25,8 @@ Opções de algoritmo de hash.
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|SHA1|1|Algoritmo de hash SHA-1.|
-|SHA2|duas|Algoritmo de hash SHA-2.|
+|sha1|1 |Algoritmo de hash SHA-1.|
+|sha2|2|Algoritmo de hash SHA-2.|
 
 
 

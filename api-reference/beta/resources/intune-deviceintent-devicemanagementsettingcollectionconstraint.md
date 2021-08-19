@@ -1,22 +1,22 @@
 ---
-title: tipo de recurso deviceManagementSettingCollectionConstraint
+title: Tipo de recurso deviceManagementSettingCollectionConstraint
 description: Restrição que impõe o número máximo de elementos de uma coleção
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 2e97c49beae1efdb63f5a18ff7e70402e6b5c13d
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 45d2ea304187697da21425d3c485f0ffa5671f2d68a4bd3453e12d92da142b86
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49275514"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54156209"
 ---
-# <a name="devicemanagementsettingcollectionconstraint-resource-type"></a>tipo de recurso deviceManagementSettingCollectionConstraint
+# <a name="devicemanagementsettingcollectionconstraint-resource-type"></a>Tipo de recurso deviceManagementSettingCollectionConstraint
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 

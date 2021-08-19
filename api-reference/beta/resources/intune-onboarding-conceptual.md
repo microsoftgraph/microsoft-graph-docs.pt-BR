@@ -1,15 +1,15 @@
 ---
-title: Dispositivos gerenciados pela placa com o Intune-API do Microsoft Graph
-description: Lista a API do Microsoft Graph para os pontos de extremidade do Intune (REST) usados para a integração (configuração e inicialização) de dispositivos para uma organização de locatário.
+title: Dispositivos gerenciados de integração com o Intune - API Graph Microsoft
+description: Lista a API Graph microsoft para pontos de extremidade do Intune (REST) usada para a integração (configurar e inicializar) dispositivos para uma organização de locatários.
 localization_priority: Normal
 author: dougeby
 ms.prod: intune
-ms.openlocfilehash: 5788b1d7a13f0be84b0368dfa73e7932f4820d9d
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: f420420e5e82109e12628f5c2a585e27aee506c9
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49266547"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58256988"
 ---
 # <a name="enroll-devices-for-management-in-intune"></a>Registrar dispositivos para o gerenciamento no Intune
 
@@ -27,9 +27,10 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar registros no I
 - [Parceiro de gerenciamento de conformidade](intune-onboarding-compliancemanagementpartner.md)
 - [Atribuição de parceiro de gerenciamento de conformidade](intune-onboarding-compliancemanagementpartnerassignment.md)
 - [Dados de gerenciamento de aplicativo e dispositivo](intune-onboarding-deviceandappmanagementdata.md)
-- [Configuração de autoridade de cogerenciamento de dispositivos](intune-onboarding-devicecomanagementauthorityconfiguration.md)
+- [Configuração da autoridade de comanagement de dispositivo](intune-onboarding-devicecomanagementauthorityconfiguration.md)
 - [Configuração de limite do registro do dispositivo](intune-onboarding-deviceenrollmentlimitconfiguration.md)
 - [Restrição da plataforma de registro do dispositivo](intune-onboarding-deviceenrollmentplatformrestriction.md)
+- [Configuração de restrição de plataforma de registro de dispositivo](intune-onboarding-deviceenrollmentplatformrestrictionconfiguration.md)
 - [Configuração das restrições da plataforma de registro do dispositivo](intune-onboarding-deviceenrollmentplatformrestrictionsconfiguration.md)
 - [Configuração do Windows Hello para empresas do registro do dispositivo](intune-onboarding-deviceenrollmentwindowshelloforbusinessconfiguration.md)
 - [Nível de acesso do Exchange de gerenciamento de dispositivo](intune-onboarding-devicemanagementexchangeaccesslevel.md)
@@ -45,7 +46,9 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar registros no I
 - [Tipo de aplicativo de parceiro de gerenciamento do dispositivo](intune-onboarding-devicemanagementpartnerapptype.md)
 - [Atribuição de parceiro de gerenciamento de dispositivos](intune-onboarding-devicemanagementpartnerassignment.md)
 - [Estado de locatário de parceiro de gerenciamento do dispositivo](intune-onboarding-devicemanagementpartnertenantstate.md)
+- [Tipo de plataforma do dispositivo](intune-onboarding-deviceplatformtype.md)
 - [Atribuição de configuração do registro](intune-onboarding-enrollmentconfigurationassignment.md)
+- [Tipo de plataforma de restrição de registro](intune-onboarding-enrollmentrestrictionplatformtype.md)
 - [Marca Intune](intune-onboarding-intunebrand.md)
 - [Autoridade MDM](intune-onboarding-mdmauthority.md)
 - [Opções de seleção do portal da Microsoft Store para Empresas](intune-onboarding-microsoftstoreforbusinessportalselectionoptions.md)

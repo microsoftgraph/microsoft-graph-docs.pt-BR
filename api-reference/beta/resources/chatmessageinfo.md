@@ -5,12 +5,12 @@ author: RamjotSingh
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: dc03ee6743aa8115f5a231b3766cc2d6c3d5537b
-ms.sourcegitcommit: 0adbbcbc65b6acab80e9195f13321055994f56be
+ms.openlocfilehash: 289bce30b970edd46f0ad29fdbaa24fd6428c93d
+ms.sourcegitcommit: 6f04ad0e0cde696661511dcdf343942b43f73fc6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "53236286"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58397037"
 ---
 # <a name="chatmessageinfo-resource-type"></a>Tipo de recurso chatMessageInfo
 
@@ -23,11 +23,13 @@ Representa uma visualização de um [recurso chatMessage.](../resources/chatmess
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|corpo|[itemBody](../resources/itembody.md)|Corpo do [chatMessage](../resources/chatmessage.md). Isso ainda conterá marcadores para @mentions e anexos, mesmo que o objeto não retorne @mentions e anexos.|
+|body|[itemBody](../resources/itembody.md)|Corpo do [chatMessage](../resources/chatmessage.md). Isso ainda conterá marcadores para @mentions e anexos, mesmo que o objeto não retorne @mentions e anexos.|
 |createdDateTime|DateTimeOffset|Objeto date time representando a hora em que a mensagem foi criada.|
 |from|[chatMessageFromIdentitySet](../resources/chatmessagefromidentityset.md)|Informações sobre o remetente da mensagem.|
-|id|String|ID do [chatMessage](../resources/chatmessage.md).|
-|isDeleted|Booleano|Se definido como `true` , a mensagem original foi excluída.|
+|id|Cadeia de caracteres|ID do [chatMessage](../resources/chatmessage.md).|
+|isDeleted|Booliano|Se definido como `true` , a mensagem original foi excluída.|
+|messageType|chatMessageType|O tipo de mensagem de chat. Os valores possíveis são: `message`, `unknownFutureValue`, `systemEventMessage`.|
+|eventDetail|[eventMessageDetail](../resources/eventmessagedetail.md)|Somente leitura.  Se presente, representa detalhes de um evento que aconteceu em um chat, um canal ou uma equipe, por exemplo, membros foram adicionados e assim por diante. Para mensagens de evento, a **propriedade messageType** será definida como `systemEventMessage` .|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -53,7 +55,11 @@ Veja a seguir uma representação JSON do recurso.
     "@odata.type": "microsoft.graph.chatMessageFromIdentitySet"
   },
   "createdDateTime": "String (timestamp)",
-  "isDeleted": "Boolean"
+  "isDeleted": "Boolean",
+  "messageType": "String",
+  "eventDetail": {
+    "@odata.type": "microsoft.graph.eventMessageDetail"
+  }
 }
 ```
 

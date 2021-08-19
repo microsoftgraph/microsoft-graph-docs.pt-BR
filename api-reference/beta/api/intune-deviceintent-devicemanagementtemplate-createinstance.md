@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5c581094f94c63014b2d5b8ad47f075d8ddd2a3c
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: 94ed9044034fb581d1b057c9741ce2a0aa25550d9e583b1306e14f4ca93d80da
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51150700"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54157295"
 ---
 # <a name="createinstance-action"></a>ação createInstance
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -55,7 +55,7 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta ação.
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |displayName|Cadeia de caracteres|Ainda não documentado|
-|descrição|Cadeia de caracteres|Ainda não documentado|
+|description|Cadeia de caracteres|Ainda não documentado|
 |settingsDelta|[Coleção deviceManagementSettingInstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md)|Ainda não documentado|
 |roleScopeTagIds|String collection|Ainda não documentado|
 

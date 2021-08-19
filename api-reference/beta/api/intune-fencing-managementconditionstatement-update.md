@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 819d17f2884c1581a088646d4f3e107a32af78b0
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: 2a62b7f9441296eb8fa18066daf4d76c3025eb3e
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51153605"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58263846"
 ---
 # <a name="update-managementconditionstatement"></a>Atualizar managementConditionStatement
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -56,12 +56,12 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [managem
 |:---|:---|:---|
 |id|Cadeia de caracteres|Identificador exclusivo para a instrução de condição de gerenciamento. Valor gerado pelo sistema atribuído quando criado.|
 |displayName|Cadeia de caracteres|O nome definido pelo administrador da instrução de condição de gerenciamento.|
-|descrição|Cadeia de caracteres|A descrição definida pelo administrador da instrução de condição de gerenciamento.|
+|description|Cadeia de caracteres|A descrição definida pelo administrador da instrução de condição de gerenciamento.|
 |createdDateTime|DateTimeOffset|A hora em que a instrução de condição de gerenciamento foi criada. Lado de serviço gerado.|
 |modifiedDateTime|DateTimeOffset|A hora em que a instrução de condição de gerenciamento foi modificada pela última vez. Lado do serviço atualizado.|
 |expressão|[managementConditionExpression](../resources/intune-fencing-managementconditionexpression.md)|A expressão de instrução de condição de gerenciamento usada para avaliar se uma instrução de condição de gerenciamento foi ativada/desativada.|
 |eTag|String|ETag da instrução de condição de gerenciamento. Lado do serviço atualizado.|
-|applicablePlatforms|[Coleção devicePlatformType](../resources/intune-shared-deviceplatformtype.md)|As plataformas aplicáveis para essa instrução de condição de gerenciamento.
+|applicablePlatforms|[Coleção devicePlatformType](../resources/intune-fencing-deviceplatformtype.md)|As plataformas aplicáveis para essa instrução de condição de gerenciamento.
 Isso é calculado analisando as condições de gerenciamento associadas à instrução de condição de gerenciamento e encontrando a interseção das plataformas aplicáveis. Os valores possíveis são: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `unknown`.|
 
 

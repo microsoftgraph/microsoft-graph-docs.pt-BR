@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 1446cb2bc213fb9827f24ff48014950ac5729aa4
-ms.sourcegitcommit: fe1b4d098af604cc34596f595e799911ea672532
+ms.openlocfilehash: f5a24e00f5332231fb77439d82b7a7d57d1a749d4c838173faa1cef689640dc6
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "51612046"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54145331"
 ---
 # <a name="devicecompliancescriptdevicestate-resource-type"></a>Tipo de recurso deviceComplianceScriptDeviceState
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -34,13 +34,13 @@ Contém propriedades para o estado de executar dispositivo do script de conformi
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave da entidade de estado do dispositivo de script de conformidade do dispositivo. Essa propriedade é somente leitura.|
-|detectionState|[runState](../resources/intune-devices-runstate.md)|Estado de detecção da última execução de script de conformidade do dispositivo. Os possíveis valores são: `unknown`, `success`, `fail`, `scriptError`, `pending`, `notApplicable`.|
+|id|Cadeia de caracteres|Chave da entidade de estado do dispositivo de script de conformidade do dispositivo. Essa propriedade é somente leitura.|
+|detectionState|[runState](../resources/intune-shared-runstate.md)|Estado de detecção da última execução de script de conformidade do dispositivo. Os possíveis valores são: `unknown`, `success`, `fail`, `scriptError`, `pending`, `notApplicable`.|
 |lastStateUpdateDateTime|DateTimeOffset|O último horário de quando o script de conformidade do dispositivo foi executado|
 |expectedStateUpdateDateTime|DateTimeOffset|O próximo horário de quando o script de conformidade do dispositivo deve ser executado|
 |lastSyncDateTime|DateTimeOffset|A última vez que a Extensão de Managment do Intune foi sincronizada com o Intune|
-|scriptOutput|String|Saída do script de detecção|
-|scriptError|String|Erro do script de detecção|
+|scriptOutput|Cadeia de caracteres|Saída do script de detecção|
+|scriptError|Cadeia de caracteres|Erro do script de detecção|
 
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|

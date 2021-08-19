@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e8379f1334235582886922143917a5a8288c2878
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: 4acadc53cc95f54becb55c0360a7d5b09bf81d53
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51157021"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58262887"
 ---
 # <a name="create-grouppolicyuploadeddefinition"></a>Criar groupPolicyUploadedDefinition
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -61,7 +61,9 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar o groupP
 |categoryPath|Cadeia de caracteres|O caminho de categoria completa localizado para a política. Herdado [de groupPolicyDefinition](../resources/intune-grouppolicy-grouppolicydefinition.md)|
 |supportedOn|Cadeia de caracteres|Cadeia de caracteres localizada usada para especificar qual versão do sistema operacional ou aplicativo é afetada pela política. Herdado [de groupPolicyDefinition](../resources/intune-grouppolicy-grouppolicydefinition.md)|
 |policyType|[groupPolicyType](../resources/intune-grouppolicy-grouppolicytype.md)|Especifica o tipo de política de grupo. Herdado [de groupPolicyDefinition](../resources/intune-grouppolicy-grouppolicydefinition.md). Os valores possíveis são: `admxBacked` e `admxIngested`.|
+|hasRelatedDefinitions|Boolean|Significa se há ou não definições relacionadas a essa definição Herdadas de [groupPolicyDefinition](../resources/intune-grouppolicy-grouppolicydefinition.md)|
 |groupPolicyCategoryId|Guid|A id de categoria da categoria pai Herdada de [groupPolicyDefinition](../resources/intune-grouppolicy-grouppolicydefinition.md)|
+|versão|String|Definindo a versão de definição Herdada [de groupPolicyDefinition](../resources/intune-grouppolicy-grouppolicydefinition.md)|
 |id|Cadeia de caracteres|Chave da entidade. Herdado [de groupPolicyDefinition](../resources/intune-grouppolicy-grouppolicydefinition.md)|
 |lastModifiedDateTime|DateTimeOffset|A data e a hora em que a entidade foi modificada pela última vez. Herdado [de groupPolicyDefinition](../resources/intune-grouppolicy-grouppolicydefinition.md)|
 
@@ -77,7 +79,7 @@ Este é um exemplo da solicitação.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/groupPolicyDefinitions
 Content-type: application/json
-Content-length: 361
+Content-length: 426
 
 {
   "@odata.type": "#microsoft.graph.groupPolicyUploadedDefinition",
@@ -87,7 +89,9 @@ Content-length: 361
   "categoryPath": "Category Path value",
   "supportedOn": "Supported On value",
   "policyType": "admxIngested",
-  "groupPolicyCategoryId": "4d1e97a2-97a2-4d1e-a297-1e4da2971e4d"
+  "hasRelatedDefinitions": true,
+  "groupPolicyCategoryId": "4d1e97a2-97a2-4d1e-a297-1e4da2971e4d",
+  "version": "Version value"
 }
 ```
 
@@ -96,7 +100,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 474
+Content-Length: 539
 
 {
   "@odata.type": "#microsoft.graph.groupPolicyUploadedDefinition",
@@ -106,7 +110,9 @@ Content-Length: 474
   "categoryPath": "Category Path value",
   "supportedOn": "Supported On value",
   "policyType": "admxIngested",
+  "hasRelatedDefinitions": true,
   "groupPolicyCategoryId": "4d1e97a2-97a2-4d1e-a297-1e4da2971e4d",
+  "version": "Version value",
   "id": "a5f83119-3119-a5f8-1931-f8a51931f8a5",
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00"
 }

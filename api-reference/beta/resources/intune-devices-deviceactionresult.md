@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: dbf24152e5e804c713a7aa761b05e5b2a3b13997
-ms.sourcegitcommit: fe1b4d098af604cc34596f595e799911ea672532
+ms.openlocfilehash: cedbccd2f697e4895d07a128fa9cd8863499290b62fed66f4df380b3f8e57e73
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "51611885"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54179035"
 ---
 # <a name="deviceactionresult-resource-type"></a>Tipo de recurso deviceActionResult
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -26,7 +26,7 @@ Resultado de ação de dispositivo
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |actionName|Cadeia de caracteres|Nome da ação|
-|actionState|[actionState](../resources/intune-devices-actionstate.md)|Estado da ação. Os valores possíveis são: `none`, `pending`, `canceled`, `active`, `done`, `failed`, `notSupported`.|
+|actionState|[actionState](../resources/intune-shared-actionstate.md)|Estado da ação. Os valores possíveis são: `none`, `pending`, `canceled`, `active`, `done`, `failed`, `notSupported`.|
 |startDateTime|DateTimeOffset|Hora em que a ação foi iniciada|
 |lastUpdatedDateTime|DateTimeOffset|Hora da última atualização do estado da ação|
 

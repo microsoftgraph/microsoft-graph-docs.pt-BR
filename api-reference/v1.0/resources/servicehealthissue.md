@@ -5,12 +5,12 @@ author: payiAzure
 localization_priority: Normal
 ms.prod: service-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 6e650333ef84bf3dcc1f32688366b3760c0f622c66ddf26ab7393bfe85e453c1
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: ca4b27993d88224555b9417af54f65cc5a70643d
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54177293"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58255763"
 ---
 # <a name="servicehealthissue-resource-type"></a>Tipo de recurso serviceHealthIssue
 
@@ -37,11 +37,11 @@ Herda [de serviceAnnouncementBase](../resources/serviceannouncementbase.md).
 |classificação|serviceHealthClassificationType|O tipo de problema de saúde do serviço. Os valores possíveis são: `advisory`, `incident`, `unknownFutureValue`.|
 |detalhes|Coleção([keyValuePair](../resources/keyvaluepair.md))|Detalhes adicionais sobre o problema de saúde do serviço. Essa propriedade não dá suporte a filtros. Herdado [do serviceAnnouncementBase](../resources/serviceannouncementbase.md).|
 |endDateTime|DateTimeOffset|A hora de término do problema do serviço. Herdado [do serviceAnnouncementBase](../resources/serviceannouncementbase.md).|
-|feature|String|O nome do recurso do problema do serviço.|
+|feature|Cadeia de caracteres|O nome do recurso do problema do serviço.|
 |featureGroup|Cadeia de caracteres|O nome do grupo de recursos do problema do serviço.|
-|id|String|A id do problema do serviço. Herdado [do serviceAnnouncementBase](../resources/serviceannouncementbase.md).|
-|impactDescription|String|A descrição do impacto do problema do serviço.|
-|isResolved|Booliano|Indica se o problema foi resolvido.|
+|id|Cadeia de caracteres|A id do problema do serviço. Herdado [do serviceAnnouncementBase](../resources/serviceannouncementbase.md).|
+|impactDescription|Cadeia de caracteres|A descrição do impacto do problema do serviço.|
+|isResolved|Boolean|Indica se o problema foi resolvido.|
 |lastModifiedDateTime|DateTimeOffset|A última hora modificada do problema. Herdado [do serviceAnnouncementBase](../resources/serviceannouncementbase.md).|
 |origin|serviceHealthOrigin|Indica a origem do problema do serviço. Os valores possíveis são: `microsoft`, `thirdParty`, `customer`, `unknownFutureValue`.|
 |postagens|Collection([serviceHealthIssuePost](../resources/servicehealthissuepost.md))|Coleção de postagens históricas para o problema do serviço.|

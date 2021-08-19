@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5ff83558c1d66505e0623d4cd9b48ef83f033f37
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: 46947303f6542dee20825f5c195b3a5edd1ce2b2271c30487a26ece80c0faad8
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51157388"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54166341"
 ---
 # <a name="update-grouppolicypresentationtextbox"></a>Atualizar groupPolicyPresentationTextBox
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -58,7 +58,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [o group
 |id|Cadeia de caracteres|Chave da entidade. Herdado [de groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
 |lastModifiedDateTime|DateTimeOffset|A data e a hora em que a entidade foi modificada pela última vez. Herdado [de groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
 |defaultValue|Cadeia de caracteres|Cadeia de caracteres padrão localizada exibida na caixa de texto. O valor padrão é vazio.|
-|obrigatório|Booleano|Requisito para inserir um valor na caixa de texto. O valor padrão é falso.|
+|obrigatório|Boolean|Requisito para inserir um valor na caixa de texto. O valor padrão é falso.|
 |maxLength|Int64|Um inteiro não assinado que especifica o número máximo de caracteres de texto. O valor padrão é 1023.|
 
 

@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 674e4fccb6777c527b1051fddc0926253966a8cd
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: b2d1ab2fbc8f2c7aa042a11229037c90d09e2238d59d908392552f89cd5941d5
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51150952"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54188523"
 ---
 # <a name="create-windowsidentityprotectionconfiguration"></a>Criar windowsIdentityProtectionConfiguration
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -56,29 +56,29 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar o window
 |:---|:---|:---|
 |id|Cadeia de caracteres|Chave da entidade. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de marcas de escopo para esta instância entity. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|supportsScopeTags|Booleano|Indica se a Configuração de Dispositivo subjacente dá suporte ou não à atribuição de marcas de escopo. A atribuição à propriedade ScopeTags não é permitida quando esse valor é falso e as entidades não estarão visíveis para usuários com escopo. Isso ocorre para políticas herdadas criadas no Silverlight e podem ser resolvidas excluindo e recriando a política no Portal do Azure. Essa propriedade é somente leitura. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|roleScopeTagIds|String collection|Lista de marcas de escopo para esta instância entity. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|supportsScopeTags|Boolean|Indica se a Configuração de Dispositivo subjacente dá suporte ou não à atribuição de marcas de escopo. A atribuição à propriedade ScopeTags não é permitida quando esse valor é falso e as entidades não estarão visíveis para usuários com escopo. Isso ocorre para políticas herdadas criadas no Silverlight e podem ser resolvidas excluindo e recriando a política no Portal do Azure. Essa propriedade é somente leitura. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|A aplicabilidade da edição do sistema operacional para esta Política. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|A regra de aplicabilidade da versão do sistema operacional para esta Política. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|A regra de aplicabilidade do modo de dispositivo para esta Política. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|DateTime em que o objeto foi criado. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|descrição|Cadeia de caracteres|O administrador forneceu a descrição da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|description|Cadeia de caracteres|O administrador forneceu a descrição da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |displayName|Cadeia de caracteres|O administrador forneceu o nome da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |versão|Int32|Versão da configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|useSecurityKeyForSignin|Booleano|Valor booleano usado para habilitar a chave de segurança do Windows Hello como uma credencial de logon.|
-|enhancedAntiSpoofingForFacialFeaturesEnabled|Booleano|Valor booleano usado para habilitar a anti-spoofing aprimorado para reconhecimento de recursos faciais na autenticação facial do Windows Hello.|
-|pinMinimumLength|Int32|Valor inteiro que define o número mínimo de caracteres necessário para o PIN do Windows Hello para Empresas. Os valores válidos são de 4 a 127 inclusive e menor ou igual ao valor definido para o PIN máximo. Valores válidos de 4 a 127|
+|useSecurityKeyForSignin|Boolean|Valor booleano usado para habilitar a Windows Hello de segurança como uma credencial de logon.|
+|enhancedAntiSpoofingForFacialFeaturesEnabled|Boolean|Valor booleano usado para habilitar a anti-spoofing aprimorado para reconhecimento de recursos faciais Windows Hello face autenticação.|
+|pinMinimumLength|Int32|Valor inteiro que define o número mínimo de caracteres necessário para o pin Windows Hello para Empresas. Os valores válidos são de 4 a 127 inclusive e menor ou igual ao valor definido para o PIN máximo. Valores válidos de 4 a 127|
 |pinMaximumLength|Int32|Valor inteiro que define o número máximo de caracteres permitidos para o PIN de trabalho. Os valores válidos são de 4 a 127 inclusive e maiores ou iguais ao valor definido para o PIN mínimo. Valores válidos de 4 a 127|
-|pinUppercaseCharactersUsage|[configurationUsage](../resources/intune-deviceconfig-configurationusage.md)|Esse valor configura o uso de caracteres maiúsculas no PIN do Windows Hello para Empresas. Os valores possíveis são: `blocked`, `required`, `allowed`, `notConfigured`.|
-|pinLowercaseCharactersUsage|[configurationUsage](../resources/intune-deviceconfig-configurationusage.md)|Esse valor configura o uso de caracteres minúsculos no PIN do Windows Hello para Empresas. Os valores possíveis são: `blocked`, `required`, `allowed`, `notConfigured`.|
-|pinSpecialCharactersUsage|[configurationUsage](../resources/intune-deviceconfig-configurationusage.md)|Controla a capacidade de usar caracteres especiais no PIN do Windows Hello para Empresas. Os valores possíveis são: `blocked`, `required`, `allowed`, `notConfigured`.|
+|pinUppercaseCharactersUsage|[configurationUsage](../resources/intune-deviceconfig-configurationusage.md)|Esse valor configura o uso de caracteres maiúsculas no pin Windows Hello para Empresas. Os valores possíveis são: `blocked`, `required`, `allowed`, `notConfigured`.|
+|pinLowercaseCharactersUsage|[configurationUsage](../resources/intune-deviceconfig-configurationusage.md)|Esse valor configura o uso de caracteres minúsculos no pin Windows Hello para Empresas. Os valores possíveis são: `blocked`, `required`, `allowed`, `notConfigured`.|
+|pinSpecialCharactersUsage|[configurationUsage](../resources/intune-deviceconfig-configurationusage.md)|Controla a capacidade de usar caracteres especiais no pin Windows Hello para Empresas. Os valores possíveis são: `blocked`, `required`, `allowed`, `notConfigured`.|
 |pinExpirationInDays|Int32|Valor inteiro especifica o período (em dias) que um PIN pode ser usado antes que o sistema exija que o usuário o altere. Os valores válidos são de 0 a 730 inclusive. Valores válidos de 0 a 730|
 |pinPreviousBlockCount|Int32|Controla a capacidade de impedir que os usuários usem PINs anteriores. Isso deve ser definido entre 0 e 50, inclusive, e o PIN atual do usuário está incluído nessa contagem. Se definido como 0, os PINs anteriores não serão armazenados. O histórico de PIN não é preservado por meio de uma redefinição de PIN. Valores válidos de 0 a 50|
-|pinRecoveryEnabled|Booleano|Valor booleano que permite que um usuário altere seu PIN usando o serviço de recuperação de PIN do Windows Hello para Empresas.|
-|securityDeviceRequired|Booliano|Controla se é necessário um TPM (Trusted Platform Module) para provisionar o Windows Hello para Empresas. Um TPM fornece um benefício adicional de segurança, já que os dados armazenados nele não podem ser usados em outros dispositivos. Se definido como False, todos os dispositivos poderão provisionar o Windows Hello para Empresas, mesmo que não haja um TPM usável.|
-|unlockWithBiometricsEnabled|Booliano|Controla o uso de gestos biométricos, como face e impressão digital, como uma alternativa ao PIN do Windows Hello para Empresas.  Se definido como False, gestos biométricos não são permitidos. Os usuários ainda devem configurar um PIN como backup em caso de falhas.|
-|useCertificatesForOnPremisesAuthEnabled|Booleano|Valor booleano que permite que o Windows Hello para Empresas use certificados para autenticar recursos locais.|
-|windowsHelloForBusinessBlocked|Boolean|Valor booleano que bloqueia o Windows Hello para Empresas como um método para entrar no Windows.|
+|pinRecoveryEnabled|Boolean|Valor booleano que permite que um usuário altere seu PIN usando o Windows Hello de recuperação de PIN comercial.|
+|securityDeviceRequired|Booliano|Controla se é necessário um TPM (Trusted Platform Module) para provisionamento Windows Hello para Empresas. Um TPM fornece um benefício adicional de segurança, já que os dados armazenados nele não podem ser usados em outros dispositivos. Se definido como False, todos os dispositivos podem provisionar Windows Hello para Empresas, mesmo que não haja um TPM usável.|
+|unlockWithBiometricsEnabled|Booliano|Controla o uso de gestos biométricos, como face e impressão digital, como uma alternativa ao PIN Windows Hello para Empresas.  Se definido como False, gestos biométricos não são permitidos. Os usuários ainda devem configurar um PIN como backup em caso de falhas.|
+|useCertificatesForOnPremisesAuthEnabled|Boolean|Valor booleano que permite Windows Hello para Empresas usar certificados para autenticar recursos locais.|
+|windowsHelloForBusinessBlocked|Boolean|Valor booleano que bloqueia Windows Hello para Empresas como um método para entrar no Windows.|
 
 
 

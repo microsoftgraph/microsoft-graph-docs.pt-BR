@@ -5,12 +5,12 @@ author: jsandoval-msft
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: cloud-communications
-ms.openlocfilehash: 1e7e90b90ad92ca62327ad9c356fa1d870c7ecbd
-ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
+ms.openlocfilehash: 7734283f513bd50d9f0187a24ec41e30ebadb38d
+ms.sourcegitcommit: 6f04ad0e0cde696661511dcdf343942b43f73fc6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53208271"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58396960"
 ---
 # <a name="presence-setpresence"></a>presença: setPresence
 
@@ -62,10 +62,10 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro          | Tipo     | Descrição                                                                                            |
 | :----------------- | :------- | :----------------------------------------------------------------------------------------------------- |
-| sessionId          | cadeia de caracteres   | A ID da sessão de presença do aplicativo.                                                          |
+| sessionId          | string   | A ID da sessão de presença do aplicativo.                                                          |
 | availability       | cadeia de caracteres   | As informações de presença base.                                                                         |
-| atividade           | cadeia de caracteres   | As informações complementares à disponibilidade.                                                          |
-| expirationDuration | duração | A expiração da sessão de presença do aplicativo. O valor é representado no formato ISO 8601 por durações. |
+| atividade           | string   | As informações complementares à disponibilidade.                                                          |
+| expirationDuration | duração | A expiração da sessão de presença do aplicativo. O valor é representado no formato ISO 8601 por durações.</p>Se não for fornecido, será aplicada uma expiração padrão de 5 minutos. |
 
 > [!IMPORTANT]
 >

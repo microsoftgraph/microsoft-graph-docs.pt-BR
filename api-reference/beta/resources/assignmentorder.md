@@ -5,12 +5,12 @@ author: jkdouglas
 localization_priority: Normal
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 7d7716cb4b13917aad33cd88afeb364a2891e3df
-ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
+ms.openlocfilehash: 61114b2a4fa39485843a8e1b722c518def0301ae380334f09ca79e088941040d
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50761237"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54245321"
 ---
 # <a name="assignmentorder-resource-type"></a>Tipo de recurso assignmentOrder
 
@@ -22,7 +22,7 @@ Usado para definir a ordem dos atributos que estão sendo coletados em um fluxo 
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|order|Coleção de cadeias de caracteres|Uma lista de IDs identityUserFlowAttribute fornecidas para determinar a ordem na qual os atributos devem ser coletados em um fluxo de usuário.|
+|order|String collection|Uma lista de IDs identityUserFlowAttribute fornecidas para determinar a ordem na qual os atributos devem ser coletados em um fluxo de usuário.|
 
 ## <a name="relationships"></a>Relações
 

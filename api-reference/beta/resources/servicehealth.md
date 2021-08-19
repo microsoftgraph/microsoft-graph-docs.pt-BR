@@ -5,12 +5,12 @@ author: payiAzure
 localization_priority: Normal
 ms.prod: service-communications
 doc_type: resourcePageType
-ms.openlocfilehash: c11750bbffe64315c6263a26d7dbab333f42b7cf
-ms.sourcegitcommit: d586ddb253d27f9ccb621bd128f6a6b4b1933918
+ms.openlocfilehash: 31affa96ab07fa5fd15dd19fd7877f0bc10af228
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53109067"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58260849"
 ---
 # <a name="servicehealth-resource-type"></a>Tipo de recurso serviceHealth
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Representa as informações de saúde de um serviço.
+Representa as informações de saúde de um serviço inscrito por um locatário.
 
 ## <a name="methods"></a>Métodos
 |Método|Tipo de retorno|Descrição|
@@ -28,8 +28,8 @@ Representa as informações de saúde de um serviço.
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|A ID do serviço.|
-|service|Cadeia de caracteres|O nome do serviço.|
+|id|Cadeia de caracteres|A ID do serviço.|
+|service|Cadeia de caracteres|O nome do serviço. Use a [operação healthOverviews](../api/serviceannouncement-list-healthoverviews.md) de lista para obter nomes de cadeia de caracteres exatos para serviços inscritos pelo locatário.|
 |status|serviceHealthStatus|Mostrar o status de saúde do serviço overral. Os valores possíveis são: `serviceOperational` , , , , , , , , `investigating` , , , `restoringService` , , `verifyingService` , , , `serviceRestored` , , `postIncidentReviewPublished` `serviceDegradation` , `serviceInterruption` `extendedRecovery` `falsePositive` `investigationSuspended` `resolved` `mitigatedExternal` `mitigated` `resolvedExternal` `confirmed` . `reported` `unknownFutureValue`|
 
 ## <a name="relationships"></a>Relações

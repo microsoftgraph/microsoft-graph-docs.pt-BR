@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 36fc236e827dc1a02d925a565614bd9f7819a07c
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: 8a17d742eb4d6ec40e86fe70954a5ee6e3acac45
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51132846"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58261334"
 ---
 # <a name="list-androiddeviceownercompliancepolicies"></a>Listar androidDeviceOwnerCompliancePolicies
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -65,7 +65,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1552
+Content-Length: 1602
 
 {
   "value": [
@@ -100,7 +100,8 @@ Content-Length: 1552
       "passwordMinutesOfInactivityBeforeLock": 5,
       "passwordExpirationDays": 6,
       "passwordPreviousPasswordCountToBlock": 4,
-      "storageRequireEncryption": true
+      "storageRequireEncryption": true,
+      "securityRequireIntuneAppIntegrity": true
     }
   ]
 }

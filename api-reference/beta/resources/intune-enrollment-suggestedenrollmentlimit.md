@@ -1,26 +1,26 @@
 ---
-title: tipo de recurso suggestedEnrollmentLimit
-description: O recurso suggestedEnrollmentLimit representa o limite de inscrição sugerido quando é atribuído um tipo de registro.
+title: Tipo de recurso suggestedEnrollmentLimit
+description: O recurso suggestedEnrollmentLimit representa o limite de inscrição sugerido quando dado um tipo de registro.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 880fb5d77c7fa16a23349918973a33ba0952e07a
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 7595aa2ab614a7c9abb0ac9c76c4b05fda1288eea7b11c24b2b1932a1265a321
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49256257"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54197937"
 ---
-# <a name="suggestedenrollmentlimit-resource-type"></a>tipo de recurso suggestedEnrollmentLimit
+# <a name="suggestedenrollmentlimit-resource-type"></a>Tipo de recurso suggestedEnrollmentLimit
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-O recurso suggestedEnrollmentLimit representa o limite de inscrição sugerido quando é atribuído um tipo de registro.
+O recurso suggestedEnrollmentLimit representa o limite de inscrição sugerido quando dado um tipo de registro.
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
