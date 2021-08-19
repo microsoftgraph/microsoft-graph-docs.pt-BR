@@ -1,18 +1,18 @@
 ---
-title: tipo de recurso sharePointSiteUsageSiteCounts
+title: Tipo de recurso sharePointSiteUsageSiteCounts
 description: Veja a seguir uma representação JSON do recurso.
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
 author: JeremyKelley
-ms.openlocfilehash: a56931b463b66c4753d79832764794367b2b7602
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 0c47696bddfac71c224c86a0f5e9f196990fc7c37a0641d7d7259e5e4bc309b8
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47997680"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54176166"
 ---
-# <a name="sharepointsiteusagesitecounts-resource-type"></a>tipo de recurso sharePointSiteUsageSiteCounts
+# <a name="sharepointsiteusagesitecounts-resource-type"></a>Tipo de recurso sharePointSiteUsageSiteCounts
 
 Namespace: microsoft.graph
 
@@ -21,11 +21,11 @@ Namespace: microsoft.graph
 | Propriedade          | Tipo   |
 | :---------------- | :----- |
 | reportRefreshDate | Data   |
-| sitetype          | String |
+| siteType          | Cadeia de caracteres |
 | total             | Int64  |
 | active            | Int64  |
 | reportDate        | Data   |
-| reportPeriod      | String |
+| reportPeriod      | Cadeia de caracteres |
 
 ## <a name="json-representation"></a>Representação JSON
 

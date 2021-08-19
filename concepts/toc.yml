@@ -237,6 +237,9 @@ items:
           - name: Gerenciamento multilocatário (visualização)
             displayName: Microsoft 365 Lighthouse
             href: managedtenants-concept-overview.md
+          - name: Comunicações e integridade do serviço
+            display name: service communications API
+            href: service-communications-concept-overview.md
       - name: Educação
         items:
           - name: Visão geral
@@ -412,8 +415,6 @@ items:
             href: information-protection-overview.md
           - name: Oportunidades de parceria
             href: security-partner-overview.md
-      - name: Comunicações e integridade do serviço (visualização)
-        href: service-communications-concept-overview.md
       - name: Sites e listas
         href: sharepoint-concept-overview.md
         displayName: 'SharePoint, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal'
@@ -612,6 +613,8 @@ items:
                     href: migrate-azure-ad-graph-client-libraries.md
               - name: '4: implantar, testar e estender'
                 href: migrate-azure-ad-graph-deploy-test-extend.md
+              - name: Perguntas frequentes sobre migração
+                href: migrate-azure-ad-graph-faq.md
       - name: Usar SDKs
         items:
           - name: Visão geral

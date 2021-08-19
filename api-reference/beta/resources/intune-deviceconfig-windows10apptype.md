@@ -1,32 +1,32 @@
 ---
-title: tipo de enumeração windows10AppType
-description: Tipo de aplicativo do Windows 10.
+title: Tipo de número do windows10AppType
+description: Windows 10 Tipo de aplicativo.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 4f3ff0558cef39deb5d29199dc6c0ffb9da44693
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: c347705f8071639a0cbc16fd1c6f3ecf431aed81fc4a149d4d9613e0387320af
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49272999"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54236231"
 ---
-# <a name="windows10apptype-enum-type"></a>tipo de enumeração windows10AppType
+# <a name="windows10apptype-enum-type"></a>Tipo de número do windows10AppType
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Tipo de aplicativo do Windows 10.
+Windows 10 Tipo de aplicativo.
 
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|placa|,0|Placa.|
-|UTC|1|UTC.|
+|desktop|0|Área de trabalho.|
+|universal|1 |Universal.|
 
 
 

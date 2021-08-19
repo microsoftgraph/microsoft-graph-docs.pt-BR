@@ -1,33 +1,33 @@
 ---
-title: tipo de enumeração windowsInformationProtectionPinCharacterRequirements
-description: Requisitos de caracteres de PIN
+title: tipo de número windowsInformationProtectionPinCharacterRequirements
+description: Pin Character Requirements
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 929f584fc69c1dfd643a968604ff2ee9dac0c6d9
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: ad8a464178598e4c35f8af69f49d7cddfa77067267d2e8cc4764b10806bbf653
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49259547"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54244572"
 ---
-# <a name="windowsinformationprotectionpincharacterrequirements-enum-type"></a>tipo de enumeração windowsInformationProtectionPinCharacterRequirements
+# <a name="windowsinformationprotectionpincharacterrequirements-enum-type"></a>tipo de número windowsInformationProtectionPinCharacterRequirements
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Requisitos de caracteres de PIN
+Pin Character Requirements
 
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|Não permitir|,0|Não permitir|
-|requireAtLeastOne|1|Exigir pelo menos um|
-|permitiu|duas|Permitir qualquer número|
+|notAllow|0|Não permitir|
+|requireAtLeastOne|1 |Exigir pelo menos um|
+|allow|2|Permitir qualquer número|
 
 
 

@@ -1,22 +1,22 @@
 ---
-title: tipo de enumeração ratingUnitedStatesMoviesType
+title: tipo de número ratingUnitedStatesMoviesType
 description: Rótulos de classificação de filmes nos Estados Unidos
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: e8d3fe75f394279acdbd74489ac39041c4a47254
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 34d30e9b2a892d8675c247259b18c2bbf4978a58b41cd843a891ac625b5073ce
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49198357"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54242786"
 ---
-# <a name="ratingunitedstatesmoviestype-enum-type"></a>tipo de enumeração ratingUnitedStatesMoviesType
+# <a name="ratingunitedstatesmoviestype-enum-type"></a>tipo de número ratingUnitedStatesMoviesType
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -25,13 +25,13 @@ Rótulos de classificação de filmes nos Estados Unidos
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|Permitido|,0|Valor padrão, permitir todo o conteúdo de filmes|
-|Bloqueado|1|Não permitir conteúdo de filmes|
-|geral|duas|G, todas as idades admitiram|
-|parentalGuidance|3D|PG, alguns materiais podem não ser adequados para crianças|
-|parentalGuidance13|4 |PG13, alguns materiais podem ser inadequados para crianças com menos de 13 anos|
-|limitado|5 |R, os espectadores em 17 exigem o guardião pai ou adulto de acompanhamento|
-|adultos|6 |NC17, somente para adultos|
+|allAllowed|0|Valor padrão, permitir todo o conteúdo de filmes|
+|allBlocked|1 |Não permitir conteúdo de filmes|
+|geral|2|G, todas as idades admitidas|
+|parentalGuidance|3 |PG, alguns materiais podem não ser adequados para crianças|
+|parentalGuidance13|4 |PG13, alguns materiais podem ser inadequados para crianças menores de 13 anos|
+|restrito|5 |R, os visualizadores com menos de 17 anos exigem o pai ou o responsável adulto que acompanham|
+|adults|6 |NC17, somente para adultos|
 
 
 

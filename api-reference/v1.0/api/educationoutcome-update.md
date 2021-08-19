@@ -5,14 +5,14 @@ localization_priority: Normal
 author: sharad-sharma-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: fcc9c011b4c23c088f887184891781af2f9f8338
-ms.sourcegitcommit: 979fe005c74eb99cd971df6b9511b2d3f7fe3cd4
+ms.openlocfilehash: d8cee8bc1de16eb9412f68d2ba464a8b71067c6c
+ms.sourcegitcommit: 1e9a53e7b8e67349288f5cfbabe8355de83817b0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52991271"
+ms.lasthandoff: 08/17/2021
+ms.locfileid: "58367041"
 ---
-# <a name="update-educationoutcome"></a>Atualizar educationoutcome
+# <a name="update-educationoutcome"></a>Atualizar educationOutcome
 
 Namespace: microsoft.graph
 
@@ -24,8 +24,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite |
-| Delegado (conta pessoal da Microsoft) | Sem suporte. |
+| Delegada (conta corporativa ou de estudante)     | EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite |
+| Delegada (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo                            | Sem suporte. |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -40,7 +40,7 @@ PATCH /education/classes/acdefc6b-2dc6-4e71-b1e9-6d9810ab1793/assignments/cf6005
 
 | Nome       | Descrição|
 |:-----------|:-----------|
-| Autorização | Portador {token} |
+| Autorização | {token} de portador. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
 
@@ -48,21 +48,53 @@ No corpo da solicitação, fornece apenas os valores dos campos que você deseja
 
 Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade. Para alcançar o melhor desempenho, não inclua valores existentes que não foram alterados.
 
-O objeto educationOutcome será um dos seguintes tipos **derivados: educationPointsOutcome**, **educationFeedbackOutcome** ou **educationRubricOutcome**. Fornecer as propriedades específicas relevantes para o tipo de resultado que está sendo remendado.
+O **objeto educationOutcome** será um dos seguintes tipos **derivados: educationPointsOutcome**, **educationFeedbackOutcome** ou **educationRubricOutcome**. Fornecer as propriedades específicas relevantes para o tipo de resultado que você está atualizando.
 
-Todos os tipos de resultado derivados têm uma propriedade regular e "publicada" apropriada para esse tipo de resultado; por exemplo, **pontos e** **publishedPoints**, **comentários** e **publishedFeedback**. Não atualize a propriedade "publicado"; é para uso interno. Por exemplo, para atribuir pontos a **um educationPointsOutcome**, atualize a propriedade **points,** mas Não atualize **publishedPoints**.
+Todos os tipos de resultado derivados têm uma propriedade regular e "publicada" apropriada para esse tipo de resultado; por exemplo, **pontos e** **publishedPoints**, **comentários** e **publishedFeedback**. Não atualize a propriedade "publicado"; é para uso interno. Por exemplo, para atribuir pontos a **um educationPointsOutcome**, atualize a propriedade **points,** mas não atualize **publishedPoints**.
 
 ## <a name="response"></a>Resposta
 
 Se tiver êxito, este método retornará um código de resposta e um `200 OK` [objeto educationOutcome](../resources/educationoutcome.md) atualizado no corpo da resposta.
 
+Se **pointsGradeType** e **points** são atualizados para um valor negativo ou infinito, o método retorna uma `400` mensagem de erro.
+
+```http
+HTTP/1.1 400 Bad Request
+Content-type: application/json
+
+{
+    "error": {
+        "code": "badRequest",
+        "message": "Bad request.",
+        "innerError": {
+            "code": "invalidGrading",
+            "message": "Points must be less than 9999999 when using PointsGradeType."
+        }
+    }
+}
+```
+
+Se uma ID de resultado inválida for especificada, um `404 Not Found` erro será retornado.
+
+```http
+HTTP/1.1 404 Not Found
+Content-type: application/json
+
+{
+    "error": {
+        "code": "20241",
+        "message": "Entity not found. Outcome id: 05d0f76c-1dfa-4442-926c-1b094828b505"
+    }
+}
+```
+
 ## <a name="examples"></a>Exemplos
 
-### <a name="example-1-update-a-feedback-outcome"></a>Exemplo 1: Atualizar um resultado de feedback
+### <a name="example-1-update-a-feedback-outcome"></a>Exemplo 1: atualizar um resultado de comentários
 
 #### <a name="request"></a>Solicitação
 
-A seguir, um exemplo da solicitação de atualização de um resultado de feedback.
+O exemplo a seguir mostra uma solicitação para atualizar um resultado de feedback.
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -143,11 +175,11 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-update-a-points-outcome"></a>Exemplo 2: Atualizar um resultado de pontos
+### <a name="example-2-update-a-points-outcome"></a>Exemplo 2: atualizar um resultado de pontos
 
 #### <a name="request"></a>Solicitação
 
-A seguir, um exemplo da solicitação de atualização de um resultado de pontos.
+O exemplo a seguir mostra uma solicitação para atualizar um resultado de pontos.
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -227,7 +259,7 @@ Content-type: application/json
 
 #### <a name="request"></a>Solicitação
 
-A seguir, um exemplo da solicitação de atualização de um resultado rubrico.
+O exemplo a seguir mostra uma solicitação para atualizar um resultado rubrico.
 
 
 # <a name="http"></a>[HTTP](#tab/http)

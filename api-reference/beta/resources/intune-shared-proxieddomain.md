@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: b31786ac628d1f1abab5309f1ae327909dac7076
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 61e9b4f5467c35c3a61e98153870e9ddbfd40695ed0580b9793713a13d22a4ee
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49258875"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54158156"
 ---
 # <a name="proxieddomain-resource-type"></a>Tipo de recurso proxiedDomain
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -26,7 +26,7 @@ Domínio com proxy
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |ipAddressOrFQDN|Cadeia de caracteres|O endereço IP ou FQDN|
-|proxy|Cadeia de caracteres|IP ou FQDN do proxy|
+|proxy|Cadeia de caracteres|IP proxy ou FQDN|
 
 ## <a name="relationships"></a>Relações
 Nenhum

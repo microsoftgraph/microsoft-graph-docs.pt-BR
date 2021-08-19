@@ -1,32 +1,32 @@
 ---
-title: tipo de recurso deviceManagementEnumValue
-description: Informações de definição para um valor de enumeração
+title: Tipo de recurso deviceManagementEnumValue
+description: Informações de definição para um valor de número
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 86a97937872bd46e2fd71c781e90ba607f5baf9d
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: e2492208bd2d0f85e5d8e548fde5af0f82ff01a84c9a68d9fc1db77c827e4473
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49275913"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54206428"
 ---
-# <a name="devicemanagementenumvalue-resource-type"></a>tipo de recurso deviceManagementEnumValue
+# <a name="devicemanagementenumvalue-resource-type"></a>Tipo de recurso deviceManagementEnumValue
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Informações de definição para um valor de enumeração
+Informações de definição para um valor de número
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|valor|Cadeia de caracteres|O texto de valor de enumeração bruto|
-|displayName|String|Nome para exibição desse valor de enumeração|
+|valor|Cadeia de caracteres|O texto do valor denum bruto|
+|displayName|Cadeia de caracteres|Nome de exibição para esse valor denum|
 
 ## <a name="relationships"></a>Relações
 Nenhum

@@ -1,26 +1,26 @@
 ---
 title: Tipo de recurso resourceOperation
-description: Descreve o recurso resourceOperation (entidade) da API do Microsoft Graph (REST), que oferece suporte a fluxos de trabalho do Intune relacionados ao controle de acesso baseado em função (RBAC).
+description: Descreve o recurso resourceOperation (entidade) da API do Microsoft Graph (REST), que dá suporte a fluxos de trabalho do Intune relacionados ao controle de acesso baseado em função (RBAC).
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 59eb8f7c9b30f466748513846b71271aa04a35d6
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 50a60272b50bf85006e3cdb13fa00abf4208ed4c70dc16ad58b21d6b5fda00cb
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49300910"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54241532"
 ---
 # <a name="resourceoperation-resource-type"></a>Tipo de recurso resourceOperation
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Descreve o recurso resourceOperation (entidade) da API do Microsoft Graph (REST), que oferece suporte a fluxos de trabalho do Intune relacionados ao controle de acesso baseado em função (RBAC).
+Descreve o recurso resourceOperation (entidade) da API do Microsoft Graph (REST), que dá suporte a fluxos de trabalho do Intune relacionados ao controle de acesso baseado em função (RBAC).
 
 ## <a name="methods"></a>Métodos
 |Método|Tipo de retorno|Descrição|
@@ -30,17 +30,17 @@ Descreve o recurso resourceOperation (entidade) da API do Microsoft Graph (REST)
 |[Criar resourceOperation](../api/intune-rbac-resourceoperation-create.md)|[resourceOperation](../resources/intune-rbac-resourceoperation.md)|Criar um novo objeto [resourceOperation](../resources/intune-rbac-resourceoperation.md).|
 |[Excluir resourceOperation](../api/intune-rbac-resourceoperation-delete.md)|Nenhum|Excluir um [resourceOperation](../resources/intune-rbac-resourceoperation.md)|
 |[Atualizar resourceOperation](../api/intune-rbac-resourceoperation-update.md)|[resourceOperation](../resources/intune-rbac-resourceoperation.md)|Atualizar as propriedades de um objeto [resourceOperation](../resources/intune-rbac-resourceoperation.md).|
-|[função Getscopesforuser à](../api/intune-rbac-resourceoperation-getscopesforuser.md)|String collection|Ainda não documentado|
+|[função getScopesForUser](../api/intune-rbac-resourceoperation-getscopesforuser.md)|String collection|Ainda não documentado|
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave da operação de recurso. Somente leitura, gerada automaticamente.|
-|recurso|String|Categoria de recurso à qual essa operação pertence.|
+|id|Cadeia de caracteres|Chave da operação de recurso. Somente leitura, gerada automaticamente.|
+|recurso|Cadeia de caracteres|Categoria de recurso à qual esta Operação pertence.|
 |resourceName|Cadeia de caracteres|Nome do recurso em que essa operação é executada.|
 |actionName|Cadeia de caracteres|Tipo de ação em que essa operação será executada. O actionName deve ser conciso e limitado ao mínimo de palavras possível.|
-|description|String|Descrição da operação de recurso. A descrição é usada no texto exibido com o passar o mouse para a operação quando exibida no Portal do Azure.|
-|enabledForScopeValidation|Booliano|Determina se a permissão é validada para os escopos definidos por atribuição de função.|
+|description|Cadeia de caracteres|Descrição da operação de recurso. A descrição é usada no texto exibido com o passar o mouse para a operação quando exibida no Portal do Azure.|
+|enabledForScopeValidation|Boolean|Determina se a Permissão é validada para Escopos definidos por Atribuição de Função.|
 
 ## <a name="relationships"></a>Relações
 Nenhum

@@ -1,36 +1,36 @@
 ---
-title: tipo de enumeração vppTokenState
-description: Estados possíveis associados a um token do Apple Volume Purchase Program.
+title: Tipo denum vppTokenState
+description: Estados possíveis associados a um token do Programa de Compra de Volume da Apple.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 8a159a5a2e359cef6978df44a8f40a1d664dfa48
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: f7df4f078b91a6c42ac4718a30145e1e141d8436bd8932c25780ce678cf2366c
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49259400"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54172782"
 ---
-# <a name="vpptokenstate-enum-type"></a>tipo de enumeração vppTokenState
+# <a name="vpptokenstate-enum-type"></a>Tipo denum vppTokenState
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Estados possíveis associados a um token do Apple Volume Purchase Program.
+Estados possíveis associados a um token do Programa de Compra de Volume da Apple.
 
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|desconhecido|,0|Estado padrão.|
-|inválido|1|O token é válido.|
-|venceu|duas|O token expirou.|
-|Inválido|3D|O token é inválido.|
-|assignedToExternalMDM|4 |O token é gerenciado por outro serviço MDM.|
-|duplicateLocationId|5 |O token é associado ao mesmo local de outro token na conta.|
+|desconhecido|0|Estado padrão.|
+|valid|1 |Token é válido.|
+|expirado|2|O token expirou.|
+|Inválido|3 |Token é inválido.|
+|assignedToExternalMDM|4 |Token é gerenciado por outro Serviço MDM.|
+|duplicateLocationId|5 |Token é associado ao mesmo local que outro token na conta.|
 
 
 
