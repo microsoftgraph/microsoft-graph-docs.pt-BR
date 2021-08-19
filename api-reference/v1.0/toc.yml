@@ -117,6 +117,8 @@ items:
                 href: /graph/migrate-azure-ad-graph-client-libraries?context=graph/api/1.0
           - name: '4: implantar, testar e estender'
             href: /graph/migrate-azure-ad-graph-deploy-test-extend?context=graph/api/1.0
+          - name: Perguntas frequentes sobre migração
+            href: /graph/migrate-azure-ad-graph-faq?context=graph/api/1.0
   - name: Usar SDKs
     items:
       - name: Visão geral
@@ -139,6 +141,16 @@ items:
         href: /graph/sdks/large-file-upload?context=graph/api/1.0
       - name: Usar API beta
         href: /graph/sdks/use-beta?context=graph/api/1.0
+      - name: Usar o Windows PowerShell!
+        items:
+          - name: Instalação
+            href: /graph/powershell/installation?context=graph/api/1.0
+          - name: Introdução
+            href: /graph/powershell/get-started?context=graph/api/1.0
+          - name: Navegando no SDK
+            href: /graph/powershell/navigating?context=graph/api/1.0
+          - name: Autenticação somente para aplicativo
+            href: /graph/powershell/app-only?context=graph/api/1.0
   - name: Usar o kit de ferramentas
     items:
       - name: Visão geral do kit de ferramentas
@@ -254,7 +266,7 @@ items:
                 href: api/user-list-events.md
               - name: Modo de exibição de lembrete
                 href: api/user-reminderview.md
-          - name: Contacts
+          - name: Contatos
             href: resources/contact.md
             items:
               - name: Criar contato
@@ -421,7 +433,7 @@ items:
             items:
               - name: Listar tarefas
                 href: api/planneruser-list-tasks.md
-          - name: Teamwork
+          - name: Trabalho em equipe
             items:
               - name: Aplicativo instalado
                 href: resources/teamsappinstallation.md
@@ -463,7 +475,7 @@ items:
         items:
           - name: Visão Geral
             href: resources/groups-overview.md
-          - name: Group
+          - name: Grupo
             href: resources/group.md
             items:
               - name: Listar grupos
@@ -1101,7 +1113,7 @@ items:
                 href: api/calendarpermission-update.md
               - name: Excluir
                 href: api/calendarpermission-delete.md
-          - name: Categories
+          - name: Categorias
             items:
               - name: Categoria
                 href: resources/outlookcategory.md
@@ -1897,41 +1909,6 @@ items:
                         href: api/intune-apps-mobilelobapp-list.md
                       - name: Obter
                         href: api/intune-apps-mobilelobapp-get.md
-                  - name: Status de check-in de cliente do Office
-                    href: resources/intune-cirrus-officeclientcheckinstatus.md
-                  - name: Configuração de Cliente do Office
-                    href: resources/intune-cirrus-officeclientconfiguration.md
-                    items:
-                      - name: Listar
-                        href: api/intune-cirrus-officeclientconfiguration-list.md
-                      - name: Obter
-                        href: api/intune-cirrus-officeclientconfiguration-get.md
-                      - name: atribuir ação
-                        href: api/intune-cirrus-officeclientconfiguration-assign.md
-                      - name: ação updatePriorities
-                        href: api/intune-cirrus-officeclientconfiguration-updatepriorities.md
-                  - name: Atribuição de configuração de cliente do Office
-                    href: resources/intune-cirrus-officeclientconfigurationassignment.md
-                    items:
-                      - name: Listar
-                        href: api/intune-cirrus-officeclientconfigurationassignment-list.md
-                      - name: Obter
-                        href: api/intune-cirrus-officeclientconfigurationassignment-get.md
-                      - name: Criar
-                        href: api/intune-cirrus-officeclientconfigurationassignment-create.md
-                      - name: Excluir
-                        href: api/intune-cirrus-officeclientconfigurationassignment-delete.md
-                      - name: Atualizar
-                        href: api/intune-cirrus-officeclientconfigurationassignment-update.md
-                  - name: Configuração do Office
-                    href: resources/intune-cirrus-officeconfiguration.md
-                    items: null
-                  - name: Destino de atribuição de configuração do Office
-                    href: resources/intune-cirrus-officeconfigurationassignmenttarget.md
-                  - name: Destino de atribuição de grupo de configuração do Office
-                    href: resources/intune-cirrus-officeconfigurationgroupassignmenttarget.md
-                  - name: Resumo de check-in de usuário do Office
-                    href: resources/intune-cirrus-officeusercheckinsummary.md
                   - name: Executar como tipo de conta
                     href: resources/intune-apps-runasaccounttype.md
                   - name: Resumo de estado de instalação de usuários
@@ -2034,32 +2011,6 @@ items:
                         href: api/intune-apps-windowsmobilemsi-delete.md
                       - name: Atualizar
                         href: api/intune-apps-windowsmobilemsi-update.md
-                  - name: Windows configuração do cliente do office
-                    href: resources/intune-cirrus-windowsofficeclientconfiguration.md
-                    items:
-                      - name: Listar
-                        href: api/intune-cirrus-windowsofficeclientconfiguration-list.md
-                      - name: Obter
-                        href: api/intune-cirrus-windowsofficeclientconfiguration-get.md
-                      - name: Criar
-                        href: api/intune-cirrus-windowsofficeclientconfiguration-create.md
-                      - name: Excluir
-                        href: api/intune-cirrus-windowsofficeclientconfiguration-delete.md
-                      - name: Atualizar
-                        href: api/intune-cirrus-windowsofficeclientconfiguration-update.md
-                  - name: Windows configuração de segurança do cliente do office
-                    href: resources/intune-cirrus-windowsofficeclientsecurityconfiguration.md
-                    items:
-                      - name: Listar
-                        href: api/intune-cirrus-windowsofficeclientsecurityconfiguration-list.md
-                      - name: Obter
-                        href: api/intune-cirrus-windowsofficeclientsecurityconfiguration-get.md
-                      - name: Criar
-                        href: api/intune-cirrus-windowsofficeclientsecurityconfiguration-create.md
-                      - name: Excluir
-                        href: api/intune-cirrus-windowsofficeclientsecurityconfiguration-delete.md
-                      - name: Atualizar
-                        href: api/intune-cirrus-windowsofficeclientsecurityconfiguration-update.md
                   - name: Windows universal AppX
                     href: resources/intune-apps-windowsuniversalappx.md
                     items:
@@ -3128,8 +3079,8 @@ items:
                         href: api/intune-devices-devicecategory-get.md
                       - name: Atualizar
                         href: api/intune-devices-devicecategory-update.md
-                  - name: Tipo de registro de dispositivo
-                    href: resources/intune-devices-deviceenrollmenttype.md
+                  - name: Motivo da falha de registro do dispositivo
+                    href: resources/intune-troubleshooting-deviceenrollmentfailurereason.md
                   - name: Resumo do estado de acesso do dispositivo Exchange
                     href: resources/intune-devices-deviceexchangeaccessstatesummary.md
                   - name: Geolocalização de dispositivo
@@ -3164,16 +3115,49 @@ items:
                         href: api/intune-auditing-devicemanagement-get.md
                       - name: Atualizar
                         href: api/intune-auditing-devicemanagement-update.md
+                  - name: Gerenciamento de dispositivo
+                    href: resources/intune-auditing-devicemanagement.md
+                    items:
+                      - name: Obter
+                        href: api/intune-auditing-devicemanagement-get.md
+                      - name: Atualizar
+                        href: api/intune-auditing-devicemanagement-update.md
                   - name: Estado de acesso do Exchange de gerenciamento de dispositivo
                     href: resources/intune-devices-devicemanagementexchangeaccessstate.md
                   - name: Motivo do estado de acesso do Exchange de gerenciamento de dispositivo
                     href: resources/intune-devices-devicemanagementexchangeaccessstatereason.md
                   - name: Estado de assinatura de gerenciamento de dispositivo
                     href: resources/intune-devices-devicemanagementsubscriptionstate.md
+                  - name: Evento de solução de problemas de gerenciamento de dispositivo
+                    href: resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md
+                    items:
+                      - name: Listar
+                        href: api/intune-troubleshooting-devicemanagementtroubleshootingevent-list.md
+                      - name: Obter
+                        href: api/intune-troubleshooting-devicemanagementtroubleshootingevent-get.md
+                      - name: Criar
+                        href: api/intune-troubleshooting-devicemanagementtroubleshootingevent-create.md
+                      - name: Excluir
+                        href: api/intune-troubleshooting-devicemanagementtroubleshootingevent-delete.md
+                      - name: Atualizar
+                        href: api/intune-troubleshooting-devicemanagementtroubleshootingevent-update.md
                   - name: Resumo do sistema operacional do dispositivo
                     href: resources/intune-devices-deviceoperatingsystemsummary.md
                   - name: Estado do registro do dispositivo
                     href: resources/intune-devices-deviceregistrationstate.md
+                  - name: Evento de solução de problemas de registro
+                    href: resources/intune-troubleshooting-enrollmenttroubleshootingevent.md
+                    items:
+                      - name: Listar
+                        href: api/intune-troubleshooting-enrollmenttroubleshootingevent-list.md
+                      - name: Obter
+                        href: api/intune-troubleshooting-enrollmenttroubleshootingevent-get.md
+                      - name: Criar
+                        href: api/intune-troubleshooting-enrollmenttroubleshootingevent-create.md
+                      - name: Excluir
+                        href: api/intune-troubleshooting-enrollmenttroubleshootingevent-delete.md
+                      - name: Atualizar
+                        href: api/intune-troubleshooting-enrollmenttroubleshootingevent-update.md
                   - name: Mensagem de notificação localizada
                     href: resources/intune-notification-localizednotificationmessage.md
                     items:
@@ -3291,12 +3275,36 @@ items:
                         href: api/intune-remoteassistance-remoteassistancepartner-disconnect.md
                   - name: Resultado de ação de bloqueio remoto
                     href: resources/intune-devices-remotelockactionresult.md
+                  - name: Relatório
+                    href: resources/intune-troubleshooting-report.md
+                  - name: Raiz de relatório
+                    href: resources/intune-troubleshooting-reportroot.md
+                    items:
+                      - name: Obter
+                        href: api/intune-troubleshooting-reportroot-get.md
+                      - name: Atualizar
+                        href: api/intune-troubleshooting-reportroot-update.md
                   - name: Resultado de ação de redefinir a senha
                     href: resources/intune-devices-resetpasscodeactionresult.md
                   - name: Tuple_2 de execução type_ i collection_1 de operação
                     href: resources/intune-esim-tuple_2ofexecutiontype_icollection_1ofoperation.md
                   - name: Parâmetro de ação de atualização de conta de dispositivo Windows
                     href: resources/intune-devices-updatewindowsdeviceaccountactionparameter.md
+                  - name: Usuário
+                    href: resources/intune-devices-user.md
+                    items:
+                      - name: Listar
+                        href: api/intune-devices-user-list.md
+                      - name: Obter
+                        href: api/intune-devices-user-get.md
+                      - name: Criar
+                        href: api/intune-devices-user-create.md
+                      - name: Excluir
+                        href: api/intune-devices-user-delete.md
+                      - name: Atualizar
+                        href: api/intune-devices-user-update.md
+                      - name: Ação removeAllDevicesFromManagement
+                        href: api/intune-devices-user-removealldevicesfrommanagement.md
                   - name: Usuário
                     href: resources/intune-devices-user.md
                     items:
@@ -3534,6 +3542,8 @@ items:
                         href: api/intune-mam-targetedmanagedappconfiguration-assign.md
                       - name: ação targetApps
                         href: api/intune-mam-targetedmanagedappconfiguration-targetapps.md
+                  - name: Tipo de grupo de aplicativo gerenciado direcionado
+                    href: resources/intune-mam-targetedmanagedappgrouptype.md
                   - name: Atribuição de política de proteção de aplicativo gerenciado direcionado
                     href: resources/intune-mam-targetedmanagedapppolicyassignment.md
                     items:
@@ -3554,6 +3564,8 @@ items:
                         href: api/intune-mam-targetedmanagedappprotection-get.md
                       - name: atribuir ação
                         href: api/intune-mam-targetedmanagedappprotection-assign.md
+                      - name: ação targetApps
+                        href: api/intune-mam-targetedmanagedappprotection-targetapps.md
                   - name: Usuário
                     href: resources/intune-mam-user.md
                     items:
@@ -3969,6 +3981,8 @@ items:
                     href: resources/intune-shared-configurationmanagercollectionassignmenttarget.md
                   - name: Destino de atribuição de gerenciamento de aplicativo e dispositivo
                     href: resources/intune-shared-deviceandappmanagementassignmenttarget.md
+                  - name: Tipo de registro de dispositivo
+                    href: resources/intune-shared-deviceenrollmenttype.md
                   - name: Destino de atribuição de grupos de exclusão
                     href: resources/intune-shared-exclusiongroupassignmenttarget.md
                   - name: Destino de atribuição de grupo
@@ -4006,6 +4020,47 @@ items:
                         href: api/intune-tem-telecomexpensemanagementpartner-delete.md
                       - name: Atualizar
                         href: api/intune-tem-telecomexpensemanagementpartner-update.md
+          - name: Comunicações e Integridade do serviço
+            items:
+              - name: Visão Geral
+                href: resources/service-communications-api-overview.md
+              - name: Comunicado do serviço
+                href: resources/serviceannouncement.md
+              - name: Integridade do serviço
+                href: resources/servicehealth.md
+                items:
+                  - name: Listar visão geral de saúde
+                    href: api/serviceannouncement-list-healthoverviews.md
+                  - name: Obter a saúde do serviço
+                    href: api/servicehealth-get.md
+              - name: Problema de saúde do serviço
+                href: resources/servicehealthissue.md
+                items:
+                  - name: Listar problemas
+                    href: api/serviceannouncement-list-issues.md
+                  - name: Obter problema
+                    href: api/servicehealthissue-get.md
+                  - name: Obter relatório de revisão pós-incidente
+                    href: api/servicehealthissue-incidentreport.md
+              - name: Mensagem de atualização de serviço
+                href: resources/serviceupdatemessage.md
+                items:
+                  - name: Listar mensagens
+                    href: api/serviceannouncement-list-messages.md
+                  - name: Obter mensagem
+                    href: api/serviceupdatemessage-get.md
+                  - name: Marcar status de leitura
+                    href: api/serviceupdatemessage-markread.md
+                  - name: Marcar status não lido
+                    href: api/serviceupdatemessage-markunread.md
+                  - name: Status do arquivo morto
+                    href: api/serviceupdatemessage-archive.md
+                  - name: Status unarchive
+                    href: api/serviceupdatemessage-unarchive.md
+                  - name: Marcar status favorito
+                    href: api/serviceupdatemessage-favorite.md
+                  - name: Remover status favorito
+                    href: api/serviceupdatemessage-unfavorite.md
       - name: Educação
         items:
           - name: Visão geral
@@ -5323,7 +5378,7 @@ items:
             items:
               - name: Obter recurso
                 href: api/resource-get.md
-      - name: Inteligência de pessoas e local de trabalho
+      - name: Inteligência de pessoas e no local de trabalho
         items:
           - name: Visão Geral
             href: resources/social-overview.md
@@ -5672,7 +5727,7 @@ items:
                 href: resources/searchresponse.md
               - name: Dados de consulta
                 href: api/search-query.md
-          - name: Index
+          - name: Índice
             items:
               - name: Visão Geral
                 href: resources/indexing-api-overview.md
@@ -5906,7 +5961,7 @@ items:
                 href: api/plannerprogresstaskboardtaskformat-get.md
               - name: Atualizar progresso do formato de quadro de tarefas
                 href: api/plannerprogresstaskboardtaskformat-update.md
-      - name: Teamwork
+      - name: Trabalho em equipe
         displayName: Microsoft Teams
         items:
           - name: Visão Geral
@@ -6359,6 +6414,11 @@ items:
                 href: api/onenote-list-notebooks.md
               - name: Criar blocos de anotações
                 href: api/onenote-post-notebooks.md
+          - name: Concessões de permissão específicas de recursos
+            href: resources/resourcespecificpermissiongrant.md
+            items:
+              - name: Lista para grupo
+                href: api/group-list-permissiongrants.md
       - name: Tarefas pendentes
         displayName: Microsoft To Do
         items:

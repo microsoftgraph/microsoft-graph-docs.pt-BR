@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 6846ac91051897fcf455c466d5dcd58119d0131a
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 2cf940f4327d32082b95deb0658a316ac4e2ecac9c0fc03285c018ceecbd3bdf
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52042662"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "57159678"
 ---
 # <a name="update-educationuser-properties"></a>Atualizar propriedades de educationUser
 
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 | :------------------------------------- | :------------------------------------------ |
 | Delegado (conta corporativa ou de estudante)     | Sem suporte.                              |
 | Delegado (conta pessoal da Microsoft) | Sem suporte.                              |
-| Application                            | EduRoster.ReadWrite.All                     |
+| Aplicativo                            | EduRoster.ReadWrite.All                     |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -52,10 +52,10 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 | Propriedade         | Tipo               | Descrição                                                                                                                                     |
 | :--------------- | :----------------- | :---------------------------------------------------------------------------------------------------------------------------------------------- |
-| displayName      | String             | Nome de exibição do usuário                                                                                                                            |
-| givenName        | String             | Nome                                                                                                                                      |
+| displayName      | Cadeia de caracteres             | Nome de exibição do usuário                                                                                                                            |
+| givenName        | Cadeia de caracteres             | Nome                                                                                                                                      |
 | middleName       | String             | O nome do meio do usuário                                                                                                                             |
-| surname          | String             | Sobrenome do usuário                                                                                                                                 |
+| surname          | Cadeia de caracteres             | Sobrenome do usuário                                                                                                                                 |
 | email             | String             | endereço de email                                                                                                                                   |
 | mobilePhone      | String             | O número de celular do usuário                                                                                                                           |
 | externalSource   | cadeia de caracteres             | De onde esse usuário foi criado. Os valores possíveis são: `sis`, `manual` ou `lms`.                                                               |
@@ -118,7 +118,7 @@ Content-length: 508
 
 ##### <a name="response"></a>Resposta
 
-Veja a seguir um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser reduzido para facilitar a leitura.
 
 <!-- {
   "blockType": "response",

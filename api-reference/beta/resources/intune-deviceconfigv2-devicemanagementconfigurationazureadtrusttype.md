@@ -1,33 +1,33 @@
 ---
-title: tipo de enumeração deviceManagementConfigurationAzureAdTrustType
-description: Tipo de confiança do AAD necessário
+title: Tipo de número deviceManagementConfigurationAzureAdTrustType
+description: Tipo de confiança obrigatório do AAD
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: c7ceebd258b0e0127cb7b18f2150127de353835e
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 8e1ad171e3abc0f1f9258ef6caf1d548304ac69cf93105305a3fb1e4c89f3ef1
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49301420"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54139471"
 ---
-# <a name="devicemanagementconfigurationazureadtrusttype-enum-type"></a>tipo de enumeração deviceManagementConfigurationAzureAdTrustType
+# <a name="devicemanagementconfigurationazureadtrusttype-enum-type"></a>Tipo de número deviceManagementConfigurationAzureAdTrustType
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Tipo de confiança do AAD necessário
+Tipo de confiança obrigatório do AAD
 
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|nenhum|,0|Nenhum tipo de confiança do AAD especificado|
-|azureAdJoined|1|Tipo de confiança de AAD associado|
-|addWorkAccount|duas|AddWorkAccount|
+|Nenhuma|0|Nenhum tipo de confiança do AAD especificado|
+|azureAdJoined|1 |Tipo de confiança ingressou no AAD|
+|addWorkAccount|2|AddWorkAccount|
 |mdmOnly|4 |Somente MDM|
 
 

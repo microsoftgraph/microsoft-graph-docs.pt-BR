@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6052f3896e6f9311034b1ea2efcb0e1f084cb18a
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: bd6033f6ef3ace1785e44ebc86b88a1ef45945bd
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51135786"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58262894"
 ---
 # <a name="update-depiosenrollmentprofile"></a>Atualizar depIOSEnrollmentProfile
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -55,53 +55,58 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [o depIO
 |:---|:---|:---|
 |id|Cadeia de caracteres|O GUID do objeto Herdado de [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
 |displayName|Cadeia de caracteres|Nome do perfil Herdado de [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
-|descrição|Cadeia de caracteres|Descrição do perfil Herdado de [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
-|requiresUserAuthentication|Booleano|Indica se o perfil requer autenticação de usuário Herdada de [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
+|description|Cadeia de caracteres|Descrição do perfil Herdado de [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
+|requiresUserAuthentication|Boolean|Indica se o perfil requer autenticação de usuário Herdada de [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
 |configurationEndpointUrl|Cadeia de caracteres|URL do ponto de extremidade de configuração a ser usada para Registro Herdado de [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
-|enableAuthenticationViaCompanyPortal|Booleano|Indica a autenticação com o Assistente de Instalação da Apple em vez do Portal da Empresa. Herdado de [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
-|requireCompanyPortalOnSetupAssistantEnrolledDevices|Booleano|Indica que o Portal da Empresa é necessário em dispositivos inscritos pelo assistente de instalação Herdados de [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
+|enableAuthenticationViaCompanyPortal|Boolean|Indica a autenticação com o Assistente de Instalação da Apple em vez de Portal da Empresa. Herdado de [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
+|requireCompanyPortalOnSetupAssistantEnrolledDevices|Boolean|Indica que a Portal da Empresa é necessária em dispositivos inscritos do assistente de instalação Herdados de [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
 |isDefault|Booliano|Indica se esse é o perfil padrão Herdado de [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
-|supervisedModeEnabled|Booleano|Modo supervisionado, True para habilitar, false caso contrário. Consulte https://docs.microsoft.com/intune/deploy-use/enroll-devices-in-microsoft-intune para obter informações adicionais. Herdado [de depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
+|supervisedModeEnabled|Boolean|Modo supervisionado, True para habilitar, false caso contrário. Consulte https://docs.microsoft.com/intune/deploy-use/enroll-devices-in-microsoft-intune para obter informações adicionais. Herdado [de depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
 |supportDepartment|Cadeia de caracteres|Informações do departamento de suporte Herdadas [de depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
-|isMandatory|Booleano|Indica se o perfil é obrigatório Herdado de [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
-|locationDisabled|Booleano|Indica se o painel de configuração do serviço de local está desabilitado Herdado [de depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
+|isMandatory|Boolean|Indica se o perfil é obrigatório Herdado de [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
+|locationDisabled|Boolean|Indica se o painel de configuração do serviço de local está desabilitado Herdado [de depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
 |supportPhoneNumber|Cadeia de caracteres|Número de telefone de suporte Herdado [de depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
-|profileRemovalDisabled|Booleano|Indica se a opção de remoção de perfil está desabilitada Herdada [de depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
-|restoreBlocked|Booleano|Indica se o painel restaurar instalação está bloqueado Herdado [de depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
-|appleIdDisabled|Booleano|Indica se o painel de configuração de ID da Apple está desabilitado Herdado [de depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
-|termsAndConditionsDisabled|Booleano|Indica se o painel de configuração 'Termos e Condições' está desabilitado Herdado [de depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
-|touchIdDisabled|Booleano|Indica se o painel de configuração de id por toque está desabilitado Herdado [de depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
-|applePayDisabled|Booleano|Indica se o painel de configuração de pagamento da Apple está desabilitado Herdado [de depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
-|siriDisabled|Booleano|Indica se o painel de configuração de siri está desabilitado Herdado [de depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
-|diagnosticsDisabled|Booleano|Indica se o painel de configuração de diagnósticos está desabilitado Herdado [de depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
-|displayToneSetupDisabled|Booleano|Indica se a tela de instalação de displaytone está desabilitada Herdada [de depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
-|privacyPaneDisabled|Booleano|Indica se a tela de privacidade está desabilitada Herdada [de depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
-|screenTimeScreenDisabled|Booleano|Indica se a configuração do tempo de tempo de tela está desabilitada Herdada [de depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
+|profileRemovalDisabled|Boolean|Indica se a opção de remoção de perfil está desabilitada Herdada [de depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
+|restoreBlocked|Boolean|Indica se o painel restaurar instalação está bloqueado Herdado [de depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
+|appleIdDisabled|Boolean|Indica se o painel de configuração de ID da Apple está desabilitado Herdado [de depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
+|termsAndConditionsDisabled|Boolean|Indica se o painel de configuração 'Termos e Condições' está desabilitado Herdado [de depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
+|touchIdDisabled|Boolean|Indica se o painel de configuração de id por toque está desabilitado Herdado [de depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
+|applePayDisabled|Boolean|Indica se o painel de configuração de pagamento da Apple está desabilitado Herdado [de depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
+|siriDisabled|Boolean|Indica se o painel de configuração de siri está desabilitado Herdado [de depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
+|diagnosticsDisabled|Boolean|Indica se o painel de configuração de diagnósticos está desabilitado Herdado [de depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
+|displayToneSetupDisabled|Boolean|Indica se a tela de instalação de displaytone está desabilitada Herdada [de depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
+|privacyPaneDisabled|Boolean|Indica se a tela de privacidade está desabilitada Herdada [de depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
+|screenTimeScreenDisabled|Boolean|Indica se a configuração do tempo de tempo de tela está desabilitada Herdada [de depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
 |deviceNameTemplate|Cadeia de caracteres|Define um padrão literal ou de nome. Herdado [de depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
-|configurationWebUrl|Booleano|URL para logon do assistente de instalação Herdada [de depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
+|configurationWebUrl|Boolean|URL para logon do assistente de instalação Herdada [de depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
 |iTunesPairingMode|[iTunesPairingMode](../resources/intune-enrollment-itunespairingmode.md)|Indica o modo de emparelhamento do iTunes. Os valores possíveis são: `disallow`, `allow`, `requiresCertificate`.|
 |managementCertificates|[coleção managementCertificateWithThumbprint](../resources/intune-enrollment-managementcertificatewiththumbprint.md)|Certificados de gerenciamento para o Apple Configurator|
-|restoreFromAndroidDisabled|Booleano|Indica se a restauração do Android está desabilitada|
-|awaitDeviceConfiguredConfirmation|Booleano|Indica se o dispositivo precisará aguardar a confirmação configurada|
-|sharedIPadMaximumUserCount|Int32|Isso especifica o número máximo de usuários que podem usar um iPad compartilhado. Aplicável somente no modo iPad compartilhado.|
-|enableSharedIPad|Booleano|Isso indica se o dispositivo deve ser inscrito em um modo que habilita cenários de vários usuários. Aplicável somente em iPads compartilhados.|
-|companyPortalVppTokenId|Cadeia de caracteres|Se definido, indica qual token Vpp deve ser usado para implantar o licenciamento de dispositivo do Portal da Empresa. 'enableAuthenticationViaCompanyPortal' deve ser definido para que essa propriedade seja definida.|
-|enableSingleAppEnrollmentMode|Booleano|Informa ao dispositivo para habilitar o modo de aplicativo único e aplicar o bloqueio de aplicativo durante o registro. O padrão é false. 'enableAuthenticationViaCompanyPortal' e 'companyPortalVppTokenId' devem ser definidos para que essa propriedade seja definida.|
-|homeButtonScreenDisabled|Booleano|Indica se a tela de sensibilidade do botão inicial está desabilitada|
-|iMessageAndFaceTimeScreenDisabled|Booleano|Indica se a tela iMessage e FaceTime está desabilitada|
-|onBoardingScreenDisabled|Booleano|Indica se a tela de instalação de integração está desabilitada|
-|simSetupScreenDisabled|Booleano|Indica se a tela SIMSetup está desabilitada|
-|softwareUpdateScreenDisabled|Booleano|Indica se a tela de atualização de sofware obrigatória está desabilitada|
-|watchMigrationScreenDisabled|Booleano|Indica se a tela de migração do relógio está desabilitada|
-|appearanceScreenDisabled|Booleano|Indica se a tela do Apperance está desabilitada|
-|expressLanguageScreenDisabled|Booleano|Indica se a tela linguagem expressa está desabilitada|
-|preferredLanguageScreenDisabled|Booleano|Indica se a tela de idioma preferencial está desabilitada|
-|deviceToDeviceMigrationDisabled|Booleano|Indica se a migração de dispositivo para dispositivo está desabilitada|
-|welcomeScreenDisabled|Booleano|Indica se a tela Weclome está desabilitada|
-|passCodeDisabled|Booleano|Indica se o painel de configuração senha está desabilitado|
-|zoomDisabled|Booleano|Indica se o painel de configuração de zoom está desabilitado|
-|restoreCompletedScreenDisabled|Booleano|Indica se a tela Weclome está desabilitada|
-|updateCompleteScreenDisabled|Booleano|Indica se a tela Weclome está desabilitada|
+|restoreFromAndroidDisabled|Boolean|Indica se a restauração do Android está desabilitada|
+|awaitDeviceConfiguredConfirmation|Boolean|Indica se o dispositivo precisará aguardar a confirmação configurada|
+|sharedIPadMaximumUserCount|Int32|Isso especifica o número máximo de usuários que podem usar um iPad. Aplicável somente no modo iPad compartilhado.|
+|enableSharedIPad|Boolean|Isso indica se o dispositivo deve ser inscrito em um modo que habilita cenários de vários usuários. Aplicável somente em iPads compartilhados.|
+|companyPortalVppTokenId|Cadeia de caracteres|Se definido, indica qual token Vpp deve ser usado para implantar o Portal da Empresa w/device. 'enableAuthenticationViaCompanyPortal' deve ser definido para que essa propriedade seja definida.|
+|enableSingleAppEnrollmentMode|Boolean|Informa ao dispositivo para habilitar o modo de aplicativo único e aplicar o bloqueio de aplicativo durante o registro. O padrão é false. 'enableAuthenticationViaCompanyPortal' e 'companyPortalVppTokenId' devem ser definidos para que essa propriedade seja definida.|
+|homeButtonScreenDisabled|Boolean|Indica se a tela de sensibilidade do botão inicial está desabilitada|
+|iMessageAndFaceTimeScreenDisabled|Boolean|Indica se a tela iMessage e FaceTime está desabilitada|
+|onBoardingScreenDisabled|Boolean|Indica se a tela de instalação de integração está desabilitada|
+|simSetupScreenDisabled|Boolean|Indica se a tela SIMSetup está desabilitada|
+|softwareUpdateScreenDisabled|Boolean|Indica se a tela de atualização de sofware obrigatória está desabilitada|
+|watchMigrationScreenDisabled|Boolean|Indica se a tela de migração do relógio está desabilitada|
+|appearanceScreenDisabled|Boolean|Indica se a tela do Apperance está desabilitada|
+|expressLanguageScreenDisabled|Boolean|Indica se a tela linguagem expressa está desabilitada|
+|preferredLanguageScreenDisabled|Boolean|Indica se a tela de idioma preferencial está desabilitada|
+|deviceToDeviceMigrationDisabled|Boolean|Indica se a migração de dispositivo para dispositivo está desabilitada|
+|welcomeScreenDisabled|Boolean|Indica se a tela Weclome está desabilitada|
+|passCodeDisabled|Boolean|Indica se o painel de configuração senha está desabilitado|
+|zoomDisabled|Boolean|Indica se o painel de configuração de zoom está desabilitado|
+|restoreCompletedScreenDisabled|Boolean|Indica se a tela Weclome está desabilitada|
+|updateCompleteScreenDisabled|Boolean|Indica se a tela Weclome está desabilitada|
+|forceTemporarySession|Boolean|Indica se as sessões temporárias estão habilitadas|
+|temporarySessionTimeoutInSeconds|Int32|Indica o tempo de tempo de sessão temporária|
+|userSessionTimeoutInSeconds|Int32|Indica o tempo de tempo de sessão temporária|
+|passcodeLockGracePeriodInSeconds|Int32|Indica o tempo-de-tempo antes da tela bloqueada exigir que o usuário insira a passagem do dispositivo para desbloqueá-la|
+|carrierActivationUrl|Cadeia de caracteres|URL da operadora para ativar o eSIM do dispositivo.|
 
 
 
@@ -115,7 +120,7 @@ Este é um exemplo da solicitação.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/defaultIosEnrollmentProfile
 Content-type: application/json
-Content-length: 2108
+Content-length: 2336
 
 {
   "@odata.type": "#microsoft.graph.depIOSEnrollmentProfile",
@@ -172,7 +177,12 @@ Content-length: 2108
   "passCodeDisabled": true,
   "zoomDisabled": true,
   "restoreCompletedScreenDisabled": true,
-  "updateCompleteScreenDisabled": true
+  "updateCompleteScreenDisabled": true,
+  "forceTemporarySession": true,
+  "temporarySessionTimeoutInSeconds": 0,
+  "userSessionTimeoutInSeconds": 11,
+  "passcodeLockGracePeriodInSeconds": 0,
+  "carrierActivationUrl": "https://example.com/carrierActivationUrl/"
 }
 ```
 
@@ -181,7 +191,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2157
+Content-Length: 2385
 
 {
   "@odata.type": "#microsoft.graph.depIOSEnrollmentProfile",
@@ -239,7 +249,12 @@ Content-Length: 2157
   "passCodeDisabled": true,
   "zoomDisabled": true,
   "restoreCompletedScreenDisabled": true,
-  "updateCompleteScreenDisabled": true
+  "updateCompleteScreenDisabled": true,
+  "forceTemporarySession": true,
+  "temporarySessionTimeoutInSeconds": 0,
+  "userSessionTimeoutInSeconds": 11,
+  "passcodeLockGracePeriodInSeconds": 0,
+  "carrierActivationUrl": "https://example.com/carrierActivationUrl/"
 }
 ```
 

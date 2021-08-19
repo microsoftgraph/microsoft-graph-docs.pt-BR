@@ -1,22 +1,22 @@
 ---
-title: tipo de enumeração managedDeviceManagementFeatures
+title: Tipo de número managedDeviceManagementFeatures
 description: Recursos de gerenciamento de dispositivos.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 89871545fad00390d54af4d2e3a855d7956581be
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 1fc9935fbca2fb0d710047e129fa4ce74758cad1cd026d527505329131f63f87
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49267338"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54148005"
 ---
-# <a name="manageddevicemanagementfeatures-enum-type"></a>tipo de enumeração managedDeviceManagementFeatures
+# <a name="manageddevicemanagementfeatures-enum-type"></a>Tipo de número managedDeviceManagementFeatures
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -25,8 +25,8 @@ Recursos de gerenciamento de dispositivos.
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|nenhum|,0|Recursos de gerenciamento de dispositivos desconhecidos.|
-|microsoftManagedDesktop|1|Área de trabalho gerenciada da Microsoft|
+|Nenhuma|0|Recursos de gerenciamento de dispositivo desconhecidos.|
+|microsoftManagedDesktop|1 |Área de trabalho gerenciada da Microsoft|
 
 
 

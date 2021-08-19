@@ -5,25 +5,25 @@ author: eddie-lee-msft
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: add05d086580d5ed76b4195de98d28187e3ad30d
-ms.sourcegitcommit: 08d47a31c48fd69ae4fcee26e34fdd65ad1ba69f
+ms.openlocfilehash: dc50e9ca132b295f000a707a9fc3280bef2bb6e6eb564aca0ae69020b1d2a498
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51507554"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "57329673"
 ---
 # <a name="team-sendactivitynotification"></a>team: sendActivityNotification
 Namespace: microsoft.graph
 
-Envie uma notificação de feed de atividade no escopo de uma equipe. Para obter mais detalhes sobre como enviar notificações e os requisitos para fazer isso, consulte [sending Teams activity notifications](/graph/teams-send-activityfeednotifications).
+Envie uma notificação de feed de atividade no escopo de uma equipe. Para obter mais detalhes sobre o envio de notificações e os requisitos para fazer isso, consulte [o Teams de atividades.](/graph/teams-send-activityfeednotifications)
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|TeamsActivity.Send|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta corporativa ou de estudante)|TeamsActivity.Send|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|TeamsActivity.Send|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -50,10 +50,10 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta ação.
 |Parâmetro|Tipo|Descrição|
 |:---|:---|:---|
 |topic|[teamworkActivityTopic](../resources/teamworkactivitytopic.md)|Tópico da notificação. Especifica o recurso que está sendo falado.|
-|activityType|Cadeia de caracteres|Tipo de atividade. Isso deve ser declarado no manifesto do [aplicativo teams.](/microsoftteams/platform/overview)|
+|activityType|Cadeia de caracteres|Tipo de atividade. Isso deve ser declarado no manifesto Teams [app](/microsoftteams/platform/overview).|
 |chainId|Int64|Opcional. Usado para substituir uma notificação anterior. Use o mesmo `chainId` em solicitações subsequentes para substituir a notificação anterior.|
-|previewText|[itemBody](../resources/itembody.md)|Visualizar texto para a notificação. O Microsoft Teams mostrará apenas os primeiros 150 caracteres.|
-|templateParameters|Coleção [keyValuePair](../resources/keyvaluepair.md)|Valores para variáveis de modelo definidas na entrada de feed de atividade correspondente `activityType` ao manifesto do aplicativo do [Teams.](/microsoftteams/platform/overview)|
+|previewText|[itemBody](../resources/itembody.md)|Visualizar texto para a notificação. Microsoft Teams mostrará apenas os primeiros 150 caracteres.|
+|templateParameters|Coleção [keyValuePair](../resources/keyvaluepair.md)|Valores para variáveis de modelo definidas na entrada de feed de atividade `activityType` correspondentes [Teams manifesto do aplicativo](/microsoftteams/platform/overview).|
 |destinatário|[teamworkNotificationRecipient](../resources/teamworknotificationrecipient.md)|Destinatário da notificação. Somente usuários do Azure AD são suportados. Consulte também [aadUserNotificationRecipient](../resources/aadusernotificationrecipient.md). |
 
 Os seguintes recursos são suportados ao definir o `source` valor da propriedade **topic** como `entityUrl` :
@@ -63,7 +63,7 @@ Os seguintes recursos são suportados ao definir o `source` valor da propriedade
 - [chatMesage](../resources/chatmessage.md)
 - [teamsTab](../resources/teamstab.md)
 
-> **Observação:** A URL da entidade deve ser o mesmo ou o recurso filho da equipe na URL. Além disso, o [aplicativo do Teams](/microsoftteams/platform/overview) deve ser instalado na equipe.
+> **Observação:** A URL da entidade deve ser o mesmo ou o recurso filho da equipe na URL. Além disso, o [Teams aplicativo deve](/microsoftteams/platform/overview) ser instalado na equipe.
 
 ## <a name="response"></a>Resposta
 
@@ -194,7 +194,7 @@ HTTP/1.1 204 No Content
 
 ### <a name="example-3-notify-a-user-about-an-event-using-custom-topic"></a>Exemplo 3: Notificar um usuário sobre um evento usando tópico personalizado
 
-Como visto nos exemplos anteriores, você pode vincular a diferentes aspectos da equipe. No entanto, se você deseja vincular a um aspecto que não faz parte da equipe ou não é representado pelo Microsoft Graph, ou deseja personalizar o nome, você pode definir a origem do para e passar um valor personalizado para `topic` `text` ele. `webUrl` é necessário ao definir `topic` a fonte como `text` .
+Como visto nos exemplos anteriores, você pode vincular a diferentes aspectos da equipe. No entanto, se você deseja vincular a um aspecto que não faz parte da equipe ou não é representado pela Microsoft Graph, ou deseja personalizar o nome, você pode definir a origem do para e passar um valor personalizado para `topic` `text` ele. `webUrl` é necessário ao definir `topic` a fonte como `text` .
 
 #### <a name="request"></a>Solicitação
 <!-- {
