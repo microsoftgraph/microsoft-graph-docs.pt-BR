@@ -1,22 +1,22 @@
 ---
-title: tipo de enumeração vpnAuthenticationMethod
+title: Tipo de número vpnAuthenticationMethod
 description: Método de autenticação VPN.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 3ffc71fa17385ad1e0d00dd77958e65fb7a4aed9
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 0fca9d52b09bdb19f85aa6fa06c166195263af39fbf143e956207f7a5e0a7b30
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49276312"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54226340"
 ---
-# <a name="vpnauthenticationmethod-enum-type"></a>tipo de enumeração vpnAuthenticationMethod
+# <a name="vpnauthenticationmethod-enum-type"></a>Tipo de número vpnAuthenticationMethod
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -25,11 +25,11 @@ Método de autenticação VPN.
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|certificado|,0|Autenticar com um certificado.|
-|usernameAndPassword|1|Usar nome de usuário e senha para autenticação.|
-|sharedSecret|duas|Usar segredo compartilhado para autenticação.  Válido somente para iOS IKEv2.|
-|derivedCredential|3D|Use a credencial derivada para autenticação.|
-|azureAD|4 |Usar o Azure AD para autenticação.|
+|certificado|0|Autenticar com um certificado.|
+|usernameAndPassword|1 |Use nome de usuário e senha para autenticação.|
+|sharedSecret|2|Use o Segredo Compartilhado para Autenticação.  Válido somente para iOS IKEv2.|
+|derivedCredential|3 |Use a Credencial Derivada para Autenticação.|
+|azureAD|4 |Use o Azure AD para autenticação.|
 
 
 

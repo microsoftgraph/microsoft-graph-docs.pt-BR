@@ -1,18 +1,18 @@
 ---
-title: tipo de recurso securityResource
+title: Tipo de recurso securityResource
 description: Representa os recursos relacionados a um alerta.
 localization_priority: Normal
 author: preetikr
 ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: 4d27b5815366bdce76e5f99f0410f67684e608ea
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f8beb524375db5fc4187f210b8602e534835a53f3dc9c52b60ee57085f904ce2
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47988818"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54212931"
 ---
-# <a name="securityresource-resource-type"></a>tipo de recurso securityResource
+# <a name="securityresource-resource-type"></a>Tipo de recurso securityResource
 
 Namespace: microsoft.graph
 
@@ -22,15 +22,15 @@ Representa os recursos relacionados a um alerta.
 
 | Propriedade   | Tipo|Descrição|
 |:---------------|:--------|:----------|
-|recurso|String|Nome do recurso relacionado ao alerta atual. **Obrigatório**.|
+|recurso|Cadeia de caracteres|Nome do recurso relacionado ao alerta atual. **Obrigatório**.|
 |resourceType|[securityResourceType](#securityresourcetype-values)|Representa o tipo de recursos de segurança relacionados a um alerta. Os valores possíveis são: `attacked` e `related`.|
 
-### <a name="securityresourcetype-values"></a>valores de securityResourceType
+### <a name="securityresourcetype-values"></a>valores securityResourceType
 
 |Membro|Valor|Descrição|
 |-|-|-|
-|atacada|1 |O recurso foi atacado no alerta.|
-|correspondente|2 |O recurso está relacionado ao alerta, embora não seja atacado diretamente.|
+|attacked|1 |O recurso foi atacado no alerta.|
+|related|2|O recurso está relacionado ao alerta, embora não tenha sido diretamente atacado.|
 
 ## <a name="json-representation"></a>Representação JSON
 

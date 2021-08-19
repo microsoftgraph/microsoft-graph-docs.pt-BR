@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: reports
 author: sarahwxy
 doc_type: resourcePageType
-ms.openlocfilehash: b7a6617b82c16fb297b684801e11876cf8178b0d
-ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
+ms.openlocfilehash: e93dde1a1cdd034461a44766df6538da663093ed5d7f4674a3688d0e847aa9f4
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49982352"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54197769"
 ---
 # <a name="yammerdeviceusageuserdetail-resource-type"></a>Tipo de recurso yammerDeviceUsageUserDetail
 
@@ -26,12 +26,12 @@ Namespace: microsoft.graph
 | userState         | Cadeia de caracteres  |
 | stateChangeDate   | Data    |
 | lastActivityDate  | Data    |
-| usedWeb           | Booliano |
-| usedWindowsPhone  | Booliano |
-| usedAndroidPhone  | Booliano |
-| usediPhone        | Booliano |
-| usediPad          | Booliano |
-| usedOthers        | Booliano |
+| usedWeb           | Boolean |
+| usedWindowsPhone  | Boolean |
+| usedAndroidPhone  | Boolean |
+| usediPhone        | Boolean |
+| usediPad          | Boolean |
+| usedOthers        | Boolean |
 | reportPeriod      | Cadeia de caracteres  |
 
 ## <a name="json-representation"></a>Representação JSON

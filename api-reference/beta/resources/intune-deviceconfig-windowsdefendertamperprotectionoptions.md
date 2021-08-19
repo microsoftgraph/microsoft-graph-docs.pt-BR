@@ -1,33 +1,33 @@
 ---
-title: tipo de enumeração windowsDefenderTamperProtectionOptions
-description: Opções de configuração do defender TamperProtection
+title: Tipo de número windowsDefenderTamperProtectionOptions
+description: Opções de configuração do Defender TamperProtection
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 024d33a7298c304bb1061fa24a7a3fd28c9aab1c
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: d333024d25a311540d606ed2220f1214275fdcc6b775fcb46ae619142ad8b0ce
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49279007"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54226347"
 ---
-# <a name="windowsdefendertamperprotectionoptions-enum-type"></a>tipo de enumeração windowsDefenderTamperProtectionOptions
+# <a name="windowsdefendertamperprotectionoptions-enum-type"></a>Tipo de número windowsDefenderTamperProtectionOptions
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Opções de configuração do defender TamperProtection
+Opções de configuração do Defender TamperProtection
 
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|notConfigured|,0|Não configurado|
-|possibilite|1|Habilitar a proteção contra violação do Windows Defender|
-|desabilitar|duas|Desabilitar a proteção de violação do Windows Defender|
+|notConfigured|0|Não configurado|
+|enable|1 |Habilitar a proteção contra violações do Windows Defender|
+|desabilitar|2|Desabilitar a proteção contra violações do Windows Defender|
 
 
 

@@ -1,32 +1,32 @@
 ---
-title: tipo de enumeração macOSSoftwareUpdateBehavior
-description: Atualizar opções de comportamento para atualizações de software do macOS.
+title: Tipo de número macOSSoftwareUpdateBehavior
+description: Atualize as opções de comportamento para atualizações de software macOS.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: d5191b5ddf84e437fe53aa5d3b44bfc4ffed6abc
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: f26cc20fe8156689a2aa1d52669b8775b347f65b2d3d8c65b85209b9abc3bd78
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49268493"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54251523"
 ---
-# <a name="macossoftwareupdatebehavior-enum-type"></a>tipo de enumeração macOSSoftwareUpdateBehavior
+# <a name="macossoftwareupdatebehavior-enum-type"></a>Tipo de número macOSSoftwareUpdateBehavior
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Atualizar opções de comportamento para atualizações de software do macOS.
+Atualize as opções de comportamento para atualizações de software macOS.
 
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|notConfigured|,0|Não configurado.|
-|Padrão.|1|Baixe e/ou instale a atualização de software, dependendo do estado do dispositivo atual.|
+|notConfigured|0|Não configurado.|
+|Padrão.|1 |Baixe e/ou instale a atualização de software, dependendo do estado atual do dispositivo.|
 
 
 

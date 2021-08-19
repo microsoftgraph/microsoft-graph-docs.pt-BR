@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 53031ccf2db85727f35cf8ef376682a1944d3a29
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: 046f65a063834eee93a936bf74615c9c3b456b9cf7daba4dbbecb293e2af91df
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51126224"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54198805"
 ---
 # <a name="update-enrollmentprofile"></a>Atualizar enrollmentProfile
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -55,11 +55,11 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [o enrol
 |:---|:---|:---|
 |id|Cadeia de caracteres|O GUID do objeto.|
 |displayName|Cadeia de caracteres|Nome do perfil|
-|descrição|Cadeia de caracteres|Descrição do perfil|
-|requiresUserAuthentication|Booleano|Indica se o perfil requer autenticação do usuário|
+|description|Cadeia de caracteres|Descrição do perfil|
+|requiresUserAuthentication|Boolean|Indica se o perfil requer autenticação do usuário|
 |configurationEndpointUrl|Cadeia de caracteres|URL do ponto de extremidade de configuração a ser usada para Registro|
-|enableAuthenticationViaCompanyPortal|Booleano|Indica a autenticação com o Assistente de Instalação da Apple em vez do Portal da Empresa.|
-|requireCompanyPortalOnSetupAssistantEnrolledDevices|Booleano|Indica que o Portal da Empresa é necessário em dispositivos inscritos pelo assistente de instalação|
+|enableAuthenticationViaCompanyPortal|Boolean|Indica a autenticação com o Assistente de Instalação da Apple em vez de Portal da Empresa.|
+|requireCompanyPortalOnSetupAssistantEnrolledDevices|Boolean|Indica que a Portal da Empresa é necessária em dispositivos inscritos pelo assistente de instalação|
 
 
 

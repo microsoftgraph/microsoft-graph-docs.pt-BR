@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 80f5fc4065d8db2f0bbb7659f244a14c9ef9331d
-ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
+ms.openlocfilehash: c108b5972cdb7ccfdbfd88e64f6929ea2807db958d93bdc084761471910f448c
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51867522"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54228020"
 ---
 # <a name="update-devicemanagement"></a>Atualizar deviceManagement
 
 Namespace: microsoft.graph
 
-> **Importante:** APIs na versão /beta do Microsoft Graph estão sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** APIs na versão /beta no Microsoft Graph estão sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -36,7 +36,7 @@ Observe que a permissão varia de acordo com o fluxo de trabalho.
 | &nbsp; &nbsp; **Termos da empresa** | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp; &nbsp; **Configuração do dispositivo** | DeviceManagementConfiguration.ReadWrite.All |
 | &nbsp;&nbsp; **Intenção do dispositivo** | DeviceManagementConfiguration.ReadWrite.All|
-| &nbsp; &nbsp; **Gerenciamento de dispositivo** | DeviceManagementManagedDevices.ReadWrite.All |
+| &nbsp;&nbsp; **Gerenciamento de dispositivos** | DeviceManagementManagedDevices.ReadWrite.All |
 | &nbsp;&nbsp; **SIM Eletrônico** | DeviceManagementConfiguration.ReadWrite.All |
 | &nbsp;&nbsp; **Inscrição** | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp;&nbsp; **Esgrima** | DeviceManagementConfiguration.ReadWrite.All |
@@ -47,18 +47,18 @@ Observe que a permissão varia de acordo com o fluxo de trabalho.
 | &nbsp; &nbsp; **Controle de Acesso Baseado em Função (RBAC)** | DeviceManagementRBAC.ReadWrite.All |
 | &nbsp; &nbsp; **Acesso remoto** | DeviceManagementConfiguration.Read.All |
 | &nbsp;&nbsp; **Assistência remota** | DeviceManagementServiceConfig.ReadWrite.All |
-| &nbsp;&nbsp; **Atualização de Software** | DeviceManagementServiceConfig.ReadWrite.All |
+| &nbsp; &nbsp; **Atualização de Software** | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp;&nbsp; **Gerenciamento de despesas de telecomunicações** | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp;&nbsp; **Troublehooting** | DeviceManagementManagedDevices.ReadWrite.All |
 | &nbsp; &nbsp; **Proteção de Informações do Windows** | DeviceManagementApps.ReadWrite.All |
 | Delegada (conta pessoal da Microsoft) | Sem suporte.|
-| Application ||
+| Aplicativo ||
 | &nbsp;&nbsp; **Android for Work** | DeviceManagementConfiguration.ReadWrite.All  |
 | &nbsp; &nbsp; **Auditoria** | DeviceManagementApps.ReadWrite.All |
 | &nbsp; &nbsp; **Termos da empresa** | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp; &nbsp; **Configuração do dispositivo** | DeviceManagementConfiguration.ReadWrite.All |
 | &nbsp;&nbsp; **Intenção do dispositivo** | DeviceManagementConfiguration.ReadWrite.All|
-| &nbsp; &nbsp; **Gerenciamento de dispositivo** | DeviceManagementManagedDevices.ReadWrite.All |
+| &nbsp;&nbsp; **Gerenciamento de dispositivos** | DeviceManagementManagedDevices.ReadWrite.All |
 | &nbsp;&nbsp; **SIM Eletrônico** | DeviceManagementConfiguration.ReadWrite.All |
 | &nbsp;&nbsp; **Inscrição** | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp;&nbsp; **Esgrima** | DeviceManagementConfiguration.ReadWrite.All |
@@ -69,7 +69,7 @@ Observe que a permissão varia de acordo com o fluxo de trabalho.
 | &nbsp; &nbsp; **Controle de Acesso Baseado em Função (RBAC)** | DeviceManagementRBAC.ReadWrite.All |
 | &nbsp; &nbsp; **Acesso remoto** | DeviceManagementConfiguration.Read.All |
 | &nbsp;&nbsp; **Assistência remota** | DeviceManagementServiceConfig.ReadWrite.All |
-| &nbsp;&nbsp; **Atualização de Software** | DeviceManagementServiceConfig.ReadWrite.All |
+| &nbsp; &nbsp; **Atualização de Software** | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp;&nbsp; **Gerenciamento de despesas de telecomunicações** | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp;&nbsp; **Troublehooting** | DeviceManagementManagedDevices.ReadWrite.All |
 | &nbsp; &nbsp; **Proteção de Informações do Windows** | DeviceManagementApps.ReadWrite.All |

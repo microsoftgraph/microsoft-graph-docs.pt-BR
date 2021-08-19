@@ -1,15 +1,15 @@
 ---
-title: Gerenciamento de despesas com telecomunicações no Microsoft Intune - API do Microsoft Graph
-description: Lista a API do Microsoft Graph para pontos de extremidade do Intune (REST) relacionadas ao gerenciamento de despesas com telecomunicações para uma organização locatária.
+title: Gerenciamento de despesas de telecomunicações em Microsoft Intune - API Graph Microsoft
+description: Lista a API Graph microsoft para pontos de extremidade do Intune (REST) relacionadas ao gerenciamento de despesas de telecomunicações para uma organização de locatários.
 localization_priority: Normal
 author: dougeby
 ms.prod: intune
-ms.openlocfilehash: 471bd6315c35b713bb022cc9872f96ac70fcd050
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: 2d73056b6ccc9b3732fd5c9ece7c1715b3486fec0b34a274349dc338eaa11ec3
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50159469"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54170318"
 ---
 # <a name="telecom-expense-management-in-microsoft-intune"></a>Gerenciamento de despesas com telecomunicações no Microsoft Intune
 
