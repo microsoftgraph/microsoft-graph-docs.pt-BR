@@ -1,22 +1,22 @@
 ---
-title: tipo de enumeração userExperienceAnalyticsHealthState
+title: tipo de número userExperienceAnalyticsHealthState
 description: Ainda não documentado
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 94df0be65d7f7ff4cfcda2c09ce35ea33620d8ce
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 1438cc5446068cdb9d61efccc891714a866a3530385d7bf767ff351c58929d45
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49208293"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54244691"
 ---
-# <a name="userexperienceanalyticshealthstate-enum-type"></a>tipo de enumeração userExperienceAnalyticsHealthState
+# <a name="userexperienceanalyticshealthstate-enum-type"></a>tipo de número userExperienceAnalyticsHealthState
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -25,10 +25,10 @@ Ainda não documentado
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|desconhecido|,0|Ainda não documentado|
-|insufficientData|1|Ainda não documentado|
-|needsAttention|duas|Ainda não documentado|
-|meetingGoals|3D|Ainda não documentado|
+|desconhecido|0|Ainda não documentado|
+|insufficientData|1 |Ainda não documentado|
+|needsAttention|2|Ainda não documentado|
+|meetingGoals|3 |Ainda não documentado|
 
 
 

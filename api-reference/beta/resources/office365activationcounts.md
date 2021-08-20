@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: reports
 author: sarahwxy
 doc_type: resourcePageType
-ms.openlocfilehash: 7ac3b6bb14b347f4ab273bbf65ce767f1ae6e1a2
-ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
+ms.openlocfilehash: 39e679da134120377f17dab520c332dc54aab328ef924b65212f5145279a8402
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49983200"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54176320"
 ---
 # <a name="office365activationcounts-resource-type"></a>Tipo de recurso office365ActivationCounts
 
@@ -22,11 +22,11 @@ Namespace: microsoft.graph
 | :---------------- | :----- | ---------------------------------------- |
 | reportRefreshDate | Data   | A data mais recente do conteúdo.          |
 | productType       | Cadeia de caracteres | O tipo de produto, como "Microsoft 365 ProPlus" ou "Project Client". |
-| windows           | Int64  | A contagem de ativação no Windows. Esse número inclui todas as ativações em qualquer computador Windows. |
+| windows           | Int64  | A contagem de ativação Windows. Esse número inclui todas as ativações em qualquer computador Windows computador. |
 | mac               | Int64  | A contagem de ativação no Mac OS.          |
 | android           | Int64  | A contagem de ativação em um dispositivo Android.  |
 | ios               | Int64  | A contagem de ativação no iOS.             |
-| windows10Mobile   | Int64  | A contagem de ativação no Windows 10 Mobile. |
+| windows10Mobile   | Int64  | A contagem de ativação Windows 10 celular. |
 
 ## <a name="json-representation"></a>Representação JSON
 

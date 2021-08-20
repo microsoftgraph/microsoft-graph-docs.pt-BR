@@ -1,22 +1,22 @@
 ---
-title: tipo de enumeração localSecurityOptionsInformationDisplayedOnLockScreenType
+title: localSecurityOptionsInformationDisplayedOnLockScreenType tipo de número
 description: Valores possíveis para LocalSecurityOptionsInformationDisplayedOnLockScreen
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 7af3f41d213a36b53d07468a6810bc1629c4d82f
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 0bfe02f8ef9386353a281df979907a6ba768972b68d54b8ffbd018f6500193c2
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49198857"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54176502"
 ---
-# <a name="localsecurityoptionsinformationdisplayedonlockscreentype-enum-type"></a>tipo de enumeração localSecurityOptionsInformationDisplayedOnLockScreenType
+# <a name="localsecurityoptionsinformationdisplayedonlockscreentype-enum-type"></a>localSecurityOptionsInformationDisplayedOnLockScreenType tipo de número
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -25,10 +25,10 @@ Valores possíveis para LocalSecurityOptionsInformationDisplayedOnLockScreen
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|notConfigured|,0|Não configurado|
-|grupos|1|Nome de exibição do usuário, nomes de domínio e de usuário|
-|administratorsAndPowerUsers|duas|Somente nome de exibição do usuário|
-|administratorsAndInteractiveUsers|3D|Não exibir informações do usuário|
+|notConfigured|0|Não configurado|
+|administradores|1 |Nome de exibição de usuário, domínio e nomes de usuário|
+|administratorsAndPowerUsers|2|Somente nome de exibição do usuário|
+|administratorsAndInteractiveUsers|3 |Não exibir informações do usuário|
 
 
 

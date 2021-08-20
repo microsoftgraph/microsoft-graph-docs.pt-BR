@@ -1,22 +1,22 @@
 ---
-title: tipo de recurso deviceManagementConfigurationSettingOccurrence
+title: Tipo de recurso deviceManagementConfigurationSettingOccurrence
 description: Ainda não documentado
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9b8a93c75f011dba9816ee84a9ef8bf5cd05d275
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 21ff7940e6e657d965b27823f0480b8247bae013767b51eaabb737a6d21ed844
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49301470"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54244831"
 ---
-# <a name="devicemanagementconfigurationsettingoccurrence-resource-type"></a>tipo de recurso deviceManagementConfigurationSettingOccurrence
+# <a name="devicemanagementconfigurationsettingoccurrence-resource-type"></a>Tipo de recurso deviceManagementConfigurationSettingOccurrence
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -25,8 +25,8 @@ Ainda não documentado
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|minDeviceOccurrence|Int32|A configuração de horários mínimos pode ser definida em Device. Um MinDeviceOccurrence de 0 significa que A configuração é opcional|
-|maxDeviceOccurrence|Int32|A configuração de horários máximos pode ser definida em Device. |
+|minDeviceOccurrence|Int32|A configuração de horários mínimos pode ser definida no dispositivo. Uma minDeviceOccurrence de 0 significa que a configuração é opcional|
+|maxDeviceOccurrence|Int32|A configuração de horários máximos pode ser definida no dispositivo. |
 
 ## <a name="relationships"></a>Relações
 Nenhum

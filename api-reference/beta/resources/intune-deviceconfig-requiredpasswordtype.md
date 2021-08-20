@@ -1,33 +1,33 @@
 ---
-title: tipo de enumeração requiredPasswordType
-description: Possíveis valores de senhas obrigatórias.
+title: tipo denum requiredPasswordType
+description: Valores possíveis de senhas necessárias.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: a61148fd8c985ff8ab7284af415a75022850fee8
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: b56a103715b95e7afb3541a5add10f93190dd7dc1e98787131303ecbdebe87a5
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49198210"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54242773"
 ---
-# <a name="requiredpasswordtype-enum-type"></a>tipo de enumeração requiredPasswordType
+# <a name="requiredpasswordtype-enum-type"></a>tipo denum requiredPasswordType
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Possíveis valores de senhas obrigatórias.
+Valores possíveis de senhas necessárias.
 
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|deviceDefault|,0|Valor padrão do dispositivo, sem intenção.|
-|tecla|1|Senha alfanumérica obrigatória.|
-|numéricos|duas|Senha numérica obrigatória.|
+|deviceDefault|0|Valor padrão do dispositivo, sem intenção.|
+|alfanumérico|1 |Senha alfanumérica necessária.|
+|numeric|2|Senha numérica necessária.|
 
 
 

@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9c6aef09391068da7a3022195b0ed85e7c5db7cc
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 81d7a349cc0701386700824b3dea2695932a1e35512a2af05f183667f125b827
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49260051"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54241650"
 ---
 # <a name="configurationmanagerclientenabledfeatures-resource-type"></a>Tipo de recurso configurationManagerClientEnabledFeatures
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -31,8 +31,8 @@ recursos habilitados pelo cliente do Gerenciador de Configurações
 |deviceConfiguration|Booliano|Se a configuração do dispositivo é gerenciada pelo Intune|
 |compliancePolicy|Booliano|Se a política de conformidade é gerenciada pelo Intune|
 |windowsUpdateForBusiness|Booliano|Se o Windows Update para Empresas é gerenciado pelo Intune|
-|endpointProtection|Booliano|Se o Endpoint Protection é gerenciado pelo Intune|
-|Officetreinamento|Booliano|Se o aplicativo do Office é gerenciado pelo Intune|
+|endpointProtection|Boolean|Se Endpoint Protection é gerenciado pelo Intune|
+|officeApps|Boolean|Se Office aplicativo é gerenciado pelo Intune|
 
 ## <a name="relationships"></a>Relações
 Nenhum
