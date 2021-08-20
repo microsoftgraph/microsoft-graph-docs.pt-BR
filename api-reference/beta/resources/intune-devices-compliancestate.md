@@ -1,22 +1,22 @@
 ---
-title: tipo de enumeração compliancestate
+title: tipo de número de complianceState
 description: Estado de conformidade.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: a4bff788ff7bed5b06d5efac8247bc55e195c762
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 2481570ea536c734be46f51bdaa3d9a893263188b6c99677925d61ad329af092
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49214620"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54150420"
 ---
-# <a name="compliancestate-enum-type"></a>tipo de enumeração compliancestate
+# <a name="compliancestate-enum-type"></a>tipo de número de complianceState
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -25,13 +25,13 @@ Estado de conformidade.
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|desconhecido|,0|Unknown.|
-|com|1|Com.|
-|incompatível|duas|O dispositivo não está em conformidade e é bloqueado de recursos corporativos.|
-|apresentar|3D|Conflito com outras regras.|
+|desconhecido|0|Desconhecido.|
+|compatível|1 |Compatível.|
+|noncompliant|2|O dispositivo não é compatível e é bloqueado de recursos corporativos.|
+|conflict|3 |Conflita com outras regras.|
 |erro|4 |Erro|
-|inGracePeriod|254|O dispositivo não está em conformidade, mas ainda tem acesso aos recursos corporativos|
-|configmanager|255|Gerenciado pelo Gerenciador de configuração|
+|inGracePeriod|254|O dispositivo não é compatível, mas ainda tem acesso a recursos corporativos|
+|configManager|255|Gerenciado pelo Gerenciador de Configurações|
 
 
 

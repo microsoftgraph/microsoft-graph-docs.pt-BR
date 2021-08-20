@@ -1,32 +1,32 @@
 ---
-title: tipo de recurso deviceManagementSettingDependency
-description: Informações de dependência de uma configuração
+title: Tipo de recurso deviceManagementSettingDependency
+description: Informações de dependência para uma configuração
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 76635e27bcb90eb393cfc2486f60c1a65315efb4
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: d5f29fecdde1b3a7a62ed72fcd96aceeb2a10385028106be288c7d8bcaff2254
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49268115"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54173034"
 ---
-# <a name="devicemanagementsettingdependency-resource-type"></a>tipo de recurso deviceManagementSettingDependency
+# <a name="devicemanagementsettingdependency-resource-type"></a>Tipo de recurso deviceManagementSettingDependency
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Informações de dependência de uma configuração
+Informações de dependência para uma configuração
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|DefinitionId|String|A ID da definição de configuração da configuração dependente|
-|as|coleção [deviceManagementConstraint](../resources/intune-deviceintent-devicemanagementconstraint.md)|Conjunto de restrições para o valor da configuração de dependência|
+|definitionId|Cadeia de caracteres|A ID de definição de configuração da configuração dependia|
+|restrições|[Coleção deviceManagementConstraint](../resources/intune-deviceintent-devicemanagementconstraint.md)|Coleção de restrições para o valor de configuração de dependência|
 
 ## <a name="relationships"></a>Relações
 Nenhum

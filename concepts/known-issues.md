@@ -3,12 +3,12 @@ title: Problemas conhecidos com o Microsoft Graph
 description: Este artigo descreve os problemas conhecidos com o Microsoft Graph.
 author: MSGraphDocsVTeam
 localization_priority: Priority
-ms.openlocfilehash: 505705c870c32b93221ff398089b150e0a826c7d617ff62483748dcb5117f712
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 2e4fe37e6a00337f36fea053b462e5b3a9e1a72f
+ms.sourcegitcommit: 22bd45d272681658d46a8b99af3c3eabc7b05cb1
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54163516"
+ms.lasthandoff: 08/18/2021
+ms.locfileid: "58384426"
 ---
 # <a name="known-issues-with-microsoft-graph"></a>Problemas conhecidos com o Microsoft Graph
 
@@ -261,6 +261,10 @@ Atualmente, há um problema que impede a configuração da propriedade **allowEx
 
 Para saber mais sobre problemas conhecidos com o uso da consulta delta, veja a [seção da consulta delta](#delta-query) deste artigo.
 
+### <a name="removing-a-group-owner-also-removes-the-user-as-a-group-member"></a>Remover um proprietário de grupo também remove o usuário como um membro do grupo
+
+Quando [DELETE/groups/{id}/owners](/graph/api/group-delete-owners.md) é chamado, o usuário também é removido da lista /groups/{id}/members. Para contornar isso, remova o usuário tanto dos proprietários quanto dos membros, espere 10 segundos e o adicione de volta aos membros.
+
 ## <a name="identity-and-access--application-and-service-principal-apis"></a>Identidade e acesso | APIs da entidade de serviço e aplicativo
 
 Há alterações para as entidades [application](/graph/api/resources/application?view=graph-rest-beta&preserve-view=true) e [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-beta&preserve-view=true) atualmente em desenvolvimento. A seguir, encontra-se um resumo das limitações atuais e os recursos da API em desenvolvimento:
@@ -298,7 +302,7 @@ Solicitações de lote JSON não devem conter quaisquer solicitações em lotes 
 
 ### <a name="all-individual-requests-must-be-synchronous"></a>Todas as solicitações individuais devem ser síncronas
 
-Todas as solicitações contidas em uma solicitação de lote devem ser executadas de forma síncrona. Se estiver presente, a preferência `respond-async` será ignorada.
+Todas as solicitações contidas em uma solicitação em lote devem ser executadas de forma síncrona. Se estiver presente, a preferência `respond-async` será ignorada.
 
 ### <a name="no-transactions"></a>Sem transações
 
@@ -316,9 +320,9 @@ No momento, as solicitações de lote JSON estão limitadas a 20 solicitações 
 
 Solicitações individuais podem depender de outras solicitações individuais. Atualmente, solicitações só podem depender de uma única outra solicitação e devem seguir um destes três padrões:
 
-1. Paralelo – nenhuma solicitação individual declara uma dependência na propriedade `dependsOn`.
+1. Paralelo - nenhuma solicitação individual indica uma dependência na propriedade **dependsOn**.
 2. Serial – todas as solicitações individuais dependem da solicitação individual anterior.
-3. Mesmo – todas as solicitações individuais indicam que uma dependência na propriedade `dependsOn` declaram a mesma dependência.
+3. Mesmo - todas as solicitações individuais que indicam uma dependência na propriedade **dependsOn** declaram a mesma dependência. **Observação**: as solicitações feitas usando este padrão serão executadas sequencialmente.
 
 Conforme o processamento em lotes JSON amadurece, essas limitações são removidas.
 

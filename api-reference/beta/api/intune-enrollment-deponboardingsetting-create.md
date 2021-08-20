@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e4417c01a435ceb8392eff280992877ebdeb79e4
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: 653df81ae1f9dd1ff82a0dfd352d300b8b386e06cb66bb2ce5bf61be28064406
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51135730"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54158885"
 ---
 # <a name="create-deponboardingsetting"></a>Criar depOnboardingSetting
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -59,13 +59,13 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar o depOnb
 |lastModifiedDateTime|DateTimeOffset|Quando o serviço foi integrado.|
 |lastSuccessfulSyncDateTime|DateTimeOffset|Quando o serviço foi sintetizado pela última vez com o Intune|
 |lastSyncTriggeredDateTime|DateTimeOffset|Quando o Intune solicitou pela última vez uma sincronização.|
-|shareTokenWithSchoolDataSyncService|Booleano|Se o compartilhamento de token Dep está habilitado ou não com o serviço de Sincronização de Dados escolares.|
+|shareTokenWithSchoolDataSyncService|Boolean|Se o compartilhamento de token Dep está habilitado ou não com o School Data Sync serviço.|
 |lastSyncErrorCode|Int32|Código de erro relatado pela Apple durante a última sincronização de dep.|
 |tokenType|[depTokenType](../resources/intune-enrollment-deptokentype.md)|Obtém ou define o Tipo de Token de Dep. Os valores possíveis são: `none`, `dep`, `appleSchoolManager`.|
 |tokenName|Cadeia de caracteres|Nome amigável para Token de Dep|
 |syncedDeviceCount|Int32|Obtém contagem de dispositivos sincronizados|
-|dataSharingConsentGranted|Booleano|Consentimento concedido para compartilhamento de dados com o Serviço de Dep da Apple|
-|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de marcas de escopo para esta instância entity.|
+|dataSharingConsentGranted|Boolean|Consentimento concedido para compartilhamento de dados com o Serviço de Dep da Apple|
+|roleScopeTagIds|String collection|Lista de marcas de escopo para esta instância entity.|
 
 
 

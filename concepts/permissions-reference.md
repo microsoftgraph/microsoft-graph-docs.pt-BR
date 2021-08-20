@@ -4,12 +4,12 @@ description: O Microsoft Graph expõe as permissões granulares que controlam o 
 author: jackson-woods
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 15c44d19686b1a8bf1fe5f6bea8577be8a859b47da2d49b11b19b81fc32a0ca8
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 25017432241bd73b17efddb7399b5df5c3221e33
+ms.sourcegitcommit: 22bd45d272681658d46a8b99af3c3eabc7b05cb1
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54228930"
+ms.lasthandoff: 08/18/2021
+ms.locfileid: "58384482"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Referência de permissões do Microsoft Graph
 
@@ -1297,7 +1297,7 @@ _Notes.ReadWrite_ e _Notes.ReadWrite.All_ também permitem que o aplicativo modi
 Para contas corporativas ou de estudante, _Notes.Read.All_ e _Notes.ReadWrite.All_ permitem que o aplicativo acesse o conteúdo do OneNote de outros usuários ao qual o usuário conectado tenha permissão dentro da organização.
 
 ### <a name="example-usage"></a>Exemplo de uso
-#### <a name="delegated"></a>Delegado	
+#### <a name="delegated"></a>Delegated
 
 * _Notes.Create_: Criar novos blocos de anotações para o usuário conectado (`POST /me/onenote/notebooks`).
 * _Notes.Read_: Criar blocos de anotações para o usuário conectado (`GET /me/onenote/notebooks`).
@@ -1852,6 +1852,7 @@ As permissões de segurança só são válidas para contas corporativas ou de es
 ### <a name="remarks"></a>Comentários
 
 Essas permissões de sites só são válidas para contas corporativas ou de estudante.
+A permissão do aplicativo _Sites.Selected_ está disponível apenas na API do Microsoft Graph.
 
 ### <a name="example-usage"></a>Exemplo de uso
 
@@ -2291,7 +2292,7 @@ Para contas corporativas ou de estudante, o perfil completo inclui todas as prop
 - mobilePhone
 - mySite
 - pastProjects
-- photo
+- Foto
 - preferredName
 - responsibilities
 - schools
@@ -2308,7 +2309,7 @@ A permissão _User.ReadBasic.All_ restringe o acesso do aplicativo a um conjunto
 - displayName
 - givenName
 - Email
-- photo
+- Foto
 - surname
 - userPrincipalName
 
@@ -2409,7 +2410,7 @@ Para que um aplicativo leia ou grave todas as configurações de implantação d
 
 ### <a name="example-usage"></a>Exemplo de uso
 
-#### <a name="delegated"></a>Delegado
+#### <a name="delegated"></a>Delegated
 
 * _WindowsUpdates.ReadWrite.All_: crie uma implantação (`POST /beta/admin/windows/updates/deployments`).
 

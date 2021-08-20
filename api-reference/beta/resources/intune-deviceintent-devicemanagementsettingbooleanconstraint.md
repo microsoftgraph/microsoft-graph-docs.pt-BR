@@ -1,26 +1,26 @@
 ---
-title: tipo de recurso deviceManagementSettingBooleanConstraint
-description: Restrição o impõe um valor booliano específico
+title: Tipo de recurso deviceManagementSettingBooleanConstraint
+description: Restrição da imposição de um valor booleano específico
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 2a50b5a4c8f51b7b9a4bc548245f9bd24d36f383
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 32a0dcf4d65df9375aff4aab865535f98999c3015f470bf9ecb368867a4840ad
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49275563"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54122492"
 ---
-# <a name="devicemanagementsettingbooleanconstraint-resource-type"></a>tipo de recurso deviceManagementSettingBooleanConstraint
+# <a name="devicemanagementsettingbooleanconstraint-resource-type"></a>Tipo de recurso deviceManagementSettingBooleanConstraint
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Restrição o impõe um valor booliano específico
+Restrição da imposição de um valor booleano específico
 
 
 Herda de [deviceManagementConstraint](../resources/intune-deviceintent-devicemanagementconstraint.md)
@@ -28,7 +28,7 @@ Herda de [deviceManagementConstraint](../resources/intune-deviceintent-deviceman
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|valor|Boolean|O valor booliano a ser comparado|
+|valor|Boolean|O valor booleano a ser comparado com|
 
 ## <a name="relationships"></a>Relações
 Nenhum
