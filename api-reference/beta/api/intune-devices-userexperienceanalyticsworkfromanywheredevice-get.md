@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f803b9f0857e32aa02d6fb5e881a6e4df044caaa
-ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
+ms.openlocfilehash: 56f1919c95f7f54014530e33a53b34f8c424a565
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "52665039"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58262218"
 ---
 # <a name="get-userexperienceanalyticsworkfromanywheredevice"></a>Obter userExperienceAnalyticsWorkFromAnywhereDevice
 
@@ -27,9 +27,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
+|Delegada (conta corporativa ou de estudante)|DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Aplicativo|DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -68,7 +68,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 683
+Content-Length: 1152
 
 {
   "value": {
@@ -86,7 +86,20 @@ Content-Length: 683
     "azureAdDeviceId": "Azure Ad Device Id value",
     "azureAdJoinType": "Azure Ad Join Type value",
     "osDescription": "Os Description value",
-    "osVersion": "Os Version value"
+    "osVersion": "Os Version value",
+    "tenantAttached": true,
+    "compliancePolicySetToIntune": true,
+    "otherWorkloadsSetToIntune": true,
+    "upgradeEligibility": "unknown",
+    "ramCheckFailed": true,
+    "storageCheckFailed": true,
+    "processorCoreCountCheckFailed": true,
+    "processorSpeedCheckFailed": true,
+    "tpmCheckFailed": true,
+    "secureBootCheckFailed": true,
+    "processorFamilyCheckFailed": true,
+    "processor64BitCheckFailed": true,
+    "osCheckFailed": true
   }
 }
 ```

@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b9ddba61608e2b215d419c341a0240667fca4840
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: 942d20ac2b8b8a335da57103e516d0a5520b5bce
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51154151"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58264868"
 ---
 # <a name="update-userexperienceanalyticsdeviceperformance"></a>Atualizar userExperienceAnalyticsDevicePerformance
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -27,9 +27,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All|
+|Delegada (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 |Delegada (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementManagedDevices.ReadWrite.All|
+|Aplicativo|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -72,6 +72,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [o userE
 |restartCount|Int32|Número de reinicializações nos últimos 14 dias. Valores válidos de 0 a 9999999|
 |averageBlueScreens|Duplo|Número médio (médio) de Telas Azuis por dispositivo nos últimos 14 dias. Valores válidos de 0 a 9999999|
 |averageRestarts|Duplo|Número médio (médio) de Reinicializações por dispositivo nos últimos 14 dias. Valores válidos de 0 a 9999999|
+|startupPerformanceScore|Duplo|A pontuação de desempenho de inicialização do dispositivo de análise de experiência do usuário. Valores válidos -1,79769313486232E+308 a 1.79769313486232E+308|
 
 
 
@@ -85,7 +86,7 @@ Este é um exemplo da solicitação.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsDevicePerformance/{userExperienceAnalyticsDevicePerformanceId}
 Content-type: application/json
-Content-length: 635
+Content-length: 684
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsDevicePerformance",
@@ -106,7 +107,8 @@ Content-length: 635
   "blueScreenCount": 15,
   "restartCount": 12,
   "averageBlueScreens": 6.0,
-  "averageRestarts": 5.0
+  "averageRestarts": 5.0,
+  "startupPerformanceScore": 7.666666666666667
 }
 ```
 
@@ -115,7 +117,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 684
+Content-Length: 733
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsDevicePerformance",
@@ -137,7 +139,8 @@ Content-Length: 684
   "blueScreenCount": 15,
   "restartCount": 12,
   "averageBlueScreens": 6.0,
-  "averageRestarts": 5.0
+  "averageRestarts": 5.0,
+  "startupPerformanceScore": 7.666666666666667
 }
 ```
 

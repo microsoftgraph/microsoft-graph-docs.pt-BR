@@ -1,31 +1,31 @@
 ---
-title: tipo de recurso userExperienceAnalyticsSettings
-description: A visão geral da análise da experiência do usuário é a recomendação de melhorar a pontuação de análise da experiência do usuário.
+title: Tipo de recurso userExperienceAnalyticsSettings
+description: O insight de análise de experiência do usuário é a recomendação para melhorar a pontuação de análise da experiência do usuário.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 38ef61cf5204b41aa0507bf164e6e8abf0508d90
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 877e710d00405f3b9a592cd7eb2501d25495d0a61237ea5acc62f6cb9e4f38d8
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49259974"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54185681"
 ---
-# <a name="userexperienceanalyticssettings-resource-type"></a>tipo de recurso userExperienceAnalyticsSettings
+# <a name="userexperienceanalyticssettings-resource-type"></a>Tipo de recurso userExperienceAnalyticsSettings
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-A visão geral da análise da experiência do usuário é a recomendação de melhorar a pontuação de análise da experiência do usuário.
+O insight de análise de experiência do usuário é a recomendação para melhorar a pontuação de análise da experiência do usuário.
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|configurationManagerDataConnectorConfigured|Booliano|True se o anexo do locatário estiver configurado. Se configurado, os dispositivos anexados ao locatário do SCCM aparecerão nos relatórios do UXA.|
+|configurationManagerDataConnectorConfigured|Boolean|True se a anexação de locatário estiver configurada. Se configurado, os dispositivos conectados ao locatário SCCM aparecerão no relatório UXA.|
 
 ## <a name="relationships"></a>Relações
 Nenhum

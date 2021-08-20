@@ -1,45 +1,45 @@
 ---
-title: tipo de recurso excludedApps
-description: Contém propriedades para aplicativos do Office365 excluídos.
+title: Tipo de recurso excludedApps
+description: Contém propriedades para Aplicativos do Office365 excluídos.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4f4a481d52b06c59d9d79df439b41152600af989
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 45051f7526ba6d7740144e42001db28eb0443c877c4363479dcdd1a476de8bd4
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49274282"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54153332"
 ---
-# <a name="excludedapps-resource-type"></a>tipo de recurso excludedApps
+# <a name="excludedapps-resource-type"></a>Tipo de recurso excludedApps
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Contém propriedades para aplicativos do Office365 excluídos.
+Contém propriedades para Aplicativos do Office365 excluídos.
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|Access|Booliano|O valor de se o MS Office Access deve ser excluído ou não.|
-|Bing|Booliano|O valor da pesquisa da Microsoft como padrão deve ser excluído ou não.|
-|Ele|Booliano|O valor de se o MS Office Excel deve ser excluído ou não.|
-|Groove|Booliano|O valor de se o MS Office OneDrive for Business-Groove deve ser excluído ou não.|
-|Destina|Booliano|O valor de se o MS Office InfoPath deve ou não ser excluído.|
-|Lync|Booliano|O valor de se o MS Office Skype for Business-Lync deve ser excluído ou não.|
-|oneDrive|Booliano|O valor de se o MS Office OneDrive deve ser excluído ou não.|
-|oneNote|Booliano|O valor de se o MS Office OneNote deve ser excluído ou não.|
-|outlook|Booliano|O valor de se o MS Office Outlook deve ser excluído ou não.|
-|Apresentação|Booliano|O valor de se o MS Office PowerPoint deve ser excluído ou não.|
-|publicador|Booliano|O valor de se o MS Office Publisher deve ser excluído ou não.|
-|sharePointDesigner|Booliano|O valor de se o MS Office SharePointDesigner deve ser excluído ou não.|
-|Teams|Booliano|O valor de se as equipes do MS Office devem ser excluídas ou não.|
-|Visio|Booliano|O valor de se o MS Office Visio deve ser excluído ou não.|
-|palavras|Booliano|O valor de se o MS Office Word deve ser excluído ou não.|
+|access|Boolean|O valor para se o MS Office Access deve ser excluído ou não.|
+|bing|Boolean|O valor para se Pesquisa da Microsoft padrão deve ser excluído ou não.|
+|excel|Boolean|O valor para se o MS Office Excel deve ser excluído ou não.|
+|groove|Boolean|O valor para se MS Office OneDrive for Business - Groove deve ser excluído ou não.|
+|infoPath|Boolean|O valor para se o MS Office InfoPath deve ser excluído ou não.|
+|lync|Boolean|O valor para se MS Office Skype for Business - Lync deve ser excluído ou não.|
+|oneDrive|Boolean|O valor para se o MS Office OneDrive deve ser excluído ou não.|
+|oneNote|Boolean|O valor para se o MS Office OneNote deve ser excluído ou não.|
+|outlook|Boolean|O valor para se o MS Office Outlook deve ser excluído ou não.|
+|powerPoint|Boolean|O valor para se o MS Office PowerPoint deve ser excluído ou não.|
+|publicador|Boolean|O valor para se o MS Office Publisher deve ser excluído ou não.|
+|sharePointDesigner|Boolean|O valor para se MS Office SharePointDesigner deve ser excluído ou não.|
+|teams|Boolean|O valor para se o MS Office Teams deve ser excluído ou não.|
+|visio|Boolean|O valor para se o MS Office Visio deve ser excluído ou não.|
+|word|Boolean|O valor para se o MS Office Word deve ser excluído ou não.|
 
 ## <a name="relationships"></a>Relações
 Nenhum

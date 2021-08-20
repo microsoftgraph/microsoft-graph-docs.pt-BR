@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 276104e49a12ff64fcbc585b3a5ce07570377397
-ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
+ms.openlocfilehash: 109d585d451bf1cda22530f4e91c2b75414b74f83e4eb3921735ad7ae2fe6e26
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51867324"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54244747"
 ---
 # <a name="devicehealthscriptassignment-resource-type"></a>Tipo de recurso deviceHealthScriptAssignment
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -35,8 +35,9 @@ Contém propriedades usadas para atribuir um script de gerenciamento de disposit
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|Cadeia de caracteres|Chave da entidade de atribuição de script de saúde do dispositivo. Essa propriedade é somente leitura.|
-|destino|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|O grupo do Azure Active Directory para o qual estamos direcionando o script|
+|destino|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|O Azure Active Directory grupo para o que estamos direcionando o script|
 |runRemediationScript|Boolean|Determinar se queremos executar somente script de detecção ou executar script de detecção e script de correção|
+|runSchedule|[deviceHealthScriptRunSchedule](../resources/intune-devices-devicehealthscriptrunschedule.md)|Agenda de executar scripts para o grupo de destino|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -59,7 +60,13 @@ Veja a seguir uma representação JSON do recurso.
     "deviceAndAppManagementAssignmentFilterType": "String",
     "collectionId": "String"
   },
-  "runRemediationScript": true
+  "runRemediationScript": true,
+  "runSchedule": {
+    "@odata.type": "microsoft.graph.deviceHealthScriptDailySchedule",
+    "interval": 1024,
+    "useUtc": true,
+    "time": "String (time of day)"
+  }
 }
 ```
 

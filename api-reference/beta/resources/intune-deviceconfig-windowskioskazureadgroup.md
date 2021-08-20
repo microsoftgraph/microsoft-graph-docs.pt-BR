@@ -1,35 +1,35 @@
 ---
-title: tipo de recurso windowsKioskAzureADGroup
-description: A classe usada para identificar um grupo do AzureAD para a configuração do quiosque
+title: Tipo de recurso windowsKioskAzureADGroup
+description: A classe usada para identificar um grupo do AzureAD para a configuração de quiosque
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 1885128afdbac2c8603ac5ec400c66bde6be9471
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 9a9b3cbb14f31e97b1189b04faa896b9b82042e95a8be59f18aa320c10d10bdf
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49293546"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54236217"
 ---
-# <a name="windowskioskazureadgroup-resource-type"></a>tipo de recurso windowsKioskAzureADGroup
+# <a name="windowskioskazureadgroup-resource-type"></a>Tipo de recurso windowsKioskAzureADGroup
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-A classe usada para identificar um grupo do AzureAD para a configuração do quiosque
+A classe usada para identificar um grupo do AzureAD para a configuração de quiosque
 
 
-Herda de [windowsKioskUser](../resources/intune-deviceconfig-windowskioskuser.md)
+Herda do [windowsKioskUser](../resources/intune-deviceconfig-windowskioskuser.md)
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|displayName|String|O nome de exibição do grupo AzureAD que será bloqueado para esta configuração de quiosque|
-|groupId|Cadeia de caracteres|A ID do grupo AzureAD que será bloqueado para esta configuração de quiosque|
+|displayName|Cadeia de caracteres|O nome de exibição do grupo do AzureAD que será bloqueado para essa configuração de quiosque|
+|groupId|Cadeia de caracteres|A ID do grupo do AzureAD que será bloqueado para essa configuração de quiosque|
 
 ## <a name="relationships"></a>Relações
 Nenhum

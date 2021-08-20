@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 6ac2651658d00d6ecdf746786e566197dd6e3d33
-ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
+ms.openlocfilehash: e5b18520b50fe486060f016798b89d6a77bddcfce4ff4a65630ef0c80c12017c
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "52666342"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54226291"
 ---
 # <a name="devicemanagementconfigurationsetting-resource-type"></a>Tipo de recurso deviceManagementConfigurationSetting
 
@@ -28,13 +28,13 @@ Definindo instância dentro da política
 |[Listar deviceManagementConfigurationSettings](../api/intune-deviceconfigv2-devicemanagementconfigurationsetting-list.md)|[Coleção deviceManagementConfigurationSetting](../resources/intune-deviceconfigv2-devicemanagementconfigurationsetting.md)|Listar propriedades e relações dos [objetos deviceManagementConfigurationSetting.](../resources/intune-deviceconfigv2-devicemanagementconfigurationsetting.md)|
 |[Obter deviceManagementConfigurationSetting](../api/intune-deviceconfigv2-devicemanagementconfigurationsetting-get.md)|[deviceManagementConfigurationSetting](../resources/intune-deviceconfigv2-devicemanagementconfigurationsetting.md)|Leia propriedades e relações do [objeto deviceManagementConfigurationSetting.](../resources/intune-deviceconfigv2-devicemanagementconfigurationsetting.md)|
 |[Criar deviceManagementConfigurationSetting](../api/intune-deviceconfigv2-devicemanagementconfigurationsetting-create.md)|[deviceManagementConfigurationSetting](../resources/intune-deviceconfigv2-devicemanagementconfigurationsetting.md)|Crie um novo [objeto deviceManagementConfigurationSetting.](../resources/intune-deviceconfigv2-devicemanagementconfigurationsetting.md)|
-|[Excluir deviceManagementConfigurationSetting](../api/intune-deviceconfigv2-devicemanagementconfigurationsetting-delete.md)|Nenhuma|Exclui [deviceManagementConfigurationSetting](../resources/intune-deviceconfigv2-devicemanagementconfigurationsetting.md).|
+|[Excluir deviceManagementConfigurationSetting](../api/intune-deviceconfigv2-devicemanagementconfigurationsetting-delete.md)|Nenhum|Exclui [deviceManagementConfigurationSetting](../resources/intune-deviceconfigv2-devicemanagementconfigurationsetting.md).|
 |[Atualizar deviceManagementConfigurationSetting](../api/intune-deviceconfigv2-devicemanagementconfigurationsetting-update.md)|[deviceManagementConfigurationSetting](../resources/intune-deviceconfigv2-devicemanagementconfigurationsetting.md)|Atualize as propriedades de [um objeto deviceManagementConfigurationSetting.](../resources/intune-deviceconfigv2-devicemanagementconfigurationsetting.md)|
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave dessa configuração na política que a contém. Gerado automaticamente.|
+|id|Cadeia de caracteres|Chave dessa configuração na política que a contém. Gerado automaticamente.|
 |settingInstance|[deviceManagementConfigurationSettingInstance](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettinginstance.md)|Instância de configuração|
 
 ## <a name="relationships"></a>Relações

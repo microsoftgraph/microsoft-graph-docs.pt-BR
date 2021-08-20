@@ -1,42 +1,42 @@
 ---
-title: tipo de recurso bitLockerSystemDrivePolicy
-description: Políticas de base de criptografia BitLocker.
+title: Tipo de recurso bitLockerSystemDrivePolicy
+description: Políticas básicas de criptografia do BitLocker.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 605236c0f1a1a1f5a4aea3554ff118aebaac15f7
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 61366c25539538f7026c0e844a4958ab7c1d0c95ec87b9375016e9791fe6d4ce
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49260520"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54250025"
 ---
-# <a name="bitlockersystemdrivepolicy-resource-type"></a>tipo de recurso bitLockerSystemDrivePolicy
+# <a name="bitlockersystemdrivepolicy-resource-type"></a>Tipo de recurso bitLockerSystemDrivePolicy
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Políticas de base de criptografia BitLocker.
+Políticas básicas de criptografia do BitLocker.
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |encryptionMethod|[bitLockerEncryptionMethod](../resources/intune-deviceconfig-bitlockerencryptionmethod.md)|Selecione o método de criptografia para unidades do sistema operacional. Os valores possíveis são: `aesCbc128`, `aesCbc256`, `xtsAes128`, `xtsAes256`.|
-|startupAuthenticationRequired|Booliano|Exigir autenticação adicional na inicialização.|
-|startupAuthenticationBlockWithoutTpmChip|Booliano|Indica se é permitido o BitLocker sem um TPM compatível (requer uma senha ou uma chave de inicialização em uma unidade flash USB).|
-|startupAuthenticationTpmUsage|[configurationUsage](../resources/intune-deviceconfig-configurationusage.md)|Indica se a inicialização do TPM é permitida/obrigatória/não permitida. Os valores possíveis são: `blocked`, `required`, `allowed`, `notConfigured`.|
-|startupAuthenticationTpmPinUsage|[configurationUsage](../resources/intune-deviceconfig-configurationusage.md)|Indica se o PIN de inicialização do TPM é permitido/obrigatório/não permitido. Os valores possíveis são: `blocked`, `required`, `allowed`, `notConfigured`.|
-|startupAuthenticationTpmKeyUsage|[configurationUsage](../resources/intune-deviceconfig-configurationusage.md)|Indica se a chave de inicialização do TPM é permitida/obrigatória/não permitida. Os valores possíveis são: `blocked`, `required`, `allowed`, `notConfigured`.|
-|startupAuthenticationTpmPinAndKeyUsage|[configurationUsage](../resources/intune-deviceconfig-configurationusage.md)|Indica se a chave do PIN de inicialização do TPM e a chave são permitidas/obrigatórias/não permitidas. Os valores possíveis são: `blocked`, `required`, `allowed`, `notConfigured`.|
-|minimumPinLength|Int32|Indica o comprimento mínimo do PIN de inicialização. Valores válidos de 4 a 20|
-|recoveryOptions|[bitLockerRecoveryOptions](../resources/intune-deviceconfig-bitlockerrecoveryoptions.md)|Permite recuperar as unidades do sistema operacional criptografadas do BitLocker na ausência das informações de chave de inicialização necessárias. Essa configuração de política é aplicada quando você ativa o BitLocker.|
-|prebootRecoveryEnableMessageAndUrl|Booliano|Habilitar mensagem e URL de recuperação de pré-inicialização. Se requireStartupAuthentication for false, esse valor não será afetado.|
-|prebootRecoveryMessage|String|Define uma mensagem de recuperação personalizada.|
-|prebootRecoveryUrl|String|Define uma URL de recuperação personalizada.|
+|startupAuthenticationRequired|Boolean|Exigir autenticação adicional na inicialização.|
+|startupAuthenticationBlockWithoutTpmChip|Boolean|Indica se é necessário permitir o BitLocker sem um TPM compatível (requer uma senha ou uma chave de inicialização em uma unidade flash USB).|
+|startupAuthenticationTpmUsage|[configurationUsage](../resources/intune-deviceconfig-configurationusage.md)|Indica se a inicialização do TPM é permitida/necessária/não permitida. Os valores possíveis são: `blocked`, `required`, `allowed`, `notConfigured`.|
+|startupAuthenticationTpmPinUsage|[configurationUsage](../resources/intune-deviceconfig-configurationusage.md)|Indica se o pino de inicialização do TPM é permitido/obrigatório/não permitido. Os valores possíveis são: `blocked`, `required`, `allowed`, `notConfigured`.|
+|startupAuthenticationTpmKeyUsage|[configurationUsage](../resources/intune-deviceconfig-configurationusage.md)|Indica se a chave de inicialização do TPM é permitida/necessária/não permitida. Os valores possíveis são: `blocked`, `required`, `allowed`, `notConfigured`.|
+|startupAuthenticationTpmPinAndKeyUsage|[configurationUsage](../resources/intune-deviceconfig-configurationusage.md)|Indica se a chave e a chave do pino de inicialização do TPM são permitidas/necessárias/não permitidas. Os valores possíveis são: `blocked`, `required`, `allowed`, `notConfigured`.|
+|minimumPinLength|Int32|Indica o comprimento mínimo do pino de inicialização. Valores válidos de 4 a 20|
+|recoveryOptions|[bitLockerRecoveryOptions](../resources/intune-deviceconfig-bitlockerrecoveryoptions.md)|Permite recuperar unidades de sistema operacional criptografadas do BitLocker na ausência das informações de chave de inicialização necessárias. Essa configuração de política é aplicada quando você ativar o BitLocker.|
+|prebootRecoveryEnableMessageAndUrl|Boolean|Habilita a mensagem de recuperação de pré-inicialização e a Url. Se requireStartupAuthentication for false, esse valor não afetará.|
+|prebootRecoveryMessage|Cadeia de caracteres|Define uma mensagem de recuperação personalizada.|
+|prebootRecoveryUrl|Cadeia de caracteres|Define uma URL de recuperação personalizada.|
 
 ## <a name="relationships"></a>Relações
 Nenhum

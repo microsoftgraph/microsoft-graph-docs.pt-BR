@@ -1,26 +1,26 @@
 ---
 title: tipo de recurso deliveryOptimizationBandwidthPercentage
-description: Limites de largura de banda especificados como uma porcentagem.
+description: Limites de largura de banda especificados como porcentagem.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 85dc858431b15a142a42afc74b1b7c1ba76a4667
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: aa03a71cbad86b181d3643c3bef9874159d47a299a8c51973a3238fecceeb5a0
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49199606"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54145457"
 ---
 # <a name="deliveryoptimizationbandwidthpercentage-resource-type"></a>tipo de recurso deliveryOptimizationBandwidthPercentage
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Limites de largura de banda especificados como uma porcentagem.
+Limites de largura de banda especificados como porcentagem.
 
 
 Herda de [deliveryOptimizationBandwidth](../resources/intune-deviceconfig-deliveryoptimizationbandwidth.md)
@@ -28,10 +28,10 @@ Herda de [deliveryOptimizationBandwidth](../resources/intune-deviceconfig-delive
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|maximumBackgroundBandwidthPercentage|Int32|Especifica a largura de banda de download máximo que a otimização de entrega usa em todas as atividades de download simultâneas como uma porcentagem de largura de banda de download disponível (0-100). Valores válidos de 0 a 100
-O valor padrão 0 (zero) significa que a otimização de entrega é ajustada dinamicamente para usar a largura de banda disponível para downloads em segundo plano. Valores válidos de 0 a 100|
-|maximumForegroundBandwidthPercentage|Int32|Especifica a largura de banda máxima de download de primeiro plano que a otimização de entrega usa em todas as atividades de download simultâneos como uma porcentagem de largura de banda de download disponível (0-100). Valores válidos de 0 a 100
-O valor padrão 0 (zero) significa que a otimização de entrega é ajustada dinamicamente para usar a largura de banda disponível para downloads de primeiro plano. Valores válidos de 0 a 100|
+|maximumBackgroundBandwidthPercentage|Int32|Especifica a largura de banda máxima de download em segundo plano que a Otimização de Entrega usa em todas as atividades de download simultâneas como uma porcentagem da largura de banda de download disponível (0-100). Valores válidos de 0 a 100
+O valor padrão 0 (zero) significa que a Otimização de Entrega ajusta dinamicamente o uso da largura de banda disponível para downloads em segundo plano. Valores válidos de 0 a 100|
+|maximumForegroundBandwidthPercentage|Int32|Especifica a largura de banda máxima de download em primeiro plano que a Otimização de Entrega usa em todas as atividades de download simultâneas como uma porcentagem da largura de banda de download disponível (0-100). Valores válidos de 0 a 100
+O valor padrão 0 (zero) significa que a Otimização de Entrega ajusta dinamicamente o uso da largura de banda disponível para downloads em primeiro plano. Valores válidos de 0 a 100|
 
 ## <a name="relationships"></a>Relações
 Nenhum

@@ -5,12 +5,12 @@ localization_priority: Priority
 author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 887f51eb3acf70e8eddd62e6efe507794ed382e8
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 0ea7e6b00dcf73468f63684ab6f116c380cb0504
+ms.sourcegitcommit: 6f04ad0e0cde696661511dcdf343942b43f73fc6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52783677"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58397030"
 ---
 # <a name="remove-member"></a>Remover membro
 
@@ -85,6 +85,11 @@ Este é um exemplo de resposta.
 ```http
 HTTP/1.1 204 No Content
 ```
+
+## <a name="see-also"></a>Confira também
+- [Adicionar membro à equipe](team-post-members.md)
+- [Atualizar a função do membro na equipe](team-update-members.md)
+- [Remover membro da equipe](team-delete-members.md)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

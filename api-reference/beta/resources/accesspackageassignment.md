@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: fd352fe67c3afabb1819ffc58d7081dbdae1525c
-ms.sourcegitcommit: c5cc948c764b4daab861aadb390b827f658a9b7f
+ms.openlocfilehash: 866ac9f673bb3cf0ba7598dab2f3136b7b89a71b
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52298509"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58265015"
 ---
 # <a name="accesspackageassignment-resource-type"></a>Tipo de recurso accessPackageAssignment
 
@@ -26,6 +26,7 @@ No [Azure AD Entitlement Management](entitlementmanagement-root.md), uma atribui
 |:-------------|:------------|:------------|
 | [Listar accessPackageAssignments](../api/accesspackageassignment-list.md) | [Coleção accessPackageAssignment](accesspackageassignment.md) | Recupere uma lista de **objetos accessPackageAssignment.** |
 |[filterByCurrentUser](../api/accesspackageassignment-filterbycurrentuser.md)|[Coleção accessPackageAssignment](../resources/accesspackageassignment.md)|Recupere a lista de **objetos accessPackageAssignment** filtrados no usuário de entrada.|
+| [reprocessamento](../api/accesspackageassignment-reprocess.md) | Nenhum | Reavaliar automaticamente e impor as atribuições de um usuário para um pacote de acesso específico.|
 
 >**Observação:** Não é possível usar um método para criar ou remover uma atribuição de pacote de acesso. Em vez disso, um cliente que deseja solicitar uma atribuição de pacote de acesso para um usuário ou remover uma atribuição de pacote de acesso de um usuário pode criar um [accessPackageAssignmentRequest](../api/accesspackageassignmentrequest-post.md).
 
@@ -38,9 +39,9 @@ No [Azure AD Entitlement Management](entitlementmanagement-root.md), uma atribui
 |assignmentState|Cadeia de caracteres|O estado da atribuição do pacote de acesso. Os valores possíveis `Delivering` são `Delivered` , ou `Expired` . Somente leitura.|
 |assignmentStatus|Cadeia de caracteres|Mais informações sobre o ciclo de vida da atribuição.  Os valores possíveis `Delivering` `Delivered` incluem , `NearExpiry1DayNotificationTriggered` , ou `ExpiredNotificationTriggered` .  Somente leitura.|
 |catalogId|Cadeia de caracteres|O identificador do catálogo que contém o pacote de acesso. Somente leitura.|
-|expiredDateTime|DateTimeOffset|O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`|
+|expiredDateTime|DateTimeOffset|O tipo de carimbo de data/hora representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1º de janeiro de 2014 é `2014-01-01T00:00:00Z`|
 |id|String| Somente leitura.|
-|isExtended|Booliano|Indica se a atribuição do pacote de acesso foi estendida. Somente leitura.|
+|isExtended|Boolean|Indica se a atribuição do pacote de acesso foi estendida. Somente leitura.|
 |targetId|Cadeia de caracteres| A ID do assunto com a atribuição. Somente leitura.|
 |Cronograma|[requestSchedule](requestschedule.md)| Quando a atribuição de acesso estiver no local. Somente leitura.|
 
@@ -89,5 +90,3 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
-
-
