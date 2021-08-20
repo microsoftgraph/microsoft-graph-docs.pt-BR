@@ -4,12 +4,12 @@ description: O Microsoft Graph expõe as permissões granulares que controlam o 
 author: jackson-woods
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 25017432241bd73b17efddb7399b5df5c3221e33
-ms.sourcegitcommit: 22bd45d272681658d46a8b99af3c3eabc7b05cb1
+ms.openlocfilehash: 3e3cbb68dfa9bfcff5b04f27de0823c76bf89ccf
+ms.sourcegitcommit: 6f04ad0e0cde696661511dcdf343942b43f73fc6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "58384482"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58397051"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Referência de permissões do Microsoft Graph
 
@@ -96,7 +96,24 @@ Segue a resposta de JSON:
 }
 ```
 
----
+## <a name="retriving-permission-ids"></a>Recuperando as IDs de permissão
+
+Se precisar definir permissões usando a CLI do Azure, PowerShell ou infraestrutura como estruturas de código, talvez seja necessário o identificador da permissão que deseja usar em vez do nome. Você pode usar a CLI do Azure para recuperar o identificador executando `az ad sp list`. No entanto, isso gera uma lista muito longa e pode ser difícil encontrar a permissão específica desejada. Se você já sabe o nome da permissão de que precisa, pode executar o seguinte comando usando a CLI do Azure:
+
+```bash
+az ad sp list --query "[?appDisplayName=='Microsoft Graph'].{permissions:oauth2Permissions}[0].permissions[?value=='<NAME OF PERMISSION>'].{id: id, value: value, adminConsentDisplayName: adminConsentDisplayName, adminConsentDescription: adminConsentDescription}[0]" --all
+```
+
+A resposta deve ser semelhante ao exemplo a seguir, que contém a descrição, identificador, nome de exibição e nome da permissão:
+
+```json
+{
+  "adminConsentDescription": "Allows the app to list groups, and to read their properties and all group memberships on behalf of the signed-in user.  Also allows the app to read calendar, conversations, files, and other group content for all groups the signed-in user can access. ",
+  "adminConsentDisplayName": "Read all groups",
+  "id": "5f8c59db-677d-491f-a6b8-5f174b11ec1d",
+  "value": "Group.Read.All"
+}
+```
 
 ## <a name="access-reviews-permissions"></a>Permissões de revisões de acesso
 
@@ -2292,7 +2309,7 @@ Para contas corporativas ou de estudante, o perfil completo inclui todas as prop
 - mobilePhone
 - mySite
 - pastProjects
-- Foto
+- photo
 - preferredName
 - responsibilities
 - schools
@@ -2309,7 +2326,7 @@ A permissão _User.ReadBasic.All_ restringe o acesso do aplicativo a um conjunto
 - displayName
 - givenName
 - Email
-- Foto
+- photo
 - surname
 - userPrincipalName
 

@@ -4,18 +4,18 @@ description: Os objetos do diretório Microsoft Azure Active Directory suportam 
 author: Licantrop0
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: dfe53e6f3375a500303ea13a63e86a2becb16b59da398fd2c19424aadf38f588
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 2393e21fd73d5aa9d599e234708b98ba3b9a9a4d
+ms.sourcegitcommit: f645c2db38fe6354422a96b54569af53cd65b967
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54151988"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "58409046"
 ---
 # <a name="advanced-query-capabilities-on-azure-ad-directory-objects"></a>Recursos avançados de consulta nos objetos do diretório Microsoft Azure Active Directory
 
-Como o Microsoft Azure Active Directory continua a oferecer mais capacidades e melhorias na estabilidade, disponibilidade e desempenho, o Microsoft Graph também continua a evoluir e a escalar para acessar os dados de forma eficiente. Uma maneira é através do suporte crescente do Microsoft Graph para capacidades avançadas de consulta em vários objetos Microsoft Azure Active Directory e suas propriedades. Por exemplo, a adição de **Não** (`NOT`), **Não é igual a** (`ne`), e **Termina com** (`endsWith`) operadores no parâmetro `$filter` de consulta em outubro de 2020.
+Como o Microsoft Azure Active Directory continua a oferecer mais capacidades e melhorias na estabilidade, disponibilidade e desempenho, o Microsoft Graph também continua a evoluir e a escalar para acessar os dados de forma eficiente. Uma maneira é através do suporte crescente do Microsoft Graph para capacidades avançadas de consulta em vários objetos Microsoft Azure Active Directory e suas propriedades. Por exemplo, a adição de **Não** (`not`), **não é igual a** (`ne`), e **Termina com** (`endsWith`) operadores nos parâmetros de consulta `$filter`.
 
-O mecanismo de consulta do Microsoft Graph usa uma loja de índices para atender aos pedidos de consulta. Para adicionar suporte para capacidades adicionais de consulta em algumas propriedades, estas propriedades são agora indexadas em um servidor separado. Esta indexação separada permite que o MIcrosoft Azure Active Directory aumente o suporte e melhore o desempenho dos pedidos de consulta. No entanto, essas funcionalidades de consulta avançada não estão disponíveis por padrão, mas o solicitante também deve definir o cabeçalho **ConsistencyLevel** definido como `eventual` *e*, com exceção de `$search`, use o parâmetro de consulta `$count`. O cabeçalho **ConsistencyLevel** e `$count` são referidos como *parâmetros de consulta avançados*.
+O mecanismo de consulta do Microsoft Graph usa um repositório de índice para atender às solicitações de consulta. Para adicionar suporte as funcionalidades adicionais de consulta em algumas propriedades, essas propriedades agora são indexadas em um repositório separado. Essa indexação separada permite que o Microsoft Azure AD aumente o suporte e melhore o desempenho das solicitações de consulta. No entanto, essas funcionalidades de consulta avançada não estão disponíveis por padrão, mas o solicitante também deve definir o cabeçalho **ConsistencyLevel** para `eventual` *e*, com exceção de `$search`, use o parâmetro de consulta `$count`. O cabeçalho **ConsistencyLevel** e `$count` são referidos como *parâmetros de consulta avançados*.
 
 Por exemplo, se você deseja recuperar apenas contas de usuários inativos, você pode executar qualquer uma destas consultas que utilizam o Parâmetro de consulta `$filter`.
 
@@ -25,6 +25,7 @@ Por exemplo, se você deseja recuperar apenas contas de usuários inativos, voc�
   "blockType": "ignored",
   "name": "get_users_enabled"
 } -->
+
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/users?$filter=accountEnabled eq false
 ```
@@ -35,24 +36,28 @@ GET https://graph.microsoft.com/v1.0/users?$filter=accountEnabled eq false
   "blockType": "ignored",
   "name": "get_users_not_enabled"
 } -->
+
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/users?$filter=accountEnabled ne true&$count=true
 ConsistencyLevel: eventual
 ```
 
-Estes recursos avançados de consulta são suportados apenas em objetos Microsoft Azure Active Directory, ou seja, os seguintes recursos e suas relações que derivam do [directoryObject](/graph/api/resources/directoryobject):
+Essas funcionalidades de consulta avançada têm suporte apenas nos seguintes subconjuntos de objetos de diretório do Microsoft Azure AD e seus relacionamentos:
 
-- [aplicativo](/graph/api/resources/application)
-- [orgContact](/graph/api/resources/orgcontact)
-- [device](/graph/api/resources/device)
-- [group](/graph/api/resources/group)
-- [servicePrincipal](/graph/api/resources/serviceprincipal)
-- [user](/graph/api/resources/user)
+| API / Objeto                                                                    | Relacionamentos                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| ------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [Unidades administrativas](/graph/api/resources/administrativeunit)           | <li>[membros](/graph/api/administrativeunit-list-members)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| [Aplicativos](/graph/api/resources/application)                          | <li>[proprietários](/graph/api/application-list-owners)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| [Contatos](/graph/api/resources/orgContact)                                  | <li>[memberOf](/graph/api/orgcontact-list-memberof)<li> [transitiveMemberOf](/graph/api/orgcontact-list-transitiveMemberOf)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| [Dispositivos](/graph/api/resources/device)                                    | <li>[memberOf](/graph/api/device-list-memberof) <li> [transitiveMemberOf](/graph/api/device-list-transitivememberof) <li> [registeredUsers](/graph/api/device-list-registeredusers) <li> [registeredOwners](/graph/api/device-list-registeredowners)                                                                                                                                                                                                                                                                                                                                                             |
+| [Grupos](/graph/api/resources/group)                                      | <li>[membros](/graph/api/group-list-members) <li> [transitiveMembers](/graph/api/group-list-transitivemembers) <li> [memberOf](/graph/api/group-list-memberof) <li> [transitiveMemberOf](/graph/api/group-list-transitivememberof) <li> [proprietários](/graph/api/group-list-owners) <li> [appRoleAssignments](/graph/api/group-list-approleassignments)                                                                                                                                                                                                                                                                       |
+| [Entidades de serviço](/graph/api/resources/serviceprincipal)               | <li>[memberOf](/graph/api/serviceprincipal-list-memberof), <li>[transitiveMemberOf](/graph/api/serviceprincipal-list-transitivememberof) <li> [appRoleAssignments](/graph/api/serviceprincipal-list-approleassignments) <li> [appRoleAssignmentsTo](/graph/api/serviceprincipal-list-approleassignedto) <li> [oAuth2PermissionGrant](/graph/api/serviceprincipal-list-oauth2permissiongrants)                                                                                                                                                                                                                 |
+| [Usuário](/graph/api/resources/user)                                         | <li>[memberOf](/graph/api/user-list-memberof) <li> [transitiveMemberOf](/graph/api/user-list-transitivememberof)<li> [ownedObjects](/graph/api/user-list-ownedobjects) <li> [registeredDevices](/graph/api/user-list-registereddevices) <li> [ownedDevices](/graph/api/user-list-owneddevices) <li> [transitiveManagers](/graph/api/user-list-manager) <li> [directReports](/graph/api/user-list-directreports) <li> [transitiveReports](/graph/api/user-get-transitivereports) <li> [appRoleAssignments](/graph/api/user-list-approleassignments) <li> [oAuth2PermissionGrant](/graph/api/user-list-oauth2permissiongrants) |
 
-A tabela a seguir lista cenários de consulta em objetos de diretório que são suportados apenas em consultas avançadas.
+A tabela a seguir lista os cenários de consulta em objetos de diretório com suporte apenas em consultas avançadas:
 
 | Descrição                                                              | Exemplo                                                                                                                                                                                                                                                                                                                                                                                                                              |
-|:-------------------------------------------------------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| :----------------------------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Usar `$count` como um segmento URL                                         | [GET](https://developer.microsoft.com/graph/graph-explorer?request=groups%2F%24count&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d) `../groups/$count`                                                                                                                                                                                       |
 | Usar o `$count` como parâmetro consultar cadeia de caracteres                              | [GET](https://developer.microsoft.com/graph/graph-explorer?request=servicePrincipals%3F%24count%3Dtrue&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d) `../servicePrincipals?$count=true`                                                                                                                                                     |
 | Usar de `$search`                                                         | [GET](https://developer.microsoft.com/graph/graph-explorer?request=applications%3F%24search%3D%22displayName%3ABrowser%22&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d) `../applications?$search="displayName:Browser"`                                                                                                                     |
@@ -61,37 +66,42 @@ A tabela a seguir lista cenários de consulta em objetos de diretório que são 
 | Usar o `$filter` e `$orderby` na mesma consulta                        | [GET](https://developer.microsoft.com/graph/graph-explorer?request=applications%3F%24orderby%3DdisplayName%26%24filter%3DstartsWith(displayName%2C%20'Box')%26%24count%3Dtrue&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d) `../applications?$orderby=displayName&$filter=startsWith(displayName, 'Box')&$count=true`                       |
 | Uso o `$filter` com os `startsWith` operadores em propriedades específicas. | [GET](https://developer.microsoft.com/graph/graph-explorer?request=users%3F%24filter%3DstartsWith(mobilePhone%2C%20'25478')%20OR%20startsWith(mobilePhone%2C%20'25473')%26%24count%3Dtrue&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d) `../users?$filter=startsWith(mobilePhone, '25478') OR startsWith(mobilePhone, '25473')&$count=true` |
 | Usar o `$filter` com `ne` e `NOT` operadores                           | 
-  [GET](https://developer.microsoft.com/en-us/graph/graph-explorer?request=users%3F%24filter%3DcompanyName%20ne%20null%20and%20NOT(companyName%20eq%20'Microsoft')%26%24count%3Dtrue&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d) `../users?$filter=companyName ne null and NOT(companyName eq 'Microsoft')&$count=true`                     |
+  [GET](https://developer.microsoft.com/graph/graph-explorer?request=users%3F%24filter%3DcompanyName%20ne%20null%20and%20NOT(companyName%20eq%20'Microsoft')%26%24count%3Dtrue&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d) `../users?$filter=companyName ne null and NOT(companyName eq 'Microsoft')&$count=true`                           |
 | Usar o `$filter` com `NOT` e `startsWith` operadores                   | 
-  [GET](https://developer.microsoft.com/en-us/graph/graph-explorer?request=%2Fusers%3F%24filter%3DNOT%20startsWith(displayName%2C%20'Conf')%26%24count%3Dtrue&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d) `../users?$filter=NOT startsWith(displayName, 'Conf')&$count=true`                                                                |
+  [GET](https://developer.microsoft.com/graph/graph-explorer?request=%2Fusers%3F%24filter%3DNOT%20startsWith(displayName%2C%20'Conf')%26%24count%3Dtrue&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d) `../users?$filter=NOT startsWith(displayName, 'Conf')&$count=true`                                                                      |
 | Usar o molde de OData com outro parâmetro de consulta                           | [GET](https://developer.microsoft.com/graph/graph-explorer?request=me%2FtransitiveMemberOf%2Fmicrosoft.graph.group%3F%24count%3Dtrue&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d) `../me/transitiveMemberOf/microsoft.graph.group?$count=true`                                                                                             |
 
 > [!NOTE]
-> Estas capacidades avançadas de consulta não estão disponíveis nos locatários do Azure AD B2C.
+>
+> + O uso de `$filter` e `$orderBy` juntos é suportado apenas em consultas avançadas.
+> + `$expand` atualmente não é suportado em consultas avançadas.
+> + As funcionalidades de consulta avançada não estão disponíveis no momento para locatários do Azure AD B2C.
 
 ## <a name="support-for-filter-on-properties-of-azure-ad-directory-objects"></a>Suporte para filtro nas propriedades dos objetos do diretório Microsoft Azure Active Directory
 
 As propriedades dos objetos de diretório se comportam de forma diferente em seu suporte aos parâmetros de consulta. Os cenários a seguir são comuns para objetos de diretório:
 
-+ Salvo indicação em contrário, as propriedades com o mesmo nome nos recursos de diretório suportam os mesmos operadores `$filter`. Por exemplo, a propriedade **createdDateTime** está disponível no **aplicação**, **grupo**, **organização**, e **usuário** recursos. Ele suporta os operadores `eq`, `ge`, e `le` por padrão e os operadores `in`, `ne`, e `NOT` apenas em consultas avançadas.
-+ O `endsWith` operador é suportado apenas em **email** e **userPrincipalNameerPrincipalName** propriedades.
-+ Consultas que são suportadas por padrão também funcionarão em consultas avançadas.
-+ Os operadores `NOT` e `ne` de negação são suportados apenas em consultas avançadas. 
-  + Todas as propriedades que suportam o `eq` operador também suportam os `ne` ou `NOT` operadores.
-  + O `ne` operador nega onde de outra forma o `eq` operador avaliaria para `true`. Para consultas que utilizam o `any` operador lambda, usar o `NOT` operador. Veja [Filtrar utilizando operadores lambda](/graph/query-parameters#filter-using-lambda-operators).
++ As consultas que são suportadas por padrão também funcionarão em consultas avançadas, mas a resposta será eventualmente consistente.
++ O operador `in` é suportado por padrão sempre que o operador `eq` for suportado por padrão.
++ O operador `endsWith` é suportado apenas em consultas avançadas nas propriedades `mail` e `userPrincipalName`.
++ Os operadores de negação `not` e `ne` são suportados apenas em consultas avançadas.
+  + Todas as propriedades que suportam o `eq` operador também suportam os `ne` ou `not` operadores.
+  + Para consultas que utilizam o `any` operador lambda, usar o `not` operador. Veja [Filtrar utilizando operadores lambda](/graph/query-parameters#filter-using-lambda-operators).
 
-A tabela a seguir resume o suporte para operadores `$filter` por propriedades de todos os objetos de diretório.
+As tabelas a seguir resumem o suporte para `$filter` operadores por propriedades de objetos de diretório suportados pelas funcionalidades de consulta avançada.
 
-- ![Funciona por padrão. Não requer parâmetros de consulta avançados.](/graph/images/advanced-query-parameters/default.png) A propriedade suporta `$filter` com o operador por padrão.
-- ![Requer parâmetros de consulta avançados.](/graph/images/advanced-query-parameters/advanced.png) O operador específico `$filter` requer *parâmetros de consulta avançados*, ou seja:
-  - `ConsistencyLevel=eventual` cabeçalho
-  - `$count=true` cadeia de caracteres
-- Células em branco indicam que a propriedade não suporta o uso de `$filter` com o operador.
-- A coluna **valores nulos** indica que a propriedade é filtrável em `null` valores.
-- As propriedades que não estão listadas aqui não suportam `$filter`.
+### <a name="legend"></a>Legenda
+
++ ![Funciona por padrão. Não requer parâmetros de consulta avançados.](../concepts/images/advanced-query-parameters/default.svg) O operador `$filter` funciona por padrão para essa propriedade.
++ ![Requer parâmetros de consulta avançados.](../concepts/images/advanced-query-parameters/advanced.svg) O `$filter` operador **exige** *parâmetros de consulta avançados*, que são:
+  + `ConsistencyLevel=eventual` cabeçalho
+  + `$count=true` cadeia de caracteres
++ ![Não suportado.](../concepts/images/advanced-query-parameters/notSupported.svg) O operador `$filter` não é suportado nessa propriedade. [Envie-nos comentários](https://aka.ms/MsGraphAADSurveyDocs) para solicitar que esta propriedade suporte `$filter` para seus cenários.
++ As células em branco indicam que a consulta não é válida para aquela propriedade.
++ A coluna de **valor nulo** indica que a propriedade pode ser anulada e filtrada usando `null`.
++ As propriedades que não estão listadas aqui não suportam `$filter` de forma alguma.
 
 [!INCLUDE [filter-directory-objects](../includes/filter-directory-objects.md)]
-
 
 ## <a name="error-handling-for-advanced-queries-on-directory-objects"></a>Tratamento de erros para consultas avançadas sobre objetos de diretório
 
@@ -200,6 +210,6 @@ Content-type: application/json
 
 ## <a name="see-also"></a>Confira também
 
-- [Usar parâmetros de consulta para personalizar respostas](/graph/query-parameters)
-- [Limitações do parâmetro de consulta](known-issues.md#query-parameter-limitations)
-- [Usar o parâmetro de consulta $search para corresponder a um critério de pesquisa](/graph/search-query-parameter)
++ [Usar parâmetros de consulta para personalizar respostas](/graph/query-parameters)
++ [Limitações do parâmetro de consulta](known-issues.md#query-parameter-limitations)
++ [Usar o parâmetro de consulta $search para corresponder a um critério de pesquisa](/graph/search-query-parameter)
