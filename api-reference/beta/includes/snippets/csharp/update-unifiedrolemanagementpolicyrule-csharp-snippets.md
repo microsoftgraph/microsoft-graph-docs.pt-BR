@@ -1,17 +1,17 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: ba7c33ac23f9531c40439c0c8aff7cb9a2ef0648
-ms.sourcegitcommit: b8b0e88b3ba9a434dc45f5ab640cb46f66fae299
+ms.openlocfilehash: 16de3cb43b6c38645e8644153f2ea13639c374d6
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "52474251"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58368815"
 ---
 ```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var unifiedRoleManagementPolicyRule = new UnifiedRoleManagementPolicyRule
+var unifiedRoleManagementPolicyRule = new UnifiedRoleManagementPolicyApprovalRule
 {
     Target = new UnifiedRoleManagementPolicyRuleTarget
     {

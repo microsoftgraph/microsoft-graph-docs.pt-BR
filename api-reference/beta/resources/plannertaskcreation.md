@@ -5,18 +5,18 @@ author: TarkanSevilmis
 localization_priority: Normal
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: e8a2a4bf3aae5f23a04c7ecb8ad043631f946b20
-ms.sourcegitcommit: 1d2adc4062c8e83d23768682cf66a731bccd313c
+ms.openlocfilehash: 738067895a60b79684ef3f0356f59e777363d8140bc2734d2b38bf036c0feb84
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "49883228"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54226116"
 ---
 # <a name="plannertaskcreation-resource-type"></a>Tipo de recurso plannerTaskCreation
 
 Namespace: microsoft.graph
 
-Contém informações sobre a origem do [plannerTask](plannerTask.md). Esse recurso terá todas as suas propriedades definidas como ou exatamente uma propriedade terá um valor que indica que a tarefa foi criada pelo processo descrito `null` por essa propriedade. Todas as `null` propriedades indicam que essa tarefa não foi criada por nenhum processo especializado. Os aplicativos não precisam saber a origem da tarefa para poder trabalhar com ela; No entanto, alguns aplicativos podem usar as informações adicionais para fornecer experiências específicas em torno dessas tarefas. Consulte a documentação para recursos específicos para saber mais.
+Contém informações sobre a origem do [plannerTask](plannerTask.md). Esse recurso terá todas as suas propriedades definidas como , ou exatamente uma propriedade terá um valor que indica que a tarefa foi criada pelo processo descrito `null` por essa propriedade. Todas as `null` propriedades indicam que essa tarefa não foi criada por nenhum processo especializado. Os aplicativos não precisam saber a origem da tarefa para poder trabalhar com ela; no entanto, alguns aplicativos podem usar as informações adicionais para fornecer experiências específicas em torno dessas tarefas. Consulte a documentação para saber mais sobre recursos específicos.
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|

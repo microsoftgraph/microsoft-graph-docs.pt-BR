@@ -1,18 +1,18 @@
 ---
-title: tipo de recurso skypeForBusinessParticipantActivityMinuteCounts
+title: Tipo de recurso skypeForBusinessParticipantActivityMinuteCounts
 description: Veja a seguir uma representação JSON do recurso.
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: kszb
-ms.openlocfilehash: 00b64aa0dfde4ba43f6cf351ce05bc761dcd2005
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 2ac9a769348851143e0fe7d5f11593ca457dd357b8152c4b445347b4080d75a3
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48063860"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54136223"
 ---
-# <a name="skypeforbusinessparticipantactivityminutecounts-resource-type"></a>tipo de recurso skypeForBusinessParticipantActivityMinuteCounts
+# <a name="skypeforbusinessparticipantactivityminutecounts-resource-type"></a>Tipo de recurso skypeForBusinessParticipantActivityMinuteCounts
 
 Namespace: microsoft.graph
 

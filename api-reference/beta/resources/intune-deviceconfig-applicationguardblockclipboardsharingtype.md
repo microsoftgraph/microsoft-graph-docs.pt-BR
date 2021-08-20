@@ -1,22 +1,22 @@
 ---
-title: tipo de enumeração applicationGuardBlockClipboardSharingType
+title: Tipo denum applicationGuardBlockClipboardSharingType
 description: Valores possíveis para applicationGuardBlockClipboardSharingType
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 91c2bceba0d4ffda030266d0f5617ce18ab29f68
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: b15be85ff8ec8067ce8495f69f811526ccd3fa8fca69b09f03a558bff4bf3229
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49216378"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54226473"
 ---
-# <a name="applicationguardblockclipboardsharingtype-enum-type"></a>tipo de enumeração applicationGuardBlockClipboardSharingType
+# <a name="applicationguardblockclipboardsharingtype-enum-type"></a>Tipo denum applicationGuardBlockClipboardSharingType
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -25,11 +25,11 @@ Valores possíveis para applicationGuardBlockClipboardSharingType
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|notConfigured|,0|Não configurado|
-|blockBoth|1|Bloquear a área de transferência para compartilhar dados do host para o contêiner e de contêiner para o host|
-|blockHostToContainer|duas|Bloquear a área de transferência para compartilhar dados do host para o contêiner|
-|blockContainerToHost|3D|Bloquear área de transferência para compartilhar dados de contêiner para host|
-|blockNone|4 |Bloquear área de transferência para compartilhar dados que não sejam do host para o contêiner nem do contêiner para o host|
+|notConfigured|0|Não configurado|
+|blockBoth|1 |Bloquear área de transferência para compartilhar dados de Host para Contêiner e de Contêiner para Host|
+|blockHostToContainer|2|Bloquear área de transferência para compartilhar dados de Host para Contêiner|
+|blockContainerToHost|3 |Bloquear área de transferência para compartilhar dados de Contêiner para Host|
+|blockNone|4 |Bloquear área de transferência para compartilhar dados nem de Host para Contêiner nem de Contêiner para Host|
 
 
 

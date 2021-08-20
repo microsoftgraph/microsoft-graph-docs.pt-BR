@@ -1,32 +1,32 @@
 ---
-title: tipo de enumeração win32LobAppRuleType
-description: Contém tipos de regra para aplicativos LOB do Win32.
+title: Tipo denum win32LobAppRuleType
+description: Contém tipos de regra para aplicativos LOB win32.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: b1eeaf3e42003f46ede657fd836dea88725a73c3
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 2c3b6dcced85325068f3d25e54b8edf64c9f9617e5edaaf6581f2c8ac4ffb5be
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49284551"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54210054"
 ---
-# <a name="win32lobappruletype-enum-type"></a>tipo de enumeração win32LobAppRuleType
+# <a name="win32lobappruletype-enum-type"></a>Tipo denum win32LobAppRuleType
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Contém tipos de regra para aplicativos LOB do Win32.
+Contém tipos de regra para aplicativos LOB win32.
 
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|detenção|,0|Regra de detecção.|
-|requirement|1|Regra de requisito.|
+|detection|0|Regra de detecção.|
+|requirement|1 |Regra de requisito.|
 
 
 

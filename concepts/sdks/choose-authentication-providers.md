@@ -3,12 +3,12 @@ title: Escolha um provedor de autenticação Graph microsoft
 description: Saiba como escolher provedores de autenticação específicos de cenário para seu aplicativo.
 localization_priority: Normal
 author: MichaelMainer
-ms.openlocfilehash: ff898f69c2d23575e3b7c64ced22899839c11504
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 35717b83c5df9a56351200e4f762c85459854929
+ms.sourcegitcommit: 22bd45d272681658d46a8b99af3c3eabc7b05cb1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58264042"
+ms.lasthandoff: 08/18/2021
+ms.locfileid: "58384531"
 ---
 <!-- markdownlint-disable MD001 MD024 MD025 -->
 
@@ -18,8 +18,8 @@ Os provedores de autenticação implementam o código necessário para adquirir 
 
 | Cenário                                                                                               | Flow/Grant         | Espectadores               | Provedor |
 |--------------------------------------------------------------------------------------------------------|--------------------|------------------------|-----|
-| [Aplicativo de Página Única](/azure/active-directory/develop/scenario-spa-acquire-token)                          |                    |                        |     |
-|                                                                                                        | Implícito           | Consumidor Delegado/Org | [Provedor implícito](#implicit-provider) |
+| [Aplicativo de Página Única](/azure/active-directory/develop/scenario-spa-acquire-token)                          | Código de Autorização |                        |     |
+|                                                                                                        | com PKCE          | Consumidor Delegado/Org | [Provedor de código de autorização](#authorization-code-provider) |
 | [Aplicativo Web que chama APIs da Web](/azure/active-directory/develop/scenario-web-app-call-api-acquire-token) |                    |                        |     |
 |                                                                                                        | Código de Autorização | Consumidor Delegado/Org | [Provedor de código de autorização](#authorization-code-provider) |
 |                                                                                                        | Credenciais do cliente | Somente aplicativo               | [Provedor de credenciais do cliente](#client-credentials-provider) |
@@ -75,7 +75,55 @@ var graphClient = new GraphServiceClient(authCodeCredential, scopes);
 
 # <a name="javascript"></a>[Javascript](#tab/Javascript)
 
-O código de autorização, a credencial do cliente e os fluxos em nome do OAuth exigem que você implemente um provedor de autenticação personalizado no momento. Para obter mais informações, consulte [Using a custom authentication provider](https://github.com/microsoftgraph/msgraph-sdk-javascript/blob/dev/docs/CustomAuthenticationProvider.md).
+### <a name="using-azuremsal-browser-for--browser-applications"></a>Usando @azure/msal-browser para aplicativos de navegador
+
+```javascript
+
+const {
+    PublicClientApplication,
+    InteractionType,
+    AccountInfo
+} = require("@azure/msal-browser");
+
+const {
+    AuthCodeMSALBrowserAuthenticationProvider,
+    AuthCodeMSALBrowserAuthenticationProviderOptions
+} = require("@microsoft/microsoft-graph-client/authProviders/authCodeMsalBrowser");
+
+const options: AuthCodeMSALBrowserAuthenticationProviderOptions: {
+    account: account, // the AccountInfo instance to acquire the token for.
+    interactionType: InteractionType.PopUp, // msal-browser InteractionType
+    scopes: ["user.read", "mail.send"] // example of the scopes to be passed
+}
+
+// Pass the PublicClientApplication instance from step 2 to create AuthCodeMSALBrowserAuthenticationProvider instance
+const authProvider: new AuthCodeMSALBrowserAuthenticationProvider(publicClientApplication, options),
+```
+
+### <a name="using-azureidentity-for-server-side-applications"></a>Usando @azure/identidade para aplicativos do lado do servidor
+
+```javascript
+const {
+    Client
+} = require("@microsoft/microsoft-graph-client");
+const {
+    TokenCredentialAuthenticationProvider
+} = require("@microsoft/microsoft-graph-client/authProviders/azureTokenCredentials");
+const {
+    AuthorizationCodeCredential
+} = require("@azure/identity");
+
+const credential = new AuthorizationCodeCredential(
+    "<YOUR_TENANT_ID>",
+    "<YOUR_CLIENT_ID>",
+    "<AUTH_CODE_FROM_QUERY_PARAMETERS>",
+    "<REDIRECT_URL>"
+);
+const authProvider = new TokenCredentialAuthenticationProvider(credential, {
+    scopes: [scopes]
+});
+
+```
 
 # <a name="java"></a>[Java](#tab/Java)
 
@@ -174,7 +222,28 @@ var graphClient = new GraphServiceClient(clientCertCredential, scopes);
 
 # <a name="javascript"></a>[Javascript](#tab/Javascript)
 
-O código de autorização, a credencial do cliente e os fluxos em nome do OAuth exigem que você implemente um provedor de autenticação personalizado no momento. Para obter mais informações, consulte [Using a custom authentication provider](https://github.com/microsoftgraph/msgraph-sdk-javascript/blob/dev/docs/CustomAuthenticationProvider.md).
+```javascript
+const {
+    Client
+} = require("@microsoft/microsoft-graph-client");
+const {
+    TokenCredentialAuthenticationProvider
+} = require("@microsoft/microsoft-graph-client/authProviders/azureTokenCredentials");
+const {
+    ClientSecretCredential
+} = require("@azure/identity");
+
+const credential = new ClientSecretCredential(tenantId, clientId, clientSecret);
+const authProvider = new TokenCredentialAuthenticationProvider(credential, {
+    scopes: [scopes]
+});
+
+const client = Client.initWithMiddleware({
+    debugLogging: true,
+    authProvider
+    // Use the authProvider object to create the class.
+});
+```
 
 # <a name="java"></a>[Java](#tab/Java)
 
@@ -265,7 +334,7 @@ var graphClient = new GraphServiceClient(authProvider);
 
 # <a name="javascript"></a>[Javascript](#tab/Javascript)
 
-O código de autorização, a credencial do cliente e os fluxos em nome do OAuth exigem que você implemente um provedor de autenticação personalizado no momento. Leia [Usando o Provedor de Autenticação Personalizado](https://github.com/microsoftgraph/msgraph-sdk-javascript/blob/dev/docs/CustomAuthenticationProvider.md) para obter mais informações.
+Fluxos OAuth em nome do OAuth exigem que você implemente um provedor de autenticação personalizado no momento. Leia [Usando o Provedor de Autenticação Personalizado](https://github.com/microsoftgraph/msgraph-sdk-javascript/blob/dev/docs/CustomAuthenticationProvider.md) para obter mais informações.
 
 # <a name="java"></a>[Java](#tab/Java)
 
@@ -291,55 +360,7 @@ Ainda não está disponível. Vote ou abra uma solicitação de [recurso Graph m
 
 ## <a name="implicit-provider"></a>Provedor implícito
 
-O fluxo de concessão implícito é usado em aplicativos baseados em navegador. Para obter mais informações, [consulte plataforma de identidade da Microsoft fluxo de concessão implícito.](/azure/active-directory/develop/v2-oauth2-implicit-grant-flow)
-
-# <a name="c"></a>[C#](#tab/CS)
-
-Não aplicável.
-
-# <a name="javascript"></a>[Javascript](#tab/Javascript)
-
-```javascript
-const clientId = "your_client_id"; // Client Id of the registered application
-const callback = (errorDesc, token, error, tokenType) => {};
-// An Optional options for initializing the MSAL @see https://github.com/AzureAD/microsoft-authentication-library-for-js/wiki/MSAL-basics#configuration-options
-const options = {
-  redirectUri: "Your redirect URI",
-};
-const graphScopes = ["user.read", "mail.send"]; // An array of graph scopes
-
-// Initialize the MSAL @see https://github.com/AzureAD/microsoft-authentication-library-for-js/wiki/MSAL-basics#initialization-of-msal
-const userAgentApplication = new Msal.UserAgentApplication(clientId, undefined, callback, options);
-const authProvider = new MicrosoftGraph.ImplicitMSALAuthenticationProvider(userAgentApplication, graphScopes);
-
-const options = {
-  authProvider, // An instance created from previous step
-};
-const Client = MicrosoftGraph.Client;
-const client = Client.initWithMiddleware(options);
-```
-
-# <a name="java"></a>[Java](#tab/Java)
-
-Não aplicável.
-
-# <a name="android"></a>[Android](#tab/Android)
-
-Não aplicável.
-
-# <a name="objective-c"></a>[Objective-C](#tab/Objective-C)
-
-Não aplicável.
-
-# <a name="php"></a>[PHP](#tab/PHP)
-
-Não aplicável.
-
-# <a name="ruby"></a>[Ruby](#tab/Ruby)
-
-Não aplicável.
-
----
+O fluxo de autenticação implícito não é recomendado devido às [suas desvantagens.](https://datatracker.ietf.org/doc/html/draft-ietf-oauth-browser-based-apps-04#section-9.8.6) Clientes públicos, como aplicativos nativos e aplicativos JavaScript, agora devem usar o fluxo de código de autorização com a extensão PKCE. [Referência](https://oauth.net/2/grant-types/implicit/).
 
 ## <a name="device-code-provider"></a>Provedor de código de dispositivo
 
@@ -379,7 +400,28 @@ var graphClient = new GraphServiceClient(deviceCodeCredential, scopes);
 
 # <a name="javascript"></a>[Javascript](#tab/Javascript)
 
-Ainda não está disponível. Vote ou abra uma solicitação de [recurso Graph microsoft](https://techcommunity.microsoft.com/t5/microsoft-365-developer-platform/idb-p/Microsoft365DeveloperPlatform/label-name/Microsoft%20Graph) se isso for importante para você.
+```javascript
+const {
+    Client
+} = require("@microsoft/microsoft-graph-client");
+const {
+    TokenCredentialAuthenticationProvider
+} = require("@microsoft/microsoft-graph-client/authProviders/azureTokenCredentials");
+const {
+    DeviceCodeCredential
+} = require("@azure/identity");
+
+const credential = new DeviceCodeCredential(tenantId, clientId, clientSecret);
+const authProvider = new TokenCredentialAuthenticationProvider(credential, {
+    scopes: [scopes]
+});
+
+const client = Client.initWithMiddleware({
+    debugLogging: true,
+    authProvider
+    // Use the authProvider object to create the class.
+});
+```
 
 # <a name="java"></a>[Java](#tab/Java)
 

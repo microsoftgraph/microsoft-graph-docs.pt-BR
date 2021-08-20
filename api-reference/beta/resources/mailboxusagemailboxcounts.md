@@ -1,18 +1,18 @@
 ---
-title: Tipo de recurso mailboxUsageMailboxCounts
+title: mailboxUsageMailboxCounts tipo de recurso
 description: Veja a seguir uma representação JSON do recurso.
 localization_priority: Normal
 author: sarahwxy
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 7034e1f68eb1b119e0b4549e18500993a10cff04
-ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
+ms.openlocfilehash: 42b03143c5036c72e4935036079de8ff13b55783f0184a6b3848bf5d2383930e
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49983549"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54226153"
 ---
-# <a name="mailboxusagemailboxcounts-resource-type"></a>Tipo de recurso mailboxUsageMailboxCounts
+# <a name="mailboxusagemailboxcounts-resource-type"></a>mailboxUsageMailboxCounts tipo de recurso
 
 Namespace: microsoft.graph
 
@@ -22,7 +22,7 @@ Namespace: microsoft.graph
 | :---------------- | :----- |
 | reportRefreshDate | Data   |
 | total             | Int64  |
-| ativo            | Int64  |
+| active            | Int64  |
 | reportDate        | Data   |
 | reportPeriod      | Cadeia de caracteres |
 

@@ -1,33 +1,33 @@
 ---
-title: tipo de recurso iosBookmark
-description: indicador de URL iOS
+title: Tipo de recurso iosBookmark
+description: Indicador de URL do iOS
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d0477665b0de7390cfe9d2f4453401d5db7d4946
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: b71c9771dd389d3277a7ab3809c7879b6f75e17091656a7fe1eb45e1420ad0c4
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49273701"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54239571"
 ---
-# <a name="iosbookmark-resource-type"></a>tipo de recurso iosBookmark
+# <a name="iosbookmark-resource-type"></a>Tipo de recurso iosBookmark
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-indicador de URL iOS
+Indicador de URL do iOS
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|url|Cadeia de caracteres|URL com permissão para acessar|
-|bookmarkFolder|String|A pasta na qual o indicador deve ser adicionado no Safari|
-|displayName|String|O nome de exibição do indicador|
+|url|Cadeia de caracteres|URL permitida para acessar|
+|bookmarkFolder|Cadeia de caracteres|A pasta na qual o indicador deve ser adicionado no Safari|
+|displayName|Cadeia de caracteres|O nome de exibição do indicador|
 
 ## <a name="relationships"></a>Relações
 Nenhum

@@ -1,36 +1,36 @@
 ---
-title: tipo de enumeração windowsUpdateType
-description: Para quais dispositivos de filial receberão suas atualizações
+title: Tipo de número windowsUpdateType
+description: De quais dispositivos de filial receberão suas atualizações
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: e01f2e14e11558d79e0e5b420eac6fd0e359a813
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 9d6ab79b8d0320a3830948ef1e2973f158338310849618c47b45cbcc9c20253f
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49272329"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54244883"
 ---
-# <a name="windowsupdatetype-enum-type"></a>tipo de enumeração windowsUpdateType
+# <a name="windowsupdatetype-enum-type"></a>Tipo de número windowsUpdateType
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Para quais dispositivos de filial receberão suas atualizações
+De quais dispositivos de filial receberão suas atualizações
 
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|UserDefined|,0|Permite que o usuário defina.|
-|todos os|1|Canal semestral (direcionado). O dispositivo obtém todas as atualizações de recursos aplicáveis do canal semestral (direcionado).|
-|businessReadyOnly|duas|Canal semestral. O dispositivo Obtém atualizações de recursos do canal semestral.|
-|windowsInsiderBuildFast|3D|Compilação do Windows Insider-Fast|
-|windowsInsiderBuildSlow|4 |Compilação do Windows Insider-lenta|
-|windowsInsiderBuildRelease|5 |Versão de lançamento do Windows Insider|
+|userDefined|0|Permitir que o usuário desem conjunto.|
+|all|1 |Canal Semes anual (Direcionado). O dispositivo obtém todas as atualizações de recursos aplicáveis do Canal Semes anual (Direcionado).|
+|businessReadyOnly|2|Canal Semes anual. O dispositivo obtém atualizações de recursos do Canal Semesanuais.|
+|windowsInsiderBuildFast|3 |Windows Insider build - Fast|
+|windowsInsiderBuildSlow|4 |Windows Insider build - Slow|
+|windowsInsiderBuildRelease|5 |Versão Windows build do Insider|
 
 
 

@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b5ca79e7870893e9748ea93222e96ade36649e6e
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: d9bef5fe65d8896d9c478027a261b512c6b67a99
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51135912"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58261362"
 ---
 # <a name="update-userexperienceanalyticsresourceperformance"></a>Atualizar userExperienceAnalyticsResourcePerformance
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -27,9 +27,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All|
+|Delegada (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 |Delegada (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementManagedDevices.ReadWrite.All|
+|Aplicativo|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -66,6 +66,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [o userE
 |ramSpikeTimeScore|Int32|A pontuação do tempo de pico de RAM do dispositivo de análise de experiência do usuário. Valores válidos de 0 a 100|
 |ramSpikeTimePercentageThreshold|Duplo|Limite de ramSpikeTimeScore. Valores válidos de 0 a 100|
 |deviceResourcePerformanceScore|Int32|Pontuação de desempenho de recursos de um dispositivo específico. Valores válidos de 0 a 100|
+|averageSpikeTimeScore|Int32|AverageSpikeTimeScore de um dispositivo ou um tipo de modelo. Valores válidos de 0 a 100|
 
 
 
@@ -79,7 +80,7 @@ Este é um exemplo da solicitação.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsResourcePerformance/{userExperienceAnalyticsResourcePerformanceId}
 Content-type: application/json
-Content-length: 553
+Content-length: 584
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsResourcePerformance",
@@ -94,7 +95,8 @@ Content-length: 553
   "cpuSpikeTimePercentageThreshold": 10.333333333333334,
   "ramSpikeTimeScore": 1,
   "ramSpikeTimePercentageThreshold": 10.333333333333334,
-  "deviceResourcePerformanceScore": 14
+  "deviceResourcePerformanceScore": 14,
+  "averageSpikeTimeScore": 5
 }
 ```
 
@@ -103,7 +105,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 602
+Content-Length: 633
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsResourcePerformance",
@@ -119,7 +121,8 @@ Content-Length: 602
   "cpuSpikeTimePercentageThreshold": 10.333333333333334,
   "ramSpikeTimeScore": 1,
   "ramSpikeTimePercentageThreshold": 10.333333333333334,
-  "deviceResourcePerformanceScore": 14
+  "deviceResourcePerformanceScore": 14,
+  "averageSpikeTimeScore": 5
 }
 ```
 

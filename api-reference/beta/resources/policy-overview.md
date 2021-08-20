@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: identity-and-sign-in
 doc_type: conceptualPageType
-ms.openlocfilehash: 6c3c3c7bc9ee19bfdc20e77217853926f793257f
-ms.sourcegitcommit: b711aed8acc18512cf6591f4108ed5ddf05b649d
+ms.openlocfilehash: 5926c155ed5846da14c498993311bddf5e56e4aa
+ms.sourcegitcommit: 6f04ad0e0cde696661511dcdf343942b43f73fc6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53660300"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58396701"
 ---
 # <a name="azure-ad-policy-overview"></a>Visão geral da política do Azure AD
 
@@ -25,7 +25,7 @@ Azure Active Directory (Azure AD) usa políticas para controlar os comportamento
 | Tipo de política                                                                               | Descrição                                                                                                                                                                                       | Exemplos                                                                                                 |
 | :---------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | :------------------------------------------------------------------------------------------------------- |
 | [activityBasedTimeoutPolicies](activityBasedTimeoutPolicy.md)                             | Representa uma política que controla a saída automática para sessões da Web após um período de inatividade, para aplicativos que suportam a funcionalidade de tempo de tempo de atividade baseada em atividade.                           | Configure o portal do Azure para ter um tempo de inatividade de 15 minutos.                                  |
-| [applicationAuthMethodPolicies](applicationAuthMethodPolicy.md)                           | Representa um conjunto de políticas que restringem operações de gerenciamento de aplicativos para aplicativos e entidades de serviço.                                                                                     | Configure aplicativos ou entidades de serviço para não usar segredos de senha ou impor a vida útil em segredos. |
+| [applicationAuthenticationMethodPolicies](applicationAuthenticationMethodPolicy.md)                           | Representa um conjunto de políticas que restringem operações de gerenciamento de aplicativos para aplicativos e entidades de serviço.                                                                                     | Configure aplicativos ou entidades de serviço para não usar segredos de senha ou impor a vida útil em segredos. |
 | [authenticationFlowsPolicies](authenticationflowspolicy.md)                               | Representa uma política que controla se os usuários externos devem ser capazes de se inscrever e obter uma conta de convidado por meio de um fluxo de usuário de autoatendado de Identidades Externas.                            | Habilita seus aplicativos para dar suporte a usuários externos que se insinuem por meio de um fluxo de usuário de inscrição de autoatendado.      |
 | [authorizationPolicy](authorizationpolicy.md)                                             | Representa uma política que pode controlar as configurações de autorização de Azure Active Directory.                                                                                                            | Configure o Azure AD para bloquear o MSOL PowerShell no locatário.                                               |
 | [claimsMappingPolicies](claimsMappingPolicy.md)                                           | Representa as políticas de mapeamento de declaração para protocolos WS-Fed, SAML, OAuth 2.0 e OpenID Conexão, para tokens emitidos para um aplicativo específico.                                                     | Crie e atribua uma política para omitir as declarações básicas de tokens emitidos para uma entidade de serviço.           |
