@@ -5,12 +5,12 @@ author: mlafleur
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: f0841bb6a15bcb8b03819e95540c4c40d99fa57d
-ms.sourcegitcommit: b8b0e88b3ba9a434dc45f5ab640cb46f66fae299
+ms.openlocfilehash: c92ec9149514ca719b5431aedccd8e30883bb4fd648c9e6a4e944ee2e6315083
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "52474950"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "57407123"
 ---
 # <a name="list-educationclasses"></a>Listar educationClasses
 
@@ -24,7 +24,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 | :------------------------------------- | :------------------------------------------ |
-| Delegado (conta corporativa ou de estudante)     | EduRoster.ReadBasic                         |
+| Delegada (conta corporativa ou de estudante)     | EduRoster.ReadBasic                         |
 | Delegado (conta pessoal da Microsoft) | Sem suporte                               |
 | Aplicativo                            | EduRoster.Read.All, EduRoster.ReadWrite.All |
 

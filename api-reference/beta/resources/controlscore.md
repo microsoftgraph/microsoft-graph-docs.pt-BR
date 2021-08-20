@@ -1,29 +1,29 @@
 ---
-title: " tipo de recurso controlScore"
-description: Este recurso contém uma pontuação de locatário e uma descrição para um controle individual.
+title: " Tipo de recurso controlScore"
+description: Esse recurso contém uma pontuação de locatário e uma descrição para um controle individual.
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: preetikr
-ms.openlocfilehash: 964de9f9567c419b4e14d38e79cdff92867fb5ea
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 7f5306f88f2ed14ae13cb95cee7cdb3cfe2ad569405062fe6524b8b747940b9b
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48016804"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54190777"
 ---
-#  <a name="controlscore-resource-type"></a>tipo de recurso controlScore
+#  <a name="controlscore-resource-type"></a>Tipo de recurso controlScore
 
 Namespace: microsoft.graph
 
-Este recurso contém uma pontuação de locatário e uma descrição para um controle individual.
+Esse recurso contém uma pontuação de locatário e uma descrição para um controle individual.
 
 |Nome |Tipo |Descrição |
 |:--|:--|:--|
-|   controlName |   String  |   Controlar o nome exclusivo |
-|   Pontuação   |   Duplo  |  A pontuação alcançada do locatário para o controle (ele varia dia a dia, dependendo das operações do locatário no controle). |
-|   controlCategory |   String  |  Categoria de ação de controle (identidade, dados, dispositivo, aplicativos, infraestrutura). |
-|   description |   String  |  Descrição do controle. |
+|   controlName |   Cadeia de caracteres  |   Controlar nome exclusivo |
+|   score   |   Duplo  |  O locatário obteve pontuação para o controle (varia dia a dia, dependendo das operações do locatário no controle). |
+|   controlCategory |   Cadeia de caracteres  |  Categoria de ação de controle (Identidade, Dados, Dispositivo, Aplicativos, Infraestrutura). |
+|   description |   Cadeia de caracteres  |  Descrição do controle. |
 
 ## <a name="json-representation"></a>Representação JSON
 

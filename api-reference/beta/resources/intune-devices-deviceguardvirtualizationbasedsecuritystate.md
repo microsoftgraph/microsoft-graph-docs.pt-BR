@@ -1,22 +1,22 @@
 ---
-title: tipo de enumeração deviceGuardVirtualizationBasedSecurityState
+title: Tipo de número deviceGuardVirtualizationBasedSecurityState
 description: Ainda não documentado
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 45b063d195bd5c8fe0487521d26b38997e7c36b1
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: f93df3d0fea2423738a7063f79932128de0711de2b358587d0b92392c7da8a69
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49293014"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54182809"
 ---
-# <a name="deviceguardvirtualizationbasedsecuritystate-enum-type"></a>tipo de enumeração deviceGuardVirtualizationBasedSecurityState
+# <a name="deviceguardvirtualizationbasedsecuritystate-enum-type"></a>Tipo de número deviceGuardVirtualizationBasedSecurityState
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -25,13 +25,13 @@ Ainda não documentado
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|com|,0|Em execução|
-|rebootRequired|1|Raiz necessária|
-|require64BitArchitecture|duas|é necessária a arquitetura de bits de 64|
-|Não licenciado|3D|Não licenciado|
+|running|0|Em execução|
+|rebootRequired|1 |Raiz necessária|
+|require64BitArchitecture|2|Arquitetura de 64 bits necessária|
+|notLicensed|3 |Não licenciado|
 |notConfigured|4 |Não configurado|
-|doesNotMeetHardwareRequirements|5 |O sistema não atende aos requisitos de hardware|
-|outro|42|Outro. Os logs de eventos no Microsoft-Windows-DeviceGuard têm mais detalhes.|
+|doesNotMeetHardwareRequirements|5 |O sistema não atendem aos requisitos de hardware|
+|other|42|Outro. Os logs de eventos no microsoft-Windows-DeviceGuard têm mais detalhes.|
 
 
 

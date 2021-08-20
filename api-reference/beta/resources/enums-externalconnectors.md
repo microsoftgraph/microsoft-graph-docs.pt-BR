@@ -6,12 +6,12 @@ localization_priority: Normal
 ms.prod: search
 ms.author: emzho
 author: emzho
-ms.openlocfilehash: d302ed49bea5c7d69f77d68dfcad13d32fc9b57b
-ms.sourcegitcommit: 1940be9846055aa650c6c03982b74a961f1e316a
+ms.openlocfilehash: 31a7025c1459964e483196f419fdba448a608fa3a7ce6f77e47eb635dcc7224f
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/17/2021
-ms.locfileid: "53467596"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54203341"
 ---
 # <a name="external-connectors-enum-values"></a>Valores de numeração de conectores externos
 
@@ -19,7 +19,7 @@ Namespace: microsoft.graph.externalConnectors
 
 ### <a name="accesstype-values"></a>valores accessType
 
-| Member
+| Membro
 |:--------------
 | grant
 | deny
@@ -27,7 +27,7 @@ Namespace: microsoft.graph.externalConnectors
 
 ### <a name="acltype-values"></a>valores aclType
 
-| Member
+| Membro
 |:--------------
 | usuário
 | group
@@ -39,7 +39,7 @@ Namespace: microsoft.graph.externalConnectors
 
 ### <a name="connectionoperationstatus-values"></a>valores connectionOperationStatus
 
-| Member
+| Membro
 |:--------------
 | não especificado
 | inprogress
@@ -50,7 +50,7 @@ Namespace: microsoft.graph.externalConnectors
 
 ### <a name="connectionstate-values"></a>valores connectionState
 
-|Member
+|Membro
 |:--------------
 | draft
 | ready
@@ -61,7 +61,7 @@ Namespace: microsoft.graph.externalConnectors
 
 ### <a name="externalgroupmembertype-values"></a>valores externalGroupMemberType
 
-| Member
+| Membro
 |:--------------
 | usuário
 | group
@@ -70,7 +70,7 @@ Namespace: microsoft.graph.externalConnectors
 
 ### <a name="externalitemcontenttype-values"></a>valores externalItemContentType
 
-| Member
+| Membro
 |:--------------
 | texto
 | HTML
@@ -78,7 +78,7 @@ Namespace: microsoft.graph.externalConnectors
 
 ### <a name="identitysourcetype-values"></a>valores identitySourceType
 
-| Member
+| Membro
 |:--------------
 | azureActiveDirectory
 | external
@@ -86,7 +86,7 @@ Namespace: microsoft.graph.externalConnectors
 
 ### <a name="label-values"></a>valores de rótulo
 
-| Member
+| Membro
 |:--------------
 | Título
 | url
@@ -105,7 +105,7 @@ Namespace: microsoft.graph.externalConnectors
 
 ### <a name="propertytype-values"></a>valores propertyType
 
-| Member
+| Membro
 |:--------------
 | cadeia de caracteres
 | int64

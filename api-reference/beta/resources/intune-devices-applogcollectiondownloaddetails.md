@@ -1,22 +1,22 @@
 ---
-title: tipo de recurso appLogCollectionDownloadDetails
+title: Tipo de recurso appLogCollectionDownloadDetails
 description: Ainda não documentado
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: ced02355c4d1b0d57761c7374e46bb41d7a35558
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: c12fd9bca34a75fcac447517682186d3b8bc2c54dade7ba938154f9d4f75cb76
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49260065"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54215094"
 ---
-# <a name="applogcollectiondownloaddetails-resource-type"></a>tipo de recurso appLogCollectionDownloadDetails
+# <a name="applogcollectiondownloaddetails-resource-type"></a>Tipo de recurso appLogCollectionDownloadDetails
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -25,9 +25,9 @@ Ainda não documentado
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|downloadUrl|String|Baixar a URL SAS para AppLogUploadRequest concluída|
-|decryptionKey|String|DecryptionKey como cadeia de caracteres|
-|appLogDecryptionAlgorithm|[appLogDecryptionAlgorithm](../resources/intune-devices-applogdecryptionalgorithm.md)|DecryptionAlgorithm para conteúdo. Os valores possíveis são: `aes256` .|
+|downloadUrl|Cadeia de caracteres|Baixar a URL do SAS para AppLogUploadRequest concluído|
+|decryptionKey|Cadeia de caracteres|DecryptionKey como cadeia de caracteres|
+|appLogDecryptionAlgorithm|[appLogDecryptionAlgorithm](../resources/intune-devices-applogdecryptionalgorithm.md)|DecryptionAlgorithm for Content. Os valores possíveis são: `aes256` .|
 
 ## <a name="relationships"></a>Relações
 Nenhum

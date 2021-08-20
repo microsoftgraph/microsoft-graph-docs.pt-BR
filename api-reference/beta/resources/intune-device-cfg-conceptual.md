@@ -4,12 +4,12 @@ description: Lista a API Graph microsoft para pontos de extremidade do Intune (R
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 4c9aa91adf1a8133080fd2f4ae09edee12445cc3
-ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
+ms.openlocfilehash: e1b193f4abb338f3ecb18d848fcd8435f77743b6
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "52666279"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58265414"
 ---
 # <a name="device-configuration-in-microsoft-intune"></a>Configuração de dispositivo no Microsoft Intune
 
@@ -126,6 +126,7 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar configuraçõe
 - [Tipo de lista do aplicativo](intune-deviceconfig-applisttype.md)
 - [Tipo de controle do aplicativo App Locker](intune-deviceconfig-applockerapplicationcontroltype.md)
 - [Item de lista de aplicativos da Apple](intune-deviceconfig-appleapplistitem.md)
+- [Canal de implantação da Apple](intune-deviceconfig-appledeploymentchannel.md)
 - [Base de configuração de recursos do dispositivo Apple](intune-deviceconfig-appledevicefeaturesconfigurationbase.md)
 - [Base de configuração de verificação expedida da Apple](intune-deviceconfig-appleexpeditedcheckinconfigurationbase.md)
 - [Formato de nome de assunto da Apple](intune-deviceconfig-applesubjectnameformat.md)
@@ -142,7 +143,7 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar configuraçõe
 - [Política da unidade fixa do BitLocker](intune-deviceconfig-bitlockerfixeddrivepolicy.md)
 - [Tipo de informações de recuperação do BitLocker](intune-deviceconfig-bitlockerrecoveryinformationtype.md)
 - [Opções de recuperação do BitLocker](intune-deviceconfig-bitlockerrecoveryoptions.md)
-- [BitLocker tipo de rotação de senha de recuperação](intune-deviceconfig-bitlockerrecoverypasswordrotationtype.md)
+- [Tipo de rotação de senha de recuperação do BitLocker](intune-deviceconfig-bitlockerrecoverypasswordrotationtype.md)
 - [Política da unidade removível do BitLocker](intune-deviceconfig-bitlockerremovabledrivepolicy.md)
 - [Política da unidade de sistema do BitLocker](intune-deviceconfig-bitlockersystemdrivepolicy.md)
 - [Configuração de sincronização do navegador](intune-deviceconfig-browsersyncsetting.md)
@@ -223,10 +224,13 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar configuraçõe
 - [Versão do sistema operacional de regras de gerenciamento de dispositivos](intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)
 - [Tipo de regra de aplicabilidade de gerenciamento de dispositivo](intune-deviceconfig-devicemanagementapplicabilityruletype.md)
 - [Autoridade de certificação de gerenciamento de dispositivos](intune-deviceconfig-devicemanagementcertificationauthority.md)
+- [Relatórios de gerenciamento de dispositivos](intune-grouppolicy-devicemanagementreports.md)
 - [Configurações de gerenciamento de dispositivo](intune-deviceconfig-devicemanagementsettings.md)
 - [Usuário ou grupo local de direitos de usuário de gerenciamento de dispositivos](intune-deviceconfig-devicemanagementuserrightslocaluserorgroup.md)
 - [Configuração de direitos do usuário de gerenciamento de dispositivos](intune-deviceconfig-devicemanagementuserrightssetting.md)
+- [Tipo de plataforma do dispositivo](intune-deviceconfig-deviceplatformtype.md)
 - [Nível de proteção contra ameaças ao dispositivo](intune-deviceconfig-devicethreatprotectionlevel.md)
+- [Tipo de dispositivo](intune-deviceconfig-devicetype.md)
 - [Tipos de dispositivo](intune-deviceconfig-devicetypes.md)
 - [Modo de envio de dados de diagnóstico](intune-deviceconfig-diagnosticdatasubmissionmode.md)
 - [Grupo hellman Diffie](intune-deviceconfig-diffiehellmangroup.md)
@@ -356,6 +360,8 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar configuraçõe
 - [Par de valores de cadeia de caracteres de chave](intune-deviceconfig-keystringvaluepair.md)
 - [Par de valores digitados por chave](intune-deviceconfig-keytypedvaluepair.md)
 - [Valor da chave](intune-deviceconfig-keyvalue.md)
+- [Par chave/valor](intune-deviceconfig-keyvaluepair.md)
+- [Par chave/valor](intune-deviceconfig-keyvaluepair.md)
 - [Nível de autenticação do LAN Manager](intune-deviceconfig-lanmanagerauthenticationlevel.md)
 - [Tipo de comportamento da solicitação de elevação do administrador de opções de segurança local](intune-deviceconfig-localsecurityoptionsadministratorelevationpromptbehaviortype.md)
 - [Formato das opções de segurança local e remoção do tipo de usuário permitido para mídias removíveis](intune-deviceconfig-localsecurityoptionsformatandejectofremovablemediaallowedusertype.md)
@@ -415,6 +421,7 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar configuraçõe
 - [Estado de criptografia de dispositivo gerenciado](intune-deviceconfig-manageddeviceencryptionstate.md)
 - [Estado de configuração do aplicativo móvel de dispositivo gerenciado](intune-deviceconfig-manageddevicemobileappconfigurationsettingstate.md)
 - [Aplicativo reportado pelo dispositivo gerenciado](intune-deviceconfig-manageddevicereportedapp.md)
+- [Tipo de agente de gerenciamento](intune-deviceconfig-managementagenttype.md)
 - [Classificação de conteúdo de mídia da Austrália](intune-deviceconfig-mediacontentratingaustralia.md)
 - [Classificação de conteúdo de mídia do Canadá](intune-deviceconfig-mediacontentratingcanada.md)
 - [Classificação de conteúdo de mídia da França](intune-deviceconfig-mediacontentratingfrance.md)
@@ -448,6 +455,7 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar configuraçõe
 - [Grupo de segredo de encaminhamento perfeito](intune-deviceconfig-perfectforwardsecrecygroup.md)
 - [Solicitação de rescriptografia Pfx](intune-raimportcerts-pfxrecryptionrequest.md)
 - [Certificado de usuário Pfx](intune-raimportcerts-pfxusercertificate.md)
+- [Tipo de plataforma da política](intune-deviceconfig-policyplatformtype.md)
 - [Tipo de ação Power](intune-deviceconfig-poweractiontype.md)
 - [Recursos pré-lançamento](intune-deviceconfig-prereleasefeatures.md)
 - [Classificação de tipo de aplicativos](intune-deviceconfig-ratingappstype.md)

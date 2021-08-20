@@ -1,26 +1,26 @@
 ---
-title: tipo de recurso deviceManagementSettingEnrollmentTypeConstraint
-description: Restrição que impõe os tipos de inscrição aplicados a uma configuração
+title: Tipo de recurso deviceManagementSettingEnrollmentTypeConstraint
+description: Restrição que impõe os tipos de registro aplicados a uma configuração
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 604f9210cf81947617d40b0baec8fe8c5715347f
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: c30425ff1a94a50c0322f21db18f70efab0d3d9fb48fb113e363223564f746ff
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49307448"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54244837"
 ---
-# <a name="devicemanagementsettingenrollmenttypeconstraint-resource-type"></a>tipo de recurso deviceManagementSettingEnrollmentTypeConstraint
+# <a name="devicemanagementsettingenrollmenttypeconstraint-resource-type"></a>Tipo de recurso deviceManagementSettingEnrollmentTypeConstraint
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Restrição que impõe os tipos de inscrição aplicados a uma configuração
+Restrição que impõe os tipos de registro aplicados a uma configuração
 
 
 Herda de [deviceManagementConstraint](../resources/intune-deviceintent-devicemanagementconstraint.md)
@@ -28,7 +28,7 @@ Herda de [deviceManagementConstraint](../resources/intune-deviceintent-deviceman
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|enrollmentTypes|Coleção de cadeias de caracteres|Lista de tipos de registro|
+|enrollmentTypes|String collection|Lista de tipos de registro|
 
 ## <a name="relationships"></a>Relações
 Nenhum

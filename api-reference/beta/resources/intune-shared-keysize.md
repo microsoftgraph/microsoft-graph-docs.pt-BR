@@ -1,33 +1,33 @@
 ---
-title: tipo de enumeração keySize
-description: Opções de tamanho de chave.
+title: tipo de número keySize
+description: Opções de tamanho da chave.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: a3314e0c6ee3f5f7367bcea3e01637077510df05
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: d6eaefd9a1481c2f44d7dd81fc9306857cbb62c5d88a1362f98ab9222032442d
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49301365"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54239081"
 ---
-# <a name="keysize-enum-type"></a>tipo de enumeração keySize
+# <a name="keysize-enum-type"></a>tipo de número keySize
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Opções de tamanho de chave.
+Opções de tamanho da chave.
 
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|size1024|,0|Bits 1024.|
-|size2048|1|Bits 2048.|
-|size4096|duas|Bits 4096.|
+|size1024|0|1024 Bits.|
+|size2048|1 |2048 Bits.|
+|size4096|2|4096 Bits.|
 
 
 

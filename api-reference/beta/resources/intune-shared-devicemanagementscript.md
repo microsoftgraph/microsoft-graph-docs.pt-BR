@@ -1,26 +1,26 @@
 ---
 title: Tipo de recurso deviceManagementScript
-description: O Intune fornecerá ao cliente a capacidade de executar seus scripts do Powershell nos dispositivos inscritos do Windows 10 Azure Active Directory. O script pode ser executado uma vez ou periodicamente.
+description: O Intune fornecerá ao cliente a capacidade de executar seus scripts do Powershell nos dispositivos inscritos do Windows 10 Azure Active Directory ingressados. O script pode ser executado uma vez ou periodicamente.
 author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: ee8899e164253ec3bee90f6cbcced132788e62a4
-ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
+ms.openlocfilehash: a16f7634f0951649ae0a670c48e5598dbbf3c14d0fa1c06751e9d313ffe51f17
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51866829"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54206169"
 ---
 # <a name="devicemanagementscript-resource-type"></a>Tipo de recurso deviceManagementScript
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-O Intune fornecerá ao cliente a capacidade de executar seus scripts do Powershell nos dispositivos inscritos do Windows 10 Azure Active Directory. O script pode ser executado uma vez ou periodicamente.
+O Intune fornecerá ao cliente a capacidade de executar seus scripts do Powershell nos dispositivos inscritos do Windows 10 Azure Active Directory ingressados. O script pode ser executado uma vez ou periodicamente.
 
 ## <a name="methods"></a>Métodos
 |Método|Tipo de retorno|Descrição|
@@ -47,7 +47,7 @@ O Intune fornecerá ao cliente a capacidade de executar seus scripts do Powershe
 |runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|Indica o tipo de contexto de execução. Os valores possíveis são: `system` e `user`.|
 |enforceSignatureCheck|Boolean|Indique se a assinatura de script precisa ser verificada.|
 |fileName|String|Nome do arquivo de script.|
-|roleScopeTagIds|Coleção String|Lista de IDs de marca de escopo para esta instância do PowerShellScript.|
+|roleScopeTagIds|String collection|Lista de IDs de marca de escopo para esta instância do PowerShellScript.|
 |runAs32Bit|Boolean|Um valor que indica se o script do PowerShell deve ser executado como 32 bits|
 
 ## <a name="relationships"></a>Relações

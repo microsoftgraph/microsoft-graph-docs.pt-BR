@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: aa840fe5755955d8d1649f64f4b0ea610bd53cd0
-ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
+ms.openlocfilehash: f7582459e304ef25ba15a404fc521c9e6832c7dab40dea51151cc7d2bb790883
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "52666531"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54185800"
 ---
 # <a name="devicemanagementconfigurationgroupsettingvaluetemplate-resource-type"></a>Tipo de recurso deviceManagementConfigurationGroupSettingValueTemplate
 
@@ -26,10 +26,10 @@ Modelo de valor de configuração de grupo
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |filhos|[Coleção deviceManagementConfigurationSettingInstanceTemplate](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettinginstancetemplate.md)|Filhos do valor da configuração de grupo|
-|settingValueTemplateId|String|Definindo a ID do Modelo de Valor|
+|settingValueTemplateId|Cadeia de caracteres|Definindo a ID do Modelo de Valor|
 
 ## <a name="relationships"></a>Relações
-Nenhuma
+Nenhum
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 91ed3fc25fbb2a21c0e44b5baf00f82c97822e7a
-ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
+ms.openlocfilehash: fa8b85fc3e9354a0b2b75551c1ffd56427981fc6afe9a9d9ebc684ff75b1873b
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "52666811"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54229539"
 ---
 # <a name="chromeosonboardingstatus-enum-type"></a>Tipo de número chromeOSOnboardingStatus
 
@@ -26,9 +26,9 @@ O status de integração do locatário.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |desconhecido|0|Desconhecido|
-|inprogress|1|Em andamento|
+|inprogress|1 |Em andamento|
 |onboarded|2|Onboarded|
-|failed|3|Falhou|
+|failed|3 |Falhou|
 
 
 

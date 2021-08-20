@@ -1,34 +1,34 @@
 ---
-title: tipo de enumeração bitLockerRecoveryPasswordRotationType
-description: Tipo de rotação da senha de recuperação do BitLocker
+title: Tipo denum bitLockerRecoveryPasswordRotationType
+description: Tipo de rotação de senha de recuperação do BitLocker
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: d6f77bb5411a7d7a53fd4d95c5740c6044f8b851
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 098d845772ff7e6fe232702a2640225aa1b9f716bd1f317d2d66b730102c9afe
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49260534"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54232829"
 ---
-# <a name="bitlockerrecoverypasswordrotationtype-enum-type"></a>tipo de enumeração bitLockerRecoveryPasswordRotationType
+# <a name="bitlockerrecoverypasswordrotationtype-enum-type"></a>Tipo denum bitLockerRecoveryPasswordRotationType
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Tipo de rotação da senha de recuperação do BitLocker
+Tipo de rotação de senha de recuperação do BitLocker
 
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|notConfigured|,0|Não configurado|
-|desabilitadas|1|Rotação da senha de recuperação desativada|
-|enabledForAzureAd|duas|Rotação da senha de recuperação em dispositivos ingressados no Azure AD|
-|enabledForAzureAdAndHybrid|3D|Rotação da senha de recuperação para os dispositivos ingressados e híbridos do Azure AD|
+|notConfigured|0|Não configurado|
+|desabilitadas|1 |Rotação de senha de recuperação desligada|
+|enabledForAzureAd|2|Rotação de senha de recuperação em dispositivos ingressados no Azure AD|
+|enabledForAzureAdAndHybrid|3 |Rotação de senha de recuperação em ambos os dispositivos ingressados no Azure AD e híbridos ingressados|
 
 
 

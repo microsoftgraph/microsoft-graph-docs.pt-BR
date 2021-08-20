@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: reports
 author: sarahwxy
 doc_type: resourcePageType
-ms.openlocfilehash: ad2610f5cbd3aae56651a0a5651e4ee4319b3bb2
-ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
+ms.openlocfilehash: b7f38f2279e7cd575972d13ea411d972349131a4fe3a9943c4e5efa03365ffa2
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49981491"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54178707"
 ---
 # <a name="office365groupsactivitygroupcounts-resource-type"></a>Tipo de recurso office365GroupsActivityGroupCounts
 
@@ -22,9 +22,9 @@ Namespace: microsoft.graph
 | :---------------- | :----- | ---------------------------------------- |
 | reportRefreshDate | Data   | A data mais recente do conteúdo.          |
 | total             | Int64  | O número total de grupos.              |
-| ativo            | Int64  | O número de grupos ativos. Um grupo será considerado ativo se ocorrer um dos seguintes: email recebido da caixa de correio do grupo; usuário visualizado, editado, compartilhado ou sincronizado arquivos na biblioteca de documentos do SharePoint; usuário visualizou páginas do SharePoint; usuário postou, leu ou curtiu mensagens em grupos do Yammer. |
+| active            | Int64  | O número de grupos ativos. Um grupo será considerado ativo se ocorrer um dos seguintes: caixa de correio de grupo recebeu emails; arquivos exibidos, editados, compartilhados ou sincronizados no SharePoint de documentos; user viewed SharePoint pages; user posted, read, or liked messages in Yammer groups. |
 | reportDate        | Data   | A data em que vários grupos estavam ativos. |
-| reportPeriod      | Cadeia de caracteres | O número de dias que o relatório abrange.    |
+| reportPeriod      | Cadeia de caracteres | O número de dias que o relatório aborda.    |
 
 ## <a name="json-representation"></a>Representação JSON
 

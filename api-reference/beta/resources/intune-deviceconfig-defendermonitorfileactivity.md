@@ -1,22 +1,22 @@
 ---
-title: tipo de enumeração defenderMonitorFileActivity
+title: Tipo denum defenderMonitorFileActivity
 description: Valores possíveis para monitorar a atividade do arquivo.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 61a8c80f0e3c01c213e1dacb625b58f854756673
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 41f3bd868a5bbd814a23dd89149eb7300c41c3cce31c362c1f360a7eca1de7fa
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49256516"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54190616"
 ---
-# <a name="defendermonitorfileactivity-enum-type"></a>tipo de enumeração defenderMonitorFileActivity
+# <a name="defendermonitorfileactivity-enum-type"></a>Tipo denum defenderMonitorFileActivity
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -25,11 +25,11 @@ Valores possíveis para monitorar a atividade do arquivo.
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|UserDefined|,0|Definido pelo usuário, valor padrão, sem intenção.|
-|desabilitar|1|Desabilitar o monitoramento da atividade do arquivo.|
-|monitorAllFiles|duas|Monitorar todos os arquivos.|
-|monitorIncomingFilesOnly|3D| Monitorar somente os arquivos de entrada.|
-|monitorOutgoingFilesOnly|4 |Monitorar somente os arquivos de saída.|
+|userDefined|0|User Defined, default value, no intent.|
+|desabilitar|1 |Desabilitar a atividade de arquivo de monitoramento.|
+|monitorAllFiles|2|Monitore todos os arquivos.|
+|monitorIncomingFilesOnly|3 | Monitore somente arquivos de entrada.|
+|monitorOutgoingFilesOnly|4 |Monitore somente arquivos de saída.|
 
 
 

@@ -1,31 +1,31 @@
 ---
-title: Atualizar termo
-description: Atualizar as propriedades de um objeto term.
+title: Termo de atualização
+description: Atualize as propriedades de um objeto term.
 author: mohitpcad
 localization_priority: Normal
 ms.prod: Sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 1168407425b0ef8faff213fd807f9499317e0f7b
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: fff5c082a0d8a7b1c60a5430706c342a93bd09df
+ms.sourcegitcommit: 22bd45d272681658d46a8b99af3c3eabc7b05cb1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49874379"
+ms.lasthandoff: 08/18/2021
+ms.locfileid: "58384454"
 ---
-# <a name="update-term"></a>Atualizar termo
+# <a name="update-term"></a>Termo de atualização
 Namespace: microsoft.graph.termStore
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Atualizar as propriedades de um [objeto term.](../resources/termstore-term.md)
+Atualize as propriedades de um [objeto term.](../resources/termstore-term.md)
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante) | TermStore.ReadWrite.All |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegada (conta corporativa ou de estudante) | TermStore.ReadWrite.All |
+|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Sem suporte. |
 
 
@@ -46,21 +46,21 @@ PATCH /termStore/sets/{setId}/terms/{termId}
 |Content-Type|application/json. Obrigatório.|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, fornece uma representação JSON do [objeto do](../resources/termstore-term.md) termo.
+No corpo da solicitação, fornece uma representação JSON do [objeto term.](../resources/termstore-term.md)
 
-A tabela a seguir mostra as propriedades que podem ser atualizadas para um [termo.](../resources/termstore-term.md)
+A tabela a seguir mostra as propriedades que podem ser atualizadas para um [termo](../resources/termstore-term.md).
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|rótulos|[coleção microsoft.graph.termStore.localizedLabel](../resources/termstore-localizedlabel.md)|rótulos de um termo|
-|descriptions|[coleção microsoft.graph.termStore.localizedDescription](../resources/termstore-localizeddescription.md)|descrição sobre o termo|
-|properties|[coleção microsoft.graph.keyValue](../resources/keyvalue.md)|associadas ao termo|
+|labels|[coleção microsoft.graph.termStore.localizedLabel](../resources/termstore-localizedlabel.md)|Rótulos de um termo.|
+|descriptions|[coleção microsoft.graph.termStore.localizedDescription](../resources/termstore-localizeddescription.md)|Descrição sobre o termo.|
+|properties|[coleção microsoft.graph.keyValue](../resources/keyvalue.md)|Propriedades associadas ao termo.|
 
 
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna `200 OK` um código de resposta e um objeto de [termo](../resources/termstore-term.md) atualizado no corpo da resposta.
+Se tiver êxito, este método retornará um código `200 OK` de resposta e um objeto de [termo](../resources/termstore-term.md) atualizado no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
