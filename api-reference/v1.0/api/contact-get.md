@@ -5,12 +5,12 @@ author: kevinbellinger
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: bef7b3e81a090ff33a9a3a5520266ebd38abb9da
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: e527bac4c2fc1f92eba6f558b80437e876aac854
+ms.sourcegitcommit: 22bd45d272681658d46a8b99af3c3eabc7b05cb1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52051533"
+ms.lasthandoff: 08/18/2021
+ms.locfileid: "58384025"
 ---
 # <a name="get-contact"></a>Obter contato
 
@@ -35,7 +35,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
-Um [contact](../resources/contact.md) da [contactFolder](../resources/contactfolder.md) padrão do usuário.
+Um [contato](../resources/contact.md) na caixa de correio do usuário.
 ```http
 GET /me/contacts/{id}
 GET /users/{id | userPrincipalName}/contacts/{id}
@@ -98,7 +98,7 @@ GET https://graph.microsoft.com/v1.0/me/contacts/{id}
 ---
 
 ##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto de resposta exibido aqui pode ser encurtado para legibilidade.
+Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser reduzido para facilitar a leitura.
 <!-- {
   "blockType": "response",
   "truncated": true,

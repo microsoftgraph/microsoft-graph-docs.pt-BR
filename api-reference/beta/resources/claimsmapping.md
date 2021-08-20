@@ -5,12 +5,12 @@ author: namkedia
 localization_priority: Priority
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 1863c6bf6f28e0e8ae8a3d1133330337a7420c0a
-ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
+ms.openlocfilehash: 31ec191527509c015ab201c1464509fce64e549fd5475a377efbff0808973a74
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50761839"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54239676"
 ---
 # <a name="claimsmapping-resource-type"></a>claimsMapping tipo de recurso
 
@@ -22,7 +22,7 @@ Depois que o provedor de identidade personalizado envia um token de ID de volta 
 |Propriedade|Tipo|Descrição|
 |:-------|:---|:----------|
 |userId|Cadeia de caracteres|A declaração que fornece o identificador exclusivo para o usuário conectado. É uma propriedade necessária.|
-|displayName|Cadeia de caracteres|A declaração que fornece o nome para exibição ou nome completo do usuário. É uma propriedade necessária.|
+|displayName|Cadeia de caracteres|A declaração que fornece o nome de exibição ou o nome completo do usuário. É uma propriedade necessária.|
 |givenName|Cadeia de caracteres|A declaração que fornece o primeiro nome do usuário.|
 |surname|Cadeia de caracteres|A declaração que fornece o sobrenome do usuário.|
 |email|Cadeia de caracteres|A declaração que fornece o endereço de email do usuário.|

@@ -1,31 +1,31 @@
 ---
-title: tipo de recurso KeyValue
-description: Definição de valor de chave.
+title: Tipo de recurso keyValue
+description: Definição do valor da chave.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: e0d112c76e03f45ba7bf28fea3b6d219745c4332
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 934d3baebfcbc996eadad5c2f8d04e3283d0bf58da5690c124fac7194fb96fae
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49283215"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54202991"
 ---
-# <a name="keyvalue-resource-type"></a>tipo de recurso KeyValue
+# <a name="keyvalue-resource-type"></a>Tipo de recurso keyValue
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Definição de valor de chave.
+Definição do valor da chave.
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|key|String|Chave.|
+|key|Cadeia de caracteres|Chave.|
 |value|Cadeia de caracteres|Valor.|
 
 ## <a name="relationships"></a>Relações

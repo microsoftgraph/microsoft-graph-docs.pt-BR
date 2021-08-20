@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 90253042888085f26e7960d036336a5ecf1bd39e
-ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
+ms.openlocfilehash: 091a218d6b428b4eab2b35686da651892ecafc5a
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "52665653"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58266118"
 ---
 # <a name="update-chromeosonboardingsettings"></a>Atualizar chromeOSOnboardingSettings
 
@@ -27,9 +27,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
+|Delegada (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Aplicativo|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -53,7 +53,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [o chrom
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|A ID do ChromebookTenant|
+|id|Cadeia de caracteres|A ID do ChromebookTenant|
 |ownerUserPrincipalName|String|OwnerUserPrincipalName do ChromebookTenant|
 |onboardingStatus|[onboardingStatus](../resources/intune-chromebooksync-onboardingstatus.md)|OnboardingStatus do ChromebookTenant. Os valores possíveis são: `unknown`, `inprogress`, `onboarded`, `failed`.|
 |lastModifiedDateTime|DateTimeOffset|LastModifiedDateTime do ChromebookTenant|

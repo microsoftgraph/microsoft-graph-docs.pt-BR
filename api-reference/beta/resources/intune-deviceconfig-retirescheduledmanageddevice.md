@@ -1,41 +1,41 @@
 ---
-title: tipo de recurso retireScheduledManagedDevice
-description: ManagedDevices que estão agendados para desativação
+title: Tipo de recurso retireScheduledManagedDevice
+description: ManagedDevices que estão agendados para a reforma
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: c15eb75f5298094ef4ac86690c446625ce1d1419
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 92c9097d47501599935fdda46b93428d4bb59369
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49293889"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58266447"
 ---
-# <a name="retirescheduledmanageddevice-resource-type"></a>tipo de recurso retireScheduledManagedDevice
+# <a name="retirescheduledmanageddevice-resource-type"></a>Tipo de recurso retireScheduledManagedDevice
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-ManagedDevices que estão agendados para desativação
+ManagedDevices que estão agendados para a reforma
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave da entidade.|
-|managedDeviceId|String|DeviceID gerenciado|
+|id|Cadeia de caracteres|Chave da entidade.|
+|managedDeviceId|Cadeia de caracteres|DeviceId gerenciado|
 |managedDeviceName|String|Nome do dispositivo gerenciado|
-|deviceType|[deviceType](../resources/intune-shared-devicetype.md)|Tipo de dispositivo de dispositivo gerenciado. Os valores possíveis são:,,,,,,,,,,,,,,,,,,,,,,,, `desktop` `windowsRT` `winMO6` `nokia` `windowsPhone` `mac` `winCE` `winEmbedded` `iPhone` `iPad` `iPod` `android` `iSocConsumer` `unix` `macMDM` `holoLens` `surfaceHub` , `androidForWork` , `androidEnterprise` , `windows10x` `androidnGMS` `cloudPC` `blackberry` `palm` `unknown` ,,,,,.|
-|complianceState|[complianceStatus](../resources/intune-shared-compliancestatus.md)|ComplianceStatus de dispositivo gerenciado. Os valores possíveis são: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.|
-|retireAfterDateTime|DateTimeOffset|Desativação de dispositivo gerenciado após DateTime|
-|managementAgent|[managementAgentType](../resources/intune-shared-managementagenttype.md)|ManagementAgentType de dispositivo gerenciado. Os valores possíveis são: `eas`, `mdm`, `easMdm`, `intuneClient`, `easIntuneClient`, `configurationManagerClient`, `configurationManagerClientMdm`, `configurationManagerClientMdmEas`, `unknown`, `jamf`, `googleCloudDevicePolicyController`, `microsoft365ManagedMdm` e `windowsManagementCloudApi`.|
-|ownerType|[managedDeviceOwnerType](../resources/intune-shared-manageddeviceownertype.md)|ManagedDeviceOwnerType de dispositivo gerenciado. Os valores possíveis são: `unknown`, `company`, `personal`.|
-|deviceCompliancePolicyName|String|Nome da política de conformidade do dispositivo|
-|deviceCompliancePolicyId|String|Política de conformidade do dispositivo|
-|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de marcas de escopo para esta instância de entidade.|
+|deviceType|[deviceType](../resources/intune-deviceconfig-devicetype.md)|Tipo de dispositivo gerenciado. Os valores possíveis são: `desktop` , , , , , , , , `windowsRT` `winMO6` `nokia` `windowsPhone` `mac` `winCE` `winEmbedded` `iPhone` `iPad` `iPod` `android` `iSocConsumer` `unix` , `macMDM` `holoLens` `surfaceHub` `androidForWork` `androidEnterprise` `windows10x` `androidnGMS` `cloudPC` `blackberry` `palm` `unknown` .|
+|complianceState|[complianceStatus](../resources/intune-shared-compliancestatus.md)|Managed Device ComplianceStatus. Os valores possíveis são: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.|
+|retireAfterDateTime|DateTimeOffset|Dispositivo gerenciado se aposentar após DateTime|
+|managementAgent|[managementAgentType](../resources/intune-deviceconfig-managementagenttype.md)|Managed Device ManagementAgentType. Os valores possíveis são: `eas`, `mdm`, `easMdm`, `intuneClient`, `easIntuneClient`, `configurationManagerClient`, `configurationManagerClientMdm`, `configurationManagerClientMdmEas`, `unknown`, `jamf`, `googleCloudDevicePolicyController`, `microsoft365ManagedMdm` e `windowsManagementCloudApi`.|
+|ownerType|[managedDeviceOwnerType](../resources/intune-shared-manageddeviceownertype.md)|Managed Device ManagedDeviceOwnerType. Os valores possíveis são: `unknown`, `company`, `personal`.|
+|deviceCompliancePolicyName|Cadeia de caracteres|Nome da política de conformidade do dispositivo|
+|deviceCompliancePolicyId|Cadeia de caracteres|Device Compliance PolicyId|
+|roleScopeTagIds|String collection|Lista de marcas de escopo para esta instância entity.|
 
 ## <a name="relationships"></a>Relações
 Nenhum

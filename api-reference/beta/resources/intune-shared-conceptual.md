@@ -4,12 +4,12 @@ description: Lista a API Graph microsoft para pontos de extremidade do Intune (R
 localization_priority: Normal
 author: dougeby
 ms.prod: intune
-ms.openlocfilehash: 77500484aaafd5d9101e66789966b4861b61e511
-ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
+ms.openlocfilehash: 9ef71ce51e86d2582935a5f647a0a7ad07b70e73
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "52664899"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58264077"
 ---
 # <a name="shared-resources-in-microsoft-intune"></a>Recursos compartilhados em Microsoft Intune
 
@@ -44,7 +44,6 @@ Os seguintes Graph são compartilhados entre fluxos de trabalho do Intune:
 - [Política de conformidade do dispositivo](intune-shared-devicecompliancepolicy.md)
 - [Configuração do dispositivo](intune-shared-deviceconfiguration.md)
 - [Configuração de registro do dispositivo](intune-shared-deviceenrollmentconfiguration.md)
-- [Tipo de registro de dispositivo](intune-shared-deviceenrollmenttype.md)
 - [Gerenciamento de dispositivo](intune-shared-devicemanagement.md)
 - [Configurações de credenciais derivadas do gerenciamento de dispositivos](intune-shared-devicemanagementderivedcredentialsettings.md)
 - [Script de gerenciamento de dispositivo](intune-shared-devicemanagementscript.md)
@@ -67,7 +66,6 @@ Os seguintes Graph são compartilhados entre fluxos de trabalho do Intune:
 - [Tamanho da chave](intune-shared-keysize.md)
 - [Opção de provedor de armazenamento de chaves](intune-shared-keystorageprovideroption.md)
 - [Usos de chave](intune-shared-keyusages.md)
-- [Par chave/valor](intune-shared-keyvaluepair.md)
 - [Configurações de atribuição do aplicativo LOB do macOS](intune-shared-macoslobappassignmentsettings.md)
 - [Configurações de atribuição do aplicativo VPP do macOS](intune-shared-macosvppappassignmentsettings.md)
 - [Tipo de proprietário do dispositivo gerenciado](intune-shared-manageddeviceownertype.md)
@@ -80,12 +78,10 @@ Os seguintes Graph são compartilhados entre fluxos de trabalho do Intune:
 - [Evento de solução de problemas de aplicativo móvel](intune-shared-mobileapptroubleshootingevent.md)
 - [Tipo de proprietário](intune-shared-ownertype.md)
 - [Domínio com proxy](intune-shared-proxieddomain.md)
-- [Relatório](intune-shared-report.md)
+- [Report](intune-shared-report.md)
 - [Raiz de relatório](intune-shared-reportroot.md)
-- [Estado do aplicativo resultante](intune-shared-resultantappstate.md)
 - [Cores RGB](intune-shared-rgbcolor.md)
 - [Executar como tipo de conta](intune-shared-runasaccounttype.md)
-- [Estado da execução](intune-shared-runstate.md)
 - [Opções de geração do estado da interface do usuário salvas](intune-shared-saveduistategenerationoptions.md)
 - [Definindo o tipo de origem](intune-shared-settingsourcetype.md)
 - [Tipo de nome alternativo da entidade](intune-shared-subjectalternativenametype.md)

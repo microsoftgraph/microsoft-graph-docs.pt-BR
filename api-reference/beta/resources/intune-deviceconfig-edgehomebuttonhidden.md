@@ -1,26 +1,26 @@
 ---
-title: tipo de recurso edgeHomeButtonHidden
-description: Ocultar o botão página inicial.
+title: Tipo de recurso edgeHomeButtonHidden
+description: Ocultar o botão home.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: ffc6f4ebacd454829e9a3eb95a0994b4f9d03686
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 1d5ac50362313c5064b9f4c75a527b2bc3fcdd938f42dcf9cadf04e1fdb137d6
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49269284"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54241910"
 ---
-# <a name="edgehomebuttonhidden-resource-type"></a>tipo de recurso edgeHomeButtonHidden
+# <a name="edgehomebuttonhidden-resource-type"></a>Tipo de recurso edgeHomeButtonHidden
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Ocultar o botão página inicial.
+Ocultar o botão home.
 
 
 Herda de [edgeHomeButtonConfiguration](../resources/intune-deviceconfig-edgehomebuttonconfiguration.md)

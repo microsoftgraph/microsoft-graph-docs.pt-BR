@@ -1,22 +1,22 @@
 ---
-title: tipo de recurso deviceHealthScriptIntegerParameter
+title: Tipo de recurso deviceHealthScriptIntegerParameter
 description: Propriedades do parâmetro de script Integer.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 6ebc614c93e88d01503c0219200598148c7b84cc
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: abac591b623af6283a830b427ae98e7c178376ef41e620b29d06ba24dbe16892
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49226486"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54253646"
 ---
-# <a name="devicehealthscriptintegerparameter-resource-type"></a>tipo de recurso deviceHealthScriptIntegerParameter
+# <a name="devicehealthscriptintegerparameter-resource-type"></a>Tipo de recurso deviceHealthScriptIntegerParameter
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -28,11 +28,11 @@ Herda de [deviceHealthScriptParameter](../resources/intune-devices-devicehealths
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|nome|String|O nome do parâmetro herdado de [deviceHealthScriptParameter](../resources/intune-devices-devicehealthscriptparameter.md)|
-|description|String|A descrição do parâmetro herdado de [deviceHealthScriptParameter](../resources/intune-devices-devicehealthscriptparameter.md)|
-|isRequired|Booliano|Se o parâmetro obrigatório é herdado de [deviceHealthScriptParameter](../resources/intune-devices-devicehealthscriptparameter.md)|
-|applyDefaultValueWhenNotAssigned|Booliano|Se aplica DefaultValue quando não atribuído herdado de [deviceHealthScriptParameter](../resources/intune-devices-devicehealthscriptparameter.md)|
-|defaultValue|Int32|O valor padrão do parâmetro Integer. Valores válidos-2147483648 a 2147483647|
+|nome|Cadeia de caracteres|O nome do param Herdado de [deviceHealthScriptParameter](../resources/intune-devices-devicehealthscriptparameter.md)|
+|description|Cadeia de caracteres|A descrição do param Herdado de [deviceHealthScriptParameter](../resources/intune-devices-devicehealthscriptparameter.md)|
+|isRequired|Booliano|Se o param é necessário Herdado de [deviceHealthScriptParameter](../resources/intune-devices-devicehealthscriptparameter.md)|
+|applyDefaultValueWhenNotAssigned|Boolean|Se aplicar DefaultValue quando não atribuído herdado de [deviceHealthScriptParameter](../resources/intune-devices-devicehealthscriptparameter.md)|
+|defaultValue|Int32|O valor padrão de inteiro param. Valores válidos -2147483648 para 2147483647|
 
 ## <a name="relationships"></a>Relações
 Nenhum

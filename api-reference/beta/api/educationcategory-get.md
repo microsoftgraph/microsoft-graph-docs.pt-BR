@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 43e26c09b1f5c29e7c096ee0a905e5141d79191f
-ms.sourcegitcommit: 979fe005c74eb99cd971df6b9511b2d3f7fe3cd4
+ms.openlocfilehash: c79fc121f0fff65c26ac7d847d5ab16f4bd9aef8
+ms.sourcegitcommit: 1e9a53e7b8e67349288f5cfbabe8355de83817b0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52991670"
+ms.lasthandoff: 08/17/2021
+ms.locfileid: "58367132"
 ---
 # <a name="get-educationcategory"></a>Obter educationCategory
 
@@ -20,15 +20,15 @@ Namespace: microsoft.graph
 
 Recupere um [objeto educationCategory.](../resources/educationcategory.md)
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)                                                            |
 | :------------------------------------- | :----------------------------------------------------------------------------------------------------- |
 | Delegada (conta corporativa ou de estudante)     | EduAssignments.ReadBasic, EduAssignments.ReadWriteBasic, EduAssignments.Read, EduAssignments.ReadWrite |
-| Delegado (conta pessoal da Microsoft) | Sem suporte.                                                                                         |
-| Aplicativo                            | EduAssignments.ReadBasic, EduAssignments.ReadWriteBasic, EduAssignments.Read, EduAssignments.ReadWrite |
+| Delegada (conta pessoal da Microsoft) | Sem suporte.                                                                                         |
+| Aplicativo                            | EduAssignments.ReadBasic.All, EduAssignments.ReadWriteBasic.All, EduAssignments.Read.All, EduAssignments.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
