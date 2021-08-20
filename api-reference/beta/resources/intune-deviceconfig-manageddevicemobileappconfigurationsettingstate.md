@@ -1,26 +1,26 @@
 ---
-title: tipo de recurso managedDeviceMobileAppConfigurationSettingState
-description: Estado da configuração do aplicativo móvel do dispositivo gerenciado para um determinado dispositivo.
+title: Tipo de recurso managedDeviceMobileAppConfigurationSettingState
+description: Estado de configuração de aplicativo móvel de dispositivo gerenciado para um determinado dispositivo.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d9e74a4fb9b6739d5051e37af4c15c48ede6bda1
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 630bd156f41d8abaabe66cfb54203d51d50ff127d95a2ce4794ebd0e2a6bdcaf
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49302835"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54236280"
 ---
-# <a name="manageddevicemobileappconfigurationsettingstate-resource-type"></a>tipo de recurso managedDeviceMobileAppConfigurationSettingState
+# <a name="manageddevicemobileappconfigurationsettingstate-resource-type"></a>Tipo de recurso managedDeviceMobileAppConfigurationSettingState
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Estado da configuração do aplicativo móvel do dispositivo gerenciado para um determinado dispositivo.
+Estado de configuração de aplicativo móvel de dispositivo gerenciado para um determinado dispositivo.
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
@@ -34,10 +34,10 @@ Estado da configuração do aplicativo móvel do dispositivo gerenciado para um 
 |userId|Cadeia de caracteres|UserId|
 |userName|Cadeia de caracteres|UserName|
 |userEmail|Cadeia de caracteres|UserEmail|
-|userPrincipalName|String|UserPrincipalName.|
+|userPrincipalName|Cadeia de caracteres|UserPrincipalName.|
 |fontes|Conjunto [settingSource](../resources/intune-deviceconfig-settingsource.md)|Políticas de colaboração|
 |currentValue|Cadeia de caracteres|Valor atual da configuração em um dispositivo|
-|settingInstanceId|String|SettingInstanceId|
+|settingInstanceId|Cadeia de caracteres|SettingInstanceId|
 
 ## <a name="relationships"></a>Relações
 Nenhum

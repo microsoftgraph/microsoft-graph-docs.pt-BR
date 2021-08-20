@@ -5,12 +5,12 @@ author: michaelrm97
 localization_priority: Normal
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 1b01606a7ac6d0384257436ca9d98c4c06dceeb4
-ms.sourcegitcommit: 486fe9c77d4d89c5416bb83e8c716e6918c47370
+ms.openlocfilehash: 71834c591fb0b415dd7e6b3e841afa9ea42b967472144f2ca5a77e56f3550441
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53440966"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "57275473"
 ---
 # <a name="delete-mobileappmanagementpolicy"></a>Excluir mobileAppManagementPolicy
 
@@ -23,13 +23,13 @@ Namespace: microsoft.graph
 > [!NOTE]
 > Essa operação só é suportada quando a política não é mais válida; ou seja, quando a **propriedade isValid** for false, o que indica que a entidade de serviço associada ao aplicativo para essa política foi excluída.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|Policy.ReadWrite.MobilityManagement|
+|Delegada (conta corporativa ou de estudante)|Policy.ReadWrite.MobilityManagement|
 |Delegada (conta pessoal da Microsoft) | Sem suporte.|
 |Aplicativo | Sem suporte.|
 

@@ -1,38 +1,38 @@
 ---
-title: tipo de recurso iosEduCertificateSettings
-description: Certificados de raiz confiável e PFX para iOS EDU.
+title: Tipo de recurso iosEduCertificateSettings
+description: Certificados Raiz confiável e PFX para iOS EDU.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8a4f62587c2a569896d69a4273d80eb5a92942b0
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 35e630422185164c14c86073803b752cd98ccf7f48e3608bd504a760074cf8e4
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49273603"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54248520"
 ---
-# <a name="ioseducertificatesettings-resource-type"></a>tipo de recurso iosEduCertificateSettings
+# <a name="ioseducertificatesettings-resource-type"></a>Tipo de recurso iosEduCertificateSettings
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Certificados de raiz confiável e PFX para iOS EDU.
+Certificados Raiz confiável e PFX para iOS EDU.
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|trustedRootCertificate|Binária|Certificado raiz confiável.|
-|certFileName|String|Nome do arquivo a ser exibido na interface do usuário.|
-|certificationAuthority|String|Autoridade de certificação PKCS.|
-|certificationAuthorityName|String|Nome da autoridade de certificação PKCS.|
-|certificateTemplateName|String|Nome do modelo de certificado PKCS.|
+|trustedRootCertificate|Binário|Certificado Raiz Confiável.|
+|certFileName|Cadeia de caracteres|Nome do arquivo a ser exibido na interface do usuário.|
+|certificationAuthority|Cadeia de caracteres|Autoridade de Certificação PKCS.|
+|certificationAuthorityName|Cadeia de caracteres|Nome da Autoridade de Certificação PKCS.|
+|certificateTemplateName|Cadeia de caracteres|Nome do modelo de certificado PKCS.|
 |renewalThresholdPercentage|Int32|Porcentagem de limite de renovação de certificado. Valores válidos de 1 a 99|
-|certificateValidityPeriodValue|Int32|Valor para o período de validade do certificado.|
-|certificateValidityPeriodScale|[certificateValidityPeriodScale](../resources/intune-shared-certificatevalidityperiodscale.md)|Dimensionar o período de validade do certificado. Os valores possíveis são: `days`, `months`, `years`.|
+|certificateValidityPeriodValue|Int32|Valor do Período de Validade do Certificado.|
+|certificateValidityPeriodScale|[certificateValidityPeriodScale](../resources/intune-shared-certificatevalidityperiodscale.md)|Dimensione para o Período de Validade do Certificado. Os valores possíveis são: `days`, `months`, `years`.|
 
 ## <a name="relationships"></a>Relações
 Nenhum

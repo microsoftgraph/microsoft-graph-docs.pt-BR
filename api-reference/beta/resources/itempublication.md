@@ -1,51 +1,51 @@
 ---
-title: tipo de recurso de multipúblico
-description: tipo de recurso de multipúblico
+title: tipo de recurso itemPublication
+description: tipo de recurso itemPublication
 localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: resourcePageType
-ms.openlocfilehash: 59b30c08e78db52af9e10c6aac2550dc02c11e62
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 5cdc4a741205be696e584100d1ce6900052a951354481cc0dceffb7d1e19464b
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48083999"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54248283"
 ---
-# <a name="itempublication-resource-type"></a>tipo de recurso de multipúblico
+# <a name="itempublication-resource-type"></a>tipo de recurso itemPublication
 
 Namespace: microsoft.graph
 
-Representa uma publicação ou um artigo que tenha sido associado ao [perfil](../resources/profile.md)de um usuário.
+Representa uma publicação ou artigo que foi associado ao perfil de um [usuário.](../resources/profile.md)
 
-Herda de [Myfacet](../resources/itemfacet.md).
+Herda do [itemFacet](../resources/itemfacet.md).
 
 ## <a name="methods"></a>Métodos
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
-|[Listar publicações](../api/profile-list-publications.md)|coleção de [Multipúblico](../resources/itempublication.md)|Obtenha os recursos de publicação da propriedade de navegação publicações.|
-|[Criar a multipúblico](../api/profile-post-publications.md)|[multipúblico](../resources/itempublication.md)|Criar um novo objeto dopublication.|
-|[Obter o multipúblico](../api/itempublication-get.md)|[multipúblico](../resources/itempublication.md)|Leia as propriedades e os relacionamentos de um objeto de [Ispublication](../resources/itempublication.md) .|
-|[Atualizar a multipública](../api/itempublication-update.md)|[multipúblico](../resources/itempublication.md)|Atualizar as propriedades de um objeto de [multipúblico](../resources/itempublication.md) .|
-|[Excluir a multipúblico](../api/itempublication-delete.md)|Nenhum|Exclui um objeto [Dopublication](../resources/itempublication.md) .|
+|[Listar publicações](../api/profile-list-publications.md)|[coleção itemPublication](../resources/itempublication.md)|Obter os recursos itemPublication da propriedade de navegação de publicações.|
+|[Criar itemPublication](../api/profile-post-publications.md)|[itemPublication](../resources/itempublication.md)|Crie um novo objeto itemPublication.|
+|[Obter itemPublication](../api/itempublication-get.md)|[itemPublication](../resources/itempublication.md)|Leia as propriedades e as relações de um [objeto itemPublication.](../resources/itempublication.md)|
+|[Atualizar itemPublication](../api/itempublication-update.md)|[itemPublication](../resources/itempublication.md)|Atualize as propriedades de um [objeto itemPublication.](../resources/itempublication.md)|
+|[Excluir itemPublication](../api/itempublication-delete.md)|Nenhum|Exclui um [objeto itemPublication.](../resources/itempublication.md)|
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|allowedAudiences|Cadeia de caracteres|As audiências que podem ver os valores contidos na entidade. Herdado de [MyFace](../resources/itemfacet.md). Os valores possíveis são: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
-|createdBy|[identitySet](../resources/identityset.md)|Fornece o identificador do usuário e/ou aplicativo que criou a entidade. Herdado de [MyFace](../resources/itemfacet.md).|
-|createdDateTime|DateTimeOffset|Fornece o dateTimeOffset para quando a entidade foi criada. Herdado de [MyFace](../resources/itemfacet.md).|
+|allowedAudiences|Cadeia de caracteres|As audiências que são capazes de ver os valores contidos na entidade. Herdado [do itemFacet](../resources/itemfacet.md). Os valores possíveis são: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
+|createdBy|[identitySet](../resources/identityset.md)|Fornece o identificador do usuário e/ou aplicativo que criou a entidade. Herdado [do itemFacet](../resources/itemfacet.md).|
+|createdDateTime|DateTimeOffset|Fornece a dataTimeOffset para quando a entidade foi criada. Herdado [do itemFacet](../resources/itemfacet.md).|
 |description    |Cadeia de caracteres      |Descrição da publicação.                   |
 |displayName    |Cadeia de caracteres      |Título da publicação.                         |
-|id|Cadeia de caracteres|Identificador usado para o endereçamento individual da entidade. Herdado da [entidade](../resources/entity.md)|
-|fracassa|[inferenceData](../resources/inferencedata.md)|Contém detalhes de inferência se a entidade for inferida pelo aplicativo de criação ou modificação. Herdado de [MyFace](../resources/itemfacet.md).|
-|lastModifiedBy|[identitySet](../resources/identityset.md)|Fornece o identificador do usuário e/ou aplicativo que modificou a entidade pela última vez. Herdado de [MyFace](../resources/itemfacet.md).|
-|lastModifiedDateTime|DateTimeOffset|Fornece o dateTimeOffset para quando a entidade foi criada. Herdado de [MyFace](../resources/itemfacet.md).|
+|id|Cadeia de caracteres|Identificador usado para endereçamento individual da entidade. Herdado da [entidade](../resources/entity.md)|
+|inferência|[inferenceData](../resources/inferencedata.md)|Contém detalhes de inferência se a entidade for inferida pelo aplicativo de criação ou modificação. Herdado [do itemFacet](../resources/itemfacet.md).|
+|lastModifiedBy|[identitySet](../resources/identityset.md)|Fornece o identificador do usuário e/ou aplicativo que modificou a entidade pela última vez. Herdado [do itemFacet](../resources/itemfacet.md).|
+|lastModifiedDateTime|DateTimeOffset|Fornece a dataTimeOffset para quando a entidade foi criada. Herdado [do itemFacet](../resources/itemfacet.md).|
 |publishedDate  |Data        |A data em que a publicação foi publicada.      |
 |publicador      |String      |Publicação ou editor para a publicação.     |
-|source|[personDataSource](../resources/persondatasource.md)|Onde os valores são originados se forem sincronizados a partir de outro serviço. Herdado de [MyFace](../resources/itemfacet.md).|
-|thumbnailUrl   |Cadeia de caracteres      |URL que faz referência a uma miniatura da publicação.   |
-|webUrl         |String      |URL que faz referência à publicação.                  |
+|source|[personDataSource](../resources/persondatasource.md)|Onde os valores se originaram se sincronizados de outro serviço. Herdado [do itemFacet](../resources/itemfacet.md).|
+|thumbnailUrl   |Cadeia de caracteres      |URL fazendo referência a uma miniatura da publicação.   |
+|webUrl         |String      |URL fazendo referência à publicação.                  |
 
 ## <a name="relationships"></a>Relações
 Nenhum

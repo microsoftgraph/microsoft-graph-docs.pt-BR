@@ -1,36 +1,36 @@
 ---
-title: tipo de enumeração easServices
-description: Exchange Active Sync Services.
+title: Tipo de numeração easServices
+description: Exchange Serviços de sincronização ativos.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 8bbf97eccb9e8d353b94f75867e2915550dac26e
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: ccfbff257be6c0ccd7d00f3aebe11c074044b253b4c38d9797b23dd1e9d23ade
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49199109"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54249991"
 ---
-# <a name="easservices-enum-type"></a>tipo de enumeração easServices
+# <a name="easservices-enum-type"></a>Tipo de numeração easServices
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Exchange Active Sync Services.
+Exchange Serviços de sincronização ativos.
 
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|nenhum|,0|Ainda não documentado|
-|calendars|1|Permite a sincronização de calendários.|
-|contacts|duas|Permite a sincronização de contatos.|
-|email|4 |Permite a sincronização de emails.|
-|notes|8 |Permite a sincronização de notas.|
-|lembretes|16 |Permite a sincronização de lembretes.|
+|Nenhuma|0|Ainda não documentado|
+|calendars|1 |Habilita a sincronização de calendários.|
+|contacts|2|Habilita a sincronização de contatos.|
+|email|4 |Habilita a sincronização de email.|
+|notes|8 |Habilita a sincronização de anotações.|
+|lembretes|16 |Habilita a sincronização de lembretes.|
 
 
 

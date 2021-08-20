@@ -1,22 +1,22 @@
 ---
-title: Tipo de recurso complianceManagementPartnerAssignment
+title: tipo de recurso complianceManagementPartnerAssignment
 description: Direcionamento de grupo de usuários para Parceiro de Gerenciamento de Conformidade
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: e46e4e6a5e073e3087267329880cf0f36bb79c4a
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: b9934055c42bc9489d698b3c40eea4d9587d8b37a7d05faca797724d739dc870
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50161436"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54235979"
 ---
-# <a name="compliancemanagementpartnerassignment-resource-type"></a>Tipo de recurso complianceManagementPartnerAssignment
+# <a name="compliancemanagementpartnerassignment-resource-type"></a>tipo de recurso complianceManagementPartnerAssignment
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para o uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
