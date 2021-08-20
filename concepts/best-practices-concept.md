@@ -3,12 +3,12 @@ title: Práticas recomendadas para trabalhar com o Microsoft Graph
 description: Este artigo descreve as práticas recomendadas que você pode aplicar para ajudar seus aplicativos a tirar o máximo proveito do Microsoft Graph, caso isso envolva saber mais sobre o Microsoft Graph, melhorar o desempenho do aplicativo ou tornar seu aplicativo mais confiável para os usuários finais.
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: 97e07faac83e1d25dfc133fdda7484397b51ef71b1f8e385e027579fd8209c90
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 7efac1296a8de67462aab25f348b4e53d229560b
+ms.sourcegitcommit: f645c2db38fe6354422a96b54569af53cd65b967
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54149587"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "58409085"
 ---
 # <a name="best-practices-for-working-with-microsoft-graph"></a>Práticas recomendadas para trabalhar com o Microsoft Graph
 
@@ -92,7 +92,7 @@ Adicionar membros a enumerações existentes pode interromper aplicativos que j�
 As enumeração evolutivas possuem um membro chamado _sentinela_ que `unknownFutureValue` demarca membros conhecidos que foram definidos inicialmente na enumeração, e membros desconhecidos que são acrescentados posteriormente ou que serão definidos no futuro. Internamente, os membros conhecidos são mapeados para valores numéricos que são menores que o membro sentinela, e os membros desconhecidos são maiores que o membro sentinela. A documentação de uma enumeração evolutiva lista os possíveis valores de _cadeia de caracteres_ em ordem crescente: membros conhecidos, seguidos por `unknownFutureValue`, seguidos por membros desconhecidos. Como outros tipos de enumerações, você deve _sempre_ fazer referência aos membros de enumeração evolutiva por seus valores de cadeia.de _cadeia de caracteres_.
 
 Por padrão, uma operação GET retorna apenas membros conhecidos por propriedades de tipos de enumeração evolutiva e seu aplicativo precisa lidar apenas com os membros conhecidos. Se você projetar seu aplicativo para também lidar com membros desconhecidos, poderá optar por receber esses membros usando um cabeçalho de solicitação `Prefer` HTTP:
-```
+```http
 Prefer: include-unknown-enum-members
 ```
 

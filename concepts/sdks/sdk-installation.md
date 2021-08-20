@@ -3,12 +3,12 @@ title: Instalar o Microsoft Graph SDK
 description: Fornece instruções para instalar os C#, Java, Javascript, Objective-C, PHP e Ruby Microsoft Graph SDKs.
 localization_priority: Normal
 author: MichaelMainer
-ms.openlocfilehash: 8399987c9d407f32e62700541606ccdc212f229b9e6ba17424d96668f759867d
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: ef0bcd8d5c1ec6a3af6e30b981d745cb456c01a3
+ms.sourcegitcommit: f645c2db38fe6354422a96b54569af53cd65b967
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54149510"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "58409001"
 ---
 # <a name="install-the-microsoft-graph-sdks"></a>Instalar os SDKs Graph Microsoft
 
@@ -50,7 +50,7 @@ repository {
 
 dependency {
     // Include the sdk as a dependency
-    implementation 'com.microsoft.graph:microsoft-graph:4.+'
+    implementation 'com.microsoft.graph:microsoft-graph:5.+'
     // Include Azure identity for authentication
     implementation 'com.azure:azure-identity:1.+'
 }
@@ -64,12 +64,12 @@ Adicione a dependência no `dependencies` elemento em pom.xml:
 <dependency>
     <groupId>com.microsoft.graph</groupId>
     <artifactId>microsoft-graph</artifactId>
-    <version>[4.0,)</version>
+    <version>[5.0,)</version>
 </dependency>
 <dependency>
     <groupId>com.azure</groupId>
     <artifactId>azure-identity</artifactId>
-    <version>[1.2,)</version>
+    <version>[1.3,)</version>
 </dependency>
 ```
 
