@@ -5,18 +5,16 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: ef175825e7ab6d84200fdda6caca84b8c4110d1f
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: d438723ab14cb9fd47828bbaba3b45ccbf5f7f13
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50159882"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58266797"
 ---
 # <a name="devicemanagementautopilotevent-resource-type"></a>Tipo de recurso deviceManagementAutopilotEvent
 
 Namespace: microsoft.graph
-
-> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para o uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -26,41 +24,41 @@ Representa um evento de fluxo do Autopilot.
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
 |[Listar deviceManagementAutopilotEvents](../api/intune-troubleshooting-devicemanagementautopilotevent-list.md)|[Coleção deviceManagementAutopilotEvent](../resources/intune-troubleshooting-devicemanagementautopilotevent.md)|Listar propriedades e relações dos [objetos deviceManagementAutopilotEvent.](../resources/intune-troubleshooting-devicemanagementautopilotevent.md)|
-|[Obter deviceManagementAutopilotEvent](../api/intune-troubleshooting-devicemanagementautopilotevent-get.md)|[deviceManagementAutopilotEvent](../resources/intune-troubleshooting-devicemanagementautopilotevent.md)|Leia as propriedades e as relações do [objeto deviceManagementAutopilotEvent.](../resources/intune-troubleshooting-devicemanagementautopilotevent.md)|
+|[Obter deviceManagementAutopilotEvent](../api/intune-troubleshooting-devicemanagementautopilotevent-get.md)|[deviceManagementAutopilotEvent](../resources/intune-troubleshooting-devicemanagementautopilotevent.md)|Leia propriedades e relações do [objeto deviceManagementAutopilotEvent.](../resources/intune-troubleshooting-devicemanagementautopilotevent.md)|
 |[Criar deviceManagementAutopilotEvent](../api/intune-troubleshooting-devicemanagementautopilotevent-create.md)|[deviceManagementAutopilotEvent](../resources/intune-troubleshooting-devicemanagementautopilotevent.md)|Crie um novo [objeto deviceManagementAutopilotEvent.](../resources/intune-troubleshooting-devicemanagementautopilotevent.md)|
-|[Excluir deviceManagementAutopilotEvent](../api/intune-troubleshooting-devicemanagementautopilotevent-delete.md)|Nenhum(a)|Exclui um [deviceManagementAutopilotEvent](../resources/intune-troubleshooting-devicemanagementautopilotevent.md).|
-|[Atualizar deviceManagementAutopilotEvent](../api/intune-troubleshooting-devicemanagementautopilotevent-update.md)|[deviceManagementAutopilotEvent](../resources/intune-troubleshooting-devicemanagementautopilotevent.md)|Atualizar as propriedades de um [objeto deviceManagementAutopilotEvent.](../resources/intune-troubleshooting-devicemanagementautopilotevent.md)|
+|[Excluir deviceManagementAutopilotEvent](../api/intune-troubleshooting-devicemanagementautopilotevent-delete.md)|Nenhum|Exclui um [deviceManagementAutopilotEvent](../resources/intune-troubleshooting-devicemanagementautopilotevent.md).|
+|[Atualizar deviceManagementAutopilotEvent](../api/intune-troubleshooting-devicemanagementautopilotevent-update.md)|[deviceManagementAutopilotEvent](../resources/intune-troubleshooting-devicemanagementautopilotevent.md)|Atualize as propriedades de [um objeto deviceManagementAutopilotEvent.](../resources/intune-troubleshooting-devicemanagementautopilotevent.md)|
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|O UUID do objeto.|
+|id|Cadeia de caracteres|O UUID do objeto.|
 |deviceId|Cadeia de caracteres|ID do dispositivo associada ao objeto|
 |eventDateTime|DateTimeOffset|A hora em que o evento ocorreu.|
-|deviceRegisteredDateTime|DateTimeOffset|Data de registro do dispositivo.|
+|deviceRegisteredDateTime|DateTimeOffset|Data do registro do dispositivo.|
 |enrollmentStartDateTime|DateTimeOffset|Data de início do registro do dispositivo.|
 |enrollmentType|[windowsAutopilotEnrollmentType](../resources/intune-troubleshooting-windowsautopilotenrollmenttype.md)|Tipo de registro. Os valores possíveis são: `unknown`, `azureADJoinedWithAutopilotProfile`, `offlineDomainJoined`, `azureADJoinedUsingDeviceAuthWithAutopilotProfile`, `azureADJoinedUsingDeviceAuthWithoutAutopilotProfile`, `azureADJoinedWithOfflineAutopilotProfile`, `azureADJoinedWithWhiteGlove`, `offlineDomainJoinedWithWhiteGlove`, `offlineDomainJoinedWithOfflineAutopilotProfile`.|
-|deviceSerialNumber|String|Número de série do dispositivo.|
+|deviceSerialNumber|Cadeia de caracteres|Número de série do dispositivo.|
 |managedDeviceName|String|Nome do dispositivo gerenciado.|
-|userPrincipalName|String|Nome principal do usuário usado para registrar o dispositivo.|
-|windowsAutopilotDeploymentProfileDisplayName|String|Nome do perfil do Autopilot.|
-|enrollmentState|[enrollmentState](../resources/intune-shared-enrollmentstate.md)|Estado de registro como Registro, Falha. Os possíveis valores são: `unknown`, `enrolled`, `pendingReset`, `failed`, `notContacted`, `blocked`.|
-|windows10EnrollmentCompletionPageConfigurationDisplayName|String|Nome do perfil da Página de Status do Registro|
-|windows10EnrollmentCompletionPageConfigurationId|String|ID do perfil da Página de Status do Registro|
-|deploymentState|[windowsAutopilotDeploymentState](../resources/intune-troubleshooting-windowsautopilotdeploymentstate.md)|Estado de implantação como Êxito, Falha, InProgress, SuccessWithTimeout. Os valores possíveis são: `unknown`, `success`, `inProgress`, `failure`, `successWithTimeout`, `notAttempted`, `disabled`.|
-|deviceSetupStatus|[windowsAutopilotDeploymentState](../resources/intune-troubleshooting-windowsautopilotdeploymentstate.md)|Status de implantação da fase de configuração do dispositivo da página de status do registro. Os valores possíveis são: `unknown`, `success`, `inProgress`, `failure`, `successWithTimeout`, `notAttempted`, `disabled`.|
-|accountSetupStatus|[windowsAutopilotDeploymentState](../resources/intune-troubleshooting-windowsautopilotdeploymentstate.md)|Status de implantação da fase de configuração da conta da página de status do registro. Os valores possíveis são: `unknown`, `success`, `inProgress`, `failure`, `successWithTimeout`, `notAttempted`, `disabled`.|
+|userPrincipalName|Cadeia de caracteres|Nome principal do usuário usado para registrar o dispositivo.|
+|windowsAutopilotDeploymentProfileDisplayName|Cadeia de caracteres|Nome do perfil do piloto automático.|
+|enrollmentState|[enrollmentState](../resources/intune-shared-enrollmentstate.md)|Estado de registro como Inscrito, Falha. Os possíveis valores são: `unknown`, `enrolled`, `pendingReset`, `failed`, `notContacted`, `blocked`.|
+|windows10EnrollmentCompletionPageConfigurationDisplayName|Cadeia de caracteres|Nome do perfil da Página de Status do Registro|
+|windows10EnrollmentCompletionPageConfigurationId|Cadeia de caracteres|ID do perfil da página de status de registro|
+|deploymentState|[windowsAutopilotDeploymentState](../resources/intune-troubleshooting-windowsautopilotdeploymentstate.md)|Estado de implantação como Sucesso, Falha, InProgress, SuccessWithTimeout. Os valores possíveis são: `unknown`, `success`, `inProgress`, `failure`, `successWithTimeout`, `notAttempted`, `disabled`.|
+|deviceSetupStatus|[windowsAutopilotDeploymentState](../resources/intune-troubleshooting-windowsautopilotdeploymentstate.md)|Status de implantação para a fase de configuração do dispositivo de página de status de registro. Os valores possíveis são: `unknown`, `success`, `inProgress`, `failure`, `successWithTimeout`, `notAttempted`, `disabled`.|
+|accountSetupStatus|[windowsAutopilotDeploymentState](../resources/intune-troubleshooting-windowsautopilotdeploymentstate.md)|Status de implantação para a fase de configuração da conta de página de status de registro. Os valores possíveis são: `unknown`, `success`, `inProgress`, `failure`, `successWithTimeout`, `notAttempted`, `disabled`.|
 |osVersion|String|Versão do sistema operacional do dispositivo.|
-|deploymentDuration|Duration|Duração da implantação do Autopilot, incluindo o registro.|
-|deploymentTotalDuration|Duration|Duração total da implantação do registro na tela área de trabalho.|
+|deploymentDuration|Duration|Duração da implantação do piloto automático, incluindo o registro.|
+|deploymentTotalDuration|Duration|Duração total da implantação do registro na tela da Área de Trabalho.|
 |devicePreparationDuration|Duration|Tempo gasto no registro do dispositivo.|
-|deviceSetupDuration|Duration|Tempo gasto no dispositivo ESP.|
+|deviceSetupDuration|Duration|Tempo gasto no ESP do dispositivo.|
 |accountSetupDuration|Duration|Tempo gasto no ESP do usuário.|
 |deploymentStartDateTime|DateTimeOffset|Hora de início da implantação.|
 |deploymentEndDateTime|DateTimeOffset|Hora de término da implantação.|
 |targetedAppCount|Int32|Contagem de aplicativos direcionados.|
 |targetedPolicyCount|Int32|Contagem de políticas direcionadas.|
-|enrollmentFailureDetails|String|Detalhes da falha do registro.|
+|enrollmentFailureDetails|Cadeia de caracteres|Detalhes de falha de registro.|
 
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|

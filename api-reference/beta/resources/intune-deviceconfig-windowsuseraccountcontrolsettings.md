@@ -1,34 +1,34 @@
 ---
-title: tipo de enumeração windowsUserAccountControlSettings
-description: Valores possíveis para as configurações de controle de conta de usuário do Windows.
+title: tipo de número windowsUserAccountControlSettings
+description: Valores possíveis para Windows configurações de controle de conta de usuário.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 9cfb9120b55fc2ef208f8e0d16fecde216f55d6d
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: dcbc9fb708aeec862bc9de3b070ffd4ca527171f90f9740e1356e2a1ef615035
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49272301"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54206477"
 ---
-# <a name="windowsuseraccountcontrolsettings-enum-type"></a>tipo de enumeração windowsUserAccountControlSettings
+# <a name="windowsuseraccountcontrolsettings-enum-type"></a>tipo de número windowsUserAccountControlSettings
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Valores possíveis para as configurações de controle de conta de usuário do Windows.
+Valores possíveis para Windows configurações de controle de conta de usuário.
 
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|UserDefined|,0|Definido pelo usuário, valor padrão, sem intenção.|
-|alwaysNotify|1|Sempre notificar.|
-|notifyOnAppChanges|duas|Notificar alterações no aplicativo.|
-|notifyOnAppChangesWithoutDimming|3D|Notificar as alterações do aplicativo sem DIMM de área de trabalho.|
+|userDefined|0|User Defined, default value, no intent.|
+|alwaysNotify|1 |Sempre notificar.|
+|notifyOnAppChanges|2|Notificar as alterações do aplicativo.|
+|notifyOnAppChangesWithoutDimming|3 |Notificar as alterações do aplicativo sem esmaecer a área de trabalho.|
 |neverNotify|4 |Nunca notificar.|
 
 

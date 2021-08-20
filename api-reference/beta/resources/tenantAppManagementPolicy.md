@@ -5,12 +5,12 @@ author: madansr7
 localization_priority: Normal
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: d6ba4879df1c511e723f46d9fc9687c6ed802424
-ms.sourcegitcommit: b711aed8acc18512cf6591f4108ed5ddf05b649d
+ms.openlocfilehash: e5177fe5bc69a3f083619823146c605152498d71
+ms.sourcegitcommit: 6f04ad0e0cde696661511dcdf343942b43f73fc6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53660362"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58397107"
 ---
 # <a name="tenantappmanagementpolicy-resource-type"></a>Tipo de recurso tenantAppManagementPolicy
 
@@ -59,7 +59,7 @@ Veja a seguir uma representação JSON do recurso.
 
 ```json
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#policies/tenantAppManagementPolicy",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#policies/defaultAppManagementPolicy",
   "id": "string (identifier)",
   "description": "string",
   "displayName": "string",

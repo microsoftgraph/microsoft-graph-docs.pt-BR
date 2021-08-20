@@ -1,47 +1,47 @@
 ---
-title: tipo de recurso personAnnotation
-description: tipo de recurso personAnnotation
+title: Tipo de recurso personAnnotation
+description: Tipo de recurso personAnnotation
 author: kevinbellinger
 localization_priority: Normal
 ms.prod: people
 doc_type: resourcePageType
-ms.openlocfilehash: 403df171498bcde62d113ce2a2f2a27cf3987285
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 49e7945b1ba07d7daedbd197b826148921f2f0227dd71b5780413a3b67b6c6be
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47997967"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54197846"
 ---
-# <a name="personannotation-resource-type"></a>tipo de recurso personAnnotation
+# <a name="personannotation-resource-type"></a>Tipo de recurso personAnnotation
 
 Namespace: microsoft.graph
 
-Fornece informações sobre as anotações que o usuário já associou em vários serviços e compartilhou com outras pessoas.
+Fornece informações em notas que o usuário se associou a si mesmo em vários serviços e compartilhou com outras pessoas.
 
-Herda de [Myfacet](../resources/itemfacet.md).
+Herda do [itemFacet](../resources/itemfacet.md).
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
-|[Listar anotações](../api/profile-list-notes.md)|coleção [personAnnotation](../resources/personannotation.md)|Obtenha os recursos personAnnotation da propriedade de navegação Notes.|
-|[Criar personAnnotation](../api/profile-post-notes.md)|[personAnnotation](../resources/personannotation.md)|Criar um novo objeto personAnnotation.|
-|[Obter personAnnotation](../api/personannotation-get.md)|[personAnnotation](../resources/personannotation.md)|Leia as propriedades e os relacionamentos de um objeto [personAnnotation](../resources/personannotation.md) .|
-|[Atualizar personAnnotation](../api/personannotation-update.md)|[personAnnotation](../resources/personannotation.md)|Atualiza as propriedades de um objeto [personAnnotation](../resources/personannotation.md) .|
-|[Excluir personAnnotation](../api/personannotation-delete.md)|Nenhum|Exclui um objeto [personAnnotation](../resources/personannotation.md) .|
+|[Listar anotações](../api/profile-list-notes.md)|[Coleção personAnnotation](../resources/personannotation.md)|Obter os recursos personAnnotation da propriedade de navegação notes.|
+|[Criar personAnnotation](../api/profile-post-notes.md)|[personAnnotation](../resources/personannotation.md)|Crie um novo objeto personAnnotation.|
+|[Obter personAnnotation](../api/personannotation-get.md)|[personAnnotation](../resources/personannotation.md)|Leia as propriedades e as relações de um [objeto personAnnotation.](../resources/personannotation.md)|
+|[Atualizar personAnnotation](../api/personannotation-update.md)|[personAnnotation](../resources/personannotation.md)|Atualize as propriedades de [um objeto personAnnotation.](../resources/personannotation.md)|
+|[Excluir personAnnotation](../api/personannotation-delete.md)|Nenhum|Exclui um [objeto personAnnotation.](../resources/personannotation.md)|
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|allowedAudiences|String|As audiências que podem ver os valores contidos na entidade. Herdado de [MyFace](../resources/itemfacet.md). Os valores possíveis são: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
-|createdBy|[identitySet](../resources/identityset.md)|Fornece o identificador do usuário e/ou aplicativo que criou a entidade. Herdado de [MyFace](../resources/itemfacet.md).|
-|createdDateTime|DateTimeOffset|Fornece o dateTimeOffset para quando a entidade foi criada. Herdado de [MyFace](../resources/itemfacet.md).|
-|detalhada|[itemBody](../resources/itembody.md)|Contém os detalhes da anotação propriamente dita.|
-|displayName|String|Contém um nome amigável para a anotação.|
-|id|String|Identificador usado para o endereçamento individual da entidade. Herdado da [entidade](../resources/entity.md)|
-|fracassa|[inferenceData](../resources/inferencedata.md)|Contém detalhes de inferência se a entidade for inferida pelo aplicativo de criação ou modificação. Herdado de [MyFace](../resources/itemfacet.md).|
-|lastModifiedBy|[identitySet](../resources/identityset.md)|Fornece o identificador do usuário e/ou aplicativo que modificou a entidade pela última vez. Herdado de [MyFace](../resources/itemfacet.md).|
-|lastModifiedDateTime|DateTimeOffset|Fornece o dateTimeOffset para quando a entidade foi criada. Herdado de [MyFace](../resources/itemfacet.md).|
-|source|[personDataSource](../resources/persondatasource.md)|Onde os valores são originados se forem sincronizados a partir de outro serviço. Herdado de [MyFace](../resources/itemfacet.md).|
+|allowedAudiences|Cadeia de caracteres|As audiências que são capazes de ver os valores contidos na entidade. Herdado [do itemFacet](../resources/itemfacet.md). Os valores possíveis são: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
+|createdBy|[identitySet](../resources/identityset.md)|Fornece o identificador do usuário e/ou aplicativo que criou a entidade. Herdado [do itemFacet](../resources/itemfacet.md).|
+|createdDateTime|DateTimeOffset|Fornece a dataTimeOffset para quando a entidade foi criada. Herdado [do itemFacet](../resources/itemfacet.md).|
+|detail|[itemBody](../resources/itembody.md)|Contém os detalhes da própria nota.|
+|displayName|Cadeia de caracteres|Contém um nome amigável para a nota.|
+|id|Cadeia de caracteres|Identificador usado para endereçamento individual da entidade. Herdado da [entidade](../resources/entity.md)|
+|inferência|[inferenceData](../resources/inferencedata.md)|Contém detalhes de inferência se a entidade for inferida pelo aplicativo de criação ou modificação. Herdado [do itemFacet](../resources/itemfacet.md).|
+|lastModifiedBy|[identitySet](../resources/identityset.md)|Fornece o identificador do usuário e/ou aplicativo que modificou a entidade pela última vez. Herdado [do itemFacet](../resources/itemfacet.md).|
+|lastModifiedDateTime|DateTimeOffset|Fornece a dataTimeOffset para quando a entidade foi criada. Herdado [do itemFacet](../resources/itemfacet.md).|
+|source|[personDataSource](../resources/persondatasource.md)|Onde os valores se originaram se sincronizados de outro serviço. Herdado [do itemFacet](../resources/itemfacet.md).|
 
 ## <a name="relationships"></a>Relações
 Nenhum

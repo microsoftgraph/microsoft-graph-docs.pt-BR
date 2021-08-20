@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 540ba41779e64c57b5c74c7acf004172a1567c37
-ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
+ms.openlocfilehash: 34dcbb381b9271222f52fdbf3b042d318e58e80fbf460075999397246c402027
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "52665571"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54236084"
 ---
 # <a name="windowsmanagementapp-resource-type"></a>Tipo de recurso windowsManagementApp
 
@@ -27,15 +27,15 @@ Windows de aplicativo de gerenciamento.
 |:---|:---|:---|
 |[Obter windowsManagementApp](../api/intune-devices-windowsmanagementapp-get.md)|[windowsManagementApp](../resources/intune-devices-windowsmanagementapp.md)|Leia propriedades e relações do [objeto windowsManagementApp.](../resources/intune-devices-windowsmanagementapp.md)|
 |[Atualizar windowsManagementApp](../api/intune-devices-windowsmanagementapp-update.md)|[windowsManagementApp](../resources/intune-devices-windowsmanagementapp.md)|Atualize as propriedades de um [objeto windowsManagementApp.](../resources/intune-devices-windowsmanagementapp.md)|
-|[ação setAsManagedInstaller](../api/intune-devices-windowsmanagementapp-setasmanagedinstaller.md)|Nenhuma|Definir o status do Instalador Gerenciado para o locatário do chamador|
+|[ação setAsManagedInstaller](../api/intune-devices-windowsmanagementapp-setasmanagedinstaller.md)|Nenhum|Definir o status do Instalador Gerenciado para o locatário do chamador|
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Identificador exclusivo do aplicativo Windows de gerenciamento|
-|availableVersion|String|Windows versão disponível do aplicativo de gerenciamento.|
+|id|Cadeia de caracteres|Identificador exclusivo do aplicativo Windows de gerenciamento|
+|availableVersion|Cadeia de caracteres|Windows versão disponível do aplicativo de gerenciamento.|
 |managedInstaller|[managedInstallerStatus](../resources/intune-devices-managedinstallerstatus.md)|Status do Instalador Gerenciado. Os valores possíveis são: `disabled` e `enabled`.|
-|managedInstallerConfiguredDateTime|String|Data configurada do Instalador Gerenciado|
+|managedInstallerConfiguredDateTime|Cadeia de caracteres|Data configurada do Instalador Gerenciado|
 
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|

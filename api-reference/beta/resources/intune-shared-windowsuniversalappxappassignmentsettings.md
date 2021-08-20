@@ -1,26 +1,26 @@
 ---
-title: tipo de recurso windowsUniversalAppXAppAssignmentSettings
-description: Contém propriedades usadas ao atribuir um aplicativo móvel do Windows universal AppX a um grupo.
+title: Tipo de recurso windowsUniversalAppXAppAssignmentSettings
+description: Contém propriedades usadas ao atribuir Windows aplicativo móvel Universal AppX a um grupo.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 693b26142f83bf11d4f10f1da81fcf37cc69f8ed
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 6f9ab1297eb00aabe2c703ed4415acb4b0ed35274dab18ce71f07465816dc507
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49271615"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54160867"
 ---
-# <a name="windowsuniversalappxappassignmentsettings-resource-type"></a>tipo de recurso windowsUniversalAppXAppAssignmentSettings
+# <a name="windowsuniversalappxappassignmentsettings-resource-type"></a>Tipo de recurso windowsUniversalAppXAppAssignmentSettings
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Contém propriedades usadas ao atribuir um aplicativo móvel do Windows universal AppX a um grupo.
+Contém propriedades usadas ao atribuir Windows aplicativo móvel Universal AppX a um grupo.
 
 
 Herda de [mobileAppAssignmentSettings](../resources/intune-shared-mobileappassignmentsettings.md)
@@ -28,7 +28,7 @@ Herda de [mobileAppAssignmentSettings](../resources/intune-shared-mobileappassig
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|useDeviceContext|Booliano|Se o contexto de execução de dispositivo deve ou não ser usado para o aplicativo móvel do Windows universal AppX.|
+|useDeviceContext|Booliano|Se deve ou não usar o contexto de execução de dispositivos Windows aplicativo móvel Universal AppX.|
 
 ## <a name="relationships"></a>Relações
 Nenhum

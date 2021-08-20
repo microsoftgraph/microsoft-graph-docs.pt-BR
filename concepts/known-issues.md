@@ -3,12 +3,12 @@ title: Problemas conhecidos com o Microsoft Graph
 description: Este artigo descreve os problemas conhecidos com o Microsoft Graph.
 author: MSGraphDocsVTeam
 localization_priority: Priority
-ms.openlocfilehash: 925baa0705d7747136f6dc1b60a9c34c72b59d7d
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: e6ef743a04d7b3edce53ef1a13d59b7f090c0c05
+ms.sourcegitcommit: 6f04ad0e0cde696661511dcdf343942b43f73fc6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58248132"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58397072"
 ---
 # <a name="known-issues-with-microsoft-graph"></a>Problemas conhecidos com o Microsoft Graph
 
@@ -260,6 +260,10 @@ Atualmente, há um problema que impede a configuração da propriedade **allowEx
 ### <a name="using-delta-query"></a>Uso da consulta delta
 
 Para saber mais sobre problemas conhecidos com o uso da consulta delta, veja a [seção da consulta delta](#delta-query) deste artigo.
+
+### <a name="removing-a-group-owner-also-removes-the-user-as-a-group-member"></a>Remover um proprietário de grupo também remove o usuário como um membro do grupo
+
+Quando [DELETE /groups/{id}/owners](/graph/api/group-delete-owners.md) é chamado para um grupo que está associado a uma [equipe](/graph/api/resources/team.md), o usuário também é removido da lista /groups/{id}/members. Para contornar isso, remova o usuário tanto dos proprietários quanto dos membros, espere 10 segundos e o adicione de volta aos membros.
 
 ## <a name="identity-and-access--application-and-service-principal-apis"></a>Identidade e acesso | APIs da entidade de serviço e aplicativo
 

@@ -1,43 +1,43 @@
 ---
 title: tipo de recurso vulnerableManagedDevice
-description: Esta entidade representa um dispositivo associado a uma tarefa.
+description: Essa entidade representa um dispositivo associado a uma tarefa.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0a78b2768ad0d58a4d32f01f348616a2d4afeb0b
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: a1f37b36b6912033dd3eb086287d5d0ab1f58cf35ed89bab97b5581e10143069
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49259379"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54239130"
 ---
 # <a name="vulnerablemanageddevice-resource-type"></a>tipo de recurso vulnerableManagedDevice
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Esta entidade representa um dispositivo associado a uma tarefa.
+Essa entidade representa um dispositivo associado a uma tarefa.
 
 ## <a name="methods"></a>Métodos
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
-|[Listar vulnerableManagedDevices](../api/intune-partnerintegration-vulnerablemanageddevice-list.md)|coleção [vulnerableManagedDevice](../resources/intune-partnerintegration-vulnerablemanageddevice.md)|Listar Propriedades e relações dos objetos [vulnerableManagedDevice](../resources/intune-partnerintegration-vulnerablemanageddevice.md) .|
-|[Obter vulnerableManagedDevice](../api/intune-partnerintegration-vulnerablemanageddevice-get.md)|[vulnerableManagedDevice](../resources/intune-partnerintegration-vulnerablemanageddevice.md)|Leia as propriedades e as relações do objeto [vulnerableManagedDevice](../resources/intune-partnerintegration-vulnerablemanageddevice.md) .|
-|[Criar vulnerableManagedDevice](../api/intune-partnerintegration-vulnerablemanageddevice-create.md)|[vulnerableManagedDevice](../resources/intune-partnerintegration-vulnerablemanageddevice.md)|Criar um novo objeto [vulnerableManagedDevice](../resources/intune-partnerintegration-vulnerablemanageddevice.md) .|
-|[Excluir vulnerableManagedDevice](../api/intune-partnerintegration-vulnerablemanageddevice-delete.md)|Nenhum|Exclui [vulnerableManagedDevice](../resources/intune-partnerintegration-vulnerablemanageddevice.md).|
-|[Atualizar vulnerableManagedDevice](../api/intune-partnerintegration-vulnerablemanageddevice-update.md)|[vulnerableManagedDevice](../resources/intune-partnerintegration-vulnerablemanageddevice.md)|Atualiza as propriedades de um objeto [vulnerableManagedDevice](../resources/intune-partnerintegration-vulnerablemanageddevice.md) .|
+|[Listar vulnerableManagedDevices](../api/intune-partnerintegration-vulnerablemanageddevice-list.md)|[coleção vulnerableManagedDevice](../resources/intune-partnerintegration-vulnerablemanageddevice.md)|Listar propriedades e relações dos [objetos vulnerableManagedDevice.](../resources/intune-partnerintegration-vulnerablemanageddevice.md)|
+|[Obter vulnerableManagedDevice](../api/intune-partnerintegration-vulnerablemanageddevice-get.md)|[vulnerableManagedDevice](../resources/intune-partnerintegration-vulnerablemanageddevice.md)|Leia propriedades e relações do [objeto vulnerableManagedDevice.](../resources/intune-partnerintegration-vulnerablemanageddevice.md)|
+|[Criar vulnerableManagedDevice](../api/intune-partnerintegration-vulnerablemanageddevice-create.md)|[vulnerableManagedDevice](../resources/intune-partnerintegration-vulnerablemanageddevice.md)|Crie um novo [objeto vulnerableManagedDevice.](../resources/intune-partnerintegration-vulnerablemanageddevice.md)|
+|[Excluir vulnerableManagedDevice](../api/intune-partnerintegration-vulnerablemanageddevice-delete.md)|Nenhum|Exclui um [vulnerableManagedDevice](../resources/intune-partnerintegration-vulnerablemanageddevice.md).|
+|[Atualizar vulnerableManagedDevice](../api/intune-partnerintegration-vulnerablemanageddevice-update.md)|[vulnerableManagedDevice](../resources/intune-partnerintegration-vulnerablemanageddevice.md)|Atualize as propriedades de [um objeto vulnerableManagedDevice.](../resources/intune-partnerintegration-vulnerablemanageddevice.md)|
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|A chave da entidade e a ID do dispositivo AAD.|
-|managedDeviceId|String|A ID do dispositivo gerenciado do Intune.|
-|displayName|String|O nome do dispositivo.|
-|lastSyncDateTime|DateTimeOffset|A data da última sincronização.|
+|id|Cadeia de caracteres|A chave de entidade e a ID do dispositivo AAD.|
+|managedDeviceId|Cadeia de caracteres|A ID do dispositivo gerenciado do Intune.|
+|displayName|Cadeia de caracteres|O nome do dispositivo.|
+|lastSyncDateTime|DateTimeOffset|A última data de sincronização.|
 
 ## <a name="relationships"></a>Relações
 Nenhum

@@ -1,26 +1,26 @@
 ---
 title: Tipo de recurso macOsLobAppAssignmentSettings
-description: Contém propriedades usadas para atribuir um aplicativo LOB do Mac a um grupo.
+description: Contém propriedades usadas para atribuir um aplicativo MAC LOB a um grupo.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3e00019e2ed7609aa02fc3f16b2076027617fcab
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: 7aa7b0ae1131a772313b8bdb06aebfc13479fc5a1a269891d0c429b75520d50a
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50160299"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54209802"
 ---
 # <a name="macoslobappassignmentsettings-resource-type"></a>Tipo de recurso macOsLobAppAssignmentSettings
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para o uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Contém propriedades usadas para atribuir um aplicativo LOB do Mac a um grupo.
+Contém propriedades usadas para atribuir um aplicativo MAC LOB a um grupo.
 
 
 Herda de [mobileAppAssignmentSettings](../resources/intune-shared-mobileappassignmentsettings.md)
@@ -28,7 +28,7 @@ Herda de [mobileAppAssignmentSettings](../resources/intune-shared-mobileappassig
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|uninstallOnDeviceRemoval|Boolean|Se o aplicativo será ou não desinstalado quando o dispositivo for removido do Intune.|
+|uninstallOnDeviceRemoval|Boolean|Se deve ou não desinstalar o aplicativo quando o dispositivo for removido do Intune.|
 
 ## <a name="relationships"></a>Relações
 Nenhum

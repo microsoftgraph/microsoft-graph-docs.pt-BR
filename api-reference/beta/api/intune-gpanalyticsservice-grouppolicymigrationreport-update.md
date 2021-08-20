@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 74eb28e0f4d0fed12399e1563661e25a1a2c92c1
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: 264922edced98e5f95959a69ed4948f557b99a1e7ada7c9fb3ca450b29ac9e29
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51159008"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54207842"
 ---
 # <a name="update-grouppolicymigrationreport"></a>Atualizar groupPolicyMigrationReport
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -62,10 +62,10 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [o group
 |groupPolicyCreatedDateTime|DateTimeOffset|A data e a hora em que o GroupPolicyMigrationReport foi criado.|
 |groupPolicyLastModifiedDateTime|DateTimeOffset|A data e a hora em que GroupPolicyMigrationReport foi modificada pela última vez.|
 |migrationReadiness|[groupPolicyMigrationReadiness](../resources/intune-gpanalyticsservice-grouppolicymigrationreadiness.md)|A cobertura do Intune para o arquivo de Objeto de Política de Grupo associado. Os valores possíveis são: `none`, `partial`, `complete`, `error`, `notApplicable`.|
-|targetedInActiveDirectory|Booleano|A propriedade Targeted in AD do Conteúdo XML do GPO|
-|totalSettingsCount|Int32|O número total de Configurações de Política de Grupo do arquivo GPO.|
-|supportedSettingsCount|Int32|O número de Configurações de Política de Grupo com suporte do Intune.|
-|supportedSettingsPercent|Int32|O Percentual de Configurações de Política de Grupo com suporte do Intune.|
+|targetedInActiveDirectory|Boolean|A propriedade Targeted in AD do Conteúdo XML do GPO|
+|totalSettingsCount|Int32|O número total de políticas de grupo Configurações do arquivo GPO.|
+|supportedSettingsCount|Int32|O número de políticas de grupo Configurações com suporte do Intune.|
+|supportedSettingsPercent|Int32|O Percentual de políticas de grupo Configurações com suporte do Intune.|
 
 
 

@@ -1,45 +1,45 @@
 ---
-title: tipo de recurso securityBaselineDeviceState
-description: O resumo do estado de conformidade da linha de base de segurança da linha de base de segurança para um dispositivo.
+title: Tipo de recurso securityBaselineDeviceState
+description: O resumo do estado de conformidade da linha de base de segurança de um dispositivo.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9188446a5c270b7dc25e21b9880ecec479dfa90f
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: da4dcad2cd0f8956f43e4322b166495576432d751324b642e867c06df1cb76a4
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49209329"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54224674"
 ---
-# <a name="securitybaselinedevicestate-resource-type"></a>tipo de recurso securityBaselineDeviceState
+# <a name="securitybaselinedevicestate-resource-type"></a>Tipo de recurso securityBaselineDeviceState
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-O resumo do estado de conformidade da linha de base de segurança da linha de base de segurança para um dispositivo.
+O resumo do estado de conformidade da linha de base de segurança de um dispositivo.
 
 ## <a name="methods"></a>Métodos
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
-|[Listar securityBaselineDeviceStates](../api/intune-deviceintent-securitybaselinedevicestate-list.md)|coleção [securityBaselineDeviceState](../resources/intune-deviceintent-securitybaselinedevicestate.md)|Listar Propriedades e relações dos objetos [securityBaselineDeviceState](../resources/intune-deviceintent-securitybaselinedevicestate.md) .|
-|[Obter securityBaselineDeviceState](../api/intune-deviceintent-securitybaselinedevicestate-get.md)|[securityBaselineDeviceState](../resources/intune-deviceintent-securitybaselinedevicestate.md)|Leia as propriedades e as relações do objeto [securityBaselineDeviceState](../resources/intune-deviceintent-securitybaselinedevicestate.md) .|
-|[Criar securityBaselineDeviceState](../api/intune-deviceintent-securitybaselinedevicestate-create.md)|[securityBaselineDeviceState](../resources/intune-deviceintent-securitybaselinedevicestate.md)|Criar um novo objeto [securityBaselineDeviceState](../resources/intune-deviceintent-securitybaselinedevicestate.md) .|
-|[Excluir securityBaselineDeviceState](../api/intune-deviceintent-securitybaselinedevicestate-delete.md)|Nenhum|Exclui [securityBaselineDeviceState](../resources/intune-deviceintent-securitybaselinedevicestate.md).|
-|[Atualizar securityBaselineDeviceState](../api/intune-deviceintent-securitybaselinedevicestate-update.md)|[securityBaselineDeviceState](../resources/intune-deviceintent-securitybaselinedevicestate.md)|Atualiza as propriedades de um objeto [securityBaselineDeviceState](../resources/intune-deviceintent-securitybaselinedevicestate.md) .|
+|[Listar securityBaselineDeviceStates](../api/intune-deviceintent-securitybaselinedevicestate-list.md)|[coleção securityBaselineDeviceState](../resources/intune-deviceintent-securitybaselinedevicestate.md)|Listar propriedades e relações dos [objetos securityBaselineDeviceState.](../resources/intune-deviceintent-securitybaselinedevicestate.md)|
+|[Obter securityBaselineDeviceState](../api/intune-deviceintent-securitybaselinedevicestate-get.md)|[securityBaselineDeviceState](../resources/intune-deviceintent-securitybaselinedevicestate.md)|Leia propriedades e relações do [objeto securityBaselineDeviceState.](../resources/intune-deviceintent-securitybaselinedevicestate.md)|
+|[Criar securityBaselineDeviceState](../api/intune-deviceintent-securitybaselinedevicestate-create.md)|[securityBaselineDeviceState](../resources/intune-deviceintent-securitybaselinedevicestate.md)|Crie um novo [objeto securityBaselineDeviceState.](../resources/intune-deviceintent-securitybaselinedevicestate.md)|
+|[Excluir securityBaselineDeviceState](../api/intune-deviceintent-securitybaselinedevicestate-delete.md)|Nenhum|Exclui um [securityBaselineDeviceState](../resources/intune-deviceintent-securitybaselinedevicestate.md).|
+|[Atualizar securityBaselineDeviceState](../api/intune-deviceintent-securitybaselinedevicestate-update.md)|[securityBaselineDeviceState](../resources/intune-deviceintent-securitybaselinedevicestate.md)|Atualize as propriedades de [um objeto securityBaselineDeviceState.](../resources/intune-deviceintent-securitybaselinedevicestate.md)|
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Identificador exclusivo da entidade|
-|managedDeviceId|String|ID de dispositivo do Intune|
+|id|Cadeia de caracteres|Identificador exclusivo da entidade|
+|managedDeviceId|Cadeia de caracteres|ID de dispositivo do Intune|
 |deviceDisplayName|Cadeia de caracteres|Nome de exibição do dispositivo|
-|userPrincipalName|String|Nome UPN|
+|userPrincipalName|Cadeia de caracteres|Nome UPN|
 |state|[securityBaselineComplianceState](../resources/intune-deviceintent-securitybaselinecompliancestate.md)|Estado de conformidade da linha de base de segurança. Os possíveis valores são: `unknown`, `secure`, `notApplicable`, `notSecure`, `error`, `conflict`.|
-|lastReportedDateTime|DateTimeOffset|Data e hora da última modificação do relatório de política|
+|lastReportedDateTime|DateTimeOffset|Data da última modificação do relatório de política|
 
 ## <a name="relationships"></a>Relações
 Nenhum

@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ed85268897942ba953ccdd5240d120829f6ea400
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: d3cf859cb165ce342c35948aabe7756a3ff96c24
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51154361"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58265057"
 ---
 # <a name="update-devicelogcollectionresponse"></a>Atualizar deviceLogCollectionResponse
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -27,9 +27,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All|
+|Delegada (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 |Delegada (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementManagedDevices.ReadWrite.All|
+|Aplicativo|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -61,7 +61,7 @@ A tabela a seguir mostra as propriedades necessárias ao criar [deviceLogCollect
 |receivedDateTimeUTC|DateTimeOffset|DateTime a solicitação foi recebida|
 |initiatedByUserPrincipalName|Cadeia de caracteres|O UPN para quem iniciou a solicitação|
 |expirationDateTimeUTC|DateTimeOffset|DateTime da expiração dos logs|
-|size|Duplo|O tamanho dos logs. Valores válidos -1,79769313486232E+308 a 1.79769313486232E+308|
+|tamanho|Duplo|O tamanho dos logs. Valores válidos -1,79769313486232E+308 a 1.79769313486232E+308|
 
 
 

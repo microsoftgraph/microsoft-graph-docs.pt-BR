@@ -1,32 +1,32 @@
 ---
-title: tipo de enumeração certificateStore
-description: Tipos CertificateStore
+title: Tipo de numeração certificateStore
+description: Tipos certificateStore
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: e9388cfd76471229e9432ce065fc679a3c08334b
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 8267dba8714e8c262043b357b24aed6bead236bc718134682b1ed9a057a6b369
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49301376"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54217089"
 ---
-# <a name="certificatestore-enum-type"></a>tipo de enumeração certificateStore
+# <a name="certificatestore-enum-type"></a>Tipo de numeração certificateStore
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Tipos CertificateStore
+Tipos certificateStore
 
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|usuário|1|Ainda não documentado|
-|máquina|duas|Ainda não documentado|
+|usuário|1 |Ainda não documentado|
+|machine|2|Ainda não documentado|
 
 
 

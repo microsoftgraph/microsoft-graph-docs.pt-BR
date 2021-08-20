@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 50d99bd3f8c00e7c3fe1e4079447243248d93776
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: c1aa4a35387729ea70178667310d10980c956cd4d5e06271a06f4e5d0e196b5a
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51155831"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54208269"
 ---
 # <a name="create-carttoclassassociation"></a>Criar cartToClassAssociation
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -58,9 +58,9 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar o cartTo
 |lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto.|
 |versão|Int32|Versão do CartToClassAssociation.|
 |displayName|Cadeia de caracteres|O administrador forneceu o nome da Configuração do dispositivo.|
-|descrição|Cadeia de caracteres|O administrador forneceu a descrição do CartToClassAssociation.|
-|deviceCartIds|Coleção de cadeias de caracteres|Identificadores de carrinhos de dispositivo a serem associados a classes.|
-|classroomIds|Coleção de cadeias de caracteres|Identificadores de salas de aula a serem associadas a carrinhos de dispositivo.|
+|description|Cadeia de caracteres|O administrador forneceu a descrição do CartToClassAssociation.|
+|deviceCartIds|String collection|Identificadores de carrinhos de dispositivo a serem associados a classes.|
+|classroomIds|String collection|Identificadores de salas de aula a serem associadas a carrinhos de dispositivo.|
 
 
 
