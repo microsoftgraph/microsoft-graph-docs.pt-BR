@@ -1,36 +1,36 @@
 ---
-title: tipo de recurso deviceConfigurationTargetedUserAndDevice
-description: Resumo de conflito para um conjunto de políticas de configuração de dispositivo.
+title: Tipo de recurso deviceConfigurationTargetedUserAndDevice
+description: Resumo de conflitos para um conjunto de políticas de configuração de dispositivo.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: c722cf1a21e46ec6066efc1e836793d77ce8e8b7
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 671cbd9e5c6cf9448b86f8ce3f1bd852b794ca492e55b9c0edcbde8a01e0a3c0
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49199389"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54227474"
 ---
-# <a name="deviceconfigurationtargeteduseranddevice-resource-type"></a>tipo de recurso deviceConfigurationTargetedUserAndDevice
+# <a name="deviceconfigurationtargeteduseranddevice-resource-type"></a>Tipo de recurso deviceConfigurationTargetedUserAndDevice
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Resumo de conflito para um conjunto de políticas de configuração de dispositivo.
+Resumo de conflitos para um conjunto de políticas de configuração de dispositivo.
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|deviceId|Cadeia de caracteres|A ID do dispositivo no check-in.|
+|deviceId|Cadeia de caracteres|A id do dispositivo na verificação.|
 |deviceName|String|O nome do dispositivo no check-in.|
-|userId|Cadeia de caracteres|A ID do usuário no check-in.|
-|userDisplayName|Cadeia de caracteres|O nome de exibição do usuário no check-in|
-|userPrincipalName|String|O UPN do usuário no check-in.|
-|lastCheckinDateTime|DateTimeOffset|Horário da última verificação para este par de usuários/dispositivos.|
+|userId|Cadeia de caracteres|A id do usuário no check-in.|
+|userDisplayName|Cadeia de caracteres|O nome de exibição do usuário na verificação|
+|userPrincipalName|Cadeia de caracteres|O UPN do usuário no check-in.|
+|lastCheckinDateTime|DateTimeOffset|Última verificação em tempo para esse par de usuários/dispositivos.|
 
 ## <a name="relationships"></a>Relações
 Nenhum
