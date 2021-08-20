@@ -5,12 +5,12 @@ localization_priority: Normal
 author: Nickgmicrosoft
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 2305c7dfde39d742ce1694c030f395f59f6fb7bb
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 1b20d580ac7f5e273e66b1fdd152e7e607907b4df91276e8e76a5da697f9085c
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50443283"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54166012"
 ---
 # <a name="update-or-create-trustframeworkpolicy"></a>Atualizar ou criar trustFrameworkPolicy
 
@@ -26,8 +26,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante)|Policy.ReadWrite.TrustFramework|
-|Delegado (conta pessoal da Microsoft)| Sem suporte.|
+|Delegada (conta corporativa ou de estudante)|Policy.ReadWrite.TrustFramework|
+|Delegada (conta pessoal da Microsoft)| Sem suporte.|
 |Aplicativo|Policy.ReadWrite.TrustFramework|
 
 A conta corporativa ou de estudante deve ser um administrador global do locatário.

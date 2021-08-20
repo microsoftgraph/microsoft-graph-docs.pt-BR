@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3c0a391ee52a84b49e105e90eff57510b8ae1010
-ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
+ms.openlocfilehash: 61bf5ef7d6f6242d1e859d309a96ec6c888d715fdd8483a76203efc0f91d1913
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "52666879"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54242647"
 ---
 # <a name="activatedeviceesimactionresult-resource-type"></a>Tipo de recurso activateDeviceEsimActionResult
 
@@ -32,10 +32,10 @@ Herda de [deviceActionResult](../resources/intune-devices-deviceactionresult.md)
 |actionState|[actionState](../resources/intune-shared-actionstate.md)|Estado da ação Herdado de [deviceActionResult](../resources/intune-devices-deviceactionresult.md). Os valores possíveis são: `none`, `pending`, `canceled`, `active`, `done`, `failed`, `notSupported`.|
 |startDateTime|DateTimeOffset|Hora de início da ação Herdada de [deviceActionResult](../resources/intune-devices-deviceactionresult.md)|
 |lastUpdatedDateTime|DateTimeOffset|Hora da última atualização do estado da ação Herdada de [deviceActionResult](../resources/intune-devices-deviceactionresult.md)|
-|carrierUrl|String|Url da operadora para ativar o eSIM do dispositivo |
+|carrierUrl|Cadeia de caracteres|Url da operadora para ativar o eSIM do dispositivo |
 
 ## <a name="relationships"></a>Relações
-Nenhuma
+Nenhum
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.

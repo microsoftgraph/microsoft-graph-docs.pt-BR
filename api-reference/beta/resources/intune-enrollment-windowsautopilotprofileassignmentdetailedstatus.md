@@ -1,22 +1,22 @@
 ---
-title: tipo de enumeração windowsAutopilotProfileAssignmentDetailedStatus
+title: tipo de número windowsAutopilotProfileAssignmentDetailedStatus
 description: Ainda não documentado
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 7902904e20dd16f6c6b8adebe633934814ca8ca1
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: d671239505b431123da2b67f01b06f244f81866d4594a0bbaedde34391554109
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49256124"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54139394"
 ---
-# <a name="windowsautopilotprofileassignmentdetailedstatus-enum-type"></a>tipo de enumeração windowsAutopilotProfileAssignmentDetailedStatus
+# <a name="windowsautopilotprofileassignmentdetailedstatus-enum-type"></a>tipo de número windowsAutopilotProfileAssignmentDetailedStatus
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -25,11 +25,11 @@ Ainda não documentado
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|nenhum|,0|Nenhum status detalhado de atribuição|
-|hardwareRequirementsNotMet|1|Os requisitos de hardware não são atendidos. Isso pode acontecer se um perfil autoimplantar do autoautoria for atribuído a um dispositivo sem o TPM 2,0.|
-|surfaceHubProfileNotSupported|duas|Isso pode acontecer quando um perfil do AutoPilot do SurfaceHub é atribuído a um dispositivo que não é SurfaceHub.|
-|holoLensProfileNotSupported|3D|Isso pode acontecer quando um perfil do AutoPilot do HoloLens é atribuído a um dispositivo que não é HoloLens.|
-|windowsPcProfileNotSupported|4 |Isso pode acontecer quando um perfil do AutoPilot do WindowsPc é atribuído a um dispositivo que não é WindowsPc.|
+|Nenhuma|0|Nenhum status detalhado de atribuição|
+|hardwareRequirementsNotMet|1 |Os requisitos de hardware não são atendidos. Isso pode acontecer se um Perfil autopiloto de implantação for atribuído a um dispositivo sem TPM 2.0.|
+|surfaceHubProfileNotSupported|2|Isso pode acontecer se um Perfil do SurfaceHub AutoPilot for atribuído a um dispositivo que não seja o SurfaceHub.|
+|holoLensProfileNotSupported|3 |Isso pode acontecer se um perfil HoloLens AutoPilot for atribuído a um dispositivo que não seja HoloLens.|
+|windowsPcProfileNotSupported|4 |Isso pode acontecer se um Perfil do WindowsPc AutoPilot for atribuído a um dispositivo que não seja WindowsPc.|
 
 
 

@@ -1,32 +1,32 @@
 ---
-title: tipo de recurso networkInterface
-description: Representa uma placa de interface de rede (NIC) associada a esse host.
+title: Tipo de recurso networkInterface
+description: Representa uma NIC (Placa de Interface de Rede) associada a esse host.
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: preetikr
-ms.openlocfilehash: d7b712c50d8cc19951f583cb8c9af7e185dba7ad
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 7ba1efe14cfd4bce099960406ae31392c10529ba862c388e379ef234c786d6be
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48029159"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54224254"
 ---
-# <a name="networkinterface-resource-type"></a>tipo de recurso networkInterface
+# <a name="networkinterface-resource-type"></a>Tipo de recurso networkInterface
 
 Namespace: microsoft.graph
 
-Representa uma placa de interface de rede (NIC) associada a esse host.
+Representa uma NIC (Placa de Interface de Rede) associada a esse host.
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade   | Tipo |Descrição|
 |:---------------|:--------|:----------|
-|description|String|Descrição da NIC (por exemplo, adaptador Ethernet, conexão de área local do adaptador de LAN sem fio * < # >, etc.).|
-|ipV4Address|String|Último endereço IPv4 associado a esta NIC.|
-|ipV6Address|String|Último endereço IPv6 público (aka global) associado a esta NIC.|
-|localIpV6Address|String|Último endereço IPv6 local (link-local ou site-local) associado a esta NIC.|
-|macAddress|String|Endereço MAC da NIC neste host.|
+|description|Cadeia de caracteres|Descrição do NIC (por exemplo, adaptador Ethernet, conexão de área local de LAN sem fio *<#>, etc.).|
+|ipV4Address|Cadeia de caracteres|Último endereço IPv4 associado a essa NIC.|
+|ipV6Address|Cadeia de caracteres|Último endereço IPv6 público (também conhecido como global) associado a essa NIC.|
+|localIpV6Address|Cadeia de caracteres|Último endereço IPv6 local (link local ou local) associado a esse NIC.|
+|macAddress|Cadeia de caracteres|Endereço MAC da NIC neste host.|
 
 ## <a name="json-representation"></a>Representação JSON
 

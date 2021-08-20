@@ -1,33 +1,33 @@
 ---
-title: tipo de enumeração windowsSpotlightEnablementSettings
-description: Permite que ele seja definido como um mecanismo de pesquisa padrão predefinido para dispositivos MDM-Controlled
+title: Tipo de número windowsSpotlightEnablementSettings
+description: Permite que o administrador de IT de definir um mecanismo de pesquisa padrão predefinido para MDM-Controlled dispositivos
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 7dea095cee15e2016d7d367969dc7b4d7367db79
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 1193055004979e5fa8caae9da67f3eb0a1aec1f43248831a558fdc6fc7b57cc5
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49231272"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54253695"
 ---
-# <a name="windowsspotlightenablementsettings-enum-type"></a>tipo de enumeração windowsSpotlightEnablementSettings
+# <a name="windowsspotlightenablementsettings-enum-type"></a>Tipo de número windowsSpotlightEnablementSettings
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Permite que ele seja definido como um mecanismo de pesquisa padrão predefinido para dispositivos MDM-Controlled
+Permite que o administrador de IT de definir um mecanismo de pesquisa padrão predefinido para MDM-Controlled dispositivos
 
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|notConfigured|,0|O Spotlight na tela de bloqueio não está configurado|
-|desabilitadas|1|Desabilitar o destaque do Windows na tela de bloqueio|
-|habilitadas|duas|Habilitar o destaque do Windows na tela de bloqueio|
+|notConfigured|0|O destaque na tela de bloqueio não está configurado|
+|desabilitadas|1 |Desabilitar Windows destaque na tela de bloqueio|
+|habilitadas|2|Habilitar Windows destaque na tela de bloqueio|
 
 
 

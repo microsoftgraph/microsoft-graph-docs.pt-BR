@@ -5,12 +5,12 @@ author: shauliu
 localization_priority: Normal
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: aa0bc719fe4722692b1ff42861cccede7150780d
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: aef8e501789dac56a1b5ae9bd400d605252ff293de84ec16bfb2f5e7cb4a464b
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52682240"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54187515"
 ---
 # <a name="unifiedrolemanagementpolicyrule-resource-type"></a>Tipo de recurso unifiedRoleManagementPolicyRule
 
@@ -28,7 +28,7 @@ Um unifiedRoleManagementPolicyRule especifica a regra associada a uma política 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Identificador exclusivo da regra.|
+|id|Cadeia de caracteres|Identificador exclusivo da regra.|
 |destino|[unifiedRoleManagementPolicyRuleTarget](../resources/unifiedrolemanagementpolicyruletarget.md)|O destino da regra de política.|
 
 ## <a name="relationships"></a>Relações
