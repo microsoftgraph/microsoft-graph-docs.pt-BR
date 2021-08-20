@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: reports
 author: sarahwxy
 doc_type: resourcePageType
-ms.openlocfilehash: 7ac9ca260e4723f7c4aeca8e15f837d4cd57b7c4
-ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
+ms.openlocfilehash: 1c0f62b2f8551e0e1931bf65d8ee592a3dc72373e1a6f41d37b167a3bdcef38b
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49982177"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54176327"
 ---
 # <a name="office365groupsactivitystorage-resource-type"></a>Tipo de recurso office365GroupsActivityStorage
 
@@ -22,9 +22,9 @@ Namespace: microsoft.graph
 | :------------------------ | :----- | ---------------------------------------- |
 | reportRefreshDate         | Data   | A data mais recente do conteúdo.          |
 | mailboxStorageUsedInBytes | Int64  | O armazenamento usado na caixa de correio de grupo.       |
-| siteStorageUsedInBytes    | Int64  | O armazenamento usado na biblioteca de documentos do SharePoint. |
-| reportDate                | Data   | A data do instantâneo do armazenamento usado pelo Exchange e pelo SharePoint. |
-| reportPeriod              | Cadeia de caracteres | O número de dias que o relatório abrange.    |
+| siteStorageUsedInBytes    | Int64  | O armazenamento usado na SharePoint de documentos. |
+| reportDate                | Data   | A data do instantâneo para Exchange e SharePoint de armazenamento usado. |
+| reportPeriod              | Cadeia de caracteres | O número de dias que o relatório aborda.    |
 
 ## <a name="json-representation"></a>Representação JSON
 

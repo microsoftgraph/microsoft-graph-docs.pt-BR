@@ -5,25 +5,25 @@ author: jkdouglas
 localization_priority: Normal
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 64b2416cd6fd0e8c92d9a00ff2d599226e3cd02c
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 1780e37b8be9952d314f2a95a89975814ffac3483199ae72eb608d1426aa84cd
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50133018"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54145072"
 ---
 # <a name="userattributevaluesitem-resource-type"></a>Tipo de recurso userAttributeValuesItem
 
 Namespace: microsoft.graph
 
-Usado para preencher os valores de um atributo de fluxo de usuário dentro de um fluxo de usuário quando há várias seleções para escolher. userAttributeValuesItem é aplicável ao userInputTypes , e para `radioSingleSelect` `dropdownSingleSelect` uma `checkboxMultiSelect` [identityUserFlowAttributeAssignment](..\resources\identityuserflowattributeassignment.md).
+Usado para preencher os valores de um atributo de fluxo de usuário dentro de um fluxo de usuário quando há várias seleções para escolher. userAttributeValuesItem é aplicável ao userInputTypes `radioSingleSelect` , e a uma `dropdownSingleSelect` `checkboxMultiSelect` [identityUserFlowAttributeAssignment](..\resources\identityuserflowattributeassignment.md).
 
 ## <a name="properties"></a>Propriedades
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |isDefault|Booliano|Usado para definir o valor como padrão.|
-|nome|String|O nome de exibição da propriedade exibida para o usuário final no fluxo do usuário.|
+|nome|Cadeia de caracteres|O nome de exibição da propriedade exibida para o usuário final no fluxo do usuário.|
 |value|Cadeia de caracteres|O valor que é definido quando esse item é selecionado.|
 
 ## <a name="relationships"></a>Relações
