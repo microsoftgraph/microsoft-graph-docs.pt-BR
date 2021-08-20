@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: namkedia
 ms.prod: identity-and-sign-in
-ms.openlocfilehash: d458e6ad07603a9929d7271478aa87d2d46b9e4f
-ms.sourcegitcommit: 5bb981b4853663354a566d4a4a5cbf288939e441
+ms.openlocfilehash: 3cf9970299a5f12c0a440013ea6e3d09e684ac78dc7579e495670c7fbc7f364f
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "53579236"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "56899762"
 ---
 # <a name="update-identityprovider"></a>Atualizar identityProvider
 Namespace: microsoft.graph

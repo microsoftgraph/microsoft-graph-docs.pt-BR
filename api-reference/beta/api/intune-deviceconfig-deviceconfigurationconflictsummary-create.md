@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: fbb45d16011d1af458ff68fa465a1d9de5007afa
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: b53e938714be38bdb1f316204b144aa6cac82788a55dc6659903937e153ef247
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51131740"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54188691"
 ---
 # <a name="create-deviceconfigurationconflictsummary"></a>Criar deviceConfigurationConflictSummary
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -55,7 +55,7 @@ A tabela a seguir mostra as propriedades necessárias ao criar deviceConfigurati
 |:---|:---|:---|
 |conflictingDeviceConfigurations|Conjunto [settingSource](../resources/intune-deviceconfig-settingsource.md)|O conjunto de políticas em conflito com a configuração determinada|
 |id|Cadeia de caracteres|A id desse conjunto de políticas conflitantes. Esta id é a ids de todas as políticas em ConflictingDeviceConfigurations em ordem lexicographical separada por sublinhados.|
-|contributingSettings|Coleção de cadeias de caracteres|O conjunto de configurações em conflito com as políticas determinadas|
+|contributingSettings|String collection|O conjunto de configurações em conflito com as políticas determinadas|
 |deviceCheckinsImpacted|Int32|A contagem de checkins afetados pelas políticas e configurações conflitantes|
 
 

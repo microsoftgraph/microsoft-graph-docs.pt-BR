@@ -3,12 +3,12 @@ title: Instalar o Microsoft Graph PowerShell SDK
 description: Fornece instruções para instalar o Microsoft Graph PowerShell SDK.
 localization_priority: Normal
 author: jasonjoh
-ms.openlocfilehash: 9a23e9498920f329cca5d8eaaef6178c9291803ec9ede965f2fe7569e0b454c8
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: d5c4f731bf4d18faa74de5dfc5f51582d9da5ced
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54149517"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58259591"
 ---
 # <a name="install-the-microsoft-graph-powershell-sdk"></a>Instalar o Microsoft Graph PowerShell SDK
 
@@ -29,6 +29,16 @@ Install-Module Microsoft.Graph -Scope AllUsers
 
 > [!IMPORTANT]
 > Instalar o SDK em uma versão do PowerShell não o instala para a outra. Certifique-se de executar o comando de instalação dentro da versão do PowerShell em que você pretende usá-lo.
+
+## <a name="supported-powershell-versions"></a>Versões com suporte do PowerShell
+
+O PowerShell 7 e posterior é a versão recomendada do PowerShell para uso com o Microsoft Graph SDK do PowerShell em todas as plataformas. Não há pré-requisitos adicionais para usar o SDK com o PowerShell 7 ou posterior.
+
+Os seguintes pré-requisitos devem ser atendidos para usar o Microsoft Graph SDK do PowerShell com Windows PowerShell.
+
+- Atualizar para [o PowerShell 5.1 ou posterior](/powershell/scripting/windows-powershell/install/installing-windows-powershell#upgrading-existing-windows-powershell)
+- Instalar [.NET Framework 4.7.2 ou posterior](/dotnet/framework/install/)
+- Atualizar **o PowerShellGet** para a versão mais recente usando `Install-Module PowerShellGet -Force`
 
 ## <a name="verify-installation"></a>Verificar a instalação
 

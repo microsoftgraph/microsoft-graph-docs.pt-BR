@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: ec191064f0dd14cac67279a6802bc57849e4a740c1e1248cba8234e95ce32c96
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 7ec7c42f49e0bed71abf1911b73dbb40d3cdd67a
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54196954"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58255770"
 ---
 # <a name="keycredential-resource-type"></a>Tipo de recurso keyCredential
 
@@ -27,7 +27,7 @@ Contém uma credencial de chave associada a um aplicativo <!--or a service princ
 |chave|Binário| Os dados brutos do certificado na matriz de byte convertidos na cadeia de caracteres Base64; por exemplo, `[System.Convert]::ToBase64String($Cert.GetRawCertData())` . |
 |keyId|Guid|O identificador exclusivo (GUID) da chave.|
 |startDateTime|DateTimeOffset|A data e a hora em que a credencial se torna válida. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre em horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`.|
-|tipo|Cadeia de caracteres|O tipo de credencial de chave; por exemplo, `Symmetric` .|
+|type|Cadeia de caracteres|O tipo de credencial de chave; por exemplo, `Symmetric` .|
 |usage|Cadeia de caracteres|Uma cadeia de caracteres que descreve a finalidade para a qual a chave pode ser usada; por exemplo, `Verify` .|
 
 ## <a name="json-representation"></a>Representação JSON

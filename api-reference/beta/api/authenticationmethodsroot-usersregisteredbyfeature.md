@@ -5,12 +5,12 @@ author: danielwood95
 localization_priority: Normal
 ms.prod: identity-and-access-reports
 doc_type: apiPageType
-ms.openlocfilehash: 54c1265ebed3eb8a3fe28f091d045b7bfe221b18
-ms.sourcegitcommit: b8b0e88b3ba9a434dc45f5ab640cb46f66fae299
+ms.openlocfilehash: 874b8cd14f663913c89dbfba1e48900a14274b9f
+ms.sourcegitcommit: 22bd45d272681658d46a8b99af3c3eabc7b05cb1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "52474348"
+ms.lasthandoff: 08/18/2021
+ms.locfileid: "58384095"
 ---
 # <a name="authenticationmethodsroot-usersregisteredbyfeature"></a>authenticationMethodsRoot: usersRegisteredByFeature
 Namespace: microsoft.graph
@@ -20,11 +20,11 @@ Namespace: microsoft.graph
 Obter o número de usuários capazes de autenticação multifafa, redefinição de senha de autoatendados e autenticação sem senha.
 
 ## <a name="permissions"></a>Permissões
-As permissões a seguir são necessárias para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
+As seguintes permissões são obrigatórias para chamar esta API. Para saber mais, incluindo como escolher as permissões, consulte [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|AuditLogs.Read.All|
+|Delegado (conta corporativa ou de estudante)|AuditLog.Read.All|
 |Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|Sem suporte.|
 
@@ -34,7 +34,7 @@ Para acessar a API, uma [das seguintes funções](/azure/active-directory/users-
 * Leitor de segurança
 * Administrador de segurança
 * Leitor global
-* Administração global
+* Administrador global
 
 ## <a name="http-request"></a>Solicitação HTTP
 

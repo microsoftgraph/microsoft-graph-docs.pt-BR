@@ -1,17 +1,17 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 063918d41eb62b9606eeec9ab7aff85db425a6cd
-ms.sourcegitcommit: 32c83957ee69f21a10cd5f759adb884ce4b41c52
+ms.openlocfilehash: e3ee1641387919711f1c4d8e2088b553245267c8
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51921216"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58368814"
 ---
 ```java
 
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-IdentityProviderBase identityProviderBase = new IdentityProviderBase();
+SocialIdentityProvider identityProviderBase = new SocialIdentityProvider();
 identityProviderBase.clientSecret = "1111111111111";
 
 graphClient.identity().identityProviders("Amazon-OAUTH")

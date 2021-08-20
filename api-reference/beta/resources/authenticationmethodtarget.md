@@ -1,32 +1,32 @@
 ---
-title: Tipo de recurso authenticationMethodTarget
-description: Um conjunto de usuários ou grupos habilitados para usar um método de autenticação como parte de uma política de método de autenticação.
+title: tipo de recurso authenticationMethodTarget
+description: Uma coleção de usuários ou grupos habilitados para usar um método de autenticação como parte de uma política de método de autenticação.
 author: mmcla
 localization_priority: Normal
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 19f8fb774ad0a60fa74d2c27655ee1174e0989af
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 25f983d9f2f98474189bc286b4e13c9de897cc3a
+ms.sourcegitcommit: b7e01a1331abe5f5c9aa2828d93dad08229573f1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50135447"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58336695"
 ---
-# <a name="authenticationmethodtarget-resource-type"></a>Tipo de recurso authenticationMethodTarget
+# <a name="authenticationmethodtarget-resource-type"></a>tipo de recurso authenticationMethodTarget
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Um conjunto de usuários ou grupos habilitados para usar um método de autenticação como parte de uma política de método de autenticação no Azure AD.
+Uma coleção de usuários ou grupos habilitados para usar um método de autenticação como parte de uma política de método de autenticação no Azure AD. Herda da [entidade](entity.md).
 
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|ID do objeto de um usuário ou grupo do Azure AD.|
+|id|Cadeia de caracteres|Identificador de objeto de um usuário ou grupo do Azure AD.|
 |isRegistrationRequired|Boolean|Determina se o usuário é imposto a registrar o método de autenticação.|
-|targetType|authenticationMethodTargetType|Os valores possíveis são: `user` e `group`.|
+|targetType|authenticationMethodTargetType| Os valores possíveis são: `user` `group` , e `unknownFutureValue` .|
 |useForSignIn|Boolean|Determina se o método de autenticação pode ser usado para entrar no Azure AD.|
 
 ## <a name="relationships"></a>Relações

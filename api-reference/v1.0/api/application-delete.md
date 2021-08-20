@@ -1,24 +1,24 @@
 ---
 title: Excluir aplicativo
-description: Exclua um objeto application.
+description: Excluir um objeto application.
 author: sureshja
 localization_priority: Normal
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: da60fd5c6a3a97a3924fc45448c00f9665748752
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: bb1d2b596f9bf64a8ad055834747a3cefb3f00c9
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50131779"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58260842"
 ---
 # <a name="delete-application"></a>Excluir aplicativo
 
 Namespace: microsoft.graph
 
-Exclua [um objeto application.](../resources/application.md)
+Excluir um [objeto application.](../resources/application.md) Quando excluídos, os aplicativos são movidos para um contêiner temporário e podem ser restaurados dentro de 30 dias. Após esse período, elas serão permanentemente excluídos.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
