@@ -5,12 +5,12 @@ author: mecampos
 localization_priority: Priority
 doc_type: conceptualPageType
 ms.prod: search
-ms.openlocfilehash: a14435329e99dba4c9ec6710c36f91a05655d0e711deab3994e58d18e853253b
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 9bac47cfcc766b5174a2cf39ac7c1c26cdebfce9
+ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54151813"
+ms.lasthandoff: 08/21/2021
+ms.locfileid: "58453587"
 ---
 # <a name="microsoft-graph-connectors-overview"></a>Visão geral dos conectores do Microsoft Graph
 
@@ -29,7 +29,7 @@ O diagrama a seguir fornece uma visão geral de alto nível dos conectores do Mi
 
 ## <a name="build-your-own-custom-connector"></a>Criar seu próprio conector personalizado
 
-Os mais de 100 conectores atualmente disponíveis na Microsoft e nos parceiros permitem que você se conecte aos serviços Microsoft e não-Microsoft populares. Exemplos de conectores existentes incluem os serviços do Azure, Box, ServiceNow, SalesForce, serviços do Google, MediaWiki e muito mais.
+Os mais de 100 conectores atualmente disponíveis na Microsoft e nos parceiros permitem que você se conecte aos serviços Microsoft e não-Microsoft populares. Exemplos de conectores existentes incluem os serviços Azure, Box, ServiceNow, Salesforce, serviços Google, MediaWiki, e muito mais.
 
 Para saber mais sobre os conectores existentes do Microsoft Graph, visite a [galeria de conectores do Microsoft Graph](/microsoftsearch/connectors-gallery).
 

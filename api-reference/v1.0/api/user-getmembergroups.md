@@ -5,12 +5,12 @@ localization_priority: Priority
 author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: a28a32ce1af781ea2d6eb05e18240067562c179a
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 05d2bc10f18acf92bd21486961fc299e3e0e7611
+ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52055677"
+ms.lasthandoff: 08/21/2021
+ms.locfileid: "58454021"
 ---
 # <a name="user-getmembergroups"></a>usuário: getMemberGroups
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 Retorne todos os grupos dos quais o usuário é membro. A verificação é transitiva, diferentemente da leitura da propriedade de navegação [member](../api/user-list-memberof.md), que retorna somente os grupos dos quais o usuário é membro direto.
 
-Esta função é compatível com o Microsoft 365 e outros tipos de grupos provisionados no Azure AD. O número máximo de grupos que cada solicitação pode retornar é 2046. Observe que os grupos do Microsoft 365 não podem conter grupos. Portanto, associações em um grupo do Microsoft 365 sempre são diretas.
+Esta função suporta Microsoft 365 e outros tipos de grupos provisionados em Azure AD. O número máximo de grupos que cada solicitação pode retornar é de 11000. Observar que os grupos do Microsoft 365 não podem conter grupos. Portanto, a afiliação a um grupo Microsoft 365 é sempre direta.
 
 ## <a name="permissions"></a>Permissões
 
@@ -102,7 +102,7 @@ Content-length: 33
 
 ##### <a name="response"></a>Resposta
 
-Veja a seguir um exemplo da resposta. Observação: o objeto de resposta exibido aqui pode ser encurtado para legibilidade.
+Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser reduzido para facilitar a leitura.
 
 <!-- {
   "blockType": "response",

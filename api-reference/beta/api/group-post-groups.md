@@ -5,12 +5,12 @@ author: Jordanndahl
 localization_priority: Priority
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 742c5752e4f5b692ec4905290fad280c6dc3fe05
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 17958c758919146e2ba6596cc60f6f82ff3ce119
+ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58258877"
+ms.lasthandoff: 08/21/2021
+ms.locfileid: "58453734"
 ---
 # <a name="create-group"></a>Criar grupo
 
@@ -59,7 +59,7 @@ A tabela a seguir mostra as propriedades do recurso [group](../resources/group.m
 | description | string | Uma descrição para o grupo. Opcional. |
 | isAssignableToRole | Booliano | Definir para **true** para habilitar o grupo a ser atribuído uma função do Azure AD. Somente o Administrador com Função Privilegiada e o Administrador Global podem definir o valor dessa propriedade. Opcional. |
 | mailEnabled | booliano | Defina como **true** para grupos habilitados para email. Obrigatório. |
-| mailNickname | string | O alias de email do grupo. Esses caracteres não podem ser usados no mailNickName: `@()\[]";:.<>,SPACE`. Obrigatório. |
+| mailNickname | string | O alias de email do grupo. Esta propriedade pode conter apenas caracteres no conjunto de caracteres [ASCII 0 - 127](/office/vba/language/reference/user-interface-help/character-set-0127) exceto o seguinte: ` @ () \ [] " ; : . <> , SPACE `. Obrigatório. |
 | securityEnabled | booliano | Defina como **true** para grupos habilitados para segurança, incluindo grupos do Microsoft 365. Obrigatório. |
 | owners | Coleção [directoryObject](../resources/directoryobject.md) | Esta propriedade representa os proprietários do grupo na hora de criação. Os proprietários não são adicionados automaticamente como membros do grupo, a menos que especificados como propriedade dos **membros**. Opcional. |
 | membros | Coleção [directoryObject](../resources/directoryobject.md) | Esta propriedade representa os membros do grupo na hora de criação. Opcional. |
