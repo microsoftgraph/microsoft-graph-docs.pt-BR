@@ -4,13 +4,13 @@ description: Representa as definições de função. Para recursos do Azure, ele
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: governance
-author: shauliu
-ms.openlocfilehash: dd4a9fc90d3c12669464a5e9b931b968d4526640
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+author: shauliu1
+ms.openlocfilehash: 4f0144f4d26c8440b4e2bdc0965e88310a4f9145
+ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50443052"
+ms.lasthandoff: 08/21/2021
+ms.locfileid: "58453720"
 ---
 # <a name="governanceroledefinition-resource-type"></a>Tipo de recurso governanceRoleDefinition
 
@@ -22,7 +22,7 @@ Namespace: microsoft.graph
 Representa as definições de função. Para recursos do Azure, ele pode representar funções do Azure RBAC, como Proprietário, Leitor, Colaborador, etc.
 
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 
 | Método          | Tipo de retorno |Descrição|
 |:---------------|:--------|:--------|
@@ -34,16 +34,16 @@ Não `POST` , , é suportado no conjunto de `PUT` `PATCH` `DELETE` `roleDefiniti
 ## <a name="properties"></a>Propriedades
 | Propriedade    | Tipo   | Descrição                                                           |
 |:------------|:-------|:----------------------------------------------------------------------|
-| id          | String | A id da definição de função.                                        |
-| resourceId  | String | Obrigatório. A id do recurso associado à definição de função. |
+| id          | Cadeia de caracteres | A id da definição de função.                                        |
+| resourceId  | Cadeia de caracteres | Obrigatório. A id do recurso associado à definição de função. |
 | externalId  | Cadeia de caracteres | A id externa da definição de função.                               |
-| displayName | String | O nome de exibição da definição de função.                              |
-| templateId  | String |                                                                       |
+| displayName | Cadeia de caracteres | O nome de exibição da definição de função.                              |
+| templateId  | Cadeia de caracteres |                                                                       |
 
-## <a name="relationships"></a>Relações
+## <a name="relationships"></a>Relacionamentos
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|recurso|[governanceResource](../resources/governanceresource.md)|Somente leitura. O recurso associado para a definição de função.|
+|recurso|[governanceResource](../resources/governanceresource.md)|Apenas leitura. O recurso associado para a definição de função.|
 |roleSetting|[governanceRoleSetting](../resources/governancerolesetting.md)|A configuração de função associada para a definição de função.|
 
 ## <a name="json-representation"></a>Representação JSON

@@ -5,18 +5,16 @@ author: jsandoval-msft
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: cloud-communications
-ms.openlocfilehash: 02140f99accf36bfac156996e83bd75de2bb3b19
-ms.sourcegitcommit: 6f04ad0e0cde696661511dcdf343942b43f73fc6
+ms.openlocfilehash: 50139466774cbecd0ef1fe87addfb7bd4d2886a2
+ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58397079"
+ms.lasthandoff: 08/21/2021
+ms.locfileid: "58453832"
 ---
 # <a name="presence-clearpresence"></a>presença: clearPresence
 
 Namespace: microsoft.graph
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Desmarcar a sessão de presença do aplicativo para um usuário. Se for a única sessão de presença do usuário, a presença do usuário mudará para `Offline/Offline` .
 
@@ -57,7 +55,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 > Forneça a ID do aplicativo como `sessionId` na solicitação.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um código de resposta `200 OK`.
+Se bem-sucedido, este método retorna um código de resposta `200 OK`.
 
 Se a sessão de presença não existir, este método retornará um `404 NotFound` código de resposta.
 

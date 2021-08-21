@@ -5,12 +5,12 @@ author: Jordanndahl
 localization_priority: Priority
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 9b1c8a790fabc0efcc0f4ce5a7e6852f5428326b
-ms.sourcegitcommit: 2d0daa446c7b37ced1d214e0c6e18e2b8243bb09
+ms.openlocfilehash: 454c4245d8f4484ce577781f70e30b256fe726f4
+ms.sourcegitcommit: f645c2db38fe6354422a96b54569af53cd65b967
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/18/2021
-ms.locfileid: "53010201"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "58409022"
 ---
 # <a name="list-memberof"></a>Listar memberOf
 
@@ -23,9 +23,11 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | GroupMember.Read.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Delegado (conta corporativa ou de estudante) | User.Read, GroupMember.Read.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Directory.Read.All, Directory.ReadWrite.All |
+
+> **Observação:** Para listar os membros de um grupo com afiliação oculta, a permissão Member.Read.Hidden é necessária.
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
 

@@ -4,13 +4,13 @@ description: Recupere as configurações de função para a função determinada
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: governance
-author: shauliu
-ms.openlocfilehash: 73c2a01c171ec39f2702b5bf9ce6a3138a93456b
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+author: shauliu1
+ms.openlocfilehash: 08013e57888bd9c8d40dd925c11465721f2a326e
+ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52052884"
+ms.lasthandoff: 08/21/2021
+ms.locfileid: "58453692"
 ---
 # <a name="get-privilegedrolesettings"></a>Get privilegedRoleSettings
 
@@ -83,7 +83,7 @@ GET https://graph.microsoft.com/beta/privilegedRoles/{id}/settings
 ---
 
 ##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser reduzido para facilitar a leitura.
 <!-- {
   "blockType": "response",
   "truncated": true,

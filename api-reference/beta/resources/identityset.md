@@ -1,25 +1,24 @@
 ---
 author: JeremyKelley
-description: O recurso identityset é uma coleção com chave de recursos de identidade.
-ms.date: 09/10/2017
+description: O recurso identitySet é uma coleção chave de recursos de identidade.
 title: IdentitySet
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: ''
-ms.openlocfilehash: 60fdb901ecd74f3826604d139cad71d9d0844221
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.prod: users
+ms.openlocfilehash: 50f6b45c3121f770019d9b5be7e0492242711e1c
+ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47966755"
+ms.lasthandoff: 08/21/2021
+ms.locfileid: "58453713"
 ---
-# <a name="identityset-resource-type"></a>tipo de recurso identityset
+# <a name="identityset-resource-type"></a>Tipo de recurso identitySet
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-O recurso **identityset** é uma coleção com chave de recursos de [identidade](identity.md) .
+O **recurso identitySet** é uma coleção chave de [recursos de](identity.md) identidade.
 
 É usado para representar uma coleção de identidades associada a vários eventos de um item, como _created by_ ou _last modified by_.
 
@@ -62,15 +61,15 @@ Veja a seguir uma representação JSON do recurso.
 | Propriedade    | Tipo                    | Descrição                                             |
 |:------------|:------------------------|:--------------------------------------------------------|
 | application | [Identity](identity.md) | Opcional. O aplicativo associado a essa ação.  |
-| conversa| [Identity](identity.md) | Opcional. A equipe ou canal associado a esta ação.       |
-| conversationIdentityType| [Identity](identity.md) | Opcional. Indica se a propriedade de **conversa** identifica uma equipe ou um canal.|
+| conversa| [Identity](identity.md) | Opcional. A equipe ou canal associado a essa ação.       |
+| conversationIdentityType| [Identity](identity.md) | Opcional. Indica se a **propriedade conversation** identifica uma equipe ou canal.|
 | device      | [Identity](identity.md) | Opcional. O dispositivo associado a essa ação.       |
-| phone       | [identity](identity.md) | Opcional. O número de telefone associado a esta ação. |
+| phone       | [identity](identity.md) | Opcional. O número de telefone associado a essa ação. |
 | user        | [Identity](identity.md) | Opcional. O usuário associado a essa ação.         |
 
 ## <a name="remarks"></a>Comentários 
 
-Confira [chamada](call.md) para uso de recursos **identityset** .
+Consulte [Call](call.md) for usage of **identitySet** resources.
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

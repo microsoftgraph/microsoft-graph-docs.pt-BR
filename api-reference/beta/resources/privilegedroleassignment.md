@@ -4,13 +4,13 @@ description: 'Representa uma atribuição de função privilegiada para um usuá
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: governance
-author: shauliu
-ms.openlocfilehash: 55b37c195777659b172e668d4e02b60de4f78c0d
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+author: shauliu1
+ms.openlocfilehash: 5589f15c06cd91dca7f23a88cb3140bdc8c0e36c
+ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50440141"
+ms.lasthandoff: 08/21/2021
+ms.locfileid: "58454077"
 ---
 # <a name="privilegedroleassignment-resource-type"></a>Tipo de recurso privilegedRoleAssignment
 
@@ -21,14 +21,14 @@ Namespace: microsoft.graph
 Representa uma atribuição de função privilegiada para um usuário específico. 
 
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
 |[Listar coleção privilegedRoleAssignment](../api/privilegedroleassignment-list.md) | [privilegedRoleAssignment](privilegedroleassignment.md) collection|Obter a coleção de objetos privilegedRoleAssignment.|
 |[Get privilegedRoleAssignment](../api/privilegedroleassignment-get.md) | [privilegedRoleAssignment](privilegedroleassignment.md) |Ler propriedades e relações do objeto privilegedRoleAssignment.|
 |[Criar tarefa](../api/privilegedroleassignment-post-privilegedroleassignments.md) |[privilegedRoleAssignment](privilegedroleassignment.md)| Crie uma nova atribuição postando na coleção de atribuições.|
-|[Delete](../api/privilegedroleassignment-delete.md) | Nenhum(a) |Exclua um objeto privilegedRoleAssignment. |
+|[Delete](../api/privilegedroleassignment-delete.md) | Nenhum |Exclua um objeto privilegedRoleAssignment. |
 |[makePermanent](../api/privilegedroleassignment-makepermanent.md)|[privilegedRoleAssignment](privilegedroleassignment.md)|Torne a atribuição de função como permanente.|
 |[makeEligible](../api/privilegedroleassignment-makeeligible.md)|[privilegedRoleAssignment](privilegedroleassignment.md)|Tornar a atribuição de função como qualificada.|
 |[my](../api/privilegedroleassignment-my.md)|[privilegedRoleAssignment](privilegedroleassignment.md) collection|Obter as atribuições de função privilegiada do usuário atual.|
@@ -43,7 +43,7 @@ Representa uma atribuição de função privilegiada para um usuário específic
 |roleId|string|Identificador de função. No formato de cadeia de caracteres GUID.|
 |userId|cadeia de caracteres|Identificador de usuário. No formato de cadeia de caracteres GUID.|
 
-## <a name="relationships"></a>Relações
+## <a name="relationships"></a>Relacionamentos
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |roleInfo|[privilegedRole](privilegedrole.md)| Somente leitura. Anulável. As informações de função associadas.|

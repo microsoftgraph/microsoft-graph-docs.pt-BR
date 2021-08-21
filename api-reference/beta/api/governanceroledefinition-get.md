@@ -4,13 +4,13 @@ description: Recupere as propriedades e as relações de um governanceRoleDefini
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: governance
-author: shauliu
-ms.openlocfilehash: c42eee6a55eed75674f2f53563898dbe9d5e71e7
-ms.sourcegitcommit: 4888ac7504533344c4fc6828e2a06a002a1d72d3
+author: shauliu1
+ms.openlocfilehash: bb13a1ae30059aa0c5b220c7b68f20fb99a95053
+ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "53350661"
+ms.lasthandoff: 08/21/2021
+ms.locfileid: "58454056"
 ---
 # <a name="get-governanceroledefinition"></a>Obter governançaRoleDefinition
 
@@ -29,15 +29,15 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------- |:----------- |
 | Delegada (conta corporativa ou de estudante) | PrivilegedAccess.ReadWrite.AzureResources |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Application | PrivilegedAccess.Read.AzureResources |
+| Aplicativo | PrivilegedAccess.Read.AzureResources |
 
-### <a name="azure-ad"></a>Azure AD
+### <a name="azure-ad"></a>Microsoft Azure Active Directory
 
 | Tipo de permissão | Permissões |
 |:--------------- |:----------- |
 | Delegada (conta corporativa ou de estudante) | PrivilegedAccess.ReadWrite.AzureAD |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Application | PrivilegedAccess.Read.AzureAD |
+| Aplicativo | PrivilegedAccess.Read.AzureAD |
 
 ### <a name="groups"></a>Grupos
 
@@ -45,7 +45,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:-------------- |:----------- |
 | Delegada (conta corporativa ou de estudante) | PrivilegedAccess.ReadWrite.AzureADGroup |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Application | PrivilegedAccess.Read.AzureADGroup |
+| Aplicativo | PrivilegedAccess.Read.AzureADGroup |
 
 Além do escopo de permissão, essa API exige que o solicitante tenha pelo menos uma atribuição de função no recurso, à qual a [governanceRoleDefinition](../resources/governanceroledefinition.md) pertence.
 

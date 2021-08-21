@@ -4,13 +4,13 @@ description: Representa a solicitação de operações de atribuição de funç�
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: governance
-author: shauliu
-ms.openlocfilehash: e96a0009c6108a77383fe770a6351d7b64efd6f7
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+author: shauliu1
+ms.openlocfilehash: 1ba2478b855d480e846e5b6e5435829ce6e8e4b0
+ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50961276"
+ms.lasthandoff: 08/21/2021
+ms.locfileid: "58453790"
 ---
 # <a name="governanceroleassignmentrequest-resource-type"></a>Tipo de recurso governanceRoleAssignmentRequest
 
@@ -27,10 +27,10 @@ Representa a solicitação de operações de atribuição de função em Gerenci
 | Método          |Tipo de retorno  |Descrição|
 |:------------|:--------|:--------|
 |[Get](../api/governanceroleassignmentrequest-get.md) | [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)|Obter uma solicitação de atribuição de função especificada pela ID.  
-|[Lista](../api/governanceroleassignmentrequest-list.md) | [Coleção governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)|Obter solicitações de atribuição de função em um recurso.|
+|[List](../api/governanceroleassignmentrequest-list.md) | [Coleção governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)|Obter solicitações de atribuição de função em um recurso.|
 |[Create](../api/governanceroleassignmentrequest-post.md)|  [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)|Crie uma solicitação para gerenciar o ciclo de vida da atribuição de função existente ou nova.|
 |[Cancel](../api/governanceroleassignmentrequest-cancel.md)|  |Cancele uma solicitação de atribuição de função pendente.|
-|[Atualização](../api/governanceroleassignmentrequest-update.md)| [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)|Os administradores atualizam as decisões sobre solicitações se as solicitações estão em status de `PendingAdminDecision` .|
+|[Update](../api/governanceroleassignmentrequest-update.md)| [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)|Os administradores atualizam as decisões sobre solicitações se as solicitações estão em status de `PendingAdminDecision` .|
 
 ## <a name="properties"></a>Propriedades
 | Propriedade                  | Tipo          |Descrição|
@@ -39,7 +39,7 @@ Representa a solicitação de operações de atribuição de função em Gerenci
 |resourceId                 |Cadeia de caracteres         |Obrigatório. A id do recurso ao qual a solicitação de atribuição de função está associada.|
 |roleDefinitionId           |Cadeia de caracteres         |Obrigatório. A id da definição de função à qual a solicitação de atribuição de função está associada.|
 |subjectId                  |Cadeia de caracteres         |Obrigatório. A id do assunto ao qual a solicitação de atribuição de função está associada.|
-|tipo                       |String        |Obrigatório. Representando o tipo da operação na atribuição de função. Os valores possíveis são: `AdminAdd` , , , , , , , , `UserAdd` , `AdminUpdate` `AdminRemove` `UserRemove` `UserExtend` `AdminExtend` `UserRenew` `AdminRenew` .|
+|type                       |String        |Obrigatório. Representando o tipo da operação na atribuição de função. Os valores possíveis são: `AdminAdd` , , , , , , , , `UserAdd` , `AdminUpdate` `AdminRemove` `UserRemove` `UserExtend` `AdminExtend` `UserRenew` `AdminRenew` .|
 |assignmentState|Cadeia de caracteres  |Obrigatório. O estado da atribuição. Os valores possíveis são: (para atribuição qualificada), (se for atribuída diretamente), (por administradores ou ativada em uma atribuição qualificada `Eligible`  `Active` pelos `Active` usuários).|
 |requestedDateTime          |DateTimeOffset |Somente leitura. A solicitação cria tempo. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`|
 |Cronograma                   |[governanceSchedule](governanceschedule.md)|O objeto schedule da solicitação de atribuição de função.|
@@ -61,10 +61,10 @@ Representa a solicitação de operações de atribuição de função em Gerenci
 
 
 
-## <a name="relationships"></a>Relações
+## <a name="relationships"></a>Relacionamentos
 | Relação | Tipo                                |Descrição|
 |:-------------|:----------------------------------|:----------|
-|recurso      |[governanceResource](../resources/governanceresource.md)            |Somente leitura. O recurso que a solicitação visa. |
+|recurso      |[governanceResource](../resources/governanceresource.md)            |Apenas leitura. O recurso que a solicitação visa. |
 |roleDefinition|[governanceRoleDefinition](../resources/governanceroledefinition.md)|Somente leitura. A definição de função que a solicitação visa. |
 |assunto       |[governanceSubject](../resources/governancesubject.md)|Somente leitura. A entidade de usuário/grupo.|
 

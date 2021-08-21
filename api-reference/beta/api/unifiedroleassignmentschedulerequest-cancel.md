@@ -1,23 +1,23 @@
 ---
 title: 'unifiedRoleAssignmentScheduleRequest: cancel'
 description: Cancele um unifiedRoleAssignmentScheduleRequest.
-author: shauliu
+author: shauliu1
 localization_priority: Normal
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: f9a74d0b9d341074c3ad68eb1fdad7c77b2baa43
-ms.sourcegitcommit: ae83b2b372902268517fd17a8b10d6d9add422af
+ms.openlocfilehash: 4770603d5b0cc57830f089a42351608a0c75bbca
+ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "53334366"
+ms.lasthandoff: 08/21/2021
+ms.locfileid: "58453769"
 ---
 # <a name="unifiedroleassignmentschedulerequest-cancel"></a>unifiedRoleAssignmentScheduleRequest: cancel
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Cancele imediatamente [um unifiedRoleAssignmentScheduleRequest](../resources/unifiedroleassignmentschedulerequest.md) e o sistema exclua automaticamente a solicitação cancelada após 30 dias.
+Cancele imediatamente um [objeto unifiedRoleAssignmentScheduleRequest](../resources/unifiedroleassignmentschedulerequest.md) que está em um status e que o sistema exclua automaticamente a solicitação cancelada após `Granted` 30 dias. Depois de chamar essa ação, **o status** do unifiedRoleAssignmentScheduleRequest cancelado muda para `Canceled` .
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -48,7 +48,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, esta ação retornará um código de resposta `204 No Content`.
+Se tiver êxito, esta ação retornará um código de resposta `204 No Content`. Tentar cancelar uma solicitação que não está em um estado cancelável, por exemplo, um objeto unifiedRoleAssignmentScheduleRequest cujo **status** é ou , retorna um código `Provisioned` de `Failed` `400 Bad Request` erro.
 
 ## <a name="examples"></a>Exemplos
 
@@ -61,7 +61,7 @@ Se tiver êxito, esta ação retornará um código de resposta `204 No Content`.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/roleManagement/directory/roleAssignmentScheduleRequests/{unifiedRoleAssignmentScheduleRequestsId}/cancel
+POST https://graph.microsoft.com/beta/roleManagement/directory/roleAssignmentScheduleRequests/15fec3d4-64b1-4b03-beb7-f1ba6dddf6cc/cancel
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/unifiedroleassignmentschedulerequest-cancel-csharp-snippets.md)]
@@ -84,7 +84,6 @@ POST https://graph.microsoft.com/beta/roleManagement/directory/roleAssignmentSch
 
 
 ### <a name="response"></a>Resposta
-**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true

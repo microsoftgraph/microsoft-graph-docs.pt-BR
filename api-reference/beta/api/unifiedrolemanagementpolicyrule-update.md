@@ -1,16 +1,16 @@
 ---
 title: Atualizar unifiedRoleManagementPolicyRule
 description: Atualize as propriedades de um objeto unifiedRoleManagementPolicyRule.
-author: shauliu
+author: shauliu1
 localization_priority: Normal
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: dfbb0d6c7015d7de287013e7556b03b1f48407b0a119049aa237bd7f5c677401
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 4e146f02f9d128f834c48c68c2530e24710c0f25
+ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57158234"
+ms.lasthandoff: 08/21/2021
+ms.locfileid: "58452418"
 ---
 # <a name="update-unifiedrolemanagementpolicyrule"></a>Atualizar unifiedRoleManagementPolicyRule
 Namespace: microsoft.graph
@@ -22,7 +22,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|RoleManagementPolicy.ReadWrite.Directory, RoleManagement.ReadWrite.Directory|
+|Delegado (conta corporativa ou de estudante)|RoleManagementPolicy.ReadWrite.Directory, RoleManagement.ReadWrite.Directory|
 |Delegado (conta pessoal da Microsoft)|Sem suporte|
 |Aplicativo|Sem suporte|
 

@@ -4,13 +4,13 @@ description: 'Recupere uma coleção de privilegedRoleAssignmentRequest. '
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: governance
-author: shauliu
-ms.openlocfilehash: 3f9627dc19ae2646b27845ee945f9be04b9172b2
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+author: shauliu1
+ms.openlocfilehash: 89eb70733d5b3db1991d93679b963bd6b303ef48
+ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52051063"
+ms.lasthandoff: 08/21/2021
+ms.locfileid: "58453993"
 ---
 # <a name="list-privilegedroleassignmentrequests"></a>Listar privilegedRoleAssignmentRequests
 
@@ -82,7 +82,7 @@ GET https://graph.microsoft.com/beta/privilegedRoleAssignmentRequests
 ---
 
 ##### <a name="response"></a>Resposta
-Este é um exemplo de resposta. Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+Eis um exemplo da resposta. Observação: o objeto de resposta exibido aqui pode ser reduzido para facilitar a leitura.
 <!-- {
   "blockType": "response",
   "truncated": true,

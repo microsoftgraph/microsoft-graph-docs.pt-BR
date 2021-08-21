@@ -1,16 +1,16 @@
 ---
 title: Listar unifiedRoleAssignmentSchedules
 description: Obter uma lista dos objetos unifiedRoleAssignmentSchedule e suas propriedades.
-author: shauliu
+author: shauliu1
 localization_priority: Normal
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 26c52cfa2d305f23783c384deb1f2cd09c289db6
-ms.sourcegitcommit: ae83b2b372902268517fd17a8b10d6d9add422af
+ms.openlocfilehash: cc692ec06dd1e9abfa6e8c33465cbcc002263413
+ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "53334476"
+ms.lasthandoff: 08/21/2021
+ms.locfileid: "58454084"
 ---
 # <a name="list-unifiedroleassignmentschedules"></a>Listar unifiedRoleAssignmentSchedules
 Namespace: microsoft.graph
@@ -39,7 +39,7 @@ GET /roleManagement/directory/roleAssignmentSchedules
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte a todos os parâmetros de consulta OData para ajudar a personalizar a resposta. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
+Este método dá suporte aos `$select` `$filter` parâmetros de consulta E OData para ajudar a personalizar a resposta. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 |Nome|Descrição|
@@ -87,7 +87,10 @@ GET https://graph.microsoft.com/beta/roleManagement/directory/roleAssignmentSche
 
 
 ### <a name="response"></a>Resposta
-**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+
+Este é um exemplo de resposta.
+
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -99,22 +102,29 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(unifiedRoleEligibilitySchedule)",
   "value": [
     {
-      "id": "dce468b2-68b2-dce4-b268-e4dcb268e4dc",
-      "principalId": "dce468b2-68b2-dce4-b268-e4dcb268e4dc",
-      "roleDefinitionId": "dce468b2-68b2-dce4-b268-e4dcb268e4dc",
-      "directoryScopeId": "dce468b2-68b2-dce4-b268-e4dcb268e4dc",
-      "appScopeId": "dce468b2-68b2-dce4-b268-e4dcb268e4dc",
-      "createdUsing": "dce468b2-68b2-dce4-b268-e4dcb268e4dc",
-      "createdDateTime": "2020-09-09T21:35:27.91Z",
-      "modifiedDateTime": "2020-09-09T21:35:27.91Z",
-      "status": "Provsioned",
+      "@odata.type": "#microsoft.graph.unifiedRoleEligibilitySchedule",
+      "id": "3dc04956-5e79-4e84-a2fc-4c168bb30a5f",
+      "principalId": "fc9a2c2b-1ddc-486d-a211-5fe8ca77fa1f",
+      "roleDefinitionId": "fdd7a751-b60b-444a-984c-02652fe8fa1c",
+      "directoryScopeId": "/administrativeUnits/dc626e71-4837-40eb-be4a-bc29d88a1178",
+      "appScopeId": null,
+      "createdUsing": "3dc04956-5e79-4e84-a2fc-4c168bb30a5f",
+      "createdDateTime": "2021-07-27T14:03:04.4Z",
+      "modifiedDateTime": "0001-01-01T08:00:00Z",
+      "status": "Provisioned",
+      "memberType": "Direct",
       "scheduleInfo": {
-        "@odata.type": "microsoft.graph.requestSchedule"
-      },
-      "assignmentType": "eligible",
-      "memberType": "direct"
+        "startDateTime": "2021-07-27T14:03:04.4Z",
+        "recurrence": null,
+        "expiration": {
+          "type": "noExpiration",
+          "endDateTime": null,
+          "duration": null
+        }
+      }
     }
   ]
 }

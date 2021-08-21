@@ -5,12 +5,12 @@ author: mkhribech
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 468aa51cc9939c247ade3a205b91996fa6685734
-ms.sourcegitcommit: 7abb0672a38a6d9b11a2e0d2cc221222cb8358bb
+ms.openlocfilehash: 72bd88dfef768d372b86f3f53eab5d99fc3ac685
+ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52896575"
+ms.lasthandoff: 08/21/2021
+ms.locfileid: "58454175"
 ---
 # <a name="get-onlinemeeting"></a>Obter onlineMeeting
 
@@ -276,7 +276,7 @@ Content-Type: application/json
 ```
 
 ### <a name="example-3-retrieve-an-online-meeting-by-joinweburl"></a>Exemplo 3: Recuperar uma reunião online por JoinWebUrl
-Você pode recuperar informações de reunião por meio do JoinWebUrl usando um token de usuário ou aplicativo. Essa opção está disponível para dar suporte a casos de uso em que a ID da reunião não é conhecida, mas o JoinWebUrl é, como quando um usuário cria uma reunião (por exemplo, no cliente Microsoft Teams) e um aplicativo separado precisa recuperar detalhes da reunião como uma ação de acompanhamento.
+Você pode recuperar informações de reunião por meio do JoinWebUrl usando um token de usuário ou aplicativo. Essa opção está disponível para dar suporte a casos de uso em que a ID da reunião não é conhecida, mas o JoinWebUrl é, como quando um usuário cria uma reunião (por exemplo, no cliente Microsoft Teams) e um aplicativo separado precisa recuperar os detalhes da reunião como uma ação de acompanhamento.
 
 #### <a name="request"></a>Solicitação
 

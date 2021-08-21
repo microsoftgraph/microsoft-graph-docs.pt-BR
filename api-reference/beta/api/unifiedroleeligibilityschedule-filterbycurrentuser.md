@@ -1,16 +1,16 @@
 ---
 title: 'unifiedRoleEligibilitySchedule: filterByCurrentUser'
 description: Obter uma lista dos objetos unifiedRoleEligibilitySchedule e suas propriedades filtradas por uma entidade de usuário específica
-author: shauliu
+author: shauliu1
 localization_priority: Normal
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: c74306e5e39200db1dd5b0ede2a93a818e928f11
-ms.sourcegitcommit: ae83b2b372902268517fd17a8b10d6d9add422af
+ms.openlocfilehash: 0566ea8acd39f9f9cd9ea39439b333ed74d371c2
+ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "53334707"
+ms.lasthandoff: 08/21/2021
+ms.locfileid: "58453944"
 ---
 # <a name="unifiedroleeligibilityschedule-filterbycurrentuser"></a>unifiedRoleEligibilitySchedule: filterByCurrentUser
 Namespace: microsoft.graph
@@ -35,16 +35,18 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 }
 -->
 ``` http
-GET roleManagement/directory/roleEligibilitySchedules/filterByCurrentUser
+GET roleManagement/directory/roleEligibilitySchedules/filterByCurrentUser(on='principal')
 ```
 
-## <a name="query-parameters"></a>Parâmetros de consulta
+## <a name="function-parameters"></a>Parâmetros de função
 A tabela a seguir mostra os parâmetros que podem ser usados com esse método.
 
 |Parâmetro|Tipo|Descrição|
 |:---|:---|:---|
-|on|roleEligibilityScheduleFilterByCurrentUserOptions|ID do usuário atual.|
+|on|roleEligibilityScheduleFilterByCurrentUserOptions|O usuário atualmente assinado. O valor permitido é `principal` .|
 
+## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
+Este método dá suporte ao `$select` parâmetro de consulta OData para ajudar a personalizar a resposta. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 |Nome|Descrição|
@@ -56,7 +58,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta e uma coleção `200 OK` [unifiedRoleEligibilitySchedule](../resources/unifiedroleeligibilityschedule.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e uma `200 OK` coleção de [objetos unifiedRoleEligibilitySchedule](../resources/unifiedroleeligibilityschedule.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -67,12 +69,14 @@ Se tiver êxito, este método retornará um código de resposta e uma coleção 
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/roleManagement/directory/roleEligibilitySchedules/filterByCurrentUser(on='eb18c026-c026-eb18-26c0-18eb26c018eb')
+GET https://graph.microsoft.com/beta/roleManagement/directory/roleEligibilitySchedules/filterByCurrentUser(on='principal')
 ```
 
 
 ### <a name="response"></a>Resposta
-**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+
+A seguir, um exemplo da resposta mostrando um cronograma de qualificação que é por meio de uma atribuição de grupo.
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -84,23 +88,31 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": [
-    {
-      "id": "eb18c026-c026-eb18-26c0-18eb26c018eb",
-      "principalId": "eb18c026-c026-eb18-26c0-18eb26c018eb",
-      "roleDefinitionId": "eb18c026-c026-eb18-26c0-18eb26c018eb",
-      "directoryScopeId": "eb18c026-c026-eb18-26c0-18eb26c018eb",
-      "appScopeId": "eb18c026-c026-eb18-26c0-18eb26c018eb",
-      "createdUsing": "eb18c026-c026-eb18-26c0-18eb26c018eb",
-      "createdDateTime": "2020-09-09T21:35:27.91Z",
-      "modifiedDateTime": "2020-09-09T21:35:27.91Z",
-      "status": "Provisioned",
-      "scheduleInfo": {
-        "@odata.type": "microsoft.graph.requestSchedule"
-      },
-      "memberType": "direct"
-    }
-  ]
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(unifiedRoleEligibilitySchedule)",
+    "value": [
+        {
+            "@odata.type": "#microsoft.graph.unifiedRoleEligibilitySchedule",
+            "id": "6938d75d-ad66-4c7d-9028-0c9b00296945",
+            "principalId": "c6ad1942-4afa-47f8-8d48-afb5d8d69d2f",
+            "roleDefinitionId": "fe930be7-5e62-47db-91af-98c3a49a38b1",
+            "directoryScopeId": "/",
+            "appScopeId": null,
+            "createdUsing": "6938d75d-ad66-4c7d-9028-0c9b00296945",
+            "createdDateTime": "2021-08-09T10:15:05.96Z",
+            "modifiedDateTime": "0001-01-01T08:00:00Z",
+            "status": "Provisioned",
+            "memberType": "Direct",
+            "scheduleInfo": {
+                "startDateTime": "2021-08-09T10:15:05.96Z",
+                "recurrence": null,
+                "expiration": {
+                    "type": "noExpiration",
+                    "endDateTime": null,
+                    "duration": null
+                }
+            }
+        }
+    ]
 }
 ```
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 33abd221d22d37cc58bcf3770b4e28fa78b77064
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: 8336366a1e6c63b6f76b293b6445f5583a7fd32f
+ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50718456"
+ms.lasthandoff: 08/21/2021
+ms.locfileid: "58454028"
 ---
 # <a name="requestschedule-resource-type"></a>Tipo de recurso requestSchedule
 
@@ -44,8 +44,7 @@ Veja a seguir uma representação JSON do recurso.
 {
     "startDateTime": "2020-08-11T23:06:53.307Z",
     "expiration": {
-        "endDateTime": "2020-09-10T23:06:53.307Z",
-        "type": "afterDateTime"
+      "@odata.type": "microsoft.graph.expirationPattern"
     }
 }
 ```

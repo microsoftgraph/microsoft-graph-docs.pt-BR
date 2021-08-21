@@ -4,13 +4,13 @@ description: Atualize as propriedades do objeto privilegedapproval.
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: governance
-author: shauliu
-ms.openlocfilehash: e2782b4756ece02695049c4327b651a1796c77c7
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+author: shauliu1
+ms.openlocfilehash: cad3eb0b6f7e974cfa761c7b0b94d1bbf3538f10
+ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52787378"
+ms.lasthandoff: 08/21/2021
+ms.locfileid: "58453153"
 ---
 # <a name="update-privilegedapproval"></a>Atualizar privilegedapproval
 
@@ -19,7 +19,7 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Atualize as propriedades do objeto privilegedapproval.
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 
@@ -45,12 +45,12 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |approvalDuration|Duration||
-|approvalState|cadeia de caracteres| Os valores possíveis são: `pending`, `approved`, `denied`, `aborted`, `canceled`.|
-|approvalType|String||
-|approverReason|String||
+|approvalState|string| Os valores possíveis são: `pending`, `approved`, `denied`, `aborted`, `canceled`.|
+|approvalType|Cadeia de caracteres||
+|approverReason|Cadeia de caracteres||
 |endDateTime|DateTimeOffset||
-|requestorReason|String||
-|roleId|String||
+|requestorReason|Cadeia de caracteres||
+|roleId|Cadeia de caracteres||
 |startDateTime|DateTimeOffset||
 |userId|Cadeia de caracteres||
 

@@ -4,13 +4,13 @@ description: 'Recupere as propriedades e as relações do objeto privilegedRole.
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: governance
-author: shauliu
-ms.openlocfilehash: 6eb4838d23ed501ee2875e9aef3484752692584f
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+author: shauliu1
+ms.openlocfilehash: 0bea6db24aac5dd3bf5b764757592df9a6290e7e
+ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52055271"
+ms.lasthandoff: 08/21/2021
+ms.locfileid: "58454252"
 ---
 # <a name="get-privilegedrole"></a>Get privilegedRole
 
@@ -85,7 +85,7 @@ GET https://graph.microsoft.com/beta/privilegedRoles/{id}
 ---
 
 ##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser reduzido para facilitar a leitura.
 <!-- {
   "blockType": "response",
   "truncated": true,

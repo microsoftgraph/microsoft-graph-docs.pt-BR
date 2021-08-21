@@ -5,12 +5,12 @@ author: mkhribech
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: ba5a1a874431b2cd543ac35057c29127896e1f52
-ms.sourcegitcommit: 7abb0672a38a6d9b11a2e0d2cc221222cb8358bb
+ms.openlocfilehash: 97a87a592651fd963f979ebb14078b02a6cfe88d
+ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52896673"
+ms.lasthandoff: 08/21/2021
+ms.locfileid: "58452880"
 ---
 # <a name="get-onlinemeeting"></a>Obter onlineMeeting
 
@@ -113,7 +113,7 @@ Se a solicitação contiver um `Accept-Language`cabeçalho HTTP, o `content` de 
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um código de resposta `200 OK`. O método também inclui um dos seguintes:
+Se bem-sucedido, este método retorna um código de resposta `200 OK`. O método também inclui um dos seguintes:
 
 - Se você estiver recebendo uma reunião online com base na ID da reunião, **videoTeleconferenceId** ou **joinWebUrl,** este método também retornará um [objeto onlineMeeting](../resources/onlinemeeting.md) no corpo da resposta.
 - Se você estiver recebendo o relatório do participante ou a gravação de uma reunião online ao vivo, este método também retorna um header que indica o URI para o relatório ou gravação do `Location` participante, respectivamente.

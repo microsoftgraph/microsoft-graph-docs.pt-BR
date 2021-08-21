@@ -1,16 +1,16 @@
 ---
 title: Listar unifiedRoleAssignmentScheduleInstances
 description: Obter uma lista dos objetos unifiedRoleAssignmentScheduleInstance e suas propriedades.
-author: shauliu
+author: shauliu1
 localization_priority: Normal
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 382c5a7ff8b75da06f1d75b06a2bb382137c275d
-ms.sourcegitcommit: ae83b2b372902268517fd17a8b10d6d9add422af
+ms.openlocfilehash: e05ec16ccb23cf6d5921d049f281127e7367c704
+ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "53334385"
+ms.lasthandoff: 08/21/2021
+ms.locfileid: "58453804"
 ---
 # <a name="list-unifiedroleassignmentscheduleinstances"></a>Listar unifiedRoleAssignmentScheduleInstances
 Namespace: microsoft.graph
@@ -39,7 +39,7 @@ GET /roleManagement/directory/roleAssignmentScheduleInstances
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte a todos os parâmetros de consulta OData para ajudar a personalizar a resposta. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
+Este método dá suporte aos `$select` `$filter` parâmetros de consulta E OData para ajudar a personalizar a resposta. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 |Nome|Descrição|
@@ -87,7 +87,9 @@ GET https://graph.microsoft.com/beta/roleManagement/directory/roleAssignmentSche
 
 
 ### <a name="response"></a>Resposta
-**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+
+Este é um exemplo de resposta.
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -99,19 +101,33 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#roleManagement/directory/roleAssignmentScheduleInstances",
   "value": [
     {
-      "id": "eb18c026-c026-eb18-26c0-18eb26c018eb",
-      "principalId": "eb18c026-c026-eb18-26c0-18eb26c018eb",
-      "roleDefinitionId": "eb18c026-c026-eb18-26c0-18eb26c018eb",
-      "directoryScopeId": "eb18c026-c026-eb18-26c0-18eb26c018eb",
-      "appScopeId": "eb18c026-c026-eb18-26c0-18eb26c018eb",
-      "startDateTime": "2020-09-09T21:35:27.91Z",
-      "endDateTime": "2020-09-09T21:35:27.91Z",
-      "assignmentType": "eligible",
-      "memberType": "direct",
-      "roleAssignmentOriginId": "eb18c026-c026-eb18-26c0-18eb26c018eb",
-      "roleAssignmentScheduleId": "eb18c026-c026-eb18-26c0-18eb26c018eb"
+      "id": "4-PYiFWPHkqVOpuYmLiHa_8KmpPnrkhHmG41_UYRbUY-1",
+      "principalId": "939a0aff-aee7-4748-986e-35fd46116d46",
+      "roleDefinitionId": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b",
+      "directoryScopeId": "/",
+      "appScopeId": null,
+      "startDateTime": null,
+      "endDateTime": null,
+      "assignmentType": "Assigned",
+      "memberType": "Direct",
+      "roleAssignmentOriginId": "4-PYiFWPHkqVOpuYmLiHa_8KmpPnrkhHmG41_UYRbUY-1",
+      "roleAssignmentScheduleId": "4-PYiFWPHkqVOpuYmLiHa_8KmpPnrkhHmG41_UYRbUY-1"
+    },
+    {
+      "id": "4-PYiFWPHkqVOpuYmLiHa0VbFrscFfZMmRHNcYiRKEg-1",
+      "principalId": "bb165b45-151c-4cf6-9911-cd7188912848",
+      "roleDefinitionId": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b",
+      "directoryScopeId": "/",
+      "appScopeId": null,
+      "startDateTime": null,
+      "endDateTime": null,
+      "assignmentType": "Assigned",
+      "memberType": "Direct",
+      "roleAssignmentOriginId": "4-PYiFWPHkqVOpuYmLiHa0VbFrscFfZMmRHNcYiRKEg-1",
+      "roleAssignmentScheduleId": "4-PYiFWPHkqVOpuYmLiHa0VbFrscFfZMmRHNcYiRKEg-1"
     }
   ]
 }

@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso unifiedRoleAssignmentScheduleInstance
 description: Representa uma instância de agendamento para operações de atribuição de função ativa por meio do Azure AD Privileged Identity Management.
-author: shauliu
+author: shauliu1
 localization_priority: Normal
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 205218bc1ab3bbb76cfd6566dd6a6c968e7f1f02
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: 64ccc65b7daf312ee79bbc5bed032ceaafd956f8
+ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52682142"
+ms.lasthandoff: 08/21/2021
+ms.locfileid: "58453181"
 ---
 # <a name="unifiedroleassignmentscheduleinstance-resource-type"></a>Tipo de recurso unifiedRoleAssignmentScheduleInstance
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Representa a instância de uma atribuição de função ativa por meio do Azure AD Privileged Identity Management. Um `roleAssignmentInstance` é criado por e representa uma função `roleAssignmentSchedule` realAssignment criada por Privileged Identity Management. Suportamos lista e fazemos operações na funçãoAssignmentInstance com o objetivo de exibir atribuições atuais e futuras.
+Representa a instância de uma atribuição de função ativa por meio do Azure AD Privileged Identity Management. Uma **unifiedRoleAssignmentScheduleInstance** é criada por [unifiedRoleAssignmentSchedule](unifiedroleassignmentschedule.md) e representa uma atribuição de função real criada por meio de Privileged Identity Management. Esse recurso dá suporte às operações Lista e Obter para fins de exibição de atribuições atuais e futuras.
 
 Herda [de unifiedRoleScheduleInstanceBase](../resources/unifiedrolescheduleinstancebase.md).
 
@@ -32,20 +32,20 @@ Herda [de unifiedRoleScheduleInstanceBase](../resources/unifiedrolescheduleinsta
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|appScopeId|String|ID do escopo específico do aplicativo quando o escopo de atribuição é específico do aplicativo. O escopo de uma atribuição determina o conjunto de recursos para os quais a entidade foi concedida acesso. Os escopos de diretório são escopos compartilhados armazenados no diretório que são compreendidos por vários aplicativos. Use "/" para o escopo de todo o locatário. Os escopos do aplicativo são escopos definidos e compreendidos somente por esse aplicativo. Herdado [de unifiedRoleScheduleInstanceBase](../resources/unifiedrolescheduleinstancebase.md)|
-|assignmentType|String|Tipo da atribuição. Pode ser `Assigned` ou `Activated` .|
+|appScopeId|Cadeia de caracteres|Identificador do escopo específico do aplicativo quando o escopo de atribuição for específico do aplicativo. O escopo de uma atribuição determina o conjunto de recursos para os quais a entidade foi concedida acesso. Os escopos do aplicativo são escopos definidos e compreendidos somente por esse aplicativo. Use `/` para escopos de aplicativos de todo o locatário. Use **directoryScopeId** para limitar o escopo a objetos de diretório específicos, por exemplo, unidades administrativas. Herdado [de unifiedRoleScheduleInstanceBase](../resources/unifiedrolescheduleinstancebase.md).|
+|assignmentType|Cadeia de caracteres|Tipo da atribuição. Pode ser `Assigned` ou `Activated` .|
 |createdDateTime|DateTimeOffset|Hora em que a agenda foi criada.|
-|directoryScopeId|String|ID do objeto directory que representa o escopo da atribuição. O escopo de uma atribuição determina o conjunto de recursos para os quais a entidade foi concedida acesso. Os escopos de diretório são escopos compartilhados armazenados no diretório que são compreendidos por vários aplicativos. Os escopos do aplicativo são escopos definidos e compreendidos somente por esse aplicativo. Herdado [de unifiedRoleScheduleInstanceBase](../resources/unifiedrolescheduleinstancebase.md)|
+|directoryScopeId|Cadeia de caracteres|Identificador do objeto directory que representa o escopo da atribuição. O escopo de uma atribuição determina o conjunto de recursos para os quais a entidade foi concedida acesso. Os escopos de diretório são escopos compartilhados armazenados no diretório que são compreendidos por vários aplicativos. Use `/` para escopo de todo o locatário. Use **appScopeId** para limitar o escopo somente a um aplicativo. Herdado [de unifiedRoleScheduleInstanceBase](../resources/unifiedrolescheduleinstancebase.md)|
 |endDateTime|DateTimeOffset|Tempo em que a roleAssignmentInstance expirará|
-|id|String|O identificador exclusivo para unifiedRoleAssignmentScheduleInstance. Chave, não anulada, somente leitura. Herdado [de unifiedRoleScheduleInstanceBase](../resources/unifiedrolescheduleinstancebase.md)|
-|memberType|String|Tipo de associação da atribuição. Pode ser `Inherited` , `Direct` ou `Group` .|
-|principalId|String|Objectid da entidade à qual a atribuição está sendo concedida. Herdado [de unifiedRoleScheduleInstanceBase](../resources/unifiedrolescheduleinstancebase.md)|
-|roleAssignmentOriginId|String|ID do roleAssignment no diretório|
-|roleAssignmentScheduleId|String|ID da função paiAssignmentSchedule para esta instância|
-|roleDefinitionId|String|ID do unifiedRoleDefinition para o que a atribuição se destina. Somente leitura. Herdado [de unifiedRoleScheduleInstanceBase](../resources/unifiedrolescheduleinstancebase.md)|
+|id|Cadeia de caracteres|O identificador exclusivo para unifiedRoleAssignmentScheduleInstance. Chave, não anulada, somente leitura. Herdado [de unifiedRoleScheduleInstanceBase](../resources/unifiedrolescheduleinstancebase.md)|
+|memberType|Cadeia de caracteres|Tipo de associação da atribuição. Pode ser `Inherited` , `Direct` ou `Group` .|
+|principalId|Cadeia de caracteres|Identificador da entidade à qual a atribuição está sendo concedida. Pode ser um grupo ou um usuário. Herdado [de unifiedRoleScheduleInstanceBase](../resources/unifiedrolescheduleinstancebase.md)|
+|roleAssignmentOriginId|Cadeia de caracteres|ID do roleAssignment no diretório|
+|roleAssignmentScheduleId|Cadeia de caracteres|ID da função paiAssignmentSchedule para esta instância|
+|roleDefinitionId|Cadeia de caracteres|Identificador do unifiedRoleDefinition para o que a atribuição se destina. Somente leitura. Herdado [de unifiedRoleScheduleInstanceBase](../resources/unifiedrolescheduleinstancebase.md).  <br> Suporta `$filter` (`eq`).|
 |startDateTime|DateTimeOffset|Hora em que a roleAssignmentInstance será iniciar|
 
-## <a name="relationships"></a>Relações
+## <a name="relationships"></a>Relacionamentos
 |Relação|Tipo|Descrição|
 |:---|:---|:---|
 |activatedUsing|[unifiedRoleEligibilityScheduleInstance](../resources/unifiedroleeligibilityscheduleinstance.md)|Se a roleAssignmentScheduleInstance for ativada por uma roleEligibilityScheduleRequest, este será o link para a instância de agendamento relacionada.|

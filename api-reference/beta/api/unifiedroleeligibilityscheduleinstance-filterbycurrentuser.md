@@ -1,16 +1,16 @@
 ---
 title: 'unifiedRoleEligibilityScheduleInstance: filterByCurrentUser'
 description: Obter uma lista dos objetos unifiedRoleEligibilityScheduleInstance e suas propriedades filtradas por uma entidade de usuário específica
-author: shauliu
+author: shauliu1
 localization_priority: Normal
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: e071add687797a29e65b0a49d217e51243524b42
-ms.sourcegitcommit: ae83b2b372902268517fd17a8b10d6d9add422af
+ms.openlocfilehash: 437f5c2a4d84ea5e2e6d9e270efb33297f29f227
+ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "53334511"
+ms.lasthandoff: 08/21/2021
+ms.locfileid: "58453573"
 ---
 # <a name="unifiedroleeligibilityscheduleinstance-filterbycurrentuser"></a>unifiedRoleEligibilityScheduleInstance: filterByCurrentUser
 Namespace: microsoft.graph
@@ -35,15 +35,18 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 }
 -->
 ``` http
-GET /roleManagement/directory/roleEligibilityScheduleInstances/filterByCurrentUser
+GET /roleManagement/directory/roleEligibilityScheduleInstances/filterByCurrentUser(on='principal')
 ```
 
-## <a name="query-parameters"></a>Parâmetros de consulta
+## <a name="function-parameters"></a>Parâmetros de função
 A tabela a seguir mostra os parâmetros de consulta que podem ser usados com esse método.
 
 |Parâmetro|Tipo|Descrição|
 |:---|:---|:---|
-|on|roleEligibilityScheduleInstanceFilterByCurrentUserOptions|ID do usuário atual.|
+|on|roleEligibilityScheduleInstanceFilterByCurrentUserOptions|Filtre os objetos de consulta para os quais o usuário atual é a entidade principal. O valor permitido é `principal` . Obrigatório.|
+
+## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
+Este método dá suporte ao `$select` parâmetro de consulta OData para ajudar a personalizar a resposta. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
 
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -56,7 +59,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta e uma coleção `200 OK` [unifiedRoleEligibilityScheduleInstance](../resources/unifiedroleeligibilityscheduleinstance.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e uma coleção de `200 OK` [objetos unifiedRoleEligibilityScheduleInstance](../resources/unifiedroleeligibilityscheduleinstance.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -67,12 +70,14 @@ Se tiver êxito, este método retornará um código de resposta e uma coleção 
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/roleManagement/directory/roleEligibilityScheduleInstances/filterByCurrentUser(on='5cfd7709-7709-5cfd-0977-fd5c0977fd5c')
+GET https://graph.microsoft.com/beta/roleManagement/directory/roleEligibilityScheduleInstances/filterByCurrentUser(on='principal')
 ```
 
 
 ### <a name="response"></a>Resposta
-**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+
+A seguir está um exemplo da resposta mostrando uma instância de uma roleEligibilitySchedule que é por meio de uma atribuição de grupo.
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -84,19 +89,21 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": [
-    {
-      "id": "5cfd7709-7709-5cfd-0977-fd5c0977fd5c",
-      "principalId": "5cfd7709-7709-5cfd-0977-fd5c0977fd5c",
-      "roleDefinitionId": "5cfd7709-7709-5cfd-0977-fd5c0977fd5c",
-      "directoryScopeId": "5cfd7709-7709-5cfd-0977-fd5c0977fd5c",
-      "appScopeId": "5cfd7709-7709-5cfd-0977-fd5c0977fd5c",
-      "startDateTime": "2020-09-09T21:35:27.91Z",
-      "endDateTime": "2020-09-09T21:35:27.91Z",
-      "memberType": "direct",
-      "roleEligibilityScheduleId": "5cfd7709-7709-5cfd-0977-fd5c0977fd5c"
-    }
-  ]
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(unifiedRoleEligibilityScheduleInstance)",
+    "value": [
+        {
+            "@odata.type": "#microsoft.graph.unifiedRoleEligibilityScheduleInstance",
+            "id": "5wuT_mJe20eRr5jDpJo4sXbfd22VX0BOmpL501774kM-1-e",
+            "principalId": "92f37639-ba1e-471c-b9ba-922371c740cb",
+            "roleDefinitionId": "fe930be7-5e62-47db-91af-98c3a49a38b1",
+            "directoryScopeId": "/",
+            "appScopeId": null,
+            "startDateTime": "2021-08-06T16:18:04.793Z",
+            "endDateTime": "2022-06-30T00:00:00Z",
+            "memberType": "Group",
+            "roleEligibilityScheduleId": "2303e6ff-5939-496f-8057-9203db4c75f3"
+        }
+    ]
 }
 ```
 

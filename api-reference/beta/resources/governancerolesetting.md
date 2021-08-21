@@ -4,13 +4,13 @@ description: Representa um conjunto de configurações em cada definição de fu
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: governance
-author: shauliu
-ms.openlocfilehash: cdc2889624dd9b23920c5cd04ed2c41344cb951c
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+author: shauliu1
+ms.openlocfilehash: 84226a44df2561dbd30bfec7987a0ce625340e27
+ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50722277"
+ms.lasthandoff: 08/21/2021
+ms.locfileid: "58453545"
 ---
 # <a name="governancerolesetting-resource-type"></a>Tipo de recurso governanceRoleSetting
 
@@ -26,7 +26,7 @@ Representa um conjunto de configurações em cada definição de função que pr
 |:---------------|:--------|:--------|
 |[List](../api/governancerolesetting-list.md) | [Coleção governanceRoleSetting](../resources/governancerolesetting.md)|Listar uma coleção de configurações de função em um recurso.|
 |[Get](../api/governancerolesetting-get.md) |  [governanceRoleSetting](../resources/governancerolesetting.md) |Ler propriedades e relações de uma configuração de função.|
-|[Atualizar](../api/governancerolesetting-update.md) | [governanceRoleSetting](../resources/governancerolesetting.md)  |Atualizar um objeto de configuração de função. |
+|[Update](../api/governancerolesetting-update.md) | [governanceRoleSetting](../resources/governancerolesetting.md)  |Atualizar um objeto de configuração de função. |
 
 ## <a name="properties"></a>Propriedades
 |Propriedade               |Tipo                                      |Descrição|
@@ -42,11 +42,11 @@ Representa um conjunto de configurações em cada definição de função que pr
 |userEligibleSettings |[Coleção governanceRuleSetting](../resources/governancerulesetting.md)|As configurações de regra avaliadas quando um usuário tenta adicionar uma atribuição de função qualificada. A configuração não tem suporte por enquanto.|
 |userMemberSettings   |[Coleção governanceRuleSetting](../resources/governancerulesetting.md)|As configurações de regra avaliadas quando um usuário tenta ativar sua atribuição de função.|
 
-## <a name="relationships"></a>Relações
+## <a name="relationships"></a>Relacionamentos
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|recurso|[governanceResource](../resources/governanceresource.md)|Somente leitura. O recurso associado para essa configuração de função.|
-|roleDefinition|[governanceRoleDefinition](../resources/governanceroledefinition.md)|Somente leitura. A definição de função que é imposta com essa configuração de função. |
+|recurso|[governanceResource](../resources/governanceresource.md)|Apenas leitura. O recurso associado para essa configuração de função.|
+|roleDefinition|[governanceRoleDefinition](../resources/governanceroledefinition.md)|Apenas leitura. A definição de função que é imposta com essa configuração de função. |
 
 ## <a name="json-representation"></a>Representação JSON
 

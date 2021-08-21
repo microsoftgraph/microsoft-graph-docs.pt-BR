@@ -4,13 +4,13 @@ description: Use essa API para criar um novo privilegedApproval.
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: governance
-author: shauliu
-ms.openlocfilehash: 3b85324bc8468f0fd6c3c5963ab417ba8c6a9acb
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+author: shauliu1
+ms.openlocfilehash: 5e99d06616d3ddfa08119a6fed352b4ba7b274a1
+ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52055285"
+ms.lasthandoff: 08/21/2021
+ms.locfileid: "58453552"
 ---
 # <a name="create-privilegedapproval"></a>Create privilegedApproval
 
@@ -91,7 +91,7 @@ Content-length: 180
 
 No corpo da solicitação, fornece uma representação JSON [do objeto privilegedApproval.](../resources/privilegedapproval.md)
 ##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser reduzido para facilitar a leitura.
 <!-- {
   "blockType": "response",
   "truncated": true,

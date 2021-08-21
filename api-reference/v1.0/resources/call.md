@@ -1,22 +1,22 @@
 ---
 title: Tipo de recurso de chamada
-description: O recurso **call** é criado quando há uma chamada recebida para o aplicativo ou quando o aplicativo cria uma nova chamada realizada por meio de um `POST` em `app/calls`.
+description: O recurso **call** é criado quando há uma chamada recebida para o aplicativo ou quando o aplicativo cria uma nova chamada realizada por meio de um `POST` em `communications/calls`.
 author: ananmishr
 localization_priority: Priority
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 8a3fb0ced8fec9c0a2dfba0127e22e79c241ec1eb611fc3c7da45148733097d0
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: e34757802a0e0c6dc3585069577fe12bb6258eac
+ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54178616"
+ms.lasthandoff: 08/21/2021
+ms.locfileid: "58452754"
 ---
 # <a name="call-resource-type"></a>Tipo de recurso de chamada
 
 Namespace: microsoft.graph
 
-O recurso **call** é criado quando há uma chamada recebida para o aplicativo ou quando o aplicativo cria uma nova chamada realizada por meio de um `POST` em `app/calls`.
+O recurso **call** é criado quando há uma chamada recebida para o aplicativo ou quando o aplicativo cria uma nova chamada realizada por meio de um `POST` em `communications/calls`.
 
 As chamadas podem ser configuradas como uma chamada ponto a ponto ou de grupo. Para criar ou ingressar em uma chamada de grupo, forneça `chatInfo` e `meetingInfo`. Caso não sejam fornecidos, uma nova chamada de grupo é criada automaticamente. Para uma chamada recebida, grave esses valores em um repositório altamente disponível para que o seu aplicativo reingresse na chamada caso enfrente uma falha.
 

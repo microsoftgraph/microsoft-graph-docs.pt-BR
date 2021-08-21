@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso unifiedRoleEligibilityScheduleInstance
 description: Representa uma instância de agendamento para operações de atribuição de função qualificada por meio do Azure AD Privileged Identity Management.
-author: shauliu
+author: shauliu1
 localization_priority: Normal
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 024f00486898f6af0955fe2ecda93fdb024758d3
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: bf4e689e4379f34a0196506bcdecafa991b6d38c
+ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52682121"
+ms.lasthandoff: 08/21/2021
+ms.locfileid: "58453783"
 ---
 # <a name="unifiedroleeligibilityscheduleinstance-resource-type"></a>Tipo de recurso unifiedRoleEligibilityScheduleInstance
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Representa a instância de uma atribuição de função qualificada por meio do Azure AD Privileged Identity Management. Um é criado por e representa uma atribuição de função qualificada real `roleEligibilityInstance` `roleEligibilitySchedule` criada por Privileged Identity Management. Damos suporte à lista e fazemos operações na funçãoEligibilityInstance para fins de exibição de atribuições atuais e futuras.
+Representa a instância de uma atribuição de função qualificada por meio do Azure AD Privileged Identity Management. Uma **unifiedRoleEligibilityScheduleInstance** é criada por [unifiedRoleEligibilitySchedule](unifiedroleeligibilityschedule.md) e representa uma atribuição de função qualificada real criada por meio de Privileged Identity Management. Esse recurso dá suporte às operações Lista e Obter para fins de exibição de atribuições atuais e futuras.
 
 Herda [de unifiedRoleScheduleInstanceBase](../resources/unifiedrolescheduleinstancebase.md).
 
@@ -32,17 +32,17 @@ Herda [de unifiedRoleScheduleInstanceBase](../resources/unifiedrolescheduleinsta
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|appScopeId|String|ID do escopo específico do aplicativo quando o escopo de atribuição é específico do aplicativo. O escopo de uma atribuição determina o conjunto de recursos para os quais a entidade foi concedida acesso. Os escopos de diretório são escopos compartilhados armazenados no diretório que são compreendidos por vários aplicativos. Use "/" para o escopo de todo o locatário. Os escopos do aplicativo são escopos definidos e compreendidos somente por esse aplicativo. Herdado [de unifiedRoleScheduleInstanceBase](../resources/unifiedrolescheduleinstancebase.md)|
-|directoryScopeId|String|ID do objeto directory que representa o escopo da atribuição. O escopo de uma atribuição determina o conjunto de recursos para os quais a entidade foi concedida acesso. Os escopos de diretório são escopos compartilhados armazenados no diretório que são compreendidos por vários aplicativos. Os escopos do aplicativo são escopos definidos e compreendidos somente por esse aplicativo. Herdado [de unifiedRoleScheduleInstanceBase](../resources/unifiedrolescheduleinstancebase.md)|
-|endDateTime|DateTimeOffset|Tempo em que a roleEligibilityScheduleInstance expirará|
-|id|String|O identificador exclusivo da roleEligibilityScheduleInstance. Key, not nullable, Read-only.Inherited from [unifiedRoleScheduleInstanceBase](../resources/unifiedrolescheduleinstancebase.md)|
-|memberType|String|Tipo de associação da atribuição. Pode ser `Inherited` , `Direct` ou `Group` .|
-|principalId|String|Objectid da entidade à qual a atribuição está sendo concedida. Herdado [de unifiedRoleScheduleInstanceBase](../resources/unifiedrolescheduleinstancebase.md)|
-|roleDefinitionId|String|ID do unifiedRoleDefinition para o que a atribuição se destina. Somente leitura. Herdado [de unifiedRoleScheduleInstanceBase](../resources/unifiedrolescheduleinstancebase.md)|
-|roleEligibilityScheduleId|String|ID da função paiEligibilitySchedule para esta instância|
-|startDateTime|DateTimeOffset|Hora em que a roleEligibilityScheduleInstance será iniciar|
+|appScopeId|Cadeia de caracteres|Identificador do escopo específico do aplicativo quando o escopo de atribuição for específico do aplicativo. O escopo de uma atribuição determina o conjunto de recursos para os quais a entidade foi concedida acesso. Os escopos do aplicativo são escopos definidos e compreendidos somente por esse aplicativo. Use `/` para escopos de aplicativos de todo o locatário. Use **directoryScopeId** para limitar o escopo a objetos de diretório específicos, por exemplo, unidades administrativas. Herdado [de unifiedRoleScheduleInstanceBase](../resources/unifiedrolescheduleinstancebase.md).|
+|directoryScopeId|Cadeia de caracteres|Identificador do objeto directory que representa o escopo da atribuição. O escopo de uma atribuição determina o conjunto de recursos para os quais a entidade foi concedida acesso. Os escopos de diretório são escopos compartilhados armazenados no diretório que são compreendidos por vários aplicativos. Use `/` para escopo de todo o locatário. Use **appScopeId** para limitar o escopo somente a um aplicativo. Herdado [de unifiedRoleScheduleInstanceBase](../resources/unifiedrolescheduleinstancebase.md).|
+|endDateTime|DateTimeOffset|Tempo em que a roleEligibilityScheduleInstance expirará.|
+|id|Cadeia de caracteres|O identificador exclusivo da roleEligibilityScheduleInstance. Key, not nullable, Read-only.Inherited from [unifiedRoleScheduleInstanceBase](../resources/unifiedrolescheduleinstancebase.md).|
+|memberType|Cadeia de caracteres|Tipo de associação da atribuição. Pode ser `Inherited` , `Direct` ou `Group` .|
+|principalId|Cadeia de caracteres|Identificador da entidade à qual a atribuição está sendo concedida. Pode ser um grupo ou um usuário. Herdado [de unifiedRoleScheduleInstanceBase](../resources/unifiedrolescheduleinstancebase.md).|
+|roleDefinitionId|Cadeia de caracteres|Identificador do unifiedRoleDefinition para o que a atribuição se destina. Somente leitura. Herdado [de unifiedRoleScheduleInstanceBase](../resources/unifiedrolescheduleinstancebase.md).<br> Suporta `$filter` (`eq`).|
+|roleEligibilityScheduleId|Cadeia de caracteres|Identificador da função paiEligibilitySchedule para esta instância.|
+|startDateTime|DateTimeOffset|Hora em que a funçãoEligibilityScheduleInstance será iniciar.|
 
-## <a name="relationships"></a>Relações
+## <a name="relationships"></a>Relacionamentos
 |Relação|Tipo|Descrição|
 |:---|:---|:---|
 |appScope|[appScope](../resources/appscope.md)|Propriedade somente leitura com detalhes do escopo específico do aplicativo quando o escopo de atribuição é específico do aplicativo. Entidade de contenção. Herdado [de unifiedRoleScheduleInstanceBase](../resources/unifiedrolescheduleinstancebase.md)|

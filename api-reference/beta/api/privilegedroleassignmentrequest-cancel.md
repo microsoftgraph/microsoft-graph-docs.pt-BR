@@ -4,13 +4,13 @@ description: Cancele um privilegedRoleAssignmentRequest.
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: governance
-author: shauliu
-ms.openlocfilehash: 9ff689e661b98e2a84f998cc301e20ddb0f53424
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+author: shauliu1
+ms.openlocfilehash: dac7c1395b1a3cb46dc5158d7dced235b2583c6a
+ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50720558"
+ms.lasthandoff: 08/21/2021
+ms.locfileid: "58452873"
 ---
 # <a name="cancel-privilegedroleassignmentrequest"></a>Cancelar privilegedRoleAssignmentRequest
 
@@ -45,7 +45,7 @@ POST /privilegedRoleAssignmentRequests/{requestid}/cancel
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um código de resposta `200 Ok`. Ele retorna [privilegedRoleAssignmentRequest](../resources/privilegedroleassignmentrequest.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um código de resposta `200 Ok`. Ele retorna [privilegedRoleAssignmentRequest](../resources/privilegedroleassignmentrequest.md) no corpo da resposta.
 
 ### <a name="error-codes"></a>Códigos de erro
 Esta API retorna os códigos de erro HTTP padrão. Além disso, ele retorna os códigos de erro personalizados listados na tabela a seguir.

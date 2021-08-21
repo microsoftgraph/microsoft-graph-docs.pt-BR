@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso governanceSubject
-description: Representa usuários, grupos e entidades de serviço sendo gerenciadas no Privileged Identity Management (PIM).
+description: Representa usuários, grupos e entidades de serviço que estão sendo gerenciadas Privileged Identity Management (PIM).
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: governance
-author: shauliu
-ms.openlocfilehash: eedcaff8538d5a0efa110b34cd6a72aef2a3210a
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+author: shauliu1
+ms.openlocfilehash: c3e37d9391bedba160c67f6c30e2f386a1524a9f
+ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50132663"
+ms.lasthandoff: 08/21/2021
+ms.locfileid: "58454231"
 ---
 # <a name="governancesubject-resource-type"></a>Tipo de recurso governanceSubject
 
@@ -18,15 +18,15 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Representa usuários, grupos e entidades de serviço sendo gerenciadas no Privileged Identity Management (PIM).
+Representa usuários, grupos e entidades de serviço que estão sendo gerenciadas Privileged Identity Management (PIM).
 
 
 ## <a name="properties"></a>Propriedades
 | Propriedade  | Tipo       |Descrição|
 |:----------|:----------|:----------|
-|id         |String     | A id do assunto.|
-|type       |String     |O tipo do assunto. O valor pode ser ``User`` ``Group`` , e ``ServicePrincipal`` .|
-|displayName|String     |O nome de exibição do assunto.|
+|id         |Cadeia de caracteres     | A id do assunto.|
+|type       |Cadeia de caracteres     |O tipo do assunto. O valor pode ``User`` ser ``Group`` , e ``ServicePrincipal`` .|
+|displayName|Cadeia de caracteres     |O nome de exibição do assunto.|
 |email      |Cadeia de caracteres     |O endereço de email do assunto do usuário. Se o assunto estiver em outros tipos, ele está vazio.|
 |principalName|Cadeia de caracteres   |O nome principal do assunto do usuário. Se o assunto estiver em outros tipos, ele está vazio.|
 

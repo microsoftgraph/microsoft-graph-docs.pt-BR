@@ -4,13 +4,13 @@ description: Registre um objeto governanceResource no PIM.
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: governance
-author: shauliu
-ms.openlocfilehash: 363ee47fcded93062b325f3f58df14dfa4a3c625
-ms.sourcegitcommit: 4888ac7504533344c4fc6828e2a06a002a1d72d3
+author: shauliu1
+ms.openlocfilehash: 05ab764e1cb4876889cc4627d1f94048990f61ff
+ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "53350863"
+ms.lasthandoff: 08/21/2021
+ms.locfileid: "58453860"
 ---
 # <a name="governanceresource-register"></a>governanceResource: register
 
@@ -34,7 +34,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo | Sem suporte. |
 
-### <a name="azure-ad"></a>Azure AD
+### <a name="azure-ad"></a>Microsoft Azure Active Directory
 
 | Tipo de permissão | Permissões |
 |:--------------- |:----------- |

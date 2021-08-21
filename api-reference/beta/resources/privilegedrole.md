@@ -4,13 +4,13 @@ description: 'Representa uma função de administrador do Azure AD, como: **Admi
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: governance
-author: shauliu
-ms.openlocfilehash: 4eca2f1a3d9de4fa7f625cd6b559b5a0c9c03916
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+author: shauliu1
+ms.openlocfilehash: 5784a28ec18c0ed02540321d92ee2bab386dc760
+ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50444011"
+ms.lasthandoff: 08/21/2021
+ms.locfileid: "58452411"
 ---
 # <a name="privilegedrole-resource-type"></a>Tipo de recurso privilegedRole
 
@@ -21,7 +21,7 @@ Namespace: microsoft.graph
 Representa uma função de administrador do Azure AD, como: **Administrador Global,** Administrador de Cobrança, Administrador de Serviço, Administrador de Usuário, Administrador de Senha etc.
 
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
@@ -37,7 +37,7 @@ Representa uma função de administrador do Azure AD, como: **Administrador Glob
 |id|string|O identificador exclusivo da função de administrador. É uma cadeia de caracteres GUID e tem o mesmo valor que a id do modelo de função do Azure AD para a função determinada. Somente leitura.|
 |name|string|Nome da função.|
 
-## <a name="relationships"></a>Relações
+## <a name="relationships"></a>Relacionamentos
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |assignments|[privilegedRoleAssignment](privilegedroleassignment.md) collection| As atribuições dessa função. Somente leitura. Anulável.|
