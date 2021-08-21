@@ -4,12 +4,12 @@ description: 'Criar um grupo que inclui uma equipe envolve as seguintes etapas: 
 author: hachandr
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: e8175cf44c97609a24227881f22866c0bb1aeea2
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 9c4eeda4530e7e16c2d6cbf8cc252050f660ab74
+ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58260783"
+ms.lasthandoff: 08/21/2021
+ms.locfileid: "58453629"
 ---
 # <a name="creating-teams-and-managing-members-using-microsoft-graph"></a>Criar equipes e gerenciar membros usando o Microsoft Graph
 
@@ -67,7 +67,7 @@ Todas as equipes são apoiadas pelo Microsoft 365 groups. A maneira mais rápida
 
 2. Certifique-se de que o grupo tenha dois ou mais proprietários. É possível fazer isso por meio da operação [adicionar proprietário](/graph/api/group-post-owners?view=graph-rest-1.0). Elas devem ser contas de usuários reais e não contas de serviço. Ter dois proprietários ajuda a lidar com casos em que um proprietário sai da empresa ou não está disponível para realizar operações de gerenciamento de equipe.
 
-3. Adicione todos os membros (e convidados, se necessário) ao grupo usando a operação [adicionar membro](/graph/api/group-post-members?view=graph-rest-1.0), caso não tenha feito isso na Etapa 1. Se você estiver adicionando vários membros, adicione um atraso de 1 segundo após cada operação de adição. 
+3. Adicione todos os membros (e convidados, se necessário) ao grupo usando a operação [adicionar membro](/graph/api/group-post-members?view=graph-rest-1.0), se você não fez isso na Etapa 1. Se você estiver adicionando vários membros, adicione um atraso de 1 segundo após cada operação de adição. 
 
 4. Depois que o grupo for criado com sucesso, o que pode levar até 15 minutos após a conclusão da Etapa 1, crie uma equipe do Microsoft Teams usando a operação [criar equipe a partir de grupo](/graph/api/team-post?view=graph-rest-1.0#example-4-create-a-team-from-group). Se houver um erro, o processo de criação de grupo pode não ser concluído, tente esperar alguns minutos. 
 
@@ -105,7 +105,7 @@ Para adicionar membros depois de criar uma equipe, use a operação [adicionar m
 
 2. O processo em segundo plano será acionado somente se um ou mais usuários na equipe (proprietário ou membro) estiverem ativos no cliente da área de trabalho do Teams. A inicialização do aplicativo Teams e/ou sua execução constitui atividade. Um usuário não precisa visitar especificamente a equipe que está sendo modificada.
 
-    >**Observação:** os clientes móveis do Teams não acionam a sincronização de associações. Pelo menos um usuário deve estar no cliente da área de trabalho para garantir que o processo em segundo plano corra bem.
+    >**Observação:** os clientes móveis do Teams não acionam a sincronização de associação. Pelo menos um usuário deve estar no cliente da área de trabalho para garantir que esse processo em segundo plano corra bem.
 
 ## <a name="checklist-for-validation"></a>Lista de verificação para validação
 

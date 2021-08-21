@@ -5,12 +5,12 @@ author: mkhribech
 localization_priority: Priority
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 38fbfa79802854519a8eaad723b1989ba98ea2af
-ms.sourcegitcommit: 7abb0672a38a6d9b11a2e0d2cc221222cb8358bb
+ms.openlocfilehash: e99aa206e3cb330c1765f993251f9262471d81bc
+ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52896190"
+ms.lasthandoff: 08/21/2021
+ms.locfileid: "58452845"
 ---
 # <a name="create-onlinemeeting"></a>Criar ReuniãoOnline
 
@@ -169,7 +169,7 @@ Content-Type: application/json
 ### <a name="example-2-create-an-online-meeting-in-a-microsoft-teams-channel-with-a-user-token"></a>Exemplo 2: Crie uma reunião online em um canal do Microsoft Teams com um token de usuário
 
 #### <a name="request"></a>Solicitação
->**Observação:**: a ID de objeto do token do usuário aprovada deve ser um membro do canal representado pelo threadid no conteúdo.
+>**Observação:** A ID do objeto do token de usuário passado deve ser um membro do canal representado por **threadId** na carga.
 
 ```http
 POST https://graph.microsoft.com/beta/me/onlineMeetings

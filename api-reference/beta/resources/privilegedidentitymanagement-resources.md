@@ -2,15 +2,15 @@
 title: Privileged Identity Management - recursos do Azure
 description: APIs para o Privileged Identity Management do Azure AD para gerenciar recursos do Azure.
 localization_priority: Priority
-author: shauliu
+author: shauliu1
 ms.prod: governance
 doc_type: conceptualPageType
-ms.openlocfilehash: a64a60258369226ca58c4be070494e20f0d1403a
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 48d0a4ceebee14a504b90433da21ce1f28392393
+ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50136544"
+ms.lasthandoff: 08/21/2021
+ms.locfileid: "58453825"
 ---
 # <a name="privileged-identity-management---azure-resources"></a>Privileged Identity Management - recursos do Azure
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Você pode usar o [Privileged Identity Management (PIM) do Azure Active Directory (Azure AD)](/azure/active-directory/privileged-identity-management/pim-configure) para recursos do Azure para configurar o fluxo de trabalho de acesso just-in-time para suas funções de infraestrutura do Azure em um grupo de gerenciamento, assinatura, grupo de recursos e nível de recurso. Isso inclui funções internas, como Proprietário e Colaborador, além de funções RBAC personalizadas.
+Você pode usar o [Privileged Identity Management (PIM) do Azure Active Directory (Azure AD)](/azure/active-directory/privileged-identity-management/pim-configure) para recursos do Azure para configurar o fluxo de trabalho de acesso just-in-time para suas funções de infraestrutura do Azure em um grupo de gerenciamento, assinatura, grupo de recursos e nível de recurso. Isso inclui funções internas, como Proprietário e Colaborador, bem como funções RBAC personalizadas.
 
 ## <a name="common-use-cases-for-pim-and-azure-resources-using-a-rest-api"></a>Casos de uso comuns para recursos do PIM e do Azure usando uma API REST
 
