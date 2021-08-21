@@ -1,16 +1,16 @@
 ---
 title: Obter unifiedRoleManagementPolicyRule
 description: Leia as propriedades e as relações de um objeto unifiedRoleManagementPolicyRule.
-author: shauliu
+author: shauliu1
 localization_priority: Normal
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 060dea603d51f08c258e3988d9292c384e657b84
-ms.sourcegitcommit: ae83b2b372902268517fd17a8b10d6d9add422af
+ms.openlocfilehash: 18b5bed725c816e2b3c5ac7ddeb9c567f755c306
+ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "53334504"
+ms.lasthandoff: 08/21/2021
+ms.locfileid: "58453076"
 ---
 # <a name="get-unifiedrolemanagementpolicyrule"></a>Obter unifiedRoleManagementPolicyRule
 Namespace: microsoft.graph

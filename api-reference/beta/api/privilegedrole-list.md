@@ -4,13 +4,13 @@ description: Recupere uma lista de objetos privilegedRole.
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: governance
-author: shauliu
-ms.openlocfilehash: e785505a3b6a86b82a1631422e0e8861e68551d0
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+author: shauliu1
+ms.openlocfilehash: f42ed124e5c55923c81ee3269a0e377d6b4e62c4
+ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52055257"
+ms.lasthandoff: 08/21/2021
+ms.locfileid: "58453671"
 ---
 # <a name="list-privilegedroles"></a>Listar privilegedRoles
 
@@ -85,7 +85,7 @@ GET https://graph.microsoft.com/beta/privilegedRoles
 ---
 
 ##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser reduzido para facilitar a leitura.
 <!-- {
   "blockType": "response",
   "truncated": true,

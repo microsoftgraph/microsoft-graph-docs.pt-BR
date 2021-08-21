@@ -1,16 +1,16 @@
 ---
 title: 'usuário: getMemberGroups'
-description: Retorne todos os grupos dos quais o usuário é membro. A verificação foi transitiva, ao contrário de leitura a
+description: Retorne todos os grupos dos quais o usuário é membro. A verificação é transitiva, ao contrário da leitura do
 localization_priority: Normal
 author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: d6a553a7b0c91363b398b50d6faf228d81d99316
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 77f676211623d9077e882f7e12bb70c843b4d88e
+ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52052625"
+ms.lasthandoff: 08/21/2021
+ms.locfileid: "58452761"
 ---
 # <a name="user-getmembergroups"></a>usuário: getMemberGroups
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 Retorne todos os grupos dos quais o usuário é membro. A verificação é transitiva, diferentemente da leitura da propriedade de navegação [member](../api/user-list-memberof.md), que retorna somente os grupos dos quais o usuário é membro direto.
 
-Esta função é compatível com o Microsoft 365 e outros tipos de grupos provisionados no Azure AD. O número máximo de grupos que cada solicitação pode retornar é 2046. Observe que os grupos do Microsoft 365 não podem conter grupos. Portanto, associações em um grupo do Microsoft 365 sempre são diretas.
+Essa função dá suporte Microsoft 365 e outros tipos de grupos provisionados no Azure AD. O número máximo de grupos que cada solicitação pode retornar é 11000. Observe que Microsoft 365 grupos não podem conter grupos. Portanto, a associação em um Microsoft 365 grupo é sempre direta.
 
 ## <a name="permissions"></a>Permissões
 
@@ -104,7 +104,7 @@ Content-length: 33
 
 ##### <a name="response"></a>Resposta
 
-Veja a seguir um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser reduzido para facilitar a leitura.
 
 <!-- {
   "blockType": "response",

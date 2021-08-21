@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso governanceRuleSetting
-description: Representa as regras das que as configurações de função são compostas.
+description: Representa as regras de que as configurações de função são compostas.
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: governance
-author: shauliu
-ms.openlocfilehash: b55ddfea8f46f9d064b4a032a804c2c5f4847d1a
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+author: shauliu1
+ms.openlocfilehash: 956d3b3c17182285d1ba74552a3b0bfdd5c717fa
+ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50132689"
+ms.lasthandoff: 08/21/2021
+ms.locfileid: "58454042"
 ---
 # <a name="governancerulesetting-resource-type"></a>Tipo de recurso governanceRuleSetting
 
@@ -18,13 +18,13 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Representa as regras das que as configurações de função são compostas.
+Representa as regras de que as configurações de função são compostas.
 
 
 ## <a name="properties"></a>Propriedades
 |Propriedade      | Tipo         |Descrição|
 |:-------------|:-------------|:----------|
-|ruleIdentifier|String        |A id da regra. Por exemplo, ``ExpirationRule`` e ``MfaRule`` .|
+|ruleIdentifier|Cadeia de caracteres        |A id da regra. Por exemplo, ``ExpirationRule`` e ``MfaRule`` .|
 |configuração       |Cadeia de caracteres        |As configurações da regra. O valor é uma cadeia de caracteres JSON com uma lista de pares no formato Parameter_Name:Parameter_Value. Por exemplo, `{"permanentAssignment":false,"maximumGrantPeriodInMinutes":129600}`|
 
 ## <a name="json-representation"></a>Representação JSON

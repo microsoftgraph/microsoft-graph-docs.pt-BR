@@ -1,16 +1,16 @@
 ---
 title: Listar unifiedRoleEligibilitySchedules
 description: Obter uma lista dos objetos unifiedRoleEligibilitySchedule e suas propriedades.
-author: shauliu
+author: shauliu1
 localization_priority: Normal
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 1817550be3e4903eba3a62e37ad6353b676a3c7d
-ms.sourcegitcommit: ae83b2b372902268517fd17a8b10d6d9add422af
+ms.openlocfilehash: 2d006bf78e945ef4dc0319fd94216fa33701e4bc
+ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "53334553"
+ms.lasthandoff: 08/21/2021
+ms.locfileid: "58453762"
 ---
 # <a name="list-unifiedroleeligibilityschedules"></a>Listar unifiedRoleEligibilitySchedules
 Namespace: microsoft.graph
@@ -39,7 +39,7 @@ GET /roleManagement/directory/roleEligibilitySchedules
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte a todos os parâmetros de consulta OData para ajudar a personalizar a resposta. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
+Este método dá suporte aos `$select` `$filter` parâmetros de consulta E OData para ajudar a personalizar a resposta. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 |Nome|Descrição|
@@ -87,7 +87,9 @@ GET https://graph.microsoft.com/beta/roleManagement/directory/roleEligibilitySch
 
 
 ### <a name="response"></a>Resposta
-**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+
+Este é um exemplo de resposta.
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -99,21 +101,28 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#roleManagement/directory/roleEligibilitySchedules",
   "value": [
     {
-      "id": "5cfd7709-7709-5cfd-0977-fd5c0977fd5c",
-      "principalId": "5cfd7709-7709-5cfd-0977-fd5c0977fd5c",
-      "roleDefinitionId": "5cfd7709-7709-5cfd-0977-fd5c0977fd5c",
-      "directoryScopeId": "5cfd7709-7709-5cfd-0977-fd5c0977fd5c",
-      "appScopeId": "5cfd7709-7709-5cfd-0977-fd5c0977fd5c",
-      "createdUsing": "5cfd7709-7709-5cfd-0977-fd5c0977fd5c",
-      "createdDateTime": "2020-09-09T21:35:27.91Z",
-      "modifiedDateTime": "2020-09-09T21:35:27.91Z",
+      "id": "313af44a-07c9-43a7-9970-5072a6b5591f",
+      "principalId": "398164b1-5196-49dd-ada2-364b49f99b27",
+      "roleDefinitionId": "fdd7a751-b60b-444a-984c-02652fe8fa1c",
+      "directoryScopeId": "/",
+      "appScopeId": null,
+      "createdUsing": "313af44a-07c9-43a7-9970-5072a6b5591f",
+      "createdDateTime": "2021-07-27T13:51:08.43Z",
+      "modifiedDateTime": "0001-01-01T08:00:00Z",
       "status": "Provisioned",
+      "memberType": "Direct",
       "scheduleInfo": {
-        "@odata.type": "microsoft.graph.requestSchedule"
-      },
-      "memberType": "direct"
+        "startDateTime": "2021-07-27T13:51:08.43Z",
+        "recurrence": null,
+        "expiration": {
+          "type": "noExpiration",
+          "endDateTime": null,
+          "duration": null
+        }
+      }
     }
   ]
 }

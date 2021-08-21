@@ -1,16 +1,16 @@
 ---
 title: Obter unifiedRoleEligibilityScheduleInstance
 description: Leia as propriedades e as relações de um objeto unifiedRoleEligibilityScheduleInstance.
-author: shauliu
+author: shauliu1
 localization_priority: Normal
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 0ed2a3bf051dbb0a698ca7abfc628daee1269efb
-ms.sourcegitcommit: ae83b2b372902268517fd17a8b10d6d9add422af
+ms.openlocfilehash: 6526cff1519785af67c69df77803d087495fac57
+ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "53334686"
+ms.lasthandoff: 08/21/2021
+ms.locfileid: "58452425"
 ---
 # <a name="get-unifiedroleeligibilityscheduleinstance"></a>Obter unifiedRoleEligibilityScheduleInstance
 Namespace: microsoft.graph
@@ -39,7 +39,7 @@ GET /roleManagement/directory/roleEligibilityScheduleInstances/{unifiedRoleEligi
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte a todos os parâmetros de consulta OData para ajudar a personalizar a resposta. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
+Este método dá suporte ao `$select` parâmetro de consulta OData para ajudar a personalizar a resposta. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 |Nome|Descrição|
@@ -64,7 +64,7 @@ Se tiver êxito, este método retornará um código de resposta e um `200 OK` [o
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/roleManagement/directory/roleEligibilityScheduleInstances/5cfd7709-7709-5cfd-0977-fd5c0977fd5c
+GET https://graph.microsoft.com/beta/roleManagement/directory/roleEligibilityScheduleInstances/UafX_Qu2SkSYTAJlL-j6HCssmvzcHW1IohFf6Mp3-h9xbmLcN0jrQL5KvCnYihF4-2-e
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-unifiedroleeligibilityscheduleinstance-csharp-snippets.md)]
@@ -87,7 +87,9 @@ GET https://graph.microsoft.com/beta/roleManagement/directory/roleEligibilitySch
 
 
 ### <a name="response"></a>Resposta
-**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+
+Este é um exemplo de resposta.
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -99,17 +101,16 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "id": "d12c1ab0-1ab0-d12c-b01a-2cd1b01a2cd1",
-    "principalId": "5cfd7709-7709-5cfd-0977-fd5c0977fd5c",
-    "roleDefinitionId": "5cfd7709-7709-5cfd-0977-fd5c0977fd5c",
-    "directoryScopeId": "5cfd7709-7709-5cfd-0977-fd5c0977fd5c",
-    "appScopeId": "5cfd7709-7709-5cfd-0977-fd5c0977fd5c",
-    "startDateTime": "2020-09-09T21:35:27.91Z",
-    "endDateTime": "2020-09-09T21:35:27.91Z",
-    "memberType": "direct",
-    "roleEligibilityScheduleId": "5cfd7709-7709-5cfd-0977-fd5c0977fd5c"
-  }
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#roleManagement/directory/roleEligibilityScheduleInstances/$entity",
+  "id": "UafX_Qu2SkSYTAJlL-j6HCssmvzcHW1IohFf6Mp3-h9xbmLcN0jrQL5KvCnYihF4-2-e",
+  "principalId": "fc9a2c2b-1ddc-486d-a211-5fe8ca77fa1f",
+  "roleDefinitionId": "fdd7a751-b60b-444a-984c-02652fe8fa1c",
+  "directoryScopeId": "/administrativeUnits/dc626e71-4837-40eb-be4a-bc29d88a1178",
+  "appScopeId": null,
+  "startDateTime": "2021-07-27T14:03:04.4Z",
+  "endDateTime": null,
+  "memberType": "Direct",
+  "roleEligibilityScheduleId": "3dc04956-5e79-4e84-a2fc-4c168bb30a5f"
 }
 ```
 

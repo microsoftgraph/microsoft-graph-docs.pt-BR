@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso ticketInfo
 description: O objeto que representa informações de tíquete relacionadas a solicitações de atribuição de função
-author: shauliu
+author: shauliu1
 localization_priority: Normal
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 1a20fb083b87576d098d9a67dfdcc8260f9144483b4291d66c54a60c7c7bcfb1
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 2d97d4f220a4579b805959c3b5d9c369293b2730
+ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54190378"
+ms.lasthandoff: 08/21/2021
+ms.locfileid: "58453636"
 ---
 # <a name="ticketinfo-resource-type"></a>Tipo de recurso ticketInfo
 

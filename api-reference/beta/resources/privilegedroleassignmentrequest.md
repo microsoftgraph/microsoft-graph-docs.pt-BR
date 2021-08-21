@@ -4,13 +4,13 @@ description: Representa a solicitação de operações de atribuição de funç�
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: governance
-author: shauliu
-ms.openlocfilehash: b6e7a9c4a761b699ffe4128a62fd69a75a0662df
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+author: shauliu1
+ms.openlocfilehash: 59144fd6008e081eb6de29c94626fe5fb2c57af6
+ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50722257"
+ms.lasthandoff: 08/21/2021
+ms.locfileid: "58454126"
 ---
 # <a name="privilegedroleassignmentrequest-resource-type"></a>Tipo de recurso privilegedRoleAssignmentRequest
 
@@ -45,10 +45,10 @@ Representa a solicitação de operações de atribuição de função em Gerenci
 |status|Cadeia de caracteres| Somente leitura.O status da solicitação de atribuição de função. O valor pode `NotStarted` ser , , , , , , , , `Completed` , , , `RequestedApproval` `Scheduled` `Approved` `ApprovalDenied` `ApprovalAborted` `Cancelling` `Cancelled` `Revoked` `RequestExpired` .|
 |ticketNumber|Cadeia de caracteres| O ticketNumber para a atribuição de função. |
 |ticketSystem|Cadeia de caracteres| O ticketSystem para a atribuição de função.|
-|tipo|Cadeia de caracteres| Representando o tipo da operação na atribuição de função. O valor pode ser `AdminAdd` : Administradores adicionam usuários a funções; `UserAdd` : Os usuários adicionam atribuições de função.|
+|type|Cadeia de caracteres| Representando o tipo da operação na atribuição de função. O valor pode ser `AdminAdd` : Administradores adicionam usuários a funções; `UserAdd` : Os usuários adicionam atribuições de função.|
 |userId|Cadeia de caracteres| A id do usuário.|
 
-## <a name="relationships"></a>Relações
+## <a name="relationships"></a>Relacionamentos
 | Relação | Tipo        | Descrição |
 |:-------------|:------------|:------------|
 |roleInfo|[privilegedRole](privilegedrole.md)| O objeto roleInfo da solicitação de atribuição de função.|

@@ -1,21 +1,21 @@
 ---
 title: 'unifiedRoleEligibilityScheduleRequest: cancel'
 description: Cancele um unifiedRoleEligibilityScheduleRequest.
-author: shauliu
+author: shauliu1
 localization_priority: Normal
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 39c7129513cbc5815dad48841f6284ae307aed0c
-ms.sourcegitcommit: ae83b2b372902268517fd17a8b10d6d9add422af
+ms.openlocfilehash: f0b8821ffe4136965fe57856eb7d74fb814795f6
+ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "53334679"
+ms.lasthandoff: 08/21/2021
+ms.locfileid: "58452824"
 ---
 # <a name="unifiedroleeligibilityschedulerequest-cancel"></a>unifiedRoleEligibilityScheduleRequest: cancel
 Namespace: microsoft.graph
 
-Cancele imediatamente [um unifiedRoleEligibilityScheduleRequest](../resources/unifiedroleeligibilityschedulerequest.md) e o sistema exclua automaticamente a solicitação cancelada após 30 dias.
+Cancele imediatamente [um unifiedRoleEligibilityScheduleRequest](../resources/unifiedroleeligibilityschedulerequest.md) que está em um status e que o sistema exclua automaticamente a solicitação cancelada após `Granted` 30 dias. Depois de chamar essa ação, **o status** do unifiedRoleEligibilityScheduleRequest cancelado muda para `Revoked` .
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -46,7 +46,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, esta ação retornará um código de resposta `204 No Content`.
+Se tiver êxito, esta ação retornará um código de resposta `204 No Content`. Tentar cancelar uma solicitação que não está em um estado cancelável, por exemplo, um objeto unifiedRoleEligibilityScheduleRequest cujo **status** é ou retorna um código `Provisioned` de `Failed` `400 Bad Request` erro.
 
 ## <a name="examples"></a>Exemplos
 
@@ -59,7 +59,7 @@ Se tiver êxito, esta ação retornará um código de resposta `204 No Content`.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/roleManagement/directory/roleEligibilityScheduleRequests/{unifiedRoleEligibilityScheduleRequestsId}/cancel
+POST https://graph.microsoft.com/beta/roleManagement/directory/roleEligibilityScheduleRequests/532bef1f-c677-4564-aa6f-811444a4f018/cancel
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/unifiedroleeligibilityschedulerequest-cancel-csharp-snippets.md)]
@@ -82,7 +82,6 @@ POST https://graph.microsoft.com/beta/roleManagement/directory/roleEligibilitySc
 
 
 ### <a name="response"></a>Resposta
-**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true

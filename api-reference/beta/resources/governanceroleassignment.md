@@ -4,13 +4,13 @@ description: Representa a atribuição de um usuário ou grupo a uma função.
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: governance
-author: shauliu
-ms.openlocfilehash: 532ea3c1d8fe5b1bc1128994c96c493774e9b19b
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+author: shauliu1
+ms.openlocfilehash: 048eaf2c208911714f0f880a02b37cc77cbc0966
+ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50964559"
+ms.lasthandoff: 08/21/2021
+ms.locfileid: "58453839"
 ---
 # <a name="governanceroleassignment-resource-type"></a>Tipo de recurso governanceRoleAssignment
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph [!INCLUDE [beta-disclaimer](../../includes/beta-discl
 
 Representa a atribuição de um usuário ou grupo a uma função.
 
-O PIM (Privileged Identity Management) dá suporte a dois tipos de atribuições:
+Privileged Identity Management (PIM) oferece suporte a dois tipos de atribuições:
 
 1. Atribuição ativa - Representa o acesso direto/ativado aos recursos.
 2. Atribuição qualificada - representa um estágio intermediário de acesso privilegiado a recursos, entre nenhum acesso e acesso direto. Os administradores podem atribuir usuários/grupos com antecedência e, sempre que o acesso for necessário, o acesso é necessário para obter o acesso instantâneo ao recurso `eligible assignment` `activation` por várias `eligible assignment` horas. Após a ativação, `active assignment` um será criado para os usuários/membros do grupo indicarem o status ativado.
@@ -28,7 +28,7 @@ O PIM (Privileged Identity Management) dá suporte a dois tipos de atribuições
 | Método          | Tipo de retorno |Descrição|
 |:------------|:--------|:--------|
 |[Get](../api/governanceroleassignment-get.md) |  [governanceRoleAssignment](../resources/governanceroleassignment.md) |Ler propriedades e relações de uma entidade de atribuição de função.|
-|[Lista](../api/governanceroleassignment-list.md) | [Coleção governanceRoleAssignment](../resources/governanceroleassignment.md)|Listar uma coleção de atribuições de função em um recurso. |
+|[List](../api/governanceroleassignment-list.md) | [Coleção governanceRoleAssignment](../resources/governanceroleassignment.md)|Listar uma coleção de atribuições de função em um recurso. |
 |[Export](../api/governanceroleassignment-export.md) | octet-stream |Baixe uma coleção de atribuições de função em um recurso e salve como um `.csv` arquivo.|
 
 Não `POST` , , ou as operações são `PUT` `PATCH` `DELETE` suportadas no conjunto de `roleAssignments` entidades. Todas as operações de criação, atualização e exclusão são `governanceRoleAssignment` feitas por `governanceRoleAssignmentRequest` .
@@ -48,13 +48,13 @@ Não `POST` , , ou as operações são `PUT` `PATCH` `DELETE` suportadas no conj
 |memberType|Cadeia de caracteres      |O tipo de membro. O valor pode ser: (se a atribuição de função for herdada de um escopo de recurso pai), (se a atribuição de função não for herdada, mas vier da associação de uma atribuição de grupo) ou (se a atribuição de função não for herdada nem de uma atribuição de `Inherited` `Group` `User` grupo).|
 
 
-## <a name="relationships"></a>Relações
+## <a name="relationships"></a>Relacionamentos
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|recurso|[governanceResource](../resources/governanceresource.md)|Somente leitura. O recurso associado à atribuição de função. |
+|recurso|[governanceResource](../resources/governanceresource.md)|Apenas leitura. O recurso associado à atribuição de função. |
 |roleDefinition|[governanceRoleDefinition](../resources/governanceroledefinition.md)|Somente leitura. A definição de função associada à atribuição de função. |
-|assunto|[governanceSubject](../resources/governancesubject.md)|Somente leitura. O assunto associado à atribuição de função. |
-|linkedEligibleRoleAssignment|[governanceRoleAssignment](../resources/governanceroleassignment.md)|Somente leitura. Se for um `active assignment` e criado devido à ativação em um , ele `eligible assignment` representará o objeto disso `eligible assignment` ; Caso contrário, o valor será `null` . |
+|assunto|[governanceSubject](../resources/governancesubject.md)|Apenas leitura. O assunto associado à atribuição de função. |
+|linkedEligibleRoleAssignment|[governanceRoleAssignment](../resources/governanceroleassignment.md)|Apenas leitura. Se for um `active assignment` e criado devido à ativação em um , ele `eligible assignment` representará o objeto disso `eligible assignment` ; Caso contrário, o valor será `null` . |
 
 ## <a name="json-representation"></a>Representação JSON
 

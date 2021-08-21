@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso unifiedRoleManagementPolicyNotificationRule
 description: Um unifiedRoleManagementPolicyNotificationRule especifica a regra de notificação associada a uma política de gerenciamento de função. Ele é derivado de microsoft.graph.unifiedRoleManagementPolicyRule.
-author: shauliu
+author: shauliu1
 localization_priority: Normal
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: bcf4a9dca524f1c0d8c36328df5c140e0bedb47c0d1fb56d871dd7942d9fb80a
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 8f6c8324869fa7a6ec800368f7b47609abd7920b
+ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54145114"
+ms.lasthandoff: 08/21/2021
+ms.locfileid: "58453643"
 ---
 # <a name="unifiedrolemanagementpolicynotificationrule-resource-type"></a>Tipo de recurso unifiedRoleManagementPolicyNotificationRule
 
@@ -28,7 +28,7 @@ Herda [de unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpol
 |notificationRecipients|String collection|A lista de recepients de notificação como email.|
 |notificationType|Cadeia de caracteres|O tipo de notificação. Um de Email.|
 |recipientType|Cadeia de caracteres|O tipo de destinatário. Um dos Solicitadores, Aprovadores, Administradores.|
-|isDefaultRecipientsEnabled|Boolean|Se o destinatário padrão está recebendo o email ou não.|
+|isDefaultRecipientsEnabled|Booliano|Se o destinatário padrão está recebendo o email ou não.|
 |destino|[unifiedRoleManagementPolicyRuleTarget](../resources/unifiedrolemanagementpolicyruletarget.md)|O destino da regra. Herdado [de unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md)|
 
 ## <a name="relationships"></a>Relações

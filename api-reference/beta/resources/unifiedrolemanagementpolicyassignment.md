@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso unifiedRoleManagementPolicyAssignment
 description: Um unifiedRoleManagementPolicyAssignment atribui a política a um escopo específico e à definição de função.
-author: shauliu
+author: shauliu1
 localization_priority: Normal
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 1d35d2937e0636803a82d5b47bc2db165b677baf04936de46d11bc4ff87b00f9
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: c674e35692e472ea24a5670ff40950647e8d076d
+ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54145128"
+ms.lasthandoff: 08/21/2021
+ms.locfileid: "58454203"
 ---
 # <a name="unifiedrolemanagementpolicyassignment-resource-type"></a>Tipo de recurso unifiedRoleManagementPolicyAssignment
 
@@ -31,7 +31,7 @@ Um unifiedRoleManagementPolicyAssignment atribui a política a um escopo especí
 |scopeId|Cadeia de caracteres|A id do escopo em que a política é atribuída. Por exemplo "/", groupId, etc.|
 |scopeType|Cadeia de caracteres|O tipo do escopo em que a política é atribuída. Um de Directory, DirectoryRole, Group.|
 
-## <a name="relationships"></a>Relações
+## <a name="relationships"></a>Relacionamentos
 |Relação|Tipo|Descrição|
 |:---|:---|:---|
 |política|[unifiedRoleManagementPolicy](../resources/unifiedrolemanagementpolicy.md)|A política da atribuição.|

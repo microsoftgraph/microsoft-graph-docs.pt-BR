@@ -4,13 +4,13 @@ description: Recupere uma lista de objetos privilegedRoleAssignment associados �
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: governance
-author: shauliu
-ms.openlocfilehash: f1be6a9860daf1b29567b28a43e44a51433a2e1d
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+author: shauliu1
+ms.openlocfilehash: 55962741c22a89f126ad064294ce036d5b1905cc
+ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52055264"
+ms.lasthandoff: 08/21/2021
+ms.locfileid: "58454245"
 ---
 # <a name="list-assignments"></a>Listar tarefas
 
@@ -85,7 +85,7 @@ GET https://graph.microsoft.com/beta/privilegedRoles/{id}/assignments
 ---
 
 ##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser reduzido para facilitar a leitura.
 <!-- {
   "blockType": "response",
   "truncated": true,

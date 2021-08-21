@@ -1,23 +1,23 @@
 ---
 title: Criar unifiedRoleAssignmentScheduleRequest
 description: Crie um novo objeto unifiedRoleAssignmentScheduleRequest.
-author: shauliu
+author: shauliu1
 localization_priority: Normal
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: a487a8cba0d5f14906eafea5fe0844d419709853
-ms.sourcegitcommit: ae83b2b372902268517fd17a8b10d6d9add422af
+ms.openlocfilehash: e73b14197a6bd0c26cdb8889c1f01139794f3a50
+ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "53334343"
+ms.lasthandoff: 08/21/2021
+ms.locfileid: "58453559"
 ---
 # <a name="create-unifiedroleassignmentschedulerequest"></a>Criar unifiedRoleAssignmentScheduleRequest
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Crie um novo [objeto unifiedRoleAssignmentScheduleRequest.](../resources/unifiedroleassignmentschedulerequest.md)
+Crie um novo [objeto unifiedRoleAssignmentScheduleRequest.](../resources/unifiedroleassignmentschedulerequest.md) Essa operação permite que administradores e usuários adicionem, removam, estendam ou renovem atribuições. Para executar essa solicitação, o usuário de chamada deve ter a autenticação multifafatória (MFA) imposta e executar a consulta em uma sessão na qual foi desafiado para MFA. Consulte [Habilitar a Autenticação Multifabilitar do Azure AD](/azure/active-directory/authentication/howto-mfa-userstates)por usuário para proteger eventos de login.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -52,12 +52,12 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [unified
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|Cadeia de caracteres|O identificador exclusivo para unifiedRoleAssignmentScheduleRequest. Chave, não anulada, somente leitura.|
-|ação|Cadeia de caracteres|Representando o tipo da operação na atribuição de função. O valor pode ser <ul><li>`AdminAdd`: Os administradores atribuem usuários/grupos a funções;</li><li>`UserAdd`: Os usuários ativam atribuições qualificadas;</li><li> `AdminUpdate`: Os administradores alteram as atribuições de função existentes</li><li>`AdminRemove`: Os administradores removem usuários/grupos de funções;<li>`UserRemove`: Os usuários desativam as atribuições ativas;<li>`UserExtend`: Os usuários solicitam estender suas atribuições de expiração;</li><li>`AdminExtend`: Os administradores estendem atribuições expiradas.</li><li>`UserRenew`: Os usuários solicitam a renovação de suas atribuições expiradas;</li><li>`AdminRenew`: Os administradores estendem atribuições expiradas.</li></ul>|
-|principalId|Cadeia de caracteres|Objectid da entidade à qual a atribuição está sendo concedida.|
-|roleDefinitionId|Cadeia de caracteres|ID do unifiedRoleDefinition para o que a atribuição se destina. Somente leitura.|
-|directoryScopeId|Cadeia de caracteres|ID do objeto directory que representa o escopo da atribuição. O escopo de uma atribuição determina o conjunto de recursos para os quais a entidade foi concedida acesso. Os escopos de diretório são escopos compartilhados armazenados no diretório que são compreendidos por vários aplicativos. Os escopos do aplicativo são escopos definidos e compreendidos somente por esse aplicativo.|
-|appScopeId|Cadeia de caracteres|ID do escopo específico do aplicativo quando o escopo de atribuição é específico do aplicativo. O escopo de uma atribuição determina o conjunto de recursos para os quais a entidade foi concedida acesso. Os escopos de diretório são escopos compartilhados armazenados no diretório que são compreendidos por vários aplicativos. Use "/" para o escopo de todo o locatário. Os escopos do aplicativo são escopos definidos e compreendidos somente por esse aplicativo.|
-|isValidationOnly|Boolean|Um booleano que determina se a chamada é uma validação ou uma chamada real. De definir essa propriedade somente se você quiser verificar se uma ativação está sujeita a regras adicionais, como MFA, antes de realmente enviar a solicitação.|
+|ação|Cadeia de caracteres|Representa o tipo da operação na atribuição de função. Os valores possíveis são: <ul><li>`AdminAssign`: Para que os administradores atribuam funções a usuários ou grupos.</li><li>`AdminRemove`: Para que os administradores removam usuários ou grupos de funções.</li><li> `AdminUpdate`: Para que os administradores alterem as atribuições de função existentes.</li><li>`AdminExtend`: Para que os administradores estendam atribuições expiradas.</li><li>`AdminRenew`: Para que os administradores renovem atribuições expiradas.</li><li>`SelfActivate`: Para que os usuários ativem suas atribuições.</li><li>`SelfDeactivate`: Para que os usuários desativem suas atribuições ativas.</li><li>`SelfExtend`: Para que os usuários solicitem estender suas atribuições de expiração.</li><li>`SelfRenew`: Para que os usuários solicitem a renovação de suas atribuições expiradas.</li></ul>
+|principalId|Cadeia de caracteres|Identificador da entidade à qual a atribuição está sendo concedida.|
+|roleDefinitionId|Cadeia de caracteres|Identificador do unifiedRoleDefinition para o que a atribuição se destina. Somente leitura.|
+|directoryScopeId|Cadeia de caracteres|Identificador do objeto directory que representa o escopo da atribuição. O escopo de uma atribuição determina o conjunto de recursos para os quais a entidade foi concedida acesso. Os escopos de diretório são escopos compartilhados armazenados no diretório que são compreendidos por vários aplicativos. Use `/` para escopo de todo o locatário. Use **appScopeId** para limitar o escopo somente a um aplicativo. |
+|appScopeId|Cadeia de caracteres|Identificador do escopo específico do aplicativo quando o escopo de atribuição for específico do aplicativo. O escopo de uma atribuição determina o conjunto de recursos para os quais a entidade foi concedida acesso. Os escopos do aplicativo são escopos definidos e compreendidos somente por esse aplicativo. Use `/` para escopos de aplicativos de todo o locatário. Use **directoryScopeId** para limitar o escopo a objetos de diretório específicos, por exemplo, unidades administrativas.|
+|isValidationOnly|Booliano|Especifica se a chamada é uma validação ou uma chamada real. De definir essa propriedade somente se você quiser verificar se uma ativação está sujeita a regras adicionais, como MFA, antes de realmente enviar a solicitação.|
 |targetScheduleId|Cadeia de caracteres|ID do objeto schedule anexado à atribuição.|
 |justification|Cadeia de caracteres|Uma mensagem fornecida por usuários e administradores ao criar a solicitação sobre por que ela é necessária.|
 |scheduleInfo|[requestSchedule](../resources/requestschedule.md)|O objeto schedule da solicitação de atribuição de função.|
@@ -67,9 +67,15 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [unified
 
 Se tiver êxito, este método retornará um código de resposta e um `201 Created` [objeto unifiedRoleAssignmentScheduleRequest](../resources/unifiedroleassignmentschedulerequest.md) no corpo da resposta.
 
+Quando o usuário de chamada não foi desafiado para autenticação multifato durante a sessão de login, uma solicitação com a ação SelfActivate falha e retorna `400 Bad request` um código de resposta.
+
 ## <a name="examples"></a>Exemplos
 
-### <a name="request"></a>Solicitação
+### <a name="example-1-admin-assigning-a-directory-role-to-a-principal"></a>Exemplo 1: Administrador atribuindo uma função de diretório a uma entidade
+
+#### <a name="request"></a>Solicitação
+
+Na solicitação a seguir, o administrador cria uma solicitação para atribuir uma função identificada por `fdd7a751-b60b-444a-984c-02652fe8fa1c` uma entidade identificada por **id** `07706ff1-46c7-4847-ae33-3003830675a1` . O escopo de sua função é todos os objetos de diretório no locatário e a atribuição é permanente, ou seja, ela não expira.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -80,23 +86,18 @@ Se tiver êxito, este método retornará um código de resposta e um `201 Create
 ``` http
 POST https://graph.microsoft.com/beta/roleManagement/directory/roleAssignmentScheduleRequests/
 Content-Type: application/json
-Content-length: 510
 
 {
-  "@odata.type": "#Microsoft.Identity.Governance.Common.Data.ExternalModels.V1.unifiedRoleAssignmentScheduleRequest",
-  "action": "String",
-  "principalId": "String",
-  "roleDefinitionId": "String",
-  "directoryScopeId": "String",
-  "appScopeId": "String",
-  "isValidationOnly": "Boolean",
-  "targetScheduleId": "String",
-  "justification": "String",
+  "action": "AdminAssign",
+  "justification": "Assign User Admin to IT Helpdesk (User) group",
+  "roleDefinitionId": "fdd7a751-b60b-444a-984c-02652fe8fa1c",
+  "directoryScopeId": "/",
+  "principalId": "07706ff1-46c7-4847-ae33-3003830675a1",
   "scheduleInfo": {
-    "@odata.type": "microsoft.graph.requestSchedule"
-  },
-  "ticketInfo": {
-    "@odata.type": "microsoft.graph.ticketInfo"
+    "startDateTime": "2021-07-01T00:00:00Z",
+    "expiration": {
+      "type": "NoExpiration"
+    }
   }
 }
 ```
@@ -120,8 +121,10 @@ Content-length: 510
 
 
 
-### <a name="response"></a>Resposta
-**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+#### <a name="response"></a>Resposta
+
+Este é um exemplo de resposta.
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -133,21 +136,131 @@ HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-  "id": "c13ee236-e236-c13e-36e2-3ec136e23ec1",
-  "action": "String",
-  "principalId": "String",
-  "roleDefinitionId": "String",
-  "directoryScopeId": "String",
-  "appScopeId": "String",
-  "isValidationOnly": "Boolean",
-  "targetScheduleId": "String",
-  "justification": "String",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#roleManagement/directory/roleAssignmentScheduleRequests/$entity",
+  "id": "b5a22921-656a-4429-9c4e-59a5f576614d",
+  "status": "Provisioned",
+  "createdDateTime": "2021-07-27T09:18:40.2029365Z",
+  "completedDateTime": "2021-07-27T09:18:42.7811184Z",
+  "approvalId": null,
+  "customData": null,
+  "action": "AdminAssign",
+  "principalId": "07706ff1-46c7-4847-ae33-3003830675a1",
+  "roleDefinitionId": "fdd7a751-b60b-444a-984c-02652fe8fa1c",
+  "directoryScopeId": "/",
+  "appScopeId": null,
+  "isValidationOnly": false,
+  "targetScheduleId": "b5a22921-656a-4429-9c4e-59a5f576614d",
+  "justification": "Assign User Admin to IT Helpdesk (User) group",
+  "createdBy": {
+    "application": null,
+    "device": null,
+    "user": {
+      "displayName": null,
+      "id": "fc9a2c2b-1ddc-486d-a211-5fe8ca77fa1f"
+    }
+  },
   "scheduleInfo": {
-    "@odata.type": "microsoft.graph.requestSchedule"
+    "startDateTime": "2021-07-27T09:18:42.7811184Z",
+    "recurrence": null,
+    "expiration": {
+      "type": "noExpiration",
+      "endDateTime": null,
+      "duration": null
+    }
   },
   "ticketInfo": {
-    "@odata.type": "microsoft.graph.ticketInfo"
+    "ticketNumber": null,
+    "ticketSystem": null
   }
 }
 ```
 
+### <a name="example-2-user-activating-their-eligible-role"></a>Exemplo 2: o usuário ativando sua função qualificada
+
+#### <a name="request"></a>Solicitação
+
+Na solicitação a seguir, um usuário identificado por **principalId** ativa sua própria função `c6ad1942-4afa-47f8-8d48-afb5d8d69d2f` qualificada identificada por `9b895d92-2cd3-44c7-9d02-a6ac2d5ea5c3` . O escopo de sua função é todos os objetos de diretório no locatário e a atribuição é de cinco horas. Para executar essa solicitação, o usuário de chamada deve ter a autenticação multifafatória (MFA) imposta e executar a consulta em uma sessão na qual foi desafiado para MFA.
+
+<!-- {
+  "blockType": "request",
+  "name": "create_unifiedroleassignmentschedulerequest_from_unifiedroleassignmentschedulerequests_SelfActivate"
+}
+-->
+``` http
+POST https://graph.microsoft.com/beta/roleManagement/directory/roleAssignmentScheduleRequests/
+Content-Type: application/json
+
+{
+    "action": "SelfActivate",
+    "principalId": "c6ad1942-4afa-47f8-8d48-afb5d8d69d2f",
+    "roleDefinitionId": "9b895d92-2cd3-44c7-9d02-a6ac2d5ea5c3",
+    "directoryScopeId": "/",
+    "justification": "Need to update app roles for selected apps.",
+    "scheduleInfo": {
+        "startDateTime": "2021-08-17T17:40:00.000Z",
+        "expiration": {
+            "type": "AfterDuration",
+            "duration": "PT5H"
+        }
+    },
+    "ticketInfo": {
+        "ticketNumber": "CONTOSO:Normal-67890",
+        "ticketSystem": "MS Project"
+    }
+}
+```
+
+
+#### <a name="response"></a>Resposta
+
+Este é um exemplo de resposta.
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.unifiedRoleAssignmentScheduleRequest"
+}
+-->
+``` http
+HTTP/1.1 201 Created
+Content-Type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#roleManagement/directory/roleAssignmentScheduleRequests/$entity",
+    "id": "163daf73-8746-4996-87de-ab71dc624bf9",
+    "status": "Granted",
+    "createdDateTime": "2021-08-17T17:39:36.7040696Z",
+    "completedDateTime": "2021-08-17T17:40:00Z",
+    "approvalId": null,
+    "customData": null,
+    "action": "SelfActivate",
+    "principalId": "c6ad1942-4afa-47f8-8d48-afb5d8d69d2f",
+    "roleDefinitionId": "9b895d92-2cd3-44c7-9d02-a6ac2d5ea5c3",
+    "directoryScopeId": "/",
+    "appScopeId": null,
+    "isValidationOnly": false,
+    "targetScheduleId": "163daf73-8746-4996-87de-ab71dc624bf9",
+    "justification": "Need to update app roles for selected apps.",
+    "createdBy": {
+        "application": null,
+        "device": null,
+        "user": {
+            "displayName": null,
+            "id": "c6ad1942-4afa-47f8-8d48-afb5d8d69d2f"
+        }
+    },
+    "scheduleInfo": {
+        "startDateTime": "2021-08-17T17:40:00Z",
+        "recurrence": null,
+        "expiration": {
+            "type": "afterDuration",
+            "endDateTime": null,
+            "duration": "PT5H"
+        }
+    },
+    "ticketInfo": {
+        "ticketNumber": "CONTOSO:Normal-67890",
+        "ticketSystem": "MS Project"
+    }
+}
+```

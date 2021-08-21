@@ -4,13 +4,13 @@ description: Permitir que os administradores atualizem suas decisões ( ou ) sob
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: governance
-author: shauliu
-ms.openlocfilehash: ef30468664dd64dc09d9cfb352d514a395368698
-ms.sourcegitcommit: 4888ac7504533344c4fc6828e2a06a002a1d72d3
+author: shauliu1
+ms.openlocfilehash: d81bad403fbac4789c5cf5083c5eb8c85a815bf1
+ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "53350870"
+ms.lasthandoff: 08/21/2021
+ms.locfileid: "58453930"
 ---
 # <a name="update-governanceroleassignmentrequests"></a>Atualizar governançaRoleAssignmentRequests
 
@@ -33,7 +33,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo | Sem suporte. |
 
-### <a name="azure-ad"></a>Azure AD
+### <a name="azure-ad"></a>Microsoft Azure Active Directory
 
 | Tipo de permissão | Permissões |
 |:--------------- |:----------- |

@@ -4,13 +4,13 @@ description: Crie uma solicitação de atribuição de função para representar
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: governance
-author: shauliu
-ms.openlocfilehash: babca9a53ad10d5b029fdbdd4119220d143b779a
-ms.sourcegitcommit: 4888ac7504533344c4fc6828e2a06a002a1d72d3
+author: shauliu1
+ms.openlocfilehash: a43803b69cfe382fd93bf30af345a659633b9af8
+ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "53350905"
+ms.lasthandoff: 08/21/2021
+ms.locfileid: "58453776"
 ---
 # <a name="create-governanceroleassignmentrequest"></a>Criar governanceRoleAssignmentRequest
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 Crie uma solicitação de atribuição de função para representar a operação que você deseja em uma atribuição de função. A tabela a seguir lista as operações.
 
-| Operation                                   | Tipo        |
+| Operação                                   | Tipo        |
 |:--------------------------------------------|:------------|
 | Atribuir uma atribuição de função                    | AdminAdd    |
 | Ativar uma atribuição de função qualificada        | UserAdd     |
@@ -44,7 +44,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo | Sem suporte. |
 
-### <a name="azure-ad"></a>Azure AD
+### <a name="azure-ad"></a>Microsoft Azure Active Directory
 
 | Tipo de permissão | Permissões |
 |:--------------- |:----------- |
@@ -85,7 +85,7 @@ No corpo da solicitação, fornece uma representação JSON de um [objeto govern
 | roleDefinitionId | Cadeia de caracteres                                                   | A ID da definição de função. Obrigatório. |
 | subjectId        | Cadeia de caracteres                                                   | A ID do assunto. Obrigatório. |
 | assignmentState  | Cadeia de caracteres                                                   | O estado da atribuição. O valor pode ser `Eligible` e `Active` . Obrigatório. |
-| tipo             | Cadeia de caracteres                                                   | O tipo de solicitação. O valor pode `AdminAdd` ser , , , , , , `UserAdd` e `AdminUpdate` `AdminRemove` `UserRemove` `UserExtend` `UserRenew` `AdminRenew` `AdminExtend` . Obrigatório. |
+| type             | Cadeia de caracteres                                                   | O tipo de solicitação. O valor pode `AdminAdd` ser , , , , , , `UserAdd` e `AdminUpdate` `AdminRemove` `UserRemove` `UserExtend` `UserRenew` `AdminRenew` `AdminExtend` . Obrigatório. |
 | motivo           | Cadeia de caracteres                                                   | O motivo precisa ser fornecido para a solicitação de atribuição de função para fins de auditoria e revisão. |
 | Cronograma         | [governanceSchedule](../resources/governanceschedule.md) | O cronograma da solicitação de atribuição de função. Para o tipo de `UserAdd` `AdminAdd` solicitação de , `AdminUpdate` , e , é `AdminExtend` necessário. |
 
@@ -123,7 +123,7 @@ Neste exemplo, um administrador atribui nawu@contoso.com usuário à função Le
 | roleDefinitionId | Cadeia de caracteres                                                   | Sim                      | \<roleDefinitionId\> |
 | subjectId        | Cadeia de caracteres                                                   | Sim                      | \<subjectId\> |
 | assignmentState  | Cadeia de caracteres                                                   | Sim                      | Qualificado / Ativo |
-| tipo             | Cadeia de caracteres                                                   | Sim                      | AdminAdd |
+| type             | Cadeia de caracteres                                                   | Sim                      | AdminAdd |
 | motivo           | Cadeia de caracteres                                                   | depende da função Configurações |   |
 | Cronograma         | [governanceSchedule](../resources/governanceschedule.md) | Sim                      |   |
 
@@ -235,7 +235,7 @@ Neste exemplo, o usuário nawu@contoso.com ativa a função leitor de cobrança 
 | roleDefinitionId | Cadeia de caracteres                                                   | Sim                      | \<roleDefinitionId\> |
 | subjectId        | Cadeia de caracteres                                                   | Sim                      | \<subjectId\> |
 | assignmentState  | Cadeia de caracteres                                                   | Sim                      | Ativo |
-| tipo             | Cadeia de caracteres                                                   | Sim                      | UserAdd |
+| type             | Cadeia de caracteres                                                   | Sim                      | UserAdd |
 | motivo           | Cadeia de caracteres                                                   | depende da função Configurações |   |
 | Cronograma         | [governanceSchedule](../resources/governanceschedule.md) | Sim                      |   |
 
@@ -358,7 +358,7 @@ Neste exemplo, o usuário nawu@contoso.com desativa a função leitor de cobran�
 | roleDefinitionId | Cadeia de caracteres                                                   | Sim      | \<roleDefinitionId\> |
 | subjectId        | Cadeia de caracteres                                                   | Sim      | \<subjectId\> |
 | assignmentState  | Cadeia de caracteres                                                   | Sim      | Ativo |
-| tipo             | Cadeia de caracteres                                                   | Sim      | UserRemove |
+| type             | Cadeia de caracteres                                                   | Sim      | UserRemove |
 | motivo           | Cadeia de caracteres                                                   | Não       |   |
 | Cronograma         | [governanceSchedule](../resources/governanceschedule.md) | Não       |   |
 
@@ -448,7 +448,7 @@ Neste exemplo, um administrador remove o usuário nawu@contoso.com da função L
 | roleDefinitionId | Cadeia de caracteres                                                   | Sim      | \<roleDefinitionId\> |
 | subjectId        | Cadeia de caracteres                                                   | Sim      | \<subjectId\> |
 | assignmentState  | Cadeia de caracteres                                                   | Sim      | Qualificado / Ativo |
-| tipo             | Cadeia de caracteres                                                   | Sim      | AdminRemove |
+| type             | Cadeia de caracteres                                                   | Sim      | AdminRemove |
 | motivo           | Cadeia de caracteres                                                   | Não       |   |
 | Cronograma         | [governanceSchedule](../resources/governanceschedule.md) | Não       |   |
 
@@ -536,7 +536,7 @@ Neste exemplo, os administradores atualizam a atribuição de função para o us
 | roleDefinitionId | Cadeia de caracteres                                                   | Sim                     | \<roleDefinitionId\> |
 | subjectId        | Cadeia de caracteres                                                   | Sim                     | \<subjectId\> |
 | assignmentState  | Cadeia de caracteres                                                   | Sim                     | Qualificado / Ativo |
-| tipo             | Cadeia de caracteres                                                   | Sim                     | AdminUpdate |
+| type             | Cadeia de caracteres                                                   | Sim                     | AdminUpdate |
 | motivo           | Cadeia de caracteres                                                   | depende de roleSettings |   |
 | Cronograma         | [governanceSchedule](../resources/governanceschedule.md) | Sim                     |   |
 
@@ -647,7 +647,7 @@ Este exemplo estende a atribuição de função de expiração para o usuário A
 | roleDefinitionId | Cadeia de caracteres                                                   | Sim                     | \<roleDefinitionId\> |
 | subjectId        | Cadeia de caracteres                                                   | Sim                     | \<subjectId\> |
 | assignmentState  | Cadeia de caracteres                                                   | Sim                     | Qualificado / Ativo |
-| tipo             | Cadeia de caracteres                                                   | Sim                     | AdminExtend |
+| type             | Cadeia de caracteres                                                   | Sim                     | AdminExtend |
 | motivo           | Cadeia de caracteres                                                   | depende de roleSettings |   |
 | Cronograma         | [governanceSchedule](../resources/governanceschedule.md) | Sim                     |   |
 

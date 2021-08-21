@@ -4,13 +4,13 @@ description: Representa as configurações de uma função privilegiada.
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: governance
-author: shauliu
-ms.openlocfilehash: a1f20455ffcc818aa1b1edf784d6990d68b7556b
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+author: shauliu1
+ms.openlocfilehash: b954dbc0dc72028d60861c5c07820302f3cbe19d
+ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50962561"
+ms.lasthandoff: 08/21/2021
+ms.locfileid: "58454119"
 ---
 # <a name="privilegedrolesettings-resource-type"></a>Tipo de recurso privilegedRoleSettings
 
@@ -31,7 +31,7 @@ Representa as configurações de uma função privilegiada.
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |elevationDuration|duração|A duração quando a função é ativada.|
-|id|cadeia de caracteres| O identificador exclusivo para as configurações de função. Somente leitura.|
+|id|string| O identificador exclusivo para as configurações de função. Somente leitura.|
 |isMfaOnElevationConfigurable|booliano|`true` se **mfaOnElevation** for configurável. `false` se **mfaOnElevation** não for configurável.|
 |lastGlobalAdmin|booliano|Somente uso interno.|
 |maxElavationDuration|duração|Duração máxima da função ativada.|

@@ -5,12 +5,12 @@ author: mecampos
 localization_priority: Normal
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 6f271195136a3a469de871e3f17fec5e485ff86c
-ms.sourcegitcommit: 5bb981b4853663354a566d4a4a5cbf288939e441
+ms.openlocfilehash: e1b928041e7891127a5e1de4fa46c5906815dd90
+ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "53580706"
+ms.lasthandoff: 08/21/2021
+ms.locfileid: "58454238"
 ---
 # <a name="create-schema"></a>Criar esquema
 Namespace: microsoft.graph.externalConnectors
@@ -24,8 +24,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|Não aplicável|
-|Delegada (conta pessoal da Microsoft)|Não aplicável|
+|Delegado (conta corporativa ou de estudante)|Não aplicável|
+|Delegado (conta pessoal da Microsoft)|Não aplicável|
 |Aplicativo| ExternalConnection.ReadWrite.OwnedBy|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -43,12 +43,7 @@ Ao registrar um esquema de item personalizado, o objeto DEVE ter a propriedade `
 
 ## <a name="response"></a>Resposta
 
-Com o header incluído na solicitação, se bem-sucedido, este método retorna um código de resposta e uma URL no header de resposta que podem ser usados para obter o `Prefer: respond-async` `202 Accepted` status da `Location` [operação](../api/externalconnectors-connectionoperation-get.md).
-
-Sem o header incluído na solicitação, se bem-sucedido, este método retorna um código de resposta e um novo objeto `Prefer: respond-async` de esquema no corpo da `201 Created` resposta. [](../resources/externalconnectors-schema.md)
-
-> [!NOTE]
-> A criação de um esquema é um processo de longa duração propenso a tempos-de-tempo de gateway. Recomendamos usar `Prefer: respond-async` o header para evitar erros de tempo de tempo.
+Se tiver êxito, este método retornará um código de resposta e uma URL no header de resposta que podem ser usados `202 Accepted` para obter o status da `Location` [operação.](../api/externalconnectors-connectionoperation-get.md)
 
 ## <a name="examples"></a>Exemplos
 
@@ -68,7 +63,6 @@ Este é um exemplo de solicitação.
 ```http
 POST https://graph.microsoft.com/v1.0/external/connections/contosohr/schema
 Content-type: application/json
-Prefer: respond-async
 
 {
   "baseType": "microsoft.graph.externalItem",

@@ -1,16 +1,16 @@
 ---
 title: 'unifiedRoleAssignmentScheduleRequest: filterByCurrentUser'
 description: Obter uma lista dos objetos unifiedRoleAssignmentScheduleRequest e suas propriedades filtradas por uma entidade de usuário específica
-author: shauliu
+author: shauliu1
 localization_priority: Normal
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 182ffc04a0c86838eea976c3c77496cba8a92f86
-ms.sourcegitcommit: ae83b2b372902268517fd17a8b10d6d9add422af
+ms.openlocfilehash: 42fa5cb94c699423bd86d69a4fde7cee2a586dcf
+ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "53333972"
+ms.lasthandoff: 08/21/2021
+ms.locfileid: "58453811"
 ---
 # <a name="unifiedroleassignmentschedulerequest-filterbycurrentuser"></a>unifiedRoleAssignmentScheduleRequest: filterByCurrentUser
 Namespace: microsoft.graph
@@ -36,16 +36,19 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 }
 -->
 ``` http
-GET /roleManagement/directory/roleAssignmentScheduleRequests/filterByCurrentUser
+GET /roleManagement/directory/roleAssignmentScheduleRequests/filterByCurrentUser(on='principal')
 ```
 
-## <a name="query-parameters"></a>Parâmetros de consulta
+## <a name="function-parameters"></a>Parâmetros de função
 A tabela a seguir mostra os parâmetros de consulta que podem ser usados com esse método.
 
 |Parâmetro|Tipo|Descrição|
 |:---|:---|:---|
-|on|RoleAssignmentScheduleRequestFilterByCurrentUserOptions|ID do objeto principal.|
+|on|RoleAssignmentScheduleRequestFilterByCurrentUserOptions|Filtre os objetos de consulta para os quais o usuário atual é a entidade principal. O valor permitido é `principal` . Obrigatório.|
 
+
+## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
+Este método dá suporte ao `$select` parâmetro de consulta OData para ajudar a personalizar a resposta. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 |Nome|Descrição|
@@ -57,7 +60,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta e uma coleção `200 OK` [unifiedRoleAssignmentScheduleRequest](../resources/unifiedRoleAssignmentScheduleRequest.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e uma coleção de objetos `200 OK` [unifiedRoleAssignmentScheduleRequest](../resources/unifiedRoleAssignmentScheduleRequest.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -68,12 +71,14 @@ Se tiver êxito, este método retornará um código de resposta e uma coleção 
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/roleManagement/directory/RoleAssignmentScheduleRequests/filterByCurrentUser(on='d6e4112f-112f-d6e4-2f11-e4d62f11e4d6')
+GET https://graph.microsoft.com/beta/roleManagement/directory/RoleAssignmentScheduleRequests/filterByCurrentUser(on='principal')
 ```
 
 
 ### <a name="response"></a>Resposta
-**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+
+Este é um exemplo de resposta.
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -85,22 +90,43 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(unifiedRoleAssignmentScheduleRequest)",
   "value": [
     {
-      "id": "b1477448-2cc6-4ceb-93b4-54a202a89413",
+      "id": "b5a22921-656a-4429-9c4e-59a5f576614d",
+      "status": "Provisioned",
+      "createdDateTime": "2021-07-27T09:18:42.737Z",
+      "completedDateTime": "2021-07-27T09:18:42.78Z",
+      "approvalId": null,
+      "customData": null,
       "action": "AdminAssign",
-      "principalId": "b1477448-2cc6-4ceb-93b4-54a202a89413",
-      "roleDefinitionId": "b1477448-2cc6-4ceb-93b4-54a202a89413",
-      "directoryScopeId": "b1477448-2cc6-4ceb-93b4-54a202a89413",
-      "appScopeId": "b1477448-2cc6-4ceb-93b4-54a202a89413",
+      "principalId": "5659e4d9-9ab6-4678-9f1b-72322d469e9b",
+      "roleDefinitionId": "fdd7a751-b60b-444a-984c-02652fe8fa1c",
+      "directoryScopeId": "/",
+      "appScopeId": null,
       "isValidationOnly": false,
-      "targetScheduleId": "b1477448-2cc6-4ceb-93b4-54a202a89413",
-      "justification": "this is a justification",
+      "targetScheduleId": "b5a22921-656a-4429-9c4e-59a5f576614d",
+      "justification": "Assign User Admin to IT Helpdesk (User) group",
+      "createdBy": {
+        "application": null,
+        "device": null,
+        "user": {
+          "displayName": null,
+          "id": "fc9a2c2b-1ddc-486d-a211-5fe8ca77fa1f"
+        }
+      },
       "scheduleInfo": {
-        "@odata.type": "microsoft.graph.requestSchedule"
+        "startDateTime": "2021-07-27T09:18:42.7811184Z",
+        "recurrence": null,
+        "expiration": {
+          "type": "noExpiration",
+          "endDateTime": null,
+          "duration": null
+        }
       },
       "ticketInfo": {
-        "@odata.type": "microsoft.graph.ticketInfo"
+        "ticketNumber": null,
+        "ticketSystem": null
       }
     }
   ]

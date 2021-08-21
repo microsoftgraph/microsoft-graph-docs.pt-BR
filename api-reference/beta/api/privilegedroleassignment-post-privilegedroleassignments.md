@@ -4,13 +4,13 @@ description: Use essa API para criar um novo privilegedRoleAssignment.
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: governance
-author: shauliu
-ms.openlocfilehash: ae11f0c21a4dcb314d12f4b74e570ea4cafc03a8
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+author: shauliu1
+ms.openlocfilehash: 39d13a6a0bc19dae28ee70ba53185faf063c02ae
+ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52052898"
+ms.lasthandoff: 08/21/2021
+ms.locfileid: "58454063"
 ---
 # <a name="create-privilegedroleassignment"></a>Create privilegedRoleAssignment
 
@@ -87,7 +87,7 @@ Content-length: 164
 
 No corpo da solicitação, fornece uma representação JSON do [objeto privilegedRoleAssignment.](../resources/privilegedroleassignment.md)
 ##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser reduzido para facilitar a leitura.
 <!-- {
   "blockType": "response",
   "truncated": true,

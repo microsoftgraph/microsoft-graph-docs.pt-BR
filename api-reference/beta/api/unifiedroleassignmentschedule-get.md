@@ -1,16 +1,16 @@
 ---
 title: Obter unifiedRoleAssignmentSchedule
 description: Leia as propriedades e as relações de um objeto unifiedRoleAssignmentSchedule.
-author: shauliu
+author: shauliu1
 localization_priority: Normal
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 9efffbff7bab2c7bf012c6d6fc7dbc77e923688f
-ms.sourcegitcommit: 486fe9c77d4d89c5416bb83e8c716e6918c47370
+ms.openlocfilehash: 38a4303bc7492b1cb8966a439fde98334917a6ec
+ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53440229"
+ms.lasthandoff: 08/21/2021
+ms.locfileid: "58452467"
 ---
 # <a name="get-unifiedroleassignmentschedule"></a>Obter unifiedRoleAssignmentSchedule
 Namespace: microsoft.graph
@@ -19,12 +19,12 @@ Namespace: microsoft.graph
 
 Leia as propriedades e as relações de [um objeto unifiedRoleAssignmentSchedule.](../resources/unifiedroleassignmentschedule.md)
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|RoleAssignmentSchedule.Read.Directory, RoleManagement.Read.Directory, RoleManagement.Read.All, RoleAssignmentSchedule.ReadWrite.Directory|
+|Delegado (conta corporativa ou de estudante)|RoleAssignmentSchedule.Read.Directory, RoleManagement.Read.Directory, RoleManagement.Read.All, RoleAssignmentSchedule.ReadWrite.Directory|
 |Delegado (conta pessoal da Microsoft)|Sem suporte|
 |Aplicativo|RoleManagement.Read.All, RoleManagement.Read.Directory, RoleManagement.ReadWrite.Directory|
 
@@ -39,7 +39,7 @@ GET /roleManagement/directory/roleAssignmentSchedules/{unifiedRoleAssignmentSche
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte a todos os parâmetros de consulta OData para ajudar a personalizar a resposta. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
+Este método dá suporte ao `$select` parâmetro de consulta OData para ajudar a personalizar a resposta. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 |Nome|Descrição|
@@ -64,7 +64,7 @@ Se tiver êxito, este método retornará um código de resposta e um `200 OK` [o
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/roleManagement/directory/roleAssignmentSchedules/b1477448-2cc6-4ceb-93b4-54a202a89413
+GET https://graph.microsoft.com/beta/roleManagement/directory/roleAssignmentSchedules/226faf5f-61b4-40bb-8726-52e48ec914de
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-unifiedroleassignmentschedule-csharp-snippets.md)]
@@ -87,7 +87,9 @@ GET https://graph.microsoft.com/beta/roleManagement/directory/roleAssignmentSche
 
 
 ### <a name="response"></a>Resposta
-**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+
+Este é um exemplo de resposta.
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -99,21 +101,26 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "id": "dce468b2-68b2-dce4-b268-e4dcb268e4dc",
-    "principalId": "dce468b2-68b2-dce4-b268-e4dcb268e4dc",
-    "roleDefinitionId": "dce468b2-68b2-dce4-b268-e4dcb268e4dc",
-    "directoryScopeId": "dce468b2-68b2-dce4-b268-e4dcb268e4dc",
-    "appScopeId": "dce468b2-68b2-dce4-b268-e4dcb268e4dc",
-    "createdUsing": "dce468b2-68b2-dce4-b268-e4dcb268e4dc",
-    "createdDateTime": "2020-09-09T21:35:27.91Z",
-    "modifiedDateTime": "2020-09-09T21:35:27.91Z",
-    "status": "Provisioned",
-    "scheduleInfo": {
-      "@odata.type": "microsoft.graph.requestSchedule"
-    },
-    "assignmentType": "Eligible",
-    "memberType": "direct"
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#roleManagement/directory/roleAssignmentSchedules/$entity",
+  "id": "226faf5f-61b4-40bb-8726-52e48ec914de",
+  "principalId": "7532aaf7-0740-41d2-a79b-4a035f122a66",
+  "roleDefinitionId": "fdd7a751-b60b-444a-984c-02652fe8fa1c",
+  "directoryScopeId": "/",
+  "appScopeId": null,
+  "createdUsing": "226faf5f-61b4-40bb-8726-52e48ec914de",
+  "createdDateTime": "2021-07-27T09:42:40.087Z",
+  "modifiedDateTime": null,
+  "status": "Provisioned",
+  "assignmentType": "Assigned",
+  "memberType": "Direct",
+  "scheduleInfo": {
+    "startDateTime": "2021-07-27T09:42:40.087Z",
+    "recurrence": null,
+    "expiration": {
+      "type": "noExpiration",
+      "endDateTime": null,
+      "duration": null
+    }
   }
 }
 ```
