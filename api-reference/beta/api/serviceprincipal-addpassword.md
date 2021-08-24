@@ -5,12 +5,12 @@ localization_priority: Normal
 author: sureshja
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 8e8d5f9d27f5a2521dd7636dfd8b27cc74ed7a28
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: cd791f00aa2a3f5e2e6513256bb7ec7e2328dbe1
+ms.sourcegitcommit: c6f7a931a8d83ac54f577b7bec08237fd17ce51a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50720302"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58490508"
 ---
 # <a name="serviceprincipal-addpassword"></a>servicePrincipal: addPassword
 
@@ -47,7 +47,7 @@ POST /servicePrincipals/{id}/addPassword
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, forneça um `passwordCredential` objeto opcional com as seguintes propriedades.
+No corpo da solicitação, forneça um objeto [passwordCredential](../resources/passwordcredential.md) vazio ou com as seguintes propriedades opcionais.
 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
@@ -57,7 +57,7 @@ No corpo da solicitação, forneça um `passwordCredential` objeto opcional com 
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código `200 OK` de resposta e um novo objeto [passwordCredential](../resources/passwordcredential.md) no corpo da resposta. A **propriedade secretText** no objeto de resposta contém as senhas fortes geradas pelo Azure Active Directory que têm de 16 a 64 caracteres de comprimento. Não há como recuperar essa senha no futuro.
+Se tiver êxito, este método retornará um código `200 OK` de resposta e um novo objeto [passwordCredential](../resources/passwordcredential.md) no corpo da resposta. A **propriedade secretText** no objeto de resposta contém as senhas fortes geradas por Azure Active Directory que têm 16 a 64 caracteres de comprimento. Não há como recuperar essa senha no futuro.
 
 ## <a name="examples"></a>Exemplos
 
@@ -93,7 +93,7 @@ Content-type: application/json
 ### <a name="response"></a>Resposta
 
 Este é um exemplo de resposta.
-
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,

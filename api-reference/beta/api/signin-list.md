@@ -5,12 +5,12 @@ description: Obter uma lista dos logins do usuário em um Azure Active Directory
 localization_priority: Normal
 author: besiler
 ms.prod: identity-and-access-reports
-ms.openlocfilehash: 010ebe7d1d415c9e40613114874157884239be3e
-ms.sourcegitcommit: 5bb981b4853663354a566d4a4a5cbf288939e441
+ms.openlocfilehash: 78d6a80103e3c5328f9ed69729c72195d3254885
+ms.sourcegitcommit: c6f7a931a8d83ac54f577b7bec08237fd17ce51a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "53579635"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58490116"
 ---
 # <a name="list-signins"></a>Listar logons
 
@@ -18,7 +18,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obter uma lista de [objetos signIn.](../resources/signin.md) A lista contém as assinaturas do usuário para seu Azure Active Directory locatário. As inserções em que um nome de usuário e senha são passados como parte do token de autorização e as inserções federadas bem-sucedidas estão incluídas nos logs de login. O tamanho máximo e padrão da página é de 1.000 objetos e, por padrão, as inscrições mais recentes são retornadas primeiro.
+Obter uma lista de [objetos signIn.](../resources/signin.md) A lista contém as assinaturas do usuário para seu Azure Active Directory locatário. As inserções em que um nome de usuário e senha são passados como parte do token de autorização e as inserções federadas bem-sucedidas estão incluídas nos logs de login.
+
+O tamanho máximo e padrão da página é de 1.000 objetos e, por padrão, as inscrições mais recentes são retornadas primeiro. Somente os eventos de login que ocorreram dentro do período [](/azure/active-directory/reports-monitoring/reference-reports-data-retention#how-long-does-azure-ad-store-the-data) de retenção padrão do Azure Active Directory (Azure AD) estão disponíveis.
 
 ## <a name="permissions"></a>Permissões
 
@@ -26,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão | Permissões (da com menos para a com mais privilégios) |
 |:--------------- |:------------------------------------------- |
-| Delegada (conta corporativa ou de estudante) | AuditLog.Read.All e Directory.Read.All |
+| Delegado (conta corporativa ou de estudante) | AuditLog.Read.All e Directory.Read.All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte |
 | Aplicativo | AuditLog.Read.All e Directory.Read.All | 
 
@@ -34,10 +36,10 @@ Os aplicativos devem [estar registrados corretamente](/azure/active-directory/ac
 
 Além das permissões delegadas, o usuário inscreveu precisa pertencer a uma das seguintes funções de diretório que permitem ler relatórios de logons. Para saber mais sobre funções de diretório, consulte Funções do [Azure AD integrados](/azure/active-directory/roles/permissions-reference):
 + Administrador global
-+ Leitor Global
++ Leitor global
 + Leitor de Relatórios
-+ Administrador de Segurança
-+ Operador de Segurança
++ Administrador de segurança
++ Operador de segurança
 + Leitor de Segurança
 
 ## <a name="http-request"></a>Solicitação HTTP

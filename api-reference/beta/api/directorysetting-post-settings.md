@@ -5,12 +5,12 @@ localization_priority: Normal
 author: adimitui
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: ab5281a940dd1dace265d87954cc49893c4d97f5
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 24851132918e8768e7e6a03976a218a13c291c0a
+ms.sourcegitcommit: c6f7a931a8d83ac54f577b7bec08237fd17ce51a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52046577"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58490102"
 ---
 # <a name="create-a-directory-setting"></a>Criar uma configuração de diretório
 
@@ -32,7 +32,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Application | Directory.ReadWrite.All |
+|Aplicativo | Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -52,11 +52,11 @@ No corpo da solicitação, fornece uma representação JSON do [objeto directory
 
 Se tiver êxito, este método retornará o código de resposta e `201 Created` [o objeto directorySetting](../resources/directorysetting.md) no corpo da resposta.
 
-## <a name="example"></a>Exemplo
-##### <a name="request"></a>Solicitação
-Este é um exemplo da solicitação.
+## <a name="example-1-create-a-new-setting-for-all-microsoft-365-groups-in-the-tenant"></a>Exemplo 1: Criar uma nova configuração para todos os grupos Microsoft 365 no locatário
 
-# <a name="http"></a>[HTTP](#tab/http)
+### <a name="request"></a>Solicitação
+Este é um exemplo de solicitação.
+
 <!-- {
   "blockType": "request",
   "name": "create_directorysetting_from_settings"
@@ -64,39 +64,35 @@ Este é um exemplo da solicitação.
 ```http
 POST https://graph.microsoft.com/beta/settings
 Content-type: application/json
-Content-length: 222
 
 {
-  "templateId": "templateId-value",
+  "displayName": "Group.Unified",
+  "templateId": "62375ab9-6b52-47ed-826b-58e47e0e304b",
   "values": [
     {
-      "name": "name-value",
-      "value": "value-value"
+      "name": "GuestUsageGuidelinesUrl",
+      "value": "https://privacy.contoso.com/privacystatement"
+    },
+    {
+      "name": "EnableMSStandardBlockedWords",
+      "value": "true"
+    },
+    {
+      "name": "EnableMIPLabels",
+      "value": "true"
+    },
+    {
+      "name": "PrefixSuffixNamingRequirement",
+      "value": "[Contoso-][GroupName]"
     }
   ]
 }
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-directorysetting-from-settings-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-directorysetting-from-settings-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-directorysetting-from-settings-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/create-directorysetting-from-settings-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 No corpo da solicitação, fornece uma representação JSON do [objeto directorySetting.](../resources/directorysetting.md)
-##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+
+### <a name="response"></a>Resposta
+Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -105,19 +101,83 @@ Veja a seguir um exemplo da resposta. Observação: o objeto de resposta mostrad
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 244
 
 {
-    "@odata.context": "https://graph.microsoft.com/stagingbeta/$metadata#settings/$entity",
-    "id": "id-value",
-    "displayName": "displayName-value",
-    "templateId": "templateId-value",
-    "values": [
-      {
-        "name": "name-value",
-        "value": "value-value"
-      }
-    ]
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#settings/$entity",
+  "id": "f0b2d6f5-097d-4177-91af-a24e530b53cc",
+  "displayName": "Group.Unified",
+  "templateId": "62375ab9-6b52-47ed-826b-58e47e0e304b",
+  "values": [
+    {
+      "name": "GuestUsageGuidelinesUrl",
+      "value": "https://privacy.contoso.com/privacystatement"
+    },
+    {
+      "name": "EnableMSStandardBlockedWords",
+      "value": "true"
+    },
+    {
+      "name": "EnableMIPLabels",
+      "value": "true"
+    },
+    {
+      "name": "PrefixSuffixNamingRequirement",
+      "value": "[Contoso-][GroupName]"
+    }
+  ]
+}
+```
+
+## <a name="example-2-create-a-setting-to-block-guests-for-a-specific-microsoft-365-group"></a>Exemplo 2: Criar uma configuração para bloquear convidados para um grupo Microsoft 365 específico
+
+### <a name="request"></a>Solicitação
+
+<!-- {
+  "blockType": "request",
+  "name": "create_directorysetting_from_settings_for_guests"
+}-->
+```http
+POST https://graph.microsoft.com/v1.0/groups/055a5d18-a3a9-4338-b9c5-de92559b7ebf/settings
+Content-type: application/json
+
+{
+  "displayName": "Group.Unified.Guest",
+  "templateId": "08d542b9-071f-4e16-94b0-74abb372e3d9",
+  "values": [
+    {
+      "name": "AllowToAddGuests",
+      "value": "false"
+    }
+  ]
+}
+```
+
+No corpo da solicitação, fornece uma representação JSON do [objeto directorySetting.](../resources/directorysetting.md)
+
+### <a name="response"></a>Resposta
+
+Observação: o objeto de resposta mostrado aqui pode ser reduzido para a capacidade de leitura.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.directorySetting"
+} -->
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#settings/$entity",
+  "id": "a77ad44e-aa2a-4976-91b5-b947787b9577",
+  "displayName": "Group.Unified.Guest",
+  "templateId": "08d542b9-071f-4e16-94b0-74abb372e3d9",
+  "values": [
+    {
+      "name": "AllowToAddGuests",
+      "value": "false"
+    }
+  ]
 }
 ```
 
@@ -134,5 +194,3 @@ Content-length: 244
   ]
 }
 -->
-
-

@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 16c76c5a42e4ec49023fe4f7a4310cb7482433e1
-ms.sourcegitcommit: 99fdbd9a1806d64626423e1f39342dcde8a1eaf4
+ms.openlocfilehash: e9aa683f0cce2bc108f4d4429908a7fc87fb0cd1
+ms.sourcegitcommit: c6f7a931a8d83ac54f577b7bec08237fd17ce51a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/16/2021
-ms.locfileid: "52971071"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58490130"
 ---
 # <a name="create-call"></a>Criar chamada
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Criar [chamada](../resources/call.md) permite que seu bot crie uma nova chamada ponto a ponto ou grupo de saída ou participe de uma reunião existente. Você precisará registrar [o bot de chamada](/microsoftteams/platform/concepts/calls-and-meetings/registering-calling-bot) e passar pela lista de permissões necessárias, conforme mencionado abaixo.
+Criar [chamada](../resources/call.md) permite que seu bot crie uma nova chamada ponto a ponto ou grupo de saída ou participe de uma reunião existente. Você precisará registrar [o bot de chamada](/microsoftteams/platform/concepts/calls-and-meetings/registering-calling-bot) e passar pela lista de permissões necessárias.
 
 ## <a name="permissions"></a>Permissões
 
@@ -28,9 +28,11 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---------------------------------------|:----------------------------------------------------------------------------------------|
 | Delegado (conta corporativa ou de estudante)     | Não suportado                                                                           |
 | Delegado (conta pessoal da Microsoft) | Não suportado                                                                           |
-| Aplicativo                            | Calls.JoinGroupCallsasGuest.All, Calls.JoinGroupCalls.All, Calls.Initiate. All, Calls.InitiateGroupCalls.All |
+| Aplicativo                            | Calls.JoinGroupCalls.Chat*, Calls.JoinGroupCallsasGuest.All, Calls.JoinGroupCalls.All, Calls.Initiate. All, Calls.InitiateGroupCalls.All |
 
-> **Observação:** Para uma chamada com a mídia hospedada pelo aplicativo, você precisa da permissão Calls.AccessMedia.All, além de uma das permissões listadas.
+> **Observações:** Para uma chamada com mídia hospedada por aplicativo, você precisa da permissão Calls.AccessMedia.All ou calls.AccessMedia.Chat* além de uma das permissões listadas.
+>
+> Permissões marcadas com * use [o consentimento específico do recurso.]( https://aka.ms/teams-rsc)
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -59,7 +61,7 @@ Se tiver êxito, este método retornará um código de resposta e um `201 Create
 > **Observação:** Essa chamada precisa da Calls.Initiate. Todas as permissões.
 
 ##### <a name="request"></a>Solicitação
-O exemplo a seguir mostra a solicitação que faz uma chamada ponto a ponto entre o bot e o usuário especificado. Neste exemplo, a mídia é hospedada pelo serviço. Os valores de token de autorização, URL de retorno de chamada, ID do aplicativo, nome do aplicativo, ID de usuário, nome de usuário e ID de locatário devem ser substituídos por valores reais para fazer o exemplo funcionar.
+O exemplo a seguir mostra uma solicitação que faz uma chamada ponto a ponto entre o bot e o usuário especificado. Neste exemplo, a mídia é hospedada pelo serviço. Os valores de token de autorização, URL de retorno de chamada, ID do aplicativo, nome do aplicativo, ID de usuário, nome de usuário e ID de locatário devem ser substituídos por valores reais para fazer o exemplo funcionar.
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -270,7 +272,7 @@ Content-Type: application/json
 > **Observação**: este exemplo precisa Calls.Initiate. Permissões All e Calls.AccessMedia.All.
 
 ##### <a name="request"></a>Solicitação
-O exemplo a seguir mostra a solicitação que faz uma chamada ponto a ponto entre o bot e o usuário especificado. Neste exemplo, a mídia é hospedada localmente pelo aplicativo. Os valores de token de autorização, url de retorno de chamada, id do aplicativo, nome do aplicativo, id de usuário, nome de usuário e id de locatário devem ser substituídos por valores reais para fazer o exemplo funcionar.
+O exemplo a seguir mostra uma solicitação que faz uma chamada ponto a ponto entre o bot e o usuário especificado. Neste exemplo, a mídia é hospedada localmente pelo aplicativo. Os valores de token de autorização, URL de retorno de chamada, ID do aplicativo, nome do aplicativo, ID de usuário, nome de usuário e ID de locatário devem ser substituídos por valores reais para fazer o exemplo funcionar.
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -341,7 +343,7 @@ Content-Type: application/json
 
 `<Media Session Configuration>` é a configuração de sessão de mídia serializada que contém as informações de sessão da pilha de mídia. Informações específicas sobre áudio, vídeo, informações de ssession VBSS devem ser passadas aqui.
 
-Exemplo de blob de sessão de mídia de áudio é mostrado abaixo
+A seguir, um exemplo de blob de sessão de mídia de áudio.
 ```json
 {\"mpUri\":\"net.tcp://bot.contoso.com:18732/MediaProcessor\",\"audioRenderContexts\":[\"14778cc4-f54c-43c7-989f-9092e34ef784\"],\"videoRenderContexts\":[],\"audioSourceContexts\":[\"a5dcfc9b-5a54-48ef-86f5-1fdd8508741a\"],\"videoSourceContexts\":[],\"dataRenderContexts\":null,\"dataSourceContexts\":null,\"supportedAudioFormat\":\"Pcm16K\",\"videoSinkEncodingFormats\":[],\"mpMediaSessionId\":\"2379cf46-acf3-4fef-a914-be9627075320\",\"regionAffinity\":null,\"skypeMediaBotsVersion\":\"1.11.1.0086\",\"mediaStackVersion\":\"2018.53.1.1\",\"mpVersion\":\"7.2.0.3881\",\"callId\":\"1b69b141-7f1a-4033-9c34-202737190a20\"}
 ```
@@ -560,7 +562,7 @@ Para participar da reunião agendada, precisamos obter a ID do thread, a ID da m
 Essas informações podem ser obtidas da [API Obter Reuniões Online.](../api/onlinemeeting-get.md)
 
 Os valores de token de autorização, url de retorno de chamada, id de aplicativo, nome do aplicativo, id de usuário, nome de usuário e id de locatário devem ser substituídos juntamente com os detalhes obtidos da  [API De](../api/onlinemeeting-get.md) Reuniões Get Online com valores reais para fazer o exemplo funcionar.
-> **Observação:** Este exemplo precisa da `Calls.JoinGroupCalls.All` permissão.
+> **Observação:** Este exemplo precisa da `Calls.JoinGroupCalls.All` permissão ou da permissão específica do `Calls.JoinGroupCalls.Chat` [recurso.](https://aka.ms/teams-rsc)
 
 ##### <a name="request"></a>Solicitação
 
@@ -908,7 +910,9 @@ Content-Type: application/json
 >**Observação:** Para participar de cenários de reunião, além das notificações de estado de chamada, recebemos notificações de lista.
 
 ### <a name="example-6-join-scheduled-meeting-with-app-hosted-media"></a>Exemplo 6: Participar de uma reunião agendada com a mídia hospedada pelo aplicativo
-Para ingressar na reunião com a mídia hospedada no aplicativo, atualize a configuração de mídia com [o AppHostedMediaConfig,](../resources/apphostedmediaconfig.md) conforme mostrado abaixo, no exemplo fornecido acima.
+Para ingressar na reunião com a mídia hospedada pelo aplicativo, atualize a configuração de mídia com [o appHostedMediaConfig,](../resources/apphostedmediaconfig.md) conforme mostrado no exemplo a seguir.
+
+>**Observação:** Este exemplo precisa da `Calls.AccessMedia.All` permissão ou da permissão específica do `Calls.AccessMedia.Chat` [recurso.](https://aka.ms/teams-rsc)
 
 <!-- {
   "blockType": "example",

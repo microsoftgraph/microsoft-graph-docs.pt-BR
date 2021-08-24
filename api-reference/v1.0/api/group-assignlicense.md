@@ -5,12 +5,12 @@ localization_priority: Normal
 author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: e3a23cfe70a578392dc4fa4d75dfa6af414a1427
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: 47e21ffe297dadec8d7856875b977d3a5bd00f6f
+ms.sourcegitcommit: c6f7a931a8d83ac54f577b7bec08237fd17ce51a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52679845"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58490487"
 ---
 # <a name="group-assignlicense"></a>group: assignLicense
 
@@ -58,48 +58,33 @@ Se tiver êxito, este método retornará `202 Accepted` um código de resposta e
 O exemplo a seguir adiciona licenças ao grupo.
 #### <a name="request"></a>Solicitação
 
-# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "group_assignlicense"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/groups/1ad75eeb-7e5a-4367-a493-9214d90d54d0/assignLicense
+POST https://graph.microsoft.com/v1.0/groups/1132b215-826f-42a9-8cfe-1643d19d17fd/assignLicense
 Content-type: application/json
-
 
 {
   "addLicenses": [
     {
-      "disabledPlans": [ "11b0131d-43c8-4bbb-b2c8-e80f9a50834a" ],
-      "skuId": "skuId-value-1"
+      "disabledPlans": [
+        "113feb6c-3fe4-4440-bddc-54d774bf0318",
+        "14ab5db5-e6c4-4b20-b4bc-13e36fd2227f"
+      ],
+      "skuId": "b05e124f-c7cc-45a0-a6aa-8cf78c946968"
     },
     {
-      "disabledPlans": [ "a571ebcc-fqe0-4ca2-8c8c-7a284fd6c235" ],
-      "skuId": "skuId-value-2"
+      "disabledPlans": [
+        "a413a9ff-720c-4822-98ef-2f37c2a21f4c"
+      ],
+      "skuId": "c7df2760-2c81-4ef7-b578-5b5392b571df"
     }
   ],
   "removeLicenses": []
 }
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/group-assignlicense-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/group-assignlicense-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/group-assignlicense-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/group-assignlicense-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 
 #### <a name="response"></a>Resposta
 
@@ -114,15 +99,13 @@ A resposta é o objeto de grupo atualizado.
 ```http
 HTTP/1.1 202 Accepted
 Content-type: application/json
-location: https://graph.microsoft.com/v2/d056d009-17b3-4106-8173-cd3978ada898/directoryObjects/1ad75eeb-7e5a-4367-a493-9214d90d54d0/Microsoft.DirectoryServices.Group
+location: https://graph.microsoft.com/v2/e8e96c2a-d787-4eb1-98d7-9e57c965f1de/directoryObjects/1132b215-826f-42a9-8cfe-1643d19d17fd/Microsoft.DirectoryServices.Group
 
 {
-  "id": "1ad75eeb-7e5a-4367-a493-9214d90d54d0",
-  "deletedDateTime": null,
-  "classification": null,
-  "createdDateTime": "2018-04-18T22:05:03Z",
+  "id": "1132b215-826f-42a9-8cfe-1643d19d17fd",
+  "createdDateTime": "2021-03-12T11:15:03Z",
+  "groupTypes": [],
   "securityEnabled": true,
-
 }
 ```
 
@@ -131,40 +114,23 @@ O exemplo a seguir remove licenças do grupo.
 
 #### <a name="request"></a>Solicitação
 
-# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "group_removelicense"
 }-->
 
 ```http
-POST https://graph.microsoft.com/v1.0/groups/1ad75eeb-7e5a-4367-a493-9214d90d54d0/assignLicense
+POST https://graph.microsoft.com/v1.0/groups/1132b215-826f-42a9-8cfe-1643d19d17fd/assignLicense
 Content-type: application/json
-
 
 {
   "addLicenses": [],
-  "removeLicenses": ["skuId-value-1", "skuId-value-2"]
+  "removeLicenses": [
+    "c7df2760-2c81-4ef7-b578-5b5392b571df",
+    "b05e124f-c7cc-45a0-a6aa-8cf78c946968"
+  ]
 }
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/group-removelicense-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/group-removelicense-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/group-removelicense-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/group-removelicense-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 
 #### <a name="response"></a>Resposta
 

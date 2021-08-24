@@ -4,12 +4,12 @@ description: O Microsoft Graph expõe as permissões granulares que controlam o 
 author: jackson-woods
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 3e3cbb68dfa9bfcff5b04f27de0823c76bf89ccf
-ms.sourcegitcommit: 6f04ad0e0cde696661511dcdf343942b43f73fc6
+ms.openlocfilehash: 7679ab0e74f77961e975ae1d46877cde79a7890b
+ms.sourcegitcommit: c6f7a931a8d83ac54f577b7bec08237fd17ce51a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58397051"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58490564"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Referência de permissões do Microsoft Graph
 
@@ -562,6 +562,8 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 | _TeamsTab.ReadWrite.Chat_        | Gerenciar as guias deste chat.                                      | Permite que o aplicativo gerencie as guias deste chat, sem um usuário conectado. |Não | Não |
 | _TeamsAppInstallation.Read.Chat_ | Leia quais aplicativos estão instalados neste chat.                   | Permite que o aplicativo leia os aplicativos Teams que estão instalados neste chat junto com as permissões concedidas a cada aplicativo, sem um usuário conectado.  |Não | Não |
 | _OnlineMeeting.ReadBasic.Chat_   | Leia as propriedades básicas de uma reunião associada a este chat. | Permite que o aplicativo leia as propriedades básicas - como nome, programação, organizador e link de ingresso - de uma reunião associada a este chat, sem um usuário conectado. |Não | Não |
+| _Calls.AccessMedia.Chat_         | Acesse fluxos de mídia em chamadas associadas a esse chat ou reunião.                                    | Permite que o aplicativo acesse fluxos de mídia em chamadas associadas a esse chat ou reunião, sem um usuário conectado. |Não | Não |
+| _Calls.JoinGroupCalls.Chat_         | Participe de chamadas associadas a esse chat ou reunião.                                    | Permite que o aplicativo leia as propriedades básicas - como nome, programação, organizador e link de ingresso - de uma reunião associada a este chat, sem um usuário conectado. |Não | Não |
 
 >[!NOTE]
 > Atualmente, estas permissões são suportadas apenas na versão beta do Microsoft Graph.
@@ -1314,7 +1316,7 @@ _Notes.ReadWrite_ e _Notes.ReadWrite.All_ também permitem que o aplicativo modi
 Para contas corporativas ou de estudante, _Notes.Read.All_ e _Notes.ReadWrite.All_ permitem que o aplicativo acesse o conteúdo do OneNote de outros usuários ao qual o usuário conectado tenha permissão dentro da organização.
 
 ### <a name="example-usage"></a>Exemplo de uso
-#### <a name="delegated"></a>Delegated
+#### <a name="delegated"></a>Delegado
 
 * _Notes.Create_: Criar novos blocos de anotações para o usuário conectado (`POST /me/onenote/notebooks`).
 * _Notes.Read_: Criar blocos de anotações para o usuário conectado (`GET /me/onenote/notebooks`).
@@ -2427,7 +2429,7 @@ Para que um aplicativo leia ou grave todas as configurações de implantação d
 
 ### <a name="example-usage"></a>Exemplo de uso
 
-#### <a name="delegated"></a>Delegated
+#### <a name="delegated"></a>Delegado
 
 * _WindowsUpdates.ReadWrite.All_: crie uma implantação (`POST /beta/admin/windows/updates/deployments`).
 

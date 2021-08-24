@@ -5,18 +5,20 @@ localization_priority: Normal
 author: besiler
 ms.prod: identity-and-access-reports
 doc_type: apiPageType
-ms.openlocfilehash: 5bbd66efa246a0c3bbfdabe4a083a74443486ad2
-ms.sourcegitcommit: 8a9be6f65f62f29973508d82e0348d4142c18f23
+ms.openlocfilehash: 15581f8b14979c89b7ec913e5d24ee3fb591345d
+ms.sourcegitcommit: c6f7a931a8d83ac54f577b7bec08237fd17ce51a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "53129450"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58490424"
 ---
 # <a name="list-signins"></a>Listar logons
 
 Namespace: microsoft.graph
 
-Recupera os logons de usuário do Azure AD para seu locatário. As inserções interativas de natureza (onde um nome de usuário/senha é passado como parte do token de autenticação) e as inserções federadas bem-sucedidas estão atualmente incluídas nos logs de login. O tamanho máximo e padrão da página é de 1.000 objetos e, por padrão, as inscrições mais recentes são retornadas primeiro.
+Recupera os logons de usuário do Azure AD para seu locatário. As inserções interativas de natureza (onde um nome de usuário/senha é passado como parte do token de autenticação) e as inserções federadas bem-sucedidas estão atualmente incluídas nos logs de login. 
+
+O tamanho máximo e padrão da página é de 1.000 objetos e, por padrão, as inscrições mais recentes são retornadas primeiro. Somente os eventos de login que ocorreram dentro do período [](/azure/active-directory/reports-monitoring/reference-reports-data-retention#how-long-does-azure-ad-store-the-data) de retenção padrão do Azure Active Directory (Azure AD) estão disponíveis.
 
 ## <a name="permissions"></a>Permissões
 
@@ -34,9 +36,9 @@ Além das permissões delegadas, o usuário inscreveu precisa pertencer a uma da
 + Administrador global
 + Leitor global
 + Leitor de Relatórios
-+ Administrador de Segurança
++ Administrador de segurança
 + Operador de segurança
-+ Leitor de segurança
++ Leitor de Segurança
 
 ## <a name="http-request"></a>Solicitação HTTP
 

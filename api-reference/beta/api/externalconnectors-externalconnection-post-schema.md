@@ -5,12 +5,12 @@ localization_priority: Normal
 author: snlraju-msft
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: b89fdd9ec7785639526f02344c8b4c7bc43335b1
-ms.sourcegitcommit: 1940be9846055aa650c6c03982b74a961f1e316a
+ms.openlocfilehash: 495c7ab0ec6ab06db785344de965f2a1a049cb3d
+ms.sourcegitcommit: c6f7a931a8d83ac54f577b7bec08237fd17ce51a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/17/2021
-ms.locfileid: "53467552"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58490592"
 ---
 # <a name="create-schema"></a>Criar esquema
 
@@ -54,12 +54,7 @@ Ao registrar um esquema de item personalizado, o objeto DEVE ter a propriedade `
 
 ## <a name="response"></a>Resposta
 
-Com o header incluído na solicitação, se bem-sucedido, este método retorna um código de resposta e uma URL no header de resposta que podem ser usados para obter o `Prefer: respond-async` `202 Accepted` status da `Location` [operação](../api/externalconnectors-connectionoperation-get.md).
-
-Sem o header incluído na solicitação, se bem-sucedido, este método retorna um código de resposta e um novo objeto `Prefer: respond-async` de esquema no corpo da `201 Created` resposta. [](../resources/externalconnectors-schema.md)
-
-> [!NOTE]
-> A criação de um esquema é um processo de longa duração propenso a tempos-de-tempo de gateway. Recomendamos usar `Prefer: respond-async` o header para evitar erros de tempo de tempo.
+Se tiver êxito, este método retornará um código de resposta e uma URL no header de resposta que podem ser usados `202 Accepted` para obter o status da `Location` [operação.](../api/externalconnectors-connectionoperation-get.md)
 
 ## <a name="examples"></a>Exemplos
 
@@ -79,7 +74,6 @@ Este é um exemplo de solicitação.
 ```http
 POST https://graph.microsoft.com/beta/external/connections/contosohr/schema
 Content-type: application/json
-Prefer: respond-async
 
 {
   "baseType": "microsoft.graph.externalItem",

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: e5fabcc982c676ba322d92e5abf6d1fb40944a13
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: af6af01f6e10affe3efd41b81d9c011c5bba3473
+ms.sourcegitcommit: c6f7a931a8d83ac54f577b7bec08237fd17ce51a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52681792"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58490599"
 ---
 # <a name="group-delta"></a>group: delta
 
@@ -50,7 +50,7 @@ Em solicitações subsequentes, copie e aplique a URL `nextLink` ou `deltaLink` 
 
 | Parâmetro de consulta | Tipo  |Descrição|
 |:---------------|:--------|:----------|
-| $deltatoken | string | Um [token de estado](/graph/delta-query-overview) retornado na URL `deltaLink` da chamada de função **delta** anterior da mesma coleção de grupos indicando a conclusão da série de controle de alterações. Salve e aplique toda a URL `deltaLink`, incluindo esse token na primeira solicitação da próxima série de controle de alterações da coleção.|
+| $deltatoken | cadeia de caracteres | Um [token de estado](/graph/delta-query-overview) retornado na URL `deltaLink` da chamada de função **delta** anterior da mesma coleção de grupos indicando a conclusão da série de controle de alterações. Salve e aplique toda a URL `deltaLink`, incluindo esse token na primeira solicitação da próxima série de controle de alterações da coleção.|
 | $skiptoken | string | Um [token de estado](/graph/delta-query-overview) retornado na URL `nextLink` da chamada de função **delta** anterior indicando que não há mais alterações a serem controladas na mesma coleção de grupos. |
 
 ### <a name="odata-query-parameters"></a>Parâmetros de consulta OData
@@ -160,26 +160,26 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.context":"https://graph.microsoft.com/beta/$metadata#groups","@odata.nextLink":"https://graph.microsoft.com/beta/groups/delta?$skiptoken=pqwSUjGYvb3jQpbwVAwEL7yuI3dU1LecfkkfLPtnIjvY1FSSc_",
+  "@odata.context":"https://graph.microsoft.com/beta/$metadata#groups",
+  "@odata.nextLink":"https://graph.microsoft.com/beta/groups/delta?$skiptoken=pqwSUjGYvb3jQpbwVAwEL7yuI3dU1LecfkkfLPtnIjvY1FSSc_",
   "value":[
     {
-      "classification": "classification-value",
-      "createdDateTime":"datetime-value",
-      "description":"Test group 1",
-      "displayName":"TestGroup1",
+      "createdDateTime":"2021-03-12T10:36:14Z",
+      "description":"This is the default group for everyone in the network",
+      "displayName":"All Company",
       "groupTypes": [
-        "groupTypes-value"
+        "Unified"
       ],
-      "mail": "mail-value",
+      "mail": "allcompany@contoso.com",
       "members@delta": [
-               {
-                   "@odata.type": "#microsoft.graph.user",
-                   "id": "693acd06-2877-4339-8ade-b704261fe7a0"
-               },
-               {
-                   "@odata.type": "#microsoft.graph.user",
-                   "id": "49320844-be99-4164-8167-87ff5d047ace"
-               }
+        {
+          "@odata.type": "#microsoft.graph.user",
+          "id": "693acd06-2877-4339-8ade-b704261fe7a0"
+        },
+        {
+          "@odata.type": "#microsoft.graph.user",
+          "id": "49320844-be99-4164-8167-87ff5d047ace"
+        }
       ]
     }
   ]
@@ -238,9 +238,9 @@ Content-type: application/json
   "@odata.nextLink":"https://graph.microsoft.com/beta/groups/delta?$skiptoken=pqwSUjGYvb3jQpbwVAwEL7yuI3dU1LecfkkfLPtnIjsXoYQp_dpA3cNJWc",
   "value": [
     {
-      "displayName": "displayName-value",
+      "displayName": "All Company",
       "description": null,
-      "mailNickname": "mailNickname-value"
+      "mailNickname": "allcompany@contoso.com"
     }
   ]
 }
@@ -299,7 +299,7 @@ Content-type: application/json
   "@odata.nextLink":"https://graph.microsoft.com/beta/groups/delta?$skiptoken=pqwSUjGYvb3jQpbwVAwEL7yuI3dU1LecfkkfLPtnIjsXoYQp_dpA3cNJWc",
   "value": [
     {
-      "displayName": "displayName-value",
+      "displayName": "Everyone",
       "description": null
     }
   ]

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: a3acfecc8f005c6468dfe681ff3410bf7a4ffbfe
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: 87ed0360f481566cf10a01ed1e22806ffdef4855
+ms.sourcegitcommit: c6f7a931a8d83ac54f577b7bec08237fd17ce51a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52680973"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58490557"
 ---
 # <a name="group-delta"></a>group: delta
 
@@ -161,23 +161,22 @@ Content-type: application/json
   "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#groups","@odata.nextLink":"https://graph.microsoft.com/v1.0/groups/delta?$skiptoken=pqwSUjGYvb3jQpbwVAwEL7yuI3dU1LecfkkfLPtnIjvY1FSSc_",
   "value":[
     {
-      "classification": "classification-value",
-      "createdDateTime":"datetime-value",
-      "description":"Test group 1",
-      "displayName":"TestGroup1",
+      "createdDateTime":"2021-03-12T10:36:14Z",
+      "description":"This is the default group for everyone in the network",
+      "displayName":"All Company",
       "groupTypes": [
-        "groupTypes-value"
+        "Unified"
       ],
-      "mail": "mail-value",
+      "mail": "allcompany@contoso.com",
       "members@delta": [
-               {
-                   "@odata.type": "#microsoft.graph.user",
-                   "id": "693acd06-2877-4339-8ade-b704261fe7a0"
-               },
-               {
-                   "@odata.type": "#microsoft.graph.user",
-                   "id": "49320844-be99-4164-8167-87ff5d047ace"
-               }
+        {
+          "@odata.type": "#microsoft.graph.user",
+          "id": "693acd06-2877-4339-8ade-b704261fe7a0"
+        },
+        {
+          "@odata.type": "#microsoft.graph.user",
+          "id": "49320844-be99-4164-8167-87ff5d047ace"
+        }
       ]
     }
   ]
@@ -236,9 +235,9 @@ Content-type: application/json
   "@odata.nextLink":"https://graph.microsoft.com/v1.0/groups/delta?$skiptoken=pqwSUjGYvb3jQpbwVAwEL7yuI3dU1LecfkkfLPtnIjsXoYQp_dpA3cNJWc",
   "value": [
     {
-      "displayName": "displayName-value",
+      "displayName": "All Company",
       "description": null,
-      "mailNickname": "mailNickname-value"
+      "mailNickname": "allcompany@contoso.com"
     }
   ]
 }
@@ -297,7 +296,7 @@ Content-type: application/json
   "@odata.nextLink":"https://graph.microsoft.com/v1.0/groups/delta?$skiptoken=pqwSUjGYvb3jQpbwVAwEL7yuI3dU1LecfkkfLPtnIjsXoYQp_dpA3cNJWc",
   "value": [
     {
-      "displayName": "displayName-value",
+      "displayName": "Everyone",
       "description": null
     }
   ]

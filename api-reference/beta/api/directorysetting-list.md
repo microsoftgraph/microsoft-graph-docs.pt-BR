@@ -5,12 +5,12 @@ author: adimitui
 localization_priority: Normal
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 740c2c82ba718ed9b99dd1bff229fbabbaf4482c
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 879c016de32c6893fc12674ce1af6a3f5253d542
+ms.sourcegitcommit: c6f7a931a8d83ac54f577b7bec08237fd17ce51a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52046598"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58490459"
 ---
 # <a name="list-directory-settings"></a>Listar configurações de diretório
 
@@ -34,12 +34,14 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 Listar configurações de grupo ou de locatário
+
 ```http
 GET /settings
 GET /groups/{id}/settings
 ```
+
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
+Este método dá suporte ao `$select` [parâmetro de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome      |Descrição|
@@ -52,8 +54,10 @@ Não forneça um corpo de solicitação para esse método.
 ## <a name="response"></a>Resposta
 
 Se tiver êxito, este método retornará um código `200 OK` de resposta e uma coleção de objetos [directorySetting](../resources/directorysetting.md) no corpo da resposta.
+
 ## <a name="example"></a>Exemplo
-##### <a name="request"></a>Solicitação
+
+### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -83,7 +87,8 @@ GET https://graph.microsoft.com/beta/settings
 ---
 
 ##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+Este é um exemplo de resposta. 
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -93,18 +98,70 @@ Veja a seguir um exemplo da resposta. Observação: o objeto de resposta mostrad
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 263
 
 {
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#settings",
   "value": [
     {
-      "id": "id-value",
-      "displayName": "displayName-value",
-      "settingTemplateId": "settingTemplateId-value",
+      "id": "f0b2d6f5-097d-4177-91af-a24e530b53cc",
+      "displayName": "Group.Unified",
+      "templateId": "62375ab9-6b52-47ed-826b-58e47e0e304b",
       "values": [
         {
-          "name": "name-value",
-          "value": "value-value"
+          "name": "EnableMIPLabels",
+          "value": "true"
+        },
+        {
+          "name": "CustomBlockedWordsList",
+          "value": ""
+        },
+        {
+          "name": "EnableMSStandardBlockedWords",
+          "value": "true"
+        },
+        {
+          "name": "ClassificationDescriptions",
+          "value": ""
+        },
+        {
+          "name": "DefaultClassification",
+          "value": ""
+        },
+        {
+          "name": "PrefixSuffixNamingRequirement",
+          "value": "[Contoso-][GroupName]"
+        },
+        {
+          "name": "AllowGuestsToBeGroupOwner",
+          "value": "false"
+        },
+        {
+          "name": "AllowGuestsToAccessGroups",
+          "value": "true"
+        },
+        {
+          "name": "GuestUsageGuidelinesUrl",
+          "value": "https://privacy.contoso.com/privacystatement"
+        },
+        {
+          "name": "GroupCreationAllowedGroupId",
+          "value": ""
+        },
+        {
+          "name": "AllowToAddGuests",
+          "value": "true"
+        },
+        {
+          "name": "UsageGuidelinesUrl",
+          "value": ""
+        },
+        {
+          "name": "ClassificationList",
+          "value": ""
+        },
+        {
+          "name": "EnableGroupCreation",
+          "value": "true"
         }
       ]
     }

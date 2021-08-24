@@ -5,12 +5,12 @@ description: Fornece detalhes sobre a atividade de login de usuário ou de aplic
 author: besiler
 localization_priority: Normal
 ms.prod: identity-and-access-reports
-ms.openlocfilehash: c16e0b6752bc8bc9498eb269a1c225c5947ecbd6
-ms.sourcegitcommit: 2a35434fabc76672e21bfc3ed5a1d28f9f3b66bc
+ms.openlocfilehash: 03beb5f18106469f9e20c602aecb771142d6a7bc
+ms.sourcegitcommit: c6f7a931a8d83ac54f577b7bec08237fd17ce51a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52240676"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58490123"
 ---
 # <a name="signin-resource-type"></a>tipo de recurso de domínio
 
@@ -18,7 +18,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Fornece detalhes sobre a atividade de login de usuário ou de aplicativo em seu diretório. Você deve ter uma licença do Azure AD Premium P1 ou P2 para baixar logs de login usando a API do Microsoft Graph.
+Fornece detalhes sobre a atividade de login de usuário ou de aplicativo em seu diretório. Você deve ter uma Azure AD Premium P1 ou P2 para baixar logs de login usando a API Graph Microsoft.
+
+A disponibilidade de logs de login é governada pelas políticas de retenção de dados do [Azure AD.](/azure/active-directory/reports-monitoring/reference-reports-data-retention#how-long-does-azure-ad-store-the-data)
 
 ## <a name="methods"></a>Métodos
 
@@ -35,9 +37,9 @@ Fornece detalhes sobre a atividade de login de usuário ou de aplicativo em seu 
 |appId|Cadeia de caracteres|O identificador do aplicativo no Azure Active Directory. Suporta `$filter` ( `eq` somente operador).|
 |appliedConditionalAccessPolicies|[coleção appliedConditionalAccessPolicy](appliedconditionalaccesspolicy.md)|Uma lista de políticas de acesso condicional que são disparadas pela atividade de entrada correspondente.|
 |authenticationDetails|[Coleção authenticationDetail](authenticationdetail.md)|O resultado da tentativa de autenticação e detalhes adicionais sobre o método de autenticação.|
-|authenticationMethodsUsed|Coleção de cadeias de caracteres|Os métodos de autenticação usados. Valores possíveis: `SMS` , , , , , , ou `Authenticator App` `App Verification code` `Password` `FIDO` `PTA` `PHS` .|
+|authenticationMethodsUsed|String collection|Os métodos de autenticação usados. Valores possíveis: `SMS` , , , , , , ou `Authenticator App` `App Verification code` `Password` `FIDO` `PTA` `PHS` .|
 |authenticationProcessingDetails|Coleção [KeyValue](keyvalue.md)|Detalhes adicionais de processamento de autenticação, como o nome do agente em caso de PTA/PHS ou nome de servidor/farm em caso de autenticação federada.|
-|authenticationRequirement | Cadeia de caracteres | Isso mantém o nível mais alto de autenticação necessário por meio de todas as etapas de login, para que a assinatura seja bem-sucedida. Oferece `$filter` suporte ( e somente `eq` `startsWith` operadores).|
+|authenticationRequirement | String | Isso mantém o nível mais alto de autenticação necessário por meio de todas as etapas de login, para que a assinatura seja bem-sucedida. Oferece `$filter` suporte ( e somente `eq` `startsWith` operadores).|
 |clientAppUsed|Cadeia de caracteres|O cliente herddo usado para atividades de entrada. Por exemplo: `Browser` , , , , , , ou `Exchange Active Sync` `Modern clients` `IMAP` `MAPI` `SMTP` `POP` . Suporta `$filter` ( `eq` somente operador). |
 |conditionalAccessStatus|conditionalAccessStatus| O status da política de acesso condicional disparada. Valores possíveis: `success` `failure` , , ou `notApplied` `unknownFutureValue` . Suporta `$filter` ( `eq` somente operador).|
 |correlationId|Cadeia de caracteres|O identificador enviado do cliente quando a entrada é iniciada. Isso é usado para solucionar problemas da atividade de login correspondente ao chamar o suporte. Suporta `$filter` ( `eq` somente operador).|
@@ -54,7 +56,7 @@ Fornece detalhes sobre a atividade de login de usuário ou de aplicativo em seu 
 |resourceId|Cadeia de caracteres|O identificador do recurso ao que o usuário se inscreveu. Suporta `$filter` ( `eq` somente operador).|
 |riskDetail|riskDetail|O motivo por trás de um estado específico de um usuário arriscado, de entrar ou de um evento de risco. Valores possíveis: `none` , , , , , , , , , `adminGeneratedTemporaryPassword` ou `userPerformedSecuredPasswordChange` `userPerformedSecuredPasswordReset` `adminConfirmedSigninSafe` `aiConfirmedSigninSafe` `userPassedMFADrivenByRiskBasedPolicy` `adminDismissedAllRiskForUser` `adminConfirmedSigninCompromised` `unknownFutureValue` . O valor `none` significa que nenhuma ação foi realizada pelo usuário ou entrar até o momento. Suporta `$filter` ( `eq` somente operador).<br> **Observação:** detalhes para esta propriedade estão disponíveis apenas para clientes do Azure AD Premium P2. Todos os outros clientes são retornados `hidden` .|
 |riskEventTypes|Coleção riskEventType|A lista de tipos de eventos de risco associados à assinatura. Valores possíveis: `unlikelyTravel` , , , , , , , , , `anonymizedIPAddress` ou `maliciousIPAddress` `unfamiliarFeatures` `malwareInfectedIPAddress` `suspiciousIPAddress` `leakedCredentials` `investigationsThreatIntelligence`  `generic` `unknownFutureValue` . Suporta `$filter` ( `eq` somente operador).|
-|riskEventTypes_v2|Coleção de cadeias de caracteres|A lista de tipos de eventos de risco associados à assinatura. Valores possíveis: `unlikelyTravel` , , , , , , , , , `anonymizedIPAddress` ou `maliciousIPAddress` `unfamiliarFeatures` `malwareInfectedIPAddress` `suspiciousIPAddress` `leakedCredentials` `investigationsThreatIntelligence`  `generic` `unknownFutureValue` . Oferece `$filter` suporte ( e somente `eq` `startsWith` operadores).|
+|riskEventTypes_v2|String collection|A lista de tipos de eventos de risco associados à assinatura. Valores possíveis: `unlikelyTravel` , , , , , , , , , `anonymizedIPAddress` ou `maliciousIPAddress` `unfamiliarFeatures` `malwareInfectedIPAddress` `suspiciousIPAddress` `leakedCredentials` `investigationsThreatIntelligence`  `generic` `unknownFutureValue` . Oferece `$filter` suporte ( e somente `eq` `startsWith` operadores).|
 |riskLevelAggregated|riskLevel|O nível de risco agregado. Valores possíveis: `none` , , , , ou `low` `medium` `high` `hidden` `unknownFutureValue` . O valor `hidden` significa que o usuário ou entrada não foi habilitado para proteção de identidade do Azure AD. Suporta `$filter` ( `eq` somente operador). <br>**Observação:** detalhes para esta propriedade estão disponíveis apenas para clientes do Azure AD Premium P2. Todos os outros clientes são retornados `hidden` .|
 |riskLevelDuringSignIn|riskLevel|O nível de risco durante a assinatura. Valores possíveis: `none` , , , , ou `low` `medium` `high` `hidden` `unknownFutureValue` . O valor `hidden` significa que o usuário ou entrada não foi habilitado para proteção de identidade do Azure AD. Suporta `$filter` ( `eq` somente operador). <br>**Observação:** detalhes para esta propriedade estão disponíveis apenas para clientes do Azure AD Premium P2. Todos os outros clientes são retornados `hidden` .|
 |riskState|riskState|O estado de risco de um usuário arriscado, de entrar ou de um evento de risco. Valores possíveis: `none` , , , , , , ou `confirmedSafe` `remediated` `dismissed` `atRisk` `confirmedCompromised` `unknownFutureValue` . Suporta `$filter` ( `eq` somente operador).|
@@ -66,7 +68,7 @@ Fornece detalhes sobre a atividade de login de usuário ou de aplicativo em seu 
 |userAgent|Cadeia de caracteres|As informações do agente do usuário relacionadas à login. Oferece `$filter` suporte ( e somente `eq` `startsWith` operadores).|
 |userDisplayName|Cadeia de caracteres|O nome de exibição do usuário. Oferece `$filter` suporte ( e somente `eq` `startsWith` operadores).|
 |userId|Cadeia de caracteres|O identificador do usuário. Suporta `$filter` ( `eq` somente operador).|
-|userPrincipalName|Cadeia de caracteres|O UPN do usuário. Oferece `$filter` suporte ( e somente `eq` `startsWith` operadores).|
+|userPrincipalName|String|O UPN do usuário. Oferece `$filter` suporte ( e somente `eq` `startsWith` operadores).|
 
 ## <a name="relationships"></a>Relações
 Nenhum

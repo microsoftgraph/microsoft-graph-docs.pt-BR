@@ -1,16 +1,16 @@
 ---
 title: Criar educationSubmissionResource
-description: 'Adiciona um recurso à lista de recursos. Essa ação só pode ser feita pelo aluno ao qual esse envio é atribuído. Essa ação não terá êxito **se o sinalizador allowStudentsToAddResources** não estiver definido como true. Se o chamador quiser criar um novo recurso baseado em arquivo, o arquivo deverá ser carregado na pasta de recursos associada ao envio. Se o arquivo não existir ou não estiver nessa pasta, a solicitação POST falhará. '
+description: Adicione um recurso à lista de recursos de envio.
 author: dipakboyed
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 24363b7158ccfad72db22158d25298fdb75d040d
-ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
+ms.openlocfilehash: c5162f5d179b6ef5aae0ce0c73692e6011ed50d3
+ms.sourcegitcommit: c6f7a931a8d83ac54f577b7bec08237fd17ce51a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "52664759"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58490515"
 ---
 # <a name="create-educationsubmissionresource"></a>Criar educationSubmissionResource
 
@@ -18,7 +18,13 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Adiciona um recurso à lista de recursos. Essa ação só pode ser feita pelo aluno ao qual esse envio é atribuído. Essa ação não terá êxito **se o sinalizador allowStudentsToAddResources** não estiver definido como true. Se o chamador quiser criar um novo recurso baseado em arquivo, o arquivo deverá ser carregado na pasta de recursos associada ao envio. Se o arquivo não existir ou não estiver nessa pasta, a solicitação POST falhará. 
+Adicione um recurso à lista de recursos de envio.
+
+Somente o aluno atribuído ao envio pode executar essa operação.
+
+A operação não terá êxito **se o sinalizador allowStudentsToAddResources** não estiver definido como `true` . 
+
+Se o chamador quiser criar um novo recurso baseado em arquivo, carregue o arquivo na pasta de recursos associada ao envio. Se o arquivo não existir ou não estiver nessa pasta, a solicitação POST falhará. 
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -42,62 +48,42 @@ POST /education/classes/{id}/assignments/{id}/submissions/{id}/resources
 | Content-Type  | application/json  |
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, fornece uma representação JSON do [objeto educationSubmissionResource.](../resources/educationsubmissionresource.md)
+No corpo da solicitação, fornece uma representação JSON do recurso. Os tipos com suporte são [educationExcelResource](../resources/educationexcelresource.md), [educationFileResource](../resources/educationfileresource.md), [educationLinkResource](../resources/educationlinkresource.md), [educationPowerPointResource](../resources/educationpowerpointresource.md) e [educationWordResource](../resources/educationwordresource.md).
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um código de resposta e um `201 Created` [objeto educationSubmissionResource](../resources/educationsubmissionresource.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e um objeto de acordo com `201 Created` o tipo de recurso no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
-##### <a name="request"></a>Solicitação
+### <a name="request"></a>Solicitação
 Este é um exemplo de solicitação.
 <!-- {
-  "blockType": "ignored",
+  "blockType": "request",
   "name": "create_educationsubmissionresource_from_educationsubmission"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/education/classes/11021/assignments/19002/submissions/850f51b7/resources
+POST https://graph.microsoft.com/beta/education/classes/f4a941ff-9da6-4707-ba5b-0eae93cad0b4/assignments/3c77de7f-539b-49e1-9c96-1274f2f0ee3b/submissions/4af73d2b-6b9c-493f-0688-979087bed39b/resources
 Content-type: application/json
 Content-length: 1097
 
 {
-  "assignmentResourceUrl": "https://graph.microsoft.com/v1.0/drives/b!8-QjN2tsv0WyGnTv7vOvnQkmGHbbeMNLqYKONmHLVnvCVmBYIGpeT456457AdW9f/items/017NJZI25NOB5XZNLABF7646XAMDZTQQ6T",
-  "resource": {
-      "@odata.type": "#microsoft.graph.educationWordResource",
-      "displayName": "Report.docx",
-      "createdDateTime": "2017-10-21T07:52:53.9863696Z",
-      "createdBy": {
-          "application": null,
-          "device": null,
-          "user": {
-              "id": "63cc91d2-59c7-4732-9594-35b91a26b340",
-              "displayName": null
-          }
-      },
-      "lastModifiedDateTime": "2017-10-21T07:52:53.9863696Z",
-      "lastModifiedBy": {
-          "application": null,
-          "device": null,
-          "user": {
-              "id": "63cc91d2-59c7-4732-9594-35b91a26b340",
-              "displayName": null
-          }
-      },
-      "fileUrl": "https://graph.microsoft.com/v1.0/drives/b!8-QjN2tsv0WyGnTv7vOvnQkmGHbbeMNLqYKONmHLVnvCVmBYIGpeTZ_iul5AdW9f/items/017NJZI27BCN2QI2H7HJGLIVPXR6SD2DH6"
-  },
-  "@odata.type": "microsoft.graph.educationResource"
+    "resource": {
+        "@odata.type": "microsoft.graph.educationWordResource",
+        "displayName": "Report.docx",
+        "fileUrl": "https://graph.microsoft.com/beta/drives/b!DPA6q59Tw0mtgmyXRUmrQRqBZTesG-lMkl1cBmvvMeUEWrOk89nKRpUEr4ZhNYBc/items/016XPCQEELISJB7NVNVBAK7V4UIF6Q27U2"
+    }
 }
 ```
 
-##### <a name="response"></a>Resposta
+### <a name="response"></a>Resposta
 Este é um exemplo de resposta. 
 
 >**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
-  "blockType": "ignored",
+  "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.educationSubmissionResource"
+  "@odata.type": "microsoft.graph.educationWordResource"
 } -->
 ```http
 HTTP/1.1 201 Created
@@ -105,31 +91,32 @@ Content-type: application/json
 Content-length: 1152
 
 {
-  "assignmentResourceUrl": "https://graph.microsoft.com/v1.0/drives/b!8-QjN2tsv0WyGnTv7vOvnQkmGHbbeMNLqYKONmHLVnvCVmBYIGpeT456457AdW9f/items/017NJZI25NOB5XZNLABF7646XAMDZTQQ6T",
-  "id": "f2387c3b-ec39-4bf2-a399-d7242677f024",
-  "resource": {
-      "@odata.type": "#microsoft.graph.educationWordResource",
-      "displayName": "Report.docx",
-      "createdDateTime": "2017-10-21T07:52:53.9863696Z",
-      "createdBy": {
-          "application": null,
-          "device": null,
-          "user": {
-              "id": "63cc91d2-59c7-4732-9594-35b91a26b340",
-              "displayName": null
-          }
-      },
-      "lastModifiedDateTime": "2017-10-21T07:52:53.9863696Z",
-      "lastModifiedBy": {
-          "application": null,
-          "device": null,
-          "user": {
-              "id": "63cc91d2-59c7-4732-9594-35b91a26b340",
-              "displayName": null
-          }
-      },
-      "fileUrl": "https://graph.microsoft.com/v1.0/drives/b!8-QjN2tsv0WyGnTv7vOvnQkmGHbbeMNLqYKONmHLVnvCVmBYIGpeTZ_iul5AdW9f/items/017NJZI27BCN2QI2H7HJGLIVPXR6SD2DH6",
-  }
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/classes('f4a941ff-9da6-4707-ba5b-0eae93cad0b4')/assignments('3c77de7f-539b-49e1-9c96-1274f2f0ee3b')/submissions('4af73d2b-6b9c-493f-0688-979087bed39b')/resources/$entity",
+    "assignmentResourceUrl": null,
+    "id": "d835503f-fd00-4840-b69c-7230d10e18b8",
+    "resource": {
+        "@odata.type": "#microsoft.graph.educationWordResource",
+        "displayName": "Report.docx",
+        "createdDateTime": "2021-08-04T00:23:08.6269586Z",
+        "lastModifiedDateTime": "2021-08-04T00:23:08.6269586Z",
+        "fileUrl": "https://graph.microsoft.com/beta/drives/b!DPA6q59Tw0mtgmyXRUmrQRqBZTesG-lMkl1cBmvvMeUEWrOk89nKRpUEr4ZhNYBc/items/016XPCQEELISJB7NVNVBAK7V4UIF6Q27U2",
+        "createdBy": {
+            "application": null,
+            "device": null,
+            "user": {
+                "id": "80cefd93-8d88-40e2-b5d3-67898383e226",
+                "displayName": null
+            }
+        },
+        "lastModifiedBy": {
+            "application": null,
+            "device": null,
+            "user": {
+                "id": "80cefd93-8d88-40e2-b5d3-67898383e226",
+                "displayName": null
+            }
+        }
+    }
 }
 ```
 

@@ -5,12 +5,12 @@ author: sureshja
 localization_priority: Priority
 doc_type: apiPageType
 ms.prod: applications
-ms.openlocfilehash: 21209eb12eaa9700fdbea45e833e207c2aa68fab
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 10d4dcff72e26e274e88b85c5e06a5ecda1de6f0
+ms.sourcegitcommit: c6f7a931a8d83ac54f577b7bec08237fd17ce51a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52050595"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58490536"
 ---
 # <a name="create-application"></a>Criar aplicativo
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegada (conta corporativa ou de estudante) | Application.ReadWrite.All, Directory.AccessAsUser.All    |
 |Delegada (conta pessoal da Microsoft) | Application.ReadWrite.All |
-|Aplicativo | Application.ReadWrite.All, Application.ReadWrite.OwnedBy |
+|Aplicativo | Application.ReadWrite.OwnedBy, Application.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -89,7 +89,7 @@ Content-length: 67
 
 
 ### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. 
+Este é um exemplo de resposta. 
 
 > **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {

@@ -3,12 +3,12 @@ title: Usar autenticação somente aplicativo com o Microsoft Graph PowerShell S
 description: Saiba como usar a autenticação somente para aplicativos para habilitar cenários não interativos com o SDK do Microsoft Graph PowerShell.
 localization_priority: Normal
 author: jasonjoh
-ms.openlocfilehash: 1939bc46d9862004b5d86f460a88d30eb396902b
-ms.sourcegitcommit: b7e01a1331abe5f5c9aa2828d93dad08229573f1
+ms.openlocfilehash: 0c87d415f23123b5628bcda8655e3c5b02323a86
+ms.sourcegitcommit: c6f7a931a8d83ac54f577b7bec08237fd17ce51a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58336674"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58490550"
 ---
 # <a name="use-app-only-authentication-with-the-microsoft-graph-powershell-sdk"></a>Usar autenticação somente aplicativo com o Microsoft Graph PowerShell SDK
 
@@ -34,6 +34,7 @@ Você precisará de um certificado X.509 instalado no armazenamento confiável d
 
 Você pode registrar o aplicativo no [portal Azure Active Directory ou](https://aad.portal.azure.com)usando o PowerShell.
 
+<!-- markdownlint-disable MD025 -->
 # <a name="portal"></a>[Portal](#tab/azure-portal)
 
 1. Abra um navegador e navegue até o centro de administração [Azure Active Directory e](https://aad.portal.azure.com) faça logon usando um administrador Microsoft 365 da organização de locatários.
@@ -67,6 +68,7 @@ Você pode registrar o aplicativo no [portal Azure Active Directory ou](https://
 1. Selecione **Certificados e segredos** sob **Gerenciar**. Selecione o **botão Upload certificado.** Navegue até o arquivo de chave pública do certificado e selecione **Adicionar**.
 
 # <a name="powershell"></a>[PowerShell](#tab/powershell)
+<!-- markdownlint-enable MD025 -->
 
 > [!NOTE]
 > Você deve ter o Microsoft Graph PowerShell SDK [instalado](installation.md) antes de seguir estas etapas.
@@ -88,9 +90,12 @@ Você pode estar se perguntando: "Posso usar o SDK do PowerShell para registrar 
 1. Revise a saída do prompt `Please go to the following URL in your browser to provide admin consent` . Copie a URL fornecida e a colar no navegador. Entre com uma conta de administrador para conceder o consentimento do administrador ao seu aplicativo recém-registrado.
 
     > [!NOTE]
-    > Depois de conceder o consentimento do administrador, o navegador exibirá um erro: `AADSTS500113: No reply address is registered for the application` . Isso acontece porque o registro do aplicativo não inclui uma URL de redirecionamento. Esse erro pode ser ignorado.
+    > Depois de conceder o consentimento do administrador, o navegador redirecionará de volta para `http://localhost` e exibirá um **erro Não** Encontrado. Esse erro pode ser ignorado desde que a URL contenha `admin_consent=True` .
 
 1. Revise o restante da saída do PowerShell para `Connect-MgGraph` o comando pré-preenchido com os valores do registro do aplicativo.
+
+    > [!TIP]
+    > Se o script retornar um erro informando , execute o `New-MgServicePrincipal : Unable to find target address` script com o parâmetro `-TenantId` adicional. Para obter detalhes, [consulte How to find your Azure Active Directory tenant ID](/azure/active-directory/fundamentals/active-directory-how-to-find-tenant).
 
 ---
 

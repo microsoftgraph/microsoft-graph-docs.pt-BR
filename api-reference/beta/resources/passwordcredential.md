@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: fbc5af586392191e2ab583ad6e723b3ee0789463
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: e1facb9b3a4de7c8cd5086efbd9ca4cea72fe84a
+ms.sourcegitcommit: c6f7a931a8d83ac54f577b7bec08237fd17ce51a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50720540"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58490627"
 ---
 # <a name="passwordcredential-resource-type"></a>Tipo de recurso passwordCredential
 
@@ -21,7 +21,7 @@ Namespace: microsoft.graph
 Representa uma credencial de senha associada a um aplicativo ou uma entidade de serviço. A **propriedade passwordCredentials** dos direitos [de](application.md) aplicativo e [servicePrincipal](serviceprincipal.md) é uma coleção de **objetos passwordCredential.**
 
 > [!IMPORTANT]
-> Não há suporte para usar POST ou PATCH **para definir passwordCredential.** Use os métodos addPassword e removePassword para atualizar a senha de um aplicativo ou um servicePrincipal:
+> Não há suporte para usar POST ou PATCH **para definir passwordCredential.** Use os seguintes métodos addPassword e removePassword para atualizar a senha de um aplicativo ou um servicePrincipal:
 >
 > - [application: addPassword](../api/application-addpassword.md)
 > - [application: removePassword](../api/application-removepassword.md)
@@ -32,7 +32,7 @@ Representa uma credencial de senha associada a um aplicativo ou uma entidade de 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-| customKeyIdentifier | Binária | Não usar. |
+| customKeyIdentifier | Binário | Não usar. |
 | displayName | Cadeia de caracteres | Nome amigável para a senha. Opcional. |
 | endDateTime | DateTimeOffset | A data e a hora em que a senha expira representada usando o formato ISO 8601 e está sempre em horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`. Opcional. |
 | dica | Cadeia de caracteres | Contém os três primeiros caracteres da senha. Somente leitura. |

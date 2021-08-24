@@ -5,12 +5,12 @@ localization_priority: Normal
 author: sureshja
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 8f158edb52b67d70c8878ae33311c648be2dca9e
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: ef3c1d740b2fe84232d6c6732d5ad15f6f591f6b
+ms.sourcegitcommit: c6f7a931a8d83ac54f577b7bec08237fd17ce51a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50955489"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58490634"
 ---
 # <a name="serviceprincipal-addkey"></a>servicePrincipal: addKey
 
@@ -31,12 +31,10 @@ ServicePrincipals que não têm certificados válidos existentes (ou seja: nenhu
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Nenhum  |
+|Delegado (conta corporativa ou de estudante) | Directory.AccessAsUser.All, Application.ReadWrite.All, Directory.ReadWrite.All   |
 |Delegado (conta pessoal da Microsoft) | Nenhum.    |
-|Aplicativo | Nenhum |
+|Aplicativo | Application.ReadWrite.OwnedBy, Application.ReadWrite.All, Directory.ReadWrite.All |
 
-> [!NOTE]
-> Um servicePrincipal não precisa de nenhuma permissão específica para rolar suas próprias chaves.
 
 ## <a name="http-request"></a>Solicitação HTTP
 

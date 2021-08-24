@@ -5,12 +5,12 @@ author: Jordanndahl
 localization_priority: Priority
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: b6b3bc02be107c6432cc1b7a09578f73a6588b26
-ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
+ms.openlocfilehash: 2b1a4f9c8f482dedc7842ae3785d8ccf436818ca
+ms.sourcegitcommit: c6f7a931a8d83ac54f577b7bec08237fd17ce51a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2021
-ms.locfileid: "58453664"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58490480"
 ---
 # <a name="create-group"></a>Criar grupo
 
@@ -57,7 +57,7 @@ A tabela a seguir mostra as propriedades do recurso [group](../resources/group.m
 | description | string | Uma descrição para o grupo. Máx. comprimento: 1024 caracteres. Opcional. |
 | isAssignableToRole | Booliano | Definir para **true** para habilitar o grupo a ser atribuído uma função do Azure AD. Somente o Administrador com Função Privilegiada e o Administrador Global podem definir o valor dessa propriedade. Opcional. |
 | mailEnabled | booliano | Defina como **true** para grupos habilitados para email. Obrigatório. |
-| mailNickname | string | O alias de email do grupo. Máx. comprimento: 64 caracteres. Essa propriedade pode conter apenas caracteres no [conjunto de caracteres ASCII de 0 a 127](/office/vba/language/reference/user-interface-help/character-set-0127), exceto o seguinte: ` @ () \ [] " ; : . <> , SPACE `. Obrigatório. |
+| mailNickname | string | O alias de email do grupo. Máx. comprimento: 64 caracteres. Essa propriedade pode conter apenas caracteres no [conjunto de caracteres ASCII de 0 a 127](/office/vba/language/reference/user-interface-help/character-set-0127), exceto o seguinte: ` @ () \ [] " ; : . <> , SPACE`. Obrigatório. |
 | securityEnabled | booliano | Defina como **true** para grupos habilitados para segurança, incluindo grupos do Microsoft 365. Obrigatório. |
 | owners | coleção de cadeias de caracteres | Esta propriedade representa os proprietários do grupo na hora de criação.  Os proprietários não são adicionados automaticamente como membros do grupo, a menos que especificados como propriedade dos **membros**. Opcional. |
 | membros | coleção de cadeias de caracteres | Esta propriedade representa os membros do grupo na hora de criação. Opcional. |
