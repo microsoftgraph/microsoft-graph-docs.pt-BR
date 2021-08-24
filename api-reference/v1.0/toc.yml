@@ -236,7 +236,7 @@ items:
           - name: Atribuição de funções do aplicativo
             href: resources/approleassignment.md
             items:
-              - name: List
+              - name: Listar
                 href: api/user-list-approleassignments.md
               - name: Adicionar
                 href: api/user-post-approleassignments.md
@@ -279,7 +279,7 @@ items:
                 href: api/user-list-contactfolders.md
           - name: Concessões de permissão delegadas
             items:
-              - name: List
+              - name: Listar
                 href: api/user-list-oauth2permissiongrants.md
           - name: Objetos de diretório
             href: resources/directoryobject.md
@@ -475,7 +475,7 @@ items:
         items:
           - name: Visão Geral
             href: resources/groups-overview.md
-          - name: Grupo
+          - name: Group
             href: resources/group.md
             items:
               - name: Listar grupos
@@ -578,7 +578,7 @@ items:
           - name: Atribuição de funções do aplicativo
             href: resources/approleassignment.md
             items:
-              - name: List
+              - name: Listar
                 href: api/group-list-approleassignments.md
               - name: Adicionar
                 href: api/group-post-approleassignments.md
@@ -777,7 +777,7 @@ items:
                         href: api/application-delete-extensionproperty.md
               - name: Proprietários
                 items:
-                  - name: List
+                  - name: Listar
                     href: api/application-list-owners.md
                   - name: Adicionar
                     href: api/application-post-owners.md
@@ -790,7 +790,7 @@ items:
                     items:
                       - name: Atribuir
                         href: api/application-post-tokenissuancepolicies.md
-                      - name: List
+                      - name: Listar
                         href: api/application-list-tokenissuancepolicies.md
                       - name: Remover
                         href: api/application-delete-tokenissuancepolicies.md
@@ -799,7 +799,7 @@ items:
                     items:
                       - name: Atribuir
                         href: api/application-post-tokenlifetimepolicies.md
-                      - name: List
+                      - name: Listar
                         href: api/application-list-tokenlifetimepolicies.md
                       - name: Remover
                         href: api/application-delete-tokenlifetimepolicies.md
@@ -834,7 +834,7 @@ items:
               - name: Atribuição de funções do aplicativo
                 href: resources/approleassignment.md
                 items:
-                  - name: List
+                  - name: Listar
                     href: api/serviceprincipal-list-approleassignments.md
                   - name: Adicionar
                     href: api/serviceprincipal-post-approleassignments.md
@@ -858,7 +858,7 @@ items:
                     href: api/serviceprincipal-removekey.md
               - name: Concessões de permissão delegadas
                 items:
-                  - name: List
+                  - name: Listar
                     href: api/serviceprincipal-list-oauth2permissiongrants.md
               - name: Classificações de permissão delegada
                 href: resources/delegatedpermissionclassification.md
@@ -885,7 +885,7 @@ items:
                     href: api/serviceprincipal-getmemberobjects.md
               - name: Proprietários
                 items:
-                  - name: List
+                  - name: Listar
                     href: api/serviceprincipal-list-owners.md
                   - name: Adicionar
                     href: api/serviceprincipal-post-owners.md
@@ -898,7 +898,7 @@ items:
                     items:
                       - name: Atribuir
                         href: api/serviceprincipal-post-claimsmappingpolicies.md
-                      - name: List
+                      - name: Listar
                         href: api/serviceprincipal-list-claimsmappingpolicies.md
                       - name: Remover
                         href: api/serviceprincipal-delete-claimsmappingpolicies.md
@@ -907,7 +907,7 @@ items:
                     items:
                       - name: Atribuir
                         href: api/serviceprincipal-post-homerealmdiscoverypolicies.md
-                      - name: List
+                      - name: Listar
                         href: api/serviceprincipal-list-homerealmdiscoverypolicies.md
                       - name: Remover
                         href: api/serviceprincipal-delete-homerealmdiscoverypolicies.md
@@ -944,7 +944,7 @@ items:
                     items:
                       - name: Atribuir
                         href: api/application-post-tokenissuancepolicies.md
-                      - name: List
+                      - name: Listar
                         href: api/application-list-tokenissuancepolicies.md
                       - name: Remover
                         href: api/application-delete-tokenissuancepolicies.md
@@ -953,7 +953,7 @@ items:
                     items:
                       - name: Atribuir
                         href: api/application-post-tokenlifetimepolicies.md
-                      - name: List
+                      - name: Listar
                         href: api/application-list-tokenlifetimepolicies.md
                       - name: Remover
                         href: api/application-delete-tokenlifetimepolicies.md
@@ -1113,7 +1113,7 @@ items:
                 href: api/calendarpermission-update.md
               - name: Excluir
                 href: api/calendarpermission-delete.md
-          - name: Categorias
+          - name: Categories
             items:
               - name: Categoria
                 href: resources/outlookcategory.md
@@ -1275,6 +1275,10 @@ items:
                 href: api/presence-get.md
               - name: Obter presença para vários usuários
                 href: api/cloudcommunications-getpresencesbyuserid.md
+              - name: Definir presença
+                href: api/presence-setpresence.md
+              - name: Presença clara
+                href: api/presence-clearpresence.md
       - name: Experiências entre dispositivos
         displayName: Project Rome
         items:
@@ -4020,9 +4024,9 @@ items:
                         href: api/intune-tem-telecomexpensemanagementpartner-delete.md
                       - name: Atualizar
                         href: api/intune-tem-telecomexpensemanagementpartner-update.md
-          - name: Comunicações e Integridade do serviço
+          - name: Comunicações e integridade do serviço
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/service-communications-api-overview.md
               - name: Comunicado do serviço
                 href: resources/serviceannouncement.md
@@ -5043,7 +5047,7 @@ items:
                   - name: Instância de revisão do Access
                     href: resources/accessreviewinstance.md
                     items:
-                      - name: List
+                      - name: Listar
                         href: api/accessreviewinstance-list.md
                       - name: Listar decisões
                         href: api/accessreviewinstance-list-decisions.md
@@ -5269,7 +5273,7 @@ items:
                 href: api/messagerule-delete.md
           - name: Propriedades estendidas
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/extended-properties-overview.md
               - name: Propriedades estendidas de valor único
                 items:
@@ -5378,7 +5382,7 @@ items:
             items:
               - name: Obter recurso
                 href: api/resource-get.md
-      - name: Inteligência de pessoas e no local de trabalho
+      - name: Inteligência de pessoas e local de trabalho
         items:
           - name: Visão Geral
             href: resources/social-overview.md
@@ -5516,7 +5520,7 @@ items:
                     href: api/provisioningobjectsummary-list.md
           - name: Microsoft 365 de uso
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/report.md
               - name: Uso do dispositivo do Microsoft Teams
                 href: resources/microsoft-teams-device-usage-reports.md
@@ -5714,7 +5718,7 @@ items:
                     href: api/reportroot-getyammergroupsactivitygroupcounts.md
                   - name: Obter contagens de atividades
                     href: api/reportroot-getyammergroupsactivitycounts.md
-      - name: Pesquisar
+      - name: Pesquisa
         displayname: Microsoft Search API
         items:
           - name: Consulta
@@ -5727,7 +5731,7 @@ items:
                 href: resources/searchresponse.md
               - name: Dados de consulta
                 href: api/search-query.md
-          - name: Índice
+          - name: Index
             items:
               - name: Visão Geral
                 href: resources/indexing-api-overview.md
@@ -5885,7 +5889,7 @@ items:
         items:
           - name: Visão Geral
             href: resources/planner-overview.md
-          - name: Planejar
+          - name: Plano
             href: resources/plannerplan.md
             items:
               - name: Criar plano
@@ -6137,7 +6141,7 @@ items:
                 href: api/chatmessage-list-hostedcontents.md
               - name: Obter conteúdo hospedado
                 href: api/chatmessagehostedcontent-get.md
-          - name: Aplicativo
+          - name: App
             items:
               - name: Aplicativo no catálogo
                 href: resources/teamsapp.md
@@ -6293,7 +6297,7 @@ items:
                     href: api/offershiftrequest-post.md
                   - name: Obter
                     href: api/offershiftrequest-get.md
-                  - name: List
+                  - name: Listar
                     href: api/offershiftrequest-list.md
                   - name: Aprovar
                     href: api/offershiftrequest-approve.md

@@ -533,7 +533,7 @@ items:
         items:
           - name: Visão Geral
             href: resources/groups-overview.md
-          - name: Grupo
+          - name: Group
             href: resources/group.md
             items:
               - name: Listar grupos
@@ -844,7 +844,7 @@ items:
                     items:
                       - name: Atribuir
                         href: api/application-post-tokenissuancepolicies.md
-                      - name: List
+                      - name: Listar
                         href: api/application-list-tokenissuancepolicies.md
                       - name: Remover
                         href: api/application-delete-tokenissuancepolicies.md
@@ -853,7 +853,7 @@ items:
                     items:
                       - name: Atribuir
                         href: api/application-post-tokenlifetimepolicies.md
-                      - name: List
+                      - name: Listar
                         href: api/application-list-tokenlifetimepolicies.md
                       - name: Remover
                         href: api/application-delete-tokenlifetimepolicies.md
@@ -1037,7 +1037,7 @@ items:
                     items:
                       - name: Atribuir
                         href: api/serviceprincipal-post-claimsmappingpolicies.md
-                      - name: List
+                      - name: Listar
                         href: api/serviceprincipal-list-claimsmappingpolicies.md
                       - name: Remover
                         href: api/serviceprincipal-delete-claimsmappingpolicies.md
@@ -1046,7 +1046,7 @@ items:
                     items:
                       - name: Atribuir
                         href: api/serviceprincipal-post-homerealmdiscoverypolicies.md
-                      - name: List
+                      - name: Listar
                         href: api/serviceprincipal-list-homerealmdiscoverypolicies.md
                       - name: Remover
                         href: api/serviceprincipal-delete-homerealmdiscoverypolicies.md
@@ -1055,7 +1055,7 @@ items:
                     items:
                       - name: Atribuir
                         href: api/application-post-tokenissuancepolicies.md
-                      - name: List
+                      - name: Listar
                         href: api/application-list-tokenissuancepolicies.md
                       - name: Remover
                         href: api/application-delete-tokenissuancepolicies.md
@@ -1064,7 +1064,7 @@ items:
                     items:
                       - name: Atribuir
                         href: api/application-post-tokenlifetimepolicies.md
-                      - name: List
+                      - name: Listar
                         href: api/application-list-tokenlifetimepolicies.md
                       - name: Remover
                         href: api/application-delete-tokenlifetimepolicies.md
@@ -1436,7 +1436,7 @@ items:
                 href: api/call-logteleconferencedevicequality.md
           - name: Registros de chamadas
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/callrecords-api-overview.md
               - name: Registro de chamada
                 items:
@@ -1448,7 +1448,7 @@ items:
                 items:
                   - name: Sessão
                     href: resources/callrecords-session.md
-                  - name: List
+                  - name: Listar
                     href: api/callrecords-session-list.md
               - name: Chamadas PSTN
                 items:
@@ -1656,7 +1656,7 @@ items:
                     href: api/projectrome-put-historyitem.md
                   - name: Excluir um item do histórico
                     href: api/projectrome-delete-historyitem.md
-      - name: Reserva de clientes (prévia)
+      - name: Reserva de clientes (visualização)
         displayName: 'Bookings, Microsoft Bookings'
         items:
           - name: Visão Geral
@@ -9336,7 +9336,7 @@ items:
                         href: api/intune-shared-devicemanagementderivedcredentialsettings-get.md
                       - name: Atualizar
                         href: api/intune-shared-devicemanagementderivedcredentialsettings-update.md
-                      - name: List
+                      - name: Listar
                         href: api/intune-shared-devicemanagementderivedcredentialsettings-list.md
                       - name: Excluir
                         href: api/intune-shared-devicemanagementderivedcredentialsettings-delete.md
@@ -9626,6 +9626,8 @@ items:
                     href: api/cloudpc-get.md
                   - name: Reprovision
                     href: api/cloudpc-reprovision.md
+                  - name: Período de carência final
+                    href: api/cloudpc-endgraceperiod.md
               - name: Imagem do dispositivo de computador na nuvem
                 href: resources/cloudpcdeviceimage.md
                 items:
@@ -9697,7 +9699,7 @@ items:
                     href: api/cloudpcusersetting-delete.md
                   - name: Atribuir
                     href: api/cloudpcusersetting-assign.md
-          - name: Atualizações do dispositivo (visualização)
+          - name: Atualizações do dispositivo (prévia)
             displayName: Windows updates
             items:
               - name: Atualizações
@@ -9961,7 +9963,7 @@ items:
                     href: api/managedtenants-managedtenant-list-windowsprotectionstates.md
                   - name: Obter Windows de proteção
                     href: api/managedtenants-windowsprotectionstate-get.md
-          - name: Comunicações e Integridade do serviço
+          - name: Comunicações e integridade do serviço
             items:
               - name: Visão Geral
                 href: resources/service-communications-api-overview.md
@@ -10997,7 +10999,7 @@ items:
               - name: Política de método de autenticação de aplicativo (visualização)
                 items:
                   - name: Visão Geral
-                    href: resources/applicationAuthMethodPolicy.md
+                    href: resources/applicationAuthenticationMethodPolicy.md
                   - name: Política de gerenciamento de aplicativos de locatário
                     items:
                       - name: Visão Geral
@@ -11996,7 +11998,7 @@ items:
                   - name: Atribuição de pacote do Access
                     href: resources/accesspackageassignment.md
                     items:
-                      - name: List
+                      - name: Listar
                         href: api/accesspackageassignment-list.md
                       - name: Filtrar pelo usuário atual
                         href: api/accesspackageassignment-filterbycurrentuser.md
@@ -12163,7 +12165,7 @@ items:
                           - name: Tornar a atribuição de função qualificada
                             href: api/privilegedroleassignment-makeeligible.md
                           - name: Tornar a atribuição de função permanente
-                            href: api/privilegedroleassignment_makepermanent.md
+                            href: api/privilegedroleassignment-makepermanent.md
                       - name: Solicitação da atribuição de função com privilégios
                         href: resources/privilegedroleassignmentrequest.md
                         items:
@@ -12531,9 +12533,9 @@ items:
             items:
               - name: Criar e enviar uma notificação
                 href: api/user-post-notifications.md
-      - name: Inteligência de pessoas e no local de trabalho
+      - name: Inteligência de pessoas e local de trabalho
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: resources/social-overview.md
           - name: Pessoas
             items:
@@ -12885,9 +12887,9 @@ items:
           - name: Análise (visualização)
             href: resources/useranalytics.md
             items:
-              - name: Configurações
+              - name: Settings
                 items:
-                  - name: Configurações
+                  - name: Settings
                     href: resources/settings.md
                   - name: Obter configurações
                     href: api/useranalytics-get-settings.md
@@ -13023,7 +13025,7 @@ items:
                   - name: Resumo detalhado da parte de base
                     href: resources/relyingpartydetailedsummary.md
                     items:
-                      - name: List
+                      - name: Listar
                         href: api/relyingpartydetailedsummary-list.md
               - name: Entrar no aplicativo
                 items:
@@ -13292,7 +13294,7 @@ items:
                     href: api/reportroot-getyammergroupsactivitygroupcounts.md
                   - name: Obter contagens de atividades
                     href: api/reportroot-getyammergroupsactivitycounts.md
-      - name: Pesquisar
+      - name: Pesquisa
         displayname: Microsoft Search API
         items:
           - name: Consulta
@@ -13305,7 +13307,7 @@ items:
                 href: resources/searchresponse.md
               - name: Dados de consulta
                 href: api/search-query.md
-          - name: Índice
+          - name: Index
             items:
               - name: Visão Geral
                 href: resources/indexing-api-overview.md
@@ -13513,7 +13515,7 @@ items:
                     href: api/site-delete-permission.md
           - name: Listas
             items:
-              - name: List
+              - name: Listar
                 href: resources/list.md
               - name: Obter listas em um site
                 href: api/list-list.md
@@ -13613,7 +13615,7 @@ items:
                     href: api/termstore-store-get.md
                   - name: Atualizar
                     href: api/termstore-store-update.md
-              - name: Grupo
+              - name: Group
                 href: resources/termstore-group.md
                 items:
                   - name: Criar
@@ -13627,7 +13629,7 @@ items:
               - name: Set
                 href: resources/termstore-set.md
                 items:
-                  - name: List
+                  - name: Listar
                     href: api/termstore-group-list-sets.md
                   - name: Listar filhos
                     href: api/termstore-term-list-children.md
@@ -13664,7 +13666,7 @@ items:
         items:
           - name: Visão Geral
             href: resources/planner-overview.md
-          - name: Planejar
+          - name: Plano
             href: resources/plannerplan.md
             items:
               - name: Listar os planos do grupo
@@ -13999,7 +14001,7 @@ items:
                 href: api/teamworktagmember-get.md
               - name: Excluir membro
                 href: api/teamworktagmember-delete.md
-          - name: Aplicativo
+          - name: App
             items:
               - name: Aplicativo no catálogo
                 href: resources/teamsapp.md
@@ -14164,7 +14166,7 @@ items:
                     href: api/offershiftrequest-post.md
                   - name: Obter
                     href: api/offershiftrequest-get.md
-                  - name: List
+                  - name: Listar
                     href: api/offershiftrequest-list.md
                   - name: Aprovar
                     href: api/offershiftrequest-approve.md
