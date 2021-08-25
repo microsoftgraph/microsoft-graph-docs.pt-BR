@@ -5,12 +5,12 @@ localization_priority: Normal
 author: harini84
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 4e76bf6cd10682717bebe9365afa14ced47d4c90
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 235a8447245df1766e76751e79c74bb1072615ae
+ms.sourcegitcommit: 9b8abc940a68dac6ee5da105ca29800cb59775f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52042587"
+ms.lasthandoff: 08/25/2021
+ms.locfileid: "58513591"
 ---
 # <a name="event-delta"></a>evento: delta
 
@@ -22,7 +22,7 @@ Obter um conjunto de [recursos de](../resources/event.md) evento que foram adici
 
 Você pode obter tipos específicos dessas alterações incrementais nos eventos em todos os calendários de uma caixa de correio ou em um calendário específico ou em uma coleção de eventos de **um calendarView** (intervalo de eventos definidos por datas de início e término) de um calendário. O calendário pode ser o calendário padrão ou algum outro calendário especificado do usuário. No caso de obter alterações incrementais em **calendarView**, o calendário também pode ser um calendário de grupo.
 
-Uma **chamada** de função delta é semelhante a uma ou solicitação para o calendário especificado, exceto que, aplicando adequadamente `GET /events` `GET /calendarview` [tokens](/graph/delta-query-overview#state-tokens) de estado em uma ou mais dessas chamadas, você pode consultar alterações incrementais de eventos nesse calendário. Isso permite manter e sincronizar um armazenamento local de eventos no calendário especificado, sem precisar buscar todos os eventos desse calendário do servidor sempre.
+Normalmente, a sincronização de eventos em um calendário ou **calendarView** em um armazenamento local envolve uma série de várias chamadas de **função delta.** A chamada inicial é uma sincronização completa e cada chamada **delta** subsequente na mesma rodada obtém as alterações incrementais (adições, exclusões ou atualizações). Isso permite manter e sincronizar um armazenamento local de eventos no calendário especificado, sem precisar buscar todos os eventos desse calendário do servidor sempre.
 
 A tabela a seguir lista as diferenças entre a **função delta** em eventos e a **função delta** em **um calendarView** em um calendário.
 
@@ -143,7 +143,11 @@ Em solicitações subsequentes, basta copiar e aplicar a URL ou da resposta ante
 | $deltatoken | string | Um [token de estado](/graph/delta-query-overview) retornado na URL `deltaLink` da chamada de função **delta** anterior do mesmo modo de exibição de calendário, indicando a conclusão da série de controle de alterações. Salve e aplique toda a URL `deltaLink`, incluindo esse token na primeira solicitação da próxima série de controle do modo de exibição de calendário.|
 | $skiptoken | string | Um [token de estado](/graph/delta-query-overview) retornado na URL `nextLink` da chamada de função **delta** anterior indicando que não há mais alterações a serem controladas no mesmo modo de exibição de calendário. |
 
-Não suporta `$expand` , , , e `$filter` `$orderby` `$select` `$search` .
+### <a name="odata-query-parameters"></a>Parâmetros de consulta OData
+- Espere uma **chamada de** função delta em um **calendarView** para retornar as mesmas propriedades que você normalmente obteria de uma `GET /calendarview` solicitação. Você não pode `$select` usar para obter apenas um subconjunto dessas propriedades.
+
+- A **função delta** não dá suporte aos seguintes parâmetros de consulta para eventos em um calendário do usuário ou eventos em um **calendarView**: , , , , e `$expand` `$filter` `$orderby` `$search` `$select` . 
+
 
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -163,6 +167,12 @@ Se tiver êxito, este método retornará um código `200 OK` de resposta e uma c
 Se tiver êxito, este método retornará um código `200 OK` de resposta e uma coleção [de](../resources/event.md) eventos no corpo da resposta.
 
 Espere obter todas as propriedades que você normalmente obteria de uma `GET /calendarview` solicitação. 
+
+Dentro de uma rodada de chamadas de função **delta** vinculadas pelo intervalo de datas de **um calendarView**, você pode encontrar uma chamada **delta** retornando dois tipos de eventos com o `@removed` motivo `deleted` : 
+- Eventos que estão dentro do intervalo de datas e que foram excluídos desde a chamada **delta** anterior.
+- Eventos que estão _fora do_ intervalo de datas e que foram adicionados, excluídos ou atualizados desde a chamada **delta** anterior.
+
+Filtre os eventos `@removed` em para o intervalo de datas que seu cenário exige.
 
 ## <a name="examples"></a>Exemplos
 
@@ -238,20 +248,6 @@ GET https://graph.microsoft.com/beta/me/calendars/AAMkADI5M1BbeAAA=/calendarview
 
 Prefer: odata.maxpagesize=2
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/event-delta-calendarview-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/event-delta-calendarview-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/event-delta-calendarview-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 
 #### <a name="response"></a>Resposta
 

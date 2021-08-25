@@ -5,12 +5,12 @@ author: Jordanndahl
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: fb0088df0f89f52fe68bd55330d0ca71f168e9d6
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: 74fae7508848e3adcaba5130d84e2de7298b425f
+ms.sourcegitcommit: 9b8abc940a68dac6ee5da105ca29800cb59775f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52682576"
+ms.lasthandoff: 08/25/2021
+ms.locfileid: "58513794"
 ---
 # <a name="list-conversations"></a>Listar conversas
 
@@ -34,7 +34,7 @@ GET /groups/{id}/conversations
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
+Este método oferece suporte aos parâmetros de consulta `$select` e `$filter`[OData](/graph/query-parameters)para ajudar a personalizar a resposta.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Cabeçalho       | Valor |
@@ -48,7 +48,7 @@ Não forneça um corpo de solicitação para esse método.
 Se bem-sucedido, este método retorna um código de resposta `200 OK` e uma coleção de objetos [conversation](../resources/conversation.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
-#### <a name="request"></a>Solicitação
+### <a name="request"></a>Solicitação
 Este é um exemplo de solicitação.
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -77,7 +77,7 @@ GET https://graph.microsoft.com/v1.0/groups/{id}/conversations
 
 ---
 
-#### <a name="response"></a>Resposta
+### <a name="response"></a>Resposta
 Este é um exemplo de resposta.
 >**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
@@ -90,21 +90,21 @@ Este é um exemplo de resposta.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 262
 
 {
-  "value": [
-    {
-      "topic": "topic-value",
-      "hasAttachments": true,
-      "lastDeliveredDateTime": "datetime-value",
-      "uniqueSenders": [
-        "uniqueSenders-value"
-      ],
-      "preview": "preview-value",
-      "id": "id-value"
-    }
-  ]
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#groups('f448435d-3ca7-4073-8152-a1fd73c0fd09')/conversations",
+    "value": [
+        {
+            "id": "AAQkAGFhZDhkNGI1LTliZmEtNGEzMi04NTkzLWZjMWExZDkyMWEyZgAQAH4o7SknOTNKqAqMhqJHtUM=",
+            "topic": "The new All Company group is ready",
+            "hasAttachments": false,
+            "lastDeliveredDateTime": "2021-08-02T10:34:00Z",
+            "uniqueSenders": [
+                "All Company"
+            ],
+            "preview": "Welcome to the All Company group.Use the group to share ideas, files, and important dates.Start a conversationRead group conversations or start your own.Share filesView, edit, and share all group files, including email attachments.Connect your"
+        }
+    ]
 }
 ```
 

@@ -5,20 +5,20 @@ localization_priority: Priority
 author: harini84
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: e62229a704ce51b31f0d192107d480ff97f7fd08
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: f410ec6aee93e70596d811760833ac54366858ba
+ms.sourcegitcommit: 9b8abc940a68dac6ee5da105ca29800cb59775f6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52039633"
+ms.lasthandoff: 08/25/2021
+ms.locfileid: "58514011"
 ---
 # <a name="event-delta"></a>evento: delta
 
 Namespace: microsoft.graph
 
-Obtenha um conjunto de eventos que foram adicionados, excluídos ou atualizados em um **calendarView** (um intervalo de eventos) do calendário principal do usuário.
+Obtenha um conjunto de [eventos](../resources/event.md) recursos que foram adicionados, excluídos ou atualizados em um **calendárioView** (um intervalo de eventos definidos por datas de início e fim) do calendário principal do usuário.
 
-A chamada de função **delta** para eventos é semelhante a uma solicitação `GET /calendarview` por um intervalo de dados no calendário principal do usuário, exceto ao aplicar [tokens de estado](/graph/delta-query-overview) de forma apropriada em uma ou mais dessas chamadas, você pode consultar alterações incrementais no modo de exibição de calendário. Isso permite manter e sincronizar um armazenamento local de eventos do usuário no calendário principal, sem precisar buscar todos os eventos do calendário do servidor de cada vez.
+Geralmente, sincronizar eventos em um **calendárioView** em uma repositório local implica em uma rodada de várias chamadas de função **delta**. A chamada inicial é uma sincronização completa, e cada chamada **delta** subsequente na mesma rodada recebe as alterações incrementais (acréscimos, exclusões ou atualizações). Isto permite manter e sincronizar uma repositório local de eventos no **calendárioView** especificado, sem ter que ir buscar todos os eventos desse calendário do servidor toda vez.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -50,7 +50,10 @@ O controle de alterações em eventos corresponde a uma série de uma ou mais ch
 | $deltatoken | string | Um [token de estado](/graph/delta-query-overview) retornado na URL `deltaLink` da chamada de função **delta** anterior do mesmo modo de exibição de calendário, indicando a conclusão da série de controle de alterações. Salve e aplique toda a URL `deltaLink`, incluindo esse token na primeira solicitação da próxima série de controle do modo de exibição de calendário.|
 | $skiptoken | string | Um [token de estado](/graph/delta-query-overview) retornado na URL `nextLink` da chamada de função **delta** anterior indicando que não há mais alterações a serem controladas no mesmo modo de exibição de calendário. |
 
-Quando você faz uma consulta delta em um modo de exibição de calendário, espera obter todas as propriedades que obteria normalmente de uma solicitação `GET /calendarview`. O `$select` não é compatível nesse caso. 
+### <a name="odata-query-parameters"></a>Parâmetros de consulta OData
+- Esperar uma **delta** chamada de função em um **calendárioView** para retornar as mesmas propriedades que você normalmente obteria de um `GET /calendarview` solicitação. Você não pode usar `$select` para obter apenas um subconjunto dessas propriedades.
+
+- Existem outros parâmetros de consulta OData que a função **delta** para **calendarView** não suporta: `$expand`, `$filter`,`$orderby`, e `$search`. 
 
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -64,6 +67,12 @@ Quando você faz uma consulta delta em um modo de exibição de calendário, esp
 ## <a name="response"></a>Resposta
 
 Se bem-sucedido, este método retorna o código de resposta `200 OK` e uma coleção de objetos [event](../resources/event.md) no corpo da resposta.
+
+Dentro de uma rodada de **delta** chamadas de função associadas ao intervalo de datas de um **calendárioView**, você pode encontrar uma **delta** chamada retornando dois tipos de eventos em `@removed` com o motivo `deleted`: 
+- Eventos que estejam dentro do intervalo de datas e que tenham sido excluídos desde a chamada anterior **delta**.
+- Eventos que estejam _fora_ do intervalo de datas e que tenham sido adicionados, excluídos ou atualizados desde a chamada anterior **delta**.
+
+Filtre os eventos sob `@removed` para o intervalo de datas que seu cenário requer.
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
@@ -83,20 +92,6 @@ GET https://graph.microsoft.com/v1.0/me/calendarView/delta?startdatetime={start_
 
 Prefer: odata.maxpagesize=2
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/event-delta-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/event-delta-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/event-delta-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 
 ##### <a name="response"></a>Resposta
 Se a solicitação for bem-sucedida, a resposta incluiria um token de estado, que é um _skipToken_ (em um cabeçalho de resposta _@odata.nextLink_) ou um _deltaToken_ (em um cabeçalho de resposta _@odata.deltaLink_). Respectivamente, elas indicam se você deverá continuar com a série ou se já concluiu a obtenção de todas as alterações dessa série.

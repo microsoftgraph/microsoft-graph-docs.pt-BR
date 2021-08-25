@@ -1,28 +1,34 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 5bbffb1cd00a085fc916624b675696015409e544e5e35a70ff9a53483323e933
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: c53b34263b43de02c326854b4c3541d062392252
+ms.sourcegitcommit: 9b8abc940a68dac6ee5da105ca29800cb59775f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57275531"
+ms.lasthandoff: 08/25/2021
+ms.locfileid: "58514022"
 ---
 ```objc
 
 MSHTTPClient *httpClient = [MSClientFactory createHTTPClientWithAuthenticationProvider:authenticationProvider];
 
 NSString *MSGraphBaseURL = @"https://graph.microsoft.com/beta/";
-NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/me/activateServicePlan"]]];
+NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/users/fa8bf3dc-eca7-46b7-bad1-db199b62afc3/presence/setPresence"]]];
 [urlRequest setHTTPMethod:@"POST"];
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
 NSMutableDictionary *payloadDictionary = [[NSMutableDictionary alloc] init];
 
-NSString *servicePlanId = @"28f42d6f-8034-4a0f-9d8a-a218a63b3299";
-payloadDictionary[@"servicePlanId"] = servicePlanId;
+NSString *sessionId = @"22553876-f5ab-4529-bffb-cfe50aa89f87";
+payloadDictionary[@"sessionId"] = sessionId;
 
-NSString *skuId = @"465a2a90-5e59-456d-a7b8-127b9fb2e484";
-payloadDictionary[@"skuId"] = skuId;
+NSString *availability = @"Available";
+payloadDictionary[@"availability"] = availability;
+
+NSString *activity = @"Available";
+payloadDictionary[@"activity"] = activity;
+
+NSString *expirationDuration = @"PT1H";
+payloadDictionary[@"expirationDuration"] = expirationDuration;
 
 NSData *data = [NSJSONSerialization dataWithJSONObject:payloadDictionary options:kNilOptions error:&error];
 [urlRequest setHTTPBody:data];

@@ -1,0 +1,113 @@
+---
+title: Conjuntos de listas
+description: Obter uma lista dos objetos definidos e suas propriedades.
+author: vishriv
+localization_priority: Normal
+ms.prod: taxonomy
+doc_type: apiPageType
+ms.openlocfilehash: 6174c44f98d5c916937f7cd83ba65e2e163faf28
+ms.sourcegitcommit: 9b8abc940a68dac6ee5da105ca29800cb59775f6
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 08/25/2021
+ms.locfileid: "58514868"
+---
+# <a name="list-sets"></a>Conjuntos de listas
+Namespace: microsoft.graph.termStore
+
+Obter uma lista dos [objetos definidos](../resources/termstore-set.md) e suas propriedades.
+
+## <a name="permissions"></a>Permissões
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
+
+|Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
+|:---|:---|
+|Delegado (conta corporativa ou de estudante) |TermStore.Read.All, TermStore.ReadWrite.All |
+|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
+|Aplicativo | Sem suporte. |
+
+## <a name="http-request"></a>Solicitação HTTP
+
+<!-- {
+  "blockType": "ignored"
+}
+-->
+
+``` http
+GET sites/{site-id}/termStore/groups/{group-id}/sets
+```
+
+## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
+Este método dá suporte a alguns parâmetros de consulta OData para ajudar a personalizar a resposta. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
+
+## <a name="request-headers"></a>Cabeçalhos de solicitação
+|Nome|Descrição|
+|:---|:---|
+|Autorização|{token} de portador. Obrigatório.|
+
+## <a name="request-body"></a>Corpo da solicitação
+Não forneça um corpo de solicitação para esse método.
+
+## <a name="response"></a>Resposta
+
+Se tiver êxito, este método retornará um código de resposta e uma `200 OK` coleção [de objetos definidos](../resources/termstore-set.md) no corpo da resposta.
+
+## <a name="examples"></a>Exemplos
+
+### <a name="request"></a>Solicitação
+
+<!-- {
+  "blockType": "request",
+  "name": "get_set_1"
+}-->
+
+``` http
+GET https://graph.microsoft.com/v1.0/microsoft.sharepoint.com,b9b0bc03-cbc4-40d2-aba9-2c9dd9821ddf,6a742cee-9216-4db5-8046-13a595684e74/termStore/groups/03577abb-975e-4fb4-9ee0-4102a9108f94/sets
+```
+
+### <a name="response"></a>Resposta
+
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.termStore.set",
+  "isCollection": true
+} -->
+
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "value": [
+    {
+      "id": "3607e9f9-e9f9-3607-f9e9-0736f9e90736",
+      "description": "Starting term Set",    
+      "localizedNames" : [
+        {
+          "languageTag" : "en-US",
+          "name" : "Department"
+        }
+      ]
+    }
+  ]
+}
+```
+
+[microsoft.graph.termStore.set]: ../resources/termstore-set.md
+
+<!--
+{
+  "type": "#page.annotation",
+  "description": "Get termSet entity in termStore",
+  "keywords": "term,termStore",
+  "section": "documentation",
+  "tocPath": "termStore/List termstore-set",
+  "suppressions": [
+  ]
+}
+-->
+
+
