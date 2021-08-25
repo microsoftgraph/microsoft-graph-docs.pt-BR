@@ -124,7 +124,7 @@ Com o pipeline criado, agora é hora de ser executado.
 
 1. Depois que você está no **exibição Atividade é executado,** vá para a seção _Atividades_ executados, que está localizada no lado inferior da página.
 
-1. Passe o mouse sobre **o nome de atividade** e selecione a opção googles. Isso irá trazer a guia **Detalhes.**
+1. Passe o mouse sobre **o nome de atividade** e selecione a opção de alternâncias. Isso irá trazer a guia **Detalhes.**
 
     ![Uma captura de tela mostrando a interface do usuário do Portal do Azure para Data Factory Activity Runs, o usuário está selecionando os googles no nome da atividade para abrir a guia detalhes.](images/data-connect-adf-pipeline-details.png)
 
