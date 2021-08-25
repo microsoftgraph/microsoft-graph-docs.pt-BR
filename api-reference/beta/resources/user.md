@@ -5,12 +5,12 @@ author: jpettere
 localization_priority: Priority
 ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: 360fc76c189cbdd68a5e0d6c746f71301c868640
-ms.sourcegitcommit: c541d3eceafda4812e2c0c029c95ddfb92ef58b3
+ms.openlocfilehash: 6c3569ddd09f63ede52b70e88c1f2c680c8a0851
+ms.sourcegitcommit: 9b8abc940a68dac6ee5da105ca29800cb59775f6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/04/2021
-ms.locfileid: "53726716"
+ms.lasthandoff: 08/25/2021
+ms.locfileid: "58513941"
 ---
 # <a name="user-resource-type"></a>Tipo de recurso de usuário
 
@@ -178,7 +178,7 @@ Esse recurso permite:
 | consentProvidedForMinor | [consentProvidedForMinor](#consentprovidedforminor-values) | Define se o consentimento foi obtido para menores. Valores permitidos: `null`, `granted`, `denied` e `notRequired`. Confira as [definições de propriedades da faixa etária legal](#legal-age-group-property-definitions) para obter mais informações. <br><br>Suporte `$filter` (`eq`, `ne`, `NOT` e `in`).|
 | country | Cadeia de caracteres | O país/região em que o usuário está localizado; por exemplo, `US` ou `UK`. O comprimento máximo é de 128 caracteres. <br><br>Suporta `$filter` (`eq`, `ne`, `NOT`, `ge`, `le`, `in`, `startsWith`). |
 | createdDateTime | DateTimeOffset | A data e hora que o usuário foi criado. Não é possível modificar o valor e ele é preenchido automaticamente quando a entidade é criada. O tipo DateTimeOffset representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. A propriedade é anulável. Um valor nulo indica que uma hora de criação exata não pode ser determinada pelo usuário. Somente leitura. <br><br>Suporta `$filter` (`eq`, `ne`, `NOT` , `ge`, `le` e operadores `in` ). |
-| creationType | String | Indica se a conta de usuário foi criada como uma conta corporativa ou de estudante (`null`), uma conta externa (`Invitation`), uma conta local para um locatário do Azure Active Directory B2C (`LocalAccount`) ou uma inscrição de autoatendimento usando a verificação de email (`EmailVerified`). Somente leitura. <br><br>Suporte `$filter` (`eq`, `ne`, `NOT` e `in`). |
+| creationType | String | Indica se a conta do usuário foi criada por meio de um dos seguintes métodos: <br/> <ul><li>Como uma conta corporativa ou de estudante (`null`). <li>Como uma conta externa (`Invitation`). <li>Como uma conta local para um locatário do Azure Active Directory B2C (`LocalAccount`). <li>Por meio da inscrição de autoatendimento por um usuário interno usando a verificação por email (`EmailVerified`). <li>Por meio da inscrição de autoatendimento por um usuário externo inscrevendo-se por meio de um link que faz parte de um fluxo do usuário (`SelfServiceSignUp`). </ul> <br>Somente leitura.<br>Suporte `$filter` (`eq`, `ne`, `NOT` e `in`). |
 | deletedDateTime | DateTimeOffset | A data e hora que o usuário foi excluído. <br><br>Suporta `$filter` (`eq`, `ne`, `NOT`, `ge`, `le`, e `in`). |
 | departamento | String | O nome do departamento no qual o usuário trabalha. O comprimento máximo é de 64 caracteres.<br><br>Suporta `$filter` (`eq`, `ne`, `NOT` , `ge`, `le`e operadores `in` ). |
 | displayName | String | O nome exibido no catálogo de endereços para o usuário. Geralmente é a combinação do nome do usuário, inicial do meio e sobrenome. Esta propriedade é necessária quando um usuário é criado e não pode ser limpa durante as atualizações. O comprimento máximo é de 256 caracteres.<br><br>Suporta `$filter` (`eq`, `ne`, `NOT` , `ge`, `le`, `in`, `startsWith`), `$orderBy`e `$search`.|
@@ -261,7 +261,7 @@ Hence the type of the corresponding 3 properties remain as string type in the Pr
 |minorWithoutParentalConsent |(Reservado para uso futuro)|
 |minorWithParentalConsent| O usuário é considerado menor baseado nos regulamentos relacionados com a idade de seu país ou região, e o administrador da conta obteve o consentimento apropriado dos pais ou responsável.|
 |adult|O usuário é considerado adulto baseado nos regulamentos relacionadas com a idade do seu país ou região.|
-|notAdult|O usuário é de um país ou região com regulamentações adicionais relacionados à idade (por exemplo, Estados Unidos, Reino Unido, União Europeia ou Coreia do Sul) e a idade do usuário está entre menor e adulto (como estipulado com base no país ou região). Em geral, isso significa que adolescentes são considerados como `notAdult` em países regulamentados.|
+|notAdult|O usuário é de um país ou região com regulamentações adicionais relacionados à idade (por exemplo, Estados Unidos, Reino Unido, União Europeia ou Coreia do Sul) e a idade do usuário está entre menor e adulto (como estipulado com base no país ou região). De forma geral, isso significa que os adolescentes são considerados como `notAdult` em países com regulamentação.|
 |minorNoParentalConsentRequired|O usuário é menor de idade, mas é de um país ou região que não tem com regulamentações relacionadas com a idade.|
 
 #### <a name="agegroup-values"></a>ageGroup values
@@ -270,7 +270,7 @@ Hence the type of the corresponding 3 properties remain as string type in the Pr
 |:---------------|:--------|
 |null|Valor padrão, nenhum **ageGroup** foi definido para o usuário.|
 |menor|O usuário é considerado um menor.|
-|notAdult|O usuário é de um país que tem regulamentos estatutários (Estados Unidos, Reino Unido, União Europeia ou Coreia do Sul) e a idade do usuário é maior que o limite superior de idade infantil (por país) e menor do que o limite inferior de idade adulta (estipulado com base em cada país ou região). Basicamente, adolescentes são considerados como `notAdult` em países regulamentados.|
+|notAdult|O usuário é de um país que tem regulamentos estatutários (Estados Unidos, Reino Unido, União Europeia ou Coreia do Sul) e a idade do usuário é maior que o limite superior de idade infantil (por país) e menor do que o limite inferior de idade adulta (estipulado com base em cada país ou região). Basicamente, os adolescentes são considerados como `notAdult` em países com regulamentação.|
 |adult|O usuário deve ser tratado como um adulto.|
 
 #### <a name="consentprovidedforminor-values"></a>consentProvidedForMinor values
@@ -298,7 +298,7 @@ Hence the type of the corresponding 3 properties remain as string type in the Pr
 |directReports|Coleção [directoryObject](directoryobject.md)|Os usuários e contatos subordinados ao usuário. (Os usuários e contatos cuja propriedade manager está definida como esse usuário.) Somente leitura. Anulável. Suporta o `$expand`. |
 |Unidade|[drive](drive.md)|O OneDrive do usuário. Somente leitura.|
 |unidades|Coleção [drive](drive.md)| Uma coleção de unidades disponíveis para este usuário. Somente leitura. |
-|eventos|Coleção [event](event.md)|Os eventos do usuário. O padrão é mostrar eventos no Calendário Padrão. Somente leitura. Anulável.|
+|events|Coleção [event](event.md)|Os eventos do usuário. O padrão é mostrar eventos no Calendário Padrão. Somente leitura. Anulável.|
 |extensions|Coleção [extension](extension.md)|A coleção de extensões abertas definidas para o usuário. Anulável.|
 |inferenceClassification|[inferenceClassification](inferenceclassification.md)| Classificação de relevância das mensagens do usuário com base em designações explícitas que substituem a relevância ou importância deduzida. |
 |insights|[itemInsights](iteminsights.md) | Somente leitura. Anulável.|
@@ -318,7 +318,7 @@ Hence the type of the corresponding 3 properties remain as string type in the Pr
 |photos|coleção de [fotos](photo.md)| Somente leitura. Anulável.|
 |planner|[plannerUser](planneruser.md)| Serviços de Planejador seletivo disponíveis para o usuário. Somente leitura. Anulável. |
 |perfil |[perfil](profile.md) | Representa propriedades que são descritivas de um usuário em um locatário. |
-|registeredDevices|Coleção [directoryObject](directoryobject.md)|Dispositivos que estão registrados para o usuário. Somente leitura. Anulável. Suporta o `$expand`.|
+|registeredDevices|Coleção [directoryObject](directoryobject.md)|Dispositivos que estão registrados para o usuário. Somente leitura. Anulável. Suporta `$expand`.|
 |scopedRoleMemberOf|Coleção [scopedRoleMembership](scopedrolemembership.md)| As associações de unidade administrativa de função com escopo deste usuário. Somente leitura. Anulável.|
 |settings|[userSettings](usersettings.md) | Somente leitura. Anulável.|
 |trabalho em equipe|[userTeamwork](userteamwork.md)| Um contêiner dos recursos do Microsoft Teams disponíveis para o usuário. Somente leitura. Anulável.|
