@@ -1240,7 +1240,7 @@ items:
                 href: api/call-logteleconferencedevicequality.md
           - name: Registros de chamadas
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/callrecords-api-overview.md
               - name: Registro de chamada
                 items:
@@ -5273,7 +5273,7 @@ items:
                 href: api/messagerule-delete.md
           - name: Propriedades estendidas
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/extended-properties-overview.md
               - name: Propriedades estendidas de valor único
                 items:
@@ -5718,7 +5718,7 @@ items:
                     href: api/reportroot-getyammergroupsactivitygroupcounts.md
                   - name: Obter contagens de atividades
                     href: api/reportroot-getyammergroupsactivitycounts.md
-      - name: Pesquisa
+      - name: Pesquisar
         displayname: Microsoft Search API
         items:
           - name: Consulta
@@ -5869,7 +5869,7 @@ items:
                 href: api/listitem-list.md
               - name: Criar lista
                 href: api/list-create.md
-          - name: ListItems
+          - name: Listar itens
             href: resources/listitem.md
             items:
               - name: Obter item
@@ -5884,10 +5884,66 @@ items:
                 href: api/listitem-list-versions.md
               - name: Obter análise do item
                 href: api/itemanalytics-get.md
+          - name: Taxonomia
+            displayname: Taxonomy API
+            items:
+              - name: Repositório
+                href: resources/termstore-store.md
+                items:
+                  - name: Obter
+                    href: api/termstore-store-get.md
+                  - name: Atualizar
+                    href: api/termstore-store-update.md
+              - name: Group
+                href: resources/termstore-group.md
+                items:
+                  - name: Listar
+                    href: api/termstore-list-groups.md
+                  - name: Criar
+                    href: api/termstore-group-post.md
+                  - name: Obter
+                    href: api/termstore-group-get.md
+                  - name: Excluir
+                    href: api/termstore-group-delete.md
+              - name: Set
+                href: resources/termstore-set.md
+                items:
+                  - name: Listar
+                    href: api/termstore-group-list-sets.md
+                  - name: Listar filhos
+                    href: api/termstore-term-list-children.md
+                  - name: Criar
+                    href: api/termstore-set-post.md
+                  - name: Obter
+                    href: api/termstore-set-get.md
+                  - name: Atualizar
+                    href: api/termstore-set-update.md
+                  - name: Excluir
+                    href: api/termstore-set-delete.md
+              - name: Termo
+                href: resources/termstore-term.md
+                items:
+                  - name: Listar filhos
+                    href: api/termstore-term-list-children.md
+                  - name: Criar
+                    href: api/termstore-term-post.md
+                  - name: Obter
+                    href: api/termstore-term-get.md
+                  - name: Atualizar
+                    href: api/termstore-term-update.md
+                  - name: Excluir
+                    href: api/termstore-term-delete.md
+              - name: Relation
+                href: resources/termstore-relation.md
+                items:
+                  - name: Listar
+                    href: api/termStore-term-list-relations.md
+                  - name: Criar
+                    href: api/termStore-relation-post.md
       - name: Tarefas e planos
         displayName: Planner
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: resources/planner-overview.md
           - name: Plano
             href: resources/plannerplan.md
@@ -6426,7 +6482,7 @@ items:
       - name: Tarefas pendentes
         displayName: Microsoft To Do
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: resources/todo-overview.md
           - name: Lista de tarefas
             href: resources/todotasklist.md

@@ -3,14 +3,14 @@ title: Tipo de recurso responseStatus
 description: O status de resposta de uma solicitação de reunião.
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: ''
+ms.prod: outlook
 author: harini84
-ms.openlocfilehash: 0ee9c70baa5cdea45868feb1517623081f2b62b2
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: f7559f90f1bef35601136e944d57bfec4951cdbf
+ms.sourcegitcommit: 9b8abc940a68dac6ee5da105ca29800cb59775f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50718457"
+ms.lasthandoff: 08/25/2021
+ms.locfileid: "58514081"
 ---
 # <a name="responsestatus-resource-type"></a>Tipo de recurso responseStatus
 
@@ -18,13 +18,15 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-O status de resposta de uma solicitação de reunião.
+O status de resposta de um participante ou organizador de uma solicitação de reunião.
+
+Você pode obter o status de resposta de um participante [](event.md) ou organizador por meio da propriedade **responseStatus** de um evento ou da propriedade **status** de [um participante](attendee.md).
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade | Tipo           | Descrição |
 |:---------|:---------------|:------------|
-| response | Cadeia de caracteres         | O tipo de resposta. Os valores possíveis são: `None`, `Organizer`, `TentativelyAccepted`, `Accepted`, `Declined`, `NotResponded`.
+| response | Cadeia de caracteres         | O tipo de resposta. Os valores possíveis são: `none`, `organizer`, `tentativelyAccepted`, `accepted`, `declined`, `notResponded`.<br><br>Para diferenciar entre e : como exemplo, se o participante Alex não tiver respondido a uma solicitação de reunião, obter o status de resposta de Alex para esse evento no calendário de `none` `notResponded` Alex retornará `notResponded` . Obter a resposta de Alex do calendário de qualquer outro participante ou os retornos do organizador `none` . Obter a resposta do organizador para o evento no calendário de qualquer pessoa também retorna `none` . 
 | time     | DateTimeOffset | A data e hora em que a resposta retornou. Usa o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`
 
 ## <a name="json-representation"></a>Representação JSON

@@ -3,26 +3,28 @@ title: Tipo de recurso responseStatus
 description: O status de resposta de uma solicitação de reunião.
 localization_priority: Normal
 author: harini84
-ms.prod: ''
+ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 93d464e054663ebeae53ff9f6c1e082ca660608635ee99d74cb4a9592f1981ce
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 89334764afa8a94c13c8c48111eb279e970b30cb
+ms.sourcegitcommit: 9b8abc940a68dac6ee5da105ca29800cb59775f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54169309"
+ms.lasthandoff: 08/25/2021
+ms.locfileid: "58514550"
 ---
 # <a name="responsestatus-resource-type"></a>Tipo de recurso responseStatus
 
 Namespace: microsoft.graph
 
-O status de resposta de uma solicitação de reunião.
+O status de resposta de um participante ou organizador de uma solicitação de reunião.
+
+Você pode obter o status de resposta de um participante [](event.md) ou organizador por meio da propriedade **responseStatus** de um evento ou da propriedade **status** de [um participante](attendee.md).
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade | Tipo           | Descrição |
 |:---------|:---------------|:------------|
-| response | responseType   | O tipo de resposta. Os valores possíveis são: `None`, `Organizer`, `TentativelyAccepted`, `Accepted`, `Declined`, `NotResponded`.
+| response | responseType   | O tipo de resposta. Os valores possíveis são: `none`, `organizer`, `tentativelyAccepted`, `accepted`, `declined`, `notResponded`.<br><br>Para diferenciar entre e : como exemplo, se o participante Alex não tiver respondido a uma solicitação de reunião, obter o status de resposta de Alex para esse evento no calendário de `none` `notResponded` Alex retornará `notResponded` . Obter a resposta de Alex do calendário de qualquer outro participante ou os retornos do organizador `none` . Obter a resposta do organizador para o evento no calendário de qualquer pessoa também retorna `none` . 
 | time     | DateTimeOffset | A data e hora em que a resposta retornou. Usa o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`
 
 ## <a name="json-representation"></a>Representação JSON

@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: a90dd6cd8cce6b33fb74369e4d42c26c03ffe38a
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: f4b343e14f5ed675a93f99559c64aaa8242c93b5
+ms.sourcegitcommit: 9b8abc940a68dac6ee5da105ca29800cb59775f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50775037"
+ms.lasthandoff: 08/25/2021
+ms.locfileid: "58514599"
 ---
 # <a name="user-activateserviceplan"></a>user: activateServicePlan
 
@@ -26,9 +26,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 | :--- | :--- |
-| Delegada (conta corporativa ou de estudante) | Directory.ReadWrite.All, Directory.ReadWriteAdvanced.All |
+| Delegado (conta corporativa ou de estudante) | Directory.ReadWrite.All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Aplicativo | Directory.ReadWrite.All, Directory.ReadWriteAdvanced.All |
+| Aplicativo | Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 

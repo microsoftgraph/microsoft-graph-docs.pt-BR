@@ -1,23 +1,23 @@
 ---
 title: Excluir grupo
-description: Exclua um objeto group.
+description: Exclua um objeto group em um armazenamento de termos.
 author: mohitpcad
 localization_priority: Normal
-ms.prod: Sharepoint
+ms.prod: taxonomy
 doc_type: apiPageType
-ms.openlocfilehash: 08379c962f5361b010559bc81c3ecb273589d54f
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: 4d76c86859c119f5811ad85bd1b44047220a1598
+ms.sourcegitcommit: 9b8abc940a68dac6ee5da105ca29800cb59775f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49873833"
+ms.lasthandoff: 08/25/2021
+ms.locfileid: "58514382"
 ---
-# <a name="delete-groups"></a>Excluir grupos
+# <a name="delete-group"></a>Excluir grupo
 Namespace: microsoft.graph.termStore
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[Exclua um](../resources/termstore-group.md) objeto group no armazenamento de [termos.]
+Excluir um [objeto group](../resources/termstore-group.md) em um armazenamento de [termos.]
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).

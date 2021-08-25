@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 43c9f69a8ae83b6df823d65afe2f3c2c01d8d90e
-ms.sourcegitcommit: 5bb981b4853663354a566d4a4a5cbf288939e441
+ms.openlocfilehash: c00e0bd41a1a02fb34156d50e8cfd5418c79a885
+ms.sourcegitcommit: 9b8abc940a68dac6ee5da105ca29800cb59775f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "53579446"
+ms.lasthandoff: 08/25/2021
+ms.locfileid: "58514417"
 ---
 # <a name="list-posts"></a>Listar postagens
 
@@ -37,7 +37,8 @@ GET /groups/{groupId}/conversations/{conversationId}/threads/{threadId}/posts
 
 ```
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
+Este método dá suporte ao `$select` [parâmetro de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta. `$expand` também tem suporte para expandir relações específicas e apenas uma relação pode ser expandida em uma única solicitação.
+
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Cabeçalho       | Valor |
 |:---------------|:--------|

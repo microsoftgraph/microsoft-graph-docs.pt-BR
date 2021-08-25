@@ -5,12 +5,12 @@ localization_priority: Normal
 author: madansr7
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: a0c7d241575c5ffc6e4b80a0044442ea1ef0d0fc
-ms.sourcegitcommit: 6f04ad0e0cde696661511dcdf343942b43f73fc6
+ms.openlocfilehash: 2bb81d6c014a89aa1d7d67e71583e88552ceb645
+ms.sourcegitcommit: 9b8abc940a68dac6ee5da105ca29800cb59775f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58396708"
+ms.lasthandoff: 08/25/2021
+ms.locfileid: "58513808"
 ---
 # <a name="update-tenantappmanagementpolicy"></a>Atualizar tenantAppManagementPolicy
 
@@ -52,7 +52,7 @@ No corpo da solicitação, fornece os valores para campos relevantes do [tenantA
 | Propriedade                | Tipo                                                                        | Descrição |
 |:------------------------|:----------------------------------------------------------------------------|:----------------------------------------------------|
 | displayName                  | Cadeia de caracteres                                                                   | O nome de exibição da política padrão. Herdado de [policyBase](../resources/policybase.md).                                |
-| description                  | Cadeia de caracteres                                                                   | A descrição da política padrão. Herdado de [policyBase](../resources/policybase.md).                                |
+| descrição                  | Cadeia de caracteres                                                                   | A descrição da política padrão. Herdado de [policyBase](../resources/policybase.md).                                |
 | isEnabled                    | Booliano                                                                  | Indica se a política está habilitada. O valor padrão é falso.                                    |
 | applicationRestrictions      | [appManagementConfiguration](../resources/appManagementConfiguration.md) | Restrições que se aplicam como padrão a todos os objetos de aplicativo no locatário.               |
 | servicePrincipalRestrictions | [appManagementConfiguration](../resources/appManagementConfiguration.md) | Restrições que se aplicam como padrão a todos os objetos de entidade de serviço no locatário. |
@@ -68,6 +68,8 @@ Se bem-sucedido, este método retorna um código de resposta `204 No Content`. N
 Este é um exemplo de solicitação.
 
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_tenantAppManagementPolicy"
@@ -95,6 +97,24 @@ Content-Type: application/json
     }
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-tenantappmanagementpolicy-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-tenantappmanagementpolicy-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-tenantappmanagementpolicy-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-tenantappmanagementpolicy-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>Resposta
 

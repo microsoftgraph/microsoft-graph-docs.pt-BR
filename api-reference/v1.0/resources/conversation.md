@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: 54b856543279b93795077485f418af1a258e845275a0b4c0809cc18856617cc8
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: b15d4fd7d3ed1688fd27fed7a101fb0d9aed37ba
+ms.sourcegitcommit: 9b8abc940a68dac6ee5da105ca29800cb59775f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54163814"
+ms.lasthandoff: 08/25/2021
+ms.locfileid: "58513605"
 ---
 # <a name="conversation-resource-type"></a>tipo de recurso conversation
 
@@ -34,10 +34,10 @@ Esse recurso dá suporte à assinatura para [alterar notificações.](/graph/web
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|hasAttachments|Booliano|Indica se qualquer uma das postagens nesta Conversa tem pelo menos um anexo.|
+|hasAttachments|Booliano|Indica se qualquer uma das postagens nesta Conversa tem pelo menos um anexo. Suporta `$filter` ( , ) e `eq` `ne` `$search` .|
 |id|Cadeia de caracteres|Identificador exclusivo de conversas. Somente leitura.|
-|lastDeliveredDateTime|DateTimeOffset|O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`|
-|visualização|String|Um breve resumo do corpo da última postagem nesta conversa.|
+|lastDeliveredDateTime|DateTimeOffset|O tipo de carimbo de data/hora representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1º de janeiro de 2014 é `2014-01-01T00:00:00Z`|
+|visualização|String|Um breve resumo do corpo da postagem mais recente nesta conversa. Suporta `$filter` (`eq`, `ne`, `le`, `ge`).|
 |topic|String|O tópico da conversa. Essa propriedade pode ser definida quando a conversa é criada, mas não pode ser atualizada.|
 |uniqueSenders|Coleção de cadeias de caracteres|Todos os usuários que enviaram uma mensagem para esta conversa.|
 

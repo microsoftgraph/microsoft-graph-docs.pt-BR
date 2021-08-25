@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 250c01172e44d8ea5f3cdea94a9ac61a89a11c1b
-ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
+ms.openlocfilehash: 027cf5616588593244c011c7dba5a0c3efb4514d
+ms.sourcegitcommit: 9b8abc940a68dac6ee5da105ca29800cb59775f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50761406"
+ms.lasthandoff: 08/25/2021
+ms.locfileid: "58513717"
 ---
 # <a name="expirationpattern-resource-type"></a>Tipo de recurso expirationPattern
 
@@ -24,9 +24,9 @@ No gerenciamento de direitos do [Azure AD,](entitlementmanagement-root.md)uma so
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|endDateTime|DateTimeOffset|O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`.|
-|duração|Duration|A duração desejada do acesso do solicitante. Se especificado em uma solicitação, endDateTime não deve estar presente.|
-|tipo|expirationPatternType|O tipo de padrão de expiração desejado do solicitante.|
+|endDateTime|DateTimeOffset|Data e hora de data e hora usando o formato ISO 8601 e está sempre em horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`.|
+|duração|Duration|A duração desejada do acesso do solicitante representada no formato ISO 8601 por durações. Por exemplo, PT3H refere-se a três horas.  Se especificado em uma solicitação, **endDateTime** não deve estar presente e a propriedade **type** deve ser definida como `afterDuration` .|
+|type|expirationPatternType|O tipo de padrão de expiração desejado do solicitante.|
 
 ### <a name="expirationpatterntype-values"></a>valores expirationPatternType
 
@@ -35,7 +35,7 @@ No gerenciamento de direitos do [Azure AD,](entitlementmanagement-root.md)uma so
 |notSpecified|0|Nenhum cronograma de expiração foi especificado.|
 |noExpiration|1|O solicitante não desejou que o acesso expirar.|
 |afterDateTime|2|O acesso expirará após uma data e hora especificadas.|
-|afterDuration|3|O acesso expirará após uma duração especificada relativa ao acesso que está sendo concedido.|
+|afterDuration|3 |O acesso expirará após uma duração especificada relativa ao acesso que está sendo concedido. Obrigatório quando a **propriedade duration** for especificada.|
 
 ## <a name="json-representation"></a>Representação JSON
 

@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 25c54509c40076a220093b1034c545f534ed6eda
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 3ac7b615ac7abc0621d4734680ecb95b53ac8d95
+ms.sourcegitcommit: 9b8abc940a68dac6ee5da105ca29800cb59775f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52047032"
+ms.lasthandoff: 08/25/2021
+ms.locfileid: "58514515"
 ---
 # <a name="list-threads"></a>Listar threads
 
@@ -36,7 +36,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 GET /groups/{id}/conversations/{id}/threads
 ```
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
+Este método dá suporte ao parâmetro de consulta OData para ajudar a personalizar a resposta, por exemplo, para recuperar as `$select` [](/graph/query-parameters) **propriedades toRecipients** e **ccRecipients.**
+
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Cabeçalho       | Valor |
 |:---------------|:--------|
@@ -49,8 +50,8 @@ Não forneça um corpo de solicitação para esse método.
 
 Se bem sucedido, este método retorna um código de resposta `200 OK` e uma coleção de objetos [conversationThread](../resources/conversationthread.md) no corpo da resposta.
 ## <a name="example"></a>Exemplo
-##### <a name="request"></a>Solicitação
-Este é um exemplo da solicitação.
+### <a name="request"></a>Solicitação
+Este é um exemplo de solicitação.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -58,7 +59,7 @@ Este é um exemplo da solicitação.
   "name": "get_threads"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/groups/{id}/conversations/{id}/threads
+GET https://graph.microsoft.com/beta/groups/4d81ce71-486c-41e9-afc5-e41bf2d0722a/conversations/AAQkAGRhZmRhMWM3LTYwZTktNDZmYy1hNWU1LThhZWU4NzI2YTEyZgAQABKPPJ682apIiV1UFlj7XxY=/threads
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-threads-csharp-snippets.md)]
@@ -78,8 +79,9 @@ GET https://graph.microsoft.com/beta/groups/{id}/conversations/{id}/threads
 
 ---
 
-##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+### <a name="response"></a>Resposta
+Este é um exemplo de resposta. 
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -89,35 +91,22 @@ Veja a seguir um exemplo da resposta. Observação: o objeto de resposta mostrad
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 536
 
 {
-  "value": [
-    {
-      "toRecipients": [
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#groups('4d81ce71-486c-41e9-afc5-e41bf2d0722a')/conversations('AAQkAGRhZmRhMWM3LTYwZTktNDZmYy1hNWU1LThhZWU4NzI2YTEyZgAQABKPPJ682apIiV1UFlj7XxY%3D')/threads",
+    "value": [
         {
-          "emailAddress": {
-            "name": "name-value",
-            "address": "address-value"
-          }
+            "id": "AAQkAGRhZmRhMWM3LTYwZTktNDZmYy1hNWU1LThhZWU4NzI2YTEyZgMkABAAEo88nrzZqkiJXVQWWPtfFhAAEo88nrzZqkiJXVQWWPtfFg==",
+            "topic": "The new Ask HR group is ready",
+            "hasAttachments": false,
+            "lastDeliveredDateTime": "2021-08-02T11:42:38Z",
+            "uniqueSenders": [
+                "Ask HR"
+            ],
+            "preview": "Welcome to the Ask HR group.Use the group to share ideas, files, and important dates.Start a conversationRead group conversations or start your own.Add to the team siteStart sharing and collaborating on content in SharePoint.Share filesView,",
+            "isLocked": false
         }
-      ],
-      "topic": "topic-value",
-      "hasAttachments": true,
-      "lastDeliveredDateTime": "2016-10-19T10:37:00Z",
-      "uniqueSenders": [
-        "uniqueSenders-value"
-      ],
-      "ccRecipients": [
-        {
-          "emailAddress": {
-            "name": "name-value",
-            "address": "address-value"
-          }
-        }
-      ]
-    }
-  ]
+    ]
 }
 ```
 

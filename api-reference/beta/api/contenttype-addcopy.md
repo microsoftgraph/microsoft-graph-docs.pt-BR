@@ -5,12 +5,12 @@ description: Adicione uma cópia de um tipo de conteúdo de site a uma lista.
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: f388799e409a5f2037182bb3bc331a6a6adbc45f
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: bb096cc0ad43641709e26559ee86e7fe9ad9f9db
+ms.sourcegitcommit: 9b8abc940a68dac6ee5da105ca29800cb59775f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50947025"
+ms.lasthandoff: 08/25/2021
+ms.locfileid: "58514606"
 ---
 # <a name="contenttype-addcopy"></a>contentType: addCopy
 Namespace: microsoft.graph
@@ -73,7 +73,7 @@ Se tiver êxito, essa chamada retornará um código `201 Created` de resposta e 
 }
 -->
 ```http
-POST https://graph.microsoft.com/beta/sites/id/lists/{list-id}/contentTypes/addCopy
+POST https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}/contentTypes/addCopy
 Content-Type: application/json
 
 {
