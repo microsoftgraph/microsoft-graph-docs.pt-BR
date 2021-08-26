@@ -1,6 +1,6 @@
 ---
-title: Update user
-description: Update the properties of a user object.
+title: Atualizar usuário
+description: Atualize as propriedades de um objeto user.
 author: jpettere
 localization_priority: Priority
 ms.prod: users
@@ -12,98 +12,98 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/13/2021
 ms.locfileid: "58256547"
 ---
-# <a name="update-user"></a>Update user
+# <a name="update-user"></a>Atualizar usuário
 
 Namespace: microsoft.graph
 
-Update the properties of a [user](../resources/user.md) object. Not all properties can be updated by Member or Guest users with their default permissions without Administrator roles. [Compare member and guest default permissions](/azure/active-directory/fundamentals/users-default-permissions#compare-member-and-guest-default-permissions) to see properties they can manage.
+Atualizar as propriedades de um objeto [usuário](../resources/user.md). Nem todas as propriedades podem ser atualizadas por usuários Membros ou Convidados com suas permissões padrão sem Funções de administrador. [Compare as permissões padrão de membros e convidados](/azure/active-directory/fundamentals/users-default-permissions#compare-member-and-guest-default-permissions) para ver as propriedades que eles podem gerenciar.
 
-## <a name="permissions"></a>Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+## <a name="permissions"></a>Permissões
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
+|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | User.ReadWrite, User.ReadWrite.All, User.ManageIdentities.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
-|Delegated (personal Microsoft account) | User.ReadWrite    |
-|Application | User.ReadWrite.All, User.ManageIdentities.All, Directory.ReadWrite.All |
+|Delegado (conta corporativa ou de estudante) | User.ReadWrite, User.ReadWrite.All, User.ManageIdentities.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Delegado (conta pessoal da Microsoft) | User.ReadWrite    |
+|Aplicativo | User.ReadWrite.All, User.ManageIdentities.All, Directory.ReadWrite.All |
 
 >[!NOTE]
-> - When updating the **passwordProfile** property, the following permission is required: Directory.AccessAsUser.All.
-> - Updating another user's **businessPhones**, **mobilePhone**, or **otherMails** property is only allowed on users who are non-administrators or assigned one of the following roles: Directory Readers, Guest Inviter, Message Center Reader, and Reports Reader. For more details, see Helpdesk (Password) Administrator in [Azure AD built-in roles](/azure/active-directory/roles/permissions-reference).  This is the case for apps granted either the User.ReadWrite.All or Directory.ReadWrite.All delegated or application permissions.
-> - Your personal Microsoft account must be tied to an AAD tenant to update your profile with the User.ReadWrite delegated permission on a personal Microsoft account.
-> - Updating the **identities** property requires the User.ManageIdentities.All permission. Also, adding a [B2C local account](../resources/objectidentity.md) to an existing **user** object is not allowed, unless the **user** object already contains a local account identity.
+> - Ao atualizar a propriedade **passwordProfile**, a seguinte permissão é necessária: Directory.AccessAsUser.All.
+> - A atualização da propriedade **businessPhones**, **mobilePhone** ou **otherMails** de outro usuário é permitida apenas em usuários que não sejam administradores ou que tenham uma das seguintes funções: Leitor de Diretório, Emissor de Convites Independente, Leitor do Centro de Mensagens e Leitor de Relatórios. Para obter mais detalhes, confira Administrador de suporte técnico (senha) em [funções internas do Azure Active Directory](/azure/active-directory/roles/permissions-reference).  Esse é o caso de aplicativos que receberam as permissões User.ReadWrite.All ou Directory.ReadWrite.All delegadas ou de aplicativo.
+> - Sua conta Microsoft pessoal deve estar vinculada a um locatário do AAD para atualizar seu perfil com a permissão delegada User.ReadWrite em uma conta Microsoft pessoal.
+> - A atualização da propriedade **Identidades** exige a permissão User.ManageIdentities.All. Além disso, não é permitido adicionar uma [conta local B2C](../resources/objectidentity.md) a um objeto de **usuário** existente, a menos que o objeto de **usuário** já tenha uma identidade de conta local.
 
-## <a name="http-request"></a>HTTP request
+## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /users/{id | userPrincipalName}
 ```
 
-## <a name="request-headers"></a>Request headers
-| Header       | Value|
+## <a name="request-headers"></a>Cabeçalhos de solicitação
+| Cabeçalho       | Valor|
 |:-----------|:------|
-| Authorization  | Bearer {token}. Required.  |
+| Autorização  | {token} de portador. Obrigatório.  |
 | Content-Type  | application/json  |
 
-## <a name="request-body"></a>Request body
-In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.
+## <a name="request-body"></a>Corpo da solicitação
+No corpo da solicitação, forneça os valores para os campos relevantes que devem ser atualizados. Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade. Para obter melhor desempenho, não inclua valores existentes que não foram alterados.
 
-| Property     | Type   |Description|
+| Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|aboutMe|String|A freeform text entry field for the user to describe themselves.|
-|accountEnabled|Boolean| `true` if the account is enabled; otherwise, `false`. This property is required when a user is created.    |
-| ageGroup | [ageGroup](../resources/user.md#agegroup-values) | Sets the age group of the user. Allowed values: `null`, `minor`, `notAdult` and `adult`. Refer to the [legal age group property definitions](../resources/user.md#legal-age-group-property-definitions) for further information. |
-|birthday|DateTimeOffset|The birthday of the user. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
-|businessPhones| String collection | The telephone numbers for the user. NOTE: Although this is a string collection, only one number can be set for this property.|
-|city|String|The city in which the user is located.|
-| companyName | String | The company name which the user is associated. This property can be useful for describing the company that an external user comes from. The maximum length of the company name is 64 characters. |
-| consentProvidedForMinor | [consentProvidedForMinor](../resources/user.md#consentprovidedforminor-values) | Sets whether consent has been obtained for minors. Allowed values: `null`, `granted`, `denied` and `notRequired`. Refer to the [legal age group property definitions](../resources/user.md#legal-age-group-property-definitions) for further information. |
-|country|String|The country/region in which the user is located; for example, `US` or `UK`.|
-|department|String|The name for the department in which the user works.|
-|displayName|String|The name displayed in the address book for the user. This is usually the combination of the user's first name, middle initial and last name. This property is required when a user is created and it cannot be cleared during updates. |
-| employeeId | String | The employee identifier assigned to the user by the organization. |
-| employeeType | String | Captures enterprise worker type. For example, `Employee`, `Contractor`, `Consultant`, or `Vendor`. Returned only on `$select`.|
-|givenName|String|The given name (first name) of the user.|
-|hireDate|DateTimeOffset|The hire date of the user. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
-|interests|String collection|A list for the user to describe their interests.|
-|jobTitle|String|The user’s job title.|
-|mail|String|The SMTP address for the user, for example, `jeff@contoso.onmicrosoft.com`. Changes to this property will also update the user's **proxyAddresses** collection to include the value as a SMTP address. For Azure AD B2C accounts, this property can be updated up to only ten times with unique SMTP addresses. |
-|mailNickname|String|The mail alias for the user. This property must be specified when a user is created.|
-|mobilePhone|String|The primary cellular telephone number for the user.|
-|mySite|String|The URL for the user's personal site.|
-|officeLocation|String|The office location in the user's place of business.|
-| onPremisesExtensionAttributes | [onPremisesExtensionAttributes](../resources/onpremisesextensionattributes.md) | Contains extensionAttributes 1-15 for the user. Note that the individual extension attributes are neither selectable nor filterable. For an `onPremisesSyncEnabled` user, the source of authority for this set of properties is the on-premises and is read-only and is read-only. These extension attributes are also known as Exchange custom attributes 1-15.|
-|onPremisesImmutableId|String|This property is used to associate an on-premises Active Directory user account to their Azure AD user object. This property must be specified when creating a new user account in the Graph if you are using a federated domain for the user’s **userPrincipalName** (UPN) property. **Important:** The **$** and **_** characters cannot be used when specifying this property.                            |
-|otherMails|String |A list of additional email addresses for the user; for example: `["bob@contoso.com", "Robert@fabrikam.com"]`.|
-|passwordPolicies|String|Specifies password policies for the user. This value is an enumeration with one possible value being `DisableStrongPassword`, which allows weaker passwords than the default policy to be specified. `DisablePasswordExpiration` can also be specified. The two may be specified together; for example: `DisablePasswordExpiration, DisableStrongPassword`.|
-|passwordProfile|[PasswordProfile](../resources/passwordprofile.md)|Specifies the password profile for the user. The profile contains the user’s password. This property is required when a user is created. The password in the profile must satisfy minimum requirements as specified by the **passwordPolicies** property. By default, a strong password is required. This cannot be used for federated users. The *Directory.AccessAsUser.All* permission is required to update this property.|
-|pastProjects|String collection|A list for the user to enumerate their past projects.|
-|postalCode|String|The postal code for the user's postal address. The postal code is specific to the user's country/region. In the United States of America, this attribute contains the ZIP code.|
-|preferredLanguage|String|The preferred language for the user. Should follow ISO 639-1 Code; for example `en-US`.|
-|responsibilities|String collection|A list for the user to enumerate their responsibilities.|
-|schools|String collection|A list for the user to enumerate the schools they have attended.|
-|skills|String collection|A list for the user to enumerate their skills.|
-|state|String|The state or province in the user's address.|
-|streetAddress|String|The street address of the user's place of business.|
-|surname|String|The user's surname (family name or last name).|
-|usageLocation|String|A two letter country code (ISO standard 3166). Obrigatório para os usuários que receberão licenças devido à exigência legal de verificar a disponibilidade de serviços nos países.  Examples include: `US`, `JP`, and `GB`. Not nullable.|
-|userPrincipalName|String|The user principal name (UPN) of the user. The UPN is an Internet-style login name for the user based on the Internet standard RFC 822. By convention, this should map to the user's email name. The general format is alias@domain, where domain must be present in the tenant’s collection of verified domains. This property is required when a user is created. The verified domains for the tenant can be accessed from the **verifiedDomains** property of [organization](../resources/organization.md).
-|userType|String|A string value that can be used to classify user types in your directory, such as `Member` and `Guest`.          |
+|aboutMe|String|Um campo de entrada de texto em forma livre para o usuário se descrever.|
+|accountEnabled|Booliano| `true` se a conta estiver habilitada; caso contrário, `false`. Essa propriedade é obrigatória quando um usuário é criado.    |
+| ageGroup | [ageGroup](../resources/user.md#agegroup-values) | Define a faixa etária do usuário. Valores permitidos: `null`, `minor`, `notAdult` e `adult`. Confira as [definições de propriedades da faixa etária legal](../resources/user.md#legal-age-group-property-definitions) para obter mais informações. |
+|birthday|DateTimeOffset|O aniversário do usuário. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`|
+|businessPhones| String collection | Números de telefone para o usuário. OBSERVAÇÃO: Embora isso seja uma coleção de cadeias de caracteres, somente um número pode ser definido para essa propriedade.|
+|city|String|A cidade em que o usuário está localizado.|
+| companyName | String | O nome da empresa em que o usuário está associado. Essa propriedade pode ser útil para descrever a empresa de onde procede um usuário externo. O comprimento máximo do nome da empresa é 64 caracteres. |
+| consentProvidedForMinor | [consentProvidedForMinor](../resources/user.md#consentprovidedforminor-values) | Define se o consentimento foi obtido para menores. Valores permitidos: `null`, `granted`, `denied` e `notRequired`. Confira as [definições de propriedades da faixa etária legal](../resources/user.md#legal-age-group-property-definitions) para obter mais informações. |
+|country|Cadeia de caracteres|O país/região em que o usuário está localizado; por exemplo, `US` ou `UK`.|
+|department|String|O nome do departamento no qual o usuário trabalha.|
+|displayName|String|O nome exibido no catálogo de endereços do usuário. É geralmente a combinação do nome, da inicial do meio e do sobrenome do usuário. Essa propriedade é obrigatória quando um usuário é criado e não pode ser apagado durante atualizações. |
+| employeeId | String | O identificador de funcionário atribuído ao usuário pela organização. |
+| employeeType | String | Captura o tipo de trabalhador corporativo. Por exemplo, `Employee`, `Contractor`, `Consultant` ou `Vendor`. Retornado apenas em `$select`.|
+|givenName|String|O nome fornecido (nome) do usuário.|
+|hireDate|DateTimeOffset|A data de contratação do usuário. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`|
+|interests|Coleção de cadeias de caracteres|Uma lista para o usuário descrever os interesses dele.|
+|jobTitle|String|O cargo do usuário.|
+|email|String|O endereço SMTP do usuário, por exemplo, `jeff@contoso.onmicrosoft.com`. As alterações feitas nessa propriedade também atualizarão a coleção **proxyAddresses** do usuário para incluir o valor como um endereço SMTP. Para contas do Azure AD B2C, esta propriedade só pode ser atualizada até dez vezes com endereços SMTP exclusivos. |
+|mailNickname|String|O alias de e-mail do usuário. Essa propriedade deve ser especificada quando um usuário é criado.|
+|mobilePhone|String|O número de celular principal do usuário.|
+|mySite|String|A URL do site pessoal do usuário.|
+|officeLocation|String|A localização do escritório no local de trabalho do usuário.|
+| onPremisesExtensionAttributes | [onPremisesExtensionAttributes](../resources/onpremisesextensionattributes.md) | Contém extensionAttributes 1-15 para o usuário. Observe que os atributos de extensão individuais não são selecionáveis nem filtráveis. Para um usuário do `onPremisesSyncEnabled`, a fonte de autoridade desse conjunto de propriedades é o local e é somente leitura. Esses atributos de extensão também são conhecidos como atributos personalizados do Exchange 1-15.|
+|onPremisesImmutableId|String|Essa propriedade é usada para associar uma conta de usuário do Active Directory local com seu objeto de usuário do Azure AD. Esta propriedade deverá ser especificada ao criar uma nova conta de usuário no Graph se você estiver usando um domínio federado para a propriedade **userPrincipalName** (UPN) do usuário. **Importante:** Os caracteres **$** e **_** e não podem ser usados ao especificar essa propriedade.                            |
+|otherMails|String |Uma lista de endereços de email adicional para o usuário; Por exemplo: `["bob@contoso.com", "Robert@fabrikam.com"]`.|
+|passwordPolicies|String|Especifica as políticas de senha do usuário. Este valor é uma enumeração com um valor possível sendo `DisableStrongPassword`, que permite que senhas mais fracas do que a política padrão sejam especificadas. `DisablePasswordExpiration` também pode ser especificado. Os dois podem ser especificados juntos; por exemplo: `DisablePasswordExpiration, DisableStrongPassword`.|
+|passwordProfile|[PasswordProfile](../resources/passwordprofile.md)|Especifica o perfil de senha do usuário. O perfil contém a senha do usuário. Essa propriedade é obrigatória quando um usuário é criado. A senha no perfil deve atender a requisitos mínimos, conforme especificado pela propriedade **passwordPolicies**. Por padrão, é obrigatória uma senha forte. Isto não pode ser usado para usuários federados. O *Diretório.AccessAsUser.All* permissão é necessária para atualizar esta propriedade.|
+|pastProjects|Coleção de cadeias de caracteres|Uma lista para o usuário enumerar seus projetos anteriores.|
+|postalCode|String|O código postal do endereço postal do usuário. O código postal é específico para o país/região do usuário. Nos Estados Unidos, esse atributo contém o CEP.|
+|preferredLanguage|String|O idioma preferencial do usuário. Deve seguir o Código ISO 639-1; por exemplo `en-US`.|
+|responsibilities|Coleção de cadeias de caracteres|Uma lista para o usuário enumerar suas responsabilidades.|
+|schools|Coleção de cadeias de caracteres|Uma lista para o usuário enumerar as escolas que ele frequentou.|
+|skills|Coleção de cadeias de caracteres|Uma lista para o usuário enumerar suas qualificações.|
+|state|String|O estado ou município no endereço do usuário.|
+|streetAddress|String|O endereço do local de trabalho do usuário.|
+|surname|String|O sobrenome do usuário (nome de família ou sobrenome).|
+|usageLocation|String|Um código de duas letras (padrão ISO 3166). Obrigatório para os usuários que receberão licenças devido à exigência legal de verificar a disponibilidade de serviços nos países.  Os exemplos incluem:`US`,`JP` e `GB`. Não anulável.|
+|userPrincipalName|String|O nome UPN do usuário. O nome UPN é um nome de logon para o usuário ao estilo da Internet com base na RFC 822 padrão da Internet. Por convenção, ele deve ser mapeado para o nome de email do usuário. O formato geral é alias@domain, em que o domínio deve estar presente na coleção de domínios verificados do locatário. Essa propriedade é obrigatória quando um usuário é criado. Os domínios verificados para o locatário podem ser acessados pela propriedade **verifiedDomains** de [organization](../resources/organization.md).
+|userType|String|Um valor de string que pode ser usado para classificar tipos de usuário em seu diretório, como `Member` e `Guest`.          |
 
 > [!NOTE] 
-> The following properties cannot be updated using an application-only context: **aboutMe**, **birthday**, **hireDate**, **interests**, **mySite**, **pastProjects**, **preferredName**, **responsibilities**, **schools**, and **skills**.
+> As propriedades a seguir não podem ser atualizadas usando um contexto somente de aplicativo: **aboutMe**, **birthday**, **hireDate**, **interests**, **mySite**, **pastProjects**, **preferredName**, **responsibilities**, **schools** e **skills**.
 
-## <a name="response"></a>Response
+## <a name="response"></a>Resposta
 
-If successful, this method returns a `204 No Content` response code.
+Se tiver êxito, este método retornará um código de resposta `204 No Content`.
 
-## <a name="example"></a>Example
+## <a name="example"></a>Exemplo
 
-### <a name="example-1-update-properties-of-the-signed-in-user"></a>Example 1: Update properties of the signed-in user
+### <a name="example-1-update-properties-of-the-signed-in-user"></a>Exemplo 1: atualizar as propriedades do usuário conectado
 
-#### <a name="request"></a>Request
+#### <a name="request"></a>Solicitação
 
-The following example shows a request.
+O exemplo a seguir mostra uma solicitação.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -139,8 +139,8 @@ Content-type: application/json
 
 ---
 
-#### <a name="response"></a>Response
-The following example shows the response.
+#### <a name="response"></a>Resposta
+O exemplo a seguir mostra a resposta.
 <!-- {
   "blockType": "response"
 } -->
@@ -148,11 +148,11 @@ The following example shows the response.
 HTTP/1.1 204 No Content
 ```
 
-### <a name="example-2-update-properties-of-the-specified-user"></a>Example 2: Update properties of the specified user
+### <a name="example-2-update-properties-of-the-specified-user"></a>Exemplo 2: atualizar as propriedades do usuário especificado
 
-#### <a name="request"></a>Request
+#### <a name="request"></a>Solicitação
 
-The following example shows a request.
+O exemplo a seguir mostra uma solicitação.
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -190,9 +190,9 @@ Content-type: application/json
 ---
 
 
-#### <a name="response"></a>Response
+#### <a name="response"></a>Resposta
 
-The following example shows the response.
+O exemplo a seguir mostra a resposta.
 <!-- {
   "blockType": "response"
 } -->
@@ -201,11 +201,11 @@ HTTP/1.1 204 No Content
 ```
 
 
-### <a name="example-3-update-the-passwordprofile-of-a-user-to-reset-their-password"></a>Example 3: Update the passwordProfile of a user to reset their password
+### <a name="example-3-update-the-passwordprofile-of-a-user-to-reset-their-password"></a>Exemplo 3: atualizar o passwordProfile de um usuário para redefinir sua senha
 
-The following example shows a request to reset the password of another user.
+O exemplo a seguir mostra uma solicitação para redefinir a senha de outro usuário.
 
-#### <a name="request"></a>Request
+#### <a name="request"></a>Solicitação
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -244,7 +244,7 @@ Content-type: application/json
 
 
 
-#### <a name="response"></a>Response
+#### <a name="response"></a>Resposta
 <!-- {
   "blockType": "response"
 } -->

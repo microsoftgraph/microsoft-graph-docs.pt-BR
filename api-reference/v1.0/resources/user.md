@@ -284,7 +284,7 @@ Hence the type of the corresponding 3 properties remain as string type in the Pr
 |people|Coleção [person](person.md)| Pessoas que são relevantes para o usuário. Somente leitura. Anulável.
 |photo|[profilePhoto](profilephoto.md)| A foto de perfil do usuário. Somente leitura.|
 |planner|[plannerUser](planneruser.md)| Ponto de entrada para o recurso do Planner que pode existir para um usuário. Somente leitura.|
-|registeredDevices|Coleção [directoryObject](directoryobject.md)|Dispositivos que estão registrados para o usuário. Somente leitura. Anulável. Suporta o `$expand`.|
+|registeredDevices|Coleção [directoryObject](directoryobject.md)|Dispositivos que estão registrados para o usuário. Somente leitura. Anulável. Suporta `$expand`.|
 |todo|[todo](todo.md)|Representa os serviços To Do disponíveis para um usuário. |
 
 ## <a name="json-representation"></a>Representação JSON
