@@ -5,12 +5,12 @@ localization_priority: Normal
 author: michaelrm97
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 78f5755e249a6a83f040cb6ad31aaccde8b010f6
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 3173b57739bc3c9021c3147b74f0183a5bc667f0
+ms.sourcegitcommit: 998c63e6290cfb5ad4a6bd3eb3e249d282f962a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50434647"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58531296"
 ---
 # <a name="delete-registereduser"></a>Excluir registeredUser
 
@@ -24,9 +24,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) |Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Delegado (conta corporativa ou de estudante) | Directory.AccessAsUser.All |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | Directory.ReadWrite.All |
+|Aplicativo | Sem suporte. |
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
 

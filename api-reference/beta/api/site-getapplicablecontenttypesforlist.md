@@ -5,12 +5,12 @@ description: Obter tipos de conteúdo de site que podem ser adicionados a uma li
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: 8609c15eef73090864f9908aadfb3ffcaf13a2fd
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 1f12207271ee292031da7e69f534300188514f6d
+ms.sourcegitcommit: 998c63e6290cfb5ad4a6bd3eb3e249d282f962a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50958974"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58531345"
 ---
 # <a name="site-getapplicablecontenttypesforlist"></a>site: getApplicableContentTypesForList
 Namespace: microsoft.graph
@@ -26,7 +26,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | Sites.Read.All, Sites.ReadWrite.All, Sites.Manage.All, Sites.FullControl.All    |
-|Delegado (conta pessoal da Microsoft) | Não suportado    |
+|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Sites.Read.All, Sites.ReadWrite.All, Sites.Manage.All, Sites.FullControl.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -36,6 +36,15 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ```http
 GET /sites/{siteId}/getApplicableContentTypesForList
 ```
+
+## <a name="function-parameters"></a>Parâmetros de função
+Na URL da solicitação, forneça os seguintes parâmetros de consulta com valores.
+A tabela a seguir mostra os parâmetros que podem ser usados com esta função.
+
+|Parâmetro|Tipo|Descrição|
+|-|-|-|
+|listId| Cadeia de caracteres | GUID da lista para a qual os tipos de conteúdo aplicáveis precisam ser buscados. Obrigatório. |
+
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
 Este método dá suporte a alguns parâmetros de consulta OData para ajudar a personalizar a resposta. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
@@ -49,14 +58,6 @@ Para listar apenas tipos de conteúdo personalizados, use `$filter=isBuiltin eq 
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.
-
-## <a name="function-parameters"></a>Parâmetros de função
-Na URL da solicitação, forneça os seguintes parâmetros de consulta com valores.
-A tabela a seguir mostra os parâmetros que podem ser usados com esta função.
-
-|Parâmetro|Tipo|Descrição|
-|-|-|-|
-|listId| Cadeia de caracteres | GUID da lista para a qual os tipos de conteúdo aplicáveis precisam ser buscados. Obrigatório. |
 
 ## <a name="response"></a>Resposta
 

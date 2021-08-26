@@ -5,12 +5,12 @@ author: simonhult
 localization_priority: Priority
 ms.prod: insights
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 0733e572035d07a0960d00dc8d80921c8674d382a0ff6a18fab5cb66507d6ca9
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: f74c83634f3484dff9d2c2b43c0d4c5bed072915
+ms.sourcegitcommit: 998c63e6290cfb5ad4a6bd3eb3e249d282f962a3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54230302"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58531289"
 ---
 # <a name="overview-of-item-insights"></a>Visão geral dos insights do item
 As percepções do item são recomendações centradas no usuário para você e aqueles com quem você trabalha, com base em seu trabalho colaborativo no Microsoft 365.
@@ -64,7 +64,7 @@ Depois de desabilitar os insights do item, acontece o seguinte:
 ![insights de itens desabilitados em cartão pessoal](images/disabled-item-insights-in-persona-card.PNG)
 * Experiências que mostram tendências de conteúdo ao seu redor são bloqueadas para você e inacessíveis para outras pessoas, em lugares como Delve e a seção **Descobrir** do Outlook mobile. A falta de percepções mais populares também afeta sua relevância personalizada no Pesquisa da Microsoft, uma vez que não pode usar seu conteúdo de tendências como sinais de relevância.
 ![desabilitou insights de itens no Delve](images/disabled-item-insights-in-delve.PNG)
-* Desabilitar os insights do item impedirá que o [horário de reunião sugerido](https://support.microsoft.com/office/update-your-meeting-hours-using-the-profile-card-0613d113-d7c1-4faa-bb11-c8ba30a78ef1?ui=en-US&rs=en-US&ad=US) seja calculado e mostrado ao usuário em seu cartão pessoal. 
+* Desabilitar os insights do item impedirá que o [horário de reunião sugerido](https://support.microsoft.com/office/update-your-meeting-hours-using-the-profile-card-0613d113-d7c1-4faa-bb11-c8ba30a78ef1) seja calculado e mostrado ao usuário em seu cartão pessoal. 
 * Para um usuário que desabilitou os insights do item, consultar os recursos [mais populares](/graph/api/resources/insights-trending) e [ usados ​​](/graph/api/resources/insights-used) na API do Microsoft Graph retorna `HTTP 403 Forbidden`.
 
 ## <a name="api-reference"></a>Referência da API

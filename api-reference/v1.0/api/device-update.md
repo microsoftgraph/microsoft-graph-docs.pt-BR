@@ -5,12 +5,12 @@ author: spunukol
 localization_priority: Normal
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: ef160a0e31ee5753258e8da4403158c693a13e5e
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 21d9ee1c13cb565a9bd9a2c52e6ea061c6a0df36
+ms.sourcegitcommit: 998c63e6290cfb5ad4a6bd3eb3e249d282f962a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52787818"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58531324"
 ---
 # <a name="update-device"></a>Atualizar dispositivo
 
@@ -27,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | Directory.ReadWrite.All, Directory.AccessAsUser.All |
 |Delegado (conta pessoal da Microsoft) | Sem suporte. |
-|Aplicativo | Sem suporte |
+|Aplicativo | Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -47,7 +47,7 @@ No corpo da solicitação, forneça os valores para as propriedades [device](../
 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|accountEnabled|Boolean| **true** se a conta estiver habilitada; caso contrário, **false**. |
+|accountEnabled|Booliano| **true** se a conta estiver habilitada; caso contrário, **false**. |
 |operatingSystem|String|O tipo de sistema operacional do dispositivo.|
 |operatingSystemVersion|Cadeia de caracteres|A versão do sistema operacional do dispositivo.|
 |displayName|Cadeia de caracteres|O nome de exibição do dispositivo.|

@@ -5,30 +5,30 @@ localization_priority: Normal
 author: lujiangfeng666
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 80d8b6c030ec609c731d45a141ace028aed96909dc685ae26ecd9bb7591d6a5d
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 2918543536f62627f7c2a742009c3d67012353b4
+ms.sourcegitcommit: 998c63e6290cfb5ad4a6bd3eb3e249d282f962a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54211854"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58531219"
 ---
 # <a name="policybase-resource-type"></a>Tipo de recurso policyBase
 
 Namespace: microsoft.graph
 
-Representa um tipo de base abstrato para tipos de política herdado.
+Representa um tipo de base abstrato para tipos de política herdado. Herda de [directoryObject](directoryobject.md).
 
 ## <a name="methods"></a>Métodos
 
-None
+Nenhum
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|id|Cadeia de caracteres| Identificador exclusivo dessa política. Somente leitura.|
-|description|Cadeia de caracteres| Descrição dessa política.|
-|displayName|String| Nome de exibição para esta política. |
+|id|Cadeia de caracteres| Identificador exclusivo dessa política. Somente leitura. Herdado de [directoryObject](directoryobject.md).|
+|descrição|Cadeia de caracteres| Descrição dessa política.|
+|displayName|Cadeia de caracteres| Nome de exibição para esta política. |
 
 ## <a name="relationships"></a>Relações
 
