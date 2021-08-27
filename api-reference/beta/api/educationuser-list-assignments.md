@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 2d92a6f32a3b986f9fb0e3b24b6537897f23ca2c
-ms.sourcegitcommit: f77c1385306fd40557aceb24fdfe4832cbb60a27
+ms.openlocfilehash: 9a3946db621f67460ffc712b61419d5abe437197
+ms.sourcegitcommit: f99dc2b6c8b4cb6f9f74cd780dccc47a2bccfaa6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/12/2021
-ms.locfileid: "52911764"
+ms.lasthandoff: 08/27/2021
+ms.locfileid: "58667784"
 ---
 # <a name="list-assignments-of-a-user"></a>Listar atribuições de um usuário
 
@@ -35,7 +35,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /education/users/{id}/assignments
+GET /education/me/assignments
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais

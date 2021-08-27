@@ -5,19 +5,19 @@ localization_priority: Normal
 doc_type: apiPageType
 author: namkedia
 ms.prod: identity-and-sign-in
-ms.openlocfilehash: 3940284509b9fd31e082179d84276edd45c9324b90110fe3552b83e4c6bf2a90
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 0ad9230e1c6a9f9ba9e4b46451a95c529674b6d2
+ms.sourcegitcommit: f99dc2b6c8b4cb6f9f74cd780dccc47a2bccfaa6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57327122"
+ms.lasthandoff: 08/27/2021
+ms.locfileid: "58667903"
 ---
 # <a name="update-identityprovider"></a>Atualizar identityProvider
 Namespace: microsoft.graph
 
-Atualize as propriedades de um [objeto socialIdentityProvider](../resources/socialidentityprovider.md) no Azure AD.
+Atualize as propriedades do provedor de identidade especificado em um locatário.
 
-Para o Azure AD B2C, atualize as propriedades de um [objeto socialIdentityProvider.](../resources/socialidentityprovider.md)
+Entre os tipos de provedores derivados de identityProviderBase, você pode atualizar atualmente um [recurso socialIdentityProvider](../resources/socialidentityprovider.md) no Azure AD. No Azure AD B2C, essa operação pode atualizar atualmente um [recurso socialIdentityProvider.](../resources/socialidentityprovider.md)
 
 ## <a name="permissions"></a>Permissões
 
@@ -31,7 +31,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 A conta de trabalho ou de estudante precisa pertencer a uma das seguintes funções:
 
-* Administrador Global
+* Administrador global
 * Administrador do Provedor de Identidade Externa
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -65,7 +65,7 @@ No Azure AD B2C, forneça o tipo OData e o objeto JSON com uma ou mais proprieda
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta `204 No Content`. Caso não consiga, um `4xx` erro será retornado com detalhes específicos.
+Se bem-sucedido, este método retorna um código de resposta `204 No Content`. Caso não consiga, um `4xx` erro será retornado com detalhes específicos.
 
 ## <a name="examples"></a>Exemplos
 

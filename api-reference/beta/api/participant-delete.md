@@ -6,12 +6,12 @@ author: jackry6350
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 1ee50cd399b974b80fcb80ad514bbf3423c0471e
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: dfa5bc7454b2cd6c495502ee455d3872e54dfce4
+ms.sourcegitcommit: f99dc2b6c8b4cb6f9f74cd780dccc47a2bccfaa6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52037869"
+ms.lasthandoff: 08/27/2021
+ms.locfileid: "58667777"
 ---
 # <a name="delete-participant"></a>Excluir participante
 
@@ -19,7 +19,7 @@ ms.locfileid: "52037869"
 
 Namespace: microsoft.graph
 
-Exclua um participante específico em uma chamada. Em algumas situações, é apropriado que um aplicativo remova um participante de uma chamada ativa. Essa ação pode ser feita depois que o participante responder à chamada. Quando um chamador ativo é removido, ele é imediatamente removido da chamada sem notificação de pré ou pós-remoção.
+Exclua um participante específico em uma chamada. Em algumas situações, é apropriado que um aplicativo remova um participante de uma chamada ativa. Essa ação pode ser feita antes ou depois que o participante responder à chamada. Quando um chamador ativo é removido, ele é imediatamente removido da chamada sem notificação de pré ou pós-remoção. Quando um participante convidado é removido, qualquer solicitação de participante de adicionar pendente é cancelada.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---------------------------------------|:--------------------------------------------|
 | Delegado (conta corporativa ou de estudante)     | Não suportado                               |
 | Delegado (conta pessoal da Microsoft) | Não suportado                               |
-| Aplicativo                            | Nenhuma                                        |
+| Aplicativo                            | Nenhum                                        |
 
 A configuração de reunião de aplicativo no nível de locatário é necessária para permitir que um aplicativo chame essa API. O administrador do locatário deve chamar o cmdlet a seguir no PowerShell remoto do locatário para conceder a permissão ao aplicativo para chamar essa API. Para obter mais informações, [consulte Set-CsApplicationMeetingConfiguration](https://github.com/MicrosoftDocs/office-docs-powershell/blob/master/skype/skype-ps/skype/Set-CsApplicationMeetingConfiguration.md).
 ```
@@ -54,9 +54,11 @@ Não forneça um corpo de solicitação para esse método.
 ## <a name="response"></a>Resposta
 Se bem-sucedido, este método retorna um código de resposta `204 No Content`. Não retorna nada no corpo da resposta.
 
-## <a name="example"></a>Exemplo
+## <a name="examples"></a>Exemplos
 
-### <a name="request"></a>Solicitação
+### <a name="example-1-cancel-active-participant"></a>Exemplo 1: Cancelar participante ativo
+
+#### <a name="request"></a>Solicitação
 O exemplo a seguir mostra a solicitação.
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -86,7 +88,110 @@ DELETE https://graph.microsoft.com/beta/communications/calls/{id}/participants/{
 ---
 
 
-### <a name="response"></a>Resposta
+#### <a name="response"></a>Resposta
+
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true
+} -->
+```http
+HTTP/1.1 204 No Content
+```
+
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
+2015-10-25 14:57:30 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "Delete participant",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": ""
+}-->
+
+### <a name="example-2-cancel-invited-non-active-participant"></a>Exemplo 2: Cancelar participante não ativo convidado
+
+#### <a name="invite-a-participant-to-an-existing-call"></a>Convidar um participante para uma chamada existente
+
+<!-- {
+  "blockType": "request",
+  "name": "participant-invite-1"
+}-->
+```http
+POST https://graph.microsoft.com/beta/communications/calls/{id}/participants/invite
+Content-Type: application/json
+Content-Length: 464
+
+{
+  "participants": [
+    {
+      "@odata.type": "#microsoft.graph.invitationParticipantInfo",
+      "replacesCallId": "a7ebfb2d-871e-419c-87af-27290b22e8db",
+      "identity": {
+        "@odata.type": "#microsoft.graph.identitySet",
+        "user": {
+          "@odata.type": "#microsoft.graph.identity",
+          "id": "278405a3-f568-4b3e-b684-009193463064",
+          "identityProvider": "AAD"
+        }
+      }
+    }
+  ],
+  "clientContext": "f2fa86af-3c51-4bc2-8fc0-475452d9764f"
+}
+```
+
+#### <a name="response"></a>Resposta
+
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.inviteParticipantsOperation"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "@odata.type": "#microsoft.graph.inviteParticipantsOperation",
+  "id": "eec3812a-fdc3-4fb4-825c-a06c9f35414e",
+  "status": "Running",
+  "clientContext": "f2fa86af-3c51-4bc2-8fc0-475452d9764f",
+  "resultInfo": null,
+  "participants": [
+    {
+      "endpointType": null,
+      "id": null,
+      "replacesCallId": "a7ebfb2d-871e-419c-87af-27290b22e8db",
+      "identity": {
+        "user": {
+          "id": "278405a3-f568-4b3e-b684-009193463064",
+          "identityProvider": "AAD",
+          "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47"
+        },
+        "application": null,
+        "device": null,
+        "phone": null
+      }
+    }
+  ]
+}
+```
+
+#### <a name="delete-invited-participant-before-participant-is-added-to-the-roster"></a>Excluir participante convidado antes de o participante ser adicionado à lista de participantes
+
+<!-- {
+  "blockType": "request",
+  "name": "delete-participant"
+}-->
+```http
+DELETE https://graph.microsoft.com/beta/communications/calls/{id}/participants/{id}
+```
+
+#### <a name="response"></a>Resposta
 
 > **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 

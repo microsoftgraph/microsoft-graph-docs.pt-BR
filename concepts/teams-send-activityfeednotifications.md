@@ -4,12 +4,12 @@ description: Envie notificações de feed de atividade para os usuários em Micr
 author: RamjotSingh
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 5f22e1cc24a2ac622cdf918f3abe6c5bba0ea699fb7d5c97bf14b59a5fee063b
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: f90349e232737a7d9ca9e3932c34b12c4317a22f
+ms.sourcegitcommit: f99dc2b6c8b4cb6f9f74cd780dccc47a2bccfaa6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54174728"
+ms.lasthandoff: 08/27/2021
+ms.locfileid: "58667875"
 ---
 # <a name="send-activity-feed-notifications-to-users-in-microsoft-teams"></a>Enviar notificações de feed de atividade para usuários em Microsoft Teams
 
@@ -110,6 +110,8 @@ Como um Teams pode ser instalado para um usuário, em uma equipe ou em um chat, 
 - [Enviar notificação ao usuário](/graph/api/userteamwork-sendactivitynotification)
 
 Para obter detalhes sobre quais tópicos são suportados para cada cenário, consulte as APIs específicas. Os tópicos personalizados baseados em texto são suportados para todos os cenários.
+
+> **Observação:** O ícone de atividade se baseia no contexto em que a solicitação é feita. Se a solicitação for feita com permissões delegadas, a foto do usuário aparecerá como o avatar, enquanto o ícone do aplicativo Teams aparece como ícone de atividade. Em um contexto somente de aplicativo, o ícone Teams aplicativo é usado como o avatar e o ícone de atividade é omitido.
 
 ### <a name="example-1-notify-a-user-about-a-task-created-in-a-chat"></a>Exemplo 1: Notificar um usuário sobre uma tarefa criada em um chat
 

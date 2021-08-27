@@ -5,12 +5,12 @@ author: RamjotSingh
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 7f28dcc5584f2a53201871d22b54b18aace4c55a
-ms.sourcegitcommit: 6f04ad0e0cde696661511dcdf343942b43f73fc6
+ms.openlocfilehash: e43128b7299f20ee06b1ffc2d33c77d2122adb0d
+ms.sourcegitcommit: f99dc2b6c8b4cb6f9f74cd780dccc47a2bccfaa6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58396974"
+ms.lasthandoff: 08/27/2021
+ms.locfileid: "58667406"
 ---
 # <a name="list-chats"></a>Listar chats
 
@@ -41,7 +41,7 @@ GET /chats
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Este método dá suporte aos parâmetros de consulta (somente para a propriedade `$expand` **members)** e `$filter` [OData](/graph/query-parameters) para ajudar a personalizar a resposta.
+Este método dá suporte aos parâmetros de consulta `$expand` (**members** e **lastMessagePreview)** e `$filter` [OData](/graph/query-parameters) para ajudar a personalizar a resposta.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -59,7 +59,7 @@ Se bem sucedido, esse método retorna um código de resposta `200 OK` e uma cole
 
 ## <a name="example"></a>Exemplo
 
-### <a name="example-1-list-all-the-chats"></a>Exemplo 1: Listar todos os chats
+### <a name="example-1-list-all-chats"></a>Exemplo 1: Listar todos os chats
 
 #### <a name="request"></a>Solicitação
 
@@ -150,7 +150,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-list-all-the-chats-along-with-the-members-of-each-chat"></a>Exemplo 2: listar todos os chats juntamente com os membros de cada chat
+### <a name="example-2-list-all-chats-along-with-the-members-of-each-chat"></a>Exemplo 2: listar todos os chats juntamente com os membros de cada chat
 #### <a name="request"></a>Solicitação
 
 Este é um exemplo da solicitação.
@@ -189,9 +189,7 @@ GET https://graph.microsoft.com/beta/users/8b081ef6-4792-4def-b2c9-c363a1bf41d5/
 Veja a seguir um exemplo da resposta. 
 
 > [!NOTE]
-> As IDs de associação retornadas pelo servidor devem ser tratadas como cadeias de caracteres opacas. O cliente não deve tentar analisar ou fazer suposições sobre essas IDs do recursos.
->
-> Os resultados da associação podem mapear para usuários de locatários diferentes, conforme indicado na resposta, no futuro. O cliente não deve presumir que todos os membros são apenas do locatário atual.
+> As IDs de associação retornadas pelo servidor devem ser tratadas como cadeias de caracteres opacas. O cliente não deve tentar analisar ou fazer suposições sobre essas IDs de recurso.
 
 >**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
@@ -508,7 +506,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-4-list-all-the-chats-that-have-a-member-with-a-specific-display-name"></a>Exemplo 4: listar todos os chats que têm um membro com um nome de exibição específico
+### <a name="example-4-list-all-chats-that-have-a-member-with-a-specific-display-name"></a>Exemplo 4: listar todos os chats que tenham um membro com um nome de exibição específico
 
 #### <a name="request"></a>Solicitação
 

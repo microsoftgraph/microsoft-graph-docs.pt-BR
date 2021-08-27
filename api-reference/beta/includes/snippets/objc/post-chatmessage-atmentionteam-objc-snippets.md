@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 0508e9377c5a3145a2300df18543005f03981bac
-ms.sourcegitcommit: 5bb981b4853663354a566d4a4a5cbf288939e441
+ms.openlocfilehash: 7893f5fe95d809584f8e354dd3fca21204c6f7e0b1ac6371997241e3a54a14ba
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "53579520"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "57102947"
 ---
 ```objc
 
