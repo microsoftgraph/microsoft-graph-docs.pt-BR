@@ -5,21 +5,21 @@ localization_priority: Priority
 doc_type: resourcePageType
 ms.prod: identity-and-sign-in
 author: namkedia
-ms.openlocfilehash: cfaaeada596ccdf3767950e9f9a480d2d9c8a47e
-ms.sourcegitcommit: 5bb981b4853663354a566d4a4a5cbf288939e441
+ms.openlocfilehash: b5b763c2ee6c7a53bb271a456951a800afa5c1e0
+ms.sourcegitcommit: f99dc2b6c8b4cb6f9f74cd780dccc47a2bccfaa6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "53578767"
+ms.lasthandoff: 08/27/2021
+ms.locfileid: "58667973"
 ---
 # <a name="socialidentityprovider-resource-type"></a>tipo de recurso socialIdentityProvider
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Representa provedores de identidade social com [Identidades Externas](/azure/active-directory/external-identities/) tanto para locatário do Azure Active Directory quanto para um locatário do Azure AD B2C.
+Representa provedores de identidade social com [Identidades Externas](/azure/active-directory/external-identities/) para locatários do Active Directory do Azure (Microsoft Azure Active Directory) e do Azure AD B2C.
 
-Este tipo herdará de [identityProviderBase](../resources/identityproviderbase.md).
+Herdado de [identityProviderBase](../resources/identityproviderbase.md).
 
 Para cenários do Azure AD B2B em um locatário do Microsoft Azure Active Directory, o tipo de provedor de identidade pode ser o Google ou o Facebook.
 
@@ -33,12 +33,12 @@ Configurar um provedor de identidade em seu locatário do Azure AD B2C permite q
 
 | Método       | Tipo de retorno  |Descrição|
 |:---------------|:--------|:----------|
-|[List](../api/identityproviderbase-list.md)|Coleção [identityProviderBase](../resources/identityproviderbase.md)|Recuperar todos os provedores de identidade configurados em um locatário, incluindo os provedores de identidade social.|
-|[Criar](../api/identityproviderbase-post-identityproviders.md)|socialidentityprovider |Criar um novo provedor de identidade social.|
-|[Obter](../api/identityproviderbase-get.md) |socialidentityprovider |Recuperar propriedades de um provedor de identidade social.|
-|[Atualizar](../api/identityproviderbase-update.md)|Nenhum(a)|Atualizar um provedor de identidade social.|
-|[Delete](../api/identityproviderbase-delete.md)|Nenhum|Excluir um provedor de  identidade social.|
-|[Listar os tipos de provedor disponíveis](../api/identityproviderbase-list-availableprovidertypes.md)|Coleção de cadeias de caracteres|Recuperar todos os tipos de provedores de identidade disponíveis no locatário.|
+|[List](../api/identitycontainer-list-identityproviders.md)|Coleção [identityProviderBase](../resources/identityproviderbase.md) |Recupere todos os provedores de identidade configurados em um locatário, incluindo os tipos de objeto [socialIdentityProvider](../resources/socialidentityprovider.md). Não há como recuperar apenas os provedores de identidade social em um locatário.|
+|[Criar](../api/identitycontainer-post-identityproviders.md)|socialidentityprovider |Crie um novo objeto [ socialIdentityProvider ](../resources/socialidentityprovider.md).|
+|[Obter](../api/identityproviderbase-get.md) |socialidentityprovider |Recupere propriedades de um objeto [socialIdentityProvider](../resources/socialidentityprovider.md).|
+|[Atualizar](../api/identityproviderbase-update.md)|Nenhum(a)|Atualize um objeto [socialIdentityProvider](../resources/socialidentityprovider.md).|
+|[Delete](../api/identityproviderbase-delete.md)|Nenhum|Exclua um objeto [socialIdentityProvider](../resources/socialidentityprovider.md).|
+|[Listar os tipos de provedor disponíveis](../api/identityproviderbase-availableprovidertypes.md)|Coleção de cadeias de caracteres|Recuperar todos os tipos de provedores de identidade disponíveis no locatário.|
 
 ## <a name="properties"></a>Propriedades
 
@@ -52,7 +52,7 @@ Configurar um provedor de identidade em seu locatário do Azure AD B2C permite q
 
 ### <a name="where-to-get-the-client-identifier-and-secret"></a>Onde obter o identificador e o segredo do cliente
 
-Cada provedor de identidade tem um processo para criar um registro do aplicativo. Por exemplo, os usuários criam um registro de aplicativo com o Facebook no [developers.facebook.com](https://developers.facebook.com/). O identificador do cliente e o segredo do cliente resultantes podem ser passados para [criar identityProvider](../api/identityproviderbase-post-identityproviders.md). Em seguida, cada objeto de usuário no diretório pode ser federado para qualquer um dos provedores de identidade do locatário para autenticação. Isso permite que o usuário entre inserindo credenciais na página de entrada do provedor de identidade. O token do provedor de identidade é validado pelo Azure AD antes que o locatário emita um token ao aplicativo.
+Cada provedor de identidade tem um processo para criar um registro do aplicativo. Por exemplo, os usuários criam um registro de aplicativo com o Facebook no [developers.facebook.com](https://developers.facebook.com/). O identificador do cliente e o segredo do cliente resultantes podem ser passados para [criar identityProvider](../api/identitycontainer-post-identityproviders.md). Em seguida, cada objeto de usuário no diretório pode ser federado para qualquer um dos provedores de identidade do locatário para autenticação. Isso permite que o usuário entre inserindo credenciais na página de entrada do provedor de identidade. O token do provedor de identidade é validado pelo Azure AD antes que o locatário emita um token ao aplicativo.
 
 ## <a name="json-representation"></a>Representação JSON
 
