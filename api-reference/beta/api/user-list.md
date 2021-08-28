@@ -5,12 +5,12 @@ author: jpettere
 localization_priority: Priority
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: e6ac3d292d221a46e222f4ff97741bfe5c5856df
-ms.sourcegitcommit: 22bd45d272681658d46a8b99af3c3eabc7b05cb1
+ms.openlocfilehash: 49a15a745a5950fc7d62859ed359c8731eaf793a
+ms.sourcegitcommit: f99dc2b6c8b4cb6f9f74cd780dccc47a2bccfaa6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "58384186"
+ms.lasthandoff: 08/27/2021
+ms.locfileid: "58667882"
 ---
 # <a name="list-users"></a>Listar usuários
 
@@ -61,6 +61,8 @@ Não forneça um corpo de solicitação para esse método.
 ## <a name="response"></a>Resposta
 
 Se bem-sucedido, este método retorna um código de resposta `200 OK` e uma coleção de objetos [user](../resources/user.md) no corpo da resposta.
+
+A tentativa de usar `$select` na coleção `/users` para recuperar propriedades que não podem ser devolvidas em uma coleção do usuário (por exemplo, a solicitação `../users?$select=aboutMe`) devolve um código de erro `501 Not Implemented`.
 
 ## <a name="examples"></a>Exemplos
 

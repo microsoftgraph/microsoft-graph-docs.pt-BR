@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: resourcePageType
 ms.prod: identity-and-sign-in
 author: namkedia
-ms.openlocfilehash: 5c806306e596a087a6c4006dc39b1804c130858a
-ms.sourcegitcommit: c7776e5659c391e7c9ce1cd46e242a5ddc38dba2
+ms.openlocfilehash: 4f7a5965032ba81c4c347f21a238d7b310a191ea
+ms.sourcegitcommit: f99dc2b6c8b4cb6f9f74cd780dccc47a2bccfaa6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51491066"
+ms.lasthandoff: 08/27/2021
+ms.locfileid: "58667581"
 ---
 # <a name="builtinidentityprovider-resource-type"></a>Tipo de recurso builtInIdentityProvider
 Namespace: microsoft.graph
@@ -27,9 +27,9 @@ Este tipo herdará de [IdentityProviderBase](../resources/identityproviderbase.m
 
 | Método       | Tipo de retorno  |Descrição|
 |:---------------|:--------|:----------|
-|[List](../api/identityproviderbase-list.md)|Coleção [identityProviderBase](../resources/identityproviderbase.md) |Recuperar todos os provedores de identidade configurados em um locatário, incluindo os provedores de identidade integrados.|
+|[List](../api/identitycontainer-list-identityproviders.md)|Coleção [identityProviderBase](../resources/identityproviderbase.md) |Recuperar todos os provedores de identidade configurados em um locatário, incluindo os provedores de identidade integrados. Não há como recuperar apenas os provedores de identidade integrados em um locatário.|
 |[Get](../api/identityproviderbase-get.md) |builtInIdentityProvider|Recuperar propriedades de um provedor de identidade integrado.|
-|[Listar os tipos de provedor disponíveis](../api/identityproviderbase-list-availableprovidertypes.md)|Coleção de cadeias de caracteres|Recuperar todos os tipos de provedor de identidade disponíveis no locatário.|
+|[Listar os tipos de provedor disponíveis](../api/identityproviderbase-availableprovidertypes.md)|Coleção de cadeias de caracteres|Recuperar todos os tipos de provedores de identidade disponíveis no locatário.|
 
 ## <a name="properties"></a>Propriedades
 

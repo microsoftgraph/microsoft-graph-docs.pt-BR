@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: resourcePageType
 ms.prod: identity-and-sign-in
 author: namkedia
-ms.openlocfilehash: 096574328a5dc5c1bb8c59020398c33396291afc97207a9f59408da9a8a45196
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 4f09680a34c90cd060433f111492abbdb2c0730f
+ms.sourcegitcommit: f99dc2b6c8b4cb6f9f74cd780dccc47a2bccfaa6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54202543"
+ms.lasthandoff: 08/27/2021
+ms.locfileid: "58667399"
 ---
 # <a name="builtinidentityprovider-resource-type"></a>Tipo de recurso builtInIdentityProvider
 Namespace: microsoft.graph
@@ -25,9 +25,9 @@ Este tipo é herdado de [identityProviderBase](../resources/identityproviderbase
 
 | Método       | Tipo de retorno  |Descrição|
 |:---------------|:--------|:----------|
-|[List](../api/identityproviderbase-list.md)|Coleção [identityProviderBase](../resources/identityproviderbase.md) |Recuperar todos os provedores de identidade configurados em um locatário, incluindo os provedores de identidade integrados.|
+|[List](../api/identitycontainer-list-identityproviders.md)|Coleção [identityProviderBase](../resources/identityproviderbase.md) |Recuperar todos os provedores de identidade configurados em um locatário, incluindo os provedores de identidade integrados. Não há como recuperar apenas os provedores de identidade integrados em um locatário.|
 |[Get](../api/identityproviderbase-get.md) |builtInIdentityProvider|Recuperar propriedades de um provedor de identidade integrado.|
-|[Listar os tipos de provedor disponíveis](../api/identityproviderbase-list-availableprovidertypes.md)|Coleção de cadeias de caracteres|Recuperar todos os tipos de provedores de identidade disponíveis no locatário.|
+|[Listar os tipos de provedor disponíveis](../api/identityproviderbase-availableprovidertypes.md)|Coleção de cadeias de caracteres|Recuperar todos os tipos de provedores de identidade disponíveis no locatário.|
 
 ## <a name="properties"></a>Propriedades
 
