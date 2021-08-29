@@ -96,7 +96,7 @@ Está procurando a referência de API para esse serviço?
 
 ## <a name="provide-feedback"></a>Faça comentários
 
-Gostaríamos de ouvir seus comentários sobre as APIs de Impressão Universal. Forneça suas sugestões no fórum de idéias da[Plataforma de Desenvolvedor do Microsoft 365](https://techcommunity.microsoft.com/t5/microsoft-365-developer-platform/idb-p/Microsoft365DeveloperPlatform/label-name/Microsoft%20Graph).
+Gostaríamos de ouvir seus comentários sobre as APIs de Impressão Universal. Forneça suas sugestões no fórum de ideias da[Plataforma de Desenvolvedor do Microsoft 365](https://techcommunity.microsoft.com/t5/microsoft-365-developer-platform/idb-p/Microsoft365DeveloperPlatform/label-name/Microsoft%20Graph).
 
 ## <a name="see-also"></a>Confira também
 
