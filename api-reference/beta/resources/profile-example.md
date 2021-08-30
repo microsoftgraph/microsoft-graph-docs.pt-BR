@@ -2,21 +2,21 @@
 title: Usar a API de Perfil no Microsoft Graph para recuperar informações sobre determinado usuário ou sobre você mesmo
 description: 'Os aplicativos do Microsoft Graph podem usar a API do Perfil para recuperar o perfil de outro usuário. '
 author: kevinbellinger
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: people
 doc_type: conceptualPageType
-ms.openlocfilehash: 0e670384692c74d7cfca0be3201f7a4c1a5cc847b6562bb3048fdf9f479b19c5
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 021ac0545ddeb0fa6e48b1254a913e8efceea677
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54246098"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58695242"
 ---
-# <a name="use-the-profile-api-in-microsoft-graph-to-retrieve-information-about-yourself-or-another-user"></a>Use a API do Perfil no Microsoft Graph para recuperar informações sobre você mesmo ou outro usuário 
+# <a name="use-the-profile-api-in-microsoft-graph-to-retrieve-information-about-yourself-or-another-user"></a>Use a API do Perfil no Microsoft Graph para recuperar informações sobre você mesmo ou outro usuário
 
 Namespace: microsoft.graph
 
-Os aplicativos do Microsoft Graph podem usar a API de Perfil para recuperar o perfil do usuário conectado com uma conta válida do Azure AD ou da Microsoft. Essas informações podem ser usadas em aplicativos para ajudar a contextualizar outros usuários, fornecer uma experiência mais avançada para o usuário no aplicativo ou como um mecanismo para armazenar informações estendidas sobre o usuário, as quais também poderão ser usadas no Microsoft 365. 
+Os aplicativos do Microsoft Graph podem usar a API de Perfil para recuperar o perfil do usuário conectado com uma conta válida do Azure AD ou da Microsoft. Essas informações podem ser usadas em aplicativos para ajudar a contextualizar outros usuários, fornecer uma experiência mais avançada para o usuário no aplicativo ou como um mecanismo para armazenar informações estendidas sobre o usuário, as quais também poderão ser usadas no Microsoft 365.
 
 ## <a name="authorization"></a>Autorização
 
@@ -26,7 +26,7 @@ Para chamar a API de Pessoas no Microsoft Graph, seu aplicativo precisará das p
 
 ## <a name="view-my-profile"></a>Visualizar meu perfil
 
-As solicitações nesta seção obtém as pessoas mais relevantes para o usuário conectado (`/me`). Essas solicitações exigem que a permissão User.Read esteja presente para o usuário conectado. 
+As solicitações nesta seção obtém as pessoas mais relevantes para o usuário conectado (`/me`). Essas solicitações exigem que a permissão User.Read esteja presente para o usuário conectado.
 
 
 ```http

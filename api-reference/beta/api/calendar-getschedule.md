@@ -1,16 +1,16 @@
 ---
 title: 'calendar: getSchedule'
 description: Obtenha as informações de disponibilidade para um conjunto de usuários, listas de distribuição ou recursos para um período especificado.
-localization_priority: Priority
+ms.localizationpriority: high
 author: tariq-sharif
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 1b91b0b0aad21c87d01ff813b85dc5b8861cff25
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 33923a3aff0fabc555469cbb876377de75d42139
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52047753"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58695214"
 ---
 # <a name="calendar-getschedule"></a>calendar: getSchedule
 
@@ -32,7 +32,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /me/calendar/getSchedule 
+POST /me/calendar/getSchedule
 POST /users/{id|userPrincipalName}/calendar/getSchedule
 ```
 
@@ -41,7 +41,7 @@ POST /users/{id|userPrincipalName}/calendar/getSchedule
 |:-----------|:------|:----------|
 | Autorização  | string  | {token} de portador. Obrigatório. |
 | Content-Type  | string | Natureza dos dados no corpo de uma entidade, que é application/json. Obrigatório.  |
-| Prefira: outlook.timezone | string | Use isto para especificar o fuso horário para horas de início e término na resposta. Se não especificado, esses valores de tempo serão retornados em UTC. Opcional. |
+| Prefira: outlook.timezone | string | Use isso para especificar o fuso horário para os horários de início e término na resposta. Se não for especificado, esses valores de tempo serão retornados em UTC. Opcional. |
 
 ## <a name="request-body"></a>Corpo da solicitação
 Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
@@ -67,11 +67,11 @@ O exemplo a seguir obtém as informações de disponibilidade de dois usuários 
   "name": "calendar_getSchedule"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/me/calendar/getSchedule 
+POST https://graph.microsoft.com/beta/me/calendar/getSchedule
 Prefer: outlook.timezone="Pacific Standard Time"
 Content-Type: application/json
 
-{        
+{
     "schedules": ["adelev@contoso.onmicrosoft.com", "meganb@contoso.onmicrosoft.com"],
     "startTime": {
         "dateTime": "2019-03-15T09:00:00",
@@ -104,7 +104,7 @@ Content-Type: application/json
 
 
 ##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto de resposta exibido aqui pode ser encurtado para legibilidade.
+Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser reduzido para facilitar a leitura.
 <!-- {
   "blockType": "response",
   "truncated": true,

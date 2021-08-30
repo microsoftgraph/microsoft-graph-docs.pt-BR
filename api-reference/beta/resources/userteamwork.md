@@ -3,14 +3,14 @@ title: tipo de recurso userTeamwork
 description: 'Um contêiner dos recursos do Microsoft Teams disponíveis por usuário. '
 author: akjo
 doc_type: resourcePageType
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: microsoft-teams
-ms.openlocfilehash: 6ef5bb1ddf0944e7d61ab5321ae50e766713326c
-ms.sourcegitcommit: 456ec9510807d05623c0ed1dd049c9676f53f56b
+ms.openlocfilehash: 89ad4d479135972c0bbcfa14163a750ba10841a3
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53060442"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58695592"
 ---
 # <a name="userteamwork-resource-type"></a>tipo de recurso userTeamwork
 

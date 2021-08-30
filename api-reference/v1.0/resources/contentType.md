@@ -1,35 +1,92 @@
 ---
 author: daspek
-ms.date: 09/12/2017
-title: ContentType
-localization_priority: Normal
 description: O recurso contentType representa um tipo de conteúdo no SharePoint.
-ms.prod: ''
+title: Tipo de recurso contentType
+localization_priority: Normal
 doc_type: resourcePageType
-ms.openlocfilehash: 1b307fb0b11b0608c15c46b618775dcef431815c4302a092e7e89f9cb7cb5942
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.prod: sites-and-lists
+ms.openlocfilehash: 0db41f1a3a3c8a413afcf12c7176109a1b08c9fe
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54229287"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58695095"
 ---
-# <a name="contenttype-resource-type"></a>Tipo de recurso ContentType
+# <a name="contenttype-resource-type"></a>Tipo de recurso contentType
 
 Namespace: microsoft.graph
 
-O recurso **contentType** representa um _tipo de conteúdo_ no SharePoint.
+
+Representa um tipo de conteúdo SharePoint.
 Os tipos de conteúdo permitem definir um conjunto de colunas que devem estar presentes em cada [**listItem**][listItem] em uma [**lista**][list].
 
-[list]: list.md
-[listItem]: listitem.md
+## <a name="methods"></a>Métodos
+|Método|Tipo de retorno|Descrição|
+|:---|:---|:---|
+|[Listar contentTypes em um site](../api/site-list-contenttypes.md)|[coleção contentType](../resources/contenttype.md)|Obter uma lista dos [objetos contentType](../resources/contenttype.md) e suas propriedades em um [site](../resources/site.md).|
+|[Listar contentTypes em uma lista](../api/list-list-contenttypes.md)|[coleção contentType](../resources/contenttype.md)|Obter uma lista dos [objetos contentType](../resources/contenttype.md) e suas propriedades em uma [lista](../resources/list.md).|
+|[Criar contentType para um site](../api/site-post-contenttypes.md)|[contentType](../resources/contenttype.md)|Criar um novo [objeto contentType](../resources/contenttype.md) em um [site](../resources/site.md).|
+|[Obter contentType](../api/contenttype-get.md)|[contentType](../resources/contenttype.md)|Leia as propriedades e as relações de um [objeto contentType.](../resources/contenttype.md)|
+|[Atualizar contentType](../api/contenttype-update.md)|[contentType](../resources/contenttype.md)|Atualize as propriedades de um [objeto contentType.](../resources/contenttype.md)|
+|[Excluir contentType](../api/contenttype-delete.md)|Nenhum|Exclui um [objeto contentType.](../resources/contenttype.md)|
+|[isPublished](../api/contenttype-ispublished.md)|Booliano| Verifica se [o contentType](../resources/contenttype.md) foi publicado.|
+|[publish](../api/contenttype-publish.md)|[contentType](../resources/contenttype.md)| Publicar um [contentType](../resources/contenttype.md).|
+|[unpublish](../api/contenttype-unpublish.md)|[contentType](../resources/contenttype.md)|Não publice um [contentType](../resources/contenttype.md).|
+|[addCopy](../api/contenttype-addcopy.md)|[contentType](../resources/contenttype.md)|Adicionar cópia de um [contentType](../resources/contenttype.md) de um [site](../resources/site.md) a uma [lista](../resources/list.md).|
+|[associateWithHubSites](../api/contenttype-associatewithhubsites.md)|[contentType](../resources/contenttype.md)|Associa um [contentType](../resources/contenttype.md) a uma lista de sites de hub.|
+|[copyToDefaultContentLocation](../api/contenttype-copytodefaultcontentlocation.md)|[contentType](../resources/contenttype.md)| Copie um arquivo para o local de conteúdo padrão em [um contentType](../resources/contenttype.md).|
+|[List columns](../api/contenttype-list-columns.md)|[coleção columnDefinition](../resources/columnDefinition.md)|Obter uma coleção de colunas, representadas como [recursos columnDefinition,](../resources/columnDefinition.md) em **um contentType**.|
+|[Criar coluna](../api/contenttype-post-columns.md)|[columnDefinition](../resources/columnDefinition.md)|Adicione uma coluna a **um tipo de conteúdo** em um site ou lista.|
+
+
+## <a name="properties"></a>Propriedades
+
+| Nome da propriedade     | Tipo                 | Descrição|
+|:------------------|:---------------------|:----------------------------------|
+| **description**   | string               | O texto descritivo do item.|
+| **group**         | string               | O nome do grupo ao qual esse tipo de conteúdo pertence. Ajuda a organizar os tipos de conteúdo relacionados.|
+| **hidden**        | Booliano              | Indica se o tipo de conteúdo está oculto no menu “Novo” da lista.|
+| **id**            | cadeia de caracteres               | O identificador exclusivo do tipo de conteúdo.|
+| **inheritedFrom** | [itemReference][]    | Se esse tipo de conteúdo for herdado de outro escopo (como um site), fornece uma referência para o item no qual o tipo de conteúdo foi definido.|
+| **name**          | string               | O nome do tipo de conteúdo.|
+| **order**         | [contentTypeOrder][] | Especifica a ordem na qual o tipo de conteúdo aparece na seleção da interface do usuário.|
+| **parentId**      | string               | O identificador exclusivo do tipo de conteúdo.|
+| **readOnly**      | Booliano              | Se `true` , o tipo de conteúdo não pode ser modificado, a menos que esse valor seja definido pela primeira vez como `false` .|
+| **sealed**        | Booliano              | Se , o tipo de conteúdo não pode ser modificado por usuários ou por meio de operações `true` de push-down. Somente administradores de conjunto de sites podem lacrar ou retirar o lacre dos tipos de conteúdo.|
+| **isBuiltIn**            | Booliano| Especifica se um tipo de conteúdo é um tipo de conteúdo integrado. |
+| **documentSet**       | [documentSet][]      | [Metadados do Conjunto](/sharepoint/governance/document-set-planning#about-document-sets) de Documentos.|
+| **documentTemplate**  | [documentSetContent][] | Metadados do modelo de documento. Para garantir que os documentos tenham conteúdo consistente em um site e seus subsites, você pode associar um modelo do Word, Excel ou PowerPoint a um tipo de conteúdo de site.|
+| **associatedHubsUrls**       | Collection(string) | Lista de URLs canônicas para sites de hub aos quais esse tipo de conteúdo está associado. Isso conterá todos os sites de hub em que esse tipo de conteúdo está na fila para ser imposto ou já está imposto. Impor um tipo de conteúdo significa que o tipo de conteúdo será aplicado às listas nos sites imposto.|
+| **propagateChanges**   | Booliano              | If `true` , any changes made to the content type will be pushed to inherited content types and lists that implement the content type.|
+
+
+
+## <a name="relationships"></a>Relações
+
+| Nome da propriedade   | Tipo                      | Descrição|
+|:----------------|:--------------------------|:-------------------------------|
+| **base**   | [contentType][]  | ContentType pai do qual esse tipo de conteúdo é derivado. |
+| **columnLinks** | Conjunto [columnLink][] | A coleção de colunas que são necessárias por esse tipo de conteúdo.|
+| **baseTypes**   | Collection([contentType][])     | A coleção de tipos de conteúdo que são ancestrais desse tipo de conteúdo.|
+| **columnPositions**       | Collection([columnDefinition][]) | Informações de ordem de coluna em um tipo de conteúdo.|
+| **columns**     | Collection([columnDefinition][])  | A coleção de definições de coluna para este contentType.|
+
+Para mais informações, confira [Introdução a tipos de conteúdo e publicação de tipo de conteúdo][contentTypeIntro].
+
+[columnLink]: columnlink.md
+[contentTypeIntro]: https://support.office.com/en-us/article/Introduction-to-content-types-and-content-type-publishing-e1277a2e-a1e8-4473-9126-91a0647766e5
+[itemReference]: itemreference.md
+[contentTypeOrder]: contenttypeorder.md
+[columnDefinition]: columnDefinition.md
+[contentType]: contentType.md
+[documentSet]: documentSet.md
+[documentSetContent]: documentSetContent.md
 
 ## <a name="json-representation"></a>Representação JSON
 
-Aqui está uma representação JSON de um recurso **contentType**.
-<!-- {
-  "blockType": "resource",
- "baseType": "microsoft.graph.entity",
- "@odata.type": "microsoft.graph.contentType" } -->
+A seguir está uma representação JSON de um **recurso contentType.**
+
+<!-- { "blockType": "resource", "@odata.type": "microsoft.graph.contentType","keyProperty":"id" } -->
 
 ```json
 {
@@ -43,44 +100,30 @@ Aqui está uma representação JSON de um recurso **contentType**.
   "parentId": "string",
   "readOnly": false,
   "sealed": false,
-
-  "columnLinks": [{ "@type": "microsoft.graph.columnLink" }]
+  "columnLinks": [{ "@type": "microsoft.graph.columnLink" }],
+  "base": { "@type": "microsoft.graph.contentType" },
+  "columnPositions" : [{ "@type": "microsoft.graph.columnDefinition" }],
+  "isBuiltIn" : false,
+  "documentSet" : { "@type": "microsoft.graph.documentSet" },
+  "documentTemplate" : { "@type": "microsoft.graph.documentSetContent" },
+  "associatedHubsUrls" : ["string"],
+  "propagateChanges" : false,
+  "baseTypes" : [{ "@type": "microsoft.graph.contentType" }],
+  "columns" : [{ "@type": "microsoft.graph.columnDefinition" }]
 }
 ```
 
-## <a name="properties"></a>Propriedades
-
-| Nome da propriedade     | Tipo                 | Descrição
-|:------------------|:---------------------|:----------------------------------
-| **description**   | string               | O texto descritivo do item.
-| **group**         | string               | O nome do grupo ao qual esse tipo de conteúdo pertence. Ajuda a organizar os tipos de conteúdo relacionados.
-| **hidden**        | booliano              | Indica se o tipo de conteúdo está oculto no menu “Novo” da lista.
-| **id**            | string               | O identificador exclusivo do tipo de conteúdo.
-| **inheritedFrom** | [itemReference][]    | Se esse tipo de conteúdo for herdado de outro escopo (como um site), fornece uma referência para o item no qual o tipo de conteúdo foi definido.
-| **name**          | string               | O nome do tipo de conteúdo.
-| **order**         | [contentTypeOrder][] | Especifica a ordem na qual o tipo de conteúdo aparece na seleção da interface do usuário.
-| **parentId**      | string               | O identificador exclusivo do tipo de conteúdo.
-| **readOnly**      | booliano              | Se `true`, o tipo de conteúdo não pode ser modificado, a menos que esse valor seja definido primeiro como `false`.
-| **sealed**        | booliano              | Se `true`, o tipo de conteúdo não pode ser modificado por usuários ou por operações de push-down. Somente administradores de conjunto de sites podem lacrar ou retirar o lacre dos tipos de conteúdo.
-
-## <a name="relationships"></a>Relações
-
-| Nome da propriedade   | Tipo                      | Descrição
-|:----------------|:--------------------------|:-------------------------------
-| **columnLinks** | Conjunto [columnLink][] | O conjunto de colunas necessário para este tipo de conteúdo
-
-Consulte [Introdução a tipos de conteúdo e publicação de tipo de conteúdo][contentTypeIntro] para obter mais informações.
-
-[columnLink]: columnlink.md
-[contentTypeIntro]: https://support.office.com/en-us/article/Introduction-to-content-types-and-content-type-publishing-e1277a2e-a1e8-4473-9126-91a0647766e5
-[itemReference]: itemreference.md
-[contentTypeOrder]: contenttypeorder.md
-
-<!-- {
+[list]: list.md
+[listItem]: listitem.md
+<!--
+{
   "type": "#page.annotation",
   "description": "",
   "keywords": "",
   "section": "documentation",
-  "tocPath&quot;: &quot;Resources/ContentType"
-} -->
+  "tocPath": "Resources/ContentType",
+  "suppressions": []
+}
+-->
+
 

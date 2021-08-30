@@ -1,22 +1,22 @@
 ---
 title: Use a API de Descoberta Eletrônica do Microsoft Graph
-description: As APIs de Descoberta Eletrônica do Microsoft 365 fornecem funcionalidade para as organizações automatizarem as tarefas repetitivas e se integrarem às ferramentas existentes de Descoberta Eletrônica para criar um fluxo de trabalho repetível que pode ser necessário com base nos regulamentos do setor. Você pode usar as APIs de Descoberta Eletrônica para ajudar com as suas necessidades legais.
-localization_priority: Priority
+description: As APIs de descoberta eletrônica do Microsoft 365 fornecem funcionalidade para que as organizações automatizem tarefas repetitivas e se integrem às ferramentas de descoberta eletrônica existentes para criar fluxos de trabalho repetíveis que podem ser necessários com base nas regulamentações do setor. Você pode usar as APIs de descoberta eletrônica para ajudá-lo em suas necessidades legais.
+ms.localizationpriority: high
 author: mahage-msft
 ms.prod: ediscovery
 doc_type: conceptualPageType
-ms.openlocfilehash: d11f1b8f5a36fe4108fa47801f8031fb10dcac9f
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 239704caecba229e66959276effa77091965efa1
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50445900"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58696397"
 ---
-# <a name="use-the-microsoft-graph-ediscovery-api"></a>Use a API de Descoberta Eletrônica do Microsoft Graph
+# <a name="use-the-microsoft-graph-ediscovery-api"></a>Usar a API de Descoberta Eletrônica do Microsoft Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-As APIs do Microsoft Graph para eDiscovery fornecem funcionalidade para que as organizações automatizem suas tarefas repetitivas e integrem suas ferramentas de eDiscovery existentes para criar fluxos de trabalho repetíveis que podem ser necessários com base nas regulamentações do setor. Você pode usar as APIs de Descoberta Eletrônica para ajudar com as suas necessidades legais.
+As APIs do Microsoft Graph para Descoberta eletrônica fornecem funcionalidade para que as organizações automatizem tarefas repetitivas e se integrem com suas ferramentas de Descoberta eletrônica existentes para criar fluxos de trabalho repetíveis que podem ser necessários com base nas regulamentações do setor. Você pode usar as APIs de Descoberta eletrônica para ajudá-lo em suas necessidades legais.
 
 > [!IMPORTANT]
 > As APIs do Microsoft Graph para Descoberta Eletrônica destinam-se ao uso de operações de Descoberta Eletrônica para requisições de litígio, investigação e regulamentação. Essas APIs não devem ser usadas como um substituto para os dados de registro no diário do sistema Microsoft 365 ou qualquer outro download em massa.

@@ -266,7 +266,7 @@ items:
                 href: api/user-list-events.md
               - name: Modo de exibição de lembrete
                 href: api/user-reminderview.md
-          - name: Contatos
+          - name: Contacts
             href: resources/contact.md
             items:
               - name: Criar contato
@@ -451,6 +451,8 @@ items:
                 href: api/userscopeteamsappinstallation-get-chat.md
               - name: Obter chat para o usuário
                 href: api/chat-get.md
+              - name: Listar chats para usuário
+                href: api/chat-list.md
           - name: Tarefas pendentes
             items:
               - name: Tarefa
@@ -475,7 +477,7 @@ items:
         items:
           - name: Visão Geral
             href: resources/groups-overview.md
-          - name: Group
+          - name: Grupo
             href: resources/group.md
             items:
               - name: Listar grupos
@@ -1240,7 +1242,7 @@ items:
                 href: api/call-logteleconferencedevicequality.md
           - name: Registros de chamadas
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/callrecords-api-overview.md
               - name: Registro de chamada
                 items:
@@ -4026,7 +4028,7 @@ items:
                         href: api/intune-tem-telecomexpensemanagementpartner-update.md
           - name: Comunicações e integridade do serviço
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/service-communications-api-overview.md
               - name: Comunicado do serviço
                 href: resources/serviceannouncement.md
@@ -4158,6 +4160,8 @@ items:
                 href: api/educationuser-list-taughtclasses.md
               - name: Criar rubrica
                 href: api/educationuser-post-rubrics.md
+              - name: Listar tarefas
+                href: api/educationuser-list-assignments.md
           - name: Tarefa
             href: resources/educationassignment.md
             items:
@@ -4778,9 +4782,9 @@ items:
                   - name: Provedor de identidade social
                     href: resources/socialidentityprovider.md
                   - name: Listar
-                    href: api/identityproviderbase-list.md
+                    href: api/identitycontainer-list-identityproviders.md
                   - name: Criar
-                    href: api/identityproviderbase-post-identityproviders.md
+                    href: api/identitycontainer-post-identityproviders.md
                   - name: Obter
                     href: api/identityproviderbase-get.md
                   - name: Atualizar
@@ -4788,7 +4792,7 @@ items:
                   - name: Excluir
                     href: api/identityproviderbase-delete.md
                   - name: Listar os tipos de provedor disponíveis
-                    href: api/identityproviderbase-list-availableprovidertypes.md
+                    href: api/identityproviderbase-availableprovidertypes.md
               - name: Provedor de identidade (preterido)
                 items:
                   - name: Tipo de provedor de identidade
@@ -5024,7 +5028,7 @@ items:
                         href: api/identityapiconnector-uploadclientcertificate.md
                       - name: Excluir
                         href: api/identityapiconnector-delete.md
-          - name: Governança
+          - name: Gestão
             items:
               - name: Avaliações do acesso
                 href: resources/accessreviewsv2-root.md
@@ -5520,7 +5524,7 @@ items:
                     href: api/provisioningobjectsummary-list.md
           - name: Microsoft 365 de uso
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/report.md
               - name: Uso do dispositivo do Microsoft Teams
                 href: resources/microsoft-teams-device-usage-reports.md
@@ -5771,6 +5775,26 @@ items:
                     href: api/externalconnectors-externalitem-update.md
                   - name: Excluir item externo
                     href: api/externalconnectors-externalitem-delete.md
+              - name: Grupo externo
+                items:
+                  - name: Grupo externo
+                    href: resources/externalconnectors-externalgroup.md
+                  - name: Criar grupo externo
+                    href: api/externalconnectors-externalconnection-post-groups.md
+                  - name: Obter grupo externo
+                    href: api/externalconnectors-externalgroup-get.md
+                  - name: Atualizar grupo externo
+                    href: api/externalconnectors-externalgroup-update.md
+                  - name: Excluir grupo externo
+                    href: api/externalconnectors-externalgroup-delete.md
+              - name: Membro do grupo externo
+                items:
+                  - name: Identidade
+                    href: resources/externalconnectors-identity.md
+                  - name: Criar identidade para membro
+                    href: api/externalconnectors-externalgroup-post-members.md
+                  - name: Excluir identidade do membro
+                    href: api/externalconnectors-identity-delete.md
       - name: Segurança
         displayname: 'Security API, Microsoft Intelligent Security Graph'
         items:
@@ -5847,6 +5871,22 @@ items:
                 href: api/site-unfollow.md
               - name: Listar sites seguidos
                 href: api/sites-list-followed.md
+              - name: Listar colunas
+                href: api/site-list-columns.md
+              - name: Criar coluna
+                href: api/site-post-columns.md
+              - name: Tipos de conteúdo de lista
+                href: api/site-list-contenttypes.md
+              - name: Criar tipo de conteúdo
+                href: api/site-post-contenttypes.md
+              - name: Obter tipos de conteúdo aplicáveis para lista
+                href: api/site-getapplicablecontenttypesforlist.md
+              - name: Obter listas
+                href: api/list-list.md
+              - name: Criar lista
+                href: api/list-create.md
+              - name: Listar subsites
+                href: api/site-list-subsites.md
               - name: Permissões
                 href: resources/permission.md
                 items:
@@ -5861,14 +5901,61 @@ items:
                   - name: Excluir permissão de site
                     href: api/site-delete-permission.md
           - name: Listas
-            href: resources/list.md
             items:
-              - name: Obter lista
-                href: api/list-get.md
-              - name: Obter itens
-                href: api/listitem-list.md
+              - name: Listar
+                href: resources/list.md
               - name: Criar lista
                 href: api/list-create.md
+              - name: Obter lista
+                href: api/list-get.md
+              - name: Obter listas em um site
+                href: api/list-list.md
+              - name: Obter itens
+                href: api/listitem-list.md
+              - name: Listar colunas
+                href: api/list-list-columns.md
+              - name: Criar coluna
+                href: api/list-post-columns.md
+              - name: Tipos de conteúdo de lista
+                href: api/list-list-contenttypes.md
+              - name: Adicionar cópia do tipo de conteúdo
+                href: api/contenttype-addcopy.md
+          - name: Colunas
+            items:
+              - name: Definição de coluna
+                href: resources/columndefinition.md
+              - name: Obter
+                href: api/columndefinition-get.md
+              - name: Atualizar
+                href: api/columndefinition-update.md
+              - name: Excluir
+                href: api/columndefinition-delete.md
+          - name: Tipos de conteúdo
+            items:
+              - name: Tipo de conteúdo
+                href: resources/contentType.md
+              - name: Obter
+                href: api/contenttype-get.md
+              - name: Atualizar
+                href: api/contenttype-update.md
+              - name: Excluir
+                href: api/contenttype-delete.md
+              - name: Verificar o status da publicação
+                href: api/contenttype-ispublished.md
+              - name: Publicar
+                href: api/contenttype-publish.md
+              - name: Cancelar publicação
+                href: api/contenttype-unpublish.md
+              - name: Adicionar cópia à lista
+                href: api/contenttype-addcopy.md
+              - name: Associar a sites de hub
+                href: api/contenttype-associatewithhubsites.md
+              - name: Copiar para o local de conteúdo padrão
+                href: api/contenttype-copytodefaultcontentlocation.md
+              - name: Listar colunas
+                href: api/contenttype-list-columns.md
+              - name: Criar coluna
+                href: api/contenttype-post-columns.md
           - name: Listar itens
             href: resources/listitem.md
             items:
@@ -5894,7 +5981,7 @@ items:
                     href: api/termstore-store-get.md
                   - name: Atualizar
                     href: api/termstore-store-update.md
-              - name: Group
+              - name: Grupo
                 href: resources/termstore-group.md
                 items:
                   - name: Listar
@@ -5943,7 +6030,7 @@ items:
       - name: Tarefas e planos
         displayName: Planner
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: resources/planner-overview.md
           - name: Plano
             href: resources/plannerplan.md
@@ -6152,6 +6239,8 @@ items:
           - name: Chat
             href: resources/chat.md
             items:
+              - name: Listar chats
+                href: api/chat-list.md
               - name: Criar chat
                 href: api/chat-post.md
               - name: Obter bate-papo
@@ -6197,7 +6286,7 @@ items:
                 href: api/chatmessage-list-hostedcontents.md
               - name: Obter conteúdo hospedado
                 href: api/chatmessagehostedcontent-get.md
-          - name: App
+          - name: Aplicativo
             items:
               - name: Aplicativo no catálogo
                 href: resources/teamsapp.md
@@ -6482,7 +6571,7 @@ items:
       - name: Tarefas pendentes
         displayName: Microsoft To Do
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: resources/todo-overview.md
           - name: Lista de tarefas
             href: resources/todotasklist.md

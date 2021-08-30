@@ -2,15 +2,15 @@
 title: Obter authenticationFlowsPolicy
 description: Ler as propriedades e relações de um objeto authenticationFlowsPolicy.
 author: linkhp
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: ea7ff58290c8924144b3cbd30800f2886cd56039
-ms.sourcegitcommit: 34891a1c601976166958be1aa04bab5936592b44
+ms.openlocfilehash: 2f85251aa45096b8f33bcecc49b3a403a9b709b0
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52231945"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58694990"
 ---
 # <a name="get-authenticationflowspolicy"></a>Obter authenticationFlowsPolicy
 

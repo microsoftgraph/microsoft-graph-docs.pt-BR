@@ -2,15 +2,15 @@
 title: Obter aplicativo
 description: Obtenha as propriedades e os relacionamentos de um objeto application.
 author: sureshja
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 1fbfebb6a889ffae5ae6052cc1b774d335f9fb50
-ms.sourcegitcommit: 4888ac7504533344c4fc6828e2a06a002a1d72d3
+ms.openlocfilehash: 1c4b5d524074d687672f3ba7df651e236318d603
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "53350871"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58695088"
 ---
 # <a name="get-application"></a>Obter aplicativo
 
@@ -35,7 +35,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 GET /applications/{id}
 ```
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método suporta o `$select` [parâmetro de consulta OData](/graph/query-parameters) para recuperar as propriedades específicas do aplicativo. 
+Este método suporta o `$select` [parâmetro de consulta OData](/graph/query-parameters) para recuperar as propriedades específicas do aplicativo.
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome           | Descrição                |
 |:---------------|:---------------------------|
@@ -78,7 +78,7 @@ GET https://graph.microsoft.com/beta/applications/{id}
 ---
 
 ### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. 
+Veja a seguir um exemplo da resposta.
 
 >**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {

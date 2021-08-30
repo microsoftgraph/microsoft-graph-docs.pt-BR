@@ -1,17 +1,16 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
 title: tipo de recurso de unidade
 description: o recurso de unidade representa o OneDrive de um usuário ou uma biblioteca de documentos no SharePoint
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 74ef4a5f8c2e67a81ad02ca0844d7f15dba972e8
-ms.sourcegitcommit: eafb1629e52450dab0da6a1fb6d1ddfa878777c6
+ms.openlocfilehash: 43791d730726dbf1a958c826c1a629af241eed70
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2020
-ms.locfileid: "49081828"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58696404"
 ---
 # <a name="drive-resource-type"></a>tipo de recurso de unidade
 
@@ -43,7 +42,7 @@ Os usuários do OneDrive sempre terão pelo menos uma unidade disponível, sua u
 | :------------------- | :---------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | createdBy            | [identitySet][]               | Identidade do usuário, dispositivo ou aplicativo que criou o item. Somente leitura.                                                                                                                                                  |
 | createdDateTime      | dateTimeOffset                | Data e hora de criação do item. Somente leitura.                                                                                                                                                                                       |
-| description          | String                        | Fornecer uma descrição visível para os usuários da unidade. Leitura e gravação.
+| description          | Cadeia de caracteres                        | Fornecer uma descrição visível aos usuários da unidade. Leitura e gravação.
 | driveType            | String                        | Descreve o tipo de unidade representado por esse recurso. As unidades pessoais do OneDrive retornarão `personal`. O OneDrive for Business retornará `business`. As bibliotecas de documentos do SharePoint retornarão `documentLibrary`. Somente leitura. |
 | id                   | String                        | O identificador exclusivo da unidade. Somente leitura.                                                                                                                                                                                   |
 | lastModifiedBy       | [identitySet][]               | Identidade do usuário, dispositivo e aplicativo que modificou o item pela última vez. Somente leitura.                                                                                                                                           |
@@ -148,7 +147,7 @@ O recurso **drive** é derivado de [**baseItem**](baseitem.md) e herda proprieda
   "section": "documentation",
   "tocPath": "Drives",
   "tocBookmarks": {
-    "Resources/Drive": "#"
+    "Resources/Drive&quot;: &quot;#"
   },
   "suppressions": []
 }

@@ -2,15 +2,15 @@
 title: Obter filesFolder
 description: Recuperar o filesFolder do caminho de navegação de um canal.
 author: nkramer
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 8515b6ebb853c65ba44ce18c401179e115605689
-ms.sourcegitcommit: 99fdbd9a1806d64626423e1f39342dcde8a1eaf4
+ms.openlocfilehash: e2d9c90a5acc5e852f269eb450f5380e402705f8
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/16/2021
-ms.locfileid: "52971283"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58695866"
 ---
 # <a name="get-filesfolder"></a>Obter filesFolder
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obter os metadados para o local em que os arquivos do [canal](../resources/channel.md) estão armazenados. 
+Obter os metadados para o local em que os arquivos do [canal](../resources/channel.md) estão armazenados.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -84,7 +84,7 @@ GET https://graph.microsoft.com/beta/teams/{id}/channels/{id}/filesFolder
 ---
 
 ### <a name="response"></a>Resposta
-Este é um exemplo de resposta. 
+Este é um exemplo de resposta.
 
 >**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {

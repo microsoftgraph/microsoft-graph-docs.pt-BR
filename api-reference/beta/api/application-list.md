@@ -2,15 +2,15 @@
 title: Listar aplicativos
 description: Obtenha a lista de applications nesta organização.
 author: sureshja
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: a2fa946e906336aaf7b7c20560056b9d08b93852c5e01255482d0bfb63d83d27
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: c2311687881cd8f74e875f9d6c4fde3f6bcf69ed
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57099695"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58695081"
 ---
 # <a name="list-applications"></a>Listar aplicativos
 
@@ -22,14 +22,14 @@ Obtenha a lista de [applications](../resources/application.md) nesta organizaç�
 
 > [!NOTE]
 > Ao chamar essa API usando tokens emitidos para uma conta Microsoft pessoal, ele retornará os aplicativos pertencentes à conta Microsoft pessoal. A noção de organizações não existe para contas Microsoft pessoais. Para listar os aplicativos pertencentes a contas Microsoft pessoais, essa API exige a permissão User.Read, além de Application.Read.All ou Application.ReadWrite.All.
- 
+
 ## <a name="permissions"></a>Permissions
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 | Tipo de permissão | Permissões (da com menos para a com mais privilégios) |
 |:--------------- |:------------------------------------------- |
-| Delegada (conta corporativa ou de estudante) | Application.Read.All, Application.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+| Delegado (conta corporativa ou de estudante) | Application.Read.All, Application.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 | Delegada (conta pessoal da Microsoft) | Application.Read.All e User.Read, Application.ReadWrite.All e User.Read  |
 | Aplicativo | Application.Read.All, Application.ReadWrite.All, Directory.Read.All |
 

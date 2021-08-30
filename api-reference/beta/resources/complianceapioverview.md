@@ -1,16 +1,16 @@
 ---
 title: Use a API de conformidade do Microsoft Graph
 description: A API de conformidade do Microsoft Graph fornece uma interface e um esquema unificados para integração com soluções de conformidade da Microsoft e de parceiros do ecossistema. Isso pode ajudar os clientes a otimizarem as suas operações de conformidade para melhor gerenciar e monitorar os seus dados, proteger informações, minimizar riscos internos, realizar investigações legais e internas, e cumprir os padrões legais ou regulamentares.
-localization_priority: Priority
+ms.localizationpriority: high
 author: mahage-msft
 ms.prod: compliance
 doc_type: conceptualPageType
-ms.openlocfilehash: 0ce320e924904c3d895aa4da24fc0940289ed417
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 3d568ce92ffe960b2bf3d8993ec41071396dd470
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50440518"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58694742"
 ---
 # <a name="use-the-microsoft-graph-compliance-api"></a>Use a API de conformidade do Microsoft Graph
 

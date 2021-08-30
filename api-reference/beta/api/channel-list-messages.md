@@ -1,16 +1,16 @@
 ---
 title: Listar mensagens do canal
 description: 'Recupere a lista de mensagens (sem as respostas) em um canal de equipe. Para obter as respostas de uma mensagem, chame as respostas da mensagem da lista ou a API de resposta da mensagem recebida. '
-localization_priority: Priority
+ms.localizationpriority: high
 author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 9989919b473674639aa8ef1d6f6f2c01f65ca0b6
-ms.sourcegitcommit: f99dc2b6c8b4cb6f9f74cd780dccc47a2bccfaa6
+ms.openlocfilehash: b4a66560004f15829d9a19e9e561832c47085644
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2021
-ms.locfileid: "58667770"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58694906"
 ---
 # <a name="list-channel-messages"></a>Listar mensagens do canal
 
@@ -18,9 +18,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere a lista de [mensagens](../resources/chatmessage.md) (sem as respostas) em um [canal](../resources/channel.md) de uma [equipe](../resources/team.md). 
+Recupere a lista de [mensagens](../resources/chatmessage.md) (sem as respostas) em um [canal](../resources/channel.md) de uma [equipe](../resources/team.md).
 
-Para obter as respostas de uma mensagem, chame as [respostas de listar mensagens](chatmessage-list-replies.md) ou a API de [respostas de obter mensagens](chatmessage-get.md). 
+Para obter as respostas de uma mensagem, chame as [respostas de listar mensagens](chatmessage-list-replies.md) ou a API de [respostas de obter mensagens](chatmessage-get.md).
 
 > **Observação**: Esta API oferece suporte à assinatura para alterações (criar, atualizar e excluir) usando [notificações de alteração](../resources/webhooks.md). Isso permite aos chamadores assinar e obter alterações em tempo real. Para obter detalhes, confira [obter notificações de](/graph/teams-changenotifications-chatmessage)de mensagens.
 

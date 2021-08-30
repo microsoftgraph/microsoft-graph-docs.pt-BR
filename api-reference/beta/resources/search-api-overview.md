@@ -1,16 +1,16 @@
 ---
 title: Usar a API de Pesquisa da Microsoft para consultar dados
 description: Utilizando a API de pesquisa, os aplicativos podem pesquisar os dados do Microsoft 365 no contexto do usuário autenticado
-localization_priority: Priority
+ms.localizationpriority: high
 author: nmoreau
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: c53cc0df5c9aefb6a42b5a28d6341f37b0f3d287
-ms.sourcegitcommit: 1940be9846055aa650c6c03982b74a961f1e316a
+ms.openlocfilehash: 5f7453dd5c08f282baa7667ad5793c9223e586d0
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/17/2021
-ms.locfileid: "53467096"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58695445"
 ---
 # <a name="use-the-microsoft-search-api-to-query-data"></a>Usar a API de Pesquisa da Microsoft para consultar dados
 
@@ -71,7 +71,7 @@ Para controlar a paginação dos resultados da pesquisa, especifique as duas seg
 Observe os seguintes limites se você estiver pesquisando a entidade **event** ou **message**:
 
 - **from** deve começar em zero na primeira solicitação de página; caso contrário, a solicitação resultará em um HTTP 400 `Bad request`.
-- O máximo de resultados por página (**size**) é 25 por **mensagem** e **evento**. 
+- O máximo de resultados por página (**size**) é 25 por **mensagem** e **evento**.
 
 Não há um limite superior para itens do SharePoint ou do OneDrive. Um tamanho de página razoável é 200. Um tamanho de página maior geralmente gera uma latência maior.
 
@@ -148,7 +148,7 @@ Confira [refinar os resultados da pesquisa](/graph/search-concept-aggregation) p
 
 ## <a name="request-spelling-correction"></a>Solicitar verificação ortográfica
 
-A verificação ortográfica é uma maneira popular de lidar com incompatibilidades entre erros de digitação em uma consulta do usuário e as palavras corretas em conteúdos combinados. Quando erros de digitação são detectados na consulta original do usuário, você pode obter o resultado da pesquisa tanto para a consulta original do usuário quanto para a consulta alternativa corrigida. Você também pode obter as informações de verificação ortográfica para erros de digitação na propriedade **queryAlterationResponse** da [searchresponse](searchresponse.md). 
+A verificação ortográfica é uma maneira popular de lidar com incompatibilidades entre erros de digitação em uma consulta do usuário e as palavras corretas em conteúdos combinados. Quando erros de digitação são detectados na consulta original do usuário, você pode obter o resultado da pesquisa tanto para a consulta original do usuário quanto para a consulta alternativa corrigida. Você também pode obter as informações de verificação ortográfica para erros de digitação na propriedade **queryAlterationResponse** da [searchresponse](searchresponse.md).
 
 No corpo de solicitação do método [query](/graph/api/search-query?view=graph-rest-beta&preserve-view=true), especifique as **queryAlterationOptions** que devem ser aplicadas à consulta para as verificações ortográficas. A descrição das **queryAlterationOptions** são definidas nas [searchAlterationOptions](./searchalterationoptions.md).
 
@@ -160,7 +160,7 @@ A API de pesquisa permite renderizar resultados de pesquisa de [conectores](/mic
 
 Para obter o modelo de resultado em [searchresponse](searchresponse.md), você deve definir como **true** a propriedade **enableResultTemplate**, definida em [resultTemplateOptions](./resulttemplateoption.md), em [searchRequest](./searchrequest.md). A resposta inclui um **resultTemplateId** para cada [ocorrência de pesquisa](./searchhit.md), que mapeia para um dos layouts de exibição incluídos no dicionário **resultTemplates** incluído na resposta.
 
-Confira [Usar layout de exibição de pesquisa](/graph/search-concept-display-layout) para obter exemplos. 
+Confira [Usar layout de exibição de pesquisa](/graph/search-concept-display-layout) para obter exemplos.
 
 ## <a name="error-handling"></a>Tratamento de erros
 
@@ -175,7 +175,7 @@ A API de pesquisa tem as seguintes limitações:
 - O método **query** é definido para permitir a passagem de um conjunto de uma ou mais instâncias de **searchRequest** de uma só vez. No entanto, atualmente o serviço dá suporte apenas a um único [searchRequest](./searchrequest.md) por vez.
 
 - O recurso [searchRequest](./searchrequest.md) dá suporte à passagem de vários tipos de entidades por vez. No entanto, no momento, a única combinação com suporte é para os entityTypes do SharePoint e o OneDrive: **driveItem**, **drive**, **site**, **list**, **listItem**.
-Quaisquer combinações envolvendo **mensagem**, **evento**, **pessoa**, tipos de SharePoint e OneDrive ou **externalItem** não tem suporte no momento.  
+Quaisquer combinações envolvendo **mensagem**, **evento**, **pessoa**, tipos de SharePoint e OneDrive ou **externalItem** não tem suporte no momento.
 
 - A propriedade **contentSource**, que define a conexão a ser usada, só será aplicável quando **entityType** for especificada como `externalItem`.
 
@@ -209,7 +209,7 @@ Para compatibilidade com versões anteriores, as propriedades e tipos originais 
 - Saiba mais sobre alguns dos principais casos de uso:
   - [Pesquisar mensagens do Outlook](/graph/search-concept-messages)
   - [Pesquisar eventos do calendário](/graph/search-concept-events)
-  - [Pesquisar pessoa](/graph/search-concept-person)  
+  - [Pesquisar pessoa](/graph/search-concept-person)
   - [Pesquisar conteúdo no OneDrive e Microsoft Office SharePoint Online](/graph/search-concept-files)
   - [Pesquisar tipos personalizados importados usando conectores](/graph/search-concept-custom-types)
   - [Classificar resultados de pesquisa](/graph/search-concept-sort)

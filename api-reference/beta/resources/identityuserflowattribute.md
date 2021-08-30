@@ -1,16 +1,16 @@
 ---
 title: tipo de recurso identityUserFlowAttribute
 description: Representa os atributos de fluxo de usuário em um locatário do Azure Active Directory e em um locatário do Azure AD B2C.
-localization_priority: Priority
+ms.localizationpriority: high
 doc_type: resourcePageType
 ms.prod: identity-and-sign-in
 author: jkdouglas
-ms.openlocfilehash: ca8930a5cb11edb1cf7345464666478cfc01bcda
-ms.sourcegitcommit: d033e7de12bccf92efcbe40c7b671e419a3e5b94
+ms.openlocfilehash: f0f137dffd04e77a3d7195c14d08e3e75a4e1b85
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2021
-ms.locfileid: "51882597"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58694630"
 ---
 # <a name="identityuserflowattribute-resource-type"></a>tipo de recurso identityUserFlowAttribute
 

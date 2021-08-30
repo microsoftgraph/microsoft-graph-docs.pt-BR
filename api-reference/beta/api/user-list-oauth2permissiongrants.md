@@ -1,16 +1,16 @@
 ---
 title: Lista oauth2PermissionGrants
 description: Recuperar uma lista de objetos oAuth2PermissionGrant, representando concessões de permissão delegadas.
-localization_priority: Priority
+ms.localizationpriority: high
 doc_type: apiPageType
 ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: b2bab33e8e78c7c42e7d47fd6dcf4a889579528b
-ms.sourcegitcommit: 34891a1c601976166958be1aa04bab5936592b44
+ms.openlocfilehash: 7d8e82d444c77643fd777abc558777965373cb40
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52231788"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58696348"
 ---
 # <a name="list-oauth2permissiongrants"></a>Lista oauth2PermissionGrants
 
@@ -24,7 +24,7 @@ Recuperar uma lista de entidades [oAuth2PermissionGrant](../resources/oAuth2Perm
 > Consultar as concessões de permissão delegada para um usuário só retornará permissões delegadas para o usuário específico. As permissões delegadas concedidas em nome de todos os usuários da organização _não_ são incluídas na resposta.
 
 > [!NOTE]
-> Essa solicitação pode ter atrasos de replicação para concessão de permissão delegada que foram criadas, atualizadas ou excluídas recentemente.
+> Esse pedido pode ter atrasos de replicação das concessões de permissão delegadas que foram criadas, atualizadas ou excluídas recentemente.
 
 ## <a name="permissions"></a>Permissões
 
@@ -100,7 +100,7 @@ GET https://graph.microsoft.com/beta/users/7d54cb02-aaa3-4016-9f9c-a4b49422dd9b/
 
 ### <a name="response"></a>Resposta
 
-Veja a seguir um exemplo da resposta. 
+Veja a seguir um exemplo da resposta.
 
 > **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 

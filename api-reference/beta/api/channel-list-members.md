@@ -2,15 +2,15 @@
 title: Liste os membros do canal.
 description: Liste os membros de um canal.
 author: akjo
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: e42992cfc8c0c1368e822860cf42aac7987a881b
-ms.sourcegitcommit: 456ec9510807d05623c0ed1dd049c9676f53f56b
+ms.openlocfilehash: 52a42cbe0e1de58eef619c6d555b9180c7d7e761
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53059947"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58695501"
 ---
 # <a name="list-members-of-channel"></a>Liste os membros do canal.
 
@@ -98,7 +98,7 @@ GET https://graph.microsoft.com/beta/teams/2ab9c796-2902-45f8-b712-7c5a63cf41c4/
 
 Veja a seguir um exemplo da resposta.
 
->**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade. 
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,

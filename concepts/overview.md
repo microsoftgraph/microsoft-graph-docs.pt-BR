@@ -4,12 +4,12 @@ description: O Microsoft Graph é o gateway para dados e inteligência no Micros
 author: angelgolfer-ms
 localization_priority: Priority
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: d41cb1f3d2e3932c1a8b61a5d64ae6ba9d8c65230d9d872fce3e012b2aef6b19
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 23c53876dc00260ab076094cf1ec849410badf53
+ms.sourcegitcommit: 6efd9df497d795988cd85474f379d1989b0995b7
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54165538"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58697377"
 ---
 # <a name="overview-of-microsoft-graph"></a>Visão Geral do Microsoft Graph
 
@@ -21,13 +21,10 @@ O Microsoft Graph é o gateway para dados e inteligência no Microsoft 365. Ele 
 Na plataforma Microsoft 365, três componentes principais facilitam o acesso e o fluxo de dados:
 
 - A API do Microsoft Graph oferece um único ponto de extremidade, `https://graph.microsoft.com`, para fornecer acesso a **dados e percepções ricos e centrados nas pessoas na nuvem da Microsoft**, incluindo Microsoft 365, Windows 10 e Enterprise Mobility + Security. Você pode usar APIs REST ou SDKs para acessar o endpoint e criar aplicativos que oferecem suporte a cenários do Microsoft 365, abrangendo produtividade, colaboração, educação, inteligência de pessoas e local de trabalho e muito mais. O Microsoft Graph também inclui um conjunto avançado de serviços que gerencia a identidade do usuário e do dispositivo, acesso, conformidade, segurança e ajuda a proteger organizações contra vazamento ou perda de dados.
-- [Conectores do Microsoft Graph (visualização)](/microsoftsearch/connectors-overview) trabalhar na direção de entrada, **entrega de dados externos à nuvem da Microsoft para serviços e aplicativos do Microsoft Graph**, para aprimorar as experiências do Microsoft 365, como o Microsoft Search. Existem conectores para muitas fontes de dados comumente usadas, como Box, Google Drive, Jira e Salesforce.
+- Os [conectores do Microsoft Graph](/microsoftsearch/connectors-overview) trabalham na direção de entrada, **entregando dados externos à nuvem da Microsoft para os serviços e aplicativos** do Microsoft Graph, para aprimorar as experiências do Microsoft 365, como a Pesquisa da Microsoft. Existem conectores para muitas fontes de dados comumente usadas, como Box, Google Drive, Jira e Salesforce.
 - A [Conexão de Dados do Microsoft Graph](#access-microsoft-graph-data-at-scale-using-microsoft-graph-data-connect) fornece um conjunto de ferramentas para simplificar a entrega segura e escalonável **de dados do Microsoft Graph para armazenamentos de dados populares do Azure**. Os dados em cache servem como fontes de dados para ferramentas de desenvolvimento do Azure que você pode usar para criar aplicativos inteligentes.
 
-Juntos, a API do Microsoft Graph, os conectores (visualização) e a Conexão de Dados capacitam a plataforma Microsoft 365. Com a capacidade de acessar dados do Microsoft Graph e outros conjuntos de dados, você pode obter percepções e análises, estender as experiências do Microsoft 365 e criar aplicativos exclusivos e inteligentes.
-
-> [!NOTE]
-> Os conectores do Microsoft Graph estão em versão prévia. Para usar conectores com o Microsoft Search ou para criar conectores, você deve se inscrever no [programa de visualização de conectores](/MicrosoftSearch/connectors-preview). Para participar do programa de visualização, envie o [formulário de inscrição na versão prévia dos conectores do Microsoft Graph](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbRxWYgu82J_RFnMMATAS6_chUNVYwNU1CMDNZUDBSSDZKWVo2RDJDRjRLQi4u).
+Juntos, a API do Microsoft Graph, os conectores e a conexão de dados capacitam a plataforma Microsoft 365. Com a capacidade de acessar dados do Microsoft Graph e outros conjuntos de dados, você pode obter percepções e análises, estender as experiências do Microsoft 365 e criar aplicativos exclusivos e inteligentes.
 
 ## <a name="whats-in-microsoft-graph"></a>Serviços do Microsoft Graph
 
@@ -96,7 +93,7 @@ Veja alguns desses cenários mais comuns para trabalhar com a API do Microsoft G
 |   Itens GET mais populares à minha volta | [`https://graph.microsoft.com/beta/me/insights/trending`](https://developer.microsoft.com/graph/graph-explorer/?request=me%2Finsights%2Ftrending&version=v1.0) |
 |   GET minhas anotações | [`https://graph.microsoft.com/v1.0/me/onenote/notebooks`](https://developer.microsoft.com/graph/graph-explorer/?request=me%2Fonenote%2Fnotebooks&version=beta) |
 
-## <a name="bring-data-from-an-external-content-source-to-microsoft-graph-preview"></a>Reunir dados de uma fonte de conteúdo externo para o Microsoft Graph (versão prévia)
+## <a name="bring-data-from-an-external-content-source-to-microsoft-graph"></a>Trazer os dados de uma fonte de conteúdo externa para o Microsoft Graph
 
 Use os _conectores_ do Microsoft Graph para reunir dados externos à nuvem da Microsoft para o Microsoft Graph. Exemplos desses dados podem ser um banco de dados de recursos humanos ou catálogo de produtos de uma organização, hospedados no local ou nas nuvens pública ou privada. 
 

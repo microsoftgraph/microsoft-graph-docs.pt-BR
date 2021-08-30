@@ -276,7 +276,7 @@ items:
                 href: api/user-list-events.md
               - name: Modo de exibição de lembrete
                 href: api/user-reminderview.md
-          - name: Contatos
+          - name: Contacts
             href: resources/contact.md
             items:
               - name: Criar contato
@@ -533,7 +533,7 @@ items:
         items:
           - name: Visão Geral
             href: resources/groups-overview.md
-          - name: Group
+          - name: Grupo
             href: resources/group.md
             items:
               - name: Listar grupos
@@ -1012,7 +1012,7 @@ items:
                 items:
                   - name: Listar memberOf
                     href: api/serviceprincipal-list-memberof.md
-                  - name: List transitive memberOf
+                  - name: Listar memberOf transitivos
                     href: api/serviceprincipal-list-transitivememberof.md
                   - name: checkMemberGroups
                     href: api/serviceprincipal-checkmembergroups.md
@@ -1436,7 +1436,7 @@ items:
                 href: api/call-logteleconferencedevicequality.md
           - name: Registros de chamadas
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/callrecords-api-overview.md
               - name: Registro de chamada
                 items:
@@ -1607,7 +1607,7 @@ items:
                     href: api/ediscovery-tag-childtags.md
                   - name: Listar marcas como hierarquia
                     href: api/ediscovery-tag-ashierarchy.md
-              - name: Consulta de conjunto de revisão
+              - name: Resumo do conjunto de consulta
                 href: resources/ediscovery-reviewsetquery.md
                 items:
                   - name: Listar
@@ -10079,20 +10079,22 @@ items:
           - name: Usuários
             href: resources/educationuser.md
             items:
-              - name: Listar escolas
-                href: api/educationuser-list-schools.md
-              - name: Listar classes
-                href: api/educationuser-list-classes.md
-              - name: Listar rubricas
-                href: api/educationuser-list-rubrics.md
               - name: Obter usuário
                 href: api/educationuser-get.md
               - name: Excluir usuário
                 href: api/educationuser-delete.md
-              - name: Obter intervalo
-                href: api/educationuser-delta.md
+              - name: Listar classes
+                href: api/educationuser-list-classes.md
+              - name: Listar rubricas
+                href: api/educationuser-list-rubrics.md
               - name: Criar rubrica
                 href: api/educationuser-post-rubrics.md
+              - name: Obter intervalo
+                href: api/educationuser-delta.md
+              - name: Listar escolas
+                href: api/educationuser-list-schools.md
+              - name: Listar tarefas
+                href: api/educationuser-list-assignments.md
           - name: Tarefa
             href: resources/educationassignment.md
             items:
@@ -11140,7 +11142,7 @@ items:
                         href: api/emailauthenticationmethod-delete.md
                       - name: Adicionar
                         href: api/emailauthenticationmethod-post.md
-                  - name: Senha
+                  - name: Password
                     href: resources/passwordauthenticationmethod.md
                     items:
                       - name: Listar
@@ -11392,26 +11394,46 @@ items:
                 items:
                   - name: Base do provedor de identidade
                     href: resources/identityproviderbase.md
-                  - name: Provedor de identidade integrado
-                    href: resources/builtinidentityprovider.md
-                  - name: Provedor de identidade social
-                    href: resources/socialidentityprovider.md
-                  - name: Provedor de identidade da Apple
-                    href: resources/appleidentityprovider.md
-                  - name: OpenID Conexão provedor de identidade
-                    href: resources/openidconnectidentityprovider.md
-                  - name: Listar
-                    href: api/identityproviderbase-list.md
-                  - name: Criar
-                    href: api/identityproviderbase-post-identityproviders.md
-                  - name: Obter
-                    href: api/identityproviderbase-get.md
-                  - name: Atualizar
-                    href: api/identityproviderbase-update.md
-                  - name: Excluir
-                    href: api/identityproviderbase-delete.md
-                  - name: Listar os tipos de provedor disponíveis
-                    href: api/identityproviderbase-list-availableprovidertypes.md
+                  - name: Identidades externas
+                    items:
+                      - name: Tipo de provedor de identidade integrado
+                        href: resources/builtinidentityprovider.md
+                      - name: Tipo de provedor de identidade social
+                        href: resources/socialidentityprovider.md
+                      - name: Tipo de provedor de identidade da Apple
+                        href: resources/applemanagedidentityprovider.md
+                      - name: OpenID Conexão tipo de provedor de identidade
+                        href: resources/openidconnectidentityprovider.md
+                      - name: Listar provedores de identidade disponíveis
+                        href: api/identityproviderbase-availableprovidertypes.md
+                      - name: Listar provedores de identidade configurados
+                        href: api/identitycontainer-list-identityproviders.md
+                      - name: Criar o provedor de identidade
+                        href: api/identitycontainer-post-identityproviders.md
+                      - name: Obter o provedor de identidade
+                        href: api/identityproviderbase-get.md
+                      - name: Atualizar provedor de identidade
+                        href: api/identityproviderbase-update.md
+                      - name: Excluir o provedor de identidade
+                        href: api/identityproviderbase-delete.md
+                  - name: Identidades externas baseadas em domínio
+                    items:
+                      - name: Federação de domínio externo SAML/Ws-Fed
+                        href: resources/samlorwsfedexternaldomainfederation.md
+                      - name: Listar configurações federadas
+                        href: api/samlorwsfedexternaldomainfederation-list.md
+                      - name: Obter configuração federada
+                        href: api/samlorwsfedexternaldomainfederation-get.md
+                      - name: Criar configuração federada
+                        href: api/samlorwsfedexternaldomainfederation-post.md
+                      - name: Atualizar configuração federada
+                        href: api/samlorwsfedexternaldomainfederation-update.md
+                      - name: Excluir configuração federada
+                        href: api/samlorwsfedexternaldomainfederation-delete.md
+                      - name: Listar domínios
+                        href: api/samlorwsfedexternaldomainfederation-list-domains.md
+                      - name: Criar externalDomainName
+                        href: api/samlorwsfedexternaldomainfederation-post-domains.md
               - name: Provedor de identidade (preterido)
                 items:
                   - name: Tipo de provedor de identidade
@@ -11793,7 +11815,7 @@ items:
                         href: api/identityapiconnector-uploadclientcertificate.md
                       - name: Excluir
                         href: api/identityapiconnector-delete.md
-          - name: Governança
+          - name: Gestão
             items:
               - name: Avaliações do acesso
                 href: resources/accessreviewsv2-root.md
@@ -12535,7 +12557,7 @@ items:
                 href: api/user-post-notifications.md
       - name: Inteligência de pessoas e local de trabalho
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: resources/social-overview.md
           - name: Pessoas
             items:
@@ -12887,9 +12909,9 @@ items:
           - name: Análise (visualização)
             href: resources/useranalytics.md
             items:
-              - name: Settings
+              - name: Configurações
                 items:
-                  - name: Settings
+                  - name: Configurações
                     href: resources/settings.md
                   - name: Obter configurações
                     href: api/useranalytics-get-settings.md
@@ -13553,7 +13575,7 @@ items:
                 href: api/contenttype-update.md
               - name: Excluir
                 href: api/contenttype-delete.md
-              - name: IsPublished
+              - name: Verificar o status da publicação
                 href: api/contenttype-ispublished.md
               - name: Publicar
                 href: api/contenttype-publish.md
@@ -13615,7 +13637,7 @@ items:
                     href: api/termstore-store-get.md
                   - name: Atualizar
                     href: api/termstore-store-update.md
-              - name: Group
+              - name: Grupo
                 href: resources/termstore-group.md
                 items:
                   - name: Criar
@@ -14001,7 +14023,7 @@ items:
                 href: api/teamworktagmember-get.md
               - name: Excluir membro
                 href: api/teamworktagmember-delete.md
-          - name: App
+          - name: Aplicativo
             items:
               - name: Aplicativo no catálogo
                 href: resources/teamsapp.md

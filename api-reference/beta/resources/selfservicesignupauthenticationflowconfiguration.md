@@ -2,15 +2,15 @@
 title: Tipo de recurso de configuração de fluxo de autenticação de autoatendimento
 description: Representa as configurações relacionadas ao autoatendimento de inscrição.
 author: linkhp
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: identity-and-access-reports
 doc_type: resourcePageType
-ms.openlocfilehash: f194c626fceab840f2312200cd824cdbbf63c913345410a6274778d3475bb97b
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 3bab808249ee7417d721e68dbd2a172c71daf593
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54212917"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58696880"
 ---
 # <a name="selfservicesignupauthenticationflowconfiguration-resource-type"></a>Tipo de recurso de configuração de fluxo de autenticação de autoatendimento
 

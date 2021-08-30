@@ -2,15 +2,15 @@
 title: Usar a API do Microsoft To Do
 description: Você pode usar a API do Microsoft Graph para criar um aplicativo que se conecta com tarefas no Microsoft To Do.
 author: avijityadav
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: outlook
 doc_type: conceptualPageType
-ms.openlocfilehash: 76dc89caeb0a39d9dd0f40c1bcf046ffe9fe3f9d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: fc1e872fa5a75775c436a02afa5f8ee28e68040f
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47973514"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58696376"
 ---
 # <a name="use-the-microsoft-to-do-api"></a>Usar a API do Microsoft To Do
 
@@ -23,7 +23,7 @@ Use a API To Do no Microsoft Graph para criar um aplicativo que se conecta com t
 * Gerenciar tarefas To Do em aplicações comerciais personalizadas.
 
 Atualmente, a API suporta apenas as permissões delegadas pelo usuário conectado.
- 
+
 Antes de começar com a API To Do, dê uma olhada nos recursos e como eles se relacionam entre si.
 
 ![Entidades da API To Do](/graph/images/todo-api-entities.png)
@@ -52,7 +52,7 @@ GET /me/todo/lists/{todoTaskListId}/tasks/{todoTaskId}/linkedresources/{linkedRe
 
 ## <a name="track-changes-using-delta-query"></a>Acompanhar alterações usando a consulta delta
 
-Por motivos de desempenho, talvez você queira manter um cache local de objetos e sincronizar periodicamente o cache local com o servidor, usando uma [consulta delta](/graph/delta-query-overview). 
+Por motivos de desempenho, talvez você queira manter um cache local de objetos e sincronizar periodicamente o cache local com o servidor, usando uma [consulta delta](/graph/delta-query-overview).
 
 Os seguintes recursos da API To Do oferecem suporte à consulta delta:
 * Coleção [toTask](./todotask.md) em uma lista de tarefas

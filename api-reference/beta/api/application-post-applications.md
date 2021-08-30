@@ -2,15 +2,15 @@
 title: Criar aplicativo
 description: Crie um novo aplicativo.
 author: sureshja
-localization_priority: Priority
+ms.localizationpriority: high
 doc_type: apiPageType
 ms.prod: applications
-ms.openlocfilehash: 1ba04ea1a7a7ba5128e91f5bbe8243fc4c436311
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: f220e8c460ce53d01965c9e0451c7d15648fdadf
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52048082"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58695074"
 ---
 # <a name="create-application"></a>Criar aplicativo
 
@@ -89,7 +89,7 @@ Content-length: 67
 ---
 
 ### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. 
+Veja a seguir um exemplo da resposta.
 
 > **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {

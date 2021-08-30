@@ -2,15 +2,15 @@
 title: tipo de recurso itemInsights
 description: Relacionamentos entre um usuário e itens como documentos do OneDrive for Business, calculados usando análises avançadas e técnicas de aprendizado de máquina. Por exemplo, você pode identificar tendências de documentos do OneDrive for Business entre usuários à sua volta.
 author: simonhult
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: insights
 doc_type: resourcePageType
-ms.openlocfilehash: 36b0d8957beae9f8748c0e388a0aca2134731f73
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 602cb58130f801e129bc334163cd7dabcc0d0b1b
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48089340"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58696978"
 ---
 # <a name="iteminsights-resource-type"></a>tipo de recurso itemInsights
 
@@ -36,7 +36,7 @@ Atualize [itemInsightsSettings](iteminsightssettings.md) para desabilitar as inf
 | ------------- |---------------| -------------|
 | tendências      | coleção [tendências](insights-trending.md)        | Relacionamento calculado que identifica documentos de tendências em torno de um usuário. Os documentos de tendência são calculados com base na atividade da rede de pessoas mais próximas do usuário e incluem arquivos armazenados no OneDrive for Business e no SharePoint. As informações de tendências ajudam o usuário a descobrir o conteúdo potencialmente útil que ele tem acesso, mas nunca viu antes.|
 | usado      | coleção [usedInsight](insights-used.md)        | Relacionamento calculado que identifica os documentos mais recentes exibidos e modificados por um usuário, incluindo documentos do OneDrive for Business e do SharePoint, classificados por tempo de uso recente.|
-| compartilhado        | coleção [sharedInsight](insights-shared.md)        | O relacionamento calculado para identificar documentos compartilhados com ou pelo usuário inclui anexos de arquivo em emails e reuniões, além de URLs e anexos de referência aos arquivos do OneDrive for Business e do SharePoint encontrados em emails, reuniões e conversas do Teams. Ordenado por tempo de compartilhamento recente.|
+| compartilhado        | coleção [sharedInsight](insights-shared.md)        | Relação calculada que identifica documentos compartilhados com ou pelo usuário, inclui anexos de arquivo em emails e reuniões, bem como URLs e anexos de referência para OneDrive for Business e arquivos do Microsoft Office SharePoint Online encontrados em emails, reuniões e conversas de equipes. Ordenado por tempo para retorno do compartilhamento.|
 
 
 ## <a name="json-representation"></a>Representação JSON

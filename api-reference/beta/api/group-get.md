@@ -2,15 +2,15 @@
 title: Obter grupo
 description: Obtenha as propriedades e os relacionamentos de um objeto de grupo.
 author: Jordanndahl
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 344f1ed4ed71fe038dd66403c7b8732829fb8c0d
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: e6e3154078356e57a2fd644668f786e17a300133
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52681676"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58695480"
 ---
 # <a name="get-group"></a>Obter grupo
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obtenha as propriedades e os relacionamentos de um objeto [group](../resources/group.md). 
+Obtenha as propriedades e os relacionamentos de um objeto [group](../resources/group.md).
 
 Esta operação retorna, por padrão, apenas um subconjunto de todas as propriedades disponíveis, conforme indicado na seção [Propriedades](../resources/group.md#properties). Para obter propriedades _não_ retornadas por padrão, especifique-as em uma opção de consulta `$select` do OData. A propriedade **hasMembersWithLicenseErrors** é uma exceção e ela não é retornada na consulta `$select`. Como o recurso **group** dá suporte a [extensions](/graph/extensibility-overview), você também pode usar a operação `GET` para obter propriedades personalizadas e dados de extensão em uma instância de **group**.
 
@@ -60,7 +60,7 @@ Se bem-sucedido, este método retorna um código de resposta `200 OK` e um objet
 
 #### <a name="request"></a>Solicitação
 
-Veja a seguir um exemplo de solicitação GET. 
+Veja a seguir um exemplo de solicitação GET.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -93,7 +93,7 @@ GET https://graph.microsoft.com/beta/groups/45b7d2e7-b882-4a80-ba97-10b7a63b8fa4
 #### <a name="response"></a>Resposta
 Veja a seguir o exemplo de uma resposta. Ela inclui apenas as propriedades solicitadas.
 
->**Observação:** O objeto de resposta mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades padrão serão retornadas em uma chamada real.
+>**Observação:** O objeto de resposta mostrado aqui pode ser reduzido para facilitar a leitura. Todas as propriedades padrão são retornadas em uma chamada real.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -145,7 +145,7 @@ Content-type: application/json
 
 #### <a name="request"></a>Solicitação
 
-Veja a seguir um exemplo de solicitação GET. 
+Veja a seguir um exemplo de solicitação GET.
 
 
 # <a name="http"></a>[HTTP](#tab/http)

@@ -1,16 +1,16 @@
 ---
 title: Listar memberOf de servicePrincipal
 description: Obtenha os grupos e funções de diretório dos quais essa entidade de serviço é membro direto. Essa operação não é transitiva.
-localization_priority: Priority
+ms.localizationpriority: high
 doc_type: apiPageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: d9d2b8b6292da0344d17efd437e77d637554894c
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 2caac4cf5c4c9fce8384cf0e1d797e83e30bba7a
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52036573"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58695942"
 ---
 # <a name="list-serviceprincipal-memberof"></a>Listar memberOf de servicePrincipal
 
@@ -95,7 +95,7 @@ GET https://graph.microsoft.com/beta/servicePrincipals/{id}/memberOf
 
 #### <a name="response"></a>Resposta
 
-Este é um exemplo de resposta. 
+Este é um exemplo de resposta.
 > **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
@@ -199,7 +199,7 @@ Este é um exemplo de solicitação.
   "name": "get_video_count"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/servicePrincipals/{id}/memberOf/microsoft.graph.group?$count=true&$orderby=displayName&$search=”displayName:Video" 
+GET https://graph.microsoft.com/beta/servicePrincipals/{id}/memberOf/microsoft.graph.group?$count=true&$orderby=displayName&$search=”displayName:Video"
 ConsistencyLevel: eventual
 ```
 

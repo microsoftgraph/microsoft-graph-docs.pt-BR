@@ -1,16 +1,16 @@
 ---
 title: Usar a API de Pesquisa da Microsoft para indexar dados
 description: Use o Microsoft Graph para indexar itens personalizados no serviço de Pesquisa da Microsoft.
-localization_priority: Priority
+ms.localizationpriority: high
 author: snlraju-msft
 ms.prod: search
 doc_type: conceptualPageType
-ms.openlocfilehash: 37e98b3cebd75f08a4193c312994af7c697a0bab
-ms.sourcegitcommit: 1940be9846055aa650c6c03982b74a961f1e316a
+ms.openlocfilehash: 4189913b9923601a12edb658da3b5dcda3a80fbc
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/17/2021
-ms.locfileid: "53467103"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58696894"
 ---
 # <a name="use-the-microsoft-search-api-to-index-data"></a>Usar a API de Pesquisa da Microsoft para indexar dados
 
@@ -54,7 +54,7 @@ Saiba mais sobre os [novos recursos e atualizações mais recentes](/graph/whats
 
 - Confira a [Visão geral da API de Pesquisa da Microsoft](/graph/search-concept-overview).
 - Faça uma busca detalhada sobre os métodos, propriedades e relações dos recursos [externalConnection](externalconnectors-externalconnection.md), [schema](externalconnectors-schema.md)e [externalItem](externalconnectors-externalitem.md).
-- Confira a [coleção Microsoft Graph postman](https://www.postman.com/microsoftgraph/workspace/microsoft-graph/folder/455214-66cbb476-ad94-448e-ba5a-ef58e1da7a90?ctx=documentation) ([saiba mais](https://developer.microsoft.com/pt-BR/graph/blogs/postman-collections))
+- Confira a [coleção Microsoft Graph postman](https://www.postman.com/microsoftgraph/workspace/microsoft-graph/folder/455214-66cbb476-ad94-448e-ba5a-ef58e1da7a90?ctx=documentation) ([saiba mais](https://developer.microsoft.com/en-us/graph/blogs/postman-collections))
 - Confira o [exemplo de conector de pesquisa](https://github.com/microsoftgraph/msgraph-search-connector-sample) no GitHub.
 
 

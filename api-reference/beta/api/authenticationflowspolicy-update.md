@@ -2,15 +2,15 @@
 title: Atualizar authenticationFlowsPolicy
 description: Atualize a propriedade booleana selfServiceSignUp de um objeto authenticationFlowsPolicy.
 author: linkhp
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 6bd6d397cd9e4a979db6d74c20d907a1217f8ee0
-ms.sourcegitcommit: de3bc91a24d23b46bd0863487415fba8d8fce63c
+ms.openlocfilehash: 8ce1513a55c59fce9c3c4337a7f3b14afefead9e
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52266770"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58694983"
 ---
 # <a name="update-authenticationflowspolicy"></a>Atualizar authenticationFlowsPolicy
 

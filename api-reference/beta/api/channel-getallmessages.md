@@ -2,15 +2,15 @@
 title: 'channel: getAllMessages'
 description: Recupere todas as mensagens entre os canais de uma equipe.
 author: RamjotSingh
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: d422a39a0b25b772d7fa6d514d6ad3d617ca6708
-ms.sourcegitcommit: a598c09b73e4e43eea5f4aaefea7ffe062e15c39
+ms.openlocfilehash: 6d33f4882c956a3296ca6172e58db247f6dc3880
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/22/2021
-ms.locfileid: "53533210"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58695438"
 ---
 # <a name="channel-getallmessages"></a>channel: getAllMessages
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere as [mensagens](../resources/chatmessage.md) em todos os [canais](../resources/channel.md) de uma [equipe](../resources/team.md), incluindo texto, áudio, e conversas de vídeo. 
+Recupere as [mensagens](../resources/chatmessage.md) em todos os [canais](../resources/channel.md) de uma [equipe](../resources/team.md), incluindo texto, áudio, e conversas de vídeo.
 
 Para saber mais sobre o uso das APIs de exportação do Microsoft Teams para exportar conteúdo, consulte [Exportar conteúdo com as APIs de exportação do Microsoft Teams](/microsoftteams/export-teams-content).
 

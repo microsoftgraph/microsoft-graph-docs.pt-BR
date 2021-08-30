@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso appleManagedIdentityProvider
 description: Representa o provedor de identidade apple em um locatário do B2C do Azure AD
-localization_priority: Priority
+ms.localizationpriority: high
 doc_type: resourcePageType
 ms.prod: identity-and-sign-in
 author: namkedia
-ms.openlocfilehash: fe342e88e8651f61c6e9d29bf33611829756d28a
-ms.sourcegitcommit: f99dc2b6c8b4cb6f9f74cd780dccc47a2bccfaa6
+ms.openlocfilehash: 5526b2d7d9859b064fc14c8179a45f48f2bbb76f
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2021
-ms.locfileid: "58667819"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58696334"
 ---
 # <a name="applemanagedidentityprovider-resource-type"></a>Tipo de recurso appleManagedIdentityProvider
 Namespace: microsoft.graph

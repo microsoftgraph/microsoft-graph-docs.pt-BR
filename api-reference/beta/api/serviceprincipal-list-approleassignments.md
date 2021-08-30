@@ -1,16 +1,16 @@
 ---
 title: Listar appRoleAssignments concedidos a uma entidade de serviço
 description: Recuperar a lista de atribuições de funções do aplicativo concedidas a uma entidade de serviço.
-localization_priority: Priority
+ms.localizationpriority: high
 doc_type: apiPageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: d2cb17087f4bf36dfa9b2f4d23c786decefc51c3
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 8a34575d1d6ca4f01567b13ed3beea32859af375
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52051897"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58696852"
 ---
 # <a name="list-approleassignments-granted-to-a-service-principal"></a>Listar appRoleAssignments concedidos a uma entidade de serviço
 
@@ -94,7 +94,7 @@ GET https://graph.microsoft.com/beta/servicePrincipals/8e881353-1735-45af-af21-e
 
 ### <a name="response"></a>Resposta
 
-Veja a seguir um exemplo da resposta. 
+Veja a seguir um exemplo da resposta.
 
 > **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 

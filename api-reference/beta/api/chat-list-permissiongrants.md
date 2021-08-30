@@ -2,15 +2,15 @@
 title: Listar permissionGrants de um chat
 description: Recuperar permissionGrants de um chat.
 author: akjo
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 1714bebdd49b5eafb60ee461ad1434f1970e0cbd
-ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
+ms.openlocfilehash: 9659a704976e60ae44d0abf28fc3458569710408
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53207298"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58696243"
 ---
 # <a name="list-permissiongrants-of-a-chat"></a>Listar permissionGrants de um chat
 

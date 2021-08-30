@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso directoryObject
 description: Representa um objeto do Active Directory do Azure. O tipo **directoryObject** é o tipo básico de muitos outros tipos de entidade de diretório.
-localization_priority: Priority
+ms.localizationpriority: high
 author: keylimesoda
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 5084407b6927172f5d1ef956bd696952e1b551b7
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: e704c59e594095f45abd03ce48937c45cdcf6d30
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50440467"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58696411"
 ---
 # <a name="directoryobject-resource-type"></a>Tipo de recurso directoryObject
 
@@ -41,7 +41,7 @@ Esse recurso permite:
 
 | Propriedade   | Tipo |Descrição|
 |:---------------|:--------|:----------|
-|id|Cadeia de caracteres|O identificador exclusivo para o objeto. Por exemplo, 12345678-9abc-def0-1234-56789abcde. O valor da propriedade **ID** é frequentemente, mas não exclusivamente, sob o formato de um GUID; O valor deve ser tratado como um identificador opaco e não confie no fato de ser um GUID. Chave. Não anulável. Somente leitura.|
+|id|Cadeia de caracteres|O identificador exclusivo do objeto. Por exemplo, 12345678-9abc-def0-1234-56789abcde. O valor da propriedade da **ID** é geralmente, mas não exclusivamente na forma de um GUID; trate-o como um identificador opaco e não confie que ele seja um GUID. Chave. Não pode ser anulado. Somente leitura.|
 
 ## <a name="relationships"></a>Relações
 

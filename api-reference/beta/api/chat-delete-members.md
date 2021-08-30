@@ -2,15 +2,15 @@
 title: Remover membro do bate-papo
 description: Remover um conversationMember de um bate-papo.
 author: AkJo
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 88f3b6482d7e01a50fa98427053c8b8348044997
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: fb5ca06a270b743d3380947a6d90b6973ff13c14
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58255186"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58695431"
 ---
 # <a name="remove-member-from-chat"></a>Remover membro do bate-papo
 Namespace: microsoft.graph

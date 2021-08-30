@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso servicePrincipal
 description: Representa uma instância de um aplicativo em um diretório. Herda de directoryObject.
-localization_priority: Priority
+ms.localizationpriority: high
 doc_type: resourcePageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: 1083e5638f9df8ffa376cd46dd8902d423a132f7
-ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
+ms.openlocfilehash: 6f84f0199df62524a7dc90f75ad0309ea493a002
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2021
-ms.locfileid: "58454007"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58696873"
 ---
 # <a name="serviceprincipal-resource-type"></a>Tipo de recurso servicePrincipal
 

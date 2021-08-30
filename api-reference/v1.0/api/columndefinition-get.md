@@ -1,0 +1,119 @@
+---
+author: swapnil1993
+title: Obter columnDefinition
+description: Obter um site, uma lista ou uma coluna de tipo de conteúdo.
+localization_priority: Normal
+doc_type: apiPageType
+ms.prod: sites-and-lists
+ms.openlocfilehash: fee5b84275174ad6afb1bcd785f45f44e86fac12
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58696468"
+---
+# <a name="get-columndefinition"></a>Obter columnDefinition
+Namespace: microsoft.graph
+
+
+Recupere os metadados de um [site,][]uma [lista][]ou uma [coluna contentType.][] [][columnDefinition]
+
+  
+
+## <a name="permissions"></a>Permissões
+
+  
+
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions_reference.md).
+
+  
+
+|Tipo de permissão | Permissões (da com menos para a com mais privilégios) |
+|:--------------------|:---------------------------------------------------------|
+|Delegado (conta corporativa ou de estudante) | Sites.Read.All, Sites.ReadWrite.All, Sites.Manage.All, Sites.FullControl.All  |
+|Delegado (conta pessoal da Microsoft) | Sem suporte. |
+|Aplicativo | Sites.Read.All, Sites.ReadWrite.All, Sites.Manage.All, Sites.FullControl.All  |
+
+  
+
+## <a name="http-request"></a>Solicitação HTTP
+
+<!-- {
+  "blockType": "ignored"
+}
+-->
+
+```http
+GET /sites/{site-id}/columns/{column-id}
+GET /sites/{site-id}/lists/{list-id}/columns/{column-id}
+GET /sites/{site-id}/contentTypes/{contentType-id}/columns/{column-id}
+GET /sites/{site-id}/lists/{list-id}/contentTypes/{contentType-id}/columns/{column-id}
+```
+
+## <a name="request-headers"></a>Cabeçalhos de solicitação
+|Nome|Descrição|
+|:---|:---|
+|Autorização|{token} de portador. Obrigatório.|  
+
+## <a name="request-body"></a>Corpo da solicitação
+
+  
+
+Não forneça um corpo de solicitação com esse método.
+
+  
+
+## <a name="example"></a>Exemplo
+
+  
+
+### <a name="request"></a>Solicitação
+
+<!-- { "blockType": "request", "name": "get_column_from_contenttype" } -->
+
+  
+
+```http
+GET /sites/{site-id}/contentTypes/{contentType-id}/columns/{column-id}
+```
+
+### <a name="response"></a>Resposta
+
+  
+
+<!-- { "blockType": "response", "@type": "microsoft.graph.columnDefinition", "truncated": true } -->
+
+  
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "description": "",
+  "displayName": "Title",
+  "hidden": false,
+  "id": "99ddcf45-e2f7-4f17-82b0-6fba34445103",
+  "indexed": false,
+  "name": "Title",
+  "readOnly": false,
+  "required": false,
+  "text": {
+    "allowMultipleLines": false,
+    "appendChangesToExistingText": false,
+    "linesForEditing": 0,
+    "maxLength": 255
+  }
+}
+```
+
+  
+
+[columnDefinition]: ../resources/columnDefinition.md
+
+[list]: ../resources/list.md
+
+[site]: ../resources/site.md
+
+[contentType]: ../resources/contentType.md
+  

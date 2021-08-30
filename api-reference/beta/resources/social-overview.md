@@ -1,16 +1,16 @@
 ---
 title: Usar a API do Microsoft Graph para integrar a inteligência de pessoas e de local de trabalho em um aplicativo
 description: O Microsoft Graph permite o acesso a dados úteis sobre pessoas, seu perfil, documentos dos quais eles interagem e padrões de trabalho e oferece suporte a gestos no contexto social de um usuário.
-localization_priority: Priority
+ms.localizationpriority: high
 author: simonhult
 ms.prod: insights
 doc_type: conceptualPageType
-ms.openlocfilehash: 11015af6ad1d75b6668052933d3dbbd5289c1731
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 17b0c03659e53685ff0644100f31dc7bd20df4d4
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48033519"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58695249"
 ---
 # <a name="use-the-microsoft-graph-api-to-integrate-people-and-workplace-intelligence-in-an-app"></a>Usar a API do Microsoft Graph para integrar a inteligência de pessoas e de local de trabalho em um aplicativo
 
@@ -30,9 +30,9 @@ Use o recurso [person](../resources/person.md) e a API de Pessoas para agregar i
 
 Recurso: Perfil (visualização)
 
-As pessoas que procuram contextualizar outras na organização geralmente exibem o perfil ou o cartão de perfil de uma pessoa. 
+As pessoas que procuram contextualizar outras na organização geralmente exibem o perfil ou o cartão de perfil de uma pessoa.
 
-O recurso [perfil](../resources/profile.md) é uma avançada fonte de informações sobre as pessoas dentro de um locatário e proporciona um mecanismo leve para armazenar e recuperar informações sobre alguém. 
+O recurso [perfil](../resources/profile.md) é uma avançada fonte de informações sobre as pessoas dentro de um locatário e proporciona um mecanismo leve para armazenar e recuperar informações sobre alguém.
 
 ## <a name="personalize-people-experiences-within-your-organization"></a>Personalizar experiências de pessoas dentro da sua organização
 
