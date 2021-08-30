@@ -5,12 +5,12 @@ localization_priority: Normal
 author: keylimesoda
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: e5163a50c6c16e9e2d2c6e315e3a701af6da0f88cdc555dcd6b31494ef4e98f0
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: d4a68680c62fd97229190bac921a22246e01b79f
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54130370"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58695291"
 ---
 # <a name="directory-resource-type-deleted-items"></a>Tipo de recurso directory (itens excluídos)
 
@@ -19,6 +19,8 @@ Namespace: microsoft.graph
 Representa um item excluído no diretório. Quando um item é excluído, ele é adicionado ao "contêiner" de itens excluídos. Itens excluídos permanecerão disponíveis para restauração por até 30 dias. Após 30 dias, esses itens serão excluídos permanentemente.
 
 Atualmente, a funcionalidade de itens excluídos só tem suporte para os recursos [de](application.md)aplicativo, [grupo](group.md) [e](user.md) usuário.
+
+Herda da [entidade](entity.md).
 
 ## <a name="methods"></a>Métodos
 
@@ -30,12 +32,23 @@ Atualmente, a funcionalidade de itens excluídos só tem suporte para os recurso
 |[Excluir permanentemente um item](../api/directory-deleteditems-delete.md) | Nenhum | Exclui permanentemente um item. |
 |[Listar itens excluídos pertencentes a um usuário](../api/directory-deleteditems-user-owned.md) | Coleção [directoryObject](directoryobject.md) | Lista itens de diretório pertencentes a um usuário. |
 
+
+## <a name="properties"></a>Propriedades
+
+| Propriedade   | Tipo |Descrição|
+|:---------------|:--------|:----------|
+|id|Cadeia de caracteres| Um identificador exclusivo do objeto; por exemplo, `12345678-9abc-def0-1234-56789abcde` . Chave. Não anulável. Somente leitura. Herdado da [entidade](entity.md).|
+
+
 ## <a name="relationships"></a>Relações
+
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
+|administrativeUnits|[Coleção administrativeUnit](administrativeunit.md)| Contêiner conceitual para objetos de diretório de grupo e usuário.|
 |deletedItems|Coleção [directoryObject](directoryobject.md)| Itens recentemente excluídos. Somente leitura. Anulável.|
 
 ## <a name="json-representation"></a>Representação JSON
+
 Veja a seguir uma representação JSON do recurso.
 
 <!-- {

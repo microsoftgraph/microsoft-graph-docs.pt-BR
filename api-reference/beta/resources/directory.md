@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso directory (itens excluídos)
 description: . Itens excluídos permanecerão disponíveis para restauração por até 30 dias. Após 30 dias, esses itens serão excluídos permanentemente.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: keylimesoda
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: c79e21600ed03a8239c0baaf1f436f074a4377bc
-ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
+ms.openlocfilehash: 98a6127991b3eb321a84c6d771ef25b6f4f3f170
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52547236"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58696908"
 ---
 # <a name="directory-resource-type-deleted-items"></a>Tipo de recurso directory (itens excluídos)
 
@@ -22,6 +22,8 @@ Representa um item excluído no diretório. Quando um item é excluído, ele é 
 
 Atualmente, a funcionalidade de itens excluídos só tem suporte para os recursos [de](application.md)aplicativo, [grupo](group.md) [e](user.md) usuário.
 
+Herda da [entidade](entity.md).
+
 ## <a name="methods"></a>Métodos
 
 | Método         | Tipo de retorno | Descrição |
@@ -31,24 +33,24 @@ Atualmente, a funcionalidade de itens excluídos só tem suporte para os recurso
 |[Listar itens excluídos](../api/directory-deleteditems-list.md) |Coleção [directoryObject](directoryobject.md)| Obtém uma lista de itens recentemente excluídos. |
 |[Excluir permanentemente um item](../api/directory-deleteditems-delete.md) | Nenhum | Exclui permanentemente um item. |
 |[Listar itens excluídos pertencentes a um usuário](../api/directory-deleteditems-user-owned.md) | Coleção [directoryObject](directoryobject.md) | Lista itens de diretório pertencentes a um usuário. |
-|[Listar featureRolloutPolicies](../api/list-featurerolloutpolicies.md) | [Coleção featureRolloutPolicy](featurerolloutpolicy.md) | Recupere uma lista de objetos featureRolloutPolicy. |
-|[Criar featureRolloutPolicy](../api/post-featurerolloutpolicies.md) | [featureRolloutPolicy](featurerolloutpolicy.md) | Crie um novo objeto featureRolloutPolicy. |
-| [Obter featureRolloutPolicy](../api/featurerolloutpolicy-get.md) | [featureRolloutPolicy](featurerolloutpolicy.md) | Recupere as propriedades e as relações do objeto featurerolloutpolicy. |
-| [Atualizar featureRolloutPolicy](../api/featurerolloutpolicy-update.md) | [featureRolloutPolicy](featurerolloutpolicy.md) | Atualize as propriedades do objeto featurerolloutpolicy. |
-| [Excluir featureRolloutPolicy](../api/featurerolloutpolicy-delete.md) | Nenhum | Exclua um objeto featureRolloutPolicy. |
 
 ## <a name="properties"></a>Propriedades
+
 | Propriedade   | Tipo |Descrição|
 |:---------------|:--------|:----------|
-|id|String| Um identificador exclusivo para o objeto; por exemplo, 12345678-9abc-def0-1234-56789abcde. Chave. Não anulável. Somente leitura.|
+|id|Cadeia de caracteres| Um identificador exclusivo do objeto; por exemplo, `12345678-9abc-def0-1234-56789abcde` . Chave. Não anulável. Somente leitura. Herdado da [entidade](entity.md).|
 
 ## <a name="relationships"></a>Relações
+
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
+|administrativeUnits|[Coleção administrativeUnit](administrativeunit.md)| Contêiner conceitual para objetos de diretório de grupo e usuário.|
 |deleteditems|Coleção [directoryObject](directoryobject.md)| Itens recentemente excluídos. Somente leitura. Anulável.|
 |featureRolloutPolicies|[Coleção featureRolloutPolicy](featurerolloutpolicy.md)| Anulável.|
+|federationConfigurations|Coleção [identityProviderBase](../resources/identityproviderbase.md) |Configure a federação de domínio com organizações cujo provedor de identidade (IdP) oferece suporte ao protocolo SAML ou WS-Fed.|
 
 ## <a name="json-representation"></a>Representação JSON
+
 Veja a seguir uma representação JSON do recurso.
 
 <!-- {

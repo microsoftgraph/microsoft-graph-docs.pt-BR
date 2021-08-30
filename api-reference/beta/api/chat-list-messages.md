@@ -1,16 +1,16 @@
 ---
 title: Listar mensagens em um chat
 description: 'Recupere a lista de mensagens em um chat. '
-localization_priority: Priority
+ms.localizationpriority: high
 author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 8c756c1fc4dd62f468dc0b1eefc80859d41b08b1
-ms.sourcegitcommit: f99dc2b6c8b4cb6f9f74cd780dccc47a2bccfaa6
+ms.openlocfilehash: 9e6c21ca81787b5e37e4d55da05d0ab0f76f0e2c
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2021
-ms.locfileid: "58667812"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58696383"
 ---
 # <a name="list-messages-in-a-chat"></a>Listar mensagens em um chat
 

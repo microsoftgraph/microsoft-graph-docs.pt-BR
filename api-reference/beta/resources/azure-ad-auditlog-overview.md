@@ -1,16 +1,16 @@
 ---
 title: Visão geral da API de relatórios de atividades
 description: Use a API de relatórios de atividades no Microsoft Graph para acessar os relatórios que o Azure Active Directory cria para ajudar a rastrear a atividade do usuário em um locatário.
-localization_priority: Priority
+ms.localizationpriority: high
 doc_type: conceptualPageType
 ms.prod: identity-and-access-reports
 author: besiler
-ms.openlocfilehash: 78afd6477988a546c7c0e2b8db34f8933423107f
-ms.sourcegitcommit: 8a9be6f65f62f29973508d82e0348d4142c18f23
+ms.openlocfilehash: c718e6dbe95d1aaf4b891470d07e714d4e0a9ee7
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "53129467"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58695124"
 ---
 # <a name="activity-reports-api-overview"></a>Visão geral da API de relatórios de atividades
 
@@ -26,7 +26,7 @@ A disponibilidade desses relatórios de atividades é regida pelas políticas de
 
 O Microsoft Azure Active Directory fornece três tipos de relatórios de atividades:
 
-- Auditorias de diretório 
+- Auditorias de diretório
 - Entradas
 - Provisionamento
 
@@ -76,8 +76,8 @@ Para saber mais, consulte [Preços do Azure AD](https://azure.microsoft.com/pric
 
 ## <a name="next-steps"></a>Próximas etapas
 
-- [Registre seu aplicativo](/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal) para atender aos pré-requisitos do relatório. 
-- Para saber como recuperar os logs de auditoria enquanto são autenticados usando certificados, consulte o [Tutorial: Obter dados usando a API de relatórios do Azure Active Directory com certificados](/azure/active-directory/reports-monitoring/tutorial-access-api-with-certificates).  
+- [Registre seu aplicativo](/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal) para atender aos pré-requisitos do relatório.
+- Para saber como recuperar os logs de auditoria enquanto são autenticados usando certificados, consulte o [Tutorial: Obter dados usando a API de relatórios do Azure Active Directory com certificados](/azure/active-directory/reports-monitoring/tutorial-access-api-with-certificates).
 - Analisar recurso e ações do [directoryAudit](directoryaudit.md).
-- Analisar recurso e ações do [signIn](signin.md). 
+- Analisar recurso e ações do [signIn](signin.md).
 - Analisar o recurso[provisioningObjectSummary](provisioningobjectsummary.md).

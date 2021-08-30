@@ -1,16 +1,16 @@
 ---
 title: Excluir externalGroup
-description: Exclui um objeto externalGroup.
+description: Exclua um objeto externalGroup.
 author: snlraju-msft
 localization_priority: Normal
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 4b415075dbcd47ecf8d3ad1e92fbf410863ba2d8
-ms.sourcegitcommit: 1940be9846055aa650c6c03982b74a961f1e316a
+ms.openlocfilehash: b4cfa91878df8bf93f78fe1afdc06490b7c308c6
+ms.sourcegitcommit: 6efd9df497d795988cd85474f379d1989b0995b7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/17/2021
-ms.locfileid: "53467545"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58697461"
 ---
 # <a name="delete-externalgroup"></a>Excluir externalGroup
 

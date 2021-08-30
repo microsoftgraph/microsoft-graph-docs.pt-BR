@@ -2,15 +2,15 @@
 title: Obter membro da equipe
 description: Obter membro da equipe.
 author: akjo
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 6a12455b9fb2d51c13dc725ec509542136affa1e
-ms.sourcegitcommit: 456ec9510807d05623c0ed1dd049c9676f53f56b
+ms.openlocfilehash: ffd4b254442ec225de9251bb5c26bd1a2ccb7e09
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53060322"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58695375"
 ---
 # <a name="get-member-of-team"></a>Obter membro da equipe
 
@@ -93,7 +93,7 @@ GET https://graph.microsoft.com/beta/teams/ece6f0a1-7ca4-498b-be79-edf6c8fc4d82/
 
 Veja a seguir um exemplo da resposta.
 
->**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade. 
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,

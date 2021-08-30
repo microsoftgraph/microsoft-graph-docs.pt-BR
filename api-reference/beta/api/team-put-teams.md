@@ -2,15 +2,15 @@
 title: Criar equipe a partir do grupo
 description: Crie uma nova equipe a partir de um grupo.
 author: nkramer
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 6a4009c5fc6d9a421cfd5ffdae8c7ab4cc31d393
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 4ea033d0b0fc4b2041f4bbf4910d009c540d4527
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52054767"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58695270"
 ---
 # <a name="create-team-from-group"></a>Criar equipe a partir do grupo
 
@@ -25,7 +25,8 @@ Crie uma nova [equipe](../resources/team.md) a partir de um [grupo](../resources
 
 Para criar uma equipe, o grupo deve ter pelo menos um proprietário.
 
-Se o grupo foi criado há menos de 15 minutos, é possível que a chamada Criar equipe falhe com um código de erro 404 devido a atrasos na replicação. O padrão recomendado é repetir a chamada Criar equipe três vezes, com um atraso de 10 segundos entre as chamadas.
+Se o grupo foi criado há menos de 15 minutos, é possível que a chamada Criar equipe falhe com um código de erro 404 devido a atrasos na replicação.
+O padrão recomendado é repetir a chamada Criar equipe três vezes, com um atraso de 10 segundos entre as chamadas.
 
 ## <a name="permissions"></a>Permissões
 
@@ -77,7 +78,7 @@ Este é um exemplo de solicitação.
 PUT https://graph.microsoft.com/beta/groups/{id}/team
 Content-type: application/json
 
-{  
+{
   "memberSettings": {
     "allowCreateUpdateChannels": true
   },
@@ -115,7 +116,7 @@ Content-type: application/json
 
 #### <a name="response"></a>Resposta
 
-Este é um exemplo de resposta. 
+Este é um exemplo de resposta.
 
 >**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
@@ -135,18 +136,18 @@ Content-length: 401
     "allowDeleteChannels": true,
     "allowAddRemoveApps": true,
     "allowCreateUpdateRemoveTabs": true,
-    "allowCreateUpdateRemoveConnectors": true    
+    "allowCreateUpdateRemoveConnectors": true
   },
   "guestSettings": {
     "allowCreateUpdateChannels": true,
-    "allowDeleteChannels": true 
+    "allowDeleteChannels": true
   },
   "messagingSettings": {
     "allowUserEditMessages": true,
     "allowUserDeleteMessages": true,
     "allowOwnerDeleteMessages": true,
     "allowTeamMentions": true,
-    "allowChannelMentions": true    
+    "allowChannelMentions": true
   },
   "funSettings": {
     "allowGiphy": true,

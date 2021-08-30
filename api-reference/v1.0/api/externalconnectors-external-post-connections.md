@@ -5,12 +5,12 @@ author: mecampos
 localization_priority: Normal
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: b07d2d193bb758f4368016e1673634fd441b99f2
-ms.sourcegitcommit: 5bb981b4853663354a566d4a4a5cbf288939e441
+ms.openlocfilehash: 47603c008f94cdf27227e3ae5e6419283d3e3424
+ms.sourcegitcommit: 6efd9df497d795988cd85474f379d1989b0995b7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "53580104"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58697468"
 ---
 # <a name="create-externalconnection"></a>Criar externalConnection
 Namespace: microsoft.graph.externalConnectors
@@ -24,8 +24,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|Não aplicável|
-|Delegada (conta pessoal da Microsoft)|Não aplicável|
+|Delegado (conta corporativa ou de estudante)|Não aplicável|
+|Delegado (conta pessoal da Microsoft)|Não aplicável|
 |Aplicativo| ExternalConnection.ReadWrite.OwnedBy|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -47,14 +47,14 @@ POST /external/connections
 ## <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, fornece uma representação JSON do [objeto externalConnection.](../resources/externalconnectors-externalconnection.md)
 
-A tabela a seguir mostra as propriedades que são necessárias ao criar [externalConnection](../resources/externalconnectors-externalconnection.md).
+Você pode especificar as seguintes propriedades ao criar [um externalConnection](../resources/externalconnectors-externalconnection.md).
 
-|Propriedade|Tipo|Obrigatório (Y/N) |Descrição|
-|:---|:---|:---|:---|
-|id|Cadeia de caracteres|Y|A ID da conexão|
-|nome|Cadeia de caracteres|Y|O nome da conexão|
-|description|Cadeia de caracteres|Y|A descrição da conexão|
-|configuração|[microsoft.graph.externalConnectors.configuration](../resources/externalconnectors-configuration.md)|N|As configurações de conexão|
+|Propriedade|Tipo|Descrição|
+|:---|:---|:---|
+|id|Cadeia de caracteres|A ID da conexão. Obrigatório.|
+|nome|Cadeia de caracteres|O nome da conexão. Obrigatório.|
+|description|Cadeia de caracteres|A descrição da conexão. Obrigatório.|
+|configuração|[microsoft.graph.externalConnectors.configuration](../resources/externalconnectors-configuration.md)|As configurações de conexão. Opcional.|
 
 
 

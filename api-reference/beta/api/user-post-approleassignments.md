@@ -1,16 +1,16 @@
 ---
 title: Conceder um appRoleAssignment a um usuário
 description: Conceder uma atribuição de função de aplicativo a um usuário.
-localization_priority: Priority
+ms.localizationpriority: high
 doc_type: apiPageType
 ms.prod: users
 author: psignoret
-ms.openlocfilehash: c927cc35aa900e7a6d367c04f737921455cc6bd7
-ms.sourcegitcommit: 5bb981b4853663354a566d4a4a5cbf288939e441
+ms.openlocfilehash: a88e610b1308081a9140ef531957ec50f1a06e31
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "53580916"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58696341"
 ---
 # <a name="grant-an-approleassignment-to-a-user"></a>Conceder um appRoleAssignment a um usuário
 
@@ -30,9 +30,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | User.Read.All and AppRoleAssignment.ReadWrite.All, Directory.AccessAsUser.All    |
+|Delegada (conta corporativa ou de estudante) | AppRoleAssignment.ReadWrite.All, Directory.AccessAsUser.All    |
 |Delegada (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | User.Read.All and AppRoleAssignment.ReadWrite.All |
+|Aplicativo | AppRoleAssignment.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -105,7 +105,7 @@ Neste exemplo, observe que o valor usado como a **id** do usuário na URL de sol
 
 ### <a name="response"></a>Resposta
 
-Veja a seguir um exemplo da resposta. 
+Veja a seguir um exemplo da resposta.
 
 > **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 

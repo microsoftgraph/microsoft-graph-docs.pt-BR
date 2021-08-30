@@ -2,15 +2,15 @@
 title: Listar aplicativos no chat
 description: Liste os aplicativos instalados em um chat.
 author: subray
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 5e53e1218edd2fc994fb489461f7b782bb7a10a2
-ms.sourcegitcommit: 99fdbd9a1806d64626423e1f39342dcde8a1eaf4
+ms.openlocfilehash: 9c6845dcbcdb366e17d2c41fb953f39e3a78fdd5
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/16/2021
-ms.locfileid: "52971311"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58695627"
 ---
 # <a name="list-apps-in-chat"></a>Listar aplicativos no chat
 
@@ -254,7 +254,7 @@ GET https://graph.microsoft.com/beta/chats/19%3Ad65713bc498c4a428c71ef9353e6ce20
 
 Este é um exemplo de resposta.
 
->**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade. 
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "name": "list_installed_apps_in_chat_expand_filter",

@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso identityProviderBase
 description: Representa provedores de identidade em um locatário do Azure Active Directory e um locatário do B2C do Azure AD
-localization_priority: Priority
+ms.localizationpriority: high
 doc_type: resourcePageType
 ms.prod: identity-and-sign-in
 author: namkedia
-ms.openlocfilehash: 2171e1dde60f6c97d6c4eb243d61c896329a1b2c
-ms.sourcegitcommit: f99dc2b6c8b4cb6f9f74cd780dccc47a2bccfaa6
+ms.openlocfilehash: e345131bd02db9fb171ced7f302bce45cf79585d
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2021
-ms.locfileid: "58667560"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58696390"
 ---
 # <a name="identityproviderbase-resource-type"></a>Tipo de recurso identityProviderBase
 Namespace: microsoft.graph

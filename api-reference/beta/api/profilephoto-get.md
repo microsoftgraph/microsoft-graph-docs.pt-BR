@@ -1,16 +1,16 @@
 ---
 title: Obter foto
 description: Obtenha a profilePhoto específica ou seus metadados (propriedades **profilePhoto**).
-localization_priority: Priority
+ms.localizationpriority: high
 doc_type: apiPageType
 ms.prod: ''
 author: kevinbellinger
-ms.openlocfilehash: 8d8202fdba2dc645dc42d69fb77413b58a35e60d
-ms.sourcegitcommit: de175a11806f9e9ba3c916384e897aee1cc7f75c
+ms.openlocfilehash: 690720e1c2de153a7b56aab30a1212f4b530a468
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/09/2021
-ms.locfileid: "49790659"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58695410"
 ---
 # <a name="get-photo"></a>Obter foto
 
@@ -133,7 +133,7 @@ Content-Type: image/jpg
 ```
 
 ##### <a name="response"></a>Resposta
-Contém os dados binários da foto de 48x48 solicitada. O código de resposta HTTP é 200.
+Contém os dados binários da foto 48x48 solicitada. O código de resposta HTTP é 200.
 
 ### <a name="example-3-get-the-metadata-of-the-user-photo-of-the-signed-in-user"></a>Exemplo 3: Esta solicitação obtém os metadados da foto do usuário conectado.
 
@@ -208,7 +208,7 @@ const attachments = [{
 
 Confira [Amostra de conexão do Microsoft Graph para Node.js](https://github.com/microsoftgraph/nodejs-connect-rest-sample) para ver uma implementação desse exemplo.
 
-Se quiser exibir a imagem em uma página da Web, crie um objeto de memória usando a imagem e torne esse objeto a fonte de um elemento de imagem. Veja aqui um exemplo dessa operação no JavaScript.
+Se você quiser exibir a imagem em uma página da Web, crie um objeto na memória com base na imagem e torne esse objeto a origem de um elemento de imagem. Eis um exemplo em JavaScript dessa operação.
 
 ```javascript
 const url = window.URL || window.webkitURL;

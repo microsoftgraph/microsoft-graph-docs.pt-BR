@@ -2,15 +2,15 @@
 title: 'user: findRoomLists'
 description: Obtenha as listas de salas definidas em um locatário.
 author: vrod9429
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: c091ac7071ce76dbb59cb69c10da2b6fa519f3cc
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 9a6e339bcc92a225bd376db62621038b11c1f859
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52052646"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58695361"
 ---
 # <a name="user-findroomlists"></a>user: findRoomLists
 
@@ -92,7 +92,7 @@ GET https://graph.microsoft.com/beta/me/findRoomLists
 
 
 ##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. 
+Veja a seguir um exemplo da resposta.
 
 Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {

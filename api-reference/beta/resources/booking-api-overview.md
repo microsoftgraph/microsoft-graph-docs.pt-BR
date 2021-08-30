@@ -1,25 +1,25 @@
 ---
 title: Usar a API do Microsoft Bookings no Microsoft Graph
 description: O Microsoft Bookings permite que proprietários de pequenas empresas gerenciem reservas e informações de clientes com configuração mínima.
-localization_priority: Priority
+ms.localizationpriority: high
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: conceptualPageType
-ms.openlocfilehash: c21cb95d140fa41711264ec0e6c71b7828b5a709
-ms.sourcegitcommit: d0d2d17a31cbcb01b1ae18bd6a18c39d7077069a
+ms.openlocfilehash: 622feed07a5387301be148c926088add62946f25
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53118655"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58694857"
 ---
 # <a name="use-the-microsoft-bookings-api-in-microsoft-graph"></a>Usar a API do Microsoft Bookings no Microsoft Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
- 
+
 O Microsoft Bookings permite que proprietários de pequenas empresas gerenciem reservas e informações de clientes com configuração mínima. Um proprietário de empresa pode criar um ou mais negócios e cada empresa oferece um conjunto de serviços. O proprietário pode definir membros da equipe e especificar os serviços que cada membro da equipe executará. Um cliente pode agendar um horário para um serviço específico nesse negócio em um aplicativo online ou móvel. O Bookings garante que o horário do compromisso seja mantido atualizado para a empresa, funcionários e clientes envolvidos.
 
 Programaticamente, um [bookingBusiness](bookingbusiness.md) na API do Bookings envolve os seguintes objetos:
- 
+
 - Uma ou mais objetos [bookingStaffMember](bookingstaffmember.md)
 - Uma ou mais objetos [bookingService](bookingservice.md)
 - Um conjunto de instâncias [bookingAppointment](bookingappointment.md)
@@ -29,7 +29,7 @@ Programaticamente, um [bookingBusiness](bookingbusiness.md) na API do Bookings e
 
 Siga as etapas a seguir antes de agendar os compromissos do cliente para uma empresa pela primeira vez. Certifique-se de fornecer os [tokens de acesso](/graph/auth-overview) apropriados para as operações correspondentes.
 
-1. Certifique-se que a empresa tenha um assinatura do [Microsoft 365 Business Premium](https://products.office.com/pt-BR/business/office-365-business-premium).
+1. Certifique-se que a empresa tenha um assinatura do [Microsoft 365 Business Premium](https://products.office.com/en-us/business/office-365-business-premium).
 2. Crie um novo **bookingBusiness** enviando uma operação POST para o conjunto de entidades. No mínimo, você deve especificar um nome para a nova empresa que os clientes verão:
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -81,7 +81,7 @@ GET https://graph.microsoft.com/beta/bookingBusinesses
 Authorization: Bearer {access token}
 ```
 
-## <a name="common-use-cases"></a>Casos de uso comuns 
+## <a name="common-use-cases"></a>Casos de uso comuns
 
 A tabela a seguir lista as operações comuns para uma empresa na API do Bookings.
 

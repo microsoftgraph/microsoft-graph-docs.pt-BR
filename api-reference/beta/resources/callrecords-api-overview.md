@@ -4,13 +4,13 @@ description: A API de registros de chamadas do Microsoft Graph permite recuperar
 author: williamlooney
 doc_type: conceptualPageType
 ms.prod: cloud-communications
-localization_priority: Priority
-ms.openlocfilehash: b30440157d325452131cb62ffd0c88a933b4bb78
-ms.sourcegitcommit: af4b2fc18449c33979cf6d75bd680f40602ba708
+ms.localizationpriority: high
+ms.openlocfilehash: dafb08c19ad84a23b5954687c4f18ff091cfc3ab
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "48601521"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58695459"
 ---
 # <a name="working-with-the-call-records-api-in-microsoft-graph"></a>Trabalhar com a API de registros de chamadas no Microsoft Graph
 

@@ -1,16 +1,16 @@
 ---
 title: Privileged Identity Management
 description: APIs para o Privileged Identity Management do Azure AD para gerenciar as funções do Azure Active Directory e as funções de recursos do Azure.
-localization_priority: Priority
+ms.localizationpriority: high
 doc_type: conceptualPageType
 ms.prod: governance
 author: shauliu1
-ms.openlocfilehash: 1905a3fc8f7948c4e34e7e6b6c59b1c7a699f4f4
-ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
+ms.openlocfilehash: a66ec882c51dbe7c10ce7846644853b1b9f662ad
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2021
-ms.locfileid: "58453966"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58694728"
 ---
 # <a name="privileged-identity-management"></a>Privileged Identity Management
 

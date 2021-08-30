@@ -1,16 +1,16 @@
 ---
 title: Obter b2cAuthenticationMethodsPolicy
 description: Ler as propriedades de um objeto b2cAuthenticationMethodsPolicy.
-localization_priority: Priority
+ms.localizationpriority: high
 author: namkedia
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 1b21a24b27a8efd337da59acc7efa03b6b2e36a2
-ms.sourcegitcommit: 92f545d2d9af13ac7aff9932eb265f136d089f79
+ms.openlocfilehash: d652b3064a901bb3e8f3ef8767cc02f891e69bce
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/25/2021
-ms.locfileid: "51996122"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58694920"
 ---
 # <a name="get-b2cauthenticationmethodspolicy"></a>Obter b2cAuthenticationMethodsPolicy
 

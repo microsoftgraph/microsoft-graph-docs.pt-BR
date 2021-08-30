@@ -5,12 +5,12 @@ author: snlraju-msft
 localization_priority: Normal
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 128396676462bcf2231f566b7a9830d58ddbc2c8
-ms.sourcegitcommit: 1940be9846055aa650c6c03982b74a961f1e316a
+ms.openlocfilehash: 4bd53a81d0efb6e36945cd18d395b7662adb4c74
+ms.sourcegitcommit: 6efd9df497d795988cd85474f379d1989b0995b7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/17/2021
-ms.locfileid: "53467553"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58697391"
 ---
 # <a name="create-externalgroup"></a>Criar externalGroup
 
@@ -50,19 +50,19 @@ POST /external/connections/{connectionId}/groups
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, fornece uma representação JSON do [objeto externalGroup.](../resources/externalconnectors-externalgroup.md)
+No corpo da solicitação, fornece uma representação JSON do **objeto externalGroup.**
 
-A tabela a seguir mostra as propriedades que são necessárias ao criar [o externalGroup](../resources/externalconnectors-externalgroup.md).
+Você pode especificar as seguintes propriedades ao criar **um externalGroup**.
 
 | Propriedade    | Tipo   | Descrição                                                                                                              |
 |:------------|:-------|:-------------------------------------------------------------------------------------------------------------------------|
-| id          | String | A ID exclusiva do grupo externo dentro de uma conexão. Ele deve ser alfanumérico e pode ter até 128 caracteres. |
-| displayName | String | O nome amigável do grupo externo. Opcional.                                                                      |
-| description | String | A descrição do grupo externo. Opcional.                                                                         |
+| id          | Cadeia de caracteres | A ID exclusiva do grupo externo dentro de uma conexão. Ele deve ser alfanumérico e pode ter até 128 caracteres. |
+| displayName | Cadeia de caracteres | O nome amigável do grupo externo. Opcional.                                                                      |
+| descrição | Cadeia de caracteres | A descrição do grupo externo. Opcional.                                                                         |
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código `201 Created` de resposta e um objeto [externalGroup](../resources/externalconnectors-externalgroup.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código `201 Created` de resposta e um objeto **externalGroup** no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

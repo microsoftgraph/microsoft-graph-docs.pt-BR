@@ -2,15 +2,15 @@
 title: Usar a API REST do Planner
 description: É possível usar a API do Planner no Microsoft Graph para criar e atribuir tarefas aos usuários em um grupo no Microsoft 365.
 author: TarkanSevilmis
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: planner
 doc_type: conceptualPageType
-ms.openlocfilehash: 8b2001915b5c63817c6826c0a0b175b0bb70ff82
-ms.sourcegitcommit: 1d2adc4062c8e83d23768682cf66a731bccd313c
+ms.openlocfilehash: 18c8f9a7bb418c849a5ac2255f8931ff3ec84a50
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "49882770"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58695333"
 ---
 # <a name="use-the-planner-rest-api"></a>Usar a API REST do Planner
 

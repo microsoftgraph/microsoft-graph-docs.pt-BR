@@ -2,15 +2,15 @@
 title: tipo de recurso officeGraphInsights
 description: Representa o tipo base para itemInsights. officeGraphInsights é para fins de compatibilidade com versões anteriores da API do insights. Use apenas itemInsights ao acessar a API do insights.
 author: simonhult
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: insights
 doc_type: resourcePageType
-ms.openlocfilehash: f10d12a0014b38fbe954f957987e585dafa63a2c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 308d35e19eaf1ac5454b33b030d2e9c0a7f7a416
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48092325"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58695914"
 ---
 # <a name="officegraphinsights-resource-type"></a>tipo de recurso officeGraphInsights
 

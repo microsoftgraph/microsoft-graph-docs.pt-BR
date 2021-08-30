@@ -1,16 +1,16 @@
 ---
 title: 'user: findRooms'
 description: 'Veja todas as salas de reunião no locatário do usuário ou em uma lista de salas específica. '
-localization_priority: Priority
+ms.localizationpriority: high
 author: vrod9429
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 9007795bfb04f8484be61d13a5da17602df80337
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: ea94eb6bb0928532b8b32866299ac1fd449e9e8d
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52052639"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58695354"
 ---
 # <a name="user-findrooms"></a>user: findRooms
 
@@ -18,9 +18,10 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obter os objetos [emailAddress](../resources/emailaddress.md) que representam todas as salas de reunião no locatário do usuário ou em uma lista de salas específica. 
+Obter os objetos [emailAddress](../resources/emailaddress.md) que representam todas as salas de reunião no locatário do usuário ou em uma lista de salas específica.
 
-Os locatários podem organizar salas de reunião em listas de salas. Nesta API, cada sala de reunião e lista de salas é representada por uma instância de [emailAddress](../resources/emailaddress.md). Você pode [ver todas as listas de salas](user-findroomlists.md) no locatário, obter todas as salas no locatário ou todas as salas em uma lista de salas específica. É possível ter acesso até as primeiras 100 salas do locatário.
+Os locatários podem organizar salas de reunião em listas de salas. Nesta API, cada sala de reunião e lista de salas é representada por uma instância de [emailAddress](../resources/emailaddress.md).
+Você pode [ver todas as listas de salas](user-findroomlists.md) no locatário, obter todas as salas no locatário ou todas as salas em uma lista de salas específica. É possível ter acesso até as primeiras 100 salas do locatário.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -106,7 +107,7 @@ GET https://graph.microsoft.com/beta/me/findRooms
 
 
 ##### <a name="response-1"></a>Resposta 1
-Veja a seguir um exemplo da resposta. 
+Veja a seguir um exemplo da resposta.
 
 Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
@@ -162,7 +163,7 @@ O segundo exemplo obtém os objetos [emailAddress](../resources/emailaddress.md)
   "name": "user_get_rooms_from_specific_list"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/me/findRooms(RoomList='Building2Rooms@contoso.onmicrosoft.com') 
+GET https://graph.microsoft.com/beta/me/findRooms(RoomList='Building2Rooms@contoso.onmicrosoft.com')
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/user-get-rooms-from-specific-list-csharp-snippets.md)]
@@ -184,7 +185,7 @@ GET https://graph.microsoft.com/beta/me/findRooms(RoomList='Building2Rooms@conto
 
 
 ##### <a name="response-2"></a>Resposta 2
-Veja a seguir um exemplo da resposta. 
+Veja a seguir um exemplo da resposta.
 
 Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
