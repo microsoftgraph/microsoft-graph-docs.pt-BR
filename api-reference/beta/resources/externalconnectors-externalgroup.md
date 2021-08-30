@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso externalGroup
-description: Representa um grupo externo usado para definir permissões em externalItems adicionados a uma conexão Graph Microsoft.
+description: Representa um grupo que não Azure Active Directory grupo.
 author: snlraju-msft
 localization_priority: Normal
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: 3f0c6adbd47d1823b82e19d3fb9a352e26391da9
-ms.sourcegitcommit: 1940be9846055aa650c6c03982b74a961f1e316a
+ms.openlocfilehash: 5fbfcb8b462b490b33519f04268c505871613a24
+ms.sourcegitcommit: 6efd9df497d795988cd85474f379d1989b0995b7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/17/2021
-ms.locfileid: "53467570"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58697384"
 ---
 # <a name="externalgroup-resource-type"></a>Tipo de recurso externalGroup
 
@@ -18,7 +18,13 @@ Namespace: microsoft.graph.externalConnectors
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Representa um grupo externo. Grupos externos (juntamente com Azure Active Directory e grupos) são usados para definir permissões em **externalItems adicionados** a uma conexão microsoft Graph. Use **externalGroups** para representar grupos não Azure Active Directory ou construções do tipo grupo (como unidades de negócios, Teams e filho on) que determinam a permissão sobre o conteúdo em sua fonte de dados externa.
+Namespace: microsoft.graph.externalConnectors
+
+Representa um grupo que não Azure Active Directory grupo.
+
+Grupos externos determinam permissões para o conteúdo em sua fonte de dados externa. Esses grupos externos podem ser usados em entradas na [acl](../resources/externalconnectors-externalitem.md) de [um externalItem](../resources/externalconnectors-externalitem.md).
+
+Exemplos de grupos externos são unidades de negócios e equipes de trabalho.
 
 ## <a name="methods"></a>Métodos
 
@@ -26,15 +32,15 @@ Representa um grupo externo. Grupos externos (juntamente com Azure Active Direct
 |:---|:---|:---|
 |[Criar externalGroup](../api/externalconnectors-externalconnection-post-groups.md)|[microsoft.graph.externalConnectors.externalGroup](../resources/externalconnectors-externalgroup.md)|Crie um novo **objeto externalGroup.**|
 |[Excluir externalGroup](../api/externalconnectors-externalgroup-delete.md)|Nenhum|**Exclua um objeto externalGroup.**|
-|[Criar membros](../api/externalconnectors-externalgroup-post-members.md)|[microsoft.graph.externalConnectors.externalGroupMember](../resources/externalconnectors-externalgroupmember.md)|Crie um novo **objeto externalGroupMember.**|
+|[Criar membro](../api/externalconnectors-externalgroup-post-members.md)|[microsoft.graph.externalConnectors.externalGroupMember](../resources/externalconnectors-externalgroupmember.md)|Crie um novo **objeto externalGroupMember.**|
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade    | Tipo   | Descrição                                                                                                              |
 |:------------|:-------|:-------------------------------------------------------------------------------------------------------------------------|
-| id          | String | A ID exclusiva do grupo externo dentro de uma conexão. Ele deve ser alfanumérico e pode ter até 128 caracteres. |
-| displayName | String | O nome amigável do grupo externo. Opcional.                                                                       |
-| description | String | A descrição do grupo externo. Opcional.                                                                         
+| id          | Cadeia de caracteres | A ID exclusiva do grupo externo dentro de uma conexão. Ele deve ser alfanumérico e pode ter até 128 caracteres. |
+| displayName | Cadeia de caracteres | O nome amigável do grupo externo. Opcional.                                                                       |
+| descrição | Cadeia de caracteres | A descrição do grupo externo. Opcional.                                                                         
 
 ## <a name="relationships"></a>Relações
 

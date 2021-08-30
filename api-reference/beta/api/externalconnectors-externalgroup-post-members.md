@@ -5,12 +5,12 @@ author: snlraju-msft
 localization_priority: Normal
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 3120c6aa7744aeedebf8fa6b4eb1a696b21e6e37
-ms.sourcegitcommit: 1940be9846055aa650c6c03982b74a961f1e316a
+ms.openlocfilehash: 2267ec63073d964b9cd162ff5331a8e7df99cec9
+ms.sourcegitcommit: 6efd9df497d795988cd85474f379d1989b0995b7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/17/2021
-ms.locfileid: "53467546"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58697475"
 ---
 # <a name="create-externalgroupmember"></a>Criar externalGroupMember
 
@@ -50,19 +50,19 @@ POST /external/connections/{connectionsId}/groups/{externalGroupId}/members
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, fornece uma representação JSON do [objeto externalGroupMember.](../resources/externalconnectors-externalgroupmember.md)
+No corpo da solicitação, fornece uma representação JSON do **objeto externalGroupMember.**
 
-A tabela a seguir mostra as propriedades que são necessárias ao criar [externalGroupMember](../resources/externalconnectors-externalgroupmember.md).
+Você pode especificar as seguintes propriedades ao criar **um externalGroupMember**.
 
 | Propriedade       | Tipo                    | Descrição                                              |
 |:---------------|:------------------------|:---------------------------------------------------------|
-| id             | String                  | O exclusivo `id` do membro. Seria o objectId no caso de Azure Active Directory ou grupos e externalGroupId no caso de grupos externos.                                    |
-| tipo           | microsoft.graph.externalConnectors.externalGroupMemberType | O tipo de membro adicionado ao grupo externo. Os valores possíveis são: `user` `group` ou quando identitySource é `azureActiveDirectory` e apenas quando `group` identitySource é `external` . |
-| identitySource | microsoft.graph.externalConnectors.identitySourceType      | A fonte de identidade à que o membro pertence. Os valores possíveis são: `azureActiveDirectory` e `external`.                                                                                         |
+| id             | Cadeia de caracteres                  | O exclusivo `id` do membro. Seria o objectId no caso de Azure Active Directory ou grupos e externalGroupId no caso de grupos externos. Obrigatório.                                   |
+| type           | microsoft.graph.externalConnectors.externalGroupMemberType | O tipo de membro adicionado ao grupo externo. Os valores possíveis são: `user` `group` ou quando identitySource é `azureActiveDirectory` e apenas quando `group` identitySource é `external` . Obrigatório. |
+| identitySource | microsoft.graph.externalConnectors.identitySourceType      | A fonte de identidade à que o membro pertence. Os valores possíveis são: `azureActiveDirectory` e `external`. Obrigatório.                                                                                       |
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta e um `201 Created` [objeto externalGroupMember](../resources/externalconnectors-externalgroupmember.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e um `201 Created` **objeto externalGroupMember** no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

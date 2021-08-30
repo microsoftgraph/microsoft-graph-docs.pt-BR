@@ -2,15 +2,15 @@
 title: Criar equipe
 description: Criar uma nova equipe.
 author: anandjo
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: a854d8209ce119aa9f97103dcd3f7032ff173680
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 2252132ba14a5990639435fc659801385e835138
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52786352"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58695382"
 ---
 # <a name="create-team"></a>Criar equipe
 
@@ -619,7 +619,7 @@ Content-Location: /teams('dbd8de4f-5d47-48da-87f1-594bed003375')
 
 #### <a name="error-response"></a>Resposta de erro
 
-Se a solicitação não for bem-sucedida, este método retorna um código de resposta `400 Bad Request`. 
+Se a solicitação não for bem-sucedida, este método retorna um código de resposta `400 Bad Request`.
 
 ```http
 400 Bad Request

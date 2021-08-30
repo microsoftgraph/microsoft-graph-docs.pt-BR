@@ -1,16 +1,16 @@
 ---
 title: Usar o Microsoft Graph API para trabalhar com o Microsoft Teams
 description: O Microsoft Teams é um espaço de trabalho baseado em chat no Microsoft 365 que fornece acesso interno a calendários, arquivos, anotações do OneNote, planos do Planner e muito mais.
-localization_priority: Priority
+ms.localizationpriority: high
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: conceptualPageType
-ms.openlocfilehash: fb3c4e58afcf8f2fd8909b956e78b1118f4bb529
-ms.sourcegitcommit: 6f04ad0e0cde696661511dcdf343942b43f73fc6
+ms.openlocfilehash: 9185b153ade883a729877abe328faf651c9c001f
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58396729"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58695907"
 ---
 # <a name="use-the-microsoft-graph-api-to-work-with-microsoft-teams"></a>Usar o Microsoft Graph API para trabalhar com o Microsoft Teams
 
@@ -43,7 +43,7 @@ O Microsoft Teams é um espaço de trabalho baseado em chat no Microsoft 365 que
 
 As limitações de desempenho e de capacidade testadas do Microsoft Teams estão documentadas nas [especificações e limites do Microsoft Teams](/microsoftteams/limits-specifications-teams).
 Esses limites aplicam-se diretamente ao usar o Microsoft Teams ou usar as APIs do Microsoft Graph.
-Como todas as equipes têm um grupo correspondente, e cada grupo é um objeto de diretório, limites no [número de grupos](/microsoft-365/admin/create-groups/office-365-groups#group-limits) e o [número de objetos de diretório ("recursos")](/azure/active-directory/users-groups-roles/directory-service-limits-restrictions) também podem ser levados em consideração. 
+Como todas as equipes têm um grupo correspondente, e cada grupo é um objeto de diretório, limites no [número de grupos](/microsoft-365/admin/create-groups/office-365-groups#group-limits) e o [número de objetos de diretório ("recursos")](/azure/active-directory/users-groups-roles/directory-service-limits-restrictions) também podem ser levados em consideração.
 
 Os arquivos dentro de canais são armazenados no SharePoint. [os limites do SharePoint Online](/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits) se aplicam.
 
@@ -79,11 +79,15 @@ Veja a seguir as diferenças no nível da API entre equipes e grupos:
 
 ## <a name="polling-requirements"></a>Requisitos de sondagem
 
-Se seu aplicativo sonda para ver se um recurso foi alterado, você só poderá fazer isso uma vez por dia. ([teamsAsyncOperation](teamsasyncoperation.md) é uma exceção no sentido de que é foi desenvolvida para ser sondada frequentemente.) Se você precisar saber sobre mudanças com mais frequência que esta, você deve [criar uma assinatura](../api/subscription-post-subscriptions.md) para esse recurso e receber notificações de alteração (webhooks). Caso não encontre suporte para o tipo de assinatura necessária, recomendamos que você faça comentários por meio do [Fórum de ideias da Plataforma para Desenvolvedores do Microsoft 365 ](https://techcommunity.microsoft.com/t5/microsoft-365-developer-platform/idb-p/Microsoft365DeveloperPlatform/label-name/Microsoft%20Graph). 
+Se seu aplicativo sonda para ver se um recurso foi alterado, você só poderá fazer isso uma vez por dia.
+([teamsAsyncOperation](teamsasyncoperation.md) é uma exceção no sentido de que é foi desenvolvida para ser sondada frequentemente.) Se você precisar saber sobre mudanças com mais frequência que esta, você deve [criar uma assinatura](../api/subscription-post-subscriptions.md) para esse recurso e receber notificações de alteração (webhooks).
+Caso não encontre suporte para o tipo de assinatura necessária, recomendamos que você faça comentários por meio do [Fórum de ideias da Plataforma para Desenvolvedores do Microsoft 365 ](https://techcommunity.microsoft.com/t5/microsoft-365-developer-platform/idb-p/Microsoft365DeveloperPlatform/label-name/Microsoft%20Graph).
 
 Ao pesquisar novas mensagens, você deve especificar um intervalo de datas onde isso for possível.  Para obter detalhes, consulte [obter mensagens de canal delta](../api/chatmessage-delta.md).
 
-As sondagem está executando uma operação OBTER em um recurso repetidamente para ver se o recurso foi alterado. Você tem permissão para obter o mesmo recurso várias vezes por dia, desde que não seja uma sondagem. Por exemplo, está tudo bem se você usar OBTER /me/joinedTeams toda vez que o usuário visita/atualiza sua página da web, mas não é certo usar OBTER /me/joinedTeams em um loop a cada 30 segundos para atualizar essa página da web.
+As sondagem está executando uma operação OBTER em um recurso repetidamente para ver se o recurso foi alterado.
+Você tem permissão para obter o mesmo recurso várias vezes por dia, desde que não seja uma sondagem.
+Por exemplo, está tudo bem se você usar OBTER /me/joinedTeams toda vez que o usuário visita/atualiza sua página da web, mas não é certo usar OBTER /me/joinedTeams em um loop a cada 30 segundos para atualizar essa página da web.
 
 Os aplicativos que não seguem esses requisitos de sondagem serão considerados violações de [termos de uso das APIs da Microsoft](/legal/microsoft-apis/terms-of-use). A violação destes Termos da API pode resultar [suspensão](/graph/throttling)ou no cancelamento do uso das APIs da Microsoft.
 

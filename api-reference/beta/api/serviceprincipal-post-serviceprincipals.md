@@ -2,15 +2,15 @@
 title: Criar serviceprincipal
 description: Criar um novo objeto do servicePrincipal.
 author: sureshja
-localization_priority: Priority
+ms.localizationpriority: high
 doc_type: apiPageType
 ms.prod: applications
-ms.openlocfilehash: 5d3373f0aa90fd794d43cf41601c1190187c98a8
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 19a13b73790551ba7c998395ba1ae9937bc2c773
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52051876"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58695389"
 ---
 # <a name="create-serviceprincipal"></a>Criar servicePrincipal
 
@@ -90,7 +90,7 @@ Content-type: application/json
 
 
 ### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. 
+Veja a seguir um exemplo da resposta.
 
 > **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {

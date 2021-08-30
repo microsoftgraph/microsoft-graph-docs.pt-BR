@@ -3,15 +3,15 @@ author: JeremyKelley
 description: O recurso site fornece metadados e relações para um site do SharePoint.
 ms.date: 09/10/2017
 title: Site
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: sites-and-lists
 doc_type: resourcePageType
-ms.openlocfilehash: a8cab7859c68224acc734a88f941a952ca82798b
-ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
+ms.openlocfilehash: 7959908fb0bfe74cb4cbf1ba242988e3ecbf5848
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51472104"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58696194"
 ---
 # <a name="site-resource-type"></a>tipo de recurso do site
 
@@ -91,7 +91,7 @@ Um **site** é identificado por um ID exclusivo que é composto pelos seguintes 
 * Hostname do conjunto de sites (contoso.sharepoint.com)
 * ID exclusiva do conjunto de sites (GUID)
 * ID exclusiva do site (GUID)
-  
+
 O identificador `root` sempre faz referência ao site raiz de um determinado destino, como a seguir:
 
 * `/sites/root`: O site raiz do locatário.
@@ -109,7 +109,7 @@ O identificador `root` sempre faz referência ao site raiz de um determinado des
 | **items**         | Collection([baseItem][])         | Usado para lidar com qualquer item contido neste site. Não é possível enumerar este conjunto.
 | **lists**         | Collection([list][])             | O conjunto de listas neste site.
 | **pages**         | Collection([sitePage][])         | O conjunto de páginas na lista SitePages no site.
-| **permissões**   | Coleção ([permissão][])         | As permissões associadas ao site. Anulável.
+| **permissões**   | Coleção ([permissão][])         | As permissões associadas ao site. Nulas.
 | **sites**         | Collection([site][])             | O conjunto dos subsites neste site.
 | **LojaDeTermos**     | [microsoft.graph.termStore.store]  | A LojaDeTermos sob este site.
 | **externalColumns**     | Collection([columnDefinition][])  | A coleção de definições de coluna disponíveis no site que são referenciadas nos sites na hierarquia pai do site atual.

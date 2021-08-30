@@ -2,15 +2,15 @@
 title: Tipo de recurso de chamada
 description: O recurso **call** é criado quando há uma chamada recebida para o aplicativo ou quando o aplicativo cria uma nova chamada realizada por meio de um `POST` em `app/calls`.
 author: ananmishr
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 0ba11a95c5e62ec0d4edbabcdf82631ab967e82a
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: c98483bd92db368b997692b1856ce6a475c15d37
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50955022"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58695123"
 ---
 # <a name="call-resource-type"></a>Tipo de recurso de chamada
 
@@ -81,8 +81,8 @@ https://teams.microsoft.com/l/meetup-join/19:meeting_NTg0NmQ3NTctZDVkZC00YzRhLTh
 | chatInfo            | [chatInfo](chatinfo.md)                                                                                | As informações de chat. Informações necessárias para cenários de reunião.                                                                                                                                |
 | direction           | callDirection                                                                                                 | A direção da chamada. Os valores possíveis são `incoming` ou `outgoing`. Somente leitura.                                                                                            |
 | id                  | String                                                                                                 | A ID de chamada. Somente leitura.                                                                                                                                                                        |
-| incomingContext     | [incomingContext](incomingcontext.md)                                                                  | O contexto associado a uma chamada recebida. Somente leitura. Servidor gerado.                                                                                                                                |
-| mediaConfig         | [appHostedMediaConfig](apphostedmediaconfig.md) ou [serviceHostedMediaConfig](servicehostedmediaconfig.md) | A configuração de mídia. As informações necessárias para a criação de chamadas ponto a ponto ou para entrar em reuniões.                                                                        |
+| incomingContext     | [incomingContext](incomingcontext.md)                                                                  | O contexto associado a uma chamada de entrada. Somente leitura. Gerado pelo servidor.                                                                                                                                |
+| mediaConfig         | [appHostedMediaConfig](apphostedmediaconfig.md) ou [serviceHostedMediaConfig](servicehostedmediaconfig.md) | A configuração da mídia. Informações necessárias para criar chamadas ponto a ponto ou ingressar em reuniões.                                                                        |
 | mediaState          | [callMediaState](callmediastate.md)                                                                    | Somente leitura. O estado da mídia de chamadas. |
 | meetingCapability   | [meetingCapability](meetingcapability.md)                                                              | Contém os recursos de uma reunião. Somente leitura.                                                                                                       |
 | meetingInfo         | [organizerMeetingInfo](organizermeetinginfo.md) ou [tokenMeetingInfo](tokenmeetinginfo.md)             | As informações da reunião. Informações necessárias para cenários de reunião.                                                                                                              |

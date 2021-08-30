@@ -1,16 +1,16 @@
 ---
 title: Listar eventos
 description: 'Obtenha uma lista de objetos event no calendário padrão do usuário ou '
-localization_priority: Priority
+ms.localizationpriority: high
 author: harini84
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 726fa26ce41571050c94c74165a2898ca767b8d3
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: e3d7e995cc825529c94349a9878d431f2aba1d6e
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50433555"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58696355"
 ---
 # <a name="list-events"></a>Listar eventos
 
@@ -30,7 +30,7 @@ Há dois cenários em que um aplicativo pode encontrar eventos do calendário de
 
 ### <a name="support-various-time-zones"></a>Suporte a vários fusos horários
 
-Para todas as operações GET que retornam eventos, você pode usar o cabeçalho `Prefer: outlook.timezone` para especificar o fuso horário para as horas de início e de término do evento na resposta. 
+Para todas as operações GET que retornam eventos, você pode usar o cabeçalho `Prefer: outlook.timezone` para especificar o fuso horário para as horas de início e de término do evento na resposta.
 
 Por exemplo, o seguinte cabeçalho `Prefer: outlook.timezone` define as horas de início e de término na resposta como Hora Padrão do Leste.
 ```http
@@ -71,7 +71,7 @@ Este método dá suporte a [Parâmetros de consulta OData](/graph/query-paramete
 | Nome       | Tipo | Descrição|
 |:-----------|:------|:----------|
 | Autorização  | string  | {token} de portador. Obrigatório. |
-| Prefira: outlook.timezone | string | Use isto para especificar o fuso horário para horas de início e término na resposta. Se não especificado, esses valores de tempo serão retornados em UTC. Opcional. |
+| Prefira: outlook.timezone | string | Use isso para especificar o fuso horário para os horários de início e término na resposta. Se não for especificado, esses valores de tempo serão retornados em UTC. Opcional. |
 | Prefer: outlook.body-content-type | cadeia de caracteres | O formato da propriedade **corpo** a ser retornada. Os valores podem ser "text" ou "html". Um cabeçalho `Preference-Applied` é retornado como confirmação se este cabeçalho `Prefer` for especificado. Se o cabeçalho não for especificado, a propriedade **corpo** será retornada no formato HTML. Opcional. |
 
 ## <a name="request-body"></a>Corpo da solicitação
@@ -84,10 +84,10 @@ Se bem-sucedido, este método retorna um código de resposta `200 OK` e uma cole
 ##### <a name="request-1"></a>Solicitação 1
 O primeiro exemplo obtém todos os eventos do usuário. Especifica o seguinte:
 
-- um cabeçalho `Prefer: outlook.timezone` para obter valores de data/hora retornados na Hora Oficial do Pacífico. 
+- um cabeçalho `Prefer: outlook.timezone` para obter valores de data/hora retornados na Hora Oficial do Pacífico.
 - Um parâmetro de consulta `$select` para retornar propriedades específicas. Sem um parâmetro `$select`, todas as propriedades do evento serão retornadas.
 
-A solicitação não especifica nenhum cabeçalho `Prefer: outlook.body-content-type` para indicar um formato específico para o corpo do evento retornado. 
+A solicitação não especifica nenhum cabeçalho `Prefer: outlook.body-content-type` para indicar um formato específico para o corpo do evento retornado.
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -212,7 +212,7 @@ A solicitação também usa um parâmetro de consulta `$select` para retornar pr
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/events?$select=subject,body,bodyPreview
-Prefer: outlook.body-content-type="text" 
+Prefer: outlook.body-content-type="text"
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-events-in-text-csharp-snippets.md)]
@@ -233,7 +233,7 @@ Prefer: outlook.body-content-type="text"
 ---
 
 ##### <a name="response-2"></a>Resposta 2
-Veja a seguir um exemplo da resposta. A propriedade **body** é retornada no formato de texto. 
+Veja a seguir um exemplo da resposta. A propriedade **body** é retornada no formato de texto.
 
 <!-- {
   "blockType": "response",

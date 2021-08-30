@@ -2,15 +2,15 @@
 title: Tipo de recurso de usuário
 description: 'Um canal é uma coleção de chatMessages dentro de uma equipe. '
 author: akjo
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 84c8018283e8933f9a9ecb125e343d699159f6ab
-ms.sourcegitcommit: 596b3d5636f3f3e042d180ea8f039f00ebd6b38a
+ms.openlocfilehash: 1a4640ac18882e7baa3ce94ba83911604843eb85
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/30/2021
-ms.locfileid: "53665729"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58696311"
 ---
 # <a name="channel-resource-type"></a>Tipo de recurso de usuário
 

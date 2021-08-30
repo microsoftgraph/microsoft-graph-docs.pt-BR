@@ -1,16 +1,16 @@
 ---
 title: 'servicePrincipal: checkMemberGroups'
 description: Verifique se há associação na lista de grupos especificada. Recupere da lista os grupos que o diretor de serviço tiver uma filiação direta ou transitória.
-localization_priority: Priority
+ms.localizationpriority: high
 doc_type: apiPageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: 6f530bf1f5bdb4a7bbb8353aa09471ed708b050b
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 6549c9d357f1f1ebe0e49a9c873dfa8fb5492900
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52051974"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58696957"
 ---
 # <a name="serviceprincipal-checkmembergroups"></a>servicePrincipal: checkMemberGroups
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Verifique se há associação na lista de grupos especificada. Retorna da lista os grupos dos quais o [servicePrincipal](../resources/serviceprincipal.md) tem uma associação direta ou transitiva.
+Verifique se há associação na lista de grupos especificada. Retorna da lista aqueles grupos dos quais o [servicePrincipal](../resources/serviceprincipal.md) tenha uma filiação direta ou transitiva.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -93,8 +93,8 @@ Content-length: 44
 ---
 
 ### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. 
->Observação: o objeto de resposta exibido aqui pode ser encurtado para legibilidade.
+Veja a seguir um exemplo da resposta.
+>Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,

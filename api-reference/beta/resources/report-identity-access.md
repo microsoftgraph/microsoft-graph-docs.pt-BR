@@ -1,16 +1,16 @@
 ---
 title: Visão geral da API de relatórios de identidade e acesso
 description: Acesse a identidade e os relatórios de acesso para obter informações sobre como as pessoas da sua empresa estão usando os aplicativos no locatário do Azure Active Directory.
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: identity-and-access-reports
 author: besiler
 doc_type: conceptualPageType
-ms.openlocfilehash: 567bfdfd848c2a7f1df19b8aad76a68774a6bf0e
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: bcaef9dcad8d86f162f1a7e7a40f006c1d6d8ac7
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50129363"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58696250"
 ---
 # <a name="identity-and-access-reports-api-overview"></a>Visão geral da API de relatórios de identidade e acesso
 
@@ -36,7 +36,7 @@ O relatório de atividades do aplicativo AD FS fornece informações sobre como 
 
 ### <a name="application-sign-in"></a>Entrar no aplicativo
 
-Avalie o uso de logins de aplicativos no seu locatário utilizando um relatório de resumo ou um relatório que forneça detalhes de entradas, como o número de entradas e se ocorreu algum erro durante a entrada. Para mais informações, consulte o recurso [applicationSignInSummary](/graph/api/resources/applicationsigninsummary?view=graph-rest-beta).
+Avalie o uso de entradas de aplicativos no seu locatário utilizando um relatório de resumo ou um relatório que forneça detalhes de entradas, como o número de entradas e se ocorreu algum erro durante a entrada. Para mais informações, consulte o recurso [applicationSignInSummary](/graph/api/resources/applicationsigninsummary?view=graph-rest-beta).
 
 ### <a name="registration-and-usage"></a>Registro e utilização
 
@@ -44,7 +44,7 @@ Entenda melhor como os usuários da sua organização utilizam os recursos do Mi
 
 ## <a name="next-steps"></a>Próximas etapas
 
-APIs e recursos de relatório podem criar novas maneiras para você relacionar-se com os usuários e gerenciar as experiências deles com o Microsoft Graph. Para saber mais:
+APIs e recursos de relatório podem criar novas maneiras de se relacionar com os usuários e gerenciar as experiências deles com o Microsoft Graph. Para saber mais:
 
 - Examine os métodos e as propriedades dos recursos mais úteis para o seu cenário.
 - Experimente a API no [Explorador do Graph](https://developer.microsoft.com/graph/graph-explorer).

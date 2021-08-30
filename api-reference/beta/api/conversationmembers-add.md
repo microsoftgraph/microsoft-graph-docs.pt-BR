@@ -3,14 +3,14 @@ title: 'conversationMember: adicionar'
 description: Adicionar membros em massa à equipe.
 author: nkramer
 doc_type: apiPageType
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: microsoft-teams
-ms.openlocfilehash: 2af435ac7dd430a0d006df609991f0c0a83b02ca
-ms.sourcegitcommit: 75428fc7535662f34e965c6b69fef3a53fdaf1cb
+ms.openlocfilehash: 803c8b4fe792531be087b1ae02ee00cfa7ed526f
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49689635"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58696985"
 ---
 # <a name="conversationmember-add"></a>conversationMember: adicionar
 
@@ -24,7 +24,7 @@ Adicione vários membros em uma única solicitação a uma [equipe](../resources
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão      | Permissões (da com menos para a com mais privilégios) | 
+|Tipo de permissão      | Permissões (da com menos para a com mais privilégios) |
 |:--------------------|:--------------------------|
 | Delegado (conta corporativa ou de estudante) | TeamMember.ReadWrite.All  |
 | Delegado (conta pessoal da Microsoft) | Sem suporte |
@@ -118,7 +118,7 @@ Content-Type: application/json
 
 Esta é a resposta.
 
-> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade. 
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -201,7 +201,7 @@ Content-Type: application/json
 
 Esta é a resposta.
 
-> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade. 
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,

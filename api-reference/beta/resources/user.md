@@ -2,15 +2,15 @@
 title: Tipo de recurso de usuário
 description: Representa uma conta de usuário do Azure AD. Herda de directoryObject.
 author: jpettere
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: 6c3569ddd09f63ede52b70e88c1f2c680c8a0851
-ms.sourcegitcommit: 9b8abc940a68dac6ee5da105ca29800cb59775f6
+ms.openlocfilehash: 929f647a68e453529daaabf2b3f0b0dfdd3a76c7
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "58513941"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58696964"
 ---
 # <a name="user-resource-type"></a>Tipo de recurso de usuário
 
@@ -145,7 +145,7 @@ Esse recurso permite:
 |[Adicionar o aplicativo para o usuário](../api/userteamwork-post-installedapps.md) | Nenhum | Adiciona (instala) um aplicativo no escopo pessoal de um usuário.|
 |[Remover o aplicativo para o usuário](../api/userteamwork-delete-installedapps.md) | Nenhum | Remove (desinstala) um aplicativo no escopo pessoal de um usuário.|
 |[Atualizar o aplicativo instalado para o usuário](../api/userteamwork-teamsappinstallation-upgrade.md) | Nenhum | Atualizações para a versão mais recente do aplicativo instalada no escopo pessoal de um usuário.|
-|[Obter chat entre o usuário e o aplicativo](../api/userscopeteamsappinstallation-get-chat.md)| [Chat](chat.md)| Lista um chat entre o usuário e o aplicativo. | 
+|[Obter chat entre o usuário e o aplicativo](../api/userscopeteamsappinstallation-get-chat.md)| [Chat](chat.md)| Lista um chat entre o usuário e o aplicativo. |
 | **Tarefas pendentes** |||
 |[Criar tarefa](../api/todotasklist-post-tasks.md)|[todoTask](todotask.md)| Crie um [todoTask](todotask.md) na lista de tarefas especificada.|
 |[Criar uma lista de tarefas](../api/todo-post-lists.md) | [todoTaskList](todotasklist.md) | Criar uma lista de tarefas To Dona caixa de correio do usuário. |
@@ -248,8 +248,8 @@ Esta seção explica como as três propriedades de grupo idade (**legalAgeGroupC
 - **ageGroup** e **consentProvidedForMinor** são propriedades opcionais usadas pelos administradores do Azure Active Directory para ajudar a garantir que o uso de uma conta seja tratado corretamente com base nas regras regulatórias relacionadas à idade que regem o país ou região do usuário.
 
 Por exemplo: Cameron é o administrador de um diretório em uma escola de ensino fundamental em Holyport, no Reino Unido. No início do ano letivo ele usa a documentação de admissão para obter o consentimento dos pais dos menores baseado nos regulamentos relacionadas com a idade no Reino Unido. O consentimento obtido do pai permite que a conta do menor seja usado pela escola de Holyport e os aplicativos da Microsoft. Cameron cria todas as contas e define o ageGroup para "menor" e consentProvidedForMinor para "concedido". Os aplicativos usados por seus alunos poderão, então suprimir recursos que não são adequados para menores.
-<!-- Note that the following 3 sub-sections are only documented like enums for a consistent user experience. 
-For some reason they are not defined as enums in the CSDL. 
+<!-- Note that the following 3 sub-sections are only documented like enums for a consistent user experience.
+For some reason they are not defined as enums in the CSDL.
 Hence the type of the corresponding 3 properties remain as string type in the Properties table.
 -->
 

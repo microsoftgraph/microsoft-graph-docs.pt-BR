@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso do identityProvider
 description: Representa os provedores de identidade em um locatário do Azure Active Directory e em um locatário do Azure AD B2C.
-localization_priority: Priority
+ms.localizationpriority: high
 doc_type: resourcePageType
 ms.prod: identity-and-sign-in
 author: namkedia
-ms.openlocfilehash: 95f452483e4ff1503208c9b4bbd67ceb6129df73
-ms.sourcegitcommit: c7776e5659c391e7c9ce1cd46e242a5ddc38dba2
+ms.openlocfilehash: a04c5fcf709da10a1b7b1c37d4d81097e656bc4a
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "53580776"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58695305"
 ---
 # <a name="identityprovider-resource-type-deprecated"></a>Tipo de recurso do identityProvider (preterido)
 Namespace: microsoft.graph
@@ -46,7 +46,7 @@ Se for um provedor de identidade personalizado do OpenID Connect `OpenIDConnect`
 
 |Propriedade|Tipo|Descrição|
 |:---------------|:--------|:----------|
-|clientId|Cadeia de caracteres|A ID do cliente para o aplicativo obtido ao registrar o aplicativo no provedor de identidade. Esse é um campo obrigatório.  Obrigatório. Não anulável.|
+|clientId|Cadeia de caracteres|A ID do cliente para o aplicativo obtida ao registrar o aplicativo no provedor de identidade. Este é um campo necessário. Necessário. Não anulável.|
 |clientSecret|Cadeia de caracteres|O segredo do cliente para o aplicativo obtido ao registrar o aplicativo no provedor de identidade. Isso é somente para gravar. Uma operação de leitura retornará `****`. Esse é um campo obrigatório. Obrigatório. Não anulável.|
 |id|Cadeia de caracteres|O ID do provedor de identidade.|
 |nome|Cadeia de caracteres|O nome de exibição do provedor de identidade. Não anulável.|

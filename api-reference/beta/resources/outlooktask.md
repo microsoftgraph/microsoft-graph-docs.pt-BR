@@ -2,15 +2,15 @@
 title: tipo de recurso outlookTask
 description: 'Um item do Outlook que pode acompanhar um item de trabalho. '
 author: mashriv
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 1cf1958dc4d07c9bf2b322e6a4b576ce4a8191f6
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: f4cf54ad1420cd18ac8d7665ba8bdf02f4bc0dc2
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50956852"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58695263"
 ---
 # <a name="outlooktask-resource-type-deprecated"></a>tipo de recurso outlookTask (substituído)
 
@@ -60,8 +60,8 @@ Prefer: outlook.timezone="Eastern Standard Time"
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|assignedTo|String|O nome da pessoa a qual foi atribuída a tarefa no Outlook. Somente leitura.|
-|corpo|[itemBody](itembody.md)|Corpo da tarefa que normalmente contém informações sobre a tarefa. Observe para qual tipo de HTML há suporte.|
+|assignedTo|Cadeia de caracteres|O nome da pessoa a quem foi atribuída a tarefa no Outlook. Somente leitura.|
+|body|[itemBody](itembody.md)|Corpo da tarefa que normalmente contém informações sobre a tarefa. Observe para qual tipo de HTML há suporte.|
 |Categorias|Coleção de cadeias de caracteres|As categorias associadas à postagem. Cada categoria corresponde à propriedade **displayName** de uma [outlookCategory](outlookcategory.md) definida pelo usuário.|
 |changeKey|Cadeia de caracteres|A versão da tarefa.|
 |completedDateTime|[dateTimeTimeZone](datetimetimezone.md)|A data no fuso horário especificado que a tarefa foi concluída.|
