@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 2d800df1e8ac3f758d0435ba6cbea9fb1a23193b68a048405739af32e2476dc3
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: f2776f35c38786dcc78607b591707a1b0b907c8c
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54245153"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58801182"
 ---
 # <a name="mobileapprelationshiptype-enum-type"></a>Tipo de número mobileAppRelationshipType
 
@@ -26,8 +26,7 @@ Indica se o destino de uma relação é o pai ou o filho na relação.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |filho|0|Indica que o destino de uma relação é o filho na relação.|
-|primário|1 |Indica que o destino de uma relação é o pai na relação.|
-
+|primário|1|Indica que o destino de uma relação é o pai na relação.|
 
 
 

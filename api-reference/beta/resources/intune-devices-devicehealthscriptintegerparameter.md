@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: abac591b623af6283a830b427ae98e7c178376ef41e620b29d06ba24dbe16892
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: fda0fe9a937867ea2f61bdd0d0a2bec491ba7515
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54253646"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58751934"
 ---
 # <a name="devicehealthscriptintegerparameter-resource-type"></a>Tipo de recurso deviceHealthScriptIntegerParameter
 
@@ -29,9 +29,9 @@ Herda de [deviceHealthScriptParameter](../resources/intune-devices-devicehealths
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |nome|Cadeia de caracteres|O nome do param Herdado de [deviceHealthScriptParameter](../resources/intune-devices-devicehealthscriptparameter.md)|
-|description|Cadeia de caracteres|A descrição do param Herdado de [deviceHealthScriptParameter](../resources/intune-devices-devicehealthscriptparameter.md)|
+|descrição|Cadeia de caracteres|A descrição do param Herdado de [deviceHealthScriptParameter](../resources/intune-devices-devicehealthscriptparameter.md)|
 |isRequired|Booliano|Se o param é necessário Herdado de [deviceHealthScriptParameter](../resources/intune-devices-devicehealthscriptparameter.md)|
-|applyDefaultValueWhenNotAssigned|Boolean|Se aplicar DefaultValue quando não atribuído herdado de [deviceHealthScriptParameter](../resources/intune-devices-devicehealthscriptparameter.md)|
+|applyDefaultValueWhenNotAssigned|Boleano|Se aplicar DefaultValue quando não atribuído herdado de [deviceHealthScriptParameter](../resources/intune-devices-devicehealthscriptparameter.md)|
 |defaultValue|Int32|O valor padrão de inteiro param. Valores válidos -2147483648 para 2147483647|
 
 ## <a name="relationships"></a>Relações
@@ -54,7 +54,6 @@ Veja a seguir uma representação JSON do recurso.
   "defaultValue": 1024
 }
 ```
-
 
 
 

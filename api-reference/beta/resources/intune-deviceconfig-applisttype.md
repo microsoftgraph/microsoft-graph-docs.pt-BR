@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 7a5609bc6847c35bcc196e4df6a1ec94a3150e2907c530ac52e2acb44b362d79
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 01dfc746757f3709137f4d8909b2a98500f4888f
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54213211"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58800734"
 ---
 # <a name="applisttype-enum-type"></a>Tipo de número appListType
 
@@ -26,9 +26,8 @@ Valores possíveis da lista de aplicativos de conformidade.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |Nenhuma|0|Valor padrão, sem intenção.|
-|appsInListCompliant|1 |A lista representa os aplicativos que serão considerados compatíveis (somente os aplicativos na lista são compatíveis).|
+|appsInListCompliant|1|A lista representa os aplicativos que serão considerados compatíveis (somente os aplicativos na lista são compatíveis).|
 |appsNotInListCompliant|2|A lista representa os aplicativos que serão considerados não compatíveis (todos os aplicativos são compatíveis, exceto aplicativos na lista).|
-
 
 
 

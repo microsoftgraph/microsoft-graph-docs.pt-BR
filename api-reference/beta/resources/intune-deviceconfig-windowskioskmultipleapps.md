@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: e7be767a72b68eeff6cf85aa46051222d81d18fe13430d473db96332e1ec57a5
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 678943374b2db49513ca0739f75cead5565ce99c
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54164297"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58800405"
 ---
 # <a name="windowskioskmultipleapps-resource-type"></a>Tipo de recurso windowsKioskMultipleApps
 
@@ -29,9 +29,9 @@ Herda do [windowsKioskAppConfiguration](../resources/intune-deviceconfig-windows
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |apps|[Coleção windowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md)|Esses são os únicos Windows aplicativos da Loja que estarão disponíveis para iniciar a partir do menu Iniciar. Essa coleção pode conter no máximo 128 elementos.|
-|showTaskBar|Boolean|Essa configuração permite que o administrador especifique se a Barra de Tarefas será exibida ou não.|
-|allowAccessToDownloadsFolder|Boolean|Essa configuração permite o acesso à pasta Downloads no explorador de arquivos.|
-|disallowDesktopApps|Boolean|Essa configuração indica que os aplicativos da área de trabalho são permitidos. Padrão para true.|
+|showTaskBar|Boleano|Essa configuração permite que o administrador especifique se a Barra de Tarefas será exibida ou não.|
+|allowAccessToDownloadsFolder|Boleano|Essa configuração permite o acesso à pasta Downloads no explorador de arquivos.|
+|disallowDesktopApps|Boleano|Essa configuração indica que os aplicativos da área de trabalho são permitidos. Padrão para true.|
 |startMenuLayoutXml|Binária|Permite que os administradores substituam o layout de início padrão e impedem que o usuário o mude. O layout é modificado especificando um arquivo XML com base em um esquema de modificação de layout. XML precisa estar no formato Binário.|
 
 ## <a name="relationships"></a>Relações
@@ -65,7 +65,6 @@ Veja a seguir uma representação JSON do recurso.
   "startMenuLayoutXml": "binary"
 }
 ```
-
 
 
 

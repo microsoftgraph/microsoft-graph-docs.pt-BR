@@ -1,18 +1,18 @@
 ---
-title: ação de confirmação
-description: Confirma um arquivo de um determinado aplicativo.
-author: dougeby
+title: ação updatePriorities
+description: Atualizar prioridades de política.
 localization_priority: Normal
+author: dougeby
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 1a909565012a4d6830b0bdfec13021665a8c5379
+ms.openlocfilehash: 9a52f44bdcba78376e72fbf019beb7f1f6efab15
 ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 08/31/2021
-ms.locfileid: "58794283"
+ms.locfileid: "58787761"
 ---
-# <a name="commit-action"></a>Ação de confirmação
+# <a name="updatepriorities-action"></a>ação updatePriorities
 
 Namespace: microsoft.graph
 
@@ -20,16 +20,16 @@ Namespace: microsoft.graph
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Confirma um arquivo de um determinado aplicativo.
+Atualizar prioridades de política.
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
+|Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All|
+|Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementApps.ReadWrite.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -37,7 +37,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 }
 -->
 ``` http
-POST /deviceAppManagement/mobileApps/{mobileAppId}/contentVersions/{mobileAppContentId}/files/{mobileAppContentFileId}/commit
+POST /officeConfiguration/clientConfigurations/microsoft.management.services.api.updatePriorities
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -53,41 +53,38 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta ação.
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|fileEncryptionInfo|[fileEncryptionInfo](../resources/intune-apps-fileencryptioninfo.md)|Chave de parâmetro das informações sobre criptografia de arquivo.|
+|officeConfigurationPolicyIds|Coleção de cadeias de caracteres|Lista de ids de política de configuração do office|
+|officeConfigurationPriorities|Coleção Int32|Lista de prioridades de configuração do office|
 
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, esta ação retornará um código de resposta `204 No Content`.
+Se tiver êxito, esta ação retornará um código de resposta `200 OK`.
 
 ## <a name="example"></a>Exemplo
 
 ### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
 ``` http
-POST https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId}/contentVersions/{mobileAppContentId}/files/{mobileAppContentFileId}/commit
+POST https://graph.microsoft.com/beta/officeConfiguration/clientConfigurations/microsoft.management.services.api.updatePriorities
 
 Content-type: application/json
-Content-length: 399
+Content-length: 143
 
 {
-  "fileEncryptionInfo": {
-    "@odata.type": "microsoft.graph.fileEncryptionInfo",
-    "encryptionKey": "ZW5jcnlwdGlvbktleQ==",
-    "initializationVector": "aW5pdGlhbGl6YXRpb25WZWN0b3I=",
-    "mac": "bWFj",
-    "macKey": "bWFjS2V5",
-    "profileIdentifier": "Profile Identifier value",
-    "fileDigest": "ZmlsZURpZ2VzdA==",
-    "fileDigestAlgorithm": "File Digest Algorithm value"
-  }
+  "officeConfigurationPolicyIds": [
+    "Office Configuration Policy Ids value"
+  ],
+  "officeConfigurationPriorities": [
+    13
+  ]
 }
 ```
 
 ### <a name="response"></a>Resposta
 Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 ``` http
-HTTP/1.1 204 No Content
+HTTP/1.1 200 OK
 ```
 
 

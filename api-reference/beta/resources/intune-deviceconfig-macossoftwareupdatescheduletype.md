@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: d68c3460633d48f045c1ac4044997d2d5771d762848125320d76dad708ae0359
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 9bcaf8ec3f916a7bf471148a48ea38619bff6d59
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54190553"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58799807"
 ---
 # <a name="macossoftwareupdatescheduletype-enum-type"></a>Tipo de número macOSSoftwareUpdateScheduleType
 
@@ -26,9 +26,8 @@ Atualizar o tipo de agendamento para atualizações de software macOS.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |alwaysUpdate|0|Sempre atualize.|
-|updateDuringTimeWindows|1 |Atualizar durante janelas de tempo.|
+|updateDuringTimeWindows|1|Atualizar durante janelas de tempo.|
 |updateOutsideOfTimeWindows|2|Atualização fora das janelas de tempo.|
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 3f3f6db981d29c2150beba9d391180248c9151188d97b2b6810cf6ae13e19285
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 880d5b3456f07d8df495b56adece254aa8e5e317
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54227461"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58795232"
 ---
 # <a name="eapfastconfiguration-enum-type"></a>Tipo de número eapFastConfiguration
 
@@ -26,10 +26,9 @@ Configurações disponíveis para Configuração FAST EAP.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |noProtectedAccessCredential|0|Use o EAP-FAST sem a Credencial de Acesso Protegido (PAC).|
-|useProtectedAccessCredential|1 |Use a Credencial de Acesso Protegido (PAC).|
+|useProtectedAccessCredential|1|Use a Credencial de Acesso Protegido (PAC).|
 |useProtectedAccessCredentialAndProvision|2|Use o PAC (Credencial de Acesso Protegido) e o PAC de provisionamento.|
-|useProtectedAccessCredentialAndProvisionAnonymously|3 |Use a Credencial de Acesso Protegido (PAC), Provisione PAC e faça isso anonimamente.|
-
+|useProtectedAccessCredentialAndProvisionAnonymously|3|Use a Credencial de Acesso Protegido (PAC), Provisione PAC e faça isso anonimamente.|
 
 
 

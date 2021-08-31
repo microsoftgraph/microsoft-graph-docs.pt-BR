@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 528ce2a0a903bffebae9aaa2e0e7e4c0903d7aed90d10e9cb9ce09bc5f6f26ea
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 651815aea6e64b4fa53f0a4d22127050c5f3b488
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54178819"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58792565"
 ---
 # <a name="sideloadingkey-resource-type"></a>Tipo de recurso sideLoadingKey
 
@@ -28,7 +28,7 @@ A entidade SideLoadingKey é necessária para que os dispositivos Windows 8 e 8.
 |[Listar sideLoadingKeies](../api/intune-onboarding-sideloadingkey-list.md)|[Coleção sideLoadingKey](../resources/intune-onboarding-sideloadingkey.md)|Listar propriedades e relações dos [objetos sideLoadingKey.](../resources/intune-onboarding-sideloadingkey.md)|
 |[Obter sideLoadingKey](../api/intune-onboarding-sideloadingkey-get.md)|[sideLoadingKey](../resources/intune-onboarding-sideloadingkey.md)|Ler propriedades e relações do [objeto sideLoadingKey.](../resources/intune-onboarding-sideloadingkey.md)|
 |[Criar sideLoadingKey](../api/intune-onboarding-sideloadingkey-create.md)|[sideLoadingKey](../resources/intune-onboarding-sideloadingkey.md)|Crie um novo [objeto sideLoadingKey.](../resources/intune-onboarding-sideloadingkey.md)|
-|[Excluir sideLoadingKey](../api/intune-onboarding-sideloadingkey-delete.md)|Nenhum|Exclui um [sideLoadingKey](../resources/intune-onboarding-sideloadingkey.md).|
+|[Excluir sideLoadingKey](../api/intune-onboarding-sideloadingkey-delete.md)|Nenhum(a)|Exclui um [sideLoadingKey](../resources/intune-onboarding-sideloadingkey.md).|
 |[Atualizar sideLoadingKey](../api/intune-onboarding-sideloadingkey-update.md)|[sideLoadingKey](../resources/intune-onboarding-sideloadingkey.md)|Atualize as propriedades de um [objeto sideLoadingKey.](../resources/intune-onboarding-sideloadingkey.md)|
 
 ## <a name="properties"></a>Propriedades
@@ -37,7 +37,7 @@ A entidade SideLoadingKey é necessária para que os dispositivos Windows 8 e 8.
 |id|Cadeia de caracteres|ID exclusiva da chave de carregamento lateral.|
 |value|Cadeia de caracteres|Side Loading Key Value, it is 5x5 value, seperated by hiphens.|
 |displayName|Cadeia de caracteres|Side Loading Key Name displayed to the ITPro Admins.|
-|description|Cadeia de caracteres|Descrição da Chave de Carregamento lateral exibida para os administradores do ITPro..|
+|descrição|Cadeia de caracteres|Descrição da Chave de Carregamento lateral exibida para os administradores do ITPro..|
 |totalActivation|Int32|Side Loading Key Total Activation displayed to the ITPro Admins.|
 |lastUpdatedDateTime|Cadeia de caracteres|Side Loading Key Last Updated Date displayed to the ITPro Admins.|
 
@@ -63,7 +63,6 @@ Veja a seguir uma representação JSON do recurso.
   "lastUpdatedDateTime": "String"
 }
 ```
-
 
 
 

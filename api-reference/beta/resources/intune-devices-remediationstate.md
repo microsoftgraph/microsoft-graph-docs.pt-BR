@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 7a47a880dbf067c455ca108fd8f80636810a6d31bc196b3c3198a87b089f6959
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: dad0c6030d4a0f06ac17da9f2060b099d71d4ea4
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54164206"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58788931"
 ---
 # <a name="remediationstate-enum-type"></a>Tipo de numeração remediationState
 
@@ -26,11 +26,10 @@ Indica o tipo de status de execução do script de gerenciamento de dispositivos
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |desconhecido|0|Resultado desconhecido.|
-|ignorado|1 |A execução do script de correção foi ignorada|
+|ignorado|1|A execução do script de correção foi ignorada|
 |sucesso|2|Script de correção executado com êxito e correção do estado do dispositivo|
-|remediationFailed|3 |Script de correção executado com êxito, mas falhou ao remediar o estado do dispositivo|
+|remediationFailed|3|Script de correção executado com êxito, mas falhou ao remediar o estado do dispositivo|
 |scriptError|4 |Execução de script de correção encontrada e erro ou tempo de execução|
-
 
 
 

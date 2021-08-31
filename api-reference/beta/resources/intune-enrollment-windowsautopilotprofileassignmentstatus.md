@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 9a3dfeff181fd7d6e8c2bc112f51c6f8096744eb688faaceda6bc4c4010fe99c
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: addd0a3ab96c75cc62d380f16a0b82006870cdfa
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54139373"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58788924"
 ---
 # <a name="windowsautopilotprofileassignmentstatus-enum-type"></a>Tipo de número windowsAutopilotProfileAssignmentStatus
 
@@ -26,13 +26,12 @@ Ainda não documentado
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |desconhecido|0|Status de atribuição desconhecido|
-|assignedInSync|1 |Atribuído com êxito no Intune e em sincronia com Windows piloto automático|
+|assignedInSync|1|Atribuído com êxito no Intune e em sincronia com Windows piloto automático|
 |assignedOutOfSync|2|Atribuído com êxito no Intune e não sincronizado com Windows piloto automático|
-|assignedUnkownSyncState|3 |Atribuído com êxito no Intune e em sincronia ou fora de sincronização com Windows piloto automático|
+|assignedUnkownSyncState|3|Atribuído com êxito no Intune e em sincronia ou fora de sincronização com Windows piloto automático|
 |notAssigned|4 |Não atribuído|
 |pendente|5 |Atribuição pendente|
 |failed|6 | Falha na atribuição|
-
 
 
 

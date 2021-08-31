@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d9c2fc0569e54f9ec5d8e6ae203659b2d023cd9c98348678c00b3e3e8f57e923
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 9612d33c1e838eb5effaea555d8453b8acf6c1fe
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54226249"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58807241"
 ---
 # <a name="assignmentfiltervalidationresult-resource-type"></a>Tipo de recurso assignmentFilterValidationResult
 
@@ -25,7 +25,7 @@ Representa o resultado da API de validação.
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|isValidRule|Boolean|Indicador para regra válida ou inválida.|
+|isValidRule|Boleano|Indicador para regra válida ou inválida.|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -43,7 +43,6 @@ Veja a seguir uma representação JSON do recurso.
   "isValidRule": true
 }
 ```
-
 
 
 

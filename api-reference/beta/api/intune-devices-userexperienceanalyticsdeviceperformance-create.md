@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 678714fe7a04ac86d5fc424b83b7df6f729230ae
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: b3632c3e9982a1f9ca37b6af931491ecac4e0974
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58254072"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58789071"
 ---
 # <a name="create-userexperienceanalyticsdeviceperformance"></a>Criar userExperienceAnalyticsDevicePerformance
 
@@ -27,9 +27,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
+|Delegado (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Application|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -73,6 +73,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar o userEx
 |averageBlueScreens|Duplo|Número médio (médio) de Telas Azuis por dispositivo nos últimos 14 dias. Valores válidos de 0 a 9999999|
 |averageRestarts|Duplo|Número médio (médio) de Reinicializações por dispositivo nos últimos 14 dias. Valores válidos de 0 a 9999999|
 |startupPerformanceScore|Duplo|A pontuação de desempenho de inicialização do dispositivo de análise de experiência do usuário. Valores válidos -1,79769313486232E+308 a 1.79769313486232E+308|
+|modelStartupPerformanceScore|Duplo|A pontuação de desempenho de inicialização do modelo de análise de experiência do usuário. Valores válidos -1,79769313486232E+308 a 1.79769313486232E+308|
 
 
 
@@ -86,7 +87,7 @@ Este é um exemplo da solicitação.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsDevicePerformance
 Content-type: application/json
-Content-length: 684
+Content-length: 739
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsDevicePerformance",
@@ -108,7 +109,8 @@ Content-length: 684
   "restartCount": 12,
   "averageBlueScreens": 6.0,
   "averageRestarts": 5.0,
-  "startupPerformanceScore": 7.666666666666667
+  "startupPerformanceScore": 7.666666666666667,
+  "modelStartupPerformanceScore": 9.3333333333333339
 }
 ```
 
@@ -117,7 +119,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 733
+Content-Length: 788
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsDevicePerformance",
@@ -140,10 +142,10 @@ Content-Length: 733
   "restartCount": 12,
   "averageBlueScreens": 6.0,
   "averageRestarts": 5.0,
-  "startupPerformanceScore": 7.666666666666667
+  "startupPerformanceScore": 7.666666666666667,
+  "modelStartupPerformanceScore": 9.3333333333333339
 }
 ```
-
 
 
 

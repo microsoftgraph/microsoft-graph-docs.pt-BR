@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: f805799b1c99b361a6a1f9508f499d9512018f6d09f12bff5ea823e64bf6c67e
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 68e8dfebf1f02b837189cff33bdb7a5da2193fc1
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54239417"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58788476"
 ---
 # <a name="configurationmanageraction-resource-type"></a>Tipo de recurso configurationManagerAction
 
@@ -43,7 +43,6 @@ Veja a seguir uma representação JSON do recurso.
   "action": "String"
 }
 ```
-
 
 
 

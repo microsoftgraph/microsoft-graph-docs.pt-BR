@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 792b9c0d3e62394b4ea06d389ba3891c133fa63322bb20b157d3803f8afd49e9
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: ed7297494e76cdac78e5d4808926cc638d31c2f9
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54236329"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58799800"
 ---
 # <a name="manageddeviceencryptionstate-resource-type"></a>Tipo de recurso managedDeviceEncryptionState
 
@@ -28,7 +28,7 @@ Relatório de criptografia por dispositivo
 |[Listar managedDeviceEncryptionStates](../api/intune-deviceconfig-manageddeviceencryptionstate-list.md)|[Coleção managedDeviceEncryptionState](../resources/intune-deviceconfig-manageddeviceencryptionstate.md)|Listar propriedades e relações dos [objetos managedDeviceEncryptionState.](../resources/intune-deviceconfig-manageddeviceencryptionstate.md)|
 |[Obter managedDeviceEncryptionState](../api/intune-deviceconfig-manageddeviceencryptionstate-get.md)|[managedDeviceEncryptionState](../resources/intune-deviceconfig-manageddeviceencryptionstate.md)|Leia propriedades e relações do [objeto managedDeviceEncryptionState.](../resources/intune-deviceconfig-manageddeviceencryptionstate.md)|
 |[Criar managedDeviceEncryptionState](../api/intune-deviceconfig-manageddeviceencryptionstate-create.md)|[managedDeviceEncryptionState](../resources/intune-deviceconfig-manageddeviceencryptionstate.md)|Crie um novo [objeto managedDeviceEncryptionState.](../resources/intune-deviceconfig-manageddeviceencryptionstate.md)|
-|[Excluir managedDeviceEncryptionState](../api/intune-deviceconfig-manageddeviceencryptionstate-delete.md)|Nenhum|Exclui [managedDeviceEncryptionState](../resources/intune-deviceconfig-manageddeviceencryptionstate.md).|
+|[Excluir managedDeviceEncryptionState](../api/intune-deviceconfig-manageddeviceencryptionstate-delete.md)|Nenhum(a)|Exclui [managedDeviceEncryptionState](../resources/intune-deviceconfig-manageddeviceencryptionstate.md).|
 |[Atualizar managedDeviceEncryptionState](../api/intune-deviceconfig-manageddeviceencryptionstate-update.md)|[managedDeviceEncryptionState](../resources/intune-deviceconfig-manageddeviceencryptionstate.md)|Atualize as propriedades de [um objeto managedDeviceEncryptionState.](../resources/intune-deviceconfig-manageddeviceencryptionstate.md)|
 
 ## <a name="properties"></a>Propriedades
@@ -81,7 +81,6 @@ Veja a seguir uma representação JSON do recurso.
   ]
 }
 ```
-
 
 
 

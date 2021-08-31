@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3542efb2f557863ec1f672e18df898044a1100ccf2be92e971cb67d122b77f4f
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 714dccededed141192bd64bfc9414e05cdcb2243
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54133338"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58807681"
 ---
 # <a name="windows10compliancepolicy-resource-type"></a>Tipo de recurso windows10CompliancePolicy
 
@@ -37,10 +37,10 @@ Herda de [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepol
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|roleScopeTagIds|String collection|Lista de marcas de escopo para esta instância entity. Herdada de [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
+|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de marcas de escopo para esta instância entity. Herdada de [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
 |id|Cadeia de caracteres|Chave da entidade. Herdada de [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
 |createdDateTime|DateTimeOffset|DateTime em que o objeto foi criado. Herdada de [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
-|description|Cadeia de caracteres|O administrador forneceu a descrição da Configuração do dispositivo. Herdada de [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
+|descrição|Cadeia de caracteres|O administrador forneceu a descrição da Configuração do dispositivo. Herdada de [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
 |lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto. Herdada de [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
 |displayName|Cadeia de caracteres|O administrador forneceu o nome da Configuração do dispositivo. Herdada de [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
 |version|Int32|Versão da configuração do dispositivo. Herdada de [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
@@ -63,24 +63,24 @@ Herda de [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepol
 |secureBootEnabled|Boolean|Exige que os dispositivos sejam indicados como íntegros pelo Atestado de Integridade do Dispositivo Windows - inicialização segura habilitada.|
 |codeIntegrityEnabled|Boolean|Exige que os dispositivos sejam indicados como íntegros pelo Atestado de Integridade do Dispositivo Windows.|
 |storageRequireEncryption|Boolean|Exige criptografia em dispositivos Windows.|
-|activeFirewallRequired|Boolean|Exigir firewall ativo em Windows dispositivos.|
-|defenderEnabled|Boolean|Exigir Windows Defender Antimalware em Windows dispositivos.|
+|activeFirewallRequired|Boleano|Exigir firewall ativo em Windows dispositivos.|
+|defenderEnabled|Boleano|Exigir Windows Defender Antimalware em Windows dispositivos.|
 |defenderVersion|Cadeia de caracteres|Exigir Windows Defender versão mínima do Antimalware em Windows dispositivos.|
-|signatureOutOfDate|Boolean|Exigir Windows Defender Assinatura Antimalware para estar atualizada em Windows dispositivos.|
-|rtpEnabled|Boolean|Exigir Windows Defender Antimalware Real-Time Proteção em Windows dispositivos.|
-|antivirusRequired|Boolean|Exigir que qualquer solução antivírus registrada Windows Centro de Decurity esteja em e monitorando (por exemplo, Symantec, Windows Defender).|
-|antiSpywareRequired|Boolean|Exigir que qualquer solução antiSpyware registrada no Centro de Windows Decurity esteja em e monitorando (por exemplo, Symantec, Windows Defender).|
+|signatureOutOfDate|Boleano|Exigir Windows Defender Assinatura Antimalware para estar atualizada em Windows dispositivos.|
+|rtpEnabled|Boleano|Exigir Windows Defender Antimalware Real-Time Proteção em Windows dispositivos.|
+|antivirusRequired|Boleano|Exigir que qualquer solução antivírus registrada Windows Centro de Decurity esteja em e monitorando (por exemplo, Symantec, Windows Defender).|
+|antiSpywareRequired|Boleano|Exigir que qualquer solução antiSpyware registrada no Centro de Windows Decurity esteja em e monitorando (por exemplo, Symantec, Windows Defender).|
 |validOperatingSystemBuildRanges|[Coleção operatingSystemVersionRange](../resources/intune-deviceconfig-operatingsystemversionrange.md)|Os intervalos de com build do sistema operacional válidos em Windows dispositivos. Essa coleção pode conter um máximo de 10.000 elementos.|
 |deviceThreatProtectionEnabled|Boolean|Exige que os dispositivos tenham habilitada a proteção contra ameaças.|
 |deviceThreatProtectionRequiredSecurityLevel|[deviceThreatProtectionLevel](../resources/intune-deviceconfig-devicethreatprotectionlevel.md)|Exigir nível mínimo de risco da Proteção contra Ameaças de Dispositivo para relatar o descumprimento. Os possíveis valores são: `unavailable`, `secured`, `low`, `medium`, `high`, `notSet`.|
-|configurationManagerComplianceRequired|Boolean|É necessário considerar o estado de Conformidade do SCCM em consideração para o Estado de Conformidade do Intune.|
-|tpmRequired|Boolean|Exigir a presença do Trusted Platform Module(TPM).|
+|configurationManagerComplianceRequired|Boleano|É necessário considerar o estado de Conformidade do SCCM em consideração para o Estado de Conformidade do Intune.|
+|tpmRequired|Booliano|Exigir a presença do Trusted Platform Module(TPM).|
 |deviceCompliancePolicyScript|[deviceCompliancePolicyScript](../resources/intune-deviceconfig-devicecompliancepolicyscript.md)|Ainda não documentado|
 
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|
 |:---|:---|:---|
-|scheduledActionsForRule|Coleção [deviceComplianceScheduledActionForRule](../resources/intune-deviceconfig-devicecompliancescheduledactionforrule.md)|A lista de ações agendadas para esta regra. Herdado de [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
+|scheduledActionsForRule|Coleção [deviceComplianceScheduledActionForRule](../resources/intune-deviceconfig-devicecompliancescheduledactionforrule.md)|A lista de ações agendadas por regra para essa política de conformidade. Essa é uma propriedade necessária ao criar qualquer política de conformidade individual por plataforma. Herdada de [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
 |deviceStatuses|Coleção [deviceComplianceDeviceStatus](../resources/intune-deviceconfig-devicecompliancedevicestatus.md)|Lista de DeviceComplianceDeviceStatus. Herdado de [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
 |userStatuses|Coleção [deviceComplianceUserStatus](../resources/intune-deviceconfig-devicecomplianceuserstatus.md)|Lista de DeviceComplianceUserStatus. Herdado de [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
 |deviceStatusOverview|[deviceComplianceDeviceOverview](../resources/intune-deviceconfig-devicecompliancedeviceoverview.md)|Visão geral de status de dispositivos para Conformidade de dispositivo. Herdado de [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
@@ -153,7 +153,6 @@ Veja a seguir uma representação JSON do recurso.
   }
 }
 ```
-
 
 
 

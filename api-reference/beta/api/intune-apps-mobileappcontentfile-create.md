@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 4afb19a2c36bfd5f5586a3db2a7e90cd34ccfc1968371a5696777ad1172af213
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: a5c034068cfcf6c45d538a8f778272dc180f0763
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54149230"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58756373"
 ---
 # <a name="create-mobileappcontentfile"></a>Criar mobileAppContentFile
 
@@ -27,9 +27,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementApps.ReadWrite.All|
+|Delegado (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Application|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -63,8 +63,8 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar mobileAp
 |azureStorageUriExpirationDateTime|DateTimeOffset|A hora de expiração do URI do armazenamento do Azure.|
 |manifest|Binária|As informações do manifesto.|
 |uploadState|[mobileAppContentFileUploadState](../resources/intune-apps-mobileappcontentfileuploadstate.md)|O estado da solicitação de carregamento atual. Os valores possíveis são: `success`, `transientError`, `error`, `unknown`, `azureStorageUriRequestSuccess`, `azureStorageUriRequestPending`, `azureStorageUriRequestFailed`, `azureStorageUriRequestTimedOut`, `azureStorageUriRenewalSuccess`, `azureStorageUriRenewalPending`, `azureStorageUriRenewalFailed`, `azureStorageUriRenewalTimedOut`, `commitFileSuccess`, `commitFilePending`, `commitFileFailed`, `commitFileTimedOut`.|
-|isFrameworkFile|Boolean|Um valor que indica se o arquivo é um arquivo de estrutura.|
-|isDependency|Boolean|Se o arquivo de conteúdo é uma dependência do arquivo de conteúdo principal.|
+|isFrameworkFile|Boleano|Um valor que indica se o arquivo é um arquivo de estrutura.|
+|isDependency|Boleano|Se o arquivo de conteúdo é uma dependência do arquivo de conteúdo principal.|
 
 
 
@@ -118,7 +118,6 @@ Content-Length: 503
   "isDependency": true
 }
 ```
-
 
 
 

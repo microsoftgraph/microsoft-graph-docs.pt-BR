@@ -1,18 +1,18 @@
 ---
-title: Listar malwareStateForWindowsDevices
-description: Listar propriedades e relações dos objetos malwareStateForWindowsDevice.
+title: Listar windowsDriverUpdateProfiles
+description: Listar propriedades e relações dos objetos windowsDriverUpdateProfile.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 8492529d1049e55c33456015c8f20e0526c1fa1c
+ms.openlocfilehash: 42dcbf00ecd03e6e9e3d6eb1dd261cab0811007d
 ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 08/31/2021
-ms.locfileid: "58794571"
+ms.locfileid: "58801364"
 ---
-# <a name="list-malwarestateforwindowsdevices"></a>Listar malwareStateForWindowsDevices
+# <a name="list-windowsdriverupdateprofiles"></a>Listar windowsDriverUpdateProfiles
 
 Namespace: microsoft.graph
 
@@ -20,16 +20,16 @@ Namespace: microsoft.graph
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Listar propriedades e relações dos [objetos malwareStateForWindowsDevice.](../resources/intune-devices-malwarestateforwindowsdevice.md)
+Listar propriedades e relações dos [objetos windowsDriverUpdateProfile.](../resources/intune-softwareupdate-windowsdriverupdateprofile.md)
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
+|Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementConfiguration.Read.All, DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
+|Application|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -37,7 +37,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 }
 -->
 ``` http
-GET /deviceManagement/windowsMalwareInformation/{windowsMalwareInformationId}/deviceMalwareStates
+GET /deviceManagement/windowsDriverUpdateProfiles
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -50,14 +50,14 @@ GET /deviceManagement/windowsMalwareInformation/{windowsMalwareInformationId}/de
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um código de resposta e uma `200 OK` coleção de [objetos malwareStateForWindowsDevice](../resources/intune-devices-malwarestateforwindowsdevice.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e uma `200 OK` coleção de [objetos windowsDriverUpdateProfile](../resources/intune-softwareupdate-windowsdriverupdateprofile.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
 ### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
 ``` http
-GET https://graph.microsoft.com/beta/deviceManagement/windowsMalwareInformation/{windowsMalwareInformationId}/deviceMalwareStates
+GET https://graph.microsoft.com/beta/deviceManagement/windowsDriverUpdateProfiles
 ```
 
 ### <a name="response"></a>Resposta
@@ -65,19 +65,24 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 448
+Content-Length: 579
 
 {
   "value": [
     {
-      "@odata.type": "#microsoft.graph.malwareStateForWindowsDevice",
-      "id": "ce06da73-da73-ce06-73da-06ce73da06ce",
-      "deviceName": "Device Name value",
-      "executionState": "blocked",
-      "threatState": "actionFailed",
-      "initialDetectionDateTime": "2016-12-31T23:57:05.3889692-08:00",
-      "lastStateChangeDateTime": "2016-12-31T23:59:51.0767794-08:00",
-      "detectionCount": 14
+      "@odata.type": "#microsoft.graph.windowsDriverUpdateProfile",
+      "id": "55bcc52a-c52a-55bc-2ac5-bc552ac5bc55",
+      "displayName": "Display Name value",
+      "description": "Description value",
+      "approvalType": "automatic",
+      "deviceReporting": 15,
+      "newUpdates": 10,
+      "deploymentDeferralInDays": 8,
+      "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
+      "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
+      "roleScopeTagIds": [
+        "Role Scope Tag Ids value"
+      ]
     }
   ]
 }

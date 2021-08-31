@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 3d63d39c31853141c9e03584d0b39be5beea7042191413502a185976809688f5
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 8c43c3835490394c7287aefa6311c1e39d4f8b90
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54229553"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58785784"
 ---
 # <a name="win32lobappfilesystemdetectiontype-enum-type"></a>Tipo denum win32LobAppFileSystemDetectionType
 
@@ -26,13 +26,12 @@ Contém todo o tipo de detecção do sistema de arquivos com suporte.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |notConfigured|0|Não configurado.|
-|existe|1 |Se o arquivo ou pasta especificado existe.|
+|existe|1|Se o arquivo ou pasta especificado existe.|
 |modifiedDate|2|Data da última modificação.|
-|createdDate|3 |Data de criação.|
+|createdDate|3|Data de criação.|
 |versão|4 |Tipo de valor de versão.|
 |sizeInMB|5 |Tipo de detecção de tamanho.|
 |doesNotExist|6 |O arquivo ou pasta especificado não existe.|
-
 
 
 

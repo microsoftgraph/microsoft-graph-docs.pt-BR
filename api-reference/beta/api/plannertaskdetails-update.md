@@ -5,12 +5,12 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: f7b610f2ba142346de4bbcdf65acc80409b1045f
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 5538b143e41e36b6e12e23dca2e3ea279ed26a64
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52049965"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58787901"
 ---
 # <a name="update-plannertaskdetails"></a>Atualizar plannertaskdetails
 
@@ -45,7 +45,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |checklist|[plannerChecklistItems](../resources/plannerchecklistitems.md)|A coleção de itens de lista de verificação na tarefa.|
-|description|String|Descrição da tarefa|
+|descrição|Cadeia de caracteres|Descrição da tarefa|
 |previewType|cadeia de caracteres|Isso define o tipo de visualização que aparece na tarefa. Os valores possíveis são: `automatic`, `noPreview`, `checklist`, `description`, `reference`. Quando definido para `automatic` a visualização exibida, é escolhido pelo aplicativo exibindo a tarefa.|
 |referências|[plannerExternalReferences](../resources/plannerexternalreferences.md)|A coleção de referências na tarefa.|
 
@@ -80,7 +80,7 @@ If-Match: W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="
       "previewPriority": " !",
       "type": "Other"
     },
-    "https%3A//developer%2Emicrosoft%2Ecom/en-us/graph/graph-explorer":{
+    "https%3A//developer%2Emicrosoft%2Ecom/graph/graph-explorer":{
       "@odata.type": "microsoft.graph.plannerExternalReference",
       "previewPriority": "  !!",
     },
@@ -111,7 +111,7 @@ If-Match: W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="
 ---
 
 ##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser reduzido para facilitar a leitura.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -126,7 +126,7 @@ Content-length: 1793
   "description": "Task details properties:\nchecklist:Sub items\nreferences:Related links",
   "previewType": "automatic",
   "references": {
-    "https%3A//developer%2Emicrosoft%2Ecom/en-us/graph/graph-explorer": {
+    "https%3A//developer%2Emicrosoft%2Ecom/graph/graph-explorer": {
       "@odata.type": "#microsoft.graph.plannerExternalReference",
       "alias": "Graph Explorer",
       "type": "Other",

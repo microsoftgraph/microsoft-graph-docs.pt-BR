@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 1a3833f2ee3ae94807af402b1109954b8785ab5a826ee0762ea0a4f0e1208af3
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 961f43556622fd92cb990777155c8ab3debcb7df
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54226242"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58786611"
 ---
 # <a name="configmanagercollection-resource-type"></a>Tipo de recurso configManagerCollection
 
@@ -28,7 +28,7 @@ Uma coleção definida configManager de dispositivos ou usuários.
 |[Listar configManagerCollections](../api/intune-partnerintegration-configmanagercollection-list.md)|[Coleção configManagerCollection](../resources/intune-partnerintegration-configmanagercollection.md)|Listar propriedades e relações dos [objetos configManagerCollection.](../resources/intune-partnerintegration-configmanagercollection.md)|
 |[Obter configManagerCollection](../api/intune-partnerintegration-configmanagercollection-get.md)|[configManagerCollection](../resources/intune-partnerintegration-configmanagercollection.md)|Ler propriedades e relações do [objeto configManagerCollection.](../resources/intune-partnerintegration-configmanagercollection.md)|
 |[Criar configManagerCollection](../api/intune-partnerintegration-configmanagercollection-create.md)|[configManagerCollection](../resources/intune-partnerintegration-configmanagercollection.md)|Crie um novo [objeto configManagerCollection.](../resources/intune-partnerintegration-configmanagercollection.md)|
-|[Excluir configManagerCollection](../api/intune-partnerintegration-configmanagercollection-delete.md)|Nenhum|Exclui um [configManagerCollection](../resources/intune-partnerintegration-configmanagercollection.md).|
+|[Excluir configManagerCollection](../api/intune-partnerintegration-configmanagercollection-delete.md)|Nenhum(a)|Exclui um [configManagerCollection](../resources/intune-partnerintegration-configmanagercollection.md).|
 |[Atualizar configManagerCollection](../api/intune-partnerintegration-configmanagercollection-update.md)|[configManagerCollection](../resources/intune-partnerintegration-configmanagercollection.md)|Atualize as propriedades de [um objeto configManagerCollection.](../resources/intune-partnerintegration-configmanagercollection.md)|
 |[função getPolicySummary](../api/intune-partnerintegration-configmanagercollection-getpolicysummary.md)|[configManagerPolicySummary](../resources/intune-partnerintegration-configmanagerpolicysummary.md)|Ainda não documentado|
 
@@ -66,7 +66,6 @@ Veja a seguir uma representação JSON do recurso.
   "lastModifiedDateTime": "String (timestamp)"
 }
 ```
-
 
 
 

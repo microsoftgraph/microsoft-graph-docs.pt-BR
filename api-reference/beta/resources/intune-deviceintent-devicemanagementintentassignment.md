@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d7813f53764cb670f5a668baa488c8dee685e5fd70a81d57f9d4b00489d325f2
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 6d74e15f0f1213cd86c35760c814afab4b3326ef
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54122506"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58795189"
 ---
 # <a name="devicemanagementintentassignment-resource-type"></a>Tipo de recurso deviceManagementIntentAssignment
 
@@ -28,7 +28,7 @@ Entidade de atribuição de intenção
 |[Listar deviceManagementIntentAssignments](../api/intune-deviceintent-devicemanagementintentassignment-list.md)|[Coleção deviceManagementIntentAssignment](../resources/intune-deviceintent-devicemanagementintentassignment.md)|Listar propriedades e relações dos [objetos deviceManagementIntentAssignment.](../resources/intune-deviceintent-devicemanagementintentassignment.md)|
 |[Obter deviceManagementIntentAssignment](../api/intune-deviceintent-devicemanagementintentassignment-get.md)|[deviceManagementIntentAssignment](../resources/intune-deviceintent-devicemanagementintentassignment.md)|Leia propriedades e relações do [objeto deviceManagementIntentAssignment.](../resources/intune-deviceintent-devicemanagementintentassignment.md)|
 |[Criar deviceManagementIntentAssignment](../api/intune-deviceintent-devicemanagementintentassignment-create.md)|[deviceManagementIntentAssignment](../resources/intune-deviceintent-devicemanagementintentassignment.md)|Crie um novo [objeto deviceManagementIntentAssignment.](../resources/intune-deviceintent-devicemanagementintentassignment.md)|
-|[Excluir deviceManagementIntentAssignment](../api/intune-deviceintent-devicemanagementintentassignment-delete.md)|Nenhum|Exclui um [deviceManagementIntentAssignment](../resources/intune-deviceintent-devicemanagementintentassignment.md).|
+|[Excluir deviceManagementIntentAssignment](../api/intune-deviceintent-devicemanagementintentassignment-delete.md)|Nenhum(a)|Exclui um [deviceManagementIntentAssignment](../resources/intune-deviceintent-devicemanagementintentassignment.md).|
 |[Atualizar deviceManagementIntentAssignment](../api/intune-deviceintent-devicemanagementintentassignment-update.md)|[deviceManagementIntentAssignment](../resources/intune-deviceintent-devicemanagementintentassignment.md)|Atualize as propriedades de [um objeto deviceManagementIntentAssignment.](../resources/intune-deviceintent-devicemanagementintentassignment.md)|
 
 ## <a name="properties"></a>Propriedades
@@ -60,7 +60,6 @@ Veja a seguir uma representação JSON do recurso.
   }
 }
 ```
-
 
 
 

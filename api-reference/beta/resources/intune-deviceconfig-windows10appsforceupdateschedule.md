@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d160ff2ccee6d0a6ad88ae272090e597dd15732ad839b4af2db645f7996dce7d
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 62827d5fc1a99a04189dfa5d2817297df9766318
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54236252"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58800043"
 ---
 # <a name="windows10appsforceupdateschedule-resource-type"></a>Tipo de recurso windows10AppsForceUpdateSchedule
 
@@ -27,7 +27,7 @@ Windows 10 agenda de atualização de força para Aplicativos
 |:---|:---|:---|
 |startDateTime|DateTimeOffset|A hora de início da reinicialização da força.|
 |recurrence|[windows10AppsUpdateRecurrence](../resources/intune-deviceconfig-windows10appsupdaterecurrence.md)|Agendamento de recorrência. Os valores possíveis são: `none`, `daily`, `weekly`, `monthly`.|
-|runImmediatelyIfAfterStartDateTime|Boolean|Se true, executa a tarefa imediatamente se StartDateTime estiver no passado, senão, será executado na próxima recorrência.|
+|runImmediatelyIfAfterStartDateTime|Boleano|Se true, executa a tarefa imediatamente se StartDateTime estiver no passado, senão, será executado na próxima recorrência.|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -47,7 +47,6 @@ Veja a seguir uma representação JSON do recurso.
   "runImmediatelyIfAfterStartDateTime": true
 }
 ```
-
 
 
 

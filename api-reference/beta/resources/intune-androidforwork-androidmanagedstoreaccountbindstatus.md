@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 670d2f249b02f789898ffd9c3d4aae4c9349893759ae181a2ca38fa767fc3199
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: f49424be314804fad90eefb22514a01c833f6715
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54233039"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58753334"
 ---
 # <a name="androidmanagedstoreaccountbindstatus-enum-type"></a>tipo de número androidManagedStoreAccountBindStatus
 
@@ -26,10 +26,9 @@ Vincular o status do locatário à API de EMM do Google
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |notBound|0|Ainda não documentado|
-|bound|1 |Ainda não documentado|
+|bound|1|Ainda não documentado|
 |boundAndValidated|2|Ainda não documentado|
-|desvinculação|3 |Ainda não documentado|
-
+|desvinculação|3|Ainda não documentado|
 
 
 
