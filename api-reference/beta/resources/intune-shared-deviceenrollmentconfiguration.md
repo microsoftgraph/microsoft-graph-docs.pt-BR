@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: b6714713e86bb42fb2a78d0fde53269b82513af1cb693d840b788d6bb77c717d
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 3f4095db44b1b32c3c1adb5792dab99167909c41
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54241510"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58792551"
 ---
 # <a name="deviceenrollmentconfiguration-resource-type"></a>Tipo de recurso deviceEnrollmentConfiguration
 
@@ -38,7 +38,7 @@ A Classe Base de Configuração de Registro de Dispositivo
 |:---|:---|:---|
 |id|Cadeia de caracteres|Identificador exclusivo da conta|
 |displayName|Cadeia de caracteres|O nome de exibição da configuração de registro do dispositivo|
-|description|Cadeia de caracteres|A descrição da configuração de registro do dispositivo|
+|descrição|Cadeia de caracteres|A descrição da configuração de registro do dispositivo|
 |prioridade|Int32|A prioridade é usada quando um usuário existe em vários grupos que são atribuídos à configuração de registro. Os usuários estão sujeitos apenas à configuração com o valor de prioridade mais baixo.|
 |createdDateTime|DateTimeOffset|Hora de data criada no UTC da configuração de registro do dispositivo|
 |lastModifiedDateTime|DateTimeOffset|Última data de modificação no UTC da configuração de registro do dispositivo|
@@ -70,7 +70,6 @@ Veja a seguir uma representação JSON do recurso.
   "version": 1024
 }
 ```
-
 
 
 

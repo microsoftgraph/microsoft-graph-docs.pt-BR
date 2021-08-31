@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: b56a103715b95e7afb3541a5add10f93190dd7dc1e98787131303ecbdebe87a5
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: a175362babb51da02ed2c9aed3337561dbe7067d
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54242773"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58798403"
 ---
 # <a name="requiredpasswordtype-enum-type"></a>tipo denum requiredPasswordType
 
@@ -26,9 +26,8 @@ Valores possíveis de senhas necessárias.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |deviceDefault|0|Valor padrão do dispositivo, sem intenção.|
-|alfanumérico|1 |Senha alfanumérica necessária.|
+|alfanumérico|1|Senha alfanumérica necessária.|
 |numeric|2|Senha numérica necessária.|
-
 
 
 

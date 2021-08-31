@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 830ab9dac9953791036ea111f7ffe26109c6826e900ff3e2ac660cf171515f71
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 69c594479350524f7be25eb5075b78eb52f5b08d
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54241923"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58796632"
 ---
 # <a name="code-enum-type"></a>tipo de número de código
 
@@ -26,9 +26,9 @@ Código de erro para validação de regra.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |Nenhuma|0|Nenhum erro.|
-|jsonFileInvalid|1 |Erro inválido do arquivo Json.|
+|jsonFileInvalid|1|Erro inválido do arquivo Json.|
 |jsonFileMissing|2|Erro de arquivo Json ausente.|
-|jsonFileTooLarge|3 |Erro muito grande do arquivo Json.|
+|jsonFileTooLarge|3|Erro muito grande do arquivo Json.|
 |rulesMissing|4 |Erro de regras ausentes.|
 |duplicateRules|5 |Erro de regras duplicadas.|
 |tooManyRulesSpecified|6 |Erro especificado em muitas regras.|
@@ -38,7 +38,7 @@ Código de erro para validação de regra.
 |datatypeNotSupported|10 |Erro do tipo de dados não suportado.|
 |operatorDataTypeCombinationNotSupported|11 |Combinação de tipo de dados do operador não foi suportada.|
 |moreInfoUriMissing|12 |Mais informações urlmissing error.|
-|moreInfoUriInvalid|13 |Mais informações url erro inválido.|
+|moreInfoUriInvalid|13|Mais informações url erro inválido.|
 |moreInfoUriTooLarge|14 |Mais informações seu erro ltoo grande.|
 |descriptionMissing|15 |Erro de descrição ausente.|
 |descriptionInvalid|16 |Erro inválido de descrição.|
@@ -57,7 +57,6 @@ Código de erro para validação de regra.
 |unrecognizedLocale|29|Erro de localidade não-recognizado.|
 |desconhecido|30|Erro desconhecido.|
 |remediationStringsMissing|31|Erro nas cadeias de caracteres de correção.|
-
 
 
 

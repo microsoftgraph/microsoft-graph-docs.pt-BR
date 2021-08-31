@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 8cf3f1bb4d02493b2310766b6462aaa3f0e668f2934384db7b3d8fef46a9c08b
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 1328f4d14fd36ea782e1381dabb1eeabcc1e308a
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54125827"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58791765"
 ---
 # <a name="get-macoslobapp"></a>Obter macOSLobApp
 
@@ -27,9 +27,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
+|Delegado (conta corporativa ou de estudante)|DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Application|DeviceManagementConfiguration.Read.All, DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -70,7 +70,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2035
+Content-Length: 2057
 
 {
   "value": {
@@ -116,7 +116,8 @@ Content-Length: 2035
       "v10_13": true,
       "v10_14": true,
       "v10_15": true,
-      "v11_0": true
+      "v11_0": true,
+      "v12_0": true
     },
     "buildNumber": "Build Number value",
     "versionNumber": "Version Number value",
@@ -138,7 +139,6 @@ Content-Length: 2035
   }
 }
 ```
-
 
 
 

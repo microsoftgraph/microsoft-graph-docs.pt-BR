@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: e75cae7b54406e60fcefb6189446ed67e05537d39829ed9850dcd633e47935e9
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: d7b6e9716bda8660cefbdb93e4bec6d9ca49109c
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54164233"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58791850"
 ---
 # <a name="windowsstartmenuapplistvisibilitytype-enum-type"></a>Tipo de número do windowsStartMenuAppListVisibilityType
 
@@ -26,10 +26,9 @@ Tipo de visibilidade da lista de aplicativos do menu inicial.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |userDefined|0|Usuário definido. Valor padrão.|
-|collapse|1 |Colapse a lista de aplicativos no menu iniciar.|
+|collapse|1|Colapse a lista de aplicativos no menu iniciar.|
 |remove|2|Remove a lista de aplicativos inteiramente do menu iniciar.|
 |disableSettingsApp|4 |Desabilita a alternância correspondente (Collapse ou Remove) no Configurações app.|
-
 
 
 

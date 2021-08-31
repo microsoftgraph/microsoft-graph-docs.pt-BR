@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 0b93f1618f8a8eb951e7a4ef01645af907965411cb2a7273b97bf007680d4a4f
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 4d0a4cd55d78796e6fa096b266bb43d1be9a0c85
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54232759"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58796247"
 ---
 # <a name="operator-enum-type"></a>tipo de número de operador
 
@@ -26,9 +26,9 @@ Operador para regras.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |Nenhuma|0|Operador Nenhum.|
-|e|1 |E operador.|
+|e|1|E operador.|
 |ou|2|Ou operador.|
-|isEquals|3 |Operador IsEquals.|
+|isEquals|3|Operador IsEquals.|
 |notEquals|4 |Operador NotEquals.|
 |greaterThan|5 |Operador GreaterThan.|
 |lessThan|6 |Operador LessThan.|
@@ -38,7 +38,7 @@ Operador para regras.
 |lessEquals|10 |Operador LessEquals.|
 |dayTimeBetween|11 |Operador DayTimeBetween.|
 |beginsWith|12 |Operador BeginsWith.|
-|notBeginsWith|13 |Operador NotBeginsWith.|
+|notBeginsWith|13|Operador NotBeginsWith.|
 |endswith|14 |Operador EndsWith.|
 |notEndsWith|15 |Operador NotEndsWith.|
 |contains|16 |Contém operador.|
@@ -50,7 +50,6 @@ Operador para regras.
 |orderedSetEquals|22|Operador OrderedSetEquals.|
 |subsetOf|23|Operador SubsetOf.|
 |excludesAll|24|ExcludesAll operator.|
-
 
 
 
