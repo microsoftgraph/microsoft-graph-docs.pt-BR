@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 514caa91cdf788575c7326e7ac2d27a54362891cdb86c96d6e736c4600245b80
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 14f68bfa31c41b96e2a2dd160fa732d2c38e9b2f
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54183152"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58810644"
 ---
 # <a name="macosappleeventreceiver-resource-type"></a>Tipo de recurso macOSAppleEventReceiver
 
@@ -28,7 +28,7 @@ Representa um processo que pode receber uma notificação de evento da Apple.
 |codeRequirement|Cadeia de caracteres|Requisito de código para o aplicativo ou binário que recebe o Evento Apple.|
 |identificador|Cadeia de caracteres|ID do pacote do aplicativo ou caminho do arquivo do processo ou executável que recebe o Evento Apple.|
 |identifierType|[macOSProcessIdentifierType](../resources/intune-deviceconfig-macosprocessidentifiertype.md)|Use a ID do pacote para um aplicativo ou caminho para um processo ou executável que recebe o Evento Apple. Os valores possíveis são: `bundleID` e `path`.|
-|allowed|Boolean|Permitir ou impedir que esse aplicativo receba eventos da Apple.|
+|allowed|Boleano|Permitir ou impedir que esse aplicativo receba eventos da Apple.|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -49,7 +49,6 @@ Veja a seguir uma representação JSON do recurso.
   "allowed": true
 }
 ```
-
 
 
 

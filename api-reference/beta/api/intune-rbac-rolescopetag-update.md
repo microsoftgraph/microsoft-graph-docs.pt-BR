@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0f81a84c323bf0b025b77047e9d1781a4fe9b926994d4200eab933b3962adaf4
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 88ad2c1b120d0a09c28e5be3648391a1dcbc4379
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54136790"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58813913"
 ---
 # <a name="update-rolescopetag"></a>Atualizar roleScopeTag
 
@@ -27,9 +27,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|DeviceManagementRBAC.ReadWrite.All|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementRBAC.ReadWrite.All|
+|Delegado (conta corporativa ou de estudante)|DeviceManagementRBAC.ReadWrite.All|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Application|DeviceManagementRBAC.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -54,10 +54,10 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [a roleS
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Chave da entidade. É somente leitura e gerada automaticamente.|
+|id|Cadeia de caracteres|Chave da entidade. É somente leitura e gerada automaticamente. Essa propriedade é somente leitura.|
 |displayName|Cadeia de caracteres|O nome de exibição ou amigável da Marca de Escopo de Função.|
-|description|Cadeia de caracteres|Descrição da marca escopo de função.|
-|isBuiltIn|Booliano|Descrição da marca escopo de função.|
+|descrição|Cadeia de caracteres|Descrição da marca escopo de função.|
+|isBuiltIn|Booliano|Descrição da marca escopo de função. Essa propriedade é somente leitura.|
 
 
 
@@ -96,7 +96,6 @@ Content-Length: 204
   "isBuiltIn": true
 }
 ```
-
 
 
 

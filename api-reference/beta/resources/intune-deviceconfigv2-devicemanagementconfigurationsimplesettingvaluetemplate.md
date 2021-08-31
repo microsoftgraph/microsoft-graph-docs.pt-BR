@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 53a27960fdbcfcac8ce2995b2240c29e36576601fc67f3e746c54b86a9fcdf60
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 9cfc0372493b7b8a9fadf80167e08579acfcbf20
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54150441"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58815082"
 ---
 # <a name="devicemanagementconfigurationsimplesettingvaluetemplate-resource-type"></a>Tipo de recurso deviceManagementConfigurationSimpleSettingValueTemplate
 
@@ -43,7 +43,6 @@ Veja a seguir uma representação JSON do recurso.
   "settingValueTemplateId": "String"
 }
 ```
-
 
 
 

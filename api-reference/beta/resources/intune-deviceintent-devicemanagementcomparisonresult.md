@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: aeb8bac3259f1db68025f81c6af300cfeacae569b65a56dc4fa49de06327973a
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: dec891d78593fcbea6226666b4780704e83a2c7c
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54173027"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58815936"
 ---
 # <a name="devicemanagementcomparisonresult-enum-type"></a>Tipo denum deviceManagementComparisonResult
 
@@ -26,11 +26,10 @@ Definindo o tipo de resultado de comparação
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |desconhecido|0|Comparação de configurações desconhecida|
-|equal|1 |Os valores de configuração são iguais|
+|equal|1|Os valores de configuração são iguais|
 |notEqual|2|Os valores de configuração não são iguais|
-|adicionado|3 |A configuração é adicionada|
+|adicionado|3|A configuração é adicionada|
 |removidas|4 |A configuração foi removida|
-
 
 
 

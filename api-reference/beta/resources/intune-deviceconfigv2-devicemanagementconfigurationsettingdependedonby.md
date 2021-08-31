@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8a82dc6f1c690ba745d29c042b7eb428adaf1c8dfd3339dfbadff45fd66588e1
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: db277b1879ae70b27fa86fbb74fb6a72630f95c0
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54227390"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58806933"
 ---
 # <a name="devicemanagementconfigurationsettingdependedonby-resource-type"></a>Tipo de recurso deviceManagementConfigurationSettingDependedOnBy
 
@@ -26,7 +26,7 @@ Ainda não documentado
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |dependedOnBy|Cadeia de caracteres|Identificador da configuração filho que depende da configuração atual|
-|obrigatório|Boolean|Valor que determina se a configuração filho é necessária com base na seleção da configuração pai|
+|obrigatório|Boleano|Valor que determina se a configuração filho é necessária com base na seleção da configuração pai|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -45,7 +45,6 @@ Veja a seguir uma representação JSON do recurso.
   "required": true
 }
 ```
-
 
 
 

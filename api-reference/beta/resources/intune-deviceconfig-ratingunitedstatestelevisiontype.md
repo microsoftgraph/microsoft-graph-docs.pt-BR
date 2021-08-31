@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: b5a29bdfedc8de62581e24c0fdeb1950e83a16a54de3a7b6992a966ad4ab4ad4
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 19c27c836986c403f3af9baf8fa8413d2e1a48d2
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54133345"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58785147"
 ---
 # <a name="ratingunitedstatestelevisiontype-enum-type"></a>tipo de número ratingUnitedStatesTelevisionType
 
@@ -26,14 +26,13 @@ Rótulos de classificação de conteúdo de TV nos Estados Unidos
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |allAllowed|0|Valor padrão, permitir todo o conteúdo de programas de TV|
-|allBlocked|1 |Não permitir conteúdo de programas de TV|
+|allBlocked|1|Não permitir conteúdo de programas de TV|
 |childrenAll|2|TV-Y, todos os filhos|
-|childrenAbove7|3 |TV-Y7, crianças com 7 anos ou mais|
+|childrenAbove7|3|TV-Y7, crianças com 7 anos ou mais|
 |geral|4 |TV-G, adequado para todas as idades|
 |parentalGuidance|5 |TV-PG, orientação dos pais|
 |childrenAbove14|6 |TV-14, crianças com 14 anos ou mais|
 |adults|7 |TV-MA, somente para adultos|
-
 
 
 

@@ -1,18 +1,18 @@
 ---
-title: ação revokeAllLicenses
-description: Revogar todas as licenças VPP iOS atribuídas para determinado aplicativo.
+title: Excluir certificateConnectorDetails
+description: Exclui um certificateConnectorDetails.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: abf0a3562b5bbafb9017750e950b6f64e11ee810
+ms.openlocfilehash: 5364c2898122e16a1ff0d83c017a84c6cd9404d5
 ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 08/31/2021
-ms.locfileid: "58784755"
+ms.locfileid: "58816311"
 ---
-# <a name="revokealllicenses-action"></a>ação revokeAllLicenses
+# <a name="delete-certificateconnectordetails"></a>Excluir certificateConnectorDetails
 
 Namespace: microsoft.graph
 
@@ -20,16 +20,16 @@ Namespace: microsoft.graph
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Revogar todas as licenças VPP iOS atribuídas para determinado aplicativo.
+Exclui um [certificateConnectorDetails](../resources/intune-raimportcerts-certificateconnectordetails.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All|
+|Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementApps.ReadWrite.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -37,9 +37,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 }
 -->
 ``` http
-POST /deviceAppManagement/mobileApps/{mobileAppId}/revokeAllLicenses
-POST /deviceAppManagement/mobileApps/{mobileAppId}/userStatuses/{userAppInstallStatusId}/app/revokeAllLicenses
-POST /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppInstallStatusId}/app/revokeAllLicenses
+DELETE /deviceManagement/certificateConnectorDetails/{certificateConnectorDetailsId}
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -49,32 +47,17 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppInst
 |Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça uma representação JSON dos parâmetros.
-
-A tabela a seguir mostra os parâmetros que podem ser usados com esta ação.
-
-|Propriedade|Tipo|Descrição|
-|:---|:---|:---|
-|notifyManagedDevices|Boleano|Boolean que indica se a notificação de revogação deve ser enviada ao dispositivo|
-
-
+Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, esta ação retornará um código de resposta `204 No Content`.
+Se tiver êxito, este método retornará um código de resposta `204 No Content`.
 
 ## <a name="example"></a>Exemplo
 
 ### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
 ``` http
-POST https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId}/revokeAllLicenses
-
-Content-type: application/json
-Content-length: 36
-
-{
-  "notifyManagedDevices": true
-}
+DELETE https://graph.microsoft.com/beta/deviceManagement/certificateConnectorDetails/{certificateConnectorDetailsId}
 ```
 
 ### <a name="response"></a>Resposta

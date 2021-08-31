@@ -1,18 +1,18 @@
 ---
-title: ação revokeAllLicenses
-description: Revogar todas as licenças VPP iOS atribuídas para determinado aplicativo.
+title: ação getRemoteAssistanceMonitorAvgSessionTimeReport
+description: Ainda não documentado
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: abf0a3562b5bbafb9017750e950b6f64e11ee810
+ms.openlocfilehash: a2c697647b69cb285e8d76f54afc8be0ddd453cc
 ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 08/31/2021
-ms.locfileid: "58784755"
+ms.locfileid: "58821960"
 ---
-# <a name="revokealllicenses-action"></a>ação revokeAllLicenses
+# <a name="getremoteassistancemonitoravgsessiontimereport-action"></a>ação getRemoteAssistanceMonitorAvgSessionTimeReport
 
 Namespace: microsoft.graph
 
@@ -20,16 +20,16 @@ Namespace: microsoft.graph
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Revogar todas as licenças VPP iOS atribuídas para determinado aplicativo.
+Ainda não documentado
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementApps.ReadWrite.All|
+|Delegada (conta corporativa ou de estudante)|DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Aplicativo|DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -37,9 +37,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 }
 -->
 ``` http
-POST /deviceAppManagement/mobileApps/{mobileAppId}/revokeAllLicenses
-POST /deviceAppManagement/mobileApps/{mobileAppId}/userStatuses/{userAppInstallStatusId}/app/revokeAllLicenses
-POST /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppInstallStatusId}/app/revokeAllLicenses
+POST /deviceManagement/reports/getRemoteAssistanceMonitorAvgSessionTimeReport
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -55,32 +53,60 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta ação.
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|notifyManagedDevices|Boleano|Boolean que indica se a notificação de revogação deve ser enviada ao dispositivo|
+|nome|Cadeia de caracteres|Ainda não documentado|
+|select|String collection|Ainda não documentado|
+|search|String|Ainda não documentado|
+|groupBy|String collection|Ainda não documentado|
+|orderBy|String collection|Ainda não documentado|
+|skip|Int32|Ainda não documentado|
+|top|Int32|Ainda não documentado|
+|sessionId|String|Ainda não documentado|
+|filter|String|Ainda não documentado|
 
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, esta ação retornará um código de resposta `204 No Content`.
+Se tiver êxito, essa ação retornará `200 OK` um código de resposta e um Stream no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
 ### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
 ``` http
-POST https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId}/revokeAllLicenses
+POST https://graph.microsoft.com/beta/deviceManagement/reports/getRemoteAssistanceMonitorAvgSessionTimeReport
 
 Content-type: application/json
-Content-length: 36
+Content-length: 278
 
 {
-  "notifyManagedDevices": true
+  "name": "Name value",
+  "select": [
+    "Select value"
+  ],
+  "search": "Search value",
+  "groupBy": [
+    "Group By value"
+  ],
+  "orderBy": [
+    "Order By value"
+  ],
+  "skip": 4,
+  "top": 3,
+  "sessionId": "Session Id value",
+  "filter": "Filter value"
 }
 ```
 
 ### <a name="response"></a>Resposta
 Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 ``` http
-HTTP/1.1 204 No Content
+HTTP/1.1 200 OK
+Content-Type: application/json
+Content-Length: 123
+
+{
+  "value": "Z2V0UmVtb3RlQXNzaXN0YW5jZU1vbml0b3JBdmdTZXNzaW9uVGltZVJlcG9ydCBJbnR1bmUgRG9jIFNhbXBsZSAtMTUzNDAwMDU5OQ=="
+}
 ```
 
 

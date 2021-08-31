@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: de53bc3c18375d772a62a8502c395ace0633b8cd08110427c625ce84d9ab1088
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 6119daa33b3340470bfed4432533308181edc1ff
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54178952"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58806604"
 ---
 # <a name="managedappprotection-resource-type"></a>Tipo de recurso managedAppProtection
 
@@ -36,10 +36,10 @@ Herda de [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |displayName|Cadeia de caracteres|Nome para exibição da política. Herdado de [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
-|description|Cadeia de caracteres|A descrição da política. Herdado de [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
+|descrição|Cadeia de caracteres|A descrição da política. Herdado de [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
 |createdDateTime|DateTimeOffset|A data e a hora da criação da política. Herdado de [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
 |lastModifiedDateTime|DateTimeOffset|Última vez em que a política foi modificada. Herdado de [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
-|roleScopeTagIds|String collection|Lista de marcas de escopo para esta instância entity. Herdado de [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
+|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de marcas de escopo para esta instância entity. Herdado de [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
 |id|Cadeia de caracteres|Chave da entidade. Herdado de [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
 |version|String|Versão da entidade. Herdado de [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
 |periodOfflineBeforeAccessCheck|Duração|Período após o qual o acesso é verificado quando o dispositivo não está conectado à Internet.|
@@ -82,7 +82,7 @@ Herda de [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)
 |managedBrowser|[managedBrowserType](../resources/intune-mam-managedbrowsertype.md)|Indica em quais navegadores gerenciados os links da Internet devem ser abertos. Quando essa propriedade é configurada, ManagedBrowserToOpenLinksRequired deve ser true. Os valores possíveis são: `notConfigured` e `microsoftEdge`.|
 |maximumAllowedDeviceThreatLevel|[managedAppDeviceThreatLevel](../resources/intune-mam-managedappdevicethreatlevel.md)|Nível máximo de ameaça de dispositivo permitido, conforme relatado pelo aplicativo MTD. Os valores possíveis são: `notConfigured`, `secured`, `low`, `medium`, `high`.|
 |mobileThreatDefenseRemediationAction|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|Determina qual ação tomar se o limite de ameaça de defesa de ameaça móvel não for atendido. Warn não é um valor suportado para essa propriedade. Os valores possíveis são: `block`, `wipe`, `warn`.|
-|blockDataIngestionIntoOrganizationDocuments|Boolean|Indica se um usuário pode trazer dados para documentos da organização.|
+|blockDataIngestionIntoOrganizationDocuments|Boleano|Indica se um usuário pode trazer dados para documentos da organização.|
 |allowedDataIngestionLocations|[Coleção managedAppDataIngestionLocation](../resources/intune-mam-managedappdataingestionlocation.md)|Locais de armazenamento de dados em que um usuário pode armazenar dados gerenciados.|
 |appActionIfUnableToAuthenticateUser|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|Se definido, ele especificará qual ação tomar no caso de o usuário não conseguir fazer check-in porque seu token de autenticação é inválido. Isso acontece quando o usuário é excluído ou desabilitado no AAD. Os valores possíveis são: `block`, `wipe`, `warn`.|
 |dialerRestrictionLevel|[managedAppPhoneNumberRedirectLevel](../resources/intune-mam-managedappphonenumberredirectlevel.md)|As classes de aplicativos de discagem que têm permissão para clicar para abrir um número de telefone. Os valores possíveis são: `allApps`, `managedApps`, `customApp`, `blocked`.|
@@ -160,7 +160,6 @@ Veja a seguir uma representação JSON do recurso.
   "dialerRestrictionLevel": "String"
 }
 ```
-
 
 
 

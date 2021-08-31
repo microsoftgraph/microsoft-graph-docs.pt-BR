@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5035e6fef920f62ed0b7df580a60093c47142d24
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 073562eb63f1cfe75a28fb7e5120ae83a7ef3c92
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58257466"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58790538"
 ---
 # <a name="update-windowsmanageddevice"></a>Atualizar windowsManagedDevice
 
@@ -27,9 +27,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
+|Delegado (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Application|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -117,12 +117,12 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [o windo
 |retireAfterDateTime|DateTimeOffset|Indica a hora após a resuspensão automática de um dispositivo devido à ação agendada. Essa propriedade é somente leitura. Herdado [de managedDevice](../resources/intune-devices-manageddevice.md)|
 |usersLoggedOn|[coleção loggedOnUser](../resources/intune-devices-loggedonuser.md)|Indica o último usuário conectado a um dispositivo. Essa propriedade é somente leitura. Herdado [de managedDevice](../resources/intune-devices-manageddevice.md)|
 |preferMdmOverGroupPolicyAppliedDateTime|DateTimeOffset|Relata que DateTime a configuração preferMdmOverGroupPolicy foi definida.  Quando definidas, as configurações do MDM do Intune substituirão as configurações da Política de Grupo se houver um conflito. Somente leitura. Essa propriedade é somente leitura. Herdado [de managedDevice](../resources/intune-devices-manageddevice.md)|
-|autopilotEnrolled|Boolean|Relata se o dispositivo gerenciado está inscrito por meio de piloto automático. Essa propriedade é somente leitura. Herdado [de managedDevice](../resources/intune-devices-manageddevice.md)|
-|requireUserEnrollmentApproval|Boolean|Relata se o dispositivo iOS gerenciado é o registro de aprovação do usuário. Essa propriedade é somente leitura. Herdado [de managedDevice](../resources/intune-devices-manageddevice.md)|
+|autopilotEnrolled|Boleano|Relata se o dispositivo gerenciado está inscrito por meio de piloto automático. Essa propriedade é somente leitura. Herdado [de managedDevice](../resources/intune-devices-manageddevice.md)|
+|requireUserEnrollmentApproval|Boleano|Relata se o dispositivo iOS gerenciado é o registro de aprovação do usuário. Essa propriedade é somente leitura. Herdado [de managedDevice](../resources/intune-devices-manageddevice.md)|
 |managementCertificateExpirationDate|DateTimeOffset|Relata a data de expiração do certificado de gerenciamento de dispositivo. Essa propriedade é somente leitura. Herdado [de managedDevice](../resources/intune-devices-manageddevice.md)|
 |iccid|Cadeia de caracteres|Identificador integrado de cartão de circuito, é o número de identificação exclusivo de um cartão SIM. Essa propriedade é somente leitura. Herdado [de managedDevice](../resources/intune-devices-manageddevice.md)|
 |udid|Cadeia de caracteres|Identificador de dispositivo exclusivo para dispositivos iOS e macOS. Essa propriedade é somente leitura. Herdado [de managedDevice](../resources/intune-devices-manageddevice.md)|
-|roleScopeTagIds|String collection|Lista de IDs de marca de escopo para esta instância do dispositivo. Herdado [de managedDevice](../resources/intune-devices-manageddevice.md)|
+|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de IDs de marca de escopo para esta instância do dispositivo. Herdado [de managedDevice](../resources/intune-devices-manageddevice.md)|
 |windowsActiveMalwareCount|Int32|Contagem de malware ativo para este dispositivo windows. Essa propriedade é somente leitura. Herdado [de managedDevice](../resources/intune-devices-manageddevice.md)|
 |windowsRemediatedMalwareCount|Int32|Contagem de malwares remediados para este dispositivo windows. Essa propriedade é somente leitura. Herdado [de managedDevice](../resources/intune-devices-manageddevice.md)|
 |notes|String|Observações sobre o dispositivo criado pelo administrador de IT Herdado de [managedDevice](../resources/intune-devices-manageddevice.md)|
@@ -566,7 +566,6 @@ Content-Length: 8674
   "enrollmentProfileName": "Enrollment Profile Name value"
 }
 ```
-
 
 
 

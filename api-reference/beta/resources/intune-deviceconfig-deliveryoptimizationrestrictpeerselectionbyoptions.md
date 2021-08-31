@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 95d36f1630fe88332b88ef668bfdfce406ff9491927924e04cdb0870d9a9a6de
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 364e3212855e9192f1b386f13826043630fb1996
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54227481"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58820916"
 ---
 # <a name="deliveryoptimizationrestrictpeerselectionbyoptions-enum-type"></a>tipo de número deliveryOptimizationRestrictPeerSelectionByOptions
 
@@ -26,8 +26,7 @@ Valores para restringir a seleção por pares.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |notConfigured|0|Não configurado.|
-|subnetMask|1 |Máscara de sub-rede.|
-
+|subnetMask|1|Máscara de sub-rede.|
 
 
 

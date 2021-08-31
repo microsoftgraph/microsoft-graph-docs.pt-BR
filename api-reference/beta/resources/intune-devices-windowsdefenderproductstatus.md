@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 17a5854c2579a039012b31950cce8660f6031a8c3048e437ffc52e94f6a18f23
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 0525b8ab93b19e75336085468fa8d82f40320944
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54122408"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58820860"
 ---
 # <a name="windowsdefenderproductstatus-enum-type"></a>tipo de número windowsDefenderProductStatus
 
@@ -26,7 +26,7 @@ Status do produto Windows Defender
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |noStatus|0|Sem status|
-|serviceNotRunning|1 |Serviço não em execução|
+|serviceNotRunning|1|Serviço não em execução|
 |serviceStartedWithoutMalwareProtection|2|Serviço iniciado sem qualquer mecanismo de proteção contra malware|
 |pendingFullScanDueToThreatAction|4 |Verificação completa pendente devido à ação de ameaça|
 |pendingRebootDueToThreatAction|8 |Reinicialização pendente devido à ação de ameaça|
@@ -51,7 +51,6 @@ Status do produto Windows Defender
 |platformAboutToBeOutdated|4194304|A plataforma está prestes a ficar desatualizada|
 |signatureOrPlatformEndOfLifeIsPastOrIsImpending|8388608|A assinatura ou o fim da vida útil da plataforma é passado ou está pendente|
 |windowsSModeSignaturesInUseOnNonWin10SInstall|16777216|Windows Assinaturas SMode ainda em uso na instalação não Win10S|
-
 
 
 

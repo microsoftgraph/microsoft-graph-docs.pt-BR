@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: acc7fa575e7fcabf6db4e39c79a6ea9ec55b6ef9
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 0ae341c0ccdcac7a5e181c622e6be9b60bf14d5b
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58266286"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58784657"
 ---
 # <a name="create-iosgeneraldeviceconfiguration"></a>Criar iosGeneralDeviceConfiguration
 
@@ -27,9 +27,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
+|Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Application|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -56,13 +56,13 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar iosGener
 |:---|:---|:---|
 |id|Cadeia de caracteres|Chave da entidade. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|roleScopeTagIds|String collection|Lista de marcas de escopo para esta instância entity. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|supportsScopeTags|Boolean|Indica se a Configuração de Dispositivo subjacente dá suporte ou não à atribuição de marcas de escopo. A atribuição à propriedade ScopeTags não é permitida quando esse valor é falso e as entidades não estarão visíveis para usuários com escopo. Isso ocorre para políticas herdadas criadas no Silverlight e podem ser resolvidas excluindo e recriando a política no Portal do Azure. Essa propriedade é somente leitura. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de marcas de escopo para esta instância entity. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|supportsScopeTags|Boleano|Indica se a Configuração de Dispositivo subjacente dá suporte ou não à atribuição de marcas de escopo. A atribuição à propriedade ScopeTags não é permitida quando esse valor é falso e as entidades não estarão visíveis para usuários com escopo. Isso ocorre para políticas herdadas criadas no Silverlight e podem ser resolvidas excluindo e recriando a política no Portal do Azure. Essa propriedade é somente leitura. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|A aplicabilidade da edição do sistema operacional para esta Política. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|A regra de aplicabilidade da versão do sistema operacional para esta Política. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|A regra de aplicabilidade do modo de dispositivo para esta Política. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|DateTime em que o objeto foi criado. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|description|Cadeia de caracteres|O administrador forneceu a descrição da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|descrição|Cadeia de caracteres|O administrador forneceu a descrição da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |displayName|Cadeia de caracteres|O administrador forneceu o nome da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |versão|Int32|Versão da configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |accountBlockModification|Boolean|Indica se a modificação da conta será permitida ou não quando o dispositivo estiver no modo supervisionado.|
@@ -81,20 +81,20 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar iosGener
 |appStoreBlockInAppPurchases|Boolean|Indica se o usuário será ou não impedido de fazer compras no aplicativo.|
 |appStoreBlockUIAppInstallation|Boolean|Indica se o aplicativo da App Store será bloqueado ou não, o que não restringe a instalação por meio de aplicativos do host. Aplica-se apenas ao modo supervisionado (iOS 9.0 ou posterior).|
 |appStoreRequirePassword|Boolean|Indica se uma senha deve ou não ser exigida ao usar a loja de aplicativos.|
-|autoFillForceAuthentication|Boolean|Indica se a autenticação do usuário deve ou não forçar o preenchimento automático de senhas e informações de cartão de crédito no Safari e em outros aplicativos em dispositivos supervisionados.|
+|autoFillForceAuthentication|Boleano|Indica se a autenticação do usuário deve ou não forçar o preenchimento automático de senhas e informações de cartão de crédito no Safari e em outros aplicativos em dispositivos supervisionados.|
 |bluetoothBlockModification|Boolean|Indica se a modificação das configurações do Bluetooth será ou não permitida quando o dispositivo estiver no modo supervisionado (iOS 10.0 ou posterior).|
 |cameraBlocked|Boolean|Indica se o usuário será ou não impedido de acessar a câmera do dispositivo. Requer um dispositivo supervisionado para iOS 13 e posterior.|
 |cellularBlockDataRoaming|Boolean|Indica se o roaming de dados deve ou não ser bloqueado.|
 |cellularBlockGlobalBackgroundFetchWhileRoaming|Boolean|Indica se a busca global em segundo plano será ou não bloqueada durante roaming.|
 |cellularBlockPerAppDataModification|Boolean|Indica se as alterações em configurações de uso de dados do aplicativo de rede celular serão ou não permitidas quando o dispositivo estiver no modo supervisionado.|
 |cellularBlockPersonalHotspot|Boolean|Indica se o hotspot pessoal deve ou não ser bloqueado.|
-|cellularBlockPlanModification|Boolean|Indica se os usuários podem ou não permitir que os usuários alterem as configurações do plano celular em um dispositivo supervisionado.|
+|cellularBlockPlanModification|Boleano|Indica se os usuários podem ou não permitir que os usuários alterem as configurações do plano celular em um dispositivo supervisionado.|
 |cellularBlockVoiceRoaming|Boolean|Indica se o roaming de voz deve ou não ser bloqueado.|
 |certificatesBlockUntrustedTlsCertificates|Boolean|Indica se os certificados TLS não confiáveis devem ou não ser bloqueados.|
 |classroomAppBlockRemoteScreenObservation|Boolean|Indica se a observação de tela remota pelo aplicativo Classroom será ou não permitida quando o dispositivo estiver no modo supervisionado (iOS 9.3 ou posterior).|
 |classroomAppForceUnpromptedScreenObservation|Boolean|Indica se o professor de um curso gerenciado no aplicativo Classroom terá ou não permissão automática para visualizar a tela de um aluno sem solicitar quando o dispositivo estiver no modo supervisionado.|
-|classroomForceAutomaticallyJoinClasses|Boolean|Indica se o usuário deve ou não dar permissão automaticamente às solicitações do professor, sem solicitar ao aluno, quando o dispositivo estiver no modo supervisionado.|
-|classroomForceUnpromptedAppAndDeviceLock|Boolean|Indica se o professor deve ou não permitir que o professor bloqueie aplicativos ou o dispositivo sem solicitar ao aluno. Apenas em modo supervisionado.|
+|classroomForceAutomaticallyJoinClasses|Boleano|Indica se o usuário deve ou não dar permissão automaticamente às solicitações do professor, sem solicitar ao aluno, quando o dispositivo estiver no modo supervisionado.|
+|classroomForceUnpromptedAppAndDeviceLock|Boleano|Indica se o professor deve ou não permitir que o professor bloqueie aplicativos ou o dispositivo sem solicitar ao aluno. Apenas em modo supervisionado.|
 |compliantAppsList|Coleção [appListItem](../resources/intune-deviceconfig-applistitem.md)|Lista de aplicativos em conformidade (lista de permissões ou lista de bloqueios, controladas por CompliantAppListType). Essa coleção pode conter um máximo de 10.000 elementos.|
 |compliantAppListType|[appListType](../resources/intune-deviceconfig-applisttype.md)|Lista que está em AppComplianceList. Os valores possíveis são: `none`, `appsInListCompliant`, `appsNotInListCompliant`.|
 |configurationProfileBlockChanges|Boolean|Indica se o usuário será ou não impedido de instalar perfis e certificados de configuração de maneira interativa quando o dispositivo estiver no modo supervisionado.|
@@ -109,7 +109,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar iosGener
 |emailInDomainSuffixes|String collection|Um endereço de email sem um sufixo que corresponde a qualquer uma dessas strings será considerado fora do domínio.|
 |enterpriseAppBlockTrust|Boolean|Indica se o usuário será ou não impedido de confiar em um aplicativo corporativo.|
 |enterpriseAppBlockTrustModification|Boolean|\[Preterido Configurar essa configuração e definir o valor como \] "true" não tem efeito no dispositivo.|
-|esimBlockModification|Boolean|Indica se é ou não para permitir a adição ou remoção de planos celulares no eSIM de um dispositivo supervisionado.|
+|esimBlockModification|Boleano|Indica se é ou não para permitir a adição ou remoção de planos celulares no eSIM de um dispositivo supervisionado.|
 |faceTimeBlocked|Boolean|Indica se o usuário será ou não impedido de usar o FaceTime. Requer um dispositivo supervisionado para iOS 13 e posterior.|
 |findMyFriendsBlocked|Boolean|Indica se deve ou não bloquear as alterações para Encontrar Meus Amigos quando o dispositivo estiver no modo supervisionado.|
 |gamingBlockGameCenterFriends|Boolean|Indica se o usuário será ou não impedido de ter amigos no Game Center. Requer um dispositivo supervisionado para iOS 13 e posterior.|
@@ -137,18 +137,18 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar iosGener
 |kioskModeAllowAssistiveSpeak|Boolean|Indica se a fala assistencial será permitida ou não no modo quiosque.|
 |kioskModeAllowAssistiveTouchSettings|Boolean|Indica se o acesso às configurações do Toque assistencial será permitido ou não no modo quiosque.|
 |kioskModeAllowAutoLock|Boolean|Indica se o bloqueio automático do dispositivo será permitido ou não no modo quiosque. A funcionalidade dessa propriedade é redundante com o padrão do sistema operacional e é preterida. Em vez disso, use KioskModeBlockAutoLock.|
-|kioskModeBlockAutoLock|Boolean|Indica se o bloqueio automático do dispositivo deve ou não ser bloqueado no modo quiosque.|
+|kioskModeBlockAutoLock|Boleano|Indica se o bloqueio automático do dispositivo deve ou não ser bloqueado no modo quiosque.|
 |kioskModeAllowColorInversionSettings|Boolean|Indica se o acesso às configurações de Inversão de cores será permitido ou não no modo quiosque.|
 |kioskModeAllowRingerSwitch|Boolean|Indica se o uso do botão de toque será permitido ou não no modo quiosque. A funcionalidade dessa propriedade é redundante com o padrão do sistema operacional e é preterida. Use KioskModeBlockRingerSwitch.|
-|kioskModeBlockRingerSwitch|Boolean|Indica se o uso do aneler deve ou não ser bloqueado enquanto estiver no modo quiosque.|
+|kioskModeBlockRingerSwitch|Boleano|Indica se o uso do aneler deve ou não ser bloqueado enquanto estiver no modo quiosque.|
 |kioskModeAllowScreenRotation|Boolean|Indica se a rotação de tela será permitida ou não no modo quiosque. A funcionalidade dessa propriedade é redundante com o padrão do sistema operacional e é preterida. Use KioskModeBlockScreenRotation em vez disso.|
-|kioskModeBlockScreenRotation|Boolean|Indica se a rotação da tela deve ou não ser bloqueado enquanto estiver no modo quiosque.|
+|kioskModeBlockScreenRotation|Boleano|Indica se a rotação da tela deve ou não ser bloqueado enquanto estiver no modo quiosque.|
 |kioskModeAllowSleepButton|Boolean|Indica se o uso do botão de suspensão será permitido ou não no modo quiosque. A funcionalidade dessa propriedade é redundante com o padrão do sistema operacional e é preterida. Use KioskModeBlockSleepButton em vez disso.|
 |kioskModeBlockSleepButton|Boolean|Indica se o uso do botão de sono deve ou não ser bloqueado enquanto estiver no modo quiosque.|
 |kioskModeAllowTouchscreen|Boolean|Indica se o uso da tela touch será permitido ou não no modo quiosque. A funcionalidade dessa propriedade é redundante com o padrão do sistema operacional e é preterida. Use KioskModeBlockTouchscreen em vez disso.|
-|kioskModeBlockTouchscreen|Boolean|Indica se o uso da tela sensível ao toque deve ou não ser bloqueado no modo quiosque.|
-|kioskModeEnableVoiceControl|Boolean|Indica se o controle de voz deve ou não ser habilitado no modo quiosque.|
-|kioskModeAllowVoiceControlModification|Boolean|Indica se o usuário pode ou não alternar o controle de voz no modo quiosque.|
+|kioskModeBlockTouchscreen|Boleano|Indica se o uso da tela sensível ao toque deve ou não ser bloqueado no modo quiosque.|
+|kioskModeEnableVoiceControl|Boleano|Indica se o controle de voz deve ou não ser habilitado no modo quiosque.|
+|kioskModeAllowVoiceControlModification|Boleano|Indica se o usuário pode ou não alternar o controle de voz no modo quiosque.|
 |kioskModeAllowVoiceOverSettings|Boolean|Indica se o acesso às configurações de voice over será permitido ou não no modo quiosque.|
 |kioskModeAllowVolumeButtons|Boolean|Indica se o uso dos botões de volume será permitido ou não no modo quiosque. A funcionalidade dessa propriedade é redundante com o padrão do sistema operacional e é preterida. Use KioskModeBlockVolumeButtons.|
 |kioskModeBlockVolumeButtons|Boolean|Indica se os botões de volume devem ou não ser bloqueados no modo quiosque.|
@@ -192,7 +192,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar iosGener
 |passcodeRequiredType|[requiredPasswordType](../resources/intune-deviceconfig-requiredpasswordtype.md)|Tipo de senha necessário. Os valores possíveis são: `deviceDefault`, `alphanumeric`, `numeric`.|
 |passcodeRequired|Boolean|Indica se um código de acesso deve ou não ser exigido.|
 |podcastsBlocked|Boolean|Indica se o usuário será ou não impedido de usar podcasts no dispositivo supervisionado (iOS 8.0 e posterior).|
-|proximityBlockSetupToNewDevice|Boolean|Indica se o prompt deve ou não habilitar a instalação de dispositivos próximos com um dispositivo supervisionado.|
+|proximityBlockSetupToNewDevice|Booliano|Indica se o prompt deve ou não habilitar a instalação de dispositivos próximos com um dispositivo supervisionado.|
 |safariBlockAutofill|Boolean|Indica se o usuário será ou não impedido de usar o preenchimento automático no Safari. Requer um dispositivo supervisionado para iOS 13 e posterior.|
 |safariBlockJavaScript|Boolean|Indica se o JavaScript deve ou não ser bloqueado no Safari.|
 |safariBlockPopups|Boolean|Indica se os popups devem ou não ser bloqueados no Safari.|
@@ -207,47 +207,49 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar iosGener
 |siriBlockUserGeneratedContent|Boolean|Indica se a Siri será ou não impedida de consultar conteúdos gerados pelo usuário quando usada em um dispositivo supervisionado.|
 |siriRequireProfanityFilter|Boolean|Indica se a Siri deve ou não ser impedida de utilizar linguagem imprópria no dispositivo supervisionado.|
 |softwareUpdatesEnforcedDelayInDays|Int32|Define quantos dias uma atualização de software será usada para um dispositivo supervisionado. Valores válidos de 0 a 90|
-|softwareUpdatesForceDelayed|Boolean|Indica se o usuário deve ou não atrasar a visibilidade das atualizações de software quando o dispositivo estiver no modo supervisionado.|
+|softwareUpdatesForceDelayed|Boleano|Indica se o usuário deve ou não atrasar a visibilidade das atualizações de software quando o dispositivo estiver no modo supervisionado.|
 |spotlightBlockInternetResults|Boolean|Indica se a Pesquisa em Destaque poderá ou não retornar resultados da Internet no dispositivo supervisionado.|
 |voiceDialingBlocked|Boolean|Indica se a discagem de voz deve ou não ser bloqueada.|
 |wallpaperBlockModification|Boolean|Indica se a modificação de papel de parede será permitida ou não no dispositivo supervisionado (iOS 9.0 e posterior).|
 |wiFiConnectOnlyToConfiguredNetworks|Boolean|Indica se o dispositivo será ou não forçado a usar apenas redes Wi-Fi de perfis de configuração quando o dispositivo estiver no modo supervisionado. Disponível para dispositivos que executam versões 14.4 e anteriores do iOS e iPadOS. Os dispositivos que executam 14,5+ devem usar a configuração "WiFiConnectToAllowedNetworksOnlyForced.|
-|classroomForceRequestPermissionToLeaveClasses|Boolean|Indica se um aluno matriculado em um curso não controlado via Classroom solicitará permissão do professor ao tentar sair do curso (iOS 11.3 e posterior).|
-|keychainBlockCloudSync|Boolean|Indica se a sincronização do chaveiro do iCloud está bloqueada ou não. Requer um dispositivo supervisionado para iOS 13 e posterior.|
-|pkiBlockOTAUpdates|Boolean|Indica se as atualizações PKI sobre o ar estão ou não bloqueadas. Definir essa restrição como false não desabilita as verificações de CRL e OCSP (iOS 7.0 e posterior).|
-|privacyForceLimitAdTracking|Boolean|Indica se o controle de ad é limitado. (iOS 7.0 e posterior).|
-|enterpriseBookBlockBackup|Boolean|Indica se o Enterprise de reserva está bloqueado ou não.|
-|enterpriseBookBlockMetadataSync|Boolean|Indica se a sincronização de Enterprise e realçamentos do livro está bloqueada.|
-|airPrintBlocked|Boolean|Indica se o AirPrint está ou não bloqueado (iOS 11.0 e posterior).|
-|airPrintBlockCredentialsStorage|Boolean|Indica se o armazenamento de chaves de nome de usuário e senha para Airprint está bloqueado (iOS 11.0 e posterior).|
-|airPrintForceTrustedTLS|Boolean|Indica se certificados confiáveis são necessários para comunicação de impressão TLS (iOS 11.0 e posterior).|
-|airPrintBlockiBeaconDiscovery|Boolean|Indica se a descoberta iBeacon ou não de impressoras AirPrint está bloqueada. Isso impede que os sinalizadores AirPrint Bluetooth phishing para tráfego de rede (iOS 11.0 e posterior).|
-|filesNetworkDriveAccessBlocked|Boolean|Indica se os dispositivos podem acessar arquivos ou outros recursos em um servidor de rede usando o protocolo SMB (Server Message Block). Disponível para dispositivos que executam iOS e iPadOS, versões 13.0 e posteriores.|
-|filesUsbDriveAccessBlocked|Boolean|Indica se os sevices com acesso podem se conectar e abrir arquivos em uma unidade USB. Disponível para dispositivos que executam iOS e iPadOS, versões 13.0 e posteriores.|
-|wifiPowerOnForced|Boolean|Indica se o Wi-Fi permanece ou não, mesmo quando o dispositivo está no modo de avião. Disponível para dispositivos que executam iOS e iPadOS, versões 13.0 e posteriores.|
-|blockSystemAppRemoval|Boolean|Indica se a remoção ou não de aplicativos do sistema do dispositivo está bloqueada em um dispositivo supervisionado (iOS 11.0 e posterior).|
-|vpnBlockCreation|Boolean|Indica se a criação de configurações VPN está ou não bloqueada (iOS 11.0 e posterior).|
-|appRemovalBlocked|Boolean|Indica se a remoção de aplicativos é permitida.|
-|usbRestrictedModeBlocked|Boolean|Indica se a conexão com acessórios USB enquanto o dispositivo está bloqueado é permitida (iOS 11.4.1 e posterior).|
-|passwordBlockAutoFill|Boolean|Indica se o recurso Senhas de Preenchimento Automático é permitido (iOS 12.0 e posterior).|
-|passwordBlockProximityRequests|Boolean|Indica se deve ou não bloquear a solicitação de senhas de dispositivos próximos (iOS 12.0 e posterior).|
-|passwordBlockAirDropSharing|Boolean|Indica se deve ou não bloquear o compartilhamento de senhas com o recurso de senhas do AirDrop iOS 12.0 e posterior).|
-|dateAndTimeForceSetAutomatically|Boolean|Indica se o recurso Data e Hora "Definir Automaticamente" está habilitado e não pode ser desligado pelo usuário (iOS 12.0 e posterior).|
-|contactsAllowManagedToUnmanagedWrite|Boolean|Indica se os aplicativos gerenciados podem ou não gravar contatos em contas de contatos não gerenciadas (iOS 12.0 e posteriores).|
-|contactsAllowUnmanagedToManagedRead|Boolean|Indica se aplicativos não gerenciados podem ou não ler de contas de contatos gerenciados (iOS 12.0 ou posterior).|
-|cellularBlockPersonalHotspotModification|Boolean|Indica se o usuário deve ou não bloquear a modificação da configuração de hotspot pessoal (iOS 12.2 ou posterior).|
-|continuousPathKeyboardBlocked|Boolean|Indica se o teclado de caminho contínuo deve ou não ser bloqueado quando o dispositivo é supervisionado (iOS 13 ou posterior).|
-|findMyDeviceInFindMyAppBlocked|Boolean|Indica se o dispositivo deve ou não ser bloqueado quando o dispositivo é supervisionado (iOS 13 ou posterior).|
-|findMyFriendsInFindMyAppBlocked|Boolean|Indica se deve ou não bloquear Find My Friends quando o dispositivo é supervisionado (iOS 13 ou posterior).|
-|iTunesBlocked|Boolean|Indica se o aplicativo iTunes deve ou não ser bloqueado. Requer um dispositivo supervisionado para iOS 13 e posterior.|
-|sharedDeviceBlockTemporarySessions|Boolean|Indica se as sessões temporárias de iPads compartilhados (iOS 13.4 ou posteriores) são ou não bloqueados.|
-|appClipsBlocked|Boolean|Impede que um usuário adicione clipes de aplicativo e remova todos os Clipes de Aplicativo existentes no dispositivo.|
-|applePersonalizedAdsBlocked|Boolean|Limita a publicidade personalizada da Apple quando true. Disponível no iOS 14 e posterior.|
+|classroomForceRequestPermissionToLeaveClasses|Booliano|Indica se um aluno matriculado em um curso não controlado via Classroom solicitará permissão do professor ao tentar sair do curso (iOS 11.3 e posterior).|
+|keychainBlockCloudSync|Boleano|Indica se a sincronização do chaveiro do iCloud está bloqueada ou não. Requer um dispositivo supervisionado para iOS 13 e posterior.|
+|pkiBlockOTAUpdates|Boleano|Indica se as atualizações PKI sobre o ar estão ou não bloqueadas. Definir essa restrição como false não desabilita as verificações de CRL e OCSP (iOS 7.0 e posterior).|
+|privacyForceLimitAdTracking|Booliano|Indica se o controle de ad é limitado. (iOS 7.0 e posterior).|
+|enterpriseBookBlockBackup|Boleano|Indica se o Enterprise de reserva está bloqueado ou não.|
+|enterpriseBookBlockMetadataSync|Booliano|Indica se a sincronização de Enterprise e realçamentos do livro está bloqueada.|
+|airPrintBlocked|Boleano|Indica se o AirPrint está ou não bloqueado (iOS 11.0 e posterior).|
+|airPrintBlockCredentialsStorage|Boleano|Indica se o armazenamento de chaves de nome de usuário e senha para Airprint está bloqueado (iOS 11.0 e posterior).|
+|airPrintForceTrustedTLS|Boleano|Indica se certificados confiáveis são necessários para comunicação de impressão TLS (iOS 11.0 e posterior).|
+|airPrintBlockiBeaconDiscovery|Boleano|Indica se a descoberta iBeacon ou não de impressoras AirPrint está bloqueada. Isso impede que os sinalizadores AirPrint Bluetooth phishing para tráfego de rede (iOS 11.0 e posterior).|
+|filesNetworkDriveAccessBlocked|Boleano|Indica se os dispositivos podem acessar arquivos ou outros recursos em um servidor de rede usando o protocolo SMB (Server Message Block). Disponível para dispositivos que executam iOS e iPadOS, versões 13.0 e posteriores.|
+|filesUsbDriveAccessBlocked|Boleano|Indica se os sevices com acesso podem se conectar e abrir arquivos em uma unidade USB. Disponível para dispositivos que executam iOS e iPadOS, versões 13.0 e posteriores.|
+|wifiPowerOnForced|Boleano|Indica se o Wi-Fi permanece ou não, mesmo quando o dispositivo está no modo de avião. Disponível para dispositivos que executam iOS e iPadOS, versões 13.0 e posteriores.|
+|blockSystemAppRemoval|Boleano|Indica se a remoção ou não de aplicativos do sistema do dispositivo está bloqueada em um dispositivo supervisionado (iOS 11.0 e posterior).|
+|vpnBlockCreation|Boleano|Indica se a criação de configurações VPN está ou não bloqueada (iOS 11.0 e posterior).|
+|appRemovalBlocked|Boleano|Indica se a remoção de aplicativos é permitida.|
+|usbRestrictedModeBlocked|Boleano|Indica se a conexão com acessórios USB enquanto o dispositivo está bloqueado é permitida (iOS 11.4.1 e posterior).|
+|passwordBlockAutoFill|Boleano|Indica se o recurso Senhas de Preenchimento Automático é permitido (iOS 12.0 e posterior).|
+|passwordBlockProximityRequests|Boleano|Indica se deve ou não bloquear a solicitação de senhas de dispositivos próximos (iOS 12.0 e posterior).|
+|passwordBlockAirDropSharing|Boleano|Indica se deve ou não bloquear o compartilhamento de senhas com o recurso de senhas do AirDrop iOS 12.0 e posterior).|
+|dateAndTimeForceSetAutomatically|Boleano|Indica se o recurso Data e Hora "Definir Automaticamente" está habilitado e não pode ser desligado pelo usuário (iOS 12.0 e posterior).|
+|contactsAllowManagedToUnmanagedWrite|Boleano|Indica se os aplicativos gerenciados podem ou não gravar contatos em contas de contatos não gerenciadas (iOS 12.0 e posteriores).|
+|contactsAllowUnmanagedToManagedRead|Boleano|Indica se aplicativos não gerenciados podem ou não ler de contas de contatos gerenciados (iOS 12.0 ou posterior).|
+|cellularBlockPersonalHotspotModification|Boleano|Indica se o usuário deve ou não bloquear a modificação da configuração de hotspot pessoal (iOS 12.2 ou posterior).|
+|continuousPathKeyboardBlocked|Boleano|Indica se o teclado de caminho contínuo deve ou não ser bloqueado quando o dispositivo é supervisionado (iOS 13 ou posterior).|
+|findMyDeviceInFindMyAppBlocked|Boleano|Indica se o dispositivo deve ou não ser bloqueado quando o dispositivo é supervisionado (iOS 13 ou posterior).|
+|findMyFriendsInFindMyAppBlocked|Booliano|Indica se deve ou não bloquear Find My Friends quando o dispositivo é supervisionado (iOS 13 ou posterior).|
+|iTunesBlocked|Boleano|Indica se o aplicativo iTunes deve ou não ser bloqueado. Requer um dispositivo supervisionado para iOS 13 e posterior.|
+|sharedDeviceBlockTemporarySessions|Boleano|Indica se as sessões temporárias de iPads compartilhados (iOS 13.4 ou posteriores) são ou não bloqueados.|
+|appClipsBlocked|Boleano|Impede que um usuário adicione clipes de aplicativo e remova todos os Clipes de Aplicativo existentes no dispositivo.|
+|applePersonalizedAdsBlocked|Booliano|Limita a publicidade personalizada da Apple quando true. Disponível no iOS 14 e posterior.|
 |nfcBlocked|Boolean|Desabilite a NFC para impedir que dispositivos emparelhem com outros dispositivos habilitados para NFC. Disponível para dispositivos iOS/iPadOS que executam 14.2 e posteriores.|
-|autoUnlockBlocked|Boolean|Impede que os usuários desbloqueiem seus dispositivos com o Apple Watch. Disponível para dispositivos que executam versões 14.5 e posteriores do iOS e iPadOS.|
-|unpairedExternalBootToRecoveryAllowed|Boolean|Permitir que os usuários inicialm dispositivos no modo de recuperação com dispositivos não organizados. Disponível para dispositivos que executam versões 14.5 e posteriores do iOS e iPadOS.|
-|onDeviceOnlyDictationForced|Boolean|Desabilita conexões com servidores Siri para que os usuários não possam usar a Siri para ditar o texto. Disponível para dispositivos que executam versões 14.5 e posteriores do iOS e iPadOS.|
-|wiFiConnectToAllowedNetworksOnlyForced|Boolean|Exigir que os dispositivos usem Wi-Fi redes configuradas por meio de perfis de configuração. Disponível para dispositivos que executam versões 14.5 e posteriores do iOS e iPadOS.|
+|autoUnlockBlocked|Booliano|Impede que os usuários desbloqueiem seus dispositivos com o Apple Watch. Disponível para dispositivos que executam versões 14.5 e posteriores do iOS e iPadOS.|
+|unpairedExternalBootToRecoveryAllowed|Boleano|Permitir que os usuários inicialm dispositivos no modo de recuperação com dispositivos não organizados. Disponível para dispositivos que executam versões 14.5 e posteriores do iOS e iPadOS.|
+|onDeviceOnlyDictationForced|Booliano|Desabilita conexões com servidores Siri para que os usuários não possam usar a Siri para ditar o texto. Disponível para dispositivos que executam versões 14.5 e posteriores do iOS e iPadOS.|
+|wiFiConnectToAllowedNetworksOnlyForced|Booliano|Exigir que os dispositivos usem Wi-Fi redes configuradas por meio de perfis de configuração. Disponível para dispositivos que executam versões 14.5 e posteriores do iOS e iPadOS.|
+|onDeviceOnlyTranslationForced|Boleano|Quando definida como TRUE, a configuração desabilita conexões com servidores Siri para que os usuários não possam usar Siri para traduzir texto. Quando definida como FALSE, a configuração permite que as conexões aos servidores Siri aos usuários possam usar Siri para traduzir texto. Disponível para dispositivos que executam versões 15.0 e posteriores do iOS e iPadOS.|
+|managedPasteboardRequired|Boleano|O gerenciamento aberto controla como as pessoas compartilham dados entre aplicativos gerenciados e não gerenciados. Definir isso como true impõe restrições de cópia/colagem com base em como você configurou Bloquear exibição de documentos corporativos em aplicativos não organizados e Bloquear a exibição de documentos não corporativos em aplicativos <b>corporativos.</b> <b></b>|
 |kioskModeAppType|[iosKioskModeAppType](../resources/intune-deviceconfig-ioskioskmodeapptype.md)|Tipo de aplicativo a ser executado no modo quiosque. Os valores possíveis são: `notConfigured`, `appStoreApp`, `managedApp`, `builtInApp`.|
 
 
@@ -262,7 +264,7 @@ Este é um exemplo da solicitação.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 10827
+Content-length: 10907
 
 {
   "@odata.type": "#microsoft.graph.iosGeneralDeviceConfiguration",
@@ -558,6 +560,8 @@ Content-length: 10827
   "unpairedExternalBootToRecoveryAllowed": true,
   "onDeviceOnlyDictationForced": true,
   "wiFiConnectToAllowedNetworksOnlyForced": true,
+  "onDeviceOnlyTranslationForced": true,
+  "managedPasteboardRequired": true,
   "kioskModeAppType": "appStoreApp"
 }
 ```
@@ -567,7 +571,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 10999
+Content-Length: 11079
 
 {
   "@odata.type": "#microsoft.graph.iosGeneralDeviceConfiguration",
@@ -866,10 +870,11 @@ Content-Length: 10999
   "unpairedExternalBootToRecoveryAllowed": true,
   "onDeviceOnlyDictationForced": true,
   "wiFiConnectToAllowedNetworksOnlyForced": true,
+  "onDeviceOnlyTranslationForced": true,
+  "managedPasteboardRequired": true,
   "kioskModeAppType": "appStoreApp"
 }
 ```
-
 
 
 

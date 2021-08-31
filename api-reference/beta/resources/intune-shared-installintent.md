@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: c141c3005dd71036926c37378fd9f993b5eba5cfeffce284ed9e2b1c0156649e
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 170a784b7090e70110c015d914ef0e96a36fbb3a
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54209795"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58784174"
 ---
 # <a name="installintent-enum-type"></a>Tipo de número installIntent
 
@@ -26,10 +26,9 @@ Valores possíveis para a intenção de instalação escolhida pelo administrado
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |disponível|0|Intenção de instalação disponível.|
-|obrigatório|1 |Intenção de instalação necessária.|
+|obrigatório|1|Intenção de instalação necessária.|
 |desinstalar|2|Intenção de desinstalar a instalação.|
-|availableWithoutEnrollment|3 |Disponível sem intenção de instalação do registro.|
-
+|availableWithoutEnrollment|3|Disponível sem intenção de instalação do registro.|
 
 
 

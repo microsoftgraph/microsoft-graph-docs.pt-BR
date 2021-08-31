@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 7431ffb39a72bb83a561e53972aadecb67512bfe445ede5850a07c7002b1f8b6
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: dec9093a39c0472715a6dc3ba0fe9ddc69987f73
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54213127"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58816279"
 ---
 # <a name="devicemanagementconfigurationintegersettingvalue-resource-type"></a>Tipo de recurso deviceManagementConfigurationIntegerSettingValue
 
@@ -52,7 +52,6 @@ Veja a seguir uma representação JSON do recurso.
   "value": 1024
 }
 ```
-
 
 
 

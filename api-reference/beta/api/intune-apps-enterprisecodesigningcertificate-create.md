@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: de1d50865f5b98b3e95dd0448d013e0f4c9c3e1c2ed284a94d43ac58cdef89fa
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 3c14cc0a2d049969bddfa4e4bb50cf6c5ef8792d
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54216137"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58818509"
 ---
 # <a name="create-enterprisecodesigningcertificate"></a>Criar enterpriseCodeSigningCertificate
 
@@ -110,7 +110,6 @@ Content-Length: 439
   "uploadDateTime": "2016-12-31T23:58:46.5747426-08:00"
 }
 ```
-
 
 
 

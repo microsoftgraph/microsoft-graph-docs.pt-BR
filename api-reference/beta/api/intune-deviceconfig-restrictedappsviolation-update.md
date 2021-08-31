@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: eb9af387c90d291010f7650cd83b6f78d6623da6
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: ffb547d7b5fd64916212b2f2332887cedb1b5665
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58257642"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58820096"
 ---
 # <a name="update-restrictedappsviolation"></a>Atualizar restrictedAppsViolation
 
@@ -59,7 +59,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [o restr
 |managedDeviceId|Cadeia de caracteres|Identificador exclusivo do dispositivo gerenciado, deve ser Guid|
 |deviceName|String|Nome do dispositivo|
 |deviceConfigurationId|Cadeia de caracteres|Identificador exclusivo do perfil de configuração do dispositivo, deve ser Guid|
-|deviceConfigurationName|Cadeia de caracteres|Nome do perfil de configuração do dispositivo|
+|deviceConfigurationName|String|Nome do perfil de configuração do dispositivo|
 |platformType|[policyPlatformType](../resources/intune-deviceconfig-policyplatformtype.md)|Tipo de plataforma. Os valores possíveis são: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `windows10XProfile`, `androidAOSP`, `all`.|
 |restrictedAppsState|[restrictedAppsState](../resources/intune-deviceconfig-restrictedappsstate.md)|Estado de aplicativos restritos. Os valores possíveis são: `prohibitedApps` e `notApprovedApps`.|
 |restrictedApps|[Coleção managedDeviceReportedApp](../resources/intune-deviceconfig-manageddevicereportedapp.md)|Lista de aplicativos restritos violados|
@@ -123,7 +123,6 @@ Content-Length: 613
   ]
 }
 ```
-
 
 
 

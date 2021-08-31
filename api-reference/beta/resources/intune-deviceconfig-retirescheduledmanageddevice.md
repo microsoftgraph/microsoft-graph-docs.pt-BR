@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 92c9097d47501599935fdda46b93428d4bb59369
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 1cdbb9009ae55f003e727f949b1d5abe0aad1c6d
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58266447"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58821134"
 ---
 # <a name="retirescheduledmanageddevice-resource-type"></a>Tipo de recurso retireScheduledManagedDevice
 
@@ -33,9 +33,9 @@ ManagedDevices que estão agendados para a reforma
 |retireAfterDateTime|DateTimeOffset|Dispositivo gerenciado se aposentar após DateTime|
 |managementAgent|[managementAgentType](../resources/intune-deviceconfig-managementagenttype.md)|Managed Device ManagementAgentType. Os valores possíveis são: `eas`, `mdm`, `easMdm`, `intuneClient`, `easIntuneClient`, `configurationManagerClient`, `configurationManagerClientMdm`, `configurationManagerClientMdmEas`, `unknown`, `jamf`, `googleCloudDevicePolicyController`, `microsoft365ManagedMdm` e `windowsManagementCloudApi`.|
 |ownerType|[managedDeviceOwnerType](../resources/intune-shared-manageddeviceownertype.md)|Managed Device ManagedDeviceOwnerType. Os valores possíveis são: `unknown`, `company`, `personal`.|
-|deviceCompliancePolicyName|Cadeia de caracteres|Nome da política de conformidade do dispositivo|
+|deviceCompliancePolicyName|String|Nome da política de conformidade do dispositivo|
 |deviceCompliancePolicyId|Cadeia de caracteres|Device Compliance PolicyId|
-|roleScopeTagIds|String collection|Lista de marcas de escopo para esta instância entity.|
+|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de marcas de escopo para esta instância entity.|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -65,7 +65,6 @@ Veja a seguir uma representação JSON do recurso.
   ]
 }
 ```
-
 
 
 

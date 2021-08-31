@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 138946024fb5dd4eb326892a94049dd6620b72acf1b13627db484379cb8a0177
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 2e559ec104fa2306dea23339b146f9a365e21de3
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54136909"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58820748"
 ---
 # <a name="update-deviceenrollmentplatformrestrictionsconfiguration"></a>Atualizar deviceEnrollmentPlatformRestrictionsConfiguration
 
@@ -60,7 +60,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [deviceE
 |createdDateTime|DateTimeOffset|Hora de data criada em UTC da configuração de registro de dispositivo Herdada de [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|Última data de modificação no UTC da configuração de registro de dispositivo Herdada de [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
 |versão|Int32|A versão da configuração de registro de dispositivo Herdada de [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
-|roleScopeTagIds|String collection|Marcas de escopo de função opcionais para as restrições de registro. Herdada do [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
+|roleScopeTagIds|Coleção de cadeias de caracteres|Marcas de escopo de função opcionais para as restrições de registro. Herdada do [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
 |iosRestriction|[deviceEnrollmentPlatformRestriction](../resources/intune-onboarding-deviceenrollmentplatformrestriction.md)|Restrições de Ios com base na plataforma, versão do sistema operacional da plataforma e propriedade do dispositivo|
 |windowsRestriction|[deviceEnrollmentPlatformRestriction](../resources/intune-onboarding-deviceenrollmentplatformrestriction.md)|Windows restrições baseadas na plataforma, na versão do sistema operacional da plataforma e na propriedade do dispositivo|
 |windowsHomeSkuRestriction|[deviceEnrollmentPlatformRestriction](../resources/intune-onboarding-deviceenrollmentplatformrestriction.md)|Windows Restrições home Sku com base na plataforma, versão do sistema operacional da plataforma e propriedade do dispositivo|
@@ -352,7 +352,6 @@ Content-Length: 4253
   }
 }
 ```
-
 
 
 

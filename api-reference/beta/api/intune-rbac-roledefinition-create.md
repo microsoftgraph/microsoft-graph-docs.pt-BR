@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0b501fb64d2aead2309bb94b64dc1056446a1c826ddcdb20cc8748cb613e4d1b
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 72f5c83e1e8d1df97fc9787f2a3c236ee0435c5b
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54188110"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58789724"
 ---
 # <a name="create-roledefinition"></a>Criar roleDefinition
 
@@ -27,9 +27,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|DeviceManagementRBAC.ReadWrite.All|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementRBAC.ReadWrite.All|
+|Delegado (conta corporativa ou de estudante)|DeviceManagementRBAC.ReadWrite.All|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Application|DeviceManagementRBAC.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -55,12 +55,12 @@ A tabela a seguir mostra as propriedades obrigatórias ao criar roleDefinition.
 |:---|:---|:---|
 |id|Cadeia de caracteres|Chave da entidade. É somente leitura e gerada automaticamente.|
 |displayName|Cadeia de caracteres|Nome de exibição da definição de Função.|
-|description|Cadeia de caracteres|Descrição da definição de Função.|
+|descrição|Cadeia de caracteres|Descrição da definição de Função.|
 |permissões|Coleção [rolePermission](../resources/intune-rbac-rolepermission.md)|Lista de Permissões de Função que esta função está autorizada a executar. Elas devem corresponder ao actionName definido como parte de rolePermission.|
 |rolePermissions|Coleção [rolePermission](../resources/intune-rbac-rolepermission.md)|Lista de Permissões de Função que esta função está autorizada a executar. Elas devem corresponder ao actionName definido como parte de rolePermission.|
 |isBuiltInRoleDefinition|Booliano|Tipo de Função. Defina como True se for uma definição de função interna ou como False se for uma definição de função personalizada.|
 |isBuiltIn|Booliano|Tipo de Função. Defina como True se for uma definição de função interna ou como False se for uma definição de função personalizada.|
-|roleScopeTagIds|String collection|Lista de marcas de escopo para esta instância entity.|
+|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de marcas de escopo para esta instância entity.|
 
 
 
@@ -183,7 +183,6 @@ Content-Length: 1256
   ]
 }
 ```
-
 
 
 

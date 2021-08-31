@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: d1bb2975f718ed3bfdaa7ea9fb62d38850ec48d5861ed4ef934c989f7acac424
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 49a0bde51eb726b72c1978d5323f9c6699895d80
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54133163"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58784776"
 ---
 # <a name="grouppolicyuploadeddefinitionfilestatus-enum-type"></a>groupPolicyUploadedDefinitionFileStatus tipo de número
 
@@ -26,13 +26,12 @@ Tipo de status de arquivo de definição carregado da Política de Grupo.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |Nenhuma|0|Status de carregamento inválido do arquivo de definição carregado pela Política de Grupo.|
-|uploadInProgress|1 |Carregamento de arquivo de definição carregado pela Política de Grupo em andamento.|
+|uploadInProgress|1|Carregamento de arquivo de definição carregado pela Política de Grupo em andamento.|
 |disponível|2|Arquivo de definição carregado da Política de Grupo disponível.|
-|atribuído|3 |Arquivo de definição carregado da Política de Grupo atribuído à política.|
+|atribuído|3|Arquivo de definição carregado da Política de Grupo atribuído à política.|
 |removalInProgress|4 |A Política de Grupo carregou a remoção do arquivo de definição em andamento.|
 |uploadFailed|5 |Falha no carregamento de arquivo de definição carregado pela Política de Grupo.|
 |removalFailed|6 |Falha na remoção do arquivo de definição carregado pela Política de Grupo.|
-
 
 
 

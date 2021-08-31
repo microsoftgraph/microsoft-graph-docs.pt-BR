@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 835e84babf486f2808a3a18e031e0fccc40450ba1aa93fe705361b080e812a6c
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 90082bf7a18cd786da85f713ea2c78cc16e5786d
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54177412"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58818937"
 ---
 # <a name="create-devicecompliancepolicyassignment"></a>Criar deviceCompliancePolicyAssignment
 
@@ -56,7 +56,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar deviceCo
 |id|Cadeia de caracteres|Chave da entidade.|
 |destino|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Destino da atribuição de políticas de conformidade.|
 |source|[deviceAndAppManagementAssignmentSource](../resources/intune-shared-deviceandappmanagementassignmentsource.md)|A fonte de atribuição para a política de conformidade do dispositivo, direct ou parcel/policySet. Os valores possíveis são: `direct` e `policySets`.|
-|sourceId|Cadeia de caracteres|O identificador da origem da atribuição.|
+|sourceId|String|O identificador da origem da atribuição.|
 
 
 
@@ -105,7 +105,6 @@ Content-Length: 501
   "sourceId": "Source Id value"
 }
 ```
-
 
 
 

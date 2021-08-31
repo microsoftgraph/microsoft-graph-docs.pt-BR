@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: c8a4eb4d765957a56fd99e476837e59516076a9cf2a47007e3790387815ccdab
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: ba8d551b7e47d91671816aac524170b6270b3e10
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54190637"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58790427"
 ---
 # <a name="applevpnconnectiontype-enum-type"></a>Tipo de número appleVpnConnectionType
 
@@ -26,9 +26,9 @@ Tipo de conexão VPN da Apple.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |ciscoAnyConnect|0|Cisco AnyConnect.|
-|pulseSecure|1 |Pulse Secure.|
+|pulseSecure|1|Pulse Secure.|
 |f5EdgeClient|2|Cliente de Borda F5.|
-|dellSonicWallMobileConnect|3 |Dell SonicWALL Mobile Connection.|
+|dellSonicWallMobileConnect|3|Dell SonicWALL Mobile Connection.|
 |checkPointCapsuleVpn|4 |Verifique a VPN da Capsula de Ponto.|
 |customVpn|5 |VPN personalizada.|
 |ciscoIPSec|6 |Cisco (IPSec).|
@@ -38,13 +38,12 @@ Tipo de conexão VPN da Apple.
 |zscalerPrivateAccess|10 |Zscaler Private Access.|
 |f5Access2018|11 |F5 Access 2018.|
 |citrixSso|12 |Citrix Sso.|
-|paloAltoGlobalProtectV2|13 |Palo Alto Networks GlobalProtect V2.|
+|paloAltoGlobalProtectV2|13|Palo Alto Networks GlobalProtect V2.|
 |ikEv2|14 |IKEv2.|
 |alwaysOn|15 |AlwaysOn.|
 |microsoftTunnel|16 |Microsoft Tunnel.|
 |netMotionMobility|17 |NetMotion Mobility.|
 |microsoftProtect|18 |Microsoft Protect.|
-
 
 
 

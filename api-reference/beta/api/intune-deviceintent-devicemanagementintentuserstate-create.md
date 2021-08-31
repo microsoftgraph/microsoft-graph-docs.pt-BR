@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: fd01733b61af989472d05a7852a14223cd2a65aef531aae6b24c982e3e7b2dfb
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: b7cf97530621bfddee4b9366b6a8297e29e94205
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54168504"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58820594"
 ---
 # <a name="create-devicemanagementintentuserstate"></a>Criar deviceManagementIntentUserState
 
@@ -53,8 +53,8 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar deviceMa
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|A ID|
-|userPrincipalName|Cadeia de caracteres|O nome principal do usuário que está sendo relatado em um dispositivo|
+|id|String|A ID|
+|userPrincipalName|String|O nome principal do usuário que está sendo relatado em um dispositivo|
 |userName|Cadeia de caracteres|O nome de usuário que está sendo relatado em um dispositivo|
 |deviceCount|Int32|Contagem de dispositivos que pertencem a um usuário para uma intenção|
 |lastReportedDateTime|DateTimeOffset|Data da última modificação de um relatório de intenção|
@@ -101,7 +101,6 @@ Content-Length: 324
   "state": "notApplicable"
 }
 ```
-
 
 
 

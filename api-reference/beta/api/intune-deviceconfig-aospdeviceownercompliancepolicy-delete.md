@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 1f75f8330ed3f10197ae8a28c5b7a6abcbb083a51f59794e1f80fb1d0fe0ca42
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 76c61bf0eb736cc924347526097e8e515e3d4161
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54140689"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58820370"
 ---
 # <a name="delete-aospdeviceownercompliancepolicy"></a>Excluir aospDeviceOwnerCompliancePolicy
 
@@ -65,7 +65,6 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 82bddfdd5c4f2e36b4b103cea29975048d27d9c9
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: fdfd86a849fffcd8ef227ef1362c241ea7849e95
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58264735"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58790266"
 ---
 # <a name="create-userexperienceanalyticsdevicescores"></a>Criar userExperienceAnalyticsDeviceScores
 
@@ -27,9 +27,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
+|Delegado (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Application|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -60,6 +60,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar o userEx
 |endpointAnalyticsScore|Duplo|A pontuação do dispositivo de análise de experiência do usuário. Valores válidos -1,79769313486232E+308 a 1.79769313486232E+308|
 |startupPerformanceScore|Duplo|A pontuação de desempenho de inicialização do dispositivo de análise de experiência do usuário. Valores válidos -1,79769313486232E+308 a 1.79769313486232E+308|
 |appReliabilityScore|Duplo|A pontuação de confiabilidade do aplicativo de dispositivo de análise de experiência do usuário. Valores válidos -1,79769313486232E+308 a 1.79769313486232E+308|
+|workFromAnywhereScore|Duplo|O dispositivo de análise de experiência do usuário funciona Em qualquer lugar. Valores válidos -1,79769313486232E+308 a 1.79769313486232E+308|
 |healthStatus|[userExperienceAnalyticsHealthState](../resources/intune-devices-userexperienceanalyticshealthstate.md)|O estado de saúde do dispositivo de análise de experiência do usuário. Os valores possíveis são: `unknown`, `insufficientData`, `needsAttention`, `meetingGoals`.|
 
 
@@ -74,7 +75,7 @@ Este é um exemplo da solicitação.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsDeviceScores
 Content-type: application/json
-Content-length: 364
+Content-length: 397
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsDeviceScores",
@@ -84,6 +85,7 @@ Content-length: 364
   "endpointAnalyticsScore": 7.333333333333333,
   "startupPerformanceScore": 7.666666666666667,
   "appReliabilityScore": 6.333333333333333,
+  "workFromAnywhereScore": 7.0,
   "healthStatus": "insufficientData"
 }
 ```
@@ -93,7 +95,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 413
+Content-Length: 446
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsDeviceScores",
@@ -104,10 +106,10 @@ Content-Length: 413
   "endpointAnalyticsScore": 7.333333333333333,
   "startupPerformanceScore": 7.666666666666667,
   "appReliabilityScore": 6.333333333333333,
+  "workFromAnywhereScore": 7.0,
   "healthStatus": "insufficientData"
 }
 ```
-
 
 
 

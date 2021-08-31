@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 32d1e032e8bc781a9f7ab1d433e1c8b757097ca6494c68094addde0812898376
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 549a2a01384271e97ba22c301b1a4397752386d5
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54239403"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58791491"
 ---
 # <a name="devicecustomattributeshellscript-resource-type"></a>Tipo de recurso deviceCustomAttributeShellScript
 
@@ -28,7 +28,7 @@ Representa um script de atributo personalizado para macOS.
 |[Listar deviceCustomAttributeShellScripts](../api/intune-devices-devicecustomattributeshellscript-list.md)|[Coleção deviceCustomAttributeShellScript](../resources/intune-devices-devicecustomattributeshellscript.md)|Listar propriedades e relações dos [objetos deviceCustomAttributeShellScript.](../resources/intune-devices-devicecustomattributeshellscript.md)|
 |[Obter deviceCustomAttributeShellScript](../api/intune-devices-devicecustomattributeshellscript-get.md)|[deviceCustomAttributeShellScript](../resources/intune-devices-devicecustomattributeshellscript.md)|Leia propriedades e relações do [objeto deviceCustomAttributeShellScript.](../resources/intune-devices-devicecustomattributeshellscript.md)|
 |[Criar deviceCustomAttributeShellScript](../api/intune-devices-devicecustomattributeshellscript-create.md)|[deviceCustomAttributeShellScript](../resources/intune-devices-devicecustomattributeshellscript.md)|Crie um novo [objeto deviceCustomAttributeShellScript.](../resources/intune-devices-devicecustomattributeshellscript.md)|
-|[Excluir deviceCustomAttributeShellScript](../api/intune-devices-devicecustomattributeshellscript-delete.md)|Nenhum|Exclui um [deviceCustomAttributeShellScript](../resources/intune-devices-devicecustomattributeshellscript.md).|
+|[Excluir deviceCustomAttributeShellScript](../api/intune-devices-devicecustomattributeshellscript-delete.md)|Nenhum(a)|Exclui um [deviceCustomAttributeShellScript](../resources/intune-devices-devicecustomattributeshellscript.md).|
 |[Atualizar deviceCustomAttributeShellScript](../api/intune-devices-devicecustomattributeshellscript-update.md)|[deviceCustomAttributeShellScript](../resources/intune-devices-devicecustomattributeshellscript.md)|Atualize as propriedades de [um objeto deviceCustomAttributeShellScript.](../resources/intune-devices-devicecustomattributeshellscript.md)|
 |[atribuir ação](../api/intune-devices-devicecustomattributeshellscript-assign.md)|Nenhuma|Ainda não documentado|
 
@@ -39,13 +39,13 @@ Representa um script de atributo personalizado para macOS.
 |customAttributeName|Cadeia de caracteres|O nome do atributo personalizado.|
 |customAttributeType|[deviceCustomAttributeValueType](../resources/intune-devices-devicecustomattributevaluetype.md)|O tipo esperado do valor do atributo personalizado. Os valores possíveis são: `integer`, `string`, `dateTime`.|
 |displayName|Cadeia de caracteres|Nome do script de gerenciamento de dispositivos.|
-|description|Cadeia de caracteres|Descrição opcional para o script de gerenciamento de dispositivos.|
+|descrição|Cadeia de caracteres|Descrição opcional para o script de gerenciamento de dispositivos.|
 |scriptContent|Binário|O conteúdo do script.|
 |createdDateTime|DateTimeOffset|A data e a hora em que o script de gerenciamento de dispositivos foi criado. Essa propriedade é somente leitura.|
 |lastModifiedDateTime|DateTimeOffset|A data e a hora em que o script de gerenciamento de dispositivos foi modificado pela última vez. Essa propriedade é somente leitura.|
 |runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|Indica o tipo de contexto de execução. Os valores possíveis são: `system` e `user`.|
 |fileName|String|Nome do arquivo de script.|
-|roleScopeTagIds|String collection|Lista de IDs de marca de escopo para esta instância do PowerShellScript.|
+|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de IDs de marca de escopo para esta instância do PowerShellScript.|
 
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|
@@ -82,7 +82,6 @@ Veja a seguir uma representação JSON do recurso.
   ]
 }
 ```
-
 
 
 

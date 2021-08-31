@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4cd3bdad6f80a72dadd1cb89a3ec9462a6c0f696
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 7e9717b2865ff0e0a4126cc7f010925e8ff43360
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58253443"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58820874"
 ---
 # <a name="userexperienceanalyticsremoteconnection-resource-type"></a>Tipo de recurso userExperienceAnalyticsRemoteConnection
 
@@ -80,7 +80,6 @@ Veja a seguir uma representação JSON do recurso.
   "userPrincipalName": "String"
 }
 ```
-
 
 
 

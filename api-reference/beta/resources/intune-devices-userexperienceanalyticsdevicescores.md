@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 324bc83c19588fdfa76fd084145a6d3d8ac025c8
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: ce4dc2ceeb02622c30a8aadde9bd9c45826dc9f1
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58256718"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58816498"
 ---
 # <a name="userexperienceanalyticsdevicescores-resource-type"></a>Tipo de recurso userExperienceAnalyticsDeviceScores
 
@@ -41,6 +41,7 @@ A entidade pontuações do dispositivo de análise de experiência do usuário c
 |endpointAnalyticsScore|Duplo|A pontuação do dispositivo de análise de experiência do usuário. Valores válidos -1,79769313486232E+308 a 1.79769313486232E+308|
 |startupPerformanceScore|Duplo|A pontuação de desempenho de inicialização do dispositivo de análise de experiência do usuário. Valores válidos -1,79769313486232E+308 a 1.79769313486232E+308|
 |appReliabilityScore|Duplo|A pontuação de confiabilidade do aplicativo de dispositivo de análise de experiência do usuário. Valores válidos -1,79769313486232E+308 a 1.79769313486232E+308|
+|workFromAnywhereScore|Duplo|O dispositivo de análise de experiência do usuário funciona Em qualquer lugar. Valores válidos -1,79769313486232E+308 a 1.79769313486232E+308|
 |healthStatus|[userExperienceAnalyticsHealthState](../resources/intune-devices-userexperienceanalyticshealthstate.md)|O estado de saúde do dispositivo de análise de experiência do usuário. Os valores possíveis são: `unknown`, `insufficientData`, `needsAttention`, `meetingGoals`.|
 
 ## <a name="relationships"></a>Relações
@@ -64,10 +65,10 @@ Veja a seguir uma representação JSON do recurso.
   "endpointAnalyticsScore": "4.2",
   "startupPerformanceScore": "4.2",
   "appReliabilityScore": "4.2",
+  "workFromAnywhereScore": "4.2",
   "healthStatus": "String"
 }
 ```
-
 
 
 

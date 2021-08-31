@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c2ff09d6213e046be38864face5addb3b26517b093ff1957d6435028f78a2627
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 3f9becc8a34820068542e2d68686e5acd4b6370c
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54137399"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58819791"
 ---
 # <a name="delete-windows81compliancepolicy"></a>Excluir windows81CompliancePolicy
 
@@ -65,7 +65,6 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

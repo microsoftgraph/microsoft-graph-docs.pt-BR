@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 212ff0dd1c199c34ffdbec6358ebdab083370c828bc102a8f76293c031bb5467
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 7000ea2f35a49c9c0f025c456fee61e47bf3d030
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54241909"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58819196"
 ---
 # <a name="devicecompliancepolicysettingstate-resource-type"></a>Tipo de recurso deviceCompliancePolicySettingState
 
@@ -37,7 +37,7 @@ Estado da configuração da política de conformidade de dispositivo para um det
 |userPrincipalName|Cadeia de caracteres|UserPrincipalName.|
 |fontes|Conjunto [settingSource](../resources/intune-deviceconfig-settingsource.md)|Políticas de colaboração|
 |currentValue|Cadeia de caracteres|Valor atual da configuração em um dispositivo|
-|settingInstanceId|Cadeia de caracteres|SettingInstanceId|
+|settingInstanceId|String|SettingInstanceId|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -74,7 +74,6 @@ Veja a seguir uma representação JSON do recurso.
   "settingInstanceId": "String"
 }
 ```
-
 
 
 
