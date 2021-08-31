@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c9dc3a6271f11cc27f78f0e80d2c9812fff720f7f05d88bbdf06b2407aed3e0f
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: f87b58125f24f32227fcb6517be5d4780c5588a6
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54168413"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58815803"
 ---
 # <a name="updatedeviceproperties-action"></a>Ação updateDeviceProperties
 
@@ -54,7 +54,7 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta ação.
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|userPrincipalName|Cadeia de caracteres|Ainda não documentado|
+|userPrincipalName|String|Ainda não documentado|
 |addressableUserName|String|Ainda não documentado|
 |groupTag|String|Ainda não documentado|
 |displayName|Cadeia de caracteres|Ainda não documentado|
@@ -87,7 +87,6 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: db6c6c0b500e6799dc76e434004ba1993eb34fc004199d6ad647696373463a37
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: fe54b2611e9e9a5d1251e8f88d749f3a110d05cf
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54148516"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58816125"
 ---
 # <a name="list-androidmanagedappprotections"></a>Listar androidManagedAppProtections
 
@@ -147,7 +147,6 @@ Content-Length: 3448
   ]
 }
 ```
-
 
 
 

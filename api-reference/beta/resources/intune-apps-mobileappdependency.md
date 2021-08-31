@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: a46fb117b4201949c7e42f99eedad09e3c54567a04225dd0fa67c0e5cb45bb42
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: bfdb66d5baa3bf16d870b69f8187a836e2d92bff
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54229643"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58793912"
 ---
 # <a name="mobileappdependency-resource-type"></a>Tipo de recurso mobileAppDependency
 
@@ -31,7 +31,7 @@ Herda de [mobileAppRelationship](../resources/intune-apps-mobileapprelationship.
 |[Listar mobileAppDependencies](../api/intune-apps-mobileappdependency-list.md)|[Coleção mobileAppDependency](../resources/intune-apps-mobileappdependency.md)|Listar propriedades e relações dos objetos [mobileAppDependency.](../resources/intune-apps-mobileappdependency.md)|
 |[Obter mobileAppDependency](../api/intune-apps-mobileappdependency-get.md)|[mobileAppDependency](../resources/intune-apps-mobileappdependency.md)|Leia propriedades e relações do [objeto mobileAppDependency.](../resources/intune-apps-mobileappdependency.md)|
 |[Criar mobileAppDependency](../api/intune-apps-mobileappdependency-create.md)|[mobileAppDependency](../resources/intune-apps-mobileappdependency.md)|Crie um novo [objeto mobileAppDependency.](../resources/intune-apps-mobileappdependency.md)|
-|[Excluir mobileAppDependency](../api/intune-apps-mobileappdependency-delete.md)|Nenhum|Exclui um [mobileAppDependency](../resources/intune-apps-mobileappdependency.md).|
+|[Excluir mobileAppDependency](../api/intune-apps-mobileappdependency-delete.md)|Nenhum(a)|Exclui um [mobileAppDependency](../resources/intune-apps-mobileappdependency.md).|
 |[Atualizar mobileAppDependency](../api/intune-apps-mobileappdependency-update.md)|[mobileAppDependency](../resources/intune-apps-mobileappdependency.md)|Atualize as propriedades de um [objeto mobileAppDependency.](../resources/intune-apps-mobileappdependency.md)|
 
 ## <a name="properties"></a>Propriedades
@@ -72,7 +72,6 @@ Veja a seguir uma representação JSON do recurso.
   "dependsOnAppCount": 1024
 }
 ```
-
 
 
 

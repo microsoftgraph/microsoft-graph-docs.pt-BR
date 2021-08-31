@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c6226b660973f5c9851ea4539ea773b3ef7032ed97aa6065d866b0233bf006a9
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 8841858ce3f50588149eccd6b5213b8d952ea127
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54158934"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58789078"
 ---
 # <a name="executeaction-action"></a>Ação executeAction
 
@@ -27,9 +27,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|DeviceManagementManagedDevices.PriviligedOperation.All|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementManagedDevices.PriviligedOperation.All|
+|Delegado (conta corporativa ou de estudante)|DeviceManagementManagedDevices.PriviligedOperation.All|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Application|DeviceManagementManagedDevices.PriviligedOperation.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -63,6 +63,9 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta ação.
 |notificationTitle|String|Ainda não documentado|
 |notificationBody|String|Ainda não documentado|
 |deviceName|String|Ainda não documentado|
+|carrierUrl|String|Ainda não documentado|
+|deprovisionReason|String|Ainda não documentado|
+|organizationalUnitPath|String|Ainda não documentado|
 
 
 
@@ -77,7 +80,7 @@ Este é um exemplo da solicitação.
 POST https://graph.microsoft.com/beta/deviceManagement/managedDevices/executeAction
 
 Content-type: application/json
-Content-length: 274
+Content-length: 441
 
 {
   "actionName": "delete",
@@ -88,7 +91,10 @@ Content-length: 274
   ],
   "notificationTitle": "Notification Title value",
   "notificationBody": "Notification Body value",
-  "deviceName": "Device Name value"
+  "deviceName": "Device Name value",
+  "carrierUrl": "https://example.com/carrierUrl/",
+  "deprovisionReason": "Deprovision Reason value",
+  "organizationalUnitPath": "Organizational Unit Path value"
 }
 ```
 
@@ -117,7 +123,6 @@ Content-Length: 385
   }
 }
 ```
-
 
 
 

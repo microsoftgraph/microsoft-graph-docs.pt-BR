@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6eb1a6ccda80672a6d0f7de6ac4ad84a75d747e36d0a8736ab068cd99ac87d86
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 6e60f7cf7780ff3f129cce07dd07b3d658466609
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54125113"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58816757"
 ---
 # <a name="update-windowsdefenderapplicationcontrolsupplementalpolicyassignment"></a>Atualizar windowsDefenderApplicationControlSupplementalPolicyAssignment
 
@@ -97,7 +97,6 @@ Content-Length: 417
   }
 }
 ```
-
 
 
 

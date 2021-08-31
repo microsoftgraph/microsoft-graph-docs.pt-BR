@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 62fe3b2182983c7be5f2a43f62a719d37821bfa26cb36d8c06374831a978ff8c
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: e9b35e5d202c7d290cba2cc47c228563c7e478a8
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54250046"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58800755"
 ---
 # <a name="androiddeviceownerplaystoremode-enum-type"></a>tipo de número androidDeviceOwnerPlayStoreMode
 
@@ -26,9 +26,8 @@ Tipo de modo do Android Device Owner Play Store.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |notConfigured|0|Não configurado|
-|allowList|1 |Somente aplicativos que estão na política estão disponíveis e qualquer aplicativo que não está na política será desinstalado automaticamente do dispositivo.|
+|allowList|1|Somente aplicativos que estão na política estão disponíveis e qualquer aplicativo que não está na política será desinstalado automaticamente do dispositivo.|
 |blockList|2|Todos os aplicativos estão disponíveis e qualquer aplicativo que não deve estar no dispositivo deve ser explicitamente marcado como "BLOQUEADO" na política de aplicativos.|
-
 
 
 

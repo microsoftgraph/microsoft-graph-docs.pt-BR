@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 9b8a089e0cfb56257006f71ce25b514f840868c2f3795b8651692184e69eb87a
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 60ade3e1bd18e78fd14fe49933eacd9fd7f49437
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54245104"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58787038"
 ---
 # <a name="androiddeviceownerkioskmodefoldericon-enum-type"></a>tipo de número androidDeviceOwnerKioskModeFolderIcon
 
@@ -26,11 +26,10 @@ Tipo de ícone de pasta do Modo de Quiosque do Proprietário do Dispositivo Andr
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |notConfigured|0|Não configurado; esse valor é ignorado.|
-|darkSquare|1 |O ícone de pasta aparece como quadrado escuro.|
+|darkSquare|1|O ícone de pasta aparece como quadrado escuro.|
 |darkCircle|2|O ícone de pasta aparece como círculo escuro.|
-|lightSquare|3 |O ícone de pasta aparece como quadrado claro.|
+|lightSquare|3|O ícone de pasta aparece como quadrado claro.|
 |lightCircle|4 |Ícone de pasta aparece como círculo claro .|
-
 
 
 

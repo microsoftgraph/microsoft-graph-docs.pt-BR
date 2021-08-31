@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5b95027bfe254bfe5027c07c2c40094684c748f979058c7c76cc3a7d4afc3c7f
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: edc1c3939e8ad317aabca39f9876d5c7be13f751
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54166733"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58793701"
 ---
 # <a name="update-carttoclassassociation"></a>Atualizar cartToClassAssociation
 
@@ -27,9 +27,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
+|Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Application|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -58,9 +58,9 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [o cartT
 |lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto.|
 |versão|Int32|Versão do CartToClassAssociation.|
 |displayName|Cadeia de caracteres|O administrador forneceu o nome da Configuração do dispositivo.|
-|description|Cadeia de caracteres|O administrador forneceu a descrição do CartToClassAssociation.|
-|deviceCartIds|String collection|Identificadores de carrinhos de dispositivo a serem associados a classes.|
-|classroomIds|String collection|Identificadores de salas de aula a serem associadas a carrinhos de dispositivo.|
+|descrição|Cadeia de caracteres|O administrador forneceu a descrição do CartToClassAssociation.|
+|deviceCartIds|Coleção de cadeias de caracteres|Identificadores de carrinhos de dispositivo a serem associados a classes.|
+|classroomIds|Coleção de cadeias de caracteres|Identificadores de salas de aula a serem associadas a carrinhos de dispositivo.|
 
 
 
@@ -113,7 +113,6 @@ Content-Length: 443
   ]
 }
 ```
-
 
 
 

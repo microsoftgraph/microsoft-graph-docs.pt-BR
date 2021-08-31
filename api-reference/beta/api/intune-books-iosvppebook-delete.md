@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a2831898c133f29ed63e9eb727e053ec90a455326106718fb9b029c1c3933ca0
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 561d9dc9c87a80d0dd5cd820a4df8ae934509fa3
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54166908"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58817569"
 ---
 # <a name="delete-iosvppebook"></a>Excluir iosVppEBook
 
@@ -65,7 +65,6 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

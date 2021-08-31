@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 7da061fafd5ed59c215031b2e2626c8d0d42a50661089e9646455ae6d96c4668
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 73404f8d01ab6ea047cb94ecc3b21939e4fb3a6c
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54213155"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58803802"
 ---
 # <a name="windowsupdatestatus-enum-type"></a>Tipo de número windowsUpdateStatus
 
@@ -26,10 +26,9 @@ Windows atualização para estados de dispositivo de configuração de negócios
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |upToDate|0|Não há atualizações pendentes, nenhuma atualização de reinicialização pendente e nenhuma atualização com falha.|
-|pendingInstallation|1 |Há atualizações que estão pendentes de instalação que incluem atualizações que não são aprovadas. Não há atualizações pendentes de reinicialização, nem atualizações com falha.|
+|pendingInstallation|1|Há atualizações que estão pendentes de instalação que incluem atualizações que não são aprovadas. Não há atualizações pendentes de reinicialização, nem atualizações com falha.|
 |pendingReboot|2|Há atualizações que exigem reinicialização. Não há atualizações com falha.|
-|failed|3 |Há atualizações que não foram instaladas no dispositivo.|
-
+|failed|3|Há atualizações que não foram instaladas no dispositivo.|
 
 
 

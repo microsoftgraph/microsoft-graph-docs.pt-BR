@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: b481811abb43678e1402b99e3cf4c6b2163df371af3581e510928b6dd07221c5
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: b390bd505c20afba235a204f49bd68db0be68074
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54195103"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58799975"
 ---
 # <a name="hashalgorithms-enum-type"></a>Tipo de número hashAlgorithms
 
@@ -25,9 +25,8 @@ Opções de algoritmo de hash.
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|sha1|1 |Algoritmo de hash SHA-1.|
+|sha1|1|Algoritmo de hash SHA-1.|
 |sha2|2|Algoritmo de hash SHA-2.|
-
 
 
 

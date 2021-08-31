@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: f6fc5940f679e215c207ff4388b3212420b5f86cde0dfab9149032616c61f574
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 8640ee98552578bfdce7663829d12a6623404496
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54161000"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58786267"
 ---
 # <a name="keyusages-enum-type"></a>tipo de número keyUsages
 
@@ -25,9 +25,8 @@ Principais opções de uso.
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|keyEncipherment|1 |Uso do Encipherment de Chave.|
+|keyEncipherment|1|Uso do Encipherment de Chave.|
 |digitalSignature|2|Uso da Assinatura Digital.|
-
 
 
 

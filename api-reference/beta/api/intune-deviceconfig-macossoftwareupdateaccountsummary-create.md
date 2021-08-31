@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5d579da383a793fd94ac53291f05e7ebcf3c1430dcadf97eb9374560a94fc61b
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: d797f7bf6e7dd706bf2f1605bfea769279ed8900
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54211118"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58815831"
 ---
 # <a name="create-macossoftwareupdateaccountsummary"></a>Criar macOSSoftwareUpdateAccountSummary
 
@@ -116,7 +116,6 @@ Content-Length: 502
   "lastUpdatedDateTime": "2017-01-01T00:00:56.8321556-08:00"
 }
 ```
-
 
 
 

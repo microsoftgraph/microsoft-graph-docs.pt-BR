@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: fae103513b827e1487b568a6cf263696e3b5f5c83b695afb88acfe5a5fe2a2ea
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 745c51ef9099b2184fb9c893fcb8bda28bd0f05f
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54127499"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58817163"
 ---
 # <a name="delete-enrollmentconfigurationassignment"></a>Excluir enrollmentConfigurationAssignment
 
@@ -65,7 +65,6 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

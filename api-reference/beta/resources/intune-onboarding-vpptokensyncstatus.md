@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 399fe4e6e55809b9bbda108711dca3cc3a623fd76d56a766c156fe6fe120222f
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: a45767f8da04ffa612fc5ca99ffe825c2d4e954f
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54239151"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58769471"
 ---
 # <a name="vpptokensyncstatus-enum-type"></a>Tipo de número vppTokenSyncStatus
 
@@ -26,10 +26,9 @@ Possíveis status de sincronização associados a um token do Programa de Compra
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |Nenhuma|0|Status padrão.|
-|inProgress|1 |Última sincronização em andamento.|
+|inProgress|1|Última sincronização em andamento.|
 |completed|2|Última sincronização concluída com êxito.|
-|failed|3 |Falha na última sincronização.|
-
+|failed|3|Falha na última sincronização.|
 
 
 

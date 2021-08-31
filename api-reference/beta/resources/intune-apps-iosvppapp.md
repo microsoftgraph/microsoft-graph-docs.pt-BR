@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 6cba01faf927be2efab3459587d88d1db1a6bbf693fa86f1f0ec4910f581e387
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: beabee3de21a94cd7ee2fbd6bb0dac778c90fad3
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54226536"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58801196"
 ---
 # <a name="iosvppapp-resource-type"></a>Tipo de recurso iosVppApp
 
@@ -33,16 +33,16 @@ Herda de [mobileApp](../resources/intune-shared-mobileapp.md)
 |[Criar iosVppApp](../api/intune-apps-iosvppapp-create.md)|[iosVppApp](../resources/intune-apps-iosvppapp.md)|Cria um novo objeto [iosVppApp](../resources/intune-apps-iosvppapp.md).|
 |[Excluir iosVppApp](../api/intune-apps-iosvppapp-delete.md)|Nenhum|Exclui um [iosVppApp](../resources/intune-apps-iosvppapp.md).|
 |[Atualizar iosVppApp](../api/intune-apps-iosvppapp-update.md)|[iosVppApp](../resources/intune-apps-iosvppapp.md)|Atualiza as propriedades de um objeto [iosVppApp](../resources/intune-apps-iosvppapp.md).|
-|[ação revokeAllLicenses](../api/intune-apps-iosvppapp-revokealllicenses.md)|Nenhum|Revogar todas as licenças VPP iOS atribuídas para determinado aplicativo.|
-|[ação revokeUserLicense](../api/intune-apps-iosvppapp-revokeuserlicense.md)|Nenhum|Revogar a licença de usuário VPP do iOS atribuída para determinado aplicativo.|
-|[ação revokeDeviceLicense](../api/intune-apps-iosvppapp-revokedevicelicense.md)|Nenhum|Revogar a licença de dispositivo VPP do iOS atribuída para determinado aplicativo.|
+|[ação revokeAllLicenses](../api/intune-apps-iosvppapp-revokealllicenses.md)|Nenhum(a)|Revogar todas as licenças VPP iOS atribuídas para determinado aplicativo.|
+|[ação revokeUserLicense](../api/intune-apps-iosvppapp-revokeuserlicense.md)|Nenhum(a)|Revogar a licença de usuário VPP do iOS atribuída para determinado aplicativo.|
+|[ação revokeDeviceLicense](../api/intune-apps-iosvppapp-revokedevicelicense.md)|Nenhum(a)|Revogar a licença de dispositivo VPP do iOS atribuída para determinado aplicativo.|
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|Cadeia de caracteres|Chave da entidade. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
 |displayName|Cadeia de caracteres|O título do aplicativo importado ou definido pelo administrador. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
-|description|Cadeia de caracteres|A descrição do aplicativo. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
+|descrição|Cadeia de caracteres|A descrição do aplicativo. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
 |publicador|String|O publicador do aplicativo. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
 |largeIcon|[mimeContent](../resources/intune-shared-mimecontent.md)|O ícone grande, a ser exibido nos detalhes do aplicativo e usado para o carregamento do ícone. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
 |createdDateTime|DateTimeOffset|A data e a hora da criação do aplicativo. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
@@ -56,7 +56,7 @@ Herda de [mobileApp](../resources/intune-shared-mobileapp.md)
 |uploadState|Int32|O estado de carregamento. Os valores possíveis são: 0 - `Not Ready` , 1 - `Ready` , 2 - `Processing` . Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
 |publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|O estado de publicação do aplicativo. O aplicativo não pode ser assinado, a menos que ele seja publicado. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md). Os valores possíveis são: `notPublished`, `processing`, `published`.|
 |isAssigned|Boolean|O valor que indica se o aplicativo é atribuído a pelo menos um grupo. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
-|roleScopeTagIds|String collection|Lista de ids de marca de escopo para este aplicativo móvel. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
+|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de ids de marca de escopo para este aplicativo móvel. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
 |dependentAppCount|Int32|O número total de dependências que o aplicativo filho tem. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
 |supersedingAppCount|Int32|O número total de aplicativos que esse aplicativo sobressede direta ou indiretamente. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
 |supersededAppCount|Int32|O número total de aplicativos pelos quais esse aplicativo é, direta ou indiretamente, é suplido. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
@@ -158,7 +158,6 @@ Veja a seguir uma representação JSON do recurso.
   ]
 }
 ```
-
 
 
 

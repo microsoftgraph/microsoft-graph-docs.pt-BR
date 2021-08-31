@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: f96999c5a144a736a0ac8070d725245b59e8ed1c9c67e2c1301fded9cc7742a2
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 123177d4935ea7aec924345d27134f7ad779a625
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54235958"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58785686"
 ---
 # <a name="haspayloadlinkresultitem-resource-type"></a>Tipo de recurso hasPayloadLinkResultItem
 
@@ -26,7 +26,7 @@ Uma classe que contém o resultado da ação HasPayloadLinks.
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |payloadId|Cadeia de caracteres|Chave da carga, no formato guid.|
-|hasLink|Boolean|Indica se uma carga tem um link ou não.|
+|hasLink|Boleano|Indica se uma carga tem um link ou não.|
 |erro|Cadeia de caracteres|As informações de exceção indicam se a verificação desse item foi bem-sucedida ou não. Cadeia de caracteres vazia para nenhum erro.|
 |fontes|[Coleção deviceAndAppManagementAssignmentSource](../resources/intune-shared-deviceandappmanagementassignmentsource.md)|O motivo de onde o link vem.|
 
@@ -51,7 +51,6 @@ Veja a seguir uma representação JSON do recurso.
   ]
 }
 ```
-
 
 
 

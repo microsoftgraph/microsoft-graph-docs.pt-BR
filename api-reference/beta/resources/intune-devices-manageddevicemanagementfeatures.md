@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 1fc9935fbca2fb0d710047e129fa4ce74758cad1cd026d527505329131f63f87
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 2bad15794fae5f5db3c34e7d8193771fe6d05886
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54148005"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58817380"
 ---
 # <a name="manageddevicemanagementfeatures-enum-type"></a>Tipo de número managedDeviceManagementFeatures
 
@@ -26,8 +26,7 @@ Recursos de gerenciamento de dispositivos.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |Nenhuma|0|Recursos de gerenciamento de dispositivo desconhecidos.|
-|microsoftManagedDesktop|1 |Área de trabalho gerenciada da Microsoft|
-
+|microsoftManagedDesktop|1|Área de trabalho gerenciada da Microsoft|
 
 
 

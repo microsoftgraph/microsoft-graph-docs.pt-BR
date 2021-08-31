@@ -1,18 +1,18 @@
 ---
-title: Tipo de recurso keyValuePair
-description: Par chave-valor para armazenar configurações personalizadas
+title: Tipo de recurso keyLongValuePair
+description: Par de valores longos da chave
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: dc609905c5163dd53c3dff58249a15ccd20304e5
+ms.openlocfilehash: 7d0e2f624dcaffa9706f241814e5185a1bcb6341
 ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 08/31/2021
-ms.locfileid: "58794080"
+ms.locfileid: "58786716"
 ---
-# <a name="keyvaluepair-resource-type"></a>Tipo de recurso keyValuePair
+# <a name="keylongvaluepair-resource-type"></a>Tipo de recurso keyLongValuePair
 
 Namespace: microsoft.graph
 
@@ -20,13 +20,13 @@ Namespace: microsoft.graph
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Par chave-valor para armazenar configurações personalizadas
+Par de valores longos da chave
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|nome|Cadeia de caracteres|Nome deste par chave-valor|
-|value|Cadeia de caracteres|Valor deste par chave-valor|
+|nome|Cadeia de caracteres|Nome para esse par de valores longos de chave|
+|valor|Int64|Valor para esse par de valores longos de chave|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -35,14 +35,14 @@ Nenhum
 Veja a seguir uma representação JSON do recurso.
 <!-- {
   "blockType": "resource",
-  "@odata.type": "microsoft.graph.keyValuePair"
+  "@odata.type": "microsoft.graph.keyLongValuePair"
 }
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.keyValuePair",
+  "@odata.type": "#microsoft.graph.keyLongValuePair",
   "name": "String",
-  "value": "String"
+  "value": 1024
 }
 ```
 

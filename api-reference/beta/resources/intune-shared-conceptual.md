@@ -4,12 +4,12 @@ description: Lista a API Graph microsoft para pontos de extremidade do Intune (R
 localization_priority: Normal
 author: dougeby
 ms.prod: intune
-ms.openlocfilehash: 9ef71ce51e86d2582935a5f647a0a7ad07b70e73
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 672672edd0955070c4df6a4a90c78c5c5b7329ce
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58264077"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58816433"
 ---
 # <a name="shared-resources-in-microsoft-intune"></a>Recursos compartilhados em Microsoft Intune
 
@@ -63,6 +63,7 @@ Os seguintes Graph são compartilhados entre fluxos de trabalho do Intune:
 - [Intervalo de IP](intune-shared-iprange.md)
 - [Intervalo de IPv4](intune-shared-ipv4range.md)
 - [Intervalo de IPv6](intune-shared-ipv6range.md)
+- [Par de valores longos da chave](intune-shared-keylongvaluepair.md)
 - [Tamanho da chave](intune-shared-keysize.md)
 - [Opção de provedor de armazenamento de chaves](intune-shared-keystorageprovideroption.md)
 - [Usos de chave](intune-shared-keyusages.md)
