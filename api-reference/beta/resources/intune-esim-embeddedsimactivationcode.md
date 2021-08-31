@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 07acfbad5baf0cb68118472ea32d667c7f2868dac490665e61726fd5a6e4bf75
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 68c900ce67f5eff6e7f9f5d9f3078f92fe60686d
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54242563"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58787838"
 ---
 # <a name="embeddedsimactivationcode-resource-type"></a>Tipo de recurso embeddedSIMActivationCode
 
@@ -50,7 +50,6 @@ Veja a seguir uma representação JSON do recurso.
   "smdpPlusServerAddress": "String"
 }
 ```
-
 
 
 

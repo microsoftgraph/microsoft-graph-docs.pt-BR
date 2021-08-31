@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 05a974b4f294f5844c69c248ce7944d9bd31cc7b
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: aca4dd88960d952d1a6a445c3508b3c00850d60a
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58265879"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58788840"
 ---
 # <a name="update-applogcollectionrequest"></a>Atualizar appLogCollectionRequest
 
@@ -27,9 +27,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
+|Delegado (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Application|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -56,7 +56,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [o appLo
 |id|Cadeia de caracteres|O Identificador exclusivo. Esta é userId_DeviceId_AppId id.|
 |status|[appLogUploadState](../resources/intune-devices-apploguploadstate.md)|Status do carregamento de log. Os valores possíveis são: `pending`, `completed`, `failed`.|
 |errorMessage|Cadeia de caracteres|Mensagem de erro se alguma durante o processo de carregamento|
-|customLogFolders|String collection|Lista de pastas de log. |
+|customLogFolders|Coleção de cadeias de caracteres|Lista de pastas de log. |
 |completedDateTime|DateTimeOffset|Hora em que a solicitação de log de carregamento atingiu um estado de terminal|
 
 
@@ -102,7 +102,6 @@ Content-Length: 306
   "completedDateTime": "2016-12-31T23:58:52.3534526-08:00"
 }
 ```
-
 
 
 

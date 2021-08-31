@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: b2c791bcd6a566e872ff7bc2fa41199e86981e138e88f4acef86b8d5e402dad3
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: bcdb34abe2c4223bc947c15271437a2bae829372
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54227544"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58751948"
 ---
 # <a name="defenderpromptforsamplesubmission-enum-type"></a>Tipo de número defenderPromptForSampleSubmission
 
@@ -26,11 +26,10 @@ Valores possíveis para solicitar ao usuário o envio de amostras.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |userDefined|0|User Defined, default value, no intent.|
-|alwaysPrompt|1 |Sempre prompt.|
+|alwaysPrompt|1|Sempre prompt.|
 |promptBeforeSendingPersonalData|2|Envie amostras seguras automaticamente.|
-|neverSendData|3 |Nunca envie dados.|
+|neverSendData|3|Nunca envie dados.|
 |sendAllDataWithoutPrompting|4 |Envie todos os dados sem solicitar.|
-
 
 
 

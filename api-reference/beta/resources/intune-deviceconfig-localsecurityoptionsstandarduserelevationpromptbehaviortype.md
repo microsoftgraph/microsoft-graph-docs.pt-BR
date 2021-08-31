@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: b2a3a966db8fe7ac099013f588fd1204e5f509922c5282c6a3b25dd31c32eaac
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: f4e3ec79881d531081d099d587a65a12f7968888
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54183159"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58802506"
 ---
 # <a name="localsecurityoptionsstandarduserelevationpromptbehaviortype-enum-type"></a>localSecurityOptionsStandardUserElevationPromptBehaviorType tipo de número
 
@@ -26,10 +26,9 @@ Valores possíveis para LocalSecurityOptionsStandardUserElevationPromptBehavior
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |notConfigured|0|Não configurado|
-|automaticallyDenyElevationRequests|1 |Negar automaticamente solicitações de elevação|
+|automaticallyDenyElevationRequests|1|Negar automaticamente solicitações de elevação|
 |promptForCredentialsOnTheSecureDesktop|2|Solicitar credenciais na área de trabalho segura|
-|promptForCredentials|3 |Prompt for credentials|
-
+|promptForCredentials|3|Prompt for credentials|
 
 
 

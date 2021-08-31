@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: e723cdf2103dda3b7b03461d239ff15d3d0510d4b5a8383334055154189f8a31
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 4f2fe3572a16ceca8ecb5a1ac84cbb23a1f32edf
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54161042"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58795140"
 ---
 # <a name="assignmentfilterevaluationresult-enum-type"></a>tipo denum assignmentFilterEvaluationResult
 
@@ -26,12 +26,11 @@ Resultados de avaliação com suporte para filtro.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |desconhecido|0|Desconhecido.|
-|match|1 |Corresponde.|
+|match|1|Corresponde.|
 |notMatch|2|NotMatch.|
-|inconclusivo|3 |Inconclusivo.|
+|inconclusivo|3|Inconclusivo.|
 |failure|4 |Falha.|
 |notEvaluated|5 |NotEvaluated.|
-
 
 
 

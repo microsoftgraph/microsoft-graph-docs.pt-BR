@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: fd34f6e1ef845ae8aaff49a7dfaa50db1203772639825badf555a145bd63a3be
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 5202b524398f0794ee9477942821fbf0657aff5a
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54213820"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58802275"
 ---
 # <a name="create-microsofttunnelserverlogcollectionresponse"></a>Criar microsoftTunnelServerLogCollectionResponse
 
@@ -27,9 +27,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All, MicrosoftTunnelGateway.Read.All, MicrosoftTunnelGateway.ReadWrite.All|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|MicrosoftTunnelGateway.ReadWrite.All|
+|Delegado (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Application|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -58,6 +58,9 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar o micros
 |startDateTime|DateTimeOffset|A hora de início dos logs coletados |
 |endDateTime|DateTimeOffset|A hora de término dos logs coletados|
 |sizeInBytes|Int64|O tamanho dos logs em bytes|
+|serverId|Cadeia de caracteres|ID do servidor em que o conjunto de log é solicitado|
+|requestDateTime|DateTimeOffset|A hora em que o conjunto de log foi solicitado|
+|expiryDateTime|DateTimeOffset|O tempo em que o conjunto de log expira|
 
 
 
@@ -71,14 +74,17 @@ Este é um exemplo da solicitação.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/microsoftTunnelServerLogCollectionResponses
 Content-type: application/json
-Content-length: 244
+Content-length: 395
 
 {
   "@odata.type": "#microsoft.graph.microsoftTunnelServerLogCollectionResponse",
   "status": "completed",
   "startDateTime": "2016-12-31T23:58:46.7156189-08:00",
   "endDateTime": "2017-01-01T00:03:30.9241974-08:00",
-  "sizeInBytes": 11
+  "sizeInBytes": 11,
+  "serverId": "Server Id value",
+  "requestDateTime": "2017-01-01T00:03:07.1589002-08:00",
+  "expiryDateTime": "2017-01-01T00:03:32.5199332-08:00"
 }
 ```
 
@@ -87,7 +93,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 293
+Content-Length: 444
 
 {
   "@odata.type": "#microsoft.graph.microsoftTunnelServerLogCollectionResponse",
@@ -95,10 +101,12 @@ Content-Length: 293
   "status": "completed",
   "startDateTime": "2016-12-31T23:58:46.7156189-08:00",
   "endDateTime": "2017-01-01T00:03:30.9241974-08:00",
-  "sizeInBytes": 11
+  "sizeInBytes": 11,
+  "serverId": "Server Id value",
+  "requestDateTime": "2017-01-01T00:03:07.1589002-08:00",
+  "expiryDateTime": "2017-01-01T00:03:32.5199332-08:00"
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c108b5972cdb7ccfdbfd88e64f6929ea2807db958d93bdc084761471910f448c
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: fbf1d3383abbc69784d166bc144fa9b16e3bf170
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54228020"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58803311"
 ---
 # <a name="update-devicemanagement"></a>Atualizar deviceManagement
 
@@ -30,13 +30,13 @@ Observe que a permissão varia de acordo com o fluxo de trabalho.
 
 | Tipo &nbsp; de &nbsp; permissão (por fluxo de &nbsp; trabalho) | Permissões (de privilégios máximos a mínimos) |
 |:---|:---|
-| Delegada (conta corporativa ou de estudante) ||
+| Delegado (conta corporativa ou de estudante) ||
 | &nbsp;&nbsp; **Android for Work** | DeviceManagementConfiguration.ReadWrite.All  |
 | &nbsp; &nbsp; **Auditoria** | DeviceManagementApps.ReadWrite.All |
 | &nbsp; &nbsp; **Termos da empresa** | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp; &nbsp; **Configuração do dispositivo** | DeviceManagementConfiguration.ReadWrite.All |
 | &nbsp;&nbsp; **Intenção do dispositivo** | DeviceManagementConfiguration.ReadWrite.All|
-| &nbsp;&nbsp; **Gerenciamento de dispositivos** | DeviceManagementManagedDevices.ReadWrite.All |
+| &nbsp; &nbsp; **Gerenciamento de dispositivo** | DeviceManagementManagedDevices.ReadWrite.All |
 | &nbsp;&nbsp; **SIM Eletrônico** | DeviceManagementConfiguration.ReadWrite.All |
 | &nbsp;&nbsp; **Inscrição** | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp;&nbsp; **Esgrima** | DeviceManagementConfiguration.ReadWrite.All |
@@ -51,14 +51,14 @@ Observe que a permissão varia de acordo com o fluxo de trabalho.
 | &nbsp;&nbsp; **Gerenciamento de despesas de telecomunicações** | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp;&nbsp; **Troublehooting** | DeviceManagementManagedDevices.ReadWrite.All |
 | &nbsp; &nbsp; **Proteção de Informações do Windows** | DeviceManagementApps.ReadWrite.All |
-| Delegada (conta pessoal da Microsoft) | Sem suporte.|
-| Aplicativo ||
+| Delegado (conta pessoal da Microsoft) | Sem suporte.|
+| Application ||
 | &nbsp;&nbsp; **Android for Work** | DeviceManagementConfiguration.ReadWrite.All  |
 | &nbsp; &nbsp; **Auditoria** | DeviceManagementApps.ReadWrite.All |
 | &nbsp; &nbsp; **Termos da empresa** | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp; &nbsp; **Configuração do dispositivo** | DeviceManagementConfiguration.ReadWrite.All |
 | &nbsp;&nbsp; **Intenção do dispositivo** | DeviceManagementConfiguration.ReadWrite.All|
-| &nbsp;&nbsp; **Gerenciamento de dispositivos** | DeviceManagementManagedDevices.ReadWrite.All |
+| &nbsp; &nbsp; **Gerenciamento de dispositivo** | DeviceManagementManagedDevices.ReadWrite.All |
 | &nbsp;&nbsp; **SIM Eletrônico** | DeviceManagementConfiguration.ReadWrite.All |
 | &nbsp;&nbsp; **Inscrição** | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp;&nbsp; **Esgrima** | DeviceManagementConfiguration.ReadWrite.All |
@@ -101,7 +101,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [deviceM
 |id|Cadeia de caracteres|Identificador exclusivo do dispositivo.|
 |**Configuração do dispositivo**|
 |intuneAccountId|GUID|ID da conta do Intune para determinado locatário|
-|legacyPcManangementEnabled|Boolean|A propriedade para habilitar o gerenciamento de computador herdado não-MDM gerenciado para essa conta. Essa propriedade é somente leitura.|
+|legacyPcManangementEnabled|Boleano|A propriedade para habilitar o gerenciamento de computador herdado não-MDM gerenciado para essa conta. Essa propriedade é somente leitura.|
 |maximumDepTokens|Int32|Número máximo de tokens DEP permitidos por locatário.|
 |settings|[deviceManagementSettings](../resources/intune-deviceconfig-devicemanagementsettings.md)|Configurações de nível da conta.|
 |**Gerenciamento de dispositivo**|
@@ -191,7 +191,6 @@ Content-Length: 855
   "accountMoveCompletionDateTime": "2017-01-01T00:01:17.9006709-08:00"
 }
 ```
-
 
 
 

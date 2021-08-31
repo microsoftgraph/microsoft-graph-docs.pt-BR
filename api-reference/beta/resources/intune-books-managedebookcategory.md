@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 6b877365fb12bf1baede2248b4f52ba6109643d841adfb239d358aaefc4d1fed
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 6b228c410565fe18d9f3b124e7fc176380d9c2b6
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54213274"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58794860"
 ---
 # <a name="managedebookcategory-resource-type"></a>Tipo de recurso managedEBookCategory
 
@@ -28,7 +28,7 @@ Contém propriedades para uma única categoria de eBook do Intune.
 |[Listar managedEBookCategories](../api/intune-books-managedebookcategory-list.md)|[Coleção managedEBookCategory](../resources/intune-books-managedebookcategory.md)|Listar propriedades e relações dos [objetos managedEBookCategory.](../resources/intune-books-managedebookcategory.md)|
 |[Obter managedEBookCategory](../api/intune-books-managedebookcategory-get.md)|[managedEBookCategory](../resources/intune-books-managedebookcategory.md)|Leia propriedades e relações do [objeto managedEBookCategory.](../resources/intune-books-managedebookcategory.md)|
 |[Criar managedEBookCategory](../api/intune-books-managedebookcategory-create.md)|[managedEBookCategory](../resources/intune-books-managedebookcategory.md)|Crie um novo [objeto managedEBookCategory.](../resources/intune-books-managedebookcategory.md)|
-|[Excluir managedEBookCategory](../api/intune-books-managedebookcategory-delete.md)|Nenhum|Exclui [managedEBookCategory](../resources/intune-books-managedebookcategory.md).|
+|[Excluir managedEBookCategory](../api/intune-books-managedebookcategory-delete.md)|Nenhum(a)|Exclui [managedEBookCategory](../resources/intune-books-managedebookcategory.md).|
 |[Atualizar managedEBookCategory](../api/intune-books-managedebookcategory-update.md)|[managedEBookCategory](../resources/intune-books-managedebookcategory.md)|Atualize as propriedades de [um objeto managedEBookCategory.](../resources/intune-books-managedebookcategory.md)|
 
 ## <a name="properties"></a>Propriedades
@@ -57,7 +57,6 @@ Veja a seguir uma representação JSON do recurso.
   "lastModifiedDateTime": "String (timestamp)"
 }
 ```
-
 
 
 

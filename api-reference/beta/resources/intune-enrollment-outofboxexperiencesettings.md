@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: ed86fd6c8d267aa6f12beb5404b9f7a398fb8f4192ad659580dde8c4734443cf
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 229564ad320b2d2a2dfce92f1979d23ca12acda6
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54239270"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58787565"
 ---
 # <a name="outofboxexperiencesettings-resource-type"></a>Tipo de recurso outOfBoxExperienceSettings
 
@@ -25,12 +25,12 @@ Configuração de experiência in-locar
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|hidePrivacySettings|Boolean|Mostrar ou ocultar configurações de privacidade para o usuário|
-|hideEULA|Boolean|Mostrar ou ocultar o EULA para o usuário|
+|hidePrivacySettings|Boleano|Mostrar ou ocultar configurações de privacidade para o usuário|
+|hideEULA|Boleano|Mostrar ou ocultar o EULA para o usuário|
 |userType|[windowsUserType](../resources/intune-enrollment-windowsusertype.md)|Tipo de usuário. Os valores possíveis são: `administrator` e `standard`.|
 |deviceUsageType|[windowsDeviceUsageType](../resources/intune-enrollment-windowsdeviceusagetype.md)|Tipo de autenticação de junção do AAD. Os valores possíveis são: `singleUser` e `shared`.|
-|skipKeyboardSelectionPage|Boolean|Se definido, ignore a página de seleção do teclado se Idioma e Região estão definidos|
-|hideEscapeLink|Boolean|Se for definido como true, o usuário não poderá começar de novo com uma conta diferente, na assinatura da empresa|
+|skipKeyboardSelectionPage|Boleano|Se definido, ignore a página de seleção do teclado se Idioma e Região estão definidos|
+|hideEscapeLink|Boleano|Se for definido como true, o usuário não poderá começar de novo com uma conta diferente, na assinatura da empresa|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -53,7 +53,6 @@ Veja a seguir uma representação JSON do recurso.
   "hideEscapeLink": true
 }
 ```
-
 
 
 

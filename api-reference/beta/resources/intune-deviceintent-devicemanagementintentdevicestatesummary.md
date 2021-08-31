@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: dc72ec4b87e8248cdd33e5b3aaabe6c3d0c77963b855655ddf4656e8aa3b2881
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 0945dcadf4879a326d2ecb1cf3c8e135774ad4a2
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54232598"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58759362"
 ---
 # <a name="devicemanagementintentdevicestatesummary-resource-type"></a>Tipo de recurso deviceManagementIntentDeviceStateSummary
 
@@ -62,7 +62,6 @@ Veja a seguir uma representação JSON do recurso.
   "successCount": 1024
 }
 ```
-
 
 
 
