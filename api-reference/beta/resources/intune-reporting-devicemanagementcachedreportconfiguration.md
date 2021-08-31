@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 2a19a0fc2d8362f1bdc7d6b919f0e4770f5203c38ee91003ff8e72a440714bb0
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: ff8d125f6703b1984eb9369bcfa3cd9b75b12249
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54249745"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58793786"
 ---
 # <a name="devicemanagementcachedreportconfiguration-resource-type"></a>Tipo de recurso deviceManagementCachedReportConfiguration
 
@@ -28,7 +28,7 @@ Entidade que representa a configuração de um relatório em cache
 |[Listar deviceManagementCachedReportConfigurations](../api/intune-reporting-devicemanagementcachedreportconfiguration-list.md)|[Coleção deviceManagementCachedReportConfiguration](../resources/intune-reporting-devicemanagementcachedreportconfiguration.md)|Listar propriedades e relações dos [objetos deviceManagementCachedReportConfiguration.](../resources/intune-reporting-devicemanagementcachedreportconfiguration.md)|
 |[Obter deviceManagementCachedReportConfiguration](../api/intune-reporting-devicemanagementcachedreportconfiguration-get.md)|[deviceManagementCachedReportConfiguration](../resources/intune-reporting-devicemanagementcachedreportconfiguration.md)|Leia propriedades e relações do [objeto deviceManagementCachedReportConfiguration.](../resources/intune-reporting-devicemanagementcachedreportconfiguration.md)|
 |[Criar deviceManagementCachedReportConfiguration](../api/intune-reporting-devicemanagementcachedreportconfiguration-create.md)|[deviceManagementCachedReportConfiguration](../resources/intune-reporting-devicemanagementcachedreportconfiguration.md)|Crie um novo [objeto deviceManagementCachedReportConfiguration.](../resources/intune-reporting-devicemanagementcachedreportconfiguration.md)|
-|[Excluir deviceManagementCachedReportConfiguration](../api/intune-reporting-devicemanagementcachedreportconfiguration-delete.md)|Nenhum|Exclui um [deviceManagementCachedReportConfiguration](../resources/intune-reporting-devicemanagementcachedreportconfiguration.md).|
+|[Excluir deviceManagementCachedReportConfiguration](../api/intune-reporting-devicemanagementcachedreportconfiguration-delete.md)|Nenhum(a)|Exclui um [deviceManagementCachedReportConfiguration](../resources/intune-reporting-devicemanagementcachedreportconfiguration.md).|
 |[Atualizar deviceManagementCachedReportConfiguration](../api/intune-reporting-devicemanagementcachedreportconfiguration-update.md)|[deviceManagementCachedReportConfiguration](../resources/intune-reporting-devicemanagementcachedreportconfiguration.md)|Atualize as propriedades de [um objeto deviceManagementCachedReportConfiguration.](../resources/intune-reporting-devicemanagementcachedreportconfiguration.md)|
 
 ## <a name="properties"></a>Propriedades
@@ -37,8 +37,8 @@ Entidade que representa a configuração de um relatório em cache
 |id|Cadeia de caracteres|Identificador exclusivo dessa entidade|
 |reportName|Cadeia de caracteres|Nome do relatório|
 |filter|Cadeia de caracteres|Filtros aplicados na criação de relatório.|
-|select|String collection|Colunas selecionadas no relatório|
-|orderBy|String collection|Ordenação de colunas no relatório|
+|select|Coleção de cadeias de caracteres|Colunas selecionadas no relatório|
+|orderBy|Coleção de cadeias de caracteres|Ordenação de colunas no relatório|
 |metadados|Cadeia de caracteres|Metadados gerenciados pelo chamador associados ao relatório|
 |status|[deviceManagementReportStatus](../resources/intune-reporting-devicemanagementreportstatus.md)|Status do relatório armazenado em cache. Os valores possíveis são: `unknown`, `notStarted`, `inProgress`, `completed`, `failed`.|
 |lastRefreshDateTime|DateTimeOffset|Hora em que o relatório em cache foi atualizado pela última vez|
@@ -73,7 +73,6 @@ Veja a seguir uma representação JSON do recurso.
   "expirationDateTime": "String (timestamp)"
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 75bbbb5d0bc201b47c8864d8724f3b423e0a2276efa63d91d863d6b6ac1ece15
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 38c39f0370d6b43c9156c3cd4093dd2b4f417974
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54248912"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58786996"
 ---
 # <a name="editionupgradelicensetype-enum-type"></a>tipo de número editionUpgradeLicenseType
 
@@ -26,9 +26,8 @@ Tipo de Licença de Atualização da Edição
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |productKey|0|Tipo de chave do produto|
-|licenseFile|1 |Tipo de arquivo de licença|
+|licenseFile|1|Tipo de arquivo de licença|
 |notConfigured|2|NotConfigured|
-
 
 
 

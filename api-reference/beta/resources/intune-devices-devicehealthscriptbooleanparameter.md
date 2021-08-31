@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 6360fbd2a27333300185089c7c298ef11cb92c5208f8068e7bd64ea5ffa1201c
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 3754aaf009ecc611b7db0d58b2e7731795978376
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54182767"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58784454"
 ---
 # <a name="devicehealthscriptbooleanparameter-resource-type"></a>Tipo de recurso deviceHealthScriptBooleanParameter
 
@@ -29,10 +29,10 @@ Herda de [deviceHealthScriptParameter](../resources/intune-devices-devicehealths
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |nome|Cadeia de caracteres|O nome do param Herdado de [deviceHealthScriptParameter](../resources/intune-devices-devicehealthscriptparameter.md)|
-|description|Cadeia de caracteres|A descrição do param Herdado de [deviceHealthScriptParameter](../resources/intune-devices-devicehealthscriptparameter.md)|
+|descrição|Cadeia de caracteres|A descrição do param Herdado de [deviceHealthScriptParameter](../resources/intune-devices-devicehealthscriptparameter.md)|
 |isRequired|Booliano|Se o param é necessário Herdado de [deviceHealthScriptParameter](../resources/intune-devices-devicehealthscriptparameter.md)|
-|applyDefaultValueWhenNotAssigned|Boolean|Se aplicar DefaultValue quando não atribuído herdado de [deviceHealthScriptParameter](../resources/intune-devices-devicehealthscriptparameter.md)|
-|defaultValue|Boolean|O valor padrão do param booleano|
+|applyDefaultValueWhenNotAssigned|Boleano|Se aplicar DefaultValue quando não atribuído herdado de [deviceHealthScriptParameter](../resources/intune-devices-devicehealthscriptparameter.md)|
+|defaultValue|Booliano|O valor padrão do param booleano|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -54,7 +54,6 @@ Veja a seguir uma representação JSON do recurso.
   "defaultValue": true
 }
 ```
-
 
 
 

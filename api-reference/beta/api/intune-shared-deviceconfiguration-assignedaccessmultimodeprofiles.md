@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 148ac416cbd79786f9d8c9ec4235595fcfb29c88b38448fed1f6d389f0eabfa6
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 4ccacd982c05ed1ed61043adbdb17f24ea06495a
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54198581"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58816771"
 ---
 # <a name="assignedaccessmultimodeprofiles-action"></a>ação assignedAccessMultiModeProfiles
 
@@ -101,7 +101,6 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

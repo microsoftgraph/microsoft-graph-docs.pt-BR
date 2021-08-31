@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 6b9916a893f789cd2f5ac12aa86baf32796e47a4a5790eac89642e36410dcd96
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 4e48e05ab38eeb54f7e4bb294ac39afe79a90912
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54224485"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58783446"
 ---
 # <a name="devicemanagementpartnertenantstate-enum-type"></a>Tipo de número deviceManagementPartnerTenantState
 
@@ -26,12 +26,11 @@ Estado do parceiro desse locatário.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |desconhecido|0|O estado do parceiro é desconhecido.|
-|unavailable|1 |O parceiro não está disponível.|
+|unavailable|1|O parceiro não está disponível.|
 |habilitadas|2|O parceiro está habilitado.|
-|encerrado|3 |A conexão do parceiro foi encerrada.|
+|encerrado|3|A conexão do parceiro foi encerrada.|
 |rejected|4 |As mensagens de parceiro são rejeitadas.|
 |não responsivo|5 |O parceiro não responde.|
-
 
 
 

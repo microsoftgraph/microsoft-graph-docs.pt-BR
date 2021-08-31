@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: e8524127f5a1fe202781b222694b07af2c17b80dedf0e49a5b8f4c1ade92b2a2
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: f708b9a7ebff29afd76ebc315f71056bfad4d955
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54242493"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58791085"
 ---
 # <a name="endpointsecurityconfigurationapplicableplatform-enum-type"></a>endpointSecurityConfigurationApplicablePlatform enum type
 
@@ -26,10 +26,9 @@ A plataforma de configuração de segurança do ponto de extremidade aplicável.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |desconhecido|0|Desconhecido.|
-|macOS|1 |MacOS.|
+|macOS|1|MacOS.|
 |windows10AndLater|2|Windows 10 e posterior.|
-|windows10AndWindowsServer|3 |Windows 10 e Windows Server.|
-
+|windows10AndWindowsServer|3|Windows 10 e Windows Server.|
 
 
 

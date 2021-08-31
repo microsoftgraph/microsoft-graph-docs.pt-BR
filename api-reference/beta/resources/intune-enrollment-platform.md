@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: c9a1930048db0b3c8052a117b42857ddd5dcf07095d6f354f4e422af3add3336
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 42b31148309d63d003f07e34ba2b3257dc35b548
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54242605"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58787558"
 ---
 # <a name="platform-enum-type"></a>tipo de número de plataforma
 
@@ -26,12 +26,11 @@ Ainda não documentado
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |desconhecido|0|Plataforma de dispositivo desconhecido|
-|ios|1 |Plataforma de dispositivo IOS|
+|ios|1|Plataforma de dispositivo IOS|
 |android|2|Plataforma de dispositivo Android|
-|windows|3 |Windows de dispositivos|
+|windows|3|Windows de dispositivos|
 |windowsMobile|4 |Plataforma de dispositivos WindowsMobile|
 |macOS|5 |Plataforma de dispositivo Mac|
-
 
 
 

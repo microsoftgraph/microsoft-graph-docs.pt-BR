@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 0ee9bba07e0f3607f95129ad82e2a9c7378ebcfb7b44c7f9fcc403ac727b876f
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 435cc6f118c8e9126d4feb60a8d74fed1898db9b
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54251278"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58790875"
 ---
 # <a name="remoteaction-enum-type"></a>Tipo de número remoteAction
 
@@ -26,9 +26,9 @@ Ações remotas Compatíveis com o Intune.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |desconhecido|0|O usuário inicia uma ação desconhecida.|
-|factoryReset|1 |O usuário inicia uma ação para redefinir de fábrica um dispositivo. |
+|factoryReset|1|O usuário inicia uma ação para redefinir de fábrica um dispositivo. |
 |removeCompanyData|2|O usuário inicia uma ação para remover dados da empresa de um dispositivo. |
-|resetPasscode|3 |O usuário inicia uma ação para remover a senha de um dispositivo iOS ou redefinir a senha do dispositivo Android/Windows. |
+|resetPasscode|3|O usuário inicia uma ação para remover a senha de um dispositivo iOS ou redefinir a senha do dispositivo Android/Windows. |
 |remoteLock|4 |O usuário inicia uma ação para bloquear um dispositivo remotamente.|
 |enableLostMode|5 |O usuário inicia uma ação para habilitar o modo perdido em um dispositivo iOS supervisionado.|
 |disableLostMode|6 |O usuário inicia uma ação para desabilitar o modo perdido em um dispositivo iOS supervisionado.|
@@ -38,7 +38,7 @@ Ações remotas Compatíveis com o Intune.
 |cleanWindowsDevice|10 |O usuário inicia uma ação para limpar o dispositivo windows.|
 |logoutSharedAppleDeviceActiveUser|11 |O usuário inicia uma ação para fazer logoff do usuário atual no dispositivo apple compartilhado.|
 |quickScan|12 |O usuário inicia uma ação para executar uma verificação rápida no dispositivo.|
-|fullScan|13 |O usuário inicia uma ação para executar a verificação completa no dispositivo.|
+|fullScan|13|O usuário inicia uma ação para executar a verificação completa no dispositivo.|
 |windowsDefenderUpdateSignatures|14 |O usuário inicia uma ação para atualizar assinaturas de malware no dispositivo.|
 |factoryResetKeepEnrollmentData|15 |O usuário inicia um dispositivo de limpeza remota de ação com a manutenção de dados de registro.|
 |updateDeviceAccount|16 |O usuário inicia uma ação para atualizar a conta no dispositivo.|
@@ -49,7 +49,6 @@ Ações remotas Compatíveis com o Intune.
 |getFileVaultKey| 21 |O usuário inicia uma ação para Obter FileVaultKey no mac.|
 |setDeviceName|22|O usuário inicia uma ação para definir o Nome do Dispositivo no dispositivo.|
 |activateDeviceEsim|23|O usuário inicia uma ação para ativar o eSIM no dispositivo.|
-
 
 
 

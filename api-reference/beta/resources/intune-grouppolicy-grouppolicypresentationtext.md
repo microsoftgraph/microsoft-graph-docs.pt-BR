@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: ce5755e5002aa0f8ba40518769bd6afd3de9b969b91d537dd42cb772629f912c
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: bf3eb2d1d99a62699950421ce2bde69a85c8e834
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54244586"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58788658"
 ---
 # <a name="grouppolicypresentationtext-resource-type"></a>Tipo de recurso groupPolicyPresentationText
 
@@ -31,7 +31,7 @@ Herda de [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypr
 |[Listar groupPolicyPresentationTexts](../api/intune-grouppolicy-grouppolicypresentationtext-list.md)|[coleção groupPolicyPresentationText](../resources/intune-grouppolicy-grouppolicypresentationtext.md)|Listar propriedades e relações dos [objetos groupPolicyPresentationText.](../resources/intune-grouppolicy-grouppolicypresentationtext.md)|
 |[Obter groupPolicyPresentationText](../api/intune-grouppolicy-grouppolicypresentationtext-get.md)|[groupPolicyPresentationText](../resources/intune-grouppolicy-grouppolicypresentationtext.md)|Leia propriedades e relações do [objeto groupPolicyPresentationText.](../resources/intune-grouppolicy-grouppolicypresentationtext.md)|
 |[Criar groupPolicyPresentationText](../api/intune-grouppolicy-grouppolicypresentationtext-create.md)|[groupPolicyPresentationText](../resources/intune-grouppolicy-grouppolicypresentationtext.md)|Crie um novo [objeto groupPolicyPresentationText.](../resources/intune-grouppolicy-grouppolicypresentationtext.md)|
-|[Excluir groupPolicyPresentationText](../api/intune-grouppolicy-grouppolicypresentationtext-delete.md)|Nenhum|Exclui um [groupPolicyPresentationText](../resources/intune-grouppolicy-grouppolicypresentationtext.md).|
+|[Excluir groupPolicyPresentationText](../api/intune-grouppolicy-grouppolicypresentationtext-delete.md)|Nenhum(a)|Exclui um [groupPolicyPresentationText](../resources/intune-grouppolicy-grouppolicypresentationtext.md).|
 |[Atualizar groupPolicyPresentationText](../api/intune-grouppolicy-grouppolicypresentationtext-update.md)|[groupPolicyPresentationText](../resources/intune-grouppolicy-grouppolicypresentationtext.md)|Atualize as propriedades de [um objeto groupPolicyPresentationText.](../resources/intune-grouppolicy-grouppolicypresentationtext.md)|
 
 ## <a name="properties"></a>Propriedades
@@ -62,7 +62,6 @@ Veja a seguir uma representação JSON do recurso.
   "lastModifiedDateTime": "String (timestamp)"
 }
 ```
-
 
 
 

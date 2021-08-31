@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f91f5b5c72bbecd3d671f1b047ffaac4e93e7d26122ceee68150afaf5a0a014b
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 030a5467659edfa2754819bb20b1e44e28e6de4a
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54195432"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58787957"
 ---
 # <a name="update-vpptoken"></a>Atualizar vppToken
 
@@ -27,9 +27,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementServiceConfig.ReadWrite.All|
+|Delegado (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Application|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -66,11 +66,11 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar o [vppTo
 |lastSyncStatus|[vppTokenSyncStatus](../resources/intune-onboarding-vpptokensyncstatus.md)|Status atual de sincronização da última sincronização de aplicativo que foi feita usando o Token do Apple Volume Purchase Program. Os valores possíveis são: `none`, `inProgress`, `completed`, `failed`. Os valores possíveis são: `none`, `inProgress`, `completed`, `failed`.|
 |automaticallyUpdateApps|Boolean|Se os aplicativos para o token VPP serão automaticamente atualizados ou não.|
 |countryOrRegion|Cadeia de caracteres|Se os aplicativos para o token VPP serão automaticamente atualizados ou não.|
-|dataSharingConsentGranted|Boolean|Consentimento concedido para compartilhamento de dados com o Programa de Compra de Volume da Apple.|
+|dataSharingConsentGranted|Boleano|Consentimento concedido para compartilhamento de dados com o Programa de Compra de Volume da Apple.|
 |displayName|Cadeia de caracteres|Um nome amigável de token especificado pelo administrador.|
 |locationName|Cadeia de caracteres|Local do token retornado do VPP da Apple.|
-|claimTokenManagementFromExternalMdm|Boolean|Consentimento do administrador para permitir o gerenciamento de token de declaração do MDM externo.|
-|roleScopeTagIds|String collection|IDs de marcas de escopo de função atribuídas a essa entidade.|
+|claimTokenManagementFromExternalMdm|Boleano|Consentimento do administrador para permitir o gerenciamento de token de declaração do MDM externo.|
+|roleScopeTagIds|Coleção de cadeias de caracteres|IDs de marcas de escopo de função atribuídas a essa entidade.|
 
 
 
@@ -156,7 +156,6 @@ Content-Length: 1115
   ]
 }
 ```
-
 
 
 

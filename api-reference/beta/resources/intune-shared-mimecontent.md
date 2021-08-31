@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: e1a1301307833dee85a22c7805edde334084c9310efdac335ec761a317c88097
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 1fb5902c921c1ef0cdc0f0f6a7d849e78a4306c6
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54150154"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58783824"
 ---
 # <a name="mimecontent-resource-type"></a>Tipo de recurso mimeContent
 
@@ -25,7 +25,7 @@ Contém as propriedades de um conteúdo genérico MIME.
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|type|Cadeia de caracteres|Indica o tipo de conteúdo MIME.|
+|tipo|Cadeia de caracteres|Indica o tipo de conteúdo MIME.|
 |value|Binária|A matriz de byte que contém o conteúdo atual.|
 
 ## <a name="relationships"></a>Relações
@@ -45,7 +45,6 @@ Veja a seguir uma representação JSON do recurso.
   "value": "binary"
 }
 ```
-
 
 
 

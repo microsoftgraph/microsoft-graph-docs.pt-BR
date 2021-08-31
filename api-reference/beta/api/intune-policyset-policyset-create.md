@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 7d12d43cf0f4da721ef5361fe94aa845134f1c6a1668fd20449f6d3a1f18747e
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: a9737ca826ca5530b915c75285fb4ea3506382f9
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54207758"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58784916"
 ---
 # <a name="create-policyset"></a>Criar policySet
 
@@ -27,9 +27,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
+|Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Application|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -57,11 +57,11 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar o policy
 |createdDateTime|DateTimeOffset|Hora de criação do PolicySet.|
 |lastModifiedDateTime|DateTimeOffset|Última hora modificada do PolicySet.|
 |displayName|Cadeia de caracteres|DisplayName do PolicySet.|
-|description|Cadeia de caracteres|Descrição do PolicySet.|
+|descrição|Cadeia de caracteres|Descrição do PolicySet.|
 |status|[policySetStatus](../resources/intune-policyset-policysetstatus.md)|Status de validação/atribuição do PolicySet. Os valores possíveis são: `unknown`, `validating`, `partialSuccess`, `success`, `error`, `notAssigned`.|
 |errorCode|[errorCode](../resources/intune-policyset-errorcode.md)|Código de erro se ocorrer algum. Os valores possíveis são: `noError`, `unauthorized`, `notFound`, `deleted`.|
-|guidedDeploymentTags|String collection|Marcas da implantação guiada|
-|roleScopeTags|String collection|RoleScopeTags do PolicySet|
+|guidedDeploymentTags|Coleção de cadeias de caracteres|Marcas da implantação guiada|
+|roleScopeTags|Coleção de cadeias de caracteres|RoleScopeTags do PolicySet|
 
 
 
@@ -116,7 +116,6 @@ Content-Length: 489
   ]
 }
 ```
-
 
 
 

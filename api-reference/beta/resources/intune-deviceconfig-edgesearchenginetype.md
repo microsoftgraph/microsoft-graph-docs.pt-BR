@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: e57a36590ff44031b8bfe6027e303ca66365ecb90b08f68dad9ed51e9cf69e77
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 51d84da7886d11dd51c31f3568514e5b05566ea0
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54173202"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58787297"
 ---
 # <a name="edgesearchenginetype-enum-type"></a>Tipo denum edgeSearchEngineType
 
@@ -26,8 +26,7 @@ Permite que o administrador de IT de definir um mecanismo de pesquisa padrão pr
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |Padrão.|0|Usa configurações de fábrica do Edge para atribuir o mecanismo de pesquisa padrão de acordo com o mercado de usuários|
-|bing|1 |Define Bing como o mecanismo de pesquisa padrão|
-
+|bing|1|Define Bing como o mecanismo de pesquisa padrão|
 
 
 

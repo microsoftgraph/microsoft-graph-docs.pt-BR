@@ -5,12 +5,12 @@ localization_priority: Normal
 author: williamlooney
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: b981502fb1714a8a29436fcf8ab2b68150d8fcbd
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: e0d9c93d696df969dd3cf78939d81a41385c8084
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50955012"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58772223"
 ---
 # <a name="callrecord-resource-type"></a>Tipo de recurso callRecord
 
@@ -25,8 +25,8 @@ Representa uma única chamada ponto a ponto ou uma chamada de grupo entre vário
 | Método       | Tipo de retorno | Descrição |
 |:-------------|:------------|:------------|
 | [Obter callRecord](../api/callrecords-callrecord-get.md) | [microsoft.graph.callRecords.callRecord](callrecords-callrecord.md) | Leia as propriedades e as relações de um **objeto callRecord.** |
-| [Obter chamadas PSTN](../api/callrecords-callrecord-getpstncalls.md) | [microsoft.graph.callRecords.pstnCallLogRow](callrecords-pstncalllogrow.md)| Leia as propriedades de um **objeto pstnCallLogRow.** |
-| [Obter chamadas de roteamento direto](../api/callrecords-callrecord-getdirectroutingcalls.md) | [microsoft.graph.callRecords.directRoutingLogRow](callrecords-directroutinglogrow.md)| Leia as propriedades de um **objeto directRoutingLogRow.** |
+| [getPstnCalls](../api/callrecords-callrecord-getpstncalls.md) | [coleção microsoft.graph.callRecords.pstnCallLogRow](callrecords-pstncalllogrow.md) | Listar **objetos pstnCallLogRow** em um registro de chamada. |
+| [getDirectRoutingCalls](../api/callrecords-callrecord-getdirectroutingcalls.md) | [coleção microsoft.graph.callRecords.directRoutingLogRow](callrecords-directroutinglogrow.md)| Listar **objetos directRoutingLogRow** para um registro de chamada. |
 
 ## <a name="properties"></a>Propriedades
 
@@ -36,7 +36,7 @@ Representa uma única chamada ponto a ponto ou uma chamada de grupo entre vário
 |id|Cadeia de caracteres|Identificador exclusivo do registro de chamada. Somente leitura.|
 |joinWebUrl|Cadeia de caracteres|URL de reunião associada à chamada. Pode não estar disponível para um tipo de registro de chamada peerToPeer.|
 |lastModifiedDateTime|DateTimeOffset|Hora UTC quando o registro de chamada foi criado. O tipo DatetimeOffset representa informações de data e hora usando o formato ISO 8601 e está sempre em horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`|
-|modalidades|coleção de modalidades|Lista de todas as modalidades usadas na chamada. Os valores possíveis são: `unknown`, `audio`, `video`, `videoBasedScreenSharing`, `data`, `screenSharing`, `unknownFutureValue`.|
+|modalidades|coleção modality|Lista de todas as modalidades usadas na chamada. Os valores possíveis são: `unknown`, `audio`, `video`, `videoBasedScreenSharing`, `data`, `screenSharing`, `unknownFutureValue`.|
 |organizer|[identitySet](identityset.md)|A identidade da parte organizadora.|
 |participantes|Coleção [identitySet](identityset.md)|Lista de identidades distintas envolvidas na chamada.|
 |startDateTime|DateTimeOffset|Hora UTC quando o primeiro usuário ingressou na chamada. O tipo DatetimeOffset representa informações de data e hora usando o formato ISO 8601 e está sempre em horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`|

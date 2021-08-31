@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 336978886f5bc26fe9b69be97ee9476a322fc8c3288a1da54be56eefd0029a63
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 0d0e210e760fa0fc709eb41bf8800d48ebb6cac7
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54173734"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58785210"
 ---
 # <a name="get-deviceappmanagement"></a>Get deviceAppManagement
 
@@ -28,13 +28,13 @@ Uma das seguintes permissões é necessária para chamar essa API. Para saber ma
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
-| Delegada (conta corporativa ou de estudante) | |
+| Delegado (conta corporativa ou de estudante) | |
 | &nbsp;&nbsp; **Aplicativos,** **livros,** **integração,** **integração de** parceiros ou **conjunto de políticas** | DeviceManagementApps.ReadWrite.All, DeviceManagementApps.ReadW.All |
-| &nbsp;&nbsp; **Gerenciamento de dispositivos** | DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All |
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo| |
+| &nbsp; &nbsp; **Gerenciamento de dispositivo** | DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All |
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Application| |
 | &nbsp;&nbsp; **Aplicativos,** **livros,** **integração,** **integração de** parceiros ou **conjunto de políticas** | DeviceManagementApps.ReadWrite.All, DeviceManagementApps.ReadW.All |
-| &nbsp;&nbsp; **Gerenciamento de dispositivos** | DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All |
+| &nbsp; &nbsp; **Gerenciamento de dispositivo** | DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -90,7 +90,6 @@ Content-Length: 133
   }
 }
 ```
-
 
 
 

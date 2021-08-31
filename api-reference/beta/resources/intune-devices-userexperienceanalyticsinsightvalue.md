@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 5bcdb99f7c25530dc6b464f8ce87a0d42a5b280b4b0b3ae416bc7bb7e1b53999
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 2707088c0b36ec6f42679840f590ce7494801531
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54213106"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58794382"
 ---
 # <a name="userexperienceanalyticsinsightvalue-resource-type"></a>Tipo de recurso userExperienceAnalyticsInsightValue
 
@@ -41,7 +41,6 @@ Veja a seguir uma representação JSON do recurso.
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsInsightValue"
 }
 ```
-
 
 
 
