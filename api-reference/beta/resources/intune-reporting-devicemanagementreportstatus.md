@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: c786a67a28674313f7a205d43e9f9caf8e7d9cce9894af480fdc70f5b94cf29f
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 1f04c12b53c1aedb46d904131125e9dadd229faa
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54217159"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58803451"
 ---
 # <a name="devicemanagementreportstatus-enum-type"></a>Tipo de número deviceManagementReportStatus
 
@@ -26,11 +26,10 @@ Status possíveis associados a um relatório gerado
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |desconhecido|0|O status de geração de relatório é desconhecido|
-|notStarted|1 |A geração de relatório não foi iniciada|
+|notStarted|1|A geração de relatório não foi iniciada|
 |inProgress|2|A geração de relatório está em andamento|
-|completed|3 |A geração de relatório é concluída|
+|completed|3|A geração de relatório é concluída|
 |failed|4 |Falha na geração de relatório|
-
 
 
 

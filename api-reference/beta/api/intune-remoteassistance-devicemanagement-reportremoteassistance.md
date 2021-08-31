@@ -1,18 +1,18 @@
 ---
-title: Ação assignResourceAccountToDevice
-description: Atribui conta de recurso a dispositivos autopilot.
+title: Ação reportRemoteAssistance
+description: Uma chamada post para enviar a carga de relatórios
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5b7cd2135cce2be24968b4bc05dc040606e433af
+ms.openlocfilehash: d00265f73751ac29028aea0ecf9b9d58f721259d
 ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 08/31/2021
-ms.locfileid: "58803620"
+ms.locfileid: "58797157"
 ---
-# <a name="assignresourceaccounttodevice-action"></a>Ação assignResourceAccountToDevice
+# <a name="reportremoteassistance-action"></a>Ação reportRemoteAssistance
 
 Namespace: microsoft.graph
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Atribui conta de recurso a dispositivos autopilot.
+Uma chamada post para enviar a carga de relatórios
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -37,8 +37,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 }
 -->
 ``` http
-POST /deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDeviceIdentityId}/assignResourceAccountToDevice
-POST /deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDeviceIdentityId}/deploymentProfile/assignedDevices/{windowsAutopilotDeviceIdentityId}/assignResourceAccountToDevice
+POST /deviceManagement/reportRemoteAssistance
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -54,9 +53,7 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta ação.
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|userPrincipalName|Cadeia de caracteres|Ainda não documentado|
-|addressableUserName|String|Ainda não documentado|
-|resourceAccountName|String|Ainda não documentado|
+|reportingPayload|[remoteAssistanceReporting](../resources/intune-remoteassistance-remoteassistancereporting.md)|Ainda não documentado|
 
 
 
@@ -68,15 +65,33 @@ Se tiver êxito, esta ação retornará um código de resposta `204 No Content`.
 ### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
 ``` http
-POST https://graph.microsoft.com/beta/deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDeviceIdentityId}/assignResourceAccountToDevice
+POST https://graph.microsoft.com/beta/deviceManagement/reportRemoteAssistance
 
 Content-type: application/json
-Content-length: 170
+Content-length: 972
 
 {
-  "userPrincipalName": "User Principal Name value",
-  "addressableUserName": "Addressable User Name value",
-  "resourceAccountName": "Resource Account Name value"
+  "reportingPayload": {
+    "@odata.type": "microsoft.graph.remoteAssistanceReporting",
+    "id": "Id value",
+    "startDateTime": "2016-12-31T23:58:46.7156189-08:00",
+    "endDateTime": "2017-01-01T00:03:30.9241974-08:00",
+    "remoteAssistanceSessionType": "fullControl",
+    "helperEmail": "Helper Email value",
+    "helperTenantId": "Helper Tenant Id value",
+    "helperFirstName": "Helper First Name value",
+    "helperLastName": "Helper Last Name value",
+    "helperDeviceAadId": "Helper Device Aad Id value",
+    "helperDeviceName": "Helper Device Name value",
+    "helperEnrollmentState": "enrolled",
+    "sharerEmail": "Sharer Email value",
+    "sharerTenantId": "Sharer Tenant Id value",
+    "sharerFirstName": "Sharer First Name value",
+    "sharerLastName": "Sharer Last Name value",
+    "sharerDeviceAadId": "Sharer Device Aad Id value",
+    "sharerDeviceName": "Sharer Device Name value",
+    "sharerEnrollmentState": "enrolled"
+  }
 }
 ```
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 8eeea6cccfb7e917b9f6f47ac918f233dd36cd9bdf8b4a0d28fbddf88b9561d5
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: c86a3be25aed8619de31dd090955bd4785139bc6
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54122269"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58777335"
 ---
 # <a name="devicemanagementdomainjoinconnectorstate-enum-type"></a>Tipo de número deviceManagementDomainJoinConnectorState
 
@@ -26,9 +26,8 @@ Os estados de solicitação ODJ.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |active|0|O conector está pingando ativamente no Intune.|
-|erro|1 |Não há nenhuma batida do coração do conector da última hora.|
+|erro|1|Não há nenhuma batida do coração do conector da última hora.|
 |inativo|2|Não há nenhuma batida do coração do conector dos últimos 5 dias.|
-
 
 
 

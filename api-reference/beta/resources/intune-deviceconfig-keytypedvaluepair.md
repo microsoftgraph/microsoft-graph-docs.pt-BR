@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d85646e3650327a9f2d88d64cec6799216d403eb7b35469649d61730e82fcee7
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 658cc2987b2ee27ea8ac2bf014c3e8d9b27d6d75
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54202984"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58795869"
 ---
 # <a name="keytypedvaluepair-resource-type"></a>Tipo de recurso keyTypedValuePair
 
@@ -43,7 +43,6 @@ Veja a seguir uma representação JSON do recurso.
   "key": "String"
 }
 ```
-
 
 
 

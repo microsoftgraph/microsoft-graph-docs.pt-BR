@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 30d4daa77f8f42b429b676f2f0c4e0f254fde250034da2816da6028b75d5afcd
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: d6e92046dbc9d3a6dcf015036adec498a4be43d8
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54249829"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58795161"
 ---
 # <a name="windowsusertype-enum-type"></a>Tipo de número windowsUserType
 
@@ -26,8 +26,7 @@ Ainda não documentado
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |administrator|0|Ainda não documentado|
-|standard|1 |Ainda não documentado|
-
+|standard|1|Ainda não documentado|
 
 
 

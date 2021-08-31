@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 9d2d1b094226b463a0d618220353e7c501f7fde942920701e5ba3c6f5a4fa78e
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 50f1ab8f02c54a173fc25b4daf1fe65930dfc9fb
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54183195"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58802793"
 ---
 # <a name="appinstallcontroltype-enum-type"></a>Tipo de núm appInstallControlType
 
@@ -26,11 +26,10 @@ Configuração do controle de instalação do aplicativo
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |notConfigured|0|Não configurado|
-|em qualquer lugar|1 |Desativar recomendações de aplicativo|
+|em qualquer lugar|1|Desativar recomendações de aplicativo|
 |storeOnly|2|Permitir somente aplicativos da Loja|
-|recomendações|3 |Mostrar-me recomendações de aplicativo|
+|recomendações|3|Mostrar-me recomendações de aplicativo|
 |preferStore|4 |Avisar-me antes de instalar aplicativos de fora da Loja|
-
 
 
 

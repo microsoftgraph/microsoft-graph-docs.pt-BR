@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 46a694306096d176af1042fbdabf769146189b6019b82eb6c15d396501215df5
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 7f55daece7b7676c06e24b58b77ad73aa7c64b12
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54122226"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58769380"
 ---
 # <a name="ioslobappassignmentsettings-resource-type"></a>Tipo de recurso iosLobAppAssignmentSettings
 
@@ -30,7 +30,7 @@ Herda de [mobileAppAssignmentSettings](../resources/intune-shared-mobileappassig
 |:---|:---|:---|
 |vpnConfigurationId|Cadeia de caracteres|A identificação de configuração da VPN a aplicar neste aplicativo.|
 |**Aplicativos**|
-|uninstallOnDeviceRemoval|Boolean|Se deve ou não desinstalar o aplicativo quando o dispositivo for removido do Intune.|
+|uninstallOnDeviceRemoval|Boleano|Se deve ou não desinstalar o aplicativo quando o dispositivo for removido do Intune.|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -49,7 +49,6 @@ Veja a seguir uma representação JSON do recurso.
   "uninstallOnDeviceRemoval": true
 }
 ```
-
 
 
 

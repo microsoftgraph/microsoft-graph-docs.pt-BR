@@ -1,18 +1,18 @@
 ---
-title: Obter onPremisesConditionalAccessSettings
-description: Ler propriedades e relações do objeto onPremisesConditionalAccessSettings.
+title: Listar windowsDriverUpdateProfileAssignments
+description: Listar propriedades e relações dos objetos windowsDriverUpdateProfileAssignment.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 04fd56557e05c0851af5064fc34cb2fa12ca1029
+ms.openlocfilehash: 587a0c31d6df1cf42b488ab41ba93f4317c30430
 ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 08/31/2021
-ms.locfileid: "58803858"
+ms.locfileid: "58795358"
 ---
-# <a name="get-onpremisesconditionalaccesssettings"></a>Obter onPremisesConditionalAccessSettings
+# <a name="list-windowsdriverupdateprofileassignments"></a>Listar windowsDriverUpdateProfileAssignments
 
 Namespace: microsoft.graph
 
@@ -20,16 +20,16 @@ Namespace: microsoft.graph
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Ler propriedades e relações do objeto [onPremisesConditionalAccessSettings](../resources/intune-onboarding-onpremisesconditionalaccesssettings.md).
+Listar propriedades e relações dos [objetos windowsDriverUpdateProfileAssignment.](../resources/intune-softwareupdate-windowsdriverupdateprofileassignment.md)
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All|
+|Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Application|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -37,12 +37,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 }
 -->
 ``` http
-GET /deviceManagement/conditionalAccessSettings
-GET /deviceManagement/exchangeOnPremisesPolicy/conditionalAccessSettings
+GET /deviceManagement/windowsDriverUpdateProfiles/{windowsDriverUpdateProfileId}/assignments
 ```
-
-## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 |Cabeçalho|Valor|
@@ -54,14 +50,14 @@ Este método dá suporte a [Parâmetros de consulta OData](/graph/query-paramete
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um código de resposta `200 OK` e um objeto [onPremisesConditionalAccessSettings](../resources/intune-onboarding-onpremisesconditionalaccesssettings.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e uma coleção de `200 OK` [objetos windowsDriverUpdateProfileAssignment](../resources/intune-softwareupdate-windowsdriverupdateprofileassignment.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
 ### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
 ``` http
-GET https://graph.microsoft.com/beta/deviceManagement/conditionalAccessSettings
+GET https://graph.microsoft.com/beta/deviceManagement/windowsDriverUpdateProfiles/{windowsDriverUpdateProfileId}/assignments
 ```
 
 ### <a name="response"></a>Resposta
@@ -69,21 +65,20 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 363
+Content-Length: 453
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.onPremisesConditionalAccessSettings",
-    "id": "a0efde21-de21-a0ef-21de-efa021deefa0",
-    "enabled": true,
-    "includedGroups": [
-      "77c9d466-d466-77c9-66d4-c97766d4c977"
-    ],
-    "excludedGroups": [
-      "2a0afae4-fae4-2a0a-e4fa-0a2ae4fa0a2a"
-    ],
-    "overrideDefaultRule": true
-  }
+  "value": [
+    {
+      "@odata.type": "#microsoft.graph.windowsDriverUpdateProfileAssignment",
+      "id": "951663d5-63d5-9516-d563-1695d5631695",
+      "target": {
+        "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget",
+        "deviceAndAppManagementAssignmentFilterId": "Device And App Management Assignment Filter Id value",
+        "deviceAndAppManagementAssignmentFilterType": "include"
+      }
+    }
+  ]
 }
 ```
 

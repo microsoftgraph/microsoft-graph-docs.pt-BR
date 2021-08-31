@@ -5,12 +5,12 @@ author: williamlooney
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 21104f3d0812edd2af7918d6b55ff9a2f9013037
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: a1260d3f1406807930e696a1d7adbd6db21392b6
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50159651"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58788244"
 ---
 # <a name="directroutinglogrow-resource-type"></a>Tipo de recurso directRoutingLogRow
 
@@ -20,31 +20,37 @@ Namespace: microsoft.graph.callRecords
 
 Representa uma linha de dados no log de chamadas de roteamento direto. Cada linha mapeia para uma chamada.
 
+## <a name="methods"></a>Métodos
+
+| Método       | Tipo de retorno | Descrição |
+|:-------------|:------------|:------------|
+| [getDirectRoutingCalls](../api/callrecords-callrecord-getdirectroutingcalls.md) | [coleção microsoft.graph.callRecords.directRoutingLogRow](callrecords-directroutinglogrow.md)| Listar **objetos directRoutingLogRow** para um registro de chamada. |
+
 ## <a name="properties"></a>Propriedades
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Identificador exclusivo da chamada. GUID.|
+|callEndSubReason|Int32| Além dos códigos SIP, a Microsoft tem subcódigos próprios que indicam o problema específico.|
+|callType|Cadeia de caracteres| Tipo e direção de chamada.|
+|calleeNumber|Cadeia de caracteres| Número do usuário ou bot que recebeu a chamada. [Formato E.164,](https://en.wikipedia.org/wiki/E.164) mas pode incluir dados adicionais.|
+|callerNumber|Cadeia de caracteres| Número do usuário ou bot que fez a chamada. [Formato E.164,](https://en.wikipedia.org/wiki/E.164) mas pode incluir dados adicionais.|
 |correlationId|Cadeia de caracteres|Identificador da chamada que você pode usar ao chamar o Suporte da Microsoft. GUID.|
-|userId|Cadeia de caracteres|Chamar a ID do usuário no Graph. Essa e outras informações do usuário serão nulas/vazias para tipos de chamada de bot. GUID.|
-|userPrincipalName|String|UserPrincipalName (nome de login) no Azure Active Directory. Isso geralmente é o mesmo endereço SIP do usuário e pode ser igual ao endereço de email do usuário.|
-|userDisplayName|Cadeia de caracteres|Nome de exibição do usuário.|
-|startDateTime|DateTimeOffset|Hora do início da chamada.<br/>Para chamadas com falha e não respondidas, isso pode ser igual ao tempo de convite ou falha.|
-|inviteDateTime|DateTimeOffset| Quando o convite inicial foi enviado.|
-|failureDateTime|DateTimeOffset| Existe apenas para chamadas com falha (não totalmente estabelecidas).|
-|endDateTime|DateTimeOffset| Existe apenas para chamadas bem-sucedidas (totalmente estabelecidas). Hora em que a chamada terminou.|
 |duração|Int32| Duração da chamada em segundos.|
-|callType|String| Tipo e direção da chamada.|
-|successfulCall|Boolean| Sucesso ou tentativa.|
-|callerNumber|String| Número do usuário ou bot que fez a chamada. [Formato E.164,](https://en.wikipedia.org/wiki/E.164) mas pode incluir dados adicionais.|
-|calleeNumber|String| Número do usuário ou bot que recebeu a chamada. [Formato E.164,](https://en.wikipedia.org/wiki/E.164) mas pode incluir dados adicionais.|
-|mediaPathLocation|String| O datacenter usado para o caminho de mídia em uma chamada sem desvio.|
-|signalingLocation|String| O datacenter usado para sinalização para chamadas de bypass e não bypass.|
+|endDateTime|DateTimeOffset| Só existe para chamadas bem-sucedidas (totalmente estabelecidas). Hora em que a chamada terminou.|
+|failureDateTime|DateTimeOffset| Só existe para chamadas com falha (não totalmente estabelecidas).|
+|finalSipCodePhrase|Cadeia de caracteres| Descrição do código SIP e subcódigo da Microsoft.|
 |finalSipCode|Int32| O código com o qual a chamada terminou, [RFC 3261](https://tools.ietf.org/html/rfc3261).|
-|callEndSubReason|Int32| Além dos códigos SIP, a Microsoft possui subcódigos próprios que indicam o problema específico.|
-|finalSipCodePhrase|String| Descrição do código SIP e do subcódigo da Microsoft.|
-|trunkFullyQualifiedDomainName|String| Nome de domínio totalmente qualificado do controlador de borda da sessão.|
-|mediaBypassEnabled|Boolean| Indica se o tronco foi habilitado para bypass de mídia ou não.|
+|id|Cadeia de caracteres|Identificador de chamada exclusivo. GUID.|
+|inviteDateTime|DateTimeOffset| Quando o convite inicial foi enviado.|
+|mediaBypassEnabled|Boleano| Indica se o tronco foi habilitado para bypass de mídia ou não.|
+|mediaPathLocation|Cadeia de caracteres| O datacenter usado para o caminho de mídia em chamada não ignorada.|
+|signalingLocation|Cadeia de caracteres| O datacenter usado para sinalização para chamadas de bypass e não bypass.|
+|startDateTime|DateTimeOffset|Hora do início da chamada.<br/>Para chamadas com falha e sem resposta, isso pode ser igual a tempo de convite ou falha.|
+|successfulCall|Boleano| Sucesso ou tentativa.|
+|trunkFullyQualifiedDomainName|Cadeia de caracteres| Nome de domínio totalmente qualificado do controlador de borda de sessão.|
+|userDisplayName|Cadeia de caracteres|Nome de exibição do usuário.|
+|userId|Cadeia de caracteres|Chamando a ID do usuário Graph. Essa e outras informações de usuário serão nulas/vazias para tipos de chamada de bot. GUID.|
+|userPrincipalName|Cadeia de caracteres|UserPrincipalName (nome de login) no Azure Active Directory. Isso geralmente é o mesmo que o Endereço SIP do usuário e pode ser igual ao endereço de email do usuário.|
 
 ## <a name="relationships"></a>Relações
 
@@ -54,7 +60,7 @@ Nenhum
 
 Veja a seguir uma representação JSON do recurso.
 <!-- {
-  "blockType": "ignored",
+  "blockType": "resource",
   "@odata.type": "microsoft.graph.callRecords.directRoutingLogRow",
   "keyProperty": "id"
 }
@@ -71,6 +77,7 @@ Veja a seguir uma representação JSON do recurso.
   "startDateTime": "String (timestamp)",
   "inviteDateTime": "String (timestamp)",
   "failureDateTime": "String (timestamp)",
+  "endDateTime": "String (timestamp)",
   "duration": "Integer",
   "callType": "String",
   "successfulCall": "Boolean",

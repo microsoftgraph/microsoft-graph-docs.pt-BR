@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: b8fdbb23b5b1d645423fa6c89267154a5b8c3cc903c7d914619d77373dea2049
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: beeded0dfecec5f8c596e22a20c2352679a9fadc
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54206281"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58797490"
 ---
 # <a name="userexperienceanalyticswindows10devicessummary-resource-type"></a>tipo de recurso userExperienceAnalyticsWindows10DevicesSummary
 
@@ -43,7 +43,6 @@ Veja a seguir uma representação JSON do recurso.
   "unsupportedOSversionDeviceCount": 1024
 }
 ```
-
 
 
 

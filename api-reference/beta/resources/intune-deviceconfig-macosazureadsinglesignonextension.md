@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: e4de016c4d910241152981d4350242273b11e3b3b65e042bf8bcb13e447b5517
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 23c69e9edf5f980f9dcc8cfdacc07f5b39ba0500
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54183089"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58782501"
 ---
 # <a name="macosazureadsinglesignonextension-resource-type"></a>Tipo de recurso macOSAzureAdSingleSignOnExtension
 
@@ -28,8 +28,8 @@ Herda de [macOSSingleSignOnExtension](../resources/intune-deviceconfig-macossing
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|enableSharedDeviceMode|Boolean|Habilita ou desabilita o modo de dispositivo compartilhado.|
-|bundleIdAccessControlList|String collection|Uma lista opcional de IDs de pacote adicionais permitidas para usar a extensão do AAD para um único login.|
+|enableSharedDeviceMode|Boleano|Habilita ou desabilita o modo de dispositivo compartilhado.|
+|bundleIdAccessControlList|Coleção de cadeias de caracteres|Uma lista opcional de IDs de pacote adicionais permitidas para usar a extensão do AAD para um único login.|
 |configurações|[Coleção keyTypedValuePair](../resources/intune-deviceconfig-keytypedvaluepair.md)|Obtém ou define uma lista de pares de valores de chave digitados usados para configurar perfis de tipo de credencial. Esta coleção pode conter um máximo de 500 elementos.|
 
 ## <a name="relationships"></a>Relações
@@ -58,7 +58,6 @@ Veja a seguir uma representação JSON do recurso.
   ]
 }
 ```
-
 
 
 

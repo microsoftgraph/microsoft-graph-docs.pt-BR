@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 8ba1c5a506e5eb8eb7831794c47d73f0c7166fc876ef40acb1b023f7cd0a3860
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 899b62b78f99f362732f9b7072d3e4a48eb1fdc6
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54165767"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58802513"
 ---
 # <a name="emailsyncschedule-enum-type"></a>tipo de número emailSyncSchedule
 
@@ -26,13 +26,12 @@ Valores possíveis para agendamento de sincronização de email.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |userDefined|0|User Defined, default value, no intent.|
-|asMessagesArrive|1 |Sincronizar à medida que as mensagens chegam.|
+|asMessagesArrive|1|Sincronizar à medida que as mensagens chegam.|
 |Manual|2|Sincronizar manualmente.|
-|fifteenMinutes|3 |Sincronizar a cada quinze minutos.|
+|fifteenMinutes|3|Sincronizar a cada quinze minutos.|
 |thirtyMinutes|4 |Sincronizar a cada trinta minutos.|
 |sixtyMinutes|5 |Sincronizar a cada 60 minutos.|
 |basedOnMyUsage|6 |Sincronização com base no meu uso.|
-
 
 
 
