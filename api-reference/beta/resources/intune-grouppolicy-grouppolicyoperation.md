@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: b469baabe89ea5a05477fb1734fe0bfc4b2a63d103cb050efb541cac020e6f0a
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: d22fa172cf3052d1fcd1327a52a5cd1d49780c33
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54251166"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58802443"
 ---
 # <a name="grouppolicyoperation-resource-type"></a>Tipo de recurso groupPolicyOperation
 
@@ -28,7 +28,7 @@ A entidade representa uma operação de política de grupo.
 |[Listar groupPolicyOperations](../api/intune-grouppolicy-grouppolicyoperation-list.md)|[coleção groupPolicyOperation](../resources/intune-grouppolicy-grouppolicyoperation.md)|Listar propriedades e relações dos [objetos groupPolicyOperation.](../resources/intune-grouppolicy-grouppolicyoperation.md)|
 |[Obter groupPolicyOperation](../api/intune-grouppolicy-grouppolicyoperation-get.md)|[groupPolicyOperation](../resources/intune-grouppolicy-grouppolicyoperation.md)|Ler propriedades e relações do [objeto groupPolicyOperation.](../resources/intune-grouppolicy-grouppolicyoperation.md)|
 |[Criar groupPolicyOperation](../api/intune-grouppolicy-grouppolicyoperation-create.md)|[groupPolicyOperation](../resources/intune-grouppolicy-grouppolicyoperation.md)|Crie um novo [objeto groupPolicyOperation.](../resources/intune-grouppolicy-grouppolicyoperation.md)|
-|[Excluir groupPolicyOperation](../api/intune-grouppolicy-grouppolicyoperation-delete.md)|Nenhum|Exclui um [groupPolicyOperation](../resources/intune-grouppolicy-grouppolicyoperation.md).|
+|[Excluir groupPolicyOperation](../api/intune-grouppolicy-grouppolicyoperation-delete.md)|Nenhum(a)|Exclui um [groupPolicyOperation](../resources/intune-grouppolicy-grouppolicyoperation.md).|
 |[Atualizar groupPolicyOperation](../api/intune-grouppolicy-grouppolicyoperation-update.md)|[groupPolicyOperation](../resources/intune-grouppolicy-grouppolicyoperation.md)|Atualize as propriedades de [um objeto groupPolicyOperation.](../resources/intune-grouppolicy-grouppolicyoperation.md)|
 
 ## <a name="properties"></a>Propriedades
@@ -61,7 +61,6 @@ Veja a seguir uma representação JSON do recurso.
   "lastModifiedDateTime": "String (timestamp)"
 }
 ```
-
 
 
 

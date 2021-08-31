@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: cf83b55dff198fb549b61679b7fcc8c0413d2617c3a7b4d34f9ae4867c7d4deb
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: f974bfaeffacb688f1f822661e8ed902bea7fa97
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54164227"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58788959"
 ---
 # <a name="devicemanagementconfigurationsettingvisibility-enum-type"></a>Tipo de número deviceManagementConfigurationSettingVisibility
 
@@ -26,9 +26,8 @@ Tipos de configuração com suporte
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |Nenhuma|0|Não visível|
-|settingsCatalog|1 |Visível para definir o UX do catálogo|
+|settingsCatalog|1|Visível para definir o UX do catálogo|
 |template|2|Visível para modelo|
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 5834c608d9da001bc619f3a464bfd82b39755fab4e03edf564a824b46370ea97
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 121345502808fa0f040ad5f032a5148627ef205d
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54206421"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58759159"
 ---
 # <a name="securitybaselinecompliancestate-enum-type"></a>tipo de número securityBaselineComplianceState
 
@@ -26,12 +26,11 @@ Estado de conformidade da linha de base de segurança
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |desconhecido|0|Estado desconhecido|
-|secure|1 |Estado seguro|
+|secure|1|Estado seguro|
 |notApplicable|2|Estado não aplicável|
-|notSecure|3 |Estado não seguro|
+|notSecure|3|Estado não seguro|
 |erro|4 |Estado de erro|
 |conflict|5 |Estado de conflito|
-
 
 
 

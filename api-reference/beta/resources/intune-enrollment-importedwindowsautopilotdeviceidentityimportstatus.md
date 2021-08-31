@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 0ae930535b035fddefef1eb69b8ac4336f6d0c8bd2aaf6f95cb3df4983656e1b
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 061da55728a1856c05cd7b7893f37ad0b97556e7
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54213072"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58751920"
 ---
 # <a name="importedwindowsautopilotdeviceidentityimportstatus-enum-type"></a>tipo de número importedWindowsAutopilotDeviceIdentityImportStatus
 
@@ -26,11 +26,10 @@ Ainda não documentado
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |desconhecido|0|Status desconhecido.|
-|pendente|1 |Status pendente.|
+|pendente|1|Status pendente.|
 |partial|2|Status parcial.|
-|complete|3 |Status completo.|
+|complete|3|Status completo.|
 |erro|4 |Status do erro.|
-
 
 
 

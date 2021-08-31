@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 9ab83353e8192ff62745946cbb40f8297013a959288808b622f0c102e2e3fdcf
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: ef97db0168971b687d3dac5fb405f5c9482b2a3d
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54156349"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58802779"
 ---
 # <a name="browsersyncsetting-enum-type"></a>tipo de número browserSyncSetting
 
@@ -26,9 +26,8 @@ Allow(Not Configured) or prevent(Block) the syncing of Microsoft Edge Browser se
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |notConfigured|0|Padrão – Permitir a sincronização das configurações do navegador entre dispositivos.|
-|blockedWithUserOverride|1 |Impedir a sincronização das configurações do navegador entre dispositivos do usuário, permitir a substituição do usuário da configuração.|
+|blockedWithUserOverride|1|Impedir a sincronização das configurações do navegador entre dispositivos do usuário, permitir a substituição do usuário da configuração.|
 |blocked|2|Impedir absolutamente a sincronização das configurações do navegador em dispositivos de usuário.|
-
 
 
 

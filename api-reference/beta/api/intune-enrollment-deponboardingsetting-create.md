@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 653df81ae1f9dd1ff82a0dfd352d300b8b386e06cb66bb2ce5bf61be28064406
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: f3f804b849140902a36b95694060924f03d6fc8f
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54158885"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58802604"
 ---
 # <a name="create-deponboardingsetting"></a>Criar depOnboardingSetting
 
@@ -27,9 +27,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementServiceConfig.ReadWrite.All|
+|Delegado (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Application|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -59,13 +59,13 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar o depOnb
 |lastModifiedDateTime|DateTimeOffset|Quando o serviço foi integrado.|
 |lastSuccessfulSyncDateTime|DateTimeOffset|Quando o serviço foi sintetizado pela última vez com o Intune|
 |lastSyncTriggeredDateTime|DateTimeOffset|Quando o Intune solicitou pela última vez uma sincronização.|
-|shareTokenWithSchoolDataSyncService|Boolean|Se o compartilhamento de token Dep está habilitado ou não com o School Data Sync serviço.|
+|shareTokenWithSchoolDataSyncService|Booliano|Se o compartilhamento de token Dep está habilitado ou não com o School Data Sync serviço.|
 |lastSyncErrorCode|Int32|Código de erro relatado pela Apple durante a última sincronização de dep.|
 |tokenType|[depTokenType](../resources/intune-enrollment-deptokentype.md)|Obtém ou define o Tipo de Token de Dep. Os valores possíveis são: `none`, `dep`, `appleSchoolManager`.|
 |tokenName|Cadeia de caracteres|Nome amigável para Token de Dep|
 |syncedDeviceCount|Int32|Obtém contagem de dispositivos sincronizados|
-|dataSharingConsentGranted|Boolean|Consentimento concedido para compartilhamento de dados com o Serviço de Dep da Apple|
-|roleScopeTagIds|String collection|Lista de marcas de escopo para esta instância entity.|
+|dataSharingConsentGranted|Booliano|Consentimento concedido para compartilhamento de dados com o Serviço de Dep da Apple|
+|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de marcas de escopo para esta instância entity.|
 
 
 
@@ -125,7 +125,6 @@ Content-Length: 689
   ]
 }
 ```
-
 
 
 

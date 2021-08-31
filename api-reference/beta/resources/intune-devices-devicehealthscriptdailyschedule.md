@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 92c65e8434a709fc5270cb1f5193d9341efca1e1e32131d76d339a80f4e52e28
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 0e84b59510a50510abfd07e5eafd09b652c4aeb0
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54244740"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58770998"
 ---
 # <a name="devicehealthscriptdailyschedule-resource-type"></a>Tipo de recurso deviceHealthScriptDailySchedule
 
@@ -29,7 +29,7 @@ Herda de [deviceHealthScriptTimeSchedule](../resources/intune-devices-deviceheal
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |interval|Int32|O valor x de cada x horas para agendamento por hora, a cada x dias para o Agendamento Diário, a cada x semanas para agendamento semanal, a cada x meses para Agendamento Mensal. Valores válidos de 1 a 23 Herdados de [deviceHealthScriptRunSchedule](../resources/intune-devices-devicehealthscriptrunschedule.md)|
-|useUtc|Boolean|Indique se a hora é Utc ou hora local do cliente. Herdado [de deviceHealthScriptTimeSchedule](../resources/intune-devices-devicehealthscripttimeschedule.md)|
+|useUtc|Boleano|Indique se a hora é Utc ou hora local do cliente. Herdado [de deviceHealthScriptTimeSchedule](../resources/intune-devices-devicehealthscripttimeschedule.md)|
 |hora|TimeOfDay|No momento em que o script é agendado para ser executado. Essa coleção pode conter no máximo 20 elementos. Herdado [de deviceHealthScriptTimeSchedule](../resources/intune-devices-devicehealthscripttimeschedule.md)|
 
 ## <a name="relationships"></a>Relações
@@ -50,7 +50,6 @@ Veja a seguir uma representação JSON do recurso.
   "time": "String (time of day)"
 }
 ```
-
 
 
 

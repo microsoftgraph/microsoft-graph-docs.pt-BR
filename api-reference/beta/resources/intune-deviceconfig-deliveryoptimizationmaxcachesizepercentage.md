@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4fcf646bd7288802918413667f402902be7288b4c3bd2bbe8e4d3f1adb84b77d
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 6888ade3fab8eea10698edee553bf178dbc22841
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54131182"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58771208"
 ---
 # <a name="deliveryoptimizationmaxcachesizepercentage-resource-type"></a>tipo de recurso deliveryOptimizationMaxCacheSizePercentage
 
@@ -46,7 +46,6 @@ Veja a seguir uma representação JSON do recurso.
   "maximumCacheSizePercentage": 1024
 }
 ```
-
 
 
 

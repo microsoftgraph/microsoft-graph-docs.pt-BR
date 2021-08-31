@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: f1b982e3ffd2d233a76baf1e5090f953761ccd8a81ee05d564553460b03c3634
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: d427ac9390bbefccb9bae7244da7a4efdef11f93
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54214940"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58789253"
 ---
 # <a name="json-resource-type"></a>Tipo de recurso Json
 
@@ -41,7 +41,6 @@ Veja a seguir uma representação JSON do recurso.
   "@odata.type": "#microsoft.graph.Json"
 }
 ```
-
 
 
 

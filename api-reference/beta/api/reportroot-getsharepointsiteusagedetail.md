@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: reports
 author: sarahwxy
 doc_type: apiPageType
-ms.openlocfilehash: b58d90ef3be8a723190909ee960f659de6f6c58b
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 7274d0b8425115afcfa7a7a18fd2ea2044e01e48
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52049062"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58804586"
 ---
 # <a name="reportroot-getsharepointsiteusagedetail"></a>reportRoot: getSharePointSiteUsageDetail
 
@@ -32,7 +32,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 | Delegada (conta pessoal da Microsoft) | Sem suporte.                           |
 | Aplicativo                            | Reports.Read.All                         |
 
-**Observação**: para permissões delegadas para permitir que os aplicativos leiam os relatórios de uso de serviço em nome de um usuário, o administrador de locatários deve atribuir a função apropriada de administrador limitada do Azure AD ao usuário. Para saber mais, confira [Autorização para APIs lerem os relatórios de uso do Microsoft 365](/graph/reportroot-authorization).
+**Observação**: para as permissões delegadas para permitir que os aplicativos leiam relatórios de uso do serviço em nome de um usuário, o administrador de locatários deve ter atribuído ao usuário a função de administrador limitada apropriada do Azure AD. Para obter mais detalhes, consulte [Autorização para as APIs lerem os relatórios de uso do Microsoft 365](/graph/reportroot-authorization).
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -197,18 +197,18 @@ Content-Length: 484
       "ownerPrincipalName": "ownerPrincipalName-value", 
       "isDeleted": false, 
       "lastActivityDate": "2017-09-01", 
-      "SiteSensitivityLabelId": "SiteSensitivityLabelId-value",
-      "ExternalSharing": false,
-      "UnmanagedDevicePolicy": "UnmanagedDevicePolicy-value",
-      "GeoLocation": "GeoLocation-value",
+      "siteSensitivityLabelId": "SiteSensitivityLabelId-value",
+      "externalSharing": false,
+      "unmanagedDevicePolicy": "UnmanagedDevicePolicy-value",
+      "geoLocation": "GeoLocation-value",
       "fileCount": 170, 
       "activeFileCount": 25, 
       "pageViewCount": 7, 
       "visitedPageCount": 3, 
-      "AnonymousLinkCount": 5,
-      "CompanyLinkCount": 8,
-      "SecureLinkForGuestCount": 13,
-      "SecureLinkForMemberCount": 11,
+      "anonymousLinkCount": 5,
+      "companyLinkCount": 8,
+      "secureLinkForGuestCount": 13,
+      "secureLinkForMemberCount": 11,
       "storageUsedInBytes": 63442116, 
       "storageAllocatedInBytes": 2748779094400, 
       "rootWebTemplate": "Publishing Site", 
