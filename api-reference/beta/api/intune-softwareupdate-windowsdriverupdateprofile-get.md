@@ -1,18 +1,18 @@
 ---
-title: Acessar managedMobileLobApp
-description: Leia as propriedades e as relações do objeto managedMobileLobApp.
+title: Obter windowsDriverUpdateProfile
+description: Ler propriedades e relações do objeto windowsDriverUpdateProfile.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 8adb118203769ce58d530d77a9c6a5afc3815df1
+ms.openlocfilehash: abc09d1f37b4fdbd5ce2f973c29d3e479fd5ffec
 ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 08/31/2021
-ms.locfileid: "58804453"
+ms.locfileid: "58805889"
 ---
-# <a name="get-managedmobilelobapp"></a>Acessar managedMobileLobApp
+# <a name="get-windowsdriverupdateprofile"></a>Obter windowsDriverUpdateProfile
 
 Namespace: microsoft.graph
 
@@ -20,16 +20,16 @@ Namespace: microsoft.graph
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Leia as propriedades e as relações do objeto [managedMobileLobApp](../resources/intune-apps-managedmobilelobapp.md).
+Ler propriedades e relações do [objeto windowsDriverUpdateProfile.](../resources/intune-softwareupdate-windowsdriverupdateprofile.md)
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
+|Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementConfiguration.Read.All, DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
+|Application|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -37,9 +37,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 }
 -->
 ``` http
-GET /deviceAppManagement/mobileApps/{mobileAppId}
-GET /deviceAppManagement/mobileApps/{mobileAppId}/userStatuses/{userAppInstallStatusId}/app
-GET /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppInstallStatusId}/app
+GET /deviceManagement/windowsDriverUpdateProfiles/{windowsDriverUpdateProfileId}
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
@@ -55,14 +53,14 @@ Este método dá suporte a [Parâmetros de consulta OData](/graph/query-paramete
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará o código de resposta `200 OK` e o objeto [managedMobileLobApp](../resources/intune-apps-managedmobilelobapp.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e um `200 OK` [objeto windowsDriverUpdateProfile](../resources/intune-softwareupdate-windowsdriverupdateprofile.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
 ### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
 ``` http
-GET https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId}
+GET https://graph.microsoft.com/beta/deviceManagement/windowsDriverUpdateProfiles/{windowsDriverUpdateProfileId}
 ```
 
 ### <a name="response"></a>Resposta
@@ -70,42 +68,23 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1214
+Content-Length: 539
 
 {
   "value": {
-    "@odata.type": "#microsoft.graph.managedMobileLobApp",
-    "id": "cded7cc4-7cc4-cded-c47c-edcdc47cedcd",
+    "@odata.type": "#microsoft.graph.windowsDriverUpdateProfile",
+    "id": "55bcc52a-c52a-55bc-2ac5-bc552ac5bc55",
     "displayName": "Display Name value",
     "description": "Description value",
-    "publisher": "Publisher value",
-    "largeIcon": {
-      "@odata.type": "microsoft.graph.mimeContent",
-      "type": "Type value",
-      "value": "dmFsdWU="
-    },
+    "approvalType": "automatic",
+    "deviceReporting": 15,
+    "newUpdates": 10,
+    "deploymentDeferralInDays": 8,
     "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
     "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
-    "isFeatured": true,
-    "privacyInformationUrl": "https://example.com/privacyInformationUrl/",
-    "informationUrl": "https://example.com/informationUrl/",
-    "owner": "Owner value",
-    "developer": "Developer value",
-    "notes": "Notes value",
-    "uploadState": 11,
-    "publishingState": "processing",
-    "isAssigned": true,
     "roleScopeTagIds": [
       "Role Scope Tag Ids value"
-    ],
-    "dependentAppCount": 1,
-    "supersedingAppCount": 3,
-    "supersededAppCount": 2,
-    "appAvailability": "lineOfBusiness",
-    "version": "Version value",
-    "committedContentVersion": "Committed Content Version value",
-    "fileName": "File Name value",
-    "size": 4
+    ]
   }
 }
 ```

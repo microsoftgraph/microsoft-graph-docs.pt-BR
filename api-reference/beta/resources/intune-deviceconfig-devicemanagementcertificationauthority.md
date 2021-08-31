@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: cda003cc61eb35acec367e99ae9cbdbabf293a52c60cd22ab2dedc368f4c6df9
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: f76cf7f153947b00dceba1cb093f84c3209b56e7
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54217187"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58806254"
 ---
 # <a name="devicemanagementcertificationauthority-enum-type"></a>Tipo de número deviceManagementCertificationAuthority
 
@@ -26,9 +26,8 @@ Tipos de Autoridade de Certificação de Gerenciamento de Dispositivos.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |notConfigured|0|Não configurado.|
-|microsoft|1 |Tipo de Autoridade de Certificação da Microsoft.|
+|microsoft|1|Tipo de Autoridade de Certificação da Microsoft.|
 |digiCert|2|Tipo de Autoridade de Certificação DigiCert.|
-
 
 
 

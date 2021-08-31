@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: b15be85ff8ec8067ce8495f69f811526ccd3fa8fca69b09f03a558bff4bf3229
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 879d61352702e0eb7a6b3b77b462ed9c24e0fd7d
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54226473"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58805756"
 ---
 # <a name="applicationguardblockclipboardsharingtype-enum-type"></a>Tipo denum applicationGuardBlockClipboardSharingType
 
@@ -26,11 +26,10 @@ Valores possíveis para applicationGuardBlockClipboardSharingType
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |notConfigured|0|Não configurado|
-|blockBoth|1 |Bloquear área de transferência para compartilhar dados de Host para Contêiner e de Contêiner para Host|
+|blockBoth|1|Bloquear área de transferência para compartilhar dados de Host para Contêiner e de Contêiner para Host|
 |blockHostToContainer|2|Bloquear área de transferência para compartilhar dados de Host para Contêiner|
-|blockContainerToHost|3 |Bloquear área de transferência para compartilhar dados de Contêiner para Host|
+|blockContainerToHost|3|Bloquear área de transferência para compartilhar dados de Contêiner para Host|
 |blockNone|4 |Bloquear área de transferência para compartilhar dados nem de Host para Contêiner nem de Contêiner para Host|
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0e904755b178e2673aee360f18cdce84692d706e90392de1d791992b79964905
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 8f0bd09c6671e13f4613f89c62ef17fb767e5526
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54230156"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58804656"
 ---
 # <a name="create-grouppolicypresentationcombobox"></a>Criar groupPolicyPresentationComboBox
 
@@ -27,9 +27,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
+|Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Application|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -57,8 +57,8 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar o groupP
 |id|Cadeia de caracteres|Chave da entidade. Herdado [de groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
 |lastModifiedDateTime|DateTimeOffset|A data e a hora em que a entidade foi modificada pela última vez. Herdado [de groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
 |defaultValue|Cadeia de caracteres|Cadeia de caracteres padrão localizada exibida na caixa de combinação. O valor padrão é vazio.|
-|sugestões|String collection|Cadeias de caracteres localizadas listadas na listada da caixa de combinação. O valor padrão é vazio.|
-|obrigatório|Boolean|Especifica se um valor deve ser especificado para o parâmetro. O valor padrão é falso.|
+|sugestões|Coleção de cadeias de caracteres|Cadeias de caracteres localizadas listadas na listada da caixa de combinação. O valor padrão é vazio.|
+|obrigatório|Boleano|Especifica se um valor deve ser especificado para o parâmetro. O valor padrão é falso.|
 |maxLength|Int64|Um inteiro não assinado que especifica o número máximo de caracteres de texto para o parâmetro. O valor padrão é 1023.|
 
 
@@ -107,7 +107,6 @@ Content-Length: 346
   "maxLength": 9
 }
 ```
-
 
 
 

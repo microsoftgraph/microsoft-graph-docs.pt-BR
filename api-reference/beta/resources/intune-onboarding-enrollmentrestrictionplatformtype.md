@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: a4fcfa9ebb12c51a730bf49ac627901c0be0377a
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 773674557c64e339d912e0471cb6394f1fa0f465
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58259234"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58787824"
 ---
 # <a name="enrollmentrestrictionplatformtype-enum-type"></a>tipo de número enrollmentRestrictionPlatformType
 
@@ -26,14 +26,13 @@ Esse número indica o tipo de plataforma para o qual a restrição de registro s
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |allPlatforms|0|Aplica-se a todas as plataformas|
-|ios|1 |Dispositivos iOS/iPadOS|
+|ios|1|Dispositivos iOS/iPadOS|
 |windows|2|Dispositivos Windows|
-|windowsPhone|3 |Windows Phone dispositivos|
+|windowsPhone|3|Windows Phone dispositivos|
 |android|4 |Dispositivos Android|
 |androidForWork|5 |Dispositivos Android for Work|
 |androidAosp|6 |Dispositivos ANDROID AOSP|
 |mac|7 |dispositivos macOS|
-
 
 
 

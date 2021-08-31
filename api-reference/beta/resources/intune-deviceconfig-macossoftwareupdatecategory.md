@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 9cbe68055a28aa4a5fa69df5ebd47bbee2a2150804ff97adc9061707142ffd6e
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 9bd6c8cd61a084aceed597538f6a51bd6e098787
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54148201"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58801827"
 ---
 # <a name="macossoftwareupdatecategory-enum-type"></a>Tipo de número macOSSoftwareUpdateCategory
 
@@ -26,10 +26,9 @@ Categoria de Atualização de Software MacOS
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |critical|0|Uma atualização crítica|
-|configurationDataFile|1 |Uma atualização de arquivo de dados de configuração|
+|configurationDataFile|1|Uma atualização de arquivo de dados de configuração|
 |firmware|2|Uma atualização de firmware|
-|other|3 |Todos os outros tipos de atualização|
-
+|other|3|Todos os outros tipos de atualização|
 
 
 

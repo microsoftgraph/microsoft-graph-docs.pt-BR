@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 7a8f1329229261c894b3157dc23c1daad05a2b71c46c2efcfe6c23d07fb55d57
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: bae783378706210ea798b325fe99db800e0052b9
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54178909"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58803472"
 ---
 # <a name="managedappremediationaction-enum-type"></a>Tipo de número managedAppRemediationAction
 
@@ -26,9 +26,8 @@ Uma ação iniciada pelo administrador a ser aplicada em um aplicativo gerenciad
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |block|0|app e os dados da empresa correspondentes a serem bloqueados|
-|wipe|1 |app e os dados da empresa correspondentes a serem apagados|
+|wipe|1|app e os dados da empresa correspondentes a serem apagados|
 |warn|2|app e o usuário correspondente a ser avisado|
-
 
 
 

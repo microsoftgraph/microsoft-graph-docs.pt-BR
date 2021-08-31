@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 9e77c0005dc7dd7cab430fa628cc034919e9fce9cbc3f9171c4bee3846c7c12a
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 942612457d21b587ccfcfff8720216ade2e1be72
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54249990"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58795547"
 ---
 # <a name="filevaultstate-enum-type"></a>Tipo denum fileVaultState
 
@@ -26,10 +26,9 @@ Estado FileVault
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |sucesso|0|Sucesso do estado FileVault|
-|driveEncryptedByUser|1 |FileVault foi habilitado pelo usuário e não está sendo gerenciado pela política|
+|driveEncryptedByUser|1|FileVault foi habilitado pelo usuário e não está sendo gerenciado pela política|
 |userDeferredEncryption|2|A política FileVault é instalada com êxito, mas o usuário não iniciou a criptografia|
 |escrowNotEnabled|4 |A escrow da chave de recuperação FileVault não está habilitada|
-
 
 
 
