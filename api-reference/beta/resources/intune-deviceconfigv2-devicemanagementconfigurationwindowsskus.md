@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 5ae1ad422d19e0626f7e1ba9d1363b9e550a519cbb1af3fb5f9cc67356889f4c
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: eccdee087d0b801b9cbd17c18ce97c5e32a51b93
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54145380"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58806639"
 ---
 # <a name="devicemanagementconfigurationwindowsskus-enum-type"></a>Tipo de número deviceManagementConfigurationWindowsSkus
 
@@ -26,9 +26,9 @@ Ainda não documentado
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |desconhecido|0|Ainda não documentado|
-|windowsHome|1 |Ainda não documentado|
+|windowsHome|1|Ainda não documentado|
 |windowsProfessional|2|Ainda não documentado|
-|windowsEnterprise|3 |Ainda não documentado|
+|windowsEnterprise|3|Ainda não documentado|
 |windowsEducation|4 |Ainda não documentado|
 |windowsMobile|5 |Ainda não documentado|
 |windowsMobileEnterprise|6 |Ainda não documentado|
@@ -38,9 +38,8 @@ Ainda não documentado
 |holoLens|10 |Ainda não documentado|
 |holoLensEnterprise|11 |Ainda não documentado|
 |holographicForBusiness|12 |Ainda não documentado|
-|windowsMultiSession|13 |Ainda não documentado|
+|windowsMultiSession|13|Ainda não documentado|
 |surfaceHub|14 |Ainda não documentado|
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d9139d11d35ab76bfcec96e0b0b04f8a947873e826ecb4678ff5d82b1333352d
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 27f286b5a26d761f4cc36ab3623fa3683837405a
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54248443"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58782949"
 ---
 # <a name="devicemanagementreusablepolicysetting-resource-type"></a>Tipo de recurso deviceManagementReusablePolicySetting
 
@@ -28,7 +28,7 @@ Graph modelo para uma configuração reutilizável
 |[Listar deviceManagementReusablePolicySettings](../api/intune-deviceconfigv2-devicemanagementreusablepolicysetting-list.md)|[Coleção deviceManagementReusablePolicySetting](../resources/intune-deviceconfigv2-devicemanagementreusablepolicysetting.md)|Listar propriedades e relações dos [objetos deviceManagementReusablePolicySetting.](../resources/intune-deviceconfigv2-devicemanagementreusablepolicysetting.md)|
 |[Obter deviceManagementReusablePolicySetting](../api/intune-deviceconfigv2-devicemanagementreusablepolicysetting-get.md)|[deviceManagementReusablePolicySetting](../resources/intune-deviceconfigv2-devicemanagementreusablepolicysetting.md)|Leia propriedades e relações do [objeto deviceManagementReusablePolicySetting.](../resources/intune-deviceconfigv2-devicemanagementreusablepolicysetting.md)|
 |[Criar deviceManagementReusablePolicySetting](../api/intune-deviceconfigv2-devicemanagementreusablepolicysetting-create.md)|[deviceManagementReusablePolicySetting](../resources/intune-deviceconfigv2-devicemanagementreusablepolicysetting.md)|Crie um novo [objeto deviceManagementReusablePolicySetting.](../resources/intune-deviceconfigv2-devicemanagementreusablepolicysetting.md)|
-|[Excluir deviceManagementReusablePolicySetting](../api/intune-deviceconfigv2-devicemanagementreusablepolicysetting-delete.md)|Nenhum|Exclui um [deviceManagementReusablePolicySetting](../resources/intune-deviceconfigv2-devicemanagementreusablepolicysetting.md).|
+|[Excluir deviceManagementReusablePolicySetting](../api/intune-deviceconfigv2-devicemanagementreusablepolicysetting-delete.md)|Nenhum(a)|Exclui um [deviceManagementReusablePolicySetting](../resources/intune-deviceconfigv2-devicemanagementreusablepolicysetting.md).|
 |[Atualizar deviceManagementReusablePolicySetting](../api/intune-deviceconfigv2-devicemanagementreusablepolicysetting-update.md)|[deviceManagementReusablePolicySetting](../resources/intune-deviceconfigv2-devicemanagementreusablepolicysetting.md)|Atualize as propriedades de [um objeto deviceManagementReusablePolicySetting.](../resources/intune-deviceconfigv2-devicemanagementreusablepolicysetting.md)|
 |[ação clone](../api/intune-deviceconfigv2-devicemanagementreusablepolicysetting-clone.md)|[deviceManagementReusablePolicySetting](../resources/intune-deviceconfigv2-devicemanagementreusablepolicysetting.md)|Ainda não documentado|
 
@@ -37,7 +37,7 @@ Graph modelo para uma configuração reutilizável
 |:---|:---|:---|
 |id|Cadeia de caracteres|id de configuração reutilizável gerada pelo sistema.|
 |displayName|Cadeia de caracteres|nome de exibição de configuração reutilizável fornecido pelo usuário.|
-|description|Cadeia de caracteres|descrição da configuração reutilizável fornecida pelo usuário.|
+|descrição|Cadeia de caracteres|descrição da configuração reutilizável fornecida pelo usuário.|
 |settingDefinitionId|Cadeia de caracteres|id de definição de definição associada a essa configuração reutilizável.|
 |settingInstance|[deviceManagementConfigurationSettingInstance](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettinginstance.md)|instância de configuração de configuração reutilizável|
 |createdDateTime|DateTimeOffset|reutilizável definindo data e hora de criação. Essa propriedade é somente leitura.|
@@ -286,7 +286,6 @@ Veja a seguir uma representação JSON do recurso.
   "referencingConfigurationPolicyCount": 1024
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4e46f72407949dcd571aac9588eb0afa9e2a57d535855fd9d13bca9c4d4bbf0e
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: d13c2886e11dff9c959ef50985988c6f5ca380e7
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54160902"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58807234"
 ---
 # <a name="windowsappxappassignmentsettings-resource-type"></a>Tipo de recurso windowsAppXAppAssignmentSettings
 
@@ -46,7 +46,6 @@ Veja a seguir uma representação JSON do recurso.
   "useDeviceContext": true
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 051e888b4017e62dbbe4e6b26aabfb1becba5083
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 627d5b4ed1b80b39c4ff569528b01d3f2ff855c8
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58256801"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58780065"
 ---
 # <a name="create-defaultmanagedappprotection"></a>Criar defaultManagedAppProtection
 
@@ -27,9 +27,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementApps.ReadWrite.All|
+|Delegado (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Application|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -54,10 +54,10 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar defaultM
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |displayName|Cadeia de caracteres|Nome para exibição da política. Herdado de [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
-|description|Cadeia de caracteres|A descrição da política. Herdado de [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
+|descrição|Cadeia de caracteres|A descrição da política. Herdado de [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
 |createdDateTime|DateTimeOffset|A data e a hora da criação da política. Herdado de [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
 |lastModifiedDateTime|DateTimeOffset|Última vez em que a política foi modificada. Herdado de [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
-|roleScopeTagIds|String collection|Lista de marcas de escopo para esta instância entity. Herdado de [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
+|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de marcas de escopo para esta instância entity. Herdado de [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
 |id|Cadeia de caracteres|Chave da entidade. Herdado de [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
 |version|String|Versão da entidade. Herdado de [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
 |periodOfflineBeforeAccessCheck|Duração|Período após o qual o acesso é verificado quando o dispositivo não está conectado à Internet. Herdado de [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
@@ -100,7 +100,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar defaultM
 |managedBrowser|[managedBrowserType](../resources/intune-mam-managedbrowsertype.md)|Indica em quais navegadores gerenciados os links da Internet devem ser abertos. Quando essa propriedade é configurada, ManagedBrowserToOpenLinksRequired deve ser true. Herdado [de managedAppProtection](../resources/intune-mam-managedappprotection.md). Os valores possíveis são: `notConfigured` e `microsoftEdge`.|
 |maximumAllowedDeviceThreatLevel|[managedAppDeviceThreatLevel](../resources/intune-mam-managedappdevicethreatlevel.md)|Nível máximo de ameaça de dispositivo permitido, conforme relatado pelo aplicativo MTD Herdado [de managedAppProtection](../resources/intune-mam-managedappprotection.md). Os valores possíveis são: `notConfigured`, `secured`, `low`, `medium`, `high`.|
 |mobileThreatDefenseRemediationAction|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|Determina qual ação tomar se o limite de ameaça de defesa de ameaça móvel não for atendido. Warn não é um valor suportado para essa propriedade Herdado de [managedAppProtection](../resources/intune-mam-managedappprotection.md). Os valores possíveis são: `block`, `wipe`, `warn`.|
-|blockDataIngestionIntoOrganizationDocuments|Boolean|Indica se um usuário pode trazer dados para documentos da organização. Herdado de [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
+|blockDataIngestionIntoOrganizationDocuments|Boleano|Indica se um usuário pode trazer dados para documentos da organização. Herdado de [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
 |allowedDataIngestionLocations|[Coleção managedAppDataIngestionLocation](../resources/intune-mam-managedappdataingestionlocation.md)|Locais de armazenamento de dados em que um usuário pode armazenar dados gerenciados. Herdado [de managedAppProtection](../resources/intune-mam-managedappprotection.md). Os valores possíveis são: `oneDriveForBusiness`, `sharePoint`, `camera`.|
 |appActionIfUnableToAuthenticateUser|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|Se definido, ele especificará qual ação tomar no caso de o usuário não conseguir fazer check-in porque seu token de autenticação é inválido. Isso acontece quando o usuário é excluído ou desabilitado no AAD. Herdado [de managedAppProtection](../resources/intune-mam-managedappprotection.md). Os valores possíveis são: `block`, `wipe`, `warn`.|
 |dialerRestrictionLevel|[managedAppPhoneNumberRedirectLevel](../resources/intune-mam-managedappphonenumberredirectlevel.md)|As classes de aplicativos de discagem que têm permissão para clicar para abrir um número de telefone. Herdado [de managedAppProtection](../resources/intune-mam-managedappprotection.md). Os valores possíveis são: `allApps`, `managedApps`, `customApp`, `blocked`.|
@@ -122,10 +122,10 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar defaultM
 |appActionIfIosDeviceModelNotAllowed|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|Define um comportamento de aplicativo gerenciado, bloquear ou apagar, se o modelo de dispositivo especificado não for permitido. (Somente iOS). Os valores possíveis são: `block`, `wipe`, `warn`.|
 |allowedAndroidDeviceManufacturers|Cadeia de caracteres|A lista entre ponto e vírgula dos fabricantes de dispositivos permitido, como cadeia de caracteres, para que o aplicativo gerenciado funcione. (Somente Android)|
 |appActionIfAndroidDeviceManufacturerNotAllowed|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|Define um comportamento de aplicativo gerenciado, bloquear ou apagar, se o fabricante do dispositivo especificado não for permitido. (Somente Android). Os valores possíveis são: `block`, `wipe`, `warn`.|
-|thirdPartyKeyboardsBlocked|Boolean|Define se teclados de terceiros são permitidos durante o acesso a um aplicativo gerenciado. (Somente iOS)|
-|filterOpenInToOnlyManagedApps|Boolean|Define se a operação de abertura tem suporte do aplicativo gerenciado para os locais de compartilhamento de arquivos selecionados. Essa configuração só se aplica quando AllowedOutboundDataTransferDestinations é definida como ManagedApps e DisableProtectionOfManagedOutboundOpenInData é definida como False. (Somente iOS)|
-|disableProtectionOfManagedOutboundOpenInData|Boolean|Desabilite a proteção de dados transferidos para outros aplicativos por meio da opção IOS OpenIn. Essa configuração só é permitida quando AllowedOutboundDataTransferDestinations é definida como ManagedApps. (Somente iOS)|
-|protectInboundDataFromUnknownSources|Boolean|Proteja dados de entrada de origem desconhecida. Essa configuração só é permitida quando AllowedInboundDataTransferSources é definida como AllApps. (Somente iOS)|
+|thirdPartyKeyboardsBlocked|Boleano|Define se teclados de terceiros são permitidos durante o acesso a um aplicativo gerenciado. (Somente iOS)|
+|filterOpenInToOnlyManagedApps|Boleano|Define se a operação de abertura tem suporte do aplicativo gerenciado para os locais de compartilhamento de arquivos selecionados. Essa configuração só se aplica quando AllowedOutboundDataTransferDestinations é definida como ManagedApps e DisableProtectionOfManagedOutboundOpenInData é definida como False. (Somente iOS)|
+|disableProtectionOfManagedOutboundOpenInData|Boleano|Desabilite a proteção de dados transferidos para outros aplicativos por meio da opção IOS OpenIn. Essa configuração só é permitida quando AllowedOutboundDataTransferDestinations é definida como ManagedApps. (Somente iOS)|
+|protectInboundDataFromUnknownSources|Boleano|Proteja dados de entrada de origem desconhecida. Essa configuração só é permitida quando AllowedInboundDataTransferSources é definida como AllApps. (Somente iOS)|
 |requiredAndroidSafetyNetDeviceAttestationType|[androidManagedAppSafetyNetDeviceAttestationType](../resources/intune-mam-androidmanagedappsafetynetdeviceattestationtype.md)|Define o requisito de Atestado de Dispositivo SafetyNet do Android para que um aplicativo gerenciado funcione. Os valores possíveis são: `none`, `basicIntegrity`, `basicIntegrityAndDeviceCertification`.|
 |appActionIfAndroidSafetyNetDeviceAttestationFailed|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|Define um comportamento de aplicativo gerenciado, aviso ou bloqueio, se o requisito de Atestado de Segurança do Android especificado falhar. Os valores possíveis são: `block`, `wipe`, `warn`.|
 |requiredAndroidSafetyNetAppsVerificationType|[androidManagedAppSafetyNetAppsVerificationType](../resources/intune-mam-androidmanagedappsafetynetappsverificationtype.md)|Define o requisito de Verificação do Android SafetyNet Apps para que um aplicativo gerenciado funcione. Os valores possíveis são: `none` e `enabled`.|
@@ -136,18 +136,19 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar defaultM
 |minimumRequiredCompanyPortalVersion|Cadeia de caracteres|A versão mínima do portal da empresa que deve ser instalada no dispositivo ou no acesso ao aplicativo será bloqueada|
 |minimumWarningCompanyPortalVersion|Cadeia de caracteres|Versão mínima do portal da empresa que deve ser instalada no dispositivo ou o usuário receberá um aviso|
 |minimumWipeCompanyPortalVersion|Cadeia de caracteres|Versão mínima do portal da empresa que deve ser instalada no dispositivo ou os dados da empresa no aplicativo serão apagados|
-|allowedAndroidDeviceModels|String collection|Lista de modelos de dispositivo permitidos, como uma cadeia de caracteres, para que o aplicativo gerenciado funcione. (Somente Android)|
+|allowedAndroidDeviceModels|Coleção de cadeias de caracteres|Lista de modelos de dispositivo permitidos, como uma cadeia de caracteres, para que o aplicativo gerenciado funcione. (Somente Android)|
 |appActionIfAndroidDeviceModelNotAllowed|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|Define um comportamento de aplicativo gerenciado, bloquear ou apagar, se o modelo de dispositivo especificado não for permitido. (Somente Android). Os valores possíveis são: `block`, `wipe`, `warn`.|
 |customDialerAppProtocol|Cadeia de caracteres|Protocolo de um aplicativo de discagem personalizada para clicar para abrir um número de telefone no iOS, por exemplo, skype:.|
 |customDialerAppPackageId|Cadeia de caracteres|PackageId de um aplicativo de discagem personalizada para clicar para abrir um número de telefone no Android.|
 |customDialerAppDisplayName|Cadeia de caracteres|Nome amigável de um aplicativo de discagem personalizada para clicar para abrir um número de telefone no Android.|
-|biometricAuthenticationBlocked|Boolean|Indica se o uso da autenticação biométrica é permitido no lugar de um pino se PinRequired estiver definido como True. (Somente Android)|
+|biometricAuthenticationBlocked|Boleano|Indica se o uso da autenticação biométrica é permitido no lugar de um pino se PinRequired estiver definido como True. (Somente Android)|
 |requiredAndroidSafetyNetEvaluationType|[androidManagedAppSafetyNetEvaluationType](../resources/intune-mam-androidmanagedappsafetynetevaluationtype.md)|Define o requisito de tipo de avaliação do Android SafetyNet para que um aplicativo gerenciado funcione. (Somente Android). Os valores possíveis são: `basic` e `hardwareBacked`.|
 |blockAfterCompanyPortalUpdateDeferralInDays|Int32|O número máximo de dias Portal da Empresa a atualização pode ser adiada no dispositivo ou o acesso ao aplicativo será bloqueado.|
 |warnAfterCompanyPortalUpdateDeferralInDays|Int32|Número máximo de dias Portal da Empresa a atualização pode ser adiada no dispositivo ou o usuário receberá o aviso|
 |wipeAfterCompanyPortalUpdateDeferralInDays|Int32|Número máximo de dias Portal da Empresa a atualização pode ser adiada no dispositivo ou os dados da empresa no aplicativo serão apagados|
-|deviceLockRequired|Boolean|Define se qualquer tipo de bloqueio deve ser necessário no dispositivo. (somente android)|
+|deviceLockRequired|Boleano|Define se qualquer tipo de bloqueio deve ser necessário no dispositivo. (somente android)|
 |appActionIfDeviceLockNotSet|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|Define um comportamento de aplicativo gerenciado, aviso, bloqueio ou apagamento, se o bloqueio de tela for necessário no dispositivo, mas não estiver definido. (somente android). Os valores possíveis são: `block`, `wipe`, `warn`.|
+|connectToVpnOnLaunch|Boleano|Se o aplicativo deve se conectar à VPN configurada no início (somente Android).|
 
 
 
@@ -161,7 +162,7 @@ Este é um exemplo da solicitação.
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/defaultManagedAppProtections
 Content-type: application/json
-Content-length: 5308
+Content-length: 5341
 
 {
   "@odata.type": "#microsoft.graph.defaultManagedAppProtection",
@@ -282,7 +283,8 @@ Content-length: 5308
   "warnAfterCompanyPortalUpdateDeferralInDays": 10,
   "wipeAfterCompanyPortalUpdateDeferralInDays": 10,
   "deviceLockRequired": true,
-  "appActionIfDeviceLockNotSet": "wipe"
+  "appActionIfDeviceLockNotSet": "wipe",
+  "connectToVpnOnLaunch": true
 }
 ```
 
@@ -291,7 +293,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 5480
+Content-Length: 5513
 
 {
   "@odata.type": "#microsoft.graph.defaultManagedAppProtection",
@@ -415,10 +417,10 @@ Content-Length: 5480
   "warnAfterCompanyPortalUpdateDeferralInDays": 10,
   "wipeAfterCompanyPortalUpdateDeferralInDays": 10,
   "deviceLockRequired": true,
-  "appActionIfDeviceLockNotSet": "wipe"
+  "appActionIfDeviceLockNotSet": "wipe",
+  "connectToVpnOnLaunch": true
 }
 ```
-
 
 
 

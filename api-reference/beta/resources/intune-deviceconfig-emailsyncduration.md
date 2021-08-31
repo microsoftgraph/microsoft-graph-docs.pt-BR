@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 486b8e9b144897d80c554523030cf0c8435b67d469f2e68e5d91c185508c6035
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 0eb90fe7d2bddacc5c3d1db2b771e6056ce646dc
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54236371"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58805426"
 ---
 # <a name="emailsyncduration-enum-type"></a>Tipo de número emailSyncDuration
 
@@ -26,13 +26,12 @@ Valores possíveis para a duração da sincronização de email.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |userDefined|0|User Defined, default value, no intent.|
-|oneDay|1 |Sincronizar um dia de email.|
+|oneDay|1|Sincronizar um dia de email.|
 |threeDays|2|Sincronizar três dias de email.|
-|oneWeek|3 |Sincronizar uma semana de email.|
+|oneWeek|3|Sincronizar uma semana de email.|
 |twoWeeks|4 |Sincronizar duas semanas de email.|
 |oneMonth|5 |Sincronizar um mês de email.|
 |unlimited|6 |Sincronizar uma duração ilimitada do email.|
-
 
 
 

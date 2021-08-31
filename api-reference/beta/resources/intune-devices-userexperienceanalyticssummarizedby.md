@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 9c71fa5b628d8868dfcebdb7dc3ba9fd10d44213769a5112bc5826e3a3435150
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: c585404931c2e59f6ccc90a2f312f534bf0a04fc
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54236077"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58797497"
 ---
 # <a name="userexperienceanalyticssummarizedby-enum-type"></a>userExperienceAnalyticsSummarizedBy tipo de número
 
@@ -26,12 +26,11 @@ Ainda não documentado
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |Nenhuma|0|Ainda não documentado|
-|modelo|1 |Ainda não documentado|
-|allRegressions|3 |Ainda não documentado|
+|modelo|1|Ainda não documentado|
+|allRegressions|3|Ainda não documentado|
 |modelRegression|4 |Ainda não documentado|
 |manufacturerRegression|5 |Ainda não documentado|
 |operatingSystemVersionRegression|6 |Ainda não documentado|
-
 
 
 

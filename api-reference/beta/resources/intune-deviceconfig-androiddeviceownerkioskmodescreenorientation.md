@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 897bae36d4b119e43986b91d42ffbf88a8c560d89d51d2af31216d15e74636f4
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: a94ab5c0202299ab56be8532a02c8a96a5391681
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54213260"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58783579"
 ---
 # <a name="androiddeviceownerkioskmodescreenorientation-enum-type"></a>tipo de número androidDeviceOwnerKioskModeScreenOrientation
 
@@ -26,10 +26,9 @@ Orientação gerenciada da tela inicial do Modo de Quiosque do Proprietário do 
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |notConfigured|0|Não configurado; esse valor é ignorado.|
-|portrait|1 |Orientação em retrato.|
+|portrait|1|Orientação em retrato.|
 |landscape|2|Orientação em paisagem.|
-|autoRotate|3 |Girar automaticamente entre as orientações retrato e paisagem.|
-
+|autoRotate|3|Girar automaticamente entre as orientações retrato e paisagem.|
 
 
 

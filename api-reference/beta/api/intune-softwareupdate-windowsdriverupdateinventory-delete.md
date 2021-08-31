@@ -1,18 +1,18 @@
 ---
-title: Excluir deviceComplianceDeviceStatus
-description: Exclui deviceComplianceDeviceStatus.
+title: Excluir windowsDriverUpdateInventory
+description: Exclui um windowsDriverUpdateInventory.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 55b383cb68aeef9bc8094c1bd8dbfc5af1051ec7
+ms.openlocfilehash: c231691d4b1908c379cef3af0482c5d298263827
 ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 08/31/2021
-ms.locfileid: "58806450"
+ms.locfileid: "58797153"
 ---
-# <a name="delete-devicecompliancedevicestatus"></a>Excluir deviceComplianceDeviceStatus
+# <a name="delete-windowsdriverupdateinventory"></a>Excluir windowsDriverUpdateInventory
 
 Namespace: microsoft.graph
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Exclui [deviceComplianceDeviceStatus](../resources/intune-deviceconfig-devicecompliancedevicestatus.md).
+Exclui um [windowsDriverUpdateInventory](../resources/intune-softwareupdate-windowsdriverupdateinventory.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -37,7 +37,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 }
 -->
 ``` http
-DELETE /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/deviceStatuses/{deviceComplianceDeviceStatusId}
+DELETE /deviceManagement/windowsDriverUpdateProfiles/{windowsDriverUpdateProfileId}/driverInventories/{windowsDriverUpdateInventoryId}
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -57,7 +57,7 @@ Se tiver êxito, este método retornará um código de resposta `204 No Content`
 ### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
 ``` http
-DELETE https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/deviceStatuses/{deviceComplianceDeviceStatusId}
+DELETE https://graph.microsoft.com/beta/deviceManagement/windowsDriverUpdateProfiles/{windowsDriverUpdateProfileId}/driverInventories/{windowsDriverUpdateInventoryId}
 ```
 
 ### <a name="response"></a>Resposta

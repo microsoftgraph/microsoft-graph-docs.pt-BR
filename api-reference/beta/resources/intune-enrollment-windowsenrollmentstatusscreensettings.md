@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0f483d4217506aa440df1108c968ba4df83f8fc7f55433e193d4c07388a70ce2
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 98de649856d89d0dfaa484a3abcf816463241743
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54164213"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58797237"
 ---
 # <a name="windowsenrollmentstatusscreensettings-resource-type"></a>Tipo de recurso windowsEnrollmentStatusScreenSettings
 
@@ -25,13 +25,13 @@ Configuração da tela de status do registro
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|hideInstallationProgress|Boolean|Mostrar ou ocultar o progresso da instalação para o usuário|
-|allowDeviceUseBeforeProfileAndAppInstallComplete|Boolean|Permitir ou bloquear o usuário para usar o dispositivo antes da conclusão da instalação do perfil e do aplicativo|
-|blockDeviceSetupRetryByUser|Boolean|Permitir que o usuário repetir a instalação na falha de instalação|
-|allowLogCollectionOnInstallFailure|Boolean|Permitir ou bloquear o conjunto de log na falha de instalação|
+|hideInstallationProgress|Boleano|Mostrar ou ocultar o progresso da instalação para o usuário|
+|allowDeviceUseBeforeProfileAndAppInstallComplete|Boleano|Permitir ou bloquear o usuário para usar o dispositivo antes da conclusão da instalação do perfil e do aplicativo|
+|blockDeviceSetupRetryByUser|Boleano|Permitir que o usuário repetir a instalação na falha de instalação|
+|allowLogCollectionOnInstallFailure|Boleano|Permitir ou bloquear o conjunto de log na falha de instalação|
 |customErrorMessage|Cadeia de caracteres|Definir mensagem de erro personalizada para mostrar após a falha na instalação|
 |installProgressTimeoutInMinutes|Int32|Definir o tempo de tempo de duração da instalação em minutos|
-|allowDeviceUseOnInstallFailure|Boolean|Permitir que o usuário continue usando o dispositivo na falha de instalação|
+|allowDeviceUseOnInstallFailure|Boleano|Permitir que o usuário continue usando o dispositivo na falha de instalação|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -55,7 +55,6 @@ Veja a seguir uma representação JSON do recurso.
   "allowDeviceUseOnInstallFailure": true
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 350c3c9feeb15f41a157bf6511b87f04367d2ac905844d3adebc56094997a1ac
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 1537d8929f1d7ccc562072ca195c74a1f1167e08
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54224443"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58783831"
 ---
 # <a name="androidenterprisealwaysonvpnpackagetype-enum-type"></a>tipo de número androidEnterpriseAlwaysOnVpnPackageType
 
@@ -26,12 +26,11 @@ Ainda não documentado
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |notConfigured|0|Não configurado; esse valor é ignorado.|
-|custom|1 |Nome do pacote personalizado, o ITPro pode fornecer o nome do pacote do cliente VPN que deseja usar.|
+|custom|1|Nome do pacote personalizado, o ITPro pode fornecer o nome do pacote do cliente VPN que deseja usar.|
 |ciscoAnyConnect|2|Cisco AnyConnect.|
-|f5Access|3 |F5 Access.|
+|f5Access|3|F5 Access.|
 |paloAltoNetworksGlobalProtect|4 |Palo Alto Networks GlobalProtect.|
 |pulseSecure|5 |Pulse Secure.|
-
 
 
 

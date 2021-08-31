@@ -1,0 +1,102 @@
+---
+title: Criar windowsDriverUpdateProfileAssignment
+description: Crie um novo objeto windowsDriverUpdateProfileAssignment.
+author: dougeby
+localization_priority: Normal
+ms.prod: intune
+doc_type: apiPageType
+ms.openlocfilehash: 64c0cad26518af25f51ab102ade4e8723aea8436
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58783642"
+---
+# <a name="create-windowsdriverupdateprofileassignment"></a>Criar windowsDriverUpdateProfileAssignment
+
+Namespace: microsoft.graph
+
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
+
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
+
+Crie um novo [objeto windowsDriverUpdateProfileAssignment.](../resources/intune-softwareupdate-windowsdriverupdateprofileassignment.md)
+
+## <a name="prerequisites"></a>Pré-requisitos
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
+
+|Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
+|:---|:---|
+|Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Application|DeviceManagementConfiguration.ReadWrite.All|
+
+## <a name="http-request"></a>Solicitação HTTP
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+POST /deviceManagement/windowsDriverUpdateProfiles/{windowsDriverUpdateProfileId}/assignments
+```
+
+## <a name="request-headers"></a>Cabeçalhos de solicitação
+|Cabeçalho|Valor|
+|:---|:---|
+|Autorização|&lt;Token&gt; de portador obrigatório.|
+|Aceitar|application/json|
+
+## <a name="request-body"></a>Corpo da solicitação
+No corpo da solicitação, fornece uma representação JSON para o objeto windowsDriverUpdateProfileAssignment.
+
+A tabela a seguir mostra as propriedades que são necessárias ao criar o windowsDriverUpdateProfileAssignment.
+
+|Propriedade|Tipo|Descrição|
+|:---|:---|:---|
+|id|Cadeia de caracteres|O Identificador da entidade|
+|destino|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|O destino de atribuição ao que o perfil de atualização de driver é atribuído.|
+
+
+
+## <a name="response"></a>Resposta
+Se tiver êxito, este método retornará um código de resposta e um `201 Created` [objeto windowsDriverUpdateProfileAssignment](../resources/intune-softwareupdate-windowsdriverupdateprofileassignment.md) no corpo da resposta.
+
+## <a name="example"></a>Exemplo
+
+### <a name="request"></a>Solicitação
+Este é um exemplo da solicitação.
+``` http
+POST https://graph.microsoft.com/beta/deviceManagement/windowsDriverUpdateProfiles/{windowsDriverUpdateProfileId}/assignments
+Content-type: application/json
+Content-length: 343
+
+{
+  "@odata.type": "#microsoft.graph.windowsDriverUpdateProfileAssignment",
+  "target": {
+    "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget",
+    "deviceAndAppManagementAssignmentFilterId": "Device And App Management Assignment Filter Id value",
+    "deviceAndAppManagementAssignmentFilterType": "include"
+  }
+}
+```
+
+### <a name="response"></a>Resposta
+Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+``` http
+HTTP/1.1 201 Created
+Content-Type: application/json
+Content-Length: 392
+
+{
+  "@odata.type": "#microsoft.graph.windowsDriverUpdateProfileAssignment",
+  "id": "951663d5-63d5-9516-d563-1695d5631695",
+  "target": {
+    "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget",
+    "deviceAndAppManagementAssignmentFilterId": "Device And App Management Assignment Filter Id value",
+    "deviceAndAppManagementAssignmentFilterType": "include"
+  }
+}
+```
+
+
+

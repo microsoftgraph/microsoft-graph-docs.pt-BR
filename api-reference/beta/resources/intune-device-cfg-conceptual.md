@@ -4,12 +4,12 @@ description: Lista a API Graph microsoft para pontos de extremidade do Intune (R
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: e1b193f4abb338f3ecb18d848fcd8435f77743b6
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 3535decf70b34650d6ff3e381949e9fd01d60f23
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58265414"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58798122"
 ---
 # <a name="device-configuration-in-microsoft-intune"></a>Configuração de dispositivo no Microsoft Intune
 
@@ -148,6 +148,8 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar configuraçõe
 - [Política da unidade de sistema do BitLocker](intune-deviceconfig-bitlockersystemdrivepolicy.md)
 - [Configuração de sincronização do navegador](intune-deviceconfig-browsersyncsetting.md)
 - [Associação de carrinho à sala](intune-deviceconfig-carttoclassassociation.md)
+- [Detalhes do conector de certificado](intune-raimportcerts-certificateconnectordetails.md)
+- [Valor métrico de métrica de saúde do conector de certificado](intune-raimportcerts-certificateconnectorhealthmetricvalue.md)
 - [Estados de emissão de certificados](intune-deviceconfig-certificateissuancestates.md)
 - [Status de revogação de certificados](intune-deviceconfig-certificaterevocationstatus.md)
 - [Alterar a permissão de configurações uefi](intune-deviceconfig-changeuefisettingspermission.md)
@@ -362,6 +364,7 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar configuraçõe
 - [Valor da chave](intune-deviceconfig-keyvalue.md)
 - [Par chave/valor](intune-deviceconfig-keyvaluepair.md)
 - [Par chave/valor](intune-deviceconfig-keyvaluepair.md)
+- [Complexidade de PIN de tela inicial gerenciada do modo quiosque](intune-deviceconfig-kioskmodemanagedhomescreenpincomplexity.md)
 - [Nível de autenticação do LAN Manager](intune-deviceconfig-lanmanagerauthenticationlevel.md)
 - [Tipo de comportamento da solicitação de elevação do administrador de opções de segurança local](intune-deviceconfig-localsecurityoptionsadministratorelevationpromptbehaviortype.md)
 - [Formato das opções de segurança local e remoção do tipo de usuário permitido para mídias removíveis](intune-deviceconfig-localsecurityoptionsformatandejectofremovablemediaallowedusertype.md)
@@ -500,6 +503,7 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar configuraçõe
 - [Plug-ins de rede cativa especificados](intune-deviceconfig-specifiedcaptivenetworkplugins.md)
 - [Configuração de gerenciamento de estado](intune-deviceconfig-statemanagementsetting.md)
 - [Formato de nome da entidade](intune-deviceconfig-subjectnameformat.md)
+- [Parâmetro time series](intune-raimportcerts-timeseriesparameter.md)
 - [Configuração do dispositivo sem suporte](intune-deviceconfig-unsupporteddeviceconfiguration.md)
 - [Detalhes da configuração do dispositivo sem suporte](intune-deviceconfig-unsupporteddeviceconfigurationdetail.md)
 - [Classificação de atualização](intune-deviceconfig-updateclassification.md)

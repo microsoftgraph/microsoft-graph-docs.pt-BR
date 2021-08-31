@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 264922edced98e5f95959a69ed4948f557b99a1e7ada7c9fb3ca450b29ac9e29
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 737f6d8be140ec1723295e6f8cdb8809b9bdcca4
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54207842"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58807059"
 ---
 # <a name="update-grouppolicymigrationreport"></a>Atualizar groupPolicyMigrationReport
 
@@ -27,9 +27,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
+|Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Application|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -62,7 +62,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [o group
 |groupPolicyCreatedDateTime|DateTimeOffset|A data e a hora em que o GroupPolicyMigrationReport foi criado.|
 |groupPolicyLastModifiedDateTime|DateTimeOffset|A data e a hora em que GroupPolicyMigrationReport foi modificada pela última vez.|
 |migrationReadiness|[groupPolicyMigrationReadiness](../resources/intune-gpanalyticsservice-grouppolicymigrationreadiness.md)|A cobertura do Intune para o arquivo de Objeto de Política de Grupo associado. Os valores possíveis são: `none`, `partial`, `complete`, `error`, `notApplicable`.|
-|targetedInActiveDirectory|Boolean|A propriedade Targeted in AD do Conteúdo XML do GPO|
+|targetedInActiveDirectory|Boleano|A propriedade Targeted in AD do Conteúdo XML do GPO|
 |totalSettingsCount|Int32|O número total de políticas de grupo Configurações do arquivo GPO.|
 |supportedSettingsCount|Int32|O número de políticas de grupo Configurações com suporte do Intune.|
 |supportedSettingsPercent|Int32|O Percentual de políticas de grupo Configurações com suporte do Intune.|
@@ -120,7 +120,6 @@ Content-Length: 716
   "supportedSettingsPercent": 8
 }
 ```
-
 
 
 

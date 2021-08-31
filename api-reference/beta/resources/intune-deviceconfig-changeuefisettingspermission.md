@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 94594279c139468fc9017c2caca9a1d7d2757f784cf54e16feb443a350fd3b0e
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: f4ef2ce13a06a27258b219037ea715a84dcd2151
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54213148"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58778133"
 ---
 # <a name="changeuefisettingspermission-enum-type"></a>Tipo de número changeUefiSettingsPermission
 
@@ -26,8 +26,7 @@ Define o nível de permissão concedido aos usuários para habilitar a alteraç�
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |notConfiguredOnly|0|Valor padrão do dispositivo, sem intenção.|
-|Nenhuma|1 |Impedir a alteração da permissão de configuração uefi|
-
+|Nenhuma|1|Impedir a alteração da permissão de configuração uefi|
 
 
 

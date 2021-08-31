@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 74b5cbe3185a3a6985fa4ecddcef554ce4a9fde9e51c46b621a538c9ebfa9a2e
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 40dbefebf1cf3d9e514f1e9cd998b8e522f13d77
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54253135"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58784503"
 ---
 # <a name="applicationguardenabledoptions-enum-type"></a>Tipo de número applicationGuardEnabledOptions
 
@@ -26,10 +26,9 @@ Valores possíveis para ApplicationGuardEnabledOptions
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |notConfigured|0|Não configurado|
-|enabledForEdge|1 |Habilitado para Borda|
+|enabledForEdge|1|Habilitado para Borda|
 |enabledForOffice|2|Habilitado para Office|
-|enabledForEdgeAndOffice|3 |Habilitado para borda e Office|
-
+|enabledForEdgeAndOffice|3|Habilitado para borda e Office|
 
 
 
