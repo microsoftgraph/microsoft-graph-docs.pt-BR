@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 34c87657e6add9011a1533383a3d549c4e609be6f921435fe7c622a1bc207a9b
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: b08d5190992433f0f3457c29fb74ccfa8c57e998
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54145408"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58796625"
 ---
 # <a name="edgekioskmoderestrictiontype-enum-type"></a>Tipo de número edgeKioskModeRestrictionType
 
@@ -26,11 +26,10 @@ Especifique como as Microsoft Edge são restritas com base no modo quiosque.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |notConfigured|0|Não configurado (irrestrito).|
-|digitalSignage|1 |Sinalização interativa/digital no modo de aplicativo único.|
+|digitalSignage|1|Sinalização interativa/digital no modo de aplicativo único.|
 |normalMode|2|Modo normal (versão completa do Microsoft Edge).|
-|publicBrowsingSingleApp|3 |Navegação pública no modo de aplicativo único.|
+|publicBrowsingSingleApp|3|Navegação pública no modo de aplicativo único.|
 |publicBrowsingMultiApp|4 |Navegação pública (inPrivate) no modo de vários aplicativos.|
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 88c3b9867a3c9cedb7f48772a5bf4f76c89eef1a79d933c07df60462a199303c
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: c1baf9b438496abfa9fd02ee4365db2f74705732
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54226263"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58770346"
 ---
 # <a name="userexperienceanalyticsoverview-resource-type"></a>Tipo de recurso userExperienceAnalyticsOverview
 
@@ -89,7 +89,6 @@ Veja a seguir uma representação JSON do recurso.
   "resourcePerformanceHealthState": "String"
 }
 ```
-
 
 
 

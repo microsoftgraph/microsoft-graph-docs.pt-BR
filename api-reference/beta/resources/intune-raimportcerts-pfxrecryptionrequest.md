@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 5f635c24a016bc8b6b02d72015b1d9a04ab6d833b0225110cbd137129a93dfab
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: a84f5514e13633c1c5a2ed5f6ffc5ce5b9130eea
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54172774"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58805286"
 ---
 # <a name="pfxrecryptionrequest-resource-type"></a>Tipo de recurso pfxRecryptionRequest
 
@@ -28,7 +28,7 @@ Ainda não documentado
 |[Listar pfxRecryptionRequests](../api/intune-raimportcerts-pfxrecryptionrequest-list.md)|[Coleção pfxRecryptionRequest](../resources/intune-raimportcerts-pfxrecryptionrequest.md)|Listar propriedades e relações dos objetos [pfxRecryptionRequest.](../resources/intune-raimportcerts-pfxrecryptionrequest.md)|
 |[Obter pfxRecryptionRequest](../api/intune-raimportcerts-pfxrecryptionrequest-get.md)|[pfxRecryptionRequest](../resources/intune-raimportcerts-pfxrecryptionrequest.md)|Leia propriedades e relações do objeto [pfxRecryptionRequest.](../resources/intune-raimportcerts-pfxrecryptionrequest.md)|
 |[Criar pfxRecryptionRequest](../api/intune-raimportcerts-pfxrecryptionrequest-create.md)|[pfxRecryptionRequest](../resources/intune-raimportcerts-pfxrecryptionrequest.md)|Crie um novo [objeto pfxRecryptionRequest.](../resources/intune-raimportcerts-pfxrecryptionrequest.md)|
-|[Excluir pfxRecryptionRequest](../api/intune-raimportcerts-pfxrecryptionrequest-delete.md)|Nenhum|Exclui um [pfxRecryptionRequest](../resources/intune-raimportcerts-pfxrecryptionrequest.md).|
+|[Excluir pfxRecryptionRequest](../api/intune-raimportcerts-pfxrecryptionrequest-delete.md)|Nenhum(a)|Exclui um [pfxRecryptionRequest](../resources/intune-raimportcerts-pfxrecryptionrequest.md).|
 |[Atualizar pfxRecryptionRequest](../api/intune-raimportcerts-pfxrecryptionrequest-update.md)|[pfxRecryptionRequest](../resources/intune-raimportcerts-pfxrecryptionrequest.md)|Atualize as propriedades de um [objeto pfxRecryptionRequest.](../resources/intune-raimportcerts-pfxrecryptionrequest.md)|
 
 ## <a name="properties"></a>Propriedades
@@ -75,7 +75,6 @@ Veja a seguir uma representação JSON do recurso.
   "eTag": "String"
 }
 ```
-
 
 
 

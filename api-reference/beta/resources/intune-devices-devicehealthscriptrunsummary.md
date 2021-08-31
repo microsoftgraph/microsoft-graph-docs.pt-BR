@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d1bf94f10b164e13600989b6fed982f6426a505a9f952ff67a1aa97dc4843da5
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 511c953f9c2d9ca9f126d433eb7477fc816759e0
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54156195"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58806219"
 ---
 # <a name="devicehealthscriptrunsummary-resource-type"></a>Tipo de recurso deviceHealthScriptRunSummary
 
@@ -72,7 +72,6 @@ Veja a seguir uma representação JSON do recurso.
   "issueRemediatedCumulativeDeviceCount": 1024
 }
 ```
-
 
 
 

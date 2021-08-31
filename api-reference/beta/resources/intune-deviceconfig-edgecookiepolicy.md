@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: e677a667b4670fd41cb24a4cde3efcf3b93b365c3968b34b880d69a01422e4a4
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 66fd6faa5db131052bcc63dbb9565de03ea45a4e
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54234747"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58796871"
 ---
 # <a name="edgecookiepolicy-enum-type"></a>Tipo de número edgeCookiePolicy
 
@@ -26,10 +26,9 @@ Valores possíveis para especificar quais cookies são permitidos Microsoft Edge
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |userDefined|0|Permitir que o usuário desem conjunto.|
-|allow|1 |Permitir.|
+|allow|1|Permitir.|
 |blockThirdParty|2|Bloquear somente cookies de terceiros.|
-|blockAll|3 |Bloquear todos os cookies.|
-
+|blockAll|3|Bloquear todos os cookies.|
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 08abfd1f12a293cda8f98d44ffaf2ad60b07f0bc5f8a7f4dfac1946cb2efb290
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: d50d87aac91f073243327f0446306b17e54eb9ec
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54241608"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58798094"
 ---
 # <a name="binarymanagementconditionexpressionoperatortype-enum-type"></a>Tipo de número binaryManagementConditionExpressionOperatorType
 
@@ -26,8 +26,7 @@ Operadores binários com suporte para expressões de condição de gerenciamento
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |ou|0|Avalia um conjunto de operands como true se e somente se um ou mais de seus operands for verdadeiro.|
-|e|1 |Avalia um conjunto de operands como true se e somente se todos os seus operands são verdadeiros.|
-
+|e|1|Avalia um conjunto de operands como true se e somente se todos os seus operands são verdadeiros.|
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5ae2c656f57dc8fbc92cf7013511e25c666669fe
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 9edf5a73e49615599b8e6a25c6299fb8c08abcb7
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58266076"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58797371"
 ---
 # <a name="create-datasharingconsent"></a>Criar dataSharingConsent
 
@@ -27,9 +27,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All|
+|Delegado (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Application|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -56,7 +56,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar o dataSh
 |id|Cadeia de caracteres|A ID de consentimento de compartilhamento de dados|
 |serviceDisplayName|Cadeia de caracteres|O nome de exibição do fluxo de trabalho do serviço|
 |termsUrl|Cadeia de caracteres|The TermsUrl for the data sharing consent|
-|concedido|Boolean|O estado concedido para o consentimento de compartilhamento de dados|
+|concedido|Boleano|O estado concedido para o consentimento de compartilhamento de dados|
 |grantDateTime|DateTimeOffset|O consentimento de hora foi concedido para essa conta|
 |grantedByUpn|Cadeia de caracteres|O Upn do usuário que concedeu consentimento para essa conta|
 |grantedByUserId|Cadeia de caracteres|UserId do usuário que concedeu consentimento para essa conta|
@@ -104,7 +104,6 @@ Content-Length: 382
   "grantedByUserId": "Granted By User Id value"
 }
 ```
-
 
 
 

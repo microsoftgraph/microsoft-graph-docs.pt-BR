@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 316b5abf8d694e5a94000bbb2368101ead05d015
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 91f0e1af757a239d3851e713661fc8670fcc666f
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58262435"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58798424"
 ---
 # <a name="androidforworkvpnconfiguration-resource-type"></a>Tipo de recurso androidForWorkVpnConfiguration
 
@@ -31,7 +31,7 @@ Herda de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md
 |[Listar androidForWorkVpnConfigurations](../api/intune-deviceconfig-androidforworkvpnconfiguration-list.md)|[coleção androidForWorkVpnConfiguration](../resources/intune-deviceconfig-androidforworkvpnconfiguration.md)|Listar propriedades e relações dos objetos [androidForWorkVpnConfiguration.](../resources/intune-deviceconfig-androidforworkvpnconfiguration.md)|
 |[Obter androidForWorkVpnConfiguration](../api/intune-deviceconfig-androidforworkvpnconfiguration-get.md)|[androidForWorkVpnConfiguration](../resources/intune-deviceconfig-androidforworkvpnconfiguration.md)|Leia propriedades e relações do [objeto androidForWorkVpnConfiguration.](../resources/intune-deviceconfig-androidforworkvpnconfiguration.md)|
 |[Criar androidForWorkVpnConfiguration](../api/intune-deviceconfig-androidforworkvpnconfiguration-create.md)|[androidForWorkVpnConfiguration](../resources/intune-deviceconfig-androidforworkvpnconfiguration.md)|Crie um novo [objeto androidForWorkVpnConfiguration.](../resources/intune-deviceconfig-androidforworkvpnconfiguration.md)|
-|[Excluir androidForWorkVpnConfiguration](../api/intune-deviceconfig-androidforworkvpnconfiguration-delete.md)|Nenhum|Exclui um [androidForWorkVpnConfiguration](../resources/intune-deviceconfig-androidforworkvpnconfiguration.md).|
+|[Excluir androidForWorkVpnConfiguration](../api/intune-deviceconfig-androidforworkvpnconfiguration-delete.md)|Nenhum(a)|Exclui um [androidForWorkVpnConfiguration](../resources/intune-deviceconfig-androidforworkvpnconfiguration.md).|
 |[Atualizar androidForWorkVpnConfiguration](../api/intune-deviceconfig-androidforworkvpnconfiguration-update.md)|[androidForWorkVpnConfiguration](../resources/intune-deviceconfig-androidforworkvpnconfiguration.md)|Atualize as propriedades de um [objeto androidForWorkVpnConfiguration.](../resources/intune-deviceconfig-androidforworkvpnconfiguration.md)|
 
 ## <a name="properties"></a>Propriedades
@@ -39,13 +39,13 @@ Herda de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md
 |:---|:---|:---|
 |id|Cadeia de caracteres|Chave da entidade. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|roleScopeTagIds|String collection|Lista de marcas de escopo para esta instância entity. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|supportsScopeTags|Boolean|Indica se a Configuração de Dispositivo subjacente dá suporte ou não à atribuição de marcas de escopo. A atribuição à propriedade ScopeTags não é permitida quando esse valor é falso e as entidades não estarão visíveis para usuários com escopo. Isso ocorre para políticas herdadas criadas no Silverlight e podem ser resolvidas excluindo e recriando a política no Portal do Azure. Essa propriedade é somente leitura. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de marcas de escopo para esta instância entity. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|supportsScopeTags|Boleano|Indica se a Configuração de Dispositivo subjacente dá suporte ou não à atribuição de marcas de escopo. A atribuição à propriedade ScopeTags não é permitida quando esse valor é falso e as entidades não estarão visíveis para usuários com escopo. Isso ocorre para políticas herdadas criadas no Silverlight e podem ser resolvidas excluindo e recriando a política no Portal do Azure. Essa propriedade é somente leitura. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|A aplicabilidade da edição do sistema operacional para esta Política. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|A regra de aplicabilidade da versão do sistema operacional para esta Política. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|A regra de aplicabilidade do modo de dispositivo para esta Política. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|DateTime em que o objeto foi criado. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|description|Cadeia de caracteres|O administrador forneceu a descrição da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|descrição|Cadeia de caracteres|O administrador forneceu a descrição da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |displayName|Cadeia de caracteres|O administrador forneceu o nome da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |versão|Int32|Versão da configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |connectionName|Cadeia de caracteres|Nome da conexão exibido ao usuário.|
@@ -142,7 +142,6 @@ Veja a seguir uma representação JSON do recurso.
   "authenticationMethod": "String"
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 0a0e95974742c2baec44a1e2db0225ea9a8156bb62945547bd10e8cb035caca8
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 043af4a350998290fc109c5fa008c05e63577294
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54156048"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58804999"
 ---
 # <a name="runasaccounttype-enum-type"></a>Tipo de número runAsAccountType
 
@@ -26,8 +26,7 @@ Indica o tipo de contexto de execução em que o aplicativo é executado.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |sistema|0|Contexto do sistema|
-|usuário|1 |Contexto do usuário|
-
+|usuário|1|Contexto do usuário|
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 724b6d0deb2fff796c5f7d43d961a014eadc84c2659e47392def0e803c172b5f
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 828117ad95c9e1de2815046d6877f5378528f788
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54145394"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58804523"
 ---
 # <a name="iossinglesignonsettings-resource-type"></a>Tipo de recurso iosSingleSignOnSettings
 
@@ -26,7 +26,7 @@ Configurações de autenticação Kerberos do iOS para o login único
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |allowedAppsList|Coleção [appListItem](../resources/intune-deviceconfig-applistitem.md)|Lista de identificadores de aplicativo que têm permissão para usar esse logon. Se esse campo for omitido, o logon se aplicará a todos os aplicativos no dispositivo. Esta coleção pode conter um máximo de 500 elementos.|
-|allowedUrls|String collection|Lista de URLs HTTP que devem ser corresponder para usar esse logon. Com o iOS 9.0 ou posterior, um caractere curinga pode ser usado.|
+|allowedUrls|Coleção de cadeias de caracteres|Lista de URLs HTTP que devem ser corresponder para usar esse logon. Com o iOS 9.0 ou posterior, um caractere curinga pode ser usado.|
 |displayName|Cadeia de caracteres|O nome de exibição das configurações de logon mostradas no dispositivo de recebimento.|
 |kerberosPrincipalName|Cadeia de caracteres|Um nome principal Kerberos. Se não for fornecido, o usuário será solicitado a um durante a instalação do perfil.|
 |kerberosRealm|Cadeia de caracteres|Um nome de domínio Kerberos. Case sensitive.|
@@ -61,7 +61,6 @@ Veja a seguir uma representação JSON do recurso.
   "kerberosRealm": "String"
 }
 ```
-
 
 
 

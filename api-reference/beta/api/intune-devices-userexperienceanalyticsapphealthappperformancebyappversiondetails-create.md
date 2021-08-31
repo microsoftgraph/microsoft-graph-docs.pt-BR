@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 07557b7fcc8c4310e08b72245ccdb40e0dbdb80e
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 7c7582dbb669bacd7bd6e5d11d8b3c1289dfcffb
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58265432"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58780520"
 ---
 # <a name="create-userexperienceanalyticsapphealthappperformancebyappversiondetails"></a>Criar userExperienceAnalyticsAppHealthAppPerformanceByAppVersionDetails
 
@@ -27,9 +27,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
+|Delegado (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Application|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -55,8 +55,8 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar o userEx
 |:---|:---|:---|
 |id|Cadeia de caracteres|O identificador exclusivo do objeto de desempenho do aplicativo de análise de experiência do usuário.|
 |deviceCountWithCrashes|Int32|O número total de dispositivos que relataram falhas de um ou mais aplicativos para este aplicativo e versão. Valores válidos -2147483648 para 2147483647|
-|isMostUsedVersion|Boolean|É a versão do aplicativo a versão mais usada para esse aplicativo.|
-|isLatestUsedVersion|Boolean|É a versão do aplicativo a versão mais recente para esse aplicativo que está em uso.|
+|isMostUsedVersion|Boleano|É a versão do aplicativo a versão mais usada para esse aplicativo.|
+|isLatestUsedVersion|Booliano|É a versão do aplicativo a versão mais recente para esse aplicativo que está em uso.|
 |appName|Cadeia de caracteres|O nome do aplicativo.|
 |appDisplayName|Cadeia de caracteres|O nome amigável do aplicativo.|
 |appPublisher|Cadeia de caracteres|O editor do aplicativo.|
@@ -110,7 +110,6 @@ Content-Length: 433
   "appCrashCount": 13
 }
 ```
-
 
 
 

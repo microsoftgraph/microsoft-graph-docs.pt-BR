@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4b606226e62e7eccfc65bb3c19fd359fff4a2c7161506404aa6eed09c481e2f8
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 993b79f8b9ff18c5ecb46b22adf5ccfc8da8f113
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54214912"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58805995"
 ---
 # <a name="mobileapp-resource-type"></a>Tipo de recurso mobileApp
 
@@ -41,7 +41,7 @@ Uma classe abstrata que contém as propriedades base de aplicativos móveis do I
 |:---|:---|:---|
 |id|Cadeia de caracteres|Chave da entidade.|
 |displayName|Cadeia de caracteres|O título do aplicativo importado ou definido pelo administrador.|
-|description|Cadeia de caracteres|A descrição do aplicativo.|
+|descrição|Cadeia de caracteres|A descrição do aplicativo.|
 |publisher|String|O publicador do aplicativo.|
 |largeIcon|[mimeContent](../resources/intune-shared-mimecontent.md)|O ícone grande, a ser exibido nos detalhes do aplicativo e usado para o carregamento do ícone.|
 |createdDateTime|DateTimeOffset|A data e a hora da criação do aplicativo.|
@@ -55,7 +55,7 @@ Uma classe abstrata que contém as propriedades base de aplicativos móveis do I
 |uploadState|Int32|O estado de carregamento.|
 |publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|O estado de publicação do aplicativo. O aplicativo não pode ser assinado, a menos que ele seja publicado. Os valores possíveis são: `notPublished`, `processing`, `published`.|
 |isAssigned|Boolean|O valor que indica se o aplicativo é atribuído a pelo menos um grupo.|
-|roleScopeTagIds|String collection|Lista de ids de marca de escopo para este aplicativo móvel.|
+|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de ids de marca de escopo para este aplicativo móvel.|
 |dependentAppCount|Int32|O número total de dependências que o aplicativo filho tem.|
 
 ## <a name="relationships"></a>Relações
@@ -106,7 +106,6 @@ Veja a seguir uma representação JSON do recurso.
   "dependentAppCount": 1024
 }
 ```
-
 
 
 

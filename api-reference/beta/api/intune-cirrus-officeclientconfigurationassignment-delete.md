@@ -1,18 +1,18 @@
 ---
-title: Excluir macOsVppAppAssignedLicense
-description: Exclui um macOsVppAppAssignedLicense.
-author: dougeby
+title: Excluir officeClientConfigurationAssignment
+description: Exclui um officeClientConfigurationAssignment.
 localization_priority: Normal
+author: dougeby
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e2eaf32b48a325a9b0758448cd9b9434b62cc20a
+ms.openlocfilehash: ff152a4332e301c8b5e09094f154ad1aa6a4a039
 ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 08/31/2021
-ms.locfileid: "58798059"
+ms.locfileid: "58796511"
 ---
-# <a name="delete-macosvppappassignedlicense"></a>Excluir macOsVppAppAssignedLicense
+# <a name="delete-officeclientconfigurationassignment"></a>Excluir officeClientConfigurationAssignment
 
 Namespace: microsoft.graph
 
@@ -20,16 +20,16 @@ Namespace: microsoft.graph
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Exclui um [macOsVppAppAssignedLicense](../resources/intune-apps-macosvppappassignedlicense.md).
+Exclui um [officeClientConfigurationAssignment](../resources/intune-cirrus-officeclientconfigurationassignment.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
+|Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All|
+|Delegado (conta corporativa ou de estudante)|**TODO: Determinar escopos **|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementApps.ReadWrite.All|
+|Application|**TODO: Determinar escopos **|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -37,7 +37,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 }
 -->
 ``` http
-DELETE /deviceAppManagement/mobileApps/{mobileAppId}/microsoft.graph.macOsVppApp/assignedLicenses/{macOsVppAppAssignedLicenseId}
+DELETE /officeConfiguration/clientConfigurations/{officeClientConfigurationId}/assignments/{officeClientConfigurationAssignmentId}
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -57,7 +57,7 @@ Se tiver êxito, este método retornará um código de resposta `204 No Content`
 ### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
 ``` http
-DELETE https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId}/microsoft.graph.macOsVppApp/assignedLicenses/{macOsVppAppAssignedLicenseId}
+DELETE https://graph.microsoft.com/beta/officeConfiguration/clientConfigurations/{officeClientConfigurationId}/assignments/{officeClientConfigurationAssignmentId}
 ```
 
 ### <a name="response"></a>Resposta

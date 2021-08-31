@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: fbec5597244c2cb95a3425ac6a94a07db65b14feb6389dd06542da960b8b878b
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 244523298e0d548763a0ce61aaa09478ae6b9111
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54209921"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58797919"
 ---
 # <a name="defenderattacksurfacetype-enum-type"></a>Tipo denum defenderAttackSurfaceType
 
@@ -26,11 +26,10 @@ Valores possíveis de Regras de Redução de Superfície de Ataque do Defender
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |userDefined|0|Padrão, que desabilita a regra de redução de superfície de ataque.|
-|block|1 |Habilita a regra de redução de superfície de ataque.|
+|block|1|Habilita a regra de redução de superfície de ataque.|
 |auditMode|2|Avalie como a regra ASR afetaria sua organização se estiver habilitada. Não altera a funcionalidade, mas gera logs.|
 |warn|6 |Mensagem de aviso para o usuário final com capacidade de ignorar o bloco da regra de redução de superfície de ataque.|
 |desabilitar|99|Desabilitar a regra de redução de superfície de ataque|
-
 
 
 

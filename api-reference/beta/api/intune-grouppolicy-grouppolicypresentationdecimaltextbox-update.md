@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3118117719dffe8b01b979e778a855fdf1ce53fc384608a55bae184a90a0685c
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 2315fefecb56d9fbe37709d5d7a07f1c2c885820
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54153969"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58797961"
 ---
 # <a name="update-grouppolicypresentationdecimaltextbox"></a>Atualizar groupPolicyPresentationDecimalTextBox
 
@@ -27,9 +27,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
+|Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Application|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -58,9 +58,9 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [o group
 |id|Cadeia de caracteres|Chave da entidade. Herdado [de groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
 |lastModifiedDateTime|DateTimeOffset|A data e a hora em que a entidade foi modificada pela última vez. Herdado [de groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
 |defaultValue|Int64|Um inteiro não assinado que especifica o valor inicial da caixa de texto decimal. O valor padrão é 1.|
-|spin|Boolean|Se for true, crie um controle de rotação; caso contrário, crie uma caixa de texto para entrada numérica. O valor padrão é true.|
+|spin|Boleano|Se for true, crie um controle de rotação; caso contrário, crie uma caixa de texto para entrada numérica. O valor padrão é true.|
 |spinStep|Int64|Um inteiro não assinado que especifica o incremento de alteração para o controle de rotação. O valor padrão é 1.|
-|obrigatório|Boolean|Requisito para inserir um valor na caixa de parâmetros. O valor padrão é falso.|
+|obrigatório|Booliano|Requisito para inserir um valor na caixa de parâmetros. O valor padrão é falso.|
 |minValue|Int64|Um inteiro não assinado que especifica o valor mínimo permitido. O valor padrão é 0.|
 |maxValue|Int64|Um inteiro não assinado que especifica o valor máximo permitido. O valor padrão é 9999.|
 
@@ -110,7 +110,6 @@ Content-Length: 334
   "maxValue": 8
 }
 ```
-
 
 
 

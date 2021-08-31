@@ -5,12 +5,12 @@ localization_priority: Priority
 author: Jumaodhiss
 ms.prod: change-notifications
 doc_type: resourcePageType
-ms.openlocfilehash: b85956c3cf9cadbcbfd347cc50d33df6735c3a7894306fde8399196058caf8e1
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 0ffd6ad7ebcaddca149b66004cef13f24ba72a1e
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54196527"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58805988"
 ---
 # <a name="subscription-resource-type"></a>tipo de recurso de assinatura
 
@@ -29,7 +29,7 @@ Uma assinatura que permite a um aplicativo cliente receber notificações sobre 
 - Uma [printer][] (quando um trabalho de impressão para a impressora chegar ao estado JobFetchable – pronto para ser buscado para impressão) e uma [PrintTaskDefinition][] em Impressão Universal. Para saber mais, confira [Inscrever-se para alterar notificações de APIs de impressão na nuvem](/graph/universal-print-webhook-notifications).
 - Um [usuário][] no Azure Active Directory.
 
-Consulte [usar o Microsoft Graph API para obter notificações de alteração](webhooks.md) dos possíveis valores de caminho de recurso de cada recurso suportado.
+Para obter os valores de caminho de recurso possíveis para cada recurso com suporte, consulte [Usar a API do Microsoft Graph para obter notificações de alteração](webhooks.md).
 
 ## <a name="methods"></a>Métodos
 
@@ -46,7 +46,7 @@ Consulte [usar o Microsoft Graph API para obter notificações de alteração](w
 | Propriedade | Tipo | Descrição | Recursos com Suporte |
 |:---------|:-----|:------------|:--------------|
 | ApplicationId | cadeia de caracteres | Identificador do aplicativo utilizado para criar a assinatura. Somente leitura. | Todos |
-| changeType | string | Obrigatório. Indica qual é o tipo de alteração no recurso inscrito que irá emitir uma notificação de alteração. Os valores com suporte são: `created`, `updated`, `deleted`. Vários valores podem ser combinados usando uma lista separada por vírgula.<br><br>Observação: As notificações de alteração de lista e item raiz da unidade suportam apenas o `updated` changeType. Suporte para notificações de alteração de usuário e grupo `updated` e `deleted` changeType. | Todos |
+| changeType | cadeia de caracteres | Obrigatório. Indica qual é o tipo de alteração no recurso inscrito que irá emitir uma notificação de alteração. Os valores com suporte são: `created`, `updated`, `deleted`. Vários valores podem ser combinados usando uma lista separada por vírgula.<br><br>Observação: As notificações de alteração de lista e item raiz da unidade suportam apenas o `updated` changeType. Suporte para notificações de alteração de usuário e grupo `updated` e `deleted` changeType. | Todos |
 | clientState | string | Opcional. Especifica o valor da propriedade `clientState` enviada pelo serviço em cada notificação de alteração. O comprimento máximo é de 128 caracteres. O cliente pode verificar se a notificação de alteração veio do serviço pela comparação do valor da propriedade `clientState` enviada com a assinatura com o valor da propriedade `clientState` recebida contendo cada notificação de alteração. | Todos |
 | creatorId | cadeia de caracteres | Identificador de usuário ou entidade de serviço que criou a assinatura. Se o aplicativo usado delegada permissões para criar a assinatura, esse campo contém a id do usuário que entrou no aplicativo chamado em nome dele. Se o aplicativo usou permissões do aplicativo, esse campo contém a id da entidade de serviço correspondente ao aplicativo. Somente leitura. | Todos |
 | encryptionCertificate | cadeia de caracteres | Uma representação codificada em Base64 de um certificado com uma chave pública usada para criptografar os dados de recursos nas notificações de alteração. Opcional. Obrigatório quando **includeResourceData** é verdadeiro. | Todos |

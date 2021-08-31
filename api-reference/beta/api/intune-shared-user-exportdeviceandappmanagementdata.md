@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 1c3477ccafc20b2a952083ca99d6eeb289bf2b209ce09804d7d67c50883a188e
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: efb6640290a86c5171102a9e844cb10124411b3d
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54164416"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58762092"
 ---
 # <a name="exportdeviceandappmanagementdata-function"></a>Função exportDeviceAndAppManagementData
 
@@ -28,10 +28,10 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)||
+|Delegado (conta corporativa ou de estudante)||
 | &nbsp; &nbsp; **Integração** | DeviceManagementServiceConfig.ReadWrite.All|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo||
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Application||
 | &nbsp; &nbsp; **Integração** | DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -90,7 +90,6 @@ Content-Length: 143
   }
 }
 ```
-
 
 
 

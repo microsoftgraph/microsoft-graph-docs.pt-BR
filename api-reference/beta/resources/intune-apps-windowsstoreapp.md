@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0785a151fd73fb2b3360348963f432f8a88a1ba371b4717d2bef77155be7b61e
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 6a14c955969fafab3c6462d0dd91110ce4b03b76
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54253150"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58804565"
 ---
 # <a name="windowsstoreapp-resource-type"></a>Tipo de recurso windowsStoreApp
 
@@ -31,7 +31,7 @@ Herda de [mobileApp](../resources/intune-shared-mobileapp.md)
 |[Listar windowsStoreApps](../api/intune-apps-windowsstoreapp-list.md)|[Coleção windowsStoreApp](../resources/intune-apps-windowsstoreapp.md)|Listar propriedades e relações dos objetos [windowsStoreApp.](../resources/intune-apps-windowsstoreapp.md)|
 |[Obter windowsStoreApp](../api/intune-apps-windowsstoreapp-get.md)|[windowsStoreApp](../resources/intune-apps-windowsstoreapp.md)|Leia propriedades e relações do [objeto windowsStoreApp.](../resources/intune-apps-windowsstoreapp.md)|
 |[Criar windowsStoreApp](../api/intune-apps-windowsstoreapp-create.md)|[windowsStoreApp](../resources/intune-apps-windowsstoreapp.md)|Crie um novo [objeto windowsStoreApp.](../resources/intune-apps-windowsstoreapp.md)|
-|[Excluir windowsStoreApp](../api/intune-apps-windowsstoreapp-delete.md)|Nenhum|Exclui um [windowsStoreApp](../resources/intune-apps-windowsstoreapp.md).|
+|[Excluir windowsStoreApp](../api/intune-apps-windowsstoreapp-delete.md)|Nenhum(a)|Exclui um [windowsStoreApp](../resources/intune-apps-windowsstoreapp.md).|
 |[Atualizar windowsStoreApp](../api/intune-apps-windowsstoreapp-update.md)|[windowsStoreApp](../resources/intune-apps-windowsstoreapp.md)|Atualize as propriedades de um [objeto windowsStoreApp.](../resources/intune-apps-windowsstoreapp.md)|
 
 ## <a name="properties"></a>Propriedades
@@ -39,7 +39,7 @@ Herda de [mobileApp](../resources/intune-shared-mobileapp.md)
 |:---|:---|:---|
 |id|Cadeia de caracteres|Chave da entidade. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
 |displayName|Cadeia de caracteres|O título do aplicativo importado ou definido pelo administrador. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
-|description|Cadeia de caracteres|A descrição do aplicativo. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
+|descrição|Cadeia de caracteres|A descrição do aplicativo. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
 |publicador|String|O publicador do aplicativo. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
 |largeIcon|[mimeContent](../resources/intune-shared-mimecontent.md)|O ícone grande, a ser exibido nos detalhes do aplicativo e usado para o carregamento do ícone. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
 |createdDateTime|DateTimeOffset|A data e a hora da criação do aplicativo. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
@@ -53,7 +53,7 @@ Herda de [mobileApp](../resources/intune-shared-mobileapp.md)
 |uploadState|Int32|O estado de carregamento. Os valores possíveis são: 0 - `Not Ready` , 1 - `Ready` , 2 - `Processing` . Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
 |publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|O estado de publicação do aplicativo. O aplicativo não pode ser assinado, a menos que ele seja publicado. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md). Os valores possíveis são: `notPublished`, `processing`, `published`.|
 |isAssigned|Boolean|O valor que indica se o aplicativo é atribuído a pelo menos um grupo. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
-|roleScopeTagIds|String collection|Lista de ids de marca de escopo para este aplicativo móvel. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
+|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de ids de marca de escopo para este aplicativo móvel. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
 |dependentAppCount|Int32|O número total de dependências que o aplicativo filho tem. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
 |supersedingAppCount|Int32|O número total de aplicativos que esse aplicativo sobressede direta ou indiretamente. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
 |supersededAppCount|Int32|O número total de aplicativos pelos quais esse aplicativo é, direta ou indiretamente, é suplido. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
@@ -109,7 +109,6 @@ Veja a seguir uma representação JSON do recurso.
   "appStoreUrl": "String"
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 74be07fda03f7e37f54d4e70ae93bbe997f581fdec29d62a9e8cb6de302478a6
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 88045c0b251686f286526094fe38904b2f943e78
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54150959"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58796913"
 ---
 # <a name="get-devicecompliancepolicy"></a>Acessar deviceCompliancePolicy
 
@@ -27,11 +27,11 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)||
+|Delegado (conta corporativa ou de estudante)||
 | &nbsp; &nbsp; **Configuração do dispositivo** | DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 | &nbsp;&nbsp; **Conjunto de Políticas** | DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|| 
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Application|| 
 |&nbsp; &nbsp; **Configuração do dispositivo** | DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 | &nbsp;&nbsp; **Conjunto de Políticas** | DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
@@ -89,7 +89,6 @@ Content-Length: 433
   }
 }
 ```
-
 
 
 
