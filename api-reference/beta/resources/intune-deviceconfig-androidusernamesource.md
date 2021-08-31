@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 700afa068019a28f628fe6b3b7ded991abb5fae0a644ad46dfe3ddf1fee0c6d3
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: b81a254bedad8690498840892f39a803cc2a608d
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54153199"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58791540"
 ---
 # <a name="androidusernamesource-enum-type"></a>tipo de número androidUsernameSource
 
@@ -26,10 +26,9 @@ Origem do nome de usuário do Android.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |username|0|O nome de usuário.|
-|userPrincipalName|1 |O nome da entidade de segurança do usuário.|
+|userPrincipalName|1|O nome da entidade de segurança do usuário.|
 |samAccountName|2|O nome da conta sam do usuário.|
-|primarySmtpAddress|3 |Endereço SMTP principal.|
-
+|primarySmtpAddress|3|Endereço SMTP principal.|
 
 
 

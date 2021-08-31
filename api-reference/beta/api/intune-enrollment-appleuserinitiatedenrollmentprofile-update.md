@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 938a35817d4d7b4b66fb9bb42ed8cf6f7c45adae
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 81f35149c0d786361f1bfc4aa1e2c96de46e9aea
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58255366"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58792313"
 ---
 # <a name="update-appleuserinitiatedenrollmentprofile"></a>Atualizar appleUserInitiatedEnrollmentProfile
 
@@ -27,9 +27,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementServiceConfig.ReadWrite.All|
+|Delegado (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Application|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -57,7 +57,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [appleUs
 |availableEnrollmentTypeOptions|[Coleção appleOwnerTypeEnrollmentType](../resources/intune-enrollment-appleownertypeenrollmenttype.md)|Lista de opções de tipo de registro disponível|
 |id|Cadeia de caracteres|O GUID do objeto.|
 |displayName|Cadeia de caracteres|Nome do perfil|
-|description|Cadeia de caracteres|Descrição do perfil|
+|descrição|Cadeia de caracteres|Descrição do perfil|
 |prioridade|Int32|Prioridade, 0 é mais alta|
 |plataforma|[devicePlatformType](../resources/intune-enrollment-deviceplatformtype.md)|A plataforma do Dispositivo. Os valores possíveis são: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `unknown`.|
 |createdDateTime|DateTimeOffset|Tempo de criação de perfil|
@@ -120,7 +120,6 @@ Content-Length: 611
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00"
 }
 ```
-
 
 
 

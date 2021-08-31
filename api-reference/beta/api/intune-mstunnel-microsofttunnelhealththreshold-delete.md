@@ -1,18 +1,18 @@
 ---
-title: Get mobileAppCategory
-description: Ler propriedades e relações do objeto mobileAppCategory.
+title: Excluir microsoftTunnelHealthThreshold
+description: Exclui um microsoftTunnelHealthThreshold.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 4da7a6bde913078f1efbc6e5a20509995c4de3be
+ms.openlocfilehash: e5342b241edaf2d9ad02e6f65ac898918a3a7905
 ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 08/31/2021
-ms.locfileid: "58791751"
+ms.locfileid: "58792116"
 ---
-# <a name="get-mobileappcategory"></a>Get mobileAppCategory
+# <a name="delete-microsofttunnelhealththreshold"></a>Excluir microsoftTunnelHealthThreshold
 
 Namespace: microsoft.graph
 
@@ -20,16 +20,16 @@ Namespace: microsoft.graph
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Ler propriedades e relações do objeto [mobileAppCategory](../resources/intune-apps-mobileappcategory.md).
+Exclui um [microsoftTunnelHealthThreshold](../resources/intune-mstunnel-microsofttunnelhealththreshold.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
+|Delegado (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementConfiguration.Read.All, DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -37,12 +37,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 }
 -->
 ``` http
-GET /deviceAppManagement/mobileAppCategories/{mobileAppCategoryId}
-GET /deviceAppManagement/mobileApps/{mobileAppId}/categories/{mobileAppCategoryId}
+DELETE /deviceManagement/microsoftTunnelHealthThresholds/{microsoftTunnelHealthThresholdId}
 ```
-
-## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 |Cabeçalho|Valor|
@@ -54,31 +50,20 @@ Este método dá suporte a [Parâmetros de consulta OData](/graph/query-paramete
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se bem-sucedido, este método retornará um código de resposta `200 OK` e um objeto [mobileAppCategory](../resources/intune-apps-mobileappcategory.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta `204 No Content`.
 
 ## <a name="example"></a>Exemplo
 
 ### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
 ``` http
-GET https://graph.microsoft.com/beta/deviceAppManagement/mobileAppCategories/{mobileAppCategoryId}
+DELETE https://graph.microsoft.com/beta/deviceManagement/microsoftTunnelHealthThresholds/{microsoftTunnelHealthThresholdId}
 ```
 
 ### <a name="response"></a>Resposta
 Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 ``` http
-HTTP/1.1 200 OK
-Content-Type: application/json
-Content-Length: 239
-
-{
-  "value": {
-    "@odata.type": "#microsoft.graph.mobileAppCategory",
-    "id": "d85d9cee-9cee-d85d-ee9c-5dd8ee9c5dd8",
-    "displayName": "Display Name value",
-    "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00"
-  }
-}
+HTTP/1.1 204 No Content
 ```
 
 

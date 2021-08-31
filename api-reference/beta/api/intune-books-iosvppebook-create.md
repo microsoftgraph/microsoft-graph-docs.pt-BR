@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f3a6c55fa0ae92f57a412e2aa5a552eece7a711c0b9d10fd372afd1f0197c1f0
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 41822754ad18f174a364f0855f9a007749c7cdef
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54191925"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58791737"
 ---
 # <a name="create-iosvppebook"></a>Criar iosVppEBook
 
@@ -27,9 +27,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementApps.ReadWrite.All|
+|Delegado (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Application|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -55,7 +55,7 @@ A tabela a seguir mostra as propriedades obrigatórias ao criar iosVppEBook.
 |:---|:---|:---|
 |id|Cadeia de caracteres|Chave da entidade. Herdada de [managedEBook](../resources/intune-books-managedebook.md)|
 |displayName|Cadeia de caracteres|Nome do livro eletrônico. Herdada de [managedEBook](../resources/intune-books-managedebook.md)|
-|description|Cadeia de caracteres|Descrição. Herdada de [managedEBook](../resources/intune-books-managedebook.md)|
+|descrição|Cadeia de caracteres|Descrição. Herdada de [managedEBook](../resources/intune-books-managedebook.md)|
 |publisher|Cadeia de caracteres|Publicador. Herdada de [managedEBook](../resources/intune-books-managedebook.md)|
 |publishedDateTime|DateTimeOffset|A data e hora em que o livro eletrônico foi publicado. Herdada de [managedEBook](../resources/intune-books-managedebook.md)|
 |largeCover|[mimeContent](../resources/intune-shared-mimecontent.md)|Capa do livro. Herdada de [managedEBook](../resources/intune-books-managedebook.md)|
@@ -71,7 +71,7 @@ A tabela a seguir mostra as propriedades obrigatórias ao criar iosVppEBook.
 |seller|Cadeia de caracteres|Vendedor.|
 |totalLicenseCount|Int32|Contagem total de licenças.|
 |usedLicenseCount|Int32|Contagem de licenças usadas.|
-|roleScopeTagIds|String collection|Lista de marcas de escopo para esta instância entity.|
+|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de marcas de escopo para esta instância entity.|
 
 
 
@@ -154,7 +154,6 @@ Content-Length: 1026
   ]
 }
 ```
-
 
 
 

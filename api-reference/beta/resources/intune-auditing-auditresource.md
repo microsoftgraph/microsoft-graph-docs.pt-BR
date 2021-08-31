@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 71e261495a115d4aff6b2cfcd41103ff8f5a178f9a0747d60fbdcdfed8e4585c
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 9ba8caec013be6e4cdf209ba701ebcfd9553d7f6
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54229546"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58791913"
 ---
 # <a name="auditresource-resource-type"></a>Tipo de recurso auditResource
 
@@ -27,7 +27,7 @@ Uma classe que contém as propriedades para o Recurso de auditoria.
 |:---|:---|:---|
 |displayName|Cadeia de caracteres|Nome de exibição.|
 |ModifiedProperties|Conjunto [auditProperty](../resources/intune-auditing-auditproperty.md)|Lista de propriedades modificadas.|
-|type|Cadeia de caracteres|Tipo de recurso de auditoria.|
+|tipo|Cadeia de caracteres|Tipo de recurso de auditoria.|
 |resourceId|Cadeia de caracteres|ID do recurso de auditoria.|
 
 ## <a name="relationships"></a>Relações
@@ -56,7 +56,6 @@ Veja a seguir uma representação JSON do recurso.
   "resourceId": "String"
 }
 ```
-
 
 
 

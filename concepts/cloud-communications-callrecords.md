@@ -4,18 +4,18 @@ description: Os registros de chamadas dão informações sobre as chamadas e reu
 author: williamlooney
 localization_priority: Normal
 ms.prod: cloud-communications
-ms.openlocfilehash: e87437c97a7591c3a053a244f1e5fefe2963ede088ff81370aa9cfadaaf42ef3
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 81ba052abf90caeb89be38f7e7a5e3a1d3af5814
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54151876"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58791786"
 ---
 # <a name="call-records-overview"></a>Visão geral dos registros de chamada
 
 Os registros das chamadas fornecem informações de uso e diagnóstico das chamadas e reuniões on-line que ocorrem na sua organização ao usar o Microsoft Teams ou o Skype for Business. Os dados de uso e diagnóstico podem ser consumidos para produzir relatórios personalizados para sua empresa para ajudar a monitorar a adoção ou a solucionar problemas de qualidade de chamada.
 
-As organizações podem assinar alterações nos registros de chamadas usando o recurso de assinaturas de [webhook](/graph/api/resources/webhooks?view=graph-rest-1.0) do Microsoft Graph, permitindo que elas criem relatórios quase em tempo real a partir dos dados ou alertem em determinados cenários, como chamadas de emergência.
+As organizações podem assinar alterações nos registros de chamadas usando o recurso de assinaturas de [webhook](/graph/api/resources/webhooks.md) do Microsoft Graph, permitindo que elas criem relatórios quase em tempo real a partir dos dados ou alertem em determinados cenários, como chamadas de emergência.
 
 > **Importante:** Use a discrição ao conceder a permissão CallRecords.Read.All aos aplicativos. Os registros de chamada podem fornecer informações sobre a operação da sua empresa e, portanto, podem ser um alvo para atores mal-intencionados. Conceda essa permissão apenas aos aplicativos que você confia para atenderem aos seus requisitos de proteção de dados.
 
@@ -25,11 +25,11 @@ Organizações e parceiros geralmente têm suas próprias ferramentas para gerar
 
 ## <a name="look-up-a-call-record-by-its-call-id"></a>Procurar um registro de chamada por meio de sua ID de chamada
 
-Os aplicativos podem recuperar [um registro de chamada](/graph/api/resources/callrecords-callrecord?view=graph-rest-1.0) por sua ID. Essa ID pode ser determinada a partir de uma notificação de webhook ou recuperada de ferramentas administrativas.
+Os aplicativos podem recuperar [um registro de chamada](/graph/api/resources/callrecords-callrecord.md) por sua ID. Essa ID pode ser determinada a partir de uma notificação de webhook ou recuperada de ferramentas administrativas.
 
 ## <a name="get-call-record-reports"></a>Obter relatórios de registro de chamada
 
-As organizações que usam Microsoft Teams para se conectar à PSTN (rede telefônica pública comutado) geralmente querem rastrear esse uso para entender os custos associados. As [funções getPstnCalls](/graph/api/callrecords-callrecord-getpstncalls?view=graph-rest-beta) e [getDirectRoutingCalls](/graph/api/callrecords-callrecord-getdirectroutingcalls?view=graph-rest-beta) [](/graph/api/resources/callrecords-callrecord?view=graph-rest-beta) retornam uma projeção de dados de registro de chamada em um formato tabular.
+As organizações que usam Microsoft Teams para se conectar à PSTN (rede telefônica pública comutado) geralmente querem rastrear esse uso para entender os custos associados. As [funções getPstnCalls](/graph/api/callrecords-callrecord-getpstncalls) e [getDirectRoutingCalls](/graph/api/callrecords-callrecord-getdirectroutingcalls) [](/graph/api/resources/callrecords-callrecord) retornam uma projeção de dados de registro de chamada em um formato tabular.
 
 ## <a name="see-also"></a>Confira também
 

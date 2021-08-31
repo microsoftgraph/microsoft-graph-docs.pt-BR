@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f0cf61101368a87725e50200a01ff6df49e185a31a646c87256b3d7057d3e441
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 2f4d339ad9b8ce3e0ba63ca62eaf7696024ed341
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54201493"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58792411"
 ---
 # <a name="update-windows10compliancepolicy"></a>Atualizar windows10CompliancePolicy
 
@@ -27,9 +27,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
+|Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Application|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -53,10 +53,10 @@ A tabela a seguir mostra as propriedades obrigatórias ao criar [windows10Compli
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|roleScopeTagIds|String collection|Lista de marcas de escopo para esta instância entity. Herdada de [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
+|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de marcas de escopo para esta instância entity. Herdada de [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
 |id|Cadeia de caracteres|Chave da entidade. Herdada de [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
 |createdDateTime|DateTimeOffset|DateTime em que o objeto foi criado. Herdada de [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
-|description|Cadeia de caracteres|O administrador forneceu a descrição da Configuração do dispositivo. Herdada de [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
+|descrição|Cadeia de caracteres|O administrador forneceu a descrição da Configuração do dispositivo. Herdada de [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
 |lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto. Herdada de [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
 |displayName|Cadeia de caracteres|O administrador forneceu o nome da Configuração do dispositivo. Herdada de [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
 |version|Int32|Versão da configuração do dispositivo. Herdada de [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
@@ -79,18 +79,18 @@ A tabela a seguir mostra as propriedades obrigatórias ao criar [windows10Compli
 |secureBootEnabled|Boolean|Exige que os dispositivos sejam indicados como íntegros pelo Atestado de Integridade do Dispositivo Windows - inicialização segura habilitada.|
 |codeIntegrityEnabled|Boolean|Exige que os dispositivos sejam indicados como íntegros pelo Atestado de Integridade do Dispositivo Windows.|
 |storageRequireEncryption|Boolean|Exige criptografia em dispositivos Windows.|
-|activeFirewallRequired|Boolean|Exigir firewall ativo em Windows dispositivos.|
-|defenderEnabled|Boolean|Exigir Windows Defender Antimalware em Windows dispositivos.|
+|activeFirewallRequired|Boleano|Exigir firewall ativo em Windows dispositivos.|
+|defenderEnabled|Boleano|Exigir Windows Defender Antimalware em Windows dispositivos.|
 |defenderVersion|Cadeia de caracteres|Exigir Windows Defender versão mínima do Antimalware em Windows dispositivos.|
-|signatureOutOfDate|Boolean|Exigir Windows Defender Assinatura Antimalware para estar atualizada em Windows dispositivos.|
-|rtpEnabled|Boolean|Exigir Windows Defender Antimalware Real-Time Proteção em Windows dispositivos.|
-|antivirusRequired|Boolean|Exigir que qualquer solução antivírus registrada Windows Centro de Decurity esteja em e monitorando (por exemplo, Symantec, Windows Defender).|
-|antiSpywareRequired|Boolean|Exigir que qualquer solução antiSpyware registrada no Centro de Windows Decurity esteja em e monitorando (por exemplo, Symantec, Windows Defender).|
+|signatureOutOfDate|Boleano|Exigir Windows Defender Assinatura Antimalware para estar atualizada em Windows dispositivos.|
+|rtpEnabled|Boleano|Exigir Windows Defender Antimalware Real-Time Proteção em Windows dispositivos.|
+|antivirusRequired|Boleano|Exigir que qualquer solução antivírus registrada Windows Centro de Decurity esteja em e monitorando (por exemplo, Symantec, Windows Defender).|
+|antiSpywareRequired|Boleano|Exigir que qualquer solução antiSpyware registrada no Centro de Windows Decurity esteja em e monitorando (por exemplo, Symantec, Windows Defender).|
 |validOperatingSystemBuildRanges|[Coleção operatingSystemVersionRange](../resources/intune-deviceconfig-operatingsystemversionrange.md)|Os intervalos de com build do sistema operacional válidos em Windows dispositivos. Essa coleção pode conter um máximo de 10.000 elementos.|
 |deviceThreatProtectionEnabled|Boolean|Exige que os dispositivos tenham habilitada a proteção contra ameaças.|
 |deviceThreatProtectionRequiredSecurityLevel|[deviceThreatProtectionLevel](../resources/intune-deviceconfig-devicethreatprotectionlevel.md)|Exigir nível mínimo de risco da Proteção contra Ameaças de Dispositivo para relatar o descumprimento. Os possíveis valores são: `unavailable`, `secured`, `low`, `medium`, `high`, `notSet`.|
-|configurationManagerComplianceRequired|Boolean|É necessário considerar o estado de Conformidade do SCCM em consideração para o Estado de Conformidade do Intune.|
-|tpmRequired|Boolean|Exigir a presença do Trusted Platform Module(TPM).|
+|configurationManagerComplianceRequired|Boleano|É necessário considerar o estado de Conformidade do SCCM em consideração para o Estado de Conformidade do Intune.|
+|tpmRequired|Boleano|Exigir a presença do Trusted Platform Module(TPM).|
 |deviceCompliancePolicyScript|[deviceCompliancePolicyScript](../resources/intune-deviceconfig-devicecompliancepolicyscript.md)|Ainda não documentado|
 
 
@@ -224,7 +224,6 @@ Content-Length: 2083
   }
 }
 ```
-
 
 
 

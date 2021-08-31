@@ -1,18 +1,18 @@
 ---
-title: Tipo denum secureBootWithDMAType
-description: Valores possíveis de Inicialização Segura com DMA
+title: tipo de número kioskModeManagedHomeScreenPinComplexity
+description: Complexidade do PIN para sessão de login da Tela Inicial Gerenciada.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 86b67ab1bbf492cdc3dab8fefc70f2e721eace08
+ms.openlocfilehash: 0dd589ac391c81b2a54baf22bffe3729cf9880b4
 ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 08/31/2021
-ms.locfileid: "58791871"
+ms.locfileid: "58753250"
 ---
-# <a name="securebootwithdmatype-enum-type"></a>Tipo denum secureBootWithDMAType
+# <a name="kioskmodemanagedhomescreenpincomplexity-enum-type"></a>tipo de número kioskModeManagedHomeScreenPinComplexity
 
 Namespace: microsoft.graph
 
@@ -20,14 +20,14 @@ Namespace: microsoft.graph
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Valores possíveis de Inicialização Segura com DMA
+Complexidade do PIN para sessão de login da Tela Inicial Gerenciada.
 
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|notConfigured|0|Não configurado, nenhuma operação|
-|withoutDMA|1|Turns on VBS with Secure Boot|
-|withDMA|3|Liga o VBS com Inicialização Segura e DMA|
+|notConfigured|0|Não configurado.|
+|simple|1|Somente valores numéricos.|
+|complex|2|Valor alfanumerário.|
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 48a0f286c30048fd4ef7d265505d64d77f206ca55a0d2b872a926855e4150d54
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 45de7f8de94f55c0c1916e55141d99fccb04c387
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54236406"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58791899"
 ---
 # <a name="deviceconfigurationuseroverview-resource-type"></a>Tipo de recurso deviceConfigurationUserOverview
 
@@ -66,7 +66,6 @@ Veja a seguir uma representação JSON do recurso.
   "configurationVersion": 1024
 }
 ```
-
 
 
 

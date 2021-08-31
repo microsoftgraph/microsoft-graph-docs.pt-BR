@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 899f72b9caeb99321dbe355d9af94f51882035bde24e4380373845181d5081b1
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: a70ee99e3865b34e16a0288d52a52f300e7f7de1
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54123024"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58791927"
 ---
 # <a name="create-rolescopetagautoassignment"></a>Criar roleScopeTagAutoAssignment
 
@@ -27,9 +27,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|DeviceManagementRBAC.ReadWrite.All|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementRBAC.ReadWrite.All|
+|Delegado (conta corporativa ou de estudante)|DeviceManagementRBAC.ReadWrite.All|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Application|DeviceManagementRBAC.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -53,7 +53,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar a funç�
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Chave da entidade.|
+|id|Cadeia de caracteres|Chave da entidade. Essa propriedade é somente leitura.|
 |destino|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|O destino da atribuição automática para a marca de escopo de função específica.|
 
 
@@ -99,7 +99,6 @@ Content-Length: 434
   }
 }
 ```
-
 
 
 
