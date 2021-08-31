@@ -5,12 +5,12 @@ localization_priority: Priority
 author: sureshja
 ms.prod: applications
 doc_type: resourcePageType
-ms.openlocfilehash: 26a5394b934a997456f0ceecd1d0c00d19eba6a846a773f12c74198079bdc68e
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 942b3c8783dcacd044ed97331867f4cf7b156e73
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54150035"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58794347"
 ---
 # <a name="application-resource-type"></a>tipo de recurso do aplicativo
 
@@ -92,7 +92,7 @@ Esse recurso tem suporte para o uso da [consulta delta](/graph/delta-query-overv
 | publicClient | [publicClientApplication](publicclientapplication.md) | Especifica configurações para clientes instalados, como dispositivos móveis ou da área de trabalho. |
 | publisherDomain | String | O domínio do publicador verificado para o aplicativo. Somente leitura. Para obter mais informações, consulte [Como: configurar o domínio do publisher de um aplicativo](/azure/active-directory/develop/howto-configure-publisher-domain). Suporta `$filter` (`eq`, `ne`, `ge`, `le`, `startsWith`).|
 | requiredResourceAccess |[requiredResourceAccess](requiredresourceaccess.md) collection|Especifique os recursos que o aplicativo precisa acessar. Essa propriedade também especifica o conjunto de escopos de permissão OAuth e as funções de aplicativo necessários para cada um desses recursos. Essa configuração de acesso aos recursos necessários impulsiona a experiência de consentimento. Não anulável. <br><br>Suporta `$filter` (`eq`, `NOT`, `ge`, `le`).|
-| signInAudience | Cadeia de caracteres | Especifique quais contas Microsoft têm suporte para o aplicativo atual. Os valores com suporte são: `AzureADMyOrg`, `AzureADMultipleOrgs`, `AzureADandPersonalMicrosoftAccount`, `PersonalMicrosoftAccount`. Confira mais na [tabela abaixo](#signinaudience-values). <br><br>Suporta `$filter` (`eq`, `ne`, `NOT`).|
+| signInAudience | Cadeia de caracteres | Especifique quais contas Microsoft têm suporte para o aplicativo atual. Os valores possíveis são: `AzureADMyOrg`, `AzureADMultipleOrgs`, `AzureADandPersonalMicrosoftAccount` (padrão) e `PersonalMicrosoftAccount`. Confira mais na [tabela abaixo](#signinaudience-values). <br><br>Suporta `$filter` (`eq`, `ne`, `NOT`).|
 | spa                     | [spaApplication](../resources/spaapplication.md)                            | Especifica as configurações de um aplicativo de página simples, incluindo URLs de saída e de redirecionamento de URIs para os códigos de autorização e tokens de acesso. |
 | categorias |Coleção String| Cadeias de caracteres personalizadas que podem ser usadas para categorizar e identificar o aplicativo. Não anulada.<br><br>Suporta `$filter` (`eq`, `NOT`, `ge`, `le`, `startsWith`).|
 | tokenEncryptionKeyId |Cadeia de caracteres|Especifica a keyId de uma chave pública da coleção keyCredentials. Quando configurado, o Azure AD criptografa todos os tokens emitidos usando a chave para a qual essa propriedade aponta. O código de aplicativo que recebe o token criptografado deve usar a chave privada correspondente para descriptografar o token a fim de que ele possa ser usado para o usuário conectado.|
@@ -105,7 +105,7 @@ Esse recurso tem suporte para o uso da [consulta delta](/graph/delta-query-overv
 |:---------------|:--------|
 |AzureADMyOrg|Usuários com uma conta de corporativa ou estudante da Microsoft no locatário do Azure Active Directory da minha organização (locatário único).|
 |AzureADMultipleOrgs|Usuários com uma conta de trabalho ou escola da Microsoft em qualquer locatário do Azure Active Directory (multilocatário) da organização.|
-|AzureADandPersonalMicrosoftAccount|: Usuários com uma conta Microsoft pessoal, corporativa ou de estudante no locatário do Azure Active Directory de qualquer organização. Para autenticar usuários com fluxos de usuário do Active Directory B2C, use o `AzureADandPersonalMicrosoftAccount`. Este valor permite o mais amplo conjunto de identidades de usuário, incluindo contas locais e identidades de usuário da Microsoft, Facebook, Google, Twitter ou qualquer provedor de conexão OpenID. |
+|AzureADandPersonalMicrosoftAccount|: Usuários com uma conta Microsoft pessoal, corporativa ou de estudante no locatário do Azure Active Directory de qualquer organização. Para autenticar usuários com fluxos de usuário do Active Directory B2C, use o `AzureADandPersonalMicrosoftAccount`. Este valor permite o mais amplo conjunto de identidades de usuário, incluindo contas locais e identidades de usuário da Microsoft, Facebook, Google, Twitter ou qualquer provedor de conexão OpenID. Este é o valor padrão para a propriedade **signInAudience**. |
 |PersonalMicrosoftAccount|Usuários com uma conta Microsoft pessoal apenas.|
 
 ## <a name="relationships"></a>Relações

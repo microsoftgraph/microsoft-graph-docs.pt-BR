@@ -1,18 +1,18 @@
 ---
-title: Tipo de recurso assignmentFilterState
-description: Representa o resultado da API GetState.
+title: Tipo de recurso metricTimeSeriesDataPoint
+description: Ponto de dados da série Tempo Métrica
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 030af2c672bf6cd5035a8ac530c824f565adcf53
+ms.openlocfilehash: 4939450d7cc4a8a42d804a3ccbceb4bfc9fdb297
 ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 08/31/2021
-ms.locfileid: "58794697"
+ms.locfileid: "58800099"
 ---
-# <a name="assignmentfilterstate-resource-type"></a>Tipo de recurso assignmentFilterState
+# <a name="metrictimeseriesdatapoint-resource-type"></a>Tipo de recurso metricTimeSeriesDataPoint
 
 Namespace: microsoft.graph
 
@@ -20,12 +20,13 @@ Namespace: microsoft.graph
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Representa o resultado da API GetState.
+Ponto de dados da série Tempo Métrica
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|enabled|Boolean|Indicador para se AssignmentFilter estiver habilitado ou desabilitado.|
+|dateTime|DateTimeOffset|Hora do ponto de dados da série de tempo métrica|
+|valor|Int64|Valor do ponto de dados da série de tempo métrica|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -34,13 +35,14 @@ Nenhum
 Veja a seguir uma representação JSON do recurso.
 <!-- {
   "blockType": "resource",
-  "@odata.type": "microsoft.graph.assignmentFilterState"
+  "@odata.type": "microsoft.graph.metricTimeSeriesDataPoint"
 }
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.assignmentFilterState",
-  "enabled": true
+  "@odata.type": "#microsoft.graph.metricTimeSeriesDataPoint",
+  "dateTime": "String (timestamp)",
+  "value": 1024
 }
 ```
 

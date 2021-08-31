@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 703ed161facc48abd6abd3cffd467a780a43a883b7f68415db4c2f6f34efe2d5
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 4956c1820c07d24a653b93a4ee959a9dcbed0881
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54178987"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58783894"
 ---
 # <a name="itunespairingmode-enum-type"></a>Tipo de numeração iTunesPairingMode
 
@@ -26,9 +26,8 @@ Ainda não documentado
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |disallow|0|Emparelhamento não é permitido|
-|allow|1 |Emparelhamento permitido|
+|allow|1|Emparelhamento permitido|
 |requiresCertificate|2|Certificado necessário para emparelhar com o iTunes|
-
 
 
 

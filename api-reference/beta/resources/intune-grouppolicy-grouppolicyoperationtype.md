@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 573d4a492c20eb191661d00cdd2df4337a0e6703de96c696b931eefc4c18f91f
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: f2b73da848fbee1561f48abd620b4d668e0aeaa5
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54227306"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58791814"
 ---
 # <a name="grouppolicyoperationtype-enum-type"></a>tipo denum groupPolicyOperationType
 
@@ -26,13 +26,12 @@ Tipo de operação de Política de Grupo.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |Nenhuma|0|Tipo de operação inválido da Política de Grupo.|
-|upload|1 |Tipo de operação de carregamento da Política de Grupo.|
+|upload|1|Tipo de operação de carregamento da Política de Grupo.|
 |uploadNewVersion|2|A Política de Grupo carrega o novo tipo de operação de versão.|
-|addLanguageFiles|3 |Política de Grupo adicionar novo tipo de operação de arquivos de idioma (ADML).|
+|addLanguageFiles|3|Política de Grupo adicionar novo tipo de operação de arquivos de idioma (ADML).|
 |removeLanguageFiles|4 |Tipo de operação de arquivos ADML (remover idioma) da Política de Grupo.|
 |updateLanguageFiles|5 |Tipo de operação de arquivos ADML (idioma de atualização de Política de Grupo).|
 |remove|6 |Política de Grupo remova o tipo de operação de arquivo carregado.|
-
 
 
 

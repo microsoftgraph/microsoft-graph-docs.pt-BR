@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: d4d2abff0b04bf6e8047ea506c778eb17a797683ceeb14134ca4f3fa9526eda1
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: b444f72dd3425251269da826ea156ebdf50d69cb
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54227502"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58801526"
 ---
 # <a name="defenderrealtimescandirection-enum-type"></a>Tipo de número defenderRealtimeScanDirection
 
@@ -26,9 +26,8 @@ Valores possíveis para monitorar a atividade do arquivo.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |monitorAllFiles|0|0 (padrão) – Monitore todos os arquivos(bi-direcional)|
-|monitorIncomingFilesOnly|1 |Monitore somente arquivos de entrada.|
+|monitorIncomingFilesOnly|1|Monitore somente arquivos de entrada.|
 |monitorOutgoingFilesOnly|2|Monitore somente arquivos de saída.|
-
 
 
 

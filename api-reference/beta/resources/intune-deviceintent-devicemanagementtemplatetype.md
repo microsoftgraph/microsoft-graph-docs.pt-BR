@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 5e324ea1143a56b4a5309fc953723c76faa1b8f3023237e7648059229221f6fe
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 3e50a950819198766d5e6d0a1372010d69ebfa39
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54185772"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58793835"
 ---
 # <a name="devicemanagementtemplatetype-enum-type"></a>Tipo de número deviceManagementTemplateType
 
@@ -26,18 +26,17 @@ Tipo de modelo
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |securityBaseline|0|Modelo de linha da base de segurança|
-|specializedDevices|1 |Modelo de dispositivos especializados|
+|specializedDevices|1|Modelo de dispositivos especializados|
 |advancedThreatProtectionSecurityBaseline|2|Modelo de linha de base de segurança da Proteção Avançada contra Ameaças|
-|deviceConfiguration|3 |Modelo de configuração de dispositivo|
+|deviceConfiguration|3|Modelo de configuração de dispositivo|
 |custom|4 |Modelo definido pelo administrador personalizado|
 |securityTemplate|5 |Modelos que contêm configurações específicas de foco em segurança|
 |microsoftEdgeSecurityBaseline|6 |Microsoft Edge de linha de base de segurança|
 |microsoftOffice365ProPlusSecurityBaseline|7 |Microsoft Office 365 ProPlus de linha de base de segurança|
 |deviceCompliance|8 |Modelo de conformidade de dispositivo|
 |deviceConfigurationForOffice365|9 |Configuração do dispositivo para Microsoft Office 365 configurações|
-|cloudPC|10 |Modelo de linha de base de segurança do computador na nuvem|
+|cloudPC|10 |Windows modelo de linha de base de segurança 365|
 |firewallSharedSettings|11 |Modelos de Objeto Compartilhado do Firewall para configurações de referência|
-
 
 
 

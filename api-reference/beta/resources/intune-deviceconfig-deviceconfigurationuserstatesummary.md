@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 32a2533cc87c3615eddd6600356321a4c777c7e6dd3d51950628712e22279de3
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: abd09c98022ceba37196766a434dbc043a11a155
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54145415"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58805433"
 ---
 # <a name="deviceconfigurationuserstatesummary-resource-type"></a>Tipo de recurso deviceConfigurationUserStateSummary
 
@@ -64,7 +64,6 @@ Veja a seguir uma representação JSON do recurso.
   "conflictUserCount": 1024
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: c29dbec2a2d3d0451e9e390f45b064e294fd4dea2d7bd3e2da5f510e42449a69
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: c73cc3dd65f7d8d407d75ec879d867daf7665765
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54197965"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58784202"
 ---
 # <a name="jointype-enum-type"></a>Tipo de número joinType
 
@@ -26,10 +26,9 @@ Tipo de junção de registro de dispositivo.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |desconhecido|0|Tipo de junção de registro desconhecido.|
-|azureADJoined|1 |O dispositivo é ingressado pelo Azure AD.|
+|azureADJoined|1|O dispositivo é ingressado pelo Azure AD.|
 |azureADRegistered|2|O dispositivo é registrado pelo Azure AD.|
-|hybridAzureADJoined|3 |O dispositivo é ingressado pelo Azure AD híbrido.|
-
+|hybridAzureADJoined|3|O dispositivo é ingressado pelo Azure AD híbrido.|
 
 
 
