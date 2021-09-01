@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: b748be6659e4b4db915b26972c1fbff24076af8709bfebd1e030dd25e5bdcdfb
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 5b7a7fae08a6c5b34b947edf757fd0dcf4864c51
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54244978"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58810643"
 ---
 # <a name="microsoftlaunchersearchbarplacement-enum-type"></a>Tipo denum microsoftLauncherSearchBarPlacement
 
@@ -26,10 +26,9 @@ Microsoft Launcher Seleção de Posicionamento da Barra de Pesquisa.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |notConfigured|0|Não configurado; esse valor é ignorado.|
-|top|1 |Indica que a barra de pesquisa será exibida na parte superior do dispositivo.|
+|top|1|Indica que a barra de pesquisa será exibida na parte superior do dispositivo.|
 |bottom|2|Indica que a barra de pesquisa será exibida na parte inferior do dispositivo.|
-|hide|3 |Indica que a barra de pesquisa ficará oculta no dispositivo.|
-
+|hide|3|Indica que a barra de pesquisa ficará oculta no dispositivo.|
 
 
 

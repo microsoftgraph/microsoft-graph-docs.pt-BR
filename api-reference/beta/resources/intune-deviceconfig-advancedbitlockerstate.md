@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 777f2c3b5d530694eb1a5bad6f4b51be445592ad88109661866a1a77bbe20300
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 5bffc66ff77c74986b51a48f5c8f10ca05eb2406
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54179163"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58816568"
 ---
 # <a name="advancedbitlockerstate-enum-type"></a>Tipo de número advancedBitLockerState
 
@@ -26,7 +26,7 @@ Estado avançado do BitLocker
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |sucesso|0|Sucesso avançado do estado do BitLocker|
-|noUserConsent|1 |O usuário nunca deu consentimento para Criptografia|
+|noUserConsent|1|O usuário nunca deu consentimento para Criptografia|
 |osVolumeUnprotected|2|Volume do sistema operacional não protegido foi detectado|
 |osVolumeTpmRequired|4 |O TPM não é usado para proteção do volume do sistema operacional, mas é exigido pela política|
 |osVolumeTpmOnlyRequired|8 |Proteção somente TPM não usada para volume do sistema operacional, mas é necessária pela política|
@@ -42,7 +42,6 @@ Estado avançado do BitLocker
 |tpmNotAvailable|8192|O TPM não está disponível para o BitLocker. Isso significa que o TPM não está presente, ou a substituição indisponível do Registro do TPM está definida ou o sistema operacional host está em unidade portátil/acessível a roma|
 |tpmNotReady|16384|O TPM não está pronto para o BitLocker|
 |networkError|32768|Rede não disponível. Isso é necessário para backup de teclas de recuperação. Isso é relatado para dispositivos compatíveis com Criptografia de Unidade|
-
 
 
 

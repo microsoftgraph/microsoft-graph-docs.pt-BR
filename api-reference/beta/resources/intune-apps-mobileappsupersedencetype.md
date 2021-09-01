@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 9e507209c930bc3d010c76764fe923329387b76d3b83edfdb62fe041cc7aa973
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 0863ab8b47e1a820a52c04f46fc7d4bcd737744e
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54161399"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58782991"
 ---
 # <a name="mobileappsupersedencetype-enum-type"></a>Tipo denum mobileAppSupersedenceType
 
@@ -26,8 +26,7 @@ Indica o tipo de supersedência associado a uma relação entre dois aplicativos
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |update|0|Indica que o aplicativo filho deve ser atualizado pela lógica interna do aplicativo pai.|
-|replace|1 |Indica que o aplicativo filho deve ser desinstalado antes de instalar o aplicativo pai.|
-
+|replace|1|Indica que o aplicativo filho deve ser desinstalado antes de instalar o aplicativo pai.|
 
 
 

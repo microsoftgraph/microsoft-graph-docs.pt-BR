@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: da2f35c8a068fd794e187c559b829772088731602d2b2d55f42bd76754098428
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: e5bb023319284c4d1a455f9cac98c2b62f227129
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54156216"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58797258"
 ---
 # <a name="devicemanagementsettingcategory-resource-type"></a>Tipo de recurso deviceManagementSettingCategory
 
@@ -28,7 +28,7 @@ Entidade que representa uma categoria de configuração
 |[Listar deviceManagementSettingCategories](../api/intune-deviceintent-devicemanagementsettingcategory-list.md)|[Coleção deviceManagementSettingCategory](../resources/intune-deviceintent-devicemanagementsettingcategory.md)|Listar propriedades e relações dos [objetos deviceManagementSettingCategory.](../resources/intune-deviceintent-devicemanagementsettingcategory.md)|
 |[Obter deviceManagementSettingCategory](../api/intune-deviceintent-devicemanagementsettingcategory-get.md)|[deviceManagementSettingCategory](../resources/intune-deviceintent-devicemanagementsettingcategory.md)|Leia propriedades e relações do [objeto deviceManagementSettingCategory.](../resources/intune-deviceintent-devicemanagementsettingcategory.md)|
 |[Criar deviceManagementSettingCategory](../api/intune-deviceintent-devicemanagementsettingcategory-create.md)|[deviceManagementSettingCategory](../resources/intune-deviceintent-devicemanagementsettingcategory.md)|Crie um novo [objeto deviceManagementSettingCategory.](../resources/intune-deviceintent-devicemanagementsettingcategory.md)|
-|[Excluir deviceManagementSettingCategory](../api/intune-deviceintent-devicemanagementsettingcategory-delete.md)|Nenhum|Exclui um [deviceManagementSettingCategory](../resources/intune-deviceintent-devicemanagementsettingcategory.md).|
+|[Excluir deviceManagementSettingCategory](../api/intune-deviceintent-devicemanagementsettingcategory-delete.md)|Nenhum(a)|Exclui um [deviceManagementSettingCategory](../resources/intune-deviceintent-devicemanagementsettingcategory.md).|
 |[Atualizar deviceManagementSettingCategory](../api/intune-deviceintent-devicemanagementsettingcategory-update.md)|[deviceManagementSettingCategory](../resources/intune-deviceintent-devicemanagementsettingcategory.md)|Atualize as propriedades de [um objeto deviceManagementSettingCategory.](../resources/intune-deviceintent-devicemanagementsettingcategory.md)|
 
 ## <a name="properties"></a>Propriedades
@@ -36,7 +36,7 @@ Entidade que representa uma categoria de configuração
 |:---|:---|:---|
 |id|Cadeia de caracteres|A ID da categoria|
 |displayName|Cadeia de caracteres|O nome da categoria|
-|hasRequiredSetting|Boolean|A categoria contém a configuração necessária de nível superior|
+|hasRequiredSetting|Boleano|A categoria contém a configuração necessária de nível superior|
 
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|
@@ -59,7 +59,6 @@ Veja a seguir uma representação JSON do recurso.
   "hasRequiredSetting": true
 }
 ```
-
 
 
 

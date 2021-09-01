@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: dbd965d4bc2ceb24d6625a5051379a9bad8b56fa3e7cb88460e6e08460465c2b
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: ca65b7e4402278c0df7415b8ca1f58f2215685bb
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54214583"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58816223"
 ---
 # <a name="delete-windowsphone81storeapp"></a>Excluir windowsPhone81StoreApp
 
@@ -67,7 +67,6 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

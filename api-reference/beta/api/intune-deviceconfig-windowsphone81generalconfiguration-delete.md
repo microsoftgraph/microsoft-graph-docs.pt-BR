@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 82bf22f034f2fc6d4b90fb3af645979ab0ab22a6f4f55aa438e2edda0b4e90d7
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: ff690ee3c54c61b1c55a6be2b83da571fc2bbdb3
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54127814"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58821582"
 ---
 # <a name="delete-windowsphone81generalconfiguration"></a>Excluir windowsPhone81GeneralConfiguration
 
@@ -67,7 +67,6 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

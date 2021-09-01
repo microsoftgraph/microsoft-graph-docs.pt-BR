@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 6597b76ea76bdfad24f431d98643a487a6fe54256dce20e3afaf6f681b710ea1
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 83f5b5e4a3db00a4ef1459ff35aa0f438a118157
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54227404"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58818102"
 ---
 # <a name="windowsdeliveryoptimizationmode-enum-type"></a>Tipo denum windowsDeliveryOptimizationMode
 
@@ -26,13 +26,12 @@ Modo de otimização de entrega para distribuição de pares
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |userDefined|0|Permitir que o usuário desem conjunto.|
-|httpOnly|1 |Somente HTTP, sem par|
+|httpOnly|1|Somente HTTP, sem par|
 |httpWithPeeringNat|2|Padrão do sistema operacional – Http mesclado com o peering por trás do mesmo tradutor de endereços de rede|
-|httpWithPeeringPrivateGroup|3 |HTTP mesclado com o peering em um grupo privado|
+|httpWithPeeringPrivateGroup|3|HTTP mesclado com o peering em um grupo privado|
 |httpWithInternetPeering|4 |HTTP mesclado com o peering da Internet|
 |simpleDownload|99|Modo de download simples sem par|
 |bypassMode|100|Modo bypass. Não use a Otimização de Entrega e use BITS em vez disso|
-
 
 
 

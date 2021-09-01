@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: e348109d18e885b1ab4148608cf8cc062f5c971234f2eb227bed312e1947cd10
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: a1591fe99082cc41cd244d356d700cc09abb701f
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54236238"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58819707"
 ---
 # <a name="windows10appsupdaterecurrence-enum-type"></a>Tipo de número windows10AppsUpdateRecurrence
 
@@ -26,10 +26,9 @@ Valores possíveis para atualização de aplicativo no Windows10 recorrência.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |Nenhuma|0|Valor padrão, especifica uma única ocorrência.|
-|daily|1 |Diariamente.|
+|daily|1|Diariamente.|
 |weekly|2|Semanalmente.|
-|mensal|3 |Mensalmente.|
-
+|mensal|3|Mensalmente.|
 
 
 

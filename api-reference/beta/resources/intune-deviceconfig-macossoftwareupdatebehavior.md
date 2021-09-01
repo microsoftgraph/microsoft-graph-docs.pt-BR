@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: f26cc20fe8156689a2aa1d52669b8775b347f65b2d3d8c65b85209b9abc3bd78
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 70e7520b3f8cb91c2b03065723afc36bdebea33f
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54251523"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58790406"
 ---
 # <a name="macossoftwareupdatebehavior-enum-type"></a>Tipo de número macOSSoftwareUpdateBehavior
 
@@ -26,8 +26,7 @@ Atualize as opções de comportamento para atualizações de software macOS.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |notConfigured|0|Não configurado.|
-|Padrão.|1 |Baixe e/ou instale a atualização de software, dependendo do estado atual do dispositivo.|
-
+|Padrão.|1|Baixe e/ou instale a atualização de software, dependendo do estado atual do dispositivo.|
 
 
 

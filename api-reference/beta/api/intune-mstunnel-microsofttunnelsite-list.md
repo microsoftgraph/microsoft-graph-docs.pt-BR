@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 86a0e84f693c2ec273a816f9c5232ad62e337153470d249dbed702e8975410c5
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 76703994dcc72be86bca66b25ac092b70fd05c69
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54151085"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58802842"
 ---
 # <a name="list-microsofttunnelsites"></a>Listar microsoftTunnelSites
 
@@ -27,9 +27,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All, MicrosoftTunnelGateway.Read.All, MicrosoftTunnelGateway.ReadWrite.All|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|MicrosoftTunnelGateway.Read.All, MicrosoftTunnelGateway.ReadWrite.All|
+|Delegado (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Application|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -65,7 +65,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 360
+Content-Length: 662
 
 {
   "value": [
@@ -75,6 +75,12 @@ Content-Length: 360
       "displayName": "Display Name value",
       "description": "Description value",
       "publicAddress": "Public Address value",
+      "upgradeWindowUtcOffsetInMinutes": 15,
+      "upgradeWindowStartTime": "12:01:27.3030000",
+      "upgradeWindowEndTime": "11:57:17.9830000",
+      "upgradeAutomatically": true,
+      "upgradeAvailable": true,
+      "internalNetworkProbeUrl": "https://example.com/internalNetworkProbeUrl/",
       "roleScopeTagIds": [
         "Role Scope Tag Ids value"
       ]
@@ -82,7 +88,6 @@ Content-Length: 360
   ]
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 34dcbb381b9271222f52fdbf3b042d318e58e80fbf460075999397246c402027
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 969ffdb3905a0feb1a636a38daf8bcae95630b4c
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54236084"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58807255"
 ---
 # <a name="windowsmanagementapp-resource-type"></a>Tipo de recurso windowsManagementApp
 
@@ -27,7 +27,7 @@ Windows de aplicativo de gerenciamento.
 |:---|:---|:---|
 |[Obter windowsManagementApp](../api/intune-devices-windowsmanagementapp-get.md)|[windowsManagementApp](../resources/intune-devices-windowsmanagementapp.md)|Leia propriedades e relações do [objeto windowsManagementApp.](../resources/intune-devices-windowsmanagementapp.md)|
 |[Atualizar windowsManagementApp](../api/intune-devices-windowsmanagementapp-update.md)|[windowsManagementApp](../resources/intune-devices-windowsmanagementapp.md)|Atualize as propriedades de um [objeto windowsManagementApp.](../resources/intune-devices-windowsmanagementapp.md)|
-|[ação setAsManagedInstaller](../api/intune-devices-windowsmanagementapp-setasmanagedinstaller.md)|Nenhum|Definir o status do Instalador Gerenciado para o locatário do chamador|
+|[ação setAsManagedInstaller](../api/intune-devices-windowsmanagementapp-setasmanagedinstaller.md)|Nenhum(a)|Definir o status do Instalador Gerenciado para o locatário do chamador|
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
@@ -59,7 +59,6 @@ Veja a seguir uma representação JSON do recurso.
   "managedInstallerConfiguredDateTime": "String"
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 6218fec26704f392935996d828de82d44de1481790d16ca055a60195c7b67f65
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 60f24b5e5dd32f137a278344283d30d2aec3494c
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54250053"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58820531"
 ---
 # <a name="windowsdevicetype-enum-type"></a>Tipo de número windowsDeviceType
 
@@ -26,11 +26,10 @@ Contém propriedades para Windows tipo de dispositivo.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |Nenhuma|0|Nenhum sinalizador definido.|
-|desktop|1 |Se o tipo de dispositivo desktop Windows desktop é suportado ou não.|
+|desktop|1|Se o tipo de dispositivo desktop Windows desktop é suportado ou não.|
 |móvel|2|Se o tipo de dispositivo móvel Windows é suportado ou não.|
 |holographic|4 |Se o tipo de dispositivo Holographic Windows for suportado ou não.|
 |team|8 |Se o tipo de dispositivo Team Windows for suportado ou não.|
-
 
 
 

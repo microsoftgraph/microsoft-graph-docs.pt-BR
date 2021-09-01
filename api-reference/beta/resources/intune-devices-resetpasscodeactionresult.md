@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 39527c3f6937099e24e93db05f42fbfbb1f615f4c636a8961207c40fe141cc1a
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: b6d5594cc86287ea5f305f418000402399cffd9a
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54193626"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58790133"
 ---
 # <a name="resetpasscodeactionresult-resource-type"></a>tipo de recurso resetPasscodeActionResult
 
@@ -56,7 +56,6 @@ Veja a seguir uma representação JSON do recurso.
   "errorCode": 1024
 }
 ```
-
 
 
 

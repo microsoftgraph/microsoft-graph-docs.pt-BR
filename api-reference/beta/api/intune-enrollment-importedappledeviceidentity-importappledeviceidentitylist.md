@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5da0de57f47528a129b23a1c92866fc5240b3c6b04ed876e4db532fed042a8e4
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: ecaf254dc2db0ec618d69657d3b3d46773897c1f
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54145772"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58817478"
 ---
 # <a name="importappledeviceidentitylist-action"></a>Ação importAppleDeviceIdentityList
 
@@ -121,7 +121,6 @@ Content-Length: 741
   ]
 }
 ```
-
 
 
 

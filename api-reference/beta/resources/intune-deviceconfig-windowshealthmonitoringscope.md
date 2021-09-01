@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 79fc09d7eb9cdbeb07920bef75282493a4fb54f94404752601caf75e720e61fe
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: b38f4822040757be890d5ee666678c9cbd002c3a
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54173069"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58777937"
 ---
 # <a name="windowshealthmonitoringscope-enum-type"></a>Tipo de número do windowsHealthMonitoringScope
 
@@ -26,10 +26,9 @@ Escopo de monitoramento de saúde do dispositivo
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |indefinido|0|Undefined|
-|healthMonitoring|1 |Eventos básicos para monitoramento de saúde do dispositivo Windows|
+|healthMonitoring|1|Eventos básicos para monitoramento de saúde do dispositivo Windows|
 |bootPerformance|2|Eventos de desempenho de inicialização|
 |windowsUpdates|4 |Windows atualiza eventos|
-
 
 
 

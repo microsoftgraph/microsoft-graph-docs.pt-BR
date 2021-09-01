@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: ff607e0eb88a53aa53500b278e7cbf90da49a34fa4033a3907f24818c3618ddc
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 2658a02a4881e793879a68bc6d1822d9a9b2a0a5
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54183124"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58819140"
 ---
 # <a name="macosassociateddomainsitem-resource-type"></a>Tipo de recurso macOSAssociatedDomainsItem
 
@@ -26,8 +26,8 @@ Um mapeamento de identificadores de aplicativos para domínios associados.
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |applicationIdentifier|Cadeia de caracteres|O identificador de aplicativo do aplicativo ao que associar domínios.|
-|domínios|String collection|A lista de domínios a ser associado.|
-|directDownloadsEnabled|Boolean|Determina se os dados devem ser baixados diretamente ou por meio de um CDN.|
+|domínios|Coleção de cadeias de caracteres|A lista de domínios a ser associado.|
+|directDownloadsEnabled|Booliano|Determina se os dados devem ser baixados diretamente ou por meio de um CDN.|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -49,7 +49,6 @@ Veja a seguir uma representação JSON do recurso.
   "directDownloadsEnabled": true
 }
 ```
-
 
 
 

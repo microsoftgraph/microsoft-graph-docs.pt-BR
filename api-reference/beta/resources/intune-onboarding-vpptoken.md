@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0ff611ddb2c9b371e8dbddb7200e6c1a10266483ec49f41cc63c187db991c3fe
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 5b4660469cc421493b1aa2729612d3e9be1908a2
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54253430"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58816440"
 ---
 # <a name="vpptoken-resource-type"></a>Tipo de recurso vppToken
 
@@ -51,11 +51,11 @@ Você adquire várias licenças de aplicativos do iOS por meio do Apple Volume P
 |lastSyncStatus|[vppTokenSyncStatus](../resources/intune-onboarding-vpptokensyncstatus.md)|Status atual de sincronização da última sincronização de aplicativo que foi feita usando o Token do Apple Volume Purchase Program. Os valores possíveis são: `none`, `inProgress`, `completed`, `failed`. Os valores possíveis são: `none`, `inProgress`, `completed`, `failed`.|
 |automaticallyUpdateApps|Boolean|Se os aplicativos para o token VPP serão automaticamente atualizados ou não.|
 |countryOrRegion|Cadeia de caracteres|Se os aplicativos para o token VPP serão automaticamente atualizados ou não.|
-|dataSharingConsentGranted|Boolean|Consentimento concedido para compartilhamento de dados com o Programa de Compra de Volume da Apple.|
+|dataSharingConsentGranted|Booliano|Consentimento concedido para compartilhamento de dados com o Programa de Compra de Volume da Apple.|
 |displayName|Cadeia de caracteres|Um nome amigável de token especificado pelo administrador.|
 |locationName|Cadeia de caracteres|Local do token retornado do VPP da Apple.|
-|claimTokenManagementFromExternalMdm|Boolean|Consentimento do administrador para permitir o gerenciamento de token de declaração do MDM externo.|
-|roleScopeTagIds|String collection|IDs de marcas de escopo de função atribuídas a essa entidade.|
+|claimTokenManagementFromExternalMdm|Booliano|Consentimento do administrador para permitir o gerenciamento de token de declaração do MDM externo.|
+|roleScopeTagIds|Coleção de cadeias de caracteres|IDs de marcas de escopo de função atribuídas a essa entidade.|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -101,7 +101,6 @@ Veja a seguir uma representação JSON do recurso.
   ]
 }
 ```
-
 
 
 

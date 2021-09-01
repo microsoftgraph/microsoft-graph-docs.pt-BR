@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 51df8a5d7887dc6d6703e72f0567ed8cfb56ea6118546215397c5fb8111335fd
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: b48da33145c94bf696b8068b330d2d35c743bdda
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54173188"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58785742"
 ---
 # <a name="ratingjapantelevisiontype-enum-type"></a>ratingJapanTelevisionType tipo de número
 
@@ -26,9 +26,8 @@ Rótulos de classificação de conteúdo de TV no Japão
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |allAllowed|0|Valor padrão, permitir todo o conteúdo de programas de TV|
-|allBlocked|1 |Não permitir conteúdo de programas de TV|
+|allBlocked|1|Não permitir conteúdo de programas de TV|
 |explicitAllowed|2|Todo o conteúdo de TV é explicitamente permitido|
-
 
 
 

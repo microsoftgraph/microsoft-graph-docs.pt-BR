@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4072570fafac01df30a9542f80bf0ccae9ff9e18606f7e09e8da3a822da04328
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: e56e8c23c852028cec007b29de7f7b7931a47c2d
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54161406"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58806261"
 ---
 # <a name="mobileappsupersedence-resource-type"></a>Tipo de recurso mobileAppSupersedence
 
@@ -31,7 +31,7 @@ Herda de [mobileAppRelationship](../resources/intune-apps-mobileapprelationship.
 |[Listar mobileAppSupersedences](../api/intune-apps-mobileappsupersedence-list.md)|[Coleção mobileAppSupersedence](../resources/intune-apps-mobileappsupersedence.md)|Listar propriedades e relações dos [objetos mobileAppSupersedence.](../resources/intune-apps-mobileappsupersedence.md)|
 |[Obter mobileAppSupersedence](../api/intune-apps-mobileappsupersedence-get.md)|[mobileAppSupersedence](../resources/intune-apps-mobileappsupersedence.md)|Leia propriedades e relações do [objeto mobileAppSupersedence.](../resources/intune-apps-mobileappsupersedence.md)|
 |[Criar mobileAppSupersedence](../api/intune-apps-mobileappsupersedence-create.md)|[mobileAppSupersedence](../resources/intune-apps-mobileappsupersedence.md)|Crie um novo [objeto mobileAppSupersedence.](../resources/intune-apps-mobileappsupersedence.md)|
-|[Excluir mobileAppSupersedence](../api/intune-apps-mobileappsupersedence-delete.md)|Nenhum|Exclui uma [mobileAppSupersedence](../resources/intune-apps-mobileappsupersedence.md).|
+|[Excluir mobileAppSupersedence](../api/intune-apps-mobileappsupersedence-delete.md)|Nenhum(a)|Exclui uma [mobileAppSupersedence](../resources/intune-apps-mobileappsupersedence.md).|
 |[Atualizar mobileAppSupersedence](../api/intune-apps-mobileappsupersedence-update.md)|[mobileAppSupersedence](../resources/intune-apps-mobileappsupersedence.md)|Atualize as propriedades de um [objeto mobileAppSupersedence.](../resources/intune-apps-mobileappsupersedence.md)|
 
 ## <a name="properties"></a>Propriedades
@@ -72,7 +72,6 @@ Veja a seguir uma representação JSON do recurso.
   "supersedingAppCount": 1024
 }
 ```
-
 
 
 

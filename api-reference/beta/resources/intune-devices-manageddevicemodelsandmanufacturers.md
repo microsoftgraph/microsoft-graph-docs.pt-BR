@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3d57976ef6d66205a79f60b242ccefc3f8b5bcb20f46ace5be2ab856dc193fd4
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 300fbc2dc03a4a8394449cc8a6575378feea1cc2
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54249920"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58820881"
 ---
 # <a name="manageddevicemodelsandmanufacturers-resource-type"></a>Tipo de recurso managedDeviceModelsAndManufacturers
 
@@ -25,8 +25,8 @@ Modelos e Manufaturas de carmadata para dispositivos gerenciados na conta
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|deviceModels|String collection|Lista de modelos para dispositivos gerenciados na conta|
-|deviceManufacturers|String collection|Lista de Manufaturas para dispositivos gerenciados na conta|
+|deviceModels|Coleção de cadeias de caracteres|Lista de modelos para dispositivos gerenciados na conta|
+|deviceManufacturers|Coleção de cadeias de caracteres|Lista de Manufaturas para dispositivos gerenciados na conta|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -49,7 +49,6 @@ Veja a seguir uma representação JSON do recurso.
   ]
 }
 ```
-
 
 
 

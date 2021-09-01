@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 11e2c4df20585d47ce1f1f19fd0d9f934b022d127b2167961e171f325509caa2
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: ffd90cab42c73898167e29c99255713b77877e5b
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54207674"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58815684"
 ---
 # <a name="create-devicemanagementresourceaccessprofileassignment"></a>Criar deviceManagementResourceAccessProfileAssignment
 
@@ -105,7 +105,6 @@ Content-Length: 512
   "sourceId": "Source Id value"
 }
 ```
-
 
 
 

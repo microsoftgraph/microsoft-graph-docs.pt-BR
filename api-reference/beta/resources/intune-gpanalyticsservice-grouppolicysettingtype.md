@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: ce04708aa2648f97a3bb5a1c72781898c7c89fae6f3cd2579a9d3ca416ff5d3f
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 569dfa626a636e0a0a7838025d22259e71341a96
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54236056"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58785112"
 ---
 # <a name="grouppolicysettingtype-enum-type"></a>tipo denum groupPolicySettingType
 
@@ -26,13 +26,12 @@ Tipo de configuração da política de grupo.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |desconhecido|0|GroupPolicySettingType desconhecido|
-|política|1 |Tipo de configuração de política|
+|política|1|Tipo de configuração de política|
 |account|2|Tipo de configuração de conta|
-|securityOptions|3 |Tipo de configuração SecurityOptions|
+|securityOptions|3|Tipo de configuração SecurityOptions|
 |userRightsAssignment|4 |Tipo de configuração UserRightsAssignment|
 |auditSetting|5 |Tipo de configuração AuditSetting|
 |windowsFirewallSettings|6 |Tipo de configuração windowsFirewallSettings|
-
 
 
 

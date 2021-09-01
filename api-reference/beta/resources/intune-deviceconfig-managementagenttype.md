@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 282915b085107d5367a0b7f8bd8f4f3ea84b7c23
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 88670bf7bee32898bd18efea79153096c289cf5e
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58265447"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58789612"
 ---
 # <a name="managementagenttype-enum-type"></a>tipo de número managementAgentType
 
@@ -25,9 +25,9 @@ Tipo de agente de gerenciamento.
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|eas|1 |O dispositivo é gerenciado por Exchange servidor.|
+|eas|1|O dispositivo é gerenciado por Exchange servidor.|
 |mdm|2|O dispositivo é gerenciado pelo MDM do Intune.|
-|easMdm|3 |O dispositivo é gerenciado pelo servidor Exchange e pelo MDM do Intune.|
+|easMdm|3|O dispositivo é gerenciado pelo servidor Exchange e pelo MDM do Intune.|
 |intuneClient|4 |Cliente do Intune gerenciado.|
 |easIntuneClient|5 |O dispositivo é gerenciado duplo do cliente EAS e do Intune.|
 |configurationManagerClient|8 |O dispositivo é gerenciado pelo Configuration Manager.|
@@ -38,7 +38,6 @@ Tipo de agente de gerenciamento.
 |googleCloudDevicePolicyController|64|O dispositivo é gerenciado pelo CloudDPC do Google.|
 |microsoft365ManagedMdm|258|Esse dispositivo é gerenciado por Microsoft 365 através do Intune.|
 |windowsManagementCloudApi|512|Esse dispositivo é gerenciado pela API de Nuvem de Gerenciamento Windows Gerenciamento.|
-
 
 
 

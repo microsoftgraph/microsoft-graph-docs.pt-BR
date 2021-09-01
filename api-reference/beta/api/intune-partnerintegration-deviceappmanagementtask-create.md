@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 9487d4581b5d4c44240b6c54a837ee34e9cc1d064f7d7e30516e9fc596f9e82f
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: cf98ca829ed6a870ca4ec561e5e42264102e6371
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54123066"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58783320"
 ---
 # <a name="create-deviceappmanagementtask"></a>Criar deviceAppManagementTask
 
@@ -27,9 +27,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementApps.ReadWrite.All|
+|Delegado (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Application|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -55,7 +55,7 @@ A tabela a seguir mostra as propriedades necessárias ao criar deviceAppManageme
 |:---|:---|:---|
 |id|Cadeia de caracteres|A chave da entidade.|
 |displayName|Cadeia de caracteres|O nome.|
-|description|Cadeia de caracteres|A descrição.|
+|descrição|Cadeia de caracteres|A descrição.|
 |createdDateTime|DateTimeOffset|A data criada.|
 |dueDateTime|DateTimeOffset|A data de vencimento.|
 |category|[deviceAppManagementTaskCategory](../resources/intune-partnerintegration-deviceappmanagementtaskcategory.md)|A categoria. Os valores possíveis são: `unknown` e `advancedThreatProtection`.|
@@ -115,7 +115,6 @@ Content-Length: 508
   "status": "pending"
 }
 ```
-
 
 
 
