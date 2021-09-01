@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 4b83040763f0b7b56c4a6e8979a06f3f945a39ed94dde254c042648f8fe349f2
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 16ab85a041f62e5c1f2b52785c9e690193856ba0
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54250060"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58787887"
 ---
 # <a name="resultantappstatedetail-enum-type"></a>tipo denum resultantAppStateDetail
 
@@ -26,22 +26,31 @@ Enum indicando detalhes adicionais sobre por que um aplicativo tem um estado de 
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |noAdditionalDetails|0|Nenhum detalhe adicional está disponível.|
-|dependencyFailedToInstall|1 |Uma ou mais dependências do aplicativo falharam na instalação.|
+|dependencyFailedToInstall|1|Uma ou mais dependências do aplicativo falharam na instalação.|
 |dependencyWithRequirementsNotMet|2|Uma ou mais dependências do aplicativo têm requisitos que não são atendidos.|
-|dependencyPendingReboot|3 |Uma ou mais dependências do aplicativo exigem uma reinicialização do dispositivo para concluir a instalação.|
+|dependencyPendingReboot|3|Uma ou mais dependências do aplicativo exigem uma reinicialização do dispositivo para concluir a instalação.|
 |dependencyWithAutoInstallDisabled|4 |Uma ou mais dependências do aplicativo são configuradas para não instalar automaticamente.|
+|supersededAppUninstallFailed|5 |Falha na desinstalação de um aplicativo sobresstalado.|
+|supersededAppUninstallPendingReboot|6 |Um aplicativo supersedido requer uma reinicialização para concluir a desinstalação.|
+|removendoSupersededApps|7 |Aplicativos supersedados estão sendo removidos.|
 |iosAppStoreUpdateFailedToInstall|1000|A versão mais recente do aplicativo falhou ao atualizar de uma versão anterior.|
 |vppAppHasUpdateAvailable|1001|Uma atualização está disponível.|
-|userRejectedUpdate|1002|O usuário rejeitou a atualização do aplicativo. |
+|userRejectedUpdate|1002|O usuário rejeitou a atualização do aplicativo.|
+|uninstallPendingReboot|1003|Para concluir a remoção do aplicativo, o dispositivo deve ser reiniciado.|
+|supersedingAppsDetected|1004|Os aplicativos de supersedação são detectados.|
+|supersededAppsDetected|1005|Os aplicativos supersedados são detectados.|
 |seeInstallErrorCode|2000|Falha na instalação do aplicativo. Consulte a propriedade de código de erro para obter mais detalhes.|
 |autoInstallDisabled|3000|O aplicativo está configurado para não ser instalado automaticamente.|
 |managedAppNoLongerPresent|3001|O aplicativo é gerenciado, mas não é mais instalado.|
 |userRejectedInstall|3002|O usuário rejeitou a instalação do aplicativo.|
 |userIsNotLoggedIntoAppStore|3003|O usuário deve fazer logoff na App Store para instalar o aplicativo.|
+|untargetedSupersedingAppsDetected|3004|O aplicativo não pode ser instalado. Um aplicativo de supersedação não gerado foi detectado, o que criou um conflito.|
+|appRemovedBySupersedence|3005|O aplicativo foi removido para instalar um aplicativo de supersedação.|
 |seeUninstallErrorCode|4000|Falha ao desinstalar o aplicativo. Consulte a propriedade de código de erro para obter mais detalhes.|
 |pendingReboot|5000|O dispositivo deve ser reiniciado para concluir a instalação do aplicativo.|
 |installingDependencies|5001|Uma ou mais dependências do aplicativo estão sendo instaladas.|
 |contentDownloaded|5002|O conteúdo do aplicativo foi baixado para o dispositivo.|
+|supersedingAppsNotApplicable|-1016|Todos os aplicativos de supersedação direcionados não são aplicáveis.|
 |powerShellScriptRequirementNotMet|-1013|A regra de requisito de script do PowerShell não é atendida|
 |registryRequirementNotMet|-1012|Regra de requisitos do Registro não é atendida|
 |fileSystemRequirementNotMet|-1011|A regra de requisito do sistema de arquivos não é atendida|
@@ -52,7 +61,6 @@ Enum indicando detalhes adicionais sobre por que um aplicativo tem um estado de 
 |minimumOsVersionNotMet|-1002|A versão do sistema operacional no dispositivo de destino é menor do que o mínimo configurado.|
 |minimumDiskSpaceNotMet|-1001|O espaço em disco disponível no dispositivo de destino é menor do que o mínimo configurado.|
 |processorArchitectureNotApplicable|-1000|A arquitetura do dispositivo (por exemplo, x86/amd64) não é aplicável para o aplicativo.|
-
 
 
 

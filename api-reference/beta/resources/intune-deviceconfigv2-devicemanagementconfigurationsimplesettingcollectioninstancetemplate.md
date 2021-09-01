@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: bbde0eeccd0e89669a8d2d86fa2897c9d794831f42b08b4801af76ea404d7adc
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 0971ed10f7d6b506442d1f6518040dd01b636877
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54198070"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58818095"
 ---
 # <a name="devicemanagementconfigurationsimplesettingcollectioninstancetemplate-resource-type"></a>Tipo de recurso deviceManagementConfigurationSimpleSettingCollectionInstanceTemplate
 
@@ -32,7 +32,7 @@ Herda de [deviceManagementConfigurationSettingInstanceTemplate](../resources/int
 |settingDefinitionId|Cadeia de caracteres|Definição Id De definição Herdada [de deviceManagementConfigurationSettingInstanceTemplate](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettinginstancetemplate.md)|
 |isRequired|Booliano|Indica se uma política deve especificar essa configuração. Herdado [de deviceManagementConfigurationSettingInstanceTemplate](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettinginstancetemplate.md)|
 |simpleSettingCollectionValueTemplate|[Coleção deviceManagementConfigurationSimpleSettingValueTemplate](../resources/intune-deviceconfigv2-devicemanagementconfigurationsimplesettingvaluetemplate.md)|Modelo de valor de conjunto de configurações simples|
-|allowUnmanagedValues|Boolean|A política vinculada pode anexar valores que não estão presentes no modelo.|
+|allowUnmanagedValues|Booliano|A política vinculada pode anexar valores que não estão presentes no modelo.|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -63,7 +63,6 @@ Veja a seguir uma representação JSON do recurso.
   "allowUnmanagedValues": true
 }
 ```
-
 
 
 

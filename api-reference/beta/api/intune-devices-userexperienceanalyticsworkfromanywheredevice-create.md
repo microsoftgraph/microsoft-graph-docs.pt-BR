@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e0031a5596d660bab7a10aca9f47d3172a0f4b23
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: daa0b1dfbf27ebe852638c5e599ac5d9215bb4ea
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58263258"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58817226"
 ---
 # <a name="create-userexperienceanalyticsworkfromanywheredevice"></a>Criar userExperienceAnalyticsWorkFromAnywhereDevice
 
@@ -27,9 +27,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
+|Delegada (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All|
 |Delegada (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
+|Aplicativo|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -60,26 +60,31 @@ A tabela a seguir mostra as propriedades necessárias ao criar o userExperienceA
 |modelo|String|A experiência do usuário funciona de qualquer lugar do modelo do dispositivo.|
 |propriedade|Cadeia de caracteres|A experiência do usuário funciona de qualquer lugar da propriedade do dispositivo.|
 |managedBy|Cadeia de caracteres|A experiência do usuário funciona de qualquer lugar do agente de gerenciamento do dispositivo.|
-|autoPilotRegistered|Boolean|A experiência do usuário funciona em qualquer lugar do piloto automático do dispositivo intuneRegistered.|
-|autoPilotProfileAssigned|Boolean|A análise da experiência do usuário funciona em qualquer lugar do autopilotProfileAssigned do dispositivo intune.|
-|azureAdRegistered|Boolean|A experiência do usuário funciona de qualquer lugar do dispositivo azureAdRegistered.|
-|azureAdDeviceId|Cadeia de caracteres|A experiência do usuário funciona em qualquer lugar do Azure Ad device Id.|
+|autoPilotRegistered|Booliano|A experiência do usuário funciona em qualquer lugar do piloto automático do dispositivo intuneRegistered.|
+|autoPilotProfileAssigned|Booliano|A análise da experiência do usuário funciona em qualquer lugar do autopilotProfileAssigned do dispositivo intune.|
+|azureAdRegistered|Booliano|A experiência do usuário funciona de qualquer lugar do dispositivo azureAdRegistered.|
+|azureAdDeviceId|String|A experiência do usuário funciona em qualquer lugar do Azure Ad device Id.|
 |azureAdJoinType|Cadeia de caracteres|A experiência do usuário funciona de qualquer lugar do azure Ad joinType do dispositivo.|
 |osDescription|Cadeia de caracteres|A experiência do usuário funciona de qualquer lugar da Descrição do sistema operacional do dispositivo.|
 |osVersion|String|A experiência do usuário funciona de qualquer lugar da versão do sistema operacional do dispositivo.|
-|tenantAttached|Boolean|A experiência do usuário funciona de qualquer locatário do dispositivoAttached.|
-|compliancePolicySetToIntune|Boolean|A experiência do usuário funciona de qualquer lugar do dispositivo compliancePolicySetToIntune.|
-|otherWorkloadsSetToIntune|Boolean|A experiência do usuário funciona de qualquer outro dispositivoWorkloadsSetToIntune.|
+|tenantAttached|Booliano|A experiência do usuário funciona de qualquer locatário do dispositivoAttached.|
+|compliancePolicySetToIntune|Booliano|A experiência do usuário funciona de qualquer lugar do dispositivo compliancePolicySetToIntune.|
+|otherWorkloadsSetToIntune|Booliano|A experiência do usuário funciona de qualquer outro dispositivoWorkloadsSetToIntune.|
 |upgradeEligibility|[operatingSystemUpgradeEligibility](../resources/intune-devices-operatingsystemupgradeeligibility.md)|A experiência do usuário funciona em qualquer lugar do windows upgrade status de qualificação do dispositivo. Os valores possíveis são: `upgraded`, `unknown`, `notCapable`, `capable`.|
 |ramCheckFailed|Boolean|A análise da experiência do usuário funciona em qualquer lugar que a verificação de hardware ram do dispositivo falhou para que o dispositivo atualize para a versão mais recente do windows|
-|storageCheckFailed|Boolean|A experiência do usuário funciona de qualquer dispositivo, Falha na verificação de hardware de armazenamento para que o dispositivo atualize para a versão mais recente do windows.|
-|processorCoreCountCheckFailed|Boolean|A experiência do usuário funciona de qualquer dispositivo, Falha na contagem de núcleos de hardware do processador para que o dispositivo atualize para a versão mais recente do windows.|
-|processorSpeedCheckFailed|Boolean|A experiência do usuário funciona de qualquer dispositivo, Falha na verificação de velocidade de hardware do processador para que o dispositivo atualize para a versão mais recente do windows.|
-|tpmCheckFailed|Boolean|A experiência do usuário funciona de qualquer dispositivo, falha na verificação de hardware do Módulo de Plataforma Confiável (TPM) para o dispositivo para a versão mais recente da atualização para windows.|
-|secureBootCheckFailed|Boolean|A experiência do usuário funciona de qualquer dispositivo, Falha na verificação de hardware de inicialização segura para que o dispositivo atualize para a versão mais recente do windows.|
-|processorFamilyCheckFailed|Boolean|A experiência do usuário funciona de qualquer dispositivo, Falha na verificação da família de hardware do processador para que o dispositivo atualize para a versão mais recente do windows.|
-|processor64BitCheckFailed|Boolean|A experiência do usuário funciona de qualquer dispositivo, a verificação de arquitetura de hardware de 64 bits do processador falhou para que o dispositivo atualize para a versão mais recente do windows.|
-|osCheckFailed|Boolean|A experiência do usuário funciona de qualquer dispositivo, falha na verificação do sistema operacional para que o dispositivo atualize para a versão mais recente do windows.|
+|storageCheckFailed|Booliano|A experiência do usuário funciona de qualquer dispositivo, Falha na verificação de hardware de armazenamento para que o dispositivo atualize para a versão mais recente do windows.|
+|processorCoreCountCheckFailed|Booliano|A experiência do usuário funciona de qualquer dispositivo, Falha na contagem de núcleos de hardware do processador para que o dispositivo atualize para a versão mais recente do windows.|
+|processorSpeedCheckFailed|Booliano|A experiência do usuário funciona de qualquer dispositivo, Falha na verificação de velocidade de hardware do processador para que o dispositivo atualize para a versão mais recente do windows.|
+|tpmCheckFailed|Booliano|A experiência do usuário funciona de qualquer dispositivo, falha na verificação de hardware do Módulo de Plataforma Confiável (TPM) para o dispositivo para a versão mais recente da atualização para windows.|
+|secureBootCheckFailed|Booliano|A experiência do usuário funciona de qualquer dispositivo, Falha na verificação de hardware de inicialização segura para que o dispositivo atualize para a versão mais recente do windows.|
+|processorFamilyCheckFailed|Booliano|A experiência do usuário funciona de qualquer dispositivo, Falha na verificação da família de hardware do processador para que o dispositivo atualize para a versão mais recente do windows.|
+|processor64BitCheckFailed|Booliano|A experiência do usuário funciona de qualquer dispositivo, a verificação de arquitetura de hardware de 64 bits do processador falhou para que o dispositivo atualize para a versão mais recente do windows.|
+|osCheckFailed|Booliano|A experiência do usuário funciona de qualquer dispositivo, falha na verificação do sistema operacional para que o dispositivo atualize para a versão mais recente do windows.|
+|windowsScore|Duplo|A experiência do usuário funciona de qualquer lugar por pontuação do windows do dispositivo. Valores válidos -1,79769313486232E+308 a 1.79769313486232E+308|
+|cloudManagementScore|Duplo|A experiência do usuário funciona de qualquer lugar por pontuação de gerenciamento de nuvem de dispositivo. Valores válidos -1,79769313486232E+308 a 1.79769313486232E+308|
+|cloudIdentityScore|Duplo|A experiência do usuário funciona de qualquer lugar por pontuação de identidade na nuvem do dispositivo. Valores válidos -1,79769313486232E+308 a 1.79769313486232E+308|
+|cloudProvisioningScore|Duplo|A experiência do usuário funciona de qualquer lugar por pontuação de provisionamento de nuvem de dispositivo. Valores válidos -1,79769313486232E+308 a 1.79769313486232E+308|
+|healthStatus|[userExperienceAnalyticsHealthState](../resources/intune-devices-userexperienceanalyticshealthstate.md)|A experiência do usuário funciona de qualquer lugar por status de saúde do dispositivo. Os valores possíveis são: `unknown`, `insufficientData`, `needsAttention`, `meetingGoals`.|
 
 
 
@@ -93,7 +98,7 @@ Este é um exemplo da solicitação.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsWorkFromAnywhereMetrics/{userExperienceAnalyticsWorkFromAnywhereMetricId}/metricDevices
 Content-type: application/json
-Content-length: 1028
+Content-length: 1215
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsWorkFromAnywhereDevice",
@@ -122,7 +127,12 @@ Content-length: 1028
   "secureBootCheckFailed": true,
   "processorFamilyCheckFailed": true,
   "processor64BitCheckFailed": true,
-  "osCheckFailed": true
+  "osCheckFailed": true,
+  "windowsScore": 4.0,
+  "cloudManagementScore": 6.666666666666667,
+  "cloudIdentityScore": 6.0,
+  "cloudProvisioningScore": 7.333333333333333,
+  "healthStatus": "insufficientData"
 }
 ```
 
@@ -131,7 +141,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1077
+Content-Length: 1264
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsWorkFromAnywhereDevice",
@@ -161,10 +171,14 @@ Content-Length: 1077
   "secureBootCheckFailed": true,
   "processorFamilyCheckFailed": true,
   "processor64BitCheckFailed": true,
-  "osCheckFailed": true
+  "osCheckFailed": true,
+  "windowsScore": 4.0,
+  "cloudManagementScore": 6.666666666666667,
+  "cloudIdentityScore": 6.0,
+  "cloudProvisioningScore": 7.333333333333333,
+  "healthStatus": "insufficientData"
 }
 ```
-
 
 
 

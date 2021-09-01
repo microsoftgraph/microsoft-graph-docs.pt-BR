@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: bc1d9e84df78dbb990c859c0b770f3fe4998b524da0cf85bb7e4d123c69308b2
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 935703a1a74bbd0b35ba0987311f62bce9072a8f
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54236070"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58820846"
 ---
 # <a name="depenrollmentbaseprofile-resource-type"></a>Tipo de recurso de depEnrollmentBaseProfile
 
@@ -40,26 +40,26 @@ Herda de [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md
 |requiresUserAuthentication|Boolean|Indica se o perfil requer autenticação de usuário Herdada de [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
 |configurationEndpointUrl|Cadeia de caracteres|URL do ponto de extremidade de configuração a ser usada para Registro Herdado de [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
 |enableAuthenticationViaCompanyPortal|Boolean|Indica a autenticação com o Assistente de Instalação da Apple em vez de Portal da Empresa. Herdado de [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
-|requireCompanyPortalOnSetupAssistantEnrolledDevices|Boolean|Indica que a Portal da Empresa é necessária em dispositivos inscritos do assistente de instalação Herdados de [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
+|requireCompanyPortalOnSetupAssistantEnrolledDevices|Booliano|Indica que a Portal da Empresa é necessária em dispositivos inscritos do assistente de instalação Herdados de [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
 |isDefault|Booliano|Indica se esse é o perfil padrão|
-|supervisedModeEnabled|Boolean|Modo supervisionado, True para habilitar, false caso contrário. Consulte https://docs.microsoft.com/intune/deploy-use/enroll-devices-in-microsoft-intune para obter informações adicionais.|
+|supervisedModeEnabled|Boolean|Modo supervisionado, True para habilitar, false caso contrário. Consulte https://docs.microsoft.com/en-us/intune/deploy-use/enroll-devices-in-microsoft-intune para obter informações adicionais.|
 |supportDepartment|Cadeia de caracteres|Informações do departamento de suporte|
-|isMandatory|Boolean|Indica se o perfil é obrigatório|
+|isMandatory|Booliano|Indica se o perfil é obrigatório|
 |locationDisabled|Boolean|Indica se o painel de configuração do serviço de localização está desabilitado|
 |supportPhoneNumber|Cadeia de caracteres|Número de telefone de suporte|
-|profileRemovalDisabled|Boolean|Indica se a opção de remoção de perfil está desabilitada|
+|profileRemovalDisabled|Booliano|Indica se a opção de remoção de perfil está desabilitada|
 |restoreBlocked|Boolean|Indica se o painel restaurar instalação está bloqueado|
-|appleIdDisabled|Boolean|Indica se o painel de configuração de ID da Apple está desabilitado|
+|appleIdDisabled|Booliano|Indica se o painel de configuração de ID da Apple está desabilitado|
 |termsAndConditionsDisabled|Boolean|Indica se o painel de configuração 'Termos e Condições' está desabilitado|
-|touchIdDisabled|Boolean|Indica se o painel de configuração de ID por toque está desabilitado|
+|touchIdDisabled|Booliano|Indica se o painel de configuração de ID por toque está desabilitado|
 |applePayDisabled|Boolean|Indica se o painel de configuração de pagamento da Apple está desabilitado|
-|siriDisabled|Boolean|Indica se o painel de configuração de siri está desabilitado|
+|siriDisabled|Booliano|Indica se o painel de configuração de siri está desabilitado|
 |diagnosticsDisabled|Boolean|Indica se o painel de configuração de diagnósticos está desabilitado|
-|displayToneSetupDisabled|Boolean|Indica se a tela de instalação de displaytone está desabilitada|
+|displayToneSetupDisabled|Booliano|Indica se a tela de instalação de displaytone está desabilitada|
 |privacyPaneDisabled|Boolean|Indica se a tela de privacidade está desabilitada|
-|screenTimeScreenDisabled|Boolean|Indica se a configuração do tempo de tempo de tela está desabilitada|
+|screenTimeScreenDisabled|Booliano|Indica se a configuração do tempo de tempo de tela está desabilitada|
 |deviceNameTemplate|Cadeia de caracteres|Define um padrão literal ou de nome.|
-|configurationWebUrl|Boolean|URL para logon do assistente de instalação|
+|configurationWebUrl|Booliano|URL para logon do assistente de instalação|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -103,7 +103,6 @@ Veja a seguir uma representação JSON do recurso.
   "configurationWebUrl": true
 }
 ```
-
 
 
 

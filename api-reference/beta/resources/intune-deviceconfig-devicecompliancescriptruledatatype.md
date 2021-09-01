@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: ae546c868f46a8396f1a527edb5d9122eaf6dec2ad3905bfe6ef4eb6aba1ecfb
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 72b9c57f659c0ec44c16719dd65381563dc414d0
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54229497"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58801140"
 ---
 # <a name="devicecompliancescriptruledatatype-enum-type"></a>Tipo de número deviceComplianceScriptRuleDataType
 
@@ -26,10 +26,10 @@ Tipos de dados para regras.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |Nenhuma|0|Nenhum tipo de dados.|
-|booliano|1 |Tipo de dados booleano.|
+|booliano|1|Tipo de dados booleano.|
 |int64|2|Tipo de dados int64.|
-|double|3 |Tipo de dados duplo.|
-|cadeia de caracteres|4 |Tipo de dados de cadeia de caracteres.|
+|double|3|Tipo de dados duplo.|
+|string|4 |Tipo de dados de cadeia de caracteres.|
 |dateTime|5 |Tipo de dados DateTime.|
 |versão|6 |Tipo de dados de versão.|
 |base64|7 |Tipo de dados base64.|
@@ -38,9 +38,8 @@ Tipos de dados para regras.
 |int64Array|10 |Tipo de dados da matriz Int64.|
 |doubleArray|11 |Tipo de dados de matriz dupla.|
 |stringArray|12 |Tipo de dados de matriz de cadeia de caracteres.|
-|dateTimeArray|13 |Tipo de dados da matriz DateTime.|
+|dateTimeArray|13|Tipo de dados da matriz DateTime.|
 |versionArray|14 |Tipo de dados de matriz de versão.|
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: cc55258ce11e3196126097b9442aeb53b43184a9
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 074f8c3901f07b05652526e81a1006f01c83fd88
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58262288"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58819988"
 ---
 # <a name="update-datasharingconsent"></a>Atualizar dataSharingConsent
 
@@ -27,9 +27,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All|
+|Delegada (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All|
 |Delegada (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All|
+|Aplicativo|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -54,12 +54,12 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [o dataS
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|Cadeia de caracteres|A ID de consentimento de compartilhamento de dados|
-|serviceDisplayName|Cadeia de caracteres|O nome de exibição do fluxo de trabalho do serviço|
+|serviceDisplayName|String|O nome de exibição do fluxo de trabalho do serviço|
 |termsUrl|Cadeia de caracteres|The TermsUrl for the data sharing consent|
-|concedido|Boolean|O estado concedido para o consentimento de compartilhamento de dados|
+|concedido|Booliano|O estado concedido para o consentimento de compartilhamento de dados|
 |grantDateTime|DateTimeOffset|O consentimento de hora foi concedido para essa conta|
 |grantedByUpn|Cadeia de caracteres|O Upn do usuário que concedeu consentimento para essa conta|
-|grantedByUserId|Cadeia de caracteres|UserId do usuário que concedeu consentimento para essa conta|
+|grantedByUserId|String|UserId do usuário que concedeu consentimento para essa conta|
 
 
 
@@ -104,7 +104,6 @@ Content-Length: 382
   "grantedByUserId": "Granted By User Id value"
 }
 ```
-
 
 
 

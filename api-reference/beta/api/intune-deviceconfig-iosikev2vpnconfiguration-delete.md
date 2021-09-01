@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 7676ccda635cd18001df53c49c447d02e8e3207a86a7d7480522f14786e2282f
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: cc559807795557d42537cba4a8fe03bc0835863d
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54128157"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58816195"
 ---
 # <a name="delete-iosikev2vpnconfiguration"></a>Excluir iosikEv2VpnConfiguration
 
@@ -67,7 +67,6 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

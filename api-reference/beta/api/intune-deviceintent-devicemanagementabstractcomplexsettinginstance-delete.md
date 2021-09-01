@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3537304fe9e7cb290d2248faf4728a90c4d9158ecb8a79920822b8dd2bbd424c
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 74da5cec873f62c613ae4e19621bbac92a07cda3
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54195691"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58818390"
 ---
 # <a name="delete-devicemanagementabstractcomplexsettinginstance"></a>Excluir deviceManagementAbstractComplexSettingInstance
 
@@ -68,7 +68,6 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

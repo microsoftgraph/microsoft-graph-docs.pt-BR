@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: d4e0844b592f842a7a0f412a7ff77f7fbe8df4f319ec8ab91f537727661fa7d4
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 16204557d18024d40336b0f73a401141bf48c01a
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54242885"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58791519"
 ---
 # <a name="macossoftwareupdatedelaypolicy-enum-type"></a>Tipo de número macOSSoftwareUpdateDelayPolicy
 
@@ -26,9 +26,10 @@ Número de sinalizador para determinar se as atualizações de software de atras
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |Nenhuma|0|Os atrasos de atualização de software não serão imposto.|
-|delayOSUpdateVisibility|1 |Forçar atrasos para atualizações de software do sistema operacional.|
+|delayOSUpdateVisibility|1|Forçar atrasos para atualizações de software do sistema operacional.|
 |delayAppUpdateVisibility|2|Force delays for app software updates.|
-
+|unknownFutureValue|4 |Membro do Sentinel para casos em que o cliente não pode manipular os novos valores de numeração.|
+|delayMajorOsUpdateVisibility|8 |Forçar atrasos para atualizações principais de software do sistema operacional.|
 
 
 

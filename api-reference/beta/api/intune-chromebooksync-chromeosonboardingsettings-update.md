@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 091a218d6b428b4eab2b35686da651892ecafc5a
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 806333b72d710ed971c485f270d399b64032f4ab
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58266118"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58819343"
 ---
 # <a name="update-chromeosonboardingsettings"></a>Atualizar chromeOSOnboardingSettings
 
@@ -97,7 +97,6 @@ Content-Length: 351
   "lastDirectorySyncDateTime": "2016-12-31T23:57:56.1183185-08:00"
 }
 ```
-
 
 
 

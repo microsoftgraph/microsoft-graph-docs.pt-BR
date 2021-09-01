@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 41f075ccd1da4a9c081b29f260c2985cefc5a624
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 782efd30ca4f1f6836bdbe6a3ea07fcc10c636a0
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58263069"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58821035"
 ---
 # <a name="create-manageddevicecertificatestate"></a>Criar managedDeviceCertificateState
 
@@ -91,7 +91,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar managedD
 |lastCertificateStateChangeDateTime|DateTimeOffset|Última alteração de estado de emissão de certificado|
 |certificateIssuer|Cadeia de caracteres|Emissor|
 |certificateThumbprint|Cadeia de caracteres|Impressão Digital|
-|certificateSerialNumber|Cadeia de caracteres|Número de série|
+|certificateSerialNumber|String|Número de série|
 |certificateKeyLength|Int32|Comprimento de chave|
 |certificateEnhancedKeyUsage|Cadeia de caracteres|Uso estendido de chave|
 |certificateValidityPeriod|Int32|Período de validade|
@@ -179,7 +179,6 @@ Content-Length: 1566
   "certificateErrorCode": 4
 }
 ```
-
 
 
 

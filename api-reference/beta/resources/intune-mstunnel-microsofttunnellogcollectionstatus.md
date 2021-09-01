@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: d82a41997d6205c8ba527728b3b8d84517528710377e0ff79e0ffccc9b031900
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 7817f095108c9b337d3c450150ffa7f5dc839921
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54239179"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58791092"
 ---
 # <a name="microsofttunnellogcollectionstatus-enum-type"></a>Tipo de número microsoftTunnelLogCollectionStatus
 
@@ -26,9 +26,8 @@ Tipo de número que representa o status do conjunto de log.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |pendente|0|O conjunto de log está em andamento|
-|completed|1 |O conjunto de log é concluído|
+|completed|1|O conjunto de log é concluído|
 |failed|2|Falha no conjunto de log|
-
 
 
 

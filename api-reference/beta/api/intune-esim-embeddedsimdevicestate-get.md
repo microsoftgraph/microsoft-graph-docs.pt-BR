@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b1ce6a5fde1eae864e276d3faa5bf627c9304d461828607e9ef1dacdb9dba046
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 6cb10b88a46d488c4988041bffbf87aac404c932
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54191358"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58819770"
 ---
 # <a name="get-embeddedsimdevicestate"></a>Obter embeddedSIMDeviceState
 
@@ -85,7 +85,6 @@ Content-Length: 568
   }
 }
 ```
-
 
 
 

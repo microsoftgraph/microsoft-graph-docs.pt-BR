@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: ef565f28ac4bd01b2b15407dc607116a340f8277dd03e2c5ad67b622bed42cd3
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 3186154369bd25c14c7a28d2bcf6c7e439f090a2
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54242042"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58818811"
 ---
 # <a name="androiddeviceownerkioskmodefolderitem-resource-type"></a>Tipo de recurso androidDeviceOwnerKioskModeFolderItem
 
@@ -44,7 +44,6 @@ Veja a seguir uma representação JSON do recurso.
   "@odata.type": "#microsoft.graph.androidDeviceOwnerKioskModeFolderItem"
 }
 ```
-
 
 
 

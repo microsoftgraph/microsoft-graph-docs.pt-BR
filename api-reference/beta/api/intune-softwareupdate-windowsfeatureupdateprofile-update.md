@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3a6dc30fc31faa51708be2ef52c5175c20ebeb8d8aa1d2a4d85f8f39dc0ccb6d
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: b8b1ccdd3d55e8ff34fe8e7fc866eafe295327f1
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54210474"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58817450"
 ---
 # <a name="update-windowsfeatureupdateprofile"></a>Atualizar windowsFeatureUpdateProfile
 
@@ -53,13 +53,13 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [o windo
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|O Identificador da entidade.|
+|id|String|O Identificador da entidade.|
 |displayName|Cadeia de caracteres|O nome de exibição do perfil.|
-|description|Cadeia de caracteres|A descrição do perfil especificado pelo usuário.|
+|description|String|A descrição do perfil especificado pelo usuário.|
 |featureUpdateVersion|Cadeia de caracteres|A versão de atualização de recursos que será implantada nos dispositivos direcionados por esse perfil. A versão pode ser qualquer versão com suporte para o exemplo 1709, 1803 ou 1809 e assim por diante.|
 |createdDateTime|DateTimeOffset|A data em que o perfil foi criado.|
 |lastModifiedDateTime|DateTimeOffset|A data em que o perfil foi modificado pela última vez.|
-|roleScopeTagIds|String collection|Lista de Marcas de Escopo para essa entidade atualização de recursos.|
+|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de Marcas de Escopo para essa entidade atualização de recursos.|
 |deployableContentDisplayName|Cadeia de caracteres|Nome de exibição amigável do conteúdo implantável do perfil de atualização de qualidade|
 |endOfSupportDate|DateTimeOffset|A última data com suporte para uma atualização de recursos|
 
@@ -112,7 +112,6 @@ Content-Length: 577
   "endOfSupportDate": "2017-01-01T00:02:08.3437725-08:00"
 }
 ```
-
 
 
 

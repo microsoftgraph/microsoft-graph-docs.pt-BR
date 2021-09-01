@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: d020684bde7c62c5656a7f3f1f8eb1a442fbf5072cd521fe56531a1339b15bf0
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 7b0cbeaf654906a9c41feebbded5798021c6093c
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54148229"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58787866"
 ---
 # <a name="defendersubmitsamplesconsenttype-enum-type"></a>Tipo de número defenderSubmitSamplesConsentType
 
@@ -26,10 +26,9 @@ Valores possíveis para DefenderSubmitSamplesConsentType
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |sendSafeSamplesAutomatically|0|Enviar amostras seguras automaticamente|
-|alwaysPrompt|1 |Sempre prompt|
+|alwaysPrompt|1|Sempre prompt|
 |neverSend|2|Nunca enviar|
-|sendAllSamplesAutomatically|3 |Enviar todos os exemplos automaticamente|
-
+|sendAllSamplesAutomatically|3|Enviar todos os exemplos automaticamente|
 
 
 

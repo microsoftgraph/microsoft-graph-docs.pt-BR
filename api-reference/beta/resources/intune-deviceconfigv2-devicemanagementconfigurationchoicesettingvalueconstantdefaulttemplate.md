@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 37754c6b72a5484257cd3d9ddcd2b7ee09eab6835cbd562c171070a49bb32f6b
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 9753e7b3c5cc25c628fb48eeb61e2ffbdc54b3f5
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54226298"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58791134"
 ---
 # <a name="devicemanagementconfigurationchoicesettingvalueconstantdefaulttemplate-resource-type"></a>Tipo de recurso deviceManagementConfigurationChoiceSettingValueConstantDefaultTemplate
 
@@ -63,7 +63,6 @@ Veja a seguir uma representação JSON do recurso.
   ]
 }
 ```
-
 
 
 

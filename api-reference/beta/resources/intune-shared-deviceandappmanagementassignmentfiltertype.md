@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 2910a835168a8caa0a965b025cbed2422b7a14e7d48f4bb2a692a5fd7ba7b064
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: a51f143acaa19a10cf5d55daa856dc31c959432b
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54193542"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58805279"
 ---
 # <a name="deviceandappmanagementassignmentfiltertype-enum-type"></a>Tipo de número deviceAndAppManagementAssignmentFilterType
 
@@ -26,9 +26,8 @@ Representa o tipo do filtro de atribuição.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |Nenhuma|0|Valor padrão. Não usar.|
-|include|1 |Indica que, no filtro, a correspondência de regras oferecerá a carga para dispositivos.|
+|include|1|Indica que, no filtro, a correspondência de regras oferecerá a carga para dispositivos.|
 |exclude|2|Indica o filtro de saída, a correspondência de regras não oferecerá a carga para dispositivos.|
-
 
 
 

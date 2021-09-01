@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 28aa1fa0ff3d305392842a4aae1ada0c2c3ad6954502430e94a7db9c8e7cf304
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 2e184d3175cfc3643a7de870b0fdbd4be3af0949
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54241930"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58791204"
 ---
 # <a name="deliveryoptimizationbandwidthabsolute-resource-type"></a>tipo de recurso deliveryOptimizationBandwidthAbsolute
 
@@ -50,7 +50,6 @@ Veja a seguir uma representação JSON do recurso.
   "maximumUploadBandwidthInKilobytesPerSecond": 1024
 }
 ```
-
 
 
 
