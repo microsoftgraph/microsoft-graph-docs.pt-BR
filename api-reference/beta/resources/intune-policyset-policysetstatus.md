@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: a31849f4984edbabdda45e319df9a8cba5005cb76302f8b68dc414ef7a59b651
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 384eb054757e2a71ff15b4af45d91cc940416adb
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54150182"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58757899"
 ---
 # <a name="policysetstatus-enum-type"></a>Tipo de número policySetStatus
 
@@ -26,12 +26,11 @@ O número para especificar o status de PolicySet.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |desconhecido|0|Valor padrão.|
-|validação|1 |Todos os itens PolicySet agora estão validando para configurações correspondentes de cargas de trabalho.|
+|validação|1|Todos os itens PolicySet agora estão validando para configurações correspondentes de cargas de trabalho.|
 |partialSuccess|2|Pós-processo concluído para todos os itens PolicySet, mas há falhas.|
-|sucesso|3 |Todos os itens PolicySet são implantados. Não significa que toda a implantação foi bem-sucedida. |
+|sucesso|3|Todos os itens PolicySet são implantados. Não significa que toda a implantação foi bem-sucedida. |
 |erro|4 |O processamento policySet falhou completamente.|
 |notAssigned|5 |PolicySet/PolicySetItem não é atribuído a nenhum grupo.|
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ae42f22524e82b55fad54f25632b1717a75330c41eea1343cc30470d6d84a949
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 48743f89047c148789a1d68761999e3a3fe8e151
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54186500"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58814620"
 ---
 # <a name="list-androidworkprofilecustomconfigurations"></a>Listar androidWorkProfileCustomConfigurations
 
@@ -27,9 +27,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
+|Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Application|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -117,7 +117,6 @@ Content-Length: 1721
   ]
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5108512e50639bc1905665725557f30c372ae968
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 39960405902cb10db7decc6392aabd012d1025c9
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58260664"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58819925"
 ---
 # <a name="update-grouppolicyuploadeddefinition"></a>Atualizar groupPolicyUploadedDefinition
 
@@ -65,8 +65,10 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [o group
 |categoryPath|Cadeia de caracteres|O caminho de categoria completa localizado para a política. Herdado [de groupPolicyDefinition](../resources/intune-grouppolicy-grouppolicydefinition.md)|
 |supportedOn|Cadeia de caracteres|Cadeia de caracteres localizada usada para especificar qual versão do sistema operacional ou aplicativo é afetada pela política. Herdado [de groupPolicyDefinition](../resources/intune-grouppolicy-grouppolicydefinition.md)|
 |policyType|[groupPolicyType](../resources/intune-grouppolicy-grouppolicytype.md)|Especifica o tipo de política de grupo. Herdado [de groupPolicyDefinition](../resources/intune-grouppolicy-grouppolicydefinition.md). Os valores possíveis são: `admxBacked` e `admxIngested`.|
-|hasRelatedDefinitions|Boolean|Significa se há ou não definições relacionadas a essa definição Herdadas de [groupPolicyDefinition](../resources/intune-grouppolicy-grouppolicydefinition.md)|
+|hasRelatedDefinitions|Booliano|Significa se há ou não definições relacionadas a essa definição Herdadas de [groupPolicyDefinition](../resources/intune-grouppolicy-grouppolicydefinition.md)|
 |groupPolicyCategoryId|Guid|A id de categoria da categoria pai Herdada de [groupPolicyDefinition](../resources/intune-grouppolicy-grouppolicydefinition.md)|
+|minDeviceCspVersion|Cadeia de caracteres|Versão mínima necessária do CSP para configuração do dispositivo nesta definição Herdada de [groupPolicyDefinition](../resources/intune-grouppolicy-grouppolicydefinition.md)|
+|minUserCspVersion|String|Versão mínima necessária do CSP para configuração do usuário nesta definição Herdada de [groupPolicyDefinition](../resources/intune-grouppolicy-grouppolicydefinition.md)|
 |versão|String|Definindo a versão de definição Herdada [de groupPolicyDefinition](../resources/intune-grouppolicy-grouppolicydefinition.md)|
 |id|Cadeia de caracteres|Chave da entidade. Herdado [de groupPolicyDefinition](../resources/intune-grouppolicy-grouppolicydefinition.md)|
 |lastModifiedDateTime|DateTimeOffset|A data e a hora em que a entidade foi modificada pela última vez. Herdado [de groupPolicyDefinition](../resources/intune-grouppolicy-grouppolicydefinition.md)|
@@ -83,7 +85,7 @@ Este é um exemplo da solicitação.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/groupPolicyDefinitions/{groupPolicyDefinitionId}
 Content-type: application/json
-Content-length: 426
+Content-length: 538
 
 {
   "@odata.type": "#microsoft.graph.groupPolicyUploadedDefinition",
@@ -95,6 +97,8 @@ Content-length: 426
   "policyType": "admxIngested",
   "hasRelatedDefinitions": true,
   "groupPolicyCategoryId": "4d1e97a2-97a2-4d1e-a297-1e4da2971e4d",
+  "minDeviceCspVersion": "Min Device Csp Version value",
+  "minUserCspVersion": "Min User Csp Version value",
   "version": "Version value"
 }
 ```
@@ -104,7 +108,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 539
+Content-Length: 651
 
 {
   "@odata.type": "#microsoft.graph.groupPolicyUploadedDefinition",
@@ -116,12 +120,13 @@ Content-Length: 539
   "policyType": "admxIngested",
   "hasRelatedDefinitions": true,
   "groupPolicyCategoryId": "4d1e97a2-97a2-4d1e-a297-1e4da2971e4d",
+  "minDeviceCspVersion": "Min Device Csp Version value",
+  "minUserCspVersion": "Min User Csp Version value",
   "version": "Version value",
   "id": "a5f83119-3119-a5f8-1931-f8a51931f8a5",
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00"
 }
 ```
-
 
 
 

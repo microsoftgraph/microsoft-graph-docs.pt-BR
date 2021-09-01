@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 1f5dcb07caf8a9a92835b4019515fbc3cb90f24ef6d3aca94d2ed0cdaaa9f317
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 505c57cb0ce7044344d13917bf420225637e2f74
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54242941"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58804551"
 ---
 # <a name="devicemanagementapplicabilityruleosversion-resource-type"></a>Tipo de recurso deviceManagementApplicabilityRuleOsVersion
 
@@ -49,7 +49,6 @@ Veja a seguir uma representação JSON do recurso.
   "ruleType": "String"
 }
 ```
-
 
 
 

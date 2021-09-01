@@ -1,17 +1,7 @@
 ---
-title: tipo de número allowedRemoteAssistanceActions
-description: Enumeração sinalizador indicando se um auxiliar pode estabelecer uma tela de exibição, tomar controle total e ação de assistência remota de elevação com um dispositivo ou um compartilhamento
-author: dougeby
-localization_priority: Normal
-ms.prod: intune
-doc_type: enumPageType
-ms.openlocfilehash: 8d002a27a95edc28c35dee2aeacf5e0a5a759fe5
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
-ms.translationtype: MT
-ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58265488"
+title: "allowedRemoteAssistanceActions enum type" description: "Flags enumeration indicating whether a helper can establish a "View screen", "Take full control" and "Elevation" remote assistance action with a device or sharer" author: "dougeby" localization_priority: Normal ms.prod: "intune" doc_type: enumPageType
 ---
+
 # <a name="allowedremoteassistanceactions-enum-type"></a>tipo de número allowedRemoteAssistanceActions
 
 Namespace: microsoft.graph
@@ -25,10 +15,9 @@ Enumeração de sinalizadores indicando se um auxiliar pode estabelecer uma aç�
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|viewScreen|1 |O auxiliar pode exibir a tela do dispositivo do sharer|
+|viewScreen|1|O auxiliar pode exibir a tela do dispositivo do sharer|
 |takeFullControl|2|O auxiliar pode assumir o controle total do dispositivo do sharer|
 |elevation|4 |O auxiliar pode assumir o controle total do dispositivo do sharer com privilégios elevados|
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f30752755973ff31e8fa9c22208518ff77c48ba69bec618f9c9aaaa741dedca6
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: b4827906b2bdbdfd97605d0ac3ffeae3efffc753
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54168784"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58822065"
 ---
 # <a name="list-mobileappcontents"></a>Listar mobileAppContents
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegada (conta corporativa ou de estudante)|DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
 |Delegada (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
+|Aplicativo|DeviceManagementConfiguration.Read.All, DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -78,7 +78,6 @@ Content-Length: 148
   ]
 }
 ```
-
 
 
 

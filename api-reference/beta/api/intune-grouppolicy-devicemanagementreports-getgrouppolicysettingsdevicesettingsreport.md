@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6707eb2c21e784bc152dd1c03b5259091d2f12da
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 31477342678cf0f486b15e06c792f5967fa54d7d
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58263336"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58802576"
 ---
 # <a name="getgrouppolicysettingsdevicesettingsreport-action"></a>ação getGroupPolicySettingsDeviceSettingsReport
 
@@ -27,9 +27,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
+|Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Application|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -108,7 +108,6 @@ Content-Length: 115
   "value": "Z2V0R3JvdXBQb2xpY3lTZXR0aW5nc0RldmljZVNldHRpbmdzUmVwb3J0IEludHVuZSBEb2MgU2FtcGxlIDYzMDIzNDI3MQ=="
 }
 ```
-
 
 
 

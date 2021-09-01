@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 7334391b5b23f93c01d94f148850630be76dc750db8c1d8ebe348c98bbae432d
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 6a4e0d17b424861659db0f48e145a5f53a32f02d
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54156902"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58818839"
 ---
 # <a name="get-devicemanagementscriptpolicysetitem"></a>Obter deviceManagementScriptPolicySetItem
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegada (conta corporativa ou de estudante)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 |Delegada (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
+|Aplicativo|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -87,7 +87,6 @@ Content-Length: 532
   }
 }
 ```
-
 
 
 

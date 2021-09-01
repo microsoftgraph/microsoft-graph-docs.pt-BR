@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 61491337720faee57cc3ee4c09dd7e79e5bd2f9d12763ce2a3ecaa30067a4c5e
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 9012ec9530d6a688ac3e0ba784529b3bdac1fba0
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54226592"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58818573"
 ---
 # <a name="get-windowsfeatureupdateprofile"></a>Obter windowsFeatureUpdateProfile
 
@@ -87,7 +87,6 @@ Content-Length: 620
   }
 }
 ```
-
 
 
 

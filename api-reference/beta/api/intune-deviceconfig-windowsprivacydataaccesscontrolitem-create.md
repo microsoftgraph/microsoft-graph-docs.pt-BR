@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 730f8247175511ba48c54607ac6162fde968d9f90a9fbf9a9b199b2faf9d5487
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: a2c68ebeff3293d0d7159576fb79617aa605902a
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54168539"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58809774"
 ---
 # <a name="create-windowsprivacydataaccesscontrolitem"></a>Criar windowsPrivacyDataAccessControlItem
 
@@ -27,9 +27,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
+|Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Application|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -98,7 +98,6 @@ Content-Length: 299
   "appDisplayName": "App Display Name value"
 }
 ```
-
 
 
 

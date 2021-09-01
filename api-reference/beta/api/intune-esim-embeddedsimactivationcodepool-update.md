@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c6f1863f33e018ee3db52ffb45210d1261c7a7ee15519d1ecc65669c484f9db6
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: e325b04e5994830dd34463a0bd0fcc8655505756
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54213967"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58802296"
 ---
 # <a name="update-embeddedsimactivationcodepool"></a>Atualizar embeddedSIMActivationCodePool
 
@@ -27,9 +27,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
+|Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Application|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -113,7 +113,6 @@ Content-Length: 628
   "activationCodeCount": 3
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 8a6b1105ae2158be8478c8e54b8da49e5e2c8f0e2effdeb4b6ac42c7be9447bd
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: c6378556f6f5ada92bcd3caa969b433cc57073ae
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54211209"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58804405"
 ---
 # <a name="create-deviceconfigurationgroupassignment"></a>Criar deviceConfigurationGroupAssignment
 
@@ -27,9 +27,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
+|Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Application|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -64,7 +64,7 @@ A tabela a seguir mostra as propriedades necessárias ao criar deviceConfigurati
 |:---|:---|:---|
 |id|Cadeia de caracteres|Chave da entidade.|
 |targetGroupId|Cadeia de caracteres|A ID do grupo AAD para o que estamos direcionando a configuração do dispositivo.|
-|excludeGroup|Boolean|Indica se esse grupo deve ser excluído. Padrões de que o grupo deve ser incluído|
+|excludeGroup|Boleano|Indica se esse grupo deve ser excluído. Padrões de que o grupo deve ser incluído|
 
 
 
@@ -101,7 +101,6 @@ Content-Length: 195
   "excludeGroup": true
 }
 ```
-
 
 
 

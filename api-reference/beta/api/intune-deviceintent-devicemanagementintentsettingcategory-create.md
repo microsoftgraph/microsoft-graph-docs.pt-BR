@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a5f26a1a2d56918ef6da6768d63a8ef153dcba88d89b1b7019b63653345f70a7
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: c21ddc3b0d775fdf688e9217ec0a4af7d69fe99b
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54164829"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58815999"
 ---
 # <a name="create-devicemanagementintentsettingcategory"></a>Criar deviceManagementIntentSettingCategory
 
@@ -53,9 +53,9 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar deviceMa
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|A ID da categoria Herdada [de deviceManagementSettingCategory](../resources/intune-deviceintent-devicemanagementsettingcategory.md)|
+|id|String|A ID da categoria Herdada [de deviceManagementSettingCategory](../resources/intune-deviceintent-devicemanagementsettingcategory.md)|
 |displayName|Cadeia de caracteres|O nome da categoria Herdado [de deviceManagementSettingCategory](../resources/intune-deviceintent-devicemanagementsettingcategory.md)|
-|hasRequiredSetting|Boolean|A categoria contém a configuração de nível superior necessária Herdada [de deviceManagementSettingCategory](../resources/intune-deviceintent-devicemanagementsettingcategory.md)|
+|hasRequiredSetting|Booliano|A categoria contém a configuração de nível superior necessária Herdada [de deviceManagementSettingCategory](../resources/intune-deviceintent-devicemanagementsettingcategory.md)|
 
 
 
@@ -92,7 +92,6 @@ Content-Length: 199
   "hasRequiredSetting": true
 }
 ```
-
 
 
 

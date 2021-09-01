@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 1d3756debc5cccf71bf271356545e9c345cec96775849558df1daa5a6ec4c57a
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 41f8933331b1305e28aabf83cbace9e335563f5c
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54236007"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58817338"
 ---
 # <a name="grouppolicypresentationlongdecimaltextbox-resource-type"></a>Tipo de recurso groupPolicyPresentationLongDecimalTextBox
 
@@ -41,7 +41,7 @@ Herda de [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypr
 |id|Cadeia de caracteres|Chave da entidade. Herdado [de groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
 |lastModifiedDateTime|DateTimeOffset|A data e a hora em que a entidade foi modificada pela última vez. Herdado [de groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
 |defaultValue|Int64|Um inteiro não assinado que especifica o valor inicial da caixa de texto decimal. O valor padrão é 1.|
-|spin|Boolean|Se for true, crie um controle de rotação; caso contrário, crie uma caixa de texto para entrada numérica. O valor padrão é true.|
+|spin|Booliano|Se for true, crie um controle de rotação; caso contrário, crie uma caixa de texto para entrada numérica. O valor padrão é true.|
 |spinStep|Int64|Um inteiro não assinado que especifica o incremento de alteração para o controle de rotação. O valor padrão é 1.|
 |obrigatório|Boolean|Requisito para inserir um valor na caixa de parâmetros. O valor padrão é falso.|
 |minValue|Int64|Um long não assinado que especifica o valor mínimo permitido. O valor padrão é 0.|
@@ -74,7 +74,6 @@ Veja a seguir uma representação JSON do recurso.
   "maxValue": 1024
 }
 ```
-
 
 
 

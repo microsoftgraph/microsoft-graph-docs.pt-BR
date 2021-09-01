@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: cb97fae573e9942f683c55e9ce47e30ac10216df9b66b1257f6e2a5f954ecbb0
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 5955efab3fb2b8af3854033988906de513e7ee54
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54174427"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58786562"
 ---
 # <a name="update-mobileappprovisioningconfiggroupassignment"></a>Atualizar mobileAppProvisioningConfigGroupAssignment
 
@@ -27,9 +27,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementApps.ReadWrite.All|
+|Delegado (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Application|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -89,7 +89,6 @@ Content-Length: 178
   "id": "fad873e3-73e3-fad8-e373-d8fae373d8fa"
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 085d2bd3af9b0a977079359a8c96f4bd29ea46c6
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 2b3a9fcd3dca95530e6adee0780e9897e2c5c40e
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58262624"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58802758"
 ---
 # <a name="manageddevice-resource-type"></a>Tipo de recurso managedDevice
 
@@ -28,10 +28,10 @@ Dispositivos gerenciados ou pré-registrados pelo Intune
 |[Obter managedDevice](../api/intune-devices-manageddevice-get.md)|[managedDevice](../resources/intune-devices-manageddevice.md)|Ler propriedades e relações de objetos de [managedDevice](../resources/intune-devices-manageddevice.md).|
 |[Atualizar managedDevice](../api/intune-devices-manageddevice-update.md)|[managedDevice](../resources/intune-devices-manageddevice.md)|Atualizar as propriedades de um objeto [managedDevice](../resources/intune-devices-manageddevice.md).|
 |[Ação executeAction](../api/intune-devices-manageddevice-executeaction.md)|[bulkManagedDeviceActionResult](../resources/intune-devices-bulkmanageddeviceactionresult.md)|Ainda não documentado|
-|[Ação enableLostMode](../api/intune-devices-manageddevice-enablelostmode.md)|Nenhum|Habilitar o modo perdido|
+|[Ação enableLostMode](../api/intune-devices-manageddevice-enablelostmode.md)|Nenhum(a)|Habilitar o modo perdido|
 |[Ação playLostModeSound](../api/intune-devices-manageddevice-playlostmodesound.md)|Nenhum|Bloqueio remoto|
-|[Ação setDeviceName](../api/intune-devices-manageddevice-setdevicename.md)|Nenhum|Definir o nome do dispositivo.|
-|[Ação activateDeviceEsim](../api/intune-devices-manageddevice-activatedeviceesim.md)|Nenhum|Ative o eSIM no dispositivo.|
+|[Ação setDeviceName](../api/intune-devices-manageddevice-setdevicename.md)|Nenhum(a)|Definir o nome do dispositivo.|
+|[Ação activateDeviceEsim](../api/intune-devices-manageddevice-activatedeviceesim.md)|Nenhum(a)|Ative o eSIM no dispositivo.|
 |[Ação rotateFileVaultKey](../api/intune-devices-manageddevice-rotatefilevaultkey.md)|Nenhuma|Ainda não documentado|
 |[função getFileVaultKey](../api/intune-devices-manageddevice-getfilevaultkey.md)|String|Ainda não documentado|
 |[Ação createDeviceLogCollectionRequest](../api/intune-devices-manageddevice-createdevicelogcollectionrequest.md)|[deviceLogCollectionResponse](../resources/intune-devices-devicelogcollectionresponse.md)|Ainda não documentado|
@@ -53,10 +53,10 @@ Dispositivos gerenciados ou pré-registrados pelo Intune
 |[Ação windowsDefenderScan](../api/intune-devices-manageddevice-windowsdefenderscan.md)|Nenhum|Ainda não documentado|
 |[Ação windowsDefenderUpdateSignatures](../api/intune-devices-manageddevice-windowsdefenderupdatesignatures.md)|Nenhum|Ainda não documentado|
 |[Ação updateWindowsDeviceAccount](../api/intune-devices-manageddevice-updatewindowsdeviceaccount.md)|Nenhum|Ainda não documentado|
-|[Ação revokeAppleVppLicenses](../api/intune-devices-manageddevice-revokeapplevpplicenses.md)|Nenhum|Revogar todas as licenças do Apple Vpp para um dispositivo|
-|[Ação rotateBitLockerKeys](../api/intune-devices-manageddevice-rotatebitlockerkeys.md)|Nenhum|Girar BitLockerKeys|
+|[Ação revokeAppleVppLicenses](../api/intune-devices-manageddevice-revokeapplevpplicenses.md)|Nenhum(a)|Revogar todas as licenças do Apple Vpp para um dispositivo|
+|[Ação rotateBitLockerKeys](../api/intune-devices-manageddevice-rotatebitlockerkeys.md)|Nenhum(a)|Girar BitLockerKeys|
 |[ação sendCustomNotificationToCompanyPortal](../api/intune-devices-manageddevice-sendcustomnotificationtocompanyportal.md)|Nenhuma|Ainda não documentado|
-|[Ação triggerConfigurationManagerAction](../api/intune-devices-manageddevice-triggerconfigurationmanageraction.md)|Nenhum|Ação de gatilho no cliente ConfigurationManager|
+|[Ação triggerConfigurationManagerAction](../api/intune-devices-manageddevice-triggerconfigurationmanageraction.md)|Nenhum(a)|Ação de gatilho no cliente ConfigurationManager|
 |[Ação de deprovisionamento](../api/intune-devices-manageddevice-deprovision.md)|Nenhuma|Ainda não documentado|
 |[desabilitar ação](../api/intune-devices-manageddevice-disable.md)|Nenhuma|Ainda não documentado|
 |[Ação reenvelável](../api/intune-devices-manageddevice-reenable.md)|Nenhuma|Ainda não documentado|
@@ -123,12 +123,12 @@ Dispositivos gerenciados ou pré-registrados pelo Intune
 |retireAfterDateTime|DateTimeOffset|Indica a hora após a resuspensão automática de um dispositivo devido à ação agendada. Essa propriedade é somente leitura.|
 |usersLoggedOn|[coleção loggedOnUser](../resources/intune-devices-loggedonuser.md)|Indica o último usuário conectado a um dispositivo. Essa propriedade é somente leitura.|
 |preferMdmOverGroupPolicyAppliedDateTime|DateTimeOffset|Relata que DateTime a configuração preferMdmOverGroupPolicy foi definida.  Quando definidas, as configurações do MDM do Intune substituirão as configurações da Política de Grupo se houver um conflito. Somente leitura. Essa propriedade é somente leitura.|
-|autopilotEnrolled|Boolean|Relata se o dispositivo gerenciado está inscrito por meio de piloto automático. Essa propriedade é somente leitura.|
-|requireUserEnrollmentApproval|Boolean|Relata se o dispositivo iOS gerenciado é o registro de aprovação do usuário. Essa propriedade é somente leitura.|
+|autopilotEnrolled|Booliano|Relata se o dispositivo gerenciado está inscrito por meio de piloto automático. Essa propriedade é somente leitura.|
+|requireUserEnrollmentApproval|Booliano|Relata se o dispositivo iOS gerenciado é o registro de aprovação do usuário. Essa propriedade é somente leitura.|
 |managementCertificateExpirationDate|DateTimeOffset|Relata a data de expiração do certificado de gerenciamento de dispositivo. Essa propriedade é somente leitura.|
 |iccid|Cadeia de caracteres|Identificador integrado de cartão de circuito, é o número de identificação exclusivo de um cartão SIM. Essa propriedade é somente leitura.|
 |udid|Cadeia de caracteres|Identificador de dispositivo exclusivo para dispositivos iOS e macOS. Essa propriedade é somente leitura.|
-|roleScopeTagIds|String collection|Lista de IDs de marca de escopo para esta instância do dispositivo.|
+|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de IDs de marca de escopo para esta instância do dispositivo.|
 |windowsActiveMalwareCount|Int32|Contagem de malware ativo para este dispositivo windows. Essa propriedade é somente leitura.|
 |windowsRemediatedMalwareCount|Int32|Contagem de malwares remediados para este dispositivo windows. Essa propriedade é somente leitura.|
 |notes|String|Observações sobre o dispositivo criado pelo administrador de IT|
@@ -140,7 +140,7 @@ Dispositivos gerenciados ou pré-registrados pelo Intune
 |specificationVersion|Cadeia de caracteres|Versão de especificação. Essa propriedade é somente leitura.|
 |joinType|[joinType](../resources/intune-devices-jointype.md)|Tipo de junção de dispositivo. Os valores possíveis são: `unknown`, `azureADJoined`, `azureADRegistered`, `hybridAzureADJoined`.|
 |skuFamily|Cadeia de caracteres|Família sku de dispositivo|
-|skuNumber|Int32|Número sku do dispositivo, consulte também: https://docs.microsoft.com/windows/win32/api/sysinfoapi/nf-sysinfoapi-getproductinfo . Valores válidos de 0 a 2147483647. Essa propriedade é somente leitura.|
+|skuNumber|Int32|Número sku do dispositivo, consulte também: https://docs.microsoft.com/en-us/windows/win32/api/sysinfoapi/nf-sysinfoapi-getproductinfo . Valores válidos de 0 a 2147483647. Essa propriedade é somente leitura.|
 |managementFeatures|[managedDeviceManagementFeatures](../resources/intune-devices-manageddevicemanagementfeatures.md)|Recursos de gerenciamento de dispositivos. Os valores possíveis são: `none` e `microsoftManagedDesktop`.|
 |chromeOSDeviceInfo|[Coleção chromeOSDeviceProperty](../resources/intune-devices-chromeosdeviceproperty.md)|Lista de propriedades do Dispositivo ChromeOS.|
 |enrollmentProfileName|Cadeia de caracteres|Nome do perfil de registro atribuído ao dispositivo. O valor padrão é cadeia de caracteres vazia, indicando que nenhum perfil de registro foi assginado. Essa propriedade é somente leitura.|
@@ -151,7 +151,7 @@ Dispositivos gerenciados ou pré-registrados pelo Intune
 |detectedApps|Conjunto [detectedApp](../resources/intune-devices-detectedapp.md)|Todos os aplicativos atualmente instalados no dispositivo|
 |deviceCategory|[deviceCategory](../resources/intune-shared-devicecategory.md)|Categoria do dispositivo|
 |windowsProtectionState|[windowsProtectionState](../resources/intune-devices-windowsprotectionstate.md)|O status de proteção do dispositivo.|
-|usuários|Coleção [usuário](../resources/intune-shared-user.md)|Os principais usuários associados ao dispositivo gerenciado.|
+|usuários|Coleção [user](../resources/intune-shared-user.md)|Os principais usuários associados ao dispositivo gerenciado.|
 |logCollectionRequests|[Coleção deviceLogCollectionResponse](../resources/intune-devices-devicelogcollectionresponse.md)|Lista de solicitações de conjunto de log|
 
 ## <a name="json-representation"></a>Representação JSON
@@ -366,7 +366,6 @@ Veja a seguir uma representação JSON do recurso.
   "enrollmentProfileName": "String"
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 50a60272b50bf85006e3cdb13fa00abf4208ed4c70dc16ad58b21d6b5fda00cb
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 6495d80c548f3847dd7ac88adcb3f92b14c04409
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54241532"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58807639"
 ---
 # <a name="resourceoperation-resource-type"></a>Tipo de recurso resourceOperation
 
@@ -36,11 +36,11 @@ Descreve o recurso resourceOperation (entidade) da API do Microsoft Graph (REST)
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|Cadeia de caracteres|Chave da operação de recurso. Somente leitura, gerada automaticamente.|
-|recurso|Cadeia de caracteres|Categoria de recurso à qual esta Operação pertence.|
+|recurso|Cadeia de caracteres|Categoria de recurso à qual esta Operação pertence. Essa propriedade é somente leitura.|
 |resourceName|Cadeia de caracteres|Nome do recurso em que essa operação é executada.|
 |actionName|Cadeia de caracteres|Tipo de ação em que essa operação será executada. O actionName deve ser conciso e limitado ao mínimo de palavras possível.|
-|description|Cadeia de caracteres|Descrição da operação de recurso. A descrição é usada no texto exibido com o passar o mouse para a operação quando exibida no Portal do Azure.|
-|enabledForScopeValidation|Boolean|Determina se a Permissão é validada para Escopos definidos por Atribuição de Função.|
+|descrição|Cadeia de caracteres|Descrição da operação de recurso. A descrição é usada no texto exibido com o passar o mouse para a operação quando exibida no Portal do Azure.|
+|enabledForScopeValidation|Boleano|Determina se a Permissão é validada para Escopos definidos por Atribuição de Função. Essa propriedade é somente leitura.|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -64,7 +64,6 @@ Veja a seguir uma representação JSON do recurso.
   "enabledForScopeValidation": true
 }
 ```
-
 
 
 

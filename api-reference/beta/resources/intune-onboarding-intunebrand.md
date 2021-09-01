@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: f7790c970ce7cee1cfcef9e2dfa07eb08dfeb864c4730c24b7e2cdf576fa8644
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: a30454de5ab8ccbe577c10ceddbe887a0f10a9eb
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54226270"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58816447"
 ---
 # <a name="intunebrand-resource-type"></a>Tipo de recurso intuneBrand
 
@@ -33,7 +33,7 @@ intuneBrand contém dados que são usados na personalização da aparência dos 
 |showNameNextToLogo|Booliano|Booliano que indica se o nome de exibição fornecido pelo administrador será exibido ao lado da imagem do logotipo.|
 |landingPageCustomizedImage|[mimeContent](../resources/intune-shared-mimecontent.md)|Imagem personalizada exibida na página inicial Portal da Empresa aplicativo|
 |showDisplayNameNextToLogo|Booliano|Booliano que indica se o nome de exibição fornecido pelo administrador será exibido ao lado da imagem do logotipo.|
-|roleScopeTagIds|String collection|Lista de marcas de escopo atribuídas ao perfil de identidade visual padrão|
+|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de marcas de escopo atribuídas ao perfil de identidade visual padrão|
 |contactITName|Cadeia de caracteres|Nome da pessoa/organização responsável pelo suporte de TI.|
 |contactITPhoneNumber|Cadeia de caracteres|Número de telefone da pessoa/organização responsável pelo suporte de TI.|
 |contactITEmailAddress|Cadeia de caracteres|Endereço de email da pessoa/organização responsável pelo suporte de TI.|
@@ -44,14 +44,14 @@ intuneBrand contém dados que são usados na personalização da aparência dos 
 |customPrivacyMessage|Cadeia de caracteres|A mensagem de privacidade personalizada usada para explicar o que a organização não pode ver ou fazer em dispositivos gerenciados.|
 |customCantSeePrivacyMessage|Cadeia de caracteres|A mensagem de privacidade personalizada usada para explicar o que a organização não pode ver ou fazer em dispositivos gerenciados.|
 |customCanSeePrivacyMessage|Cadeia de caracteres|A mensagem de privacidade personalizada usada para explicar o que a organização pode ver e fazer em dispositivos gerenciados.|
-|isRemoveDeviceDisabled|Boolean|Boolean que representa se o administrador desabilitou a ação "Remover Dispositivo" em dispositivos de propriedade corporativa.|
+|isRemoveDeviceDisabled|Booliano|Boolean que representa se o administrador desabilitou a ação "Remover Dispositivo" em dispositivos de propriedade corporativa.|
 |isFactoryResetDisabled|Boolean|Boolean que representa se o administrador desabilitou a ação 'Redefinição de Fábrica' em dispositivos de propriedade corporativa.|
 |companyPortalBlockedActions|[Coleção companyPortalBlockedAction](../resources/intune-shared-companyportalblockedaction.md)|Coleção de ações bloqueadas no portal da empresa de acordo com os tipos de propriedade da plataforma e do dispositivo.|
-|showAzureADEnterpriseApps|Boolean|Boolean que indica se os aplicativos Enterprise AzureAD serão mostrados em Portal da Empresa|
+|showAzureADEnterpriseApps|Booliano|Boolean que indica se os aplicativos Enterprise AzureAD serão mostrados em Portal da Empresa|
 |showOfficeWebApps|Boolean|Boolean que indica se Office WebApps serão mostrados em Portal da Empresa|
-|sendDeviceOwnershipChangePushNotification|Boolean|Boolean que indica se uma notificação por push é enviada aos usuários quando o tipo de propriedade do dispositivo muda de pessoal para corporativo|
+|sendDeviceOwnershipChangePushNotification|Booliano|Boolean que indica se uma notificação por push é enviada aos usuários quando o tipo de propriedade do dispositivo muda de pessoal para corporativo|
 |enrollmentAvailability|[enrollmentAvailabilityOptions](../resources/intune-shared-enrollmentavailabilityoptions.md)|Fluxo de registro de dispositivo personalizado exibido para o usuário final . Os valores possíveis são: `availableWithPrompts`, `availableWithoutPrompts`, `unavailable`.|
-|disableClientTelemetry|Boolean|Aplica-se à telemetria enviada de todos os clientes para o serviço do Intune. Quando desabilitado, todos os avisos de solução de problemas e problemas proativos dentro do cliente são desativados, e as configurações de telemetria aparecem inativas ou ocultas para o usuário do dispositivo.|
+|disableClientTelemetry|Booliano|Aplica-se à telemetria enviada de todos os clientes para o serviço do Intune. Quando desabilitado, todos os avisos de solução de problemas e problemas proativos dentro do cliente são desativados, e as configurações de telemetria aparecem inativas ou ocultas para o usuário do dispositivo.|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -121,7 +121,6 @@ Veja a seguir uma representação JSON do recurso.
   "disableClientTelemetry": true
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: fac916259da40d62deb1743743d5b354c95acaa14eeddd3b7585311bb0341d9a
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: c8278aca6c91675658d0e3939a4acef525d3f017
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54156482"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58806275"
 ---
 # <a name="androidforworkappconfigurationschema-resource-type"></a>Tipo de recurso androidForWorkAppConfigurationSchema
 
@@ -78,7 +78,6 @@ Veja a seguir uma representação JSON do recurso.
   ]
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 5795a34cbe5767d058a699348e6109c14c3289730458ef17e7903b0ec202bf3a
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 02378a4963f99cb21d331f739ce727d25ccce8ff
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54248506"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58795540"
 ---
 # <a name="subjectnameformat-enum-type"></a>tipo de número subjectNameFormat
 
@@ -26,15 +26,14 @@ Opções de formato de nome de assunto.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |commonName|0|Nome comum.|
-|commonNameIncludingEmail|1 |Nome comum, incluindo email.|
+|commonNameIncludingEmail|1|Nome comum, incluindo email.|
 |commonNameAsEmail|2|Nome comum como email.|
-|custom|3 |Formato de nome de assunto personalizado.|
+|custom|3|Formato de nome de assunto personalizado.|
 |commonNameAsIMEI|5 |Nome comum como IMEI.|
 |commonNameAsSerialNumber|6 |Nome comum como número de série.|
 |commonNameAsAadDeviceId|7 |Nome comum como número de série.|
 |commonNameAsIntuneDeviceId|8 |Nome comum como número de série.|
 |commonNameAsDurableDeviceId|9 |Nome comum como número de série.|
-
 
 
 

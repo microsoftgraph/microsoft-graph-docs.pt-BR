@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 07d2d0a322756e86b4aad0855fb66c090905d253a0ff2a4d7ae859db6f250350
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: b0f8fca7e35e969fd9e1eb43e0c65f2942a8ded1
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54133850"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58820250"
 ---
 # <a name="delete-managementconditionstatement"></a>Excluir managementConditionStatement
 
@@ -66,7 +66,6 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

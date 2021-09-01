@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4348ac61cd132e3ee361dd3ecc374d56d5bc177ca25521ab485b61718d00c439
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 917ff597b8dfba79afd22f263749543e1caf1379
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54172992"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58797511"
 ---
 # <a name="devicemanagementsettingstringlengthconstraint-resource-type"></a>Tipo de recurso deviceManagementSettingStringLengthConstraint
 
@@ -48,7 +48,6 @@ Veja a seguir uma representação JSON do recurso.
   "maximumLength": 1024
 }
 ```
-
 
 
 

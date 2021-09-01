@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 03a453664926c1717f5476e5b8a1315031f4a62a02eba791bab3f596b8ceb50d
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 371a9066dda5ff51a876068551fc15c7177d219c
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54170983"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58803599"
 ---
 # <a name="get-mobilethreatdefenseconnector"></a>Obter mobileThreatDefenseConnector
 
@@ -27,9 +27,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All|
+|Delegado (conta corporativa ou de estudante)|DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Application|DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -68,7 +68,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 828
+Content-Length: 884
 
 {
   "value": {
@@ -88,11 +88,11 @@ Content-Length: 828
     "macDeviceBlockedOnMissingPartnerData": true,
     "partnerUnsupportedOsVersionBlocked": true,
     "partnerUnresponsivenessThresholdInDays": 6,
-    "allowPartnerToCollectIOSApplicationMetadata": true
+    "allowPartnerToCollectIOSApplicationMetadata": true,
+    "microsoftDefenderForEndpointAttachEnabled": true
   }
 }
 ```
-
 
 
 

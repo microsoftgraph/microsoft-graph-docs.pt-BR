@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 59bcc62aff03f8320e7547dfa8a3ef0cd717ad37
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 114e0aae3a5d281bcdc3f0e8e23bde98c2d5881f
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58263853"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58816813"
 ---
 # <a name="list-activedirectorywindowsautopilotdeploymentprofiles"></a>Listar activeDirectoryWindowsAutopilotDeploymentProfiles
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegada (conta corporativa ou de estudante)|DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All|
 |Delegada (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All|
+|Aplicativo|DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -109,7 +109,6 @@ Content-Length: 1627
   ]
 }
 ```
-
 
 
 

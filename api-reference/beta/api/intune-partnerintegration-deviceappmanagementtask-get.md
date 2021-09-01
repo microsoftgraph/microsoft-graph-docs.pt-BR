@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 05eec477cf3655fdf58e5e221f0b028dd46758dd611f4d3842fe5da57b388be6
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 65663ccefab10b43987d19fa878ff3f0c5a4426d
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54215563"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58815782"
 ---
 # <a name="get-deviceappmanagementtask"></a>Obter deviceAppManagementTask
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegada (conta corporativa ou de estudante)|DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
 |Delegada (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
+|Aplicativo|DeviceManagementConfiguration.Read.All, DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -87,7 +87,6 @@ Content-Length: 551
   }
 }
 ```
-
 
 
 

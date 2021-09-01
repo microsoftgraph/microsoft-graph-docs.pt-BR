@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f4adefa01a258bfe710e19b3ef49b4640722cb1c95420bb34b57dcd7fdf1a922
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: f09a732e9a4a5c247510869d5a3aff9bc528c903
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54201682"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58806443"
 ---
 # <a name="update-deviceconfigurationconflictsummary"></a>Atualizar deviceConfigurationConflictSummary
 
@@ -27,9 +27,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
+|Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Application|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -55,7 +55,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [deviceC
 |:---|:---|:---|
 |conflictingDeviceConfigurations|Conjunto [settingSource](../resources/intune-deviceconfig-settingsource.md)|O conjunto de políticas em conflito com a configuração determinada|
 |id|Cadeia de caracteres|A id desse conjunto de políticas conflitantes. Esta id é a ids de todas as políticas em ConflictingDeviceConfigurations em ordem lexicographical separada por sublinhados.|
-|contributingSettings|String collection|O conjunto de configurações em conflito com as políticas determinadas|
+|contributingSettings|Coleção de cadeias de caracteres|O conjunto de configurações em conflito com as políticas determinadas|
 |deviceCheckinsImpacted|Int32|A contagem de checkins afetados pelas políticas e configurações conflitantes|
 
 
@@ -113,7 +113,6 @@ Content-Length: 447
   "deviceCheckinsImpacted": 6
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5dedf56d1cdd03fc14d55557f7078efe0746a4de
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 2ade3ccd31369588da3c183e85de9682e4930885
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58264749"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58814837"
 ---
 # <a name="create-devicehealthscript"></a>Criar deviceHealthScript
 
@@ -27,9 +27,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
+|Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Application|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -57,16 +57,16 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar o device
 |publicador|String|Nome do editor de scripts de saúde do dispositivo|
 |versão|String|Versão do script de saúde do dispositivo|
 |displayName|Cadeia de caracteres|Nome do script de saúde do dispositivo|
-|description|Cadeia de caracteres|Descrição do script de saúde do dispositivo|
+|descrição|Cadeia de caracteres|Descrição do script de saúde do dispositivo|
 |detectionScriptContent|Binário|Todo o conteúdo do script do powershell de detecção|
 |remediationScriptContent|Binário|Todo o conteúdo do script do powershell de correção|
 |createdDateTime|DateTimeOffset|O timestamp de quando o script de saúde do dispositivo foi criado. Essa propriedade é somente leitura.|
 |lastModifiedDateTime|DateTimeOffset|O data/hora de quando o script de saúde do dispositivo foi modificado. Essa propriedade é somente leitura.|
 |runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|Indica o tipo de contexto de execução. Os valores possíveis são: `system` e `user`.|
-|enforceSignatureCheck|Boolean|Indicar se a assinatura de script precisa ser verificada|
-|runAs32Bit|Boolean|Indicar se os scripts do PowerShell devem ser executados como 32 bits|
-|roleScopeTagIds|String collection|Lista de IDs de marca de escopo para o script de saúde do dispositivo|
-|isGlobalScript|Boolean|Determina se esse é o Script Proprietário da Microsoft. Scripts proprietários são somente leitura|
+|enforceSignatureCheck|Booliano|Indicar se a assinatura de script precisa ser verificada|
+|runAs32Bit|Boleano|Indicar se os scripts do PowerShell devem ser executados como 32 bits|
+|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de IDs de marca de escopo para o script de saúde do dispositivo|
+|isGlobalScript|Boleano|Determina se esse é o Script Proprietário da Microsoft. Scripts proprietários são somente leitura|
 |highestAvailableVersion|Cadeia de caracteres|Versão mais alta disponível para um script proprietário da Microsoft|
 |detectionScriptParameters|[Coleção deviceHealthScriptParameter](../resources/intune-devices-devicehealthscriptparameter.md)|Lista de objetos ComplexType DetectionScriptParameters.|
 |remediationScriptParameters|[Coleção deviceHealthScriptParameter](../resources/intune-devices-devicehealthscriptparameter.md)|Lista de objetos ComplexType RemediationScriptParameters.|
@@ -172,7 +172,6 @@ Content-Length: 1393
   ]
 }
 ```
-
 
 
 

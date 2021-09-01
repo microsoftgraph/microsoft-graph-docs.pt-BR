@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 715b3622e4f778d1c0f226e41966fc235c231c1aef9cf59f50e339e2d08bb936
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 0dee9095a403c98cc4cabeb76189f58a1f19f866
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54139870"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58804047"
 ---
 # <a name="update-windowsinformationprotectionnetworklearningsummary"></a>Atualizar windowsInformationProtectionNetworkLearningSummary
 
@@ -27,9 +27,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementApps.ReadWrite.All|
+|Delegado (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Application|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -92,7 +92,6 @@ Content-Length: 186
   "deviceCount": 11
 }
 ```
-
 
 
 

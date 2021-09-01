@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 648e8bb9348f8b1bea78e8c06113555d350891bea0265faa768ad8fa0dc76fc2
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 9c0f4e986483f5c4dce849295406ebad3cec721c
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54193535"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58803746"
 ---
 # <a name="windowsupdatestate-resource-type"></a>Tipo de recurso windowsUpdateState
 
@@ -28,7 +28,7 @@ Ainda não documentado
 |[Listar windowsUpdateStates](../api/intune-shared-windowsupdatestate-list.md)|[Coleção windowsUpdateState](../resources/intune-shared-windowsupdatestate.md)|Listar propriedades e relações dos [objetos windowsUpdateState.](../resources/intune-shared-windowsupdatestate.md)|
 |[Obter windowsUpdateState](../api/intune-shared-windowsupdatestate-get.md)|[windowsUpdateState](../resources/intune-shared-windowsupdatestate.md)|Ler propriedades e relações do [objeto windowsUpdateState.](../resources/intune-shared-windowsupdatestate.md)|
 |[Criar windowsUpdateState](../api/intune-shared-windowsupdatestate-create.md)|[windowsUpdateState](../resources/intune-shared-windowsupdatestate.md)|Crie um novo [objeto windowsUpdateState.](../resources/intune-shared-windowsupdatestate.md)|
-|[Excluir windowsUpdateState](../api/intune-shared-windowsupdatestate-delete.md)|Nenhum|Exclui um [windowsUpdateState](../resources/intune-shared-windowsupdatestate.md).|
+|[Excluir windowsUpdateState](../api/intune-shared-windowsupdatestate-delete.md)|Nenhum(a)|Exclui um [windowsUpdateState](../resources/intune-shared-windowsupdatestate.md).|
 |[Atualizar windowsUpdateState](../api/intune-shared-windowsupdatestate-update.md)|[windowsUpdateState](../resources/intune-shared-windowsupdatestate.md)|Atualize as propriedades de um [objeto windowsUpdateState.](../resources/intune-shared-windowsupdatestate.md)|
 
 ## <a name="properties"></a>Propriedades
@@ -39,7 +39,7 @@ Ainda não documentado
 |userId|Cadeia de caracteres|A id do usuário.|
 |deviceDisplayName|Cadeia de caracteres|Nome de exibição do dispositivo.|
 |userPrincipalName|Cadeia de caracteres|Nome principal do usuário.|
-|status|[windowsUpdateStatus](../resources/intune-deviceconfig-windowsupdatestatus.md)|Windows status udpate. Os valores possíveis são: `upToDate`, `pendingInstallation`, `pendingReboot`, `failed`.|
+|status|[windowsUpdateStatus](../resources/intune-shared-windowsupdatestatus.md)|Windows status udpate. Os valores possíveis são: `upToDate`, `pendingInstallation`, `pendingReboot`, `failed`.|
 |qualityUpdateVersion|Cadeia de caracteres|A Versão de Atualização de Qualidade do dispositivo.|
 |featureUpdateVersion|Cadeia de caracteres|A versão atual de atualização de recursos do dispositivo.|
 |lastScanDateTime|DateTimeOffset|A data em que o Windows Update Agent fez uma verificação bem-sucedida.|
@@ -71,7 +71,6 @@ Veja a seguir uma representação JSON do recurso.
   "lastSyncDateTime": "String (timestamp)"
 }
 ```
-
 
 
 

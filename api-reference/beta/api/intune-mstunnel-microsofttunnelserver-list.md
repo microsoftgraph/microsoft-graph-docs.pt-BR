@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b491428f7ac6afc39cc06f7dde0c8db93a731e6ba2f91247469be7a11be74745
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 8b469512bab7a2ce99c80e9f7bf5e4c27c44e63d
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54123164"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58818340"
 ---
 # <a name="list-microsofttunnelservers"></a>Listar microsoftTunnelServers
 
@@ -27,9 +27,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All, MicrosoftTunnelGateway.Read.All, MicrosoftTunnelGateway.ReadWrite.All|
+|Delegada (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 |Delegada (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|MicrosoftTunnelGateway.Read.All, MicrosoftTunnelGateway.ReadWrite.All|
+|Aplicativo|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -65,7 +65,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 310
+Content-Length: 422
 
 {
   "value": [
@@ -74,12 +74,13 @@ Content-Length: 310
       "id": "b5cf0aee-0aee-b5cf-ee0a-cfb5ee0acfb5",
       "displayName": "Display Name value",
       "tunnelServerHealthStatus": "healthy",
-      "lastCheckinDateTime": "2017-01-01T00:02:46.0431416-08:00"
+      "lastCheckinDateTime": "2017-01-01T00:02:46.0431416-08:00",
+      "agentImageDigest": "Agent Image Digest value",
+      "serverImageDigest": "Server Image Digest value"
     }
   ]
 }
 ```
-
 
 
 

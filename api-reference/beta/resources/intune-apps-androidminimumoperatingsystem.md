@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8054a281e2a4ec9c8133a88a0ab5a168a316f1f638619546b72404286b91ff41
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 9f77577b7cb0596fafb79d109a562957a47336c2
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54203250"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58820552"
 ---
 # <a name="androidminimumoperatingsystem-resource-type"></a>Tipo de recurso androidMinimumOperatingSystem
 
@@ -33,9 +33,9 @@ Contém propriedades para o sistema operacional mínimo obrigatório para um apl
 |v4_4|Booliano|Versão 4.4 ou posterior.|
 |v5_0|Booliano|Versão 5.0 ou posterior.|
 |v5_1|Booliano|Versão 5.1 ou posterior.|
-|v6_0|Boolean|Versão 6.0 ou posterior.|
-|v7_0|Boolean|Versão 7.0 ou posterior.|
-|v7_1|Boolean|Versão 7.1 ou posterior.|
+|v6_0|Booliano|Versão 6.0 ou posterior.|
+|v7_0|Booliano|Versão 7.0 ou posterior.|
+|v7_1|Booliano|Versão 7.1 ou posterior.|
 |v8_0|Booliano|Versão 8.0 ou posterior.|
 |v8_1|Booliano|Versão 8.1 ou posterior.|
 |v9_0|Booliano|Versão 9.0 ou posterior.|
@@ -73,7 +73,6 @@ Veja a seguir uma representação JSON do recurso.
   "v11_0": true
 }
 ```
-
 
 
 

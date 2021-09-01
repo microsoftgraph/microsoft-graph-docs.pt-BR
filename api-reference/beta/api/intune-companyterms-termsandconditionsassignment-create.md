@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ce76974ac71540757fcd9d6842623ab97e3360a8e615fe7712f73e07b5e8297f
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: a752f66f0652e6da0215879d3264ddb1f99e7cde
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54196076"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58786520"
 ---
 # <a name="create-termsandconditionsassignment"></a>Criar termsAndConditionsAssignment
 
@@ -27,9 +27,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementServiceConfig.ReadWrite.All|
+|Delegado (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Application|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -99,7 +99,6 @@ Content-Length: 436
   }
 }
 ```
-
 
 
 

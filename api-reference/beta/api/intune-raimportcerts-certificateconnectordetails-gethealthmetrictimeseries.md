@@ -1,18 +1,18 @@
 ---
-title: Obter deviceConfigurationUserStateSummary
-description: Leia propriedades e relações do objeto deviceConfigurationUserStateSummary.
+title: Ação getHealthMetricTimeSeries
+description: Ainda não documentado
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 965ecf97b1909520017f4fe075449b00bcc3ca47
+ms.openlocfilehash: 1c694c47be08e9ab2fda8268fa0ac2e4682508cc
 ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 08/31/2021
-ms.locfileid: "58802359"
+ms.locfileid: "58814018"
 ---
-# <a name="get-deviceconfigurationuserstatesummary"></a>Obter deviceConfigurationUserStateSummary
+# <a name="gethealthmetrictimeseries-action"></a>Ação getHealthMetricTimeSeries
 
 Namespace: microsoft.graph
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Leia propriedades e relações do [objeto deviceConfigurationUserStateSummary.](../resources/intune-deviceconfig-deviceconfigurationuserstatesummary.md)
+Ainda não documentado
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -37,11 +37,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 }
 -->
 ``` http
-GET /deviceManagement/deviceConfigurationUserStateSummaries
+POST /deviceManagement/certificateConnectorDetails/getHealthMetricTimeSeries
 ```
-
-## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 |Cabeçalho|Valor|
@@ -50,17 +47,37 @@ Este método dá suporte a [Parâmetros de consulta OData](/graph/query-paramete
 |Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
-Não forneça um corpo de solicitação para esse método.
+No corpo da solicitação, forneça uma representação JSON dos parâmetros.
+
+A tabela a seguir mostra os parâmetros que podem ser usados com esta ação.
+
+|Propriedade|Tipo|Descrição|
+|:---|:---|:---|
+|timeSeries|[timeSeriesParameter](../resources/intune-raimportcerts-timeseriesparameter.md)|Ainda não documentado|
+
+
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um código de resposta e um `200 OK` [objeto deviceConfigurationUserStateSummary](../resources/intune-deviceconfig-deviceconfigurationuserstatesummary.md) no corpo da resposta.
+Se tiver êxito, essa ação retornará um código de resposta e uma coleção `200 OK` [certificateConnectorHealthMetricValue](../resources/intune-raimportcerts-certificateconnectorhealthmetricvalue.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
 ### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
 ``` http
-GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurationUserStateSummaries
+POST https://graph.microsoft.com/beta/deviceManagement/certificateConnectorDetails/getHealthMetricTimeSeries
+
+Content-type: application/json
+Content-length: 242
+
+{
+  "timeSeries": {
+    "@odata.type": "microsoft.graph.timeSeriesParameter",
+    "metricName": "Metric Name value",
+    "startDateTime": "2016-12-31T23:58:46.7156189-08:00",
+    "endDateTime": "2017-01-01T00:03:30.9241974-08:00"
+  }
+}
 ```
 
 ### <a name="response"></a>Resposta
@@ -68,20 +85,17 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 361
+Content-Length: 225
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.deviceConfigurationUserStateSummary",
-    "id": "e8957887-7887-e895-8778-95e8877895e8",
-    "unknownUserCount": 0,
-    "notApplicableUserCount": 6,
-    "compliantUserCount": 2,
-    "remediatedUserCount": 3,
-    "nonCompliantUserCount": 5,
-    "errorUserCount": 14,
-    "conflictUserCount": 1
-  }
+  "value": [
+    {
+      "@odata.type": "microsoft.graph.certificateConnectorHealthMetricValue",
+      "dateTime": "2016-12-31T23:59:57.0735821-08:00",
+      "successCount": 12,
+      "failureCount": 12
+    }
+  ]
 }
 ```
 

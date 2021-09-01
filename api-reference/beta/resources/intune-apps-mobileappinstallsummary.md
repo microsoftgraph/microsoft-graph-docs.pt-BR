@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 457535cdbb49c0d70246b7532cacc5e72877b533564333e50a858135bd9b0e8e
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: d92ba2afe56607490c4bdf8b1d0443eb500be912
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54226522"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58817415"
 ---
 # <a name="mobileappinstallsummary-resource-type"></a>Tipo de recurso mobileAppInstallSummary
 
@@ -70,7 +70,6 @@ Veja a seguir uma representação JSON do recurso.
   "pendingInstallUserCount": 1024
 }
 ```
-
 
 
 

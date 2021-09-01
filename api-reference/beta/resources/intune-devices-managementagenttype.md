@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: a157111db947e9e7c186c30be6cc63a709b82922
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: f1593d4f25a3da7f631c69e105dc8652453e01f6
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58263307"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58815040"
 ---
 # <a name="managementagenttype-enum-type"></a>tipo de número managementAgentType
 
@@ -25,9 +25,9 @@ Tipo de agente de gerenciamento.
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|eas|1 |O dispositivo é gerenciado por Exchange servidor.|
+|eas|1|O dispositivo é gerenciado por Exchange servidor.|
 |mdm|2|O dispositivo é gerenciado pelo MDM do Intune.|
-|easMdm|3 |O dispositivo é gerenciado pelo servidor Exchange e pelo MDM do Intune.|
+|easMdm|3|O dispositivo é gerenciado pelo servidor Exchange e pelo MDM do Intune.|
 |intuneClient|4 |Cliente do Intune gerenciado.|
 |easIntuneClient|5 |O dispositivo é gerenciado duplo do cliente EAS e do Intune.|
 |configurationManagerClient|8 |O dispositivo é gerenciado pelo Configuration Manager.|
@@ -39,7 +39,6 @@ Tipo de agente de gerenciamento.
 |microsoft365ManagedMdm|258|Esse dispositivo é gerenciado por Microsoft 365 através do Intune.|
 |msSense|1024|Ainda não documentado|
 |intuneAosp|2048|Esse dispositivo é gerenciado pelo MDM do Intune para dispositivos AOSP (Android Open Source Project)|
-
 
 
 

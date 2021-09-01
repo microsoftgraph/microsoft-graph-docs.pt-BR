@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e48c464c19e17873b7dee59f0e3e5a54cc827adf
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: c01eb6cfbbb89d8d08b3c43f13bd0ba4edf50acb
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58261198"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58820587"
 ---
 # <a name="update-userexperienceanalyticsoverview"></a>Atualizar userExperienceAnalyticsOverview
 
@@ -27,9 +27,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
+|Delegada (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All|
 |Delegada (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
+|Aplicativo|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -151,7 +151,6 @@ Content-Length: 1054
   "resourcePerformanceHealthState": "insufficientData"
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: aaee5b1875759d00140070ae64c6c4037eae0f2dae574b5f0ee5403b3b6a5a9b
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 558f22805dad112cefdc1de203281a71f492d86e
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54220617"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58822016"
 ---
 # <a name="delete-macoswificonfiguration"></a>Excluir macOSWiFiConfiguration
 
@@ -67,7 +67,6 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

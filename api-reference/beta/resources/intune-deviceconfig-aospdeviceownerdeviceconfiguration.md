@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 30bef46d27574457d81782e468a58adc55f4d475df4d5cc0599496149b8310f4
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: b2d71e1779c63e19795ae9e7a67d066bf22aa4b1
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54245097"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58820468"
 ---
 # <a name="aospdeviceownerdeviceconfiguration-resource-type"></a>tipo de recurso aospDeviceOwnerDeviceConfiguration
 
@@ -39,18 +39,18 @@ Herda de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md
 |:---|:---|:---|
 |id|Cadeia de caracteres|Chave da entidade. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|roleScopeTagIds|String collection|Lista de marcas de escopo para esta instância entity. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de marcas de escopo para esta instância entity. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |supportsScopeTags|Boolean|Indica se a Configuração de Dispositivo subjacente dá suporte ou não à atribuição de marcas de escopo. A atribuição à propriedade ScopeTags não é permitida quando esse valor é falso e as entidades não estarão visíveis para usuários com escopo. Isso ocorre para políticas herdadas criadas no Silverlight e podem ser resolvidas excluindo e recriando a política no Portal do Azure. Essa propriedade é somente leitura. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|A aplicabilidade da edição do sistema operacional para esta Política. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|A regra de aplicabilidade da versão do sistema operacional para esta Política. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|A regra de aplicabilidade do modo de dispositivo para esta Política. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|DateTime em que o objeto foi criado. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |description|Cadeia de caracteres|O administrador forneceu a descrição da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|displayName|Cadeia de caracteres|O administrador forneceu o nome da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|displayName|String|O administrador forneceu o nome da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |versão|Int32|Versão da configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|appsAllowInstallFromUnknownSources|Boolean|Indica se o usuário tem ou não permissão para habilitar a configuração de fontes desconhecidas.|
+|appsAllowInstallFromUnknownSources|Booliano|Indica se o usuário tem ou não permissão para habilitar a configuração de fontes desconhecidas.|
 |bluetoothBlocked|Boolean|Indica se o uso do bluetooth deve ou não ser desabilitado. Quando definido como true, o bluetooth não pode ser habilitado no dispositivo.|
-|bluetoothBlockConfiguration|Boolean|Indica se um usuário deve ou não bloquear a configuração do bluetooth.|
+|bluetoothBlockConfiguration|Booliano|Indica se um usuário deve ou não bloquear a configuração do bluetooth.|
 |bluetoothBlockContactSharing|Boolean|Indica se um usuário deve ou não bloquear o compartilhamento de contatos via bluetooth.|
 |cameraBlocked|Boolean|Indica se o uso da câmera deve ou não ser desabilitado.|
 |cellularBlockWiFiTethering|Boolean|Indica se o compartilhamento de Internet por Wi-Fi deve ou não ser bloqueado.|
@@ -60,12 +60,12 @@ Herda de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md
 |passwordRequiredType|[androidDeviceOwnerRequiredPasswordType](../resources/intune-deviceconfig-androiddeviceownerrequiredpasswordtype.md)|Indica a qualidade mínima de senha necessária no dispositivo. Os valores possíveis são: `deviceDefault`, `required`, `numeric`, `numericComplex`, `alphabetic`, `alphanumeric`, `alphanumericWithSymbols`, `lowSecurityBiometric`, `customPassword`.|
 |passwordSignInFailureCountBeforeFactoryReset|Int32|Indica o número de vezes que um usuário pode inserir uma senha incorreta antes que o dispositivo seja apagado. Valores válidos de 4 a 11|
 |screenCaptureBlocked|Boolean|Indica se o recurso deve ou não ser desabilitado para fazer capturas de tela.|
-|securityAllowDebuggingFeatures|Boolean|Indica se o usuário deve ou não bloquear a habilitação de recursos de depuração no dispositivo.|
-|storageAllowUsb|Boolean|Indica se o armazenamento USB deve ou não ser bloqueado.|
-|storageBlockExternalMedia|Boolean|Indica se a mídia externa deve ou não ser bloqueado.|
-|storageBlockUsbFileTransfer|Boolean|Indica se a transferência de arquivo USB deve ou não ser bloqueado.|
-|backupBlocked|Boolean|Indica se o serviço de backup deve ou não ser bloqueado.|
-|wifiBlockEditConfigurations|Boolean|Indica se o usuário deve ou não bloquear a edição das configurações de conexão wifi.|
+|securityAllowDebuggingFeatures|Booliano|Indica se o usuário deve ou não bloquear a habilitação de recursos de depuração no dispositivo.|
+|storageAllowUsb|Booliano|Indica se o armazenamento USB deve ou não ser bloqueado.|
+|storageBlockExternalMedia|Booliano|Indica se a mídia externa deve ou não ser bloqueado.|
+|storageBlockUsbFileTransfer|Booliano|Indica se a transferência de arquivo USB deve ou não ser bloqueado.|
+|backupBlocked|Booliano|Indica se o serviço de backup deve ou não ser bloqueado.|
+|wifiBlockEditConfigurations|Booliano|Indica se o usuário deve ou não bloquear a edição das configurações de conexão wifi.|
 
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|
@@ -140,7 +140,6 @@ Veja a seguir uma representação JSON do recurso.
   "wifiBlockEditConfigurations": true
 }
 ```
-
 
 
 

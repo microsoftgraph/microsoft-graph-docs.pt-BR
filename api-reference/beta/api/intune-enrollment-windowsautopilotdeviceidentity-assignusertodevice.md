@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 9eb0ea3ba7c2ade7226b2c99cb14eb7bb44e96639dad3d54617dd99356f81065
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: c6774cf921ca95f878c017e4f44347d57317d71b
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54213974"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58821519"
 ---
 # <a name="assignusertodevice-action"></a>ação assignUserToDevice
 
@@ -83,7 +83,6 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 
