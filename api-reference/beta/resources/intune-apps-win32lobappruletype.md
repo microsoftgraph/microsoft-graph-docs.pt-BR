@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 2c3b6dcced85325068f3d25e54b8edf64c9f9617e5edaaf6581f2c8ac4ffb5be
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 16445c9aedf203eb666340a1efe98ed0a42531aa
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54210054"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58790931"
 ---
 # <a name="win32lobappruletype-enum-type"></a>Tipo denum win32LobAppRuleType
 
@@ -26,8 +26,7 @@ Contém tipos de regra para aplicativos LOB win32.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |detection|0|Regra de detecção.|
-|requirement|1 |Regra de requisito.|
-
+|requirement|1|Regra de requisito.|
 
 
 

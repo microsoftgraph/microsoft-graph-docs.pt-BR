@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: b16a4a3e1e98612af7a69b63a02fcdd681d4fa7842134681603b54abcf33e648
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 1ea1d1a0b1cb268bfa86838ec6afcb4f6751f634
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54136307"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58819147"
 ---
 # <a name="localsecurityoptionsminimumsessionsecurity-enum-type"></a>tipo de número localSecurityOptionsMinimumSessionSecurity
 
@@ -26,10 +26,9 @@ Valores possíveis para LocalSecurityOptionsMinimumSessionSecurity
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |Nenhuma|0|Enviar respostas & NTLM de LM|
-|requireNtmlV2SessionSecurity|1 |Enviar a segurança de sessão NTLMv2 & lm se negociada|
+|requireNtmlV2SessionSecurity|1|Enviar a segurança de sessão NTLMv2 & lm se negociada|
 |require128BitEncryption|2|Enviar somente & NTLM|
-|ntlmV2And128BitEncryption|3 |Enviar somente & NTLMv2|
-
+|ntlmV2And128BitEncryption|3|Enviar somente & NTLMv2|
 
 
 

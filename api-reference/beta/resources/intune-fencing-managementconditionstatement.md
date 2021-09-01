@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: bb0864749fd04fe6ba9979dd31e0a0adaf15854b
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 367739eb54144b29fc0d109174f2d89108418d0b
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58256013"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58769478"
 ---
 # <a name="managementconditionstatement-resource-type"></a>Tipo de recurso managementConditionStatement
 
@@ -28,7 +28,7 @@ Uma instrução de condição de gerenciamento é um grupo de condições de ger
 |[Gerenciamento de listasConditionStatements](../api/intune-fencing-managementconditionstatement-list.md)|[coleção managementConditionStatement](../resources/intune-fencing-managementconditionstatement.md)|Listar propriedades e relações dos objetos [managementConditionStatement.](../resources/intune-fencing-managementconditionstatement.md)|
 |[Obter managementConditionStatement](../api/intune-fencing-managementconditionstatement-get.md)|[managementConditionStatement](../resources/intune-fencing-managementconditionstatement.md)|Leia propriedades e relações do [objeto managementConditionStatement.](../resources/intune-fencing-managementconditionstatement.md)|
 |[Criar managementConditionStatement](../api/intune-fencing-managementconditionstatement-create.md)|[managementConditionStatement](../resources/intune-fencing-managementconditionstatement.md)|Crie um novo [objeto managementConditionStatement.](../resources/intune-fencing-managementconditionstatement.md)|
-|[Excluir managementConditionStatement](../api/intune-fencing-managementconditionstatement-delete.md)|Nenhum|Exclui um [managementConditionStatement](../resources/intune-fencing-managementconditionstatement.md).|
+|[Excluir managementConditionStatement](../api/intune-fencing-managementconditionstatement-delete.md)|Nenhum(a)|Exclui um [managementConditionStatement](../resources/intune-fencing-managementconditionstatement.md).|
 |[Atualizar managementConditionStatement](../api/intune-fencing-managementconditionstatement-update.md)|[managementConditionStatement](../resources/intune-fencing-managementconditionstatement.md)|Atualize as propriedades de [um objeto managementConditionStatement.](../resources/intune-fencing-managementconditionstatement.md)|
 |[função getManagementConditionStatementExpressionString](../api/intune-fencing-managementconditionstatement-getmanagementconditionstatementexpressionstring.md)|[managementConditionExpressionString](../resources/intune-fencing-managementconditionexpressionstring.md)|Ainda não documentado|
 |[função getManagementConditionStatementsForPlatform](../api/intune-fencing-managementconditionstatement-getmanagementconditionstatementsforplatform.md)|[coleção managementConditionStatement](../resources/intune-fencing-managementconditionstatement.md)|Ainda não documentado|
@@ -38,7 +38,7 @@ Uma instrução de condição de gerenciamento é um grupo de condições de ger
 |:---|:---|:---|
 |id|Cadeia de caracteres|Identificador exclusivo para a instrução de condição de gerenciamento. Valor gerado pelo sistema atribuído quando criado.|
 |displayName|Cadeia de caracteres|O nome definido pelo administrador da instrução de condição de gerenciamento.|
-|description|Cadeia de caracteres|A descrição definida pelo administrador da instrução de condição de gerenciamento.|
+|descrição|Cadeia de caracteres|A descrição definida pelo administrador da instrução de condição de gerenciamento.|
 |createdDateTime|DateTimeOffset|A hora em que a instrução de condição de gerenciamento foi criada. Lado de serviço gerado.|
 |modifiedDateTime|DateTimeOffset|A hora em que a instrução de condição de gerenciamento foi modificada pela última vez. Lado do serviço atualizado.|
 |expressão|[managementConditionExpression](../resources/intune-fencing-managementconditionexpression.md)|A expressão de instrução de condição de gerenciamento usada para avaliar se uma instrução de condição de gerenciamento foi ativada/desativada.|
@@ -77,7 +77,6 @@ Veja a seguir uma representação JSON do recurso.
   ]
 }
 ```
-
 
 
 

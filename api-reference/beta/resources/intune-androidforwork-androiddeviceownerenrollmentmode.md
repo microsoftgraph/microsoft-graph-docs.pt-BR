@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 34232ce0a8f9d3bde5b60fca7d4a1d3ac0e71bc1f558f248e44243259440bc5d
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 6aef1710fc2f8d23057111886788d8880ff64abe
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54213365"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58787894"
 ---
 # <a name="androiddeviceownerenrollmentmode-enum-type"></a>tipo de número androidDeviceOwnerEnrollmentMode
 
@@ -26,9 +26,8 @@ O modo de registro de um perfil de registro.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |corporateOwnedDedicatedDevice|0|Ainda não documentado|
-|corporateOwnedFullyManaged|1 |Ainda não documentado|
+|corporateOwnedFullyManaged|1|Ainda não documentado|
 |corporateOwnedWorkProfile|2|Ainda não documentado|
-
 
 
 

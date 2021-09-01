@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 0fec26dda4751bdd80f7ad0cfa7ee9618430d7c26468b7d4689e9e4f7c77765c
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 8f3439f53269bc6126d098016805dd541ad4ad58
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54213169"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58797293"
 ---
 # <a name="certificateissuancestates-enum-type"></a>Tipo de número certificateIssuanceStates
 
@@ -26,9 +26,9 @@ Opções de estado de emissão de certificado.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |desconhecido|0|Ainda não documentado|
-|challengeIssued|1 |Ainda não documentado|
+|challengeIssued|1|Ainda não documentado|
 |challengeIssueFailed|2|Ainda não documentado|
-|requestCreationFailed|3 |Ainda não documentado|
+|requestCreationFailed|3|Ainda não documentado|
 |requestSubmitFailed|4 |Ainda não documentado|
 |challengeValidationSucceededed|5 |Ainda não documentado|
 |challengeValidationFailed|6 |Ainda não documentado|
@@ -38,7 +38,7 @@ Opções de estado de emissão de certificado.
 |responseProcessingFailed|10 |Ainda não documentado|
 |responsePending|11 |Ainda não documentado|
 |enrollmentSucceededed|12 |Ainda não documentado|
-|enrollmentNotNeeded|13 |Ainda não documentado|
+|enrollmentNotNeeded|13|Ainda não documentado|
 |revogado|14 |Ainda não documentado|
 |removedFromCollection|15 |Ainda não documentado|
 |renewVerified|16 |Ainda não documentado|
@@ -48,7 +48,6 @@ Opções de estado de emissão de certificado.
 |deleted|20|Ainda não documentado|
 |renewalRequested| 21 |Ainda não documentado|
 |solicitado|22|Ainda não documentado|
-
 
 
 

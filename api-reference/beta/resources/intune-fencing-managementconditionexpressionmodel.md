@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 1e584a82a616966151c7e1cd3d5a6ed3b04bed391dccd5dbb51b910520145778
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 217c29c3ffc77bfce795be24c9b13b7caeebe801
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54200499"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58789302"
 ---
 # <a name="managementconditionexpressionmodel-resource-type"></a>Tipo de recurso managementConditionExpressionModel
 
@@ -44,7 +44,6 @@ Veja a seguir uma representação JSON do recurso.
   "@odata.type": "#microsoft.graph.managementConditionExpressionModel"
 }
 ```
-
 
 
 

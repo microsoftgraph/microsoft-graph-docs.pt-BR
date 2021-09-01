@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 925b645b85cce007e3078bbcb870de5daab121ebd34411170a39ab3091552766
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: a772df209993f52fafd326f5577a1caacaf4908f
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54185625"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58820208"
 ---
 # <a name="devicemanagementexchangeonpremisespolicy-resource-type"></a>Tipo de recurso deviceManagementExchangeOnPremisesPolicy
 
@@ -76,7 +76,6 @@ Veja a seguir uma representação JSON do recurso.
   ]
 }
 ```
-
 
 
 

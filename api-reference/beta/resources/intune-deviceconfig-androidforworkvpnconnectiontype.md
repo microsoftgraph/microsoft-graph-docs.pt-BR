@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 0dc2fda5bcdfbd512b6d493dae1ccdd441004f8a07bef4b976c29b3049ea7dfe
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 0af27b821ae577f7918729468d72dfa78114163d
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54236420"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58790917"
 ---
 # <a name="androidforworkvpnconnectiontype-enum-type"></a>Tipo de número androidForWorkVpnConnectionType
 
@@ -26,12 +26,11 @@ Tipo de conexão VPN do Android For Work.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |ciscoAnyConnect|0|Cisco AnyConnect.|
-|pulseSecure|1 |Pulse Secure.|
+|pulseSecure|1|Pulse Secure.|
 |f5EdgeClient|2|Cliente de Borda F5.|
-|dellSonicWallMobileConnect|3 |Dell SonicWALL Mobile Connection.|
+|dellSonicWallMobileConnect|3|Dell SonicWALL Mobile Connection.|
 |checkPointCapsuleVpn|4 |Verifique a VPN da Capsula de Ponto.|
 |citrix|5 |Citrix|
-
 
 
 

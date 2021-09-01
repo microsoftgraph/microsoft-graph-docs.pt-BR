@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 3347664d5b86211e894756d5583acf2d1415de31a781a9a875e4753675514231
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: e5eee83a61d65e2e828c40a815e376ae501141d8
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54248414"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58786324"
 ---
 # <a name="devicemanangementintentvaluetype-enum-type"></a>Tipo de número deviceManangementIntentValueType
 
@@ -26,12 +26,11 @@ Ainda não documentado
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |inteiro|0|O valor de configuração é um inteiro|
-|booliano|1 |O valor de configuração é um booleano|
-|cadeia de caracteres|2|O valor de configuração é uma cadeia de caracteres|
-|complex|3 |O valor de configuração é um objeto complexo|
+|booliano|1|O valor de configuração é um booleano|
+|string|2|O valor de configuração é uma cadeia de caracteres|
+|complex|3|O valor de configuração é um objeto complexo|
 |coleção|4 |O valor de configuração é uma coleção|
 |abstractComplex|5 |O valor de configuração é um objeto complexo abstrato|
-
 
 
 

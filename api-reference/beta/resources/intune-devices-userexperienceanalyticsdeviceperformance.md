@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 763e123689a0ea7149f164dd8a79341664bb20a3
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 1cef96408d71093d530f122ff67e9353e91339e5
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58264819"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58818060"
 ---
 # <a name="userexperienceanalyticsdeviceperformance-resource-type"></a>Tipo de recurso userExperienceAnalyticsDevicePerformance
 
@@ -55,6 +55,7 @@ A entidade de desempenho do dispositivo de análise de experiência do usuário 
 |averageBlueScreens|Duplo|Número médio (médio) de Telas Azuis por dispositivo nos últimos 14 dias. Valores válidos de 0 a 9999999|
 |averageRestarts|Duplo|Número médio (médio) de Reinicializações por dispositivo nos últimos 14 dias. Valores válidos de 0 a 9999999|
 |startupPerformanceScore|Duplo|A pontuação de desempenho de inicialização do dispositivo de análise de experiência do usuário. Valores válidos -1,79769313486232E+308 a 1.79769313486232E+308|
+|modelStartupPerformanceScore|Duplo|A pontuação de desempenho de inicialização do modelo de análise de experiência do usuário. Valores válidos -1,79769313486232E+308 a 1.79769313486232E+308|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -89,10 +90,10 @@ Veja a seguir uma representação JSON do recurso.
   "restartCount": 1024,
   "averageBlueScreens": "4.2",
   "averageRestarts": "4.2",
-  "startupPerformanceScore": "4.2"
+  "startupPerformanceScore": "4.2",
+  "modelStartupPerformanceScore": "4.2"
 }
 ```
-
 
 
 

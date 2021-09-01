@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9873d6e5a17e356ce166a90107bbf74cf8a341411fa8e741d3b989f684e967bc
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 92764f6fd5fa717698ae2ed629a80e9035274888
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54242423"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58757892"
 ---
 # <a name="userpfxcertificate-resource-type"></a>Tipo de recurso userPFXCertificate
 
@@ -28,7 +28,7 @@ Entidade que encapsula todas as informações necessárias para os certificados 
 |[Listar userPFXCertificates](../api/intune-raimportcerts-userpfxcertificate-list.md)|[Coleção userPFXCertificate](../resources/intune-raimportcerts-userpfxcertificate.md)|Listar propriedades e relações dos [objetos userPFXCertificate.](../resources/intune-raimportcerts-userpfxcertificate.md)|
 |[Obter userPFXCertificate](../api/intune-raimportcerts-userpfxcertificate-get.md)|[userPFXCertificate](../resources/intune-raimportcerts-userpfxcertificate.md)|Leia propriedades e relações do [objeto userPFXCertificate.](../resources/intune-raimportcerts-userpfxcertificate.md)|
 |[Criar userPFXCertificate](../api/intune-raimportcerts-userpfxcertificate-create.md)|[userPFXCertificate](../resources/intune-raimportcerts-userpfxcertificate.md)|Crie um novo [objeto userPFXCertificate.](../resources/intune-raimportcerts-userpfxcertificate.md)|
-|[Excluir userPFXCertificate](../api/intune-raimportcerts-userpfxcertificate-delete.md)|Nenhum|Exclui um [userPFXCertificate](../resources/intune-raimportcerts-userpfxcertificate.md).|
+|[Excluir userPFXCertificate](../api/intune-raimportcerts-userpfxcertificate-delete.md)|Nenhum(a)|Exclui um [userPFXCertificate](../resources/intune-raimportcerts-userpfxcertificate.md).|
 |[Atualizar userPFXCertificate](../api/intune-raimportcerts-userpfxcertificate-update.md)|[userPFXCertificate](../resources/intune-raimportcerts-userpfxcertificate.md)|Atualize as propriedades de [um objeto userPFXCertificate.](../resources/intune-raimportcerts-userpfxcertificate.md)|
 
 ## <a name="properties"></a>Propriedades
@@ -77,7 +77,6 @@ Veja a seguir uma representação JSON do recurso.
   "lastModifiedDateTime": "String (timestamp)"
 }
 ```
-
 
 
 

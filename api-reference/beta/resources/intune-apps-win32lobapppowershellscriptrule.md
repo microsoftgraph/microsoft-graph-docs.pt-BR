@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: ac477071846a8a787599915b5261577b2daeda95c0962fb58e4e9f66ffdfe501
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: c9239349a92a307a9047318ad9aa109d41a3cf57
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54131224"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58789972"
 ---
 # <a name="win32lobapppowershellscriptrule-resource-type"></a>Tipo de recurso win32LobAppPowerShellScriptRule
 
@@ -30,8 +30,8 @@ Herda de [win32LobAppRule](../resources/intune-apps-win32lobapprule.md)
 |:---|:---|:---|
 |ruleType|[win32LobAppRuleType](../resources/intune-apps-win32lobappruletype.md)|O tipo de regra que indica a finalidade da regra. Herdado [de win32LobAppRule](../resources/intune-apps-win32lobapprule.md). Os valores possíveis são: `detection` e `requirement`.|
 |displayName|Cadeia de caracteres|O nome de exibição da regra. Não especifique esse valor se a regra for usada para detecção.|
-|enforceSignatureCheck|Boolean|Um valor que indica se uma verificação de assinatura é imposta.|
-|runAs32Bit|Boolean|Um valor que indica se o script deve ser executado como 32 bits.|
+|enforceSignatureCheck|Boleano|Um valor que indica se uma verificação de assinatura é imposta.|
+|runAs32Bit|Boleano|Um valor que indica se o script deve ser executado como 32 bits.|
 |runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|O contexto de execução do script. Não especifique esse valor se a regra for usada para detecção. As regras de detecção de script serão executados no mesmo contexto que o contexto de instalação do aplicativo associado. Os valores possíveis são: `system` e `user`.|
 |scriptContent|Cadeia de caracteres|O conteúdo de script codificado com base64.|
 |operationType|[win32LobAppPowerShellScriptRuleOperationType](../resources/intune-apps-win32lobapppowershellscriptruleoperationtype.md)|O tipo de operação de comparação de saída de script. Use NotConfigured (o valor padrão) se a regra for usada para detecção. Os valores possíveis são: `notConfigured`, `string`, `dateTime`, `integer`, `float`, `version`, `boolean`.|
@@ -62,7 +62,6 @@ Veja a seguir uma representação JSON do recurso.
   "comparisonValue": "String"
 }
 ```
-
 
 
 

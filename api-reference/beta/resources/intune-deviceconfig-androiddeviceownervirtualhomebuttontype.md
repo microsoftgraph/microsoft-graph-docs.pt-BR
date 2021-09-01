@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 087900d4d023270fa112722bdd801d50b5c76ec55f0557314d5ae740249a0f66
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: a2db06bec2913b6efafe55c3744f4e30a1f0d199
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54145492"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58820923"
 ---
 # <a name="androiddeviceownervirtualhomebuttontype-enum-type"></a>tipo de número androidDeviceOwnerVirtualHomeButtonType
 
@@ -26,9 +26,8 @@ Tipo de botão home home virtual do Modo de Quiosque do Proprietário do Disposi
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |notConfigured|0|Não configurado; esse valor é ignorado.|
-|swipeUp|1 |Passe o dedo para cima para o botão home.|
+|swipeUp|1|Passe o dedo para cima para o botão home.|
 |flutuante|2|Botão home flutuante.|
-
 
 
 

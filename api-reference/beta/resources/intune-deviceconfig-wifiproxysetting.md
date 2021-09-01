@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: d856aad4c16b466baf14da21d352e396b04f1e5fddca664685aa3c4677fa44d5
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 7212ba0b7b55e577a8c642921dfdcf0671e36c61
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54236259"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58797884"
 ---
 # <a name="wifiproxysetting-enum-type"></a>Tipo de número wiFiProxySetting
 
@@ -26,9 +26,8 @@ Wi-Fi proxy Configurações.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |Nenhuma|0|Sem Proxy.|
-|Manual|1 |Proxy manual Configurações via Endereço e Porta.|
+|Manual|1|Proxy manual Configurações via Endereço e Porta.|
 |Automático|2|Proxy automático Configurações por URL.|
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0297e7642e091f4d9fe262c1565370c4c4161230fdba3f9f20b1677f549deb7f
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 36e421b8439fe68369a192bfe3cb246e4c3b18c1
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54125862"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58785658"
 ---
 # <a name="revokedevicelicense-action"></a>ação revokeDeviceLicense
 
@@ -27,9 +27,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementApps.ReadWrite.All|
+|Delegado (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Application|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -56,7 +56,7 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta ação.
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |managedDeviceId|Cadeia de caracteres|DeviceId para quem a licença de aplicativo atribuída deve ser revogada|
-|notifyManagedDevices|Boolean|Boolean que indica se a notificação de revogação deve ser enviada ao dispositivo|
+|notifyManagedDevices|Boleano|Boolean que indica se a notificação de revogação deve ser enviada ao dispositivo|
 
 
 
@@ -84,7 +84,6 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 
