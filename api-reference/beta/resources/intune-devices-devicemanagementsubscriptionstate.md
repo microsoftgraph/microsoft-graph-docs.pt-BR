@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 1704ffc3bb96f78225a5c23754493163d851dbeefdb44941a81786f669601eaa
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 497ed64bdbe5bf10d298ecc1813d48b43f52c92c
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54206344"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58802975"
 ---
 # <a name="devicemanagementsubscriptionstate-enum-type"></a>Tipo de número deviceManagementSubscriptionState
 
@@ -26,13 +26,12 @@ Estado de assinatura de gerenciamento de dispositivo móvel do locatário.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |pendente|0|Pending|
-|active|1 |Ativo|
+|active|1|Ativo|
 |warning|2|Aviso|
-|desabilitadas|3 |Desabilitado|
+|desabilitadas|3|Desabilitado|
 |deleted|4 |Deleted|
 |blocked|5 |Blocked|
 |lockedOut|8 |LockedOut|
-
 
 
 

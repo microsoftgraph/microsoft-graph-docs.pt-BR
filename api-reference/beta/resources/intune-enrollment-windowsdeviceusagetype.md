@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 43f016ac33ea0a6a65baaacfa4f410504d308ccb29f907a671287c5971299274
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 99e34d211bae9dabf3574c8d68c0b3665798aea4
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54249822"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58783880"
 ---
 # <a name="windowsdeviceusagetype-enum-type"></a>Tipo denum windowsDeviceUsageType
 
@@ -26,8 +26,7 @@ Ainda não documentado
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |singleUser|0|Tipo de dispositivo de usuário único|
-|compartilhado|1 |Tipo de dispositivo compartilhado|
-
+|compartilhado|1|Tipo de dispositivo compartilhado|
 
 
 

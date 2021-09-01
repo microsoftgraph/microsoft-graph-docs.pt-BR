@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 7007565f73d344cf722f4c41c3d13b3985ebd44b1ec2beff44120b8d7edebeb7
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: bef8ffa66573c62677228320c9a6ec974fc7ce59
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54182984"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58801806"
 ---
 # <a name="windowswificonfiguration-resource-type"></a>Tipo de recurso windowsWifiConfiguration
 
@@ -31,7 +31,7 @@ Herda de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md
 |[Listar windowsWifiConfigurations](../api/intune-deviceconfig-windowswificonfiguration-list.md)|[Coleção windowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md)|Listar propriedades e relações dos [objetos windowsWifiConfiguration.](../resources/intune-deviceconfig-windowswificonfiguration.md)|
 |[Obter windowsWifiConfiguration](../api/intune-deviceconfig-windowswificonfiguration-get.md)|[windowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md)|Leia propriedades e relações do [objeto windowsWifiConfiguration.](../resources/intune-deviceconfig-windowswificonfiguration.md)|
 |[Criar windowsWifiConfiguration](../api/intune-deviceconfig-windowswificonfiguration-create.md)|[windowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md)|Crie um novo [objeto windowsWifiConfiguration.](../resources/intune-deviceconfig-windowswificonfiguration.md)|
-|[Excluir windowsWifiConfiguration](../api/intune-deviceconfig-windowswificonfiguration-delete.md)|Nenhum|Exclui um [windowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md).|
+|[Excluir windowsWifiConfiguration](../api/intune-deviceconfig-windowswificonfiguration-delete.md)|Nenhum(a)|Exclui um [windowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md).|
 |[Atualizar windowsWifiConfiguration](../api/intune-deviceconfig-windowswificonfiguration-update.md)|[windowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md)|Atualize as propriedades de um [objeto windowsWifiConfiguration.](../resources/intune-deviceconfig-windowswificonfiguration.md)|
 
 ## <a name="properties"></a>Propriedades
@@ -39,13 +39,13 @@ Herda de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md
 |:---|:---|:---|
 |id|Cadeia de caracteres|Chave da entidade. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|roleScopeTagIds|String collection|Lista de marcas de escopo para esta instância entity. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|supportsScopeTags|Boolean|Indica se a Configuração de Dispositivo subjacente dá suporte ou não à atribuição de marcas de escopo. A atribuição à propriedade ScopeTags não é permitida quando esse valor é falso e as entidades não estarão visíveis para usuários com escopo. Isso ocorre para políticas herdadas criadas no Silverlight e podem ser resolvidas excluindo e recriando a política no Portal do Azure. Essa propriedade é somente leitura. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de marcas de escopo para esta instância entity. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|supportsScopeTags|Boleano|Indica se a Configuração de Dispositivo subjacente dá suporte ou não à atribuição de marcas de escopo. A atribuição à propriedade ScopeTags não é permitida quando esse valor é falso e as entidades não estarão visíveis para usuários com escopo. Isso ocorre para políticas herdadas criadas no Silverlight e podem ser resolvidas excluindo e recriando a política no Portal do Azure. Essa propriedade é somente leitura. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|A aplicabilidade da edição do sistema operacional para esta Política. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|A regra de aplicabilidade da versão do sistema operacional para esta Política. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|A regra de aplicabilidade do modo de dispositivo para esta Política. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|DateTime em que o objeto foi criado. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|description|Cadeia de caracteres|O administrador forneceu a descrição da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|descrição|Cadeia de caracteres|O administrador forneceu a descrição da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |displayName|Cadeia de caracteres|O administrador forneceu o nome da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |versão|Int32|Versão da configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |preSharedKey|Cadeia de caracteres|Esta é a chave pré-compartilhada para a rede WPA Personal Wi-Fi.|
@@ -53,14 +53,14 @@ Herda de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md
 |meteredConnectionLimit|[meteredConnectionLimitType](../resources/intune-deviceconfig-meteredconnectionlimittype.md)|Especifique o tipo de limite de conexão limitado para a conexão wifi. Os valores possíveis são: `unrestricted`, `fixed`, `variable`.|
 |ssid|Cadeia de caracteres|Especifique o SSID da conexão wifi.|
 |networkName|Cadeia de caracteres|Especifique o nome da configuração de rede.|
-|connectAutomatically|Boolean|Especifique se a conexão wifi deve se conectar automaticamente quando estiver no intervalo.|
-|connectToPreferredNetwork|Boolean|Especifique se a conexão wifi deve se conectar a redes mais preferenciais quando já estiver conectada a essa.  Requer Que ConnectAutomatically seja verdadeiro.|
-|connectWhenNetworkNameIsHidden|Boolean|Especifique se a conexão wifi deve se conectar automaticamente mesmo quando o SSID não estiver transmitindo.|
+|connectAutomatically|Boleano|Especifique se a conexão wifi deve se conectar automaticamente quando estiver no intervalo.|
+|connectToPreferredNetwork|Booliano|Especifique se a conexão wifi deve se conectar a redes mais preferenciais quando já estiver conectada a essa.  Requer Que ConnectAutomatically seja verdadeiro.|
+|connectWhenNetworkNameIsHidden|Boleano|Especifique se a conexão wifi deve se conectar automaticamente mesmo quando o SSID não estiver transmitindo.|
 |proxySetting|[wiFiProxySetting](../resources/intune-deviceconfig-wifiproxysetting.md)|Especifique a configuração de proxy Wi-Fi configuração. Os valores possíveis são: `none`, `manual`, `automatic`.|
 |proxyManualAddress|Cadeia de caracteres|Especifique o endereço IP do servidor proxy.|
 |proxyManualPort|Int32|Especifique a porta para o servidor proxy.|
 |proxyAutomaticConfigurationUrl|Cadeia de caracteres|Especifique a URL do script de configuração do servidor proxy.|
-|forceFIPSCompliance|Boolean|Especifique se deve forçar a conformidade fips.|
+|forceFIPSCompliance|Boleano|Especifique se deve forçar a conformidade fips.|
 
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|
@@ -130,7 +130,6 @@ Veja a seguir uma representação JSON do recurso.
   "forceFIPSCompliance": true
 }
 ```
-
 
 
 

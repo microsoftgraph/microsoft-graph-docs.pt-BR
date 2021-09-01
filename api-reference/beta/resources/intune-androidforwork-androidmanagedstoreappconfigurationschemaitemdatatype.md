@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 79111cc076696092da3048907fce09912955b76bde8333c9797d31ad66decc0a
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: c32d43ced47d236c45dc5a0fbae8074013e39e1a
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54200646"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58784258"
 ---
 # <a name="androidmanagedstoreappconfigurationschemaitemdatatype-enum-type"></a>tipo de número androidManagedStoreAppConfigurationSchemaItemDataType
 
@@ -26,14 +26,13 @@ Tipo de dados para um item de configuração dentro do esquema de configuração
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |bool|0|Ainda não documentado|
-|inteiro|1 |Ainda não documentado|
-|cadeia de caracteres|2|Ainda não documentado|
-|choice|3 |Ainda não documentado|
+|inteiro|1|Ainda não documentado|
+|string|2|Ainda não documentado|
+|choice|3|Ainda não documentado|
 |multiselect|4 |Ainda não documentado|
 |pacote|5 |Ainda não documentado|
 |bundleArray|6 |Ainda não documentado|
 |hidden|7 |Ainda não documentado|
-
 
 
 

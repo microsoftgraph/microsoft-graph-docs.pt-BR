@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: d26159cb0cc578232c3c01e30afc963570cd85546a516e058fa31aa7edbc6557
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: c528321798aef2512dcc4144d58d372944b5dfee
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54236497"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58794466"
 ---
 # <a name="androiddeviceownerbatterypluggedmode-enum-type"></a>tipo de número androidDeviceOwnerBatteryPluggedMode
 
@@ -26,10 +26,9 @@ Valores possíveis do Proprietário do Dispositivo Android para estados dos modo
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |notConfigured|0|Não configurado; esse valor é ignorado.|
-|ac|1 |A fonte de energia é um carregador AC.|
+|ac|1|A fonte de energia é um carregador AC.|
 |usb|2|Fonte de energia é uma porta USB.|
-|wireless|3 |A fonte de energia é sem fio.|
-
+|wireless|3|A fonte de energia é sem fio.|
 
 
 

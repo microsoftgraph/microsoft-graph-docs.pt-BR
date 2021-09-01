@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9001213490d1a504d3c4096a31cbecfa3fabe13b1e4e3a4e2c1994735ca2831e
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 4657cbd3ff5ea358a6cfca315b32ff87e0f5b5e7
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54133303"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58816272"
 ---
 # <a name="devicemanagementconfigurationoptiondefinition-resource-type"></a>Tipo de recurso deviceManagementConfigurationOptionDefinition
 
@@ -31,7 +31,7 @@ Ainda não documentado
 |itemId|Cadeia de caracteres|Identificador de opção|
 |description|Cadeia de caracteres|Descrição da opção|
 |helpText|Cadeia de caracteres|Texto de ajuda da opção|
-|nome|Cadeia de caracteres|Nome da opção|
+|nome|String|Nome da opção|
 |displayName|Cadeia de caracteres|Nome amigável da opção|
 
 ## <a name="relationships"></a>Relações
@@ -282,7 +282,6 @@ Veja a seguir uma representação JSON do recurso.
   "displayName": "String"
 }
 ```
-
 
 
 

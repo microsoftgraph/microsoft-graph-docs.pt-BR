@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9d4b3f66f76a5aa7837dbd3b58189ec42c884d2ff88e804417f433495455d552
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 1a352cabf78bf1dac298d2048aafcd3c3a4d38bc
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54150203"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58794368"
 ---
 # <a name="localizednotificationmessage-resource-type"></a>tipo de recurso localizedNotificationMessage
 
@@ -63,7 +63,6 @@ Veja a seguir uma representação JSON do recurso.
   "isDefault": true
 }
 ```
-
 
 
 

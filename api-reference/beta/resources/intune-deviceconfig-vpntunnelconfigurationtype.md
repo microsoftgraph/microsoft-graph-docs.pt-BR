@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 88cb3e0fa1846d3e302dd40abcfc1de69956d68312fe3f7848ff2f41a44ebf36
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: dda81ee6fb35023c9ce06d3f24c00c0826c6b9ed
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54185814"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58778007"
 ---
 # <a name="vpntunnelconfigurationtype-enum-type"></a>Tipo de número vpnTunnelConfigurationType
 
@@ -26,9 +26,8 @@ O tipo de túnel que estará presente ao cliente VPN para configuração
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |wifiAndCellular|0|Túnel WiFi e Celular|
-|cellular|1 |Somente Tunnel celular|
+|cellular|1|Somente Tunnel celular|
 |wifi|2|WiFi Tunnel Somente|
-
 
 
 

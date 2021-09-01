@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: de026e42f21b29327620f3170fa4d3e8117af01342b0e494bafa949efb1c8261
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 7ac94541351c417b8f6ec3d49cc66898557ab3cf
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54178861"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58817646"
 ---
 # <a name="microsofttunnelsite-resource-type"></a>Tipo de recurso microsoftTunnelSite
 
@@ -30,15 +30,22 @@ Entidade que representa um Microsoft Tunnel site
 |[Criar microsoftTunnelSite](../api/intune-mstunnel-microsofttunnelsite-create.md)|[microsoftTunnelSite](../resources/intune-mstunnel-microsofttunnelsite.md)|Crie um novo [objeto microsoftTunnelSite.](../resources/intune-mstunnel-microsofttunnelsite.md)|
 |[Excluir microsoftTunnelSite](../api/intune-mstunnel-microsofttunnelsite-delete.md)|Nenhum|Exclui um [microsoftTunnelSite](../resources/intune-mstunnel-microsofttunnelsite.md).|
 |[Atualizar microsoftTunnelSite](../api/intune-mstunnel-microsofttunnelsite-update.md)|[microsoftTunnelSite](../resources/intune-mstunnel-microsofttunnelsite.md)|Atualize as propriedades de um [objeto microsoftTunnelSite.](../resources/intune-mstunnel-microsofttunnelsite.md)|
+|[Ação requestUpgrade](../api/intune-mstunnel-microsofttunnelsite-requestupgrade.md)|Nenhuma|Ainda não documentado|
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|Cadeia de caracteres|Id do MicrosoftTunnelSite|
-|displayName|Cadeia de caracteres|O nome de exibição do MicrosoftTunnelSite|
+|displayName|String|O nome de exibição do MicrosoftTunnelSite|
 |description|Cadeia de caracteres|Descrição do MicrosoftTunnelSite|
 |publicAddress|Cadeia de caracteres|O nome de domínio público do MicrosoftTunnelSite ou o endereço IP|
-|roleScopeTagIds|String collection|Lista de marcas de escopo para esta instância entity.|
+|upgradeWindowUtcOffsetInMinutes|Int32|O timezone do site representado como um deslocamento de minuto do UTC|
+|upgradeWindowStartTime|TimeOfDay|Hora de início da janela de atualização do site|
+|upgradeWindowEndTime|TimeOfDay|Hora de término da janela de atualização do site|
+|upgradeAutomatically|Booliano|A configuração de atualização automática do site. True para atualizações automáticas, false para controle manual|
+|upgradeAvailable|Booliano|True se uma atualização estiver disponível|
+|internalNetworkProbeUrl|Cadeia de caracteres|A URL da Sonda de Acesso à Rede Interna do MicrosoftTunnelSite|
+|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de marcas de escopo para esta instância entity.|
 
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|
@@ -61,12 +68,17 @@ Veja a seguir uma representação JSON do recurso.
   "displayName": "String",
   "description": "String",
   "publicAddress": "String",
+  "upgradeWindowUtcOffsetInMinutes": 1024,
+  "upgradeWindowStartTime": "String (time of day)",
+  "upgradeWindowEndTime": "String (time of day)",
+  "upgradeAutomatically": true,
+  "upgradeAvailable": true,
+  "internalNetworkProbeUrl": "String",
   "roleScopeTagIds": [
     "String"
   ]
 }
 ```
-
 
 
 

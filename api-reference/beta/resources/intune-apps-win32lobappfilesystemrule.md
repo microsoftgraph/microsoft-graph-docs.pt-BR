@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: bcc304ee18138aaa570fc0b008f6de6c02e0ce144938b46411b05153490ef8b6
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: f04af0ddb3ec005dc69a560c89f22e865ceeb23b
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54240054"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58787628"
 ---
 # <a name="win32lobappfilesystemrule-resource-type"></a>Tipo de recurso win32LobAppFileSystemRule
 
@@ -31,7 +31,7 @@ Herda de [win32LobAppRule](../resources/intune-apps-win32lobapprule.md)
 |ruleType|[win32LobAppRuleType](../resources/intune-apps-win32lobappruletype.md)|O tipo de regra que indica a finalidade da regra. Herdado [de win32LobAppRule](../resources/intune-apps-win32lobapprule.md). Os valores possíveis são: `detection` e `requirement`.|
 |caminho|String|O arquivo ou o caminho da pasta a ser olhado para cima.|
 |fileOrFolderName|Cadeia de caracteres|O arquivo ou o nome da pasta a ser olhado.|
-|check32BitOn64System|Boolean|Um valor que indica se as variáveis de ambiente devem ser expandidas no contexto de 32 bits em sistemas de 64 bits.|
+|check32BitOn64System|Boleano|Um valor que indica se as variáveis de ambiente devem ser expandidas no contexto de 32 bits em sistemas de 64 bits.|
 |operationType|[win32LobAppFileSystemOperationType](../resources/intune-apps-win32lobappfilesystemoperationtype.md)|O tipo de operação do sistema de arquivos. Os valores possíveis são: `notConfigured`, `exists`, `modifiedDate`, `createdDate`, `version`, `sizeInMB`, `doesNotExist`.|
 |operator|[win32LobAppRuleOperator](../resources/intune-apps-win32lobappruleoperator.md)|O operador para detecção de arquivo ou pasta. Os valores possíveis são: `notConfigured`, `equal`, `notEqual`, `greaterThan`, `greaterThanOrEqual`, `lessThan`, `lessThanOrEqual`.|
 |comparisonValue|Cadeia de caracteres|O valor de comparação de arquivo ou pasta.|
@@ -58,7 +58,6 @@ Veja a seguir uma representação JSON do recurso.
   "comparisonValue": "String"
 }
 ```
-
 
 
 

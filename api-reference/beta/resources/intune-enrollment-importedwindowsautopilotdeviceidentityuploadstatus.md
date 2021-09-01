@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 8cb965fa20fbc0608a305e1bf683208d4f236e26e6787bdb945f618c7aff1c05
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 2b584acc240d56f804d5a194c7dd1338934f9c0d
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54214975"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58802744"
 ---
 # <a name="importedwindowsautopilotdeviceidentityuploadstatus-enum-type"></a>tipo de número importedWindowsAutopilotDeviceIdentityUploadStatus
 
@@ -26,10 +26,9 @@ Ainda não documentado
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |noUpload|0|Nenhum status de carregamento.|
-|pendente|1 |Status pendente.|
+|pendente|1|Status pendente.|
 |complete|2|Status completo.|
-|erro|3 |Status do erro.|
-
+|erro|3|Status do erro.|
 
 
 

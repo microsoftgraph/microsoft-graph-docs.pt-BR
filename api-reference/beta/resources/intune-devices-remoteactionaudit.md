@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: a3cf9a0c16063c0f2fcd359598a677fa59ad042f49472077be354bc40854ed75
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: edf1acc4839c8bead5cf2b24477c26b9ccd1087b
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54249864"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58787269"
 ---
 # <a name="remoteactionaudit-resource-type"></a>Tipo de recurso remoteActionAudit
 
@@ -28,7 +28,7 @@ Relatório de ações remotas iniciadas nos dispositivos pertencentes a um deter
 |[Listar remoteActionAudits](../api/intune-devices-remoteactionaudit-list.md)|[Coleção remoteActionAudit](../resources/intune-devices-remoteactionaudit.md)|Listar propriedades e relações dos [objetos remoteActionAudit.](../resources/intune-devices-remoteactionaudit.md)|
 |[Obter remoteActionAudit](../api/intune-devices-remoteactionaudit-get.md)|[remoteActionAudit](../resources/intune-devices-remoteactionaudit.md)|Leia propriedades e relações do [objeto remoteActionAudit.](../resources/intune-devices-remoteactionaudit.md)|
 |[Criar remoteActionAudit](../api/intune-devices-remoteactionaudit-create.md)|[remoteActionAudit](../resources/intune-devices-remoteactionaudit.md)|Crie um novo [objeto remoteActionAudit.](../resources/intune-devices-remoteactionaudit.md)|
-|[Excluir remoteActionAudit](../api/intune-devices-remoteactionaudit-delete.md)|Nenhum|Exclui um [remoteActionAudit](../resources/intune-devices-remoteactionaudit.md).|
+|[Excluir remoteActionAudit](../api/intune-devices-remoteactionaudit-delete.md)|Nenhum(a)|Exclui um [remoteActionAudit](../resources/intune-devices-remoteactionaudit.md).|
 |[Atualizar remoteActionAudit](../api/intune-devices-remoteactionaudit-update.md)|[remoteActionAudit](../resources/intune-devices-remoteactionaudit.md)|Atualize as propriedades de [um objeto remoteActionAudit.](../resources/intune-devices-remoteactionaudit.md)|
 
 ## <a name="properties"></a>Propriedades
@@ -71,7 +71,6 @@ Veja a seguir uma representação JSON do recurso.
   "managedDeviceId": "String"
 }
 ```
-
 
 
 

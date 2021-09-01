@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 920b28aed62eac3b603773e5024d4d8ed5d3f9beff453e4b9f185d6d7f103e8b
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 9e1654bd7f616e56c970fde7f8c2864fdae3d784
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54133079"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58787213"
 ---
 # <a name="vpptokenactionfailurereason-enum-type"></a>Tipo denum vppTokenActionFailureReason
 
@@ -26,11 +26,10 @@ Possíveis tipos de motivos para uma falha de ação de token do Programa de Com
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |Nenhuma|0|Nenhum.|
-|appleFailure|1 |Houve um erro no serviço da Apple.|
+|appleFailure|1|Houve um erro no serviço da Apple.|
 |internalError|2|Houve um erro interno.|
-|expiredVppToken|3 |Houve um erro porque o token do Programa de Compra de Volume da Apple expirou.|
+|expiredVppToken|3|Houve um erro porque o token do Programa de Compra de Volume da Apple expirou.|
 |expiredApplePushNotificationCertificate|4 |Houve um erro porque o certificado de Notificação por Push do Programa de Compra de Volume da Apple expirou.|
-
 
 
 

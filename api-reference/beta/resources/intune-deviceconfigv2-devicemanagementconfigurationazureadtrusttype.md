@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 8e1ad171e3abc0f1f9258ef6caf1d548304ac69cf93105305a3fb1e4c89f3ef1
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 078e88ea7a31641beed8711e0bb96fed25e9fe10
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54139471"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58785980"
 ---
 # <a name="devicemanagementconfigurationazureadtrusttype-enum-type"></a>Tipo de número deviceManagementConfigurationAzureAdTrustType
 
@@ -26,10 +26,9 @@ Tipo de confiança obrigatório do AAD
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |Nenhuma|0|Nenhum tipo de confiança do AAD especificado|
-|azureAdJoined|1 |Tipo de confiança ingressou no AAD|
+|azureAdJoined|1|Tipo de confiança ingressou no AAD|
 |addWorkAccount|2|AddWorkAccount|
 |mdmOnly|4 |Somente MDM|
-
 
 
 

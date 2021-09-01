@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 0c1c1e78fe1ea9e93f7544feee3b07bb92bc2b3bc08b5f8ecd0c5da821802c17
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: f32a095a71304d81dd77ab5e711042a613f3e932
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54150476"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58786730"
 ---
 # <a name="androidvpnconnectiontype-enum-type"></a>Tipo de número androidVpnConnectionType
 
@@ -26,15 +26,14 @@ Tipo de conexão VPN do Android.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |ciscoAnyConnect|0|Cisco AnyConnect.|
-|pulseSecure|1 |Pulse Secure.|
+|pulseSecure|1|Pulse Secure.|
 |f5EdgeClient|2|Cliente de Borda F5.|
-|dellSonicWallMobileConnect|3 |Dell SonicWALL Mobile Connection.|
+|dellSonicWallMobileConnect|3|Dell SonicWALL Mobile Connection.|
 |checkPointCapsuleVpn|4 |Verifique a VPN da Capsula de Ponto.|
 |citrix|5 |Citrix|
 |microsoftTunnel|7 |Microsoft Tunnel.|
 |netMotionMobility|8 |NetMotion Mobility.|
 |microsoftProtect|9 |Microsoft Protect.|
-
 
 
 
