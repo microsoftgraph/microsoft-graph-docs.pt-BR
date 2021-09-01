@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 99cb73939904d69709b6a77c84eac37685dbe476b7349c23818c428b11b552d1
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 8d93cfcc922e08b8e7a87a9121b5bec44cca5e41
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54173318"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58783264"
 ---
 # <a name="win32lobappregistrydetection-resource-type"></a>Tipo de recurso win32LobAppRegistryDetection
 
@@ -28,7 +28,7 @@ Herda de [win32LobAppDetection](../resources/intune-apps-win32lobappdetection.md
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|check32BitOn64System|Boolean|Um valor que indica se esse caminho do Registro é para verificar o aplicativo de 32 bits no sistema de 64 bits|
+|check32BitOn64System|Boleano|Um valor que indica se esse caminho do Registro é para verificar o aplicativo de 32 bits no sistema de 64 bits|
 |keyPath|Cadeia de caracteres|O caminho da chave do Registro para detectar o aplicativo Win32 Line of Business (LoB)|
 |valueName|Cadeia de caracteres|O nome do valor do Registro|
 |detectionType|[win32LobAppRegistryDetectionType](../resources/intune-apps-win32lobappregistrydetectiontype.md)|O tipo de detecção de dados do Registro. Os possíveis valores são: `notConfigured`, `exists`, `doesNotExist`, `string`, `integer`, `version`.|
@@ -56,7 +56,6 @@ Veja a seguir uma representação JSON do recurso.
   "detectionValue": "String"
 }
 ```
-
 
 
 

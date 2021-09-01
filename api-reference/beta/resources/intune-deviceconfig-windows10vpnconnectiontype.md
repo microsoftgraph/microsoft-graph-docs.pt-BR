@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: a40210ecf2235b89b47e73c5d22e442fbafef3d2e8a11eb52bca0f535d42f604
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 0746cd4dbd76e4ec436660818b75b027edb018e6
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54206505"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58784216"
 ---
 # <a name="windows10vpnconnectiontype-enum-type"></a>Tipo de número do windows10VpnConnectionType
 
@@ -26,9 +26,9 @@ Tipos de conexão VPN.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |pulseSecure|0|Pulse Secure.|
-|f5EdgeClient|1 |Cliente de Borda F5.|
+|f5EdgeClient|1|Cliente de Borda F5.|
 |dellSonicWallMobileConnect|2|Dell SonicWALL Mobile Connection.|
-|checkPointCapsuleVpn|3 |Verifique a VPN da Capsula de Ponto.|
+|checkPointCapsuleVpn|3|Verifique a VPN da Capsula de Ponto.|
 |Automático|4 |Automático.|
 |ikEv2|5 |IKEv2.|
 |l2tp|6 |L2TP.|
@@ -36,7 +36,6 @@ Tipos de conexão VPN.
 |citrix|8 |Citrix.|
 |paloAltoGlobalProtect|9 |Palo Alto Networks GlobalProtect.|
 |ciscoAnyConnect|10 |Cisco AnyConnect|
-
 
 
 

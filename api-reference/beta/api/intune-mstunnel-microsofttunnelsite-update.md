@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 4271cf24080835c7a2cfa411c164020865c98e53b47f3dbb9250fbc6cea54a5a
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 671f5b986430a4a4a2a6ccf9fe753afe8cb9e0d6
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54213834"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58785518"
 ---
 # <a name="update-microsofttunnelsite"></a>Atualizar microsoftTunnelSite
 
@@ -27,9 +27,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All, MicrosoftTunnelGateway.Read.All, MicrosoftTunnelGateway.ReadWrite.All|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|MicrosoftTunnelGateway.ReadWrite.All|
+|Delegado (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Application|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -55,9 +55,15 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [o micro
 |:---|:---|:---|
 |id|Cadeia de caracteres|Id do MicrosoftTunnelSite|
 |displayName|Cadeia de caracteres|O nome de exibição do MicrosoftTunnelSite|
-|description|Cadeia de caracteres|Descrição do MicrosoftTunnelSite|
+|descrição|Cadeia de caracteres|Descrição do MicrosoftTunnelSite|
 |publicAddress|Cadeia de caracteres|O nome de domínio público do MicrosoftTunnelSite ou o endereço IP|
-|roleScopeTagIds|String collection|Lista de marcas de escopo para esta instância entity.|
+|upgradeWindowUtcOffsetInMinutes|Int32|O timezone do site representado como um deslocamento de minuto do UTC|
+|upgradeWindowStartTime|TimeOfDay|Hora de início da janela de atualização do site|
+|upgradeWindowEndTime|TimeOfDay|Hora de término da janela de atualização do site|
+|upgradeAutomatically|Boleano|A configuração de atualização automática do site. True para atualizações automáticas, false para controle manual|
+|upgradeAvailable|Booliano|True se uma atualização estiver disponível|
+|internalNetworkProbeUrl|Cadeia de caracteres|A URL da Sonda de Acesso à Rede Interna do MicrosoftTunnelSite|
+|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de marcas de escopo para esta instância entity.|
 
 
 
@@ -71,13 +77,19 @@ Este é um exemplo da solicitação.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/microsoftTunnelSites/{microsoftTunnelSiteId}
 Content-type: application/json
-Content-length: 246
+Content-length: 524
 
 {
   "@odata.type": "#microsoft.graph.microsoftTunnelSite",
   "displayName": "Display Name value",
   "description": "Description value",
   "publicAddress": "Public Address value",
+  "upgradeWindowUtcOffsetInMinutes": 15,
+  "upgradeWindowStartTime": "12:01:27.3030000",
+  "upgradeWindowEndTime": "11:57:17.9830000",
+  "upgradeAutomatically": true,
+  "upgradeAvailable": true,
+  "internalNetworkProbeUrl": "https://example.com/internalNetworkProbeUrl/",
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
   ]
@@ -89,7 +101,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 295
+Content-Length: 573
 
 {
   "@odata.type": "#microsoft.graph.microsoftTunnelSite",
@@ -97,12 +109,17 @@ Content-Length: 295
   "displayName": "Display Name value",
   "description": "Description value",
   "publicAddress": "Public Address value",
+  "upgradeWindowUtcOffsetInMinutes": 15,
+  "upgradeWindowStartTime": "12:01:27.3030000",
+  "upgradeWindowEndTime": "11:57:17.9830000",
+  "upgradeAutomatically": true,
+  "upgradeAvailable": true,
+  "internalNetworkProbeUrl": "https://example.com/internalNetworkProbeUrl/",
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
   ]
 }
 ```
-
 
 
 

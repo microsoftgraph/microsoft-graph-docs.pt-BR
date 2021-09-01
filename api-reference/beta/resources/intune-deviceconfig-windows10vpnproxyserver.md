@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: f4c3d98660ffdf28b291fc4e5547f572a5ba907b2c2c9712623cbba718807a63
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: b60102b1139bc1c869082016afb1436bcf061b94
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54219973"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58785735"
 ---
 # <a name="windows10vpnproxyserver-resource-type"></a>Tipo de recurso windows10VpnProxyServer
 
@@ -31,7 +31,7 @@ Herda de [vpnProxyServer](../resources/intune-deviceconfig-vpnproxyserver.md)
 |automaticConfigurationScriptUrl|Cadeia de caracteres|Url de script de configuração automática do proxy. Herdado [de vpnProxyServer](../resources/intune-deviceconfig-vpnproxyserver.md)|
 |address|Cadeia de caracteres|Endereço. Herdado [de vpnProxyServer](../resources/intune-deviceconfig-vpnproxyserver.md)|
 |port|Int32|Porta. Valores válidos de 0 a 65535 Herdados de [vpnProxyServer](../resources/intune-deviceconfig-vpnproxyserver.md)|
-|bypassProxyServerForLocalAddress|Boolean|Ignorar o servidor proxy para endereço local.|
+|bypassProxyServerForLocalAddress|Boleano|Ignorar o servidor proxy para endereço local.|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -52,7 +52,6 @@ Veja a seguir uma representação JSON do recurso.
   "bypassProxyServerForLocalAddress": true
 }
 ```
-
 
 
 

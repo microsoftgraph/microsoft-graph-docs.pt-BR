@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: f6899594f226c7d5515d79464d9c80e7a90a2f84c40196804e2015fb832369f5
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: a13e7e50696d834440aa02bb16be7b0fcf00db61
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54124756"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58798410"
 ---
 # <a name="dmaguarddeviceenumerationpolicytype-enum-type"></a>Tipo de número dmaGuardDeviceEnumerationPolicyType
 
@@ -26,9 +26,8 @@ Valores possíveis do DmaGuardDeviceEnumerationPolicy.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |deviceDefault|0|Valor padrão. Os dispositivos com drivers incompatíveis de remapping DMA só serão enumerados depois que o usuário desbloquear a tela.|
-|blockAll|1 |Os dispositivos com drivers incompatíveis de remapping DMA nunca terão permissão para iniciar e executar o DMA a qualquer momento.|
+|blockAll|1|Os dispositivos com drivers incompatíveis de remapping DMA nunca terão permissão para iniciar e executar o DMA a qualquer momento.|
 |allowAll|2|Todos os dispositivos PCIe compatíveis com DMA externos serão enumerados a qualquer momento.|
-
 
 
 

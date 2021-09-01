@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: b24b05396a5b436d2c029cfe3991ccbab8cfbce665088d2f67ca62629f7d85c8
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: a259b72691654ac979f65cbe4f445578743a491c
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54251411"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58797877"
 ---
 # <a name="wifisecuritytype-enum-type"></a>Tipo de número wiFiSecurityType
 
@@ -26,12 +26,11 @@ Wi-Fi Tipos de Segurança.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |open|0|Open (Sem Autenticação).|
-|wpaPersonal|1 |WPA-Personal.|
+|wpaPersonal|1|WPA-Personal.|
 |wpaEnterprise|2|WPA-Enterprise. Deve usar o tipo IOSEnterpriseWifiConfiguration para configurar as opções corporativas.|
-|wep|3 |Criptografia WEP.|
+|wep|3|Criptografia WEP.|
 |wpa2Personal|4 |WPA2-Personal.|
 |wpa2Enterprise|5 |WPA2-Enterprise. Deve usar o tipo WindowsWifiEnterpriseEAPConfiguration para configurar as opções corporativas.|
-
 
 
 

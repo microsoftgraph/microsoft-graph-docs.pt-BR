@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: fd11ce13e39d2c2caf9ee3a910186c7fd9d3e5d00310a9dcd05ecf48931f5ffc
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 6ba9bae6e18b154a38830dbe0f4d452ed43633a0
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54131294"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58804040"
 ---
 # <a name="macoslobapp-resource-type"></a>Tipo de recurso macOSLobApp
 
@@ -31,7 +31,7 @@ Herda de [mobileLobApp](../resources/intune-apps-mobilelobapp.md)
 |[Listar macOSLobApps](../api/intune-apps-macoslobapp-list.md)|[Coleção macOSLobApp](../resources/intune-apps-macoslobapp.md)|Listar propriedades e relações dos [objetos macOSLobApp.](../resources/intune-apps-macoslobapp.md)|
 |[Obter macOSLobApp](../api/intune-apps-macoslobapp-get.md)|[macOSLobApp](../resources/intune-apps-macoslobapp.md)|Leia propriedades e relações do [objeto macOSLobApp.](../resources/intune-apps-macoslobapp.md)|
 |[Criar macOSLobApp](../api/intune-apps-macoslobapp-create.md)|[macOSLobApp](../resources/intune-apps-macoslobapp.md)|Crie um novo [objeto macOSLobApp.](../resources/intune-apps-macoslobapp.md)|
-|[Excluir macOSLobApp](../api/intune-apps-macoslobapp-delete.md)|Nenhum|Exclui um [macOSLobApp](../resources/intune-apps-macoslobapp.md).|
+|[Excluir macOSLobApp](../api/intune-apps-macoslobapp-delete.md)|Nenhum(a)|Exclui um [macOSLobApp](../resources/intune-apps-macoslobapp.md).|
 |[Atualizar macOSLobApp](../api/intune-apps-macoslobapp-update.md)|[macOSLobApp](../resources/intune-apps-macoslobapp.md)|Atualize as propriedades de um [objeto macOSLobApp.](../resources/intune-apps-macoslobapp.md)|
 
 ## <a name="properties"></a>Propriedades
@@ -39,7 +39,7 @@ Herda de [mobileLobApp](../resources/intune-apps-mobilelobapp.md)
 |:---|:---|:---|
 |id|Cadeia de caracteres|Chave da entidade. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
 |displayName|Cadeia de caracteres|O título do aplicativo importado ou definido pelo administrador. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
-|description|Cadeia de caracteres|A descrição do aplicativo. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
+|descrição|Cadeia de caracteres|A descrição do aplicativo. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
 |publicador|String|O publicador do aplicativo. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
 |largeIcon|[mimeContent](../resources/intune-shared-mimecontent.md)|O ícone grande, a ser exibido nos detalhes do aplicativo e usado para o carregamento do ícone. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
 |createdDateTime|DateTimeOffset|A data e a hora da criação do aplicativo. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
@@ -53,7 +53,7 @@ Herda de [mobileLobApp](../resources/intune-apps-mobilelobapp.md)
 |uploadState|Int32|O estado de carregamento. Os valores possíveis são: 0 - `Not Ready` , 1 - `Ready` , 2 - `Processing` . Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
 |publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|O estado de publicação do aplicativo. O aplicativo não pode ser assinado, a menos que ele seja publicado. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md). Os valores possíveis são: `notPublished`, `processing`, `published`.|
 |isAssigned|Boolean|O valor que indica se o aplicativo é atribuído a pelo menos um grupo. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
-|roleScopeTagIds|String collection|Lista de ids de marca de escopo para este aplicativo móvel. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
+|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de ids de marca de escopo para este aplicativo móvel. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
 |dependentAppCount|Int32|O número total de dependências que o aplicativo filho tem. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
 |supersedingAppCount|Int32|O número total de aplicativos que esse aplicativo sobressede direta ou indiretamente. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
 |supersededAppCount|Int32|O número total de aplicativos pelos quais esse aplicativo é, direta ou indiretamente, é suplido. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
@@ -67,9 +67,9 @@ Herda de [mobileLobApp](../resources/intune-apps-mobilelobapp.md)
 |childApps|[Coleção macOSLobChildApp](../resources/intune-apps-macoslobchildapp.md)|A lista de aplicativos neste pacote de pacotes|
 |identityVersion|String|A versão da identidade.|
 |md5HashChunkSize|Int32|O tamanho da parte do hash MD5|
-|md5Hash|String collection|Os códigos de hash MD5|
+|md5Hash|Coleção de cadeias de caracteres|Os códigos de hash MD5|
 |ignoreVersionDetection|Boolean|Um booliano para controlar se a versão do aplicativo será usada para detectar o aplicativo depois que ele for instalado em um dispositivo. Defina isso como true para aplicativos macOS Line of Business (LoB) que usam um recurso de atualização automática.|
-|installAsManaged|Boolean|Um booleano para controlar se o aplicativo será instalado como gerenciado (exige macOS 11.0 e outras restrições de PKG).|
+|installAsManaged|Boleano|Um booleano para controlar se o aplicativo será instalado como gerenciado (exige macOS 11.0 e outras restrições de PKG).|
 
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|
@@ -134,7 +134,8 @@ Veja a seguir uma representação JSON do recurso.
     "v10_13": true,
     "v10_14": true,
     "v10_15": true,
-    "v11_0": true
+    "v11_0": true,
+    "v12_0": true
   },
   "buildNumber": "String",
   "versionNumber": "String",
@@ -155,7 +156,6 @@ Veja a seguir uma representação JSON do recurso.
   "installAsManaged": true
 }
 ```
-
 
 
 
