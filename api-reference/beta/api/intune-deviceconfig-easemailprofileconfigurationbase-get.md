@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f406dfdef2a2277a28b1b1e701ee24a912808605138fd0799b6e28df4cb428c3
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 9ed71180df88166c01b2d0e4986077183d4c89f7
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54134116"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58820811"
 ---
 # <a name="get-easemailprofileconfigurationbase"></a>Obter easEmailProfileConfigurationBase
 
@@ -113,7 +113,6 @@ Content-Length: 1486
   }
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: f765879c82e8cf3ffa6d0597faf9054f2b3e880279ddf9be3e6f6cc44755c7b9
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: e78b584f908e1c257d645719bb220c05324fc790
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54227236"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58791078"
 ---
 # <a name="pfxusercertificate-resource-type"></a>Tipo de recurso pfxUserCertificate
 
@@ -28,7 +28,7 @@ Ainda não documentado
 |[Listar pfxUserCertificates](../api/intune-raimportcerts-pfxusercertificate-list.md)|[Coleção pfxUserCertificate](../resources/intune-raimportcerts-pfxusercertificate.md)|Listar propriedades e relações dos objetos [pfxUserCertificate.](../resources/intune-raimportcerts-pfxusercertificate.md)|
 |[Obter pfxUserCertificate](../api/intune-raimportcerts-pfxusercertificate-get.md)|[pfxUserCertificate](../resources/intune-raimportcerts-pfxusercertificate.md)|Leia propriedades e relações do objeto [pfxUserCertificate.](../resources/intune-raimportcerts-pfxusercertificate.md)|
 |[Criar pfxUserCertificate](../api/intune-raimportcerts-pfxusercertificate-create.md)|[pfxUserCertificate](../resources/intune-raimportcerts-pfxusercertificate.md)|Crie um novo [objeto pfxUserCertificate.](../resources/intune-raimportcerts-pfxusercertificate.md)|
-|[Excluir pfxUserCertificate](../api/intune-raimportcerts-pfxusercertificate-delete.md)|Nenhum|Exclui um [pfxUserCertificate](../resources/intune-raimportcerts-pfxusercertificate.md).|
+|[Excluir pfxUserCertificate](../api/intune-raimportcerts-pfxusercertificate-delete.md)|Nenhum(a)|Exclui um [pfxUserCertificate](../resources/intune-raimportcerts-pfxusercertificate.md).|
 |[Atualizar pfxUserCertificate](../api/intune-raimportcerts-pfxusercertificate-update.md)|[pfxUserCertificate](../resources/intune-raimportcerts-pfxusercertificate.md)|Atualize as propriedades de um [objeto pfxUserCertificate.](../resources/intune-raimportcerts-pfxusercertificate.md)|
 
 ## <a name="properties"></a>Propriedades
@@ -85,7 +85,6 @@ Veja a seguir uma representação JSON do recurso.
   "eTag": "String"
 }
 ```
-
 
 
 

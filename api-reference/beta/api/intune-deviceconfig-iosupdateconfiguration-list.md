@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: dfec53dfe1078ade2a2ffbe9f89a86d46a43c23a06d3be48fa610a33cfc84e3c
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 8a9a488dd1b41ef8f6ff7062df052ceaae5e17c8
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54225395"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58821897"
 ---
 # <a name="list-iosupdateconfigurations"></a>Listar iosUpdateConfigurations
 
@@ -126,7 +126,6 @@ Content-Length: 2005
   ]
 }
 ```
-
 
 
 

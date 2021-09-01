@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: ebe47c45ba3b15d0b6b2101a5d7c60d717e4744dd299747e9ba4ca485c6577b2
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 6144091708f3abfea6aa0f8e0b4ac7284cf58580
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54153192"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58787024"
 ---
 # <a name="androiddeviceownerkioskmodemanagedfolder-resource-type"></a>Tipo de recurso androidDeviceOwnerKioskModeManagedFolder
 
@@ -27,7 +27,7 @@ Uma pasta que contém páginas de aplicativos e weblinks na Tela Inicial Gerenci
 |:---|:---|:---|
 |folderName|Cadeia de caracteres|Nome para exibição da pasta|
 |folderIdentifier|Cadeia de caracteres|Identificador exclusivo da pasta|
-|items|[coleção androidDeviceOwnerKioskModeFolderItem](../resources/intune-deviceconfig-androiddeviceownerkioskmodefolderitem.md)|Itens a serem adicionados à pasta gerenciada. Esta coleção pode conter um máximo de 500 elementos.|
+|itens|[coleção androidDeviceOwnerKioskModeFolderItem](../resources/intune-deviceconfig-androiddeviceownerkioskmodefolderitem.md)|Itens a serem adicionados à pasta gerenciada. Esta coleção pode conter um máximo de 500 elementos.|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -53,7 +53,6 @@ Veja a seguir uma representação JSON do recurso.
   ]
 }
 ```
-
 
 
 

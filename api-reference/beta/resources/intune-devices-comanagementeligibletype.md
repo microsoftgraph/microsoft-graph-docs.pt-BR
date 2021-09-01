@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: beed45e61bab69617d46191fa69bd7b43663651574584b2c8e8ea4cf537ba7b8
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: c8e2f1e413521967ef2fd23a3146facfbdbb6fc7
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54182822"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58790140"
 ---
 # <a name="comanagementeligibletype-enum-type"></a>Tipo de número comanagementEligibleType
 
@@ -25,12 +25,11 @@ Ainda não documentado
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|comanado|1 |Ainda não documentado|
+|comanado|1|Ainda não documentado|
 |qualificado|2|Ainda não documentado|
-|eligibleButNotAzureAdJoined|3 |Ainda não documentado|
+|eligibleButNotAzureAdJoined|3|Ainda não documentado|
 |needsOsUpdate|4 |Ainda não documentado|
 |inelegível|5 |Ainda não documentado|
-
 
 
 

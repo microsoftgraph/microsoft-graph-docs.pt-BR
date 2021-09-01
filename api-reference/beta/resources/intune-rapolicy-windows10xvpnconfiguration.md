@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d904341074505a548dc7dd82ea9806fca898935ecd1363285fb7d40483f705cc
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 337b04d5cb0cdffbd588ec5f8f1bb78d77a12673
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54224450"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58790371"
 ---
 # <a name="windows10xvpnconfiguration-resource-type"></a>Tipo de recurso windows10XVpnConfiguration
 
@@ -31,7 +31,7 @@ Herda de [deviceManagementResourceAccessProfileBase](../resources/intune-rapolic
 |[Listar windows10XVpnConfigurations](../api/intune-rapolicy-windows10xvpnconfiguration-list.md)|[Coleção windows10XVpnConfiguration](../resources/intune-rapolicy-windows10xvpnconfiguration.md)|Listar propriedades e relações dos objetos [windows10XVpnConfiguration.](../resources/intune-rapolicy-windows10xvpnconfiguration.md)|
 |[Obter windows10XVpnConfiguration](../api/intune-rapolicy-windows10xvpnconfiguration-get.md)|[windows10XVpnConfiguration](../resources/intune-rapolicy-windows10xvpnconfiguration.md)|Leia propriedades e relações do [objeto windows10XVpnConfiguration.](../resources/intune-rapolicy-windows10xvpnconfiguration.md)|
 |[Criar windows10XVpnConfiguration](../api/intune-rapolicy-windows10xvpnconfiguration-create.md)|[windows10XVpnConfiguration](../resources/intune-rapolicy-windows10xvpnconfiguration.md)|Crie um novo [objeto windows10XVpnConfiguration.](../resources/intune-rapolicy-windows10xvpnconfiguration.md)|
-|[Excluir windows10XVpnConfiguration](../api/intune-rapolicy-windows10xvpnconfiguration-delete.md)|Nenhum|Exclui um [windows10XVpnConfiguration](../resources/intune-rapolicy-windows10xvpnconfiguration.md).|
+|[Excluir windows10XVpnConfiguration](../api/intune-rapolicy-windows10xvpnconfiguration-delete.md)|Nenhum(a)|Exclui um [windows10XVpnConfiguration](../resources/intune-rapolicy-windows10xvpnconfiguration.md).|
 |[Atualizar windows10XVpnConfiguration](../api/intune-rapolicy-windows10xvpnconfiguration-update.md)|[windows10XVpnConfiguration](../resources/intune-rapolicy-windows10xvpnconfiguration.md)|Atualize as propriedades de um [objeto windows10XVpnConfiguration.](../resources/intune-rapolicy-windows10xvpnconfiguration.md)|
 
 ## <a name="properties"></a>Propriedades
@@ -40,10 +40,10 @@ Herda de [deviceManagementResourceAccessProfileBase](../resources/intune-rapolic
 |id|Cadeia de caracteres|Identificador de perfil Herdado [de deviceManagementResourceAccessProfileBase](../resources/intune-rapolicy-devicemanagementresourceaccessprofilebase.md)|
 |versão|Int32|Versão do perfil Herdado de [deviceManagementResourceAccessProfileBase](../resources/intune-rapolicy-devicemanagementresourceaccessprofilebase.md)|
 |displayName|Cadeia de caracteres|Nome de exibição de perfil Herdado [de deviceManagementResourceAccessProfileBase](../resources/intune-rapolicy-devicemanagementresourceaccessprofilebase.md)|
-|description|Cadeia de caracteres|Descrição de perfil [Herdada de deviceManagementResourceAccessProfileBase](../resources/intune-rapolicy-devicemanagementresourceaccessprofilebase.md)|
+|descrição|Cadeia de caracteres|Descrição de perfil [Herdada de deviceManagementResourceAccessProfileBase](../resources/intune-rapolicy-devicemanagementresourceaccessprofilebase.md)|
 |creationDateTime|DateTimeOffset|Perfil DateTime foi criado Herdado de [deviceManagementResourceAccessProfileBase](../resources/intune-rapolicy-devicemanagementresourceaccessprofilebase.md)|
 |lastModifiedDateTime|DateTimeOffset|O perfil DateTime foi modificado pela última vez Herdado de [deviceManagementResourceAccessProfileBase](../resources/intune-rapolicy-devicemanagementresourceaccessprofilebase.md)|
-|roleScopeTagIds|String collection|Marcas de escopo herdadas [de deviceManagementResourceAccessProfileBase](../resources/intune-rapolicy-devicemanagementresourceaccessprofilebase.md)|
+|roleScopeTagIds|Coleção de cadeias de caracteres|Marcas de escopo herdadas [de deviceManagementResourceAccessProfileBase](../resources/intune-rapolicy-devicemanagementresourceaccessprofilebase.md)|
 |authenticationCertificateId|Guid|ID do Certificado de Autenticação|
 |customXmlFileName|Cadeia de caracteres|Nome do arquivo Xml personalizado.|
 |customXml|Binário|Comandos XML personalizados que configuram a conexão VPN. (Codificação de byte UTF8)|
@@ -78,7 +78,6 @@ Veja a seguir uma representação JSON do recurso.
   "customXml": "binary"
 }
 ```
-
 
 
 

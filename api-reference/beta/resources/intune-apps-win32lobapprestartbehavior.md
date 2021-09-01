@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: d850410b5380864988b9bd43abed41d9729138dbecd7d11f615da063a2b21c7f
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 8baa75316942581ef92d8e2c737db0c64de78dec
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54153255"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58799252"
 ---
 # <a name="win32lobapprestartbehavior-enum-type"></a>Tipo denum win32LobAppRestartBehavior
 
@@ -26,10 +26,9 @@ Indica o tipo de ação de reinicialização.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |basedOnReturnCode|0|O Intune reiniciará o dispositivo após executar a instalação do aplicativo se a operação retornar um código de reinicialização.|
-|allow|1 |O Intune não tomará nenhuma ação específica sobre códigos de reinicialização resultantes de instalações do aplicativo. O Intune não tentará suprimir reinicializações para aplicativos MSI.|
+|allow|1|O Intune não tomará nenhuma ação específica sobre códigos de reinicialização resultantes de instalações do aplicativo. O Intune não tentará suprimir reinicializações para aplicativos MSI.|
 |suppress|2|O Intune tentará suprimir reinicializações para aplicativos MSI.|
-|force|3 |O Intune força o dispositivo a reiniciar imediatamente após a operação de instalação do aplicativo.|
-
+|force|3|O Intune força o dispositivo a reiniciar imediatamente após a operação de instalação do aplicativo.|
 
 
 

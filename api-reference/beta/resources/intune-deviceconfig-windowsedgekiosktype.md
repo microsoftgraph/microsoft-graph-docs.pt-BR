@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 486274a6bab954bf84af195d67a4dfbc96247c1c8fc7a248eaa5bae846a49f44
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 4628de813b291730edba769ea0b991abf5fd6f19
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54179099"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58819686"
 ---
 # <a name="windowsedgekiosktype-enum-type"></a>Tipo de número windowsEdgeKioskType
 
@@ -26,8 +26,7 @@ Tipo de quiosque de borda
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |publicBrowsing|0|navegação pública|
-|fullScreen|1 |fullscreen|
-
+|fullScreen|1|fullscreen|
 
 
 

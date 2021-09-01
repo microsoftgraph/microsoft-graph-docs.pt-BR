@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: ead732e65cf3119f974f2fa6b29da14cc3dd180b1211dcba1a5dd1db90cc71eb
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 1c34a3d9a9b5d0b4078256fdd16e8f0a9ae833c6
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54251404"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58821652"
 ---
 # <a name="windowsfirewallrule-resource-type"></a>Tipo de recurso windowsFirewallRule
 
@@ -31,10 +31,10 @@ Uma regra que controla o tráfego por meio Windows Firewall.
 |filePath|Cadeia de caracteres|O caminho completo do arquivo de um aplicativo afetado pela regra de firewall.|
 |serviceName|Cadeia de caracteres|O nome usado nos casos em que um serviço, não um aplicativo, está enviando ou recebendo tráfego.|
 |protocol|Int32|0-255 número representando o protocolo IP (TCP = 6, UDP = 17). Se não for especificado, o padrão será All. Valores válidos de 0 a 255|
-|localPortRanges|String collection|Lista de intervalos de portas locais. Por exemplo, "100-120", "200", "300-320". Se não for especificado, o padrão será All.|
-|remotePortRanges|String collection|Lista de intervalos de portas remotas. Por exemplo, "100-120", "200", "300-320". Se não for especificado, o padrão será All.|
-|localAddressRanges|String collection|Lista de endereços locais abordados pela regra. Padrão é qualquer endereço. Os tokens válidos incluem:<ul><li>"*" indica qualquer endereço local. Se presente, esse deve ser o único token incluído.</li><li>Uma sub-rede pode ser especificada usando a notação de prefixo de rede ou máscara de sub-rede. Se nem uma máscara de sub-rede nem um prefixo de rede for especificado, a máscara de sub-rede será padrão para 255.255.255.255.</li><li>Um endereço IPv6 válido.</li><li>Um intervalo de endereços IPv4 no formato "endereço inicial - endereço final" sem espaços incluídos.</li><li>Um intervalo de endereços IPv6 no formato "endereço inicial - endereço final" sem espaços incluídos.</li></ul>|
-|remoteAddressRanges|String collection|Lista de tokens que especificam os endereços remotos cobertos pela regra. Tokens não são maiúsculas de minúsculas. Padrão é qualquer endereço. Os tokens válidos incluem:<ul><li>"*" indica qualquer endereço remoto. Se presente, esse deve ser o único token incluído.</li><li>"Defaultgateway"</li><li>"DHCP"</li><li>"DNS"</li><li>"WINS"</li><li>"Intranet" (com suporte Windows versões 1809+)</li><li>"RmtIntranet" (com suporte Windows versões 1809+)</li><li>"Internet" (com suporte em Windows versões 1809+)</li><li>"Ply2Renders" (com suporte Windows versões 1809+)</li><li>"LocalSubnet" indica qualquer endereço local na sub-rede local.</li><li>Uma sub-rede pode ser especificada usando a notação de prefixo de rede ou máscara de sub-rede. Se nem uma máscara de sub-rede nem um prefixo de rede for especificado, a máscara de sub-rede será padrão para 255.255.255.255.</li><li>Um endereço IPv6 válido.</li><li>Um intervalo de endereços IPv4 no formato "endereço inicial - endereço final" sem espaços incluídos.</li><li>Um intervalo de endereços IPv6 no formato "endereço inicial - endereço final" sem espaços incluídos.</li></ul>|
+|localPortRanges|Coleção de cadeias de caracteres|Lista de intervalos de portas locais. Por exemplo, "100-120", "200", "300-320". Se não for especificado, o padrão será All.|
+|remotePortRanges|Coleção String|Lista de intervalos de portas remotas. Por exemplo, "100-120", "200", "300-320". Se não for especificado, o padrão será All.|
+|localAddressRanges|Coleção String|Lista de endereços locais abordados pela regra. Padrão é qualquer endereço. Os tokens válidos incluem:<ul><li>"*" indica qualquer endereço local. Se presente, esse deve ser o único token incluído.</li><li>Uma sub-rede pode ser especificada usando a notação de prefixo de rede ou máscara de sub-rede. Se nem uma máscara de sub-rede nem um prefixo de rede for especificado, a máscara de sub-rede será padrão para 255.255.255.255.</li><li>Um endereço IPv6 válido.</li><li>Um intervalo de endereços IPv4 no formato "endereço inicial - endereço final" sem espaços incluídos.</li><li>Um intervalo de endereços IPv6 no formato "endereço inicial - endereço final" sem espaços incluídos.</li></ul>|
+|remoteAddressRanges|Coleção de cadeias de caracteres|Lista de tokens que especificam os endereços remotos cobertos pela regra. Tokens não são maiúsculas de minúsculas. Padrão é qualquer endereço. Os tokens válidos incluem:<ul><li>"*" indica qualquer endereço remoto. Se presente, esse deve ser o único token incluído.</li><li>"Defaultgateway"</li><li>"DHCP"</li><li>"DNS"</li><li>"WINS"</li><li>"Intranet" (com suporte Windows versões 1809+)</li><li>"RmtIntranet" (com suporte Windows versões 1809+)</li><li>"Internet" (com suporte em Windows versões 1809+)</li><li>"Ply2Renders" (com suporte Windows versões 1809+)</li><li>"LocalSubnet" indica qualquer endereço local na sub-rede local.</li><li>Uma sub-rede pode ser especificada usando a notação de prefixo de rede ou máscara de sub-rede. Se nem uma máscara de sub-rede nem um prefixo de rede for especificado, a máscara de sub-rede será padrão para 255.255.255.255.</li><li>Um endereço IPv6 válido.</li><li>Um intervalo de endereços IPv4 no formato "endereço inicial - endereço final" sem espaços incluídos.</li><li>Um intervalo de endereços IPv6 no formato "endereço inicial - endereço final" sem espaços incluídos.</li></ul>|
 |profileTypes|[windowsFirewallRuleNetworkProfileTypes](../resources/intune-deviceconfig-windowsfirewallrulenetworkprofiletypes.md)|Especifica os perfis aos quais a regra pertence. Se não for especificado, o padrão será All. Os valores possíveis são: `notConfigured`, `domain`, `private`, `public`.|
 |ação|[stateManagementSetting](../resources/intune-deviceconfig-statemanagementsetting.md)|A ação que a regra impõe. Se não for especificado, o padrão será Allowed. Os valores possíveis são: `notConfigured`, `blocked`, `allowed`.|
 |trafficDirection|[windowsFirewallRuleTrafficDirectionType](../resources/intune-deviceconfig-windowsfirewallruletrafficdirectiontype.md)|A direção de tráfego para a qual a regra está habilitada. Se não for especificado, o padrão será Out. Os valores possíveis são: `notConfigured` , `out` , `in` .|
@@ -81,7 +81,6 @@ Veja a seguir uma representação JSON do recurso.
   "localUserAuthorizations": "String"
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: ad26d82265a14681f7e5e85a92490becc82448816fd6c378565ff6eab21dde51
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: b9b5207a232eac160880d0bbf9b0151aaa353dc0
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54248492"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58821666"
 ---
 # <a name="microsoftlauncherdockpresence-enum-type"></a>Tipo denum microsoftLauncherDockPresence
 
@@ -26,10 +26,9 @@ Microsoft Launcher Seleção de Presença do Dock.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |notConfigured|0|Não configurado; esse valor é ignorado.|
-|programa|1 |Indica que o encaixe do dispositivo será exibido no dispositivo.|
+|programa|1|Indica que o encaixe do dispositivo será exibido no dispositivo.|
 |hide|2|Indica que o encaixe do dispositivo ficará oculto no dispositivo, mas o usuário pode acessar o encaixe arrastando o manipulador na parte inferior da tela.|
-|desabilitadas|3 |Indica que o encaixe do dispositivo será desabilitado no dispositivo.|
-
+|desabilitadas|3|Indica que o encaixe do dispositivo será desabilitado no dispositivo.|
 
 
 

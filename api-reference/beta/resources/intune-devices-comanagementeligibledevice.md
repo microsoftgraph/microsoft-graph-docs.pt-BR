@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 20246ef4318d4b5509c99c470849410430b52879
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 647554e93a790787d7acc4eb05a6e0bca5afe6d2
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58264826"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58806632"
 ---
 # <a name="comanagementeligibledevice-resource-type"></a>Tipo de recurso comanagementEligibleDevice
 
@@ -28,7 +28,7 @@ Estado Co-Management de qualificação do dispositivo
 |[Listar comanagementEligibleDevices](../api/intune-devices-comanagementeligibledevice-list.md)|[Coleção comanagementEligibleDevice](../resources/intune-devices-comanagementeligibledevice.md)|Listar propriedades e relações dos [objetos comanagementEligibleDevice.](../resources/intune-devices-comanagementeligibledevice.md)|
 |[Obter comanagementEligibleDevice](../api/intune-devices-comanagementeligibledevice-get.md)|[comanagementEligibleDevice](../resources/intune-devices-comanagementeligibledevice.md)|Leia propriedades e relações do [objeto comanagementEligibleDevice.](../resources/intune-devices-comanagementeligibledevice.md)|
 |[Criar comanagementEligibleDevice](../api/intune-devices-comanagementeligibledevice-create.md)|[comanagementEligibleDevice](../resources/intune-devices-comanagementeligibledevice.md)|Crie um [novo objeto comanagementEligibleDevice.](../resources/intune-devices-comanagementeligibledevice.md)|
-|[Excluir comanagementEligibleDevice](../api/intune-devices-comanagementeligibledevice-delete.md)|Nenhum|Exclui um [comanagementEligibleDevice](../resources/intune-devices-comanagementeligibledevice.md).|
+|[Excluir comanagementEligibleDevice](../api/intune-devices-comanagementeligibledevice-delete.md)|Nenhum(a)|Exclui um [comanagementEligibleDevice](../resources/intune-devices-comanagementeligibledevice.md).|
 |[Atualizar comanagementEligibleDevice](../api/intune-devices-comanagementeligibledevice-update.md)|[comanagementEligibleDevice](../resources/intune-devices-comanagementeligibledevice.md)|Atualize as propriedades de [um objeto comanagementEligibleDevice.](../resources/intune-devices-comanagementeligibledevice.md)|
 
 ## <a name="properties"></a>Propriedades
@@ -91,7 +91,6 @@ Veja a seguir uma representação JSON do recurso.
   "status": "String"
 }
 ```
-
 
 
 

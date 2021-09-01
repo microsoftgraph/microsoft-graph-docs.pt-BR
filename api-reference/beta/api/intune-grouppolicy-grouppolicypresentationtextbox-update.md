@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 46947303f6542dee20825f5c195b3a5edd1ce2b2271c30487a26ece80c0faad8
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 65cb87a10f13316b1bea244ceae841b2915b2645
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54166341"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58815789"
 ---
 # <a name="update-grouppolicypresentationtextbox"></a>Atualizar groupPolicyPresentationTextBox
 
@@ -57,8 +57,8 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [o group
 |rótulo|Cadeia de caracteres|Rótulo de texto localizado para qualquer entidade de apresentação. O valor padrão é vazio. Herdado [de groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
 |id|Cadeia de caracteres|Chave da entidade. Herdado [de groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
 |lastModifiedDateTime|DateTimeOffset|A data e a hora em que a entidade foi modificada pela última vez. Herdado [de groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
-|defaultValue|Cadeia de caracteres|Cadeia de caracteres padrão localizada exibida na caixa de texto. O valor padrão é vazio.|
-|obrigatório|Boolean|Requisito para inserir um valor na caixa de texto. O valor padrão é falso.|
+|defaultValue|String|Cadeia de caracteres padrão localizada exibida na caixa de texto. O valor padrão é vazio.|
+|obrigatório|Booliano|Requisito para inserir um valor na caixa de texto. O valor padrão é falso.|
 |maxLength|Int64|Um inteiro não assinado que especifica o número máximo de caracteres de texto. O valor padrão é 1023.|
 
 
@@ -101,7 +101,6 @@ Content-Length: 294
   "maxLength": 9
 }
 ```
-
 
 
 

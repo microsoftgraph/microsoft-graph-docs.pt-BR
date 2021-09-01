@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 95c5d47da62cd3fef69c0a5bf17cca60a6c7f5e33daee0bf8c1f06c8a1b796bd
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 506bb379a85ed12b2b59f41113fee47359c0d9fb
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54164199"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58818769"
 ---
 # <a name="grouppolicypresentationvaluelongdecimal-resource-type"></a>Tipo de recurso groupPolicyPresentationValueLongDecimal
 
@@ -65,7 +65,6 @@ Veja a seguir uma representação JSON do recurso.
   "value": 1024
 }
 ```
-
 
 
 

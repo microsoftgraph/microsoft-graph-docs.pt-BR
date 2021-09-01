@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 0372e67f24efe66eb432e5e9d4424940899dc7c294f7b1b1b550f69dc070e113
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 69323863875fa47d7763c904552b2fcd27dd0ae6
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54227355"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58787845"
 ---
 # <a name="windowsdevicehealthstate-enum-type"></a>Tipo denum windowsDeviceHealthState
 
@@ -26,12 +26,11 @@ Estado de proteção do ponto de extremidade do computador
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |clean|0|O computador está limpo e nenhuma ação é necessária|
-|fullScanPending|1 |O computador está em estado de verificação completa pendente|
+|fullScanPending|1|O computador está em estado de verificação completa pendente|
 |rebootPending|2|O computador está em estado de reinicialização pendente|
 |manualStepsPending|4 |O computador está em estado de etapas manuais pendentes|
 |offlineScanPending|8 |O computador está em estado de verificação offline pendente|
 |critical|16 |O computador está em estado crítico de falha|
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 36fac869b01804105397e45e2840bf7eb0bf38e3b0b968bc49efa8a89ddeaf10
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 6c441744a5e69db28c80241f149c9f3d6d69272b
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54164129"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58805293"
 ---
 # <a name="onpremencryptedpayload-resource-type"></a>Tipo de recurso onPremEncryptedPayload
 
@@ -28,7 +28,7 @@ Ainda não documentado
 |[Listar onPremEncryptedPayloads](../api/intune-raimportcerts-onpremencryptedpayload-list.md)|[Coleção onPremEncryptedPayload](../resources/intune-raimportcerts-onpremencryptedpayload.md)|Listar propriedades e relações dos [objetos onPremEncryptedPayload.](../resources/intune-raimportcerts-onpremencryptedpayload.md)|
 |[Obter onPremEncryptedPayload](../api/intune-raimportcerts-onpremencryptedpayload-get.md)|[onPremEncryptedPayload](../resources/intune-raimportcerts-onpremencryptedpayload.md)|Ler propriedades e relações do [objeto onPremEncryptedPayload.](../resources/intune-raimportcerts-onpremencryptedpayload.md)|
 |[Criar onPremEncryptedPayload](../api/intune-raimportcerts-onpremencryptedpayload-create.md)|[onPremEncryptedPayload](../resources/intune-raimportcerts-onpremencryptedpayload.md)|Crie um novo [objeto onPremEncryptedPayload.](../resources/intune-raimportcerts-onpremencryptedpayload.md)|
-|[Excluir onPremEncryptedPayload](../api/intune-raimportcerts-onpremencryptedpayload-delete.md)|Nenhum|Exclui um [onPremEncryptedPayload](../resources/intune-raimportcerts-onpremencryptedpayload.md).|
+|[Excluir onPremEncryptedPayload](../api/intune-raimportcerts-onpremencryptedpayload-delete.md)|Nenhum(a)|Exclui um [onPremEncryptedPayload](../resources/intune-raimportcerts-onpremencryptedpayload.md).|
 |[Atualizar onPremEncryptedPayload](../api/intune-raimportcerts-onpremencryptedpayload-update.md)|[onPremEncryptedPayload](../resources/intune-raimportcerts-onpremencryptedpayload.md)|Atualize as propriedades de [um objeto onPremEncryptedPayload.](../resources/intune-raimportcerts-onpremencryptedpayload.md)|
 
 ## <a name="properties"></a>Propriedades
@@ -83,7 +83,6 @@ Veja a seguir uma representação JSON do recurso.
   "isDeleted": true
 }
 ```
-
 
 
 

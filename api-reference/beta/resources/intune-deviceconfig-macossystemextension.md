@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: b717373ab3400a392943de83d86562876c900d88176fba1d044a7e0bb94e5044
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: a2927adc3df1092efd78eb3fbf9eef97d082509a
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54236357"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58799224"
 ---
 # <a name="macossystemextension-resource-type"></a>Tipo de recurso macOSSystemExtension
 
@@ -45,7 +45,6 @@ Veja a seguir uma representação JSON do recurso.
   "bundleId": "String"
 }
 ```
-
 
 
 

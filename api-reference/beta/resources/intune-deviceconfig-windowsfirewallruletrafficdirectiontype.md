@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 9e8f0ef055cc7cd7d610b481bdb0633503c38b0c7dc68f00dcce3d4ea391b178
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 4855c43baab9a33a5c5bfe1fe2a8653417f5f53b
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54179106"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58799476"
 ---
 # <a name="windowsfirewallruletrafficdirectiontype-enum-type"></a>Tipo denum windowsFirewallRuleTrafficDirectionType
 
@@ -26,9 +26,8 @@ Direções de tráfego de regras de firewall.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |notConfigured|0|Não configurado.|
-|out|1 |A regra se aplica ao tráfego de saída.|
+|out|1|A regra se aplica ao tráfego de saída.|
 |na|2|A regra se aplica ao tráfego de entrada.|
-
 
 
 

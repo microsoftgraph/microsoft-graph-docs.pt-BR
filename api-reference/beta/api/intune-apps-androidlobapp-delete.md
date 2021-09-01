@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b889af176ba9e4456b1633979c1f12859c39d0ba85d2e2dfa00d456ad39a5ad0
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 5172c147ad4bacc4028013507ad87dfe66096b74
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54201941"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58819875"
 ---
 # <a name="delete-androidlobapp"></a>Excluir androidLobApp
 
@@ -67,7 +67,6 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

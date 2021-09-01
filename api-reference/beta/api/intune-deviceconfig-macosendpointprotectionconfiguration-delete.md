@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c8ee88fbdc061b57d5eea8a7643355266cc0caa29a213bb1fc0141c8b9ffd925
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: afc8313c63d20334bfce263918a499423c02d4a9
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54140465"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58818671"
 ---
 # <a name="delete-macosendpointprotectionconfiguration"></a>Excluir macOSEndpointProtectionConfiguration
 
@@ -67,7 +67,6 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 
