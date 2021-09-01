@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: fff555715de5c87af4f19c6ea9601161137bd6467f45712be3b6644a890a40b8
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 93985888872f1397d0a33a75787df1c95f764097
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54139618"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58786345"
 ---
 # <a name="vpnroute-resource-type"></a>Tipo de recurso vpnRoute
 
@@ -45,7 +45,6 @@ Veja a seguir uma representação JSON do recurso.
   "prefixSize": 1024
 }
 ```
-
 
 
 

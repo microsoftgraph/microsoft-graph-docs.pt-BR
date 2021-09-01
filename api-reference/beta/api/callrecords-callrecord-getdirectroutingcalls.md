@@ -5,12 +5,12 @@ author: williamlooney
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 5dd389ddba5e3f081b850e2303833b47b832e7d7
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: 85d6b54f0cde797757f5e8711c1ae058a668dd95
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49872916"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58786912"
 ---
 # <a name="callrecord-getdirectroutingcalls"></a>callRecord: getDirectRoutingCalls
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph.callRecords
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obter um log de chamadas de roteamento direto como uma coleção de entradas [directRoutingLogRow.](../resources/callrecords-directroutinglogrow.md)
+Obter um log de chamadas de roteamento direto como uma coleção [de entradas directRoutingLogRow.](../resources/callrecords-directroutinglogrow.md)
 
 ## <a name="permissions"></a>Permissões
 
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---------------------------------------|:--------------------------------------------|
 | Delegado (conta corporativa ou de estudante)     | Sem suporte. |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Aplicativo                            | CallRecords.Read.All |
+| Application                            | CallRecord-PstnCalls.Read.All, CallRecords.Read.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -54,21 +54,23 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta função.
 
 |Parâmetro|Tipo|Descrição|
 |:---|:---|:---|
-|fromDateTime|DateTimeOffset|Início do intervalo de tempo para consulta. UTC, inclusive.<br/>O intervalo de tempo é baseado na hora de início da chamada.|
-|toDateTime|DateTimeOffset|Fim do intervalo de tempo a ser consultado. UTC, inclusive.|
+|fromDateTime|DateTimeOffset|Início do intervalo de tempo para consulta. UTC, inclusive.<br/>O intervalo de tempo se baseia na hora de início da chamada.|
+|toDateTime|DateTimeOffset|Fim do intervalo de tempo para consulta. UTC, inclusive.|
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedida, esta função retorna um código de resposta e uma coleção de entradas `200 OK` [directRoutingLogRow](../resources/callrecords-directroutinglogrow.md) no corpo da resposta.
+Se tiver êxito, essa função retornará um código de resposta e uma coleção de entradas `200 OK` [directRoutingLogRow](../resources/callrecords-directroutinglogrow.md) no corpo da resposta.
   
-Se houver mais de 1.000 entradas no intervalo de datas, o corpo também incluirá um com uma URL para consultar a próxima página de entradas `@odata.NextLink` de chamada. A última página no intervalo de datas não tem `@odata.NextLink` . Para obter mais informações, consulte [paging dados do Microsoft Graph em seu aplicativo.](/graph/paging)
+Se houver mais de 1000 entradas no intervalo de datas, o corpo também incluirá um com uma URL para consultar a próxima página de entradas `@odata.NextLink` de chamada. A última página no intervalo de datas não tem `@odata.NextLink` . Para obter mais informações, [consulte paging Microsoft Graph data in your app](/graph/paging).
 
-## <a name="examples"></a>Exemplos
+## <a name="example"></a>Exemplo
+
+O exemplo a seguir mostra como obter uma coleção de registros para chamadas de roteamento diretos que ocorreram no intervalo de datas especificado. A resposta inclui enumerar o número de registros nesta primeira resposta e obter registros além `"@odata.count": 1000` `@odata.NextLink` dos primeiros 1000. Para a capacidade de leitura, a resposta mostra apenas uma coleção de 1 registro. Suponha que haja mais de 1000 chamadas nesse intervalo de datas.
 
 ### <a name="request"></a>Solicitação
 
 <!-- {
-  "blockType": "ignored",
+  "blockType": "request",
   "name": "callrecord_getdirectroutingcalls"
 }
 -->
@@ -81,7 +83,7 @@ GET https://graph.microsoft.com/beta/communications/callRecords/getDirectRouting
 
 **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
-  "blockType": "ignored",
+  "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.callRecords.directRoutingLogRow",
   "isCollection": true
@@ -107,8 +109,8 @@ HTTP/1.1 200 OK
             "duration": 5,
             "callType": "ByotIn",
             "successfulCall": true,
-            "callerNumber": "+12345678**_",
-            "calleeNumber": "+01234567_*_",
+            "callerNumber": "+12345678***",
+            "calleeNumber": "+01234567***",
             "mediaPathLocation": "USWE",
             "signalingLocation": "EUNO",
             "finalSipCode": 0,
@@ -123,6 +125,6 @@ HTTP/1.1 200 OK
 
 ## <a name="see-also"></a>Confira também
 
-_ [Relatório de uso de roteamento direto do Microsoft Teams](/microsoftteams/teams-analytics-and-reports/pstn-usage-report#direct-routing) no centro de administração do Microsoft Teams
-* [Painel de Saúde para roteamento direto](/MicrosoftTeams/direct-routing-health-dashboard) no centro de administração do Microsoft Teams
-* [Relatório de chamada PSTN no Microsoft Graph](callrecords-callrecord-getpstncalls.md)
+* [Microsoft Teams relatório de uso de roteamento](/microsoftteams/teams-analytics-and-reports/pstn-usage-report#direct-routing) direto no Microsoft Teams de administração.
+* [Painel de Saúde para roteamento](/MicrosoftTeams/direct-routing-health-dashboard) direto no Microsoft Teams de administração.
+* [Relatório de chamada PSTN no Microsoft Graph](callrecords-callrecord-getpstncalls.md).

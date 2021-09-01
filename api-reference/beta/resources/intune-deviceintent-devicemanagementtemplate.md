@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8b119ddbfb175b8cd80cd2174e0ffbf5f724e1fe
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: e830e4d879b3cf3a096e9919ad75c0e3966dc21e
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58262631"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58819007"
 ---
 # <a name="devicemanagementtemplate-resource-type"></a>Tipo de recurso deviceManagementTemplate
 
@@ -51,7 +51,7 @@ Entidade que representa uma coleção definida de configurações de dispositivo
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|
 |:---|:---|:---|
-|configurações|[Coleção deviceManagementSettingInstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md)|Coleção de todas as configurações que este modelo tem|
+|settings|[Coleção deviceManagementSettingInstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md)|Coleção de todas as configurações que este modelo tem|
 |categories|[Coleção deviceManagementTemplateSettingCategory](../resources/intune-deviceintent-devicemanagementtemplatesettingcategory.md)|Coleção de categorias de configuração dentro do modelo|
 |migratableTo|[Coleção deviceManagementTemplate](../resources/intune-deviceintent-devicemanagementtemplate.md)|Coleção de modelos que este modelo pode migrar para|
 
@@ -78,7 +78,6 @@ Veja a seguir uma representação JSON do recurso.
   "publishedDateTime": "String (timestamp)"
 }
 ```
-
 
 
 

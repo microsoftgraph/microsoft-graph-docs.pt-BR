@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: fce112e03366c0bf01fbae6105fc0e74fc67a419
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 2ce97538fc74d6dcb99062d685c83864f109d6ef
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58263319"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58816974"
 ---
 # <a name="update-userexperienceanalyticsapphealthappperformancebyappversiondeviceid"></a>Atualizar userExperienceAnalyticsAppHealthAppPerformanceByAppVersionDeviceId
 
@@ -27,9 +27,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
+|Delegada (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All|
 |Delegada (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
+|Aplicativo|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -59,7 +59,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [o usuá
 |processedDateTime|DateTimeOffset|A data e a hora em que as estatísticas foram computadas pela última vez.|
 |appName|Cadeia de caracteres|O nome do aplicativo.|
 |appDisplayName|Cadeia de caracteres|O nome amigável do aplicativo.|
-|appPublisher|Cadeia de caracteres|O editor do aplicativo.|
+|appPublisher|String|O editor do aplicativo.|
 |appVersion|Cadeia de caracteres|A versão do aplicativo.|
 |appCrashCount|Int32|O número de falhas para o aplicativo. Valores válidos -2147483648 para 2147483647|
 
@@ -110,7 +110,6 @@ Content-Length: 488
   "appCrashCount": 13
 }
 ```
-
 
 
 

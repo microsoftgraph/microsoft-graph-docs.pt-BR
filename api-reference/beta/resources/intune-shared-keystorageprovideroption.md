@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 7bfd89c8e74264aca79af72325d6b5b4a96b23a3a3fadd44b32c94f3fa95cc58
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: e6dc213f3cef76380a5bf40d91b6220e1408783f
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54219749"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58786274"
 ---
 # <a name="keystorageprovideroption-enum-type"></a>Tipo de número keyStorageProviderOption
 
@@ -26,10 +26,9 @@ Opções de importação Armazenamento KSP (Provedor de Chaves).
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |useTpmKspOtherwiseUseSoftwareKsp|0|Importar para KSP de Módulo de Plataforma Confiável (TPM) se presente, caso contrário, importe para o KSP de software.|
-|useTpmKspOtherwiseFail|1 |Importar para KSP de Módulo de Plataforma Confiável (TPM) se presente, caso contrário, falhará.|
+|useTpmKspOtherwiseFail|1|Importar para KSP de Módulo de Plataforma Confiável (TPM) se presente, caso contrário, falhará.|
 |usePassportForWorkKspOtherwiseFail|2|Importar para Passport para KSP de trabalho, se disponível, caso contrário, falhará.|
-|useSoftwareKsp|3 |Importar para KSP de software.|
-
+|useSoftwareKsp|3|Importar para KSP de software.|
 
 
 

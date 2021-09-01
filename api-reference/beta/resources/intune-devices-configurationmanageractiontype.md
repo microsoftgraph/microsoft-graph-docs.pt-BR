@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: d95783f25c49c9e06474e088e32c9b4c2c3628f199ac16d6e6f99daf29192b57
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 3308ae8369458d44f128863b4afd3ab83a07b8f4
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54236119"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58818081"
 ---
 # <a name="configurationmanageractiontype-enum-type"></a>tipo de número configurationManagerActionType
 
@@ -26,10 +26,9 @@ Tipo de ação no cliente do Configuration Manager
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |refreshMachinePolicy|0|Atualizar política de máquina no cliente do Configuration Manager|
-|refreshUserPolicy|1 |Atualizar a política de usuário no cliente do Configuration Manager|
+|refreshUserPolicy|1|Atualizar a política de usuário no cliente do Configuration Manager|
 |wakeUpClient|2|Acordar cliente do Configuration Manager|
-|appEvaluation|3 |Política de aplicativo de avaliação no cliente do Configuration Manager|
-
+|appEvaluation|3|Política de aplicativo de avaliação no cliente do Configuration Manager|
 
 
 

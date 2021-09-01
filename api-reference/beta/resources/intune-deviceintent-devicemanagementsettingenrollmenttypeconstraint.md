@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: c30425ff1a94a50c0322f21db18f70efab0d3d9fb48fb113e363223564f746ff
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 7150ffb7be4f829a47c4924c423866ee5e08dae1
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54244837"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58783215"
 ---
 # <a name="devicemanagementsettingenrollmenttypeconstraint-resource-type"></a>Tipo de recurso deviceManagementSettingEnrollmentTypeConstraint
 
@@ -28,7 +28,7 @@ Herda de [deviceManagementConstraint](../resources/intune-deviceintent-deviceman
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|enrollmentTypes|String collection|Lista de tipos de registro|
+|enrollmentTypes|Coleção de cadeias de caracteres|Lista de tipos de registro|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -48,7 +48,6 @@ Veja a seguir uma representação JSON do recurso.
   ]
 }
 ```
-
 
 
 

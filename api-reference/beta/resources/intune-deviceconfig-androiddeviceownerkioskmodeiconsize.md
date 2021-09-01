@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 2684f3e039bce75c67fccd63a90e120ce619563697510134e9d9bb09d63b1d20
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: c3b656994f2de42620c5254f0145bc12adf577e6
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54183223"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58813135"
 ---
 # <a name="androiddeviceownerkioskmodeiconsize-enum-type"></a>tipo de número androidDeviceOwnerKioskModeIconSize
 
@@ -26,12 +26,11 @@ Tamanho do ícone da tela inicial gerenciada do Modo de Quiosque do Proprietári
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |notConfigured|0|Não configurado; esse valor é ignorado.|
-|menor|1 |Menor tamanho de ícone.|
+|menor|1|Menor tamanho de ícone.|
 |small|2|Tamanho de ícone pequeno.|
-|regular|3 |Tamanho normal do ícone.|
+|regular|3|Tamanho normal do ícone.|
 |large|4 |Tamanho de ícone grande.|
 |maior|5 |Tamanho do ícone maior.|
-
 
 
 

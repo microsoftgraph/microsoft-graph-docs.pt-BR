@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 23d60da5a18374261044a2e47eb84acc72fa4ad01d03a4fb7b8995025a8554a8
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 4409e33f66d2178fe9f111ad6e338bd38aaa2087
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54245174"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58819245"
 ---
 # <a name="androidprofileapplicability-enum-type"></a>Tipo de número androidProfileApplicability
 
@@ -26,9 +26,8 @@ Aplicabilidade do perfil android
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |Padrão.|0|Ainda não documentado|
-|androidWorkProfile|1 |Ainda não documentado|
+|androidWorkProfile|1|Ainda não documentado|
 |androidDeviceOwner|2|Ainda não documentado|
-
 
 
 

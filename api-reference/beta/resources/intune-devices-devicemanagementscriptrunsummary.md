@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: bb868e87f9d3a8c090a4e3b5e3a11706ea0a29a470fda80595172453493c854d
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: ad5a72192186e098e87f3a7285ac4a8db5e1d5da
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54150315"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58818986"
 ---
 # <a name="devicemanagementscriptrunsummary-resource-type"></a>Tipo de recurso deviceManagementScriptRunSummary
 
@@ -58,7 +58,6 @@ Veja a seguir uma representação JSON do recurso.
   "errorUserCount": 1024
 }
 ```
-
 
 
 

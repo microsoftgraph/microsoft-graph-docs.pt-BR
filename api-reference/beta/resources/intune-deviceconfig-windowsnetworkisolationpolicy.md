@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d5522b11b23e10c8e7223e170e4c445307b18bd5c081772e3943364e6f22a7d0
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: c93d9292df647ccec7f6047cbb7a922329855f4e
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54179092"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58790385"
 ---
 # <a name="windowsnetworkisolationpolicy-resource-type"></a>Tipo de recurso windowsNetworkIsolationPolicy
 
@@ -25,14 +25,14 @@ Windows Política de Isolamento de Rede
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|enterpriseNetworkDomainNames|String collection|Esta é a lista dos domínios que compõem os limites da empresa. Os dados de um desses domínios enviados a um dispositivo serão considerados dados corporativos e protegidos. Esses locais serão considerados um destino seguro para os dados corporativos a serem compartilhados.|
+|enterpriseNetworkDomainNames|Coleção de cadeias de caracteres|Esta é a lista dos domínios que compõem os limites da empresa. Os dados de um desses domínios enviados a um dispositivo serão considerados dados corporativos e protegidos. Esses locais serão considerados um destino seguro para os dados corporativos a serem compartilhados.|
 |enterpriseCloudResources|Coleção [proxiedDomain](../resources/intune-shared-proxieddomain.md)|Contém uma lista de domínios de recursos corporativos hospedados na nuvem que precisam ser protegidos. As conexões com esses recursos são consideradas dados corporativos. Se um proxy for emparelhado com um recurso de nuvem, o tráfego para esse recurso será roteado pela rede da empresa por meio do servidor proxy indicado (na porta 80). Um servidor proxy usado para essa finalidade também deve ser configurado usando a política EnterpriseInternalProxyServers. Esta coleção pode conter um máximo de 500 elementos.|
 |enterpriseIPRanges|Coleção [ipRange](../resources/intune-shared-iprange.md)|Define os intervalos IP da empresa que definem os computadores da rede corporativa. Dados provenientes desses computadores serão considerados parte da empresa e serão protegidos. Esses locais serão considerados um destino seguro para os dados corporativos a serem compartilhados. Esta coleção pode conter um máximo de 500 elementos.|
-|enterpriseInternalProxyServers|String collection|Esta é a lista separada por vírgula de servidores proxy internos. Por exemplo, "157.54.14.28, 157.54.11.118, 10.202.14.167, 157.53.14.163, 157.69.210.59". Esses proxies foram configurados pelo administrador para se conectarem a recursos específicos na Internet. Eles são considerados locais de rede da empresa. Os proxies só são aproveitados na configuração da política EnterpriseCloudResources para forçar o tráfego para os recursos de nuvem corresponderem por meio desses proxies.|
-|enterpriseIPRangesAreAuthoritative|Boolean|Valor booliano que informa ao cliente para aceitar a lista configurada e não usar heurística para tentar localizar outras sub-redes. O padrão é false.|
-|enterpriseProxyServers|String collection|Esta é uma lista de servidores proxy. Qualquer servidor que não está nessa lista é considerado não empresarial.|
+|enterpriseInternalProxyServers|Coleção de cadeias de caracteres|Esta é a lista separada por vírgula de servidores proxy internos. Por exemplo, "157.54.14.28, 157.54.11.118, 10.202.14.167, 157.53.14.163, 157.69.210.59". Esses proxies foram configurados pelo administrador para se conectarem a recursos específicos na Internet. Eles são considerados locais de rede da empresa. Os proxies só são aproveitados na configuração da política EnterpriseCloudResources para forçar o tráfego para os recursos de nuvem corresponderem por meio desses proxies.|
+|enterpriseIPRangesAreAuthoritative|Boolean|Valor booliano que informa ao cliente para aceitar a lista configurada e não usar heurística para tentar localizar outras sub-redes. O padrão é falso.|
+|enterpriseProxyServers|Coleção de cadeias de caracteres|Esta é uma lista de servidores proxy. Qualquer servidor que não está nessa lista é considerado não empresarial.|
 |enterpriseProxyServersAreAuthoritative|Boolean|Valor booliano que informa ao cliente para aceitar a lista configurada de proxies e não tentar detectar outros proxies de trabalho. O padrão é false|
-|neutralDomainResources|String collection|Lista de nomes de domínio que podem ser usados para recursos pessoais ou de trabalho.|
+|neutralDomainResources|Coleção de cadeias de caracteres|Lista de nomes de domínio que podem ser usados para recursos pessoais ou de trabalho.|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -75,7 +75,6 @@ Veja a seguir uma representação JSON do recurso.
   ]
 }
 ```
-
 
 
 

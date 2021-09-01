@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d9a0b1c4ca426eb12fc87b7fe4181e5c1aa3d2a44b10ba212938576bbcad1a26
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 37d312e216febf0049616830d23a4db33cccc928
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54145856"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58819995"
 ---
 # <a name="create-devicemanagementabstractcomplexsettinginstance"></a>Criar deviceManagementAbstractComplexSettingInstance
 
@@ -59,7 +59,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar deviceMa
 |id|Cadeia de caracteres|A ID da instância de configuração Herdada [de deviceManagementSettingInstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md)|
 |definitionId|Cadeia de caracteres|A ID da definição de configuração para esta instância Herdada de [deviceManagementSettingInstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md)|
 |valueJson|Cadeia de caracteres|Representação JSON do valor Herdado de [deviceManagementSettingInstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md)|
-|implementationId|Cadeia de caracteres|A ID de definição para a implementação escolhida dessa configuração complexa|
+|implementationId|String|A ID de definição para a implementação escolhida dessa configuração complexa|
 
 
 
@@ -98,7 +98,6 @@ Content-Length: 265
   "implementationId": "Implementation Id value"
 }
 ```
-
 
 
 

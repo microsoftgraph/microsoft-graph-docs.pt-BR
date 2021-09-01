@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f688dc9699c776a43b48e4ff874d4aed0a303cf5c1ae18bcb2538396378bba9c
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 5f5b316c688f663ffaab81666f9597270117b4e7
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54159053"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58818650"
 ---
 # <a name="get-devicemanagementintentuserstate"></a>Obter deviceManagementIntentUserState
 
@@ -82,7 +82,6 @@ Content-Length: 357
   }
 }
 ```
-
 
 
 

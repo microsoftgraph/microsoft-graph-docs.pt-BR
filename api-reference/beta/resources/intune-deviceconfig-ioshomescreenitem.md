@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 00520ba2b3cb91464fb8e35d220804e2bb8e931656718b9c6aeb6e03e63cf349
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 06caec091dbcee855bd89e6ba3242e931e6b6998
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54176523"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58819889"
 ---
 # <a name="ioshomescreenitem-resource-type"></a>Tipo de recurso iosHomeScreenItem
 
@@ -43,7 +43,6 @@ Veja a seguir uma representação JSON do recurso.
   "displayName": "String"
 }
 ```
-
 
 
 

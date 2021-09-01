@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 5ca11ff0cbe2e7d350ccd5ddcc015da060205aa920d8a6801fc1d186871c1983
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: fe6061e1edd4c5bf1105bae54b0b1f3ce89af956
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54158184"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58818249"
 ---
 # <a name="configurationmanagercollectionassignmenttarget-resource-type"></a>tipo de recurso configurationManagerCollectionAssignmentTarget
 
@@ -50,7 +50,6 @@ Veja a seguir uma representação JSON do recurso.
   "collectionId": "String"
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: ab46b69ca78f6b7eac9707fc0f6b20bb973c3a48
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 9e990fa6de4792f9ebe28e2e43f11a67321a9231
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58265379"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58790868"
 ---
 # <a name="grouppolicydefinition-resource-type"></a>Tipo de recurso groupPolicyDefinition
 
@@ -37,8 +37,10 @@ A entidade descreve todas as informações sobre uma única política de grupo.
 |categoryPath|Cadeia de caracteres|O caminho de categoria completa localizado para a política.|
 |supportedOn|Cadeia de caracteres|Cadeia de caracteres localizada usada para especificar qual versão do sistema operacional ou aplicativo é afetada pela política.|
 |policyType|[groupPolicyType](../resources/intune-grouppolicy-grouppolicytype.md)|Especifica o tipo de política de grupo. Os valores possíveis são: `admxBacked` e `admxIngested`.|
-|hasRelatedDefinitions|Boolean|Significa se há ou não definições relacionadas a essa definição|
+|hasRelatedDefinitions|Boleano|Significa se há ou não definições relacionadas a essa definição|
 |groupPolicyCategoryId|Guid|A id de categoria da categoria pai|
+|minDeviceCspVersion|Cadeia de caracteres|Versão mínima necessária do CSP para a configuração do dispositivo nesta definição|
+|minUserCspVersion|Cadeia de caracteres|Versão mínima necessária do CSP para configuração do usuário nesta definição|
 |versão|String|Definindo a versão de definição|
 |id|Cadeia de caracteres|Chave da entidade.|
 |lastModifiedDateTime|DateTimeOffset|A data e a hora em que a entidade foi modificada pela última vez.|
@@ -71,12 +73,13 @@ Veja a seguir uma representação JSON do recurso.
   "policyType": "String",
   "hasRelatedDefinitions": true,
   "groupPolicyCategoryId": "Guid",
+  "minDeviceCspVersion": "String",
+  "minUserCspVersion": "String",
   "version": "String",
   "id": "String (identifier)",
   "lastModifiedDateTime": "String (timestamp)"
 }
 ```
-
 
 
 

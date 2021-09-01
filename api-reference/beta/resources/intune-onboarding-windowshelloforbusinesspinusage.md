@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 0368106c2f2a1cf4034bc7559085a2804931152655acb3ad7bf5eeb8ceb2c156
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 4fe917addb2bf9bfa52b74c24e59f5cdba49a472
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54161105"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58785098"
 ---
 # <a name="windowshelloforbusinesspinusage-enum-type"></a>tipo de número windowsHelloForBusinessPinUsage
 
@@ -26,9 +26,8 @@ Windows Hello opções de uso de pinos para empresas
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |allowed|0|Permitido o uso de determinada regra de pino|
-|obrigatório|1 |Impor o uso de determinada regra de pino|
+|obrigatório|1|Impor o uso de determinada regra de pino|
 |não permitido|2|Forbit o uso de determinada regra de pino|
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 7e3c0bcaae3439a82ed104e4dd8b93eec12ac272
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 619cd0c8ad95f8791d103cf70996e1181e3d0f78
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58265978"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58789218"
 ---
 # <a name="securityconfigurationtask-resource-type"></a>Tipo de recurso securityConfigurationTask
 
@@ -31,7 +31,7 @@ Herda de [deviceAppManagementTask](../resources/intune-partnerintegration-device
 |[Listar securityConfigurationTasks](../api/intune-partnerintegration-securityconfigurationtask-list.md)|[Coleção securityConfigurationTask](../resources/intune-partnerintegration-securityconfigurationtask.md)|Listar propriedades e relações dos objetos [securityConfigurationTask.](../resources/intune-partnerintegration-securityconfigurationtask.md)|
 |[Obter securityConfigurationTask](../api/intune-partnerintegration-securityconfigurationtask-get.md)|[securityConfigurationTask](../resources/intune-partnerintegration-securityconfigurationtask.md)|Leia propriedades e relações do [objeto securityConfigurationTask.](../resources/intune-partnerintegration-securityconfigurationtask.md)|
 |[Criar securityConfigurationTask](../api/intune-partnerintegration-securityconfigurationtask-create.md)|[securityConfigurationTask](../resources/intune-partnerintegration-securityconfigurationtask.md)|Crie um novo [objeto securityConfigurationTask.](../resources/intune-partnerintegration-securityconfigurationtask.md)|
-|[Excluir securityConfigurationTask](../api/intune-partnerintegration-securityconfigurationtask-delete.md)|Nenhum|Exclui um [securityConfigurationTask](../resources/intune-partnerintegration-securityconfigurationtask.md).|
+|[Excluir securityConfigurationTask](../api/intune-partnerintegration-securityconfigurationtask-delete.md)|Nenhum(a)|Exclui um [securityConfigurationTask](../resources/intune-partnerintegration-securityconfigurationtask.md).|
 |[Atualizar securityConfigurationTask](../api/intune-partnerintegration-securityconfigurationtask-update.md)|[securityConfigurationTask](../resources/intune-partnerintegration-securityconfigurationtask.md)|Atualize as propriedades de [um objeto securityConfigurationTask.](../resources/intune-partnerintegration-securityconfigurationtask.md)|
 
 ## <a name="properties"></a>Propriedades
@@ -39,7 +39,7 @@ Herda de [deviceAppManagementTask](../resources/intune-partnerintegration-device
 |:---|:---|:---|
 |id|Cadeia de caracteres|A chave da entidade. Herdado [de deviceAppManagementTask](../resources/intune-partnerintegration-deviceappmanagementtask.md)|
 |displayName|Cadeia de caracteres|O nome. Herdado [de deviceAppManagementTask](../resources/intune-partnerintegration-deviceappmanagementtask.md)|
-|description|Cadeia de caracteres|A descrição. Herdado [de deviceAppManagementTask](../resources/intune-partnerintegration-deviceappmanagementtask.md)|
+|descrição|Cadeia de caracteres|A descrição. Herdado [de deviceAppManagementTask](../resources/intune-partnerintegration-deviceappmanagementtask.md)|
 |createdDateTime|DateTimeOffset|A data criada. Herdado [de deviceAppManagementTask](../resources/intune-partnerintegration-deviceappmanagementtask.md)|
 |dueDateTime|DateTimeOffset|A data de vencimento. Herdado [de deviceAppManagementTask](../resources/intune-partnerintegration-deviceappmanagementtask.md)|
 |category|[deviceAppManagementTaskCategory](../resources/intune-partnerintegration-deviceappmanagementtaskcategory.md)|A categoria. Herdado [de deviceAppManagementTask](../resources/intune-partnerintegration-deviceappmanagementtask.md). Os valores possíveis são: `unknown` e `advancedThreatProtection`.|
@@ -96,7 +96,6 @@ Veja a seguir uma representação JSON do recurso.
   ]
 }
 ```
-
 
 
 

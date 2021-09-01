@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d127bb368b15d86ee8060b34b9c13840ec6e7c4a
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 84f8d54b25d9fe0be7fc921f8c20c362aa041a43
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58264861"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58783369"
 ---
 # <a name="create-userexperienceanalyticsimpactingprocess"></a>Criar userExperienceAnalyticsImpactingProcess
 
@@ -27,9 +27,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
+|Delegado (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Application|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -57,7 +57,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar o userEx
 |deviceId|Cadeia de caracteres|O identificador exclusivo do dispositivo afetado.|
 |category|Cadeia de caracteres|A categoria do processo de impacto.|
 |processName|Cadeia de caracteres|O nome do processo.|
-|description|Cadeia de caracteres|A descrição do processo.|
+|descrição|Cadeia de caracteres|A descrição do processo.|
 |publicador|String|O editor do processo.|
 |impactValue|Duplo|O valor de impacto do processo. Valores válidos de 0 a 1,79769313486232E+308|
 
@@ -104,7 +104,6 @@ Content-Length: 349
   "impactValue": 3.6666666666666665
 }
 ```
-
 
 
 

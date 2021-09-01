@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: f3b818e68b76d74297dd820114e1e445050cd3481bf5d9cc5b86bb30c7df6e72
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 5b2c70ce97a73ccef8ccdba62ea1e63590f758a7
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54248479"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58783467"
 ---
 # <a name="windows81vpnproxyserver-resource-type"></a>Tipo de recurso windows81VpnProxyServer
 
@@ -31,8 +31,8 @@ Herda de [vpnProxyServer](../resources/intune-deviceconfig-vpnproxyserver.md)
 |automaticConfigurationScriptUrl|Cadeia de caracteres|Url de script de configuração automática do proxy. Herdado [de vpnProxyServer](../resources/intune-deviceconfig-vpnproxyserver.md)|
 |address|Cadeia de caracteres|Endereço. Herdado [de vpnProxyServer](../resources/intune-deviceconfig-vpnproxyserver.md)|
 |port|Int32|Porta. Valores válidos de 0 a 65535 Herdados de [vpnProxyServer](../resources/intune-deviceconfig-vpnproxyserver.md)|
-|automaticallyDetectProxySettings|Boolean|Detecte automaticamente as configurações de proxy.|
-|bypassProxyServerForLocalAddress|Boolean|Ignorar o servidor proxy para endereço local.|
+|automaticallyDetectProxySettings|Boleano|Detecte automaticamente as configurações de proxy.|
+|bypassProxyServerForLocalAddress|Boleano|Ignorar o servidor proxy para endereço local.|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -54,7 +54,6 @@ Veja a seguir uma representação JSON do recurso.
   "bypassProxyServerForLocalAddress": true
 }
 ```
-
 
 
 

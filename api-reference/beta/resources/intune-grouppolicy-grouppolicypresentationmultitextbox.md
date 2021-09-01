@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 048b3949d6c4f7b7bef41dfafde4c9043c68a8d67186e57e2d1e9eca99fac129
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: e70182d1412bb1b422587d9440fe420e3c71ef2c
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54244600"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58817331"
 ---
 # <a name="grouppolicypresentationmultitextbox-resource-type"></a>Tipo de recurso groupPolicyPresentationMultiTextBox
 
@@ -37,10 +37,10 @@ Herda de [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypr
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|rótulo|Cadeia de caracteres|Rótulo de texto localizado para qualquer entidade de apresentação. O valor padrão é vazio. Herdado [de groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
+|rótulo|String|Rótulo de texto localizado para qualquer entidade de apresentação. O valor padrão é vazio. Herdado [de groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
 |id|Cadeia de caracteres|Chave da entidade. Herdado [de groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
 |lastModifiedDateTime|DateTimeOffset|A data e a hora em que a entidade foi modificada pela última vez. Herdado [de groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
-|obrigatório|Boolean|Requisito para inserir um valor na caixa de texto. O valor padrão é falso.|
+|obrigatório|Booliano|Requisito para inserir um valor na caixa de texto. O valor padrão é falso.|
 |maxLength|Int64|Um inteiro não assinado que especifica o número máximo de caracteres de texto. O valor padrão é 1023.|
 |maxStrings|Int64|Um inteiro não assinado que especifica o número máximo de cadeias de caracteres. O valor padrão é 0.|
 
@@ -68,7 +68,6 @@ Veja a seguir uma representação JSON do recurso.
   "maxStrings": 1024
 }
 ```
-
 
 
 

@@ -1,18 +1,18 @@
 ---
-title: Acessar managedDeviceMobileAppConfigurationUserSummary
-description: Leia as propriedades e as relações do objeto managedDeviceMobileAppConfigurationUserSummary.
+title: Obter certificateConnectorDetails
+description: Leia propriedades e relações do objeto certificateConnectorDetails.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 32fb34134448803e1dc0106fd1b3da1e00543d57
+ms.openlocfilehash: 86e6d6c2b6d5a14e45275638690001b11c4fc6fa
 ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 08/31/2021
-ms.locfileid: "58785651"
+ms.locfileid: "58783644"
 ---
-# <a name="get-manageddevicemobileappconfigurationusersummary"></a>Acessar managedDeviceMobileAppConfigurationUserSummary
+# <a name="get-certificateconnectordetails"></a>Obter certificateConnectorDetails
 
 Namespace: microsoft.graph
 
@@ -20,16 +20,16 @@ Namespace: microsoft.graph
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Leia as propriedades e as relações do objeto [managedDeviceMobileAppConfigurationUserSummary](../resources/intune-apps-manageddevicemobileappconfigurationusersummary.md).
+Leia propriedades e relações do objeto [certificateConnectorDetails.](../resources/intune-raimportcerts-certificateconnectordetails.md)
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
+|Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementConfiguration.Read.All, DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
+|Application|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -37,7 +37,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 }
 -->
 ``` http
-GET /deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfigurationId}/userStatusSummary
+GET /deviceManagement/certificateConnectorDetails/{certificateConnectorDetailsId}
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
@@ -53,14 +53,14 @@ Este método dá suporte a [Parâmetros de consulta OData](/graph/query-paramete
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará o código de resposta `200 OK` e o objeto [managedDeviceMobileAppConfigurationUserSummary](../resources/intune-apps-manageddevicemobileappconfigurationusersummary.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e um `200 OK` [objeto certificateConnectorDetails](../resources/intune-raimportcerts-certificateconnectordetails.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
 ### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
 ``` http
-GET https://graph.microsoft.com/beta/deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfigurationId}/userStatusSummary
+GET https://graph.microsoft.com/beta/deviceManagement/certificateConnectorDetails/{certificateConnectorDetailsId}
 ```
 
 ### <a name="response"></a>Resposta
@@ -68,20 +68,16 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 409
+Content-Length: 358
 
 {
   "value": {
-    "@odata.type": "#microsoft.graph.managedDeviceMobileAppConfigurationUserSummary",
-    "id": "7b953742-3742-7b95-4237-957b4237957b",
-    "pendingCount": 12,
-    "notApplicableCount": 2,
-    "successCount": 12,
-    "errorCount": 10,
-    "failedCount": 11,
-    "conflictCount": 13,
-    "lastUpdateDateTime": "2016-12-31T23:58:21.6459442-08:00",
-    "configurationVersion": 4
+    "@odata.type": "#microsoft.graph.certificateConnectorDetails",
+    "id": "104d7361-7361-104d-6173-4d1061734d10",
+    "connectorName": "Connector Name value",
+    "machineName": "Machine Name value",
+    "enrollmentDateTime": "2016-12-31T23:57:59.3726057-08:00",
+    "lastCheckinDateTime": "2017-01-01T00:02:46.0431416-08:00"
   }
 }
 ```

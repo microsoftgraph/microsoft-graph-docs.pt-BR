@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6f58cce26ca4d59893043ee658f320ad60c7c0dc5f0d4d4a1bb04ac826875a3f
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 71e9b70a8dc181745c004520e39086224064a6f7
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54217831"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58818418"
 ---
 # <a name="delete-iospkcscertificateprofile"></a>Excluir iosPkcsCertificateProfile
 
@@ -67,7 +67,6 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

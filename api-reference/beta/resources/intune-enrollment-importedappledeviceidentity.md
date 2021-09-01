@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 6a0abe081c116afeaf0188188430112e92c896861382be25ade215ef51962c68
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 3f70ab03b99e9dbe7a0ebe75920f3670ee6e2ae4
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54153044"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58817065"
 ---
 # <a name="importedappledeviceidentity-resource-type"></a>Tipo de recurso importedAppleDeviceIdentity
 
@@ -41,12 +41,12 @@ O recurso importedAppleDeviceIdentity representa a identidade de dispositivo imp
 |requestedEnrollmentProfileAssignmentDateTime|DateTimeOffset|O perfil de registro de hora foi atribuído ao dispositivo|
 |isSupervised|Boolean|Indica se o dispositivo Apple é supervisionado. Mais informações estão em: https://support.apple.com/en-us/HT202837|
 |discoverySource|[discoverySource](../resources/intune-enrollment-discoverysource.md)|Fonte de descoberta de dispositivo Apple. Os valores possíveis são: `unknown`, `adminImport`, `deviceEnrollmentProgram`.|
-|isDeleted|Boolean|Indica se o dispositivo é excluído do Apple Business Manager|
+|isDeleted|Booliano|Indica se o dispositivo é excluído do Apple Business Manager|
 |createdDateTime|DateTimeOffset|Data de criação hora do dispositivo|
 |lastContactedDateTime|DateTimeOffset|Hora da Última Data Contata do dispositivo|
 |description|Cadeia de caracteres|A descrição do dispositivo|
 |enrollmentState|[enrollmentState](../resources/intune-shared-enrollmentstate.md)|O estado do dispositivo no Intune. Os possíveis valores são: `unknown`, `enrolled`, `pendingReset`, `failed`, `notContacted`, `blocked`.|
-|plataforma|[platform](../resources/intune-enrollment-platform.md)|A plataforma do Dispositivo. Os possíveis valores são: `unknown`, `ios`, `android`, `windows`, `windowsMobile`, `macOS`.|
+|plataforma|[plataforma](../resources/intune-enrollment-platform.md)|A plataforma do Dispositivo. Os possíveis valores são: `unknown`, `ios`, `android`, `windows`, `windowsMobile`, `macOS`.|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -76,7 +76,6 @@ Veja a seguir uma representação JSON do recurso.
   "platform": "String"
 }
 ```
-
 
 
 
