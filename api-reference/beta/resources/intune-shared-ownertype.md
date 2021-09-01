@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 08427a0ec80ab686979c81dc51764e38ff6dd17b0f8a642f44be1eb32fafc2f8
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: a08f46b8297ea0a0ed30e70641c7188c0e7b72b6
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54195110"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58782900"
 ---
 # <a name="ownertype-enum-type"></a>Tipo de número ownerType
 
@@ -26,9 +26,8 @@ Tipo de proprietário do dispositivo.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |desconhecido|0|Desconhecido.|
-|company|1 |Propriedade da empresa.|
+|company|1|Propriedade da empresa.|
 |pessoal|2|Propriedade de pessoa.|
-
 
 
 

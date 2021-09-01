@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: d83cd5b856849f3efd12d0bcc32d9da8ee217d16
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 3a6871d0168324a01e7d9a8ef39b8164e453ff2e
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58259179"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58805707"
 ---
 # <a name="operatingsystemupgradeeligibility-enum-type"></a>Tipo de número operatingSystemUpgradeEligibility
 
@@ -26,10 +26,9 @@ Status de qualificação de atualização do dispositivo Windows em Qualquer Lug
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |atualizado|0|O dispositivo é atualizado para a versão mais recente do windows|
-|desconhecido|1 |Não há dados suficientes disponíveis para calcular a qualificação do dispositivo para atualização do Windows|
+|desconhecido|1|Não há dados suficientes disponíveis para calcular a qualificação do dispositivo para atualização do Windows|
 |notCapable|2|O dispositivo não é capaz de atualizar o Windows|
-|capable|3 |O dispositivo é capaz de atualizar o Windows|
-
+|capable|3|O dispositivo é capaz de atualizar o Windows|
 
 
 

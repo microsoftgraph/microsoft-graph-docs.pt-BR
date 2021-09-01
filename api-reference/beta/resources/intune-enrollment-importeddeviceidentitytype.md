@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 29c9a5a3e50a21a9a843d09acd056488a04d5aee917d27f7f0dee97c191d3b87
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: ec1d7d4c3aa4ce0ee082f12b703123552888b492
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54133191"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58818046"
 ---
 # <a name="importeddeviceidentitytype-enum-type"></a>Tipo denum importedDeviceIdentityType
 
@@ -26,9 +26,8 @@ Ainda não documentado
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |desconhecido|0|Valor desconhecido de importedDeviceIdentityType.|
-|imei|1 |A Identidade do Dispositivo é do tipo imei.|
+|imei|1|A Identidade do Dispositivo é do tipo imei.|
 |serialNumber|2|A Identidade do Dispositivo é do tipo número de série.|
-
 
 
 

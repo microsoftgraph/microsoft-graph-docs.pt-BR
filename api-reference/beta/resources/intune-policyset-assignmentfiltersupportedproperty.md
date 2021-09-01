@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: ed8ec505d314207a57fe3b743357e4217255db0d
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: b8b8a5bc422c2d663d74ea7dc93b7353f10e65d3
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58265454"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58786604"
 ---
 # <a name="assignmentfiltersupportedproperty-resource-type"></a>Tipo de recurso assignmentFilterSupportedProperty
 
@@ -26,11 +26,11 @@ Representa as informações sobre a propriedade que é suportada na criação da
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |dataType|Cadeia de caracteres|O tipo de dados da propriedade.|
-|isCollection|Boolean|Indica se a propriedade é um tipo de coleção ou não.|
+|isCollection|Boleano|Indica se a propriedade é um tipo de coleção ou não.|
 |nome|Cadeia de caracteres|Nome da propriedade.|
 |propertyRegexConstraint|Cadeia de caracteres|Cadeia de caracteres Regex para fazer validação no valor da propriedade.|
 |supportedOperators|[coleção assignmentFilterOperator](../resources/intune-policyset-assignmentfilteroperator.md)|Lista de todos os operadores com suporte nesta propriedade.|
-|supportedValues|String collection|Lista de todos os valores com suporte para essa adequada, vazia se tudo for suportado.|
+|supportedValues|Coleção de cadeias de caracteres|Lista de todos os valores com suporte para essa adequada, vazia se tudo for suportado.|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -57,7 +57,6 @@ Veja a seguir uma representação JSON do recurso.
   ]
 }
 ```
-
 
 
 

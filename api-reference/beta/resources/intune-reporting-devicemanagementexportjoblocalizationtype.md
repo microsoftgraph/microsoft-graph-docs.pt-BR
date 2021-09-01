@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 0f4bfd87ea48319667ce203c741828fe1868af1cc5ed0f7f2700a9f80ca18525
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: b0b16018cb9eca2fa574713d12f1e5e66d7530ee
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54156069"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58786597"
 ---
 # <a name="devicemanagementexportjoblocalizationtype-enum-type"></a>Tipo de número deviceManagementExportJobLocalizationType
 
@@ -26,8 +26,7 @@ Configura como o trabalho de exportação solicitado é localizado
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |localizedValuesAsAdditionalColumn|0|Configura o trabalho de exportação para expor valores localizados como uma coluna adicional|
-|replaceLocalizableValues|1 |Configura o trabalho de exportação para substituir valores enumerais por seus valores localizados|
-
+|replaceLocalizableValues|1|Configura o trabalho de exportação para substituir valores enumerais por seus valores localizados|
 
 
 

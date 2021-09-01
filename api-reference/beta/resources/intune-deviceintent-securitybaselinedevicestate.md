@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: da4dcad2cd0f8956f43e4322b166495576432d751324b642e867c06df1cb76a4
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 99dae7127ff0074fd660ed90bf0467fc8e6f5986
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54224674"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58805728"
 ---
 # <a name="securitybaselinedevicestate-resource-type"></a>Tipo de recurso securityBaselineDeviceState
 
@@ -28,7 +28,7 @@ O resumo do estado de conformidade da linha de base de segurança de um disposit
 |[Listar securityBaselineDeviceStates](../api/intune-deviceintent-securitybaselinedevicestate-list.md)|[coleção securityBaselineDeviceState](../resources/intune-deviceintent-securitybaselinedevicestate.md)|Listar propriedades e relações dos [objetos securityBaselineDeviceState.](../resources/intune-deviceintent-securitybaselinedevicestate.md)|
 |[Obter securityBaselineDeviceState](../api/intune-deviceintent-securitybaselinedevicestate-get.md)|[securityBaselineDeviceState](../resources/intune-deviceintent-securitybaselinedevicestate.md)|Leia propriedades e relações do [objeto securityBaselineDeviceState.](../resources/intune-deviceintent-securitybaselinedevicestate.md)|
 |[Criar securityBaselineDeviceState](../api/intune-deviceintent-securitybaselinedevicestate-create.md)|[securityBaselineDeviceState](../resources/intune-deviceintent-securitybaselinedevicestate.md)|Crie um novo [objeto securityBaselineDeviceState.](../resources/intune-deviceintent-securitybaselinedevicestate.md)|
-|[Excluir securityBaselineDeviceState](../api/intune-deviceintent-securitybaselinedevicestate-delete.md)|Nenhum|Exclui um [securityBaselineDeviceState](../resources/intune-deviceintent-securitybaselinedevicestate.md).|
+|[Excluir securityBaselineDeviceState](../api/intune-deviceintent-securitybaselinedevicestate-delete.md)|Nenhum(a)|Exclui um [securityBaselineDeviceState](../resources/intune-deviceintent-securitybaselinedevicestate.md).|
 |[Atualizar securityBaselineDeviceState](../api/intune-deviceintent-securitybaselinedevicestate-update.md)|[securityBaselineDeviceState](../resources/intune-deviceintent-securitybaselinedevicestate.md)|Atualize as propriedades de [um objeto securityBaselineDeviceState.](../resources/intune-deviceintent-securitybaselinedevicestate.md)|
 
 ## <a name="properties"></a>Propriedades
@@ -63,7 +63,6 @@ Veja a seguir uma representação JSON do recurso.
   "lastReportedDateTime": "String (timestamp)"
 }
 ```
-
 
 
 

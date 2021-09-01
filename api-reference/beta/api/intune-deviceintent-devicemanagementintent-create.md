@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e47152888dc97f9d7cd810fde9e0769203af2ee6b788b90f931a047159e6177d
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: cbc2af6ee43284fc037088c6ef0b0e8219cbfe53
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54211013"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58817247"
 ---
 # <a name="create-devicemanagementintent"></a>Criar deviceManagementIntent
 
@@ -53,13 +53,13 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar deviceMa
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|A ID de intenção|
+|id|String|A ID de intenção|
 |displayName|Cadeia de caracteres|O nome de exibição dado pelo usuário|
 |description|Cadeia de caracteres|A descrição dada pelo usuário|
 |isAssigned|Boolean|Significa se a intenção é atribuída ou não aos usuários|
 |lastModifiedDateTime|DateTimeOffset|Quando a intenção foi modificada pela última vez|
-|templateId|Cadeia de caracteres|A ID do modelo de que essa intenção foi criada (se alguma)|
-|roleScopeTagIds|String collection|Lista de marcas de escopo para esta instância entity.|
+|templateId|String|A ID do modelo de que essa intenção foi criada (se alguma)|
+|roleScopeTagIds|Coleção String|Lista de marcas de escopo para esta instância entity.|
 
 
 
@@ -107,7 +107,6 @@ Content-Length: 379
   ]
 }
 ```
-
 
 
 

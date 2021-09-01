@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: e732dc90d24205ca5d94fad310eca3e5b6f23e31
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 4e6905faac844f91925f875e893d710e7a8286e5
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58256063"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58817373"
 ---
 # <a name="userexperienceanalyticsapphealthdeviceperformancedetails-resource-type"></a>tipo de recurso userExperienceAnalyticsAppHealthDevicePerformanceDetails
 
@@ -36,7 +36,7 @@ A entidade de desempenho do dispositivo de análise de experiência do usuário 
 |:---|:---|:---|
 |id|Cadeia de caracteres|O identificador exclusivo do objeto de desempenho do dispositivo de análise de experiência do usuário.|
 |eventDateTime|DateTimeOffset|A hora em que o evento ocorreu.|
-|eventType|Cadeia de caracteres|O tipo do evento.|
+|eventType|String|O tipo do evento.|
 |appDisplayName|Cadeia de caracteres|O nome amigável do aplicativo para o qual o evento ocorreu.|
 |appPublisher|Cadeia de caracteres|O editor do aplicativo.|
 |appVersion|Cadeia de caracteres|A versão do aplicativo.|
@@ -67,7 +67,6 @@ Veja a seguir uma representação JSON do recurso.
   "deviceDisplayName": "String"
 }
 ```
-
 
 
 

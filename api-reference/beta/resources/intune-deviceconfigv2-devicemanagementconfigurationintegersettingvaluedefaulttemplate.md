@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9c3220a763e7fbb651c1bf6766f7f6c312d0036bf11d78cf8666bae53e877f80
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 105d400b051c0322d72e711871ae8801a07d25ce
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54244880"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58815586"
 ---
 # <a name="devicemanagementconfigurationintegersettingvaluedefaulttemplate-resource-type"></a>Tipo de recurso deviceManagementConfigurationIntegerSettingValueDefaultTemplate
 
@@ -41,7 +41,6 @@ Veja a seguir uma representação JSON do recurso.
   "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValueDefaultTemplate"
 }
 ```
-
 
 
 

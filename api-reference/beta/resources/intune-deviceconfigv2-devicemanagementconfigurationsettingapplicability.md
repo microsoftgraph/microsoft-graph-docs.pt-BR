@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: db1be6fa30f6fb89121c742ad483ff8a7fd50e4596c4264997c76a1f5365b016
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 978182491e4f9eafe73dada1c2c83c86c56d3397
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54182893"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58807276"
 ---
 # <a name="devicemanagementconfigurationsettingapplicability-resource-type"></a>Tipo de recurso deviceManagementConfigurationSettingApplicability
 
@@ -28,7 +28,7 @@ Ainda não documentado
 |description|Cadeia de caracteres|descrição da configuração|
 |plataforma|[deviceManagementConfigurationPlatforms](../resources/intune-deviceconfigv2-devicemanagementconfigurationplatforms.md)|A configuração da plataforma pode ser aplicada. Os valores possíveis são: `none`, `macOS`, `windows10X`, `windows10`.|
 |deviceMode|[deviceManagementConfigurationDeviceMode](../resources/intune-deviceconfigv2-devicemanagementconfigurationdevicemode.md)|Modo de Dispositivo em que a configuração pode ser aplicada. Os valores possíveis são: `none` e `kiosk`.|
-|technologies|[deviceManagementConfigurationTechnologies](../resources/intune-deviceconfigv2-devicemanagementconfigurationtechnologies.md)|Por quais canais de tecnologia essa configuração pode ser implantada. Os valores possíveis são: `none`, `mdm`, `windows10XManagement`, `configManager`, `microsoftSense`.|
+|technologies|[deviceManagementConfigurationTechnologies](../resources/intune-deviceconfigv2-devicemanagementconfigurationtechnologies.md)|Por quais canais de tecnologia essa configuração pode ser implantada. Os possíveis valores são: `none`, `mdm`, `windows10XManagement`, `configManager`, `microsoftSense`, `exchangeOnline`.|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -49,7 +49,6 @@ Veja a seguir uma representação JSON do recurso.
   "technologies": "String"
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2a2d4f27ed6cf1a877e9052ee70f92fca66a07820481c168d85cd259f3677cd4
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 309d2912fdd6be95ed9007500f32b957be465352
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54148789"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58801652"
 ---
 # <a name="create-importeddeviceidentity"></a>Criar importedDeviceIdentity
 
@@ -27,9 +27,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementServiceConfig.ReadWrite.All|
+|Delegado (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Application|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -59,9 +59,9 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar importDe
 |lastModifiedDateTime|DateTimeOffset|Last Modified DateTime of the description|
 |createdDateTime|DateTimeOffset|Data de criação hora do dispositivo|
 |lastContactedDateTime|DateTimeOffset|Hora da Última Data Contata do dispositivo|
-|description|Cadeia de caracteres|A descrição do dispositivo|
+|descrição|Cadeia de caracteres|A descrição do dispositivo|
 |enrollmentState|[enrollmentState](../resources/intune-shared-enrollmentstate.md)|O estado do dispositivo no Intune. Os possíveis valores são: `unknown`, `enrolled`, `pendingReset`, `failed`, `notContacted`, `blocked`.|
-|plataforma|[platform](../resources/intune-enrollment-platform.md)|A plataforma do Dispositivo. Os possíveis valores são: `unknown`, `ios`, `android`, `windows`, `windowsMobile`, `macOS`.|
+|plataforma|[plataforma](../resources/intune-enrollment-platform.md)|A plataforma do Dispositivo. Os possíveis valores são: `unknown`, `ios`, `android`, `windows`, `windowsMobile`, `macOS`.|
 
 
 
@@ -108,7 +108,6 @@ Content-Length: 504
   "platform": "ios"
 }
 ```
-
 
 
 
