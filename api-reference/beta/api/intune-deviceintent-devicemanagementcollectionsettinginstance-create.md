@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0048794716da01271a7a94885807cda9c1a6e27510883c296d84877bbd0dbb9e
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: ef46b7b34260764e8ba67f8fbd0a17258493e927
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54132078"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58820278"
 ---
 # <a name="create-devicemanagementcollectionsettinginstance"></a>Criar deviceManagementCollectionSettingInstance
 
@@ -95,7 +95,6 @@ Content-Length: 210
   "valueJson": "Value Json value"
 }
 ```
-
 
 
 

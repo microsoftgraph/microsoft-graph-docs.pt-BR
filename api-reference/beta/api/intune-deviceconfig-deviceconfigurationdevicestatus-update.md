@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 445e6ac0e8ee5c20bca605a75ae08a69d9e861a092e366c26732f0e45b7aeeda
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 947f8920353bae01b6e9f50c2d102811c74166ed
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54157462"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58820349"
 ---
 # <a name="update-deviceconfigurationdevicestatus"></a>Atualizar deviceConfigurationDeviceStatus
 
@@ -62,7 +62,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [deviceC
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Chave da entidade.|
+|id|String|Chave da entidade.|
 |deviceDisplayName|Cadeia de caracteres|Nome do dispositivo de DevicePolicyStatus.|
 |userName|Cadeia de caracteres|O nome de usuário que está sendo relatado|
 |deviceModel|Cadeia de caracteres|O modelo do dispositivo que está sendo relatado|
@@ -119,7 +119,6 @@ Content-Length: 496
   "userPrincipalName": "User Principal Name value"
 }
 ```
-
 
 
 

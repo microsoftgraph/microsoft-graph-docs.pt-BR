@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 957c7021469d932e155fec26aca8b28c6e0a619882dc936e023a1d072af9379e
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 50b59b737cf8bb6d9fc4176de3254f78e445840f
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54132232"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58820636"
 ---
 # <a name="create-macossoftwareupdatestatesummary"></a>Criar macOSSoftwareUpdateStateSummary
 
@@ -54,7 +54,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar o macOSS
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|Cadeia de caracteres|Chave da entidade.|
-|displayName|Cadeia de caracteres|Nome acessível humano da atualização de software|
+|displayName|String|Nome acessível humano da atualização de software|
 |productKey|String|Chave do produto da atualização de software.|
 |updateCategory|[macOSSoftwareUpdateCategory](../resources/intune-deviceconfig-macossoftwareupdatecategory.md)|Categoria de atualização de software. Os valores possíveis são: `critical`, `configurationDataFile`, `firmware`, `other`.|
 |updateVersion|Cadeia de caracteres|Versão da atualização de software|
@@ -104,7 +104,6 @@ Content-Length: 380
   "lastUpdatedDateTime": "2017-01-01T00:00:56.8321556-08:00"
 }
 ```
-
 
 
 
