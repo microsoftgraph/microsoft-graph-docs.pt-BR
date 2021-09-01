@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 35e630422185164c14c86073803b752cd98ccf7f48e3608bd504a760074cf8e4
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: f2f30468edbb0e09bc641b932d5bb216f22bd74d
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54248520"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58794101"
 ---
 # <a name="ioseducertificatesettings-resource-type"></a>Tipo de recurso iosEduCertificateSettings
 
@@ -57,7 +57,6 @@ Veja a seguir uma representação JSON do recurso.
   "certificateValidityPeriodScale": "String"
 }
 ```
-
 
 
 

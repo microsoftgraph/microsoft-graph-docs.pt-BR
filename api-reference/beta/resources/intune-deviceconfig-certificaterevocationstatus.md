@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 5e10816d1f61d514a1b2fd0c8a7f6c6815980628d86a7c694a05010e887cbfd8
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 7f6e7635a8893559d4f86f60210aba3b9f08d68b
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54226438"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58778742"
 ---
 # <a name="certificaterevocationstatus-enum-type"></a>Tipo de número certificateRevocationStatus
 
@@ -26,11 +26,10 @@ Status de revogação de certificado.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |Nenhuma|0|Não revogado.|
-|pendente|1 |Revogação pendente.|
+|pendente|1|Revogação pendente.|
 |emitido|2|Comando revogação emitido.|
-|failed|3 |Falha na revogação.|
+|failed|3|Falha na revogação.|
 |revogado|4 |Revogado.|
-
 
 
 

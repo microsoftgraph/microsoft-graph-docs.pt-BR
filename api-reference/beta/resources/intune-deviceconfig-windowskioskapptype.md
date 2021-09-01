@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: fdd64463c520df9ce760bc6013c04614f43faa1aa50bbe004086b987d294a0f2
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: d13bbddd0541002cc8e0f0a1ffb078929efbcc44
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54183033"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58796611"
 ---
 # <a name="windowskioskapptype-enum-type"></a>Tipo de numeração windowsKioskAppType
 
@@ -26,10 +26,9 @@ O tipo de Windows de quiosque.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |desconhecido|0|Desconhecido.|
-|loja|1 |Aplicativo da Loja.|
+|loja|1|Aplicativo da Loja.|
 |desktop|2|Aplicativo da Área de Trabalho.|
-|aumId|3 |Entrada por AUMID.|
-
+|aumId|3|Entrada por AUMID.|
 
 
 

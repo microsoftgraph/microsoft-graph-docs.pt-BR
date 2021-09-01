@@ -4,12 +4,12 @@ description: O Microsoft Graph expõe as permissões granulares que controlam o 
 author: jackson-woods
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 7679ab0e74f77961e975ae1d46877cde79a7890b
-ms.sourcegitcommit: c6f7a931a8d83ac54f577b7bec08237fd17ce51a
+ms.openlocfilehash: 7c8e37f1ce6d802e303566e72e600471bd796118
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58490564"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58796177"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Referência de permissões do Microsoft Graph
 
@@ -433,10 +433,13 @@ Nenhum.
 |Permissão    |Exibir Cadeia de Caracteres   |Descrição |Consentimento Obrigatório do Administrador |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
 |_CallRecords.Read.All_|Ler todos os registros de chamadas|Permite que o aplicativo leia registros de chamadas de todas as chamadas e reuniões on-line sem um usuário conectado.|Sim|
+|_CallRecord-PstnCalls.Read.All_|Ler PSTN e dados de log de chamadas de roteamento direto|Permite que o aplicativo leia todos os dados de registro de chamadas PSTN e roteamento direto sem um usuário conectado.|Sim|
 
 ### <a name="remarks"></a>Comentários
 
 A permissão _CallRecords.Read.All_ concede a um aplicativo acesso privilegiado ao [callRecords](/graph/api/resources/callrecords-callrecord) para todas as chamadas e reuniões online dentro da organização, incluindo chamadas de e para números de telefone externos. Isso inclui detalhes potencialmente confidenciais sobre quem participou da chamada, bem como informações técnicas referentes a essas chamadas e reuniões, que podem ser usadas para solucionar problemas de rede, como endereços IP, detalhes do dispositivo e outras informações de rede.
+
+A permissão _CallRecord-PstnCalls.Read.All_ concede a um aplicativo acesso a [PSTN (planos de chamadas)](/graph/api/callrecords-callrecord-getpstncalls) e registros de chamadas de [roteamento direto](/graph/api/callrecords-callrecord-getdirectroutingcalls). Isso inclui informações potencialmente confidenciais sobre os usuários, bem como chamadas de e para números de telefone externos.
 
 > **Importante:** A discrição deve ser usada ao conceder essas permissões aos aplicativos. Os registros de chamadas podem fornecer informações sobre a operação de seus negócios e, portanto, podem ser um alvo para agentes mal-intencionados. Conceda essas permissões apenas aos aplicativos em que você confia para atender aos seus requisitos de proteção de dados.
 
@@ -451,6 +454,7 @@ A permissão _CallRecords.Read.All_ concede a um aplicativo acesso privilegiado 
 * _CallRecords.Read.All_: recuperar um registro de chamada (`GET /v1.0/communications/callRecords/{id}`).
 * _CallRecords.Read.All_: assinar novos registros de chamadas (`POST /v1.0/subscriptions`).
 * _CallRecords.Read.All_: recuperar os registros de chamadas de roteamento direto no intervalo de tempo especificado (`GET /v1.0/communications/callRecords/microsoft.graph.callRecords.getDirectRoutingCalls(fromDateTime={start date and time),toDateTime={end date and time))`)
+* _CallRecord-PstnCalls.Read.All_: recupera registros de chamadas PSTN dentro do intervalo de tempo especificado (`GET /v1.0/communications/callRecords/microsoft.graph.callRecords.getPstnCalls(fromDateTime={start date and time),toDateTime={end date and time))`)
 
 Para cenários mais complexos que envolvem várias permissões, confira [Cenários de permissões](#permission-scenarios).
 
@@ -564,6 +568,7 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 | _OnlineMeeting.ReadBasic.Chat_   | Leia as propriedades básicas de uma reunião associada a este chat. | Permite que o aplicativo leia as propriedades básicas - como nome, programação, organizador e link de ingresso - de uma reunião associada a este chat, sem um usuário conectado. |Não | Não |
 | _Calls.AccessMedia.Chat_         | Acesse fluxos de mídia em chamadas associadas a esse chat ou reunião.                                    | Permite que o aplicativo acesse fluxos de mídia em chamadas associadas a esse chat ou reunião, sem um usuário conectado. |Não | Não |
 | _Calls.JoinGroupCalls.Chat_         | Participe de chamadas associadas a esse chat ou reunião.                                    | Permite que o aplicativo leia as propriedades básicas - como nome, programação, organizador e link de ingresso - de uma reunião associada a este chat, sem um usuário conectado. |Não | Não |
+| _TeamsActivity.Send.Chat_        | Envie notificações de feed de atividades para usuários neste chat.       | Permite que o aplicativo crie novas notificações nos feeds de atividades de trabalho em equipe dos usuários neste chat, sem um usuário conectado. | Não | Não |
 
 >[!NOTE]
 > Atualmente, estas permissões são suportadas apenas na versão beta do Microsoft Graph.
@@ -1316,7 +1321,7 @@ _Notes.ReadWrite_ e _Notes.ReadWrite.All_ também permitem que o aplicativo modi
 Para contas corporativas ou de estudante, _Notes.Read.All_ e _Notes.ReadWrite.All_ permitem que o aplicativo acesse o conteúdo do OneNote de outros usuários ao qual o usuário conectado tenha permissão dentro da organização.
 
 ### <a name="example-usage"></a>Exemplo de uso
-#### <a name="delegated"></a>Delegado
+#### <a name="delegated"></a>Delegated
 
 * _Notes.Create_: Criar novos blocos de anotações para o usuário conectado (`POST /me/onenote/notebooks`).
 * _Notes.Read_: Criar blocos de anotações para o usuário conectado (`GET /me/onenote/notebooks`).
@@ -2068,6 +2073,7 @@ As permissões de taxonomia só são válidas para contas do trabalho ou da esco
 | _Member.Read.Group_ | Leia os membros deste grupo.| Excluir os membros desse grupo, sem um usuário conectado. |Não | Não |
 | _Owner.Read.Group_| Leia os proprietários deste grupo. | Ler os proprietários desse grupo, sem um usuário conectado. |Não | Não |
 | _File.Read.Group_| Leia os arquivos e pastas desta equipe. | **Suporte limitado** <br/> (Visualização) Leia os arquivos e pastas desta equipe, sem usuários conectados. | Não | Não |
+| _TeamsActivity.Send.Group_| Envie notificações de feed de atividades aos usuários desta equipe. | Permite que o aplicativo crie novas notificações nos feeds de atividades de trabalho em equipe dos usuários desta equipe, sem um usuário conectado. | Não | Não |
 
 ## <a name="teams-settings-permissions"></a>Permissões de configurações do Teams
 
@@ -2429,7 +2435,7 @@ Para que um aplicativo leia ou grave todas as configurações de implantação d
 
 ### <a name="example-usage"></a>Exemplo de uso
 
-#### <a name="delegated"></a>Delegado
+#### <a name="delegated"></a>Delegated
 
 * _WindowsUpdates.ReadWrite.All_: crie uma implantação (`POST /beta/admin/windows/updates/deployments`).
 

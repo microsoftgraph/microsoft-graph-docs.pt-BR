@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 451e2cf62688d47afd9100cc3cf28ccbc89d5acb51e1639cb057cf11890c92e4
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: c92d68ddfc728b1bce2c1a444e09ec910ddae3ae
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54122520"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58786674"
 ---
 # <a name="windows10vpnprofiletarget-enum-type"></a>Tipo de número windows10VpnProfileTarget
 
@@ -26,9 +26,8 @@ Windows 10 Tipos de destino de perfil VPN.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |usuário|0|Perfil VPN direcionado pelo usuário.|
-|device|1 |Perfil VPN direcionado ao dispositivo.|
+|device|1|Perfil VPN direcionado ao dispositivo.|
 |autoPilotDevice|2|Perfil VPN direcionado ao Dispositivo AutoPilot.|
-
 
 
 

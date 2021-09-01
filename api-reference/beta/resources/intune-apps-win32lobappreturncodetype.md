@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 57d63d1f8010f4959e83d591306393c6a228a11c0ac030663c185bc7cf2b6119
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 05bfb1daa6c1aa1cdad2f53f3447f709ca9aff18
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54165809"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58789682"
 ---
 # <a name="win32lobappreturncodetype-enum-type"></a>Tipo denum win32LobAppReturnCodeType
 
@@ -26,11 +26,10 @@ Indica o tipo de código de retorno.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |failed|0|Falha.|
-|sucesso|1 |Sucesso.|
+|sucesso|1|Sucesso.|
 |softReboot|2|A reinicialização suave é necessária.|
-|hardReboot|3 |A reinicialização dura é necessária.|
+|hardReboot|3|A reinicialização dura é necessária.|
 |repetir|4 |Tente novamente.|
-
 
 
 

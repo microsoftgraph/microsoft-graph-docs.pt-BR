@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: e11233ceb703e9b0a587c55d304cbd74d8eeb712710f33336acbb62575473742
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 1277bb254a9485bc2adc26859185adfe5d22ad5b
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54173125"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58793870"
 ---
 # <a name="vpndnsrule-resource-type"></a>Tipo de recurso vpnDnsRule
 
@@ -26,10 +26,10 @@ Definição da Regra DNS vpn.
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |nome|Cadeia de caracteres|Nome.|
-|servers|String collection|Servidores.|
+|servers|Coleção de cadeias de caracteres|Servidores.|
 |proxyServerUri|Cadeia de caracteres|Proxy Server Uri.|
-|autoTrigger|Boolean|Conecte-se automaticamente à VPN quando o dispositivo se conectar a esse domínio: False padrão.|
-|persistent|Boolean|Mantenha essa regra ativa mesmo quando a VPN não estiver conectada: False padrão|
+|autoTrigger|Boleano|Conecte-se automaticamente à VPN quando o dispositivo se conectar a esse domínio: False padrão.|
+|persistent|Boleano|Mantenha essa regra ativa mesmo quando a VPN não estiver conectada: False padrão|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -53,7 +53,6 @@ Veja a seguir uma representação JSON do recurso.
   "persistent": true
 }
 ```
-
 
 
 

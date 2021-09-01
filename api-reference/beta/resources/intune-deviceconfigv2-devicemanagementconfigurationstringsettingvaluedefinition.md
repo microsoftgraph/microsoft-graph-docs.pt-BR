@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 764afcb12275259d250aed2e5732fdf6ca998b4bf7ed17d2b3d939b3c4160412
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 9731c46e9ae80f346bef29d951f4e430d76743f3
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54239445"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58815075"
 ---
 # <a name="devicemanagementconfigurationstringsettingvaluedefinition-resource-type"></a>Tipo de recurso deviceManagementConfigurationStringSettingValueDefinition
 
@@ -32,7 +32,7 @@ Herda [de deviceManagementConfigurationSettingValueDefinition](../resources/intu
 |inputValidationSchema|Cadeia de caracteres|Expressão regular ou qualquer esquema xml ou json que a cadeia de caracteres de entrada deve corresponder|
 |maximumLength|Int64|Comprimento máximo da cadeia de caracteres. Valores válidos de 0 a 87516|
 |minimumLength|Int64|Comprimento mínimo da cadeia de caracteres. Valores válidos de 0 a 87516|
-|isSecret|Boolean|Especifica se a configuração precisa ser tratada como um segredo. Configurações marcados como sim serão criptografados em trânsito e em repouso e serão exibidos como asteriscos quando representados no UX.|
+|isSecret|Boleano|Especifica se a configuração precisa ser tratada como um segredo. Configurações marcados como sim serão criptografados em trânsito e em repouso e serão exibidos como asteriscos quando representados no UX.|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -54,7 +54,6 @@ Veja a seguir uma representação JSON do recurso.
   "isSecret": true
 }
 ```
-
 
 
 

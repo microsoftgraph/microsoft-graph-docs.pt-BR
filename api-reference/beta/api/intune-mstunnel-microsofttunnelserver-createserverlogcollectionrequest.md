@@ -1,18 +1,18 @@
 ---
-title: ação getCachedReport
+title: Ação createServerLogCollectionRequest
 description: Ainda não documentado
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3655b2409ab398ed3c5921c094a302cd0d44aa16
+ms.openlocfilehash: 57e396bd2d8edb0cd231a069eff8c42ef642b217
 ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 08/31/2021
-ms.locfileid: "58790469"
+ms.locfileid: "58805333"
 ---
-# <a name="getcachedreport-action"></a>ação getCachedReport
+# <a name="createserverlogcollectionrequest-action"></a>Ação createServerLogCollectionRequest
 
 Namespace: microsoft.graph
 
@@ -27,9 +27,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All, DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
+|Delegado (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All, DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -37,7 +37,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 }
 -->
 ``` http
-POST /deviceManagement/reports/getCachedReport
+POST /deviceManagement/microsoftTunnelSites/{microsoftTunnelSiteId}/microsoftTunnelServers/{microsoftTunnelServerId}/createServerLogCollectionRequest
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -53,43 +53,27 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta ação.
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Ainda não documentado|
-|select|String collection|Ainda não documentado|
-|search|String|Ainda não documentado|
-|groupBy|String collection|Ainda não documentado|
-|orderBy|String collection|Ainda não documentado|
-|skip|Int32|Ainda não documentado|
-|top|Int32|Ainda não documentado|
+|startDateTime|DateTimeOffset|Ainda não documentado|
+|endDateTime|DateTimeOffset|Ainda não documentado|
 
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, essa ação retornará `200 OK` um código de resposta e um Stream no corpo da resposta.
+Se tiver êxito, essa ação retornará um código de `200 OK` resposta e um [microsoftTunnelServerLogCollectionResponse](../resources/intune-mstunnel-microsofttunnelserverlogcollectionresponse.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
 ### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
 ``` http
-POST https://graph.microsoft.com/beta/deviceManagement/reports/getCachedReport
+POST https://graph.microsoft.com/beta/deviceManagement/microsoftTunnelSites/{microsoftTunnelSiteId}/microsoftTunnelServers/{microsoftTunnelServerId}/createServerLogCollectionRequest
 
 Content-type: application/json
-Content-length: 209
+Content-length: 115
 
 {
-  "id": "Id value",
-  "select": [
-    "Select value"
-  ],
-  "search": "Search value",
-  "groupBy": [
-    "Group By value"
-  ],
-  "orderBy": [
-    "Order By value"
-  ],
-  "skip": 4,
-  "top": 3
+  "startDateTime": "2016-12-31T23:58:46.7156189-08:00",
+  "endDateTime": "2017-01-01T00:03:30.9241974-08:00"
 }
 ```
 
@@ -98,10 +82,20 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 79
+Content-Length: 481
 
 {
-  "value": "Z2V0Q2FjaGVkUmVwb3J0IEludHVuZSBEb2MgU2FtcGxlIDc5MjIxODQ3OA=="
+  "value": {
+    "@odata.type": "#microsoft.graph.microsoftTunnelServerLogCollectionResponse",
+    "id": "05dcc2e9-c2e9-05dc-e9c2-dc05e9c2dc05",
+    "status": "completed",
+    "startDateTime": "2016-12-31T23:58:46.7156189-08:00",
+    "endDateTime": "2017-01-01T00:03:30.9241974-08:00",
+    "sizeInBytes": 11,
+    "serverId": "Server Id value",
+    "requestDateTime": "2017-01-01T00:03:07.1589002-08:00",
+    "expiryDateTime": "2017-01-01T00:03:32.5199332-08:00"
+  }
 }
 ```
 

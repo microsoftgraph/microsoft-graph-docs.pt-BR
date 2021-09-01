@@ -1,18 +1,18 @@
 ---
-title: Tipo de recurso proxiedDomain
-description: Domínio com proxy
-author: dougeby
+title: Tipo de recurso officeConfigurationAssignmentTarget
+description: Office Destino da Atribuição de Configuração do Cliente.
 localization_priority: Normal
+author: dougeby
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 58f9b6750795794bb7fed698b3fcaf7e66f687e4
+ms.openlocfilehash: 18da69fbbf6eb19a1ab7791195b2c74a4d14c2ac
 ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 08/31/2021
-ms.locfileid: "58794354"
+ms.locfileid: "58813660"
 ---
-# <a name="proxieddomain-resource-type"></a>Tipo de recurso proxiedDomain
+# <a name="officeconfigurationassignmenttarget-resource-type"></a>Tipo de recurso officeConfigurationAssignmentTarget
 
 Namespace: microsoft.graph
 
@@ -20,13 +20,11 @@ Namespace: microsoft.graph
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Domínio com proxy
+Office Destino da Atribuição de Configuração do Cliente.
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|ipAddressOrFQDN|Cadeia de caracteres|O endereço IP ou FQDN|
-|proxy|Cadeia de caracteres|IP proxy ou FQDN|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -35,14 +33,13 @@ Nenhum
 Veja a seguir uma representação JSON do recurso.
 <!-- {
   "blockType": "resource",
-  "@odata.type": "microsoft.graph.proxiedDomain"
+  "keyProperty": "id",
+  "@odata.type": "microsoft.graph.officeConfigurationAssignmentTarget"
 }
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.proxiedDomain",
-  "ipAddressOrFQDN": "String",
-  "proxy": "String"
+  "@odata.type": "#microsoft.graph.officeConfigurationAssignmentTarget"
 }
 ```
 
