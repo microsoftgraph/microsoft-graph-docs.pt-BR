@@ -5,12 +5,12 @@ author: williamlooney
 doc_type: conceptualPageType
 ms.prod: cloud-communications
 localization_priority: Priority
-ms.openlocfilehash: 561a7c9d3a3a8c4538fad392d6408def024a44b73206c5832a2bf8581e888a9e
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 6af5d297c7a04b8c28321fed4cc106d2981ac0e4
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54178518"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58799441"
 ---
 # <a name="working-with-the-call-records-api-in-microsoft-graph"></a>Trabalhar com a API de registros de chamadas no Microsoft Graph
 
@@ -25,6 +25,8 @@ A API de registros de chamadas é definida no subnamespace OData, `microsoft.gra
 | [callRecord](callrecords-callrecord.md) | [Obter callRecord](../api/callrecords-callrecord-get.md) |
 | [sessão](callrecords-session.md) | [Obter callRecord](../api/callrecords-callrecord-get.md)<br />[Listar sessões](../api/callrecords-session-list.md) |
 | [segmento](callrecords-segment.md) | [Obter callRecord](../api/callrecords-callrecord-get.md)<br />[Listar sessões](../api/callrecords-session-list.md) |
+| [pstnCallLogRow](callrecords-pstncalllogrow.md)|[getPstnCalls](../api/callrecords-callrecord-getpstncalls.md) |
+| [directRoutingLogRow](callrecords-directroutinglogrow.md) | [getDirectRoutingCalls](../api/callrecords-callrecord-getdirectroutingcalls.md)|
 
 ## <a name="call-record-structure"></a>Estrutura do registro de chamadas
 
@@ -40,5 +42,5 @@ No diagrama acima, o número denota quantas crianças de cada tipo podem estar p
 
 ## <a name="see-also"></a>Também consulte
 
-- [Assinaturas do Webhook](/graph/api/resources/webhooks?view=graph-rest-1.0)
+- [Assinaturas do Webhook](/graph/api/resources/webhooks?view=graph-rest-1.0&preserve-view=true)
 

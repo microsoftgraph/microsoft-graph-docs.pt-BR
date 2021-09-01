@@ -1,18 +1,18 @@
 ---
-title: ação createInstance
+title: ação getRemoteAssistanceSessionsReport
 description: Ainda não documentado
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c1b997fa18512757c0cfbaee1d5bf4cc2fd52c03
+ms.openlocfilehash: fe30d9b5d1bc2f1d4e5c7aa86d03fb5154425f50
 ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 08/31/2021
-ms.locfileid: "58784622"
+ms.locfileid: "58797746"
 ---
-# <a name="createinstance-action"></a>ação createInstance
+# <a name="getremoteassistancesessionsreport-action"></a>ação getRemoteAssistanceSessionsReport
 
 Namespace: microsoft.graph
 
@@ -27,9 +27,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
+|Delegado (conta corporativa ou de estudante)|DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|Application|DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -37,8 +37,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 }
 -->
 ``` http
-POST /deviceManagement/templates/{deviceManagementTemplateId}/createInstance
-POST /deviceManagement/templates/{deviceManagementTemplateId}/migratableTo/{deviceManagementTemplateId}/createInstance
+POST /deviceManagement/reports/getRemoteAssistanceSessionsReport
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -54,40 +53,47 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta ação.
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|displayName|Cadeia de caracteres|Ainda não documentado|
-|descrição|Cadeia de caracteres|Ainda não documentado|
-|settingsDelta|[Coleção deviceManagementSettingInstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md)|Ainda não documentado|
-|roleScopeTagIds|String collection|Ainda não documentado|
+|nome|Cadeia de caracteres|Ainda não documentado|
+|select|String collection|Ainda não documentado|
+|search|String|Ainda não documentado|
+|groupBy|String collection|Ainda não documentado|
+|orderBy|String collection|Ainda não documentado|
+|skip|Int32|Ainda não documentado|
+|top|Int32|Ainda não documentado|
+|sessionId|String|Ainda não documentado|
+|filter|String|Ainda não documentado|
 
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, essa ação retornará um código `200 OK` de resposta e um [deviceManagementIntent](../resources/intune-deviceintent-devicemanagementintent.md) no corpo da resposta.
+Se tiver êxito, essa ação retornará `200 OK` um código de resposta e um Stream no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
 ### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
 ``` http
-POST https://graph.microsoft.com/beta/deviceManagement/templates/{deviceManagementTemplateId}/createInstance
+POST https://graph.microsoft.com/beta/deviceManagement/reports/getRemoteAssistanceSessionsReport
 
 Content-type: application/json
-Content-length: 398
+Content-length: 278
 
 {
-  "displayName": "Display Name value",
-  "description": "Description value",
-  "settingsDelta": [
-    {
-      "@odata.type": "#microsoft.graph.deviceManagementSettingInstance",
-      "id": "d68168e1-68e1-d681-e168-81d6e16881d6",
-      "definitionId": "Definition Id value",
-      "valueJson": "Value Json value"
-    }
+  "name": "Name value",
+  "select": [
+    "Select value"
   ],
-  "roleScopeTagIds": [
-    "Role Scope Tag Ids value"
-  ]
+  "search": "Search value",
+  "groupBy": [
+    "Group By value"
+  ],
+  "orderBy": [
+    "Order By value"
+  ],
+  "skip": 4,
+  "top": 3,
+  "sessionId": "Session Id value",
+  "filter": "Filter value"
 }
 ```
 
@@ -96,21 +102,10 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 418
+Content-Length: 103
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.deviceManagementIntent",
-    "id": "f972c33e-c33e-f972-3ec3-72f93ec372f9",
-    "displayName": "Display Name value",
-    "description": "Description value",
-    "isAssigned": true,
-    "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
-    "templateId": "Template Id value",
-    "roleScopeTagIds": [
-      "Role Scope Tag Ids value"
-    ]
-  }
+  "value": "Z2V0UmVtb3RlQXNzaXN0YW5jZVNlc3Npb25zUmVwb3J0IEludHVuZSBEb2MgU2FtcGxlIC0xNzcyMDEwMDQ1"
 }
 ```
 

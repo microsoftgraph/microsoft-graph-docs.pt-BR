@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: fc649f732bfaeb69011e51225d11bf4fcf84a8d99d4f04e3742f529df24d87f2
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 4e2e44cf63ae281b643888db85c366b2e80d147d
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54158177"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58799124"
 ---
 # <a name="deviceandappmanagementassignmentsource-enum-type"></a>tipo de número deviceAndAppManagementAssignmentSource
 
@@ -26,8 +26,7 @@ Representa a origem da atribuição.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |direct|0|Direct indica uma atribuição direta.|
-|policySets|1 |PolicySets indica que a atribuição foi feita por meio da atribuição PolicySet.|
-
+|policySets|1|PolicySets indica que a atribuição foi feita por meio da atribuição PolicySet.|
 
 
 

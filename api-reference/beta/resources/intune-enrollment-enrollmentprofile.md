@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 1f2e3a1c26b134d30d76e62d314ac67e6fbe7992517da7e8975e0be28bec3fcb
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: eb5dc9a6d759e6f8a72097777b87d80a5dd33f5c
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54172887"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58799786"
 ---
 # <a name="enrollmentprofile-resource-type"></a>Tipo de recurso enrollmentProfile
 
@@ -28,7 +28,7 @@ O recurso enrollmentProfile representa uma coleção de configurações que deve
 |[Listar enrollmentProfiles](../api/intune-enrollment-enrollmentprofile-list.md)|[Coleção enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|Listar propriedades e relações dos objetos [enrollmentProfile.](../resources/intune-enrollment-enrollmentprofile.md)|
 |[Obter enrollmentProfile](../api/intune-enrollment-enrollmentprofile-get.md)|[enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|Ler propriedades e relações do [objeto enrollmentProfile.](../resources/intune-enrollment-enrollmentprofile.md)|
 |[Criar enrollmentProfile](../api/intune-enrollment-enrollmentprofile-create.md)|[enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|Crie um novo [objeto enrollmentProfile.](../resources/intune-enrollment-enrollmentprofile.md)|
-|[Excluir enrollmentProfile](../api/intune-enrollment-enrollmentprofile-delete.md)|Nenhum|Exclui um [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md).|
+|[Excluir enrollmentProfile](../api/intune-enrollment-enrollmentprofile-delete.md)|Nenhum(a)|Exclui um [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md).|
 |[Atualizar enrollmentProfile](../api/intune-enrollment-enrollmentprofile-update.md)|[enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|Atualize as propriedades de [um objeto enrollmentProfile.](../resources/intune-enrollment-enrollmentprofile.md)|
 |[Ação setDefaultProfile](../api/intune-enrollment-enrollmentprofile-setdefaultprofile.md)|Nenhuma|Ainda não documentado|
 |[Função exportMobileConfig](../api/intune-enrollment-enrollmentprofile-exportmobileconfig.md)|Cadeia de caracteres|Exporta a configuração móvel|
@@ -39,11 +39,11 @@ O recurso enrollmentProfile representa uma coleção de configurações que deve
 |:---|:---|:---|
 |id|Cadeia de caracteres|O GUID do objeto.|
 |displayName|Cadeia de caracteres|Nome do perfil|
-|description|Cadeia de caracteres|Descrição do perfil|
-|requiresUserAuthentication|Boolean|Indica se o perfil requer autenticação do usuário|
+|descrição|Cadeia de caracteres|Descrição do perfil|
+|requiresUserAuthentication|Booliano|Indica se o perfil requer autenticação do usuário|
 |configurationEndpointUrl|Cadeia de caracteres|URL do ponto de extremidade de configuração a ser usada para Registro|
-|enableAuthenticationViaCompanyPortal|Boolean|Indica a autenticação com o Assistente de Instalação da Apple em vez de Portal da Empresa.|
-|requireCompanyPortalOnSetupAssistantEnrolledDevices|Boolean|Indica que a Portal da Empresa é necessária em dispositivos inscritos pelo assistente de instalação|
+|enableAuthenticationViaCompanyPortal|Booliano|Indica a autenticação com o Assistente de Instalação da Apple em vez de Portal da Empresa.|
+|requireCompanyPortalOnSetupAssistantEnrolledDevices|Boleano|Indica que a Portal da Empresa é necessária em dispositivos inscritos pelo assistente de instalação|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -68,7 +68,6 @@ Veja a seguir uma representação JSON do recurso.
   "requireCompanyPortalOnSetupAssistantEnrolledDevices": true
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 7cefdf5e3c5f7e223c26ede4efa335335543b022d2ffd2e5e8e011e164e410c0
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 726b7c681b3e1c95ffb62704b8e03d4d4ab3b5b9
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54178714"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58806555"
 ---
 # <a name="applicationtype-enum-type"></a>Tipo de número applicationType
 
@@ -25,9 +25,8 @@ Possíveis tipos de Aplicativo
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|universal|1 |O aplicativo universal do Windows|
+|universal|1|O aplicativo universal do Windows|
 |desktop|2|O aplicativo da área de trabalho do Windows|
-
 
 
 

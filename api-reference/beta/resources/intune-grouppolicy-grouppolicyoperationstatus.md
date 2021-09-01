@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 5830145e31473f316fef2169bded68cd19ead37d4c03ca07f74bbd9b2d0cc177
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 774b6995b09108c3eb896d430918a3ece47acd58
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54251159"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58793551"
 ---
 # <a name="grouppolicyoperationstatus-enum-type"></a>groupPolicyOperationStatus enum type
 
@@ -26,10 +26,9 @@ Tipo de status da operação de Política de Grupo.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |desconhecido|0|Status da operação desconhecida da Política de Grupo.|
-|inProgress|1 |Política de Grupo em andamento status da operação.|
+|inProgress|1|Política de Grupo em andamento status da operação.|
 |sucesso|2|Status de operação bem-sucedido da Política de Grupo.|
-|failed|3 |Status da operação com falha na Política de Grupo.|
-
+|failed|3|Status da operação com falha na Política de Grupo.|
 
 
 

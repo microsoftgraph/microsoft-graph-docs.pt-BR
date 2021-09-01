@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 2bb0a3c2d3909979b6d1380aaf42b78dda712239d7d5352d51ff0334d2b107f8
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 9f71e24d7938ecd1123a03916c8ba45685b9a907
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54142096"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58806079"
 ---
 # <a name="managedebook-resource-type"></a>Tipo de recurso managedEBook
 
@@ -34,7 +34,7 @@ Uma classe abstrata que contém as propriedades base do livro eletrônico gerenc
 |:---|:---|:---|
 |id|Cadeia de caracteres|Chave da entidade.|
 |displayName|Cadeia de caracteres|Nome do livro eletrônico.|
-|description|Cadeia de caracteres|Descrição.|
+|descrição|Cadeia de caracteres|Descrição.|
 |publisher|Cadeia de caracteres|Publicador.|
 |publishedDateTime|DateTimeOffset|A data e hora em que o livro eletrônico foi publicado.|
 |largeCover|[mimeContent](../resources/intune-shared-mimecontent.md)|Capa do livro.|
@@ -79,7 +79,6 @@ Veja a seguir uma representação JSON do recurso.
   "privacyInformationUrl": "String"
 }
 ```
-
 
 
 

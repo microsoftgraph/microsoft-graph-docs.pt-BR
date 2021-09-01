@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: ccfbff257be6c0ccd7d00f3aebe11c074044b253b4c38d9797b23dd1e9d23ade
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 2fa851473fd8aef1ae8af588f07e1b477563091b
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54249991"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58799814"
 ---
 # <a name="easservices-enum-type"></a>Tipo de numeração easServices
 
@@ -26,12 +26,11 @@ Exchange Serviços de sincronização ativos.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |Nenhuma|0|Ainda não documentado|
-|calendars|1 |Habilita a sincronização de calendários.|
+|calendars|1|Habilita a sincronização de calendários.|
 |contacts|2|Habilita a sincronização de contatos.|
 |email|4 |Habilita a sincronização de email.|
 |notes|8 |Habilita a sincronização de anotações.|
 |lembretes|16 |Habilita a sincronização de lembretes.|
-
 
 
 

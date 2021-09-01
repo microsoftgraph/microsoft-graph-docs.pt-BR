@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: b3f5930a33b464b33e2d81af78b13a216e03311b
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 58927afdfce4336eb3d0abfcf234f9c1dc1fe77e
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58266944"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58803038"
 ---
 # <a name="mobileapprelationshipstate-resource-type"></a>Tipo de recurso mobileAppRelationshipState
 
@@ -25,12 +25,12 @@ Descreve os detalhes de status de instalação do aplicativo filho no contexto d
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|sourceIds|String collection|A coleção de IDs do aplicativo móvel de origem.|
+|sourceIds|Coleção de cadeias de caracteres|A coleção de IDs do aplicativo móvel de origem.|
 |targetId|Cadeia de caracteres|A ID do aplicativo de destino relacionado.|
 |targetDisplayName|Cadeia de caracteres|O nome de exibição do aplicativo de destino relacionado.|
 |deviceId|Cadeia de caracteres|A ID do dispositivo correspondente.|
 |installState|[resultantAppState](../resources/intune-apps-resultantappstate.md)|O estado de instalação do aplicativo de destino. Os valores possíveis são: `installed`, `failed`, `notInstalled`, `uninstallFailed`, `pendingInstall`, `unknown`, `notApplicable`.|
-|installStateDetail|[resultantAppStateDetail](../resources/intune-apps-resultantappstatedetail.md)|O detalhe de estado de instalação do aplicativo. Os valores possíveis são: `noAdditionalDetails` , , , , , , , `dependencyFailedToInstall` `dependencyWithRequirementsNotMet` `dependencyPendingReboot` `dependencyWithAutoInstallDisabled` `iosAppStoreUpdateFailedToInstall` `vppAppHasUpdateAvailable` `userRejectedUpdate` `seeInstallErrorCode` `autoInstallDisabled` `managedAppNoLongerPresent` `userRejectedInstall` `userIsNotLoggedIntoAppStore` `seeUninstallErrorCode` , `pendingReboot` `installingDependencies` `contentDownloaded` `powerShellScriptRequirementNotMet` `registryRequirementNotMet` `fileSystemRequirementNotMet` `platformNotApplicable` `minimumCpuSpeedNotMet` `minimumLogicalProcessorCountNotMet` `minimumPhysicalMemoryNotMet` `minimumOsVersionNotMet` `minimumDiskSpaceNotMet` `processorArchitectureNotApplicable`|
+|installStateDetail|[resultantAppStateDetail](../resources/intune-apps-resultantappstatedetail.md)|O detalhe de estado de instalação do aplicativo. Os valores possíveis são: `noAdditionalDetails` , `dependencyFailedToInstall` , , `dependencyWithRequirementsNotMet` `dependencyPendingReboot` , `dependencyWithAutoInstallDisabled` `supersededAppUninstallFailed` `supersededAppUninstallPendingReboot` `removingSupersededApps` `iosAppStoreUpdateFailedToInstall` `vppAppHasUpdateAvailable` `userRejectedUpdate` `uninstallPendingReboot` `supersedingAppsDetected` `supersededAppsDetected` `seeInstallErrorCode` `autoInstallDisabled` `managedAppNoLongerPresent` `userRejectedInstall` `userIsNotLoggedIntoAppStore` `untargetedSupersedingAppsDetected` `appRemovedBySupersedence` `seeUninstallErrorCode` `pendingReboot` `installingDependencies` `contentDownloaded` `supersedingAppsNotApplicable` `powerShellScriptRequirementNotMet` `registryRequirementNotMet` `fileSystemRequirementNotMet` `platformNotApplicable` `minimumCpuSpeedNotMet` `minimumLogicalProcessorCountNotMet` `minimumPhysicalMemoryNotMet` `minimumOsVersionNotMet` `minimumDiskSpaceNotMet` `processorArchitectureNotApplicable` .|
 |errorCode|Int32|O código de erro para instalar ou desinstalar falhas do aplicativo de destino.|
 |targetLastSyncDateTime|DateTimeOffset|O último tempo de sincronização do aplicativo de destino.|
 
@@ -59,7 +59,6 @@ Veja a seguir uma representação JSON do recurso.
   "targetLastSyncDateTime": "String (timestamp)"
 }
 ```
-
 
 
 

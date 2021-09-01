@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: baf1fa3bf6edcb3358c8ae56d2572365702c41273a04bd578c2c98af5e68d0ba
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 851292848633b17600228869e305b4504223dc96
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54139597"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58783943"
 ---
 # <a name="vpnserviceexceptionaction-enum-type"></a>Tipo de número vpnServiceExceptionAction
 
@@ -26,9 +26,8 @@ A ação VPN a ser tomada para um serviço específico.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |forceTrafficViaVPN|0|Fazer todo o tráfego desse serviço passar pela VPN|
-|allowTrafficOutside|1 |Permitir o serviço fora da VPN|
+|allowTrafficOutside|1|Permitir o serviço fora da VPN|
 |dropTraffic|2|Soltar todo o tráfego do serviço|
-
 
 
 

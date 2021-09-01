@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 5507b36ca4ff830ecee2237be5e538eb4e00270d
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 0c6a14ef597de010e51408f4f914b10ab5b68b6b
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58262755"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58784244"
 ---
 # <a name="cryptographysuite-resource-type"></a>tipo de recurso cryptographySuite
 
@@ -53,7 +53,6 @@ Veja a seguir uma representação JSON do recurso.
   "pfsGroup": "String"
 }
 ```
-
 
 
 

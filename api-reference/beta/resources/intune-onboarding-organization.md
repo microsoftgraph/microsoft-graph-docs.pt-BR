@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: f3efa96c0223aba1aba5cc1377074c490647358c65f315dd382fdfdc338fc67f
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 8fed9594b0f9b34e3ddc48935335ab249f7539b5
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54172803"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58805700"
 ---
 # <a name="organization-resource-type"></a>tipo de recurso organization
 
@@ -64,7 +64,6 @@ Veja a seguir uma representação JSON do recurso.
   }
 }
 ```
-
 
 
 

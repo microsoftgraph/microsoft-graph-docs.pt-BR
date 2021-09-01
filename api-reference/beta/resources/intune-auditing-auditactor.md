@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4b73edbbaf73c93b6df3c90a3b42b51a80350467298980069cdf16d4da04e585
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: b94cfecfa00378832c58ef048454eb9cbf98edb4
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54240019"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58784860"
 ---
 # <a name="auditactor-resource-type"></a>Tipo de recurso auditActor
 
@@ -25,7 +25,7 @@ Uma classe que contém as propriedades para Ator de auditoria.
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|type|Cadeia de caracteres|Tipo de ator.|
+|tipo|Cadeia de caracteres|Tipo de ator.|
 |userPermissions|Conjunto de cadeia de caracteres|Lista de permissões de usuário de quando a auditoria foi executada.|
 |ApplicationId|Cadeia de caracteres|ID do aplicativo AAD.|
 |applicationDisplayName|Cadeia de caracteres|Nome do aplicativo.|
@@ -71,7 +71,6 @@ Veja a seguir uma representação JSON do recurso.
   "remoteUserId": "String"
 }
 ```
-
 
 
 

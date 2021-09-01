@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 782dd5d411f65a0dd465612e7f0bd8eaacfb60a7862500ad9d8c81f00305f04c
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 181f916d65c785dec25fb2d0f2b946af4e810a35
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54244817"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58785126"
 ---
 # <a name="bulkmanageddeviceactionresult-resource-type"></a>tipo de recurso bulkManagedDeviceActionResult
 
@@ -25,10 +25,10 @@ Ainda não documentado
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|successfulDeviceIds|String collection|Dispositivos bem-sucedidos|
-|failedDeviceIds|String collection|Dispositivos com falha|
-|notFoundDeviceIds|String collection|Dispositivos não encontrados|
-|notSupportedDeviceIds|String collection|Dispositivos sem suporte|
+|successfulDeviceIds|Coleção de cadeias de caracteres|Dispositivos bem-sucedidos|
+|failedDeviceIds|Coleção de cadeias de caracteres|Dispositivos com falha|
+|notFoundDeviceIds|Coleção de cadeias de caracteres|Dispositivos não encontrados|
+|notSupportedDeviceIds|Coleção de cadeias de caracteres|Dispositivos sem suporte|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -57,7 +57,6 @@ Veja a seguir uma representação JSON do recurso.
   ]
 }
 ```
-
 
 
 

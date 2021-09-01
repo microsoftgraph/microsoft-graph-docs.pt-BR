@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 70e0e31ea7451952800830aa7ef259a19592cd0a12d5919a8df85340904ee53a
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 5b232a2848a66dfc242f83da39667e9b891f852f
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54172971"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58784475"
 ---
 # <a name="cloudpcconnectivityissue-resource-type"></a>Tipo de recurso cloudPCConnectivityIssue
 
@@ -28,7 +28,7 @@ A entidade de problema de conectividade de análise da experiência do usuário.
 |[Listar cloudPCConnectivityIssues](../api/intune-devices-cloudpcconnectivityissue-list.md)|[Coleção cloudPCConnectivityIssue](../resources/intune-devices-cloudpcconnectivityissue.md)|Listar propriedades e relações dos objetos [cloudPCConnectivityIssue.](../resources/intune-devices-cloudpcconnectivityissue.md)|
 |[Obter cloudPCConnectivityIssue](../api/intune-devices-cloudpcconnectivityissue-get.md)|[cloudPCConnectivityIssue](../resources/intune-devices-cloudpcconnectivityissue.md)|Leia propriedades e relações do [objeto cloudPCConnectivityIssue.](../resources/intune-devices-cloudpcconnectivityissue.md)|
 |[Criar cloudPCConnectivityIssue](../api/intune-devices-cloudpcconnectivityissue-create.md)|[cloudPCConnectivityIssue](../resources/intune-devices-cloudpcconnectivityissue.md)|Crie um novo [objeto cloudPCConnectivityIssue.](../resources/intune-devices-cloudpcconnectivityissue.md)|
-|[Excluir cloudPCConnectivityIssue](../api/intune-devices-cloudpcconnectivityissue-delete.md)|Nenhum|Exclui um [cloudPCConnectivityIssue](../resources/intune-devices-cloudpcconnectivityissue.md).|
+|[Excluir cloudPCConnectivityIssue](../api/intune-devices-cloudpcconnectivityissue-delete.md)|Nenhum(a)|Exclui um [cloudPCConnectivityIssue](../resources/intune-devices-cloudpcconnectivityissue.md).|
 |[Atualizar cloudPCConnectivityIssue](../api/intune-devices-cloudpcconnectivityissue-update.md)|[cloudPCConnectivityIssue](../resources/intune-devices-cloudpcconnectivityissue.md)|Atualize as propriedades de [um objeto cloudPCConnectivityIssue.](../resources/intune-devices-cloudpcconnectivityissue.md)|
 
 ## <a name="properties"></a>Propriedades
@@ -65,7 +65,6 @@ Veja a seguir uma representação JSON do recurso.
   "recommendedAction": "String"
 }
 ```
-
 
 
 

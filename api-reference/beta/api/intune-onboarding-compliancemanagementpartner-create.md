@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d69f52c8b40158851cb239f327d93cf66e563d64b6d3b2cb9b72076e401f5b96
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 9c5a684ca15daf70808d48ed4a57d4614abdb282
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54194018"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58799560"
 ---
 # <a name="create-compliancemanagementpartner"></a>Criar complianceManagementPartner
 
@@ -27,9 +27,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementServiceConfig.ReadWrite.All|
+|Delegado (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Application|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -57,10 +57,10 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar complian
 |lastHeartbeatDateTime|DateTimeOffset|Timestamp de última pulsação depois que o administrador entrou no parceiro de gerenciamento de conformidade|
 |partnerState|[deviceManagementPartnerTenantState](../resources/intune-onboarding-devicemanagementpartnertenantstate.md)|Estado do parceiro desse locatário. Os possíveis valores são: `unknown`, `unavailable`, `enabled`, `terminated`, `rejected`, `unresponsive`.|
 |displayName|Cadeia de caracteres|Nome de exibição de parceiro|
-|macOsOnboarded|Boolean|Parceiro a bordo para dispositivos Mac.|
-|windowsOnboarded|Boolean|Parceiro integrado para Windows dispositivos.|
-|androidOnboarded|Boolean|Parceiro a bordo para dispositivos Android.|
-|iosOnboarded|Boolean|Parceiro internado para dispositivos ios.|
+|macOsOnboarded|Boleano|Parceiro a bordo para dispositivos Mac.|
+|windowsOnboarded|Boleano|Parceiro integrado para Windows dispositivos.|
+|androidOnboarded|Boleano|Parceiro a bordo para dispositivos Android.|
+|iosOnboarded|Boleano|Parceiro internado para dispositivos ios.|
 |macOsEnrollmentAssignments|[coleção complianceManagementPartnerAssignment](../resources/intune-onboarding-compliancemanagementpartnerassignment.md)|Grupos de usuários que registram dispositivos Mac por meio de parceiros.|
 |windowsEnrollmentAssignments|[coleção complianceManagementPartnerAssignment](../resources/intune-onboarding-compliancemanagementpartnerassignment.md)|Grupos de usuários que registram Windows por meio de parceiros.|
 |androidEnrollmentAssignments|[coleção complianceManagementPartnerAssignment](../resources/intune-onboarding-compliancemanagementpartnerassignment.md)|Grupos de usuários que registram dispositivos Android por meio de parceiros.|
@@ -199,7 +199,6 @@ Content-Length: 2265
   ]
 }
 ```
-
 
 
 

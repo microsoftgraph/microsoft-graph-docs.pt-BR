@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 42da759552f2e9a4137fb27ec90e399053f1b3f753e68f92e66f077702ed4774
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 2d4aa4818e018cecbf56f37936b84105a6162495
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54124770"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58791195"
 ---
 # <a name="diagnosticdatasubmissionmode-enum-type"></a>tipo denum diagnosticDataSubmissionMode
 
@@ -26,11 +26,10 @@ Permitir que o dispositivo envie dados de telemetria de diagnóstico e uso, como
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |userDefined|0|Permitir que o usuário desem conjunto.|
-|Nenhuma|1 |Nenhum dado de telemetria é enviado de componentes do sistema operacional. Observação: esse valor só é aplicável a dispositivos corporativos e de servidor. Usar essa configuração em outros dispositivos é equivalente à definição do valor 1.|
+|Nenhuma|1|Nenhum dado de telemetria é enviado de componentes do sistema operacional. Observação: esse valor só é aplicável a dispositivos corporativos e de servidor. Usar essa configuração em outros dispositivos é equivalente à definição do valor 1.|
 |basic|2|Envia dados básicos de telemetria.|
-|enhanced|3 |Envia dados de telemetria aprimorados, incluindo dados de uso e insights.|
+|enhanced|3|Envia dados de telemetria aprimorados, incluindo dados de uso e insights.|
 |full|4 |Envia dados de telemetria completos, incluindo dados de diagnóstico, como o estado do sistema.|
-
 
 
 
