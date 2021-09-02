@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 89f8f4fde6b0fc075c0f8dffe07406468cca4bfb
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: d138f6a64cce1992b1416369660899ac02ec9a3f
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58259184"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58810271"
 ---
 # <a name="userexperienceanalyticscloudidentitydevicessummary-resource-type"></a>tipo de recurso userExperienceAnalyticsCloudIdentityDevicesSummary
 
@@ -43,7 +43,6 @@ Veja a seguir uma representação JSON do recurso.
   "deviceWithoutCloudIdentityCount": 1024
 }
 ```
-
 
 
 

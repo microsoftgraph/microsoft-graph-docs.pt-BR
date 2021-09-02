@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 9c935c1f69e843940a9e4aa29199dbfd9b5a02aa3528f7612c72055ab3f2efbc
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: d79bf933623e94d48013d3259326fdd45a9115bf
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54185793"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58806233"
 ---
 # <a name="devicemanagementconfigurationtechnologies-enum-type"></a>tipo de número deviceManagementConfigurationTechnologies
 
@@ -26,11 +26,11 @@ Descreve com qual tecnologia essa configuração pode ser implantada
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |Nenhuma|0|A configuração não pode ser implantada por meio de qualquer canal|
-|mdm|1 |A configuração pode ser implantada por meio do canal MDM|
+|mdm|1|A configuração pode ser implantada por meio do canal MDM|
 |windows10XManagement|2|A configuração pode ser implantada por meio do canal Windows10XManagement|
 |configManager|4 |A configuração pode ser implantada por meio do canal ConfigManager|
 |microsoftSense|128|A configuração pode ser implantada por meio do canal do agente SENSE|
-
+|exchangeOnline|256|A configuração pode ser implantada por meio do canal Exchange Online agente|
 
 
 

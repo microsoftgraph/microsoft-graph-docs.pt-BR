@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 38fc55e5011a3726c174373e3a677a7ef573d6336fe37678afabcd3fa110dfcf
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 34afb527b37e35902948dcaa8f3a71e8d865ba2d
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54132358"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58816188"
 ---
 # <a name="list-iosvpnconfigurations"></a>Listar iosVpnConfigurations
 
@@ -190,7 +190,6 @@ Content-Length: 4033
   ]
 }
 ```
-
 
 
 

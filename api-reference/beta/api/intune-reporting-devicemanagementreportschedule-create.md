@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 77bfca90e9112c7821dcf806282b88a0596905f7bb4cfeef9684a31329c3fc08
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: cc7e7161a9f8104656100283e8f615f3f544c3ae
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54151022"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58816126"
 ---
 # <a name="create-devicemanagementreportschedule"></a>Criar deviceManagementReportSchedule
 
@@ -56,15 +56,15 @@ A tabela a seguir mostra as propriedades necessárias ao criar deviceManagementR
 |id|Cadeia de caracteres|Identificador exclusivo dessa entidade|
 |reportScheduleName|Cadeia de caracteres|Nome da agenda|
 |assunto|Cadeia de caracteres|Assunto dos relatórios agendados que são entregues|
-|emails|String collection|Emails para os quais os relatórios agendados são entregues|
+|emails|Coleção de cadeias de caracteres|Emails para os quais os relatórios agendados são entregues|
 |recurrence|[deviceManagementScheduledReportRecurrence](../resources/intune-reporting-devicemanagementscheduledreportrecurrence.md)|Frequência de entrega de relatório agendada. Os valores possíveis são: `none`, `daily`, `weekly`, `monthly`.|
 |startDateTime|DateTimeOffset|Hora em que a entrega dos relatórios agendados é iniciada|
 |endDateTime|DateTimeOffset|Hora em que a entrega dos relatórios agendados termina|
 |userId|Cadeia de caracteres|A ID do Usuário que criou o relatório|
 |reportName|Cadeia de caracteres|Nome do relatório|
 |filter|Cadeia de caracteres|Filtros aplicados no relatório|
-|select|String collection|Colunas selecionadas no relatório|
-|orderBy|String collection|Ordenação de colunas no relatório|
+|select|Coleção String|Colunas selecionadas no relatório|
+|orderBy|Coleção de cadeias de caracteres|Ordenação de colunas no relatório|
 |formato|[deviceManagementReportFileFormat](../resources/intune-reporting-devicemanagementreportfileformat.md)|Formato do relatório agendado. Os valores possíveis são: `csv` e `pdf`.|
 
 
@@ -134,7 +134,6 @@ Content-Length: 588
   "format": "pdf"
 }
 ```
-
 
 
 

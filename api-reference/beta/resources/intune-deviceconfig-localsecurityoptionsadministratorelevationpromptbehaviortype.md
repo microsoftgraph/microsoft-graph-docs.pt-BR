@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 8e0b338fd8fec863185dce90e9de8d1b849310977c6a7e5f6ee0cfe070ef2d0e
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: d25c61fe8ffc07de97332da9579abd3fdc433b7f
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54185842"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58819161"
 ---
 # <a name="localsecurityoptionsadministratorelevationpromptbehaviortype-enum-type"></a>localSecurityOptionsAdministratorElevationPromptBehaviorType tipo de número
 
@@ -26,13 +26,12 @@ Valores possíveis para LocalSecurityOptionsAdministratorElevationPromptBehavior
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |notConfigured|0|Não configurado|
-|elevateWithoutPrompting|1 |Elevar sem solicitar.|
+|elevateWithoutPrompting|1|Elevar sem solicitar.|
 |promptForCredentialsOnTheSecureDesktop|2|Solicitar credenciais na área de trabalho segura|
-|promptForConsentOnTheSecureDesktop|3 |Solicitar consentimento na área de trabalho segura|
+|promptForConsentOnTheSecureDesktop|3|Solicitar consentimento na área de trabalho segura|
 |promptForCredentials|4 |Prompt for credentials|
 |promptForConsent|5 |Solicitar consentimento|
 |promptForConsentForNonWindowsBinaries|6 |Solicitar consentimento para binários não Windows não-Windows|
-
 
 
 

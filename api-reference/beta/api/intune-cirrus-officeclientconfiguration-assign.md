@@ -1,18 +1,18 @@
 ---
-title: Ação validateXml
-description: Ainda não documentado
-author: dougeby
+title: atribuir ação
+description: Substitua todos os grupos direcionados por uma política.
 localization_priority: Normal
+author: dougeby
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 65dcb04c5476e184b2cbb5c1680f7cb1a1035ca8
+ms.openlocfilehash: 508d700b3c010cdc97bd29256a587412c2f8856a
 ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 08/31/2021
-ms.locfileid: "58786891"
+ms.locfileid: "58817994"
 ---
-# <a name="validatexml-action"></a>Ação validateXml
+# <a name="assign-action"></a>atribuir ação
 
 Namespace: microsoft.graph
 
@@ -20,16 +20,16 @@ Namespace: microsoft.graph
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Ainda não documentado
+Substitua todos os grupos direcionados por uma política.
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
+|Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementApps.ReadWrite.All|
+|Delegada (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -37,7 +37,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 }
 -->
 ``` http
-POST /deviceAppManagement/mobileApps/validateXml
+POST /officeConfiguration/clientConfigurations/{officeClientConfigurationId}/assign
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -53,25 +53,33 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta ação.
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|officeConfigurationXml|Binário|Ainda não documentado|
+|officeConfigurationAssignments|[Coleção officeClientConfigurationAssignment](../resources/intune-cirrus-officeclientconfigurationassignment.md)|Lista de atribuições de configuração do office|
 
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, esta ação retornará um código de resposta `200 OK` e uma cadeia de caracteres no corpo da resposta.
+Se tiver êxito, essa ação retornará um código de resposta e uma coleção `200 OK` [officeClientConfigurationAssignment](../resources/intune-cirrus-officeclientconfigurationassignment.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
 ### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
 ``` http
-POST https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/validateXml
+POST https://graph.microsoft.com/beta/officeConfiguration/clientConfigurations/{officeClientConfigurationId}/assign
 
 Content-type: application/json
-Content-length: 68
+Content-length: 299
 
 {
-  "officeConfigurationXml": "b2ZmaWNlQ29uZmlndXJhdGlvblhtbA=="
+  "officeConfigurationAssignments": [
+    {
+      "@odata.type": "#microsoft.graph.officeClientConfigurationAssignment",
+      "id": "804730f3-30f3-8047-f330-4780f3304780",
+      "target": {
+        "@odata.type": "microsoft.graph.officeConfigurationAssignmentTarget"
+      }
+    }
+  ]
 }
 ```
 
@@ -80,10 +88,18 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 37
+Content-Length: 274
 
 {
-  "value": "Validate Xml value"
+  "value": [
+    {
+      "@odata.type": "#microsoft.graph.officeClientConfigurationAssignment",
+      "id": "804730f3-30f3-8047-f330-4780f3304780",
+      "target": {
+        "@odata.type": "microsoft.graph.officeConfigurationAssignmentTarget"
+      }
+    }
+  ]
 }
 ```
 

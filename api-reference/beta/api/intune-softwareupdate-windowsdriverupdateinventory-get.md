@@ -1,18 +1,18 @@
 ---
-title: Excluir deviceHealthScriptAssignment
-description: Exclui um deviceHealthScriptAssignment.
+title: Obter windowsDriverUpdateInventory
+description: Leia propriedades e relações do objeto windowsDriverUpdateInventory.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 37c66877d05131e615adafff0be68ccd6ad036c1
+ms.openlocfilehash: 6612a3fb3accf72fb0a02c2b0270b00f1e892987
 ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 08/31/2021
-ms.locfileid: "58786457"
+ms.locfileid: "58816308"
 ---
-# <a name="delete-devicehealthscriptassignment"></a>Excluir deviceHealthScriptAssignment
+# <a name="get-windowsdriverupdateinventory"></a>Obter windowsDriverUpdateInventory
 
 Namespace: microsoft.graph
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Exclui um [deviceHealthScriptAssignment](../resources/intune-devices-devicehealthscriptassignment.md).
+Leia propriedades e relações do [objeto windowsDriverUpdateInventory.](../resources/intune-softwareupdate-windowsdriverupdateinventory.md)
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -37,9 +37,11 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 }
 -->
 ``` http
-DELETE /deviceManagement/deviceHealthScripts/{deviceHealthScriptId}/assignments/{deviceHealthScriptAssignmentId}
-DELETE /deviceManagement/deviceComplianceScripts/{deviceComplianceScriptId}/assignments/{deviceHealthScriptAssignmentId}
+GET /deviceManagement/windowsDriverUpdateProfiles/{windowsDriverUpdateProfileId}/driverInventories/{windowsDriverUpdateInventoryId}
 ```
+
+## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
+Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 |Cabeçalho|Valor|
@@ -51,20 +53,38 @@ DELETE /deviceManagement/deviceComplianceScripts/{deviceComplianceScriptId}/assi
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um código de resposta `204 No Content`.
+Se tiver êxito, este método retornará um código de resposta e um `200 OK` [objeto windowsDriverUpdateInventory](../resources/intune-softwareupdate-windowsdriverupdateinventory.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
 ### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
 ``` http
-DELETE https://graph.microsoft.com/beta/deviceManagement/deviceHealthScripts/{deviceHealthScriptId}/assignments/{deviceHealthScriptAssignmentId}
+GET https://graph.microsoft.com/beta/deviceManagement/windowsDriverUpdateProfiles/{windowsDriverUpdateProfileId}/driverInventories/{windowsDriverUpdateInventoryId}
 ```
 
 ### <a name="response"></a>Resposta
 Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 ``` http
-HTTP/1.1 204 No Content
+HTTP/1.1 200 OK
+Content-Type: application/json
+Content-Length: 515
+
+{
+  "value": {
+    "@odata.type": "#microsoft.graph.windowsDriverUpdateInventory",
+    "id": "3b14b403-b403-3b14-03b4-143b03b4143b",
+    "name": "Name value",
+    "version": "Version value",
+    "manufacturer": "Manufacturer value",
+    "releaseDateTime": "2017-01-01T00:01:34.7470482-08:00",
+    "driverClass": "Driver Class value",
+    "applicableDeviceCount": 5,
+    "approvalStatus": "declined",
+    "category": "previouslyApproved",
+    "deployDateTime": "2017-01-01T00:01:14.7822152-08:00"
+  }
+}
 ```
 
 

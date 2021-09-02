@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: f9092b35287b1da40c92c1df7f5f157ee02cab8f
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: aa7a4fdd18b1b14c881972bca25d287176564915
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58259187"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58806205"
 ---
 # <a name="userexperienceanalyticsworkfromanywherehardwarereadinessmetric-resource-type"></a>tipo de recurso userExperienceAnalyticsWorkFromAnywhereHardwareReadinessMetric
 
@@ -72,7 +72,6 @@ Veja a seguir uma representação JSON do recurso.
   "osCheckFailedPercentage": "4.2"
 }
 ```
-
 
 
 

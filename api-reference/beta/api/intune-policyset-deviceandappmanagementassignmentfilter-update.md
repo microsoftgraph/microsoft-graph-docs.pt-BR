@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2c8dffe20041588591f1f587c713dd886401eb70
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: c140f5c31464f729d4728dbdcfbe83b128164ae8
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58264420"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58820236"
 ---
 # <a name="update-deviceandappmanagementassignmentfilter"></a>Atualizar deviceAndAppManagementAssignmentFilter
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegada (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegada (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
+|Aplicativo|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -57,10 +57,10 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [deviceA
 |createdDateTime|DateTimeOffset|Hora de criação do Filtro de Atribuição.|
 |lastModifiedDateTime|DateTimeOffset|Última hora modificada do Filtro de Atribuição.|
 |displayName|Cadeia de caracteres|DisplayName do Filtro de Atribuição.|
-|description|Cadeia de caracteres|Descrição do Filtro de Atribuição.|
+|description|String|Descrição do Filtro de Atribuição.|
 |plataforma|[devicePlatformType](../resources/intune-policyset-deviceplatformtype.md)|Tipo de plataforma dos dispositivos nos quais o Filtro de Atribuição será aplicável. Os valores possíveis são: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `unknown`.|
 |rule|Cadeia de caracteres|Definição de regra do Filtro de Atribuição.|
-|roleScopeTags|String collection|RoleScopeTags do Filtro de Atribuição.|
+|roleScopeTags|Coleção de cadeias de caracteres|RoleScopeTags do Filtro de Atribuição.|
 
 
 
@@ -109,7 +109,6 @@ Content-Length: 446
   ]
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b5b614accbd05b552a1be059f0124df3a1a44097508555ea35561d9a4ce88473
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 5298c029c23a3b763053e8a1e55221a8736e999c
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54198679"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58820559"
 ---
 # <a name="delete-compliancemanagementpartner"></a>Excluir complianceManagementPartner
 
@@ -65,7 +65,6 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

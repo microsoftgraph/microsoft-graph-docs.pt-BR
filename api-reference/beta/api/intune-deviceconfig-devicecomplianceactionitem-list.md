@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 1e5856d23a58770b1b010f7d83b1fd2d481be5a54b0c364dfb5043b8b454f229
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 8ee0379550699904ce990ecf697bc38a7c19bf9d
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54227075"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58816701"
 ---
 # <a name="list-devicecomplianceactionitems"></a>Listar deviceComplianceActionItems
 
@@ -82,7 +82,6 @@ Content-Length: 385
   ]
 }
 ```
-
 
 
 

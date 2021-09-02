@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 78111eb4e75e7c6061ae66a591954df1e93d921f3e1226584025ad364f9472b5
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 5c9198e23c070f8f15756465d0fe517bdc36f9b1
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54165648"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58818242"
 ---
 # <a name="windowsqualityupdateprofileassignment-resource-type"></a>Tipo de recurso windowsQualityUpdateProfileAssignment
 
@@ -35,7 +35,7 @@ Essa entidade contém as propriedades usadas para atribuir um perfil de atualiza
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|Cadeia de caracteres|O Identificador da entidade|
-|destino|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|O destino de atribuição ao que o perfil de atualização de recursos é atribuído.|
+|destino|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|O destino de atribuição ao que o perfil de atualização de qualidade é atribuído.|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -59,7 +59,6 @@ Veja a seguir uma representação JSON do recurso.
   }
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 61bf5ef7d6f6242d1e859d309a96ec6c888d715fdd8483a76203efc0f91d1913
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 918557f9ea1ea098d98b1710a7f4beeb84bd5574
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54242647"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58786632"
 ---
 # <a name="activatedeviceesimactionresult-resource-type"></a>Tipo de recurso activateDeviceEsimActionResult
 
@@ -54,7 +54,6 @@ Veja a seguir uma representação JSON do recurso.
   "carrierUrl": "String"
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: aa03a71cbad86b181d3643c3bef9874159d47a299a8c51973a3238fecceeb5a0
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 8f1aab20ff6bbb7ab4e353e6d82fd2b19dd62281
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54145457"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58820454"
 ---
 # <a name="deliveryoptimizationbandwidthpercentage-resource-type"></a>tipo de recurso deliveryOptimizationBandwidthPercentage
 
@@ -50,7 +50,6 @@ Veja a seguir uma representação JSON do recurso.
   "maximumForegroundBandwidthPercentage": 1024
 }
 ```
-
 
 
 

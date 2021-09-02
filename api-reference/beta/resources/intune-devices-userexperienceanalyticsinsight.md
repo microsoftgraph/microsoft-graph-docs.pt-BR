@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 091ac9a6513dc97c80560009b219a5c57d3da14a2808fac1477607f98d5aae47
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 7d0d5baaded847858ef91725ff52d8cc1e1d8e02
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54213120"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58794396"
 ---
 # <a name="userexperienceanalyticsinsight-resource-type"></a>Tipo de recurso userExperienceAnalyticsInsight
 
@@ -54,7 +54,6 @@ Veja a seguir uma representação JSON do recurso.
   "severity": "String"
 }
 ```
-
 
 
 

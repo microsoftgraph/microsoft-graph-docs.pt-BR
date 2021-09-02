@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 16efa834cf2a3a8089cd2975cb4f1c539f5114941fc307e3fe8da61dc6e390ee
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: c6348746877f20bfab2ce019e37e9a014182235e
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54142047"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58805742"
 ---
 # <a name="edgetelemetrymode-enum-type"></a>Tipo denum edgeTelemetryMode
 
@@ -26,10 +26,9 @@ Tipo de dados de navegação enviados para Microsoft 365 análise
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |notConfigured|0|Padrão – Sem dados de telemetria coletados ou enviados|
-|intranet|1 |Permitir apenas o envio de histórico da intranet: enviar apenas dados de histórico de navegação para sites de intranet|
+|intranet|1|Permitir apenas o envio de histórico da intranet: enviar apenas dados de histórico de navegação para sites de intranet|
 |internet|2|Permitir apenas o envio de histórico da Internet: enviar apenas dados de histórico de navegação para sites da Internet|
-|intranetAndInternet|3 |Permitir o envio de histórico da intranet e da Internet: Enviar dados de histórico de navegação para intranet e sites da Internet|
-
+|intranetAndInternet|3|Permitir o envio de histórico da intranet e da Internet: Enviar dados de histórico de navegação para intranet e sites da Internet|
 
 
 

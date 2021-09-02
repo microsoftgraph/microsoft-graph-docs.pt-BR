@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d57069fd9c1db41243b696a8d8862531c5b3bdbce0ee6986479fb8a82b2b3a2c
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 94f9e856413c44cf375ba9ec3360e44ecd820f37
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54157715"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58817639"
 ---
 # <a name="create-androiddeviceownerenrollmentprofile"></a>Criar androidDeviceOwnerEnrollmentProfile
 
@@ -67,7 +67,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar o androi
 |enrolledDeviceCount|Int32|Número total de dispositivos Android que foram registrados usando esse perfil de registro.|
 |qrCodeContent|String|Cadeia de caracteres usada para gerar um código QR para o token.|
 |qrCodeImage|[mimeContent](../resources/intune-shared-mimecontent.md)|Cadeia de caracteres usada para gerar um código QR para o token.|
-|roleScopeTagIds|String collection|Lista de marcas de escopo para esta instância entity.|
+|roleScopeTagIds|Coleção String|Lista de marcas de escopo para esta instância entity.|
 
 
 
@@ -138,7 +138,6 @@ Content-Length: 930
   ]
 }
 ```
-
 
 
 

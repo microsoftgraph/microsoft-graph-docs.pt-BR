@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 6bd0b73caa37ef5a1a56b7a80addc941c567f9fb347fdd4dafcb285836b12d65
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 73d33337049b83c50d18c4274b71331a7483d12d
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54233011"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58819735"
 ---
 # <a name="androidmanagedstoreapptrack-resource-type"></a>Tipo de recurso androidManagedStoreAppTrack
 
@@ -45,7 +45,6 @@ Veja a seguir uma representação JSON do recurso.
   "trackAlias": "String"
 }
 ```
-
 
 
 

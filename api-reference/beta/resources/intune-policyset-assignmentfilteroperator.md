@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: bc210d6b30634cff71441cc96f929b8861433e9c
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: af400256dec760205260ab93b3c4bb3e311ddc25
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58259178"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58806100"
 ---
 # <a name="assignmentfilteroperator-enum-type"></a>Tipo de número assignmentFilterOperator
 
@@ -26,9 +26,9 @@ Representa o tipo diferente de operadores que podem ser usados para criar a regr
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |notSet|0|NotSet.|
-|igual a|1 |Igual a.|
+|igual a|1|Igual a.|
 |notEquals|2|NotEquals.|
-|startswith|3 |StartsWith.|
+|startsWith|3|StartsWith.|
 |notStartsWith|4 |NotStartsWith.|
 |contains|5 |Contém.|
 |notContains|6 |NotContains.|
@@ -36,7 +36,6 @@ Representa o tipo diferente de operadores que podem ser usados para criar a regr
 |notIn|8 |NotIn.|
 |endswith|9 |EndsWith.|
 |notEndsWith|10 |NotEndsWith.|
-
 
 
 

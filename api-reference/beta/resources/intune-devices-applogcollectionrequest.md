@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 72c3265251ff2d216061d78e0b3bb4bafd6a3db9158f5e3eefecfc81528789eb
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: bd6c56f04570a42809b1168090be8f8f6609ebfe
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54215073"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58790154"
 ---
 # <a name="applogcollectionrequest-resource-type"></a>Tipo de recurso appLogCollectionRequest
 
@@ -28,7 +28,7 @@ Entidade AppLogCollectionRequest.
 |[Listar appLogCollectionRequests](../api/intune-devices-applogcollectionrequest-list.md)|[Coleção appLogCollectionRequest](../resources/intune-devices-applogcollectionrequest.md)|Listar propriedades e relações dos [objetos appLogCollectionRequest.](../resources/intune-devices-applogcollectionrequest.md)|
 |[Obter appLogCollectionRequest](../api/intune-devices-applogcollectionrequest-get.md)|[appLogCollectionRequest](../resources/intune-devices-applogcollectionrequest.md)|Leia propriedades e relações do [objeto appLogCollectionRequest.](../resources/intune-devices-applogcollectionrequest.md)|
 |[Criar appLogCollectionRequest](../api/intune-devices-applogcollectionrequest-create.md)|[appLogCollectionRequest](../resources/intune-devices-applogcollectionrequest.md)|Crie um novo [objeto appLogCollectionRequest.](../resources/intune-devices-applogcollectionrequest.md)|
-|[Excluir appLogCollectionRequest](../api/intune-devices-applogcollectionrequest-delete.md)|Nenhum|Exclui um [appLogCollectionRequest](../resources/intune-devices-applogcollectionrequest.md).|
+|[Excluir appLogCollectionRequest](../api/intune-devices-applogcollectionrequest-delete.md)|Nenhum(a)|Exclui um [appLogCollectionRequest](../resources/intune-devices-applogcollectionrequest.md).|
 |[Atualizar appLogCollectionRequest](../api/intune-devices-applogcollectionrequest-update.md)|[appLogCollectionRequest](../resources/intune-devices-applogcollectionrequest.md)|Atualize as propriedades de um [objeto appLogCollectionRequest.](../resources/intune-devices-applogcollectionrequest.md)|
 |[ação createDownloadUrl](../api/intune-devices-applogcollectionrequest-createdownloadurl.md)|[appLogCollectionDownloadDetails](../resources/intune-devices-applogcollectiondownloaddetails.md)|Ainda não documentado|
 
@@ -38,7 +38,7 @@ Entidade AppLogCollectionRequest.
 |id|Cadeia de caracteres|O Identificador exclusivo. Esta é userId_DeviceId_AppId id.|
 |status|[appLogUploadState](../resources/intune-devices-apploguploadstate.md)|Status do carregamento de log. Os valores possíveis são: `pending`, `completed`, `failed`.|
 |errorMessage|Cadeia de caracteres|Mensagem de erro se alguma durante o processo de carregamento|
-|customLogFolders|String collection|Lista de pastas de log. |
+|customLogFolders|Coleção de cadeias de caracteres|Lista de pastas de log. |
 |completedDateTime|DateTimeOffset|Hora em que a solicitação de log de carregamento atingiu um estado de terminal|
 
 ## <a name="relationships"></a>Relações
@@ -64,7 +64,6 @@ Veja a seguir uma representação JSON do recurso.
   "completedDateTime": "String (timestamp)"
 }
 ```
-
 
 
 

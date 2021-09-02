@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4df870536093a2cf47caa62fae9bb098a545d6f1e3735446f144243492c41ff2
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: b08f7e875365d7817fa2e1cc77e0f5edf1d6a486
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54183293"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58821694"
 ---
 # <a name="userappinstallstatus-resource-type"></a>Tipo de recurso userAppInstallStatus
 
@@ -66,7 +66,6 @@ Veja a seguir uma representação JSON do recurso.
   "notInstalledDeviceCount": 1024
 }
 ```
-
 
 
 

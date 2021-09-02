@@ -3,12 +3,12 @@ title: Novidades do Microsoft Graph
 description: O que há de novo no Microsoft Graph
 author: angelgolfer-ms
 localization_priority: Priority
-ms.openlocfilehash: 5926d13f8971d891d48eb09205162f502999faed
-ms.sourcegitcommit: 22bd45d272681658d46a8b99af3c3eabc7b05cb1
+ms.openlocfilehash: ea4df31ae070991725b3e2dcbe75cc9e428082b1
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "58384468"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58786260"
 ---
 # <a name="whats-new-in-microsoft-graph"></a>Novidades do Microsoft Graph
 
@@ -41,7 +41,8 @@ Atualizações mensais do Intune para a versão beta. Defina o filtro de **Data*
 - Obtenha ou defina a duração de inatividade a partir da qual as recomendações são definidas nas [configurações de agendamento de uma revisão de acesso](/graph/api/resources/accessReviewScheduleSettings?view=graph-rest-beta&preserve-view=true) usando a propriedade **RecommendationLookBackDuration**.
 
 ### <a name="identity-and-access--identity-and-sign-in"></a>Identidade e acesso | Identidade e entrada
-As organizações podem usar [políticas para aplicar as melhores práticas para aplicativos usando métodos de autenticação de aplicativos](/graph/api/resources/applicationauthmethodpolicy?view=graph-rest-beta&preserve-view=true). Essas políticas podem ser aplicadas a [aplicativos e entidades de serviço específicos](/graph/api/resources/appmanagementpolicy?view=graph-rest-beta&preserve-view=true) ou a [todos os aplicativos e entidades de serviço em um locatário](/resources/tenantappmanagementpolicy?view=graph-rest-beta&preserve-view=true).
+- As organizações podem usar [políticas para aplicar as melhores práticas para aplicativos usando métodos de autenticação de aplicativos](/graph/api/resources/applicationauthmethodpolicy?view=graph-rest-beta&preserve-view=true). Essas políticas podem ser aplicadas a [aplicativos e entidades de serviço específicos](/graph/api/resources/appmanagementpolicy?view=graph-rest-beta&preserve-view=true) ou a [todos os aplicativos e entidades de serviço em um locatário](/resources/tenantappmanagementpolicy?view=graph-rest-beta&preserve-view=true).
+- Suporte para paginação na propriedade de navegação **appRoleAssignments** para [usuários](/api/user-list-approleassignments?view=graph-rest-beta&preserve-view=true), [grupos](/api/group-list-approleassignments?view=graph-rest-beta&preserve-view=true) e [entidades de serviço](/api/serviceprincipal-list-approleassignments?view=graph-rest-beta&preserve-view=true).
 
 ## <a name="july-2021-new-and-generally-available"></a>Julho de 2021: Novo e disponível para o público em geral
 

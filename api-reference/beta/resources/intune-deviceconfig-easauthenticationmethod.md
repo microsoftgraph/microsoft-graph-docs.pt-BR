@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 5edab3b12834a49649bc14d456b4885d49f3435f301429f5d5bc995494c175c7
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: b02d6e11e8bddf89830a177790bd870bcd683544
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54241944"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58795218"
 ---
 # <a name="easauthenticationmethod-enum-type"></a>Tipo de número easAuthenticationMethod
 
@@ -26,9 +26,8 @@ Exchange Método de autenticação De sincronização ativa.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |usernameAndPassword|0|Autenticar com um nome de usuário e senha.|
-|certificado|1 |Autenticar com um certificado.|
+|certificado|1|Autenticar com um certificado.|
 |derivedCredential|2|Autenticar com credenciais derivadas.|
-
 
 
 
