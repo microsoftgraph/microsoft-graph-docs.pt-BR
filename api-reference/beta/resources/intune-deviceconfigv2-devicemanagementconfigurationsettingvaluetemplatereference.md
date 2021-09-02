@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 85ba2f21b8de862952535cf952aac1712c201f29a138cc5d03cddd4233862d1d
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 19360005b1076256898454be1d5463e21d67fa25
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54127009"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58804838"
 ---
 # <a name="devicemanagementconfigurationsettingvaluetemplatereference-resource-type"></a>Tipo de recurso deviceManagementConfigurationSettingValueTemplateReference
 
@@ -26,7 +26,7 @@ Definindo informações de referência do modelo de valor
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |settingValueTemplateId|Cadeia de caracteres|Definindo a id do modelo de valor|
-|useTemplateDefault|Boolean|Indica se o valor de configuração da política deve ser atualizado para corresponder ao valor padrão da configuração do modelo|
+|useTemplateDefault|Boleano|Indica se o valor de configuração da política deve ser atualizado para corresponder ao valor padrão da configuração do modelo|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -45,7 +45,6 @@ Veja a seguir uma representação JSON do recurso.
   "useTemplateDefault": true
 }
 ```
-
 
 
 

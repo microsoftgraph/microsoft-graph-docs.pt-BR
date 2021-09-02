@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 57b8c0cf50113827447c217ede2e1630b010dad5a97fb57d4aa0cc9dfd41ec8a
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 388440387ab2d94224e4a0f7d55152fe654bf30e
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54150168"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58800349"
 ---
 # <a name="userpfxintendedpurpose-enum-type"></a>Tipo de número userPfxIntendedPurpose
 
@@ -26,11 +26,10 @@ Valores com suporte para a finalidade pretendida de um certificado PFX do usuár
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |não atribuído|0|Nenhuma função/usos atribuídos.|
-|smimeEncryption|1 |Válido para criptografia S/MIME.|
+|smimeEncryption|1|Válido para criptografia S/MIME.|
 |smimeSigning|2|Válido para assinatura S/MIME.|
 |vpn|4 |Válido para uso na VPN.|
 |wifi|8 |Válido para uso no WiFi.|
-
 
 
 

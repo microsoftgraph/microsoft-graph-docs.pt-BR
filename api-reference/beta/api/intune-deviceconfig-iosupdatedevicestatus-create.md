@@ -2,15 +2,15 @@
 title: Criar iosUpdateDeviceStatus
 description: Criar um novo objeto iosUpdateDeviceStatus.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 9a610ff07dec43adc2a39f3f63385dadf6339b86
-ms.sourcegitcommit: cb90b32fba5f03aaffe1de30886513083d8113db
+ms.openlocfilehash: 66d6a6b97ac1b5e1bcc91943285d1c0acf8f1804
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/01/2021
-ms.locfileid: "58850204"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58818685"
 ---
 # <a name="create-iosupdatedevicestatus"></a>Criar iosUpdateDeviceStatus
 

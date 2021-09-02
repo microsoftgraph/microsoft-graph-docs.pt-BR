@@ -5,12 +5,12 @@ author: williamlooney
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 57f29fdef863671c36f8b9e063c99a370e1173d1
-ms.sourcegitcommit: fdd69d362d1debc7b08e78269d59b531f9dfdaae
+ms.openlocfilehash: c70491399b564ef2d3daa8df33932f4728f87681
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51697190"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58786905"
 ---
 # <a name="callrecord-getpstncalls"></a>callRecord: getPstnCalls
 
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---------------------------------------|:--------------------------------------------|
 | Delegado (conta corporativa ou de estudante)     | Sem suporte. |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Aplicativo                            | CallRecords.Read.All |
+| Application                            | CallRecord-PstnCalls.Read.All, CallRecords.Read.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -66,12 +66,14 @@ Se tiver êxito, essa função retornará um código de resposta e uma coleção
   
 Se houver mais de 1000 entradas no intervalo de datas, o corpo também incluirá um com uma URL para consultar a próxima página de entradas `@odata.NextLink` de chamada. A última página no intervalo de datas não tem `@odata.NextLink` . Para obter mais informações, [consulte paging Microsoft Graph data in your app](/graph/paging).
 
-## <a name="examples"></a>Exemplos
+## <a name="example"></a>Exemplo
+
+O exemplo a seguir mostra como obter uma coleção de registros para chamadas PSTN que ocorreram no intervalo de datas especificado. A resposta inclui enumerar o número de registros nesta primeira resposta e obter registros além `"@odata.count": 1000` `@odata.NextLink` dos primeiros 1000. Para a capacidade de leitura, a resposta mostra apenas uma coleção de 1 registro. Suponha que haja mais de 1000 chamadas nesse intervalo de datas.
 
 ### <a name="request"></a>Solicitação
 
 <!-- {
-  "blockType": "ignored",
+  "blockType": "request",
   "name": "callrecord_getpstncalls"
 }
 -->
@@ -84,7 +86,7 @@ GET https://graph.microsoft.com/beta/communications/callRecords/getPstnCalls(fro
 
 **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
-  "blockType": "ignored",
+  "blockType": "response",
   "truncated": true,
   "@odata.type": "Collection(microsoft.graph.callRecords.pstnCallLogRow)"
 }
@@ -127,5 +129,5 @@ HTTP/1.1 200 OK
 
 ## <a name="see-also"></a>Confira também
 
-* [Relatório de uso PSTN do Microsoft Teams](/microsoftteams/teams-analytics-and-reports/pstn-usage-report)
-* [Relatório de roteamento direto no Microsoft Graph](callrecords-callrecord-getdirectroutingcalls.md)
+* [Microsoft Teams relatório de uso PSTN](/microsoftteams/teams-analytics-and-reports/pstn-usage-report).
+* [Relatório de roteamento direto no Microsoft Graph](callrecords-callrecord-getdirectroutingcalls.md).

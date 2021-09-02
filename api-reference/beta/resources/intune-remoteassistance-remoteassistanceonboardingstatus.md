@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 7a447acd8f660b46f2f80d5dba8ab538496565734e76dcd686c870531a281338
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: e89f44ce6df8aaae34e8cab6e5332178d8b6eed2
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54161007"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58804481"
 ---
 # <a name="remoteassistanceonboardingstatus-enum-type"></a>Tipo de número remoteAssistanceOnboardingStatus
 
@@ -26,9 +26,8 @@ O status atual do conector teamViewer
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |notOnboarded|0|O status relatado quando não há um conector TeamViewer ativo configurado ou ativo|
-|integração|1 |O status relatado quando o sistema iniciou uma conexão TeamViewer, mas o serviço ainda não concluiu a confirmação de um conector|
+|integração|1|O status relatado quando o sistema iniciou uma conexão TeamViewer, mas o serviço ainda não concluiu a confirmação de um conector|
 |onboarded|2|O status relatado quando o sistema troca com êxito informações de conta com o TeamViewer e agora pode iniciar sessões de assistência remota com clientes|
-
 
 
 

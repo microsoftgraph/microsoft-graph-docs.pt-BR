@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 88f56550b0696383c5f20cedaf6d15b4b1d96d0d175eedac917be79cd2c1c88f
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 7789b2caf0cc0277bdf5a0533d7a949d253cd498
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54251433"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58821932"
 ---
 # <a name="weeklyschedule-enum-type"></a>tipo de número weeklySchedule
 
@@ -26,16 +26,15 @@ Valores possíveis para uma agenda semanal.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |userDefined|0|User Defined, default value, no intent.|
-|todos os dias|1 |Todos os dias.|
+|todos os dias|1|Todos os dias.|
 |sunday|2|Domingo.|
-|segunda-feira|3 |Segunda-feira.|
+|segunda-feira|3|Segunda-feira.|
 |terça-feira|4 |Terça-feira.|
 |quarta-feira|5 |Quarta-feira.|
 |thursday|6 |Quinta-feira.|
 |sexta-feira|7 |Sexta-feira.|
 |saturday|8 |Sábado.|
 |noScheduledScan|9 |Sem Verificação Agendada|
-
 
 
 

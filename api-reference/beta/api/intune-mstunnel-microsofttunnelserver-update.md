@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 69953655c507550ebc4ffe731880f2530272059e7c2a5f50a08e3c5b2aa654df
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: d80b6e95570ce359b3f82cebe101f161e9076b91
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54231317"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58787073"
 ---
 # <a name="update-microsofttunnelserver"></a>Atualizar o microsoftTunnelServer
 
@@ -27,9 +27,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All, MicrosoftTunnelGateway.Read.All, MicrosoftTunnelGateway.ReadWrite.All|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|MicrosoftTunnelGateway.ReadWrite.All|
+|Delegado (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Application|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -57,6 +57,8 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [o micro
 |displayName|Cadeia de caracteres|O nome de exibição do MicrosoftTunnelServer|
 |tunnelServerHealthStatus|[microsoftTunnelServerHealthStatus](../resources/intune-mstunnel-microsofttunnelserverhealthstatus.md)|O status de saúde do MicrosoftTunnelServer. Os valores possíveis são: `unknown`, `healthy`, `unhealthy`, `warning`, `offline`, `upgradeInProgress`, `upgradeFailed`.|
 |lastCheckinDateTime|DateTimeOffset|Quando o MicrosoftTunnelServer entrou pela última vez|
+|agentImageDigest|Cadeia de caracteres|O resumo da imagem do agente atual em execução neste servidor |
+|serverImageDigest|Cadeia de caracteres|O resumo da imagem atual do servidor em execução neste servidor |
 
 
 
@@ -70,13 +72,15 @@ Este é um exemplo da solicitação.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/microsoftTunnelSites/{microsoftTunnelSiteId}/microsoftTunnelServers/{microsoftTunnelServerId}
 Content-type: application/json
-Content-length: 208
+Content-length: 312
 
 {
   "@odata.type": "#microsoft.graph.microsoftTunnelServer",
   "displayName": "Display Name value",
   "tunnelServerHealthStatus": "healthy",
-  "lastCheckinDateTime": "2017-01-01T00:02:46.0431416-08:00"
+  "lastCheckinDateTime": "2017-01-01T00:02:46.0431416-08:00",
+  "agentImageDigest": "Agent Image Digest value",
+  "serverImageDigest": "Server Image Digest value"
 }
 ```
 
@@ -85,17 +89,18 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 257
+Content-Length: 361
 
 {
   "@odata.type": "#microsoft.graph.microsoftTunnelServer",
   "id": "b5cf0aee-0aee-b5cf-ee0a-cfb5ee0acfb5",
   "displayName": "Display Name value",
   "tunnelServerHealthStatus": "healthy",
-  "lastCheckinDateTime": "2017-01-01T00:02:46.0431416-08:00"
+  "lastCheckinDateTime": "2017-01-01T00:02:46.0431416-08:00",
+  "agentImageDigest": "Agent Image Digest value",
+  "serverImageDigest": "Server Image Digest value"
 }
 ```
-
 
 
 

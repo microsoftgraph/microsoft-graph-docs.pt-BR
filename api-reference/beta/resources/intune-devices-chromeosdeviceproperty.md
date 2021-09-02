@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: c2688b4b3459232af9f2948e3f1cdb2c7ac7fc20afeecacd209e3eb4e0df4374
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 3746cdd02a3b12ad9c657c1e5377a4b0b02adc47
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54232591"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58818993"
 ---
 # <a name="chromeosdeviceproperty-resource-type"></a>Tipo de recurso chromeOSDeviceProperty
 
@@ -49,7 +49,6 @@ Veja a seguir uma representação JSON do recurso.
   "updatable": true
 }
 ```
-
 
 
 
