@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 915128e19ab9583dedcc66e61a37378713d5f12abc08f95151bb05a7b7bff04a
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: c093dd3987a16ec0cb69a861c2614a55caf4e9f7
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54145261"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58817352"
 ---
 # <a name="grouppolicymigrationreport-resource-type"></a>Tipo de recurso groupPolicyMigrationReport
 
@@ -35,7 +35,7 @@ O relatório de migração da Política de Grupo.
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Ainda não documentado|
+|id|String|Ainda não documentado|
 |groupPolicyObjectId|Guid|O GUID do objeto de política de grupo do conteúdo XML do GPO|
 |displayName|Cadeia de caracteres|O nome do Objeto de Política de Grupo do Conteúdo XML do GPO|
 |ouDistinguishedName|Cadeia de caracteres|O nome diferenciado da UO.|
@@ -44,7 +44,7 @@ O relatório de migração da Política de Grupo.
 |groupPolicyCreatedDateTime|DateTimeOffset|A data e a hora em que o GroupPolicyMigrationReport foi criado.|
 |groupPolicyLastModifiedDateTime|DateTimeOffset|A data e a hora em que GroupPolicyMigrationReport foi modificada pela última vez.|
 |migrationReadiness|[groupPolicyMigrationReadiness](../resources/intune-gpanalyticsservice-grouppolicymigrationreadiness.md)|A cobertura do Intune para o arquivo de Objeto de Política de Grupo associado. Os valores possíveis são: `none`, `partial`, `complete`, `error`, `notApplicable`.|
-|targetedInActiveDirectory|Boolean|A propriedade Targeted in AD do Conteúdo XML do GPO|
+|targetedInActiveDirectory|Booliano|A propriedade Targeted in AD do Conteúdo XML do GPO|
 |totalSettingsCount|Int32|O número total de políticas de grupo Configurações do arquivo GPO.|
 |supportedSettingsCount|Int32|O número de políticas de grupo Configurações com suporte do Intune.|
 |supportedSettingsPercent|Int32|O Percentual de políticas de grupo Configurações com suporte do Intune.|
@@ -81,7 +81,6 @@ Veja a seguir uma representação JSON do recurso.
   "supportedSettingsPercent": 1024
 }
 ```
-
 
 
 

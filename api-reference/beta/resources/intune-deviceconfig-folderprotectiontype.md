@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: e0a368486f7fa8e1d869e7cc870fdfdca34c75a96eca216008b27ea36ed0eaa0
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: b194668d0620c4eab23e1372f2f490f3aa8516bd
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54203110"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58797905"
 ---
 # <a name="folderprotectiontype-enum-type"></a>tipo de número folderProtectionType
 
@@ -26,11 +26,10 @@ Valores possíveis da Proteção de Pastas
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |userDefined|0|Valor padrão do dispositivo, sem intenção.|
-|enable|1 |Bloquear funcionalidade.|
+|enable|1|Bloquear funcionalidade.|
 |auditMode|2|Permitir funcionalidade, mas gerar logs.|
-|blockDiskModification|3 |Bloqueie aplicativos não-não-confianças de escrever em setores de disco.|
+|blockDiskModification|3|Bloqueie aplicativos não-não-confianças de escrever em setores de disco.|
 |auditDiskModification|4 |Gere logs quando aplicativos não confianças gravarem em setores de disco.|
-
 
 
 

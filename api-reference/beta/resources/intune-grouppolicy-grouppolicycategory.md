@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3ef4f3f8fa0c8304a1cd0b6383a25340765200916b4d5ec4a48bbbe6d8a8c858
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: f26e83fef905525bc9218d850dcb8ef416430233
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54182753"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58802450"
 ---
 # <a name="grouppolicycategory-resource-type"></a>Tipo de recurso groupPolicyCategory
 
@@ -32,7 +32,7 @@ A entidade de categoria armazena a categoria de uma definição de política de 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |displayName|Cadeia de caracteres|A id de cadeia de caracteres do nome de exibição da categoria|
-|isRoot|Boolean|Define se a categoria é uma categoria raiz|
+|isRoot|Boleano|Define se a categoria é uma categoria raiz|
 |id|Cadeia de caracteres|Chave da entidade.|
 |lastModifiedDateTime|DateTimeOffset|A data e a hora em que a entidade foi modificada pela última vez.|
 
@@ -61,7 +61,6 @@ Veja a seguir uma representação JSON do recurso.
   "lastModifiedDateTime": "String (timestamp)"
 }
 ```
-
 
 
 

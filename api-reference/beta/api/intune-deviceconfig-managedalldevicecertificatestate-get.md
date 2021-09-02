@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 43a7fd5c0bd0c830fc8d473a7a64eed8d8f35dc004179008e70549a0aa3b8848
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: c97f56e25863b1a11e1ce2af749afe450907f737
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54171522"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58819308"
 ---
 # <a name="get-managedalldevicecertificatestate"></a>Obter managedAllDeviceCertificateState
 
@@ -89,7 +89,6 @@ Content-Length: 916
   }
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 23b298d1d4bcbacf228bfd829084d5248f45e645aaa1e633ae3fc4a21d108df0
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: d017d7212c3396e5615853246a82fe5d5c72e453
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54174084"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58816020"
 ---
 # <a name="list-windowsidentityprotectionconfigurations"></a>Listar windowsIdentityProtectionConfigurations
 
@@ -121,7 +121,6 @@ Content-Length: 1972
   ]
 }
 ```
-
 
 
 

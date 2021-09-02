@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: c7f0c6b496f6ca1e15cba0a91378aa25943567d49f6389caaa42f869b713b207
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: fb75b76899c7bf7ff8424f7c3b17e08ce1cfa785
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54229490"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58786001"
 ---
 # <a name="edgehomebuttonopensnewtab-resource-type"></a>Tipo de recurso edgeHomeButtonOpensNewTab
 
@@ -44,7 +44,6 @@ Veja a seguir uma representação JSON do recurso.
   "@odata.type": "#microsoft.graph.edgeHomeButtonOpensNewTab"
 }
 ```
-
 
 
 

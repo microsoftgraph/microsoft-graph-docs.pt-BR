@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 82a409345e45aad38f38227a5ec36d27251316b9ab5d61406814716cfbcc7b5f
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 63ef1af09ab2ca4f73c0f17c02b8cf2545775867
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54203145"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58801546"
 ---
 # <a name="androidworkprofiledefaultapppermissionpolicytype-enum-type"></a>tipo de número androidWorkProfileDefaultAppPermissionPolicyType
 
@@ -26,10 +26,9 @@ Tipo de política de permissão de aplicativo padrão do Perfil de Trabalho do A
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |deviceDefault|0|Valor padrão do dispositivo, sem intenção.|
-|prompt|1 |Prompt.|
+|prompt|1|Prompt.|
 |autoGrant|2|Concessão automática.|
-|autoDeny|3 |Negar automaticamente.|
-
+|autoDeny|3|Negar automaticamente.|
 
 
 

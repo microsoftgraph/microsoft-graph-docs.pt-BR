@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6bb568dcec8a0616ee7c7661de0c543f17b2be372d1e3a2b219e66c7487ed127
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: eb5084e65d0bd456d612796bd09beb7ac18ddf54
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54140352"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58821533"
 ---
 # <a name="delete-securitybaselinedevicestate"></a>Excluir securityBaselineDeviceState
 
@@ -65,7 +65,6 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

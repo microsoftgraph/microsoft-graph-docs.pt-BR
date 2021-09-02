@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 600f3eb888c456f047c599d77aca087ac5e37c14e129d8642517d765cfb9b678
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 663ddf69f7b46b9029f5d5ff0b83ee6b84ccd9b6
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54206456"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58785133"
 ---
 # <a name="devicemanagementenumconstraint-resource-type"></a>Tipo de recurso deviceManagementEnumConstraint
 
@@ -52,7 +52,6 @@ Veja a seguir uma representação JSON do recurso.
   ]
 }
 ```
-
 
 
 

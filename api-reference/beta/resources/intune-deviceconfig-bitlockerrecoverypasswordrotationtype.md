@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 098d845772ff7e6fe232702a2640225aa1b9f716bd1f317d2d66b730102c9afe
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 6b46bad7aef97180d00dd338bb06a63b53dac1dd
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54232829"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58782970"
 ---
 # <a name="bitlockerrecoverypasswordrotationtype-enum-type"></a>Tipo denum bitLockerRecoveryPasswordRotationType
 
@@ -26,10 +26,9 @@ Tipo de rotação de senha de recuperação do BitLocker
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |notConfigured|0|Não configurado|
-|desabilitadas|1 |Rotação de senha de recuperação desligada|
+|desabilitadas|1|Rotação de senha de recuperação desligada|
 |enabledForAzureAd|2|Rotação de senha de recuperação em dispositivos ingressados no Azure AD|
-|enabledForAzureAdAndHybrid|3 |Rotação de senha de recuperação em ambos os dispositivos ingressados no Azure AD e híbridos ingressados|
-
+|enabledForAzureAdAndHybrid|3|Rotação de senha de recuperação em ambos os dispositivos ingressados no Azure AD e híbridos ingressados|
 
 
 

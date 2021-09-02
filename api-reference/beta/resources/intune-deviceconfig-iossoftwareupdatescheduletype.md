@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 5112ce15bcd6318f5410961fb8188e019cd8198b07d1688d5de30514dcaf31bf
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 4bf7a777fc87a6c4fb6e5c87ef321ba3468d5b62
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54239543"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58804516"
 ---
 # <a name="iossoftwareupdatescheduletype-enum-type"></a>Tipo de número iosSoftwareUpdateScheduleType
 
@@ -26,10 +26,9 @@ Atualizar o tipo de agendamento para atualizações de software iOS.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |updateOutsideOfActiveHours|0|Atualizar fora do horário ativo.|
-|alwaysUpdate|1 |Sempre atualize.|
+|alwaysUpdate|1|Sempre atualize.|
 |updateDuringTimeWindows|2|Atualizar durante janelas de tempo.|
-|updateOutsideOfTimeWindows|3 |Atualização fora das janelas de tempo.|
-
+|updateOutsideOfTimeWindows|3|Atualização fora das janelas de tempo.|
 
 
 

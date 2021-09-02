@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: dcbc9fb708aeec862bc9de3b070ffd4ca527171f90f9740e1356e2a1ef615035
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 369a67136b4ff92d01af7ebd06e8f06b74825ff2
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54206477"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58803795"
 ---
 # <a name="windowsuseraccountcontrolsettings-enum-type"></a>tipo de número windowsUserAccountControlSettings
 
@@ -26,11 +26,10 @@ Valores possíveis para Windows configurações de controle de conta de usuário
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |userDefined|0|User Defined, default value, no intent.|
-|alwaysNotify|1 |Sempre notificar.|
+|alwaysNotify|1|Sempre notificar.|
 |notifyOnAppChanges|2|Notificar as alterações do aplicativo.|
-|notifyOnAppChangesWithoutDimming|3 |Notificar as alterações do aplicativo sem esmaecer a área de trabalho.|
+|notifyOnAppChangesWithoutDimming|3|Notificar as alterações do aplicativo sem esmaecer a área de trabalho.|
 |neverNotify|4 |Nunca notificar.|
-
 
 
 

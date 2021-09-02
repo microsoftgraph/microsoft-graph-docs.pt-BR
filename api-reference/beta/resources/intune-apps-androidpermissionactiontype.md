@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 91deb5cfff8c415f2c4b5857dbeb90508be2259b0e952c9ab6565270eef1ad5d
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 5693151b93cb1f0265378539cd895a886ff561de
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54200632"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58821729"
 ---
 # <a name="androidpermissionactiontype-enum-type"></a>Tipo de número androidPermissionActionType
 
@@ -26,9 +26,8 @@ Ação do Android tomada quando um aplicativo solicita uma permissão perigosa.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |prompt|0|Ainda não documentado|
-|autoGrant|1 |Ainda não documentado|
+|autoGrant|1|Ainda não documentado|
 |autoDeny|2|Ainda não documentado|
-
 
 
 

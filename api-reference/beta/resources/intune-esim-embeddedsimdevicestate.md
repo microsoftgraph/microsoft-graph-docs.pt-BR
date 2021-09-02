@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 7a4d3fdfcd6f6a6c222c8b2a58e95d4755b3a6e41f11158e65dc3e5fbd9b56db
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 0654c71369d9682887d36f02e6cddf1eb9772e0f
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54122380"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58789902"
 ---
 # <a name="embeddedsimdevicestate-resource-type"></a>Tipo de recurso embeddedSIMDeviceState
 
@@ -28,7 +28,7 @@ Descreve o estado de implantação do código de ativação do SIM incorporado e
 |[Listar embeddedSIMDeviceStates](../api/intune-esim-embeddedsimdevicestate-list.md)|[Coleção embeddedSIMDeviceState](../resources/intune-esim-embeddedsimdevicestate.md)|Listar propriedades e relações dos [objetos EMBEDDEDSIMDeviceState.](../resources/intune-esim-embeddedsimdevicestate.md)|
 |[Obter embeddedSIMDeviceState](../api/intune-esim-embeddedsimdevicestate-get.md)|[embeddedSIMDeviceState](../resources/intune-esim-embeddedsimdevicestate.md)|Leia propriedades e relações do [objeto embeddedSIMDeviceState.](../resources/intune-esim-embeddedsimdevicestate.md)|
 |[Criar embeddedSIMDeviceState](../api/intune-esim-embeddedsimdevicestate-create.md)|[embeddedSIMDeviceState](../resources/intune-esim-embeddedsimdevicestate.md)|Crie um novo [objeto EMBEDDEDSIMDeviceState.](../resources/intune-esim-embeddedsimdevicestate.md)|
-|[Excluir embeddedSIMDeviceState](../api/intune-esim-embeddedsimdevicestate-delete.md)|Nenhum|Exclui [umSIMDeviceState incorporado.](../resources/intune-esim-embeddedsimdevicestate.md)|
+|[Excluir embeddedSIMDeviceState](../api/intune-esim-embeddedsimdevicestate-delete.md)|Nenhum(a)|Exclui [umSIMDeviceState incorporado.](../resources/intune-esim-embeddedsimdevicestate.md)|
 |[Atualizar embeddedSIMDeviceState](../api/intune-esim-embeddedsimdevicestate-update.md)|[embeddedSIMDeviceState](../resources/intune-esim-embeddedsimdevicestate.md)|Atualize as propriedades de [um objeto EMBEDDEDSIMDeviceState.](../resources/intune-esim-embeddedsimdevicestate.md)|
 
 ## <a name="properties"></a>Propriedades
@@ -69,7 +69,6 @@ Veja a seguir uma representação JSON do recurso.
   "stateDetails": "String"
 }
 ```
-
 
 
 

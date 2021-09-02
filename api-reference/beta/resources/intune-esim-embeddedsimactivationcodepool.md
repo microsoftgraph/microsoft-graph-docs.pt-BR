@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9358f29c20db8614c396850913c21711ffa16e90520999573cef46faac874630
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 9579f4af46ca2b35fde91888ced9973590634095
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54244677"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58801070"
 ---
 # <a name="embeddedsimactivationcodepool-resource-type"></a>Tipo de recurso embeddedSIMActivationCodePool
 
@@ -28,7 +28,7 @@ Um pool representa um grupo de códigos de ativação de SIM incorporados.
 |[Listar embeddedSIMActivationCodePools](../api/intune-esim-embeddedsimactivationcodepool-list.md)|[Coleção embeddedSIMActivationCodePool](../resources/intune-esim-embeddedsimactivationcodepool.md)|Listar propriedades e relações dos [objetos embeddedSIMActivationCodePool.](../resources/intune-esim-embeddedsimactivationcodepool.md)|
 |[Obter embeddedSIMActivationCodePool](../api/intune-esim-embeddedsimactivationcodepool-get.md)|[embeddedSIMActivationCodePool](../resources/intune-esim-embeddedsimactivationcodepool.md)|Leia propriedades e relações do [objeto embeddedSIMActivationCodePool.](../resources/intune-esim-embeddedsimactivationcodepool.md)|
 |[Criar embeddedSIMActivationCodePool](../api/intune-esim-embeddedsimactivationcodepool-create.md)|[embeddedSIMActivationCodePool](../resources/intune-esim-embeddedsimactivationcodepool.md)|Crie um novo [objeto embeddedSIMActivationCodePool.](../resources/intune-esim-embeddedsimactivationcodepool.md)|
-|[Excluir embeddedSIMActivationCodePool](../api/intune-esim-embeddedsimactivationcodepool-delete.md)|Nenhum|Exclui um [embeddedSIMActivationCodePool](../resources/intune-esim-embeddedsimactivationcodepool.md).|
+|[Excluir embeddedSIMActivationCodePool](../api/intune-esim-embeddedsimactivationcodepool-delete.md)|Nenhum(a)|Exclui um [embeddedSIMActivationCodePool](../resources/intune-esim-embeddedsimactivationcodepool.md).|
 |[Atualizar embeddedSIMActivationCodePool](../api/intune-esim-embeddedsimactivationcodepool-update.md)|[embeddedSIMActivationCodePool](../resources/intune-esim-embeddedsimactivationcodepool.md)|Atualize as propriedades de [um objeto EMBEDDEDSIMActivationCodePool](../resources/intune-esim-embeddedsimactivationcodepool.md) incorporado.|
 |[atribuir ação](../api/intune-esim-embeddedsimactivationcodepool-assign.md)|[Coleção embeddedSIMActivationCodePoolAssignment](../resources/intune-esim-embeddedsimactivationcodepoolassignment.md)|Ainda não documentado|
 
@@ -74,7 +74,6 @@ Veja a seguir uma representação JSON do recurso.
   "activationCodeCount": 1024
 }
 ```
-
 
 
 

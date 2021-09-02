@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: fccbf7f4024f3fccbf2deb22a76d447dfb16959e878eb985d00a940364e18d7b
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: b43a7f23c16ceb300db95a2924938df3b0a70526
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54206827"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58789689"
 ---
 # <a name="macosvppapprevokelicensesactionresult-resource-type"></a>Tipo de recurso macOsVppAppRevokeLicensesActionResult
 
@@ -59,7 +59,6 @@ Veja a seguir uma representação JSON do recurso.
   "lastUpdatedDateTime": "String (timestamp)"
 }
 ```
-
 
 
 

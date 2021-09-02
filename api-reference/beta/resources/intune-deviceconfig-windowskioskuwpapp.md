@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 98eb1dff676499dc589b0d707a2d81590c2e98e885598d867ef1db3badac3126
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 0f33a7800e055ec885cf03a467b1216b310fa6e7
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54253044"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58797532"
 ---
 # <a name="windowskioskuwpapp-resource-type"></a>Tipo de recurso windowsKioskUWPApp
 
@@ -31,7 +31,7 @@ Herda do [windowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappb
 |startLayoutTileSize|[windowsAppStartLayoutTileSize](../resources/intune-deviceconfig-windowsappstartlayouttilesize.md)|O tamanho do azulejo do aplicativo para o layout inicial Herdado do [windowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md). Os valores possíveis são: `hidden`, `small`, `medium`, `wide`, `large`.|
 |nome|Cadeia de caracteres|Representa o nome amigável de um aplicativo Herdado do [windowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md)|
 |appType|[windowsKioskAppType](../resources/intune-deviceconfig-windowskioskapptype.md)|O tipo de aplicativo Herdado do [windowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md). Os valores possíveis são: `unknown`, `store`, `desktop`, `aumId`.|
-|autoLaunch|Boolean|Permitir que o aplicativo seja lançado automaticamente no modo de quiosque de vários aplicativos Herdado do [windowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md)|
+|autoLaunch|Boleano|Permitir que o aplicativo seja lançado automaticamente no modo de quiosque de vários aplicativos Herdado do [windowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md)|
 |appUserModelId|Cadeia de caracteres|Esta é a única ID do Modelo de Usuário de Aplicativo (AUMID) que estará disponível para iniciar o uso enquanto estiver no modo Quiosque|
 |appId|Cadeia de caracteres|Isso faz referência a um Aplicativo do Intune que será destinado às mesmas atribuições que a configuração do Quiosque|
 |containedAppId|Cadeia de caracteres|Isso faz referência a um aplicativo contido de um aplicativo do Intune|
@@ -58,7 +58,6 @@ Veja a seguir uma representação JSON do recurso.
   "containedAppId": "String"
 }
 ```
-
 
 
 

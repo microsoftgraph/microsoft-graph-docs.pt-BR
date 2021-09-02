@@ -5,12 +5,12 @@ author: simonhult
 localization_priority: Normal
 ms.prod: insights
 doc_type: apiPageType
-ms.openlocfilehash: a422a106d1371e8e39fdfa314658b8e77d0f5a9a
-ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
+ms.openlocfilehash: 0cdefdad4a9ec25eeb1134568717c79efc0f4b18
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53210652"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58815950"
 ---
 # <a name="update-userinsightssettings"></a>Atualizar userInsightsSettings
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Atualize as configurações de privacidade [para itemInsights](../resources/iteminsights.md) e informações de horários [de reunião](https://support.microsoft.com/en-us/office/update-your-meeting-hours-using-the-profile-card-0613d113-d7c1-4faa-bb11-c8ba30a78ef1) de um usuário.
+Atualize as configurações de privacidade [para itemInsights](../resources/iteminsights.md) e informações de horários [de reunião](https://support.microsoft.com/office/update-your-meeting-hours-using-the-profile-card-0613d113-d7c1-4faa-bb11-c8ba30a78ef1) de um usuário.
 
 ## <a name="permissions"></a>Permissões
 

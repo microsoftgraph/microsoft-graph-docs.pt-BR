@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 58f7a18ae31a1c1fe63ff02ded261445a36ce68316ad9dcd099621ed33ea4716
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 94fd940c3f7f6c1a4af552f494d199cda9cdd470
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54139646"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58816097"
 ---
 # <a name="settingsource-resource-type"></a>Tipo de recurso settingSource
 
@@ -47,7 +47,6 @@ Veja a seguir uma representação JSON do recurso.
   "sourceType": "String"
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: ed0f456d5ce6e4d157a4300237498146a226a78407ea849fdc58fc86b639f35a
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 1aa51d52c3c0d4051e1216232f4ce36aa7ba7cda
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54234691"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58803444"
 ---
 # <a name="compliancestatus-enum-type"></a>tipo de número complianceStatus
 
@@ -26,14 +26,13 @@ Ainda não documentado
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |desconhecido|0|Ainda não documentado|
-|notApplicable|1 |Ainda não documentado|
+|notApplicable|1|Ainda não documentado|
 |compatível|2|Ainda não documentado|
-|remediado|3 |Ainda não documentado|
+|remediado|3|Ainda não documentado|
 |nonCompliant|4 |Ainda não documentado|
 |erro|5 |Ainda não documentado|
 |conflict|6 |Ainda não documentado|
 |notAssigned|7 |Ainda não documentado|
-
 
 
 

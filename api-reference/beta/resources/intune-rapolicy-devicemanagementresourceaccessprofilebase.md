@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d29e101ac696718f9b8a53f508d4f0fa4dd06c41ebf2441649a2b161f2d7c0eb
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 9e6a182af3aff9851095d689ebc41923534a143e
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54182676"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58806576"
 ---
 # <a name="devicemanagementresourceaccessprofilebase-resource-type"></a>Tipo de recurso deviceManagementResourceAccessProfileBase
 
@@ -36,10 +36,10 @@ Tipo de perfil base para acesso a recursos
 |id|Cadeia de caracteres|Identificador de perfil|
 |versão|Int32|Versão do perfil|
 |displayName|Cadeia de caracteres|Nome de exibição de perfil|
-|description|Cadeia de caracteres|Descrição do perfil|
+|descrição|Cadeia de caracteres|Descrição do perfil|
 |creationDateTime|DateTimeOffset|O perfil DateTime foi criado|
 |lastModifiedDateTime|DateTimeOffset|O perfil DateTime foi modificado pela última vez|
-|roleScopeTagIds|String collection|Marcas de escopo|
+|roleScopeTagIds|Coleção de cadeias de caracteres|Marcas de escopo|
 
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|
@@ -68,7 +68,6 @@ Veja a seguir uma representação JSON do recurso.
   ]
 }
 ```
-
 
 
 
