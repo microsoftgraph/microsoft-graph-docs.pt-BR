@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: fc2645798ba3e0cd535c4eb74da64e844a8ddee9f8f8525f8f7bc69d7b3bb68c
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: e2eab81c6f17d3ed7d9c2b59782827261148bed7
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54225276"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58821540"
 ---
 # <a name="get-securitybaselinecategorystatesummary"></a>Obter securityBaselineCategoryStateSummary
 
@@ -84,7 +84,6 @@ Content-Length: 347
   }
 }
 ```
-
 
 
 

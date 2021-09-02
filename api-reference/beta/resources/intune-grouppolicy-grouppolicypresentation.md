@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 281b3ad7d33c0dafbefa810744ac775eaecf05d59b2e673670bab80787f82991
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 424bda396ce51d9abc54b1330febc8230f7576cb
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54253517"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58816477"
 ---
 # <a name="grouppolicypresentation-resource-type"></a>Tipo de recurso groupPolicyPresentation
 
@@ -56,7 +56,6 @@ Veja a seguir uma representação JSON do recurso.
   "lastModifiedDateTime": "String (timestamp)"
 }
 ```
-
 
 
 

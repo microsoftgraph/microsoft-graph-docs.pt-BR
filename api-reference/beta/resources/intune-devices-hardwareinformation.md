@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: a1d8a94e44663bd6070d9b6f9d50a3fed7db9e22d12dcb70bc1cf9400f5342a0
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: a01c6b27d57947d14ba907a0d2dcf662b5e57f79
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54148054"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58799793"
 ---
 # <a name="hardwareinformation-resource-type"></a>Tipo de recurso hardwareInformation
 
@@ -42,7 +42,7 @@ Informações de hardware de um determinado dispositivo.
 |batterySerialNumber|Cadeia de caracteres|O número de série da bateria atual do dispositivo|
 |batteryHealthPercentage|Int32|A porcentagem de saúde da bateria atual do dispositivo. Valores válidos de 0 a 100|
 |batteryChargeCycles|Int32|O número de ciclos de carga que a bateria atual do dispositivo passou. Valores válidos de 0 a 2147483647|
-|isSharedDevice|Boolean|Dados iPad|
+|isSharedDevice|Boleano|Dados iPad|
 |sharedDeviceCachedUsers|[Coleção sharedAppleDeviceUser](../resources/intune-devices-sharedappledeviceuser.md)|Todos os usuários no dispositivo Apple compartilhado|
 |tpmSpecificationVersion|Cadeia de caracteres|Cadeia de caracteres que especifica a versão de especificação.|
 |operatingSystemEdition|Cadeia de caracteres|Cadeia de caracteres que especifica a edição do sistema operacional.|
@@ -115,7 +115,6 @@ Veja a seguir uma representação JSON do recurso.
   "tpmVersion": "String"
 }
 ```
-
 
 
 

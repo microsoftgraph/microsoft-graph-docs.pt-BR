@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 1193055004979e5fa8caae9da67f3eb0a1aec1f43248831a558fdc6fc7b57cc5
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 6a3f6e729a56349a3ba6c01fa96d9a2b42ab41ce
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54253695"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58802765"
 ---
 # <a name="windowsspotlightenablementsettings-enum-type"></a>Tipo de número windowsSpotlightEnablementSettings
 
@@ -26,9 +26,8 @@ Permite que o administrador de IT de definir um mecanismo de pesquisa padrão pr
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |notConfigured|0|O destaque na tela de bloqueio não está configurado|
-|desabilitadas|1 |Desabilitar Windows destaque na tela de bloqueio|
+|desabilitadas|1|Desabilitar Windows destaque na tela de bloqueio|
 |habilitadas|2|Habilitar Windows destaque na tela de bloqueio|
-
 
 
 

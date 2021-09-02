@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 71bfbf09f9fcb8de63956855ec3c13fed60a2d604d1a3b1601c1b2f6007e8867
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 4bcf5b6331777600bb847dc2aad4a921c2745702
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54131175"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58815096"
 ---
 # <a name="vpnondemandrule-resource-type"></a>Tipo de recurso vpnOnDemandRule
 
@@ -25,12 +25,12 @@ Definição de regra de vpn sob demanda.
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|ssids|String collection|Identificadores de conjunto de serviços de rede (SSIDs).|
-|dnsSearchDomains|String collection|Domínios de Pesquisa DNS.|
+|ssids|Coleção de cadeias de caracteres|Identificadores de conjunto de serviços de rede (SSIDs).|
+|dnsSearchDomains|Coleção de cadeias de caracteres|Domínios de Pesquisa DNS.|
 |probeUrl|Cadeia de caracteres|Uma URL para sondar. Se essa URL for buscada com êxito (retornando um código de status HTTP 200) sem redirecionamento, essa regra corresponde.|
 |ação|[vpnOnDemandRuleConnectionAction](../resources/intune-deviceconfig-vpnondemandruleconnectionaction.md)|Ação. Os valores possíveis são: `connect`, `evaluateConnection`, `ignore`, `disconnect`.|
 |domainAction|[vpnOnDemandRuleConnectionDomainAction](../resources/intune-deviceconfig-vpnondemandruleconnectiondomainaction.md)|Ação de domínio (aplicável somente quando Ação é avaliar conexão). Os valores possíveis são: `connectIfNeeded` e `neverConnect`.|
-|domínios|String collection|Domínios (aplicável somente quando Ação é avaliar conexão).|
+|domínios|Coleção de cadeias de caracteres|Domínios (aplicável somente quando Ação é avaliar conexão).|
 |probeRequiredUrl|Cadeia de caracteres|Url Necessária da Sonda (Somente aplicável quando Action é avaliar a conexão e DomainAction é conectar-se, se necessário).|
 
 ## <a name="relationships"></a>Relações
@@ -61,7 +61,6 @@ Veja a seguir uma representação JSON do recurso.
   "probeRequiredUrl": "String"
 }
 ```
-
 
 
 

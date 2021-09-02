@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: fb1b0d6ed92eb3b42713f586b030a87a6f0c4dea9e3cd43ce96ac383541c14b8
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 5d9d7e4c6feee116f6fff6989903b5abe953b71e
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54239144"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58802436"
 ---
 # <a name="deviceappmanagementtaskpriority-enum-type"></a>Tipo de número deviceAppManagementTaskPriority
 
@@ -26,9 +26,8 @@ Prioridade da tarefa de gerenciamento de aplicativo de dispositivo.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |Nenhuma|0|Nenhum conjunto de prioridade.|
-|high|1 |Prioridade alta.|
+|high|1|Prioridade alta.|
 |low|2|Baixa prioridade|
-
 
 
 

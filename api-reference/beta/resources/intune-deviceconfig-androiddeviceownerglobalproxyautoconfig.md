@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: bb96bcf0219eb6f255efc26a321b42774c0be54033685635071e1e4f604fc441
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 36b3d28999c65d76da2ab5b0530bfdee3628b807
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54239970"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58761329"
 ---
 # <a name="androiddeviceownerglobalproxyautoconfig-resource-type"></a>tipo de recurso androidDeviceOwnerGlobalProxyAutoConfig
 
@@ -46,7 +46,6 @@ Veja a seguir uma representação JSON do recurso.
   "proxyAutoConfigURL": "String"
 }
 ```
-
 
 
 

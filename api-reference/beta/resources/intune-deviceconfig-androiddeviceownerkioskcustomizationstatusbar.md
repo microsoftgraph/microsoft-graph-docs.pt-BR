@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 5b2be432c6bfc722e6d98a1baa044b1adc996798604526c8fce9ec0d01c6a2ba
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: de405943d263e05f8a0c3b458dafa8184a40a793
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54242056"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58787045"
 ---
 # <a name="androiddeviceownerkioskcustomizationstatusbar-enum-type"></a>tipo de número androidDeviceOwnerKioskCustomizationStatusBar
 
@@ -26,9 +26,8 @@ Um número que representa os valores possíveis para a navegação do sistema de
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |notConfigured|0|Não configurado; esse valor é padrão para STATUS_BAR_UNSPECIFIED.|
-|notificationsAndSystemInfoEnabled|1 |As informações e as notificações do sistema são mostradas na barra de status no modo quiosque.|
+|notificationsAndSystemInfoEnabled|1|As informações e as notificações do sistema são mostradas na barra de status no modo quiosque.|
 |systemInfoOnly|2|Somente as informações do sistema são mostradas na barra de status no modo quiosque.|
-
 
 
 

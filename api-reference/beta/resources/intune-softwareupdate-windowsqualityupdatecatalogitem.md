@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: e393f995f07c695ec6d01b36b46dc486fc062f1f2c7f0dd7a7636f5796c4a372
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 25f4838145c47ef23ce2ee50300452fbf0e9333f
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54224331"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58821904"
 ---
 # <a name="windowsqualityupdatecatalogitem-resource-type"></a>Tipo de recurso windowsQualityUpdateCatalogItem
 
@@ -38,12 +38,12 @@ Herda de [windowsUpdateCatalogItem](../resources/intune-softwareupdate-windowsup
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|Cadeia de caracteres|A ID do item de catálogo. Herdado [do windowsUpdateCatalogItem](../resources/intune-softwareupdate-windowsupdatecatalogitem.md)|
-|displayName|Cadeia de caracteres|O nome de exibição do item de catálogo. Herdado [do windowsUpdateCatalogItem](../resources/intune-softwareupdate-windowsupdatecatalogitem.md)|
+|displayName|String|O nome de exibição do item de catálogo. Herdado [do windowsUpdateCatalogItem](../resources/intune-softwareupdate-windowsupdatecatalogitem.md)|
 |releaseDateTime|DateTimeOffset|A data em que o item de catálogo foi lançado Herdado de [windowsUpdateCatalogItem](../resources/intune-softwareupdate-windowsupdatecatalogitem.md)|
 |endOfSupportDate|DateTimeOffset|A última data com suporte para um item de catálogo Herdado de [windowsUpdateCatalogItem](../resources/intune-softwareupdate-windowsupdatecatalogitem.md)|
 |kbArticleId|Cadeia de caracteres|ID do artigo da base de dados de conhecimento|
 |classificação|[windowsQualityUpdateClassification](../resources/intune-softwareupdate-windowsqualityupdateclassification.md)|Classificação da atualização de qualidade. Os valores possíveis são: `all`, `security`, `nonSecurity`.|
-|isExpeditable|Boolean|Sinalizador indicando se a atualização se qualifica para acelerar|
+|isExpeditable|Booliano|Sinalizador indicando se a atualização se qualifica para acelerar|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -68,7 +68,6 @@ Veja a seguir uma representação JSON do recurso.
   "isExpeditable": true
 }
 ```
-
 
 
 

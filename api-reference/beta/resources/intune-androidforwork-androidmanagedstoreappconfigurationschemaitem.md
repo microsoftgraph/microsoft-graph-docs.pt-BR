@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 570253f46f68ac852b6524008fda3365b1571cc0
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: e40612aa0486f6aeaa6c28394cc3bea338dbc66d
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58263825"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58801203"
 ---
 # <a name="androidmanagedstoreappconfigurationschemaitem-resource-type"></a>Tipo de recurso androidManagedStoreAppConfigurationSchemaItem
 
@@ -29,7 +29,7 @@ Item de configuração único dentro do esquema de configuração personalizado 
 |parentIndex|Int32|Índice do item de esquema pai para rastrear itens de esquema aninhados|
 |schemaItemKey|Cadeia de caracteres|Chave exclusiva que o aplicativo usa para identificar o item|
 |displayName|Cadeia de caracteres|Nome legível por humanos|
-|description|Cadeia de caracteres|Descrição do que o item controla dentro do aplicativo|
+|descrição|Cadeia de caracteres|Descrição do que o item controla dentro do aplicativo|
 |defaultBoolValue|Booliano|Valor padrão para itens do tipo booliano, se especificado pelo desenvolvedor do aplicativo|
 |defaultIntValue|Int32|Valor padrão para itens do tipo inteiro, se especificado pelo desenvolvedor do aplicativo|
 |defaultStringValue|Cadeia de caracteres|Valor padrão para itens do tipo cadeia de caracteres, se especificado pelo desenvolvedor do aplicativo|
@@ -71,7 +71,6 @@ Veja a seguir uma representação JSON do recurso.
   ]
 }
 ```
-
 
 
 

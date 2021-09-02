@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a307acb8138134104c5ea97a386c987a6f3a25c523507efd8df6d6528f5e24ed
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: a425abab595dc939427f363ee3ecd0a6bace8857
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54137175"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58816834"
 ---
 # <a name="compare-function"></a>função compare
 
@@ -88,7 +88,6 @@ Content-Length: 364
   ]
 }
 ```
-
 
 
 

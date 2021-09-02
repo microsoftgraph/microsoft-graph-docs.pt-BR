@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 93cd963d2754e56928eae8e8a450b9f3e40aa177e0ea2cd1d3b991586a070195
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: bcdb62a5c8ebf740b9c9f0060289af0ebded8ff3
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54173237"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58819217"
 ---
 # <a name="androiddeviceownerkioskmodemanagedfolderreference-resource-type"></a>Tipo de recurso androidDeviceOwnerKioskModeManagedFolderReference
 
@@ -48,7 +48,6 @@ Veja a seguir uma representação JSON do recurso.
   "folderIdentifier": "String"
 }
 ```
-
 
 
 

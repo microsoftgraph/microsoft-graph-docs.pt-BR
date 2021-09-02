@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e89a433f7ca856ac91f304a1e9dcd3e861af87958c07bbaaed498b84cf82fa57
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 9201ae3332d3402d083d6fb28d33dc05bd53a32c
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54215998"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58821084"
 ---
 # <a name="delete-androidworkprofilevpnconfiguration"></a>Excluir androidWorkProfileVpnConfiguration
 
@@ -67,7 +67,6 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

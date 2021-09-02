@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 9899351647c85c1dd0245c2b2407dda9c01d35b371172d8643a060cd1261a7ad
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 0a4f1095d34252c41eff6ff0c0f14b4cd5894978
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54123199"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58818853"
 ---
 # <a name="create-androidmanagedappregistration"></a>Criar androidManagedAppRegistration
 
@@ -64,13 +64,13 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar androidM
 |managedDeviceId|Cadeia de caracteres|O identificador de Dispositivo Gerenciado do dispositivo host. O valor pode estar vazio mesmo quando o dispositivo host é gerenciado. Herdada da [managedAppRegistration](../resources/intune-mam-managedappregistration.md)|
 |azureADDeviceId|String|O Azure Active Directory de dispositivo do dispositivo host. O valor pode estar vazio mesmo quando o dispositivo host estiver Azure Active Directory registrado. Herdada da [managedAppRegistration](../resources/intune-mam-managedappregistration.md)|
 |deviceModel|Cadeia de caracteres|O modelo de dispositivo para o registro de aplicativo atual Herdado de [managedAppRegistration](../resources/intune-mam-managedappregistration.md)|
-|deviceManufacturer|Cadeia de caracteres|O fabricante do dispositivo para o registro de aplicativo atual Herdado de [managedAppRegistration](../resources/intune-mam-managedappregistration.md)|
+|deviceManufacturer|String|O fabricante do dispositivo para o registro de aplicativo atual Herdado de [managedAppRegistration](../resources/intune-mam-managedappregistration.md)|
 |flaggedReasons|[Coleção managedAppFlaggedReason](../resources/intune-mam-managedappflaggedreason.md)|Zero ou mais motivos para a sinalização de um registro de aplicativo. E.g. aplicativo em execução no dispositivo raiz Herdado de [managedAppRegistration](../resources/intune-mam-managedappregistration.md). Os valores possíveis são: `none`, `rootedDevice`, `androidBootloaderUnlocked`, `androidFactoryRomModified`.|
 |userId|Cadeia de caracteres|A ID de usuário à qual este registro de aplicativo pertence. Herdada de [managedAppRegistration](../resources/intune-mam-managedappregistration.md)|
 |appIdentifier|[mobileAppIdentifier](../resources/intune-mam-mobileappidentifier.md)|O Identificador de pacote do aplicativo. Herdado de [managedAppRegistration](../resources/intune-mam-managedappregistration.md)|
 |id|Cadeia de caracteres|Chave da entidade. Herdada de [managedAppRegistration](../resources/intune-mam-managedappregistration.md)|
 |version|String|Versão da entidade. Herdada da [managedAppRegistration](../resources/intune-mam-managedappregistration.md)|
-|patchVersion|Cadeia de caracteres|A versão de patch para o registro atual do aplicativo android|
+|patchVersion|String|A versão de patch para o registro atual do aplicativo android|
 
 
 
@@ -146,7 +146,6 @@ Content-Length: 987
   "patchVersion": "Patch Version value"
 }
 ```
-
 
 
 

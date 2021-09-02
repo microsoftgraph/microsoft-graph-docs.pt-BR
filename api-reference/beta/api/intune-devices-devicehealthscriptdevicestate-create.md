@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d3ebf0a94f6b940a6e2235e24eba05449401d8ed
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: cfd72020c99cfd6c31efe8b298995c8f49ffebf3
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58266573"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58818643"
 ---
 # <a name="create-devicehealthscriptdevicestate"></a>Criar deviceHealthScriptDeviceState
 
@@ -27,9 +27,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
+|Delegada (conta corporativa ou de estudante)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 |Delegada (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
+|Aplicativo|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -62,9 +62,9 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar deviceHe
 |preRemediationDetectionScriptError|Cadeia de caracteres|Erro do script de detecção antes da correção|
 |remediationScriptError|Cadeia de caracteres|Saída de erro do script de correção|
 |postRemediationDetectionScriptOutput|Cadeia de caracteres|Saída de script de detecção após correção|
-|postRemediationDetectionScriptError|Cadeia de caracteres|Erro do script de detecção após a correção|
+|postRemediationDetectionScriptError|String|Erro do script de detecção após a correção|
 |remediationState|[remediationState](../resources/intune-devices-remediationstate.md)|Estado de correção da última execução do script de saúde do dispositivo. Os valores possíveis são: `unknown`, `skipped`, `success`, `remediationFailed`, `scriptError`.|
-|assignmentFilterIds|String collection|Uma lista das IDs de filtro de atribuição usadas para avaliação de aplicabilidade do script de saúde|
+|assignmentFilterIds|Coleção de cadeias de caracteres|Uma lista das IDs de filtro de atribuição usadas para avaliação de aplicabilidade do script de saúde|
 
 
 
@@ -123,7 +123,6 @@ Content-Length: 880
   ]
 }
 ```
-
 
 
 

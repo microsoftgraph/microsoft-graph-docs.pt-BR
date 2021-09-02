@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 6a292fad5b9254831107c751b8413ac600ed1dc9e88c01a8b5af03ae4cd312f4
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: db85070d86bc0b974c917eb2ca492ca9ccec481f
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54213267"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58795267"
 ---
 # <a name="officeproductid-enum-type"></a>Tipo de número officeProductId
 
@@ -26,10 +26,9 @@ O Enum para especificar os ProductIds do Office365 que representam as SKUs do Of
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |o365ProPlusRetail|0|Ainda não documentado|
-|o365BusinessRetail|1 |Ainda não documentado|
+|o365BusinessRetail|1|Ainda não documentado|
 |visioProRetail|2|Ainda não documentado|
-|projectProRetail|3 |Ainda não documentado|
-
+|projectProRetail|3|Ainda não documentado|
 
 
 

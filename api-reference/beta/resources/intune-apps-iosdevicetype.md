@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d6c2a291dcd28739fa72bae0967b4a487112b7b51efe9245bcf0b45f919b9a55
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 68146368f2e31bcd946041f34611f0cb9e263f67
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54142173"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58799266"
 ---
 # <a name="iosdevicetype-resource-type"></a>Tipo de recurso do iosDeviceType
 
@@ -45,7 +45,6 @@ Veja a seguir uma representação JSON do recurso.
   "iPhoneAndIPod": true
 }
 ```
-
 
 
 

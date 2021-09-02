@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 84fb6ed2690218cdecdb7a277143ba76c0a804e3776981fc45beb21a2793b70a
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: c4369a5bf5752edf9c0636f31f936ecd43048407
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54227460"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58817107"
 ---
 # <a name="deviceguardlocalsystemauthoritycredentialguardtype-enum-type"></a>Tipo de número deviceGuardLocalSystemAuthorityCredentialGuardType
 
@@ -26,10 +26,9 @@ Valores possíveis das configurações do Credential Guard.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |notConfigured|0|Desliga o Credential Guard remotamente se configurado anteriormente sem o Bloqueio UEFI.|
-|enableWithUEFILock|1 |A liga o Credential Guard com o bloqueio UEFI.|
+|enableWithUEFILock|1|A liga o Credential Guard com o bloqueio UEFI.|
 |enableWithoutUEFILock|2|A liga o Credential Guard sem o bloqueio UEFI.|
-|desabilitar|3 |Desabilita o Credential Guard. Esse é o valor padrão do sistema operacional.|
-
+|desabilitar|3|Desabilita o Credential Guard. Esse é o valor padrão do sistema operacional.|
 
 
 

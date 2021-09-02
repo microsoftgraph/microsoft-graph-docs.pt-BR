@@ -1,18 +1,18 @@
 ---
-title: Excluir appleUserInitiatedEnrollmentProfile
-description: Exclui um appleUserInitiatedEnrollmentProfile.
-author: dougeby
+title: Excluir windowsOfficeClientSecurityConfiguration
+description: Exclui uma política de segurança windowsOfficeClientSecurityConfiguration.
 localization_priority: Normal
+author: dougeby
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d3b2bafc5987fe00294fe5b36900ac141af431d5
+ms.openlocfilehash: 06f8dd4fea9767b9c8b9ec44d48d946a72ba965e
 ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 08/31/2021
-ms.locfileid: "58794178"
+ms.locfileid: "58801897"
 ---
-# <a name="delete-appleuserinitiatedenrollmentprofile"></a>Excluir appleUserInitiatedEnrollmentProfile
+# <a name="delete-windowsofficeclientsecurityconfiguration"></a>Excluir windowsOfficeClientSecurityConfiguration
 
 Namespace: microsoft.graph
 
@@ -20,16 +20,16 @@ Namespace: microsoft.graph
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Exclui um [appleUserInitiatedEnrollmentProfile](../resources/intune-enrollment-appleuserinitiatedenrollmentprofile.md).
+Exclui uma política de [segurança windowsOfficeClientSecurityConfiguration](../resources/intune-cirrus-windowsofficeclientsecurityconfiguration.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
+|Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All|
+|Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementServiceConfig.ReadWrite.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -37,7 +37,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 }
 -->
 ``` http
-DELETE /deviceManagement/appleUserInitiatedEnrollmentProfiles/{appleUserInitiatedEnrollmentProfileId}
+DELETE /officeConfiguration/clientConfigurations/{key}
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -50,20 +50,20 @@ DELETE /deviceManagement/appleUserInitiatedEnrollmentProfiles/{appleUserInitiate
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um código de resposta `204 No Content`.
+Se tiver êxito, este método retornará um código de resposta `200 OK`.
 
 ## <a name="example"></a>Exemplo
 
 ### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
 ``` http
-DELETE https://graph.microsoft.com/beta/deviceManagement/appleUserInitiatedEnrollmentProfiles/{appleUserInitiatedEnrollmentProfileId}
+DELETE https://graph.microsoft.com/beta/officeConfiguration/clientConfigurations/{key}
 ```
 
 ### <a name="response"></a>Resposta
 Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 ``` http
-HTTP/1.1 204 No Content
+HTTP/1.1 200 OK
 ```
 
 

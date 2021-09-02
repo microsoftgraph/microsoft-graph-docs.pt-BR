@@ -1,18 +1,18 @@
 ---
-title: Excluir appleUserInitiatedEnrollmentProfile
-description: Exclui um appleUserInitiatedEnrollmentProfile.
+title: Listar microsoftTunnelHealthThresholds
+description: Listar propriedades e relações dos objetos microsoftTunnelHealthThreshold.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d3b2bafc5987fe00294fe5b36900ac141af431d5
+ms.openlocfilehash: 0257829ea8bfc29c77f46a1754786f5743d374e1
 ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 08/31/2021
-ms.locfileid: "58794178"
+ms.locfileid: "58817986"
 ---
-# <a name="delete-appleuserinitiatedenrollmentprofile"></a>Excluir appleUserInitiatedEnrollmentProfile
+# <a name="list-microsofttunnelhealththresholds"></a>Listar microsoftTunnelHealthThresholds
 
 Namespace: microsoft.graph
 
@@ -20,16 +20,16 @@ Namespace: microsoft.graph
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Exclui um [appleUserInitiatedEnrollmentProfile](../resources/intune-enrollment-appleuserinitiatedenrollmentprofile.md).
+Listar propriedades e relações dos [objetos microsoftTunnelHealthThreshold.](../resources/intune-mstunnel-microsofttunnelhealththreshold.md)
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementServiceConfig.ReadWrite.All|
+|Delegada (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Aplicativo|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -37,7 +37,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 }
 -->
 ``` http
-DELETE /deviceManagement/appleUserInitiatedEnrollmentProfiles/{appleUserInitiatedEnrollmentProfileId}
+GET /deviceManagement/microsoftTunnelHealthThresholds
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -50,20 +50,35 @@ DELETE /deviceManagement/appleUserInitiatedEnrollmentProfiles/{appleUserInitiate
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um código de resposta `204 No Content`.
+Se tiver êxito, este método retornará um código de resposta e uma coleção de objetos `200 OK` [microsoftTunnelHealthThreshold](../resources/intune-mstunnel-microsofttunnelhealththreshold.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
 ### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
 ``` http
-DELETE https://graph.microsoft.com/beta/deviceManagement/appleUserInitiatedEnrollmentProfiles/{appleUserInitiatedEnrollmentProfileId}
+GET https://graph.microsoft.com/beta/deviceManagement/microsoftTunnelHealthThresholds
 ```
 
 ### <a name="response"></a>Resposta
 Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 ``` http
-HTTP/1.1 204 No Content
+HTTP/1.1 200 OK
+Content-Type: application/json
+Content-Length: 300
+
+{
+  "value": [
+    {
+      "@odata.type": "#microsoft.graph.microsoftTunnelHealthThreshold",
+      "id": "419c526e-526e-419c-6e52-9c416e529c41",
+      "healthyThreshold": 0,
+      "unhealthyThreshold": 2,
+      "defaultHealthyThreshold": 7,
+      "defaultUnhealthyThreshold": 9
+    }
+  ]
+}
 ```
 
 

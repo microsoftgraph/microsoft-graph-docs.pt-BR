@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5ddffa19b2ca68925d8d4f9f7f181d0ea3dfd5b5ff0af6e9519128cf0a6c2a2f
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 17b6bb04dacdac63809ac3d66ead29531c7eae0b
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54191071"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58818825"
 ---
 # <a name="update-windowsqualityupdateprofile"></a>Atualizar windowsQualityUpdateProfile
 
@@ -54,14 +54,14 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [o windo
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|Cadeia de caracteres|A ID da política do Intune.|
-|displayName|Cadeia de caracteres|O nome de exibição do perfil.|
-|description|Cadeia de caracteres|A descrição do perfil especificado pelo usuário.|
+|displayName|String|O nome de exibição do perfil.|
+|description|String|A descrição do perfil especificado pelo usuário.|
 |expeditedUpdateSettings|[expeditedWindowsQualityUpdateSettings](../resources/intune-softwareupdate-expeditedwindowsqualityupdatesettings.md)|Configurações de atualização aceleradas.|
 |createdDateTime|DateTimeOffset|A data em que o perfil foi criado.|
 |lastModifiedDateTime|DateTimeOffset|A data em que o perfil foi modificado pela última vez.|
-|roleScopeTagIds|String collection|Lista de Marcas de Escopo para esta entidade de Atualização de Qualidade.|
+|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de Marcas de Escopo para esta entidade de Atualização de Qualidade.|
 |releaseDateDisplayName|Cadeia de caracteres|Data de lançamento amigável a ser exibida para um lançamento de Atualização de Qualidade|
-|deployableContentDisplayName|Cadeia de caracteres|Nome de exibição amigável do conteúdo implantável do perfil de atualização de qualidade|
+|deployableContentDisplayName|String|Nome de exibição amigável do conteúdo implantável do perfil de atualização de qualidade|
 
 
 
@@ -120,7 +120,6 @@ Content-Length: 730
   "deployableContentDisplayName": "Deployable Content Display Name value"
 }
 ```
-
 
 
 
