@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 3d3bc9b0862dd376b393019838980ce9c82c7df3
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 38ef6bde17bb005b9e08c9ba957ff6c4ee0a4fd5
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58266977"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58803255"
 ---
 # <a name="deviceenrollmenttype-enum-type"></a>Tipo de número deviceEnrollmentType
 
@@ -26,9 +26,9 @@ Possíveis maneiras de adicionar um dispositivo móvel ao gerenciamento.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |desconhecido|0|Valor padrão, tipo de registro não coletado.|
-|userEnrollment|1 |Registro orientado pelo usuário por meio do canal BYOD.|
+|userEnrollment|1|Registro orientado pelo usuário por meio do canal BYOD.|
 |deviceEnrollmentManager|2|Registro de usuário com uma conta do gerenciador de registro de dispositivo.|
-|appleBulkWithUser|3 |Registro em massa da Apple com desafio do usuário. (DEP, Apple Configurator)|
+|appleBulkWithUser|3|Registro em massa da Apple com desafio do usuário. (DEP, Apple Configurator)|
 |appleBulkWithoutUser|4 |Registro em massa da Apple sem desafio do usuário. (DEP, Apple Configurator, Mobile Config)|
 |windowsAzureADJoin|5 |Windows 10 Ingressar no Azure AD.|
 |windowsBulkUserless|6 |Windows 10 Registro em massa por meio do ICD com certificado.|
@@ -42,7 +42,6 @@ Possíveis maneiras de adicionar um dispositivo móvel ao gerenciamento.
 |androidEnterpriseDedicatedDevice|15 |Dispositivo Enterprise Android dedicado|
 |androidEnterpriseFullyManaged|16 |Android Enterprise Totalmente Gerenciado|
 |androidEnterpriseCorporateWorkProfile|17 |Perfil Enterprise trabalho corporativo do Android|
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 277412ab1852ac7d3bd2f7b150e7ca8f0852edbd8ddf101561869de97a11a894
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 2ae5091563a205c0fb8b3a4d787ca10b5f16a72b
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54185828"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58788216"
 ---
 # <a name="vpntrafficruleroutingpolicytype-enum-type"></a>Tipo de número vpnTrafficRuleRoutingPolicyType
 
@@ -26,9 +26,8 @@ Especifica a política de roteamento para uma regra de tráfego VPN.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |Nenhuma|0|Nenhuma política de roteamento especificada.|
-|splitTunnel|1 |O tráfego de rede para o aplicativo especificado será roteado pela VPN.|
+|splitTunnel|1|O tráfego de rede para o aplicativo especificado será roteado pela VPN.|
 |forceTunnel|2|Todo o tráfego de rede será roteado pela VPN.|
-
 
 
 

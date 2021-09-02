@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: e4acb774a6478f2d3bfd27c582c245ecea605d092896ef89b3a746a32e67db9a
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 40383df26775e880f45b5f79013c945fe091c87a
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54235986"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58801455"
 ---
 # <a name="compliancemanagementpartner-resource-type"></a>Tipo de recurso complianceManagementPartner
 
@@ -28,7 +28,7 @@ Parceiro de gerenciamento de conformidade para todas as plataformas
 |[Listar complianceManagementPartners](../api/intune-onboarding-compliancemanagementpartner-list.md)|[coleção complianceManagementPartner](../resources/intune-onboarding-compliancemanagementpartner.md)|Listar propriedades e relações dos [objetos complianceManagementPartner.](../resources/intune-onboarding-compliancemanagementpartner.md)|
 |[Obter complianceManagementPartner](../api/intune-onboarding-compliancemanagementpartner-get.md)|[complianceManagementPartner](../resources/intune-onboarding-compliancemanagementpartner.md)|Ler propriedades e relações do [objeto complianceManagementPartner.](../resources/intune-onboarding-compliancemanagementpartner.md)|
 |[Criar complianceManagementPartner](../api/intune-onboarding-compliancemanagementpartner-create.md)|[complianceManagementPartner](../resources/intune-onboarding-compliancemanagementpartner.md)|Crie um novo [objeto complianceManagementPartner.](../resources/intune-onboarding-compliancemanagementpartner.md)|
-|[Excluir complianceManagementPartner](../api/intune-onboarding-compliancemanagementpartner-delete.md)|Nenhum|Exclui um [complianceManagementPartner](../resources/intune-onboarding-compliancemanagementpartner.md).|
+|[Excluir complianceManagementPartner](../api/intune-onboarding-compliancemanagementpartner-delete.md)|Nenhum(a)|Exclui um [complianceManagementPartner](../resources/intune-onboarding-compliancemanagementpartner.md).|
 |[Atualizar complianceManagementPartner](../api/intune-onboarding-compliancemanagementpartner-update.md)|[complianceManagementPartner](../resources/intune-onboarding-compliancemanagementpartner.md)|Atualize as propriedades de [um objeto complianceManagementPartner.](../resources/intune-onboarding-compliancemanagementpartner.md)|
 
 ## <a name="properties"></a>Propriedades
@@ -38,10 +38,10 @@ Parceiro de gerenciamento de conformidade para todas as plataformas
 |lastHeartbeatDateTime|DateTimeOffset|Timestamp de última pulsação depois que o administrador entrou no parceiro de gerenciamento de conformidade|
 |partnerState|[deviceManagementPartnerTenantState](../resources/intune-onboarding-devicemanagementpartnertenantstate.md)|Estado do parceiro desse locatário. Os possíveis valores são: `unknown`, `unavailable`, `enabled`, `terminated`, `rejected`, `unresponsive`.|
 |displayName|Cadeia de caracteres|Nome de exibição de parceiro|
-|macOsOnboarded|Boolean|Parceiro a bordo para dispositivos Mac.|
-|windowsOnboarded|Boolean|Parceiro integrado para Windows dispositivos.|
-|androidOnboarded|Boolean|Parceiro a bordo para dispositivos Android.|
-|iosOnboarded|Boolean|Parceiro internado para dispositivos ios.|
+|macOsOnboarded|Boleano|Parceiro a bordo para dispositivos Mac.|
+|windowsOnboarded|Boleano|Parceiro integrado para Windows dispositivos.|
+|androidOnboarded|Boleano|Parceiro a bordo para dispositivos Android.|
+|iosOnboarded|Boleano|Parceiro internado para dispositivos ios.|
 |macOsEnrollmentAssignments|[coleção complianceManagementPartnerAssignment](../resources/intune-onboarding-compliancemanagementpartnerassignment.md)|Grupos de usuários que registram dispositivos Mac por meio de parceiros.|
 |windowsEnrollmentAssignments|[coleção complianceManagementPartnerAssignment](../resources/intune-onboarding-compliancemanagementpartnerassignment.md)|Grupos de usuários que registram Windows por meio de parceiros.|
 |androidEnrollmentAssignments|[coleção complianceManagementPartnerAssignment](../resources/intune-onboarding-compliancemanagementpartnerassignment.md)|Grupos de usuários que registram dispositivos Android por meio de parceiros.|
@@ -115,7 +115,6 @@ Veja a seguir uma representação JSON do recurso.
   ]
 }
 ```
-
 
 
 

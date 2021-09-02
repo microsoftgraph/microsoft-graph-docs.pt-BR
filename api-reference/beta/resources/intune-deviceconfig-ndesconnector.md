@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 20f58e58b36abe69ecdb9ef24da990516d8ea01ed37cf3ad3fba44e6f708fdb8
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 392862f8bf8853195743b741727485de383fc62c
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54198245"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58799504"
 ---
 # <a name="ndesconnector-resource-type"></a>Tipo de recurso ndesConnector
 
@@ -28,7 +28,7 @@ Entidade que representa um conector OnPrem Ndes.
 |[Listar ndesConnectors](../api/intune-deviceconfig-ndesconnector-list.md)|[Coleção ndesConnector](../resources/intune-deviceconfig-ndesconnector.md)|Listar propriedades e relações dos objetos [ndesConnector.](../resources/intune-deviceconfig-ndesconnector.md)|
 |[Obter ndesConnector](../api/intune-deviceconfig-ndesconnector-get.md)|[ndesConnector](../resources/intune-deviceconfig-ndesconnector.md)|Leia propriedades e relações do [objeto ndesConnector.](../resources/intune-deviceconfig-ndesconnector.md)|
 |[Criar ndesConnector](../api/intune-deviceconfig-ndesconnector-create.md)|[ndesConnector](../resources/intune-deviceconfig-ndesconnector.md)|Crie um novo [objeto ndesConnector.](../resources/intune-deviceconfig-ndesconnector.md)|
-|[Excluir ndesConnector](../api/intune-deviceconfig-ndesconnector-delete.md)|Nenhum|Exclui um [ndesConnector](../resources/intune-deviceconfig-ndesconnector.md).|
+|[Excluir ndesConnector](../api/intune-deviceconfig-ndesconnector-delete.md)|Nenhum(a)|Exclui um [ndesConnector](../resources/intune-deviceconfig-ndesconnector.md).|
 |[Atualizar ndesConnector](../api/intune-deviceconfig-ndesconnector-update.md)|[ndesConnector](../resources/intune-deviceconfig-ndesconnector.md)|Atualize as propriedades de um [objeto ndesConnector.](../resources/intune-deviceconfig-ndesconnector.md)|
 
 ## <a name="properties"></a>Propriedades
@@ -59,7 +59,6 @@ Veja a seguir uma representação JSON do recurso.
   "displayName": "String"
 }
 ```
-
 
 
 

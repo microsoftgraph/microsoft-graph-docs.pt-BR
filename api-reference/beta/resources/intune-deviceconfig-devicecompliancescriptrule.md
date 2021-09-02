@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9736e190b698af948dbbf0c67f9e4381a1ac9282f7b8ac6536ccabb72262b555
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 723fa805042e055075a52a5a134e213f1feef3bc
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54245027"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58801147"
 ---
 # <a name="devicecompliancescriptrule-resource-type"></a>Tipo de recurso deviceComplianceScriptRule
 
@@ -53,7 +53,6 @@ Veja a seguir uma representação JSON do recurso.
   "operand": "String"
 }
 ```
-
 
 
 

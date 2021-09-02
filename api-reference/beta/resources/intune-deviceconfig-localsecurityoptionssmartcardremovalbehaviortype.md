@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 3215539f1f094462210c9ef2f53e556764bfdf4a796c9e14b141107d3c17b87b
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 7eafa795eaacb76dffe77a48095ad5e83cd15d71
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54239550"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58812218"
 ---
 # <a name="localsecurityoptionssmartcardremovalbehaviortype-enum-type"></a>localSecurityOptionsSmartCardRemovalBehaviorType tipo de número
 
@@ -26,10 +26,9 @@ Valores possíveis para LocalSecurityOptionsSmartCardRemovalBehaviorType
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |lockWorkstation|0|Nenhuma ação|
-|noAction|1 |Lock Workstation|
+|noAction|1|Lock Workstation|
 |forceLogoff|2|Forçar Logoff|
-|disconnectRemoteDesktopSession|3 |Desconectar se uma sessão remota dos Serviços de Área de Trabalho Remota|
-
+|disconnectRemoteDesktopSession|3|Desconectar se uma sessão remota dos Serviços de Área de Trabalho Remota|
 
 
 

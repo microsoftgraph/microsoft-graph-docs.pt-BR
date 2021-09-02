@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 5984111d9e6782bc6a6a1b3d124716bc4edb92d3785b1887b12eb899a52b1a64
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 783af05abb46ff552549175248276c711bae4545
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54148313"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58818298"
 ---
 # <a name="androidforworkdefaultapppermissionpolicytype-enum-type"></a>tipo de número androidForWorkDefaultAppPermissionPolicyType
 
@@ -26,10 +26,9 @@ Tipo de política de permissão de aplicativo padrão do Android For Work.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |deviceDefault|0|Valor padrão do dispositivo, sem intenção.|
-|prompt|1 |Prompt.|
+|prompt|1|Prompt.|
 |autoGrant|2|Concessão automática.|
-|autoDeny|3 |Negar automaticamente.|
-
+|autoDeny|3|Negar automaticamente.|
 
 
 

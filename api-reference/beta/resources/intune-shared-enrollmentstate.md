@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 0817bb82e098d1fab93da3381c81faafc03b4cf0810e602934924305e0971edf
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: b58391b7942bfdc32af6fce25a5e23b7a5f5bccc
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54206106"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58787782"
 ---
 # <a name="enrollmentstate-enum-type"></a>Tipo de número de enrollmentState
 
@@ -26,12 +26,11 @@ Ainda não documentado
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |desconhecido|0|O estado de registro do dispositivo é desconhecido|
-|inscrito|1 |O dispositivo está inscrito.|
+|inscrito|1|O dispositivo está inscrito.|
 |pendingReset|2|Inscrito, mas ele é inscrito por meio do perfil de registro e o perfil inscrito é diferente do perfil atribuído.|
-|failed|3 |Não registrado e há registro de falha no registro.|
+|failed|3|Não registrado e há registro de falha no registro.|
 |notContacted|4 |O dispositivo é importado, mas não está inscrito.|
 |blocked|5 |O dispositivo está inscrito como sem usuário, mas está impedido de mudar para o registro do usuário porque o aplicativo falhou na instalação.|
-
 
 
 

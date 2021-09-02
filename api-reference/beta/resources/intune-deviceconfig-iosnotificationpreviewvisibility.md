@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 6084528f40184370dc9d5c1f481e4099c8129d637a2976b135ef17a7a7ada384
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 3a3f7426134ecf4a5fec3f71cdc33654df292b30
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54198329"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58759663"
 ---
 # <a name="iosnotificationpreviewvisibility-enum-type"></a>Tipo de número iosNotificationPreviewVisibility
 
@@ -26,10 +26,9 @@ Determina quando as visualizações de notificação ficam visíveis em um dispo
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |notConfigured|0|As configurações de visualização de notificação não serão substituídas.|
-|alwaysShow|1 |Sempre mostrar visualizações de notificação.|
+|alwaysShow|1|Sempre mostrar visualizações de notificação.|
 |hideWhenLocked|2|Mostrar visualizações de notificação somente quando o dispositivo estiver desbloqueado.|
-|neverShow|3 |Nunca mostrar visualizações de notificação.|
-
+|neverShow|3|Nunca mostrar visualizações de notificação.|
 
 
 

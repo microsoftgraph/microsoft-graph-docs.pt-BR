@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 090f90e2f8b8c781bb4d6e9de3cab106f7120da6
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: dca978af3e29d381af9f09a0c16ff9585854108a
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58248158"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58804110"
 ---
 # <a name="update-grouppolicydefinition"></a>Atualizar groupPolicyDefinition
 
@@ -27,9 +27,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
+|Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Application|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -65,8 +65,10 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [o group
 |categoryPath|Cadeia de caracteres|O caminho de categoria completa localizado para a política.|
 |supportedOn|Cadeia de caracteres|Cadeia de caracteres localizada usada para especificar qual versão do sistema operacional ou aplicativo é afetada pela política.|
 |policyType|[groupPolicyType](../resources/intune-grouppolicy-grouppolicytype.md)|Especifica o tipo de política de grupo. Os valores possíveis são: `admxBacked` e `admxIngested`.|
-|hasRelatedDefinitions|Boolean|Significa se há ou não definições relacionadas a essa definição|
+|hasRelatedDefinitions|Boleano|Significa se há ou não definições relacionadas a essa definição|
 |groupPolicyCategoryId|Guid|A id de categoria da categoria pai|
+|minDeviceCspVersion|Cadeia de caracteres|Versão mínima necessária do CSP para a configuração do dispositivo nesta definição|
+|minUserCspVersion|Cadeia de caracteres|Versão mínima necessária do CSP para configuração do usuário nesta definição|
 |versão|String|Definindo a versão de definição|
 |id|Cadeia de caracteres|Chave da entidade.|
 |lastModifiedDateTime|DateTimeOffset|A data e a hora em que a entidade foi modificada pela última vez.|
@@ -83,7 +85,7 @@ Este é um exemplo da solicitação.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/groupPolicyDefinitions/{groupPolicyDefinitionId}
 Content-type: application/json
-Content-length: 418
+Content-length: 530
 
 {
   "@odata.type": "#microsoft.graph.groupPolicyDefinition",
@@ -95,6 +97,8 @@ Content-length: 418
   "policyType": "admxIngested",
   "hasRelatedDefinitions": true,
   "groupPolicyCategoryId": "4d1e97a2-97a2-4d1e-a297-1e4da2971e4d",
+  "minDeviceCspVersion": "Min Device Csp Version value",
+  "minUserCspVersion": "Min User Csp Version value",
   "version": "Version value"
 }
 ```
@@ -104,7 +108,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 531
+Content-Length: 643
 
 {
   "@odata.type": "#microsoft.graph.groupPolicyDefinition",
@@ -116,12 +120,13 @@ Content-Length: 531
   "policyType": "admxIngested",
   "hasRelatedDefinitions": true,
   "groupPolicyCategoryId": "4d1e97a2-97a2-4d1e-a297-1e4da2971e4d",
+  "minDeviceCspVersion": "Min Device Csp Version value",
+  "minUserCspVersion": "Min User Csp Version value",
   "version": "Version value",
   "id": "f9607947-7947-f960-4779-60f9477960f9",
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00"
 }
 ```
-
 
 
 

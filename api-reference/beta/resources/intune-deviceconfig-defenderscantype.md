@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: e4d81184b9ec18b781a7c89c9b8da3b5672fd8eb4de1bbaf0085521445edd4c5
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 6848efa274df78c834915c05e7b929934e4734e8
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54227495"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58801519"
 ---
 # <a name="defenderscantype-enum-type"></a>Tipo de número defenderScanType
 
@@ -26,10 +26,9 @@ Valores possíveis para o tipo de verificação do sistema.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |userDefined|0|User Defined, default value, no intent.|
-|desabilitadas|1 |Verificação do sistema desabilitada.|
+|desabilitadas|1|Verificação do sistema desabilitada.|
 |quick|2|Verificação rápida do sistema.|
-|full|3 |Verificação completa do sistema.|
-
+|full|3|Verificação completa do sistema.|
 
 
 

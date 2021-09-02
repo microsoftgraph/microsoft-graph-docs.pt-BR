@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 57e202bc257160902f32cf99393e9d20caf47c05
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: a8da1d5d85ce5e3c5444b41a1f655672bf799647
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58253457"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58788938"
 ---
 # <a name="manageddeviceremoteaction-enum-type"></a>Tipo de número managedDeviceRemoteAction
 
@@ -26,9 +26,9 @@ Ainda não documentado
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |retire|0|Ainda não documentado|
-|delete|1 |Ainda não documentado|
+|delete|1|Ainda não documentado|
 |fullScan|2|Ainda não documentado|
-|quickScan|3 |Ainda não documentado|
+|quickScan|3|Ainda não documentado|
 |signatureUpdate|4 |Ainda não documentado|
 |wipe|5 |Ainda não documentado|
 |customTextNotification|6 |Ainda não documentado|
@@ -38,8 +38,9 @@ Ainda não documentado
 |deprovision|10 |Nome da ação de desprovisionamento.|
 |desabilitar|11 |Nome da ação desabilitar.|
 |reenable|12 |Nome da ação reenvelável.|
-|moveDeviceToOrganizationalUnit|13 |Nome da ação moveDevicesToOU.|
-
+|moveDeviceToOrganizationalUnit|13|Nome da ação moveDevicesToOU.|
+|activateDeviceEsim|14 |Nome da ação para Ativar o eSIM no dispositivo.|
+|collectDiagnostics|15 |Nome da ação collectDiagnostics.|
 
 
 

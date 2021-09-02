@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 4c965cf4a18f025c8f45e9ef46f5d5e26658dbbc9993c947c35f3fc6cdf7d77d
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 3e1b02c804268a4eadb0503f3bab53ff37c95563
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54224555"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58782928"
 ---
 # <a name="grouppolicymigrationreadiness-enum-type"></a>tipo denum groupPolicyMigrationReadiness
 
@@ -25,12 +25,11 @@ Indica se o arquivo de Objeto de Política de Grupo está coberto e pronto para 
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|Nenhuma|1 |Sem cobertura do Intune|
+|Nenhuma|1|Sem cobertura do Intune|
 |partial|2|Cobertura parcial do Intune|
-|complete|3 |Cobertura completa do Intune|
+|complete|3|Cobertura completa do Intune|
 |erro|4 |Erro ao analisar a cobertura|
 |notApplicable|5 |Sem configurações de Política de Grupo no GPO|
-
 
 
 

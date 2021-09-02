@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: a9b78e085efe0e268c92a4017a45038915409dc4282ad4069ad5aa25db294a6e
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: ac19b84734ce49ee8a55b3b50b0a7ca92b70f515
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54153143"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58799525"
 ---
 # <a name="devicecomplianceactiontype-enum-type"></a>Tipo de número deviceComplianceActionType
 
@@ -26,14 +26,13 @@ Numeração do tipo de ação agendada
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |noAction|0|Nenhuma ação|
-|notificação|1 |Enviar notificação|
+|notificação|1|Enviar notificação|
 |block|2|Bloquear o dispositivo no AAD|
-|retire|3 |Retirar o dispositivo|
+|retire|3|Retirar o dispositivo|
 |wipe|4 |Apagar o dispositivo|
 |removeResourceAccessProfiles|5 |Remover Perfis de Acesso a Recursos do dispositivo|
 |pushNotification|9 |Enviar notificação por push para o dispositivo|
 |remoteLock|10 |Bloquear remotamente o dispositivo|
-
 
 
 

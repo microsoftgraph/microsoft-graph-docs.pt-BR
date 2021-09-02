@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 8e2311fa9435ec65eadf210377d1d792e1bdbf289f1d57c79bded9686c10aed0
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: deb7101a77c2118e417106a7243d9f39d10b892d
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54174441"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58818193"
 ---
 # <a name="delete-mobileappdependency"></a>Excluir mobileAppDependency
 
@@ -65,7 +65,6 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

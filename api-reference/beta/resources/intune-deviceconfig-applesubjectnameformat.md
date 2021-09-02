@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 2e353e49135ee734e2a4f78506eb59d6ebbd6f756048dde8d7552572058c42c3
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 47312c52ca9828f5c40bfd1b0075f8e6b459de9d
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54156356"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58818797"
 ---
 # <a name="applesubjectnameformat-enum-type"></a>Tipo de número appleSubjectNameFormat
 
@@ -26,12 +26,11 @@ Opções de formato de nome de assunto para dispositivos Apple.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |commonName|0|Nome comum.|
-|commonNameAsEmail|1 |Nome comum como email.|
+|commonNameAsEmail|1|Nome comum como email.|
 |custom|2|Formato de nome de assunto personalizado.|
-|commonNameIncludingEmail|3 |Nome comum, incluindo email.|
+|commonNameIncludingEmail|3|Nome comum, incluindo email.|
 |commonNameAsIMEI|5 |Nome comum como IMEI.|
 |commonNameAsSerialNumber|6 |Nome comum como número de série.|
-
 
 
 

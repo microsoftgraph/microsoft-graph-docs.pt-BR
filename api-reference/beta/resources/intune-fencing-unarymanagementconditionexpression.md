@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 2a3aa2c001c08e3d315e65fd0d7911d4f557c3becab7a4a9be4a2826c2313375
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 25b4bf266a955a11231c185200bee00367af538a
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54152989"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58797230"
 ---
 # <a name="unarymanagementconditionexpression-resource-type"></a>Tipo de recurso unaryManagementConditionExpression
 
@@ -163,7 +163,6 @@ Veja a seguir uma representação JSON do recurso.
   }
 }
 ```
-
 
 
 

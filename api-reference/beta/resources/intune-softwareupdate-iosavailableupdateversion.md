@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3174d0405785d31547f5b85bbd21d48598b9837783b97d0dd782b639ff43e7c8
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 886659126fb83c7112e3f5d7d20349ca8c11e855
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54193507"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58805265"
 ---
 # <a name="iosavailableupdateversion-resource-type"></a>Tipo de recurso iosAvailableUpdateVersion
 
@@ -28,7 +28,7 @@ Detalhes da versão de atualização disponível do iOS
 |productVersion|String|A versão da atualização.|
 |postingDateTime|DateTimeOffset|A data de postagem da atualização.|
 |expirationDateTime|DateTimeOffset|A data de expiração da atualização.|
-|supportedDevices|String collection|Lista de dispositivos com suporte para a atualização.|
+|supportedDevices|Coleção de cadeias de caracteres|Lista de dispositivos com suporte para a atualização.|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -51,7 +51,6 @@ Veja a seguir uma representação JSON do recurso.
   ]
 }
 ```
-
 
 
 

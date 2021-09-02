@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: cfc716edcce00e9c777f79796f6c9c792038153eccaccf91d40d62af49fcb28c
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 12186c8b08ec0a086e695338f4b1fe00421e3831
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54197930"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58788167"
 ---
 # <a name="binarymanagementconditionexpression-resource-type"></a>Tipo de recurso binaryManagementConditionExpression
 
@@ -270,7 +270,6 @@ Veja a seguir uma representação JSON do recurso.
   }
 }
 ```
-
 
 
 

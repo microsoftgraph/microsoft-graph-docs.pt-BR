@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 65de2d32ef56117c410909468302c4e841c760c4
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 5c86b8e166b10aabb03356f3f51c61d3ddb38a9e
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58253478"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58804509"
 ---
 # <a name="restrictedappsviolation-resource-type"></a>Tipo de recurso restrictedAppsViolation
 
@@ -28,7 +28,7 @@ Violação do perfil de configuração de aplicativos restritos por dispositivo 
 |[Listar restrictedAppsViolations](../api/intune-deviceconfig-restrictedappsviolation-list.md)|[Coleção restrictedAppsViolation](../resources/intune-deviceconfig-restrictedappsviolation.md)|Listar propriedades e relações dos objetos [restrictedAppsViolation.](../resources/intune-deviceconfig-restrictedappsviolation.md)|
 |[Obter restrictedAppsViolation](../api/intune-deviceconfig-restrictedappsviolation-get.md)|[restrictedAppsViolation](../resources/intune-deviceconfig-restrictedappsviolation.md)|Leia propriedades e relações do objeto [restrictedAppsViolation.](../resources/intune-deviceconfig-restrictedappsviolation.md)|
 |[Criar restrictedAppsViolation](../api/intune-deviceconfig-restrictedappsviolation-create.md)|[restrictedAppsViolation](../resources/intune-deviceconfig-restrictedappsviolation.md)|Crie um novo [objeto restrictedAppsViolation.](../resources/intune-deviceconfig-restrictedappsviolation.md)|
-|[Excluir restrictedAppsViolation](../api/intune-deviceconfig-restrictedappsviolation-delete.md)|Nenhum|Exclui um [restrictedAppsViolation](../resources/intune-deviceconfig-restrictedappsviolation.md).|
+|[Excluir restrictedAppsViolation](../api/intune-deviceconfig-restrictedappsviolation-delete.md)|Nenhum(a)|Exclui um [restrictedAppsViolation](../resources/intune-deviceconfig-restrictedappsviolation.md).|
 |[Atualizar restrictedAppsViolation](../api/intune-deviceconfig-restrictedappsviolation-update.md)|[restrictedAppsViolation](../resources/intune-deviceconfig-restrictedappsviolation.md)|Atualize as propriedades de [um objeto restrictedAppsViolation.](../resources/intune-deviceconfig-restrictedappsviolation.md)|
 
 ## <a name="properties"></a>Propriedades
@@ -76,7 +76,6 @@ Veja a seguir uma representação JSON do recurso.
   ]
 }
 ```
-
 
 
 
