@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 5d115b746161bf91702a80ff2a69e6da0cfe4b37636286ef431f5905295e29f8
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 99357d35a95df626d305ce234f115cd41d6f1005
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54131266"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58783992"
 ---
 # <a name="win32lobappmsiinformation-resource-type"></a>Tipo de recurso win32LobAppMsiInformation
 
@@ -28,7 +28,7 @@ Contém propriedades de aplicativo MSI para um aplicativo Win32.
 |productCode|String|O código do produto MSI.|
 |productVersion|String|A versão do produto MSI.|
 |upgradeCode|Cadeia de caracteres|O código de atualização MSI.|
-|requiresReboot|Boolean|Se o aplicativo MSI exige que o computador seja reiniciado para concluir a instalação.|
+|requiresReboot|Boleano|Se o aplicativo MSI exige que o computador seja reiniciado para concluir a instalação.|
 |packageType|[win32LobAppMsiPackageType](../resources/intune-apps-win32lobappmsipackagetype.md)|O tipo de pacote MSI. Os valores possíveis são: `perMachine`, `perUser`, `dualPurpose`.|
 |productName|Cadeia de caracteres|O nome do produto MSI.|
 |publicador|String|O editor MSI.|
@@ -55,7 +55,6 @@ Veja a seguir uma representação JSON do recurso.
   "publisher": "String"
 }
 ```
-
 
 
 

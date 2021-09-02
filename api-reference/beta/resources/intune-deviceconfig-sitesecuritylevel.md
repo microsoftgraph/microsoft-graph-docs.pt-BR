@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 5f3262e10bd482d9f1411542283504df766cf11e3cc89b988174c574e6a34b25
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 583fe94787b6cf420254835f11016dd2f03a651c
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54232689"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58796226"
 ---
 # <a name="sitesecuritylevel-enum-type"></a>Tipo denum siteSecurityLevel
 
@@ -26,12 +26,11 @@ Valores possíveis para o nível de segurança do site.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |userDefined|0|User Defined, default value, no intent.|
-|low|1 |Baixo.|
+|low|1|Baixo.|
 |mediumLow|2|Médio-baixo.|
-|medium|3 |Médio.|
+|medium|3|Médio.|
 |mediumHigh|4 |Médio-alto.|
 |high|5 |Alto.|
-
 
 
 

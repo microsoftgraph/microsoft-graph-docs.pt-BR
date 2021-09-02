@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 6098b7b9a675de6930701c9e6dba950cd6383e5f73596b074aee5cd32af0c7cd
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 640198171fd9b83c6522a8c8b07b84fa186657ab
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54219840"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58803234"
 ---
 # <a name="windowsprotectionstate-resource-type"></a>Tipo de recurso windowsProtectionState
 
@@ -32,15 +32,15 @@ Entidade de status de proteção de dispositivo.
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|Cadeia de caracteres|O Identificador exclusivo do objeto de status de proteção do dispositivo. Esta é a ID do dispositivo|
-|malwareProtectionEnabled|Boolean|O anti malware está habilitado ou não|
+|malwareProtectionEnabled|Boleano|O anti malware está habilitado ou não|
 |deviceState|[windowsDeviceHealthState](../resources/intune-devices-windowsdevicehealthstate.md)|Estado do computador (como verificação completa ou pendente ou reinicialização pendente etc.). Os possíveis valores são: `clean`, `fullScanPending`, `rebootPending`, `manualStepsPending`, `offlineScanPending`, `critical`.|
-|realTimeProtectionEnabled|Boolean|A proteção em tempo real está habilitada ou não?|
-|networkInspectionSystemEnabled|Boolean|Sistema de inspeção de rede habilitado ou não?|
-|quickScanOverdue|Boolean|Verificação rápida atrasada ou não?|
-|fullScanOverdue|Boolean|Verificação completa atrasada ou não?|
-|signatureUpdateOverdue|Boolean|Assinatura desa datada ou não?|
-|rebootRequired|Boolean|Reiniciar obrigatório ou não?|
-|fullScanRequired|Boolean|Verificação completa necessária ou não?|
+|realTimeProtectionEnabled|Booliano|A proteção em tempo real está habilitada ou não?|
+|networkInspectionSystemEnabled|Boleano|Sistema de inspeção de rede habilitado ou não?|
+|quickScanOverdue|Boleano|Verificação rápida atrasada ou não?|
+|fullScanOverdue|Boleano|Verificação completa atrasada ou não?|
+|signatureUpdateOverdue|Boleano|Assinatura desa datada ou não?|
+|rebootRequired|Boleano|Reiniciar obrigatório ou não?|
+|fullScanRequired|Boleano|Verificação completa necessária ou não?|
 |engineVersion|Cadeia de caracteres|Versão atual do mecanismo de proteção de ponto de extremidade|
 |signatureVersion|Cadeia de caracteres|Versão atual das definições de malware|
 |antiMalwareVersion|Cadeia de caracteres|Versão anti malware atual|
@@ -50,8 +50,8 @@ Entidade de status de proteção de dispositivo.
 |lastFullScanSignatureVersion|Cadeia de caracteres|Última versão de assinatura de verificação completa|
 |lastReportedDateTime|DateTimeOffset|Tempo de notificado do último status de saúde do dispositivo|
 |productStatus|[windowsDefenderProductStatus](../resources/intune-devices-windowsdefenderproductstatus.md)|Status do produto Windows Defender Antivírus. Os valores possíveis são: `noStatus` , , , , , , , , `serviceNotRunning` `serviceStartedWithoutMalwareProtection` `pendingFullScanDueToThreatAction` `pendingRebootDueToThreatAction` `pendingManualStepsDueToThreatAction` `avSignaturesOutOfDate` `asSignaturesOutOfDate` `noQuickScanHappenedForSpecifiedPeriod` `noFullScanHappenedForSpecifiedPeriod` `systemInitiatedScanInProgress` `systemInitiatedCleanInProgress` `samplesPendingSubmission` `productRunningInEvaluationMode` , `productRunningInNonGenuineMode` `productExpired` `offlineScanRequired` `serviceShutdownAsPartOfSystemShutdown` `threatRemediationFailedCritically` `threatRemediationFailedNonCritically` `noStatusFlagsSet` `platformOutOfDate` `platformUpdateInProgress` `platformAboutToBeOutdated` `signatureOrPlatformEndOfLifeIsPastOrIsImpending` `windowsSModeSignaturesInUseOnNonWin10SInstall`|
-|isVirtualMachine|Boolean|Indica se o dispositivo é uma máquina virtual.|
-|tamperProtectionEnabled|Boolean|Indica se o recurso Windows Defender proteção contra adulteração está habilitado.|
+|isVirtualMachine|Boleano|Indica se o dispositivo é uma máquina virtual.|
+|tamperProtectionEnabled|Boleano|Indica se o recurso Windows Defender proteção contra adulteração está habilitado.|
 
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|
@@ -92,7 +92,6 @@ Veja a seguir uma representação JSON do recurso.
   "tamperProtectionEnabled": true
 }
 ```
-
 
 
 

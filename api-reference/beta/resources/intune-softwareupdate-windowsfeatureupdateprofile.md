@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4327eabe30e6902694a7081787bdfe887b6d4c31
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 9fc087d72f6b2e5198ea42141be9914510175e1e
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58256711"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58793523"
 ---
 # <a name="windowsfeatureupdateprofile-resource-type"></a>Tipo de recurso windowsFeatureUpdateProfile
 
@@ -28,7 +28,7 @@ Windows Perfil de Atualização de Recursos
 |[Listar windowsFeatureUpdateProfiles](../api/intune-softwareupdate-windowsfeatureupdateprofile-list.md)|[Coleção windowsFeatureUpdateProfile](../resources/intune-softwareupdate-windowsfeatureupdateprofile.md)|Listar propriedades e relações dos [objetos windowsFeatureUpdateProfile.](../resources/intune-softwareupdate-windowsfeatureupdateprofile.md)|
 |[Obter windowsFeatureUpdateProfile](../api/intune-softwareupdate-windowsfeatureupdateprofile-get.md)|[windowsFeatureUpdateProfile](../resources/intune-softwareupdate-windowsfeatureupdateprofile.md)|Leia propriedades e relações do [objeto windowsFeatureUpdateProfile.](../resources/intune-softwareupdate-windowsfeatureupdateprofile.md)|
 |[Criar windowsFeatureUpdateProfile](../api/intune-softwareupdate-windowsfeatureupdateprofile-create.md)|[windowsFeatureUpdateProfile](../resources/intune-softwareupdate-windowsfeatureupdateprofile.md)|Crie um novo [objeto windowsFeatureUpdateProfile.](../resources/intune-softwareupdate-windowsfeatureupdateprofile.md)|
-|[Excluir windowsFeatureUpdateProfile](../api/intune-softwareupdate-windowsfeatureupdateprofile-delete.md)|Nenhum|Exclui um [windowsFeatureUpdateProfile](../resources/intune-softwareupdate-windowsfeatureupdateprofile.md).|
+|[Excluir windowsFeatureUpdateProfile](../api/intune-softwareupdate-windowsfeatureupdateprofile-delete.md)|Nenhum(a)|Exclui um [windowsFeatureUpdateProfile](../resources/intune-softwareupdate-windowsfeatureupdateprofile.md).|
 |[Atualizar windowsFeatureUpdateProfile](../api/intune-softwareupdate-windowsfeatureupdateprofile-update.md)|[windowsFeatureUpdateProfile](../resources/intune-softwareupdate-windowsfeatureupdateprofile.md)|Atualize as propriedades de um [objeto windowsFeatureUpdateProfile.](../resources/intune-softwareupdate-windowsfeatureupdateprofile.md)|
 |[atribuir ação](../api/intune-softwareupdate-windowsfeatureupdateprofile-assign.md)|Nenhuma|Ainda não documentado|
 
@@ -37,11 +37,11 @@ Windows Perfil de Atualização de Recursos
 |:---|:---|:---|
 |id|Cadeia de caracteres|O Identificador da entidade.|
 |displayName|Cadeia de caracteres|O nome de exibição do perfil.|
-|description|Cadeia de caracteres|A descrição do perfil especificado pelo usuário.|
+|descrição|Cadeia de caracteres|A descrição do perfil especificado pelo usuário.|
 |featureUpdateVersion|Cadeia de caracteres|A versão de atualização de recursos que será implantada nos dispositivos direcionados por esse perfil. A versão pode ser qualquer versão com suporte para o exemplo 1709, 1803 ou 1809 e assim por diante.|
 |createdDateTime|DateTimeOffset|A data em que o perfil foi criado.|
 |lastModifiedDateTime|DateTimeOffset|A data em que o perfil foi modificado pela última vez.|
-|roleScopeTagIds|String collection|Lista de Marcas de Escopo para essa entidade atualização de recursos.|
+|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de Marcas de Escopo para essa entidade atualização de recursos.|
 |deployableContentDisplayName|Cadeia de caracteres|Nome de exibição amigável do conteúdo implantável do perfil de atualização de qualidade|
 |endOfSupportDate|DateTimeOffset|A última data com suporte para uma atualização de recursos|
 
@@ -74,7 +74,6 @@ Veja a seguir uma representação JSON do recurso.
   "endOfSupportDate": "String (timestamp)"
 }
 ```
-
 
 
 

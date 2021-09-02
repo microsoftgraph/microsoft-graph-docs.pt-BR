@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: b8045b70b9d02aab7eee0b0769d85607e97561f9e00b8fd64044511af5af30e9
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 987d977c817044c987012e019207f8603ca5c387
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54193773"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58791190"
 ---
 # <a name="derivedcredentialprovidertype-enum-type"></a>tipo denum derivedCredentialProviderType
 
@@ -26,11 +26,10 @@ Tipo de provedor para Credenciais Derivadas.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |notConfigured|0|Nenhum provedor de credenciais derivado configurado.|
-|entrustDataCard|1 |Confia.|
+|entrustDataCard|1|Confia.|
 |purebred|2|Purebred - Agência de Sistemas de Informações de Defesa.|
-|xTec|3 |Xtec - AuthentX.|
+|xTec|3|Xtec - AuthentX.|
 |2016|4 |É uma grande insuces|
-
 
 
 

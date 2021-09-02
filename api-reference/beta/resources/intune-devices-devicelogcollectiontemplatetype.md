@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: fe2d51f8248fe70191d0b7581207e5dd1218b548ea82dfa83e0b22f07b2df404
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 165d12423ae4483ce410966711cda9650576cc43
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54224660"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58770900"
 ---
 # <a name="devicelogcollectiontemplatetype-enum-type"></a>Tipo denum deviceLogCollectionTemplateType
 
@@ -26,7 +26,6 @@ Enum para o tipo de modelo usado para coletar logs
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |predefinido|0|Modelo predefinido para o que será coletado|
-
 
 
 

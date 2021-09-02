@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 05d3ff594ceecd90d91c3d413d38d0828f3bfec4
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 2e06a28fbd41887373d5935b3bdaed89cd775eb8
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58266706"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58795884"
 ---
 # <a name="androidforworkappconfigurationschemaitem-resource-type"></a>Tipo de recurso androidForWorkAppConfigurationSchemaItem
 
@@ -27,7 +27,7 @@ Item de configuração único dentro de um esquema de configurações personaliz
 |:---|:---|:---|
 |schemaItemKey|Cadeia de caracteres|Chave exclusiva que o aplicativo usa para identificar o item|
 |displayName|Cadeia de caracteres|Nome legível por humanos|
-|description|Cadeia de caracteres|Descrição do que o item controla dentro do aplicativo|
+|descrição|Cadeia de caracteres|Descrição do que o item controla dentro do aplicativo|
 |defaultBoolValue|Booliano|Valor padrão para itens do tipo booliano, se especificado pelo desenvolvedor do aplicativo|
 |defaultIntValue|Int32|Valor padrão para itens do tipo inteiro, se especificado pelo desenvolvedor do aplicativo|
 |defaultStringValue|Cadeia de caracteres|Valor padrão para itens do tipo cadeia de caracteres, se especificado pelo desenvolvedor do aplicativo|
@@ -67,7 +67,6 @@ Veja a seguir uma representação JSON do recurso.
   ]
 }
 ```
-
 
 
 

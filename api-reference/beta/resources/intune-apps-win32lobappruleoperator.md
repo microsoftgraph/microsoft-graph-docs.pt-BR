@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 225cb550f92b50982c4e3ba0f44efd50637afcd3ac63cbde2915c337592fe38c
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 2c508f643ee955ce3004130dd78a9c6a0d6fa488
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54165802"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58790938"
 ---
 # <a name="win32lobappruleoperator-enum-type"></a>Tipo de número win32LobAppRuleOperator
 
@@ -26,13 +26,12 @@ Contém propriedades para o operador de detecção.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |notConfigured|0|Não configurado.|
-|equal|1 |Operador igual.|
+|equal|1|Operador igual.|
 |notEqual|2|Operador não igual.|
 |greaterThan|4 |Maior que o operador.|
 |greaterThanOrEqual|5 |Operador maior ou igual.|
 |lessThan|8 |Menos do que o operador.|
 |lessThanOrEqual|9 |Operador menor ou igual.|
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 60e78ee837702a1a131ee0abba46029186f4dfcfe4eab777eca4e5377defdb60
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: b3b6fdc86eed3043e3f95bd2947bc24dc35d5761
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54122660"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58797539"
 ---
 # <a name="deliveryoptimizationbandwidthbusinesshourslimit-resource-type"></a>tipo de recurso deliveryOptimizationBandwidthBusinessHoursLimit
 
@@ -49,7 +49,6 @@ Veja a seguir uma representação JSON do recurso.
   "bandwidthPercentageOutsideBusinessHours": 1024
 }
 ```
-
 
 
 

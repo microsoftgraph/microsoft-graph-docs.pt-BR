@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 00610ddd4e7c435f22cf10eb78a4ce3b44fd4898e7699055e78193463115c263
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 6eb5275d6b2c690f75b8ea5e72bb0bd9edab59a8
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54164185"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58795505"
 ---
 # <a name="windowsappidentifier-resource-type"></a>Tipo de recurso windowsAppIdentifier
 
@@ -46,7 +46,6 @@ Veja a seguir uma representação JSON do recurso.
   "windowsAppId": "String"
 }
 ```
-
 
 
 

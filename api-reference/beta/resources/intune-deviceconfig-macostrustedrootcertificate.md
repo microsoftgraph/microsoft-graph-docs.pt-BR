@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 7ff0368056e1bba879eba47e03d519cfdde7442bb04be5070df735f484a18c2c
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: e59402d32cfe1124c5df2b31873e7e3f4c558115
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54148194"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58789944"
 ---
 # <a name="macostrustedrootcertificate-resource-type"></a>Tipo de recurso macOSTrustedRootCertificate
 
@@ -31,7 +31,7 @@ Herda de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md
 |[Listar macOSTrustedRootCertificates](../api/intune-deviceconfig-macostrustedrootcertificate-list.md)|[Coleção macOSTrustedRootCertificate](../resources/intune-deviceconfig-macostrustedrootcertificate.md)|Listar propriedades e relações dos [objetos macOSTrustedRootCertificate.](../resources/intune-deviceconfig-macostrustedrootcertificate.md)|
 |[Obter macOSTrustedRootCertificate](../api/intune-deviceconfig-macostrustedrootcertificate-get.md)|[macOSTrustedRootCertificate](../resources/intune-deviceconfig-macostrustedrootcertificate.md)|Leia propriedades e relações do [objeto macOSTrustedRootCertificate.](../resources/intune-deviceconfig-macostrustedrootcertificate.md)|
 |[Criar macOSTrustedRootCertificate](../api/intune-deviceconfig-macostrustedrootcertificate-create.md)|[macOSTrustedRootCertificate](../resources/intune-deviceconfig-macostrustedrootcertificate.md)|Crie um novo [objeto macOSTrustedRootCertificate.](../resources/intune-deviceconfig-macostrustedrootcertificate.md)|
-|[Excluir macOSTrustedRootCertificate](../api/intune-deviceconfig-macostrustedrootcertificate-delete.md)|Nenhum|Exclui um [macOSTrustedRootCertificate](../resources/intune-deviceconfig-macostrustedrootcertificate.md).|
+|[Excluir macOSTrustedRootCertificate](../api/intune-deviceconfig-macostrustedrootcertificate-delete.md)|Nenhum(a)|Exclui um [macOSTrustedRootCertificate](../resources/intune-deviceconfig-macostrustedrootcertificate.md).|
 |[Atualizar macOSTrustedRootCertificate](../api/intune-deviceconfig-macostrustedrootcertificate-update.md)|[macOSTrustedRootCertificate](../resources/intune-deviceconfig-macostrustedrootcertificate.md)|Atualize as propriedades de [um objeto macOSTrustedRootCertificate.](../resources/intune-deviceconfig-macostrustedrootcertificate.md)|
 
 ## <a name="properties"></a>Propriedades
@@ -39,13 +39,13 @@ Herda de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md
 |:---|:---|:---|
 |id|Cadeia de caracteres|Chave da entidade. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|roleScopeTagIds|String collection|Lista de marcas de escopo para esta instância entity. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|supportsScopeTags|Boolean|Indica se a Configuração de Dispositivo subjacente dá suporte ou não à atribuição de marcas de escopo. A atribuição à propriedade ScopeTags não é permitida quando esse valor é falso e as entidades não estarão visíveis para usuários com escopo. Isso ocorre para políticas herdadas criadas no Silverlight e podem ser resolvidas excluindo e recriando a política no Portal do Azure. Essa propriedade é somente leitura. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de marcas de escopo para esta instância entity. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|supportsScopeTags|Boleano|Indica se a Configuração de Dispositivo subjacente dá suporte ou não à atribuição de marcas de escopo. A atribuição à propriedade ScopeTags não é permitida quando esse valor é falso e as entidades não estarão visíveis para usuários com escopo. Isso ocorre para políticas herdadas criadas no Silverlight e podem ser resolvidas excluindo e recriando a política no Portal do Azure. Essa propriedade é somente leitura. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|A aplicabilidade da edição do sistema operacional para esta Política. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|A regra de aplicabilidade da versão do sistema operacional para esta Política. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|A regra de aplicabilidade do modo de dispositivo para esta Política. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|DateTime em que o objeto foi criado. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|description|Cadeia de caracteres|O administrador forneceu a descrição da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|descrição|Cadeia de caracteres|O administrador forneceu a descrição da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |displayName|Cadeia de caracteres|O administrador forneceu o nome da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |versão|Int32|Versão da configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |trustedRootCertificate|Binário|Certificado Raiz Confiável.|
@@ -108,7 +108,6 @@ Veja a seguir uma representação JSON do recurso.
   "certFileName": "String"
 }
 ```
-
 
 
 

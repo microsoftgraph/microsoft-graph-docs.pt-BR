@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 1d6b248e9a366f8ad375f13d2da2d803e70a70b7306ea60e7150b2b4e48f59df
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 64d47543139ed2ec2935e7db3b0819233653f750
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54253002"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58807283"
 ---
 # <a name="devicemanagementconfigurationgroupsettinginstance-resource-type"></a>Tipo de recurso deviceManagementConfigurationGroupSettingInstance
 
@@ -266,7 +266,6 @@ Veja a seguir uma representação JSON do recurso.
   }
 }
 ```
-
 
 
 

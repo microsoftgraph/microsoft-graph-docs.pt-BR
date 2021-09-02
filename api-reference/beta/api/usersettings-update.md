@@ -5,12 +5,12 @@ author: jpettere
 localization_priority: Normal
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: f776bd5ac5dad802a8c977cbe32842e619c74434
-ms.sourcegitcommit: d586ddb253d27f9ccb621bd128f6a6b4b1933918
+ms.openlocfilehash: 72eb244cceeb5aa480baef1707877d31c2c69423
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53107757"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58783292"
 ---
 # <a name="update-settings"></a>Atualizar configurações
 
@@ -46,7 +46,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 PATCH /me/settings
 ```
 
-Solicitação com uma "id de usuário" ou "userPrincipalName" ficará acessível somente para o usuário ou um usuário com permissões User.ReadWrite.All. Para saber mais, confira [permissões](/graph/permissions-reference). 
+A solicitação com uma 'ID de usuário' ou 'userPrincipalName' só pode ser acessada pelo usuário ou por um usuário com as permissões User.ReadWrite.All. Para saber mais, consulte [Permissões](/graph/permissions-reference). 
 
 ```http
 PATCH /users/{id | userPrincipalName}/settings/
@@ -65,7 +65,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|contributionToContentDiscoveryDisabled|Booliano|De definir como true para desabilitar o acesso a documentos Office Delve para o usuário. Essa configuração reflete o estado de controle [em Office Delve](https://support.office.com/en-us/article/are-my-documents-safe-in-office-delve-f5f409a2-37ed-4452-8f61-681e5e1836f3?ui=en-US&rs=en-US&ad=US#bkmk_optout).|
+|contributionToContentDiscoveryDisabled|Booliano|De definir como true para desabilitar o acesso a documentos Office Delve para o usuário. Essa configuração reflete o estado de controle [em Office Delve](https://support.office.com/article/are-my-documents-safe-in-office-delve-f5f409a2-37ed-4452-8f61-681e5e1836f3?ui=en-US&rs=en-US&ad=US#bkmk_optout).|
 
 ## <a name="example"></a>Exemplo 
 

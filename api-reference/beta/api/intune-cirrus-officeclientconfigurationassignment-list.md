@@ -1,18 +1,18 @@
 ---
-title: Excluir windowsPhone81CompliancePolicy
-description: Exclui windowsPhone81CompliancePolicy.
-author: dougeby
+title: Listar officeClientConfigurationAssignments
+description: Listar propriedades e relações dos objetos officeClientConfigurationAssignment.
 localization_priority: Normal
+author: dougeby
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c9a24aa68631716959ac8344349673dabffb6a7f
+ms.openlocfilehash: 2de9a38686f65c77b96b60cc4ba72248679e3f85
 ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 08/31/2021
-ms.locfileid: "58790763"
+ms.locfileid: "58819018"
 ---
-# <a name="delete-windowsphone81compliancepolicy"></a>Excluir windowsPhone81CompliancePolicy
+# <a name="list-officeclientconfigurationassignments"></a>Listar officeClientConfigurationAssignments
 
 Namespace: microsoft.graph
 
@@ -20,16 +20,16 @@ Namespace: microsoft.graph
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Exclui [windowsPhone81CompliancePolicy](../resources/intune-deviceconfig-windowsphone81compliancepolicy.md).
+Listar propriedades e relações dos [objetos officeClientConfigurationAssignment.](../resources/intune-cirrus-officeclientconfigurationassignment.md)
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
+|Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|Delegada (conta corporativa ou de estudante)|**TODO: Determinar escopos **|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Aplicativo|**TODO: Determinar escopos **|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -37,7 +37,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 }
 -->
 ``` http
-DELETE /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
+GET /officeConfiguration/clientConfigurations/{officeClientConfigurationId}/assignments
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -50,20 +50,34 @@ DELETE /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um código de resposta `204 No Content`.
+Se tiver êxito, este método retornará um código de resposta e uma coleção de `200 OK` [objetos officeClientConfigurationAssignment](../resources/intune-cirrus-officeclientconfigurationassignment.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
 ### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
 ``` http
-DELETE https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
+GET https://graph.microsoft.com/beta/officeConfiguration/clientConfigurations/{officeClientConfigurationId}/assignments
 ```
 
 ### <a name="response"></a>Resposta
 Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 ``` http
-HTTP/1.1 204 No Content
+HTTP/1.1 200 OK
+Content-Type: application/json
+Content-Length: 274
+
+{
+  "value": [
+    {
+      "@odata.type": "#microsoft.graph.officeClientConfigurationAssignment",
+      "id": "804730f3-30f3-8047-f330-4780f3304780",
+      "target": {
+        "@odata.type": "microsoft.graph.officeConfigurationAssignmentTarget"
+      }
+    }
+  ]
+}
 ```
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b7887e72981a5a94eff98374becc81d81cafa2b23727c379b612d1d8995710b1
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 3875103a6ac0e347983b58b74d5be64e9181ec68
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54166285"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58785504"
 ---
 # <a name="create-sideloadingkey"></a>Criar sideLoadingKey
 
@@ -27,9 +27,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementServiceConfig.ReadWrite.All|
+|Delegado (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Application|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -56,7 +56,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar o sideLo
 |id|Cadeia de caracteres|ID exclusiva da chave de carregamento lateral.|
 |value|Cadeia de caracteres|Side Loading Key Value, it is 5x5 value, seperated by hiphens.|
 |displayName|Cadeia de caracteres|Side Loading Key Name displayed to the ITPro Admins.|
-|description|Cadeia de caracteres|Descrição da Chave de Carregamento lateral exibida para os administradores do ITPro..|
+|descrição|Cadeia de caracteres|Descrição da Chave de Carregamento lateral exibida para os administradores do ITPro..|
 |totalActivation|Int32|Side Loading Key Total Activation displayed to the ITPro Admins.|
 |lastUpdatedDateTime|Cadeia de caracteres|Side Loading Key Last Updated Date displayed to the ITPro Admins.|
 
@@ -101,7 +101,6 @@ Content-Length: 295
   "lastUpdatedDateTime": "Last Updated Date Time value"
 }
 ```
-
 
 
 

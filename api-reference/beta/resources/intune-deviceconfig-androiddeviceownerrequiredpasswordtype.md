@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: d5fdb65510bcd287494b3966ca00bbe7f25b0a2fd5720338030bc1bcf8c11a64
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 2e1576d82a3e4f967497ff49f76cb510eb4c39b2
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54183216"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58789965"
 ---
 # <a name="androiddeviceownerrequiredpasswordtype-enum-type"></a>tipo de número androidDeviceOwnerRequiredPasswordType
 
@@ -26,15 +26,14 @@ A política de Proprietário de Dispositivo Android exigia o tipo de senha.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |deviceDefault|0|Valor padrão do dispositivo, sem intenção.|
-|obrigatório|1 |Deve haver um conjunto de senhas, mas não há restrições ao tipo.|
+|obrigatório|1|Deve haver um conjunto de senhas, mas não há restrições ao tipo.|
 |numeric|2|Pelo menos numérico.|
-|numericComplex|3 |Pelo menos numérico sem sequências repetidas ou ordenadas.|
+|numericComplex|3|Pelo menos numérico sem sequências repetidas ou ordenadas.|
 |alfabético|4 |Pelo menos senha alfabética.|
 |alfanumérico|5 |Pelo menos senha alfanumérica|
 |alphanumericWithSymbols|6 |Pelo menos alfanumérico com símbolos.|
 |lowSecurityBiometric|7 |Senha de baixa biometria baseada em segurança necessária.|
 |customPassword|8 |Senha personalizada definida pelo administrador.|
-
 
 
 

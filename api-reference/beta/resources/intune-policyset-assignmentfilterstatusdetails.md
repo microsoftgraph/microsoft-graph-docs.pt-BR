@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d306c1b0d05e2418653e37737c33f52514be39c4
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: fb1df335c7fbf1c0a4c6e79150c56c920e80db87
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58266181"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58789555"
 ---
 # <a name="assignmentfilterstatusdetails-resource-type"></a>Tipo de recurso assignmentFilterStatusDetails
 
@@ -75,7 +75,6 @@ Veja a seguir uma representação JSON do recurso.
   ]
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 882d81125ba8313440854b3bca376061bc76ce4c022f90be023d4edd7e8da759
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: fd77a1c968374be8d9f9c0fe43ecb2765326ba12
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54200492"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58795498"
 ---
 # <a name="microsoftstoreforbusinessportalselectionoptions-enum-type"></a>tipo de número microsoftStoreForBusinessPortalSelectionOptions
 
@@ -26,9 +26,8 @@ Portal para o qual o administrador sincroniza Microsoft Store para Empresas apli
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |Nenhuma|0|Essa opção não está disponível para a conta|
-|companyPortal|1 |Portal da Empresa do Intune.|
+|companyPortal|1|Portal da Empresa do Intune.|
 |privateStore|2|Somente armazenamento particular MSFB.|
-
 
 
 

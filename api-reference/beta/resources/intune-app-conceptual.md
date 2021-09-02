@@ -4,12 +4,12 @@ description: Lista a API Graph microsoft para pontos de extremidade do Intune (R
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 3ab2c83a2aea69f91e46045e82f19eb975c56b0c
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 91855eb83eee7a1c541ec5cf3ab82f3946a13d44
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58266475"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58790189"
 ---
 # <a name="how-to-protect-your-company-app-data-with-microsoft-intune"></a>Como proteger dados de aplicativos corporativos com o Microsoft Intune
 
@@ -126,10 +126,17 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar políticas de 
 - [Tipo de supersedência de aplicativo móvel](intune-apps-mobileappsupersedencetype.md)
 - [Aplicativo contido móvel](intune-apps-mobilecontainedapp.md)
 - [Aplicativo LOB móvel](intune-apps-mobilelobapp.md)
+- [Status de check-in de cliente do Office](intune-cirrus-officeclientcheckinstatus.md)
+- [Configuração de Cliente do Office](intune-cirrus-officeclientconfiguration.md)
+- [Atribuição de configuração de cliente do Office](intune-cirrus-officeclientconfigurationassignment.md)
+- [Configuração do Office](intune-cirrus-officeconfiguration.md)
+- [Destino de atribuição de configuração do Office](intune-cirrus-officeconfigurationassignmenttarget.md)
+- [Destino de atribuição de grupo de configuração do Office](intune-cirrus-officeconfigurationgroupassignmenttarget.md)
 - [Office id do produto](intune-apps-officeproductid.md)
 - [Aplicativo do pacote Office](intune-apps-officesuiteapp.md)
 - [Nível de exibição do andamento da instalação do pacote Office](intune-apps-officesuiteinstallprogressdisplaylevel.md)
 - [Canal de atualização do Office](intune-apps-officeupdatechannel.md)
+- [Resumo de check-in de usuário do Office](intune-cirrus-officeusercheckinsummary.md)
 - [Estado do aplicativo resultante](intune-apps-resultantappstate.md)
 - [Detalhe do estado do aplicativo resultante](intune-apps-resultantappstatedetail.md)
 - [Certificado de assinatura de código da Symantec](intune-apps-symanteccodesigningcertificate.md)
@@ -173,6 +180,8 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar políticas de 
 - [Windows microsoft edge app](intune-apps-windowsmicrosoftedgeapp.md)
 - [Sistema operacional mínimo do Windows](intune-apps-windowsminimumoperatingsystem.md)
 - [Windows Mobile MSI](intune-apps-windowsmobilemsi.md)
+- [Windows configuração do cliente do office](intune-cirrus-windowsofficeclientconfiguration.md)
+- [Windows configuração de segurança do cliente do office](intune-cirrus-windowsofficeclientsecurityconfiguration.md)
 - [Informações de pacote do Windows](intune-apps-windowspackageinformation.md)
 - [Windows Phone 8.1 AppX](intune-apps-windowsphone81appx.md)
 - [Pacote AppX do Windows Phone 8.1](intune-apps-windowsphone81appxbundle.md)

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 6bb9a1c91311b984d4f6f1fa1635262645398f8548f5ab50e4f74ab1d65c95d4
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 1af7603bd81af7cb8d5c1a7312c99beafe0a8bf0
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54229624"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58791225"
 ---
 # <a name="mobileappdependencytype-enum-type"></a>Tipo de número mobileAppDependencyType
 
@@ -26,8 +26,7 @@ Indica o tipo de dependência associado a uma relação entre dois aplicativos m
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |detect|0|Indica que o aplicativo filho deve ser detectado antes de instalar o aplicativo pai.|
-|autoInstall|1 |Indica que o aplicativo filho deve ser instalado antes de instalar o aplicativo pai.|
-
+|autoInstall|1|Indica que o aplicativo filho deve ser instalado antes de instalar o aplicativo pai.|
 
 
 

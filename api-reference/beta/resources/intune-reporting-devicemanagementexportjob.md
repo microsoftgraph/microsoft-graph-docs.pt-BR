@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 943ce46c753a8cc28a3638f3b84faa324309d11271a5fa2cb94bfe506e70f567
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 29f56794b23a508e3ffecdf6d380ac918b469625
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54156083"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58784769"
 ---
 # <a name="devicemanagementexportjob-resource-type"></a>Tipo de recurso deviceManagementExportJob
 
@@ -28,7 +28,7 @@ Entidade que representa um trabalho para exportar um relatório
 |[Listar deviceManagementExportJobs](../api/intune-reporting-devicemanagementexportjob-list.md)|[Coleção deviceManagementExportJob](../resources/intune-reporting-devicemanagementexportjob.md)|Listar propriedades e relações dos objetos [deviceManagementExportJob.](../resources/intune-reporting-devicemanagementexportjob.md)|
 |[Obter deviceManagementExportJob](../api/intune-reporting-devicemanagementexportjob-get.md)|[deviceManagementExportJob](../resources/intune-reporting-devicemanagementexportjob.md)|Leia propriedades e relações do [objeto deviceManagementExportJob.](../resources/intune-reporting-devicemanagementexportjob.md)|
 |[Criar deviceManagementExportJob](../api/intune-reporting-devicemanagementexportjob-create.md)|[deviceManagementExportJob](../resources/intune-reporting-devicemanagementexportjob.md)|Crie um novo [objeto deviceManagementExportJob.](../resources/intune-reporting-devicemanagementexportjob.md)|
-|[Excluir deviceManagementExportJob](../api/intune-reporting-devicemanagementexportjob-delete.md)|Nenhum|Exclui um [deviceManagementExportJob](../resources/intune-reporting-devicemanagementexportjob.md).|
+|[Excluir deviceManagementExportJob](../api/intune-reporting-devicemanagementexportjob-delete.md)|Nenhum(a)|Exclui um [deviceManagementExportJob](../resources/intune-reporting-devicemanagementexportjob.md).|
 |[Atualizar deviceManagementExportJob](../api/intune-reporting-devicemanagementexportjob-update.md)|[deviceManagementExportJob](../resources/intune-reporting-devicemanagementexportjob.md)|Atualize as propriedades de [um objeto deviceManagementExportJob.](../resources/intune-reporting-devicemanagementexportjob.md)|
 
 ## <a name="properties"></a>Propriedades
@@ -37,7 +37,7 @@ Entidade que representa um trabalho para exportar um relatório
 |id|Cadeia de caracteres|Identificador exclusivo dessa entidade|
 |reportName|Cadeia de caracteres|Nome do relatório|
 |filter|Cadeia de caracteres|Filtros aplicados no relatório|
-|select|String collection|Colunas selecionadas no relatório|
+|select|Coleção de cadeias de caracteres|Colunas selecionadas no relatório|
 |formato|[deviceManagementReportFileFormat](../resources/intune-reporting-devicemanagementreportfileformat.md)|Formato do relatório exportado. Os valores possíveis são: `csv` e `pdf`.|
 |snapshotId|Cadeia de caracteres|Um instantâneo é um subconjunto identificável do conjuntos de dados representado pelo ReportName. Uma id sessionId ou CachedReportConfiguration pode ser usada aqui. Se uma sessionId for especificada, Filter, Select e OrderBy serão aplicados aos dados representados pela sessionId. Filter, Select e OrderBy não podem ser especificados juntamente com uma id CachedReportConfiguration.|
 |localizationType|[deviceManagementExportJobLocalizationType](../resources/intune-reporting-devicemanagementexportjoblocalizationtype.md)|Configura como o trabalho de exportação solicitado é localizado. Os valores possíveis são: `localizedValuesAsAdditionalColumn` e `replaceLocalizableValues`.|
@@ -75,7 +75,6 @@ Veja a seguir uma representação JSON do recurso.
   "expirationDateTime": "String (timestamp)"
 }
 ```
-
 
 
 

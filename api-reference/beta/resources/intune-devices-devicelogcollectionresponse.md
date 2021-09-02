@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: fa4bffe14538618e1338b87f107148422086931e1761e171eff999eaac070626
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: bf550298b3c7b74ccc2e4a0af38718b9f5be500a
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54244733"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58815047"
 ---
 # <a name="devicelogcollectionresponse-resource-type"></a>Tipo de recurso deviceLogCollectionResponse
 
@@ -28,7 +28,7 @@ Windows Entidade de solicitação do Conjunto de Log.
 |[Listar deviceLogCollectionResponses](../api/intune-devices-devicelogcollectionresponse-list.md)|[Coleção deviceLogCollectionResponse](../resources/intune-devices-devicelogcollectionresponse.md)|Listar propriedades e relações dos [objetos deviceLogCollectionResponse.](../resources/intune-devices-devicelogcollectionresponse.md)|
 |[Obter deviceLogCollectionResponse](../api/intune-devices-devicelogcollectionresponse-get.md)|[deviceLogCollectionResponse](../resources/intune-devices-devicelogcollectionresponse.md)|Leia propriedades e relações do [objeto deviceLogCollectionResponse.](../resources/intune-devices-devicelogcollectionresponse.md)|
 |[Criar deviceLogCollectionResponse](../api/intune-devices-devicelogcollectionresponse-create.md)|[deviceLogCollectionResponse](../resources/intune-devices-devicelogcollectionresponse.md)|Crie um novo [objeto deviceLogCollectionResponse.](../resources/intune-devices-devicelogcollectionresponse.md)|
-|[Excluir deviceLogCollectionResponse](../api/intune-devices-devicelogcollectionresponse-delete.md)|Nenhum|Exclui um [deviceLogCollectionResponse](../resources/intune-devices-devicelogcollectionresponse.md).|
+|[Excluir deviceLogCollectionResponse](../api/intune-devices-devicelogcollectionresponse-delete.md)|Nenhum(a)|Exclui um [deviceLogCollectionResponse](../resources/intune-devices-devicelogcollectionresponse.md).|
 |[Atualizar deviceLogCollectionResponse](../api/intune-devices-devicelogcollectionresponse-update.md)|[deviceLogCollectionResponse](../resources/intune-devices-devicelogcollectionresponse.md)|Atualize as propriedades de um [objeto deviceLogCollectionResponse.](../resources/intune-devices-devicelogcollectionresponse.md)|
 |[ação createDownloadUrl](../api/intune-devices-devicelogcollectionresponse-createdownloadurl.md)|String|Ainda não documentado|
 
@@ -43,7 +43,7 @@ Windows Entidade de solicitação do Conjunto de Log.
 |receivedDateTimeUTC|DateTimeOffset|DateTime a solicitação foi recebida|
 |initiatedByUserPrincipalName|Cadeia de caracteres|O UPN para quem iniciou a solicitação|
 |expirationDateTimeUTC|DateTimeOffset|DateTime da expiração dos logs|
-|tamanho|Duplo|O tamanho dos logs. Valores válidos -1,79769313486232E+308 a 1.79769313486232E+308|
+|size|Duplo|O tamanho dos logs. Valores válidos -1,79769313486232E+308 a 1.79769313486232E+308|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -70,7 +70,6 @@ Veja a seguir uma representação JSON do recurso.
   "size": "4.2"
 }
 ```
-
 
 
 
