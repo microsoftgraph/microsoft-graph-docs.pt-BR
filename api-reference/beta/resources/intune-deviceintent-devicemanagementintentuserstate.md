@@ -2,15 +2,15 @@
 title: Tipo de recurso deviceManagementIntentUserState
 description: Entidade que representa o estado do usuário para uma intenção
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: bd683b76a2641e9b3df6b7caee3e98fece063a3f
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 4eb108729302eab007eed5b04b2ea8fc584ce284
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58796219"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59009053"
 ---
 # <a name="devicemanagementintentuserstate-resource-type"></a>Tipo de recurso deviceManagementIntentUserState
 
@@ -28,7 +28,7 @@ Entidade que representa o estado do usuário para uma intenção
 |[Listar deviceManagementIntentUserStates](../api/intune-deviceintent-devicemanagementintentuserstate-list.md)|[Coleção deviceManagementIntentUserState](../resources/intune-deviceintent-devicemanagementintentuserstate.md)|Listar propriedades e relações dos [objetos deviceManagementIntentUserState.](../resources/intune-deviceintent-devicemanagementintentuserstate.md)|
 |[Obter deviceManagementIntentUserState](../api/intune-deviceintent-devicemanagementintentuserstate-get.md)|[deviceManagementIntentUserState](../resources/intune-deviceintent-devicemanagementintentuserstate.md)|Ler propriedades e relações do [objeto deviceManagementIntentUserState.](../resources/intune-deviceintent-devicemanagementintentuserstate.md)|
 |[Criar deviceManagementIntentUserState](../api/intune-deviceintent-devicemanagementintentuserstate-create.md)|[deviceManagementIntentUserState](../resources/intune-deviceintent-devicemanagementintentuserstate.md)|Crie um novo [objeto deviceManagementIntentUserState.](../resources/intune-deviceintent-devicemanagementintentuserstate.md)|
-|[Excluir deviceManagementIntentUserState](../api/intune-deviceintent-devicemanagementintentuserstate-delete.md)|Nenhum(a)|Exclui um [deviceManagementIntentUserState](../resources/intune-deviceintent-devicemanagementintentuserstate.md).|
+|[Excluir deviceManagementIntentUserState](../api/intune-deviceintent-devicemanagementintentuserstate-delete.md)|None|Exclui um [deviceManagementIntentUserState](../resources/intune-deviceintent-devicemanagementintentuserstate.md).|
 |[Atualizar deviceManagementIntentUserState](../api/intune-deviceintent-devicemanagementintentuserstate-update.md)|[deviceManagementIntentUserState](../resources/intune-deviceintent-devicemanagementintentuserstate.md)|Atualize as propriedades de [um objeto deviceManagementIntentUserState.](../resources/intune-deviceintent-devicemanagementintentuserstate.md)|
 
 ## <a name="properties"></a>Propriedades

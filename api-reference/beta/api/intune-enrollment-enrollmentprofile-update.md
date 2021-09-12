@@ -2,15 +2,15 @@
 title: Atualizar enrollmentProfile
 description: Atualize as propriedades de um objeto enrollmentProfile.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2223495f9be4ad67124cc576e0ee93501a00bd6e
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 6550856e07b0f883a5ea8ad02cae4de13eb8d45c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58794944"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59009767"
 ---
 # <a name="update-enrollmentprofile"></a>Atualizar enrollmentProfile
 
@@ -27,9 +27,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementServiceConfig.ReadWrite.All|
+|Delegada (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Aplicativo|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -55,8 +55,8 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [o enrol
 |:---|:---|:---|
 |id|Cadeia de caracteres|O GUID do objeto.|
 |displayName|Cadeia de caracteres|Nome do perfil|
-|descrição|Cadeia de caracteres|Descrição do perfil|
-|requiresUserAuthentication|Boleano|Indica se o perfil requer autenticação do usuário|
+|description|Cadeia de caracteres|Descrição do perfil|
+|requiresUserAuthentication|Booliano|Indica se o perfil requer autenticação do usuário|
 |configurationEndpointUrl|Cadeia de caracteres|URL do ponto de extremidade de configuração a ser usada para Registro|
 |enableAuthenticationViaCompanyPortal|Booliano|Indica a autenticação com o Assistente de Instalação da Apple em vez de Portal da Empresa.|
 |requireCompanyPortalOnSetupAssistantEnrolledDevices|Booliano|Indica que a Portal da Empresa é necessária em dispositivos inscritos pelo assistente de instalação|

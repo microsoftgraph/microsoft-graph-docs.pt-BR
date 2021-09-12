@@ -2,15 +2,15 @@
 title: tipo de número androidDeviceOwnerAppAutoUpdatePolicyType
 description: Valores possíveis do Proprietário do Dispositivo Android para estados da política de atualização automática do aplicativo do dispositivo.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: bc427cb78e3a008f1fb2cc856217648bbb670015
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 9dcb3b22bd1a58f846ea696cfe88566478814a58
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58779197"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59017559"
 ---
 # <a name="androiddeviceownerappautoupdatepolicytype-enum-type"></a>tipo de número androidDeviceOwnerAppAutoUpdatePolicyType
 

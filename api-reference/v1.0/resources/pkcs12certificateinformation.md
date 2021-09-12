@@ -2,15 +2,15 @@
 title: Tipo de recurso pkcs12CertificateInformation
 description: Representa as informações públicas de um certificado de cliente Pkcs12.
 author: nickgmicrosoft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: b6b0fe760be0fb67a92d99bbb53125cb79ad9204daf7484f5b8f2292f70a7fea
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 5b5374d65d462c3ea016b2fa19684f939851e748
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54235363"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59006996"
 ---
 # <a name="pkcs12certificateinformation-resource-type"></a>Tipo de recurso pkcs12CertificateInformation
 

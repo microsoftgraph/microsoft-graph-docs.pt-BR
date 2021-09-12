@@ -2,15 +2,15 @@
 title: Excluir complianceManagementPartner
 description: Exclui um complianceManagementPartner.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5298c029c23a3b763053e8a1e55221a8736e999c
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: a94ebf8f10a6bc1197237da8c421aa3300a7324c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58820559"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59009753"
 ---
 # <a name="delete-compliancemanagementpartner"></a>Excluir complianceManagementPartner
 

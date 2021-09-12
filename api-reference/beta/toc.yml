@@ -92,7 +92,7 @@ items:
         displayname: 'Migration, Azure AD Graph'
         items:
           - name: Visão geral
-            href: /graph/migrate-azure-ad-graph-planning-checklist?context=graph%252fapi%252fbeta
+            href: /graph/migrate-azure-ad-graph-overview
           - name: Lista de verificação para migração de aplicativos
             href: /graph/migrate-azure-ad-graph-planning-checklist?context=graph/api/beta
           - name: '1: Examinar as diferenças'
@@ -161,46 +161,90 @@ items:
         href: /graph/toolkit/overview?context=graph/api/beta
       - name: Introdução
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: /graph/toolkit/get-started/overview?context=graph/api/beta
-          - name: Criar um aplicativo Web (JavaScript)
+          - name: /graph/toolkit para React
+            href: /graph/toolkit/get-started/mgt-react?context=graph/api/beta
+          - name: /graph/toolkit para SPFx
+            href: /graph/toolkit/get-started/mgt-spfx?context=graph/api/beta
+      - name: Desenvolver seu primeiro aplicativo
+        items:
+          - name: Registrar um aplicativo do Azure AD
+            href: /graph/toolkit/get-started/add-aad-app-registration?context=graph/api/beta
+          - name: Criar um aplicativo web (JavaScript)
             href: /graph/toolkit/get-started/build-a-web-app?context=graph/api/beta
+          - name: Criar um aplicativo web (React)
+            href: /graph/toolkit/get-started/use-/graph/toolkit-with-react?context=graph/api/beta
+          - name: Criar um aplicativo web (Angular)
+            href: /graph/toolkit/get-started/use-/graph/toolkit-with-angular?context=graph/api/beta
           - name: Criar uma web part do Microsoft Office SharePoint Online
             href: /graph/toolkit/get-started/build-a-sharepoint-web-part?context=graph/api/beta
-          - name: Criar uma guia do Microsoft Teams
+          - name: Criar uma Teams guia
             href: /graph/toolkit/get-started/build-a-microsoft-teams-tab?context=graph/api/beta
-          - name: Usar o kit de ferramentas com reagir
-            href: /graph/toolkit/get-started/use-toolkit-with-react?context=graph/api/beta
-          - name: Usar o kit de ferramentas com o angular
-            href: /graph/toolkit/get-started/use-toolkit-with-angular?context=graph/api/beta
+          - name: Criar uma Teams com SSO
+            href: /graph/toolkit/get-started/build-a-microsoft-teams-sso-tab?context=graph/api/beta
+          - name: Criar um aplicativo Electron
+            href: /graph/toolkit/get-started/build-an-electron-app?context=graph/api/beta
+      - name: Provedores
+        items:
+          - name: Usando os provedores
+            href: /graph/toolkit/providers/providers?context=graph/api/beta
+          - name: Provedor MSAL
+            href: /graph/toolkit/providers/msal?context=graph/api/beta
+          - name: Provedor MSAL2
+            href: /graph/toolkit/providers/msal2?context=graph/api/beta
+          - name: Provedor do SharePoint
+            href: /graph/toolkit/providers/sharepoint?context=graph/api/beta
+          - name: Teams provedor
+            href: /graph/toolkit/providers/teams?context=graph/api/beta
+          - name: Teams Provedor MSAL2
+            href: /graph/toolkit/providers/teams-msal2?context=graph/api/beta
+          - name: Provedor de Electron
+            href: /graph/toolkit/providers/electron?context=graph/api/beta
+          - name: Provedor de proxy
+            href: /graph/toolkit/providers/proxy?context=graph/api/beta
+          - name: Provedor personalizado
+            href: /graph/toolkit/providers/custom?context=graph/api/beta
       - name: Componentes
         items:
           - name: Logon
             href: /graph/toolkit/components/login?context=graph/api/beta
+          - name: Obter
+            href: /graph/toolkit/components/get?context=graph/api/beta
           - name: Pessoa
             href: /graph/toolkit/components/person?context=graph/api/beta
           - name: Pessoas
             href: /graph/toolkit/components/people?context=graph/api/beta
+          - name: Cartão pessoal
+            href: /graph/toolkit/components/person-card?context=graph/api/beta
+          - name: Seletor de pessoas
+            href: /graph/toolkit/components/people-picker?context=graph/api/beta
+          - name: Seletor de canal do Teams
+            href: /graph/toolkit/components/teams-channel-picker?context=graph/api/beta
           - name: Agenda
             href: /graph/toolkit/components/agenda?context=graph/api/beta
-          - name: Tarefas
+          - name: Tarefas do Planner
             href: /graph/toolkit/components/tasks?context=graph/api/beta
-      - name: Provedores
+          - name: Tarefas pendentes
+            href: /graph/toolkit/components/todo?context=graph/api/beta
+          - name: Arquivo
+            href: /graph/toolkit/components/file?context=graph/api/beta
+          - name: Lista de arquivos
+            href: /graph/toolkit/components/file-list?context=graph/api/beta
+      - name: Personalizar componentes
         items:
-          - name: Usando os provedores
-            href: /graph/toolkit/providers?context=graph/api/beta
-          - name: Provedor MSAL
-            href: /graph/toolkit/providers/msal?context=graph/api/beta
-          - name: Provedor do SharePoint
-            href: /graph/toolkit/providers/sharepoint?context=graph/api/beta
-          - name: Provedor do Microsoft Teams
-            href: /graph/toolkit/providers/teams?context=graph/api/beta
-          - name: Provedor personalizado
-            href: /graph/toolkit/providers/custom?context=graph/api/beta
-      - name: Componentes de estilização
-        href: /graph/toolkit/style?context=graph/api/beta
-      - name: Componentes de modelagem
-        href: /graph/toolkit/templates?context=graph/api/beta
+          - name: Componentes de estilização
+            href: /graph/toolkit/customize-components/style?context=graph/api/beta
+          - name: Componentes de modelagem
+            href: /graph/toolkit/customize-components/templates?context=graph/api/beta
+          - name: Manipulando eventos
+            href: /graph/toolkit/customize-components/events?context=graph/api/beta
+          - name: Cache de chamadas do Microsoft Graph em componentes
+            href: /graph/toolkit/customize-components/cache?context=graph/api/beta
+          - name: Localizando componentes
+            href: /graph/toolkit/customize-components/localization?context=graph/api/beta
+          - name: Suporte da direita para a esquerda
+            href: /graph/toolkit/customize-components/right-to-left?context=graph/api/beta
   - name: Recursos
     items:
       - name: Práticas recomendadas
@@ -489,7 +533,7 @@ items:
                 href: api/profile-get.md
               - name: Excluir perfil do usuário
                 href: api/profile-delete.md
-          - name: Teamwork
+          - name: Trabalho em equipe
             items:
               - name: Aplicativo instalado
                 href: resources/teamsappinstallation.md
@@ -1413,6 +1457,10 @@ items:
                     href: api/participant-muteall.md
                   - name: Convidar participantes
                     href: api/participant-invite.md
+                  - name: Iniciar música de espera
+                    href: api/participant-startholdmusic.md
+                  - name: Parar música de espera
+                    href: api/participant-stopholdmusic.md
               - name: Alterar função de compartilhamento de tela
                 href: api/call-changescreensharingrole.md
               - name: Desmute application
@@ -1563,6 +1611,21 @@ items:
                     href: api/ediscovery-case-post-reviewsets.md
                   - name: Obter
                     href: api/ediscovery-reviewset-get.md
+              - name: Resumo do conjunto de consulta
+                href: resources/ediscovery-reviewsetquery.md
+                items:
+                  - name: Listar
+                    href: api/ediscovery-reviewsetquery-list.md
+                  - name: Criar
+                    href: api/ediscovery-reviewsetquery-post.md
+                  - name: Obter
+                    href: api/ediscovery-reviewsetquery-get.md
+                  - name: Atualizar
+                    href: api/ediscovery-reviewsetquery-update.md
+                  - name: Excluir
+                    href: api/ediscovery-reviewsetquery-delete.md
+                  - name: Apply tags
+                    href: api/ediscovery-reviewsetquery-applytags.md
               - name: Coleção fonte
                 href: resources/ediscovery-sourcecollection.md
                 items:
@@ -1607,21 +1670,6 @@ items:
                     href: api/ediscovery-tag-childtags.md
                   - name: Listar marcas como hierarquia
                     href: api/ediscovery-tag-ashierarchy.md
-              - name: Resumo do conjunto de consulta
-                href: resources/ediscovery-reviewsetquery.md
-                items:
-                  - name: Listar
-                    href: api/ediscovery-reviewsetquery-list.md
-                  - name: Criar
-                    href: api/ediscovery-reviewsetquery-post.md
-                  - name: Obter
-                    href: api/ediscovery-reviewsetquery-get.md
-                  - name: Atualizar
-                    href: api/ediscovery-reviewsetquery-update.md
-                  - name: Excluir
-                    href: api/ediscovery-reviewsetquery-delete.md
-                  - name: Apply tags
-                    href: api/ediscovery-reviewsetquery-applytags.md
       - name: Experiências entre dispositivos
         displayName: Project Rome
         items:
@@ -9624,6 +9672,14 @@ items:
                     href: api/cloudpc-reprovision.md
                   - name: Período de carência final
                     href: api/cloudpc-endgraceperiod.md
+                  - name: Ação remota de reprovisionamento
+                    href: api/manageddevice-reprovisioncloudpc.md
+                  - name: Ação remota de reprovisionamento em massa
+                    href: api/manageddevice-bulkreprovisioncloudpc.md
+                  - name: Resize a ação remota
+                    href: api/manageddevice-resizecloudpc.md
+                  - name: Obter resultados de ação remota
+                    href: api/manageddevice-getcloudpcremoteactionresults.md
               - name: Imagem do dispositivo de computador na nuvem
                 href: resources/cloudpcdeviceimage.md
                 items:
@@ -11079,6 +11135,15 @@ items:
                         href: api/microsoftauthenticatorauthenticationmethod-get.md
                       - name: Excluir
                         href: api/microsoftauthenticatorauthenticationmethod-delete.md
+                  - name: Token DE TOKEN DE TOKEN DE SOFTWARE
+                    href: resources/softwareOathAuthenticationMethod.md
+                    items:
+                      - name: Listar
+                        href: api/authentication-list-softwareoathmethods.md
+                      - name: Obter
+                        href: api/softwareOathAuthenticationMethod-get.md
+                      - name: Excluir
+                        href: api/softwareOathAuthenticationMethod-delete.md
                   - name: Microsoft Authenticator Senha Telefone Sign-In (preterido)
                     href: resources/passwordlessmicrosoftauthenticatorauthenticationmethod.md
                     items:
@@ -12144,9 +12209,9 @@ items:
                 items:
                   - name: Privileged Identity Management
                     href: resources/privilegedidentitymanagement-root.md
-                  - name: AD do Azure
+                  - name: Azure AD (preterido))
                     items:
-                      - name: AD do Azure
+                      - name: Microsoft Azure AD
                         href: resources/privilegedidentitymanagement-directory.md
                       - name: Função com privilégios
                         href: resources/privilegedrole.md
@@ -13312,7 +13377,7 @@ items:
                     href: api/reportroot-getyammergroupsactivitygroupcounts.md
                   - name: Obter contagens de atividades
                     href: api/reportroot-getyammergroupsactivitycounts.md
-      - name: Pesquisar
+      - name: Pesquisa
         displayname: Microsoft Search API
         items:
           - name: Consulta

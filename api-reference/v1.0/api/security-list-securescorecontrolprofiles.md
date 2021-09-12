@@ -1,22 +1,22 @@
 ---
 title: Listar secureScoreControlProfiles
-description: Recupere as propriedades e os relacionamentos de um objeto secureScoreControlProfiles.
+description: Recupere as propriedades e as relações de um objeto secureScoreControlProfiles.
 author: preetikr
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: b0b2fea39c8fb4a9bdcb8bc3d16a3273ac8eb8ef
-ms.sourcegitcommit: 8ed1280dc0a4f04075d32feac00003a30a2ad9a8
+ms.openlocfilehash: 3631c62883cfc12e963c77969f771235e241febd
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48330183"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59007429"
 ---
 # <a name="list-securescorecontrolprofiles"></a>Listar secureScoreControlProfiles
 
 Namespace: microsoft.graph
 
-Recupere as propriedades e os relacionamentos de um objeto [secureScoreControlProfiles](../resources/securescorecontrolprofile.md) .
+Recupere as propriedades e as relações de [um objeto secureScoreControlProfiles.](../resources/securescorecontrolprofile.md)
 
 ## <a name="permissions"></a>Permissões
 
@@ -59,7 +59,7 @@ Não forneça um corpo de solicitação para esse método. O corpo da solicitaç
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos **secureScoreControlProfiles** no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta `200 OK` e uma coleção de objetos **secureScoreControlProfiles** no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 

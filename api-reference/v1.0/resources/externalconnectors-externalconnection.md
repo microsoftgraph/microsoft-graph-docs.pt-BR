@@ -2,15 +2,15 @@
 title: Tipo de recurso externalConnection
 description: Uma conexão é um contêiner lógico para seu conteúdo externo no Microsoft Graph
 author: mecampos
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: beb0a9b424f1207a7cf378e6bbb17c747ca68ca50617381766ee4dc8d5232828
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 1d47af18cc6869b53c6356df9b2bf0563a64655c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54180856"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59007219"
 ---
 # <a name="externalconnection-resource-type"></a>Tipo de recurso externalConnection
 
@@ -43,7 +43,7 @@ Um contêiner lógico para adicionar conteúdo de uma fonte externa à Microsoft
 |:---|:---|:---|
 |items|[Coleção microsoft.graph.externalConnectors.externalItem](../resources/externalconnectors-externalitem.md)|Somente leitura. Anulável.|
 |operations|[coleção microsoft.graph.externalConnectors.connectionOperation](../resources/externalconnectors-connectionoperation.md)|Somente leitura. Anulável.|
-|schema|[microsoft.graph.externalConnectors.schema](../resources/externalconnectors-schema.md)|Somente leitura. Anulável.|
+|esquema|[microsoft.graph.externalConnectors.schema](../resources/externalconnectors-schema.md)|Somente leitura. Anulável.|
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.

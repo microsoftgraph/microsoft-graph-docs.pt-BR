@@ -2,15 +2,15 @@
 title: Get primaryChannel
 description: Recupere a propriedade de navegação de uma equipe que permita acesso ao seu canal Geral padrão.
 author: nkramer
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: d29107dc8739ad64a35ff675ef685aa9e7ea9215
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: d1245bb70f2f92278bc3a3c2d5db4decb5d9b739
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52055698"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59007425"
 ---
 # <a name="get-primarychannel"></a>Get primaryChannel
 

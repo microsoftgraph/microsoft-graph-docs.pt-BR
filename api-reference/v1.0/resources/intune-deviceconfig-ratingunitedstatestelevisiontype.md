@@ -2,15 +2,15 @@
 title: tipo de número ratingUnitedStatesTelevisionType
 description: Rótulos de classificação de conteúdo de TV nos Estados Unidos
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 4a1d0cf70575768a2ce4f9af0a8947c4f7c1c39113719f7f7c8c1b05f5885aa2
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 8d1a557fc38765cdbfb023727c377e041b37c167
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54202298"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59007037"
 ---
 # <a name="ratingunitedstatestelevisiontype-enum-type"></a>tipo de número ratingUnitedStatesTelevisionType
 

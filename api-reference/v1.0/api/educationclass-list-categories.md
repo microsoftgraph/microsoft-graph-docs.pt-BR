@@ -2,15 +2,15 @@
 title: Listar assignmentCategories
 description: Recupere uma lista de objetos de categoria.
 author: mmast-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 3d16806c748715410a2f3ed3d232feb171732f3f
-ms.sourcegitcommit: 1e9a53e7b8e67349288f5cfbabe8355de83817b0
+ms.openlocfilehash: 1412c4ce0d83f6fff11a2906cdeccb5915227440
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/17/2021
-ms.locfileid: "58367265"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59008381"
 ---
 # <a name="list-assignmentcategories"></a>Listar assignmentCategories
 

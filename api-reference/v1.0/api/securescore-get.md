@@ -1,22 +1,22 @@
 ---
 title: Obter secureScore
-description: Recupere as propriedades e os relacionamentos de um objeto secureScore.
+description: Recupere as propriedades e as relações de um objeto secureScore.
 author: preetikr
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: 95cff85f94e8f7df96773ee727a0b2097f78d4cb
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 5f9f0b7dd1c008959b0124c86dd4559f01db233a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48025498"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59007534"
 ---
 # <a name="get-securescore"></a>Obter secureScore
 
 Namespace: microsoft.graph
 
-Recupere as propriedades e os relacionamentos de um objeto [secureScore](../resources/securescore.md) .
+Recupere as propriedades e as relações de um [objeto secureScore.](../resources/securescore.md)
 
 ## <a name="permissions"></a>Permissões
 
@@ -48,7 +48,7 @@ Não forneça um corpo de solicitação para esse método. O corpo da solicitaç
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto **secureScore** no corpo da resposta. Se um código de status diferente de 2xx ou 404 for retornado de um provedor ou se um provedor expirar, a resposta será um código de status `206 Partial Content` com a resposta do provedor em um cabeçalho de aviso. Para obter mais informações, consulte as [respostas de erro da API de segurança do Microsoft Graph](../resources/security-error-codes.md).
+Se tiver êxito, este método retornará um código `200 OK` de resposta e um objeto **secureScore** no corpo da resposta. Se um código de status diferente de 2xx ou 404 for retornado de um provedor ou se um provedor expirar, a resposta será um código de status `206 Partial Content` com a resposta do provedor em um cabeçalho de aviso. Para obter mais informações, consulte as [respostas de erro da API de segurança do Microsoft Graph](../resources/security-error-codes.md).
 
 ## <a name="example"></a>Exemplo
 

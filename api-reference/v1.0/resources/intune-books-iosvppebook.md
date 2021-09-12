@@ -2,15 +2,15 @@
 title: Tipo de recurso iosVppEBook
 description: Uma classe que contém as propriedades do livro eletrônico Vpp iOS.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 2809e9f61bf81a98d8b6c9db8baa53cb26b9c42365cc9948a75b9855f23582a1
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 256fe5ce3648de9e86d68eaa5d24741178fcb76a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54180744"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59007191"
 ---
 # <a name="iosvppebook-resource-type"></a>Tipo de recurso iosVppEBook
 

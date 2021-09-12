@@ -2,15 +2,15 @@
 title: Listar permissionGrants de um grupo
 description: Recuperar permissionGrants de um grupo.
 author: akjo
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 1f0b26b455a004192c329bf26804631c13fed1ce
-ms.sourcegitcommit: b5fbb1a715e3479bdd095ef00deb0c932eafc328
+ms.openlocfilehash: 27da714bb76fec49801e7b44210fc85c1a620ab0
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/28/2021
-ms.locfileid: "53162179"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59008129"
 ---
 # <a name="list-permissiongrants-of-a-group"></a>Listar permissionGrants de um grupo
 

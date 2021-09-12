@@ -1,16 +1,16 @@
 ---
 title: Listar membros de uma educationClass
 description: Recupere os professores e alunos de uma aula. Se o token delegado for usado, os membros poderão ser vistos apenas por outros membros da aula.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: eadc2f00fee83f3663ab983118f92ce84f8cc607
-ms.sourcegitcommit: 34891a1c601976166958be1aa04bab5936592b44
+ms.openlocfilehash: 90a38dd2b1beda22e18d0671b787cac3e666fe07
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52232088"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59008397"
 ---
 # <a name="list-members-of-an-educationclass"></a>Listar membros de uma educationClass
 
@@ -23,7 +23,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)                         |
 | :------------------------------------- | :------------------------------------------------------------------ |
-| Delegado (conta corporativa ou de estudante)     | EduRoster.ReadBasic                                                 |
+| Delegada (conta corporativa ou de estudante)     | EduRoster.ReadBasic                                                 |
 | Delegado (conta pessoal da Microsoft) | Sem suporte                                                       |
 | Aplicativo                            | EduRoster.Read.All, EduRoster.ReadWrite.All mais Member.Read.Hidden |
 

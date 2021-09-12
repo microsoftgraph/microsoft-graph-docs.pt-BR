@@ -2,15 +2,15 @@
 title: Tipo de recurso groupPolicyDefinition
 description: A entidade descreve todas as informações sobre uma única política de grupo.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9e990fa6de4792f9ebe28e2e43f11a67321a9231
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 465ac4aa679ea0be5c5bc4576e5bcac673480b95
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58790868"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59009011"
 ---
 # <a name="grouppolicydefinition-resource-type"></a>Tipo de recurso groupPolicyDefinition
 
@@ -34,15 +34,15 @@ A entidade descreve todas as informações sobre uma única política de grupo.
 |classType|[groupPolicyDefinitionClassType](../resources/intune-grouppolicy-grouppolicydefinitionclasstype.md)|Identifica o tipo de grupos aos qual a política pode ser aplicada. Os valores possíveis são: `user` e `machine`.|
 |displayName|Cadeia de caracteres|O nome da política localizada.|
 |explainText|Cadeia de caracteres|A explicação localizada ou o texto de ajuda associado à política. O valor padrão é vazio.|
-|categoryPath|Cadeia de caracteres|O caminho de categoria completa localizado para a política.|
+|categoryPath|String|O caminho de categoria completa localizado para a política.|
 |supportedOn|Cadeia de caracteres|Cadeia de caracteres localizada usada para especificar qual versão do sistema operacional ou aplicativo é afetada pela política.|
 |policyType|[groupPolicyType](../resources/intune-grouppolicy-grouppolicytype.md)|Especifica o tipo de política de grupo. Os valores possíveis são: `admxBacked` e `admxIngested`.|
-|hasRelatedDefinitions|Boleano|Significa se há ou não definições relacionadas a essa definição|
+|hasRelatedDefinitions|Booliano|Significa se há ou não definições relacionadas a essa definição|
 |groupPolicyCategoryId|Guid|A id de categoria da categoria pai|
-|minDeviceCspVersion|Cadeia de caracteres|Versão mínima necessária do CSP para a configuração do dispositivo nesta definição|
+|minDeviceCspVersion|String|Versão mínima necessária do CSP para a configuração do dispositivo nesta definição|
 |minUserCspVersion|Cadeia de caracteres|Versão mínima necessária do CSP para configuração do usuário nesta definição|
 |versão|String|Definindo a versão de definição|
-|id|Cadeia de caracteres|Chave da entidade.|
+|id|String|Chave da entidade.|
 |lastModifiedDateTime|DateTimeOffset|A data e a hora em que a entidade foi modificada pela última vez.|
 
 ## <a name="relationships"></a>Relações

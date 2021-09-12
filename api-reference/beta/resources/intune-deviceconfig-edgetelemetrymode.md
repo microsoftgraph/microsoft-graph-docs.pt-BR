@@ -2,15 +2,15 @@
 title: Tipo denum edgeTelemetryMode
 description: Tipo de dados de navegação enviados para Microsoft 365 análise
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: c6348746877f20bfab2ce019e37e9a014182235e
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 0e81e7ccb58db94851e2c56b269dc25050a8c35d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58805742"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59009172"
 ---
 # <a name="edgetelemetrymode-enum-type"></a>Tipo denum edgeTelemetryMode
 

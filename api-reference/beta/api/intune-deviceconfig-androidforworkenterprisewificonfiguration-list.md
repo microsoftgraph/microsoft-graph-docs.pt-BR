@@ -2,15 +2,15 @@
 title: Listar androidForWorkEnterpriseWiFiConfigurations
 description: Listar propriedades e relações dos objetos androidForWorkEnterpriseWiFiConfiguration.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e5cbdb9d8a44c58d97e5f63952df9d5cc0533cb5
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 8c92d245c8846bd6320002e0be8192fa788cc144
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58819329"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59010271"
 ---
 # <a name="list-androidforworkenterprisewificonfigurations"></a>Listar androidForWorkEnterpriseWiFiConfigurations
 

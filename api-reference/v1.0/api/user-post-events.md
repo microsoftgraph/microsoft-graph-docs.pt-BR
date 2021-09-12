@@ -1,16 +1,16 @@
 ---
 title: Criar evento
 description: Crie um evento no calendário especificado ou no calendário padrão do usuário.
-localization_priority: Priority
+ms.localizationpriority: high
 doc_type: apiPageType
 author: harini84
 ms.prod: outlook
-ms.openlocfilehash: 8900708ae5d22ef658ec8d5ea9dc6f9c6b798b7c
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 320ddb3c2d3dbf5f25f185ed2565f2dce057be34
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52038730"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59007447"
 ---
 # <a name="create-event"></a>Criar evento
 
@@ -553,7 +553,7 @@ Content-type: application/json
 
 No corpo da solicitação, forneça uma representação JSON do objeto [event](../resources/event.md).
 #### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto de resposta exibido aqui pode ser encurtado para legibilidade.
+Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser reduzido para facilitar a leitura.
 <!-- {
   "blockType": "response",
   "name": "create_event_recurring",

@@ -2,15 +2,15 @@
 author: swapnil1993
 title: tipo de recurso hyperlinkOrPictureColumn
 description: O recurso hyperlinkOrPictureColumn indica que a coluna contém dados de URL que podem ser uma autenticação ou uma imagem que serve como um hiperlink.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: 5687731549681dbffbf500c665581ef8097e3e23
-ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
+ms.openlocfilehash: 093ec12e6920c74ccbef942f18493602d785ee9f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58696490"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59007198"
 ---
 # <a name="hyperlinkorpicturecolumn-resource-type"></a>tipo de recurso hyperlinkOrPictureColumn
 

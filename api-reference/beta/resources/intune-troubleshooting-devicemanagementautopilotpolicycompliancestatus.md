@@ -2,15 +2,15 @@
 title: tipo de número deviceManagementAutopilotPolicyComplianceStatus
 description: Ainda não documentado
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 6552606389905bc1e44bad6d7f8ca3689a6e2120
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 8654e846eafed1c08863c71a4c44a0068c98e489
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58255980"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59017118"
 ---
 # <a name="devicemanagementautopilotpolicycompliancestatus-enum-type"></a>tipo de número deviceManagementAutopilotPolicyComplianceStatus
 
@@ -24,9 +24,9 @@ Ainda não documentado
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |desconhecido|0|Ainda não documentado|
-|compatível|1 |Ainda não documentado|
+|compatível|1|Ainda não documentado|
 |instalado|2|Ainda não documentado|
-|notCompliant|3 |Ainda não documentado|
+|notCompliant|3|Ainda não documentado|
 |notInstalled|4 |Ainda não documentado|
 |erro|5 |Ainda não documentado|
 

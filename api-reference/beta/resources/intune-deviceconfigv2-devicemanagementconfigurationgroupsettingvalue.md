@@ -2,15 +2,15 @@
 title: Tipo de recurso deviceManagementConfigurationGroupSettingValue
 description: Valor do GroupSetting
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9da12cea41f19aff735cb4b3955affc8900c0490
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 163ed7f0dedcf3043a4b6b5eee83f0ffed1bd5aa
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58816925"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59009060"
 ---
 # <a name="devicemanagementconfigurationgroupsettingvalue-resource-type"></a>Tipo de recurso deviceManagementConfigurationGroupSettingValue
 

@@ -1,22 +1,22 @@
 ---
 title: Obter secureScoreControlProfile
-description: Recupere as propriedades e os relacionamentos de um objeto secureScoreControlProfile.
+description: Recupere as propriedades e as relações de um objeto secureScoreControlProfile.
 author: preetikr
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: 78fc101ee08aec939ec8eb97240fccb5149a1a66
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 722380b389c0fc93da42d99063e4b63d4966ff86
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48601628"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59007527"
 ---
 # <a name="get-securescorecontrolprofile"></a>Obter secureScoreControlProfile
 
 Namespace: microsoft.graph
 
-Recupere as propriedades e os relacionamentos de um objeto [securescorecontrolprofile](../resources/securescorecontrolprofile.md) .
+Recupere as propriedades e as relações de [um objeto securescorecontrolprofile.](../resources/securescorecontrolprofile.md)
 
 ## <a name="permissions"></a>Permissões
 
@@ -48,7 +48,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto **secureScoreControlProfile** no corpo da resposta. Se um código de status diferente de 2xx ou 404 for retornado de um provedor ou se um provedor expirar, a resposta será um código de status `206 Partial Content` com a resposta do provedor em um cabeçalho de aviso. Para obter mais informações, consulte as [respostas de erro da API de segurança do Microsoft Graph](../resources/security-error-codes.md).
+Se tiver êxito, este método retornará um código de resposta e um `200 OK` **objeto secureScoreControlProfile** no corpo da resposta. Se um código de status diferente de 2xx ou 404 for retornado de um provedor ou se um provedor expirar, a resposta será um código de status `206 Partial Content` com a resposta do provedor em um cabeçalho de aviso. Para obter mais informações, consulte as [respostas de erro da API de segurança do Microsoft Graph](../resources/security-error-codes.md).
 
 ## <a name="example"></a>Exemplo
 

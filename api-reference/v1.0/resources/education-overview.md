@@ -1,16 +1,16 @@
 ---
 title: Como trabalhar com APIs de educação no Microsoft Graph
 description: As APIs de educação no Microsoft Graph aprimoram os recursos e dados do Microsoft 365 com informações que são relevantes para cenários de educação, incluindo escolas, alunos, professores, aulas e matrículas. Isso facilita a criação de soluções que se integram aos recursos educacionais.
-localization_priority: Priority
+ms.localizationpriority: high
 author: mmast-msft
 ms.prod: education
 doc_type: conceptualPageType
-ms.openlocfilehash: f9d75ee57396aebe2f15518f3d12c675edf7d217fa0609f08af1af6428e12338
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 29d50f4628bbca80e7c40e032cc5d9010155f3b7
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54146969"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59007240"
 ---
 # <a name="working-with-education-apis-in-microsoft-graph"></a>Como trabalhar com APIs de educação no Microsoft Graph
 

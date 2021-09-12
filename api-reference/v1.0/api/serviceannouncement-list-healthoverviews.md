@@ -2,15 +2,15 @@
 title: Listar healthOverviews
 description: Recupere os recursos serviceHealth da propriedade de navegação healthOverviews.
 author: payiAzure
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: service-communications
 doc_type: apiPageType
-ms.openlocfilehash: 8e1d8ec983c569d592eb36d54d1c3d8f11488830
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 4b3a4301a1dc17a327e1754c74baa867e225af48
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58259095"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59007430"
 ---
 # <a name="list-healthoverviews"></a>Listar healthOverviews
 Namespace: microsoft.graph

@@ -1,21 +1,21 @@
 ---
 title: Listar endereços
-description: Obtenha os endereços da propriedade de navegação addresses.
-localization_priority: Normal
+description: Obter o itemAddresses da propriedade de navegação de endereços.
+ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: f88b0d371a4a5c3dcdc7c5be6054bcb0bcb1d9b7
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 4ec465af7fe6229b8347b95f49d0f1dd07044928
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48970174"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59009578"
 ---
 # <a name="list-addresses"></a>Listar endereços
 Namespace: microsoft.graph
 
-Obtenha os recursos de [endereço](../resources/itemaddress.md) da propriedade de navegação **Addresses** .
+Obter os [recursos itemAddress](../resources/itemaddress.md) da propriedade **de navegação de** endereços.
 
 ## <a name="permissions"></a>Permissões
 
@@ -23,9 +23,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)                                      |
 |:---------------------------------------|:---------------------------------------------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | User. Read, User. ReadWrite, User. ReadBasic. All, User. Read. All, User. ReadWrite. All |
-| Delegado (conta pessoal da Microsoft) | User. Read, User. ReadWrite, User. ReadBasic. All, User. Read. All, User. ReadWrite. All |
-| Application                            | User. ReadBasic. All, User. Read. All, User. ReadWrite. All                            |
+| Delegada (conta corporativa ou de estudante)     | User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All |
+| Delegada (conta pessoal da Microsoft) | User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All |
+| Aplicativo                            | User.ReadBasic.All, User.Read.All, User.ReadWrite.All                            |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -40,14 +40,14 @@ GET /users/{id | userPrincipalName}/profile/addresses
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Este método oferece suporte aos seguintes parâmetros de consulta OData para ajudar a personalizar a resposta. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
+Este método dá suporte aos seguintes parâmetros de consulta OData para ajudar a personalizar a resposta. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
 
-|Nome            |Valor    |Descrição                                                                                                                                                                 |
+|Name            |Valor    |Descrição                                                                                                                                                                 |
 |:---------------|:--------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|$filter         |string   |Limita a resposta somente aos objetos que contêm os critérios especificados.                                                                                             |
-|$orderby        |cadeia de caracteres   |Por padrão, os objetos na resposta são classificados por seu valor createdDateTime em uma consulta. Você pode alterar a ordem da resposta usando o parâmetro *$OrderBy* .|
+|$filter         |string   |Limita a resposta apenas aos objetos que contêm os critérios especificados.                                                                                             |
+|$orderby        |cadeia de caracteres   |Por padrão, os objetos na resposta são classificação pelo valor createdDateTime em uma consulta. Você pode alterar a ordem da resposta usando o parâmetro *$orderby.*|
 |$select         |string   |Lista separada por vírgulas de propriedades para incluir na resposta. Para um desempenho ideal, selecione apenas o subconjunto de propriedades necessário.                                        |
-|$skip           |int      |Ignore os primeiros n resultados, útil para paginação.                                                                                                                                |
+|$skip           |int      |Ignore os primeiros resultados n, úteis para pajamento.                                                                                                                                |
 |$top            |int      |Número de resultados a ser retornado.                                                                                                                                           |
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -60,7 +60,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [myAddress](../resources/itemaddress.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e uma `200 OK` coleção [de objetos itemAddress](../resources/itemaddress.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

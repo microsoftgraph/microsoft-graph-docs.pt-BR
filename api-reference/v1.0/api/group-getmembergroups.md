@@ -1,16 +1,16 @@
 ---
 title: 'grupo: getMemberGroups'
 description: Retorne todos os grupos dos quais o grupo especificado é membro.
-localization_priority: Priority
+ms.localizationpriority: high
 author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 9b3bd8d3d44296bfd9fda4b595167d85eb233de1
-ms.sourcegitcommit: 9b8abc940a68dac6ee5da105ca29800cb59775f6
+ms.openlocfilehash: ee1421b6077d9eb9a4887eb42bd44a1a915329bc
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "58514056"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59008278"
 ---
 # <a name="group-getmembergroups"></a>grupo: getMemberGroups
 

@@ -1,16 +1,16 @@
 ---
 title: 'group: getMemberObjects'
 description: Retorne todos os grupos dos quais este grupo é um membro.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: cccccb39a1fe5ea39b75f93c6a6d59611acb2567
-ms.sourcegitcommit: 9b8abc940a68dac6ee5da105ca29800cb59775f6
+ms.openlocfilehash: 3d918a5905c19932067a550592ccaaccc349d948
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "58513314"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59008276"
 ---
 # <a name="group-getmemberobjects"></a>group: getMemberObjects
 
@@ -43,7 +43,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro    | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|securityEnabledOnly|Booliano| Definido como `false`. Há suporte para retornar somente os grupos de segurança habilitados apenas para usuários.|
+|securityEnabledOnly|Boolean| Definido como `false`. Há suporte para retornar somente os grupos de segurança habilitados apenas para usuários.|
 
 ## <a name="response"></a>Resposta
 Se bem-sucedido, este método retorna um código de resposta `200 OK` e a coleção de cadeias de caracteres no corpo da resposta que contém as IDs dos grupos dos quais o grupo é membro.

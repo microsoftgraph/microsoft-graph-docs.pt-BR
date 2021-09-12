@@ -1,16 +1,16 @@
 ---
 title: Termos e condições da empresa em Microsoft Intune - API Graph Microsoft
 description: Lista os pontos de extremidade Graph API do Microsoft para Intune (REST) que suportam termos e condições da empresa.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: dougeby
 ms.prod: intune
 doc_type: conceptualPageType
-ms.openlocfilehash: d9c7c5f98a3a7cb0c05d09ee5eea2df76eb2a804269f2c53f81123e8d6925174
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 6fc13043d0f146620b3fe301ccee3b521b2cac32
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54184799"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59007100"
 ---
 # <a name="company-terms-and-conditions-in-microsoft-intune"></a>Termos e condições da empresa no Microsoft Intune
 

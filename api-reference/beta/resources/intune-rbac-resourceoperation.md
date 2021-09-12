@@ -2,15 +2,15 @@
 title: Tipo de recurso resourceOperation
 description: Descreve o recurso resourceOperation (entidade) da API do Microsoft Graph (REST), que dá suporte a fluxos de trabalho do Intune relacionados ao controle de acesso baseado em função (RBAC).
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 6495d80c548f3847dd7ac88adcb3f92b14c04409
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 437c97f6af9ef68233054e547ca95ac08e062039
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58807639"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59017153"
 ---
 # <a name="resourceoperation-resource-type"></a>Tipo de recurso resourceOperation
 
@@ -36,11 +36,11 @@ Descreve o recurso resourceOperation (entidade) da API do Microsoft Graph (REST)
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|Cadeia de caracteres|Chave da operação de recurso. Somente leitura, gerada automaticamente.|
-|recurso|Cadeia de caracteres|Categoria de recurso à qual esta Operação pertence. Essa propriedade é somente leitura.|
+|recurso|String|Categoria de recurso à qual esta Operação pertence. Essa propriedade é somente leitura.|
 |resourceName|Cadeia de caracteres|Nome do recurso em que essa operação é executada.|
 |actionName|Cadeia de caracteres|Tipo de ação em que essa operação será executada. O actionName deve ser conciso e limitado ao mínimo de palavras possível.|
-|descrição|Cadeia de caracteres|Descrição da operação de recurso. A descrição é usada no texto exibido com o passar o mouse para a operação quando exibida no Portal do Azure.|
-|enabledForScopeValidation|Boleano|Determina se a Permissão é validada para Escopos definidos por Atribuição de Função. Essa propriedade é somente leitura.|
+|description|Cadeia de caracteres|Descrição da operação de recurso. A descrição é usada no texto exibido com o passar o mouse para a operação quando exibida no Portal do Azure.|
+|enabledForScopeValidation|Booliano|Determina se a Permissão é validada para Escopos definidos por Atribuição de Função. Essa propriedade é somente leitura.|
 
 ## <a name="relationships"></a>Relações
 Nenhum

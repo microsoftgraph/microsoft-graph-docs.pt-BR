@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso homeRealmDiscoveryPolicy
 description: Representa uma política para controlar o Azure Active Directory de autenticação para usuários federados.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: hpsin
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 10142d22b37af4e1cff26e65c4325def6d7faefd96e2f66e56b9d5cd68acf0f1
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: ded1e7a858876b1eaded239b58472b89534eee65
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54230715"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59007212"
 ---
 # <a name="homerealmdiscoverypolicy-resource-type"></a>Tipo de recurso homeRealmDiscoveryPolicy
 
@@ -29,17 +29,17 @@ Herda de [stsPolicy](stsPolicy.md).
 | [Obter homeRealmDiscoveryPolicy](../api/homerealmdiscoverypolicy-get.md) | [homeRealmDiscoveryPolicy](homerealmdiscoverypolicy.md) | Leia propriedades e relações de um objeto homeRealmDiscoveryPolicy. |
 | [Atualizar homeRealmDiscoveryPolicy](../api/homerealmdiscoverypolicy-update.md) | None | Atualize um objeto homeRealmDiscoveryPolicy. |
 | [Excluir homeRealmDiscoveryPolicy](../api/homerealmdiscoverypolicy-delete.md) | None | Exclua um objeto homeRealmDiscoveryPolicy. |
-| [Lista appliesTo](../api/homerealmdiscoverypolicy-list-appliesto.md) | Coleção [directoryObject](directoryobject.md) | Obter a lista de directoryObjects aos qual essa política foi aplicada. |
+| [Lista appliesTo](../api/homerealmdiscoverypolicy-list-appliesto.md) | Conjunto [directoryObject](directoryobject.md) | Obter a lista de directoryObjects aos qual essa política foi aplicada. |
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|id|String| Identificador exclusivo dessa política. Apenas leitura.|
-|definition|String collection| Uma coleção de cadeias de caracteres que contém uma cadeia de caracteres JSON que define as regras e as configurações dessa política. Consulte abaixo para obter mais detalhes sobre o esquema JSON para esta propriedade. Obrigatório.|
+|id|Cadeia de caracteres| Identificador exclusivo dessa política. Somente leitura.|
+|definition|Coleção String| Uma coleção de cadeias de caracteres que contém uma cadeia de caracteres JSON que define as regras e as configurações dessa política. Consulte abaixo para obter mais detalhes sobre o esquema JSON para esta propriedade. Obrigatório.|
 |description|Cadeia de caracteres| Descrição dessa política.|
 |displayName|String| Nome de exibição para esta política. Obrigatório.|
-|isOrganizationDefault|Booliano|Se definido como true, ativa essa política. Pode haver muitas políticas para o mesmo tipo de política, mas apenas uma pode ser ativada como o padrão da organização. Opcional, o valor padrão é false.|
+|isOrganizationDefault|Boolean|Se definido como true, ativa essa política. Pode haver muitas políticas para o mesmo tipo de política, mas apenas uma pode ser ativada como o padrão da organização. Opcional, o valor padrão é false.|
 
 
 ### <a name="properties-of-a-home-realm-discovery-policy-definition"></a>Propriedades de uma definição de política de descoberta de domínio inicial
@@ -61,7 +61,7 @@ As propriedades abaixo formam o objeto JSON que representa uma política de vida
 |:---------------|:--------|:----------|
 |AccelerateToFederatedDomain|Booliano| Definir como `true` para aceleração automática (ignorar descoberta de domínio inicial). Se e houver apenas um domínio verificado e federado no locatário, os usuários serão levados diretamente para o provedor de identidade `true` federado (como ADFS) para entrar. Se `true` e houver mais de um domínio verificado no locatário, **PreferredDomain** deve ser especificado. Opcional.|
 |PreferredDomain|Cadeia de caracteres| Especifica um domínio para acelerar a login. Ele pode ser omitido se o locatário tiver apenas um domínio federado. Se for omitido e houver mais de um domínio federado verificado, essa política não terá efeito. Obrigatório se **AccelerateToFederatedDomain** for `true` .|
-|AllowCloudPasswordValidation|Booliano| De definida `true` para permitir que um aplicativo autenture um usuário federado apresentando credenciais de nome de usuário/senha diretamente para o ponto de extremidade Azure Active Directory token. Só funciona se a Sincronização de Hash de Senha estiver habilitada. Opcional.|
+|AllowCloudPasswordValidation|Boolean| De definida `true` para permitir que um aplicativo autenture um usuário federado apresentando credenciais de nome de usuário/senha diretamente para o ponto de extremidade Azure Active Directory token. Só funciona se a Sincronização de Hash de Senha estiver habilitada. Opcional.|
 |AlternateIdLogin| Json |De acordo com {"Enabled": true} para permitir a logon do Azure AD usando o email como uma [ID de logon alternativa.](/azure/active-directory/authentication/howto-authentication-use-email-signin) Só funciona quando **IsOrganizationDefault** é definido como `true` . Opcional.|
 
 ## <a name="relationships"></a>Relações

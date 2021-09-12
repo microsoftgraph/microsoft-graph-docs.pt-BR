@@ -2,15 +2,15 @@
 title: Excluir telecomExpenseManagementPartner
 description: Exclui telecomExpenseManagementPartner.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 099d84bdb877b923d841721752d7007a291b7513
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 413ad15c8ea8a3560ea5c9b87d5f6ad8f6daaa2d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58818551"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59017650"
 ---
 # <a name="delete-telecomexpensemanagementpartner"></a>Excluir telecomExpenseManagementPartner
 
