@@ -2,15 +2,15 @@
 title: Tipo de numeração remediationState
 description: Indica o tipo de status de execução do script de gerenciamento de dispositivos.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: dad0c6030d4a0f06ac17da9f2060b099d71d4ea4
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 4e8925becd230f10904e15a9f105f475474b123d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58788931"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59137725"
 ---
 # <a name="remediationstate-enum-type"></a>Tipo de numeração remediationState
 

@@ -2,15 +2,15 @@
 title: Atualizar userExperienceAnalyticsDeviceWithoutCloudIdentity
 description: Atualize as propriedades de um objeto userExperienceAnalyticsDeviceWithoutCloudIdentity.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 8d2461a222e3cf71aca448f1610ffe8fe3ffd775
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 2868c769e7d358d674920b9c09acdb674470b993
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58804355"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59132929"
 ---
 # <a name="update-userexperienceanalyticsdevicewithoutcloudidentity"></a>Atualizar userExperienceAnalyticsDeviceWithoutCloudIdentity
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementManagedDevices.ReadWrite.All|
+|Aplicativo|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -55,7 +55,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [o userE
 |:---|:---|:---|
 |id|Cadeia de caracteres|O identificador exclusivo do dispositivo de anexação do locatário de análise de experiência do usuário.|
 |deviceName|String|O nome do dispositivo de anexação do locatário.|
-|azureAdDeviceId|Cadeia de caracteres|Azure Active Directory ID do dispositivo|
+|azureAdDeviceId|Cadeia de Caracteres|Azure Active Directory ID do dispositivo|
 
 
 

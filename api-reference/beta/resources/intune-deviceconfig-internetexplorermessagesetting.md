@@ -2,15 +2,15 @@
 title: Tipo de número internetExplorerMessageSetting
 description: Qual mensagem será exibida pelo Edge antes de alternar para o Internet Explorer.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 2f2b383b866a63a96e6861e78b297a6ff7b619a9
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 61ee0ede2f90dbe979b601757310b40020117e9f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58795876"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59131417"
 ---
 # <a name="internetexplorermessagesetting-enum-type"></a>Tipo de número internetExplorerMessageSetting
 

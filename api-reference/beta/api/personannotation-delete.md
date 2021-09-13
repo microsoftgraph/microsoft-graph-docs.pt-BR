@@ -2,22 +2,22 @@
 title: Excluir personAnnotation
 description: Exclui um objeto personAnnotation.
 author: kevinbellinger
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 16993d5919c0d588710ac2835cc2bd0f4f46a1a7
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: d058bcc41dc76b872d1f0ad05450b7601e330c5f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50774212"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59138376"
 ---
 # <a name="delete-personannotation"></a>Excluir personAnnotation
 Namespace: microsoft.graph
 
 Exclui um [objeto personAnnotation](../resources/personannotation.md) do perfil de um [usuário.](../resources/profile.md)
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 

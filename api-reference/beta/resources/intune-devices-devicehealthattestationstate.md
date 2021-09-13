@@ -2,15 +2,15 @@
 title: Tipo de recurso deviceHealthAttestationState
 description: Ainda não documentado
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: ddfe23d66f45c04dcdd0d656257bf6b20c0b91a9
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: ad5ff4dff73a17b82066e994bf00126816467328
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58793828"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59131193"
 ---
 # <a name="devicehealthattestationstate-resource-type"></a>Tipo de recurso deviceHealthAttestationState
 

@@ -2,15 +2,15 @@
 title: Atualizar cloudPCConnectivityIssue
 description: Atualize as propriedades de um objeto cloudPCConnectivityIssue.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 1b1e86835a77a4599e85a8fddb24c15ef4fc5e0a
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: bb557c94ae51cb015a80c0fea10b07997321c7f5
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58796366"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59122156"
 ---
 # <a name="update-cloudpcconnectivityissue"></a>Atualizar cloudPCConnectivityIssue
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementManagedDevices.ReadWrite.All|
+|Aplicativo|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -59,7 +59,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [o cloud
 |errorDateTime|DateTimeOffset|A hora em que a conexão foi iniciada. O tempo é mostrado no formato ISO 8601 e hora UTC (Tempo Universal Coordenado).|
 |userId|Cadeia de caracteres|A ID exclusiva do usuário que inicializa a conexão.|
 |errorDescription|Cadeia de caracteres|A descrição detalhada do que deu errado.|
-|recommendedAction|Cadeia de caracteres|A ação recomendada para corrigir o erro correspondente.|
+|recommendedAction|Cadeia de Caracteres|A ação recomendada para corrigir o erro correspondente.|
 
 
 

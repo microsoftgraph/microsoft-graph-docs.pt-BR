@@ -2,15 +2,15 @@
 title: Tipo de recurso managedDeviceModelsAndManufacturers
 description: Modelos e Manufaturas de carmadata para dispositivos gerenciados na conta
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 300fbc2dc03a4a8394449cc8a6575378feea1cc2
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 1b560cb95766d3216b566d33cfe00db2689c6efd
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58820881"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59137795"
 ---
 # <a name="manageddevicemodelsandmanufacturers-resource-type"></a>Tipo de recurso managedDeviceModelsAndManufacturers
 
@@ -25,8 +25,8 @@ Modelos e Manufaturas de carmadata para dispositivos gerenciados na conta
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|deviceModels|Coleção de cadeias de caracteres|Lista de modelos para dispositivos gerenciados na conta|
-|deviceManufacturers|Coleção de cadeias de caracteres|Lista de Manufaturas para dispositivos gerenciados na conta|
+|deviceModels|String collection|Lista de modelos para dispositivos gerenciados na conta|
+|deviceManufacturers|String collection|Lista de Manufaturas para dispositivos gerenciados na conta|
 
 ## <a name="relationships"></a>Relações
 Nenhum

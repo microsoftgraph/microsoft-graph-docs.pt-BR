@@ -2,15 +2,15 @@
 title: Criar deviceConfigurationDeviceStatus
 description: Criar um novo objeto deviceConfigurationDeviceStatus.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b0df56b1d84663d4b094382ae3a8d9dfa22c8ee4
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: af5c87e7740dc3f7150a6c2e79aee763a0bd9eb4
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58791393"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59143437"
 ---
 # <a name="create-deviceconfigurationdevicestatus"></a>Criar deviceConfigurationDeviceStatus
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {

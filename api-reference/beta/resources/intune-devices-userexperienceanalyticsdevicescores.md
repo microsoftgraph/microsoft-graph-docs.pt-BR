@@ -2,15 +2,15 @@
 title: Tipo de recurso userExperienceAnalyticsDeviceScores
 description: A entidade pontuações do dispositivo de análise de experiência do usuário consolida as várias pontuações de análise de ponto de extremidade.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: ce4dc2ceeb02622c30a8aadde9bd9c45826dc9f1
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 331ba306d8f9b5ec8a98c66692b9c333a7933166
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58816498"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59125796"
 ---
 # <a name="userexperienceanalyticsdevicescores-resource-type"></a>Tipo de recurso userExperienceAnalyticsDeviceScores
 

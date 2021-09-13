@@ -2,15 +2,15 @@
 title: tipo de recurso deliveryOptimizationBandwidthBusinessHoursLimit
 description: Tipo de horários comerciais e porcentagens de largura de banda
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: b3b6fdc86eed3043e3f95bd2947bc24dc35d5761
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 428ed64455e0c403a4ea198a1cc367576d94b0a2
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58797539"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59147980"
 ---
 # <a name="deliveryoptimizationbandwidthbusinesshourslimit-resource-type"></a>tipo de recurso deliveryOptimizationBandwidthBusinessHoursLimit
 

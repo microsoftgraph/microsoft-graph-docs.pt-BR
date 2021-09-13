@@ -2,15 +2,15 @@
 title: Criar responsabilidades
 description: Crie um novo objeto de responsabilidade.
 author: kevinbellinger
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 086bc8af800c70a9282a04606f82818a135d65de
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 4202dbcfd268ac7e77a1d6e02865b0ed4a4b2774
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50440952"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59141407"
 ---
 # <a name="create-personresponsibility"></a>Criar personResponsibility
 Namespace: microsoft.graph
@@ -51,10 +51,10 @@ A tabela a seguir mostra as propriedades que são possíveis de definir dentro d
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|allowedAudiences|String|As audiências que são capazes de ver os valores contidos na entidade. Herdado [do itemFacet](../resources/itemfacet.md). Os valores possíveis são: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
-|collaborationTags|Coleção de cadeias de caracteres|Contém marcas de cenário de experiência que um usuário associou aos juros. Os valores permitidos na coleção são: `askMeAbout` `ableToMentor` , , , `wantsToLearn` `wantsToImprove` .|
-|descrição|String|Descrição da responsabilidade.|
-|displayName|String|Contém um nome amigável para a responsabilidade. |
+|allowedAudiences|Cadeia de Caracteres|As audiências que são capazes de ver os valores contidos na entidade. Herdado [do itemFacet](../resources/itemfacet.md). Os valores possíveis são: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
+|collaborationTags|Conjunto de cadeias de caracteres|Contém marcas de cenário de experiência que um usuário associou aos juros. Os valores permitidos na coleção são: `askMeAbout` `ableToMentor` , , , `wantsToLearn` `wantsToImprove` .|
+|description|Cadeia de caracteres|Descrição da responsabilidade.|
+|displayName|Cadeia de caracteres|Contém um nome amigável para a responsabilidade. |
 |inferência|[inferenceData](../resources/inferencedata.md)|Contém detalhes de inferência se a entidade for inferida pelo aplicativo de criação ou modificação. Herdado [do itemFacet](../resources/itemfacet.md).|
 |source|[personDataSource](../resources/persondatasource.md)|Onde os valores se originaram se sincronizados de outro serviço. Herdado [do itemFacet](../resources/itemfacet.md).|
 |webUrl|String|Contém um link para uma página da Web ou recurso sobre a responsabilidade.|

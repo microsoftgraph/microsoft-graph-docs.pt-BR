@@ -2,15 +2,15 @@
 title: Tipo de número iosNotificationPreviewVisibility
 description: Determina quando as visualizações de notificação ficam visíveis em um dispositivo iOS. As visualizações podem incluir coisas como texto (de Mensagens e Email) e detalhes do convite (do Calendário). Quando configurado, ele substituirá as configurações de visualização definidas pelo usuário.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 3a3f7426134ecf4a5fec3f71cdc33654df292b30
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: d95630b32e451e762ab7848d96f781346e2f3298
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58759663"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59131410"
 ---
 # <a name="iosnotificationpreviewvisibility-enum-type"></a>Tipo de número iosNotificationPreviewVisibility
 

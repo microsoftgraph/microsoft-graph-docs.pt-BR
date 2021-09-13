@@ -2,15 +2,15 @@
 title: ação sync
 description: Inicia uma sincronização de todos os dispositivos registrados do AutoPilot da Store para Empresas e de outros portais. Se a sincronização for bem-sucedida, essa ação retornará um código de resposta 204 No Content. Se uma sincronização já estiver em andamento, a ação retornará um código de resposta conflict 409.  Se essa ação de sincronização for chamada dentro de 10 minutos da sincronização anterior, a ação retornará um código de resposta 429 Solicitações Demais.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 01110f48e0756314a0b2df7f746f4d1c0730a958
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: cade3062ebcf881d830da458a6883b3ba9fefe6f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58803879"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59124844"
 ---
 # <a name="sync-action"></a>Ação sync
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementServiceConfig.ReadWrite.All|
+|Aplicativo|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {

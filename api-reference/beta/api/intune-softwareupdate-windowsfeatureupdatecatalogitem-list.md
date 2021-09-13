@@ -2,15 +2,15 @@
 title: Listar windowsFeatureUpdateCatalogItems
 description: Listar propriedades e relações dos objetos windowsFeatureUpdateCatalogItem.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 948a5e78b48b06ecfd24ec608f2973e500ed9030
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 402df256eb2a8fb3ced1b54e55fdf3d6a8c4cbb0
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58807360"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59132208"
 ---
 # <a name="list-windowsfeatureupdatecatalogitems"></a>Listar windowsFeatureUpdateCatalogItems
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
+|Aplicativo|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {

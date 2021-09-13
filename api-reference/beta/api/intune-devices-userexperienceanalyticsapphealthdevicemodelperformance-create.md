@@ -2,15 +2,15 @@
 title: Criar userExperienceAnalyticsAppHealthDeviceModelPerformance
 description: Crie um novo objeto userExperienceAnalyticsAppHealthDeviceModelPerformance.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 87acf4fdfb3fe8680c51f8e3ea8cba95289606c7
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 8b4af784a758d383359e8a5d636a81b516b3c620
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58819953"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59102819"
 ---
 # <a name="create-userexperienceanalyticsapphealthdevicemodelperformance"></a>Criar userExperienceAnalyticsAppHealthDeviceModelPerformance
 
@@ -27,8 +27,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Delegado (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -55,11 +55,11 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar o userEx
 |:---|:---|:---|
 |id|Cadeia de caracteres|O identificador exclusivo do objeto de desempenho do modelo de dispositivo de análise de experiência do usuário.|
 |deviceModel|Cadeia de caracteres|O nome do modelo do dispositivo.|
-|deviceManufacturer|Cadeia de caracteres|O nome do fabricante do dispositivo.|
+|deviceManufacturer|Cadeia de Caracteres|O nome do fabricante do dispositivo.|
 |activeDeviceCount|Int32|O número de dispositivos ativos para o modelo. Valores válidos -2147483648 para 2147483647|
 |meanTimeToFailureInMinutes|Int32|O tempo de falha média para o dispositivo modelo em minutos. Valores válidos -2147483648 para 2147483647|
 |modelAppHealthScore|Duplo|A pontuação de saúde do aplicativo do modelo de dispositivo. Valores válidos -1,79769313486232E+308 a 1.79769313486232E+308|
-|modelAppHealthStatus|Cadeia de caracteres|O status geral da saúde do aplicativo do modelo de dispositivo.|
+|modelAppHealthStatus|Cadeia de Caracteres|O status geral da saúde do aplicativo do modelo de dispositivo.|
 
 
 

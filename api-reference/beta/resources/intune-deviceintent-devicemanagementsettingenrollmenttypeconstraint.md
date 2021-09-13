@@ -2,15 +2,15 @@
 title: Tipo de recurso deviceManagementSettingEnrollmentTypeConstraint
 description: Restrição que impõe os tipos de registro aplicados a uma configuração
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 7150ffb7be4f829a47c4924c423866ee5e08dae1
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: dbc0cc62fefad3ddd6411a964edceafc486ab9f9
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58783215"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59134910"
 ---
 # <a name="devicemanagementsettingenrollmenttypeconstraint-resource-type"></a>Tipo de recurso deviceManagementSettingEnrollmentTypeConstraint
 
@@ -28,7 +28,7 @@ Herda de [deviceManagementConstraint](../resources/intune-deviceintent-deviceman
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|enrollmentTypes|Coleção de cadeias de caracteres|Lista de tipos de registro|
+|enrollmentTypes|String collection|Lista de tipos de registro|
 
 ## <a name="relationships"></a>Relações
 Nenhum

@@ -2,15 +2,15 @@
 title: Criar deviceComplianceScriptDeviceState
 description: Crie um novo objeto deviceComplianceScriptDeviceState.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 9a8b31205c4f551c7ca50c5169fcbb24d0b259ab
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: efc1b776f48a116dab9ac506d2980378dd894ba4
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58807094"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59108209"
 ---
 # <a name="create-devicecompliancescriptdevicestate"></a>Criar deviceComplianceScriptDeviceState
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementManagedDevices.ReadWrite.All|
+|Aplicativo|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -58,8 +58,8 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar deviceCo
 |lastStateUpdateDateTime|DateTimeOffset|O último horário de quando o script de conformidade do dispositivo foi executado|
 |expectedStateUpdateDateTime|DateTimeOffset|O próximo horário de quando o script de conformidade do dispositivo deve ser executado|
 |lastSyncDateTime|DateTimeOffset|A última vez que a Extensão de Managment do Intune foi sincronizada com o Intune|
-|scriptOutput|Cadeia de caracteres|Saída do script de detecção|
-|scriptError|Cadeia de caracteres|Erro do script de detecção|
+|scriptOutput|Cadeia de Caracteres|Saída do script de detecção|
+|scriptError|Cadeia de Caracteres|Erro do script de detecção|
 
 
 

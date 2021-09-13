@@ -2,15 +2,15 @@
 title: Excluir deviceManagementReusablePolicySetting
 description: Exclui um deviceManagementReusablePolicySetting.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 78bf79f853879c44ba64ba3a09a175e9d405726e
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 90f23f3c0bc1bfae037c4e137bf651291c6e8d0b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58789120"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59122261"
 ---
 # <a name="delete-devicemanagementreusablepolicysetting"></a>Excluir deviceManagementReusablePolicySetting
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementServiceConfig.ReadWrite.All|
+|Aplicativo|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {

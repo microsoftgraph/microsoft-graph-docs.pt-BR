@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso yammerDeviceUsageDistributionUserCounts
 description: Veja a seguir uma representação JSON do recurso.
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: reports
 author: sarahwxy
 doc_type: resourcePageType
-ms.openlocfilehash: 06a856adf216f15f468702a02c5f3933023c96f35684f05f688fecd8844c6f59
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 1d37535ec5925a978c1518c24a739606f71b0ca1
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54249675"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59128540"
 ---
 # <a name="yammerdeviceusagedistributionusercounts-resource-type"></a>Tipo de recurso yammerDeviceUsageDistributionUserCounts
 
@@ -27,7 +27,7 @@ Namespace: microsoft.graph
 | iPhone            | Int32  |
 | iPad              | Int32  |
 | other             | Int32  |
-| reportPeriod      | Cadeia de caracteres |
+| reportPeriod      | Cadeia de Caracteres |
 
 ## <a name="json-representation"></a>Representação JSON
 

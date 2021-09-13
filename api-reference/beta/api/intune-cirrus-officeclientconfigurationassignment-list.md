@@ -1,16 +1,16 @@
 ---
 title: Listar officeClientConfigurationAssignments
 description: Listar propriedades e relações dos objetos officeClientConfigurationAssignment.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: dougeby
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2de9a38686f65c77b96b60cc4ba72248679e3f85
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 70a0acc67aa0e8682817d1f0145a63954ad1d660
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58819018"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59133797"
 ---
 # <a name="list-officeclientconfigurationassignments"></a>Listar officeClientConfigurationAssignments
 
@@ -27,8 +27,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|**TODO: Determinar escopos **|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Delegado (conta corporativa ou de estudante)|**TODO: Determinar escopos **|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|**TODO: Determinar escopos **|
 
 ## <a name="http-request"></a>Solicitação HTTP

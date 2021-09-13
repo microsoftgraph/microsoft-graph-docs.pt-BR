@@ -2,15 +2,15 @@
 title: Listar deviceManagementConfigurationSimpleSettingDefinitions
 description: Listar propriedades e relações dos objetos deviceManagementConfigurationSimpleSettingDefinition.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5ede7f09265442f77e18c54c42bb3bd0fe04f037
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 51e1fb7dd974649cdae6e800d03d48ea2bc154e4
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58793158"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59133265"
 ---
 # <a name="list-devicemanagementconfigurationsimplesettingdefinitions"></a>Listar deviceManagementConfigurationSimpleSettingDefinitions
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Aplicativo|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {

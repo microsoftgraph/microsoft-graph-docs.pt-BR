@@ -2,15 +2,15 @@
 title: Excluir deviceConfigurationDeviceStatus
 description: Exclui deviceConfigurationDeviceStatus.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ab6a84db6407e2ae7d11acf2b7b249765187ff0f
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: a6c3389dea0be3284a3852cf1e87bee6644e3859
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58798311"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59143423"
 ---
 # <a name="delete-deviceconfigurationdevicestatus"></a>Excluir deviceConfigurationDeviceStatus
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {

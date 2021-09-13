@@ -2,15 +2,15 @@
 title: Tipo de recurso deviceManagementConfigurationChoiceSettingValueTemplate
 description: Modelo de valor de configuração de opção
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4c958598186ea73f6a0357aff200e3df08a3cbe2
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 05598135e65a5e2bc5b755365fab713183f4563a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58789923"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59128960"
 ---
 # <a name="devicemanagementconfigurationchoicesettingvaluetemplate-resource-type"></a>Tipo de recurso deviceManagementConfigurationChoiceSettingValueTemplate
 
@@ -28,7 +28,7 @@ Modelo de valor de configuração de opção
 |defaultValue|[deviceManagementConfigurationChoiceSettingValueDefaultTemplate](../resources/intune-deviceconfigv2-devicemanagementconfigurationchoicesettingvaluedefaulttemplate.md)|Modelo padrão de valor de configuração de opção.|
 |recommendedValueDefinition|[deviceManagementConfigurationChoiceSettingValueDefinitionTemplate](../resources/intune-deviceconfigv2-devicemanagementconfigurationchoicesettingvaluedefinitiontemplate.md)|Substituição de definição recomendada.|
 |requiredValueDefinition|[deviceManagementConfigurationChoiceSettingValueDefinitionTemplate](../resources/intune-deviceconfigv2-devicemanagementconfigurationchoicesettingvaluedefinitiontemplate.md)|Substituição de definição necessária.|
-|settingValueTemplateId|Cadeia de caracteres|Definindo a ID do Modelo de Valor|
+|settingValueTemplateId|Cadeia de Caracteres|Definindo a ID do Modelo de Valor|
 
 ## <a name="relationships"></a>Relações
 Nenhum

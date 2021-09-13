@@ -2,15 +2,15 @@
 title: Atualizar deviceConfigurationDeviceOverview
 description: Atualizar as propriedades de um objeto deviceConfigurationDeviceOverview.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5273b17bb2f0f27cb52774b43bd13b5ceeba2501
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 47509fa30f2e554e2233519a70ed3254948eb8a7
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58803185"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59133579"
 ---
 # <a name="update-deviceconfigurationdeviceoverview"></a>Atualizar deviceConfigurationDeviceOverview
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {

@@ -2,15 +2,15 @@
 title: Criar userExperienceAnalyticsImpactingProcess
 description: Crie um novo objeto userExperienceAnalyticsImpactingProcess.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 84f8d54b25d9fe0be7fc921f8c20c362aa041a43
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 0da159a410d7b550b535ec23875464edc557ee8f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58783369"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59124914"
 ---
 # <a name="create-userexperienceanalyticsimpactingprocess"></a>Criar userExperienceAnalyticsImpactingProcess
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementManagedDevices.ReadWrite.All|
+|Aplicativo|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -56,8 +56,8 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar o userEx
 |id|Cadeia de caracteres|O identificador exclusivo da entidade de processo de análise de experiência do usuário.|
 |deviceId|Cadeia de caracteres|O identificador exclusivo do dispositivo afetado.|
 |category|Cadeia de caracteres|A categoria do processo de impacto.|
-|processName|Cadeia de caracteres|O nome do processo.|
-|descrição|Cadeia de caracteres|A descrição do processo.|
+|processName|Cadeia de Caracteres|O nome do processo.|
+|description|Cadeia de caracteres|A descrição do processo.|
 |publicador|String|O editor do processo.|
 |impactValue|Duplo|O valor de impacto do processo. Valores válidos de 0 a 1,79769313486232E+308|
 

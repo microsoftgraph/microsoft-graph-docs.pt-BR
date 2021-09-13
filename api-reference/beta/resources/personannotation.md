@@ -2,15 +2,15 @@
 title: Tipo de recurso personAnnotation
 description: Tipo de recurso personAnnotation
 author: kevinbellinger
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: people
 doc_type: resourcePageType
-ms.openlocfilehash: 49e7945b1ba07d7daedbd197b826148921f2f0227dd71b5780413a3b67b6c6be
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 77830de34b36126db05f66cae0b2e43691f1d74b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54197846"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59125656"
 ---
 # <a name="personannotation-resource-type"></a>Tipo de recurso personAnnotation
 
@@ -32,7 +32,7 @@ Herda do [itemFacet](../resources/itemfacet.md).
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|allowedAudiences|Cadeia de caracteres|As audiências que são capazes de ver os valores contidos na entidade. Herdado [do itemFacet](../resources/itemfacet.md). Os valores possíveis são: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
+|allowedAudiences|Cadeia de Caracteres|As audiências que são capazes de ver os valores contidos na entidade. Herdado [do itemFacet](../resources/itemfacet.md). Os valores possíveis são: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
 |createdBy|[identitySet](../resources/identityset.md)|Fornece o identificador do usuário e/ou aplicativo que criou a entidade. Herdado [do itemFacet](../resources/itemfacet.md).|
 |createdDateTime|DateTimeOffset|Fornece a dataTimeOffset para quando a entidade foi criada. Herdado [do itemFacet](../resources/itemfacet.md).|
 |detail|[itemBody](../resources/itembody.md)|Contém os detalhes da própria nota.|

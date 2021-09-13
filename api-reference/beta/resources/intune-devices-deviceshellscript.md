@@ -2,15 +2,15 @@
 title: Tipo de recurso deviceShellScript
 description: O Intune fornecerá ao cliente a capacidade de executar seus scripts do Shell nos dispositivos Mac OS inscritos. O script pode ser executado uma vez ou periodicamente.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 1615cf8e8292f39c13bfd019e71803dd86303c2c
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: cc3553e5b2ca63f7d202b1cf197429815363780e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58785119"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59125824"
 ---
 # <a name="deviceshellscript-resource-type"></a>Tipo de recurso deviceShellScript
 
@@ -28,7 +28,7 @@ O Intune fornecerá ao cliente a capacidade de executar seus scripts do Shell no
 |[Listar deviceShellScripts](../api/intune-devices-deviceshellscript-list.md)|[Coleção deviceShellScript](../resources/intune-devices-deviceshellscript.md)|Listar propriedades e relações dos objetos [deviceShellScript.](../resources/intune-devices-deviceshellscript.md)|
 |[Obter deviceShellScript](../api/intune-devices-deviceshellscript-get.md)|[deviceShellScript](../resources/intune-devices-deviceshellscript.md)|Leia propriedades e relações do [objeto deviceShellScript.](../resources/intune-devices-deviceshellscript.md)|
 |[Criar deviceShellScript](../api/intune-devices-deviceshellscript-create.md)|[deviceShellScript](../resources/intune-devices-deviceshellscript.md)|Crie um novo [objeto deviceShellScript.](../resources/intune-devices-deviceshellscript.md)|
-|[Excluir deviceShellScript](../api/intune-devices-deviceshellscript-delete.md)|Nenhum(a)|Exclui um [deviceShellScript](../resources/intune-devices-deviceshellscript.md).|
+|[Excluir deviceShellScript](../api/intune-devices-deviceshellscript-delete.md)|Nenhum|Exclui um [deviceShellScript](../resources/intune-devices-deviceshellscript.md).|
 |[Atualizar deviceShellScript](../api/intune-devices-deviceshellscript-update.md)|[deviceShellScript](../resources/intune-devices-deviceshellscript.md)|Atualize as propriedades de um [objeto deviceShellScript.](../resources/intune-devices-deviceshellscript.md)|
 |[atribuir ação](../api/intune-devices-deviceshellscript-assign.md)|Nenhuma|Ainda não documentado|
 
@@ -40,13 +40,13 @@ O Intune fornecerá ao cliente a capacidade de executar seus scripts do Shell no
 |blockExecutionNotifications|Boleano|Não notifica ao usuário que um script está sendo executado|
 |id|Cadeia de caracteres|Identificador exclusivo do script de gerenciamento de dispositivos.|
 |displayName|Cadeia de caracteres|Nome do script de gerenciamento de dispositivos.|
-|descrição|Cadeia de caracteres|Descrição opcional para o script de gerenciamento de dispositivos.|
+|description|Cadeia de caracteres|Descrição opcional para o script de gerenciamento de dispositivos.|
 |scriptContent|Binário|O conteúdo do script.|
 |createdDateTime|DateTimeOffset|A data e a hora em que o script de gerenciamento de dispositivos foi criado. Essa propriedade é somente leitura.|
 |lastModifiedDateTime|DateTimeOffset|A data e a hora em que o script de gerenciamento de dispositivos foi modificado pela última vez. Essa propriedade é somente leitura.|
 |runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|Indica o tipo de contexto de execução. Os valores possíveis são: `system` e `user`.|
 |fileName|String|Nome do arquivo de script.|
-|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de IDs de marca de escopo para esta instância do PowerShellScript.|
+|roleScopeTagIds|Conjunto de cadeias de caracteres|Lista de IDs de marca de escopo para esta instância do PowerShellScript.|
 
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|

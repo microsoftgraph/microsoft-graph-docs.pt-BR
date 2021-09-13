@@ -2,15 +2,15 @@
 title: Atualizar macOSSoftwareUpdateAccountSummary
 description: Atualize as propriedades de um objeto macOSSoftwareUpdateAccountSummary.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 972ce7b33bf3ad8c6fb1369d36585d82c7fbce82
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 356ac6f22ee82d2abb09768e12b822a8942db42a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58795743"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59112745"
 ---
 # <a name="update-macossoftwareupdateaccountsummary"></a>Atualizar macOSSoftwareUpdateAccountSummary
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {

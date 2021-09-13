@@ -2,15 +2,15 @@
 title: Tipo de recurso macOSSystemExtensionTypeMapping
 description: Representa um mapeamento entre identificadores de equipe para extensões do sistema macOS e tipos de extensão do sistema.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4ae89a8d47026faf68fc44bdd6c88428b9f2d222
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: fc2ff377d081c478a23f419c29b3f773f0c9c021
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58782473"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59131284"
 ---
 # <a name="macossystemextensiontypemapping-resource-type"></a>Tipo de recurso macOSSystemExtensionTypeMapping
 
@@ -25,7 +25,7 @@ Representa um mapeamento entre identificadores de equipe para extensões do sist
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|teamIdentifier|Cadeia de caracteres|Obtém ou define o identificador de equipe usado para assinar a extensão do sistema.|
+|teamIdentifier|Cadeia de Caracteres|Obtém ou define o identificador de equipe usado para assinar a extensão do sistema.|
 |allowedTypes|[macOSSystemExtensionType](../resources/intune-deviceconfig-macossystemextensiontype.md)|Obtém ou define os tipos de extensão do sistema macOS permitidos. Os valores possíveis são: `driverExtensionsAllowed`, `networkExtensionsAllowed`, `endpointSecurityExtensionsAllowed`.|
 
 ## <a name="relationships"></a>Relações

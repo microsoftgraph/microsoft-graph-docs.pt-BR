@@ -2,15 +2,15 @@
 title: Tipo de número deviceManagementConfigurationWindowsSkus
 description: Ainda não documentado
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: eccdee087d0b801b9cbd17c18ce97c5e32a51b93
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: f9fad7039a6e3cefe55b7f037e04a82dcb49a49c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58806639"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59148162"
 ---
 # <a name="devicemanagementconfigurationwindowsskus-enum-type"></a>Tipo de número deviceManagementConfigurationWindowsSkus
 
@@ -36,7 +36,7 @@ Ainda não documentado
 |iot|8 |Ainda não documentado|
 |iotEnterprise|9 |Ainda não documentado|
 |holoLens|10 |Ainda não documentado|
-|holoLensEnterprise|11 |Ainda não documentado|
+|holoLensEnterprise|11|Ainda não documentado|
 |holographicForBusiness|12 |Ainda não documentado|
 |windowsMultiSession|13|Ainda não documentado|
 |surfaceHub|14 |Ainda não documentado|

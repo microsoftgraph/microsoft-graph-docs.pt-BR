@@ -2,15 +2,15 @@
 title: Criar dataSharingConsent
 description: Crie um novo objeto dataSharingConsent.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 9edf5a73e49615599b8e6a25c6299fb8c08abcb7
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: efad8570c1170748cac027ef778352a16bbe4da0
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58797371"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59122086"
 ---
 # <a name="create-datasharingconsent"></a>Criar dataSharingConsent
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementServiceConfig.ReadWrite.All|
+|Aplicativo|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -54,12 +54,12 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar o dataSh
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|Cadeia de caracteres|A ID de consentimento de compartilhamento de dados|
-|serviceDisplayName|Cadeia de caracteres|O nome de exibição do fluxo de trabalho do serviço|
-|termsUrl|Cadeia de caracteres|The TermsUrl for the data sharing consent|
+|serviceDisplayName|Cadeia de Caracteres|O nome de exibição do fluxo de trabalho do serviço|
+|termsUrl|Cadeia de Caracteres|The TermsUrl for the data sharing consent|
 |concedido|Boleano|O estado concedido para o consentimento de compartilhamento de dados|
 |grantDateTime|DateTimeOffset|O consentimento de hora foi concedido para essa conta|
-|grantedByUpn|Cadeia de caracteres|O Upn do usuário que concedeu consentimento para essa conta|
-|grantedByUserId|Cadeia de caracteres|UserId do usuário que concedeu consentimento para essa conta|
+|grantedByUpn|Cadeia de Caracteres|O Upn do usuário que concedeu consentimento para essa conta|
+|grantedByUserId|Cadeia de Caracteres|UserId do usuário que concedeu consentimento para essa conta|
 
 
 

@@ -2,15 +2,15 @@
 title: Criar macOSSoftwareUpdateStateSummary
 description: Crie um novo objeto macOSSoftwareUpdateStateSummary.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 50b59b737cf8bb6d9fc4176de3254f78e445840f
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 0aa047f6c10c12d4e80323326b4cb3b60ac2d58c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58820636"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59142282"
 ---
 # <a name="create-macossoftwareupdatestatesummary"></a>Criar macOSSoftwareUpdateStateSummary
 
@@ -27,8 +27,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -54,10 +54,10 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar o macOSS
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|Cadeia de caracteres|Chave da entidade.|
-|displayName|String|Nome acessível humano da atualização de software|
+|displayName|Cadeia de caracteres|Nome acessível humano da atualização de software|
 |productKey|String|Chave do produto da atualização de software.|
 |updateCategory|[macOSSoftwareUpdateCategory](../resources/intune-deviceconfig-macossoftwareupdatecategory.md)|Categoria de atualização de software. Os valores possíveis são: `critical`, `configurationDataFile`, `firmware`, `other`.|
-|updateVersion|Cadeia de caracteres|Versão da atualização de software|
+|updateVersion|Cadeia de Caracteres|Versão da atualização de software|
 |state|[macOSSoftwareUpdateState](../resources/intune-deviceconfig-macossoftwareupdatestate.md)|Estado da atualização de software. Os valores possíveis são: `success` , , , , , , , , , `downloading` , , `downloaded` , , , `installing` `idle` `available` , `scheduled` `downloadFailed` `downloadInsufficientSpace` `downloadInsufficientPower` `downloadInsufficientNetwork` `installInsufficientSpace` `installInsufficientPower` `installFailed` `commandFailed` .|
 |lastUpdatedDateTime|DateTimeOffset|Última data em que o relatório para este dispositivo e a chave do produto foi atualizado.|
 
