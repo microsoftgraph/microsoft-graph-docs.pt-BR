@@ -2,15 +2,15 @@
 title: Tipo de recurso deviceManagementApplicabilityRuleDeviceMode
 description: Ainda não documentado
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d880196154568862ed56d5cb887108eedc0325d2
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: ca27eb96ad2979174bf9591bf52b6e13d5ac5eb4
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58818790"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59120147"
 ---
 # <a name="devicemanagementapplicabilityruledevicemode-resource-type"></a>Tipo de recurso deviceManagementApplicabilityRuleDeviceMode
 

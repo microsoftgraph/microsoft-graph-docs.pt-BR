@@ -2,15 +2,15 @@
 title: Criar macOsVppAppAssignedLicense
 description: Crie um novo objeto macOsVppAppAssignedLicense.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: dd9cb5a68ea0904f1c1abc7e2838bae22bbc2e07
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: efed95c5850688e1b72a3bf5d2c616deeccec665
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58793737"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59127875"
 ---
 # <a name="create-macosvppappassignedlicense"></a>Criar macOsVppAppAssignedLicense
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementApps.ReadWrite.All|
+|Aplicativo|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -54,7 +54,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar o macOsV
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|Cadeia de caracteres|Chave da entidade.|
-|userEmailAddress|Cadeia de caracteres|O endereço de email do usuário.|
+|userEmailAddress|Cadeia de Caracteres|O endereço de email do usuário.|
 |userId|Cadeia de caracteres|A ID do usuário.|
 |userName|Cadeia de caracteres|O nome do usuário.|
 |userPrincipalName|Cadeia de caracteres|O nome da entidade de segurança do usuário.|

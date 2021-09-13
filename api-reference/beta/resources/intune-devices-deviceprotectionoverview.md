@@ -2,15 +2,15 @@
 title: Tipo de recurso deviceProtectionOverview
 description: Informações de hardware de um determinado dispositivo.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: ff23b00466404bb58d43184a90a4f00dfd43fa2a
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 310d7e8623dad1baac2d77b6b8e23e527e4e4709
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58803991"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59125859"
 ---
 # <a name="deviceprotectionoverview-resource-type"></a>Tipo de recurso deviceProtectionOverview
 

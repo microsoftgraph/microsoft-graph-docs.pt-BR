@@ -2,15 +2,15 @@
 title: tipo de número kioskModeManagedHomeScreenPinComplexity
 description: Complexidade do PIN para sessão de login da Tela Inicial Gerenciada.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 0dd589ac391c81b2a54baf22bffe3729cf9880b4
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 30712a624d6ce48b5b4e701d78f8f4113f404f9a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58753250"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59111135"
 ---
 # <a name="kioskmodemanagedhomescreenpincomplexity-enum-type"></a>tipo de número kioskModeManagedHomeScreenPinComplexity
 

@@ -2,15 +2,15 @@
 title: Atualizar comanagementEligibleDevice
 description: Atualize as propriedades de um objeto comanagementEligibleDevice.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c4483bda19f1436a51afffa7d389e7e3b64a5d3a
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: eeddddce85e0853bd4e0c8e15e624dc450902702
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58792341"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59122100"
 ---
 # <a name="update-comanagementeligibledevice"></a>Atualizar comanagementEligibleDevice
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementManagedDevices.ReadWrite.All|
+|Aplicativo|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -60,8 +60,8 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [o coman
 |ownerType|[ownerType](../resources/intune-shared-ownertype.md)|OwnerType. Os valores possíveis são: `unknown`, `company`, `personal`.|
 |managementAgents|[managementAgentType](../resources/intune-devices-managementagenttype.md)|ManagementAgents. Os valores possíveis são: `eas` , , , , , , , , , `mdm` , , `easMdm` , , , `intuneClient` , `easIntuneClient` `configurationManagerClient` `configurationManagerClientMdm` `configurationManagerClientMdmEas` `unknown` `jamf` `googleCloudDevicePolicyController` `microsoft365ManagedMdm` `msSense` `intuneAosp` .|
 |managementState|[managementState](../resources/intune-devices-managementstate.md)|ManagementState. Os valores possíveis são: `managed`, `retirePending`, `retireFailed`, `wipePending`, `wipeFailed`, `unhealthy`, `deletePending`, `retireIssued`, `wipeIssued`, `wipeCanceled`, `retireCanceled`, `discovered`.|
-|referenceId|Cadeia de caracteres|ReferenceId|
-|mdmStatus|Cadeia de caracteres|MDMStatus|
+|referenceId|Cadeia de Caracteres|ReferenceId|
+|mdmStatus|Cadeia de Caracteres|MDMStatus|
 |osVersion|String|OSVersion|
 |serialNumber|String|SerialNumber|
 |fabricante|String|Fabricante|
@@ -69,7 +69,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [o coman
 |osDescription|Cadeia de caracteres|OSDescription|
 |entitySource|Int32|EntitySource|
 |userId|Cadeia de caracteres|UserId|
-|upn|Cadeia de caracteres|UPN|
+|upn|Cadeia de Caracteres|UPN|
 |userEmail|Cadeia de caracteres|UserEmail|
 |userName|Cadeia de caracteres|UserName|
 |status|[comanagementEligibleType](../resources/intune-devices-comanagementeligibletype.md)|ComanagementEligibleStatus. Os valores possíveis são: `comanaged`, `eligible`, `eligibleButNotAzureAdJoined`, `needsOsUpdate`, `ineligible`.|

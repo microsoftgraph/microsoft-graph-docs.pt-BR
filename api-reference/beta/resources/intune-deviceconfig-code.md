@@ -2,15 +2,15 @@
 title: tipo de número de código
 description: Código de erro para validação de regra.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 69c594479350524f7be25eb5075b78eb52f5b08d
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 49b023317890dcf805b96260ac6885bbb35db01a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58796632"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59120315"
 ---
 # <a name="code-enum-type"></a>tipo de número de código
 
@@ -36,7 +36,7 @@ Código de erro para validação de regra.
 |operatorNotSupported|8 |Erro do operador não suportado.|
 |datatypeMissing|9 |Erro de tipo de dados ausente.|
 |datatypeNotSupported|10 |Erro do tipo de dados não suportado.|
-|operatorDataTypeCombinationNotSupported|11 |Combinação de tipo de dados do operador não foi suportada.|
+|operatorDataTypeCombinationNotSupported|11|Combinação de tipo de dados do operador não foi suportada.|
 |moreInfoUriMissing|12 |Mais informações urlmissing error.|
 |moreInfoUriInvalid|13|Mais informações url erro inválido.|
 |moreInfoUriTooLarge|14 |Mais informações seu erro ltoo grande.|

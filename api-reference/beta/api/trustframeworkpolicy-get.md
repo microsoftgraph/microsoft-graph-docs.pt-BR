@@ -1,16 +1,16 @@
 ---
 title: Obter trustFrameworkPolicy
 description: Esta operação recupera um conteúdo trustFrameworkPolicy existente de um locatário do Azure AD B2C.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: Nickgmicrosoft
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: a536f0a1da21b0e56ce1c7cb5a8b37fd97569769a22c99f02c6d5efafb3157c3
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: a622998dfcce8e3d9824840fc41c5741e6ad789e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54139723"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59135148"
 ---
 # <a name="get-trustframeworkpolicy"></a>Obter trustFrameworkPolicy
 
@@ -26,8 +26,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante)| Policy.Read.All, Policy.ReadWrite.TrustFramework|
-|Delegada (conta pessoal da Microsoft)| Sem suporte.|
+|Delegado (conta corporativa ou de estudante)| Policy.Read.All, Policy.ReadWrite.TrustFramework|
+|Delegado (conta pessoal da Microsoft)| Sem suporte.|
 |Aplicativo|Policy.Read.All, Policy.ReadWrite.TrustFramework|
 
 A conta corporativa ou de estudante deve ser um administrador global do locatário.

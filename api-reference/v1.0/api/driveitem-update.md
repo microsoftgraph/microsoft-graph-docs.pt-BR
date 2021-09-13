@@ -2,16 +2,16 @@
 author: JeremyKelley
 ms.date: 09/10/2017
 title: Atualizar um arquivo ou uma pasta
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: sharepoint
 description: Atualize os metadados de um DriveItem por ID ou caminho.
 doc_type: apiPageType
-ms.openlocfilehash: 01456ff44b20641b13b2718c20e87ae601ef764f
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: 4af377c0f03436fa6364c347dce985f84fae3711
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50240185"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59037982"
 ---
 # <a name="update-driveitem-properties"></a>Atualizar propriedades de DriveItem
 
@@ -53,8 +53,7 @@ PATCH /users/{user-id}/drive/items/{item-id}
 
 No corpo da solicitação, forneça os valores para as propriedades que devem ser atualizadas.
 
-Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade.
-Para obter melhor desempenho, seu aplicativo não deve incluir propriedades que não tenham sido alteradas.
+As propriedades existentes que não estão incluídas no órgão de solicitação manterão seus valores anteriores ou serão recalculadas com base nas alterações de outros valores de propriedade. Para obter o melhor desempenho, seu aplicativo não deve incluir propriedades que não tenham sido alteradas.
 
 ## <a name="response"></a>Resposta
 

@@ -2,15 +2,15 @@
 title: Tipo de recurso deviceManagementConfigurationReferenceSettingValue
 description: Modelo para ReferenceSettingValue
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: fe1720b71d5de294d9c8f2ac57b9e1bd2bab7c72
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 12b6e60b63be0303603c63fa359bbdcc1820606d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58805377"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59148218"
 ---
 # <a name="devicemanagementconfigurationreferencesettingvalue-resource-type"></a>Tipo de recurso deviceManagementConfigurationReferenceSettingValue
 
@@ -30,7 +30,7 @@ Herda [de deviceManagementConfigurationStringSettingValue](../resources/intune-d
 |:---|:---|:---|
 |settingValueTemplateReference|[deviceManagementConfigurationSettingValueTemplateReference](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingvaluetemplatereference.md)|Referência de modelo de valor de configuração Herdada [de deviceManagementConfigurationSettingValue](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingvalue.md)|
 |value|Cadeia de caracteres|Valor da configuração da cadeia de caracteres. Herdado [de deviceManagementConfigurationStringSettingValue](../resources/intune-deviceconfigv2-devicemanagementconfigurationstringsettingvalue.md)|
-|observação|Cadeia de caracteres|Uma observação que o administrador pode usar para colocar algumas informações contextuais|
+|observação|Cadeia de Caracteres|Uma observação que o administrador pode usar para colocar algumas informações contextuais|
 
 ## <a name="relationships"></a>Relações
 Nenhum

@@ -2,15 +2,15 @@
 title: Tipo de recurso windows10ImportedPFXCertificateProfile
 description: Windows 10 Perfil de certificado de importação de PFX da Área de Trabalho e Celular
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: e546d60deb8f63cd8c53a7064cf89b4a82843970
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 193f4d92bb5237f14cca0279a42fc634094a803a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58790651"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59146062"
 ---
 # <a name="windows10importedpfxcertificateprofile-resource-type"></a>Tipo de recurso windows10ImportedPFXCertificateProfile
 
@@ -31,7 +31,7 @@ Herda do [windowsCertificateProfileBase](../resources/intune-deviceconfig-window
 |[Listar windows10ImportedPFXCertificateProfiles](../api/intune-deviceconfig-windows10importedpfxcertificateprofile-list.md)|[Coleção windows10ImportedPFXCertificateProfile](../resources/intune-deviceconfig-windows10importedpfxcertificateprofile.md)|Listar propriedades e relações dos [objetos windows10ImportedPFXCertificateProfile.](../resources/intune-deviceconfig-windows10importedpfxcertificateprofile.md)|
 |[Obter windows10ImportedPFXCertificateProfile](../api/intune-deviceconfig-windows10importedpfxcertificateprofile-get.md)|[windows10ImportedPFXCertificateProfile](../resources/intune-deviceconfig-windows10importedpfxcertificateprofile.md)|Leia propriedades e relações do [objeto windows10ImportedPFXCertificateProfile.](../resources/intune-deviceconfig-windows10importedpfxcertificateprofile.md)|
 |[Criar windows10ImportedPFXCertificateProfile](../api/intune-deviceconfig-windows10importedpfxcertificateprofile-create.md)|[windows10ImportedPFXCertificateProfile](../resources/intune-deviceconfig-windows10importedpfxcertificateprofile.md)|Crie um novo [objeto windows10ImportedPFXCertificateProfile.](../resources/intune-deviceconfig-windows10importedpfxcertificateprofile.md)|
-|[Excluir windows10ImportedPFXCertificateProfile](../api/intune-deviceconfig-windows10importedpfxcertificateprofile-delete.md)|Nenhum(a)|Exclui um [windows10ImportedPFXCertificateProfile](../resources/intune-deviceconfig-windows10importedpfxcertificateprofile.md).|
+|[Excluir windows10ImportedPFXCertificateProfile](../api/intune-deviceconfig-windows10importedpfxcertificateprofile-delete.md)|Nenhum|Exclui um [windows10ImportedPFXCertificateProfile](../resources/intune-deviceconfig-windows10importedpfxcertificateprofile.md).|
 |[Atualizar windows10ImportedPFXCertificateProfile](../api/intune-deviceconfig-windows10importedpfxcertificateprofile-update.md)|[windows10ImportedPFXCertificateProfile](../resources/intune-deviceconfig-windows10importedpfxcertificateprofile.md)|Atualize as propriedades de um [objeto windows10ImportedPFXCertificateProfile.](../resources/intune-deviceconfig-windows10importedpfxcertificateprofile.md)|
 
 ## <a name="properties"></a>Propriedades
@@ -39,13 +39,13 @@ Herda do [windowsCertificateProfileBase](../resources/intune-deviceconfig-window
 |:---|:---|:---|
 |id|Cadeia de caracteres|Chave da entidade. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de marcas de escopo para esta instância entity. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|roleScopeTagIds|String collection|Lista de marcas de escopo para esta instância entity. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |supportsScopeTags|Boleano|Indica se a Configuração de Dispositivo subjacente dá suporte ou não à atribuição de marcas de escopo. A atribuição à propriedade ScopeTags não é permitida quando esse valor é falso e as entidades não estarão visíveis para usuários com escopo. Isso ocorre para políticas herdadas criadas no Silverlight e podem ser resolvidas excluindo e recriando a política no Portal do Azure. Essa propriedade é somente leitura. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|A aplicabilidade da edição do sistema operacional para esta Política. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|A regra de aplicabilidade da versão do sistema operacional para esta Política. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|A regra de aplicabilidade do modo de dispositivo para esta Política. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|DateTime em que o objeto foi criado. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|descrição|Cadeia de caracteres|O administrador forneceu a descrição da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|description|Cadeia de caracteres|O administrador forneceu a descrição da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |displayName|Cadeia de caracteres|O administrador forneceu o nome da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |versão|Int32|Versão da configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |renewalThresholdPercentage|Int32|Porcentagem de limite de renovação de certificado. Valores válidos de 1 a 99 Herdados do [windowsCertificateProfileBase](../resources/intune-deviceconfig-windowscertificateprofilebase.md)|

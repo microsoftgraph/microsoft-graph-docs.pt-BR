@@ -2,15 +2,15 @@
 title: Tipo de recurso deviceManagementConfigurationStringSettingValueTemplate
 description: Modelo de valor de configuração de cadeia de caracteres
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0961b4cbb8ff844758a2299d65b60bceb72e2dab
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 8f09a8e9197a88a7de5954172703c1e18a109e5f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58805307"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59148190"
 ---
 # <a name="devicemanagementconfigurationstringsettingvaluetemplate-resource-type"></a>Tipo de recurso deviceManagementConfigurationStringSettingValueTemplate
 
@@ -28,7 +28,7 @@ Herda [de deviceManagementConfigurationSimpleSettingValueTemplate](../resources/
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|settingValueTemplateId|Cadeia de caracteres|Definição da ID do Modelo de Valor Herdada [de deviceManagementConfigurationSimpleSettingValueTemplate](../resources/intune-deviceconfigv2-devicemanagementconfigurationsimplesettingvaluetemplate.md)|
+|settingValueTemplateId|Cadeia de Caracteres|Definição da ID do Modelo de Valor Herdada [de deviceManagementConfigurationSimpleSettingValueTemplate](../resources/intune-deviceconfigv2-devicemanagementconfigurationsimplesettingvaluetemplate.md)|
 |defaultValue|[deviceManagementConfigurationStringSettingValueDefaultTemplate](../resources/intune-deviceconfigv2-devicemanagementconfigurationstringsettingvaluedefaulttemplate.md)|Modelo padrão de valor de configuração de cadeia de caracteres.|
 
 ## <a name="relationships"></a>Relações

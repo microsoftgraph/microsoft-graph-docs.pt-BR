@@ -2,15 +2,15 @@
 title: Tipo de recurso windowsKioskUWPApp
 description: A classe base para um tipo de aplicativo
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0f33a7800e055ec885cf03a467b1216b310fa6e7
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 9ef0294701a660219a1c74119cc2af2912a315df
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58797532"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59105969"
 ---
 # <a name="windowskioskuwpapp-resource-type"></a>Tipo de recurso windowsKioskUWPApp
 
@@ -32,9 +32,9 @@ Herda do [windowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappb
 |nome|Cadeia de caracteres|Representa o nome amigável de um aplicativo Herdado do [windowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md)|
 |appType|[windowsKioskAppType](../resources/intune-deviceconfig-windowskioskapptype.md)|O tipo de aplicativo Herdado do [windowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md). Os valores possíveis são: `unknown`, `store`, `desktop`, `aumId`.|
 |autoLaunch|Boleano|Permitir que o aplicativo seja lançado automaticamente no modo de quiosque de vários aplicativos Herdado do [windowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md)|
-|appUserModelId|Cadeia de caracteres|Esta é a única ID do Modelo de Usuário de Aplicativo (AUMID) que estará disponível para iniciar o uso enquanto estiver no modo Quiosque|
+|appUserModelId|Cadeia de Caracteres|Esta é a única ID do Modelo de Usuário de Aplicativo (AUMID) que estará disponível para iniciar o uso enquanto estiver no modo Quiosque|
 |appId|Cadeia de caracteres|Isso faz referência a um Aplicativo do Intune que será destinado às mesmas atribuições que a configuração do Quiosque|
-|containedAppId|Cadeia de caracteres|Isso faz referência a um aplicativo contido de um aplicativo do Intune|
+|containedAppId|Cadeia de Caracteres|Isso faz referência a um aplicativo contido de um aplicativo do Intune|
 
 ## <a name="relationships"></a>Relações
 Nenhum
