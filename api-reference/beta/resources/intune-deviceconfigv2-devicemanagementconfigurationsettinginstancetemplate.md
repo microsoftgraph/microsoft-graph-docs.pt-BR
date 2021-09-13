@@ -2,15 +2,15 @@
 title: Tipo de recurso deviceManagementConfigurationSettingInstanceTemplate
 description: Modelo de instância de configuração
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: b4ebc516dc521c022a5b5a5e9eeb460dec3e4497
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 13da26610afbfcdc0c44d8724c661ab6ba4effb8
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58782109"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59148407"
 ---
 # <a name="devicemanagementconfigurationsettinginstancetemplate-resource-type"></a>Tipo de recurso deviceManagementConfigurationSettingInstanceTemplate
 
@@ -25,8 +25,8 @@ Modelo de instância de configuração
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|settingInstanceTemplateId|Cadeia de caracteres|Id do modelo de instância de configuração|
-|settingDefinitionId|Cadeia de caracteres|Definindo id de definição|
+|settingInstanceTemplateId|Cadeia de Caracteres|Id do modelo de instância de configuração|
+|settingDefinitionId|Cadeia de Caracteres|Definindo id de definição|
 |isRequired|Booliano|Indica se uma política deve especificar essa configuração.|
 
 ## <a name="relationships"></a>Relações

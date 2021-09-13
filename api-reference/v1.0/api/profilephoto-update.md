@@ -1,16 +1,16 @@
 ---
 title: Atualizar profilephoto
 description: Atualize a foto do **usuário** conectado ou do **grupo** ou **contato** especificado.
-localization_priority: Priority
+ms.localizationpriority: high
 author: kevinbellinger
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: b4b3ef3e40f540c0ad3a8cfb75631e7069976b7f
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: fb813fbd135959f225d418fa94e7abe913612c15
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52786314"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59104807"
 ---
 # <a name="update-profilephoto"></a>Atualizar profilephoto
 
@@ -25,13 +25,33 @@ Você pode usar PATCH ou PUT para esta operação na versão 1.0.
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-- Foto do perfil do **usuário** conectado – User.ReadWrite, User.ReadWrite.All
-- Foto do perfil de um **grupo** – Group.ReadWrite.All
-- Foto de um **contato** – Contacts.ReadWrite
+### <a name="to-update-the-profile-photo-of-the-signed-in-user"></a>Para atualizar a foto do perfil do usuário conectado
 
-> **Observação** Para atualizar a foto de qualquer usuário na organização, o aplicativo deve ter a permissão de aplicativo User.ReadWrite.All e chamar esta API usando a própria identidade, não em nome de um usuário. Para saber mais, veja como [obter acesso sem um usuário conectado](/graph/auth-v2-service).
+|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegado (conta corporativa ou de estudante)      |   User.ReadWrite, User.ReadWrite.All           |
+|Delegado (conta pessoal da Microsoft)      |   Sem suporte.            |
+|Aplicativo      |    User.ReadWrite.All           |
 
-> **Observação:** Há um [problema conhecido](/graph/known-issues#groups)ao acessar fotos de grupo usando permissões de aplicativo.
+### <a name="to-update-the-profile-photo-of-a-group"></a>Para atualizar a foto de perfil de um grupo
+
+|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegado (conta corporativa ou de estudante)      |   Group.ReadWrite.All           |
+|Delegado (conta pessoal da Microsoft)      |   Sem suporte.            |
+|Aplicativo      |    Group.ReadWrite.All           |
+
+### <a name="to-update-the-profile-photo-of-a-contact"></a>Para atualizar a foto de perfil de um contato
+
+|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegado (conta corporativa ou de estudante)      |   Contacts.ReadWrite           |
+|Delegado (conta pessoal da Microsoft)      |   Sem suporte.            |
+|Aplicativo      |    Contacts.ReadWrite           |
+
+> **Observações:** Para atualizar a foto de qualquer usuário na organização, o aplicativo deve ter a permissão de aplicativo User.ReadWrite.All e chamar esta API usando sua própria identidade, e não em nome de um usuário. Para saber mais, veja como [obter acesso sem um usuário conectado](/graph/auth-v2-service).
+>
+> Atualmente, há um [problema conhecido](/graph/known-issues#groups) ao acessar fotos de grupo usando permissões de aplicativos.
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->

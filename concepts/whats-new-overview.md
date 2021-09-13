@@ -2,13 +2,13 @@
 title: Novidades do Microsoft Graph
 description: O que há de novo no Microsoft Graph
 author: angelgolfer-ms
-localization_priority: Priority
-ms.openlocfilehash: ea4df31ae070991725b3e2dcbe75cc9e428082b1
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.localizationpriority: high
+ms.openlocfilehash: 8935a5e0cc075fb88ea39fa6390be49a52a68f25
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58786260"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59133972"
 ---
 # <a name="whats-new-in-microsoft-graph"></a>Novidades do Microsoft Graph
 
@@ -89,7 +89,7 @@ Obtenha uma coleção de erros no ciclo de vida de uma [instância de revisão d
 ### <a name="teamwork"></a>Trabalho em equipe
 - [Inscreva-se para alterar notificações no recurso de chat](teams-changenotifications-chat.md).
 - [Inscreva-se para alterar notificações de usuários em um chat](teams-changenotifications-chatmembership.md), em um [canal](/graph/api/resources/channel?view=graph-rest-beta&preserve-view=true) ou em uma [equipe](/graph/api/resources/team?view=graph-rest-beta&preserve-view=true) (ou seja, recursos de [conversationMember](/graph/api/resources/conversationmember?view=graph-rest-beta&preserve-view=true)).
-- Obtenha detalhes de um evento que aconteceu em um chat, canal ou equipe acessando [eventMessageDetail](/graph/api/resources/EventMessageDetail?view=graph-rest-beta&preserve-view=true) de um [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta&preserve-view=true) ou [chat](/graph/api/resources/chat?view=graph-rest-beta&preserve-view=true). Por exemplo, membros adicionados a um canal ou chat, e a descrição da equipe atualizada.
+- Obtenha detalhes de um evento que aconteceu em um chat, canal ou equipe, acessando [eventMessageDetail](/graph/api/resources/EventMessageDetail?view=graph-rest-beta&preserve-view=true) de um [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta&preserve-view=true) ou [chat](/graph/api/resources/chat?view=graph-rest-beta&preserve-view=true). Por exemplo, membros adicionados a um canal ou chat, e a descrição da equipe atualizada.
 
 
 ## <a name="want-to-stay-in-the-loop"></a>Quer ficar por dentro?

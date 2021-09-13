@@ -2,15 +2,15 @@
 title: Listar pessoas
 description: Recupere uma coleção de objetos person ordenados por relevância para o usuário, o que é determinado pelo padrões de comunicação e colaboração e pelas relações comerciais do usuário.
 author: dkershaw10
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: insights
 doc_type: apiPageType
-ms.openlocfilehash: 0ae6dd0d81435626b4205eba581576002ef35de4
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f33aea8dc2dd441cd14bca7332b1568627455617
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47992080"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59044822"
 ---
 # <a name="list-people"></a>Listar pessoas
 
@@ -46,8 +46,8 @@ Este método oferece suporte aos [ parâmetros de consulta OData ](/graph/query-
 |Nome|Valor|Descrição|
 |:---------------|:--------|:-------|
 |$filter|string|Limita a resposta apenas às pessoas cujo registro contém os critérios especificados.|
-|$orderby|cadeia de caracteres|Por padrão, as pessoas na resposta são classificadas pela relevância delas à consulta. Você pode alterar a ordem das pessoas na resposta usando o parâmetro *$orderby*.|
-|$search|string|Pesquisar pessoas por nome ou alias. Suporta correspondência difusa. O parâmetro só funciona para pesquisar pessoas relevantes do usuário conectado, não para pesquisar pessoas relevantes para outros usuários. Também dá suporte a `topic` palavra-chave para encontrar pessoas com base em tópicos extraídos a partir de conversas de email com essa pessoa. Confira a seção *Realizar uma pesquisa difusa * em [Obter informações relevantes sobre pessoas](/graph/people-example#perform-a-fuzzy-search) para informações e exemplos. |
+|$orderby|cadeia de caracteres|Por padrão, as pessoas na resposta são classificadas por relevância para sua consulta. Você pode alterar a ordem das pessoas na resposta usando o parâmetro *$orderby*.|
+|$search|string|Pesquisar pessoas por nome ou alias. Suporta correspondência difusa. O parâmetro só funciona para pesquisar pessoas relevantes do usuário conectado, não para pesquisar pessoas relevantes para outros usuários. Também dá suporte a `topic` palavra-chave para encontrar pessoas com base em tópicos extraídos a partir de conversas de email com essa pessoa. Confira a seção *Realizar uma pesquisa difusa* em [Obter informações relevantes sobre pessoas](/graph/people-example#perform-a-fuzzy-search) para informações e exemplos. |
 |$select|string|Lista separada por vírgulas de propriedades para incluir na resposta. Para um desempenho ideal, selecione apenas o subconjunto de propriedades necessário.|
 |$skip|int|Ignorar os primeiros n resultados, útil para paginação. Não é suportado ao usar *$search*.|
 |$top|int|Número de resultados a ser retornado.|

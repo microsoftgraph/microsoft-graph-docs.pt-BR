@@ -2,15 +2,15 @@
 title: Tipo de recurso keyIntegerValuePair
 description: Um par de valores-chave com uma chave de cadeia de caracteres e um valor inteiro.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 109171d7cfa4c99cb8e46837e8c995b6c630e76c
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 4ecabcb6f4704dc64dddfdb46dc6d26b48e16d05
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58797898"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59131298"
 ---
 # <a name="keyintegervaluepair-resource-type"></a>Tipo de recurso keyIntegerValuePair
 
@@ -28,7 +28,7 @@ Herda de [keyTypedValuePair](../resources/intune-deviceconfig-keytypedvaluepair.
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|key|Cadeia de caracteres|A chave de cadeia de caracteres do par de valores-chave. Herdado de [keyTypedValuePair](../resources/intune-deviceconfig-keytypedvaluepair.md)|
+|key|Cadeia de Caracteres|A chave de cadeia de caracteres do par de valores-chave. Herdado de [keyTypedValuePair](../resources/intune-deviceconfig-keytypedvaluepair.md)|
 |valor|Int32|O valor inteiro do par de valores-chave.|
 
 ## <a name="relationships"></a>Relações
