@@ -2,14 +2,14 @@
 title: Adicionar imagens, vídeos e arquivos a páginas do OneNote
 description: " Blocos de anotações empresariais no Microsoft 365"
 author: jewan-microsoft
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: onenote
-ms.openlocfilehash: 06252d15755d7e11cce703657cb0aea0ff914075021c1d11cf548c96359fe4dc
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: e22b573a65ebd2baabfc39428f580737dddc716d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54159670"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59035511"
 ---
 # <a name="add-images-videos-and-files-to-onenote-pages"></a>Adicionar imagens, vídeos e arquivos a páginas do OneNote
 
