@@ -2,15 +2,15 @@
 title: Tipo de número macOSSoftwareUpdateCategory
 description: Categoria de Atualização de Software MacOS
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 9bd6c8cd61a084aceed597538f6a51bd6e098787
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 2f0200eb9786a5a2f8ae9eea5ebe7b7a9d166fd9
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58801827"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59146671"
 ---
 # <a name="macossoftwareupdatecategory-enum-type"></a>Tipo de número macOSSoftwareUpdateCategory
 

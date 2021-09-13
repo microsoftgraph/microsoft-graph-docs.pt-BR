@@ -2,15 +2,15 @@
 title: Criar certificateConnectorDetails
 description: Crie um novo objeto certificateConnectorDetails.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 12333d0f2c509fe9d876a064f2ac020f174326d2
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: ec640219d77c991804f3ab5680c956a203df755f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58820310"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59111996"
 ---
 # <a name="create-certificateconnectordetails"></a>Criar certificateConnectorDetails
 
@@ -27,8 +27,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -54,8 +54,8 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar o certif
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|Cadeia de caracteres|Identificador exclusivo para este conjunto de ConnectorDetails.|
-|connectorName|String|Nome do conector (definido durante o registro).|
-|machineName|Cadeia de caracteres|Nome do computador que hospeda esse serviço de conector.|
+|connectorName|Cadeia de Caracteres|Nome do conector (definido durante o registro).|
+|machineName|Cadeia de Caracteres|Nome do computador que hospeda esse serviço de conector.|
 |enrollmentDateTime|DateTimeOffset|Data/hora em que esse conector foi inscrito.|
 |lastCheckinDateTime|DateTimeOffset|Data/hora em que esse conector se conectou pela última vez ao serviço.|
 

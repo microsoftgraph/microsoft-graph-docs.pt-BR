@@ -2,15 +2,15 @@
 title: Tipo de recurso importedWindowsAutopilotDeviceIdentity
 description: Dispositivos importados do Windows AutoPilot.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 650e1dc17ce6093c2b630acef660c365f8d27098
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 511801bf9af50efc2c5f215e5e5cd3f88e0ce97a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58802751"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59141001"
 ---
 # <a name="importedwindowsautopilotdeviceidentity-resource-type"></a>Tipo de recurso importedWindowsAutopilotDeviceIdentity
 
@@ -35,13 +35,13 @@ Dispositivos importados do Windows AutoPilot.
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|Cadeia de caracteres|O GUID do objeto.|
-|groupTag|Cadeia de caracteres|Marca de grupo do dispositivo Windows piloto automático.|
+|groupTag|Cadeia de Caracteres|Marca de grupo do dispositivo Windows piloto automático.|
 |serialNumber|Cadeia de caracteres|Número de série do dispositivo do Windows AutoPilot.|
 |productKey|Cadeia de caracteres|Chave do produto (Product Key) do dispositivo do Windows AutoPilot.|
-|importId|Cadeia de caracteres|A ID de Importação do dispositivo Windows piloto automático.|
+|importId|Cadeia de Caracteres|A ID de Importação do dispositivo Windows piloto automático.|
 |hardwareIdentifier|Binária|Blob de hardware do dispositivo do Windows AutoPilot.|
 |state|[importedWindowsAutopilotDeviceIdentityState](../resources/intune-enrollment-importedwindowsautopilotdeviceidentitystate.md)|Estado atual do dispositivo importado.|
-|assignedUserPrincipalName|Cadeia de caracteres|UPN do usuário que o dispositivo será atribuído|
+|assignedUserPrincipalName|Cadeia de Caracteres|UPN do usuário que o dispositivo será atribuído|
 
 ## <a name="relationships"></a>Relações
 Nenhum

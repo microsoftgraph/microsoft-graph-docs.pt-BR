@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso office365ServicesUserCounts
 description: Veja a seguir uma representação JSON do recurso.
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: reports
 author: sarahwxy
 doc_type: resourcePageType
-ms.openlocfilehash: 5e243e77595e361e271a8ecde3c36ba82ed85ba4c404154f7b0947bba762f145
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 6470804a26a35b1aaf8411d5c0d5fddd2a3e0bbf
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54229413"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59095322"
 ---
 # <a name="office365servicesusercounts-resource-type"></a>Tipo de recurso office365ServicesUserCounts
 
@@ -35,7 +35,7 @@ Namespace: microsoft.graph
 | teamsInactive            | Int64  | O número de usuários inativos no Microsoft Teams.     |
 | office365Active          | Int64  | O número de usuários ativos Microsoft 365.   |
 | office365Inactive        | Int64  | O número de usuários inativos no Microsoft 365.     |
-| reportPeriod             | Cadeia de caracteres | O número de dias que o relatório aborda.    |
+| reportPeriod             | Cadeia de Caracteres | O número de dias que o relatório aborda.    |
 
 ## <a name="json-representation"></a>Representação JSON
 

@@ -2,15 +2,15 @@
 title: ratingNewZealandMoviesType tipo de número
 description: Rótulos de classificação de filmes na Nova Zelândia
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 219e2d27823924e086d7cecde0925e3f162f13d9
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 82c821faf0ed323c560fa62b127a6a9c9159c774
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58801112"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59106109"
 ---
 # <a name="ratingnewzealandmoviestype-enum-type"></a>ratingNewZealandMoviesType tipo de número
 

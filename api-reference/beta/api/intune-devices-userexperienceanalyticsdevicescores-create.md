@@ -2,15 +2,15 @@
 title: Criar userExperienceAnalyticsDeviceScores
 description: Crie um novo objeto userExperienceAnalyticsDeviceScores.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: fdfd86a849fffcd8ef227ef1362c241ea7849e95
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: f91e733bddc89c8122593e4ea461523db4da9873
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58790266"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59116658"
 ---
 # <a name="create-userexperienceanalyticsdevicescores"></a>Criar userExperienceAnalyticsDeviceScores
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementManagedDevices.ReadWrite.All|
+|Aplicativo|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {

@@ -2,15 +2,15 @@
 title: Excluir iosDerivedCredentialAuthenticationConfiguration
 description: Exclui iosDerivedCredentialAuthenticationConfiguration.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6ce45624d5f6dfc3f3e84b947d5945d0d62445e3
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: db571de9b916fa5902aa93129885f83605130622
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58806170"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59117022"
 ---
 # <a name="delete-iosderivedcredentialauthenticationconfiguration"></a>Excluir iosDerivedCredentialAuthenticationConfiguration
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {

@@ -2,15 +2,15 @@
 title: Tipo de recurso macOSPrivacyAccessControlItem
 description: Representa preferências de privacidade por processo.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 158729518b47be682e00bea9d77b8a7308c9d4b1
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 90e73831f6dd3b8163a1c0d9c11b7944c9623958
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58789633"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59091710"
 ---
 # <a name="macosprivacyaccesscontrolitem-resource-type"></a>Tipo de recurso macOSPrivacyAccessControlItem
 
@@ -26,20 +26,20 @@ Representa preferências de privacidade por processo.
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |displayName|Cadeia de caracteres|O nome de exibição do aplicativo, processo ou executável.|
-|identificador|Cadeia de caracteres|A ID do pacote ou o caminho do aplicativo, processo ou executável.|
+|identificador|Cadeia de Caracteres|A ID do pacote ou o caminho do aplicativo, processo ou executável.|
 |identifierType|[macOSProcessIdentifierType](../resources/intune-deviceconfig-macosprocessidentifiertype.md)|Uma ID de pacote é usada para identificar um aplicativo. Um caminho é usado para identificar um processo ou executável. Os valores possíveis são: `bundleID` e `path`.|
-|codeRequirement|Cadeia de caracteres|Insira o requisito de código, que pode ser obtido com o comando 'codesign –display -r –' no aplicativo Terminal. Inclua tudo depois de '=>'.|
+|codeRequirement|Cadeia de Caracteres|Insira o requisito de código, que pode ser obtido com o comando 'codesign –display -r –' no aplicativo Terminal. Inclua tudo depois de '=>'.|
 |staticCodeValidation|Boleano|Valida estáticamente o requisito de código. Use essa configuração se o processo invalidar sua assinatura de código dinâmico.|
 |blockCamera|Boleano|Bloquear o acesso ao aplicativo câmera.|
-|blockMicrophone|Booliano|Bloquear o acesso ao microfone.|
+|blockMicrophone|Boleano|Bloquear o acesso ao microfone.|
 |blockScreenCapture|Boleano|Impedir que o aplicativo captura o conteúdo da exibição do sistema. Requer macOS 10.15 ou posterior.|
-|blockListenEvent|Booliano|Impedir que o aplicativo ou o processo ouça eventos de dispositivos de entrada, como mouse, teclado e trackpad. Requer macOS 10.15 ou posterior.|
+|blockListenEvent|Boleano|Impedir que o aplicativo ou o processo ouça eventos de dispositivos de entrada, como mouse, teclado e trackpad. Requer macOS 10.15 ou posterior.|
 |speechRecognition|[enablement](../resources/intune-shared-enablement.md)|Permitir ou bloquear o acesso à instalação de reconhecimento de fala do sistema. Os valores possíveis são: `notConfigured`, `enabled`, `disabled`.|
 |acessibilidade|[enablement](../resources/intune-shared-enablement.md)|Permitir que o aplicativo ou o processo controle o Mac por meio do subsistema Acessibilidade. Os valores possíveis são: `notConfigured`, `enabled`, `disabled`.|
 |addressBook|[enablement](../resources/intune-shared-enablement.md)|Permitir ou bloquear o acesso às informações de contato gerenciadas por Contatos. Os valores possíveis são: `notConfigured`, `enabled`, `disabled`.|
 |calendar|[enablement](../resources/intune-shared-enablement.md)|Permitir ou bloquear o acesso às informações de evento gerenciadas pelo Calendário. Os valores possíveis são: `notConfigured`, `enabled`, `disabled`.|
 |lembretes|[enablement](../resources/intune-shared-enablement.md)|Permitir ou bloquear o acesso a informações gerenciadas por Lembretes. Os valores possíveis são: `notConfigured`, `enabled`, `disabled`.|
-|photos|[enablement](../resources/intune-shared-enablement.md)|Permitir ou bloquear o acesso a imagens gerenciadas por Fotos. Os valores possíveis são: `notConfigured`, `enabled`, `disabled`.|
+|fotos|[enablement](../resources/intune-shared-enablement.md)|Permitir ou bloquear o acesso a imagens gerenciadas por Fotos. Os valores possíveis são: `notConfigured`, `enabled`, `disabled`.|
 |mediaLibrary|[enablement](../resources/intune-shared-enablement.md)|Permitir ou bloquear o acesso à música e à biblioteca de mídia. Os valores possíveis são: `notConfigured`, `enabled`, `disabled`.|
 |fileProviderPresence|[enablement](../resources/intune-shared-enablement.md)|Permitir que o aplicativo ou o processo acesse arquivos gerenciados pela extensão do provedor de arquivos de outro aplicativo. Requer macOS 10.15 ou posterior. . Os valores possíveis são: `notConfigured`, `enabled`, `disabled`.|
 |systemPolicyAllFiles|[enablement](../resources/intune-shared-enablement.md)|Controlar o acesso a todos os arquivos protegidos em um dispositivo. Os arquivos podem estar em locais como emails, mensagens, aplicativos e configurações administrativas. Aplique essa configuração com cuidado. Os valores possíveis são: `notConfigured`, `enabled`, `disabled`.|

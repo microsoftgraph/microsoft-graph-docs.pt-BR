@@ -2,15 +2,15 @@
 title: Tipo de recurso groupPolicyDefinitionFile
 description: A entidade representa um arquivo XML ADMX (Modelo Administrativo). O arquivo ADMX contém uma coleção de definições de política de grupo e seus locais por caminho de categoria. O arquivo de definição de política de grupo também contém os idiomas suportados conforme determinado pelos arquivos de idioma DEPENDENTES ADML (Modelo Administrativo).
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 887c1b3b8b744e45b265fedff2bd2b5fd767fe4b
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 884d2239eda3a86ed625fc2f7c1fa82e1bebd11a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58796191"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59086124"
 ---
 # <a name="grouppolicydefinitionfile-resource-type"></a>Tipo de recurso groupPolicyDefinitionFile
 
@@ -32,12 +32,12 @@ A entidade representa um arquivo XML ADMX (Modelo Administrativo). O arquivo ADM
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |displayName|Cadeia de caracteres|O nome amigável localizado do arquivo ADMX.|
-|descrição|Cadeia de caracteres|A descrição localizada das configurações de política no arquivo ADMX. O valor padrão é vazio.|
-|languageCodes|Coleção de cadeias de caracteres|Os códigos de idioma com suporte para o arquivo ADMX.|
-|targetPrefix|Cadeia de caracteres|Especifica o nome lógico que se refere ao namespace no arquivo ADMX.|
-|targetNamespace|Cadeia de caracteres|Especifica o URI usado para identificar o namespace no arquivo ADMX.|
+|description|Cadeia de caracteres|A descrição localizada das configurações de política no arquivo ADMX. O valor padrão é vazio.|
+|languageCodes|String collection|Os códigos de idioma com suporte para o arquivo ADMX.|
+|targetPrefix|Cadeia de Caracteres|Especifica o nome lógico que se refere ao namespace no arquivo ADMX.|
+|targetNamespace|Cadeia de Caracteres|Especifica o URI usado para identificar o namespace no arquivo ADMX.|
 |policyType|[groupPolicyType](../resources/intune-grouppolicy-grouppolicytype.md)|Especifica o tipo de política de grupo. Os valores possíveis são: `admxBacked` e `admxIngested`.|
-|revision|Cadeia de caracteres|A versão de revisão associada ao arquivo.|
+|revision|Cadeia de Caracteres|A versão de revisão associada ao arquivo.|
 |id|Cadeia de caracteres|Chave da entidade.|
 |lastModifiedDateTime|DateTimeOffset|A data e a hora em que a entidade foi modificada pela última vez.|
 

@@ -2,15 +2,15 @@
 title: tipo de número intendedPurpose
 description: Opções de importação PFX.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 2e5ca323b5f19fbc42ff9858d2ae2830d762c95f
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: e592d6bbb055ba3112c7a1d4bad300c4880fc52e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58805419"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59131431"
 ---
 # <a name="intendedpurpose-enum-type"></a>tipo de número intendedPurpose
 

@@ -2,15 +2,15 @@
 title: Tipo de número defenderRealtimeScanDirection
 description: Valores possíveis para monitorar a atividade do arquivo.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: b444f72dd3425251269da826ea156ebdf50d69cb
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 95c1c490515dce52f340d33741f95d347e47c578
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58801526"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59106291"
 ---
 # <a name="defenderrealtimescandirection-enum-type"></a>Tipo de número defenderRealtimeScanDirection
 

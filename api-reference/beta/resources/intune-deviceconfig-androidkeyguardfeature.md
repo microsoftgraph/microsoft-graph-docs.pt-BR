@@ -2,15 +2,15 @@
 title: tipo de número androidKeyguardFeature
 description: Recurso de keyguard do Android.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: c698ac8e4103f83aa2388d292e3c202b13222426
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 61995572516ee1ea9eabfea9e868bb775e085ba9
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58785756"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59101748"
 ---
 # <a name="androidkeyguardfeature-enum-type"></a>tipo de número androidKeyguardFeature
 

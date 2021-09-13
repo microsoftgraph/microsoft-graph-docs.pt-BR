@@ -2,15 +2,15 @@
 title: Tipo de recurso policyRoot
 description: Tipo de recurso expondo propriedades de navegação para o singleton de políticas.
 author: shauliu1
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: bf51c84988ab6f549052a88943275075d2d96800
-ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
+ms.openlocfilehash: a49530f2db8d22d275e0fd9eba3a0dbe1daab108
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2021
-ms.locfileid: "58454035"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59115027"
 ---
 # <a name="policyroot-resource-type"></a>Tipo de recurso policyRoot
 
@@ -25,7 +25,7 @@ Nenhum
 Nenhuma
 
 
-## <a name="relationships"></a>Relacionamentos
+## <a name="relationships"></a>Relações
 | Relação                              | Tipo                                                                                                      | Descrição                                                                                                                                                          |
 |:------------------------------------------|:----------------------------------------------------------------------------------------------------------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | accessReviewPolicy                        | [accessReviewPolicy](accessreviewpolicy.md)                                                               | A política que contém configurações de revisão de acesso no nível do diretório.                                                                                                     |
@@ -35,7 +35,7 @@ Nenhuma
 | authenticationFlowsPolicy                 | [authenticationFlowsPolicy](authenticationflowspolicy.md)                                                 | A configuração de política da experiência de assinatura de autoatendam de usuários externos.                                                                                   |
 | authenticationMethodsPolicy               | [authenticationMethodsPolicy](authenticationmethodspolicy.md)                                             | Os métodos de autenticação e os usuários que têm permissão para usá-los para entrar e executar a autenticação multifato (MFA) no Azure Active Directory (Azure AD). |
 | authorizationPolicy                       | [Coleção authorizationPolicy](authorizationpolicy.md)                                                  | A política que controla as configurações de autorização do Azure AD.                                                                                                            |
-| b2cAuthenticationMethodsPolicy            | [b2cAuthenticationMethodsPolicy](b2cauthenticationmethodspolicy.md)                                       | As políticas do Azure AD B2C que definem como os usuários finais se registram por meio de contas locais.                                                                                     |
+| b2cauthenticationmethodspolicy            | [b2cauthenticationmethodspolicy](b2cauthenticationmethodspolicy.md)                                       | As políticas do Azure AD B2C que definem como os usuários finais se registram por meio de contas locais.                                                                                     |
 | claimsMappingPolicies                     | Conjunto [claimsMappingPolicy](claimsmappingpolicy.md)                                                  | As políticas de mapeamento de declaração para protocolos WS-Fed, SAML, OAuth 2.0 e Conexão OpenID, para tokens emitidos para um aplicativo específico.                                   |
 | conditionalAccessPolicies                 | [conditionalAccessPolicy](conditionalaccesspolicy.md)                                                     | As regras personalizadas que definem um cenário de acesso.                                                                                                                     |
 | defaultAppManagementPolicy                | [tenantAppManagementPolicy](tenantappmanagementpolicy.md)                                                 | A política de todo o locatário que impõe restrições de gerenciamento de aplicativos para todos os aplicativos e entidades de serviço.                                                        |

@@ -2,15 +2,15 @@
 title: Atualizar deviceManagementTemplate
 description: Atualize as propriedades de um objeto deviceManagementTemplate.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 1a4aeb8e88d6c081e75c75898f32b1e39a27c4db
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 746406b352a4498eafad872c115f0542ccfaaefc
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58784965"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59116791"
 ---
 # <a name="update-devicemanagementtemplate"></a>Atualizar deviceManagementTemplate
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -56,8 +56,8 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [deviceM
 |:---|:---|:---|
 |id|Cadeia de caracteres|A ID do modelo|
 |displayName|Cadeia de caracteres|O nome de exibição do modelo|
-|descrição|Cadeia de caracteres|A descrição do modelo|
-|versionInfo|Cadeia de caracteres|Informações de versão do modelo|
+|description|Cadeia de caracteres|A descrição do modelo|
+|versionInfo|Cadeia de Caracteres|Informações de versão do modelo|
 |isDeprecated|Boleano|O modelo está preterido ou não. As intenções não podem ser criadas a partir de um modelo preterido.|
 |intentCount|Int32|Número de Intenções criadas a partir deste modelo.|
 |templateType|[deviceManagementTemplateType](../resources/intune-deviceintent-devicemanagementtemplatetype.md)|O tipo do modelo. Os valores possíveis são: `securityBaseline`, `specializedDevices`, `advancedThreatProtectionSecurityBaseline`, `deviceConfiguration`, `custom`, `securityTemplate`, `microsoftEdgeSecurityBaseline`, `microsoftOffice365ProPlusSecurityBaseline`, `deviceCompliance`, `deviceConfigurationForOffice365`, `cloudPC`, `firewallSharedSettings`.|

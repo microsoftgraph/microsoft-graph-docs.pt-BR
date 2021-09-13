@@ -2,15 +2,15 @@
 title: tipo de recurso deliveryOptimizationBandwidthAbsolute
 description: Limites de largura de banda em quilobytes por segundo.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 2e184d3175cfc3643a7de870b0fdbd4be3af0949
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: a8d625892c0d8651de284037d5a2ba4158a3b34a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58791204"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59147987"
 ---
 # <a name="deliveryoptimizationbandwidthabsolute-resource-type"></a>tipo de recurso deliveryOptimizationBandwidthAbsolute
 

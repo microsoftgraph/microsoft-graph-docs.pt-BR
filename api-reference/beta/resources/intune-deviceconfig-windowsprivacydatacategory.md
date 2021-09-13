@@ -2,15 +2,15 @@
 title: Tipo de número windowsPrivacyDataCategory
 description: Windows de categoria de dados de privacidade para acesso a dados de privacidade.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: bae6c1ea277738940907e08986325e59ee7bcd79
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 1883e1518526945def0ae8bbd982fa71276c68a0
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58787283"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59105899"
 ---
 # <a name="windowsprivacydatacategory-enum-type"></a>Tipo de número windowsPrivacyDataCategory
 
@@ -36,7 +36,7 @@ Windows de categoria de dados de privacidade para acesso a dados de privacidade.
 |email|8 |Permitir que os aplicativos acessem e enviem emails. Adicionado no Windows 10, versão 1607.|
 |location|9 |Permitir que os aplicativos acessem os dados de localização precisos do usuário do dispositivo. Adicionado no Windows 10, versão 1607.|
 |messaging|10 |Permitir que os aplicativos leiam ou enviem mensagens, texto ou MMS. Adicionado no Windows 10, versão 1607.|
-|microphone|11 |Permitir que os aplicativos usem microfone no dispositivo do usuário. Adicionado no Windows 10, versão 1607.|
+|microphone|11|Permitir que os aplicativos usem microfone no dispositivo do usuário. Adicionado no Windows 10, versão 1607.|
 |motion|12 |Permitir que os aplicativos usem dados de movimento gerados no usuário do dispositivo. Adicionado no Windows 10, versão 1607.|
 |notificações|13|Permitir que os aplicativos acessem as notificações do usuário. Adicionado no Windows 10, versão 1607.|
 |phone|14 |Permitir que os aplicativos acessem dados de telefone e façam chamadas telefônicas. Adicionado no Windows 10, versão 1607.|

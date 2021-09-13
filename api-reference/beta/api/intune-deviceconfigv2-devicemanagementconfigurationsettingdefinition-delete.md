@@ -2,15 +2,15 @@
 title: Excluir deviceManagementConfigurationSettingDefinition
 description: Exclui um deviceManagementConfigurationSettingDefinition.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 458dcd5624704dbbc472375c5483bbec96b1a022
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: dae31b90ddb3ba23111520f4e7ae89cbb50b59ea
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58784972"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59108293"
 ---
 # <a name="delete-devicemanagementconfigurationsettingdefinition"></a>Excluir deviceManagementConfigurationSettingDefinition
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementServiceConfig.ReadWrite.All|
+|Aplicativo|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {

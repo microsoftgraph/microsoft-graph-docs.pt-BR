@@ -2,15 +2,15 @@
 title: Tipo de número signInAssistantOptions
 description: Valores para SignInAssistantSettings.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 0013fcf2974325ed78428d6d816b04515d012c03
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 93cf50e3671b003ee6e4e4d45ac8cb672ce2244c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58816547"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59095504"
 ---
 # <a name="signinassistantoptions-enum-type"></a>Tipo de número signInAssistantOptions
 

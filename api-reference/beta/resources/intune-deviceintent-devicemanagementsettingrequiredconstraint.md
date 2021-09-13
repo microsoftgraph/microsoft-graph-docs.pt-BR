@@ -2,15 +2,15 @@
 title: Tipo de recurso deviceManagementSettingRequiredConstraint
 description: Restrição que impõe uma configuração necessária específica que não é null/undefined/empty string/not configured
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: a8df835b185da3d2355907e753f14ed036442210
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 7c5dbded2aa06abcbfaaba622408c304c32daed7
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58801476"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59148372"
 ---
 # <a name="devicemanagementsettingrequiredconstraint-resource-type"></a>Tipo de recurso deviceManagementSettingRequiredConstraint
 
@@ -28,7 +28,7 @@ Herda de [deviceManagementConstraint](../resources/intune-deviceintent-deviceman
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|notConfiguredValue|Cadeia de caracteres|Lista de valores que significa não configurado para a configuração|
+|notConfiguredValue|Cadeia de Caracteres|Lista de valores que significa não configurado para a configuração|
 
 ## <a name="relationships"></a>Relações
 Nenhum

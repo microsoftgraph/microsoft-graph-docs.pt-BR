@@ -2,15 +2,15 @@
 title: Tipo de recurso deviceConfigurationAssignment
 description: A entidade de atribuição de configuração do dispositivo atribui um grupo AAD a uma configuração de dispositivo específica.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 73bc123c0120537c45aeaaea8173964358627341
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 00eadc21655f9f10534a4b11cfc87a1e795a747f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58814683"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59101587"
 ---
 # <a name="deviceconfigurationassignment-resource-type"></a>Tipo de recurso deviceConfigurationAssignment
 
@@ -37,7 +37,7 @@ A entidade de atribuição de configuração do dispositivo atribui um grupo AAD
 |id|Cadeia de caracteres|A chave da atribuição.|
 |destino|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|O destino da atribuição da configuração do dispositivo.|
 |source|[deviceAndAppManagementAssignmentSource](../resources/intune-shared-deviceandappmanagementassignmentsource.md)|A origem da atribuição para a configuração do dispositivo, direct ou parcel/policySet. Essa propriedade é somente leitura. Os valores possíveis são: `direct` e `policySets`.|
-|sourceId|Cadeia de caracteres|O identificador da origem da atribuição. Essa propriedade é somente leitura.|
+|sourceId|Cadeia de Caracteres|O identificador da origem da atribuição. Essa propriedade é somente leitura.|
 
 ## <a name="relationships"></a>Relações
 Nenhum

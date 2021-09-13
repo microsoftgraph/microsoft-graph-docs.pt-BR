@@ -2,15 +2,15 @@
 title: Tipo de recurso importedAppleDeviceIdentity
 description: O recurso importedAppleDeviceIdentity representa a identidade de dispositivo importado de um dispositivo Apple .
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3f70ab03b99e9dbe7a0ebe75920f3670ee6e2ae4
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: f0e66ebabdfd4466d187778313644c83e5dfb542
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58817065"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59141071"
 ---
 # <a name="importedappledeviceidentity-resource-type"></a>Tipo de recurso importedAppleDeviceIdentity
 
@@ -37,16 +37,16 @@ O recurso importedAppleDeviceIdentity representa a identidade de dispositivo imp
 |:---|:---|:---|
 |id|Cadeia de caracteres|Chave da entidade.|
 |serialNumber|String|Número de série do dispositivo|
-|requestedEnrollmentProfileId|Cadeia de caracteres|O administrador de ID do perfil de registro pretende aplicar-se ao dispositivo durante o próximo registro|
+|requestedEnrollmentProfileId|Cadeia de Caracteres|O administrador de ID do perfil de registro pretende aplicar-se ao dispositivo durante o próximo registro|
 |requestedEnrollmentProfileAssignmentDateTime|DateTimeOffset|O perfil de registro de hora foi atribuído ao dispositivo|
 |isSupervised|Boolean|Indica se o dispositivo Apple é supervisionado. Mais informações estão em: https://support.apple.com/en-us/HT202837|
 |discoverySource|[discoverySource](../resources/intune-enrollment-discoverysource.md)|Fonte de descoberta de dispositivo Apple. Os valores possíveis são: `unknown`, `adminImport`, `deviceEnrollmentProgram`.|
-|isDeleted|Booliano|Indica se o dispositivo é excluído do Apple Business Manager|
+|isDeleted|Boleano|Indica se o dispositivo é excluído do Apple Business Manager|
 |createdDateTime|DateTimeOffset|Data de criação hora do dispositivo|
 |lastContactedDateTime|DateTimeOffset|Hora da Última Data Contata do dispositivo|
 |description|Cadeia de caracteres|A descrição do dispositivo|
 |enrollmentState|[enrollmentState](../resources/intune-shared-enrollmentstate.md)|O estado do dispositivo no Intune. Os possíveis valores são: `unknown`, `enrolled`, `pendingReset`, `failed`, `notContacted`, `blocked`.|
-|plataforma|[plataforma](../resources/intune-enrollment-platform.md)|A plataforma do Dispositivo. Os possíveis valores são: `unknown`, `ios`, `android`, `windows`, `windowsMobile`, `macOS`.|
+|plataforma|[platform](../resources/intune-enrollment-platform.md)|A plataforma do Dispositivo. Os possíveis valores são: `unknown`, `ios`, `android`, `windows`, `windowsMobile`, `macOS`.|
 
 ## <a name="relationships"></a>Relações
 Nenhum

@@ -2,15 +2,15 @@
 title: Tipo de recurso keyTypedValuePair
 description: Um par de valores-chave com uma chave de cadeia de caracteres e um valor digitado.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 658cc2987b2ee27ea8ac2bf014c3e8d9b27d6d75
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 2a6c00baed865c5278c6ada6d519c2aae09aace6
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58795869"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59127182"
 ---
 # <a name="keytypedvaluepair-resource-type"></a>Tipo de recurso keyTypedValuePair
 
@@ -25,7 +25,7 @@ Um par de valores-chave com uma chave de cadeia de caracteres e um valor digitad
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|key|Cadeia de caracteres|A chave de cadeia de caracteres do par de valores-chave.|
+|key|Cadeia de Caracteres|A chave de cadeia de caracteres do par de valores-chave.|
 
 ## <a name="relationships"></a>Relações
 Nenhum

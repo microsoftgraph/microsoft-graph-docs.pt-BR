@@ -2,15 +2,15 @@
 title: Excluir azureADWindowsAutopilotDeploymentProfile
 description: Exclui um azureADWindowsAutopilotDeploymentProfile.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0eb50b3e66f90b88089786e6fc44deb95c58ece4
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: c72f275369e59de42fc1ee37fb23a99972aeedfd
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58765208"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59107908"
 ---
 # <a name="delete-azureadwindowsautopilotdeploymentprofile"></a>Excluir azureADWindowsAutopilotDeploymentProfile
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementServiceConfig.ReadWrite.All|
+|Aplicativo|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
