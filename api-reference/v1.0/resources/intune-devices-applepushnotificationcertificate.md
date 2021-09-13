@@ -2,15 +2,15 @@
 title: Tipo de recurso applePushNotificationCertificate
 description: Certificado de notificação por push da Apple.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 42ef165460dd9fb67c12fcb3618b2e52626af49572eb38ea1b92f69d6ab4b4a0
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: a4a1dedbf0571111ccae4ca484f57875fbcaad72
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54184631"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59098836"
 ---
 # <a name="applepushnotificationcertificate-resource-type"></a>Tipo de recurso applePushNotificationCertificate
 

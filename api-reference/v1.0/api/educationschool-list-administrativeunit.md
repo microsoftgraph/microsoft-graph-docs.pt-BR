@@ -2,15 +2,15 @@
 title: Listar administrativeUnit an educationSchool
 description: Obter uma lista de administrativeUnits associado a um objeto educationSchool.
 author: mmast
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: a8ca5a51c6fb71c3cab0d6f0a7be239eb2101999
-ms.sourcegitcommit: b8b0e88b3ba9a434dc45f5ab640cb46f66fae299
+ms.openlocfilehash: 67f97017cc52e5cf66bc425929e7d057df7ef75c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "52474845"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59022790"
 ---
 # <a name="list-administrativeunit-an-educationschool"></a>Listar administrativeUnit an educationSchool
 
@@ -23,8 +23,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 | :------------------------------------- | :------------------------------------------ |
-| Delegado (conta corporativa ou de estudante)     | EduRoster.ReadBasic                         |
-| Delegado (conta pessoal da Microsoft) | Sem suporte.                              |
+| Delegada (conta corporativa ou de estudante)     | EduRoster.ReadBasic                         |
+| Delegada (conta pessoal da Microsoft) | Sem suporte.                              |
 | Aplicativo                            | EduRoster.Read.All, EduRoster.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP

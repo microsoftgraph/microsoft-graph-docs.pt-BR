@@ -2,15 +2,15 @@
 title: Tipo de recurso linkedResource
 description: Representa a origem do todoTask
 author: avijityadav
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 8164e0436cdedee66c59fbc83b7f4fa7d594a4623c2a62bcab6d19cca4c52d28
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: dfc5e05403c93f07f48c010b8d7233543021f52c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54237624"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59036148"
 ---
 # <a name="linkedresource-resource-type"></a>Tipo de recurso linkedResource
 
@@ -40,7 +40,7 @@ Alguns **objetos linkedResource** não estão associados a URLs da Web, nesse ca
 |applicationName|Cadeia de caracteres|Campo indicando o nome do aplicativo da fonte que está enviando **o linkedResource**.|
 |displayName|String|Campo que indica o título do **linkedResource**.|
 |externalId|Cadeia de caracteres|ID do objeto associado a essa tarefa no sistema de terceiros/parceiro.|
-|id|String|ID gerada pelo **servidor para o linkedResource**. Herdado da [entidade](../resources/entity.md).|
+|id|Cadeia de caracteres|ID gerada pelo **servidor para o linkedResource**. Herdado da [entidade](../resources/entity.md).|
 |webUrl|String|Link profundo para **o linkedResource**.|
 
 ## <a name="relationships"></a>Relações

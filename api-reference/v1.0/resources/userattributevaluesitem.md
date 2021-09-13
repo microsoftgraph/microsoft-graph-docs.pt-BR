@@ -2,15 +2,15 @@
 title: Tipo de recurso userAttributeValuesItem
 description: Representa valores de atributo de fluxo do usuário dentro de um fluxo de usuário.
 author: jkdouglas
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 88e19bfa02876e08df4c3040ff6bcfefae41840278719b83ccc7b57be651f5a0
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 690b9f53762359ab559fb98534525cad15e5e282
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54205210"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59083961"
 ---
 # <a name="userattributevaluesitem-resource-type"></a>Tipo de recurso userAttributeValuesItem
 

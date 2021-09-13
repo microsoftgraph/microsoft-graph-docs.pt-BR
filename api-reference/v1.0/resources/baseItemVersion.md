@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso BaseItemVersion
 description: O recurso **baseItemVersion** representa uma versão anterior de um item ou de uma entidade.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: JeremyKelley
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: f5a9f52ad13b2c0d12b2040f306ad23d74d5b18fa87c7fd15d1142df969147fd
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 3679353e4e5c5aafb2b6594662cbe528ee714ca9
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54218825"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59015620"
 ---
 # <a name="baseitemversion-resource-type"></a>Tipo de recurso BaseItemVersion
 
@@ -42,7 +42,7 @@ O recurso **baseItemVersion** representa uma versão anterior de um item ou de u
 
 |      Nome da propriedade       |                         Tipo                         |                               Descrição                               |
 | :----------------------- | :--------------------------------------------------- | :---------------------------------------------------------------------- |
-| **id**                   | string                                               | A ID da versão. Somente leitura.                                       |
+| **id**                   | cadeia de caracteres                                               | A ID da versão. Somente leitura.                                       |
 | **lastModifiedBy**       | [IdentitySet](../resources/identityset.md)           | Identidade do usuário que modificou a versão pela última vez. Somente leitura.        |
 | **lastModifiedDateTime** | [DateTimeOffset](../resources/timestamp.md)          | Data e hora em que a versão foi modificada pela última vez. Somente leitura.                 |
 | **publication**          | [PublicationFacet](../resources/publicationfacet.md) | Indica o status de publicação desta versão específica. Somente leitura. |

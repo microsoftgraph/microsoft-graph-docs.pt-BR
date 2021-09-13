@@ -2,15 +2,15 @@
 title: Tipo de recurso mediaConfig
 description: Uma classe base abstrata que contém a configuração de mídia usada para se conectar a uma chamada.
 author: ananmishr
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: a50f98b747a8a41ab4d8efecf9a7cb1d3910494041c2fb6c09185b3e1c4bcd71
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 905da2cc6b7e49f6c6563109b30fc191fed7c332
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54141445"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59129835"
 ---
 # <a name="mediaconfig-resource-type"></a>Tipo de recurso mediaConfig
 

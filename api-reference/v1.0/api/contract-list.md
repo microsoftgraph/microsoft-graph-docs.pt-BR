@@ -1,16 +1,16 @@
 ---
 title: Listar contratos
 description: Recupere uma lista de objetos de contrato associados a um locatário parceiro.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: adimitui
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 1df10b2adc9a2621c6caf9ee1dfbcc71bc8442a4
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 31a68fce9ff2ec671e822988cb871e815259c552
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52035670"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59080139"
 ---
 # <a name="list-contracts"></a>Listar contratos
 

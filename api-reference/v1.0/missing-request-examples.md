@@ -1,16 +1,16 @@
 ---
 title: Definir /me como singleton
 description: Essas são as coisas que eu tinha que adicionar nos documentos para garantir que o Markdown-Scanner
-localization_priority: Normal
+ms.localizationpriority: medium
 author: ''
 ms.prod: ''
 doc_type: conceptualPageType
-ms.openlocfilehash: 79d75b799017b2e0ae987d2bef8902d8817fba8e2e5bb602b11e4e75d97c4e7f
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: aa13d7ca2204acbfd607763e6e2e1f012604d4ac
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54135390"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59019416"
 ---
 # <a name="helpers-examples-that-arent-included-in-the-docs"></a>Auxiliares (exemplos que não estão incluídos nos documentos)
 

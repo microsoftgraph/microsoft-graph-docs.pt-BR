@@ -2,15 +2,15 @@
 title: Listar childFolders
 description: 'Obtenha a coleção de pastas sob a pasta especificada. Você pode usar o atalho `.../me/MailFolders` para chegar o nível superior '
 author: abheek-das
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 73a812b9f1b3899d52d112649ceebb0c594b8489
-ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
+ms.openlocfilehash: ad867ef1a3f07951ef4acbaa83055887c347b0d1
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "52666461"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59067917"
 ---
 # <a name="list-childfolders"></a>Listar childFolders
 

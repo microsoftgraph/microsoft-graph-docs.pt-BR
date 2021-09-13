@@ -2,15 +2,15 @@
 title: Tipo de recurso mediaStream
 description: O tipo mediaStream.
 author: ananmishr
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 98fa09655faa6068c48c6fe2d1e340fa28ff253b99717900bed5d9f863561c1b
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 4fa45c863bf06d2c1c2083a1f66796abcb46eaff
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54141438"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59134602"
 ---
 # <a name="mediastream-resource-type"></a>Tipo de recurso mediaStream
 

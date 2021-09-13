@@ -2,15 +2,15 @@
 title: Atualizar eventMessage
 description: Atualize as propriedades de um objeto eventMessage.
 author: harini84
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 6b523e12da00d4b0883d9e337edd288ded13bde2
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 094d2a91892e335230acb0225fdba81d423af2d1
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52052394"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59140735"
 ---
 # <a name="update-eventmessage"></a>Atualizar eventMessage
 
@@ -91,7 +91,7 @@ Content-length: 248
 ---
 
 ##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto de resposta exibido aqui pode ser encurtado para legibilidade.
+Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser reduzido para facilitar a leitura.
 <!-- {
   "blockType": "response",
   "truncated": true,

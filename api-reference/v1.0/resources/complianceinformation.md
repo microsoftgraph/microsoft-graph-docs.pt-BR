@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso complianceInformation
 description: Esse recurso contém dados de conformidade associados ao controle de pontuação seguro.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: preetikr
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 427660aa0f7227a4536a01cedcc7df818e8a499348c7be3f5be764f0764cad24
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 05ba1b7900f50474e2eaaac64326f02eeadfd913
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54180870"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59109259"
 ---
 #  <a name="complianceinformation-resource-type"></a>Tipo de recurso complianceInformation
 

@@ -1,16 +1,16 @@
 ---
 title: Conceder um appRoleAssignment a um grupo
 description: Conceder uma atribuição de função de aplicativo a um grupo.
-localization_priority: Priority
+ms.localizationpriority: high
 doc_type: apiPageType
 ms.prod: groups
 author: psignoret
-ms.openlocfilehash: 90bd75f120266654183ec7eb502ec367b34521de
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 0d7314858d0d01d2e896b8d9e758119bde70b010
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52052275"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59080069"
 ---
 # <a name="grant-an-approleassignment-to-a-group"></a>Conceder um appRoleAssignment a um grupo
 

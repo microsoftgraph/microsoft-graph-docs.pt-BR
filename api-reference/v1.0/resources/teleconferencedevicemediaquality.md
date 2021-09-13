@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso teleconferenceDeviceMediaQuality
 description: Dados de qualidade de mídia de dispositivo de teleconferência de vídeo.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: dongkyun
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 96e10a50dfa93f4a226585092c57d9ab8dbe5cb3b5e8a2593198ca32402852c4
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 45ca9d4bdc34077ea19bdcbac866495a198ea5ab
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54146367"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59128127"
 ---
 # <a name="teleconferencedevicemediaquality-resource-type"></a>Tipo de recurso teleconferenceDeviceMediaQuality
 

@@ -2,15 +2,15 @@
 title: Tipo de recurso win32LobAppRule
 description: Um tipo complexo básico para armazenar os dados de regra de detecção ou requisito para um aplicativo LOB win32.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 554fc1eabbe8f91221a90a12afc99a22885ca9aa8c3a09c5db96cdff37b5f3a5
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 3c001b6baf5be316fd38c74c532692ec9f3997d5
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54231731"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59134861"
 ---
 # <a name="win32lobapprule-resource-type"></a>Tipo de recurso win32LobAppRule
 

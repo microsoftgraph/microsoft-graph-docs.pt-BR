@@ -1,14 +1,14 @@
 ---
 title: Componente Tarefas no microsoft Graph Toolkit
 description: O componente Tarefas permite ao usuário exibir, adicionar, remover, concluir ou editar tarefas. Ele funciona com qualquer tarefa no Microsoft Planner.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: benotter
-ms.openlocfilehash: c28db228e40a6661fc5cb48bb86b961ba7f6871a91987e5255212463dc3c09d6
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: b25dadfeb34c045a7e3034860f208209a522362c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54186878"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59129667"
 ---
 # <a name="tasks-component-in-the-microsoft-graph-toolkit"></a>Componente Tarefas no microsoft Graph Toolkit
 
@@ -118,7 +118,7 @@ mgt-tasks {
 }
 ````
 
-## <a name="events"></a>Eventos
+## <a name="events"></a>Events
 
 Evento | Quando é emitido | Dados personalizados | Cancelável | Bolhas | Funciona com modelo personalizado
 ------|-------------------|--------------|:-----------:|:---------:|:---------------------------:|

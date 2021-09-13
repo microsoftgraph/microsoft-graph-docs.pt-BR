@@ -2,15 +2,15 @@
 title: Tipo de recurso groupSetting
 description: As configurações de grupo controlam comportamentos como listas de palavras bloqueadas para nomes de exibição de grupo ou se os usuários convidados têm permissão para serem proprietários do grupo.
 author: Jordanndahl
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: 3f43baa14884fcb8843d99731e20e96f329aed2cfad2a1ba513b8e2039d8f776
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 56d97a0789c33c429dcce7d5db7009f439806768
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54212078"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59084542"
 ---
 # <a name="groupsetting-resource-type"></a>Tipo de recurso groupSetting
 
@@ -34,8 +34,8 @@ As configurações de grupo podem ser criadas com base no [groupSettingTemplates
 
 | Propriedade | Tipo | Descrição |
 |:---------------|:--------|:----------|
-|displayName|Cadeia de caracteres| Nome de exibição desse grupo de configurações, que vem do modelo associado. |
-|id|Cadeia de caracteres| Identificador exclusivo para essas configurações. Apenas leitura. |
+|displayName|String| Nome de exibição desse grupo de configurações, que vem do modelo associado. |
+|id|Cadeia de caracteres| Identificador exclusivo para essas configurações. Somente leitura. |
 |templateId|String| Identificador exclusivo do modelo usado para criar esse grupo de configurações. Somente leitura. |
 |values|[coleção settingValue](settingvalue.md)| Coleção de pares de valores de nome. Deve conter e definir todas as configurações definidas no modelo. |
 

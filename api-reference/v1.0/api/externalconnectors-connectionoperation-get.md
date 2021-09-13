@@ -2,15 +2,15 @@
 title: Obter connectionOperation
 description: Leia as propriedades e as relações de um objeto connectionOperation.
 author: mecampos
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: a43a6302c6c32611ab06e84382ce8a497f09e343
-ms.sourcegitcommit: 5bb981b4853663354a566d4a4a5cbf288939e441
+ms.openlocfilehash: 188f6fa3efdb58dd997a8cfe7aed11957939b3be
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "53580139"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59140707"
 ---
 # <a name="get-connectionoperation"></a>Obter connectionOperation
 
@@ -23,8 +23,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|Não aplicável|
-|Delegada (conta pessoal da Microsoft)|Não aplicável|
+|Delegado (conta corporativa ou de estudante)|Não aplicável|
+|Delegado (conta pessoal da Microsoft)|Não aplicável|
 |Aplicativo| ExternalConnection.ReadWrite.OwnedBy |
 
 ## <a name="http-request"></a>Solicitação HTTP

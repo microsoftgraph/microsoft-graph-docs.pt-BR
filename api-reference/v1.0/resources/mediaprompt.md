@@ -2,15 +2,15 @@
 title: Tipo de recurso mediaPrompt
 description: Esse tipo de recurso contém informações sobre o arquivo de áudio a ser tocado e outras configurações adicionais.
 author: ananmishr
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: b69111bda37ce59305aaf126225f974c25721ceb7ed0ac34af71c1f9bf743438
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 90630d1ec5d3e4ebc7c30f09f9d5cb66d5daeaaf
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54141431"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59108916"
 ---
 # <a name="mediaprompt-resource-type"></a>Tipo de recurso mediaPrompt
 

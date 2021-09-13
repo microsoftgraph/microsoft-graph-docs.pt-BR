@@ -2,15 +2,15 @@
 title: Tipo de recurso ChartAxis
 description: Representa um único eixo em um gráfico.
 author: lumine2008
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: f7a2672e9f581a4106b93fd63af5d025795af7afcd7f39b9b515dd1f09398090
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: b8fc54bb509bc88f51e39aed9bca9d23ed0ac89a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54135327"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59126930"
 ---
 # <a name="chartaxis-resource-type"></a>Tipo de recurso ChartAxis
 
@@ -29,7 +29,7 @@ Representa um único eixo em um gráfico.
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-| id       |string   | Identificador exclusivo. Apenas leitura.|
+| id       |cadeia de caracteres   | Identificador exclusivo. Somente leitura.|
 |majorUnit|Json|Representa o intervalo entre as duas principais marcas de escala. Pode ser definido como um valor numérico ou uma cadeia de caracteres vazia.  O valor retornado sempre é um número.|
 |maximum|Json|Representa o valor máximo no eixo dos valores.  Pode ser definido como um valor numérico ou uma cadeia de caracteres vazia (para valores automáticos de eixo).  O valor retornado sempre é um número.|
 |minimum|Json|Representa o valor mínimo no eixo dos valores. Pode ser definido como um valor numérico ou uma cadeia de caracteres vazia (para valores automáticos de eixo).  O valor retornado sempre é um número.|

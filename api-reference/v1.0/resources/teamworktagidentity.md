@@ -2,15 +2,15 @@
 title: Tipo de recurso teamworkTagIdentity
 description: Representa uma marca em Microsoft Teams.
 author: RamjotSingh
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 2f507844751b92493eab2c4bb84f2da2f3a04c8afb310b682ac9beb2f025031f
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 7cd605a42f0f0c7f697c7b291fe30645bdf4403b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54129936"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59128169"
 ---
 # <a name="teamworktagidentity-resource-type"></a>Tipo de recurso teamworkTagIdentity
 
@@ -24,7 +24,7 @@ Herda da [identidade](../resources/identity.md).
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|displayName|Cadeia de caracteres|Herdado da [identidade](../resources/identity.md). Nome de exibição da marca.|
+|displayName|String|Herdado da [identidade](../resources/identity.md). Nome de exibição da marca.|
 |id|Cadeia de caracteres|Herdado da [identidade](../resources/identity.md). ID da marca.|
 
 ## <a name="relationships"></a>Relações

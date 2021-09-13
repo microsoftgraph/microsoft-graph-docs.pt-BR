@@ -3,14 +3,14 @@ title: Configurar Proxy de Aplicativo usando APIs Graph Microsoft
 description: Configure o Proxy de Aplicativo usando as APIs do Microsoft Graph para fornecer acesso remoto e um único login a aplicativos locais.
 author: davidmu1
 ms.topic: conceptual
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: applications
-ms.openlocfilehash: 0394220290652a8be7931b384b16dc53631048210b7d982545636bc62bd86060
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 96a1f390b41f585d530b04a831a2d9a79a12aa88
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54149601"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59142422"
 ---
 # <a name="configure-application-proxy-using-the-microsoft-graph-api"></a>Configurar o Proxy de Aplicativo usando a API Graph Microsoft
 

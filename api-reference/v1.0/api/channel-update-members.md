@@ -3,14 +3,14 @@ title: Atualizar membro no canal
 description: Atualize a função de membro em um canal.
 author: akjo
 doc_type: apiPageType
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
-ms.openlocfilehash: 69ac329608ef4b6d42c019445427f82946f1ac82
-ms.sourcegitcommit: 456ec9510807d05623c0ed1dd049c9676f53f56b
+ms.openlocfilehash: 268bb8d2f2e06d255ea53a28afd177c1f31457e9
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53059994"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59056820"
 ---
 # <a name="update-member-in-channel"></a>Atualizar membro no canal
 
@@ -24,9 +24,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |---------|-------------|
-|Delegado (conta corporativa ou de estudante)|ChannelMember.ReadWrite.All. |
+|Delegada (conta corporativa ou de estudante)|ChannelMember.ReadWrite.All |
 |Delegado (conta pessoal da Microsoft)|Sem suporte|
-|Aplicativo|ChannelMember.ReadWrite.All. |
+|Aplicativo|ChannelMember.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored"} -->

@@ -2,15 +2,15 @@
 title: Listar contatos
 description: Obter uma coleção de contatos da pasta padrão de contatos do usuário conectado.
 author: kevinbellinger
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 97dedbe141ea362fdef13a5f8dcdc4376b70b02e
-ms.sourcegitcommit: 6f04ad0e0cde696661511dcdf343942b43f73fc6
+ms.openlocfilehash: 125c0b509e5d93e1b4e36adcb014a5d346f11d75
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58397121"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59025696"
 ---
 # <a name="list-contacts"></a>Listar contatos
 

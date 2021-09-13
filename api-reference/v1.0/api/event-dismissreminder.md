@@ -2,15 +2,15 @@
 title: 'evento: dismissReminder'
 description: Descartar um lembrete que foi disparado para um evento em um calendário do usuário.
 author: harini84
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 7b2a33e199a7add86c494a48da5b519119279732
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 368e4708eba68d74374819d800c8d8d33c6a3a27
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50448316"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59037954"
 ---
 # <a name="event-dismissreminder"></a>evento: dismissReminder
 

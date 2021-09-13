@@ -2,15 +2,15 @@
 title: Tipo de recurso todoTask
 description: Um recurso todoTask rastreia um item de trabalho.
 author: avijityadav
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 043ba3e419db0ea3854a0f462b32553d288e25a11e1c27ea6dc9a7f7ad933095
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 9e620161e48f87a4e46afcfcfe6a0dce6bb069b3
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54196471"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59134315"
 ---
 # <a name="todotask-resource-type"></a>Tipo de recurso todoTask
 
@@ -31,7 +31,7 @@ Esse recurso dá suporte ao seguinte:
 |[Criar tarefa](../api/todotasklist-post-tasks.md)|[todoTask](todotask.md)| Criar um [todoTask](todotask.md) na lista de tarefas especificada|
 |[Obter tarefa](../api/todotask-get.md)|[todoTask](../resources/todotask.md)|Leia as propriedades e as relações de um [objeto todoTask.](../resources/todotask.md)|
 |[Atualizar tarefa](../api/todotask-update.md)|[todoTask](../resources/todotask.md)|Atualize as propriedades de um [objeto todoTask.](../resources/todotask.md)|
-|[Excluir tarefa](../api/todotask-delete.md)|None|Exclui um [objeto todoTask.](../resources/todotask.md)|
+|[Excluir tarefa](../api/todotask-delete.md)|Nenhum(a)|Exclui um [objeto todoTask.](../resources/todotask.md)|
 |[Listar linkedResources](../api/todotask-list-linkedresources.md)|[Coleção linkedResource](../resources/linkedresource.md)|Obter o linkedResources da propriedade de navegação linkedResources.|
 |[Criar linkedResources](../api/todotask-post-linkedresources.md)|[linkedResource](../resources/linkedresource.md)|Crie um novo objeto linkedResources.|
 
@@ -50,7 +50,7 @@ Esse recurso dá suporte ao seguinte:
 |recurrence|[patternedRecurrence](../resources/patternedrecurrence.md)|O padrão de recorrência da tarefa.|
 |reminderDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|A data e hora do alerta de lembrete da tarefa.|
 |status|taskStatus|Indica o estado ou o andamento da tarefa. Os valores possíveis são: `notStarted`, `inProgress`, `completed`, `waitingOnOthers`, `deferred`.|
-|title|Cadeia de caracteres|Uma breve descrição da tarefa.|
+|title|String|Uma breve descrição da tarefa.|
 
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|

@@ -2,15 +2,15 @@
 title: Tipo de recurso iosHomeScreenApp
 description: Representa um ícone de um aplicativo na tela inicial
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d7258af274ee657405451647a761f4575a116eb8fcdf039da3782a9b133d66a5
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: a0c222eeeb8def8e127fbe8b27ee326193ebc0d8
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54202389"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59136464"
 ---
 # <a name="ioshomescreenapp-resource-type"></a>Tipo de recurso iosHomeScreenApp
 
@@ -26,7 +26,7 @@ Herda de [iosHomeScreenItem](../resources/intune-deviceconfig-ioshomescreenitem.
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|displayName|String|Nome do aplicativo Herdado de [iosHomeScreenItem](../resources/intune-deviceconfig-ioshomescreenitem.md)|
+|displayName|Cadeia de caracteres|Nome do aplicativo Herdado de [iosHomeScreenItem](../resources/intune-deviceconfig-ioshomescreenitem.md)|
 |bundleID|Cadeia de caracteres|BundleID do aplicativo se forWebClip for false ou a URL de um clipe da Web se forWebClip for true.|
 
 ## <a name="relationships"></a>Relações

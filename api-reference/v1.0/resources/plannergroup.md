@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso plannerGroup
 description: O **recurso plannerGroup** fornece acesso aos recursos do Planner para um grupo. Ele não contém propriedades usáveis.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: be82fb6988c88f40bc975af28240e9a99f6f9d5c13ec7069af93c3f34b92e04c
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 1140d22b4b2f1bb5f863c19a741d08171c5f00f7
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54205224"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59019255"
 ---
 # <a name="plannergroup-resource-type"></a>Tipo de recurso plannerGroup
 

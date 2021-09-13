@@ -2,15 +2,15 @@
 title: tipo de recurso cancelMediaProcessingOperation
 description: Esse tipo de recurso é usado para descrever o formato de resposta da operação de processamento de mídia cancelada.
 author: ananmishr
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 6896a7a4d08aea0c4d394bfbaef8a54bd4c789b310f0079dbbf08daac99606d6
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 9b7cecdfbbb6ced93149740de89a18081a04cffa
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54235685"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59078935"
 ---
 # <a name="cancelmediaprocessingoperation-resource-type"></a>Tipo de recurso CancelMediaProcessingOperation
 
@@ -22,8 +22,8 @@ Descreve o formato de resposta da operação de processamento de mídia cancelad
 
 | Propriedade      | Tipo                        | Descrição                                                                     |
 | :------------ | :-------------------------- | :------------------------------------------------------------------------------ |
-| all           | Booliano                     | Indica se todas as operações ou atuais são paradas.                            |
-| clientContext | Cadeia de caracteres                      | O contexto do cliente.                                                             |
+| all           | Boolean                     | Indica se todas as operações ou atuais são paradas.                            |
+| clientContext | String                      | O contexto do cliente.                                                             |
 | id            | Cadeia de caracteres                      | A ID da operação do servidor. Somente leitura.                                             |
 | resultInfo    | [resultInfo](resultinfo.md) | As informações de resultado.  Somente leitura.                                             |
 | status        | String                      | Os valores possíveis são: `notStarted`, `running`, `completed`, `failed`. Somente leitura. |

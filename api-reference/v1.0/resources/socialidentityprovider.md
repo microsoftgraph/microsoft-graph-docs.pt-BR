@@ -1,16 +1,16 @@
 ---
 title: tipo de recurso socialIdentityProvider
 description: Representa provedores de identidade social em um locatário do Azure Active Directory e um locatário do Azure AD B2C.
-localization_priority: Priority
+ms.localizationpriority: high
 doc_type: resourcePageType
 ms.prod: identity-and-sign-in
 author: namkedia
-ms.openlocfilehash: cfc36459c1809311b3f40bf965d8c04f94ba9564
-ms.sourcegitcommit: f99dc2b6c8b4cb6f9f74cd780dccc47a2bccfaa6
+ms.openlocfilehash: 6f5e01a2be28f4ba0d6021232bd0f0a1e8cdefd6
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2021
-ms.locfileid: "58667476"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59136380"
 ---
 # <a name="socialidentityprovider-resource-type"></a>tipo de recurso socialIdentityProvider
 Namespace: microsoft.graph

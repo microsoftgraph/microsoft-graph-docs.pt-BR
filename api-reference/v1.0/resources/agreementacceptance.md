@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso agreementAcceptance
 description: Representa o status atual de um usuário dentro do escopo dos termos de uso personalizáveis de uma empresa com Azure Active Directory (Azure AD).
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: governance
 author: raprakasMSFT
-ms.openlocfilehash: 3e90efb1ff9e96b9e3f7b516f815201288edcd4aa9f7891af1a1320b8e0c3735
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 2df1803b8601635eba163aa3abd46d70ee0a5723
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54135355"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59089967"
 ---
 # <a name="agreementacceptance-resource-type"></a>Tipo de recurso agreementAcceptance
 
@@ -21,20 +21,20 @@ Representa o status atual de um usuário dentro do escopo dos termos de uso pers
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|agreementFileId|String|O identificador do arquivo de contrato aceito pelo usuário.|
+|agreementFileId|Cadeia de caracteres|O identificador do arquivo de contrato aceito pelo usuário.|
 |agreementId|String|O identificador do contrato.|
 |deviceDisplayName|Cadeia de caracteres|O nome de exibição do dispositivo usado para aceitar o contrato.|
 |deviceId|Cadeia de caracteres|O identificador exclusivo do dispositivo usado para aceitar o contrato.|
-|deviceOSType|Cadeia de caracteres|O sistema operacional usado para aceitar o contrato.|
+|deviceOSType|String|O sistema operacional usado para aceitar o contrato.|
 |deviceOSVersion|String|A versão do sistema operacional do dispositivo usado para aceitar o contrato.    |
-|expirationDateTime|DateTimeOffset|A data de expiração da aceitação. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1° de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
-|id|Cadeia de caracteres| O identificador da aceitação do contrato. Apenas leitura.|
-|recordedDateTime|DateTimeOffset|O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
+|expirationDateTime|DateTimeOffset|A data de expiração da aceitação. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`.|
+|id|Cadeia de caracteres| O identificador da aceitação do contrato. Somente leitura.|
+|recordedDateTime|DateTimeOffset|O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`.|
 |estado|string| O estado da aceitação do contrato. Os valores possíveis são: `accepted` e `declined`.|
 |userDisplayName|Cadeia de caracteres|Nome de exibição do usuário quando a aceitação foi registrada.|
 |userEmail|Cadeia de caracteres|Email do usuário quando a aceitação foi registrada.|
 |userId|Cadeia de caracteres|O identificador do usuário que aceitou o contrato.|
-|userPrincipalName|String|UPN do usuário quando a aceitação foi registrada.|
+|userPrincipalName|Cadeia de caracteres|UPN do usuário quando a aceitação foi registrada.|
 
 ## <a name="relationships"></a>Relações
 Nenhum

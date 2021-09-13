@@ -2,15 +2,15 @@
 title: Listar windowsMobileMSIs
 description: Listar propriedades e relações dos objetos windowsMobileMSI.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6f03958ba966a0e5a718cca8d3b36d55288e2f2746fbe72926af3ce32a14560a
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 273cee4785fabb1297f8d07b93090c737332ce87
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54190217"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59099893"
 ---
 # <a name="list-windowsmobilemsis"></a>Listar windowsMobileMSIs
 

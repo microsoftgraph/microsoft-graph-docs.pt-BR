@@ -2,15 +2,15 @@
 title: 'serviceUpdateMessage: unarchive'
 description: Desaconsuclear uma lista de mensagens de atualização de serviço para o usuário in-loco.
 author: payiAzure
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: service-communications
 doc_type: apiPageType
-ms.openlocfilehash: 4db94ded456c47e19f55950fae6028fa81358d09
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 0df8b121540d52ec9b0de60e95a205feba603a87
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58257368"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59079191"
 ---
 # <a name="serviceupdatemessage-unarchive"></a>serviceUpdateMessage: unarchive
 Namespace: microsoft.graph
@@ -49,7 +49,7 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta ação.
 
 |Parâmetro|Tipo|Descrição|
 |:---|:---|:---|
-|messageIds|String collection|Lista de IDs de mensagens a ser desarquivada.|
+|messageIds|Coleção String|Lista de IDs de mensagens a ser desarquivada.|
 
 ## <a name="response"></a>Resposta
 

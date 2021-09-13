@@ -3,14 +3,14 @@ title: Atualizar conversationMember
 description: Atualizar a função de conversationMember em uma equipe ou canal.
 author: akjo
 doc_type: apiPageType
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
-ms.openlocfilehash: 7f46b4bb6797330b61e5235cf87448e6358b64a3d0dd3e553c619c2a759dce12
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 8bb60729048b64f804ba6b2c3290c6e330e2b363
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54160636"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59050646"
 ---
 # <a name="update-conversationmember"></a>Atualizar conversationMember
 
@@ -24,7 +24,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |---------|-------------|
-|Delegado (conta corporativa ou de estudante)| Em equipes: TeamMember.ReadWrite.All<br/>Em canais: ChannelMember.ReadWrite.All  |
+|Delegada (conta corporativa ou de estudante)| Em equipes: TeamMember.ReadWrite.All<br/>Em canais: ChannelMember.ReadWrite.All  |
 |Delegado (conta pessoal da Microsoft)|Sem suporte|
 |Aplicativo| Em equipes: TeamMember.ReadWrite.All<br/>Em canais: ChannelMember.ReadWrite.All |
 

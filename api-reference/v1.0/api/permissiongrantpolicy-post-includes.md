@@ -1,16 +1,16 @@
 ---
 title: Criar permissionGrantConditionSet em inclui coleção de permissionGrantPolicy
 description: Adicione condições em que um evento de concessão de permissão está incluído em uma política de concessão de permissão.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: 79b70637beaff1d90892ab42fc58286d1135b4ff
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 28fd0f5b5533d4c89f7152b6d4eb4e0507b50b95
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52051267"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59007891"
 ---
 # <a name="create-permissiongrantconditionset-in-includes-collection-of-permissiongrantpolicy"></a>Criar permissionGrantConditionSet em inclui coleção de permissionGrantPolicy
 
@@ -24,8 +24,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Policy.ReadWrite.PermissionGrant |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegada (conta corporativa ou de estudante) | Policy.ReadWrite.PermissionGrant |
+|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Policy.ReadWrite.PermissionGrant |
 
 ## <a name="http-request"></a>Solicitação HTTP

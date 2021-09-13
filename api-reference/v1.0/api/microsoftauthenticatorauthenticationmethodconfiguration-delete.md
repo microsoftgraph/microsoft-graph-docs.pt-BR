@@ -2,20 +2,20 @@
 title: Excluir microsoftAuthenticatorAuthenticationMethodConfiguration
 description: Exclui um objeto microsoftAuthenticatorAuthenticationMethodConfiguration.
 author: mmcla
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: bd7febf099ecdc87169e264218b4d748e82b6d1a
-ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
+ms.openlocfilehash: 778615970151b0bd41e76be3581d4a51df0fe832
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51469175"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59110253"
 ---
 # <a name="delete-microsoftauthenticatorauthenticationmethodconfiguration"></a>Excluir microsoftAuthenticatorAuthenticationMethodConfiguration
 Namespace: microsoft.graph
 
-Remova as alterações feitas na política de método de autenticação [do Microsoft Authenticator](../resources/microsoftauthenticatorauthenticationmethodconfiguration.md) revertendo a política para sua configuração padrão.
+Remova as alterações feitas na [política de Microsoft Authenticator de autenticação](../resources/microsoftauthenticatorauthenticationmethodconfiguration.md) revertendo a política para sua configuração padrão.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).

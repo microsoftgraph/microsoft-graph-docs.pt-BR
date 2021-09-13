@@ -2,14 +2,14 @@
 title: Começar a trabalhar com comunicações na nuvem
 description: Saiba como você pode usar bots para responder às necessidades de seus clientes e facilitar a colaboração.
 author: ananmishr
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-communications
-ms.openlocfilehash: a977c2a81d40679eb3029bdfaf7560dd744fc9439e7a650e63d470198883ab0d
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: fbee887a3a45130b47af0632f0c232a646848022
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54246504"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59136163"
 ---
 # <a name="get-started-with-cloud-communications"></a>Começar a trabalhar com comunicações na nuvem
 

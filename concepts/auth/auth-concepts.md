@@ -2,15 +2,15 @@
 title: Princípios Básicos de Autenticação e Autorização para o Microsoft Graph
 description: Para chamar o Microsoft Graph, o aplicativo deve adquirir um token de acesso da Microsoft Identity Plataform.
 author: matt-steele
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: applications
 ms.custom: graphiamtop20
-ms.openlocfilehash: daad7618f3f69a25242b8406a463fec39da196ad29600e671457720ad94ba286
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 3ac6d5ce6d6f1104f09faefcd06aaf1dd2b55422
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54169219"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59078573"
 ---
 # <a name="authentication-and-authorization-basics-for-microsoft-graph"></a>Princípios Básicos de Autenticação e Autorização para o Microsoft Graph
 

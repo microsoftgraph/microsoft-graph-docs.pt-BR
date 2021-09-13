@@ -2,15 +2,15 @@
 title: Tipo de recurso Json
 description: Representa os dados retornados no formato do JSON
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: f18c6fe75436e6a575b18c02e4e70885beeb73df66c23aa8572ea917a85074dc
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: fb8ec2e2fd9922cace67be0f223d3da23f405d14
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54230547"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59089449"
 ---
 # <a name="json-resource-type"></a>Tipo de recurso Json
 

@@ -1,14 +1,14 @@
 ---
 title: Componente de logon no microsoft Graph Toolkit
 description: Um componente de Logon é um botão e um controle de sobrevoo para facilitar plataforma de identidade da Microsoft autenticação.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: nmetulev
-ms.openlocfilehash: 5b4c3b01053d9011d553a57fadecf560eddf80b3d143744d40b1dab167f1f040
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 3398092c85fea23ad408a208a895c9af287371df
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54202018"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59103925"
 ---
 # <a name="login-component-in-the-microsoft-graph-toolkit"></a>Componente de logon no microsoft Graph Toolkit
 
@@ -71,17 +71,17 @@ mgt-login {
 
 Para saber mais, confira [componentes de estilo](../customize-components/style.md).
 
-## <a name="events"></a>Eventos
+## <a name="events"></a>Events
 
 Os eventos a seguir são disparados do controle.
 
 Evento | Quando é emitido | Dados personalizados | Cancelável | Bolhas | Funciona com modelo personalizado
 ------|-------------------|--------------|:-----------:|:---------:|:---------------------------:|
 `loginInitiated` | O usuário clicou no botão entrar para iniciar o processo de logon | Nenhum | Sim | Não | Sim
-`loginCompleted` | O processo de logon foi bem-sucedido e o usuário agora está login | Nenhuma | Não | Não | Sim
-`loginFailed` | O usuário cancelou o processo de logon ou não pôde entrar | Nenhuma | Não | Não | Sim
+`loginCompleted` | O processo de logon foi bem-sucedido e o usuário agora está login | None | Não | Não | Sim
+`loginFailed` | O usuário cancelou o processo de logon ou não pôde entrar | None | Não | Não | Sim
 `logoutInitiated` | O usuário começou a fazer logout | Nenhum | Sim | Não | Sim
-`logoutCompleted` | O usuário saiu | Nenhuma | Não | Não | Sim
+`logoutCompleted` | O usuário saiu | None | Não | Não | Sim
 
 Para obter mais informações sobre como lidar com eventos, consulte [eventos](../customize-components/events.md).
 

@@ -1,16 +1,16 @@
 ---
 title: Listar planos
 description: Recuperar uma lista de objetos **plannerPlan** pertencentes a um objeto de grupo.
-localization_priority: Priority
+ms.localizationpriority: high
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: bc9b5552101beb024dc1cc4119e8dd6c701e4321
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: e01349041c328ac7f9bb5a42b61e474c9218c351
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52054487"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59099317"
 ---
 # <a name="list-plans"></a>Listar planos
 
@@ -76,7 +76,7 @@ GET https://graph.microsoft.com/v1.0/groups/{group-id}/planner/plans
 ---
 
 ##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto de resposta exibido aqui pode ser encurtado para legibilidade.
+Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser reduzido para facilitar a leitura.
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -1,16 +1,16 @@
 ---
 title: tipo de recurso de contrato
 description: Representa os termos de uso personalizáveis de um locatário que são criados e gerenciados com Azure Active Directory (Azure AD).
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: governance
 author: raprakasMSFT
-ms.openlocfilehash: d536b29a0220f4fef8b0e1c6e81142c177b7009902770a74b82cf50bed7f56db
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: f77172c3ddae5799ce1c46dec09fe468b67606ce
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54212225"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59089981"
 ---
 # <a name="agreement-resource-type"></a>tipo de recurso de contrato
 
@@ -26,15 +26,15 @@ Representa os termos de uso personalizáveis de um locatário que são criados e
 | [Criar acordos](../api/agreement-post-agreements.md) | [agreement](agreement.md) | Crie um novo contrato postando na coleção de contratos. |
 | [Obter contrato](../api/agreement-get.md) | [agreement](agreement.md) | Ler propriedades e relações de um objeto de contrato. |
 | [Atualizar contrato](../api/agreement-update.md) | [agreement](agreement.md) | Atualize um objeto agreement. |
-| [Excluir contrato](../api/agreement-delete.md) | None | Excluir um objeto agreement. |
+| [Excluir contrato](../api/agreement-delete.md) | Nenhum(a) | Excluir um objeto agreement. |
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
 |displayName|Cadeia de caracteres|Nome de exibição do contrato. O nome de exibição é usado para o controle interno do contrato, mas não é mostrado aos usuários finais que visualizam o contrato.|
-|id|Cadeia de caracteres| O identificador do contrato. Apenas leitura.|
+|id|String| O identificador do contrato. Somente leitura.|
 |isPerDeviceAcceptanceRequired|Booliano|Indica se os usuários finais são necessários para aceitar esse contrato em todos os dispositivos de onde eles o acessam. O usuário final deve registrar seu dispositivo no Azure AD, caso ainda não tenha feito isso.|
-|isViewingBeforeAcceptanceRequired|Booliano|Indica se o usuário precisa expandir o contrato antes de aceitar.|
+|isViewingBeforeAcceptanceRequired|Boolean|Indica se o usuário precisa expandir o contrato antes de aceitar.|
 |termsExpiration|[termsExpiration](termsexpiration.md)| Cronograma de expiração e frequência de acordo para todos os usuários. |
 |userReacceptRequiredFrequency|Duration|A duração após a qual o usuário deve aceitar os termos de uso. O valor é representado no formato ISO 8601 por durações.|
 

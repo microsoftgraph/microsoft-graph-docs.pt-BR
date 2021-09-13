@@ -2,15 +2,15 @@
 title: Tipo de recurso aadUserNotificationRecipient
 description: Representa um Azure Active Directory (Azure AD) destinatário de uma notificação enviada em um feed Microsoft Teams atividade.
 author: eddie-lee-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: bb5d95c36fb362af6d4f66c1e18a4dcb768c1b204a4e2f70f24f5afe80545483
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 4588b0d17dc099ee65cedeba52bd5cbd1edf7bae
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54230848"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59021782"
 ---
 # <a name="aadusernotificationrecipient-resource-type"></a>Tipo de recurso aadUserNotificationRecipient
 

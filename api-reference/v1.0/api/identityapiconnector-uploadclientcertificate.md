@@ -1,22 +1,22 @@
 ---
 title: 'identityApiConnector: uploadClientCertificate'
-description: Carregue uma chave de formato PKCS 12 (PFX) para uma configuração de autenticação de conectores de API.
-localization_priority: Normal
+description: Upload uma chave de formato PKCS 12 (PFX) para uma configuração de autenticação de conectores de API.
+ms.localizationpriority: medium
 author: nickgmicrosoft
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 84cf8a767a4cf944a143342c1b3a0678252a4e8b
-ms.sourcegitcommit: 32c83957ee69f21a10cd5f759adb884ce4b41c52
+ms.openlocfilehash: 8b05cb71390e97f9268d933080472a86fed359e0
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51921172"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59073888"
 ---
 # <a name="identityapiconnector-uploadclientcertificate"></a>identityApiConnector: uploadClientCertificate
 
 Namespace: microsoft.graph
 
-Carregue uma chave de formato PKCS 12 (.pfx) para a configuração de autenticação de um conector de API. A entrada é um valor codificado de base 64 do conteúdo do certificado PKCS 12. Este método retorna uma [apiConnector](../resources/identityApiConnector.md).
+Upload uma chave de formato PKCS 12 (.pfx) para a configuração de autenticação de um conector de API. A entrada é um valor codificado de base 64 do conteúdo do certificado PKCS 12. Este método retorna uma [apiConnector](../resources/identityApiConnector.md).
 
 ## <a name="permissions"></a>Permissões
 
@@ -26,12 +26,12 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 | :------------------------------------- | :------------------------------------------ |
 | Delegada (conta corporativa ou de estudante)     | APIConnectors.ReadWrite.All |
 | Delegada (conta pessoal da Microsoft) | Sem suporte.  |
-| Application                            | APIConnectors.ReadWrite.All |
+| Aplicativo                            | APIConnectors.ReadWrite.All |
 
 A conta de trabalho ou de estudante precisa pertencer a uma das seguintes funções:
 
 * Administrador global
-* Administrador de Fluxo de Usuário de Identidade Externa
+* Administrador de identidade externa Flow usuário
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -54,7 +54,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|pkcs12Value|String| Este é o campo para enviar o conteúdo pfx. O valor deve ser uma versão codificada de base 64 do conteúdo real do certificado. Obrigatório.|
+|pkcs12Value|Cadeia de caracteres| Este é o campo para enviar o conteúdo pfx. O valor deve ser uma versão codificada de base 64 do conteúdo real do certificado. Obrigatório.|
 |password|String| Essa é a senha do arquivo pfx. Obrigatório. Se nenhuma senha for usada, ainda deverá fornecer um valor `""` de .|
 
 ## <a name="response"></a>Resposta

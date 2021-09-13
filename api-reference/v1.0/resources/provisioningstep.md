@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso provisioningStep
 description: 'Descreve as etapas tomadas para executar uma ação. '
-localization_priority: Normal
+ms.localizationpriority: medium
 author: ArvindHarinder1
 ms.prod: identity-and-access-reports
 doc_type: resourcePageType
-ms.openlocfilehash: 9841a70c0f3a00e3d4c163b9f814ae50c2a8221e6a33a1468d29832d5798c495
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: ea8b16437277c363a8e691c893d046301c3eead4
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54231513"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59078705"
 ---
 # <a name="provisioningstep-resource-type"></a>Tipo de recurso provisioningStep
 
@@ -22,7 +22,7 @@ Descreve as etapas tomadas para executar uma ação.
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|description|Cadeia de caracteres|Resumo do que ocorreu durante a etapa.|
+|description|String|Resumo do que ocorreu durante a etapa.|
 |detalhes|[detailsInfo](detailsinfo.md)|Detalhes do que ocorreu durante a etapa.|
 |nome|Cadeia de caracteres|Nome da etapa.|
 |provisioningStepType|provisioningStepType| Tipo de etapa. Os valores possíveis são: `import`, `scoping`, `matching`, `processing`, `referenceResolution`, `export`, `unknownFutureValue`.|

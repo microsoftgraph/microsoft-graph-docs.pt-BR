@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso plannerChecklistItem
 description: O **recurso plannerChecklistItem** representa um item na lista de verificação de uma tarefa. A lista de verificação em uma tarefa é representada pelo objeto checklistItems.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: a183ee092c0b7af5468e67fa54a63830314aef0490f4001d3527a01d7979b724
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: a8ba68b0b9e9bb3bf6979ad9eb3d498fe55b80ee
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54154907"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59113543"
 ---
 # <a name="plannerchecklistitem-resource-type"></a>Tipo de recurso plannerChecklistItem
 
@@ -23,7 +23,7 @@ O **recurso plannerChecklistItem** representa um item na lista de verificação 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|isChecked|Booliano|O valor `true` é se o item for verificado e caso `false` contrário.|
+|isChecked|Boolean|O valor `true` é se o item for verificado e caso `false` contrário.|
 |lastModifiedBy|[identitySet](identityset.md)| Somente leitura. ID do usuário pela qual foi modificada pela última vez.|
 |lastModifiedDateTime|DateTimeOffset|Somente leitura. Data e hora em que isso foi modificado pela última vez. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`|
 |orderHint|String|Usado para definir a ordem relativa de itens na lista de verificação. O formato é definido como descrito [aqui](planner-order-hint-format.md).|

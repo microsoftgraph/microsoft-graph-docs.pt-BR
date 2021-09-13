@@ -2,15 +2,15 @@
 title: Substituir turno
 description: Substitua um turno existente.
 author: akumar39
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 888932c4732bca7f15a5eb61327cda9bb554b762
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: c6f2e20a2aeafcea6f5946002bae18d2198dace5
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52034893"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59118906"
 ---
 # <a name="replace-shift"></a>Substituir turno
 

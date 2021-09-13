@@ -2,15 +2,15 @@
 title: Tipo de recurso ChartFill
 description: Representa a formatação de preenchimento de um elemento do gráfico.
 author: lumine2008
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: ef76471475d01d161b5cc7bcaaed8f3ebe72f1a00bdf8aa25e74798822704351
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 8b793679f6202728e2b311f7d0c3ecb4987cac2e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54197090"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59049687"
 ---
 # <a name="chartfill-resource-type"></a>Tipo de recurso ChartFill
 

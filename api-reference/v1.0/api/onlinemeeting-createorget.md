@@ -1,16 +1,16 @@
 ---
 title: 'onlineMeeting: createOrGet'
 description: Crie uma reunião online com uma ID externa especificada personalizada. Se a ID externa já existir, essa API retornará o **objeto onlineMeeting** com essa ID externa.
-author: jsandoval-msft
-localization_priority: Normal
+author: mkhribech
+ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: def026c90d5cd311d3c6f1ddb4a7b7276c13aea9
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 131a31793c5c212a250b8d88aea32e3576711bb5
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52751437"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59072922"
 ---
 # <a name="onlinemeeting-createorget"></a>onlineMeeting: createOrGet
 
@@ -63,7 +63,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 | externalId       | Cadeia de caracteres                                   | A ID externa. Uma ID personalizada. (Obrigatório) |
 | participants     | [meetingParticipants](../resources/meetingparticipants.md)          | Os participantes associados à reunião online.  Isso inclui o organizador e os participantes. |
 | startDateTime    | DateTime                                 | O horário de início da reunião em UTC. |
-| Assunto          | Cadeia de caracteres                                   | O assunto da reunião online. |
+| assunto          | Cadeia de caracteres                                   | O assunto da reunião online. |
 
 > **Observações:**
 >

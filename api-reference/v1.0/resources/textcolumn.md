@@ -2,16 +2,16 @@
 author: JeremyKelley
 ms.date: 09/11/2017
 title: TextColumn
-localization_priority: Normal
+ms.localizationpriority: medium
 description: textColumn em um recurso columnDefinition indica que os valores da coluna são texto.
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 6c551ce7568cb31f92d2bf02bb328ffa77fa95d63c8aca547b2add5e5cb57469
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 26d03141bc0520d4d957e853af28c241771d8dac
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54211805"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59084003"
 ---
 # <a name="textcolumn-resource-type"></a>Tipo de recurso TextColumn
 

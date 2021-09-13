@@ -3,14 +3,14 @@ author: vishriv
 title: Tipo de recurso de grupo
 doc_type: resourcePageType
 description: Representa um grupo usado em um armazenamento de termos.
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: taxonomy
-ms.openlocfilehash: a73cd750ffbfe8487b67acbf49c05432b3e46ec3
-ms.sourcegitcommit: 9b8abc940a68dac6ee5da105ca29800cb59775f6
+ms.openlocfilehash: 121f195e8054645be47d7a98c5287c52d754b4e7
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "58514907"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59129751"
 ---
 # <a name="group-resource-type"></a>Tipo de recurso de grupo
 

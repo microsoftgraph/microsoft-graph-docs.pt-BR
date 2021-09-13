@@ -2,15 +2,15 @@
 title: Tipo de recurso ChartTitleFormat
 description: Abrange as propriedades de formatação do título do gráfico.
 author: lumine2008
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: dc49c38ac674f6adf789785932f81fbf2094941fe660d2ada4efc1bfb42bcca1
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: a24e993bce8688cedd059895ad0dcae8c4d79f55
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54230834"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59118761"
 ---
 # <a name="charttitleformat-resource-type"></a>Tipo de recurso ChartTitleFormat
 
@@ -20,7 +20,7 @@ Abrange as propriedades de formatação do título do gráfico.
 
 
 ## <a name="methods"></a>Métodos
-None
+Nenhum(a)
 
 ## <a name="properties"></a>Propriedades
 Nenhuma

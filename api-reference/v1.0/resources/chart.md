@@ -2,15 +2,15 @@
 title: Tipo de recurso Chart
 description: Representa um objeto chart em uma pasta de trabalho.
 author: lumine2008
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 160fcb95fd8ffe4b4d0c2d4e9233afe3492ef32d27b910ee40bb7519b20e591a
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 3a49330d6225dffe34e1594e2c04c18783cc8aae
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54121414"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59032437"
 ---
 # <a name="chart-resource-type"></a>Tipo de recurso Chart
 
@@ -39,7 +39,7 @@ Representa um objeto chart em uma pasta de trabalho.
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |height|Double|Representa a altura, em pontos, do objeto Chart.|
-|id|string|Obtém um gráfico com base em sua posição no conjunto. Somente leitura.|
+|id|cadeia de caracteres|Obtém um gráfico com base em sua posição no conjunto. Somente leitura.|
 |left|Double|A distância, em pontos, da esquerda do gráfico à origem da planilha.|
 |nome|string|Representa o nome de um objeto Chart.|
 |top|Double|Representa a distância, em pontos, da borda superior do objeto à parte superior da primeira linha de uma planilha ou da área de um gráfico.|

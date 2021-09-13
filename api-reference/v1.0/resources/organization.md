@@ -1,16 +1,16 @@
 ---
 title: tipo de recurso organization
 description: " criar e excluir não têm suporte. Herda de directoryObject."
-localization_priority: Priority
+ms.localizationpriority: high
 author: adimitui
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 666bc50887b386265f37a752bc3b98f57db1f9ec7bbf5f188190c4859f5f08ef
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: cacbe0cb6bd3b12c75a09299710ab5f71aef14d0
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54178140"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59104086"
 ---
 # <a name="organization-resource-type"></a>tipo de recurso organization
 

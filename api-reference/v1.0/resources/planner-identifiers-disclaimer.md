@@ -1,16 +1,16 @@
 ---
 title: Identificadores no Planner
 description: 'Os identificadores de objetos no Planner são valores de cadeia de caracteres gerados pelo serviço. Os valores têm 28 caracteres e são sensíveis a minúsculas. Quando passado como dentro, o serviço fará uma validação de formato simples do identificador, se a validação do formato falhar, os chamadores receberão uma resposta de erro de Solicitação Inossa (400) indicando esse problema. Receber esse erro indica um bug no aplicativo de chamada, como:'
-localization_priority: Normal
+ms.localizationpriority: medium
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: conceptualPageType
-ms.openlocfilehash: 97381d57e8f23b6f032cdf0ebfc02a5cdf32ca2219a1d7c8127e472666250c58
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 4433fc63e884f9c98174a07d7d043f69fce4d8c0
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54202158"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59044417"
 ---
 # <a name="identifiers-in-planner"></a>Identificadores no Planner
 

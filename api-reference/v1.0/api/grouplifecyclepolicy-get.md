@@ -2,15 +2,15 @@
 title: Obter groupLifecyclePolicy
 description: Recupera as propriedades e os relacionamentos de um objeto groupLifecyclePolicies.
 author: Jordanndahl
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 0e14244e0699383c711f960ad68628078372a658
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: 671df397ec5a699f1a0e591376c9d1c82613b44c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52679817"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59073993"
 ---
 # <a name="get-grouplifecyclepolicy"></a>Obter groupLifecyclePolicy
 
@@ -24,8 +24,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Directory.Read.All ou Directory.ReadWrite.All |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegada (conta corporativa ou de estudante) | Directory.Read.All ou Directory.ReadWrite.All |
+|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Directory.Read.All ou Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP

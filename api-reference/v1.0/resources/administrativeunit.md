@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso administrativeUnit
 description: Uma unidade administrativa fornece um contêiner conceitual para objetos de diretório usuário e grupo.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: DougKirschner
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 9a9ad564db84a19a2402f34edddc85858dd37c7c00e04eea7fad79acb6d4c466
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: aba4c7fb5ff8e9a6fb54e0e027d9267b15f37884
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54212232"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59036778"
 ---
 # <a name="administrativeunit-resource-type"></a>Tipo de recurso administrativeUnit
 
@@ -46,8 +46,8 @@ Este tópico fornece descrições das propriedades declaradas e propriedades de 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |description|string|Uma descrição opcional para a unidade administrativa.|
-|displayName|string|Nome de exibição da unidade administrativa.|
-|id|string|Identificador exclusivo da unidade administrativa. Apenas leitura.|
+|displayName|cadeia de caracteres|Nome de exibição da unidade administrativa.|
+|id|cadeia de caracteres|Identificador exclusivo da unidade administrativa. Somente leitura.|
 |visibilidade|string|Controla se a unidade administrativa e seus membros estão ocultos ou públicos. Pode ser definido como `HiddenMembership` ou `Public` . Se não estiver definido, o comportamento padrão será `Public` . Quando definido como `HiddenMembership` , somente membros da unidade administrativa podem listar outros membros da unidade administrativa.|
 
 ## <a name="relationships"></a>Relações

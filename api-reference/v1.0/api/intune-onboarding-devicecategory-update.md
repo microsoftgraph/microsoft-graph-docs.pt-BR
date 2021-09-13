@@ -2,15 +2,15 @@
 title: Atualizar deviceCategory
 description: Atualizar as propriedades de um objeto deviceCategory.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 53597f3b2ba9721894ba49b410c38f0c4c909170c09d234baf80c03e3d8ebd84
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: b65c20f3d4a5afe4b34f6d709030f87f355be354
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54245552"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59146888"
 ---
 # <a name="update-devicecategory"></a>Atualizar deviceCategory
 
@@ -51,8 +51,8 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [deviceC
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|O identificador exclusivo da categoria do dispositivo. Somente leitura.|
-|displayName|Cadeia de caracteres|Nome de exibição da categoria de dispositivo.|
+|id|String|O identificador exclusivo da categoria do dispositivo. Somente leitura.|
+|displayName|String|Nome de exibição da categoria de dispositivo.|
 |description|Cadeia de caracteres|Descrição opcional da categoria do dispositivo.|
 
 

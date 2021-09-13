@@ -1,16 +1,16 @@
 ---
 title: Listar a coleção delegatedPermissionClassifications de servicePrincipal
 description: Recupere uma lista de classificações concedidas a permissões delegadas expostas pela entidade de serviço de uma API.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: applications
 author: psignoret
-ms.openlocfilehash: fdf42339adea9441ff0378fe26cce2063062eb82
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: b03ae745a4ae27f4f565f6478bcd68a698b3761e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52054445"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59072684"
 ---
 # <a name="list-delegatedpermissionclassifications-collection-of-serviceprincipal"></a>Listar a coleção delegatedPermissionClassifications de servicePrincipal
 
@@ -24,8 +24,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Application.Read.All, Directory.Read.All |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegada (conta corporativa ou de estudante) | Application.Read.All, Directory.Read.All |
+|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Application.Read.OwnedBy, Application.Read.All, Directory.Read.All |
 
 ## <a name="http-request"></a>Solicitação HTTP

@@ -2,15 +2,15 @@
 title: Acessar managedDevice
 description: Leia as propriedades e as relações do objeto managedDevice.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 393d5e0110f7b37a897861ed14cc5cfed9dc2597
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: f11a23ba66885be038b5a0fe90d3e74c5d2bbd91
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58260247"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59029420"
 ---
 # <a name="get-manageddevice"></a>Acessar managedDevice
 

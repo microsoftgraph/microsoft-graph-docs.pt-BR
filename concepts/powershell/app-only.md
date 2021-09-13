@@ -1,14 +1,14 @@
 ---
 title: Usar autenticação somente aplicativo com o Microsoft Graph PowerShell SDK
 description: Saiba como usar a autenticação somente para aplicativos para habilitar cenários não interativos com o SDK do Microsoft Graph PowerShell.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: jasonjoh
-ms.openlocfilehash: 0c87d415f23123b5628bcda8655e3c5b02323a86
-ms.sourcegitcommit: c6f7a931a8d83ac54f577b7bec08237fd17ce51a
+ms.openlocfilehash: 10413d1af07d2ba195522b062f068cf663492296
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58490550"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59083919"
 ---
 # <a name="use-app-only-authentication-with-the-microsoft-graph-powershell-sdk"></a>Usar autenticação somente aplicativo com o Microsoft Graph PowerShell SDK
 

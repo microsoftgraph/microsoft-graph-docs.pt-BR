@@ -2,14 +2,14 @@
 title: Propor novos horários de reunião no Outlook
 description: No Outlook, o organizador da reunião pode permitir que os convidados proponham horários alternativos.
 author: harini84
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: outlook
-ms.openlocfilehash: 6beba6c1c2c19515ade8123069feed83951fa903febdcb39acabff60f678dab1
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: eb75a950f627dde2cf54f373e17435b501a082df
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54157946"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59103946"
 ---
 # <a name="propose-new-meeting-times-in-outlook"></a>Propor novos horários de reunião no Outlook
 

@@ -2,15 +2,15 @@
 title: Windows visão geral da API de atualizações
 description: O Windows de implantação update for Business fornece controle à sua organização sobre as atualizações oferecidas aos seus dispositivos.
 author: Alice-at-Microsoft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: w10
 doc_type: conceptualPageType
-ms.openlocfilehash: a8cd51524647c3fc34be1619cc0c61e433e4031ab805c4269e309e0502e1fae6
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: df2977584ba523f6efcc71366bd63db481539ce1
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54225668"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59117624"
 ---
 # <a name="windows-updates-api-overview"></a>Windows visão geral da API de atualizações
 

@@ -1,16 +1,16 @@
 ---
 title: Atualizar inferenceclassificationoverride
 description: 'Altere o campo **classifyAs** de uma substituição conforme especificado. '
-localization_priority: Normal
+ms.localizationpriority: medium
 author: abheek-das
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: ff49d7499014d06f1aaa48ee29162aaede156aa2
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: efeebf7642cd7f7de2eca39b08f13a76b413fb7c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52052254"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59045550"
 ---
 # <a name="update-inferenceclassificationoverride"></a>Atualizar inferenceclassificationoverride
 
@@ -93,7 +93,7 @@ Content-type: application/json
 ---
 
 ##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto de resposta exibido aqui pode ser encurtado para legibilidade.
+Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser reduzido para facilitar a leitura.
 <!-- {
   "blockType": "response",
   "truncated": true,

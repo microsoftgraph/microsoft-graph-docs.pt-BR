@@ -2,14 +2,14 @@
 title: Azure Active Directory (Azure AD) Graph perguntas frequentes sobre Graph migração da Microsoft
 description: Azure Active Directory (Azure AD) Graph perguntas frequentes sobre Graph migração da Microsoft.
 author: FaithOmbongi
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: applications
-ms.openlocfilehash: e563b84db22589fb64af560e90c212e1c8348657
-ms.sourcegitcommit: 04fee41bc130718a4c16e41bc244ad384bba2ac3
+ms.openlocfilehash: fce5d843994526f5546375c72c1d6b536352b4f6
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58363680"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59139160"
 ---
 # <a name="azure-active-directory-azure-ad-graph-to-microsoft-graph-migration-faq"></a>Azure Active Directory (Azure AD) Graph perguntas frequentes sobre Graph migração da Microsoft
 

@@ -1,16 +1,16 @@
 ---
 title: Relatórios de atividades do OneDrive
 description: Use os relatórios de atividades do OneDrive para obter a atividade de cada usuário licenciado para usar o OneDrive examinando sua interação com arquivos no OneDrive. Esses relatórios podem ajudar você a entender o nível de colaboração acontecendo, mostrando o número de arquivos compartilhados.
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: reports
 author: sarahwxy
 doc_type: conceptualPageType
-ms.openlocfilehash: 0320a247663e1a1670d3d35fe15d53d6e758ace4e93b69b6e6495578aada1a7e
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: fc38469f2ea02947d52f9b5b269e5f58a45617ed
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54154998"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59084192"
 ---
 # <a name="onedrive-activity-reports"></a>Relatórios de atividades do OneDrive
 

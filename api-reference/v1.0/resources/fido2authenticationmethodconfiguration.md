@@ -2,15 +2,15 @@
 title: tipo de recurso fido2AuthenticationMethodConfiguration
 description: Representa uma política de métodos de autenticação FIDO2
 author: mmcla
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: e1ae1981de295e691c2cee5e0cda320446bebe1a021efb6c1898cd3ab91158d1
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 3be6525cc09b2932541efa722e1cc140d42739a0
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54175284"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59062695"
 ---
 # <a name="fido2authenticationmethodconfiguration-resource-type"></a>tipo de recurso fido2AuthenticationMethodConfiguration
 
@@ -31,7 +31,7 @@ Representa uma política de métodos de autenticação FIDO2. As políticas de m
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|Cadeia de caracteres|O identificador de política do método de autenticação.|
-|isAttestationEnforced|Booliano|Determina se o atestado deve ser imposto para o registro da chave de segurança FIDO2.|
+|isAttestationEnforced|Boolean|Determina se o atestado deve ser imposto para o registro da chave de segurança FIDO2.|
 |isSelfServiceRegistrationAllowed|Booliano|Determina se os usuários podem registrar novas chaves de segurança FIDO2.|
 |keyRestrictions|[fido2KeyRestrictions](../resources/fido2keyrestrictions.md)|Controla se as restrições de chave são impostas às teclas de segurança FIDO2, permitindo ou desproteção de determinados tipos de chave, conforme definido pelo Authenticator GUID de Atestado (AAGUID), um identificador que indica o tipo (por exemplo, make e model) do autenticador.|
 |state|authenticationMethodState|Os valores possíveis são: `enabled`, `disabled`.|

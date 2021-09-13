@@ -2,15 +2,15 @@
 title: Tipo de número teamsAsyncOperationStatus
 description: Descreve o status atual de um teamsAsyncOperation.
 author: nkramer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: enumPageType
-ms.openlocfilehash: fbaf6f3d76912ea01bd08b57be49b229a4692b079545253644de6ccee9a8606f
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: a810aa8e0e02f229c2f602cd5f56e596709d2f60
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54216557"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59071886"
 ---
 # <a name="teamsasyncoperationstatus-enum-type"></a>Tipo de número teamsAsyncOperationStatus
 

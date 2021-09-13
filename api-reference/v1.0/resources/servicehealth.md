@@ -2,15 +2,15 @@
 title: Tipo de recurso serviceHealth
 description: Representa as informações de saúde de um serviço.
 author: payiAzure
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: service-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 89bc9579b6ca5af6b7306746394b439c83d40208
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 7bb482f9432de580498ecf7d248c3d9f16abd2a8
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58266720"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59019129"
 ---
 # <a name="servicehealth-resource-type"></a>Tipo de recurso serviceHealth
 

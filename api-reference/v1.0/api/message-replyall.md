@@ -2,15 +2,15 @@
 title: 'message: replyAll'
 description: Responder a todos os destinatários de uma mensagem usando o formato JSON ou MIME.
 author: abheek-das
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: a47223c925e9ac4c1e45769f3fe04f44c80c1c71
-ms.sourcegitcommit: 503c72036c376a30e08c29df8e7730a7afcab66e
+ms.openlocfilehash: 4c6d22d1623b03ce57ecbb8647af59200360878b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52869909"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59016096"
 ---
 # <a name="message-replyall"></a>message: replyAll
 

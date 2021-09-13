@@ -2,15 +2,15 @@
 author: daspek
 description: O recurso contentType representa um tipo de conteúdo no SharePoint.
 title: Tipo de recurso contentType
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: 0db41f1a3a3c8a413afcf12c7176109a1b08c9fe
-ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
+ms.openlocfilehash: 3acff5d1fe0661cee9d94ff96d8ffc7d470d624b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58695095"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59049624"
 ---
 # <a name="contenttype-resource-type"></a>Tipo de recurso contentType
 
@@ -28,14 +28,14 @@ Os tipos de conteúdo permitem definir um conjunto de colunas que devem estar pr
 |[Criar contentType para um site](../api/site-post-contenttypes.md)|[contentType](../resources/contenttype.md)|Criar um novo [objeto contentType](../resources/contenttype.md) em um [site](../resources/site.md).|
 |[Obter contentType](../api/contenttype-get.md)|[contentType](../resources/contenttype.md)|Leia as propriedades e as relações de um [objeto contentType.](../resources/contenttype.md)|
 |[Atualizar contentType](../api/contenttype-update.md)|[contentType](../resources/contenttype.md)|Atualize as propriedades de um [objeto contentType.](../resources/contenttype.md)|
-|[Excluir contentType](../api/contenttype-delete.md)|Nenhum|Exclui um [objeto contentType.](../resources/contenttype.md)|
+|[Excluir contentType](../api/contenttype-delete.md)|None|Exclui um [objeto contentType.](../resources/contenttype.md)|
 |[isPublished](../api/contenttype-ispublished.md)|Booliano| Verifica se [o contentType](../resources/contenttype.md) foi publicado.|
 |[publish](../api/contenttype-publish.md)|[contentType](../resources/contenttype.md)| Publicar um [contentType](../resources/contenttype.md).|
 |[unpublish](../api/contenttype-unpublish.md)|[contentType](../resources/contenttype.md)|Não publice um [contentType](../resources/contenttype.md).|
 |[addCopy](../api/contenttype-addcopy.md)|[contentType](../resources/contenttype.md)|Adicionar cópia de um [contentType](../resources/contenttype.md) de um [site](../resources/site.md) a uma [lista](../resources/list.md).|
 |[associateWithHubSites](../api/contenttype-associatewithhubsites.md)|[contentType](../resources/contenttype.md)|Associa um [contentType](../resources/contenttype.md) a uma lista de sites de hub.|
 |[copyToDefaultContentLocation](../api/contenttype-copytodefaultcontentlocation.md)|[contentType](../resources/contenttype.md)| Copie um arquivo para o local de conteúdo padrão em [um contentType](../resources/contenttype.md).|
-|[List columns](../api/contenttype-list-columns.md)|[coleção columnDefinition](../resources/columnDefinition.md)|Obter uma coleção de colunas, representadas como [recursos columnDefinition,](../resources/columnDefinition.md) em **um contentType**.|
+|[Colunas de lista](../api/contenttype-list-columns.md)|[coleção columnDefinition](../resources/columnDefinition.md)|Obter uma coleção de colunas, representadas como [recursos columnDefinition,](../resources/columnDefinition.md) em **um contentType**.|
 |[Criar coluna](../api/contenttype-post-columns.md)|[columnDefinition](../resources/columnDefinition.md)|Adicione uma coluna a **um tipo de conteúdo** em um site ou lista.|
 
 
@@ -53,7 +53,7 @@ Os tipos de conteúdo permitem definir um conjunto de colunas que devem estar pr
 | **parentId**      | string               | O identificador exclusivo do tipo de conteúdo.|
 | **readOnly**      | Booliano              | Se `true` , o tipo de conteúdo não pode ser modificado, a menos que esse valor seja definido pela primeira vez como `false` .|
 | **sealed**        | Booliano              | Se , o tipo de conteúdo não pode ser modificado por usuários ou por meio de operações `true` de push-down. Somente administradores de conjunto de sites podem lacrar ou retirar o lacre dos tipos de conteúdo.|
-| **isBuiltIn**            | Booliano| Especifica se um tipo de conteúdo é um tipo de conteúdo integrado. |
+| **isBuiltIn**            | Boolean| Especifica se um tipo de conteúdo é um tipo de conteúdo integrado. |
 | **documentSet**       | [documentSet][]      | [Metadados do Conjunto](/sharepoint/governance/document-set-planning#about-document-sets) de Documentos.|
 | **documentTemplate**  | [documentSetContent][] | Metadados do modelo de documento. Para garantir que os documentos tenham conteúdo consistente em um site e seus subsites, você pode associar um modelo do Word, Excel ou PowerPoint a um tipo de conteúdo de site.|
 | **associatedHubsUrls**       | Collection(string) | Lista de URLs canônicas para sites de hub aos quais esse tipo de conteúdo está associado. Isso conterá todos os sites de hub em que esse tipo de conteúdo está na fila para ser imposto ou já está imposto. Impor um tipo de conteúdo significa que o tipo de conteúdo será aplicado às listas nos sites imposto.|

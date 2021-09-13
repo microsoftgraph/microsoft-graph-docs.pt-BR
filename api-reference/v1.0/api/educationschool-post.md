@@ -2,15 +2,15 @@
 title: Criar educationSchool
 description: Crie um novo objeto educationSchool.
 author: mlafleur
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 98da82ad50ba9f1a8c8b5341730aa3b85f6345c0
-ms.sourcegitcommit: b8b0e88b3ba9a434dc45f5ab640cb46f66fae299
+ms.openlocfilehash: 3c96a3c8a5cab46f1252c10d7d72512284c09e53
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "52474810"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59074392"
 ---
 # <a name="create-educationschool"></a>Criar educationSchool
 
@@ -55,9 +55,9 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [a educa
 | Propriedade             | Tipo                                               | Descrição                                                                                                                                                          |
 | :------------------- | :------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | displayName          | Cadeia de caracteres                                             | Nome de exibição da escola. Herdado de [educationOrganization](../resources/educationorganization.md).                                                           |
-| descrição          | Cadeia de caracteres                                             | Descrição da escola. Herdado de [educationOrganization](../resources/educationorganization.md).                                                            |
+| description          | String                                             | Descrição da escola. Herdado de [educationOrganization](../resources/educationorganization.md).                                                            |
 | externalSource       | educationExternalSource                            | Fonte de onde essa organização foi criada. Herdado de [educationOrganization](../resources/educationorganization.md). Os valores possíveis são: `sis` , 'manual. |
-| externalSourceDetail | Cadeia de caracteres                                             | O nome da fonte externa de onde esses recursos foram gerados.                                                                                                   |
+| externalSourceDetail | String                                             | O nome da fonte externa de onde esses recursos foram gerados.                                                                                                   |
 | principalEmail       | Cadeia de caracteres                                             | Endereço de email da entidade de segurança.                                                                                                                                      |
 | principalName        | Cadeia de caracteres                                             | Nome da entidade de segurança.                                                                                                                                               |
 | externalPrincipalId  | Cadeia de caracteres                                             | ID da entidade de segurança no sistema de sincronização.                                                                                                                                   |

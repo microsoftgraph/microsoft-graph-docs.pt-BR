@@ -2,15 +2,15 @@
 title: Excluir messageRule
 description: Exclua o objeto messageRule especificado.
 author: abheek-das
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: d7351a2c8942cd69d1b6369c95193d5ba4359cc4
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 219550b1231333f1f464ea6f2492a94d0f6a77ca
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50129993"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59073013"
 ---
 # <a name="delete-messagerule"></a>Excluir messageRule
 
@@ -19,7 +19,7 @@ Namespace: microsoft.graph
 
 Exclua o objeto [messageRule](../resources/messagerule.md) especificado.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |

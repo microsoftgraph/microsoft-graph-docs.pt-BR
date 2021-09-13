@@ -2,16 +2,16 @@
 author: JeremyKelley
 ms.date: 09/10/2017
 title: Listar Arquivos Recentes
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: sharepoint
 description: Liste um conjunto de itens que foram usados recentemente pelo usuário conectado.
 doc_type: apiPageType
-ms.openlocfilehash: 2d7d1f67353301889f50ae6ead03e70d574ee386
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: ba0f63702125693153017ffbe7fc7751601249eb
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50239867"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59090695"
 ---
 # <a name="list-recent-files"></a>Liste arquivos recentes
 

@@ -1,16 +1,16 @@
 ---
 title: tipo de recurso segment
 description: O tipo de segmento
-localization_priority: Normal
+ms.localizationpriority: medium
 author: williamlooney
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: e01e227636f3328e4b481e59d5b4beab72c844b11cd3b4ba949fe745eb35d892
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 8301508cebf11b6ff4970aa8b334f2d7912a6055
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54184932"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59113809"
 ---
 # <a name="segment-resource-type"></a>tipo de recurso segment
 

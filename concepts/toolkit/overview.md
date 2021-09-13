@@ -1,14 +1,14 @@
 ---
 title: 'Microsoft Graph Toolkit: Componentes da interface do usuário e provedores de autenticação para o Microsoft Graph'
 description: O Microsoft Graph Toolkit é uma coleção de provedores de autenticação e componentes web reutilizáveis e agnósticos da estrutura para acessar e trabalhar com o Microsoft Graph.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: elisenyang
-ms.openlocfilehash: 4997e58eb592ee7cbd8339a13c31389cdbab55818318c19087048bd9ff5905f5
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 83b8329eab672ad8361a3f20ce1ac07564aa8341
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54204985"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59143584"
 ---
 # <a name="microsoft-graph-toolkit-ui-components-and-authentication-providers-for-microsoft-graph"></a>Microsoft Graph Toolkit: Componentes da interface do usuário e provedores de autenticação para o Microsoft Graph 
 
@@ -49,11 +49,12 @@ Os componentes também estão disponíveis como [React componentes](./get-starte
 
 |Provedores|Descrição|
 |---------|-----------|
-|[Msal](./providers/msal.md)|Usa MSAL.js para entrar em usuários e adquirir tokens para usar com o Microsoft Graph.|
-|[Msal 2.0](./providers/msal2.md)| Usa o msal-browser para entrar em usuários e adquirir tokens para usar com o Microsoft Graph.|
+|[MSAL](./providers/msal.md)|Usa msal.js para entrar em usuários e adquirir tokens para usar com o Microsoft Graph.|
+|[MSAL2](./providers/msal2.md)| Usa o msal-browser para entrar em usuários e adquirir tokens para usar com o Microsoft Graph.|
 |[Tron](./providers/electron.md)|Autentica e fornece à Microsoft Graph acesso a componentes dentro de aplicativos Detron|
 |[SharePoint](./providers/sharepoint.md)|Autentica e fornece à Microsoft Graph acesso a componentes dentro de SharePoint Web Parts.|
-|[Teams](./providers/teams.md)|Autentica e fornece à Microsoft Graph acesso a componentes dentro de Microsoft Teams guias.|
+|[Teams](./providers/teams.md)|Usa msal.js para entrar em usuários e adquirir tokens no cliente em Microsoft Teams guias.|
+|[Teams MSAL2](./providers/teams-msal2.md)|Usa o msal-browser para entrar em usuários e adquirir tokens Microsoft Teams guias. Oferece suporte a Sign-On com back-end personalizado. |
 |[Proxy](./providers/proxy.md)|Permite o uso da autenticação de back-end roteamento de todas as chamadas para a Microsoft Graph seu back-end.|
 |[Personalizados](./providers/custom.md)|Crie um provedor personalizado para habilitar a autenticação e o acesso à Microsoft Graph com o código de autenticação existente do aplicativo.|
 

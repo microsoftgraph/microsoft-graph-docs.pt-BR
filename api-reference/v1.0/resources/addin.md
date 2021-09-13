@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso addIn
 description: Veja a seguir uma representação JSON do recurso.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: bccea3c78818a2cd4dfaf62cdb402aa695bda621f1c5a540b744f2cd3c905e84
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 1f74206921457a0a7119feafb6a3e934225329a4
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54169701"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59094503"
 ---
 # <a name="addin-resource-type"></a>Tipo de recurso addIn
 

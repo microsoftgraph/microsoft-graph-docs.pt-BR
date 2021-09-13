@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso clientUserAgent
 description: O tipo clientUserAgent
-localization_priority: Normal
+ms.localizationpriority: medium
 author: williamlooney
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 6c1150cf60b3b042358ff1a854944b14722e2a9717daaed064d9d63392e475aa
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: ba453f07d375fd95202446d66647d762ee4e5896
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54212210"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59104268"
 ---
 # <a name="clientuseragent-resource-type"></a>Tipo de recurso clientUserAgent
 
@@ -23,7 +23,7 @@ Representa um agente de usuário cliente de um ponto de extremidade em uma chama
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
 |applicationVersion|String|Identifica a versão do software de aplicativo usado por esse ponto de extremidade.|
-|headerValue|Cadeia de caracteres|Valor de header do agente do usuário relatado por esse ponto de extremidade.|
+|headerValue|String|Valor de header do agente do usuário relatado por esse ponto de extremidade.|
 |plataforma|microsoft.graph.callRecords.clientPlatform|Identifica a plataforma usada por esse ponto de extremidade. Os valores possíveis são: `unknown`, `windows`, `macOS`, `iOS`, `android`, `web`, `ipPhone`, `roomSystem`, `surfaceHub`, `holoLens`, `unknownFutureValue`.|
 |productFamily|microsoft.graph.callRecords.productFamily|Identifica a família de softwares de aplicativos usados por esse ponto de extremidade. Os valores possíveis são: `unknown`, `teams`, `skypeForBusiness`, `lync`, `unknownFutureValue`.|
 

@@ -1,16 +1,16 @@
 ---
 title: tipo de recurso permissionGrantConditionSet
 description: Especifica uma regra de correspondência com condições em que um evento é incluído ou excluído de uma política de concessão de permissão.
-localization_priority: Priority
+ms.localizationpriority: high
 doc_type: resourcePageType
 ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: 774d0f8dce0a5e1128f8e2399fb8399f5ee84b1fa28aeee9fd2a0574ae5a4100
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: a0e6692e74f1d4b116de1f9b724e8be21a8af7d1
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54196961"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59117890"
 ---
 # <a name="permissiongrantconditionset-resource-type"></a>tipo de recurso permissionGrantConditionSet
 

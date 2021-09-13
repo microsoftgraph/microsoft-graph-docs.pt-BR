@@ -2,15 +2,15 @@
 title: tipo de recurso relatedContact
 description: Registro de contato relacionado a um educationUser que fornece informações para tutores, auxiliares, médicos e assim por diante.
 author: mmast-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 3a99702811601278c1d3bbe4413fec495b8ba2d6bd13b23dafd90b3ff86f7c19
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 528244c6cc84ab26c21ec1ea5c15c7bc8e68c082
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54237527"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59035994"
 ---
 # <a name="relatedcontact-resource-type"></a>tipo de recurso relatedContact
 

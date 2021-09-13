@@ -2,14 +2,14 @@
 title: Usar a API Pesquisa da Microsoft no Microsoft Graph pesquisar pessoas (visualização)
 description: Você pode usar a API Pesquisa da Microsoft para pesquisar por pessoas relevantes para você.
 author: acsehi
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: search
-ms.openlocfilehash: ac978f09477db841e8f71a630128ba58d4f19ec2567813704a326ba49b13b818
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 158227ca262d70f457405d678e3f4b10f0c966ff
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54235090"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59129688"
 ---
 # <a name="use-the-microsoft-search-api-in-microsoft-graph-to-search-people-preview"></a>Usar a API Pesquisa da Microsoft no Microsoft Graph pesquisar pessoas (visualização)
 

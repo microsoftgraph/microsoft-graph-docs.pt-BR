@@ -1,15 +1,15 @@
 ---
 title: Visão geral Graph SDKs da Microsoft
 description: Descreve os SDKs que estão disponíveis, as plataformas que eles suportam e o valor que eles fornecem aos desenvolvedores.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: MichaelMainer
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 088fe89df25088a07012bcfb8535e51c68e93680
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: d68f0c896daae9f65d734cbf73649721b851857f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58264315"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59142359"
 ---
 # <a name="microsoft-graph-sdks-overview"></a>Visão geral Graph SDKs da Microsoft
 
@@ -22,7 +22,7 @@ A biblioteca principal fornece um conjunto de recursos que aprimoram o trabalho 
 > [!VIDEO https://www.youtube-nocookie.com/embed/hDnsd2nJf88]
 
 
-## <a name="supported-platforms"></a>Plataformas com suporte
+## <a name="supported-platforms"></a>Plataformas compatíveis
 
 Atualmente, os SDKs estão disponíveis para os seguintes idiomas e plataformas:
 

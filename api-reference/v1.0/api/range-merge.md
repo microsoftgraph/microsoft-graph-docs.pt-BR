@@ -2,15 +2,15 @@
 title: 'Range: merge'
 description: Mescla as células do intervalo em uma região da planilha.
 author: lumine2008
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 2ac0ea9456175c929fb1194345536180ee12dd07
-ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
+ms.openlocfilehash: bc1d9aec60989defcd500115d002da89655dedf3
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "50573660"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59113978"
 ---
 # <a name="range-merge"></a>Range: merge
 

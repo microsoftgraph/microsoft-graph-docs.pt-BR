@@ -1,14 +1,14 @@
 ---
 author: davidmu1
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: msgraph
 ms.topic: include
-ms.openlocfilehash: c2a090958916e0535a0410929c4f8bf366bc484bc5692a4235725f6fe999d9e0
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 6cfe05770d1476737e4d467f4a52ab249f17fe0e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54196591"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59035635"
 ---
 <!-- markdownlint-disable MD041 -->
 <!-- this file is auto-generated don't edit it manually! -->
@@ -20,4 +20,8 @@ ms.locfileid: "54196591"
 | Qualquer | 2000 solicitações por 20 segundos | 1000 solicitações por 20 segundos |
 
 Os limites anteriores se aplicam aos seguintes recursos:  
-complianceManagementPartner, deviceAppManagement, deviceCategory, deviceComanagementAuthorityConfiguration, deviceEnrollmentConfiguration, deviceEnrollmentLimitConfiguration, deviceEnrollmentPlatformRestrictionsConfiguration, deviceEnrollmentWindowsHelloForBusinessConfiguration, deviceManagementExchangeConnector, deviceManagementExchangeOnPremisesPolicy, deviceManagementPartner, enrollmentConfigurationAssignment, mobileThreatDefenseConnector, onPremisesConditionalAccessSettings, sideLoadingKey, vppToken, windows10EnrollmentCompletionPageConfiguration.
+
+| <!-- fake header--> | <!-- fake header--> |
+|--|--|
+|<ul> <li> [complianceManagementPartner](/graph/api/resources/compliancemanagementpartner) <li> [deviceAppManagement](/graph/api/resources/deviceappmanagement) <li> [deviceCategory](/graph/api/resources/devicecategory) <li> [deviceComanagementAuthorityConfiguration](/graph/api/resources/devicecomanagementauthorityconfiguration) <li> [deviceEnrollmentConfiguration](/graph/api/resources/deviceenrollmentconfiguration) <li> [deviceEnrollmentLimitConfiguration](/graph/api/resources/deviceenrollmentlimitconfiguration) <li> [deviceEnrollmentPlatformRestrictionsConfiguration](/graph/api/resources/deviceenrollmentplatformrestrictionsconfiguration) <li> [deviceEnrollmentWindowsHelloForBusinessConfiguration](/graph/api/resources/deviceenrollmentwindowshelloforbusinessconfiguration) <li> [deviceManagementExchangeConnector](/graph/api/resources/devicemanagementexchangeconnector) </ul> | <ul><li> [deviceManagementExchangeOnPremisesPolicy](/graph/api/resources/devicemanagementexchangeonpremisespolicy) <li> [deviceManagementPartner](/graph/api/resources/devicemanagementpartner) <li> [enrollmentConfigurationAssignment](/graph/api/resources/enrollmentconfigurationassignment) <li> [mobileThreatDefenseConnector](/graph/api/resources/mobilethreatdefenseconnector) <li> [onPremisesConditionalAccessSettings](/graph/api/resources/onpremisesconditionalaccesssettings) <li> [sideLoadingKey](/graph/api/resources/sideloadingkey) <li> [vppToken](/graph/api/resources/vpptoken) <li> [windows10EnrollmentCompletionPageConfiguration](/graph/api/resources/windows10enrollmentcompletionpageconfiguration)  </ul> |
+

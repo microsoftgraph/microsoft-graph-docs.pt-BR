@@ -2,15 +2,15 @@
 title: Acessar deviceConfigurationDeviceOverview
 description: Leia as propriedades e relações de objetos de deviceConfigurationDeviceOverview.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 530fa87a6217524469bef1835d90be4b4f4e7ee314e38a7dc8bb558f6bad7ed0
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 65fb4726a6e858d644b657f23fbb267f095f8f3f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54238542"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59114236"
 ---
 # <a name="get-deviceconfigurationdeviceoverview"></a>Acessar deviceConfigurationDeviceOverview
 

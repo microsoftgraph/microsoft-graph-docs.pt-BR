@@ -2,15 +2,15 @@
 title: Listar taughtClasses
 description: Obter os recursos educationClass da propriedade de navegação de classes ensinadas.
 author: mlafleur
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 9611ab3fdb2eeb95c9f9f2f195e0441e2d088d603f486f7d6bd5749219fda9e3
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 60e2bf7281f04cad9506341bc8f46f0cec491cd0
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57102416"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59114537"
 ---
 # <a name="list-taughtclasses"></a>Listar taughtClasses
 
@@ -24,7 +24,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 | :------------------------------------- | :------------------------------------------ |
-| Delegada (conta corporativa ou de estudante)     | EduRoster.ReadBasic                         |
+| Delegado (conta corporativa ou de estudante)     | EduRoster.ReadBasic                         |
 | Delegado (conta pessoal da Microsoft) | Sem suporte                               |
 | Aplicativo                            | EduRoster.Read.All, EduRoster.ReadWrite.All |
 

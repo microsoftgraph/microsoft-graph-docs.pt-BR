@@ -1,22 +1,22 @@
 ---
 title: Excluir timeOffRequest
-description: Excluir um objeto timeOffRequest.
-localization_priority: Normal
+description: Exclua um objeto timeOffRequest.
+ms.localizationpriority: medium
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 6f5af597174d6146c50d88a3038af1af0158c931
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 579ce20dc2ed5bde016ef1d90507de8c0bc0c42c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48044064"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59049890"
 ---
 # <a name="delete-timeoffrequest"></a>Excluir timeOffRequest
 
 Namespace: microsoft.graph
 
-Excluir um objeto [timeOffRequest](../resources/timeoffrequest.md) .
+[Exclua um objeto timeOffRequest.](../resources/timeoffrequest.md)
 
 ## <a name="permissions"></a>Permissões
 
@@ -24,11 +24,11 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Schedule. ReadWrite. All, Group. ReadWrite. All    |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegada (conta corporativa ou de estudante) | Schedule.ReadWrite.All, Group.ReadWrite.All    |
+|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Schedule.ReadWrite.All |
 
-> **Observação**: esta API oferece transporte a permissões de administrador. Os administradores globais podem acessar grupos dos quais eles não são membros.
+> **Observação**: esta API oferece transporte a permissões de administrador. Os administradores globais podem acessar grupos dos que não são membros.
 
 ## <a name="http-request"></a>Solicitação HTTP
 

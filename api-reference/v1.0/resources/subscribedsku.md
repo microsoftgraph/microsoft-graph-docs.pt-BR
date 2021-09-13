@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso subscribedSku
 description: Contém informações sobre um serviço SKU assinado por uma empresa.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: SumitParikh
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: f42df21b5c7e414f03c172b41a0f25ba3dcd59359ec699af9c7e0a06869059fd
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: dd497dd40e691fe8751517b7c9b540844e29e615
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54163646"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59134451"
 ---
 # <a name="subscribedsku-resource-type"></a>Tipo de recurso subscribedSku
 
@@ -32,7 +32,7 @@ Somente a operação de leitura tem nos SKUs inscritos; criar, atualizar e exclu
 |appliesTo|Cadeia de caracteres| Por exemplo, “Usuário” ou “Empresa”. |
 |capabilityStatus|Cadeia de caracteres|  Os valores possíveis são: `Enabled`, `Warning`, `Suspended`, `Deleted`, `LockedOut`. O capabilityStatus é se a propriedade `Enabled` **prepaidUnits** tiver pelo menos uma unidade habilitada e se o cliente `LockedOut` cancelar sua assinatura. |
 |consumedUnits|Int32| O número de licenças que foram atribuídas. |
-|id|String| O identificador exclusivo do objeto SKU assinado. Chave, não anulada. |
+|id|Cadeia de caracteres| O identificador exclusivo do objeto SKU assinado. Chave, não anulada. |
 |prepaidUnits|[licenseUnitsDetail](licenseunitsdetail.md)| Informações sobre o número e o status das licenças pré-pagas. |
 |servicePlans|Coleção [servicePlanInfo](serviceplaninfo.md)| Informações sobre os planos do serviço que estão disponíveis com o SKU. Não anulada |
 |skuId|Guid| O identificador exclusivo (GUID) do SKU do serviço. |
@@ -79,6 +79,11 @@ Veja a seguir uma representação JSON do recurso
 }
 
 ```
+
+## <a name="see-also"></a>Confira também
+
++ [Nomes de produtos e identificadores de plano de serviço para licenciamento](/azure/active-directory/enterprise-users/licensing-service-plan-reference)
+
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!-- {

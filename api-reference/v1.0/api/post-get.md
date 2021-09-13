@@ -2,15 +2,15 @@
 title: Obter postagem
 description: 'Obtenha as propriedades e os relacionamentos de uma postagem em um thread especificado. Você pode especificar o pai '
 author: dkershaw10
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 3830f1672d09eb7a9aed43dec67c92f96e360b18
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: f36d04802922d93defed45eda70747aa9bbc3462
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52049447"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59085312"
 ---
 # <a name="get-post"></a>Obter postagem
 
@@ -79,7 +79,7 @@ GET https://graph.microsoft.com/v1.0/groups/{id}/threads/{id}/posts/{id}
 ---
 
 ##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser reduzido para facilitar a leitura.
 <!-- {
   "blockType": "response",
   "truncated": true,

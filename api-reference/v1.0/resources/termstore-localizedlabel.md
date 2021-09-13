@@ -2,15 +2,15 @@
 title: Tipo de recurso localizedLabel
 description: Representa o rótulo de um termo no armazenamento de termos.
 author: vishriv
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: taxonomy
 doc_type: resourcePageType
-ms.openlocfilehash: da9e3fb1a3cff98823771c1c99db052b92ba7e38
-ms.sourcegitcommit: 998c63e6290cfb5ad4a6bd3eb3e249d282f962a3
+ms.openlocfilehash: e0944e2db89b844aa6cbd0c6d2dd49ca2fe4afe3
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58533718"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59084052"
 ---
 # <a name="localizedlabel-resource-type"></a>Tipo de recurso localizedLabel
 
@@ -24,7 +24,7 @@ Identifica os rótulos associados a um determinado termo.
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |isDefault|Booliano|Indica se o rótulo é o rótulo padrão.|
-|languageTag|Cadeia de caracteres|A marca de idioma do rótulo.|
+|languageTag|String|A marca de idioma do rótulo.|
 |nome|Cadeia de caracteres|O nome do rótulo.|
 
 ## <a name="relationships"></a>Relações

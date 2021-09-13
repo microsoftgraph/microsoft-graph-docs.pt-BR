@@ -2,13 +2,13 @@
 title: Escolha uma API no Microsoft Graph para criar e participar de reuniões online
 description: Você terá a flexibilidade de criar uma reunião que acontecerá no futuro ou instantaneamente
 author: angelgolfer-ms
-localization_priority: Priority
-ms.openlocfilehash: 0c306125add0cb9521df3bd7b847b61845b3969b222378eaec03561c08bbd87b
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.localizationpriority: high
+ms.openlocfilehash: dd0bd14b30570afdfd442043cea4983ac98d1284
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54246511"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59127938"
 ---
 # <a name="choose-an-api-in-microsoft-graph-to-create-and-join-online-meetings"></a>Escolha uma API no Microsoft Graph para criar e participar de reuniões online
 

@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso patternedRecurrence
 description: O padrão e o intervalo da recorrência.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: harini84
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 2d7278edda51c783efafc4eedcf8425a91eb73204942be8fb40ed5bd61c71553
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 24917d3052e0cf9ec5a54a9b81edb0955925e425
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54146346"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59117918"
 ---
 # <a name="patternedrecurrence-resource-type"></a>Tipo de recurso patternedRecurrence
 

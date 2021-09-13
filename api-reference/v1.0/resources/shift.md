@@ -2,15 +2,15 @@
 title: tipo de recurso shift
 description: Representa uma unidade de trabalho agendada na agenda.
 author: akumar39
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: abec7f019750dbfe30335e1c8d6df3ecbb95c2d8e99a2c3720381307560ef22a
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 3b00e93f4622b91e7abe92a68007e870b5ab432e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54169281"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59032220"
 ---
 # <a name="shift-resource-type"></a>tipo de recurso shift
 

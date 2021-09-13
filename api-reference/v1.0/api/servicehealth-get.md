@@ -2,15 +2,15 @@
 title: Obter serviceHealth
 description: Recupere as propriedades e as relações de um objeto serviceHealth.
 author: payiAzure
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: service-communications
 doc_type: apiPageType
-ms.openlocfilehash: 074e74aae7838e4f4d2fc1f4a846de9f1220455e
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 9d5fb6dad2d084a88974779e4270a13461952bb5
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58264166"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59049967"
 ---
 # <a name="get-servicehealth"></a>Obter serviceHealth
 Namespace: microsoft.graph

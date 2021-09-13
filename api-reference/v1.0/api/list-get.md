@@ -1,16 +1,16 @@
 ---
 author: JeremyKelley
 title: Obter uma lista do SharePoint
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: sharepoint
 description: Retorna os metadados de uma lista.
 doc_type: apiPageType
-ms.openlocfilehash: fd2a21bbd58dc1b0043486f47b5dd2175bdec645
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 62aebd84963b7ef93a0e4e0af863a24cb6937b15
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50956447"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59063024"
 ---
 # <a name="get-metadata-for-a-list"></a>Obter metadados de uma lista
 
@@ -27,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 | :------------------------------------- | :------------------------------------------ |
 | Delegado (conta corporativa ou de estudante)     | Sites.Read.All, Sites.ReadWrite.All         |
-| Delegado (conta pessoal da Microsoft) | Sem suporte.                              |
+| Delegada (conta pessoal da Microsoft) | Sem suporte.                              |
 | Aplicativo                            | Sites.Read.All, Sites.ReadWrite.All         |
 
 ## <a name="http-request"></a>Solicitação HTTP

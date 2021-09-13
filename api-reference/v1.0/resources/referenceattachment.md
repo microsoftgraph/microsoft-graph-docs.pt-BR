@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso referenceAttachment
 description: Um link para um arquivo (como um arquivo de texto ou um documento do Word) em uma unidade de nuvem do OneDrive for Business ou outros locais de armazenamento compatíveis, anexado a um evento, mensagem ou postagem.
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 author: abheek-das
 doc_type: resourcePageType
-ms.openlocfilehash: 94390a4620b5c083647eea7ed46f25ab8b4ad9b57dd960c95c642f5e0d2c4237
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 3b82f7e166aa1ed681fb0a62a74c12df052f93be
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54163688"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59044283"
 ---
 # <a name="referenceattachment-resource-type"></a>Tipo de recurso referenceAttachment
 
@@ -34,7 +34,7 @@ Derivado de [attachment](attachment.md).
 |id|String|A ID do anexo.  Somente leitura.|
 |isInline|Booliano|Defina como verdadeiro se o anexo é exibido embutido no corpo do objeto de incorporação.|
 |lastModifiedDateTime|DateTimeOffset|Data e hora em que o anexo foi modificado pela última vez. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`|
-|nome|Cadeia de caracteres|O texto exibido abaixo do ícone que representa o anexo incorporado. Não precisa ser o nome real do arquivo.|
+|nome|String|O texto exibido abaixo do ícone que representa o anexo incorporado. Não precisa ser o nome real do arquivo.|
 |size|Int32|O tamanho dos metadados, em bytes, que são armazenados na mensagem para o anexo. Esse valor não indica o tamanho real do arquivo.|
 
 ## <a name="relationships"></a>Relações

@@ -2,15 +2,15 @@
 author: swapnil1993
 title: Tipo de recurso documentSet
 description: Contém metadados sobre configurações de conjunto de documentos.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: b64f5b0f12a41a0386818c68ba644d92bfa60603
-ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
+ms.openlocfilehash: a3c0bc96cefaec37ff58f9f41f56c773f6c336cc
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58696450"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59049519"
 ---
 # <a name="documentset-resource-type"></a>Tipo de recurso documentSet
 
@@ -22,13 +22,13 @@ Representa um conjunto de documentos SharePoint.
 
 | Nome da propriedade  | Tipo    | Descrição|
 |:---------------|:--------|:--------------------------------------------------|
-| shouldPrefixNameToFile | Booliano  | Adicione o nome do conjunto de documentos a cada nome de arquivo.|
+| shouldPrefixNameToFile | Boolean  | Adicione o nome do conjunto de documentos a cada nome de arquivo.|
 | allowedContentTypes | Collection(microsoft.graph.contentTypeInfo) | Tipos de conteúdo permitidos no conjunto de documentos.|
 | defaultContents     | Collection(microsoft.graph.documentSetContent) | Conteúdo padrão do conjunto de documentos. | 
-| propagateWelcomePageChanges | Booliano | Especifica se a página de boas-vindas deve ser pressionada para tipos de conteúdo herdados.  |
+| propagateWelcomePageChanges | Boolean | Especifica se a página de boas-vindas deve ser pressionada para tipos de conteúdo herdados.  |
 | sharedColumns       | Collection(microsoft.graph.columnDefinition) | Colunas editadas no conjunto de documentos que se sincronizam com todos os documentos no conjunto. Eles são somente leitura nos próprios documentos. |
 | welcomePageColumns  | Collection(microsoft.graph.columnDefinition)  | Especifica colunas a mostrar na página de boas-vindas para o conjunto de documentos.  |
-| welcomePageUrl      | string | URL absoluta da página de boas-vindas.  |
+| welcomePageUrl      | cadeia de caracteres | URL absoluta da página de boas-vindas.  |
 
 ## <a name="json-representation"></a>Representação JSON
 

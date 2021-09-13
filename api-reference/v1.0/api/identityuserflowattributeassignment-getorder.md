@@ -2,15 +2,15 @@
 title: 'identityUserFlowAttributeAssignment: getOrder'
 description: Obter a ordem de identityUserFlowAttributeAssignments sendo coletados em um fluxo de usuário.
 author: jkdouglas
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: a3d513caab828c4b7704e8d7fd14be213e159db4
-ms.sourcegitcommit: 32c83957ee69f21a10cd5f759adb884ce4b41c52
+ms.openlocfilehash: 15cc7851d8d41a3fba5ef637d65a62710a637cb9
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51920669"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59045627"
 ---
 # <a name="identityuserflowattributeassignment-getorder"></a>identityUserFlowAttributeAssignment: getOrder
 
