@@ -2,15 +2,15 @@
 title: Tipo de recurso teamsTemplate
 description: Descreve a entidade teamsTemplate.
 author: nkramer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 5adcd554c687747fb45cdfd1a40e9e37cfaad2d9107a43ebc2ceca01b5d94f3c
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 3ef812716b2650e7919d18291f1f43c9adf878b5
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54249122"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59098409"
 ---
 # <a name="teamstemplate-resource-type"></a>Tipo de recurso teamsTemplate
 
@@ -22,7 +22,7 @@ Um modelo de equipe é um modelo para criar uma [equipe](../resources/team.md) n
 
 | Propriedade            | Tipo     | Descrição |
 |:------------------- |:-------- |:----------- |
-| id                  | Cadeia de caracteres   | Identificador exclusivo do modelo. Não pode ser nulo. |
+| id                  | String   | Identificador exclusivo do modelo. Não pode ser nulo. |
 
 ## <a name="json-representation"></a>Representação JSON
 

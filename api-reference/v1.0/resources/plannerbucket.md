@@ -2,15 +2,15 @@
 title: Tipo de recurso plannerBucket
 description: ) para tarefas em um plano em Microsoft 365. Ele está contido em um plannerPlan e pode ter uma coleção de plannerTasks.
 author: TarkanSevilmis
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: ee603f0c19c32e26abd4a18a17b3055815460930a63dcad306c00f8e2ba89f84
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 46360d413f676e6420f28b94b5ba91ec9237e681
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54154921"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59129842"
 ---
 # <a name="plannerbucket-resource-type"></a>Tipo de recurso plannerBucket
 
@@ -28,13 +28,13 @@ O **recurso plannerBucket** representa um bucket (ou "coluna personalizada") par
 |[Listar plannerTasks](../api/plannerbucket-list-tasks.md) |Coleção [plannerTask](plannertask.md)| Obter uma coleção de objetos **plannerTask**.|
 |[Criar](../api/planner-post-buckets.md) | [plannerBucket](plannerbucket.md)   | Crie um novo **objeto plannerBucket.** |
 |[Atualizar](../api/plannerbucket-update.md) | [plannerBucket](plannerbucket.md)   |Atualizar **o objeto plannerBucket.** |
-|[Delete](../api/plannerbucket-delete.md) | None |Excluir **objeto plannerBucket.** |
+|[Delete](../api/plannerbucket-delete.md) | Nenhum(a) |Excluir **objeto plannerBucket.** |
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |id|String| Somente leitura. ID do bucket. Tem 28 caracteres e diferencia maiúsculas de minúsculas. [Formatar validação](planner-identifiers-disclaimer.md) é feito no serviço.|
-|nome|Cadeia de caracteres|Nome do bucket.|
+|nome|String|Nome do bucket.|
 |orderHint|String|Dica usada para ordenar itens deste tipo em um modo de exibição de lista. O formato é definido como descrito [aqui](planner-order-hint-format.md).|
 |planId|String|Planejar a ID à qual o bucket pertence.|
 

@@ -2,15 +2,15 @@
 title: Listar joinedTeams
 description: Obtenha as equipes do Microsoft Teams das quais o usuário é um membro direto.
 author: nkramer
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: e71209c4878e2eb02543d09341ffa4d408906322
-ms.sourcegitcommit: 5bb981b4853663354a566d4a4a5cbf288939e441
+ms.openlocfilehash: cf0c49e7b51847070513d4597272adcbe0596a43
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "53580909"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59104543"
 ---
 # <a name="list-joinedteams"></a>Listar joinedTeams
 

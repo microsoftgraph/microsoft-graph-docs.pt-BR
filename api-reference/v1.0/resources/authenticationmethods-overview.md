@@ -1,16 +1,16 @@
 ---
 title: Visão geral da API de métodos de autenticação do Azure AD
 description: Os métodos de autenticação são como os usuários autenticam no Azure AD.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: mmcla
 ms.prod: identity-and-sign-in
 doc_type: conceptualPageType
-ms.openlocfilehash: b258d9985f1adf60c74e5de26bdbe7c17380ffd139cd681689a9c9f82a3f4393
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 22b9db5d6f38264f12397d4fc63724ce6939063f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54218818"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59123773"
 ---
 # <a name="azure-ad-authentication-methods-api-overview"></a>Visão geral da API de métodos de autenticação do Azure AD
 
@@ -35,7 +35,7 @@ Os métodos de autenticação a seguir ainda não são suportados no Microsoft G
 
 |Método de autenticação       | Descrição |Exemplos     |
 |:---------------------------|:------------|:------------|
-|Senha | No momento, uma senha é o método de autenticação principal padrão no Azure AD.|Redefinir a senha de um usuário.|
+|Password | No momento, uma senha é o método de autenticação principal padrão no Azure AD.|Redefinir a senha de um usuário.|
 |phoneAuthenticationMethod (ainda não suportado) |Um telefone pode ser usado por um usuário para autenticar usando SMS ou chamadas de [voz](/azure/active-directory/authentication/concept-authentication-methods#phone-options) (conforme permitido pela política).|Consulte os números de telefone de autenticação de um usuário. Adicionar, atualizar ou remover um número de telefone para um usuário. Habilitar ou desabilitar um telefone celular principal para a assinatura SMS.|
 |Email |Um endereço de email pode ser usuário por um usuário como parte do processo Self-Service redefinição de senha (SSPR).|Consulte o endereço de email de autenticação de um usuário. Adicionar, atualizar ou remover um endereço de email para um usuário.|
 |Passagem de Acesso Temporário |Passagem de Acesso Temporário é uma senha limitada por tempo que serve como uma credencial forte e permite a integração de credenciais sem senha. | Definir uma nova Passagem de Acesso Temporário em um usuário.|

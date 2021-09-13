@@ -1,16 +1,16 @@
 ---
 title: Atualizar ipnamedlocation
 description: Atualize as propriedades de um objeto ipNamedLocation.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: videor
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: aaaacbda839d3296be0621b3294b85ddbe3c63b4
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 527b44473920cf35880664a09ac2bee0eb1e89e1
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52786668"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59105045"
 ---
 # <a name="update-ipnamedlocation"></a>Atualizar ipNamedlocation
 
@@ -46,6 +46,8 @@ PATCH /identity/conditionalAccess/namedLocations/{id}
 ## <a name="request-body"></a>Corpo da solicitação
 
 No corpo da solicitação, forneça os valores para os campos relevantes que devem ser atualizados. Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade. Para alcançar o melhor desempenho, não inclua valores existentes que não foram alterados.
+
+Você deve especificar o **@odata.type** como `#microsoft.graph.ipNamedLocation` .
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|

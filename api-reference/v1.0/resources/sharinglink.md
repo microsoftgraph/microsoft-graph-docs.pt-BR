@@ -2,16 +2,16 @@
 author: JeremyKelley
 ms.date: 09/10/2017
 title: SharingLink
-localization_priority: Normal
+ms.localizationpriority: medium
 description: O recurso SharingLink agrupa itens de dados relacionados ao link em uma única estrutura.
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 0f3af451817cbae0c4d4930b035792482e06afac07de77f1b4ff1c975d431a06
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 5333d397af2627537017de1f90e193e6442fcac5
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54237534"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59032213"
 ---
 # <a name="sharinglink-resource-type"></a>Tipo de recurso SharingLink
 
@@ -59,7 +59,7 @@ Veja a seguir uma representação JSON do recurso.
 
 Esta tabela define os valores possíveis para a propriedade **type**:
 
-| Valor   | Função    | Descrição
+| Valor   | Role    | Descrição
 |:--------|:--------|:---------------------------------------------------------
 | `view`  | `read`  | Um link somente de compartilhamento para exibição, permitindo o acesso somente leitura.
 | `edit`  | `write` | Um link de compartilhamento de edição, permitindo o acesso de leitura e gravação.

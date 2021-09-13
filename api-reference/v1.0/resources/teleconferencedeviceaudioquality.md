@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso teleconferenceDeviceAudioQuality
 description: Dados de qualidade de áudio do dispositivo de teleconferência de vídeo.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: dongkyun
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: ac7aa441786cb337377544704af9b35d278eeeefdc15ec81019e6c6ec07be3bd
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: a1c88145f9931703f1aabed516bd8e1c93007d40
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54251733"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59128141"
 ---
 # <a name="teleconferencedeviceaudioquality-resource-type"></a>Tipo de recurso teleconferenceDeviceAudioQuality
 

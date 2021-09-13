@@ -2,15 +2,15 @@
 title: 'TableColumnCollection: add'
 description: Adiciona uma nova coluna à tabela.
 author: lumine2008
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: c05316721be4e03ef83c9f36f8eeee0e6f2a62fb
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 5b7053dc4a31c5daf838812af1bc9f172859992b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52034403"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59084962"
 ---
 # <a name="tablecolumncollection-add"></a>TableColumnCollection: add
 
@@ -96,7 +96,7 @@ Content-length: 51
 
 
 ##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto de resposta exibido aqui pode ser encurtado para legibilidade.
+Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser reduzido para facilitar a leitura.
 <!-- {
   "blockType": "response",
   "truncated": true,

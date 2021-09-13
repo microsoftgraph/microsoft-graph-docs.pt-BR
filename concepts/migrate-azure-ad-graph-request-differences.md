@@ -1,23 +1,23 @@
 ---
-title: Solicitar diferenças entre o Azure AD Graph e o Microsoft Graph
-description: Descreve como as solicitações Graph microsoft diferem das solicitações do Azure AD, o que ajuda a migrar aplicativos para o serviço mais novo..
+title: Solicitar diferenças entre o Azure Active Directory (Azure AD) Graph e o Microsoft Graph
+description: Descreve como as solicitações do Microsoft Graph diferem das solicitações Azure Active Directory (Azure AD) Graph, o que ajuda a migrar aplicativos para o serviço mais novo..
 author: dkershaw10
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: applications
-ms.openlocfilehash: 7a127393a6f0daf7743384b95b30e7ed7a1a16ff97522c4cad3b7d2317599b0c
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 2b253ee68cd0de691d173ebdeefadbe084c5dbc0
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54129621"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59078557"
 ---
-# <a name="request-differences-between-azure-ad-graph-and-microsoft-graph"></a>Solicitar diferenças entre o Azure AD Graph e o Microsoft Graph
+# <a name="request-differences-between-azure-active-directory-azure-ad-graph-and-microsoft-graph"></a>Solicitar diferenças entre o Azure Active Directory (Azure AD) Graph e o Microsoft Graph
 
 Este artigo faz parte da *etapa 1: analisar as* diferenças de API do processo para [migrar aplicativos.](migrate-azure-ad-graph-planning-checklist.md)
 
 O Microsoft Graph e a API de Graph do Azure AD são APIs REST e cada uma delas oferece suporte a convenções ODATA para parâmetros de consulta. No entanto, a sintaxe varia entre essas duas APIs.
 
-Use o [Graph Explorer](https://aka.ms/ge) para experimentar esses padrões de solicitação em relação aos seus próprios dados, pois é uma ótima maneira de aprender sobre as diferenças de solicitação e resposta.
+Use [Graph Explorer](https://aka.ms/ge) para experimentar esses padrões de solicitação em relação aos seus próprios dados, pois é uma ótima maneira de aprender sobre as diferenças de solicitação e resposta.
 
 ## <a name="basic-requests"></a>Solicitações básicas
 
@@ -100,7 +100,7 @@ A resposta para essa solicitação incluiria as propriedades de endereço.  Ele 
 
 Para saber mais sobre:
 
-- Propriedades padrão no usuário, consulte [users](/graph/api/resources/users?view=graph-rest-1.0)
+- Propriedades padrão no usuário, consulte [users](/graph/api/resources/users)
 - O parâmetro e outros parâmetros de consulta ODATA com `$select` suporte, consulte [Use query parameters to customize responses](./query-parameters.md).
 - Esta e outras otimizações recomendadas, consulte [Práticas recomendadas.](./best-practices-concept.md)
 
@@ -123,7 +123,7 @@ A tabela a seguir mostra vários exemplos:
 
 Ao migrar seus aplicativos para o Microsoft Graph, procure solicitações que usem para associar `$link` recursos; altere-os para `$ref` usar.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Próximas etapas
 
 - Saiba mais [sobre as diferenças de](migrate-azure-ad-graph-feature-differences.md) recursos de serviço entre o Azure AD Graph e o Microsoft Graph.
 - Revise a [lista de verificação](migrate-azure-ad-graph-planning-checklist.md) novamente.

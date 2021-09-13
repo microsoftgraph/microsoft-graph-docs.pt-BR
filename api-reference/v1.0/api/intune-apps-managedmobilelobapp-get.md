@@ -2,15 +2,15 @@
 title: Acessar managedMobileLobApp
 description: Leia as propriedades e as relações do objeto managedMobileLobApp.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b0c68e9b3b607029c97096b5b028c8314d5f47b26485459e47266f54c9305fa5
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 9c6e7d9a13f87b5e924d9d72edad2048ab379856
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54209396"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59100047"
 ---
 # <a name="get-managedmobilelobapp"></a>Acessar managedMobileLobApp
 

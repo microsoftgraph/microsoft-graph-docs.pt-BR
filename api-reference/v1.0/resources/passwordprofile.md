@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso passwordProfile
 description: Contém o perfil de senha associado a um usuário. A propriedade **passwordProfile** da entidade user é um objeto **passwordProfile**.
-localization_priority: Priority
+ms.localizationpriority: high
 author: eketo-msft
 ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: 7288d2f737c0e04be9919ba0b2412df2ba1ebda8c377e1c66a3d6a91992af858
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: e05221a07fcae5c60897e0b56ae28cc3642ff965
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54189398"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59117939"
 ---
 # <a name="passwordprofile-resource-type"></a>Tipo de recurso passwordProfile
 

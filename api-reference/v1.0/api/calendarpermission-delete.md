@@ -1,20 +1,20 @@
 ---
 title: Excluir calendarPermission
-description: Exclua calendarPermission.
-localization_priority: Normal
+description: Excluir calendarPermission.
+ms.localizationpriority: medium
 author: sochowdh
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 893d4e1cd902f85581f6517a72f91ab65f162b53
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 8b41476575c187d85bcd1d393886b5185cca2731
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48044099"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59050765"
 ---
 # <a name="delete-calendarpermission"></a>Excluir calendarPermission
 
-Exclua calendarPermission.
+Excluir calendarPermission.
 
 ## <a name="permissions"></a>Permissões
 
@@ -27,13 +27,13 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Aplicativo | Calendars.ReadWrite |
 ## <a name="http-request"></a>Solicitação HTTP
 
-Excluir as permissões especificadas do calendário principal de um usuário:
+Exclua as permissões especificadas do calendário principal de um usuário:
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /users/{id}/calendar/calendarPermissions/{id}
 ```
 
-Excluir as permissões especificadas de um calendário de Grupo:
+Exclua as permissões especificadas de um calendário de grupo:
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /groups/{id}/calendar/calendarPermissions/{id}

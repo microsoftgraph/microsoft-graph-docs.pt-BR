@@ -2,15 +2,15 @@
 title: 'riskyUser: dismiss'
 description: Descartar um usuário arriscado
 author: cloudhandler
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 8abd44ce7da658d58b648ec622a06b7e33c98927f89e35971016e0bd305fcbda
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: ece1bf3d19ab2cf0f0578b115acb6e1edb15b7a2
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54130538"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59053361"
 ---
 # <a name="riskyuser-dismiss"></a>riskyUser: dismiss
 Namespace: microsoft.graph
@@ -24,8 +24,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | IdentityRiskyUser.ReadWrite.All    |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegada (conta corporativa ou de estudante) | IdentityRiskyUser.ReadWrite.All    |
+|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | IdentityRiskyUser.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -51,7 +51,7 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta ação.
 
 |Parâmetro|Tipo|Descrição|
 |:---|:---|:---|
-|userIds|Coleção de cadeias de caracteres|Especifique os userIds a descartar no corpo da solicitação.|
+|userIds|Coleção String|Especifique os userIds a descartar no corpo da solicitação.|
 
 
 

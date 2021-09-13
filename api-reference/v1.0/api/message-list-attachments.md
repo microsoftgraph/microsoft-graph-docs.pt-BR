@@ -2,15 +2,15 @@
 title: Listar anexos
 description: Recupere uma lista de objetos anexados a uma mensagem.
 author: abheek-das
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 7a8e6c6a3586ecc030f725c96c385376daf2f4a2
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 909a24f9c9c0843e97f8f1fd223bdb69706188b8
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52054557"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59016152"
 ---
 # <a name="list-attachments"></a>Listar anexos
 
@@ -87,7 +87,7 @@ GET https://graph.microsoft.com/v1.0/me/messages/{id}/attachments
 ---
 
 ##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto de resposta exibido aqui pode ser encurtado para legibilidade.
+Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser reduzido para facilitar a leitura.
 <!-- {
   "blockType": "response",
   "name": "message_get_attachments_v1",

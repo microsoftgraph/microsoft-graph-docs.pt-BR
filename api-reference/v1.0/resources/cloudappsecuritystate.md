@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso cloudAppSecurityState
 description: Contém informações de estado sobre o aplicativo de nuvem (destinationServiceName, destinationServiceIp).
-localization_priority: Normal
+ms.localizationpriority: medium
 author: preetikr
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: c9f8d3cda7fae6ae68cd43db0bfa69d6ac7016312dc4749ae640e9988168d584
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: d04a23bb38c9f5264057d56d43de0f053dd58b9c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54124532"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59118754"
 ---
 # <a name="cloudappsecuritystate-resource-type"></a>Tipo de recurso cloudAppSecurityState
 
@@ -24,7 +24,7 @@ Contém informações de estado sobre o aplicativo de nuvem (destinationServiceN
 |:-------------|:------------|:------------|
 |destinationServiceIp|Cadeia de caracteres|Endereço IP de destino da conexão com o aplicativo/serviço na nuvem.|
 |destinationServiceName|String|Nome do aplicativo/serviço na nuvem (por exemplo, "Salesforce", "DropBox", etc.).|
-|riskScore|Cadeia de caracteres|Pontuação de risco gerada/calculada pelo provedor do Aplicativo/Serviço na Nuvem. Intervalo de valores recomendado de 0 a 1, que equivale a uma porcentagem.|
+|riskScore|String|Pontuação de risco gerada/calculada pelo provedor do Aplicativo/Serviço na Nuvem. Intervalo de valores recomendado de 0 a 1, que equivale a uma porcentagem.|
 
 ## <a name="json-representation"></a>Representação JSON
 

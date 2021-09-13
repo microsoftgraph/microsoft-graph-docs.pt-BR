@@ -1,16 +1,16 @@
 ---
 title: Microsoft 365 de usuários ativos
 description: Você pode usar os relatórios Microsoft 365 usuários ativos para descobrir quantas licenças de produto estão sendo usadas por indivíduos em sua organização e procurar informações sobre quais usuários estão usando quais produtos. Esses relatórios podem ajudar os administradores a identificar produtos ou usuários subutilizados que possam precisar de treinamento ou informações adicionais.
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: reports
 author: sarahwxy
 doc_type: conceptualPageType
-ms.openlocfilehash: 7d7e36e69c8819cfe7ddc862208c9a7eb21e99d63fada80a4ad425777a6c56a8
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: da908b20bf182ac45b5deb29da1c04c0207382fc
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54169407"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59094216"
 ---
 # <a name="microsoft-365-active-users-reports"></a>Microsoft 365 de usuários ativos
 

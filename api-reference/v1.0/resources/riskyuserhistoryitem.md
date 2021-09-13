@@ -2,15 +2,15 @@
 title: Tipo de recurso riskyUserHistoryItem
 description: item de histórico de usuário arriscado
 author: cloudhandler
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: c83f35d9d8d187fd3a3bb64d727261431e3b13700735c4ad618f0a01b80fc1ce
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: fa835aebf8ab5d1f4e5517ded131d7ac470927ae
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54189384"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59108860"
 ---
 # <a name="riskyuserhistoryitem-resource-type"></a>Tipo de recurso riskyUserHistoryItem
 
@@ -32,8 +32,8 @@ Herda de [riskyUser](../resources/riskyuser.md).
 |:---|:---|:---|
 |atividade|[riskUserActivity](../resources/riskuseractivity.md)|A atividade relacionada à alteração no nível de risco do usuário.|
 |id|Cadeia de caracteres|Herdado da [entidade](../resources/entity.md)|
-|initiatedBy|Cadeia de caracteres|A id do ator que faz a operação.|
-|isDeleted|Booliano| Herdado [de riskyUser](../resources/riskyuser.md)|
+|initiatedBy|String|A id do ator que faz a operação.|
+|isDeleted|Boolean| Herdado [de riskyUser](../resources/riskyuser.md)|
 |isProcessing|Booliano| Herdado [de riskyUser](../resources/riskyuser.md)|
 |riskDetail|riskDetail|Herdado [de riskyUser](../resources/riskyuser.md). Os valores possíveis são: `none`, `adminGeneratedTemporaryPassword`, `userPerformedSecuredPasswordChange`, `userPerformedSecuredPasswordReset`, `adminConfirmedSigninSafe`, `aiConfirmedSigninSafe`, `userPassedMFADrivenByRiskBasedPolicy`, `adminDismissedAllRiskForUser`, `adminConfirmedSigninCompromised`, `hidden`, `adminConfirmedUserCompromised`, `unknownFutureValue`.|
 |riskLastUpdatedDateTime|DateTimeOffset|Herdado [de riskyUser](../resources/riskyuser.md)|
@@ -41,7 +41,7 @@ Herda de [riskyUser](../resources/riskyuser.md).
 |riskState|riskState|Herdado [de riskyUser](../resources/riskyuser.md). Os valores possíveis são: `none`, `confirmedSafe`, `remediated`, `dismissed`, `atRisk`, `confirmedCompromised`, `unknownFutureValue`.|
 |userDisplayName|Cadeia de caracteres|Herdado [de riskyUser](../resources/riskyuser.md)|
 |userId|Cadeia de caracteres|A id do usuário.|
-|userPrincipalName|Cadeia de caracteres|Nome principal do usuário arriscado. Herdado [de riskyUser](../resources/riskyuser.md)|
+|userPrincipalName|String|Nome principal do usuário arriscado. Herdado [de riskyUser](../resources/riskyuser.md)|
 
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|

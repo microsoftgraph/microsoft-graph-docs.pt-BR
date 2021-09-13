@@ -2,14 +2,14 @@
 title: Visão geral do Microsoft Graph
 description: O Microsoft Graph é o gateway para dados e inteligência no Microsoft 365. O Microsoft Graph fornece um modelo de programação unificado que você pode usar para aproveitar o enorme volume de dados no Microsoft 365, no Enterprise Mobility + Security e no Windows 10.
 author: angelgolfer-ms
-localization_priority: Priority
+ms.localizationpriority: high
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 23c53876dc00260ab076094cf1ec849410badf53
-ms.sourcegitcommit: 6efd9df497d795988cd85474f379d1989b0995b7
+ms.openlocfilehash: 4f96d2d867fc7eaf02da50d500af5acf5bc30b42
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58697377"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59139069"
 ---
 # <a name="overview-of-microsoft-graph"></a>Visão Geral do Microsoft Graph
 

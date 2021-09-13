@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso servicePlanInfo
 description: Contém informações sobre um plano de serviço associado a uma SKU inscrita. A propriedade **servicePlans** da entidade subscribedSku é uma coleção de **servicePlanInfo**.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: jpettere
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 11ab4116f357f188e5bb99ef7a98ebc4dc7bce3edafb1508dd9b4d1b9c42c69b
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 1f8da276ccbd0f22023550797f1563939e6e7e39
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54177972"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59126657"
 ---
 # <a name="serviceplaninfo-resource-type"></a>Tipo de recurso servicePlanInfo
 

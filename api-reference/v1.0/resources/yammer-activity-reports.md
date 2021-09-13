@@ -1,16 +1,16 @@
 ---
 title: Relatórios de atividades do Yammer
 description: Você pode usar os relatórios de atividades do Yammer para entender o nível de envolvimento da sua organização com o Yammer, vendo quanta atividade é gerada em toda a organização e o número de usuários exclusivos que postam, como, e leem mensagens no Yammer.
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: reports
 author: sarahwxy
 doc_type: conceptualPageType
-ms.openlocfilehash: 957c007fb2c9f1525578fadf8e6b9b3f4997a0735696717e68ac3193db9169bc
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 73204077e6e1b529c95e6f04a92291fe5229ef9c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54141256"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59083905"
 ---
 # <a name="yammer-activity-reports"></a>Relatórios de atividades do Yammer
 
@@ -25,6 +25,6 @@ Você pode usar os relatórios de atividades do Yammer para entender o nível de
 | Função                                 | Tipo de retorno | Descrição                              |
 | :--------------------------------------- | :---------- | :--------------------------------------- |
 | [Obter dados de usuário](../api/reportroot-getyammeractivityuserdetail.md) | Fluxo      | Obtenha dados sobre as atividades do Yammer por usuário. |
-| [Obter contagens de atividades](../api/reportroot-getyammeractivitycounts.md) | Fluxo      | Obtenha as tendências da quantidade de atividade do Yammer em sua organização por quantas mensagens foram postadas, lidas e curtidas. |
+| [Obter contagens de atividade](../api/reportroot-getyammeractivitycounts.md) | Fluxo      | Obtenha as tendências da quantidade de atividade do Yammer em sua organização por quantas mensagens foram postadas, lidas e curtidas. |
 | [Obter contagens de usuários](../api/reportroot-getyammeractivityusercounts.md) | Fluxo      | Obter as tendências sobre o número de usuários exclusivos que postaram, leram e gostaram Yammer mensagens. |
 

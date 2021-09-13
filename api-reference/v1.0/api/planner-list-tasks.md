@@ -1,16 +1,16 @@
 ---
 title: Listar tarefas
 description: Recupere uma lista de objetos **plannertask.**
-localization_priority: Normal
+ms.localizationpriority: medium
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: 3f70a83aa73cff02b85a36f4129f91e1a7494749
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 5fb6fcee86dc1a5026d222b7f42888b5a8b5ce52
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52035194"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59104912"
 ---
 # <a name="list-tasks"></a>Listar tarefas
 
@@ -78,7 +78,7 @@ GET https://graph.microsoft.com/v1.0/planner/tasks
 ---
 
 ##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto de resposta exibido aqui pode ser encurtado para legibilidade.
+Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser reduzido para facilitar a leitura.
 <!-- {
   "blockType": "response",
   "truncated": true,

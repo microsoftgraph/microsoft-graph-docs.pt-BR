@@ -2,15 +2,15 @@
 title: Atualizar auditEvent
 description: Atualizar as propriedades do objeto auditEvent.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 7029a8947015fd8bc55f8be3a1804ad7e6ed76e10549a106caff41c4a6db7c2a
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 655344f88a44874be703b37ae345a62399c27799
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54121841"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59110729"
 ---
 # <a name="update-auditevent"></a>Atualizar auditEvent
 
@@ -51,8 +51,8 @@ A tabela a seguir mostra as propriedades obrigatórias ao criar [auditEvent](../
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Chave da entidade.|
-|displayName|String|Nome de exibição do evento.|
+|id|String|Chave da entidade.|
+|displayName|Cadeia de caracteres|Nome de exibição do evento.|
 |componentName|Cadeia de caracteres|Nome do componente.|
 |actor|[auditActor](../resources/intune-auditing-auditactor.md)|Usuários e aplicativos do AAD associados com o evento de auditoria.|
 |atividade|Cadeia de caracteres|Nome amigável da atividade.|
@@ -62,7 +62,7 @@ A tabela a seguir mostra as propriedades obrigatórias ao criar [auditEvent](../
 |activityResult|Cadeia de caracteres|O resultado da atividade.|
 |correlationId|Guid|A ID da solicitação de cliente usada para correlacionar a atividade dentro do sistema.|
 |recursos|Coleção [auditResource](../resources/intune-auditing-auditresource.md)|Recursos em modificação.|
-|category|Cadeia de caracteres|Categoria de auditoria.|
+|category|String|Categoria de auditoria.|
 
 
 

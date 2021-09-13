@@ -2,15 +2,15 @@
 title: Tipo de recurso lobbyBypassSettings
 description: Especifica quais participantes podem ignorar o lobby da reunião.
 author: mkhribech
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: e837f5e6b521988562f4d031845bf8c6cd63a3c4f80b49e543522a21eccb374f
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: d850b6335d3a3446516c4fccad1e1dd81518a189
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54126414"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59134735"
 ---
 # <a name="lobbybypasssettings-resource-type"></a>Tipo de recurso lobbyBypassSettings
 
@@ -30,7 +30,7 @@ Especifica quais participantes podem ignorar o lobby da reunião.
 | Valor                    | Descrição                                                                                                                                                                     |
 | ------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | organizer                | Somente o organizador é admitido na reunião, ignorando o lobby. Todos os outros participantes são colocados no lobby da reunião.                                                   |
-| organization             | Somente os participantes da mesma empresa são admitidos na reunião, ignorando o lobby. Todos os outros participantes são colocados no lobby da reunião.                         |
+| organização             | Somente os participantes da mesma empresa são admitidos na reunião, ignorando o lobby. Todos os outros participantes são colocados no lobby da reunião.                         |
 | organizationAndFederated | Somente os participantes da mesma empresa ou organização confiável são admitidos na reunião, ignorando o lobby. Todos os outros participantes são colocados no lobby da reunião. |
 | everyone                 | Todos são admitidos na reunião. Nenhum participante é colocado no lobby da reunião.                                                                                         |
 | unknownFutureValue       | Valor futuro desconhecido.                                                                                                                                                            |

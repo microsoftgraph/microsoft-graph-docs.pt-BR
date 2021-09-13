@@ -2,15 +2,15 @@
 title: 'Chart: setPosition'
 description: Posiciona o gráfico em relação às células na planilha.
 author: lumine2008
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: b528b58986466479c96c6808df69c2e8b328523c
-ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
+ms.openlocfilehash: 302152a0ab23e8038c4d742ffd734bad8a86f168
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "50575613"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59105577"
 ---
 # <a name="chart-setposition"></a>Chart: setPosition
 

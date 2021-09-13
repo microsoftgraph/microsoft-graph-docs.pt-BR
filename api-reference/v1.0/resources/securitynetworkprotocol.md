@@ -1,16 +1,16 @@
 ---
 title: tipo de número securityNetworkProtocol
 description: Valores possíveis para o protocolo de rede.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: preetikr
 ms.prod: security
 doc_type: enumPageType
-ms.openlocfilehash: 657d13f25707baa7f351622700700aa16a5d277b0d5dd1019843661af3491cb9
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 6ae4444d6100a6c63da3ffed2d3d9a70347084cb
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54126288"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59137494"
 ---
 # <a name="securitynetworkprotocol-enum-type"></a>tipo de número securityNetworkProtocol
 

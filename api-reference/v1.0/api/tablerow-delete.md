@@ -2,15 +2,15 @@
 title: 'TableRow: delete'
 description: Exclui a linha da tabela.
 author: lumine2008
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: e8ea43155eeffadc7516cfb2dbebc2f0016d1bea
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: 700b37f5c88d0e55b0bc4675504f1eddedbe6f4b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50774803"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59084934"
 ---
 # <a name="tablerow-delete"></a>TableRow: delete
 

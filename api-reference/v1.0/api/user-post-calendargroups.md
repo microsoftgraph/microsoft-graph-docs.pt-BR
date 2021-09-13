@@ -2,15 +2,15 @@
 title: Atualizar CalendarGroup
 description: Use esta API para criar um novo CalendarGroup.
 author: harini84
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: c310cf484bc3dd5908dd23f5a262881a31dc098d
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: f737c405b8376b81875eacda83c5e3c1a590f625
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52054298"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59099214"
 ---
 # <a name="create-calendargroup"></a>Atualizar CalendarGroup
 
@@ -84,7 +84,7 @@ Content-type: application/json
 
 No corpo da solicitação, forneça uma representação JSON do objeto [calendarGroup](../resources/calendargroup.md).
 ### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto de resposta exibido aqui pode ser encurtado para legibilidade.
+Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser reduzido para facilitar a leitura.
 <!-- {
   "blockType": "response",
   "truncated": true,

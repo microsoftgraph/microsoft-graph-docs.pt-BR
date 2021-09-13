@@ -2,15 +2,15 @@
 title: Excluir educationAssignment
 description: Exclua uma atribuição existente. Somente professores em uma classe podem excluir atribuições.
 author: sharad-sharma-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 683ecb684765710d1072b94a8557863156a55a5e
-ms.sourcegitcommit: 979fe005c74eb99cd971df6b9511b2d3f7fe3cd4
+ms.openlocfilehash: 2d679a13a3a90853e246616930c0dc5e834fe9f8
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52991411"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59100215"
 ---
 # <a name="delete-educationassignment"></a>Excluir educationAssignment
 
@@ -26,8 +26,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)             |
 | :------------------------------------- | :------------------------------------------------------ |
-| Delegado (conta corporativa ou de estudante)     | EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite |
-| Delegado (conta pessoal da Microsoft) | Sem suporte.                                          |
+| Delegada (conta corporativa ou de estudante)     | EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite |
+| Delegada (conta pessoal da Microsoft) | Sem suporte.                                          |
 | Aplicativo                            | Sem suporte.                                          |
 
 ## <a name="http-request"></a>Solicitação HTTP

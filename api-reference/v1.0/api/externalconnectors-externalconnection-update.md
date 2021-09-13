@@ -2,15 +2,15 @@
 title: Atualizar externalConnection
 description: Atualize as propriedades de um objeto externalConnection.
 author: mecampos
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 80241a86ce79917bf437634dfd9d91fe23018984
-ms.sourcegitcommit: 5bb981b4853663354a566d4a4a5cbf288939e441
+ms.openlocfilehash: 5e7afbb9084aa6e9a62924bd3ec33a29eaad70e1
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "53579944"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59022506"
 ---
 # <a name="update-externalconnection"></a>Atualizar externalConnection
 
@@ -51,7 +51,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 |:--------------|:-----------------------------------------------|:------------|
 | configuração | [microsoft.graph.externalConnectors.configuration](../resources/externalconnectors-configuration.md) | Especifica IDs de aplicativo adicionais que têm permissão para gerenciar a conexão e indexar conteúdo na conexão. |
 | description   | Cadeia de caracteres                                         | Descrição da conexão exibida no Centro de administração do Microsoft 365. |
-| nome          | Cadeia de caracteres                                         | O nome de exibição da conexão a ser exibida no Centro de administração do Microsoft 365. Comprimento máximo de 128 caracteres. |
+| nome          | String                                         | O nome de exibição da conexão a ser exibida no Centro de administração do Microsoft 365. Comprimento máximo de 128 caracteres. |
 
 
 ## <a name="response"></a>Resposta

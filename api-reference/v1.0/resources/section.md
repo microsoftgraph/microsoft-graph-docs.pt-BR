@@ -1,16 +1,16 @@
 ---
 title: tipo de recurso de seção
 description: Uma seção em um bloco OneNote bloco de anotações. As seções podem conter páginas.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: jewan-microsoft
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: a64e07eb82f525caa2606afa8580d9805bcf328e378290f19baf1445253dd7fe
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 8cbabaaae4ee1452cbce2e5c01859a50d0679358
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54216599"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59123087"
 ---
 # <a name="section-resource-type"></a>tipo de recurso de seção
 
@@ -53,13 +53,13 @@ Veja a seguir uma representação JSON do recurso.
 |:---------------|:--------|:----------|
 |createdBy|[identitySet](identityset.md)|Identidade do usuário, dispositivo e aplicativo que criou o item. Somente leitura.|
 |createdDateTime|DateTimeOffset|A data e a hora em que a seção foi criada. O carimbo de data/hora representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`. Somente leitura.|
-|id|String|O identificador exclusivo da seção.  Apenas leitura.|
+|id|Cadeia de caracteres|O identificador exclusivo da seção.  Somente leitura.|
 |isDefault|Booliano|Indica se essa é a seção padrão do usuário. Somente leitura.|
 |lastModifiedBy|[identitySet](identityset.md)|Identidade do usuário, dispositivo e aplicativo que criou o item. Somente leitura.|
 |lastModifiedDateTime|DateTimeOffset|A data e a hora em que a seção foi modificada pela última vez. O carimbo de data/hora representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`. Somente leitura.|
 |links|[SectionLinks](sectionlinks.md)|Links para abrir a seção. O `oneNoteClientURL` link abre a seção no OneNote cliente nativo se estiver instalado. O `oneNoteWebURL` link abre a seção em OneNote na Web.|
 |displayName|String|O nome da seção. |
-|pagesUrl|Cadeia de caracteres|O `pages` ponto de extremidade onde você pode obter detalhes para todas as páginas da seção. Apenas leitura.|
+|pagesUrl|Cadeia de caracteres|O `pages` ponto de extremidade onde você pode obter detalhes para todas as páginas da seção. Somente leitura.|
 |self|Cadeia de caracteres|O ponto de extremidade onde você pode obter detalhes sobre a seção. Somente leitura.|
 
 ## <a name="relationships"></a>Relações
@@ -76,8 +76,8 @@ Veja a seguir uma representação JSON do recurso.
 |[Obter seção](../api/section-get.md) | [OnenoteSection](section.md) |Leia as propriedades e as relações da seção.|
 |[Create page](../api/section-post-pages.md) |[Page](page.md)| Crie uma página postando na coleção pages na seção especificada.|
 |[List pages](../api/section-list-pages.md) |Coleção [Page](page.md)| Obter uma coleção de páginas na seção especificada.|
-|[copyToNotebook](../api/section-copytonotebook.md)|None|Copie a seção para um bloco de anotações específico.|
-|[copyToSectionGroup](../api/section-copytosectiongroup.md)|None|Copie a seção para um grupo de seção específico.|
+|[copyToNotebook](../api/section-copytonotebook.md)|Nenhum(a)|Copie a seção para um bloco de anotações específico.|
+|[copyToSectionGroup](../api/section-copytosectiongroup.md)|Nenhum(a)|Copie a seção para um grupo de seção específico.|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

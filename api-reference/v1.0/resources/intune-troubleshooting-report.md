@@ -2,15 +2,15 @@
 title: Tipo de recurso report
 description: Relatórios de falha de registro.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 41ec042cb27017b7b83cf7c1639881c3bf1b1e48
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 81ff1df1f7cb645fe99ed845d2262a14d494a5bd
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58263095"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59021516"
 ---
 # <a name="report-resource-type"></a>Tipo de recurso report
 

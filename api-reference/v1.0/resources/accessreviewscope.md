@@ -2,15 +2,15 @@
 title: Tipo de recurso accessReviewScope
 description: Representa as entidades que precisam ser revisadas em uma revisão de acesso.
 author: isabelleatmsft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 99e13b08a08f81294588b1eceee09dca888b362f
-ms.sourcegitcommit: 1e9a53e7b8e67349288f5cfbabe8355de83817b0
+ms.openlocfilehash: 9c3eb624f63240d98733d972c82df2591b43076c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/17/2021
-ms.locfileid: "58366614"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59084689"
 ---
 # <a name="accessreviewscope-resource-type"></a>Tipo de recurso accessReviewScope
 

@@ -2,15 +2,15 @@
 title: 'accessReviewInstance: resetDecisions'
 description: Redefine todos os objetos accessReviewInstanceDecisionItem em um accessReviewInstance como `notReviewed` .
 author: isabelleatmsft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 269c3f4891fb62d9191991ffa50dc70635268020
-ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
+ms.openlocfilehash: 5fb7589e4a5674c5c24e320985071fca1e5965ee
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53209755"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59033074"
 ---
 # <a name="accessreviewinstance-resetdecisions"></a>accessReviewInstance: resetDecisions
 Namespace: microsoft.graph
@@ -23,7 +23,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
 |Delegada (conta corporativa ou de estudante)|AccessReview.ReadWrite.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|AccessReview.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP

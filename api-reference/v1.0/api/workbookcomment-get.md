@@ -1,16 +1,16 @@
 ---
 title: Obter workbookComment
 description: Recupere as propriedades e as relações do objeto workbookcomment.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: grangeryy
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: c9d7257118d58adc758190b7269168fd17f4f437
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 2cc9c7591119134d6ff5d76e75fc49ffd56c4cd2
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52054263"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59113830"
 ---
 # <a name="get-workbookcomment"></a>Obter workbookComment
 
@@ -24,8 +24,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | Files.ReadWrite |
-| Delegado (conta pessoal da Microsoft) | Sem suporte. |
+| Delegada (conta corporativa ou de estudante)     | Files.ReadWrite |
+| Delegada (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo                            | Sem suporte. |
 
 ## <a name="http-request"></a>Solicitação HTTP

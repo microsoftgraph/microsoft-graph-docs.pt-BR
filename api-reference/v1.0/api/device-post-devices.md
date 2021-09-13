@@ -2,15 +2,15 @@
 title: Criar dispositivo
 description: Cria e registra um novo dispositivo na organização.
 author: spunukol
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: ec6e482a760b4a190dae62cd80833e1c0233ee90
-ms.sourcegitcommit: 998c63e6290cfb5ad4a6bd3eb3e249d282f962a3
+ms.openlocfilehash: c534fa314da47a6d3a7580c4c9d19bd863b123e4
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58531247"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59050625"
 ---
 # <a name="create-device"></a>Criar dispositivo
 

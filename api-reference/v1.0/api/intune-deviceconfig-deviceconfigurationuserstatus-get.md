@@ -2,15 +2,15 @@
 title: Acessar deviceConfigurationUserStatus
 description: Leia as propriedades e as relações do objeto deviceConfigurationUserStatus.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 1640803c137cf26e29d024e7a3fdd5bf8d50fcb5b3f6a2e91a59af4f0bb8d6b9
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 962cb0ded205ea0c80525235364e2f37bfae0c44
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54192975"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59090457"
 ---
 # <a name="get-deviceconfigurationuserstatus"></a>Acessar deviceConfigurationUserStatus
 

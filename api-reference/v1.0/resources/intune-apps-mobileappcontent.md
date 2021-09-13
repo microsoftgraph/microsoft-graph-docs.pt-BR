@@ -2,15 +2,15 @@
 title: Tipo de recurso mobileAppContent
 description: Contém propriedades de conteúdo para uma versão específica do aplicativo. Cada mobileAppContent pode ter vários mobileAppContentFile.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 50b4c570db2afe2e0daf8770d845532d34e4b7f8c0918f287cac26ebc67814e9
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: ae87e5a926493c46cc7b51ac2c0bd67a802ddbcf
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54178389"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59109056"
 ---
 # <a name="mobileappcontent-resource-type"></a>Tipo de recurso mobileAppContent
 

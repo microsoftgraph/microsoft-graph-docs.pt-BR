@@ -2,15 +2,15 @@
 title: Remover um membro
 description: Use essa API para remover um membro (usuário ou grupo) de uma unidade administrativa.
 author: DougKirschner
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: ef1bcb4aab54e18dfdf7cd2fdf0360739bc8cc69e12988f851264dd75658e700
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: db081b1ce54ade669d29ec0bec1b9c7cecbb6102
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54172656"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59080447"
 ---
 # <a name="remove-a-member"></a>Remover um membro
 

@@ -2,15 +2,15 @@
 title: Tipo denum siteSecurityLevel
 description: Valores possíveis para o nível de segurança do site.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: f6225c48ec6f981748276c106aaab3e3e3924a120c44dbe1b16956d540168a82
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 53de6c1ec01a6823c3d2ff404d6624b6a2bc4bd0
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54124385"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59049505"
 ---
 # <a name="sitesecuritylevel-enum-type"></a>Tipo denum siteSecurityLevel
 

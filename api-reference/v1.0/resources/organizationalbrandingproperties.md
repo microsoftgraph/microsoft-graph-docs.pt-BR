@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso organizationalBrandingProperties
 description: Contém detalhes da identidade visual da organização.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: AlexanderMars
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: b815f5f1c75842939526a008e960444d475e5e54f9ce94abe16706c5c387851e
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: db4dc3d52ad9bf3f1ff2c66443c7c909cbad9dd4
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54135047"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59032290"
 ---
 # <a name="organizationalbrandingproperties-resource-type"></a>Tipo de recurso organizationalBrandingProperties
 
@@ -38,13 +38,13 @@ As empresas podem adicionar identidade visual diferente com base na localidade. 
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|backgroundColor|Cadeia de caracteres| Cor que aparecerá no lugar da imagem de plano de fundo em conexões de baixa largura de banda. A cor primária do logotipo da faixa ou da cor da sua organização é recomendada para ser usada aqui. Especifique isso em hexadecimal (por exemplo, branco é #FFFFFF). |
+|backgroundColor|String| Cor que aparecerá no lugar da imagem de plano de fundo em conexões de baixa largura de banda. A cor primária do logotipo da faixa ou da cor da sua organização é recomendada para ser usada aqui. Especifique isso em hexadecimal (por exemplo, branco é #FFFFFF). |
 |backgroundImage|Stream| Imagem que aparece como o plano de fundo da página de logom. .png ou .jpg maior que 1920x1080 e menor que 300kb. Uma imagem menor reduzirá os requisitos de largura de banda e tornará as cargas de página mais performant. |
 |bannerLogo|Stream| Uma versão em faixa do logotipo da sua empresa que aparece na página de entrada. .png ou .jpg maior que 36x245px. Recomendamos usar uma imagem transparente sem preenchimento ao redor do logotipo. |
 |id|Cadeia de caracteres| Esta é uma id, herdada de microsoft.graph.entity, é a localidade que especifica o padrão ISO 639 para idioma, por exemplo, inglês é "en-us" ou "en". Daqui para frente, se expormos a funcionalidade para ter várias marcas para uma localidade, isso poderá ser alterado. Observe que id para Padrão /identidade visual é sempre 'und' até termos singletons sem teclas. Somente leitura. |
 |signInPageText|Cadeia de caracteres| Texto que aparece na parte inferior da caixa de login. Você pode usar isso para comunicar informações adicionais, como o número de telefone para o seu help desk ou uma declaração legal. Este texto deve ser Unicode e não exceder 1024 caracteres. |
 |squareLogo|Stream| Versão quadrada do logotipo da sua empresa. Isso aparece em Windows 10 experiências OOBE (out-of-box) e quando Windows Autopilot está habilitado para implantação. .png ou .jpg maior que 240x240px e não mais de 10kb de tamanho. Recomendamos usar uma imagem transparente sem preenchimento ao redor do logotipo. |
-|usernameHintText|String| Cadeia de caracteres que mostra como a dica na caixa de texto do nome de usuário na tela de entrada. Este texto deve ser Unicode, sem links ou código, e não pode exceder 64 caracteres. |
+|usernameHintText|Cadeia de caracteres| Cadeia de caracteres que mostra como a dica na caixa de texto do nome de usuário na tela de entrada. Este texto deve ser Unicode, sem links ou código, e não pode exceder 64 caracteres. |
 
 ## <a name="relationships"></a>Relações
 

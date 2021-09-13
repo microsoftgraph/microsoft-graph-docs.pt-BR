@@ -2,15 +2,15 @@
 title: Criar ChartSeries
 description: Use essa API para criar novas ChartSeries.
 author: lumine2008
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 9468a415a02409a17862cec4486eee8156973e1b
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 951b6f3c747abaef3bea1e75edd192ad1e60d0dc
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52053283"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59105591"
 ---
 # <a name="create-chartseries"></a>Criar ChartSeries
 
@@ -84,7 +84,7 @@ Content-length: 26
 
 No corpo da solicitação, fornece uma representação JSON do [objeto WorkbookChartSeries.](../resources/chartseries.md)
 ##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto de resposta exibido aqui pode ser encurtado para legibilidade.
+Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser reduzido para facilitar a leitura.
 <!-- {
   "blockType": "response",
   "truncated": true,

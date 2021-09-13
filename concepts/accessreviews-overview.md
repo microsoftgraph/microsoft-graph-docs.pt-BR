@@ -2,14 +2,14 @@
 title: Visão geral da API de críticas de acesso
 description: A API de críticas de acesso permite que você revise programaticamente o acesso aos recursos do Azure AD.
 author: FaithOmbongi
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: governance
-ms.openlocfilehash: ea3caf2fd375d56ce128f8ec84be71b468f40b90
-ms.sourcegitcommit: b7e01a1331abe5f5c9aa2828d93dad08229573f1
+ms.openlocfilehash: 6eda31e5f35d03d5b5db136d46b14e93470389e0
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58336653"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59143591"
 ---
 # <a name="overview-of-the-access-reviews-api"></a>Visão geral da API de análises de acesso
 

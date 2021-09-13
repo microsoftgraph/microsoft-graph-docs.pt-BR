@@ -2,15 +2,15 @@
 title: Tipo de recurso authenticationFlowsPolicy
 description: 'Representa a configuração da política da experiência de inscrição de autoatendimento no nível do locatário que permite aos usuários externos solicitar a inscrição para a aprovação. '
 author: linkhp
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: a50d7ed083672577dcba2eaa45fc3a826d52cce017701d65694f07fefb5a4edb
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 108b326010749235a2ecd631a4287d895de4ff71
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54216949"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59127056"
 ---
 # <a name="authenticationflowspolicy-resource-type"></a>Tipo de recurso authenticationFlowsPolicy
 

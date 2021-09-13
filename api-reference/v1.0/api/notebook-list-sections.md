@@ -1,23 +1,23 @@
 ---
 title: Listar seções
-description: Recupere uma lista de objetos onenoteSection do bloco de anotações especificado.
+description: Recupere uma lista de objetos do onenoteSection do bloco de anotações especificado.
 author: jewan-microsoft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: 73d0c23b29271a4b040f5694d25ce32d4dcb4f5b
-ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
+ms.openlocfilehash: dc93b49eb0995befad0019ce954fe2028c5d6081
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48458959"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59016026"
 ---
 # <a name="list-sections"></a>Listar seções
 
 Namespace: microsoft.graph
 
-Recupere uma lista de objetos [onenoteSection](../resources/section.md) do bloco de anotações especificado.
-## <a name="permissions"></a>Permissions
+Recupere uma lista de [objetos do onenoteSection](../resources/section.md) do bloco de anotações especificado.
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
@@ -39,7 +39,7 @@ Este método dá suporte a [Parâmetros de consulta OData](/graph/query-paramete
 
 A ordem de classificação padrão é `name asc`.
 
-A consulta padrão expande `parentNotebook` e seleciona suas `id` `displayName` Propriedades, e `self` . `expand`Os valores válidos para as seções são `parentNotebook` e `parentSectionGroup` .
+A consulta padrão expande `parentNotebook` e seleciona suas propriedades , e `id` `displayName` `self` . Os `expand` valores válidos para seções `parentNotebook` são e `parentSectionGroup` .
 
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -53,7 +53,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [onenoteSection](../resources/section.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e uma `200 OK` coleção de [objetos onenoteSection](../resources/section.md) no corpo da resposta.
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.

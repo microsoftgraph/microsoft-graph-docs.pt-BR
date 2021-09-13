@@ -2,15 +2,15 @@
 title: Listar recursos de envio
 description: Listar os recursos associados a um envio.
 author: sharad-sharma-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 74a26d9813c7660917a8d59e2a55a3d9eef91cd8
-ms.sourcegitcommit: 1e9a53e7b8e67349288f5cfbabe8355de83817b0
+ms.openlocfilehash: e175e63394e540267e7f9df3f04dc33f45ba0039
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/17/2021
-ms.locfileid: "58367118"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59016649"
 ---
 # <a name="list-submission-resources"></a>Listar recursos de envio
 

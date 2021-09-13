@@ -2,15 +2,15 @@
 title: Excluir deviceCategory
 description: Exclui deviceCategory.
 author: rolyon
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e3887e6e76779c01093ef6269027a2ae3ac862e5
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 177c90d35e387da022e7c7bc370bed9d1897245f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58795617"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59017826"
 ---
 # <a name="delete-devicecategory"></a>Excluir deviceCategory
 
@@ -26,10 +26,10 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)||
+|Delegada (conta corporativa ou de estudante)||
 | &nbsp; &nbsp; **Integração** | DeviceManagementManagedDevices.ReadWrite.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application||
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Aplicativo||
 | &nbsp; &nbsp; **Integração** | DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP

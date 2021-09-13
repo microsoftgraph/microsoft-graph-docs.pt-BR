@@ -1,16 +1,16 @@
 ---
 title: Relatórios de atividades do Skype for Business
 description: Você pode usar os relatórios de atividades do Skype for Business para obter dados sobre as atividades em toda a organização. Esses dados podem ajudar a investigar, planejar e tomar outras decisões comerciais para sua organização.
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: reports
 author: sarahwxy
 doc_type: conceptualPageType
-ms.openlocfilehash: 4b7f5c244fec894feb0cb7708e5b373019b1d7e90daadf4e46b899f61ed09848
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 486acf1c05eaba43c062d1d7d985c6b42f31ee4f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54202123"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59123010"
 ---
 # <a name="skype-for-business-activity-reports"></a>Relatórios de atividades do Skype for Business
 

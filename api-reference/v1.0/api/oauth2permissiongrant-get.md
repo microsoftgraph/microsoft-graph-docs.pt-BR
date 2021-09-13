@@ -1,16 +1,16 @@
 ---
 title: Obter um oAuth2PermissionGrant
 description: Recupere as propriedades e as relações de oAuth2PermissionGrant único, representando uma concessão de permissão delegada.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: 86e1bd2bbf03ac9304082bee44e5ed6e46ff00fd
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: b5b97e89694ab31bb4d771fb9a01b1ce28c3cc9c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52039325"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59015956"
 ---
 # <a name="get-a-delegated-permission-grant-oauth2permissiongrant"></a>Obter uma concessão de permissão delegada (oAuth2PermissionGrant)
 

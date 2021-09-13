@@ -1,16 +1,16 @@
 ---
 title: Obter certificateBasedAuthConfiguration
 description: Obter as propriedades de um objeto certificatebasedauthconfiguration.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: adimitui
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 49d34e274d783750401479f76391ae7be09fe59b
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 165f4be79e360a3a9aa87b9ab11dded62093f31f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52051575"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59056859"
 ---
 # <a name="get-certificatebasedauthconfiguration"></a>Obter certificateBasedAuthConfiguration
 
@@ -24,8 +24,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | Organization.Read.All, Organization.ReadWrite.All |
-| Delegado (conta pessoal da Microsoft) | Sem suporte. |
+| Delegada (conta corporativa ou de estudante)     | Organization.Read.All, Organization.ReadWrite.All |
+| Delegada (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo    | Organization.Read.All, Organization.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP

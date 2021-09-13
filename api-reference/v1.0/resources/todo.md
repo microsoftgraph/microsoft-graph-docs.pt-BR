@@ -2,15 +2,15 @@
 title: tipo de recurso todo
 description: Representa os serviços To Do disponíveis para um usuário.
 author: avijityadav
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 89bbdd1bd3d91c5114850ffad8afc3aeec90e8bf3bbfb0b65e540444c2022b7b
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: ae754c758b3b1112c6201f4cbbbb143eb5af6d96
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54235258"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59128008"
 ---
 # <a name="todo-resource-type"></a>tipo de recurso todo
 

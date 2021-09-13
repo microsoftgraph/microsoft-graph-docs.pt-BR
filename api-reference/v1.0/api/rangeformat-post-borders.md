@@ -2,15 +2,15 @@
 title: Criar RangeBorder
 description: Use essa API para criar uma nova RangeBorder.
 author: lumine2008
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 01aa529e38f5eb5868a0a8d8a620343c0d74df0a
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 9e8bd25aa0e37582c6f0c9d6200284bd2c984b79
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52055782"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59104751"
 ---
 # <a name="create-rangeborder"></a>Criar RangeBorder
 
@@ -92,7 +92,7 @@ Content-length: 136
 
 No corpo da solicitação, fornece uma representação JSON [do objeto WorkbookRangeBorder.](../resources/rangeborder.md)
 ##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto de resposta exibido aqui pode ser encurtado para legibilidade.
+Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser reduzido para facilitar a leitura.
 <!-- {
   "blockType": "response",
   "truncated": true,

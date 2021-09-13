@@ -1,16 +1,16 @@
 ---
 title: Criar homeRealmDiscoveryPolicy
 description: Crie uma nova homeRealmDiscoveryPolicy.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: hpsin
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 31b201ea19658361cdb2bf7c3da2326c3e710e29
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: b5d99b2297d2ba0abd14e436d8d1141267986219
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52051386"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59045851"
 ---
 # <a name="create-homerealmdiscoverypolicy"></a>Criar homeRealmDiscoveryPolicy
 
@@ -26,8 +26,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | Policy.ReadWrite.ApplicationConfiguration |
-| Delegado (conta pessoal da Microsoft) | Sem suporte. |
+| Delegada (conta corporativa ou de estudante)     | Policy.ReadWrite.ApplicationConfiguration |
+| Delegada (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo                            | Policy.ReadWrite.ApplicationConfiguration |
 
 ## <a name="http-request"></a>Solicitação HTTP

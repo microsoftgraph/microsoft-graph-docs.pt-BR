@@ -1,16 +1,16 @@
 ---
 title: Atualizar claimsmappingpolicy
 description: Atualize as propriedades do objeto claimsMappingPolicy.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: paulgarn
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 5db62e1c9905939ab5a05600a90dd482d5e0820a
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 1942310afed1ead09bef8c6bb02fbff0b2f45a64
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52052457"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59119592"
 ---
 # <a name="update-claimsmappingpolicy"></a>Atualizar claimsmappingpolicy
 
@@ -51,7 +51,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 |:-------------|:------------|:------------|
 |definition|Coleção String| Uma coleção de cadeias de caracteres que contém uma cadeia de caracteres JSON que define as regras e as configurações dessa política.  Obrigatório.|
 |description|Cadeia de caracteres| Descrição dessa política.|
-|displayName|Cadeia de caracteres| Nome de exibição para esta política. Obrigatório.|
+|displayName|String| Nome de exibição para esta política. Obrigatório.|
 |isOrganizationDefault|Boolean|Se definido como true, ativa essa política. Pode haver muitas políticas para o mesmo tipo de política, mas apenas uma pode ser ativada como o padrão da organização. Opcional, o valor padrão é false.|
 
 ## <a name="response"></a>Resposta
@@ -75,11 +75,7 @@ PATCH https://graph.microsoft.com/v1.0/policies/claimsMappingPolicies/{id}
 Content-type: application/json
 
 {
-  "definition": [
-    "definition-value"
-  ],
-  "displayName": "displayName-value",
-  "isOrganizationDefault": true
+    "displayName": "UpdateClaimsPolicy"
 }
 ```
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
@@ -105,26 +101,13 @@ Content-type: application/json
 
 Este é um exemplo de resposta.
 
-> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
-
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.claimsMappingPolicy"
+  "truncated": true
 } -->
 
 ```http
 HTTP/1.1 204 No Content
-Content-type: application/json
-
-{
-  "definition": [
-    "definition-value"
-  ],
-  "displayName": "displayName-value",
-  "isOrganizationDefault": true,
-  "id": "id-value"
-}
 ```
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98

@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso mailAssessmentRequest
 description: Usado para criar e recuperar uma avaliação de ameaça de email.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: hafen-ms
 ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: 05d4fd304c0cb85b9ca8d2d7aa71d6bdd90128ef42ca13b0d5ed881f70330ec9
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 94740918987b5efd6c1dcd6b1183e709d41cd0d6
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54155005"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59134623"
 ---
 # <a name="mailassessmentrequest-resource-type"></a>Tipo de recurso mailAssessmentRequest
 
@@ -31,7 +31,7 @@ Quando você cria uma solicitação de avaliação de ameaça de email, o email 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
 |destinationRoutingReason|[mailDestinationRoutingReason](enums.md#maildestinationroutingreason-values)|O motivo do email roteado para seu destino. Os valores possíveis são: `none` , , , , , , , , , `mailFlowRule` , , `safeSender` , , , `blockedSender` `advancedSpamFiltering` `domainAllowList` , `domainBlockList` `notInAddressBook` `firstTimeSender` `autoPurgeToInbox` `autoPurgeToJunk` `autoPurgeToDeleted` `outbound` `notJunk` `junk` .|
-|messageUri|Cadeia de caracteres|O URI de recurso da mensagem de email para avaliação.|
+|messageUri|String|O URI de recurso da mensagem de email para avaliação.|
 |recipientEmail|String|O destinatário de email cujas políticas são usadas para avaliar o email.|
 |category|[threatCategory](enums.md#threatcategory-values)|A categoria de ameaça. Os valores possíveis são: `spam`, `phishing`, `malware`.|
 |contentType|[threatAssessmentContentType](enums.md#threatassessmentcontenttype-values)|O tipo de conteúdo da avaliação de ameaças. Os valores possíveis são: `mail`, `url`, `file`.|

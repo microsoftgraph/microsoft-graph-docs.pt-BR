@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso fileAssessmentRequest
 description: Usado para criar e recuperar uma avaliação de ameaça de arquivo.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: hafen-ms
 ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: 785947f21d3ec79c7233613990cc9ebd0e6d88be0ab8fbf9b14bcd3190e3bcf6
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: cecd2e0a092f21017a0cab2f5a5f7a2612e2ddeb
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54216935"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59062681"
 ---
 # <a name="fileassessmentrequest-resource-type"></a>Tipo de recurso fileAssessmentRequest
 
@@ -29,7 +29,7 @@ O arquivo pode ser um arquivo de texto ou documento do Word ou arquivo binário 
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|contentData|String|Conteúdo de arquivo codificado base64. O conteúdo do arquivo não pode ser buscar de volta porque não está armazenado.|
+|contentData|Cadeia de caracteres|Conteúdo de arquivo codificado base64. O conteúdo do arquivo não pode ser buscar de volta porque não está armazenado.|
 |fileName|String|O nome do arquivo.|
 |category|[threatCategory](enums.md#threatcategory-values)|A categoria de ameaça. Os valores possíveis são: `spam`, `phishing`, `malware`.|
 |contentType|[threatAssessmentContentType](enums.md#threatassessmentcontenttype-values)|O tipo de conteúdo da avaliação de ameaças. Os valores possíveis são: `mail`, `url`, `file`.|

@@ -1,16 +1,16 @@
 ---
 title: 'applicationTemplate: instaurá-lo'
 description: Adicione uma instância de um aplicativo da galeria de aplicativos do Azure AD ao diretório.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: luleonpla
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 34fe3ae80b34497cfe3313031cd1d3e2f5f7a91c
-ms.sourcegitcommit: be09568fa07ab793cd1db500f537ca94ca9e5b4a
+ms.openlocfilehash: 7935bac29767fee906f03d64a4d05af186a29e20
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/15/2021
-ms.locfileid: "51836958"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59114782"
 ---
 # <a name="applicationtemplate-instantiate"></a>applicationTemplate: instaurá-lo
 
@@ -48,7 +48,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro   | Tipo   | Descrição                    |
 | :---------- | :----- | :----------------------------- |
-| displayName | String | Nome personalizado do aplicativo |
+| displayName | Cadeia de caracteres | Nome personalizado do aplicativo |
 
 ## <a name="response"></a>Resposta
 

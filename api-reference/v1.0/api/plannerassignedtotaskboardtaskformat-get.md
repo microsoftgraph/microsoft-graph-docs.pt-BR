@@ -1,16 +1,16 @@
 ---
 title: Obter plannerAssignedToTaskBoardTaskFormat
 description: Recupere as propriedades e as relações do **objeto plannerAssignedToTaskBoardTaskFormat.**
-localization_priority: Normal
+ms.localizationpriority: medium
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: abad4d469289c63d979b7a0a5a31b41c4afc8756
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 8c5075dd21f65928de397bd48cc157cd70fa812b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52035180"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59104891"
 ---
 # <a name="get-plannerassignedtotaskboardtaskformat"></a>Obter plannerAssignedToTaskBoardTaskFormat
 
@@ -76,7 +76,7 @@ GET https://graph.microsoft.com/v1.0/planner/tasks/{task-id}/assignedToTaskBoard
 ---
 
 ##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto de resposta exibido aqui pode ser encurtado para legibilidade.
+Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser reduzido para facilitar a leitura.
 <!-- {
   "blockType": "response",
   "truncated": true,

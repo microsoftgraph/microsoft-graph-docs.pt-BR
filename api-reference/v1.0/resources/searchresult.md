@@ -2,16 +2,16 @@
 author: JeremyKelley
 ms.date: 09/10/2017
 title: SearchResult
-localization_priority: Normal
+ms.localizationpriority: medium
 description: O recurso SearchResult indica que um item é a resposta a uma consulta de pesquisa.
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 5b07e58e7ac9e568e6f1edad75be254b02dbc405fe2520f171abbf0af90365b9
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: ad26c1df29e78d6c04c4332d5a1c1e9f88c12513
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54180464"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59126685"
 ---
 # <a name="searchresult-resource-type"></a>Tipo de recurso SearchResult
 

@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso iniciador
 description: Descreve quem ou o que iniciou o evento de provisionamento.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: ArvindHarinder1
 ms.prod: identity-and-access-reports
 doc_type: resourcePageType
-ms.openlocfilehash: b62c087f8a3519c80c5c3cda0103fd56a2e40f6c5abd0cedf4389270cce85300
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 5a00be289964c749adcea2b7f4df80dd477c1a99
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54178406"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59129856"
 ---
 # <a name="initiator-resource-type"></a>Tipo de recurso iniciador
 
@@ -22,7 +22,7 @@ Descreve quem ou o que iniciou o evento de provisionamento.
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|displayName|Cadeia de caracteres|Nome da pessoa ou serviço que iniciou o evento de provisionamento.|
+|displayName|String|Nome da pessoa ou serviço que iniciou o evento de provisionamento.|
 |id|Cadeia de caracteres|Identifica exclusivamente a pessoa ou serviço que iniciou o evento de provisionamento.|
 |initiatorType|initiatorType| Tipo de iniciador. Os valores possíveis são: `user`, `application`, `system`, `unknownFutureValue`.|
 

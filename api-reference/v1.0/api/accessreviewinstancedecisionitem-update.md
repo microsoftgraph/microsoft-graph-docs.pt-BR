@@ -2,15 +2,15 @@
 title: Atualizar accessReviewInstanceDecisionItem
 description: Atualize as propriedades de um objeto accessReviewInstanceDecisionItem.
 author: isabelleatmsft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: ca2f5c24f10bd287b73502ec3d8ba5b6c399da18
-ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
+ms.openlocfilehash: 0d06d62ddcf5568e451e2309180022fdd1c77717
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53209608"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59038647"
 ---
 # <a name="update-accessreviewinstancedecisionitem"></a>Atualizar accessReviewInstanceDecisionItem
 Namespace: microsoft.graph
@@ -24,7 +24,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
 |Delegada (conta corporativa ou de estudante)|AccessReview.ReadWrite.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|AccessReview.ReadWrite.All|
 
 Somente um usuário de chamada listado como revisor do [accessReviewInstance](../resources/accessreviewinstance.md) pai pode atualizar **o accessReviewInstanceDecisionItem**.
@@ -53,7 +53,7 @@ A tabela a seguir mostra as propriedades que são aceitas quando você atualiza 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |decision|String|O voto do revistor sobre se a entidade deve ter acesso ao recurso em revisão. Valores possíveis: `Approve` `Deny` , ou `DontKnow` . Obrigatório.|
-|justification|String|O motivo da decisão do revistor. Obrigatório se a **justificationRequiredOnApproval** da propriedade settings do [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) for `true` .|
+|justification|Cadeia de caracteres|O motivo da decisão do revistor. Obrigatório se a **justificationRequiredOnApproval** da propriedade settings do [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) for `true` .|
 
 ## <a name="response"></a>Resposta
 

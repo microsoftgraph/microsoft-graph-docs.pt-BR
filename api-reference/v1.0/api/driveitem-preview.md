@@ -1,16 +1,16 @@
 ---
 title: 'driveItem: visualização'
 description: Essa ação permite que você obtenha URLs inbeddáveis de curta duração para um item para renderizar uma visualização temporária.
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: sharepoint
 author: JeremyKelley
 doc_type: apiPageType
-ms.openlocfilehash: b8cac897e67bc0a997b9ea486b1f6956e70c2f07dfe7fe5019ab7285b3eb977c
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: fecbdba30948dc89e0344a90574fe932562058fd
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54234313"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59022762"
 ---
 # <a name="driveitem-preview"></a>driveItem: visualização
 
@@ -69,11 +69,11 @@ A solicitação deve ser um objeto JSON com as seguintes propriedades.
 
 A resposta será um objeto JSON contendo as seguintes propriedades:
 
-| Nome           | Tipo   | Descrição
+| Name           | Tipo   | Descrição
 |:---------------|:-------|:---------------------------------------------------
-| getUrl         | string | URL adequada para a incorporação usando HTTP GET (iframes, etc.)
-| postUrl        | string | URL adequada para a incorporação usando HTTP POST (postagem de formulário, JS, etc.)
-| postParameters | string | Parâmetros POST a incluir se estiver usando postUrl
+| getUrl         | cadeia de caracteres | URL adequada para a incorporação usando HTTP GET (iframes, etc.)
+| postUrl        | cadeia de caracteres | URL adequada para a incorporação usando HTTP POST (postagem de formulário, JS, etc.)
+| postParameters | cadeia de caracteres | Parâmetros POST a incluir se estiver usando postUrl
 
 GetUrl, postUrl ou ambos podem ser retornados dependendo do estado atual do suporte de incorporar para as opções especificadas.
 

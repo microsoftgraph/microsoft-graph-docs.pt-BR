@@ -2,15 +2,15 @@
 title: tipo de recurso androidWorkProfileGeneralDeviceConfiguration
 description: Configuração geral do dispositivo do Perfil de Trabalho do Android.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4406aedfea25e4b2a909fb88fef398eefd5190a9cb795556320d5e88051c9f05
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: e00be6ea028ea2cf77f52af68679f52d6647cec1
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54231703"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59136576"
 ---
 # <a name="androidworkprofilegeneraldeviceconfiguration-resource-type"></a>tipo de recurso androidWorkProfileGeneralDeviceConfiguration
 
@@ -29,7 +29,7 @@ Herda de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfigurat
 |[Listar androidWorkProfileGeneralDeviceConfigurations](../api/intune-deviceconfig-androidworkprofilegeneraldeviceconfiguration-list.md)|[coleção androidWorkProfileGeneralDeviceConfiguration](../resources/intune-deviceconfig-androidworkprofilegeneraldeviceconfiguration.md)|Listar propriedades e relações dos objetos [androidWorkProfileGeneralDeviceConfiguration.](../resources/intune-deviceconfig-androidworkprofilegeneraldeviceconfiguration.md)|
 |[Obter androidWorkProfileGeneralDeviceConfiguration](../api/intune-deviceconfig-androidworkprofilegeneraldeviceconfiguration-get.md)|[androidWorkProfileGeneralDeviceConfiguration](../resources/intune-deviceconfig-androidworkprofilegeneraldeviceconfiguration.md)|Leia propriedades e relações do [objeto androidWorkProfileGeneralDeviceConfiguration.](../resources/intune-deviceconfig-androidworkprofilegeneraldeviceconfiguration.md)|
 |[Criar androidWorkProfileGeneralDeviceConfiguration](../api/intune-deviceconfig-androidworkprofilegeneraldeviceconfiguration-create.md)|[androidWorkProfileGeneralDeviceConfiguration](../resources/intune-deviceconfig-androidworkprofilegeneraldeviceconfiguration.md)|Crie um novo [objeto androidWorkProfileGeneralDeviceConfiguration.](../resources/intune-deviceconfig-androidworkprofilegeneraldeviceconfiguration.md)|
-|[Excluir androidWorkProfileGeneralDeviceConfiguration](../api/intune-deviceconfig-androidworkprofilegeneraldeviceconfiguration-delete.md)|None|Exclui um [androidWorkProfileGeneralDeviceConfiguration](../resources/intune-deviceconfig-androidworkprofilegeneraldeviceconfiguration.md).|
+|[Excluir androidWorkProfileGeneralDeviceConfiguration](../api/intune-deviceconfig-androidworkprofilegeneraldeviceconfiguration-delete.md)|Nenhum(a)|Exclui um [androidWorkProfileGeneralDeviceConfiguration](../resources/intune-deviceconfig-androidworkprofilegeneraldeviceconfiguration.md).|
 |[Atualizar androidWorkProfileGeneralDeviceConfiguration](../api/intune-deviceconfig-androidworkprofilegeneraldeviceconfiguration-update.md)|[androidWorkProfileGeneralDeviceConfiguration](../resources/intune-deviceconfig-androidworkprofilegeneraldeviceconfiguration.md)|Atualize as propriedades de [um objeto androidWorkProfileGeneralDeviceConfiguration.](../resources/intune-deviceconfig-androidworkprofilegeneraldeviceconfiguration.md)|
 
 ## <a name="properties"></a>Propriedades
@@ -38,7 +38,7 @@ Herda de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfigurat
 |id|Cadeia de caracteres|Chave da entidade. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|DateTime em que o objeto foi criado. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|description|Cadeia de caracteres|O administrador forneceu a descrição da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|description|String|O administrador forneceu a descrição da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |displayName|Cadeia de caracteres|O administrador forneceu o nome da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |versão|Int32|Versão da configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |passwordBlockFingerprintUnlock|Boolean|Indica se o desbloqueio de impressão digital deve ou não ser bloqueado.|
@@ -53,13 +53,13 @@ Herda de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfigurat
 |workProfileBlockNotificationsWhileDeviceLocked|Booliano|Indica se as notificações são bloqueadas ou não enquanto o dispositivo está bloqueado.|
 |workProfileBlockAddingAccounts|Booliano|Impedir que os usuários adicionem/removam contas no perfil de trabalho.|
 |workProfileBluetoothEnableContactSharing|Booliano|Permitir que dispositivos bluetooth acessem contatos corporativos.|
-|workProfileBlockScreenCapture|Booliano|Bloquear captura de tela no perfil de trabalho.|
-|workProfileBlockCrossProfileCallerId|Booliano|Bloqueie a ID do chamador de perfil de trabalho de exibição no perfil pessoal.|
+|workProfileBlockScreenCapture|Boolean|Bloquear captura de tela no perfil de trabalho.|
+|workProfileBlockCrossProfileCallerId|Boolean|Bloqueie a ID do chamador de perfil de trabalho de exibição no perfil pessoal.|
 |workProfileBlockCamera|Booliano|Bloquear a câmera de perfil de trabalho.|
 |workProfileBlockCrossProfileContactsSearch|Booliano|Bloquear a disponibilidade de contatos de perfil de trabalho no perfil pessoal.|
-|workProfileBlockCrossProfileCopyPaste|Booliano|Boolean que indica se a configuração não permitir cópia/colar entre perfis está habilitada.|
+|workProfileBlockCrossProfileCopyPaste|Boolean|Boolean que indica se a configuração não permitir cópia/colar entre perfis está habilitada.|
 |workProfileDefaultAppPermissionPolicy|[androidWorkProfileDefaultAppPermissionPolicyType](../resources/intune-deviceconfig-androidworkprofiledefaultapppermissionpolicytype.md)|Tipo de senha necessário. Os valores possíveis são: `deviceDefault`, `prompt`, `autoGrant`, `autoDeny`.|
-|workProfilePasswordBlockFingerprintUnlock|Booliano|Indica se o desbloqueio de impressão digital deve ou não ser bloqueado para o perfil de trabalho.|
+|workProfilePasswordBlockFingerprintUnlock|Boolean|Indica se o desbloqueio de impressão digital deve ou não ser bloqueado para o perfil de trabalho.|
 |workProfilePasswordBlockTrustAgents|Booliano|Indica se o Smart Lock deve ou não ser bloqueado e outros agentes de confiança para o perfil de trabalho.|
 |workProfilePasswordExpirationDays|Int32|Número de dias antes que a senha do perfil de trabalho expire. Valores válidos de 1 a 365|
 |workProfilePasswordMinimumLength|Int32|Comprimento mínimo da senha do perfil de trabalho. Valores válidos de 4 a 16|

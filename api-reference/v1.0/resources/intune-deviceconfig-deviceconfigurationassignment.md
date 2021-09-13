@@ -2,15 +2,15 @@
 title: Tipo de recurso deviceConfigurationAssignment
 description: A entidade de atribuição de configuração do dispositivo atribui um grupo AAD a uma configuração de dispositivo específica.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 60c8a336961b16cb62fafb4d6d92cf5bab55d62e332a99e58903b91f0c0ded0d
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 9dba31567de5ec9bca1a2314d9e609d03b620a86
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54169546"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59118387"
 ---
 # <a name="deviceconfigurationassignment-resource-type"></a>Tipo de recurso deviceConfigurationAssignment
 

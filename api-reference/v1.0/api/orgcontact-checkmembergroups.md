@@ -1,16 +1,16 @@
 ---
 title: 'orgContact: checkMemberGroups'
 description: Verifique se há associação na lista de grupos especificada. Retorna da lista as IDs de grupo das quais o contato organizacional tem uma associação direta ou transitiva.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: dkershaw10
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 5bdafc5ecaf7e2f95017267bf35ff140994bfb1d
-ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
+ms.openlocfilehash: f57d181dd1d053ac08140d9fb72be169e24e976e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50761357"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59119321"
 ---
 # <a name="orgcontact-checkmembergroups"></a>orgContact: checkMemberGroups
 
@@ -18,10 +18,10 @@ Namespace: microsoft.graph
 
 Verifique se há associação na lista de grupos especificada. Retorna da lista as IDs de grupo das quais o contato [organizacional](../resources/orgcontact.md) tem uma associação direta ou transitiva.
 
-Você pode fazer check-up de no máximo 20 grupos por solicitação. Esta função dá suporte ao Microsoft 365 e a outros tipos de grupos provisionados no Azure Active Directory (Azure AD).
+Você pode fazer check-up de no máximo 20 grupos por solicitação. Esta função dá suporte Microsoft 365 outros tipos de grupos provisionados no Azure Active Directory (Azure AD).
 
 >[!NOTE]
->Os grupos do Microsoft 365 não podem conter grupos. A associação a um grupo do Microsoft 365 é sempre direta.
+>Microsoft 365 grupos não podem conter grupos. A associação em um Microsoft 365 grupo é sempre direta.
 
 
 ## <a name="permissions"></a>Permissões
@@ -29,8 +29,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | OrgContact.Read.All e Group.Read.All, Directory.Read.All |
-|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegado (conta corporativa ou de estudante) | OrgContact.Read.All e Group.Read.All, Directory.Read.All |
+|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | OrgContact.Read.All e Group.Read.All, Directory.Read.All |
 
 ## <a name="http-request"></a>Solicitação HTTP

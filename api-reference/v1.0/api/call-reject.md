@@ -2,15 +2,15 @@
 title: 'call: reject'
 description: Habilitar um bot para rejeitar uma chamada de entrada.
 author: ananmishr
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 1355a826ab3bfaeea3392e20a6e40c71a279ca58
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: c49abaa569ae133657e37bce0e49367b5ac5fea5
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52787489"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59016852"
 ---
 # <a name="call-reject"></a>call: reject
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 | :-------------- | :--------------------------------------------------------- |
 | Delegado (conta corporativa ou de estudante)     | Não suportado                       |
 | Delegado (conta pessoal da Microsoft) | Não suportado                       |
-| Aplicativo     | Nenhuma                                                       |
+| Aplicativo     | None                                                       |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -48,7 +48,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro      | Tipo    |Descrição|
 |:---------------|:--------|:----------|
-|motivo|Cadeia de caracteres|O motivo da rejeição. Os valores possíveis `None` são e `Busy``Forbidden` |
+|motivo|String|O motivo da rejeição. Os valores possíveis `None` são e `Busy``Forbidden` |
 |callbackUri|String|Isso permite que os bots forneçam um URI de retorno de chamada específico para que a chamada atual receba notificações posteriores. Se essa propriedade não tiver sido definida, o URI de retorno de chamada global do bot será usado em vez disso. Isso deve ser `https` .|
 
 ## <a name="response"></a>Resposta

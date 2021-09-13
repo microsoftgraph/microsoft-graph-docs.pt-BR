@@ -1,18 +1,18 @@
 ---
-title: Listando versões de um ListItem
+title: Listar versões de um ListItem
 description: O SharePoint pode ser configurado para manter o histórico para itens da lista.
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: sharepoint
 author: JeremyKelley
 doc_type: apiPageType
-ms.openlocfilehash: 3edbd65ce3201b3595215f221fa5616a194306d4
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: e1e957b6dadfe77f1610c22e5acf7c98630948b2
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48057259"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59110337"
 ---
-# <a name="listing-versions-of-a-listitem"></a>Listando versões de um ListItem
+# <a name="listing-versions-of-a-listitem"></a>Listar versões de um ListItem
 
 Namespace: microsoft.graph
 

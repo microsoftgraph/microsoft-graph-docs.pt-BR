@@ -1,16 +1,16 @@
 ---
 title: 'calendar: getSchedule'
 description: Obtenha as informações de disponibilidade para um conjunto de usuários, listas de distribuição ou recursos para um período especificado.
-localization_priority: Priority
+ms.localizationpriority: high
 author: tariq-sharif
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 267da79cf32f55de94b6d23fd87125c415973f03
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 3a6d0fb91584b6158d354f4d880fafe4f6775ed0
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52054606"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59125408"
 ---
 # <a name="calendar-getschedule"></a>calendar: getSchedule
 
@@ -102,7 +102,7 @@ Content-Type: application/json
 
 
 ##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto de resposta exibido aqui pode ser encurtado para legibilidade.
+Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser reduzido para facilitar a leitura.
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -1,16 +1,16 @@
 ---
 title: 'message: createForward'
 description: Crie um rascunho para encaminhar uma mensagem existente, no formato JSON ou MIME.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 9892fb41a6115abfad0e7c19167911db533ad213
-ms.sourcegitcommit: cec76c5a58b359d79df764c849c8b459349b3b52
+ms.openlocfilehash: bdcc3125fb05b6ffec7bedfc94dc1c3abca271d5
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "52645602"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59110295"
 ---
 # <a name="message-createforward"></a>message: createForward
 
@@ -21,18 +21,18 @@ Crie um rascunho para encaminhar uma mensagem [existente](../resources/message.m
 Ao usar o formato JSON, você pode:
 - Especifique um comentário ou **a propriedade body** do `message` parâmetro. Especificar ambos retornará um erro HTTP 400 - Solicitação incorreta.
 - Especifique `toRecipients` o parâmetro ou a propriedade **toRecipients** do `message` parâmetro. Especificar ambos ou nenhum retornará um erro HTTP 400 - Solicitação incorreta.
-- [Atualize](../api/message-update.md) o rascunho posteriormente para adicionar conteúdo ao **corpo ou** alterar outras propriedades da mensagem.
+- [Atualizar](../api/message-update.md) o rascunho mais tarde para adicionar conteúdo ao **corpo** ou alterar outras propriedades da mensagem.
 
-Ao usar o formato MIME:
-- Forneça os [headers](https://tools.ietf.org/html/rfc2076) de mensagens da Internet aplicáveis e o [conteúdo MIME](https://tools.ietf.org/html/rfc2045), todos codificados no **formato base64** no corpo da solicitação.
-- Adicione quaisquer anexos e propriedades S/MIME ao conteúdo MIME.
+Ao utilizar o formato MIME:
+- Fornecer os [cabeçalhos de mensagem da Internet](https://tools.ietf.org/html/rfc2076) e o [conteúdo MIME](https://tools.ietf.org/html/rfc2045) aplicáveis, todos codificados no formato **base64** no corpo da solicitação.
+- Adicionar quaisquer anexos e propriedades S/MIME ao conteúdo MIME.
 
-[Envie](../api/message-send.md) a mensagem de rascunho em uma operação subsequente.
+[Enviar](../api/message-send.md) o rascunho da mensagem em uma operação subsequente.
 
 Como alternativa, [encaminhe uma mensagem](../api/message-forward.md) em uma única operação.
 
 ## <a name="permissions"></a>Permissões
-Uma das seguintes permissões é necessária para chamar essa API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, consulte [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
@@ -56,7 +56,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/createForwar
 | Nome       | Tipo | Descrição|
 |:---------------|:--------|:----------|
 | Autorização  | string  | {token} de portador. Obrigatório. |
-| Content-Type | string  | Natureza dos dados no corpo de uma entidade. <br/> Use `application/json` para um objeto JSON e para conteúdo `text/plain` MIME. |
+| Content-Type | string  | Natureza dos dados no corpo de uma entidade. <br/> Use `application/json` para um objeto JSON e `text/plain` para conteúdo MIME. |
 
 ## <a name="request-body"></a>Corpo da solicitação
 Esse método não exige um corpo de solicitação.
@@ -67,7 +67,7 @@ No entanto, para criar um rascunho de encaminhamento usando o formato MIME, forn
 
 Se bem-sucedido, este método retorna o código de resposta `201 Created` e o objeto [Message](../resources/message.md) no corpo da resposta.
 
-Se o corpo da solicitação incluir conteúdo MIME malformado, este método retornará e a seguinte mensagem de erro: "Cadeia de caracteres `400 Bad request` base64 inválida para conteúdo MIME".
+Se o corpo da solicitação incluir conteúdo MIME malformado, este método retornará `400 Bad request` e a seguinte mensagem de erro: "Cadeia de caracteres base64 inválida para o conteúdo MIME".
 
 ## <a name="examples"></a>Exemplos
 

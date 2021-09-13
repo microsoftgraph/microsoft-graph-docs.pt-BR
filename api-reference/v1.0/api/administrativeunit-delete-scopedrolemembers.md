@@ -2,15 +2,15 @@
 title: Remover um scopedRoleMember
 description: Remova um membro de função com escopo de uma unidade administrativa.
 author: DougKirschner
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 47d4d6064d51ba068e55ef0308d7d69c90c20c65
-ms.sourcegitcommit: 979fe005c74eb99cd971df6b9511b2d3f7fe3cd4
+ms.openlocfilehash: 8379da9a5f6b35caaa23593822df2b806dba51ea
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52991593"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59128456"
 ---
 # <a name="remove-a-scopedrolemember"></a>Remover um scopedRoleMember
 

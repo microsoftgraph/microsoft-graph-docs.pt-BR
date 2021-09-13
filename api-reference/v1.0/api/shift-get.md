@@ -2,15 +2,15 @@
 title: Obter turno
 description: Obter um turno por ID.
 author: akumar39
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: e4754e86ecaae0c39c519362c25ba08a49a5cbfb
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: dda5cb5199608d7547e4cce21c1c6c384adaf527
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52054410"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59118956"
 ---
 # <a name="get-shift"></a>Obter turno
 
@@ -25,8 +25,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)                                    |
 |:---------------------------------------|:-------------------------------------------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | Schedule.Read.All, Group.Read.All, Schedule.ReadWrite.All, Group.ReadWrite.All |
-| Delegado (conta pessoal da Microsoft) | Sem suporte.                                                                 |
+| Delegada (conta corporativa ou de estudante)     | Schedule.Read.All, Group.Read.All, Schedule.ReadWrite.All, Group.ReadWrite.All |
+| Delegada (conta pessoal da Microsoft) | Sem suporte.                                                                 |
 | Aplicativo                            | Schedule.Read.All, Schedule.ReadWrite.All                                      |
 
 ## <a name="http-request"></a>Solicitação HTTP

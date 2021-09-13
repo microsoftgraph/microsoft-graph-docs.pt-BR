@@ -2,15 +2,15 @@
 author: daspek
 title: Tipo de recurso incompleteData
 description: A faceta incompleteData indica que um recurso foi gerado com dados incompletos.
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: b632148991aefd9fad09bd794e5f3e1849365af8cea5455bbef0ba628b60f221
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: f4d8c852a08780ecc0f48ac8a1dcef11b246673c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54223575"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59128309"
 ---
 # <a name="incompletedata-resource-type"></a>Tipo de recurso incompleteData
 
@@ -24,7 +24,7 @@ As propriedades dentro podem fornecer informações sobre por que os dados estã
 | Propriedade                  | Tipo           | Descrição
 |:--------------------------|:---------------|:--------------------------------
 | missingDataBeforeDateTime | DateTimeOffset | O serviço não tem dados de origem antes do horário especificado.
-| wasThrottled              | Booliano        | Alguns dados não foram registrados devido a atividades excessivas.
+| wasThrottled              | Boolean        | Alguns dados não foram registrados devido a atividades excessivas.
 
 ## <a name="json-representation"></a>Representação JSON
 

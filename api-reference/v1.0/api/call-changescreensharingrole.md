@@ -2,15 +2,15 @@
 title: 'call: changeScreenSharingRole'
 description: Permitir que os aplicativos compartilhem conteúdo de tela com os participantes de uma chamada de grupo.
 author: ananmishr
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 2defaeb01463fbaed957990716d2870844345088
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: ff95c75b7f3500fcbf789ac6e3461a2043d3caa8
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52786051"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59114754"
 ---
 # <a name="call-changescreensharingrole"></a>call: changeScreenSharingRole
 
@@ -46,7 +46,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro      | Tipo    |Descrição|
 |:---------------|:--------|:----------|
-|role|Cadeia de caracteres|Os valores possíveis são: 'visualizador', 'sharer'|
+|role|String|Os valores possíveis são: 'visualizador', 'sharer'|
 
 ## <a name="response"></a>Resposta
 Se tiver êxito, este método retornará um código de resposta e todos os participantes `202 Accepted` receberão uma atualização de lista.

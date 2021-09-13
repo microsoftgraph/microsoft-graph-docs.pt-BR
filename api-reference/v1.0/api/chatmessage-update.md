@@ -3,14 +3,14 @@ title: Atualizar chatMessage
 description: Atualize a propriedade policyViolation de um chatMessage.
 author: RamjotSingh
 doc_type: apiPageType
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
-ms.openlocfilehash: dc4afbd651bb6d4c498240dd49bac56a586446b2
-ms.sourcegitcommit: 16ee16e7fddd662ca42dc5c9352cfb109e31ed1a
+ms.openlocfilehash: 53a3eb63de9fbdb5741bfe76f3ff8aed99563d54
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/03/2021
-ms.locfileid: "51582624"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59022776"
 ---
 # <a name="update-chatmessage"></a>Atualizar chatMessage
 
@@ -53,7 +53,7 @@ Se tiver êxito, este método retornará uma `200 OK` resposta.
 
 ### <a name="request"></a>Solicitação
 
-A seguir, um exemplo da solicitação para atualizar a propriedade **policyViolation** em uma mensagem de canal do Microsoft Teams.
+A seguir, um exemplo da solicitação para atualizar a **propriedade policyViolation** em uma mensagem Microsoft Teams canal.
 
 
 # <a name="http"></a>[HTTP](#tab/http)

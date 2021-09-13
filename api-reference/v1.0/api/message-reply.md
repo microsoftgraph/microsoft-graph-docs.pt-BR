@@ -1,16 +1,16 @@
 ---
 title: 'message: reply'
 description: 'Responder ao remetente de uma mensagem usando o formato JSON ou MIME. '
-localization_priority: Normal
+ms.localizationpriority: medium
 author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: c0b39d15f5c77fe141f4a75bb3beb7ac0852a255
-ms.sourcegitcommit: 503c72036c376a30e08c29df8e7730a7afcab66e
+ms.openlocfilehash: 044f5493b7a7c91f1be0a755261f3cc34af50aa2
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52869916"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59016103"
 ---
 # <a name="message-reply"></a>message: reply
 
@@ -59,7 +59,7 @@ Ao usar o formato JSON, forneça um objeto JSON no corpo da solicitação com os
 | Parâmetro    | Tipo   | Descrição |
 |---------------|-------|---------|
 | comment | String | Um comentário a incluir. Não pode ficar vazio. |
-| mensagem | [message](../resources/message.md) | Quaisquer propriedades graváveis ​​a serem atualizadas na mensagem de resposta. |
+| message | [message](../resources/message.md) | Quaisquer propriedades graváveis ​​a serem atualizadas na mensagem de resposta. |
 
 Ao especificar o corpo no formato MIME, forneça o conteúdo MIME com os headers de mensagem da Internet aplicáveis, todos codificados no **formato base64** no corpo da solicitação. Este método usa o remetente da mensagem original como destinatário.
 

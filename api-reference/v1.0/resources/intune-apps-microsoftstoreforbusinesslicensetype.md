@@ -2,15 +2,15 @@
 title: Tipo de número microsoftStoreForBusinessLicenseType
 description: Ainda não documentado
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 03c3e26fd991fa56ed53af89f37359d15813d1a5ab0093c293090486eb9f893d
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: c6e63ef7c465aa9d01f2eb2fe7779cff1ec2c31e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54160069"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59089589"
 ---
 # <a name="microsoftstoreforbusinesslicensetype-enum-type"></a>Tipo de número microsoftStoreForBusinessLicenseType
 

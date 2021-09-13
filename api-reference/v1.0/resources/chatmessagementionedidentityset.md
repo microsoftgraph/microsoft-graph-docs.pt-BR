@@ -2,15 +2,15 @@
 title: Tipo de recurso chatMessageMentionedIdentitySet
 description: Representa o recurso @mentioned em uma mensagem em um chat ou em um canal.
 author: RamjotSingh
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: bf19b34143935f66ab835cd12a47881bc0b1b1b2aa1f960d1d35f4be3d2ed41a
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 9ca4ebbe6b5c508aa6ec2ea0480eae2f66634b76
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54238150"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59109406"
 ---
 # <a name="chatmessagementionedidentityset-resource-type"></a>Tipo de recurso chatMessageMentionedIdentitySet
 

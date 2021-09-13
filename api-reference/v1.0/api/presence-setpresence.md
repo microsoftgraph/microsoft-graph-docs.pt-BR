@@ -2,15 +2,15 @@
 title: 'presença: setPresence'
 description: De definir as informações de presença para a sessão de presença do aplicativo do usuário.
 author: jsandoval-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: cloud-communications
-ms.openlocfilehash: 71ee6d63f2dfc8664705412c0bc257959094040e
-ms.sourcegitcommit: 9b8abc940a68dac6ee5da105ca29800cb59775f6
+ms.openlocfilehash: 599df25182e17bf031933eeb44474608bb5473c6
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "58514018"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59085221"
 ---
 # <a name="presence-setpresence"></a>presença: setPresence
 

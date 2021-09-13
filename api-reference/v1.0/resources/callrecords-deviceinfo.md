@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso deviceInfo
 description: O tipo deviceInfo
-localization_priority: Normal
+ms.localizationpriority: medium
 author: williamlooney
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 6d4897d861c23721a8132badc28295b3e78855cb6e02bd8bd50c24f99475e0b0
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: cc7482cb7ac1f6f096650db64ae340b273b5aec3
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54180897"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59084668"
 ---
 # <a name="deviceinfo-resource-type"></a>Tipo de recurso deviceInfo
 
@@ -22,8 +22,8 @@ Representa informações sobre um dispositivo (microfone, alto-falante, câmera 
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|captureDeviceDriver|String|Nome do driver do dispositivo de captura usado pelo ponto de extremidade de mídia.|
-|captureDeviceName|Cadeia de caracteres|Nome do dispositivo de captura usado pelo ponto de extremidade de mídia.|
+|captureDeviceDriver|Cadeia de caracteres|Nome do driver do dispositivo de captura usado pelo ponto de extremidade de mídia.|
+|captureDeviceName|String|Nome do dispositivo de captura usado pelo ponto de extremidade de mídia.|
 |captureNotFunctioningEventRatio|Duplo|Fração da chamada que o ponto de extremidade de mídia detectou o dispositivo de captura não estava funcionando corretamente.|
 |cpuInsufficentEventRatio|Duplo|Fração da chamada que o ponto de extremidade de mídia detectou os recursos de CPU disponíveis eram insuficientes e causavam uma qualidade ruim do áudio enviado e recebido.|
 |deviceClippingEventRatio|Duplo|Fração da chamada que o ponto de extremidade de mídia detectou recorte no áudio capturado que causou má qualidade do áudio que está sendo enviado.|
@@ -36,7 +36,7 @@ Representa informações sobre um dispositivo (microfone, alto-falante, câmera 
 |receivedNoiseLevel|Int32|Nível médio de energia do áudio recebido para áudio classificado como ruído mono ou canal esquerdo de ruído estéreo pelo ponto de extremidade de mídia.|
 |receivedSignalLevel|Int32|Nível médio de energia do áudio recebido para áudio classificado como fala mono ou canal esquerdo de fala estéreo pelo ponto de extremidade de mídia.|
 |renderDeviceDriver|Cadeia de caracteres|Nome do driver de dispositivo de renderização usado pelo ponto de extremidade de mídia.|
-|renderDeviceName|String|Nome do dispositivo de renderização usado pelo ponto de extremidade de mídia.|
+|renderDeviceName|Cadeia de caracteres|Nome do dispositivo de renderização usado pelo ponto de extremidade de mídia.|
 |renderMuteEventRatio|Duplo|Fração da chamada em que o ponto de extremidade de mídia detectou a renderização do dispositivo é silenciada.|
 |renderNotFunctioningEventRatio|Duplo|Fração da chamada que o ponto de extremidade de mídia detectou o dispositivo de renderização não estava funcionando corretamente.|
 |renderZeroVolumeEventRatio|Duplo|Fração da chamada que o volume de renderização do dispositivo detectado do ponto de extremidade de mídia está definida como 0.|

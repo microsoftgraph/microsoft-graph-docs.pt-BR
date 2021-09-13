@@ -1,16 +1,16 @@
 ---
 title: Atribiur tokenLifetimePolicy
 description: Atribua um tokenLifetimePolicy a um aplicativo.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: sureshja
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 1d32530e70e1e08bda153ec83c459722eee0da1b
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: d28121acb9930881c0a61d4bea63c39432e076b0
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50131765"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59063577"
 ---
 # <a name="assign-tokenlifetimepolicy"></a>Atribiur tokenLifetimePolicy
 
@@ -18,17 +18,17 @@ Namespace: microsoft.graph
 
 
 
-Atribua [um tokenLifetimePolicy](../resources/tokenlifetimepolicy.md) a um [aplicativo.](../resources/application.md)
+Atribua [um tokenLifetimePolicy](../resources/tokenlifetimepolicy.md) a um [aplicativo](../resources/application.md).
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegada (conta corporativa ou de estudante)     | Policy.Read.All and Application.ReadWrite.All, Policy.ReadWrite.ApplicationConfiguration and Application.ReadWrite.All |
+| Delegada (conta corporativa ou de estudante)     | Policy.Read.All e Application.ReadWrite.All, Policy.ReadWrite.ApplicationConfiguration e Application.ReadWrite.All |
 | Delegada (conta pessoal da Microsoft) | Sem suporte. |
-| Aplicativo                            | Policy.Read.All and Application.ReadWrite.OwnedBy, Policy.Read.All and Application.ReadWrite.All, Policy.ReadWrite.ApplicationConfiguration and Application.ReadWrite.OwnedBy, Policy.ReadWrite.ApplicationConfiguration and Application.ReadWrite.All |
+| Aplicativo                            | Policy.Read.All e Application.ReadWrite.OwnedBy, Policy.Read.All e Application.ReadWrite.All, Policy.ReadWrite.ApplicationConfiguration e Application.ReadWrite.OwnedBy, Policy.ReadWrite.ApplicationConfiguration e Application.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -47,7 +47,7 @@ POST /applications/{id}/tokenLifetimePolicies/$ref
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, fornece o identificador do objeto [tokenLifetimePolicy](../resources/tokenlifetimepolicy.md) (usando uma propriedade) que deve ser atribuído ao aplicativo ou entidade `@odata.id` de serviço.
+No corpo da solicitação, fornece o identificador do [objeto tokenLifetimePolicy](../resources/tokenlifetimepolicy.md) (usando uma propriedade) que deve ser atribuído ao aplicativo ou `@odata.id` entidade de serviço.
 
 ## <a name="response"></a>Resposta
 

@@ -2,15 +2,15 @@
 title: Listar turnos
 description: Obter a lista de turnos em um cronograma.
 author: akumar39
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 94b5a2d2f1d54ba387673f1b7b2cbb2475a53832
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 0722e49584547632d0885b74f7c3408946ad692b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52053878"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59019724"
 ---
 # <a name="list-shifts"></a>Listar turnos
 
@@ -24,8 +24,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Schedule.Read.All, Group.Read.All,Schedule.ReadWrite.All, Group.ReadWrite.All    |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegada (conta corporativa ou de estudante) | Schedule.Read.All, Group.Read.All,Schedule.ReadWrite.All, Group.ReadWrite.All    |
+|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Schedule.Read.All, Schedule.ReadWrite.All |
 
 > **Observação**: esta API oferece transporte a permissões de administrador. Os administradores globais podem acessar grupos dos que não são membros.

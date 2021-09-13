@@ -2,15 +2,15 @@
 author: daspek
 title: Tipo de recurso itemActivityTimeSet
 description: O objeto itemActionSet fornece informações sobre uma atividade que ocorreu em um item.
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 1e69ac8c539dcce56f369adec3d0e634afeeece06cc0b043b48e10f681d12ad8
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: be02959545592232ec9269df6613734c78f7862c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54130076"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59084340"
 ---
 # <a name="itemactivitytimeset-resource-type"></a>Tipo de recurso itemActivityTimeSet
 

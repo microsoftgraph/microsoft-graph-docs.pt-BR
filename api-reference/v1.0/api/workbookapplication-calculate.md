@@ -1,16 +1,16 @@
 ---
 title: 'workbookApplication: calculate'
 description: Recalcula todas as pastas de trabalho abertas no Excel no momento.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: grangeryy
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: a63de9bf28697b328f6a398201208fae7e207975
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: b515ff43a6f559eddfe67cb28e3048db9f635b6c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52787081"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59113844"
 ---
 # <a name="workbookapplication-calculate"></a>workbookApplication: calculate
 

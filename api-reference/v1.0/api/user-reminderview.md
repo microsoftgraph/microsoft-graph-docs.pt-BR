@@ -2,15 +2,15 @@
 title: 'user: reminderView'
 description: 'Retorne uma lista de lembretes de calendário nas horas de início e término especificadas. '
 author: harini84
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 538a6b5fbe93365f489d12a7ebd56700542b673a
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 4e2ae1d5982b70c36adc024b45306d6e37920cf6
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52038695"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59109700"
 ---
 # <a name="user-reminderview"></a>user: reminderView
 
@@ -86,7 +86,7 @@ GET https://graph.microsoft.com/v1.0/me/reminderView(startDateTime='2017-06-05T1
 
 
 ##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto de resposta exibido aqui pode ser encurtado para legibilidade.
+Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser reduzido para facilitar a leitura.
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -1,16 +1,16 @@
 ---
 title: Obter educationClass
 description: Recuperar uma classe do sistema
-localization_priority: Normal
+ms.localizationpriority: medium
 author: mlafleur
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 76393b5d6e80fc00a78c0f4344ee4d567c880afe
-ms.sourcegitcommit: b8b0e88b3ba9a434dc45f5ab640cb46f66fae299
+ms.openlocfilehash: 7fc653b85ed40f059ed46d2b858155f8db5efb87
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "52474986"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59114661"
 ---
 # <a name="get-educationclass"></a>Obter educationClass
 
@@ -23,7 +23,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) |  EduRoster.ReadBasic  |
+|Delegada (conta corporativa ou de estudante) |  EduRoster.ReadBasic  |
 |Delegado (conta pessoal da Microsoft) |  Sem suporte  |
 |Aplicativo | EduRoster.Read.All, EduRoster.ReadWrite.All | 
 

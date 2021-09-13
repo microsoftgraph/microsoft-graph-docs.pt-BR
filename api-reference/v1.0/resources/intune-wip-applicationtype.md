@@ -2,15 +2,15 @@
 title: Tipo de número applicationType
 description: Possíveis tipos de Aplicativo
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 07fa1d6d4c5b217fed2e40586c7e80879ba86b235e1e438ed90a5c964324d7f1
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 176c8c88f9b488308c1a4b4f48058a32992d21a1
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54202248"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59078760"
 ---
 # <a name="applicationtype-enum-type"></a>Tipo de número applicationType
 

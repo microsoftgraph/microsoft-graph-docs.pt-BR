@@ -2,15 +2,15 @@
 title: Criar contato
 description: Adicione um contato na pasta de Contatos raiz ou no ponto de extremidade de contatos de outra pasta de contatos.
 author: kevinbellinger
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 318f72b56c057c13cb4e3a96a969a164f97b3007
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 55acfc5e144f7d76bf42f847cd6a3828079dd4a0
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52031489"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59099179"
 ---
 # <a name="create-contact"></a>Criar contato
 
@@ -95,7 +95,7 @@ Content-type: application/json
 No corpo da solicitação, forneça uma representação JSON do objeto [contact](../resources/contact.md).
 
 ##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto de resposta exibido aqui pode ser encurtado para legibilidade.
+Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser reduzido para facilitar a leitura.
 <!-- {
   "blockType": "response",
   "truncated": true,

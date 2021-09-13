@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso apiApplication
 description: Especifica configurações para um aplicativo de API Web.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: 2d1b6df789f5ea472f60210a9f290f968c10a6bc1ccb7f3d481dc5ce4e6dbad8
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: ecd0c4991f1f81e1e9623fec7d43038e663f7dbd
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54223736"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59094482"
 ---
 # <a name="apiapplication-resource-type"></a>Tipo de recurso apiApplication
 
@@ -22,7 +22,7 @@ Especifica configurações para um aplicativo que implementa uma API Web.
 
 | Propriedade | Tipo | Descrição |
 |:---------------|:--------|:----------|
-|acceptMappedClaims| Booliano | Quando `true` , permite que um aplicativo use o mapeamento de declarações sem especificar uma chave de assinatura personalizada. |
+|acceptMappedClaims| Boolean | Quando `true` , permite que um aplicativo use o mapeamento de declarações sem especificar uma chave de assinatura personalizada. |
 |knownClientApplications| Coleção de GUIDs |Usado para o consentimento em comum se você tiver uma solução que contenha duas partes: um aplicativo cliente e um aplicativo de API Web personalizado. Se você definir a appID do aplicativo cliente para esse valor, o usuário só consente uma vez no aplicativo cliente. O Azure AD sabe que consentir com o cliente significa consentir implicitamente a API da Web e provisionar automaticamente as entidades de serviço para ambas as APIs ao mesmo tempo. Tanto o cliente quanto o aplicativo api web devem ser registrados no mesmo locatário.|
 |oauth2PermissionScopes| coleção [permissionScope](permissionscope.md) | A definição das permissões delegadas expostas pela API web representada pelo registro desse aplicativo. Essas permissões delegadas podem ser solicitadas por um aplicativo cliente e podem ser concedidas por usuários ou administradores durante o consentimento. As permissões delegadas às vezes são conhecidas como escopos OAuth 2.0. |
 |preAuthorizedApplications| [coleção preAuthorizedApplication](preauthorizedapplication.md) | Lista os aplicativos cliente pré-autorizados com as permissões delegadas especificadas para acessar as APIs desse aplicativo. Os usuários não precisam consentir com nenhum aplicativo pré-autorizado (para as permissões especificadas). No entanto, quaisquer permissões adicionais não listadas em preAuthorizedApplications (solicitadas por meio do consentimento incremental, por exemplo) exigirão o consentimento do usuário. |

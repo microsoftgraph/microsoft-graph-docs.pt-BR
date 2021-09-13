@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso fileSecurityState
 description: Contém informações sobre o arquivo (não processo) relacionado ao alerta.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: preetikr
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: ac694c40e2f8a0a126d7849cf0131f4955af27d9e96aab73c30ead2d20ad42e1
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 2db9d028c6a1550886a956bbfaad3bb3141f3141
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54218720"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59078858"
 ---
 # <a name="filesecuritystate-resource-type"></a>Tipo de recurso fileSecurityState
 
@@ -25,7 +25,7 @@ Contém informações sobre o arquivo (não processo) relacionado ao alerta.
 |fileHash|[fileHash](filehash.md)|Tipo complexo que contém hashes de arquivo (criptográficos e sensíveis ao local).|
 |nome|Cadeia de caracteres|Nome do arquivo (sem caminho).|
 |caminho|String|Caminho completo do arquivo/imageFile.|
-|riskScore|Cadeia de caracteres|Pontuação de risco gerada/calculada pelo provedor do arquivo de alerta. Intervalo de valores recomendado de 0 a 1, que equivale a uma porcentagem.|
+|riskScore|String|Pontuação de risco gerada/calculada pelo provedor do arquivo de alerta. Intervalo de valores recomendado de 0 a 1, que equivale a uma porcentagem.|
 
 ## <a name="json-representation"></a>Representação JSON
 

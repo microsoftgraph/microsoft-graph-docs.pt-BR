@@ -2,15 +2,15 @@
 title: tipo de recurso participante
 description: Representa o tipo de participante.
 author: ananmishr
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 3bada1be911bda02e49229a20793289b61934f74
-ms.sourcegitcommit: 1e9a53e7b8e67349288f5cfbabe8355de83817b0
+ms.openlocfilehash: a10b3d532ef49904d1fd09cef6690584dfce7e12
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/17/2021
-ms.locfileid: "58367139"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59104079"
 ---
 # <a name="participant-resource-type"></a>tipo de recurso participante
 
@@ -24,7 +24,7 @@ Representa um participante em uma chamada.
 |:-------------------------------------------------------|:------------------------------------------------------------|:-----------------------------------------------|
 | [Listar participante](../api/participant-get.md)          | [participante](participant.md)                               | Recupere uma lista de **objetos** participantes na chamada. |
 | [Obter participante](../api/participant-get.md)           | [participante](participant.md)                               | Ler propriedades do **objeto** participante. |
-| [Excluir participante](../api/participant-delete.md)         | Nenhum   | Exclua um participante em uma chamada.                  |
+| [Excluir participante](../api/participant-delete.md)         | None   | Exclua um participante em uma chamada.                  |
 | [Convidar](../api/participant-invite.md)                 | [inviteParticipantsOperation](../resources/inviteparticipantsoperation.md)                        | Convide um participante para a chamada.              |
 | [Ativar mudo para participante](../api/participant-mute.md)         | [muteParticipantOperation](muteparticipantoperation.md)     | Silenciar um participante em uma chamada.                  |
 

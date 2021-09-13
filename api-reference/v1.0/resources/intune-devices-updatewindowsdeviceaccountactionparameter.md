@@ -2,15 +2,15 @@
 title: Tipo de recurso updateWindowsDeviceAccountActionParameter
 description: Ainda não documentado
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: e13d8681d1830a50f5857f239e962738d452a1265f1781041d1a75a561bca6f5
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 19c5f8ff2da416892edffbef3dee4684c6459b25
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54189538"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59118184"
 ---
 # <a name="updatewindowsdeviceaccountactionparameter-resource-type"></a>Tipo de recurso updateWindowsDeviceAccountActionParameter
 

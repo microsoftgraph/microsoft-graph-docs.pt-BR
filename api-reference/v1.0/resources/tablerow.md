@@ -2,15 +2,15 @@
 title: Tipo de recurso TableRow
 description: Representa uma linha em uma tabela.
 author: lumine2008
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 0b9d9d07a6c2382194458913217b414a30000150bf61a2e4771cb9e8a27d53b8
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 113e81f4730f093962a5ec5e0a2a2f19aa6fc57e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54189272"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59134392"
 ---
 # <a name="tablerow-resource-type"></a>Tipo de recurso TableRow
 
@@ -26,7 +26,7 @@ Representa uma linha em uma tabela.
 |[Get TableRow](../api/tablerow-get.md) | [WorkbookTableRow](tablerow.md) |Leia as propriedades e os relacionamentos do objeto tableRow.|
 |[Update](../api/tablerow-update.md) | [WorkbookTableRow](tablerow.md)  |Atualize o objeto TableRow. |
 |[Range](../api/tablerow-range.md)|[Range](range.md)|Retorna o objeto de intervalo associado a toda a linha.|
-|[Delete](../api/tablerow-delete.md)|None|Exclui a linha da tabela.|
+|[Delete](../api/tablerow-delete.md)|Nenhum(a)|Exclui a linha da tabela.|
 |[List](../api/tablerow-list.md) | Conjunto [WorkbookTableRow](tablerow.md) |Obtenha uma coleção de objetos tableRow. |
 |[Itemat](../api/tablerowcollection-itemat.md)|[WorkbookTableRow](tablerow.md)|Obtém uma linha com base em sua posição na coleção.|
 |[Add](../api/tablerowcollection-add.md)|[WorkbookTableRow](tablerow.md)|Adiciona uma nova linha à tabela.|

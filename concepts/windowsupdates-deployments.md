@@ -2,15 +2,15 @@
 title: Implantações no serviço de implantação Windows Atualização para Empresas
 description: As implantações são a base do serviço de implantação Windows Update for Business. Por meio de uma implantação, você pode direcionar um conjunto de dispositivos para receber conteúdo específico do Windows Update, como uma atualização de software.
 author: Alice-at-Microsoft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: w10
 doc_type: conceptualPageType
-ms.openlocfilehash: 59cceb1db6bf3d9b045d2a734ae25561ce68fedfa50e7736fa4461c667b1b05f
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 550879fed2ea694f4c7c8c9dd5470c2eeace446b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54225626"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59117575"
 ---
 # <a name="deployments-in-the-windows-update-for-business-deployment-service"></a>Implantações no serviço de implantação Windows Atualização para Empresas
 
@@ -66,7 +66,7 @@ As implantações se movem pelos estados de ciclo de vida, conforme descrito na 
 
 ### <a name="transitions"></a>Transitions
 
-| Transition                     | Condição                                |
+| Transition                     | Condition                                |
 |--------------------------------|------------------------------------------|
 | `scheduled` → `offering`           | A condição de agendamento é atendida.             |
 | `offering` → `scheduled`           | A condição de agendamento não é atendida.         |

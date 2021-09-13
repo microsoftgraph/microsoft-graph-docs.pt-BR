@@ -2,15 +2,15 @@
 title: Tipo de recurso messageRulePredicates
 description: Representa o conjunto de condições e exceções disponíveis para uma regra.
 author: abheek-das
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 0b4fe403387cb59b653e4cb5dfde24f0a8d781fcdc8b33344d91153031c01b56
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 483c2a3db82c8412cbdf11848dac24e96e6460d6
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54178188"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59134560"
 ---
 # <a name="messagerulepredicates-resource-type"></a>Tipo de recurso messageRulePredicates
 

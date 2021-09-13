@@ -1,16 +1,16 @@
 ---
 title: Relatórios de uso da caixa de correio
 description: Use os relatórios de uso da caixa de correio para obter informações sobre usuários com uma caixa de correio e seu nível de atividade, que é principalmente baseado em emails enviados e recebidos. Você também pode conferir a quantidade de armazenamento que cada caixa postal consome e quantas caixas de correio estão se aproximando das cotas de armazenamento.
-localization_priority: Priority
+ms.localizationpriority: high
 author: sarahwxy
 ms.prod: reports
 doc_type: conceptualPageType
-ms.openlocfilehash: 0f7f516fcfd1c018f53d0d34cb4c0374cf93b44d08e59f1ab0e0d3471166dfbc
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 4f23023026160d774c3994044334b79f8b9b7c39
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54223358"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59134609"
 ---
 # <a name="mailbox-usage-reports"></a>Relatórios de uso da caixa de correio
 

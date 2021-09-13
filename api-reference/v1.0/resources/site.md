@@ -2,15 +2,15 @@
 author: JeremyKelley
 title: Recurso do site
 description: O recurso do site fornece metadados e relações para um site do SharePoint.
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: b0ce021bbc07170879a11cab2d23a66efc45b82d9881d5157bcc9d44d34549e0
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: a7e6770fe6fb721772c12fdccb2420247ef4a658
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54126274"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59123045"
 ---
 # <a name="site-resource"></a>Recurso do site
 
@@ -84,18 +84,20 @@ O identificador `root` sempre faz referência ao site raiz de um determinado des
   
 ## <a name="relationships"></a>Relações
 
-| Relação      | Tipo                             | Descrição
-|:------------------|:---------------------------------|:----------------------
-| **analytics**     | [itemAnalytics][] resource       | Análise sobre as atividades de modo de exibição que ocorreram no site.
-| **columns**       | Collection([columnDefinition][]) | O conjunto de definições de coluna reutilizáveis entre listas nesse site.
-| **contentTypes**  | Collection([contentType][])      | O conjunto de tipos de conteúdo definido para esse site.
-| **drive**         | [drive][]                        | A unidade padrão (biblioteca de documentos) desse site.
-| **drives**        | Collection([drive][])            | O conjunto de unidades (bibliotecas de documentos) nesse site.
-| **items**         | Collection([baseItem][])         | Usado para lidar com qualquer item contido neste site. Não é possível enumerar este conjunto.
-| **lists**         | Collection([list][])             | O conjunto de listas neste site.
-| **permissions**   | Coleção ([permissão][])         | As permissões associadas ao site. Nulas.
-| **sites**         | Collection([site][])             | O conjunto dos subsites neste site.
-| **onenote**       | [onenote][]                      | Chama o serviço OneNote para operações relacionadas ao bloco de anotações.
+| Relação      | Tipo                                             | Descrição
+|:------------------|:-------------------------------------------------|:----------------------
+| **analytics**     | [itemAnalytics][] resource                       | Análise sobre as atividades de modo de exibição que ocorreram no site.
+| **columns**       | Collection([columnDefinition][])                 | O conjunto de definições de coluna reutilizáveis entre listas nesse site.
+| **contentTypes**  | Collection([contentType][])                      | O conjunto de tipos de conteúdo definido para esse site.
+| **drive**         | [drive][]                                        | A unidade padrão (biblioteca de documentos) desse site.
+| **drives**        | Collection([drive][])                            | O conjunto de unidades (bibliotecas de documentos) nesse site.
+| **items**         | Collection([baseItem][])                         | Usado para tratar de qualquer item contido neste site. Esta coleção não pode ser enumerada.
+| **lists**         | Collection([list][])                             | O conjunto de listas neste site.
+| **onenote**       | [onenote][]                                      | Chama o serviço OneNote para operações relacionadas ao bloco de anotações.
+| **permissions**   | Coleção ([permissão][])                       | As permissões associadas ao site. Nulas.
+| **sites**         | Collection([site][])                             | O conjunto dos subsites neste site.
+| **LojaDeTermos**     | [microsoft.graph.termStore.store]                | O termStore padrão neste site.
+| **termosStores**    | Coleção([microsoft.graph.termStore.store])    | A coleção de lojas de termos sob este site.
 
 [columnDefinition]: columndefinition.md
 [baseItem]: baseitem.md
@@ -107,6 +109,7 @@ O identificador `root` sempre faz referência ao site raiz de um determinado des
 [permissão]: permission.md
 [site]: site.md
 [onenote]: onenote.md
+[microsoft.graph.termStore.store]: termstore-store.md
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -149,6 +152,8 @@ O recurso **site** é derivado de [**baseItem**](baseitem.md) e herda propriedad
   "sites": [ { "@odata.type": "microsoft.graph.site"} ],
   "columns": [ { "@odata.type": "microsoft.graph.columnDefinition" }],
   "onenote": { "@odata.type": "microsoft.graph.onenote"},
+  "termStore": { "@odata.type": "microsoft.graph.termStore.store" },
+  "termStores": [ { "@odata.type": "microsoft.graph.termStore.store" } ],
 
   /* inherited from baseItem */
   "name": "string",

@@ -2,15 +2,15 @@
 title: Tipo de número appLockerApplicationControlType
 description: Valores possíveis de Tipos de Controle de Aplicativo do AppLocker
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 18f292cf15899ab8efe1c074a4d033dca99ad98f54cfaab1050cdc938c2d503c
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: a7b29aba139162b76a9694e7d65d1bcdcd815e88
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54197076"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59136492"
 ---
 # <a name="applockerapplicationcontroltype-enum-type"></a>Tipo de número appLockerApplicationControlType
 

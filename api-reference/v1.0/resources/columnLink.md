@@ -2,16 +2,16 @@
 author: daspek
 ms.date: 09/12/2017
 title: ColumnLink
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Um columnLink em um contentType anexa um columnDefinition de site para esse tipo de conteúdo.
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: c14edb1baf1b586e193f26df60f74d6d9b846aeae3f0eb2a4d6eb2422581313a
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 1ad2a7397c18ad8be17a5e5bb27c25ecc84dffa6
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54124518"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59113718"
 ---
 # <a name="columnlink-resource-type"></a>Tipo de recurso ColumnLink
 
@@ -40,7 +40,7 @@ Aqui está uma representação JSON de um recurso **columnLink**.
 
 | Nome da propriedade | Tipo   | Descrição
 |:--------------|:-------|:----------------------------------------------------
-| **id**        | string | O identificador exclusivo da coluna.
+| **id**        | cadeia de caracteres | O identificador exclusivo da coluna.
 | **name**      | string | O nome da coluna desse tipo de conteúdo.
 
 <!-- {

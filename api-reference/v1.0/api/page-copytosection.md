@@ -1,16 +1,16 @@
 ---
 title: 'page: copyToSection'
 description: Copia uma página para uma seção específica.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: jewan-microsoft
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: c9bdd57eaa929c47ed6dfe5429086e0f78760e06
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: c264f42458973daf452c780ff868b38602fd7def
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52788063"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59104920"
 ---
 # <a name="page-copytosection"></a>page: copyToSection
 

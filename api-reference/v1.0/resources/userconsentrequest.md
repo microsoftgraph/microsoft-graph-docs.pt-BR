@@ -2,15 +2,15 @@
 title: Tipo de recurso userConsentRequest
 description: Uma solicitação criada por um usuário para usar um aplicativo que exige acesso a dados organizacionais que o usuário não tem autorização para conceder consentimento a si mesmo.
 author: psignoret
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 0b7c69fb636efae5bd6e1a4ca71c9ba1b2943c20346262de20017ddea3da5849
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: f4fd22b99e0d55a4caed31daed9d35e1ff345d6e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54196499"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59083954"
 ---
 # <a name="userconsentrequest-resource-type"></a>Tipo de recurso userConsentRequest
 
@@ -36,7 +36,7 @@ Método|Tipo de retorno|Descrição|
 |createdDateTime|DateTimeOffset|A data e a hora em que a solicitação foi criada. As informações de data e hora usam o formato ISO 8601 e estão sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`. Suporta `$filter` ( `eq` somente) e `$orderby` .|
 |customData|String|Campo de texto livre para definir quaisquer dados personalizados para a solicitação de consentimento do usuário. Não usado.|
 |id|Cadeia de caracteres|Identificador da solicitação. |
-|motivo|Cadeia de caracteres|A justificativa do usuário para exigir acesso ao aplicativo. Suporta `$filter` ( `eq` somente) e `$orderby` .  |
+|motivo|String|A justificativa do usuário para exigir acesso ao aplicativo. Suporta `$filter` ( `eq` somente) e `$orderby` .  |
 |status|String|O status da solicitação de consentimento do aplicativo do usuário. Os valores possíveis são: `Initializing` `InProgress` , e `Completed` . Suporta `$filter` ( `eq` somente) e `$orderby` . |
 
 ## <a name="relationships"></a>Relações

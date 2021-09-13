@@ -1,16 +1,16 @@
 ---
 title: Criar certificateBasedAuthConfiguration
 description: Use essa API para criar um novo certificateBasedAuthConfiguration.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: adimitui
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 061b8ec1fa3e0ef9fefbc326854bdb4030b27393
-ms.sourcegitcommit: f99dc2b6c8b4cb6f9f74cd780dccc47a2bccfaa6
+ms.openlocfilehash: 98bf11a685980a4976999369b18767c05c54d243
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2021
-ms.locfileid: "58667763"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59131025"
 ---
 # <a name="create-certificatebasedauthconfiguration"></a>Criar certificateBasedAuthConfiguration
 
@@ -27,8 +27,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | Organization.ReadWrite.All |
-| Delegado (conta pessoal da Microsoft) | Sem suporte. |
+| Delegada (conta corporativa ou de estudante)     | Organization.ReadWrite.All |
+| Delegada (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo    | Organization.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP

@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso userIdentity
 description: No contexto de um log de auditoria do Azure AD, isso representa as informações do usuário que iniciaram ou foram afetadas por uma atividade de auditoria.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: dhanyahk
 ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: 37fe5dce01b14735b791ed86954afc25a6ea4bcf369227c4b99868b2ecf36b29
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 621574365bc8c14508eb87dc55df60f1fd9a3f08
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54230393"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59136296"
 ---
 # <a name="useridentity-resource-type"></a>Tipo de recurso userIdentity
 
@@ -22,8 +22,8 @@ No contexto de um log de auditoria do Azure AD, isso representa as informações
 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-| displayName | Cadeia de caracteres | Nome de exibição da identidade. Observe que isso pode nem sempre estar disponível ou atualizado.    |
-| id          | Cadeia de caracteres | Identificador exclusivo da identidade.  |
+| displayName | String | Nome de exibição da identidade. Observe que isso pode nem sempre estar disponível ou atualizado.    |
+| id          | String | Identificador exclusivo da identidade.  |
 | ipAddress   | Cadeia de caracteres| Indica o endereço IP do cliente usado pelo usuário executando a atividade (somente log de auditoria).|
 | userPrincipalName | Cadeia de caracteres  | O atributo userPrincipalName do usuário. |
 

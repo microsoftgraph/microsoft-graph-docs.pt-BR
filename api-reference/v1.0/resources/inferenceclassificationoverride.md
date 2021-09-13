@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso inferenceClassificationOverride
 description: Representa a substituição de um usuário para definir como classificar as mensagens recebidas de um remetente específico.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: abheek-das
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: f9a02528f9bb781e8dd1a6f842f8d5a429160706f8fb3a3da3073358653b38cb
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 652e01ea00bbca40f6ec3a7f685e636ef5aa4167
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54160062"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59118597"
 ---
 # <a name="inferenceclassificationoverride-resource-type"></a>Tipo de recurso inferenceClassificationOverride
 
@@ -24,13 +24,13 @@ Representa a substituição de um usuário para definir como classificar as mens
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
 |[Update](../api/inferenceclassificationoverride-update.md) | [inferenceClassificationOverride](inferenceclassificationoverride.md) |Altere o campo **ClassifyAs** de uma substituição conforme especificado. |
-|[Delete](../api/inferenceclassificationoverride-delete.md) | None |Exclua uma substituição especificada de acordo com sua ID. |
+|[Delete](../api/inferenceclassificationoverride-delete.md) | Nenhum(a) |Exclua uma substituição especificada de acordo com sua ID. |
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |classifyAs|inferenceClassificationType| Representa como classificar as mensagens recebidas de um remetente específico. Os valores possíveis são: `focused` , `other` .|
-|id|string| O identificador exclusivo da substituição. Somente leitura.|
+|id|cadeia de caracteres| O identificador exclusivo da substituição. Somente leitura.|
 |senderEmailAddress|[emailAddress](emailaddress.md)|As informações de endereço de email do remetente para quem a substituição é criada.|
 
 ## <a name="relationships"></a>Relações

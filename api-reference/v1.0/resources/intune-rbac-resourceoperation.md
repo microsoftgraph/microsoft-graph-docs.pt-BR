@@ -2,15 +2,15 @@
 title: Tipo de recurso resourceOperation
 description: Descreve o recurso resourceOperation (entidade) da API do Microsoft Graph (REST), que dá suporte a fluxos de trabalho do Intune relacionados ao controle de acesso baseado em função (RBAC).
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: c7990d6b988abb14871ea1c43a44e37341dd6c7f0dfa809c8ffcc6ae8e5c76c8
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 5ea5d6dfa4847877cbad6036c774e1e8c9d5385b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54243340"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59028874"
 ---
 # <a name="resourceoperation-resource-type"></a>Tipo de recurso resourceOperation
 

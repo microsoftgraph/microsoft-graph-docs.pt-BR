@@ -2,16 +2,16 @@
 author: kevinlam
 ms.date: 3/16/2018
 title: ItemPreviewInfo
-localization_priority: Normal
+ms.localizationpriority: medium
 description: O recurso itemPreviewInfo contém informações sobre como inserir uma visualização de um driveItem.
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: d6a3eaac24991c4c95da0dd4b4ae2640d6462f95c25b47d0fcbea6ff459962ec
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: e0a56b5129e67af8dc0ac7b360664eb31433d137
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54130048"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59084297"
 ---
 # <a name="itempreviewinfo-resource-type"></a>Tipo de recurso itemPreviewInfo
 
@@ -33,9 +33,9 @@ O **recurso itemPreviewInfo** contém informações sobre como inserir uma visua
 
 | Nome           | Tipo   | Descrição
 |:---------------|:-------|:---------------------------------------------------
-| getUrl         | string | URL adequada para a incorporação usando HTTP GET (iframes, etc.)
-| postUrl        | string | URL adequada para a incorporação usando HTTP POST (postagem de formulário, JS, etc.)
-| postParameters | string | Parâmetros POST a incluir se estiver usando postUrl
+| getUrl         | cadeia de caracteres | URL adequada para a incorporação usando HTTP GET (iframes, etc.)
+| postUrl        | cadeia de caracteres | URL adequada para a incorporação usando HTTP POST (postagem de formulário, JS, etc.)
+| postParameters | cadeia de caracteres | Parâmetros POST a incluir se estiver usando postUrl
 
 GetUrl, postUrl ou ambos podem ser retornados dependendo do estado atual de suporte para as opções especificadas.
 

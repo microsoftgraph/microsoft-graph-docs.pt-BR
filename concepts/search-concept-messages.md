@@ -2,14 +2,14 @@
 title: Usar a API Pesquisa da Microsoft no Microsoft Graph para pesquisar mensagens
 description: Você pode usar a API Pesquisa da Microsoft para pesquisar informações em mensagens de email, retornar mensagens classificadas por relevância e renderizar uma experiência de pesquisa dedicada.
 author: knightsu
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: search
-ms.openlocfilehash: 1edc75cab2192fd000a29e565869e2534ecf4032540fbe3073b1b2dccdd39d76
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: a4dadd4db51acf2e99e69d4d206526100187ba27
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54165515"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59103932"
 ---
 # <a name="use-the-microsoft-search-api-to-search-outlook-messages"></a>Usar a API Pesquisa da Microsoft para pesquisar Outlook mensagens
 

@@ -1,14 +1,14 @@
 ---
 title: Provedor de proxy
 description: O provedor de proxy permite que você use sua própria autenticação do lado do servidor com o microsoft Graph Toolkit.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: nmetulev
-ms.openlocfilehash: 9ce4a1def59a6bfa5dc8031f7ae1bcfd93c593ab
-ms.sourcegitcommit: c6f7a931a8d83ac54f577b7bec08237fd17ce51a
+ms.openlocfilehash: f545d39a14ac448fc926f5caa22a0b0c7aaab667
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58490389"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59126538"
 ---
 # <a name="proxy-provider"></a>Provedor de proxy
 

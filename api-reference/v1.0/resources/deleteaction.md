@@ -2,15 +2,15 @@
 author: daspek
 title: Tipo de recurso deleteAction
 description: O objeto deleteAction fornece informações sobre a exclusão de um item.
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: c57e9e430cb9f08ee4feca7345551a9a175c974c338d8a538c98a77b8ac5a32b
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: e11bf7783bc9c59fe5779c9605acbb4c9e1fb451
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54178482"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59104233"
 ---
 # <a name="deleteaction-resource-type"></a>Tipo de recurso deleteAction
 
@@ -27,7 +27,7 @@ A presença do recurso **deleteAction** em um [**itemActivity**][activity] indic
 | Nome da propriedade | Tipo   | Descrição
 |:--------------|:-------|:----------------------------------------------------
 | nome          | string | O nome do item que foi excluído.
-| objectType    | string | `File` ou `Folder` , dependendo do tipo do item excluído.
+| objectType    | cadeia de caracteres | `File` ou `Folder` , dependendo do tipo do item excluído.
 
 
 ## <a name="json-representation"></a>Representação JSON

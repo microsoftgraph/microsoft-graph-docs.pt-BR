@@ -1,16 +1,16 @@
 ---
 title: Obter authenticationMethod
 description: Recupere as propriedades e as relações de um objeto authenticationMethod.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: mmcla
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 898cf2d0532dfb9475acb69fe340169b262c78181d43207cc2f5493f41d3e61d
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: afbcdda1a1cb0458a385606eada73f5795d6ac12
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54212774"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59114775"
 ---
 # <a name="get-authenticationmethod"></a>Obter authenticationMethod
 
@@ -39,7 +39,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 | Aplicativo                            | UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All |
 
 Para cenários delegados em que um administrador está atuando em outro usuário, o administrador precisa de uma [das seguintes funções:](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
-* Administração global
+* Administrador global
 * Leitor global
 * Administrador de autenticação privilegiada
 * Administrador de autenticação (apenas vê números de telefone mascarados)

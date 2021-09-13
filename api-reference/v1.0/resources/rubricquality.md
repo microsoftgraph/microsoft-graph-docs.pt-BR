@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso rubricQuality
 description: Uma qualidade de uma rubrica.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: sharad-sharma-msft
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 6230732caf190bc255f63e7eee79af6971d3e4a805f1ead94332c13b6115555b
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: f75b873d37acfa23b7c60a9cd435948b73c0eb7a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54211847"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59117764"
 ---
 # <a name="rubricquality-resource-type"></a>Tipo de recurso rubricQuality
 
@@ -27,8 +27,8 @@ Consulte [educationRubric](educationrubric.md) para ver uma descrição da rela�
 |criteria|[Coleção rubricCriterion](rubriccriterion.md)|A coleção de critérios para essa qualidade rubrica.|
 |description|[itemBody](itembody.md)|A descrição dessa qualidade rubrica.|
 |displayName|Cadeia de caracteres|O nome dessa qualidade rubrica.|
-|qualityId|Cadeia de caracteres|A ID desse recurso.|
-|weight|Único|Se presente, um peso numérico para essa qualidade.  Os pesos devem adicionar até 100.|
+|qualityId|String|A ID desse recurso.|
+|weight|Simples|Se presente, um peso numérico para essa qualidade.  Os pesos devem adicionar até 100.|
 
 ## <a name="json-representation"></a>Representação JSON
 

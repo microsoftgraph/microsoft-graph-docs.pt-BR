@@ -2,15 +2,15 @@
 title: Adicionar membro à equipe.
 description: Adicionar um novo membro à equipe.
 author: nkramer
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 8fe8790ae52c159776ff09eabc46b3199a3ca1af
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: 9740cb4db3e65602d0041dc9c43c14430c9c88ae
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49872188"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59109987"
 ---
 # <a name="add-member-to-team"></a>Adicionar membro à equipe.
 Namespace: microsoft.graph

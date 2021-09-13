@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso implicitGrantSettings
 description: Especifica se esse aplicativo Web pode solicitar tokens usando o fluxo implícito OAuth 2.0. Propriedades separadas estão disponíveis para solicitar ID e acessar tokens como parte do fluxo implícito. Para habilitar o fluxo implícito, pelo menos uma das seguintes propriedades deve ser definida como true.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: bfe1e38dfdbdeffb81d34db0f68628c58a37421ee6da260be08e4c6f05c37015
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 2ccf78ded6c9fa482f5054e2734d369acf041b18
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54155131"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59118604"
 ---
 # <a name="implicitgrantsettings-resource-type"></a>Tipo de recurso implicitGrantSettings
 

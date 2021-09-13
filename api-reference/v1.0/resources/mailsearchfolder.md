@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso mailSearchFolder
 description: Um mailSearchFolder é uma pasta virtual na caixa de correio do usuário que contém todos os itens de email correspondentes aos critérios de pesquisa especificados. mailSearchFolder herda de mailFolder.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: abheek-das
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 85d64d007f8a74f1475156a48dd3c281c591678838ca19f4644b1df3eec4c038
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 077ba877c80987456278bec654b3622da2b1ecc3
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54141487"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59036127"
 ---
 # <a name="mailsearchfolder-resource-type"></a>Tipo de recurso mailSearchFolder
 
@@ -44,8 +44,8 @@ Quando uma pasta de pesquisa é excluída, seu aplicativo deve criar um novo rec
 | Propriedade | Tipo | Descrição |
 |:---------------|:--------|:----------|
 | isSupported | Booliano | Indica se uma pasta de pesquisa é editável usando APIs REST. |
-| includeNestedFolders | Booliano | Indica como a hierarquia de pastas de caixa de correio deve ser percorrido na pesquisa. `true` significa que uma pesquisa profunda deve ser feita para incluir pastas filho na hierarquia de cada pasta explicitamente especificada em **sourceFolderIds**. `false` significa uma pesquisa superficial de apenas cada uma das pastas explicitamente especificadas em **sourceFolderIds**. |
-| sourceFolderIds | String collection | As pastas de caixa de correio que devem ser mineradas. |
+| includeNestedFolders | Boolean | Indica como a hierarquia de pastas de caixa de correio deve ser percorrido na pesquisa. `true` significa que uma pesquisa profunda deve ser feita para incluir pastas filho na hierarquia de cada pasta explicitamente especificada em **sourceFolderIds**. `false` significa uma pesquisa superficial de apenas cada uma das pastas explicitamente especificadas em **sourceFolderIds**. |
+| sourceFolderIds | Coleção String | As pastas de caixa de correio que devem ser mineradas. |
 | filterQuery | Cadeia de caracteres | A consulta OData para filtrar as mensagens. |
 
 ## <a name="json-representation"></a>Representação JSON

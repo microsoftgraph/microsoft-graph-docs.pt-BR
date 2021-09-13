@@ -2,15 +2,15 @@
 title: Armazenamento de atualizações
 description: Atualize as propriedades de um objeto store.
 author: vishriv
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: taxonomy
 doc_type: apiPageType
-ms.openlocfilehash: b1c4e0f7b6993dd69a227957047b30e07914c37c
-ms.sourcegitcommit: 9b8abc940a68dac6ee5da105ca29800cb59775f6
+ms.openlocfilehash: 0ecdf18da98696edebef6eeb6574e86e43c2a23e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "58514865"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59015648"
 ---
 # <a name="update-store"></a>Armazenamento de atualizações
 Namespace: microsoft.graph.termStore
@@ -22,8 +22,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante) |TermStore.ReadWrite.All |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegada (conta corporativa ou de estudante) |TermStore.ReadWrite.All |
+|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Sem suporte. |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -50,7 +50,7 @@ A tabela a seguir mostra as propriedades que podem ser editadas para o [objeto s
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |defaultLanguageTag|Cadeia de caracteres|Idioma padrão do [microsoft.graph.termstore.store](../resources/termstore-store.md).|
-|languageTags|String collection|Idiomas disponíveis no [microsoft.graph.termstore.store](../resources/termstore-store.md).|
+|languageTags|Coleção String|Idiomas disponíveis no [microsoft.graph.termstore.store](../resources/termstore-store.md).|
 
 
 
@@ -62,6 +62,8 @@ Se tiver êxito, este método retornará um código de resposta e um `200 OK` ob
 
 ### <a name="request"></a>Solicitação
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_store"
@@ -76,6 +78,24 @@ Content-length: 133
   "defaultLanguageTag": "en-US"
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-store-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-store-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-store-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-store-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>Resposta
 >**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.

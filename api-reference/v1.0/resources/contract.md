@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso de contrato
 description: Representa uma parceria existente que o locatário parceiro tem com um locatário do cliente.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: adimitui
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 82ca68723aaefceaa2ed852bd663822bfb0830ab20a97d62e7b155f850671621
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: f909b2b861f2b0c6da8f5f3c9a918599922fbac6
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54243592"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59049545"
 ---
 # <a name="contract-resource-type"></a>Tipo de recurso de contrato
 
@@ -30,7 +30,7 @@ Namespace: microsoft.graph Representa uma parceria existente que o locatário pa
 |:---------------|:--------|:----------|
 |contractType|Cadeia de caracteres|Tipo de contrato. Os valores possíveis são:  `SyndicationPartner` , `BreadthPartner` , `ResellerPartner` . Confira mais na [tabela abaixo](#contracttype-values).|
 |customerId|Guid|O identificador exclusivo do locatário do cliente referenciado por essa parceria. Corresponde à propriedade id do recurso de organização do locatário do cliente. |
-|defaultDomainName|Cadeia de caracteres|Uma cópia do nome de domínio padrão do locatário do cliente. A cópia é feita quando a parceria com o cliente é estabelecida. Ele não será atualizado automaticamente se o nome de domínio padrão do locatário do cliente mudar.|
+|defaultDomainName|String|Uma cópia do nome de domínio padrão do locatário do cliente. A cópia é feita quando a parceria com o cliente é estabelecida. Ele não será atualizado automaticamente se o nome de domínio padrão do locatário do cliente mudar.|
 |displayName|Cadeia de caracteres|Uma cópia do nome de exibição do locatário do cliente. A cópia é feita quando a parceria com o cliente é estabelecida. Ele não será atualizado automaticamente se o nome de exibição do locatário do cliente mudar.|
 |id|String| O identificador exclusivo da parceria. Chave, somente leitura |
 

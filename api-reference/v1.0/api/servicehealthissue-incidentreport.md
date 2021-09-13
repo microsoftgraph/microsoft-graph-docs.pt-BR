@@ -2,15 +2,15 @@
 title: 'serviceHealthIssue: incidentReport'
 description: Forneça o documento PIR (Revisão pós-incidente) de um problema de serviço especificado para locatário.
 author: payiAzure
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: service-communications
 doc_type: apiPageType
-ms.openlocfilehash: 54fb15f72614bd3fecad6aec9b9de700b929f80f
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: b14b8deba65ac1aefba9d5af3d4ae1fd3e48b7a5
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58266135"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59113935"
 ---
 # <a name="servicehealthissue-incidentreport"></a>serviceHealthIssue: incidentReport
 Namespace: microsoft.graph
@@ -24,8 +24,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|ServiceHealth.Read.All|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Delegado (conta corporativa ou de estudante)|ServiceHealth.Read.All|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|ServiceHealth.Read.All|
 
 ## <a name="http-request"></a>Solicitação HTTP

@@ -2,15 +2,15 @@
 title: Atualizar telecomExpenseManagementPartner
 description: Atualizar as propriedades de um objeto telecomExpenseManagementPartner.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 36999d20d2d83f98432988d6996b9bd98c92ad433289946922ca168c8e7b0bb6
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: ed6660042cacdcb7123af897d16cc3d5faa9e5a5
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54155579"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59130563"
 ---
 # <a name="update-telecomexpensemanagementpartner"></a>Atualizar telecomExpenseManagementPartner
 
@@ -52,7 +52,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [telecom
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|String|O identificador exclusivo do parceiro TEM.|
-|displayName|String|Nome de exibição do parceiro TEM.|
+|displayName|Cadeia de caracteres|Nome de exibição do parceiro TEM.|
 |url|Cadeia de caracteres|URL do painel de controle administrativo do parceiro TEM, em que um administrador pode configurar o serviço TEM.|
 |appAuthorized|Booliano|Se aplicativo AAD do parceiro foi autorizado a acessar o Intune.|
 |enabled|Booliano|Se a conexão do Intune com o serviço TEM está habilitada ou desabilitada no momento.|

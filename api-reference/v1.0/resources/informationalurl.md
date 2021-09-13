@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso informationalUrl
 description: Informações de perfil básicas do aplicativo.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: e0c60cdde2d636321f3777b4b41bdf11bfe1da69d3303169f4fce1a3a71b3acc
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: c0f2fa7a71c4512336ada081bd65cd731b3d3165
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54178385"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59129884"
 ---
 # <a name="informationalurl-resource-type"></a>Tipo de recurso informationalUrl
 
@@ -26,7 +26,7 @@ Informações de perfil básicas do aplicativo.
 |marketingUrl|String| Link para a página de marketing do aplicativo. Por exemplo, https://www.contoso.com/app/marketing |
 |privacyStatementUrl|Cadeia de caracteres| Link para a declaração de privacidade do aplicativo. Por exemplo, https://www.contoso.com/app/privacy |
 |supportUrl|String| Link para a página de suporte do aplicativo. Por exemplo, https://www.contoso.com/app/support |
-|termsOfServiceUrl|Cadeia de caracteres| Link para a instrução de termos de serviço do aplicativo. Por exemplo, https://www.contoso.com/app/termsofservice |
+|termsOfServiceUrl|String| Link para a instrução de termos de serviço do aplicativo. Por exemplo, https://www.contoso.com/app/termsofservice |
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.

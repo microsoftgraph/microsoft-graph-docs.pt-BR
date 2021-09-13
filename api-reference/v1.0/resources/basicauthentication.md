@@ -2,15 +2,15 @@
 title: Tipo de recurso basicAuthentication
 description: Representa a configuração para o uso da autenticação básica em uma chamada de API.
 author: nickgmicrosoft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 361d7f98f2d594ab6193103f9a67b969cbfe6d0cb1b97cd229b89ba9449402e3
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 9749d179ffa33020b73747e46ed21add6eb9316d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54126673"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59019395"
 ---
 # <a name="basicauthentication-resource-type"></a>Tipo de recurso basicAuthentication
 

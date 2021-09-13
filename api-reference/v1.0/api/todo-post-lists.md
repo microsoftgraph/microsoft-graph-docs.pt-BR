@@ -1,29 +1,29 @@
 ---
 title: Criar todoTaskList
-description: Criar um novo objeto de listas.
+description: Crie um novo objeto lists.
 author: avijityadav
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 528afb009fe125e3dfac343edb622bb7f9c70b9c
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: 55870cb92aea78855844d8dd3bd3ae3ac2ef7bf0
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49873826"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59049813"
 ---
 # <a name="create-todotasklist"></a>Criar todoTaskList
 Namespace: microsoft.graph
 
-Criar um novo objeto de listas.
+Crie um novo objeto lists.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|Tasks.ReadWrite|
-|Delegado (conta pessoal da Microsoft)|Tasks.ReadWrite|
+|Delegada (conta corporativa ou de estudante)|Tasks.ReadWrite|
+|Delegada (conta pessoal da Microsoft)|Tasks.ReadWrite|
 |Aplicativo|Sem suporte|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -50,11 +50,11 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [todoTas
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|displayName|Cadeia de caracteres|Campo que indica o título da lista de tarefas.|
+|displayName|Cadeia de caracteres|Campo indicando o título da lista de tarefas.|
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um código de resposta e um `201 Created` [objeto todoTaskList](../resources/todotasklist.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código `201 Created` de resposta e um objeto [todoTaskList](../resources/todotasklist.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

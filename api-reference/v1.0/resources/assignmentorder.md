@@ -2,15 +2,15 @@
 title: Tipo de recurso assignmentOrder
 description: Define a ordem dos atributos que estão sendo coletados em um fluxo de usuários.
 author: jkdouglas
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 6a68d1442135f62d7debbbed972d2187faab92188185ff5f1c6d75908ec289bd
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 2b4b4519aab605978f7afba1d538d3c7007b3599
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54126694"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59123780"
 ---
 # <a name="assignmentorder-resource-type"></a>Tipo de recurso assignmentOrder
 
@@ -22,7 +22,7 @@ Usado para definir a ordem dos atributos que estão sendo coletados em um fluxo 
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|order|Coleção de cadeias de caracteres|Uma lista de identificadores de objeto identityUserFlowAttribute que determinam a ordem na qual os atributos devem ser coletados em um fluxo de usuário.|
+|order|Coleção String|Uma lista de identificadores de objeto identityUserFlowAttribute que determinam a ordem na qual os atributos devem ser coletados em um fluxo de usuário.|
 
 ## <a name="relationships"></a>Relações
 

@@ -2,15 +2,15 @@
 title: Excluir managedDeviceMobileAppConfigurationAssignment
 description: Exclui managedDeviceMobileAppConfigurationAssignment.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c10e553dfc0e09fc7b676feaf9f88817d914bf864037865967f8a6bb4c9fbb4b
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 186006b8a145ee48cbc2862ccddb909587a801f7
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54164059"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59130871"
 ---
 # <a name="delete-manageddevicemobileappconfigurationassignment"></a>Excluir managedDeviceMobileAppConfigurationAssignment
 

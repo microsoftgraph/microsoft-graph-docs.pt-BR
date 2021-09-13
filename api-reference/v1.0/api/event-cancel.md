@@ -2,15 +2,15 @@
 title: 'event: cancel'
 description: 'Esta ação permite que o organizador de uma reunião envie uma mensagem de cancelamento e cancele o evento. '
 author: harini84
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: e50fe07c186be9099c2a1f34f6a91982e0ee6436
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 9e12d34a422d9e9d60470ba1ba5a3970c503b61d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50441946"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59090597"
 ---
 # <a name="event-cancel"></a>event: cancel
 

@@ -1,16 +1,16 @@
 ---
 title: Update schemaExtension
 description: Atualizar propriedades na definição do esquemaExtension especificado.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: dkershaw10
 ms.prod: extensions
 doc_type: apiPageType
-ms.openlocfilehash: 4e3fbf4c9acd3512031ca29dd502e225ece2f133
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 2cfe89bb5ece2c691976e21a81bcbe33680713a1
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52788049"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59099270"
 ---
 # <a name="update-schemaextension"></a>Update schemaExtension
 
@@ -60,7 +60,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 |:---------------|:--------|:----------|
 |description|String|Descrição da extensão de esquema.|
 |properties|Coleção [extensionSchemaProperty](../resources/extensionschemaproperty.md)|A coleção de tipos e nomes de propriedades que compõem a definição da extensão de esquema. Somente alterações aditiva são permitidas. |
-|status|Cadeia de caracteres|O estado do ciclo de vida da extensão do esquema. O estado inicial após a criação **é InDevelopment**. As transições de estados possíveis **são de InDevelopment** **para Disponível** e **Disponível** **para Preterido**.|
+|status|String|O estado do ciclo de vida da extensão do esquema. O estado inicial após a criação **é InDevelopment**. As transições de estados possíveis **são de InDevelopment** **para Disponível** e **Disponível** **para Preterido**.|
 |targetTypes|Coleção de cadeias de caracteres|Conjunto de tipos Graph microsoft (que podem dar suporte a extensões) aos quais a extensão de esquema pode ser aplicada.  Somente alterações aditiva são permitidas.|
 
 ## <a name="response"></a>Resposta

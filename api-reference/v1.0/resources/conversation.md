@@ -1,16 +1,16 @@
 ---
 title: tipo de recurso conversation
 description: Uma conversa é uma coleção de threads e um thread contém postagens para este thread. Todos os threads e postagens em uma conversa compartilham o mesmo assunto.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: dkershaw10
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: b15d4fd7d3ed1688fd27fed7a101fb0d9aed37ba
-ms.sourcegitcommit: 9b8abc940a68dac6ee5da105ca29800cb59775f6
+ms.openlocfilehash: ff4788784a8895031795df40e96e50d9a6ba99df
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "58513605"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59113697"
 ---
 # <a name="conversation-resource-type"></a>tipo de recurso conversation
 

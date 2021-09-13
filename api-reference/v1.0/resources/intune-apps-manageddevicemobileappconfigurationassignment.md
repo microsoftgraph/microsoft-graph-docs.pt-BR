@@ -2,15 +2,15 @@
 title: Tipo de recurso managedDeviceMobileAppConfigurationAssignment
 description: Contém as propriedades usadas para atribuir uma configuração de aplicativo MDM a um grupo.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: eb3f4723c9ed9311115bfc88988af7f210b2c1e3a2a743ed373b67bca12339fa
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 54754ad74a93788c9eab83ae30950d1f76d84c87
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54216844"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59118492"
 ---
 # <a name="manageddevicemobileappconfigurationassignment-resource-type"></a>Tipo de recurso managedDeviceMobileAppConfigurationAssignment
 

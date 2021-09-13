@@ -2,15 +2,15 @@
 title: Tipo de recurso appConsentRequest
 description: Uma solicitação que representa uma coleção de objetos userConsentRequest para um aplicativo específico.
 author: psignoret
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: d6fae1c3914f901c24190b5c27b184b4c90aa5e67cfdc54416ec5e6f81703361
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: ef5eed15ad094e35d4db49ee4e34def6de5f2861
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54155222"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59094433"
 ---
 # <a name="appconsentrequest-resource-type"></a>Tipo de recurso appConsentRequest
 
@@ -31,8 +31,8 @@ Uma coleção de [objetos userConsentRequest](../resources/userconsentrequest.md
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |appDisplayName|Cadeia de caracteres|O nome de exibição do aplicativo para o qual o consentimento é solicitado. Obrigatório. Suporta `$filter` ( `eq` somente) e `$orderby` . |
-|appId|Cadeia de caracteres|O identificador do aplicativo. Obrigatório. Suporta `$filter` ( `eq` somente) e `$orderby` . |
-|id|Cadeia de caracteres|O identificador da solicitação de consentimento do aplicativo. Obrigatório.|
+|appId|String|O identificador do aplicativo. Obrigatório. Suporta `$filter` ( `eq` somente) e `$orderby` . |
+|id|String|O identificador da solicitação de consentimento do aplicativo. Obrigatório.|
 |pendingScopes|[Coleção appConsentRequestScope](../resources/appconsentrequestscope.md)|Uma lista de escopos pendentes aguardando aprovação. Obrigatório.|
 
 ## <a name="relationships"></a>Relações

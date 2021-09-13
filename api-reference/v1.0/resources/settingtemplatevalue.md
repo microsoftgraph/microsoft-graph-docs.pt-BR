@@ -1,16 +1,16 @@
 ---
 title: tipo de recurso settingTemplateValue
 description: Representa uma definição de configuração de modelo individual, incluindo o valor padrão para a configuração, se a configuração não for instautada.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: dkershaw10
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: f83eab2fb8cd0368338813f8a4c63309d43070a5e33f7e41aa2882d0e2308bbf
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 307161ccb879985942f0973b29fc4cbc370c230c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54228986"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59126650"
 ---
 # <a name="settingtemplatevalue-resource-type"></a>tipo de recurso settingTemplateValue
 
@@ -22,9 +22,9 @@ Representa uma definição de configuração de modelo individual, incluindo o v
 
 | Propriedade | Tipo | Descrição |
 |:---------------|:--------|:----------|
-|defaultValue|Cadeia de caracteres| Valor padrão para a configuração. |
-|description|String| Descrição da configuração. |
-|nome|Cadeia de caracteres| Nome da configuração. |
+|defaultValue|String| Valor padrão para a configuração. |
+|description|Cadeia de caracteres| Descrição da configuração. |
+|nome|String| Nome da configuração. |
 |tipo|Cadeia de caracteres| Tipo da configuração. |
 
 ### <a name="json-representation"></a>Representação JSON

@@ -1,16 +1,16 @@
 ---
 title: 'user: exportPersonalData'
 description: Envia uma solicitação de operação de política de dados, feita por um Administrador da Empresa para exportar dados de um usuário organizacional.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 56e42bbde7df9ea08405616eaab1342ac654e8eb
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 5a1a31684aadd660ff2d85a21db5a6a710cc629a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52787718"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59090002"
 ---
 # <a name="user-exportpersonaldata"></a>user: exportPersonalData
 
@@ -52,7 +52,7 @@ Se bem-sucedido, este método retorna um código de resposta `202 Accepted`. Nã
 
 | Nome       | Descrição|
 |:---------------|:----------|
-| Localização  | URL para verificar o status da solicitação. |
+| Local  | URL para verificar o status da solicitação. |
 | Retry-After  | Período de tempo em segundos. O fazedor de solicitações deve aguardar tanto tempo depois de enviar uma solicitação para verificar o status. |
 
 ## <a name="example"></a>Exemplo

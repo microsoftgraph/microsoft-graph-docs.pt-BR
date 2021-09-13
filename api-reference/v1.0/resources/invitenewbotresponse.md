@@ -2,15 +2,15 @@
 title: Tipo de recurso inviteNewBotResponse
 description: Contém uma resposta a uma solicitação para que uma notificação de participação do participante seja enviada novamente como uma notificação de chamada de entrada para o local desejado.
 author: yizhenww
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 79f7f4b00aa8e549090ec06b5a22b522b9d966af86df02caf40762b0f661246a
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: cca303fff854fddff56f6bc8ffd30160f390401c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54189475"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59084402"
 ---
 # <a name="invitenewbotresponse-resource-type"></a>Tipo de recurso inviteNewBotResponse
 

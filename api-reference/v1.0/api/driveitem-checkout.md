@@ -1,22 +1,22 @@
 ---
 author: learafa
-description: Confira um recurso driveItem para impedir que outras pessoas editem o documento e suas alterações sejam visíveis até que a documentação esteja marcada.
-title: 'driveItem: checkout'
-localization_priority: Normal
+description: Confira um recurso driveItem para impedir que outras pessoas editem o documento e suas alterações não se vejam visíveis até que o check-in documentado seja feito.
+title: 'driveItem: check-out'
+ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 60b9f5de40f925354a0513c1b467295bf24ccb85
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: fd10f488467047e4d5df3048b86fd98b21158f26
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48009895"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59063458"
 ---
-# <a name="driveitem-checkout"></a>driveItem: checkout
+# <a name="driveitem-checkout"></a>driveItem: check-out
 
 Namespace: microsoft.graph
 
-Confira um recurso **driveItem** para impedir que outras pessoas editem o documento e impedir que as alterações sejam visíveis até que seja [feito o check-in](driveitem-checkin.md)documentado.
+Confira um **recurso driveItem** para impedir que outras pessoas editem o documento e impedir que suas alterações se vejam visíveis até que o documento [seja feito check-in](driveitem-checkin.md).
 
 ## <a name="permissions"></a>Permissões
 
@@ -46,7 +46,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, a chamada de API retornará `204 No content` .
+Se tiver êxito, a chamada da API retornará `204 No content` .
 
 ## <a name="example"></a>Exemplo
 

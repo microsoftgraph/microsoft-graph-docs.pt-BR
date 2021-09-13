@@ -1,16 +1,16 @@
 ---
 title: Criar MailFolder
 description: Use essa API para criar uma nova pasta de email na pasta raiz da caixa de correio do usuário.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: a60f7166337933a3ee8897f9817c6adb148bd05c
-ms.sourcegitcommit: 276a13a37c3772689dfc71f7cd47586c9581f27d
+ms.openlocfilehash: c750b9ffe1c0bfdc40e96542aa881b2a5378e2bc
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52629396"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59099172"
 ---
 # <a name="create-mailfolder"></a>Criar MailFolder
 
@@ -47,7 +47,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação. 
 | Parâmetro    | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |displayName|Cadeia de caracteres|O nome de exibição da nova pasta.|
-|isHidden|Booliano|Indica se a nova pasta está oculta. O valor padrão é `false`. A configuração da propriedade é opcional. Depois de definido, você não pode atualizar essa propriedade. Confira mais informações em [Pastas de email ocultas](../resources/mailfolder.md#hidden-mail-folders)|
+|IsHidden|Booleano|Indica se a nova pasta está oculta. O valor padrão é `false`. A configuração da propriedade é opcional. Depois de definido, você não pode atualizar essa propriedade. Confira mais informações em [Pastas de email ocultas](../resources/mailfolder.md#hidden-mail-folders)|
 
 ## <a name="response"></a>Resposta
 

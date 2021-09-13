@@ -1,16 +1,16 @@
 ---
 title: Obter directoryAudit
 description: Descreve o método get do recurso directoryAudit (entidade) da API Graph Microsoft.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: SarahBar
 ms.prod: identity-and-access-reports
 doc_type: apiPageType
-ms.openlocfilehash: d29dbae8dbbc33f73d2d2cd4e61715fb5a36f5c5
-ms.sourcegitcommit: 5bb981b4853663354a566d4a4a5cbf288939e441
+ms.openlocfilehash: 766feedea9f514e9629adeac1930bdfe991b2b71
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "53579521"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59038048"
 ---
 # <a name="get-directoryaudit"></a>Obter directoryAudit
 
@@ -27,6 +27,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Delegada (conta corporativa ou de estudante) | AuditLog.Read.All e Directory.Read.All |
 |Delegado (conta pessoal da Microsoft) | Sem suporte   |
 |Aplicativo | AuditLog.Read.All e Directory.Read.All |
+
+> [!IMPORTANT]
+> Esta API tem um [problema conhecido](/graph/known-issues#azure-ad-activity-reports) e atualmente requer consentimento para as permissões **AuditLog.Read.All** e **Directory.Read.All.**
 
 ## <a name="http-request"></a>Solicitação HTTP
 

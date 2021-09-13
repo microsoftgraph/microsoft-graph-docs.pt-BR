@@ -1,16 +1,16 @@
 ---
 title: Obter organização
 description: Recupere as propriedades e os relacionamentos da organização autenticada no momento.
-localization_priority: Priority
+ms.localizationpriority: high
 author: adimitui
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 87298a3862e7f0e5806ee39fdf3c7fcc8aea52cc
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 843db125acc27476e30106e4ab92e0d3ab71a9bc
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52052198"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59079229"
 ---
 # <a name="get-organization"></a>Obter organização
 
@@ -94,7 +94,7 @@ GET https://graph.microsoft.com/v1.0/organization
 
 ##### <a name="response"></a>Resposta
 
-Veja a seguir um exemplo da resposta. Observação: o objeto de resposta exibido aqui pode ser encurtado para legibilidade.
+Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser reduzido para facilitar a leitura.
 <!-- {
   "blockType": "response",
   "truncated": true,

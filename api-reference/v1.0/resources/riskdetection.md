@@ -2,15 +2,15 @@
 title: Tipo de recurso riskDetection
 description: detecções de risco
 author: cloudhandler
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 855d8b34da6c8cc24bd01f448164dc0b0b68b521d40c78bc6a3b06b95235423c
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: a8818799c24bfffaf8ddb0494d5a13c45d2fb15e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54154879"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59103988"
 ---
 # <a name="riskdetection-resource-type"></a>Tipo de recurso riskDetection
 
@@ -35,7 +35,7 @@ Para obter mais informações sobre eventos de risco, [consulte Azure Active Dir
 |:---|:---|:---|
 |atividade|activityType|Indica o tipo de atividade ao qual o risco detectado está vinculado. . Os valores possíveis são: `signin`, `user`, `unknownFutureValue`.|
 |activityDateTime|DateTimeOffset|Data e hora em que a atividade arriscada ocorreu. O tipo DateTimeOffset representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1º de janeiro de 2014 é assim: `2014-01-01T00:00:00Z`|
-|additionalInfo|Cadeia de caracteres|Informações adicionais associadas à detecção de risco no formato JSON.|
+|additionalInfo|String|Informações adicionais associadas à detecção de risco no formato JSON.|
 |correlationId|Cadeia de caracteres|ID de correlação do sign-in associado à detecção de risco. Essa propriedade é `null` se a detecção de risco não estiver associada a uma login.|
 |detectedDateTime|DateTimeOffset|Data e hora em que o risco foi detectado. O tipo DateTimeOffset representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1º de janeiro de 2014 é assim: `2014-01-01T00:00:00Z`|
 |detectionTimingType|riskDetectionTimingType|Tempo do risco detectado (em tempo real/offline). Os valores possíveis são: `notDefined`, `realtime`, `nearRealtime`, `offline`, `unknownFutureValue`.|
@@ -50,7 +50,7 @@ Para obter mais informações sobre eventos de risco, [consulte Azure Active Dir
 |riskState|riskState|O estado de um usuário ou de login de risco detectado. Os valores possíveis são: `none`, `confirmedSafe`, `remediated`, `dismissed`, `atRisk`, `confirmedCompromised`, `unknownFutureValue`.|
 |source|Cadeia de caracteres|Origem da detecção de risco. Por exemplo, `activeDirectory`. |
 |tokenIssuerType|tokenIssuerType|Indica o tipo de emissor de token para o risco de entrar detectado. Os valores possíveis são: `AzureAD`, `ADFederationServices`, `UnknownFutureValue`.|
-|userDisplayName|Cadeia de caracteres|O nome UPN do usuário. |
+|userDisplayName|String|O nome UPN do usuário. |
 |userId|Cadeia de caracteres|ID exclusivo do usuário.|
 |userPrincipalName|String|O nome UPN do usuário.|
 
