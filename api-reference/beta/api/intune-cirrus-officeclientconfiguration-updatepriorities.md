@@ -1,16 +1,16 @@
 ---
 title: ação updatePriorities
 description: Atualizar prioridades de política.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: dougeby
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 9a52f44bdcba78376e72fbf019beb7f1f6efab15
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 50123c332cd32acf3c9af44bfc6a6468d44d2da2
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58787761"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59133804"
 ---
 # <a name="updatepriorities-action"></a>ação updatePriorities
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -53,7 +53,7 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta ação.
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|officeConfigurationPolicyIds|Coleção de cadeias de caracteres|Lista de ids de política de configuração do office|
+|officeConfigurationPolicyIds|String collection|Lista de ids de política de configuração do office|
 |officeConfigurationPriorities|Coleção Int32|Lista de prioridades de configuração do office|
 
 

@@ -2,15 +2,15 @@
 title: Tipo de recurso userExperienceAnalyticsMetric
 description: A métrica de análise de experiência do usuário contém a pontuação e unidades de uma métrica de uma categoria de anlaytics de experiência do usuário.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 62d2714b35ee746a4f2dcdd99e44cbf88e7e83a4
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 352a89293bb38e7f03bd7e83d003d465d052335b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58787262"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59125698"
 ---
 # <a name="userexperienceanalyticsmetric-resource-type"></a>Tipo de recurso userExperienceAnalyticsMetric
 
@@ -28,7 +28,7 @@ A métrica de análise de experiência do usuário contém a pontuação e unida
 |[Listar userExperienceAnalyticsMetrics](../api/intune-devices-userexperienceanalyticsmetric-list.md)|[Coleção userExperienceAnalyticsMetric](../resources/intune-devices-userexperienceanalyticsmetric.md)|Listar propriedades e relações dos [objetos userExperienceAnalyticsMetric.](../resources/intune-devices-userexperienceanalyticsmetric.md)|
 |[Obter userExperienceAnalyticsMetric](../api/intune-devices-userexperienceanalyticsmetric-get.md)|[userExperienceAnalyticsMetric](../resources/intune-devices-userexperienceanalyticsmetric.md)|Ler propriedades e relações do [objeto userExperienceAnalyticsMetric.](../resources/intune-devices-userexperienceanalyticsmetric.md)|
 |[Criar userExperienceAnalyticsMetric](../api/intune-devices-userexperienceanalyticsmetric-create.md)|[userExperienceAnalyticsMetric](../resources/intune-devices-userexperienceanalyticsmetric.md)|Crie um novo [objeto userExperienceAnalyticsMetric.](../resources/intune-devices-userexperienceanalyticsmetric.md)|
-|[Excluir userExperienceAnalyticsMetric](../api/intune-devices-userexperienceanalyticsmetric-delete.md)|Nenhum(a)|Exclui um [userExperienceAnalyticsMetric](../resources/intune-devices-userexperienceanalyticsmetric.md).|
+|[Excluir userExperienceAnalyticsMetric](../api/intune-devices-userexperienceanalyticsmetric-delete.md)|Nenhum|Exclui um [userExperienceAnalyticsMetric](../resources/intune-devices-userexperienceanalyticsmetric.md).|
 |[Atualizar userExperienceAnalyticsMetric](../api/intune-devices-userexperienceanalyticsmetric-update.md)|[userExperienceAnalyticsMetric](../resources/intune-devices-userexperienceanalyticsmetric.md)|Atualize as propriedades de [um objeto userExperienceAnalyticsMetric.](../resources/intune-devices-userexperienceanalyticsmetric.md)|
 
 ## <a name="properties"></a>Propriedades
@@ -36,7 +36,7 @@ A métrica de análise de experiência do usuário contém a pontuação e unida
 |:---|:---|:---|
 |id|Cadeia de caracteres|O identificador exclusivo da métrica de análise de experiência do usuário.|
 |valor|Duplo|O valor da métrica de análise da experiência do usuário.|
-|unidade|Cadeia de caracteres|A unidade da métrica de análise de experiência do usuário.|
+|unidade|Cadeia de Caracteres|A unidade da métrica de análise de experiência do usuário.|
 
 ## <a name="relationships"></a>Relações
 Nenhum

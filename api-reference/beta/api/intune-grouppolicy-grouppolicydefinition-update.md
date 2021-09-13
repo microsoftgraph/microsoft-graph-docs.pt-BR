@@ -2,15 +2,15 @@
 title: Atualizar groupPolicyDefinition
 description: Atualize as propriedades de um objeto groupPolicyDefinition.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: dca978af3e29d381af9f09a0c16ff9585854108a
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 958e6a03b5f2e3e8c6700d7228782ba08f4a4dbf
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58804110"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59124746"
 ---
 # <a name="update-grouppolicydefinition"></a>Atualizar groupPolicyDefinition
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -61,14 +61,14 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [o group
 |:---|:---|:---|
 |classType|[groupPolicyDefinitionClassType](../resources/intune-grouppolicy-grouppolicydefinitionclasstype.md)|Identifica o tipo de grupos aos qual a política pode ser aplicada. Os valores possíveis são: `user` e `machine`.|
 |displayName|Cadeia de caracteres|O nome da política localizada.|
-|explainText|Cadeia de caracteres|A explicação localizada ou o texto de ajuda associado à política. O valor padrão é vazio.|
-|categoryPath|Cadeia de caracteres|O caminho de categoria completa localizado para a política.|
-|supportedOn|Cadeia de caracteres|Cadeia de caracteres localizada usada para especificar qual versão do sistema operacional ou aplicativo é afetada pela política.|
+|explainText|Cadeia de Caracteres|A explicação localizada ou o texto de ajuda associado à política. O valor padrão é vazio.|
+|categoryPath|Cadeia de Caracteres|O caminho de categoria completa localizado para a política.|
+|supportedOn|Cadeia de Caracteres|Cadeia de caracteres localizada usada para especificar qual versão do sistema operacional ou aplicativo é afetada pela política.|
 |policyType|[groupPolicyType](../resources/intune-grouppolicy-grouppolicytype.md)|Especifica o tipo de política de grupo. Os valores possíveis são: `admxBacked` e `admxIngested`.|
 |hasRelatedDefinitions|Boleano|Significa se há ou não definições relacionadas a essa definição|
 |groupPolicyCategoryId|Guid|A id de categoria da categoria pai|
-|minDeviceCspVersion|Cadeia de caracteres|Versão mínima necessária do CSP para a configuração do dispositivo nesta definição|
-|minUserCspVersion|Cadeia de caracteres|Versão mínima necessária do CSP para configuração do usuário nesta definição|
+|minDeviceCspVersion|Cadeia de Caracteres|Versão mínima necessária do CSP para a configuração do dispositivo nesta definição|
+|minUserCspVersion|Cadeia de Caracteres|Versão mínima necessária do CSP para configuração do usuário nesta definição|
 |versão|String|Definindo a versão de definição|
 |id|Cadeia de caracteres|Chave da entidade.|
 |lastModifiedDateTime|DateTimeOffset|A data e a hora em que a entidade foi modificada pela última vez.|

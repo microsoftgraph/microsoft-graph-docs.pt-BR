@@ -2,15 +2,15 @@
 title: Atualizar dataSharingConsent
 description: Atualize as propriedades de um objeto dataSharingConsent.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 074f8c3901f07b05652526e81a1006f01c83fd88
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 2f2d73c20e9beaeb66be8af759888eb086e04764
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58819988"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59122002"
 ---
 # <a name="update-datasharingconsent"></a>Atualizar dataSharingConsent
 
@@ -27,8 +27,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Delegado (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -54,12 +54,12 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [o dataS
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|Cadeia de caracteres|A ID de consentimento de compartilhamento de dados|
-|serviceDisplayName|String|O nome de exibição do fluxo de trabalho do serviço|
-|termsUrl|Cadeia de caracteres|The TermsUrl for the data sharing consent|
-|concedido|Booliano|O estado concedido para o consentimento de compartilhamento de dados|
+|serviceDisplayName|Cadeia de Caracteres|O nome de exibição do fluxo de trabalho do serviço|
+|termsUrl|Cadeia de Caracteres|The TermsUrl for the data sharing consent|
+|concedido|Boleano|O estado concedido para o consentimento de compartilhamento de dados|
 |grantDateTime|DateTimeOffset|O consentimento de hora foi concedido para essa conta|
-|grantedByUpn|Cadeia de caracteres|O Upn do usuário que concedeu consentimento para essa conta|
-|grantedByUserId|String|UserId do usuário que concedeu consentimento para essa conta|
+|grantedByUpn|Cadeia de Caracteres|O Upn do usuário que concedeu consentimento para essa conta|
+|grantedByUserId|Cadeia de Caracteres|UserId do usuário que concedeu consentimento para essa conta|
 
 
 

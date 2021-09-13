@@ -2,15 +2,15 @@
 title: Tipo de recurso cartToClassAssociation
 description: CartToClassAssociation para associar carrinhos de dispositivo a salas de aula.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 421f00600febc567f10b754e86e061aa5e57fa29
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 10050d3cb9bcc73549244f07077f4c4b7de97bf3
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58779134"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59127476"
 ---
 # <a name="carttoclassassociation-resource-type"></a>Tipo de recurso cartToClassAssociation
 
@@ -28,7 +28,7 @@ CartToClassAssociation para associar carrinhos de dispositivo a salas de aula.
 |[Listar cartToClassAssociations](../api/intune-deviceconfig-carttoclassassociation-list.md)|[Coleção cartToClassAssociation](../resources/intune-deviceconfig-carttoclassassociation.md)|Listar propriedades e relações dos [objetos cartToClassAssociation.](../resources/intune-deviceconfig-carttoclassassociation.md)|
 |[Obter cartToClassAssociation](../api/intune-deviceconfig-carttoclassassociation-get.md)|[cartToClassAssociation](../resources/intune-deviceconfig-carttoclassassociation.md)|Leia propriedades e relações do [objeto cartToClassAssociation.](../resources/intune-deviceconfig-carttoclassassociation.md)|
 |[Criar cartToClassAssociation](../api/intune-deviceconfig-carttoclassassociation-create.md)|[cartToClassAssociation](../resources/intune-deviceconfig-carttoclassassociation.md)|Crie um novo [objeto cartToClassAssociation.](../resources/intune-deviceconfig-carttoclassassociation.md)|
-|[Excluir cartToClassAssociation](../api/intune-deviceconfig-carttoclassassociation-delete.md)|Nenhum(a)|Exclui um [cartToClassAssociation](../resources/intune-deviceconfig-carttoclassassociation.md).|
+|[Excluir cartToClassAssociation](../api/intune-deviceconfig-carttoclassassociation-delete.md)|Nenhum|Exclui um [cartToClassAssociation](../resources/intune-deviceconfig-carttoclassassociation.md).|
 |[Atualizar cartToClassAssociation](../api/intune-deviceconfig-carttoclassassociation-update.md)|[cartToClassAssociation](../resources/intune-deviceconfig-carttoclassassociation.md)|Atualize as propriedades de um [objeto cartToClassAssociation.](../resources/intune-deviceconfig-carttoclassassociation.md)|
 
 ## <a name="properties"></a>Propriedades
@@ -39,9 +39,9 @@ CartToClassAssociation para associar carrinhos de dispositivo a salas de aula.
 |lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto.|
 |versão|Int32|Versão do CartToClassAssociation.|
 |displayName|Cadeia de caracteres|O administrador forneceu o nome da Configuração do dispositivo.|
-|descrição|Cadeia de caracteres|O administrador forneceu a descrição do CartToClassAssociation.|
-|deviceCartIds|Coleção de cadeias de caracteres|Identificadores de carrinhos de dispositivo a serem associados a classes.|
-|classroomIds|Coleção de cadeias de caracteres|Identificadores de salas de aula a serem associadas a carrinhos de dispositivo.|
+|description|Cadeia de caracteres|O administrador forneceu a descrição do CartToClassAssociation.|
+|deviceCartIds|String collection|Identificadores de carrinhos de dispositivo a serem associados a classes.|
+|classroomIds|String collection|Identificadores de salas de aula a serem associadas a carrinhos de dispositivo.|
 
 ## <a name="relationships"></a>Relações
 Nenhum
