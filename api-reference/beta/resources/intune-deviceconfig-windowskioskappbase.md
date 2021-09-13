@@ -2,15 +2,15 @@
 title: Tipo de recurso windowsKioskAppBase
 description: A classe base para um tipo de aplicativo
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 7fbaf7faec0e233963cbf82dc571c6baea00906c
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: f104fb09d0861a502f657535751ab1ae242ef721
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58815621"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59086669"
 ---
 # <a name="windowskioskappbase-resource-type"></a>Tipo de recurso windowsKioskAppBase
 
@@ -28,7 +28,7 @@ A classe base para um tipo de aplicativo
 |startLayoutTileSize|[windowsAppStartLayoutTileSize](../resources/intune-deviceconfig-windowsappstartlayouttilesize.md)|O tamanho do azulejo do aplicativo para o layout inicial. Os valores possíveis são: `hidden`, `small`, `medium`, `wide`, `large`.|
 |nome|Cadeia de caracteres|Representa o nome amigável de um aplicativo|
 |appType|[windowsKioskAppType](../resources/intune-deviceconfig-windowskioskapptype.md)|O tipo de aplicativo. Os valores possíveis são: `unknown`, `store`, `desktop`, `aumId`.|
-|autoLaunch|Booliano|Permitir que o aplicativo seja lançado automaticamente no modo de quiosque de vários aplicativos|
+|autoLaunch|Boleano|Permitir que o aplicativo seja lançado automaticamente no modo de quiosque de vários aplicativos|
 
 ## <a name="relationships"></a>Relações
 Nenhum

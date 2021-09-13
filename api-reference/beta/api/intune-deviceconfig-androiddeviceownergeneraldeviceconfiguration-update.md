@@ -2,15 +2,15 @@
 title: Atualizar androidDeviceOwnerGeneralDeviceConfiguration
 description: Atualize as propriedades de um objeto androidDeviceOwnerGeneralDeviceConfiguration.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0791feafc97ded4943c566ad08968a01ec1206b9
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 0e9e9202bf9a2404d8edf3b2301a888e274d6459
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58807199"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59098181"
 ---
 # <a name="update-androiddeviceownergeneraldeviceconfiguration"></a>Atualizar androidDeviceOwnerGeneralDeviceConfiguration
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -57,13 +57,13 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [android
 |:---|:---|:---|
 |id|Cadeia de caracteres|Chave da entidade. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de marcas de escopo para esta instância entity. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|roleScopeTagIds|String collection|Lista de marcas de escopo para esta instância entity. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |supportsScopeTags|Boleano|Indica se a Configuração de Dispositivo subjacente dá suporte ou não à atribuição de marcas de escopo. A atribuição à propriedade ScopeTags não é permitida quando esse valor é falso e as entidades não estarão visíveis para usuários com escopo. Isso ocorre para políticas herdadas criadas no Silverlight e podem ser resolvidas excluindo e recriando a política no Portal do Azure. Essa propriedade é somente leitura. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|A aplicabilidade da edição do sistema operacional para esta Política. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|A regra de aplicabilidade da versão do sistema operacional para esta Política. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|A regra de aplicabilidade do modo de dispositivo para esta Política. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|DateTime em que o objeto foi criado. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|descrição|Cadeia de caracteres|O administrador forneceu a descrição da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|description|Cadeia de caracteres|O administrador forneceu a descrição da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |displayName|Cadeia de caracteres|O administrador forneceu o nome da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |versão|Int32|Versão da configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |azureAdSharedDeviceDataClearApps|Coleção [appListItem](../resources/intune-deviceconfig-applistitem.md)|Uma lista de aplicativos gerenciados que terão seus dados limpos durante uma saída global no modo de dispositivo compartilhado do AAD. Esta coleção pode conter um máximo de 500 elementos.|
@@ -71,7 +71,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [android
 |appsAllowInstallFromUnknownSources|Boleano|Indica se o usuário tem ou não permissão para habilitar a configuração de fontes desconhecidas.|
 |appsAutoUpdatePolicy|[androidDeviceOwnerAppAutoUpdatePolicyType](../resources/intune-deviceconfig-androiddeviceownerappautoupdatepolicytype.md)|Indica o valor da política de atualização automática do aplicativo. Os valores possíveis são: `notConfigured`, `userChoice`, `never`, `wiFiOnly`, `always`.|
 |appsDefaultPermissionPolicy|[androidDeviceOwnerDefaultAppPermissionPolicyType](../resources/intune-deviceconfig-androiddeviceownerdefaultapppermissionpolicytype.md)|Indica a política de permissão para solicitações de permissões de tempo de execução se uma não for definida especificamente para o aplicativo. Os valores possíveis são: `deviceDefault`, `prompt`, `autoGrant`, `autoDeny`.|
-|appsRecommendSkippingFirstUseHints|Booliano|Se todos os aplicativos devem ou não ignorar as dicas de uso pela primeira vez que eles possam ter adicionado.|
+|appsRecommendSkippingFirstUseHints|Boleano|Se todos os aplicativos devem ou não ignorar as dicas de uso pela primeira vez que eles possam ter adicionado.|
 |bluetoothBlockConfiguration|Boleano|Indica se um usuário deve ou não bloquear a configuração do bluetooth.|
 |bluetoothBlockContactSharing|Boleano|Indica se um usuário deve ou não bloquear o compartilhamento de contatos via bluetooth.|
 |cameraBlocked|Boolean|Indica se o uso da câmera deve ou não ser desabilitado.|
@@ -79,7 +79,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [android
 |certificateCredentialConfigurationDisabled|Boleano|Indica se os usuários podem ou não bloquear qualquer configuração de credencial de certificado.|
 |microsoftLauncherConfigurationEnabled|Boleano|Indica se você deseja ou não configurar Microsoft Launcher.|
 |microsoftLauncherCustomWallpaperEnabled|Boleano|Indica se o papel de parede deve ou não ser configurada nos dispositivos direcionados.|
-|microsoftLauncherCustomWallpaperImageUrl|Cadeia de caracteres|Indica a URL do arquivo de imagem a ser usado como papel de parede nos dispositivos direcionados.|
+|microsoftLauncherCustomWallpaperImageUrl|Cadeia de Caracteres|Indica a URL do arquivo de imagem a ser usado como papel de parede nos dispositivos direcionados.|
 |microsoftLauncherCustomWallpaperAllowUserModification|Boleano|Indica se o usuário pode ou não modificar o papel de parede para personalizar seu dispositivo.|
 |microsoftLauncherFeedEnabled|Boleano|Indica se você deseja ou não habilitar o feed do launcher no dispositivo.|
 |microsoftLauncherFeedAllowUserModification|Boleano|Indica se o usuário pode ou não modificar o feed do launcher no dispositivo.|
@@ -88,24 +88,24 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [android
 |microsoftLauncherSearchBarPlacementConfiguration|[microsoftLauncherSearchBarPlacement](../resources/intune-deviceconfig-microsoftlaunchersearchbarplacement.md)|Indica a configuração de posicionamento da barra de pesquisa no dispositivo. Os valores possíveis são: `notConfigured`, `top`, `bottom`, `hide`.|
 |enrollmentProfile|[androidDeviceOwnerEnrollmentProfileType](../resources/intune-deviceconfig-androiddeviceownerenrollmentprofiletype.md)|Indica qual perfil de registro você deseja configurar. Os valores possíveis são: `notConfigured`, `dedicatedDevice`, `fullyManaged`.|
 |dataRoamingBlocked|Boleano|Indica se um usuário deve ou não bloquear o roaming de dados.|
-|dateTimeConfigurationBlocked|Booliano|Indica se o usuário deve ou não bloquear a alteração manual da data ou hora no dispositivo|
-|factoryResetDeviceAdministratorEmails|Coleção de cadeias de caracteres|Lista de emails de conta do Google que serão necessários para autenticar depois que um dispositivo for redefinido de fábrica antes de poder ser definido.|
+|dateTimeConfigurationBlocked|Boleano|Indica se o usuário deve ou não bloquear a alteração manual da data ou hora no dispositivo|
+|factoryResetDeviceAdministratorEmails|String collection|Lista de emails de conta do Google que serão necessários para autenticar depois que um dispositivo for redefinido de fábrica antes de poder ser definido.|
 |factoryResetBlocked|Boolean|Indica se a opção de redefinição de fábrica nas configurações está desabilitada ou não.|
 |globalProxy|[androidDeviceOwnerGlobalProxy](../resources/intune-deviceconfig-androiddeviceownerglobalproxy.md)|O proxy é definido diretamente com host, porta e hosts excluídos.|
-|googleAccountsBlocked|Booliano|Indica se as contas do Google serão ou não bloqueadas.|
+|googleAccountsBlocked|Boleano|Indica se as contas do Google serão ou não bloqueadas.|
 |kioskCustomizationDeviceSettingsBlocked|Boleano|Indica se um usuário pode acessar o aplicativo Configurações do dispositivo enquanto estiver no modo Quiosque.|
 |kioskCustomizationPowerButtonActionsBlocked|Boleano|Se o menu de energia é mostrado quando um usuário pressiona por muito tempo o botão Ligar de um dispositivo no Modo Quiosque.|
 |kioskCustomizationStatusBar|[androidDeviceOwnerKioskCustomizationStatusBar](../resources/intune-deviceconfig-androiddeviceownerkioskcustomizationstatusbar.md)|Indica se as informações e notificações do sistema estão desabilitadas no modo Quiosque. Os valores possíveis são: `notConfigured`, `notificationsAndSystemInfoEnabled`, `systemInfoOnly`.|
-|kioskCustomizationSystemErrorWarnings|Booliano|Indica se as caixas de diálogo de erro do sistema para aplicativos inativos ou não responsivos são mostradas no modo Quiosque.|
+|kioskCustomizationSystemErrorWarnings|Boleano|Indica se as caixas de diálogo de erro do sistema para aplicativos inativos ou não responsivos são mostradas no modo Quiosque.|
 |kioskCustomizationSystemNavigation|[androidDeviceOwnerKioskCustomizationSystemNavigation](../resources/intune-deviceconfig-androiddeviceownerkioskcustomizationsystemnavigation.md)|Indica quais recursos de navegação estão habilitados no modo Quiosque. Os valores possíveis são: `notConfigured`, `navigationEnabled`, `homeButtonOnly`.|
-|kioskModeScreenSaverConfigurationEnabled|Booliano|Se deve ou não habilitar o modo de economia de tela ou não no modo Quiosque.|
-|kioskModeScreenSaverImageUrl|Cadeia de caracteres|URL de uma imagem que será o protetor de tela do dispositivo no modo Quiosque.|
+|kioskModeScreenSaverConfigurationEnabled|Boleano|Se deve ou não habilitar o modo de economia de tela ou não no modo Quiosque.|
+|kioskModeScreenSaverImageUrl|Cadeia de Caracteres|URL de uma imagem que será o protetor de tela do dispositivo no modo Quiosque.|
 |kioskModeScreenSaverDisplayTimeInSeconds|Int32|O número de segundos em que o dispositivo exibirá o protetor de tela no modo Quiosque. Valores válidos de 0 a 9999999|
 |kioskModeScreenSaverStartDelayInSeconds|Int32|O número de segundos em que o dispositivo precisa estar inativo para antes que a economia de tela seja mostrada no modo Quiosque. Valores válidos de 1 a 9999999|
 |kioskModeScreenSaverDetectMediaDisabled|Boleano|Se a tela do dispositivo deve ou não mostrar o protetor de tela se o áudio/vídeo estiver sendo exibido no modo Quiosque.|
 |kioskModeApps|Coleção [appListItem](../resources/intune-deviceconfig-applistitem.md)|Uma lista de aplicativos gerenciados que serão mostrados quando o dispositivo estiver no modo Quiosque. Esta coleção pode conter um máximo de 500 elementos.|
-|kioskModeWallpaperUrl|Cadeia de caracteres|URL para uma imagem publicamente acessível a ser usada para o papel de parede quando o dispositivo estiver no modo Quiosque.|
-|kioskModeExitCode|Cadeia de caracteres|Código de saída para permitir que um usuário escape do Modo Quiosque quando o dispositivo estiver no modo Quiosque.|
+|kioskModeWallpaperUrl|Cadeia de Caracteres|URL para uma imagem publicamente acessível a ser usada para o papel de parede quando o dispositivo estiver no modo Quiosque.|
+|kioskModeExitCode|Cadeia de Caracteres|Código de saída para permitir que um usuário escape do Modo Quiosque quando o dispositivo estiver no modo Quiosque.|
 |kioskModeVirtualHomeButtonEnabled|Boleano|Se será exibido ou não um botão home virtual quando o dispositivo estiver no modo Quiosque.|
 |kioskModeVirtualHomeButtonType|[androidDeviceOwnerVirtualHomeButtonType](../resources/intune-deviceconfig-androiddeviceownervirtualhomebuttontype.md)|Indica se o botão home virtual é um botão de passar o dedo para cima ou um botão home flutuante. Os valores possíveis são: `notConfigured`, `swipeUp`, `floating`.|
 |kioskModeBluetoothConfigurationEnabled|Boleano|Se um usuário pode ou não configurar Bluetooth configurações no modo Quiosque.|
@@ -119,22 +119,22 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [android
 |kioskModeScreenOrientation|[androidDeviceOwnerKioskModeScreenOrientation](../resources/intune-deviceconfig-androiddeviceownerkioskmodescreenorientation.md)|Configuração de orientação de tela para tela inicial gerenciada no modo Quiosque. Os valores possíveis são: `notConfigured`, `portrait`, `landscape`, `autoRotate`.|
 |kioskModeIconSize|[androidDeviceOwnerKioskModeIconSize](../resources/intune-deviceconfig-androiddeviceownerkioskmodeiconsize.md)|Configuração do tamanho do ícone para a tela inicial gerenciada no Modo Quiosque. Os possíveis valores são: `notConfigured`, `smallest`, `small`, `regular`, `large`, `largest`.|
 |kioskModeFolderIcon|[androidDeviceOwnerKioskModeFolderIcon](../resources/intune-deviceconfig-androiddeviceownerkioskmodefoldericon.md)|Configuração do ícone de pasta para a tela inicial gerenciada no modo Quiosque. Os valores possíveis são: `notConfigured`, `darkSquare`, `darkCircle`, `lightSquare`, `lightCircle`.|
-|kioskModeWifiAllowedSsids|Coleção de cadeias de caracteres|O conjunto restrito de SSIDs WIFI disponíveis para o usuário configurar no Modo Quiosque. Esta coleção pode conter um máximo de 500 elementos.|
-|kioskModeAppOrderEnabled|Booliano|Se é ou não para habilitar a ordenação de aplicativos no modo Quiosque.|
-|kioskModeAppsInFolderOrderedByName|Booliano|Se deve ou não alfabéticar aplicativos em uma pasta no modo Quiosque.|
+|kioskModeWifiAllowedSsids|String collection|O conjunto restrito de SSIDs WIFI disponíveis para o usuário configurar no Modo Quiosque. Esta coleção pode conter um máximo de 500 elementos.|
+|kioskModeAppOrderEnabled|Boleano|Se é ou não para habilitar a ordenação de aplicativos no modo Quiosque.|
+|kioskModeAppsInFolderOrderedByName|Boleano|Se deve ou não alfabéticar aplicativos em uma pasta no modo Quiosque.|
 |kioskModeGridHeight|Int32|Número de linhas para grade da Tela Inicial Gerenciada com a ordenação de aplicativos habilitada no Modo Quiosque. Valores válidos de 1 a 9999999|
 |kioskModeGridWidth|Int32|Número de colunas para grade da Tela Inicial Gerenciada com a ordenação de aplicativos habilitada no Modo Quiosque. Valores válidos de 1 a 9999999|
 |kioskModeLockHomeScreen|Boleano|Se deve ou não bloquear a tela inicial para o usuário final no Modo Quiosque.|
 |kioskModeManagedFolders|[coleção androidDeviceOwnerKioskModeManagedFolder](../resources/intune-deviceconfig-androiddeviceownerkioskmodemanagedfolder.md)|Uma lista de pastas gerenciadas para um dispositivo no modo Quiosque. Esta coleção pode conter um máximo de 500 elementos.|
 |kioskModeAppPositions|[coleção androidDeviceOwnerKioskModeAppPositionItem](../resources/intune-deviceconfig-androiddeviceownerkioskmodeapppositionitem.md)|A ordenação de itens na Tela Inicial Gerenciada do Modo quiosque. Esta coleção pode conter um máximo de 500 elementos.|
-|kioskModeManagedHomeScreenAutoSignout|Booliano|Se a saída automática dos aplicativos de modo de dispositivo compartilhado e MHS e MHS será automaticamente inativa após a Tela Inicial Gerenciada.|
+|kioskModeManagedHomeScreenAutoSignout|Boleano|Se a saída automática dos aplicativos de modo de dispositivo compartilhado e MHS e MHS será automaticamente inativa após a Tela Inicial Gerenciada.|
 |kioskModeManagedHomeScreenInactiveSignOutDelayInSeconds|Int32|Número de segundos para notificação do usuário antes de assalá-los automaticamente para a Tela Inicial Gerenciada. Valores válidos de 1 a 9999999|
 |kioskModeManagedHomeScreenInactiveSignOutNoticeInSeconds|Int32|Número de segundos em que o dispositivo está inativo antes de assinar automaticamente o usuário para a Tela Inicial Gerenciada. Valores válidos de 1 a 9999999|
 |kioskModeManagedHomeScreenPinComplexity|[kioskModeManagedHomeScreenPinComplexity](../resources/intune-deviceconfig-kioskmodemanagedhomescreenpincomplexity.md)|Complexidade do PIN para sessão de login para Tela Inicial Gerenciada. Os valores possíveis são: `notConfigured`, `simple`, `complex`.|
 |kioskModeManagedHomeScreenPinRequired|Boleano|Se o usuário precisa ou não definir um PIN para sessão de login para Tela Inicial Gerenciada.|
-|kioskModeManagedHomeScreenPinRequiredToResume|Booliano|Se o usuário precisa ou não inserir PIN de sessão se o screensaver tiver sido exibido para a Tela Inicial Gerenciada.|
-|kioskModeManagedHomeScreenSignInBackground|Cadeia de caracteres|Plano de fundo de URL personalizado para tela de login para Tela Inicial Gerenciada.|
-|kioskModeManagedHomeScreenSignInBrandingLogo|Cadeia de caracteres|Logotipo de identidade visual de URL personalizado para tela de logon e página de pin de sessão para Tela Inicial Gerenciada.|
+|kioskModeManagedHomeScreenPinRequiredToResume|Boleano|Se o usuário precisa ou não inserir PIN de sessão se o screensaver tiver sido exibido para a Tela Inicial Gerenciada.|
+|kioskModeManagedHomeScreenSignInBackground|Cadeia de Caracteres|Plano de fundo de URL personalizado para tela de login para Tela Inicial Gerenciada.|
+|kioskModeManagedHomeScreenSignInBrandingLogo|Cadeia de Caracteres|Logotipo de identidade visual de URL personalizado para tela de logon e página de pin de sessão para Tela Inicial Gerenciada.|
 |kioskModeManagedHomeScreenSignInEnabled|Boleano|Se a tela de login será ou não para Tela Inicial Gerenciada.|
 |microphoneForceMute|Boleano|Indica se o microfone deve ou não ser bloqueado no dispositivo.|
 |networkEscapeHatchAllowed|Boleano|Indica se o dispositivo permitirá ou não a conexão a uma conexão de rede temporária no momento da inicialização.|
@@ -172,11 +172,11 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [android
 |usersBlockRemove|Boleano|Indica se deve ou não desabilitar a remoção de outros usuários do dispositivo.|
 |volumeBlockAdjustment|Boleano|Indica se o ajuste do volume mestre está desabilitado ou não.|
 |vpnAlwaysOnLockdownMode|Boleano|Se um nome de pacote VPN sempre estiver especificado, se o tráfego de rede será ou não travado quando essa VPN estiver desconectada.|
-|vpnAlwaysOnPackageIdentifier|Cadeia de caracteres|Nome do pacote do aplicativo Android para aplicativo que lidará com uma conexão VPN sempre on.|
+|vpnAlwaysOnPackageIdentifier|Cadeia de Caracteres|Nome do pacote do aplicativo Android para aplicativo que lidará com uma conexão VPN sempre on.|
 |wifiBlockEditConfigurations|Boleano|Indica se o usuário deve ou não bloquear a edição das configurações de conexão wifi.|
 |wifiBlockEditPolicyDefinedConfigurations|Boleano|Indica se o usuário deve ou não bloquear a edição apenas das redes definidas pela política.|
 |personalProfileAppsAllowInstallFromUnknownSources|Boleano|Indica se o usuário pode instalar aplicativos de fontes desconhecidas no perfil pessoal.|
-|personalProfileCameraBlocked|Booliano|Indica se o uso da câmera deve ser desabilitado no perfil pessoal.|
+|personalProfileCameraBlocked|Boleano|Indica se o uso da câmera deve ser desabilitado no perfil pessoal.|
 |personalProfileScreenCaptureBlocked|Boleano|Indica se a funcionalidade deve ser desabilitada para fazer capturas de tela no perfil pessoal.|
 |workProfilePasswordExpirationDays|Int32|Indica o número de dias em que uma senha de perfil de trabalho pode ser definida antes de expirar e uma nova senha será necessária. Valores válidos de 1 a 365|
 |workProfilePasswordMinimumLength|Int32|Indica o tamanho mínimo da senha do perfil de trabalho. Valores válidos de 4 a 16|

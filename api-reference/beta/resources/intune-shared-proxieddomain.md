@@ -2,15 +2,15 @@
 title: Tipo de recurso proxiedDomain
 description: Domínio com proxy
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 58f9b6750795794bb7fed698b3fcaf7e66f687e4
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 28f533f126e70ac46c2cc5cc59cec7db6261b907
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58794354"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59115286"
 ---
 # <a name="proxieddomain-resource-type"></a>Tipo de recurso proxiedDomain
 

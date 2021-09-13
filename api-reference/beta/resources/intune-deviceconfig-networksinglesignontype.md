@@ -2,15 +2,15 @@
 title: Tipo de número networkSingleSignOnType
 description: Wi-Fi tipo de sinal único de rede Configurações.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: a3ff7b1c6e2ee380065ba2d2d19f22dbb294f67e
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: f29d0fd52f43cc63efcba20c917f2f1c7b8ae043
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58795203"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59115426"
 ---
 # <a name="networksinglesignontype-enum-type"></a>Tipo de número networkSingleSignOnType
 
@@ -25,7 +25,7 @@ Wi-Fi tipo de sinal único de rede Configurações.
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|desabilitadas|0|Desabilitado|
+|desabilitadas|0|Disabled|
 |prelogon|1|Pré-logon|
 |postlogon|2|Post-Logon|
 

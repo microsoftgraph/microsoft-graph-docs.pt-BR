@@ -1,22 +1,22 @@
 ---
 title: 'directoryObject: validateProperties'
 description: Valide se o nome de exibição ou apelido de email de um grupo da Microsoft 365 está em conformidade com as políticas de nomenclatura.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: keylimesoda
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 699175bfd3d51deb07d64722a7196fcf9dcc8880
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: ede7c76c1db63ed0c1c52d4ed7aab4eb6a91561d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50436831"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59083653"
 ---
 # <a name="directoryobject-validateproperties"></a>directoryObject: validateProperties
 
 Namespace: microsoft.graph
 
-Valide se o nome de exibição ou apelido de email de um grupo da Microsoft 365 está em conformidade com as políticas de nomenclatura.  Os clientes podem usar essa API para determinar se um nome de exibição ou apelido de email é válido antes de tentar **criar** um grupo do Microsoft 365. Para validar propriedades de um grupo existente, use a [função validateProperties](group-validateproperties.md) para grupos.
+Valide se o nome de exibição ou apelido de email de um grupo da Microsoft 365 está em conformidade com as políticas de nomenclatura.  Os clientes podem usar essa API para determinar se um nome de exibição ou apelido de email é válido antes de tentar **criar** um Microsoft 365 grupo. Para validar propriedades de um grupo existente, use a [função validateProperties](group-validateproperties.md) para grupos.
 
 As seguintes validações são executadas para as propriedades nome de exibição e apelido de email: 
 1. Validar a política de nomeação de prefixo e sufixo
@@ -52,8 +52,8 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro    | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|entityType|String| `Group` é o único tipo de entidade com suporte. |
-|displayName|String| O nome de exibição do grupo a ser validado. A propriedade não é necessária individualmente. No entanto, pelo menos uma propriedade (displayName ou mailNickname) é necessária. |
+|entityType|Cadeia de Caracteres| `Group` é o único tipo de entidade com suporte. |
+|displayName|Cadeia de caracteres| O nome de exibição do grupo a ser validado. A propriedade não é necessária individualmente. No entanto, pelo menos uma propriedade (displayName ou mailNickname) é necessária. |
 |mailNickname|String| O apelido de email do grupo a ser validado. A propriedade não é necessária individualmente. No entanto, pelo menos uma propriedade (displayName ou mailNickname) é necessária. |
 |onBehalfOfUserId|Guid| A ID do objeto do usuário a ser personificado ao chamar a API. Os resultados da validação são para os atributos e funções de onBehalfOfUserId. |
 

@@ -2,15 +2,15 @@
 author: learafa
 title: Seguir site
 description: Siga o site/sites de um usuário.
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 18044f2a6459fa7d145d29bbf2a66d8b2eee7f5f
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: 89822d1050f0cb1a492927f07caa8ff8f1667bef
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50475778"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59092228"
 ---
 # <a name="follow-site"></a>Seguir site 
 

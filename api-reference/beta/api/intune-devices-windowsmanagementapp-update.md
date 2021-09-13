@@ -2,15 +2,15 @@
 title: Atualizar windowsManagementApp
 description: Atualize as propriedades de um objeto windowsManagementApp.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 088c139a302f07ef4ec954d8401b4e6c77775255
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 88f7655a9819da4afb9b7a64665ecf912b208c26
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58790525"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59087888"
 ---
 # <a name="update-windowsmanagementapp"></a>Atualizar windowsManagementApp
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementManagedDevices.ReadWrite.All|
+|Aplicativo|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -54,9 +54,9 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [o windo
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|Cadeia de caracteres|Identificador exclusivo do aplicativo Windows de gerenciamento|
-|availableVersion|Cadeia de caracteres|Windows versão disponível do aplicativo de gerenciamento.|
+|availableVersion|Cadeia de Caracteres|Windows versão disponível do aplicativo de gerenciamento.|
 |managedInstaller|[managedInstallerStatus](../resources/intune-devices-managedinstallerstatus.md)|Status do Instalador Gerenciado. Os valores possíveis são: `disabled` e `enabled`.|
-|managedInstallerConfiguredDateTime|Cadeia de caracteres|Data configurada do Instalador Gerenciado|
+|managedInstallerConfiguredDateTime|Cadeia de Caracteres|Data configurada do Instalador Gerenciado|
 
 
 

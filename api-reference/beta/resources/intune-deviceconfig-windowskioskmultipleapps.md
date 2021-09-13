@@ -2,15 +2,15 @@
 title: Tipo de recurso windowsKioskMultipleApps
 description: A classe usada para identificar a configuração do aplicativo MultiMode para a configuração de quiosque
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 678943374b2db49513ca0739f75cead5565ce99c
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 30c7b8d6fe52debe1afa3c7228dc2fc4c2298478
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58800405"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59086418"
 ---
 # <a name="windowskioskmultipleapps-resource-type"></a>Tipo de recurso windowsKioskMultipleApps
 

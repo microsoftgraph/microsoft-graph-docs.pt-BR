@@ -2,15 +2,15 @@
 title: Tipo de recurso ndesConnector
 description: Entidade que representa um conector OnPrem Ndes.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 392862f8bf8853195743b741727485de383fc62c
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 222c675d66fc400c83161377def32420ad81d3fa
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58799504"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59091647"
 ---
 # <a name="ndesconnector-resource-type"></a>Tipo de recurso ndesConnector
 
@@ -28,7 +28,7 @@ Entidade que representa um conector OnPrem Ndes.
 |[Listar ndesConnectors](../api/intune-deviceconfig-ndesconnector-list.md)|[Coleção ndesConnector](../resources/intune-deviceconfig-ndesconnector.md)|Listar propriedades e relações dos objetos [ndesConnector.](../resources/intune-deviceconfig-ndesconnector.md)|
 |[Obter ndesConnector](../api/intune-deviceconfig-ndesconnector-get.md)|[ndesConnector](../resources/intune-deviceconfig-ndesconnector.md)|Leia propriedades e relações do [objeto ndesConnector.](../resources/intune-deviceconfig-ndesconnector.md)|
 |[Criar ndesConnector](../api/intune-deviceconfig-ndesconnector-create.md)|[ndesConnector](../resources/intune-deviceconfig-ndesconnector.md)|Crie um novo [objeto ndesConnector.](../resources/intune-deviceconfig-ndesconnector.md)|
-|[Excluir ndesConnector](../api/intune-deviceconfig-ndesconnector-delete.md)|Nenhum(a)|Exclui um [ndesConnector](../resources/intune-deviceconfig-ndesconnector.md).|
+|[Excluir ndesConnector](../api/intune-deviceconfig-ndesconnector-delete.md)|Nenhum|Exclui um [ndesConnector](../resources/intune-deviceconfig-ndesconnector.md).|
 |[Atualizar ndesConnector](../api/intune-deviceconfig-ndesconnector-update.md)|[ndesConnector](../resources/intune-deviceconfig-ndesconnector.md)|Atualize as propriedades de um [objeto ndesConnector.](../resources/intune-deviceconfig-ndesconnector.md)|
 
 ## <a name="properties"></a>Propriedades

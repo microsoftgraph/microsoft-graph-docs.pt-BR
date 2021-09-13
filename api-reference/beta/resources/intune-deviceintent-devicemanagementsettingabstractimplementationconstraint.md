@@ -2,15 +2,15 @@
 title: Tipo de recurso deviceManagementSettingAbstractImplementationConstraint
 description: Restrição que impõe um tipo AbstractComplex tem ou está definida como um valor específico
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d46768defd5b5245a662002b3a65e8a34e61bf5c
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: f90e142981b3f0f964d2ebe90db62522571219a1
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58821126"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59091465"
 ---
 # <a name="devicemanagementsettingabstractimplementationconstraint-resource-type"></a>Tipo de recurso deviceManagementSettingAbstractImplementationConstraint
 
@@ -28,7 +28,7 @@ Herda de [deviceManagementConstraint](../resources/intune-deviceintent-deviceman
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|allowedAbstractImplementationDefinitionIds|Coleção de cadeias de caracteres|Lista de valores que significa não configurado para a configuração|
+|allowedAbstractImplementationDefinitionIds|String collection|Lista de valores que significa não configurado para a configuração|
 
 ## <a name="relationships"></a>Relações
 Nenhum

@@ -2,15 +2,15 @@
 title: Tipo de recurso unmanagedDevice
 description: Dispositivo nãomanageado descoberto na rede.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0286d1ac8790cff207ff754d49cd6d3ee51986de
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 1606ba0aaedc46ea9a27f6d7d8a0565480c59a01
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58806590"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59100971"
 ---
 # <a name="unmanageddevice-resource-type"></a>Tipo de recurso unmanagedDevice
 
@@ -25,16 +25,16 @@ Dispositivo nãomanageado descoberto na rede.
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|os|Cadeia de caracteres|Sistema Operacional.|
+|os|Cadeia de Caracteres|Sistema Operacional.|
 |osVersion|String|Versão do sistema operacional.|
 |ipAddress|Cadeia de caracteres|Endereço IP.|
 |deviceName|Cadeia de caracteres|Nome do dispositivo.|
-|macAddress|Cadeia de caracteres|Endereço MAC.|
-|domínio|Cadeia de caracteres|Domínio.|
+|macAddress|Cadeia de Caracteres|Endereço MAC.|
+|domínio|Cadeia de Caracteres|Domínio.|
 |fabricante|String|Fabricante.|
 |modelo|String|Modelo.|
-|location|Cadeia de caracteres|Local.|
-|lastLoggedOnUser|Cadeia de caracteres|Último usuário conectado.|
+|location|Cadeia de Caracteres|Local.|
+|lastLoggedOnUser|Cadeia de Caracteres|Último usuário conectado.|
 |lastSeenDateTime|DateTimeOffset|Data e hora vistas pela última vez.|
 
 ## <a name="relationships"></a>Relações

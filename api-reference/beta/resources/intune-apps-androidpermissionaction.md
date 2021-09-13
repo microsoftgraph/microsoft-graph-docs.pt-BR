@@ -2,15 +2,15 @@
 title: Tipo de recurso androidPermissionAction
 description: Mapeamento entre uma permissão de aplicativo Android e a ação que o Android deve tomar quando essa permissão for solicitada.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d99ec168ae3cdb46dbe7727e9b60fb63624202fe
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: f1065497839de4ccc4a90d48deb6651e11422e84
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58819728"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59115601"
 ---
 # <a name="androidpermissionaction-resource-type"></a>Tipo de recurso androidPermissionAction
 
@@ -25,7 +25,7 @@ Mapeamento entre uma permissão de aplicativo Android e a ação que o Android d
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|permission|Cadeia de caracteres|Cadeia de caracteres de permissão do Android, definida na documentação oficial do Android.  Exemplo 'android.permission.READ_CONTACTS'.|
+|permission|Cadeia de Caracteres|Cadeia de caracteres de permissão do Android, definida na documentação oficial do Android.  Exemplo 'android.permission.READ_CONTACTS'.|
 |ação|[androidPermissionActionType](../resources/intune-apps-androidpermissionactiontype.md)|Tipo de ação de permissão do Android. Os valores possíveis são: `prompt`, `autoGrant`, `autoDeny`.|
 
 ## <a name="relationships"></a>Relações

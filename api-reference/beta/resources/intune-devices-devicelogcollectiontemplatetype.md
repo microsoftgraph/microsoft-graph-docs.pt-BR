@@ -2,15 +2,15 @@
 title: Tipo denum deviceLogCollectionTemplateType
 description: Enum para o tipo de modelo usado para coletar logs
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 165d12423ae4483ce410966711cda9650576cc43
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: c939b9d4e63814781694aa585d55f2838ca7a067
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58770900"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59091325"
 ---
 # <a name="devicelogcollectiontemplatetype-enum-type"></a>Tipo denum deviceLogCollectionTemplateType
 

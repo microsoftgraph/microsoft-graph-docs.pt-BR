@@ -2,15 +2,15 @@
 title: Tipo de recurso groupPolicyMigrationReport
 description: O relatório de migração da Política de Grupo.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: c093dd3987a16ec0cb69a861c2614a55caf4e9f7
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: eb50a01e3f812b1e4e5cb6b986ef52d4ec1817de
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58817352"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59086243"
 ---
 # <a name="grouppolicymigrationreport-resource-type"></a>Tipo de recurso groupPolicyMigrationReport
 
@@ -35,16 +35,16 @@ O relatório de migração da Política de Grupo.
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Ainda não documentado|
+|id|Cadeia de caracteres|Ainda não documentado|
 |groupPolicyObjectId|Guid|O GUID do objeto de política de grupo do conteúdo XML do GPO|
 |displayName|Cadeia de caracteres|O nome do Objeto de Política de Grupo do Conteúdo XML do GPO|
-|ouDistinguishedName|Cadeia de caracteres|O nome diferenciado da UO.|
+|ouDistinguishedName|Cadeia de Caracteres|O nome diferenciado da UO.|
 |createdDateTime|DateTimeOffset|A data e a hora em que o GroupPolicyMigrationReport foi criado.|
 |lastModifiedDateTime|DateTimeOffset|A data e a hora em que GroupPolicyMigrationReport foi modificada pela última vez.|
 |groupPolicyCreatedDateTime|DateTimeOffset|A data e a hora em que o GroupPolicyMigrationReport foi criado.|
 |groupPolicyLastModifiedDateTime|DateTimeOffset|A data e a hora em que GroupPolicyMigrationReport foi modificada pela última vez.|
 |migrationReadiness|[groupPolicyMigrationReadiness](../resources/intune-gpanalyticsservice-grouppolicymigrationreadiness.md)|A cobertura do Intune para o arquivo de Objeto de Política de Grupo associado. Os valores possíveis são: `none`, `partial`, `complete`, `error`, `notApplicable`.|
-|targetedInActiveDirectory|Booliano|A propriedade Targeted in AD do Conteúdo XML do GPO|
+|targetedInActiveDirectory|Boleano|A propriedade Targeted in AD do Conteúdo XML do GPO|
 |totalSettingsCount|Int32|O número total de políticas de grupo Configurações do arquivo GPO.|
 |supportedSettingsCount|Int32|O número de políticas de grupo Configurações com suporte do Intune.|
 |supportedSettingsPercent|Int32|O Percentual de políticas de grupo Configurações com suporte do Intune.|

@@ -2,15 +2,15 @@
 title: Tipo de recurso groupPolicyPresentationText
 description: Representa um elemento de texto ADMX.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: bf3eb2d1d99a62699950421ce2bde69a85c8e834
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 99a9d3e198151265ae4b740f49c9471c379f5c2c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58788658"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59085996"
 ---
 # <a name="grouppolicypresentationtext-resource-type"></a>Tipo de recurso groupPolicyPresentationText
 
@@ -31,13 +31,13 @@ Herda de [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypr
 |[Listar groupPolicyPresentationTexts](../api/intune-grouppolicy-grouppolicypresentationtext-list.md)|[coleção groupPolicyPresentationText](../resources/intune-grouppolicy-grouppolicypresentationtext.md)|Listar propriedades e relações dos [objetos groupPolicyPresentationText.](../resources/intune-grouppolicy-grouppolicypresentationtext.md)|
 |[Obter groupPolicyPresentationText](../api/intune-grouppolicy-grouppolicypresentationtext-get.md)|[groupPolicyPresentationText](../resources/intune-grouppolicy-grouppolicypresentationtext.md)|Leia propriedades e relações do [objeto groupPolicyPresentationText.](../resources/intune-grouppolicy-grouppolicypresentationtext.md)|
 |[Criar groupPolicyPresentationText](../api/intune-grouppolicy-grouppolicypresentationtext-create.md)|[groupPolicyPresentationText](../resources/intune-grouppolicy-grouppolicypresentationtext.md)|Crie um novo [objeto groupPolicyPresentationText.](../resources/intune-grouppolicy-grouppolicypresentationtext.md)|
-|[Excluir groupPolicyPresentationText](../api/intune-grouppolicy-grouppolicypresentationtext-delete.md)|Nenhum(a)|Exclui um [groupPolicyPresentationText](../resources/intune-grouppolicy-grouppolicypresentationtext.md).|
+|[Excluir groupPolicyPresentationText](../api/intune-grouppolicy-grouppolicypresentationtext-delete.md)|Nenhum|Exclui um [groupPolicyPresentationText](../resources/intune-grouppolicy-grouppolicypresentationtext.md).|
 |[Atualizar groupPolicyPresentationText](../api/intune-grouppolicy-grouppolicypresentationtext-update.md)|[groupPolicyPresentationText](../resources/intune-grouppolicy-grouppolicypresentationtext.md)|Atualize as propriedades de [um objeto groupPolicyPresentationText.](../resources/intune-grouppolicy-grouppolicypresentationtext.md)|
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|rótulo|Cadeia de caracteres|Rótulo de texto localizado para qualquer entidade de apresentação. O valor padrão é vazio. Herdado [de groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
+|rótulo|Cadeia de Caracteres|Rótulo de texto localizado para qualquer entidade de apresentação. O valor padrão é vazio. Herdado [de groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
 |id|Cadeia de caracteres|Chave da entidade. Herdado [de groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
 |lastModifiedDateTime|DateTimeOffset|A data e a hora em que a entidade foi modificada pela última vez. Herdado [de groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
 

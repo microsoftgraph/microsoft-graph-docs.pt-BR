@@ -2,15 +2,15 @@
 title: groupPolicyOperationStatus enum type
 description: Tipo de status da operação de Política de Grupo.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 774b6995b09108c3eb896d430918a3ece47acd58
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 1570b56bf92b239901f50b6318a9f803fcf3ec65
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58793551"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59086110"
 ---
 # <a name="grouppolicyoperationstatus-enum-type"></a>groupPolicyOperationStatus enum type
 

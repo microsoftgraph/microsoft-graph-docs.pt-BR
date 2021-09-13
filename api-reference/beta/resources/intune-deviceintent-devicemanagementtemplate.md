@@ -2,15 +2,15 @@
 title: Tipo de recurso deviceManagementTemplate
 description: Entidade que representa uma coleção definida de configurações de dispositivo
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: e830e4d879b3cf3a096e9919ad75c0e3966dc21e
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 434f62be55ebd1fef116d07e27fd9fcb7541d009
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58819007"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59086384"
 ---
 # <a name="devicemanagementtemplate-resource-type"></a>Tipo de recurso deviceManagementTemplate
 
@@ -40,8 +40,8 @@ Entidade que representa uma coleção definida de configurações de dispositivo
 |id|Cadeia de caracteres|A ID do modelo|
 |displayName|Cadeia de caracteres|O nome de exibição do modelo|
 |description|Cadeia de caracteres|A descrição do modelo|
-|versionInfo|Cadeia de caracteres|Informações de versão do modelo|
-|isDeprecated|Boolean|O modelo está preterido ou não. As intenções não podem ser criadas a partir de um modelo preterido.|
+|versionInfo|Cadeia de Caracteres|Informações de versão do modelo|
+|isDeprecated|Boleano|O modelo está preterido ou não. As intenções não podem ser criadas a partir de um modelo preterido.|
 |intentCount|Int32|Número de Intenções criadas a partir deste modelo.|
 |templateType|[deviceManagementTemplateType](../resources/intune-deviceintent-devicemanagementtemplatetype.md)|O tipo do modelo. Os valores possíveis são: `securityBaseline`, `specializedDevices`, `advancedThreatProtectionSecurityBaseline`, `deviceConfiguration`, `custom`, `securityTemplate`, `microsoftEdgeSecurityBaseline`, `microsoftOffice365ProPlusSecurityBaseline`, `deviceCompliance`, `deviceConfigurationForOffice365`, `cloudPC`, `firewallSharedSettings`.|
 |platformType|[policyPlatformType](../resources/intune-deviceintent-policyplatformtype.md)|A plataforma do modelo. Os valores possíveis são: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `windows10XProfile`, `all`.|
@@ -51,7 +51,7 @@ Entidade que representa uma coleção definida de configurações de dispositivo
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|
 |:---|:---|:---|
-|settings|[Coleção deviceManagementSettingInstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md)|Coleção de todas as configurações que este modelo tem|
+|configurações|[Coleção deviceManagementSettingInstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md)|Coleção de todas as configurações que este modelo tem|
 |categories|[Coleção deviceManagementTemplateSettingCategory](../resources/intune-deviceintent-devicemanagementtemplatesettingcategory.md)|Coleção de categorias de configuração dentro do modelo|
 |migratableTo|[Coleção deviceManagementTemplate](../resources/intune-deviceintent-devicemanagementtemplate.md)|Coleção de modelos que este modelo pode migrar para|
 

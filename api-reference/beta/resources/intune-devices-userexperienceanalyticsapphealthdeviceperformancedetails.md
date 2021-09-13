@@ -2,15 +2,15 @@
 title: tipo de recurso userExperienceAnalyticsAppHealthDevicePerformanceDetails
 description: A entidade de desempenho do dispositivo de análise de experiência do usuário contém detalhes de desempenho do dispositivo.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4e6905faac844f91925f875e893d710e7a8286e5
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 128628505c68938426416e4cbfd2dc8b6913031f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58817373"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59086250"
 ---
 # <a name="userexperienceanalyticsapphealthdeviceperformancedetails-resource-type"></a>tipo de recurso userExperienceAnalyticsAppHealthDevicePerformanceDetails
 
@@ -36,10 +36,10 @@ A entidade de desempenho do dispositivo de análise de experiência do usuário 
 |:---|:---|:---|
 |id|Cadeia de caracteres|O identificador exclusivo do objeto de desempenho do dispositivo de análise de experiência do usuário.|
 |eventDateTime|DateTimeOffset|A hora em que o evento ocorreu.|
-|eventType|String|O tipo do evento.|
+|eventType|Cadeia de Caracteres|O tipo do evento.|
 |appDisplayName|Cadeia de caracteres|O nome amigável do aplicativo para o qual o evento ocorreu.|
-|appPublisher|Cadeia de caracteres|O editor do aplicativo.|
-|appVersion|Cadeia de caracteres|A versão do aplicativo.|
+|appPublisher|Cadeia de Caracteres|O editor do aplicativo.|
+|appVersion|Cadeia de Caracteres|A versão do aplicativo.|
 |deviceId|Cadeia de caracteres|A id do dispositivo.|
 |deviceDisplayName|Cadeia de caracteres|O nome do dispositivo.|
 

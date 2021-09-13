@@ -2,15 +2,15 @@
 title: tipo denum groupPolicySettingType
 description: Tipo de configuração da política de grupo.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 569dfa626a636e0a0a7838025d22259e71341a96
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 3ce719ce3dbc408bfc3b052100f0a58a08c7ffd7
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58785112"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59086154"
 ---
 # <a name="grouppolicysettingtype-enum-type"></a>tipo denum groupPolicySettingType
 

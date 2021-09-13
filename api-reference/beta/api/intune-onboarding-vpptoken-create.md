@@ -2,15 +2,15 @@
 title: Criar vppToken
 description: Criar um novo objeto vppToken.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b62ac78b981527ae60b69a2496f86c85eefaa59d
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 526b86394a2ad91ab2eb511a1c5e43814a0b66bd
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58817142"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59087734"
 ---
 # <a name="create-vpptoken"></a>Criar vppToken
 
@@ -27,8 +27,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Delegado (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -53,7 +53,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar o vppTok
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Isso é gerado automaticamente quando o appleVolumePurchaseProgramToken é criado. É a Chave da entidade.|
+|id|Cadeia de caracteres|Isso é gerado automaticamente quando o appleVolumePurchaseProgramToken é criado. É a Chave da entidade.|
 |organizationName|Cadeia de caracteres|A organização associada ao Token do Programa de Compra por Volume da Apple|
 |vppTokenAccountType|[vppTokenAccountType](../resources/intune-shared-vpptokenaccounttype.md)|O tipo de programa de compra por volume ao qual o Token do Programa de Compra por Volume da Apple especificado está associado. Os valores possíveis são: `business`, `education`. Os valores possíveis são: `business`, `education`.|
 |appleId|Cadeia de caracteres|O Apple ID associado ao Token do Apple Volume Purchase Program.|
@@ -66,11 +66,11 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar o vppTok
 |lastSyncStatus|[vppTokenSyncStatus](../resources/intune-onboarding-vpptokensyncstatus.md)|Status atual de sincronização da última sincronização de aplicativo que foi feita usando o Token do Apple Volume Purchase Program. Os valores possíveis são: `none`, `inProgress`, `completed`, `failed`. Os valores possíveis são: `none`, `inProgress`, `completed`, `failed`.|
 |automaticallyUpdateApps|Boolean|Se os aplicativos para o token VPP serão automaticamente atualizados ou não.|
 |countryOrRegion|Cadeia de caracteres|Se os aplicativos para o token VPP serão automaticamente atualizados ou não.|
-|dataSharingConsentGranted|Booliano|Consentimento concedido para compartilhamento de dados com o Programa de Compra de Volume da Apple.|
+|dataSharingConsentGranted|Boleano|Consentimento concedido para compartilhamento de dados com o Programa de Compra de Volume da Apple.|
 |displayName|Cadeia de caracteres|Um nome amigável de token especificado pelo administrador.|
-|locationName|Cadeia de caracteres|Local do token retornado do VPP da Apple.|
-|claimTokenManagementFromExternalMdm|Boolean|Consentimento do administrador para permitir o gerenciamento de token de declaração do MDM externo.|
-|roleScopeTagIds|Coleção de cadeias de caracteres|IDs de marcas de escopo de função atribuídas a essa entidade.|
+|locationName|Cadeia de Caracteres|Local do token retornado do VPP da Apple.|
+|claimTokenManagementFromExternalMdm|Boleano|Consentimento do administrador para permitir o gerenciamento de token de declaração do MDM externo.|
+|roleScopeTagIds|String collection|IDs de marcas de escopo de função atribuídas a essa entidade.|
 
 
 
