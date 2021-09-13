@@ -2,15 +2,15 @@
 title: Registrar-se no gerenciamento de atualizações pelo serviço de implantação Windows Atualização para Empresas
 description: Quando um dispositivo é inscrito no gerenciamento de atualizações pelo serviço de implantação do Windows Update for Business, você pode usar o serviço de implantação para gerenciar o conteúdo fornecido do Windows Update para esse dispositivo.
 author: Alice-at-Microsoft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: w10
 doc_type: conceptualPageType
-ms.openlocfilehash: 7e20fd175e1dc70c843a39ea8b0b818f45d975f1aa63d92ad3374ebc1ac961ca
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: cfa1d9fe41acc0b8a872c8f0e8a9b64bb6750c90
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54225640"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59117533"
 ---
 # <a name="enroll-in-update-management-by-the-windows-update-for-business-deployment-service"></a>Registrar-se no gerenciamento de atualizações pelo serviço de implantação Windows Atualização para Empresas
 

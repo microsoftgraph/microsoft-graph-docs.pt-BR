@@ -1,14 +1,14 @@
 ---
 title: Fazer chamadas de API usando o Microsoft Graph SDKs
 description: Fornece instruções para criar solicitações HTTP Graph Microsoft usando os SDKs.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: DarrelMiller
-ms.openlocfilehash: 31b58dc69f1e002f1d3c7cb9394e2e13b087b5ae4adc8b9a5c07600ea9c4f936
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 84b6f8bddd8e44faaf9724db29d694d9f2b6512b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54205316"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59055812"
 ---
 # <a name="make-api-calls-using-the-microsoft-graph-sdks"></a>Fazer chamadas de API usando o Microsoft Graph SDKs
 

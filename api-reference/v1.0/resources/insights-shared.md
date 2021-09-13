@@ -2,15 +2,15 @@
 title: Tipo de recurso sharedInsight
 description: 'Uma visão que representa arquivos compartilhados com ou por um usuário específico. Os seguintes arquivos compartilhados são suportados:'
 author: simonhult
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: insights
 doc_type: resourcePageType
-ms.openlocfilehash: 73d02b3fa6ae6a9938b6c7174bbf942dcb6ed85ef2baa48ebc9f061908a9f369
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 3e9762c2da54f10e28e0337930972c6a6094ac65
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54184820"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59118583"
 ---
 # <a name="sharedinsight-resource-type"></a>Tipo de recurso sharedInsight
 

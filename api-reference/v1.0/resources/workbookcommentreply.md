@@ -1,16 +1,16 @@
 ---
 title: tipo de recurso workbookCommentReply
 description: Definição do tipo de recurso workbookCommentReply
-localization_priority: Normal
+ms.localizationpriority: medium
 author: grangeryy
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 9e71033e1665572e73dd672cd3a1e0e668b5f04ff1432f354fc27764055fa8ff
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 44ca6d6038aba3a12e9d96a63202aad3a5d0d59a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54177769"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59139454"
 ---
 # <a name="workbookcommentreply-resource-type"></a>tipo de recurso workbookCommentReply
 

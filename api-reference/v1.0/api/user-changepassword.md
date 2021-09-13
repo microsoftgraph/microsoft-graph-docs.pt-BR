@@ -1,16 +1,16 @@
 ---
 title: 'user: changePassword'
 description: Atualize sua senha.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 2adf91adb5eab959dc981f0532c4017e838852ab
-ms.sourcegitcommit: 486fe9c77d4d89c5416bb83e8c716e6918c47370
+ms.openlocfilehash: 7d7990beabcfc03df677c6f4c15c9ae5f82171b4
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53441692"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59090044"
 ---
 # <a name="user-changepassword"></a>user: changePassword
 
@@ -44,7 +44,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro    | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-| currentPassword | String | Sua senha atual.|
+| currentPassword | Cadeia de caracteres | Sua senha atual.|
 | newPassword | String | Sua nova senha.|
 
 ## <a name="response"></a>Resposta

@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso recurrencePattern
 description: 'Descreve a frequência com que um event recorrente se repete. '
-localization_priority: Normal
+ms.localizationpriority: medium
 author: harini84
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 24c489a721d5ca7a768a45b3772299ea741fda7b92f24786af5c438d8dac49e0
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 89e8c29f2e18259db0496fbe2cb93a4c70b086ed
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54152240"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59078641"
 ---
 # <a name="recurrencepattern-resource-type"></a>Tipo de recurso recurrencePattern
 

@@ -2,14 +2,14 @@
 title: Compartilhar ou delegar um calendário no Outlook
 description: No Outlook, um proprietário de calendário pode compartilhá-lo com outro usuário ou delegar outro usuário para gerenciar reuniões no calendário principal do proprietário.
 author: juforan
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: outlook
-ms.openlocfilehash: 3e86fa3ec032e17e5859bd9bb76c9db4cb91df4571e59178264e8ef1c764e3cd
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 5818ab77b54af482a5a970a21ba985831d02f2e7
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54237017"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59071788"
 ---
 # <a name="share-or-delegate-a-calendar-in-outlook"></a>Compartilhar ou delegar um calendário no Outlook
 
@@ -17,7 +17,7 @@ No Outlook, o proprietário do calendário pode compartilhá-lo com outro usuár
 
 O proprietário também pode delegar outro usuário a gerenciar reuniões no calendário _principal_ do proprietário. Delegados são sharees que podem visualizar todas as informações e ter acesso de gravação a eventos não privados. Eles também recebem solicitações de reunião e respostas, além de responder a solicitações de reunião em nome do proprietário. Além disso, o proprietário pode conceder permissões explícitas a delegados para exibir os eventos _particulares_ do proprietário no calendário. 
 
-Antes que o compartilhamento ou delegação de calendário entre em vigor, o proprietário envia um sharee ou delega um convite e o sharee ou o delegado aceita o convite ou adiciona explicitamente o calendário compartilhado ou delegado para acesso. O convite e a adição de um calendário compartilhado ou delegado ocorrem em um cliente do Outlook. 
+Antes de o compartilhamento ou delegação de calendário entrar em vigor, o proprietário envia um sharee ou delegado um convite e o sharee ou delegado aceita o convite ou adiciona explicitamente o calendário compartilhado ou delegado para acesso. O convite e a adição de um calendário compartilhado ou delegado ocorrem em um cliente Outlook. 
 
 Depois de configurar o compartilhamento ou a delegação no Outlook, os aplicativos poderão usar a API do Microsoft Graph para gerenciar o compartilhamento e a delegação.
 

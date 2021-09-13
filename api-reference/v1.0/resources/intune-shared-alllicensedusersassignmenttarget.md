@@ -2,15 +2,15 @@
 title: Tipo de recurso allLicensedUsersAssignmentTarget
 description: Representa uma atribuição para todos os usuários licenciados no locatário.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 45204092d0b4c01130b3ef724865d25d36d5785f85e8e78b3abfa6cfb53b539a
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 45163b81f44ed079545624e37829b4ec827e089a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54192289"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59134826"
 ---
 # <a name="alllicensedusersassignmenttarget-resource-type"></a>Tipo de recurso allLicensedUsersAssignmentTarget
 

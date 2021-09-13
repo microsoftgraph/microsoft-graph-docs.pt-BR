@@ -2,15 +2,15 @@
 title: Listar windowsHelloForBusinessAuthenticationMethods
 description: Obter uma lista dos objetos windowsHelloForBusinessAuthenticationMethod e suas propriedades.
 author: mmcla
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 6458ba926220d9e28ee3e5ad617c3d40cdf9afb4
-ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
+ms.openlocfilehash: 8a03d04bb74316c5030e1f34df7f3501f088e1fa
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51467929"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59123885"
 ---
 # <a name="list-windowshelloforbusinessauthenticationmethods"></a>Listar windowsHelloForBusinessAuthenticationMethods
 Namespace: microsoft.graph

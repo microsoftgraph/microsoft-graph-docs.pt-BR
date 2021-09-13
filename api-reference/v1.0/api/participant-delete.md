@@ -3,15 +3,15 @@ title: Excluir participante
 description: Exclua um participante específico na chamada.
 manager: zhengni
 author: jackry6350
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 6f1b5609cf9d86c14792525721e7dc40d1e888ac
-ms.sourcegitcommit: f99dc2b6c8b4cb6f9f74cd780dccc47a2bccfaa6
+ms.openlocfilehash: 5de80278f83cde511ef600f8bdb5c3b3cf9f914c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2021
-ms.locfileid: "58667749"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59090205"
 ---
 # <a name="delete-participant"></a>Excluir participante
 
@@ -24,7 +24,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---------------------------------------|:--------------------------------------------|
 | Delegado (conta corporativa ou de estudante)     | Não suportado                               |
 | Delegado (conta pessoal da Microsoft) | Não suportado                               |
-| Aplicativo                            | Nenhum                                        |
+| Aplicativo                            | Nenhum(a)                                        |
 
 A configuração de reunião de aplicativo no nível de locatário é necessária para permitir que um aplicativo chame essa API. O administrador do locatário deve chamar o cmdlet a seguir no PowerShell remoto do locatário para conceder a permissão ao aplicativo para chamar essa API. Para obter mais informações, [consulte Set-CsApplicationMeetingConfiguration](https://github.com/MicrosoftDocs/office-docs-powershell/blob/master/skype/skype-ps/skype/Set-CsApplicationMeetingConfiguration.md).
 ```
@@ -108,6 +108,8 @@ HTTP/1.1 204 No Content
 
 #### <a name="invite-a-participant-to-an-existing-call"></a>Convidar um participante para uma chamada existente
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "participant-invite-1"
@@ -135,6 +137,20 @@ Content-Length: 464
   "clientContext": "f2fa86af-3c51-4bc2-8fc0-475452d9764f"
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/participant-invite-1-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/participant-invite-1-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/participant-invite-1-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>Resposta
 
@@ -176,6 +192,8 @@ Content-Type: application/json
 ```
 #### <a name="delete-invited-participant-before-participant-is-added-to-the-roster"></a>Excluir participante convidado antes de o participante ser adicionado à lista de participantes
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "delete-participant"
@@ -183,6 +201,24 @@ Content-Type: application/json
 ```http
 DELETE https://graph.microsoft.com/beta/communications/calls/{id}/participants/{id}
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/delete-participant-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/delete-participant-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/delete-participant-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/delete-participant-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>Resposta
 

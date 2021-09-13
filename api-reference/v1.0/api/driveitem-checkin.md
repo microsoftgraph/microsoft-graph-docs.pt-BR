@@ -1,22 +1,22 @@
 ---
 author: learafa
-description: Faça check-in em um recurso de driveItem com check-out, que torna a versão do documento disponível para outras pessoas.
+description: Verifique um recurso driveItem de check-out, que disponibiliza a versão do documento para outras pessoas.
 title: 'driveItem: checkin'
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: d6b38b5418b29bd9e86e664c95299a159a82c0f4
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 6c98cf8ced988a769b12726b5d2b8a0f60f33c05
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48009916"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59090660"
 ---
 # <a name="driveitem-checkin"></a>driveItem: checkin
 
 Namespace: microsoft.graph
 
-Faça check-in em um recurso de **driveItem** com check-out, que torna a versão do documento disponível para outras pessoas.
+Verifique um recurso **driveItem** de check-out, que disponibiliza a versão do documento para outras pessoas.
 
 ## <a name="permissions"></a>Permissões
 
@@ -52,7 +52,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, a chamada de API retornará `204 No content` .
+Se tiver êxito, a chamada da API retornará `204 No content` .
 
 ## <a name="example"></a>Exemplo
 

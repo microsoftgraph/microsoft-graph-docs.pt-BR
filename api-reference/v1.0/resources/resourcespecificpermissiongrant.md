@@ -2,15 +2,15 @@
 title: tipo de recurso resourceSpecificPermissionGrant
 description: Especifica a permissão que um aplicativo específico do Azure AD tem.
 author: AkJo
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 221576c08af5e97979d2a42e8dc0cce483e3bf35
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: a12e57dc3d5ab99e2aa339883cc7ede06ff13e3f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58264154"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59094041"
 ---
 # <a name="resourcespecificpermissiongrant-resource-type"></a>tipo de recurso resourceSpecificPermissionGrant
 

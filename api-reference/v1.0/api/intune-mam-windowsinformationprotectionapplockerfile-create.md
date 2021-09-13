@@ -2,15 +2,15 @@
 title: Criar windowsInformationProtectionAppLockerFile
 description: Criar um novo objeto windowsInformationProtectionAppLockerFile.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 1c3aed639ae35f38572c1dfeba718b0d56a03de969714d7de5be710040f81e3b
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: a52de322989a971ac9e60dd5c831b3443a1cf3a3
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54238381"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59147147"
 ---
 # <a name="create-windowsinformationprotectionapplockerfile"></a>Criar windowsInformationProtectionAppLockerFile
 
@@ -54,7 +54,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar windowsI
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|displayName|Cadeia de caracteres|O nome amigável|
+|displayName|String|O nome amigável|
 |fileHash|Cadeia de caracteres|Hash SHA256 do arquivo|
 |file|Binária|Arquivo como uma matriz de bytes|
 |id|Cadeia de caracteres|Chave da entidade.|

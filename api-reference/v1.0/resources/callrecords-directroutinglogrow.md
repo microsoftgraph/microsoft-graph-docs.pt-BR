@@ -2,15 +2,15 @@
 title: Tipo de recurso directRoutingLogRow
 description: Representa uma linha de dados no log de chamadas de roteamento direto.
 author: williamlooney
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: b88634f3f6ab5d78852ca242a4d67265d267094d
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 3632d9305f82149a6711f48c8105fa5519353489
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58808038"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59025598"
 ---
 # <a name="directroutinglogrow-resource-type"></a>Tipo de recurso directRoutingLogRow
 
@@ -31,20 +31,20 @@ Representa uma linha de dados no log de chamadas de roteamento direto. Cada linh
 |callEndSubReason|Int32| Além dos códigos SIP, a Microsoft tem subcódigos próprios que indicam o problema específico.|
 |callType|Cadeia de caracteres| Tipo e direção de chamada.|
 |calleeNumber|Cadeia de caracteres| Número do usuário ou bot que recebeu a chamada. [Formato E.164,](https://en.wikipedia.org/wiki/E.164) mas pode incluir dados adicionais.|
-|callerNumber|Cadeia de caracteres| Número do usuário ou bot que fez a chamada. [Formato E.164,](https://en.wikipedia.org/wiki/E.164) mas pode incluir dados adicionais.|
+|callerNumber|String| Número do usuário ou bot que fez a chamada. [Formato E.164,](https://en.wikipedia.org/wiki/E.164) mas pode incluir dados adicionais.|
 |correlationId|Cadeia de caracteres|Identificador da chamada que você pode usar ao chamar o Suporte da Microsoft. GUID.|
 |duração|Int32| Duração da chamada em segundos.|
 |endDateTime|DateTimeOffset| Só existe para chamadas bem-sucedidas (totalmente estabelecidas). Hora em que a chamada terminou.|
 |failureDateTime|DateTimeOffset| Só existe para chamadas com falha (não totalmente estabelecidas).|
-|finalSipCodePhrase|Cadeia de caracteres| Descrição do código SIP e subcódigo da Microsoft.|
+|finalSipCodePhrase|String| Descrição do código SIP e subcódigo da Microsoft.|
 |finalSipCode|Int32| O código com o qual a chamada terminou, [RFC 3261](https://tools.ietf.org/html/rfc3261).|
 |id|Cadeia de caracteres|Identificador de chamada exclusivo. GUID.|
 |inviteDateTime|DateTimeOffset| Quando o convite inicial foi enviado.|
-|mediaBypassEnabled|Boleano| Indica se o tronco foi habilitado para bypass de mídia ou não.|
-|mediaPathLocation|Cadeia de caracteres| O datacenter usado para o caminho de mídia em chamada não ignorada.|
-|signalingLocation|Cadeia de caracteres| O datacenter usado para sinalização para chamadas de bypass e não bypass.|
+|mediaBypassEnabled|Boolean| Indica se o tronco foi habilitado para bypass de mídia ou não.|
+|mediaPathLocation|String| O datacenter usado para o caminho de mídia em chamada não ignorada.|
+|signalingLocation|String| O datacenter usado para sinalização para chamadas de bypass e não bypass.|
 |startDateTime|DateTimeOffset|Hora do início da chamada.<br/>Para chamadas com falha e sem resposta, isso pode ser igual a tempo de convite ou falha.|
-|successfulCall|Boleano| Sucesso ou tentativa.|
+|successfulCall|Booliano| Sucesso ou tentativa.|
 |trunkFullyQualifiedDomainName|Cadeia de caracteres| Nome de domínio totalmente qualificado do controlador de borda de sessão.|
 |userDisplayName|Cadeia de caracteres|Nome de exibição do usuário.|
 |userId|Cadeia de caracteres|Chamando a ID do usuário Graph. Essa e outras informações de usuário serão nulas/vazias para tipos de chamada de bot. GUID.|

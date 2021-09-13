@@ -2,15 +2,15 @@
 title: Atualizar adminConsentRequestPolicy
 description: Atualize as propriedades de um objeto adminConsentRequestPolicy.
 author: psignoret
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 57c74a79541bd2244792035d64587769336abfd3
-ms.sourcegitcommit: 08d47a31c48fd69ae4fcee26e34fdd65ad1ba69f
+ms.openlocfilehash: 7cd9c73eca68ba9858ea82601c80ce4e7967f72f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51509167"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59080462"
 ---
 # <a name="update-adminconsentrequestpolicy"></a>Atualizar adminConsentRequestPolicy
 
@@ -24,8 +24,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|Policy.ReadWrite.ConsentRequest, Directory.ReadWrite.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta corporativa ou de estudante)|Policy.ReadWrite.ConsentRequest, Directory.ReadWrite.All|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|Policy.ReadWrite.ConsentRequest, Directory.ReadWrite.All|
 
 Ao chamar em nome de um usuário, o usuário precisa pertencer à função de diretório [Administrador Global.](/azure/active-directory/roles/permissions-reference)

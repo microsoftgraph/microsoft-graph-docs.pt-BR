@@ -2,15 +2,15 @@
 title: Tipo de recurso recordingInfo
 description: Representa as informações de gravação de um participante.
 author: ananmishr
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: aea3bcbcae882ff58f664f325efdfa9490773bde7d746af3a5341d6e0f288ef6
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 54e230ca6844d974cf918325aab48e898d87e08b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54134977"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59078648"
 ---
 # <a name="recordinginfo-resource-type"></a>Tipo de recurso recordingInfo
 
@@ -23,7 +23,7 @@ Representa as informações de gravação de um participante.
 | Propriedade        | Tipo    | Descrição|
 |:----------------|:--------|:----------|
 | Iniciador     | [identitySet](identitySet.md) | As identidades do iniciador de gravação. |
-| recordingStatus | Cadeia de caracteres | Os valores possíveis são: `unknown` `notRecording` , , ou `recording` `failed` . |
+| recordingStatus | String | Os valores possíveis são: `unknown` `notRecording` , , ou `recording` `failed` . |
 
 ## <a name="json-representation"></a>Representação JSON
 

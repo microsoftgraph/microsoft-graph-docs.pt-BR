@@ -2,15 +2,15 @@
 title: 'Range: EntireColumn'
 description: Obtém um objeto que representa toda a coluna do intervalo.
 author: lumine2008
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: c9ee39c01e85b2525f4dc798c8c775b217733c53
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 1da5d92ca8a6b4944e21e586a84b959381d23ed6
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52053038"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59130332"
 ---
 # <a name="range-entirecolumn"></a>Range: EntireColumn
 
@@ -84,7 +84,7 @@ GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/{name}/r
 
 
 ##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto de resposta exibido aqui pode ser encurtado para legibilidade.
+Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser reduzido para facilitar a leitura.
 <!-- {
   "blockType": "response",
   "truncated": true,

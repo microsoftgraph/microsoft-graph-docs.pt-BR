@@ -2,15 +2,15 @@
 title: Tipo de recurso chatMessageFromIdentitySet
 description: Representa o remetente de uma mensagem em um chat ou canal.
 author: RamjotSingh
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 58f5654dc8019950134c25cdc50529b29032d8870462d46a46481b489f4ba15a
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 1f9b06063976e336a3e316c4ef5ca2c6ce9de622
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54192576"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59094418"
 ---
 # <a name="chatmessagefromidentityset-resource-type"></a>Tipo de recurso chatMessageFromIdentitySet
 

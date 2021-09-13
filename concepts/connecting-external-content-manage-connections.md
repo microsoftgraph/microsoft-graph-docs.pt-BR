@@ -1,16 +1,16 @@
 ---
 title: Criar, atualizar e excluir conexões no Microsoft Graph
 description: Aprenda a usar o Microsoft Graph para criar e gerenciar conexões
-localization_priority: Priority
+ms.localizationpriority: high
 author: mecampos
 doc_type: conceptualPageType
 ms.prod: search
-ms.openlocfilehash: 1e6fc028a90013c9defebd944bb4efdd5b25f21f6272d7126590c447cef828c1
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: e9e0b6c1c1e79ab6af0dc9cd67afec066844b3e4
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54184456"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59139286"
 ---
 <!---<author of this doc: rsamai>--->
 

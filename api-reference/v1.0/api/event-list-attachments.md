@@ -2,15 +2,15 @@
 title: Listar anexos
 description: Recupera uma lista de objetos attachment anexados a um evento.
 author: svpsiva
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: e324d67cd6e7c57d3a936a0ec6d6e9ace3ec5df0
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 80c1b52258051f6cbee731b98ebe56335ed15e64
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52039584"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59140763"
 ---
 # <a name="list-attachments"></a>Listar anexos
 
@@ -105,7 +105,7 @@ GET https://graph.microsoft.com/v1.0/me/events/{id}/attachments
 ---
 
 ##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto de resposta exibido aqui pode ser encurtado para legibilidade.
+Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser reduzido para facilitar a leitura.
 <!-- {
   "blockType": "response",
   "name": "event_get_attachments_v1",

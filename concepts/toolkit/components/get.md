@@ -1,14 +1,14 @@
 ---
 title: Obter componente no Microsoft Graph Toolkit
 description: Um componente Get permite que você faça qualquer consulta GET da Microsoft Graph diretamente em seu HTML.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: nmetulev
-ms.openlocfilehash: c2bae48543a4068c301adb4f5872d580414f4552070793e923980fa15c2dbcda
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 0f2a6f618c66e7517f71200470864d0fe498447f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54189132"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59127889"
 ---
 # <a name="get-component-in-the-microsoft-graph-toolkit"></a>Obter componente no Microsoft Graph Toolkit
 
@@ -45,7 +45,7 @@ Você pode usar vários atributos para alterar o comportamento do componente. O 
 | --- | --- |
 | refresh(force?:boolean) | Chame o método para atualizar os dados. Por padrão, a interface do usuário só será atualizada se os dados mudarem. Passe `true` para forçar o componente a atualizar.  |
 
-## <a name="events"></a>Eventos
+## <a name="events"></a>Events
 
 Evento | Quando é emitido | Dados personalizados | Cancelável | Bolhas | Funciona com modelo personalizado
 ------|-------------------|--------------|:-----------:|:---------:|:---------------------------:|

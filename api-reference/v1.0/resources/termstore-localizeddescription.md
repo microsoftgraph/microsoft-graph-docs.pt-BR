@@ -2,15 +2,15 @@
 title: Tipo de recurso localizedDescription
 description: Representa a descrição localizada usada para descrever um termo no armazenamento de termos.
 author: vishriv
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: taxonomy
 doc_type: resourcePageType
-ms.openlocfilehash: ea44c35e4b8f7dd5eb1eadc7cbb6e4861a402b4d
-ms.sourcegitcommit: 9b8abc940a68dac6ee5da105ca29800cb59775f6
+ms.openlocfilehash: 856b0632e0ed1d167d45be55437c4fee97d99e4e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "58514875"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59084059"
 ---
 # <a name="localizeddescription-resource-type"></a>Tipo de recurso localizedDescription
 

@@ -2,15 +2,15 @@
 title: Tipo de recurso omaSettingString
 description: Definição de cadeia de caracteres para configurações de OMA.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 5aaf8b1b50373e8339c8527fba0409fb27631b0512e979e367875f57769b875d
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 8f67c1fb070d40822e13dede1a8e384796ebfb46
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54182480"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59146825"
 ---
 # <a name="omasettingstring-resource-type"></a>Tipo de recurso omaSettingString
 
@@ -27,7 +27,7 @@ Herda de [omaSetting](../resources/intune-deviceconfig-omasetting.md)
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |displayName|Cadeia de caracteres|Nome de exibição. Herda de [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
-|description|Cadeia de caracteres|Descrição. Herda de [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
+|description|String|Descrição. Herda de [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
 |omaUri|Cadeia de caracteres|OMA. Herda de [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
 |value|Cadeia de caracteres|Valor.|
 

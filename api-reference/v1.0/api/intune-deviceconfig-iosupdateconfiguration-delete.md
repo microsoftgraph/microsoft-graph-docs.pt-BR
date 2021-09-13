@@ -2,15 +2,15 @@
 title: Excluir iosUpdateConfiguration
 description: Exclui iosUpdateConfiguration.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2e243d0d0864aeda88d3ed358a9117160123e1b0b42990618cdb6eb890bf7ba7
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 5e6fa4890a2c76c7165fab2b48c6d668dfee5022
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54172348"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59099732"
 ---
 # <a name="delete-iosupdateconfiguration"></a>Excluir iosUpdateConfiguration
 

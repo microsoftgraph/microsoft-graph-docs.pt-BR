@@ -1,16 +1,16 @@
 ---
 title: Yammer de uso do dispositivo
 description: Os relatórios de uso do dispositivo Yammer informações sobre quais dispositivos seus usuários utilizam para se envolver Yammer. Você pode exibir o número de usuários por tipo de dispositivo em um período de tempo selecionado e exibir detalhes por usuário.
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: reports
 author: sarahwxy
 doc_type: conceptualPageType
-ms.openlocfilehash: c5c15e7a2bc55c90ee129cc6d08b442e1fe399bfeb9c5d865743fd00decae364
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 7b5be6f8c5594239aac6a7154b66e08fe04a6a10
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54243298"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59139328"
 ---
 # <a name="yammer-device-usage-reports"></a>Yammer de uso do dispositivo
 

@@ -1,16 +1,16 @@
 ---
 title: Atualizar identityProvider
 description: Atualizar as propriedades de um identityProvider existente
-localization_priority: Priority
+ms.localizationpriority: high
 author: namkedia
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: d0b14a639e0ea852f0ad2da2687314e079fe8bed
-ms.sourcegitcommit: a598c09b73e4e43eea5f4aaefea7ffe062e15c39
+ms.openlocfilehash: 0838555515c9cd12a081c04b4724e3fb93606df7
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/22/2021
-ms.locfileid: "53534492"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59100124"
 ---
 # <a name="update-identityprovider-deprecated"></a>Atualizar identityProvider (preterido)
 Namespace: microsoft.graph
@@ -52,7 +52,7 @@ No corpo da solicitação, fornece um objeto JSON com uma ou mais propriedades q
 |Propriedade|Tipo|Descrição|
 |:---------------|:--------|:----------|
 |clientId|Cadeia de caracteres|A ID do cliente para o aplicativo. Essa é a ID do cliente obtida ao registrar o aplicativo no provedor de identidade.|
-|clientSecret|Cadeia de caracteres|O segredo do cliente para o aplicativo. Esse é o segredo do cliente obtido ao registrar o aplicativo no provedor de identidade.|
+|clientSecret|Cadeia de caracteres|O segredo do cliente para o aplicativo. Este é o segredo do cliente obtido ao registrar o aplicativo com o provedor de identidade.|
 |nome|Cadeia de caracteres|O nome exclusivo do provedor de identidade.|
 
 ## <a name="response"></a>Resposta
@@ -65,6 +65,8 @@ O exemplo a seguir atualiza a definição da vida útil do token **identityProvi
 
 ##### <a name="request"></a>Solicitação
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update-identityprovider"
@@ -79,6 +81,24 @@ Content-length: 41
     "clientSecret": "1111111111111"
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-identityprovider-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-identityprovider-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-identityprovider-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-identityprovider-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ##### <a name="response"></a>Resposta
 

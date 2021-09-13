@@ -2,15 +2,15 @@
 author: swapnil1993
 title: 'contentType: addCopy'
 description: Adicione uma cópia de um tipo de conteúdo de site a uma lista.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: 819e0c3bcf5455153d53eb8b84f423f99afebe67
-ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
+ms.openlocfilehash: 78840b24ba66884eac999713d76e287f14f75ec0
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58696456"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59147693"
 ---
 # <a name="contenttype-addcopy"></a>contentType: addCopy
 Namespace: microsoft.graph
@@ -56,7 +56,7 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta ação.
 
 |Parâmetro|Tipo|Descrição|
 |-|-|-|
-|contentType| cadeia de caracteres | URL canônica para o tipo de conteúdo do site que será copiado para a lista. Obrigatório.|
+|contentType| string | URL canônica para o tipo de conteúdo do site que será copiado para a lista. Obrigatório.|
 
 ## <a name="response"></a>Resposta
 
@@ -66,6 +66,8 @@ Se tiver êxito, essa chamada retornará um código `201 Created` de resposta e 
 
 ### <a name="request"></a>Solicitação
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "contenttype_addcopy"
@@ -79,6 +81,24 @@ Content-Type: application/json
   "contentType": "https://graph.microsoft.com/v1.0/sites/{site-id}/contentTypes/0x0101"
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/contenttype-addcopy-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/contenttype-addcopy-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/contenttype-addcopy-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/contenttype-addcopy-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### <a name="response"></a>Resposta

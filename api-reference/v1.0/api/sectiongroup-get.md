@@ -1,23 +1,23 @@
 ---
-title: Obter o myseção
-description: Recupere as propriedades e os relacionamentos de um objeto de objeto de seção.
-localization_priority: Normal
+title: Obter sectionGroup
+description: Recupere as propriedades e as relações de um objeto sectionGroup.
+ms.localizationpriority: medium
 author: jewan-microsoft
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: 0e15caf09b1955bb583a63e767856ac03684ff16
-ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
+ms.openlocfilehash: 9189f017eacc5531cbfcff41709f64175b3970f7
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48458896"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59085130"
 ---
-# <a name="get-sectiongroup"></a>Obter o myseção
+# <a name="get-sectiongroup"></a>Obter sectionGroup
 
 Namespace: microsoft.graph
 
-Recupere as propriedades e os relacionamentos de um objeto de objeto de [seção](../resources/sectiongroup.md) .
-## <a name="permissions"></a>Permissions
+Recupere as propriedades e as relações de um [objeto sectionGroup.](../resources/sectiongroup.md)
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
@@ -37,7 +37,7 @@ GET /sites/{id}/onenote/sectionGroups/{id}
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
 
-A consulta padrão expande `parentNotebook` e seleciona suas `id` `name` Propriedades, e `self` . `expand`Os valores válidos para os grupos de seções são `parentNotebook` e `parentSectionGroup` .
+A consulta padrão expande `parentNotebook` e seleciona suas propriedades , e `id` `name` `self` . Os `expand` valores válidos para grupos de seções `parentNotebook` são e `parentSectionGroup` .
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Tipo | Descrição|

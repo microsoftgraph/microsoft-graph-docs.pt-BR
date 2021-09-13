@@ -2,15 +2,15 @@
 title: Obter domínio
 description: Recupere as propriedades e as relações do objeto domain.
 author: adimitui
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 5ff05e7df119afe6d858453d65a3db29de8ee0d8
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 17b1e2b9220e4a9d8ba657b327c774121adf05e2
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52052422"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59056689"
 ---
 # <a name="get-domain"></a>Obter domínio
 
@@ -25,9 +25,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Directory.Read.All    |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | Domain.Read.All, Domain.ReadWrite.All, Directory.Read.All |
+|Delegada (conta corporativa ou de estudante) | Domain.Read.All, Domain.ReadWrite.All, Directory.Read.All    |
+|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
+|Aplicativo | Domain.Read.All, Domain.ReadWrite.All, Directory.Read.All  |
 
 ## <a name="http-request"></a>Solicitação HTTP
 

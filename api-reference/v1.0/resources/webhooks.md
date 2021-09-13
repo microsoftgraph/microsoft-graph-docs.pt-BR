@@ -1,16 +1,16 @@
 ---
 title: Usar a API do Microsoft Graph para acessar as notificações de alteração
 description: Fornecer notificações de alteração aos clientes.
-localization_priority: Priority
+ms.localizationpriority: high
 author: Jumaodhiss
 ms.prod: change-notifications
 doc_type: conceptualPageType
-ms.openlocfilehash: e894f6635bf3828edfa47f2cef4e1cbf263407bc
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: c1704b2bb745f34f4dd87ba9fe63d8cf66ecc087
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58785672"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59139475"
 ---
 # <a name="use-the-microsoft-graph-api-to-get-change-notifications"></a>Usar a API do Microsoft Graph para acessar as notificações de alteração
 

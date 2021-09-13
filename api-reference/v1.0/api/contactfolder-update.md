@@ -2,15 +2,15 @@
 title: Atualizar contactfolder
 description: Atualiza as propriedades do objeto contactfolder.
 author: kevinbellinger
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: b0dca141622a784702a2a2153774d8564d4ccc55
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: c0b67c1b74ae7d5b429eec5c8636e0ad27618ca6
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52035712"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59147728"
 ---
 # <a name="update-contactfolder"></a>Atualizar contactfolder
 
@@ -43,7 +43,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|displayName|Cadeia de caracteres|O nome de exibição da pasta.|
+|displayName|String|O nome de exibição da pasta.|
 |parentFolderId|Cadeia de caracteres|A ID da pasta pai da pasta.|
 
 ## <a name="response"></a>Resposta
@@ -87,7 +87,7 @@ Content-length: 84
 ---
 
 ##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto de resposta exibido aqui pode ser encurtado para legibilidade.
+Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser reduzido para facilitar a leitura.
 <!-- {
   "blockType": "response",
   "truncated": true,

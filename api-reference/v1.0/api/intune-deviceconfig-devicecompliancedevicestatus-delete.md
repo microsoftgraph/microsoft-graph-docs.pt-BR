@@ -2,15 +2,15 @@
 title: Excluir deviceComplianceDeviceStatus
 description: Exclui deviceComplianceDeviceStatus.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f9ef73144f5b205c4d6361787badbe4618b9daf3cdaa6a0a7bcaaee46afdd9e3
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 0a0bfb952754829adf6e7eb8faf2391fa696d3b5
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54121806"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59140112"
 ---
 # <a name="delete-devicecompliancedevicestatus"></a>Excluir deviceComplianceDeviceStatus
 

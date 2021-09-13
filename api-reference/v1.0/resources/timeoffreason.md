@@ -2,15 +2,15 @@
 title: Tipo de recurso timeOffReason
 description: Representa um motivo válido para o tempo de folga na agenda.
 author: akumar39
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: resourcePageType_
-ms.openlocfilehash: fc16be17d4aecb377d25eff7770f3e8b3881f5f1ce936310a78eae1d0d5476a7
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: e24c59f10e29bf3ab9e6a4948a5dc61d371d1e42
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54159803"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59134322"
 ---
 # <a name="timeoffreason-resource-type"></a>Tipo de recurso timeOffReason
 
@@ -26,7 +26,7 @@ Representa um motivo válido para uma [instância timeOff](timeoff.md) em um [cr
 |[Criar](../api/schedule-post-timeoffreasons.md) | [timeOffReason](timeoffreason.md) | Crie um novo **timeOffReason**.|
 |[Obter](../api/timeoffreason-get.md) | [timeOffReason](timeoffreason.md) | Obter um **timeOffReason** por ID.|
 |[Replace](../api/timeoffreason-put.md) | [timeOffReason](timeoffreason.md) | Substitua um **timeOffReason**.|
-|[Delete](../api/timeoffreason-delete.md) | None | Marque um **timeOffReason** como inativo.|
+|[Delete](../api/timeoffreason-delete.md) | Nenhum(a) | Marque um **timeOffReason** como inativo.|
 
 ## <a name="properties"></a>Propriedades
 |Nome          |Tipo           |Descrição                                                                                 |

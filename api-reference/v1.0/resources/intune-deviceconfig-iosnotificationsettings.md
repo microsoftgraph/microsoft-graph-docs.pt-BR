@@ -2,15 +2,15 @@
 title: Tipo de recurso iosNotificationSettings
 description: Um item que descreve a configuração de notificação.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: bb7aaa90e297375bd73af682323b249dfcfc17b1db7879ee8858793245e05d5b
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 44ff4f81719cc34583ae67173e867b7a955076a2
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54189559"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59118331"
 ---
 # <a name="iosnotificationsettings-resource-type"></a>Tipo de recurso iosNotificationSettings
 

@@ -2,15 +2,15 @@
 title: Tipo de recurso de chamada
 description: O recurso **call** é criado quando há uma chamada recebida para o aplicativo ou quando o aplicativo cria uma nova chamada realizada por meio de um `POST` em `communications/calls`.
 author: ananmishr
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: e34757802a0e0c6dc3585069577fe12bb6258eac
-ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
+ms.openlocfilehash: 543bf517e96b23f2d5899e829bd7c6dc2b3df6cf
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2021
-ms.locfileid: "58452754"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59104373"
 ---
 # <a name="call-resource-type"></a>Tipo de recurso de chamada
 

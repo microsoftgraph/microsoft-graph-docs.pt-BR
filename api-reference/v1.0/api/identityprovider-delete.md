@@ -1,16 +1,16 @@
 ---
 title: Excluir identityProvider
 description: Excluir um identityProvider existente.
-localization_priority: Priority
+ms.localizationpriority: high
 author: namkedia
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 748385919f1c70954366834478e507d95917811e
-ms.sourcegitcommit: 5bb981b4853663354a566d4a4a5cbf288939e441
+ms.openlocfilehash: fa584ec588bcea797cb343435e024863b6a1c546
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "53580657"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59114411"
 ---
 # <a name="delete-identityprovider-deprecated"></a>Excluir IdentityProvider (obsoleto)
 Namespace: microsoft.graph

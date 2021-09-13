@@ -2,15 +2,15 @@
 title: Listar notificationMessageTemplates
 description: Listar propriedades e relações dos objetos notificationMessageTemplate.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b73dd2577b8824c5ec0226a9ccd86519d5fa18b13d98644cad6b555a8d0a7f22
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: c0027623f1c1399745e18d7b0016fa275170bcfb
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54130685"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59147000"
 ---
 # <a name="list-notificationmessagetemplates"></a>Listar notificationMessageTemplates
 

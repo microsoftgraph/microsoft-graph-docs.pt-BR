@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso signInFrequencySessionControl
 description: Controle de sessão para impor a frequência de signin.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: videor
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 5553e4ba3d3c51d44c4f212ca9a2885ac0037a88b1e2d6226cb69246904b0fba
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: f144a2b41b9b2cc9c1675c075d43b1add647b0c2
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54124168"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59139608"
 ---
 # <a name="signinfrequencysessioncontrol-resource-type"></a>Tipo de recurso signInFrequencySessionControl
 

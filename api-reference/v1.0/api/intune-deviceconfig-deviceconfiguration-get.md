@@ -2,15 +2,15 @@
 title: Get deviceConfiguration
 description: Ler propriedades e relações do objeto deviceConfiguration.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: aa2308c6ded1d0dc5c6ab1cba38cd101da7acdf728e37eaeed98579675bae8ef
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 771934e33f7daadea39ee0226b279c1ce943967b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54243949"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59079755"
 ---
 # <a name="get-deviceconfiguration"></a>Get deviceConfiguration
 

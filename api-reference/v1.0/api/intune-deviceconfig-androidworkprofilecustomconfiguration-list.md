@@ -2,15 +2,15 @@
 title: Listar androidWorkProfileCustomConfigurations
 description: Listar propriedades e relações dos objetos androidWorkProfileCustomConfiguration.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d9f737a803d43720fa83753f9b4220bfddabc2666ad59a002f6eaf21a6d89f30
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: d7fc0e67d24e8a061e433bf988516a7af33fdbdd
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54212533"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59140273"
 ---
 # <a name="list-androidworkprofilecustomconfigurations"></a>Listar androidWorkProfileCustomConfigurations
 

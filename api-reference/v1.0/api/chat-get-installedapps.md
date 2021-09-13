@@ -2,15 +2,15 @@
 title: Obter o aplicativo instalado no chat
 description: Obtenha o aplicativo instalado em um chat.
 author: subray
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: dc63966e7ccffd0b2d4be61bee95c8ba540ccad2
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 8e9f4e777f6334c0c99b8f1725074369aa03ef7d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50958339"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59147833"
 ---
 # <a name="get-installed-app-in-chat"></a>Obter o aplicativo instalado no chat
 

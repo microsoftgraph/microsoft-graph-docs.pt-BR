@@ -1,22 +1,22 @@
 ---
 title: 'directoryObject: validateProperties'
 description: Valide se o nome de exibição ou apelido de email de um grupo da Microsoft 365 está em conformidade com as políticas de nomenclatura.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: keylimesoda
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 41734da2f35e364df34088d220fdd54e287c2926
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 13bb77e048d0d28c272cb6b067957b451212e857
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50448564"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59046329"
 ---
 # <a name="directoryobject-validateproperties"></a>directoryObject: validateProperties
 
 Namespace: microsoft.graph
 
-Valide se o nome de exibição ou apelido de email de um grupo da Microsoft 365 está em conformidade com as políticas de nomenclatura.  Os clientes podem usar essa API para determinar se um nome de exibição ou apelido de email é válido antes de tentar [criar](group-post-groups.md) um grupo do Microsoft 365. Para validar as propriedades de um grupo existente, use a função [group: validateProperties.](group-validateproperties.md)
+Valide se o nome de exibição ou apelido de email de um grupo da Microsoft 365 está em conformidade com as políticas de nomenclatura.  Os clientes podem usar essa API para determinar se um nome de exibição ou apelido de email é válido antes de tentar [criar](group-post-groups.md) um Microsoft 365 grupo. Para validar as propriedades de um grupo existente, use a função [group: validateProperties.](group-validateproperties.md)
 
 As seguintes validações de política são executadas para as propriedades de nome de exibição e apelido de email:
 1. Validar a política de nomeação de prefixo e sufixo

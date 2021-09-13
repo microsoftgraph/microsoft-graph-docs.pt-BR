@@ -1,16 +1,16 @@
 ---
 title: Listar offerShiftRequest
 description: Recupere as propriedades e as relações de todos os objetos offerShiftRequest em uma equipe.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 5692cc3bc2d8a4f031d459053f7d661ce5fd687d
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: dbc357265241f8be890d57a841e0ea04a1644d1f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52050406"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59056295"
 ---
 # <a name="list-offershiftrequest"></a>Listar offerShiftRequest
 
@@ -24,8 +24,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | Schedule.ReadWrite.All, Group.ReadWrite.All |
-| Delegado (conta pessoal da Microsoft) | Sem suporte. |
+| Delegada (conta corporativa ou de estudante)     | Schedule.ReadWrite.All, Group.ReadWrite.All |
+| Delegada (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo                            | Schedule.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP

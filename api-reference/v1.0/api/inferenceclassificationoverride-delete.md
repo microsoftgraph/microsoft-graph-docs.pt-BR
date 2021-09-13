@@ -1,16 +1,16 @@
 ---
 title: Excluir inferenceClassificationOverride
 description: Exclua uma substituição especificada de acordo com sua ID.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: abheek-das
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: df8a850a220c8f1d60329b4adfc658e9eaad9bf9
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: e99f04e432ffeb0b41cc3d78d25c3118408162d4
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52050448"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59045564"
 ---
 # <a name="delete-inferenceclassificationoverride"></a>Excluir inferenceClassificationOverride
 
@@ -76,7 +76,7 @@ DELETE https://graph.microsoft.com/v1.0/me/inferenceClassification/overrides/98f
 ---
 
 ##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto de resposta exibido aqui pode ser encurtado para legibilidade.
+Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser reduzido para facilitar a leitura.
 <!-- {
   "blockType": "response",
   "truncated": true

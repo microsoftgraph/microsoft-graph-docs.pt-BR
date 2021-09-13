@@ -2,15 +2,15 @@
 title: Enviar email
 description: Enviar a mensagem especificada no corpo da solicitação usando o formato JSON ou MIME.
 author: abheek-das
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 460e09371869fec98b24bd81dc5ab44cc8b199b8
-ms.sourcegitcommit: 503c72036c376a30e08c29df8e7730a7afcab66e
+ms.openlocfilehash: 28dfcd9315e875cc5637120c4b48878aa03582f9
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52870385"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59109672"
 ---
 # <a name="send-mail"></a>Enviar email
 

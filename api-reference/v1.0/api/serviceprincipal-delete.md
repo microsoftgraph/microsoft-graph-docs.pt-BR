@@ -1,16 +1,16 @@
 ---
 title: Excluir servicePrincipal
-description: Exclua servicePrincipal.
-localization_priority: Normal
+description: Excluir servicePrincipal.
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: 8c73778adc2f4e7bf4f933ca1775656e1d7ce2fc
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: fb898596825767707b680014eb9a4ba2608883f7
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50134617"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59110120"
 ---
 # <a name="delete-serviceprincipal"></a>Excluir servicePrincipal
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [Exclua um objeto servicePrincipal.](../resources/serviceprincipal.md)
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |

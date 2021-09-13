@@ -2,15 +2,15 @@
 title: Listar educationClasses
 description: Obter uma lista dos objetos educationClass e suas propriedades.
 author: mlafleur
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: c92ec9149514ca719b5431aedccd8e30883bb4fd648c9e6a4e944ee2e6315083
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 973651c8b6a96634e20538f7baeba8100a16e2b7
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57407123"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59147469"
 ---
 # <a name="list-educationclasses"></a>Listar educationClasses
 
@@ -24,7 +24,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 | :------------------------------------- | :------------------------------------------ |
-| Delegada (conta corporativa ou de estudante)     | EduRoster.ReadBasic                         |
+| Delegado (conta corporativa ou de estudante)     | EduRoster.ReadBasic                         |
 | Delegado (conta pessoal da Microsoft) | Sem suporte                               |
 | Aplicativo                            | EduRoster.Read.All, EduRoster.ReadWrite.All |
 

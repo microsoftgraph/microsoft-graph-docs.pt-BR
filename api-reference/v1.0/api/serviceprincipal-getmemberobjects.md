@@ -1,16 +1,16 @@
 ---
 title: 'servicePrincipal: getMemberObjects'
 description: Obtenha a lista de grupos e funções de diretório dos quais essa entidade de serviço é membro.  A verificação é transitiva.
-localization_priority: Priority
+ms.localizationpriority: high
 doc_type: apiPageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: b6da812b03bedcb78c43ae581e3aab99dfb2961f
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 6fbd6646201a37198334f748d5580591714f9f03
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52050329"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59110043"
 ---
 # <a name="serviceprincipal-getmemberobjects"></a>servicePrincipal: getMemberObjects
 
@@ -91,7 +91,7 @@ Content-length: 33
 
 ### <a name="response"></a>Resposta
 Veja a seguir um exemplo da resposta. 
->Observação: o objeto de resposta exibido aqui pode ser encurtado para legibilidade.
+>Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -2,15 +2,15 @@
 title: Criar identityApiConnector
 description: Crie um novo objeto identityApiConnector.
 author: nickgmicrosoft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 8cdebdaa8ed86e6d6d60ad07c987b2152baf6737
-ms.sourcegitcommit: 32c83957ee69f21a10cd5f759adb884ce4b41c52
+ms.openlocfilehash: 56a918bccf37edff4a53cc18cc6c12ec9232bd8a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51920353"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59045830"
 ---
 # <a name="create-identityapiconnector"></a>Criar identityApiConnector
 
@@ -26,12 +26,12 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 | :------------------------------------- | :------------------------------------------ |
 | Delegada (conta corporativa ou de estudante)     | APIConnectors.ReadWrite.All |
 | Delegada (conta pessoal da Microsoft) | Sem suporte.  |
-| Application                            | APIConnectors.ReadWrite.All |
+| Aplicativo                            | APIConnectors.ReadWrite.All |
 
 A conta de trabalho ou de estudante precisa pertencer a uma das seguintes funções:
 
 * Administrador global
-* Administrador de Fluxo de Usuário de Identidade Externa
+* Administrador de identidade externa Flow usuário
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -59,8 +59,8 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [identit
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|displayName|String| O nome do conector da API. |
-|targetUrl|String| A URL do ponto de extremidade da API a ser chamada. |
+|displayName|Cadeia de caracteres| O nome do conector da API. |
+|targetUrl|Cadeia de caracteres| A URL do ponto de extremidade da API a ser chamada. |
 |authenticationConfiguration|[apiAuthenticationConfigurationBase](../resources/apiauthenticationconfigurationbase.md)|O objeto que descreve os detalhes de configuração de autenticação para chamar a API. [Autenticação básica](../resources/basicauthentication.md) e certificado cliente [PKCS 12](../resources/pkcs12certificate.md) são suportados.|
 
 ## <a name="response"></a>Resposta

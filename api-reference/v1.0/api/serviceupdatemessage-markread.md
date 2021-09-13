@@ -2,15 +2,15 @@
 title: 'serviceUpdateMessage: markRead'
 description: Marque uma lista de mensagens de atualização de serviço como lidas para o usuário que está assinado.
 author: payiAzure
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: service-communications
 doc_type: apiPageType
-ms.openlocfilehash: 857c04e33e9a8ce2f833cacd55b0a80c4167522b
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: c83e4e6c58db14bbb5d51c78138254bdae80fc2d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58266332"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59119055"
 ---
 # <a name="serviceupdatemessage-markread"></a>serviceUpdateMessage: markRead
 Namespace: microsoft.graph
@@ -22,8 +22,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|ServiceMessageViewpoint.Write|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Delegado (conta corporativa ou de estudante)|ServiceMessageViewpoint.Write|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|Sem suporte|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -49,7 +49,7 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta ação.
 
 |Parâmetro|Tipo|Descrição|
 |:---|:---|:---|
-|messageIds|String collection|Lista de IDs de mensagem a marcar como leitura.|
+|messageIds|Coleção String|Lista de IDs de mensagem a marcar como leitura.|
 
 
 ## <a name="response"></a>Resposta

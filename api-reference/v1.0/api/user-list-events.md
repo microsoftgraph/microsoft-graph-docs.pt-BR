@@ -1,16 +1,16 @@
 ---
 title: Listar eventos
-description: 'Obter uma lista de objetos de evento na caixa de correio do usuário. A lista contém único '
-localization_priority: Priority
+description: 'Obtenha uma lista de objetos de evento na caixa de correio do usuário. A lista contém um único '
+ms.localizationpriority: high
 author: harini84
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 6d1f83f272f505c5dc18819f1d71929e29358bf0
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: eafe89166a081e40e0d32432b2c47cae0987af5c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50439951"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59104541"
 ---
 # <a name="list-events"></a>Listar eventos
 
@@ -70,7 +70,7 @@ Este método dá suporte a [Parâmetros de consulta OData](/graph/query-paramete
 | Nome       | Tipo | Descrição |
 |:---------------|:--------|:--------|
 | Autorização  | string | {token} de portador. Obrigatório.  |
-| Prefira: outlook.timezone  | string | Use isto para especificar o fuso horário para horas de início e término na resposta. Se não especificado, esses valores de tempo serão retornados em UTC. Opcional. |
+| Prefira: outlook.timezone  | string | Use isso para especificar o fuso horário para os horários de início e término na resposta. Se não for especificado, esses valores de tempo serão retornados em UTC. Opcional. |
 | Prefer: outlook.body-content-type | cadeia de caracteres | O formato da propriedade **corpo** a ser retornada. Os valores podem ser "text" ou "html". Um cabeçalho `Preference-Applied` é retornado como confirmação se este cabeçalho `Prefer` for especificado. Se o cabeçalho não for especificado, a propriedade **corpo** será retornada no formato HTML. Opcional. |
 
 ## <a name="request-body"></a>Corpo da solicitação

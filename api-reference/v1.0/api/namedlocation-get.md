@@ -1,16 +1,16 @@
 ---
 title: Obter namedLocation
 description: Recupere as propriedades e as relações de um objeto namedlocation.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: videor
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: f051cdf4c67b95f4b4900ba0c2d79e722a00e40b
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 77d098ecaa913b745a39887c8d5f8881887baa82
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52050434"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59085501"
 ---
 # <a name="get-namedlocation"></a>Obter namedLocation
 

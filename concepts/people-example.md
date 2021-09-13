@@ -3,14 +3,14 @@ title: Usar a API de Pessoas no Microsoft Graph para obter informações sobre a
 description: 'Os aplicativos do Microsoft Graph podem usar a API de Pessoas para recuperar as pessoas mais relevantes para um usuário. '
 ms.date: 4/9/2019
 author: anthona
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: insights
-ms.openlocfilehash: 2eda6a2dae70429e6467337ac75a10dde278aca4318bbe98e65daeca155be22e
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: e450062a10b4c7eb7dfb24f211af7cc357e305e7
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54235112"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59028762"
 ---
 # <a name="use-the-people-api-in-microsoft-graph-to-get-information-about-the-people-most-relevant-to-you"></a>Usar a API de Pessoas no Microsoft Graph para obter informações sobre as pessoas mais relevantes para você
 

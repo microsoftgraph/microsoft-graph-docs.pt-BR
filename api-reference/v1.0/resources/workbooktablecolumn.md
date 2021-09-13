@@ -2,15 +2,15 @@
 title: tipo de recurso workbookTableColumn
 description: Representa uma coluna em uma tabela.
 author: lumine2008
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 4bf6888443ccef65cc62dc728364ab7a5228fd4c22b6e8e977702c320503264d
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: ace07746a3c90c9c919cd248c95ab96322089c56
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54221121"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59139426"
 ---
 # <a name="workbooktablecolumn-resource-type"></a>tipo de recurso workbookTableColumn
 
@@ -29,7 +29,7 @@ Representa uma coluna em uma tabela.
 |[Headerrowrange](../api/tablecolumn-headerrowrange.md)|[Range](range.md)|Obtém o objeto de intervalo associado à linha de cabeçalho da coluna.|
 |[Range](../api/tablecolumn-range.md)|[Range](range.md)|Obtém o objeto de intervalo associado a toda a coluna.|
 |[Totalrowrange](../api/tablecolumn-totalrowrange.md)|[Range](range.md)|Obtém o objeto de intervalo associado à linha de totais da coluna.|
-|[Delete](../api/tablecolumn-delete.md)|None|Exclui a coluna da tabela.|
+|[Delete](../api/tablecolumn-delete.md)|Nenhum(a)|Exclui a coluna da tabela.|
 |[List](../api/tablecolumn-list.md) | Conjunto [WorkbookTableColumn](workbooktablecolumn.md) |Obtenha uma coleção de objetos tableColumn. |
 |[Itemat](../api/tablecolumncollection-itemat.md)|[WorkbookTableColumn](workbooktablecolumn.md)|Obtém uma coluna com base em sua posição na coleção.|
 |[Add](../api/tablecolumncollection-add.md)|[WorkbookTableColumn](workbooktablecolumn.md)|Adiciona uma nova coluna à tabela.|

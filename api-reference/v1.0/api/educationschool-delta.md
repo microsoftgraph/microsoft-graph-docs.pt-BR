@@ -2,15 +2,15 @@
 title: 'educationSchool: delta'
 description: Get newly created or updated schools without having to perform a full read of the entire school collection.
 author: mlafleur
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 5f77334e3149dd963a0a2092faae5aa11bd8bd9a
-ms.sourcegitcommit: b8b0e88b3ba9a434dc45f5ab640cb46f66fae299
+ms.openlocfilehash: c940ad7024d1c1371f5d7a7002fac97b9632bf3f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "52474915"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59147378"
 ---
 # <a name="educationschool-delta"></a>educationSchool: delta
 

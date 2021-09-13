@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso plannerChecklistItems
 description: O **recurso plannerChecklistItemCollection** representa a coleção de itens de lista de verificação em uma tarefa. É um Tipo Aberto. Ele faz parte do objeto de detalhes da tarefa. O valor no par de valores de propriedade é o objeto checklistItem.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: f465adf89e9cb344013e30edccf03513f8fb96065e676ffb78d7cb8fa13f14ac
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 2badca7f220c3686e0064bf3624934d2d1d1a08c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54178070"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59129846"
 ---
 # <a name="plannerchecklistitems-resource-type"></a>Tipo de recurso plannerChecklistItems
 

@@ -2,16 +2,16 @@
 author: JeremyKelley
 ms.date: 09/10/2017
 title: Folder
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'O recurso Folder agrupa dados relacionados a pastas em um item em uma única estrutura. '
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 8160e90124d2e614c46a1aa87ad7d78900181b7ef6ee80e25e8083b1490515a0
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: af6db2e7b5c6418e46643007ff89ac4b48a5174f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54189741"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59123367"
 ---
 # <a name="folder-resource-type"></a>Tipo de recurso Folder
 

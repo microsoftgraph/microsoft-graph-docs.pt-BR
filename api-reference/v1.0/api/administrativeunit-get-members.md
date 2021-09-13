@@ -2,15 +2,15 @@
 title: Obter um membro
 description: Use essa API para obter um membro específico (usuário ou grupo) em uma unidade administrativa.
 author: DougKirschner
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 9ab9564adf4bf2c3c84edac91191eb9e83a2e4eabc91c0aa96cba9c625bcfb60
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 2d26796b62e8a2efe2428fea90df928eed18b2cd
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54155831"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59128400"
 ---
 # <a name="get-a-member"></a>Obter um membro
 
@@ -54,7 +54,7 @@ GET https://graph.microsoft.com/v1.0/directory/administrativeUnits/{id}/members/
 ```
 
 ##### <a name="response"></a>Resposta
-Aqui está um exemplo da respone. Observação: o objeto de resposta exibido aqui pode ser encurtado para legibilidade.
+Aqui está um exemplo da respone. Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 ```http
 HTTP/1.1 200 OK

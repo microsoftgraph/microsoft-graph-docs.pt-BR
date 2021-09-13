@@ -2,15 +2,15 @@
 author: learafa
 description: Seguir um driveItem.
 title: Siga o item da unidade
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 96d979708ea9a1c5a607804cde5f7c4171228916
-ms.sourcegitcommit: cde4a3386b08a67cb476df6d46b51885c643d94f
+ms.openlocfilehash: 36a9178a22ad735218873c58b39c94c5d47e3c83
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "50625973"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59038003"
 ---
 # <a name="follow-drive-item"></a>Siga o item da unidade
 

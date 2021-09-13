@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso domainDnsRecord
 description: A entidade DomainDnsRecord é usada para apresentar registros DNS.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: adimitui
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: cffbc9210d16027a804eb7c48192b05f1fd2b13f1df7a2f4c377a0bc0faf6327
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: fdd8dd884b19803aede0109a9c5c95bb3abe8585
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54141767"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59123791"
 ---
 # <a name="domaindnsrecord-resource-type"></a>Tipo de recurso domainDnsRecord
 
@@ -26,7 +26,7 @@ Não há suporte para consultas diretas a esse recurso. Consulte o tópico [de d
 |:---------------|:--------|:----------|
 |id|Cadeia de caracteres| Identificador exclusivo atribuído a essa entidade. Não anulada, somente leitura.|
 |isOptional|Booliano| Se for falso, esse registro deverá ser configurado pelo cliente no host DNS para que Microsoft Online Services funcione corretamente com o domínio. |
-|rótulo|Cadeia de caracteres| Valor usado ao configurar o nome do registro DNS no host DNS. |
+|rótulo|String| Valor usado ao configurar o nome do registro DNS no host DNS. |
 |recordType|Cadeia de caracteres| Indica que tipo de registro DNS essa entidade representa.</br></br>O valor pode ser um dos seguintes: *CName*, *Mx,* *Srv,* *Txt*</br></br>Chave |
 |supportedService|String| Serviço ou recurso do Microsoft Online que tem uma dependência nesse registro DNS.</br></br>Pode ser um dos seguintes valores: **null**, *Email*, *Sharepoint*, *EmailInternalRelayOnly*, *OfficeCommunicationsOnline*, *SharePointDefaultDomain*, *FullRedelegation*, *SharePointPublic*, *OrgIdAuthentication*, *Yammer*, *Intune*|
 |ttl|Int32| Valor a ser usado ao configurar a propriedade time-to-live (ttl) do registro DNS no host DNS. Não anulada |

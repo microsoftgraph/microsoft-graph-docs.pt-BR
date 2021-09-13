@@ -2,15 +2,15 @@
 title: Tipo de número do windowsStartMenuModeType
 description: Tipo de modos de exibição para o menu iniciar.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: a049500101a5d050b8cb5ef72488c28a6f33423f2b1f9c0e024f9f15f297cef5
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 85f3ae128a42e7c89e902ac696162e5a82e2e070
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54205665"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59108972"
 ---
 # <a name="windowsstartmenumodetype-enum-type"></a>Tipo de número do windowsStartMenuModeType
 

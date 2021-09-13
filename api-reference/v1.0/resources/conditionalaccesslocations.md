@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso conditionalAccessLocations
 description: Representa locais incluídos e excluídos do escopo da política.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: videor
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: e2ad772d4e41e9244b126b8df4e0052d27a3a3d20ae9db7a974b4765eb0d190d
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 68804b5728fd058d2502ac041a24c3a218692b93
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54205924"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59109240"
 ---
 # <a name="conditionalaccesslocations-resource-type"></a>Tipo de recurso conditionalAccessLocations
 
@@ -22,8 +22,8 @@ Representa locais incluídos e excluídos do escopo da política.
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-| includeLocations | Coleção de cadeias de caracteres | IDs de local no escopo da política, a menos que explicitamente `All` excluídas, ou `AllTrusted` . |
-| excludeLocations | Coleção de cadeias de caracteres | IDs de local excluídas do escopo da política. |
+| includeLocations | Coleção String | IDs de local no escopo da política, a menos que explicitamente `All` excluídas, ou `AllTrusted` . |
+| excludeLocations | Coleção String | IDs de local excluídas do escopo da política. |
 
 ## <a name="json-representation"></a>Representação JSON
 

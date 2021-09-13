@@ -2,15 +2,15 @@
 title: Criar educationClass
 description: Crie um novo objeto educationClass.
 author: mlafleur
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 71dcda18e56b6dfd53fa35943e6da246b5b8d68f
-ms.sourcegitcommit: 34891a1c601976166958be1aa04bab5936592b44
+ms.openlocfilehash: db8cedc35b48478edd58a9beb2e29d742c4b5cb2
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52232148"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59147434"
 ---
 # <a name="create-educationclass"></a>Criar educationClass
 
@@ -60,7 +60,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [educati
 | id                   | String                                         | Identificador de objeto. Herdado da [entidade](../resources/entity.md) |
 | displayName          | String                                         | Nome da aula.                                                 |
 | mailNickname         | String                                         | Nome de email para enviar email a todos os membros, se essa propriedade estiver habilitada.    |
-| descrição          | String                                         | Descrição da aula.                                          |
+| description          | String                                         | Descrição da aula.                                          |
 | createdBy            | [identitySet](../resources/identityset.md)     | Entidade que criou a aula                                       |
 | classCode            | Cadeia de caracteres                                         | Código de aula usada pela escola para identificar a aula.               |
 | externalName         | Cadeia de caracteres                                         | Nome da aula no sistema de sincronização.                           |
@@ -78,6 +78,8 @@ Se bem-sucedido, esse método retornará um código de resposta `201 Created` e 
 
 ### <a name="request"></a>Solicitação
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_educationclass_from_"
@@ -108,6 +110,24 @@ Content-length: 533
   }
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-educationclass-from--csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-educationclass-from--javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-educationclass-from--objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-educationclass-from--java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>Resposta
 

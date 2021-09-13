@@ -2,15 +2,15 @@
 title: Listar managedAppOperations
 description: Listar propriedades e relações de objetos de managedAppOperation.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c5beee4571b1781b8bd602268ee7b78faf9aca5a3f7a90bf74486d63349860fd
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 6b28b8f7919121a1e77d349eb79d4374b7ed9509
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54160314"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59139972"
 ---
 # <a name="list-managedappoperations"></a>Listar managedAppOperations
 

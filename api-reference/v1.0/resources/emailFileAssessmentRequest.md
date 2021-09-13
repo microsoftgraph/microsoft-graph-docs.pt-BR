@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso emailFileAssessmentRequest
 description: Usado para criar e recuperar uma avaliação de ameaça de arquivo de email.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: hafen-ms
 ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: 51689660b30045a93262645acab3495f14e75a0c95f4f09ae9d2ea64bc85d784
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 44f7631cae23f914e51cfa6f33eb8111fc348386
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54192492"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59123633"
 ---
 # <a name="emailfileassessmentrequest-resource-type"></a>Tipo de recurso emailFileAssessmentRequest
 
@@ -31,7 +31,7 @@ O arquivo de email pode ser um tipo de arquivo .eml.
 |:-------------|:------------|:------------|
 |contentData|Cadeia de caracteres|Conteúdo de arquivo de email .eml codificado em base64. O conteúdo do arquivo não pode ser buscar de volta porque não está armazenado.|
 |destinationRoutingReason|[mailDestinationRoutingReason](enums.md#maildestinationroutingreason-values)|O motivo do email roteado para seu destino. Os valores possíveis são: `none` , , , , , , , , , `mailFlowRule` , , `safeSender` , , , `blockedSender` `advancedSpamFiltering` `domainAllowList` , `domainBlockList` `notInAddressBook` `firstTimeSender` `autoPurgeToInbox` `autoPurgeToJunk` `autoPurgeToDeleted` `outbound` `notJunk` `junk` .|
-|recipientEmail|String|O destinatário de email cujas políticas são usadas para avaliar o email.|
+|recipientEmail|Cadeia de caracteres|O destinatário de email cujas políticas são usadas para avaliar o email.|
 |category|[threatCategory](enums.md#threatcategory-values)|A categoria de ameaça. Os valores possíveis são: `spam`, `phishing`, `malware`.|
 |contentType|[threatAssessmentContentType](enums.md#threatassessmentcontenttype-values)|O tipo de conteúdo da avaliação de ameaças. Os valores possíveis são: `mail`, `url`, `file`.|
 |createdBy|[identitySet](identityset.md)|O criador da solicitação de avaliação de ameaças.|

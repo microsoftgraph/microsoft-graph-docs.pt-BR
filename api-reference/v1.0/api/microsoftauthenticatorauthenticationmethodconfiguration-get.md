@@ -2,20 +2,20 @@
 title: Obter microsoftAuthenticatorAuthenticationMethodConfiguration
 description: Leia as propriedades e as relações de um objeto microsoftAuthenticatorAuthenticationMethodConfiguration.
 author: mmcla
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: c8a7067384e15b1105f1111290257fb61b84ece8
-ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
+ms.openlocfilehash: 7d23f0bf58b525f6f77ae5a892a7f429c55ba4f8
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51469168"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59110254"
 ---
 # <a name="get-microsoftauthenticatorauthenticationmethodconfiguration"></a>Obter microsoftAuthenticatorAuthenticationMethodConfiguration
 Namespace: microsoft.graph
 
-Recupere as propriedades e as relações do [objeto microsoftAuthenticatorAuthenticationMethodConfiguration,](../resources/microsoftauthenticatorauthenticationmethodconfiguration.md) que representa a política de método de autenticação do Microsoft Authenticator para o locatário do Azure AD.
+Recupere as propriedades e as relações do [objeto microsoftAuthenticatorAuthenticationMethodConfiguration,](../resources/microsoftauthenticatorauthenticationmethodconfiguration.md) que representa Microsoft Authenticator política de método de autenticação do locatário do Azure AD.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).

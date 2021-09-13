@@ -2,15 +2,15 @@
 title: tipo de número managementAgentType
 description: Tipo de agente de gerenciamento.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: fc6669fae134a53886a425fab2635f9ef83d7c4626fcb1056a0d7cda179d932b
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 276732615af6dc5d987d326f484c9ba6329a61fd
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54149853"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59118212"
 ---
 # <a name="managementagenttype-enum-type"></a>tipo de número managementAgentType
 
