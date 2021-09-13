@@ -2,15 +2,15 @@
 title: Tipo de recurso Table
 description: Representa uma tabela do Excel.
 author: lumine2008
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: d9ca66d078181f3786a8f58c4f0ed2653ba9163a425fcae01bd11952a61182a8
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 1e1d386af6f1b073f039e911668249224005acf5
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54126253"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59134413"
 ---
 # <a name="table-resource-type"></a>Tipo de recurso Table
 
@@ -47,7 +47,7 @@ Representa uma tabela do Excel.
 |name|string|Nome da tabela.|
 |showHeaders|booliano|Indica se a linha do cabeçalho está visível ou não. Esse valor pode ser definido para mostrar ou remover a linha do cabeçalho.|
 |showTotals|booliano|Indica se a linha do total está visível ou não. Esse valor pode ser definido para mostrar ou remover a linha do total.|
-|style|cadeia de caracteres|Valor da constante que representa o estilo de Tabela. Os valores possíveis são: TableStyleLight1 thru TableStyleLight21, TableStyleMedium1 thru TableStyleMedium28, TableStyleStyleDark1 thru TableStyleStyleDark11. Também é possível usar um estilo definido pelo usuário que esteja presente na planilha.|
+|style|cadeia de caracteres|Valor da constante que representa o estilo de Tabela. Os valores possíveis são: TableStyleLight1 thru TableStyleLight21, TableStyleMedium1 thru TableStyleMedium28, TableStyleStyleDark1 thru TableStyleStyleDark11. Também é possível usar um estilo personalizado definido pelo usuário que esteja presente na pasta de trabalho.|
 |highlightFirstColumn|Booliano|Indica se a primeira coluna contém uma formatação especial.   |
 |highlightLastColumn|Booliano|Indica se a última coluna contém uma formatação especial. |
 |showBandedColumns|Booliano|Indica se as colunas mostram formatação em faixas nas quais as colunas ímpares são realçadas de modo diferente das colunas pares, tornando a leitura da tabela mais fácil.   |

@@ -2,15 +2,15 @@
 title: Obter mensagem
 description: Recupere as propriedades e os relacionamentos de um objeto message.
 author: abheek-das
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: faef3fd45e331012b642624361c9fc03e35d9a97
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 4943632eb304300b4adc16de61167dc12cb1121e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52035376"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59110267"
 ---
 # <a name="get-message"></a>Obter mensagem
 
@@ -18,12 +18,12 @@ Namespace: microsoft.graph
 
 Recupere as propriedades e os relacionamentos de um objeto [message](../resources/message.md).
 
-Você pode usar o `$value` parâmetro para [obter o conteúdo MIME de uma mensagem](/graph/outlook-get-mime-message). Veja também um [exemplo](#example-4-get-mime-content) abaixo.
+Você pode usar o parâmetro `$value` para [obter o conteúdo MIME de uma mensagem](/graph/outlook-get-mime-message). Consulte também um [exemplo](#example-4-get-mime-content) abaixo.
 
 Existem dois cenários em que um aplicativo pode receber mensagens na pasta de email de outro usuário:
 
 * Se o aplicativo tiver permissões de aplicativo ou
-* Se o aplicativo tiver as [permissões](#permissions) delegadas apropriadas de um usuário e outro usuário tiver compartilhado uma pasta de email com esse usuário, ou tiver concedido acesso delegado a esse usuário. Confira [detalhes e um exemplo](/graph/outlook-share-messages-folders).
+* Se o aplicativo tiver as [permissões](#permissions) delegadas apropriadas de um usuário e outro usuário tiver compartilhado uma pasta de email com esse usuário, ou tiver concedido acesso delegado a esse usuário. Veja [detalhes e um exemplo](/graph/outlook-share-messages-folders).
 
 Como o recurso **message** dá suporte a [extensions](/graph/extensibility-overview), você também pode usar a operação `GET` para obter propriedades personalizadas e dados de extensão em uma instância de **message**.
 
@@ -110,7 +110,7 @@ GET https://graph.microsoft.com/v1.0/me/messages/AAMkADhMGAAA=
 ---
 
 #### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto de resposta exibido aqui pode ser encurtado para legibilidade.
+Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser reduzido para facilitar a leitura.
 <!-- {
   "blockType": "response",
   "name": "get_message",
