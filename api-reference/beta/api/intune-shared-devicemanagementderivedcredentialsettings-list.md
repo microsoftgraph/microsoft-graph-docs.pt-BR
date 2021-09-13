@@ -2,15 +2,15 @@
 title: Listar deviceManagementDerivedCredentialSettingses
 description: Listar propriedades e relações dos objetos deviceManagementDerivedCredentialSettings.
 author: rolyon
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 58ffeeb9762e3a96357debbbeb0d1e8df8b1317f
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 58ec5c27a2ed9f13a050ae40b4678d2da05a465f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58798003"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59102511"
 ---
 # <a name="list-devicemanagementderivedcredentialsettingses"></a>Listar deviceManagementDerivedCredentialSettingses
 
@@ -30,7 +30,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Delegado (conta corporativa ou de estudante)||
 |&nbsp;&nbsp; **Política de Acesso a Recursos**|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application||
+|Aplicativo||
 |&nbsp;&nbsp; **Política de Acesso a Recursos**|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
 
 ## <a name="http-request"></a>Solicitação HTTP

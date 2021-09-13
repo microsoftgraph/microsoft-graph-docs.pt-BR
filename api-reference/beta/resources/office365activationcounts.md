@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso office365ActivationCounts
 description: Veja a seguir uma representação JSON do recurso.
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: reports
 author: sarahwxy
 doc_type: resourcePageType
-ms.openlocfilehash: 39e679da134120377f17dab520c332dc54aab328ef924b65212f5145279a8402
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 33a39a394b5b82bfb3ba0b5d33dc91320307bb73
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54176320"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59115146"
 ---
 # <a name="office365activationcounts-resource-type"></a>Tipo de recurso office365ActivationCounts
 
@@ -21,7 +21,7 @@ Namespace: microsoft.graph
 | Propriedade          | Tipo   | Descrição                              |
 | :---------------- | :----- | ---------------------------------------- |
 | reportRefreshDate | Data   | A data mais recente do conteúdo.          |
-| productType       | Cadeia de caracteres | O tipo de produto, como "Microsoft 365 ProPlus" ou "Project Client". |
+| productType       | Cadeia de Caracteres | O tipo de produto, como "Microsoft 365 ProPlus" ou "Project Client". |
 | windows           | Int64  | A contagem de ativação Windows. Esse número inclui todas as ativações em qualquer computador Windows computador. |
 | mac               | Int64  | A contagem de ativação no Mac OS.          |
 | android           | Int64  | A contagem de ativação em um dispositivo Android.  |

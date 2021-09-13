@@ -1,21 +1,21 @@
 ---
 title: Criar endereços
-description: Criar um novo objeto addresses.
-localization_priority: Normal
+description: Crie um novo objeto addresses.
+ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: f84daa0eb3fbe594ec561af8e1a0b1a0f293fe19
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 0310b12d284b3ed3f9b20bc979e5b22dfafb8c34
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48978918"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59126151"
 ---
 # <a name="create-addresses"></a>Criar endereços
 Namespace: microsoft.graph
 
-Criar um novo objeto [myAddress](../resources/itemaddress.md) no [perfil](../resources/profile.md)de um usuário.
+Criar um novo [objeto itemAddress](../resources/itemaddress.md) no perfil de um [usuário.](../resources/profile.md)
 
 ## <a name="permissions"></a>Permissões
 
@@ -23,8 +23,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)                                      |
 |:---------------------------------------|:---------------------------------------------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | User. ReadWrite, User. ReadWrite. All |
-| Delegado (conta pessoal da Microsoft) | User. ReadWrite, User. ReadWrite. All |
+| Delegado (conta corporativa ou de estudante)     | User.ReadWrite, User.ReadWrite.All |
+| Delegado (conta pessoal da Microsoft) | User.ReadWrite, User.ReadWrite.All |
 | Aplicativo                            | User.ReadWrite.All                            |
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -44,21 +44,21 @@ POST /users/{id | userPrincipalName}/profile/addresses
 |Content-Type|application/json. Obrigatório.|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça uma representação JSON do objeto [myAddress](../resources/itemaddress.md) .
+No corpo da solicitação, fornece uma representação JSON do [objeto itemAddress.](../resources/itemaddress.md)
 
-A tabela a seguir mostra as propriedades que são possíveis de definir ao criar um novo objeto item de [endereço](../resources/itemaddress.md) no [perfil](../resources/profile.md)de um usuário.
+A tabela a seguir mostra as propriedades que são possíveis de definir ao criar um novo [objeto itemAddress](../resources/itemaddress.md) no perfil de um [usuário](../resources/profile.md).
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|allowedAudiences|String|As audiências que podem ver os valores contidos na entidade. Herdado de [MyFace](../resources/itemfacet.md). Os valores possíveis são: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
-|detalhada|[physicalAddress](../resources/physicaladdress.md)|Detalhes sobre o próprio endereço.|
-|displayName|String|Nome amigável que o usuário atribuiu a este endereço. |
-|geoCoordinates|[geoCoordinates](../resources/geocoordinates.md)|As geocoordenas do endereço.|
-|fracassa|[inferenceData](../resources/inferencedata.md)|Contém detalhes de inferência se a entidade for inferida pelo aplicativo de criação ou modificação. Herdado de [MyFace](../resources/itemfacet.md).|
-|source|[personDataSource](../resources/persondatasource.md)|Onde os valores são originados se forem sincronizados a partir de outro serviço. Herdado de [MyFace](../resources/itemfacet.md).|
+|allowedAudiences|Cadeia de Caracteres|As audiências que são capazes de ver os valores contidos na entidade. Herdado [do itemFacet](../resources/itemfacet.md). Os valores possíveis são: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
+|detail|[physicalAddress](../resources/physicaladdress.md)|Detalhes sobre o endereço em si.|
+|displayName|Cadeia de caracteres|Nome amigável que o usuário atribuiu a esse endereço. |
+|geoCoordinates|[geoCoordinates](../resources/geocoordinates.md)|As geocoordinações do endereço.|
+|inferência|[inferenceData](../resources/inferencedata.md)|Contém detalhes de inferência se a entidade for inferida pelo aplicativo de criação ou modificação. Herdado [do itemFacet](../resources/itemfacet.md).|
+|source|[personDataSource](../resources/persondatasource.md)|Onde os valores se originaram se sincronizados de outro serviço. Herdado [do itemFacet](../resources/itemfacet.md).|
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `201 Created` código de resposta e um objeto [myAddress](../resources/itemaddress.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código `201 Created` de resposta e um objeto [itemAddress](../resources/itemaddress.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

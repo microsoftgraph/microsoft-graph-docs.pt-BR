@@ -2,15 +2,15 @@
 title: Tipo de recurso iosWebContentFilterAutoFilter
 description: Representa um tipo de configuração do Filtro de Conteúdo da Web do iOS, que habilita o recurso de filtro automático do iOS e permite um controle de acesso de URL adicional. Quando construído sem valores de propriedade, o dispositivo iOS habilitará o filtro automático independentemente.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0cbd15f366397564b24f6c715eaf2ea9b6826d30
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 4c88850a9cb9cfab27da02231a908ed9466b6389
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58813002"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59127231"
 ---
 # <a name="ioswebcontentfilterautofilter-resource-type"></a>Tipo de recurso iosWebContentFilterAutoFilter
 
@@ -28,8 +28,8 @@ Herda de [iosWebContentFilterBase](../resources/intune-deviceconfig-ioswebconten
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|allowedUrls|Coleção de cadeias de caracteres|URLs adicionais permitidas para acesso|
-|blockedUrls|Coleção de cadeias de caracteres|URLs adicionais bloqueadas para acesso|
+|allowedUrls|String collection|URLs adicionais permitidas para acesso|
+|blockedUrls|String collection|URLs adicionais bloqueadas para acesso|
 
 ## <a name="relationships"></a>Relações
 Nenhum

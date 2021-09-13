@@ -2,15 +2,15 @@
 title: tipo denum derivedCredentialProviderType
 description: Tipo de provedor para Credenciais Derivadas.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 987d977c817044c987012e019207f8603ca5c387
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: e89a32cd9c71150fa13efc5bbb91d3982bda8feb
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58791190"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59101629"
 ---
 # <a name="derivedcredentialprovidertype-enum-type"></a>tipo denum derivedCredentialProviderType
 

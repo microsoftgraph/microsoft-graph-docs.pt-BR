@@ -2,15 +2,15 @@
 title: Tipo de recurso androidManagedStoreAccountEnterpriseSettings
 description: Enterprise configurações para uma conta de armazenamento gerenciado do Android.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: e55fd9dd68fcc0673b591e45c1ff4c240d752031
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: f06f7d042977605214a286ec76ec4fd9c5ee88ca
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58806982"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59101909"
 ---
 # <a name="androidmanagedstoreaccountenterprisesettings-resource-type"></a>Tipo de recurso androidManagedStoreAccountEnterpriseSettings
 
@@ -32,8 +32,8 @@ Enterprise configurações para uma conta de armazenamento gerenciado do Android
 |[Ação completeSignup](../api/intune-androidforwork-androidmanagedstoreaccountenterprisesettings-completesignup.md)|Nenhum|Ainda não documentado|
 |[Ação syncApps](../api/intune-androidforwork-androidmanagedstoreaccountenterprisesettings-syncapps.md)|Nenhum|Ainda não documentado|
 |[Ação de desvincular](../api/intune-androidforwork-androidmanagedstoreaccountenterprisesettings-unbind.md)|Nenhum|Ainda não documentado|
-|[ação createGooglePlayWebToken](../api/intune-androidforwork-androidmanagedstoreaccountenterprisesettings-creategoogleplaywebtoken.md)|Cadeia de caracteres|Gera um token da Web que é usado em um componente inbeddável.|
-|[ação setAndroidDeviceOwnerFullyManagedEnrollmentState](../api/intune-androidforwork-androidmanagedstoreaccountenterprisesettings-setandroiddeviceownerfullymanagedenrollmentstate.md)|Nenhum(a)|Define AndroidManagedStoreAccountEnterpriseSettings AndroidDeviceOwnerFullyManagedEnrollmentEnabled como o valor determinado.|
+|[ação createGooglePlayWebToken](../api/intune-androidforwork-androidmanagedstoreaccountenterprisesettings-creategoogleplaywebtoken.md)|Cadeia de Caracteres|Gera um token da Web que é usado em um componente inbeddável.|
+|[ação setAndroidDeviceOwnerFullyManagedEnrollmentState](../api/intune-androidforwork-androidmanagedstoreaccountenterprisesettings-setandroiddeviceownerfullymanagedenrollmentstate.md)|Nenhum|Define AndroidManagedStoreAccountEnterpriseSettings AndroidDeviceOwnerFullyManagedEnrollmentEnabled como o valor determinado.|
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
@@ -50,7 +50,7 @@ Enterprise configurações para uma conta de armazenamento gerenciado do Android
 |deviceOwnerManagementEnabled|Boleano|Indica se essa conta está sendo reativada para o Gerenciamento de Proprietários de Dispositivos Android com o CloudDPC.|
 |companyCodes|[coleção androidEnrollmentCompanyCode](../resources/intune-androidforwork-androidenrollmentcompanycode.md)|Códigos da empresa para AndroidManagedStoreAccountEnterpriseSettings|
 |androidDeviceOwnerFullyManagedEnrollmentEnabled|Boleano|Códigos da empresa para AndroidManagedStoreAccountEnterpriseSettings|
-|managedGooglePlayInitialScopeTagIds|Coleção de cadeias de caracteres|Marcas de escopo iniciais para aplicativos MGP|
+|managedGooglePlayInitialScopeTagIds|String collection|Marcas de escopo iniciais para aplicativos MGP|
 
 ## <a name="relationships"></a>Relações
 Nenhum

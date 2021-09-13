@@ -2,15 +2,15 @@
 title: Tipo de recurso windowsPackageInformation
 description: Contém propriedades para as informações do pacote para um Windows de linha de negócios.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8070f21ed0ab197ff5c4df273753220747521dc5
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: f80f45b8f7b3b3b1398ccc8918929ccb5334d7b3
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58752032"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59091899"
 ---
 # <a name="windowspackageinformation-resource-type"></a>Tipo de recurso windowsPackageInformation
 
@@ -28,7 +28,7 @@ Contém propriedades para as informações do pacote para um Windows de linha de
 |applicableArchitecture|[windowsArchitecture](../resources/intune-apps-windowsarchitecture.md)|A Windows arquitetura para a qual este aplicativo pode ser executado. Os possíveis valores são: `none`, `x86`, `x64`, `arm`, `neutral`, `arm64`.|
 |displayName|Cadeia de caracteres|O Nome para Exibição.|
 |identityName|String|O Nome da Identidade.|
-|identityPublisher|Cadeia de caracteres|A identidade Publisher.|
+|identityPublisher|Cadeia de Caracteres|A identidade Publisher.|
 |identityResourceIdentifier|String|O Identificador de Recurso da Identidade.|
 |identityVersion|String|A Versão de Identidade.|
 |minimumSupportedOperatingSystem|[windowsMinimumOperatingSystem](../resources/intune-apps-windowsminimumoperatingsystem.md)|O valor do sistema de operacional mínimo aplicável.|

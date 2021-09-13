@@ -2,15 +2,15 @@
 title: Criar roleScopeTag
 description: Crie um novo objeto roleScopeTag.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: bac2c26dd32f6ddb36c16595f10940f6a35f8595
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 9b92a55380f624b2ab722c633c372d80dc3637b5
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58791934"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59096457"
 ---
 # <a name="create-rolescopetag"></a>Criar roleScopeTag
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementRBAC.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementRBAC.ReadWrite.All|
+|Aplicativo|DeviceManagementRBAC.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -56,7 +56,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar a roleSc
 |:---|:---|:---|
 |id|Cadeia de caracteres|Chave da entidade. É somente leitura e gerada automaticamente. Essa propriedade é somente leitura.|
 |displayName|Cadeia de caracteres|O nome de exibição ou amigável da Marca de Escopo de Função.|
-|descrição|Cadeia de caracteres|Descrição da marca escopo de função.|
+|description|Cadeia de caracteres|Descrição da marca escopo de função.|
 |isBuiltIn|Booliano|Descrição da marca escopo de função. Essa propriedade é somente leitura.|
 
 

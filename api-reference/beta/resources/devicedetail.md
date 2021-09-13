@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso deviceDetail
 description: Indica os detalhes do dispositivo associados a um dispositivo usado para entrar.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: spunukol
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 00859ab80f022464be57b38cc62e9ab1a6c1b5a4444f7d066ffd7c06d84a63e8
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: a53c22d62462b02325594722d7be9ba4fc5a671c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54213435"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59101972"
 ---
 # <a name="devicedetail-resource-type"></a>Tipo de recurso deviceDetail
 
@@ -21,7 +21,7 @@ Namespace: microsoft.graph Indica detalhes do dispositivo associados a um dispos
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|Navegador|Cadeia de caracteres|Indica as informações do navegador do usado para entrar.|
+|Navegador|Cadeia de Caracteres|Indica as informações do navegador do usado para entrar.|
 |deviceId|Cadeia de caracteres|Refere-se à UniqueID do dispositivo usado para entrar.|
 |displayName|Cadeia de caracteres|Refere-se ao nome do dispositivo usado para entrar.|
 |isCompliant|Booliano|Indica se o dispositivo está em conformidade ou não.|

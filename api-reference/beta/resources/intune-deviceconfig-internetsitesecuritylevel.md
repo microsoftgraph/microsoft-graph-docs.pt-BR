@@ -2,15 +2,15 @@
 title: Tipo de número internetSiteSecurityLevel
 description: Valores possíveis para o nível de segurança do site da Internet.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 6fb678b47976304821aa9fc8b3de3b05e2b78bb9
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: ba4f03d2b7a5f8ee46090a4d45ba0a918cc108d9
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58820433"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59115489"
 ---
 # <a name="internetsitesecuritylevel-enum-type"></a>Tipo de número internetSiteSecurityLevel
 

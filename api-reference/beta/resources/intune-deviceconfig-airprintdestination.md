@@ -2,15 +2,15 @@
 title: Tipo de recurso airPrintDestination
 description: Representa um destino AirPrint.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 978bbd3d5f7cb8527cb2079d20a48bf4fb678126
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: ad603ab29c7914ccb16845ceeddda89581a40568
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58783586"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59095691"
 ---
 # <a name="airprintdestination-resource-type"></a>Tipo de recurso airPrintDestination
 
@@ -26,7 +26,7 @@ Representa um destino AirPrint.
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |ipAddress|Cadeia de caracteres|O Endereço IP do destino AirPrint.|
-|resourcePath|Cadeia de caracteres|O Caminho do Recurso associado à impressora. Isso corresponde ao parâmetro rp do registro _ipps.tcp Bonjour. Por exemplo: impressoras/Canon_MG5300_series, impressoras/Xerox_Phaser_7600, ipp/impressão, Epson_IPP_Printer.|
+|resourcePath|Cadeia de Caracteres|O Caminho do Recurso associado à impressora. Isso corresponde ao parâmetro rp do registro _ipps.tcp Bonjour. Por exemplo: impressoras/Canon_MG5300_series, impressoras/Xerox_Phaser_7600, ipp/impressão, Epson_IPP_Printer.|
 |port|Int32|A porta de escuta do destino AirPrint. Se essa chave não for especificada, AirPrint usará a porta padrão. Disponível no iOS 11.0 e posterior.|
 |forceTls|Boleano|Se as conexões AirPrint verdadeiras são protegidas pelo TLS (Transport Layer Security). O padrão é falso. Disponível no iOS 11.0 e posterior.|
 

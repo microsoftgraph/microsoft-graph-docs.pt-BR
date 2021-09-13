@@ -2,15 +2,15 @@
 title: tipo de recurso synchronizationJobSubject
 description: Representa os objetos que serão provisionados durante o provisionamento sob demanda.
 author: ArvindHarinder1
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: applications
 doc_type: resourcePageType
-ms.openlocfilehash: c7dea31898cb0bfb521367042401be7c583c60c2868d4805682c9d0e707fc898
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 1f4de7d4c3d518b795d739a80403903842d16a16
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54226109"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59090955"
 ---
 # <a name="synchronizationjobsubject-resource-type"></a>tipo de recurso synchronizationJobSubject
 
@@ -22,7 +22,7 @@ Representa os objetos que serão provisionados durante o provisionamento sob dem
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |objectId|Cadeia de caracteres|O identificador de um objeto ao qual um SynchronizationJob deve ser aplicado.|
-|objectTypeName|Cadeia de caracteres|O tipo do objeto ao qual um SynchronizationJob deve ser aplicado.|
+|objectTypeName|Cadeia de Caracteres|O tipo do objeto ao qual um SynchronizationJob deve ser aplicado.|
 
 ## <a name="relationships"></a>Relações
 Nenhum

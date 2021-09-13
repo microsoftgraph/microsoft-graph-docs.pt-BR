@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso officeClientConfiguration
 description: Office Configuração do Cliente.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: dougeby
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: c380efedce9db2ff161f99b36dc72c758a3014e8
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: cacf0d4624b984e02a4051d9b8b166ecece7a38e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58801014"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59127511"
 ---
 # <a name="officeclientconfiguration-resource-type"></a>Tipo de recurso officeClientConfiguration
 
@@ -28,7 +28,7 @@ Office Configuração do Cliente.
 |[Listar officeClientConfigurations](../api/intune-cirrus-officeclientconfiguration-list.md)|[Coleção officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|Listar propriedades e relações dos [objetos officeClientConfiguration.](../resources/intune-cirrus-officeclientconfiguration.md)|
 |[Obter officeClientConfiguration](../api/intune-cirrus-officeclientconfiguration-get.md)|[officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|Leia propriedades e relações do [objeto officeClientConfiguration.](../resources/intune-cirrus-officeclientconfiguration.md)|
 |[atribuir ação](../api/intune-cirrus-officeclientconfiguration-assign.md)|[Coleção officeClientConfigurationAssignment](../resources/intune-cirrus-officeclientconfigurationassignment.md)|Substitua todos os grupos direcionados por uma política.|
-|[ação updatePriorities](../api/intune-cirrus-officeclientconfiguration-updatepriorities.md)|Nenhum(a)|Atualizar prioridades de política.|
+|[ação updatePriorities](../api/intune-cirrus-officeclientconfiguration-updatepriorities.md)|Nenhum|Atualizar prioridades de política.|
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
@@ -36,7 +36,7 @@ Office Configuração do Cliente.
 |id|Cadeia de caracteres|ID da política de configuração do cliente do office.|
 |userPreferencePayload|Stream|Configurações de preferência Cadeia de caracteres JSON no formato binário, esses valores podem ser substituídos pelo usuário.|
 |policyPayload|Stream|Configurações de política Cadeia de caracteres JSON em formato binário, esses valores não podem ser alterados pelo usuário.|
-|descrição|Cadeia de caracteres|Ainda não documentado|
+|description|Cadeia de caracteres|Ainda não documentado|
 |displayName|Cadeia de caracteres|O administrador forneceu a descrição da política de configuração do cliente do office.|
 |lastModifiedDateTime|DateTime|Carimbo de data da última modificação da política.|
 |prioridade|Int32|O valor de prioridade deve ser o valor exclusivo para cada política em um locatário e será usado para resolução de conflitos, valores mais baixos a prioridade média é alta.|

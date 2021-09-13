@@ -1,16 +1,16 @@
 ---
 title: Obter anexo
 description: 'Leia as propriedades e as relações de um anexo, anexados a um evento,  '
-localization_priority: Priority
+ms.localizationpriority: high
 author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 69160b9e583cd480c09baebed58b079472b3a65b
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 64375dab1c14fb7563bcb2d3b69aa5c1caa0e035
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52054200"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59038556"
 ---
 # <a name="get-attachment"></a>Obter anexo
 
@@ -29,7 +29,7 @@ Todos esses tipos de anexos são derivados do recurso [anexo](../resources/attac
 ### <a name="get-the-raw-contents-of-a-file-or-item-attachment"></a>Obter o conteúdo bruto de um arquivo ou anexo de item
 Você pode anexar o segmento do caminho `/$value` para obter o conteúdo bruto de um arquivo ou anexo de item. 
 
-Para um anexo de arquivo, o tipo de conteúdo é baseado no tipo de conteúdo original. Veja o[exemplo 6](#example-6-get-the-raw-contents-of-a-file-attachment-on-a-message).
+Quanto a um anexo de arquivo, o tipo de conteúdo é baseado no tipo de conteúdo original. Consulte [exemplo 6](#example-6-get-the-raw-contents-of-a-file-attachment-on-a-message).
 
 Para um anexo de item que é um [contato](../resources/contact.md), [evento](../resources/event.md) ou [mensagem](../resources/message.md), o conteúdo bruto retornado está no formato MIME.
 
@@ -138,7 +138,7 @@ GET /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/attachments/{id}/$va
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 Este método também dá suporte a alguns [Parâmetros de Consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
 
-Use `$expand` para obter as propriedades de um anexo de item (contato, evento ou mensagem). Veja o [exemplo 3](#example-3-expand-and-get-the-properties-of-the-item-attached-to-a-message) e o [exemplo 4](#example-4-expand-and-get-the-properties-of-an-item-attached-to-a-message-including-any-attachment-to-the-item).
+Use `$expand` para obter as propriedades de um anexo de item (contato, evento ou mensagem). Consulte [exemplo 3](#example-3-expand-and-get-the-properties-of-the-item-attached-to-a-message) e [exemplo 4](#example-4-expand-and-get-the-properties-of-an-item-attached-to-a-message-including-any-attachment-to-the-item).
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Tipo | Descrição|
@@ -193,7 +193,7 @@ GET https://graph.microsoft.com/v1.0/me/messages/AAMkAGUzY5QKjAAA=/attachments/A
 
 
 ##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto de resposta exibido aqui pode ser encurtado para legibilidade.
+Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser reduzido para facilitar a leitura.
 <!-- {
   "blockType": "response",
   "name": "get_file_attachment_v1",
@@ -522,7 +522,7 @@ GET https://graph.microsoft.com/v1.0/me/messages/AAMkAGUzY5QKgAAA=/attachments/A
 ---
 
 #### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto de resposta exibido aqui pode ser encurtado para legibilidade.
+Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser reduzido para facilitar a leitura.
 <!-- {
   "blockType": "response",
   "name": "get_reference_attachment",
@@ -709,7 +709,7 @@ END:VCALENDAR
 
 #### <a name="request"></a>Solicitação
 
-Aqui está um exemplo da solicitação para obter o conteúdo bruto de um convite para reunião (do tipo [eventMessage](../resources/eventmessage.md)) que foi anexado a uma mensagem. A entidade **eventMessage** é baseada no tipo de **mensagem**.
+Eis um exemplo da solicitação para obter o conteúdo bruto de um convite de reunião (do tipo [eventMessage](../resources/eventmessage.md)) que foi anexado a uma mensagem. A entidade **eventMessage** é baseada no tipo de **mensagem**.
 <!-- {
   "blockType": "ignored",
   "name": "get_value_message_attachment",

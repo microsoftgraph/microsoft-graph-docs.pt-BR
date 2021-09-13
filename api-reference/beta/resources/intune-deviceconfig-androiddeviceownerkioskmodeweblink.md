@@ -2,15 +2,15 @@
 title: Tipo de recurso androidDeviceOwnerKioskModeWeblink
 description: Um weblink na Tela Inicial Gerenciada do Proprietário do Dispositivo Android
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: ef7974e316ce78db63f999aa63c87a230b4456cd
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: edaa003fc6f963e43bf55ed8f0833cd59ca2a56e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58820496"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59101804"
 ---
 # <a name="androiddeviceownerkioskmodeweblink-resource-type"></a>Tipo de recurso androidDeviceOwnerKioskModeWeblink
 
@@ -28,8 +28,8 @@ Herda de [androidDeviceOwnerKioskModeFolderItem](../resources/intune-deviceconfi
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|rótulo|Cadeia de caracteres|Nome de exibição para weblink|
-|link|Cadeia de caracteres|Link para weblink|
+|rótulo|Cadeia de Caracteres|Nome de exibição para weblink|
+|link|Cadeia de Caracteres|Link para weblink|
 
 ## <a name="relationships"></a>Relações
 Nenhum

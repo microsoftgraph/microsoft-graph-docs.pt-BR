@@ -2,15 +2,15 @@
 title: Tipo de número iosWallpaperDisplayLocation
 description: Um tipo de número para o especificador de local de exibição de papel de parede.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 8a403f28e711c86b6a196386e8109cc3d58077da
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 3e4c38baf0fecd7f1ba22197df0e4b58a6082ea0
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58759649"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59127252"
 ---
 # <a name="ioswallpaperdisplaylocation-enum-type"></a>Tipo de número iosWallpaperDisplayLocation
 
