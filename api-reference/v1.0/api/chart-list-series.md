@@ -2,15 +2,15 @@
 title: Listar séries
 description: Recupere uma lista de objetos chartseries.
 author: lumine2008
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 72decfaef411eae4ea042d5892560ef52ab7e9a8
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: a8bd1fc3f8d103560168afaf6a0f41105d70ef39
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52048845"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59105605"
 ---
 # <a name="list-series"></a>Listar séries
 
@@ -78,7 +78,7 @@ GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id
 ---
 
 ##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto de resposta exibido aqui pode ser encurtado para legibilidade.
+Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser reduzido para facilitar a leitura.
 <!-- {
   "blockType": "response",
   "truncated": true,

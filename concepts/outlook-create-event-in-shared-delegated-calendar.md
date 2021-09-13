@@ -2,14 +2,14 @@
 title: Crie eventos do Outlook em um calendário compartilhado ou delegado
 description: No Outlook, os clientes podem compartilhar um calendário com outros usuários e permitir que eles exibam ou modifiquem eventos nesse calendário. Os clientes também podem permitir que um representante aja em nome deles, para receber ou responder a solicitações de reunião ou então para criar ou alterar itens no calendário.
 author: juforan
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: outlook
-ms.openlocfilehash: e970017d26ef7ad9d45086e82816c5337eed6c0bcc86e5e7efac6b5bee29c3f9
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 4b9e57cdd251a72a7a6f51b3ca14eb17a0da9367
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54129725"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59135981"
 ---
 # <a name="create-outlook-events-in-a-shared-or-delegated-calendar"></a>Crie eventos do Outlook em um calendário compartilhado ou delegado
 

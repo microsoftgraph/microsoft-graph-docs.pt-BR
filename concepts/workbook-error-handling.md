@@ -2,14 +2,14 @@
 title: Tratamento de erros para Excel APIs no Microsoft Graph
 description: Instruções de tratamento de erros para Excel APIs no Microsoft Graph
 author: grangeryy
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: excel
-ms.openlocfilehash: 30273bcc7e408f0a1e9deb465ecb7114456023e33ac685dfec54e96623401628
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 144139f847c96c8ae7a948721c902241e0a46a12
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54225577"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59143465"
 ---
 # <a name="error-handling-for-excel-apis-in-microsoft-graph"></a>Tratamento de erros para Excel APIs no Microsoft Graph
 

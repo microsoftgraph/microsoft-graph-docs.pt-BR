@@ -2,15 +2,15 @@
 title: Tipo de recurso importedWindowsAutopilotDeviceIdentityState
 description: Ainda não documentado
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d00fce88bd405db63f5b786130851035b8ce275c
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: dde6785fb6a9d7d36e3c123734acbaf6884582ff
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58795512"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59017356"
 ---
 # <a name="importedwindowsautopilotdeviceidentitystate-resource-type"></a>Tipo de recurso importedWindowsAutopilotDeviceIdentityState
 

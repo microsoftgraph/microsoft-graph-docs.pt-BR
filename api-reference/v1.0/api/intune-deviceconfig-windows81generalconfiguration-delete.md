@@ -2,15 +2,15 @@
 title: Excluir windows81GeneralConfiguration
 description: Exclui windows81GeneralConfiguration
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 65fb1068febdc104d57e0045efe0b7aa3e95692c623d0e5cf8c4d3445126ac1e
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 0d63c9254c284321882719cf2a6f2fc02410d271
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54197335"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59119538"
 ---
 # <a name="delete-windows81generalconfiguration"></a>Excluir windows81GeneralConfiguration
 
@@ -25,8 +25,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP

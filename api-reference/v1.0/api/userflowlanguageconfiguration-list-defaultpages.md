@@ -2,15 +2,15 @@
 title: Listar defaultPages
 description: Obter os recursos userFlowLanguagePage da propriedade de navegação defaultPages.
 author: jkdouglas
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 7ae6d3610cb3e4af5b99c2ff0873215a4375c251da3e003097cd733408d0bc66
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 95cdc55308c5a9a9be951935a014846a84cf9886
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54252197"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59109539"
 ---
 # <a name="list-defaultpages"></a>Listar defaultPages
 

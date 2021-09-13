@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso educationAssignmentPointsGrade
 description: Quando uma atribuição é definida como um tipo de grau de pontos, cada envio terá esse objeto associado à **propriedade submission.grade.**
-localization_priority: Normal
+ms.localizationpriority: medium
 author: sharad-sharma-msft
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 131aad8f86e639c4002fed73a7221bcdc1d828b6e40d7b3e534aff3ef33ca5db
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 91dbdc6a6a94a296dffafe32d6d6021dd23d3371
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54152744"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59109147"
 ---
 # <a name="educationassignmentpointsgrade-resource-type"></a>Tipo de recurso educationAssignmentPointsGrade
 
@@ -22,7 +22,7 @@ Quando uma atribuição é definida como um tipo de grau de pontos, cada envio t
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|points|Único|Número de pontos que um professor está dando a esse objeto de envio.|
+|points|Simples|Número de pontos que um professor está dando a esse objeto de envio.|
 
 ## <a name="json-representation"></a>Representação JSON
 

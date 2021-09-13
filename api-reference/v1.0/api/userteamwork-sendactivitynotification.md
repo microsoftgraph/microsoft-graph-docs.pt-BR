@@ -2,15 +2,15 @@
 title: 'userTeamwork: sendActivityNotification'
 description: Envie uma notificação de feed de atividade para um usuário.
 author: eddie-lee-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: faa795b9a5cf2791407126bad9d4305eca0480a53011d5504ae16db2c090f6c1
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 4e44140207a514d4d73ca442dec33ccd54a141cc
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57102724"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59113921"
 ---
 # <a name="userteamwork-sendactivitynotification"></a>userTeamwork: sendActivityNotification
 Namespace: microsoft.graph
@@ -22,8 +22,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|TeamsActivity.Send|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Delegado (conta corporativa ou de estudante)|TeamsActivity.Send|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|TeamsActivity.Send|
 
 ## <a name="http-request"></a>Solicitação HTTP

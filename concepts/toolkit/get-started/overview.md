@@ -1,14 +1,14 @@
 ---
 title: Iniciando o microsoft Graph Toolkit
 description: Começar a usar o microsoft Graph Toolkit em seu aplicativo.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: elisenyang
-ms.openlocfilehash: 0fc7e189dca2585720e5be31546426ccbcd46482a77121c92d5ee4970bc9e92b
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 00e4bdf2f7c4561ea67ed1917edbe2290df2950d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54214779"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59032073"
 ---
 # <a name="getting-started-with-the-microsoft-graph-toolkit"></a>Iniciando o microsoft Graph Toolkit
 
@@ -79,11 +79,15 @@ Os provedores estão disponíveis por meio de um único pacote e podem ser insta
 
 - <b>@micosoft/mgt-msal2-provider</b>
 
-    [`@micosoft/mgt-msal2-provider`](../providers/msal2.md) contém o `Msal2Provider` componente `mgt-msal2-provider` e. O provedor MSAL usa o msal-browser para autenticação em aplicativos Web e PWAs.
+    [`@micosoft/mgt-msal2-provider`](../providers/msal2.md) contém o `Msal2Provider` componente `mgt-msal2-provider` e. O provedor MSAL2 usa o msal-browser para autenticação em aplicativos Web e PWAs.
 
 -  <b>@microsoft/mgt-teams-provider</b>
 
     [`@microsoft/mgt-teams-provider`](../providers/teams.md) contém o `TeamsProvider` componente `mgt-teams-provider` e. O Microsoft Teams habilita a autenticação no Microsoft Teams guia.
+
+-  <b>@microsoft/mgt-teams-msal2-provider</b>
+
+    [`@microsoft/mgt-teams-msal2-provider`](../providers/teams.md) contém o `TeamsMsal2Provider` componente `mgt-teams-msal2-provider` e. O Microsoft Teams MSAL2 habilita a autenticação no Microsoft Teams guia.
 
 - <b>@microsoft/mgt-sharepoint-provider</b>
 
@@ -105,7 +109,7 @@ O pacote contém todos os componentes de React gerados automaticamente e tem [`@
 
 O pacote contém uma Estrutura do SharePoint que é necessária para usar o [`@microsoft/mgt-spfx`](./mgt-spfx.md) Microsoft Graph Toolkit em Estrutura do SharePoint soluções.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Próximas etapas
 Agora você está pronto para começar a desenvolver com o microsoft Graph Toolkit! Os guias a seguir estão disponíveis para ajudá-lo a começar:
 
 - [Registrar um aplicativo no Azure Active Directory](./add-aad-app-registration.md)

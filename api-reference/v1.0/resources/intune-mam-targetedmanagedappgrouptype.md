@@ -2,15 +2,15 @@
 title: tipo de número targetedManagedAppGroupType
 description: Indica uma coleção de aplicativos destinados que podem ser uma das várias listas pré-definidas de aplicativos ou uma lista de aplicativos selecionada manualmente
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 25821d55944d6000a050739f1b8b6f0878cadebc
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: c51f6af9c775fd1cc3010060d2ff227585d83747
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58258807"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59098682"
 ---
 # <a name="targetedmanagedappgrouptype-enum-type"></a>tipo de número targetedManagedAppGroupType
 
@@ -24,7 +24,7 @@ Indica uma coleção de aplicativos destinados que podem ser uma das várias lis
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |selectedPublicApps|0|Destino da coleção de aplicativos selecionados manualmente pelo administrador.|
-|allCoreMicrosoftApps|1 |Direcionar o conjunto principal de aplicativos da Microsoft (Office, Borda, etc.|
+|allCoreMicrosoftApps|1|Direcionar o conjunto principal de aplicativos da Microsoft (Office, Borda, etc.|
 |allMicrosoftApps|2|Direcionar todos os aplicativos com a Microsoft como editor.|
 |allApps|4 |Direcionar todos os aplicativos com uma atribuição disponível.|
 

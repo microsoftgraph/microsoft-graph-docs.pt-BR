@@ -2,15 +2,15 @@
 title: tipo de recurso de domínio
 description: Detalha a atividade de login do usuário e do aplicativo para um locatário (diretório).
 author: besiler
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-access-reports
 doc_type: resourcePageType
-ms.openlocfilehash: e674e95ba5eaa4ea6aaa5cd1005372e22de480f0
-ms.sourcegitcommit: c6f7a931a8d83ac54f577b7bec08237fd17ce51a
+ms.openlocfilehash: 4ae55af47254d48a002baa733e8ba8a1224db71a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58490606"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59123066"
 ---
 # <a name="signin-resource-type"></a>tipo de recurso de domínio
 
@@ -31,14 +31,14 @@ A disponibilidade de logs de login é governada pelas políticas de retenção d
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |appDisplayName|Cadeia de caracteres|Nome do aplicativo exibido no Portal do Azure. Oferece `$filter` suporte ( e somente `eq` `startsWith` operadores).|
-|appId|Cadeia de caracteres|GUID exclusivo que representa a ID do aplicativo no Azure Active Directory. Suporta `$filter` ( `eq` somente operador).|
+|appId|String|GUID exclusivo que representa a ID do aplicativo no Azure Active Directory. Suporta `$filter` ( `eq` somente operador).|
 |appliedConditionalAccessPolicy|[coleção appliedConditionalAccessPolicy](appliedconditionalaccesspolicy.md)|Fornece uma lista de políticas de acesso condicional acionada por atividade correspondente entrar.|
 |clientAppUsed|Cadeia de caracteres|Identifica o cliente herddo usado para a atividade de entrada.  Inclui `Browser` , `Exchange Active Sync` , , , , e `modern clients` `IMAP` `MAPI` `SMTP` `POP` . Suporta `$filter` ( `eq` somente operador).|
 |conditionalAccessStatus|conditionalAccessStatus| Relata o status de uma política de acesso condicional ativada. Os valores possíveis são: `success`, `failure`, `notApplied`, e `unknownFutureValue`. Suporta `$filter` ( `eq` somente operador).|
 |correlationId|Cadeia de caracteres|A ID de solicitação enviada do cliente quando a entrada é iniciada; usado para solucionar problemas de atividade de login. Suporta `$filter` ( `eq` somente operador).|
 |createdDateTime|DateTimeOffset|Data e hora (UTC) a assinatura foi iniciada. Exemplo: meia-noite de 1º de janeiro de 2014 é relatada como `2014-01-01T00:00:00Z` . Oferece `$orderby` suporte e ( , e somente `$filter` `eq` `le` `ge` operadores).|
 |deviceDetail|[deviceDetail](devicedetail.md)|Informações do dispositivo de onde ocorreu a entrada; inclui iD do dispositivo, sistema operacional e navegador. Oferece `$filter` suporte ( e somente `eq` `startsWith` operadores) nas **propriedades browser** **e operatingSytem.** |
-|id|String|ID exclusiva que representa a atividade de login. Suporta `$filter` ( `eq` somente operador).|
+|id|Cadeia de caracteres|ID exclusiva que representa a atividade de login. Suporta `$filter` ( `eq` somente operador).|
 |ipAddress|Cadeia de caracteres|Endereço IP do cliente usado para entrar. Oferece `$filter` suporte ( e somente `eq` `startsWith` operadores).|
 |isInteractive|Booliano|Indica se uma assinatura é interativa ou não.|
 |location|[signInLocation](signinlocation.md)|Fornece o código de cidade, estado e país de origem do login. Oferece `$filter` suporte ( e somente `eq` `startsWith` operadores) em **propriedades city**, **state** e **countryOrRegion.**|
@@ -46,7 +46,7 @@ A disponibilidade de logs de login é governada pelas políticas de retenção d
 |resourceId|Cadeia de caracteres|ID do recurso em que o usuário entrou. Suporta `$filter` ( `eq` somente operador).|
 |riskDetail|riskDetail|Fornece o motivo por trás de um estado específico de um usuário arriscado, uma entrada arriscada ou um evento de risco. Os valores possíveis são `none`, `adminGeneratedTemporaryPassword`, `userPerformedSecuredPasswordChange`, `userPerformedSecuredPasswordReset`, `adminConfirmedSigninSafe`, `aiConfirmedSigninSafe`, `userPassedMFADrivenByRiskBasedPolicy`, `adminDismissedAllRiskForUser`, `adminConfirmedSigninCompromised`, `unknownFutureValue`. O valor `none` significa que nenhuma ação foi realizada pelo usuário ou entrar até o momento.  Suporta `$filter` ( `eq` somente operador).<br>**Observação:** Os detalhes dessa propriedade exigem uma Azure AD Premium P2 de uso. Outras licenças retornam o valor `hidden` .|
 |riskEventTypes|Coleção riskEventType|Tipos de evento de risco associados à assinatura. Os valores possíveis são: `unlikelyTravel`, `anonymizedIPAddress`, `maliciousIPAddress`, `unfamiliarFeatures`, `malwareInfectedIPAddress`, `suspiciousIPAddress`, `leakedCredentials`, `investigationsThreatIntelligence`,  `generic` e `unknownFutureValue`. Suporta `$filter` ( `eq` somente operador).|
-|riskEventTypes_v2|String collection|A lista de tipos de eventos de risco associados à assinatura. Valores possíveis: `unlikelyTravel` , , , , , , , , , `anonymizedIPAddress` ou `maliciousIPAddress` `unfamiliarFeatures` `malwareInfectedIPAddress` `suspiciousIPAddress` `leakedCredentials` `investigationsThreatIntelligence`  `generic` `unknownFutureValue` . Oferece `$filter` suporte ( e somente `eq` `startsWith` operadores).|
+|riskEventTypes_v2|Coleção String|A lista de tipos de eventos de risco associados à assinatura. Valores possíveis: `unlikelyTravel` , , , , , , , , , `anonymizedIPAddress` ou `maliciousIPAddress` `unfamiliarFeatures` `malwareInfectedIPAddress` `suspiciousIPAddress` `leakedCredentials` `investigationsThreatIntelligence`  `generic` `unknownFutureValue` . Oferece `$filter` suporte ( e somente `eq` `startsWith` operadores).|
 |riskLevelAggregated|riskLevel|Nível de risco agregado. Os valores possíveis são: `none`, `low`, `medium`, `high`, `hidden`, e `unknownFutureValue`. O valor `hidden` significa que o usuário ou entrada não foi habilitado para proteção de identidade do Azure AD. Suporta `$filter` ( `eq` somente operador). <br> **Observação:** detalhes para esta propriedade estão disponíveis apenas para clientes do Azure AD Premium P2. Outros clientes serão retornados `hidden`.|
 |riskLevelDuringSignIn|riskLevel|Nível de risco durante a assinatura. Os valores possíveis são: `none`, `low`, `medium`, `high`, `hidden`, e `unknownFutureValue`. O valor `hidden` significa que o usuário ou entrada não foi habilitado para proteção de identidade do Azure AD.  Suporta `$filter` ( `eq` somente operador). <br>**Observação:** detalhes para esta propriedade estão disponíveis apenas para clientes do Azure AD Premium P2. Outros clientes serão retornados `hidden`.|
 |riskState|riskState|Relata o status do usuário de risco, de entrar ou de um evento de risco. Os valores possíveis são `none`, `confirmedSafe`, `remediated`, `dismissed`, `atRisk`, `confirmedCompromised`, `unknownFutureValue`. Suporta `$filter` ( `eq` somente operador).|

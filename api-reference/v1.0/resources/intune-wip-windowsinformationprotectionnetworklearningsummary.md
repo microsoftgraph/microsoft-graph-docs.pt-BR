@@ -2,15 +2,15 @@
 title: Tipo de recurso windowsInformationProtectionNetworkLearningSummary
 description: Entidade de resumo de aprendizagem da Rede de Proteção de Informações do Windows
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d02f949a2955ae40ff738fcd1fbda3f8ca75771c524fa724642c92b5193508e2
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: aefa839c87ae8b2090a98317c0e41814e893ddca
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54223386"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59134756"
 ---
 # <a name="windowsinformationprotectionnetworklearningsummary-resource-type"></a>Tipo de recurso windowsInformationProtectionNetworkLearningSummary
 

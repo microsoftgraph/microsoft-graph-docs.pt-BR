@@ -2,15 +2,15 @@
 title: Atribuir revisadores à sua revisão de acesso usando a API Graph Microsoft
 description: Saiba como usar a API de críticas de acesso no Microsoft Graph atribuir revisadores de acesso.
 author: isabelleatmsft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: governance
 doc_type: conceptualPageType
-ms.openlocfilehash: 9e5e1f67b7b76e0a9e9ae48b2fc286ad3eca603b
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 53961c4dbadfa2732d45a277233673aac1ddb41e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58266713"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59139321"
 ---
 # <a name="assign-reviewers-to-your-access-review-using-the-microsoft-graph-api"></a>Atribuir revisadores à sua revisão de acesso usando a API Graph Microsoft
 

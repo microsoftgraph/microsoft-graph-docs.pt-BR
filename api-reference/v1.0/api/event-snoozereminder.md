@@ -2,15 +2,15 @@
 title: 'event: snoozeReminder'
 description: Adie um lembrete para um evento em um calendário do usuário até uma nova hora.
 author: harini84
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: ca25306bc830f6ec0760926ac713d80e140f9ffa
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 553ef7754d596901fc3e3e51fa671c9a258187bc
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50448274"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59105330"
 ---
 # <a name="event-snoozereminder"></a>event: snoozeReminder
 

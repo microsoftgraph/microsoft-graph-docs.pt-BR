@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso keyValue
 description: Tipo de recurso de par de valores-chave padrão.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: dougeby
 ms.prod: identity-and-access-reports
 doc_type: resourcePageType
-ms.openlocfilehash: 226d27e73a3a253ab7988f74f05fa6377cae1c6d997e16e17e73fc4698c85529
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: d1a9fdd6986ad404d74890e8f8a746f14ec49013
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54163723"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59036204"
 ---
 # <a name="keyvalue-resource-type"></a>Tipo de recurso keyValue
 

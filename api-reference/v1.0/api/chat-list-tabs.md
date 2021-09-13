@@ -2,15 +2,15 @@
 title: Listar guias no chat
 description: 'Recupere a lista de guias no chat especificado. '
 author: subray
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 1ddf7286d0e806665bbe3eacd1b9cf134fcc1e53
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: a6f62f337d529ed8e0fd872afb27024522a854a2
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50954880"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59100306"
 ---
 # <a name="list-tabs-in-chat"></a>Listar guias no chat
 
@@ -56,7 +56,7 @@ Se tiver êxito, este método retornará um código de resposta e uma coleção 
 
 ## <a name="examples"></a>Exemplos
 
-### <a name="example-1-list-all-the-tabs-in-the-chat-along-with-associated-teams-app"></a>Exemplo 1: listar todas as guias do chat juntamente com o aplicativo do Teams associado
+### <a name="example-1-list-all-the-tabs-in-the-chat-along-with-associated-teams-app"></a>Exemplo 1: listar todas as guias do chat juntamente com o aplicativo Teams associado
 #### <a name="request"></a>Solicitação
 Este é um exemplo de solicitação.
 

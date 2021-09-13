@@ -2,15 +2,15 @@
 title: Tipo de número win32LobAppNotification
 description: Contém valor para status de notificação.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: da14d59a88994748df037316291897abf725fc54de5dcb6ca2c477239eb090c9
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 429fe3202b2132a940ed364b3c1a9b200aaa2fa3
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54231765"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59019367"
 ---
 # <a name="win32lobappnotification-enum-type"></a>Tipo de número win32LobAppNotification
 

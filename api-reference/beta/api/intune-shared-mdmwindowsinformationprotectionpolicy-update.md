@@ -2,15 +2,15 @@
 title: Atualizar mdmWindowsInformationProtectionPolicy
 description: Atualizar as propriedades de um objeto mdmWindowsInformationProtectionPolicy.
 author: rolyon
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 862497246288766b109fe299209a7b85a3305a77
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 095a3cc7ecf18b51cd6a1ab5a35a8aeb57569b6b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58793362"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59017784"
 ---
 # <a name="update-mdmwindowsinformationprotectionpolicy"></a>Atualizar mdmWindowsInformationProtectionPolicy
 
@@ -27,11 +27,11 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)||
+|Delegada (conta corporativa ou de estudante)||
 | &nbsp; &nbsp; **Gerenciamento de aplicativo móvel (GAM)** | DeviceManagementApps.ReadWrite.All|
 | &nbsp;&nbsp; **Conjunto de Políticas** | DeviceManagementApps.ReadWrite.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application||
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Aplicativo||
 | &nbsp; &nbsp; **Gerenciamento de aplicativo móvel (GAM)** | DeviceManagementApps.ReadWrite.All|
 | &nbsp;&nbsp; **Conjunto de Políticas** | DeviceManagementApps.ReadWrite.All|
 
@@ -58,11 +58,11 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [mdmWind
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |displayName|Cadeia de caracteres|Nome para exibição da política. Herdado de [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
-|descrição|Cadeia de caracteres|A descrição da política. Herdado de [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
+|description|String|A descrição da política. Herdado de [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
 |createdDateTime|DateTimeOffset|A data e a hora da criação da política. Herdado de [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
 |lastModifiedDateTime|DateTimeOffset|Última vez em que a política foi modificada. Herdado de [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
-|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de marcas de escopo para esta instância entity. Herdado de [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
-|id|Cadeia de caracteres|Chave da entidade. Herdado de [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
+|roleScopeTagIds|Coleção String|Lista de marcas de escopo para esta instância entity. Herdado de [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
+|id|String|Chave da entidade. Herdado de [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
 |version|String|Versão da entidade. Herdado de [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
 |enforcementLevel|[windowsInformationProtectionEnforcementLevel](../resources/intune-mam-windowsinformationprotectionenforcementlevel.md)|Nível de aplicação da WIP. Consulte a definição Enum para valores com suporte Herdados de [windowsInformationProtection](../resources/intune-mam-windowsinformationprotection.md). Os valores possíveis são: `noProtection`, `encryptAndAuditOnly`, `encryptAuditAndPrompt`, `encryptAuditAndBlock`.|
 |enterpriseDomain|String|Domínio primário da empresa Herdado de [windowsInformationProtection](../resources/intune-mam-windowsinformationprotection.md)|

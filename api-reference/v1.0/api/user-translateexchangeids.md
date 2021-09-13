@@ -2,15 +2,15 @@
 title: 'user: translateExchangeIds'
 description: Traduzir os identificadores de recursos relacionados ao Outlook entre formatos.
 author: abheek-das
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 030594006de62bb4c146cad4cae70fcb4c51485c
-ms.sourcegitcommit: 48fff935d56fe96e97577a80a3a0aa15c45419ba
+ms.openlocfilehash: 462800b6ce6cf235a15a2a347a068a3c229ffbeb
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "50176392"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59109644"
 ---
 # <a name="user-translateexchangeids"></a>user: translateExchangeIds
 
@@ -18,14 +18,14 @@ Namespace: microsoft.graph
 
 Traduzir os identificadores de recursos relacionados ao Outlook entre formatos.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 | Tipo de permissão | Permissões (da com menos para a com mais privilégios) |
 |:----------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante) | User.ReadBasic.All, User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All |
-| Delegado (conta pessoal da Microsoft) | User.ReadBasic.All, User.Read, User.ReadWrite |
+| Delegada (conta corporativa ou de estudante) | User.ReadBasic.All, User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All |
+| Delegada (conta pessoal da Microsoft) | User.ReadBasic.All, User.Read, User.ReadWrite |
 | Aplicativo | User.Read.All, User.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -47,30 +47,30 @@ POST /users/{id|userPrincipalName}/translateExchangeIds
 
 | Parâmetro | Tipo | Descrição |
 |:----------|:-----|:------------|
-| inputIds | Conjunto de cadeias de caracteres | Uma coleção de identificadores a converter. Todos os identificadores na coleção DEVEM ter o mesmo tipo de ID de origem e DEVEM ser para itens na mesma caixa de correio. O tamanho máximo dessa coleção é de 1000 cadeias de caracteres. |
-| sourceIdType | exchangeIdFormat | O tipo de identificação dos identificadores no `InputIds` parâmetro. |
-| targetIdType | exchangeIdFormat | O tipo de ID solicitado para o qual converter. |
+| inputIds | Coleção String | Uma coleção de identificadores a converter. Todos os identificadores da coleção DEVEM ter o mesmo tipo de ID de origem e DEVEM ser para itens na mesma caixa de correio. O tamanho máximo dessa coleção é de 1000 cadeias de caracteres. |
+| sourceIdType | exchangeIdFormat | O tipo de ID dos identificadores no `InputIds` parâmetro. |
+| targetIdType | exchangeIdFormat | O tipo de ID solicitado a ser convertido. |
 
-### <a name="exchangeidformat-values"></a>Valores de exchangeIdFormat
+### <a name="exchangeidformat-values"></a>Valores exchangeIdFormat
 
 | Member | Descrição |
 |:-------|:------------|
-| entryId | O formato de ID de entrada binária usado por clientes MAPI. |
-| ewsId | O formato de ID usado pelos clientes dos Serviços Web do Exchange. |
+| entryId | O formato de ID de entrada binária usado pelos clientes MAPI. |
+| ewsId | O formato de ID usado pelos clientes Exchange Web Services. |
 | immutableEntryId | O formato de ID imutável compatível com MAPI binário. |
-| restId | O formato de ID padrão usado pelo Microsoft Graph. |
-| restImmutableEntryId | O formato de ID imutável usado pelo Microsoft Graph. |
+| restId | O formato de ID padrão usado pela Microsoft Graph. |
+| restImmutableEntryId | O formato ID imutável usado pela Microsoft Graph. |
 
-Os formatos binários ( `entryId` e `immutableEntryId` ) são codificados como base64 seguro para URL. A segurança de URL é implementada modificando a codificação base64 dos dados binários da seguinte maneira:
+Os formatos binários ( e ) são codificados com `entryId` base em URL `immutableEntryId` segura64. A segurança de URL é implementada modificando a codificação base64 dos dados binários da seguinte maneira:
 
 - Substituir `+` por `-`
 - Substituir `/` por `_`
-- Remover todos os caracteres de preenchimento à sua parte ( `=` )
+- Remover quaisquer caracteres de preenchimento à parte ( `=` )
 - Adicione um inteiro ao final da cadeia de caracteres indicando quantos caracteres de preenchimento estavam no original ( `0` , `1` ou `2` )
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna `200 OK` o código de resposta e uma coleção [convertIdResult](../resources/convertidresult.md) no corpo da resposta.
+Se tiver êxito, este método retornará `200 OK` o código de resposta e uma coleção [convertIdResult](../resources/convertidresult.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 

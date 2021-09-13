@@ -2,15 +2,15 @@
 title: Atualizar microsoftTunnelServerLogCollectionResponse
 description: Atualize as propriedades de um objeto microsoftTunnelServerLogCollectionResponse.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: fda6bf3bbc6cb19f3ddf2264284db840941f636a
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: b2abbe7f801848a7ce8f6108b048a32b9bf0f345
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58820566"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59018023"
 ---
 # <a name="update-microsofttunnelserverlogcollectionresponse"></a>Atualizar microsoftTunnelServerLogCollectionResponse
 

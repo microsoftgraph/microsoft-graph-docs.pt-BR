@@ -2,15 +2,15 @@
 title: Tipo de recurso userFlowLanguageConfiguration
 description: Permite que um fluxo de usuários suporte a vários idiomas.
 author: jkdouglas
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: b40df72429bdc1b23bbb9426ae9b9f78154257491ba3c715d57c0804b226df98
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 9af22f309ca7c93043d90ef8c0583686d7cf24f2
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54221149"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59136317"
 ---
 # <a name="userflowlanguageconfiguration-resource-type"></a>Tipo de recurso userFlowLanguageConfiguration
 
@@ -32,7 +32,7 @@ Para [Azure Active Directory fluxos de usuário](/azure/active-directory/externa
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|O identificador do idioma. Este campo é a marca de identificação de idioma [RFC 5646](https://tools.ietf.org/html/rfc5646) compatível e deve ser uma ID de idioma documentada.|
+|id|String|O identificador do idioma. Este campo é a marca de identificação de idioma [RFC 5646](https://tools.ietf.org/html/rfc5646) compatível e deve ser uma ID de idioma documentada.|
 |isEnabled|Booliano|Indica se o idioma está habilitado no fluxo do usuário.|
 |displayName|String|O nome do idioma a ser exibido. Essa propriedade é somente leitura.|
 

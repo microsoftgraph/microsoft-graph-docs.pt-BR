@@ -1,16 +1,16 @@
 ---
 title: Lista exclui coleção de permissionGrantPolicy
 description: Recupere uma lista dos conjuntos de condições que descrevem as condições nas quais um evento de concessão de permissão é excluído em uma política de concessão de permissão.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: 17687f0f9437f67cea107bbaeca99fef44c3cd34
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: a2c76b758baf8d71c3be447617212bc6744c8c5a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52051295"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59032605"
 ---
 # <a name="list-excludes-collection-of-permissiongrantpolicy"></a>Lista exclui coleção de permissionGrantPolicy
 
@@ -24,8 +24,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Policy.Read.PermissionGrant, Directory.Read.All |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegada (conta corporativa ou de estudante) | Policy.Read.PermissionGrant, Directory.Read.All |
+|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Policy.Read.PermissionGrant, Directory.Read.All |
 
 ## <a name="http-request"></a>Solicitação HTTP

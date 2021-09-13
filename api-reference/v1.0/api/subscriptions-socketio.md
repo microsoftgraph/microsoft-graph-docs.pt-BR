@@ -1,16 +1,16 @@
 ---
 author: daspek
 title: Obter ponto de extremidade do websocket
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: sharepoint
 description: Permite que você receba notificações de alteração quase em tempo real para uma unidade usando socket.io.
 doc_type: apiPageType
-ms.openlocfilehash: 3c937a9d51073ca89148c9ff8a3b51c8f32d30c5
-ms.sourcegitcommit: cde4a3386b08a67cb476df6d46b51885c643d94f
+ms.openlocfilehash: 5150b6a8504ed19caa9c06cff781a199a4bbe0a7
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "50626213"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59019458"
 ---
 # <a name="get-websocket-endpoint"></a>Obter ponto de extremidade do websocket
 
@@ -29,8 +29,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)
 |:---------------------------------------|:-------------------------------------------
-| Delegado (conta corporativa ou de estudante)     | Files.Read, Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All
-| Delegado (conta pessoal da Microsoft) | Files.Read, Files.ReadWrite, Files.ReadWrite.All
+| Delegada (conta corporativa ou de estudante)     | Files.Read, Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All
+| Delegada (conta pessoal da Microsoft) | Files.Read, Files.ReadWrite, Files.ReadWrite.All
 | Aplicativo                            | Sem suporte.
 
 ## <a name="http-request"></a>Solicitação HTTP

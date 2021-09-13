@@ -2,15 +2,15 @@
 title: Atualizar educationUser
 description: Atualize as propriedades de um objeto educationUser.
 author: mlafleur
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: f3cf8d98f3446c93e89451a2d2c262bc431328e0
-ms.sourcegitcommit: 34891a1c601976166958be1aa04bab5936592b44
+ms.openlocfilehash: 8a7b7be0b41d3402d6ed339a5ecaad3949f99203
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52232050"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59100201"
 ---
 # <a name="update-educationuser"></a>Atualizar educationUser
 
@@ -49,7 +49,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 | assignedPlans        | Coleção [assignedPlan](../resources/assignedplan.md)            | Os planos que são atribuídos ao usuário. Somente leitura. Não anulável.                                                                                                                                                                                                                                                                                           |
 | businessPhones       | Coleção de cadeias de caracteres                                                  | Números de telefone para o usuário. **Observação:** embora essa seja uma coleção de cadeias de caracteres, somente um número pode ser definido para essa propriedade.                                                                                                                                                                                                                           |
 | createdBy            | [identitySet](../resources/identityset.md)                         | Entidade que criou o usuário.                                                                                                                                                                                                                                                                                                                                |
-| department           | String                                                             | O nome do departamento no qual o usuário trabalha. Oferece suporte a $filter.                                                                                                                                                                                                                                                                                      |
+| departamento           | String                                                             | O nome do departamento no qual o usuário trabalha. Oferece suporte a $filter.                                                                                                                                                                                                                                                                                      |
 | displayName          | String                                                             | O nome exibido para o usuário no catálogo de endereços. Geralmente é a combinação do nome, da inicial do nome do meio e do sobrenome do usuário. Essa propriedade é obrigatória quando um usuário é criado e não pode ser apagado durante atualizações. Oferece suporte a $filter e $orderby.                                                                                      |
 | externalSource       | educationExternalSource                                            | De onde esse usuário foi criado. Os valores possíveis são: `sis` e `manual`.                                                                                                                                                                                                                                                                                     |
 | externalSourceDetail | String                                                             | O nome da fonte externa de onde esses recursos foram gerados.                                                                                                                                                                                                                                                                                          |
@@ -115,7 +115,7 @@ Content-length: 508
 ---
 
 ##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto de resposta exibido aqui pode ser encurtado para legibilidade.
+Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser reduzido para facilitar a leitura.
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -2,15 +2,15 @@
 title: Tipo de recurso deviceCompliancePolicy
 description: 'Esta é a classe base para a política de Conformidade. Políticas de conformidade são específicas de plataformas, e políticas de conformidade individuais por plataforma herdam a partir daqui. '
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 362d1cc42d63c2e7173bb0df555b7e2d72de8f5841731a863153518922c00d1c
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 48690ae6e1598b9136f48a363dcbe35286a67667
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54229210"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59072390"
 ---
 # <a name="devicecompliancepolicy-resource-type"></a>Tipo de recurso deviceCompliancePolicy
 
@@ -31,11 +31,11 @@ Esta é a classe base para a política de Conformidade. Políticas de conformida
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Chave da entidade.|
+|id|String|Chave da entidade.|
 |createdDateTime|DateTimeOffset|DateTime em que o objeto foi criado.|
 |description|Cadeia de caracteres|Descrição fornecida pelo administrador da Configuração do dispositivo.|
 |lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto.|
-|displayName|Cadeia de caracteres|O administrador forneceu o nome da Configuração do dispositivo.|
+|displayName|String|O administrador forneceu o nome da Configuração do dispositivo.|
 |versão|Int32|Versão da configuração do dispositivo.|
 
 ## <a name="relationships"></a>Relações

@@ -2,15 +2,15 @@
 title: Tipo de recurso sharedPCAccountManagerPolicy
 description: Política do gerenciador de conta de PC compartilhado. Aplica-se somente quando o gerenciador de contas está habilitado.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8886c3784ea2e69f4afbf6618a2b9c456293febb601b18894ded5439d11bf4d5
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 8e6523c9c2576610f73198ac3830bf9573ad71dd
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54184652"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59067168"
 ---
 # <a name="sharedpcaccountmanagerpolicy-resource-type"></a>Tipo de recurso sharedPCAccountManagerPolicy
 

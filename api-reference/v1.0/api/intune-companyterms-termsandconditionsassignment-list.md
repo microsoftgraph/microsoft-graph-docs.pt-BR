@@ -2,15 +2,15 @@
 title: Listar termsAndConditionsAssignments
 description: Listar propriedades e relações dos objetos termsAndConditionsAssignment.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 7252923e187eb3278c14650aa8ce4e86f2466e8ddc8d02871213b6612edd8a67
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: e190e7e057812761a122a519b9eecad44d57f050
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54144953"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59016390"
 ---
 # <a name="list-termsandconditionsassignments"></a>Listar termsAndConditionsAssignments
 
@@ -25,8 +25,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta corporativa ou de estudante)|DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP

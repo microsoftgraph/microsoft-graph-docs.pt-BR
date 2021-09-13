@@ -1,16 +1,16 @@
 ---
 title: 'post: forward'
-description: 'Encaminhe uma postagem para um destinatário. Você pode especificar a conversa primária e o thread na solicitação, '
-localization_priority: Normal
+description: 'Encaminhe uma postagem para um destinatário. Você pode especificar a conversa pai e o thread na solicitação, '
+ms.localizationpriority: medium
 author: dkershaw10
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 2e6219fc3b1d0815a14322a72711e7c887188374
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 8695b1f93c3b68861ba467f0327ba4b61fea11a6
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48020584"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59085319"
 ---
 # <a name="post-forward"></a>post: forward
 

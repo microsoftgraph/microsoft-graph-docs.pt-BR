@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso plannerProgressTaskBoardTaskFormat
 description: O **recurso plannerProgressTaskBoardTaskFormat** representa as informações usadas para renderizar uma tarefa corretamente na exibição Progresso do Quadro de Tarefas (uma exibição organizada pelo estado do campo PercentComplete no objeto de tarefa, com colunas para Não Iniciado, Em Andamento e Concluído). Cada tarefa terá um **objeto plannerProgressTaskBoardTaskFormat** associado a ela.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: 9715fb55187a3d48ea8d21f5bd088dbfb2e08f189ed9c96e66e747c100a1272f
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 0288b8c5ef99f4e72f019c6ffaee15bfe1022348
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54218433"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59052934"
 ---
 # <a name="plannerprogresstaskboardtaskformat-resource-type"></a>Tipo de recurso plannerProgressTaskBoardTaskFormat
 

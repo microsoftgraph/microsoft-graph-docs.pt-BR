@@ -1,16 +1,16 @@
 ---
 title: Trabalhando com o Excel no Microsoft Graph
 description: O Microsoft Graph pode ser usado para permitir que aplicativos Web e dispositivos móveis leiam e modifiquem as pastas de trabalho do Excel armazenadas no OneDrive for Business, site do SharePoint ou Group drive.
-localization_priority: Priority
+ms.localizationpriority: high
 author: grangery
 ms.prod: excel
 doc_type: conceptualPageType
-ms.openlocfilehash: 4bc4c60d2af721594802c09debc2591078da5e2b
-ms.sourcegitcommit: 9b8abc940a68dac6ee5da105ca29800cb59775f6
+ms.openlocfilehash: 877c2b34b24d77b145a539abff5ca72b51470163
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "58513598"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59123570"
 ---
 # <a name="working-with-excel-in-microsoft-graph"></a>Trabalhando com o Excel no Microsoft Graph
 

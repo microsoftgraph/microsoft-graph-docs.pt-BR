@@ -2,15 +2,15 @@
 title: Listar termsAndConditionsAcceptanceStatuses
 description: Listar propriedades e relações dos objetos termsAndConditionsAcceptanceStatus.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 009e052c2470376dfbf6e40a0e90c67cfc5b979d9ccd2ec69e38024f9a83f184
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 8c650d6b8bc0229396df6c1d64b9a7ce45d5041e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54167524"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59026550"
 ---
 # <a name="list-termsandconditionsacceptancestatuses"></a>Listar termsAndConditionsAcceptanceStatuses
 
@@ -25,8 +25,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta corporativa ou de estudante)|DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP

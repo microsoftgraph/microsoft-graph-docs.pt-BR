@@ -3,14 +3,14 @@ title: Tipo de recurso chatMessagePolicyViolationPolicyTip
 description: Representa propriedades de uma dica de política em um objeto chatMessagePolicyViolation. As dicas de política fornecem ao remetente informações sobre a violação da política.
 author: RamjotSingh
 doc_type: resourcePageType
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
-ms.openlocfilehash: 4373475c4219c05b1bdf7ea741c0ed6526253d234da916e0760a3ed46fee3312
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 732ad01c49e23e84428922e08c9001c7a1dec34f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54169659"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59109385"
 ---
 # <a name="chatmessagepolicytip-resource-type"></a>Tipo de recurso chatMessagePolicyTip
 
@@ -21,8 +21,8 @@ As dicas de política geralmente são definidas por um aplicativo de prevenção
 
 | Propriedade   | Tipo |Descrição|
 |:---------------|:--------|:----------|
-|complianceUrl|string|A URL que um usuário pode visitar para ler sobre as políticas de prevenção contra perda de dados da organização. (ou seja, políticas sobre o que os usuários não devem dizer nos chats)|
-|generalText|string|Texto explicativo mostrado ao remetente da mensagem.|
+|complianceUrl|cadeia de caracteres|A URL que um usuário pode visitar para ler sobre as políticas de prevenção contra perda de dados da organização. (ou seja, políticas sobre o que os usuários não devem dizer nos chats)|
+|generalText|cadeia de caracteres|Texto explicativo mostrado ao remetente da mensagem.|
 |matchedConditionDescriptions|coleção de cadeias de caracteres|A lista de dados impróprios na mensagem detectada pelo aplicativo de prevenção contra perda de dados. Cada aplicativo DLP define suas próprias condições, exemplos incluem "Número do Cartão de Crédito" e "Número da Previdência Social".|
 
 ## <a name="json-representation"></a>Representação JSON

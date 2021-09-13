@@ -2,15 +2,15 @@
 title: tipo de recurso agendar
 description: Uma coleção de schedulingGroups, shifts, timeOffReasons e timesOff em uma equipe.
 author: akumar39
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: resourcePageType_
-ms.openlocfilehash: b7ad28acfc03726d9645afce686b327d6d5414b9755f6f01791e21b544a5d8e4
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 446a82c5cf0298c074710cbce6b88fb376b04507
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54189342"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59035980"
 ---
 # <a name="schedule-resource-type"></a>tipo de recurso agendar
 
@@ -29,21 +29,21 @@ Uma coleção de [objetos schedulingGroup,](schedulinggroup.md) [objetos shift,]
 ## <a name="properties"></a>Propriedades
 |Nome                   |Tipo           |Descrição                                                                                                                                      |
 |-----------------------|---------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
-| id                    |string  |ID do agendamento.|
+| id                    |cadeia de caracteres  |ID do agendamento.|
 | enabled               |Boolean    | Indica se a agenda está habilitada para a equipe. Obrigatório.|
 | timeZone              |string  | Indica o fuso horário da equipe de agendamento usando o formato de banco de dados tz. Obrigatório.|
 | provisionStatus       |operationStatus    | O status do provisionamento de agendamento. Os valores possíveis `notStarted` são , , , `running` `completed` `failed` . |
-| provisionStatusCode   |string  | Informações adicionais sobre por que o provisionamento de agendamento falhou. |
-| timeClockEnabled                  |Booliano  | Indica se o relógio está habilitado para o agendamento.             |
+| provisionStatusCode   |cadeia de caracteres  | Informações adicionais sobre por que o provisionamento de agendamento falhou. |
+| timeClockEnabled                  |Boolean  | Indica se o relógio está habilitado para o agendamento.             |
 | openShiftsEnabled                 |Booliano  | Indica se os turnos abertos estão habilitados para o agendamento.             | 
-| swapShiftsRequestsEnabled                 |Booliano| Indica se as solicitações de turnos de troca estão habilitadas para o agendamento.             |
+| swapShiftsRequestsEnabled                 |Boolean| Indica se as solicitações de turnos de troca estão habilitadas para o agendamento.             |
 | offerShiftRequestsEnabled                 |Booliano  | Indica se as solicitações de turno de oferta estão habilitadas para o agendamento.             | 
 | timeOffRequestsEnabled                    |Booliano | Indica se as solicitações de tempo de folga estão habilitadas para o agendamento.             | 
 
 
 
 ## <a name="relationships"></a>Relacionamentos
-|Nome                   |Tipo           |Descrição                                                                                                                                      |
+|Name                   |Tipo           |Descrição                                                                                                                                      |
 |-----------------------|---------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
 | shifts   | [coleção shift](shift.md)  | Os turnos na agenda. |
 | timesOff   |[Coleção timeOff](timeoff.md)  | As instâncias de horários de folga na agenda. |

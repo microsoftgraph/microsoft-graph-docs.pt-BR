@@ -2,14 +2,14 @@
 title: Receba notificações de alterações de maneiras diferentes
 description: As notificações de alteração podem ser enviadas por meio de tecnologias diferentes, incluindo o webhooks e Hubs de Eventos do Azure.
 author: Jumaodhiss
-localization_priority: Priority
+ms.localizationpriority: high
 ms.custom: graphiamtop20, devx-track-azurecli
-ms.openlocfilehash: 025ae3d77e4cfb9bb819cdb0b9b27c3b3bb388cc8d5d4d7f8a1cde04308ec3fd
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 59caceb3b56853b9bc4d20fa97cfc035b1a3ea0c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54216522"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59134063"
 ---
 # <a name="get-change-notifications-delivered-in-different-ways"></a>Receber notificações de alterações de maneiras diferentes
 
@@ -166,7 +166,7 @@ Antes de receber as notificações no aplicativo, você precisará criar outra p
 
 ### <a name="what-happens-if-the-microsoft-graph-change-tracking-application-is-missing"></a>O que acontece se o aplicativo de controle de alterações do Microsoft Graph estiver ausente?
 
-É possível que o serviço principal do **Controle de Alterações do Microsoft Graph** esteja ausente no seu locatário, dependendo de quando o locatário foi criado e de operações administrativas. Para resolver este problema, execute [a seguinte consulta](https://developer.microsoft.com/pt-BR/graph/graph-explorer?request=servicePrincipals&method=POST&version=v1.0&GraphUrl=https://graph.microsoft.com&requestBody=eyJhcHBJZCI6IjBiZjMwZjNiLTRhNTItNDhkZi05YTgyLTIzNDkxMGM0YTA4NiJ9) no [Microsoft Graph Explorer](https://developer.microsoft.com/pt-BR/graph/graph-explorer).
+É possível que o serviço principal do **Controle de Alterações do Microsoft Graph** esteja ausente no seu locatário, dependendo de quando o locatário foi criado e de operações administrativas. Para resolver este problema, execute [a seguinte consulta](https://developer.microsoft.com/en-us/graph/graph-explorer?request=servicePrincipals&method=POST&version=v1.0&GraphUrl=https://graph.microsoft.com&requestBody=eyJhcHBJZCI6IjBiZjMwZjNiLTRhNTItNDhkZi05YTgyLTIzNDkxMGM0YTA4NiJ9) no [Microsoft Graph Explorer](https://developer.microsoft.com/en-us/graph/graph-explorer).
 
 Detalhes da consulta:
 

@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso activityBasedTimeoutPolicy
 description: Representa uma política que pode controlar o tempo de tempo ocioso para sessões da Web para aplicativos que suportam a funcionalidade de tempo-de-tempo baseado em atividade.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: lujiangfeng666
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 2537eaa6aa18d15d09d24cee790bb0d3fb63e173de6ad1e41fc10deb5b0173ef
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 6b3bfaec22fcbf8c4586c0d990bf38d4c4ad2a0d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54197118"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59094510"
 ---
 # <a name="activitybasedtimeoutpolicy-resource-type"></a>Tipo de recurso activityBasedTimeoutPolicy
 
@@ -27,18 +27,18 @@ Herda de [stsPolicy](stsPolicy.md).
 | [Listar activityBasedTimeoutPolicies](../api/activitybasedtimeoutpolicy-list.md) | [activityBasedTimeoutPolicy](activitybasedtimeoutpolicy.md) | Ler propriedades e relações de objetos activityBasedTimeoutPolicy. |
 | [Criar activityBasedTimeoutPolicy](../api/activitybasedtimeoutpolicy-post-activitybasedtimeoutpolicies.md) | [activityBasedTimeoutPolicy](activitybasedtimeoutpolicy.md) | Crie um objeto activityBasedTimeoutPolicy. |
 | [Obter activityBasedTimeoutPolicy](../api/activitybasedtimeoutpolicy-get.md) | [activityBasedTimeoutPolicy](activitybasedtimeoutpolicy.md) | Ler propriedades e relações de um objeto activityBasedTimeoutPolicy. |
-| [Atualizar activityBasedTimeoutPolicy](../api/activitybasedtimeoutpolicy-update.md) | None | Atualizar um objeto activityBasedTimeoutPolicy. |
-| [Excluir activityBasedTimeoutPolicy](../api/activitybasedtimeoutpolicy-delete.md) | None | Exclua um objeto activityBasedTimeoutPolicy. |
+| [Atualizar activityBasedTimeoutPolicy](../api/activitybasedtimeoutpolicy-update.md) | Nenhum(a) | Atualizar um objeto activityBasedTimeoutPolicy. |
+| [Excluir activityBasedTimeoutPolicy](../api/activitybasedtimeoutpolicy-delete.md) | Nenhum(a) | Exclua um objeto activityBasedTimeoutPolicy. |
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|id|Cadeia de caracteres| Identificador exclusivo dessa política. Apenas leitura.|
-|definition|Coleção de cadeias de caracteres| Uma coleção de cadeias de caracteres que contém uma cadeia de caracteres JSON que define as regras e as configurações dessa política. Consulte abaixo para obter mais detalhes sobre o esquema JSON para esta propriedade. Obrigatório.|
+|id|String| Identificador exclusivo dessa política. Somente leitura.|
+|definition|Coleção String| Uma coleção de cadeias de caracteres que contém uma cadeia de caracteres JSON que define as regras e as configurações dessa política. Consulte abaixo para obter mais detalhes sobre o esquema JSON para esta propriedade. Obrigatório.|
 |description|Cadeia de caracteres| Descrição dessa política.|
-|displayName|Cadeia de caracteres| Nome de exibição para esta política. Obrigatório.|
-|isOrganizationDefault|Booliano|Se definido como true, ativa essa política. Pode haver muitas políticas para o mesmo tipo de política, mas apenas uma pode ser ativada como o padrão da organização. Opcional, o valor padrão é false.|
+|displayName|String| Nome de exibição para esta política. Obrigatório.|
+|isOrganizationDefault|Boolean|Se definido como true, ativa essa política. Pode haver muitas políticas para o mesmo tipo de política, mas apenas uma pode ser ativada como o padrão da organização. Opcional, o valor padrão é false.|
 
 
 ### <a name="properties-of-an-activity-based-timeout-policy-definition"></a>Propriedades de uma definição de política de tempo de tempo livre baseada em atividade

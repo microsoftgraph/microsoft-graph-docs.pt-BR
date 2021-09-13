@@ -1,16 +1,16 @@
 ---
 title: Get schemaExtension
 description: Obter as propriedades da definição de esquemaExtension especificada.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: dkershaw10
 ms.prod: extensions
 doc_type: apiPageType
-ms.openlocfilehash: cd8252475954df778156ecdfd780179a04444192
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 6e5153f93a8f0f643493545b85b13f7df5c65bd2
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52038968"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59019591"
 ---
 # <a name="get-schemaextension"></a>Get schemaExtension
 
@@ -22,8 +22,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | User.Read, Application.Read.All    |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegada (conta corporativa ou de estudante) | User.Read, Application.Read.All    |
+|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Application.Read.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -77,7 +77,7 @@ GET https://graph.microsoft.com/v1.0/schemaExtensions/graphlearn_test
 ---
 
 ##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser reduzido para facilitar a leitura.
 <!-- {
   "blockType": "response",
   "truncated": true,

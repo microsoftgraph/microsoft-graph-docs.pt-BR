@@ -2,15 +2,15 @@
 title: Listar membros de equipe
 description: Obtenha o conversationMembers de uma equipe.
 author: AkJo
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 3d55cb5847faee74b10892afd679573998f203f3
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: 3598686c8e0b1de4328a58a04430bdd45d52166f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49872209"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59110015"
 ---
 # <a name="list-members-of-team"></a>Listar membros de equipe
 Namespace: microsoft.graph
@@ -20,9 +20,9 @@ Obtenha a [conversationMember](../resources/conversationmember.md) coleçãoda [
 > [!NOTE]
 > As IDs de associação retornadas pelo servidor devem ser tratadas como cadeias de caracteres opacas. O cliente não deve tentar analisar ou fazer suposições sobre essas IDs do recursos.
 > 
-> Os resultados da associação podem ser mapeados para usuários de diferentes locatários, conforme indicado na resposta, no futuro. O cliente não deve presumir que todos os membros são apenas do locatário atual.
+> Os resultados da associação podem ser mapeados para usuários de diferentes locatários, conforme indicado na resposta, no futuro. O cliente não deve presumir que todos os membros sejam apenas do locatário atual.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|

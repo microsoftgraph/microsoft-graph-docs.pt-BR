@@ -2,15 +2,15 @@
 title: Excluir telecomExpenseManagementPartner
 description: Exclui telecomExpenseManagementPartner.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 8c8949a46b0b8207300a64ff2b94f1d54d4a7309536e5316e13a6072ec739cd4
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: a717f01726aa8d44d439b5c3ceaddec799d7e90b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54223827"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59110428"
 ---
 # <a name="delete-telecomexpensemanagementpartner"></a>Excluir telecomExpenseManagementPartner
 
@@ -25,8 +25,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP

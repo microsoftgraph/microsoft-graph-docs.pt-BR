@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso appIdentity
 description: Indica a identidade do aplicativo que realizou a ação ou foi alterado. Inclui ID do Aplicativo, Nome, ID da Entidade de Serviço e Nome. Esse recurso é chamado pela API directoryAudit
-localization_priority: Normal
+ms.localizationpriority: medium
 author: dhanyahk
 ms.prod: identity-and-access-reports
 doc_type: resourcePageType
-ms.openlocfilehash: 0d9347ecf3571b89843c6e2b83454d6ae45b5b65405ba66914227a994abc0fb7
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 8259ab10f798e3e50d9d7eaec5fbd9aecb3719df
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54155208"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59062814"
 ---
 # <a name="appidentity-resource-type"></a>Tipo de recurso appIdentity
 
@@ -23,7 +23,7 @@ Indica a identidade do aplicativo que realizou a ação ou foi alterado. Inclui 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |appId|Cadeia de caracteres|Se refere a GUID exclusivo que representa o Id de aplicativo no Azure Active Directory.|
-|displayName|Cadeia de caracteres|Refere-se ao Nome do Aplicativo exibido no Portal do Azure.|
+|displayName|String|Refere-se ao Nome do Aplicativo exibido no Portal do Azure.|
 |servicePrincipalId|Cadeia de caracteres|Refere-se ao GUID exclusivo que indica a ID da Entidade de Serviço Azure Active Directory para o aplicativo correspondente.|
 |servicePrincipalName|Cadeia de caracteres|Refere-se ao Nome da Entidade de Serviço é o nome do aplicativo no locatário. |
 

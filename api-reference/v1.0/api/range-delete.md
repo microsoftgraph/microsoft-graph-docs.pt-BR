@@ -2,15 +2,15 @@
 title: 'Range: delete'
 description: Exclui as células associadas ao intervalo.
 author: lumine2008
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: e16a81e0c1b1bcc78e2109718638a5e50d12d74d
-ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
+ms.openlocfilehash: 271727d455bb619711411dd2404c934a970b5962
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "50574906"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59130345"
 ---
 # <a name="range-delete"></a>Range: delete
 

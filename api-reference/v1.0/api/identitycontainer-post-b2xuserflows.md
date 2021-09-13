@@ -1,16 +1,16 @@
 ---
 title: Criar b2xIdentityUserFlow
 description: Crie um novo objeto b2xIdentityUserFlow.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 author: jkdouglas
 ms.prod: identity-and-sign-in
-ms.openlocfilehash: 3711f7e607085096d28125cad94b86ea796b5044
-ms.sourcegitcommit: 32c83957ee69f21a10cd5f759adb884ce4b41c52
+ms.openlocfilehash: 09bb79e8d21aead6fd0ff126cc7c92ad8eaf9ced
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51920266"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59016635"
 ---
 # <a name="create-b2xidentityuserflow"></a>Criar b2xIdentityUserFlow
 
@@ -26,12 +26,12 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegada (conta corporativa ou de estudante)|IdentityUserFlow.ReadWrite.All|
 |Delegada (conta pessoal da Microsoft)| Sem suporte.|
-|Application|IdentityUserFlow.ReadWrite.All|
+|Aplicativo|IdentityUserFlow.ReadWrite.All|
 
 A conta de trabalho ou de estudante precisa pertencer a uma das seguintes funções:
 
 * Administrador global
-* Administrador de Fluxo de Usuário de Identidade Externa
+* Administrador de identidade externa Flow usuário
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -55,7 +55,7 @@ No corpo da solicitação, forneça uma representação JSON de [um b2xIdentityU
 |Propriedade|Tipo|Descrição|
 |:---------------|:--------|:----------|
 |id|String|Obrigatório. O nome do fluxo de usuário. O nome será pré-canetado após `B2X_1` a criação.|
-|userFlowType|String|Obrigatório. O tipo de fluxo de usuário que você está criando. Esse valor sempre será `signUpOrSignIn` .|
+|userFlowType|Cadeia de caracteres|Obrigatório. O tipo de fluxo de usuário que você está criando. Esse valor sempre será `signUpOrSignIn` .|
 |userFlowTypeVersion|Flutuação|Obrigatório. A versão do fluxo de usuário. Esse valor sempre será 1.|
 |apiConnectorConfiguration|[userFlowApiConnectorConfiguration](../resources/userflowapiconnectorconfiguration.md)|Opcional. Configuração para habilitar um conector de API para uso como parte do fluxo do usuário.|
 

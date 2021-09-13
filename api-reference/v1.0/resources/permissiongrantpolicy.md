@@ -1,16 +1,16 @@
 ---
 title: tipo de recurso permissionGrantPolicy
 description: Especifica as condições em que o consentimento pode ser autorizado.
-localization_priority: Priority
+ms.localizationpriority: high
 doc_type: resourcePageType
 ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: 379496e1d13012bf31e67109ab7c405e20d7ebd2c1149f323448e9fa15faff41
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 0d7868c3f0316703a62536a610ea29f2df9f13e7
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54126379"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59117883"
 ---
 # <a name="permissiongrantpolicy-resource-type"></a>tipo de recurso permissionGrantPolicy
 

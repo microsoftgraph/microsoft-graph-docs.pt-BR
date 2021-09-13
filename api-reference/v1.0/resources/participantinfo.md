@@ -2,15 +2,15 @@
 title: Tipo de recurso participantInfo
 description: Contém propriedades adicionais sobre a identidade do participante
 author: ananmishr
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 2804e846b95f2aad597699b4799c280101b07e9a4bea9ae5413aefade1d5c984
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: d1d134eec6e6bef50eb7a97917a2f8aaa3b91148
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54146437"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59104072"
 ---
 # <a name="participantinfo-resource-type"></a>Tipo de recurso participantInfo
 
@@ -22,11 +22,11 @@ Contém propriedades adicionais sobre a identidade do participante
 
 | Propriedade       | Tipo                          | Descrição                                                                                                                                                |
 |:---------------|:------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------|
-| countryCode    | Cadeia de caracteres                        | O código de país alpha-2 iso 3166-1 do local físico mais estimado do participante no início da chamada. Somente leitura.                             |
-| endpointType   | Cadeia de caracteres                        | O tipo de ponto de extremidade que o participante está usando. Os valores possíveis são: `default`, `skypeForBusiness` ou `skypeForBusinessVoipPhone`. Apenas leitura.              |
+| countryCode    | String                        | O código de país alpha-2 iso 3166-1 do local físico mais estimado do participante no início da chamada. Somente leitura.                             |
+| endpointType   | String                        | O tipo de ponto de extremidade que o participante está usando. Os valores possíveis são: `default`, `skypeForBusiness` ou `skypeForBusinessVoipPhone`. Somente leitura.              |
 | identity       | [identitySet](identityset.md) | O [identitySet](identityset.md) associado a esse participante. Somente leitura.                                                                             |
 | languageId     | String                        | A cadeia de caracteres de cultura de idioma. Somente leitura.                                                                                                                    |
-| region         | Cadeia de caracteres                        | A região 1 do participante. Pode ser um país, um continente ou uma região geográfica maior. Isso não muda com base no local físico atual do participante. Somente leitura. |
+| region         | String                        | A região 1 do participante. Pode ser um país, um continente ou uma região geográfica maior. Isso não muda com base no local físico atual do participante. Somente leitura. |
 
 
 ## <a name="json-representation"></a>Representação JSON

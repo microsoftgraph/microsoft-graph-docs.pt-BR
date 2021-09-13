@@ -1,16 +1,16 @@
 ---
 title: Remover proprietário do grupo
 description: Use essa API para remover um proprietário de um grupo de Microsoft 365, um grupo de segurança ou um grupo de segurança habilitado para email por meio da propriedade de navegação de proprietários.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: ad92fd54ce0b8f59dce8f7fd03a0d25e50abc2f4
-ms.sourcegitcommit: 22bd45d272681658d46a8b99af3c3eabc7b05cb1
+ms.openlocfilehash: 714f7006da4cd97daf8e38c541c0ee1c304a5af1
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "58384018"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59105325"
 ---
 # <a name="remove-group-owner"></a>Remover proprietário do grupo
 
@@ -18,9 +18,9 @@ Namespace: microsoft.graph
 
 Use essa API para remover um proprietário de um grupo de Microsoft 365, um grupo de segurança ou um grupo de segurança habilitado para email por meio da propriedade de navegação de proprietários. Depois que os proprietários são atribuídos a um grupo, o último proprietário do grupo não pode ser removido. 
 
-> **Observação:** Quando essa API é chamada, o usuário também é removido da lista /groups/{id}/members. Para resolver isso, remova o usuário de proprietários e membros e aguarde 10 segundos e adicione-o novamente aos membros. Consulte [Problemas conhecidos](/graph/known-issues#removing-a-group-owner-also-removes-the-user-as-a-group-member).
+> **Observação:** Para problemas encontrados ao remover o proprietário de um grupo associado a uma [equipe,](/graph/api/resources/team.md)consulte [Problemas Conhecidos.](/graph/known-issues#removing-a-group-owner-also-removes-the-user-as-a-group-member)
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
@@ -87,6 +87,11 @@ Este é um exemplo de resposta.
 ```http
 HTTP/1.1 204 No Content
 ```
+
+## <a name="see-also"></a>Confira também
+- [Adicionar membro à equipe](team-post-members.md)
+- [Atualizar a função do membro na equipe](team-update-members.md)
+- [Remover membro da equipe](team-delete-members.md)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

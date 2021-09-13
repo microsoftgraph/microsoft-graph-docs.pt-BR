@@ -1,16 +1,16 @@
 ---
 title: Obter multiValueLegacyExtendedProperty
 description: expand'.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: abheek-das
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: 9fe5cfa98a97db07ab1dac6ce03504d5f768651da93404dda3e4b4eee798b75f
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: c3e75e6f7bd88b9bfc005fb87d0a7f44209651c9
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54250375"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59110183"
 ---
 # <a name="get-multivaluelegacyextendedproperty"></a>Obter multiValueLegacyExtendedProperty
 
@@ -124,7 +124,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta `200 OK`.
+Se bem-sucedido, este método retorna um código de resposta `200 OK`.
 
 O corpo da resposta inclui um objeto que representa a instância de recurso solicitada, expandida com o objeto [multiValueLegacyExtendedProperty](../resources/multivaluelegacyextendedproperty.md) correspondente.
 

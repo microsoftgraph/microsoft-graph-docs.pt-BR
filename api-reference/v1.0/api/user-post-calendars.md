@@ -2,15 +2,15 @@
 title: Criar calendário
 description: Use esta API para criar um novo calendário para um usuário.
 author: harini84
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 2b19e7fdfb56518d26ba0dafd597838047ea21ae
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: a4a56b0fc423a6f81321519a421877b977b518d3
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52031496"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59099221"
 ---
 # <a name="create-calendar"></a>Criar calendário
 
@@ -82,7 +82,7 @@ Content-type: application/json
 
 No corpo da solicitação, forneça uma representação JSON do objeto [calendar](../resources/calendar.md).
 ### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto de resposta exibido aqui pode ser encurtado para legibilidade.
+Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser reduzido para facilitar a leitura.
 <!-- {
   "blockType": "response",
   "truncated": true,

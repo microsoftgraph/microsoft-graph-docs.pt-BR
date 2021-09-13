@@ -2,15 +2,15 @@
 title: Obter userConsentRequest
 description: Leia as propriedades e as relações de um objeto userConsentRequest.
 author: psignoret
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 921600ae2200428eae7ea5ed9b58e3c2c1e5f11c
-ms.sourcegitcommit: 08d47a31c48fd69ae4fcee26e34fdd65ad1ba69f
+ms.openlocfilehash: 0b952d7f2f7ab5ec476770cd012ad72b9ee677a1
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51506925"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59109592"
 ---
 # <a name="get-userconsentrequest"></a>Obter userConsentRequest
 
@@ -24,8 +24,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|ConsentRequest.Read.All, ConsentRequest.ReadWrite.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta corporativa ou de estudante)|ConsentRequest.Read.All, ConsentRequest.ReadWrite.All|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|ConsentRequest.Read.All, ConsentRequest.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP

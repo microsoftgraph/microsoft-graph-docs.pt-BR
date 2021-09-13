@@ -2,15 +2,15 @@
 title: Listar alertas
 description: Recuperar uma lista de objetos de alerta.
 author: preetikr
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: 01bad74bcd27ca68af0a1fbbf3ca6e4d25b07c55
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 524a0b7e7fd6c20c64a9c92f79d8db23c5dc8233
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52048852"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59017013"
 ---
 # <a name="list-alerts"></a>Listar alertas
 

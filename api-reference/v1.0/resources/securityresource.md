@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso securityResource
 description: Representa os recursos relacionados a um alerta.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: preetikr
 ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: 49eb0b1fae46653e9cf538339b3b4b412a8d8f80674702b0151efec5c03a60a5
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 7baee1075570c88a117c1fabbf8ab9d17302f071
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54152233"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59134483"
 ---
 # <a name="securityresource-resource-type"></a>Tipo de recurso securityResource
 
@@ -22,7 +22,7 @@ Representa os recursos relacionados a um alerta.
 
 | Propriedade   | Tipo|Descrição|
 |:---------------|:--------|:----------|
-|recurso|Cadeia de caracteres|Nome do recurso relacionado ao alerta atual. **Obrigatório**.|
+|recurso|String|Nome do recurso relacionado ao alerta atual. **Obrigatório**.|
 |resourceType|[securityResourceType](#securityresourcetype-values)|Representa o tipo de recursos de segurança relacionados a um alerta. Os valores possíveis são: `attacked` e `related`.|
 
 ### <a name="securityresourcetype-values"></a>valores securityResourceType

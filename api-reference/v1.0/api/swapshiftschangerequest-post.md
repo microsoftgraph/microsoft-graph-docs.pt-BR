@@ -1,16 +1,16 @@
 ---
 title: Criar swapshiftRequest
 description: Crie uma instância de um swapShiftsChangeRequest.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 6133678b10930db013fc3e2a62be43b7412f98d33828cfedcc228f0ef33aa698
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: e3780c41da48220889b09170a07bd5ed59f50ef5
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54238248"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59025990"
 ---
 # <a name="create-swapshiftschangerequest"></a>Criar swapShiftsChangeRequest
 
@@ -24,8 +24,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-|Delegado (conta corporativa ou de estudante) |Schedule.ReadWrite.All, Group.ReadWrite.All    |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegada (conta corporativa ou de estudante) |Schedule.ReadWrite.All, Group.ReadWrite.All    |
+|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Schedule.ReadWrite.All |
 
 > **Observação**: esta API oferece transporte a permissões de administrador. Os administradores globais podem acessar grupos dos que não são membros.

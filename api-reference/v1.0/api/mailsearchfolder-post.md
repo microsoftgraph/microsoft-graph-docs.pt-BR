@@ -1,16 +1,16 @@
 ---
 title: Criar mailSearchFolder
 description: Use essa API para criar um novo mailSearchFolder na caixa de correio do usuário especificado.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 4201ffeaa0bc065a68024c04885d0b32e0a9c421
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: bc26b117139fc35ccc025f400d5bcc4de0e99ce4
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52039514"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59026242"
 ---
 # <a name="create-mailsearchfolder"></a>Criar mailSearchFolder
 

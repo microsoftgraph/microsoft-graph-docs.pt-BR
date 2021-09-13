@@ -2,16 +2,16 @@
 author: JeremyKelley
 ms.date: 09/11/2017
 title: Recuperar itens de uma lista do SharePoint
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: sharepoint
 description: Obter a coleção de itens em uma lista.
 doc_type: apiPageType
-ms.openlocfilehash: d81df961f5f7ebe311e8082ac39fc0430cb40502
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: b4412a5934b0ffde86e576783fe666506ce58616
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50473732"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59110330"
 ---
 # <a name="enumerate-items-in-a-list"></a>Enumerar itens em uma lista
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | Sites.Read.All, Sites.ReadWrite.All    |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Sites.Read.All, Sites.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP

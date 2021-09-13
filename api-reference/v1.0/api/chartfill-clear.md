@@ -2,15 +2,15 @@
 title: 'ChartFill: clear'
 description: Limpe a cor de preenchimento de um elemento do gráfico.
 author: lumine2008
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: a499cb3d9290734d28d12324f33bfd312cfbef29
-ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
+ms.openlocfilehash: a42bdf03ff4f766a0100dbcc7020057737ce2dfa
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "50578460"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59105472"
 ---
 # <a name="chartfill-clear"></a>ChartFill: clear
 
@@ -22,8 +22,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Files.ReadWrite    |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegada (conta corporativa ou de estudante) | Files.ReadWrite    |
+|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Sem suporte. |
 
 ## <a name="http-request"></a>Solicitação HTTP

@@ -2,15 +2,15 @@
 title: tipo de recurso relation
 description: Representa a relação entre termos em um armazenamento de termos.
 author: vishriv
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: taxonomy
 doc_type: resourcePageType
-ms.openlocfilehash: 9b4ccd5ed062fa36cdb16dbec0d8b2631f991b12
-ms.sourcegitcommit: 9b8abc940a68dac6ee5da105ca29800cb59775f6
+ms.openlocfilehash: 88276a66949a55f0ee953f556977a2380ed415d9
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "58514876"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59128029"
 ---
 # <a name="relation-resource-type"></a>tipo de recurso relation
 
@@ -66,7 +66,7 @@ Veja a seguir uma representação JSON do recurso.
 [microsoft.graph.termStore.set]: termstore-set.md
 [microsoft.graph.termStore.relations]: termstore-relation.md
 [microsoft.graph.termStore.relation]: termstore-relation.md
-[store]: ../resources/termstore-store.md
+[loja]: ../resources/termstore-store.md
 [term]: ../resources/termstore-term.md
 [set]: ../resources/termstore-set.md
 

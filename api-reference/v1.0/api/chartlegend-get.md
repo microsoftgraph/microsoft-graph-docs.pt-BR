@@ -2,15 +2,15 @@
 title: Obter ChartLegend
 description: Recupera as propriedades e os relacionamentos do objeto chartlegend.
 author: lumine2008
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: e9ec0a576c002513262d0692c28dbd4aa65b860f
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: ebb455b70bd38dae69ffd1f955e4cffc6a276041
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52052471"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59080384"
 ---
 # <a name="get-chartlegend"></a>Obter ChartLegend
 
@@ -78,7 +78,7 @@ GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id
 ---
 
 ##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto de resposta exibido aqui pode ser encurtado para legibilidade.
+Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser reduzido para facilitar a leitura.
 <!-- {
   "blockType": "response",
   "truncated": true,

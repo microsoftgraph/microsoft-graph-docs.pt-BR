@@ -1,16 +1,16 @@
 ---
 title: Listar planos
 description: Recupere uma lista de objetos **plannerplan** compartilhados com um objeto user.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: 0fee8525da4a29a4a610ec847cdd8c8776edcdac
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: cf83527616bc179330a7323a7aa6a5d82129fa58
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52055838"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59085347"
 ---
 # <a name="list-plans"></a>Listar planos
 
@@ -80,7 +80,7 @@ GET https://graph.microsoft.com/v1.0/me/planner/plans
 ---
 
 ##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto de resposta exibido aqui pode ser encurtado para legibilidade.
+Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser reduzido para facilitar a leitura.
 <!-- {
   "blockType": "response",
   "truncated": true,

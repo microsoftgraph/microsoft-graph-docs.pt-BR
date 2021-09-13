@@ -2,14 +2,14 @@
 title: Conjuntos de dados, regiões e coletores com suporte da Conexão de dados do Microsoft Graph
 description: Descreve os conjuntos de dados com suporte aos tipos de armazenamento de destino que podem ser usados com a Conexão de Dados do Microsoft Graph.
 author: fercobo-msft
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: data-connect
-ms.openlocfilehash: ed9ca7093bc7acaa9dd5609caa70868c769e9ea2
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 8e0aeffc6529737dbd89f759e8a9261d9989cad7
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58250873"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59139174"
 ---
 # <a name="datasets-regions-and-sinks-supported-by-microsoft-graph-data-connect"></a>Conjuntos de dados, regiões e coletores com suporte da Conexão de dados do Microsoft Graph
 

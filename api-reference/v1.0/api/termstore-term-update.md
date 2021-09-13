@@ -2,15 +2,15 @@
 title: Termo de atualização
 description: Atualize as propriedades de um objeto term.
 author: vishriv
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: taxonomy
 doc_type: apiPageType
-ms.openlocfilehash: 5c4a4fcb27ec432f505622a7ff138572f9931a91
-ms.sourcegitcommit: 9b8abc940a68dac6ee5da105ca29800cb59775f6
+ms.openlocfilehash: 78221e4390c4a3eb07e56d1bcce01fcfdb9980a3
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "58514873"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59130108"
 ---
 # <a name="update-term"></a>Termo de atualização
 Namespace: microsoft.graph.termStore
@@ -64,6 +64,8 @@ Se tiver êxito, este método retornará um código de resposta e um `200 OK` ob
 
 ### <a name="request"></a>Solicitação
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_term"
@@ -84,6 +86,24 @@ Content-length: 366
   ]
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-term-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-term-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-term-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-term-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>Resposta
 >**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.

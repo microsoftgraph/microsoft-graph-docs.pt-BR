@@ -2,15 +2,15 @@
 title: Tipo de recurso ChartSeries
 description: Representa uma série de um gráfico.
 author: lumine2008
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 216cf0615326856db8926bf87a9a0514b26f1f3fac3bc9386ab26a2d1e5f166d
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 7e3b9ceac73f724ef520f1fdfc22f01c636d1f51
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54231877"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59109462"
 ---
 # <a name="chartseries-resource-type"></a>Tipo de recurso ChartSeries
 

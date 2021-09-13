@@ -2,15 +2,15 @@
 title: Obter userFlowLanguageConfiguration
 description: Leia as propriedades e as relações de um objeto userFlowLanguageConfiguration.
 author: jkdouglas
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: a2f17c309e104738a1bae4fd7e599fd8efa28355
-ms.sourcegitcommit: 32c83957ee69f21a10cd5f759adb884ce4b41c52
+ms.openlocfilehash: abe65315b1ee8a3409e14a93492753cd6612ead1
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51920566"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59109546"
 ---
 # <a name="get-userflowlanguageconfiguration"></a>Obter userFlowLanguageConfiguration
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 Leia as propriedades e as relações de um [objeto userFlowLanguageConfiguration.](../resources/userflowlanguageconfiguration.md) Esses objetos representam um idioma disponível em um fluxo de usuários.
 
-**Observação:** A personalização de idioma é habilitada por padrão nos fluxos de [usuários do Azure Active Directory.](../resources/b2xidentityuserflow.md)
+**Observação:** A personalização de idioma é habilitada por padrão [Azure Active Directory fluxos de usuário.](../resources/b2xidentityuserflow.md)
 
 ## <a name="permissions"></a>Permissões
 
@@ -26,14 +26,14 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante)|IdentityUserFlow.Read.All, IdentityUserFlow.ReadWrite.All|
-|Delegada (conta pessoal da Microsoft)| Sem suporte.|
-|Application|IdentityUserFlow.Read.All, IdentityUserFlow.ReadWrite.All|
+|Delegado (conta corporativa ou de estudante)|IdentityUserFlow.Read.All, IdentityUserFlow.ReadWrite.All|
+|Delegado (conta pessoal da Microsoft)| Sem suporte.|
+|Aplicativo|IdentityUserFlow.Read.All, IdentityUserFlow.ReadWrite.All|
 
 A conta de trabalho ou de estudante precisa pertencer a uma das seguintes funções:
 
 * Administrador global
-* Administrador de Fluxo de Usuário de Identidade Externa
+* Administrador de identidade externa Flow usuário
 
 ## <a name="http-request"></a>Solicitação HTTP
 

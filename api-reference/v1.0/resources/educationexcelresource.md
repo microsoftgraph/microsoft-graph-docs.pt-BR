@@ -2,15 +2,15 @@
 title: Tipo de recurso educationExcelResource
 description: Uma subclasse de educationResource. Esse tipo de recurso representa um Excel documento.
 author: mmast-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 39f74b488351ddca954db696f9c8ec3bfe5ff97b86d294b5dd2162e199d6c849
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 0e91d927e493a578a5a067e5a1caa1795a066940
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54252022"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59099025"
 ---
 # <a name="educationexcelresource-resource-type"></a>Tipo de recurso educationExcelResource
 

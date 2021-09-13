@@ -2,15 +2,15 @@
 title: Criar mensagem em uma mailfolder
 description: Use essa API para criar uma nova mensagem em uma pasta de email.
 author: abheek-das
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: d318aac49f467b2c4740b4f6e76c479c5e051c56
-ms.sourcegitcommit: cec76c5a58b359d79df764c849c8b459349b3b52
+ms.openlocfilehash: 49db923d010fdaa19127e170ffe79d54ef3e8ad2
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "52645266"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59026249"
 ---
 # <a name="create-message-in-a-mailfolder"></a>Criar mensagem em uma mailfolder
 

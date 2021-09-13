@@ -2,15 +2,15 @@
 title: Criar deviceManagementTroubleshootingEvent
 description: Criar um novo objeto deviceManagementTroubleshootingEvent.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: dfa4bde3da1adaacf77347e856c32444f0415b13
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 30bd540f52efba58d68954ca8515330a2377fe05
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58264504"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59079488"
 ---
 # <a name="create-devicemanagementtroubleshootingevent"></a>Criar deviceManagementTroubleshootingEvent
 
@@ -51,7 +51,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar deviceMa
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|O UUID do objeto.|
+|id|String|O UUID do objeto.|
 |eventDateTime|DateTimeOffset|A hora em que o evento ocorreu.|
 |correlationId|Cadeia de caracteres|ID usada para rastrear a falha no serviço.|
 

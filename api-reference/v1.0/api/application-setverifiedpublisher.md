@@ -1,16 +1,16 @@
 ---
 title: 'application: setVerifiedPublisher'
 description: Definir o distribuidor verificado de um aplicativo.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: jesakowi
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: e66731904e24d80a38ecf74a6a69a852917ce033
-ms.sourcegitcommit: 5bb981b4853663354a566d4a4a5cbf288939e441
+ms.openlocfilehash: 3b506dcbf3f33927cbfe83d30a9ba759f5b544d3
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "53580930"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59016936"
 ---
 # <a name="application-setverifiedpublisher"></a>application: setVerifiedPublisher
 
@@ -47,7 +47,7 @@ No corpo da solicitação, forneça as seguintes propriedades necessárias.
 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-| verifiedPublisherId | string | A ID da Rede de Parceiros da Microsoft (MPNID) do editor verificado a ser definida no aplicativo, a partir da conta do Partner Center do editor. |
+| verifiedPublisherId | cadeia de caracteres | A ID da Rede de Parceiros da Microsoft (MPNID) do editor verificado a ser definida no aplicativo, a partir da conta do Partner Center do editor. |
 
 ## <a name="response"></a>Resposta
 

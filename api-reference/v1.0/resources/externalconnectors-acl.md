@@ -2,15 +2,15 @@
 title: Tipo de recurso acl
 description: Uma entrada de controle de acesso para um item indexado por um Pesquisa da Microsoft externalConnection.
 author: mecampos
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: 56fa0c8f47f9bec9e2c00cbff3423a8aed541a2709c117326d3d0a29effabc08
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 523ce420b4796d6ca3032839bf28393ea4975d21
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54141690"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59123486"
 ---
 # <a name="acl-resource-type"></a>Tipo de recurso acl
 

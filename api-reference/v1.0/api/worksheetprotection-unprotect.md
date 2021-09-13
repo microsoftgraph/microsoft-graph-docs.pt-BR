@@ -2,27 +2,27 @@
 title: 'WorksheetProtection: unprotect'
 description: Desprotege uma planilha.
 author: lumine2008
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 2839649ba773c9e56a0274183ee716c4f2d16d50
-ms.sourcegitcommit: 503c72036c376a30e08c29df8e7730a7afcab66e
+ms.openlocfilehash: 7ddaddd8911b1ddd0e10d39e23c99e0c7042e2e9
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52870350"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59104387"
 ---
 # <a name="worksheetprotection-unprotect"></a>WorksheetProtection: unprotect
 
 Namespace: microsoft.graph
 
 Desprotege uma planilha.
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | Files.ReadWrite    |
+|Delegado (conta corporativa ou de estudante) | Files.ReadWrite    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Sem suporte. |
 

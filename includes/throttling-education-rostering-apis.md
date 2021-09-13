@@ -1,14 +1,14 @@
 ---
 author: davidmu1
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: msgraph
 ms.topic: include
-ms.openlocfilehash: 0839e947300a563e5619064cf43cfb1a6790ed4141aeb53858e76830c8347246
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 8f0088528fd83e7470a7e7c79cd5ad905a72f1cd
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54196577"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59035617"
 ---
 <!-- markdownlint-disable MD041 -->
 <!-- this file is auto-generated don't edit it manually! -->
@@ -18,4 +18,7 @@ ms.locfileid: "54196577"
 | Qualquer | 400000 solicitações a cada 20 segundos | 35000 solicitações a cada 10 segundos |
 
 Os limites anteriores aplicam-se aos seguintes recursos:  
-educationClass, educationCourse, educationOnPremisesInfo, educationOrganization, educationRelatedContact, educationRoot, educationSchool, educationStudent, educationTeacher, educationTerm, educationUser.
+
+| <!-- fake header-->                                                                                                                                                                                                                                                                                                                                                                                                            | <!-- fake header-->                                                                                                                                                                                                                                                                                                    |
+|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| <ul> <li> [educationClass](/graph/api/resources/educationclass) <li> [educationCourse](/graph/api/resources/educationcourse) <li> [educationOnPremisesInfo](/graph/api/resources/educationonpremisesinfo) <li> [educationOrganization](/graph/api/resources/educationorganization) <li> [educationRelatedContact](/graph/api/resources/educationrelatedcontact) <li> [educationRoot](/graph/api/resources/educationroot) </ul> | <ul><li> [educationSchool](/graph/api/resources/educationschool) <li> [educationStudent](/graph/api/resources/educationstudent) <li> [educationTeacher](/graph/api/resources/educationteacher) <li> [educationTerm](/graph/api/resources/educationterm) <li> [educationUser](/graph/api/resources/educationuser) </ul> |

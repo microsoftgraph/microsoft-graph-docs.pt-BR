@@ -2,15 +2,15 @@
 title: Tipo de recurso TableSort
 description: Gerencia operações de classificação em objetos Table.
 author: lumine2008
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 878dc98870c32f70ed9c4b36ff1252109c72d819b2a9912647ba80a54f0c6edd
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 03c951f26c2b037153b07daa461e768d62d5638b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54222634"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59032122"
 ---
 # <a name="tablesort-resource-type"></a>Tipo de recurso TableSort
 

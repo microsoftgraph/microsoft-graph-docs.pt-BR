@@ -1,22 +1,22 @@
 ---
 title: Excluir um historyItem
-description: Excluir um item de histórico existente para uma atividade existente do usuário.
-localization_priority: Normal
+description: Exclua um item de histórico existente para uma atividade de usuário existente.
+ms.localizationpriority: medium
 ms.prod: project-rome
 author: ailae
 doc_type: apiPageType
-ms.openlocfilehash: abc5a24b83ec964d7601bd08a9d0bfb5477267fd
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: fbcee28fdf2ac2683b45139e367f2617279d4d09
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48051743"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59104786"
 ---
 # <a name="delete-a-historyitem"></a>Excluir um historyItem
 
 Namespace: microsoft.graph
 
-Excluir um item de histórico existente para uma atividade existente do usuário.
+Exclua um item de histórico existente para uma atividade de usuário existente.
 
 ## <a name="permissions"></a>Permissões
 
@@ -49,7 +49,7 @@ Nenhum corpo de solicitação.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará o `204 No Content` código de resposta se o item do histórico tiver sido excluído.
+Se tiver êxito, este método retornará `204 No Content` o código de resposta se o item de histórico tiver sido excluído.
 
 ## <a name="example"></a>Exemplo
 

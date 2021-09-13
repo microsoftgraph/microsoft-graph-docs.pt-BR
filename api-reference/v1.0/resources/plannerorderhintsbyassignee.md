@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso plannerOrderHintsByAssignee
 description: O **plannerOrderHintsByAssignee** é um recurso que contém dicas de ordenação para os atribuídos em um recurso plannerTask, para indicar a ordem da tarefa em Atribuído a modo de exibição do Quadro de Tarefas.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: 9ddfe9f30387d66e6a55da680eb176d5d20f8e33e44f6f827e84efe687d29e92
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: cfe6e1ac1bd0611eac9a2a39ce89814374371d19
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54146325"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59019234"
 ---
 # <a name="plannerorderhintsbyassignee-resource-type"></a>Tipo de recurso plannerOrderHintsByAssignee
 

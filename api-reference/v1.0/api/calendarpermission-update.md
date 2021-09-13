@@ -1,16 +1,16 @@
 ---
 title: Atualizar calendarpermission
 description: Atualize as propriedades do objeto calendarpermission.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: sochowdh
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: a91c174a9830494d6e44463aaaea8217c57849a8
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 9faf61ef7f0236e5d39d9550a8f9e6199cfe9341
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52051610"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59105647"
 ---
 # <a name="update-calendarpermission"></a>Atualizar calendarPermission
 

@@ -1,16 +1,16 @@
 ---
 title: 'reportRoot: getOffice365ActiveUserCounts'
 description: Obtenha a contagem de usuários ativos diários no período de relatório por produto.
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: reports
 author: sarahwxy
 doc_type: apiPageType
-ms.openlocfilehash: 24435622d66b8cf37ba38f60ec7d1ce15acf908e14065e3e4e13e768dcb069b1
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: b38d0f158a4430c4fa8091a8e21deda2517b8ad6
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54147319"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59110155"
 ---
 # <a name="reportroot-getoffice365activeusercounts"></a>reportRoot: getOffice365ActiveUserCounts
 
@@ -30,7 +30,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 | Delegada (conta pessoal da Microsoft) | Sem suporte.                           |
 | Aplicativo                            | Reports.Read.All                         |
 
-**Observação**: para permissões delegadas para permitir que os aplicativos leiam os relatórios de uso de serviço em nome de um usuário, o administrador de locatários deve atribuir a função apropriada de administrador limitada do Azure AD ao usuário. Para saber mais, confira [Autorização para APIs lerem os relatórios de uso do Microsoft 365](/graph/reportroot-authorization).
+**Observação**: para as permissões delegadas para permitir que os aplicativos leiam relatórios de uso do serviço em nome de um usuário, o administrador de locatários deve ter atribuído ao usuário a função de administrador limitada apropriada do Azure AD. Para obter mais detalhes, consulte [Autorização para as APIs lerem os relatórios de uso do Microsoft 365](/graph/reportroot-authorization).
 
 ## <a name="http-request"></a>Solicitação HTTP
 

@@ -2,15 +2,15 @@
 title: Atualizar deviceManagementExportJob
 description: Atualize as propriedades de um objeto deviceManagementExportJob.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e8a510a2dbe9d80305e04d729f3aae718918194114f80e08cb14bfb26010f089
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: dba16096e180368101b2bd6283066538c371c9b0
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54249423"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59099466"
 ---
 # <a name="update-devicemanagementexportjob"></a>Atualizar deviceManagementExportJob
 
@@ -52,11 +52,11 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [deviceM
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|String|Identificador exclusivo dessa entidade|
-|reportName|Cadeia de caracteres|Nome do relatório|
-|filter|String|Filtros aplicados no relatório|
-|select|String collection|Colunas selecionadas no relatório|
-|format|[deviceManagementReportFileFormat](../resources/intune-reporting-devicemanagementreportfileformat.md)|Formato do relatório exportado. Os valores possíveis são: `csv` e `pdf`.|
-|snapshotId|String|Um instantâneo é um subconjunto identificável do conjuntos de dados representado pelo ReportName. Uma id sessionId ou CachedReportConfiguration pode ser usada aqui. Se uma sessionId for especificada, Filter, Select e OrderBy serão aplicados aos dados representados pela sessionId. Filter, Select e OrderBy não podem ser especificados juntamente com uma id CachedReportConfiguration.|
+|reportName|String|Nome do relatório|
+|filter|Cadeia de caracteres|Filtros aplicados no relatório|
+|select|Coleção String|Colunas selecionadas no relatório|
+|formato|[deviceManagementReportFileFormat](../resources/intune-reporting-devicemanagementreportfileformat.md)|Formato do relatório exportado. Os valores possíveis são: `csv` e `pdf`.|
+|snapshotId|Cadeia de caracteres|Um instantâneo é um subconjunto identificável do conjuntos de dados representado pelo ReportName. Uma id sessionId ou CachedReportConfiguration pode ser usada aqui. Se uma sessionId for especificada, Filter, Select e OrderBy serão aplicados aos dados representados pela sessionId. Filter, Select e OrderBy não podem ser especificados juntamente com uma id CachedReportConfiguration.|
 |localizationType|[deviceManagementExportJobLocalizationType](../resources/intune-reporting-devicemanagementexportjoblocalizationtype.md)|Configura como o trabalho de exportação solicitado é localizado. Os valores possíveis são: `localizedValuesAsAdditionalColumn` e `replaceLocalizableValues`.|
 |status|[deviceManagementReportStatus](../resources/intune-reporting-devicemanagementreportstatus.md)|Status do trabalho de exportação. Os valores possíveis são: `unknown`, `notStarted`, `inProgress`, `completed`, `failed`.|
 |url|Cadeia de caracteres|Local temporário do relatório exportado|

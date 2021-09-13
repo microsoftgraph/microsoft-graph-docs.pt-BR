@@ -2,15 +2,15 @@
 title: 'cloudCommunications: getPresencesByUserId'
 description: Obter informações de presença para vários usuários.
 author: mkhribech
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: cloud-communications
-ms.openlocfilehash: 33a57e99e97deae7a919a19f9cd49fca5775f964
-ms.sourcegitcommit: 7abb0672a38a6d9b11a2e0d2cc221222cb8358bb
+ms.openlocfilehash: 09cb97f5b9723ae2f44fb80b77f5d567156fc4bb
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52896645"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59080188"
 ---
 # <a name="cloudcommunications-getpresencesbyuserid"></a>cloudCommunications: getPresencesByUserId
 
@@ -23,8 +23,8 @@ Uma das seguintes permissões é necessária para chamar essas APIs. Para saber 
 
 | Tipo de permissão | Permissões (da com menos para a com mais privilégios)                  |
 | :-------------- | :----------------------------------------------------------- |
-| Delegado (conta corporativa ou de estudante)     | Presence.Read.All                         |
-| Delegado (conta pessoal da Microsoft) | Sem suporte.                         |
+| Delegada (conta corporativa ou de estudante)     | Presence.Read.All                         |
+| Delegada (conta pessoal da Microsoft) | Sem suporte.                         |
 | Aplicativo                            | Sem suporte.                                  |
 
 > **Observação:**
@@ -38,7 +38,7 @@ POST /communications/getPresencesByUserId
 ```
 
 ## <a name="request-headers"></a>Headers de solicitação
-| Nome          | Descrição               |
+| Name          | Descrição               |
 |:--------------|:--------------------------|
 | Autorização | {token} de portador. Obrigatório. |
 |Content-type | application/json. Obrigatório. |

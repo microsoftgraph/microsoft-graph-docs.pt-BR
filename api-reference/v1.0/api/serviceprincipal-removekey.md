@@ -1,16 +1,16 @@
 ---
 title: 'servicePrincipal: removeKey'
 description: Remover uma credencial de chave de um servicePrincipal
-localization_priority: Normal
+ms.localizationpriority: medium
 author: sureshja
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: ee30f3f470e8a9afea66fee68739d749e6fbb22f
-ms.sourcegitcommit: c6f7a931a8d83ac54f577b7bec08237fd17ce51a
+ms.openlocfilehash: f6311481eddade52d6f3f2e2898037d4fe493a1c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58490095"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59026046"
 ---
 # <a name="serviceprincipal-removekey"></a>servicePrincipal: removeKey
 
@@ -27,8 +27,8 @@ Como parte da validação de solicitação para esse método, uma prova de posse
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Directory.AccessAsUser.All, Application.ReadWrite.All, Directory.ReadWrite.All   |
-|Delegado (conta pessoal da Microsoft) | Nenhum.    |
+|Delegada (conta corporativa ou de estudante) | Directory.AccessAsUser.All, Application.ReadWrite.All, Directory.ReadWrite.All   |
+|Delegada (conta pessoal da Microsoft) | Nenhum.    |
 |Aplicativo | Application.ReadWrite.OwnedBy, Application.ReadWrite.All, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP

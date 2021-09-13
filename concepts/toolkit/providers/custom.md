@@ -1,14 +1,14 @@
 ---
 title: Provedor personalizado
 description: Crie um provedor personalizado para habilitar a autenticação e o acesso gráfico para os componentes do Microsoft Graph Toolkit, se você tiver código de autenticação existente em seu aplicativo.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: nmetulev
-ms.openlocfilehash: 4327bea637043fa8280bf6c39f55cdb8a0333b1c529f4994e9c8273ff0e3d99b
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: be470ed25acccb3fcdd1499b0048a33dae7c5d13
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54204923"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59143557"
 ---
 # <a name="custom-provider"></a>Provedor personalizado
 

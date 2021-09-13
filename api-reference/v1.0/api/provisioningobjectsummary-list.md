@@ -1,16 +1,16 @@
 ---
 title: Listar provisioningObjectSummary
 description: Obter todos os eventos de provisionamento que ocorreram em seu locatário.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: ArvindHarinder1
 ms.prod: identity-and-access-reports
 doc_type: apiPageType
-ms.openlocfilehash: a6363e81ae815cb1ab0747a6cae015d33f421d23
-ms.sourcegitcommit: 2a35434fabc76672e21bfc3ed5a1d28f9f3b66bc
+ms.openlocfilehash: a3a1f1a2536ebb125d778dedc4000a18ab3cc3a6
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52241475"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59079236"
 ---
 # <a name="list-provisioningobjectsummary"></a>Listar provisioningObjectSummary
 
@@ -26,7 +26,10 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegada (conta corporativa ou de estudante) | AuditLog.Read.All e Directory.Read.All |
 |Delegado (conta pessoal da Microsoft) | Sem suporte   |
-|Aplicativo | AuditLog.Read.All |
+|Aplicativo | AuditLog.Read.All e Directory.Read.All |
+
+> [!IMPORTANT]
+> Esta API tem um [problema conhecido](/graph/known-issues#azure-ad-activity-reports) e atualmente requer consentimento para as permissões **AuditLog.Read.All** e **Directory.Read.All.**
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -40,7 +43,7 @@ GET /auditLogs/provisioning
 
 Este método dá suporte aos seguintes parâmetros de consulta OData para ajudar a personalizar a resposta. Observe que os filtros são todos sensíveis a minúsculas, exceto para status. 
 
-|Nome     |Descrição                            |Exemplo|
+|Name     |Descrição                            |Exemplo|
 |:--------------------|----------------|------------------------------------------------------------------------|
 |[$filter](/graph/query-parameters#filter-parameter)|Filtra os resultados (linhas). |/`auditLogs/provisioning?$filter=id eq '74c3b0ae-9cc5-850e-e0a5-7r6a4231de87'`
 |[$top](/graph/query-parameters#top-parameter)|Define o tamanho de página de resultados.|`/auditLogs/provisioning?$top=20`|
@@ -95,6 +98,8 @@ Se tiver êxito, este método retornará um código de resposta e uma coleção 
 
 Este é um exemplo de solicitação.
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_provisioningobjectsummary"
@@ -103,6 +108,24 @@ Este é um exemplo de solicitação.
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/auditLogs/provisioning
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-provisioningobjectsummary-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-provisioningobjectsummary-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/list-provisioningobjectsummary-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-provisioningobjectsummary-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>Resposta
 
@@ -238,6 +261,24 @@ Este é um exemplo de solicitação.
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/auditLogs/provisioning
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-provisioningobjectsummary-error-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-provisioningobjectsummary-error-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/list-provisioningobjectsummary-error-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-provisioningobjectsummary-error-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### <a name="response"></a>Resposta

@@ -2,15 +2,15 @@
 title: 'call: cancelMediaProcessing'
 description: Cancela o processamento de mídia para quaisquer operações playPrompt ou recordResponse em andamento.
 author: ananmishr
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: be241d8c63f8d47bf4c76a29d2ee460a727dd31d
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 8e8ce4c0c856829e10e026eddd60f7236b2e9599
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52035908"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59114761"
 ---
 # <a name="call-cancelmediaprocessing"></a>call: cancelMediaProcessing
 
@@ -49,7 +49,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro     | Tipo   | Descrição         |
 | :------------ | :----- | :------------------ |
-| clientContext | Cadeia de caracteres | O contexto do cliente. |
+| clientContext | String | O contexto do cliente. |
 
 ## <a name="response"></a>Resposta
 

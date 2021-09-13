@@ -1,16 +1,16 @@
 ---
 title: tipo de recurso de página
 description: Uma página em um bloco OneNote bloco de anotações.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: jewan-microsoft
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 77cadf00585c18a5ab0c8d87a09861c7806676fcad55beac033bc0a5a6d3b255
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: f2a21f47d0e29930cf4012f4a2713b372cd77d2c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54180569"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59117974"
 ---
 # <a name="page-resource-type"></a>tipo de recurso de página
 
@@ -56,7 +56,7 @@ Veja a seguir uma representação JSON do recurso.
 |contentUrl|Cadeia de caracteres|A URL do conteúdo HTML da página.  Somente leitura.|
 |createdByAppId|Cadeia de caracteres|O identificador exclusivo do aplicativo que criou a página. Somente leitura.|
 |createdDateTime|DateTimeOffset|A data e a hora em que a página foi criada. O carimbo de data/hora representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`. Somente leitura.|
-|id|Cadeia de caracteres|O identificador exclusivo da página.  Somente leitura.|
+|id|String|O identificador exclusivo da página.  Somente leitura.|
 |lastModifiedDateTime|DateTimeOffset|A data e a hora em que a página foi modificada pela última vez. O carimbo de data/hora representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`. Somente leitura.|
 |level|Int32|O nível de recuo da página. Somente leitura.|
 |links|[PageLinks](pagelinks.md)|Links para abrir a página. O `oneNoteClientURL` link abre a página no OneNote cliente nativo se estiver instalado. O `oneNoteWebUrl` link abre a página em OneNote na Web. Somente leitura.|
@@ -67,7 +67,7 @@ Veja a seguir uma representação JSON do recurso.
 ## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|parentNotebook|[Notebook](notebook.md)|O bloco de anotações que contém a página.  Apenas leitura.|
+|parentNotebook|[Notebook](notebook.md)|O bloco de anotações que contém a página.  Somente leitura.|
 |parentSection|[OnenoteSection](section.md)|A seção que contém a página. Somente leitura.|
 
 ## <a name="methods"></a>Métodos
@@ -75,9 +75,9 @@ Veja a seguir uma representação JSON do recurso.
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
 |[Obter página](../api/page-get.md) | [Page](page.md) |Leia as propriedades e as relações da página.|
-|[Atualizar conteúdo da página](../api/page-update.md) | None |Atualize o conteúdo HTML da página. |
-|[Excluir página](../api/page-delete.md) | None |Exclua a página. |
-|[copyToSection](../api/page-copytosection.md)| None |Copia a página para uma seção específica.|
+|[Atualizar conteúdo da página](../api/page-update.md) | Nenhum(a) |Atualize o conteúdo HTML da página. |
+|[Excluir página](../api/page-delete.md) | Nenhum(a) |Exclua a página. |
+|[copyToSection](../api/page-copytosection.md)| Nenhum(a) |Copia a página para uma seção específica.|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

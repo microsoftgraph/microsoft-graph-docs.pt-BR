@@ -1,14 +1,14 @@
 ---
 title: Trabalhar com Graph Explorer
 description: Saiba como usar alguns dos recursos importantes no Graph Explorer.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: bettirosengugi
-ms.openlocfilehash: dab8803be00de3cc8ab27fc80c5f3b8cc0f0ac4307f29b9f276516ad13c86888
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 97c4f3ccd0fdfd08da7f4696419df813f19840e3
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54138364"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59014325"
 ---
 # <a name="working-with-graph-explorer"></a>Trabalhar com Graph Explorer
 

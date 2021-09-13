@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso provisioningServicePrincipal
 description: Representa a entidade de serviço usada para provisionamento.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: ArvindHarinder1
 ms.prod: identity-and-access-reports
 doc_type: resourcePageType
-ms.openlocfilehash: d9d31e07991f49de37eafa5b6221fe089a4c12f637f1a6f30df09d416ff8f6f7
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: f9c9b6d038e99067091d367ad331a08e004be501
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54231562"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59071921"
 ---
 # <a name="provisioningserviceprincipal-resource-type"></a>Tipo de recurso provisioningServicePrincipal
 
@@ -23,8 +23,8 @@ Representa a entidade de serviço usada para provisionamento.
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|id|Cadeia de caracteres|Identifica exclusivamente o **servicePrincipal** usado para provisionamento.|
-|nome|Cadeia de caracteres| Nome definido pelo cliente para **o servicePrincipal**.|
+|id|String|Identifica exclusivamente o **servicePrincipal** usado para provisionamento.|
+|nome|String| Nome definido pelo cliente para **o servicePrincipal**.|
 
 ## <a name="json-representation"></a>Representação JSON
 

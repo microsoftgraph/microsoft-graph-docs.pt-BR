@@ -1,16 +1,16 @@
 ---
 title: Listar homeRealmDiscoveryPolicies atribuídas
 description: Listar homeRealmDiscoveryPolicies atribuídas a uma entidade de serviço.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: hpsin
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 56c7e23c6bca817b5b35a3ec1646c479d20e972d
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: ff74bbff694e457c8e435cb579c3a68cfc1dea85
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52054438"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59032521"
 ---
 # <a name="list-assigned-homerealmdiscoverypolicy"></a>Listar homeRealmDiscoveryPolicy atribuída
 
@@ -26,8 +26,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | Policy.Read.All e Application.ReadWrite.All, Policy.ReadWrite.ApplicationConfiguration e Application.ReadWrite.All |
-| Delegado (conta pessoal da Microsoft) | Sem suporte. |
+| Delegada (conta corporativa ou de estudante)     | Policy.Read.All e Application.ReadWrite.All, Policy.ReadWrite.ApplicationConfiguration e Application.ReadWrite.All |
+| Delegada (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo                            | Policy.Read.All e Application.ReadWrite.OwnedBy, Policy.Read.All e Application.ReadWrite.All, Policy.ReadWrite.ApplicationConfiguration e Application.ReadWrite.OwnedBy, Policy.ReadWrite.ApplicationConfiguration e Application.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP

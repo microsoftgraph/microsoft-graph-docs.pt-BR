@@ -2,15 +2,15 @@
 title: Criar mobileAppCategory
 description: Criar um novo objeto mobileAppCategory.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 44bc3737eea1f4b2b256b381059e404dd025cb0044f9f0b416f471f856bb086f
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 9704a08921a32534239c10d37e9a24669d40ac4c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54147662"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59073650"
 ---
 # <a name="create-mobileappcategory"></a>Criar mobileAppCategory
 
@@ -25,8 +25,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -52,7 +52,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar mobileAp
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|A chave da entidade.|
+|id|String|A chave da entidade.|
 |displayName|Cadeia de caracteres|O nome da categoria do aplicativo.|
 |lastModifiedDateTime|DateTimeOffset|A data e hora que a mobileAppCategory foi modificada pela última vez.|
 

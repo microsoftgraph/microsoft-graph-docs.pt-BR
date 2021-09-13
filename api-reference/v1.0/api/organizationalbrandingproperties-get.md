@@ -1,16 +1,16 @@
 ---
 title: Obter organizationalBrandingProperties
 description: Recupere as propriedades e as relações de um objeto organizationalBrandingProperties.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: AlexanderMars
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: ed1219096e5af0ab38eef767ed839647a09b7500
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: e2aa31897c0e989d472c538f34d7448c9dd45906
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52786675"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59085410"
 ---
 # <a name="get-organizationalbrandingproperties"></a>Obter organizationalBrandingProperties
 

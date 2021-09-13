@@ -3,14 +3,14 @@ title: Lista de aplicativos instalados para o usuário
 description: Recupere a lista de aplicativos instalados no escopo pessoal do usuário especificado.
 author: akjo
 doc_type: apiPageType
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
-ms.openlocfilehash: a67f54a3655a36cc16d91f83216c48cd6e1de3ed
-ms.sourcegitcommit: 456ec9510807d05623c0ed1dd049c9676f53f56b
+ms.openlocfilehash: 5a86b240191a1d288192e44f047aa06c19179044
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53060340"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59099165"
 ---
 # <a name="list-apps-installed-for-user"></a>Lista de aplicativos instalados para o usuário
 
@@ -27,8 +27,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | TeamsAppInstallation.ReadForUser, TeamsAppInstallation.ReadWriteSelfForUser, TeamsAppInstallation.ReadWriteForUser |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegada (conta corporativa ou de estudante) | TeamsAppInstallation.ReadForUser, TeamsAppInstallation.ReadWriteSelfForUser, TeamsAppInstallation.ReadWriteForUser |
+|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | TeamsAppInstallation.ReadForUser.All, TeamsAppInstallation.ReadWriteSelfForUser.All, TeamsAppInstallation.ReadWriteForUser.All |
 
 ## <a name="http-request"></a>Solicitação HTTP

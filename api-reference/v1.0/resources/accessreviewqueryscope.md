@@ -2,15 +2,15 @@
 title: Tipo de recurso accessReviewQueryScope
 description: Define o que precisa ser revisado em uma revisão de acesso.
 author: isabelleatmsft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: cc6a8453b804e33eff2788b280928219ddf191cec4f49d2cb1b8c76725eab7c4
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: a066bee441b23b581368c535999aae2c5da5b79e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54180905"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59072572"
 ---
 # <a name="accessreviewqueryscope-resource-type"></a>Tipo de recurso accessReviewQueryScope
 
@@ -23,7 +23,7 @@ Herda de [accessReviewScope](../resources/accessreviewscope.md).
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|consulta|Cadeia de caracteres|A consulta que representa o que será revisado em uma revisão de acesso.|
+|consulta|String|A consulta que representa o que será revisado em uma revisão de acesso.|
 |queryRoot|Cadeia de caracteres|No cenário em que os revisadores precisam ser especificados dinamicamente, essa propriedade é usada para indicar a fonte relativa da consulta. Essa propriedade só será necessária se uma consulta relativa for especificada. Por exemplo, `./manager`.|
 |queryType|Cadeia de caracteres|Indica o tipo de consulta. Os tipos `MicrosoftGraph` incluem `ARM` e .|
 

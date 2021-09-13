@@ -2,15 +2,15 @@
 title: Criar userExperienceAnalyticsAppHealthDevicePerformance
 description: Crie um novo objeto userExperienceAnalyticsAppHealthDevicePerformance.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 8394e3813bdab958d4e23505062dd10c06e3019e
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: d5061d9e34f8646e8c23b3424cb463efde64a8b9
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58801287"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59018296"
 ---
 # <a name="create-userexperienceanalyticsapphealthdeviceperformance"></a>Criar userExperienceAnalyticsAppHealthDevicePerformance
 
@@ -27,9 +27,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementManagedDevices.ReadWrite.All|
+|Delegada (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Aplicativo|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -62,7 +62,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar o userEx
 |processedDateTime|DateTimeOffset|A data e a hora em que as estatísticas foram computadas pela última vez.|
 |meanTimeToFailureInMinutes|Int32|O tempo de falha média do dispositivo em minutos. Valores válidos -2147483648 para 2147483647|
 |deviceAppHealthScore|Duplo|A pontuação de saúde do aplicativo do dispositivo. Valores válidos -1,79769313486232E+308 a 1.79769313486232E+308|
-|deviceAppHealthStatus|Cadeia de caracteres|O status geral da saúde do aplicativo do dispositivo.|
+|deviceAppHealthStatus|String|O status geral da saúde do aplicativo do dispositivo.|
 |deviceId|Cadeia de caracteres|A id do dispositivo.|
 |deviceDisplayName|Cadeia de caracteres|O nome do dispositivo.|
 

@@ -2,15 +2,15 @@
 title: Listar managedMobileLobApps
 description: Listar propriedades e relações dos objetos managedMobileLobApp.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 48f559a93bc850f36081997cf934731ae5a4301190c93c49e3f3889828f5b9e8
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 85838d795753dc4f9d88edfce262e07ce4726686
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54202879"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59100026"
 ---
 # <a name="list-managedmobilelobapps"></a>Listar managedMobileLobApps
 

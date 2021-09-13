@@ -1,16 +1,16 @@
 ---
 title: tipo de recurso educationAssignmentIndividualRecipient
 description: Usado dentro da propriedade assignment.assignTo.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: sharad-sharma-msft
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 4d5f01d3532e6b0022c10947ea36b19c2152fb36409a27cf58898006f5f016ef
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 5e8038aafd8271ffbd4dc92b12fd236c1f7a9923
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54202424"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59109139"
 ---
 # <a name="educationassignmentindividualrecipient-resource-type"></a>tipo de recurso educationAssignmentIndividualRecipient
 
@@ -23,7 +23,7 @@ Esse recurso é uma subclasse [de educationAssignmentRecipient](educationassignm
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|destinatários|String collection|Uma coleção de IDs dos destinatários.|
+|destinatários|Coleção String|Uma coleção de IDs dos destinatários.|
 
 ## <a name="json-representation"></a>Representação JSON
 

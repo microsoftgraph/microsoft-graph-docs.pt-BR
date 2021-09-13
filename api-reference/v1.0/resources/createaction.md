@@ -2,15 +2,15 @@
 author: daspek
 title: Tipo de recurso createAction
 description: O objeto createAction fornece informações sobre a criação de um item.
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 4869683401b1db6c9d11176abb28f92839d1fa6e85d428530ae3586c27c867ad
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 6eb987697e1f04b69e61382d2440d435a88cc21f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54238136"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59053109"
 ---
 # <a name="createaction-resource-type"></a>Tipo de recurso createAction
 

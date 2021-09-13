@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso timeZoneInformation
 description: Representa um fuso horário. O formato suportado é Windows e o fuso horário IANA (autoridade de números atribuídos à Internet) (também conhecido como fuso horário Olson)
-localization_priority: Normal
+ms.localizationpriority: medium
 author: abheek-das
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: caf7869afa20c8f2b9c0bd85e10e00f3773cf8567b54e209f4d0de34f9fda109
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: a4a7d98a1a49e256a623ecc22b89d06cf7fabde6
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54159838"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59066979"
 ---
 # <a name="timezoneinformation-resource-type"></a>Tipo de recurso timeZoneInformation
 
@@ -23,7 +23,7 @@ Representa um fuso horário. Entre os formatos de fuso horário válidos estão 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |alias|string|Um identificador para o fuso horário.|
-|displayName|string|Uma sequência de caracteres de exibição que representa o fuso horário.|
+|displayName|cadeia de caracteres|Uma sequência de caracteres de exibição que representa o fuso horário.|
 
 ## <a name="json-representation"></a>Representação JSON
 

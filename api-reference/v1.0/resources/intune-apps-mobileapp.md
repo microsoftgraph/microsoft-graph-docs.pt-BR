@@ -2,15 +2,15 @@
 title: Tipo de recurso mobileApp
 description: Uma classe abstrata que contém as propriedades base de aplicativos móveis do Intune.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: c15f382e5106ad9ab32ac420f3e5abcf23b617cdb8eda6966b167ad03352fd0f
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: ea4fc7a46c111f01751a232e7475ce3bc055eb21
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54243501"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59123213"
 ---
 # <a name="mobileapp-resource-type"></a>Tipo de recurso mobileApp
 
@@ -32,7 +32,7 @@ Uma classe abstrata que contém as propriedades base de aplicativos móveis do I
 |:---|:---|:---|
 |id|String|Chave da entidade.|
 |displayName|String|O título do aplicativo importado ou definido pelo administrador.|
-|description|Cadeia de caracteres|A descrição do aplicativo.|
+|description|String|A descrição do aplicativo.|
 |publisher|String|O publicador do aplicativo.|
 |largeIcon|[mimeContent](../resources/intune-shared-mimecontent.md)|O ícone grande, a ser exibido nos detalhes do aplicativo e usado para o carregamento do ícone.|
 |createdDateTime|DateTimeOffset|A data e a hora da criação do aplicativo.|
@@ -40,7 +40,7 @@ Uma classe abstrata que contém as propriedades base de aplicativos móveis do I
 |isFeatured|Booliano|O valor que indica se o aplicativo está marcado como em destaque pelo administrador.|
 |privacyInformationUrl|String|A URL da declaração de privacidade.|
 |informationUrl|String|A URL de informações adicionais.|
-|proprietário|Cadeia de caracteres|O proprietário do conteúdo.|
+|owner|Cadeia de caracteres|O proprietário do conteúdo.|
 |developer|String|O desenvolvedor do aplicativo.|
 |notes|String|Anotações para o aplicativo.|
 |publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|O estado de publicação do aplicativo. O aplicativo não pode ser assinado, a menos que ele seja publicado. Os valores possíveis são: `notPublished`, `processing`, `published`.|

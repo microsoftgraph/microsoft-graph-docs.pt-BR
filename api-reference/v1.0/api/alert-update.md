@@ -1,16 +1,16 @@
 ---
 title: Atualizar alerta
 description: Atualize uma propriedade **de alerta editável** em qualquer solução integrada para manter o status de alerta e as atribuições em sincronia entre soluções. Este método atualiza qualquer solução que tenha um registro da ID de alerta referenciada.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: preetikr
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: 005ac06ab2c4783f22a7eef0ddca85e771245fbc
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: bb91b6585cc43a2294ed776be64415771a9cc3cd
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52784959"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59017006"
 ---
 # <a name="update-alert"></a>Atualizar alerta
 
@@ -24,8 +24,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | SecurityEvents.ReadWrite.All        |
-| Delegado (conta pessoal da Microsoft) | Sem suporte.                      |
+| Delegada (conta corporativa ou de estudante)     | SecurityEvents.ReadWrite.All        |
+| Delegada (conta pessoal da Microsoft) | Sem suporte.                      |
 | Aplicativo                            | SecurityEvents.ReadWrite.All        |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -56,12 +56,12 @@ No corpo da solicitação, fornece uma representação JSON dos valores para cam
 | comentários          | String collection                                                      | Comentários do analista sobre o alerta (para gerenciamento de alertas do cliente). Este método pode atualizar o campo de comentários apenas com os seguintes valores: `Closed in IPC` , `Closed in MCAS` . |
 | comentários          | alertFeedback                                                          | Comentários do analista no alerta. Os valores possíveis são: `unknown`, `truePositive`, `falsePositive`, `benignPositive`. |
 | status            | alertStatus                                                            | Status do ciclo de vida de alerta (estágio). Os valores possíveis são: `unknown`, `newAlert`, `inProgress`, `resolved`. |
-| tags              | Coleção de cadeias de caracteres                                                      | Rótulos definíveis pelo usuário que podem ser aplicados a um alerta e podem servir como condições de filtro (por exemplo, "HVA", "SAW). |
+| categorias              | Coleção String                                                      | Rótulos definíveis pelo usuário que podem ser aplicados a um alerta e podem servir como condições de filtro (por exemplo, "HVA", "SAW). |
 | vendorInformation | [securityVendorInformation](../resources/securityvendorinformation.md) | Tipo complexo que contém detalhes sobre o fornecedor, provedor e subprovedor de produtos / serviços de segurança (por exemplo, fornecedor = Microsoft; provedor = Windows Defender ATP; subProvedor = AppLocker). **Os campos provedor e fornecedor são necessários.** |
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta `204 No Content`.
+Se bem-sucedido, este método retorna um código de resposta `204 No Content`.
 
 Se o header de solicitação opcional for usado, o método retornará um código de resposta e o objeto `200 OK` [de](../resources/alert.md) alerta atualizado no corpo da resposta.
 

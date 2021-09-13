@@ -2,15 +2,15 @@
 title: Listar deviceConfigurationDeviceStatuses
 description: Listar propriedades e relações dos objetos deviceConfigurationDeviceStatus.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 601c00ddbbfc112b46141e2183cab09091d4a0aab2077854fa9e83dd2f19b223
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 304566af8d6e6d2bbd749767f08e4a788136f51d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54172362"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59105164"
 ---
 # <a name="list-deviceconfigurationdevicestatuses"></a>Listar deviceConfigurationDeviceStatuses
 

@@ -2,15 +2,15 @@
 author: daspek
 title: Tipo de recurso itemActionStat
 description: O objeto itemActionStat fornece detalhes agregados sobre uma ação por um período de tempo.
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 595a479f98e6327f3e43c2278c646d6e570e5a290cdcae8b7151ac4162d15578
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 047ffe54a613cafbe953a4ff72794382ab440b7e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54246672"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59104121"
 ---
 # <a name="itemactionstat-resource-type"></a>Tipo de recurso itemActionStat
 
@@ -22,7 +22,7 @@ O **recurso itemActionStat** fornece detalhes agregados sobre uma ação por um 
 
 | Propriedade    | Tipo  | Descrição
 |:------------|:------|:-------------------------------------------------------
-| actionCount | Int32 | O número de vezes que a ação ocorreu. Apenas leitura.
+| actionCount | Int32 | O número de vezes que a ação ocorreu. Somente leitura.
 | actorCount  | Int32 | O número de atores distintos que realizaram a ação. Somente leitura.
 
 ## <a name="json-representation"></a>Representação JSON

@@ -2,15 +2,15 @@
 title: Excluir managementConditionStatement
 description: Exclui um managementConditionStatement.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b0f8fca7e35e969fd9e1eb43e0c65f2942a8ded1
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: dfb44605d143bc35d7ec2a6a2b375e149efe6f79
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58820250"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59018156"
 ---
 # <a name="delete-managementconditionstatement"></a>Excluir managementConditionStatement
 

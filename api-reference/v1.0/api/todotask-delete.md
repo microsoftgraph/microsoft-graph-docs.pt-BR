@@ -2,15 +2,15 @@
 title: Excluir todoTask
 description: Exclui um objeto todoTask.
 author: avijityadav
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: a991d641f807898fa644361a55d350b162c884ff
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: 8dbf44b78941a7755fbfa7fa476e280a7b1725f3
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49873819"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59049806"
 ---
 # <a name="delete-todotask"></a>Excluir todoTask
 Namespace: microsoft.graph
@@ -22,8 +22,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|Tasks.ReadWrite|
-|Delegado (conta pessoal da Microsoft)|Tasks.ReadWrite|
+|Delegada (conta corporativa ou de estudante)|Tasks.ReadWrite|
+|Delegada (conta pessoal da Microsoft)|Tasks.ReadWrite|
 |Aplicativo|Sem suporte|
 
 ## <a name="http-request"></a>Solicitação HTTP
