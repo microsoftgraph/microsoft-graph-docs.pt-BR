@@ -2,15 +2,15 @@
 title: Excluir userExperienceAnalyticsRemoteConnection
 description: Exclui um userExperienceAnalyticsRemoteConnection.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2f2060bfbc554eaa4573c5a55ee4907c70fda846
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 5c2a197817d0947fb610d1b4525ef5ee6125ebed
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58798599"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59142156"
 ---
 # <a name="delete-userexperienceanalyticsremoteconnection"></a>Excluir userExperienceAnalyticsRemoteConnection
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementManagedDevices.ReadWrite.All|
+|Aplicativo|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {

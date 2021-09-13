@@ -2,15 +2,15 @@
 title: Obter userExperienceAnalyticsWorkFromAnywhereMetric
 description: Leia propriedades e relações do objeto userExperienceAnalyticsWorkFromAnywhereMetric.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 7c8f92d6e8b781afc5d503e6d08aefaa20db1298
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 1ea7a96a431f45cbf85a78920b7e5c754bfdc3f2
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58786120"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59142086"
 ---
 # <a name="get-userexperienceanalyticsworkfromanywheremetric"></a>Obter userExperienceAnalyticsWorkFromAnywhereMetric
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementConfiguration.Read.All, DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
+|Aplicativo|DeviceManagementConfiguration.Read.All, DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {

@@ -2,15 +2,15 @@
 title: Criar windowsDriverUpdateInventory
 description: Crie um novo objeto windowsDriverUpdateInventory.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 62ef5afd14750065be3ebbdd883b5a0eb0dac8ef
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: ae8ea34598bb8c908de22687707f1db20413b78c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58792120"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59138600"
 ---
 # <a name="create-windowsdriverupdateinventory"></a>Criar windowsDriverUpdateInventory
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -58,7 +58,7 @@ A tabela a seguir mostra as propriedades necessárias ao criar o windowsDriverUp
 |versão|String|A versão do driver.|
 |fabricante|String|O fabricante do driver.|
 |releaseDateTime|DateTimeOffset|A data de lançamento do driver.|
-|driverClass|Cadeia de caracteres|A classe do driver.|
+|driverClass|Cadeia de Caracteres|A classe do driver.|
 |applicableDeviceCount|Int32|O número de dispositivos para os quais esse driver é aplicável.|
 |approvalStatus|[driverApprovalStatus](../resources/intune-softwareupdate-driverapprovalstatus.md)|O status de aprovação desse driver. Os valores possíveis são: `needsReview`, `declined`, `approved`, `suspended`.|
 |category|[driverCategory](../resources/intune-softwareupdate-drivercategory.md)|A categoria desse driver. Os valores possíveis são: `recommended`, `previouslyApproved`, `other`.|

@@ -2,15 +2,15 @@
 title: Tipo de recurso userExperienceAnalyticsInsight
 description: O insight de análise de experiência do usuário é a recomendação para melhorar a pontuação de análise da experiência do usuário.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 7d0d5baaded847858ef91725ff52d8cc1e1d8e02
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 5e2dfcc6da42943743043674ce17a5619a59bf1f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58794396"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59147868"
 ---
 # <a name="userexperienceanalyticsinsight-resource-type"></a>Tipo de recurso userExperienceAnalyticsInsight
 
@@ -25,8 +25,8 @@ O insight de análise de experiência do usuário é a recomendação para melho
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|userExperienceAnalyticsMetricId|Cadeia de caracteres|O identificador exclusivo do insight de análise de experiência do usuário.|
-|insightId|Cadeia de caracteres|O identificador exclusivo do insight de análise de experiência do usuário.|
+|userExperienceAnalyticsMetricId|Cadeia de Caracteres|O identificador exclusivo do insight de análise de experiência do usuário.|
+|insightId|Cadeia de Caracteres|O identificador exclusivo do insight de análise de experiência do usuário.|
 |values|[Coleção userExperienceAnalyticsInsightValue](../resources/intune-devices-userexperienceanalyticsinsightvalue.md)|O valor do insight de análise da experiência do usuário.|
 |severity|[userExperienceAnalyticsInsightSeverity](../resources/intune-devices-userexperienceanalyticsinsightseverity.md)|O valor do insight de análise da experiência do usuário. Os valores possíveis são: `none`, `informational`, `warning`, `error`.|
 

@@ -2,15 +2,15 @@
 title: Tipo de recurso advancedThreatProtectionOnboardingStateSummary
 description: Windows defender o resumo de estado de integração de proteção avançada contra ameaças na conta.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 411e26ba140a8dfad49230fcfcc9a1a947326bd5
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: a1ca587b9ac7a0c886f54260c53329334fa72e27
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58820937"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59101790"
 ---
 # <a name="advancedthreatprotectiononboardingstatesummary-resource-type"></a>Tipo de recurso advancedThreatProtectionOnboardingStateSummary
 

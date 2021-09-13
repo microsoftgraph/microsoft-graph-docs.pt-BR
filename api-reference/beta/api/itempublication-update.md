@@ -1,16 +1,16 @@
 ---
 title: Atualizar itemPublication
 description: Atualize as propriedades de um objeto itemPublication.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: bf715534a5af58136f91b7567fa675d85c174696
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: 750be9d2841bb7b9fc60440b1658f55937c0c129
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50770358"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59087439"
 ---
 # <a name="update-itempublication"></a>Atualizar itemPublication
 
@@ -51,14 +51,14 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|allowedAudiences|String|As audiências que são capazes de ver os valores contidos na entidade. Herdado [do itemFacet](../resources/itemfacet.md). Os valores possíveis são: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
-|descrição    |String      |Descrição da publicação.                   |
-|displayName    |String      |Título da publicação.                         |
+|allowedAudiences|Cadeia de Caracteres|As audiências que são capazes de ver os valores contidos na entidade. Herdado [do itemFacet](../resources/itemfacet.md). Os valores possíveis são: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
+|description    |Cadeia de caracteres      |Descrição da publicação.                   |
+|displayName    |Cadeia de caracteres      |Título da publicação.                         |
 |inferência|[inferenceData](../resources/inferencedata.md)|Contém detalhes de inferência se a entidade for inferida pelo aplicativo de criação ou modificação. Herdado [do itemFacet](../resources/itemfacet.md).|
 |publishedDate  |Data        |A data em que a publicação foi publicada.      |
-|publicador      |String      |Publicação ou Editor para a publicação.     |
+|publicador      |String      |Publicação ou Publisher para a publicação.     |
 |source|[personDataSource](../resources/persondatasource.md)|Onde os valores se originaram se sincronizados de outro serviço. Herdado [do itemFacet](../resources/itemfacet.md).|
-|thumbnailUrl   |String      |URL fazendo referência a uma miniatura da publicação.   |
+|thumbnailUrl   |Cadeia de Caracteres      |URL fazendo referência a uma miniatura da publicação.   |
 |webUrl         |String      |URL fazendo referência à publicação.                  |
 
 ## <a name="response"></a>Resposta

@@ -2,15 +2,15 @@
 title: Atualizar windowsManagementAppHealthState
 description: Atualize as propriedades de um objeto windowsManagementAppHealthState.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0ba8364a396a26e2cdb5ade4a7f6d586959251ca
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: af254521e32ab284d4c3f1406ee1c0368d52cf96
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58821841"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59097086"
 ---
 # <a name="update-windowsmanagementapphealthstate"></a>Atualizar windowsManagementAppHealthState
 
@@ -27,8 +27,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Delegado (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -55,10 +55,10 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [o windo
 |:---|:---|:---|
 |id|Cadeia de caracteres|Identificador exclusivo para o estado de Windows de saúde do aplicativo de gerenciamento. Essa propriedade é somente leitura.|
 |healthState|[healthState](../resources/intune-devices-healthstate.md)|Windows estado de saúde do aplicativo de gerenciamento. Os valores possíveis são: `unknown`, `healthy`, `unhealthy`.|
-|installedVersion|Cadeia de caracteres|Windows versão instalada do aplicativo de gerenciamento.|
+|installedVersion|Cadeia de Caracteres|Windows versão instalada do aplicativo de gerenciamento.|
 |lastCheckInDateTime|DateTimeOffset|Windows aplicativo de gerenciamento última hora de check-in.|
 |deviceName|String|Nome do dispositivo no qual o Windows de gerenciamento está instalado.|
-|deviceOSVersion|Cadeia de caracteres|Windows 10 Versão do sistema operacional do dispositivo no qual o Windows de gerenciamento está instalado.|
+|deviceOSVersion|Cadeia de Caracteres|Windows 10 Versão do sistema operacional do dispositivo no qual o Windows de gerenciamento está instalado.|
 
 
 

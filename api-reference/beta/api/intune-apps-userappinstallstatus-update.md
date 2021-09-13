@@ -2,15 +2,15 @@
 title: Atualizar userAppInstallStatus
 description: Atualize as propriedades de um objeto userAppInstallStatus.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 942e1be06101da9f1a94e905054157d389ac9aea
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 45ba33bee38a81a6f0cf42e6715be7cc2106b2ec
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58822058"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59137354"
 ---
 # <a name="update-userappinstallstatus"></a>Atualizar userAppInstallStatus
 
@@ -27,8 +27,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Delegado (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -55,7 +55,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [o userA
 |:---|:---|:---|
 |id|Cadeia de caracteres|Chave da entidade.|
 |userName|Cadeia de caracteres|Nome de usuário.|
-|userPrincipalName|String|Nome principal do usuário.|
+|userPrincipalName|Cadeia de caracteres|Nome principal do usuário.|
 |installedDeviceCount|Int32|Contagem de dispositivos instalados.|
 |failedDeviceCount|Int32|Falha na contagem de dispositivos.|
 |notInstalledDeviceCount|Int32|Sem contagem de dispositivos instalados.|

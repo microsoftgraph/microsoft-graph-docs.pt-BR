@@ -2,15 +2,15 @@
 title: Tipo de recurso omaSettingBase64
 description: Definição de Base64 das configurações de OMA.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 1fe723e83901fc982a5fe272e4a7e6422ff1cf3c
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: c8b99c13b898bc2832d8e9f459b0adc95d55a772
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58801820"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59086635"
 ---
 # <a name="omasettingbase64-resource-type"></a>Tipo de recurso omaSettingBase64
 
@@ -29,9 +29,9 @@ Herda de [omaSetting](../resources/intune-deviceconfig-omasetting.md)
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |displayName|Cadeia de caracteres|Nome de exibição. Herda de [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
-|descrição|Cadeia de caracteres|Descrição. Herda de [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
+|description|Cadeia de caracteres|Descrição. Herda de [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
 |omaUri|Cadeia de caracteres|OMA. Herda de [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
-|secretReferenceValueId|Cadeia de caracteres|ReferenceId para procurar segredo para descriptografia. Essa propriedade é somente leitura. Herda de [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
+|secretReferenceValueId|Cadeia de Caracteres|ReferenceId para procurar segredo para descriptografia. Essa propriedade é somente leitura. Herda de [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
 |isEncrypted|Boolean|Indica se o campo valor é criptografado. Essa propriedade é somente leitura. Herda de [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
 |fileName|Cadeia de caracteres|Nome de arquivo associado com a propriedade do valor (*.cer | *.crt | *.p7b | *.bin).|
 |value|Cadeia de caracteres|Valor. (Cadeia de caracteres codificada em Base64)|

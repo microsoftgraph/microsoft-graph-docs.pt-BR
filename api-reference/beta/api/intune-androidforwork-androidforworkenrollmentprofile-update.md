@@ -2,15 +2,15 @@
 title: Atualizar androidForWorkEnrollmentProfile
 description: Atualizar as propriedades de um objeto androidForWorkEnrollmentProfile.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 54d3c95fd84089cc655fe816ca3b432c96a97022
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 0453cb9ac68a675b6abfbc6733a685ef1f0a2e04
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58784153"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59093593"
 ---
 # <a name="update-androidforworkenrollmentprofile"></a>Atualizar androidForWorkEnrollmentProfile
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -56,7 +56,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [android
 |accountId|String|GUID de locatário ao qual o perfil de registro pertence.|
 |id|Cadeia de caracteres|GUID exclusivo do perfil de registro.|
 |displayName|Cadeia de caracteres|Nome de exibição do perfil de registro.|
-|descrição|Cadeia de caracteres|Descrição do perfil de registro.|
+|description|Cadeia de caracteres|Descrição do perfil de registro.|
 |createdDateTime|DateTimeOffset|Data e hora de criação do perfil de registro.|
 |lastModifiedDateTime|DateTimeOffset|Data e hora da última modificação do perfil de registro.|
 |tokenValue|String|Valor do token mais recentemente criado para este perfil de registro.|

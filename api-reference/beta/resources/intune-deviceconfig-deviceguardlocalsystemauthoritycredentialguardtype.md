@@ -2,15 +2,15 @@
 title: Tipo de número deviceGuardLocalSystemAuthorityCredentialGuardType
 description: Valores possíveis das configurações do Credential Guard.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: c4369a5bf5752edf9c0636f31f936ecd43048407
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 23da4e368b1fa858dc9e831ac6d4b35bc7510962
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58817107"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59120168"
 ---
 # <a name="deviceguardlocalsystemauthoritycredentialguardtype-enum-type"></a>Tipo de número deviceGuardLocalSystemAuthorityCredentialGuardType
 

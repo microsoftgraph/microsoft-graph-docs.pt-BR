@@ -2,15 +2,15 @@
 title: Excluir macOSMicrosoftEdgeApp
 description: Exclui um macOSMicrosoftEdgeApp.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 8c0bdebb961cdfe5b74dde810c86c44d114e6edd
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: ddd734199708a6a1be83b9be76275d5d28c3900c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58806520"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59126447"
 ---
 # <a name="delete-macosmicrosoftedgeapp"></a>Excluir macOSMicrosoftEdgeApp
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementApps.ReadWrite.All|
+|Aplicativo|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {

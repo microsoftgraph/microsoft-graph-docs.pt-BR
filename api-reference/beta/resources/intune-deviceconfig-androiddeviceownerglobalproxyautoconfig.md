@@ -2,15 +2,15 @@
 title: tipo de recurso androidDeviceOwnerGlobalProxyAutoConfig
 description: Configuração Automática do Proxy Global do Proprietário do Dispositivo Android.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 36b3d28999c65d76da2ab5b0530bfdee3628b807
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 43e36da133cd3d63487425bad98e81cceff1718d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58761329"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59148043"
 ---
 # <a name="androiddeviceownerglobalproxyautoconfig-resource-type"></a>tipo de recurso androidDeviceOwnerGlobalProxyAutoConfig
 
@@ -28,7 +28,7 @@ Herda de [androidDeviceOwnerGlobalProxy](../resources/intune-deviceconfig-androi
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|proxyAutoConfigURL|Cadeia de caracteres|A URL de configuração automática do proxy|
+|proxyAutoConfigURL|Cadeia de Caracteres|A URL de configuração automática do proxy|
 
 ## <a name="relationships"></a>Relações
 Nenhum

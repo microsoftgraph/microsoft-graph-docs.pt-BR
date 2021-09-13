@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso emailAppUsageVersionsUserCounts
 description: Veja a seguir uma representação JSON do recurso.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: sarahwxy
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 9b222982438be26c12e3e8b046f01c815a12f75775a170f2b9034c97d2897913
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 25d28d35d98ffda6b47b38eb206d99b8d70072fe
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54142229"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59148078"
 ---
 # <a name="emailappusageversionsusercounts-resource-type"></a>Tipo de recurso emailAppUsageVersionsUserCounts
 
@@ -26,7 +26,7 @@ Namespace: microsoft.graph
 | outlook2010       | Int64  |
 | outlook2007       | Int64  |
 | indeterminado      | Int64  |
-| reportPeriod      | Cadeia de caracteres |
+| reportPeriod      | Cadeia de Caracteres |
 | outlookM365       | Int64  |
 | outlook2019       | Int64  |
 

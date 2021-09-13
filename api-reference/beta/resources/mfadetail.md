@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso mfaDetail
 description: 'Indica detalhes do MFA para uma assinatura específica. Ele inclui o método de autenticação usado para entrar, bem como detalhes de autenticação (por exemplo: Telefone, SMS ou caixa postal) '
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: identity-and-access-reports
 author: besiler
-ms.openlocfilehash: 52cf5f15c31502fd796e581f8b45e8d00b80eeb83939d7bb6b3c70d6c4906ef2
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 52ad666182e1ab404ba611e4ca2668745a8539fc
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54249696"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59100705"
 ---
 # <a name="mfadetail-resource-type"></a>Tipo de recurso mfaDetail
 
@@ -21,8 +21,8 @@ Namespace: microsoft.graph Indica detalhes de MFA para uma conexão específica.
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|authDetail|Cadeia de caracteres|Indica o detalhe de auth MFA para a atividade de Login correspondente quando o MFA Obrigatório é "Sim".|
-|authMethod|Cadeia de caracteres|Indica que os métodos MFA Auth (SMS, Telefone, Authenticator App são parte do valor) para a atividade de login correspondente quando o campo MFA Obrigatório for "Sim".|
+|authDetail|Cadeia de Caracteres|Indica o detalhe de auth MFA para a atividade de Login correspondente quando o MFA Obrigatório é "Sim".|
+|authMethod|Cadeia de Caracteres|Indica que os métodos MFA Auth (SMS, Telefone, Authenticator App são parte do valor) para a atividade de login correspondente quando o campo MFA Obrigatório for "Sim".|
 
 ## <a name="json-representation"></a>Representação JSON
 

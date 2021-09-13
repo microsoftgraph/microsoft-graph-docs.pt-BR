@@ -2,15 +2,15 @@
 title: Tipo de recurso mobileAppRelationship
 description: Descreve uma relação entre dois aplicativos móveis.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0fac38e910e4889759a07d9b38eac2ee116d0904
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 6e3a355b2eab4c70349156a921d508f33705c65c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58799821"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59124151"
 ---
 # <a name="mobileapprelationship-resource-type"></a>Tipo de recurso mobileAppRelationship
 
@@ -32,10 +32,10 @@ Descreve uma relação entre dois aplicativos móveis.
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|Cadeia de caracteres|A ID da entidade de relação.|
-|targetId|Cadeia de caracteres|A ID do aplicativo móvel de destino.|
-|targetDisplayName|Cadeia de caracteres|O nome de exibição do aplicativo móvel de destino.|
-|targetDisplayVersion|Cadeia de caracteres|A versão de exibição do aplicativo móvel de destino.|
-|targetPublisher|Cadeia de caracteres|O editor do aplicativo móvel de destino.|
+|targetId|Cadeia de Caracteres|A ID do aplicativo móvel de destino.|
+|targetDisplayName|Cadeia de Caracteres|O nome de exibição do aplicativo móvel de destino.|
+|targetDisplayVersion|Cadeia de Caracteres|A versão de exibição do aplicativo móvel de destino.|
+|targetPublisher|Cadeia de Caracteres|O editor do aplicativo móvel de destino.|
 |targetType|[mobileAppRelationshipType](../resources/intune-apps-mobileapprelationshiptype.md)|O tipo de relação que indica se o destino é pai ou filho. Os valores possíveis são: `child`, `parent`.|
 
 ## <a name="relationships"></a>Relações

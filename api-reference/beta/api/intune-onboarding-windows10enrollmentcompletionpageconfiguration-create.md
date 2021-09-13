@@ -2,15 +2,15 @@
 title: Criar windows10EnrollmentCompletionPageConfiguration
 description: Crie um novo objeto windows10EnrollmentCompletionPageConfiguration.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e24008f49f86a488648ce459de6ef764c69cbac3
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 0b6517f5f3d9b83c59f2a582ab7d7c40c2d47d1d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58801252"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59107649"
 ---
 # <a name="create-windows10enrollmentcompletionpageconfiguration"></a>Criar windows10EnrollmentCompletionPageConfiguration
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementServiceConfig.ReadWrite.All|
+|Aplicativo|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -55,20 +55,20 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar o window
 |:---|:---|:---|
 |id|Cadeia de caracteres|Identificador exclusivo da conta Herdada de [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
 |displayName|Cadeia de caracteres|O nome de exibição da configuração de registro de dispositivo Herdada de [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
-|descrição|Cadeia de caracteres|A descrição da configuração de registro de dispositivo Herdada de [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
+|description|Cadeia de caracteres|A descrição da configuração de registro de dispositivo Herdada de [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
 |prioridade|Int32|A prioridade é usada quando um usuário existe em vários grupos que são atribuídos à configuração de registro. Os usuários estão sujeitos apenas à configuração com o valor de prioridade mais baixo. Herdada do [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
 |createdDateTime|DateTimeOffset|Hora de data criada em UTC da configuração de registro de dispositivo Herdada de [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|Última data de modificação no UTC da configuração de registro de dispositivo Herdada de [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
 |versão|Int32|A versão da configuração de registro de dispositivo Herdada de [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
-|roleScopeTagIds|Coleção de cadeias de caracteres|Marcas de escopo de função opcionais para as restrições de registro. Herdada do [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
+|roleScopeTagIds|String collection|Marcas de escopo de função opcionais para as restrições de registro. Herdada do [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
 |showInstallationProgress|Boleano|Mostrar ou ocultar o progresso da instalação para o usuário|
 |blockDeviceSetupRetryByUser|Boleano|Permitir que o usuário repetir a instalação na falha de instalação|
 |allowDeviceResetOnInstallFailure|Boleano|Permitir ou bloquear a redefinição do dispositivo na falha de instalação|
 |allowLogCollectionOnInstallFailure|Boleano|Permitir ou bloquear o conjunto de log na falha de instalação|
-|customErrorMessage|Cadeia de caracteres|Definir mensagem de erro personalizada para mostrar após a falha na instalação|
+|customErrorMessage|Cadeia de Caracteres|Definir mensagem de erro personalizada para mostrar após a falha na instalação|
 |installProgressTimeoutInMinutes|Int32|Definir o tempo de tempo de duração da instalação em minutos|
 |allowDeviceUseOnInstallFailure|Boleano|Permitir que o usuário continue usando o dispositivo na falha de instalação|
-|selectedMobileAppIds|Coleção de cadeias de caracteres|Aplicativos selecionados para rastrear o status da instalação|
+|selectedMobileAppIds|String collection|Aplicativos selecionados para rastrear o status da instalação|
 |trackInstallProgressForAutopilotOnly|Boleano|Mostrar apenas o progresso da instalação para cenários de registro do Piloto Automático|
 |disableUserStatusTrackingAfterFirstUser|Boleano|Mostrar apenas o progresso da instalação para o primeiro registro de postagem do usuário|
 

@@ -2,15 +2,15 @@
 title: Tipo de recurso de usuário
 description: Representa um objeto de usuário do Azure Active Directory.
 author: rolyon
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: c703474195aa9a3d3b2a84f3b71ffdf47398dd8cd7b319685d0d77f1f6d24f93
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 2f6baa00d76571e6c8160015a87c90f09f6d61ec
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54209788"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59115181"
 ---
 # <a name="user-resource-type"></a>Tipo de recurso de usuário
 
@@ -80,7 +80,6 @@ Veja a seguir uma representação JSON do recurso.
   "id": "String (identifier)"
 }
 ```
-
 
 
 

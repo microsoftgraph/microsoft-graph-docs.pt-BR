@@ -2,15 +2,15 @@
 title: Criar deviceAndAppManagementRoleDefinition
 description: Cria um novo objeto deviceAndAppManagementRoleDefinition.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 8e0f7bc621de7a449d6e67ef129e7a971f88e28e
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: d637723dc8fb4bdd828198693613f0038bb71cce
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58806128"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59141575"
 ---
 # <a name="create-deviceandappmanagementroledefinition"></a>Criar deviceAndAppManagementRoleDefinition
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementRBAC.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementRBAC.ReadWrite.All|
+|Aplicativo|DeviceManagementRBAC.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -55,12 +55,12 @@ A tabela a seguir mostra as propriedades obrigatórias ao criar deviceAndAppMana
 |:---|:---|:---|
 |id|Cadeia de caracteres|Chave da entidade. É somente leitura e gerada automaticamente. Herdada de [roleDefinition](../resources/intune-rbac-roledefinition.md)|
 |displayName|Cadeia de caracteres|Nome de exibição da definição de Função. Herdada de [roleDefinition](../resources/intune-rbac-roledefinition.md)|
-|descrição|Cadeia de caracteres|Descrição da definição de Função. Herdada de [roleDefinition](../resources/intune-rbac-roledefinition.md)|
+|description|Cadeia de caracteres|Descrição da definição de Função. Herdada de [roleDefinition](../resources/intune-rbac-roledefinition.md)|
 |permissões|Coleção [rolePermission](../resources/intune-rbac-rolepermission.md)|Lista de Permissões de Função que esta função está autorizada a executar. Elas devem corresponder ao actionName definido como parte de rolePermission. Herdada de [roleDefinition](../resources/intune-rbac-roledefinition.md)|
 |rolePermissions|Coleção [rolePermission](../resources/intune-rbac-rolepermission.md)|Lista de Permissões de Função que esta função está autorizada a executar. Elas devem corresponder ao actionName definido como parte de rolePermission. Herdada de [roleDefinition](../resources/intune-rbac-roledefinition.md)|
 |isBuiltInRoleDefinition|Booliano|Tipo de Função. Defina como True se for uma definição de função interna ou como False se for uma definição de função personalizada. Herdada de [roleDefinition](../resources/intune-rbac-roledefinition.md)|
 |isBuiltIn|Booliano|Tipo de Função. Defina como True se for uma definição de função interna ou como False se for uma definição de função personalizada. Herdada de [roleDefinition](../resources/intune-rbac-roledefinition.md)|
-|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de marcas de escopo para esta instância entity. Herdada de [roleDefinition](../resources/intune-rbac-roledefinition.md)|
+|roleScopeTagIds|String collection|Lista de marcas de escopo para esta instância entity. Herdada de [roleDefinition](../resources/intune-rbac-roledefinition.md)|
 
 
 

@@ -2,15 +2,15 @@
 title: Tipo de recurso deviceManagementIntentSettingSecretConstraint
 description: Restrição indicando que esse valor é um segredo e será criptografado.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 1220bcf0f48d26f3754effbc142b77d94b697524
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 03e563b909dbee9eccdaddd9238d5bbf00b01990
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58803494"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59137858"
 ---
 # <a name="devicemanagementintentsettingsecretconstraint-resource-type"></a>Tipo de recurso deviceManagementIntentSettingSecretConstraint
 

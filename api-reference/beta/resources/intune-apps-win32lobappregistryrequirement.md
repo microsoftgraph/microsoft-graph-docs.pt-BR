@@ -2,15 +2,15 @@
 title: Tipo de recurso win32LobAppRegistryRequirement
 description: Contém propriedades do Registro para detectar um aplicativo Win32
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 79635640146382baf77aec3858f0dffacfd5ec5f
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 84424faafc897cb601764d4f2256e409db945d89
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58787880"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59120469"
 ---
 # <a name="win32lobappregistryrequirement-resource-type"></a>Tipo de recurso win32LobAppRegistryRequirement
 
@@ -29,10 +29,10 @@ Herda de [win32LobAppRequirement](../resources/intune-apps-win32lobapprequiremen
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |operator|[win32LobAppDetectionOperator](../resources/intune-apps-win32lobappdetectionoperator.md)|O operador para detecção Herdado de [win32LobAppRequirement](../resources/intune-apps-win32lobapprequirement.md). Os valores possíveis são: `notConfigured`, `equal`, `notEqual`, `greaterThan`, `greaterThanOrEqual`, `lessThan`, `lessThanOrEqual`.|
-|detectionValue|Cadeia de caracteres|O valor de detecção Herdado [de win32LobAppRequirement](../resources/intune-apps-win32lobapprequirement.md)|
+|detectionValue|Cadeia de Caracteres|O valor de detecção Herdado [de win32LobAppRequirement](../resources/intune-apps-win32lobapprequirement.md)|
 |check32BitOn64System|Boleano|Um valor que indica se esse caminho do Registro é para verificar o aplicativo de 32 bits no sistema de 64 bits|
-|keyPath|Cadeia de caracteres|O caminho da chave do Registro para detectar o aplicativo Win32 Line of Business (LoB)|
-|valueName|Cadeia de caracteres|O nome do valor do Registro|
+|keyPath|Cadeia de Caracteres|O caminho da chave do Registro para detectar o aplicativo Win32 Line of Business (LoB)|
+|valueName|Cadeia de Caracteres|O nome do valor do Registro|
 |detectionType|[win32LobAppRegistryDetectionType](../resources/intune-apps-win32lobappregistrydetectiontype.md)|O tipo de detecção de dados do Registro. Os possíveis valores são: `notConfigured`, `exists`, `doesNotExist`, `string`, `integer`, `version`.|
 
 ## <a name="relationships"></a>Relações
