@@ -2,15 +2,15 @@
 title: Excluir deviceShellScript
 description: Exclui um deviceShellScript.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 4bf3bafd9a531d409b1d48ff8bd937bb5156c5ab
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 286ebb6f5ae4e7ef7b9770e0863536a6edb75a1b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58799609"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59112493"
 ---
 # <a name="delete-deviceshellscript"></a>Excluir deviceShellScript
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementManagedDevices.ReadWrite.All|
+|Aplicativo|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {

@@ -2,15 +2,15 @@
 title: Excluir win32LobApp
 description: Exclui um win32LobApp.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d6b9c3d59580d63efd6c90f01328015466f182bb
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: b03a26b77d573ddf8f835da6960cb518ac49dd4a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58799427"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59098311"
 ---
 # <a name="delete-win32lobapp"></a>Excluir win32LobApp
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementApps.ReadWrite.All|
+|Aplicativo|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {

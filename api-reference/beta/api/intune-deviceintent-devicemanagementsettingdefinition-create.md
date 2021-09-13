@@ -2,15 +2,15 @@
 title: Criar deviceManagementSettingDefinition
 description: Crie um novo objeto deviceManagementSettingDefinition.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 45107731d63cbd86691d15043cce8d296820b4e3
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: bcc18929e9401fa360efff0ac976a7c3a6e8cc76
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58783082"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59088056"
 ---
 # <a name="create-devicemanagementsettingdefinition"></a>Criar deviceManagementSettingDefinition
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -60,12 +60,12 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar deviceMa
 |valueType|[deviceManangementIntentValueType](../resources/intune-deviceintent-devicemanangementintentvaluetype.md)|O tipo de dados do valor. Os possíveis valores são: `integer`, `boolean`, `string`, `complex`, `collection`, `abstractComplex`.|
 |displayName|Cadeia de caracteres|O nome de exibição da configuração|
 |isTopLevel|Boleano|Se a configuração for de nível superior, ela poderá ser configurada sem a necessidade de ser empacotada em uma coleção ou configuração complexa|
-|descrição|Cadeia de caracteres|Descrição da configuração|
-|placeholderText|Cadeia de caracteres|Texto de espaço reservado como exemplo de entrada válida|
-|documentationUrl|Cadeia de caracteres|Url para a documentação de configuração|
-|headerTitle|Cadeia de caracteres|título do header de configuração representa uma categoria/seção de uma configuração/configurações|
-|headerSubtitle|Cadeia de caracteres|subtítulo do header de configuração para obter mais detalhes sobre a categoria/seção|
-|palavras-chave|Coleção de cadeias de caracteres|Palavras-chave associadas à configuração|
+|description|Cadeia de caracteres|Descrição da configuração|
+|placeholderText|Cadeia de Caracteres|Texto de espaço reservado como exemplo de entrada válida|
+|documentationUrl|Cadeia de Caracteres|Url para a documentação de configuração|
+|headerTitle|Cadeia de Caracteres|título do header de configuração representa uma categoria/seção de uma configuração/configurações|
+|headerSubtitle|Cadeia de Caracteres|subtítulo do header de configuração para obter mais detalhes sobre a categoria/seção|
+|palavras-chave|String collection|Palavras-chave associadas à configuração|
 |restrições|[Coleção deviceManagementConstraint](../resources/intune-deviceintent-devicemanagementconstraint.md)|Coleção de restrições para o valor de configuração|
 |dependencies|[Coleção deviceManagementSettingDependency](../resources/intune-deviceintent-devicemanagementsettingdependency.md)|Coleção de dependências em outras configurações|
 

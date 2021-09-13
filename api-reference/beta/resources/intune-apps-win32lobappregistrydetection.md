@@ -2,15 +2,15 @@
 title: Tipo de recurso win32LobAppRegistryDetection
 description: Contém propriedades do Registro para detectar um aplicativo Win32
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8d93cfcc922e08b8e7a87a9121b5bec44cca5e41
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: f77197d8a9f6d4d38e31f66727bb857f9e7235ca
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58783264"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59120454"
 ---
 # <a name="win32lobappregistrydetection-resource-type"></a>Tipo de recurso win32LobAppRegistryDetection
 
@@ -29,11 +29,11 @@ Herda de [win32LobAppDetection](../resources/intune-apps-win32lobappdetection.md
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |check32BitOn64System|Boleano|Um valor que indica se esse caminho do Registro é para verificar o aplicativo de 32 bits no sistema de 64 bits|
-|keyPath|Cadeia de caracteres|O caminho da chave do Registro para detectar o aplicativo Win32 Line of Business (LoB)|
-|valueName|Cadeia de caracteres|O nome do valor do Registro|
+|keyPath|Cadeia de Caracteres|O caminho da chave do Registro para detectar o aplicativo Win32 Line of Business (LoB)|
+|valueName|Cadeia de Caracteres|O nome do valor do Registro|
 |detectionType|[win32LobAppRegistryDetectionType](../resources/intune-apps-win32lobappregistrydetectiontype.md)|O tipo de detecção de dados do Registro. Os possíveis valores são: `notConfigured`, `exists`, `doesNotExist`, `string`, `integer`, `version`.|
 |operator|[win32LobAppDetectionOperator](../resources/intune-apps-win32lobappdetectionoperator.md)|O operador para detecção de dados do Registro. Os valores possíveis são: `notConfigured`, `equal`, `notEqual`, `greaterThan`, `greaterThanOrEqual`, `lessThan`, `lessThanOrEqual`.|
-|detectionValue|Cadeia de caracteres|O valor de detecção do Registro|
+|detectionValue|Cadeia de Caracteres|O valor de detecção do Registro|
 
 ## <a name="relationships"></a>Relações
 Nenhum

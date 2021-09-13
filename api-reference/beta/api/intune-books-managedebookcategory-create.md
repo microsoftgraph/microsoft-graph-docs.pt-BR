@@ -2,15 +2,15 @@
 title: Criar managedEBookCategory
 description: Crie um novo objeto managedEBookCategory.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 97e79be537d24fc4d1de877a7ffc650383944842
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 57170dc1fe781e0f2bdd5ec77de71f63f51da63a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58785630"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59103631"
 ---
 # <a name="create-managedebookcategory"></a>Criar managedEBookCategory
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementApps.ReadWrite.All|
+|Aplicativo|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {

@@ -6,11 +6,11 @@ ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
 ms.openlocfilehash: 812bdb8fe13b7c5619afd857ee270d25f681f089
-ms.sourcegitcommit: cb90b32fba5f03aaffe1de30886513083d8113db
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/01/2021
-ms.locfileid: "58850260"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59133587"
 ---
 # <a name="get-deviceconfigurationdeviceoverview"></a>Acessar deviceConfigurationDeviceOverview
 
@@ -27,8 +27,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP

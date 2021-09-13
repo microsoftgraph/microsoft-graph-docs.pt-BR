@@ -2,15 +2,15 @@
 title: Criar appleUserInitiatedEnrollmentProfile
 description: Crie um novo objeto appleUserInitiatedEnrollmentProfile.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5b5bc1a80ff6451cac64b51b9825d71a9ace154e
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 9df044328b3c595fb9496bf7e350bb4719383974
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58803122"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59107936"
 ---
 # <a name="create-appleuserinitiatedenrollmentprofile"></a>Criar appleUserInitiatedEnrollmentProfile
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementServiceConfig.ReadWrite.All|
+|Aplicativo|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -57,7 +57,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar appleUse
 |availableEnrollmentTypeOptions|[Coleção appleOwnerTypeEnrollmentType](../resources/intune-enrollment-appleownertypeenrollmenttype.md)|Lista de opções de tipo de registro disponível|
 |id|Cadeia de caracteres|O GUID do objeto.|
 |displayName|Cadeia de caracteres|Nome do perfil|
-|descrição|Cadeia de caracteres|Descrição do perfil|
+|description|Cadeia de caracteres|Descrição do perfil|
 |prioridade|Int32|Prioridade, 0 é mais alta|
 |plataforma|[devicePlatformType](../resources/intune-enrollment-deviceplatformtype.md)|A plataforma do Dispositivo. Os valores possíveis são: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `unknown`.|
 |createdDateTime|DateTimeOffset|Tempo de criação de perfil|

@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso office365GroupsActivityFileCounts
 description: Veja a seguir uma representação JSON do recurso.
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: reports
 author: sarahwxy
 doc_type: resourcePageType
-ms.openlocfilehash: f05cf16e1b2e0273aaa62241bbeac3b0d872bf87605e2c852ac2ab28e25f9526
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 0c7d2b89dde8e288fb8ca81dc7ca67e6830a4122
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54160860"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59142828"
 ---
 # <a name="office365groupsactivityfilecounts-resource-type"></a>Tipo de recurso office365GroupsActivityFileCounts
 
@@ -24,7 +24,7 @@ Namespace: microsoft.graph
 | total             | Int64  | O número total de arquivos na biblioteca de documentos SharePoint do grupo. |
 | active            | Int64  | O número de arquivos que foram exibidos, editados, compartilhados ou sincronizados na biblioteca de documentos SharePoint do grupo. |
 | reportDate        | Data   | A data em que vários arquivos estavam ativos no site de SharePoint do grupo. |
-| reportPeriod      | Cadeia de caracteres | O número de dias que o relatório aborda.    |
+| reportPeriod      | Cadeia de Caracteres | O número de dias que o relatório aborda.    |
 
 ## <a name="json-representation"></a>Representação JSON
 

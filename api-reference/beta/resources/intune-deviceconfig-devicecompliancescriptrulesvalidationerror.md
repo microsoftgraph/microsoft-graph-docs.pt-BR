@@ -2,15 +2,15 @@
 title: tipo denum deviceComplianceScriptRulesValidationError
 description: Código de erro para validação de regra.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 8fe71b72d1a20110787b98887c2ddeb13535cf09
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 4c3c03c3f39e9a85cf073e5f997637d885ebfd74
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58785175"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59115503"
 ---
 # <a name="devicecompliancescriptrulesvalidationerror-enum-type"></a>tipo denum deviceComplianceScriptRulesValidationError
 
@@ -36,7 +36,7 @@ Código de erro para validação de regra.
 |operatorNotSupported|8 |Erro do operador não suportado.|
 |datatypeMissing|9 |Erro de tipo de dados ausente.|
 |datatypeNotSupported|10 |Erro do tipo de dados não suportado.|
-|operatorDataTypeCombinationNotSupported|11 |Combinação de tipo de dados do operador não foi suportada.|
+|operatorDataTypeCombinationNotSupported|11|Combinação de tipo de dados do operador não foi suportada.|
 |moreInfoUriMissing|12 |Mais informações urlmissing error.|
 |moreInfoUriInvalid|13|Mais informações url erro inválido.|
 |moreInfoUriTooLarge|14 |Mais informações seu erro ltoo grande.|

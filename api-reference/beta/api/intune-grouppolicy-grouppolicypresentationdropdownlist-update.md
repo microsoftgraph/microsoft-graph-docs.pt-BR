@@ -2,15 +2,15 @@
 title: Atualizar groupPolicyPresentationDropdownList
 description: Atualize as propriedades de um objeto groupPolicyPresentationDropdownList.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d56c32860ab9283db31f1eaef69cea578b8e5659
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: b784ed7dd50ee06bad8fc6e8d72e7322d2242c8a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58786092"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59112325"
 ---
 # <a name="update-grouppolicypresentationdropdownlist"></a>Atualizar groupPolicyPresentationDropdownList
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -54,12 +54,12 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [groupPo
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|rótulo|Cadeia de caracteres|Rótulo de texto localizado para qualquer entidade de apresentação. O valor padrão é vazio. Herdado [de groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
+|rótulo|Cadeia de Caracteres|Rótulo de texto localizado para qualquer entidade de apresentação. O valor padrão é vazio. Herdado [de groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
 |id|Cadeia de caracteres|Chave da entidade. Herdado [de groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
 |lastModifiedDateTime|DateTimeOffset|A data e a hora em que a entidade foi modificada pela última vez. Herdado [de groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
 |defaultItem|[groupPolicyPresentationDropdownListItem](../resources/intune-grouppolicy-grouppolicypresentationdropdownlistitem.md)|Valor de cadeia de caracteres localizado identificando a opção padrão da lista de itens.|
 |itens|[coleção groupPolicyPresentationDropdownListItem](../resources/intune-grouppolicy-grouppolicypresentationdropdownlistitem.md)|Representa um conjunto de nomes de exibição localizados e seus valores associados.|
-|obrigatório|Booliano|Requisito para inserir um valor na caixa de parâmetros. O valor padrão é falso.|
+|obrigatório|Boleano|Requisito para inserir um valor na caixa de parâmetros. O valor padrão é falso.|
 
 
 

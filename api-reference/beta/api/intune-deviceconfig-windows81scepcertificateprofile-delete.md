@@ -2,15 +2,15 @@
 title: Excluir windows81SCEPCertificateProfile
 description: Exclui um windows81SCEPCertificateProfile.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ba8624f98f5690de1c1f4cc88dbdb329b7c32fce
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: e69d8b4b927b1439bd12e140566dfa66e440c396
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58803164"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59097527"
 ---
 # <a name="delete-windows81scepcertificateprofile"></a>Excluir windows81SCEPCertificateProfile
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {

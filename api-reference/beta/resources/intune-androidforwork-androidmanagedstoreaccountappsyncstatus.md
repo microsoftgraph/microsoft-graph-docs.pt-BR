@@ -2,15 +2,15 @@
 title: tipo de número androidManagedStoreAccountAppSyncStatus
 description: Status de sincronização do locatário com a API de EMM do Google
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: b1298a1a47c9697754710c0a376cc006d422340f
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: d53a8c2713212cec6259b3fdff1678a290476604
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58753355"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59106725"
 ---
 # <a name="androidmanagedstoreaccountappsyncstatus-enum-type"></a>tipo de número androidManagedStoreAccountAppSyncStatus
 

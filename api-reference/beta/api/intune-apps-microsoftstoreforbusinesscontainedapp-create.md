@@ -2,15 +2,15 @@
 title: Criar microsoftStoreForBusinessContainedApp
 description: Crie um novo objeto microsoftStoreForBusinessContainedApp.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 11800dbe2718f7b32ca55a22ebe99a8e68c99d4d
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: fbf8efcf9ff993f328bada42c803ed46a6999696
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58795806"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59117463"
 ---
 # <a name="create-microsoftstoreforbusinesscontainedapp"></a>Criar microsoftStoreForBusinessContainedApp
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementApps.ReadWrite.All|
+|Aplicativo|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -56,7 +56,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar o micros
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|Cadeia de caracteres|Chave da entidade. Herdado de [mobileContainedApp](../resources/intune-apps-mobilecontainedapp.md)|
-|appUserModelId|Cadeia de caracteres|A ID do modelo de usuário do aplicativo contido de um MicrosoftStoreForBusinessApp.|
+|appUserModelId|Cadeia de Caracteres|A ID do modelo de usuário do aplicativo contido de um MicrosoftStoreForBusinessApp.|
 
 
 

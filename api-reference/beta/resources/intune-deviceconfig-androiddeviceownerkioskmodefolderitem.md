@@ -2,15 +2,15 @@
 title: Tipo de recurso androidDeviceOwnerKioskModeFolderItem
 description: Representa um item que pode ser adicionado à pasta Proprietário do Dispositivo Android (aplicativo ou weblink)
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3186154369bd25c14c7a28d2bcf6c7e439f090a2
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: cea8969692379a27e35ff27223f6f938bbd15b35
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58818811"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59086929"
 ---
 # <a name="androiddeviceownerkioskmodefolderitem-resource-type"></a>Tipo de recurso androidDeviceOwnerKioskModeFolderItem
 

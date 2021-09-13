@@ -2,15 +2,15 @@
 title: Tipo de recurso bitLockerRecoveryOptions
 description: Opções de recuperação do BitLocker.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: fc20c8f23a05a872f7dcd3ebf00d8e496bf31b24
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 7c9798225a4d9cb6fe44221a7030e6836803ff51
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58807304"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59146720"
 ---
 # <a name="bitlockerrecoveryoptions-resource-type"></a>Tipo de recurso bitLockerRecoveryOptions
 

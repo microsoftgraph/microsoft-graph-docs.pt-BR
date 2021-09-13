@@ -2,15 +2,15 @@
 title: Tipo de recurso cloudPCConnectivityIssue
 description: A entidade de problema de conectividade de análise da experiência do usuário.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 5b232a2848a66dfc242f83da39667e9b891f852f
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 4f1b08cc38f0d152a1b01fb7fa972781bbe5b4aa
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58784475"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59131200"
 ---
 # <a name="cloudpcconnectivityissue-resource-type"></a>Tipo de recurso cloudPCConnectivityIssue
 
@@ -28,7 +28,7 @@ A entidade de problema de conectividade de análise da experiência do usuário.
 |[Listar cloudPCConnectivityIssues](../api/intune-devices-cloudpcconnectivityissue-list.md)|[Coleção cloudPCConnectivityIssue](../resources/intune-devices-cloudpcconnectivityissue.md)|Listar propriedades e relações dos objetos [cloudPCConnectivityIssue.](../resources/intune-devices-cloudpcconnectivityissue.md)|
 |[Obter cloudPCConnectivityIssue](../api/intune-devices-cloudpcconnectivityissue-get.md)|[cloudPCConnectivityIssue](../resources/intune-devices-cloudpcconnectivityissue.md)|Leia propriedades e relações do [objeto cloudPCConnectivityIssue.](../resources/intune-devices-cloudpcconnectivityissue.md)|
 |[Criar cloudPCConnectivityIssue](../api/intune-devices-cloudpcconnectivityissue-create.md)|[cloudPCConnectivityIssue](../resources/intune-devices-cloudpcconnectivityissue.md)|Crie um novo [objeto cloudPCConnectivityIssue.](../resources/intune-devices-cloudpcconnectivityissue.md)|
-|[Excluir cloudPCConnectivityIssue](../api/intune-devices-cloudpcconnectivityissue-delete.md)|Nenhum(a)|Exclui um [cloudPCConnectivityIssue](../resources/intune-devices-cloudpcconnectivityissue.md).|
+|[Excluir cloudPCConnectivityIssue](../api/intune-devices-cloudpcconnectivityissue-delete.md)|Nenhum|Exclui um [cloudPCConnectivityIssue](../resources/intune-devices-cloudpcconnectivityissue.md).|
 |[Atualizar cloudPCConnectivityIssue](../api/intune-devices-cloudpcconnectivityissue-update.md)|[cloudPCConnectivityIssue](../resources/intune-devices-cloudpcconnectivityissue.md)|Atualize as propriedades de [um objeto cloudPCConnectivityIssue.](../resources/intune-devices-cloudpcconnectivityissue.md)|
 
 ## <a name="properties"></a>Propriedades
@@ -40,7 +40,7 @@ A entidade de problema de conectividade de análise da experiência do usuário.
 |errorDateTime|DateTimeOffset|A hora em que a conexão foi iniciada. O tempo é mostrado no formato ISO 8601 e hora UTC (Tempo Universal Coordenado).|
 |userId|Cadeia de caracteres|A ID exclusiva do usuário que inicializa a conexão.|
 |errorDescription|Cadeia de caracteres|A descrição detalhada do que deu errado.|
-|recommendedAction|Cadeia de caracteres|A ação recomendada para corrigir o erro correspondente.|
+|recommendedAction|Cadeia de Caracteres|A ação recomendada para corrigir o erro correspondente.|
 
 ## <a name="relationships"></a>Relações
 Nenhum

@@ -2,15 +2,15 @@
 title: Tipo de recurso deviceHealthScriptRunSchedule
 description: Tipo base do cronograma de executar o script de saúde do dispositivo.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 06ae8dcd560db5aae1fc5046111da3c6fdd868f4
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: bfa515c10d1f82444e0892bda06a693414aee80b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58802464"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59144284"
 ---
 # <a name="devicehealthscriptrunschedule-resource-type"></a>Tipo de recurso deviceHealthScriptRunSchedule
 

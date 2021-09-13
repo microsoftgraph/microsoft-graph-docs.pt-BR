@@ -2,15 +2,15 @@
 title: Tipo de recurso deviceManagementConfigurationPolicy
 description: Política de Configuração de Gerenciamento de Dispositivos
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 26cd4f91cfaa0a28c3d13f26fd5764d571c47ce4
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 7feba3c3ca0305cd6fab197285938b9cc563790a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58792586"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59115363"
 ---
 # <a name="devicemanagementconfigurationpolicy-resource-type"></a>Tipo de recurso deviceManagementConfigurationPolicy
 
@@ -28,7 +28,7 @@ Política de Configuração de Gerenciamento de Dispositivos
 |[Listar deviceManagementConfigurationPolicies](../api/intune-deviceconfigv2-devicemanagementconfigurationpolicy-list.md)|[Coleção deviceManagementConfigurationPolicy](../resources/intune-deviceconfigv2-devicemanagementconfigurationpolicy.md)|Listar propriedades e relações dos [objetos deviceManagementConfigurationPolicy.](../resources/intune-deviceconfigv2-devicemanagementconfigurationpolicy.md)|
 |[Obter deviceManagementConfigurationPolicy](../api/intune-deviceconfigv2-devicemanagementconfigurationpolicy-get.md)|[deviceManagementConfigurationPolicy](../resources/intune-deviceconfigv2-devicemanagementconfigurationpolicy.md)|Leia propriedades e relações do [objeto deviceManagementConfigurationPolicy.](../resources/intune-deviceconfigv2-devicemanagementconfigurationpolicy.md)|
 |[Criar deviceManagementConfigurationPolicy](../api/intune-deviceconfigv2-devicemanagementconfigurationpolicy-create.md)|[deviceManagementConfigurationPolicy](../resources/intune-deviceconfigv2-devicemanagementconfigurationpolicy.md)|Crie um novo [objeto deviceManagementConfigurationPolicy.](../resources/intune-deviceconfigv2-devicemanagementconfigurationpolicy.md)|
-|[Excluir deviceManagementConfigurationPolicy](../api/intune-deviceconfigv2-devicemanagementconfigurationpolicy-delete.md)|Nenhum(a)|Exclui um [deviceManagementConfigurationPolicy](../resources/intune-deviceconfigv2-devicemanagementconfigurationpolicy.md).|
+|[Excluir deviceManagementConfigurationPolicy](../api/intune-deviceconfigv2-devicemanagementconfigurationpolicy-delete.md)|Nenhum|Exclui um [deviceManagementConfigurationPolicy](../resources/intune-deviceconfigv2-devicemanagementconfigurationpolicy.md).|
 |[Atualizar deviceManagementConfigurationPolicy](../api/intune-deviceconfigv2-devicemanagementconfigurationpolicy-update.md)|[deviceManagementConfigurationPolicy](../resources/intune-deviceconfigv2-devicemanagementconfigurationpolicy.md)|Atualize as propriedades de [um objeto deviceManagementConfigurationPolicy.](../resources/intune-deviceconfigv2-devicemanagementconfigurationpolicy.md)|
 |[atribuir ação](../api/intune-deviceconfigv2-devicemanagementconfigurationpolicy-assign.md)|[Coleção deviceManagementConfigurationPolicyAssignment](../resources/intune-deviceconfigv2-devicemanagementconfigurationpolicyassignment.md)|Ainda não documentado|
 |[Ação createCopy](../api/intune-deviceconfigv2-devicemanagementconfigurationpolicy-createcopy.md)|[deviceManagementConfigurationPolicy](../resources/intune-deviceconfigv2-devicemanagementconfigurationpolicy.md)|Ainda não documentado|
@@ -38,21 +38,21 @@ Política de Configuração de Gerenciamento de Dispositivos
 |:---|:---|:---|
 |id|Cadeia de caracteres|Chave do documento de política. Gerado automaticamente.|
 |nome|Cadeia de caracteres|Nome da política|
-|descrição|Cadeia de caracteres|Descrição da política|
+|description|Cadeia de caracteres|Descrição da política|
 |plataformas|[deviceManagementConfigurationPlatforms](../resources/intune-deviceconfigv2-devicemanagementconfigurationplatforms.md)|Plataformas para essa política. Os valores possíveis são: `none`, `macOS`, `windows10X`, `windows10`.|
 |technologies|[deviceManagementConfigurationTechnologies](../resources/intune-deviceconfigv2-devicemanagementconfigurationtechnologies.md)|Tecnologias para essa política. Os possíveis valores são: `none`, `mdm`, `windows10XManagement`, `configManager`, `microsoftSense`, `exchangeOnline`.|
 |createdDateTime|DateTimeOffset|Data e hora de criação de política. Essa propriedade é somente leitura.|
 |lastModifiedDateTime|DateTimeOffset|Data e hora da última modificação da política. Essa propriedade é somente leitura.|
 |settingCount|Int32|Número de configurações. Essa propriedade é somente leitura.|
-|creationSource|Cadeia de caracteres|Fonte de criação de política|
-|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de marcas de escopo para esta instância entity.|
+|creationSource|Cadeia de Caracteres|Fonte de criação de política|
+|roleScopeTagIds|String collection|Lista de marcas de escopo para esta instância entity.|
 |isAssigned|Boolean|Status da atribuição de política. Essa propriedade é somente leitura.|
 |templateReference|[deviceManagementConfigurationPolicyTemplateReference](../resources/intune-deviceconfigv2-devicemanagementconfigurationpolicytemplatereference.md)|Informações de referência do modelo|
 
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|
 |:---|:---|:---|
-|settings|[Coleção deviceManagementConfigurationSetting](../resources/intune-deviceconfigv2-devicemanagementconfigurationsetting.md)|Configurações de política|
+|configurações|[Coleção deviceManagementConfigurationSetting](../resources/intune-deviceconfigv2-devicemanagementconfigurationsetting.md)|Configurações de política|
 |assignments|[Coleção deviceManagementConfigurationPolicyAssignment](../resources/intune-deviceconfigv2-devicemanagementconfigurationpolicyassignment.md)|Atribuições de política|
 
 ## <a name="json-representation"></a>Representação JSON

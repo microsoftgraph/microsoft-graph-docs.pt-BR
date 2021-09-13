@@ -2,15 +2,15 @@
 title: Tipo de recurso androidManagedStoreWebApp
 description: Contém propriedades e propriedades herdadas para aplicativos Web configurados para serem distribuídos por meio do armazenamento de aplicativos Android gerenciado.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: f40e182de260d86fd043f9f3a1b7d4a65aed2d81
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: f58de948f25459bdc5fa53bfcb5ed5cbc252f6ba
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58788707"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59115629"
 ---
 # <a name="androidmanagedstorewebapp-resource-type"></a>Tipo de recurso androidManagedStoreWebApp
 
@@ -31,7 +31,7 @@ Herda de [androidManagedStoreApp](../resources/intune-apps-androidmanagedstoreap
 |[Listar androidManagedStoreWebApps](../api/intune-apps-androidmanagedstorewebapp-list.md)|[coleção androidManagedStoreWebApp](../resources/intune-apps-androidmanagedstorewebapp.md)|Listar propriedades e relações dos objetos [androidManagedStoreWebApp.](../resources/intune-apps-androidmanagedstorewebapp.md)|
 |[Obter androidManagedStoreWebApp](../api/intune-apps-androidmanagedstorewebapp-get.md)|[androidManagedStoreWebApp](../resources/intune-apps-androidmanagedstorewebapp.md)|Leia propriedades e relações do [objeto androidManagedStoreWebApp.](../resources/intune-apps-androidmanagedstorewebapp.md)|
 |[Criar androidManagedStoreWebApp](../api/intune-apps-androidmanagedstorewebapp-create.md)|[androidManagedStoreWebApp](../resources/intune-apps-androidmanagedstorewebapp.md)|Crie um novo [objeto androidManagedStoreWebApp.](../resources/intune-apps-androidmanagedstorewebapp.md)|
-|[Excluir androidManagedStoreWebApp](../api/intune-apps-androidmanagedstorewebapp-delete.md)|Nenhum(a)|Exclui um [androidManagedStoreWebApp](../resources/intune-apps-androidmanagedstorewebapp.md).|
+|[Excluir androidManagedStoreWebApp](../api/intune-apps-androidmanagedstorewebapp-delete.md)|Nenhum|Exclui um [androidManagedStoreWebApp](../resources/intune-apps-androidmanagedstorewebapp.md).|
 |[Atualizar androidManagedStoreWebApp](../api/intune-apps-androidmanagedstorewebapp-update.md)|[androidManagedStoreWebApp](../resources/intune-apps-androidmanagedstorewebapp.md)|Atualize as propriedades de um [objeto androidManagedStoreWebApp.](../resources/intune-apps-androidmanagedstorewebapp.md)|
 
 ## <a name="properties"></a>Propriedades
@@ -39,7 +39,7 @@ Herda de [androidManagedStoreApp](../resources/intune-apps-androidmanagedstoreap
 |:---|:---|:---|
 |id|Cadeia de caracteres|Chave da entidade. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
 |displayName|Cadeia de caracteres|O título do aplicativo importado ou definido pelo administrador. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
-|descrição|Cadeia de caracteres|A descrição do aplicativo. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
+|description|Cadeia de caracteres|A descrição do aplicativo. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
 |publicador|String|O publicador do aplicativo. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
 |largeIcon|[mimeContent](../resources/intune-shared-mimecontent.md)|O ícone grande, a ser exibido nos detalhes do aplicativo e usado para o carregamento do ícone. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
 |createdDateTime|DateTimeOffset|A data e a hora da criação do aplicativo. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
@@ -53,7 +53,7 @@ Herda de [androidManagedStoreApp](../resources/intune-apps-androidmanagedstoreap
 |uploadState|Int32|O estado de carregamento. Os valores possíveis são: 0 - `Not Ready` , 1 - `Ready` , 2 - `Processing` . Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
 |publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|O estado de publicação do aplicativo. O aplicativo não pode ser assinado, a menos que ele seja publicado. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md). Os valores possíveis são: `notPublished`, `processing`, `published`.|
 |isAssigned|Boolean|O valor que indica se o aplicativo é atribuído a pelo menos um grupo. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
-|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de ids de marca de escopo para este aplicativo móvel. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
+|roleScopeTagIds|String collection|Lista de ids de marca de escopo para este aplicativo móvel. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
 |dependentAppCount|Int32|O número total de dependências que o aplicativo filho tem. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
 |supersedingAppCount|Int32|O número total de aplicativos que esse aplicativo sobressede direta ou indiretamente. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
 |supersededAppCount|Int32|O número total de aplicativos pelos quais esse aplicativo é, direta ou indiretamente, é suplido. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|

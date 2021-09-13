@@ -1,16 +1,16 @@
 ---
 title: Criar windowsOfficeClientConfiguration
 description: Crie uma nova política que não seja de segurança com grupos de direcionamento.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: dougeby
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 11b0a38455c3cb258773e1b12a6739ec6cbfd681
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 0a7761e5561d44f32b4bb67b8c4365ba61306942
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58802856"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59083156"
 ---
 # <a name="create-windowsofficeclientconfiguration"></a>Criar windowsOfficeClientConfiguration
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -56,7 +56,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [o windo
 |id|Cadeia de caracteres|ID da política de configuração do cliente do office. Herdado [do officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|
 |userPreferencePayload|Stream|Configurações de preferência Cadeia de caracteres JSON no formato binário, esses valores podem ser substituídos pelo usuário. Herdado [do officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|
 |policyPayload|Stream|Configurações de política Cadeia de caracteres JSON em formato binário, esses valores não podem ser alterados pelo usuário. Herdado [do officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|
-|descrição|Cadeia de caracteres|O administrador forneceu a descrição da política de configuração do cliente do office. Herdado [do officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|
+|description|Cadeia de caracteres|O administrador forneceu a descrição da política de configuração do cliente do office. Herdado [do officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|
 |displayName|Cadeia de caracteres|O administrador forneceu o nome da política de configuração do cliente do office. Herdado [do officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|
 |assignments|[Coleção officeClientConfigurationAssignment](../resources/intune-cirrus-officeclientconfigurationassignment.md)|A lista de atribuições de grupo para a política.. Herdado [do officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|
 |prioridade|Int32|O valor de prioridade deve ser o valor exclusivo para cada política em um locatário e será usado para resolução de conflitos, valores mais baixos a prioridade média é alta. Herdado [do officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|

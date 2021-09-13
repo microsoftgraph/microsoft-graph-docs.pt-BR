@@ -2,15 +2,15 @@
 title: Ação setDeviceName
 description: Definir o nome do dispositivo.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 906bb0ff33f58b796278d2919b421a402b2d5d70
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 96b32f933547e985a28174c563b2e74daf9ea0b1
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58794003"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59102938"
 ---
 # <a name="setdevicename-action"></a>Ação setDeviceName
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementManagedDevices.PriviligedOperation.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementManagedDevices.PriviligedOperation.All|
+|Aplicativo|DeviceManagementManagedDevices.PriviligedOperation.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {

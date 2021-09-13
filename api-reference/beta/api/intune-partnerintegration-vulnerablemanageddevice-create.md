@@ -2,15 +2,15 @@
 title: Criar vulnerableManagedDevice
 description: Crie um novo objeto vulnerableManagedDevice.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 483e55e078c2a00671ba7e87119bff38e3354f7c
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 5893e068d8c2d08354dc72c5488e80650a0c8760
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58803704"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59092655"
 ---
 # <a name="create-vulnerablemanageddevice"></a>Criar vulnerableManagedDevice
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementApps.ReadWrite.All|
+|Aplicativo|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -54,7 +54,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar o vulner
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|Cadeia de caracteres|A chave de entidade e a ID do dispositivo AAD.|
-|managedDeviceId|Cadeia de caracteres|A ID do dispositivo gerenciado do Intune.|
+|managedDeviceId|Cadeia de Caracteres|A ID do dispositivo gerenciado do Intune.|
 |displayName|Cadeia de caracteres|O nome do dispositivo.|
 |lastSyncDateTime|DateTimeOffset|A última data de sincronização.|
 

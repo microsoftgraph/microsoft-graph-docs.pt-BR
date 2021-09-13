@@ -2,15 +2,15 @@
 title: Tipo de número iosSoftwareUpdateScheduleType
 description: Atualizar o tipo de agendamento para atualizações de software iOS.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 4bf7a777fc87a6c4fb6e5c87ef321ba3468d5b62
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 4629ddd0aba60cfd71956eea07f05ce4119eee7f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58804516"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59111156"
 ---
 # <a name="iossoftwareupdatescheduletype-enum-type"></a>Tipo de número iosSoftwareUpdateScheduleType
 

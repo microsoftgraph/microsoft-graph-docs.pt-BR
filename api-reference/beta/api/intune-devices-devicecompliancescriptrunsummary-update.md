@@ -2,15 +2,15 @@
 title: Atualizar deviceComplianceScriptRunSummary
 description: Atualize as propriedades de um objeto deviceComplianceScriptRunSummary.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d43188920439ca57c160758ab3d1bf4f2e5cfc48
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 99770521bf349732fbf8fe3b6b35333fa6abb53e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58792053"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59108146"
 ---
 # <a name="update-devicecompliancescriptrunsummary"></a>Atualizar deviceComplianceScriptRunSummary
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementManagedDevices.ReadWrite.All|
+|Aplicativo|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {

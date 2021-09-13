@@ -2,15 +2,15 @@
 title: Tipo de numeração windowsKioskAppType
 description: O tipo de Windows de quiosque.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: d13bbddd0541002cc8e0f0a1ffb078929efbcc44
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 1b723edf1b765ff725dc9259044850b9a2e0b815
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58796611"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59086677"
 ---
 # <a name="windowskioskapptype-enum-type"></a>Tipo de numeração windowsKioskAppType
 

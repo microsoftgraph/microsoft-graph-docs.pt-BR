@@ -2,15 +2,15 @@
 title: Listar roleAssignments
 description: Listar propriedades e relações de objeto de roleAssignment.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c73f88fee49e0f28d3a874a977ab3f287da0b0bc
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 620fb97bcec1e0809ba310181f9ebeb7cb134925
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58785224"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59096631"
 ---
 # <a name="list-roleassignments"></a>Listar roleAssignments
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementRBAC.Read.All, DeviceManagementRBAC.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementConfiguration.Read.All, DeviceManagementRBAC.Read.All, DeviceManagementRBAC.ReadWrite.All|
+|Aplicativo|DeviceManagementConfiguration.Read.All, DeviceManagementRBAC.Read.All, DeviceManagementRBAC.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {

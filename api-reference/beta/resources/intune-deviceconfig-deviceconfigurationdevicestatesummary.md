@@ -2,15 +2,15 @@
 title: Tipo de recurso deviceConfigurationDeviceStateSummary
 description: Ainda não documentado
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: de8dd62cabefa06844631232b9fefd17ac45f394
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: cff11c3d0e2706946d211fab137c7f5a9dcce268
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58820440"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59120175"
 ---
 # <a name="deviceconfigurationdevicestatesummary-resource-type"></a>Tipo de recurso deviceConfigurationDeviceStateSummary
 

@@ -2,15 +2,15 @@
 title: Listar windowsDomainJoinConfigurations
 description: Listar propriedades e relações dos objetos windowsDomainJoinConfiguration.
 author: rolyon
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 31b9debb201c9967260c66edbb1def35bfd33097
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: ee50b9a96a3297b85f9f302cb471e60dabca75bc
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58790455"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59132319"
 ---
 # <a name="list-windowsdomainjoinconfigurations"></a>Listar windowsDomainJoinConfigurations
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Delegado (conta corporativa ou de estudante)||
 | &nbsp; &nbsp; **Configuração do dispositivo** | DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application||
+|Aplicativo||
 | &nbsp; &nbsp; **Configuração do dispositivo** | DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>Solicitação HTTP

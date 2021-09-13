@@ -2,15 +2,15 @@
 title: Atualizar iosCompliancePolicy
 description: Atualiza as propriedades de um objeto iosCompliancePolicy.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6805db560d0c33593d9e994625193e5e325ae826
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 37c398cb152d9c7394d7dcbf5cfdd84e1cb796aa
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58796794"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59097779"
 ---
 # <a name="update-ioscompliancepolicy"></a>Atualizar iosCompliancePolicy
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -53,10 +53,10 @@ A tabela a seguir mostra as propriedades obrigatórias ao criar [iosCompliancePo
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de marcas de escopo para esta instância entity. Herdada de [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
+|roleScopeTagIds|String collection|Lista de marcas de escopo para esta instância entity. Herdada de [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
 |id|Cadeia de caracteres|Chave da entidade. Herdada de [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
 |createdDateTime|DateTimeOffset|DateTime em que o objeto foi criado. Herdada de [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
-|descrição|Cadeia de caracteres|O administrador forneceu a descrição da Configuração do dispositivo. Herdada de [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
+|description|Cadeia de caracteres|O administrador forneceu a descrição da Configuração do dispositivo. Herdada de [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
 |lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto. Herdada de [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
 |displayName|Cadeia de caracteres|O administrador forneceu o nome da Configuração do dispositivo. Herdada de [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
 |version|Int32|Versão da configuração do dispositivo. Herdado de [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
@@ -71,8 +71,8 @@ A tabela a seguir mostra as propriedades obrigatórias ao criar [iosCompliancePo
 |passcodeRequired|Boolean|Indica se um código de acesso deve ou não ser exigido.|
 |osMinimumVersion|String|Versão mínima do IOS.|
 |osMaximumVersion|String|Versão máxima do iOS.|
-|osMinimumBuildVersion|Cadeia de caracteres|Versão de com build mínima do IOS.|
-|osMaximumBuildVersion|Cadeia de caracteres|Versão de composição máxima do IOS.|
+|osMinimumBuildVersion|Cadeia de Caracteres|Versão de com build mínima do IOS.|
+|osMaximumBuildVersion|Cadeia de Caracteres|Versão de composição máxima do IOS.|
 |securityBlockJailbrokenDevices|Boolean|Os dispositivos não devem ser violados ou com modificações root.|
 |deviceThreatProtectionEnabled|Boolean|Exige que os dispositivos tenham habilitada a proteção contra ameaças.|
 |deviceThreatProtectionRequiredSecurityLevel|[deviceThreatProtectionLevel](../resources/intune-deviceconfig-devicethreatprotectionlevel.md)|Exige o nível mínimo de risco de Proteção contra Ameaças Móveis para indicar falta de conformidade. Os valores possíveis são: `unavailable`, `secured`, `low`, `medium`, `high`, `notSet`.|

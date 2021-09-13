@@ -2,15 +2,15 @@
 title: Tipo de recurso managedDeviceMobileAppConfigurationSettingState
 description: Estado de configuração de aplicativo móvel de dispositivo gerenciado para um determinado dispositivo.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d40de92661ac13f3c499678fc78177e3d33ac9d6
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: b6f1d7adc13274414f289ac0f37b3eaa88250a88
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58807297"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59086782"
 ---
 # <a name="manageddevicemobileappconfigurationsettingstate-resource-type"></a>Tipo de recurso managedDeviceMobileAppConfigurationSettingState
 
@@ -37,7 +37,7 @@ Estado de configuração de aplicativo móvel de dispositivo gerenciado para um 
 |userPrincipalName|Cadeia de caracteres|UserPrincipalName.|
 |fontes|Conjunto [settingSource](../resources/intune-deviceconfig-settingsource.md)|Políticas de colaboração|
 |currentValue|Cadeia de caracteres|Valor atual da configuração em um dispositivo|
-|settingInstanceId|Cadeia de caracteres|SettingInstanceId|
+|settingInstanceId|Cadeia de Caracteres|SettingInstanceId|
 
 ## <a name="relationships"></a>Relações
 Nenhum

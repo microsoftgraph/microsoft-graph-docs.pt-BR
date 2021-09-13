@@ -2,15 +2,15 @@
 title: Tipo de recurso deviceHealthScriptTimeSchedule
 description: Tipo base do cronograma de tempo do script de saúde do dispositivo.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 972dc1eef8532974694baedb793a3b1a2473e716
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: b56f208d466a237def9a7916192abfcae7d0f2d6
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58796212"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59144214"
 ---
 # <a name="devicehealthscripttimeschedule-resource-type"></a>Tipo de recurso deviceHealthScriptTimeSchedule
 

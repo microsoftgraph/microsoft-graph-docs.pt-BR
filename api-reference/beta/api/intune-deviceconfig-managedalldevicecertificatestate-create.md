@@ -2,15 +2,15 @@
 title: Criar managedAllDeviceCertificateState
 description: Crie um novo objeto managedAllDeviceCertificateState.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 4413d57e02c3d4e13200c1d7d1db05920dd27cd1
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 569e877091eabd53e9addeb22c02c5660d942ac9
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58805160"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59097590"
 ---
 # <a name="create-managedalldevicecertificatestate"></a>Criar managedAllDeviceCertificateState
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -56,15 +56,15 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar managedA
 |id|Cadeia de caracteres|Chave da entidade.|
 |certificateRevokeStatus|[certificateRevocationStatus](../resources/intune-deviceconfig-certificaterevocationstatus.md)|Revogar status. Os valores possíveis são: `none`, `pending`, `issued`, `failed`, `revoked`.|
 |certificateRevokeStatusLastChangeDateTime|DateTimeOffset|A hora em que o status de revogação foi alterado pela última vez|
-|managedDeviceDisplayName|Cadeia de caracteres|Nome de exibição do dispositivo|
+|managedDeviceDisplayName|Cadeia de Caracteres|Nome de exibição do dispositivo|
 |userPrincipalName|Cadeia de caracteres|Nome UPN|
 |certificateExpirationDateTime|DateTimeOffset|Data de expiração do certificado|
-|certificateIssuerName|Cadeia de caracteres|Emissor|
-|certificateThumbprint|Cadeia de caracteres|Impressão Digital|
-|certificateSerialNumber|Cadeia de caracteres|Número de série|
-|certificateSubjectName|Cadeia de caracteres|Nome do assunto do certificado|
+|certificateIssuerName|Cadeia de Caracteres|Emissor|
+|certificateThumbprint|Cadeia de Caracteres|Impressão Digital|
+|certificateSerialNumber|Cadeia de Caracteres|Número de série|
+|certificateSubjectName|Cadeia de Caracteres|Nome do assunto do certificado|
 |certificateKeyUsages|Int32|Uso da Chave|
-|certificateExtendedKeyUsages|Cadeia de caracteres|Uso avançado de chave|
+|certificateExtendedKeyUsages|Cadeia de Caracteres|Uso avançado de chave|
 |certificateIssuanceDateTime|DateTimeOffset|Data de emissão|
 
 

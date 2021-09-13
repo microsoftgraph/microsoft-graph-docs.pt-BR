@@ -2,15 +2,15 @@
 title: Tipo de recurso win32LobAppFileSystemDetection
 description: Contém arquivo ou caminho de pasta para detectar um aplicativo Win32
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 2019ed6f54ea5a9924665fa5b7ee746b7fb8a866
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 732ce5845c6b4965f28b8afca6526b17964622d0
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58797300"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59127616"
 ---
 # <a name="win32lobappfilesystemdetection-resource-type"></a>Tipo de recurso win32LobAppFileSystemDetection
 
@@ -29,11 +29,11 @@ Herda de [win32LobAppDetection](../resources/intune-apps-win32lobappdetection.md
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |caminho|String|O arquivo ou o caminho da pasta para detectar o aplicativo Win32 Line of Business (LoB)|
-|fileOrFolderName|Cadeia de caracteres|O arquivo ou o nome da pasta para detectar o aplicativo Win32 Line of Business (LoB)|
+|fileOrFolderName|Cadeia de Caracteres|O arquivo ou o nome da pasta para detectar o aplicativo Win32 Line of Business (LoB)|
 |check32BitOn64System|Boleano|Um valor que indica se esse arquivo ou pasta é para verificar o aplicativo de 32 bits no sistema de 64 bits|
 |detectionType|[win32LobAppFileSystemDetectionType](../resources/intune-apps-win32lobappfilesystemdetectiontype.md)|O tipo de detecção do sistema de arquivos. Os valores possíveis são: `notConfigured`, `exists`, `modifiedDate`, `createdDate`, `version`, `sizeInMB`, `doesNotExist`.|
 |operator|[win32LobAppDetectionOperator](../resources/intune-apps-win32lobappdetectionoperator.md)|O operador para detecção de arquivo ou pasta. Os valores possíveis são: `notConfigured`, `equal`, `notEqual`, `greaterThan`, `greaterThanOrEqual`, `lessThan`, `lessThanOrEqual`.|
-|detectionValue|Cadeia de caracteres|O valor de detecção de arquivo ou pasta|
+|detectionValue|Cadeia de Caracteres|O valor de detecção de arquivo ou pasta|
 
 ## <a name="relationships"></a>Relações
 Nenhum
