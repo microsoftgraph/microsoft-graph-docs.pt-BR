@@ -1,16 +1,16 @@
 ---
 title: Criar schemaExtension
 description: Criar uma nova definição schemaExtension para estender um tipo de recurso de suporte.
-localization_priority: Priority
+ms.localizationpriority: high
 author: dkershaw10
 ms.prod: extensions
 doc_type: apiPageType
-ms.openlocfilehash: a498b23cc29c806f24cd620110ce731598ba2582
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 97ae815c8eead9e77eadebad03d5aa5fc7e881c8
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52054473"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59085165"
 ---
 # <a name="create-schemaextension"></a>Criar schemaExtension
 
@@ -70,7 +70,7 @@ Se bem-sucedido, este método retorna o código de resposta `201 Created` e o ob
 
 #### <a name="request"></a>Solicitação
 
-Este exemplo mostra como usar um nome de domínio verificado, `graphlearn` e um nome de esquema, `courses`, para formar uma cadeia de caracteres exclusiva para a propriedade **id** da definição da extensão de esquema. A cadeia de caracteres exclusiva é baseada neste formato,\{_&#65279;domainName_\}\_\{_&#65279;schemaName_\}.
+O primeiro exemplo mostra o uso de um nome de domínio verificado, `graphlearn` e um nome de esquema, `courses`, para formar uma cadeia de caracteres exclusiva para a propriedade **id** da definição de extensão do esquema. A cadeia de caracteres exclusiva se baseia neste formato, \{_&#65279;domainName_\}\_\{_&#65279;schemaName_\}.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -124,7 +124,7 @@ Content-type: application/json
 
 #### <a name="response"></a>Resposta
 
-Veja a seguir um exemplo da resposta. Observação: o objeto de resposta exibido aqui pode ser encurtado para legibilidade.
+Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser reduzido para facilitar a leitura.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -164,7 +164,7 @@ Content-length: 420
 
 #### <a name="request"></a>Solicitação
 
-Este exemplo mostra a especificação de apenas um nome de esquema, `courses`, na propriedade **id** da solicitação, juntamente com a representação JSON do restante das propriedades no objeto [schemaExtension](../resources/schemaextension.md). O Microsoft Graph atribuirá e retornará um valor de cadeia de caracteres exclusivo na resposta.
+Este exemplo mostra a especificação de apenas um nome de esquema, `courses`, na propriedade **id** na solicitação, junto com a representação JSON do resto das propriedades no objeto [schemaExtension](../resources/schemaextension.md). O Microsoft Graph atribuirá e retornará um valor exclusivo de cadeia de caracteres na resposta.
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -219,7 +219,7 @@ Content-type: application/json
 
 #### <a name="response"></a>Resposta
 
-A resposta inclui uma cadeia de caracteres exclusiva na propriedade **id** com base no nome do esquema fornecido na solicitação, junto com o resto da definição de esquema recém-criada. O valor em **id** na resposta se baseia no formato, ext\{_&#65279;8-random-alphanumeric-chars_\}\_\{_&#65279;schema-name_\}. Observação: o objeto de resposta exibido aqui pode ser encurtado para legibilidade.
+A resposta inclui uma cadeia de caracteres exclusiva na propriedade **id** com base no nome do esquema fornecido na solicitação, junto com o resto da definição de esquema recém-criada. O valor em **id** na resposta se baseia no formato, ext\{_&#65279;8-random-alphanumeric-chars_\}\_\{_&#65279;schema-name_\}. Observação: o objeto da resposta mostrado aqui pode estar abreviado por motivos de legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,

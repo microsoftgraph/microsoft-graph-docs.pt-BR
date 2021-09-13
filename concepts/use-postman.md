@@ -1,14 +1,14 @@
 ---
 title: Use o Postman com a API do Microsoft Graph
 description: Use a coleção do Microsoft Graph Postman para começar a usar as APIs do Microsoft Graph em questão minutos.
-author: jthake-msft
-localization_priority: Priority
-ms.openlocfilehash: 0473ef6e0ad7924a7b41889e615e6c1dedbbd989e98116a9c24ab604d186a1a6
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+author: jasonjoh
+ms.localizationpriority: high
+ms.openlocfilehash: 51eb777dc7540db2d3afa01bcb3a89afacc15c11
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54143588"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59134021"
 ---
 # <a name="use-postman-with-the-microsoft-graph-api"></a>Use o Postman com a API do Microsoft Graph
 
@@ -22,7 +22,7 @@ Para obter detalhes sobre como fazer isso, siga as etapas deste artigo ou assist
 
 ## <a name="step-1---forking-the-microsoft-graph-postman-collection"></a>Etapa 1 - Bifurcação da coleção do Microsoft Graph Postman
 
-Para usar a coleção do Postman, bifurque-a no próprio espaço de trabalho do Postman. Faça isso no navegador da Web.
+Para usar a coleção Postman, você precisa importá-la para o seu espaço de trabalho Postman. Faça isso de um navegador da web.
 
 1. Vá para [Postman](https://www.postman.com/) e conecte-se.
 1. Vá para a coleção do [Postman](https://www.postman.com/microsoftgraph/workspace/microsoft-graph/collection/455214-085f7047-1bec-4570-9ed0-3a7253be148c/fork) rotulada Microsoft Graph.
@@ -81,12 +81,12 @@ Nesta etapa, você irá configurar as variáveis do ambiente usadas para recuper
 
 Como esta é a primeira vez que você está executando uma solicitação como um fluxo de autenticação delegado, é necessário obter um token de acesso.
 
-1. Passe o mouse sobre a pasta **Delegado**, clique nas reticências e selecione **Editar**
+1. Selecione a pasta **Delegada**.
 1. Clique na guia **Autorização**.
+1. Na seção **Configurar Novo Token**, clique na guia **Opções de Configuração**. Deixe todos os campos como pré-configurados, incluindo o **Conceder tipo** que está definido como `Authorization Code`.
 1. Role para baixo à direita e clique em **Obter novo token de acesso**.
 1. Entre com sua conta de administrador de locatários de desenvolvedor.
 1. Clique em **Prosseguir** e, em seguida, clique no botão **Usar token**.
-1. Na parte inferior direita da caixa de diálogo, clique em **Atualizar**.
 
 Agora você tem um token de acesso válido para usar para solicitações delegadas.
 
@@ -104,11 +104,11 @@ Agora você fez uma chamada do Microsoft Graph usando autenticação delegada co
 
 Como esta é a primeira vez que você está executando uma solicitação como um fluxo de autenticação de aplicativo, é necessário obter um token de acesso.
 
-1. Passe o mouse sobre a pasta **Aplicativo**, clique nas reticências e selecione **Editar**.
-1. Selecione a guia **Autorização**
+1. Selecione a pasta **Aplicativo**.
+1. Clique na guia **Autorização**.
+1. Na seção **Configurar Novo Token**, clique na guia **Opções de Configuração**. Deixe todos os campos como pré-configurados, incluindo o **Conceder tipo** que está definido como `Client Credentials`.
 1. Role para baixo no lado direito e clique em **Obter novo token de acesso**.
 1. Clique em **Prosseguir** e, em seguida, clique no botão **Usar token**.
-1. Na parte inferior direita da caixa de diálogo, clique em **Atualizar**.
 
 Agora você tem um token de acesso válido para usar para solicitações de aplicativo.
 

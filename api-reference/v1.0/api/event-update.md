@@ -2,15 +2,15 @@
 title: Atualizar evento
 description: Atualizar as propriedades do objeto evento.
 author: harini84
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 8ff929216fa15859744a686090c522d810d3a8c3
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 51be99350c3564f20fa4a7eae161551a0ce43817
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52054025"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59037947"
 ---
 # <a name="update-event"></a>Atualizar evento
 
@@ -18,7 +18,20 @@ Namespace: microsoft.graph
 
 Atualizar as propriedades do objeto [evento](../resources/event.md).
 
-Ao atualizar o fuso horário da hora de início ou de término de um evento, primeiro [encontre os fusos horários com suporte](outlookuser-supportedtimezones.md) para garantir que você tenha definido apenas fusos horários que tenham sido configurados para o servidor de caixas de correio do usuário. 
+### <a name="notes-for-updating-specific-properties"></a>Observações para atualizar as propriedades específicas
+Observe os seguintes comportamentos ou recomendações ao atualizar as propriedades correspondentes:
+
+- atualizações de propriedade e reuniões dos **participantes**
+  - Uma atualização de evento que inclui apenas a propriedade **participantes** no corpo da solicitação envia uma atualização de reunião apenas aos participantes que foram alterados.
+  - Uma atualização de evento que remove um participante especificado como membro de uma lista de distribuição envia uma atualização de reunião a todos os participantes.
+
+- propriedade do **corpo** e reuniões online
+
+  Antes de atualizar o corpo de um evento que foi configurado como uma reunião online, primeiro deve-se obter a propriedade **corpo**, aplicar as alterações apropriadas ao conteúdo e preservar o blob de reunião para reunião online. Remover inadvertidamente o blob de reunião do corpo desabilitará a reunião online. 
+
+- propriedades **término** e **início** e seus fusos horários
+  
+  Ao atualizar o fuso horário da hora de início ou de término de um evento, primeiro [encontre os fusos horários com suporte](outlookuser-supportedtimezones.md) para garantir que você tenha definido apenas fusos horários que tenham sido configurados para o servidor de caixas de correio do usuário. 
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -61,7 +74,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 |categories|Coleção de cadeias de caracteres|As categorias associadas ao evento.|
 | end|DateTimeTimeZone|A data, a hora e o fuso horário em que o evento termina.|
 |hideAttendees|Booliano|Quando definido como `true`, cada participante só se vê na solicitação de reunião e na lista de **Rastreamento** da reunião. O padrão é falso.|
-|importance|Cadeia de caracteres|A importância do evento. Os valores possíveis são: `low`, `normal`, `high`.|
+|importância|Cadeia de caracteres|A importância do evento. Os valores possíveis são: `low`, `normal`, `high`.|
 |isAllDay|Booliano|Defina como true se o evento durar o dia inteiro.|
 |isOnlineMeeting|Booliano| `True` se o evento tem informações sobre a reunião online, caso contrário, `false`. O padrão é false. Opcional.|
 |isReminderOn|Booliano|Defina como true se um alerta estiver definido para lembrar o usuário sobre o evento.|
@@ -133,10 +146,9 @@ Content-length: 285
 
 ---
 
-
 ##### <a name="response"></a>Resposta
 
-Veja a seguir um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser reduzido para facilitar a leitura.
 
 <!-- {
   "blockType": "response",

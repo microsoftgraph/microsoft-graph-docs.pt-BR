@@ -1,20 +1,22 @@
 ---
 title: Trabalhar com relatórios de uso do Microsoft 365 no Microsoft Graph
 description: Com o Microsoft Graph, você pode acessar recursos de relatórios de uso do Microsoft 365 para obter informações sobre como as pessoas em sua empresa estão usando os serviços Microsoft 365. Por exemplo, você pode identificar quem está usando muito um serviço e atingindo cotas, ou quem pode não precisar de uma licença do Microsoft 365.
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: reports
 author: sarahwxy
 doc_type: conceptualPageType
-ms.openlocfilehash: 6996c37c626722360d2577e030d95de3aa69fd2560a34b89b018224a71566006
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: c2d45815515cf894b0f37c2e4f658abfef48a913
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54126302"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59055875"
 ---
 # <a name="working-with-microsoft-365-usage-reports-in-microsoft-graph"></a>Trabalhar com relatórios de uso do Microsoft 365 no Microsoft Graph
 
-Com o Microsoft Graph, você pode acessar recursos de relatórios de uso do Microsoft 365 para obter informações sobre como as pessoas em sua empresa estão usando os serviços Microsoft 365. Por exemplo, você pode identificar quem está usando muito um serviço e atingindo cotas, ou quem pode não precisar de uma licença do Microsoft 365.
+Com o Microsoft Graph, você pode acessar recursos de relatórios de uso do Microsoft 365 para obter informações sobre como as pessoas em sua empresa estão usando os serviços do Microsoft 365. Por exemplo, você pode identificar quem está usando muito um serviço e atingindo cotas, ou quem pode não precisar de uma licença do Microsoft 365. 
+
+Para obter detalhes sobre as configurações que regem a identificação/des identificação de informações nos dados Microsoft 365 relatórios de uso, consulte [Relatórios do Microsoft 365 no centro de administração](/microsoft-365/admin/activity-reports/activity-reports).
 
 ## <a name="authorization"></a>Autorização
 

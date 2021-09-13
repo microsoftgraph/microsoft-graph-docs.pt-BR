@@ -2,15 +2,15 @@
 title: Obter notificações de alteração para mensagens nos canais e bate-papos do Teams usando o Microsoft Graph
 description: As notificações de alterações te habilitam a ouvir as alterações nas mensagens no canal ou no chat
 author: RamjotSingh
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: microsoft-teams
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 82474e8fc13cb1a9dc4d8cc582a9a7aea4f32198
-ms.sourcegitcommit: f99dc2b6c8b4cb6f9f74cd780dccc47a2bccfaa6
+ms.openlocfilehash: 40b6643e5d1b5008730212ff5239ea9de55f151c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2021
-ms.locfileid: "58667805"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59071704"
 ---
 # <a name="get-change-notifications-for-messages-in-teams-channels-and-chats-using-microsoft-graph"></a>Obter notificações de alteração para mensagens nos canais e bate-papos do Teams usando o Microsoft Graph
 
@@ -257,6 +257,39 @@ Content-Type: application/json
 }
 ```
 
+## <a name="subscribe-to-changes-at-the-user-level"></a>Assinar para receber alterações no nível do usuário
+
+Para rastrear mensagens em todos os chats de que um determinado usuário faz parte, você pode criar uma assinatura de notificação de alteração no nível do usuário. Para fazer isso, assine o `/users/{user-id}/chats/getAllMessages`. Esse recurso dá suporte [à inclusão de dados de recursos](webhooks-with-resource-data.md) na notificação nos modos *delegado* e *somente aplicativo*.
+
+As assinaturas de mensagens de chat no nível do usuário também suportam a pesquisa baseada em palavra-chave por meio do parâmetro de consulta `$search`.
+
+> **Observação:** no futuro, a Microsoft pode exigir que você ou seus clientes paguem taxas adicionais com base na quantidade de dados acessados por meio da API.
+
+### <a name="permissions"></a>Permissões
+
+|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              | Com suporte na versão |
+|:--------------------|:---------------------------------------------------------|:---------------------|
+|Delegado (conta corporativa ou de estudante) | Chat.Read, Chat.ReadWrite | beta |
+|Delegado (conta pessoal da Microsoft) | Sem suporte.    | Sem suporte. |
+|Aplicativo | Chat.Read.All, Chat.ReadWrite.All | beta |
+
+### <a name="example-subscribe-to-messages-across-all-chats-a-particular-user-is-part-of"></a>Exemplo: assine para receber mensagens em todos os chats de que um usuário específico faz parte
+
+```http
+POST https://graph.microsoft.com/beta/subscriptions
+Content-Type: application/json
+
+{
+  "changeType": "created,updated,deleted",
+  "notificationUrl": "https://webhook.azurewebsites.net/api/resourceNotifications",
+  "resource": "/users/{user-id}/chats/getAllMessages",
+  "includeResourceData": true,
+  "encryptionCertificate": "{base64encodedCertificate}",
+  "encryptionCertificateId": "{customId}",
+  "expirationDateTime": "2019-09-19T11:00:00.0000000Z",
+  "clientState": "{secretClientState}"
+}
+```
 ## <a name="notification-payloads"></a>Notificação de conteúdo
 
 Dependendo da sua assinatura, você pode receber a notificação com dados de recursos ou sem ele. Assinar com dados de recursos permite que você receba a carga da mensagem junto com a notificação, removendo a necessidade de ligar de volta e obter o conteúdo.

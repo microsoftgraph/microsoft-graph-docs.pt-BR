@@ -2,15 +2,15 @@
 title: Tipo de recurso appleVpnAlwaysOnConfiguration
 description: Configuração VPN Always On para MacOS e iOS IKEv2
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 38b574bd07e4797a14de2e6061cf45e638ca2b98
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 142b963b39501e06786284a265b5c7dd220537ce
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58787003"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59106340"
 ---
 # <a name="applevpnalwaysonconfiguration-resource-type"></a>Tipo de recurso appleVpnAlwaysOnConfiguration
 

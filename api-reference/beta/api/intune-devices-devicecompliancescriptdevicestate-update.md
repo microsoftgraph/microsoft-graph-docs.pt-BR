@@ -2,15 +2,15 @@
 title: Atualizar deviceComplianceScriptDeviceState
 description: Atualize as propriedades de um objeto deviceComplianceScriptDeviceState.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2234de0f6eeb9a5a80ccaba0f6922e888b24b6a2
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 242eb97a5e3083d1c4e37d61a52b22cf36eae755
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58822002"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59108167"
 ---
 # <a name="update-devicecompliancescriptdevicestate"></a>Atualizar deviceComplianceScriptDeviceState
 
@@ -27,8 +27,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Delegado (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -58,8 +58,8 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [deviceC
 |lastStateUpdateDateTime|DateTimeOffset|O último horário de quando o script de conformidade do dispositivo foi executado|
 |expectedStateUpdateDateTime|DateTimeOffset|O próximo horário de quando o script de conformidade do dispositivo deve ser executado|
 |lastSyncDateTime|DateTimeOffset|A última vez que a Extensão de Managment do Intune foi sincronizada com o Intune|
-|scriptOutput|Cadeia de caracteres|Saída do script de detecção|
-|scriptError|Cadeia de caracteres|Erro do script de detecção|
+|scriptOutput|Cadeia de Caracteres|Saída do script de detecção|
+|scriptError|Cadeia de Caracteres|Erro do script de detecção|
 
 
 

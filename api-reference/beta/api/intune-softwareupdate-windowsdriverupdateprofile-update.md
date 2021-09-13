@@ -2,15 +2,15 @@
 title: Atualizar windowsDriverUpdateProfile
 description: Atualize as propriedades de um objeto windowsDriverUpdateProfile.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: cb9f89e1c90e746bda4650bc29d779f2583cbf28
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 2dd5a6344a6c6ac09ce250fd436fb729f2e7c357
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58816307"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59138460"
 ---
 # <a name="update-windowsdriverupdateprofile"></a>Atualizar windowsDriverUpdateProfile
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -55,14 +55,14 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [o windo
 |:---|:---|:---|
 |id|Cadeia de caracteres|A ID da política do Intune.|
 |displayName|Cadeia de caracteres|O nome de exibição do perfil.|
-|descrição|Cadeia de caracteres|A descrição do perfil especificado pelo usuário.|
+|description|Cadeia de caracteres|A descrição do perfil especificado pelo usuário.|
 |approvalType|[driverUpdateProfileApprovalType](../resources/intune-softwareupdate-driverupdateprofileapprovaltype.md)|Tipo de aprovação de perfil de atualização de driver. Por exemplo, aprovação manual ou automática. Os valores possíveis são: `manual` e `automatic`.|
 |deviceReporting|Int32|Número de dispositivos que relatam esse perfil|
 |newUpdates|Int32|Número de novas atualizações de driver disponíveis para esse perfil.|
 |deploymentDeferralInDays|Int32|Configurações de adiamento de implantação em dias, aplicável somente quando ApprovalType é definido como aprovação automática.|
 |createdDateTime|DateTimeOffset|A data em que o perfil foi criado.|
 |lastModifiedDateTime|DateTimeOffset|A data em que o perfil foi modificado pela última vez.|
-|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de Marcas de Escopo para essa entidade de Atualização de Driver.|
+|roleScopeTagIds|String collection|Lista de Marcas de Escopo para essa entidade de Atualização de Driver.|
 
 
 

@@ -2,15 +2,15 @@
 title: Tipo de recurso macOSLaunchItem
 description: Representa um aplicativo na lista de itens de início do macOS
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3450832825bf6c6696b0395879b8c3a79e4bec3c
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: c000ac1bb9240eaad505a6d50d34b58cba4dc13a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58789640"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59146678"
 ---
 # <a name="macoslaunchitem-resource-type"></a>Tipo de recurso macOSLaunchItem
 

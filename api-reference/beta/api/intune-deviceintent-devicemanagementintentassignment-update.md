@@ -2,15 +2,15 @@
 title: Atualizar deviceManagementIntentAssignment
 description: Atualize as propriedades de um objeto deviceManagementIntentAssignment.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f32e4e5ea1dc5a5eb1063cfa56a6c0ed9708e13e
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: b0b7016daf8806fff482c492f62cc7daa142d337
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58793663"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59097359"
 ---
 # <a name="update-devicemanagementintentassignment"></a>Atualizar deviceManagementIntentAssignment
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {

@@ -1,16 +1,16 @@
 ---
 title: tipo de recurso calendar
 description: Um calendário que é um contêiner para eventos. Pode ser um calendário para um usuário ou o calendário padrão de um grupo do Microsoft 365.
-localization_priority: Priority
+ms.localizationpriority: high
 author: harini84
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: a412e6f8a8a8faa78cbe8f09f17635742bbd1e2c60a470cf1e5f9e544d424717
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 17eb6e419a4f7a0944ee1bcfbfe5d1b2988bf671
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54130391"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59129982"
 ---
 # <a name="calendar-resource-type"></a>tipo de recurso calendar
 
@@ -53,7 +53,7 @@ Representa um contêiner para recursos de [evento](event.md). Pode ser um calend
 |changeKey|String|Identifica a versão do objeto calendar. Toda vez que o calendário é alterado, a changeKey também muda. Isso permite que o Exchange aplique as alterações na versão correta do objeto. Somente leitura.|
 |color|calendarColor|Especifica o tema de cores para distinguir o calendário de outros calendários em uma interface do usuário. Os valores das propriedades são: `auto`, `lightBlue`, `lightGreen`, `lightOrange`, `lightGray`, `lightYellow`, `lightTeal`, `lightPink`, `lightBrown`, `lightRed`, `maxColor`|
 |defaultOnlineMeetingProvider|onlineMeetingProviderType|O provedor de reunião online padrão para reuniões enviadas deste calendário. Os valores possíveis são: `unknown`, `skypeForBusiness`, `skypeForConsumer`, `teamsForBusiness`.|
-|hexColor |String |A cor do calendário, expressa em um código de cor hexadecimal de três valores hexadecimais, cada um variando de 00 a FF e representando os componentes vermelho, verde ou azul da cor no espaço de cores RGB. Se o usuário nunca tiver definido explicitamente uma cor para o calendário, esta propriedade estará vazia. Somente leitura.|
+|hexColor |String |A cor do calendário, expressa em um código de cor hexadecimal de três valores hexadecimais, cada um variando de 00 a FF e representando os componentes vermelho, verde ou azul da cor no espaço de cores RGB. Se o usuário nunca definiu explicitamente uma cor para o calendário, esta propriedade estará vazia. Somente leitura.|
 |id|String|O identificador exclusivo do calendário. Somente leitura.|
 |isDefaultCalendar|Booliano|`true` se este for o calendário padrão onde novos eventos são criados por padrão, `false` caso contrário.|
 |isRemovable|Booliano| Indica se o calendário deste usuário pode ser excluído da caixa de correio do usuário.|

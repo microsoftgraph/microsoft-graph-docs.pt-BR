@@ -2,18 +2,18 @@
 title: Resolver erros de autorização do Microsoft Graph
 description: Descubra como solucionar os erros de autorização do Microsoft Graph 401 e 403.
 author: davidmu1
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: applications
-ms.openlocfilehash: 98afbd06b1b04f2a0e046bf85dbcbecd49eedac760b702178a542f2511d9f0c1
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: f3b6c4eee7bc99e755af2d071de7f1c4a1b075a3
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54180359"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59083912"
 ---
 # <a name="resolve-microsoft-graph-authorization-errors"></a>Resolver erros de autorização do Microsoft Graph
 
-Erros de autorização podem ocorrer como resultado de vários problemas diferentes, a maioria dos quais gera um erro 403 (com algumas exceções). Por exemplo, todos os itens a seguir podem levar a erros de autorização:
+Erros de autorização podem ocorrer como resultado de vários problemas diferentes, a maioria dos quais gera um erro 403 (com algumas exceções). Por exemplo, as seguintes situações podem levar a erros de autorização:
 
 * [Fluxos de aquisição de token de acesso](/azure/active-directory/develop/active-directory-authentication-scenarios) incorretos
 * [Escopos de permissão](/azure/active-directory/develop/active-directory-v2-scopes) mal configurados

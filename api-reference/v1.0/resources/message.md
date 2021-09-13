@@ -2,15 +2,15 @@
 title: tipo de recurso de mensagem
 description: Uma mensagem em uma mailFolder.
 author: abheek-das
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 172156bf63c045370e58c63a8933bcf3575a522408868d658a01683a67e1c0e7
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 1bb567cac7a49f31973b2bc42aa506863064cba2
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54237639"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59067119"
 ---
 # <a name="message-resource-type"></a>tipo de recurso de mensagem
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 Uma mensagem em uma mailFolder.
 
-O número total máximo de destinatários incluídos nas propriedades **toRecipients**, **ccRecipients** e **bccRecipients** para uma única mensagem de email enviada de uma caixa de correio do Exchange A é de 500. Para obter mais informações, veja [limites de envio](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits).
+O número máximo de destinatários incluídos nas propriedades **toRecipients**, **ccRecipients** e **bccRecipients** de apenas uma mensagem de e-mail enviada de uma caixa de correio do Exchange Online é 500. Para obter mais informações, consulte [limites de envio](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits).
 
 Esse recurso permite:
 
@@ -71,29 +71,29 @@ Esse recurso permite:
 |changeKey|String|A versão da mensagem.|
 |conversationId|String|A ID da conversa à qual o email pertence.|
 |conversationIndex|Edm.Binary|Indica a posição da mensagem dentro da conversa.|
-|createdDateTime|DateTimeOffset|A data e a hora em que a mensagem foi criada. <br><br> As informações de data e hora usam o formato ISO 8601 e estão sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`.|
+|createdDateTime|DateTimeOffset|A data e a hora em que a mensagem foi criada. <br><br> As informações de data e hora usam o formato ISO 8601 e estão sempre no horário UTC. Por exemplo, meia-noite UTC em 1º de janeiro de 2014 é `2014-01-01T00:00:00Z`.|
 |flag|[followupFlag](followupflag.md)|O valor do sinalizador que indica o status, a data de início, a data de conclusão ou a data de finalização da mensagem.|
 |from|[recipient](recipient.md)|O proprietário da caixa de correio da qual a mensagem foi enviada. Na maioria dos casos, esse valor é o mesmo que o da propriedade **remetente**, exceto para cenários de compartilhamento ou delegação. O valor deve corresponder à caixa de correio real que foi usada. Saiba mais sobre [como definir as propriedades from e sender](/graph/outlook-create-send-messages#setting-the-from-and-sender-properties) de uma mensagem.|
 |hasAttachments|Booliano|Indica se a mensagem tem anexos. Esta propriedade não inclui anexos em linha, portanto, se uma mensagem contém somente anexos em linha, essa propriedade é falsa. Para verificar a existência de anexos em linha, analise a propriedade **body** para procurar um atributo `src`, como `<IMG src="cid:image001.jpg@01D26CD8.6C05F070">`.|
 |id|String|Identificador exclusivo da mensagem (observe que esse valor pode mudar se uma mensagem é movida ou alterada)|
 |importance|importância| A importância da mensagem. Os valores possíveis são `low`, `normal` e `high`.|
-|inferenceClassification | inferenceClassificationType | A classificação da mensagem para o usuário, com base na relevância ou importância deduzida, ou em uma substituição explícita. Os valores possíveis são: `focused` ou `other`. |
-|internetMessageHeaders | Coleção [internetMessageHeader](internetmessageheader.md) | Uma coleção de cabeçalhos de mensagens definidos por [RFC5322](https://www.ietf.org/rfc/rfc5322.txt). O conjunto inclui cabeçalhos de mensagens que indicam o caminho de rede adotado por uma mensagem do remetente para o destinatário. Também pode conter cabeçalhos de mensagens personalizados com dados do aplicativo para a mensagem. <br><br> Retornado apenas mediante aplicação da opção de consulta `$select`. Somente leitura. |
+|inferenceClassification | inferenceClassificationType | A classificação da mensagem para o usuário, com base na relevância ou importância inferida, ou em uma substituição explícita. Os valores possíveis são: `focused` ou `other`. |
+|internetMessageHeaders | Coleção [internetMessageHeader](internetmessageheader.md) | Uma coleção de cabeçalhos de mensagens definidos por [RFC5322](https://www.ietf.org/rfc/rfc5322.txt). O conjunto inclui cabeçalhos de mensagens que indicam o caminho de rede adotado por uma mensagem do remetente para o destinatário. Também pode conter cabeçalhos de mensagens personalizados com dados do aplicativo para a mensagem. <br><br> Retornado apenas na aplicação de uma `$select` opção de consulta. Somente leitura. |
 |internetMessageId |String |A ID da mensagem no formato especificado por [RFC2822](https://www.ietf.org/rfc/rfc2822.txt). |
 |isDeliveryReceiptRequested|Boolean|Indica se uma confirmação de leitura foi solicitada para a mensagem.|
 |isDraft|Boolean|Indica se a mensagem é um rascunho. Uma mensagem é um rascunho quando ela ainda não foi enviada.|
 |isRead|Boolean|Indica se a mensagem foi lida.|
 |isReadReceiptRequested|Boolean|Indica se uma confirmação de leitura foi solicitada para a mensagem.|
-|lastModifiedDateTime|DateTimeOffset|A data e a hora em que a mensagem foi alterada pela última vez. <br><br> As informações de data e hora usam o formato ISO 8601 e estão sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`.|
+|lastModifiedDateTime|DateTimeOffset|A data e a hora em que a mensagem foi alterada pela última vez. <br><br> As informações de data e hora usam o formato ISO 8601 e estão sempre no horário UTC. Por exemplo, meia-noite UTC em 1º de janeiro de 2014 é `2014-01-01T00:00:00Z`.|
 |parentFolderId|String|O identificador exclusivo para a mailFolder pai da mensagem.|
-|receivedDateTime|DateTimeOffset|A data e a hora em que a mensagem foi recebida. <br><br> As informações de data e hora usam o formato ISO 8601 e estão sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`.|
+|receivedDateTime|DateTimeOffset|A data e a hora em que a mensagem foi recebida. <br><br> As informações de data e hora usam o formato ISO 8601 e estão sempre no horário UTC. Por exemplo, meia-noite UTC em 1º de janeiro de 2014 é `2014-01-01T00:00:00Z`.|
 |replyTo|Coleção [recipient](recipient.md)|Os endereços de email a serem usados ao responder.|
 |sender|[recipient](recipient.md)|A conta que é realmente usada para gerar a mensagem. Na maioria dos casos, esse valor é o mesmo da propriedade **from**. Você pode definir essa propriedade como um valor diferente ao enviar uma mensagem de uma [caixa de correio compartilhada](/exchange/collaboration/shared-mailboxes/shared-mailboxes), [ou ao enviar uma mensagem como um delegado](/graph/outlook-share-delegate-calendar.md). De qualquer forma, o valor deve corresponder à caixa de correio real que foi usada. Saiba mais sobre [como definir as propriedades from e sender](/graph/outlook-create-send-messages#setting-the-from-and-sender-properties) de uma mensagem.|
-|sentDateTime|DateTimeOffset|A data e a hora em que a mensagem foi enviada. <br><br> As informações de data e hora usam o formato ISO 8601 e estão sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`.|
+|sentDateTime|DateTimeOffset|A data e a hora em que a mensagem foi enviada. <br><br> As informações de data e hora usam o formato ISO 8601 e estão sempre no horário UTC. Por exemplo, meia-noite UTC em 1º de janeiro de 2014 é `2014-01-01T00:00:00Z`.|
 |assunto|String|O assunto da mensagem.|
 |toRecipients|Coleção [recipient](recipient.md)|Os destinatários Para: da mensagem.|
 |uniqueBody|[itemBody](itembody.md)|A parte do corpo da mensagem que é exclusiva para a mensagem atual. **uniqueBody** não é fornecido por padrão, mas pode ser recuperado por uma determinada mensagem pelo uso da consulta `?$select=uniqueBody`. Pode estar no formato HTML ou no formato de texto.|
-|webLink|String|O URL para abrir a mensagem no Outlook na Web.<br><br>Você pode acrescentar um argumento ispopout ao final da URL para alterar como a mensagem é exibida. Se ispopout não houver presente ou estiver definido como 1, a mensagem será mostrada em uma janela pop-up. Se a entrada for definida como 0, o navegador mostrará a mensagem no painel de revisão do Outlook na Web.<br><br>A mensagem será aberta no navegador se você estiver conectado à sua caixa de correio através do Outlook na Web. Você será solicitado a fazer o login, se ainda não estiver conectado com o navegador.<br><br>Este URL não pode ser acessado a partir de um iFrame.|
+|webLink|String|O URL para abrir a mensagem no Outlook na Web.<br><br>Você pode anexar um argumento ispopout ao final do URL para alterar a forma como a mensagem é exibida. Se ispopout não estiver presente ou se estiver definido como 1, a mensagem será exibida em uma janela popout. Se ispopout estiver definido como 0, o navegador mostrará a mensagem no painel de revisão do Outlook na Web.<br><br>A mensagem será aberta no navegador se você estiver conectado à sua caixa de correio através do Outlook na Web. Você será solicitado a fazer o login, se ainda não estiver conectado com o navegador.<br><br>Este URL não pode ser acessado a partir de um iFrame.|
 
 
 ## <a name="relationships"></a>Relações

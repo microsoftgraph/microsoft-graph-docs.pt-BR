@@ -2,15 +2,15 @@
 title: Tipo denum win32LobAppRegistryDetectionType
 description: Contém todo o tipo de detecção de dados do Registro com suporte.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: eef9aa85790b211024beb5fa9bcc7be2e9a5ad24
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 6871c15c6a6dd0ce429dd4f78e25727e6928ccc3
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58784517"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59120441"
 ---
 # <a name="win32lobappregistrydetectiontype-enum-type"></a>Tipo denum win32LobAppRegistryDetectionType
 

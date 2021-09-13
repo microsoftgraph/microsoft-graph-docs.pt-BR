@@ -1,21 +1,21 @@
 ---
 title: Criar publicações
-description: Criar um novo objeto publications.
-localization_priority: Normal
+description: Crie um novo objeto publications.
+ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: f01b936250b57307713b8156a415c90ab7ce6c42
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 1b252758a35bec30f19480d37b2ab3d41857c857
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48976258"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59138292"
 ---
-# <a name="create-itempublication"></a>Criar a multipúblico
+# <a name="create-itempublication"></a>Criar itemPublication
 Namespace: microsoft.graph
 
-Criar um novo objeto [Dopublication](../resources/itempublication.md) no [perfil](../resources/profile.md)de um usuário.
+Criar um novo [objeto itemPublication](../resources/itempublication.md) no perfil de um [usuário.](../resources/profile.md)
 
 ## <a name="permissions"></a>Permissões
 
@@ -23,8 +23,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)                                      |
 |:---------------------------------------|:---------------------------------------------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | User. ReadWrite, User. ReadWrite. All |
-| Delegado (conta pessoal da Microsoft) | User. ReadWrite, User. ReadWrite. All |
+| Delegado (conta corporativa ou de estudante)     | User.ReadWrite, User.ReadWrite.All |
+| Delegado (conta pessoal da Microsoft) | User.ReadWrite, User.ReadWrite.All |
 | Aplicativo                            | User.ReadWrite.All                            |
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -44,30 +44,30 @@ POST /users/{id | userPrincipalName}/profile/publications
 |Content-Type|application/json. Obrigatório.|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça uma representação JSON do objeto [Dopublication](../resources/itempublication.md) .
+No corpo da solicitação, fornece uma representação JSON do [objeto itemPublication.](../resources/itempublication.md)
 
-A tabela a seguir mostra as propriedades que são possíveis de definir ao criar um novo objeto de [multipúblico](../resources/itempublication.md) no [perfil](../resources/profile.md)de um usuário.
+A tabela a seguir mostra as propriedades que são possíveis de definir ao criar um novo [objeto itemPublication](../resources/itempublication.md) no perfil de um [usuário](../resources/profile.md).
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|allowedAudiences|String|As audiências que podem ver os valores contidos na entidade. Herdado de [MyFace](../resources/itemfacet.md). Os valores possíveis são: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
-|createdBy|[identitySet](../resources/identityset.md)|Fornece o identificador do usuário e/ou aplicativo que criou a entidade. Herdado de [MyFace](../resources/itemfacet.md).|
-|createdDateTime|DateTimeOffset|Fornece o dateTimeOffset para quando a entidade foi criada. Herdado de [MyFace](../resources/itemfacet.md).|
-|description    |String      |Descrição da publicação.                   |
-|displayName    |String      |Título da publicação.                         |
-|id|String|Identificador usado para o endereçamento individual da entidade. Herdado da [entidade](../resources/entity.md)|
-|fracassa|[inferenceData](../resources/inferencedata.md)|Contém detalhes de inferência se a entidade for inferida pelo aplicativo de criação ou modificação. Herdado de [MyFace](../resources/itemfacet.md).|
-|lastModifiedBy|[identitySet](../resources/identityset.md)|Fornece o identificador do usuário e/ou aplicativo que modificou a entidade pela última vez. Herdado de [MyFace](../resources/itemfacet.md).|
-|lastModifiedDateTime|DateTimeOffset|Fornece o dateTimeOffset para quando a entidade foi criada. Herdado de [MyFace](../resources/itemfacet.md).|
+|allowedAudiences|Cadeia de Caracteres|As audiências que são capazes de ver os valores contidos na entidade. Herdado [do itemFacet](../resources/itemfacet.md). Os valores possíveis são: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
+|createdBy|[identitySet](../resources/identityset.md)|Fornece o identificador do usuário e/ou aplicativo que criou a entidade. Herdado [do itemFacet](../resources/itemfacet.md).|
+|createdDateTime|DateTimeOffset|Fornece a dataTimeOffset para quando a entidade foi criada. Herdado [do itemFacet](../resources/itemfacet.md).|
+|description    |Cadeia de caracteres      |Descrição da publicação.                   |
+|displayName    |Cadeia de caracteres      |Título da publicação.                         |
+|id|Cadeia de caracteres|Identificador usado para endereçamento individual da entidade. Herdado da [entidade](../resources/entity.md)|
+|inferência|[inferenceData](../resources/inferencedata.md)|Contém detalhes de inferência se a entidade for inferida pelo aplicativo de criação ou modificação. Herdado [do itemFacet](../resources/itemfacet.md).|
+|lastModifiedBy|[identitySet](../resources/identityset.md)|Fornece o identificador do usuário e/ou aplicativo que modificou a entidade pela última vez. Herdado [do itemFacet](../resources/itemfacet.md).|
+|lastModifiedDateTime|DateTimeOffset|Fornece a dataTimeOffset para quando a entidade foi criada. Herdado [do itemFacet](../resources/itemfacet.md).|
 |publishedDate  |Data        |A data em que a publicação foi publicada.      |
-|publicador      |String      |Publicação ou editor para a publicação.     |
-|source|[personDataSource](../resources/persondatasource.md)|Onde os valores são originados se forem sincronizados a partir de outro serviço. Herdado de [MyFace](../resources/itemfacet.md).|
-|thumbnailUrl   |String      |URL que faz referência a uma miniatura da publicação.   |
-|webUrl         |String      |URL que faz referência à publicação.                  |
+|publicador      |String      |Publicação ou Publisher para a publicação.     |
+|source|[personDataSource](../resources/persondatasource.md)|Onde os valores se originaram se sincronizados de outro serviço. Herdado [do itemFacet](../resources/itemfacet.md).|
+|thumbnailUrl   |Cadeia de Caracteres      |URL fazendo referência a uma miniatura da publicação.   |
+|webUrl         |String      |URL fazendo referência à publicação.                  |
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `201 Created` código de resposta e um objeto [dopublication](../resources/itempublication.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código `201 Created` de resposta e um objeto [itemPublication](../resources/itempublication.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

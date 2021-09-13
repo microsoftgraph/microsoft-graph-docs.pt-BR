@@ -2,14 +2,14 @@
 title: Como proteger os dados do aplicativo da sua empresa com Microsoft Intune - API do Microsoft Graph
 description: Lista a API Graph microsoft para pontos de extremidade do Intune (REST) que gerenciam aplicativos e suas políticas para uma organização de locatários.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
-ms.openlocfilehash: 91855eb83eee7a1c541ec5cf3ab82f3946a13d44
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: f88f4f3c6c4e50008bc58dae5c4aef9bcdb45b19
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58790189"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59136632"
 ---
 # <a name="how-to-protect-your-company-app-data-with-microsoft-intune"></a>Como proteger dados de aplicativos corporativos com o Microsoft Intune
 

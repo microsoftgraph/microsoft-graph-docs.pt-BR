@@ -2,15 +2,15 @@
 title: tipo de recurso numberRange
 description: Definição de Intervalo de Números.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 7a28a032b839723967e6479f90486a48309cc2c5
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: df0eb3ab317e886fe4719998b82b177f74086b50
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58820426"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59086733"
 ---
 # <a name="numberrange-resource-type"></a>tipo de recurso numberRange
 

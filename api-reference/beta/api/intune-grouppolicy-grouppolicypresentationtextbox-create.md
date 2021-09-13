@@ -2,15 +2,15 @@
 title: Criar groupPolicyPresentationTextBox
 description: Crie um novo objeto groupPolicyPresentationTextBox.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c00314121090ea3cd292c3bb0c63d3334d8c5dec
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 6396570e07dbfcd827340f9acd526c0b13839b28
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58799329"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59112187"
 ---
 # <a name="create-grouppolicypresentationtextbox"></a>Criar groupPolicyPresentationTextBox
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -53,11 +53,11 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar o groupP
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|rótulo|Cadeia de caracteres|Rótulo de texto localizado para qualquer entidade de apresentação. O valor padrão é vazio. Herdado [de groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
+|rótulo|Cadeia de Caracteres|Rótulo de texto localizado para qualquer entidade de apresentação. O valor padrão é vazio. Herdado [de groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
 |id|Cadeia de caracteres|Chave da entidade. Herdado [de groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
 |lastModifiedDateTime|DateTimeOffset|A data e a hora em que a entidade foi modificada pela última vez. Herdado [de groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
-|defaultValue|Cadeia de caracteres|Cadeia de caracteres padrão localizada exibida na caixa de texto. O valor padrão é vazio.|
-|obrigatório|Booliano|Requisito para inserir um valor na caixa de texto. O valor padrão é falso.|
+|defaultValue|Cadeia de Caracteres|Cadeia de caracteres padrão localizada exibida na caixa de texto. O valor padrão é vazio.|
+|obrigatório|Boleano|Requisito para inserir um valor na caixa de texto. O valor padrão é falso.|
 |maxLength|Int64|Um inteiro não assinado que especifica o número máximo de caracteres de texto. O valor padrão é 1023.|
 
 

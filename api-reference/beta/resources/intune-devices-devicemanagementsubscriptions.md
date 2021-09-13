@@ -2,15 +2,15 @@
 title: Tipo de número deviceManagementSubscriptions
 description: Assinaturas de gerenciamento de dispositivo móvel de locatário.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: c84722ddf190ded950c9b4e9e419aaa0c60d606f
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 5950a03fbaad073eb0df4a0d9fb22138d21fc5a9
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58805714"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59125936"
 ---
 # <a name="devicemanagementsubscriptions-enum-type"></a>Tipo de número deviceManagementSubscriptions
 

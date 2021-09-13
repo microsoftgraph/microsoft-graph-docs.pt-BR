@@ -2,16 +2,16 @@
 author: JeremyKelley
 ms.date: 07/07/2020
 title: Pesquisar arquivos
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: sharepoint
 description: Pesquise a hierarquia de itens para itens que corresponda a uma consulta.
 doc_type: apiPageType
-ms.openlocfilehash: 8cf0095d504f88fbce75aa65c7d733ccf04392d0
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: 88b75446b0d88e05db6c4ba9d586067d164207c5
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50240206"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59053648"
 ---
 # <a name="search-for-a-driveitems-within-a-drive"></a>Pesquisar um DriveItem em uma unidade
 
@@ -29,6 +29,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Delegado (conta corporativa ou de estudante) | Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All    |
 |Delegado (conta pessoal da Microsoft) | Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All    |
 |Aplicativo | Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All |
+
+>**Observação:** esse método não oferece suporte à permissão de aplicativo Sites.Selected.
 
 ## <a name="http-request"></a>Solicitação HTTP
 

@@ -2,15 +2,15 @@
 title: Atualizar onlineMeeting
 description: Atualize as propriedades de uma reunião online.
 author: mkhribech
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 0912e44d402b77fb09266376e8430c76d10265e1
-ms.sourcegitcommit: ac0e544853ce8476d76dc321e0d34e4b668b7651
+ms.openlocfilehash: cda8c7fb4fb6fc8902d53a96d4c2cad443dd9604
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/14/2021
-ms.locfileid: "58350993"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59085480"
 ---
 # <a name="update-onlinemeeting"></a>Atualizar onlineMeeting
 
@@ -70,13 +70,13 @@ A última coluna indica se a atualização dessa propriedade terá efeito para u
 | endDateTime                 | DateTime                                                   | A hora de término da reunião em UTC.                                                        | Não                           |
 | assunto                     | Cadeia de caracteres                                                     | O assunto da reunião online.                                                  | Não                           |
 | participants                | [meetingParticipants](../resources/meetingparticipants.md) | Os participantes associados à reunião online. Somente participantes podem ser atualizados. | Não                           |
-| isEntryExitAnnounced        | Boolean                                                    | Se os chamadores ingressarão ou sairão.                              | Sim                          |
+| isEntryExitAnnounced        | Boleano                                                    | Se os chamadores ingressarão ou sairão.                              | Sim                          |
 | lobbyBypassSettings         | [lobbyBypassSettings](../resources/lobbyBypassSettings.md) | Especifica quais participantes podem ignorar o lobby da reunião.                          | Sim                          |
 | allowedPresenters           | onlineMeetingPresenters                                    | Especifica quem pode ser um apresentador em uma reunião.                                      | Sim, exceto quando o valor é `roleIsPresenter` |
-| allowAttendeeToEnableCamera | Boolean                                                    | Indica se os participantes podem ativar a câmera.                               | Sim                          |
-| allowAttendeeToEnableMic    | Boolean                                                    | Indica se os participantes podem ativar o microfone.                           | Sim                          |
+| allowAttendeeToEnableCamera | Boleano                                                    | Indica se os participantes podem ativar a câmera.                               | Sim                          |
+| allowAttendeeToEnableMic    | Boleano                                                    | Indica se os participantes podem ativar o microfone.                           | Sim                          |
 | allowMeetingChat            | meetingChatMode                                            | Especifica o modo de chat de reunião.                                                 | Sim                          |
-| allowTeamworkReactions      | Boolean                                                    | Indica se Teams reações estão habilitadas para a reunião.                      | Sim                          |
+| allowTeamworkReactions      | Boleano                                                    | Indica se Teams reações estão habilitadas para a reunião.                      | Sim                          |
 
 > [!NOTE]
 > Para ver a lista de valores possíveis **para allowedPresenters** e **allowMeetingChat,** consulte [onlineMeeting](../resources/onlinemeeting.md).

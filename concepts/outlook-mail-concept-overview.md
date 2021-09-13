@@ -2,15 +2,15 @@
 title: Visão geral da API de email do Outlook
 description: O Outlook é um hub de comunicação de mensagens Microsoft 365. Ele também permite que você gerencie contatos, agende reuniões, encontre informações sobre usuários em uma organização,
 author: angelgolfer-ms
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: outlook
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 8a83a85716dead4a166d9fe52c6d8dc1102d5f949f6c2bd85fd4ea26310f051c
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 93563ae4b2e8057bead0abe5fe1a76a51db29285
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54184373"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59071865"
 ---
 # <a name="outlook-mail-api-overview"></a>Visão geral da API de email do Outlook
 
@@ -34,11 +34,11 @@ Clientes gostam de como o Outlook os ajuda a se manterem organizados. O Microsof
 
 - As categorias do Outlook são diferenciadas por nome e cor. As categorias permitem aos clientes classificarem as mensagens para aumentar a organização e a descoberta. Os aplicativos podem acessar e [definir a lista de categorias mestra do usuário](/graph/api/outlookuser-post-mastercategories). Além disso, essa lista é compartilhada entre mensagens do Outlook, assim como entre eventos, contatos, tarefas e postagens em grupo e ainda permitem cenários criativos para os desenvolvedores de aplicativo. Por exemplo, um provedor de treinamento online pode codificar por cor os emails, os eventos do curso e as atribuições de acompanhamento de cada curso que o usuário esteja inscrito.
 
-- Além disso, os usuários do aplicativo podem alterar a prioridade de uma mensagem (evento ou tarefas) ou sinalizar uma mensagem para acompanhamento. (No momento, a sinalização está [no modo de visualização](versioning-and-support.md#beta-version) no Microsoft Graph).
+- Além disso, os usuários do aplicativo podem alterar a prioridade de uma mensagem (evento ou tarefa) ou sinalizar uma mensagem para acompanhamento. (No momento, a sinalização está [em versão prévia](versioning-and-support.md#beta-version) no Microsoft Graph.)
 
 - A API de regras transporta a organização de mensagens para um nível superior. Os aplicativos podem definir as [regras de Caixa de Entrada](/graph/api/resources/messagerule) para tratar imediatamente as mensagens que chegam e reduzir emails secundários. Por exemplo, um aplicativo pode mover automaticamente as mensagens para outra pasta se as linhas do assunto contiverem determinadas palavras-chave e atribuir categorias e prioridades para facilitar o acompanhamento posterior.
 
-- Muitos clientes usam clientes de email que enviam e recebem mensagens no formato MIME. Embora o Outlook não salve mensagens no formato MIME, os aplicativos podem [obter o corpo de uma mensagem do Outlook no formato MIME](outlook-get-mime-message.md), [enviar mensagens do Outlook no formato MIME](outlook-send-mime-message.md), anexar assinaturas digitais S/MIME e criptografar o conteúdo da mensagem em S/MIME.
+- Muitos usuários usam clientes de email que enviam e recebem mensagens no formato MIME. Embora o Outlook não salve mensagens no formato MIME, os aplicativos podem [obter o corpo de uma mensagem do Outlook no formato MIME](outlook-get-mime-message.md), [enviar mensagens do Outlook no formato MIME](outlook-send-mime-message.md), anexar assinaturas digitais S/MIME e criptografar o conteúdo da mensagem em S/MIME.
 
 ### <a name="write-smarter-apps-that-leverage-intelligence"></a>Escrever aplicativos mais inteligentes que potencializam a inteligência
 

@@ -2,15 +2,15 @@
 title: Obter androidDeviceOwnerDerivedCredentialAuthenticationConfiguration
 description: Leia propriedades e relações do objeto androidDeviceOwnerDerivedCredentialAuthenticationConfiguration.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b9d2b921336fa6346ce88d72d4a7a0d725453319
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 8e88e5b7bd7e6d840e4c4ad0b7c94e8327140ccf
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58787185"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59108608"
 ---
 # <a name="get-androiddeviceownerderivedcredentialauthenticationconfiguration"></a>Obter androidDeviceOwnerDerivedCredentialAuthenticationConfiguration
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
+|Aplicativo|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {

@@ -1,16 +1,16 @@
 ---
 title: Criar extensão aberta
 description: Crie uma extensão aberta (objeto openTypeExtension) e adicione propriedades personalizadas em uma instância nova ou existente de um recurso.
-localization_priority: Priority
+ms.localizationpriority: high
 author: dkershaw10
 ms.prod: extensions
 doc_type: apiPageType
-ms.openlocfilehash: f91a549e13b956d9c0d1fa4d8ca8765e7b7bd89a
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 38fdd793c60784d89af6a8a4ad83d311f91d52da
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52052219"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59079341"
 ---
 # <a name="create-open-extension"></a>Criar extensão aberta
 
@@ -57,7 +57,7 @@ POST /users/{id|userPrincipalName}/todo/lists/{id}/tasks
 POST /users/{id|userPrincipalName}/todo/lists
 ```
 
->**Observação:** Esta sintaxe acima mostra algumas maneiras comuns de criar as instâncias de recursos com suporte. Todas as outras sintaxes POST que permitem criar essas instâncias de recursos dão suporte à criação de extensões abertas nelas de maneira semelhante.
+>**Observação:** essa sintaxe apresenta algumas maneiras comuns de criar as instâncias de recursos com suporte. Todas as outras sintaxes POST que permitem criar essas instâncias de recurso oferecem suporte à criação de extensões abertas nos mesmos de maneira semelhante.
 
 Confira a seção [Solicitar corpo](#request-body) sobre a inclusão de propriedades da nova instância do recurso _e a extensão_ no corpo da solicitação.
 

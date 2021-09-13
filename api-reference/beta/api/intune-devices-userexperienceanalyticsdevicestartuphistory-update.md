@@ -2,15 +2,15 @@
 title: Atualizar userExperienceAnalyticsDeviceStartupHistory
 description: Atualize as propriedades de um objeto userExperienceAnalyticsDeviceStartupHistory.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c8896cc45b71bdb682a534c22eb6276568142e0b
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 63be7938b6e604d5213fa2f8d05daf94c0c5c9e4
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58797048"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59097212"
 ---
 # <a name="update-userexperienceanalyticsdevicestartuphistory"></a>Atualizar userExperienceAnalyticsDeviceStartupHistory
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementManagedDevices.ReadWrite.All|
+|Aplicativo|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -65,11 +65,11 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [o userE
 |responsiveDesktopTimeInMs|Int32|A análise da experiência do usuário responde ao tempo da área de trabalho em milissegundos.|
 |totalLoginTimeInMs|Int32|O tempo total de logon do dispositivo de análise de experiência do usuário em milissegundos.|
 |isFirstLogin|Boleano|O primeiro logon do dispositivo de análise de experiência do usuário.|
-|isFeatureUpdate|Booliano|O registro de inicialização do dispositivo de análise de experiência do usuário é uma atualização de recurso.|
+|isFeatureUpdate|Boleano|O registro de inicialização do dispositivo de análise de experiência do usuário é uma atualização de recurso.|
 |operatingSystemVersion|String|A versão do sistema operacional do registro de inicialização do dispositivo de análise de experiência do usuário.|
 |restartCategory|[userExperienceAnalyticsOperatingSystemRestartCategory](../resources/intune-devices-userexperienceanalyticsoperatingsystemrestartcategory.md)|Categoria de reinicialização do sistema operacional. Os valores possíveis são: `unknown`, `restartWithUpdate`, `restartWithoutUpdate`, `blueScreen`, `shutdownWithUpdate`, `shutdownWithoutUpdate`, `longPowerButtonPress`, `bootError`, `update`.|
-|restartStopCode|Cadeia de caracteres|Código de parada de reinicialização do sistema operacional. Isso mostra o código de verificação de bugs que pode ser usado para procurar o motivo da tela azul.|
-|restartFaultBucket|Cadeia de caracteres|Bucket de falha de reinicialização do sistema operacional. O bucket de falhas é usado para encontrar informações adicionais sobre uma falha no sistema.|
+|restartStopCode|Cadeia de Caracteres|Código de parada de reinicialização do sistema operacional. Isso mostra o código de verificação de bugs que pode ser usado para procurar o motivo da tela azul.|
+|restartFaultBucket|Cadeia de Caracteres|Bucket de falha de reinicialização do sistema operacional. O bucket de falhas é usado para encontrar informações adicionais sobre uma falha no sistema.|
 
 
 

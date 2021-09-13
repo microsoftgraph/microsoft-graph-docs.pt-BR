@@ -2,15 +2,15 @@
 title: Tipo de recurso androidWorkProfileScepCertificateProfile
 description: Perfil de Trabalho do Android SCEP perfil de certificado
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 93f4070a3a73fb7bff3142806cb0ac43516e2244
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 23c7cdfeb9f6e853f70c6509ac77741ee64fa2ef
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58797553"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59148023"
 ---
 # <a name="androidworkprofilescepcertificateprofile-resource-type"></a>Tipo de recurso androidWorkProfileScepCertificateProfile
 
@@ -31,7 +31,7 @@ Herda de [androidWorkProfileCertificateProfileBase](../resources/intune-deviceco
 |[Listar androidWorkProfileScepCertificateProfiles](../api/intune-deviceconfig-androidworkprofilescepcertificateprofile-list.md)|[coleção androidWorkProfileScepCertificateProfile](../resources/intune-deviceconfig-androidworkprofilescepcertificateprofile.md)|Listar propriedades e relações dos objetos [androidWorkProfileScepCertificateProfile.](../resources/intune-deviceconfig-androidworkprofilescepcertificateprofile.md)|
 |[Obter androidWorkProfileScepCertificateProfile](../api/intune-deviceconfig-androidworkprofilescepcertificateprofile-get.md)|[androidWorkProfileScepCertificateProfile](../resources/intune-deviceconfig-androidworkprofilescepcertificateprofile.md)|Leia propriedades e relações do [objeto androidWorkProfileScepCertificateProfile.](../resources/intune-deviceconfig-androidworkprofilescepcertificateprofile.md)|
 |[Criar androidWorkProfileScepCertificateProfile](../api/intune-deviceconfig-androidworkprofilescepcertificateprofile-create.md)|[androidWorkProfileScepCertificateProfile](../resources/intune-deviceconfig-androidworkprofilescepcertificateprofile.md)|Crie um novo [objeto androidWorkProfileScepCertificateProfile.](../resources/intune-deviceconfig-androidworkprofilescepcertificateprofile.md)|
-|[Excluir androidWorkProfileScepCertificateProfile](../api/intune-deviceconfig-androidworkprofilescepcertificateprofile-delete.md)|Nenhum(a)|Exclui um [androidWorkProfileScepCertificateProfile](../resources/intune-deviceconfig-androidworkprofilescepcertificateprofile.md).|
+|[Excluir androidWorkProfileScepCertificateProfile](../api/intune-deviceconfig-androidworkprofilescepcertificateprofile-delete.md)|Nenhum|Exclui um [androidWorkProfileScepCertificateProfile](../resources/intune-deviceconfig-androidworkprofilescepcertificateprofile.md).|
 |[Atualizar androidWorkProfileScepCertificateProfile](../api/intune-deviceconfig-androidworkprofilescepcertificateprofile-update.md)|[androidWorkProfileScepCertificateProfile](../resources/intune-deviceconfig-androidworkprofilescepcertificateprofile.md)|Atualize as propriedades de [um objeto androidWorkProfileScepCertificateProfile.](../resources/intune-deviceconfig-androidworkprofilescepcertificateprofile.md)|
 
 ## <a name="properties"></a>Propriedades
@@ -39,13 +39,13 @@ Herda de [androidWorkProfileCertificateProfileBase](../resources/intune-deviceco
 |:---|:---|:---|
 |id|Cadeia de caracteres|Chave da entidade. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de marcas de escopo para esta instância entity. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|roleScopeTagIds|String collection|Lista de marcas de escopo para esta instância entity. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |supportsScopeTags|Boleano|Indica se a Configuração de Dispositivo subjacente dá suporte ou não à atribuição de marcas de escopo. A atribuição à propriedade ScopeTags não é permitida quando esse valor é falso e as entidades não estarão visíveis para usuários com escopo. Isso ocorre para políticas herdadas criadas no Silverlight e podem ser resolvidas excluindo e recriando a política no Portal do Azure. Essa propriedade é somente leitura. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|A aplicabilidade da edição do sistema operacional para esta Política. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|A regra de aplicabilidade da versão do sistema operacional para esta Política. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|A regra de aplicabilidade do modo de dispositivo para esta Política. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|DateTime em que o objeto foi criado. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|descrição|Cadeia de caracteres|O administrador forneceu a descrição da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|description|Cadeia de caracteres|O administrador forneceu a descrição da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |displayName|Cadeia de caracteres|O administrador forneceu o nome da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |versão|Int32|Versão da configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |renewalThresholdPercentage|Int32|Porcentagem de limite de renovação de certificado. Valores válidos de 1 a 99 Herdados [do androidWorkProfileCertificateProfileBase](../resources/intune-deviceconfig-androidworkprofilecertificateprofilebase.md)|
@@ -54,12 +54,12 @@ Herda de [androidWorkProfileCertificateProfileBase](../resources/intune-deviceco
 |certificateValidityPeriodScale|[certificateValidityPeriodScale](../resources/intune-shared-certificatevalidityperiodscale.md)|Dimensione para o Período de Validade do Certificado. Herdado [do androidWorkProfileCertificateProfileBase](../resources/intune-deviceconfig-androidworkprofilecertificateprofilebase.md). Os valores possíveis são: `days`, `months`, `years`.|
 |extendedKeyUsages|[Coleção extendedKeyUsage](../resources/intune-shared-extendedkeyusage.md)|Configurações de Uso de Chave Estendida (EKU). Esta coleção pode conter um máximo de 500 elementos. Herdado [do androidWorkProfileCertificateProfileBase](../resources/intune-deviceconfig-androidworkprofilecertificateprofilebase.md)|
 |subjectAlternativeNameType|[subjectAlternativeNameType](../resources/intune-shared-subjectalternativenametype.md)|Tipo de nome alternativo do assunto do certificado. Herdado [do androidWorkProfileCertificateProfileBase](../resources/intune-deviceconfig-androidworkprofilecertificateprofilebase.md). Os possíveis valores são: `none`, `emailAddress`, `userPrincipalName`, `customAzureADAttribute`, `domainNameService`, `universalResourceIdentifier`.|
-|scepServerUrls|Coleção de cadeias de caracteres|URL(s) do servidor SCEP|
-|subjectNameFormatString|Cadeia de caracteres|Formato personalizado a ser usado com SubjectNameFormat = Custom. Exemplo: CN={{EmailAddress}},E={{EmailAddress}},OU=Enterprise Users,O=Contoso Corporation,L=Redmond,ST=WA,C=US|
+|scepServerUrls|String collection|URL(s) do servidor SCEP|
+|subjectNameFormatString|Cadeia de Caracteres|Formato personalizado a ser usado com SubjectNameFormat = Custom. Exemplo: CN={{EmailAddress}},E={{EmailAddress}},OU=Enterprise Users,O=Contoso Corporation,L=Redmond,ST=WA,C=US|
 |keyUsage|[keyUsages](../resources/intune-shared-keyusages.md)|Uso da chave SCEP. Os valores possíveis são: `keyEncipherment` e `digitalSignature`.|
 |keySize|[keySize](../resources/intune-shared-keysize.md)|Tamanho da chave SCEP. Os valores possíveis são: `size1024`, `size2048`, `size4096`.|
 |hashAlgorithm|[hashAlgorithms](../resources/intune-shared-hashalgorithms.md)|Algoritmo de hash SCEP. Os valores possíveis são: `sha1` e `sha2`.|
-|subjectAlternativeNameFormatString|Cadeia de caracteres|Cadeia de caracteres personalizada que define o Atributo AAD.|
+|subjectAlternativeNameFormatString|Cadeia de Caracteres|Cadeia de caracteres personalizada que define o Atributo AAD.|
 |certificateStore|[certificateStore](../resources/intune-shared-certificatestore.md)|Certificado de armazenamento de destino. Os valores possíveis são: `user` e `machine`.|
 |customSubjectAlternativeNames|[Coleção customSubjectAlternativeName](../resources/intune-deviceconfig-customsubjectalternativename.md)|Nome alternativo de assunto personalizado Configurações. Esta coleção pode conter um máximo de 500 elementos.|
 

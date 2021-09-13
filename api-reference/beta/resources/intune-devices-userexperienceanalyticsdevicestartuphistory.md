@@ -2,15 +2,15 @@
 title: Tipo de recurso userExperienceAnalyticsDeviceStartupHistory
 description: A entidade histórico de inicialização do dispositivo de análise de experiência do usuário contém detalhes do histórico de desempenho de inicialização do dispositivo.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8ffc994a7f6be02a361ea21422bfefccf31352aa
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: c911b1dd9c111b9f2279edf2c42a0b11fc731716
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58797244"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59125782"
 ---
 # <a name="userexperienceanalyticsdevicestartuphistory-resource-type"></a>Tipo de recurso userExperienceAnalyticsDeviceStartupHistory
 
@@ -28,7 +28,7 @@ A entidade histórico de inicialização do dispositivo de análise de experiên
 |[Listar userExperienceAnalyticsDeviceStartupHistories](../api/intune-devices-userexperienceanalyticsdevicestartuphistory-list.md)|[coleção userExperienceAnalyticsDeviceStartupHistory](../resources/intune-devices-userexperienceanalyticsdevicestartuphistory.md)|Listar propriedades e relações dos [objetos userExperienceAnalyticsDeviceStartupHistory.](../resources/intune-devices-userexperienceanalyticsdevicestartuphistory.md)|
 |[Obter userExperienceAnalyticsDeviceStartupHistory](../api/intune-devices-userexperienceanalyticsdevicestartuphistory-get.md)|[userExperienceAnalyticsDeviceStartupHistory](../resources/intune-devices-userexperienceanalyticsdevicestartuphistory.md)|Leia propriedades e relações do [objeto userExperienceAnalyticsDeviceStartupHistory.](../resources/intune-devices-userexperienceanalyticsdevicestartuphistory.md)|
 |[Criar userExperienceAnalyticsDeviceStartupHistory](../api/intune-devices-userexperienceanalyticsdevicestartuphistory-create.md)|[userExperienceAnalyticsDeviceStartupHistory](../resources/intune-devices-userexperienceanalyticsdevicestartuphistory.md)|Crie um novo [objeto userExperienceAnalyticsDeviceStartupHistory.](../resources/intune-devices-userexperienceanalyticsdevicestartuphistory.md)|
-|[Excluir userExperienceAnalyticsDeviceStartupHistory](../api/intune-devices-userexperienceanalyticsdevicestartuphistory-delete.md)|Nenhum(a)|Exclui um [userExperienceAnalyticsDeviceStartupHistory](../resources/intune-devices-userexperienceanalyticsdevicestartuphistory.md).|
+|[Excluir userExperienceAnalyticsDeviceStartupHistory](../api/intune-devices-userexperienceanalyticsdevicestartuphistory-delete.md)|Nenhum|Exclui um [userExperienceAnalyticsDeviceStartupHistory](../resources/intune-devices-userexperienceanalyticsdevicestartuphistory.md).|
 |[Atualizar userExperienceAnalyticsDeviceStartupHistory](../api/intune-devices-userexperienceanalyticsdevicestartuphistory-update.md)|[userExperienceAnalyticsDeviceStartupHistory](../resources/intune-devices-userexperienceanalyticsdevicestartuphistory.md)|Atualize as propriedades de [um objeto userExperienceAnalyticsDeviceStartupHistory.](../resources/intune-devices-userexperienceanalyticsdevicestartuphistory.md)|
 
 ## <a name="properties"></a>Propriedades
@@ -49,8 +49,8 @@ A entidade histórico de inicialização do dispositivo de análise de experiên
 |isFeatureUpdate|Boleano|O registro de inicialização do dispositivo de análise de experiência do usuário é uma atualização de recurso.|
 |operatingSystemVersion|String|A versão do sistema operacional do registro de inicialização do dispositivo de análise de experiência do usuário.|
 |restartCategory|[userExperienceAnalyticsOperatingSystemRestartCategory](../resources/intune-devices-userexperienceanalyticsoperatingsystemrestartcategory.md)|Categoria de reinicialização do sistema operacional. Os valores possíveis são: `unknown`, `restartWithUpdate`, `restartWithoutUpdate`, `blueScreen`, `shutdownWithUpdate`, `shutdownWithoutUpdate`, `longPowerButtonPress`, `bootError`, `update`.|
-|restartStopCode|Cadeia de caracteres|Código de parada de reinicialização do sistema operacional. Isso mostra o código de verificação de bugs que pode ser usado para procurar o motivo da tela azul.|
-|restartFaultBucket|Cadeia de caracteres|Bucket de falha de reinicialização do sistema operacional. O bucket de falhas é usado para encontrar informações adicionais sobre uma falha no sistema.|
+|restartStopCode|Cadeia de Caracteres|Código de parada de reinicialização do sistema operacional. Isso mostra o código de verificação de bugs que pode ser usado para procurar o motivo da tela azul.|
+|restartFaultBucket|Cadeia de Caracteres|Bucket de falha de reinicialização do sistema operacional. O bucket de falhas é usado para encontrar informações adicionais sobre uma falha no sistema.|
 
 ## <a name="relationships"></a>Relações
 Nenhum

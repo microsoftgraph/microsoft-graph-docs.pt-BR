@@ -2,15 +2,15 @@
 title: tipo de número dataType
 description: Tipos de dados para regras.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 11647abeae11186c8bbaa6748b6711c749e9fc01
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: ca9b1afcf40585dae9f7d3e11525ba43ab5bad0a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58795883"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59146692"
 ---
 # <a name="datatype-enum-type"></a>tipo de número dataType
 
@@ -36,7 +36,7 @@ Tipos de dados para regras.
 |xml|8 |Tipo de dados Xml.|
 |booleanArray|9 |Tipo de dados da matriz booleana.|
 |int64Array|10 |Tipo de dados da matriz Int64.|
-|doubleArray|11 |Tipo de dados de matriz dupla.|
+|doubleArray|11|Tipo de dados de matriz dupla.|
 |stringArray|12 |Tipo de dados de matriz de cadeia de caracteres.|
 |dateTimeArray|13|Tipo de dados da matriz DateTime.|
 |versionArray|14 |Tipo de dados de matriz de versão.|

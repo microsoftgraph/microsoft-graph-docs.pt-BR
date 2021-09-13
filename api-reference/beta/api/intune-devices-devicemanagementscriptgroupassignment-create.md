@@ -2,15 +2,15 @@
 title: Criar deviceManagementScriptGroupAssignment
 description: Crie um novo objeto deviceManagementScriptGroupAssignment.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a6ee0cbdf7737fadd8c4f4e914a31f7ffecaddab
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: b4f21e8bf4e318324389ccb19f0a8d978cd1df7d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58793642"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59121946"
 ---
 # <a name="create-devicemanagementscriptgroupassignment"></a>Criar deviceManagementScriptGroupAssignment
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementManagedDevices.ReadWrite.All|
+|Aplicativo|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -56,7 +56,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar deviceMa
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|Cadeia de caracteres|Chave da entidade de atribuição do grupo de scripts de gerenciamento de dispositivos. Essa propriedade é somente leitura.|
-|targetGroupId|Cadeia de caracteres|A ID do grupo Azure Active Directory que estamos direcionando para o script.|
+|targetGroupId|Cadeia de Caracteres|A ID do grupo Azure Active Directory que estamos direcionando para o script.|
 
 
 

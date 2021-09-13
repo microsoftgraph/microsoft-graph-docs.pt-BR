@@ -2,15 +2,15 @@
 title: Tipo de recurso comanagementEligibleDevicesSummary
 description: Ainda não documentado
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: c4950dd620adb21c9ebdbb45b7c1acbd3380dc70
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 90f4cb5f33b0ea1c260d6b6acaffac46d3e08434
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58806625"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59111037"
 ---
 # <a name="comanagementeligibledevicessummary-resource-type"></a>Tipo de recurso comanagementEligibleDevicesSummary
 

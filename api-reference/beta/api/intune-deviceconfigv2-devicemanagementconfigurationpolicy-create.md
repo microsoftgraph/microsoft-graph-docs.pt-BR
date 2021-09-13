@@ -2,15 +2,15 @@
 title: Criar deviceManagementConfigurationPolicy
 description: Crie um novo objeto deviceManagementConfigurationPolicy.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 974804309312b52023a59c200372e456b2524255
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 4eb5eaad9256be888e87ea2b6001273016816970
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58791001"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59088266"
 ---
 # <a name="create-devicemanagementconfigurationpolicy"></a>Criar deviceManagementConfigurationPolicy
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementServiceConfig.ReadWrite.All|
+|Aplicativo|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -56,14 +56,14 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar deviceMa
 |:---|:---|:---|
 |id|Cadeia de caracteres|Chave do documento de política. Gerado automaticamente.|
 |nome|Cadeia de caracteres|Nome da política|
-|descrição|Cadeia de caracteres|Descrição da política|
+|description|Cadeia de caracteres|Descrição da política|
 |plataformas|[deviceManagementConfigurationPlatforms](../resources/intune-deviceconfigv2-devicemanagementconfigurationplatforms.md)|Plataformas para essa política. Os valores possíveis são: `none`, `macOS`, `windows10X`, `windows10`.|
 |technologies|[deviceManagementConfigurationTechnologies](../resources/intune-deviceconfigv2-devicemanagementconfigurationtechnologies.md)|Tecnologias para essa política. Os possíveis valores são: `none`, `mdm`, `windows10XManagement`, `configManager`, `microsoftSense`, `exchangeOnline`.|
 |createdDateTime|DateTimeOffset|Data e hora de criação de política. Essa propriedade é somente leitura.|
 |lastModifiedDateTime|DateTimeOffset|Data e hora da última modificação da política. Essa propriedade é somente leitura.|
 |settingCount|Int32|Número de configurações. Essa propriedade é somente leitura.|
-|creationSource|Cadeia de caracteres|Fonte de criação de política|
-|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de marcas de escopo para esta instância entity.|
+|creationSource|Cadeia de Caracteres|Fonte de criação de política|
+|roleScopeTagIds|String collection|Lista de marcas de escopo para esta instância entity.|
 |isAssigned|Boolean|Status da atribuição de política. Essa propriedade é somente leitura.|
 |templateReference|[deviceManagementConfigurationPolicyTemplateReference](../resources/intune-deviceconfigv2-devicemanagementconfigurationpolicytemplatereference.md)|Informações de referência do modelo|
 
