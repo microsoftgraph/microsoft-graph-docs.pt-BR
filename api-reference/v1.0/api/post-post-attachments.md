@@ -1,24 +1,24 @@
 ---
 title: Adicionar anexo
-description: Adicionar um anexo ao criar uma postagem de grupo.
+description: Adicione um anexo ao criar uma postagem de grupo.
 author: dkershaw10
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 912506552c71bf1e6424f5af42ca4ddb46cd311a
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 6b1429a105553e53c0653673858acf2c538c8c03
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48964304"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59085305"
 ---
 # <a name="add-attachment"></a>Adicionar anexo
 
 Namespace: microsoft.graph
 
-Adicionar um [anexo](../resources/attachment.md) ao criar uma postagem de grupo.
+Adicione um [anexo](../resources/attachment.md) ao criar uma postagem de grupo.
 
-Esta operação limita o tamanho do anexo que você pode adicionar a menos de 4 MB.
+Essa operação limita o tamanho do anexo que você pode adicionar a menos de 4 MB.
 
 Um anexo pode ser de um dos seguintes tipos:
 
@@ -38,7 +38,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Aplicativo | Group.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
-Incluir um anexo ao criar uma [postagem](../resources/post.md) em um [conversationThread](../resources/conversationthread.md) de um grupo. A especificação da [conversa](../resources/conversation.md) pai é opcional.
+Inclua um anexo ao criar uma [postagem](../resources/post.md) em [uma conversaThread](../resources/conversationthread.md) de um grupo. Especificar a conversa [pai](../resources/conversation.md) é opcional.
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -51,20 +51,20 @@ POST /groups/{id}/conversations/{id}/threads/{id}/reply
 | Autorização  | {token} de portador. Obrigatório.  |
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça um objeto JSON que inclui um parâmetro **post** .
+No corpo da solicitação, forneça um objeto JSON que inclui um **parâmetro post.**
 
 | Parâmetro    | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|post|[post](../resources/post.md)|A nova postagem que está sendo respondida, que inclui um ou mais anexos em uma coleção de [anexos](../resources/attachment.md) .|
+|post|[post](../resources/post.md)|A nova postagem que está sendo respondida, que inclui um ou mais anexos em uma [coleção de](../resources/attachment.md) anexos.|
 
 ## <a name="response"></a>Resposta
 
 Se bem-sucedido, este método retorna um código de resposta `202 Accepted`. Não retorna um corpo de resposta.
 
 ## <a name="examples"></a>Exemplos
-### <a name="example-1-include-a-file-attachment"></a>Exemplo 1: incluir um anexo de arquivo
+### <a name="example-1-include-a-file-attachment"></a>Exemplo 1: Incluir um anexo de arquivo
 #### <a name="request"></a>Solicitação
-Veja a seguir um exemplo de uma solicitação que inclui um arquivo como um anexo ao criar uma postagem.
+Aqui está um exemplo de uma solicitação que inclui um arquivo como um anexo ao criar uma postagem.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -118,10 +118,10 @@ Veja a seguir um exemplo da resposta.
 HTTP/1.1 202 Accpted
 ```
 
-### <a name="example-2-include-an-item-attachment"></a>Exemplo 2: incluir um anexo de item
+### <a name="example-2-include-an-item-attachment"></a>Exemplo 2: Incluir um anexo de item
 
 #### <a name="request"></a>Solicitação
-Veja a seguir um exemplo de uma solicitação que inclui um evento como um anexo ao criar uma postagem.
+Aqui está um exemplo de uma solicitação que inclui um evento como um anexo ao criar uma postagem.
 
 <!-- {
   "blockType": "request",
@@ -173,11 +173,11 @@ Veja a seguir um exemplo da resposta.
 HTTP/1.1 202 Accepted
 ```
 
-### <a name="example-3-include-a-reference-attachment"></a>Exemplo 3: incluir um anexo de referência
+### <a name="example-3-include-a-reference-attachment"></a>Exemplo 3: Incluir um anexo de referência
 
 #### <a name="request"></a>Solicitação
-Veja a seguir um exemplo de uma solicitação que inclui um anexo de referência ao criar uma postagem.
-O anexo aponta para uma pasta no OneDrive.
+Aqui está um exemplo de uma solicitação que inclui um anexo de referência ao criar uma postagem.
+O anexo aponta para uma pasta OneDrive.
 
 
 # <a name="http"></a>[HTTP](#tab/http)

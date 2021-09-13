@@ -1,24 +1,24 @@
 ---
 title: Excluir delegatedPermissionClassification
 description: Exclua uma classificação de permissão delegada da entidade de serviço de uma API.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: applications
 author: psignoret
-ms.openlocfilehash: decce0d0a9e3f6915676cb7151da0d43ddff3067
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 135b1fb92560c989a3db193127796cf6a2c13443
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50133095"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59110134"
 ---
 # <a name="delete-delegatedpermissionclassification"></a>Excluir delegatedPermissionClassification
 
 Namespace: microsoft.graph
 
-Exclui um [delegatedPermissionClassification](../resources/delegatedPermissionClassification.md) que foi definido anteriormente para uma permissão delegada.
+Exclui uma [delegatedPermissionClassification](../resources/delegatedPermissionClassification.md) que tinha sido definida anteriormente para uma permissão delegada.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 

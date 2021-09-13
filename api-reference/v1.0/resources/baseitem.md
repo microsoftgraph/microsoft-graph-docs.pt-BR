@@ -2,16 +2,16 @@
 author: JeremyKelley
 ms.date: 09/10/2017
 title: BaseItem
-localization_priority: Normal
+ms.localizationpriority: medium
 description: O recurso baseItem é um recurso abstrato que contém um conjunto comum de propriedades compartilhado entre vários outros tipos de recursos.
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 2352eb143bb0a8042ca38096d114c92fb3f181091d505df4487dd329c1abed15
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 5937af012f61b804bc773de41a09cc94bdb51dc6
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54163856"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59019402"
 ---
 # <a name="baseitem-resource-type"></a>Tipo de recurso BaseItem
 
@@ -56,10 +56,10 @@ Veja a seguir uma representação JSON de um recurso **baseItem**.
 
 | Propriedade             | Tipo              | Descrição                                                                            |
 | :------------------- | :---------------- | :------------------------------------------------------------------------------------- |
-| id                   | string            | O identificador exclusivo da unidade. Somente leitura.                                         |
+| id                   | cadeia de caracteres            | O identificador exclusivo da unidade. Somente leitura.                                         |
 | createdBy            | [identitySet][]   | Identidade do usuário, dispositivo ou aplicativo que criou o item. Somente leitura.        |
 | createdDateTime      | dateTimeOffset    | Data e hora de criação do item. Somente leitura.                                             |
-| description          | Cadeia de caracteres            | Fornece uma descrição do item visível para o usuário. Opcional.                             |
+| description          | String            | Fornece uma descrição do item visível para o usuário. Opcional.                             |
 | eTag                 | string            | ETag do item. Somente leitura.                                                          |
 | lastModifiedBy       | [identitySet][]   | Identidade do usuário, dispositivo e aplicativo que modificou o item pela última vez. Somente leitura. |
 | lastModifiedDateTime | dateTimeOffset    | Data e hora em que o item foi modificado pela última vez. Somente leitura.                                   |

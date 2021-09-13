@@ -2,16 +2,16 @@
 author: JeremyKelley
 ms.date: 09/10/2017
 title: DriveRecipient
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: sharepoint
 description: O recurso DriveRecipient representa uma pessoa, um grupo ou outro destinatário com quem compartilhar usando a ação invite.
 doc_type: resourcePageType
-ms.openlocfilehash: 72bb8c3ab42dc6240d6c088a6634f969dd6a03e14c71053c12a3abc742247093
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 9a272a3a6bbfe32999a297635c2b189fb32324e3
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54149986"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59056099"
 ---
 # <a name="driverecipient-resource"></a>Recurso DriveRecipient
 

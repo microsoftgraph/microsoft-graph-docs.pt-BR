@@ -2,16 +2,16 @@
 author: JeremyKelley
 ms.date: 09/10/2017
 title: Enviar um convite para acessar um item
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: sharepoint
 description: Envia um convite de compartilhamento para um driveItem.
 doc_type: apiPageType
-ms.openlocfilehash: bbd7d4226cd4c289019dd5bcc6abd863f2be7688
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: 05a1502363244b0ee438a4a1afb05e967ad7890d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50473844"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59026643"
 ---
 # <a name="send-a-sharing-invitation"></a>Enviar um convite de compartilhamento
 
@@ -68,8 +68,8 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 | requireSignIn    | Booleano                        | Especifica se o destinatário do convite precisa fazer logon para visualizar o item compartilhado.
 | sendInvitation   | Booliano                        | Se verdadeiro, um [link de compartilhamento][] será enviado ao destinatário. Caso contrário, uma permissão é concedida diretamente sem enviar uma notificação.
 | funções            | Collection(String)             | Especifique as funções que devem ser concedidas aos destinatários do convite de compartilhamento.
-| expirationDateTime | DateTimeOffset                       | Especifique o DateTime após o qual a permissão expira. Disponível em contas pessoais do OneDrive for Business, SharePoint e premium do OneDrive.
-| password           | String                         | A senha definida no convite pelo criador. Opcional e Somente OneDrive Personal.
+| expirationDateTime | DateTimeOffset                       | Especifique o DateTime após o qual a permissão expira. Disponível em OneDrive for Business, SharePoint e contas de OneDrive pessoais premium.
+| password           | String                         | A senha definida no convite pelo criador. Opcional e OneDrive somente pessoal.
 
 ## <a name="example"></a>Exemplo
 
@@ -158,9 +158,9 @@ Content-type: application/json
 * [Drives](../resources/drive.md) com **driveType** de `personal` (OneDrive Pessoal) não podem criar ou alterar as permissões no DriveItem raiz.
 * Para ver uma lista de funções disponíveis, consulte [roles property values](../resources/permission.md#roles-property-values).
 
-## <a name="error-responses"></a>Respostas de erros
+## <a name="error-responses"></a>Respostas de erro
 
-Veja mais informações sobre como os erros são retornados no tópico [Respostas de erro][error-response].
+Leia o tópico [Respostas de Erro][error-response] para obter mais informações sobre como os erros são retornados.
 
 
 [driveRecipient]: ../resources/driverecipient.md

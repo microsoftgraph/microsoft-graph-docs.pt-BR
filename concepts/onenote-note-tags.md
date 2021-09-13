@@ -2,14 +2,14 @@
 title: Usar marcas de anotação nas páginas do OneNote
 description: " Notebooks empresariais no Microsoft 365"
 author: jewan-microsoft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: onenote
-ms.openlocfilehash: 34cb73b1bb0d14e7e99fb6668225c272341f48109455e3b8192f57d8feced14d
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: f3b5a79da157a84f92bb90d87b144daa4df17f45
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54216298"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59035553"
 ---
 # <a name="use-note-tags-in-onenote-pages"></a>Usar marcas de notas nas páginas do OneNote
 

@@ -2,15 +2,15 @@
 title: Atualizar complianceManagementPartner
 description: Atualize as propriedades de um objeto complianceManagementPartner.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5c3633dc2927dcb48c5dedc26f74fc9f1efa0dce
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: ef7f751531610601a66f4fcc4121b02e33ff5a86
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58787999"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59020550"
 ---
 # <a name="update-compliancemanagementpartner"></a>Atualizar complianceManagementPartner
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementServiceConfig.ReadWrite.All|
+|Aplicativo|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -53,14 +53,14 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [complia
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|ID da entidade|
+|id|String|ID da entidade|
 |lastHeartbeatDateTime|DateTimeOffset|Timestamp de última pulsação depois que o administrador entrou no parceiro de gerenciamento de conformidade|
 |partnerState|[deviceManagementPartnerTenantState](../resources/intune-onboarding-devicemanagementpartnertenantstate.md)|Estado do parceiro desse locatário. Os possíveis valores são: `unknown`, `unavailable`, `enabled`, `terminated`, `rejected`, `unresponsive`.|
 |displayName|Cadeia de caracteres|Nome de exibição de parceiro|
 |macOsOnboarded|Boleano|Parceiro a bordo para dispositivos Mac.|
-|windowsOnboarded|Boleano|Parceiro integrado para Windows dispositivos.|
-|androidOnboarded|Boleano|Parceiro a bordo para dispositivos Android.|
-|iosOnboarded|Boleano|Parceiro internado para dispositivos ios.|
+|windowsOnboarded|Boolean|Parceiro integrado para Windows dispositivos.|
+|androidOnboarded|Booliano|Parceiro a bordo para dispositivos Android.|
+|iosOnboarded|Booliano|Parceiro internado para dispositivos ios.|
 |macOsEnrollmentAssignments|[coleção complianceManagementPartnerAssignment](../resources/intune-onboarding-compliancemanagementpartnerassignment.md)|Grupos de usuários que registram dispositivos Mac por meio de parceiros.|
 |windowsEnrollmentAssignments|[coleção complianceManagementPartnerAssignment](../resources/intune-onboarding-compliancemanagementpartnerassignment.md)|Grupos de usuários que registram Windows por meio de parceiros.|
 |androidEnrollmentAssignments|[coleção complianceManagementPartnerAssignment](../resources/intune-onboarding-compliancemanagementpartnerassignment.md)|Grupos de usuários que registram dispositivos Android por meio de parceiros.|

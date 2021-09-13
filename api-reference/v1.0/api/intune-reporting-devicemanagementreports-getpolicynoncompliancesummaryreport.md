@@ -2,15 +2,15 @@
 title: ação getPolicyNonComplianceSummaryReport
 description: Ainda não documentado
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f7281c49fe95d988622f372fa4e33b70557f780cf247cebce482c7d2ddc4a5ed
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: d419b9a24e5d7fec88ad36149622abc74b432c29
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54163926"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59113963"
 ---
 # <a name="getpolicynoncompliancesummaryreport-action"></a>ação getPolicyNonComplianceSummaryReport
 
@@ -51,7 +51,7 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta ação.
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|nome|String|Ainda não documentado|
+|nome|Cadeia de caracteres|Ainda não documentado|
 |select|String collection|Ainda não documentado|
 |search|String|Ainda não documentado|
 |groupBy|String collection|Ainda não documentado|

@@ -1,16 +1,16 @@
 ---
 title: tipo de recurso domainDnsUnavailableRecord
 description: Indica que serviceConfigurationRecords não pode ser gerado.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: adimitui
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: ef1a70004e28279f80327b64edb53fd14a0b53f19717ea2f5ed96af5d0039feb
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: cda989c9033818efe7f750467783bb5f2ce517a5
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54175312"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59123759"
 ---
 # <a name="domaindnsunavailablerecord-resource-type"></a>tipo de recurso domainDnsUnavailableRecord
 

@@ -2,15 +2,15 @@
 title: Tipo de recurso androidManagedStoreAppConfigurationSchemaItem
 description: Item de configuração único dentro do esquema de configuração personalizado de um aplicativo Android.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: e40612aa0486f6aeaa6c28394cc3bea338dbc66d
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 91ed8095867017a4000a95a5f34c5cb8ea5cd3f6
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58801203"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59030547"
 ---
 # <a name="androidmanagedstoreappconfigurationschemaitem-resource-type"></a>Tipo de recurso androidManagedStoreAppConfigurationSchemaItem
 
@@ -29,7 +29,7 @@ Item de configuração único dentro do esquema de configuração personalizado 
 |parentIndex|Int32|Índice do item de esquema pai para rastrear itens de esquema aninhados|
 |schemaItemKey|Cadeia de caracteres|Chave exclusiva que o aplicativo usa para identificar o item|
 |displayName|Cadeia de caracteres|Nome legível por humanos|
-|descrição|Cadeia de caracteres|Descrição do que o item controla dentro do aplicativo|
+|description|String|Descrição do que o item controla dentro do aplicativo|
 |defaultBoolValue|Booliano|Valor padrão para itens do tipo booliano, se especificado pelo desenvolvedor do aplicativo|
 |defaultIntValue|Int32|Valor padrão para itens do tipo inteiro, se especificado pelo desenvolvedor do aplicativo|
 |defaultStringValue|Cadeia de caracteres|Valor padrão para itens do tipo cadeia de caracteres, se especificado pelo desenvolvedor do aplicativo|

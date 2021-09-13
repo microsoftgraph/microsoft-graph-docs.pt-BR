@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso tokenLifetimePolicy
 description: Representa uma política que pode controlar o tempo de vida de um token de acesso emitido por Azure Active Directory.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: lujiangfeng666
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 1d35f0befc6e61aafb515e19cbc777029f627989078b003d12728e034d668896
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: f6903abfc318c2b49601ef4aafb2a6d428637504
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54189153"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59143661"
 ---
 # <a name="tokenlifetimepolicy-resource-type"></a>Tipo de recurso tokenLifetimePolicy
 
@@ -31,19 +31,19 @@ Herda de [stsPolicy](stsPolicy.md).
 | [Listar tokenLifetimePolicies](../api/tokenlifetimepolicy-list.md) | [tokenLifetimePolicy](tokenlifetimepolicy.md) | Leia propriedades e relações de objetos tokenLifetimePolicies. |
 | [Criar tokenLifetimePolicy](../api/tokenlifetimepolicy-post-tokenlifetimepolicies.md) | [tokenLifetimePolicy](tokenlifetimepolicy.md) | Crie um objeto tokenLifetimePolicy. |
 | [Obter tokenLifetimePolicy](../api/tokenlifetimepolicy-get.md) | [tokenLifetimePolicy](tokenlifetimepolicy.md) | Ler propriedades e relações de um objeto tokenLifetimePolicy. |
-| [Atualizar tokenLifetimePolicy](../api/tokenlifetimepolicy-update.md) | None | Atualize um objeto tokenLifetimePolicy. |
-| [Excluir tokenLifetimePolicy](../api/tokenlifetimepolicy-delete.md) | None | Exclua um objeto tokenLifetimePolicy. |
+| [Atualizar tokenLifetimePolicy](../api/tokenlifetimepolicy-update.md) | Nenhum(a) | Atualize um objeto tokenLifetimePolicy. |
+| [Excluir tokenLifetimePolicy](../api/tokenlifetimepolicy-delete.md) | Nenhum(a) | Exclua um objeto tokenLifetimePolicy. |
 | [Lista appliesTo](../api/tokenlifetimepolicy-list-appliesto.md) | Coleção [directoryObject](directoryobject.md) | Obter a lista de directoryObjects aos qual essa política foi aplicada. |
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|id|Cadeia de caracteres| Identificador exclusivo dessa política. Apenas leitura.|
-|definition|String collection| Uma coleção de cadeias de caracteres que contém uma cadeia de caracteres JSON que define as regras e as configurações dessa política. Consulte abaixo para obter mais detalhes sobre o esquema JSON para esta propriedade. Obrigatório.|
+|id|String| Identificador exclusivo dessa política. Somente leitura.|
+|definition|Coleção String| Uma coleção de cadeias de caracteres que contém uma cadeia de caracteres JSON que define as regras e as configurações dessa política. Consulte abaixo para obter mais detalhes sobre o esquema JSON para esta propriedade. Obrigatório.|
 |description|String| Descrição dessa política.|
-|displayName|Cadeia de caracteres| Nome de exibição para esta política. Obrigatório.|
-|isOrganizationDefault|Booliano|Se definido como `true` , ativa essa política. Pode haver muitas políticas para o mesmo tipo de política, mas apenas uma pode ser ativada como o padrão da organização. Opcional, o valor padrão é `false` .|
+|displayName|String| Nome de exibição para esta política. Obrigatório.|
+|isOrganizationDefault|Boolean|Se definido como `true` , ativa essa política. Pode haver muitas políticas para o mesmo tipo de política, mas apenas uma pode ser ativada como o padrão da organização. Opcional, o valor padrão é `false` .|
 
 
 ### <a name="properties-of-a-token-lifetime-policy-definition"></a>Propriedades de uma definição de política de vida útil do token
@@ -64,7 +64,7 @@ As propriedades abaixo formam o objeto JSON que representa uma política de vida
 
 | Propriedade     | Tipo   |Descrição| Valor Mínimo | Valor Máximo | Valor padrão|
 |:---------------|:--------|:----------|:--------|:--------|:----|
-|AccessTokenLifetime|Cadeia de caracteres|Controla por quanto tempo os tokens de acesso e ID são considerados válidos.|10 minutos|1 dia|1 hora|
+|AccessTokenLifetime|String|Controla por quanto tempo os tokens de acesso e ID são considerados válidos.|10 minutos|1 dia|1 hora|
 |Versão|Inteiro|Definir o valor de 1. Obrigatório.|Nenhum|Nenhum|Nenhum|
 
 ## <a name="relationships"></a>Relações

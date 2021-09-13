@@ -2,15 +2,15 @@
 title: 'domain: verify'
 description: Valida a propriedade do domínio.
 author: adimitui
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 94a66652f698f73a7dddde0d37569421ac502f98
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: b55a819c1843df47a3ab1c0f4d09a0c319719b0e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52048768"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59056694"
 ---
 # <a name="domain-verify"></a>domain: verify
 
@@ -27,9 +27,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Directory.Read.All    |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | Directory.Read.All, Domain.ReadWrite.All |
+|Delegada (conta corporativa ou de estudante) | Domain.ReadWrite.All  |
+|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
+|Aplicativo | Domain.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 

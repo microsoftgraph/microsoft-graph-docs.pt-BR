@@ -2,15 +2,15 @@
 title: Tipo de recurso androidDeviceOwnerKioskModeManagedFolder
 description: Uma pasta que contém páginas de aplicativos e weblinks na Tela Inicial Gerenciada
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 6144091708f3abfea6aa0f8e0b4ac7284cf58580
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: d39dc856e2ef6f36e4188dc2694a7c23f4033183
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58787024"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59030456"
 ---
 # <a name="androiddeviceownerkioskmodemanagedfolder-resource-type"></a>Tipo de recurso androidDeviceOwnerKioskModeManagedFolder
 
@@ -25,7 +25,7 @@ Uma pasta que contém páginas de aplicativos e weblinks na Tela Inicial Gerenci
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|folderName|Cadeia de caracteres|Nome para exibição da pasta|
+|folderName|String|Nome para exibição da pasta|
 |folderIdentifier|Cadeia de caracteres|Identificador exclusivo da pasta|
 |itens|[coleção androidDeviceOwnerKioskModeFolderItem](../resources/intune-deviceconfig-androiddeviceownerkioskmodefolderitem.md)|Itens a serem adicionados à pasta gerenciada. Esta coleção pode conter um máximo de 500 elementos.|
 

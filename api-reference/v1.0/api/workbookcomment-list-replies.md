@@ -1,16 +1,16 @@
 ---
 title: Listar workbookCommentReplies
 description: Recupere uma lista de objetos workbookcommentreply.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: grangeryy
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 8760a84189e681f00a2ee7ce20aeced29a8235d1
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 8b0847e5e11397a556c738002f1ccb7b94f6163a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52054256"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59104525"
 ---
 # <a name="list-workbookcommentreplies"></a>Listar workbookCommentReplies
 

@@ -2,15 +2,15 @@
 title: Tipo de recurso androidDeviceOwnerKioskModeManagedFolderReference
 description: Uma referência à pasta que contém aplicativos e weblinks na Tela Inicial Gerenciada
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: bcdb62a5c8ebf740b9c9f0060289af0ebded8ff3
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 97276755676fbde8e41d4c5bac3fb1e381b7376d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58819217"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59030449"
 ---
 # <a name="androiddeviceownerkioskmodemanagedfolderreference-resource-type"></a>Tipo de recurso androidDeviceOwnerKioskModeManagedFolderReference
 
@@ -28,8 +28,8 @@ Herda de [androidDeviceOwnerKioskModeHomeScreenItem](../resources/intune-devicec
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|folderName|Cadeia de caracteres|Nome da pasta|
-|folderIdentifier|Cadeia de caracteres|Identificador exclusivo da pasta|
+|folderName|String|Nome da pasta|
+|folderIdentifier|Cadeia de Caracteres|Identificador exclusivo da pasta|
 
 ## <a name="relationships"></a>Relações
 Nenhum

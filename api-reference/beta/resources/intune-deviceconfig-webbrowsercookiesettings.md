@@ -2,15 +2,15 @@
 title: Tipo de número webBrowserCookieSettings
 description: Cookie do Navegador da Web Configurações.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 643717c53b194a238a955416610764a1f478c422
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: b75ab377cc52d956226a261a9bb61b8c4b9b9332
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58783936"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59026970"
 ---
 # <a name="webbrowsercookiesettings-enum-type"></a>Tipo de número webBrowserCookieSettings
 

@@ -2,15 +2,15 @@
 title: Obter membro de um canal
 description: Obter membro de um canal.
 author: akjo
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: e6aeb2f24822995e9e2a9d9e153182842b8d99ff
-ms.sourcegitcommit: 456ec9510807d05623c0ed1dd049c9676f53f56b
+ms.openlocfilehash: f57995b32b5399ab2a1312ee280a5e9a8fcec64b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53060559"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59090779"
 ---
 # <a name="get-member-of-channel"></a>Obter membro de um canal
 

@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso rubricLevel
 description: Um nível de rubric.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: sharad-sharma-msft
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: ef944854949e590abc5a3455cc9683d18f069ebb932be337eb6351d64899fd09
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 5db0dac5bf68047f0ebc9dd38554d002a678dca6
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54249129"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59113529"
 ---
 # <a name="rubriclevel-resource-type"></a>Tipo de recurso rubricLevel
 
@@ -27,7 +27,7 @@ Consulte [educationRubric](educationrubric.md) para ver uma descrição da rela�
 |description|[itemBody](itembody.md)|A descrição desse nível rubrico.|
 |displayName|Cadeia de caracteres|O nome desse nível rubrico.|
 |grading|[educationAssignmentGradeType](educationassignmentgradetype.md)|Null se for uma rubrica sem pontos; [educationAssignmentPointsGradeType](educationassignmentpointsgradetype.md) se for uma rubrica de pontos.|
-|levelId|Cadeia de caracteres|A ID desse recurso.|
+|levelId|String|A ID desse recurso.|
 
 ## <a name="json-representation"></a>Representação JSON
 

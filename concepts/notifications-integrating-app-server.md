@@ -1,15 +1,15 @@
 ---
 title: Criar e enviar uma notificação do serviço de aplicativo
 description: 'Configure o serviço de aplicativo para enviar notificações centradas no usuário para vários clientes por meio do Microsoft Graph. '
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: notifications
 author: merzink
-ms.openlocfilehash: 11cceb203b654113e16c2b7a1e9f461ea1bbac27342b15626754ccd5c6ccdbd2
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 24cac26e548d5f05724ee38559f6ef3bb4801277
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54174721"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59062317"
 ---
 # <a name="create-and-send-a-notification-from-your-app-service"></a>Criar e enviar uma notificação do serviço de aplicativo
 

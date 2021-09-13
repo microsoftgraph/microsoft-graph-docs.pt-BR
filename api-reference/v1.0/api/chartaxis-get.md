@@ -2,15 +2,15 @@
 title: Obter ChartAxis
 description: Lê as propriedades e os relacionamentos do objeto chartaxis.
 author: lumine2008
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 8205e5572f4a7cd6aee002ae4876783a9e0a9f7f
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 39940e3318dee2e232f4beed175b00c9d2984d3d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52048838"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59105508"
 ---
 # <a name="get-chartaxis"></a>Obter ChartAxis
 
@@ -82,7 +82,7 @@ GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id
 ---
 
 ##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto de resposta exibido aqui pode ser encurtado para legibilidade.
+Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser reduzido para facilitar a leitura.
 <!-- {
   "blockType": "response",
   "truncated": true,

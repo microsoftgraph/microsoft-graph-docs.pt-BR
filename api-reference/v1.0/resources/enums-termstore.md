@@ -2,15 +2,15 @@
 title: valores de enumeração termStore
 description: Valores de enumeração do Microsoft Graph termStore.
 doc_type: enumPageType
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: taxonomy
 author: vishriv
-ms.openlocfilehash: 2586bffbf0cd8aab295b0ae16c472d11b9b67220
-ms.sourcegitcommit: 9b8abc940a68dac6ee5da105ca29800cb59775f6
+ms.openlocfilehash: 70b0a6a8683979a11476c77db97399c36a51da3b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "58513848"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59104114"
 ---
 # <a name="termstore-enumeration-values"></a>valores de enumeração termStore
 

@@ -2,15 +2,15 @@
 title: Tipo denum mdmAppConfigKeyType
 description: Tipos de chave de configuração de aplicativo.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 5368e166b08c7a4ba87a60b34f9ddf6703e5873774d765a942259e2dbe4b5572
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 9c7530303928cc17ed4853abfbebcc13c2783b62
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54238073"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59123220"
 ---
 # <a name="mdmappconfigkeytype-enum-type"></a>Tipo denum mdmAppConfigKeyType
 

@@ -2,15 +2,15 @@
 title: Tipo de recurso ChartLegend
 description: Representa a legenda de um gráfico.
 author: lumine2008
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: dbb95979e30143bf1c078edebf85c1e70c06e95e7c9818ec051602d394a48331
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 9b79f437e2c739c675533e9178ddcbb3da21b922
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54121295"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59049673"
 ---
 # <a name="chartlegend-resource-type"></a>Tipo de recurso ChartLegend
 

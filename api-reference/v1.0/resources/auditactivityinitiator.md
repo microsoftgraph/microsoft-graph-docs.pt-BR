@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso auditActivityInitiator
 description: Identifica o objeto de recurso que inicia a atividade. O iniciador pode ser um usuário, um aplicativo ou um sistema (que é considerado como um aplicativo).
-localization_priority: Normal
+ms.localizationpriority: medium
 author: dhanyahk
 ms.prod: identity-and-access-reports
 doc_type: resourcePageType
-ms.openlocfilehash: 104e4a05e0c788c9fd71764f815b9305a8554f83d620cc6d01759fc86c794d1b
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: fac9b0852a53390b4c9f51ede4fec1acd707d4fe
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54197104"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59127063"
 ---
 # <a name="auditactivityinitiator-resource-type"></a>Tipo de recurso auditActivityInitiator
 

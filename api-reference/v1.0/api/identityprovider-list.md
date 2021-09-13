@@ -1,16 +1,16 @@
 ---
 title: Lista identityProviders
 description: Recuperar todos os identityProviders
-localization_priority: Priority
+ms.localizationpriority: high
 author: namkedia
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 3bcc64715c7e251f29ff00d9100ff6ce374a3975
-ms.sourcegitcommit: 5bb981b4853663354a566d4a4a5cbf288939e441
+ms.openlocfilehash: febf88e7439be7749696ef8d1dd1cba4e5fde4e6
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "53580259"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59080048"
 ---
 # <a name="list-identityproviders-deprecated"></a>Lista identityProviders (obsoleto)
 Namespace: microsoft.graph

@@ -1,16 +1,16 @@
 ---
 title: Obter eventMessage
 description: expanda o parâmetro na **propriedade de** navegação de eventos para obter o evento associado no calendário de um participante.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: harini84
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 4dc549c39c5113e972485fab647b5c4363b6ca14
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 3f2545a287b2385573cf7f61791ecbb4f518fcfc
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52048740"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59080118"
 ---
 # <a name="get-eventmessage"></a>Obter eventMessage
 
@@ -86,7 +86,7 @@ GET https://graph.microsoft.com/v1.0/me/messages/AAMkADYAAAImV_lAAA=
 ---
 
 #### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto de resposta exibido aqui pode ser encurtado para legibilidade.
+Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser reduzido para facilitar a leitura.
 <!-- {
   "blockType": "response",
   "name": "get_eventmessage",
@@ -193,7 +193,7 @@ GET https://graph.microsoft.com/v1.0/me/messages/AAMkADYAAAImV_jAAA=?$expand=mic
 ---
 
 #### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. As propriedades do evento correspondente são retornadas na resposta. Observação: o objeto de resposta exibido aqui pode ser encurtado para legibilidade.
+Veja a seguir um exemplo da resposta. As propriedades do evento correspondente são retornadas na resposta. Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "name": "get_event_based_on_eventmessage",

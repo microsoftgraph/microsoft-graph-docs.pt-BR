@@ -1,14 +1,14 @@
 ---
 title: Componente agenda no microsoft Graph Toolkit
 description: O componente web mgt-agenda é usado para representar eventos em um calendário de usuário ou grupo.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: nmetulev
-ms.openlocfilehash: 0cf1eff6e34716a30bc3479ec5c6d0ac4025442e4fcdbfa3ced1fe7a82b3bf47
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: c69c4adf43a16c3a8c8e6af643e89091c28dc4a4
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54134767"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59035350"
 ---
 # <a name="agenda-component-in-the-microsoft-graph-toolkit"></a>Componente agenda no microsoft Graph Toolkit
 
@@ -33,7 +33,7 @@ Por padrão, o componente busca eventos do ponto de extremidade e `mgt-agenda` e
 | show-max | showMax | Um número para indicar o número máximo de eventos a mostrar. O valor padrão não está definido (nenhum máximo). |
 | group-id | groupId | Uma ID de cadeia de caracteres para um calendário de grupo a ser usado em vez do calendário atual do usuário. |
 | event-query | eventQuery | Uma cadeia de caracteres que representa uma consulta alternativa a ser usada ao buscar eventos da Microsoft Graph. Opcionalmente, adicione o escopo delegado no final da cadeia de caracteres delimitando-o com `|` ( `/groups/GROUP-ID-GUID/calendar/calendarView | group.read.all` ). |
-| eventos | eventos | Uma matriz de eventos para obter ou definir a lista de eventos renderizados pelo componente - use essa propriedade para acessar os eventos carregados pelo componente. De definir esse valor para carregar seus próprios eventos - se o valor for definido pelo desenvolvedor, `date` os atributos , ou não terão `days` `event-query` efeito. |
+| events | events | Uma matriz de eventos para obter ou definir a lista de eventos renderizados pelo componente - use essa propriedade para acessar os eventos carregados pelo componente. De definir esse valor para carregar seus próprios eventos - se o valor for definido pelo desenvolvedor, `date` os atributos , ou não terão `days` `event-query` efeito. |
 | group-by-day | groupByDay | Um valor Boolean para agrupar eventos por dia - por padrão, os eventos não são agrupados. |
 | preferred-timezone | preferredTimezone | Nome do fuso horário preferencial a ser usado ao recuperar eventos do Microsoft Graph; por exemplo, `Pacific Standard Time` . Por padrão, esse atributo usa o fuso horário UTC. O fuso horário preferencial para o usuário atual pode ser recuperado chamando o ponto de extremidade e lendo o `me/mailboxSettings` valor da **propriedade timeZone.** |
 
@@ -125,7 +125,7 @@ Os exemplos a seguir ilustram como usar o `event` modelo:
 
 Para saber mais, confira [modelos](../customize-components/templates.md).
 
-## <a name="events"></a>Eventos
+## <a name="events"></a>Events
 
 Os eventos a seguir são disparados do controle.
 

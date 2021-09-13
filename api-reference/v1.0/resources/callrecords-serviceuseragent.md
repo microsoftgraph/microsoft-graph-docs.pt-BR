@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso serviceUserAgent
 description: O tipo serviceUserAgent
-localization_priority: Normal
+ms.localizationpriority: medium
 author: williamlooney
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: bb8880b130c763599d75c5542725f1bb0fe850bad532693a62ee73ff25ffbfb3
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 7421be4deaee6dad2d8b9177a43b09a27683b465
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54243627"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59113788"
 ---
 # <a name="serviceuseragent-resource-type"></a>Tipo de recurso serviceUserAgent
 
@@ -23,7 +23,7 @@ Representa um agente de usuário de serviço de um ponto de extremidade em uma c
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
 |applicationVersion|String|Identifica a versão do software de aplicativo usado por esse ponto de extremidade.|
-|headerValue|Cadeia de caracteres|Valor de header do agente do usuário relatado por esse ponto de extremidade.|
+|headerValue|String|Valor de header do agente do usuário relatado por esse ponto de extremidade.|
 |role|microsoft.graph.callRecords.serviceRole|Identifica a função do serviço usado por esse ponto de extremidade. Os valores possíveis são: `unknown` , , , , , , , , `customBot` `skypeForBusinessMicrosoftTeamsGateway` , , , `skypeForBusinessAudioVideoMcu` `skypeForBusinessApplicationSharingMcu` `skypeForBusinessCallQueues` , `skypeForBusinessAutoAttendant` `mediationServer` `mediationServerCloudConnectorEdition` `exchangeUnifiedMessagingService` `mediaController` `conferencingAnnouncementService` `conferencingAttendant` `audioTeleconferencerController` `skypeForBusinessUnifiedCommunicationApplicationPlatform` `responseGroupServiceAnnouncementService` `gateway` , `skypeTranslator` `skypeForBusinessAttendant` `responseGroupService` `voicemail` `unknownFutureValue` , .|
 
 ## <a name="json-representation"></a>Representação JSON

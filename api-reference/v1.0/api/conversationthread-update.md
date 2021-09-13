@@ -1,16 +1,16 @@
 ---
 title: Atualizar conversationthread
 description: Bloqueia ou desbloqueia um thread, para permitir ou evitar postar ainda mais no thread.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: dkershaw10
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: c1c07c5ede666ab8a2e1df918569f0de6766125f
-ms.sourcegitcommit: 5bb981b4853663354a566d4a4a5cbf288939e441
+ms.openlocfilehash: e4777a0dc2942451b23733a0a8bc7b7a37e46000
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "53579544"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59063521"
 ---
 # <a name="update-conversationthread"></a>Atualizar conversationthread
 

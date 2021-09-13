@@ -3,13 +3,13 @@ metadata:
   title: Perguntas frequentes do início rápido do Microsoft Graph
   description: Estas perguntas frequentes respondem dúvidas relacionadas aos Inícios Rápidos do Microsoft Graph.
   author: jasonjoh
-  localization_priority: Normal
-  ms.openlocfilehash: eacd894355f2ae9d298f797d00e14f02aa026786ad93efe39f07bbbda764c058
-  ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+  ms.localizationpriority: medium
+  ms.openlocfilehash: 9a102ce9cec318be5ced141dad413ad1cb45348e
+  ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
   ms.translationtype: MT
   ms.contentlocale: pt-BR
-  ms.lasthandoff: 08/05/2021
-  ms.locfileid: "54182256"
+  ms.lasthandoff: 09/12/2021
+  ms.locfileid: "59019046"
 title: Perguntas frequentes do início rápido do Microsoft Graph
 summary: >
   Estas perguntas frequentes respondem dúvidas relacionadas aos [Inícios Rápidos do Microsoft Graph](https://developer.microsoft.com/graph/quick-start).

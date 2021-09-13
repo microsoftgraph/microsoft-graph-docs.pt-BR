@@ -2,15 +2,15 @@
 title: Tipo de recurso tokenMeetingInfo
 description: O tipo tokenMeetingInfo.
 author: ananmishr
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 269cd5589539cb63b20d61e5103a273a083882a4ffa89446e1c6629444d1b9c5
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: d9abc9534d8e938f1dd4d783068ed81d22ca1ab1
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54159859"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59143654"
 ---
 # <a name="tokenmeetinginfo-resource-type"></a>Tipo de recurso tokenMeetingInfo
 

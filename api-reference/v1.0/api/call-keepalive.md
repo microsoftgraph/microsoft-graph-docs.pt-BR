@@ -2,15 +2,15 @@
 title: 'call: keepAlive'
 description: Faça uma solicitação a essa API a cada 15 a 45 minutos para garantir que uma chamada contínua permaneça viva.
 author: ananmishr
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: a2561e33810264587951ae3b20a19507bf6e6abf
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: a26b0b6cf2f9a3da8c19175bfbfffffd3276247b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52788119"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59053760"
 ---
 # <a name="call-keepalive"></a>call: keepAlive
 
@@ -31,7 +31,7 @@ Uma das seguintes permissões pode ser necessária para chamar essa API. Para sa
 | :-------------- | :------------------------------------------ |
 | Delegado (conta corporativa ou de estudante)     | Não suportado        |
 | Delegado (conta pessoal da Microsoft) | Não suportado        |
-| Aplicativo     | Nenhuma                                        |
+| Aplicativo     | None                                        |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->

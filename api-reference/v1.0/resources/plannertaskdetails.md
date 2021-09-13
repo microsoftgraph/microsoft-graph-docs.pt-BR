@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso plannerTaskDetails
 description: O **recurso plannerTaskDetails** representa as informações adicionais sobre uma tarefa. Cada objeto de tarefa tem um objeto details.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: 852deda3e48c78b2e70968cb7e8b7ec9a11956bbf2fcab66ecc127ea653abce9
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 54d15bdd49d7f8bc61dcc057cf77dd710ca0d8df
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54189391"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59052864"
 ---
 # <a name="plannertaskdetails-resource-type"></a>Tipo de recurso plannerTaskDetails
 
@@ -32,7 +32,7 @@ O **recurso plannerTaskDetails** representa as informações adicionais sobre um
 |checklist|[plannerChecklistItems](plannerchecklistitems.md)|A coleção de itens de lista de verificação na tarefa.|
 |description|Cadeia de caracteres|Descrição da tarefa|
 |id|String| Somente leitura. ID dos detalhes da tarefa. Tem 28 caracteres e diferencia maiúsculas de minúsculas. [Formatar validação](planner-identifiers-disclaimer.md) é feito no serviço.|
-|previewType|string|Isso define o tipo de visualização que aparece na tarefa. Os valores possíveis são: `automatic`, `noPreview`, `checklist`, `description`, `reference`. Quando definido para `automatic` a visualização exibida, é escolhido pelo aplicativo exibindo a tarefa.|
+|previewType|cadeia de caracteres|Isso define o tipo de visualização que aparece na tarefa. Os valores possíveis são: `automatic`, `noPreview`, `checklist`, `description`, `reference`. Quando definido para `automatic` a visualização exibida, é escolhido pelo aplicativo exibindo a tarefa.|
 |referências|[plannerExternalReferences](plannerexternalreferences.md)|A coleção de referências na tarefa.|
 
 ## <a name="relationships"></a>Relações

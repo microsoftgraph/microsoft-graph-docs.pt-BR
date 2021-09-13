@@ -2,15 +2,15 @@
 title: Atualizar deviceComplianceUserOverview
 description: Atualizar as propriedades de um objeto deviceComplianceUserOverview.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 51087a47ce7f02a6dcef35d8e8cd2700ea0acb8e
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 16312ac013b9119d4925213d4053ca8be05da8f5
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58797427"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59021054"
 ---
 # <a name="update-devicecomplianceuseroverview"></a>Atualizar deviceComplianceUserOverview
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {

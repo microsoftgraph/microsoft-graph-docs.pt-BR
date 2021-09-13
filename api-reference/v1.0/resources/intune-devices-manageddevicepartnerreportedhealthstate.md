@@ -2,15 +2,15 @@
 title: tipo denum managedDevicePartnerReportedHealthState
 description: Estados de saúde disponíveis para a API de Saúde do Dispositivo
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 81bbc4fb93ff2b7beea5a949b1a05ef0bdea8e06deb59dbf0ef240afa42724ae
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: c7ff45e140634c7683372628560a1fdb30efe446
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54182487"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59118219"
 ---
 # <a name="manageddevicepartnerreportedhealthstate-enum-type"></a>tipo denum managedDevicePartnerReportedHealthState
 
