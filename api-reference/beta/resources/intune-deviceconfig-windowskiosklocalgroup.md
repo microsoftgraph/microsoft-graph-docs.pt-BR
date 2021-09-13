@@ -2,15 +2,15 @@
 title: Tipo de recurso windowsKioskLocalGroup
 description: A classe usada para identificar um grupo local para a configuração de quiosque
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 43e649a295cb62b928a7cc1bbbeb63efcb73318e
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: e5cff8f5383ac15ff14da715a02bd19f0dcfc734
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58808843"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59086439"
 ---
 # <a name="windowskiosklocalgroup-resource-type"></a>Tipo de recurso windowsKioskLocalGroup
 
@@ -28,7 +28,7 @@ Herda do [windowsKioskUser](../resources/intune-deviceconfig-windowskioskuser.md
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|groupName|Cadeia de caracteres|O nome do grupo local que será bloqueado para essa configuração de quiosque|
+|groupName|Cadeia de Caracteres|O nome do grupo local que será bloqueado para essa configuração de quiosque|
 
 ## <a name="relationships"></a>Relações
 Nenhum

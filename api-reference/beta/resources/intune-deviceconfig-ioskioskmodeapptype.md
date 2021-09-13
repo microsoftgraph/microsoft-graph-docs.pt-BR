@@ -2,15 +2,15 @@
 title: Tipo denum iosKioskModeAppType
 description: Opções de origem do aplicativo para o modo de quiosque do iOS.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 6edea6b1b8aca4df8c5fd4873e516d9eb89d0a53
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 0bc6c6459c91ed7e1f587dcbe1f892a224b1be10
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58790910"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59127343"
 ---
 # <a name="ioskioskmodeapptype-enum-type"></a>Tipo denum iosKioskModeAppType
 

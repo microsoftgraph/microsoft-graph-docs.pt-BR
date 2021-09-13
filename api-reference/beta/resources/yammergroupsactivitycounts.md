@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso yammerGroupsActivityCounts
 description: Veja a seguir uma representação JSON do recurso.
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: reports
 author: sarahwxy
 doc_type: resourcePageType
-ms.openlocfilehash: 613570e32b9cb8eee3d7dc1341cb9cb20bc530768022586717486d19dc355539
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: e836782f58d61c2aeed698b8045e0e220dd166c6
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54219553"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59128477"
 ---
 # <a name="yammergroupsactivitycounts-resource-type"></a>Tipo de recurso yammerGroupsActivityCounts
 
@@ -25,7 +25,7 @@ Namespace: microsoft.graph
 | postado            | Int64  |
 | leitura              | Int64  |
 | reportDate        | Data   |
-| reportPeriod      | Cadeia de caracteres |
+| reportPeriod      | Cadeia de Caracteres |
 
 ## <a name="json-representation"></a>Representação JSON
 

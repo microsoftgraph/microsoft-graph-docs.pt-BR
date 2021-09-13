@@ -2,15 +2,15 @@
 title: Tipo de recurso windowsKioskWin32App
 description: Suporte a aplicativos do KioskModeApp v4 para Win32
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: c8cd69ca7399e83e4a262ab017327de22cb3ba26
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: c940e7c8d2e7c161ed1fbeff5a3ff02039f55205
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58805391"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59105920"
 ---
 # <a name="windowskioskwin32app-resource-type"></a>Tipo de recurso windowsKioskWin32App
 
@@ -32,11 +32,11 @@ Herda do [windowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappb
 |nome|Cadeia de caracteres|Representa o nome amigável de um aplicativo Herdado do [windowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md)|
 |appType|[windowsKioskAppType](../resources/intune-deviceconfig-windowskioskapptype.md)|O tipo de aplicativo Herdado do [windowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md). Os valores possíveis são: `unknown`, `store`, `desktop`, `aumId`.|
 |autoLaunch|Boleano|Permitir que o aplicativo seja lançado automaticamente no modo de quiosque de vários aplicativos Herdado do [windowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md)|
-|classicAppPath|Cadeia de caracteres|Este é o classicapppath a ser usado pelo aplicativo v4 Win32 enquanto estiver no modo Quiosque|
+|classicAppPath|Cadeia de Caracteres|Este é o classicapppath a ser usado pelo aplicativo v4 Win32 enquanto estiver no modo Quiosque|
 |edgeNoFirstRun|Boleano|Sinalizador de primeira corrida de borda para o modo de quiosque de borda|
 |edgeKioskIdleTimeoutMinutes|Int32|Tempo limite ocioso do quiosque de borda em minutos para o modo quiosque de Borda. Valores válidos de 0 a 1440|
 |edgeKioskType|[windowsEdgeKioskType](../resources/intune-deviceconfig-windowsedgekiosktype.md)|Tipo de quiosque de borda para modo quiosque de borda. Os valores possíveis são: `publicBrowsing` e `fullScreen`.|
-|edgeKiosk|Cadeia de caracteres|Quiosque de borda (url) para o modo de quiosque de borda|
+|edgeKiosk|Cadeia de Caracteres|Quiosque de borda (url) para o modo de quiosque de borda|
 
 ## <a name="relationships"></a>Relações
 Nenhum

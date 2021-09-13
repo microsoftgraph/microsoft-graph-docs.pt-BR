@@ -2,15 +2,15 @@
 title: Listar macOSSoftwareUpdateCategorySummaries
 description: Listar propriedades e relações dos objetos macOSSoftwareUpdateCategorySummary.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e8d902dfbc8f3c564a42fcf364390e77d7566e5d
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: d95e69b9d5c504f9f82ab933bd3e9ccca64b9e5e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58789141"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59112731"
 ---
 # <a name="list-macossoftwareupdatecategorysummaries"></a>Listar macOSSoftwareUpdateCategorySummaries
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
+|Aplicativo|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {

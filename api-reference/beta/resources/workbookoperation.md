@@ -1,16 +1,16 @@
 ---
 title: tipo de recurso workbookOperation
 description: Representa o status de operações de uma área de trabalho de longa duração.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: grangeryy
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 373183806b6c23e494aeb8a76f0b156ac5cac62ac064b7f78f66c9650968df4b
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: e27d38aa1c04ca3be43955d15131b927f89fa5cc
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54200261"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59119741"
 ---
 # <a name="workbookoperation-resource-type"></a>tipo de recurso workbookOperation
 
@@ -20,7 +20,7 @@ Representa o status de uma operação de manual de trabalho de longa duração.
 
 | Método       | Tipo de retorno | Descrição |
 |:-------------|:------------|:------------|
-| [Obter workbookOperation](../api/workbookoperation-get.md) | [workbookOperation](workbookoperation.md) | Recupere o status de um **objeto workbookOperation.** |
+| [Obter workbookOperation](../api/workbookoperation-get.md) | coleção [workbookOperation](workbookoperation.md) | Recupere o status de um **objeto workbookOperation.** |
 
 ## <a name="properties"></a>Propriedades
 
@@ -29,7 +29,7 @@ Representa o status de uma operação de manual de trabalho de longa duração.
 |id|Cadeia de caracteres| A id da operação. Somente leitura.|
 |status|Cadeia de caracteres| O status atual da operação. Os valores possíveis são: `notStarted`, `running`, `succeeded`, `failed`.|
 |erro|[workbookOperationError](workbookoperationerror.md)| O erro retornado pela operação.|
-|resourceLocation|Cadeia de caracteres| O URI do recurso para o resultado.|
+|resourceLocation|Cadeia de Caracteres| O URI do recurso para o resultado.|
 
 ## <a name="relationships"></a>Relações
 

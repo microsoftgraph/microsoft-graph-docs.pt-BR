@@ -2,15 +2,15 @@
 title: tipo de número androidForWorkRequiredPasswordType
 description: Tipo de senha necessário para Android For Work.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 56d2009f246c6c1511225c5c6b3b7c952471ce8c
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 8bdb494ca1fa1f1d0e48a2c69b7ce1a189363012
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58798115"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59106424"
 ---
 # <a name="androidforworkrequiredpasswordtype-enum-type"></a>tipo de número androidForWorkRequiredPasswordType
 

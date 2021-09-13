@@ -2,15 +2,15 @@
 title: Atualizar userExperienceAnalyticsAppHealthAppPerformanceByOSVersion
 description: Atualize as propriedades de um objeto userExperienceAnalyticsAppHealthAppPerformanceByOSVersion.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 18d8e8db78f07efcec437df1c46a5d20b2f9556f
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 0dcfdfc9733323905617660896c7e39ff69e2e80
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58800202"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59102826"
 ---
 # <a name="update-userexperienceanalyticsapphealthappperformancebyosversion"></a>Atualizar userExperienceAnalyticsAppHealthAppPerformanceByOSVersion
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementManagedDevices.ReadWrite.All|
+|Aplicativo|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -55,11 +55,11 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [o userE
 |:---|:---|:---|
 |id|Cadeia de caracteres|O identificador exclusivo do objeto de desempenho de versão do aplicativo de análise de experiência do usuário.|
 |osVersion|String|A versão do sistema operacional do aplicativo.|
-|osBuildNumber|Cadeia de caracteres|O número de com build do sistema operacional do aplicativo.|
+|osBuildNumber|Cadeia de Caracteres|O número de com build do sistema operacional do aplicativo.|
 |activeDeviceCount|Int32|O número de dispositivos em que o aplicativo está ativo. Valores válidos -2147483648 para 2147483647|
 |appName|Cadeia de caracteres|O nome do aplicativo.|
 |appDisplayName|Cadeia de caracteres|O nome amigável do aplicativo.|
-|appPublisher|Cadeia de caracteres|O editor do aplicativo.|
+|appPublisher|Cadeia de Caracteres|O editor do aplicativo.|
 |appUsageDuration|Int32|O tempo total de uso do aplicativo em minutos. Valores válidos -2147483648 para 2147483647|
 |appCrashCount|Int32|O número de falhas para o aplicativo. Valores válidos -2147483648 para 2147483647|
 |meanTimeToFailureInMinutes|Int32|O tempo de falha média do aplicativo em minutos. Valores válidos -2147483648 para 2147483647|

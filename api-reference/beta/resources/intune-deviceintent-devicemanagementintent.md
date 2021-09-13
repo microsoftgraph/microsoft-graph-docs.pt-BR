@@ -2,15 +2,15 @@
 title: Tipo de recurso deviceManagementIntent
 description: Entidade que representa a intenção de aplicar configurações a um dispositivo
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 465abb5a003817f596eb70067b8ac6b5a28e94e7
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 9fc62b48b702a015d3d30e373d8eab5b2ba14369
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58759432"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59137963"
 ---
 # <a name="devicemanagementintent-resource-type"></a>Tipo de recurso deviceManagementIntent
 
@@ -28,7 +28,7 @@ Entidade que representa a intenção de aplicar configurações a um dispositivo
 |[Listar deviceManagementIntents](../api/intune-deviceintent-devicemanagementintent-list.md)|[Coleção deviceManagementIntent](../resources/intune-deviceintent-devicemanagementintent.md)|Listar propriedades e relações dos [objetos deviceManagementIntent.](../resources/intune-deviceintent-devicemanagementintent.md)|
 |[Obter deviceManagementIntent](../api/intune-deviceintent-devicemanagementintent-get.md)|[deviceManagementIntent](../resources/intune-deviceintent-devicemanagementintent.md)|Leia propriedades e relações do [objeto deviceManagementIntent.](../resources/intune-deviceintent-devicemanagementintent.md)|
 |[Criar deviceManagementIntent](../api/intune-deviceintent-devicemanagementintent-create.md)|[deviceManagementIntent](../resources/intune-deviceintent-devicemanagementintent.md)|Crie um novo [objeto deviceManagementIntent.](../resources/intune-deviceintent-devicemanagementintent.md)|
-|[Excluir deviceManagementIntent](../api/intune-deviceintent-devicemanagementintent-delete.md)|Nenhum(a)|Exclui um [deviceManagementIntent](../resources/intune-deviceintent-devicemanagementintent.md).|
+|[Excluir deviceManagementIntent](../api/intune-deviceintent-devicemanagementintent-delete.md)|Nenhum|Exclui um [deviceManagementIntent](../resources/intune-deviceintent-devicemanagementintent.md).|
 |[Atualizar deviceManagementIntent](../api/intune-deviceintent-devicemanagementintent-update.md)|[deviceManagementIntent](../resources/intune-deviceintent-devicemanagementintent.md)|Atualize as propriedades de [um objeto deviceManagementIntent.](../resources/intune-deviceintent-devicemanagementintent.md)|
 |[ação updateSettings](../api/intune-deviceintent-devicemanagementintent-updatesettings.md)|Nenhuma|Ainda não documentado|
 |[Ação migrateToTemplate](../api/intune-deviceintent-devicemanagementintent-migratetotemplate.md)|Nenhuma|Ainda não documentado|
@@ -41,16 +41,16 @@ Entidade que representa a intenção de aplicar configurações a um dispositivo
 |:---|:---|:---|
 |id|Cadeia de caracteres|A ID de intenção|
 |displayName|Cadeia de caracteres|O nome de exibição dado pelo usuário|
-|descrição|Cadeia de caracteres|A descrição dada pelo usuário|
+|description|Cadeia de caracteres|A descrição dada pelo usuário|
 |isAssigned|Boolean|Significa se a intenção é atribuída ou não aos usuários|
 |lastModifiedDateTime|DateTimeOffset|Quando a intenção foi modificada pela última vez|
-|templateId|Cadeia de caracteres|A ID do modelo de que essa intenção foi criada (se alguma)|
-|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de marcas de escopo para esta instância entity.|
+|templateId|Cadeia de Caracteres|A ID do modelo de que essa intenção foi criada (se alguma)|
+|roleScopeTagIds|String collection|Lista de marcas de escopo para esta instância entity.|
 
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|
 |:---|:---|:---|
-|settings|[Coleção deviceManagementSettingInstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md)|Coleção de todas as configurações a serem aplicadas|
+|configurações|[Coleção deviceManagementSettingInstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md)|Coleção de todas as configurações a serem aplicadas|
 |categories|[Coleção deviceManagementIntentSettingCategory](../resources/intune-deviceintent-devicemanagementintentsettingcategory.md)|Coleção de categorias de configuração dentro da intenção|
 |assignments|[Coleção deviceManagementIntentAssignment](../resources/intune-deviceintent-devicemanagementintentassignment.md)|Coleção de atribuições|
 |deviceSettingStateSummaries|[coleção deviceManagementIntentDeviceSettingStateSummary](../resources/intune-deviceintent-devicemanagementintentdevicesettingstatesummary.md)|Coleção de configurações e seus estados e contagens de dispositivos que pertencem ao estado correspondente para todas as configurações dentro da intenção|
