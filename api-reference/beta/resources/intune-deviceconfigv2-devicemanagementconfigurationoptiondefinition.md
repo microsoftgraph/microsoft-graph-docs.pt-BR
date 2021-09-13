@@ -2,15 +2,15 @@
 title: Tipo de recurso deviceManagementConfigurationOptionDefinition
 description: Ainda não documentado
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4657cbd3ff5ea358a6cfca315b32ff87e0f5b5e7
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: c777696faf53ac5f4f048a79ed579d8a3991a8cf
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58816272"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59040306"
 ---
 # <a name="devicemanagementconfigurationoptiondefinition-resource-type"></a>Tipo de recurso deviceManagementConfigurationOptionDefinition
 
@@ -28,10 +28,10 @@ Ainda não documentado
 |optionValue|[deviceManagementConfigurationSettingValue](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingvalue.md)|Valor da opção|
 |dependentOn|[Coleção deviceManagementConfigurationDependentOn](../resources/intune-deviceconfigv2-devicemanagementconfigurationdependenton.md)|Lista de configurações dependentes para essa opção|
 |dependedOnBy|[Coleção deviceManagementConfigurationSettingDependedOnBy](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdependedonby.md)|Lista de Configurações que depende dessa opção|
-|itemId|Cadeia de caracteres|Identificador de opção|
+|itemId|Cadeia de Caracteres|Identificador de opção|
 |description|Cadeia de caracteres|Descrição da opção|
-|helpText|Cadeia de caracteres|Texto de ajuda da opção|
-|nome|String|Nome da opção|
+|helpText|Cadeia de Caracteres|Texto de ajuda da opção|
+|nome|Cadeia de caracteres|Nome da opção|
 |displayName|Cadeia de caracteres|Nome amigável da opção|
 
 ## <a name="relationships"></a>Relações

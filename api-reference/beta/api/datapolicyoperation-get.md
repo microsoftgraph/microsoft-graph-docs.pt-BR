@@ -1,16 +1,16 @@
 ---
 title: Obter dataPolicyOperation
 description: Recupere as propriedades do objeto dataPolicyOperation.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: dkershaw10
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: c96cf23c137c0b518d0b9819a52a23631b1cd488
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 67051f881ba3ef92c596a8e4175bde61f8c7d670
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52046990"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59078249"
 ---
 # <a name="get-datapolicyoperation"></a>Obter dataPolicyOperation
 
@@ -25,7 +25,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) |  User.Export.All e User.Read.All  |
 |Delegado (conta pessoal da Microsoft) |  Não aplicável  |
-|Application | User.Export.All e User.Read.All | 
+|Aplicativo | User.Export.All e User.Read.All | 
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -72,7 +72,7 @@ GET https://graph.microsoft.com/beta/dataPolicyOperations/{id}
 ---
 
 ##### <a name="response"></a>Resposta
-Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+Observação: o objeto de resposta exibido aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -2,15 +2,15 @@
 title: Tipo de número userPfxPaddingScheme
 description: Valores com suporte para o esquema de preenchimento usado pelo provedor de criptografia.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 2bcc46dfe6bfdf96f996627f06215e5e7a4b6a9b
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 64d1ebd0cf28e95264423bf1b5b08bf8d90e7b01
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58802723"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59074819"
 ---
 # <a name="userpfxpaddingscheme-enum-type"></a>Tipo de número userPfxPaddingScheme
 

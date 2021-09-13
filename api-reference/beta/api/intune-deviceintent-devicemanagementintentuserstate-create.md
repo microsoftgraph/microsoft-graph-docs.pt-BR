@@ -2,15 +2,15 @@
 title: Criar deviceManagementIntentUserState
 description: Crie um novo objeto deviceManagementIntentUserState.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b7cf97530621bfddee4b9366b6a8297e29e94205
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: d37322eb9c127d6eade26bb2e2849cd966532402
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58820594"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59082659"
 ---
 # <a name="create-devicemanagementintentuserstate"></a>Criar deviceManagementIntentUserState
 
@@ -27,8 +27,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -54,7 +54,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar deviceMa
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|String|A ID|
-|userPrincipalName|String|O nome principal do usuário que está sendo relatado em um dispositivo|
+|userPrincipalName|Cadeia de caracteres|O nome principal do usuário que está sendo relatado em um dispositivo|
 |userName|Cadeia de caracteres|O nome de usuário que está sendo relatado em um dispositivo|
 |deviceCount|Int32|Contagem de dispositivos que pertencem a um usuário para uma intenção|
 |lastReportedDateTime|DateTimeOffset|Data da última modificação de um relatório de intenção|

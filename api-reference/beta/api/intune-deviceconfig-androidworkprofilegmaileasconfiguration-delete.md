@@ -2,15 +2,15 @@
 title: Excluir androidWorkProfileGmailEasConfiguration
 description: Exclui um androidWorkProfileGmailEasConfiguration.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3274cd310cc9bcf3eba7cf19be9b73ef1adacfec
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: ca2dd2d098abf087648ae8f2d5c47a31de3e9802
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58794241"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59035042"
 ---
 # <a name="delete-androidworkprofilegmaileasconfiguration"></a>Excluir androidWorkProfileGmailEasConfiguration
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {

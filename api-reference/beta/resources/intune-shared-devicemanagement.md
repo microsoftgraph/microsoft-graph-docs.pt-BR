@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso deviceManagement
 description: 'O recurso deviceManagement representa um contêiner cujo conteúdo varia de acordo com o fluxo de trabalho, incluindo:  '
-localization_priority: Normal
+ms.localizationpriority: medium
 author: rolyon
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: c5d6a6d09515c4717c0c45442e80875e5a340968
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: c1562f91f3728830f4d220063651d03823c052eb
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58815467"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59039130"
 ---
 # <a name="devicemanagement-resource-type"></a>Tipo de recurso deviceManagement
 
@@ -39,7 +39,7 @@ O recurso deviceManagement representa um contêiner cujo conteúdo varia de acor
 - Acesso remoto
 - Parceiros de assistência remota
 - Políticas de controle de acesso baseado em função (RBAC)
-- Reporting
+- Relatórios
 - Parceiros de gerenciamento de expansão de telecomunicações
 - Solução de problemas de eventos
 - Windows Resumos da Proteção de Informações
@@ -67,7 +67,7 @@ O recurso deviceManagement representa um contêiner cujo conteúdo varia de acor
 |id|Cadeia de caracteres|Identificador exclusivo associado ao dispositivo.|
 |**Configuração do dispositivo**|
 |intuneAccountId|Guid|ID da conta do Intune para determinado locatário|
-|legacyPcManangementEnabled|Boolean|A propriedade para habilitar o gerenciamento de computador herdado não-MDM gerenciado para essa conta. Essa propriedade é somente leitura.|
+|legacyPcManangementEnabled|Boleano|A propriedade para habilitar o gerenciamento de computador herdado não-MDM gerenciado para essa conta. Essa propriedade é somente leitura.|
 |maximumDepTokens|Int32|Número máximo de tokens DEP permitidos por locatário.|
 |settings|[deviceManagementSettings](../resources/intune-deviceconfig-devicemanagementsettings.md)|Configurações de nível da conta.|
 |**Gerenciamento de dispositivo**|

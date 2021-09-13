@@ -2,15 +2,15 @@
 title: Criar androidDeviceOwnerEnrollmentProfile
 description: Crie um novo objeto androidDeviceOwnerEnrollmentProfile.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 94f9e856413c44cf375ba9ec3360e44ecd820f37
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 89fd5f481b8c6275d8a209e42c39d31c26a226fc
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58817639"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59071396"
 ---
 # <a name="create-androiddeviceownerenrollmentprofile"></a>Criar androidDeviceOwnerEnrollmentProfile
 
@@ -27,8 +27,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -54,8 +54,8 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar o androi
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |accountId|String|GUID de locatário ao qual o perfil de registro pertence.|
-|id|Cadeia de caracteres|GUID exclusivo do perfil de registro.|
-|displayName|Cadeia de caracteres|Nome de exibição do perfil de registro.|
+|id|String|GUID exclusivo do perfil de registro.|
+|displayName|String|Nome de exibição do perfil de registro.|
 |description|Cadeia de caracteres|Descrição do perfil de registro.|
 |enrollmentMode|[androidDeviceOwnerEnrollmentMode](../resources/intune-androidforwork-androiddeviceownerenrollmentmode.md)|O modo de registro de dispositivos que usam esse perfil de registro. Os valores possíveis são: `corporateOwnedDedicatedDevice`, `corporateOwnedFullyManaged`, `corporateOwnedWorkProfile`.|
 |enrollmentTokenType|[androidDeviceOwnerEnrollmentTokenType](../resources/intune-androidforwork-androiddeviceownerenrollmenttokentype.md)|O tipo de token de registro para um perfil de registro. Os valores possíveis são: `default` e `corporateOwnedDedicatedDeviceWithAzureADSharedMode`.|
@@ -67,7 +67,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar o androi
 |enrolledDeviceCount|Int32|Número total de dispositivos Android que foram registrados usando esse perfil de registro.|
 |qrCodeContent|String|Cadeia de caracteres usada para gerar um código QR para o token.|
 |qrCodeImage|[mimeContent](../resources/intune-shared-mimecontent.md)|Cadeia de caracteres usada para gerar um código QR para o token.|
-|roleScopeTagIds|Coleção String|Lista de marcas de escopo para esta instância entity.|
+|roleScopeTagIds|Conjunto de cadeias de caracteres|Lista de marcas de escopo para esta instância entity.|
 
 
 

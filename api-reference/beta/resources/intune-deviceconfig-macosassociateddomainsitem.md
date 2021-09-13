@@ -2,15 +2,15 @@
 title: Tipo de recurso macOSAssociatedDomainsItem
 description: Um mapeamento de identificadores de aplicativos para domínios associados.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 2658a02a4881e793879a68bc6d1822d9a9b2a0a5
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: e1229706d524cb16c9c66c1acf4c7fb86e65ede0
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58819140"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59081322"
 ---
 # <a name="macosassociateddomainsitem-resource-type"></a>Tipo de recurso macOSAssociatedDomainsItem
 
@@ -26,8 +26,8 @@ Um mapeamento de identificadores de aplicativos para domínios associados.
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |applicationIdentifier|Cadeia de caracteres|O identificador de aplicativo do aplicativo ao que associar domínios.|
-|domínios|Coleção de cadeias de caracteres|A lista de domínios a ser associado.|
-|directDownloadsEnabled|Booliano|Determina se os dados devem ser baixados diretamente ou por meio de um CDN.|
+|domínios|Conjunto de cadeias de caracteres|A lista de domínios a ser associado.|
+|directDownloadsEnabled|Boolean|Determina se os dados devem ser baixados diretamente ou por meio de um CDN.|
 
 ## <a name="relationships"></a>Relações
 Nenhum

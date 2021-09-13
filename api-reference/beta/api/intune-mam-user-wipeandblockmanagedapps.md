@@ -2,15 +2,15 @@
 title: Ação wipeAndBlockManagedApps
 description: Bloqueia o usuário do aplicativo gerenciado do check-in do aplicativo.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: eae8145ccb53da62fcbe979fb2caf07421b97b4b
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 7ab954f87d339db6845877c4cbe799e0c160d5f1
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58803339"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59082043"
 ---
 # <a name="wipeandblockmanagedapps-action"></a>Ação wipeAndBlockManagedApps
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementApps.ReadWrite.All|
+|Aplicativo|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {

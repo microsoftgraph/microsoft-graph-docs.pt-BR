@@ -2,15 +2,15 @@
 title: Tipo de número managedAppNotificationRestriction
 description: Restringir a notificação de aplicativo gerenciado
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: d5b90778763809f58ee8fef5ad29c59d4fbc1fd1
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 3814ea5888c3318b057781f3ca538ba3a76281fe
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58757941"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59075071"
 ---
 # <a name="managedappnotificationrestriction-enum-type"></a>Tipo de número managedAppNotificationRestriction
 

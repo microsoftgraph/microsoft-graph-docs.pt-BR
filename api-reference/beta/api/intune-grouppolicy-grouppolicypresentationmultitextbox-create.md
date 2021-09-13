@@ -2,15 +2,15 @@
 title: Criar groupPolicyPresentationMultiTextBox
 description: Crie um novo objeto groupPolicyPresentationMultiTextBox.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a8e580bece68f7cd5be451be04dea9d518349f21
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 7b545f4f039ce8c6833ccce9cd3d544e9c79f4e9
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58790245"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59082176"
 ---
 # <a name="create-grouppolicypresentationmultitextbox"></a>Criar groupPolicyPresentationMultiTextBox
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -56,7 +56,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar o groupP
 |rótulo|Cadeia de caracteres|Rótulo de texto localizado para qualquer entidade de apresentação. O valor padrão é vazio. Herdado [de groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
 |id|Cadeia de caracteres|Chave da entidade. Herdado [de groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
 |lastModifiedDateTime|DateTimeOffset|A data e a hora em que a entidade foi modificada pela última vez. Herdado [de groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
-|obrigatório|Booliano|Requisito para inserir um valor na caixa de texto. O valor padrão é falso.|
+|obrigatório|Boolean|Requisito para inserir um valor na caixa de texto. O valor padrão é falso.|
 |maxLength|Int64|Um inteiro não assinado que especifica o número máximo de caracteres de texto. O valor padrão é 1023.|
 |maxStrings|Int64|Um inteiro não assinado que especifica o número máximo de cadeias de caracteres. O valor padrão é 0.|
 

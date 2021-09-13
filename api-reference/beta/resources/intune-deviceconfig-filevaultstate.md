@@ -2,15 +2,15 @@
 title: Tipo denum fileVaultState
 description: Estado FileVault
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 942612457d21b587ccfcfff8720216ade2e1be72
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 1d9e037eb75fa331e082db5ca19e213c91a927c8
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58795547"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59075491"
 ---
 # <a name="filevaultstate-enum-type"></a>Tipo denum fileVaultState
 

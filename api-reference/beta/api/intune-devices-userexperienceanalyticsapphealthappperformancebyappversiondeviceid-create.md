@@ -2,15 +2,15 @@
 title: Criar userExperienceAnalyticsAppHealthAppPerformanceByAppVersionDeviceId
 description: Crie um novo objeto userExperienceAnalyticsAppHealthAppPerformanceByAppVersionDeviceId.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: daeda1972a1f8980107d6bb2b83b3eb13abe8aaf
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 042e373eb43049ad36d73443a9779f25fbc2195e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58780296"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59077129"
 ---
 # <a name="create-userexperienceanalyticsapphealthappperformancebyappversiondeviceid"></a>Criar userExperienceAnalyticsAppHealthAppPerformanceByAppVersionDeviceId
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementManagedDevices.ReadWrite.All|
+|Aplicativo|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -53,13 +53,13 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar o userEx
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|O identificador exclusivo do objeto de desempenho do aplicativo de análise de experiência do usuário.|
+|id|String|O identificador exclusivo do objeto de desempenho do aplicativo de análise de experiência do usuário.|
 |deviceId|Cadeia de caracteres|A id do dispositivo.|
 |deviceDisplayName|Cadeia de caracteres|O nome do dispositivo.|
 |processedDateTime|DateTimeOffset|A data e a hora em que as estatísticas foram computadas pela última vez.|
 |appName|Cadeia de caracteres|O nome do aplicativo.|
 |appDisplayName|Cadeia de caracteres|O nome amigável do aplicativo.|
-|appPublisher|Cadeia de caracteres|O editor do aplicativo.|
+|appPublisher|Cadeia de Caracteres|O editor do aplicativo.|
 |appVersion|Cadeia de caracteres|A versão do aplicativo.|
 |appCrashCount|Int32|O número de falhas para o aplicativo. Valores válidos -2147483648 para 2147483647|
 

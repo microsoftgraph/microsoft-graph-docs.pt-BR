@@ -2,15 +2,15 @@
 title: Criar intuneBrandingProfile
 description: Crie um novo objeto intuneBrandingProfile.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ce308e77d81ba13897fe6412316d1d46db63eadf
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: d723017d414758ecb88a4b8ef1f6c28165d98102
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58791239"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59041238"
 ---
 # <a name="create-intunebrandingprofile"></a>Criar intuneBrandingProfile
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementApps.ReadWrite.All|
+|Aplicativo|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -54,8 +54,8 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar o intune
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|Cadeia de caracteres|Chave de Perfil|
-|profileName|Cadeia de caracteres|Nome do perfil|
-|profileDescription|Cadeia de caracteres|Descrição do perfil|
+|profileName|Cadeia de Caracteres|Nome do perfil|
+|profileDescription|Cadeia de Caracteres|Descrição do perfil|
 |isDefaultProfile|Boleano|Boolean que representa se o perfil é usado como padrão ou não|
 |createdDateTime|DateTimeOffset|Hora em que o BrandingProfile foi criado|
 |lastModifiedDateTime|DateTimeOffset|Hora em que o BrandingProfile foi modificado pela última vez|
@@ -73,9 +73,9 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar o intune
 |onlineSupportSiteUrl|Cadeia de caracteres|URL para o site de ajuda de IT da empresa/organização|
 |onlineSupportSiteName|Cadeia de caracteres|Nome de exibição do site de ajuda de IT da empresa/organização|
 |privacyUrl|Cadeia de caracteres|URL para a política de privacidade da empresa/organização|
-|customPrivacyMessage|Cadeia de caracteres|Comentários de texto sobre o que o administrador não tem acesso no dispositivo|
-|customCanSeePrivacyMessage|Cadeia de caracteres|Comentários de texto sobre o que o administrador tem acesso no dispositivo|
-|customCantSeePrivacyMessage|Cadeia de caracteres|Comentários de texto sobre o que o administrador não tem acesso no dispositivo|
+|customPrivacyMessage|Cadeia de Caracteres|Comentários de texto sobre o que o administrador não tem acesso no dispositivo|
+|customCanSeePrivacyMessage|Cadeia de Caracteres|Comentários de texto sobre o que o administrador tem acesso no dispositivo|
+|customCantSeePrivacyMessage|Cadeia de Caracteres|Comentários de texto sobre o que o administrador não tem acesso no dispositivo|
 |isRemoveDeviceDisabled|Boleano|Boolean que representa se o administrador desabilitou a ação "Remover Dispositivo" em dispositivos de propriedade corporativa.|
 |isFactoryResetDisabled|Boleano|Boolean que representa se o administrador desabilitou a ação 'Redefinição de Fábrica' em dispositivos de propriedade corporativa.|
 |companyPortalBlockedActions|[Coleção companyPortalBlockedAction](../resources/intune-shared-companyportalblockedaction.md)|Coleção de ações bloqueadas no portal da empresa de acordo com os tipos de propriedade da plataforma e do dispositivo.|
@@ -84,7 +84,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar o intune
 |sendDeviceOwnershipChangePushNotification|Boleano|Boolean que indica se uma notificação por push é enviada aos usuários quando o tipo de propriedade do dispositivo muda de pessoal para corporativo|
 |enrollmentAvailability|[enrollmentAvailabilityOptions](../resources/intune-shared-enrollmentavailabilityoptions.md)|Fluxo de registro de dispositivo personalizado exibido para o usuário final . Os valores possíveis são: `availableWithPrompts`, `availableWithoutPrompts`, `unavailable`.|
 |disableClientTelemetry|Boleano|Aplica-se à telemetria enviada de todos os clientes para o serviço do Intune. Quando desabilitado, todos os avisos de solução de problemas e problemas proativos dentro do cliente são desativados, e as configurações de telemetria aparecem inativas ou ocultas para o usuário do dispositivo.|
-|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de marcas de escopo atribuídas ao perfil de identidade visual|
+|roleScopeTagIds|Conjunto de cadeias de caracteres|Lista de marcas de escopo atribuídas ao perfil de identidade visual|
 
 
 

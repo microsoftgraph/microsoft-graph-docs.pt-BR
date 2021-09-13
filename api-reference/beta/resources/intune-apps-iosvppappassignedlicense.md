@@ -2,15 +2,15 @@
 title: Tipo de recurso iosVppAppAssignedLicense
 description: Atribuição de licença do Programa de Compra de Volume do iOS. Essa classe não oferece suporte para Criar, Excluir ou Atualizar.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: a40d788a632ab9d746dba774388e9ab9df4323d9
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: fac0e129a81e54dadb1fe4d12ebcdea1e7e4ca39
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58820545"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59081497"
 ---
 # <a name="iosvppappassignedlicense-resource-type"></a>Tipo de recurso iosVppAppAssignedLicense
 
@@ -34,7 +34,7 @@ Atribuição de licença do Programa de Compra de Volume do iOS. Essa classe nã
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Chave da entidade.|
+|id|String|Chave da entidade.|
 |userEmailAddress|Cadeia de caracteres|O endereço de email do usuário.|
 |userId|Cadeia de caracteres|A ID do usuário.|
 |userName|Cadeia de caracteres|O nome do usuário.|

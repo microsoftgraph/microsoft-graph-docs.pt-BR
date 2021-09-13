@@ -2,15 +2,15 @@
 title: Tipo de recurso deviceManagementConfigurationPolicyTemplateReference
 description: Informações de referência do modelo de política
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 5f960efbfa341433736d0a02fb3fbb1c992658e8
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: c0558aaccc89baf72773c2e958c8f32aff007640
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58795533"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59069009"
 ---
 # <a name="devicemanagementconfigurationpolicytemplatereference-resource-type"></a>Tipo de recurso deviceManagementConfigurationPolicyTemplateReference
 
@@ -25,10 +25,10 @@ Informações de referência do modelo de política
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|templateId|Cadeia de caracteres|ID do modelo|
+|templateId|String|ID do modelo|
 |templateFamily|[deviceManagementConfigurationTemplateFamily](../resources/intune-deviceconfigv2-devicemanagementconfigurationtemplatefamily.md)|Família de modelos do Modelo referenciado. Essa propriedade é somente leitura. Os valores possíveis são: `none`, `endpointSecurityAntivirus`, `endpointSecurityDiskEncryption`, `endpointSecurityFirewall`, `endpointSecurityEndpointDetectionAndResponse`, `endpointSecurityAttackSurfaceReduction`, `endpointSecurityAccountProtection`, `endpointSecurityApplicationControl`.|
 |templateDisplayName|Cadeia de caracteres|Template Display Name of the referenced template. Essa propriedade é somente leitura.|
-|templateDisplayVersion|Cadeia de caracteres|Template Display Version of the referenced Template. Essa propriedade é somente leitura.|
+|templateDisplayVersion|Cadeia de Caracteres|Template Display Version of the referenced Template. Essa propriedade é somente leitura.|
 
 ## <a name="relationships"></a>Relações
 Nenhum

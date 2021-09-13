@@ -2,15 +2,15 @@
 title: Tipo de recurso unaryManagementConditionExpression
 description: Uma expressão de condição de gerenciamento avaliada usando uma operação não regular.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 25b4bf266a955a11231c185200bee00367af538a
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: f5a0526fb0f417ec1c46cc59b9b5c3088ceb7ea3
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58797230"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59063906"
 ---
 # <a name="unarymanagementconditionexpression-resource-type"></a>Tipo de recurso unaryManagementConditionExpression
 

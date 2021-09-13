@@ -2,15 +2,15 @@
 title: Tipo de recurso configurationManagerActionResult
 description: Resultado da ação ConfigurationManager
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 28e7715b9fbb3422d01044453216602f95c1e7ee
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: e1cbd38930bf8cab90860791f1e5d34bf4391408
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58801091"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59040264"
 ---
 # <a name="configurationmanageractionresult-resource-type"></a>Tipo de recurso configurationManagerActionResult
 

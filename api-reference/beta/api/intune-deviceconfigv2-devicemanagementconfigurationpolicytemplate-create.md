@@ -2,15 +2,15 @@
 title: Criar deviceManagementConfigurationPolicyTemplate
 description: Crie um novo objeto deviceManagementConfigurationPolicyTemplate.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d0ca73c05252341a976161af4b5e985e1fe31d84
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: c20caa41e28de50a407e180b594929aa82c5bd68
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58820023"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59077276"
 ---
 # <a name="create-devicemanagementconfigurationpolicytemplate"></a>Criar deviceManagementConfigurationPolicyTemplate
 
@@ -27,8 +27,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -56,7 +56,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar deviceMa
 |id|String|Chave do documento do modelo, composta por BaseId e Version. Gerado automaticamente.|
 |baseId|String|Identificador de base de modelos|
 |versão|Int32|Versão do modelo. Valores válidos 1 a 2147483647. Essa propriedade é somente leitura.|
-|displayName|Cadeia de caracteres|Nome de exibição do modelo|
+|displayName|String|Nome de exibição do modelo|
 |description|Cadeia de caracteres|Descrição do modelo|
 |displayVersion|String|Descrição da versão do modelo|
 |lifecycleState|[deviceManagementTemplateLifecycleState](../resources/intune-deviceconfigv2-devicemanagementtemplatelifecyclestate.md)|Indique o estado atual do modelo de ciclo de vida. Os possíveis valores são: `invalid`, `draft`, `active`, `superseded`, `deprecated`, `retired`.|

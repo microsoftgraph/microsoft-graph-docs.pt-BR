@@ -2,15 +2,15 @@
 title: Tipo de recurso userExperienceAnalyticsRegressionSummary
 description: Resumo da regressão de análise de experiência do usuário.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: a9b716f279fc928f513ccfd874fc25933a52fa7c
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 16848862eb27fa95afcad0519b7d52f487ebe0d0
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58789909"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59081014"
 ---
 # <a name="userexperienceanalyticsregressionsummary-resource-type"></a>Tipo de recurso userExperienceAnalyticsRegressionSummary
 

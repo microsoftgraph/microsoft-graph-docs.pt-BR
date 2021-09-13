@@ -2,15 +2,15 @@
 title: Tipo de recurso customSubjectAlternativeName
 description: Definição de Nome Alternativo de Assunto Personalizado
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9f8e1c5214e8db18de36fe3b3a8fb127b925bf12
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: a8095c7cfa440fb0ce15271d9f33b0ee3d663d24
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58760944"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59040523"
 ---
 # <a name="customsubjectalternativename-resource-type"></a>Tipo de recurso customSubjectAlternativeName
 

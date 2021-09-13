@@ -2,15 +2,15 @@
 title: Excluir microsoftStoreForBusinessContainedApp
 description: Exclui um microsoftStoreForBusinessContainedApp.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 31c1b4f0b2a72d5de764382237cc5a01a5d6fbd8
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 82d8484d09d39a2a3815bd23bf2331daf58e1599
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58795799"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59071228"
 ---
 # <a name="delete-microsoftstoreforbusinesscontainedapp"></a>Excluir microsoftStoreForBusinessContainedApp
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementApps.ReadWrite.All|
+|Aplicativo|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {

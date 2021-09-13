@@ -2,15 +2,15 @@
 title: Criar microsoftTunnelConfiguration
 description: Crie um novo objeto microsoftTunnelConfiguration.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 133cef46fdd3519f6de20d4d4061171958adcdac
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 942f9268327d521c3fe3698ebe31d1c956d6d2a9
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58785294"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59034306"
 ---
 # <a name="create-microsofttunnelconfiguration"></a>Criar microsoftTunnelConfiguration
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -53,19 +53,19 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar o micros
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Id do MicrosoftTunnelConfiguration|
-|displayName|Cadeia de caracteres|O nome de exibição do MicrosoftTunnelConfiguration|
-|descrição|Cadeia de caracteres|A descrição do MicrosoftTunnelConfiguration|
+|id|String|Id do MicrosoftTunnelConfiguration|
+|displayName|String|O nome de exibição do MicrosoftTunnelConfiguration|
+|description|Cadeia de caracteres|A descrição do MicrosoftTunnelConfiguration|
 |network|Cadeia de caracteres|A sub-rede que será usada para alocar endereço virtual para os clientes|
-|dnsServers|Coleção de cadeias de caracteres|Os servidores DNS que serão usados pelos clientes|
-|defaultDomainSuffix|Cadeia de caracteres|O apêndice Domínio Padrão que será usado pelos clientes|
-|routesInclude|Coleção de cadeias de caracteres|Os routs que serão roteados pelo servidor|
-|routesExclude|Coleção de cadeias de caracteres|Subconjunto das rotas que não serão roteadas pelo servidor|
-|splitDNS|Coleção de cadeias de caracteres|Os domínios que serão resolvidos usando os servidores dns fornecidos|
+|dnsServers|String collection|Os servidores DNS que serão usados pelos clientes|
+|defaultDomainSuffix|Cadeia de Caracteres|O apêndice Domínio Padrão que será usado pelos clientes|
+|routesInclude|String collection|Os routs que serão roteados pelo servidor|
+|routesExclude|String collection|Subconjunto das rotas que não serão roteadas pelo servidor|
+|splitDNS|String collection|Os domínios que serão resolvidos usando os servidores dns fornecidos|
 |listenPort|Int32|A porta que o TCP e o UPD escutarão no servidor|
 |advancedSettings|Coleção [keyValuePair](../resources/intune-mstunnel-keyvaluepair.md)|Configurações adicionais que podem ser aplicadas ao servidor|
 |lastUpdateDateTime|DateTimeOffset|Quando o MicrosoftTunnelConfiguration foi atualizado pela última vez|
-|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de marcas de escopo para esta instância entity.|
+|roleScopeTagIds|String collection|Lista de marcas de escopo para esta instância entity.|
 
 
 

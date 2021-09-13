@@ -2,15 +2,15 @@
 title: Tipo de número deviceManagementExchangeConnectorSyncType
 description: O tipo de sincronização Exchange Conector solicitado.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 4a01c41cfd85332193a191ed76b571b02947308b
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 589998798eddd8d6ed1312ddd0873ea65fc4abb3
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58803458"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59080874"
 ---
 # <a name="devicemanagementexchangeconnectorsynctype-enum-type"></a>Tipo de número deviceManagementExchangeConnectorSyncType
 

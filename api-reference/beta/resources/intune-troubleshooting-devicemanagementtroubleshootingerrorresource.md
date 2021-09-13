@@ -2,15 +2,15 @@
 title: Tipo de recurso deviceManagementTroubleshootingErrorResource
 description: Objeto que representa um link para a solução de problemas de informações, o link pode ser para o Portal do Azure ou um documento da Microsoft.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 1da7b75414aafcce5e221cbb5f6e0cfc0ea0209b
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 524f5615e165f32a1b67341d5066b56414404e7f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58266790"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59039004"
 ---
 # <a name="devicemanagementtroubleshootingerrorresource-resource-type"></a>Tipo de recurso deviceManagementTroubleshootingErrorResource
 
@@ -24,7 +24,7 @@ Objeto que representa um link para a solução de problemas de informações, o 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |texto|String|Ainda não documentado|
-|link|Cadeia de caracteres|O link para o recurso Web. Pode conter qualquer um dos seguintes formadores: {{UPN}}, {{DeviceGUID}}, {{UserGUID}}|
+|link|Cadeia de Caracteres|O link para o recurso Web. Pode conter qualquer um dos seguintes formadores: {{UPN}}, {{DeviceGUID}}, {{UserGUID}}|
 
 ## <a name="relationships"></a>Relações
 Nenhum

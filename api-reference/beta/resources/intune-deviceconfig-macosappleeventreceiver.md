@@ -2,15 +2,15 @@
 title: Tipo de recurso macOSAppleEventReceiver
 description: Representa um processo que pode receber uma notificação de evento da Apple.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 14f68bfa31c41b96e2a2dd160fa732d2c38e9b2f
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: a325bed4eca6ca554f391f1127cf454ea50d774a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58810644"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59081329"
 ---
 # <a name="macosappleeventreceiver-resource-type"></a>Tipo de recurso macOSAppleEventReceiver
 
@@ -25,10 +25,10 @@ Representa um processo que pode receber uma notificação de evento da Apple.
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|codeRequirement|Cadeia de caracteres|Requisito de código para o aplicativo ou binário que recebe o Evento Apple.|
-|identificador|Cadeia de caracteres|ID do pacote do aplicativo ou caminho do arquivo do processo ou executável que recebe o Evento Apple.|
+|codeRequirement|String|Requisito de código para o aplicativo ou binário que recebe o Evento Apple.|
+|identificador|Cadeia de Caracteres|ID do pacote do aplicativo ou caminho do arquivo do processo ou executável que recebe o Evento Apple.|
 |identifierType|[macOSProcessIdentifierType](../resources/intune-deviceconfig-macosprocessidentifiertype.md)|Use a ID do pacote para um aplicativo ou caminho para um processo ou executável que recebe o Evento Apple. Os valores possíveis são: `bundleID` e `path`.|
-|allowed|Boleano|Permitir ou impedir que esse aplicativo receba eventos da Apple.|
+|allowed|Booliano|Permitir ou impedir que esse aplicativo receba eventos da Apple.|
 
 ## <a name="relationships"></a>Relações
 Nenhum

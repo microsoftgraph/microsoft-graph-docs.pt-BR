@@ -2,15 +2,15 @@
 title: Tipo de recurso mobileAppSupersedence
 description: Descreve uma relação de supersedência entre dois aplicativos móveis.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: e56e8c23c852028cec007b29de7f7b7931a47c2d
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: ff91da571956d7579d27f65d485d97c158c17bee
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58806261"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59075848"
 ---
 # <a name="mobileappsupersedence-resource-type"></a>Tipo de recurso mobileAppSupersedence
 
@@ -31,7 +31,7 @@ Herda de [mobileAppRelationship](../resources/intune-apps-mobileapprelationship.
 |[Listar mobileAppSupersedences](../api/intune-apps-mobileappsupersedence-list.md)|[Coleção mobileAppSupersedence](../resources/intune-apps-mobileappsupersedence.md)|Listar propriedades e relações dos [objetos mobileAppSupersedence.](../resources/intune-apps-mobileappsupersedence.md)|
 |[Obter mobileAppSupersedence](../api/intune-apps-mobileappsupersedence-get.md)|[mobileAppSupersedence](../resources/intune-apps-mobileappsupersedence.md)|Leia propriedades e relações do [objeto mobileAppSupersedence.](../resources/intune-apps-mobileappsupersedence.md)|
 |[Criar mobileAppSupersedence](../api/intune-apps-mobileappsupersedence-create.md)|[mobileAppSupersedence](../resources/intune-apps-mobileappsupersedence.md)|Crie um novo [objeto mobileAppSupersedence.](../resources/intune-apps-mobileappsupersedence.md)|
-|[Excluir mobileAppSupersedence](../api/intune-apps-mobileappsupersedence-delete.md)|Nenhum(a)|Exclui uma [mobileAppSupersedence](../resources/intune-apps-mobileappsupersedence.md).|
+|[Excluir mobileAppSupersedence](../api/intune-apps-mobileappsupersedence-delete.md)|Nenhum|Exclui uma [mobileAppSupersedence](../resources/intune-apps-mobileappsupersedence.md).|
 |[Atualizar mobileAppSupersedence](../api/intune-apps-mobileappsupersedence-update.md)|[mobileAppSupersedence](../resources/intune-apps-mobileappsupersedence.md)|Atualize as propriedades de um [objeto mobileAppSupersedence.](../resources/intune-apps-mobileappsupersedence.md)|
 
 ## <a name="properties"></a>Propriedades
@@ -40,8 +40,8 @@ Herda de [mobileAppRelationship](../resources/intune-apps-mobileapprelationship.
 |id|Cadeia de caracteres|A ID da entidade de relação. Herdado [de mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md)|
 |targetId|Cadeia de caracteres|A ID do aplicativo móvel de destino. Herdado [de mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md)|
 |targetDisplayName|Cadeia de caracteres|O nome de exibição do aplicativo móvel de destino. Herdado [de mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md)|
-|targetDisplayVersion|Cadeia de caracteres|A versão de exibição do aplicativo móvel de destino. Herdado [de mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md)|
-|targetPublisher|Cadeia de caracteres|O editor do aplicativo móvel de destino. Herdado [de mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md)|
+|targetDisplayVersion|Cadeia de Caracteres|A versão de exibição do aplicativo móvel de destino. Herdado [de mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md)|
+|targetPublisher|String|O editor do aplicativo móvel de destino. Herdado [de mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md)|
 |targetType|[mobileAppRelationshipType](../resources/intune-apps-mobileapprelationshiptype.md)|O tipo de relação que indica se o destino é pai ou filho. Herdado [de mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md). Os valores possíveis são: `child` e `parent`.|
 |supersedenceType|[mobileAppSupersedenceType](../resources/intune-apps-mobileappsupersedencetype.md)|O tipo de relação de supersedência entre os aplicativos pai e filho. Os valores possíveis são: `update` e `replace`.|
 |supersededAppCount|Int32|O número total de aplicativos, direta ou indiretamente, sobressumentados pelo aplicativo filho.|

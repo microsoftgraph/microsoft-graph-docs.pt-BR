@@ -2,15 +2,15 @@
 title: tipo de número ratingFranceMoviesType
 description: Rótulos de classificação de filmes na França
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: e92d8042175cd26fc2a0999862dc716cb0c5116e
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 0ec3a622528534a01638f51b463f9d80b76db20a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58819119"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59081308"
 ---
 # <a name="ratingfrancemoviestype-enum-type"></a>tipo de número ratingFranceMoviesType
 

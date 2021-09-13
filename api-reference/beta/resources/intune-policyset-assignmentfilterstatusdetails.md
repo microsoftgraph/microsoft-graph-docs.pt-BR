@@ -2,15 +2,15 @@
 title: Tipo de recurso assignmentFilterStatusDetails
 description: Represente detalhes de status para dispositivo e carga e todos os filtros aplicados associados.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: fb1df335c7fbf1c0a4c6e79150c56c920e80db87
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: f35e732e1500c8fd9a1281ca1ca88b54c173cf52
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58789555"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59074973"
 ---
 # <a name="assignmentfilterstatusdetails-resource-type"></a>Tipo de recurso assignmentFilterStatusDetails
 

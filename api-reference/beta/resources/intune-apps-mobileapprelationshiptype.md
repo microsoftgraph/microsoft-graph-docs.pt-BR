@@ -2,15 +2,15 @@
 title: Tipo de número mobileAppRelationshipType
 description: Indica se o destino de uma relação é o pai ou o filho na relação.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: f2776f35c38786dcc78607b591707a1b0b907c8c
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: daf1c017cdc055bdc7ce2d537c0435c85fa62b2a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58801182"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59075855"
 ---
 # <a name="mobileapprelationshiptype-enum-type"></a>Tipo de número mobileAppRelationshipType
 

@@ -2,15 +2,15 @@
 title: Tipo de recurso managedAppOperation
 description: Representa uma operação aplicada a um registro de aplicativo.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: e12dc64070990b722201d717549a7b221b2ee9f9
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 64ebd54ddb46122266742d5894c2c3d06dd125ca
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58783460"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59075035"
 ---
 # <a name="managedappoperation-resource-type"></a>Tipo de recurso managedAppOperation
 
@@ -36,7 +36,7 @@ Representa uma operação aplicada a um registro de aplicativo.
 |:---|:---|:---|
 |displayName|Cadeia de caracteres|O nome da operação.|
 |lastModifiedDateTime|DateTimeOffset|Última vez em que a operação de aplicativo foi modificada.|
-|state|Cadeia de caracteres|O estado atual da operação|
+|state|String|O estado atual da operação|
 |id|Cadeia de caracteres|Chave da entidade.|
 |versão|String|Versão da entidade.|
 

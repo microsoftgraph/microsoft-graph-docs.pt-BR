@@ -2,15 +2,15 @@
 title: Atualizar deviceManagementIntent
 description: Atualize as propriedades de um objeto deviceManagementIntent.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: cf39707f420628ee029ae11e1ae4f48904807179
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 077638e55ce8eb2d06f6fff54289dee06c04ade6
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58787432"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59077192"
 ---
 # <a name="update-devicemanagementintent"></a>Atualizar deviceManagementIntent
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -53,13 +53,13 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [deviceM
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|A ID de intenção|
-|displayName|Cadeia de caracteres|O nome de exibição dado pelo usuário|
-|descrição|Cadeia de caracteres|A descrição dada pelo usuário|
+|id|String|A ID de intenção|
+|displayName|String|O nome de exibição dado pelo usuário|
+|description|Cadeia de caracteres|A descrição dada pelo usuário|
 |isAssigned|Boolean|Significa se a intenção é atribuída ou não aos usuários|
 |lastModifiedDateTime|DateTimeOffset|Quando a intenção foi modificada pela última vez|
 |templateId|Cadeia de caracteres|A ID do modelo de que essa intenção foi criada (se alguma)|
-|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de marcas de escopo para esta instância entity.|
+|roleScopeTagIds|Conjunto de cadeias de caracteres|Lista de marcas de escopo para esta instância entity.|
 
 
 

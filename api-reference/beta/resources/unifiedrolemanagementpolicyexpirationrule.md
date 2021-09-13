@@ -2,15 +2,15 @@
 title: Tipo de recurso unifiedRoleManagementPolicyExpirationRule
 description: Uma unifiedRoleManagementPolicyExpirationRule especifica a regra de habilitação associada a uma política de gerenciamento de função. Ele é derivado de microsoft.graph.unifiedRoleManagementPolicyRule.
 author: shauliu1
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 0f89d9d2ae1c5ec030413f6071ff00dcdfc0d7e7
-ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
+ms.openlocfilehash: bd2603423af5555b8ad39e1641162636dc447c63
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2021
-ms.locfileid: "58453902"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59074525"
 ---
 # <a name="unifiedrolemanagementpolicyexpirationrule-resource-type"></a>Tipo de recurso unifiedRoleManagementPolicyExpirationRule
 
@@ -24,7 +24,7 @@ Herda [de unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpol
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|Cadeia de caracteres|Identificador exclusivo da regra. Herdado [de unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md)|
-|isExpirationRequired|Booliano|Indica se a expiração é necessária para qualificação ou atribuição.|
+|isExpirationRequired|Boleano|Indica se a expiração é necessária para qualificação ou atribuição.|
 |maximumDuration|Duration|A duração máxima permitida para a elegência ou atribuição que não é permanente.|
 |destino|[unifiedRoleManagementPolicyRuleTarget](../resources/unifiedrolemanagementpolicyruletarget.md)|O destino da regra. Herdado [de unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md)|
 

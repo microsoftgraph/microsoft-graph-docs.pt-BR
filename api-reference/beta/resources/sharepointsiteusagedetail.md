@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso sharePointSiteUsageDetail
 description: Veja a seguir uma representação JSON do recurso.
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: resourcePageType
 author: JeremyKelley
-ms.openlocfilehash: 3cfba5694c4f3efc2b10dc9259a561c24ff042af
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 2d9bdd86d2b50601dc5c54b2a34480e9cd71118d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58820678"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59038794"
 ---
 # <a name="sharepointsiteusagedetail-resource-type"></a>Tipo de recurso sharePointSiteUsageDetail
 
@@ -22,15 +22,15 @@ Namespace: microsoft.graph
 | :---------------------- | :------ |
 | reportRefreshDate       | Data    |
 | siteId                  | Guid  |
-| siteUrl                 | Cadeia de caracteres  |
-| ownerDisplayName        | Cadeia de caracteres  |
-| ownerPrincipalName      | Cadeia de caracteres  |
-| isDeleted               | Booliano |
+| siteUrl                 | Cadeia de Caracteres  |
+| ownerDisplayName        | Cadeia de Caracteres  |
+| ownerPrincipalName      | Cadeia de Caracteres  |
+| isDeleted               | Boleano |
 | lastActivityDate        | Data    |
-| siteSensitivityLabelId  | String  |
-| externalSharing         | Booliano |
-| unmanagedDevicePolicy   | String  |
-| geoLocation             | Cadeia de caracteres  |
+| siteSensitivityLabelId  | Cadeia de Caracteres  |
+| externalSharing         | Boleano |
+| unmanagedDevicePolicy   | Cadeia de Caracteres  |
+| geoLocation             | Cadeia de Caracteres  |
 | fileCount               | Int64   |
 | activeFileCount         | Int64   |
 | pageViewCount           | Int64   |
@@ -41,8 +41,8 @@ Namespace: microsoft.graph
 | secureLinkForMemberCount| Int64   |
 | storageUsedInBytes      | Int64   |
 | storageAllocatedInBytes | Int64   |
-| rootWebTemplate         | Cadeia de caracteres  |
-| reportPeriod            | Cadeia de caracteres  |
+| rootWebTemplate         | Cadeia de Caracteres  |
+| reportPeriod            | Cadeia de Caracteres  |
 
 ## <a name="json-representation"></a>Representação JSON
 

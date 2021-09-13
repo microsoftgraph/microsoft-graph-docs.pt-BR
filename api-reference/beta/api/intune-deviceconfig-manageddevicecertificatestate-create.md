@@ -2,15 +2,15 @@
 title: Criar managedDeviceCertificateState
 description: Crie um novo objeto managedDeviceCertificateState.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 782efd30ca4f1f6836bdbe6a3ea07fcc10c636a0
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 5bc50644a331afaa4fb20caefa537c775e93f3a7
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58821035"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59077479"
 ---
 # <a name="create-manageddevicecertificatestate"></a>Criar managedDeviceCertificateState
 
@@ -27,8 +27,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -74,7 +74,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar managedD
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Chave da entidade.|
+|id|String|Chave da entidade.|
 |devicePlatform|[devicePlatformType](../resources/intune-deviceconfig-deviceplatformtype.md)|Plataforma do dispositivo. Os valores possíveis são: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `unknown`, `androidAOSP`.|
 |certificateKeyUsage|[keyUsages](../resources/intune-shared-keyusages.md)|Uso de chave. Os valores possíveis são: `keyEncipherment` e `digitalSignature`.|
 |certificateValidityPeriodUnits|[certificateValidityPeriodScale](../resources/intune-shared-certificatevalidityperiodscale.md)|Unidades de período de validade. Os valores possíveis são: `days`, `months`, `years`.|
@@ -83,20 +83,20 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar managedD
 |certificateSubjectNameFormat|[subjectNameFormat](../resources/intune-deviceconfig-subjectnameformat.md)|Formato de nome do assunto. Os valores possíveis são: `commonName`, `commonNameIncludingEmail`, `commonNameAsEmail`, `custom`, `commonNameAsIMEI`, `commonNameAsSerialNumber`, `commonNameAsAadDeviceId`, `commonNameAsIntuneDeviceId`, `commonNameAsDurableDeviceId`.|
 |certificateSubjectAlternativeNameFormat|[subjectAlternativeNameType](../resources/intune-shared-subjectalternativenametype.md)|Formato de nome alternativo do assunto. Os possíveis valores são: `none`, `emailAddress`, `userPrincipalName`, `customAzureADAttribute`, `domainNameService`, `universalResourceIdentifier`.|
 |certificateRevokeStatus|[certificateRevocationStatus](../resources/intune-deviceconfig-certificaterevocationstatus.md)|Revogar status. Os valores possíveis são: `none`, `pending`, `issued`, `failed`, `revoked`.|
-|certificateProfileDisplayName|Cadeia de caracteres|Nome de exibição de perfil de certificado|
+|certificateProfileDisplayName|Cadeia de Caracteres|Nome de exibição de perfil de certificado|
 |deviceDisplayName|Cadeia de caracteres|Nome de exibição do dispositivo|
 |userDisplayName|Cadeia de caracteres|Nome de exibição do usuário|
 |certificateExpirationDateTime|DateTimeOffset|Data de expiração do certificado|
 |certificateLastIssuanceStateChangedDateTime|DateTimeOffset|Última alteração de estado de emissão de certificado|
 |lastCertificateStateChangeDateTime|DateTimeOffset|Última alteração de estado de emissão de certificado|
-|certificateIssuer|Cadeia de caracteres|Emissor|
-|certificateThumbprint|Cadeia de caracteres|Impressão Digital|
+|certificateIssuer|Cadeia de Caracteres|Emissor|
+|certificateThumbprint|Cadeia de Caracteres|Impressão Digital|
 |certificateSerialNumber|String|Número de série|
 |certificateKeyLength|Int32|Comprimento de chave|
 |certificateEnhancedKeyUsage|Cadeia de caracteres|Uso estendido de chave|
 |certificateValidityPeriod|Int32|Período de validade|
 |certificateSubjectNameFormatString|Cadeia de caracteres|Cadeia de caracteres de formato de nome de assunto para formatos de nome de assunto personalizados|
-|certificateSubjectAlternativeNameFormatString|Cadeia de caracteres|Cadeia de caracteres de formato de nome alternativo de assunto para formatos personalizados|
+|certificateSubjectAlternativeNameFormatString|Cadeia de Caracteres|Cadeia de caracteres de formato de nome alternativo de assunto para formatos personalizados|
 |certificateIssuanceDateTime|DateTimeOffset|Data de emissão|
 |certificateErrorCode|Int32|Código de erro|
 

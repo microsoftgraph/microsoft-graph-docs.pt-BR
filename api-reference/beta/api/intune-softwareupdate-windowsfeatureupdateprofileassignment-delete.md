@@ -2,15 +2,15 @@
 title: Excluir windowsFeatureUpdateProfileAssignment
 description: Exclui um windowsFeatureUpdateProfileAssignment.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 54c9d62e7ae250f9313fc29e0a0f91b10d68b8be
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: cd12c314d7436843f0ac29900cd777f79ca5d735
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58791267"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59041301"
 ---
 # <a name="delete-windowsfeatureupdateprofileassignment"></a>Excluir windowsFeatureUpdateProfileAssignment
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {

@@ -2,15 +2,15 @@
 title: Excluir groupPolicyUploadedDefinitionFile
 description: Exclui um groupPolicyUploadedDefinitionFile.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 7bc6360363088f345ad197b8eab19bfc9962299b
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 14c62abdfd68c4ad3c999a332d96ab010ec5b8dd
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58796957"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59041868"
 ---
 # <a name="delete-grouppolicyuploadeddefinitionfile"></a>Excluir groupPolicyUploadedDefinitionFile
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {

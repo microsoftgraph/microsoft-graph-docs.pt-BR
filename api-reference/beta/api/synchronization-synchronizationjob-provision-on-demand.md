@@ -2,15 +2,15 @@
 title: 'synchronizationJob: provisionOnDemand'
 description: Selecione um usuário e provisione a conta sob demanda.
 author: ArvindHarinder1
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 3e1007dfd7bce9ff64f54651104de943348c10dc
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: f3db21462738b29393c46dab6fa8823562ce7c77
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50240560"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59040923"
 ---
 # <a name="synchronizationjob-provisionondemand"></a>synchronizationJob: provisionOnDemand
 
@@ -23,8 +23,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante)     |Directory.ReadWrite.All  |
-|Delegada (conta pessoal da Microsoft) |Sem suporte. |
+|Delegado (conta corporativa ou de estudante)     |Directory.ReadWrite.All  |
+|Delegado (conta pessoal da Microsoft) |Sem suporte. |
 |Aplicativo                            |Application.ReadWrite.OwnedBy, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -50,13 +50,13 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta ação.
 
 |Parâmetro|Tipo|Descrição|
 |:---|:---|:---|
-|parameters|[Coleção synchronizationJobApplicationParameters](../resources/synchronization-synchronizationjobapplicationparameters.md)|Representa os objetos que serão provisionados e as regras de sincronização executadas. O recurso é usado principalmente para provisionamento sob demanda. |
+|parameters|[coleção synchronizationJobApplicationParameters](../resources/synchronization-synchronizationjobapplicationparameters.md)|Representa os objetos que serão provisionados e as regras de sincronização executadas. O recurso é usado principalmente para provisionamento sob demanda. |
 
 
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna `200 OK` um código de resposta e uma cadeia de caracteresKeyStringValuePair.
+Se tiver êxito, este método retornará um código `200 OK` de resposta e um stringKeyStringValuePair.
 
 ## <a name="examples"></a>Exemplos
 

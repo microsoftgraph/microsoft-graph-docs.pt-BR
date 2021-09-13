@@ -2,15 +2,15 @@
 title: Atualizar userFlowLanguagePage
 description: Atualize os valores em um objeto userFlowLanguagePage.
 author: jkdouglas
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 2d9a38a94dfc5fe8f801a246ff4bcab2bc41eab7
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: acbb5410c0737908ebfcd41ffad1dc40b145db23
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50433443"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59040810"
 ---
 # <a name="update-userflowlanguagepage"></a>Atualizar userFlowLanguagePage
 
@@ -31,7 +31,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 A conta de trabalho ou de estudante precisa pertencer a uma das seguintes funções:
 
 * Administrador global
-* Administrador de Fluxo de Usuário de Identidade Externa
+* Administrador de identidade externa Flow usuário
 
 ## <a name="http-request"></a>Solicitação HTTP
 

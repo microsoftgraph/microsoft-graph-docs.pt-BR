@@ -2,15 +2,15 @@
 title: Atualizar windowsQualityUpdateProfileAssignment
 description: Atualize as propriedades de um objeto windowsQualityUpdateProfileAssignment.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 513c2bebc8e4b400fbc069df61afeed56ee3b4b2
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: dde4e905e27b6e0bb6bf313979e3bca945f6c53f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58807346"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59041259"
 ---
 # <a name="update-windowsqualityupdateprofileassignment"></a>Atualizar windowsQualityUpdateProfileAssignment
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {

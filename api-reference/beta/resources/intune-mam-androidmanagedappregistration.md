@@ -2,15 +2,15 @@
 title: androidManagedAppRegistration resource type
 description: Representa os detalhes de sincronização de um aplicativo para Android, com recursos de gerenciamento, para um usuário específico. O recurso ManagedAppRegistration representa os detalhes de um aplicativo, com capacidade de gerenciamento, usado por um membro da organização.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: f7ff5eafe930d11f1b571b447b502db6aeb62f84
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 49d1606257835512e4bcb24e5b5304cea718cd1d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58793312"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59075274"
 ---
 # <a name="androidmanagedappregistration-resource-type"></a>androidManagedAppRegistration resource type
 
@@ -53,7 +53,7 @@ Herda de [managedAppRegistration](../resources/intune-mam-managedappregistration
 |appIdentifier|[mobileAppIdentifier](../resources/intune-mam-mobileappidentifier.md)|O Identificador de pacote do aplicativo. Herdado de [managedAppRegistration](../resources/intune-mam-managedappregistration.md)|
 |id|Cadeia de caracteres|Chave da entidade. Herdada de [managedAppRegistration](../resources/intune-mam-managedappregistration.md)|
 |version|String|Versão da entidade. Herdada da [managedAppRegistration](../resources/intune-mam-managedappregistration.md)|
-|patchVersion|Cadeia de caracteres|A versão de patch para o registro atual do aplicativo android|
+|patchVersion|Cadeia de Caracteres|A versão de patch para o registro atual do aplicativo android|
 
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|

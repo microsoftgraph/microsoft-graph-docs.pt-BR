@@ -2,15 +2,15 @@
 title: Criar windowsAutopilotDeploymentProfileAssignment
 description: Crie um novo objeto windowsAutopilotDeploymentProfileAssignment.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f8a23d385350b69d4af4893257b590b9496e23a1
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 5e3efec78f4a69168ea720a4fcc314f96af1f7b3
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58789043"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59082393"
 ---
 # <a name="create-windowsautopilotdeploymentprofileassignment"></a>Criar windowsAutopilotDeploymentProfileAssignment
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementServiceConfig.ReadWrite.All|
+|Aplicativo|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
