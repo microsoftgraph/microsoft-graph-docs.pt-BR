@@ -2,15 +2,15 @@
 title: Tipo de recurso tenantRelationship
 description: Representa os vários tipos de relações de locatário.
 author: isaiahwilliams
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-365-lighthouse
 doc_type: resourcePageType
-ms.openlocfilehash: c46250a275581068b031b5a6f9357543d93821a48e36950353863897503c8869
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 1c33ba0256d6befc60c0ce2ae3fa0b2ff45aa0fd
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54209585"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59105640"
 ---
 # <a name="tenantrelationship-resource-type"></a>Tipo de recurso tenantRelationship
 

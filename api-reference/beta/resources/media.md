@@ -2,15 +2,15 @@
 author: MarcMroz
 description: O recurso de mídia contém metadados sobre o item de unidade de mídia (áudio ou vídeo).
 title: tipo de recurso de mídia
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: 5b25d24ffb566e4c7030a02ee03f691ad397553bfb8dea599877c588a1f60cdb
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 3dd985c7259088f41412ea5d579c1e49d99acf4c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54224261"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59091199"
 ---
 # <a name="media-resouce-type"></a>tipo de resouce de mídia
 
@@ -23,7 +23,7 @@ Ele está disponível na propriedade de mídia dos [recursos driveItem.][item-re
 
 | Propriedade                 | Tipo                  | Descrição                                                                                                   |
 | :----------------------- | :-------------------- | :------------------------------------------------------------------------------------------------------------ 
-| **isTranscriptionShown** | Boolean               | Se um arquivo tiver uma transcrição, essa configuração controlará se as legendas/transcrição fechadas do arquivo de mídia devem ser mostradas para as pessoas durante a exibição. Leitura-Gravação.                                                    |
+| **isTranscriptionShown** | Boleano               | Se um arquivo tiver uma transcrição, essa configuração controlará se as legendas/transcrição fechadas do arquivo de mídia devem ser mostradas para as pessoas durante a exibição. Leitura-Gravação.                                                    |
 | **mediaSource**          | [mediaSource](mediaSource.md)         | Informações sobre a origem da mídia. Somente leitura.                                                             | 
 
 

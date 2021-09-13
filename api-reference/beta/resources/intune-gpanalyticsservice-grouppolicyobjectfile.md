@@ -2,15 +2,15 @@
 title: Tipo de recurso groupPolicyObjectFile
 description: O arquivo objeto De política de grupo carregado pelo administrador.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: e02d93e37e83c462a5eb15435dc41e69c886d9ca
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 09a3048d8b225589757463a62c7b73d5d2c8bfd1
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58816484"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59086236"
 ---
 # <a name="grouppolicyobjectfile-resource-type"></a>Tipo de recurso groupPolicyObjectFile
 
@@ -36,7 +36,7 @@ O arquivo objeto De política de grupo carregado pelo administrador.
 |:---|:---|:---|
 |id|Cadeia de caracteres|Ainda não documentado|
 |groupPolicyObjectId|Guid|O GUID do objeto de política de grupo do conteúdo XML do GPO|
-|ouDistinguishedName|Cadeia de caracteres|O nome diferenciado da UO.|
+|ouDistinguishedName|Cadeia de Caracteres|O nome diferenciado da UO.|
 |createdDateTime|DateTimeOffset|A data e a hora em que GroupPolicy foi carregado pela primeira vez.|
 |lastModifiedDateTime|DateTimeOffset|A data e a hora em que GroupPolicyObjectFile foi modificado pela última vez.|
 |content|Cadeia de caracteres|O conteúdo do arquivo de objeto de Política de Grupo.|

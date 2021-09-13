@@ -2,15 +2,15 @@
 title: Tipo de recurso deviceManagementConfigurationChoiceSettingValueDefinitionTemplate
 description: Modelo de definição de valor de configuração de opção
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: f6dad6440c917c230cb6cd76718f31f56daad951
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 866a6e8fd8aa2afc4b256301468392349d5c2782
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58783229"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59128988"
 ---
 # <a name="devicemanagementconfigurationchoicesettingvaluedefinitiontemplate-resource-type"></a>Tipo de recurso deviceManagementConfigurationChoiceSettingValueDefinitionTemplate
 

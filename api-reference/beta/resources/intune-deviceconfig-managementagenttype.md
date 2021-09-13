@@ -2,15 +2,15 @@
 title: tipo de número managementAgentType
 description: Tipo de agente de gerenciamento.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 88670bf7bee32898bd18efea79153096c289cf5e
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: afda1f2dd54cbb0ee63dc47e3ca14bf6cd946a1b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58789612"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59086768"
 ---
 # <a name="managementagenttype-enum-type"></a>tipo de número managementAgentType
 
@@ -32,7 +32,7 @@ Tipo de agente de gerenciamento.
 |easIntuneClient|5 |O dispositivo é gerenciado duplo do cliente EAS e do Intune.|
 |configurationManagerClient|8 |O dispositivo é gerenciado pelo Configuration Manager.|
 |configurationManagerClientMdm|10 |O dispositivo é gerenciado pelo Configuration Manager e pelo MDM.|
-|configurationManagerClientMdmEas|11 |O dispositivo é gerenciado pelo Configuration Manager, MDM e Eas.|
+|configurationManagerClientMdmEas|11|O dispositivo é gerenciado pelo Configuration Manager, MDM e Eas.|
 |desconhecido|16 |Tipo de agente de gerenciamento desconhecido.|
 |jamf|32|Os atributos do dispositivo são buscados do Jamf.|
 |googleCloudDevicePolicyController|64|O dispositivo é gerenciado pelo CloudDPC do Google.|

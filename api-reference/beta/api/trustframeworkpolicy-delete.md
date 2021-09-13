@@ -1,16 +1,16 @@
 ---
 title: Excluir trustFrameworkPolicy
 description: Essa operação exclui um objeto trustFrameworkPolicy existente de um locatário do Azure AD B2C.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: Nickgmicrosoft
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 0ebca87f50af1d4db6c4b6053bcabcaf9aa672d3
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 988e6783e3f7c7edf7cf4adbd8702d4e2431c9d3
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50444949"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59141288"
 ---
 # <a name="delete-trustframeworkpolicy"></a>Excluir trustFrameworkPolicy
 

@@ -1,16 +1,16 @@
 ---
 title: Atualizar personAward
 description: Atualize as propriedades de um objeto personAward.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: f1724f0b623c1e2b9b6ea57933509121b72c32cf
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: 956a44d63438803fe9d74d66d5efc3fdce768280
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50774093"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59141456"
 ---
 # <a name="update-personaward"></a>Atualizar personAward
 
@@ -51,13 +51,13 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|allowedAudiences|String|As audiências que são capazes de ver os valores contidos na entidade. Herdado [do itemFacet](../resources/itemfacet.md). Os valores possíveis são: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
-|descrição|String|Descpription of the award or honor. |
-|displayName|String|Nome do prêmio ou da honra. |
+|allowedAudiences|Cadeia de Caracteres|As audiências que são capazes de ver os valores contidos na entidade. Herdado [do itemFacet](../resources/itemfacet.md). Os valores possíveis são: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
+|description|Cadeia de caracteres|Descpription of the award or honor. |
+|displayName|Cadeia de caracteres|Nome do prêmio ou da honra. |
 |inferência|[inferenceData](../resources/inferencedata.md)|Contém detalhes de inferência se a entidade for inferida pelo aplicativo de criação ou modificação. Herdado [do itemFacet](../resources/itemfacet.md).|
 |issuedDate|Data|A data em que o prêmio ou a honra foi concedido. |
-|issuingAuthority|String|Autoridade que concedeu o prêmio ou a honra.  |
-|thumbnailUrl|String|URL fazendo referência a uma miniatura do prêmio ou da honra.  |
+|issuingAuthority|Cadeia de Caracteres|Autoridade que concedeu o prêmio ou a honra.  |
+|thumbnailUrl|Cadeia de Caracteres|URL fazendo referência a uma miniatura do prêmio ou da honra.  |
 |webUrl|String|URL referenciando o prêmio ou a honra. |
 
 ## <a name="response"></a>Resposta

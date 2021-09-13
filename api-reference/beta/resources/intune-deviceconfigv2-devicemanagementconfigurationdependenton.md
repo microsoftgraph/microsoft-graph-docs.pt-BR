@@ -2,15 +2,15 @@
 title: Tipo de recurso deviceManagementConfigurationDependentOn
 description: Ainda não documentado
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 6a19f2b7ffe20954bf34cb01ffb0889c0294f56d
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: f216b43ae577d670763a3fe3c2b26f3a14d84072
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58784496"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59128946"
 ---
 # <a name="devicemanagementconfigurationdependenton-resource-type"></a>Tipo de recurso deviceManagementConfigurationDependentOn
 
@@ -25,8 +25,8 @@ Ainda não documentado
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|dependentOn|Cadeia de caracteres|Identificador da opção de configuração pai/pai dependente|
-|parentSettingId|Cadeia de caracteres|Identificador da id de configuração pai/configuração pai dependente de|
+|dependentOn|Cadeia de Caracteres|Identificador da opção de configuração pai/pai dependente|
+|parentSettingId|Cadeia de Caracteres|Identificador da id de configuração pai/configuração pai dependente de|
 
 ## <a name="relationships"></a>Relações
 Nenhum

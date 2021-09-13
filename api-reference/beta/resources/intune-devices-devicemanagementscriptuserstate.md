@@ -2,15 +2,15 @@
 title: Tipo de recurso deviceManagementScriptUserState
 description: Contém propriedades para o estado de executar do usuário do script de gerenciamento de dispositivos.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 7ce60e5369fd93cd6721b56d15906203aee804f8
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 683084b1505c91718e10661e8605c6c8fa7003b7
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58802982"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59125958"
 ---
 # <a name="devicemanagementscriptuserstate-resource-type"></a>Tipo de recurso deviceManagementScriptUserState
 
@@ -28,7 +28,7 @@ Contém propriedades para o estado de executar do usuário do script de gerencia
 |[Listar deviceManagementScriptUserStates](../api/intune-devices-devicemanagementscriptuserstate-list.md)|[Coleção deviceManagementScriptUserState](../resources/intune-devices-devicemanagementscriptuserstate.md)|Listar propriedades e relações dos [objetos deviceManagementScriptUserState.](../resources/intune-devices-devicemanagementscriptuserstate.md)|
 |[Obter deviceManagementScriptUserState](../api/intune-devices-devicemanagementscriptuserstate-get.md)|[deviceManagementScriptUserState](../resources/intune-devices-devicemanagementscriptuserstate.md)|Ler propriedades e relações do [objeto deviceManagementScriptUserState.](../resources/intune-devices-devicemanagementscriptuserstate.md)|
 |[Criar deviceManagementScriptUserState](../api/intune-devices-devicemanagementscriptuserstate-create.md)|[deviceManagementScriptUserState](../resources/intune-devices-devicemanagementscriptuserstate.md)|Crie um novo [objeto deviceManagementScriptUserState.](../resources/intune-devices-devicemanagementscriptuserstate.md)|
-|[Excluir deviceManagementScriptUserState](../api/intune-devices-devicemanagementscriptuserstate-delete.md)|Nenhum(a)|Exclui um [deviceManagementScriptUserState](../resources/intune-devices-devicemanagementscriptuserstate.md).|
+|[Excluir deviceManagementScriptUserState](../api/intune-devices-devicemanagementscriptuserstate-delete.md)|Nenhum|Exclui um [deviceManagementScriptUserState](../resources/intune-devices-devicemanagementscriptuserstate.md).|
 |[Atualizar deviceManagementScriptUserState](../api/intune-devices-devicemanagementscriptuserstate-update.md)|[deviceManagementScriptUserState](../resources/intune-devices-devicemanagementscriptuserstate.md)|Atualize as propriedades de [um objeto deviceManagementScriptUserState.](../resources/intune-devices-devicemanagementscriptuserstate.md)|
 
 ## <a name="properties"></a>Propriedades

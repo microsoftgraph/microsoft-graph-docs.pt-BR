@@ -2,15 +2,15 @@
 title: Tipo de número appleDeploymentChannel
 description: Indica o canal usado para implantar o perfil de configuração. As opções disponíveis são DeviceChannel, UserChannel
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: c8de58704a4c577a5ed0bc3ddbd430c02ec89567
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 9efb8a7253b000aac3a3539ab673a28502180a5a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58793341"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59111240"
 ---
 # <a name="appledeploymentchannel-enum-type"></a>Tipo de número appleDeploymentChannel
 

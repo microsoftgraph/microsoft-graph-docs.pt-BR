@@ -2,15 +2,15 @@
 title: Atualizar enterpriseCodeSigningCertificate
 description: Atualize as propriedades de um objeto enterpriseCodeSigningCertificate.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b9992c4bb52275e2e8b21691ec2800f000d1aa49
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: c56c628adac69b83ca708695b568bd0d9d6efd03
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58818502"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59103659"
 ---
 # <a name="update-enterprisecodesigningcertificate"></a>Atualizar enterpriseCodeSigningCertificate
 
@@ -27,8 +27,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Delegado (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -58,8 +58,8 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [enterpr
 |status|[certificateStatus](../resources/intune-apps-certificatestatus.md)|O Status do Certificado Provisionado ou não Provisionado. Os valores possíveis são: `notProvisioned` e `provisioned`.|
 |SubjectName|Cadeia de caracteres|O Nome do Assunto do certificado.|
 |assunto|Cadeia de caracteres|O Valor do Assunto do certificado.|
-|issuerName|Cadeia de caracteres|O Nome do Emissor do certificado.|
-|emissor|Cadeia de caracteres|O valor emissor do certificado.|
+|issuerName|Cadeia de Caracteres|O Nome do Emissor do certificado.|
+|emissor|Cadeia de Caracteres|O valor emissor do certificado.|
 |expirationDateTime|DateTimeOffset|A Data de Expiração do Certificado.|
 |uploadDateTime|DateTimeOffset|A data em que CodeSigning Cert é carregado.|
 

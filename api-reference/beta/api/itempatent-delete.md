@@ -1,16 +1,16 @@
 ---
 title: Excluir itemPatent
 description: Exclui um objeto itemPatent.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 4c819a4ca1bb50a572fbbe593a7ec951714cf4cc
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: 6a5148ae489902a461f420db45567d22e101aefb
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50776274"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59087489"
 ---
 # <a name="delete-itempatent"></a>Excluir itemPatent
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 Exclui um [objeto itemPatent.](../resources/itempatent.md)
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 

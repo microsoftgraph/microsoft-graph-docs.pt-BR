@@ -2,15 +2,15 @@
 title: Tipo de número defenderSecurityCenterNotificationsFromAppType
 description: Valores possíveis para defenderSecurityCenterNotificationsFromApp
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: aba26f81a64c294e0f7d76ffa827a05bb95c2549
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 92cfe6a2f11715287830af1ec8394c6f487f2773
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58786008"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59106242"
 ---
 # <a name="defendersecuritycenternotificationsfromapptype-enum-type"></a>Tipo de número defenderSecurityCenterNotificationsFromAppType
 

@@ -2,15 +2,15 @@
 title: tipo de recurso bulkManagedDeviceActionResult
 description: Ainda não documentado
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 181f916d65c785dec25fb2d0f2b946af4e810a35
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 02a4d6537c8ab76f1045f4453af94255133370b3
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58785126"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59120119"
 ---
 # <a name="bulkmanageddeviceactionresult-resource-type"></a>tipo de recurso bulkManagedDeviceActionResult
 
@@ -25,10 +25,10 @@ Ainda não documentado
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|successfulDeviceIds|Coleção de cadeias de caracteres|Dispositivos bem-sucedidos|
-|failedDeviceIds|Coleção de cadeias de caracteres|Dispositivos com falha|
-|notFoundDeviceIds|Coleção de cadeias de caracteres|Dispositivos não encontrados|
-|notSupportedDeviceIds|Coleção de cadeias de caracteres|Dispositivos sem suporte|
+|successfulDeviceIds|String collection|Dispositivos bem-sucedidos|
+|failedDeviceIds|String collection|Dispositivos com falha|
+|notFoundDeviceIds|String collection|Dispositivos não encontrados|
+|notSupportedDeviceIds|String collection|Dispositivos sem suporte|
 
 ## <a name="relationships"></a>Relações
 Nenhum

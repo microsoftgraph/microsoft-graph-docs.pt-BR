@@ -2,15 +2,15 @@
 title: Tipo de recurso androidMinimumOperatingSystem
 description: Contém propriedades para o sistema operacional mínimo obrigatório para um aplicativo móvel Android.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9f77577b7cb0596fafb79d109a562957a47336c2
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: b3444ad607908e4c37b1751b5f5a8f3755ea6e7b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58820552"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59115622"
 ---
 # <a name="androidminimumoperatingsystem-resource-type"></a>Tipo de recurso androidMinimumOperatingSystem
 
@@ -33,9 +33,9 @@ Contém propriedades para o sistema operacional mínimo obrigatório para um apl
 |v4_4|Booliano|Versão 4.4 ou posterior.|
 |v5_0|Booliano|Versão 5.0 ou posterior.|
 |v5_1|Booliano|Versão 5.1 ou posterior.|
-|v6_0|Booliano|Versão 6.0 ou posterior.|
-|v7_0|Booliano|Versão 7.0 ou posterior.|
-|v7_1|Booliano|Versão 7.1 ou posterior.|
+|v6_0|Boleano|Versão 6.0 ou posterior.|
+|v7_0|Boleano|Versão 7.0 ou posterior.|
+|v7_1|Boleano|Versão 7.1 ou posterior.|
 |v8_0|Booliano|Versão 8.0 ou posterior.|
 |v8_1|Booliano|Versão 8.1 ou posterior.|
 |v9_0|Booliano|Versão 9.0 ou posterior.|

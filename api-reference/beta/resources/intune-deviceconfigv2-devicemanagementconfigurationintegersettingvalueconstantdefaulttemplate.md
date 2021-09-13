@@ -2,15 +2,15 @@
 title: Tipo de recurso deviceManagementConfigurationIntegerSettingValueConstantDefaultTemplate
 description: Modelo padrão da constante de valor de configuração de inteiro
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 31c775d857fdce4d1e416d99a33e35deae6a4606
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 9d0f4ba0fac13b7f127fe1749b598c94d981ee40
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58819882"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59128869"
 ---
 # <a name="devicemanagementconfigurationintegersettingvalueconstantdefaulttemplate-resource-type"></a>Tipo de recurso deviceManagementConfigurationIntegerSettingValueConstantDefaultTemplate
 

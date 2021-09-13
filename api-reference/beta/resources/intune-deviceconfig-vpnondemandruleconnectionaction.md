@@ -2,15 +2,15 @@
 title: Tipo de número vpnOnDemandRuleConnectionAction
 description: Ação de conexão de regra de VPN sob demanda.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 9232175b8de49672b9bb958bacda811fe3f4baf4
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: f613bbcd7580839b4f90656d0359636a6d55efa4
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58818109"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59146090"
 ---
 # <a name="vpnondemandruleconnectionaction-enum-type"></a>Tipo de número vpnOnDemandRuleConnectionAction
 

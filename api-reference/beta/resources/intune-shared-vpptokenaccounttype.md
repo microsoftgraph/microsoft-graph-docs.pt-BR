@@ -2,15 +2,15 @@
 title: Tipo de número vppTokenAccountType
 description: Tipos possíveis de um token do Programa de Compra de Volume da Apple.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 8d2a2c50f10920e0bdda944cef12927dafa79d48
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 55a6674c2246d8f5f36c05903efb5d3168f61e4b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58790091"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59147840"
 ---
 # <a name="vpptokenaccounttype-enum-type"></a>Tipo de número vppTokenAccountType
 

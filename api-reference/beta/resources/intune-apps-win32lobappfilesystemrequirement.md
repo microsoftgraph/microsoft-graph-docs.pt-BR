@@ -2,15 +2,15 @@
 title: Tipo de recurso win32LobAppFileSystemRequirement
 description: Contém arquivo ou caminho de pasta para detectar um aplicativo Win32
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: aa212f952f9b4fa87e5916dfbc02de694b6cb030
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: c52ab3fd75cfc1613f1a2dc819de66813d018e3a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58790182"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59127602"
 ---
 # <a name="win32lobappfilesystemrequirement-resource-type"></a>Tipo de recurso win32LobAppFileSystemRequirement
 
@@ -29,9 +29,9 @@ Herda de [win32LobAppRequirement](../resources/intune-apps-win32lobapprequiremen
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |operator|[win32LobAppDetectionOperator](../resources/intune-apps-win32lobappdetectionoperator.md)|O operador para detecção Herdado de [win32LobAppRequirement](../resources/intune-apps-win32lobapprequirement.md). Os valores possíveis são: `notConfigured`, `equal`, `notEqual`, `greaterThan`, `greaterThanOrEqual`, `lessThan`, `lessThanOrEqual`.|
-|detectionValue|Cadeia de caracteres|O valor de detecção Herdado [de win32LobAppRequirement](../resources/intune-apps-win32lobapprequirement.md)|
+|detectionValue|Cadeia de Caracteres|O valor de detecção Herdado [de win32LobAppRequirement](../resources/intune-apps-win32lobapprequirement.md)|
 |caminho|String|O arquivo ou o caminho da pasta para detectar o aplicativo Win32 Line of Business (LoB)|
-|fileOrFolderName|Cadeia de caracteres|O arquivo ou o nome da pasta para detectar o aplicativo Win32 Line of Business (LoB)|
+|fileOrFolderName|Cadeia de Caracteres|O arquivo ou o nome da pasta para detectar o aplicativo Win32 Line of Business (LoB)|
 |check32BitOn64System|Boleano|Um valor que indica se esse arquivo ou pasta é para verificar o aplicativo de 32 bits no sistema de 64 bits|
 |detectionType|[win32LobAppFileSystemDetectionType](../resources/intune-apps-win32lobappfilesystemdetectiontype.md)|O tipo de detecção do sistema de arquivos. Os valores possíveis são: `notConfigured`, `exists`, `modifiedDate`, `createdDate`, `version`, `sizeInMB`, `doesNotExist`.|
 

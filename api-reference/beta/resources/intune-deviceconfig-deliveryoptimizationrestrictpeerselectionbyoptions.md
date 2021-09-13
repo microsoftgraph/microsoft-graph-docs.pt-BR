@@ -2,15 +2,15 @@
 title: tipo de número deliveryOptimizationRestrictPeerSelectionByOptions
 description: Valores para restringir a seleção por pares.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 364e3212855e9192f1b386f13826043630fb1996
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 005c6a466d684796dfd1b3393729569d6d971b1a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58820916"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59147931"
 ---
 # <a name="deliveryoptimizationrestrictpeerselectionbyoptions-enum-type"></a>tipo de número deliveryOptimizationRestrictPeerSelectionByOptions
 

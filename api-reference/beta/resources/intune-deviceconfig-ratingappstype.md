@@ -2,15 +2,15 @@
 title: tipo de número ratingAppsType
 description: Classificação de aplicativos como no conteúdo de mídia
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: f85534fa2e8c55ce5b6a32306a00ea7afa30d568
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 983b89c91986e93ce71164446f5c8382d2fe1d61
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58805735"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59146594"
 ---
 # <a name="ratingappstype-enum-type"></a>tipo de número ratingAppsType
 

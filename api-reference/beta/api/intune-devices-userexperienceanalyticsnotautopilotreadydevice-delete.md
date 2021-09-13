@@ -2,15 +2,15 @@
 title: Excluir userExperienceAnalyticsNotAutopilotReadyDevice
 description: Exclui um userExperienceAnalyticsNotAutopilotReadyDevice.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 4b1668466fe026b171c0826413e2d11f64d06d0c
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: f3e35ee4fe7a830c1ce71f4b6b3f34802948ec2f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58795960"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59087972"
 ---
 # <a name="delete-userexperienceanalyticsnotautopilotreadydevice"></a>Excluir userExperienceAnalyticsNotAutopilotReadyDevice
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementManagedDevices.ReadWrite.All|
+|Aplicativo|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {

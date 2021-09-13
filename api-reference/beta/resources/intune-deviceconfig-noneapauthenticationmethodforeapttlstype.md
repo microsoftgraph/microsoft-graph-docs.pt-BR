@@ -2,15 +2,15 @@
 title: tipo de número nonEapAuthenticationMethodForEapTtlsType
 description: Métodos não EAP para autenticação.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 01d5a4b9fa924b60985c08dba160d4ab449d3c6b
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 526fceca9bb4ab3b305a916501b3d5cb46397628
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58782123"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59111107"
 ---
 # <a name="noneapauthenticationmethodforeapttlstype-enum-type"></a>tipo de número nonEapAuthenticationMethodForEapTtlsType
 

@@ -2,15 +2,15 @@
 title: Tipo de recurso windows10GeneralConfiguration
 description: Este tópico fornece descrições dos métodos declarados, das propriedades e das relações expostos pelo recurso windows10GeneralConfiguration.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: bd7b396a848e6f3f6f8e515499b1ad01a6b28a8b
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 79cddddaa71bce75961c10ee411637ff0d20a5d3
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58806240"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59146076"
 ---
 # <a name="windows10generalconfiguration-resource-type"></a>Tipo de recurso windows10GeneralConfiguration
 
@@ -39,13 +39,13 @@ Herda de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md
 |:---|:---|:---|
 |id|Cadeia de caracteres|Chave da entidade. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de marcas de escopo para esta instância entity. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|roleScopeTagIds|String collection|Lista de marcas de escopo para esta instância entity. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |supportsScopeTags|Boleano|Indica se a Configuração de Dispositivo subjacente dá suporte ou não à atribuição de marcas de escopo. A atribuição à propriedade ScopeTags não é permitida quando esse valor é falso e as entidades não estarão visíveis para usuários com escopo. Isso ocorre para políticas herdadas criadas no Silverlight e podem ser resolvidas excluindo e recriando a política no Portal do Azure. Essa propriedade é somente leitura. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|A aplicabilidade da edição do sistema operacional para esta Política. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|A regra de aplicabilidade da versão do sistema operacional para esta Política. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|A regra de aplicabilidade do modo de dispositivo para esta Política. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|DateTime em que o objeto foi criado. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|descrição|Cadeia de caracteres|O administrador forneceu a descrição da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|description|Cadeia de caracteres|O administrador forneceu a descrição da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |displayName|Cadeia de caracteres|O administrador forneceu o nome da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |versão|Int32|Versão da configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |taskManagerBlockEndTask|Boleano|Especifique se os não administradores podem usar o Gerenciador de Tarefas para finalizar tarefas.|
@@ -64,10 +64,10 @@ Herda de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md
 |microsoftAccountSignInAssistantSettings|[signInAssistantOptions](../resources/intune-deviceconfig-signinassistantoptions.md)|Controla o serviço NT Sign-In assistente de conta da Microsoft (wlidsvc). Os valores possíveis são: `notConfigured` e `disabled`.|
 |authenticationAllowSecondaryDevice|Boleano|Permite que dispositivos de autenticação secundários funcionem com Windows.|
 |authenticationWebSignIn|[enablement](../resources/intune-shared-enablement.md)|Indica se o Provedor de Credenciais da Web será habilitado ou não. Os valores possíveis são: `notConfigured`, `enabled`, `disabled`.|
-|authenticationPreferredAzureADTenantDomainName|Cadeia de caracteres|Especifica o domínio preferencial entre os domínios disponíveis no locatário do Azure AD.|
+|authenticationPreferredAzureADTenantDomainName|Cadeia de Caracteres|Especifica o domínio preferencial entre os domínios disponíveis no locatário do Azure AD.|
 |cryptographyAllowFipsAlgorithmPolicy|Boleano|Especifique se é permitido ou não a política FIPS (Federal Information Processing Standard).|
-|displayAppListWithGdiDPIScalingTurnedOn|Coleção de cadeias de caracteres|Lista de aplicativos herdado que têm o Dimensionamento de DPI GDI ligado.|
-|displayAppListWithGdiDPIScalingTurnedOff|Coleção de cadeias de caracteres|Lista de aplicativos herdado que têm o Dimensionamento de DPI GDI desligado.|
+|displayAppListWithGdiDPIScalingTurnedOn|String collection|Lista de aplicativos herdado que têm o Dimensionamento de DPI GDI ligado.|
+|displayAppListWithGdiDPIScalingTurnedOff|String collection|Lista de aplicativos herdado que têm o Dimensionamento de DPI GDI desligado.|
 |enterpriseCloudPrintDiscoveryEndPoint|String|Ponto de extremidade para descoberta de impressoras na nuvem.|
 |enterpriseCloudPrintOAuthAuthority|String|Ponto de extremidade para aquisição de tokens OAuth.|
 |enterpriseCloudPrintOAuthClientIdentifier|String|GUID de um aplicativo cliente autorizado a recuperar tokens OAuth da autoridade OAuth.|
@@ -76,10 +76,10 @@ Herda de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md
 |enterpriseCloudPrintMopriaDiscoveryResourceIdentifier|String|URI do recurso OAuth para serviço de descoberta de impressoras, conforme configurado no portal do Azure.|
 |experienceDoNotSyncBrowserSettings|[browserSyncSetting](../resources/intune-deviceconfig-browsersyncsetting.md)|Permitir ou impedir a sincronização de configurações Microsoft Edge Navegador. Opção para os administradores de IT impedirem a sincronização entre dispositivos, mas permitir a substituição do usuário. Os valores possíveis são: `notConfigured`, `blockedWithUserOverride`, `blocked`.|
 |messagingBlockSync|Boleano|Indica se a mensagem de texto deve ou não ser restaurada e restaurada em todos os lugares.|
-|messagingBlockMMS|Booliano|Indica se a funcionalidade de envio/recebimento MMS deve ou não ser bloqueado no dispositivo.|
+|messagingBlockMMS|Boleano|Indica se a funcionalidade de envio/recebimento MMS deve ou não ser bloqueado no dispositivo.|
 |messagingBlockRichCommunicationServices|Boleano|Indica se a funcionalidade RCS enviar/receber no dispositivo.|
-|printerNames|Coleção de cadeias de caracteres|Provisionar impressoras automaticamente com base em seus nomes (nomes de host de rede).|
-|printerDefaultName|Cadeia de caracteres|Nome (nome do host de rede) de uma impressora instalada.|
+|printerNames|String collection|Provisionar impressoras automaticamente com base em seus nomes (nomes de host de rede).|
+|printerDefaultName|Cadeia de Caracteres|Nome (nome do host de rede) de uma impressora instalada.|
 |printerBlockAddition|Boleano|Impedir a instalação do usuário de impressoras adicionais de configurações de impressoras.|
 |searchBlockDiacritics|Boolean|Especifica se a pesquisa pode usar diacríticos.|
 |searchDisableAutoLanguageDetection|Boolean|Especifica se a detecção automática de idioma será usada ao indexar conteúdo e propriedades.|
@@ -95,7 +95,7 @@ Herda de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md
 |securityBlockAzureADJoinedDevicesAutoEncryption|Boleano|Especifique se é necessário permitir a criptografia automática de dispositivo durante o OOBE quando o dispositivo estiver ingressado no Azure AD (somente área de trabalho).|
 |diagnosticsDataSubmissionMode|[diagnosticDataSubmissionMode](../resources/intune-deviceconfig-diagnosticdatasubmissionmode.md)|Obtém ou define um valor que permite que o dispositivo envie dados de diagnóstico e de telemetria de uso, como Watson. Os valores possíveis são: `userDefined`, `none`, `basic`, `enhanced`, `full`.|
 |oneDriveDisableFileSync|Boolean|Obtém ou define um valor para permitir que os administradores de TI impeçam aplicativos e recursos de trabalhar com arquivos no OneDrive.|
-|systemTelemetryProxyServer|Cadeia de caracteres|Obtém ou define o FQDN (nome de domínio totalmente qualificado) ou endereço IP de um servidor proxy para encaminhar as experiências do usuário conectado e solicitações de Telemetria.|
+|systemTelemetryProxyServer|Cadeia de Caracteres|Obtém ou define o FQDN (nome de domínio totalmente qualificado) ou endereço IP de um servidor proxy para encaminhar as experiências do usuário conectado e solicitações de Telemetria.|
 |edgeTelemetryForMicrosoft365Analytics|[edgeTelemetryMode](../resources/intune-deviceconfig-edgetelemetrymode.md)|Especifica que tipo de dados de telemetria (nenhum, intranet, internet, ambos) são enviados para Microsoft 365 Analytics. Os valores possíveis são: `notConfigured`, `intranet`, `internet`, `intranetAndInternet`.|
 |inkWorkspaceAccess|[inkAccessSetting](../resources/intune-deviceconfig-inkaccesssetting.md)|Controla o acesso do usuário ao espaço de trabalho de tinta, da área de trabalho e de cima da tela de bloqueio. Os valores possíveis são: `notConfigured`, `enabled`, `disabled`.|
 |inkWorkspaceAccessState|[stateManagementSetting](../resources/intune-deviceconfig-statemanagementsetting.md)|Controla o acesso do usuário ao espaço de trabalho de tinta, da área de trabalho e de cima da tela de bloqueio. Os valores possíveis são: `notConfigured`, `blocked`, `allowed`.|
@@ -125,18 +125,18 @@ Herda de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md
 |edgeDisableFirstRunPage|Boolean|Bloquear a página da Web da Microsoft que é aberta na primeira utilização do Microsoft Edge. Esta política permite que empresas, como aquelas registradas em configurações de emissões zero, bloqueiem esta página.|
 |edgeBlockLiveTileDataCollection|Boolean|Bloquear a coleta de informações da Microsoft para criação de bloco dinâmico quando os usuários fixarem um site para iniciar no Microsoft Edge.|
 |edgeSyncFavoritesWithInternetExplorer|Boolean|Habilitar a sincronização de favoritos entre o Internet Explorer e o Microsoft Edge. Adições, exclusões, modificações e outras alterações para favoritos são compartilhadas entre navegadores.|
-|edgeFavoritesListLocation|Cadeia de caracteres|O local da lista de favoritos a ser provisionamento. Pode ser um arquivo local, rede local ou local http.|
+|edgeFavoritesListLocation|Cadeia de Caracteres|O local da lista de favoritos a ser provisionamento. Pode ser um arquivo local, rede local ou local http.|
 |edgeBlockEditFavorites|Boleano|Indica se o usuário deve ou não bloquear as alterações feitas em Favoritos.|
-|edgeNewTabPageURL|Cadeia de caracteres|Especifique a página aberta quando novas guias são criadas.|
+|edgeNewTabPageURL|Cadeia de Caracteres|Especifique a página aberta quando novas guias são criadas.|
 |edgeHomeButtonConfiguration|[edgeHomeButtonConfiguration](../resources/intune-deviceconfig-edgehomebuttonconfiguration.md)|Faz com que o botão Página Inicial seja ocultado, carregue a página Inicial padrão, carregue uma página nova guia ou uma URL personalizada|
 |edgeHomeButtonConfigurationEnabled|Boleano|Habilita a configuração do botão Página Inicial.|
 |edgeOpensWith|[edgeOpenOptions](../resources/intune-deviceconfig-edgeopenoptions.md)|Especifique que tipo de páginas estão abertas no início. Os valores possíveis são: `notConfigured`, `startPage`, `newTabPage`, `previousPages`, `specificPages`.|
 |edgeBlockSideloadingExtensions|Boleano|Indica se o usuário pode fazer sideload de extensões.|
-|edgeRequiredExtensionPackageFamilyNames|Coleção de cadeias de caracteres|Especifique a lista de nomes de família de pacotes de extensões do navegador que são necessárias e não podem ser desligadas pelo usuário.|
-|edgeBlockPrinting|Booliano|Configure Edge para permitir ou bloquear a impressão.|
+|edgeRequiredExtensionPackageFamilyNames|String collection|Especifique a lista de nomes de família de pacotes de extensões do navegador que são necessárias e não podem ser desligadas pelo usuário.|
+|edgeBlockPrinting|Boleano|Configure Edge para permitir ou bloquear a impressão.|
 |edgeFavoritesBarVisibility|[visibilitySetting](../resources/intune-deviceconfig-visibilitysetting.md)|Obter ou definir um valor que especifica se a barra de favoritos deve ser sempre visível ou oculta em qualquer página. Os valores possíveis são: `notConfigured`, `hide`, `show`.|
 |edgeBlockSavingHistory|Boleano|Configure o Edge para permitir que o histórico de navegação seja salvo ou nunca salve o histórico de navegação.|
-|edgeBlockFullScreenMode|Booliano|Permitir ou impedir que Edge entre no modo de tela inteira.|
+|edgeBlockFullScreenMode|Boleano|Permitir ou impedir que Edge entre no modo de tela inteira.|
 |edgeBlockWebContentOnNewTabPage|Boleano|Configure para carregar uma página em branco no Edge em vez da página de guia Nova padrão e impedir que os usuários a mudem.|
 |edgeBlockTabPreloading|Boleano|Configure se o Edge pré-carregará a nova página de tabulação na Windows inicialização.|
 |edgeBlockPrelaunch|Boleano|Decida se Microsoft Edge pré-inicialização na Windows inicialização.|
@@ -327,9 +327,9 @@ Herda de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md
 |appManagementMSIAllowUserControlOverInstall|Boleano|Essa configuração de política permite que os usuários alterem as opções de instalação que normalmente estão disponíveis apenas para administradores do sistema.|
 |appManagementMSIAlwaysInstallWithElevatedPrivileges|Boleano|Essa configuração de política direciona Windows o Instalador a usar permissões elevadas quando instala qualquer programa no sistema.|
 |dataProtectionBlockDirectMemoryAccess|Boleano|Essa configuração de política permite que você bloqueie o acesso direto à memória (DMA) para todas as portas de fluxo in-loqueável do PCI a quente até que um usuário entre no Windows.|
-|appManagementPackageFamilyNamesToLaunchAfterLogOn|Coleção de cadeias de caracteres|Lista de nomes de família de pacotes delimitados por dois pontos de Windows aplicativos. Os Windows aplicativos listados devem ser lançados após o logon.|
+|appManagementPackageFamilyNamesToLaunchAfterLogOn|String collection|Lista de nomes de família de pacotes delimitados por dois pontos de Windows aplicativos. Os Windows aplicativos listados devem ser lançados após o logon.|
 |uninstallBuiltInApps|Booliano|Indica se deseja ou não desinstalar uma lista fixa de aplicativos internos do Windows.|
-|configureTimeZone|Cadeia de caracteres|Especifica o fuso horário a ser aplicado ao dispositivo. Esse é o nome Windows padrão para o fuso horário de destino.|
+|configureTimeZone|Cadeia de Caracteres|Especifica o fuso horário a ser aplicado ao dispositivo. Esse é o nome Windows padrão para o fuso horário de destino.|
 
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|

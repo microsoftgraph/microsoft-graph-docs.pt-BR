@@ -2,15 +2,15 @@
 title: Tipo de recurso vpnOnDemandRule
 description: Definição de regra de vpn sob demanda.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4bcf5b6331777600bb847dc2aad4a921c2745702
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: cd9999ee2fdae94c21848535e39dc93f88949839
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58815096"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59146097"
 ---
 # <a name="vpnondemandrule-resource-type"></a>Tipo de recurso vpnOnDemandRule
 
@@ -25,13 +25,13 @@ Definição de regra de vpn sob demanda.
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|ssids|Coleção de cadeias de caracteres|Identificadores de conjunto de serviços de rede (SSIDs).|
-|dnsSearchDomains|Coleção de cadeias de caracteres|Domínios de Pesquisa DNS.|
-|probeUrl|Cadeia de caracteres|Uma URL para sondar. Se essa URL for buscada com êxito (retornando um código de status HTTP 200) sem redirecionamento, essa regra corresponde.|
+|ssids|String collection|Identificadores de conjunto de serviços de rede (SSIDs).|
+|dnsSearchDomains|String collection|Domínios de Pesquisa DNS.|
+|probeUrl|Cadeia de Caracteres|Uma URL para sondar. Se essa URL for buscada com êxito (retornando um código de status HTTP 200) sem redirecionamento, essa regra corresponde.|
 |ação|[vpnOnDemandRuleConnectionAction](../resources/intune-deviceconfig-vpnondemandruleconnectionaction.md)|Ação. Os valores possíveis são: `connect`, `evaluateConnection`, `ignore`, `disconnect`.|
 |domainAction|[vpnOnDemandRuleConnectionDomainAction](../resources/intune-deviceconfig-vpnondemandruleconnectiondomainaction.md)|Ação de domínio (aplicável somente quando Ação é avaliar conexão). Os valores possíveis são: `connectIfNeeded` e `neverConnect`.|
-|domínios|Coleção de cadeias de caracteres|Domínios (aplicável somente quando Ação é avaliar conexão).|
-|probeRequiredUrl|Cadeia de caracteres|Url Necessária da Sonda (Somente aplicável quando Action é avaliar a conexão e DomainAction é conectar-se, se necessário).|
+|domínios|String collection|Domínios (aplicável somente quando Ação é avaliar conexão).|
+|probeRequiredUrl|Cadeia de Caracteres|Url Necessária da Sonda (Somente aplicável quando Action é avaliar a conexão e DomainAction é conectar-se, se necessário).|
 
 ## <a name="relationships"></a>Relações
 Nenhum

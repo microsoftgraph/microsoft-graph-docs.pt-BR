@@ -2,15 +2,15 @@
 title: Excluir windowsInformationProtectionDeviceRegistration
 description: Exclui um windowsInformationProtectionDeviceRegistration.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 1b665b7cf22e5ee9eb4dea3ff344b5207626ef5d
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: d0bdb425f54bf48833466b40eae1325eb538e4c1
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58772972"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59092872"
 ---
 # <a name="delete-windowsinformationprotectiondeviceregistration"></a>Excluir windowsInformationProtectionDeviceRegistration
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementApps.ReadWrite.All|
+|Aplicativo|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {

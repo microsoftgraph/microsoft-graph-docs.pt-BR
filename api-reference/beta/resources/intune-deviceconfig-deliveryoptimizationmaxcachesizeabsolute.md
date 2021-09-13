@@ -2,15 +2,15 @@
 title: tipo de recurso deliveryOptimizationMaxCacheSizeAbsolute
 description: Tipo absoluto de tamanho absoluto de tamanho máximo de cache de Otimização de Entrega.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 37eab02840f088cc77744388e8a1c7f07b0e92dd
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 2ab78fe20a7614e8a3602167a88c0f088f311a6d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58771236"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59101650"
 ---
 # <a name="deliveryoptimizationmaxcachesizeabsolute-resource-type"></a>tipo de recurso deliveryOptimizationMaxCacheSizeAbsolute
 

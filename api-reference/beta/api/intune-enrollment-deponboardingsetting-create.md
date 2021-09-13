@@ -2,15 +2,15 @@
 title: Criar depOnboardingSetting
 description: Crie um novo objeto depOnboardingSetting.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f3f804b849140902a36b95694060924f03d6fc8f
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 6949a4dccaf15fd40b2e4cc32438f761e4e6c0ae
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58802604"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59124865"
 ---
 # <a name="create-deponboardingsetting"></a>Criar depOnboardingSetting
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementServiceConfig.ReadWrite.All|
+|Aplicativo|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -59,13 +59,13 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar o depOnb
 |lastModifiedDateTime|DateTimeOffset|Quando o serviço foi integrado.|
 |lastSuccessfulSyncDateTime|DateTimeOffset|Quando o serviço foi sintetizado pela última vez com o Intune|
 |lastSyncTriggeredDateTime|DateTimeOffset|Quando o Intune solicitou pela última vez uma sincronização.|
-|shareTokenWithSchoolDataSyncService|Booliano|Se o compartilhamento de token Dep está habilitado ou não com o School Data Sync serviço.|
+|shareTokenWithSchoolDataSyncService|Boleano|Se o compartilhamento de token Dep está habilitado ou não com o School Data Sync serviço.|
 |lastSyncErrorCode|Int32|Código de erro relatado pela Apple durante a última sincronização de dep.|
 |tokenType|[depTokenType](../resources/intune-enrollment-deptokentype.md)|Obtém ou define o Tipo de Token de Dep. Os valores possíveis são: `none`, `dep`, `appleSchoolManager`.|
-|tokenName|Cadeia de caracteres|Nome amigável para Token de Dep|
+|tokenName|Cadeia de Caracteres|Nome amigável para Token de Dep|
 |syncedDeviceCount|Int32|Obtém contagem de dispositivos sincronizados|
-|dataSharingConsentGranted|Booliano|Consentimento concedido para compartilhamento de dados com o Serviço de Dep da Apple|
-|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de marcas de escopo para esta instância entity.|
+|dataSharingConsentGranted|Boleano|Consentimento concedido para compartilhamento de dados com o Serviço de Dep da Apple|
+|roleScopeTagIds|String collection|Lista de marcas de escopo para esta instância entity.|
 
 
 

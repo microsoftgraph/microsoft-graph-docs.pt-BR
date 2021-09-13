@@ -2,15 +2,15 @@
 title: Tipo de número certificateIssuanceStates
 description: Opções de estado de emissão de certificado.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 8f3439f53269bc6126d098016805dd541ad4ad58
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 0d4dd08d3068052562098d407ef13d007d6de8a7
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58797293"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59127462"
 ---
 # <a name="certificateissuancestates-enum-type"></a>Tipo de número certificateIssuanceStates
 
@@ -36,7 +36,7 @@ Opções de estado de emissão de certificado.
 |issuePending|8 |Ainda não documentado|
 |emitido|9 |Ainda não documentado|
 |responseProcessingFailed|10 |Ainda não documentado|
-|responsePending|11 |Ainda não documentado|
+|responsePending|11|Ainda não documentado|
 |enrollmentSucceededed|12 |Ainda não documentado|
 |enrollmentNotNeeded|13|Ainda não documentado|
 |revogado|14 |Ainda não documentado|

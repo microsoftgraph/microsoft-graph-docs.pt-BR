@@ -2,15 +2,15 @@
 title: Tipo de recurso deviceManagementConfigurationReferredSettingInformation
 description: Informações de configuração referidas sobre a configuração reutilizável
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 2a38d8566084999a291f770267745fe81015c5b9
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: ccf72c890b8435dbd0491a8c7a2028af6b60a705
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58795526"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59148211"
 ---
 # <a name="devicemanagementconfigurationreferredsettinginformation-resource-type"></a>Tipo de recurso deviceManagementConfigurationReferredSettingInformation
 
@@ -25,7 +25,7 @@ Informações de configuração referidas sobre a configuração reutilizável
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|settingDefinitionId|Cadeia de caracteres|Definindo a id de definição que está sendo referenciada a uma configuração. Aplicável para a configuração reutilizável|
+|settingDefinitionId|Cadeia de Caracteres|Definindo a id de definição que está sendo referenciada a uma configuração. Aplicável para a configuração reutilizável|
 
 ## <a name="relationships"></a>Relações
 Nenhum
