@@ -2,15 +2,15 @@
 title: Tipo de número do windowsInformationProtectionEnforcementLevel
 description: Valores possíveis para níveis de aplicação da Proteção da WIP
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: d44fc165eb5c1a728e61c5b9a07ebc8f00a131de
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 3dff8dec4a3cce65421b64a9261c4e29bbda8b1d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58789240"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59063801"
 ---
 # <a name="windowsinformationprotectionenforcementlevel-enum-type"></a>Tipo de número do windowsInformationProtectionEnforcementLevel
 

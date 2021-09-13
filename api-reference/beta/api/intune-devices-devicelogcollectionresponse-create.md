@@ -2,15 +2,15 @@
 title: Criar deviceLogCollectionResponse
 description: Crie um novo objeto deviceLogCollectionResponse.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 4144f0ef0005b6e6e4d9522163617d7c67ae5b79
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: bdde6664335c7449a60200b89d966a7f97094f6b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58792250"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59065488"
 ---
 # <a name="create-devicelogcollectionresponse"></a>Criar deviceLogCollectionResponse
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementManagedDevices.ReadWrite.All|
+|Aplicativo|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -53,13 +53,13 @@ A tabela a seguir mostra as propriedades necessárias ao criar deviceLogCollecti
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|O identificador exclusivo na forma de tenantId_deviceId_requestId|
+|id|String|O identificador exclusivo na forma de tenantId_deviceId_requestId|
 |status|Cadeia de caracteres|O status da solicitação do conjunto de log|
 |managedDeviceId|Guid|A ID do dispositivo|
 |errorCode|Int64|O código de erro, se for o caso. Valores válidos -9.22337203685478E+18 a 9.22337203685478E+18|
 |requestedDateTimeUTC|DateTimeOffset|DateTime da solicitação|
 |receivedDateTimeUTC|DateTimeOffset|DateTime a solicitação foi recebida|
-|initiatedByUserPrincipalName|Cadeia de caracteres|O UPN para quem iniciou a solicitação|
+|initiatedByUserPrincipalName|String|O UPN para quem iniciou a solicitação|
 |expirationDateTimeUTC|DateTimeOffset|DateTime da expiração dos logs|
 |size|Duplo|O tamanho dos logs. Valores válidos -1,79769313486232E+308 a 1.79769313486232E+308|
 

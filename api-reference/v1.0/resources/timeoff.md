@@ -2,15 +2,15 @@
 title: Tipo de recurso timeOff
 description: Uma unidade que não funciona na agenda.
 author: akumar39
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: resourcePageType_
-ms.openlocfilehash: 9390ec6e148bde2a5edab6b9984561a878d2d0d88e25078d4ecbbd7b50f2a63f
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 185f292dbbc8a993699073be1f91b6a2902b18ed
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54196477"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59122933"
 ---
 # <a name="timeoff-resource-type"></a>Tipo de recurso timeOff
 
@@ -26,7 +26,7 @@ Uma unidade que não funciona em um cronograma.
 |[Criar](../api/schedule-post-timesoff.md) | [timeOff](timeoff.md) | Crie um novo **objeto timeOff.**|
 |[Obter](../api/timeoff-get.md) | [timeOff](timeoff.md) | Obter um **objeto timeOff** por ID.|
 |[Replace](../api/timeoff-put.md) | [timeOff](timeoff.md) | Substitua um **objeto timeOff.**|
-|[Delete](../api/timeoff-delete.md) | None | **Exclua um objeto timeOff** da agenda.|
+|[Delete](../api/timeoff-delete.md) | Nenhum(a) | **Exclua um objeto timeOff** da agenda.|
 
 ## <a name="properties"></a>Propriedades
 |Nome          |Tipo           |Descrição                                                                                                                                      |

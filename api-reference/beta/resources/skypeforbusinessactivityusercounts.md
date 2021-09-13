@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso skypeForBusinessActivityUserCounts
 description: Veja a seguir uma representação JSON do recurso.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: ''
 author: kszb
-ms.openlocfilehash: 575085ab78a8e3da81f15c525e166ca5f6f9789072e30e930f3c76ec8f273fe1
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: eedf458e61f08655cf2841ed0a33dc632a59a1d1
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54212924"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59063570"
 ---
 # <a name="skypeforbusinessactivityusercounts-resource-type"></a>Tipo de recurso skypeForBusinessActivityUserCounts
 

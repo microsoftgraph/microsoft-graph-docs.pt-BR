@@ -2,15 +2,15 @@
 title: Criar macOSSoftwareUpdateAccountSummary
 description: Crie um novo objeto macOSSoftwareUpdateAccountSummary.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d797f7bf6e7dd706bf2f1605bfea769279ed8900
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 9c5d0bdde48403f373e4670ba870c6daaba73783
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58815831"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59065726"
 ---
 # <a name="create-macossoftwareupdateaccountsummary"></a>Criar macOSSoftwareUpdateAccountSummary
 
@@ -27,8 +27,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -53,7 +53,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar o macOSS
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Chave da entidade.|
+|id|String|Chave da entidade.|
 |displayName|Cadeia de caracteres|O nome do relatório|
 |deviceId|Cadeia de caracteres|A ID do dispositivo.|
 |userId|Cadeia de caracteres|A ID do usuário.|

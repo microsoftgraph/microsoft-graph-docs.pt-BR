@@ -2,15 +2,15 @@
 title: Tipo de recurso mobileAppIntentAndState
 description: Estado de instalação e intenção do MobileApp para um determinado dispositivo.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d8e5b3c8eb1e221adffcd79f65884c688067d1ba
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 40d555aacab29757622bb6e82d5358eb0c89ed42
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58255937"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59023259"
 ---
 # <a name="mobileappintentandstate-resource-type"></a>Tipo de recurso mobileAppIntentAndState
 
@@ -32,7 +32,7 @@ Estado de instalação e intenção do MobileApp para um determinado dispositivo
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|O UUID do objeto.|
+|id|String|O UUID do objeto.|
 |managedDeviceIdentifier|Cadeia de caracteres|Identificador de dispositivo criado ou coletado pelo Intune.|
 |userId|Cadeia de caracteres|Identificador do usuário que tentou registrar o dispositivo.|
 |mobileAppList|[Coleção mobileAppIntentAndStateDetail](../resources/intune-troubleshooting-mobileappintentandstatedetail.md)|A lista de intenções de carga e estados para o locatário.|

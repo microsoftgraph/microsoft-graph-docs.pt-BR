@@ -2,15 +2,15 @@
 title: 'event: forward'
 description: 'Essa ação permite que o organizador ou participante de um evento de reunião encaminhe o '
 author: harini84
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 02a01fb75b17941dd4bcb8e3703eec0e0dcece61
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 3cb56c0edbf845fb5a91ff92840c82800d31bcbc
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50448302"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59016621"
 ---
 # <a name="event-forward"></a>event: forward
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 Essa ação permite que o organizador ou participante de um evento de [reunião](../resources/event.md) encaminhe a solicitação de reunião para um novo destinatário. 
 
-Se o evento de reunião for encaminhado da caixa de correio do Microsoft 365 de um participante para outro destinatário, essa ação também enviará uma mensagem para notificar o organizador do encaminhamento e adiciona o destinatário à cópia do evento de reunião do organizador. Essa conveniência não está disponível no encaminhamento de uma conta do Outlook.com.
+Se o evento de reunião for encaminhado da caixa de correio de Microsoft 365 do participante para outro destinatário, essa ação também enviará uma mensagem para notificar o organizador do encaminhamento e adiciona o destinatário à cópia do evento de reunião do organizador. Essa conveniência não está disponível no encaminhamento de uma conta do Outlook.com.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).

@@ -2,15 +2,15 @@
 title: Atualizar groupPolicyPresentationLongDecimalTextBox
 description: Atualize as propriedades de um objeto groupPolicyPresentationLongDecimalTextBox.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ee4be1b91f3e6194a4ab83aa1662a38dca7f6b03
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 25e936013d5036c6ddc37748415fb47e69863198
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58794550"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59065159"
 ---
 # <a name="update-grouppolicypresentationlongdecimaltextbox"></a>Atualizar groupPolicyPresentationLongDecimalTextBox
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -60,7 +60,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [o group
 |defaultValue|Int64|Um inteiro não assinado que especifica o valor inicial da caixa de texto decimal. O valor padrão é 1.|
 |spin|Boleano|Se for true, crie um controle de rotação; caso contrário, crie uma caixa de texto para entrada numérica. O valor padrão é true.|
 |spinStep|Int64|Um inteiro não assinado que especifica o incremento de alteração para o controle de rotação. O valor padrão é 1.|
-|obrigatório|Booliano|Requisito para inserir um valor na caixa de parâmetros. O valor padrão é falso.|
+|obrigatório|Boleano|Requisito para inserir um valor na caixa de parâmetros. O valor padrão é falso.|
 |minValue|Int64|Um long não assinado que especifica o valor mínimo permitido. O valor padrão é 0.|
 |maxValue|Int64|Um long não assinado que especifica o valor máximo permitido. O valor padrão é 9999.|
 

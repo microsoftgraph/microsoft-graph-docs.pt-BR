@@ -2,15 +2,15 @@
 title: Criar termsAndConditions
 description: Criar um novo objeto termsAndConditions.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 273a7da2a54945887e1695fee3f1ab0a60deb326bdf929f797a17e694c555398
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: ec95b7b7e3a2b20c835eb178dc09cef3c5f1b89f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54200016"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59140519"
 ---
 # <a name="create-termsandconditions"></a>Criar termsAndConditions
 
@@ -51,7 +51,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar termsAnd
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Identificador exclusivo da política de T&C.|
+|id|String|Identificador exclusivo da política de T&C.|
 |createdDateTime|DateTimeOffset|DateTime em que o objeto foi criado.|
 |lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto.|
 |displayName|String|Nome fornecido pelo administrador para a política de T&C. |

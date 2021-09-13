@@ -2,15 +2,15 @@
 title: Atualizar deviceComplianceDeviceStatus
 description: Atualizar as propriedades de um objeto deviceComplianceDeviceStatus.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 868fb2e32ba3443700206ab451deea09bb0602416c211bbebac948e57f19fe1f
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 09f62d7ec0c260e5f8a9bebc4243acfebfdbd594
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54121792"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59140091"
 ---
 # <a name="update-devicecompliancedevicestatus"></a>Atualizar deviceComplianceDeviceStatus
 
@@ -51,7 +51,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [deviceC
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Chave da entidade.|
+|id|String|Chave da entidade.|
 |deviceDisplayName|Cadeia de caracteres|Nome do dispositivo de DevicePolicyStatus.|
 |userName|Cadeia de caracteres|O nome de usuário que está sendo relatado|
 |deviceModel|Cadeia de caracteres|O modelo do dispositivo que está sendo relatado|

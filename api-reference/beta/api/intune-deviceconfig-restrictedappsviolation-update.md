@@ -2,15 +2,15 @@
 title: Atualizar restrictedAppsViolation
 description: Atualize as propriedades de um objeto restrictedAppsViolation.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ffb547d7b5fd64916212b2f2332887cedb1b5665
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: a225315b3c30685af715932bbb591a0f5f650fd5
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58820096"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59065712"
 ---
 # <a name="update-restrictedappsviolation"></a>Atualizar restrictedAppsViolation
 
@@ -27,8 +27,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -53,13 +53,13 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [o restr
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Identificador exclusivo do objeto. Composto por accountId, deviceId, policyId e userId|
+|id|String|Identificador exclusivo do objeto. Composto por accountId, deviceId, policyId e userId|
 |userId|Cadeia de caracteres|Identificador exclusivo do usuário, deve ser Guid|
 |userName|Cadeia de caracteres|Nome de usuário|
-|managedDeviceId|Cadeia de caracteres|Identificador exclusivo do dispositivo gerenciado, deve ser Guid|
+|managedDeviceId|String|Identificador exclusivo do dispositivo gerenciado, deve ser Guid|
 |deviceName|String|Nome do dispositivo|
 |deviceConfigurationId|Cadeia de caracteres|Identificador exclusivo do perfil de configuração do dispositivo, deve ser Guid|
-|deviceConfigurationName|String|Nome do perfil de configuração do dispositivo|
+|deviceConfigurationName|Cadeia de caracteres|Nome do perfil de configuração do dispositivo|
 |platformType|[policyPlatformType](../resources/intune-deviceconfig-policyplatformtype.md)|Tipo de plataforma. Os valores possíveis são: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `windows10XProfile`, `androidAOSP`, `all`.|
 |restrictedAppsState|[restrictedAppsState](../resources/intune-deviceconfig-restrictedappsstate.md)|Estado de aplicativos restritos. Os valores possíveis são: `prohibitedApps` e `notApprovedApps`.|
 |restrictedApps|[Coleção managedDeviceReportedApp](../resources/intune-deviceconfig-manageddevicereportedapp.md)|Lista de aplicativos restritos violados|

@@ -2,15 +2,15 @@
 title: Listar accessReviewInstanceDecisionItems
 description: Obter uma lista dos objetos accessReviewInstanceDecisionItem e suas propriedades.
 author: isabelleatmsft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 03f7232aab960dc5f4f9d6f2a2a5536793d92ba9
-ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
+ms.openlocfilehash: 7742b6688f7bdd3481a8c0b2801607d2a5120723
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53210420"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59128457"
 ---
 # <a name="list-accessreviewinstancedecisionitems"></a>Listar accessReviewInstanceDecisionItems
 Namespace: microsoft.graph
@@ -25,7 +25,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|AccessReview.Read.All, AccessReview.ReadWrite.All  |
+|Delegado (conta corporativa ou de estudante)|AccessReview.Read.All, AccessReview.ReadWrite.All  |
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|AccessReview.Read.All, AccessReview.ReadWrite.All|
 

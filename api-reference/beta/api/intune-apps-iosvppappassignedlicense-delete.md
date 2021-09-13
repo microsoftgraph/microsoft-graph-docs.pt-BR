@@ -2,15 +2,15 @@
 title: Excluir iosVppAppAssignedLicense
 description: Exclui um iosVppAppAssignedLicense.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e3bccd53b1280de1c4ee765adf6bdc23cb76b678
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 7a5f2d4dc25a65c162569185db4ff35967ee7c9e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58785077"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59062233"
 ---
 # <a name="delete-iosvppappassignedlicense"></a>Excluir iosVppAppAssignedLicense
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementApps.ReadWrite.All|
+|Aplicativo|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {

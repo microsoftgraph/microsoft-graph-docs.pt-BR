@@ -2,16 +2,16 @@
 author: JeremyKelley
 ms.date: 09/10/2017
 title: obter um arquivo ou uma pasta
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: sharepoint
 description: Recupere os metadados de um DriveItem em um Drive por ID ou por caminho do sistema de arquivos.
 doc_type: apiPageType
-ms.openlocfilehash: 7fb47cd473114d5ecd376c092584b7166d6801eb
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: ec020e311de0c5df80b361ceb1fc3d4de36ca6ea
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50240301"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59050597"
 ---
 # <a name="get-a-driveitem-resource"></a>Obter um recurso DriveItem
 
@@ -59,7 +59,7 @@ No momento, só há suporte para isso no OneDrive pessoal.
 
 ## <a name="optional-request-headers"></a>Cabeçalhos de solicitação opcionais
 
-| Nome          | Valor  | Descrição                                                                                                                                              |
+| Name          | Valor  | Descrição                                                                                                                                              |
 |:--------------|:-------|:---------------------------------------------------------------------------------------------------------------------------------------------------------|
 | if-none-match | String | Se este cabeçalho de solicitação estiver incluso e a eTag (ou cTag) fornecida corresponder à marca atual do arquivo, uma resposta `HTTP 304 Not Modified` será exibida. |
 

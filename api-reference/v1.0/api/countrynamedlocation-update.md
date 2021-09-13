@@ -1,16 +1,16 @@
 ---
 title: Atualizar countryNamedlocation
 description: Atualize as propriedades de um objeto countryNamedLocation.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: videor
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 16c8fdbc1acd156dc2b4886f2edc68cc676fa1bf
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 1ab1a5f770864c1eb3e1003cb153c7bb01af682d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52787468"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59063514"
 ---
 # <a name="update-countrynamedlocation"></a>Atualizar countryNamedLocation
 
@@ -24,8 +24,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | Policy.Read.All e Policy.ReadWrite.ConditionalAccess |
-| Delegado (conta pessoal da Microsoft) | Sem suporte. |
+| Delegada (conta corporativa ou de estudante)     | Policy.Read.All e Policy.ReadWrite.ConditionalAccess |
+| Delegada (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo                            | Policy.Read.All e Policy.ReadWrite.ConditionalAccess |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -47,9 +47,11 @@ PATCH /identity/conditionalAccess/namedLocations/{id}
 
 No corpo da solicitação, forneça os valores para os campos relevantes que devem ser atualizados. Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade. Para alcançar o melhor desempenho, não inclua valores existentes que não foram alterados.
 
+Você deve especificar o **@odata.type** como `#microsoft.graph.countryNamedLocation` .
+
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|countriesAndRegions|Coleção de cadeias de caracteres|Lista de países e/ou regiões no formato de duas letras especificado pela ISO 3166-2.|
+|countriesAndRegions|Coleção String|Lista de países e/ou regiões no formato de duas letras especificado pela ISO 3166-2.|
 |displayName|Cadeia de caracteres|Nome acessível para humanos do local.|
 |includeUnknownCountriesAndRegions|Boolean|O valor é `true` se os endereços IP que não mapeiam para um país ou região devem ser incluídos no local nomeado.|
 

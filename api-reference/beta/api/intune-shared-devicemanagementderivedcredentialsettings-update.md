@@ -2,15 +2,15 @@
 title: Atualizar deviceManagementDerivedCredentialSettings
 description: Atualize as propriedades de um objeto deviceManagementDerivedCredentialSettings.
 author: rolyon
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e9aabab7ce588ed10b0372fa667434fb46073222
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 645b8400717191b661ac8976d8c5c38824d4e64e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58786408"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59064774"
 ---
 # <a name="update-devicemanagementderivedcredentialsettings"></a>Atualizar deviceManagementDerivedCredentialSettings
 
@@ -31,7 +31,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 | &nbsp; &nbsp; **Configuração do dispositivo** | DeviceManagementConfiguration.ReadWrite.All|
 | &nbsp;&nbsp; **Política de Acesso a Recursos** | DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application||
+|Aplicativo||
 | &nbsp; &nbsp; **Configuração do dispositivo** | DeviceManagementConfiguration.ReadWrite.All|
 | &nbsp;&nbsp; **Política de Acesso a Recursos** | DeviceManagementConfiguration.ReadWrite.All|
 
@@ -62,9 +62,9 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [deviceM
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Identificador exclusivo da Credencial Derivada|
+|id|String|Identificador exclusivo da Credencial Derivada|
 |**Política rara**|
-|helpUrl|Cadeia de caracteres|A URL que será acessível aos usuários finais à medida que eles recuperam uma credencial derivada usando o Portal da Empresa.|
+|helpUrl|String|A URL que será acessível aos usuários finais à medida que eles recuperam uma credencial derivada usando o Portal da Empresa.|
 |displayName|Cadeia de caracteres|O nome de exibição do perfil.|
 |emissor|[deviceManagementDerivedCredentialIssuer](../resources/intune-shared-devicemanagementderivedcredentialissuer.md)|O provedor de credenciais derivado a ser usado. Os valores possíveis são: `intercede`, `entrustDatacard`, `purebred`.|
 |notificationType|[deviceManagementDerivedCredentialNotificationType](../resources/intune-shared-devicemanagementderivedcredentialnotificationtype.md)|Os métodos usados para informar o usuário final para abrir Portal da Empresa para fornecer perfis de Wi-Fi, VPN ou email que usam certificados no dispositivo. Os valores possíveis são: `none`, `companyPortal`, `email`.|

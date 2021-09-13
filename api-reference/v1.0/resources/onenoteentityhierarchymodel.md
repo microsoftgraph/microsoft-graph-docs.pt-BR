@@ -2,15 +2,15 @@
 title: Recurso onenoteEntityHierarchyModel
 description: Esse é um tipo base para OneNote entidades.
 author: jewan-microsoft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: onenote
 doc_type: resourcePageType
-ms.openlocfilehash: 29f600f5066df9920d22dd339125a1046ef2f7d78fb18ccd3e3d22992ce259fa
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 8b8a53205227f71f92245ebfb8cf4896ec91e58e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54235377"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59118030"
 ---
 # <a name="onenoteentityhierarchymodel-resource"></a>Recurso onenoteEntityHierarchyModel
 

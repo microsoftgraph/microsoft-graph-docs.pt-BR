@@ -2,15 +2,15 @@
 title: Tipo de recurso userExperienceAnalyticsModelScores
 description: A entidade de pontuações do modelo de análise de experiência do usuário consolida as várias pontuações de análise de ponto de extremidade.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: e07dec294843f11135d3cfe34a55f81d02b18cff
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: a29726d69cca6330de93af4793862a76e6fc9ce2
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58783646"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59064060"
 ---
 # <a name="userexperienceanalyticsmodelscores-resource-type"></a>Tipo de recurso userExperienceAnalyticsModelScores
 
@@ -28,7 +28,7 @@ A entidade de pontuações do modelo de análise de experiência do usuário con
 |[Listar userExperienceAnalyticsModelScoreses](../api/intune-devices-userexperienceanalyticsmodelscores-list.md)|[Coleção userExperienceAnalyticsModelScores](../resources/intune-devices-userexperienceanalyticsmodelscores.md)|Listar propriedades e relações dos [objetos userExperienceAnalyticsModelScores.](../resources/intune-devices-userexperienceanalyticsmodelscores.md)|
 |[Obter userExperienceAnalyticsModelScores](../api/intune-devices-userexperienceanalyticsmodelscores-get.md)|[userExperienceAnalyticsModelScores](../resources/intune-devices-userexperienceanalyticsmodelscores.md)|Ler propriedades e relações do [objeto userExperienceAnalyticsModelScores.](../resources/intune-devices-userexperienceanalyticsmodelscores.md)|
 |[Criar userExperienceAnalyticsModelScores](../api/intune-devices-userexperienceanalyticsmodelscores-create.md)|[userExperienceAnalyticsModelScores](../resources/intune-devices-userexperienceanalyticsmodelscores.md)|Crie um novo [objeto userExperienceAnalyticsModelScores.](../resources/intune-devices-userexperienceanalyticsmodelscores.md)|
-|[Excluir userExperienceAnalyticsModelScores](../api/intune-devices-userexperienceanalyticsmodelscores-delete.md)|Nenhum(a)|Exclui um [userExperienceAnalyticsModelScores](../resources/intune-devices-userexperienceanalyticsmodelscores.md).|
+|[Excluir userExperienceAnalyticsModelScores](../api/intune-devices-userexperienceanalyticsmodelscores-delete.md)|Nenhum|Exclui um [userExperienceAnalyticsModelScores](../resources/intune-devices-userexperienceanalyticsmodelscores.md).|
 |[Atualizar userExperienceAnalyticsModelScores](../api/intune-devices-userexperienceanalyticsmodelscores-update.md)|[userExperienceAnalyticsModelScores](../resources/intune-devices-userexperienceanalyticsmodelscores.md)|Atualize as propriedades de [um objeto userExperienceAnalyticsModelScores.](../resources/intune-devices-userexperienceanalyticsmodelscores.md)|
 
 ## <a name="properties"></a>Propriedades

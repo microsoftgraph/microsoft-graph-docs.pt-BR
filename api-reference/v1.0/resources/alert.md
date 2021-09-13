@@ -1,16 +1,16 @@
 ---
 title: tipo de alerta do recurso
 description: Representa possíveis problemas de segurança no locatário de um cliente identificado pela Microsoft ou por soluções de segurança de parceiros. Use alertas para unificar e agilizar o gerenciamento de problemas de segurança em todas as soluções integradas. Para saber mais, veja exemplos de consulta no Explorador de Gráfico.
-localization_priority: Priority
+ms.localizationpriority: high
 author: preetikr
 ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: 2726eeac1a1b355a27ba45f998a463c3fc8ecbc4855c5caee9b58c8528f825f2
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: ac7198b4f45e9e79e12da878d28c3d245cefdf7a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54126708"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59089890"
 ---
 # <a name="alert-resource-type"></a>tipo de alerta do recurso
 

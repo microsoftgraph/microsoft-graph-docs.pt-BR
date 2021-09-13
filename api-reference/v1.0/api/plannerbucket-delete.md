@@ -1,16 +1,16 @@
 ---
 title: Excluir plannerBucket
 description: Exclua **plannerBucket**.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: f90d1d072a96188f91ce70f6ddd217351e881aa1
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 606f437978cb7ac2ae21c56103c215ed1d34dcb0
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52035138"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59037282"
 ---
 # <a name="delete-plannerbucket"></a>Excluir plannerBucket
 
@@ -78,7 +78,7 @@ If-Match: W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="
 ---
 
 ##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto de resposta exibido aqui pode ser encurtado para legibilidade.
+Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser reduzido para facilitar a leitura.
 <!-- {
   "blockType": "response",
   "truncated": true

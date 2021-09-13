@@ -2,15 +2,15 @@
 title: Tipo de número defenderPromptForSampleSubmission
 description: Valores possíveis para solicitar ao usuário o envio de amostras.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 880dd675b0384e7b98a7fdffb4a9a641f91e47f8b99acfcef57a8896643ea0a6
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: f0cbbef209f1b773b8314fb073ca4ec2129f3343
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54159978"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59062660"
 ---
 # <a name="defenderpromptforsamplesubmission-enum-type"></a>Tipo de número defenderPromptForSampleSubmission
 

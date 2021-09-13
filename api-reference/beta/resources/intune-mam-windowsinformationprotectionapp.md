@@ -2,15 +2,15 @@
 title: Tipo de recurso windowsInformationProtectionApp
 description: Aplicativo para proteção de informações do Windows
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 7394ab6b8a0a81a005f7f6d8966214b17251ec0b
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 41a1e8fc34c4d9785747e30ee1f4eda967ecf490
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58818748"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59063843"
 ---
 # <a name="windowsinformationprotectionapp-resource-type"></a>Tipo de recurso windowsInformationProtectionApp
 
@@ -26,7 +26,7 @@ Aplicativo para proteção de informações do Windows
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |displayName|Cadeia de caracteres|Nome de exibição do aplicativo.|
-|description|Cadeia de caracteres|A descrição do aplicativo.|
+|description|String|A descrição do aplicativo.|
 |publisherName|String|O nome do distribuidor|
 |productName|Cadeia de caracteres|O nome do produto.|
 |negado|Booliano|Se verdadeiro, é negada proteção ou isenção ao aplicativo.|

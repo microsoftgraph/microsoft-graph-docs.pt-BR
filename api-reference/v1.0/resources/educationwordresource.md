@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso educationWordResource
 description: Uma subclasse de educationResource.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: mmast-msft
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 00ce0d3a31c62bc38c6a5f9893c69b51a58c3a32741e993691e234a753278385
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 182932115e7e0abef173b73f6e6a78677c5bac0b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54192527"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59118628"
 ---
 # <a name="educationwordresource-resource-type"></a>Tipo de recurso educationWordResource
 
@@ -24,7 +24,7 @@ Este é um recurso de documento do Word. O arquivo word deve ser carregado no **
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|fileUrl|Cadeia de caracteres|Local do arquivo no disco.|
+|fileUrl|String|Local do arquivo no disco.|
 
 ## <a name="json-representation"></a>Representação JSON
 

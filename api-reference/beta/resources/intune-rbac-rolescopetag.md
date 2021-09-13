@@ -2,15 +2,15 @@
 title: Tipo de recurso roleScopeTag
 description: Marca de escopo de função
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d121f48aec77684a8f770f7c5a65e23456459b91
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: d504565cbc5f37a70fc813386024b1c32c4654e6
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58790112"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59063682"
 ---
 # <a name="rolescopetag-resource-type"></a>Tipo de recurso roleScopeTag
 
@@ -28,7 +28,7 @@ Marca de escopo de função
 |[Listar roleScopeTags](../api/intune-rbac-rolescopetag-list.md)|[Coleção roleScopeTag](../resources/intune-rbac-rolescopetag.md)|Listar propriedades e relações dos [objetos roleScopeTag.](../resources/intune-rbac-rolescopetag.md)|
 |[Obter roleScopeTag](../api/intune-rbac-rolescopetag-get.md)|[roleScopeTag](../resources/intune-rbac-rolescopetag.md)|Leia propriedades e relações do [objeto roleScopeTag.](../resources/intune-rbac-rolescopetag.md)|
 |[Criar roleScopeTag](../api/intune-rbac-rolescopetag-create.md)|[roleScopeTag](../resources/intune-rbac-rolescopetag.md)|Crie um novo [objeto roleScopeTag.](../resources/intune-rbac-rolescopetag.md)|
-|[Excluir roleScopeTag](../api/intune-rbac-rolescopetag-delete.md)|Nenhum(a)|Exclui um [roleScopeTag](../resources/intune-rbac-rolescopetag.md).|
+|[Excluir roleScopeTag](../api/intune-rbac-rolescopetag-delete.md)|Nenhum|Exclui um [roleScopeTag](../resources/intune-rbac-rolescopetag.md).|
 |[Atualizar roleScopeTag](../api/intune-rbac-rolescopetag-update.md)|[roleScopeTag](../resources/intune-rbac-rolescopetag.md)|Atualize as propriedades de um [objeto roleScopeTag.](../resources/intune-rbac-rolescopetag.md)|
 |[atribuir ação](../api/intune-rbac-rolescopetag-assign.md)|[Coleção roleScopeTagAutoAssignment](../resources/intune-rbac-rolescopetagautoassignment.md)|Ainda não documentado|
 |[Ação getRoleScopeTagsById](../api/intune-rbac-rolescopetag-getrolescopetagsbyid.md)|[Coleção roleScopeTag](../resources/intune-rbac-rolescopetag.md)|Ainda não documentado|
@@ -37,9 +37,9 @@ Marca de escopo de função
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Chave da entidade. É somente leitura e gerada automaticamente. Essa propriedade é somente leitura.|
-|displayName|Cadeia de caracteres|O nome de exibição ou amigável da Marca de Escopo de Função.|
-|descrição|Cadeia de caracteres|Descrição da marca escopo de função.|
+|id|String|Chave da entidade. É somente leitura e gerada automaticamente. Essa propriedade é somente leitura.|
+|displayName|String|O nome de exibição ou amigável da Marca de Escopo de Função.|
+|description|Cadeia de caracteres|Descrição da marca escopo de função.|
 |isBuiltIn|Booliano|Descrição da marca escopo de função. Essa propriedade é somente leitura.|
 
 ## <a name="relationships"></a>Relações

@@ -2,15 +2,15 @@
 title: Atualizar chartaxistitle
 description: Atualiza as propriedades do objeto chartaxistitle.
 author: lumine2008
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 07503fd8a90aecdf07737ddf0cf2c11438777a51
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 75876dc223dfb2ef76f0c4b41bae45d6178b91dc
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52048824"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59114719"
 ---
 # <a name="update-chartaxistitle"></a>Atualizar chartaxistitle
 
@@ -91,7 +91,7 @@ Content-length: 45
 ---
 
 ##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto de resposta exibido aqui pode ser encurtado para legibilidade.
+Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser reduzido para facilitar a leitura.
 <!-- {
   "blockType": "response",
   "truncated": true,

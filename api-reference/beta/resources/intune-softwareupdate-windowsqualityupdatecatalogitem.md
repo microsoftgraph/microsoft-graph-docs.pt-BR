@@ -2,15 +2,15 @@
 title: Tipo de recurso windowsQualityUpdateCatalogItem
 description: Windows de item de catálogo de atualização
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 25f4838145c47ef23ce2ee50300452fbf0e9333f
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 1b71b3f0d910b385e60dfb77df488d216b556186
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58821904"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59029826"
 ---
 # <a name="windowsqualityupdatecatalogitem-resource-type"></a>Tipo de recurso windowsQualityUpdateCatalogItem
 
@@ -37,13 +37,13 @@ Herda de [windowsUpdateCatalogItem](../resources/intune-softwareupdate-windowsup
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|A ID do item de catálogo. Herdado [do windowsUpdateCatalogItem](../resources/intune-softwareupdate-windowsupdatecatalogitem.md)|
-|displayName|String|O nome de exibição do item de catálogo. Herdado [do windowsUpdateCatalogItem](../resources/intune-softwareupdate-windowsupdatecatalogitem.md)|
+|id|String|A ID do item de catálogo. Herdado [do windowsUpdateCatalogItem](../resources/intune-softwareupdate-windowsupdatecatalogitem.md)|
+|displayName|Cadeia de caracteres|O nome de exibição do item de catálogo. Herdado [do windowsUpdateCatalogItem](../resources/intune-softwareupdate-windowsupdatecatalogitem.md)|
 |releaseDateTime|DateTimeOffset|A data em que o item de catálogo foi lançado Herdado de [windowsUpdateCatalogItem](../resources/intune-softwareupdate-windowsupdatecatalogitem.md)|
 |endOfSupportDate|DateTimeOffset|A última data com suporte para um item de catálogo Herdado de [windowsUpdateCatalogItem](../resources/intune-softwareupdate-windowsupdatecatalogitem.md)|
-|kbArticleId|Cadeia de caracteres|ID do artigo da base de dados de conhecimento|
+|kbArticleId|Cadeia de Caracteres|ID do artigo da base de dados de conhecimento|
 |classificação|[windowsQualityUpdateClassification](../resources/intune-softwareupdate-windowsqualityupdateclassification.md)|Classificação da atualização de qualidade. Os valores possíveis são: `all`, `security`, `nonSecurity`.|
-|isExpeditable|Booliano|Sinalizador indicando se a atualização se qualifica para acelerar|
+|isExpeditable|Boolean|Sinalizador indicando se a atualização se qualifica para acelerar|
 
 ## <a name="relationships"></a>Relações
 Nenhum

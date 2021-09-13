@@ -2,15 +2,15 @@
 title: Tipo de recurso mediaContentRatingGermany
 description: Ainda não documentado
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 016e83151925ad08f3753c3e033e8a75156aef79
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: b704c4092f555022ae96df6e7fa355dea0b61739
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58789590"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59064256"
 ---
 # <a name="mediacontentratinggermany-resource-type"></a>Tipo de recurso mediaContentRatingGermany
 

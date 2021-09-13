@@ -2,15 +2,15 @@
 title: Tipo de recurso serviceHealthIssue
 description: Representa um problema de saúde do serviço em um serviço.
 author: payiAzure
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: service-communications
 doc_type: resourcePageType
-ms.openlocfilehash: ca4b27993d88224555b9417af54f65cc5a70643d
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 8b794284a4dafe16061faa5e84af9e72755d1f6b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58255763"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59019108"
 ---
 # <a name="servicehealthissue-resource-type"></a>Tipo de recurso serviceHealthIssue
 
@@ -40,15 +40,15 @@ Herda [de serviceAnnouncementBase](../resources/serviceannouncementbase.md).
 |feature|Cadeia de caracteres|O nome do recurso do problema do serviço.|
 |featureGroup|Cadeia de caracteres|O nome do grupo de recursos do problema do serviço.|
 |id|Cadeia de caracteres|A id do problema do serviço. Herdado [do serviceAnnouncementBase](../resources/serviceannouncementbase.md).|
-|impactDescription|Cadeia de caracteres|A descrição do impacto do problema do serviço.|
-|isResolved|Boolean|Indica se o problema foi resolvido.|
+|impactDescription|String|A descrição do impacto do problema do serviço.|
+|isResolved|Booliano|Indica se o problema foi resolvido.|
 |lastModifiedDateTime|DateTimeOffset|A última hora modificada do problema. Herdado [do serviceAnnouncementBase](../resources/serviceannouncementbase.md).|
 |origin|serviceHealthOrigin|Indica a origem do problema do serviço. Os valores possíveis são: `microsoft`, `thirdParty`, `customer`, `unknownFutureValue`.|
 |postagens|Collection([serviceHealthIssuePost](../resources/servicehealthissuepost.md))|Coleção de postagens históricas para o problema do serviço.|
 |service|Cadeia de caracteres|Indica o serviço afetado pelo problema.|
 |startDateTime|DateTimeOffset|A hora de início do problema do serviço. Herdado [do serviceAnnouncementBase](../resources/serviceannouncementbase.md).|
 |status|serviceHealthStatus|O status do problema do serviço. Os valores possíveis são: `serviceOperational` , , , , , , , , `investigating` , , , `restoringService` , , `verifyingService` , , , `serviceRestored` , , `postIncidentReviewPublished` `serviceDegradation` , `serviceInterruption` `extendedRecovery` `falsePositive` `investigationSuspended` `resolved` `mitigatedExternal` `mitigated` `resolvedExternal` `confirmed` . `reported` `unknownFutureValue`|
-|title|Cadeia de caracteres|O título do problema do serviço. Herdado [do serviceAnnouncementBase](../resources/serviceannouncementbase.md).|
+|title|String|O título do problema do serviço. Herdado [do serviceAnnouncementBase](../resources/serviceannouncementbase.md).|
 
 ## <a name="relationships"></a>Relações
 Nenhum

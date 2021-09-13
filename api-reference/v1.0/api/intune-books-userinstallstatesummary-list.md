@@ -2,15 +2,15 @@
 title: Listar userInstallStateSummaries
 description: Listar propriedades e relações dos objetos userInstallStateSummary.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 4044c7ecebd52bd4ef3c72676dce3cef5b497a9f7655809e59982c7c2d7d291e
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: e5e4406d400db7ee1cd95ccc41df8f69b43355a9
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54240978"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59140602"
 ---
 # <a name="list-userinstallstatesummaries"></a>Listar userInstallStateSummaries
 

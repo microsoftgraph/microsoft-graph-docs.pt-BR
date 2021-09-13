@@ -2,15 +2,15 @@
 title: função getAssignedRoleIdsForLoggedInUser
 description: Recupera as definições de função atribuídas e as atribuições de função do usuário autenticado no momento.
 author: rolyon
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 93bb5afb13050d11971f8f6982ca9f83f76f9ffe
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 942c957491998375ad2c3f0745af11cb53d7eb3a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58816764"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59064781"
 ---
 # <a name="getassignedroleidsforloggedinuser-function"></a>função getAssignedRoleIdsForLoggedInUser
 
@@ -26,9 +26,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)||
+|Delegado (conta corporativa ou de estudante)||
 | &nbsp; &nbsp; **Controle de Acesso Baseado em Função (RBAC)** | DeviceManagementRBAC.ReadWrite.All, DeviceManagementRBAC.Read.All|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo||
 | &nbsp; &nbsp; **Controle de Acesso Baseado em Função (RBAC)** | DeviceManagementRBAC.ReadWrite.All, DeviceManagementRBAC.Read.All|
 ## <a name="http-request"></a>Solicitação HTTP

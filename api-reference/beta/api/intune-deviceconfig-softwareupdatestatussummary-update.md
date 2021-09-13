@@ -2,15 +2,15 @@
 title: Atualizar softwareUpdateStatusSummary
 description: Atualizar as propriedades de um objeto softwareUpdateStatusSummary.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a19f6661a78a8f4ca53c19ba9b33b12fcfc6e6a6
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: d6664e8a3d72765658fecee642c6e8bf6c279613
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58788055"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59024786"
 ---
 # <a name="update-softwareupdatestatussummary"></a>Atualizar softwareUpdateStatusSummary
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -53,7 +53,7 @@ A tabela a seguir mostra as propriedades obrigatórias ao criar [softwareUpdateS
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Chave da entidade.|
+|id|String|Chave da entidade.|
 |displayName|Cadeia de caracteres|O nome da política.|
 |compliantDeviceCount|Int32|Número de dispositivos em conformidade.|
 |nonCompliantDeviceCount|Int32|Número de dispositivos sem conformidade.|

@@ -2,15 +2,15 @@
 title: Atualizar resourceOperation
 description: Atualizar as propriedades de um objeto resourceOperation.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3a01c933908b57567add80479e6297145ea6870c
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: b0df13a5a08c451678799ddf2711274200f73c1f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58794501"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59064984"
 ---
 # <a name="update-resourceoperation"></a>Atualizar resourceOperation
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementRBAC.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementRBAC.ReadWrite.All|
+|Aplicativo|DeviceManagementRBAC.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -53,11 +53,11 @@ A tabela a seguir mostra as propriedades obrigatórias ao criar [resourceOperati
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Chave da operação de recurso. Somente leitura, gerada automaticamente.|
-|recurso|Cadeia de caracteres|Categoria de recurso à qual esta Operação pertence. Essa propriedade é somente leitura.|
+|id|String|Chave da operação de recurso. Somente leitura, gerada automaticamente.|
+|recurso|Cadeia de Caracteres|Categoria de recurso à qual esta Operação pertence. Essa propriedade é somente leitura.|
 |resourceName|Cadeia de caracteres|Nome do recurso em que essa operação é executada.|
 |actionName|Cadeia de caracteres|Tipo de ação em que essa operação será executada. O actionName deve ser conciso e limitado ao mínimo de palavras possível.|
-|descrição|Cadeia de caracteres|Descrição da operação de recurso. A descrição é usada no texto exibido com o passar o mouse para a operação quando exibida no Portal do Azure.|
+|description|String|Descrição da operação de recurso. A descrição é usada no texto exibido com o passar o mouse para a operação quando exibida no Portal do Azure.|
 |enabledForScopeValidation|Booliano|Determina se a Permissão é validada para Escopos definidos por Atribuição de Função. Essa propriedade é somente leitura.|
 
 

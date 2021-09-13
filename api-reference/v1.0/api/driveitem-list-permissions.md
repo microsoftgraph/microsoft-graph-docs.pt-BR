@@ -2,16 +2,16 @@
 author: JeremyKelley
 ms.date: 09/10/2017
 title: Listar quem tem acesso a um arquivo
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: sharepoint
 description: Listar as permissões de compartilhamento eficazes de em um driveItem.
 doc_type: apiPageType
-ms.openlocfilehash: d1e245cdc879d79145924185026f90e3510288df
-ms.sourcegitcommit: 0ca0a1e2810701c2392e5c685e984fbfb6785579
+ms.openlocfilehash: dd18d5874be75d76fbd724b2c52e7b84bede420e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2021
-ms.locfileid: "53151542"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59063444"
 ---
 # <a name="list-sharing-permissions-on-a-driveitem"></a>Listar permissões de compartilhamento em um driveItem
 
@@ -56,7 +56,7 @@ Este método oferece suporte aos [Parâmetros de consulta OData](/graph/query-pa
 
 ## <a name="optional-request-headers"></a>Cabeçalhos de solicitação opcionais
 
-| Nome          | Tipo   | Descrição                                                                                                                                     |
+| Name          | Tipo   | Descrição                                                                                                                                     |
 |:--------------|:-------|:------------------------------------------------------------------------------------------------------------------------------------------------|
 | if-none-match | string | Se este cabeçalho de solicitação estiver incluso e a etag fornecida corresponder à marca atual do item, uma resposta `HTTP 304 Not Modified` será exibida. |
 

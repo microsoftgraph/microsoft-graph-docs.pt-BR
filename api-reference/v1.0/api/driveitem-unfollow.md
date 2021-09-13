@@ -1,22 +1,22 @@
 ---
 author: learafa
-description: Não siga um item que o usuário está seguindo.
-title: Deixar de seguir o item de unidade
-localization_priority: Normal
+description: Desa siga um item que o usuário está seguindo.
+title: Item de unidade de unfollow
+ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 5e73fdee9d1b6c6bc9329ec5cd6597a3f2d504c5
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: b09bf65b223cf7a0fb4066160433722737ee78d6
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50240182"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59026655"
 ---
-# <a name="unfollow-drive-item"></a>Deixar de seguir o item de unidade
+# <a name="unfollow-drive-item"></a>Item de unidade de unfollow
 
 Namespace: microsoft.graph
 
-Deixar de seguir um [driveItem](../resources/driveitem.md).
+Desa siga um [driveItem](../resources/driveitem.md).
 
 >**Observação:** Para seguir um item, consulte [Follow Item](driveitem-follow.md).
 

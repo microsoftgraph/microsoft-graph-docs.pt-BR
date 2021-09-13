@@ -2,15 +2,15 @@
 title: Atualizar roleScopeTag
 description: Atualize as propriedades de um objeto roleScopeTag.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 88ad2c1b120d0a09c28e5be3648391a1dcbc4379
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 681c80c4c94aa7e8a47ed67a56368473a3e6a68a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58813913"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59064942"
 ---
 # <a name="update-rolescopetag"></a>Atualizar roleScopeTag
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementRBAC.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementRBAC.ReadWrite.All|
+|Aplicativo|DeviceManagementRBAC.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -54,9 +54,9 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [a roleS
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Chave da entidade. É somente leitura e gerada automaticamente. Essa propriedade é somente leitura.|
-|displayName|Cadeia de caracteres|O nome de exibição ou amigável da Marca de Escopo de Função.|
-|descrição|Cadeia de caracteres|Descrição da marca escopo de função.|
+|id|String|Chave da entidade. É somente leitura e gerada automaticamente. Essa propriedade é somente leitura.|
+|displayName|String|O nome de exibição ou amigável da Marca de Escopo de Função.|
+|description|Cadeia de caracteres|Descrição da marca escopo de função.|
 |isBuiltIn|Booliano|Descrição da marca escopo de função. Essa propriedade é somente leitura.|
 
 

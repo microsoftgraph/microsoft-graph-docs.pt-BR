@@ -2,15 +2,15 @@
 title: 'call: answer'
 description: Atenda às chamadas recebidas.
 author: ananmishr
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: a0cf83ea366e8d2c03c8f3d28f4262bfc9616d65
-ms.sourcegitcommit: 6d247f44a6ee4d8515c3863ee8a2683163c9f829
+ms.openlocfilehash: bee067a5856b91eb2a387b14c7a9c3f973b943b9
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/14/2021
-ms.locfileid: "53430260"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59026690"
 ---
 # <a name="call-answer"></a>call: answer
 

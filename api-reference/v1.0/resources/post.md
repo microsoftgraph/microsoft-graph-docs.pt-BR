@@ -2,15 +2,15 @@
 title: tipo de recurso post
 description: Representa um item Post individual em uma entidade conversationThread.
 author: dkershaw10
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: f1af505f7c55ef46c855d92170679195bb390474
-ms.sourcegitcommit: 9b8abc940a68dac6ee5da105ca29800cb59775f6
+ms.openlocfilehash: f9d70f67352de0d67d0c4fecbd4a10ac1b1caf03
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "58513192"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59089309"
 ---
 # <a name="post-resource-type"></a>tipo de recurso post
 
@@ -34,8 +34,8 @@ Esse recurso permite que você adicione seus próprios dados às propriedades pe
 |[Responder](../api/post-reply.md)|Nenhuma|Responda a uma postagem e adicione uma nova postagem ao thread especificado em uma conversa de grupo.|
 |[Encaminhar](../api/post-forward.md)|Nenhuma|Encaminhe uma postagem para um destinatário.|
 |**Anexos**| | |
-|[List attachments](../api/post-list-attachments.md) |Coleção [attachment](attachment.md)| Obtenha todos os anexos em uma postagem.|
-|[Add attachment](../api/post-post-attachments.md) |[attachment](attachment.md)| Adicione um anexo a uma postagem. |
+|[List attachments](../api/post-list-attachments.md) |Coleção [anexo](attachment.md)| Obtenha todos os anexos em uma postagem.|
+|[Add attachment](../api/post-post-attachments.md) |[anexo](attachment.md)| Adicione um anexo a uma postagem. |
 |**Extensões abertas**| | |
 |[Criar extensão aberta](../api/opentypeextension-post-opentypeextension.md) |[openTypeExtension](opentypeextension.md)| Criar uma extensão aberta e adicionar propriedades personalizadas em uma instância nova ou existente de um recurso.|
 |[Obter extensão aberta](../api/opentypeextension-get.md) |Coleção [openTypeExtension](opentypeextension.md)| Obter um ou mais objetos de extensão ou identificados por nome ou nome totalmente qualificado.|
@@ -50,9 +50,9 @@ Esse recurso permite que você adicione seus próprios dados às propriedades pe
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|body|[itemBody](itembody.md)|O conteúdo da postagem. Esta é uma propriedade padrão. Esta propriedade pode ser nula.|
-|categories|String collection|As categorias associadas à postagem.|
-|changeKey|String|Identifica a versão da postagem. Toda vez que a postagem muda, ChangeKey também muda. Isso permite que o Exchange aplique alterações na versão correta do objeto.|
+|corpo|[itemBody](itembody.md)|O conteúdo da postagem. Esta é uma propriedade padrão. Esta propriedade pode ser nula.|
+|categories|Coleção de cadeias de caracteres|As categorias associadas à postagem.|
+|changeKey|Cadeia de caracteres|Identifica a versão da postagem. Toda vez que a postagem muda, ChangeKey também muda. Isso permite que o Exchange aplique alterações na versão correta do objeto.|
 |conversationId|String|ID exclusiva da conversa. Somente leitura.|
 |conversationThreadId|String|ID exclusiva do thread de conversa. Somente leitura.|
 |createdDateTime|DateTimeOffset|Especifica quando a postagem foi criada. O tipo DateTimeOffset representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`|
@@ -67,7 +67,7 @@ Esse recurso permite que você adicione seus próprios dados às propriedades pe
 ## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|attachments|Coleção [Attachment](attachment.md)| Somente leitura. Anulável. Suporta o `$expand`.|
+|attachments|[Attachment](attachment.md) collection| Somente leitura. Anulável. Suporta o `$expand`.|
 |extensions|Coleção [Extension](extension.md)|A coleção de extensões abertas definidas para a postagem. Somente leitura. Anulável. Suporta o `$expand`.|
 |inReplyTo|[post](post.md)| Somente leitura. Oferece suporte para `$expand`.|
 |multiValueExtendedProperties|Coleção [multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md)| A coleção de propriedades estendidas de vários valores definidas para a postagem. Somente leitura. Anulável.|

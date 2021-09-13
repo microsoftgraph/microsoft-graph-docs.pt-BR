@@ -1,16 +1,16 @@
 ---
 title: 'Ativando experiências de notificação centradas no ser humano usando notificações do Microsoft Graph '
 description: A plataforma de notificações do Microsoft Graph fornece uma abordagem centrada no ser humano que permite segmentar seus usuários em todo e qualquer ponto de extremidade do dispositivo.
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: notifications
 ms.custom: scenarios:getting-started
 author: merzink
-ms.openlocfilehash: 1ba75131bb3eae658cea7deae854e0f4628dd59cde13ddf2981eb6c3bbf82e1d
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: d63b5367b481ce6826929034f46c5f530c40f32d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54174763"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59062338"
 ---
 # <a name="enabling-human-centric-notification-experiences-using-microsoft-graph-notifications"></a>Ativando experiências de notificação centradas no ser humano usando notificações do Microsoft Graph
 

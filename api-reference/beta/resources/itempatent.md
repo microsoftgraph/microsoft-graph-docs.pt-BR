@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso itemPatent
 description: Tipo de recurso itemPatent
-localization_priority: Normal
+ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: people
 doc_type: resourcePageType
-ms.openlocfilehash: 424d3e047af36307be8d2589e2ab1dddcadf87785e4f58fa020fb9eae085a1b5
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: a6e53816f9e239de0f1c928763d1e329cc8cb63f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54248324"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59063619"
 ---
 # <a name="itempatent-resource-type"></a>Tipo de recurso itemPatent
  
@@ -36,15 +36,15 @@ Herda do [itemFacet](../resources/itemfacet.md).
 |createdBy|[identitySet](../resources/identityset.md)|Fornece o identificador do usuário e/ou aplicativo que criou a entidade. Herdado [do itemFacet](../resources/itemfacet.md).|
 |createdDateTime|DateTimeOffset|Fornece a dataTimeOffset para quando a entidade foi criada. Herdado [do itemFacet](../resources/itemfacet.md).|
 |description|Cadeia de caracteres|Descpription of the patent or filing. |
-|displayName|Cadeia de caracteres|Título da patente ou arquivamento. |
+|displayName|String|Título da patente ou arquivamento. |
 |id|Cadeia de caracteres|Identificador usado para endereçamento individual da entidade. Herdado da [entidade](../resources/entity.md)|
 |inferência|[inferenceData](../resources/inferencedata.md)|Contém detalhes de inferência se a entidade for inferida pelo aplicativo de criação ou modificação. Herdado [do itemFacet](../resources/itemfacet.md).|
-|isPending        |Boolean     |Indica que a patente está pendente.        |
+|isPending        |Booliano     |Indica que a patente está pendente.        |
 |issuedDate       |Data        |A data em que a patente foi concedida.   |
-|issuingAuthority |Cadeia de caracteres      |Autoridade que concedeu a patente.     |
+|issuingAuthority |Cadeia de Caracteres      |Autoridade que concedeu a patente.     |
 |lastModifiedBy|[identitySet](../resources/identityset.md)|Fornece o identificador do usuário e/ou aplicativo que modificou a entidade pela última vez. Herdado [do itemFacet](../resources/itemfacet.md).|
 |lastModifiedDateTime|DateTimeOffset|Fornece a dataTimeOffset para quando a entidade foi criada. Herdado [do itemFacet](../resources/itemfacet.md).|
-|number           |Cadeia de caracteres      |O número da patente.                      |
+|number           |String      |O número da patente.                      |
 |source|[personDataSource](../resources/persondatasource.md)|Onde os valores se originaram se sincronizados de outro serviço. Herdado [do itemFacet](../resources/itemfacet.md).|
 |webUrl           |String      |URL fazendo referência à patente ou ao arquivamento. |
 

@@ -1,3 +1,12 @@
+---
+ms.localizationpriority: medium
+ms.openlocfilehash: 04ba810183228e3834069d9bfa620fe3c71fdb12
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59289493"
+---
 <!-- markdownlint-disable MD002 MD025 MD041 -->
 
 Crie tipos de resultados e verticais de pesquisa para personalizar os resultados da pesquisa no Microsoft SharePoint, Microsoft Office e Pesquisa da Microsoft no Bing, para facilitar que os usuários encontrem as informações que eles têm permissão para ver.

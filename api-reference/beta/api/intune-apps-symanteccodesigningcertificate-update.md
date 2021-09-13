@@ -2,15 +2,15 @@
 title: Atualizar symantecCodeSigningCertificate
 description: Atualize as propriedades de um objeto symantecCodeSigningCertificate.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 31cecc26dcb6e90fa4e9b5958dfada5e7b31ad8f
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 550f1769803869b55f39af8424e6b150e79405b9
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58802933"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59028510"
 ---
 # <a name="update-symanteccodesigningcertificate"></a>Atualizar symantecCodeSigningCertificate
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementApps.ReadWrite.All|
+|Aplicativo|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -53,14 +53,14 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [o syman
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|A chave da entidade.|
+|id|String|A chave da entidade.|
 |conteúdo|Binário|O Windows Symantec Code-Signing Certificado no formato de dados brutos.|
 |status|[certificateStatus](../resources/intune-apps-certificatestatus.md)|O Status do Certificado Provisionado ou não Provisionado. Os valores possíveis são: `notProvisioned` e `provisioned`.|
 |password|String|A senha necessária para o arquivo .pfx.|
 |SubjectName|Cadeia de caracteres|O Nome do Assunto do certificado.|
-|assunto|Cadeia de caracteres|O valor Subject do certificado.|
-|issuerName|Cadeia de caracteres|O Nome do Emissor do certificado.|
-|emissor|Cadeia de caracteres|O valor emissor do certificado.|
+|assunto|String|O valor Subject do certificado.|
+|issuerName|String|O Nome do Emissor do certificado.|
+|emissor|Cadeia de Caracteres|O valor emissor do certificado.|
 |expirationDateTime|DateTimeOffset|A Data de Expiração do Certificado.|
 |uploadDateTime|DateTimeOffset|O Tipo do Certificado de Design de Código como Certificado Symantec.|
 

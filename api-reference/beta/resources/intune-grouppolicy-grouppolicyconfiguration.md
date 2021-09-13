@@ -2,15 +2,15 @@
 title: Tipo de recurso groupPolicyConfiguration
 description: A entidade de configuração de política de grupo contém os valores configurados para uma ou mais definições de política de grupo.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 699facf5b5e91a41a15105b2a59e00e95433f5ed
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: e46f23dc14427b9f4c7feb55f9538b010574b508
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58800363"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59063892"
 ---
 # <a name="grouppolicyconfiguration-resource-type"></a>Tipo de recurso groupPolicyConfiguration
 
@@ -28,7 +28,7 @@ A entidade de configuração de política de grupo contém os valores configurad
 |[Listar groupPolicyConfigurations](../api/intune-grouppolicy-grouppolicyconfiguration-list.md)|[coleção groupPolicyConfiguration](../resources/intune-grouppolicy-grouppolicyconfiguration.md)|Listar propriedades e relações dos [objetos groupPolicyConfiguration.](../resources/intune-grouppolicy-grouppolicyconfiguration.md)|
 |[Obter groupPolicyConfiguration](../api/intune-grouppolicy-grouppolicyconfiguration-get.md)|[groupPolicyConfiguration](../resources/intune-grouppolicy-grouppolicyconfiguration.md)|Leia propriedades e relações do [objeto groupPolicyConfiguration.](../resources/intune-grouppolicy-grouppolicyconfiguration.md)|
 |[Criar groupPolicyConfiguration](../api/intune-grouppolicy-grouppolicyconfiguration-create.md)|[groupPolicyConfiguration](../resources/intune-grouppolicy-grouppolicyconfiguration.md)|Crie um novo [objeto groupPolicyConfiguration.](../resources/intune-grouppolicy-grouppolicyconfiguration.md)|
-|[Excluir groupPolicyConfiguration](../api/intune-grouppolicy-grouppolicyconfiguration-delete.md)|Nenhum(a)|Exclui um [groupPolicyConfiguration](../resources/intune-grouppolicy-grouppolicyconfiguration.md).|
+|[Excluir groupPolicyConfiguration](../api/intune-grouppolicy-grouppolicyconfiguration-delete.md)|Nenhum|Exclui um [groupPolicyConfiguration](../resources/intune-grouppolicy-grouppolicyconfiguration.md).|
 |[Atualizar groupPolicyConfiguration](../api/intune-grouppolicy-grouppolicyconfiguration-update.md)|[groupPolicyConfiguration](../resources/intune-grouppolicy-grouppolicyconfiguration.md)|Atualize as propriedades de [um objeto groupPolicyConfiguration.](../resources/intune-grouppolicy-grouppolicyconfiguration.md)|
 |[atribuir ação](../api/intune-grouppolicy-grouppolicyconfiguration-assign.md)|[coleção groupPolicyConfigurationAssignment](../resources/intune-grouppolicy-grouppolicyconfigurationassignment.md)|Ainda não documentado|
 |[Ação updateDefinitionValues](../api/intune-grouppolicy-grouppolicyconfiguration-updatedefinitionvalues.md)|Nenhuma|Ainda não documentado|
@@ -37,10 +37,10 @@ A entidade de configuração de política de grupo contém os valores configurad
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |createdDateTime|DateTimeOffset|A data e a hora em que o objeto foi criado.|
-|displayName|Cadeia de caracteres|Nome fornecido pelo usuário para o objeto resource.|
-|descrição|Cadeia de caracteres|O usuário forneceu a descrição do objeto resource.|
-|roleScopeTagIds|Coleção de cadeias de caracteres|A lista de marcas de escopo para a configuração.|
-|id|Cadeia de caracteres|Chave da entidade.|
+|displayName|String|Nome fornecido pelo usuário para o objeto resource.|
+|description|Cadeia de caracteres|O usuário forneceu a descrição do objeto resource.|
+|roleScopeTagIds|String collection|A lista de marcas de escopo para a configuração.|
+|id|String|Chave da entidade.|
 |lastModifiedDateTime|DateTimeOffset|A data e a hora em que a entidade foi modificada pela última vez.|
 
 ## <a name="relationships"></a>Relações

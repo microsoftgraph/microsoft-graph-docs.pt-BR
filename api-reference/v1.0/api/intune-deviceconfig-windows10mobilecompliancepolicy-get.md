@@ -2,15 +2,15 @@
 title: Get windows10MobileCompliancePolicy
 description: Ler propriedades e relações do objeto windows10MobileCompliancePolicy.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 7ffc7ca281c1820778fd871e6af9b7daf99c9c5ac5f432c072ea31e27787875a
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: ceaaf9bfbc33a83ca4a6ce77c660bcb461fe050e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54147529"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59130717"
 ---
 # <a name="get-windows10mobilecompliancepolicy"></a>Get windows10MobileCompliancePolicy
 

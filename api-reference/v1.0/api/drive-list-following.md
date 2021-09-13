@@ -1,22 +1,22 @@
 ---
 author: learafa
-description: Listar os itens que foram seguidos pelo usuário conectado.
+description: Listar os itens que foram seguidos pelo usuário assinado.
 title: Listar itens seguidos
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 1c24795cb1682472c66a57a09dabadb2104d5e72
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 9aee1e510e1e477c3e37d6f662fa3da1901965cd
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48052268"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59063465"
 ---
 # <a name="list-followed-items"></a>Listar itens seguidos
 
 Namespace: microsoft.graph
 
-Listar os [itens](../resources/driveitem.md) que foram seguidos pelo usuário conectado.
+Listar [os itens](../resources/driveitem.md) que foram seguidos pelo usuário assinado.
 Esta coleção inclui itens que estão na unidade do usuário, assim como itens aos quais ele tem acesso por meio de outras unidades.
 
 ## <a name="permissions"></a>Permissões
@@ -59,7 +59,7 @@ GET /me/drive/following
 
 ## <a name="response"></a>Resposta
 
-Este método retorna uma coleção de recursos [driveItem](../resources/driveitem.md) para itens que o proprietário da unidade está seguindo.
+Este método retorna uma coleção de [recursos driveItem](../resources/driveitem.md) para itens que o proprietário da unidade está seguindo.
 Se não forem encontrados itens, uma coleção vazia será retornada.
 
 <!-- { "blockType": "response", "@odata.type": "Collection(microsoft.graph.driveItem)", "truncated": true } -->

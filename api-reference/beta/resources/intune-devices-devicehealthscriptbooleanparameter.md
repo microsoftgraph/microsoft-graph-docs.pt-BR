@@ -2,15 +2,15 @@
 title: Tipo de recurso deviceHealthScriptBooleanParameter
 description: Propriedades do parâmetro de script Booolean.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3754aaf009ecc611b7db0d58b2e7731795978376
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 82a6d8e4c54c72deb170c4d7dfc0c4943792b69f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58784454"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59017377"
 ---
 # <a name="devicehealthscriptbooleanparameter-resource-type"></a>Tipo de recurso deviceHealthScriptBooleanParameter
 
@@ -29,9 +29,9 @@ Herda de [deviceHealthScriptParameter](../resources/intune-devices-devicehealths
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |nome|Cadeia de caracteres|O nome do param Herdado de [deviceHealthScriptParameter](../resources/intune-devices-devicehealthscriptparameter.md)|
-|descrição|Cadeia de caracteres|A descrição do param Herdado de [deviceHealthScriptParameter](../resources/intune-devices-devicehealthscriptparameter.md)|
+|description|Cadeia de caracteres|A descrição do param Herdado de [deviceHealthScriptParameter](../resources/intune-devices-devicehealthscriptparameter.md)|
 |isRequired|Booliano|Se o param é necessário Herdado de [deviceHealthScriptParameter](../resources/intune-devices-devicehealthscriptparameter.md)|
-|applyDefaultValueWhenNotAssigned|Boleano|Se aplicar DefaultValue quando não atribuído herdado de [deviceHealthScriptParameter](../resources/intune-devices-devicehealthscriptparameter.md)|
+|applyDefaultValueWhenNotAssigned|Booliano|Se aplicar DefaultValue quando não atribuído herdado de [deviceHealthScriptParameter](../resources/intune-devices-devicehealthscriptparameter.md)|
 |defaultValue|Booliano|O valor padrão do param booleano|
 
 ## <a name="relationships"></a>Relações

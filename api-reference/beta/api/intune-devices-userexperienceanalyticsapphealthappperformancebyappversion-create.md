@@ -2,15 +2,15 @@
 title: Criar userExperienceAnalyticsAppHealthAppPerformanceByAppVersion
 description: Crie um novo objeto userExperienceAnalyticsAppHealthAppPerformanceByAppVersion.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0e919d9a953949827bf55f5bc2909a0ce00fedc9
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 3f5c4c2e40df48a811cf2db936284be189198842
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58784335"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59027852"
 ---
 # <a name="create-userexperienceanalyticsapphealthappperformancebyappversion"></a>Criar userExperienceAnalyticsAppHealthAppPerformanceByAppVersion
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementManagedDevices.ReadWrite.All|
+|Aplicativo|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -53,8 +53,8 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar o userEx
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|O identificador exclusivo do objeto de desempenho do aplicativo de análise de experiência do usuário.|
-|appVersion|Cadeia de caracteres|A versão do aplicativo.|
+|id|String|O identificador exclusivo do objeto de desempenho do aplicativo de análise de experiência do usuário.|
+|appVersion|Cadeia de Caracteres|A versão do aplicativo.|
 |appName|Cadeia de caracteres|O nome do aplicativo.|
 |appDisplayName|Cadeia de caracteres|O nome amigável do aplicativo.|
 |appPublisher|Cadeia de caracteres|O editor do aplicativo.|

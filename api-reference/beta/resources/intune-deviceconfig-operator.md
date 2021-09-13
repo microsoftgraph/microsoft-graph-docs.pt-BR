@@ -2,15 +2,15 @@
 title: tipo de número de operador
 description: Operador para regras.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 4d0a4cd55d78796e6fa096b266bb43d1be9a0c85
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 4102344026ef51e1bedb0f68acc95575e80b09e4
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58796247"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59064236"
 ---
 # <a name="operator-enum-type"></a>tipo de número de operador
 
@@ -36,7 +36,7 @@ Operador para regras.
 |notBetween|8 |Operador NotBetween.|
 |greaterEquals|9 |Operador GreaterEquals.|
 |lessEquals|10 |Operador LessEquals.|
-|dayTimeBetween|11 |Operador DayTimeBetween.|
+|dayTimeBetween|11|Operador DayTimeBetween.|
 |beginsWith|12 |Operador BeginsWith.|
 |notBeginsWith|13|Operador NotBeginsWith.|
 |endswith|14 |Operador EndsWith.|

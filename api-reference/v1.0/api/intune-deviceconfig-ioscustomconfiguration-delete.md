@@ -2,15 +2,15 @@
 title: Excluir iosCustomConfiguration
 description: Exclui iosCustomConfiguration.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 7da2b3997d7db3a6ff66cf74001d10dff5b1c2743897a902c4c3928ae3ee88ed
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: ec7680b7426c4ba0be2a53ab5989c3efdcd8f9f0
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54175851"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59130864"
 ---
 # <a name="delete-ioscustomconfiguration"></a>Excluir iosCustomConfiguration
 

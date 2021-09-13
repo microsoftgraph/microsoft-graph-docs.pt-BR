@@ -2,16 +2,16 @@
 author: JeremyKelley
 ms.date: 09/10/2017
 title: Tipo de recurso File
-localization_priority: Normal
+ms.localizationpriority: medium
 description: O recurso File agrupa itens de dados relacionados a arquivos em uma única estrutura.
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 57266222e9cbc2778673172b3b96a40ca4d51df466a8c90ae784d170b7e25175
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: f97f037916dabd91653b785add53cbb9cb38afdd
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54146885"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59036505"
 ---
 # <a name="file-resource-type"></a>Tipo de recurso File
 

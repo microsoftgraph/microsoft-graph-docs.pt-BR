@@ -2,15 +2,15 @@
 title: Função getEffectivePermissions
 description: Ainda não documentado
 author: rolyon
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 71044894a0594fec1a67794786f33212f910afc2
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 9d88891b8525a1a1bdb0eff75b4440f6ad5b26b0
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58801561"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59064767"
 ---
 # <a name="geteffectivepermissions-function"></a>Função getEffectivePermissions
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Delegado (conta corporativa ou de estudante)||
 | &nbsp; &nbsp; **Controle de Acesso Baseado em Função (RBAC)** | DeviceManagementRBAC.ReadWrite.All, DeviceManagementRBAC.Read.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application||
+|Aplicativo||
 | &nbsp; &nbsp; **Controle de Acesso Baseado em Função (RBAC)** | DeviceManagementRBAC.ReadWrite.All, DeviceManagementRBAC.Read.All|
 
 ## <a name="http-request"></a>Solicitação HTTP

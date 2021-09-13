@@ -2,15 +2,15 @@
 title: Listar appleDeviceFeaturesConfigurationBases
 description: Listar propriedades e relações dos objetos appleDeviceFeaturesConfigurationBase.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c52ffe09351a15df3e85df9ec29bd47879a86c4b
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 5fe2f2af9b1c82c68525d224b6c350a79b6e7d97
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58792453"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59031198"
 ---
 # <a name="list-appledevicefeaturesconfigurationbases"></a>Listar appleDeviceFeaturesConfigurationBases
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
+|Aplicativo|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {

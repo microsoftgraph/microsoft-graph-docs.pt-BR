@@ -2,15 +2,15 @@
 title: Atualizar groupPolicyObjectFile
 description: Atualize as propriedades de um objeto groupPolicyObjectFile.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c41fc2051bfeaab03443469fb9447aff0c54bb29
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 80ba968da1aa0951da95f96acdb9d0fab11e26da
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58801266"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59020620"
 ---
 # <a name="update-grouppolicyobjectfile"></a>Atualizar groupPolicyObjectFile
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -55,7 +55,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [o group
 |:---|:---|:---|
 |id|Cadeia de caracteres|Ainda não documentado|
 |groupPolicyObjectId|Guid|O GUID do objeto de política de grupo do conteúdo XML do GPO|
-|ouDistinguishedName|Cadeia de caracteres|O nome diferenciado da UO.|
+|ouDistinguishedName|String|O nome diferenciado da UO.|
 |createdDateTime|DateTimeOffset|A data e a hora em que GroupPolicy foi carregado pela primeira vez.|
 |lastModifiedDateTime|DateTimeOffset|A data e a hora em que GroupPolicyObjectFile foi modificado pela última vez.|
 |content|Cadeia de caracteres|O conteúdo do arquivo de objeto de Política de Grupo.|

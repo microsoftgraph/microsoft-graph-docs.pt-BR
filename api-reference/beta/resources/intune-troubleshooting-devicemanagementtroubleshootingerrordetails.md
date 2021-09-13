@@ -2,15 +2,15 @@
 title: Tipo de recurso deviceManagementTroubleshootingErrorDetails
 description: Objeto contendo informações detalhadas sobre o erro e sua correção.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: c67de7db6a74c327e765e13a6440c7ec6bf3a1ce
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 4ae128466c0817dedb8e0ae435246a958967bba7
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58248162"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59063654"
 ---
 # <a name="devicemanagementtroubleshootingerrordetails-resource-type"></a>Tipo de recurso deviceManagementTroubleshootingErrorDetails
 
@@ -25,8 +25,8 @@ Objeto contendo informações detalhadas sobre o erro e sua correção.
 |:---|:---|:---|
 |context|String|Ainda não documentado|
 |failure|String|Ainda não documentado|
-|failureDetails|Cadeia de caracteres|A descrição detalhada do que deu errado.|
-|correção|Cadeia de caracteres|A descrição detalhada de como remediar esse problema.|
+|failureDetails|Cadeia de Caracteres|A descrição detalhada do que deu errado.|
+|correção|String|A descrição detalhada de como remediar esse problema.|
 |recursos|[Coleção deviceManagementTroubleshootingErrorResource](../resources/intune-troubleshooting-devicemanagementtroubleshootingerrorresource.md)|Links para documentação útil sobre essa falha.|
 
 ## <a name="relationships"></a>Relações

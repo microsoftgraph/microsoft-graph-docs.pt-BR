@@ -2,15 +2,15 @@
 title: Obter categoria do Outlook
 description: Obtenha as propriedades e as relações do objeto outlookCategory especificado.
 author: abheek-das
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 8be4bc35a2d72794d269323097c1a68fe07a82de
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 4e321fc3efb6b548e1aac9e0ab6ea0559318fa04
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52039206"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59037352"
 ---
 # <a name="get-outlook-category"></a>Obter categoria do Outlook
 
@@ -24,7 +24,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | MailboxSettings.Read    |
+|Delegada (conta corporativa ou de estudante) | MailboxSettings.Read    |
 |Delegada (conta pessoal da Microsoft) | MailboxSettings.Read    |
 |Aplicativo | MailboxSettings.Read |
 
@@ -80,7 +80,7 @@ GET https://graph.microsoft.com/v1.0/me/outlook/masterCategories/de912e4d-c790-4
 ---
 
 ##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto de resposta exibido aqui pode ser encurtado para legibilidade.
+Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser reduzido para facilitar a leitura.
 <!-- {
   "blockType": "response",
   "truncated": true,

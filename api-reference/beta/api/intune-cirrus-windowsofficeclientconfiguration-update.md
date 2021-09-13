@@ -1,16 +1,16 @@
 ---
 title: Atualizar windowsOfficeClientConfiguration
 description: Corrigir uma carga de política não segura específica.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: dougeby
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a3d3a4e7a0b6c892222cf7004dc2eed3b38a7c9b
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: a21572fc1eaf10b1e2baf22e895fba57e6a143f6
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58794965"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59021306"
 ---
 # <a name="update-windowsofficeclientconfiguration"></a>Atualizar windowsOfficeClientConfiguration
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -53,10 +53,10 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [o windo
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Ainda não documentado Herdado do [officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|
-|userPreferencePayload|Stream|Ainda não documentado Herdado do [officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|
-|policyPayload|Stream|Ainda não documentado Herdado do [officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|
-|descrição|Cadeia de caracteres|Ainda não documentado Herdado do [officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|
+|id|String|Ainda não documentado Herdado do [officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|
+|userPreferencePayload|Fluxo|Ainda não documentado Herdado do [officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|
+|policyPayload|Fluxo|Ainda não documentado Herdado do [officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|
+|description|String|Ainda não documentado Herdado do [officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|
 |displayName|Cadeia de caracteres|Ainda não documentado Herdado do [officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|
 |prioridade|Int32|Ainda não documentado Herdado do [officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|
 |userCheckinSummary|[officeUserCheckinSummary](../resources/intune-cirrus-officeusercheckinsummary.md)|Ainda não documentado Herdado do [officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|

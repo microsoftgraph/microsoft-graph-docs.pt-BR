@@ -1,22 +1,22 @@
 ---
 title: Criar prêmios
-description: Criar um novo objeto de prêmios.
-localization_priority: Normal
+description: Crie um novo objeto awards.
+ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: c7745c6b31678bfbf793a0897edcfb6606953d42
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 829d3a5fb1ddb4ef14d7e6896881131782ffc36d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48964541"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59027453"
 ---
 # <a name="create-personaward"></a>Criar personAward
 
 Namespace: microsoft.graph
 
-Criar um novo objeto [personAward](../resources/personaward.md) no [perfil](../resources/profile.md)de um usuário.
+Criar um [novo objeto personAward](../resources/personaward.md) no perfil de um [usuário.](../resources/profile.md)
 
 ## <a name="permissions"></a>Permissões
 
@@ -24,8 +24,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)                                      |
 |:---------------------------------------|:---------------------------------------------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | User. ReadWrite, User. ReadWrite. All |
-| Delegado (conta pessoal da Microsoft) | User. ReadWrite, User. ReadWrite. All |
+| Delegado (conta corporativa ou de estudante)     | User.ReadWrite, User.ReadWrite.All |
+| Delegado (conta pessoal da Microsoft) | User.ReadWrite, User.ReadWrite.All |
 | Aplicativo                            | User.ReadWrite.All                            |
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -45,25 +45,25 @@ POST /users/{id | userPrincipalName}/profile/awards
 |Content-Type|application/json. Obrigatório.|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça uma representação JSON do objeto [personAward](../resources/personaward.md) .
+No corpo da solicitação, fornece uma representação JSON do [objeto personAward.](../resources/personaward.md)
 
-A tabela a seguir mostra as propriedades que são possíveis de definir ao criar um novo objeto [personAward](../resources/personaward.md) no [perfil](../resources/profile.md)de um usuário.
+A tabela a seguir mostra as propriedades que são possíveis de definir ao criar um novo [objeto personAward](../resources/personaward.md) no perfil de um [usuário](../resources/profile.md).
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|allowedAudiences|String|As audiências que podem ver os valores contidos na entidade. Herdado de [MyFace](../resources/itemfacet.md). Os valores possíveis são: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
-|description|String|Descpription do prêmio ou honra. |
-|displayName|String|Nome do prêmio ou honra. |
-|fracassa|[inferenceData](../resources/inferencedata.md)|Contém detalhes de inferência se a entidade for inferida pelo aplicativo de criação ou modificação. Herdado de [MyFace](../resources/itemfacet.md).|
-|issuedDate|Data|A data em que o prêmio ou honra foi concedido. |
-|issuingAuthority|String|Autoridade que concedeu o prêmio ou honra.  |
-|source|[personDataSource](../resources/persondatasource.md)|Onde os valores são originados se forem sincronizados a partir de outro serviço. Herdado de [MyFace](../resources/itemfacet.md).|
-|thumbnailUrl|String|URL que faz referência a uma miniatura do prêmio ou honra.  |
-|webUrl|String|URL que faz referência ao prêmio ou honra. |
+|allowedAudiences|Cadeia de caracteres|As audiências que são capazes de ver os valores contidos na entidade. Herdado [do itemFacet](../resources/itemfacet.md). Os valores possíveis são: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
+|description|Cadeia de caracteres|Descpription of the award or honor. |
+|displayName|String|Nome do prêmio ou da honra. |
+|inferência|[inferenceData](../resources/inferencedata.md)|Contém detalhes de inferência se a entidade for inferida pelo aplicativo de criação ou modificação. Herdado [do itemFacet](../resources/itemfacet.md).|
+|issuedDate|Data|A data em que o prêmio ou a honra foi concedido. |
+|issuingAuthority|Cadeia de caracteres|Autoridade que concedeu o prêmio ou a honra.  |
+|source|[personDataSource](../resources/persondatasource.md)|Onde os valores se originaram se sincronizados de outro serviço. Herdado [do itemFacet](../resources/itemfacet.md).|
+|thumbnailUrl|Cadeia de caracteres|URL fazendo referência a uma miniatura do prêmio ou da honra.  |
+|webUrl|String|URL referenciando o prêmio ou a honra. |
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `201 Created` código de resposta e um objeto [personAward](../resources/personaward.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código `201 Created` de resposta e um objeto [personAward](../resources/personaward.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

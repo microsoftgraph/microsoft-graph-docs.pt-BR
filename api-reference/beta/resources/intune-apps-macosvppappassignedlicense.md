@@ -2,15 +2,15 @@
 title: Tipo de recurso macOsVppAppAssignedLicense
 description: Atribuição de licença do Programa de Compra de Volume do MacOS. Essa classe não oferece suporte para Criar, Excluir ou Atualizar.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 036f3ed99dd9af00c5e663f5236817d041785f30
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 7d1634285f7364fa063f39ea0272ecf8fc087c52
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58789703"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59064480"
 ---
 # <a name="macosvppappassignedlicense-resource-type"></a>Tipo de recurso macOsVppAppAssignedLicense
 
@@ -28,13 +28,13 @@ Atribuição de licença do Programa de Compra de Volume do MacOS. Essa classe n
 |[Listar macOsVppAppAssignedLicenses](../api/intune-apps-macosvppappassignedlicense-list.md)|[Coleção macOsVppAppAssignedLicense](../resources/intune-apps-macosvppappassignedlicense.md)|Listar propriedades e relações dos [objetos macOsVppAppAssignedLicense.](../resources/intune-apps-macosvppappassignedlicense.md)|
 |[Obter macOsVppAppAssignedLicense](../api/intune-apps-macosvppappassignedlicense-get.md)|[macOsVppAppAssignedLicense](../resources/intune-apps-macosvppappassignedlicense.md)|Ler propriedades e relações do [objeto macOsVppAppAssignedLicense.](../resources/intune-apps-macosvppappassignedlicense.md)|
 |[Criar macOsVppAppAssignedLicense](../api/intune-apps-macosvppappassignedlicense-create.md)|[macOsVppAppAssignedLicense](../resources/intune-apps-macosvppappassignedlicense.md)|Crie um novo [objeto macOsVppAppAssignedLicense.](../resources/intune-apps-macosvppappassignedlicense.md)|
-|[Excluir macOsVppAppAssignedLicense](../api/intune-apps-macosvppappassignedlicense-delete.md)|Nenhum(a)|Exclui um [macOsVppAppAssignedLicense](../resources/intune-apps-macosvppappassignedlicense.md).|
+|[Excluir macOsVppAppAssignedLicense](../api/intune-apps-macosvppappassignedlicense-delete.md)|Nenhum|Exclui um [macOsVppAppAssignedLicense](../resources/intune-apps-macosvppappassignedlicense.md).|
 |[Atualizar macOsVppAppAssignedLicense](../api/intune-apps-macosvppappassignedlicense-update.md)|[macOsVppAppAssignedLicense](../resources/intune-apps-macosvppappassignedlicense.md)|Atualize as propriedades de [um objeto macOsVppAppAssignedLicense.](../resources/intune-apps-macosvppappassignedlicense.md)|
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Chave da entidade.|
+|id|String|Chave da entidade.|
 |userEmailAddress|Cadeia de caracteres|O endereço de email do usuário.|
 |userId|Cadeia de caracteres|A ID do usuário.|
 |userName|Cadeia de caracteres|O nome do usuário.|

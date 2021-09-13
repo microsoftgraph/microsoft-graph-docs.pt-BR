@@ -2,15 +2,15 @@
 title: Tipo de recurso edgeHomeButtonHidden
 description: Ocultar o botão home.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: b9fe988d2a1464a8c9e82ebb7688c372d454018c
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 5235fb0a7d05c7139ba75f461b1ad0d902748109
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58786373"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59064319"
 ---
 # <a name="edgehomebuttonhidden-resource-type"></a>Tipo de recurso edgeHomeButtonHidden
 

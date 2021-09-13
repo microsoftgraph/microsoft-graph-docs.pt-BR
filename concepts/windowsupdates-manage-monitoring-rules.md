@@ -2,15 +2,15 @@
 title: Gerenciar regras de monitoramento para uma implantação usando o serviço de implantação Windows Update for Business
 description: Para implantações iniciadas pelo serviço de implantação, você pode usar regras de monitoramento que configurem alertas e ações automatizadas com base em sinais de implantação.
 author: Alice-at-Microsoft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: w10
 doc_type: conceptualPageType
-ms.openlocfilehash: 60a76a1292322233e23920f9be47030a883f9717468ce06e1043f5751dffbc89
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 1e4f0538a9e7a5d47b070514685a11860a86ac35
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54225619"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59117526"
 ---
 # <a name="manage-monitoring-rules-for-a-feature-update-deployment-using-the-windows-update-for-business-deployment-service"></a>Gerenciar regras de monitoramento para uma implantação de atualização de recursos usando o serviço de implantação Windows Update for Business
 

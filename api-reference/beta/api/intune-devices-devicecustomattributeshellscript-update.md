@@ -2,15 +2,15 @@
 title: Atualizar deviceCustomAttributeShellScript
 description: Atualize as propriedades de um objeto deviceCustomAttributeShellScript.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 18f60cb398dd554096e5258b7ee4d21bb16911f7
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: ce6a1607c8b273f3e6291b98ae482baad21e92ab
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58804922"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59065530"
 ---
 # <a name="update-devicecustomattributeshellscript"></a>Atualizar deviceCustomAttributeShellScript
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementManagedDevices.ReadWrite.All|
+|Aplicativo|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -53,17 +53,17 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [deviceC
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Identificador exclusivo da entidade de atributo personalizado.|
-|customAttributeName|Cadeia de caracteres|O nome do atributo personalizado.|
+|id|String|Identificador exclusivo da entidade de atributo personalizado.|
+|customAttributeName|Cadeia de Caracteres|O nome do atributo personalizado.|
 |customAttributeType|[deviceCustomAttributeValueType](../resources/intune-devices-devicecustomattributevaluetype.md)|O tipo esperado do valor do atributo personalizado. Os valores possíveis são: `integer`, `string`, `dateTime`.|
-|displayName|Cadeia de caracteres|Nome do script de gerenciamento de dispositivos.|
-|descrição|Cadeia de caracteres|Descrição opcional para o script de gerenciamento de dispositivos.|
+|displayName|String|Nome do script de gerenciamento de dispositivos.|
+|description|Cadeia de caracteres|Descrição opcional para o script de gerenciamento de dispositivos.|
 |scriptContent|Binário|O conteúdo do script.|
 |createdDateTime|DateTimeOffset|A data e a hora em que o script de gerenciamento de dispositivos foi criado. Essa propriedade é somente leitura.|
 |lastModifiedDateTime|DateTimeOffset|A data e a hora em que o script de gerenciamento de dispositivos foi modificado pela última vez. Essa propriedade é somente leitura.|
 |runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|Indica o tipo de contexto de execução. Os valores possíveis são: `system` e `user`.|
 |fileName|String|Nome do arquivo de script.|
-|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de IDs de marca de escopo para esta instância do PowerShellScript.|
+|roleScopeTagIds|Conjunto de cadeias de caracteres|Lista de IDs de marca de escopo para esta instância do PowerShellScript.|
 
 
 

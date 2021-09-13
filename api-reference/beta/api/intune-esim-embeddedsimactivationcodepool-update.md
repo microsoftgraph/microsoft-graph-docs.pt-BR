@@ -2,15 +2,15 @@
 title: Atualizar embeddedSIMActivationCodePool
 description: Atualize as propriedades de um objeto EMBEDDEDSIMActivationCodePool incorporado.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e325b04e5994830dd34463a0bd0fcc8655505756
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: f6d0f85a3a0348d8a6ec3b89fb3b0e5712135e00
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58802296"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59020634"
 ---
 # <a name="update-embeddedsimactivationcodepool"></a>Atualizar embeddedSIMActivationCodePool
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -53,7 +53,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [o embed
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Identificador exclusivo para o pool de código de ativação do SIM incorporado. Valor gerado pelo sistema atribuído quando criado.|
+|id|String|Identificador exclusivo para o pool de código de ativação do SIM incorporado. Valor gerado pelo sistema atribuído quando criado.|
 |displayName|Cadeia de caracteres|O nome definido pelo administrador do pool de código de ativação do SIM incorporado.|
 |createdDateTime|DateTimeOffset|A hora em que o pool de código de ativação do SIM incorporado foi criado. Lado de serviço gerado.|
 |modifiedDateTime|DateTimeOffset|A hora em que o pool de código de ativação do SIM incorporado foi modificado pela última vez. Lado do serviço atualizado.|

@@ -1,16 +1,16 @@
 ---
 title: Estados, transições e limitações para atribuições e envios no Microsoft Graph
 description: Este artigo descreve as alterações nos estados de atribuição e envio durante o fluxo de processo e quais APIs de educação na Microsoft Graph estão envolvidas.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: cristobal-buenrostro
 ms.prod: education
 doc_type: conceptualPageType
-ms.openlocfilehash: 98a283b02ddacdf05d4ffd20e8dd6cf436d256d3
-ms.sourcegitcommit: f99dc2b6c8b4cb6f9f74cd780dccc47a2bccfaa6
+ms.openlocfilehash: 83589986cd0c490f4947744896665244a8de3633
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2021
-ms.locfileid: "58668050"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59117666"
 ---
 # <a name="states-transitions-and-limitations-for-assignments-and-submissions-in-microsoft-graph"></a>Estados, transições e limitações para atribuições e envios no Microsoft Graph
 
@@ -26,7 +26,7 @@ Uma atribuição representa uma tarefa ou unidade de trabalho atribuída a um al
 | Published | Um estado de processamento em segundo plano quando a atribuição é distribuída a cada aluno atribuído. | `POST /education/classes/{id}/assignments/{id}/publish` |
 | Agendada | Status quando o professor agendou a atribuição para publicar em uma hora futura. | `PATCH /education/classes/{id}/assignments/{id}`<br/>`POST /education/classes/{id}/assignments/{id}/publish` |
 | Atribuído | Depois de concluir a publicação, a atribuição é movida para o estado Atribuído e está disponível para os alunos. | `POST /education/classes/{id}/assignments/{id}/publish` |
-| Pending | Status do processamento em segundo plano quando uma nova atribuição está sendo copiada de uma tarefa existente. | `POST /education/classes/{id}/assignments/{id}/copy`<br/>`PATCH /education/classes/{id}/assignments/{id}` |
+| Pendente | Status do processamento em segundo plano quando uma nova atribuição está sendo copiada de uma tarefa existente. | `POST /education/classes/{id}/assignments/{id}/copy`<br/>`PATCH /education/classes/{id}/assignments/{id}` |
 
 O diagrama a seguir mostra as transições de estado que podem ocorrer para atribuições.
 
@@ -36,7 +36,7 @@ O diagrama a seguir mostra as transições de estado que podem ocorrer para atri
 O chamador deve usar a operação de atribuição GET t o verificar o status de atribuição atual e verificar se o processo de publicação foi bem-sucedido.
 
 ### <a name="assignments-states-transitions-based-on-the-allowed-actions"></a>Estados de atribuições transições com base nas ações permitidas
-| Estado atual da atribuição | Ação | Novo estado |
+| Estado atual da atribuição | Action | Novo estado |
 |:--|:--|:--|
 | Rascunho | O professor define uma data de vencimento. | Agendada |
 | Rascunho | Publicar | Published |
@@ -48,8 +48,8 @@ O chamador deve usar a operação de atribuição GET t o verificar o status de 
 | Agendada | Cancelar agendamento | Rascunho |
 | Agendada | Reagendar | Agendada |
 | Atribuído | Descartado | |
-| Pending | Cópia concluída | Rascunho |
-| Pending | Descartado | |   
+| Pendente | Cópia concluída | Rascunho |
+| Pendente | Descartado | |   
 
 `Note: Any action and state transition not listed in the table is NOT allowed`
 
@@ -83,7 +83,7 @@ O diagrama a seguir mostra o fluxo de transição de estado.
 ![Diagrama de transições de estados de envio](images/states-transitions/diagram-submissions.PNG)
 
 ### <a name="submissions-states-transitions-based-on-allowed-actions"></a>Transições de estados de envios com base em ações permitidas
-| Estado atual do envio | Ação | Novo estado |
+| Estado atual do envio | Action | Novo estado |
 |:--|:--|:--|
 | Trabalhando | Ativar | Submitted |
 | Trabalhando | retornar | Retornado |

@@ -2,15 +2,15 @@
 title: Listar participantes
 description: Recupere uma lista de objetos participantes na chamada.
 author: ananmishr
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 19df1df2502c5a13c0034d3910cb903d6a380032
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 4bc016c4f9c762087e6d2acb6438efb31488d60a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47966335"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59016915"
 ---
 # <a name="list-participants"></a>Listar participantes
 
@@ -24,7 +24,7 @@ Recupere uma lista de objetos participantes na chamada.
 | :-------------- | :------------------------------------------ |
 | Delegado (conta corporativa ou de estudante)     | Não suportado        |
 | Delegado (conta pessoal da Microsoft) | Não suportado        |
-| Aplicativo     | Nenhum                                        |
+| Aplicativo     | None                                        |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -50,7 +50,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [participantes](../resources/participant.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código `200 OK` de resposta e uma coleção de objetos participantes no corpo da [](../resources/participant.md) resposta.
 
 ## <a name="example"></a>Exemplo
 

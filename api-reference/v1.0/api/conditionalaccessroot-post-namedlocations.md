@@ -1,22 +1,22 @@
 ---
 title: Criar namedLocation
 description: Crie um novo namedLocation.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: videor
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: c9128670e02a20f72060e8ff52d74034e6fc962b
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: a1f64d68a05516dab32b20dc2bf25bc3562971ef
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52050546"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59147810"
 ---
 # <a name="create-namedlocation"></a>Criar namedLocation
 
 Namespace: microsoft.graph
 
-Crie um novo [objeto namedLocation.](../resources/namedlocation.md)
+Crie um novo [objeto namedLocation.](../resources/namedlocation.md) Locais nomeados podem ser [objetos ipNamedLocation](../resources/ipnamedlocation.md) [ou countryNamedLocation.](../resources/countrynamedlocation.md)
 
 ## <a name="permissions"></a>Permissões
 
@@ -45,7 +45,21 @@ POST /identity/conditionalAccess/namedLocations
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, fornece uma representação JSON de [um objeto ipNamedLocation](../resources/ipnamedlocation.md) [ou countryNamedLocation.](../resources/countrynamedlocation.md)
+No corpo da solicitação, fornece uma representação JSON de [um objeto ipNamedLocation](../resources/ipnamedlocation.md) [ou countryNamedLocation.](../resources/countrynamedlocation.md) Você deve especificar o **@odata.type** do tipo derivado, ou seja, para um objeto `#microsoft.graph.ipNamedLocation` [ipNamedLocation](../resources/ipnamedlocation.md) ou para um `#microsoft.graph.countryNamedLocation` [objeto countryNamedLocation.](../resources/countrynamedlocation.md)
+
+A tabela a seguir lista as propriedades necessárias para criar um [objeto ipNamedLocation.](../resources/ipnamedlocation.md)
+
+| Propriedade     | Tipo        | Descrição |
+|:-------------|:------------|:------------|
+|displayName|String|Nome acessível para humanos do local. Obrigatório.|
+|ipRanges|Coleção [ipRange](../resources/iprange.md)|Lista de intervalos de endereços IP no formato CIDR IPv4 (por exemplo, 1.2.3.4/32) ou qualquer formato IPv6 acessível do IETF RFC596. Obrigatório. O **@odata.type** do ipRange também é necessário.|
+
+A tabela a seguir lista as propriedades necessárias para criar um [objeto countryNamedLocation.](../resources/countrynamedlocation.md)
+
+| Propriedade     | Tipo        | Descrição |
+|:-------------|:------------|:------------|
+|countriesAndRegions|Coleção String|Lista de países e/ou regiões no formato de duas letras especificado pela ISO 3166-2. Obrigatório.|
+|displayName|String|Nome acessível para humanos do local. Obrigatório.|
 
 ## <a name="response"></a>Resposta
 

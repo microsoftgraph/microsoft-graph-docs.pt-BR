@@ -2,15 +2,15 @@
 title: Atualizações de software com o serviço de implantação Windows Update for Business
 description: As atualizações de software são o tipo principal de conteúdo implantado pelo serviço de implantação. Você pode procurar em um catálogo para encontrar atualizações específicas disponíveis para implantar.
 author: Alice-at-Microsoft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: w10
 doc_type: conceptualPageType
-ms.openlocfilehash: 196b59b6fbe8e48643cb434d8f53c198a73c6279e1969f152e7efec9e9d97834
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 1c3dfac442bdf4950f62d565db6bc1ceb7ebd468
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54225598"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59117512"
 ---
 # <a name="software-updates-with-the-windows-update-for-business-deployment-service"></a>Atualizações de software com o serviço de implantação Windows Update for Business
 
@@ -36,8 +36,8 @@ Por exemplo, as duas atualizações de qualidade de segurança a seguir são con
 
 | Título                                                                                   | Produtos                           | Classificação   |
 |-----------------------------------------------------------------------------------------|------------------------------------|------------------|
-| Atualização Cumulativa 2021-03 para Windows 10 versão 20H2 para sistemas baseados em **x86**(KB5000802) | Windows 10, versão 1903 e posterior | Atualizações de Segurança |
-| Atualização Cumulativa 2021-03 para Windows 10 versão 20H2 para sistemas baseados em **x64**(KB5000802) | Windows 10, versão 1903 e posterior | Atualizações de Segurança |
+| Atualização Cumulativa 2021-03 para Windows 10 versão 20H2 para sistemas baseados em **x86**(KB5000802) | Windows 10, versão 1903 e posterior | Atualizações de segurança |
+| Atualização Cumulativa 2021-03 para Windows 10 versão 20H2 para sistemas baseados em **x64**(KB5000802) | Windows 10, versão 1903 e posterior | Atualizações de segurança |
 
 No catálogo fornecido pelo serviço de implantação Windows Update for Business, essas atualizações são agregadas em uma única entrada.
 
@@ -97,10 +97,10 @@ As entradas do Catálogo de Atualizações da Microsoft correspondentes a uma at
 
 | Título                                                                                   | Produtos                           | Classificação   |
 |-----------------------------------------------------------------------------------------|------------------------------------|------------------|
-| Atualização Cumulativa 2021-03 para Windows 10 versão 20H2 para sistemas baseados em x86 (KB5000802) | Windows 10, versão 1903 e posterior | Atualizações de Segurança |
-| Atualização Cumulativa 2021-03 para Windows 10 versão 20H2 para sistemas baseados em x64 (KB5000802) | Windows 10, versão 1903 e posterior | Atualizações de Segurança |
-| Atualização Cumulativa 2021-03 para Windows 10 versão 1909 para sistemas baseados em x86 (KB5000808) | Windows 10, versão 1903 e posterior | Atualizações de Segurança |
-| Atualização Cumulativa 2021-03 para Windows 10 versão 1809 para sistemas baseados em x64 (KB5000822) | Windows 10, Windows 10 LTSB        | Atualizações de Segurança |
+| Atualização Cumulativa 2021-03 para Windows 10 versão 20H2 para sistemas baseados em x86 (KB5000802) | Windows 10, versão 1903 e posterior | Atualizações de segurança |
+| Atualização Cumulativa 2021-03 para Windows 10 versão 20H2 para sistemas baseados em x64 (KB5000802) | Windows 10, versão 1903 e posterior | Atualizações de segurança |
+| Atualização Cumulativa 2021-03 para Windows 10 versão 1909 para sistemas baseados em x86 (KB5000808) | Windows 10, versão 1903 e posterior | Atualizações de segurança |
+| Atualização Cumulativa 2021-03 para Windows 10 versão 1809 para sistemas baseados em x64 (KB5000822) | Windows 10, Windows 10 LTSB        | Atualizações de segurança |
 
 Depois de identificar a atualização desejada, atribua-a como conteúdo a uma implantação usando [uma qualityUpdateReference](/graph/api/resources/windowsupdates-qualityupdatereference) e especificando as **propriedades releaseDateTime** **e classificação.**
 

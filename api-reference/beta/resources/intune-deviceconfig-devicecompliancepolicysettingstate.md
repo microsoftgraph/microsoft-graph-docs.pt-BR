@@ -2,15 +2,15 @@
 title: Tipo de recurso deviceCompliancePolicySettingState
 description: Estado da configuração da política de conformidade de dispositivo para um determinado dispositivo.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 7000ea2f35a49c9c0f025c456fee61e47bf3d030
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 0d4f45f6d50f6f264301c8b8fa4caf637d8907b5
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58819196"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59023595"
 ---
 # <a name="devicecompliancepolicysettingstate-resource-type"></a>Tipo de recurso deviceCompliancePolicySettingState
 
@@ -37,7 +37,7 @@ Estado da configuração da política de conformidade de dispositivo para um det
 |userPrincipalName|Cadeia de caracteres|UserPrincipalName.|
 |fontes|Conjunto [settingSource](../resources/intune-deviceconfig-settingsource.md)|Políticas de colaboração|
 |currentValue|Cadeia de caracteres|Valor atual da configuração em um dispositivo|
-|settingInstanceId|String|SettingInstanceId|
+|settingInstanceId|Cadeia de Caracteres|SettingInstanceId|
 
 ## <a name="relationships"></a>Relações
 Nenhum

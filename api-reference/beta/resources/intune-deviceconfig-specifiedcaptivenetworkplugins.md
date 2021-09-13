@@ -2,15 +2,15 @@
 title: tipo de recurso specifiedCaptiveNetworkPlugins
 description: Especifica todos os plug-ins de rede cativos permitidos durante a conexão VPN AlwaysOn IKEv2
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0843c5a6cc6bc71eb10c8a42f0b9ad0ac49cb328
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 4e8ff13aed2200c309ee83f5514b5cd421998262
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58785140"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59023518"
 ---
 # <a name="specifiedcaptivenetworkplugins-resource-type"></a>tipo de recurso specifiedCaptiveNetworkPlugins
 
@@ -25,7 +25,7 @@ Especifica todos os plug-ins de rede cativos permitidos durante a conexão VPN A
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|allowedBundleIdentifiers|Coleção de cadeias de caracteres|Endereço do servidor IKEv2. Deve ser um FQDN, UserFQDN, endereço de rede ou ASN1DN|
+|allowedBundleIdentifiers|String collection|Endereço do servidor IKEv2. Deve ser um FQDN, UserFQDN, endereço de rede ou ASN1DN|
 
 ## <a name="relationships"></a>Relações
 Nenhum

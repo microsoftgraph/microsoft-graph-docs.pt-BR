@@ -2,15 +2,15 @@
 title: Excluir roleScopeTagAutoAssignment
 description: Exclui um roleScopeTagAutoAssignment.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b4b8d7bb33d9c94328c1d44ba9a3a62e82275f96
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 4446503a588f2331c7ef01a61c940c98978f059a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58795624"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59064921"
 ---
 # <a name="delete-rolescopetagautoassignment"></a>Excluir roleScopeTagAutoAssignment
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementRBAC.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementRBAC.ReadWrite.All|
+|Aplicativo|DeviceManagementRBAC.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {

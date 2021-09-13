@@ -2,15 +2,15 @@
 title: Tipo de recurso teamMessagingSettings
 description: Configurações para definir a mensagens e menções na equipe.
 author: nkramer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 9818e161e21f78a83023ead66d7b790eadd01bb2737942a383665338d0ec73c4
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 08af21e988862a4d6b459953e6d1a1fd5554da36
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54129957"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59049484"
 ---
 # <a name="teammessagingsettings-resource-type"></a>Tipo de recurso teamMessagingSettings
 
@@ -23,7 +23,7 @@ Configurações configurar mensagens e menções na [equipe](team.md).
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|allowUserEditMessages|Booliano|Se definido como true, os usuários podem editar suas mensagens.|
+|allowUserEditMessages|Boolean|Se definido como true, os usuários podem editar suas mensagens.|
 |allowUserDeleteMessages|Booliano|Se for definido como true, os usuários poderão excluir suas mensagens.|
 |allowOwnerDeleteMessages|Booliano|Se definido como true, os proprietários poderão excluir qualquer mensagem.|
 |allowTeamMentions|Booliano|Se definido como true, @team as menções são permitidas.|

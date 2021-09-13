@@ -1,16 +1,16 @@
 ---
 title: 'Range: clear'
 description: Limpa valores de intervalo, formatação, preenchimento, borda, etc.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: lumine2008
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 43b04b3404cbebdc893919710f0da3b402bfe8ef
-ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
+ms.openlocfilehash: dda92842ca077f3521b5fbf3b726276e6bac1400
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "50577937"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59130338"
 ---
 # <a name="range-clear"></a>Range: clear
 
