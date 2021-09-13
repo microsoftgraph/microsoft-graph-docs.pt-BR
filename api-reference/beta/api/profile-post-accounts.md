@@ -2,15 +2,15 @@
 title: Criar conta
 description: Crie um novo objeto de conta.
 author: kevinbellinger
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 308f2a1e4087fcbb07efb08be8fc1e4cba7d819f
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 979cbf81654a20cae80aba601c278867ad7ffc1f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50441001"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59126146"
 ---
 # <a name="create-account"></a>Criar conta
 Namespace: microsoft.graph
@@ -51,8 +51,8 @@ A tabela a seguir mostra as propriedades necessárias ao criar um novo [objeto u
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|allowedAudiences|String|As audiências que são capazes de ver os valores contidos na entidade. Herdado [do itemFacet](../resources/itemfacet.md). Os valores possíveis são: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
-|countryCode|String|Contém o código de país de dois caracteres associado à conta de usuários.  |
+|allowedAudiences|Cadeia de Caracteres|As audiências que são capazes de ver os valores contidos na entidade. Herdado [do itemFacet](../resources/itemfacet.md). Os valores possíveis são: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
+|countryCode|Cadeia de Caracteres|Contém o código de país de dois caracteres associado à conta de usuários.  |
 |inferência|[inferenceData](../resources/inferencedata.md)|Contém detalhes de inferência se a entidade for inferida pelo aplicativo de criação ou modificação. Herdado [do itemFacet](../resources/itemfacet.md).|
 |preferredLanguageTag|[localeInfo](../resources/localeinfo.md)|Contém o idioma que o usuário associou como preferencial para a conta.   |
 |source|[personDataSource](../resources/persondatasource.md)|Onde os valores se originaram se sincronizados de outro serviço. Herdado [do itemFacet](../resources/itemfacet.md).|

@@ -2,15 +2,15 @@
 title: Tipo de número deviceManagementExchangeAccessStateReason
 description: Motivo Exchange estado do Access do dispositivo.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 3c8ae17748009108c299039fde33f9b9d79a9737
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 5f6b1dd60e9a8880502bd04e77efc3a0dc53f82b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58806212"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59125978"
 ---
 # <a name="devicemanagementexchangeaccessstatereason-enum-type"></a>Tipo de número deviceManagementExchangeAccessStateReason
 

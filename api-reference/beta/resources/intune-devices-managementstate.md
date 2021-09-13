@@ -2,15 +2,15 @@
 title: Tipo de número managementState
 description: Estado de gerenciamento do dispositivo Microsoft Intune.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 814395189273adfe7a977ddb2d85e6ed8714aa64
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: f7ce0bedbc6376e6ae4205af71a968f9f976a48e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58796583"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59125817"
 ---
 # <a name="managementstate-enum-type"></a>Tipo de número managementState
 
@@ -36,7 +36,7 @@ Estado de gerenciamento do dispositivo Microsoft Intune.
 |wipeIssued|8 |Um comando wipe foi emitido para o dispositivo|
 |wipeCanceled|9 |Um comando wipe para este dispositivo foi cancelado|
 |retireCanceled|10 |Um comando retire para este dispositivo foi cancelado|
-|discovered|11 |O dispositivo é descoberto, mas não está totalmente inscrito.|
+|discovered|11|O dispositivo é descoberto, mas não está totalmente inscrito.|
 
 
 

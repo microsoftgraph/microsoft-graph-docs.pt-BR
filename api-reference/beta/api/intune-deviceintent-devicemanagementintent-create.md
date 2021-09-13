@@ -2,15 +2,15 @@
 title: Criar deviceManagementIntent
 description: Crie um novo objeto deviceManagementIntent.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: cbc2af6ee43284fc037088c6ef0b0e8219cbfe53
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 290fb01080dfe3a1df6ac5bbc9f7164fbed715bc
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58817247"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59124984"
 ---
 # <a name="create-devicemanagementintent"></a>Criar deviceManagementIntent
 
@@ -27,8 +27,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -53,13 +53,13 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar deviceMa
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|A ID de intenção|
+|id|Cadeia de caracteres|A ID de intenção|
 |displayName|Cadeia de caracteres|O nome de exibição dado pelo usuário|
 |description|Cadeia de caracteres|A descrição dada pelo usuário|
 |isAssigned|Boolean|Significa se a intenção é atribuída ou não aos usuários|
 |lastModifiedDateTime|DateTimeOffset|Quando a intenção foi modificada pela última vez|
-|templateId|String|A ID do modelo de que essa intenção foi criada (se alguma)|
-|roleScopeTagIds|Coleção String|Lista de marcas de escopo para esta instância entity.|
+|templateId|Cadeia de Caracteres|A ID do modelo de que essa intenção foi criada (se alguma)|
+|roleScopeTagIds|String collection|Lista de marcas de escopo para esta instância entity.|
 
 
 

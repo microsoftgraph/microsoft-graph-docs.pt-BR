@@ -2,15 +2,15 @@
 title: Atualizar deviceManagement
 description: Atualizar as propriedades de um objeto deviceManagement.
 author: rolyon
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: fbf1d3383abbc69784d166bc144fa9b16e3bf170
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 3f2829a759266b4b0254077df78740a3f5394beb
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58803311"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59132586"
 ---
 # <a name="update-devicemanagement"></a>Atualizar deviceManagement
 
@@ -45,14 +45,14 @@ Observe que a permissão varia de acordo com o fluxo de trabalho.
 | &nbsp; &nbsp; **Integração** | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp;&nbsp; **Conjunto de Políticas** | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp; &nbsp; **Controle de Acesso Baseado em Função (RBAC)** | DeviceManagementRBAC.ReadWrite.All |
-| &nbsp; &nbsp; **Acesso remoto** | DeviceManagementConfiguration.Read.All |
+| &nbsp;&nbsp; **Acesso remoto** | DeviceManagementConfiguration.Read.All |
 | &nbsp;&nbsp; **Assistência remota** | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp; &nbsp; **Atualização de Software** | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp;&nbsp; **Gerenciamento de despesas de telecomunicações** | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp;&nbsp; **Troublehooting** | DeviceManagementManagedDevices.ReadWrite.All |
 | &nbsp; &nbsp; **Proteção de Informações do Windows** | DeviceManagementApps.ReadWrite.All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte.|
-| Application ||
+| Aplicativo ||
 | &nbsp;&nbsp; **Android for Work** | DeviceManagementConfiguration.ReadWrite.All  |
 | &nbsp; &nbsp; **Auditoria** | DeviceManagementApps.ReadWrite.All |
 | &nbsp; &nbsp; **Termos da empresa** | DeviceManagementServiceConfig.ReadWrite.All |
@@ -67,7 +67,7 @@ Observe que a permissão varia de acordo com o fluxo de trabalho.
 | &nbsp; &nbsp; **Integração** | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp;&nbsp; **Conjunto de Políticas** | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp; &nbsp; **Controle de Acesso Baseado em Função (RBAC)** | DeviceManagementRBAC.ReadWrite.All |
-| &nbsp; &nbsp; **Acesso remoto** | DeviceManagementConfiguration.Read.All |
+| &nbsp;&nbsp; **Acesso remoto** | DeviceManagementConfiguration.Read.All |
 | &nbsp;&nbsp; **Assistência remota** | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp; &nbsp; **Atualização de Software** | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp;&nbsp; **Gerenciamento de despesas de telecomunicações** | DeviceManagementServiceConfig.ReadWrite.All |

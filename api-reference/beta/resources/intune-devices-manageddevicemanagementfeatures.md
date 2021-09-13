@@ -2,15 +2,15 @@
 title: Tipo de número managedDeviceManagementFeatures
 description: Recursos de gerenciamento de dispositivos.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 2bad15794fae5f5db3c34e7d8193771fe6d05886
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 47d71894674a44c304f4309235f3f12aa6080b55
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58817380"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59137803"
 ---
 # <a name="manageddevicemanagementfeatures-enum-type"></a>Tipo de número managedDeviceManagementFeatures
 
@@ -26,7 +26,7 @@ Recursos de gerenciamento de dispositivos.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |Nenhuma|0|Recursos de gerenciamento de dispositivo desconhecidos.|
-|microsoftManagedDesktop|1|Área de trabalho gerenciada da Microsoft|
+|microsoftManagedDesktop|1|Área de Trabalho Gerenciada da Microsoft|
 
 
 

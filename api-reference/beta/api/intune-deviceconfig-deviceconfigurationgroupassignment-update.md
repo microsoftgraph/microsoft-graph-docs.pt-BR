@@ -2,15 +2,15 @@
 title: Atualizar deviceConfigurationGroupAssignment
 description: Atualize as propriedades de um objeto deviceConfigurationGroupAssignment.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d300dfa9ac752a2fd8469b324cd86090133b9e46
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: d12f95beaa1aa1c894aaef3e7ebfb40c28345eac
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58794641"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59133566"
 ---
 # <a name="update-deviceconfigurationgroupassignment"></a>Atualizar deviceConfigurationGroupAssignment
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -63,7 +63,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [deviceC
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|Cadeia de caracteres|Chave da entidade.|
-|targetGroupId|Cadeia de caracteres|A ID do grupo AAD para o que estamos direcionando a configuração do dispositivo.|
+|targetGroupId|Cadeia de Caracteres|A ID do grupo AAD para o que estamos direcionando a configuração do dispositivo.|
 |excludeGroup|Boleano|Indica se esse grupo deve ser excluído. Padrões de que o grupo deve ser incluído|
 
 
