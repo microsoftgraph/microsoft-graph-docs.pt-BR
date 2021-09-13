@@ -2,15 +2,15 @@
 title: tipo de número windowsDefenderProductStatus
 description: Status do produto Windows Defender
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 0525b8ab93b19e75336085468fa8d82f40320944
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 3a126fb37736d8d02accdd9b3dc0eff8cacf7173
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58820860"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59046859"
 ---
 # <a name="windowsdefenderproductstatus-enum-type"></a>tipo de número windowsDefenderProductStatus
 

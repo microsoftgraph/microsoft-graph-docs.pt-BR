@@ -2,15 +2,15 @@
 title: tipo denum resultantAppStateDetail
 description: Enum indicando detalhes adicionais sobre por que um aplicativo tem um estado de instalação específico.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 16ab85a041f62e5c1f2b52785c9e690193856ba0
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 58653891763433a6edc89986d6c076fa088142b9
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58787887"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59047202"
 ---
 # <a name="resultantappstatedetail-enum-type"></a>tipo denum resultantAppStateDetail
 

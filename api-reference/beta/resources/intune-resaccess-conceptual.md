@@ -2,14 +2,14 @@
 title: Gerenciar certificados de acesso a recursos no Intune - API Graph Microsoft
 description: Lista a API Graph microsoft para pontos de extremidade do Intune (REST) que gerenciam certificados de acesso a recursos para uma organização de locatários.
 author: rolyon
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
-ms.openlocfilehash: cb1414b424562779e204afe0461c345b59ba1721d263fbcd7f65138a129e62bd
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 559ad309a4963cada7ee722bcf4172b4ed8ea30c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54249703"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59039312"
 ---
 # <a name="manage-resource-access-certificates-in-intune"></a>Gerenciar certificados de acesso a recursos no Intune
 

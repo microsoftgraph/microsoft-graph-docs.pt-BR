@@ -2,15 +2,15 @@
 author: MarcMroz
 description: O driveItemSource contém metadados sobre o aplicativo de origem em que o item de unidade foi criado.
 title: Tipo de recurso driveItemSource
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: 98076060791424e7f84a4bee32c12a3eca1238003b413d0b0c53ce18c97a21d2
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: eada8fa22672a80d712ef78be5cc3d44ac354216
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54206911"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59047454"
 ---
 # <a name="driveitemsource-resource-type"></a>Tipo de recurso driveItemSource
 
@@ -23,7 +23,7 @@ Ele está disponível na propriedade de origem dos [recursos driveItem.][item-re
 | Propriedade                 | Tipo                       | Descrição                                                                                      |
 | :----------------------- | :------------------------  | :----------------------------------------------------------------------------------------------- |
 | **application**          | driveItemSourceApplication | Valor de enumeração que indica o aplicativo de origem onde o arquivo foi criado.              |
-| **externalId**           | cadeia de caracteres                     | O identificador externo do item de unidade da fonte.                                      |
+| **externalId**           | string                     | O identificador externo do item de unidade da fonte.                                      |
 
 ### <a name="driveitemsourceapplication-values"></a>valores driveItemSourceApplication
 

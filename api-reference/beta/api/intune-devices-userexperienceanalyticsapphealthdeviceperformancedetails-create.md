@@ -2,15 +2,15 @@
 title: Criar userExperienceAnalyticsAppHealthDevicePerformanceDetails
 description: Crie um novo objeto userExperienceAnalyticsAppHealthDevicePerformanceDetails.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 265b466c934c63a22b68be60e29d7b3fbf3db329
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 2b926bfe799204f7d13dfc84723ef32504586a52
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58790560"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59082610"
 ---
 # <a name="create-userexperienceanalyticsapphealthdeviceperformancedetails"></a>Criar userExperienceAnalyticsAppHealthDevicePerformanceDetails
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementManagedDevices.ReadWrite.All|
+|Aplicativo|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -53,11 +53,11 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar o userEx
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|O identificador exclusivo do objeto de desempenho do dispositivo de análise de experiência do usuário.|
+|id|String|O identificador exclusivo do objeto de desempenho do dispositivo de análise de experiência do usuário.|
 |eventDateTime|DateTimeOffset|A hora em que o evento ocorreu.|
-|eventType|Cadeia de caracteres|O tipo do evento.|
+|eventType|Cadeia de Caracteres|O tipo do evento.|
 |appDisplayName|Cadeia de caracteres|O nome amigável do aplicativo para o qual o evento ocorreu.|
-|appPublisher|Cadeia de caracteres|O editor do aplicativo.|
+|appPublisher|Cadeia de Caracteres|O editor do aplicativo.|
 |appVersion|Cadeia de caracteres|A versão do aplicativo.|
 |deviceId|Cadeia de caracteres|A id do dispositivo.|
 |deviceDisplayName|Cadeia de caracteres|O nome do dispositivo.|

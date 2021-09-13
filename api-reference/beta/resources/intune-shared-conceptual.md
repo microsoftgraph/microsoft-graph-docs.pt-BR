@@ -1,15 +1,15 @@
 ---
 title: Recursos compartilhados em Microsoft Intune - API Graph Microsoft
 description: Lista a API Graph microsoft para pontos de extremidade do Intune (REST) que suportam vários fluxos de trabalho para uma organização de locatários.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: dougeby
 ms.prod: intune
-ms.openlocfilehash: 672672edd0955070c4df6a4a90c78c5c5b7329ce
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 86a4466538c88ca758cb91ff541e880b8722cd69
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58816433"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59074805"
 ---
 # <a name="shared-resources-in-microsoft-intune"></a>Recursos compartilhados em Microsoft Intune
 
@@ -79,7 +79,7 @@ Os seguintes Graph são compartilhados entre fluxos de trabalho do Intune:
 - [Evento de solução de problemas de aplicativo móvel](intune-shared-mobileapptroubleshootingevent.md)
 - [Tipo de proprietário](intune-shared-ownertype.md)
 - [Domínio com proxy](intune-shared-proxieddomain.md)
-- [Report](intune-shared-report.md)
+- [Relatório](intune-shared-report.md)
 - [Raiz de relatório](intune-shared-reportroot.md)
 - [Cores RGB](intune-shared-rgbcolor.md)
 - [Executar como tipo de conta](intune-shared-runasaccounttype.md)

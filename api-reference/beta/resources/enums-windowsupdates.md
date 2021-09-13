@@ -2,15 +2,15 @@
 title: Valores de enumeração do Microsoft Graph Windows Updates
 description: Valores de enumeração do Microsoft Graph Windows Updates
 author: Alice-at-Microsoft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: w10
 doc_type: enumTypes
-ms.openlocfilehash: ab13ec1222b9d92a0dde46327ab80acd3f81a6e1273da839820510286dd1a0cc
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 1c60b5718a0e5006754aae5e07cfbc19969946a0
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54203285"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59040551"
 ---
 # <a name="microsoft-graph-windows-updates-enumeration-values"></a>Valores de enumeração do Microsoft Graph Windows Updates
 

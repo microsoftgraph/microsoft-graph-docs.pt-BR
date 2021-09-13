@@ -2,15 +2,15 @@
 title: Tipo de número androidProfileApplicability
 description: Aplicabilidade do perfil android
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 4409e33f66d2178fe9f111ad6e338bd38aaa2087
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: be43f6737c8dbbcc59b3c0531f5d0961ba952586
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58819245"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59047342"
 ---
 # <a name="androidprofileapplicability-enum-type"></a>Tipo de número androidProfileApplicability
 

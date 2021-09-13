@@ -2,15 +2,15 @@
 title: tipo de número deviceAndAppManagementAssignmentSource
 description: Representa a origem da atribuição.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 4e2e44cf63ae281b643888db85c366b2e80d147d
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 67ad54912bb72d442eb28878dd1cdf5b0f7ec55e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58799124"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59074735"
 ---
 # <a name="deviceandappmanagementassignmentsource-enum-type"></a>tipo de número deviceAndAppManagementAssignmentSource
 

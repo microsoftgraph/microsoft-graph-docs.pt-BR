@@ -2,15 +2,15 @@
 title: tipo denum groupPolicyDefinitionClassType
 description: Tipo de classe de definição de política de grupo.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 594d6f02dfa615ba049c391a28bf425dfb30c89f
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: be9989cb45525e3a7f749008002e33050baf31f4
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58817345"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59039837"
 ---
 # <a name="grouppolicydefinitionclasstype-enum-type"></a>tipo denum groupPolicyDefinitionClassType
 

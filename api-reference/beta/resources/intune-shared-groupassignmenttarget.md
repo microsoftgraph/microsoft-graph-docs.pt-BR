@@ -2,15 +2,15 @@
 title: Tipo de recurso groupAssignmentTarget
 description: Representa uma atribuição para um grupo.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 53e370f9138377ac85a585ab84ec412f7dc4027b
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 215a6e1abc51b8c8062ca426d8d71619521af9fb
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58799982"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59080650"
 ---
 # <a name="groupassignmenttarget-resource-type"></a>Tipo de recurso groupAssignmentTarget
 

@@ -2,15 +2,15 @@
 title: Criar userExperienceAnalyticsNotAutopilotReadyDevice
 description: Crie um novo objeto userExperienceAnalyticsNotAutopilotReadyDevice.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 723c9f671db89d0ae7e0238ed11a332f62fdb989
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: c96995d78d5cd29e9354bdfc98a89a31cb1ae48d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58795967"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59077115"
 ---
 # <a name="create-userexperienceanalyticsnotautopilotreadydevice"></a>Criar userExperienceAnalyticsNotAutopilotReadyDevice
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementManagedDevices.ReadWrite.All|
+|Aplicativo|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -59,9 +59,9 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar o userEx
 |fabricante|String|O fabricante do dispositivo intune.|
 |modelo|String|O modelo do dispositivo intune.|
 |managedBy|Cadeia de caracteres|O dispositivo do intune é gerenciado por.|
-|autoPilotRegistered|Boleano|O piloto automático do dispositivo intuneRegistered.|
-|autoPilotProfileAssigned|Boleano|O autopilotProfileAssigned do dispositivo intune.|
-|azureAdRegistered|Boleano|O dispositivo do intune é azureAdRegistered.|
+|autoPilotRegistered|Boolean|O piloto automático do dispositivo intuneRegistered.|
+|autoPilotProfileAssigned|Booliano|O autopilotProfileAssigned do dispositivo intune.|
+|azureAdRegistered|Booliano|O dispositivo do intune é azureAdRegistered.|
 |azureAdJoinType|Cadeia de caracteres|O azure Ad joinType do dispositivo do intune.|
 
 

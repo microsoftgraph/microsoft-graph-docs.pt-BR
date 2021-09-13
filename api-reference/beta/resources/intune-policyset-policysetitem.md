@@ -2,15 +2,15 @@
 title: Tipo de recurso policySetItem
 description: Uma classe que contém as propriedades usadas para Item PolicySet.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9570eac23c7ba0bdd186f4e0da3902b71ec2d413
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 05647e77adc9c6d0b9b65cebbdf2c2890c10e0c5
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58803220"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59074854"
 ---
 # <a name="policysetitem-resource-type"></a>Tipo de recurso policySetItem
 
@@ -31,7 +31,7 @@ Uma classe que contém as propriedades usadas para Item PolicySet.
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Chave do PolicySetItem.|
+|id|String|Chave do PolicySetItem.|
 |createdDateTime|DateTimeOffset|Hora de criação do PolicySetItem.|
 |lastModifiedDateTime|DateTimeOffset|Última hora modificada do PolicySetItem.|
 |payloadId|Cadeia de caracteres|PayloadId do PolicySetItem.|
@@ -39,7 +39,7 @@ Uma classe que contém as propriedades usadas para Item PolicySet.
 |displayName|Cadeia de caracteres|DisplayName do PolicySetItem.|
 |status|[policySetStatus](../resources/intune-policyset-policysetstatus.md)|Status do PolicySetItem. Os valores possíveis são: `unknown`, `validating`, `partialSuccess`, `success`, `error`, `notAssigned`.|
 |errorCode|[errorCode](../resources/intune-policyset-errorcode.md)|Código de erro se ocorrer algum. Os valores possíveis são: `noError`, `unauthorized`, `notFound`, `deleted`.|
-|guidedDeploymentTags|Coleção de cadeias de caracteres|Marcas da implantação guiada|
+|guidedDeploymentTags|Conjunto de cadeias de caracteres|Marcas da implantação guiada|
 
 ## <a name="relationships"></a>Relações
 Nenhum

@@ -2,15 +2,15 @@
 title: Atualizar windowsDefenderApplicationControlSupplementalPolicyDeploymentStatus
 description: Atualize as propriedades de um objeto windowsDefenderApplicationControlSupplementalPolicyDeploymentStatus.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 187221cf46c9f00f19f1ecd1bca2ec6ad4de949e
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: b6e06081c796229b5849d714e815f4a1ba8e2af7
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58795274"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59047741"
 ---
 # <a name="update-windowsdefenderapplicationcontrolsupplementalpolicydeploymentstatus"></a>Atualizar windowsDefenderApplicationControlSupplementalPolicyDeploymentStatus
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementApps.ReadWrite.All|
+|Aplicativo|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -62,7 +62,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [windows
 |deploymentStatus|[windowsDefenderApplicationControlSupplementalPolicyStatuses](../resources/intune-unlock-windowsdefenderapplicationcontrolsupplementalpolicystatuses.md)|O estado de implantação da política. Os valores possíveis são: `unknown`, `success`, `tokenError`, `notAuthorizedByToken`, `policyNotFound`.|
 |userName|Cadeia de caracteres|O nome do usuário deste dispositivo.|
 |userPrincipalName|Cadeia de caracteres|Nome principal do usuário.|
-|policyVersion|Cadeia de caracteres|Versão acessível humana da política suplementar WindowsDefenderApplicationControl.|
+|policyVersion|Cadeia de Caracteres|Versão acessível humana da política suplementar WindowsDefenderApplicationControl.|
 
 
 

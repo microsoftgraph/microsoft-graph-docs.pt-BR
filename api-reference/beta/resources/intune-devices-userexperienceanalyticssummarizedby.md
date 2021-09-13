@@ -2,15 +2,15 @@
 title: userExperienceAnalyticsSummarizedBy tipo de número
 description: Ainda não documentado
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: c585404931c2e59f6ccc90a2f312f534bf0a04fc
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: b0bd06cf17840ec3a358b09bb61019f0050b5687
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58797497"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59046908"
 ---
 # <a name="userexperienceanalyticssummarizedby-enum-type"></a>userExperienceAnalyticsSummarizedBy tipo de número
 

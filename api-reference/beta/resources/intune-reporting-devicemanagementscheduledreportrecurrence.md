@@ -2,15 +2,15 @@
 title: tipo de número deviceManagementScheduledReportRecurrence
 description: Valores possíveis para a recorrência de um relatório agendado
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 402e6a673a1bb4e811dad72c17159e8793dfbe74
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 910bbd935e489cf292237f4de3554ab2a945f8d9
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58803437"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59039319"
 ---
 # <a name="devicemanagementscheduledreportrecurrence-enum-type"></a>tipo de número deviceManagementScheduledReportRecurrence
 

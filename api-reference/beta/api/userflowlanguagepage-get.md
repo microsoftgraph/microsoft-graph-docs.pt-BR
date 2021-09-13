@@ -2,15 +2,15 @@
 title: Obter userFlowLanguagePage
 description: Leia os valores em um objeto userFlowLanguagePage para um idioma em um fluxo de usuário.
 author: jkdouglas
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 3a47ae23d1cf271c0ebe2a6aa6864226bb9a7d43
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 9f9de199af36de62ce4f9a20f290b73a0384442a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50955132"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59040824"
 ---
 # <a name="get-userflowlanguagepage"></a>Obter userFlowLanguagePage
 
@@ -31,7 +31,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 A conta de trabalho ou de estudante precisa pertencer a uma das seguintes funções:
 
 * Administrador global
-* Administrador de Fluxo de Usuário de Identidade Externa
+* Administrador de identidade externa Flow usuário
 
 ## <a name="http-request"></a>Solicitação HTTP
 

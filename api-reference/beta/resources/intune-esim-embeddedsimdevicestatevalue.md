@@ -2,15 +2,15 @@
 title: Tipo denum embeddedSIMDeviceStateValue
 description: Descreve os vários estados para um código de ativação de SIM incorporado.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: ab8db5b259c78ed48a3f1de4a0732dfeb69212d6
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 82a7cf1d28976da03183618e0f47a26d125495d2
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58785721"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59046845"
 ---
 # <a name="embeddedsimdevicestatevalue-enum-type"></a>Tipo denum embeddedSIMDeviceStateValue
 

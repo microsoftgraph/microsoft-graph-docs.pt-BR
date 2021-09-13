@@ -2,15 +2,15 @@
 title: Listar userAttributeAssignments
 description: Obter os recursos identityUserFlowAttributeAssignment da propriedade de navegação userAttributeAssignments.
 author: jkdouglas
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 4264daf12c7374da798e03312c705435d90cb875
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 3b698dbbfebb102daef8120843aaba02602c338a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50944521"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59044192"
 ---
 # <a name="list-userattributeassignments"></a>Listar userAttributeAssignments
 

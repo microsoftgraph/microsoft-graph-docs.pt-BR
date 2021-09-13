@@ -2,15 +2,15 @@
 title: Tipo de número vpnDeadPeerDetectionRate
 description: Determina com que frequência verificar se uma conexão de par ainda está viva
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 748a8ead25336f422f1acd3c07ea2c6079acf9da
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: dd267610d0db660fd8c372a577ee53780c4ab5e0
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58816939"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59081224"
 ---
 # <a name="vpndeadpeerdetectionrate-enum-type"></a>Tipo de número vpnDeadPeerDetectionRate
 
@@ -25,7 +25,7 @@ Determina com que frequência verificar se uma conexão de par ainda está viva
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|medium|0|Médio|
+|medium|0|Média|
 |Nenhuma|1|Nenhum|
 |low|2|Baixo|
 |high|3|Alto|

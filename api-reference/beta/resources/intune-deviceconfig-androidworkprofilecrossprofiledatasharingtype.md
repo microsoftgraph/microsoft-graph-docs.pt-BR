@@ -2,15 +2,15 @@
 title: tipo de número androidWorkProfileCrossProfileDataSharingType
 description: Tipo de compartilhamento de dados entre perfis do Perfil de Trabalho do Android.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 47a50daf8db0ad1a659067126da4e0d7ef42cc1d
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 463ad7666cdce10c6b2bef4b2ada910507586782
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58804866"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59075701"
 ---
 # <a name="androidworkprofilecrossprofiledatasharingtype-enum-type"></a>tipo de número androidWorkProfileCrossProfileDataSharingType
 

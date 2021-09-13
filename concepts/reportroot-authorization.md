@@ -2,14 +2,14 @@
 title: Autorização para APIs lerem os relatórios de uso do Microsoft 365.
 description: Os dados de relatórios acessíveis por meio da API de relatórios do Microsoft Graph são confidenciais e protegidos por permissões e funções do Azure AD (Azure Active Directory).
 author: kszb
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: reports
-ms.openlocfilehash: 8f02807287771607d327c46fc27949132e6a85e313f99620c76be2107ec85996
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 1710f5c1be640f61c0ff02340e90b991d3d69f9f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54151722"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59139020"
 ---
 # <a name="authorization-for-apis-to-read-microsoft-365-usage-reports"></a>Autorização para APIs lerem os relatórios de uso do Microsoft 365.
 
@@ -18,7 +18,7 @@ Os dados do relatório acessíveis por meio da API de relatórios do Microsoft G
 As APIs que leem os relatórios de uso do Microsoft 365 oferecem suporte a dois tipos de autorização:
 
 - **Autorização no nível do aplicativo** – permite que um aplicativo leia todos os relatórios de uso de serviço sem um usuário conectado. As permissões concedidas ao aplicativo determinam a autorização.
-- **Permissão delegada pelo usuário** – permite que um aplicativo leia todos os relatórios de uso de serviço em nome do usuário conectado. Além do aplicativo ter recebido as permissões necessárias, o usuário deve ser membro de uma função de administrador limitada do Azure AD. Essa pode ser uma das seguintes funções: administrador da empresa, administrador do Exchange, administrador do SharePoint, administrador do Lync, Administrador de Serviço do Teams, Administrador de Comunicações do Teams, leitor global ou leitor de relatórios.
+- **Permissão delegada pelo usuário** – permite que um aplicativo leia todos os relatórios de uso de serviço em nome do usuário conectado. Além do aplicativo ter recebido as permissões necessárias, o usuário deve ser membro de uma função de administrador limitada do Azure AD. Esta pode ser uma das seguintes funções: Administrador da Empresa, Administrador de Exchange, Administrador do SharePoint, Administrador do Lync, Administrador de Serviço do Teams, Administrador de Comunicações do Teams, Leitor Global, Leitor de Relatórios de Resumo de Uso ou Leitor de Relatórios. As funções de Leitor Global e de Leitor de Relatórios de Resumo só terão acesso a dados no nível do locatário, sem visibilidade em métricas detalhadas.
 
 Se você estiver chamando as APIs do Explorador do Graph:
 

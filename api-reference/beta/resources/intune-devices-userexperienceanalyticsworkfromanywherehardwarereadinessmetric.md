@@ -2,15 +2,15 @@
 title: tipo de recurso userExperienceAnalyticsWorkFromAnywhereHardwareReadinessMetric
 description: A entidade de preparação de hardware de análise de experiência do usuário contém informações de nível de conta sobre bloqueadores de hardware para atualização do Windows.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: aa7a4fdd18b1b14c881972bca25d287176564915
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: a9716cee7e1ba03253b040c52d49e0df404b9c48
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58806205"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59046866"
 ---
 # <a name="userexperienceanalyticsworkfromanywherehardwarereadinessmetric-resource-type"></a>tipo de recurso userExperienceAnalyticsWorkFromAnywhereHardwareReadinessMetric
 

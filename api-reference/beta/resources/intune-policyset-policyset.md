@@ -2,15 +2,15 @@
 title: Tipo de recurso policySet
 description: Uma classe que contém as propriedades usadas para PolicySet.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: edac97723f19b494adcb38ed87b68695c31bd367
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 3216acbfaf03e0edc61eb87cbe8419c22227f9b6
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58793285"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59074882"
 ---
 # <a name="policyset-resource-type"></a>Tipo de recurso policySet
 
@@ -28,7 +28,7 @@ Uma classe que contém as propriedades usadas para PolicySet.
 |[Listar policySets](../api/intune-policyset-policyset-list.md)|[Coleção policySet](../resources/intune-policyset-policyset.md)|Listar propriedades e relações dos [objetos policySet.](../resources/intune-policyset-policyset.md)|
 |[Obter policySet](../api/intune-policyset-policyset-get.md)|[policySet](../resources/intune-policyset-policyset.md)|Leia propriedades e relações do [objeto policySet.](../resources/intune-policyset-policyset.md)|
 |[Criar policySet](../api/intune-policyset-policyset-create.md)|[policySet](../resources/intune-policyset-policyset.md)|Crie um novo [objeto policySet.](../resources/intune-policyset-policyset.md)|
-|[Excluir policySet](../api/intune-policyset-policyset-delete.md)|Nenhum(a)|Exclui um [policySet](../resources/intune-policyset-policyset.md).|
+|[Excluir policySet](../api/intune-policyset-policyset-delete.md)|Nenhum|Exclui um [policySet](../resources/intune-policyset-policyset.md).|
 |[Atualizar policySet](../api/intune-policyset-policyset-update.md)|[policySet](../resources/intune-policyset-policyset.md)|Atualize as propriedades de um [objeto policySet.](../resources/intune-policyset-policyset.md)|
 |[ação de atualização](../api/intune-policyset-policyset-update.md)|Nenhuma|Ainda não documentado|
 |[Ação getPolicySets](../api/intune-policyset-policyset-getpolicysets.md)|[Coleção policySet](../resources/intune-policyset-policyset.md)|Ainda não documentado|
@@ -36,15 +36,15 @@ Uma classe que contém as propriedades usadas para PolicySet.
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Chave do PolicySet.|
+|id|String|Chave do PolicySet.|
 |createdDateTime|DateTimeOffset|Hora de criação do PolicySet.|
 |lastModifiedDateTime|DateTimeOffset|Última hora modificada do PolicySet.|
-|displayName|Cadeia de caracteres|DisplayName do PolicySet.|
-|descrição|Cadeia de caracteres|Descrição do PolicySet.|
+|displayName|String|DisplayName do PolicySet.|
+|description|Cadeia de caracteres|Descrição do PolicySet.|
 |status|[policySetStatus](../resources/intune-policyset-policysetstatus.md)|Status de validação/atribuição do PolicySet. Os valores possíveis são: `unknown`, `validating`, `partialSuccess`, `success`, `error`, `notAssigned`.|
 |errorCode|[errorCode](../resources/intune-policyset-errorcode.md)|Código de erro se ocorrer algum. Os valores possíveis são: `noError`, `unauthorized`, `notFound`, `deleted`.|
-|guidedDeploymentTags|Coleção de cadeias de caracteres|Marcas da implantação guiada|
-|roleScopeTags|Coleção de cadeias de caracteres|RoleScopeTags do PolicySet|
+|guidedDeploymentTags|Conjunto de cadeias de caracteres|Marcas da implantação guiada|
+|roleScopeTags|Conjunto de cadeias de caracteres|RoleScopeTags do PolicySet|
 
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|

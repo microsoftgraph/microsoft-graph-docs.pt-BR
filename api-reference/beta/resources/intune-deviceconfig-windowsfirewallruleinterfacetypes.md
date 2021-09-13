@@ -2,15 +2,15 @@
 title: Tipo de número windowsFirewallRuleInterfaceTypes
 description: Sinalizadores que representam tipos de interface de regra de firewall.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 395a6aed6e6fad1e7dac5c33c7da0b69d0055528
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: c5811ec29a97a23e22a6225d7b9b14bf53cfeda4
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58808857"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59064137"
 ---
 # <a name="windowsfirewallruleinterfacetypes-enum-type"></a>Tipo de número windowsFirewallRuleInterfaceTypes
 

@@ -2,15 +2,15 @@
 title: Tipo de recurso userExperienceAnalyticsScoreHistory
 description: Histórico de pontuação de inicialização do dispositivo de análise de experiência do usuário.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8c9709728aabcc0b316ad892276db31a3e722ab2
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 66f895b27cbc1314957a3bc24d67e1d13214f7aa
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58820867"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59046971"
 ---
 # <a name="userexperienceanalyticsscorehistory-resource-type"></a>Tipo de recurso userExperienceAnalyticsScoreHistory
 

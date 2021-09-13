@@ -2,15 +2,15 @@
 title: Atualizar deviceLogCollectionResponse
 description: Atualize as propriedades de um objeto deviceLogCollectionResponse.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f1c634be673f8feb04471726c1a6b46eee450039
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 09002a9c3fc05fa9ca727d0a681999b30c661641
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58805917"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59042400"
 ---
 # <a name="update-devicelogcollectionresponse"></a>Atualizar deviceLogCollectionResponse
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementManagedDevices.ReadWrite.All|
+|Aplicativo|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -59,7 +59,7 @@ A tabela a seguir mostra as propriedades necessárias ao criar [deviceLogCollect
 |errorCode|Int64|O código de erro, se for o caso. Valores válidos -9.22337203685478E+18 a 9.22337203685478E+18|
 |requestedDateTimeUTC|DateTimeOffset|DateTime da solicitação|
 |receivedDateTimeUTC|DateTimeOffset|DateTime a solicitação foi recebida|
-|initiatedByUserPrincipalName|Cadeia de caracteres|O UPN para quem iniciou a solicitação|
+|initiatedByUserPrincipalName|Cadeia de Caracteres|O UPN para quem iniciou a solicitação|
 |expirationDateTimeUTC|DateTimeOffset|DateTime da expiração dos logs|
 |size|Duplo|O tamanho dos logs. Valores válidos -1,79769313486232E+308 a 1.79769313486232E+308|
 

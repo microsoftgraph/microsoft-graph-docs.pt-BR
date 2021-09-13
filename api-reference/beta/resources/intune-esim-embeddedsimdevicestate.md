@@ -2,15 +2,15 @@
 title: Tipo de recurso embeddedSIMDeviceState
 description: Descreve o estado de implantação do código de ativação do SIM incorporado em relação a um dispositivo.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0654c71369d9682887d36f02e6cddf1eb9772e0f
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 0f5b98cbf3d70514b09a18ccd6d9eab7033c862c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58789902"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59039858"
 ---
 # <a name="embeddedsimdevicestate-resource-type"></a>Tipo de recurso embeddedSIMDeviceState
 
@@ -28,7 +28,7 @@ Descreve o estado de implantação do código de ativação do SIM incorporado e
 |[Listar embeddedSIMDeviceStates](../api/intune-esim-embeddedsimdevicestate-list.md)|[Coleção embeddedSIMDeviceState](../resources/intune-esim-embeddedsimdevicestate.md)|Listar propriedades e relações dos [objetos EMBEDDEDSIMDeviceState.](../resources/intune-esim-embeddedsimdevicestate.md)|
 |[Obter embeddedSIMDeviceState](../api/intune-esim-embeddedsimdevicestate-get.md)|[embeddedSIMDeviceState](../resources/intune-esim-embeddedsimdevicestate.md)|Leia propriedades e relações do [objeto embeddedSIMDeviceState.](../resources/intune-esim-embeddedsimdevicestate.md)|
 |[Criar embeddedSIMDeviceState](../api/intune-esim-embeddedsimdevicestate-create.md)|[embeddedSIMDeviceState](../resources/intune-esim-embeddedsimdevicestate.md)|Crie um novo [objeto EMBEDDEDSIMDeviceState.](../resources/intune-esim-embeddedsimdevicestate.md)|
-|[Excluir embeddedSIMDeviceState](../api/intune-esim-embeddedsimdevicestate-delete.md)|Nenhum(a)|Exclui [umSIMDeviceState incorporado.](../resources/intune-esim-embeddedsimdevicestate.md)|
+|[Excluir embeddedSIMDeviceState](../api/intune-esim-embeddedsimdevicestate-delete.md)|Nenhum|Exclui [umSIMDeviceState incorporado.](../resources/intune-esim-embeddedsimdevicestate.md)|
 |[Atualizar embeddedSIMDeviceState](../api/intune-esim-embeddedsimdevicestate-update.md)|[embeddedSIMDeviceState](../resources/intune-esim-embeddedsimdevicestate.md)|Atualize as propriedades de [um objeto EMBEDDEDSIMDeviceState.](../resources/intune-esim-embeddedsimdevicestate.md)|
 
 ## <a name="properties"></a>Propriedades
@@ -38,11 +38,11 @@ Descreve o estado de implantação do código de ativação do SIM incorporado e
 |createdDateTime|DateTimeOffset|A hora em que o status do dispositivo SIM incorporado foi criado. Lado de serviço gerado.|
 |modifiedDateTime|DateTimeOffset|A hora em que o status do dispositivo SIM incorporado foi modificado pela última vez. Lado do serviço atualizado.|
 |lastSyncDateTime|DateTimeOffset|A última vez que o dispositivo SIM incorporado se registrou. Lado do serviço atualizado.|
-|universalIntegratedCircuitCardIdentifier|Cadeia de caracteres|O Identificador de Placa de Circuito Integrado Universal (UICCID) identificando o hardware no qual um perfil deve ser implantado.|
+|universalIntegratedCircuitCardIdentifier|Cadeia de Caracteres|O Identificador de Placa de Circuito Integrado Universal (UICCID) identificando o hardware no qual um perfil deve ser implantado.|
 |deviceName|String|Nome do dispositivo para o qual a assinatura foi provisionada, por exemplo, DESKTOP-JOE|
 |userName|Cadeia de caracteres|Nome de usuário para o qual a assinatura foi provisionada, por exemplo, joe@contoso.com|
 |state|[embeddedSIMDeviceStateValue](../resources/intune-esim-embeddedsimdevicestatevalue.md)|O estado da operação de perfil aplicada ao dispositivo. Os valores possíveis são: `notEvaluated`, `failed`, `installing`, `installed`, `deleting`, `error`, `deleted`, `removedByUser`.|
-|stateDetails|Cadeia de caracteres|Descrição da cadeia de caracteres do estado de provisionamento.|
+|stateDetails|Cadeia de Caracteres|Descrição da cadeia de caracteres do estado de provisionamento.|
 
 ## <a name="relationships"></a>Relações
 Nenhum

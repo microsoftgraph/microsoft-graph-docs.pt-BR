@@ -2,15 +2,15 @@
 title: Criar windows10EndpointProtectionConfiguration
 description: Criar um novo objeto windows10EndpointProtectionConfiguration.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: cc6db96088ddd7141423b27ff2a2c018de3c57ef
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 231977bb715e2e32e78394197411c0186286f18f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58781115"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59042673"
 ---
 # <a name="create-windows10endpointprotectionconfiguration"></a>Criar windows10EndpointProtectionConfiguration
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -56,13 +56,13 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar windows1
 |:---|:---|:---|
 |id|Cadeia de caracteres|Chave da entidade. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de marcas de escopo para esta instância entity. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|roleScopeTagIds|String collection|Lista de marcas de escopo para esta instância entity. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |supportsScopeTags|Boleano|Indica se a Configuração de Dispositivo subjacente dá suporte ou não à atribuição de marcas de escopo. A atribuição à propriedade ScopeTags não é permitida quando esse valor é falso e as entidades não estarão visíveis para usuários com escopo. Isso ocorre para políticas herdadas criadas no Silverlight e podem ser resolvidas excluindo e recriando a política no Portal do Azure. Essa propriedade é somente leitura. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|A aplicabilidade da edição do sistema operacional para esta Política. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|A regra de aplicabilidade da versão do sistema operacional para esta Política. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|A regra de aplicabilidade do modo de dispositivo para esta Política. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|DateTime em que o objeto foi criado. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|descrição|Cadeia de caracteres|O administrador forneceu a descrição da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|description|Cadeia de caracteres|O administrador forneceu a descrição da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |displayName|Cadeia de caracteres|O administrador forneceu o nome da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |versão|Int32|Versão da configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |dmaGuardDeviceEnumerationPolicy|[dmaGuardDeviceEnumerationPolicyType](../resources/intune-deviceconfig-dmaguarddeviceenumerationpolicytype.md)|Esta política destina-se a fornecer segurança adicional contra dispositivos externos com capacidade de DMA. Ele permite mais controle sobre a enumeração de dispositivos externos capazes de DMA incompatíveis com o remapping/isolamento de memória do dispositivo e área de segurança. Essa política só entra em vigor quando a Proteção DMA do Kernel é suportada e habilitada pelo firmware do sistema. O Kernel DMA Protection é um recurso de plataforma que não pode ser controlado por meio de política ou por usuário final. Ele precisa ser suportado pelo sistema no momento da fabricação. Para verificar se o sistema dá suporte à Proteção DMA kernel, verifique o campo Proteção DMA kernel na página Resumo de MSINFO32.exe. Os valores possíveis são: `deviceDefault`, `blockAll`, `allowAll`.|
@@ -104,9 +104,9 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar windows1
 |localSecurityOptionsBlockMicrosoftAccounts|Boleano|Impedir que os usuários adicionem novas contas da Microsoft a este computador.|
 |localSecurityOptionsBlockRemoteLogonWithBlankPassword|Boleano|Habilitar contas locais que não estão protegidas por senha para fazer logoff de locais diferentes do dispositivo físico. O padrão está habilitado|
 |localSecurityOptionsDisableAdministratorAccount|Boleano|Determina se a conta de Administrador Local está habilitada ou desabilitada.|
-|localSecurityOptionsAdministratorAccountName|Cadeia de caracteres|Defina um nome de conta diferente a ser associado ao identificador de segurança (SID) da conta "Administrador".|
+|localSecurityOptionsAdministratorAccountName|Cadeia de Caracteres|Defina um nome de conta diferente a ser associado ao identificador de segurança (SID) da conta "Administrador".|
 |localSecurityOptionsDisableGuestAccount|Boleano|Determina se a conta de convidado está habilitada ou desabilitada.|
-|localSecurityOptionsGuestAccountName|Cadeia de caracteres|Defina um nome de conta diferente a ser associado ao identificador de segurança (SID) da conta "Guest".|
+|localSecurityOptionsGuestAccountName|Cadeia de Caracteres|Defina um nome de conta diferente a ser associado ao identificador de segurança (SID) da conta "Guest".|
 |localSecurityOptionsAllowUndockWithoutHavingToLogon|Boleano|Impedir que um computador portátil seja desfeito sem precisar fazer logon.|
 |localSecurityOptionsBlockUsersInstallingPrinterDrivers|Boleano|Restringir a instalação de drivers de impressora como parte da conexão com uma impressora compartilhada somente para administradores.|
 |localSecurityOptionsBlockRemoteOpticalDriveAccess|Boleano|Habilitando essas configurações permite que apenas o usuário conectado interativamente acesse a mídia CD-ROM.|
@@ -115,19 +115,19 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar windows1
 |localSecurityOptionsMachineInactivityLimitInMinutes|Int32|Defina minutos máximos de inatividade na tela de logon da área de trabalho interativa até que o protetor de tela seja executado. Valores válidos de 0 a 9999|
 |localSecurityOptionsDoNotRequireCtrlAltDel|Boleano|Exigir que CTRL+ALT+DEL seja pressionado antes que um usuário possa fazer logoff.|
 |localSecurityOptionsHideLastSignedInUser|Boleano|Não exibe o nome de usuário da última pessoa que se inscreveu neste dispositivo.|
-|localSecurityOptionsHideUsernameAtSignIn|Booliano|Não exibe o nome de usuário da pessoa que está entrando nesse dispositivo depois que as credenciais são inseridas e antes que a área de trabalho do dispositivo seja mostrada.|
-|localSecurityOptionsLogOnMessageTitle|Cadeia de caracteres|De definir o título da mensagem para os usuários que tentam fazer logoff.|
-|localSecurityOptionsLogOnMessageText|Cadeia de caracteres|Definir texto de mensagem para usuários que tentam fazer logoff.|
+|localSecurityOptionsHideUsernameAtSignIn|Boleano|Não exibe o nome de usuário da pessoa que está entrando nesse dispositivo depois que as credenciais são inseridas e antes que a área de trabalho do dispositivo seja mostrada.|
+|localSecurityOptionsLogOnMessageTitle|Cadeia de Caracteres|De definir o título da mensagem para os usuários que tentam fazer logoff.|
+|localSecurityOptionsLogOnMessageText|Cadeia de Caracteres|Definir texto de mensagem para usuários que tentam fazer logoff.|
 |localSecurityOptionsAllowPKU2UAuthenticationRequests|Boleano|Bloquear solicitações de autenticação PKU2U para esse dispositivo para usar identidades online.|
 |localSecurityOptionsAllowRemoteCallsToSecurityAccountsManagerHelperBool|Boleano|Boolean auxiliar da interface do usuário para a entidade LocalSecurityOptionsAllowRemoteCallsToSecurityAccountsManager|
-|localSecurityOptionsAllowRemoteCallsToSecurityAccountsManager|Cadeia de caracteres|Edite a cadeia de caracteres padrão do Idioma de Definição do Descritor de Segurança para permitir ou negar que usuários e grupos façam chamadas remotas para o SAM.|
+|localSecurityOptionsAllowRemoteCallsToSecurityAccountsManager|Cadeia de Caracteres|Edite a cadeia de caracteres padrão do Idioma de Definição do Descritor de Segurança para permitir ou negar que usuários e grupos façam chamadas remotas para o SAM.|
 |localSecurityOptionsMinimumSessionSecurityForNtlmSspBasedClients|[localSecurityOptionsMinimumSessionSecurity](../resources/intune-deviceconfig-localsecurityoptionsminimumsessionsecurity.md)|Essa configuração de segurança permite que um cliente exigir a negociação de criptografia de 128 bits e/ou segurança de sessão NTLMv2. Os valores possíveis são: `none`, `requireNtmlV2SessionSecurity`, `require128BitEncryption`, `ntlmV2And128BitEncryption`.|
 |localSecurityOptionsMinimumSessionSecurityForNtlmSspBasedServers|[localSecurityOptionsMinimumSessionSecurity](../resources/intune-deviceconfig-localsecurityoptionsminimumsessionsecurity.md)|Essa configuração de segurança permite que um servidor exigir a negociação de criptografia de 128 bits e/ou segurança de sessão NTLMv2. Os valores possíveis são: `none`, `requireNtmlV2SessionSecurity`, `require128BitEncryption`, `ntlmV2And128BitEncryption`.|
 |lanManagerAuthenticationLevel|[lanManagerAuthenticationLevel](../resources/intune-deviceconfig-lanmanagerauthenticationlevel.md)|Essa configuração de segurança determina qual protocolo de autenticação de desafio/resposta é usado para logons de rede. Os possíveis valores são: `lmAndNltm`, `lmNtlmAndNtlmV2`, `lmAndNtlmOnly`, `lmAndNtlmV2`, `lmNtlmV2AndNotLm`, `lmNtlmV2AndNotLmOrNtm`.|
 |lanManagerWorkstationDisableInsecureGuestLogons|Boleano|Se habilitado, o cliente SMB permitirá logons de convidados inseguros. Se não estiver configurado, o cliente SMB rejeitará logons de convidados inseguros.|
 |localSecurityOptionsClearVirtualMemoryPageFile|Boleano|Essa configuração de segurança determina se o arquivo de página de memória virtual é limpo quando o sistema é desligado.|
-|localSecurityOptionsAllowSystemToBeShutDownWithoutHavingToLogOn|Booliano|Essa configuração de segurança determina se um computador pode ser desligado sem precisar fazer logoff Windows.|
-|localSecurityOptionsAllowUIAccessApplicationElevation|Booliano|Permitir que aplicativos UIAccess solicitarem elevação sem usar a área de trabalho segura.|
+|localSecurityOptionsAllowSystemToBeShutDownWithoutHavingToLogOn|Boleano|Essa configuração de segurança determina se um computador pode ser desligado sem precisar fazer logoff Windows.|
+|localSecurityOptionsAllowUIAccessApplicationElevation|Boleano|Permitir que aplicativos UIAccess solicitarem elevação sem usar a área de trabalho segura.|
 |localSecurityOptionsVirtualizeFileAndRegistryWriteFailuresToPerUserLocations|Boleano|Virtualizar falhas de gravação de arquivo e registro em locais de usuário|
 |localSecurityOptionsOnlyElevateSignedExecutables|Boleano|Impor a validação do caminho de certificação PKI para um determinado arquivo executável antes que ele seja autorizado a ser executado.|
 |localSecurityOptionsAdministratorElevationPromptBehavior|[localSecurityOptionsAdministratorElevationPromptBehaviorType](../resources/intune-deviceconfig-localsecurityoptionsadministratorelevationpromptbehaviortype.md)|Defina o comportamento do prompt de elevação para administradores no Modo de Aprovação do Administrador. Os valores possíveis são: `notConfigured`, `elevateWithoutPrompting`, `promptForCredentialsOnTheSecureDesktop`, `promptForConsentOnTheSecureDesktop`, `promptForCredentials`, `promptForConsent`, `promptForConsentForNonWindowsBinaries`.|
@@ -135,7 +135,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar windows1
 |localSecurityOptionsSwitchToSecureDesktopWhenPromptingForElevation|Boleano|Habilita todas as solicitações de elevação para ir para a área de trabalho do usuário interativo em vez da área de trabalho segura. Configurações de política de comportamento de prompt para administradores e usuários padrão são usadas.|
 |localSecurityOptionsDetectApplicationInstallationsAndPromptForElevation|Boleano|Instalações de aplicativos que exigem privilégios elevados solicitarão credenciais de administrador. O padrão está habilitado|
 |localSecurityOptionsAllowUIAccessApplicationsForSecureLocations|Boleano|Permitir que aplicativos UIAccess solicitarem elevação sem usar a área de trabalho segura. O padrão está habilitado|
-|localSecurityOptionsUseAdminApprovalMode|Booliano|Define se a conta de administrador integrado usa o Modo de Aprovação do Administrador ou executa todos os aplicativos com privilégios de administrador completos. O padrão está habilitado|
+|localSecurityOptionsUseAdminApprovalMode|Boleano|Define se a conta de administrador integrado usa o Modo de Aprovação do Administrador ou executa todos os aplicativos com privilégios de administrador completos. O padrão está habilitado|
 |localSecurityOptionsUseAdminApprovalModeForAdministrators|Boleano|Definir se o Modo de Aprovação de Administrador e todas as configurações de política UAC estão habilitadas, o padrão está habilitado|
 |localSecurityOptionsInformationShownOnLockScreen|[localSecurityOptionsInformationShownOnLockScreenType](../resources/intune-deviceconfig-localsecurityoptionsinformationshownonlockscreentype.md)|Configure as informações do usuário exibidas quando a sessão está bloqueada. Se não estiver configurado, o nome de exibição do usuário, o domínio e o nome de usuário serão mostrados. Os valores possíveis são: `notConfigured`, `userDisplayNameDomainUser`, `userDisplayNameOnly`, `doNotDisplayUser`.|
 |localSecurityOptionsInformationDisplayedOnLockScreen|[localSecurityOptionsInformationDisplayedOnLockScreenType](../resources/intune-deviceconfig-localsecurityoptionsinformationdisplayedonlockscreentype.md)|Configure as informações do usuário exibidas quando a sessão está bloqueada. Se não estiver configurado, o nome de exibição do usuário, o domínio e o nome de usuário serão mostrados. Os valores possíveis são: `notConfigured`, `administrators`, `administratorsAndPowerUsers`, `administratorsAndInteractiveUsers`.|
@@ -162,10 +162,10 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar windows1
 |defenderSecurityCenterDisableSecureBootUI|Boleano|Usado para desabilitar a exibição da área de inicialização segura em Segurança do dispositivo.|
 |defenderSecurityCenterDisableTroubleshootingUI|Boleano|Usado para desabilitar a exibição da solução de problemas do processo de segurança em Segurança do dispositivo.|
 |defenderSecurityCenterDisableVulnerableTpmFirmwareUpdateUI|Boleano|Usado para desabilitar a exibição do firmware TPM de atualização quando um firmware vulnerável é detectado.|
-|defenderSecurityCenterOrganizationDisplayName|Cadeia de caracteres|O nome da empresa que é exibido para os usuários.|
-|defenderSecurityCenterHelpEmail|Cadeia de caracteres|O endereço de email que é exibido para os usuários.|
-|defenderSecurityCenterHelpPhone|Cadeia de caracteres|O número de telefone ou Skype ID que é exibido para os usuários.|
-|defenderSecurityCenterHelpURL|Cadeia de caracteres|A URL do portal de ajuda exibida para os usuários.|
+|defenderSecurityCenterOrganizationDisplayName|Cadeia de Caracteres|O nome da empresa que é exibido para os usuários.|
+|defenderSecurityCenterHelpEmail|Cadeia de Caracteres|O endereço de email que é exibido para os usuários.|
+|defenderSecurityCenterHelpPhone|Cadeia de Caracteres|O número de telefone ou Skype ID que é exibido para os usuários.|
+|defenderSecurityCenterHelpURL|Cadeia de Caracteres|A URL do portal de ajuda exibida para os usuários.|
 |defenderSecurityCenterNotificationsFromApp|[defenderSecurityCenterNotificationsFromAppType](../resources/intune-deviceconfig-defendersecuritycenternotificationsfromapptype.md)|Notificações a ser exibidas nas áreas exibidas do aplicativo. Os valores possíveis são: `notConfigured`, `blockNoncriticalNotifications`, `blockAllNotifications`.|
 |defenderSecurityCenterITContactDisplay|[defenderSecurityCenterITContactDisplayType](../resources/intune-deviceconfig-defendersecuritycenteritcontactdisplaytype.md)|Configure onde exibir informações de contato de IT para usuários finais. Os valores possíveis são: `notConfigured`, `displayInAppAndInNotifications`, `displayOnlyInApp`, `displayOnlyInNotifications`.|
 |windowsDefenderTamperProtection|[windowsDefenderTamperProtectionOptions](../resources/intune-deviceconfig-windowsdefendertamperprotectionoptions.md)|Configure as configurações do Windows Defender TamperProtection. Os valores possíveis são: `notConfigured`, `enable`, `disable`.|
@@ -238,7 +238,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar windows1
 |applicationGuardAllowVirtualGPU|Boleano|Permitir que o application guard use GPU virtual|
 |applicationGuardAllowFileSaveOnHost|Boleano|Permitir que os usuários baixem arquivos do Edge no contêiner do application guard e salve-os no sistema de arquivos host|
 |applicationGuardAllowCameraMicrophoneRedirection|Boleano|Obtém ou define se os aplicativos dentro Microsoft Defender Application Guard podem acessar a câmera e o microfone do dispositivo.|
-|applicationGuardCertificateThumbprints|Coleção de cadeias de caracteres|Permite que determinados Certificados Raiz de nível de dispositivo sejam compartilhados com o Microsoft Defender Application Guard contêiner.|
+|applicationGuardCertificateThumbprints|String collection|Permite que determinados Certificados Raiz de nível de dispositivo sejam compartilhados com o Microsoft Defender Application Guard contêiner.|
 |bitLockerAllowStandardUserEncryption|Boleano|Permite que o administrador permita que os usuários padrão habilitam a encrpytion durante a entrada do Azure AD.|
 |bitLockerDisableWarningForOtherDiskEncryption|Boolean|Permite que o administrador desabilite o aviso de outras criptografias de disco nas máquinas dos usuários.|
 |bitLockerEnableStorageCardEncryptionOnMobile|Boolean|Permite que o administrador exija que a criptografia seja ativada usando BitLocker. Essa política é válida apenas para uma SKU móvel.|
@@ -248,9 +248,9 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar windows1
 |bitLockerRemovableDrivePolicy|[bitLockerRemovableDrivePolicy](../resources/intune-deviceconfig-bitlockerremovabledrivepolicy.md)|Política da unidade removível do BitLocker.|
 |bitLockerRecoveryPasswordRotation|[bitLockerRecoveryPasswordRotationType](../resources/intune-deviceconfig-bitlockerrecoverypasswordrotationtype.md)|Essa configuração inicia uma rotação de senha de recuperação orientada pelo cliente após uma recuperação da unidade do sistema operacional (usando bootmgr ou WinRE). Os valores possíveis são: `notConfigured`, `disabled`, `enabledForAzureAd`, `enabledForAzureAdAndHybrid`.|
 |defenderDisableScanArchiveFiles|Boleano|Permite ou não a verificação de arquivos.|
-|defenderAllowScanArchiveFiles|Booliano|Permite ou não a verificação de arquivos.|
+|defenderAllowScanArchiveFiles|Boleano|Permite ou não a verificação de arquivos.|
 |defenderDisableBehaviorMonitoring|Boleano|Permite ou não Windows Defender funcionalidade de Monitoramento de Comportamento.|
-|defenderAllowBehaviorMonitoring|Booliano|Permite ou não Windows Defender funcionalidade de Monitoramento de Comportamento.|
+|defenderAllowBehaviorMonitoring|Boleano|Permite ou não Windows Defender funcionalidade de Monitoramento de Comportamento.|
 |defenderDisableCloudProtection|Boleano|Para proteger melhor seu computador, Windows Defender enviará informações à Microsoft sobre quaisquer problemas encontrados. A Microsoft analisará essas informações, aprenderá mais sobre problemas que afetam você e outros clientes e oferecerá soluções aprimoradas.|
 |defenderAllowCloudProtection|Boleano|Para proteger melhor seu computador, Windows Defender enviará informações à Microsoft sobre quaisquer problemas encontrados. A Microsoft analisará essas informações, aprenderá mais sobre problemas que afetam você e outros clientes e oferecerá soluções aprimoradas.|
 |defenderEnableScanIncomingMail|Boleano|Permite ou não permite a verificação de email.|

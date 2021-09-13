@@ -2,15 +2,15 @@
 title: tipo de número androidManagedAppSafetyNetDeviceAttestationType
 description: Um administrador im enforcou o requisito de Atestado do Dispositivo SafetyNet do Android em um aplicativo gerenciado.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 63b8967bdfa480f4ba8d285517e91838347b82d6
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: a466567752db4fe880bcb9af72b6be6625d0df4c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58783873"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59075267"
 ---
 # <a name="androidmanagedappsafetynetdeviceattestationtype-enum-type"></a>tipo de número androidManagedAppSafetyNetDeviceAttestationType
 

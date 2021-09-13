@@ -2,15 +2,15 @@
 title: Tipo de recurso windowsProtectionState
 description: Entidade de status de proteção de dispositivo.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 640198171fd9b83c6522a8c8b07b84fa186657ab
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 39ee7f404ffc54a31a29fec2cac5f6876884f1db
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58803234"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59040005"
 ---
 # <a name="windowsprotectionstate-resource-type"></a>Tipo de recurso windowsProtectionState
 
@@ -34,20 +34,20 @@ Entidade de status de proteção de dispositivo.
 |id|Cadeia de caracteres|O Identificador exclusivo do objeto de status de proteção do dispositivo. Esta é a ID do dispositivo|
 |malwareProtectionEnabled|Boleano|O anti malware está habilitado ou não|
 |deviceState|[windowsDeviceHealthState](../resources/intune-devices-windowsdevicehealthstate.md)|Estado do computador (como verificação completa ou pendente ou reinicialização pendente etc.). Os possíveis valores são: `clean`, `fullScanPending`, `rebootPending`, `manualStepsPending`, `offlineScanPending`, `critical`.|
-|realTimeProtectionEnabled|Booliano|A proteção em tempo real está habilitada ou não?|
+|realTimeProtectionEnabled|Boleano|A proteção em tempo real está habilitada ou não?|
 |networkInspectionSystemEnabled|Boleano|Sistema de inspeção de rede habilitado ou não?|
 |quickScanOverdue|Boleano|Verificação rápida atrasada ou não?|
 |fullScanOverdue|Boleano|Verificação completa atrasada ou não?|
 |signatureUpdateOverdue|Boleano|Assinatura desa datada ou não?|
 |rebootRequired|Boleano|Reiniciar obrigatório ou não?|
 |fullScanRequired|Boleano|Verificação completa necessária ou não?|
-|engineVersion|Cadeia de caracteres|Versão atual do mecanismo de proteção de ponto de extremidade|
-|signatureVersion|Cadeia de caracteres|Versão atual das definições de malware|
-|antiMalwareVersion|Cadeia de caracteres|Versão anti malware atual|
+|engineVersion|Cadeia de Caracteres|Versão atual do mecanismo de proteção de ponto de extremidade|
+|signatureVersion|Cadeia de Caracteres|Versão atual das definições de malware|
+|antiMalwareVersion|Cadeia de Caracteres|Versão anti malware atual|
 |lastQuickScanDateTime|DateTimeOffset|Data da última verificação rápida|
 |lastFullScanDateTime|DateTimeOffset|Data da última verificação rápida|
-|lastQuickScanSignatureVersion|Cadeia de caracteres|Última versão de assinatura de verificação rápida|
-|lastFullScanSignatureVersion|Cadeia de caracteres|Última versão de assinatura de verificação completa|
+|lastQuickScanSignatureVersion|Cadeia de Caracteres|Última versão de assinatura de verificação rápida|
+|lastFullScanSignatureVersion|Cadeia de Caracteres|Última versão de assinatura de verificação completa|
 |lastReportedDateTime|DateTimeOffset|Tempo de notificado do último status de saúde do dispositivo|
 |productStatus|[windowsDefenderProductStatus](../resources/intune-devices-windowsdefenderproductstatus.md)|Status do produto Windows Defender Antivírus. Os valores possíveis são: `noStatus` , , , , , , , , `serviceNotRunning` `serviceStartedWithoutMalwareProtection` `pendingFullScanDueToThreatAction` `pendingRebootDueToThreatAction` `pendingManualStepsDueToThreatAction` `avSignaturesOutOfDate` `asSignaturesOutOfDate` `noQuickScanHappenedForSpecifiedPeriod` `noFullScanHappenedForSpecifiedPeriod` `systemInitiatedScanInProgress` `systemInitiatedCleanInProgress` `samplesPendingSubmission` `productRunningInEvaluationMode` , `productRunningInNonGenuineMode` `productExpired` `offlineScanRequired` `serviceShutdownAsPartOfSystemShutdown` `threatRemediationFailedCritically` `threatRemediationFailedNonCritically` `noStatusFlagsSet` `platformOutOfDate` `platformUpdateInProgress` `platformAboutToBeOutdated` `signatureOrPlatformEndOfLifeIsPastOrIsImpending` `windowsSModeSignaturesInUseOnNonWin10SInstall`|
 |isVirtualMachine|Boleano|Indica se o dispositivo é uma máquina virtual.|

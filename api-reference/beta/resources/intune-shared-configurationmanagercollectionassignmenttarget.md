@@ -2,15 +2,15 @@
 title: tipo de recurso configurationManagerCollectionAssignmentTarget
 description: Representa uma atribuição a uma coleção configuration manager.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: fe6061e1edd4c5bf1105bae54b0b1f3ce89af956
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: d3a7bb9ba8880f38c2f161e88fcc8363ee137107
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58818249"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59074756"
 ---
 # <a name="configurationmanagercollectionassignmenttarget-resource-type"></a>tipo de recurso configurationManagerCollectionAssignmentTarget
 
@@ -30,7 +30,7 @@ Herda de [deviceAndAppManagementAssignmentTarget](../resources/intune-shared-dev
 |:---|:---|:---|
 |deviceAndAppManagementAssignmentFilterId|Cadeia de caracteres|A ID do filtro para a atribuição de destino. Herdado [de deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|
 |deviceAndAppManagementAssignmentFilterType|[deviceAndAppManagementAssignmentFilterType](../resources/intune-shared-deviceandappmanagementassignmentfiltertype.md)|O tipo de filtro da atribuição de destino ou seja, Excluir ou Incluir. Herdado [de deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md). Os valores possíveis são: `none`, `include`, `exclude`.|
-|collectionId|Cadeia de caracteres|A ID da coleção que é o destino da atribuição.|
+|collectionId|Cadeia de Caracteres|A ID da coleção que é o destino da atribuição.|
 
 ## <a name="relationships"></a>Relações
 Nenhum

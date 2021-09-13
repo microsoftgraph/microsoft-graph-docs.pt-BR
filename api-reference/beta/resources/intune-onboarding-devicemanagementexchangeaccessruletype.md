@@ -2,15 +2,15 @@
 title: tipo de número deviceManagementExchangeAccessRuleType
 description: Criteria which define the type of device this access rule will apply to
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: c57d74c9f8e3b100c9bc088bd917a17f0f718b27
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: f03705fee5322926e80def112a922af666761427
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58791449"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59080916"
 ---
 # <a name="devicemanagementexchangeaccessruletype-enum-type"></a>tipo de número deviceManagementExchangeAccessRuleType
 

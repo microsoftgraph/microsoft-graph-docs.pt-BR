@@ -1,29 +1,29 @@
 ---
 title: 'sincronização: acquireAccessToken'
-description: Adquirir um token de Acesso OAuth para autorizar o serviço de provisionamento do Azure AD para provisionar usuários em um aplicativo
+description: Adquirir um token do OAuth Access para autorizar o serviço de provisionamento do Azure AD para provisionar usuários em um aplicativo
 author: ArvindHarinder1
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 52933139560b117e0a5311a17907b9037825bd99
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: e3fd33635fe7a3bc3faed116705583c5a6c299a9
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50239461"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59040992"
 ---
 # <a name="acquireaccesstoken"></a>acquireAccessToken
 Namespace: microsoft.graph
 
-Adquira um token de Acesso OAuth para autorizar o serviço de provisionamento do Azure AD para provisionar usuários em um aplicativo.
+Adquirir um token do OAuth Access para autorizar o serviço de provisionamento do Azure AD para provisionar usuários em um aplicativo.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|Directory.ReadWrite.All|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Delegado (conta corporativa ou de estudante)|Directory.ReadWrite.All|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|Application.ReadWrite.OwnedBy, Directory.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -50,7 +50,7 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta ação.
 
 |Parâmetro|Tipo|Descrição|
 |:---|:---|:---|
-|credenciais|[Coleção synchronizationSecretKeyStringValuePair](../resources/synchronization-secretkeystringvaluepair.md)|Representa um valor secreto único.|
+|credenciais|[coleção synchronizationSecretKeyStringValuePair](../resources/synchronization-secretkeystringvaluepair.md)|Representa um único valor secreto.|
 
 
 

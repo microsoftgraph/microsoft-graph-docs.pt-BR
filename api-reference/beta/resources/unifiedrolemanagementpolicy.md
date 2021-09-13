@@ -2,15 +2,15 @@
 title: Tipo de recurso unifiedRoleManagementPolicy
 description: Um unifiedRoleManagementPolicy especifica as várias políticas associadas a um escopo e uma definição de função. Ele é derivado de microsoft.graph.policyBase.
 author: shauliu1
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 4bfab06814bd9a443ad15f81e1cb96dcba475b3f
-ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
+ms.openlocfilehash: b27726e12815f058091bc09308344c150cb73b2f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2021
-ms.locfileid: "58454210"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59046516"
 ---
 # <a name="unifiedrolemanagementpolicy-resource-type"></a>Tipo de recurso unifiedRoleManagementPolicy
 
@@ -32,13 +32,13 @@ Um unifiedRoleManagementPolicy especifica as várias políticas associadas a um 
 |description|Cadeia de caracteres|Descrição da política.|
 |displayName|Cadeia de caracteres|Nome de exibição da política.|
 |id|Cadeia de caracteres|Identificador exclusivo da política.|
-|isOrganizationDefault|Booliano|Isso só pode ser definido como true para uma única política de toda a locatário que se aplicará a todos os escopos e funções. De definir o scopeId como "/" e scopeType como Directory.|
+|isOrganizationDefault|Boleano|Isso só pode ser definido como true para uma única política de toda a locatário que se aplicará a todos os escopos e funções. De definir o scopeId como "/" e scopeType como Directory.|
 |lastModifiedBy|[identity](../resources/identity.md)|A identidade que modificou a configuração da função pela última vez.|
 |lastModifiedDateTime|DateTimeOffset|A hora em que a configuração da função foi modificada pela última vez.|
-|scopeId|Cadeia de caracteres|A id do escopo em que a política é criada. Por exemplo "/", groupId, etc.|
-|scopeType|Cadeia de caracteres|O tipo do escopo em que a política é criada. Um de Directory, DirectoryRole, Group.|
+|scopeId|Cadeia de Caracteres|A id do escopo em que a política é criada. Por exemplo "/", groupId, etc.|
+|scopeType|Cadeia de Caracteres|O tipo do escopo em que a política é criada. Um de Directory, DirectoryRole, Group.|
 
-## <a name="relationships"></a>Relacionamentos
+## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|
 |:---|:---|:---|
 |effectiveRules|[Coleção unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md)|A lista de regras efetivas, como regra de aprovação, regra de expiração, etc. avaliada com base em regras referenciadas herdadas. Por exemplo Se houver uma política de todo o locatário para impor a regra de aprovação de habilitação, a regra efetiva será habilitar a aprovação, mesmo que a política tenha uma regra para desabilitar a aprovação.|

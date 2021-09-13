@@ -2,15 +2,15 @@
 title: Tipo de recurso windowsEnrollmentStatusScreenSettings
 description: Configuração da tela de status do registro
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 98de649856d89d0dfaa484a3abcf816463241743
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: f7578f25bf3ed2ed8b47d6cb7c039fd6bda7b89a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58797237"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59039893"
 ---
 # <a name="windowsenrollmentstatusscreensettings-resource-type"></a>Tipo de recurso windowsEnrollmentStatusScreenSettings
 
@@ -29,7 +29,7 @@ Configuração da tela de status do registro
 |allowDeviceUseBeforeProfileAndAppInstallComplete|Boleano|Permitir ou bloquear o usuário para usar o dispositivo antes da conclusão da instalação do perfil e do aplicativo|
 |blockDeviceSetupRetryByUser|Boleano|Permitir que o usuário repetir a instalação na falha de instalação|
 |allowLogCollectionOnInstallFailure|Boleano|Permitir ou bloquear o conjunto de log na falha de instalação|
-|customErrorMessage|Cadeia de caracteres|Definir mensagem de erro personalizada para mostrar após a falha na instalação|
+|customErrorMessage|Cadeia de Caracteres|Definir mensagem de erro personalizada para mostrar após a falha na instalação|
 |installProgressTimeoutInMinutes|Int32|Definir o tempo de tempo de duração da instalação em minutos|
 |allowDeviceUseOnInstallFailure|Boleano|Permitir que o usuário continue usando o dispositivo na falha de instalação|
 

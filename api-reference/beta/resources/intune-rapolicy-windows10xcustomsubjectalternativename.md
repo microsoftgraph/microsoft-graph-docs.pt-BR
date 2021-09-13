@@ -2,15 +2,15 @@
 title: Tipo de recurso windows10XCustomSubjectAlternativeName
 description: Tipo de perfil base para certificados de autenticação (SCEP ou PFX Create)
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 842e6b171b5a82a163c6f9aa578ef9cbb869dc6b
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 9b278663e92a0b056ecfafa5d6ea498709d1c4c2
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58796829"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59039641"
 ---
 # <a name="windows10xcustomsubjectalternativename-resource-type"></a>Tipo de recurso windows10XCustomSubjectAlternativeName
 

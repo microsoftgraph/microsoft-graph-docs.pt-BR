@@ -2,15 +2,15 @@
 title: Tipo de recurso embeddedSIMActivationCode
 description: O código de ativação do SIM incorporado conforme fornecido pela operadora móvel.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 68c900ce67f5eff6e7f9f5d9f3078f92fe60686d
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 88e9123d03c86ef8dee3a5252828e884ad043314
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58787838"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59039866"
 ---
 # <a name="embeddedsimactivationcode-resource-type"></a>Tipo de recurso embeddedSIMActivationCode
 
@@ -25,11 +25,11 @@ O código de ativação do SIM incorporado conforme fornecido pela operadora mó
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|integratedCircuitCardIdentifier|Cadeia de caracteres|O Identificador de Placa de Circuito Integrado (ICCID) para este código de ativação de SIM incorporado conforme fornecido pela operadora móvel.
+|integratedCircuitCardIdentifier|Cadeia de Caracteres|O Identificador de Placa de Circuito Integrado (ICCID) para este código de ativação de SIM incorporado conforme fornecido pela operadora móvel.
 A entrada deve corresponder à seguinte expressão regular: '^ \[ 0-9 \] {19} \[ 0-9 \] ?$'.|
-|matchingIdentifier|Cadeia de caracteres|O MatchingIdentifier (MatchingID) conforme especificado na Seção Especificação Técnica da Associação GSMA SGP.22 RSP 4.1.
+|matchingIdentifier|Cadeia de Caracteres|O MatchingIdentifier (MatchingID) conforme especificado na Seção Especificação Técnica da Associação GSMA SGP.22 RSP 4.1.
 A entrada deve corresponder à seguinte expressão regular: '^ \[ a-zA-Z0-9 \- \] *$'.|
-|smdpPlusServerAddress|Cadeia de caracteres|O nome de domínio totalmente qualificado do servidor SM-DP+ conforme especificado na Especificação Técnica do RSP da Associação GSM SPG .22.
+|smdpPlusServerAddress|Cadeia de Caracteres|O nome de domínio totalmente qualificado do servidor SM-DP+ conforme especificado na Especificação Técnica do RSP da Associação GSM SPG .22.
 A entrada deve corresponder à seguinte expressão regular: '^( \[ a-zA-Z0-9 \] +(- \[ a-zA-Z0-9 \] +)* \. )+ \[ a-zA-Z \] {2,} $'.|
 
 ## <a name="relationships"></a>Relações

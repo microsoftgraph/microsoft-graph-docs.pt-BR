@@ -2,15 +2,15 @@
 title: Tipo de recurso vppTokenLicenseSummary
 description: Resumo da licença de um determinado aplicativo em um token.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 916891d0bd87796007805850cb54bc04cb9dad6d
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: b442f7968c84f465a86e4ef1a0fc43353a957ac8
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58789888"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59046712"
 ---
 # <a name="vpptokenlicensesummary-resource-type"></a>Tipo de recurso vppTokenLicenseSummary
 
@@ -25,7 +25,7 @@ Resumo da licença de um determinado aplicativo em um token.
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|vppTokenId|Cadeia de caracteres|Identificador do token VPP.|
+|vppTokenId|Cadeia de Caracteres|Identificador do token VPP.|
 |appleId|Cadeia de caracteres|O Apple Id associado ao Token do Programa de Compra de Volume da Apple.|
 |organizationName|Cadeia de caracteres|A organização associada ao Token do Programa de Compra de Volume da Apple.|
 |availableLicenseCount|Int32|O número de licenças VPP disponíveis.|
