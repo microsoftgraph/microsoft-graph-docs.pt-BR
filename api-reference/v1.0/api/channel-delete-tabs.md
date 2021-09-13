@@ -2,15 +2,15 @@
 title: Excluir guia do canal
 description: 'Remove (unpins) uma guia do canal especificado dentro de uma equipe. '
 author: nkramer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 92e0fe018709097578df9437eaad3fd4f360c0cc4195f13db534baf84e320fd1
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 524fce8eebef041f494523fcac4ee7de44caea1c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54252673"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59026634"
 ---
 # <a name="delete-tab-from-channel"></a>Excluir guia do canal
 
@@ -25,8 +25,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) |  TeamsTab.ReadWriteForTeam, TeamsTab.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegada (conta corporativa ou de estudante) |  TeamsTab.ReadWriteForTeam, TeamsTab.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All |
+|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | TeamsTab.Delete.Group *, TeamsTab.ReadWrite.Group*, TeamsTab.ReadWriteForTeam.All, TeamsTab.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All |
 
 > **Observação**: Permissões marcadas com * usam [consentimento específico de recurso]( https://aka.ms/teams-rsc).
@@ -62,7 +62,7 @@ Este é um exemplo de solicitação.
 DELETE https://graph.microsoft.com/v1.0/teams/{id}/channels/{id}/tabs/{id}
 ```
 #### <a name="response"></a>Resposta
-Este é um exemplo de resposta. Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+Eis um exemplo da resposta. Observação: o objeto de resposta exibido aqui pode ser reduzido para facilitar a leitura.
 ```http
 HTTP/1.1 204 No Content
 ```

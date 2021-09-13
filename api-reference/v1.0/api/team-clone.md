@@ -2,15 +2,15 @@
 title: Clonar uma equipe
 description: Crie uma cópia de uma equipe. Essa operação também cria uma cópia do grupo correspondente.
 author: nkramer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: c4ef55620c8b13c001312ca391e553da60551a6a
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 4c336f137fc71850207d7d25b6a75a038fc03ecd
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52787440"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59036876"
 ---
 # <a name="clone-a-team"></a>Clonar uma equipe
 
@@ -111,7 +111,7 @@ Content-Type: application/json
 
 
 #### <a name="response"></a>Resposta
-Este é um exemplo de resposta. Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+Eis um exemplo da resposta. Observação: o objeto de resposta exibido aqui pode ser reduzido para facilitar a leitura.
 <!-- {
   "blockType": "response"
 } -->

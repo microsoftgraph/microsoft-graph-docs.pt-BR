@@ -1,28 +1,28 @@
 ---
 title: Criar seção
-description: Criar um novo onenoteSection no bloco de anotações especificado.
+description: Crie um novo onenoteSection no bloco de anotações especificado.
 author: jewan-microsoft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: 2a3e8ff5f7635729e7419959b410e39ab7539802
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 9b520d9781599b17f9d000fbde2c1dac428394fc
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48028508"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59015998"
 ---
 # <a name="create-section"></a>Criar seção
 
 Namespace: microsoft.graph
 
-Criar um novo [onenoteSection](../resources/section.md) no bloco de anotações especificado.
+Crie um [novo onenoteSection](../resources/section.md) no bloco de anotações especificado.
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Notes.Create, Notes.ReadWrite, Notes.ReadWrite.All    |
+|Delegada (conta corporativa ou de estudante) | Notes.Create, Notes.ReadWrite, Notes.ReadWrite.All    |
 |Delegado (conta pessoal da Microsoft) | Notes.Create, Notes.ReadWrite    |
 |Aplicativo | Notes.ReadWrite.All |
 
@@ -47,7 +47,7 @@ Dentro do mesmo nível de hierarquia, os nomes das seções devem ser exclusivos
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `201 Created` código de resposta e um objeto [onenoteSection](../resources/section.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código `201 Created` de resposta e um objeto [onenoteSection](../resources/section.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação

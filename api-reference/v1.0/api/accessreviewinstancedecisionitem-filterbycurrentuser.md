@@ -2,15 +2,15 @@
 title: 'accessReviewInstanceDecisionItem: filterByCurrentUser'
 description: Recupera todos os objetos accessReviewInstanceDecisionItem em um accessReviewInstance para o qual o usuário de chamada é o revisor.
 author: isabelleatmsft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 2c9aa068d760710c49e8eb4c4d329328239f8462
-ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
+ms.openlocfilehash: b1d6cea00fb3a1a004d299b903908c4b956833da
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53210857"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59008570"
 ---
 # <a name="accessreviewinstancedecisionitem-filterbycurrentuser"></a>accessReviewInstanceDecisionItem: filterByCurrentUser
 Namespace: microsoft.graph
@@ -26,7 +26,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
 |Delegada (conta corporativa ou de estudante)|AccessReview.Read.All, AccessReview.ReadWrite.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|AccessReview.Read.All, AccessReview.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP

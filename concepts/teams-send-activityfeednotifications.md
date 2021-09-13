@@ -2,14 +2,14 @@
 title: Enviar notificações de feed de atividade para usuários em Microsoft Teams
 description: Envie notificações de feed de atividade para os usuários em Microsoft Teams usando Teams app e microsoft graph.
 author: RamjotSingh
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
-ms.openlocfilehash: f90349e232737a7d9ca9e3932c34b12c4317a22f
-ms.sourcegitcommit: f99dc2b6c8b4cb6f9f74cd780dccc47a2bccfaa6
+ms.openlocfilehash: 50b02872a72cea158acdae5cc6e9c9e8b109be16
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2021
-ms.locfileid: "58667875"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59035567"
 ---
 # <a name="send-activity-feed-notifications-to-users-in-microsoft-teams"></a>Enviar notificações de feed de atividade para usuários em Microsoft Teams
 
@@ -62,8 +62,8 @@ Esta seção descreve as alterações que precisam ser adicionadas ao manifesto 
 
 |Parâmetro|Tipo|Descrição|
 |:---|:---|:---|
-|id|string|ID do aplicativo do Azure AD (ID do cliente).|
-|recurso|string|Recurso associado ao aplicativo do Azure AD. Também conhecido como URL de resposta ou redirecionamento no Portal do Azure.|
+|id|cadeia de caracteres|ID do aplicativo do Azure AD (ID do cliente).|
+|recurso|cadeia de caracteres|Recurso associado ao aplicativo do Azure AD. Também conhecido como URL de resposta ou redirecionamento no Portal do Azure.|
 
 > **Observação:** Você pode obter um erro se vários Teams aplicativos no mesmo escopo (equipe, chat ou usuário) estão usando o mesmo aplicativo do Azure AD. Certifique-se de que você esteja usando aplicativos exclusivos do Azure AD.
 
@@ -91,7 +91,7 @@ Esta seção descreve as alterações que precisam ser adicionadas ao manifesto 
 |:---|:---|:---|
 |type|string|Tipo de atividade. Isso precisa ser exclusivo em um manifesto específico.|
 |description|string|Descrição curta acessível por humanos. Isso ficará visível no cliente Microsoft Teams cliente.|
-|templateText|string|Texto do modelo para a notificação de atividade. Você pode declarar seus parâmetros encapsulando parâmetros em `{}` .|
+|templateText|cadeia de caracteres|Texto do modelo para a notificação de atividade. Você pode declarar seus parâmetros encapsulando parâmetros em `{}` .|
 
 >**Observação:** `actor` é um parâmetro especial que sempre leva o nome do chamador. Em chamadas delegadas, `actor` é o nome do usuário. Em chamadas somente de aplicativo, ele leva o nome do aplicativo Teams aplicativo.
 

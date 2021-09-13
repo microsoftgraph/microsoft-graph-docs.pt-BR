@@ -2,15 +2,15 @@
 title: 'educationSubmission: submit'
 description: Uma ação que indica que um aluno é feito com o trabalho e está pronto para entregar a atribuição. Essa ação só pode ser tomada pelo aluno.
 author: sharad-sharma-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: d63392079ad66d715c735ab5d6ddd989336fa958
-ms.sourcegitcommit: 979fe005c74eb99cd971df6b9511b2d3f7fe3cd4
+ms.openlocfilehash: b6a844e3f8e2c23559d6a525c18b8b04b21137ae
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52993296"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59068253"
 ---
 # <a name="educationsubmission-submit"></a>educationSubmission: submit
 
@@ -25,8 +25,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) |  EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite  |
-|Delegado (conta pessoal da Microsoft) |  Sem suporte.  |
+|Delegada (conta corporativa ou de estudante) |  EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite  |
+|Delegada (conta pessoal da Microsoft) |  Sem suporte.  |
 |Aplicativo | Sem suporte. | 
 
 ## <a name="http-request"></a>Solicitação HTTP

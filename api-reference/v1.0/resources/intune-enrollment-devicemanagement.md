@@ -2,15 +2,15 @@
 title: Tipo de recurso deviceManagement
 description: O recurso deviceManagement representa as identidades de dispositivos da coleção do locatário pré-configuradas no Intune e os perfis de registro que podem ser atribuídos às identidades de dispositivos com suporte para configuração de pré-registro.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 75d859fcb01966a26ccc32f8cea200a18ae65f741cf820ca4f75e858368c21c7
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 3022e89e0eb1aadb1eff0e4bb15e8834d6cb1374
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54230561"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59029036"
 ---
 # <a name="devicemanagement-resource-type"></a>Tipo de recurso deviceManagement
 

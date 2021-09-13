@@ -3,14 +3,14 @@ title: Obter chat 1:1 entre o usuário especificado e Teams aplicativo
 description: Recupere o chat um-a-um entre o usuário especificado e o Teams aplicativo.
 author: AkJo
 doc_type: apiPageType
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
-ms.openlocfilehash: 61f5aa005e58280bb20c54e8ef1ef92f92d85050
-ms.sourcegitcommit: a9a035e7cf7b500aebe5477c05361552e7c3a7ab
+ms.openlocfilehash: 5bf8d55f4c8a4c4581dc7cdc30aa8f2c8cc74801
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "52696223"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59021810"
 ---
 # <a name="get-one-on-one-chat-between-the-specified-user-and-teams-app"></a>Obter chat um-a-um entre o usuário especificado e Teams aplicativo
 
@@ -24,8 +24,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | TeamsAppInstallation.ReadForUser, TeamsAppInstallation.ReadWriteSelfForUser, TeamsAppInstallation.ReadWriteForUser |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegada (conta corporativa ou de estudante) | TeamsAppInstallation.ReadForUser, TeamsAppInstallation.ReadWriteSelfForUser, TeamsAppInstallation.ReadWriteForUser |
+|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | TeamsAppInstallation.ReadForUser.All, TeamsAppInstallation.ReadWriteSelfForUser.All, TeamsAppInstallation.ReadWriteForUser.All |
 
 ## <a name="http-request"></a>Solicitação HTTP

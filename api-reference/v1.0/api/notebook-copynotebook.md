@@ -1,16 +1,16 @@
 ---
 title: 'bloco de anotações: copyNotebook'
 description: Copia um bloco de anotações para a pasta Blocos de Anotações na biblioteca de documentos de destino. A pasta será criada se ela não existir.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: jewan-microsoft
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: f46e65f200e87d0f39ef5e9307ee199de5595fb1
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 85b6a312ac17e45381cc8a8c6e39e623ef0386ef
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52787454"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59016068"
 ---
 # <a name="notebook-copynotebook"></a>bloco de anotações: copyNotebook
 
@@ -23,7 +23,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Notes.Create, Notes.ReadWrite, Notes.ReadWrite.All    |
+|Delegada (conta corporativa ou de estudante) | Notes.Create, Notes.ReadWrite, Notes.ReadWrite.All    |
 |Delegado (conta pessoal da Microsoft) | Notes.Create, Notes.ReadWrite    |
 |Aplicativo | Notes.ReadWrite.All |
 
@@ -46,7 +46,7 @@ No corpo da solicitação, forneça um objeto JSON que contém os parâmetros de
 | Parâmetro    | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |groupId|Cadeia de caracteres|A id do grupo para o que copiar. Use somente ao copiar para um Microsoft 365 grupo.|
-|renameAs|Cadeia de caracteres|O nome da cópia. Padrão para o nome do item existente. |
+|renameAs|String|O nome da cópia. Padrão para o nome do item existente. |
 
 ## <a name="response"></a>Resposta
 

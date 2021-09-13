@@ -2,15 +2,15 @@
 title: Tipo de recurso macOSCredentialSingleSignOnExtension
 description: Representa um perfil de extensão single Sign-On tipo de credencial para dispositivos macOS.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 99279d9a8578976b54e173cca7fed07d10ae03c5
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 977001fe40fe4138d06300b05d88d37db8c0498c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58783530"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59017461"
 ---
 # <a name="macoscredentialsinglesignonextension-resource-type"></a>Tipo de recurso macOSCredentialSingleSignOnExtension
 
@@ -29,8 +29,8 @@ Herda de [macOSSingleSignOnExtension](../resources/intune-deviceconfig-macossing
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |extensionIdentifier|Cadeia de caracteres|Obtém ou define a ID do pacote da extensão do aplicativo que executa o SSO para as URLs especificadas.|
-|teamIdentifier|Cadeia de caracteres|Obtém ou define a ID de equipe da extensão do aplicativo que executa o SSO para as URLs especificadas.|
-|domínios|Coleção de cadeias de caracteres|Obtém ou define uma lista de hosts ou nomes de domínio para os quais a extensão do aplicativo executa SSO.|
+|teamIdentifier|String|Obtém ou define a ID de equipe da extensão do aplicativo que executa o SSO para as URLs especificadas.|
+|domínios|Coleção String|Obtém ou define uma lista de hosts ou nomes de domínio para os quais a extensão do aplicativo executa SSO.|
 |realm|Cadeia de caracteres|Obtém ou define o nome do realm que diferencia minúsculas para esse perfil.|
 |configurações|[Coleção keyTypedValuePair](../resources/intune-deviceconfig-keytypedvaluepair.md)|Obtém ou define uma lista de pares de valores de chave digitados usados para configurar perfis de tipo de credencial. Esta coleção pode conter um máximo de 500 elementos.|
 

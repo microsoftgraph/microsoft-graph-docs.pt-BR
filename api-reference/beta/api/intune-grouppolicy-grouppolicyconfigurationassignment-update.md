@@ -2,15 +2,15 @@
 title: Atualizar groupPolicyConfigurationAssignment
 description: Atualize as propriedades de um objeto groupPolicyConfigurationAssignment.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 9827e0dfc89b4c19f8991306ffa6fc4fea4fa7dc
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: e41a8d56a68df44f27012f7b7090ce624c5cf1d0
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58804124"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59018121"
 ---
 # <a name="update-grouppolicyconfigurationassignment"></a>Atualizar groupPolicyConfigurationAssignment
 
@@ -27,9 +27,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|Delegada (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {

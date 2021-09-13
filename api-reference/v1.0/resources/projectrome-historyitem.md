@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso historyItem
 description: Representa um item de histórico para uma atividade em um aplicativo. As atividades do usuário representam um único destino em seu aplicativo - por exemplo, um programa de TV, um documento ou uma campanha atual em um jogo de vídeo. Quando um usuário se envolve com essa atividade, o envolvimento é capturado como um item de histórico que indica a hora de início e término dessa atividade. À medida que o usuário se envolve com essa atividade ao longo do tempo, vários itens de histórico são gravados para uma única atividade do usuário.
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: project-rome
 author: ailae
 doc_type: resourcePageType
-ms.openlocfilehash: 7e845158dce7b8b3d0ea74eff673e179cda19b78e74d5a20512ea2c786fa1796
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 63c99a470c71b572763de4d38cf2c16f4a202a7b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54246623"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59028783"
 ---
 # <a name="historyitem-resource-type"></a>Tipo de recurso historyItem
 

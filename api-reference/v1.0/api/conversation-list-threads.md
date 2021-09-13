@@ -2,15 +2,15 @@
 title: Listar threads
 description: Obtenha todos os threads em uma conversa de grupo.
 author: dkershaw10
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 75ac17f5bcda79207d74e74340e4aaa4128a5227
-ms.sourcegitcommit: 9b8abc940a68dac6ee5da105ca29800cb59775f6
+ms.openlocfilehash: dc0167a5770d4eb8460b6ece793991a5562323d2
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "58513703"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59068333"
 ---
 # <a name="list-threads"></a>Listar threads
 

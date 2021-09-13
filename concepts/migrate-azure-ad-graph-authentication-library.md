@@ -2,14 +2,14 @@
 title: Revisar alterações na biblioteca de autenticação de aplicativos
 description: Descreve como atualizar o uso da biblioteca de autenticação para migrar um aplicativo de aplicativos da API Azure Active Directory (Azure AD) para a API Graph Microsoft.
 author: dkershaw10
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: applications
-ms.openlocfilehash: f1b502c3d72fd194b809e355f09e43154ff5a4f27569c0fc534fcbfc55f11123
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 9dfd24bb1bf956ee762c0419bce4866816fdc35e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54163492"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59135967"
 ---
 # <a name="review-app-authentication-library-changes"></a>Revisar alterações na biblioteca de autenticação de aplicativos
 
@@ -17,8 +17,8 @@ Este artigo faz parte da *etapa 3:* revisar detalhes do aplicativo do [processo 
 
 A maioria dos aplicativos usa uma biblioteca de autenticação para adquirir e gerenciar tokens de acesso para chamar a Microsoft Graph.  A Microsoft oferece duas bibliotecas de autenticação:
 
-- [Azure Active Directory biblioteca de autenticação](/azure/active-directory/develop/active-directory-authentication-libraries) (ADAL)
-- [Biblioteca de autenticação da Microsoft](/azure/active-directory/develop/reference-v2-libraries) (MSAL)
+- [Azure Active Directory Biblioteca de Autenticação](/azure/active-directory/develop/active-directory-authentication-libraries) (ADAL)
+- [Biblioteca de Autenticação da Microsoft](/azure/active-directory/develop/reference-v2-libraries) (MSAL)
 
 ## <a name="updating-adal"></a>Atualizando o ADAL
 
@@ -54,7 +54,7 @@ Consulte [Migrando o ADAL para o MSAL](https://aka.ms/adal-net-to-msal-net) para
 
 Depois de migrar para o MSAL, você pode solicitar escopos adicionais dinamicamente e os usuários são solicitados a fornecer consentimento incremental na próxima vez que usarem seu aplicativo.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Próximas etapas
 
-- Saiba as diferenças de biblioteca de clientes do [.NET](migrate-azure-ad-graph-client-libraries.md) entre o Azure AD Graph e o Microsoft Graph.
+- Saiba as diferenças de biblioteca de clientes do [.NET](migrate-azure-ad-graph-client-libraries.md) entre o Azure Active Directory (Azure AD) Graph e o Microsoft Graph.
 - Revise a [lista de verificação](migrate-azure-ad-graph-planning-checklist.md) novamente.

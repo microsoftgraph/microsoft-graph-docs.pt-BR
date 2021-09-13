@@ -2,15 +2,15 @@
 title: Obtenha as notificações de alteração para associação de chat o usando o Microsoft Graph
 description: Saiba como obter notificações de alterações de associação de chat usando as APIs do Microsoft Graph.
 author: RamjotSingh
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: microsoft-teams
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 1423ee1de0330cfcfb9322bd324065fd8c31da7a27d65b77648669565cd339b9
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 09babfebfccbd833ca1b969420f5ef3a3c75ba91
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54165508"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59138922"
 ---
 # <a name="get-change-notifications-for-chat-membership-using-microsoft-graph"></a>Obtenha as notificações de alteração para associação de chat o usando o Microsoft Graph
 

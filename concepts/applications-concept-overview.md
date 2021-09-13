@@ -2,15 +2,15 @@
 title: Visão geral da API de aplicativos
 description: Registre seu aplicativo com o Azure AD para criar uma configuração de identidade para ele que permita a integração com o Azure AD.
 author: davidmu1
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: applications
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 61ba87e0e65618d7b7ac6a4e4ce9ec46897bb073a51cd515a916450f4a9c193a
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 6aef637d7e24e1d023012d81a365766cd7b6625e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54174861"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59028748"
 ---
 # <a name="applications-api-overview"></a>Visão geral da API de aplicativos
 

@@ -2,15 +2,15 @@
 title: 'call: updateRecordingStatus'
 description: Atualize o status de gravação do aplicativo associado a uma chamada.
 author: ananmishr
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: f9581584e415bd52b402ab6c677378e7f4cb8d8d
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: ef790accb41c0c7e52d92b6c7379aca0381e1acc
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52052485"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59016796"
 ---
 # <a name="call-updaterecordingstatus"></a>call: updateRecordingStatus
 
@@ -47,7 +47,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 | Parâmetro       | Tipo    | Descrição                                                                           |
 |:----------------|:--------|:--------------------------------------------------------------------------------------|
 | clientContext   | Cadeia de caracteres  | Cadeia de caracteres de contexto de cliente exclusiva. O limite máximo é 256 caracteres.                                 |
-| status          | Cadeia de caracteres  | O status da gravação. Os valores possíveis são: `notRecording`, `recording` ou `failed`.  |
+| status          | String  | O status da gravação. Os valores possíveis são: `notRecording`, `recording` ou `failed`.  |
 
 ## <a name="response"></a>Resposta
 Este método retorna um código de resposta e um header location com um URI para o `200 OK` [objeto updateRecordingStatusOperation](../resources/updaterecordingstatusoperation.md) criado para essa solicitação.

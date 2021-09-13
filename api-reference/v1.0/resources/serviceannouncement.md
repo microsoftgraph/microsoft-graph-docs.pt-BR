@@ -2,15 +2,15 @@
 title: Tipo de recurso serviceAnnouncement
 description: Um contêiner de nível superior para recursos de comunicações de serviço
 author: payiAzure
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: service-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 761594fd25e31fe7b1edd009db234a491ff5d11e
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 5af86f432bb26495111feff7a33adeca2d54f372
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58266727"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59019143"
 ---
 # <a name="serviceannouncement-resource-type"></a>Tipo de recurso serviceAnnouncement
 

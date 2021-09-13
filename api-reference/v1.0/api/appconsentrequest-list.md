@@ -2,15 +2,15 @@
 title: Listar appConsentRequests
 description: Recuperar objetos appConsentRequest e suas propriedades
 author: psignoret
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 82013c90f4a90be14bf6ba57750bf8cafc62e4e0
-ms.sourcegitcommit: 08d47a31c48fd69ae4fcee26e34fdd65ad1ba69f
+ms.openlocfilehash: 307a761eb10d331155a134da2a2f2f5f6138f32b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51508174"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59016929"
 ---
 # <a name="list-appconsentrequests"></a>Listar appConsentRequests
 Namespace: microsoft.graph
@@ -23,9 +23,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|ConsentRequest.Read.All, ConsentRequest.ReadWrite.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|ConsentRequest.Read.All, ConsentRequest.ReadWrite.All.|
+|Delegada (conta corporativa ou de estudante)|ConsentRequest.Read.All, ConsentRequest.ReadWrite.All|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Aplicativo|ConsentRequest.Read.All, ConsentRequest.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 

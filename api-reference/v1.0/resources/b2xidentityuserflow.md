@@ -1,16 +1,16 @@
 ---
 title: tipo de recurso b2xIdentityUserFlow
 description: Representa um fluxo de usuário de inscrição de autoatendimento em um locatário do Azure Active Directory.
-localization_priority: Priority
+ms.localizationpriority: high
 doc_type: resourcePageType
 ms.prod: identity-and-sign-in
 author: jkdouglas
-ms.openlocfilehash: 211e727719494125641d4467798576a9859b2eda8d176ecd091d8b027c225da5
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 244d124c6d44457d6c60f0c3312aecaf27a1cf98
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54147011"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59015634"
 ---
 # <a name="b2xidentityuserflow-resource-type"></a>tipo de recurso b2xIdentityUserFlow
 

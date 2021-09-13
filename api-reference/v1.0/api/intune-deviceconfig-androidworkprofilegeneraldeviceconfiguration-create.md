@@ -2,15 +2,15 @@
 title: Criar androidWorkProfileGeneralDeviceConfiguration
 description: Crie um novo objeto androidWorkProfileGeneralDeviceConfiguration.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 8be0dcfe92a7385b7e39b3f22d6659f28f118ad09755e9bf322b16d2491a6950
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 71c60963c5da008f7b81023297af74f3fe7cdca1
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54138805"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59019990"
 ---
 # <a name="create-androidworkprofilegeneraldeviceconfiguration"></a>Criar androidWorkProfileGeneralDeviceConfiguration
 
@@ -25,8 +25,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -51,10 +51,10 @@ A tabela a seguir mostra as propriedades necessárias ao criar o androidWorkProf
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Chave da entidade. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|id|String|Chave da entidade. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|DateTime em que o objeto foi criado. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|description|Cadeia de caracteres|O administrador forneceu a descrição da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|description|String|O administrador forneceu a descrição da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |displayName|Cadeia de caracteres|O administrador forneceu o nome da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |versão|Int32|Versão da configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |passwordBlockFingerprintUnlock|Boolean|Indica se o desbloqueio de impressão digital deve ou não ser bloqueado.|
@@ -66,10 +66,10 @@ A tabela a seguir mostra as propriedades necessárias ao criar o androidWorkProf
 |passwordSignInFailureCountBeforeFactoryReset|Int32|Número permitido de falhas de entrada antes da redefinição de fábrica. Valores válidos de 1 a 16|
 |passwordRequiredType|[androidWorkProfileRequiredPasswordType](../resources/intune-deviceconfig-androidworkprofilerequiredpasswordtype.md)|Tipo de senha necessário. Os valores possíveis são: `deviceDefault`, `lowSecurityBiometric`, `required`, `atLeastNumeric`, `numericComplex`, `atLeastAlphabetic`, `atLeastAlphanumeric`, `alphanumericWithSymbols`.|
 |workProfileDataSharingType|[androidWorkProfileCrossProfileDataSharingType](../resources/intune-deviceconfig-androidworkprofilecrossprofiledatasharingtype.md)|Tipo de compartilhamento de dados permitido. Os valores possíveis são: `deviceDefault`, `preventAny`, `allowPersonalToWork`, `noRestrictions`.|
-|workProfileBlockNotificationsWhileDeviceLocked|Booliano|Indica se as notificações são bloqueadas ou não enquanto o dispositivo está bloqueado.|
-|workProfileBlockAddingAccounts|Booliano|Impedir que os usuários adicionem/removam contas no perfil de trabalho.|
+|workProfileBlockNotificationsWhileDeviceLocked|Boolean|Indica se as notificações são bloqueadas ou não enquanto o dispositivo está bloqueado.|
+|workProfileBlockAddingAccounts|Boolean|Impedir que os usuários adicionem/removam contas no perfil de trabalho.|
 |workProfileBluetoothEnableContactSharing|Booliano|Permitir que dispositivos bluetooth acessem contatos corporativos.|
-|workProfileBlockScreenCapture|Booliano|Bloquear captura de tela no perfil de trabalho.|
+|workProfileBlockScreenCapture|Boolean|Bloquear captura de tela no perfil de trabalho.|
 |workProfileBlockCrossProfileCallerId|Booliano|Bloqueie a ID do chamador de perfil de trabalho de exibição no perfil pessoal.|
 |workProfileBlockCamera|Booliano|Bloquear a câmera de perfil de trabalho.|
 |workProfileBlockCrossProfileContactsSearch|Booliano|Bloquear a disponibilidade de contatos de perfil de trabalho no perfil pessoal.|

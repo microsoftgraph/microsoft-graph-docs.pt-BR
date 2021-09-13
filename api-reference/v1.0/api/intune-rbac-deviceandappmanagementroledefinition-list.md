@@ -2,15 +2,15 @@
 title: Listar deviceAndAppManagementRoleDefinitions
 description: Lista propriedades e relações dos objetos deviceAndAppManagementRoleDefinition.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e53120491b08bdda5d5b56a15f6992d3117520b5c3fa78ca2429e76085c04161
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 19e98c8c7ca77cbaa99ff5ab543b482a848e9a26
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54232024"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59019843"
 ---
 # <a name="list-deviceandappmanagementroledefinitions"></a>Listar deviceAndAppManagementRoleDefinitions
 
@@ -25,8 +25,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|DeviceManagementRBAC.Read.All, DeviceManagementRBAC.ReadWrite.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta corporativa ou de estudante)|DeviceManagementRBAC.Read.All, DeviceManagementRBAC.ReadWrite.All|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|DeviceManagementRBAC.Read.All, DeviceManagementRBAC.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP

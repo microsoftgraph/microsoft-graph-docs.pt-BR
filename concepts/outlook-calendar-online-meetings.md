@@ -2,14 +2,14 @@
 title: Habilitar um evento como reunião online no calendário do Outlook
 description: Em uma organização que oferece suporte a provedores de reunião online, os administradores podem configurar calendários no Outlook para dar suporte a reuniões que utilizam estes provedores.
 author: juforan
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: outlook
-ms.openlocfilehash: 337cc8e89b40a40a41b336ddd178eb97a3ced8c5abe90e211fce74e779b4bca2
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 8eb53027cb85a7d5d658cf98ce4744344bfc87aa
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54240497"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59066867"
 ---
 # <a name="enable-an-event-as-an-online-meeting-in-an-outlook-calendar"></a>Habilitar um evento como reunião online no calendário do Outlook 
 

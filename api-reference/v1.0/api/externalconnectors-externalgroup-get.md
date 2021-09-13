@@ -2,15 +2,15 @@
 title: Obter externalGroup
 description: Obter um objeto externalGroup.
 author: sacampbe-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 173118edbec82a9f594c5e6bccc1f9774a7ab19e
-ms.sourcegitcommit: 6efd9df497d795988cd85474f379d1989b0995b7
+ms.openlocfilehash: 20f58681555a94296c6f2bef184300ff2c1faa48
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58697482"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59022468"
 ---
 # <a name="get-externalgroup"></a>Obter externalGroup
 Namespace: microsoft.graph.externalConnectors
@@ -55,6 +55,8 @@ Se tiver êxito, este método retornará `200 OK` um código de resposta com o o
 ## <a name="example"></a>Exemplo
 
 ### <a name="request"></a>Solicitação
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_externalgroup"
@@ -64,6 +66,24 @@ Se tiver êxito, este método retornará `200 OK` um código de resposta com o o
 ``` http
 GET https://graph.microsoft.com/v1.0/external/connections/contosohr/groups/31bea3d537902000
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-externalgroup-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-externalgroup-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-externalgroup-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-externalgroup-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 <!-- markdownlint-disable MD024 -->
 ### <a name="response"></a>Resposta

@@ -2,15 +2,15 @@
 title: Acessar mobileApp
 description: Leia as propriedades e as relações do objeto mobileApp.
 author: rolyon
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 4475d06849e6ec8dc1ad652160d4809a79122cb1
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 96151524c5a19b9d5ec46d65bc7286f9af1ec12a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58799294"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59017770"
 ---
 # <a name="get-mobileapp"></a>Acessar mobileApp
 
@@ -27,11 +27,11 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)||
+|Delegada (conta corporativa ou de estudante)||
 | &nbsp; &nbsp; **Aplicativos** | DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 | &nbsp;&nbsp; **Conjunto de Políticas** | DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application||
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Aplicativo||
 | &nbsp; &nbsp; **Aplicativos** | DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 | &nbsp;&nbsp; **Conjunto de Políticas** | DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 

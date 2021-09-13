@@ -2,15 +2,15 @@
 title: 'TableRowCollection: ItemAt'
 description: Obtém uma linha com base em sua posição na coleção.
 author: lumine2008
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: ae8439c6aa30f127a87aac65b1650cf5753b6c13
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 6d9ae148fbc0a58d9ca7c37a6856b261f77ca415
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52050245"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59025878"
 ---
 # <a name="tablerowcollection-itemat"></a>TableRowCollection: ItemAt
 
@@ -22,8 +22,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Files.ReadWrite    |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegada (conta corporativa ou de estudante) | Files.ReadWrite    |
+|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Sem suporte. |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -87,7 +87,7 @@ Content-length: 20
 
 
 ##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto de resposta exibido aqui pode ser encurtado para legibilidade.
+Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser reduzido para facilitar a leitura.
 <!-- {
   "blockType": "response",
   "truncated": true,

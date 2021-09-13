@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso educationOutcome
 description: O resultado da classificação de uma atribuição.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: sharad-sharma-msft
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: c393b5b324112ce268b310ef5981f335717594edf1d7cfd751e243cceeb633c7
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: bc600835885037177df3a4e1039a2c6b1ad052ab
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54212108"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59036624"
 ---
 # <a name="educationoutcome-resource-type"></a>Tipo de recurso educationOutcome
 

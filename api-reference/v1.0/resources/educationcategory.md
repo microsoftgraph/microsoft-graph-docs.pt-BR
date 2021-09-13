@@ -2,15 +2,15 @@
 title: Tipo de recurso educationCategory
 description: Uma categoria que pode ser aplicada a atribuições.
 author: mmast-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 1b8454265c7c01b7e9a27653e06e0d383d0e7f944f451adc55e5688faecaa79a
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: b4bd1220e65b2c855d4698cbe24f1d4d8d9f6ac7
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54130363"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59025563"
 ---
 # <a name="educationcategory-resource-type"></a>Tipo de recurso educationCategory
 
@@ -32,7 +32,7 @@ Uma categoria que pode ser aplicada a atribuições.
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |id|Cadeia de caracteres|Identificador exclusivo da categoria.|
-|displayName|Cadeia de caracteres|Identificador exclusivo da categoria.|
+|displayName|String|Identificador exclusivo da categoria.|
 
 ## <a name="json-representation"></a>Representação JSON
 

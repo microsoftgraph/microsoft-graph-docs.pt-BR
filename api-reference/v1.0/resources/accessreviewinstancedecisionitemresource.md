@@ -2,15 +2,15 @@
 title: Tipo de recurso accessReviewInstanceDecisionItemResource
 description: Representa o recurso associado ao item de decisão.
 author: isabelleatmsft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 6693b849651fa8b96fbe08880052bf1cdd9a77f5d892fccb171307e05033494b
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 3c51c0a4edf32bd090f78a6a921d0a246c0d33ed
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54178630"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59025626"
 ---
 # <a name="accessreviewinstancedecisionitemresource-resource-type"></a>Tipo de recurso accessReviewInstanceDecisionItemResource
 
@@ -21,7 +21,7 @@ Cada item de decisão em uma revisão de acesso representa o acesso de uma entid
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|displayName|Cadeia de caracteres|Nome de exibição do recurso|
+|displayName|String|Nome de exibição do recurso|
 |id|Cadeia de caracteres|Identificador do recurso|
 |tipo|String|Tipo de recurso. Os tipos `Group` incluem: `ServicePrincipal` , , , , `DirectoryRole` `AzureRole` `AccessPackageAssignmentPolicy` .|
 

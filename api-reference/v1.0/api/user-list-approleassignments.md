@@ -1,16 +1,16 @@
 ---
 title: Listar appRoleAssignments concedido a um usuário
 description: Recuperar a lista de atribuições de funções do aplicativo concedidas a um usuário.
-localization_priority: Priority
+ms.localizationpriority: high
 doc_type: apiPageType
 ms.prod: users
 author: psignoret
-ms.openlocfilehash: d11d02cff70a733cd2edb4898b6bc5a61262f682
-ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
+ms.openlocfilehash: 200b6ded1d1d9be5a9727195fa01ac36d352b0d3
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51468825"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59021838"
 ---
 # <a name="list-approleassignments-granted-to-a-user"></a>Listar appRoleAssignments concedido a um usuário
 

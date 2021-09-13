@@ -2,15 +2,15 @@
 title: 'call: playPrompt'
 description: Reproduza um prompt na chamada.
 author: ananmishr
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: ce89f0bbdaf665bb9f459f554a2e605324ead609
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 30f161218537d826c92ca2b96ab17caa2cfefea1
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52051603"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59016866"
 ---
 # <a name="call-playprompt"></a>call: playPrompt
 
@@ -28,8 +28,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | Sem suporte.                               |
-| Delegado (conta pessoal da Microsoft) | Sem suporte.                               |
+| Delegada (conta corporativa ou de estudante)     | Sem suporte.                               |
+| Delegada (conta pessoal da Microsoft) | Sem suporte.                               |
 | Aplicativo                            | Nenhum.                                        |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -50,7 +50,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 | Parâmetro      | Tipo    |Descrição|
 |:---------------|:--------|:----------|
 |prompts|[Coleção MediaPrompt](../resources/mediaprompt.md)| Os prompts a serem tocados. O tamanho máximo da coleção MediaPrompt suportado é 20.|
-|clientContext|Cadeia de caracteres|Cadeia de caracteres de contexto de cliente exclusiva. Pode ter no máximo 256 caracteres.|
+|clientContext|String|Cadeia de caracteres de contexto de cliente exclusiva. Pode ter no máximo 256 caracteres.|
 
 ## <a name="response"></a>Resposta
 Se tiver êxito, este método retornará um código de resposta e um `200 OK` [objeto playPromptOperation](../resources/playpromptoperation.md) no corpo da resposta.

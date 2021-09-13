@@ -1,16 +1,16 @@
 ---
 title: tipo de recurso plannerTask
 description: O recurso **plannerTask** representa uma tarefa do Planner no Microsoft 365. Uma tarefa do Planner está contida em um plano e pode ser atribuída a um bucket em um plano. Cada objeto de tarefa tem um objeto de detalhes que pode conter mais informações sobre a tarefa. Confira a visão geral para obter mais informações sobre as relações entre o grupo, o plano e a tarefa.
-localization_priority: Priority
+ms.localizationpriority: high
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: dbdb3757008950415c179ff25e0ade404ad5436649bd087c5d622b893bc1342a
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 7ebc2b2940ea7fd767279ee9fdbb0b4772c7330f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54169379"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59021453"
 ---
 # <a name="plannertask-resource-type"></a>tipo de recurso plannerTask
 

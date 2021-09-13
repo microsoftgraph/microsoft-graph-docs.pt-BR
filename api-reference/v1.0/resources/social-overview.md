@@ -2,15 +2,15 @@
 title: Usar a API do Microsoft Graph para integrar a pesquisa de dados relevantes sobre pessoas em um aplicativo
 description: O Microsoft Graph permite o acesso a dados úteis sobre pessoas e documentos com os quais eles interagem.
 author: simonhult
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: insights
 doc_type: conceptualPageType
-ms.openlocfilehash: 2920776505d99e14bcbf2c56d05a1d6ed7022b75a79564a108f1992d25464082
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 4d78275f1a2a7489233d49ce950cd349efe1dea9
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54189286"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59032143"
 ---
 # <a name="use-the-microsoft-graph-api-to-integrate-people-intelligence-in-an-app"></a>Usar a API do Microsoft Graph para integrar a pesquisa de dados relevantes sobre pessoas em um aplicativo
 

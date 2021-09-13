@@ -2,16 +2,16 @@
 author: JeremyKelley
 ms.date: 09/10/2017
 title: SharePointIds
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: sharepoint
 description: O recurso SharePointIds agrupa os vários identificadores de um item armazenado em um site do SharePoint ou no OneDrive for Business em uma única estrutura.
 doc_type: resourcePageType
-ms.openlocfilehash: 12b35256d861e5fd18e633ceb26d438f1fe1f3a7b5eb3b66a3c26c8caa689ba9
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 156e2e19d31a15ea2a2790d1286e7515a0214f09
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54205154"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59032248"
 ---
 # <a name="sharepointids-resource-type"></a>Tipo de recurso SharePointIds
 

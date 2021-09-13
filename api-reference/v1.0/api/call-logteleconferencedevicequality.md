@@ -1,16 +1,16 @@
 ---
 title: 'call: logTeleconferenceDeviceQuality'
 description: Registre dados de qualidade do dispositivo de videoconferência.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: dongkyun
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: a6cbacb3ce97ca1b9b09b12e0185757d5c8392ac
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: a94f4334780b3b8f25a33ab52321179a7caddb40
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52786044"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59016887"
 ---
 # <a name="call-logteleconferencedevicequality"></a>call: logTeleconferenceDeviceQuality
 

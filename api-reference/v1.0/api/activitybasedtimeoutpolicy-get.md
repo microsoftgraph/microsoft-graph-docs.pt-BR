@@ -1,16 +1,16 @@
 ---
 title: Obter activityBasedTimeoutPolicy
 description: Obter as propriedades de um objeto activityBasedTimeoutPolicy.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: lujiangfeng666
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: ca7ff83aa0850b199569394634b622b781c0fbd9
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 73f5324b98bb11a5057d1be980eda26a3d8b6c62
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52054235"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59008528"
 ---
 # <a name="get-activitybasedtimeoutpolicy"></a>Obter activityBasedTimeoutPolicy
 
@@ -26,8 +26,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | Policy.Read.All, Policy.ReadWrite.ApplicationConfiguration |
-| Delegado (conta pessoal da Microsoft) | Sem suporte. |
+| Delegada (conta corporativa ou de estudante)     | Policy.Read.All, Policy.ReadWrite.ApplicationConfiguration |
+| Delegada (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo                            | Policy.Read.All, Policy.ReadWrite.ApplicationConfiguration |
 
 ## <a name="http-request"></a>Solicitação HTTP

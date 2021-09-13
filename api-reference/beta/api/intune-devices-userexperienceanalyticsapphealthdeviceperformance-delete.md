@@ -2,15 +2,15 @@
 title: Excluir userExperienceAnalyticsAppHealthDevicePerformance
 description: Exclui um userExperienceAnalyticsAppHealthDevicePerformance.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 299b8ed061c6594d857766196d9fafa64681c3af
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: b4967d6e58fbe2ad8fbe5ff40ec856e021611e8f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58819280"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59018289"
 ---
 # <a name="delete-userexperienceanalyticsapphealthdeviceperformance"></a>Excluir userExperienceAnalyticsAppHealthDevicePerformance
 

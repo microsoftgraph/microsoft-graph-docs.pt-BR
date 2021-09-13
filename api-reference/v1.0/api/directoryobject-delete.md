@@ -2,15 +2,15 @@
 title: Excluir directoryObject
 description: Exclui um directoryObject.
 author: keylimesoda
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: fab6000f09ae96e1a002c3e698d8c92faa015c51
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 3c9f69312421d64535e28a142c894bf6351a730a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50434451"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59020144"
 ---
 # <a name="delete-directoryobject"></a>Excluir directoryObject
 
@@ -19,6 +19,7 @@ Namespace: microsoft.graph
 Exclui um directoryObject.
 
 ## <a name="permissions"></a>Permissões
+
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 
@@ -29,17 +30,20 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Aplicativo | Sem suporte. |
 
 ## <a name="http-request"></a>Solicitação HTTP
+
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /directoryObjects/{id}
 
 ```
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
+
 | Nome       | Tipo | Descrição|
 |:---------------|:--------|:----------|
 | Autorização  | string  | {token} de portador. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
+
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
@@ -47,7 +51,8 @@ Não forneça um corpo de solicitação para esse método.
 Se bem-sucedido, este método retorna um código de resposta `204 No Content`. Não retorna nada no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
-##### <a name="request"></a>Solicitação
+
+### <a name="request"></a>Solicitação
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -76,7 +81,7 @@ DELETE https://graph.microsoft.com/v1.0/directoryObjects/{id}
 
 ---
 
-##### <a name="response"></a>Resposta
+### <a name="response"></a>Resposta
 
 <!-- {
   "blockType": "response",

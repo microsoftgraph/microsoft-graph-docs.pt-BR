@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso educationAssignmentResource
 description: Um objeto wrapper que armazena os recursos associados a uma atribuição.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: sharad-sharma-msft
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: f1686ebac67e5f8865328e90d77607851fa6de20
-ms.sourcegitcommit: 1e9a53e7b8e67349288f5cfbabe8355de83817b0
+ms.openlocfilehash: 671ef56a579eeeba7c2f013310e9034aac7c4dae
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/17/2021
-ms.locfileid: "58367027"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59036722"
 ---
 # <a name="educationassignmentresource-resource-type"></a>Tipo de recurso educationAssignmentResource
 
@@ -26,13 +26,13 @@ O wrapper adiciona **a propriedade distributeForStudentWork** e indica que esse 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
 |[Obter educationAssignmentResource](../api/educationassignmentresource-get.md) | [educationAssignmentResource](educationassignmentresource.md) |Leia propriedades e relações de um **objeto educationAssignmentResource.**|
-|[Delete](../api/educationassignmentresource-delete.md) | Nenhum |**Exclua um objeto educationAssignmentResource.** |
+|[Delete](../api/educationassignmentresource-delete.md) | None |**Exclua um objeto educationAssignmentResource.** |
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|distributeForStudentWork|Boolean|Indica se esse recurso deve ser copiado para cada envio de alunos para modificação e envio. Obrigatório|
-|id|Cadeia de caracteres| ID desse recurso. Somente leitura.|
+|distributeForStudentWork|Booliano|Indica se esse recurso deve ser copiado para cada envio de alunos para modificação e envio. Obrigatório|
+|id|String| ID desse recurso. Somente leitura.|
 |recurso|[educationResource](educationresource.md)|Objeto Resource que foi associado a essa atribuição.|
 
 ## <a name="relationships"></a>Relações

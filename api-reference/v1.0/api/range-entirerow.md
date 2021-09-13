@@ -2,15 +2,15 @@
 title: 'Range: EntireRow'
 description: Obtém um objeto que representa toda a linha do intervalo.
 author: lumine2008
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: f09acc2238cc7d814e3047e17a0604978f54af96
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 21814a8c12f001d2103e8f5510e7fd2cda33e384
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52048670"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59029308"
 ---
 # <a name="range-entirerow"></a>Range: EntireRow
 
@@ -22,8 +22,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Files.ReadWrite    |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegada (conta corporativa ou de estudante) | Files.ReadWrite    |
+|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Sem suporte. |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -84,7 +84,7 @@ GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/{name}/r
 
 
 ##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto de resposta exibido aqui pode ser encurtado para legibilidade.
+Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser reduzido para facilitar a leitura.
 <!-- {
   "blockType": "response",
   "truncated": true,

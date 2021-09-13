@@ -2,15 +2,15 @@
 title: checkMemberGroups
 description: Verifique se há associação na lista de grupos especificada. Retorna da lista aqueles grupos dos quais
 author: Jordanndahl
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 7a4bf9b8487ffe5b4785b8729ea6a6307b3a80d2
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: 371aa2dceeb2316b1470cf9e2bf2e3de6916ffa5
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52682212"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59036862"
 ---
 # <a name="checkmembergroups"></a>checkMemberGroups
 
@@ -29,6 +29,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 | Delegada (conta corporativa ou de estudante)     | User.ReadBasic.All, User.Read.All, Directory.Read.All, User.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
 | Delegada (conta pessoal da Microsoft) | Sem suporte.                                                                                                     |
 | Application                            | User.ReadBasic.All, User.Read.All, Directory.Read.All, User.ReadWrite.All, Directory.ReadWrite.All |
+
+> **Observação:** Para listar os membros de um grupo com afiliação oculta, a permissão Member.Read.Hidden é necessária.
 
 ## <a name="http-request"></a>Solicitação HTTP
 

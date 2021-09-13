@@ -2,15 +2,15 @@
 title: Atualizar accessReviewScheduleDefinition
 description: Atualize as propriedades de um objeto accessReviewScheduleDefinition.
 author: isabelleatmsft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: cd09f268bd1e25645ed782e6c0102b8837c23be5
-ms.sourcegitcommit: 1e9a53e7b8e67349288f5cfbabe8355de83817b0
+ms.openlocfilehash: 19d7613e7b2dfd59c5ed0c92f88d36488bd16943
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/17/2021
-ms.locfileid: "58366607"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59023084"
 ---
 # <a name="update-accessreviewscheduledefinition"></a>Atualizar accessReviewScheduleDefinition
 Namespace: microsoft.graph
@@ -52,9 +52,9 @@ A tabela a seguir mostra as propriedades aceitas para atualizar um accessReviewS
 | Propriedade | Tipo | Descrição |
 |:-------------|:------------|:------------|
 | displayName | Cadeia de caracteres | Nome da série de revisão de acesso. |
-| descriptionForAdmins | Cadeia de caracteres | Contexto da revisão fornecida aos administradores. |
+| descriptionForAdmins | String | Contexto da revisão fornecida aos administradores. |
 | descriptionForReviewers | Cadeia de caracteres | Contexto da revisão fornecida aos revisadores. |
-| configurações | [accessReviewScheduleSettings](../resources/accessreviewschedulesettings.md) | As configurações de uma série de revisão de acesso. Consulte [accessReviewScheduleSettings](../resources/accessreviewschedulesettings.md). |
+| settings | [accessReviewScheduleSettings](../resources/accessreviewschedulesettings.md) | As configurações de uma série de revisão de acesso. Consulte [accessReviewScheduleSettings](../resources/accessreviewschedulesettings.md). |
 | revisadores | [Coleção accessReviewReviewerScope](../resources/accessreviewreviewerscope.md)|  Define quem são os revisadores. Se nenhum for especificado, a revisão será uma autoavaliação (os usuários revisam seu próprio acesso). A **propriedade reviewers** só será atualizável se usuários individuais são atribuídos como revistores. Consulte [accessReviewReviewerScope](../resources/accessreviewreviewerscope.md). |
 |fallbackReviewers|[Coleção accessReviewReviewerScope](../resources/accessreviewreviewerscope.md)|Uma coleção de escopos do revistor usado para definir a lista de revisadores de fallback que são notificados para tomar medidas se nenhum usuário for encontrado na lista de revisadores especificados. Isso pode ocorrer quando o proprietário do grupo é especificado como o revistor, mas o proprietário do grupo não existe, ou o gerente é especificado como revistor, mas o gerente de um usuário não existe.|
 
@@ -71,6 +71,8 @@ Este é um exemplo de atualização do displayName de uma série de revisão de 
 No corpo da solicitação, fornece uma representação JSON das novas propriedades do [objeto accessReviewScheduleDefinition.](../resources/accessreviewscheduledefinition.md)
 
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_accessreviewscheduledefinition"
@@ -116,6 +118,24 @@ Content-type: application/json
   }
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-accessreviewscheduledefinition-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-accessreviewscheduledefinition-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-accessreviewscheduledefinition-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-accessreviewscheduledefinition-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>Resposta
 <!-- {

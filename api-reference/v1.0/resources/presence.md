@@ -2,15 +2,15 @@
 title: tipo de recurso de presença
 description: Contém informações sobre a presença de um usuário, incluindo sua disponibilidade e atividade do usuário.
 author: mkhribech
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: cloud-communications
-ms.openlocfilehash: 476d7b291438492d4ec22a2a9401ef7830ecabfe
-ms.sourcegitcommit: 6f04ad0e0cde696661511dcdf343942b43f73fc6
+ms.openlocfilehash: 991ee7f2c48e6bec66775fbb41961c188aca88e2
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58396967"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59019206"
 ---
 # <a name="presence-resource-type"></a>tipo de recurso de presença
 
@@ -35,7 +35,7 @@ Esse recurso dá suporte à assinatura para [alterar notificações.](/graph/web
 
 | Relação | Tipo              | Descrição                                                                                                                                                                                                                                                                                       |
 | :----------- | :---------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| id           | string            | A ID do objeto user                                                                                                                                                                                                                                                                                |
+| id           | cadeia de caracteres            | A ID do objeto user                                                                                                                                                                                                                                                                                |
 | availability | coleção de cadeias de caracteres | As informações de presença base para um usuário. Os valores possíveis `Available` são , , , , , , , `AvailableIdle` ,  `Away` `BeRightBack` `Busy` `BusyIdle` `DoNotDisturb` `Offline` , `PresenceUnknown`                                                                                                              |
 | atividade     | coleção de cadeias de caracteres | As informações complementares à disponibilidade de um usuário. Os valores `Available` possíveis `Away` são , , , , , , , `BeRightBack` , , , `Busy` , , , `DoNotDisturb` `InACall` , `InAConferenceCall` `Inactive` `InAMeeting` `Offline` `OffWork` `OutOfOffice` `PresenceUnknown` `Presenting` `UrgentInterruptionsOnly` . |
 

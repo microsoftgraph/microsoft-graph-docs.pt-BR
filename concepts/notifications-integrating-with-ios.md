@@ -1,14 +1,14 @@
 ---
 title: Integração do aplicativo iOS no SDK do lado do cliente para notificações ao usuário
 description: Integre o aplicativo iOS com notificações de usuário no SDK do cliente.
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: notifications
-ms.openlocfilehash: efe4505e0c56e37150f8066f9571c06f2b41797e04c1f671bb790bb27adb00b0
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 0a73626317195320a274430f32607f13b9920505
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54211721"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59066930"
 ---
 # <a name="integrate-your-ios-app-with-the-client-side-sdk-for-user-notifications"></a>Integração do aplicativo iOS no SDK do lado do cliente para notificações ao usuário
 
@@ -31,7 +31,7 @@ O processo envolve alguns componentes:
 
 O diagrama mostra as próximas etapas: 
 
-1. Lógica do aplicativo. Essa etapa captura o que aciona a notificação para ser publicada para o usuário. Isso é lógica específica do aplicativo e pode ser uma atualização de dados ou evento sobre algo diferente do Microsoft Graph, como um novo evento do calendário ou atribuição de tarefas, ou o que o serviço de aplicativo quer notificar o usuário.
+1. Lógica do aplicativo. Esta etapa captura o que aciona a notificação a ser publicada para o usuário. Esta é uma lógica específica do aplicativo e pode ser um evento ou atualização de dados sobre alguma outra coisa no Microsoft Graph, como um novo evento de calendário ou atribuição de tarefa, ou o que seu serviço de aplicativo desejar notificar ao usuário.
 2. O servidor do aplicativo publica uma notificação para o usuário alvo pela API de notificações do Microsoft Graph. Para saber mais, consulte [integração com o lado do servidor](notifications-integrating-app-server.md).
 3. Ao receber a solicitação Web com nova notificação, as notificações do Microsoft Graph mantêm o conteúdo da notificação em segurança na nuvem para esse aplicativo e esse usuário.
 4. Para cada instância do cliente do aplicativo inscrita para receber notificações para esse usuário, as notificações do Microsoft Graph envia um sinal para notificar cliente do aplicativo, por meio do serviço de envio por push nativo fornecido pelo sistema operacional. Nesse caso, o aplicativo é um aplicativo iOS, e ele usa [notificação de atualização APNs em segundo plano] para enviar o sinal. 

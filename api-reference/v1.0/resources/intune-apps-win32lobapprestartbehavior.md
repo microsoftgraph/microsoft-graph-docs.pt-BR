@@ -2,15 +2,15 @@
 title: Tipo denum win32LobAppRestartBehavior
 description: Indica o tipo de ação de reinicialização.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 9596f2b3869609ec409721d94985b57987dbd122751b523245ae188caad6cd9e
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 427328f8a7769f2aaac909f1c126d11614a240da
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54169582"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59021684"
 ---
 # <a name="win32lobapprestartbehavior-enum-type"></a>Tipo denum win32LobAppRestartBehavior
 

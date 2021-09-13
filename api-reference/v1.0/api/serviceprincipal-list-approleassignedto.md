@@ -1,16 +1,16 @@
 ---
 title: Listar appRoleAssignments concedidos para uma entidade de serviço
 description: Recuperar uma lista de atribuições de funções do aplicativo concedidas para uma entidade de serviço.
-localization_priority: Priority
+ms.localizationpriority: high
 doc_type: apiPageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: 9a9cfd5330d21fe8e8199c9a7fec58c8bb470e7d
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 0179cd6cf85c64f7b72f137218b9de1973e1d5f8
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52049426"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59022048"
 ---
 # <a name="list-approleassignments-granted-for-a-service-principal"></a>Listar appRoleAssignments concedidos para uma entidade de serviço
 
@@ -28,8 +28,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Application.Read.All, Directory.Read.All, Application.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All  |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegada (conta corporativa ou de estudante) | Application.Read.All, Directory.Read.All, Application.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All  |
+|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Application.Read.All, Directory.Read.All, Application.ReadWrite.All, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP

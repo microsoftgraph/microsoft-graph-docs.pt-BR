@@ -2,15 +2,15 @@
 title: função getRelatedAppStates
 description: Ainda não documentado
 author: rolyon
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 83493b43e5ebb6eaa17c6bc105ff43de3a4771e7
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: d9d4b773df512fda37046591535dca4e8faff91f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58792257"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59017735"
 ---
 # <a name="getrelatedappstates-function"></a>função getRelatedAppStates
 
@@ -27,10 +27,10 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)||
+|Delegada (conta corporativa ou de estudante)||
 | &nbsp;&nbsp; **Aplicativos)** | DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application||
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Aplicativo||
 | &nbsp;&nbsp; **Aplicativos)** | DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 
 ## <a name="http-request"></a>Solicitação HTTP

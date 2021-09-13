@@ -1,16 +1,16 @@
 ---
 title: Valores denum
 description: Valores Graph enumeração da Microsoft.
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
 doc_type: enumPageType
-ms.openlocfilehash: 7e46d661ad6246d2ddcbb0c914c6e1a638f36858
-ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
+ms.openlocfilehash: 9431a86a70af45ab20595896aebe391409b65902
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58695277"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59036596"
 ---
 # <a name="enum-values"></a>Valores denum
 
@@ -66,7 +66,7 @@ Namespace: microsoft.graph
 
 |Member|
 |:---|
-|localização|
+|location|
 |aplicativo|
 
 ### <a name="fido2restrictionenforcementtype-values"></a>valores fido2RestrictionEnforcementType
@@ -361,7 +361,7 @@ Namespace: microsoft.graph
 
 |Member|
 |:---|
-|Nenhum|
+|None|
 |SecurityGroup|
 |Todos|
 
@@ -416,7 +416,7 @@ Namespace: microsoft.graph
 |primário|0|O pai do usuário.|
 |relative|1| O usuário é relativo.|
 |aide|2| O assistente do usuário.|
-|dr|3 | O médico do usuário.|
+|dr|3| O médico do usuário.|
 |guardian|4 | O tutor do usuário.|
 |filho|5 | O filho do usuário.|
 |other|6 | Uma relação não especificada com o usuário.|
@@ -503,7 +503,7 @@ Namespace: microsoft.graph
 | gratuito              | 0
 | tentativo         | 1
 | ocupado              | 2
-| oof               | 3 
+| oof               | 3
 | workingElsewhere  | 4 
 | desconhecido           | -1
 
@@ -543,7 +543,7 @@ Namespace: microsoft.graph
 | lightBlue  | 0
 | lightGreen | 1
 | lightOrange| 2
-| lightGray  | 3 
+| lightGray  | 3
 | lightYellow| 4 
 | lightTeal  | 5 
 | lightPink  | 6 
@@ -772,7 +772,7 @@ Namespace: microsoft.graph
 | Automático
 | noPreview
 | checklist
-| descrição
+| description
 | referência
 
 
@@ -881,7 +881,7 @@ Namespace: microsoft.graph
 | preset0  | 0
 | preset1  | 1
 | preset2  | 2
-| preset3  | 3 
+| preset3  | 3
 | preset4  | 4 
 | preset5  | 5 
 | preset6  | 6 
@@ -889,7 +889,7 @@ Namespace: microsoft.graph
 | preset8  | 8 
 | preset9  | 9 
 | preset10 | 10 
-| preset11 | 11 
+| preset11 | 11
 | preset12 | 12 
 | preset13 | 13
 | preset14 | 14 
@@ -913,7 +913,7 @@ Possíveis valores de comentários sobre o alerta fornecido por um analista.
 |desconhecido|0|Desconhecido.|
 |truePositive|1|O alerta é verdadeiro positivo.|
 |falsePositive|2| O alerta é falso positivo.|
-|benignPositive|3 | O alerta é benigno positivo.|
+|benignPositive|3| O alerta é benigno positivo.|
 
 ### <a name="filehashtype-values"></a>valores fileHashType
 
@@ -924,7 +924,7 @@ Enum para tipos de hash de arquivo.
 |desconhecido|0|Tipo desconhecido.|
 |sha1|1|Tipo de hash SHA1.|
 |sha256|2| Tipo de hash SHA256.|
-|md5|3 | Tipo de hash MD5.|
+|md5|3| Tipo de hash MD5.|
 |authenticodeHash256|4 | Tipo de hash AuthenticodeHash256.|
 |lsHash|5 | Tipo de hash LsHash.|
 |ctph|6 | Tipo de hash CTPH.|
@@ -950,7 +950,7 @@ Enum para o status das conexões.
 |desconhecido|0|Status de conexão desconhecido.|
 |tentativa|1|Tentativa de conexão.|
 |bem-sucedido|2| Conexão bem-sucedida.|
-|blocked|3 | Conexão bloqueada.|
+|blocked|3| Conexão bloqueada.|
 |failed|4 | Falha na conexão.|
 
 ### <a name="processintegritylevel-values"></a>Valores processIntegrityLevel
@@ -975,7 +975,7 @@ Enum para hives do Registro conforme definido por [/windows/desktop/sysinfo/regi
 |desconhecido|0|Hive desconhecido.|
 |currentConfig|1|HKEY_CURRENT_CONFIG hive.|
 |currentUser|2| HKEY_CURRENT_USER hive.|
-|localMachineSam|3 | HKEY_LOCAL_MACHINE\SAM hive.|
+|localMachineSam|3| HKEY_LOCAL_MACHINE\SAM hive.|
 |localMachineSamSoftware|4 | HKEY_LOCAL_MACHINE\Software hive.|
 |localMachineSystem|5 | HKEY_LOCAL_MACHINE\System hive.|
 |usersDefault|6 | HKEY_USERS \\ . Hive PADRÃO.|
@@ -989,7 +989,7 @@ Operação que alterou o nome e/ou o valor da chave do Registro.
 |desconhecido|0|Tipo de valor desconhecido do Registro.|
 |create|1|Criar registro.|
 |modify|2|Modificar o Registro.|
-|delete|3 |Excluir registro.|
+|delete|3|Excluir registro.|
 
 ### <a name="registryvaluetype-values"></a>valores registryValueType
 
@@ -1000,7 +1000,7 @@ Enum para tipos de valor do Registro conforme definido por [/windows/desktop/sys
 |desconhecido|0|Tipo de valor desconhecido do Registro.|
 |binário|1|REG_BINARY tipo de valor do Registro.|
 |dword|2| REG_DWORD tipo de valor do Registro.|
-|dwordLittleEndian|3 | REG_DWORD_LITTLE_ENDIAN tipo de valor do Registro.|
+|dwordLittleEndian|3| REG_DWORD_LITTLE_ENDIAN tipo de valor do Registro.|
 |dwordBigEndian|4 | REG_DWORD_BIG_ENDIAN tipo de valor do Registro.|
 |expandSz|5 | REG_EXPAND_SZ tipo de valor do Registro.|
 |link|6 | REG_LINK tipo de valor do Registro.|
@@ -1008,7 +1008,7 @@ Enum para tipos de valor do Registro conforme definido por [/windows/desktop/sys
 |Nenhuma|8 | REG_NONE tipo de valor do Registro.|
 |qword|9 | REG_QWORD tipo de valor do Registro.|
 |qwordlittleEndian|10 | REG_QWORD_LITTLE_ENDIAN tipo de valor do Registro.|
-|sz|11 | REG_SZ tipo de valor do Registro.|
+|sz|11| REG_SZ tipo de valor do Registro.|
 
 ### <a name="alertseverity-values"></a>valores alertSeverity
 
@@ -1019,7 +1019,7 @@ Enum para gravidade dos alertas.
 |desconhecido|0|A gravidade é desconhecida.|
 |informational|1|Severidade é apenas para informações.|
 |low|2| A gravidade é baixa.|
-|medium|3 | A gravidade é média.|
+|medium|3| A gravidade é média.|
 |high|4 | A gravidade é alta.|
 
 ### <a name="alertstatus-values"></a>valores alertStatus
@@ -1052,7 +1052,7 @@ Valores possíveis para o método de login do usuário.
 |interactive|0|Logon é interativo.|
 |remoteInteractive|1| Logon é interativo remoto.|
 |network|2| Logon é rede.|
-|batch|3 | Logon é lote.|
+|batch|3| Logon é lote.|
 |serviço|4 | Logon é serviço.|
 
 ### <a name="useraccountsecuritytype-values"></a>valores userAccountSecurityType
@@ -1185,9 +1185,9 @@ Valores possíveis para tipos de conta de usuário (associação ao grupo), por 
 
 | Membro | Valor | Descrição             |
 |:-------|:------|:------------------------|
-| email   | 1     | Ameaça de email.            |
+| Email   | 1     | Ameaça de email.            |
 | url    | 2     | Ameaça de URL.             |
-| file   | 3      | Ameaça de arquivo de anexo. |
+| file   | 3     | Ameaça de arquivo de anexo. |
 
 ### <a name="threatexpectedassessment-values"></a>valores threatExpectedAssessment
 
@@ -1202,7 +1202,7 @@ Valores possíveis para tipos de conta de usuário (associação ao grupo), por 
 |:-------------------|:------|:-------------------|
 | spam               | 1     | Ameaça de spam.       |
 | phishing           | 2     | Ameaça de phishing.   |
-| malware            | 3      | Ameaça de malware.    |
+| malware            | 3     | Ameaça de malware.    |
 | unknownFutureValue | 4      | Um membro do sentinel. |
 
 ### <a name="threatassessmentstatus-values"></a>valores threatAssessmentStatus
@@ -1226,7 +1226,7 @@ Valores possíveis para tipos de conta de usuário (associação ao grupo), por 
 |:-------------------|:------|:-----------------------------------------------------|
 | checkPolicy        | 1     | O resultado da verificação de política, somente para `mail` avaliação. |
 | rescan             | 2     | O resultado da varredura novamente.                                   |
-| unknownFutureValue | 3      | Um membro do sentinel.                                   |
+| unknownFutureValue | 3     | Um membro do sentinel.                                   |
 
 ### <a name="maildestinationroutingreason-values"></a>valores mailDestinationRoutingReason
 
@@ -1235,7 +1235,7 @@ Valores possíveis para tipos de conta de usuário (associação ao grupo), por 
 | Nenhuma                  | 0     | Ainda não sabemos.                       |
 | mailFlowRule          | 1     | Exchange regra de transporte.            |
 | safeSender            | 2     | Cofre lista de remetentes.                   |
-| blockedSender         | 3      | Lista de remetentes bloqueados.                |
+| blockedSender         | 3     | Lista de remetentes bloqueados.                |
 | advancedSpamFiltering | 4      | Opção avançada de filtragem de spam.     |
 | domainAllowList       | 5      | Lista de permitir domínio de remetente.           |
 | domainBlockList       | 6      | Lista de bloqueios de domínio do remetente.           |
@@ -1243,7 +1243,7 @@ Valores possíveis para tipos de conta de usuário (associação ao grupo), por 
 | firstTimeSender       | 8      | Bloqueado devido ao remetente da primeira vez.   |
 | autoPurgeToInbox      | 9      | TimeTravel mover mensagem para a caixa de entrada.   |
 | autoPurgeToJunk       | 10     | TimeTravel mover mensagem para lixo eletrônico.    |
-| autoPurgeToDeleted    | 11     | TimeTravel move a mensagem para excluída. |
+| autoPurgeToDeleted    | 11    | TimeTravel move a mensagem para excluída. |
 | outbound              | 12     | Email de saída.                      |
 | notJunk               | 13    | Permitir devido a não lixo eletrônico.              |
 | junk                  | 14     | Bloqueado devido a lixo eletrônico.                |
@@ -1324,7 +1324,7 @@ Valores possíveis para tipos de conta de usuário (associação ao grupo), por 
 |usuário | Coluna pessoa ou grupo. |
 |url | Hiperlink ou coluna de imagem. |
 |calculado | Coluna calculada. |
-|localização | Coluna local. |
+|location | Coluna local. |
 |geolocalização | Coluna de localização geográfica. |
 |term | Coluna de metadados gerenciados. |
 |multiterm | Coluna de metadados gerenciados aceitando vários valores. |
@@ -1458,7 +1458,7 @@ Valores possíveis para tipos de conta de usuário (associação ao grupo), por 
 
 | Member                |
 |:----------------------|
-| string                |
+| cadeia de caracteres                |
 | booliano               |
 | int64                 |
 | stringCollection      |

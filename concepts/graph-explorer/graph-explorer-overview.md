@@ -1,14 +1,14 @@
 ---
 title: Usar Graph Explorer para experimentar APIs do Microsoft Graph
 description: Use o Graph Explorer para tentar apIs do Microsoft Graph no locatário de exemplo padrão para explorar recursos ou entrar no seu próprio locatário e usá-lo como uma ferramenta de prototipagem para atender aos cenários do aplicativo.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: bettirosengugi
-ms.openlocfilehash: e5b6f31af1b4773b208180214f4691c276a4674deb72ab4af7e44ef5b6cb4075
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 10929ab2a8dfccc54ccf7cab93e0274716b4aad8
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54134816"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59014318"
 ---
 # <a name="use-graph-explorer-to-try-microsoft-graph-apis"></a>Usar Graph Explorer para experimentar APIs do Microsoft Graph
 

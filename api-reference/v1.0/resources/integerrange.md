@@ -2,15 +2,15 @@
 title: Tipo de recurso integerRange
 description: Representa um intervalo inclusivo de inteiros descrito por dois limites int64.
 author: nilakhan
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: universal-print
 doc_type: resourcePageType
-ms.openlocfilehash: 6af69a7184a88d8540b45b35a58875b5d2934712fa0915bb0d1e59df2623697d
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 31661802fa198790e4d30f2da58ac11c86f19b6e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54146857"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59036477"
 ---
 # <a name="integerrange-resource-type"></a>Tipo de recurso integerRange
 

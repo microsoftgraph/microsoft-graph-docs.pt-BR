@@ -1,16 +1,16 @@
 ---
 title: List schemaExtensions
 description: 'Obter uma lista de objetos schemaExtension criados por todos os aplicativos que você possui no locatário atual (que pode ser '
-localization_priority: Normal
+ms.localizationpriority: medium
 author: dkershaw10
 ms.prod: extensions
 doc_type: apiPageType
-ms.openlocfilehash: 32ce5aea57fe4becee644d500cba043460ab825d
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 1c6d76afca09ae025eac25bac6656a56be9953f4
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52038954"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59019584"
 ---
 # <a name="list-schemaextensions"></a>List schemaExtensions
 
@@ -26,8 +26,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | User.Read, Application.Read.All  |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegada (conta corporativa ou de estudante) | User.Read, Application.Read.All  |
+|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Application.Read.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -81,7 +81,7 @@ GET https://graph.microsoft.com/v1.0/schemaExtensions?$filter=id%20eq%20'graphle
 ---
 
 ##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser reduzido para facilitar a leitura.
 <!-- {
   "blockType": "response",
   "truncated": true,

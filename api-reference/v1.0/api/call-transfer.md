@@ -2,15 +2,15 @@
 title: 'call: transfer'
 description: Transferir uma chamada ponto a ponto ativa.
 author: ananmishr
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 2214d4276fc16c198ced411fe125e13389be3480
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: db9365c43bf1ab891c6f128feb4395c4b391109d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52784910"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59016817"
 ---
 # <a name="call-transfer"></a>call: transfer
 

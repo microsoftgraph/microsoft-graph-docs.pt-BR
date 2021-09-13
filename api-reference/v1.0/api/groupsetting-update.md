@@ -2,15 +2,15 @@
 title: Atualizar uma configuração de grupo
 description: Atualize as propriedades de um objeto de configuração de grupo específico.
 author: Jordanndahl
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 98fcff8af2640cc106916654e66920a77ec8d20c
-ms.sourcegitcommit: 9b8abc940a68dac6ee5da105ca29800cb59775f6
+ms.openlocfilehash: b6b0cc858636d5348d0273073f12b9ba6ad40647
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "58514627"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59022300"
 ---
 # <a name="update-a-group-setting"></a>Atualizar uma configuração de grupo
 
@@ -25,8 +25,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Directory.ReadWrite.All, Directory.AccessAsUser.All    |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegada (conta corporativa ou de estudante) | Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP

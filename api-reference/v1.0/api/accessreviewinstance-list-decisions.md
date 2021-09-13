@@ -2,15 +2,15 @@
 title: Listar decisões
 description: Obter os recursos accessReviewInstanceDecisionItem da propriedade de navegação de decisões.
 author: isabelleatmsft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 116c2c1b6bb4da87673c204536226c20990696cf
-ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
+ms.openlocfilehash: b700cdea1e10bf6110fc706fab6c3da7ca104290
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53209790"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59033081"
 ---
 # <a name="list-decisions"></a>Listar decisões
 Namespace: microsoft.graph
@@ -26,7 +26,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
 |Delegada (conta corporativa ou de estudante)|AccessReview.Read.All, AccessReview.ReadWrite.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|AccessReview.Read.All, AccessReview.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP

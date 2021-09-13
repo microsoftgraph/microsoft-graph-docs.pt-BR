@@ -2,15 +2,15 @@
 title: 'call: mute'
 description: Permite que o aplicativo se silencie.
 author: ananmishr
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 016fbd3dbad85dfaf9eb0b09d840532ce27a1c01
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 6472f8ff0470d83b0ceaee38b04c24a33aaa2b71
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52784924"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59016873"
 ---
 # <a name="call-mute"></a>call: mute
 
@@ -29,8 +29,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | Sem suporte.                               |
-| Delegado (conta pessoal da Microsoft) | Sem suporte.                               |
+| Delegada (conta corporativa ou de estudante)     | Sem suporte.                               |
+| Delegada (conta pessoal da Microsoft) | Sem suporte.                               |
 | Aplicativo                            | Nenhum.                                        |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -50,7 +50,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro      | Tipo    |Descrição|
 |:---------------|:--------|:----------|
-|clientContext|Cadeia de caracteres|Cadeia de caracteres de contexto de cliente exclusiva. O limite máximo é 256 caracteres.|
+|clientContext|String|Cadeia de caracteres de contexto de cliente exclusiva. O limite máximo é 256 caracteres.|
 
 ## <a name="response"></a>Resposta
 Se tiver êxito, este método retornará um código de resposta e um `200 OK` [objeto muteParticipantOperation](../resources/muteParticipantoperation.md) no corpo da resposta.

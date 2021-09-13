@@ -2,15 +2,15 @@
 title: Visão geral dos insights do item no Microsoft Graph
 description: A visão geral da funcionalidade de insights de itens e personalização no nível do usuário
 author: simonhult
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: insights
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: f74c83634f3484dff9d2c2b43c0d4c5bed072915
-ms.sourcegitcommit: 998c63e6290cfb5ad4a6bd3eb3e249d282f962a3
+ms.openlocfilehash: 1f68d3066acaf8499bc9645547be584e47373932
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58531289"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59021418"
 ---
 # <a name="overview-of-item-insights"></a>Visão geral dos insights do item
 As percepções do item são recomendações centradas no usuário para você e aqueles com quem você trabalha, com base em seu trabalho colaborativo no Microsoft 365.

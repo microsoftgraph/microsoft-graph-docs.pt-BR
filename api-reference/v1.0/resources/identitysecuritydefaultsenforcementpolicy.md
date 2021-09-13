@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso identitySecurityDefaultsEnforcementPolicy
 description: Representa a Azure Active Directory de padrões de segurança. Os padrões de segurança contêm configurações de segurança pré-configuradas que protegem contra ataques comuns.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: rohinigoyal1
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: d2e3c4af8bbb7dbac35f2a28a4704010b6c6d50542d2c5de9bd1cad3cb443a90
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 07dcd2efc5fa7f83c10993293cd23c740003ef0b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54238087"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59032374"
 ---
 # <a name="identitysecuritydefaultsenforcementpolicy-resource-type"></a>Tipo de recurso identitySecurityDefaultsEnforcementPolicy
 
@@ -31,9 +31,9 @@ Herda de [policyBase](../resources/policybase.md).
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|description|Cadeia de caracteres|Descrição dessa política. Somente leitura.|
-|displayName|String|Nome de exibição para esta política. Somente leitura.|
-|id|Cadeia de caracteres|Identificador dessa política. Somente leitura.|
+|description|String|Descrição dessa política. Somente leitura.|
+|displayName|Cadeia de caracteres|Nome de exibição para esta política. Somente leitura.|
+|id|String|Identificador dessa política. Somente leitura.|
 |isEnabled|Booliano|Se definido como `true` , Azure Active Directory de segurança está habilitado para o locatário.|
 
 ## <a name="relationships"></a>Relações

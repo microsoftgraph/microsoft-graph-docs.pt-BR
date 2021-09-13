@@ -2,15 +2,15 @@
 title: Usar o Postman com a API de conectores do Microsoft Graph
 description: Experimentar as APIs de conectores usando o Postman
 author: mecampos
-localization_priority: Priority
+ms.localizationpriority: high
 doc_type: conceptualPageType
 ms.prod: search
-ms.openlocfilehash: 9e520b5fe4d777edbe0a1e7f2f5300486b1772ea3c1dcf54a718854e56bd243d
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 15587804b130a009abc936ceb8af4379f67fcea2
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54126141"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59139356"
 ---
 # <a name="use-postman-with-the-microsoft-graph-connectors-api"></a>Usar o Postman com a API de conectores do Microsoft Graph
 

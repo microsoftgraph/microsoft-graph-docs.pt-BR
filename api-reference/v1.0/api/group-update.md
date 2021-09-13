@@ -2,15 +2,15 @@
 title: Atualizar grupo
 description: Atualizar as propriedades de um objeto group.
 author: Jordanndahl
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 7064d412b776f33c30b87dde34d79a167aa6a636
-ms.sourcegitcommit: ada6eab637b9b318129aefb98edbe7316399d9ba
+ms.openlocfilehash: 8b2b41797945f8747efbd9078c26f092052da7a4
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/07/2021
-ms.locfileid: "53317088"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59074042"
 ---
 # <a name="update-group"></a>Atualizar grupo
 
@@ -52,8 +52,6 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 |autoSubscribeNewMembers|Boolean|O padrão é `false`. Indica se novos membros adicionados ao grupo serão automaticamente inscritos para receberem notificações por email. **autoSubscribeNewMembers** não pode ser `true` quando **subscriptionEnabled** é definido como `false` no grupo.|
 |descrição|String|Uma descrição opcional para o grupo. |
 |displayName|Cadeia de caracteres|O nome de exibição do grupo. Essa propriedade é obrigatória quando um grupo é criado e não pode ser apagado durante atualizações. |
-|groupTypes|Coleção de cadeias de caracteres|Especifica o tipo de grupo e sua associação.  <br><br>Se a coleção contiver um grupo **unificado** então o grupo será um grupo do Microsoft 365; caso contrário, será um grupo de segurança.  <br><br>Se a coleção incluir **DynamicMembership**, o grupo tem associação dinâmica; caso contrário, a associação é estática. |
-|mailEnabled|Boolean|Especifica se o grupo está habilitado para email.|
 |mailNickname|String|O alias de e-mail do grupo. Essa propriedade deve ser especificada quando um grupo é criado.  |
 |securityEnabled|Boolean|Especifica se o grupo é um grupo de segurança. |
 |visibility|Cadeia de caracteres|Especifica a visibilidade de um grupo do Microsoft 365. Os valores possíveis são: **Privado**, **Público** ou vazio (que é interpretado como **Público**).|

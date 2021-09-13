@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso plannerExternalReferences
 description: O **recurso plannerExternalReferences** representa a coleção de referências em uma tarefa. Este é um Tipo Aberto. Ele faz parte do objeto de detalhes da tarefa. O valor no par de valores de propriedade é o objeto externalReference.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: 6a82c13a4fd18c66be3b6d2c0e8753f9fefd1ab6fdc0c47ac305ef34ff6acfba
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: e1284f07b7efc1b43465b0f7e9e4c6d5de078698
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54237541"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59019262"
 ---
 # <a name="plannerexternalreferences-resource-type"></a>Tipo de recurso plannerExternalReferences
 

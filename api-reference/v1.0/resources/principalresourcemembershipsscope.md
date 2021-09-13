@@ -2,15 +2,15 @@
 title: Tipo de recurso principalResourceMembershipsScope
 description: Permite que a seleção do escopo de revisão de acesso revise o acesso das entidades selecionadas aos recursos selecionados.
 author: isabelleatmsft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 494e4c24f0fa912190e60b74fdc1c39e09bb3dc32f8590b30e7391e770eb0d0d
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 7d4e30ccccedb5dda72c4d0bb168655e1a8aedfd
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54196555"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59019213"
 ---
 # <a name="principalresourcemembershipsscope-resource-type"></a>Tipo de recurso principalResourceMembershipsScope
 

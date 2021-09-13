@@ -2,15 +2,15 @@
 title: Listar riskyUsers
 description: Obter uma lista dos objetos riskyUser e suas propriedades.
 author: cloudhandler
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: f5d14ecc7a6e6f21ab784d5416c03c69284555e34d00fa6a37355a156553abec
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: d615c2f03f6c873b6139bcfad07c9bd9b1b352a8
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54175431"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59019745"
 ---
 # <a name="list-riskyusers"></a>Listar riskyUsers
 Namespace: microsoft.graph
@@ -22,8 +22,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante) | IdentityRiskyUser.Read.All    |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegada (conta corporativa ou de estudante) | IdentityRiskyUser.Read.All    |
+|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | IdentityRiskyUser.Read.All |
 
 ## <a name="http-request"></a>Solicitação HTTP

@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso builtInIdentityProvider
 description: Representa provedores de identidade internos em um locatário do Azure Active Directory.
-localization_priority: Priority
+ms.localizationpriority: high
 doc_type: resourcePageType
 ms.prod: identity-and-sign-in
 author: namkedia
-ms.openlocfilehash: 4f09680a34c90cd060433f111492abbdb2c0730f
-ms.sourcegitcommit: f99dc2b6c8b4cb6f9f74cd780dccc47a2bccfaa6
+ms.openlocfilehash: 7c8b4265da70100aa869d9dc593b8c0fe2b07cb6
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2021
-ms.locfileid: "58667399"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59019374"
 ---
 # <a name="builtinidentityprovider-resource-type"></a>Tipo de recurso builtInIdentityProvider
 Namespace: microsoft.graph

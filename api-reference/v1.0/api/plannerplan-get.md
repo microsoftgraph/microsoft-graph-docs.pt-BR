@@ -1,16 +1,16 @@
 ---
 title: Get plannerPlan
 description: Recupere as propriedades e as relações do **objeto plannerplan.**
-localization_priority: Normal
+ms.localizationpriority: medium
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: 3c1e2fa779203b67ec6c67730bb9e31c20dd534a
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 28e1a908e7379cc78f92295fd66db2ef34ce5028
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52053948"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59007808"
 ---
 # <a name="get-plannerplan"></a>Get plannerPlan
 

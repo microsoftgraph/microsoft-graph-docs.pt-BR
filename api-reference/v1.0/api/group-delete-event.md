@@ -2,15 +2,15 @@
 title: Excluir evento
 description: Excluir um objeto event.
 author: Jordanndahl
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 5ea2b2e4803bfea38634dc7bfb367322987e5a54
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: e01e48d660a1b039277e4b2389f76a77e2d90e28
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52680987"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59020004"
 ---
 # <a name="delete-event"></a>Excluir evento
 
