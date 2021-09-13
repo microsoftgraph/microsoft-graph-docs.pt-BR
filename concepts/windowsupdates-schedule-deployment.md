@@ -2,15 +2,15 @@
 title: Agendar uma implantação usando o serviço de implantação Windows Atualização para Empresas
 description: Ao implantar uma atualização usando o serviço de implantação, você pode agendar a implantação para que os dispositivos recebam a atualização em uma data futura.
 author: Alice-at-Microsoft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: w10
 doc_type: conceptualPageType
-ms.openlocfilehash: ac30d812294f9c05f7a32748d8b2094d700a816aec50c07553032499b3010f71
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: cb73aad6ab0aa850088e7e5e72c3cc096bb74b50
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54225612"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59117501"
 ---
 # <a name="schedule-a-deployment-using-the-windows-update-for-business-deployment-service"></a>Agendar uma implantação usando o serviço de implantação Windows Atualização para Empresas
 

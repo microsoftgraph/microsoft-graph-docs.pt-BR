@@ -2,15 +2,15 @@
 title: Obter regra
 description: Obtenha as propriedades e as relações de um objeto messageRule.
 author: abheek-das
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 2472b52089e230436a6a117535e0a13576586efa
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: f626ac2fa991d01ba0e4b124273c5dfb869390fc
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52054543"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59072985"
 ---
 # <a name="get-rule"></a>Obter regra
 
@@ -25,7 +25,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | MailboxSettings.Read    |
+|Delegada (conta corporativa ou de estudante) | MailboxSettings.Read    |
 |Delegada (conta pessoal da Microsoft) | MailboxSettings.Read    |
 |Aplicativo | MailboxSettings.Read |
 
@@ -82,7 +82,7 @@ GET https://graph.microsoft.com/v1.0/me/mailFolders/inbox/messageRules/AQAAAJ5dZ
 ##### <a name="response"></a>Resposta
 Veja a seguir um exemplo da resposta. Por padrão, as propriedades de data e hora na resposta estão em UTC. 
 
-Observação: o objeto de resposta exibido aqui pode ser encurtado para legibilidade.
+Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,

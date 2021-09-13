@@ -2,15 +2,15 @@
 title: Tipo de recurso ChartLegendFormat
 description: Encapsula as propriedades de formato de uma legenda de gráfico.
 author: lumine2008
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: b3a16f0917e4c0c02021c3d8c3fe403bea9a6ee87dff52fbb0ce799bf4a4efe0
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 82ba1b23b6c98cbf81a6b5b3b03d92f25c1f3bc7
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54243620"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59049653"
 ---
 # <a name="chartlegendformat-resource-type"></a>Tipo de recurso ChartLegendFormat
 

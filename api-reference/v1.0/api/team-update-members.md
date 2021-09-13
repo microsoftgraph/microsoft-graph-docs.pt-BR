@@ -3,14 +3,14 @@ title: Atualizar membro na equipe
 description: Atualize a função de membro em uma equipe.
 author: akjo
 doc_type: apiPageType
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
-ms.openlocfilehash: 0970bc564d23cfaadd7238f25c3afd0a487540f6
-ms.sourcegitcommit: 456ec9510807d05623c0ed1dd049c9676f53f56b
+ms.openlocfilehash: a2810ff82400c425f1de37382f9031f8d9c585cc
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53060426"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59109875"
 ---
 # <a name="update-member-in-team"></a>Atualizar membro na equipe
 
@@ -24,7 +24,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |---------|-------------|
-|Delegado (conta corporativa ou de estudante)|TeamMember.ReadWrite.All. |
+|Delegada (conta corporativa ou de estudante)|TeamMember.ReadWrite.All. |
 |Delegado (conta pessoal da Microsoft)|Sem suporte|
 |Aplicativo|TeamMember.ReadWrite.All. |
 

@@ -1,16 +1,16 @@
 ---
 title: 'group: validateProperties'
 description: Valide se o nome de exibição ou apelido de email de um grupo da Microsoft 365 está em conformidade com as políticas de nomenclatura.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: a9d39c99e63607ded7ecaa194c7002f32cf36890
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: abeca2f5459d0d298bf98d7218ec4ad9acb963fa
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52680525"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59074014"
 ---
 # <a name="group-validateproperties"></a>group: validateProperties
 

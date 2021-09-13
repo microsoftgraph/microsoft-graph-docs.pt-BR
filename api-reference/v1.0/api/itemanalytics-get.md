@@ -2,15 +2,15 @@
 author: daspek
 title: Obter itemAnalytics
 description: Obter itemAnalytics sobre os exibições que ocorreram sob esse recurso.
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 25965acd48ca69b68f0715d9e075a5e71d5d1529
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: 58a1f0fc04885c855c4ccffe78b4d467bd8eab42
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50471681"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59019801"
 ---
 # <a name="get-itemanalytics"></a>Obter itemAnalytics
 

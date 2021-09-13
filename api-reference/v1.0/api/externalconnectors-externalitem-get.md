@@ -2,15 +2,15 @@
 title: Obter externalItem
 description: Leia as propriedades e as relações de um objeto externalItem.
 author: mecampos
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 94ffc4a7e0da4f57553367df1a06ca8638d343f0af97bc5aa5281efdb92df7b1
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: c6c68c73e1a96f4c0ff949100f29081e70452adf
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54219378"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59029595"
 ---
 # <a name="get-externalitem"></a>Obter externalItem
 Namespace: microsoft.graph.externalConnectors
@@ -24,8 +24,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|Não aplicável|
-|Delegado (conta pessoal da Microsoft)|Não aplicável|
+|Delegada (conta corporativa ou de estudante)|Não aplicável|
+|Delegada (conta pessoal da Microsoft)|Não aplicável|
 |Aplicativo| ExternalItem.ReadWrite.OwnedBy, ExternalItem.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP

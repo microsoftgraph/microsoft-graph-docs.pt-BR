@@ -2,14 +2,14 @@
 title: Obter agenda de disponibilidade de usuários e recursos
 description: Em uma configuração de escola ou trabalho, um cenário comum é ver quando um usuário está livre para um reunião, ou então pesquisar a disponibilidade de uma equipe, sala ou equipamento para um período de tempo.
 author: tariq-sharif
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: outlook
-ms.openlocfilehash: 865b67e40dbf11f9e6d4a2d8b0cf92e49353d0257c7605a8fc998d9e134e080f
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 2a7a4fdfb61e5a769836bf8e85b06d1baabe0c63
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54157904"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59139055"
 ---
 # <a name="get-freebusy-schedule-of-users-and-resources"></a>Obter agenda de disponibilidade de usuários e recursos
 

@@ -2,15 +2,15 @@
 title: Personalizando a privacidade das informações do item no Microsoft Graph
 description: A visão geral da personalização de insights de itens no nível da organização
 author: simonhult
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: insights
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 55d045f8318848fa1eabbf677a923d5cbf19ec7174289dc83901fcf725e4dab0
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: b60a0699493e72b70999388b019de773ae9e4677
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54227243"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59136030"
 ---
 # <a name="customizing-item-insights-privacy-in-microsoft-graph-preview"></a>Personalizando a privacidade das informações do item no Microsoft Graph (visualização)
 

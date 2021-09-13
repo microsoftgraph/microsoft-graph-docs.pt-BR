@@ -1,14 +1,14 @@
 ---
 title: Usar os SDKs Graph Microsoft para solicitações em lotes
 description: Fornece instruções para criar um lote de solicitações de API usando o Microsoft Graph SDKs.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: DarrelMiller
-ms.openlocfilehash: d8e44f6ed2c1fe03f81150eb8dbf07140c2da513d9a6d9c192559a56362a8e43
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: a8a1d2b7e4d214edbdef2424539030ab52d46442
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54146150"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59129723"
 ---
 # <a name="use-the-microsoft-graph-sdks-to-batch-requests"></a>Usar os SDKs Graph Microsoft para solicitações em lotes
 

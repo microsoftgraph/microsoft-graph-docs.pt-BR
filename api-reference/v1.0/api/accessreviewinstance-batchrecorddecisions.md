@@ -2,15 +2,15 @@
 title: 'accessReviewInstance: batchRecordDecisions'
 description: Permite que os revisores revisem todos os accessReviewInstanceDecisionItems em lotes.
 author: isabelleatmsft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 8793838a67199a5d5d752e6865c2f8e3c97b262e
-ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
+ms.openlocfilehash: 69ebef36a28629a1d4dabf4d55699c61a12c04b4
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53210616"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59033137"
 ---
 # <a name="accessreviewinstance-batchrecorddecisions"></a>accessReviewInstance: batchRecordDecisions
 Namespace: microsoft.graph
@@ -49,8 +49,8 @@ A tabela a seguir lista as propriedades que você pode usar para revisar [objeto
 
 |Parâmetro|Tipo|Descrição|
 |:---|:---|:---|
-|decision|String|Decisão de acesso para a entidade que está sendo revisada. Os valores possíveis são: `Approve`, `Deny`, `NotReviewed`, `DontKnow`. Obrigatório.|
-|justification|String|Contexto da revisão fornecida aos administradores. Obrigatório se **justificationRequiredOnApproval** da propriedade settings do **accessReviewScheduleDefinition** for `true` .|
+|decision|Cadeia de caracteres|Decisão de acesso para a entidade que está sendo revisada. Os valores possíveis são: `Approve`, `Deny`, `NotReviewed`, `DontKnow`. Obrigatório.|
+|justification|Cadeia de caracteres|Contexto da revisão fornecida aos administradores. Obrigatório se **justificationRequiredOnApproval** da propriedade settings do **accessReviewScheduleDefinition** for `true` .|
 |principalId|String|Se fornecido, todos os **accessReviewInstanceDecisionItems** com valores **principalId** correspondentes serão revisados neste lote. Se não for fornecido, **todos os accessReviewInstanceDecisionItems** serão revisados.|
 |resourceId|Cadeia de caracteres|Se fornecido, todos os **accessReviewInstanceDecisionItems** com **resourceId** correspondentes serão revisados neste lote. Se não for fornecido, **todos os accessReviewInstanceDecisionItems** serão revisados.|
 

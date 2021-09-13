@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: a40ce08d8097df7c78445c53601b9a2074aa2322
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: af58e44f7ea0493bc83e7ae6e141e9d5ce74a79bdc3c2055641c0ddbeb48338d
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50975757"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "57157860"
 ---
 ```java
 

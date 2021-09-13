@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso onlineMeetingInfo
 description: Detalhes para o participante entrar na reunião online.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: ananmishr
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: f2a114ed51217e88cf981208b3b010f82a1524221724c8edf2479efc5758ec25
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 3ff85e6e14f7af23d383d9d19f929deefddeadc7
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54202165"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59071998"
 ---
 # <a name="onlinemeetinginfo-resource-type"></a>Tipo de recurso onlineMeetingInfo
 
@@ -20,12 +20,12 @@ Detalhes para o participante entrar na reunião online.
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|conferenceId|String| A ID da conferência.|
+|conferenceId|Cadeia de caracteres| A ID da conferência.|
 |joinUrl|Cadeia de caracteres| O link externo que inicia a reunião online. Essa é uma URL que os clientes iniciarão em um navegador e redirecionam o usuário para ingressar na reunião.|
 |telefones|Coleção [phone](phone.md)| Todos os números de telefone associados a essa conferência.|
 |quickDial|Cadeia de caracteres| O quickdial pré-formatado para essa chamada.|
-|tollFreeNumbers|Coleção de cadeias de caracteres| Os números gratuitos que podem ser usados para ingressar na conferência.|
-|tollNumber|String| O número de telefone que pode ser usado para ingressar na conferência.|
+|tollFreeNumbers|Coleção String| Os números gratuitos que podem ser usados para ingressar na conferência.|
+|tollNumber|Cadeia de caracteres| O número de telefone que pode ser usado para ingressar na conferência.|
 
 ## <a name="json-representation"></a>Representação JSON
 

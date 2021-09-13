@@ -1,16 +1,16 @@
 ---
 title: Visão geral da API de gráficos e pastas de trabalho do Excel
 description: O Excel é uma ferramenta de produtividade indispensável. Os usuários de todos os setores e funções o usam como uma ferramenta para armazenar, acompanhar e manipular todos os tipos de dados. Ele é usado para tudo, desde de um simples acompanhamento de tarefas e gerenciamento de dados até cálculos complexos e relatórios profissionais. Você pode usar a API REST do Excel no Microsoft Graph para ampliar o valor de seus dados, cálculos, relatórios e painéis.
-localization_priority: Priority
+ms.localizationpriority: high
 author: lumine2008
 ms.prod: excel
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: cc6b456842b7a2256f96f84ab809a4b5d2e2ba3f4b69d8ec18d70cf06af4faa1
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 1380539804bdd4859385cc887a691b89b3e82965
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54129628"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59136107"
 ---
 # <a name="excel-workbooks-and-charts-api-overview"></a>Visão geral da API de gráficos e pastas de trabalho do Excel
 

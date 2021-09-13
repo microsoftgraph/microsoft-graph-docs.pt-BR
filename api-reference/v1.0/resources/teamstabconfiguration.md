@@ -2,15 +2,15 @@
 title: Tipo de recurso teamsTabConfiguration (Tipo Aberto)
 description: As configurações que determinam o conteúdo de uma guia.
 author: nkramer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 7a1af503a2ba4788f22d3c7d7a76b968d1d66c167c3138ef316d056abf2f800b
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 90d9d51cffec818a601e8b7efddb4b77b1c2dc3d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54196484"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59052857"
 ---
 # <a name="teamstabconfiguration-resource-type-open-type"></a>Tipo de recurso teamsTabConfiguration (Tipo Aberto)
 

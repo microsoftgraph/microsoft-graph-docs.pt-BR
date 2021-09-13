@@ -1,16 +1,16 @@
 ---
 title: Atualizar plannerAssignedToTaskBoardTaskFormat
 description: Atualize as propriedades **do objeto plannerAssignedToTaskBoardTaskFormat.**
-localization_priority: Normal
+ms.localizationpriority: medium
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: b8b3c2c1cfe2c415400363e5b8951b5dd8ed1037
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 9a987849e46b34a1c39c1ab278cd75c830fa7067
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52054501"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59037275"
 ---
 # <a name="update-plannerassignedtotaskboardtaskformat"></a>Atualizar plannerAssignedToTaskBoardTaskFormat
 
@@ -32,7 +32,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 PATCH /planner/tasks/{id}/assignedToTaskBoardFormat
 ```
 ## <a name="optional-request-headers"></a>Cabeçalhos de solicitação opcionais
-| Nome       | Descrição|
+| Name       | Descrição|
 |:-----------|:-----------|
 | Autorização  | {token} de portador. Obrigatório. |
 | If-Match  | Último valor de ETag conhecido **para plannerAssignedToTaskBoardTaskFormat** a ser atualizado. Obrigatório.|
@@ -43,7 +43,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |orderHintsByAssignee|[plannerOrderHintsByAssignee](../resources/plannerorderhintsbyassignee.md)|Dicionário de dicas usadas para ordenar tarefas no modo de exibição AssignedTo do Quadro de Tarefas. A chave de cada entrada é um dos usuários aos qual a tarefa é atribuída e o valor é a dica de pedido. O formato de cada valor é definido como descrito [aqui](../resources/planner-order-hint-format.md).|
-|unassignedOrderHint|Cadeia de caracteres|Valor de dica usado para ordenar a tarefa no modo de exibição AssignedTo do Quadro de Tarefas quando a tarefa não é atribuída a ninguém ou se o dicionário orderHintsByAssignee não fornecer uma dica de ordem para o usuário ao qual a tarefa é atribuída. O formato é definido como descrito [aqui](../resources/planner-order-hint-format.md).|
+|unassignedOrderHint|String|Valor de dica usado para ordenar a tarefa no modo de exibição AssignedTo do Quadro de Tarefas quando a tarefa não é atribuída a ninguém ou se o dicionário orderHintsByAssignee não fornecer uma dica de ordem para o usuário ao qual a tarefa é atribuída. O formato é definido como descrito [aqui](../resources/planner-order-hint-format.md).|
 
 ## <a name="response"></a>Resposta
 
@@ -92,7 +92,7 @@ If-Match: W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="
 ---
 
 ##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto de resposta exibido aqui pode ser encurtado para legibilidade.
+Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser reduzido para facilitar a leitura.
 <!-- {
   "blockType": "response",
   "truncated": true,

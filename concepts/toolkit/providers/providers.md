@@ -1,14 +1,14 @@
 ---
 title: Microsoft Graph Toolkit provedores
 description: Os provedores Graph Toolkit Microsoft habilitam a autenticação e o microsoft Graph acesso para todos os componentes.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: nmetulev
-ms.openlocfilehash: 3e64e7c5a9923be0184461ba56c6b6d995a9aad10eda2cdf94fda2b1850b0f8b
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: ec7fd10e37e2382313ae611fee3912110216cfc3
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54204903"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59126552"
 ---
 # <a name="microsoft-graph-toolkit-providers"></a>Microsoft Graph Toolkit provedores
 
@@ -22,11 +22,12 @@ O Toolkit inclui os seguintes provedores.
 
 |Provedores|Descrição|
 |---------|-----------|
-|[Msal](./msal.md)|Usa MSAL.js para entrar em usuários e adquirir tokens para usar com o Microsoft Graph em um aplicativo Web.|
-|[Msal 2.0](./msal2.md)| Usa o msal-browser para entrar em usuários e adquirir tokens para usar com o Microsoft Graph em um aplicativo Web. | 
+|[MSAL](./msal.md)|Usa msal.js para entrar em usuários e adquirir tokens para usar com o Microsoft Graph em um aplicativo Web.|
+|[MSAL2](./msal2.md)| Usa o msal-browser para entrar em usuários e adquirir tokens para usar com o Microsoft Graph em um aplicativo Web. | 
 |[Tron](./electron.md)|Autentica e fornece à Microsoft Graph acesso a componentes dentro dos aplicativos Detron.|
 |[SharePoint](./sharepoint.md)|Autentica e fornece à Microsoft Graph acesso a componentes dentro de SharePoint Web Parts.|
-|[Teams](./teams.md)|Autentica e fornece à Microsoft Graph acesso a componentes dentro Microsoft Teams guias.|
+|[Teams](./teams.md)|Usa msal.js para entrar em usuários e adquirir tokens no cliente em Microsoft Teams guias.|
+|[Teams MSAL2](./teams-msal2.md)|Usa o msal-browser para entrar em usuários e adquirir tokens Microsoft Teams guias. Oferece suporte a Sign-On com back-end personalizado. |
 |[Proxy](./proxy.md)|Permite o uso da autenticação de back-end roteamento de todas as chamadas para a Microsoft Graph seu back-end.|
 |[Personalizados](./custom.md)|Crie um provedor personalizado para habilitar a autenticação e o acesso à Microsoft Graph com o código de autenticação existente do aplicativo.|
 
@@ -36,7 +37,7 @@ Para usar um provedor em seu aplicativo, você precisa inicializar um novo prove
 
 **Opção 1: Usar o componente do provedor**
 
-Você pode usar a versão do componente do provedor diretamente em seu HTML. Nos bastidores, um novo provedor é inicializado e definido como o provedor global. O exemplo a seguir mostra como usar o Msal2Provider.
+Você pode usar a versão do componente do provedor diretamente em seu HTML. Nos bastidores, um novo provedor é inicializado e definido como o provedor global. O exemplo a seguir mostra como usar o provedor MSAL2.
 
 ```HTML
 <script src="https://unpkg.com/@microsoft/mgt/dist/bundle/mgt-loader.js"></script>
@@ -45,7 +46,7 @@ Você pode usar a versão do componente do provedor diretamente em seu HTML. Nos
 
 **Opção 2: Inicializar no código**
 
-Inicializar seu provedor em seu código JavaScript permite que você forneça mais opções. Para fazer isso, crie uma nova instância de provedor e de definir o valor da propriedade para o `Providers.globalProvider` provedor que você gostaria de usar. O exemplo a seguir mostra como usar o Msal2Provider.
+Inicializar seu provedor em seu código JavaScript permite que você forneça mais opções. Para fazer isso, crie uma nova instância de provedor e de definir o valor da propriedade para o `Providers.globalProvider` provedor que você gostaria de usar. O exemplo a seguir mostra como usar o provedor MSAL2.
 
 ```js
 import {Providers, Msal2Provider } from "@microsoft/mgt";
@@ -57,7 +58,7 @@ Providers.globalProvider = new Msal2Provider({
 
 ## <a name="permission-scopes"></a>Escopos de permissão
 
-Recomendamos adicionar todos os escopos de permissão que seu aplicativo precisa ao atributo ou propriedade ao inicializar seu provedor (isso não se aplica ao provedor `scopes` [SharePoint ).](../providers/sharepoint.md) Isso é opcional, mas melhorará a experiência do usuário apresentando uma única tela de consentimento para o usuário com uma lista agregada de permissões solicitadas por todos os componentes em seu aplicativo, em vez de apresentar telas separadas para cada componente. Os exemplos a seguir mostram como fazer isso com o Msal2Provider.
+Recomendamos adicionar todos os escopos de permissão que seu aplicativo precisa ao atributo ou propriedade ao inicializar seu provedor (isso não se aplica ao provedor `scopes` [SharePoint ).](../providers/sharepoint.md) Isso é opcional, mas melhorará a experiência do usuário apresentando uma única tela de consentimento para o usuário com uma lista agregada de permissões solicitadas por todos os componentes em seu aplicativo, em vez de apresentar telas separadas para cada componente. Os exemplos a seguir mostram como fazer isso com o Provedor MSAL2.
 
 ```HTML
 <script src="https://unpkg.com/@microsoft/mgt/dist/bundle/mgt-loader.js"></script>
@@ -161,19 +162,19 @@ graphClient
 
 ## <a name="using-multiple-providers"></a>Usando vários provedores
 
-Em alguns cenários, seu aplicativo será executado em ambientes diferentes e exigirá um provedor diferente para cada um. Por exemplo, o aplicativo pode ser executado como um aplicativo Web e uma guia Microsoft Teams, o que significa que você pode precisar usar o Msal2Provider e o TeamsProvider. Para esse cenário, todos os componentes do provedor têm o atributo para criar uma cadeia `depends-on` de fallback, conforme mostrado no exemplo a seguir.
+Em alguns cenários, seu aplicativo será executado em ambientes diferentes e exigirá um provedor diferente para cada um. Por exemplo, o aplicativo pode ser executado como um aplicativo Web e uma guia Microsoft Teams, o que significa que você pode precisar usar o provedor MSAL2 e o provedor Teams MSAL2. Para esse cenário, todos os componentes do provedor têm o atributo para criar uma cadeia `depends-on` de fallback, conforme mostrado no exemplo a seguir.
 
 ```html
-<mgt-teams-provider
+<mgt-teams-msal2-provider
   client-id="[CLIENT-ID]"
-  auth-popup-url="auth.html" ></mgt-teams-provider>
+  auth-popup-url="auth.html" ></mgt-teams-msal2-provider>
 
 <mgt-msal2-provider
   client-id="[CLIENT-ID]"
   depends-on="mgt-teams-provider" ></mgt-msal2-provider>
 ```
 
-Nesse cenário, o Msal2Provider só será usado se seu aplicativo estiver sendo executado como um aplicativo Web e o TeamsProvider não estiver disponível no ambiente atual.
+Nesse cenário, o provedor MSAL2 só será usado se seu aplicativo estiver em execução como um aplicativo Web e o provedor Teams MSAL2 não estiver disponível no ambiente atual.
 
 Para fazer o mesmo no código, você pode usar a `isAvailable` propriedade no provedor, conforme mostrado.
 
@@ -186,7 +187,7 @@ if (TeamsProvider.isAvailable) {
 ```
 ## <a name="user-loginlogout"></a>Logout/Logout do Usuário
 
-Quando você tem os provedores corretos inicializados para seu aplicativo, você pode adicionar o componente [de Logon](../components/login.md) do Toolkit para implementar logon e logout do usuário de forma fácil e rápida. O componente funciona com o provedor para lidar com toda a lógica de autenticação e a funcionalidade de logout/logout. O exemplo a seguir usa o Msal2Provider e o componente Logon.
+Quando você tem os provedores corretos inicializados para seu aplicativo, você pode adicionar o componente [de Logon](../components/login.md) do Toolkit para implementar logon e logout do usuário de forma fácil e rápida. O componente funciona com o provedor para lidar com toda a lógica de autenticação e a funcionalidade de logout/logout. O exemplo a seguir usa o provedor MSAL2 e o componente logon.
 
 ```HTML
 <script src="https://unpkg.com/@microsoft/mgt/dist/bundle/mgt-loader.js"></script>

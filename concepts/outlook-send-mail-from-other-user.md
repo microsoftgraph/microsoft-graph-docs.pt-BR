@@ -2,15 +2,15 @@
 title: Enviar mensagens do Outlook de outro usuário
 description: Use as permissões enviar como e enviar em nome de para enviar mensagens do Outlook como outro usuário ou a caixa de correio compartilhada no Microsoft Graph.
 author: jasonjoh
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: outlook
 ms.date: 01/16/2019
-ms.openlocfilehash: b87a274288bf2119a9fd6b46d9d300634a00e0c68cdf93c93246d9b7152e13fe
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 0071c85db2d4637c96cc6d6e12047b617f5dfbc0
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54235125"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59071760"
 ---
 # <a name="send-outlook-messages-from-another-user"></a>Enviar mensagens do Outlook de outro usuário
 

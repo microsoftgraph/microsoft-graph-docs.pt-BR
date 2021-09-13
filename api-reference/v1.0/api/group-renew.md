@@ -1,16 +1,16 @@
 ---
 title: 'group: renew'
 description: Renova a expiração de um grupo. Quando um grupo é renovado, a expiração do grupo é estendida pelo número de dias definido na política.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 05fde82e6ae9bc3e3d7662e140605391ab08abdb
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: e0a8817f46a1a2d004ee4bcf9328e506311582a8
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52787762"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59074235"
 ---
 # <a name="group-renew"></a>group: renew
 
@@ -25,7 +25,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Group.ReadWrite.All ou Directory.ReadWrite.All    |
+|Delegada (conta corporativa ou de estudante) | Group.ReadWrite.All ou Directory.ReadWrite.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte |
 |Aplicativo | Group.ReadWrite.All ou Directory.ReadWrite.All |
 

@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso driveItemUploadableProperties
 description: O recurso driveItemUploadableProperties representa um item sendo carregado ao criar uma sessão de carregamento.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: JeremyKelley
 ms.prod: files
 doc_type: resourcePageType
-ms.openlocfilehash: 39a1b68f4584e6c583213a08b203f1e3d5a7a5453b8eb1ad8708c06ef953c0c7
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: bedbdbd67010352c3bc69a743e355efaf0514409
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54182557"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59067462"
 ---
 # <a name="driveitemuploadableproperties-resource-type"></a>Tipo de recurso driveItemUploadableProperties
 

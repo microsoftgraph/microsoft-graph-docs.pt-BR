@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso applicationServicePrincipal
 description: Uma combinação de um aplicativo e um servicePrincipal.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: sureshja
 ms.prod: applications
 doc_type: resourcePageType
-ms.openlocfilehash: b5f864b03461fc21d8283245663786d618a2687f043901e7cb44d9a6df5421ee
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 3c5bafde4452842494f7890b8492b29e42bc8730
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54231884"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59078991"
 ---
 # <a name="applicationserviceprincipal-resource-type"></a>Tipo de recurso applicationServicePrincipal
 
@@ -26,7 +26,7 @@ None
 
 | Propriedade         | Tipo                                                 | Descrição                                                     |
 | :--------------- | :--------------------------------------------------- | :-------------------------------------------------------------- |
-| application      | [application](../resources/application.md)           | Representa um aplicativo registrado no Azure Active Directory. |
+| application      | [aplicativo](../resources/application.md)           | Representa um aplicativo registrado no Azure Active Directory. |
 | servicePrincipal | [servicePrincipal](../resources/serviceprincipal.md) | Representa uma instância de um aplicativo em um diretório.        |
 
 ## <a name="relationships"></a>Relações

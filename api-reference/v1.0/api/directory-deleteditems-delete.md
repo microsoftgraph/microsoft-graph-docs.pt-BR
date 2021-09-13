@@ -2,15 +2,15 @@
 title: Excluir permanentemente um item de itens excluídos
 description: Exclui permanentemente um item de itens excluídos.
 author: keylimesoda
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 090f41ed4f6bc1410dccede72fe432e38320de0a
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 1a2c936997d97bf4e3eba62ea73746c6a06c08d3
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52053206"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59033061"
 ---
 # <a name="permanently-delete-item"></a>Excluir permanentemente item
 
@@ -37,8 +37,8 @@ Para usuários:
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | User.ReadWrite.All, Directory.AccessAsUser.All |
-|Delegado (conta pessoal da Microsoft) | Sem suporte. |
+|Delegada (conta corporativa ou de estudante) | User.ReadWrite.All, Directory.AccessAsUser.All |
+|Delegada (conta pessoal da Microsoft) | Sem suporte. |
 |Aplicativo | Sem suporte. |
 
 O usuário inscreveu precisa ter uma das seguintes funções: *Administrador Global* ou Administrador *de Usuário.*
@@ -47,8 +47,8 @@ Para grupos:
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Group.ReadWrite.All, Directory.AccessAsUser.All |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegada (conta corporativa ou de estudante) | Group.ReadWrite.All, Directory.AccessAsUser.All |
+|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Sem suporte. |
 
 O solicitante precisa ter uma das seguintes funções: *Administrador Global* ou Administrador *de Grupos.*

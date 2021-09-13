@@ -1,14 +1,14 @@
 ---
 title: Personalizar o cliente de serviço do Microsoft Graph SDK
 description: Fornece instruções sobre como alterar o comportamento padrão do cliente de serviço do Microsoft Graph SDK.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: DarrelMiller
-ms.openlocfilehash: c41482fa04ce63ef976c2d9ddb26450dc0fb1f444dcaf98f183332b264b01e50
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 6c98ed668db7dbcd710f95e72f7e965cfc2f9cc6
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54204972"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59098402"
 ---
 # <a name="customize-the-microsoft-graph-sdk-service-client"></a>Personalizar o cliente de serviço do Microsoft Graph SDK
 

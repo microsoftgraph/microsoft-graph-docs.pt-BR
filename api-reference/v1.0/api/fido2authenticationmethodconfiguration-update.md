@@ -2,15 +2,15 @@
 title: Atualizar fido2AuthenticationMethodConfiguration
 description: Atualize as propriedades de um objeto fido2AuthenticationMethodConfiguration.
 author: mmcla
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: d6001f93ef63654aff4e97299e9101f6e5b08865
-ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
+ms.openlocfilehash: 6a5451329209448349b9cb246086ad9b1fe2a755
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51468013"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59045970"
 ---
 # <a name="update-fido2authenticationmethodconfiguration"></a>Atualizar fido2AuthenticationMethodConfiguration
 Namespace: microsoft.graph
@@ -23,7 +23,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
 |Delegada (conta corporativa ou de estudante)|Policy.ReadWrite.AuthenticationMethod|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|Policy.ReadWrite.AuthenticationMethod|
 
 Para cenários delegados, o administrador precisa da função de administrador global. Para obter mais informações, consulte [role](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles).

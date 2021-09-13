@@ -2,15 +2,15 @@
 title: Listar groupLifecyclePolicies
 description: Listar todos os objetos groupLifecyclePolicies.
 author: Jordanndahl
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: fe455bbc16bcec2daddf7d0bf5fc99101d91ac45
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: 67f067d7d5b963f6c47dcbe2bf14955724ff3749
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52679810"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59073986"
 ---
 # <a name="list-grouplifecyclepolicies"></a>Listar groupLifecyclePolicies
 
@@ -25,8 +25,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Directory.Read.All ou Directory.ReadWrite.All |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegada (conta corporativa ou de estudante) | Directory.Read.All ou Directory.ReadWrite.All |
+|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Directory.Read.All ou Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP

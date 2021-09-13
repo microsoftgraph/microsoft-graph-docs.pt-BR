@@ -1,16 +1,16 @@
 ---
 title: Visão geral da API da Pesquisa da Microsoft no Microsoft Graph
 description: Use a API da Pesquisa da Microsoft para indexar conteúdo e adicionar pesquisa ao Office e o conteúdo indexado em seus aplicativos.
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: search
 author: snlraju-msft
 scenarios: getting-started
-ms.openlocfilehash: eadfbc21f3f32fa15953a1a9979b04238191a8627ae48c2f6480dbd398a0e515
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: b936bc0dd26ae3287f0a186d3309cc972a184da4
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54211686"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59129702"
 ---
 # <a name="overview-of-the-microsoft-search-api-in-microsoft-graph"></a>Visão geral da API da Pesquisa da Microsoft no Microsoft Graph
 

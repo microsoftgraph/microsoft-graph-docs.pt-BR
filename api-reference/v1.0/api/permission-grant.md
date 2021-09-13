@@ -2,15 +2,15 @@
 author: learafa
 title: Conceder permissão
 description: Conceder uma lista de usuários acesso para usar o link especificado
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: c388091fd194b2abc6efcfb8ac49b5d932e66c2a
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 35aef77e8f47a1205819d20fd8e401329d1c95ba
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52035278"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59072820"
 ---
 # <a name="permission-grant"></a>permission: grant
 

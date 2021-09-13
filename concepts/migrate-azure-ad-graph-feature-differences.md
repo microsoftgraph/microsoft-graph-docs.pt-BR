@@ -1,21 +1,21 @@
 ---
-title: Diferenças de recursos entre o Azure AD Graph e o Microsoft Graph
-description: Descreve as diferenças de recursos entre Azure Active Directory API (Azure AD) e a API do Microsoft Graph, para ajudar você a migrar aplicativos de forma rápida e fácil.
+title: Diferenças de recursos entre o Azure Active Directory (Azure AD) Graph e o Microsoft Graph
+description: Descreve as diferenças de recursos entre Azure Active Directory (Azure AD) Graph API e a API do Microsoft Graph, para ajudar você a migrar aplicativos de forma rápida e fácil.
 author: dkershaw10
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: applications
-ms.openlocfilehash: aafa0ab718bf050b6575205f702bf81a614b9cac14216d360134166d331ec319
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: a615429eb3887970b00df211f592ec01f2009f23
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54163541"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59139146"
 ---
-# <a name="feature-differences-between-azure-ad-graph-and-microsoft-graph"></a>Diferenças de recursos entre o Azure AD Graph e o Microsoft Graph
+# <a name="feature-differences-between-azure-active-directory-azure-ad-graph-and-microsoft-graph"></a>Diferenças de recursos entre o Azure Active Directory (Azure AD) Graph e o Microsoft Graph
 
 Este artigo faz parte da *etapa 1: analisar as* diferenças de API do processo para [migrar aplicativos.](migrate-azure-ad-graph-planning-checklist.md)
 
-Muitos recursos na Microsoft Graph funcionam de forma semelhante às suas contrapartes do Azure AD Graph. No entanto, alguns foram alterados e/ou melhorados. Aqui, você aprenderá a adaptar seus aplicativos para tirar proveito dessas diferenças.  Frequentemente, as alterações são secundárias, mas vale a pena o esforço.
+Muitos recursos na Microsoft Graph funcionam de forma semelhante às suas contrapartes do Azure AD Graph. No entanto, alguns foram alterados ou aprimorados. Aqui, você aprenderá a adaptar seus aplicativos para tirar proveito dessas diferenças.  Frequentemente, as alterações são secundárias, mas vale a pena o esforço.
 
 Este artigo explora como o Microsoft Graph lida:
 
@@ -28,7 +28,7 @@ Este artigo explora como o Microsoft Graph lida:
 Se seu aplicativo usa extensões de diretório do Azure AD Graph, você pode continuar a usar as mesmas APIs básicas (com URLs de solicitação do Microsoft Graph) para:
 
 - Gerenciar definições de propriedade de extensão usando a propriedade **extensionProperties** no recurso [application][/graph/api/resources/application?view=graph-rest-v1.0).
-- Obter propriedades de extensão disponíveis usando [a ação getAvailableExtensionProperties.](/graph/api/directoryobject-getavailableextensionproperties?view=graph-rest-v1.0)
+- Obter propriedades de extensão disponíveis usando [a ação getAvailableExtensionProperties.](/graph/api/directoryobject-getavailableextensionproperties)
 - Ler valores de extensão usando GET e `$select`
 - Pesquisar valores de extensão usando GET e `$filter`
 - Atualizar valores de extensão usando PATCH
@@ -80,7 +80,7 @@ Se seu aplicativo já estiver armazenar dados de estado, considere usar a "sincr
 
 O Azure AD Graph um sistema chamado mensagens MIME de várias partes para gerenciar o lote.  A Microsoft Graph usa [o lote JSON](json-batching.md) para permitir até 20 solicitações em uma única operação em lotes. O mecanismo de lote JSON é significativamente mais simples de usar, especialmente junto com bibliotecas de análise JSON.  Também permite sequenciar operações em lotes.  No entanto, ele não é compatível com a abordagem de Graph em lotes do Azure AD.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Próximas etapas
 
 - Saiba mais [sobre as diferenças de recursos](migrate-azure-ad-graph-resource-differences.md) entre o Azure AD Graph e o Microsoft Graph.
 - Revise a [lista de verificação](migrate-azure-ad-graph-planning-checklist.md) novamente.

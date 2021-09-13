@@ -1,16 +1,16 @@
 ---
 title: 'orgContact: getMemberObjects'
 description: Retorne todos os grupos dos que esse contato organizacional é membro. A verificação é transitiva.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: dkershaw10
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: a51cd565b363e1fe080f5a1d48de9f51b38d78f7
-ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
+ms.openlocfilehash: ee225b0308614a4066c832804cf941872ba99c9d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50761636"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59007940"
 ---
 # <a name="orgcontact-getmemberobjects"></a>orgContact: getMemberObjects
 
@@ -24,7 +24,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegada (conta corporativa ou de estudante) | OrgContact.Read.All e Group.Read.All, Directory.Read.All  |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | OrgContact.Read.All e Group.Read.All, Directory.Read.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -44,7 +44,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro    | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|securityEnabledOnly|Booliano|Definir como `false` . Há suporte para retornar somente os grupos de segurança habilitados apenas para usuários.|
+|securityEnabledOnly|Boolean|Definido como `false`. Há suporte para retornar somente os grupos de segurança habilitados apenas para usuários.|
 
 ## <a name="response"></a>Resposta
 

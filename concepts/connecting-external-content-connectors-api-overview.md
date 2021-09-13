@@ -2,15 +2,15 @@
 title: Trabalhando com a API de conectores
 description: Visão geral da API de conectores do Microsoft Graph
 author: mecampos
-localization_priority: Priority
+ms.localizationpriority: high
 doc_type: conceptualPageType
 ms.prod: search
-ms.openlocfilehash: 027becb5edeef1823444cdfb471925af238d1b4c275c0a21af10c72c60547419
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: f25330adb27f861017d9b02d6e306ad810ecdd90
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54221100"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59139335"
 ---
 # <a name="working-with-the-connectors-api"></a>Trabalhando com a API de conectores
 

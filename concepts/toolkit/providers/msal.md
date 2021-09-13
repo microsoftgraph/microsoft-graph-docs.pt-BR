@@ -1,20 +1,26 @@
 ---
 title: Provedor MSAL
-description: O provedor MSAL usa MSAL.js para entrar em usuários e adquirir tokens para usar com o microsoft Graph
-localization_priority: Normal
+description: O provedor MSAL usa MSAL.js para entrar em usuários e adquirir tokens para usar com o microsoft Graph.
+ms.localizationpriority: medium
 author: nmetulev
-ms.openlocfilehash: dc994e404767c390011c35f93a6e1a4ee6a9b41fef9dc25d0cddcc4fb25a722a
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 5c9c3d8fc416f08b0386335aa518076e256fe0ad
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54204936"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59143549"
 ---
 # <a name="msal-provider"></a>Provedor MSAL
 
-O provedor MSAL usa [MSAL.js](https://github.com/AzureAD/microsoft-authentication-library-for-js) para entrar em usuários e adquirir tokens para usar com o Microsoft Graph.
+O Provedor MSAL usa [msal.js](https://github.com/AzureAD/microsoft-authentication-library-for-js) para entrar em usuários e adquirir tokens para usar com o Microsoft Graph.
 
 Para saber mais, confira [provedores](./providers.md).
+
+## <a name="difference-between-msal2-provider-and-msal-provider"></a>Diferença entre Provedor MSAL2 e Provedor MSAL
+Embora o uso seja semelhante, o Provedor MSAL e o Provedor MSAL2 são construídos em fluxos OAuth diferentes. O Provedor MSAL é criado msal.js, que implementa o Flow [.](/azure/active-directory/develop/v2-oauth2-implicit-grant-flow) O Provedor MSAL2 é criado com [o msal-browser](https://github.com/AzureAD/microsoft-authentication-library-for-js/tree/dev/lib/msal-browser), que implementa o código de autorização [OAuth](/azure/active-directory/develop/v2-oauth2-auth-code-flow) 2.0 Flow com PKCE.
+Como o código de Flow de autorização é considerado mais seguro do que a concessão implícita Flow aplicativos Web, recomendamos o uso do Provedor MSAL2 em relação ao Provedor MSAL. Para obter detalhes sobre problemas de segurança relacionados ao fluxo de concessão implícito, consulte [Desvantagens do fluxo implícito](https://tools.ietf.org/html/draft-ietf-oauth-browser-based-apps-04#section-9.8.6).
+
+Todos os novos aplicativos devem usar o Provedor MSAL2 sempre que possível. Para obter informações de migração, consulte [Provedor MSAL2](./msal2.md).
 
 ## <a name="get-started"></a>Introdução
 

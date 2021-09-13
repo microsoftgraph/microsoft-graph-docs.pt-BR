@@ -1,16 +1,16 @@
 ---
 title: Lista identityProviders
 description: Obter uma coleção de recursos do provedor de identidade configurados para um locatário e que são derivados de identityProviderBase.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 author: namkedia
 ms.prod: identity-and-sign-in
-ms.openlocfilehash: f121e8ad12345b1a224cfd362b4c23779ac60f5e
-ms.sourcegitcommit: f99dc2b6c8b4cb6f9f74cd780dccc47a2bccfaa6
+ms.openlocfilehash: b83620f6b8dc54f13d776ca22ec6f6650d6285fe
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2021
-ms.locfileid: "58667990"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59045761"
 ---
 # <a name="list-identityproviders"></a>Lista identityProviders
 Namespace: microsoft.graph

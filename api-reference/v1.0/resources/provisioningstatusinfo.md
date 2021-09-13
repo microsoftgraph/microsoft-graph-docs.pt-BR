@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso provisioningStatusInfo
 description: Descreve o status do evento de resumo de provisionamento.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: ArvindHarinder1
 ms.prod: identity-and-access-reports
 doc_type: resourcePageType
-ms.openlocfilehash: 72ffb4db4e6c329e7ae16cdefe0c6067c1cf8e7dbaf8aa59a08b3423f3e09634
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 82b13a700cece9b558ec131f68ea3f79fc0105c2
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54184519"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59052871"
 ---
 # <a name="provisioningstatusinfo-resource-type"></a>Tipo de recurso provisioningStatusInfo
 

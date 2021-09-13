@@ -2,15 +2,15 @@
 title: Atualizar educationAssignmentSettings
 description: Atualize as propriedades de um objeto educationAssignmentSettings.
 author: sharad-sharma-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 7c251885de43022f8e3065c7004dab33d4fa78a8
-ms.sourcegitcommit: 979fe005c74eb99cd971df6b9511b2d3f7fe3cd4
+ms.openlocfilehash: 514a78995215ad1b803e10deeec04c368f0d66af
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52992965"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59074462"
 ---
 # <a name="update-educationassignmentsettings"></a>Atualizar educationAssignmentSettings
 Namespace: microsoft.graph
@@ -22,8 +22,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta corporativa ou de estudante)|EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|Sem suporte.|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -49,7 +49,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao atualizar [edu
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|submissionAnimationDisabled|Boolean|Indica se a animação de celebração de turn-in será mostrada. Um valor `true` indica que a animação não será mostrada. O valor padrão é `false`.|
+|submissionAnimationDisabled|Booliano|Indica se a animação de celebração de turn-in será mostrada. Um valor `true` indica que a animação não será mostrada. O valor padrão é `false`.|
 
 
 

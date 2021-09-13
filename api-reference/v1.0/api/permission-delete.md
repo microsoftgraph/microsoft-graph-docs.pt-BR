@@ -2,16 +2,16 @@
 author: JeremyKelley
 ms.date: 09/10/2017
 title: Remover o acesso a um item
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Remova o acesso a um DriveItem.
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: c21c3685aa2471026e5d7ff9e10e6f84370c4673
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: ffe87066c4a1d99b6458629fcbbc58318585b636
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50945094"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59072838"
 ---
 # <a name="delete-a-sharing-permission-from-a-file-or-folder"></a>Excluir uma permissão de compartilhamento de um arquivo ou pasta
 

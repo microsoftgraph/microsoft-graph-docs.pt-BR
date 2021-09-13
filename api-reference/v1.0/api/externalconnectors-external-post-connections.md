@@ -2,15 +2,15 @@
 title: Criar externalConnection
 description: Crie um novo objeto externalConnection.
 author: mecampos
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 47603c008f94cdf27227e3ae5e6419283d3e3424
-ms.sourcegitcommit: 6efd9df497d795988cd85474f379d1989b0995b7
+ms.openlocfilehash: 30b0719359cce26658357915c6256402a4573169
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58697468"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59022480"
 ---
 # <a name="create-externalconnection"></a>Criar externalConnection
 Namespace: microsoft.graph.externalConnectors
@@ -24,8 +24,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|Não aplicável|
-|Delegado (conta pessoal da Microsoft)|Não aplicável|
+|Delegada (conta corporativa ou de estudante)|Não aplicável|
+|Delegada (conta pessoal da Microsoft)|Não aplicável|
 |Aplicativo| ExternalConnection.ReadWrite.OwnedBy|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -52,7 +52,7 @@ Você pode especificar as seguintes propriedades ao criar [um externalConnection
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|Cadeia de caracteres|A ID da conexão. Obrigatório.|
-|nome|Cadeia de caracteres|O nome da conexão. Obrigatório.|
+|nome|String|O nome da conexão. Obrigatório.|
 |description|Cadeia de caracteres|A descrição da conexão. Obrigatório.|
 |configuração|[microsoft.graph.externalConnectors.configuration](../resources/externalconnectors-configuration.md)|As configurações de conexão. Opcional.|
 

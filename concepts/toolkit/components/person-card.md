@@ -1,14 +1,14 @@
 ---
 title: Person-Card componente no microsoft Graph Toolkit
 description: Um Person-Card é um componente para exibir mais informações relacionadas a uma pessoa.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: vogtn
-ms.openlocfilehash: 5f7232470edc576ae97fa745d4af523ec8f5e5af994b565b12c44667fecb5a8f
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 2b9c1397de586da884166f7d149ff23388e0fa4b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54245356"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59129695"
 ---
 # <a name="person-card-component-in-the-microsoft-graph-toolkit"></a>Person-Card componente no microsoft Graph Toolkit
 
@@ -92,10 +92,10 @@ Por padrão, `mgt-person` o componente passará os detalhes da pessoa para o `mg
 | Atributo         | Tipo                     | Descrição                                                                           |
 | ---------------- | -------------------------------- | ------------------------------------------------------------------------------------- |
 | person-details | MicrosoftGraph.User <br> MicrosoftGraph.Person <br> MicrosoftGraph.Contact | Objeto Person conforme definido pelo Microsoft Graph, contendo detalhes relacionados ao usuário. |
-| person-image   | string                    | Uri de imagem relacionado à pessoa exibida no cartão.                                   |
+| person-image   | cadeia de caracteres                    | Uri de imagem relacionado à pessoa exibida no cartão.                                   |
 | inherit-details   | Nenhum.                  | Permite que o cartão de pessoa ande na árvore pai para `mgt-person` que o componente use os mesmos e os `person-details` `person-image` dados.                      |
-| user-id | string | Permite que os desenvolvedores fornecem a ID do usuário para recuperar dados mostrados no componente person-card |
-| person-query | string | Permite que os desenvolvedores fornecem consulta de pessoa para recuperar dados mostrados no componente person-card |
+| user-id | cadeia de caracteres | Permite que os desenvolvedores fornecem a ID do usuário para recuperar dados mostrados no componente person-card |
+| person-query | cadeia de caracteres | Permite que os desenvolvedores fornecem consulta de pessoa para recuperar dados mostrados no componente person-card |
 
 
 ## <a name="templates"></a>Modelos
@@ -129,13 +129,13 @@ Por exemplo, você pode usar um modelo para personalizar o componente anexado ao
 
 ```
 
-## <a name="events"></a>Eventos
+## <a name="events"></a>Events
 
 Os eventos a seguir são disparados do componente.
 
 Evento | Quando é emitido | Dados personalizados | Cancelável | Bolhas | Funciona com modelo personalizado
 ------|-------------------|--------------|:-----------:|:---------:|:---------------------------:|
-`expanded` | O usuário abriu a seção detalhes expandidos do cartão | Nenhuma | Não | Sim | Sim, a menos que você substitua o modelo padrão
+`expanded` | O usuário abriu a seção detalhes expandidos do cartão | None | Não | Sim | Sim, a menos que você substitua o modelo padrão
 
 Para obter mais informações sobre como lidar com eventos, consulte [eventos](../customize-components/events.md).
 

@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso featureRolloutPolicy
 description: Representa uma política de lançamento de recursos associada a um objeto de diretório.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: madhavpatel6
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 517ee0b3b24b7bde2e651aff704b729798da64a75f3377990c87df2be84f3cec
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: e40682cf794dea6a2102df23a865578b957d77f6
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54146871"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59062723"
 ---
 # <a name="featurerolloutpolicy-resource-type"></a>Tipo de recurso featureRolloutPolicy
 
@@ -65,7 +65,7 @@ A seguir estão os pré-requisitos para cada um dos recursos atualmente suportad
 |displayName|String|O nome de exibição dessa política de lançamento de recursos.|
 |feature|stagedFeatureName| Os valores possíveis são: `passthroughAuthentication`, `seamlessSso`, `passwordHashSync`, `emailAsAlternateId`, `unknownFutureValue`.|
 |id|String| Somente leitura.|
-|isAppliedToOrganization|Booliano|Indica se essa política de lançamento de recursos deve ser aplicada a toda a organização.|
+|isAppliedToOrganization|Boolean|Indica se essa política de lançamento de recursos deve ser aplicada a toda a organização.|
 |isEnabled|Booliano|Indica se a adoção de recursos está habilitada.|
 
 ### <a name="stagedfeaturename-values"></a>valores stagedFeatureName 

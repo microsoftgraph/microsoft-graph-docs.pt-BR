@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso educationResource
 description: Uma superclasse para todos os objetos de recurso no sistema.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: mmast-msft
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: d496223743334ebd660664489f388250d207b212d82ac9e0a94fa48bb710ce6b
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: e13ce13fd6bba8a67b1b10103d0c5225736b8360
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54252030"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59036603"
 ---
 # <a name="educationresource-resource-type"></a>Tipo de recurso educationResource
 

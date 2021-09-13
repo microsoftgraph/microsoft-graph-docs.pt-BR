@@ -2,15 +2,15 @@
 title: Criar roleAssignment
 description: Criar um novo objeto roleAssignment.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 8a8f1a194714732f47cd827a85230bea7ae9acfd591c8626d19417c72d81534f
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: d7d8918805b0443e3ddcfecfc1c7d0712a69ed01
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54208997"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59079572"
 ---
 # <a name="create-roleassignment"></a>Criar roleAssignment
 
@@ -25,8 +25,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|DeviceManagementRBAC.ReadWrite.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta corporativa ou de estudante)|DeviceManagementRBAC.ReadWrite.All|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|DeviceManagementRBAC.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -51,8 +51,8 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar roleAssi
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Chave da entidade. É somente leitura e gerada automaticamente.|
-|displayName|Cadeia de caracteres|O nome de exibição ou nome amigável da atribuição de função.|
+|id|String|Chave da entidade. É somente leitura e gerada automaticamente.|
+|displayName|String|O nome de exibição ou nome amigável da atribuição de função.|
 |description|Cadeia de caracteres|Descrição da atribuição de função.|
 |resourceScopes|Coleção de cadeias de caracteres|Lista de IDs de grupos de segurança de membros de escopo da função.  Estas são as IDs do Azure Active Directory.|
 

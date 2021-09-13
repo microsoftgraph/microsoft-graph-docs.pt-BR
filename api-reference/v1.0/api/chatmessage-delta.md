@@ -1,16 +1,16 @@
 ---
 title: 'chatMessage: delta'
 description: Recupere a lista de mensagens (sem as respostas) em um canal de uma equipe. Usando a consulta Delta, você pode obter mensagens novas ou atualizadas em um canal.
-localization_priority: Priority
+ms.localizationpriority: high
 doc_type: apiPageType
 author: RamjotSingh
 ms.prod: microsoft-teams
-ms.openlocfilehash: ec91b75edb44f9c81ff420226bf9ebf984d002be
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 7e0789806ecca5e3677d54da875a46bf8e8ba94f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52052464"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59022888"
 ---
 # <a name="chatmessage-delta"></a>chatMessage: delta
 

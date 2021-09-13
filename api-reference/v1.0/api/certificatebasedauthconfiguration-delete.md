@@ -1,16 +1,16 @@
 ---
 title: Excluir certificateBasedAuthConfiguration
 description: Exclua certificateBasedAuthConfiguration.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: adimitui
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: d4ae573fe7ef62dc673cbdab4d1f9df831a3f894
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: d0c1455660aa985653bd92bfcc80c61e55cf881a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50434843"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59056886"
 ---
 # <a name="delete-certificatebasedauthconfiguration"></a>Excluir certificateBasedAuthConfiguration
 
@@ -24,8 +24,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | Organization.ReadWrite.All |
-| Delegado (conta pessoal da Microsoft) | Sem suporte. |
+| Delegada (conta corporativa ou de estudante)     | Organization.ReadWrite.All |
+| Delegada (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo    | Organization.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP

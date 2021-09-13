@@ -1,16 +1,16 @@
 ---
 title: Restaura uma versão anterior de um ListItem
 description: Restaura uma versão anterior de um ListItem para ser a versão atual. Isso criará uma nova versão com o conteúdo da versão anterior, mas preservará todas as versões existentes do item.
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: sharepoint
 author: JeremyKelley
 doc_type: apiPageType
-ms.openlocfilehash: b21a149ced03ed75589c5995fae283413fe107bb
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 65bbd32e92428dc3f33a06c077486135c75e5727
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48033129"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59045081"
 ---
 # <a name="restore-a-previous-version-of-a-listitem"></a>Restaura uma versão anterior de um ListItem
 
@@ -24,7 +24,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |            Tipo de permissão             |         Permissões (da com menos para a com mais privilégios)          |
 | :------------------------------------- | :----------------------------------------------------------- |
-| Delegado (conta corporativa ou de estudante)     | Sites.ReadWrite.All, Sites.Manage.All, Sites.FullControl.All |
+| Delegada (conta corporativa ou de estudante)     | Sites.ReadWrite.All, Sites.Manage.All, Sites.FullControl.All |
 | Delegada (conta pessoal da Microsoft) | n/d                                                          |
 | Aplicativo                            | Sites.ReadWrite.All, Sites.Manage.All, Sites.FullControl.All |
 

@@ -2,15 +2,15 @@
 title: Criar managedDevice
 description: Criar um novo objeto managedDevice.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ce12430cbefedb0c5cf8728284e677916f792679
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 3632035ddf548f4f2bc518edfdfcbf0b1a4ea6c4
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58260254"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59029462"
 ---
 # <a name="create-manageddevice"></a>Criar managedDevice
 
@@ -53,7 +53,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar managedD
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Identificador exclusivo do dispositivo. Essa propriedade é somente leitura.|
+|id|String|Identificador exclusivo do dispositivo. Essa propriedade é somente leitura.|
 |userId|Cadeia de caracteres|Identificador exclusivo do usuário associado ao dispositivo. Essa propriedade é somente leitura.|
 |deviceName|String|Nome do dispositivo. Essa propriedade é somente leitura.|
 |managedDeviceOwnerType|[managedDeviceOwnerType](../resources/intune-devices-manageddeviceownertype.md)|Propriedade do dispositivo. Pode ser "empresa" ou "pessoal". Os valores possíveis são: `unknown`, `company`, `personal`.|
@@ -82,7 +82,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar managedD
 |remoteAssistanceSessionUrl|String|A URL que permite que uma sessão de assistência remota seja estabelecida com o dispositivo. Essa propriedade é somente leitura.|
 |remoteAssistanceSessionErrorDetails|String|Uma cadeia de caracteres de erro que identifica problemas durante a criação de objetos de sessão de Assistência remota. Essa propriedade é somente leitura.|
 |isEncrypted|Boolean|Status da criptografia do dispositivo. Essa propriedade é somente leitura.|
-|userPrincipalName|Cadeia de caracteres|Nome principal do usuário do dispositivo. Essa propriedade é somente leitura.|
+|userPrincipalName|String|Nome principal do usuário do dispositivo. Essa propriedade é somente leitura.|
 |modelo|String|Modelo do dispositivo. Essa propriedade é somente leitura.|
 |fabricante|String|Fabricante do dispositivo. Essa propriedade é somente leitura.|
 |imei|String|IMEI. Essa propriedade é somente leitura.|

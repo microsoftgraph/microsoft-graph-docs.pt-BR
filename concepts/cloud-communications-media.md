@@ -2,14 +2,14 @@
 title: Visão geral da mídia
 description: Habilita seus bots a enviar e receber conteúdo relacionado a áudio e vídeo.
 author: ananmishr
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-communications
-ms.openlocfilehash: d35d41b50777d6191721a234a3b233b985a4ecf045f22441aa8210bbd4eeafc7
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 591666da1233045800b9814965daf0b165eb23be
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54246485"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59136170"
 ---
 # <a name="media-overview"></a>Visão geral da mídia
 

@@ -2,15 +2,15 @@
 title: Listar calendários
 description: Recupera uma lista de calendários que pertencem a um grupo de calendários.
 author: harini84
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 9028a98b9d324e69e3e36fbe50669da6ad78b846
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: a2b9ef019336422f0e5e54cde2645338f5452260
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52052499"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59038438"
 ---
 # <a name="list-calendars"></a>Listar calendários
 
@@ -101,7 +101,7 @@ GET https://graph.microsoft.com/v1.0/me/calendarGroups/{id}/calendars
 
 ##### <a name="response"></a>Resposta
 
-Veja a seguir um exemplo da resposta. Observação: o objeto de resposta exibido aqui pode ser encurtado para legibilidade.
+Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser reduzido para facilitar a leitura.
 
 <!-- {
   "blockType": "response",

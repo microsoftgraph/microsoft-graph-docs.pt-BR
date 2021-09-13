@@ -1,16 +1,16 @@
 ---
 title: Obter offerShiftRequest
 description: Recupere as propriedades e as relações de um objeto offerShiftRequest.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 8b02d3bb5a9a228c2fa6f53c3243fc5bcc7de5a8
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: eb2248de856089cc12493b29ae784cc0ab85c8d7
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52050413"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59050219"
 ---
 # <a name="get-offershiftrequest"></a>Obter offerShiftRequest
 
@@ -24,8 +24,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | Schedule.Read.All, Group.Read.All, Schedule.ReadWrite.All, Group.ReadWrite.All |
-| Delegado (conta pessoal da Microsoft) | Sem suporte. |
+| Delegada (conta corporativa ou de estudante)     | Schedule.Read.All, Group.Read.All, Schedule.ReadWrite.All, Group.ReadWrite.All |
+| Delegada (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo                            | Schedule.Read.All, Schedule.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP

@@ -1,15 +1,15 @@
 ---
 title: Usar funções de pasta de trabalho do Excel com o Microsoft Graph
 description: 'Você pode usar qualquer função de pasta de trabalho com a seguinte sintaxe: `POST /me/drive/root/workbook/functions/{function-name}`. Forneça o(s) argumento(s) de função no corpo usando um objeto JSON. O `value` resultante da função e quaisquer cadeias de caracteres `error` são retornados no objeto de resultado da função. O valor `error` de `null` indica a execução bem-sucedida da função.'
-localization_priority: Normal
+ms.localizationpriority: medium
 author: lumine2008
 ms.prod: excel
-ms.openlocfilehash: 39b93c633951ffe8997a66132a830673459776963d5d537c61aa67fb29a41fe0
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 629f0d79503b89080c48c57ec83989060f794647
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54205155"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59143577"
 ---
 # <a name="use-workbook-functions-in-excel-with-microsoft-graph"></a>Usar funções de pasta de trabalho do Excel com o Microsoft Graph
 

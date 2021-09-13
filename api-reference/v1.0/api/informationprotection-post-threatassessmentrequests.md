@@ -1,16 +1,16 @@
 ---
 title: Create threatAssessmentRequest
 description: Crie uma nova solicitação de avaliação de ameaças.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: hafen-ms
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: 1ea4675dfdfebdee938421908e9f89c8f7be48fb
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 1cba4cb10f2783e1cfff179d092500c162ab6890
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52053052"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59053641"
 ---
 # <a name="create-threatassessmentrequest"></a>Create threatAssessmentRequest
 
@@ -29,8 +29,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | ThreatAssessment.ReadWrite.All             |
-| Delegado (conta pessoal da Microsoft) | Sem suporte.                              |
+| Delegada (conta corporativa ou de estudante)     | ThreatAssessment.ReadWrite.All             |
+| Delegada (conta pessoal da Microsoft) | Sem suporte.                              |
 | Aplicativo                            | Sem suporte.                              |
 
 ## <a name="http-request"></a>Solicitação HTTP

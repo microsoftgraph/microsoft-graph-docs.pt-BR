@@ -1,14 +1,14 @@
 ---
 title: Modelos no Microsoft Graph Toolkit
 description: Use modelos personalizados para modificar o conteúdo de um componente.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: nmetulev
-ms.openlocfilehash: cf8297e5e0f70ee1014c11a3ecbfc10ed5cc0e0aa1e15c7f2bb7239545c9105e
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 93b595e3e8111d0a51c9c049cbf153bd287472f7
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54231373"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59044220"
 ---
 # <a name="templates-in-the-microsoft-graph-toolkit"></a>Modelos no Microsoft Graph Toolkit
 

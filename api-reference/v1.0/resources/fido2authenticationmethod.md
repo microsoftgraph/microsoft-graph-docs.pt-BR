@@ -2,15 +2,15 @@
 title: Tipo de recurso fido2AuthenticationMethod
 description: Uma representação de uma chave de segurança FIDO2 registrada em um usuário. FIDO2 é um método de autenticação de login.
 author: mmcla
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 49e2d2c70596910494b526b3dd92e0f3ed157802a7789c68d543bc044518ceaf
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 8af931dba72daba05c8c548cc53d130d6f3f182b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54152751"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59062716"
 ---
 # <a name="fido2authenticationmethod-resource-type"></a>Tipo de recurso fido2AuthenticationMethod
 
@@ -29,12 +29,12 @@ Uma representação de uma chave de segurança FIDO2 registrada em um usuário. 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|O identificador do método de autenticação.|
+|id|String|O identificador do método de autenticação.|
 |displayName|Cadeia de caracteres|O nome de exibição da chave conforme dado pelo usuário.|
 |createdDateTime|DateTimeOffset|O timestamp quando essa chave foi registrada para o usuário.|
-|aaGuid|String|Authenticator GUID de atestado, um identificador que indica o tipo (por exemplo, make e model) do autenticador.|
+|aaGuid|Cadeia de caracteres|Authenticator GUID de atestado, um identificador que indica o tipo (por exemplo, make e model) do autenticador.|
 |modelo|String|O modelo atribuído pelo fabricante da chave de segurança FIDO2.|
-|attestationCertificates|Coleção de cadeias de caracteres|Os certificados de atestado anexados a essa chave de segurança.|
+|attestationCertificates|Coleção String|Os certificados de atestado anexados a essa chave de segurança.|
 |attestationLevel|attestationLevel|O nível de atestado dessa chave de segurança FIDO2. Os valores possíveis são: `attested` , ou `notAttested` .|
 
 

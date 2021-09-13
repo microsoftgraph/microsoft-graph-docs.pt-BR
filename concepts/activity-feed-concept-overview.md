@@ -1,14 +1,14 @@
 ---
 title: Usar a API do feed de atividades no Microsoft Graph para habilitar experiências entre dispositivos
 description: Quando você usa atividades, essas experiências da Microsoft podem começar a gerar interações com seu aplicativo. Você também pode exibir as atividades nos seus aplicativos para ajudar os usuários retomarem o que estavam fazendo em qualquer dispositivo e qualquer plataforma, incluindo Windows, Android e iOS.
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: project-rome
-ms.openlocfilehash: c447d91aa981b729372cb9e4b790b5b03de756bd08f493e00f7acd1c46ba2eff
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 4e820a4aeb5e99de709a1cb7d9f40bd5c38c200c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54182298"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59136205"
 ---
 # <a name="using-the-activity-feed-api-in-microsoft-graph-to-enable-cross-device-experiences"></a>Usar a API do feed de atividades no Microsoft Graph para habilitar experiências entre dispositivos
 

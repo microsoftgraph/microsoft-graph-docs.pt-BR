@@ -2,15 +2,15 @@
 author: daspek
 title: Tipo de recurso restoreAction
 description: O objeto RestoreAction fornece informações sobre uma atividade que restaurou um item.
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 8052c32952a0e7bc390062ec312e76b77c2c05d1c2c33e39e67b582f50567fe6
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 861b25a4156130278872f7d4f107dc631b5687a6
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54177986"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59044255"
 ---
 # <a name="restoreaction-resource-type"></a>Tipo de recurso restoreAction
 

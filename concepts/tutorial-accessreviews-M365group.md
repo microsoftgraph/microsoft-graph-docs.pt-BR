@@ -2,14 +2,14 @@
 title: 'Tutorial: use a API de críticas de acesso para revisar o acesso de convidados aos grupos Microsoft 365 seus clientes'
 description: Use a API de críticas de acesso para revisar o acesso de convidados aos grupos Microsoft 365 de convidados
 author: FaithOmbongi
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: governance
-ms.openlocfilehash: e27f8d8967bd9d3148759e692f3734e5c6018e54a01897d8d4a981c11bf8eabc
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 7aab1a64f4bcd3d5f58a3a14e872098047cb3c00
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54186794"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59126510"
 ---
 # <a name="tutorial-use-the-access-reviews-api-to-review-guest-access-to-your-microsoft-365-groups"></a>Tutorial: use a API de críticas de acesso para revisar o acesso de convidados aos grupos Microsoft 365 seus clientes
 

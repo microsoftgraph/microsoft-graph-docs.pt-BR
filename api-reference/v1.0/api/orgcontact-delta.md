@@ -1,16 +1,16 @@
 ---
 title: 'orgContact: delta'
 description: Obter contatos organizacionais recém-criados, atualizados ou excluídos sem precisar executar uma leitura completa de toda a coleção.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: dkershaw10
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: d970701c23cdd065c6eb5976d7f55111d0d932da
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 888252dd014fa2217699a4b271215c94bc7bcb42
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52051323"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59022097"
 ---
 # <a name="orgcontact-delta"></a>orgContact: delta
 
@@ -25,8 +25,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | OrgContact.Read.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.  |
+|Delegada (conta corporativa ou de estudante) | OrgContact.Read.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Delegada (conta pessoal da Microsoft) | Sem suporte.  |
 |Aplicativo | OrgContact.Read.All, Directory.Read.All, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -48,7 +48,7 @@ Em solicitações subsequentes, copie e aplique `nextLink` a URL ou da resposta 
 
 | Parâmetro de consulta      | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-| $deltatoken | string | Um [token de estado](/graph/delta-query-overview) retornado na URL da chamada de função delta anterior para a mesma coleção de contatos da organização, indicando a conclusão dessa rodada de controle de `deltaLink` alterações.  Salve e aplique a URL inteira, incluindo esse token, na primeira solicitação da próxima rodada de controle `deltaLink` de alterações para essa coleção.|
+| $deltatoken | cadeia de caracteres | Um [token de estado](/graph/delta-query-overview) retornado na URL da chamada de função delta anterior para a mesma coleção de contatos da organização, indicando a conclusão dessa rodada de controle de `deltaLink` alterações.  Salve e aplique a URL inteira, incluindo esse token, na primeira solicitação da próxima rodada de controle `deltaLink` de alterações para essa coleção.|
 | $skiptoken | string | Um [token de estado](/graph/delta-query-overview) retornado na URL da chamada de função delta anterior, indicando que há outras alterações a serem controladas na mesma coleção `nextLink` de contatos da organização.  |
 
 ### <a name="odata-query-parameters"></a>Parâmetros de consulta OData

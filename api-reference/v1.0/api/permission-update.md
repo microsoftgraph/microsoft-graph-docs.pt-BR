@@ -2,16 +2,16 @@
 author: JeremyKelley
 ms.date: 09/10/2017
 title: Alterar permissões de compartilhamento
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Atualiza as propriedades de permissão de compartilhamento pela correção do recurso de permissão.
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: 1c3b8c4fdd9b0306aef909525c87facde6bdc6de
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: 60d59547d77d30c9be267cf2d880a8c4f3917e78
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50240378"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59072822"
 ---
 # <a name="update-sharing-permission"></a>Atualizar a permissão de compartilhamento
 
@@ -45,7 +45,7 @@ PATCH /users/{user-id}/drive/items/{item-id}/permissions/{perm-id}
 
 ## <a name="optional-request-headers"></a>Cabeçalhos de solicitação opcionais
 
-| Nome          | Tipo   | Descrição                                                                                                                                                                                       |
+| Name          | Tipo   | Descrição                                                                                                                                                                                       |
 |:--------------|:-------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | if-match      | string | Se este cabeçalho de solicitação estiver incluso e a eTag (ou cTag) fornecida não corresponder à marca atual no item, uma resposta `412 Precondition Failed` é exibida e o item não será excluído. |
 
@@ -60,8 +60,8 @@ As propriedades a seguir nesses tipos de permissão podem ser modificadas.
 
 | Tipo de permissão        | Propriedade | Tipo              | Descrição                   |
 |:-----------------------|:---------|:------------------|:------------------------------|
-| Usuário                   | funções    | Coleção de cadeias de caracteres | Uma matriz de tipos de permissão. |
-| Link de compartilhamento anônimo | expirationDateTime | DateTimeOffset | Um formato de yyyy-MM-ddTHH:mm:ssZ de DateTimeOffset para o tempo de expiração da permissão. |
+| User                   | funções    | Coleção de cadeias de caracteres | Uma matriz de tipos de permissão. |
+| Link de Compartilhamento Anônimo | expirationDateTime | DateTimeOffset | Um formato de yyyy-MM-ddTHH:mm:ssZ de DateTimeOffset para o tempo de expiração da permissão. |
 
 ### <a name="remarks"></a>Comentários
 As modificações de permissão sem suporte incluem o seguinte:
@@ -131,7 +131,7 @@ Content-type: application/json
 
 ## <a name="error-responses"></a>Respostas de erro
 
-Veja mais informações sobre como os erros são retornados no tópico [Respostas de erro][error-response].
+Leia o tópico [Respostas de Erro][error-response] para obter mais informações sobre como os erros são retornados.
 
 [error-response]: /graph/errors
 

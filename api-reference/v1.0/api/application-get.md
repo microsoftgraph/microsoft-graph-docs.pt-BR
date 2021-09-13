@@ -2,15 +2,15 @@
 title: Obter aplicativo
 description: Obtenha as propriedades e os relacionamentos de um objeto application.
 author: sureshja
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: b5dcf3845e8477f5b3795b481b97cfad988e09c9
-ms.sourcegitcommit: 4888ac7504533344c4fc6828e2a06a002a1d72d3
+ms.openlocfilehash: f6b8332b072fa29feabf60083712086990ade28b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "53351304"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59023049"
 ---
 # <a name="get-application"></a>Obter aplicativo
 

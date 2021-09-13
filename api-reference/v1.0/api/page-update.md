@@ -1,16 +1,16 @@
 ---
 title: Atualizar página
 description: Atualize o conteúdo de uma OneNote página.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: jewan-microsoft
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: 846461d1415d3748059a0c93fe5dc0866dccdc4e
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 9f40dbaca37d50873bfb22564dbefdaa77f8e91b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52788056"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59045011"
 ---
 # <a name="update-page"></a>Atualizar página
 
@@ -22,8 +22,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Notes.ReadWrite, Notes.ReadWrite.All    |
-|Delegado (conta pessoal da Microsoft) | Notes.ReadWrite    |
+|Delegada (conta corporativa ou de estudante) | Notes.ReadWrite, Notes.ReadWrite.All    |
+|Delegada (conta pessoal da Microsoft) | Notes.ReadWrite    |
 |Aplicativo | Notes.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -45,7 +45,7 @@ No corpo da solicitação, fornece uma matriz de [objetos patchContentCommand](.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta `204 No Content`.  Nenhum dado JSON é retornado para uma solicitação PATCH.
+Se bem-sucedido, este método retorna um código de resposta `204 No Content`.  Nenhum dado JSON é retornado para uma solicitação PATCH.
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.

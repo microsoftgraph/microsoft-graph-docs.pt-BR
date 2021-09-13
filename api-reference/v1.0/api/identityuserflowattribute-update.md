@@ -1,16 +1,16 @@
 ---
 title: Atualizar identityUserFlowAttribute
 description: Atualizar propriedades de uma identityUserFlowAttribute.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 author: jkdouglas
 ms.prod: identity-and-sign-in
-ms.openlocfilehash: 35eb1ceae69d2118187b48e91f395f042bbf0c3c
-ms.sourcegitcommit: 32c83957ee69f21a10cd5f759adb884ce4b41c52
+ms.openlocfilehash: a402fb254ca4cd98a8aa3f8be8ec7e27c3fc9d5a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51920802"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59045683"
 ---
 # <a name="update-identityuserflowattribute"></a>Atualizar identityUserFlowAttribute
 
@@ -26,12 +26,12 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegada (conta corporativa ou de estudante)|IdentityUserFlow.ReadWrite.All|
 |Delegada (conta pessoal da Microsoft)| Sem suporte.|
-|Application| IdentityUserFlow.ReadWrite.All|
+|Aplicativo| IdentityUserFlow.ReadWrite.All|
 
 A conta de trabalho ou de estudante precisa pertencer a uma das seguintes funções:
 
 * Administrador global
-* Administrador de Atributos de Fluxo de Usuário de Identidade Externa
+* Administrador de atributos do usuário de identidade externa Flow identidade externa
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -56,7 +56,7 @@ No corpo da solicitação, forneça um objeto JSON com uma ou mais propriedades 
 
 |Propriedade|Tipo|Descrição|
 |:---------------|:--------|:----------|
-|description|String|A descrição do atributo de fluxo do usuário. Ele é mostrado ao usuário no momento da assinatura.|
+|description|Cadeia de caracteres|A descrição do atributo de fluxo do usuário. Ele é mostrado ao usuário no momento da assinatura.|
 
 ## <a name="response"></a>Resposta
 

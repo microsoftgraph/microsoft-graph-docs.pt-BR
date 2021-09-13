@@ -2,15 +2,15 @@
 title: Atualizar groupLifecyclePolicy
 description: Atualiza as propriedades de um objeto do tipo de recurso groupLifecyclePolicy.
 author: Jordanndahl
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 9ef9248df8f3f43e2fcad5e49788675a5e04aa27
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: fcfb2da1ade461016a375c7545cdb9e7f3bc125a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52679789"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59073951"
 ---
 # <a name="update-grouplifecyclepolicy"></a>Atualizar groupLifecyclePolicy
 
@@ -24,8 +24,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
  
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Directory.ReadWrite.All    |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegada (conta corporativa ou de estudante) | Directory.ReadWrite.All    |
+|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -34,7 +34,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 PATCH /groupLifecyclePolicies/{id}
 ```
 ## <a name="optional-request-headers"></a>Cabeçalhos de solicitação opcionais
-| Nome | Descrição |
+| Name | Descrição |
 |:-----------|:-----------|
 | Autorização | {token} de portador. Obrigatório. |
 | Content-Type  | application/json  |

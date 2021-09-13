@@ -2,15 +2,15 @@
 title: Listar tendências
 description: Insights calculados que retornam a lista de itens de tendências do usuário.
 author: simonhult
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: insights
 doc_type: apiPageType
-ms.openlocfilehash: db5392cebe5762fb0e77f92860d0f2633c96c8712536f5d0a86d32909caed394
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 6dcc77bc0b92870986bbff201979a1bfac04330c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54187382"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59016587"
 ---
 # <a name="list-trending"></a>Listar tendências
 
@@ -25,7 +25,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | Sites.Read.All, Sites.ReadWrite.All    |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Sites.Read.All, Sites.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -77,7 +77,7 @@ Este é um exemplo da solicitação.
 GET https://graph.microsoft.com/v1.0/me/insights/trending
 ```
 #### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto de resposta exibido aqui pode ser encurtado para legibilidade. Consulte um exemplo de resposta não truncada na parte inferior da página.
+Veja a seguir um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade. Consulte um exemplo de resposta não truncada na parte inferior da página.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
