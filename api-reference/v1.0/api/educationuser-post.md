@@ -2,15 +2,15 @@
 title: Criar educationUser
 description: Crie um novo objeto educationUser.
 author: mlafleur
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: b26e0530fd4beea6d2f604fa46f891e154fefa61
-ms.sourcegitcommit: 34891a1c601976166958be1aa04bab5936592b44
+ms.openlocfilehash: 9ee99053863896e5ec063a1a5f477a4e1fdfd7c5
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52232144"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59100202"
 ---
 # <a name="create-educationuser"></a>Criar educationUser
 
@@ -59,10 +59,10 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [educati
 | assignedPlans        | Coleção [assignedPlan](../resources/assignedplan.md)            | Os planos que são atribuídos ao usuário. Somente leitura. Não anulável.                                                                                                                                                                                                                                                                                           |
 | businessPhones       | Coleção de cadeias de caracteres                                                  | Números de telefone para o usuário. **Observação:** embora essa seja uma coleção de cadeias de caracteres, somente um número pode ser definido para essa propriedade.                                                                                                                                                                                                                           |
 | createdBy            | [identitySet](../resources/identityset.md)                         | Entidade que criou o usuário.                                                                                                                                                                                                                                                                                                                                |
-| department           | String                                                             | O nome do departamento no qual o usuário trabalha. Oferece suporte a $filter.                                                                                                                                                                                                                                                                                      |
+| departamento           | String                                                             | O nome do departamento no qual o usuário trabalha. Oferece suporte a $filter.                                                                                                                                                                                                                                                                                      |
 | displayName          | String                                                             | O nome exibido para o usuário no catálogo de endereços. Geralmente é a combinação do nome, da inicial do nome do meio e do sobrenome do usuário. Essa propriedade é obrigatória quando um usuário é criado e não pode ser apagado durante atualizações. Oferece suporte a $filter e $orderby.                                                                                      |
 | externalSource       | educationExternalSource                                            | De onde esse usuário foi criado. Os valores possíveis são: `sis` e `manual`.                                                                                                                                                                                                                                                                                     |
-| externalSourceDetail | String                                                             | O nome da fonte externa de onde esses recursos foram gerados.                                                                                                                                                                                                                                                                                          |
+| externalSourceDetail | Cadeia de caracteres                                                             | O nome da fonte externa de onde esses recursos foram gerados.                                                                                                                                                                                                                                                                                          |
 | givenName            | String                                                             | O nome fornecido (nome) do usuário. Oferece suporte a $filter.                                                                                                                                                                                                                                                                                                  |
 | email                 | String                                                             | O endereço SMTP do usuário, por exemplo, "jeff@contoso.onmicrosoft.com". Somente Leitura. Oferece suporte a $filter.                                                                                                                                                                                                                                                    |
 | mailingAddress       | [physicalAddress](../resources/physicaladdress.md)                 | Endereço de email do usuário.                                                                                                                                                                                                                                                                                                                                       |
@@ -91,6 +91,8 @@ Se bem-sucedido, esse método retornará um código de resposta `201 Created` e 
 
 ### <a name="request"></a>Solicitação
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_educationuser_from_"
@@ -165,6 +167,24 @@ Content-length: 1585
   }
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-educationuser-from--csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-educationuser-from--javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-educationuser-from--objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-educationuser-from--java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>Resposta
 

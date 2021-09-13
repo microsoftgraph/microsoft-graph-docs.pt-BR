@@ -2,14 +2,14 @@
 title: Perguntas frequentes sobre a Conexão de Dados do Microsoft Graph
 description: Obtenha dicas que o ajudarão a aproveitar as vantagens da Conexão de Dados do Microsoft Graph.
 author: fercobo-msft
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: data-connect
-ms.openlocfilehash: fbb1feaa3710961991e34fa983ffe05af3dc2df8aa53fbded20532cbcd7f4cbf
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 08a88e86850e2ca82f5f8eac46f74b7edec72d3f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54141172"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59139195"
 ---
 # <a name="microsoft-graph-data-connect-frequently-asked-questions"></a>Perguntas frequentes sobre a Conexão de Dados do Microsoft Graph
 

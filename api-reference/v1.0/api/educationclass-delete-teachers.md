@@ -2,15 +2,15 @@
 title: 'Remover professor do educationClass '
 description: Remova um professor de uma aula.
 author: mmast-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: fa58d3f20e73b603e4a04c2da204870d0b7a10e0
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 6d632f0fc7105936251160156ca8cc9f06a02ec8
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52783684"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59105360"
 ---
 # <a name="remove-teacher-from-educationclass"></a>Remover professor do educationClass
 Namespace: microsoft.graph

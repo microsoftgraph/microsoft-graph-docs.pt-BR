@@ -2,16 +2,16 @@
 author: JeremyKelley
 ms.date: 09/10/2017
 title: Obter Unidade
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: sharepoint
 description: Recupere as propriedades e as relações de um recurso Drive.
 doc_type: apiPageType
-ms.openlocfilehash: b9f2bdd93c331126ce1155344b44e59802e475b1
-ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
+ms.openlocfilehash: 84cc50aca94170fb6cd81b5ff41d255380496566
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50292648"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59140889"
 ---
 # <a name="get-drive"></a>Obter Unidade
 
@@ -103,7 +103,7 @@ GET /users/{idOrUserPrincipalName}/drive
 
 | Nome do parâmetro | Valor  | Descrição                                       |
 |:---------------|:-------|:--------------------------------------------------|
-| _idOrUserPrincipalName_     | string | Obrigatório. O identificador de objeto do usuário proprietário do OneDrive. |
+| _idOrUserPrincipalName_     | string | Obrigatório. O identificador do objeto de usuário que possui o OneDrive. |
 
 ## <a name="get-the-document-library-associated-with-a-group"></a>Obtenha a biblioteca de documentos associada a um grupo
 
@@ -141,7 +141,7 @@ GET /groups/{groupId}/drive
 
 | Nome do parâmetro | Valor  | Descrição                                       |
 |:---------------|:-------|:--------------------------------------------------|
-| _groupId_      | string | Obrigatório. O identificador do grupo proprietário da biblioteca de documentos. |
+| _groupId_      | string | Obrigatório. O identificador do grupo que possui a biblioteca de documentos. |
 
 ## <a name="get-the-document-library-for-a-site"></a>Obter a biblioteca de documentos de um site
 
@@ -265,6 +265,6 @@ Se a unidade não existir e não puder ser provisionada automaticamente (ao usar
   "section": "documentation",
   "suppressions": [
   ],
-  "tocPath": "Drives/Get drive"
+  "tocPath&quot;: &quot;Drives/Get drive"
 } -->
 

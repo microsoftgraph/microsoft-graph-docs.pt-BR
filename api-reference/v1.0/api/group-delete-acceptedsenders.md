@@ -2,15 +2,15 @@
 title: Remover acceptedSender
 description: 'Remova um usuário ou grupo da lista de envios aceitos. '
 author: Jordanndahl
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 659be516dc8ce8ae4fcf8afdd83d6373f1c4862b
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: 63016aacdd08f87b5be537ec592d2a1bd753af71
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52679831"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59114481"
 ---
 # <a name="remove-acceptedsender"></a>Remover acceptedSender
 

@@ -1,21 +1,21 @@
 ---
 title: Criar anotações
-description: Criar um novo objeto Notes.
+description: Crie um novo objeto notes.
 author: kevinbellinger
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 6dfe558a746d463b91de426a4e3f416dc8619d71
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 65d0fa5f95d5563936e864d0959029aa92063e4c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48974724"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59020543"
 ---
 # <a name="create-personannotation"></a>Criar personAnnotation
 Namespace: microsoft.graph
 
-Criar um novo objeto [personAnnotation](../resources/personannotation.md) no [perfil](../resources/profile.md)de um usuário.
+Crie um novo [objeto personAnnotation](../resources/personannotation.md) no perfil de um [usuário.](../resources/profile.md)
 
 ## <a name="permissions"></a>Permissões
 
@@ -23,8 +23,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)                                      |
 |:---------------------------------------|:---------------------------------------------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | User. ReadWrite, User. ReadWrite. All |
-| Delegado (conta pessoal da Microsoft) | User. ReadWrite, User. ReadWrite. All |
+| Delegado (conta corporativa ou de estudante)     | User.ReadWrite, User.ReadWrite.All |
+| Delegado (conta pessoal da Microsoft) | User.ReadWrite, User.ReadWrite.All |
 | Aplicativo                            | User.ReadWrite.All                            |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -45,21 +45,21 @@ POST /users/{id | userPrincipalName}/profile/notes
 |Content-Type|application/json. Obrigatório.|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça uma representação JSON do objeto [personAnnotation](../resources/personannotation.md) .
+No corpo da solicitação, fornece uma representação JSON do [objeto personAnnotation.](../resources/personannotation.md)
 
-A tabela a seguir mostra as propriedades que são possíveis de definir em um novo objeto [personAnnotation](../resources/personannotation.md) no [perfil](../resources/profile.md)de um usuário.
+A tabela a seguir mostra as propriedades que são possíveis de definir dentro de um novo [objeto personAnnotation](../resources/personannotation.md) no perfil de um [usuário](../resources/profile.md).
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|allowedAudiences|String|As audiências que podem ver os valores contidos na entidade. Herdado de [MyFace](../resources/itemfacet.md). Os valores possíveis são: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
-|detalhada|[itemBody](../resources/itembody.md)|Contém os detalhes da anotação propriamente dita.|
-|displayName|String|Contém um nome amigável para a anotação.|
-|fracassa|[inferenceData](../resources/inferencedata.md)|Contém detalhes de inferência se a entidade for inferida pelo aplicativo de criação ou modificação. Herdado de [MyFace](../resources/itemfacet.md).|
-|source|[personDataSource](../resources/persondatasource.md)|Onde os valores são originados se forem sincronizados a partir de outro serviço. Herdado de [MyFace](../resources/itemfacet.md).|
+|allowedAudiences|String|As audiências que são capazes de ver os valores contidos na entidade. Herdado [do itemFacet](../resources/itemfacet.md). Os valores possíveis são: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
+|detail|[itemBody](../resources/itembody.md)|Contém os detalhes da própria nota.|
+|displayName|Cadeia de caracteres|Contém um nome amigável para a nota.|
+|inferência|[inferenceData](../resources/inferencedata.md)|Contém detalhes de inferência se a entidade for inferida pelo aplicativo de criação ou modificação. Herdado [do itemFacet](../resources/itemfacet.md).|
+|source|[personDataSource](../resources/persondatasource.md)|Onde os valores se originaram se sincronizados de outro serviço. Herdado [do itemFacet](../resources/itemfacet.md).|
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `201 Created` código de resposta e um objeto [personAnnotation](../resources/personannotation.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código `201 Created` de resposta e um objeto [personAnnotation](../resources/personannotation.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso certificateBasedAuthConfiguration
 description: Representa uma coleção de autoridades de certificados.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: adimitui
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 2d46c8df25b46b62a0c987042178261a8b31a3c43ff8c542c8fc1234b2ed9d21
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 53e56f78508131e3a08e7896095a7f986346fba2
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54163842"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59104254"
 ---
 # <a name="certificatebasedauthconfiguration-resource-type"></a>Tipo de recurso certificateBasedAuthConfiguration
 
@@ -34,7 +34,7 @@ Saiba mais sobre [autenticação baseada em certificado em Azure Active Director
 | [Listar certificateBasedAuthConfiguration](../api/certificatebasedauthconfiguration-list.md) | [certificateBasedAuthConfiguration](certificatebasedauthconfiguration.md) | Listar as propriedades da **coleção certificateBasedAuthConfiguration.** |
 | [Criar certificateBasedAuthConfiguration](../api/certificatebasedauthconfiguration-post-certificatebasedauthconfiguration.md) | [certificateBasedAuthConfiguration](certificatebasedauthconfiguration.md) | Crie um novo **objeto certificateBasedAuthConfiguration.** |
 | [Obter certificateBasedAuthConfiguration](../api/certificatebasedauthconfiguration-get.md) | [certificateBasedAuthConfiguration](certificatebasedauthconfiguration.md) | Leia as propriedades de **um objeto certificateBasedAuthConfiguration.** |
-| [Excluir certificateBasedAuthConfiguration](../api/certificatebasedauthconfiguration-delete.md) | None | **Exclua um objeto certificateBasedAuthConfiguration.** |
+| [Excluir certificateBasedAuthConfiguration](../api/certificatebasedauthconfiguration-delete.md) | Nenhum(a) | **Exclua um objeto certificateBasedAuthConfiguration.** |
 
 >[!NOTE]
 >Não há suporte para a atualização de **certificateBasedAuthConfiguration.** Para alterar **um certificateBasedAuthConfiguration,** primeiro exclua e crie um novo **certificateBasedAuthConfiguration**.

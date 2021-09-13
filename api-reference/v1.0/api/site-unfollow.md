@@ -2,15 +2,15 @@
 author: learafa
 title: Deixar de seguir site
 description: Desa seguir o site de um usuário
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: daacd9a7ce66b337ba97c6c7c0953825e13b7ea5
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: ccc8ba3e812e5bb8824ea0932c00ea8d85765cfc
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52786647"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59118899"
 ---
 # <a name="unfollow-site"></a>Deixar de seguir site 
 

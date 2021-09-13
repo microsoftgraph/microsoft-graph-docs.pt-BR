@@ -2,15 +2,15 @@
 title: Acessar deviceEnrollmentLimitConfiguration
 description: Leia as propriedades e as relações do objeto deviceEnrollmentLimitConfiguration.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a80c910976ab7a18e1fc82a663a6d55913c2c06a7844e741c106892143b5feb9
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 052541e9416f78cceae0ddba6f714dd52f3a6286
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54249486"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59110575"
 ---
 # <a name="get-deviceenrollmentlimitconfiguration"></a>Acessar deviceEnrollmentLimitConfiguration
 

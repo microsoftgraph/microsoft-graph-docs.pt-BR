@@ -1,16 +1,16 @@
 ---
 title: Excluir mensagem
 description: Exclua uma mensagem na caixa de correio do usuário especificado ou exclua uma relação da mensagem.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: c890d5574b60069de6ac305786e6e146d633a131
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 123963c1aaa515fa8b5ffb1811cff6c634b8f9f0
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50130568"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59062975"
 ---
 # <a name="delete-message"></a>Excluir mensagem
 
@@ -18,9 +18,9 @@ Namespace: microsoft.graph
 
 Exclua uma mensagem na caixa de correio do usuário especificado ou exclua uma relação da mensagem.
 
->**Observação** Talvez você não consiga excluir itens na pasta de exclusões de itens recuperáveis (representado pelo [nome de pasta conhecido).](../resources/mailfolder.md) `recoverableitemsdeletions` Consulte [Retenção de itens excluídos](/exchange/policy-and-compliance/recoverable-items-folder/recoverable-items-folder#deleted-item-retention) e Limpar itens [excluídos](/exchange/policy-and-compliance/recoverable-items-folder/clean-up-deleted-items) para obter mais informações.
+>**Observação** Talvez você não consiga excluir itens na pasta exclusões de itens recuperáveis (representado pelo [nome da pasta conhecido).](../resources/mailfolder.md) `recoverableitemsdeletions` Consulte [Retenção de item excluído e](/exchange/policy-and-compliance/recoverable-items-folder/recoverable-items-folder#deleted-item-retention) Limpar itens [excluídos](/exchange/policy-and-compliance/recoverable-items-folder/clean-up-deleted-items) para obter mais informações.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |

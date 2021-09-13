@@ -2,15 +2,15 @@
 title: 'Chart: setData'
 description: Redefine os dados de origem do gráfico.
 author: lumine2008
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: d944b58d46a6a5d1ec32b02b052b2f9db80e5d3f
-ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
+ms.openlocfilehash: ddf3ec05444b84e391a3f494743040e74ea33381
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "50575614"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59105584"
 ---
 # <a name="chart-setdata"></a>Chart: setData
 

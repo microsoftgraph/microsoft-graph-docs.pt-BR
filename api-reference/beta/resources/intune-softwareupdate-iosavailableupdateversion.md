@@ -2,15 +2,15 @@
 title: Tipo de recurso iosAvailableUpdateVersion
 description: Detalhes da versão de atualização disponível do iOS
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 886659126fb83c7112e3f5d7d20349ca8c11e855
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 5ee887ea5e8e53b65ac0f83da331f6f8cb774f71
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58805265"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59029938"
 ---
 # <a name="iosavailableupdateversion-resource-type"></a>Tipo de recurso iosAvailableUpdateVersion
 
@@ -28,7 +28,7 @@ Detalhes da versão de atualização disponível do iOS
 |productVersion|String|A versão da atualização.|
 |postingDateTime|DateTimeOffset|A data de postagem da atualização.|
 |expirationDateTime|DateTimeOffset|A data de expiração da atualização.|
-|supportedDevices|Coleção de cadeias de caracteres|Lista de dispositivos com suporte para a atualização.|
+|supportedDevices|Conjunto de cadeias de caracteres|Lista de dispositivos com suporte para a atualização.|
 
 ## <a name="relationships"></a>Relações
 Nenhum

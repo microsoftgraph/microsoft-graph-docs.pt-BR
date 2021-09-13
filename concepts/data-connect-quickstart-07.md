@@ -1,3 +1,12 @@
+---
+ms.localizationpriority: medium
+ms.openlocfilehash: 726484cb0f6cd3e91b77dc6f89e800f8546b6f42
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59289506"
+---
 <!-- markdownlint-disable MD002 MD041 -->
 
 Nesta seção, criaremos seu primeiro aplicativo de projeto ASP.NET para processar os dados Conexão de Dados do Microsoft Graph que foram exportados.

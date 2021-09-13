@@ -1,16 +1,16 @@
 ---
 title: Listar tokenLifetimePolicies
 description: Obter uma lista de objetos tokenLifetimePolicy.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: lujiangfeng666
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 4bc182e1bd0e0f50509f471de6cf148541c87782
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 10625cad6968d63572d701ea86d5142d6383d72e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52033731"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59130073"
 ---
 # <a name="list-tokenlifetimepolicies"></a>Listar tokenLifetimePolicies
 

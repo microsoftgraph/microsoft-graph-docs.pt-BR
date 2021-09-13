@@ -2,15 +2,15 @@
 title: Gerenciar aplicativos usando Microsoft Intune
 description: 'Os seguintes recursos do Graph estão disponíveis para gerenciar aplicativos móveis no Intune:  '
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: conceptualPageType
-ms.openlocfilehash: 9d9c33c540aa764566fc90fab1fa4ca4e2c6d9eb
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 7e9c655cf91a87790d9e5f1327eebaca0a60cb7e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58262148"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59098948"
 ---
 # <a name="manage-apps-using-microsoft-intune"></a>Gerenciar aplicativos usando Microsoft Intune
 

@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso verifiedPublisher
 description: Representa o editor verificado do aplicativo.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: applications
 author: jesakowi
-ms.openlocfilehash: f53559da47f61de645661c1acc8e0a94e4a6e6e6e9cf3c55e6faa8e2149452a3
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 4c63c0cdcfb6324077092923eeff91eed65e7b60
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54129901"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59134280"
 ---
 # <a name="verifiedpublisher-resource-type"></a>Tipo de recurso verifiedPublisher
 
@@ -23,7 +23,7 @@ Representa o editor verificado do [aplicativo](application.md). Para obter mais 
 | Propriedade | Tipo | Descrição |
 |:---------------|:--------|:----------|
 |displayName|Cadeia de caracteres|O nome do editor verificado da conta do Partner Center do editor de aplicativos.|
-|verifiedPublisherId|String| A ID do editor verificado na conta do Partner Center do editor de aplicativos. |
+|verifiedPublisherId|Cadeia de caracteres| A ID do editor verificado na conta do Partner Center do editor de aplicativos. |
 |addedDateTime|DateTimeOffSet| O timestamp quando o editor verificado foi adicionado pela primeira vez ou atualizado mais recentemente. |
 
 

@@ -2,15 +2,15 @@
 title: Tipo de recurso identityApiConnector
 description: Representa conectores de API em um Azure Active Directory locatário.
 author: nickgmicrosoft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 2f2ac4f9e94ace91182956b8147216d8016f092c17288fd594a731d86f7eed23
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 05c51b2468885daea730e597b2c4f7172699c28f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54126652"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59098962"
 ---
 # <a name="identityapiconnector-resource-type"></a>Tipo de recurso identityApiConnector
 
@@ -26,7 +26,7 @@ Use a [API b2xIdentityUserFlow](b2xidentityuserflow.md) para usar um conector de
 
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
-|[List](../api/identityapiconnector-list.md)|[Coleção identityApiConnector](../resources/identityapiconnector.md)| Obter uma lista de conectores de API|
+|[List](../api/identityapiconnector-list.md)|Coleção [identityApiConnector](../resources/identityapiconnector.md)| Obter uma lista de conectores de API|
 |[Criar](../api/identityapiconnector-create.md)|[identityApiConnector](identityapiconnector.md)|Crie um novo conector de API. |
 |[Obter](../api/identityapiconnector-get.md)|[identityApiConnector](identityapiconnector.md)|Leia as propriedades de [um objeto identityApiConnector.](../resources/identityapiconnector.md)|
 |[Atualizar](../api/identityapiconnector-update.md)|[identityApiConnector](identityapiconnector.md)|Atualize as propriedades de um conector de API.|
@@ -37,7 +37,7 @@ Use a [API b2xIdentityUserFlow](b2xidentityuserflow.md) para usar um conector de
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|O identificador gerado aleatoriamente do conector de API. |
+|id|String|O identificador gerado aleatoriamente do conector de API. |
 |displayName|Cadeia de caracteres| O nome do conector da API. |
 |targetUrl|Cadeia de caracteres| A URL do ponto de extremidade da API a ser chamada. |
 |authenticationConfiguration|[apiAuthenticationConfigurationBase](../resources/apiauthenticationconfigurationbase.md)|O objeto que descreve os detalhes de configuração de autenticação para chamar a API. Certificado cliente básico e PKCS 12 são suportados.|

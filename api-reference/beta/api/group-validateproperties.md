@@ -1,16 +1,16 @@
 ---
 title: 'group: validateProperties'
 description: Valide se Microsoft 365 nome de exibição de um grupo ou apelido de email estiver em conformidade com as políticas de nomenização.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 6f41ee4f9ae52133d3c7611b52b42997480dfc40
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: 978dd1f718b0da49043b5f16872b8552e4139516
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52681218"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59025206"
 ---
 # <a name="group-validateproperties"></a>group: validateProperties
 
@@ -53,7 +53,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro    | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|displayName|String| O nome de exibição do grupo a ser validado. A propriedade não é necessária individualmente. No entanto, pelo menos uma propriedade (displayName ou mailNickname) é necessária. |
+|displayName|Cadeia de caracteres| O nome de exibição do grupo a ser validado. A propriedade não é necessária individualmente. No entanto, pelo menos uma propriedade (displayName ou mailNickname) é necessária. |
 |mailNickname|String| O apelido de email do grupo a ser validado. A propriedade não é necessária individualmente. No entanto, pelo menos uma propriedade (displayName ou mailNickname) é necessária. |
 |onBehalfOfUserId|Guid| A ID do objeto do usuário a ser personificado ao chamar a API. Os resultados da validação são para os atributos e funções de onBehalfOfUserId. |
 

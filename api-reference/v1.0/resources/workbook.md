@@ -1,16 +1,16 @@
 ---
 title: tipo de recurso da pasta de trabalho
 description: O objeto de nível superior que contém objetos da pasta de trabalho relacionados, como planilhas, tabelas e intervalos.
-localization_priority: Priority
+ms.localizationpriority: high
 author: lumine2008
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 18c6694f01c9cd3441d59935ad399372ffbb4c6b831a542a2e00a9eb2e6902f8
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: ded7bceefb0cebdfaf45b16a88de3f4f0a9d5244
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54251712"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59134203"
 ---
 # <a name="workbook-resource-type"></a>tipo de recurso da pasta de trabalho
 
@@ -41,7 +41,7 @@ Nenhum.
 
 [Funções do Excel](#functions): Invoque uma função de pasta de trabalho usando a sintaxe `POST /me/drive/root/workbook/functions/{function-name}` e fornecendo os argumentos de função no corpo usando um objeto JSON. O `value` resultante da função e quaisquer cadeias de caracteres `error` são retornados no objeto de resultado de função. O valor `error` de `null` indica a execução bem-sucedida da função. 
 
-A lista completa de funções com suporte está listada [aqui](https://support.office.com/pt-BR/article/Excel-functions-alphabetical-b3944572-255d-4efb-bb96-c6d90033e188). Confira a assinatura de função para tipos de dados e nomes de parâmetro específicos.
+A lista completa de funções com suporte está listada [aqui](https://support.office.com/en-us/article/Excel-functions-alphabetical-b3944572-255d-4efb-bb96-c6d90033e188). Confira a assinatura de função para tipos de dados e nomes de parâmetro específicos.
 
 _Observações importantes:_ 
 * O parâmetro de entrada do intervalo é fornecido usando um objeto range, em vez da cadeia de caracteres de endereço do intervalo.  
@@ -60,7 +60,7 @@ Dentro de uma célula, a função `vlookup` tem esta aparência:
 
 = PROCV(valor de pesquisa, intervalo que contém o valor de pesquisa, o número da coluna no intervalo que contém o valor de retorno, opcionalmente, TRUE para coincidência aproximada ou FALSE para uma correspondência exata)
 
-(Confira a documentação para a função do Excel [PROCV](https://support.office.com/pt-BR/article/VLOOKUP-function-0bbc8083-26fe-4963-8ab8-93a18ad188a1)).
+(Confira a documentação para a função do Excel [PROCV](https://support.office.com/en-us/article/VLOOKUP-function-0bbc8083-26fe-4963-8ab8-93a18ad188a1)).
 
 O exemplo abaixo mostra como chamar a função `vlookup` e passar esses parâmetros com a API REST do Excel.
 
@@ -103,7 +103,7 @@ Dentro de uma célula, a função `median` se parece com este exemplo:
 
 =MED(A2:A6)
 
-(Confira a documentação para a função [MED](https://support.office.com/pt-BR/article/MEDIAN-function-d0916313-4753-414c-8537-ce85bdd967d2)).
+(Confira a documentação para a função [MED](https://support.office.com/en-us/article/MEDIAN-function-d0916313-4753-414c-8537-ce85bdd967d2)).
 
 O exemplo abaixo mostra como chamar a função `median` e um ou mais intervalos de entrada com a API REST do Excel. 
 

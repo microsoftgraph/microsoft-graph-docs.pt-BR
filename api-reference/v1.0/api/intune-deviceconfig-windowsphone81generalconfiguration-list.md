@@ -2,15 +2,15 @@
 title: Listar windowsPhone81GeneralConfigurations
 description: Listar propriedades e relações dos objetos windowsPhone81GeneralConfiguration.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f0473e118dd10a288c83bd312db3795ae27e0633c2cfc51ce58145ce30757f38
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: e626e091fb976ce9ac281f9718126ab257eab1b4
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54185128"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59099634"
 ---
 # <a name="list-windowsphone81generalconfigurations"></a>Listar windowsPhone81GeneralConfigurations
 

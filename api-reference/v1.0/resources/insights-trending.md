@@ -2,15 +2,15 @@
 title: tipo de recurso de tendência
 description: Rico relacionamento conectando um usuário a documentos que têm tendências em torno do usuário (são relevantes para o usuário). Os arquivos do OneDrive e os arquivos armazenados em sites de equipe do Microsoft Office SharePoint Online podem ser uma tendência em torno do usuário.
 author: simonhult
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: insights
 doc_type: resourcePageType
-ms.openlocfilehash: be87778d9544afc5ec6002ece46ebdb24e3e2c0214ebb5e718885c52bff253fe
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 5cf846ca79088e250b4e37fa97495896fd88fe44
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54216886"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59109133"
 ---
 # <a name="trending-resource-type"></a>tipo de recurso de tendência
 

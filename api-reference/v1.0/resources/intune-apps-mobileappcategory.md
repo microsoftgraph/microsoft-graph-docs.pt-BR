@@ -2,15 +2,15 @@
 title: Tipo de recurso mobileAppCategory
 description: Contém as propriedades para uma única categoria de aplicativo do Intune.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 51f316bb7a3b86c3e571c8af4d661f3820c4018dcd86508546c07d1a62419be9
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: e01e15f6d4e3cb1ed7306fa84a151538ca724221
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54235671"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59056064"
 ---
 # <a name="mobileappcategory-resource-type"></a>Tipo de recurso mobileAppCategory
 
@@ -32,7 +32,7 @@ Contém as propriedades para uma única categoria de aplicativo do Intune.
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|A chave da entidade.|
+|id|String|A chave da entidade.|
 |displayName|Cadeia de caracteres|O nome da categoria do aplicativo.|
 |lastModifiedDateTime|DateTimeOffset|A data e hora que a mobileAppCategory foi modificada pela última vez.|
 

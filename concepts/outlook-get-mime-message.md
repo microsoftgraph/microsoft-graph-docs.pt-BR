@@ -2,14 +2,14 @@
 title: Obter conteúdo MIME de uma mensagem
 description: Multipurpose Internet Mail Extensions (MIME) é um padrão de email do setor. Agora você pode usar um `$value` segmento para obter o conteúdo MIME de uma mensagem do Outlook.
 author: abheek-das
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: outlook
-ms.openlocfilehash: ff2724f5dd2f9325d53e5a7506887f944ba350e96d592be778e46b5c8e2dc67a
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 541c2481c8534cec7f96010a55beb6d02d825a62
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54126050"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59135932"
 ---
 # <a name="get-mime-content-of-a-message"></a>Obter conteúdo MIME de uma mensagem
 

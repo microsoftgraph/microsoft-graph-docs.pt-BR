@@ -2,15 +2,15 @@
 title: Listar configurações de grupo
 description: Recupere uma lista de objetos de configuração de grupo.
 author: Jordanndahl
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: a78fb242bdc095cf9afef7ce070f7d12ffda95b8
-ms.sourcegitcommit: c6f7a931a8d83ac54f577b7bec08237fd17ce51a
+ms.openlocfilehash: b08d23ed6293177e13c65012810710eb7c8370e4
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58490445"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59056617"
 ---
 # <a name="list-group-settings"></a>Listar configurações de grupo
 

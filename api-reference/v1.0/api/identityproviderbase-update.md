@@ -1,16 +1,16 @@
 ---
 title: Atualizar identityProvider
 description: Atualizar propriedades de um identityProvider.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 author: namkedia
 ms.prod: identity-and-sign-in
-ms.openlocfilehash: 0ad9230e1c6a9f9ba9e4b46451a95c529674b6d2
-ms.sourcegitcommit: f99dc2b6c8b4cb6f9f74cd780dccc47a2bccfaa6
+ms.openlocfilehash: 1849374b40167d684cdd2d38e439615c3182b190
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2021
-ms.locfileid: "58667903"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59105297"
 ---
 # <a name="update-identityprovider"></a>Atualizar identityProvider
 Namespace: microsoft.graph

@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso teamGuestSettings
 description: Configurações que definem se os convidados podem criar, atualizar ou excluir canais na equipe.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 8b8c0a47135af606d2bfb83d190bd88d6af4ad65356c99096563f76053f9a9ec
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 769930b28366b9918a92b9839331a421db5ff79a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54146353"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59134336"
 ---
 # <a name="teamguestsettings-resource-type"></a>Tipo de recurso teamGuestSettings
 
@@ -23,7 +23,7 @@ Configurações configurar se os convidados podem criar, atualizar ou excluir ca
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|allowCreateUpdateChannels|Booliano|Se definido como true, os convidados podem adicionar e atualizar canais.|
+|allowCreateUpdateChannels|Boolean|Se definido como true, os convidados podem adicionar e atualizar canais.|
 |allowDeleteChannels|Booliano|Se definido como true, os convidados poderão excluir canais.|
 
 ## <a name="json-representation"></a>Representação JSON

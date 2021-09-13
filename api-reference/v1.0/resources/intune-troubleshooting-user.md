@@ -2,15 +2,15 @@
 title: Tipo de recurso de usuário
 description: Ainda não documentado
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: f3b0e61f8f85b231ab11377a6811c3ee3e3745ff
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 18955869ac60de15d797ebc79cf7e179673d310d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58266843"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59078781"
 ---
 # <a name="user-resource-type"></a>Tipo de recurso de usuário
 

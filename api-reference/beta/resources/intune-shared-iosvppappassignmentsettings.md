@@ -2,15 +2,15 @@
 title: Tipo de recurso iosVppAppAssignmentSettings
 description: Contém propriedades usadas para atribuir um aplicativo móvel do iOS VPP a um grupo.
 author: rolyon
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: cf45f2bd043034e9ae7a8ed606790ed02c1ff0fc
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 85f27ba8f5e4600146d31d16bca58a0141bc2556
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58801035"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59030064"
 ---
 # <a name="iosvppappassignmentsettings-resource-type"></a>Tipo de recurso iosVppAppAssignmentSettings
 
@@ -31,7 +31,7 @@ Herda de [mobileAppAssignmentSettings](../resources/intune-shared-mobileappassig
 |useDeviceLicensing|Booliano|Se usa ou não o licenciamento do dispositivo.|
 |vpnConfigurationId|Cadeia de caracteres|A identificação de configuração da VPN a aplicar neste aplicativo.|
 |**Aplicativos**|
-|uninstallOnDeviceRemoval|Boleano|Se deve ou não desinstalar o aplicativo quando o dispositivo for removido do Intune.|
+|uninstallOnDeviceRemoval|Boolean|Se deve ou não desinstalar o aplicativo quando o dispositivo for removido do Intune.|
 
 ## <a name="relationships"></a>Relações
 Nenhum

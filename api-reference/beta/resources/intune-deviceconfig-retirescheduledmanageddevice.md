@@ -2,15 +2,15 @@
 title: Tipo de recurso retireScheduledManagedDevice
 description: ManagedDevices que estão agendados para a reforma
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 1cdbb9009ae55f003e727f949b1d5abe0aad1c6d
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 2ae915cf471217c7b053428b376f485e3c04aa1f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58821134"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59017419"
 ---
 # <a name="retirescheduledmanageddevice-resource-type"></a>Tipo de recurso retireScheduledManagedDevice
 
@@ -33,9 +33,9 @@ ManagedDevices que estão agendados para a reforma
 |retireAfterDateTime|DateTimeOffset|Dispositivo gerenciado se aposentar após DateTime|
 |managementAgent|[managementAgentType](../resources/intune-deviceconfig-managementagenttype.md)|Managed Device ManagementAgentType. Os valores possíveis são: `eas`, `mdm`, `easMdm`, `intuneClient`, `easIntuneClient`, `configurationManagerClient`, `configurationManagerClientMdm`, `configurationManagerClientMdmEas`, `unknown`, `jamf`, `googleCloudDevicePolicyController`, `microsoft365ManagedMdm` e `windowsManagementCloudApi`.|
 |ownerType|[managedDeviceOwnerType](../resources/intune-shared-manageddeviceownertype.md)|Managed Device ManagedDeviceOwnerType. Os valores possíveis são: `unknown`, `company`, `personal`.|
-|deviceCompliancePolicyName|String|Nome da política de conformidade do dispositivo|
+|deviceCompliancePolicyName|Cadeia de caracteres|Nome da política de conformidade do dispositivo|
 |deviceCompliancePolicyId|Cadeia de caracteres|Device Compliance PolicyId|
-|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de marcas de escopo para esta instância entity.|
+|roleScopeTagIds|Coleção String|Lista de marcas de escopo para esta instância entity.|
 
 ## <a name="relationships"></a>Relações
 Nenhum

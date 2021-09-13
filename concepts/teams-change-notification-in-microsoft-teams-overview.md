@@ -2,15 +2,15 @@
 title: Alterar notificações para os recursos do Microsoft Teams usando Microsoft Graph
 description: Saiba como obter notificações de alterações (criar, atualizar e excluir) para recursos no Microsoft Teams usando as APIs do Microsoft Graph
 author: anandab-msft
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: microsoft-teams
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 7d9973d81a01edc3571502099d2498aabbb611a6636882a04716a324a1201eee
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 821c45642ecd50154f8d618496264657b98160b8
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54129572"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59138936"
 ---
 # <a name="change-notifications-for-microsoft-teams-resources-using-microsoft-graph"></a>Alterar notificações para os recursos do Microsoft Teams usando Microsoft Graph
 

@@ -2,15 +2,15 @@
 title: tipo de número emailSyncSchedule
 description: Valores possíveis para agendamento de sincronização de email.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 899b62b78f99f362732f9b7072d3e4a48eb1fdc6
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 0415b01c743c9edb3cb9f777d86c77446528d7a6
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58802513"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59020410"
 ---
 # <a name="emailsyncschedule-enum-type"></a>tipo de número emailSyncSchedule
 

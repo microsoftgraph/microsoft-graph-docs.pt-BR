@@ -2,15 +2,15 @@
 title: insightIdentity
 description: Tipo complexo que contém propriedades de itens compartilhados.
 author: simonhult
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: insights
 doc_type: resourcePageType
-ms.openlocfilehash: 393a6c1f7fbd1a7fffac667afcf054cdc6b54d55576ffb220df6437166827622
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 701840cea5f1bc5e878e5d47c21caf97aed320de
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54229247"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59129862"
 ---
 # <a name="insightidentity"></a>insightIdentity
 
@@ -39,7 +39,7 @@ Veja a seguir uma representação JSON do recurso
 
 | Propriedade              | Tipo          | Descrição  |
 | -------------         |-----------    | -------------|
-| displayName       | Cadeia de caracteres          | O nome de exibição do usuário que compartilhou o item. |
+| displayName       | String          | O nome de exibição do usuário que compartilhou o item. |
 | id              | Cadeia de caracteres        | A id do usuário que compartilhou o item.     |
 | address             | Cadeia de caracteres      | O endereço de email do usuário que compartilhou o item.  |
 

@@ -88,7 +88,7 @@ items:
         displayname: 'Migration, Azure AD Graph'
         items:
           - name: Visão geral
-            href: /graph/migrate-azure-ad-graph-planning-checklist?context=graph%252fapi%252f1.0
+            href: /graph/migrate-azure-ad-graph-overview
           - name: Lista de verificação para migração de aplicativos
             href: /graph/migrate-azure-ad-graph-planning-checklist?context=graph/api/1.0
           - name: '1: Examinar as diferenças'
@@ -157,46 +157,90 @@ items:
         href: /graph/toolkit/overview?context=graph/api/1.0
       - name: Introdução
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: /graph/toolkit/get-started/overview?context=graph/api/1.0
-          - name: Criar um aplicativo Web (JavaScript)
+          - name: /graph/toolkit para React
+            href: /graph/toolkit/get-started/mgt-react?context=graph/api/1.0
+          - name: /graph/toolkit para SPFx
+            href: /graph/toolkit/get-started/mgt-spfx?context=graph/api/1.0
+      - name: Desenvolver seu primeiro aplicativo
+        items:
+          - name: Registrar um aplicativo do Azure AD
+            href: /graph/toolkit/get-started/add-aad-app-registration?context=graph/api/1.0
+          - name: Criar um aplicativo web (JavaScript)
             href: /graph/toolkit/get-started/build-a-web-app?context=graph/api/1.0
+          - name: Criar um aplicativo web (React)
+            href: /graph/toolkit/get-started/use-/graph/toolkit-with-react?context=graph/api/1.0
+          - name: Criar um aplicativo web (Angular)
+            href: /graph/toolkit/get-started/use-/graph/toolkit-with-angular?context=graph/api/1.0
           - name: Criar uma web part do Microsoft Office SharePoint Online
             href: /graph/toolkit/get-started/build-a-sharepoint-web-part?context=graph/api/1.0
-          - name: Criar uma guia do Microsoft Teams
+          - name: Criar uma Teams guia
             href: /graph/toolkit/get-started/build-a-microsoft-teams-tab?context=graph/api/1.0
-          - name: Usar o kit de ferramentas com reagir
-            href: /graph/toolkit/get-started/use-toolkit-with-react?context=graph/api/1.0
-          - name: Usar o kit de ferramentas com o angular
-            href: /graph/toolkit/get-started/use-toolkit-with-angular?context=graph/api/1.0
+          - name: Criar uma Teams com SSO
+            href: /graph/toolkit/get-started/build-a-microsoft-teams-sso-tab?context=graph/api/1.0
+          - name: Criar um aplicativo Electron
+            href: /graph/toolkit/get-started/build-an-electron-app?context=graph/api/1.0
+      - name: Provedores
+        items:
+          - name: Usando os provedores
+            href: /graph/toolkit/providers/providers?context=graph/api/1.0
+          - name: Provedor MSAL
+            href: /graph/toolkit/providers/msal?context=graph/api/1.0
+          - name: Provedor MSAL2
+            href: /graph/toolkit/providers/msal2?context=graph/api/1.0
+          - name: Provedor do SharePoint
+            href: /graph/toolkit/providers/sharepoint?context=graph/api/1.0
+          - name: Teams provedor
+            href: /graph/toolkit/providers/teams?context=graph/api/1.0
+          - name: Teams Provedor MSAL2
+            href: /graph/toolkit/providers/teams-msal2?context=graph/api/1.0
+          - name: Provedor de Electron
+            href: /graph/toolkit/providers/electron?context=graph/api/1.0
+          - name: Provedor de proxy
+            href: /graph/toolkit/providers/proxy?context=graph/api/1.0
+          - name: Provedor personalizado
+            href: /graph/toolkit/providers/custom?context=graph/api/1.0
       - name: Componentes
         items:
           - name: Logon
             href: /graph/toolkit/components/login?context=graph/api/1.0
+          - name: Obter
+            href: /graph/toolkit/components/get?context=graph/api/1.0
           - name: Pessoa
             href: /graph/toolkit/components/person?context=graph/api/1.0
           - name: Pessoas
             href: /graph/toolkit/components/people?context=graph/api/1.0
+          - name: Cartão pessoal
+            href: /graph/toolkit/components/person-card?context=graph/api/1.0
+          - name: Seletor de pessoas
+            href: /graph/toolkit/components/people-picker?context=graph/api/1.0
+          - name: Seletor de canal do Teams
+            href: /graph/toolkit/components/teams-channel-picker?context=graph/api/1.0
           - name: Agenda
             href: /graph/toolkit/components/agenda?context=graph/api/1.0
-          - name: Tarefas
+          - name: Tarefas do Planner
             href: /graph/toolkit/components/tasks?context=graph/api/1.0
-      - name: Provedores
+          - name: Tarefas pendentes
+            href: /graph/toolkit/components/todo?context=graph/api/1.0
+          - name: Arquivo
+            href: /graph/toolkit/components/file?context=graph/api/1.0
+          - name: Lista de arquivos
+            href: /graph/toolkit/components/file-list?context=graph/api/1.0
+      - name: Personalizar componentes
         items:
-          - name: Usando os provedores
-            href: /graph/toolkit/providers?context=graph/api/1.0
-          - name: Provedor MSAL
-            href: /graph/toolkit/providers/msal?context=graph/api/1.0
-          - name: Provedor do SharePoint
-            href: /graph/toolkit/providers/sharepoint?context=graph/api/1.0
-          - name: Provedor do Microsoft Teams
-            href: /graph/toolkit/providers/teams?context=graph/api/1.0
-          - name: Provedor personalizado
-            href: /graph/toolkit/providers/custom?context=graph/api/1.0
-      - name: Componentes de estilização
-        href: /graph/toolkit/style?context=graph/api/1.0
-      - name: Componentes de modelagem
-        href: /graph/toolkit/templates?context=graph/api/1.0
+          - name: Componentes de estilização
+            href: /graph/toolkit/customize-components/style?context=graph/api/1.0
+          - name: Componentes de modelagem
+            href: /graph/toolkit/customize-components/templates?context=graph/api/1.0
+          - name: Manipulando eventos
+            href: /graph/toolkit/customize-components/events?context=graph/api/1.0
+          - name: Cache de chamadas do Microsoft Graph em componentes
+            href: /graph/toolkit/customize-components/cache?context=graph/api/1.0
+          - name: Localizando componentes
+            href: /graph/toolkit/customize-components/localization?context=graph/api/1.0
+          - name: Suporte da direita para a esquerda
+            href: /graph/toolkit/customize-components/right-to-left?context=graph/api/1.0
   - name: Recursos
     items:
       - name: Práticas recomendadas
@@ -236,7 +280,7 @@ items:
           - name: Atribuição de funções do aplicativo
             href: resources/approleassignment.md
             items:
-              - name: List
+              - name: Listar
                 href: api/user-list-approleassignments.md
               - name: Adicionar
                 href: api/user-post-approleassignments.md
@@ -279,7 +323,7 @@ items:
                 href: api/user-list-contactfolders.md
           - name: Concessões de permissão delegadas
             items:
-              - name: List
+              - name: Listar
                 href: api/user-list-oauth2permissiongrants.md
           - name: Objetos de diretório
             href: resources/directoryobject.md
@@ -433,7 +477,7 @@ items:
             items:
               - name: Listar tarefas
                 href: api/planneruser-list-tasks.md
-          - name: Teamwork
+          - name: Trabalho em equipe
             items:
               - name: Aplicativo instalado
                 href: resources/teamsappinstallation.md
@@ -580,7 +624,7 @@ items:
           - name: Atribuição de funções do aplicativo
             href: resources/approleassignment.md
             items:
-              - name: List
+              - name: Listar
                 href: api/group-list-approleassignments.md
               - name: Adicionar
                 href: api/group-post-approleassignments.md
@@ -779,7 +823,7 @@ items:
                         href: api/application-delete-extensionproperty.md
               - name: Proprietários
                 items:
-                  - name: List
+                  - name: Listar
                     href: api/application-list-owners.md
                   - name: Adicionar
                     href: api/application-post-owners.md
@@ -792,7 +836,7 @@ items:
                     items:
                       - name: Atribuir
                         href: api/application-post-tokenissuancepolicies.md
-                      - name: List
+                      - name: Listar
                         href: api/application-list-tokenissuancepolicies.md
                       - name: Remover
                         href: api/application-delete-tokenissuancepolicies.md
@@ -801,7 +845,7 @@ items:
                     items:
                       - name: Atribuir
                         href: api/application-post-tokenlifetimepolicies.md
-                      - name: List
+                      - name: Listar
                         href: api/application-list-tokenlifetimepolicies.md
                       - name: Remover
                         href: api/application-delete-tokenlifetimepolicies.md
@@ -836,7 +880,7 @@ items:
               - name: Atribuição de funções do aplicativo
                 href: resources/approleassignment.md
                 items:
-                  - name: List
+                  - name: Listar
                     href: api/serviceprincipal-list-approleassignments.md
                   - name: Adicionar
                     href: api/serviceprincipal-post-approleassignments.md
@@ -860,7 +904,7 @@ items:
                     href: api/serviceprincipal-removekey.md
               - name: Concessões de permissão delegadas
                 items:
-                  - name: List
+                  - name: Listar
                     href: api/serviceprincipal-list-oauth2permissiongrants.md
               - name: Classificações de permissão delegada
                 href: resources/delegatedpermissionclassification.md
@@ -887,7 +931,7 @@ items:
                     href: api/serviceprincipal-getmemberobjects.md
               - name: Proprietários
                 items:
-                  - name: List
+                  - name: Listar
                     href: api/serviceprincipal-list-owners.md
                   - name: Adicionar
                     href: api/serviceprincipal-post-owners.md
@@ -900,7 +944,7 @@ items:
                     items:
                       - name: Atribuir
                         href: api/serviceprincipal-post-claimsmappingpolicies.md
-                      - name: List
+                      - name: Listar
                         href: api/serviceprincipal-list-claimsmappingpolicies.md
                       - name: Remover
                         href: api/serviceprincipal-delete-claimsmappingpolicies.md
@@ -909,7 +953,7 @@ items:
                     items:
                       - name: Atribuir
                         href: api/serviceprincipal-post-homerealmdiscoverypolicies.md
-                      - name: List
+                      - name: Listar
                         href: api/serviceprincipal-list-homerealmdiscoverypolicies.md
                       - name: Remover
                         href: api/serviceprincipal-delete-homerealmdiscoverypolicies.md
@@ -946,7 +990,7 @@ items:
                     items:
                       - name: Atribuir
                         href: api/application-post-tokenissuancepolicies.md
-                      - name: List
+                      - name: Listar
                         href: api/application-list-tokenissuancepolicies.md
                       - name: Remover
                         href: api/application-delete-tokenissuancepolicies.md
@@ -955,7 +999,7 @@ items:
                     items:
                       - name: Atribuir
                         href: api/application-post-tokenlifetimepolicies.md
-                      - name: List
+                      - name: Listar
                         href: api/application-list-tokenlifetimepolicies.md
                       - name: Remover
                         href: api/application-delete-tokenlifetimepolicies.md
@@ -4592,6 +4636,33 @@ items:
                         href: api/subscribedsku-list.md
                       - name: Obter subscribedSku
                         href: api/subscribedsku-get.md
+              - name: Gerenciamento de função
+                href: resources/rolemanagement.md
+                items:
+                  - name: Definição de função
+                    href: resources/unifiedroledefinition.md
+                    items:
+                      - name: Listar
+                        href: api/rbacapplication-list-roledefinitions.md
+                      - name: Criar
+                        href: api/rbacapplication-post-roledefinitions.md
+                      - name: Obter
+                        href: api/unifiedroledefinition-get.md
+                      - name: Atualizar
+                        href: api/unifiedroledefinition-update.md
+                      - name: Excluir
+                        href: api/unifiedroledefinition-delete.md
+                  - name: Atribuição de função
+                    href: resources/unifiedroleassignment.md
+                    items:
+                      - name: Listar
+                        href: api/rbacapplication-list-roleassignments.md
+                      - name: Criar
+                        href: api/rbacapplication-post-roleassignments.md
+                      - name: Obter
+                        href: api/unifiedroleassignment-get.md
+                      - name: Excluir
+                        href: api/unifiedroleassignment-delete.md
           - name: Identidade e entrada
             items:
               - name: Política de fluxos de autenticação
@@ -5063,7 +5134,7 @@ items:
                   - name: Instância de revisão do Access
                     href: resources/accessreviewinstance.md
                     items:
-                      - name: List
+                      - name: Listar
                         href: api/accessreviewinstance-list.md
                       - name: Listar decisões
                         href: api/accessreviewinstance-list-decisions.md
@@ -5734,7 +5805,7 @@ items:
                     href: api/reportroot-getyammergroupsactivitygroupcounts.md
                   - name: Obter contagens de atividades
                     href: api/reportroot-getyammergroupsactivitycounts.md
-      - name: Pesquisar
+      - name: Pesquisa
         displayname: Microsoft Search API
         items:
           - name: Consulta
@@ -5914,7 +5985,7 @@ items:
                     href: api/site-delete-permission.md
           - name: Listas
             items:
-              - name: List
+              - name: Listar
                 href: resources/list.md
               - name: Criar lista
                 href: api/list-create.md
@@ -6007,7 +6078,7 @@ items:
               - name: Set
                 href: resources/termstore-set.md
                 items:
-                  - name: List
+                  - name: Listar
                     href: api/termstore-group-list-sets.md
                   - name: Listar filhos
                     href: api/termstore-term-list-children.md
@@ -6120,7 +6191,7 @@ items:
                 href: api/plannerprogresstaskboardtaskformat-get.md
               - name: Atualizar progresso do formato de quadro de tarefas
                 href: api/plannerprogresstaskboardtaskformat-update.md
-      - name: Teamwork
+      - name: Trabalho em equipe
         displayName: Microsoft Teams
         items:
           - name: Visão Geral
@@ -6454,7 +6525,7 @@ items:
                     href: api/offershiftrequest-post.md
                   - name: Obter
                     href: api/offershiftrequest-get.md
-                  - name: List
+                  - name: Listar
                     href: api/offershiftrequest-list.md
                   - name: Aprovar
                     href: api/offershiftrequest-approve.md

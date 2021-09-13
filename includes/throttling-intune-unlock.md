@@ -1,14 +1,14 @@
 ---
 author: davidmu1
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: msgraph
 ms.topic: include
-ms.openlocfilehash: 41882177c727aa5098b0b6ccd7389e582ce39c88276e3085a4d08c27972bdd89
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: da30ddd679bdbdbcc84bf6a3980d8b42ee6cbd50
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54196607"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59035684"
 ---
 <!-- markdownlint-disable MD041 -->
 <!-- this file is auto-generated don't edit it manually! -->
@@ -19,5 +19,9 @@ ms.locfileid: "54196607"
 | POST, PUT, DELATE, PATCH | 200 solicitações por 20 segundos | 100 solicitações por 20 segundos |
 | Qualquer | 2000 solicitações por 20 segundos | 1000 solicitações por 20 segundos |
 
-Os limites anteriores se aplicam aos seguintes recursos:  
-windowsDefenderApplicationControlSupplementalPolicy, windowsDefenderApplicationControlSupplementalPolicyAssignment, windowsDefenderApplicationControlSupplementalPolicyDeploymentStatus, windowsDefenderApplicationControlSupplementalPolicyDeploymentSummary.
+Os limites anteriores se aplicam aos seguintes recursos: 
+
+ 
+| <!-- fake header-->                                                                                                                                                                                                                                                                                                                                                                            |
+|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| <ul> <li> [windowsDefenderApplicationControlSupplementalPolicy](/graph/api/resources/windowsdefenderapplicationcontrolsupplementalpolicy) <li> [windowsDefenderApplicationControlSupplementalPolicyAssignment](/graph/api/resources/windowsdefenderapplicationcontrolsupplementalpolicyassignment) <li> [windowsDefenderApplicationControlSupplementalPolicyDeploymentStatus](/graph/api/resources/windowsdefenderapplicationcontrolsupplementalpolicydeploymentstatus) <li> [windowsDefenderApplicationControlSupplementalPolicyDeploymentSummary](/graph/api/resources/windowsdefenderapplicationcontrolsupplementalpolicydeploymentsummary) </ul> |

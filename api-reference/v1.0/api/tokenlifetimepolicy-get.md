@@ -1,16 +1,16 @@
 ---
 title: Obter tokenLifetimePolicy
 description: Recupere as propriedades e as relações do objeto tokenLifetimePolicy.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: lujiangfeng666
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 1dce68205e601f5ad6b2c4c070caad2b4e39fd13
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: b87cd0300410f9ab455829fa7bec0b9ec3919900
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52033745"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59090100"
 ---
 # <a name="get-tokenlifetimepolicy"></a>Obter tokenLifetimePolicy
 

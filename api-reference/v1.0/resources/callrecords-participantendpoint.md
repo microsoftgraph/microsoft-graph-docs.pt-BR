@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso participantEndpoint
 description: O tipo participantEndpoint
-localization_priority: Normal
+ms.localizationpriority: medium
 author: williamlooney
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: d83690c1209d845f00dc902170eb547c567d6ec0cc654d6c9e9c3778da0fc275
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: c9990701c86ed085914652b7c541411db6f57f65
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54223729"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59109504"
 ---
 # <a name="participantendpoint-resource-type"></a>Tipo de recurso participantEndpoint
 

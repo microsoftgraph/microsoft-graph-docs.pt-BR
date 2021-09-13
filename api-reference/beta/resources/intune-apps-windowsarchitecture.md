@@ -2,15 +2,15 @@
 title: Tipo de número windowsArchitecture
 description: Contém propriedades para Windows arquitetura.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 2761e81215a002dfee56663c55c28a1285944c20
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 76ef88ff36088c3873b8b071196316527914c2e9
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58819231"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59023672"
 ---
 # <a name="windowsarchitecture-enum-type"></a>Tipo de número windowsArchitecture
 

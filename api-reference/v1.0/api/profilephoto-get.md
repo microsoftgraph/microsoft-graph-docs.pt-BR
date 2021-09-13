@@ -1,16 +1,16 @@
 ---
 title: Obter foto
 description: Obtenha profilePhoto especificado ou seus metadados (propriedades profilePhoto ).
-localization_priority: Priority
+ms.localizationpriority: high
 author: kevinbellinger
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: cb97f04a311956337403b4900abda00c9acf9fbcc9c6083511616ec39056989a
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 855d8f72dcbc1804a07dd84ae3788693131ed8ca
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54235874"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59104800"
 ---
 # <a name="get-photo"></a>Obter foto
 
@@ -30,11 +30,29 @@ Por exemplo, se o usuário carrega uma foto de 504 x 504 pixels, tudo menos o ta
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
+### <a name="to-retrieve-the-profile-photo-of-a-user"></a>Para recuperar a foto do perfil de um usuário
+
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Para recurso de **usuário**:<br/>User.Read, User.ReadBasic.All, User.Read.All, User.ReadWrite, User.ReadWrite.All<br /><br />Para recurso de **grupo**:<br />Group.Read.All, Group.ReadWrite.All<br /><br />Para recurso de **contato**:<br />Contacts.Read, Contacts.ReadWrite |
-|Delegado (conta pessoal da Microsoft) | Sem suporte |
-|Aplicativo                        | Para recurso de **usuário**:<br/>User.Read.All, User.ReadWrite.All<br /><br />Para recurso de **grupo**:<br />Group.Read.All, Group.ReadWrite.All<br /><br />Para recurso de **contato**:<br />Contacts.Read, Contacts.ReadWrite |
+|Delegado (conta corporativa ou de estudante)      |   User.Read, User.ReadBasic.All, User.Read.All, User.ReadWrite, User.ReadWrite.All           |
+|Delegado (conta pessoal da Microsoft)      |   Sem suporte.            |
+|Aplicativo      |    User.Read.All, User.ReadWrite.All           |
+
+### <a name="to-retrieve-the-profile-photo-of-a-group"></a>Para recuperar a foto do perfil de um grupo
+
+|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegado (conta corporativa ou de estudante)      |   Group.Read.All, Group.ReadWrite.All           |
+|Delegado (conta pessoal da Microsoft)      |   Sem suporte.            |
+|Aplicativo      |    Group.Read.All, Group.ReadWrite.All           |
+
+### <a name="to-retrieve-the-profile-photo-of-a-contact"></a>Para recuperar a foto do perfil de um contato
+
+|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegado (conta corporativa ou de estudante)      |   Contacts.Read, Contacts.ReadWrite           |
+|Delegado (conta pessoal da Microsoft)      |   Sem suporte.            |
+|Aplicativo      |    Contacts.Read, Contacts.ReadWrite           |
 
 > **Observação:** Há um [problema conhecido](/graph/known-issues#groups)ao acessar fotos de grupo usando permissões de aplicativo.
 

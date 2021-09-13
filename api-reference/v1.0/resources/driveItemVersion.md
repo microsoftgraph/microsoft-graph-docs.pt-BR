@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso DriveItemVersion
 description: O **recurso DriveItemVersion** representa uma versão específica de um DriveItem.
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: sharepoint
 author: JeremyKelley
 doc_type: resourcePageType
-ms.openlocfilehash: d015175df3f4fb91d6a91dce7cf5b10714f6d1988044e9c98c81fcd5c3dd5369
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 63bb92871da03ecb6ee4d051274444f03ae95710
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54135257"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59094363"
 ---
 # <a name="driveitemversion-resource-type"></a>Tipo de recurso DriveItemVersion
 
@@ -61,7 +61,7 @@ Na tabela anterior, os exemplos usam `/drive`, mas há muitas solicitações vá
 
 |      Nome da propriedade       |                         Tipo                         |                               Descrição                               |
 | :----------------------- | :--------------------------------------------------- | :---------------------------------------------------------------------- |
-| **id**                   | string                                               | A ID da versão. Somente leitura.                                       |
+| **id**                   | cadeia de caracteres                                               | A ID da versão. Somente leitura.                                       |
 | **lastModifiedBy**       | [IdentitySet](../resources/identityset.md)           | Identidade do usuário que modificou a versão pela última vez. Somente leitura.        |
 | **lastModifiedDateTime** | [DateTimeOffset](../resources/timestamp.md)          | Data e hora em que a versão foi modificada pela última vez. Somente leitura.                 |
 | **publication**          | [PublicationFacet](../resources/publicationfacet.md) | Indica o status de publicação desta versão específica. Somente leitura. |

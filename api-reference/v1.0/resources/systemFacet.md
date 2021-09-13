@@ -2,16 +2,16 @@
 author: daspek
 ms.date: 09/12/2017
 title: SystemFacet
-localization_priority: Normal
+ms.localizationpriority: medium
 description: A faceta System indica que o objeto é gerenciado pelo sistema para sua própria operação.
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 82875fb53454e362f9efe78ce2bb17448ab85787e40150db6bad8963e7613ba1
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 62858c85724bc74ed4f560f70bdfafcc01b63d8d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54228979"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59134427"
 ---
 # <a name="system-facet"></a>Faceta System
 

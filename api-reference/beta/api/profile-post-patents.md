@@ -1,22 +1,22 @@
 ---
 title: Criar patentes
-description: Criar um novo objeto patenteados.
-localization_priority: Normal
+description: Crie um novo objeto de patentes.
+ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: f290fc01a367fe0ee02a59264392eaf6143d4460
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 484fb8bba170110a08fe507be3d417a410ff8a03
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48974661"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59020522"
 ---
-# <a name="create-itempatent"></a>Criar ispatente
+# <a name="create-itempatent"></a>Criar itemPatent
 
 Namespace: microsoft.graph
 
-Criar um novo objeto de [patente](../resources/itempatent.md) dentro de um [perfil](../resources/profile.md)de usuário.
+Criar um novo [objeto itemPatent](../resources/itempatent.md) no perfil de um [usuário.](../resources/profile.md)
 
 ## <a name="permissions"></a>Permissões
 
@@ -24,8 +24,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)                                      |
 |:---------------------------------------|:---------------------------------------------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | User. ReadWrite, User. ReadWrite. All |
-| Delegado (conta pessoal da Microsoft) | User. ReadWrite, User. ReadWrite. All |
+| Delegado (conta corporativa ou de estudante)     | User.ReadWrite, User.ReadWrite.All |
+| Delegado (conta pessoal da Microsoft) | User.ReadWrite, User.ReadWrite.All |
 | Aplicativo                            | User.ReadWrite.All                            |
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -45,26 +45,26 @@ POST /users/{id | userPrincipalName}/profile/patents
 |Content-Type|application/json. Obrigatório.|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça uma representação JSON do objeto [ispatente](../resources/itempatent.md) .
+No corpo da solicitação, fornece uma representação JSON do [objeto itemPatent.](../resources/itempatent.md)
 
-A tabela a seguir mostra as propriedades que são possíveis de definir ao criar um novo objeto de item de [patente](../resources/itempatent.md) no [perfil](../resources/profile.md)de um usuário.
+A tabela a seguir mostra as propriedades que são possíveis de definir ao criar um novo [objeto itemPatent](../resources/itempatent.md) no perfil de um [usuário](../resources/profile.md).
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|allowedAudiences|String|As audiências que podem ver os valores contidos na entidade. Herdado de [MyFace](../resources/itemfacet.md). Os valores possíveis são: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
-|description|String|Descpription da patente ou do arquivamento. |
-|displayName|String|Título da patente ou do arquivamento. |
-|fracassa|[inferenceData](../resources/inferencedata.md)|Contém detalhes de inferência se a entidade for inferida pelo aplicativo de criação ou modificação. Herdado de [MyFace](../resources/itemfacet.md).|
-|ispending        |Booliano     |Indica que a patente está pendente.        |
+|allowedAudiences|Cadeia de caracteres|As audiências que são capazes de ver os valores contidos na entidade. Herdado [do itemFacet](../resources/itemfacet.md). Os valores possíveis são: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
+|description|Cadeia de caracteres|Descpription of the patent or filing. |
+|displayName|String|Título da patente ou arquivamento. |
+|inferência|[inferenceData](../resources/inferencedata.md)|Contém detalhes de inferência se a entidade for inferida pelo aplicativo de criação ou modificação. Herdado [do itemFacet](../resources/itemfacet.md).|
+|isPending        |Boleano     |Indica que a patente está pendente.        |
 |issuedDate       |Data        |A data em que a patente foi concedida.   |
-|issuingAuthority |String      |Autoridade que concedeu a patente.     |
-|number           |String      |O número de patente.                      |
-|source|[personDataSource](../resources/persondatasource.md)|Onde os valores são originados se forem sincronizados a partir de outro serviço. Herdado de [MyFace](../resources/itemfacet.md).|
-|webUrl           |String      |URL que faz referência à patente ou ao arquivamento. |
+|issuingAuthority |Cadeia de caracteres      |Autoridade que concedeu a patente.     |
+|number           |Cadeia de caracteres      |O número da patente.                      |
+|source|[personDataSource](../resources/persondatasource.md)|Onde os valores se originaram se sincronizados de outro serviço. Herdado [do itemFacet](../resources/itemfacet.md).|
+|webUrl           |String      |URL fazendo referência à patente ou ao arquivamento. |
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `201 Created` código de resposta e um objeto [ispatente](../resources/itempatent.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código `201 Created` de resposta e um objeto [itemPatent](../resources/itempatent.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

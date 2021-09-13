@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso alternativeSecurityId
 description: Apenas para uso interno.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: spunukol
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: c2bdac56da724cecce33a43a360ef4cbcdcae6ffea680a35169ce9052d71eeea
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 9ef21767ee3d38dbba4ad661c0529e2f01a10ba9
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54229386"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59036771"
 ---
 # <a name="alternativesecurityid-resource-type"></a>Tipo de recurso alternativeSecurityId
 
@@ -37,6 +37,6 @@ Apenas para uso interno. Esse tipo complexo será preterido no futuro.
 | Propriedade         | Tipo       | Descrição
 |:-----------------|:-----------|:---------------------
 | type             | Int32      | Apenas para uso interno
-| identityProvider | string     | Apenas para uso interno
+| identityProvider | cadeia de caracteres     | Apenas para uso interno
 | chave              | Edm.Binary | Apenas para uso interno
 

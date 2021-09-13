@@ -2,15 +2,15 @@
 title: Listar conversationMembers
 description: Recupere a lista do bate-papo ou de membros do canal.
 author: akjo
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 859eadec943eb9eeb4ea70643ce60e61e007da0c
-ms.sourcegitcommit: 456ec9510807d05623c0ed1dd049c9676f53f56b
+ms.openlocfilehash: 8e760ab10cfa95de9a4c31561021b4f1143ad57b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53060605"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59050681"
 ---
 # <a name="list-conversationmembers"></a>Listar conversationMembers
 

@@ -2,15 +2,15 @@
 title: Listar proprietários
 description: Recupere uma lista de proprietários (objetos directoryObject) para um aplicativo.
 author: sureshja
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: d9f942bb007ce3a3ade3632ddcbe9f2e79e9e9cb
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 35b7fbdf5d3ec5b0818819120ab5fcf43fc78aa6
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50134033"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59068379"
 ---
 # <a name="list-owners"></a>Listar proprietários
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 Recupere uma lista de proprietários de um aplicativo que são [objetos directoryObject.](../resources/directoryobject.md)
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |

@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso searchRequest
 description: A solicitação de pesquisa a ser enviada para o ponto de extremidade de consulta. Ele contém o tipo de entidades esperada na resposta, as fontes subjacentes, os parâmetros de paging, a solicitação de campos e a consulta de pesquisa real.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: nmoreau
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: ec5ce984ac98c34c219e87e956a3e102ca5834ad39c748f17af33fcb1db79740
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 41b8c643228a4080dec1d6e27a7c23467ec6263b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54196541"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59134476"
 ---
 # <a name="searchrequest-resource-type"></a>Tipo de recurso searchRequest
 
@@ -28,10 +28,10 @@ O blob JSON contém os tipos de recursos esperados na resposta, as fontes subjac
 
 | Propriedade     | Tipo        | Descrição |             |
 |:-------------|:------------|:------------|:------------|
-|contentSources|String collection|Contém a conexão a ser direcionada.|
+|contentSources|Coleção String|Contém a conexão a ser direcionada.|
 |enableTopResults|Booliano|Isso dispara a classificação híbrida para mensagens: as três primeiras mensagens são as mais relevantes. Essa propriedade só é aplicável a entityType= `message` . Opcional.|
 |entityTypes|coleção entityType| Um ou mais tipos de recursos esperados na resposta. Os valores possíveis são: `list`, `site`, `listItem`, `message`, `event`, `drive`, `driveItem`, `externalItem`. Consulte [limitações conhecidas](search-api-overview.md#known-limitations) para essas combinações de dois ou mais tipos de entidade com suporte na mesma solicitação de pesquisa. Obrigatório.|
-|campos|Coleção de cadeias de caracteres |Contém os campos a serem retornados para cada objeto de recurso especificado em **entityTypes**, permitindo a personalização dos campos retornados por padrão caso contrário, incluindo campos adicionais, como propriedades gerenciadas personalizadas do SharePoint e OneDrive. Opcional.|
+|campos|Coleção String |Contém os campos a serem retornados para cada objeto de recurso especificado em **entityTypes**, permitindo a personalização dos campos retornados por padrão caso contrário, incluindo campos adicionais, como propriedades gerenciadas personalizadas do SharePoint e OneDrive. Opcional.|
 |from|Int32|Especifica o deslocamento para os resultados da pesquisa. Deslocamento 0 retorna o primeiro resultado. Opcional.|
 |consulta|[searchQuery](searchquery.md)|Contém os termos de consulta. Obrigatório.|
 |size|Int32|O tamanho da página a ser recuperada. Opcional.|

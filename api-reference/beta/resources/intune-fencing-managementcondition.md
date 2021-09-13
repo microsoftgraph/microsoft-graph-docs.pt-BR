@@ -2,15 +2,15 @@
 title: Tipo de recurso managementCondition
 description: Condições de gerenciamento são eventos que podem ser disparados dinamicamente, como cercas geográficas, cercas de tempo e cercas de rede.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 79f0c0ef1c2c6525114ce4d7f58615c6c168539b
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 8db902ca0f5b0fb00a72e9fd8eee8af02d2c8cab
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58786961"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59030253"
 ---
 # <a name="managementcondition-resource-type"></a>Tipo de recurso managementCondition
 
@@ -32,10 +32,10 @@ Condições de gerenciamento são eventos que podem ser disparados dinamicamente
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Identificador exclusivo da condição de gerenciamento. Valor gerado pelo sistema atribuído quando criado.|
+|id|String|Identificador exclusivo da condição de gerenciamento. Valor gerado pelo sistema atribuído quando criado.|
 |Nome único|Cadeia de caracteres|Nome exclusivo para a condição de gerenciamento. Usado em expressões de condição de gerenciamento.|
 |displayName|Cadeia de caracteres|O nome definido pelo administrador da condição de gerenciamento.|
-|descrição|Cadeia de caracteres|A descrição definida pelo administrador da condição de gerenciamento.|
+|description|Cadeia de caracteres|A descrição definida pelo administrador da condição de gerenciamento.|
 |createdDateTime|DateTimeOffset|A hora em que a condição de gerenciamento foi criada. Lado de serviço gerado.|
 |modifiedDateTime|DateTimeOffset|O tempo em que a condição de gerenciamento foi modificada pela última vez. Lado do serviço atualizado.|
 |eTag|String|ETag da condição de gerenciamento. Lado do serviço atualizado.|

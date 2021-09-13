@@ -2,15 +2,15 @@
 title: Obter educationSubmissionResource
 description: Recupere as propriedades de um recurso específico associado ao envio.
 author: sharad-sharma-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: c46312e6d09fabd7178353f3ba419b8d84a5ce16
-ms.sourcegitcommit: 1e9a53e7b8e67349288f5cfbabe8355de83817b0
+ms.openlocfilehash: 1653ec3311fc046bcf4a3b8a095e17ace5c757aa
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/17/2021
-ms.locfileid: "58367195"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59074369"
 ---
 # <a name="get-educationsubmissionresource"></a>Obter educationSubmissionResource
 

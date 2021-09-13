@@ -2,15 +2,15 @@
 title: Tipo de recurso windowsUniversalAppXAppAssignmentSettings
 description: Contém propriedades usadas ao atribuir Windows aplicativo móvel Universal AppX a um grupo.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 5062e1406ed29e3d042d1351f60e4a9b411bbe8f
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 56f4eb89d64342c500ff97a5c0a0ce8df364155a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58769331"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59030029"
 ---
 # <a name="windowsuniversalappxappassignmentsettings-resource-type"></a>Tipo de recurso windowsUniversalAppXAppAssignmentSettings
 

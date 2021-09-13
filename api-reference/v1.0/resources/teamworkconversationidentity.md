@@ -2,15 +2,15 @@
 title: Tipo de recurso teamworkConversationIdentity
 description: Representa uma conversa em Microsoft Teams.
 author: RamjotSingh
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: fe6315b6546d603c203fad878c291f61e1f8394fc56acba4cfdf788ee86a2856
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 2a463f37152b6d2108ac6ca04d9971cb908d6ba4
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54249108"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59055826"
 ---
 # <a name="teamworkconversationidentity-resource-type"></a>Tipo de recurso teamworkConversationIdentity
 
@@ -25,7 +25,7 @@ Herda da [identidade](../resources/identity.md).
 |:---|:---|:---|
 |conversationIdentityType|teamworkConversationIdentityType|Tipo de conversa. Os valores possíveis são: `team`, `channel`, `chat`, e `unknownFutureValue`.|
 |displayName|Cadeia de caracteres|Herdado da [identidade](../resources/identity.md). Nome de exibição da conversa. Opcional.|
-|id|Cadeia de caracteres|Herdado da [identidade](../resources/identity.md). ID da conversa.|
+|id|String|Herdado da [identidade](../resources/identity.md). ID da conversa.|
 
 ## <a name="relationships"></a>Relações
 Nenhum

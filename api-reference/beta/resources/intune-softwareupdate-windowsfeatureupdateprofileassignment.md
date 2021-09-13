@@ -2,15 +2,15 @@
 title: Tipo de recurso windowsFeatureUpdateProfileAssignment
 description: Essa entidade contém as propriedades usadas para atribuir um perfil de atualização de recursos do Windows a um grupo.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: b85aad78cda12df1cdc9eb7b1613c26b5caf53be
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: bf2abc682ae3a26ecc0b73c6b53101cf958647b4
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58816890"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59029833"
 ---
 # <a name="windowsfeatureupdateprofileassignment-resource-type"></a>Tipo de recurso windowsFeatureUpdateProfileAssignment
 
