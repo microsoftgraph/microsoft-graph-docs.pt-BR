@@ -2,14 +2,14 @@
 title: Visão geral da API de comunicações na nuvem
 description: As APIs de comunicações na nuvem na Microsoft Graph adicionar uma nova dimensão à forma como seus aplicativos e serviços interagem com os usuários por meio de vários recursos relacionados a comunicações, como chamada e reuniões online.
 author: ananmishr
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-communications
-ms.openlocfilehash: 81f7caf23c6e1ced7e98f5a907d073fa3bf18c66d725fe5b8376dcbd2c67e5c1
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 304e35f3b6ad89d2d996dd75568c04887068002e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54246532"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59136198"
 ---
 # <a name="cloud-communications-api-overview"></a>Visão geral da API de comunicações na nuvem
 As APIs de comunicações na nuvem na Microsoft Graph adicionar uma nova dimensão à forma como seus aplicativos e serviços interagem com os usuários por meio de vários recursos relacionados a comunicações, como chamada e reuniões online. Agilizar sua empresa, agilizando a forma como você responde às necessidades de seus clientes e como seus funcionários colaboram uns com os outros.

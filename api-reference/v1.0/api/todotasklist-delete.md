@@ -1,29 +1,29 @@
 ---
 title: Excluir todoTaskList
-description: Exclui um objeto todoTaskList .
+description: Exclui um objeto todoTaskList.
 author: avijityadav
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 7881513af6f97f96f212854d9e994de19e234dc6
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: 1584946d179f3508d71ccfa58214f4a036b684bd
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49874260"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59062842"
 ---
 # <a name="delete-todotasklist"></a>Excluir todoTaskList
 Namespace: microsoft.graph
 
-Exclui um [objeto todoTaskList](../resources/todotasklist.md) .
+Exclui um [objeto todoTaskList.](../resources/todotasklist.md)
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|Tasks.Read|
-|Delegado (conta pessoal da Microsoft)|Tasks.Read|
+|Delegada (conta corporativa ou de estudante)|Tasks.Read|
+|Delegada (conta pessoal da Microsoft)|Tasks.Read|
 |Aplicativo|Sem suporte|
 
 ## <a name="http-request"></a>Solicitação HTTP

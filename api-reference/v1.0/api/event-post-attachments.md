@@ -2,15 +2,15 @@
 title: Adicionar anexo
 description: Use esta API para adicionar um anexo a um evento. Desde lá
 author: svpsiva
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 14d62182f4d21618dae5d8009c4376404fff66eb
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: 99141257bf507b1c00ade38993c641e1867bee73
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50473810"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59100180"
 ---
 # <a name="add-attachment"></a>Adicionar anexo
 

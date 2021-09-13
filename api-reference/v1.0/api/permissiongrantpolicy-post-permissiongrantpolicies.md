@@ -1,16 +1,16 @@
 ---
 title: Criar permissionGrantPolicy
 description: Cria um objeto permissionGrantPolicy que descreve as condições sob as quais as permissões podem ser concedidas.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: a29bf42b3f9bab89e3a498aaab4154cd91b7e0e4
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: e3beac215c931c015d87c18a8ef56abe07e349bf
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52051260"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59104923"
 ---
 # <a name="create-permissiongrantpolicy"></a>Criar permissionGrantPolicy
 

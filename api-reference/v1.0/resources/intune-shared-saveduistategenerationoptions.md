@@ -2,15 +2,15 @@
 title: Tipo de número savedUIStateGenerationOptions
 description: Ainda não documentado
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: dac42c0f8bda115f8474b006046b65f96d0b9b15eaa98bfab3cd051db8e925dd
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: b557cec81872991829145105ca5f28b72a44337d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54155019"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59084451"
 ---
 # <a name="saveduistategenerationoptions-enum-type"></a>Tipo de número savedUIStateGenerationOptions
 
@@ -23,7 +23,7 @@ Ainda não documentado
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|nenhuma|0|Ainda não documentado|
+|Nenhuma|0|Ainda não documentado|
 |omitSilverlightPolicyReferences|1|Ainda não documentado|
 
 

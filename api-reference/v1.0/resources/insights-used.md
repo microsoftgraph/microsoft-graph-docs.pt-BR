@@ -2,15 +2,15 @@
 title: Tipo de recurso usedInsight
 description: Uma visão que representa documentos usados por um usuário específico. As percepções retornam os documentos mais relevantes que um usuário exibiu ou modificou.
 author: simonhult
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: insights
 doc_type: resourcePageType
-ms.openlocfilehash: 6c1933231c9294daf4cccfeeba41ecd71582e3fe4324e28121f40b444c848e34
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 4163fa241a31b259e87c312b90f07ed05893f682
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54230687"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59036484"
 ---
 # <a name="usedinsight-resource-type"></a>Tipo de recurso usedInsight
 

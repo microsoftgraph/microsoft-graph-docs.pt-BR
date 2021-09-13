@@ -2,15 +2,15 @@
 title: Tipo de recurso iosHomeScreenFolderPage
 description: Uma página para uma pasta que contém aplicativos e clipes da Web na Tela Inicial.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 09abbfdd9ec5d1958c37ef1ed35e15df44ac88d855c75dc08e9c5bb6962fdcdb
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: eb6b27fa9cf033914cc1471c75e78fd2cc244e87
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54218685"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59136450"
 ---
 # <a name="ioshomescreenfolderpage-resource-type"></a>Tipo de recurso iosHomeScreenFolderPage
 

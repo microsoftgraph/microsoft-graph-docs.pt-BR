@@ -2,15 +2,15 @@
 title: Tipo de número managedAppClipboardSharingLevel
 description: Representa o nível ao qual a área de transferência do dispositivo pode ser compartilhada entre aplicativos
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: fe5bc0f20050721636b01c74828b9a708b8e6887a9f2b7868a020fdcc266a223
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: b947e0e4f3d81ed843c5e239dbe410594db70b8c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54152478"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59118086"
 ---
 # <a name="managedappclipboardsharinglevel-enum-type"></a>Tipo de número managedAppClipboardSharingLevel
 

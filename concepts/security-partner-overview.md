@@ -1,15 +1,15 @@
 ---
 title: 'Parceria com a API de Segurança da Microsoft Graph – oportunidades de parceiros de tecnologia '
 description: 'Este artigo descreve as oportunidades de parceria habilitadas pela API de Segurança do Microsoft Graph e foi projetada para ajudar os gerentes de produto e as funções de desenvolvimento de negócios a entender os caminhos de investimento e fornecer informações sobre propostas de valor de parceria. '
-localization_priority: Normal
+ms.localizationpriority: medium
 author: preetikr
 ms.prod: security
-ms.openlocfilehash: 7338cbd91f5d520486e26f29de06e2365ec959d1d6264fe462c6d7d7465446f2
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 5789d5b4b678f3a80f3cd3b96f7d072b35f7970c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54121288"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59093887"
 ---
 # <a name="partnering-with-the-microsoft-graph-security-api--technology-partner-opportunities"></a>Parceria com a API de Segurança da Microsoft Graph – oportunidades de parceiros de tecnologia
 

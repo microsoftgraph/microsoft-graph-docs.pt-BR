@@ -1,16 +1,16 @@
 ---
 title: Enviar chatMessage em um canal
 description: Crie um novo chatMessage no canal especificado.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 444729528c0ff97feed650f240e6d4e8e70dd921
-ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
+ms.openlocfilehash: 184e90a11e4da1778c9a34de6f0e8c7282e0ce86
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53208450"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59130990"
 ---
 # <a name="send-chatmessage-in-channel"></a>Enviar chatMessage no canal
 
@@ -26,7 +26,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegada (conta corporativa ou de estudante)     | ChannelMessage.Send |
+| Delegado (conta corporativa ou de estudante)     | ChannelMessage.Send |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo                            | Teamwork.Migrate.All |
 

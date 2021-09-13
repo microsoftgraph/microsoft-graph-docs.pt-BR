@@ -2,15 +2,15 @@
 title: Permissão de exclusão
 description: Exclua um objeto permission em um site.
 author: BarrySh
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 53649ddaccb9094f222a0aff6e07b2e52144cbe8
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 17ce3a9b19c9455090471243693925c1853a9a22
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50952702"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59085067"
 ---
 # <a name="delete-permission"></a>Permissão de exclusão
 Namespace: microsoft.graph

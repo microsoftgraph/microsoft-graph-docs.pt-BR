@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso conditionalAccessPolicy
 description: Representa uma Azure Active Directory de acesso condicional. As políticas de acesso condicional são regras personalizadas que definem um cenário de acesso.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: videor
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 1d7e21da89155fa174e4396b4807b2cde4f0b2bf18ae0e2bc19fbfcdf819279f
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 7d5818f4bca8aec154eaafa8288df548b530644d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54231870"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59109252"
 ---
 # <a name="conditionalaccesspolicy-resource-type"></a>Tipo de recurso conditionalAccessPolicy
 
@@ -26,7 +26,7 @@ Representa uma Azure Active Directory de acesso condicional. As políticas de ac
 | [Criar conditionalAccessPolicy](../api/conditionalaccessroot-post-policies.md) | [conditionalAccessPolicy](conditionalaccesspolicy.md) | Crie um novo objeto conditionalAccessPolicy. |
 | [Obter conditionalAccessPolicy](../api/conditionalaccesspolicy-get.md) | [conditionalAccessPolicy](conditionalaccesspolicy.md) | Ler propriedades e relações de um objeto conditionalAccessPolicy. |
 | [Atualizar conditionalAccessPolicy](../api/conditionalaccesspolicy-update.md) | [conditionalAccessPolicy](conditionalaccesspolicy.md) | Atualize um objeto conditionalAccessPolicy. |
-| [Excluir conditionalAccessPolicy](../api/conditionalaccesspolicy-delete.md) | None | Exclua um objeto conditionalAccessPolicy. |
+| [Excluir conditionalAccessPolicy](../api/conditionalaccesspolicy-delete.md) | Nenhum(a) | Exclua um objeto conditionalAccessPolicy. |
 
 ## <a name="properties"></a>Propriedades
 
@@ -36,7 +36,7 @@ Representa uma Azure Active Directory de acesso condicional. As políticas de ac
 |createdDateTime|DateTimeOffset| O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`. Readonly. |
 |displayName|String| Especifica um nome de exibição para o objeto conditionalAccessPolicy. |
 |grantControls|[conditionalAccessGrantControls](conditionalaccessgrantcontrols.md)| Especifica os controles de concessão que devem ser cumpridos para passar a política. |
-|id|Cadeia de caracteres| Especifica o identificador de um objeto conditionalAccessPolicy. Apenas leitura.|
+|id|Cadeia de caracteres| Especifica o identificador de um objeto conditionalAccessPolicy. Somente leitura.|
 |modifiedDateTime| DateTimeOffset|O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`. Readonly. |
 |sessionControls|[conditionalAccessSessionControls](conditionalaccesssessioncontrols.md)| Especifica os controles de sessão que são imposto após a assinatura. |
 |state|conditionalAccessPolicyState| Especifica o estado do objeto conditionalAccessPolicy. Os valores possíveis são: `enabled`, `disabled`, `enabledForReportingButNotEnforced`. Obrigatório. |

@@ -1,24 +1,22 @@
 ---
 title: Métodos de List
 description: Recupere uma lista de objetos do método de autenticação.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: mmcla
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 1054c0ef4605b21c9f90f57332ef8bf43dc70d6596c3203ed99aeaea7ff5258a
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 762a0fe0bd68778120e0057c72b33e5c8c94e1de
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54232374"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59100453"
 ---
 # <a name="list-methods"></a>Métodos de List
 
 Namespace: microsoft.graph
 
-Recupere uma lista de objetos [do método de autenticação.](../resources/authenticationmethod.md)
-
-> **Observação:** Somente os métodos suportados no v1.0 serão retornados.
+Recupere uma lista de objetos [do método de autenticação.](../resources/authenticationmethod.md) Essa API retorna apenas os métodos de autenticação suportados nesta versão da API. Consulte [Azure AD authentication methods API overview](../resources/authenticationmethods-overview.md) for a list of currently supported methods.
 
 ## <a name="permissions"></a>Permissões
 
@@ -41,7 +39,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 | Aplicativo                            | UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All |
 
 Para cenários delegados em que um administrador está atuando em outro usuário, o administrador precisa de uma [das seguintes funções:](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
-* Administração global
+* Administrador global
 * Leitor global
 * Administrador de autenticação privilegiada
 * Administrador de autenticação (apenas vê números de telefone mascarados)

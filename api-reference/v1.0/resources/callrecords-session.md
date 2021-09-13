@@ -1,16 +1,16 @@
 ---
 title: tipo de recurso de sessão
 description: O tipo de sessão
-localization_priority: Normal
+ms.localizationpriority: medium
 author: stephenjust
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 8aa0874f0f6853d49472ff756b152aee06f7504fa42a4141c110d10830ae27aa
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: c8afac51a3e1709c5aafd4314045c36d8b34184b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54155180"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59113781"
 ---
 # <a name="session-resource-type"></a>tipo de recurso de sessão
 
@@ -29,7 +29,7 @@ Representa uma User-User ou uma comunicação User-Meeting no caso de uma chamad
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|id|string|Identificador exclusivo da sessão. Somente leitura.|
+|id|cadeia de caracteres|Identificador exclusivo da sessão. Somente leitura.|
 |chamador|[microsoft.graph.callRecords.endpoint](callrecords-endpoint.md)|Ponto de extremidade que iniciou a sessão.|
 |callee|[microsoft.graph.callRecords.endpoint](callrecords-endpoint.md)|Ponto de extremidade que atendeu a sessão.|
 |failureInfo|[microsoft.graph.callRecords.failureInfo](callrecords-failureinfo.md)|Informações de falha associadas à sessão se a sessão falhou.|

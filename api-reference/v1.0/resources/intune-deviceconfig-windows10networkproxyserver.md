@@ -2,15 +2,15 @@
 title: Tipo de recurso windows10NetworkProxyServer
 description: Política de Servidor Proxy de Rede.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 71043bed3bec3ebf0b6e4a336e912f260bf42392ba978cd1198dd6b6af986fb0
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: a6f5562619b2e5ffa26a44cba2eb67a56c787a51
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54229141"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59123080"
 ---
 # <a name="windows10networkproxyserver-resource-type"></a>Tipo de recurso windows10NetworkProxyServer
 

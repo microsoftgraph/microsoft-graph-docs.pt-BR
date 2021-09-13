@@ -2,15 +2,15 @@
 title: Tipo de recurso directoryObject
 description: Representa os itens de auditoria de diretório e sua coleção.
 author: SarahBar
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-access-reports
 doc_type: resourcePageType
-ms.openlocfilehash: 83ac3a1df7162d680d6fa0b17955a0746e6d986ed847372ccbeb020123573afa
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: c542f020e7b67866239dbc0ef8a5612d8f0e5be5
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54130356"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59089827"
 ---
 # <a name="directoryaudit-resource-type"></a>Tipo de recurso directoryObject
 

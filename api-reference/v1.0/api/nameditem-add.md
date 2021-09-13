@@ -1,16 +1,16 @@
 ---
 title: Adicionar Item nomeado
 description: Adiciona um novo nome à coleção de escopo fornecido usando a localidade do usuário para a fórmula.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: ruoyingl
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: 814106eed33c422282e76f5ed08961e0ed5a5a23
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 1dd6d39a04e9a9feaebff00315c6ec4e4e2e5d89
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52786345"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59099452"
 ---
 # <a name="add-named-item"></a>Adicionar Item nomeado
 

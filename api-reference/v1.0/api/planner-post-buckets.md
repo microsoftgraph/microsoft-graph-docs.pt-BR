@@ -1,16 +1,16 @@
 ---
 title: Criar plannerBucket
 description: Use essa API para criar um novo **plannerBucket**.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: bbabe327264e94f30683e39b6511e4e254979ea0
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 5b65da54349992bf46e6fcb2488969c8b85e9134
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52055852"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59104898"
 ---
 # <a name="create-plannerbucket"></a>Criar plannerBucket
 
@@ -87,7 +87,7 @@ Content-length: 92
 
 No corpo da solicitação, forneça uma representação JSON do objeto [plannerBucket](../resources/plannerbucket.md).
 ##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto de resposta exibido aqui pode ser encurtado para legibilidade.
+Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser reduzido para facilitar a leitura.
 <!-- {
   "blockType": "response",
   "truncated": true,

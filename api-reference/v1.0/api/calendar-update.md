@@ -1,16 +1,16 @@
 ---
 title: Atualizar o calendário
 description: 'Atualize as propriedades de um objeto calendar. O calendário pode ser um para um usuário '
-localization_priority: Normal
+ms.localizationpriority: medium
 author: harini84
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: c80bd086fd67a0e6d47cb13ddcfbfdb10a20d6ad
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 3e136b16173f26b62418a74b6528024f151ab27b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52052513"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59038451"
 ---
 # <a name="update-calendar"></a>Atualizar calendário
 
@@ -98,7 +98,7 @@ Content-type: application/json
 ---
 
 ### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto de resposta exibido aqui pode ser encurtado para legibilidade.
+Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser reduzido para facilitar a leitura.
 <!-- {
   "blockType": "response",
   "truncated": true,

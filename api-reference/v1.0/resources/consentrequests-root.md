@@ -1,16 +1,16 @@
 ---
 title: Azure Active Directory de consentimento
 description: Use as solicitações de consentimento do Azure AD para gerenciar o fluxo de trabalho de solicitação para usuários que tentam acessar aplicativos que exigem consentimento do administrador.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: psignoret
 ms.prod: governance
 doc_type: conceptualPageType
-ms.openlocfilehash: fc687460d397c4f8048607e1a1434ae48a7505d3af06590995dd2f47a08340d1
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 796a0101d4c0b0649e7cd9cfbaf9ec4c556cdede
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54212107"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59049666"
 ---
 # <a name="azure-active-directory-consent-requests"></a>Azure Active Directory de consentimento
 

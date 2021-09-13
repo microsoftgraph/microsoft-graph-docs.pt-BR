@@ -2,15 +2,15 @@
 title: tipo de recurso localizedName
 description: Representa o nome localizado usado no armazenamento de termos, que identifica o nome no idioma localizado.
 author: vishriv
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: taxonomy
 doc_type: resourcePageType
-ms.openlocfilehash: eb515cea31fd092d2040edddcff806355829ab79
-ms.sourcegitcommit: 9b8abc940a68dac6ee5da105ca29800cb59775f6
+ms.openlocfilehash: e4ef39aff45906c70195a92dfe6c4cabe87385e8
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "58514874"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59128043"
 ---
 # <a name="localizedname-resource-type"></a>tipo de recurso localizedName
 
@@ -44,7 +44,7 @@ Veja a seguir uma representação JSON do recurso.
 
 [microsoft.graph.termStore.localizedLabel]: termstore-localizedlabel.md
 [microsoft.graph.termstore.store]: termstore-store.md
-[store]: ../resources/termstore-store.md
+[loja]: ../resources/termstore-store.md
 [localizedLabel]: ../resources/termstore-localizedlabel.md
 
 <!--

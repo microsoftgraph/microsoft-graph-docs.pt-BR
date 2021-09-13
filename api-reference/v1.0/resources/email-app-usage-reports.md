@@ -1,16 +1,16 @@
 ---
 title: Relatórios de uso do aplicativo de email
 description: Use os relatórios de uso do aplicativo de email para ver quantos aplicativos de email são usados para se conectar ao Exchange Online. Você também pode ver quais versões de aplicativos do Outlook são usadas, o que permitirá acompanhar os usuários que devem atualizar para versões do Outlook com suporte.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: sarahwxy
 ms.prod: reports
 doc_type: conceptualPageType
-ms.openlocfilehash: 5d31bc425730a0d60d039eb817a414ccb664f01e044328fde5460ad5706a71df
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 8959d65250cd4f0dfac7b71970730bad8e6cfa8c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54192506"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59118621"
 ---
 # <a name="email-app-usage-reports"></a>Relatórios de uso do aplicativo de email
 

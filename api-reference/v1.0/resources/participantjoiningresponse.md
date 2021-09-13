@@ -2,15 +2,15 @@
 title: Tipo de recurso participantJoiningResponse
 description: Uma classe base abstrata que contém a resposta a uma notificação de participação do participante.
 author: yizhenww
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: ed48569a942a8b70fdf8fbbeeadb2921623f1a77db55acb948fb61d7dd778ec3
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: f93d664360ddaddc4a2b65cced517cd21f6f8552
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54141396"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59036036"
 ---
 # <a name="participantjoiningresponse-resource-type"></a>Tipo de recurso participantJoiningResponse
 

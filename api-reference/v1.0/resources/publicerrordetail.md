@@ -2,15 +2,15 @@
 title: Tipo de recurso publicErrorDetail
 description: Representa os detalhes de um erro.
 author: AkJo
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 123655f1f75d9d05ec95d1e9e0c15815c341aa11fffb72c6f59c34bf1572bd8b
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 3965fd862fee8e4e571055bdc37ade80909c9e97
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54138343"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59104065"
 ---
 # <a name="publicerrordetail-resource-type"></a>Tipo de recurso publicErrorDetail
 

@@ -2,15 +2,15 @@
 title: Tipo de recurso deviceManagementReports
 description: Entidade singleton que atua como um contêiner para todas as funcionalidades de relatórios.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 2e797beea7a282433dee07a39def45d2295a01adb796252b43522de863a8257b
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 65e384a9e05fd426b960baf595c35eb21c117340
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54246728"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59036323"
 ---
 # <a name="devicemanagementreports-resource-type"></a>Tipo de recurso deviceManagementReports
 

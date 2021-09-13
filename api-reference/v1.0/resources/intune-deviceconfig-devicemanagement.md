@@ -2,15 +2,15 @@
 title: Tipo de recurso deviceManagement
 description: Entidade singleton que atua como um contêiner para todas as funcionalidades de gerenciamento de dispositivos.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 217bf13f98470ef1fe1b0dbb08a9efa3579b562db2546fc96f7ac993e88b730a
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: b8b4373dbbb4679b70c80bd2661b0a11b8dbfc2c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54175106"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59128281"
 ---
 # <a name="devicemanagement-resource-type"></a>Tipo de recurso deviceManagement
 

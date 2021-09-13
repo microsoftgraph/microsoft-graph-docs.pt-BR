@@ -2,16 +2,16 @@
 author: JeremyKelley
 ms.date: 09/10/2017
 title: Acessar itens compartilhados
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Acesse um DriveItem compartilhado ou uma coleção de itens compartilhados usando um shareId ou uma URL de compartilhamento.
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: 1685a402df438155ce377f6493e6ba1766b10914
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: bdb3cad31818423117c13f20f89067471fc16c1f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50238726"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59085109"
 ---
 # <a name="accessing-shared-driveitems"></a>Acessar DriveItems compartilhados
 
@@ -63,18 +63,18 @@ string encodedUrl = "u!" + base64Value.TrimEnd('=').Replace('/','_').Replace('+'
 
 ## <a name="optional-request-headers"></a>Cabeçalhos de solicitação opcionais
 
-| Nome       | Tipo   | Descrição                                                    |
+| Name       | Tipo   | Descrição                                                    |
 |:-----------|:-------|:---------------------------------------------------------------|
-| **Prefer** | string | Opcional. De definida como um dos `prefer` valores documentados abaixo.  |
+| **Prefer** | cadeia de caracteres | Opcional. De acordo com um dos `prefer` valores documentados abaixo.  |
 
-### <a name="prefer-header-values"></a>Prefira valores de header
+### <a name="prefer-header-values"></a>Preferir valores de header
 
-| Nome                          | Descrição                                                                                             |
+| Name                          | Descrição                                                                                             |
 |:------------------------------|:--------------------------------------------------------------------------------------------------------|
-| redeemSharingLink             | Se o **shareIdOrEncodedSharingUrl** for um link de compartilhamento, conceda ao chamador acesso durável ao item    |
-| redeemSharingLinkIfNecessary  | Mesmo que redeemSharingLink, mas o acesso só é garantido para ser concedido pela duração desta solicitação |
+| redeemSharingLink             | Se **o shareIdOrEncodedSharingUrl** for um link de compartilhamento, conceda ao chamador acesso durável ao item    |
+| redeemSharingLinkIfNecessary  | O mesmo que redeemSharingLink, mas o acesso só é garantido durante a duração dessa solicitação |
 
-redeemSharingLink deve ser considerado equivalente ao chamador navegar até o link de compartilhamento do navegador (aceitando o gesto de compartilhamento), enquanto redeemSharingLinkIfNecessary destina-se a cenários em que a intenção é simplesmente olhar os metadados do link.
+redeemSharingLink deve ser considerado equivalente ao chamador navegando para o link de compartilhamento do navegador (aceitando o gesto de compartilhamento), enquanto redeemSharingLinkIfNecessary destina-se a cenários em que a intenção é simplesmente espiar os metadados do link.
 
 ## <a name="response"></a>Resposta
 
@@ -252,7 +252,7 @@ Content-Type: application/json
 
 ## <a name="error-responses"></a>Respostas de erro
 
-Veja mais informações sobre como os erros são retornados no tópico [Respostas de erro][error-response].
+Leia o tópico [Respostas de Erro][error-response] para obter mais informações sobre como os erros são retornados.
 
 ## <a name="remarks"></a>Comentários
 

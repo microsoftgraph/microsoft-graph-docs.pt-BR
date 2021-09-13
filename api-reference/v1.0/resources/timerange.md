@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso timeRange
 description: Um recurso de intervalo de tempo com hora de início e término.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: efd466503a2f3a8e840170c551b258310e018a0ac62f6073f4fcb1c24c2f5d85
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 6bcfb783537616d6a30436e0d3685b21a664053c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54189209"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59094048"
 ---
 # <a name="timerange-resource-type"></a>Tipo de recurso timeRange
 

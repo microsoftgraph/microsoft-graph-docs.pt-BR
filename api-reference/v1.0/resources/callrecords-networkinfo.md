@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso networkInfo
 description: O tipo networkInfo
-localization_priority: Normal
+ms.localizationpriority: medium
 author: williamlooney
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: d12d9364b33a288aa750b565c7fa60157d020a5a9c00eb5092a71c04178ff237
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: e5f3115b5f450c3998ffb93f8b843dcc80e9f6d9
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54121435"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59029154"
 ---
 # <a name="networkinfo-resource-type"></a>Tipo de recurso networkInfo
 
@@ -29,23 +29,23 @@ Representa informações sobre a rede usada em uma chamada.
 |dnsSuffix|Cadeia de caracteres|Sufixo DNS associado ao adaptador de rede do ponto de extremidade de mídia.|
 |ipAddress|Cadeia de caracteres|Endereço IP do ponto de extremidade de mídia.|
 |linkSpeed|Int64|Velocidade do link em bits por segundo relatado pelo adaptador de rede usado pelo ponto de extremidade de mídia.|
-|macAddress|Cadeia de caracteres|O endereço MAC (controle de acesso de mídia) do dispositivo de rede do ponto de extremidade de mídia.|
+|macAddress|String|O endereço MAC (controle de acesso de mídia) do dispositivo de rede do ponto de extremidade de mídia.|
 |port|Int32|Número da porta de rede usado pelo ponto de extremidade de mídia.|
 |receivedQualityEventRatio|Duplo|Fração da chamada que o ponto de extremidade de mídia detectou na rede estava causando má qualidade do áudio recebido.|
 |reflexiveIPAddress|Cadeia de caracteres|Endereço IP do ponto de extremidade de mídia, conforme visto pelo servidor de retransmissão de mídia. Normalmente, esse é o endereço IP da Internet público associado ao ponto de extremidade.|
-|relayIPAddress|Cadeia de caracteres|Endereço IP do servidor de retransmissão de mídia alocado pelo ponto de extremidade de mídia.|
+|relayIPAddress|String|Endereço IP do servidor de retransmissão de mídia alocado pelo ponto de extremidade de mídia.|
 |relayPort|Int32|Número da porta de rede alocado no servidor de retransmissão de mídia pelo ponto de extremidade de mídia.|
 |sentQualityEventRatio|Duplo|Fração da chamada que o ponto de extremidade de mídia detectou na rede estava causando má qualidade do áudio enviado.|
-|sub-rede|Cadeia de caracteres|Sub-rede usada para fluxo de mídia pelo ponto de extremidade de mídia.|
+|sub-rede|String|Sub-rede usada para fluxo de mídia pelo ponto de extremidade de mídia.|
 |wifiBand|microsoft.graph.callRecords.wifiBand|Banda WiFi usada pelo ponto de extremidade de mídia. Os valores possíveis são: `unknown`, `frequency24GHz`, `frequency50GHz`, `frequency60GHz`, `unknownFutureValue`.|
 |wifiBatteryCharge|Int32|Carga de bateria restante estimada em porcentagem relatada pelo ponto de extremidade de mídia.|
 |wifiChannel|Int32|Canal WiFi usado pelo ponto de extremidade de mídia.|
-|wifiMicrosoftDriver|Cadeia de caracteres|Nome do driver Do Microsoft WiFi usado pelo ponto de extremidade de mídia. O valor pode ser localizado com base no idioma usado pelo ponto de extremidade.|
+|wifiMicrosoftDriver|String|Nome do driver Do Microsoft WiFi usado pelo ponto de extremidade de mídia. O valor pode ser localizado com base no idioma usado pelo ponto de extremidade.|
 |wifiMicrosoftDriverVersion|Cadeia de caracteres|Versão do driver Do Microsoft WiFi usado pelo ponto de extremidade de mídia.|
 |wifiRadioType|microsoft.graph.callRecords.wifiRadioType|Tipo de rádio WiFi usado pelo ponto de extremidade de mídia. Os valores possíveis são: `unknown`, `wifi80211a`, `wifi80211b`, `wifi80211g`, `wifi80211n`, `wifi80211ac`, `wifi80211ax`, `unknownFutureValue`.|
 |wifiSignalStrength|Int32|Força do sinal WiFi em porcentagem relatada pelo ponto de extremidade de mídia.|
 |wifiVendorDriver|Cadeia de caracteres|Nome do driver WiFi usado pelo ponto de extremidade de mídia. O valor pode ser localizado com base no idioma usado pelo ponto de extremidade.|
-|wifiVendorDriverVersion|Cadeia de caracteres|Versão do driver WiFi usado pelo ponto de extremidade de mídia.|
+|wifiVendorDriverVersion|String|Versão do driver WiFi usado pelo ponto de extremidade de mídia.|
 
 ## <a name="json-representation"></a>Representação JSON
 

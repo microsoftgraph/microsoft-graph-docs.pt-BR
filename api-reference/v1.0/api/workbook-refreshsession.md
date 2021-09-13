@@ -2,15 +2,15 @@
 title: Atualizar Sessão
 description: 'Use essa API para atualizar uma sessão de workbook existente. '
 author: lumine2008
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 5e4aaad295abc4ce83b8669f3d4053edafb1ad5d
-ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
+ms.openlocfilehash: 4f33fb37bf99cc1711d64f4546ea83384e6a0a8d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "50575837"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59113865"
 ---
 # <a name="refresh-session"></a>Atualizar Sessão
 

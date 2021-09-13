@@ -1,14 +1,14 @@
 ---
 title: Usar o Microsoft Graph Toolkit com oTron
 description: Começar a usar o microsoft Graph Toolkit em um aplicativo Desotron.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: amrutha95
-ms.openlocfilehash: 4c415d7d99981f3bd3e10180d46a142e5f80231ed7d5222a64faaf7942a05044
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: d7bb3f9d31dbe399b52e33ab3eed086c1f161324
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54157897"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59089253"
 ---
 # <a name="use-the-microsoft-graph-toolkit-with-electron"></a>Usar o Microsoft Graph Toolkit com oTron
 
@@ -243,7 +243,7 @@ let config: MsalElectronConfig = {
 ```
 Para obter mais detalhes sobre como implementar isso, consulte o [exemplo microsoft-authentication-library-for-js.](https://github.com/AzureAD/microsoft-authentication-library-for-js/blob/dev/extensions/samples/msal-node-extensions/index.js)
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Próximas etapas
 - Experimente os componentes do [playground](https://mgt.dev).
 - Faça uma pergunta sobre [o Microsoft Q&A](/answers/products/m365#microsoft-graph).
 - Relate bugs ou deixe uma solicitação de recurso no [GitHub](https://aka.ms/mgt).

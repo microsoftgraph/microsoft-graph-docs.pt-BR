@@ -2,15 +2,15 @@
 title: Criar permissão
 description: Crie um novo objeto de permissão.
 author: BarrySh
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: c950085b9271b5c3f39eb32a69e93048b55b549f
-ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
+ms.openlocfilehash: bfe3c1e68d904950d1e412db651d4ce13c026acc
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51473616"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59118917"
 ---
 # <a name="create-permission"></a>Criar permissão
 Namespace: microsoft.graph

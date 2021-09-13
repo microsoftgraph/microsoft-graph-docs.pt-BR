@@ -1,16 +1,16 @@
 ---
 title: Lista directoryAudits
 description: Descreve o método de lista do recurso directoryAudit (entidade) da API Graph Microsoft.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: SarahBar
 ms.prod: identity-and-access-reports
 doc_type: apiPageType
-ms.openlocfilehash: 8105ba2dd072ce5ed540a1a44df59f27c05ea56d
-ms.sourcegitcommit: 5bb981b4853663354a566d4a4a5cbf288939e441
+ms.openlocfilehash: 7dcf6aeeb5a9053503de9f43d0945f77d2fe7788
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "53579215"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59038073"
 ---
 # <a name="list-directoryaudits"></a>Lista directoryAudits
 
@@ -27,6 +27,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 | Delegada (conta corporativa ou de estudante)     | AuditLog.Read.All e Directory.Read.All    |
 | Delegado (conta pessoal da Microsoft) | Sem suporte                               |
 | Aplicativo                            | AuditLog.Read.All e Directory.Read.All    |
+
+> [!IMPORTANT]
+> Esta API tem um [problema conhecido](/graph/known-issues#azure-ad-activity-reports) e atualmente requer consentimento para as permissões **AuditLog.Read.All** e **Directory.Read.All.**
 
 ## <a name="http-request"></a>Solicitação HTTP
 

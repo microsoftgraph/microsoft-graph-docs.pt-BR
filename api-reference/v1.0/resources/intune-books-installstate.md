@@ -2,15 +2,15 @@
 title: Tipo de número installState
 description: Valores possíveis para o estado de instalação.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 33b10e3d8a4efd9c0e03a86670e66612ae9bf97da97c5032dd1c542b3057cbec
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 2a055b71e69d58d1451792aeb068d203e0062623
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54135166"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59136583"
 ---
 # <a name="installstate-enum-type"></a>Tipo de número installState
 

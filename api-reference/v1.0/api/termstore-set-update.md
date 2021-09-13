@@ -2,15 +2,15 @@
 title: Conjunto de atualizações
 description: Atualize as propriedades de um objeto set.
 author: vishriv
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: taxonomy
 doc_type: apiPageType
-ms.openlocfilehash: b36db1756c104ddc41a2483b3403f04c989b61b3
-ms.sourcegitcommit: 9b8abc940a68dac6ee5da105ca29800cb59775f6
+ms.openlocfilehash: dca67f78da5eadea414a43219006b39f5e97c2b7
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "58514866"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59084759"
 ---
 # <a name="update-set"></a>Conjunto de atualizações
 Namespace: microsoft.graph.termStore
@@ -52,7 +52,7 @@ A tabela a seguir mostra as propriedades que podem ser editadas para o [objeto s
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |localizedNames|[coleção microsoft.graph.termStore.localizedName](../resources/termstore-localizedname.md)|Nome do conjunto.|
-|descrição|Cadeia de caracteres|Descrição do conjunto.|
+|description|Cadeia de caracteres|Descrição do conjunto.|
 |properties|[coleção microsoft.graph.keyValue](../resources/keyvalue.md)|Propriedades de um conjunto.|
 
 
@@ -65,6 +65,8 @@ Se tiver êxito, este método retornará um código de resposta e um `200 OK` ob
 
 ### <a name="request"></a>Solicitação
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_set"
@@ -79,6 +81,24 @@ Content-length: 288
   "description": "mySet"
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-set-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-set-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-set-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-set-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>Resposta
 

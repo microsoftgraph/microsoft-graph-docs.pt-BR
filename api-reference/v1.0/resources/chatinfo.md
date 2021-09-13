@@ -2,15 +2,15 @@
 title: Tipo de recurso chatInfo
 description: Informações sobre uma mensagem no Microsoft Teams.
 author: ananmishr
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 5ae704998bab3015c265d96c188dbcf8eba4729c4df3a1b8a72f3d5076a7f8b6
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: bc548c9f107232368b43aaeb154db2cf5e2cc517
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54180877"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59109427"
 ---
 # <a name="chatinfo-resource-type"></a>Tipo de recurso chatInfo
 
@@ -22,9 +22,9 @@ Isso contém informações associadas a reuniões Microsoft Teams reuniões.
 
 | Propriedade            | Tipo    | Descrição|
 |:--------------------|:--------|:-----------|
-| messageId           | String  | O identificador exclusivo de uma mensagem em um Microsoft Teams canal. |
-| replyChainMessageId | Cadeia de caracteres  | A ID da mensagem de resposta. |
-| threadId            | Cadeia de caracteres  | O identificador exclusivo de um thread no Microsoft Teams. |
+| messageId           | Cadeia de caracteres  | O identificador exclusivo de uma mensagem em um Microsoft Teams canal. |
+| replyChainMessageId | String  | A ID da mensagem de resposta. |
+| threadId            | String  | O identificador exclusivo de um thread no Microsoft Teams. |
 
 ## <a name="json-representation"></a>Representação JSON
 

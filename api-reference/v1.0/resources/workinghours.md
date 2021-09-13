@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso workingHours
 description: Representa os dias da semana e as horas de um fuso horário específico que o usuário trabalha.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: abheek-das
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 775de66d328767e24a2bf7a47478cfcc2b482118e668ebf9c915eb069308f80a
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 957ca46025a813c23cfc449460112dce3ea80210
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54182354"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59134105"
 ---
 # <a name="workinghours-resource-type"></a>Tipo de recurso workingHours
 

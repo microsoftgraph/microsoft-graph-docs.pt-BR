@@ -1,14 +1,14 @@
 ---
 title: Componente person no microsoft Graph Toolkit
 description: O componente de pessoa é usado para exibir uma pessoa ou contato usando sua foto, nome e/ou endereço de email.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: nmetulev
-ms.openlocfilehash: 8bd610d6bb7b90d45c01d1eaffaaa6ca8cf220b1631558f09a4275acd5a35a4d
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 0cb5c1306a9cec54df6ab6a9d3cbd1aa0995a64a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54154816"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59103841"
 ---
 # <a name="person-component-in-the-microsoft-graph-toolkit"></a>Componente person no microsoft Graph Toolkit
 
@@ -112,7 +112,7 @@ mgt-person {
 
 Para saber mais, confira [componentes de estilo](../customize-components/style.md).
 
-## <a name="events"></a>Eventos
+## <a name="events"></a>Events
 
 Os eventos a seguir são disparados do componente.
 
@@ -130,8 +130,8 @@ O `mgt-person` componente dá suporte a vários [modelos](../customize-component
 
 | Tipo de dados | Contexto de dados | Descrição |
 | --------- | ------------ | ----------- |
-| loading | nenhuma | O modelo a ser render enquanto o componente está em um estado de carregamento. |
-| no-data | nenhuma | O modelo a ser renderizar quando nenhuma imagem ou dados de pessoa estiver disponível. | 
+| loading | Nenhuma | O modelo a ser render enquanto o componente está em um estado de carregamento. |
+| no-data | Nenhuma | O modelo a ser renderizar quando nenhuma imagem ou dados de pessoa estiver disponível. | 
 | Padrão. | pessoa: o objeto de detalhes da pessoa <br> `personImage`: A URL da imagem <br> `personPresence`: O objeto de detalhes de presença para pessoa  | O modelo padrão substitui todo o componente por seu próprio. |
 | person-card | pessoa: o objeto de detalhes da pessoa <br> `personImage`: A URL da imagem | O modelo para atualizar o mgt-person-card exibido em foco ou clique. |
 | line1 | pessoa: o objeto de detalhes da pessoa | O modelo para a primeira linha de metadados de pessoa. |

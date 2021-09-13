@@ -2,15 +2,15 @@
 title: Obter deviceManagementExportJob
 description: Leia propriedades e relações do objeto deviceManagementExportJob.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 7f14c99455ae9100a947fca6ff184eccb85a10702efcb6261bda4d684bca2316
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 41a76d6c913b82fb5eb464a578224452f356b7a4
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54208948"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59099480"
 ---
 # <a name="get-devicemanagementexportjob"></a>Obter deviceManagementExportJob
 

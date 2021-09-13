@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso scopedRoleMembership
 description: Uma associação de função com escopo descreve a associação de um usuário a uma função de diretório, que é ainda mais escopo para uma Unidade Administrativa (AU).  Isso fornece um mecanismo para permitir que um administrador de uma empresa de todo o locatário delegar privilégios administrativos a um usuário gerencie usuários e grupos em um subconjunto da organização (o subconjunto que está sendo definido por uma AU).
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: directory-management
 author: abhijeetsinha
-ms.openlocfilehash: 1a05a741ecc14050d76ca2f414accf13cc3a41f0d80447e521cc74745a1bc3f1
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 7da1297b03b875a423fb135a2e8c1bab611041a5
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54159810"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59035938"
 ---
 # <a name="scopedrolemembership-resource-type"></a>Tipo de recurso scopedRoleMembership
 
@@ -24,9 +24,9 @@ Não há suporte para consultas diretas a esse recurso.  Consulte o tópico [uni
 ## <a name="properties"></a>Propriedades
 | Propriedade   | Tipo | Descrição |
 |:---------------|:--------|:----------|
-|administrativeUnitId|string|Identificador exclusivo da unidade administrativa à qual a função de diretório é escopo|
-|id|string| Identificador exclusivo para a associação de função com escopo. Somente leitura.|
-|roleId|string| Identificador exclusivo da função de diretório na qual o membro está.|
+|administrativeUnitId|cadeia de caracteres|Identificador exclusivo da unidade administrativa à qual a função de diretório é escopo|
+|id|cadeia de caracteres| Identificador exclusivo para a associação de função com escopo. Somente leitura.|
+|roleId|cadeia de caracteres| Identificador exclusivo da função de diretório na qual o membro está.|
 |roleMemberInfo|[identity](identity.md)| Informações de identidade do membro da função. Representa o usuário que é membro dessa função com escopo.|
 
 ## <a name="relationships"></a>Relações

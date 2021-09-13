@@ -2,15 +2,15 @@
 title: Tipo de número deviceManagementExchangeConnectorStatus
 description: O status atual do conector Exchange.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: ec4baa60b897fa70b089520bf991cd9451ffda3615188c2425d1850400531ab6
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: eb9d4e87dacd0fe31c18e04468ef3a833e86ccfa
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54175001"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59089414"
 ---
 # <a name="devicemanagementexchangeconnectorstatus-enum-type"></a>Tipo de número deviceManagementExchangeConnectorStatus
 
@@ -23,7 +23,7 @@ O status atual do conector Exchange.
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|nenhuma|0|Nenhum Conector existe.|
+|Nenhuma|0|Nenhum Conector existe.|
 |connectionPending|1|Pending Connection to the Exchange Environment.|
 |connected|2|Conectado ao Exchange Ambiente|
 |desconectado|3|Desconectado do ambiente Exchange.|

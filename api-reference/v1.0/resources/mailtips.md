@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso mailTips
 description: 'Mensagens informativas sobre um destinatário, que são exibidas para os usuários enquanto eles compõem uma mensagem. Por exemplo, uma mensagem fora do escritório '
-localization_priority: Normal
+ms.localizationpriority: medium
 author: abheek-das
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 893c1e558de1c7874094044890dd070a76fe4359f50ce306aafff214e55b0607
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 91b3e8934714770133032dbc4552d6f2cc9d6a18
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54223344"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59036099"
 ---
 # <a name="mailtips-resource-type"></a>Tipo de recurso mailTips
 
@@ -29,7 +29,7 @@ Mensagens informativas sobre um destinatário, que são exibidas para os usuári
 | erro | [mailTipsError](../resources/mailtipserror.md) | Erros que ocorrem durante a [ação getMailTips.](../api/user-getmailtips.md) |
 | externalMemberCount | Int32 | O número de membros externos se o destinatário for uma lista de distribuição. |
 | isModerated |Booliano  | Se o envio de mensagens para o destinatário requer aprovação. Por exemplo, se o destinatário for uma lista de distribuição grande e um moderador tiver sido definido para aprovar mensagens enviadas para essa lista de distribuição ou se o envio de mensagens para um destinatário exigir aprovação do gerente do destinatário. |
-| mailboxFull | Booliano | O status completo da caixa de correio do destinatário. |
+| mailboxFull | Boolean | O status completo da caixa de correio do destinatário. |
 | maxMessageSize | Int32 | O tamanho máximo da mensagem que foi configurado para a organização ou a caixa de correio do destinatário. |
 | recipientScope | recipientScopeType | O escopo do destinatário. Os valores possíveis são: `none`, `internal`, `external`, `externalPartner`, `externalNonParther`. Por exemplo, um administrador pode definir outra organização como seu "parceiro". O escopo será útil se um administrador quiser que determinadas dicas de email sejam acessíveis a determinados escopos. Também é útil para os envios informá-los de que sua mensagem pode sair da organização, ajudando-os a tomar as decisões corretas sobre texto, tom e conteúdo.|
 | recipientSuggestions | Coleção [recipient](../resources/recipient.md) | Destinatários sugeridos com base em contextos anteriores em que aparecem na mesma mensagem. |

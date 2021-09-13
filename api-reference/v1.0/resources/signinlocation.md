@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso signInLocation
 description: Fornece a cidade, o estado e o país/região de onde a login aconteceu.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: dhanyahk
 ms.prod: identity-and-access-reports
 doc_type: resourcePageType
-ms.openlocfilehash: fb22cf430ec3bffd04150398600beae5af4c41579f00f3cf49196587efb9f44b
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 826daa833829b8ca9da9f4844827b308c8843044
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54124154"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59139594"
 ---
 # <a name="signinlocation-resource-type"></a>Tipo de recurso signInLocation
 
@@ -25,7 +25,7 @@ Fornece a cidade, o estado e o país/região de onde a login aconteceu.
 |city|Cadeia de caracteres|Fornece a cidade de origem do login. Isso é calculado usando informações de latitude/longitude da atividade de login.|
 |countryOrRegion|String|Fornece as informações do código do país (código de 2 letras) de onde a assinatura se originou.  Isso é calculado usando informações de latitude/longitude da atividade de login.|
 |geoCoordinates|[geoCoordinates](geocoordinates.md)|Fornece a latitude, longitude e altitude de onde o login se originou.|
-|state|Cadeia de caracteres|Fornece o Estado de origem do sign-in. Isso é calculado usando informações de latitude/longitude da atividade de login.|
+|state|String|Fornece o Estado de origem do sign-in. Isso é calculado usando informações de latitude/longitude da atividade de login.|
 
 ## <a name="json-representation"></a>Representação JSON
 

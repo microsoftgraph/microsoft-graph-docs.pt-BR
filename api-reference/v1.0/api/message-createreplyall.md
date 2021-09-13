@@ -1,16 +1,16 @@
 ---
 title: 'message: createReplyAll'
 description: Crie um rascunho para responder ao remetente e a todos os destinatários da mensagem especificada, no formato JSON ou MIME.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 2d1b3970995db5e3d678e0e1b6daeef6a72ee40b
-ms.sourcegitcommit: 503c72036c376a30e08c29df8e7730a7afcab66e
+ms.openlocfilehash: 010376e64e118e417b1ac8530afa6ccb6df8e739
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52870413"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59110274"
 ---
 # <a name="message-createreplyall"></a>message: createReplyAll
 

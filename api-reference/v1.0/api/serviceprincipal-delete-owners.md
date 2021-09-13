@@ -2,15 +2,15 @@
 title: Remover proprietário
 description: Remova um proprietário de um servicePrincipals.
 author: sureshja
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: db723a3dc0cfd3890e87690a6b1c232c594c7aa8
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 6bd008288a8d43f8319b604689f87b0c7b506b2b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52787130"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59110127"
 ---
 # <a name="remove-owner"></a>Remover proprietário
 

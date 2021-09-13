@@ -2,15 +2,15 @@
 title: Excluir macOSDeviceFeaturesConfiguration
 description: Exclui macOSDeviceFeaturesConfiguration.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 1841f6c331501920331f5f6e051173fcb93b5cc3f3e5822af7c5c9dac3f63049
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 9a356f807a42c77fd38c10b47e23f1639bdb078e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54252470"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59090401"
 ---
 # <a name="delete-macosdevicefeaturesconfiguration"></a>Excluir macOSDeviceFeaturesConfiguration
 

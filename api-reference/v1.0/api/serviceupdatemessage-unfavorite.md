@@ -2,15 +2,15 @@
 title: 'serviceUpdateMessage: unfavorite'
 description: Remova o status favorito do serviceUpdateMessage para o usuário que está assinado.
 author: payiAzure
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: service-communications
 doc_type: apiPageType
-ms.openlocfilehash: 221dfd0f19c9699068198099219546ad9a0c2432
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 98a2f3302177fa454341e51172405fecfcefe4ea
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58257955"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59118999"
 ---
 # <a name="serviceupdatemessage-unfavorite"></a>serviceUpdateMessage: unfavorite
 Namespace: microsoft.graph
@@ -22,8 +22,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|ServiceMessageViewpoint.Write|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Delegado (conta corporativa ou de estudante)|ServiceMessageViewpoint.Write|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|Sem suporte|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -49,7 +49,7 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta ação.
 
 |Parâmetro|Tipo|Descrição|
 |:---|:---|:---|
-|messageIds|String collection|Lista de IDs de mensagens a remover do favorito.|
+|messageIds|Coleção String|Lista de IDs de mensagens a remover do favorito.|
 
 ## <a name="response"></a>Resposta
 

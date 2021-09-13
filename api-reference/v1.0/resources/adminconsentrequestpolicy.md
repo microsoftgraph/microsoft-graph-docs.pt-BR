@@ -2,15 +2,15 @@
 title: Tipo de recurso adminConsentRequestPolicy
 description: Especifica a política pela qual as solicitações de consentimento podem ser criadas e gerenciadas para todo o locatário.
 author: psignoret
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: d2c4bffc0de82f4bdb55186db76dc0eb0fe17ff77e3edf6cc1b0d6fddcf32d68
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: eb2a2bdc94b900d28c5446524d32251dd76027b5
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54202550"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59094489"
 ---
 # <a name="adminconsentrequestpolicy-resource-type"></a>Tipo de recurso adminConsentRequestPolicy
 
@@ -32,8 +32,8 @@ O **adminConsentRequestPolicy** fornece configurações adicionais ao criar uma 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |isEnabled|Booliano|Especifica se o recurso de solicitação de consentimento do administrador está habilitado ou desabilitado. Obrigatório.|
-|notifyReviewers|Booliano|Especifica se os revisadores receberão notificações. Obrigatório.|
-|remindersEnabled|Booliano|Especifica se os revisadores receberão emails de lembrete. Obrigatório.|
+|notifyReviewers|Boolean|Especifica se os revisadores receberão notificações. Obrigatório.|
+|remindersEnabled|Boolean|Especifica se os revisadores receberão emails de lembrete. Obrigatório.|
 |requestDurationInDays|Int32|Especifica a duração em que a solicitação está ativa antes de expirar automaticamente se nenhuma decisão for aplicada.|
 |revisadores|[Coleção accessReviewReviewerScope](../resources/accessreviewreviewerscope.md)|A lista de revisadores para o consentimento do administrador. Obrigatório.|
 |versão|Int32|Especifica a versão dessa política. Quando a política é atualizada, essa versão é atualizada. Somente leitura.|

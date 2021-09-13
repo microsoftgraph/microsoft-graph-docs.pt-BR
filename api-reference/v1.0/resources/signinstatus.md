@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso signInStatus
 description: Fornece o status de login (Sucesso ou Falha) da assinatura
-localization_priority: Normal
+ms.localizationpriority: medium
 author: dhanyahk
 ms.prod: identity-and-access-reports
 doc_type: resourcePageType
-ms.openlocfilehash: 350ed66245164b5745d7b6f0bc962ebab5b1b4e46e8d7fc6b9a5c45b17ccc3a1
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 87181dd2ec911d2ebaa613dd4bc7ad4d46182a2d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54222669"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59139580"
 ---
 # <a name="signinstatus-resource-type"></a>Tipo de recurso signInStatus
 

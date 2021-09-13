@@ -2,15 +2,15 @@
 author: daspek
 title: Tipo de recurso editAction
 description: O objeto EditAction fornece informações sobre uma atividade que editou um item.
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 59fb67f45d40f585029264a936237aa66b9009927852f3c6f886c7ca820fc38f
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 97f977358e5392dd581806d483e158d816cd65c6
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54149965"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59067448"
 ---
 # <a name="editaction-resource-type"></a>Tipo de recurso editAction
 

@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso chatMessageAttachment
 description: Representa um anexo a uma entidade de mensagem de chat.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: microsoft-teams
 author: RamjotSingh
-ms.openlocfilehash: e42eca895b00c46561673991745f9a60a1476a4f2286b0cb3b530213422620c7
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 1b02a5c034be39ee9eeb941b7fe875e8d4c9e8c1
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54175326"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59094412"
 ---
 # <a name="chatmessageattachment-resource-type"></a>Tipo de recurso chatMessageAttachment
 
@@ -24,11 +24,11 @@ Uma entidade de tipo é retornada como parte da API Obter mensagens `chatMessage
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |id|cadeia de caracteres| Somente leitura. ID exclusiva do anexo.|
-|contentType| string | O tipo de mídia do anexo de conteúdo. Ele pode ter os seguintes valores: <br><ul><li>`reference`: Attachment é um link para outro arquivo. Preencha o contentURL com o link para o objeto.</li><li>Quaisquer contentTypes suportados pelo objeto Attachment da Estrutura de [Bot](/azure/bot-service/rest-api/bot-framework-rest-connector-api-reference?#attachment-object)</li><li>`application/vnd.microsoft.card.codesnippet`: Um trecho de código. </li><li>`application/vnd.microsoft.card.announcement`: Um header de comunicado. </li>|
+|contentType| cadeia de caracteres | O tipo de mídia do anexo de conteúdo. Ele pode ter os seguintes valores: <br><ul><li>`reference`: Attachment é um link para outro arquivo. Preencha o contentURL com o link para o objeto.</li><li>Quaisquer contentTypes suportados pelo objeto Attachment da Estrutura de [Bot](/azure/bot-service/rest-api/bot-framework-rest-connector-api-reference?#attachment-object)</li><li>`application/vnd.microsoft.card.codesnippet`: Um trecho de código. </li><li>`application/vnd.microsoft.card.announcement`: Um header de comunicado. </li>|
 |contentUrl|string|URL do conteúdo do anexo. Protocolos com suporte: http, https, arquivo e dados.|
-|conteúdo|string|O conteúdo do anexo. Se o anexo for um [cartão rich ,](/microsoftteams/platform/task-modules-and-cards/cards/cards-reference)de definir a propriedade como o objeto rich card. Essa propriedade e contentUrl são mutuamente exclusivos.|
+|conteúdo|cadeia de caracteres|O conteúdo do anexo. Se o anexo for um [cartão rich ,](/microsoftteams/platform/task-modules-and-cards/cards/cards-reference)de definir a propriedade como o objeto rich card. Essa propriedade e contentUrl são mutuamente exclusivos.|
 |nome|string|Nome do anexo.|
-|thumbnailUrl| string |URL para uma imagem em miniatura que o canal pode usar se for compatível com o uso de uma forma alternativa, menor de conteúdo ou contentUrl. Por exemplo, se você definir contentType como aplicativo/word e definir contentUrl como o local do documento do Word, poderá incluir uma imagem em miniatura que representa o documento. O canal poderia exibir a imagem em miniatura em vez do documento. Quando o usuário clica na imagem, o canal abriria o documento.|
+|thumbnailUrl| cadeia de caracteres |URL para uma imagem em miniatura que o canal pode usar se for compatível com o uso de uma forma alternativa, menor de conteúdo ou contentUrl. Por exemplo, se você definir contentType como aplicativo/word e definir contentUrl como o local do documento do Word, poderá incluir uma imagem em miniatura que representa o documento. O canal poderia exibir a imagem em miniatura em vez do documento. Quando o usuário clica na imagem, o canal abriria o documento.|
 
 ## <a name="json-representation"></a>Representação JSON
  Veja a seguir uma representação JSON do recurso

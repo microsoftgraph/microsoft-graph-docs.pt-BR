@@ -1,16 +1,16 @@
 ---
 title: Criar workbookCommentReply
 description: Use essa API para criar uma nova workbookCommentReply.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: grangeryy
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: e52a08fab6caad40cedf4fa72e0b16fc7aa5214b
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 191a97ed263c448790f795437bebca305216daf2
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52053745"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59104521"
 ---
 # <a name="create-workbookcommentreply"></a>Criar workbookCommentReply
 

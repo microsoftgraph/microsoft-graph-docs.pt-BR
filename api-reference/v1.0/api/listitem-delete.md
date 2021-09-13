@@ -2,16 +2,16 @@
 author: JeremyKelley
 ms.date: 09/11/2017
 title: Excluir uma entrada de uma lista do SharePoint
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: sharepoint
 description: Remove um item de uma lista.
 doc_type: apiPageType
-ms.openlocfilehash: e1210a5e3c107cad2b54194c27893f73341cb6a2
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: 16c3ab6d52b341fe7ce44ab826a910c760c51952
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50238775"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59037422"
 ---
 # <a name="delete-an-item-from-a-list"></a>Excluir um item de uma lista.
 
@@ -43,7 +43,7 @@ DELETE https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items/{i
 
 ## <a name="optional-request-headers"></a>Cabeçalhos de solicitação opcionais
 
-| Nome       | Valor | Descrição
+| Name       | Valor | Descrição
 |:-----------|:------|:--------------------------------------------------------
 | _if-match_ | etag  | Se este cabeçalho de solicitação estiver incluso e a eTag fornecida não corresponder à marca atual no item, uma resposta `412 Precondition Failed` será exibida e o item não será excluído.
 
