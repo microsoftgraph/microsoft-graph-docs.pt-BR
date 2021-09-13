@@ -1,16 +1,16 @@
 ---
 title: " Tipo de recurso averageComparativeScore"
 description: Esse recurso contém várias pontuações diferentes com base em diferentes escopos (por exemplo, média por setor vertical, média por tamanho de assento da empresa e assim por diante) e categoria de controle (Identidade, Dados, Dispositivo, Aplicativos, Infraestrutura).
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: ''
 author: preetikr
-ms.openlocfilehash: 7a09d3b2c6457063457eee4a4bfbe3d1f88823f8864f66ac4a1ea690e33c77e6
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 4c563d8754ba5afb1c4fe89d237f978d886f9eab
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54210145"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59064606"
 ---
 #  <a name="averagecomparativescore-resource-type"></a>Tipo de recurso averageComparativeScore
 
@@ -20,7 +20,7 @@ Esse recurso contém várias pontuações diferentes com base em diferentes esco
 
 |Propriedade |Tipo |Descrição |
 |:--|:--|:--|
-|   base   |   Cadeia de caracteres  |   Tipo de escopo (Por AllTenants, TotalSeats, IndustryTypes).  |
+|   base   |   String  |   Tipo de escopo (Por AllTenants, TotalSeats, IndustryTypes).  |
 |   averageScore    |   Duplo  | Pontuação média dentro da base especificada. |
 |   deviceScore |   Duplo  | Pontuação média dentro da base especificada. |
 |   dataScore   |   Duplo  | Pontuação média dentro da base especificada. |

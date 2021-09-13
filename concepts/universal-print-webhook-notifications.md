@@ -2,15 +2,15 @@
 title: Assine para alterar notificações de APIs de impressão na nuvem usando o Microsoft Graph
 description: Saiba como assinar para alterar as notificações de eventos de trabalho de impressão usando a API do Microsoft Graph.
 author: jahsu
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: cloud-printing
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: adba2568931fe1bf0a6c3fc9ac765d74f6021f4a25b2a02a0be40b5a5a077c64
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: df511878bfebba02bd68ede445a26b66233caeae
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54251572"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59143455"
 ---
 # <a name="subscribe-to-change-notifications-from-cloud-printing-apis-using-microsoft-graph"></a>Assine para alterar notificações de APIs de impressão na nuvem usando o Microsoft Graph
 

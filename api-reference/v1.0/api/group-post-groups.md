@@ -2,15 +2,15 @@
 title: Criar grupo
 description: 'Crie um novo grupo conforme especificado no corpo da solicitação. '
 author: Jordanndahl
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 2b1a4f9c8f482dedc7842ae3785d8ccf436818ca
-ms.sourcegitcommit: c6f7a931a8d83ac54f577b7bec08237fd17ce51a
+ms.openlocfilehash: ccd9b1303d4c507d4a17bb16b04387ec08f7a43f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58490480"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59074294"
 ---
 # <a name="create-group"></a>Criar grupo
 
@@ -49,27 +49,22 @@ POST /groups
 | Content-Type  | application/json  |
 
 ## <a name="request-body"></a>Corpo da solicitação
-A tabela a seguir mostra as propriedades do recurso [group](../resources/group.md) que você deve especificar quando criar um grupo. 
+
+No corpo da solicitação, forneça uma representação JSON do objeto de [grupo](../resources/group.md).
+
+A tabela a seguir mostra as propriedades necessárias ao criar o [grupo](../resources/group.md). Especifique outras propriedades graváveis conforme necessário para o seu grupo.
 
 | Propriedade | Tipo | Descrição|
 |:---------------|:--------|:----------|
-| displayName | cadeia de caracteres | O nome a ser exibido no livro de endereços do grupo. Comprimento máximo: 256 caracteres. Necessário. |
-| description | string | Uma descrição para o grupo. Máx. comprimento: 1024 caracteres. Opcional. |
-| isAssignableToRole | Booliano | Definir para **true** para habilitar o grupo a ser atribuído uma função do Azure AD. Somente o Administrador com Função Privilegiada e o Administrador Global podem definir o valor dessa propriedade. Opcional. |
-| mailEnabled | booliano | Defina como **true** para grupos habilitados para email. Obrigatório. |
-| mailNickname | string | O alias de email do grupo. Máx. comprimento: 64 caracteres. Essa propriedade pode conter apenas caracteres no [conjunto de caracteres ASCII de 0 a 127](/office/vba/language/reference/user-interface-help/character-set-0127), exceto o seguinte: ` @ () \ [] " ; : . <> , SPACE`. Obrigatório. |
-| securityEnabled | booliano | Defina como **true** para grupos habilitados para segurança, incluindo grupos do Microsoft 365. Obrigatório. |
-| owners | coleção de cadeias de caracteres | Esta propriedade representa os proprietários do grupo na hora de criação.  Os proprietários não são adicionados automaticamente como membros do grupo, a menos que especificados como propriedade dos **membros**. Opcional. |
-| membros | coleção de cadeias de caracteres | Esta propriedade representa os membros do grupo na hora de criação. Opcional. |
-|visibility|Cadeia de caracteres|Especifica a visibilidade de um grupo do Microsoft 365. Os valores possíveis são: `Private`, `Public`, `HiddenMembership` ou vazio (que é interpretado como `Public`).|
+| displayName | Cadeia de caracteres | O nome a ser exibido no livro de endereços do grupo. Comprimento máximo: 256 caracteres. Necessário. |
+| mailEnabled | Boolean | Definir como `true` para grupos habilitados para email. Obrigatório. |
+| mailNickname | String | O alias de email do grupo. Máx. comprimento: 64 caracteres. Essa propriedade pode conter apenas caracteres no [conjunto de caracteres ASCII de 0 a 127](/office/vba/language/reference/user-interface-help/character-set-0127), exceto o seguinte: ` @ () \ [] " ; : . <> , SPACE`. Obrigatório. |
+| securityEnabled | Boolean | Definido como `true` para grupos habilitados para segurança, incluindo Microsoft 365 grupos. Obrigatório.  **Observação:** os grupos criados usando o portal do Microsoft Azure sempre terão **securityEnabled** definido inicialmente como `true`.|
 
-> **Observação:** os grupos criados usando o portal do Microsoft Azure sempre terão **securityEnabled** definido inicialmente como `true`.
-
-Especifique outras propriedades graváveis conforme necessário para o grupo. Confira mais informações nas propriedades do recurso [grupo](../resources/group.md).
-
->**Observação:** Criar um grupo usando o Group. Criar a permissão de aplicativo sem especificar os proprietários criará o grupo anonimamente e o grupo não será modificado. Você pode usar a operação `POST` e adicionar proprietários ao grupo enquanto a cria para especificar proprietários que podem modificar o grupo.
-
-> Ao criar um grupo do Microsoft 365 programaticamente com um contexto somente de aplicativo e sem especificar os proprietários, o grupo será criado anonimamente. Se assim o fizer, o site associado do SharePoint Online só será criado automaticamente, após a execução de outras ações manuais.  
+> [!IMPORTANT]
+> Criar um grupo usando a permissão de aplicativo **Group.Create** sem especificar proprietários criará o grupo anonimamente e o grupo não será modificável. Adicione proprietários ao grupo ao criá-lo para especificar os proprietários que podem modificar o grupo.
+>
+>Ao criar um grupo do Microsoft 365 programaticamente com um contexto somente de aplicativo e sem especificar os proprietários, o grupo será criado anonimamente. Se assim o fizer, o site associado do SharePoint Online só será criado automaticamente, após a execução de outras ações manuais.
 
 
 ### <a name="grouptypes-options"></a>Opções de groupTypes

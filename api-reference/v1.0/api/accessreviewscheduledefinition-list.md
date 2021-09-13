@@ -2,15 +2,15 @@
 title: Listar accessReviewScheduleDefinitions
 description: Obter uma lista dos objetos accessReviewScheduleDefinition e suas propriedades.
 author: isabelleatmsft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 34c58be8c3fa0c580e91a74baee2ddafbed3e738
-ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
+ms.openlocfilehash: 0d1c3ef815253dfe8166ef100f15e83a55b320e9
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53208679"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59056925"
 ---
 # <a name="list-accessreviewscheduledefinitions"></a>Listar accessReviewScheduleDefinitions
 Namespace: microsoft.graph
@@ -26,7 +26,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
 |Delegada (conta corporativa ou de estudante)|AccessReview.Read.All, AccessReview.ReadWrite.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|AccessReview.Read.All, AccessReview.ReadWrite.All|
 
  O usuário interno também deve estar em uma função de diretório que permita que ele leia uma revisão de acesso. Consulte access review [role and application permission authorization checks](../resources/accessreviewsv2-root.md#role-and-application-permission-authorization-checks).

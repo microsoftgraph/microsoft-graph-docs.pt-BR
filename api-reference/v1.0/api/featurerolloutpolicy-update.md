@@ -1,16 +1,16 @@
 ---
 title: Atualizar featureRolloutPolicy
 description: Atualize as propriedades do objeto featurerolloutpolicy.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: madhavpatel6
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 7341363806e9429cf29726585267be9536c6be9c
-ms.sourcegitcommit: b736af7020db7311f7d28b301752b5669d7badba
+ms.openlocfilehash: 825575bc55dc1f1e6b8e00ce8cc0a2b39849b91c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51201247"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59046061"
 ---
 # <a name="update-featurerolloutpolicy"></a>Atualizar featurerolloutpolicy
 
@@ -24,8 +24,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | Directory.ReadWrite.All |
-| Delegado (conta pessoal da Microsoft) | Sem suporte. |
+| Delegada (conta corporativa ou de estudante)     | Directory.ReadWrite.All |
+| Delegada (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo                            | Sem suporte. |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -48,9 +48,9 @@ No corpo da solicitação, fornece os valores para propriedades relevantes que d
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|description|Cadeia de caracteres|Uma descrição dessa política.|
+|description|String|Uma descrição dessa política.|
 |displayName|Cadeia de caracteres|O nome de exibição dessa política.|
-|isAppliedToOrganization|Booliano|Indica se essa política de lançamento de recursos deve ser aplicada a toda a organização.|
+|isAppliedToOrganization|Boolean|Indica se essa política de lançamento de recursos deve ser aplicada a toda a organização.|
 |isEnabled|Booliano|Indica se a adoção de recursos está habilitada.|
 
 ## <a name="response"></a>Resposta

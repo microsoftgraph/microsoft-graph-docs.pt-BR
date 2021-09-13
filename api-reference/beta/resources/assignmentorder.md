@@ -2,15 +2,15 @@
 title: Tipo de recurso assignmentOrder
 description: Usado para definir a ordem dos atributos que estão sendo coletados em um fluxo de usuário.
 author: jkdouglas
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 61114b2a4fa39485843a8e1b722c518def0301ae380334f09ca79e088941040d
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: afc59c24e154e8349eacff0d4059f1b102d8bc19
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54245321"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59033830"
 ---
 # <a name="assignmentorder-resource-type"></a>Tipo de recurso assignmentOrder
 

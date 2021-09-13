@@ -2,15 +2,15 @@
 title: Tipo de número windowsSpotlightEnablementSettings
 description: Permite que o administrador de IT de definir um mecanismo de pesquisa padrão predefinido para MDM-Controlled dispositivos
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 6a3f6e729a56349a3ba6c01fa96d9a2b42ab41ce
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 7c090fe2615eed3b320aab19b899a185daac64d0
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58802765"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59064095"
 ---
 # <a name="windowsspotlightenablementsettings-enum-type"></a>Tipo de número windowsSpotlightEnablementSettings
 

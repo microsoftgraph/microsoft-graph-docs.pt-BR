@@ -2,15 +2,15 @@
 title: Listar directoryRoles
 description: Lista as funções de diretório ativadas no locatário.
 author: abhijeetsinha
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 51cd7ec7a1fc4e5b876a59a5d9caec57594057e5
-ms.sourcegitcommit: 9eeb056f311044aaa40654cdb3ae5ae61f1c4d04
+ms.openlocfilehash: 58dc36feb58042aa84fa8879d3fd3b0fcdd30b91
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "52854226"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59046278"
 ---
 # <a name="list-directoryroles"></a>Listar directoryRoles
 
@@ -22,13 +22,13 @@ Essa operação retorna apenas funções que foram ativadas. Uma função é ati
 
 Ao atribuir uma função usando o portal do Azure, a etapa de ativação de função é feita implicitamente em nome do administrador. Para obter a lista completa de funções disponíveis no Azure AD, use [List directoryRoleTemplates](directoryroletemplate-list.md).
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegada (conta corporativa ou de estudante) | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP

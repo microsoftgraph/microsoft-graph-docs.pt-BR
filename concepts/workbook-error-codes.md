@@ -2,14 +2,14 @@
 title: Códigos de erro para APIs de listas de trabalho e gráficos no Microsoft Graph
 description: Lista e descreve os códigos de erro e mensagens para APIs de gráficos e listas de trabalho no Microsoft Graph.
 author: grangeryy
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: excel
-ms.openlocfilehash: 43aeb851cd5f458c2dda971938e0d0b6fa193c85d35ba0bac54edbc904acf964
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: cadcbb4ad64d6d441c09e9deb331dfe28edf5d18
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54225584"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59143444"
 ---
 # <a name="error-codes-for-workbooks-and-charts-apis-in-microsoft-graph"></a>Códigos de erro para APIs de listas de trabalho e gráficos no Microsoft Graph
 

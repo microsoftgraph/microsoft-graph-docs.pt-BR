@@ -1,29 +1,29 @@
 ---
 title: Obter recurso
 description: Recupere os dados binários de um objeto de recurso de arquivo ou imagem.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: jewan-microsoft
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: b9eb6eb3d69cf89819ece38675893607c042e86b
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: b0a10b7d16517d39bf15bf460de9930346ab1701
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48038232"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59067756"
 ---
 # <a name="get-resource"></a>Obter recurso
 
 Namespace: microsoft.graph
 
-Recupere os dados binários de um objeto de [recurso](../resources/resource.md) de arquivo ou imagem.
+Recupere os dados binários de um objeto de recurso de arquivo [ou](../resources/resource.md) imagem.
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Notes. Read, Notes. ReadWrite, Notes. Read. All, Notes. ReadWrite. All    |
-|Delegado (conta pessoal da Microsoft) | Notes. Read, Notes. ReadWrite    |
+|Delegada (conta corporativa ou de estudante) | Notes.Read, Notes.ReadWrite, Notes.Read.All, Notes.ReadWrite.All    |
+|Delegada (conta pessoal da Microsoft) | Notes.Read, Notes.ReadWrite    |
 |Aplicativo | Notes.Read.All, Notes.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -45,9 +45,9 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e os dados binários de imagem ou arquivo no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e os dados binários de imagem ou `200 OK` arquivo no corpo da resposta.
 
-Observação: as imagens não são renderizadas diretamente em um navegador porque exigem autorização para recuperá-las, como o restante do conteúdo da página.
+Observação: as imagens não renderizarão diretamente em um navegador porque exigem autorização para recuperá-las, como o restante do conteúdo da página.
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.

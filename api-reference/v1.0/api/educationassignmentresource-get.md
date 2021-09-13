@@ -2,15 +2,15 @@
 title: Obter educationAssignmentResource
 description: 'Obter as propriedades de um recurso específico em uma atribuição.  '
 author: sharad-sharma-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: f595d8a1dba0102e9090cf510cbffdc2a5b24799
-ms.sourcegitcommit: 1e9a53e7b8e67349288f5cfbabe8355de83817b0
+ms.openlocfilehash: 0626dd3a7875b6c05b358e43b2fef65f5dcef7e1
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/17/2021
-ms.locfileid: "58367069"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59074472"
 ---
 # <a name="get-educationassignmentresource"></a>Obter educationAssignmentResource
 

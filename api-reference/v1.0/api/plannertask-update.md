@@ -1,16 +1,16 @@
 ---
 title: Atualizar plannertask
 description: Atualize as propriedades do **objeto plannertask.**
-localization_priority: Normal
+ms.localizationpriority: medium
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: 86e30d8a2d783134c3e32110703348a3014cc208
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: abf29703292d09402e09985ce1078f4d7cf4137f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52048677"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59044955"
 ---
 # <a name="update-plannertask"></a>Atualizar plannertask
 
@@ -32,7 +32,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 PATCH /planner/tasks/{id}
 ```
 ## <a name="optional-request-headers"></a>Cabeçalhos de solicitação opcionais
-| Nome       | Descrição|
+| Name       | Descrição|
 |:-----------|:-----------|
 | Autorização  | {token} de portador. Obrigatório. |
 | If-Match  | Último valor ETag conhecido para o **plannerTask** a ser atualizado. Obrigatório.|
@@ -47,10 +47,10 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 |assignments|[plannerAssignments](../resources/plannerassignments.md)|O conjunto de usuários aos que a tarefa é atribuída.|
 |bucketId|String|ID de bucket à qual a tarefa pertence. O bucket precisa estar no plano no qual a tarefa está. Tem 28 caracteres e diferencia maiúsculas de minúsculas. [Formatar validação](../resources/planner-identifiers-disclaimer.md) é feito no serviço. |
 |conversationThreadId|String|ID de thread da conversa na tarefa. Esta é a id do objeto thread de conversa criado no grupo.|
-|dueDateTime|DateTimeOffset|A data e a hora que a tarefa já deve estar concluída. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`|
+|dueDateTime|DateTimeOffset|Data e hora em que a tarefa deve ser concluída. O tipo de carimbo de data/hora representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1º de janeiro de 2014 é `2014-01-01T00:00:00Z`|
 |orderHint|String|Dica usada para ordenar itens desse tipo em um modo de exibição de lista. O formato é definido em [Usando dicas de ordem no Planner](../resources/planner-order-hint-format.md).|
 |percentComplete|Int32|A porcentagem de conclusão da tarefa. Quando definido como `100`, a tarefa será considerada concluída. |
-|startDateTime|DateTimeOffset|A data e a hora que a tarefa começa. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`|
+|startDateTime|DateTimeOffset|Data e hora em que a tarefa é iniciada. O tipo de carimbo de data/hora representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1º de janeiro de 2014 é `2014-01-01T00:00:00Z`|
 |title|String|Título da tarefa.|
 
 ## <a name="response"></a>Resposta
@@ -99,7 +99,7 @@ If-Match: W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="
 ---
 
 ##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto de resposta exibido aqui pode ser encurtado para legibilidade.
+Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser reduzido para facilitar a leitura.
 <!-- {
   "blockType": "response",
   "truncated": true,

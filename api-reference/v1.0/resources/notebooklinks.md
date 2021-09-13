@@ -2,15 +2,15 @@
 title: Tipo de recurso notebookLinks
 description: Links para abrir um bloco de anotações do OneNote.
 author: jewan-microsoft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: onenote
 doc_type: resourcePageType
-ms.openlocfilehash: 68e86841a08adab548a94dea13be83faec1460601bf3ac66a5d334ca54d1622c
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 23e1e3ea38c676d9a669f30a22ceebb08e55f427
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54251889"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59094230"
 ---
 # <a name="notebooklinks-resource-type"></a>Tipo de recurso notebookLinks
 

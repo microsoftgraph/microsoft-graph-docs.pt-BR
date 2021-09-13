@@ -2,15 +2,15 @@
 title: Criar deviceManagementScript
 description: Crie um novo objeto deviceManagementScript.
 author: rolyon
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2f5ced205eeedb58d7767190d33de382f59d497b
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 75a859b273b87a2b409377a7e8ca245b354b8134
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58797588"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59064746"
 ---
 # <a name="create-devicemanagementscript"></a>Criar deviceManagementScript
 
@@ -31,7 +31,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 | &nbsp; &nbsp; **Gerenciamento de dispositivo** | DeviceManagementManagedDevices.ReadWrite.All|
 | &nbsp;&nbsp; **Conjunto de Políticas** | DeviceManagementManagedDevices.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application||
+|Aplicativo||
 | &nbsp; &nbsp; **Gerenciamento de dispositivo** | DeviceManagementManagedDevices.ReadWrite.All|
 | &nbsp;&nbsp; **Conjunto de Políticas** | DeviceManagementManagedDevices.ReadWrite.All|
 
@@ -57,18 +57,18 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar deviceMa
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Identificador exclusivo do script de gerenciamento de dispositivos.|
-|displayName|Cadeia de caracteres|Nome do script de gerenciamento de dispositivos.|
-|descrição|Cadeia de caracteres|Descrição opcional para o script de gerenciamento de dispositivos.|
+|id|String|Identificador exclusivo do script de gerenciamento de dispositivos.|
+|displayName|String|Nome do script de gerenciamento de dispositivos.|
+|description|Cadeia de caracteres|Descrição opcional para o script de gerenciamento de dispositivos.|
 |runSchedule|[runSchedule](../resources/intune-devices-runschedule.md)|O intervalo para que o script seja executado. Se não estiver definido, o script será executado uma vez|
 |scriptContent|Binário|O conteúdo do script.|
 |createdDateTime|DateTimeOffset|A data e a hora em que o script de gerenciamento de dispositivos foi criado. Essa propriedade é somente leitura.|
 |lastModifiedDateTime|DateTimeOffset|A data e a hora em que o script de gerenciamento de dispositivos foi modificado pela última vez. Essa propriedade é somente leitura.|
 |runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|Indica o tipo de contexto de execução. Os valores possíveis são: `system` e `user`.|
-|enforceSignatureCheck|Boleano|Indique se a assinatura de script precisa ser verificada.|
+|enforceSignatureCheck|Booliano|Indique se a assinatura de script precisa ser verificada.|
 |fileName|String|Nome do arquivo de script.|
-|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de IDs de marca de escopo para esta instância do PowerShellScript.|
-|runAs32Bit|Boleano|Um valor que indica se o script do PowerShell deve ser executado como 32 bits|
+|roleScopeTagIds|Conjunto de cadeias de caracteres|Lista de IDs de marca de escopo para esta instância do PowerShellScript.|
+|runAs32Bit|Booliano|Um valor que indica se o script do PowerShell deve ser executado como 32 bits|
 
 
 

@@ -2,15 +2,15 @@
 title: tipo de número weeklySchedule
 description: Valores possíveis para uma agenda semanal.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 30662470601b937b14a0565bd9414a45804dbe515d25927f103d3849334c63e9
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: e766c2bb6b75c4a36163472e22144e47e3796af9
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54175071"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59072166"
 ---
 # <a name="weeklyschedule-enum-type"></a>tipo de número weeklySchedule
 

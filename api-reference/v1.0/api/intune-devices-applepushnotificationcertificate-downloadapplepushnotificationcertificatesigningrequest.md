@@ -2,15 +2,15 @@
 title: Função downloadApplePushNotificationCertificateSigningRequest
 description: Baixa a solicitação de assinatura de certificado de notificação por push da Apple
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 8303b56424b047b1f547140d7f6f1579b4bb10e7
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 935dbfae5992707b667f767f009d199d984d7991
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58263209"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59073265"
 ---
 # <a name="downloadapplepushnotificationcertificatesigningrequest-function"></a>Função downloadApplePushNotificationCertificateSigningRequest
 

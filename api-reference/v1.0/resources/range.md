@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso Range
 description: Range representa um conjunto de uma ou mais células contíguas, como uma célula, uma linha, uma coluna, um bloco de células, etc.
-localization_priority: Priority
+ms.localizationpriority: high
 author: lumine2008
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 7a43f93ccb9c73a321d26b7fda8a37faccecaa5fb2c23ddca3c276b48b12e140
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 8b10d79efe47d7744e3b275497d24ef9a601b4f2
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54205169"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59143787"
 ---
 # <a name="range-resource-type"></a>Tipo de recurso Range
 
@@ -67,7 +67,7 @@ Range representa um conjunto de uma ou mais células contíguas, como uma célul
 |rowHidden|booliano|Representa se todas as linhas do intervalo atual estão ocultas.|
 |rowIndex|int|Representa o número de linhas da primeira célula no intervalo. Indexados com zero. Somente leitura.|
 |texto|Json|Valores de texto do intervalo especificado. O valor de texto não depende da largura da célula. A substituição pelo sinal #, que ocorre na interface de usuário do Excel, não afeta o valor de texto retornado pela API. Somente leitura.|
-|valueTypes|Json|Representa o tipo de dados de cada célula. Os valores possíveis são `Unknown`, `Empty`, `String`, `Integer`, `Double`, `Boolean`, `Error`. Somente leitura.|
+|valueTypes|Json|Representa o tipo de dados de cada célula. Os valores possíveis são: `Unknown`, `Empty`, `String`, `Integer`, `Double`, `Boolean` e `Error`. Somente leitura.|
 |values|Json|Representa os valores brutos do intervalo especificado. Os dados retornados podem ser dos tipos: cadeia de caracteres, número ou booliano. Células que contêm um erro retornarão a cadeia de caracteres de erro.|
 
 ## <a name="relationships"></a>Relações

@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso chatMessageHostedContent
 description: Um conteúdo hospedado em uma mensagem de chat
-localization_priority: Normal
+ms.localizationpriority: medium
 author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 946a1974540adf0539e85519bc75c637c1469347d411b48b686378339eb0f48a
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 5d414e83e2de99aefbd264784adcad2ca90a8a40
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54192569"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59094384"
 ---
 # <a name="chatmessagehostedcontent-resource-type"></a>Tipo de recurso chatMessageHostedContent
 
@@ -43,7 +43,7 @@ Essas propriedades são temporárias e definem o comportamento que o serviço de
 
 | Nome da propriedade                     | Tipo   | Descrição
 |:----------------------------------|:-------|:--------------------------------
-| @microsoft.graph.temporaryId      | string | Somente gravação. Representa a temporaryId do conteúdo hospedado ao postar uma mensagem para se referir ao conteúdo hospedado no **recurso chatMessage** que está sendo enviado.|
+| @microsoft.graph.temporaryId      | cadeia de caracteres | Somente gravação. Representa a temporaryId do conteúdo hospedado ao postar uma mensagem para se referir ao conteúdo hospedado no **recurso chatMessage** que está sendo enviado.|
 
 ## <a name="relationships"></a>Relações
 

@@ -1,31 +1,32 @@
 ---
 title: Obter objetos de membros
 description: " Retorna todos os grupos e funções de diretório dos quais o objeto de usuário, grupo ou diretório é membro. Esta função é transitiva. "
-localization_priority: Normal
+ms.localizationpriority: medium
 author: keylimesoda
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 6eec72fc6e9d502565000a68d3f957660855de27
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 826493b29dd029dee4b663b3b88b195467a0f2d4
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52051477"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59046355"
 ---
 # <a name="get-member-objects"></a>Obter objetos de membros
 
 Namespace: microsoft.graph
 
- Retorna todos os grupos e funções de diretório dos quais o objeto de usuário, grupo ou diretório é membro. Esta função é transitiva. 
- > Observação: Somente usuários podem ser membros de funções de diretório.
+Retorna todos os grupos e funções de diretório dos quais o objeto de usuário, grupo ou diretório é membro. Esta função é transitiva. 
+
+**Observação:** Somente os usuários podem ser membros de funções de diretório.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | User.Read.All e Group.Read.All, Directory.Read.All    |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegada (conta corporativa ou de estudante) | User.Read.All e Group.Read.All, Directory.Read.All    |
+|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | User.Read.All e Group.Read.All, Directory.Read.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -48,7 +49,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro    | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|securityEnabledOnly|Boolean| **true** para especificar que somente grupos de segurança dos quais a entidade é membro devem ser retornados; **false** para especificar que todos os grupos e funções de diretório dos quais a entidade é membro devem ser retornados. **Observação**: a função só pode ser chamada em um usuário se o parâmetro for **true**. |
+|securityEnabledOnly|Boolean| `true` para especificar que apenas grupos de segurança dos quais a entidade é membro devem ser retornados; para especificar que todos os grupos e funções de diretório das quais `false` a entidade é membro devem ser retornados. **Observação**: a função só poderá ser chamada em um usuário se o parâmetro for `true` . |
 
 ## <a name="response"></a>Resposta
 
@@ -91,7 +92,7 @@ Content-type: application/json
 
 
 ##### <a name="response"></a>Resposta
-Observação: o objeto de resposta exibido aqui pode ser encurtado para legibilidade.
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,

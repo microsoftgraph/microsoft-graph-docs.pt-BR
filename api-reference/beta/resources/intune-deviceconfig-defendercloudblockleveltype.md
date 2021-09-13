@@ -2,15 +2,15 @@
 title: Tipo denum defenderCloudBlockLevelType
 description: Valores possíveis do Nível de Bloqueio na Nuvem
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: d5f3133f21d9da39cd3cd7bd6bb34f693b85889d
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: f5c600eceaa5f19ab9358906cd6c85f1226e0ad3
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58805749"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59033725"
 ---
 # <a name="defendercloudblockleveltype-enum-type"></a>Tipo denum defenderCloudBlockLevelType
 

@@ -2,15 +2,15 @@
 title: Tipo de recurso win32LobAppProductCodeRule
 description: Um tipo complexo para armazenar o código do produto e os dados da regra de versão para um aplicativo LOB win32. Essa regra não é suportada como uma regra de requisito.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8cba65fe4c56e5365ceaddc47b1d1c3ceb8b1c170f16924a726da42dd0b7c165
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 199f39a81ebdf6ea163caa6bbdf5c230312ed3ce
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54135194"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59021698"
 ---
 # <a name="win32lobappproductcoderule-resource-type"></a>Tipo de recurso win32LobAppProductCodeRule
 

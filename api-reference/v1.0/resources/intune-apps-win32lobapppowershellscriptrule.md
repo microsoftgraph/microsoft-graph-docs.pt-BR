@@ -2,15 +2,15 @@
 title: Tipo de recurso win32LobAppPowerShellScriptRule
 description: Um tipo complexo para armazenar os dados da regra de script do PowerShell para um aplicativo LOB win32.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: c97418ebbc2a3a55ec15af1ce447e773c39613c03ce9b855d9fa3946c0a476de
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: ffd41dc3de305396a7596e6fb0569982ac489bb5
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54135208"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59021705"
 ---
 # <a name="win32lobapppowershellscriptrule-resource-type"></a>Tipo de recurso win32LobAppPowerShellScriptRule
 

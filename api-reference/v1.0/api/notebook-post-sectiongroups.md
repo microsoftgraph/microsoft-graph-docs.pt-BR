@@ -1,28 +1,28 @@
 ---
 title: Criar sectionGroup
-description: Cria um novo grupo de seção no bloco de anotações especificado.
+description: Crie um novo grupo de seções no bloco de anotações especificado.
 author: jewan-microsoft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: 612f81dd835a96fceeeb895c8170279341d89903
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: d50a9c03d44dfcb983b8bf92b8006383530ddd08
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48028509"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59016012"
 ---
 # <a name="create-sectiongroup"></a>Criar sectionGroup
 
 Namespace: microsoft.graph
 
-Cria um novo [grupo de seção](../resources/sectiongroup.md) no bloco de anotações especificado.
+Crie um novo [grupo de seções](../resources/sectiongroup.md) no bloco de anotações especificado.
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Notes.Create, Notes.ReadWrite, Notes.ReadWrite.All    |
+|Delegada (conta corporativa ou de estudante) | Notes.Create, Notes.ReadWrite, Notes.ReadWrite.All    |
 |Delegado (conta pessoal da Microsoft) | Notes.Create, Notes.ReadWrite    |
 |Aplicativo | Notes.ReadWrite.All |
 
@@ -47,7 +47,7 @@ Dentro do mesmo nível de hierarquia, os nomes dos grupos de seção devem ser e
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna `201 Created` um código de resposta e um objeto de objeto de [seção](../resources/sectiongroup.md) no corpo da resposta.
+Se tiver êxito, este método retornará `201 Created` o código de resposta e um objeto [sectionGroup](../resources/sectiongroup.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação

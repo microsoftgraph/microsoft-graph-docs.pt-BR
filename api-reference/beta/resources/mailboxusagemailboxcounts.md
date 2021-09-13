@@ -1,16 +1,16 @@
 ---
 title: mailboxUsageMailboxCounts tipo de recurso
 description: Veja a seguir uma representação JSON do recurso.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: sarahwxy
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 42b03143c5036c72e4935036079de8ff13b55783f0184a6b3848bf5d2383930e
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: dfc45928677072de1c952e5c7ea2957522e6369a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54226153"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59033375"
 ---
 # <a name="mailboxusagemailboxcounts-resource-type"></a>mailboxUsageMailboxCounts tipo de recurso
 

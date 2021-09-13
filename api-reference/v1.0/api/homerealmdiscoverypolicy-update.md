@@ -1,16 +1,16 @@
 ---
 title: Atualizar homerealmdiscoverypolicy
 description: Atualize as propriedades do objeto homeRealmDiscoveryPolicy.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: hpsin
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 7c46a8c7e46a9289bc47666b70dbf1d364d9467f
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 823b96e185f155851115720d01425d075a9adf44
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52048684"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59045844"
 ---
 # <a name="update-homerealmdiscoverypolicy"></a>Atualizar homerealmdiscoverypolicy
 
@@ -26,8 +26,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | Policy.ReadWrite.ApplicationConfiguration |
-| Delegado (conta pessoal da Microsoft) | Sem suporte. |
+| Delegada (conta corporativa ou de estudante)     | Policy.ReadWrite.ApplicationConfiguration |
+| Delegada (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo                            | Policy.ReadWrite.ApplicationConfiguration |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -53,7 +53,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 |:-------------|:------------|:------------|
 |definition|Coleção String| Uma coleção de cadeias de caracteres que contém uma cadeia de caracteres JSON que define as regras e as configurações dessa política.  Obrigatório.|
 |description|Cadeia de caracteres| Descrição dessa política.|
-|displayName|Cadeia de caracteres| Nome de exibição para esta política. Obrigatório.|
+|displayName|String| Nome de exibição para esta política. Obrigatório.|
 |isOrganizationDefault|Boolean|Se definido como true, ativa essa política. Pode haver muitas políticas para o mesmo tipo de política, mas apenas uma pode ser ativada como o padrão da organização. Opcional, o valor padrão é false.|
 
 ## <a name="response"></a>Resposta

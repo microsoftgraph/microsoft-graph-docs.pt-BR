@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso resourceData
 description: Representa os dados de resouce anexados à notificação de alteração enviada ao assinante.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: Jumaodhiss
 doc_type: resourcePageType
 ms.prod: change-notifications
-ms.openlocfilehash: b2be1539226ac619b15e61cc7da55d3a9c844f9a47e0e60dcf6ff80914d1a12a
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 4fef5e2564cbad29a3b998d11b2f4870663e7a7e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54169344"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59094083"
 ---
 # <a name="resourcedata-resource-type"></a>Tipo de recurso resourceData
 
