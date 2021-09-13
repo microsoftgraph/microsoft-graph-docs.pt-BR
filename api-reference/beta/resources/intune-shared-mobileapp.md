@@ -2,15 +2,15 @@
 title: Tipo de recurso mobileApp
 description: Uma classe abstrata que contém as propriedades base de aplicativos móveis do Intune.
 author: rolyon
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 993b79f8b9ff18c5ecb46b22adf5ccfc8da8f113
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 475a253f19dcff71636e9431e4fac8477f6ed42e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58805995"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59023314"
 ---
 # <a name="mobileapp-resource-type"></a>Tipo de recurso mobileApp
 
@@ -39,9 +39,9 @@ Uma classe abstrata que contém as propriedades base de aplicativos móveis do I
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Chave da entidade.|
-|displayName|Cadeia de caracteres|O título do aplicativo importado ou definido pelo administrador.|
-|descrição|Cadeia de caracteres|A descrição do aplicativo.|
+|id|String|Chave da entidade.|
+|displayName|String|O título do aplicativo importado ou definido pelo administrador.|
+|description|Cadeia de caracteres|A descrição do aplicativo.|
 |publisher|String|O publicador do aplicativo.|
 |largeIcon|[mimeContent](../resources/intune-shared-mimecontent.md)|O ícone grande, a ser exibido nos detalhes do aplicativo e usado para o carregamento do ícone.|
 |createdDateTime|DateTimeOffset|A data e a hora da criação do aplicativo.|
@@ -49,13 +49,13 @@ Uma classe abstrata que contém as propriedades base de aplicativos móveis do I
 |isFeatured|Booliano|O valor que indica se o aplicativo está marcado como em destaque pelo administrador.|
 |privacyInformationUrl|String|A URL da declaração de privacidade.|
 |informationUrl|String|A URL de informações adicionais.|
-|owner|Cadeia de caracteres|O proprietário do conteúdo.|
+|owner|String|O proprietário do conteúdo.|
 |developer|String|O desenvolvedor do aplicativo.|
 |notes|String|Anotações do aplicativo.|
 |uploadState|Int32|O estado de carregamento.|
 |publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|O estado de publicação do aplicativo. O aplicativo não pode ser assinado, a menos que ele seja publicado. Os valores possíveis são: `notPublished`, `processing`, `published`.|
 |isAssigned|Boolean|O valor que indica se o aplicativo é atribuído a pelo menos um grupo.|
-|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de ids de marca de escopo para este aplicativo móvel.|
+|roleScopeTagIds|String collection|Lista de ids de marca de escopo para este aplicativo móvel.|
 |dependentAppCount|Int32|O número total de dependências que o aplicativo filho tem.|
 
 ## <a name="relationships"></a>Relações

@@ -4,14 +4,14 @@ description: Visão geral do motivo pelo qual você deseja integrar suas soluç�
 services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: dynamics-365-business-central
-ms.openlocfilehash: aa49fa4efc968b548b476f64fa88be79fc73b998b39451cb61a186b4ad2d814a
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 0a4b932b2cbc25f967bd0e881c56f1acc0c9382d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54151806"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59137403"
 ---
 # <a name="dynamics-365-business-central-api-overview-preview"></a>Visão geral da API Central de Negócios do Dynamics 365 (visualização)
 O Dynamics 365 Business Central é uma solução de gerenciamento de negócios completa e fácil de usar e se adaptar, ajudando você a conectar sua empresa e tomar decisões mais inteligentes. Ele fornece uma visão de ponta a ponta da sua empresa, permitindo que você gerencie suas finanças, automatize e proteja sua cadeia de fornecimento, venda mais inteligente e melhore o atendimento ao cliente, mantenha os projetos dentro do prazo e no orçamento e otimize suas operações.

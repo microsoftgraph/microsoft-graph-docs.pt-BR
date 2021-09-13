@@ -2,16 +2,16 @@
 author: daspek
 ms.date: 09/12/2017
 title: ContentTypeInfo
-localization_priority: Normal
+ms.localizationpriority: medium
 description: O recurso contentTypeInfo indica o tipo de conteúdo do SharePoint de um item.
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 0f029a562afbfb1fcd66ed74f02f00d728184a773126b630ea9d213168810437
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 2480168d68056043d2509cf3e1f5857847c5f534
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54246896"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59049603"
 ---
 # <a name="contenttypeinfo-resource-type"></a>Tipo de recurso ContentTypeInfo
 
@@ -35,7 +35,7 @@ Aqui está uma representação JSON de um recurso **contentTypeInfo**.
 
 | Nome da propriedade     | Tipo    | Descrição
 |:------------------|:--------|:----------------------------------------------------
-| **id**            | string  | A id do tipo de conteúdo.
+| **id**            | cadeia de caracteres  | A id do tipo de conteúdo.
 | **name**       | string  | O nome do tipo de conteúdo.
 
 <!-- {

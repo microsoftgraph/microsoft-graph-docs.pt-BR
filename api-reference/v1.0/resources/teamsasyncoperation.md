@@ -2,15 +2,15 @@
 title: Tipo de recurso teamsAsyncOperation
 description: 'Uma Microsoft Teams assíncrona transcende o tempo de vida de uma única solicitação de API. '
 author: nkramer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 643a7f57253af36e52484166492fd1e373f4ff5415ce24f1ccf84b69a3ec4fd1
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: a061ba8951013c12e825141f5a205c3e6d664733
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54196534"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59071893"
 ---
 # <a name="teamsasyncoperation-resource-type"></a>Tipo de recurso teamsAsyncOperation
 
@@ -27,14 +27,14 @@ Quando a solicitação for concluída com êxito, o status será "bem-sucedido" 
 
 | Propriedade | Tipo   | Descrição |
 |:---------------|:--------|:----------|
-|id|string |ID de operação exclusiva.|
+|id|cadeia de caracteres |ID de operação exclusiva.|
 |operationType|[teamsAsyncOperationType](teamsasyncoperationtype.md) |Indica qual tipo de operação está sendo descrito.|
 |createdDateTime|DateTimeOffset |Hora em que a operação foi criada.|
 |status|[teamsAsyncOperationStatus](teamsasyncoperationstatus.md)| Status da operação.|
 |lastActionDateTime|DateTimeOffset |Hora em que a operação assíncrona foi atualizada pela última vez.|
 |attemptsCount|Int32|Número de vezes que a operação foi tentada antes de ser marcada com êxito ou falha.|
 |targetResourceId|guid |A ID do objeto criado ou modificado como resultado dessa operação assíncrona, normalmente uma [equipe](../resources/team.md).|
-|targetResourceLocation|string|O local do objeto criado ou modificado como resultado dessa operação assíncrona. Essa URL deve ser tratada como um valor opaco e não analisado em seus caminhos de componente.|
+|targetResourceLocation|cadeia de caracteres|O local do objeto criado ou modificado como resultado dessa operação assíncrona. Essa URL deve ser tratada como um valor opaco e não analisado em seus caminhos de componente.|
 |erro|[operationError](operationerror.md)|Qualquer erro que cause falha na operação assíncrona.|
 
 ## <a name="json-representation"></a>Representação JSON

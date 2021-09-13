@@ -2,15 +2,15 @@
 title: Tipo de recurso timeOffItem
 description: Representa uma versão do timeOff.
 author: akumar39
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: resourcePageType_
-ms.openlocfilehash: 49b5031da7ecf3ca50ea58db25d4c23c92343526db74bf771a131bfadff334e8
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 349b37cfdc414323d35ee4648009fd8ab4d59bbf
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54189244"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59019101"
 ---
 # <a name="timeoffitem-resource-type"></a>Tipo de recurso timeOffItem
 
@@ -21,7 +21,7 @@ Representa uma versão do [timeOff](timeoff.md).
 ## <a name="properties"></a>Propriedades
 | Propriedade                         | Tipo                    | Descrição                                                                                                                                                                        |
 |------------------------------|-------------------------|---------------------------------------------------------------------------------------------|
-| timeOffReasonId               | string                  | ID do `timeOffReason` para isso `timeOffItem` . Obrigatório.     |
+| timeOffReasonId               | cadeia de caracteres                  | ID do `timeOffReason` para isso `timeOffItem` . Obrigatório.     |
 | startDateTime               | DateTimeOffset                  | A data e a hora de início do `timeOffItem` . Obrigatório. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`. |
 | endDateTime               | DateTimeOffset                  | A data e a hora de término do `timeOffItem` . Obrigatório. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`. |
 | tema | scheduleEntityTheme   | Cores com suporte: branco; azul; verde; roxo; rosa; amarelo; cinza; darkBlue; darkGreen; darkPurple; darkPink; darkYellow. |

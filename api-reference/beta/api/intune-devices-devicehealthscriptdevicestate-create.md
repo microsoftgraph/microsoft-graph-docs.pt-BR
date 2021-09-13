@@ -2,15 +2,15 @@
 title: Criar deviceHealthScriptDeviceState
 description: Crie um novo objeto deviceHealthScriptDeviceState.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: cfd72020c99cfd6c31efe8b298995c8f49ffebf3
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 9399f7e526ad42987d5e11498c96f3b43a019161
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58818643"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59018310"
 ---
 # <a name="create-devicehealthscriptdevicestate"></a>Criar deviceHealthScriptDeviceState
 
@@ -60,11 +60,11 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar deviceHe
 |lastSyncDateTime|DateTimeOffset|A última vez que a Extensão de Managment do Intune foi sincronizada com o Intune|
 |preRemediationDetectionScriptOutput|Cadeia de caracteres|Saída do script de detecção antes da correção|
 |preRemediationDetectionScriptError|Cadeia de caracteres|Erro do script de detecção antes da correção|
-|remediationScriptError|Cadeia de caracteres|Saída de erro do script de correção|
-|postRemediationDetectionScriptOutput|Cadeia de caracteres|Saída de script de detecção após correção|
-|postRemediationDetectionScriptError|String|Erro do script de detecção após a correção|
+|remediationScriptError|String|Saída de erro do script de correção|
+|postRemediationDetectionScriptOutput|String|Saída de script de detecção após correção|
+|postRemediationDetectionScriptError|Cadeia de caracteres|Erro do script de detecção após a correção|
 |remediationState|[remediationState](../resources/intune-devices-remediationstate.md)|Estado de correção da última execução do script de saúde do dispositivo. Os valores possíveis são: `unknown`, `skipped`, `success`, `remediationFailed`, `scriptError`.|
-|assignmentFilterIds|Coleção de cadeias de caracteres|Uma lista das IDs de filtro de atribuição usadas para avaliação de aplicabilidade do script de saúde|
+|assignmentFilterIds|Coleção String|Uma lista das IDs de filtro de atribuição usadas para avaliação de aplicabilidade do script de saúde|
 
 
 

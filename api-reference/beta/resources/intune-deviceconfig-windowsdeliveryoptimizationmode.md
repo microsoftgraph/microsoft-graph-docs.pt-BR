@@ -2,15 +2,15 @@
 title: Tipo denum windowsDeliveryOptimizationMode
 description: Modo de otimização de entrega para distribuição de pares
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 83f5b5e4a3db00a4ef1459ff35aa0f438a118157
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 7ee5580f22244b498803d925ca61f4d71f193298
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58818102"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59033627"
 ---
 # <a name="windowsdeliveryoptimizationmode-enum-type"></a>Tipo denum windowsDeliveryOptimizationMode
 

@@ -2,15 +2,15 @@
 title: tipo de recurso de esquema
 description: O esquema de conexão determina como o conteúdo adicionado a uma conexão será usado em várias experiências Graph Microsoft.
 author: mecampos
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: 5ca338e6e2d2da30e555223c3257da7d7f2f497d1a2a15a9436ed5b8568575bf
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: dcfea02e76c97a8bd946a3c1aa5294b843b0b739
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54189790"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59036582"
 ---
 # <a name="schema-resource-type"></a>tipo de recurso de esquema
 
@@ -27,7 +27,7 @@ O [esquema](externalconnectors-externalconnection.md) de conexão determina como
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|baseType|String|Deve ser definida como `microsoft.graph.externalConnector.externalItem`. Obrigatório.|
+|baseType|String|Tem que ser definida como `microsoft.graph.externalConnector.externalItem`. Obrigatório.|
 |properties|[coleção property](../resources/externalconnectors-property.md)|As propriedades definidas para os itens na conexão. O número mínimo de propriedades é um, o máximo é 128.|
 
 ## <a name="relationships"></a>Relações

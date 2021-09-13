@@ -1,21 +1,21 @@
 ---
 title: Criar certificações
-description: Criar um novo objeto certificações.
-localization_priority: Normal
+description: Crie um novo objeto de certificação.
+ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: c0ee67610b7b7d600ec9e61d085d77c0f56e71eb
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: f1ee679da44d0bd5ca74e4ffbed497a25bbc8c6e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48967254"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59027446"
 ---
 # <a name="create-personcertification"></a>Criar personCertification
 Namespace: microsoft.graph
 
-Criar um novo objeto [personCertification](../resources/personcertification.md) no [perfil](../resources/profile.md)de um usuário.
+Criar um novo [objeto personCertification](../resources/personcertification.md) no perfil de um [usuário.](../resources/profile.md)
 
 ## <a name="permissions"></a>Permissões
 
@@ -23,8 +23,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)                                      |
 |:---------------------------------------|:---------------------------------------------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | User. ReadWrite, User. ReadWrite. All |
-| Delegado (conta pessoal da Microsoft) | User. ReadWrite, User. ReadWrite. All |
+| Delegado (conta corporativa ou de estudante)     | User.ReadWrite, User.ReadWrite.All |
+| Delegado (conta pessoal da Microsoft) | User.ReadWrite, User.ReadWrite.All |
 | Aplicativo                            | User.ReadWrite.All                            |
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -44,29 +44,29 @@ POST /users/{id | userPrincipalName}/profile/certifications
 |Content-Type|application/json. Obrigatório.|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça uma representação JSON do objeto [personCertification](../resources/personcertification.md) .
+No corpo da solicitação, fornece uma representação JSON do [objeto personCertification.](../resources/personcertification.md)
 
-A tabela a seguir mostra as propriedades que são possíveis de definir ao criar um novo objeto [personCertification](../resources/personcertification.md) no [perfil](../resources/profile.md)de um usuário.
+A tabela a seguir mostra as propriedades que são possíveis de definir ao criar um novo [objeto personCertification](../resources/personcertification.md) no perfil de um [usuário](../resources/profile.md).
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|allowedAudiences|String|As audiências que podem ver os valores contidos na entidade. Herdado de [MyFace](../resources/itemfacet.md). Os valores possíveis são: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
-|Certification  |String      |O identificador de referência para a certificação. |
-|description      |String      |Descrição da certificação.                   |
+|allowedAudiences|Cadeia de Caracteres|As audiências que são capazes de ver os valores contidos na entidade. Herdado [do itemFacet](../resources/itemfacet.md). Os valores possíveis são: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
+|certificationId  |Cadeia de caracteres      |O identificador referencial para a certificação. |
+|description      |Cadeia de caracteres      |Descrição da certificação.                   |
 |displayName      |String      |Título da certificação.                         |
 |endDate          |Data        |A data em que a certificação expira.            |
-|fracassa|[inferenceData](../resources/inferencedata.md)|Contém detalhes de inferência se a entidade for inferida pelo aplicativo de criação ou modificação. Herdado de [MyFace](../resources/itemfacet.md).|
+|inferência|[inferenceData](../resources/inferencedata.md)|Contém detalhes de inferência se a entidade for inferida pelo aplicativo de criação ou modificação. Herdado [do itemFacet](../resources/itemfacet.md).|
 |issuedDate       |Data        |A data em que a certificação foi emitida.         |
-|issuingAuthority |String      |Autoridade que atribuiu a certificação.          |
-|issuingCompany   |String      |Autoridade que atribuiu a certificação.          |
-|source|[personDataSource](../resources/persondatasource.md)|Onde os valores são originados se forem sincronizados a partir de outro serviço. Herdado de [MyFace](../resources/itemfacet.md).|
+|issuingAuthority |Cadeia de caracteres      |Autoridade que concedeu a certificação.          |
+|emissãoCompany   |String      |Autoridade que concedeu a certificação.          |
+|source|[personDataSource](../resources/persondatasource.md)|Onde os valores se originaram se sincronizados de outro serviço. Herdado [do itemFacet](../resources/itemfacet.md).|
 |startDate        |Data        |A data em que a certificação se tornou válida.       |
-|thumbnailUrl     |String      |URL que faz referência a uma miniatura da certificação.   |
-|webUrl           |String      |URL que faz referência à certificação.                  |
+|thumbnailUrl     |Cadeia de Caracteres      |URL fazendo referência a uma miniatura da certificação.   |
+|webUrl           |String      |URL fazendo referência à certificação.                  |
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `201 Created` código de resposta e um objeto [personCertification](../resources/personcertification.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código `201 Created` de resposta e um objeto [personCertification](../resources/personcertification.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

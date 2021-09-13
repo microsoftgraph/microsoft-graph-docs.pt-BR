@@ -2,15 +2,15 @@
 title: Tipo de recurso windowsFirewallNetworkProfile
 description: Políticas de perfil do firewall do Windows.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 6bab7f12749d0467ac6435be23ee7a49dac89af6
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: d901a4031fb9fe9aadf12c74ef8cd9db8a070a58
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58802485"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59033585"
 ---
 # <a name="windowsfirewallnetworkprofile-resource-type"></a>Tipo de recurso windowsFirewallNetworkProfile
 
@@ -30,24 +30,24 @@ Políticas de perfil do firewall do Windows.
 |stealthModeBlocked|Booliano|Impedir que o servidor operando no modo de furtividade. Quando o StealthModeRequired e o StealthModeBlocked são verdadeiros, o StealthModeBlocked tem prioridade.|
 |incomingTrafficRequired|Boleano|Configura o firewall para permitir o tráfego de entrada de acordo com outras configurações de política. Quando IncomingTrafficRequired e IncomingTrafficBlocked são verdadeiros, IncomingTrafficBlocked tem prioridade.|
 |incomingTrafficBlocked|Booliano|Configura o firewall para bloquear todo o tráfego de entrada, independentemente de outras configurações de política. Quando IncomingTrafficRequired e IncomingTrafficBlocked são verdadeiros, IncomingTrafficBlocked tem prioridade.|
-|unicastResponsesToMulticastBroadcastsRequired|Boleano|Configura o firewall para permitir respostas unicast ao tráfego de transmissão multicast. Quando UnicastResponsesToMulticastBroadcastsRequired e UnicastResponsesToMulticastBroadcastsBlocked são verdadeiros, UnicastResponsesToMulticastBroadcastsBlocked tem prioridade.|
+|unicastResponsesToMulticastBroadcastsRequired|Boolean|Configura o firewall para permitir respostas unicast ao tráfego de transmissão multicast. Quando UnicastResponsesToMulticastBroadcastsRequired e UnicastResponsesToMulticastBroadcastsBlocked são verdadeiros, UnicastResponsesToMulticastBroadcastsBlocked tem prioridade.|
 |unicastResponsesToMulticastBroadcastsBlocked|Booliano|Configura o firewall para bloquear respostas unicast ao tráfego de transmissão multicast. Quando UnicastResponsesToMulticastBroadcastsRequired e UnicastResponsesToMulticastBroadcastsBlocked são verdadeiros, UnicastResponsesToMulticastBroadcastsBlocked tem prioridade.|
 |inboundNotificationsRequired|Boleano|Permite que o firewall exibe notificações quando um aplicativo é impedido de ouvir em uma porta. Quando InboundNotificationsRequired e InboundNotificationsBlocked são verdadeiros, InboundNotificationsBlocked tem prioridade.|
 |inboundNotificationsBlocked|Booliano|Impede que o firewall exibe notificações quando um aplicativo é bloqueado para ouvir em uma porta. Quando InboundNotificationsRequired e InboundNotificationsBlocked são verdadeiros, InboundNotificationsBlocked tem prioridade.|
 |authorizedApplicationRulesFromGroupPolicyMerged|Booliano|Configura o firewall para mesclar regras de aplicativo autorizado da política de grupo com aquelas do armazenamento local em vez de ignorar as regras do armazenamento local. Quando AuthorizedApplicationRulesFromGroupPolicyNotMerged e AuthorizedApplicationRulesFromGroupPolicyMerged são verdadeiros, AuthorizedApplicationRulesFromGroupPolicyMerged tem prioridade.|
-|authorizedApplicationRulesFromGroupPolicyNotMerged|Booliano|Configura o firewall para impedir a mesclação de regras de aplicativo autorizado da política de grupo com aquelas do armazenamento local, em vez de ignorar as regras do armazenamento local. Quando AuthorizedApplicationRulesFromGroupPolicyNotMerged e AuthorizedApplicationRulesFromGroupPolicyMerged são verdadeiros, AuthorizedApplicationRulesFromGroupPolicyMerged tem prioridade.|
+|authorizedApplicationRulesFromGroupPolicyNotMerged|Boleano|Configura o firewall para impedir a mesclação de regras de aplicativo autorizado da política de grupo com aquelas do armazenamento local, em vez de ignorar as regras do armazenamento local. Quando AuthorizedApplicationRulesFromGroupPolicyNotMerged e AuthorizedApplicationRulesFromGroupPolicyMerged são verdadeiros, AuthorizedApplicationRulesFromGroupPolicyMerged tem prioridade.|
 |globalPortRulesFromGroupPolicyMerged|Booliano|Configura o firewall para mesclar regras de porta globais da política de grupo com aquelas do armazenamento local em vez de ignorar as regras de armazenamento local. Quando GlobalPortRulesFromGroupPolicyNotMerged e GlobalPortRulesFromGroupPolicyMerged são verdadeiros, GlobalPortRulesFromGroupPolicyMerged tem prioridade.|
-|globalPortRulesFromGroupPolicyNotMerged|Booliano|Configura o firewall para impedir a mesclação de regras de porta globais da política de grupo com aquelas do armazenamento local, em vez de ignorar as regras do armazenamento local. Quando GlobalPortRulesFromGroupPolicyNotMerged e GlobalPortRulesFromGroupPolicyMerged são verdadeiros, GlobalPortRulesFromGroupPolicyMerged tem prioridade.|
+|globalPortRulesFromGroupPolicyNotMerged|Boleano|Configura o firewall para impedir a mesclação de regras de porta globais da política de grupo com aquelas do armazenamento local, em vez de ignorar as regras do armazenamento local. Quando GlobalPortRulesFromGroupPolicyNotMerged e GlobalPortRulesFromGroupPolicyMerged são verdadeiros, GlobalPortRulesFromGroupPolicyMerged tem prioridade.|
 |connectionSecurityRulesFromGroupPolicyMerged|Booliano|Configura o firewall para mesclar regras de segurança de conexão da política de grupo com aquelas do armazenamento local em vez de ignorar as regras do armazenamento local. Quando ConnectionSecurityRulesFromGroupPolicyNotMerged e ConnectionSecurityRulesFromGroupPolicyMerged são verdadeiros, ConnectionSecurityRulesFromGroupPolicyMerged tem prioridade.|
 |connectionSecurityRulesFromGroupPolicyNotMerged|Booliano|Configura o firewall para impedir a mesclação de regras de segurança de conexão da política de grupo com aquelas do armazenamento local, em vez de ignorar as regras do armazenamento local. Quando ConnectionSecurityRulesFromGroupPolicyNotMerged e ConnectionSecurityRulesFromGroupPolicyMerged são verdadeiros, ConnectionSecurityRulesFromGroupPolicyMerged tem prioridade.|
-|outboundConnectionsRequired|Booliano|Configura o firewall para permitir todas as conexões de saída por padrão. Quando OutboundConnectionsRequired e OutboundConnectionsBlocked são verdadeiros, OutboundConnectionsBlocked tem prioridade. Essa configuração será aplicada ao Windows versão 1809 e superior.|
+|outboundConnectionsRequired|Boolean|Configura o firewall para permitir todas as conexões de saída por padrão. Quando OutboundConnectionsRequired e OutboundConnectionsBlocked são verdadeiros, OutboundConnectionsBlocked tem prioridade. Essa configuração será aplicada ao Windows versão 1809 e superior.|
 |outboundConnectionsBlocked|Booliano|Configura o firewall para bloquear todas as conexões de saída por padrão. Quando OutboundConnectionsRequired e OutboundConnectionsBlocked são verdadeiros, OutboundConnectionsBlocked tem prioridade. Essa configuração será aplicada ao Windows versão 1809 e superior.|
-|inboundConnectionsRequired|Booliano|Configura o firewall para permitir todas as conexões de entrada por padrão. Quando InboundConnectionsRequired e InboundConnectionsBlocked são verdadeiros, InboundConnectionsBlocked tem prioridade.|
+|inboundConnectionsRequired|Boleano|Configura o firewall para permitir todas as conexões de entrada por padrão. Quando InboundConnectionsRequired e InboundConnectionsBlocked são verdadeiros, InboundConnectionsBlocked tem prioridade.|
 |inboundConnectionsBlocked|Booliano|Configura o firewall para bloquear todas as conexões de entrada por padrão. Quando InboundConnectionsRequired e InboundConnectionsBlocked são verdadeiros, InboundConnectionsBlocked tem prioridade.|
 |securedPacketExemptionAllowed|Booliano|Configura o firewall para permitir que o computador host responda ao tráfego de rede não solicitado desse tráfego é protegido pelo IPSec mesmo quando o stealthModeBlocked é definido como true. Quando SecuredPacketExemptionBlocked e SecuredPacketExemptionAllowed são verdadeiros, SecuredPacketExemptionAllowed tem prioridade.|
 |securedPacketExemptionBlocked|Boleano|Configura o firewall para bloquear o computador host para responder ao tráfego de rede não solicitado desse tráfego é protegido pelo IPSec mesmo quando o stealthModeBlocked é definido como true. Quando SecuredPacketExemptionBlocked e SecuredPacketExemptionAllowed são verdadeiros, SecuredPacketExemptionAllowed tem prioridade.|
 |policyRulesFromGroupPolicyMerged|Booliano|Configura o firewall para mesclar políticas de Regra de Firewall da política de grupo com aquelas do armazenamento local, em vez de ignorar as regras do armazenamento local. Quando PolicyRulesFromGroupPolicyNotMerged e PolicyRulesFromGroupPolicyMerged são verdadeiros, PolicyRulesFromGroupPolicyMerged tem prioridade.|
-|policyRulesFromGroupPolicyNotMerged|Boleano|Configura o firewall para impedir a mesclação de políticas de Regra de Firewall da política de grupo com aquelas do armazenamento local, em vez de ignorar as regras do armazenamento local. Quando PolicyRulesFromGroupPolicyNotMerged e PolicyRulesFromGroupPolicyMerged são verdadeiros, PolicyRulesFromGroupPolicyMerged tem prioridade.|
+|policyRulesFromGroupPolicyNotMerged|Booliano|Configura o firewall para impedir a mesclação de políticas de Regra de Firewall da política de grupo com aquelas do armazenamento local, em vez de ignorar as regras do armazenamento local. Quando PolicyRulesFromGroupPolicyNotMerged e PolicyRulesFromGroupPolicyMerged são verdadeiros, PolicyRulesFromGroupPolicyMerged tem prioridade.|
 
 ## <a name="relationships"></a>Relações
 Nenhum

@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso optionalClaim
 description: FORNECER DESCRIÇÃO AQUI
-localization_priority: Normal
+ms.localizationpriority: medium
 author: sureshja
 ms.prod: applications
 doc_type: resourcePageType
-ms.openlocfilehash: a4302ac786dea126dad20562a8fbaa9aec3bd4128d3c4f4c315f30dc538b2661
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 91d110f47b9d3a95b32173bb1b8b8880799d6d11
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54180590"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59104100"
 ---
 # <a name="optionalclaim-resource-type"></a>Tipo de recurso optionalClaim
 
@@ -24,10 +24,10 @@ Confira [fornecer declarações opcionais ao aplicativo Azure AD](/azure/active-
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|additionalProperties|Coleção de cadeias de caracteres| Propriedades adicionais da declaração. Se uma propriedade existir nessa coleção, ela modificará o comportamento da declaração opcional especificada na propriedade name. |
+|additionalProperties|Coleção String| Propriedades adicionais da declaração. Se uma propriedade existir nessa coleção, ela modificará o comportamento da declaração opcional especificada na propriedade name. |
 |essential|Booliano| Se o valor for verdadeiro, a declaração especificada pelo cliente será necessária para garantir uma experiência de autorização suave para a tarefa específica solicitada pelo usuário final. O valor padrão é falso.|
 |nome|Cadeia de caracteres| O nome da declaração opcional. |
-|source|Cadeia de caracteres| A origem (objeto directory) da declaração. Há declarações predefinidos e declarações definidas pelo usuário de propriedades de extensão. Se o valor de origem for nulo, a declaração será uma declaração opcional predefinida. Se o valor de origem for usuário, o valor na propriedade name será a propriedade extension do objeto user. |
+|source|String| A origem (objeto directory) da declaração. Há declarações predefinidos e declarações definidas pelo usuário de propriedades de extensão. Se o valor de origem for nulo, a declaração será uma declaração opcional predefinida. Se o valor de origem for usuário, o valor na propriedade name será a propriedade extension do objeto user. |
 
 ## <a name="json-representation"></a>Representação JSON
 

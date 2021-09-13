@@ -2,15 +2,15 @@
 title: Listar transitiveMemberOf
 description: Obter grupos dos que o contato organizacional é membro. Essa solicitação de API é transitiva e também retornará todos os grupos de que o usuário é membro aninhado.
 author: dkershaw10
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 5049ecb59180eb6a62137ff2beaa83b42a19f7de
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: 1d44a6be842d081f8f27ed547cb0be5c3a1abd94
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50773477"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59037387"
 ---
 # <a name="list-transitivememberof"></a>Listar transitiveMemberOf
 
@@ -18,14 +18,14 @@ Namespace: microsoft.graph
 
 Obter grupos dos que [esse contato organizacional](../resources/orgcontact.md) é membro. A solicitação de API é transitiva e retorna todos os grupos de que o contato organizacional é um membro aninhado.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegada (conta corporativa ou de estudante) | OrgContact.Read.All e Group.Read.All, Directory.Read.All  |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | OrgContact.Read.All e Group.Read.All, Directory.Read.All |
 
 ## <a name="http-request"></a>Solicitação HTTP

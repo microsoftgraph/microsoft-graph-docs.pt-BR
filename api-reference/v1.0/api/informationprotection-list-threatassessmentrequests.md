@@ -1,16 +1,16 @@
 ---
 title: Listar threatAssessmentRequests
 description: Recupere uma lista de objetos threatassessmentrequest.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: hafen-ms
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: fb5e804682741c79d8ea3daeca5e6512575c16de
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 14870e7907069aae1ca15ecf5533dbf296824ab6
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52039563"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59140679"
 ---
 # <a name="list-threatassessmentrequests"></a>Listar threatAssessmentRequests
 

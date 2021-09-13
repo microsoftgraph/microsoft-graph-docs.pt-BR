@@ -1,16 +1,16 @@
 ---
 title: tipo de recurso de assinatura
 description: 'Uma assinatura que permite a um aplicativo cliente receber notificações sobre alterações de dados no Microsoft Graph. Atualmente, as assinaturas estão habilitadas para os seguintes recursos:'
-localization_priority: Priority
+ms.localizationpriority: high
 author: Jumaodhiss
 ms.prod: change-notifications
 doc_type: resourcePageType
-ms.openlocfilehash: 0ffd6ad7ebcaddca149b66004cef13f24ba72a1e
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 22c70c9617838fa58276a0f5fe56c734759a4a52
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58805988"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59084073"
 ---
 # <a name="subscription-resource-type"></a>tipo de recurso de assinatura
 
@@ -59,7 +59,7 @@ Para obter os valores de caminho de recurso possíveis para cada recurso com sup
 | notificationContentType | cadeia de caracteres | Tipo de conteúdo desejado para as notificações de alteração do MS Graph para os tipos de recursos com suporte. O tipo de conteúdo padrão é o tipo de conteúdo "aplicativo/json". | Todos |
 | notificationQueryOptions | cadeia de caracteres | Opções de Consulta OData para especificar o valor do recurso de destino. Os clientes recebem notificações quando o recurso atinge ao estado correspondente às opções de consulta aqui fornecidas. Com essa nova propriedade na carga de criação de assinatura, juntamente com todas as propriedades existentes, os Webhooks enviarão notificações sempre que um recurso atingir o estado desejado mencionado na propriedade notificationQueryOptions. Por exemplo, quando o trabalho de impressão for concluído, quando o valor de uma propriedade `isFetchable` do recurso de impressão se tornar verdadeiro etc. | [Serviço de Impressão Universal](/graph/universal-print-webhook-notifications) |
 | notificationUrl | cadeia de caracteres | Obrigatório. O URL do ponto de extremidade que receberá as notificações de alteração. Este URL deve fazer uso do protocolo HTTPS. | Todos |
-| recurso | string | Obrigatório. Especifica o recurso que será monitorado para detectar alterações. Não incluir a URL base (`https://graph.microsoft.com/v1.0/`). Consulte os possíveis valores do [caminho](webhooks.md) do recurso de cada recurso suportado.| Todos |
+| recurso | cadeia de caracteres | Obrigatório. Especifica o recurso que será monitorado para detectar alterações. Não incluir a URL base (`https://graph.microsoft.com/v1.0/`). Consulte os possíveis valores do [caminho](webhooks.md) do recurso de cada recurso suportado.| Todos |
 
 ### <a name="maximum-length-of-subscription-per-resource-type"></a>Tamanho máximo da assinatura por tipo de recurso
 

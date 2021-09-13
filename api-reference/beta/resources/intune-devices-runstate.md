@@ -2,15 +2,15 @@
 title: Tipo de número runState
 description: Indica o tipo de status de execução do script de gerenciamento de dispositivos.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: fee3d6eef67b4af198e0a038875ece20fc640fc3
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 179ac69eab19f17bea478e50fa3591d19645a17d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58817072"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59033529"
 ---
 # <a name="runstate-enum-type"></a>Tipo de número runState
 

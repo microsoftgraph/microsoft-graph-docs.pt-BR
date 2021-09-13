@@ -2,15 +2,15 @@
 title: Idiomas da lista
 description: Recupere uma lista de idiomas com suporte para personalização em um fluxo de usuário B2X.
 author: jkdouglas
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 63821a2e5fa882a6c66c3ad2b6ce9b77fc8f4938
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 368d6e1115f8a400edbecd777036905013099ee5
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50944476"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59028594"
 ---
 # <a name="list-languages"></a>Idiomas da lista
 
@@ -31,7 +31,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 A conta de trabalho ou de estudante precisa pertencer a uma das seguintes funções:
 
 * Administrador global
-* Administrador de Fluxo de Usuário de Identidade Externa
+* Administrador de identidade externa Flow usuário
 
 ## <a name="http-request"></a>Solicitação HTTP
 

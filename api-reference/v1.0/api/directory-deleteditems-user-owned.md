@@ -2,15 +2,15 @@
 title: Listar itens excluídos pertencentes a um usuário
 description: 'Recupera uma lista de itens excluídos recentemente pertencentes ao usuário especificado.  '
 author: keylimesoda
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 4064c395ba3275575fa0c698d602f30ec2d164b90714e0e26ea4178efd0800c5
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: a8cbe88fa9673ae63e7e7dd0aa6dcbe505edfda1
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54138966"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59022769"
 ---
 # <a name="list-deleted-items-owned-by-a-user"></a>Listar itens excluídos pertencentes a um usuário
 
@@ -58,7 +58,7 @@ O corpo da solicitação requer os seguintes parâmetros:
 | Parâmetro    | Tipo |Descrição|
 |:---------------|:--------|:----------|
 |userId|Cadeia de caracteres|ID do proprietário.|
-|tipo|String|Tipo de objetos de propriedade a retornar; `Group` atualmente é o único valor com suporte.|
+|tipo|Cadeia de caracteres|Tipo de objetos de propriedade a retornar; `Group` atualmente é o único valor com suporte.|
 
 
 ## <a name="response"></a>Resposta

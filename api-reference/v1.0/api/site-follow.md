@@ -2,15 +2,15 @@
 author: learafa
 title: Seguir site
 description: Siga o site/sites de um usuário.
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 1f643671f9d9ccb744974f278007ce26186b2c97
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: 16120ffedd1600c6f2021b433891722b80fd84be
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50473711"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59085068"
 ---
 # <a name="follow-site"></a>Seguir site 
 
@@ -41,7 +41,7 @@ POST /users/{user-id}/followedSites/add
 No corpo da solicitação, fornece uma matriz de objetos JSON com o parâmetro id mencionado na tabela abaixo. 
 
 
-| Nome                 | Valor  | Descrição                                                            |
+| Name                 | Valor  | Descrição                                                            |
 |:---------------------|:-------|:-----------------------------------------------------------------------|
 |   id                 | cadeia de caracteres | O [identificador exclusivo](../resources/site.md#id-property) do item. |
 

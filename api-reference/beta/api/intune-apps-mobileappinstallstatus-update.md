@@ -2,15 +2,15 @@
 title: Atualizar mobileAppInstallStatus
 description: Atualize as propriedades de um objeto mobileAppInstallStatus.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 079450013b31b5c987c5ce51e3dd94ca143a21e9
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: c450447ecf733494bd7dad31d4ad81090a2a8cc8
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58785644"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59028475"
 ---
 # <a name="update-mobileappinstallstatus"></a>Atualizar mobileAppInstallStatus
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementApps.ReadWrite.All|
+|Aplicativo|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -54,7 +54,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [o mobil
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Chave da entidade.|
+|id|String|Chave da entidade.|
 |deviceName|String|Nome do dispositivo|
 |deviceId|Cadeia de caracteres|ID do dispositivo|
 |lastSyncDateTime|DateTimeOffset|Hora da última sincronização|
@@ -66,7 +66,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [o mobil
 |osDescription|Cadeia de caracteres|Descrição do sistema operacional|
 |userName|Cadeia de caracteres|Nome de usuário do dispositivo|
 |userPrincipalName|Cadeia de caracteres|Nome UPN|
-|displayVersion|Cadeia de caracteres|Versão acessível humana do aplicativo|
+|displayVersion|String|Versão acessível humana do aplicativo|
 
 
 

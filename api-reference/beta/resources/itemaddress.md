@@ -1,16 +1,16 @@
 ---
 title: tipo de recurso itemAddress
 description: tipo de recurso itemAddress
-localization_priority: Normal
+ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: people
 doc_type: resourcePageType
-ms.openlocfilehash: 7e11ab6a69e377144a53c298e1c8ad99d496557769be5d799dd0afa2beb38ea7
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 72c48b2f96e60ab208d17aa4bb46dc7499d16728
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54167881"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59033396"
 ---
 # <a name="itemaddress-resource-type"></a>tipo de recurso itemAddress
 
@@ -38,7 +38,7 @@ Herda do [itemFacet](../resources/itemfacet.md).
 |detail|[physicalAddress](../resources/physicaladdress.md)|Detalhes sobre o endereço em si.|
 |displayName|Cadeia de caracteres|Nome amigável que o usuário atribuiu a esse endereço. |
 |geoCoordinates|[geoCoordinates](../resources/geocoordinates.md)|As geocoordinações do endereço.|
-|id|Cadeia de caracteres|Identificador usado para endereçamento individual da entidade. Herdado da [entidade](../resources/entity.md)|
+|id|String|Identificador usado para endereçamento individual da entidade. Herdado da [entidade](../resources/entity.md)|
 |inferência|[inferenceData](../resources/inferencedata.md)|Contém detalhes de inferência se a entidade for inferida pelo aplicativo de criação ou modificação. Herdado [do itemFacet](../resources/itemfacet.md).|
 |lastModifiedBy|[identitySet](../resources/identityset.md)|Fornece o identificador do usuário e/ou aplicativo que modificou a entidade pela última vez. Herdado [do itemFacet](../resources/itemfacet.md).|
 |lastModifiedDateTime|DateTimeOffset|Fornece a dataTimeOffset para quando a entidade foi criada. Herdado [do itemFacet](../resources/itemfacet.md).|

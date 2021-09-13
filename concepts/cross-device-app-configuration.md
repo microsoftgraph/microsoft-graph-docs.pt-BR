@@ -1,14 +1,14 @@
 ---
 title: 'Criar aplicativos para diversos dispositivos com a tecnologia do Project Rome '
 description: 'Você pode usar o Project Rome para criar experiências que abrangem vários dispositivos e plataformas sem complicações, reduzindo conflitos para usuários e ajudando a promover o engajamento com o aplicativo. Para que aplicativos compartilhem dados entre vários dispositivos e plataformas usando as APIs do Project Rome, é necessário configurar um aplicativo para diversos dispositivos que inclua informações sobre os aplicativos específicos de plataforma. '
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: project-rome
-ms.openlocfilehash: bb3b6bb5ce9cf420c647fff8e91d306e83de65193a958375cb7704af2f15b207
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 8d1d58ec2da980efeab46423fd945a5afd2994fa
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54216515"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59139223"
 ---
 # <a name="build-cross-device-apps-powered-by-project-rome"></a>Criar aplicativos para diversos dispositivos com a tecnologia do Project Rome 
 

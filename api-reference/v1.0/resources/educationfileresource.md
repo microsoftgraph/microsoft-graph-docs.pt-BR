@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso educationFileResource
 description: Uma subclasse de educationResource que representa um objeto de arquivo associado à atribuição ou envio.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: mmast-msft
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: c91b33734ea421c34e3627c76b7dd410ab8d251f262c509b15865d5c8db60814
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: e0e101e1d21bd8e5aa205875a9f444678aeee218
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54146913"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59036638"
 ---
 # <a name="educationfileresource-resource-type"></a>Tipo de recurso educationFileResource
 

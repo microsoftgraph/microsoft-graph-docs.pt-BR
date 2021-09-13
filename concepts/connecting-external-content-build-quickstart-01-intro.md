@@ -1,3 +1,12 @@
+---
+ms.localizationpriority: medium
+ms.openlocfilehash: c804bdd39ebc2c460aa261355703b50ba530b197
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59289494"
+---
 <!-- markdownlint-disable MD002 MD025 MD041 -->
 <!--- # Introduction --->
 

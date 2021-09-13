@@ -2,15 +2,15 @@
 title: tipo de número driverApprovalStatus
 description: Um tipo de número para representar o status de aprovação de um driver.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: dbf9f081ea77e872cf99e3d2f28b829c3935b5e7
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: be598135a452a63a5f0a658e709064278d2939d9
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58793684"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59030022"
 ---
 # <a name="driverapprovalstatus-enum-type"></a>tipo de número driverApprovalStatus
 

@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso policyBase
 description: Representa um tipo de base abstrato para tipos de política herdado.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: lujiangfeng666
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 2918543536f62627f7c2a742009c3d67012353b4
-ms.sourcegitcommit: 998c63e6290cfb5ad4a6bd3eb3e249d282f962a3
+ms.openlocfilehash: 6795065e7edbf9d31936007e842c24882d138185
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58531219"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59098479"
 ---
 # <a name="policybase-resource-type"></a>Tipo de recurso policyBase
 
@@ -20,15 +20,15 @@ Representa um tipo de base abstrato para tipos de política herdado. Herda de [d
 
 ## <a name="methods"></a>Métodos
 
-Nenhum
+Nenhum(a)
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
 |id|Cadeia de caracteres| Identificador exclusivo dessa política. Somente leitura. Herdado de [directoryObject](directoryobject.md).|
-|descrição|Cadeia de caracteres| Descrição dessa política.|
-|displayName|Cadeia de caracteres| Nome de exibição para esta política. |
+|description|String| Descrição dessa política. Obrigatório.|
+|displayName|Cadeia de caracteres| Nome de exibição para esta política. Obrigatório. |
 
 ## <a name="relationships"></a>Relações
 

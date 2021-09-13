@@ -1,24 +1,24 @@
 ---
 title: Excluir extensionProperty
-description: Exclua uma extensionProperty.
-localization_priority: Normal
+description: Excluir uma extensãoProperty.
+ms.localizationpriority: medium
 author: sureshja
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 38e5358a39214c060a56513ff31120c3ea12ead8
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 5206c13b87786185c8459e8cf9979d588ede7c76
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50131815"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59100495"
 ---
 # <a name="delete-extensionproperty"></a>Excluir extensionProperty
 
 Namespace: microsoft.graph
 
-[Exclua uma extensionProperty](../resources/extensionproperty.md).
+Excluir uma [extensãoProperty](../resources/extensionproperty.md).
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 

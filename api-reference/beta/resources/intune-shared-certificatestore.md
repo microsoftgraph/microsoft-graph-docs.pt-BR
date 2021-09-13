@@ -2,15 +2,15 @@
 title: Tipo de numeração certificateStore
 description: Tipos certificateStore
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 7c29b302fda79f6fc1a0914efe72613188fcbc04
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 11b7aba31c7ada9092fe7b5e4fe62adc869fcfac
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58795119"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59023371"
 ---
 # <a name="certificatestore-enum-type"></a>Tipo de numeração certificateStore
 

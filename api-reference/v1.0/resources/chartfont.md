@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso ChartFont
 description: Esse objeto representa os atributos de fonte do objeto Chart, como nome, tamanho, cor, dentre outros.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: lumine2008
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 6743b12dc266ab967eb2f9693b693efcac9722a5166a02a1041974afc2b81e06
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 79e4e65846a51bfc0f0b91cace03d4ee9e8d7ecf
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54223666"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59049680"
 ---
 # <a name="chartfont-resource-type"></a>Tipo de recurso ChartFont
 

@@ -2,15 +2,15 @@
 title: Criar mobileAppInstallStatus
 description: Crie um novo objeto mobileAppInstallStatus.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b1a49887e46f887b28d85b76c749eb5fa11a6d91
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: bd75c9f2e14c81c85a6532f02f210f3942ad55c8
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58796457"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59031548"
 ---
 # <a name="create-mobileappinstallstatus"></a>Criar mobileAppInstallStatus
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementApps.ReadWrite.All|
+|Aplicativo|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -54,7 +54,7 @@ A tabela a seguir mostra as propriedades necessárias ao criar o mobileAppInstal
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Chave da entidade.|
+|id|String|Chave da entidade.|
 |deviceName|String|Nome do dispositivo|
 |deviceId|Cadeia de caracteres|ID do dispositivo|
 |lastSyncDateTime|DateTimeOffset|Hora da última sincronização|
@@ -66,7 +66,7 @@ A tabela a seguir mostra as propriedades necessárias ao criar o mobileAppInstal
 |osDescription|Cadeia de caracteres|Descrição do sistema operacional|
 |userName|Cadeia de caracteres|Nome de usuário do dispositivo|
 |userPrincipalName|Cadeia de caracteres|Nome UPN|
-|displayVersion|Cadeia de caracteres|Versão acessível humana do aplicativo|
+|displayVersion|String|Versão acessível humana do aplicativo|
 
 
 

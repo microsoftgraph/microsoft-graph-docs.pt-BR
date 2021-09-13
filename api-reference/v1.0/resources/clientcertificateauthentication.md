@@ -2,15 +2,15 @@
 title: Tipo de recurso clientCertificateAuthentication
 description: Representa a configuração para recuperar um clientCertificateAuthentication.
 author: nickgmicrosoft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 89214a0e9c6805adc7bafa59f12b0091c89c953d4380bf3ea9b95d89ade2973b
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 70a3885d313f368c71ab1dc2f10c158a726ffde9
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54212134"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59109266"
 ---
 # <a name="clientcertificateauthentication-resource-type"></a>Tipo de recurso clientCertificateAuthentication
 

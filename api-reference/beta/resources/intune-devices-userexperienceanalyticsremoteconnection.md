@@ -2,15 +2,15 @@
 title: Tipo de recurso userExperienceAnalyticsRemoteConnection
 description: A experiência do usuário analisará a entidade de conexão remota.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 7e9717b2865ff0e0a4126cc7f010925e8ff43360
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 62d6d012e94a0423b3951d1345704d4447b81e1f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58820874"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59020347"
 ---
 # <a name="userexperienceanalyticsremoteconnection-resource-type"></a>Tipo de recurso userExperienceAnalyticsRemoteConnection
 
@@ -35,7 +35,7 @@ A experiência do usuário analisará a entidade de conexão remota.
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|O identificador exclusivo da entidade de conexão remota de análise de experiência do usuário.|
+|id|String|O identificador exclusivo da entidade de conexão remota de análise de experiência do usuário.|
 |deviceId|Cadeia de caracteres|A id do dispositivo.|
 |deviceName|String|O nome do dispositivo.|
 |modelo|String|O modelo de dispositivo de análise de experiência do usuário.|

@@ -2,15 +2,15 @@
 title: Atualizar userExperienceAnalyticsAppHealthDevicePerformance
 description: Atualize as propriedades de um objeto userExperienceAnalyticsAppHealthDevicePerformance.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 748634f036a574a4ac487866816d436fefebbf9e
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: efbbcfd93d77b8facd76f1238e8255f3839ebc2f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58804362"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59034572"
 ---
 # <a name="update-userexperienceanalyticsapphealthdeviceperformance"></a>Atualizar userExperienceAnalyticsAppHealthDevicePerformance
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementManagedDevices.ReadWrite.All|
+|Aplicativo|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -55,14 +55,14 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [o userE
 |:---|:---|:---|
 |id|Cadeia de caracteres|O identificador exclusivo do objeto de desempenho do dispositivo de análise de experiência do usuário.|
 |deviceModel|Cadeia de caracteres|O nome do modelo do dispositivo.|
-|deviceManufacturer|Cadeia de caracteres|O nome do fabricante do dispositivo.|
+|deviceManufacturer|Cadeia de Caracteres|O nome do fabricante do dispositivo.|
 |appCrashCount|Int32|O número de falhas de aplicativo para o dispositivo. Valores válidos -2147483648 para 2147483647|
 |crashedAppCount|Int32|O número de falhas distintas do aplicativo para o dispositivo. Valores válidos -2147483648 para 2147483647|
 |appHangCount|Int32|O número de travas de aplicativo para o dispositivo. Valores válidos -2147483648 para 2147483647|
 |processedDateTime|DateTimeOffset|A data e a hora em que as estatísticas foram computadas pela última vez.|
 |meanTimeToFailureInMinutes|Int32|O tempo de falha média do dispositivo em minutos. Valores válidos -2147483648 para 2147483647|
 |deviceAppHealthScore|Duplo|A pontuação de saúde do aplicativo do dispositivo. Valores válidos -1,79769313486232E+308 a 1.79769313486232E+308|
-|deviceAppHealthStatus|Cadeia de caracteres|O status geral da saúde do aplicativo do dispositivo.|
+|deviceAppHealthStatus|String|O status geral da saúde do aplicativo do dispositivo.|
 |deviceId|Cadeia de caracteres|A id do dispositivo.|
 |deviceDisplayName|Cadeia de caracteres|O nome do dispositivo.|
 

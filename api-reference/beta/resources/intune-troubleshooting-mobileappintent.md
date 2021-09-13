@@ -2,15 +2,15 @@
 title: Tipo de número mobileAppIntent
 description: Indica o status do aplicativo móvel no dispositivo.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 485519fdc142a472cba5db0e05df374b6426e17a
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: d7a1d27ef7f3ce091382b3daa5f816708a97f173
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58265169"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59029791"
 ---
 # <a name="mobileappintent-enum-type"></a>Tipo de número mobileAppIntent
 
@@ -24,9 +24,9 @@ Indica o status do aplicativo móvel no dispositivo.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |disponível|0|Disponível|
-|notAvailable|1 |Não disponível|
+|notAvailable|1|Não disponível|
 |requiredInstall|2|Instalação Necessária|
-|requiredUninstall|3 |Desinstalação necessária|
+|requiredUninstall|3|Desinstalação necessária|
 |requiredAndAvailableInstall|4 |RequiredAndAvailableInstall|
 |availableInstallWithoutEnrollment|5 |AvailableInstallWithoutEnrollment|
 |exclude|6 |Excluir|

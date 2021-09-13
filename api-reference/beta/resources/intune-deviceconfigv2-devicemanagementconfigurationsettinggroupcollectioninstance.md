@@ -2,15 +2,15 @@
 title: Tipo de recurso deviceManagementConfigurationSettingGroupCollectionInstance
 description: Definindo instância dentro da política
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: a828c826f96b0c781f845a48c71e4ba3e45bc737
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: cf223b7c6cf656dfa56d83e740ed16b5f4100f8e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58820419"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59030364"
 ---
 # <a name="devicemanagementconfigurationsettinggroupcollectioninstance-resource-type"></a>Tipo de recurso deviceManagementConfigurationSettingGroupCollectionInstance
 
@@ -28,7 +28,7 @@ Herda [de deviceManagementConfigurationSettingInstance](../resources/intune-devi
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|settingDefinitionId|Cadeia de caracteres|Definição Id de definição Herdada [de deviceManagementConfigurationSettingInstance](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettinginstance.md)|
+|settingDefinitionId|String|Definição Id de definição Herdada [de deviceManagementConfigurationSettingInstance](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettinginstance.md)|
 |settingInstanceTemplateReference|[deviceManagementConfigurationSettingInstanceTemplateReference](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettinginstancetemplatereference.md)|Referência do modelo de instância de configuração Herdada [de deviceManagementConfigurationSettingInstance](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettinginstance.md)|
 
 ## <a name="relationships"></a>Relações

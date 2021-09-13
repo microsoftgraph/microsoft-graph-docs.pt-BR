@@ -2,15 +2,15 @@
 title: Tipo de recurso configManagerPolicySummary
 description: Um resumo de política ConfigManager.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 2cdb8393bd791af124232c2be3b35ede171bcf50
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 88c31f9314f7cc4c55c68b328768e3119d913298
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58805300"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59033452"
 ---
 # <a name="configmanagerpolicysummary-resource-type"></a>Tipo de recurso configManagerPolicySummary
 

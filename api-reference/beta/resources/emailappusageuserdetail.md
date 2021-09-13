@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso emailAppUsageUserDetail
 description: Veja a seguir uma representação JSON do recurso.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: sarahwxy
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: dce83b17f029bec2bf8977d0e863dcdb5c7fc4e1a9c5dea731b654d5ce6ab9f3
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: d41597475133275761d3728fd99c513eb468777f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54210068"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59027131"
 ---
 # <a name="emailappusageuserdetail-resource-type"></a>Tipo de recurso emailAppUsageUserDetail
 
@@ -22,16 +22,16 @@ Namespace: microsoft.graph
 | :---------------- | :---------------- |
 | reportRefreshDate | Data              |
 | userPrincipalName | Cadeia de caracteres            |
-| displayName       | Cadeia de caracteres            |
-| isDeleted         | Boolean           |
+| displayName       | String            |
+| isDeleted         | Booliano           |
 | deletedDate       | Data              |
 | lastActivityDate  | Data              |
 | mailForMac        | String collection |
 | outlookForMac     | String collection |
 | outlookForWindows | String collection |
 | outlookForMobile  | String collection |
-| otherForMobile    | String collection |
-| outlookForWeb     | String collection |
+| otherForMobile    | Conjunto de cadeias de caracteres |
+| outlookForWeb     | Conjunto de cadeias de caracteres |
 | pop3App           | String collection |
 | imap4App          | String collection |
 | smtpApp           | String collection |

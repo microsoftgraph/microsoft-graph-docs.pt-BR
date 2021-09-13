@@ -2,15 +2,15 @@
 title: Tipo de recurso deviceHealthScriptHourlySchedule
 description: Tipo de script de saúde do dispositivo agendado por hora.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8b35b28f7480adce05ed2f279a3a8140b5edb891
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 6128f3d16a3d64858871903131e4c799de03415d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58820692"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59023469"
 ---
 # <a name="devicehealthscripthourlyschedule-resource-type"></a>Tipo de recurso deviceHealthScriptHourlySchedule
 

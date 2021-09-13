@@ -2,15 +2,15 @@
 title: Tipo de recurso binaryManagementConditionExpression
 description: Uma expressão de condição de gerenciamento avaliada usando uma operação binária.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 12186c8b08ec0a086e695338f4b1fe00421e3831
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 5119ca3f9acd6fab2f5269b542038e81b7594be0
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58788167"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59030309"
 ---
 # <a name="binarymanagementconditionexpression-resource-type"></a>Tipo de recurso binaryManagementConditionExpression
 

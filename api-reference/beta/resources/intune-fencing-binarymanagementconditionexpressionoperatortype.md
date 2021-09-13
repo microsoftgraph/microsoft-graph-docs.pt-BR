@@ -2,15 +2,15 @@
 title: Tipo de número binaryManagementConditionExpressionOperatorType
 description: Operadores binários com suporte para expressões de condição de gerenciamento.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: d50d87aac91f073243327f0446306b17e54eb9ec
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: cd203328651d41325492160956774700a92ebcb1
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58798094"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59030302"
 ---
 # <a name="binarymanagementconditionexpressionoperatortype-enum-type"></a>Tipo de número binaryManagementConditionExpressionOperatorType
 

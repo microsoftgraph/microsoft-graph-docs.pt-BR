@@ -1,16 +1,16 @@
 ---
 title: Criar, atualizar e excluir itens adicionados por seu aplicativo na conexão do Microsoft Graph
 description: Aprenda a usar o Microsoft Graph para gerenciar itens adicionados pelo seu aplicativo ao serviço Pesquisa da Microsoft
-localization_priority: Priority
+ms.localizationpriority: high
 author: mecampos
 doc_type: conceptualPageType
 ms.prod: search
-ms.openlocfilehash: ed657f45047bc02940f3be6969eaa8b7f2d3b5373db96ab85fc5918601456db3
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 2dc4e219a10b6c2aebba0e4292cad9180d68c711
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54129635"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59139300"
 ---
 <!---<author of this doc: rsamai>--->
 

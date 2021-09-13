@@ -2,15 +2,15 @@
 title: Tipo de recurso windowsUpdateState
 description: Ainda não documentado
 author: rolyon
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9c0f4e986483f5c4dce849295406ebad3cec721c
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: a904a2c30d134b0b54ac20304ada5a5cbfabee79
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58803746"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59030007"
 ---
 # <a name="windowsupdatestate-resource-type"></a>Tipo de recurso windowsUpdateState
 
@@ -28,13 +28,13 @@ Ainda não documentado
 |[Listar windowsUpdateStates](../api/intune-shared-windowsupdatestate-list.md)|[Coleção windowsUpdateState](../resources/intune-shared-windowsupdatestate.md)|Listar propriedades e relações dos [objetos windowsUpdateState.](../resources/intune-shared-windowsupdatestate.md)|
 |[Obter windowsUpdateState](../api/intune-shared-windowsupdatestate-get.md)|[windowsUpdateState](../resources/intune-shared-windowsupdatestate.md)|Ler propriedades e relações do [objeto windowsUpdateState.](../resources/intune-shared-windowsupdatestate.md)|
 |[Criar windowsUpdateState](../api/intune-shared-windowsupdatestate-create.md)|[windowsUpdateState](../resources/intune-shared-windowsupdatestate.md)|Crie um novo [objeto windowsUpdateState.](../resources/intune-shared-windowsupdatestate.md)|
-|[Excluir windowsUpdateState](../api/intune-shared-windowsupdatestate-delete.md)|Nenhum(a)|Exclui um [windowsUpdateState](../resources/intune-shared-windowsupdatestate.md).|
+|[Excluir windowsUpdateState](../api/intune-shared-windowsupdatestate-delete.md)|Nenhum|Exclui um [windowsUpdateState](../resources/intune-shared-windowsupdatestate.md).|
 |[Atualizar windowsUpdateState](../api/intune-shared-windowsupdatestate-update.md)|[windowsUpdateState](../resources/intune-shared-windowsupdatestate.md)|Atualize as propriedades de um [objeto windowsUpdateState.](../resources/intune-shared-windowsupdatestate.md)|
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Esta é a ID da entidade.|
+|id|String|Esta é a ID da entidade.|
 |deviceId|Cadeia de caracteres|A id do dispositivo.|
 |userId|Cadeia de caracteres|A id do usuário.|
 |deviceDisplayName|Cadeia de caracteres|Nome de exibição do dispositivo.|

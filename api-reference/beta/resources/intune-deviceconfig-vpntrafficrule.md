@@ -2,15 +2,15 @@
 title: Tipo de recurso vpnTrafficRule
 description: Definição da Regra de Tráfego vpn.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d62c0d2357b3d46cce5654d460853ad063a351ad
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: b5a9986231c0f4d974a02ed8eaaaf44a032ac341
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58800050"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59027061"
 ---
 # <a name="vpntrafficrule-resource-type"></a>Tipo de recurso vpnTrafficRule
 
@@ -31,10 +31,10 @@ Definição da Regra de Tráfego vpn.
 |remotePortRanges|[coleção numberRange](../resources/intune-deviceconfig-numberrange.md)|O intervalo de portas remotas só pode ser definido quando o protocolo é TCP ou UDP (6 ou 17). Esta coleção pode conter um máximo de 500 elementos.|
 |localAddressRanges|[Coleção iPv4Range](../resources/intune-shared-ipv4range.md)|Intervalo de endereços local. Esta coleção pode conter um máximo de 500 elementos.|
 |remoteAddressRanges|[Coleção iPv4Range](../resources/intune-shared-ipv4range.md)|Intervalo de endereços remoto. Esta coleção pode conter um máximo de 500 elementos.|
-|appId|Cadeia de caracteres|Identificador de aplicativo, se essa regra de tráfego for disparada por um aplicativo.|
+|appId|String|Identificador de aplicativo, se essa regra de tráfego for disparada por um aplicativo.|
 |appType|[vpnTrafficRuleAppType](../resources/intune-deviceconfig-vpntrafficruleapptype.md)|Tipo de aplicativo, se essa regra de tráfego for disparada por um aplicativo. Os valores possíveis são: `none`, `desktop`, `universal`.|
 |routingPolicyType|[vpnTrafficRuleRoutingPolicyType](../resources/intune-deviceconfig-vpntrafficruleroutingpolicytype.md)|Quando o aplicativo é acionado, indica se é possível habilitar o túnel dividido ao longo dessa rota. Os valores possíveis são: `none`, `splitTunnel`, `forceTunnel`.|
-|claims|Cadeia de caracteres|Declarações associadas a essa regra de tráfego.|
+|claims|String|Declarações associadas a essa regra de tráfego.|
 
 ## <a name="relationships"></a>Relações
 Nenhum

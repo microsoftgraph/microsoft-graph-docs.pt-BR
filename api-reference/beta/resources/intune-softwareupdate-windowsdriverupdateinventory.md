@@ -2,15 +2,15 @@
 title: Tipo de recurso windowsDriverUpdateInventory
 description: Uma nova entidade para representar inventários de driver.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d61d8d0dbefabb0bbb2cfc2be823ff66a2ba2ae3
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 06fa58d5e4428e55e0d76a37c484519c566198d2
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58792118"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59029931"
 ---
 # <a name="windowsdriverupdateinventory-resource-type"></a>Tipo de recurso windowsDriverUpdateInventory
 
@@ -28,18 +28,18 @@ Uma nova entidade para representar inventários de driver.
 |[Listar windowsDriverUpdateInventories](../api/intune-softwareupdate-windowsdriverupdateinventory-list.md)|[Coleção windowsDriverUpdateInventory](../resources/intune-softwareupdate-windowsdriverupdateinventory.md)|Listar propriedades e relações dos [objetos windowsDriverUpdateInventory.](../resources/intune-softwareupdate-windowsdriverupdateinventory.md)|
 |[Obter windowsDriverUpdateInventory](../api/intune-softwareupdate-windowsdriverupdateinventory-get.md)|[windowsDriverUpdateInventory](../resources/intune-softwareupdate-windowsdriverupdateinventory.md)|Leia propriedades e relações do [objeto windowsDriverUpdateInventory.](../resources/intune-softwareupdate-windowsdriverupdateinventory.md)|
 |[Criar windowsDriverUpdateInventory](../api/intune-softwareupdate-windowsdriverupdateinventory-create.md)|[windowsDriverUpdateInventory](../resources/intune-softwareupdate-windowsdriverupdateinventory.md)|Crie um novo [objeto windowsDriverUpdateInventory.](../resources/intune-softwareupdate-windowsdriverupdateinventory.md)|
-|[Excluir windowsDriverUpdateInventory](../api/intune-softwareupdate-windowsdriverupdateinventory-delete.md)|Nenhum(a)|Exclui um [windowsDriverUpdateInventory](../resources/intune-softwareupdate-windowsdriverupdateinventory.md).|
+|[Excluir windowsDriverUpdateInventory](../api/intune-softwareupdate-windowsdriverupdateinventory-delete.md)|Nenhum|Exclui um [windowsDriverUpdateInventory](../resources/intune-softwareupdate-windowsdriverupdateinventory.md).|
 |[Atualizar windowsDriverUpdateInventory](../api/intune-softwareupdate-windowsdriverupdateinventory-update.md)|[windowsDriverUpdateInventory](../resources/intune-softwareupdate-windowsdriverupdateinventory.md)|Atualize as propriedades de um [objeto windowsDriverUpdateInventory.](../resources/intune-softwareupdate-windowsdriverupdateinventory.md)|
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|A id do driver.|
+|id|String|A id do driver.|
 |nome|Cadeia de caracteres|O nome do driver.|
 |versão|String|A versão do driver.|
 |fabricante|String|O fabricante do driver.|
 |releaseDateTime|DateTimeOffset|A data de lançamento do driver.|
-|driverClass|Cadeia de caracteres|A classe do driver.|
+|driverClass|String|A classe do driver.|
 |applicableDeviceCount|Int32|O número de dispositivos para os quais esse driver é aplicável.|
 |approvalStatus|[driverApprovalStatus](../resources/intune-softwareupdate-driverapprovalstatus.md)|O status de aprovação desse driver. Os valores possíveis são: `needsReview`, `declined`, `approved`, `suspended`.|
 |category|[driverCategory](../resources/intune-softwareupdate-drivercategory.md)|A categoria desse driver. Os valores possíveis são: `recommended`, `previouslyApproved`, `other`.|

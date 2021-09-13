@@ -2,15 +2,15 @@
 title: tipo de número de complianceState
 description: Estado de conformidade.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: d2b33b8d82f3b6683617247c702219928c2ff2fde7f9fdd73f7b193325e432ae
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 6dc585bd96a43fdab18fd46da0d7eafdec49126f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54218580"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59098829"
 ---
 # <a name="compliancestate-enum-type"></a>tipo de número de complianceState
 

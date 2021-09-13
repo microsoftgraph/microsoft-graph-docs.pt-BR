@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso chatMessageMention
 description: 'Representa uma menção em uma entidade chatMessage. A menção pode ser para um usuário, equipe, bot ou canal. '
-localization_priority: Normal
+ms.localizationpriority: medium
 author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: ed22514c0da50b3dfc6ec62c79c26858d4c0051ed0fcc16a485d937573cf6a6d
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 8b458393d73c7547dda1638e86c2fa4782e3b4d4
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54238157"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59109420"
 ---
 # <a name="chatmessagemention-resource-type"></a>Tipo de recurso chatMessageMention
 
@@ -39,7 +39,7 @@ Para um contexto mais completo do exemplo, consulte [List channel message replie
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |id|Int32|Índice de uma entidade que está sendo mencionada no **chatMessage especificado.** Corresponde ao valor {index} na `<at id="{index}">` marca correspondente no corpo da mensagem.|
-|mentionText|string|Cadeia de caracteres usada para representar a menção. Por exemplo, o nome de exibição de um usuário, um nome de equipe.|
+|mentionText|cadeia de caracteres|Cadeia de caracteres usada para representar a menção. Por exemplo, o nome de exibição de um usuário, um nome de equipe.|
 |mencionado|[chatMessageMentionedIdentitySet](chatmessagementionedidentityset.md)|A entidade (usuário, aplicativo, equipe ou canal) que foi @mentioned.|
 
 

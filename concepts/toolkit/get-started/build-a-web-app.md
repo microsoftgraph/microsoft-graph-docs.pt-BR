@@ -1,14 +1,14 @@
 ---
 title: Criar um aplicativo Web com o microsoft Graph Toolkit
 description: Começar a criar um aplicativo Web usando o microsoft Graph Toolkit.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: elisenyang
-ms.openlocfilehash: 9890a042ce08533ce17c014a0815f1f63dbfdd46739f4f4af284bf87706124d4
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 22f5e81f8c382694389ddcffbe5e0f8a77fa55a9
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54236854"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59103834"
 ---
 # <a name="build-a-web-application-with-the-microsoft-graph-toolkit"></a>Criar um aplicativo Web com o microsoft Graph Toolkit
 
@@ -16,7 +16,7 @@ Este tópico descreve como começar a usar o microsoft Graph Toolkit em um aplic
 
 Começar com o microsoft Graph Toolkit envolve as seguintes etapas:
 1. Adicione o Microsoft Graph Toolkit ao seu projeto.
-2. Inicializar o Provedor MSAL 2.0.
+2. Inicializar o Provedor MSAL2.
 3. Adicione os componentes.
 4. Teste seu aplicativo.
 
@@ -38,11 +38,11 @@ npm install @microsoft/mgt
 
 ---
 
-## <a name="initialize-the-msal-20-provider"></a>Inicializar o Provedor MSAL 2.0
-Os provedores do Kit de ferramentas do Microsoft Graph permitem autenticação e acesso ao Microsoft Graph para os componentes. Para saber mais, confira [Usando os provedores](../providers/providers.md). O [Provedor MSAL 2.0](../providers/msal2.md) usa o msal-browser para entrar nos usuários e adquirir tokens. Você pode inicializar esse provedor em seu HTML ou JavaScript.
+## <a name="initialize-the-msal2-provider"></a>Inicializar o provedor MSAL2
+Os provedores do Kit de ferramentas do Microsoft Graph permitem autenticação e acesso ao Microsoft Graph para os componentes. Para saber mais, confira [Usando os provedores](../providers/providers.md). O [Provedor MSAL2](../providers/msal2.md) usa o msal-browser para entrar nos usuários e adquirir tokens. Você pode inicializar esse provedor em seu HTML ou JavaScript.
 
-> **Observação**: se você estiver usando o Provedor MSAL no momento e quiser atualizar para o Provedor MSAL 2.0, siga as etapas listadas [aqui](../providers/msal2.md#migrating-from-msal-provider-to-msal-2-provider).
-Se você quiser usar sua própria autenticação de back-end, use o [Provedor de Proxy](../providers/proxy.md) no lugar do provedor MSAL 2.0.
+> **Observação**: se você estiver usando o Provedor MSAL no momento e quiser atualizar para o Provedor MSAL2, siga as etapas listadas [aqui](../providers/msal2.md#migrating-from-msal-provider-to-msal2-provider).
+Se você quiser usar sua própria autenticação de back-end, use o [Provedor de Proxy](../providers/proxy.md) no lugar do Provedor MSAL2.
 
 Você pode optar por inicializar o provedor em seu HTML ou no código JavaScript. 
 
@@ -65,16 +65,16 @@ Providers.globalProvider = new Msal2Provider({
 
 ---
 
-A ID do cliente é a única propriedade necessária para inicializar o provedor, mas você pode definir opções adicionais. Para ver a lista completa, consulte [Msal 2.0 Provider](../providers/msal2.md).
+A ID do cliente é a única propriedade necessária para inicializar o provedor, mas você pode definir opções adicionais. Para ver a lista completa, consulte [Provedor MSAL2](../providers/msal2.md).
 
 ### <a name="creating-an-appclient-id"></a>Criando uma ID de aplicativo/cliente
 Para obter uma ID do cliente, você precisa registrar [seu aplicativo](./add-aad-app-registration.md) no Azure AD.
 
 ## <a name="add-components"></a>Adicionar os componentes
-Depois de inicializar o provedor MSAL 2.0, você pode começar a usar qualquer um dos Toolkit componentes.
+Depois de inicializar o provedor MSAL2, você pode começar a usar qualquer um dos Toolkit componentes.
 
 # <a name="html"></a>[HTML](#tab/HTML)
-Veja a seguir um exemplo de trabalho completo usando mgt-loader, o Provedor MSAL inicializado em HTML e o componente logon:
+Veja a seguir um exemplo de trabalho completo usando mgt-loader, o Provedor MSAL2 inicializado em HTML e o componente logon:
 
 ```html
 <script src="https://unpkg.com/@microsoft/mgt/dist/bundle/mgt-loader.js"></script>
@@ -82,7 +82,7 @@ Veja a seguir um exemplo de trabalho completo usando mgt-loader, o Provedor MSAL
 <mgt-login></mgt-login>
 ```
 
-Este é um exemplo usando os módulos ES6, o Provedor MSAL 2.0 inicializado em HTML e o componente logon:
+Este é um exemplo usando os módulos ES6, o Provedor MSAL2 inicializado em HTML e o componente logon:
 
 ```html
 <script type="module" src="node_modules/@microsoft/mgt/dist/es6/index.js"></script>
@@ -91,7 +91,7 @@ Este é um exemplo usando os módulos ES6, o Provedor MSAL 2.0 inicializado em H
 ```
 
 # <a name="javascript"></a>[JavaScript](#tab/JavaScript)
-Este é um exemplo usando os módulos ES6, o Provedor MSAL 2.0 inicializado em JavaScript e o componente logon:
+Este é um exemplo usando os módulos ES6, o Provedor MSAL2 inicializado em JavaScript e o componente logon:
 
 ```javascript
 import { Providers, Msal2Provider } from '@microsoft/mgt';
@@ -173,7 +173,7 @@ Providers.onProviderUpdated(loadAgenda);
 
 ---
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Próximas etapas
 
 - Confira o [tutorial Introdução ao Microsoft Graph Toolkit](/learn/modules/msgraph-toolkit-intro/) passo a passo.
 - Experimente os componentes do [playground](https://mgt.dev).

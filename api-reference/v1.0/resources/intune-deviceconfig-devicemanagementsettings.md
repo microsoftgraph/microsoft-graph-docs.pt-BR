@@ -2,15 +2,15 @@
 title: Tipo de recurso deviceManagementSettings
 description: Ainda não documentado
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0f12d71278e7819d388270d3e08c3f35e75fce2a4ee535becd236449efdf800c
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: c5cbc5983793de44fa7bbdb7323c4085a9af066d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54182501"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59136485"
 ---
 # <a name="devicemanagementsettings-resource-type"></a>Tipo de recurso deviceManagementSettings
 

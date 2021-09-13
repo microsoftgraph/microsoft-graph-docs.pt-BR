@@ -2,15 +2,15 @@
 title: Tipo de recurso serviceUpdateMessage
 description: Representa os comunicados de alterações em um serviço.
 author: payiAzure
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: service-communications
 doc_type: resourcePageType
-ms.openlocfilehash: f25b9ad01dc6dfd3d3405f4c16ac658fe438f092
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 7e8dc6e63025400c64114dc282389fc2f7453daf
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58261077"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59108818"
 ---
 # <a name="serviceupdatemessage-resource-type"></a>Tipo de recurso serviceUpdateMessage
 
@@ -26,18 +26,18 @@ Herda [de serviceAnnouncementBase](../resources/serviceannouncementbase.md).
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
 |[Obter serviceUpdateMessage](../api/serviceupdatemessage-get.md)|[serviceUpdateMessage](../resources/serviceupdatemessage.md)|Recupere as propriedades e as relações de um [objeto serviceUpdateMessage.](../resources/serviceupdatemessage.md) |
-|[markRead](../api/serviceupdatemessage-markread.md)|Boolean|Marque uma lista [de serviceUpdateMessage](../resources/serviceupdatemessage.md)s como **lido** para o usuário que está assinado.|
-|[markUnread](../api/serviceupdatemessage-markunread.md)|Boolean|Marque uma lista [de serviceUpdateMessage](../resources/serviceupdatemessage.md)s como **não** lido para o usuário insinuável.|
-|[archive](../api/serviceupdatemessage-archive.md)|Boolean|Arquivar uma lista [de serviceUpdateMessage](../resources/serviceupdatemessage.md)s para o usuário inscrevedo.|
-|[unarchive](../api/serviceupdatemessage-unarchive.md)|Boolean|Unarchive a list of [serviceUpdateMessage](../resources/serviceupdatemessage.md)s for the signed in user.|
-|[favorite](../api/serviceupdatemessage-favorite.md)|Boolean|Altere o status de uma lista [de serviceUpdateMessage](../resources/serviceupdatemessage.md)s como favorito para o usuário que está assinado.|
-|[unfavorite](../api/serviceupdatemessage-unfavorite.md)|Boolean|Remova o status favorito [de serviceUpdateMessage](../resources/serviceupdatemessage.md)s para o usuário instituto.|
+|[markRead](../api/serviceupdatemessage-markread.md)|Booliano|Marque uma lista [de serviceUpdateMessage](../resources/serviceupdatemessage.md)s como **lido** para o usuário que está assinado.|
+|[markUnread](../api/serviceupdatemessage-markunread.md)|Booliano|Marque uma lista [de serviceUpdateMessage](../resources/serviceupdatemessage.md)s como **não** lido para o usuário insinuável.|
+|[archive](../api/serviceupdatemessage-archive.md)|Booliano|Arquivar uma lista [de serviceUpdateMessage](../resources/serviceupdatemessage.md)s para o usuário inscrevedo.|
+|[unarchive](../api/serviceupdatemessage-unarchive.md)|Booliano|Unarchive a list of [serviceUpdateMessage](../resources/serviceupdatemessage.md)s for the signed in user.|
+|[favorite](../api/serviceupdatemessage-favorite.md)|Booliano|Altere o status de uma lista [de serviceUpdateMessage](../resources/serviceupdatemessage.md)s como favorito para o usuário que está assinado.|
+|[unfavorite](../api/serviceupdatemessage-unfavorite.md)|Booliano|Remova o status favorito [de serviceUpdateMessage](../resources/serviceupdatemessage.md)s para o usuário instituto.|
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |actionRequiredByDateTime|DateTimeOffset|O prazo esperado da ação para a mensagem.|
-|body|[itemBody](../resources/itembody.md)|O tipo de conteúdo e o conteúdo do corpo da mensagem de serviço.|
+|corpo|[itemBody](../resources/itembody.md)|O tipo de conteúdo e o conteúdo do corpo da mensagem de serviço.|
 |category|serviceUpdateCategory|A categoria de mensagem de serviço. Os valores possíveis são: `preventOrFixIssue`, `planForChange`, `stayInformed`, `unknownFutureValue`.|
 |detalhes|Coleção([keyValuePair](../resources/keyvaluepair.md))|Detalhes adicionais sobre a mensagem de serviço. Essa propriedade não dá suporte a filtros. Herdado [do serviceAnnouncementBase](../resources/serviceannouncementbase.md).|
 |endDateTime|DateTimeOffset|A hora de término da mensagem de serviço. Herdado [do serviceAnnouncementBase](../resources/serviceannouncementbase.md).|
@@ -47,8 +47,8 @@ Herda [de serviceAnnouncementBase](../resources/serviceannouncementbase.md).
 |services|Collection(string)|Os serviços afetados pela mensagem de serviço.|
 |severity|serviceUpdateSeverity|A gravidade da mensagem de serviço. Os valores possíveis são: `normal`, `high`, `critical`, `unknownFutureValue`.|
 |startDateTime|DateTimeOffset|A hora de início da mensagem de serviço. Herdado [do serviceAnnouncementBase](../resources/serviceannouncementbase.md).|
-|marcações|Collection(string)|Uma coleção de marcas para a mensagem de serviço.|
-|title|Cadeia de caracteres|O título da mensagem de serviço. Herdado [do serviceAnnouncementBase](../resources/serviceannouncementbase.md).|
+|categorias|Collection(string)|Uma coleção de marcas para a mensagem de serviço.|
+|title|String|O título da mensagem de serviço. Herdado [do serviceAnnouncementBase](../resources/serviceannouncementbase.md).|
 |viewPoint|[serviceUpdateMessageViewpoint](../resources/serviceupdatemessageviewpoint.md)|Representa os dados de pontos de exibição do usuário da mensagem de serviço. Esses dados incluem o status da mensagem, como se o usuário arquivou, leu ou marcou a mensagem como favorita. Essa propriedade é nula quando acessada com permissões de aplicativo.|
 
 ## <a name="relationships"></a>Relações

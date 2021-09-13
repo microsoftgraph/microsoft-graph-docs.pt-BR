@@ -2,15 +2,15 @@
 title: Atualizar certificateConnectorDetails
 description: Atualize as propriedades de um objeto certificateConnectorDetails.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: daec761daba4abace27af57f0915fcc073358e7c
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 7ccceda414923535abb13517f973226d6cf96192
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58789264"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59027544"
 ---
 # <a name="update-certificateconnectordetails"></a>Atualizar certificateConnectorDetails
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -54,8 +54,8 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [o certi
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|Cadeia de caracteres|Identificador exclusivo para este conjunto de ConnectorDetails.|
-|connectorName|Cadeia de caracteres|Nome do conector (definido durante o registro).|
-|machineName|Cadeia de caracteres|Nome do computador que hospeda esse serviço de conector.|
+|connectorName|Cadeia de Caracteres|Nome do conector (definido durante o registro).|
+|machineName|String|Nome do computador que hospeda esse serviço de conector.|
 |enrollmentDateTime|DateTimeOffset|Data/hora em que esse conector foi inscrito.|
 |lastCheckinDateTime|DateTimeOffset|Data/hora em que esse conector se conectou pela última vez ao serviço.|
 

@@ -2,15 +2,15 @@
 title: Tipo de recurso auditActor
 description: Uma classe que contém as propriedades para Ator de auditoria.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 94da9e5bebd5e5fef645fcde656a82efc3614b96d7b97f8e6d372b03cc15ea63
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 653731b4ce04ec39317017ca9ae28e3d36ae3573
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54175235"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59123136"
 ---
 # <a name="auditactor-resource-type"></a>Tipo de recurso auditActor
 
@@ -23,11 +23,11 @@ Uma classe que contém as propriedades para Ator de auditoria.
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|tipo|Cadeia de caracteres|Tipo de ator.|
+|tipo|String|Tipo de ator.|
 |userPermissions|Conjunto de cadeia de caracteres|Lista de permissões de usuário de quando a auditoria foi executada.|
 |ApplicationId|Cadeia de caracteres|ID do aplicativo AAD.|
 |applicationDisplayName|Cadeia de caracteres|Nome do aplicativo.|
-|userPrincipalName|Cadeia de caracteres|Nome principal do usuário (UPN).|
+|userPrincipalName|String|Nome principal do usuário (UPN).|
 |servicePrincipalName|Cadeia de caracteres|Nome da entidade de serviço (SPN).|
 |ipAddress|Cadeia de caracteres|IPAddress.|
 |userId|Cadeia de caracteres|ID do usuário.|

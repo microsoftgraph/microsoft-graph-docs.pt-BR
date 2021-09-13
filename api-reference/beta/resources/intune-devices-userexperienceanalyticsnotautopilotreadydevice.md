@@ -2,15 +2,15 @@
 title: Tipo de recurso userExperienceAnalyticsNotAutopilotReadyDevice
 description: Análise da experiência do usuário Dispositivo não windows autopilot pronto.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: e85b13e540547111e2aea513f7fe595f7ece7404
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: d09e1c897833839aa2f8581b9ec8ea23e6ad561a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58804271"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59020368"
 ---
 # <a name="userexperienceanalyticsnotautopilotreadydevice-resource-type"></a>Tipo de recurso userExperienceAnalyticsNotAutopilotReadyDevice
 
@@ -28,7 +28,7 @@ Análise da experiência do usuário Dispositivo não windows autopilot pronto.
 |[Listar userExperienceAnalyticsNotAutopilotReadyDevices](../api/intune-devices-userexperienceanalyticsnotautopilotreadydevice-list.md)|[coleção userExperienceAnalyticsNotAutopilotReadyDevice](../resources/intune-devices-userexperienceanalyticsnotautopilotreadydevice.md)|Listar propriedades e relações dos [objetos userExperienceAnalyticsNotAutopilotReadyDevice.](../resources/intune-devices-userexperienceanalyticsnotautopilotreadydevice.md)|
 |[Obter userExperienceAnalyticsNotAutopilotReadyDevice](../api/intune-devices-userexperienceanalyticsnotautopilotreadydevice-get.md)|[userExperienceAnalyticsNotAutopilotReadyDevice](../resources/intune-devices-userexperienceanalyticsnotautopilotreadydevice.md)|Leia propriedades e relações do [objeto userExperienceAnalyticsNotAutopilotReadyDevice.](../resources/intune-devices-userexperienceanalyticsnotautopilotreadydevice.md)|
 |[Criar userExperienceAnalyticsNotAutopilotReadyDevice](../api/intune-devices-userexperienceanalyticsnotautopilotreadydevice-create.md)|[userExperienceAnalyticsNotAutopilotReadyDevice](../resources/intune-devices-userexperienceanalyticsnotautopilotreadydevice.md)|Crie um novo [objeto userExperienceAnalyticsNotAutopilotReadyDevice.](../resources/intune-devices-userexperienceanalyticsnotautopilotreadydevice.md)|
-|[Excluir userExperienceAnalyticsNotAutopilotReadyDevice](../api/intune-devices-userexperienceanalyticsnotautopilotreadydevice-delete.md)|Nenhum(a)|Exclui um [userExperienceAnalyticsNotAutopilotReadyDevice](../resources/intune-devices-userexperienceanalyticsnotautopilotreadydevice.md).|
+|[Excluir userExperienceAnalyticsNotAutopilotReadyDevice](../api/intune-devices-userexperienceanalyticsnotautopilotreadydevice-delete.md)|Nenhum|Exclui um [userExperienceAnalyticsNotAutopilotReadyDevice](../resources/intune-devices-userexperienceanalyticsnotautopilotreadydevice.md).|
 |[Atualizar userExperienceAnalyticsNotAutopilotReadyDevice](../api/intune-devices-userexperienceanalyticsnotautopilotreadydevice-update.md)|[userExperienceAnalyticsNotAutopilotReadyDevice](../resources/intune-devices-userexperienceanalyticsnotautopilotreadydevice.md)|Atualize as propriedades de [um objeto userExperienceAnalyticsNotAutopilotReadyDevice.](../resources/intune-devices-userexperienceanalyticsnotautopilotreadydevice.md)|
 
 ## <a name="properties"></a>Propriedades
@@ -40,10 +40,10 @@ Análise da experiência do usuário Dispositivo não windows autopilot pronto.
 |fabricante|String|O fabricante do dispositivo intune.|
 |modelo|String|O modelo do dispositivo intune.|
 |managedBy|Cadeia de caracteres|O dispositivo do intune é gerenciado por.|
-|autoPilotRegistered|Boleano|O piloto automático do dispositivo intuneRegistered.|
+|autoPilotRegistered|Boolean|O piloto automático do dispositivo intuneRegistered.|
 |autoPilotProfileAssigned|Boleano|O autopilotProfileAssigned do dispositivo intune.|
-|azureAdRegistered|Boleano|O dispositivo do intune é azureAdRegistered.|
-|azureAdJoinType|Cadeia de caracteres|O azure Ad joinType do dispositivo do intune.|
+|azureAdRegistered|Booliano|O dispositivo do intune é azureAdRegistered.|
+|azureAdJoinType|Cadeia de Caracteres|O azure Ad joinType do dispositivo do intune.|
 
 ## <a name="relationships"></a>Relações
 Nenhum

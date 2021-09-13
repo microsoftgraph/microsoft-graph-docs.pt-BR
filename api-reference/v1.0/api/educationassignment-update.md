@@ -1,16 +1,16 @@
 ---
 title: Atualizar educationassignment
 description: Atualizar um objeto educationAssigment.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: sharad-sharma-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: dcfd47deabe9f711bbbbca59c7c7c4b23651f3d3
-ms.sourcegitcommit: 979fe005c74eb99cd971df6b9511b2d3f7fe3cd4
+ms.openlocfilehash: f754a8e4e79bd0043199924acbaf28eec8261716
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52993541"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59020039"
 ---
 # <a name="update-educationassignment"></a>Atualizar educationassignment
 
@@ -27,8 +27,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) |  EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite  |
-|Delegado (conta pessoal da Microsoft) |  Sem suporte.  |
+|Delegada (conta corporativa ou de estudante) |  EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite  |
+|Delegada (conta pessoal da Microsoft) |  Sem suporte.  |
 |Aplicativo | Sem suporte. | 
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -51,7 +51,7 @@ Propriedades existentes que não estão incluídas no corpo da solicitação ter
 |:---------------|:--------|:----------|
 |addedStudentAction|Cadeia de caracteres| Descreve se a atribuição deve ser distribuída aos alunos que são adicionados após a data de publicação da atribuição.|
 |allowLateSubmissions|Boolean| Se os alunos podem enviar envio após a data de vencimento.|
-|allowStudentsToAddResourcesToSubmission|Boolean| Se um aluno pode adicionar recursos a um envio ou não. Além disso, indica se todos os recursos no envio correspondem à lista de recursos de atribuição. |
+|allowStudentsToAddResourcesToSubmission|Booliano| Se um aluno pode adicionar recursos a um envio ou não. Além disso, indica se todos os recursos no envio correspondem à lista de recursos de atribuição. |
 |assignDateTime|DateTimeOffset| Indica a data para publicar a atribuição aos alunos. |
 |assignTo|educationAssignmentRecipient| Alunos que receberão a atribuição.|
 |closeDateTime|DateTimeOffset| Data em que a atribuição será fechada para envios. Este é um campo opcional que pode ser nulo se a atribuição não permitirLateSubmissions ou closeDateTime for igual ao dueDateTime, mas se especificado, ele deve ser maior ou igual ao dueDateTime.|
@@ -59,7 +59,7 @@ Propriedades existentes que não estão incluídas no corpo da solicitação ter
 |dueDateTime|DateTimeOffset| A atribuição de data é devido. |
 |grading|educationAssignmentGradeType| Como a atribuição será gradeada.|
 |instructions|itemBody| Instruções a serem fornecidas aos alunos juntamente com a atribuição. |
-|notificationChannelUrl|Cadeia de caracteres| O canal para comunicar notificações relacionadas à atribuição. Para alterar a URL, de definir `assignTo` o valor [como educationAssignmentClassRecipient](../resources/educationassignmentclassrecipient.md). A URL do canal não pode ser mudada após a publicação da atribuição.|
+|notificationChannelUrl|String| O canal para comunicar notificações relacionadas à atribuição. Para alterar a URL, de definir `assignTo` o valor [como educationAssignmentClassRecipient](../resources/educationassignmentclassrecipient.md). A URL do canal não pode ser mudada após a publicação da atribuição.|
 
 ## <a name="response"></a>Resposta
 Se tiver êxito, este método retornará um código de resposta e um `200 OK` objeto [educationAssignment](../resources/educationassignment.md) atualizado no corpo da resposta.

@@ -2,15 +2,15 @@
 title: Acessar appleDeviceFeaturesConfigurationBase
 description: Leia as propriedades e as relações do objeto appleDeviceFeaturesConfigurationBase.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 67463b46e4dcdcbaa9db43c7ea6202d8155773e4383db940d21f107fe31a13f9
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: e18a9e8bc794aefc1c4ba7f28771b7fe301c7caf
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54240964"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59140231"
 ---
 # <a name="get-appledevicefeaturesconfigurationbase"></a>Acessar appleDeviceFeaturesConfigurationBase
 

@@ -1,16 +1,16 @@
 ---
 title: Listar extensionProperties
 description: Recupere uma lista de objetos extensionproperty.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: sureshja
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 4375f868d6588250c1bdd11b339565fa7f125ab8
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 2d288b89d0b4b77a4b94e63c0bcef9104fb7103d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50132493"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59038570"
 ---
 # <a name="list-extensionproperties"></a>Listar extensionProperties
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 Recupere a lista de [objetos extensionProperty](../resources/extensionproperty.md) em um aplicativo.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -52,7 +52,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um código de resposta e uma `200 OK` coleção [de objetos extensionProperty](../resources/extensionproperty.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e uma `200 OK` coleção de [objetos extensionProperty](../resources/extensionproperty.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

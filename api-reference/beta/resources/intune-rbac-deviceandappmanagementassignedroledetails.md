@@ -2,15 +2,15 @@
 title: Tipo de recurso deviceAndAppManagementAssignedRoleDetails
 description: O conjunto de Definições de Função e Atribuições de Função atribuídas a um usuário.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 88d69e52049eb1dd90eeb6657e3403369ff4a14f
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: b82d762d5c20d64f917729a193f2914c87acf040
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58806009"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59030127"
 ---
 # <a name="deviceandappmanagementassignedroledetails-resource-type"></a>Tipo de recurso deviceAndAppManagementAssignedRoleDetails
 
@@ -25,8 +25,8 @@ O conjunto de Definições de Função e Atribuições de Função atribuídas a
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|roleDefinitionIds|Coleção de cadeias de caracteres|IDs de definição de função para as Definições de Função specifc atribuídas a um usuário. Essa propriedade é somente leitura.|
-|roleAssignmentIds|Coleção de cadeias de caracteres|IDs de atribuição de função para as atribuições de função specifc atribuídas a um usuário. Essa propriedade é somente leitura.|
+|roleDefinitionIds|String collection|IDs de definição de função para as Definições de Função specifc atribuídas a um usuário. Essa propriedade é somente leitura.|
+|roleAssignmentIds|Conjunto de cadeias de caracteres|IDs de atribuição de função para as atribuições de função specifc atribuídas a um usuário. Essa propriedade é somente leitura.|
 
 ## <a name="relationships"></a>Relações
 Nenhum

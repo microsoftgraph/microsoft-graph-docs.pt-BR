@@ -2,14 +2,14 @@
 title: Visão geral da API do To Do
 description: O To Do Oferece uma maneira simples de gerenciar suas tarefas e planejar o seu dia
 author: avijityadav
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: outlook
-ms.openlocfilehash: 0d93ba100fb48d2c6e833582a7f8238a5e51800e6b92d56ed4707e2aad2d8499
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 3b4fd77adf93b2570ffbb3570a881aaa5e0c551e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54245391"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59062303"
 ---
 # <a name="to-do-api-overview"></a>Visão geral da API do Tarefa Pendente
 O Microsoft To-Do fornece uma maneira simples para as pessoas gerenciarem suas tarefas e planejarem seu dia. As tarefas são organizadas em listas de tarefas, que podem ser acessadas através de clientes do To Do, Outlook e Teams a partir de qualquer dispositivo.

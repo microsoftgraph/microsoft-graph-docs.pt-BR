@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso operationError
 description: Descreve erros no teamsAsyncOperation.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: billbliss
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 395b10dbfd3617cfe891854897c9d99be64ad4b76bc05776b4eab77d1847a44f
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: b30a945dcbd19a6c1be0c276eec0b650b8251ea1
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54223267"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59098507"
 ---
 # <a name="operationerror-resource-type"></a>Tipo de recurso operationError
 
