@@ -2,15 +2,15 @@
 title: Atualizar macOsVppAppAssignedLicense
 description: Atualize as propriedades de um objeto macOsVppAppAssignedLicense.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6b38372513d3dc3ad4be6712edc83b217a809159
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 6ee7294033d85453a2426c07e092508fbb9bb1a5
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58791758"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59062156"
 ---
 # <a name="update-macosvppappassignedlicense"></a>Atualizar macOsVppAppAssignedLicense
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementApps.ReadWrite.All|
+|Aplicativo|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -53,7 +53,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [o macOs
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Chave da entidade.|
+|id|String|Chave da entidade.|
 |userEmailAddress|Cadeia de caracteres|O endereço de email do usuário.|
 |userId|Cadeia de caracteres|A ID do usuário.|
 |userName|Cadeia de caracteres|O nome do usuário.|

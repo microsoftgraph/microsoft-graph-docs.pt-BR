@@ -2,15 +2,15 @@
 title: Ação enableUnlicensedAdminstrators
 description: Após a habilitação, os usuários atribuídos como administradores por meio de Associações de Atribuição de Função não exigirão mais uma licença atribuída do Intune. Você está limitado a 350 membros diretos sem licença para cada grupo de segurança do AAD em uma atribuição de função, mas pode atribuir vários grupos de segurança do AAD a uma função se precisar dar suporte a mais de 350 administradores não licenças. Os administradores licenciados continuarão a funcionar como estão na medida em que as associações transitivas se aplicam e não estão sujeitas ao limite de 350 membros.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ab9c676a031f0371001e71b7574854280589b9c5
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 1b62a4316f1faf04812571fdffed94d6b14ca12f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58818425"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59061167"
 ---
 # <a name="enableunlicensedadminstrators-action"></a>Ação enableUnlicensedAdminstrators
 
@@ -27,8 +27,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Delegado (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP

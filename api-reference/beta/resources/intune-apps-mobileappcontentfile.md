@@ -2,15 +2,15 @@
 title: Tipo de recurso mobileAppContentFile
 description: Contém propriedades de um único arquivo de instalação associado uma versão específica de mobileAppContent.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 021fac79d8b9bc666d39866e910d5388461fa2e6
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 85255e7c649ec263636c46c8fc4d2e23a24eb880
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58801869"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59069408"
 ---
 # <a name="mobileappcontentfile-resource-type"></a>Tipo de recurso mobileAppContentFile
 
@@ -40,13 +40,13 @@ Contém propriedades de um único arquivo de instalação associado uma versão 
 |isCommitted|Booliano|Um valor que indica se o arquivo tem está confirmado.|
 |id|Cadeia de caracteres|A ID do arquivo.|
 |createdDateTime|DateTimeOffset|A hora em que o arquivo foi criado.|
-|nome|Cadeia de caracteres|O nome do arquivo.|
+|nome|String|O nome do arquivo.|
 |size|Int64|O tamanho do arquivo antes da criptografia.|
 |sizeEncrypted|Int64|O tamanho do arquivo após a criptografia.|
 |azureStorageUriExpirationDateTime|DateTimeOffset|A hora de expiração do URI do armazenamento do Azure.|
 |manifest|Binária|As informações do manifesto.|
 |uploadState|[mobileAppContentFileUploadState](../resources/intune-apps-mobileappcontentfileuploadstate.md)|O estado da solicitação de carregamento atual. Os valores possíveis são: `success`, `transientError`, `error`, `unknown`, `azureStorageUriRequestSuccess`, `azureStorageUriRequestPending`, `azureStorageUriRequestFailed`, `azureStorageUriRequestTimedOut`, `azureStorageUriRenewalSuccess`, `azureStorageUriRenewalPending`, `azureStorageUriRenewalFailed`, `azureStorageUriRenewalTimedOut`, `commitFileSuccess`, `commitFilePending`, `commitFileFailed`, `commitFileTimedOut`.|
-|isFrameworkFile|Boleano|Um valor que indica se o arquivo é um arquivo de estrutura.|
+|isFrameworkFile|Booliano|Um valor que indica se o arquivo é um arquivo de estrutura.|
 |isDependency|Booliano|Se o arquivo de conteúdo é uma dependência do arquivo de conteúdo principal.|
 
 ## <a name="relationships"></a>Relações

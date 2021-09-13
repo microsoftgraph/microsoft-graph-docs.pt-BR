@@ -2,15 +2,15 @@
 title: Tipo de recurso termsAndConditionsAcceptanceStatus
 description: Uma entidade termsAndConditionsAcceptanceStatus representa o status de aceitação de uma política de Termos e Condições (T&C) por um determinado usuário. Os usuários devem aceitar a versão mais recente dos termos para manterem o acesso ao Portal da Empresa.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9b242e16eb2d890f133f60f028b523fc3acd3f66
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 42bcf4b2b8aaaf82369b0cbf47cd7a6487c06fcd
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58813653"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59069352"
 ---
 # <a name="termsandconditionsacceptancestatus-resource-type"></a>Tipo de recurso termsAndConditionsAcceptanceStatus
 
@@ -34,7 +34,7 @@ Uma entidade termsAndConditionsAcceptanceStatus representa o status de aceitaç�
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Identificador exclusivo da entidade.|
+|id|String|Identificador exclusivo da entidade.|
 |userDisplayName|Cadeia de caracteres|Nome de exibição do usuário cuja aceitação a entidade representa.|
 |acceptedVersion|Int32|Número da versão mais recente dos T&C aceitos pelo usuário.|
 |acceptedDateTime|DateTimeOffset|A data e a hora em que os termos foram aceitos pela última vez pelo usuário.|

@@ -2,15 +2,15 @@
 title: Tipo de número deviceTypes
 description: Tipo de dispositivo.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: b864ace6cb2d12e281fdea0f273fc7b06355c0ce
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 26765c142c2bcabd67847a9373a9355fc05e2ff4
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58819175"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59069233"
 ---
 # <a name="devicetypes-enum-type"></a>Tipo de número deviceTypes
 
@@ -36,7 +36,7 @@ Tipo de dispositivo.
 |iPhone|8 |iPhone.|
 |iPad|9 |iPad.|
 |iPod|10 |iPodTouch.|
-|android|11 |Android.|
+|android|11|Android.|
 |iSocConsumer|12 |iSocConsumer.|
 |unix|13|Unix.|
 |macMDM|14 |Cliente Mac OS X usando o agente MDM integrado.|

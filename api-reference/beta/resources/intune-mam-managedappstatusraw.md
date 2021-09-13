@@ -2,15 +2,15 @@
 title: tipo de recurso managedAppStatusRaw
 description: Representa um relatório de status não digitado sobre configuração e proteção de aplicativos para organizações.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0f85d01bf011f7a81178fd1995b73c21da6278de
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: e49fdf45b69bbbc38c5874c6212f7e58a182b566
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58794718"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59068842"
 ---
 # <a name="managedappstatusraw-resource-type"></a>tipo de recurso managedAppStatusRaw
 
@@ -34,7 +34,7 @@ Herda de [managedAppStatus](../resources/intune-mam-managedappstatus.md)
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|displayName|Cadeia de caracteres|Nome amigável do relatório de status. Herda de [managedAppStatus](../resources/intune-mam-managedappstatus.md)|
+|displayName|String|Nome amigável do relatório de status. Herda de [managedAppStatus](../resources/intune-mam-managedappstatus.md)|
 |id|Cadeia de caracteres|Chave da entidade. Herda de [managedAppStatus](../resources/intune-mam-managedappstatus.md)|
 |version|String|Versão da entidade. Herda de [managedAppStatus](../resources/intune-mam-managedappstatus.md)|
 |content|[Json](../resources/intune-mam-json.md)|Conteúdo do relatório de status.|

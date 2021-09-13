@@ -2,15 +2,15 @@
 title: Criar configManagerCollection
 description: Crie um novo objeto configManagerCollection.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c5ef016fba9ed8c32e0333f85f15ca7944b392c4
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 945a4bedf5a0680b001307a0d829cebc606c6812
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58783348"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59070017"
 ---
 # <a name="create-configmanagercollection"></a>Criar configManagerCollection
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementApps.ReadWrite.All|
+|Aplicativo|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -53,11 +53,11 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar o config
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|A chave da Coleção ConfigManager.|
+|id|String|A chave da Coleção ConfigManager.|
 |displayName|Cadeia de caracteres|The DisplayName.|
-|collectionIdentifier|Cadeia de caracteres|O identificador de coleção no SCCM.|
-|hierarchyName|Cadeia de caracteres|O HierarchyName.|
-|hierarchyIdentifier|Cadeia de caracteres|O Identificador de Hierarquia.|
+|collectionIdentifier|Cadeia de Caracteres|O identificador de coleção no SCCM.|
+|hierarchyName|String|O HierarchyName.|
+|hierarchyIdentifier|Cadeia de Caracteres|O Identificador de Hierarquia.|
 |createdDateTime|DateTimeOffset|A data criada.|
 |lastModifiedDateTime|DateTimeOffset|A última data modificada.|
 

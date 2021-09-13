@@ -2,15 +2,15 @@
 title: Tipo de recurso deviceCompliancePolicyDeviceStateSummary
 description: Ainda não documentado
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: e2affbe3a8a89dbee18c924ef6d90d74bf95cbda
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 321528b2adce2ab1bb0b226a4e15fb2696417b02
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58820447"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59064368"
 ---
 # <a name="devicecompliancepolicydevicestatesummary-resource-type"></a>Tipo de recurso deviceCompliancePolicyDeviceStateSummary
 

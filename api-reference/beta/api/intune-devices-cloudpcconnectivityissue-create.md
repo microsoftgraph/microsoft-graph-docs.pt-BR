@@ -2,15 +2,15 @@
 title: Criar cloudPCConnectivityIssue
 description: Crie um novo objeto cloudPCConnectivityIssue.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 4b5fae204dc8969dd1cb1507102b33353742bdf4
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 559b7746003009a7095944128d4560f169ca0ae4
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58801301"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59059137"
 ---
 # <a name="create-cloudpcconnectivityissue"></a>Criar cloudPCConnectivityIssue
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementManagedDevices.ReadWrite.All|
+|Aplicativo|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -53,7 +53,7 @@ A tabela a seguir mostra as propriedades necessárias ao criar o cloudPCConnecti
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|O identificador exclusivo da entidade de evento de problema de conectividade de análise de experiência do usuário.|
+|id|String|O identificador exclusivo da entidade de evento de problema de conectividade de análise de experiência do usuário.|
 |deviceId|Cadeia de caracteres|O DeviceId do Intune do dispositivo ao que a conexão está associada.|
 |errorCode|Cadeia de caracteres|O código de erro do problema de conectividade.|
 |errorDateTime|DateTimeOffset|A hora em que a conexão foi iniciada. O tempo é mostrado no formato ISO 8601 e hora UTC (Tempo Universal Coordenado).|

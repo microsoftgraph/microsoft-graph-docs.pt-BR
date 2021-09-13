@@ -2,15 +2,15 @@
 title: Atualizar userExperienceAnalyticsMetric
 description: Atualize as propriedades de um objeto userExperienceAnalyticsMetric.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 8abd25e29e6c19c3a87757e9845fcce95549ebb1
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: a72523528dabd899d37637cfc81ddaa6eb0a52d6
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58801280"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59070440"
 ---
 # <a name="update-userexperienceanalyticsmetric"></a>Atualizar userExperienceAnalyticsMetric
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementManagedDevices.ReadWrite.All|
+|Aplicativo|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -59,7 +59,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [o userE
 |:---|:---|:---|
 |id|Cadeia de caracteres|O identificador exclusivo da métrica de análise de experiência do usuário.|
 |valor|Duplo|O valor da métrica de análise da experiência do usuário.|
-|unidade|Cadeia de caracteres|A unidade da métrica de análise de experiência do usuário.|
+|unidade|Cadeia de Caracteres|A unidade da métrica de análise de experiência do usuário.|
 
 
 

@@ -2,15 +2,15 @@
 title: Obter groupPolicyPresentationValueLongDecimal
 description: Leia propriedades e relações do objeto groupPolicyPresentationValueLongDecimal.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 446d967b0b956691e1e99acfdebd6bc33b1cf561
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: e8c81514fe2a6d4c8d74480a19801e363dd7cc7a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58785532"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59070108"
 ---
 # <a name="get-grouppolicypresentationvaluelongdecimal"></a>Obter groupPolicyPresentationValueLongDecimal
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
+|Aplicativo|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {

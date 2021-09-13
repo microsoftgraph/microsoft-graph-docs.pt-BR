@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso officeClientCheckinStatus
 description: Entidade que descreve as estatísticas de check-in do locatário.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: dougeby
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: ae27c35842188bf3e1ce63f0906ab799867ca9a0
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 416b7f20477109718ab8b2efd26190050d910fda
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58794969"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59064424"
 ---
 # <a name="officeclientcheckinstatus-resource-type"></a>Tipo de recurso officeClientCheckinStatus
 
@@ -27,12 +27,12 @@ Entidade que descreve as estatísticas de check-in do locatário.
 |userPrincipalName|Cadeia de caracteres|Nome principal do usuário usando o dispositivo.|
 |deviceName|String|Nome do dispositivo tentando fazer check-in.|
 |devicePlatform|Cadeia de caracteres|Plataforma de dispositivo tentando fazer check-in.|
-|devicePlatformVersion|Cadeia de caracteres|Versão da plataforma do dispositivo tentando fazer check-in.|
-|wasSuccessful|Boleano|Se a última verificação tiver sido bem-sucedida.|
+|devicePlatformVersion|Cadeia de Caracteres|Versão da plataforma do dispositivo tentando fazer check-in.|
+|wasSuccessful|Boolean|Se a última verificação tiver sido bem-sucedida.|
 |userId|Cadeia de caracteres|Identificador de usuário usando o dispositivo.|
 |checkinDateTime|DateTimeOffset|Última hora de check-in do dispositivo em UTC.|
 |errorMessage|Cadeia de caracteres|Mensagem de erro se alguma associada ao último check-in.|
-|appliedPolicies|Coleção de cadeias de caracteres|Lista de políticas entregues ao dispositivo como última verificação.|
+|appliedPolicies|Conjunto de cadeias de caracteres|Lista de políticas entregues ao dispositivo como última verificação.|
 
 ## <a name="relationships"></a>Relações
 Nenhum

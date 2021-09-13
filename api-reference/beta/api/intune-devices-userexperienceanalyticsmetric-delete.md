@@ -2,15 +2,15 @@
 title: Excluir userExperienceAnalyticsMetric
 description: Exclui um userExperienceAnalyticsMetric.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6f7f92452115f2346586c3b87e413aa079c7240f
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 0eb39e76b3fe57fd0a164d74d0bb31f9f6f80b99
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58786786"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59070493"
 ---
 # <a name="delete-userexperienceanalyticsmetric"></a>Excluir userExperienceAnalyticsMetric
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementManagedDevices.ReadWrite.All|
+|Aplicativo|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {

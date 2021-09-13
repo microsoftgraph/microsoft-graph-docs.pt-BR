@@ -2,15 +2,15 @@
 title: Criar userExperienceAnalyticsAppHealthAppPerformanceByOSVersion
 description: Crie um novo objeto userExperienceAnalyticsAppHealthAppPerformanceByOSVersion.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 256c9fafc1e989d194361b7f0974a14b46e038c8
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: ffa624a3d0300c8efa823118edd07eb9de9f096a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58821869"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59070577"
 ---
 # <a name="create-userexperienceanalyticsapphealthappperformancebyosversion"></a>Criar userExperienceAnalyticsAppHealthAppPerformanceByOSVersion
 
@@ -27,8 +27,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Delegado (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -53,7 +53,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar o userEx
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|O identificador exclusivo do objeto de desempenho de versão do aplicativo de análise de experiência do usuário.|
+|id|String|O identificador exclusivo do objeto de desempenho de versão do aplicativo de análise de experiência do usuário.|
 |osVersion|String|A versão do sistema operacional do aplicativo.|
 |osBuildNumber|Cadeia de caracteres|O número de com build do sistema operacional do aplicativo.|
 |activeDeviceCount|Int32|O número de dispositivos em que o aplicativo está ativo. Valores válidos -2147483648 para 2147483647|

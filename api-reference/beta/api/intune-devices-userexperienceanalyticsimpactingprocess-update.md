@@ -2,15 +2,15 @@
 title: Atualizar userExperienceAnalyticsImpactingProcess
 description: Atualize as propriedades de um objeto userExperienceAnalyticsImpactingProcess.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0dc619edca7b53d40f149b529b4323d03d3e5bee
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 6d1643c7d15962fc7b108f7a49592d1483f9b5bf
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58798234"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59070528"
 ---
 # <a name="update-userexperienceanalyticsimpactingprocess"></a>Atualizar userExperienceAnalyticsImpactingProcess
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementManagedDevices.ReadWrite.All|
+|Aplicativo|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -53,11 +53,11 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [o userE
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|O identificador exclusivo da entidade de processo de análise de experiência do usuário.|
+|id|String|O identificador exclusivo da entidade de processo de análise de experiência do usuário.|
 |deviceId|Cadeia de caracteres|O identificador exclusivo do dispositivo afetado.|
-|category|Cadeia de caracteres|A categoria do processo de impacto.|
-|processName|Cadeia de caracteres|O nome do processo.|
-|descrição|Cadeia de caracteres|A descrição do processo.|
+|category|String|A categoria do processo de impacto.|
+|processName|Cadeia de Caracteres|O nome do processo.|
+|description|Cadeia de caracteres|A descrição do processo.|
 |publicador|String|O editor do processo.|
 |impactValue|Duplo|O valor de impacto do processo. Valores válidos de 0 a 1,79769313486232E+308|
 

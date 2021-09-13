@@ -2,15 +2,15 @@
 title: Atualizar groupPolicyPresentation
 description: Atualize as propriedades de um objeto groupPolicyPresentation.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f407c8f8d5be7769ff3ff41d303e16dc3b17b2fe
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 322e0b158305b39a2aac822965f1a0c7a4527cfb
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58789022"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59070149"
 ---
 # <a name="update-grouppolicypresentation"></a>Atualizar groupPolicyPresentation
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {

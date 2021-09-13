@@ -2,15 +2,15 @@
 title: Atualizar userExperienceAnalyticsAppHealthDevicePerformanceDetails
 description: Atualize as propriedades de um objeto userExperienceAnalyticsAppHealthDevicePerformanceDetails.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 8bd833f11d9af961b0e078675ff5615bddde67a0
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: fbe20355eade7920acf46b8243df1c3218650f5a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58818895"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59059095"
 ---
 # <a name="update-userexperienceanalyticsapphealthdeviceperformancedetails"></a>Atualizar userExperienceAnalyticsAppHealthDevicePerformanceDetails
 
@@ -27,8 +27,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Delegado (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -55,10 +55,10 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [o userE
 |:---|:---|:---|
 |id|String|O identificador exclusivo do objeto de desempenho do dispositivo de análise de experiência do usuário.|
 |eventDateTime|DateTimeOffset|A hora em que o evento ocorreu.|
-|eventType|Cadeia de caracteres|O tipo do evento.|
+|eventType|Cadeia de Caracteres|O tipo do evento.|
 |appDisplayName|Cadeia de caracteres|O nome amigável do aplicativo para o qual o evento ocorreu.|
-|appPublisher|Cadeia de caracteres|O editor do aplicativo.|
-|appVersion|String|A versão do aplicativo.|
+|appPublisher|Cadeia de Caracteres|O editor do aplicativo.|
+|appVersion|Cadeia de caracteres|A versão do aplicativo.|
 |deviceId|Cadeia de caracteres|A id do dispositivo.|
 |deviceDisplayName|Cadeia de caracteres|O nome do dispositivo.|
 

@@ -2,15 +2,15 @@
 title: Obter userExperienceAnalyticsAppHealthOSVersionPerformance
 description: Leia propriedades e relações do objeto userExperienceAnalyticsAppHealthOSVersionPerformance.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 996efa70b74bb29d53114023255b1e714afa56ad
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 9208df734c9f53ad0f1bc3e2b7794d0d5903b281
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58784062"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59059025"
 ---
 # <a name="get-userexperienceanalyticsapphealthosversionperformance"></a>Obter userExperienceAnalyticsAppHealthOSVersionPerformance
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementConfiguration.Read.All, DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
+|Aplicativo|DeviceManagementConfiguration.Read.All, DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {

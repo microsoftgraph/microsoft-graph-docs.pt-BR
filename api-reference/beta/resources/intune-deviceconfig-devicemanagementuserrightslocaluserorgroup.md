@@ -2,15 +2,15 @@
 title: Tipo de recurso deviceManagementUserRightsLocalUserOrGroup
 description: Representa informações para um usuário ou grupo local usado para a configuração de direitos do usuário.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9ba33bcdad7e4418b02a90f1fdfbd0b4c9d18e1d
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: bb8dd01d090c5d0aaef133b5e5b6367f5acdd278
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58783243"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59069226"
 ---
 # <a name="devicemanagementuserrightslocaluserorgroup-resource-type"></a>Tipo de recurso deviceManagementUserRightsLocalUserOrGroup
 
@@ -25,8 +25,8 @@ Representa informações para um usuário ou grupo local usado para a configura�
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|nome|Cadeia de caracteres|O nome desse usuário ou grupo local.|
-|descrição|Cadeia de caracteres|Descrição do administrador deste usuário ou grupo local.|
+|nome|String|O nome desse usuário ou grupo local.|
+|description|String|Descrição do administrador deste usuário ou grupo local.|
 |securityIdentifier|Cadeia de Caracteres|O identificador de segurança deste usuário ou grupo local (por exemplo, *S-1-5-32-544).|
 
 ## <a name="relationships"></a>Relações

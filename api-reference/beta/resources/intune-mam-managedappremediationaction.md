@@ -2,15 +2,15 @@
 title: Tipo de número managedAppRemediationAction
 description: Uma ação iniciada pelo administrador a ser aplicada em um aplicativo gerenciado.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: bae783378706210ea798b325fe99db800e0052b9
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 2f680f2c04d668bec89af4b208eaacc1c476f3cf
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58803472"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59068883"
 ---
 # <a name="managedappremediationaction-enum-type"></a>Tipo de número managedAppRemediationAction
 

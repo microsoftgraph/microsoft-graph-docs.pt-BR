@@ -2,15 +2,15 @@
 title: Tipo de recurso managedAppRegistration
 description: O ManagedAppEntity é o tipo de entidade de base para todos os outros tipos de entidades em um fluxo de trabalho de gerenciamento de aplicativos. O recurso ManagedAppRegistration representa os detalhes de um aplicativo, com capacidade de gerenciamento, usado por um membro da organização.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 97b056f6d70132a0790b5e8d05d17639cd7d8c40
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 8f867f74fb781b60da65d46471a2093fd76a26c2
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58806198"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59068909"
 ---
 # <a name="managedappregistration-resource-type"></a>Tipo de recurso managedAppRegistration
 
@@ -44,7 +44,7 @@ O recurso ManagedAppRegistration representa os detalhes de um aplicativo, com ca
 |managedDeviceId|Cadeia de caracteres|O identificador de Dispositivo Gerenciado do dispositivo host. O valor pode estar vazio mesmo quando o dispositivo host é gerenciado.|
 |azureADDeviceId|String|O Azure Active Directory de dispositivo do dispositivo host. O valor pode estar vazio mesmo quando o dispositivo host estiver Azure Active Directory registrado.|
 |deviceModel|Cadeia de caracteres|O modelo de dispositivo para o registro do aplicativo atual |
-|deviceManufacturer|Cadeia de caracteres|O fabricante do dispositivo para o registro do aplicativo atual |
+|deviceManufacturer|Cadeia de Caracteres|O fabricante do dispositivo para o registro do aplicativo atual |
 |flaggedReasons|[Coleção managedAppFlaggedReason](../resources/intune-mam-managedappflaggedreason.md)|Zero ou mais motivos para a sinalização de um registro de aplicativo. E.g. aplicativo usado em dispositivo modificado|
 |userId|Cadeia de caracteres|A ID de usuário à qual este registro de aplicativo pertence.|
 |appIdentifier|[mobileAppIdentifier](../resources/intune-mam-mobileappidentifier.md)|O identificador do pacote do aplicativo|

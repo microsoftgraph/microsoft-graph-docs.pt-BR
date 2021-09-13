@@ -1,16 +1,16 @@
 ---
 title: Excluir personAward
 description: Exclui um objeto personAward.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 011db1b2bd748018ef2b85a060297e677297823d
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: 74dc7cbea83e989d36ce458ea70a5de7b76fbaa4
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50774128"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59069786"
 ---
 # <a name="delete-personaward"></a>Excluir personAward
 
@@ -24,7 +24,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)                                      |
 |:---------------------------------------|:---------------------------------------------------------------------------------|
-| Delegada (conta corporativa ou de estudante)     | User.ReadWrite, User.ReadWrite.All |
+| Delegado (conta corporativa ou de estudante)     | User.ReadWrite, User.ReadWrite.All |
 | Delegado (conta pessoal da Microsoft) | User.ReadWrite, User.ReadWrite.All |
 | Aplicativo                            | User.ReadWrite.All                            |
 

@@ -2,15 +2,15 @@
 title: Atualizar sideLoadingKey
 description: Atualize as propriedades de um objeto sideLoadingKey.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c6e6300c117a74dc0a39a7e4bd7d9d9a82c9c60e
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 72d620984f7d6d3e69c04339cae8ada43740e133
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58784286"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59070024"
 ---
 # <a name="update-sideloadingkey"></a>Atualizar sideLoadingKey
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementServiceConfig.ReadWrite.All|
+|Aplicativo|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -53,12 +53,12 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [o sideL
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|ID exclusiva da chave de carregamento lateral.|
+|id|String|ID exclusiva da chave de carregamento lateral.|
 |value|Cadeia de caracteres|Side Loading Key Value, it is 5x5 value, seperated by hiphens.|
-|displayName|Cadeia de caracteres|Side Loading Key Name displayed to the ITPro Admins.|
-|descrição|Cadeia de caracteres|Descrição da Chave de Carregamento lateral exibida para os administradores do ITPro..|
+|displayName|String|Side Loading Key Name displayed to the ITPro Admins.|
+|description|Cadeia de caracteres|Descrição da Chave de Carregamento lateral exibida para os administradores do ITPro..|
 |totalActivation|Int32|Side Loading Key Total Activation displayed to the ITPro Admins.|
-|lastUpdatedDateTime|Cadeia de caracteres|Side Loading Key Last Updated Date displayed to the ITPro Admins.|
+|lastUpdatedDateTime|String|Side Loading Key Last Updated Date displayed to the ITPro Admins.|
 
 
 

@@ -2,15 +2,15 @@
 title: Atualizar deviceManagementAutopilotPolicyStatusDetail
 description: Atualize as propriedades de um objeto deviceManagementAutopilotPolicyStatusDetail.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c9ab11d55ad639c5cffabbcb0ad9eacb06064154
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: a0d1aec8532c14009fccdc55d75e79bf25d04288
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58264700"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59064648"
 ---
 # <a name="update-devicemanagementautopilotpolicystatusdetail"></a>Atualizar deviceManagementAutopilotPolicyStatusDetail
 
@@ -25,8 +25,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Delegado (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -51,11 +51,11 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [deviceM
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|O UUID do objeto.|
+|id|String|O UUID do objeto.|
 |displayName|Cadeia de caracteres|O nome amigável da política.|
 |policyType|[deviceManagementAutopilotPolicyType](../resources/intune-troubleshooting-devicemanagementautopilotpolicytype.md)|O tipo de política. Os valores possíveis são: `unknown`, `application`, `appModel`, `configurationPolicy`.|
 |complianceStatus|[deviceManagementAutopilotPolicyComplianceStatus](../resources/intune-troubleshooting-devicemanagementautopilotpolicycompliancestatus.md)|O status de conformidade da política. Os possíveis valores são: `unknown`, `compliant`, `installed`, `notCompliant`, `notInstalled`, `error`.|
-|trackedOnEnrollmentStatus|Boolean|Indica se essa prolicy foi controlada como parte da sessão de sincronização de registro de inicialização de inicialização do piloto automático|
+|trackedOnEnrollmentStatus|Boleano|Indica se essa prolicy foi controlada como parte da sessão de sincronização de registro de inicialização de inicialização do piloto automático|
 |lastReportedDateTime|DateTimeOffset|Timestamp do status da política relatada|
 |errorCode|Int32|O errorode associado ao status de conformidade ou imposição da política. O código de erro para o status de imposição tem precedência se existir.|
 

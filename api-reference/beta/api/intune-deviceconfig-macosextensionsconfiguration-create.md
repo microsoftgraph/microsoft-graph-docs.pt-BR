@@ -2,15 +2,15 @@
 title: Criar macOSExtensionsConfiguration
 description: Crie um novo objeto macOSExtensionsConfiguration.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6b0ce3ae8f87070d2d10ef37974612fe9dbac6b1
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 74b49d949061bff95fb73725645ea71ed604f0e8
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58798669"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59060460"
 ---
 # <a name="create-macosextensionsconfiguration"></a>Criar macOSExtensionsConfiguration
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -54,22 +54,22 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar o macOSE
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Chave da entidade. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|id|String|Chave da entidade. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de marcas de escopo para esta instância entity. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|supportsScopeTags|Boleano|Indica se a Configuração de Dispositivo subjacente dá suporte ou não à atribuição de marcas de escopo. A atribuição à propriedade ScopeTags não é permitida quando esse valor é falso e as entidades não estarão visíveis para usuários com escopo. Isso ocorre para políticas herdadas criadas no Silverlight e podem ser resolvidas excluindo e recriando a política no Portal do Azure. Essa propriedade é somente leitura. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|roleScopeTagIds|Conjunto de cadeias de caracteres|Lista de marcas de escopo para esta instância entity. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|supportsScopeTags|Boolean|Indica se a Configuração de Dispositivo subjacente dá suporte ou não à atribuição de marcas de escopo. A atribuição à propriedade ScopeTags não é permitida quando esse valor é falso e as entidades não estarão visíveis para usuários com escopo. Isso ocorre para políticas herdadas criadas no Silverlight e podem ser resolvidas excluindo e recriando a política no Portal do Azure. Essa propriedade é somente leitura. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|A aplicabilidade da edição do sistema operacional para esta Política. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|A regra de aplicabilidade da versão do sistema operacional para esta Política. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|A regra de aplicabilidade do modo de dispositivo para esta Política. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|DateTime em que o objeto foi criado. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|descrição|Cadeia de caracteres|O administrador forneceu a descrição da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|description|String|O administrador forneceu a descrição da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |displayName|Cadeia de caracteres|O administrador forneceu o nome da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |versão|Int32|Versão da configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|kernelExtensionOverridesAllowed|Boleano|Se definido como true, os usuários podem aprovar extensões de kernel adicionais não explicitamente permitidas pelos perfis de configurações.|
-|kernelExtensionAllowedTeamIdentifiers|Coleção de cadeias de caracteres|Todas as extensões de kernel assinadas pelos identificadores de equipe nesta lista terão permissão para carregar.|
+|kernelExtensionOverridesAllowed|Booliano|Se definido como true, os usuários podem aprovar extensões de kernel adicionais não explicitamente permitidas pelos perfis de configurações.|
+|kernelExtensionAllowedTeamIdentifiers|Conjunto de cadeias de caracteres|Todas as extensões de kernel assinadas pelos identificadores de equipe nesta lista terão permissão para carregar.|
 |kernelExtensionsAllowed|[Coleção macOSKernelExtension](../resources/intune-deviceconfig-macoskernelextension.md)|Uma lista de extensões de kernel que poderão ser carregadas. . Esta coleção pode conter um máximo de 500 elementos.|
-|systemExtensionsBlockOverride|Boleano|Obtém ou define se o usuário deve permitir que o usuário aprove extensões adicionais do sistema não explicitamente permitidas pelos perfis de configuração.|
-|systemExtensionsAllowedTeamIdentifiers|Coleção de cadeias de caracteres|Obtém ou define uma lista de identificadores de equipe permitidos. Qualquer extensão do sistema assinada com qualquer um dos identificadores de equipe especificados será aprovada.|
+|systemExtensionsBlockOverride|Boolean|Obtém ou define se o usuário deve permitir que o usuário aprove extensões adicionais do sistema não explicitamente permitidas pelos perfis de configuração.|
+|systemExtensionsAllowedTeamIdentifiers|String collection|Obtém ou define uma lista de identificadores de equipe permitidos. Qualquer extensão do sistema assinada com qualquer um dos identificadores de equipe especificados será aprovada.|
 |systemExtensionsAllowed|[Coleção macOSSystemExtension](../resources/intune-deviceconfig-macossystemextension.md)|Obtém ou define uma lista de extensões de sistema macOS permitidas. Esta coleção pode conter um máximo de 500 elementos.|
 |systemExtensionsAllowedTypes|[Coleção macOSSystemExtensionTypeMapping](../resources/intune-deviceconfig-macossystemextensiontypemapping.md)|Obtém ou define uma lista de tipos de extensão do sistema macOS permitidos. Esta coleção pode conter um máximo de 500 elementos.|
 

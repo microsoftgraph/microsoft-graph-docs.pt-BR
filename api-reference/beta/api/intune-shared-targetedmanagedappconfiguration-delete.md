@@ -2,15 +2,15 @@
 title: Excluir targetedManagedAppConfiguration
 description: Exclui targetedManagedAppConfiguration.
 author: rolyon
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ad83aff032d4c9725cfc6faf604085d3817d1b50
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: d94cf0270db6799b68b8f5a098a0f20188258aaa
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58783614"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59064725"
 ---
 # <a name="delete-targetedmanagedappconfiguration"></a>Excluir targetedManagedAppConfiguration
 
@@ -31,7 +31,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 | &nbsp; &nbsp; **Gerenciamento de aplicativo móvel (GAM)** | DeviceManagementApps.ReadWrite.All|
 | &nbsp;&nbsp; **Conjunto de Políticas**  | DeviceManagementApps.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application||
+|Aplicativo||
 | &nbsp; &nbsp; **Gerenciamento de aplicativo móvel (GAM)** | DeviceManagementApps.ReadWrite.All|
 | &nbsp;&nbsp; **Conjunto de Políticas**  | DeviceManagementApps.ReadWrite.All|
 

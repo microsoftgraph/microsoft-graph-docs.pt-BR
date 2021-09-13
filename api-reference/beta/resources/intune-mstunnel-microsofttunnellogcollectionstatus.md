@@ -2,15 +2,15 @@
 title: Tipo de número microsoftTunnelLogCollectionStatus
 description: Tipo de número que representa o status do conjunto de log.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 7817f095108c9b337d3c450150ffa7f5dc839921
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 154a8f7f0dc550d673baacd8ba5050f9633fadf9
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58791092"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59068673"
 ---
 # <a name="microsofttunnellogcollectionstatus-enum-type"></a>Tipo de número microsoftTunnelLogCollectionStatus
 

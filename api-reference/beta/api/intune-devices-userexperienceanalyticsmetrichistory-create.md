@@ -2,15 +2,15 @@
 title: Criar userExperienceAnalyticsMetricHistory
 description: Crie um novo objeto userExperienceAnalyticsMetricHistory.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: bed1f382d116b34fdad12e3fd5d6782a15626054
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: c34b75726bea910d8dca1691beca5b056a651b83
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58801273"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59070430"
 ---
 # <a name="create-userexperienceanalyticsmetrichistory"></a>Criar userExperienceAnalyticsMetricHistory
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementManagedDevices.ReadWrite.All|
+|Aplicativo|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -57,7 +57,7 @@ A tabela a seguir mostra as propriedades necessárias ao criar o userExperienceA
 |id|Cadeia de caracteres|O identificador exclusivo do histórico métrico de análise da experiência do usuário.|
 |deviceId|Cadeia de caracteres|A ID do dispositivo de análise de experiência do usuário.|
 |metricDateTime|DateTimeOffset|A data de data métrica da análise da experiência do usuário.|
-|metricType|Cadeia de caracteres|O tipo métrico de análise de experiência do usuário.|
+|metricType|String|O tipo métrico de análise de experiência do usuário.|
 
 
 

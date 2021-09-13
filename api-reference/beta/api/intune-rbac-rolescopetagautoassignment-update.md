@@ -2,15 +2,15 @@
 title: Atualizar roleScopeTagAutoAssignment
 description: Atualize as propriedades de um objeto roleScopeTagAutoAssignment.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: feb764f4751c080643b95545f5f5d49045fbdef6
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 3fb0be1ad1a241c0caf57ddccd8508805753cfca
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58796936"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59069989"
 ---
 # <a name="update-rolescopetagautoassignment"></a>Atualizar roleScopeTagAutoAssignment
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementRBAC.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementRBAC.ReadWrite.All|
+|Aplicativo|DeviceManagementRBAC.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {

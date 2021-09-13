@@ -3,15 +3,15 @@ author: JeremyKelley
 description: O recurso ItemReference proporciona as informações necessárias para enviar um DriveItem pela API.
 ms.date: 09/10/2017
 title: ItemReference
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: sharepoint
-ms.openlocfilehash: e98131cb91562bc7f0b4974383693246826ebd85046c64150cffa4d398d4a932
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: ca111ef38ca8e283294a879f4dfb582c50da80fd
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54248296"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59068506"
 ---
 # <a name="itemreference-resource-type"></a>Tipo de recurso ItemReference
 
@@ -48,8 +48,8 @@ Veja a seguir uma representação JSON do recurso
 |:--------------|:------------------|:-----------------------------------------
 | driveId       | String            | O identificador exclusivo da instância da unidade que contém o item. Somente leitura.
 | driveType     | String            | Identifica o tipo de unidade. Consulte o recurso [unidade][] para obter os valores.
-| id            | Cadeia de caracteres            | Identificador exclusivo do item na unidade. Somente leitura.
-| nome          | Cadeia de caracteres            | O nome do item ao qual se faz referência. Somente leitura.
+| id            | String            | Identificador exclusivo do item na unidade. Somente leitura.
+| nome          | String            | O nome do item ao qual se faz referência. Somente leitura.
 | caminho          | String            | Caminho que pode ser usado para navegar até o item. Somente leitura.
 | shareId       | Cadeia de caracteres            | Um identificador exclusivo para um recurso compartilhado que pode ser acessado através da API [Shares][].
 | sharepointIds | [sharepointIds][] | Retorna os identificadores úteis para fins de compatibilidade do REST do SharePoint. Somente leitura.

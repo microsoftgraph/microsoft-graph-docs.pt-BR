@@ -2,15 +2,15 @@
 title: Atualizar androidDeviceOwnerVpnConfiguration
 description: Atualize as propriedades de um objeto androidDeviceOwnerVpnConfiguration.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 649f4579bf425782c3328574c07d52a036f298e4
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: e9aab43929921f963016333b3bdc85143dc6cdd6
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58795449"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59065943"
 ---
 # <a name="update-androiddeviceownervpnconfiguration"></a>Atualizar androidDeviceOwnerVpnConfiguration
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -55,28 +55,28 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [o andro
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Chave da entidade. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|id|String|Chave da entidade. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de marcas de escopo para esta instância entity. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|supportsScopeTags|Boleano|Indica se a Configuração de Dispositivo subjacente dá suporte ou não à atribuição de marcas de escopo. A atribuição à propriedade ScopeTags não é permitida quando esse valor é falso e as entidades não estarão visíveis para usuários com escopo. Isso ocorre para políticas herdadas criadas no Silverlight e podem ser resolvidas excluindo e recriando a política no Portal do Azure. Essa propriedade é somente leitura. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|roleScopeTagIds|Conjunto de cadeias de caracteres|Lista de marcas de escopo para esta instância entity. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|supportsScopeTags|Boolean|Indica se a Configuração de Dispositivo subjacente dá suporte ou não à atribuição de marcas de escopo. A atribuição à propriedade ScopeTags não é permitida quando esse valor é falso e as entidades não estarão visíveis para usuários com escopo. Isso ocorre para políticas herdadas criadas no Silverlight e podem ser resolvidas excluindo e recriando a política no Portal do Azure. Essa propriedade é somente leitura. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|A aplicabilidade da edição do sistema operacional para esta Política. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|A regra de aplicabilidade da versão do sistema operacional para esta Política. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|A regra de aplicabilidade do modo de dispositivo para esta Política. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|DateTime em que o objeto foi criado. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|descrição|Cadeia de caracteres|O administrador forneceu a descrição da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|description|String|O administrador forneceu a descrição da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |displayName|Cadeia de caracteres|O administrador forneceu o nome da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |versão|Int32|Versão da configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |authenticationMethod|[vpnAuthenticationMethod](../resources/intune-deviceconfig-vpnauthenticationmethod.md)|Método de autenticação. Herdado de [vpnConfiguration](../resources/intune-deviceconfig-vpnconfiguration.md). Os valores possíveis são: `certificate`, `usernameAndPassword`, `sharedSecret`, `derivedCredential`, `azureAD`.|
-|connectionName|Cadeia de caracteres|Nome da conexão exibido ao usuário. Herdado de [vpnConfiguration](../resources/intune-deviceconfig-vpnconfiguration.md)|
-|role|Cadeia de caracteres|Função quando o tipo de conexão é definido como Pulse Secure. Herdado de [vpnConfiguration](../resources/intune-deviceconfig-vpnconfiguration.md)|
-|realm|Cadeia de caracteres|Realm quando o tipo de conexão é definido como Pulse Secure. Herdado de [vpnConfiguration](../resources/intune-deviceconfig-vpnconfiguration.md)|
+|connectionName|String|Nome da conexão exibido ao usuário. Herdado de [vpnConfiguration](../resources/intune-deviceconfig-vpnconfiguration.md)|
+|role|Cadeia de Caracteres|Função quando o tipo de conexão é definido como Pulse Secure. Herdado de [vpnConfiguration](../resources/intune-deviceconfig-vpnconfiguration.md)|
+|realm|Cadeia de Caracteres|Realm quando o tipo de conexão é definido como Pulse Secure. Herdado de [vpnConfiguration](../resources/intune-deviceconfig-vpnconfiguration.md)|
 |servers|[Coleção vpnServer](../resources/intune-deviceconfig-vpnserver.md)|Lista de servidores VPN na rede. Certifique-se de que os usuários finais possam acessar esses locais de rede. Esta coleção pode conter um máximo de 500 elementos. Herdado de [vpnConfiguration](../resources/intune-deviceconfig-vpnconfiguration.md)|
 |connectionType|[androidVpnConnectionType](../resources/intune-deviceconfig-androidvpnconnectiontype.md)|Tipo de conexão. Os valores possíveis são: `ciscoAnyConnect`, `pulseSecure`, `f5EdgeClient`, `dellSonicWallMobileConnect`, `checkPointCapsuleVpn`, `citrix`, `microsoftTunnel`, `netMotionMobility`, `microsoftProtect`.|
 |proxyServer|[vpnProxyServer](../resources/intune-deviceconfig-vpnproxyserver.md)|Servidor proxy.|
-|targetedPackageIds|Coleção de cadeias de caracteres|IDs de pacote de aplicativo direcionado.|
+|targetedPackageIds|String collection|IDs de pacote de aplicativo direcionado.|
 |targetedMobileApps|Coleção [appListItem](../resources/intune-deviceconfig-applistitem.md)|Aplicativos móveis direcionados. Esta coleção pode conter um máximo de 500 elementos.|
-|alwaysOn|Boleano|Se deve ou não habilitar a conexão VPN sempre ativa.|
-|alwaysOnLockdown|Boleano|Se a conexão VPN sempre ativa estiver habilitada, se o tráfego de rede será ou não travado quando essa VPN estiver desconectada.|
+|alwaysOn|Boolean|Se deve ou não habilitar a conexão VPN sempre ativa.|
+|alwaysOnLockdown|Booliano|Se a conexão VPN sempre ativa estiver habilitada, se o tráfego de rede será ou não travado quando essa VPN estiver desconectada.|
 |microsoftTunnelSiteId|Cadeia de caracteres|Microsoft Tunnel ID do site.|
 |customData|Coleção [KeyValue](../resources/intune-deviceconfig-keyvalue.md)|Dados personalizados para definir pares de chave/valor específicos de um provedor VPN. Essa coleção pode conter no máximo 25 elementos.|
 |customKeyValueData|Coleção [keyValuePair](../resources/intune-deviceconfig-keyvaluepair.md)|Dados personalizados para definir pares de chave/valor específicos de um provedor VPN. Essa coleção pode conter no máximo 25 elementos.|

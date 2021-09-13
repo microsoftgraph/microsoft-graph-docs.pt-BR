@@ -2,15 +2,15 @@
 title: Tipo de recurso macOsLobAppAssignmentSettings
 description: Contém propriedades usadas para atribuir um aplicativo MAC LOB a um grupo.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3b09a76ead5818616a67d0ce057ea2c466e76582
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 03707af3798adabb1a1d83c789e9986c0e5076f8
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58797209"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59068554"
 ---
 # <a name="macoslobappassignmentsettings-resource-type"></a>Tipo de recurso macOsLobAppAssignmentSettings
 
@@ -28,7 +28,7 @@ Herda de [mobileAppAssignmentSettings](../resources/intune-shared-mobileappassig
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|uninstallOnDeviceRemoval|Boleano|Se deve ou não desinstalar o aplicativo quando o dispositivo for removido do Intune.|
+|uninstallOnDeviceRemoval|Boolean|Se deve ou não desinstalar o aplicativo quando o dispositivo for removido do Intune.|
 
 ## <a name="relationships"></a>Relações
 Nenhum

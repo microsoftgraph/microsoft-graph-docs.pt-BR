@@ -2,15 +2,15 @@
 title: Atualizar userExperienceAnalyticsAppHealthDeviceModelPerformance
 description: Atualize as propriedades de um objeto userExperienceAnalyticsAppHealthDeviceModelPerformance.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3af5d2059ffd22d1d40d83560a21b88e28dc69d2
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 7e8907e33d0bc52efbbb0d5d973ffa7491f0f4fb
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58788812"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59065432"
 ---
 # <a name="update-userexperienceanalyticsapphealthdevicemodelperformance"></a>Atualizar userExperienceAnalyticsAppHealthDeviceModelPerformance
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementManagedDevices.ReadWrite.All|
+|Aplicativo|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {

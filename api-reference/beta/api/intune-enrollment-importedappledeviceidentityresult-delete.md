@@ -2,15 +2,15 @@
 title: Excluir importedAppleDeviceIdentityResult
 description: Exclui um importedAppleDeviceIdentityResult.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d7db85ad4de948e03c6997152ad0bce30cc56f43
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 319592c154cbd946d7aeba001cf3f78a36617bda
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58802303"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59058976"
 ---
 # <a name="delete-importedappledeviceidentityresult"></a>Excluir importedAppleDeviceIdentityResult
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementServiceConfig.ReadWrite.All|
+|Aplicativo|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {

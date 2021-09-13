@@ -2,15 +2,15 @@
 title: Criar userExperienceAnalyticsWorkFromAnywhereDevice
 description: Crie um novo objeto userExperienceAnalyticsWorkFromAnywhereDevice.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: daa0b1dfbf27ebe852638c5e599ac5d9215bb4ea
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: a7261d1141472399221ae991a5adadab4892e30b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58817226"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59065362"
 ---
 # <a name="create-userexperienceanalyticsworkfromanywheredevice"></a>Criar userExperienceAnalyticsWorkFromAnywhereDevice
 
@@ -27,8 +27,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Delegado (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -58,26 +58,26 @@ A tabela a seguir mostra as propriedades necessárias ao criar o userExperienceA
 |serialNumber|String|A experiência do usuário funciona de qualquer lugar do número de série do dispositivo.|
 |fabricante|String|A experiência do usuário funciona de qualquer fabricante do dispositivo.|
 |modelo|String|A experiência do usuário funciona de qualquer lugar do modelo do dispositivo.|
-|propriedade|Cadeia de caracteres|A experiência do usuário funciona de qualquer lugar da propriedade do dispositivo.|
-|managedBy|Cadeia de caracteres|A experiência do usuário funciona de qualquer lugar do agente de gerenciamento do dispositivo.|
+|propriedade|String|A experiência do usuário funciona de qualquer lugar da propriedade do dispositivo.|
+|managedBy|String|A experiência do usuário funciona de qualquer lugar do agente de gerenciamento do dispositivo.|
 |autoPilotRegistered|Booliano|A experiência do usuário funciona em qualquer lugar do piloto automático do dispositivo intuneRegistered.|
-|autoPilotProfileAssigned|Booliano|A análise da experiência do usuário funciona em qualquer lugar do autopilotProfileAssigned do dispositivo intune.|
-|azureAdRegistered|Booliano|A experiência do usuário funciona de qualquer lugar do dispositivo azureAdRegistered.|
-|azureAdDeviceId|String|A experiência do usuário funciona em qualquer lugar do Azure Ad device Id.|
-|azureAdJoinType|Cadeia de caracteres|A experiência do usuário funciona de qualquer lugar do azure Ad joinType do dispositivo.|
+|autoPilotProfileAssigned|Boolean|A análise da experiência do usuário funciona em qualquer lugar do autopilotProfileAssigned do dispositivo intune.|
+|azureAdRegistered|Boolean|A experiência do usuário funciona de qualquer lugar do dispositivo azureAdRegistered.|
+|azureAdDeviceId|Cadeia de Caracteres|A experiência do usuário funciona em qualquer lugar do Azure Ad device Id.|
+|azureAdJoinType|Cadeia de Caracteres|A experiência do usuário funciona de qualquer lugar do azure Ad joinType do dispositivo.|
 |osDescription|Cadeia de caracteres|A experiência do usuário funciona de qualquer lugar da Descrição do sistema operacional do dispositivo.|
 |osVersion|String|A experiência do usuário funciona de qualquer lugar da versão do sistema operacional do dispositivo.|
-|tenantAttached|Booliano|A experiência do usuário funciona de qualquer locatário do dispositivoAttached.|
+|tenantAttached|Boolean|A experiência do usuário funciona de qualquer locatário do dispositivoAttached.|
 |compliancePolicySetToIntune|Booliano|A experiência do usuário funciona de qualquer lugar do dispositivo compliancePolicySetToIntune.|
 |otherWorkloadsSetToIntune|Booliano|A experiência do usuário funciona de qualquer outro dispositivoWorkloadsSetToIntune.|
 |upgradeEligibility|[operatingSystemUpgradeEligibility](../resources/intune-devices-operatingsystemupgradeeligibility.md)|A experiência do usuário funciona em qualquer lugar do windows upgrade status de qualificação do dispositivo. Os valores possíveis são: `upgraded`, `unknown`, `notCapable`, `capable`.|
-|ramCheckFailed|Boolean|A análise da experiência do usuário funciona em qualquer lugar que a verificação de hardware ram do dispositivo falhou para que o dispositivo atualize para a versão mais recente do windows|
+|ramCheckFailed|Boleano|A análise da experiência do usuário funciona em qualquer lugar que a verificação de hardware ram do dispositivo falhou para que o dispositivo atualize para a versão mais recente do windows|
 |storageCheckFailed|Booliano|A experiência do usuário funciona de qualquer dispositivo, Falha na verificação de hardware de armazenamento para que o dispositivo atualize para a versão mais recente do windows.|
 |processorCoreCountCheckFailed|Booliano|A experiência do usuário funciona de qualquer dispositivo, Falha na contagem de núcleos de hardware do processador para que o dispositivo atualize para a versão mais recente do windows.|
-|processorSpeedCheckFailed|Booliano|A experiência do usuário funciona de qualquer dispositivo, Falha na verificação de velocidade de hardware do processador para que o dispositivo atualize para a versão mais recente do windows.|
+|processorSpeedCheckFailed|Boolean|A experiência do usuário funciona de qualquer dispositivo, Falha na verificação de velocidade de hardware do processador para que o dispositivo atualize para a versão mais recente do windows.|
 |tpmCheckFailed|Booliano|A experiência do usuário funciona de qualquer dispositivo, falha na verificação de hardware do Módulo de Plataforma Confiável (TPM) para o dispositivo para a versão mais recente da atualização para windows.|
-|secureBootCheckFailed|Booliano|A experiência do usuário funciona de qualquer dispositivo, Falha na verificação de hardware de inicialização segura para que o dispositivo atualize para a versão mais recente do windows.|
-|processorFamilyCheckFailed|Booliano|A experiência do usuário funciona de qualquer dispositivo, Falha na verificação da família de hardware do processador para que o dispositivo atualize para a versão mais recente do windows.|
+|secureBootCheckFailed|Boleano|A experiência do usuário funciona de qualquer dispositivo, Falha na verificação de hardware de inicialização segura para que o dispositivo atualize para a versão mais recente do windows.|
+|processorFamilyCheckFailed|Boolean|A experiência do usuário funciona de qualquer dispositivo, Falha na verificação da família de hardware do processador para que o dispositivo atualize para a versão mais recente do windows.|
 |processor64BitCheckFailed|Booliano|A experiência do usuário funciona de qualquer dispositivo, a verificação de arquitetura de hardware de 64 bits do processador falhou para que o dispositivo atualize para a versão mais recente do windows.|
 |osCheckFailed|Booliano|A experiência do usuário funciona de qualquer dispositivo, falha na verificação do sistema operacional para que o dispositivo atualize para a versão mais recente do windows.|
 |windowsScore|Duplo|A experiência do usuário funciona de qualquer lugar por pontuação do windows do dispositivo. Valores válidos -1,79769313486232E+308 a 1.79769313486232E+308|

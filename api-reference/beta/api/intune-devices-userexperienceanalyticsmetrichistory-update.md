@@ -2,15 +2,15 @@
 title: Atualizar userExperienceAnalyticsMetricHistory
 description: Atualize as propriedades de um objeto userExperienceAnalyticsMetricHistory.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a2ea2c943f2ff40d12da2439f2fc1d02f6d3bd1e
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 34fd694a62765506849050e4314463fb41bc91a8
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58791631"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59070388"
 ---
 # <a name="update-userexperienceanalyticsmetrichistory"></a>Atualizar userExperienceAnalyticsMetricHistory
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementManagedDevices.ReadWrite.All|
+|Aplicativo|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -57,7 +57,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [o userE
 |id|Cadeia de caracteres|O identificador exclusivo do histórico métrico de análise da experiência do usuário.|
 |deviceId|Cadeia de caracteres|A ID do dispositivo de análise de experiência do usuário.|
 |metricDateTime|DateTimeOffset|A data de data métrica da análise da experiência do usuário.|
-|metricType|Cadeia de caracteres|O tipo métrico de análise de experiência do usuário.|
+|metricType|String|O tipo métrico de análise de experiência do usuário.|
 
 
 

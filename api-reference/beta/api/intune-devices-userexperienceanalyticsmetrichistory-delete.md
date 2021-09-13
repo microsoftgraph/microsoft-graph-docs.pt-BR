@@ -2,15 +2,15 @@
 title: Excluir userExperienceAnalyticsMetricHistory
 description: Exclui um userExperienceAnalyticsMetricHistory.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 21a933ef81c148e26dcfed2217563fff4eb5cac5
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 7fd747b345766281afce68c9391b17ecc4436c4e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58796345"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59070423"
 ---
 # <a name="delete-userexperienceanalyticsmetrichistory"></a>Excluir userExperienceAnalyticsMetricHistory
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementManagedDevices.ReadWrite.All|
+|Aplicativo|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
