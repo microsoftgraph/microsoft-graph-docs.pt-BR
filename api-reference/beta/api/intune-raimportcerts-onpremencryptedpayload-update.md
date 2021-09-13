@@ -2,15 +2,15 @@
 title: Atualizar onPremEncryptedPayload
 description: Atualize as propriedades de um objeto onPremEncryptedPayload.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: dcd5f593cbfcf6f46ec2fe7f6065332ed8577379
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 33434a8f082d1c9f645006d5764ea67171221812
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58799863"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59087650"
 ---
 # <a name="update-onpremencryptedpayload"></a>Atualizar onPremEncryptedPayload
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {

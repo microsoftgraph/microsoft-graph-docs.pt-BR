@@ -2,15 +2,15 @@
 title: Atualizar userExperienceAnalyticsRemoteConnection
 description: Atualize as propriedades de um objeto userExperienceAnalyticsRemoteConnection.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 64b0b7653c914463b854217d1966ece664f2bc2b
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: dddd0f331ce75738fcaee1e0c229e39fbb895771
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58798571"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59142107"
 ---
 # <a name="update-userexperienceanalyticsremoteconnection"></a>Atualizar userExperienceAnalyticsRemoteConnection
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementManagedDevices.ReadWrite.All|
+|Aplicativo|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -57,7 +57,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [o userE
 |deviceId|Cadeia de caracteres|A id do dispositivo.|
 |deviceName|String|O nome do dispositivo.|
 |modelo|String|O modelo de dispositivo de análise de experiência do usuário.|
-|virtualNetwork|Cadeia de caracteres|A rede virtual de análise de experiência do usuário.|
+|virtualNetwork|Cadeia de Caracteres|A rede virtual de análise de experiência do usuário.|
 |fabricante|String|O fabricante de análise de experiência do usuário.|
 |deviceCount|Int32|A contagem de conexão remota. Valores válidos de 0 a 2147483647|
 |cloudPcRoundTripTime|Duplo|O tempo de dica de ida e volta do dispositivo cloud pc. Valores válidos de 0 a 1,79769313486232E+308|

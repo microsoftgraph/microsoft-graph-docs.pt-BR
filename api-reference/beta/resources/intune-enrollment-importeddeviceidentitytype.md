@@ -2,15 +2,15 @@
 title: Tipo denum importedDeviceIdentityType
 description: Ainda não documentado
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: ec1d7d4c3aa4ce0ee082f12b703123552888b492
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: db40e2aa65dda8a70ecfed23d180f88f2a1db0e1
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58818046"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59141008"
 ---
 # <a name="importeddeviceidentitytype-enum-type"></a>Tipo denum importedDeviceIdentityType
 

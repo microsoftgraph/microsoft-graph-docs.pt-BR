@@ -2,15 +2,15 @@
 title: tipo de recurso unsupportedDeviceConfigurationDetail
 description: Uma descrição do motivo pelo qual uma entidade não tem suporte.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 44992e89c23a96d22382477768170e4850ce2829
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 59270025e2e59e4e2812420b54ae34d0cdef1dc1
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58816946"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59146573"
 ---
 # <a name="unsupporteddeviceconfigurationdetail-resource-type"></a>tipo de recurso unsupportedDeviceConfigurationDetail
 
@@ -26,7 +26,7 @@ Uma descrição do motivo pelo qual uma entidade não tem suporte.
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |mensagem|String|Uma mensagem explicando por que uma entidade não tem suporte.|
-|propertyName|Cadeia de caracteres|Se a mensagem estiver relacionada a uma propriedade específica na entidade original, o nome dessa propriedade.|
+|propertyName|Cadeia de Caracteres|Se a mensagem estiver relacionada a uma propriedade específica na entidade original, o nome dessa propriedade.|
 
 ## <a name="relationships"></a>Relações
 Nenhum

@@ -2,15 +2,15 @@
 title: Tipo denum edgeSearchEngineType
 description: Permite que o administrador de IT de definir um mecanismo de pesquisa padrão predefinido para MDM-Controlled dispositivos
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 51d84da7886d11dd51c31f3568514e5b05566ea0
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: ea649c67a1aeadbabadb8d8358c5450d26d775e8
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58787297"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59101524"
 ---
 # <a name="edgesearchenginetype-enum-type"></a>Tipo denum edgeSearchEngineType
 

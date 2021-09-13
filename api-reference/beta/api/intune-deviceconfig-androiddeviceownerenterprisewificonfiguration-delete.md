@@ -2,15 +2,15 @@
 title: Excluir androidDeviceOwnerEnterpriseWiFiConfiguration
 description: Exclui um androidDeviceOwnerEnterpriseWiFiConfiguration.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b93eff8538629d981b5bd683e04ea4527312d553
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 10ac3d2cc8d40dfa58019dcf840aff2c2076e8aa
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58789183"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59088511"
 ---
 # <a name="delete-androiddeviceownerenterprisewificonfiguration"></a>Excluir androidDeviceOwnerEnterpriseWiFiConfiguration
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {

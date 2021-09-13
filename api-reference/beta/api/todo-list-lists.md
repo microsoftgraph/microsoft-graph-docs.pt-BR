@@ -2,15 +2,15 @@
 title: List lists
 description: Obter uma lista dos objetos todoTaskList e suas propriedades.
 author: avijityadav
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: c4735dff24dbccb8fbb7106a819b0b36bb132d01
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: a681ee89cef01b70d044b4ed8bb7f0f1a37e44cc
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50953818"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59138152"
 ---
 # <a name="list-lists"></a>List lists
 Namespace: microsoft.graph

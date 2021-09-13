@@ -2,15 +2,15 @@
 title: Tipo de recurso deviceManagementConfigurationExchangeOnlineSettingApplicability
 description: Aplicabilidade para uma configuração Exchange Online configuração
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8b8f3b52f574f9d55679b13af2c3f798dcf6c22a
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: cd3937f79ea4589a91fdc88ef8e104900a583ab5
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58797744"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59091570"
 ---
 # <a name="devicemanagementconfigurationexchangeonlinesettingapplicability-resource-type"></a>Tipo de recurso deviceManagementConfigurationExchangeOnlineSettingApplicability
 

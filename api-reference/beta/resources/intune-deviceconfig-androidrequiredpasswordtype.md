@@ -2,15 +2,15 @@
 title: tipo de número androidRequiredPasswordType
 description: Tipo de senha obrigatório do Android.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: cd4556abb04e3895b31ca52fa87eab4d3dfdd90b
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 2e4931cef836f446613c54b3c9eb3eaf9506de24
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58816554"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59101678"
 ---
 # <a name="androidrequiredpasswordtype-enum-type"></a>tipo de número androidRequiredPasswordType
 

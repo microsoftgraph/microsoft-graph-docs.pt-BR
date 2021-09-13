@@ -2,15 +2,15 @@
 title: Tipo de número macOSProcessIdentifierType
 description: Tipos de identificador de processo para Preferências de Privacidade do MacOS
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 939b2e755f6a3fb0c09786073bc3052edc4807e5
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 71d67ca8cf13a6d79b1969ceb6ccfbb80505715c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58789626"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59091696"
 ---
 # <a name="macosprocessidentifiertype-enum-type"></a>Tipo de número macOSProcessIdentifierType
 

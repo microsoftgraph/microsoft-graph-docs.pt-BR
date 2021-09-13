@@ -2,15 +2,15 @@
 title: Tipo de número deviceAppManagementTaskStatus
 description: Status da tarefa de gerenciamento de aplicativo de dispositivo.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 9cd78446eeac6096ac212401e55c2b5767cc3f68
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 71c53aceb0a88f1c8f36a753901250ffc44c9f1c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58784181"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59101027"
 ---
 # <a name="deviceappmanagementtaskstatus-enum-type"></a>Tipo de número deviceAppManagementTaskStatus
 

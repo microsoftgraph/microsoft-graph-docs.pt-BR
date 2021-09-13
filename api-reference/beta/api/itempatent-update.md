@@ -1,16 +1,16 @@
 ---
 title: Atualizar itemPatent
 description: Atualize as propriedades de um objeto itemPatent.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 92044e1a5e4edb7bbb422571543f6b11ed3e70dd
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: eebe95bdd6eec5fb7336d0f5bf423dee5307439e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50777794"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59087454"
 ---
 # <a name="update-itempatent"></a>Atualizar itemPatent
 
@@ -51,14 +51,14 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|allowedAudiences|String|As audiências que são capazes de ver os valores contidos na entidade. Herdado [do itemFacet](../resources/itemfacet.md). Os valores possíveis são: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
-|descrição|String|Descpription of the patent or filing. |
-|displayName|String|Título da patente ou arquivamento. |
+|allowedAudiences|Cadeia de Caracteres|As audiências que são capazes de ver os valores contidos na entidade. Herdado [do itemFacet](../resources/itemfacet.md). Os valores possíveis são: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
+|description|Cadeia de caracteres|Descpription of the patent or filing. |
+|displayName|Cadeia de caracteres|Título da patente ou arquivamento. |
 |inferência|[inferenceData](../resources/inferencedata.md)|Contém detalhes de inferência se a entidade for inferida pelo aplicativo de criação ou modificação. Herdado [do itemFacet](../resources/itemfacet.md).|
-|isPending        |Booliano     |Indica que a patente está pendente.        |
+|isPending        |Boleano     |Indica que a patente está pendente.        |
 |issuedDate       |Data        |A data em que a patente foi concedida.   |
-|issuingAuthority |String      |Autoridade que concedeu a patente.     |
-|number           |String      |O número da patente.                      |
+|issuingAuthority |Cadeia de Caracteres      |Autoridade que concedeu a patente.     |
+|number           |Cadeia de Caracteres      |O número da patente.                      |
 |source|[personDataSource](../resources/persondatasource.md)|Onde os valores se originaram se sincronizados de outro serviço. Herdado [do itemFacet](../resources/itemfacet.md).|
 |webUrl           |String      |URL fazendo referência à patente ou ao arquivamento. |
 

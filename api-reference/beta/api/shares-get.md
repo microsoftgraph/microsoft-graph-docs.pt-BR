@@ -3,15 +3,15 @@ author: JeremyKelley
 description: Acesse um DriveItem compartilhado ou uma coleção de itens compartilhados usando um shareId ou uma URL de compartilhamento.
 ms.date: 09/10/2017
 title: Acessar itens compartilhados
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: ''
-ms.openlocfilehash: de6cbfdb3b50bba2ffba9cf5b2fda25b2245afa6
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 91d5d471e91bb36b67bb7c0fe2175549a11a4f00
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48969225"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59131935"
 ---
 # <a name="accessing-shared-driveitems"></a>Acessar DriveItems compartilhados
 
@@ -65,16 +65,16 @@ string encodedUrl = "u!" + base64Value.TrimEnd('=').Replace('/','_').Replace('+'
 
 | Nome       | Tipo   | Descrição                                                    |
 |:-----------|:-------|:---------------------------------------------------------------|
-| **Prefer** | string | Opcional. Defina como um dos `prefer` valores documentados abaixo.  |
+| **Prefer** | string | Opcional. De acordo com um dos `prefer` valores documentados abaixo.  |
 
-### <a name="prefer-header-values"></a>Preferir valores de cabeçalho
+### <a name="prefer-header-values"></a>Preferir valores de header
 
 | Nome                          | Descrição                                                                                             |
 |:------------------------------|:--------------------------------------------------------------------------------------------------------|
-| redeemSharingLink             | Se o **shareIdOrEncodedSharingUrl** for um link de compartilhamento, conceda ao chamador acesso durável ao item    |
-| redeemSharingLinkIfNecessary  | O mesmo que redeemSharingLink, mas o acesso só é garantido para a duração da solicitação |
+| redeemSharingLink             | Se **o shareIdOrEncodedSharingUrl** for um link de compartilhamento, conceda ao chamador acesso durável ao item    |
+| redeemSharingLinkIfNecessary  | O mesmo que redeemSharingLink, mas o acesso só é garantido durante a duração dessa solicitação |
 
-redeemSharingLink deve ser considerado equivalente ao chamador navegando para o link de compartilhamento do navegador (aceitando o gesto de compartilhamento), enquanto o redeemSharingLinkIfNecessary se destina a cenários em que a intenção é simplesmente inspecionar os metadados do link.
+redeemSharingLink deve ser considerado equivalente ao chamador navegando para o link de compartilhamento do navegador (aceitando o gesto de compartilhamento), enquanto redeemSharingLinkIfNecessary destina-se a cenários em que a intenção é simplesmente espiar os metadados do link.
 
 ## <a name="response"></a>Resposta
 
@@ -142,7 +142,7 @@ Embora [**SharedDriveItem**](../resources/shareddriveitem.md) contenha algumas i
 
 ### <a name="request"></a>Solicitação
 
-Ao solicitar a relação **driveItem** , o **DriveItem** compartilhado será retornado.
+Ao solicitar a relação **driveItem**, o **DriveItem** compartilhado será retornado.
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -191,7 +191,7 @@ Content-Type: application/json
 
 ### <a name="request"></a>Solicitação
 
-Solicitando a relação **driveItem** e expandindo a coleção **children** , o **DriveItem** que foi compartilhado será retornado junto com os arquivos da pasta compartilhada.
+Solicitando a relação **driveItem** e expandindo a coleção **children**, o **DriveItem** que foi compartilhado será retornado junto com os arquivos da pasta compartilhada.
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -252,7 +252,7 @@ Content-Type: application/json
 
 ## <a name="error-responses"></a>Respostas de erro
 
-Veja mais informações sobre como os erros são retornados no tópico [Respostas de erro][error-response].
+Leia o tópico [Respostas de Erro][error-response] para obter mais informações sobre como os erros são retornados.
 
 ## <a name="remarks"></a>Comentários
 

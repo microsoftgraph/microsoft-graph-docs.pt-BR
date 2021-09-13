@@ -2,15 +2,15 @@
 title: ratingJapanMoviesType tipo de número
 description: Rótulos de classificação de filmes no Japão
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: d9e1cc1f395198b0d36764c256a0902537976c72
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 7e69eb005088fdfc62309e6586a95171b38f4742
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58788672"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59146601"
 ---
 # <a name="ratingjapanmoviestype-enum-type"></a>ratingJapanMoviesType tipo de número
 

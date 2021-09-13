@@ -2,15 +2,15 @@
 title: Tipo denum perfectForwardSecrecyGroup
 description: Encaminhar valores do Grupo de Segredo para políticas VPN do Windows10 com tipo de conexão IKEv2.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: e3f097fae938817a588198de107048bb16ab76b3
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 82536f63e552b8d125e590af3f89c0087d6a7a2f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58796240"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59146615"
 ---
 # <a name="perfectforwardsecrecygroup-enum-type"></a>Tipo denum perfectForwardSecrecyGroup
 

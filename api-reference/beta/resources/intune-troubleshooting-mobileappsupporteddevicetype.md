@@ -2,15 +2,15 @@
 title: Tipo de recurso mobileAppSupportedDeviceType
 description: Propriedades do dispositivo
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: ac7c683c69ad19bdef1730b13232cce4b2106ca9
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: d5cac0e65b600779ce57daa897bcfd44e17f2427
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58253382"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59100880"
 ---
 # <a name="mobileappsupporteddevicetype-resource-type"></a>Tipo de recurso mobileAppSupportedDeviceType
 
@@ -24,8 +24,8 @@ Propriedades do dispositivo
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |type|[deviceType](../resources/intune-troubleshooting-devicetype.md)|Tipo de dispositivo. Os valores possíveis são: `desktop` , , , , , , , `windowsRT` `winMO6` `nokia` `windowsPhone` `mac` `winCE` `winEmbedded` `iPhone` `iPad` `iPod` `android` `iSocConsumer` `unix` , `macMDM` `holoLens` `surfaceHub` `androidForWork` `androidEnterprise` `windows10x` `androidnGMS` `chromeOS` `linux` `blackberry` `palm` `unknown` `cloudPC`|
-|minimumOperatingSystemVersion|Cadeia de caracteres|Versão mínima do sistema operacional|
-|maximumOperatingSystemVersion|Cadeia de caracteres|Versão máxima do sistema operacional|
+|minimumOperatingSystemVersion|Cadeia de Caracteres|Versão mínima do sistema operacional|
+|maximumOperatingSystemVersion|Cadeia de Caracteres|Versão máxima do sistema operacional|
 
 ## <a name="relationships"></a>Relações
 Nenhum

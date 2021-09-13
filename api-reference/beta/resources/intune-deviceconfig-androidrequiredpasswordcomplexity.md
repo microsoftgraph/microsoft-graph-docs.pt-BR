@@ -2,15 +2,15 @@
 title: tipo de número androidRequiredPasswordComplexity
 description: 'Os tipos de complexidade de senha que podem ser definidos no Android. Um deles: NONE, LOW, MEDIUM, HIGH. Esta é uma API direcionada ao Android 11+.'
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: b1f63d822d7046c34f994c329bdb1de382f6d1d8
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: cdeec66304b60fbf215cca2051a4f8459c691a12
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58786387"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59101706"
 ---
 # <a name="androidrequiredpasswordcomplexity-enum-type"></a>tipo de número androidRequiredPasswordComplexity
 

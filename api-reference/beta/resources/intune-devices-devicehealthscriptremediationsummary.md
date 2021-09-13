@@ -2,15 +2,15 @@
 title: Tipo de recurso deviceHealthScriptRemediationSummary
 description: O número de scripts de saúde do dispositivo implantados e o número de dispositivos que os scripts remediaram.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: ac9e06cdbc8aa5ba754528459e52142b7e4f3679
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 2eb1177b80f95572599e6205cfdd00499e65b0f3
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58820685"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59144311"
 ---
 # <a name="devicehealthscriptremediationsummary-resource-type"></a>Tipo de recurso deviceHealthScriptRemediationSummary
 

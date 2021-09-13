@@ -2,15 +2,15 @@
 title: Tipo de recurso encryptionReportPolicyDetails
 description: Detalhes da política para relatório de criptografia
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4af60056fa06c64af8736d997aae024f6ecfb87d
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: ad1ea4b2002f4689fdfe905f8de4c59e29e7f30f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58818530"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59101468"
 ---
 # <a name="encryptionreportpolicydetails-resource-type"></a>Tipo de recurso encryptionReportPolicyDetails
 
@@ -25,8 +25,8 @@ Detalhes da política para relatório de criptografia
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|policyId|Cadeia de caracteres|ID de política para relatório de criptografia|
-|policyName|Cadeia de caracteres|Nome da Política para Relatório de Criptografia|
+|policyId|Cadeia de Caracteres|ID de política para relatório de criptografia|
+|policyName|Cadeia de Caracteres|Nome da Política para Relatório de Criptografia|
 
 ## <a name="relationships"></a>Relações
 Nenhum

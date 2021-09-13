@@ -2,15 +2,15 @@
 title: Ação updateStatus
 description: De definir o status da tarefa e anexar uma nota.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ce568685ce59ad14bd640aa8bb64ea5fa36aa838
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 10cc0a7c5d30c47771ee4931cfde79b2b21547a6
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58793404"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59141855"
 ---
 # <a name="updatestatus-action"></a>Ação updateStatus
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementApps.ReadWrite.All|
+|Aplicativo|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -54,7 +54,7 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta ação.
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |status|[deviceAppManagementTaskStatus](../resources/intune-partnerintegration-deviceappmanagementtaskstatus.md)|O status|
-|observação|Cadeia de caracteres|A observação|
+|observação|Cadeia de Caracteres|A observação|
 
 
 

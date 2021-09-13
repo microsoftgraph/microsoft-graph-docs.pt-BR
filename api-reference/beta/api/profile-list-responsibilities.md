@@ -2,15 +2,15 @@
 title: Listar responsabilidades
 description: Obter a personResponsibilities da propriedade de navegação de responsabilidades.
 author: kevinbellinger
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 33e2155f436364cc5f7be25c55ec2086c04572ad
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 2217963f97fe4f8e264bfad6d03ad23e101303c6
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50441036"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59143087"
 ---
 # <a name="list-responsibilities"></a>Listar responsabilidades
 Namespace: microsoft.graph

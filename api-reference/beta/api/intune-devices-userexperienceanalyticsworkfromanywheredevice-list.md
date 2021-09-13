@@ -2,15 +2,15 @@
 title: Listar userExperienceAnalyticsWorkFromAnywhereDevices
 description: Listar propriedades e relações dos objetos userExperienceAnalyticsWorkFromAnywhereDevice.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 9fc51e55bb425a8ec9cc03833b17dcf688b1e237
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 599a66a5d38d3133e1979e4e34819565eaa79d45
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58786134"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59087930"
 ---
 # <a name="list-userexperienceanalyticsworkfromanywheredevices"></a>Listar userExperienceAnalyticsWorkFromAnywhereDevices
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementConfiguration.Read.All, DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
+|Aplicativo|DeviceManagementConfiguration.Read.All, DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {

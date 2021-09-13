@@ -2,15 +2,15 @@
 title: Atualizar termsAndConditionsGroupAssignment
 description: Atualize as propriedades de um objeto termsAndConditionsGroupAssignment.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: be46d8b15858d0bb5db0b035fdc7f25c727f2e4b
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 9202c3305c430434fb61a543f968bac13007b3ae
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58794255"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59098192"
 ---
 # <a name="update-termsandconditionsgroupassignment"></a>Atualizar termsAndConditionsGroupAssignment
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementServiceConfig.ReadWrite.All|
+|Aplicativo|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -54,7 +54,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [os term
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|Cadeia de caracteres|Identificador exclusivo da entidade.|
-|targetGroupId|Cadeia de caracteres|Identificador exclusivo de um grupo ao&C atribuído.|
+|targetGroupId|Cadeia de Caracteres|Identificador exclusivo de um grupo ao&C atribuído.|
 
 
 

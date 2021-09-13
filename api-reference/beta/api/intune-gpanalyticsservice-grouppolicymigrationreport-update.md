@@ -2,15 +2,15 @@
 title: Atualizar groupPolicyMigrationReport
 description: Atualize as propriedades de um objeto groupPolicyMigrationReport.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 737f6d8be140ec1723295e6f8cdb8809b9bdcca4
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 44c63d97cd4d8606e8b03ef2dbba600d701f12ba
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58807059"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59121701"
 ---
 # <a name="update-grouppolicymigrationreport"></a>Atualizar groupPolicyMigrationReport
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -56,7 +56,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [o group
 |id|Cadeia de caracteres|Ainda não documentado|
 |groupPolicyObjectId|Guid|O GUID do objeto de política de grupo do conteúdo XML do GPO|
 |displayName|Cadeia de caracteres|O nome do Objeto de Política de Grupo do Conteúdo XML do GPO|
-|ouDistinguishedName|Cadeia de caracteres|O nome diferenciado da UO.|
+|ouDistinguishedName|Cadeia de Caracteres|O nome diferenciado da UO.|
 |createdDateTime|DateTimeOffset|A data e a hora em que o GroupPolicyMigrationReport foi criado.|
 |lastModifiedDateTime|DateTimeOffset|A data e a hora em que GroupPolicyMigrationReport foi modificada pela última vez.|
 |groupPolicyCreatedDateTime|DateTimeOffset|A data e a hora em que o GroupPolicyMigrationReport foi criado.|

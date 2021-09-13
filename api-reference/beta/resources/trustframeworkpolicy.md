@@ -1,16 +1,16 @@
 ---
 title: trustFrameworkPolicy
 description: Na política de estrutura de confiança do Azure AD B2C é conhecida como políticas personalizadas. Isso descreve as operações disponíveis em um objeto trustFrameworkPolicy para o locatário.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: Nickgmicrosoft
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: d51cbda73ca41d58795ef09c23cc1e644e59f60e8d0833f692ebcfb396489e98
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 2f84f1ef4c391c81a720d5f0f76adae144e04677
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54241216"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59100516"
 ---
 # <a name="trustframeworkpolicy-resource-type"></a>Tipo de recurso trustFrameworkPolicy
 
