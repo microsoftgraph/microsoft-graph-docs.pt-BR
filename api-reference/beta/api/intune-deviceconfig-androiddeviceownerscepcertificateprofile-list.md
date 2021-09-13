@@ -2,15 +2,15 @@
 title: Listar androidDeviceOwnerScepCertificateProfiles
 description: Listar propriedades e relações dos objetos androidDeviceOwnerScepCertificateProfile.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3b16209088db1a71791a3bbd3dd0410c897d5c8e
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: d92eed0352c4eb118c8eda2d80cf934c9470e88c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58767623"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59048840"
 ---
 # <a name="list-androiddeviceownerscepcertificateprofiles"></a>Listar androidDeviceOwnerScepCertificateProfiles
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
+|Aplicativo|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {

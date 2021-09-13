@@ -2,15 +2,15 @@
 title: Tipo de recurso deviceCompliancePolicy
 description: 'Esta é a classe base para a política de Conformidade. Políticas de conformidade são específicas de plataformas, e políticas de conformidade individuais por plataforma herdam a partir daqui. '
 author: rolyon
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 5b929d340fcd6ec7f2a0878420fa3453ad2b3b6d
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 420850a079d74834d77181ad45782a39a377444a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58792558"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59039165"
 ---
 # <a name="devicecompliancepolicy-resource-type"></a>Tipo de recurso deviceCompliancePolicy
 
@@ -38,9 +38,9 @@ Esta é a classe base para a política de Conformidade. Políticas de conformida
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|Cadeia de caracteres|Chave da entidade.|
-|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de marcas de escopo para esta instância entity.|
+|roleScopeTagIds|Conjunto de cadeias de caracteres|Lista de marcas de escopo para esta instância entity.|
 |createdDateTime|DateTimeOffset|DateTime em que o objeto foi criado.|
-|descrição|Cadeia de caracteres|Descrição fornecida pelo administrador da Configuração do dispositivo.|
+|description|Cadeia de caracteres|Descrição fornecida pelo administrador da Configuração do dispositivo.|
 |lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto.|
 |displayName|Cadeia de caracteres|O administrador forneceu o nome da Configuração do dispositivo.|
 |versão|Int32|Versão da configuração do dispositivo.|

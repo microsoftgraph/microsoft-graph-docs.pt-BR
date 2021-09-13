@@ -2,15 +2,15 @@
 author: learafa
 title: Deixar de seguir site
 description: Desa seguir o site de um usuário
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: c96871d4e3ed617cbba235d8666cf9e060503ba7
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: ca7f581ec196dcdf1080a90b0c1b162806ffdee9
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52786717"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59054720"
 ---
 # <a name="unfollow-site"></a>Deixar de seguir site 
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 Desa siga o site de um [usuário ou](../resources/site.md) vários sites.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 

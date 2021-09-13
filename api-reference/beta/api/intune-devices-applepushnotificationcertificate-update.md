@@ -2,15 +2,15 @@
 title: Atualizar applePushNotificationCertificate
 description: Atualizar as propriedades de um objeto applePushNotificationCertificate.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a35c7f1369344fd194258ef924daf700cac7fa30
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 550571c0d00ce5bd72a58be84f9ad9a03fb7c78f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58797728"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59054986"
 ---
 # <a name="update-applepushnotificationcertificate"></a>Atualizar applePushNotificationCertificate
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementServiceConfig.ReadWrite.All|
+|Aplicativo|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -58,9 +58,9 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [applePu
 |topicIdentifier|Cadeia de caracteres|ID do tópico.|
 |lastModifiedDateTime|DateTimeOffset|Data e hora da última modificação de certificado de notificações por push da Apple.|
 |expirationDateTime|DateTimeOffset|Data e hora do vencimento de certificado de notificações por push da Apple.|
-|certificateUploadStatus|Cadeia de caracteres|O status de carregamento do certificado.|
-|certificateUploadFailureReason|Cadeia de caracteres|O motivo pelo qual o carregamento do certificado falhou.|
-|certificateSerialNumber|Cadeia de caracteres|Número de série do certificado. Essa propriedade é somente leitura.|
+|certificateUploadStatus|Cadeia de Caracteres|O status de carregamento do certificado.|
+|certificateUploadFailureReason|Cadeia de Caracteres|O motivo pelo qual o carregamento do certificado falhou.|
+|certificateSerialNumber|Cadeia de Caracteres|Número de série do certificado. Essa propriedade é somente leitura.|
 |certificado|Cadeia de caracteres|Ainda não documentado|
 
 

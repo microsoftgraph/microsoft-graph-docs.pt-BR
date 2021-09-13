@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso securityResource
 description: Representa os recursos relacionados a um alerta.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: preetikr
 ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: f8beb524375db5fc4187f210b8602e534835a53f3dc9c52b60ee57085f904ce2
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 377b3828e254676912f549c51aa3776a297edd4b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54212931"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59054069"
 ---
 # <a name="securityresource-resource-type"></a>Tipo de recurso securityResource
 
@@ -22,14 +22,14 @@ Representa os recursos relacionados a um alerta.
 
 | Propriedade   | Tipo|Descrição|
 |:---------------|:--------|:----------|
-|recurso|Cadeia de caracteres|Nome do recurso relacionado ao alerta atual. **Obrigatório**.|
+|recurso|Cadeia de Caracteres|Nome do recurso relacionado ao alerta atual. **Obrigatório**.|
 |resourceType|[securityResourceType](#securityresourcetype-values)|Representa o tipo de recursos de segurança relacionados a um alerta. Os valores possíveis são: `attacked` e `related`.|
 
 ### <a name="securityresourcetype-values"></a>valores securityResourceType
 
 |Membro|Valor|Descrição|
 |-|-|-|
-|attacked|1 |O recurso foi atacado no alerta.|
+|attacked|1|O recurso foi atacado no alerta.|
 |related|2|O recurso está relacionado ao alerta, embora não tenha sido diretamente atacado.|
 
 ## <a name="json-representation"></a>Representação JSON

@@ -2,15 +2,15 @@
 title: Atualizar o microsoftTunnelServer
 description: Atualize as propriedades de um objeto microsoftTunnelServer.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d80b6e95570ce359b3f82cebe101f161e9076b91
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: bf7cf0b8023919819186d876bcf0e8c095a59152
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58787073"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59041700"
 ---
 # <a name="update-microsofttunnelserver"></a>Atualizar o microsoftTunnelServer
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -57,8 +57,8 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [o micro
 |displayName|Cadeia de caracteres|O nome de exibição do MicrosoftTunnelServer|
 |tunnelServerHealthStatus|[microsoftTunnelServerHealthStatus](../resources/intune-mstunnel-microsofttunnelserverhealthstatus.md)|O status de saúde do MicrosoftTunnelServer. Os valores possíveis são: `unknown`, `healthy`, `unhealthy`, `warning`, `offline`, `upgradeInProgress`, `upgradeFailed`.|
 |lastCheckinDateTime|DateTimeOffset|Quando o MicrosoftTunnelServer entrou pela última vez|
-|agentImageDigest|Cadeia de caracteres|O resumo da imagem do agente atual em execução neste servidor |
-|serverImageDigest|Cadeia de caracteres|O resumo da imagem atual do servidor em execução neste servidor |
+|agentImageDigest|Cadeia de Caracteres|O resumo da imagem do agente atual em execução neste servidor |
+|serverImageDigest|Cadeia de Caracteres|O resumo da imagem atual do servidor em execução neste servidor |
 
 
 

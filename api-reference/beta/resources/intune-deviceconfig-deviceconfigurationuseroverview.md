@@ -2,15 +2,15 @@
 title: Tipo de recurso deviceConfigurationUserOverview
 description: Ainda não documentado
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 45de7f8de94f55c0c1916e55141d99fccb04c387
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: fc91e8462217b1cf0216b27505ed90c4b4edaed7
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58791899"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59051388"
 ---
 # <a name="deviceconfigurationuseroverview-resource-type"></a>Tipo de recurso deviceConfigurationUserOverview
 

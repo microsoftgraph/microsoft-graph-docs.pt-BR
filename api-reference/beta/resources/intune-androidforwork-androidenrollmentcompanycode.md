@@ -2,15 +2,15 @@
 title: Tipo de recurso androidEnrollmentCompanyCode
 description: Uma classe para manter dados de registro especializados usados para o registro por meio da API de Gerenciamento do Android do Google, como Token, Url e conteúdo de código QR
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: e6e15d4720b9f29e9b548004127760a2ba3b0135
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: cef755a70e0dcb237196891d88a89aecad85015c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58799828"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59057639"
 ---
 # <a name="androidenrollmentcompanycode-resource-type"></a>Tipo de recurso androidEnrollmentCompanyCode
 
@@ -25,7 +25,7 @@ Uma classe para manter dados de registro especializados usados para o registro p
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|enrollmentToken|Cadeia de caracteres|Token de Registro usado pelo Usuário para registrar seu dispositivo.|
+|enrollmentToken|Cadeia de Caracteres|Token de Registro usado pelo Usuário para registrar seu dispositivo.|
 |qrCodeContent|String|Cadeia de caracteres usada para gerar um código QR para o token.|
 |qrCodeImage|[mimeContent](../resources/intune-shared-mimecontent.md)|Código QR gerado para o token.|
 

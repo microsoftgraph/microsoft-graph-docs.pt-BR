@@ -2,15 +2,15 @@
 title: Listar androidForWorkGeneralDeviceConfigurations
 description: Listar propriedades e relações dos objetos androidForWorkGeneralDeviceConfiguration.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2c42c21ba907e242928d9595d6df87791815dc8c
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 020a0913e3a251746ccbeff54e71f4a9a6d6f22a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58802926"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59048784"
 ---
 # <a name="list-androidforworkgeneraldeviceconfigurations"></a>Listar androidForWorkGeneralDeviceConfigurations
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
+|Aplicativo|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {

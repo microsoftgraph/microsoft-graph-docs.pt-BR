@@ -2,15 +2,15 @@
 title: Tipo de recurso redirectSingleSignOnExtension
 description: Representa uma extensão de Sign-On Apple.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: e0b78b7c642fa2a541ef76361d79579cc15ef8d1
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 47084540ab278c9e4f4014b4e7fd4be50c7af3fa
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58806667"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59054405"
 ---
 # <a name="redirectsinglesignonextension-resource-type"></a>Tipo de recurso redirectSingleSignOnExtension
 
@@ -28,10 +28,10 @@ Herda [de singleSignOnExtension](../resources/intune-deviceconfig-singlesignonex
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|extensionIdentifier|Cadeia de caracteres|Obtém ou define a ID do pacote da extensão do aplicativo que executa o SSO para as URLs especificadas.|
-|teamIdentifier|Cadeia de caracteres|Obtém ou define a ID de equipe da extensão do aplicativo que executa o SSO para as URLs especificadas.|
+|extensionIdentifier|Cadeia de Caracteres|Obtém ou define a ID do pacote da extensão do aplicativo que executa o SSO para as URLs especificadas.|
+|teamIdentifier|Cadeia de Caracteres|Obtém ou define a ID de equipe da extensão do aplicativo que executa o SSO para as URLs especificadas.|
 |configurações|[Coleção keyTypedValuePair](../resources/intune-deviceconfig-keytypedvaluepair.md)|Obtém ou define uma lista de pares de valores de chave digitados usados para configurar perfis de tipo de credencial. Esta coleção pode conter um máximo de 500 elementos.|
-|urlPrefixes|Coleção de cadeias de caracteres|Um ou mais prefixos de URL de provedores de identidade em cujo nome a extensão do aplicativo realiza um único login. AS URLs devem começar com http:// ou https://. Todos os prefixos de URL devem ser exclusivos para todos os perfis.|
+|urlPrefixes|Conjunto de cadeias de caracteres|Um ou mais prefixos de URL de provedores de identidade em cujo nome a extensão do aplicativo realiza um único login. AS URLs devem começar com http:// ou https://. Todos os prefixos de URL devem ser exclusivos para todos os perfis.|
 
 ## <a name="relationships"></a>Relações
 Nenhum

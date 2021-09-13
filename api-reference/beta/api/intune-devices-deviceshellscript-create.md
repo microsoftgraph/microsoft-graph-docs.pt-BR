@@ -2,15 +2,15 @@
 title: Criar deviceShellScript
 description: Crie um novo objeto deviceShellScript.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a03fd82dffbabeacc55aa50991962641c40bd30f
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 218dbf0aaf761a90426b50c28226e3cd60fb0173
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58799616"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59042225"
 ---
 # <a name="create-deviceshellscript"></a>Criar deviceShellScript
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementManagedDevices.ReadWrite.All|
+|Aplicativo|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -58,13 +58,13 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar o device
 |blockExecutionNotifications|Boleano|Não notifica ao usuário que um script está sendo executado|
 |id|Cadeia de caracteres|Identificador exclusivo do script de gerenciamento de dispositivos.|
 |displayName|Cadeia de caracteres|Nome do script de gerenciamento de dispositivos.|
-|descrição|Cadeia de caracteres|Descrição opcional para o script de gerenciamento de dispositivos.|
+|description|Cadeia de caracteres|Descrição opcional para o script de gerenciamento de dispositivos.|
 |scriptContent|Binário|O conteúdo do script.|
 |createdDateTime|DateTimeOffset|A data e a hora em que o script de gerenciamento de dispositivos foi criado. Essa propriedade é somente leitura.|
 |lastModifiedDateTime|DateTimeOffset|A data e a hora em que o script de gerenciamento de dispositivos foi modificado pela última vez. Essa propriedade é somente leitura.|
 |runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|Indica o tipo de contexto de execução. Os valores possíveis são: `system` e `user`.|
 |fileName|String|Nome do arquivo de script.|
-|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de IDs de marca de escopo para esta instância do PowerShellScript.|
+|roleScopeTagIds|String collection|Lista de IDs de marca de escopo para esta instância do PowerShellScript.|
 
 
 

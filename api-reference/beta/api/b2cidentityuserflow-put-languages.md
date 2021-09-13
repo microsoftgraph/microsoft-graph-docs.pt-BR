@@ -2,15 +2,15 @@
 title: Criar idiomas
 description: Crie um idioma personalizado em um fluxo de usuário do Azure AD B2C.
 author: jkdouglas
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 1aa49de8c9e32952921413ca64325b39e0dff5fc
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 5f07f92b898656b06e4eea367ecd396a81ccd645
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50944618"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59049456"
 ---
 # <a name="create-languages"></a>Criar idiomas
 
@@ -33,7 +33,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 A conta de trabalho ou de estudante precisa pertencer a uma das seguintes funções:
 
 * Administrador global
-* Administrador de Fluxo de Usuário de Identidade Externa
+* Administrador de identidade externa Flow usuário
 
 ## <a name="http-request"></a>Solicitação HTTP
 

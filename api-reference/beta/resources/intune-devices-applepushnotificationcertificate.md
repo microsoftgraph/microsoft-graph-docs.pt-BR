@@ -2,15 +2,15 @@
 title: Tipo de recurso applePushNotificationCertificate
 description: Certificado de notificação por push da Apple.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 73732a3b4edbd39011056dd287a3b9d59b34bc8f
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 9a590291cd5a576132ba8944bb089b3abd262fcd
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58820699"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59051192"
 ---
 # <a name="applepushnotificationcertificate-resource-type"></a>Tipo de recurso applePushNotificationCertificate
 
@@ -33,14 +33,14 @@ Certificado de notificação por push da Apple.
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|O identificador exclusivo do certificado.|
+|id|Cadeia de caracteres|O identificador exclusivo do certificado.|
 |appleIdentifier|Cadeia de caracteres|Id da Apple da conta usada para criar o certificado de push do MDM.|
 |topicIdentifier|Cadeia de caracteres|ID do tópico.|
 |lastModifiedDateTime|DateTimeOffset|Data e hora da última modificação de certificado de notificações por push da Apple.|
 |expirationDateTime|DateTimeOffset|Data e hora do vencimento de certificado de notificações por push da Apple.|
-|certificateUploadStatus|Cadeia de caracteres|O status de carregamento do certificado.|
-|certificateUploadFailureReason|Cadeia de caracteres|O motivo pelo qual o carregamento do certificado falhou.|
-|certificateSerialNumber|String|Número de série do certificado. Essa propriedade é somente leitura.|
+|certificateUploadStatus|Cadeia de Caracteres|O status de carregamento do certificado.|
+|certificateUploadFailureReason|Cadeia de Caracteres|O motivo pelo qual o carregamento do certificado falhou.|
+|certificateSerialNumber|Cadeia de Caracteres|Número de série do certificado. Essa propriedade é somente leitura.|
 |certificado|Cadeia de caracteres|Ainda não documentado|
 
 ## <a name="relationships"></a>Relações

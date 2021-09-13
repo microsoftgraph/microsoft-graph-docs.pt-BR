@@ -2,15 +2,15 @@
 title: Atualizar b2cIdentityUserFlow
 description: Atualize as propriedades de um objeto b2cIdentityUserFlow.
 author: jkdouglas
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 4ec3217af72d08d8dda103ec9304b25218344398
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: a329daee14cddd2c5598c3ab3c456814abd80849
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50438180"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59035336"
 ---
 # <a name="update-b2cidentityuserflow"></a>Atualizar b2cIdentityUserFlow
 
@@ -31,7 +31,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 A conta de trabalho ou de estudante precisa pertencer a uma das seguintes funções:
 
 * Administrador global
-* Administrador de Fluxo de Usuário de Identidade Externa
+* Administrador de identidade externa Flow usuário
 
 ## <a name="http-request"></a>Solicitação HTTP
 

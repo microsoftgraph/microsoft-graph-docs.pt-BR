@@ -2,15 +2,15 @@
 title: Trabalhar com APIs de comunicações de serviço na Microsoft Graph
 description: Você pode usar a API de comunicações de serviço na Microsoft Graph acessar o status de saúde e as postagens do centro de mensagens sobre serviços Microsoft".
 author: payiAzure
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: service-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 0c00bf36e3f745614bd3f0e523e75b7229561d78
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 0c16ca46a3bb9b9862b49d4dd2ee27546f1f1d6c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58257737"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59054061"
 ---
 # <a name="working-with-service-communications-api-in-microsoft-graph"></a>Trabalhando com a API de comunicações de serviço no Microsoft Graph
 A API de comunicações de serviço fornece postagens de centro de mensagens e de saúde do serviço pertencentes aos serviços de nuvem da Microsoft inscritos pelo locatário. Você pode obter dados de saúde atuais e históricos de um serviço da Microsoft (por exemplo, o serviço Exchange Online está para baixo). Você pode verificar a saúde do serviço para determinar se um problema foi rastreado e uma resolução está em andamento antes de chamar o suporte ou passar o tempo solucionando problemas. As postagens da central de mensagens permitem que você acompanhe as alterações futuras, incluindo novos recursos, atualizações e outros comunicados importantes (por exemplo, Exchange Online está recebendo um novo recurso).
@@ -40,7 +40,7 @@ As permissões de aplicativo são necessárias para acessar a API de comunicaç�
 | Obter um relatório de revisão pós-incidente para locatário | [Obter relatório de incidentes](/graph/api/servicehealthissue-incidentreport?view=graph-rest-beta&preserve-view=true)| _ServiceHealth.Read.All_ | Delegado e aplicativo |
 | Listar todas as mensagens de serviço para locatário | [Listar mensagens](/graph/api/serviceannouncement-list-messages?view=graph-rest-beta&preserve-view=true) | _ServiceMessage.Read.All_ | Delegado e aplicativo |
 | Obter uma mensagem de serviço específica para locatário | [Obter mensagem](/graph/api/serviceupdatemessage-get?view=graph-rest-beta&preserve-view=true) | _ServiceMessage.Read.All_ | Delegado e aplicativo |
-| Atualizar o status da mensagem de serviço para o usuário que está assinado | Para ver uma lista de operações de status, [consulte serviceUpdateMessage](/graph/api/resources/serviceupdatemessage?view=graph-rest-beta&preserve-view=true).| _ServiceMessageViewpoint.Write_ | Delegated |
+| Atualizar o status da mensagem de serviço para o usuário que está assinado | Para ver uma lista de operações de status, [consulte serviceUpdateMessage](/graph/api/resources/serviceupdatemessage?view=graph-rest-beta&preserve-view=true).| _ServiceMessageViewpoint.Write_ | Delegado |
 
 ## <a name="availability-in-national-clouds"></a>Disponibilidade em nuvens nacionais
 Essa API de comunicações de serviço está disponível em todas as implantações de nuvem nacionais da Microsoft. Você pode obter dados de comunicações e de saúde do serviço para todos os locatários nas nuvens nacionais da Microsoft. Para obter detalhes, consulte [implantações nacionais de nuvem](/graph/deployments).

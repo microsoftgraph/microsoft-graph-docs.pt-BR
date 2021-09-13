@@ -2,15 +2,15 @@
 title: Atualizar managedDeviceEncryptionState
 description: Atualize as propriedades de um objeto managedDeviceEncryptionState.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2b14947aa1dbc66ba5299a5d5d9fe8a64022f68e
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 0e71ab20b8e41d142d3175e0e8cd34c3cb4ac8b6
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58820292"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59077444"
 ---
 # <a name="update-manageddeviceencryptionstate"></a>Atualizar managedDeviceEncryptionState
 
@@ -27,8 +27,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -53,11 +53,11 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [managed
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Chave da entidade.|
+|id|String|Chave da entidade.|
 |userPrincipalName|Cadeia de caracteres|Nome de usuário|
 |deviceType|[deviceTypes](../resources/intune-deviceconfig-devicetypes.md)|Plataforma do dispositivo. Os valores possíveis são: `desktop` , , , , , , , , `windowsRT` `winMO6` , , , `nokia` `windowsPhone` `mac` , `winCE` `winEmbedded` `iPhone` `iPad` `iPod` `android` `iSocConsumer` `unix` `macMDM` `holoLens` `surfaceHub` , `androidForWork` `androidEnterprise` `blackberry` `palm` `unknown` , .|
 |osVersion|String|Versão do sistema operacional do dispositivo|
-|tpmSpecificationVersion|Cadeia de caracteres|Versão TPM do dispositivo|
+|tpmSpecificationVersion|Cadeia de Caracteres|Versão TPM do dispositivo|
 |deviceName|String|Nome do dispositivo|
 |encryptionReadinessState|[encryptionReadinessState](../resources/intune-deviceconfig-encryptionreadinessstate.md)|Estado de preparação da criptografia. Os valores possíveis são: `notReady` e `ready`.|
 |encryptionState|[encryptionState](../resources/intune-deviceconfig-encryptionstate.md)|Estado de criptografia de dispositivo. Os valores possíveis são: `notEncrypted` e `encrypted`.|

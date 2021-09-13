@@ -2,15 +2,15 @@
 title: Tipo de número deviceEnrollmentType
 description: Possíveis maneiras de adicionar um dispositivo móvel ao gerenciamento.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 38ef6bde17bb005b9e08c9ba957ff6c4ee0a4fd5
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 632f0b3557cf6b78394a2a70cdcafefb52893905
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58803255"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59057275"
 ---
 # <a name="deviceenrollmenttype-enum-type"></a>Tipo de número deviceEnrollmentType
 
@@ -36,7 +36,7 @@ Possíveis maneiras de adicionar um dispositivo móvel ao gerenciamento.
 |windowsBulkAzureDomainJoin|8 |Windows 10 participar em massa do Azure AD.|
 |windowsCoManagement|9 |Windows 10 Co-Management acionado pelo AutoPilot ou Pela Política de Grupo.|
 |windowsAzureADJoinUsingDeviceAuth|10 |Windows 10 Ingressar no Azure AD usando Device Auth.|
-|appleUserEnrollment|11 |Dispositivo gerenciado pelo registro de usuário da Apple|
+|appleUserEnrollment|11|Dispositivo gerenciado pelo registro de usuário da Apple|
 |appleUserEnrollmentWithServiceAccount|12 |Dispositivo gerenciado pelo registro de usuário da Apple com conta de serviço|
 |azureAdJoinUsingAzureVmExtension|14 |Registro de participação do Azure AD quando uma VM do Azure é provisionada|
 |androidEnterpriseDedicatedDevice|15 |Dispositivo Enterprise Android dedicado|

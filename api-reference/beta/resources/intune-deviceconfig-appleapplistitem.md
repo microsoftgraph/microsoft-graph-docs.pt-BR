@@ -2,15 +2,15 @@
 title: Tipo de recurso appleAppListItem
 description: Representa um aplicativo na lista de aplicativos da Apple gerenciados
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 2111e8e8403b312c17a7c9e2c6dad62c857d4282
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 91a43ee845998535331804936becb6596ee7e2bd
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58796261"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59075596"
 ---
 # <a name="appleapplistitem-resource-type"></a>Tipo de recurso appleAppListItem
 
@@ -31,7 +31,7 @@ Herda de [appListItem](../resources/intune-deviceconfig-applistitem.md)
 |nome|Cadeia de caracteres|O nome do aplicativo Herdado do [appListItem](../resources/intune-deviceconfig-applistitem.md)|
 |publicador|String|O editor do aplicativo Herdado do [appListItem](../resources/intune-deviceconfig-applistitem.md)|
 |appStoreUrl|String|A URL da Loja do aplicativo Herdado do [appListItem](../resources/intune-deviceconfig-applistitem.md)|
-|appId|Cadeia de caracteres|O identificador de aplicativo ou pacote do aplicativo Herdado do [appListItem](../resources/intune-deviceconfig-applistitem.md)|
+|appId|String|O identificador de aplicativo ou pacote do aplicativo Herdado do [appListItem](../resources/intune-deviceconfig-applistitem.md)|
 
 ## <a name="relationships"></a>Relações
 Nenhum

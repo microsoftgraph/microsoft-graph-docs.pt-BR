@@ -2,15 +2,15 @@
 title: Atualizar groupPolicyCategory
 description: Atualize as propriedades de um objeto groupPolicyCategory.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: aec5223d000abbdaef7cb1e99eb5f5a27b4380f2
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: a723d55e1b4609163d4c5f14ce2e88019247fc06
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58789752"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59034397"
 ---
 # <a name="update-grouppolicycategory"></a>Atualizar groupPolicyCategory
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -56,8 +56,8 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [o group
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|displayName|Cadeia de caracteres|A id de cadeia de caracteres do nome de exibição da categoria|
-|isRoot|Booliano|Define se a categoria é uma categoria raiz|
+|displayName|String|A id de cadeia de caracteres do nome de exibição da categoria|
+|isRoot|Boleano|Define se a categoria é uma categoria raiz|
 |id|Cadeia de caracteres|Chave da entidade.|
 |lastModifiedDateTime|DateTimeOffset|A data e a hora em que a entidade foi modificada pela última vez.|
 

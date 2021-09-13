@@ -1,16 +1,16 @@
 ---
 title: Adicionar item nomeado FormulaLocal
 description: Adiciona um novo nome à coleção de escopo fornecido usando a localidade do usuário para a fórmula.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: ''
 author: ruoyingl
-ms.openlocfilehash: 24773d20df7640ad50263cfbc2f395b0bc8cfa77
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 405bf6bbf638f27f825086ecb2fa8329b7903094
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52052135"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59058283"
 ---
 # <a name="add-named-item-formulalocal"></a>Adicionar item nomeado FormulaLocal
 
@@ -23,7 +23,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | Files.ReadWrite, Sites.Read.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Application | Sites.Read.All |
+|Aplicativo | Sites.Read.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -96,7 +96,7 @@ Content-length: 54
 
 
 ##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser reduzido para facilitar a leitura.
 <!-- {
   "blockType": "response",
   "truncated": true,

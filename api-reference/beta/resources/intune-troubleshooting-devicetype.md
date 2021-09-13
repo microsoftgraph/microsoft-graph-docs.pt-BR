@@ -2,15 +2,15 @@
 title: Tipo de número deviceType
 description: Tipo de dispositivo.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 925781ea7aa7f618ce806f742e97d11d0e57c994
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 3b72d1a3087c83d490098295c3fe6785a0c47673
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58263303"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59057247"
 ---
 # <a name="devicetype-enum-type"></a>Tipo de número deviceType
 
@@ -24,9 +24,9 @@ Tipo de dispositivo.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |desktop|0|Área de trabalho.|
-|windowsRT|1 |WindowsRT.|
+|windowsRT|1|WindowsRT.|
 |winMO6|2|WinMO6.|
-|nokia|3 |Nokia.|
+|nokia|3|Nokia.|
 |windowsPhone|4 |Windows telefone.|
 |mac|5 |Mac.|
 |winCE|6 |WinCE.|
@@ -34,9 +34,9 @@ Tipo de dispositivo.
 |iPhone|8 |iPhone.|
 |iPad|9 |iPad.|
 |iPod|10 |iPodTouch.|
-|android|11 |Android.|
+|android|11|Android.|
 |iSocConsumer|12 |iSocConsumer.|
-|unix|13 |Unix.|
+|unix|13|Unix.|
 |macMDM|14 |Cliente Mac OS X usando o agente MDM integrado.|
 |holoLens|15 |Representando os óculos Windows 10 sofisticados.|
 |surfaceHub|16 |Dispositivo Surface HUB.|

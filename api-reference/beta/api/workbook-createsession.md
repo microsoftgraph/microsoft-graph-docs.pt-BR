@@ -2,15 +2,15 @@
 title: Criar sessão
 description: 'Crie uma nova sessão de workbook. '
 author: lumine2008
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 0a93a602d5f10e3b99b18ed310bdf4c933dcf8aa
-ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
+ms.openlocfilehash: 8175bc48847aaa4349b6b2b1f44950b396bdaa3b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "50578813"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59076135"
 ---
 # <a name="create-session"></a>Criar sessão
 
@@ -27,7 +27,7 @@ Para representar a sessão na API, use o cabeçalho `workbook-session-id: {sessi
 
 >**Observação:** o cabeçalho de sessão não é obrigatório para uma API do Excel funcionar. No entanto, recomendamos que você use o cabeçalho de sessão para melhorar o desempenho. Se você não usar um cabeçalho de sessão, as alterações feitas durante a chamada à API _serão_ mantidas como persistentes no arquivo.  
 
-Em alguns casos, criar uma nova sessão requer um tempo indeterminado para ser concluído. O Microsoft Graph também fornece um padrão de operações em execução longa. Esse padrão fornece uma maneira de sondar atualizações de status de criação, sem aguardar a conclusão da criação. Veja a seguir as etapas:
+Em alguns casos, criar uma nova sessão requer um tempo indeterminado para ser concluído. A Microsoft Graph também fornece um padrão de operações em execução longa. Esse padrão fornece uma maneira de sondar atualizações de status de criação, sem aguardar a conclusão da criação. Veja a seguir as etapas:
 
 1. Um `Prefer: respond-async` header é adicionado à solicitação para indicar que é uma operação de longa duração.
 2. A resposta retorna um `Location` header para especificar a URL para sondar o status da operação de criação. Você pode obter o status da operação acessando a URL especificada. O status será um dos seguintes: `notStarted` , `running` , ou `succeeded` `failed` .

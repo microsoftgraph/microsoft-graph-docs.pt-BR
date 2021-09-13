@@ -1,16 +1,16 @@
 ---
 title: Obter windowsOfficeClientSecurityConfiguration
 description: Obter um objeto windowsOfficeClientSecurityConfiguration de política de segurança específica.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: dougeby
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ffcc157914895c063e1da088fbd56a83ad355e39
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 17f584187e5aa6fbef2a7c6f3f16c7cddeec3ac8
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58790504"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59048938"
 ---
 # <a name="get-windowsofficeclientsecurityconfiguration"></a>Obter windowsOfficeClientSecurityConfiguration
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All DeviceManagementConfiguration.Read.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementConfiguration.ReadWrite.All DeviceManagementConfiguration.Read.All|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {

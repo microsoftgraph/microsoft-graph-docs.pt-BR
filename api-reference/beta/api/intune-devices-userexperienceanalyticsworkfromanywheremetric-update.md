@@ -2,15 +2,15 @@
 title: Atualizar userExperienceAnalyticsWorkFromAnywhereMetric
 description: Atualize as propriedades de um objeto userExperienceAnalyticsWorkFromAnywhereMetric.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b7fe6ae533561c94e59a2b1b860892b5efc4e261
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 3e0487b8ab4c53d73c665a6e6f8a1e9b9fa607b5
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58787677"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59042155"
 ---
 # <a name="update-userexperienceanalyticsworkfromanywheremetric"></a>Atualizar userExperienceAnalyticsWorkFromAnywhereMetric
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementManagedDevices.ReadWrite.All|
+|Aplicativo|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {

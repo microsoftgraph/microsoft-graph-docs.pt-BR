@@ -2,15 +2,15 @@
 title: Tipo de recurso securityBaselineDeviceState
 description: O resumo do estado de conformidade da linha de base de segurança de um dispositivo.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 99dae7127ff0074fd660ed90bf0467fc8e6f5986
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: f960ec9f9a0b56b8a28cda555cf78514cebb0bbb
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58805728"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59051248"
 ---
 # <a name="securitybaselinedevicestate-resource-type"></a>Tipo de recurso securityBaselineDeviceState
 
@@ -28,14 +28,14 @@ O resumo do estado de conformidade da linha de base de segurança de um disposit
 |[Listar securityBaselineDeviceStates](../api/intune-deviceintent-securitybaselinedevicestate-list.md)|[coleção securityBaselineDeviceState](../resources/intune-deviceintent-securitybaselinedevicestate.md)|Listar propriedades e relações dos [objetos securityBaselineDeviceState.](../resources/intune-deviceintent-securitybaselinedevicestate.md)|
 |[Obter securityBaselineDeviceState](../api/intune-deviceintent-securitybaselinedevicestate-get.md)|[securityBaselineDeviceState](../resources/intune-deviceintent-securitybaselinedevicestate.md)|Leia propriedades e relações do [objeto securityBaselineDeviceState.](../resources/intune-deviceintent-securitybaselinedevicestate.md)|
 |[Criar securityBaselineDeviceState](../api/intune-deviceintent-securitybaselinedevicestate-create.md)|[securityBaselineDeviceState](../resources/intune-deviceintent-securitybaselinedevicestate.md)|Crie um novo [objeto securityBaselineDeviceState.](../resources/intune-deviceintent-securitybaselinedevicestate.md)|
-|[Excluir securityBaselineDeviceState](../api/intune-deviceintent-securitybaselinedevicestate-delete.md)|Nenhum(a)|Exclui um [securityBaselineDeviceState](../resources/intune-deviceintent-securitybaselinedevicestate.md).|
+|[Excluir securityBaselineDeviceState](../api/intune-deviceintent-securitybaselinedevicestate-delete.md)|Nenhum|Exclui um [securityBaselineDeviceState](../resources/intune-deviceintent-securitybaselinedevicestate.md).|
 |[Atualizar securityBaselineDeviceState](../api/intune-deviceintent-securitybaselinedevicestate-update.md)|[securityBaselineDeviceState](../resources/intune-deviceintent-securitybaselinedevicestate.md)|Atualize as propriedades de [um objeto securityBaselineDeviceState.](../resources/intune-deviceintent-securitybaselinedevicestate.md)|
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|Cadeia de caracteres|Identificador exclusivo da entidade|
-|managedDeviceId|Cadeia de caracteres|ID de dispositivo do Intune|
+|managedDeviceId|Cadeia de Caracteres|ID de dispositivo do Intune|
 |deviceDisplayName|Cadeia de caracteres|Nome de exibição do dispositivo|
 |userPrincipalName|Cadeia de caracteres|Nome UPN|
 |state|[securityBaselineComplianceState](../resources/intune-deviceintent-securitybaselinecompliancestate.md)|Estado de conformidade da linha de base de segurança. Os possíveis valores são: `unknown`, `secure`, `notApplicable`, `notSecure`, `error`, `conflict`.|

@@ -2,15 +2,15 @@
 title: Tipo de recurso hasPayloadLinkResultItem
 description: Uma classe que contém o resultado da ação HasPayloadLinks.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 123177d4935ea7aec924345d27134f7ad779a625
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: ad490d3d9574fa42f9dddb4c3bba92934b02287d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58785686"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59080755"
 ---
 # <a name="haspayloadlinkresultitem-resource-type"></a>Tipo de recurso hasPayloadLinkResultItem
 
@@ -26,8 +26,8 @@ Uma classe que contém o resultado da ação HasPayloadLinks.
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |payloadId|Cadeia de caracteres|Chave da carga, no formato guid.|
-|hasLink|Boleano|Indica se uma carga tem um link ou não.|
-|erro|Cadeia de caracteres|As informações de exceção indicam se a verificação desse item foi bem-sucedida ou não. Cadeia de caracteres vazia para nenhum erro.|
+|hasLink|Boolean|Indica se uma carga tem um link ou não.|
+|erro|Cadeia de Caracteres|As informações de exceção indicam se a verificação desse item foi bem-sucedida ou não. Cadeia de caracteres vazia para nenhum erro.|
 |fontes|[Coleção deviceAndAppManagementAssignmentSource](../resources/intune-shared-deviceandappmanagementassignmentsource.md)|O motivo de onde o link vem.|
 
 ## <a name="relationships"></a>Relações

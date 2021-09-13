@@ -2,15 +2,15 @@
 title: Criar groupPolicyPresentationDecimalTextBox
 description: Crie um novo objeto groupPolicyPresentationDecimalTextBox.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0f6aae9b24245a3ef3e18b000185f1ce69dd3f48
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: deeb7146f4a2ccf385598146f3150fe955e551a1
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58799898"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59082239"
 ---
 # <a name="create-grouppolicypresentationdecimaltextbox"></a>Criar groupPolicyPresentationDecimalTextBox
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -59,7 +59,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar o groupP
 |defaultValue|Int64|Um inteiro não assinado que especifica o valor inicial da caixa de texto decimal. O valor padrão é 1.|
 |spin|Boleano|Se for true, crie um controle de rotação; caso contrário, crie uma caixa de texto para entrada numérica. O valor padrão é true.|
 |spinStep|Int64|Um inteiro não assinado que especifica o incremento de alteração para o controle de rotação. O valor padrão é 1.|
-|obrigatório|Booliano|Requisito para inserir um valor na caixa de parâmetros. O valor padrão é falso.|
+|obrigatório|Boleano|Requisito para inserir um valor na caixa de parâmetros. O valor padrão é falso.|
 |minValue|Int64|Um inteiro não assinado que especifica o valor mínimo permitido. O valor padrão é 0.|
 |maxValue|Int64|Um inteiro não assinado que especifica o valor máximo permitido. O valor padrão é 9999.|
 

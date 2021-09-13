@@ -2,15 +2,15 @@
 title: Tipo de número de habilitação
 description: Valores possíveis de uma propriedade
 author: rolyon
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 2b0b91f1e426ebdb7ebe52c0e16a3d8b083dfdb7
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: e4ca610d60b000f96c45ef93e40c6475ecbb2642
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58795554"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59046656"
 ---
 # <a name="enablement-enum-type"></a>Tipo de número de habilitação
 

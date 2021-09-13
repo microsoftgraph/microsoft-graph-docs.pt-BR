@@ -2,15 +2,15 @@
 title: Atualizar userExperienceAnalyticsResourcePerformance
 description: Atualize as propriedades de um objeto userExperienceAnalyticsResourcePerformance.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ac54b87e36d0d39f0f744c85ef5102e561161511
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 105f3f77d18cbc2ed292b5d641d5185211f4ca47
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58784594"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59077017"
 ---
 # <a name="update-userexperienceanalyticsresourceperformance"></a>Atualizar userExperienceAnalyticsResourcePerformance
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementManagedDevices.ReadWrite.All|
+|Aplicativo|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {

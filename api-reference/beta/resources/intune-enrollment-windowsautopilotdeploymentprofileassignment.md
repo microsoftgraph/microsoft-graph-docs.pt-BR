@@ -2,15 +2,15 @@
 title: Tipo de recurso windowsAutopilotDeploymentProfileAssignment
 description: Uma atribuição de um Windows de implantação do Autopilot para um grupo AAD.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 2ef6a60f640f6049aa0affeda697d8272c06f27c
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 1f42c8d9596372fcd4a0a9ba8b679c77a19be293
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58820839"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59054279"
 ---
 # <a name="windowsautopilotdeploymentprofileassignment-resource-type"></a>Tipo de recurso windowsAutopilotDeploymentProfileAssignment
 
@@ -37,7 +37,7 @@ Uma atribuição de um Windows de implantação do Autopilot para um grupo AAD.
 |id|Cadeia de caracteres|A chave da atribuição.|
 |destino|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|O destino da atribuição para o perfil Windows de implantação do Autopilot.|
 |source|[deviceAndAppManagementAssignmentSource](../resources/intune-shared-deviceandappmanagementassignmentsource.md)|Tipo de recurso usado para implantação para um grupo, direto ou pacote/policySet. Os valores possíveis são: `direct` e `policySets`.|
-|sourceId|Cadeia de caracteres|Identificador de recurso usado para implantação em um grupo|
+|sourceId|Cadeia de Caracteres|Identificador de recurso usado para implantação em um grupo|
 
 ## <a name="relationships"></a>Relações
 Nenhum

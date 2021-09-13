@@ -2,15 +2,15 @@
 title: Tipo de recurso deviceHealthScriptStringParameter
 description: Propriedades do parâmetro de script String.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: e6b96f7eb1796ce170c8334fc653b1565f716cad
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 19a4c240b813e4dbbde5135179049c3c32a988f7
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58785399"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59040152"
 ---
 # <a name="devicehealthscriptstringparameter-resource-type"></a>Tipo de recurso deviceHealthScriptStringParameter
 
@@ -29,10 +29,10 @@ Herda de [deviceHealthScriptParameter](../resources/intune-devices-devicehealths
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |nome|Cadeia de caracteres|O nome do param Herdado de [deviceHealthScriptParameter](../resources/intune-devices-devicehealthscriptparameter.md)|
-|descrição|Cadeia de caracteres|A descrição do param Herdado de [deviceHealthScriptParameter](../resources/intune-devices-devicehealthscriptparameter.md)|
+|description|Cadeia de caracteres|A descrição do param Herdado de [deviceHealthScriptParameter](../resources/intune-devices-devicehealthscriptparameter.md)|
 |isRequired|Booliano|Se o param é necessário Herdado de [deviceHealthScriptParameter](../resources/intune-devices-devicehealthscriptparameter.md)|
-|applyDefaultValueWhenNotAssigned|Booliano|Se aplicar DefaultValue quando não atribuído herdado de [deviceHealthScriptParameter](../resources/intune-devices-devicehealthscriptparameter.md)|
-|defaultValue|Cadeia de caracteres|O valor padrão do param de cadeia de caracteres|
+|applyDefaultValueWhenNotAssigned|Boleano|Se aplicar DefaultValue quando não atribuído herdado de [deviceHealthScriptParameter](../resources/intune-devices-devicehealthscriptparameter.md)|
+|defaultValue|Cadeia de Caracteres|O valor padrão do param de cadeia de caracteres|
 
 ## <a name="relationships"></a>Relações
 Nenhum

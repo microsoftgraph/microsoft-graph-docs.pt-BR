@@ -2,15 +2,15 @@
 title: Atualizar androidForWorkAppConfigurationSchema
 description: Atualizar as propriedades de um objeto androidForWorkAppConfigurationSchema.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e6ae8f9f1501c0e5de4b69df35b5dc95a74c7af0
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: c63e18c898978a5be9f59878a2b95a8b635f927d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58798073"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59078046"
 ---
 # <a name="update-androidforworkappconfigurationschema"></a>Atualizar androidForWorkAppConfigurationSchema
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {

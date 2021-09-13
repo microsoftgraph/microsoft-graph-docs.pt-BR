@@ -2,15 +2,15 @@
 title: Tipo de número secureAssessmentAccountType
 description: Tipo de contas permitidas para o Windows10SecureAssessment ConfigurationAccount.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 26cea223c419260fa14256dc94a832000281fd6f
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 3c7d5577c322db4f980c008f3fbc72d4756733a9
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58791878"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59081231"
 ---
 # <a name="secureassessmentaccounttype-enum-type"></a>Tipo de número secureAssessmentAccountType
 

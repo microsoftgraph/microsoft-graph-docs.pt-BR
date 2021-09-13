@@ -2,15 +2,15 @@
 title: Tipo de número remoteAction
 description: Ações remotas Compatíveis com o Intune.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 435cc6f118c8e9126d4feb60a8d74fed1898db9b
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 70e7d5ac0734f791f79915524565012393b6f90d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58790875"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59081084"
 ---
 # <a name="remoteaction-enum-type"></a>Tipo de número remoteAction
 
@@ -36,7 +36,7 @@ Ações remotas Compatíveis com o Intune.
 |rebootNow|8 |O usuário inicia uma ação para reiniciar um Windows dispositivo.|
 |recoverPasscode|9 |O usuário inicia uma ação para redefinir o pino para o passport para trabalho no dispositivo windows phone.|
 |cleanWindowsDevice|10 |O usuário inicia uma ação para limpar o dispositivo windows.|
-|logoutSharedAppleDeviceActiveUser|11 |O usuário inicia uma ação para fazer logoff do usuário atual no dispositivo apple compartilhado.|
+|logoutSharedAppleDeviceActiveUser|11|O usuário inicia uma ação para fazer logoff do usuário atual no dispositivo apple compartilhado.|
 |quickScan|12 |O usuário inicia uma ação para executar uma verificação rápida no dispositivo.|
 |fullScan|13|O usuário inicia uma ação para executar a verificação completa no dispositivo.|
 |windowsDefenderUpdateSignatures|14 |O usuário inicia uma ação para atualizar assinaturas de malware no dispositivo.|

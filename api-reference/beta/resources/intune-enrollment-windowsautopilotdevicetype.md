@@ -2,15 +2,15 @@
 title: Tipo de número windowsAutopilotDeviceType
 description: Ainda não documentado
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: f3f9b9500ef33ac4237274233fbde12320e0d92e
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 5f3990de804536971c7d0bc463afb5c4d3ce741f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58791456"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59054258"
 ---
 # <a name="windowsautopilotdevicetype-enum-type"></a>Tipo de número windowsAutopilotDeviceType
 

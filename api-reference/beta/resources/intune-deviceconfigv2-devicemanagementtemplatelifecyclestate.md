@@ -2,15 +2,15 @@
 title: Tipo denum deviceManagementTemplateLifecycleState
 description: Descreve o estado atual do ciclo de vida de um modelo
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 9c252797857f40aaeeb84efb3330c24da3bf8daf
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: f047e908e5f2d9f7abcd9793927bd689e3b6bf24
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58801792"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59051297"
 ---
 # <a name="devicemanagementtemplatelifecyclestate-enum-type"></a>Tipo denum deviceManagementTemplateLifecycleState
 

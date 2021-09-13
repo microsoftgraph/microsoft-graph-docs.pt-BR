@@ -1,23 +1,23 @@
 ---
 title: Atualizar itemAddress
 description: Atualize as propriedades de um objeto itemAddress.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 6b761de97ba3c39917f42c0bb110c949f5e6185b
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: 0b5a7d032dbaa1da0a86f567c392529dd6944a48
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50774654"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59058356"
 ---
 # <a name="update-itemaddress"></a>Atualizar itemAddress
 Namespace: microsoft.graph
 
 Atualize as propriedades de um [objeto itemAddress.](../resources/itemaddress.md)
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -50,9 +50,9 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|allowedAudiences|String|As audiências que são capazes de ver os valores contidos na entidade. Herdado [do itemFacet](../resources/itemfacet.md). Os valores possíveis são: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
+|allowedAudiences|Cadeia de Caracteres|As audiências que são capazes de ver os valores contidos na entidade. Herdado [do itemFacet](../resources/itemfacet.md). Os valores possíveis são: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
 |detail|[physicalAddress](../resources/physicaladdress.md)|Detalhes sobre o endereço em si.|
-|displayName|String|Nome amigável que o usuário atribuiu a esse endereço. |
+|displayName|Cadeia de caracteres|Nome amigável que o usuário atribuiu a esse endereço. |
 |geoCoordinates|[geoCoordinates](../resources/geocoordinates.md)|As geocoordinações do endereço.|
 |inferência|[inferenceData](../resources/inferencedata.md)|Contém detalhes de inferência se a entidade for inferida pelo aplicativo de criação ou modificação. Herdado [do itemFacet](../resources/itemfacet.md).|
 |source|[personDataSource](../resources/persondatasource.md)|Onde os valores se originaram se sincronizados de outro serviço. Herdado [do itemFacet](../resources/itemfacet.md).|

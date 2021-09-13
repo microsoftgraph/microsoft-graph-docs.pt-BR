@@ -2,15 +2,15 @@
 title: Atualizar notificationMessageTemplate
 description: Atualizar as propriedades de um objeto notificationMessageTemplate.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 4bfd4fb8a6a5e196f88170c7d0b7b03fe15ebc93
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: a39f354426d23f5361c215707f65d86648a72290
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58805125"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59052080"
 ---
 # <a name="update-notificationmessagetemplate"></a>Atualizar notificationMessageTemplate
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementServiceConfig.ReadWrite.All|
+|Aplicativo|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -58,7 +58,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [notific
 |displayName|Cadeia de caracteres|Nome de exibição do modelo de mensagem de notificação.|
 |defaultLocale|Cadeia de caracteres|A localidade padrão para fallback quando a localidade solicitada não está disponível.|
 |brandingOptions|[notificationTemplateBrandingOptions](../resources/intune-notification-notificationtemplatebrandingoptions.md)|As opções de identidade visual do modelo de mensagem. A identidade visual é definida no Console do administrador do Intune. Os valores possíveis são: `none`, `includeCompanyLogo`, `includeCompanyName`, `includeContactInformation`, `includeCompanyPortalLink`.|
-|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de marcas de escopo para esta instância entity.|
+|roleScopeTagIds|String collection|Lista de marcas de escopo para esta instância entity.|
 
 
 

@@ -2,15 +2,15 @@
 title: Tipo de recurso windowsAppXAppAssignmentSettings
 description: Contém propriedades usadas ao atribuir um Windows app móvel AppX a um grupo.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d13c2886e11dff9c959ef50985988c6f5ca380e7
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 50e24a0ecb8d2864597ba6f30b996d41c36aa795
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58807234"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59051101"
 ---
 # <a name="windowsappxappassignmentsettings-resource-type"></a>Tipo de recurso windowsAppXAppAssignmentSettings
 

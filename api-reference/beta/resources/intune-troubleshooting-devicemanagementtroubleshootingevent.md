@@ -2,15 +2,15 @@
 title: Tipo de recurso deviceManagementTroubleshootingEvent
 description: Evento que representa uma falha geral.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: fbb340f8505f042451ab11224ec97845beb5c8c2
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: ad5513f6872297f792ea19b913ae32089004e251
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58253429"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59057296"
 ---
 # <a name="devicemanagementtroubleshootingevent-resource-type"></a>Tipo de recurso deviceManagementTroubleshootingEvent
 
@@ -36,7 +36,7 @@ Evento que representa uma falha geral.
 |eventDateTime|DateTimeOffset|A hora em que o evento ocorreu.|
 |correlationId|Cadeia de caracteres|ID usada para rastrear a falha no serviço.|
 |troubleshootingErrorDetails|[deviceManagementTroubleshootingErrorDetails](../resources/intune-troubleshooting-devicemanagementtroubleshootingerrordetails.md)|Objeto contendo informações detalhadas sobre o erro e sua correção.|
-|eventName|Cadeia de caracteres|Nome do Evento correspondente ao Evento de Solução de Problemas. É um campo Opcional|
+|eventName|Cadeia de Caracteres|Nome do Evento correspondente ao Evento de Solução de Problemas. É um campo Opcional|
 |additionalInformation|Coleção [keyValuePair](../resources/intune-troubleshooting-keyvaluepair.md)|Um conjunto de pares de valores de chave de cadeia de caracteres e cadeia de caracteres que fornece informações adicionais sobre o evento Solução de problemas|
 
 ## <a name="relationships"></a>Relações

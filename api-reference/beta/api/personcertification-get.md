@@ -1,21 +1,21 @@
 ---
 title: Obter personCertification
-description: Leia as propriedades e os relacionamentos de um objeto personCertification.
-localization_priority: Normal
+description: Leia as propriedades e as relações de um objeto personCertification.
+ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: cb6e947695aecfb6e1aa6f4242ce95266e941d12
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: bb54da7964a23671fad11213f64c25bd233c696a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48972802"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59058248"
 ---
 # <a name="get-personcertification"></a>Obter personCertification
 Namespace: microsoft.graph
 
-Leia as propriedades e os relacionamentos de um objeto [personCertification](../resources/personcertification.md) no [perfil](../resources/profile.md)de um usuário.
+Leia as propriedades e as relações de um [objeto personCertification](../resources/personcertification.md) no perfil de um [usuário.](../resources/profile.md)
 
 ## <a name="permissions"></a>Permissões
 
@@ -23,9 +23,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)                                      |
 |:---------------------------------------|:---------------------------------------------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | User. Read, User. ReadWrite, User. ReadBasic. All, User. Read. All, User. ReadWrite. All |
-| Delegado (conta pessoal da Microsoft) | User. Read, User. ReadWrite, User. ReadBasic. All, User. Read. All, User. ReadWrite. All |
-| Application                            | User. ReadBasic. All, User. Read. All, User. ReadWrite. All                            |
+| Delegado (conta corporativa ou de estudante)     | User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All |
+| Delegado (conta pessoal da Microsoft) | User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All |
+| Aplicativo                            | User.ReadBasic.All, User.Read.All, User.ReadWrite.All                            |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -40,7 +40,7 @@ GET /users/{id | userPrincipalName}/profile/certifications/{id}
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Este método dá suporte ao `$select` parâmetro de consulta. Especifique uma lista de propriedades a serem incluídas na resposta, separando-as por vírgulas. Para obter o desempenho ideal, selecione apenas o subconjunto de propriedades necessário.
+Este método dá suporte `$select` ao parâmetro de consulta. Especifique uma lista de propriedades para incluir na resposta, separando-as por vírgulas. Para obter o desempenho ideal, selecione apenas o subconjunto de propriedades necessárias.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 |Nome|Descrição|
@@ -52,7 +52,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [personCertification](../resources/personcertification.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código `200 OK` de resposta e um objeto [personCertification](../resources/personcertification.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

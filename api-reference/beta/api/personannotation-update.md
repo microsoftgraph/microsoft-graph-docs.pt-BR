@@ -2,15 +2,15 @@
 title: Atualizar personAnnotation
 description: Atualize as propriedades de um objeto personAnnotation.
 author: kevinbellinger
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: a86467b01d6072f4a14dad6fc5d1a6838249899b
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: 343fb581ec1e2a6b202a4430b3945bbb9c606969
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50774163"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59051688"
 ---
 # <a name="update-personannotation"></a>Atualizar personAnnotation
 Namespace: microsoft.graph
@@ -52,9 +52,9 @@ A tabela a seguir mostra as propriedades que são possíveis de atualizar dentro
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|allowedAudiences|String|As audiências que são capazes de ver os valores contidos na entidade. Herdado [do itemFacet](../resources/itemfacet.md). Os valores possíveis são: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
+|allowedAudiences|Cadeia de Caracteres|As audiências que são capazes de ver os valores contidos na entidade. Herdado [do itemFacet](../resources/itemfacet.md). Os valores possíveis são: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
 |detail|[itemBody](../resources/itembody.md)|Contém os detalhes da própria nota.|
-|displayName|String|Contém um nome amigável para a nota.|
+|displayName|Cadeia de caracteres|Contém um nome amigável para a nota.|
 |inferência|[inferenceData](../resources/inferencedata.md)|Contém detalhes de inferência se a entidade for inferida pelo aplicativo de criação ou modificação. Herdado [do itemFacet](../resources/itemfacet.md).|
 
 ## <a name="response"></a>Resposta

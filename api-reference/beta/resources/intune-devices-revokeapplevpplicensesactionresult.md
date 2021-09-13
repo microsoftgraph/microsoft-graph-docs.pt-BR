@@ -2,15 +2,15 @@
 title: Tipo de recurso revokeAppleVppLicensesActionResult
 description: Resultado da ação Revogar licenças do Apple Vpp
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: df325b0a22ac428965be21600c25312686bdbc33
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 840f39ab43f6ea29ed3e2ad7685226d65679e39a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58786302"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59046992"
 ---
 # <a name="revokeapplevpplicensesactionresult-resource-type"></a>Tipo de recurso revokeAppleVppLicensesActionResult
 

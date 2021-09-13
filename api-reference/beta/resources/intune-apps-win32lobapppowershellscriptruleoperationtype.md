@@ -2,15 +2,15 @@
 title: Tipo de número win32LobAppPowerShellScriptRuleOperationType
 description: Contém todo o tipo de detecção de saída de script do Powershell com suporte.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 9f012bfa5e30ab749d6779bd1df4bc0ebec804f9
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: fac512fc11f070737b1ae3588deab91bf7953408
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58816575"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59057492"
 ---
 # <a name="win32lobapppowershellscriptruleoperationtype-enum-type"></a>Tipo de número win32LobAppPowerShellScriptRuleOperationType
 
@@ -26,7 +26,7 @@ Contém todo o tipo de detecção de saída de script do Powershell com suporte.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |notConfigured|0|Não configurado.|
-|cadeia de caracteres|1|Tipo de dados de saída é cadeia de caracteres.|
+|string|1|Tipo de dados de saída é cadeia de caracteres.|
 |dateTime|2|O tipo de dados de saída é a hora da data.|
 |inteiro|3|O tipo de dados de saída é inteiro.|
 |flutuação|4 |O tipo de dados de saída é flutuante.|

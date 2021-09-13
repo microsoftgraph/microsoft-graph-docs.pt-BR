@@ -2,15 +2,15 @@
 title: Tipo denum windowsAutopilotEnrollmentType
 description: Ainda não documentado
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 4e2c5eac9235da32cfef718985bb67cd8f967627
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 366ee2bc0a931ac95ba200b8f4d6fdba500c5019
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58250907"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59054223"
 ---
 # <a name="windowsautopilotenrollmenttype-enum-type"></a>Tipo denum windowsAutopilotEnrollmentType
 
@@ -24,9 +24,9 @@ Ainda não documentado
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |desconhecido|0|Ainda não documentado|
-|azureADJoinedWithAutopilotProfile|1 |Ainda não documentado|
+|azureADJoinedWithAutopilotProfile|1|Ainda não documentado|
 |offlineDomainJoined|2|Ainda não documentado|
-|azureADJoinedUsingDeviceAuthWithAutopilotProfile|3 |Ainda não documentado|
+|azureADJoinedUsingDeviceAuthWithAutopilotProfile|3|Ainda não documentado|
 |azureADJoinedUsingDeviceAuthWithoutAutopilotProfile|4 |Ainda não documentado|
 |azureADJoinedWithOfflineAutopilotProfile|5 |Ainda não documentado|
 |azureADJoinedWithWhiteGlove|6 |Ainda não documentado|

@@ -2,15 +2,15 @@
 title: Excluir androidWorkProfileNineWorkEasConfiguration
 description: Exclui um androidWorkProfileNineWorkEasConfiguration.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: deb0a78aac41e5ad6806c1391c091f3d9cea30d8
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 32a730470c1c884ab36f15ed69e3fb6985a43e7b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58797835"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59034937"
 ---
 # <a name="delete-androidworkprofilenineworkeasconfiguration"></a>Excluir androidWorkProfileNineWorkEasConfiguration
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {

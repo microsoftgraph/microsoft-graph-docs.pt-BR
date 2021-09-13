@@ -2,15 +2,15 @@
 title: Criar deviceManagementDomainJoinConnector
 description: Crie um novo objeto deviceManagementDomainJoinConnector.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: afadbd6fdffb4e91eac789cfc35fc975e5ba6653
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: fd668d47e651a1519c7d1cb54145028fdf0c1179
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58785840"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59052073"
 ---
 # <a name="create-devicemanagementdomainjoinconnector"></a>Criar deviceManagementDomainJoinConnector
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {

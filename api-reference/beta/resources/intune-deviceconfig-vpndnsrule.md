@@ -2,15 +2,15 @@
 title: Tipo de recurso vpnDnsRule
 description: Definição da Regra DNS vpn.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 1277bb254a9485bc2adc26859185adfe5d22ad5b
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: e034016fe3a6eff5d84db1421e5e6e80d1f70be3
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58793870"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59081210"
 ---
 # <a name="vpndnsrule-resource-type"></a>Tipo de recurso vpnDnsRule
 
@@ -26,8 +26,8 @@ Definição da Regra DNS vpn.
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |nome|Cadeia de caracteres|Nome.|
-|servers|Coleção de cadeias de caracteres|Servidores.|
-|proxyServerUri|Cadeia de caracteres|Proxy Server Uri.|
+|servers|String collection|Servidores.|
+|proxyServerUri|String|Proxy Server Uri.|
 |autoTrigger|Boleano|Conecte-se automaticamente à VPN quando o dispositivo se conectar a esse domínio: False padrão.|
 |persistent|Boleano|Mantenha essa regra ativa mesmo quando a VPN não estiver conectada: False padrão|
 

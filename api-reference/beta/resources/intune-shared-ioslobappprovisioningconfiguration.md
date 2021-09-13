@@ -2,15 +2,15 @@
 title: Tipo de recurso iosLobAppProvisioningConfiguration
 description: Este tópico fornece descrições dos métodos, propriedades e relações declarados expostos pelo recurso Configuração de Provisionamento de Aplicativos do iOS Lob.
 author: rolyon
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: fe93705e741d30e9ef22a89b4984efb6c1d25049
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: ff3425d1d9bb4de6e51c6310a28d182dfbed654b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58782914"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59054237"
 ---
 # <a name="ioslobappprovisioningconfiguration-resource-type"></a>Tipo de recurso iosLobAppProvisioningConfiguration
 
@@ -28,7 +28,7 @@ Este tópico fornece descrições dos métodos, propriedades e relações declar
 |[Listar iosLobAppProvisioningConfigurations](../api/intune-shared-ioslobappprovisioningconfiguration-list.md)|[Coleção iosLobAppProvisioningConfiguration](../resources/intune-shared-ioslobappprovisioningconfiguration.md)|Listar propriedades e relações dos [objetos iosLobAppProvisioningConfiguration.](../resources/intune-shared-ioslobappprovisioningconfiguration.md)|
 |[Obter iosLobAppProvisioningConfiguration](../api/intune-shared-ioslobappprovisioningconfiguration-get.md)|[iosLobAppProvisioningConfiguration](../resources/intune-shared-ioslobappprovisioningconfiguration.md)|Leia propriedades e relações do [objeto iosLobAppProvisioningConfiguration.](../resources/intune-shared-ioslobappprovisioningconfiguration.md)|
 |[Criar iosLobAppProvisioningConfiguration](../api/intune-shared-ioslobappprovisioningconfiguration-create.md)|[iosLobAppProvisioningConfiguration](../resources/intune-shared-ioslobappprovisioningconfiguration.md)|Crie um novo [objeto iosLobAppProvisioningConfiguration.](../resources/intune-shared-ioslobappprovisioningconfiguration.md)|
-|[Excluir iosLobAppProvisioningConfiguration](../api/intune-shared-ioslobappprovisioningconfiguration-delete.md)|Nenhum(a)|Exclui um [iosLobAppProvisioningConfiguration](../resources/intune-shared-ioslobappprovisioningconfiguration.md).|
+|[Excluir iosLobAppProvisioningConfiguration](../api/intune-shared-ioslobappprovisioningconfiguration-delete.md)|Nenhum|Exclui um [iosLobAppProvisioningConfiguration](../resources/intune-shared-ioslobappprovisioningconfiguration.md).|
 |[Atualizar iosLobAppProvisioningConfiguration](../api/intune-shared-ioslobappprovisioningconfiguration-update.md)|[iosLobAppProvisioningConfiguration](../resources/intune-shared-ioslobappprovisioningconfiguration.md)|Atualize as propriedades de [um objeto iosLobAppProvisioningConfiguration.](../resources/intune-shared-ioslobappprovisioningconfiguration.md)|
 |**Aplicativos**|
 |[atribuir ação](../api/intune-shared-ioslobappprovisioningconfiguration-assign.md)|Nenhuma|Ainda não documentado|
@@ -42,9 +42,9 @@ Este tópico fornece descrições dos métodos, propriedades e relações declar
 |expirationDateTime|DateTimeOffset|Data e hora opcionais de expiração do perfil.|
 |payloadFileName|Cadeia de caracteres|Nome do arquivo de carga (*.mobileprovision | *.xml).|
 |payload|Binária|Carga. (Matriz de bytes codificados em UTF8)|
-|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de Marcas de Escopo para essa entidade de configuração de provisionamento de aplicativos LOB do iOS.|
+|roleScopeTagIds|String collection|Lista de Marcas de Escopo para essa entidade de configuração de provisionamento de aplicativos LOB do iOS.|
 |createdDateTime|DateTimeOffset|DateTime em que o objeto foi criado.|
-|descrição|Cadeia de caracteres|Descrição fornecida pelo administrador da Configuração do dispositivo.|
+|description|Cadeia de caracteres|Descrição fornecida pelo administrador da Configuração do dispositivo.|
 |lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto.|
 |displayName|Cadeia de caracteres|O administrador forneceu o nome da Configuração do dispositivo.|
 |versão|Int32|Versão da configuração do dispositivo.|

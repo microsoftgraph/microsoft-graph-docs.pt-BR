@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso skypeForBusinessPeerToPeerActivityCounts
 description: Veja a seguir uma representação JSON do recurso.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: ''
 author: kszb
-ms.openlocfilehash: ab5e3d15ecb8bfb9d142acb8920f63e6ee6694ced512d54b342cc3de6307978f
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: ccd56821a68d324a646c0e437b5ededbd5eebb34
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54147879"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59053879"
 ---
 # <a name="skypeforbusinesspeertopeeractivitycounts-resource-type"></a>Tipo de recurso skypeForBusinessPeerToPeerActivityCounts
 
@@ -27,7 +27,7 @@ Namespace: microsoft.graph
 | fileTransfer      | Int64  |
 | reportRefreshDate | Data   |
 | reportDate        | Data   |
-| reportPeriod      | Cadeia de caracteres |
+| reportPeriod      | Cadeia de Caracteres |
 
 ## <a name="json-representation"></a>Representação JSON
 

@@ -2,15 +2,15 @@
 title: Excluir windowsAutopilotDeploymentProfileAssignment
 description: Exclui um windowsAutopilotDeploymentProfileAssignment.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 591211329e6966b25af8f8d21bc60118b79e0eb3
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: c21598d7b800795875d4d2a511c269125929ebc8
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58783061"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59082359"
 ---
 # <a name="delete-windowsautopilotdeploymentprofileassignment"></a>Excluir windowsAutopilotDeploymentProfileAssignment
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementServiceConfig.ReadWrite.All|
+|Aplicativo|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {

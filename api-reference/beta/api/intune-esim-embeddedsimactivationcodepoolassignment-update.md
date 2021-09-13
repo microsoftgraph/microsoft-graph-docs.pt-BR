@@ -2,15 +2,15 @@
 title: Atualizar embeddedSIMActivationCodePoolAssignment
 description: Atualize as propriedades de um objeto EMBEDDEDSIMActivationCodePoolAssignment incorporado.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2eafef8a4669919300f8edf92281b359627650f2
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 1ca23a48a87eb5a544bed95292bbb6c32c20f185
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58783054"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59042057"
 ---
 # <a name="update-embeddedsimactivationcodepoolassignment"></a>Atualizar embeddedSIMActivationCodePoolAssignment
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {

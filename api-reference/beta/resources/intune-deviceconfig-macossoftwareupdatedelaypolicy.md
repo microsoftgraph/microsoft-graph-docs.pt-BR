@@ -2,15 +2,15 @@
 title: Tipo de número macOSSoftwareUpdateDelayPolicy
 description: Número de sinalizador para determinar se as atualizações de software de atraso para macOS são demoradas.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 16204557d18024d40336b0f73a401141bf48c01a
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 18ce0f39150b4b551b33f7c13dfc96817237617b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58791519"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59054503"
 ---
 # <a name="macossoftwareupdatedelaypolicy-enum-type"></a>Tipo de número macOSSoftwareUpdateDelayPolicy
 

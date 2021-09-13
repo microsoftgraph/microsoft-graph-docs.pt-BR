@@ -2,15 +2,15 @@
 title: Tipo de número windows10DeviceModeType
 description: Windows 10 Tipo de modo de dispositivo.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 3d4adfc514e2fbc4535771a7eeda7efd39998e13
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 94bab968c68bcb2f8f125ca9bc180cfb2c1ed7c7
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58821659"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59081147"
 ---
 # <a name="windows10devicemodetype-enum-type"></a>Tipo de número windows10DeviceModeType
 

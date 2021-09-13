@@ -2,15 +2,15 @@
 title: Tipo de recurso companyPortalBlockedAction
 description: Ações bloqueadas no portal da empresa de acordo com tipos de propriedade de plataforma e dispositivo
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 099f0d5feaa5710cf4d78c3af006d0218c523fa1
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: a8b04ce4697d2ff24f28644908cf12764f8bd3d6
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58805693"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59039193"
 ---
 # <a name="companyportalblockedaction-resource-type"></a>Tipo de recurso companyPortalBlockedAction
 

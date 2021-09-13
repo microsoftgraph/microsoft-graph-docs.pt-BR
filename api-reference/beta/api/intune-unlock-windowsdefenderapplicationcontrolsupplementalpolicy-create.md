@@ -2,15 +2,15 @@
 title: Criar windowsDefenderApplicationControlSupplementalPolicy
 description: Crie um novo objeto windowsDefenderApplicationControlSupplementalPolicy.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5f0513640fa50def7c08aa7d4980713c47e4652c
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 819b2609e6412031525f71eec6a55992652f90c5
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58807339"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59054839"
 ---
 # <a name="create-windowsdefenderapplicationcontrolsupplementalpolicy"></a>Criar windowsDefenderApplicationControlSupplementalPolicy
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementApps.ReadWrite.All|
+|Aplicativo|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -55,13 +55,13 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar windowsD
 |:---|:---|:---|
 |id|Cadeia de caracteres|A chave para a política suplementar WindowsDefenderApplicationControl.|
 |displayName|Cadeia de caracteres|O nome de exibição da política suplementar WindowsDefenderApplicationControl.|
-|descrição|Cadeia de caracteres|A descrição da política suplementar WindowsDefenderApplicationControl.|
+|description|Cadeia de caracteres|A descrição da política suplementar WindowsDefenderApplicationControl.|
 |conteúdo|Binário|O conteúdo da política suplementar WindowsDefenderApplicationControl no formato de matriz de byte.|
-|contentFileName|Cadeia de caracteres|O nome do arquivo do conteúdo da política suplementar WindowsDefenderApplicationControl.|
+|contentFileName|Cadeia de Caracteres|O nome do arquivo do conteúdo da política suplementar WindowsDefenderApplicationControl.|
 |versão|String|A versão da política suplementar WindowsDefenderApplicationControl.|
 |creationDateTime|DateTimeOffset|A data e a hora em que a política suplementar WindowsDefenderApplicationControl foi carregada.|
 |lastModifiedDateTime|DateTimeOffset|A data e a hora em que a política suplementar WindowsDefenderApplicationControl foi modificada pela última vez.|
-|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de Marcas de Escopo para esta entidade de política suplementar WindowsDefenderApplicationControl.|
+|roleScopeTagIds|String collection|Lista de Marcas de Escopo para esta entidade de política suplementar WindowsDefenderApplicationControl.|
 
 
 

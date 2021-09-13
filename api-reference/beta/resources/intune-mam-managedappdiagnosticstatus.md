@@ -2,15 +2,15 @@
 title: Tipo de recurso managedAppDiagnosticStatus
 description: Representa o status de diagnóstico.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: eb78d1abb2a4560f4945c034e32f8b83ef1d1d9b
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: c4e74eac08308f656a61f0e82fb92f7cd06ba3a4
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58782921"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59046733"
 ---
 # <a name="managedappdiagnosticstatus-resource-type"></a>Tipo de recurso managedAppDiagnosticStatus
 

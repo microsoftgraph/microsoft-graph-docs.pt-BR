@@ -2,15 +2,15 @@
 title: Tipo de recurso windowsAutopilotDeploymentProfile
 description: Windows Autopilot Deployment Perfil
 author: rolyon
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 36fed1e15acd0f3e8a2524ab01dc8e7fd3d80e21
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 18185ef266511aa10e11fe2f5343069fc4d5d4c1
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58787206"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59051080"
 ---
 # <a name="windowsautopilotdeploymentprofile-resource-type"></a>Tipo de recurso windowsAutopilotDeploymentProfile
 
@@ -35,17 +35,17 @@ Windows Autopilot Deployment Perfil
 |:---|:---|:---|
 |id|Cadeia de caracteres|Chave de Perfil|
 |displayName|Cadeia de caracteres|Nome do perfil|
-|descrição|Cadeia de caracteres|Descrição do perfil|
+|description|Cadeia de caracteres|Descrição do perfil|
 |idioma|Cadeia de caracteres|Idioma configurado no dispositivo|
 |createdDateTime|DateTimeOffset|Tempo de criação de perfil|
 |lastModifiedDateTime|DateTimeOffset|Tempo de última modificação do perfil|
 |outOfBoxExperienceSettings|[outOfBoxExperienceSettings](../resources/intune-enrollment-outofboxexperiencesettings.md)|Configuração de experiência in-locar|
 |enrollmentStatusScreenSettings|[windowsEnrollmentStatusScreenSettings](../resources/intune-enrollment-windowsenrollmentstatusscreensettings.md)|Configuração da tela de status do registro|
 |extractHardwareHash|Boleano|Extração de HardwareHash para o perfil|
-|deviceNameTemplate|Cadeia de caracteres|O modelo usado para nomear o Dispositivo AutoPilot. Pode ser um texto personalizado e também pode conter o número de série do dispositivo ou um número gerado aleatoriamente. O comprimento total do texto gerado pelo modelo não pode ter mais de 15 caracteres.|
+|deviceNameTemplate|Cadeia de Caracteres|O modelo usado para nomear o Dispositivo AutoPilot. Pode ser um texto personalizado e também pode conter o número de série do dispositivo ou um número gerado aleatoriamente. O comprimento total do texto gerado pelo modelo não pode ter mais de 15 caracteres.|
 |deviceType|[windowsAutopilotDeviceType](../resources/intune-enrollment-windowsautopilotdevicetype.md)|O tipo de dispositivo AutoPilot ao qual esse perfil é aplicável. Os valores possíveis são: `windowsPc` e `surfaceHub2`.|
 |enableWhiteGlove|Boleano|Habilitar o Autopilot White Glove para o perfil.|
-|roleScopeTagIds|Coleção de cadeias de caracteres|Marcas de escopo para o perfil.|
+|roleScopeTagIds|Conjunto de cadeias de caracteres|Marcas de escopo para o perfil.|
 
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|

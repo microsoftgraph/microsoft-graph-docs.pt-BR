@@ -2,15 +2,15 @@
 title: Tipo de recurso windowsHealthMonitoringConfiguration
 description: Windows configuração de monitoramento de saúde do dispositivo
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d3bd57fc1cc6da6a623a8fd28fd86c5b0e11277a
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 3e00acfb7ed49ff3e20e203d00a1b5d3916526cb
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58751927"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59081098"
 ---
 # <a name="windowshealthmonitoringconfiguration-resource-type"></a>Tipo de recurso windowsHealthMonitoringConfiguration
 
@@ -31,26 +31,26 @@ Herda de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md
 |[Listar windowsHealthMonitoringConfigurations](../api/intune-deviceconfig-windowshealthmonitoringconfiguration-list.md)|[coleção windowsHealthMonitoringConfiguration](../resources/intune-deviceconfig-windowshealthmonitoringconfiguration.md)|Listar propriedades e relações dos [objetos windowsHealthMonitoringConfiguration.](../resources/intune-deviceconfig-windowshealthmonitoringconfiguration.md)|
 |[Obter windowsHealthMonitoringConfiguration](../api/intune-deviceconfig-windowshealthmonitoringconfiguration-get.md)|[windowsHealthMonitoringConfiguration](../resources/intune-deviceconfig-windowshealthmonitoringconfiguration.md)|Leia propriedades e relações do [objeto windowsHealthMonitoringConfiguration.](../resources/intune-deviceconfig-windowshealthmonitoringconfiguration.md)|
 |[Criar windowsHealthMonitoringConfiguration](../api/intune-deviceconfig-windowshealthmonitoringconfiguration-create.md)|[windowsHealthMonitoringConfiguration](../resources/intune-deviceconfig-windowshealthmonitoringconfiguration.md)|Crie um novo [objeto windowsHealthMonitoringConfiguration.](../resources/intune-deviceconfig-windowshealthmonitoringconfiguration.md)|
-|[Excluir windowsHealthMonitoringConfiguration](../api/intune-deviceconfig-windowshealthmonitoringconfiguration-delete.md)|Nenhum(a)|Exclui um [windowsHealthMonitoringConfiguration](../resources/intune-deviceconfig-windowshealthmonitoringconfiguration.md).|
+|[Excluir windowsHealthMonitoringConfiguration](../api/intune-deviceconfig-windowshealthmonitoringconfiguration-delete.md)|Nenhum|Exclui um [windowsHealthMonitoringConfiguration](../resources/intune-deviceconfig-windowshealthmonitoringconfiguration.md).|
 |[Atualizar windowsHealthMonitoringConfiguration](../api/intune-deviceconfig-windowshealthmonitoringconfiguration-update.md)|[windowsHealthMonitoringConfiguration](../resources/intune-deviceconfig-windowshealthmonitoringconfiguration.md)|Atualize as propriedades de um [objeto windowsHealthMonitoringConfiguration.](../resources/intune-deviceconfig-windowshealthmonitoringconfiguration.md)|
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Chave da entidade. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|id|String|Chave da entidade. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de marcas de escopo para esta instância entity. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|supportsScopeTags|Boleano|Indica se a Configuração de Dispositivo subjacente dá suporte ou não à atribuição de marcas de escopo. A atribuição à propriedade ScopeTags não é permitida quando esse valor é falso e as entidades não estarão visíveis para usuários com escopo. Isso ocorre para políticas herdadas criadas no Silverlight e podem ser resolvidas excluindo e recriando a política no Portal do Azure. Essa propriedade é somente leitura. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|roleScopeTagIds|Conjunto de cadeias de caracteres|Lista de marcas de escopo para esta instância entity. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|supportsScopeTags|Booliano|Indica se a Configuração de Dispositivo subjacente dá suporte ou não à atribuição de marcas de escopo. A atribuição à propriedade ScopeTags não é permitida quando esse valor é falso e as entidades não estarão visíveis para usuários com escopo. Isso ocorre para políticas herdadas criadas no Silverlight e podem ser resolvidas excluindo e recriando a política no Portal do Azure. Essa propriedade é somente leitura. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|A aplicabilidade da edição do sistema operacional para esta Política. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|A regra de aplicabilidade da versão do sistema operacional para esta Política. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|A regra de aplicabilidade do modo de dispositivo para esta Política. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|DateTime em que o objeto foi criado. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|descrição|Cadeia de caracteres|O administrador forneceu a descrição da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|displayName|Cadeia de caracteres|O administrador forneceu o nome da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|description|Cadeia de caracteres|O administrador forneceu a descrição da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|displayName|String|O administrador forneceu o nome da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |versão|Int32|Versão da configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |allowDeviceHealthMonitoring|[enablement](../resources/intune-shared-enablement.md)|Habilita o monitoramento de saúde do dispositivo no dispositivo. Os valores possíveis são: `notConfigured`, `enabled`, `disabled`.|
 |configDeviceHealthMonitoringScope|[windowsHealthMonitoringScope](../resources/intune-deviceconfig-windowshealthmonitoringscope.md)|Especifica o conjunto de eventos coletados do dispositivo onde o monitoramento de saúde está habilitado. Os valores possíveis são: `undefined`, `healthMonitoring`, `bootPerformance`, `windowsUpdates`.|
-|configDeviceHealthMonitoringCustomScope|Cadeia de caracteres|Especifica o conjunto personalizado de eventos coletados do dispositivo em que o monitoramento de saúde está habilitado|
+|configDeviceHealthMonitoringCustomScope|String|Especifica o conjunto personalizado de eventos coletados do dispositivo em que o monitoramento de saúde está habilitado|
 
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|

@@ -2,15 +2,15 @@
 title: Tipo de recurso userExperienceAnalyticsMetricHistory
 description: Histórico métrico da análise da experiência do usuário.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0a62e2dbcfe55154ee5d264498bceaf37ef48a9d
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: b0d63d65992a1034587b63b96d2c694701de93dc
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58782942"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59054363"
 ---
 # <a name="userexperienceanalyticsmetrichistory-resource-type"></a>Tipo de recurso userExperienceAnalyticsMetricHistory
 
@@ -28,7 +28,7 @@ Histórico métrico da análise da experiência do usuário.
 |[Listar userExperienceAnalyticsMetricHistories](../api/intune-devices-userexperienceanalyticsmetrichistory-list.md)|[coleção userExperienceAnalyticsMetricHistory](../resources/intune-devices-userexperienceanalyticsmetrichistory.md)|Listar propriedades e relações dos [objetos userExperienceAnalyticsMetricHistory.](../resources/intune-devices-userexperienceanalyticsmetrichistory.md)|
 |[Obter userExperienceAnalyticsMetricHistory](../api/intune-devices-userexperienceanalyticsmetrichistory-get.md)|[userExperienceAnalyticsMetricHistory](../resources/intune-devices-userexperienceanalyticsmetrichistory.md)|Leia propriedades e relações do [objeto userExperienceAnalyticsMetricHistory.](../resources/intune-devices-userexperienceanalyticsmetrichistory.md)|
 |[Criar userExperienceAnalyticsMetricHistory](../api/intune-devices-userexperienceanalyticsmetrichistory-create.md)|[userExperienceAnalyticsMetricHistory](../resources/intune-devices-userexperienceanalyticsmetrichistory.md)|Crie um novo [objeto userExperienceAnalyticsMetricHistory.](../resources/intune-devices-userexperienceanalyticsmetrichistory.md)|
-|[Excluir userExperienceAnalyticsMetricHistory](../api/intune-devices-userexperienceanalyticsmetrichistory-delete.md)|Nenhum(a)|Exclui um [userExperienceAnalyticsMetricHistory](../resources/intune-devices-userexperienceanalyticsmetrichistory.md).|
+|[Excluir userExperienceAnalyticsMetricHistory](../api/intune-devices-userexperienceanalyticsmetrichistory-delete.md)|Nenhum|Exclui um [userExperienceAnalyticsMetricHistory](../resources/intune-devices-userexperienceanalyticsmetrichistory.md).|
 |[Atualizar userExperienceAnalyticsMetricHistory](../api/intune-devices-userexperienceanalyticsmetrichistory-update.md)|[userExperienceAnalyticsMetricHistory](../resources/intune-devices-userexperienceanalyticsmetrichistory.md)|Atualize as propriedades de [um objeto userExperienceAnalyticsMetricHistory.](../resources/intune-devices-userexperienceanalyticsmetrichistory.md)|
 
 ## <a name="properties"></a>Propriedades
@@ -37,7 +37,7 @@ Histórico métrico da análise da experiência do usuário.
 |id|Cadeia de caracteres|O identificador exclusivo do histórico métrico de análise da experiência do usuário.|
 |deviceId|Cadeia de caracteres|A ID do dispositivo de análise de experiência do usuário.|
 |metricDateTime|DateTimeOffset|A data de data métrica da análise da experiência do usuário.|
-|metricType|Cadeia de caracteres|O tipo métrico de análise de experiência do usuário.|
+|metricType|Cadeia de Caracteres|O tipo métrico de análise de experiência do usuário.|
 
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|

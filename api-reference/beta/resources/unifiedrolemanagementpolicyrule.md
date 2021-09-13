@@ -2,15 +2,15 @@
 title: Tipo de recurso unifiedRoleManagementPolicyRule
 description: Um unifiedRoleManagementPolicyRule especifica a regra associada a uma política de gerenciamento de função. É abstrato.
 author: shauliu1
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 99dc73128cbaadce2bbd61d8f704ce20e2a60d69
-ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
+ms.openlocfilehash: b2d75b5ced7ca80bbbf9de4cb0feee2456e3eada
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2021
-ms.locfileid: "58453874"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59056988"
 ---
 # <a name="unifiedrolemanagementpolicyrule-resource-type"></a>Tipo de recurso unifiedRoleManagementPolicyRule
 

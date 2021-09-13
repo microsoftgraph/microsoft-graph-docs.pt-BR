@@ -2,15 +2,15 @@
 title: Atualizar deviceCompliancePolicyDeviceStateSummary
 description: Atualizar as propriedades de um objeto deviceCompliancePolicyDeviceStateSummary.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: de3235bd16fd30f7a38cc6b527d48c84e19b5ddb
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 574b515fafe4fa81dcda1a55f1d05fbc4773bd85
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58792109"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59052381"
 ---
 # <a name="update-devicecompliancepolicydevicestatesummary"></a>Atualizar deviceCompliancePolicyDeviceStateSummary
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {

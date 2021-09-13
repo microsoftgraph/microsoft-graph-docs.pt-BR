@@ -2,15 +2,15 @@
 title: Respostas de Graph de erro da API de Segurança da Microsoft
 description: Os erros na API de Segurança do Microsoft Graph são retornados usando o código de status de Conteúdo Parcial HTTP 206 padrão e são entregues por meio de um cabeçalho de aviso.
 author: preetikr
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: security
 doc_type: conceptualPageType
-ms.openlocfilehash: ff8ef9380df104e0bfb552d941c660ff2c2e6e4654842940cf6b3826510def42
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 674ccf9817d01f48a0db40906ba2cfd656ff3dfe
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54212980"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59080566"
 ---
 # <a name="microsoft-graph-security-api-error-responses"></a>Respostas de Graph de erro da API de Segurança da Microsoft
 
@@ -68,7 +68,7 @@ O `$top` parâmetro de consulta OData tem um limite de 1000 alertas. É recomend
 
 Uma solução alternativa para esse limite é usar o parâmetro de consulta OData com a entidade de alerta da API de Segurança do Microsoft Graph, usando e substituindo o valor dateTime pelo último `$filter` `eventDateTime` alerta `?$filter=eventDateTime gt {YYYY-MM-DDT00:00:00.000Z}` (1500th). Você também pode definir um intervalo para `eventDateTime` ; por exemplo, `alerts?$filter=eventDateTime **gt** 2018-11-**11**T00:00:00.000Z&eventDateTime **lt** 2018-11-**12**T00:00:00.000Z` .
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Também confira
 
 Se você estiver tendo problemas com autorização, consulte Autorização e a API Graph [Segurança da Microsoft.](/graph/security-authorization)
 

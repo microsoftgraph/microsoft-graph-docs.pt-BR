@@ -2,15 +2,15 @@
 title: Tipo de recurso windowsDomainJoinConfiguration
 description: Windows Configuração do dispositivo de Junção de Domínio.
 author: rolyon
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9c929dfa6ceb79d249845a868305f6a9307c48c3cff9af98d81e011d54c44aed
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: a061a2254625253a599b078f1b3aceb7cf0013e3
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54160874"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59051052"
 ---
 # <a name="windowsdomainjoinconfiguration-resource-type"></a>Tipo de recurso windowsDomainJoinConfiguration
 
@@ -38,16 +38,16 @@ Herda de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md
 |:---|:---|:---|
 |id|Cadeia de caracteres|Chave da entidade. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |**Configuração do dispositivo**|
-|activeDirectoryDomainName|Cadeia de caracteres|Nome de domínio do Active Directory para ingressar.|
-|computerNameStaticPrefix|Cadeia de caracteres|Prefixo fixo a ser usado para nome do computador.|
+|activeDirectoryDomainName|Cadeia de Caracteres|Nome de domínio do Active Directory para ingressar.|
+|computerNameStaticPrefix|Cadeia de Caracteres|Prefixo fixo a ser usado para nome do computador.|
 |computerNameSuffixRandomCharCount|Int32|Caracteres gerados dinamicamente usados como sufixo para o nome do computador. Valores válidos de 3 a 14|
 |createdDateTime|DateTimeOffset|DateTime em que o objeto foi criado. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |description|Cadeia de caracteres|O administrador forneceu a descrição da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |displayName|Cadeia de caracteres|O administrador forneceu o nome da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|organizationalUnit|Cadeia de caracteres|Unidade organizacional (OU) onde a conta do computador será criada. Se esse parâmetro for NULL, o contêiner de objeto de computador conhecido será usado como publicado no domínio.|
+|organizationalUnit|Cadeia de Caracteres|Unidade organizacional (OU) onde a conta do computador será criada. Se esse parâmetro for NULL, o contêiner de objeto de computador conhecido será usado como publicado no domínio.|
 |roleScopeTagIds|String collection|Lista de marcas de escopo para esta instância entity. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|supportsScopeTags|Boolean|Indica se a Configuração de Dispositivo subjacente dá suporte ou não à atribuição de marcas de escopo. A atribuição à propriedade ScopeTags não é permitida quando esse valor é falso e as entidades não estarão visíveis para usuários com escopo. Isso ocorre para políticas herdadas criadas no Silverlight e podem ser resolvidas excluindo e recriando a política no Portal do Azure. Essa propriedade é somente leitura. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|supportsScopeTags|Boleano|Indica se a Configuração de Dispositivo subjacente dá suporte ou não à atribuição de marcas de escopo. A atribuição à propriedade ScopeTags não é permitida quando esse valor é falso e as entidades não estarão visíveis para usuários com escopo. Isso ocorre para políticas herdadas criadas no Silverlight e podem ser resolvidas excluindo e recriando a política no Portal do Azure. Essa propriedade é somente leitura. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |versão|Int32|Versão da configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 
 ## <a name="relationships"></a>Relações
@@ -85,7 +85,6 @@ Veja a seguir uma representação JSON do recurso.  Observação: o objeto respo
   "activeDirectoryDomainName": "String"
 }
 ```
-
 
 
 

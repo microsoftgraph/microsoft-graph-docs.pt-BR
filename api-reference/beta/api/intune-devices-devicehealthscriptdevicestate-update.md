@@ -2,15 +2,15 @@
 title: Atualizar deviceHealthScriptDeviceState
 description: Atualize as propriedades de um objeto deviceHealthScriptDeviceState.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f204831de5ae743e2c7d8621efd2af16e0ee959c
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 84afe17183b25fc476b9be63e50acb4e3f45ef2c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58815971"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59052255"
 ---
 # <a name="update-devicehealthscriptdevicestate"></a>Atualizar deviceHealthScriptDeviceState
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
+|Aplicativo|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -58,13 +58,13 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [deviceH
 |lastStateUpdateDateTime|DateTimeOffset|O último período de data/hora de quando o script de saúde do dispositivo foi executado|
 |expectedStateUpdateDateTime|DateTimeOffset|O próximo horário de quando o script de saúde do dispositivo deve ser executado|
 |lastSyncDateTime|DateTimeOffset|A última vez que a Extensão de Managment do Intune foi sincronizada com o Intune|
-|preRemediationDetectionScriptOutput|Cadeia de caracteres|Saída do script de detecção antes da correção|
-|preRemediationDetectionScriptError|Cadeia de caracteres|Erro do script de detecção antes da correção|
-|remediationScriptError|Cadeia de caracteres|Saída de erro do script de correção|
-|postRemediationDetectionScriptOutput|Cadeia de caracteres|Saída de script de detecção após correção|
-|postRemediationDetectionScriptError|Cadeia de caracteres|Erro do script de detecção após a correção|
+|preRemediationDetectionScriptOutput|Cadeia de Caracteres|Saída do script de detecção antes da correção|
+|preRemediationDetectionScriptError|Cadeia de Caracteres|Erro do script de detecção antes da correção|
+|remediationScriptError|Cadeia de Caracteres|Saída de erro do script de correção|
+|postRemediationDetectionScriptOutput|Cadeia de Caracteres|Saída de script de detecção após correção|
+|postRemediationDetectionScriptError|Cadeia de Caracteres|Erro do script de detecção após a correção|
 |remediationState|[remediationState](../resources/intune-devices-remediationstate.md)|Estado de correção da última execução do script de saúde do dispositivo. Os valores possíveis são: `unknown`, `skipped`, `success`, `remediationFailed`, `scriptError`.|
-|assignmentFilterIds|Coleção de cadeias de caracteres|Uma lista das IDs de filtro de atribuição usadas para avaliação de aplicabilidade do script de saúde|
+|assignmentFilterIds|String collection|Uma lista das IDs de filtro de atribuição usadas para avaliação de aplicabilidade do script de saúde|
 
 
 

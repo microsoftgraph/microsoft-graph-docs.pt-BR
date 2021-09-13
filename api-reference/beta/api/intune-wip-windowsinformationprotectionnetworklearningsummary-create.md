@@ -2,15 +2,15 @@
 title: Criar windowsInformationProtectionNetworkLearningSummary
 description: Criar um novo objeto windowsInformationProtectionNetworkLearningSummary.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 04556b8486a9ef4c8f160073f28bbafb5f5d62e9
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 4b759aeb22783807c9cff934372b53d8a29c6840
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58783600"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59051786"
 ---
 # <a name="create-windowsinformationprotectionnetworklearningsummary"></a>Criar windowsInformationProtectionNetworkLearningSummary
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementApps.ReadWrite.All|
+|Aplicativo|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {

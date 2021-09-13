@@ -2,15 +2,15 @@
 title: Excluir deviceManagementConfigurationPolicyPolicySetItem
 description: Exclui um deviceManagementConfigurationPolicyPolicySetItem.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 79addb35d09b7d5aef663d3a4339d15c301753b5
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 3bee80fbdab230c7573049dc843cd2d5efd77be9
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58788735"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59041581"
 ---
 # <a name="delete-devicemanagementconfigurationpolicypolicysetitem"></a>Excluir deviceManagementConfigurationPolicyPolicySetItem
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All|
+|Aplicativo|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {

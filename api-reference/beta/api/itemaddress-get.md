@@ -1,21 +1,21 @@
 ---
-title: Get endereço
-description: Leia as propriedades e os relacionamentos de um objeto item.
-localization_priority: Normal
+title: Obter itemAddress
+description: Leia as propriedades e as relações de um objeto itemAddress.
+ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 11759bcc9d8529e14ef44df0de2932debea6ce1a
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 0d92fabadda8c9eaac4dbc89f0540517a2a0ad3a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48969971"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59058347"
 ---
-# <a name="get-itemaddress"></a>Get endereço
+# <a name="get-itemaddress"></a>Obter itemAddress
 Namespace: microsoft.graph
 
-Leia as propriedades e os relacionamentos de [um objeto](../resources/itemaddress.md) item.
+Leia as propriedades e as relações de um [objeto itemAddress.](../resources/itemaddress.md)
 
 ## <a name="permissions"></a>Permissões
 
@@ -23,9 +23,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)                                      |
 |:---------------------------------------|:---------------------------------------------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | User. Read, User. ReadWrite, User. ReadBasic. All, User. Read. All, User. ReadWrite. All |
-| Delegado (conta pessoal da Microsoft) | User. Read, User. ReadWrite, User. ReadBasic. All, User. Read. All, User. ReadWrite. All |
-| Application                            | User. ReadBasic. All, User. Read. All, User. ReadWrite. All                            |
+| Delegado (conta corporativa ou de estudante)     | User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All |
+| Delegado (conta pessoal da Microsoft) | User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All |
+| Aplicativo                            | User.ReadBasic.All, User.Read.All, User.ReadWrite.All                            |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -40,7 +40,7 @@ GET /users/{id | userPrincipalName}/profile/addresses/{id}
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Este método dá suporte ao `$select` parâmetro de consulta. Especifique uma lista de propriedades a serem incluídas na resposta, separando-as por vírgulas. Para obter o desempenho ideal, selecione apenas o subconjunto de propriedades necessário.
+Este método dá suporte `$select` ao parâmetro de consulta. Especifique uma lista de propriedades para incluir na resposta, separando-as por vírgulas. Para obter o desempenho ideal, selecione apenas o subconjunto de propriedades necessárias.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 |Nome|Descrição|
@@ -52,7 +52,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [myAddress](../resources/itemaddress.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código `200 OK` de resposta e um objeto [itemAddress](../resources/itemaddress.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

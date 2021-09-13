@@ -2,15 +2,15 @@
 title: Tipo de recurso deviceManagementConfigurationIntegerSettingValue
 description: Valor de configuração simples
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: dec9093a39c0472715a6dc3ba0fe9ddc69987f73
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 6b13333ad830937e09c2f2f1214149fe8fa72a7b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58816279"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59054391"
 ---
 # <a name="devicemanagementconfigurationintegersettingvalue-resource-type"></a>Tipo de recurso deviceManagementConfigurationIntegerSettingValue
 

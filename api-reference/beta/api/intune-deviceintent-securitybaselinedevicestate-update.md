@@ -2,15 +2,15 @@
 title: Atualizar securityBaselineDeviceState
 description: Atualize as propriedades de um objeto securityBaselineDeviceState.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f8a6cd4cbf704542e8cd14ff4680656b373c323e
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 977fb5ef3960f856ad61080f8790b022dcaa880a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58800888"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59055028"
 ---
 # <a name="update-securitybaselinedevicestate"></a>Atualizar securityBaselineDeviceState
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -54,7 +54,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [o secur
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|Cadeia de caracteres|Identificador exclusivo da entidade|
-|managedDeviceId|Cadeia de caracteres|ID de dispositivo do Intune|
+|managedDeviceId|Cadeia de Caracteres|ID de dispositivo do Intune|
 |deviceDisplayName|Cadeia de caracteres|Nome de exibição do dispositivo|
 |userPrincipalName|Cadeia de caracteres|Nome UPN|
 |state|[securityBaselineComplianceState](../resources/intune-deviceintent-securitybaselinecompliancestate.md)|Estado de conformidade da linha de base de segurança. Os possíveis valores são: `unknown`, `secure`, `notApplicable`, `notSecure`, `error`, `conflict`.|

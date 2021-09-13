@@ -2,15 +2,15 @@
 title: Excluir aospDeviceOwnerDeviceConfiguration
 description: Exclui um aospDeviceOwnerDeviceConfiguration.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 75c7256c47aa8241a3f8a096b549601c63059915
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 426204efae0296d9a444434f175e25865404bdfd
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58788868"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59055322"
 ---
 # <a name="delete-aospdeviceownerdeviceconfiguration"></a>Excluir aospDeviceOwnerDeviceConfiguration
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {

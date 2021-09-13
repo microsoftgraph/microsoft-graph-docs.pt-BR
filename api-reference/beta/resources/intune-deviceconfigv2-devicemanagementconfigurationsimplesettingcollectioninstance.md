@@ -2,15 +2,15 @@
 title: Tipo de recurso deviceManagementConfigurationSimpleSettingCollectionInstance
 description: Instância de conjunto de configurações simples
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: c5e75c523cf42402c65222f394d8d8acfa1bac71
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 4c2efa97592bdeebb9180510398792f6a6b2f837
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58788188"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59075323"
 ---
 # <a name="devicemanagementconfigurationsimplesettingcollectioninstance-resource-type"></a>Tipo de recurso deviceManagementConfigurationSimpleSettingCollectionInstance
 
@@ -28,7 +28,7 @@ Herda [de deviceManagementConfigurationSettingInstance](../resources/intune-devi
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|settingDefinitionId|Cadeia de caracteres|Definição Id de definição Herdada [de deviceManagementConfigurationSettingInstance](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettinginstance.md)|
+|settingDefinitionId|String|Definição Id de definição Herdada [de deviceManagementConfigurationSettingInstance](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettinginstance.md)|
 |settingInstanceTemplateReference|[deviceManagementConfigurationSettingInstanceTemplateReference](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettinginstancetemplatereference.md)|Referência do modelo de instância de configuração Herdada [de deviceManagementConfigurationSettingInstance](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettinginstance.md)|
 |simpleSettingCollectionValue|[Coleção deviceManagementConfigurationSimpleSettingValue](../resources/intune-deviceconfigv2-devicemanagementconfigurationsimplesettingvalue.md)|Valor de instância de conjunto de configurações simples|
 

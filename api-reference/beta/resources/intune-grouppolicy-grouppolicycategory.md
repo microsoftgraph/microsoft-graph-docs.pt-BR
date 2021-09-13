@@ -2,15 +2,15 @@
 title: Tipo de recurso groupPolicyCategory
 description: A entidade de categoria armazena a categoria de uma definição de política de grupo
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: f26e83fef905525bc9218d850dcb8ef416430233
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: bd728c056576e31b37a4c105c62186f97e789fa1
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58802450"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59080958"
 ---
 # <a name="grouppolicycategory-resource-type"></a>Tipo de recurso groupPolicyCategory
 
@@ -32,8 +32,8 @@ A entidade de categoria armazena a categoria de uma definição de política de 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |displayName|Cadeia de caracteres|A id de cadeia de caracteres do nome de exibição da categoria|
-|isRoot|Boleano|Define se a categoria é uma categoria raiz|
-|id|Cadeia de caracteres|Chave da entidade.|
+|isRoot|Boolean|Define se a categoria é uma categoria raiz|
+|id|String|Chave da entidade.|
 |lastModifiedDateTime|DateTimeOffset|A data e a hora em que a entidade foi modificada pela última vez.|
 
 ## <a name="relationships"></a>Relações

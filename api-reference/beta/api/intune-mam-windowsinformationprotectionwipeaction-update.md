@@ -2,15 +2,15 @@
 title: Atualizar windowsInformationProtectionWipeAction
 description: Atualize as propriedades de um objeto windowsInformationProtectionWipeAction.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 172be9e4e189c8b87316f22177f3389dc99c5b27
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: a44c27d1b3b081dd9dcee3eacaf82e4e04bd3361
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58814690"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59034327"
 ---
 # <a name="update-windowsinformationprotectionwipeaction"></a>Atualizar windowsInformationProtectionWipeAction
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementApps.ReadWrite.All|
+|Aplicativo|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -55,9 +55,9 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [o windo
 |:---|:---|:---|
 |id|Cadeia de caracteres|Chave da entidade.|
 |status|[actionState](../resources/intune-shared-actionstate.md)|Limpar o status da ação. Os valores possíveis são: `none`, `pending`, `canceled`, `active`, `done`, `failed`, `notSupported`.|
-|targetedUserId|Cadeia de caracteres|O UserId que está sendo direcionado por essa ação de limpeza.|
-|targetedDeviceRegistrationId|Cadeia de caracteres|O DeviceRegistrationId que está sendo direcionado por essa ação de limpeza.|
-|targetedDeviceName|Cadeia de caracteres|Nome do dispositivo direcionado.|
+|targetedUserId|String|O UserId que está sendo direcionado por essa ação de limpeza.|
+|targetedDeviceRegistrationId|Cadeia de Caracteres|O DeviceRegistrationId que está sendo direcionado por essa ação de limpeza.|
+|targetedDeviceName|Cadeia de Caracteres|Nome do dispositivo direcionado.|
 |targetedDeviceMacAddress|Cadeia de caracteres|Endereço Mac do dispositivo direcionado.|
 |lastCheckInDateTime|DateTimeOffset|Última verificação no momento do dispositivo que foi direcionado por essa ação de limpeza.|
 

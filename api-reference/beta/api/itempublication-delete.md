@@ -1,22 +1,22 @@
 ---
-title: Excluir a multipúblico
-description: Exclui um objeto dopublication.
-localization_priority: Normal
+title: Excluir itemPublication
+description: Exclui um objeto itemPublication.
+ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 6e63ef86de454e63f6b90f4b9bf4ea79cfeb1222
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 99983f9f663c3d896d22df57a8f90c8fc0b84491
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48969887"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59076443"
 ---
-# <a name="delete-itempublication"></a>Excluir a multipúblico
+# <a name="delete-itempublication"></a>Excluir itemPublication
 
 Namespace: microsoft.graph
 
-Exclui um objeto [Dopublication](../resources/itempublication.md) .
+Exclui um [objeto itemPublication.](../resources/itempublication.md)
 
 ## <a name="permissions"></a>Permissões
 
@@ -24,8 +24,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)                                      |
 |:---------------------------------------|:---------------------------------------------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | User. ReadWrite, User. ReadWrite. All |
-| Delegado (conta pessoal da Microsoft) | User. ReadWrite, User. ReadWrite. All |
+| Delegado (conta corporativa ou de estudante)     | User.ReadWrite, User.ReadWrite.All |
+| Delegado (conta pessoal da Microsoft) | User.ReadWrite, User.ReadWrite.All |
 | Aplicativo                            | User.ReadWrite.All                            |
 
 ## <a name="http-request"></a>Solicitação HTTP

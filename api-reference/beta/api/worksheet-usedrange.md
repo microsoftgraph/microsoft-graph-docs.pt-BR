@@ -1,16 +1,16 @@
 ---
 title: 'Worksheet: UsedRange'
 description: O intervalo usado é o menor intervalo que abrange todas as células que têm um valor ou uma formatação atribuído a elas. Se a planilha estiver em branco, esta função retorna a célula superior esquerda.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: lumine2008
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 03b822091b2e91f7a375ab2cae1e18dc642c2819
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 5828f1c1e3e90a1299acd098e2509435543cd17a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52048859"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59051604"
 ---
 # <a name="worksheet-usedrange"></a>Worksheet: UsedRange
 
@@ -39,7 +39,7 @@ Na URL de solicitação, forneça um parâmetro de consulta opcional.
 
 | Parâmetro    | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|valuesOnly|Boolean|Opcional. Considera apenas as células com valores como células usadas (ignora a formatação).|
+|valuesOnly|Boleano|Opcional. Considera apenas as células com valores como células usadas (ignora a formatação).|
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Descrição|
@@ -87,7 +87,7 @@ GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/{id
 
 
 ##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser reduzido para facilitar a leitura.
 <!-- {
   "blockType": "response",
   "truncated": true,

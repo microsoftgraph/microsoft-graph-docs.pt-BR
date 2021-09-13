@@ -2,15 +2,15 @@
 title: Excluir androidWorkProfilePkcsCertificateProfile
 description: Exclui um androidWorkProfilePkcsCertificateProfile.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a7947831d653a5a19782199532309d8a2ce88589
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: e7c81c44e2e67655927beae340e1de1964e85795
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58805195"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59077563"
 ---
 # <a name="delete-androidworkprofilepkcscertificateprofile"></a>Excluir androidWorkProfilePkcsCertificateProfile
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {

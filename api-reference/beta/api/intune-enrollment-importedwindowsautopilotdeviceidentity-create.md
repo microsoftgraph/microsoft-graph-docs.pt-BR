@@ -2,15 +2,15 @@
 title: Criar importedWindowsAutopilotDeviceIdentity
 description: Criar um novo objeto importedWindowsAutopilotDeviceIdentity.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 23d1457b856ae50eaf48bbbb9855fbd5d211a70a
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: dbba2adca2ffa1e827cadeffd9ea61a3b42eda1c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58791337"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59082456"
 ---
 # <a name="create-importedwindowsautopilotdeviceidentity"></a>Criar importedWindowsAutopilotDeviceIdentity
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementServiceConfig.ReadWrite.All|
+|Aplicativo|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -54,10 +54,10 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar imported
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|Cadeia de caracteres|O GUID do objeto.|
-|groupTag|Cadeia de caracteres|Marca de grupo do dispositivo Windows piloto automático.|
+|groupTag|Cadeia de Caracteres|Marca de grupo do dispositivo Windows piloto automático.|
 |serialNumber|Cadeia de caracteres|Número de série do dispositivo do Windows AutoPilot.|
 |productKey|Cadeia de caracteres|Chave do produto (Product Key) do dispositivo do Windows AutoPilot.|
-|importId|Cadeia de caracteres|A ID de Importação do dispositivo Windows piloto automático.|
+|importId|Cadeia de Caracteres|A ID de Importação do dispositivo Windows piloto automático.|
 |hardwareIdentifier|Binária|Blob de hardware do dispositivo do Windows AutoPilot.|
 |state|[importedWindowsAutopilotDeviceIdentityState](../resources/intune-enrollment-importedwindowsautopilotdeviceidentitystate.md)|Estado atual do dispositivo importado.|
 |assignedUserPrincipalName|Cadeia de caracteres|UPN do usuário que o dispositivo será atribuído|

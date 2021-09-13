@@ -2,15 +2,15 @@
 title: Atualizar deviceManagementIntentUserStateSummary
 description: Atualize as propriedades de um objeto deviceManagementIntentUserStateSummary.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: daec702a32873c29bc08c96f45a499b69b6e0e3b
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: fe3280c7a7c017265a1a457f911eca1b49af18aa
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58791660"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59070703"
 ---
 # <a name="update-devicemanagementintentuserstatesummary"></a>Atualizar deviceManagementIntentUserStateSummary
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {

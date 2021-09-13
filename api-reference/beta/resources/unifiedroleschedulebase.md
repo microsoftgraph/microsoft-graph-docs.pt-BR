@@ -2,15 +2,15 @@
 title: Tipo de recurso unifiedRoleScheduleBase
 description: Propriedade base de agendamentos de função unificada que combina agendas de atribuição de função unificada e agendas de qualificação de função unificada
 author: shauliu1
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 5f6839ce6c5cf567d1c1a5c71aa494ee43c86858
-ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
+ms.openlocfilehash: b65d7d41feccfa8336ea347936433da2437f0f6b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2021
-ms.locfileid: "58454168"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59050877"
 ---
 # <a name="unifiedroleschedulebase-resource-type"></a>Tipo de recurso unifiedRoleScheduleBase
 
@@ -22,24 +22,24 @@ Propriedade base de agendamentos de função unificada que combina agendas de at
 
 | Propriedade         | Tipo           | Descrição               |
 | :--------------- | :------------- | :------------------------ |
-| appScopeId       | Cadeia de caracteres         | Identificador do escopo específico do aplicativo quando o escopo de atribuição for específico do aplicativo. O escopo de uma atribuição determina o conjunto de recursos para os quais a entidade foi concedida acesso. Os escopos do aplicativo são escopos definidos e compreendidos somente por esse aplicativo. Use `/` para escopos de aplicativos de todo o locatário. Use **directoryScopeId** para limitar o escopo a objetos de diretório específicos, por exemplo, unidades administrativas ou todos os usuários. |
+| appScopeId       | Cadeia de Caracteres         | Identificador do escopo específico do aplicativo quando o escopo de atribuição for específico do aplicativo. O escopo de uma atribuição determina o conjunto de recursos para os quais a entidade foi concedida acesso. Os escopos do aplicativo são escopos definidos e compreendidos somente por esse aplicativo. Use `/` para escopos de aplicativos de todo o locatário. Use **directoryScopeId** para limitar o escopo a objetos de diretório específicos, por exemplo, unidades administrativas ou todos os usuários. |
 | createdDateTime  | DateTimeOffset | Hora em que a agenda foi criada. |
-| createdUsing     | Cadeia de caracteres         | Identificador da roleAssignmentScheduleRequest que criou essa agenda. |
-| directoryScopeId | Cadeia de caracteres         | Identificador do objeto directory que representa o escopo da atribuição. O escopo de uma atribuição determina o conjunto de recursos para os quais a entidade foi concedida acesso. Os escopos de diretório são escopos compartilhados armazenados no diretório que são compreendidos por vários aplicativos. Use `/` para escopo de todo o locatário. Use **appScopeId** para limitar o escopo somente a um aplicativo. |
+| createdUsing     | Cadeia de Caracteres         | Identificador da roleAssignmentScheduleRequest que criou essa agenda. |
+| directoryScopeId | Cadeia de Caracteres         | Identificador do objeto directory que representa o escopo da atribuição. O escopo de uma atribuição determina o conjunto de recursos para os quais a entidade foi concedida acesso. Os escopos de diretório são escopos compartilhados armazenados no diretório que são compreendidos por vários aplicativos. Use `/` para escopo de todo o locatário. Use **appScopeId** para limitar o escopo somente a um aplicativo. |
 | id               | Cadeia de caracteres         | O identificador exclusivo para unifiedRoleAssignmentSchedule. Chave, não anulada, somente leitura. |
 | modifiedDateTime | DateTimeOffset | Última vez que a agenda foi atualizada. |
-| principalId      | Cadeia de caracteres         | Identificador da entidade à qual a atribuição está sendo concedida. Suporta `$filter` (`eq`). |
-| roleDefinitionId | Cadeia de caracteres         | Identificador do unifiedRoleDefinition para o que a atribuição se destina. Somente leitura. Suporta `$filter` (`eq`). |
+| principalId      | Cadeia de Caracteres         | Identificador da entidade à qual a atribuição está sendo concedida. Suporta `$filter` (`eq`). |
+| roleDefinitionId | Cadeia de Caracteres         | Identificador do unifiedRoleDefinition para o que a atribuição se destina. Somente leitura. Suporta `$filter` (`eq`). |
 | status           | Cadeia de caracteres         | Status do `roleAssignmentSchedule` . Pode incluir mensagens relacionadas ao `Provisioned` estado, `Revoked` como , , `Pending Provisioning` e `Pending Approval` . Suporta `$filter` (`eq`).  |
 
-## <a name="relationships"></a>Relacionamentos
+## <a name="relationships"></a>Relações
 
 | Relação   | Tipo                                                                               | Descrição               |
 | :------------- | :--------------------------------------------------------------------------------- | :------------------------ |
 | activeInstance (Preterido) | [unifiedRoleScheduleInstanceBase](../resources/unifiedrolescheduleinstancebase.md) | Depreciado. |
 | appScope       | [appScope](../resources/appscope.md)                                               | Propriedade somente leitura com detalhes do escopo específico do aplicativo quando o escopo de atribuição é específico do aplicativo. Entidade de contenção. |
-| directoryScope | [directoryObject](../resources/directoryobject.md)                                 | Propriedade fazendo referência ao objeto de diretório que é o escopo da atribuição. Fornecido para que os chamadores possam obter o objeto de diretório `$expand` usando ao mesmo tempo que obter a atribuição de função. Apenas leitura. |
-| principal      | [directoryObject](../resources/directoryobject.md)                                 | Propriedade fazendo referência à entidade que está recebendo uma atribuição de função por meio da solicitação. Fornecido para que os chamadores possam obter a entidade principal `$expand` usando ao mesmo tempo que obter a atribuição de função. Apenas leitura. |
+| directoryScope | [directoryObject](../resources/directoryobject.md)                                 | Propriedade fazendo referência ao objeto de diretório que é o escopo da atribuição. Fornecido para que os chamadores possam obter o objeto de diretório `$expand` usando ao mesmo tempo que obter a atribuição de função. Somente leitura. |
+| principal      | [directoryObject](../resources/directoryobject.md)                                 | Propriedade fazendo referência à entidade que está recebendo uma atribuição de função por meio da solicitação. Fornecido para que os chamadores possam obter a entidade principal `$expand` usando ao mesmo tempo que obter a atribuição de função. Somente leitura. |
 | roleDefinition | [unifiedRoleDefinition](../resources/unifiedroledefinition.md)                     | Propriedade indicando a funçãoDefinition para a qual a atribuição se destina. Fornecido para que os chamadores possam obter a definição de função `$expand` usando ao mesmo tempo que obter a atribuição de função. roleDefinition.Id será expandido automaticamente. |
 
 ## <a name="json-representation"></a>Representação JSON

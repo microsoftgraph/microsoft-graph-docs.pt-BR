@@ -2,15 +2,15 @@
 title: Excluir windows10EndpointProtectionConfiguration
 description: Exclui windows10EndpointProtectionConfiguration.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: df12c249e90ee6aa5b8ad7f01d04cc3b9e0358d2
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 8695a36afb42c95c421835fb97f3d7f81be72a15
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58781087"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59077381"
 ---
 # <a name="delete-windows10endpointprotectionconfiguration"></a>Excluir windows10EndpointProtectionConfiguration
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {

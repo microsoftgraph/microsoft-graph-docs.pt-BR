@@ -2,15 +2,15 @@
 title: Criar windowsFeatureUpdateCatalogItem
 description: Crie um novo objeto windowsFeatureUpdateCatalogItem.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6ade2546f9489a6286370422ecf74591cc924218
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 6994bc4ec6fc68977fa686a179d2ec61a552e5e6
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58803830"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59054881"
 ---
 # <a name="create-windowsfeatureupdatecatalogitem"></a>Criar windowsFeatureUpdateCatalogItem
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {

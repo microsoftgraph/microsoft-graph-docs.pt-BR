@@ -2,15 +2,15 @@
 title: Tipo de recurso securityBaselineContributingPolicy
 description: O estado de conformidade da linha de base de segurança de uma configuração para um dispositivo
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 92f49ce93e49524c3a9925e561cae57ca1c49f3d
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: a5de4d9ee9ebe2f302067084bbbd7d0ed243ca54
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58803788"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59051241"
 ---
 # <a name="securitybaselinecontributingpolicy-resource-type"></a>Tipo de recurso securityBaselineContributingPolicy
 
@@ -25,7 +25,7 @@ O estado de conformidade da linha de base de segurança de uma configuração pa
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|sourceId|Cadeia de caracteres|Identificador exclusivo da política|
+|sourceId|Cadeia de Caracteres|Identificador exclusivo da política|
 |displayName|Cadeia de caracteres|Nome da política|
 |sourceType|[securityBaselinePolicySourceType](../resources/intune-deviceintent-securitybaselinepolicysourcetype.md)|Fonte de autoria da política. Os valores possíveis são: `deviceConfiguration`, `deviceIntent`.|
 
